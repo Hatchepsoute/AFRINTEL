@@ -10,11 +10,7 @@
 
 ## 📋 À propos
 
-<<<<<<< HEAD
 **AFRINTEL** est un référentiel de Cyber Threat Intelligence (CTI) en open-source, dédié au suivi, à la structuration et à l'analyse des cyberincidents affectant les organisations africaines.. Le projet collecte, analyse et documente les incidents ransomware affectant les organisations africaines, en s'appuyant sur l'observation directe des sites de dark web et de deep web.
-=======
-*AFRINTEL est un référentiel de Cyber Threat Intelligence (CTI) en open-source, dédié au suivi, à la structuration et à l'analyse des cyberincidents affectant les organisations africaines.. Le projet collecte, analyse et documente les incidents ransomware affectant les organisations africaines, en s'appuyant sur l'observation directe des sites de dark web et de deep web.
->>>>>>> 1ad64c0 (Initial commit: ajout du README et structure de base)
 
 **Objectifs :**
 - 📊 Documenter les attaques ransomware en Afrique
@@ -55,7 +51,3 @@ La plus grande fuite de données jamais signalée en Afrique :
 [📄 Consulter le rapport complet →](reports/february/README.md)
 
 ---
-<<<<<<< HEAD
-=======
-# AFRINTEL
->>>>>>> 1ad64c0 (Initial commit: ajout du README et structure de base)
