@@ -75,11 +75,11 @@ Ce dossier contient les statistiques détaillées des incidents ransomware recen
 ---
 ## 🔍 Top 5 des pays les plus ciblés
 
-Afrique du Sud ████████████░░░░ 3
-Égypte ████████████░░░░ 3
-Nigeria ████████░░░░░░░░ 2
-Ghana ████████░░░░░░░░ 2
-Sénégal ████░░░░░░░░░░░░ 1 (139 To)
+- Afrique du Sud ████████████░░░░ 3
+- Égypte ████████████░░░░ 3
+- Nigeria ████████░░░░░░░░ 2
+- Ghana ████████░░░░░░░░ 2
+- Sénégal ████░░░░░░░░░░░░ 1 (139 To)
 ---
 ```mermaid
 graph LR

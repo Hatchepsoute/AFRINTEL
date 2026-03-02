@@ -340,7 +340,7 @@ The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database 
 
 ## 📝 Methodological Note
 
-This report is based on **direct observation** of ransomware group leak sites and cybersecurity channels on the dark web (Tor network). Dates are consistent with the source Excel file.
+This report is based on **direct observation** of ransomware group leak sites and cybersecurity channels on the dark web (Tor network).
 
 --------------------------------------------------------------------------------------
 
