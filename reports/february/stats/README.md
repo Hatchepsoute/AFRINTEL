@@ -128,9 +128,8 @@ graph LR
 
 - [Rapport complet (FR)](../README.md)
 - [Full report (EN)](../README_EN.md)
-
+---
 ## ✍🏿 Auteur
-
 **Adama ASSIONGBON**  
 Consultant SOC & Cyber Threat Intelligence  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
