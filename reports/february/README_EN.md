@@ -9,7 +9,7 @@
 👉🏾 [**French version available here** ](README.md)
 ## Africa Ransomware Landscape -- February 2026
 
-> Source: Monitoring of Ransomware Group Leak Sites (Darkweb)
+> Source: Monitoring of Ransomware Group leak sites (Darkweb)
 
 ------------------------------------------------------------------------
 

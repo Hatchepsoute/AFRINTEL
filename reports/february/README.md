@@ -8,7 +8,7 @@
 👉🏾 [**English version available here** ](README_EN.md)
 ## Panorama des Ransomwares en Afrique -- Février 2026
 
-> Source: Surveillance des Sites de Fuite des Groupes Ransomwares (Darkweb)
+> Source: Surveillance des sites de fuite des groupes Ransomwares (Darkweb)
 
 ------------------------------------------------------------------------
 
