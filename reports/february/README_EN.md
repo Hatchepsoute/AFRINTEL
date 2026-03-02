@@ -15,7 +15,7 @@
 
 ## 📊 Executive summary
 
-During February 2026, **20 African organizations** were listed on ransomware group leak sites on the darkweb.
+During February 2026, **20 African organizations** fell victim to ransomware group attacks on the darkweb.
 
 ### 🔴 CRITICAL INCIDENT: DAF SENEGAL (139 TB of leaked data)
 
@@ -53,7 +53,7 @@ This raises **urgent questions** for the CTI community:
 
 ------------------------------------------------------------------------
 
-## 🌍 Victim breakdown (All 20 listings)
+## 🌍 Victim breakdown (all 20 listings)
 
 ### 🇸🇳 Senegal -- DAF SENEGAL (CRITICAL)
 - **Date:** 2026-02-05
@@ -66,7 +66,6 @@ This raises **urgent questions** for the CTI community:
   - Backup Systems
   - Sensitive Administrative Documents
 - **Location:** Dakar, Senegal
-- **Initial Ransom Demand:** "Contact us"
 - **Status:** Claim
 ------------------------------------------------------------------------
 
@@ -306,22 +305,20 @@ This raises **urgent questions** for the CTI community:
 
 ------------------------------------------------------------------------
 
-## 🛡️ Strategic recommendations
+## 🛡️ Post-incident recommendations
 
-### For Senegalese Authorities (IMMEDIATE)
-1. **Assume** citizen database and biometric systems are compromised
-2. **Prepare mass notification** plan for affected citizens
-3. **Audit all access logs** to government systems
-4. **Reset all administrative credentials**
-5. **Contact international partners** for threat intelligence
+### 🔴 Lessons learned from DAF SENEGAL
+- **Key takeaways**: The compromise of biometric and citizen database data exposes individuals to long-term identity theft risks
+- **Recommended monitoring**: Detection of suspicious activities using Senegalese identities (fraud, document applications)
+- **Communication**: Public awareness campaigns to inform citizens about risks and protective measures
 
-### For All African Governments
+### For all African governments
 1. **Review biometric data storage** security
 2. **Segment citizen databases** from public-facing systems
 3. **Implement honeypots** to detect unauthorized access
 4. **Prepare identity theft response** plans
 
-### For the Private sector
+### For the private sector
 1. **Monitor for 0APT resurgence** (may rebrand)
 2. **Update detection rules** for mass exfiltration events (>100 GB)
 3. **Validate backup integrity** immediately
@@ -329,7 +326,7 @@ This raises **urgent questions** for the CTI community:
 
 ------------------------------------------------------------------------
 
-## 🔎 CTI Monitoring priorities
+## 🔎 CTI monitoring priorities
 
 | Priority | Focus | Reason |
 |----------|-------|-----------|
@@ -342,7 +339,7 @@ This raises **urgent questions** for the CTI community:
 
 ## 📝 Methodological note
 
-This report is based on **direct observation** of ransomware group leak sites on the dark web (Tor network). All incidents are classified as **"Claim - verified"**
+This report is based on **direct observation** of ransomware group leak sites in the dark web (Tor network). 
 
 -------------------------------------------------------------------------
 ## ℹ️ Supplementary note on operational modes
@@ -358,6 +355,13 @@ This report is based on **direct observation** of ransomware group leak sites on
 These nuances explain why some victims see their data partially exposed before the deadline, while others experience massive leaks after talks break down, or discover their data for sale on illicit marketplaces.
 
 ------------------------------------------------------------------------
+## ✍🏿 Author
+
+**Adama ASSIONGBON**  
+Consultant SOC & Cyber Threat Intelligence  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+----------------------------------------
 
 *AFRINTEL -- Open CTI Monitoring Initiative*\
 *TLP:CLEAR - Publicly shareable*

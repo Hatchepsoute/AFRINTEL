@@ -14,7 +14,7 @@
 
 ## 📊 Résumé exécutif
 
-Durant le mois de février 2026, **20 organisations africaines** ont été répertoriées sur des sites de fuite des groupes ransomwares dans le darkweb.
+Durant le mois de février 2026, **20 organisations africaines** ont été victimes d'attaques de groupes ransomwares dans le darkweb.
 
 ### 🔴 INCIDENT CRITIQUE : DAF SÉNÉGAL (139 To de données fuitées)
 
@@ -66,7 +66,6 @@ Cela soulève des **questions urgentes** pour la communauté CTI :
   - Systèmes de sauvegarde
   - Documents administratifs sensibles
 - **Localisation:** Dakar, Sénégal
-- **Demande de rançon initiale:** "Contactez-nous"
 - **Statut:** Revendication 
 ------------------------------------------------------------------------
 
@@ -297,7 +296,7 @@ Cela soulève des **questions urgentes** pour la communauté CTI :
 - Sites maintenant **hors ligne** - changement d'identité ou opération terminée ?
 - **Priorité #1 pour la surveillance** : Pourrait réapparaître sous un nouveau nom
 
-### 🌍 Points Forts géographiques
+### 🌍 Points forts géographiques
 
 - **Afrique de l'Ouest** désormais une cible majeure (Sénégal, Ghana, Nigeria, Côte d'Ivoire)
 - **Afrique de l'Est** émergente (Somalie, Tanzanie, Kenya)
@@ -306,16 +305,15 @@ Cela soulève des **questions urgentes** pour la communauté CTI :
 
 ------------------------------------------------------------------------
 
-## 🛡️ Recommandations stratégiques
+## 🛡️ Recommandations post-incident
 
-### Pour les Autorités Sénégalaises (IMMÉDIAT)
-1. **Partez du principe** que la base de données citoyens et les systèmes biométriques sont compromis
-2. **Préparez un plan de notification** de masse pour les citoyens affectés
-3. **Auditez tous les journaux d'accès** aux systèmes gouvernementaux
-4. **Réinitialisez tous les identifiants administratifs**
-5. **Contactez les partenaires internationaux** pour du renseignement sur les menaces
+### 🔴 Retour d'expérience sur DAF SÉNÉGAL
+- **Leçons apprises** : La compromission des données biométriques et citoyennes expose à des risques d'usurpation d'identité à long terme
+- **Surveillance recommandée** : Détection d'activités suspectes utilisant les identités sénégalaises (fraudes, demandes de documents)
+- **Communication** : Information des citoyens sur les risques et les mesures de protection
 
-### Pour Tous les Gouvernements Africains
+
+### Pour les gouvernements Africains
 1. **Révisez la sécurité** du stockage des données biométriques
 2. **Segmentez les bases de données citoyens** des systèmes accessibles au public
 3. **Mettez en place des honeypots** pour détecter les accès non autorisés
@@ -342,8 +340,7 @@ Cela soulève des **questions urgentes** pour la communauté CTI :
 
 ## 📝 Note méthodologique
 
-Ce rapport est basé sur **l'observation directe** des sites de fuite de groupes ransomware sur le dark web (réseau Tor). Tous les incidents sont classés comme **"Revendication - vérifiée"** 
-
+Ce rapport est basé sur **l'observation directe** des sites de fuite de groupes ransomware dans le dark web (réseau Tor).
 --------------------------------------------------------------------------------------
 
 ## ℹ️ Note complémentaire sur les modes opératoires
@@ -359,6 +356,12 @@ Ce rapport est basé sur **l'observation directe** des sites de fuite de groupes
 Ces nuances expliquent pourquoi certaines victimes voient leurs données partiellement exposées avant la date limite, tandis que d'autres subissent une fuite massive après l'échec des négociations, ou découvrent leurs données en vente sur des places de marché illicites.
 
 ------------------------------------------------------------------------
+## ✍🏿 Auteur
 
+**Adama ASSIONGBON**  
+Consultant SOC & Cyber Threat Intelligence  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+--------------------------------------------------------------------------
 *AFRINTEL -- Initiative de Veille Open CTI*\
 *TLP:CLEAR - Partage public autorisé*
