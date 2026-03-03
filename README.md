@@ -7,7 +7,9 @@
 <p align="center">
   <img src="docs/afrintel_logo.png" alt="AFRINTEL Logo" width="200"/>
 </p>
-👉🏾 [**English version available here**](README_EN.md)
+
+👉🏾 [**English version available here**](./README_EN.md)
+
 ## 📋 À propos
 
 **AFRINTEL** est un référentiel de Cyber Threat Intelligence (CTI) en open-source, dédié au suivi, à la structuration et à l'analyse des cyberincidents affectant les organisations africaines. Le projet collecte, analyse et documente les incidents ransomware affectant les organisations africaines, en s'appuyant sur l'observation directe des sites du dark web et du deep web.
