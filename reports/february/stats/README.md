@@ -1,5 +1,6 @@
 # AFRINTEL -- Statistiques par acteur et par pays (Février 2026)
 👉🏾 [**English version available here** ](README_EN.md)
+
 Ce dossier contient les statistiques détaillées des incidents ransomware recensés en Afrique pour le mois de février 2026.
 
 ---
@@ -310,6 +311,7 @@ pie
 ## ✍🏿 Auteur
 
 **Adama ASSIONGBON**  
+
 Consultant SOC & Cyber Threat Intelligence  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---

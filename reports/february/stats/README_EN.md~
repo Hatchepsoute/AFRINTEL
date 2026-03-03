@@ -1,4 +1,5 @@
-# AFRINTEL — Statistics by Actor and by Country (February 2026)
+# AFRINTEL - Statistics by Actor and by Country (February 2026)
+👉🏾 [**French version available here** ](README.md)
 
 This folder contains detailed statistics of ransomware incidents recorded across Africa for February 2026.
 
@@ -195,7 +196,7 @@ flowchart TB
 ```
 ---
 
-## Sector Distribution
+## Sector distribution
 ```mermaid
 %%{init: {'theme': 'base'}}%%
 pie
@@ -235,5 +236,5 @@ SOC & Cyber Threat Intelligence Consultant
 
 ---
 
-AFRINTEL — Open CTI Monitoring Initiative  
-TLP:CLEAR — Public Sharing Permitted
+*AFRINTEL — Open CTI Monitoring Initiative  
+*TLP:CLEAR — Public Sharing Permitted
