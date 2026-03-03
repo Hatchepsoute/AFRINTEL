@@ -6,7 +6,7 @@
 
 # AFRINTEL -- Rapport de vague CTI (Afrique)
 👉🏾 [**English version available here** ](README_EN.md)
-## Panorama des Cybermenaces en Afrique -- Janvier 2026
+## Panorama des Cybermenaces en Afrique - Janvier 2026
 
 > Source: Surveillance des Sites de Fuite des Groupes Ransomwares (Darkweb)
 
@@ -31,7 +31,7 @@ Le **16 janvier 2026**, la plateforme de paiement **PixPay (pay.pixpay.sn) au S�
 | **Date de l'incident** | 2026-01-16 |
 
 #### 🇲🇦 AOM Aviation Group Maroc (Fuite de données)
-Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec exposition de bases de données sur le deepweb.
+Le groupe **AOM Aviation (Air Ocean Maroc => airoceangroup.ma)** a subi une fuite de données avec exposition de sa base de données sur le deepweb.
 
 | Métrique | Valeur |
 |--------|-------|
@@ -69,7 +69,7 @@ Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec e
 ## 🌍 Répartition des victimes par date
 
 ### 03 janvier 2026
-#### 🇹🇬 Togo -- Gouvernement du Togo
+#### 🇹🇬 Togo - Gouvernement du Togo
 - **Acteur:** `Bigbrother`
 - **Contexte:** Le même acteur avait déjà revendiqué un **accès SSH** en **septembre 2025** sur l'infrastructure `gouv.tg`, mettant cet accès en vente sur le deepweb. En janvier 2026, il revendique **de nouveaux accès** sur d'autres plateformes du gouvernement togolais et les met également en vente.
 - **Type:** Vente d'accès (Initial Access Broker)
@@ -78,42 +78,42 @@ Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec e
 ------------------------------------------------------------------------
 
 ### 6 janvier 2026
-#### 🇿🇦 Afrique du Sud -- Hytec South Africa
+#### 🇿🇦 Afrique du Sud - Hytec South Africa
 - **Acteur:** `vect`
 - **Secteur:** Ingénierie Hydraulique et Mécanique
 - **Site web:** hytec.com
 ------------------------------------------------------------------------
 
 ### 8 janvier 2026
-#### 🇰🇪 Kenya -- National Water Authority
+#### 🇰🇪 Kenya - National Water Authority
 - **Acteur:** `blackshrantac`
 - **Secteur:** Services publics (Gestion de l'eau)
 - **Site web:** nwa.go.ke
 ------------------------------------------------------------------------
 
 ### 11 janvier 2026
-#### 🇪🇬 Égypte -- Real Tech
+#### 🇪🇬 Égypte - Real Tech
 - **Acteur:** `thegentlemen`
 - **Secteur:** Technologie / Sécurité IT
 - **Site web:** realtech-eg.com
 ------------------------------------------------------------------------
 
 ### 13 janvier 2026
-#### 🇪🇬 Égypte -- Tepco-Group
+#### 🇪🇬 Égypte - Tepco-Group
 - **Acteur:** `direwolf`
 - **Secteur:** Électricité / Ingénierie Électrique
 - **Site web:** tepco-group.com
 ------------------------------------------------------------------------
 
 ### 14 janvier 2026
-#### 🇲🇺 Maurice -- Rogers Capital
+#### 🇲🇺 Maurice - Rogers Capital
 - **Acteur:** `thegentlemen`
 - **Secteur:** Services Financiers & Technologie
 - **Site web:** rogerscapital.mu
 ------------------------------------------------------------------------
 
 ### 16 janvier 2026
-#### 🇸🇳 Sénégal -- PixPay (FUITE DE DONNÉES)
+#### 🇸🇳 Sénégal - PixPay (FUITE DE DONNÉES)
 - **Acteur:** `breach3d`
 - **Type:** Fuite de données
 - **Secteur:** FinTech (Paiement mobile)
@@ -122,90 +122,90 @@ Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec e
 ------------------------------------------------------------------------
 
 ### 16 janvier 2026
-#### 🇲🇿 Mozambique -- CFM Mozambique
+#### 🇲🇿 Mozambique - CFM Mozambique
 - **Acteur:** `qilin`
 - **Secteur:** Transport & Logistique (Rail & Ports)
 - **Site web:** cfm.co.mz
 ------------------------------------------------------------------------
 
 ### 17 janvier 2026
-#### 🇹🇿 Tanzanie -- ccbrt.org
+#### 🇹🇿 Tanzanie - ONG CCBRT - ccbrt.org
 - **Acteur:** `benzona`
 - **Secteur:** Santé / Soins Spécialisés
 - **Site web:** ccbrt.org
 ------------------------------------------------------------------------
 
 ### 17 janvier 2026
-#### 🇲🇦 Maroc -- Nafae Sanitaire
+#### 🇲🇦 Maroc - Nafae Sanitaire
 - **Acteur:** `tengu`
 - **Secteur:** Bâtiment (Plomberie & Chauffage)
 - **Site web:** nafaesanitaire.com
 ------------------------------------------------------------------------
 
 ### 20 janvier 2026
-#### 🇰🇪 Kenya -- CPF Financial Services
+#### 🇰🇪 Kenya - CPF Financial Services
 - **Acteur:** `thegentlemen`
 - **Secteur:** Services financiers (Fonds de pension)
 - **Site web:** cpf.or.ke
 ------------------------------------------------------------------------
 
 ### 20 janvier 2026
-#### 🇰🇪 Kenya -- NSSF
+#### 🇰🇪 Kenya - NSSF
 - **Acteur:** `devman`
 - **Secteur:** Sécurité sociale (Retraites)
 - **Site web:** nssf.or.ke
 ------------------------------------------------------------------------
 
 ### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud -- Paltrack
+#### 🇿🇦 Afrique du Sud - Paltrack
 - **Acteur:** `thegentlemen`
 - **Secteur:** Logiciels logistiques (Agroalimentaire)
 - **Site web:** paltrack.co.za
 ------------------------------------------------------------------------
 
 ### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud -- Rola Motor Group
+#### 🇿🇦 Afrique du Sud - Rola Motor Group
 - **Acteur:** `thegentlemen`
 - **Secteur:** Distribution Automobile
 - **Site web:** rola.co.za
 ------------------------------------------------------------------------
 
 ### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud -- Witzenberg Municipality
+#### 🇿🇦 Afrique du Sud - Witzenberg Municipality
 - **Acteur:** `thegentlemen`
 - **Secteur:** Administration Publique / Gouvernement Local
 - **Site web:** witzenberg.gov.za
 ------------------------------------------------------------------------
 
 ### 26 janvier 2026
-#### 🇰🇪 Kenya -- namico.go.ke
+#### 🇰🇪 Kenya - namico.go.ke
 - **Acteur:** `tengu`
 - **Secteur:** Mines et Ressources Minérales
 - **Site web:** namico.go.ke
 ------------------------------------------------------------------------
 
 ### 27 janvier 2026
-#### 🇹🇳 Tunisie -- FRUIT-BONTÉ Agroalimentaire
+#### 🇹🇳 Tunisie - FRUIT-BONTÉ Agroalimentaire
 - **Acteur:** `tengu`
 - **Secteur:** Industrie Agroalimentaire
 - **Site web:** fruit-bonte.com.tn
 ------------------------------------------------------------------------
 
 ### 27 janvier 2026
-#### 🇪🇬 Égypte -- skyegtours.com
+#### 🇪🇬 Égypte - skyegtours.com
 - **Acteur:** `tengu`
 - **Secteur:** Tourisme / Transport & Voyages
 - **Site web:** skyegtours.com
 ------------------------------------------------------------------------
 
 ### 28 janvier 2026
-#### 🇩🇿 Algérie -- Tahkout Group
+#### 🇩🇿 Algérie - Tahkout Group
 - **Acteur:** `tengu`
 - **Secteur:** Industrie Automobile & Transport
 ------------------------------------------------------------------------
 
 ### 31 janvier 2026
-#### 🇲🇦 Maroc -- AOM Aviation Group (FUITE DE DONNÉES)
+#### 🇲🇦 Maroc - AOM Aviation Group (FUITE DE DONNÉES)
 - **Acteur:** `skra1a`
 - **Type:** Fuite de données
 - **Secteur:** Transport Aérien / Aviation Civile

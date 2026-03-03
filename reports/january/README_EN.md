@@ -6,7 +6,7 @@
 
 # AFRINTEL -- CTI Wave Report (Africa)
 👉🏾 [**French version available here** ](README.md)
-## Africa Cyber Threat Landscape -- January 2026
+## Africa Cyber Threat Landscape - January 2026
 
 > Source: Monitoring of Ransomware Group Leak Sites (Darkweb)
 
@@ -31,7 +31,7 @@ On **January 16, 2026**, the payment platform **PixPay (pay.pixpay.sn) in Senega
 | **Incident Date** | 2026-01-16 |
 
 #### 🇲🇦 AOM Aviation Group Morocco (Data Leak)
-The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database exposure on the deepweb.
+The **AOM Aviation Group (Air Ocean Maroc => airoceangroup.ma)** suffered a data leak with database exposure on the deepweb.
 
 | Metric | Value |
 |--------|-------|
@@ -78,42 +78,42 @@ The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database 
 ------------------------------------------------------------------------
 
 ### January 6, 2026
-#### 🇿🇦 South Africa -- Hytec South Africa
+#### 🇿🇦 South Africa - Hytec South Africa
 - **Actor:** `vect`
 - **Sector:** Hydraulic & Mechanical Engineering
 - **Website:** hytec.com
 ------------------------------------------------------------------------
 
 ### January 8, 2026
-#### 🇰🇪 Kenya -- National Water Authority
+#### 🇰🇪 Kenya - National Water Authority
 - **Actor:** `blackshrantac`
 - **Sector:** Public Services (Water Management)
 - **Website:** nwa.go.ke
 ------------------------------------------------------------------------
 
 ### January 11, 2026
-#### 🇪🇬 Egypt -- Real Tech
+#### 🇪🇬 Egypt - Real Tech
 - **Actor:** `thegentlemen`
 - **Sector:** Technology / IT Security
 - **Website:** realtech-eg.com
 ------------------------------------------------------------------------
 
 ### January 13, 2026
-#### 🇪🇬 Egypt -- Tepco-Group
+#### 🇪🇬 Egypt - Tepco-Group
 - **Actor:** `direwolf`
 - **Sector:** Electrical Engineering
 - **Website:** tepco-group.com
 ------------------------------------------------------------------------
 
 ### January 14, 2026
-#### 🇲🇺 Mauritius -- Rogers Capital
+#### 🇲🇺 Mauritius - Rogers Capital
 - **Actor:** `thegentlemen`
 - **Sector:** Financial Services & Technology
 - **Website:** rogerscapital.mu
 ------------------------------------------------------------------------
 
 ### January 16, 2026
-#### 🇸🇳 Senegal -- PixPay (DATA LEAK)
+#### 🇸🇳 Senegal - PixPay (DATA LEAK)
 - **Actor:** `breach3d`
 - **Type:** Data Leak
 - **Sector:** FinTech (Mobile Payment)
@@ -122,14 +122,14 @@ The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database 
 ------------------------------------------------------------------------
 
 ### January 16, 2026
-#### 🇲🇿 Mozambique -- CFM Mozambique
+#### 🇲🇿 Mozambique - CFM Mozambique
 - **Actor:** `qilin`
 - **Sector:** Transport & Logistics (Rail & Ports)
 - **Website:** cfm.co.mz
 ------------------------------------------------------------------------
 
 ### January 17, 2026
-#### 🇹🇿 Tanzania -- ccbrt.org
+#### 🇹🇿 Tanzania NGO CCBRT - ccbrt.org
 - **Actor:** `benzona`
 - **Sector:** Healthcare / Specialized Care
 - **Website:** ccbrt.org
