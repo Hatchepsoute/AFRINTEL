@@ -127,5 +127,5 @@ Consultant SOC & Cyber Threat Intelligence
 
 --------------------------------------------------------------------------
 
-***AFRINTEL - African Threat Intelligence Initiative**  
+***AFRINTEL - African Threat Intelligence**  
 *TLP:CLEAR

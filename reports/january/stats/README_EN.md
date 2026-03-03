@@ -113,19 +113,21 @@ flowchart TB
 
 # 📊 Strategic Observations
 
-- East & Southern Africa most impacted
-- thegentlemen + tengu represent 55% of total incidents
-- Emerging Data Leak trend
-- Government & Financial sectors remain priority targets
+- East & Southern Africa were the most impacted regions.
+- thegentlemen and tengu account for 55% of total incidents.
+- Emerging data leak trend observed.
+- Government and financial sectors remain primary targets.
 
 ---
+
 ## ✍🏿 Author
 
 **Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
+
+SOC & Cyber Threat Intelligence Consultant  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
---------------------------------------------------------------------------
+---
 
-***AFRINTEL - African Threat Intelligence Initiative**  
-*TLP:CLEAR
+*AFRINTEL - African Threat Intelligence   
+*TLP:CLEAR — Public Sharing Permitted
