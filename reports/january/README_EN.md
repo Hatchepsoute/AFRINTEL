@@ -429,5 +429,5 @@ Consultant SOC & Cyber Threat Intelligence
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
 --------------------------------------------------------------------------
-* AFRINTEL -- Open CTI Monitoring Initiative*\
-* TLP:CLEAR - Publicly shareable*
+*AFRINTEL - Open CTI Monitoring Initiative*
+*TLP:CLEAR - Publicly shareable*

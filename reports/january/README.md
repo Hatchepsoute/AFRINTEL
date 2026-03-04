@@ -357,7 +357,7 @@ Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec e
 - **Afrique de l'Est** : Kenya (4 incidents), Tanzanie
 - **Afrique Australe** : Afrique du Sud (4), Mozambique
 - **Afrique du Nord** : Égypte (3), Maroc (2), Algérie, Tunisie
-- **Afrique de l'Ouest** : Sénégal, Togo, Niger (nouveau)
+- **Afrique de l'Ouest** : Sénégal, Togo, Niger
 
 ------------------------------------------------------------------------
 
