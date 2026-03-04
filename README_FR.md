@@ -5,10 +5,10 @@
 ![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 
-# AFRINTEL - Cyber Threat Intelligence en Afrique
+<p align="left">
+<img src="comparison/afrintel_logo.png" width="90" align="left" style="margin-right:15px"/>
 
-<p align="center">
-  <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>
+# AFRINTEL – African Threat Intelligence
 </p>
 
 👉🏾 [English version](README.md)
@@ -101,6 +101,7 @@ Licence MIT - voir [LICENSE](LICENSE)
 ---
 
 ## ✍🏿 Auteur
+
 *Adama ASSIONGBON* 
 *Consultant SOC & Cyber Threat Intelligence  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*

@@ -1,14 +1,15 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
-![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Focus](https://img.shields.io/badge/Focus-Ransomware%20Monitoring-red)
+![Threat Landscape](https://img.shields.io/badge/Threat%20Landscape-Africa-orange)
 ![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web-black)
 ![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
-![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
+![OSINT](https://img.shields.io/badge/Data%20Source-OSINT-blue)
+![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+<p align="left">
+<img src="comparison/afrintel_logo.png" width="90" align="left" style="margin-right:15px"/>
 
-# AFRINTEL - African Threat Intelligence
-
-<p align="center">
-  <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>
+# AFRINTEL – African Threat Intelligence
 </p>
 
 👉🏾 [French version](README_FR.md)
