@@ -236,5 +236,5 @@ SOC & Cyber Threat Intelligence Consultant
 
 ---
 
-*AFRINTEL — Open CTI Monitoring Initiative  
-*TLP:CLEAR — Public Sharing Permitted
+* AFRINTEL — Open CTI Monitoring Initiative  
+* TLP:CLEAR — Public Sharing Permitted

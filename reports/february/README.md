@@ -6,9 +6,9 @@
 
 # AFRINTEL -- Rapport de vague CTI (Afrique)
 👉🏾 [**English version available here** ](README_EN.md)
-## Panorama des Ransomwares en Afrique -- Février 2026
+## Panorama des Ransomwares en Afrique - Février 2026
 
-> Source: Surveillance des sites de fuite des groupes Ransomwares (Darkweb)
+> Source: Surveillance des sites de fuite des groupes ransomwares (Darkweb)
 
 ------------------------------------------------------------------------
 

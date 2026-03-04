@@ -2,7 +2,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![TLP:CLEAR](https://img.shields.io/badge/TLP-CLEAR-green.svg)](https://www.first.org/tlp/)
 
-# AFRINTEL — African Threat Intelligence Initiative
+# AFRINTEL - African Threat Intelligence
 
 <p align="center">
   <img src="docs/afrintel_logo.png" alt="AFRINTEL Logo" width="200"/>
@@ -30,7 +30,6 @@ The project collects, structures, and analyzes ransomware and data-leak incident
 
 | Feature | Description |
 |--------|-------------|
-| 🤖 Multi-LLM Support | Supports multiple AI providers (e.g., Ollama, Gemini, Groq, Cohere, HuggingFace) with fallback logic |
 | 📊 Incident JSON | Normalized incident records (AFRINTEL JSON format) |
 | 📝 Bilingual Reports | Auto-generated CTI reports (FR + EN) |
 | 🛡️ SOC-ready | Actionable remediation guidance + MITRE ATT&CK mapping |

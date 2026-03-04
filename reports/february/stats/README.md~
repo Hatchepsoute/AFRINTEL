@@ -1,263 +1,208 @@
-# AFRINTEL -- Statistiques par acteur et par pays (Février 2026)
-👉🏾 [**English version available here** ](README_EN.md)
-Ce dossier contient les statistiques détaillées des incidents ransomware recensés en Afrique pour le mois de février 2026.
+# AFRINTEL -- Statistiques Janvier 2026
+👉🏾 [**English version available here**](README_EN.md)
+
+Ce dossier contient les statistiques détaillées des incidents cyber recensés en Afrique pour le mois de janvier 2026.
 
 ---
 
-## 📊 Vue d'ensemble
+## 📊 VUE D'ENSEMBLE
 
 | Métrique | Valeur |
 |----------|--------|
 | **Total des incidents** | 20 |
-| **Pays touchés** | 13 |
-| **Acteurs de menace actifs** | 10 |
-| **Volume total de données exfiltrées** | ~147 To |
+| **Pays touchés** | 11 |
+| **Acteurs de menace actifs** | 11 |
+| **Fuites de données** | 2 (Sénégal, Maroc) |
+| **Ransomwares** | 18 |
 
 ---
 
-## 🗺️ Répartition par pays
-
-| Pays | Nombre d'incidents | Principaux acteurs |
-|------|-------------------|---------------------|
-| 🇿🇦 **Afrique du Sud** | 3 | `thegentlemen` (2), `Lockbit5` (1), `vect` (1) |
-| 🇪🇬 **Égypte** | 3 | `thegentlemen` (1), `lockbit5` (1), `payload` (1) |
-| 🇳🇬 **Nigeria** | 2 | `killsec` (1), `incransom` (1) |
-| 🇬🇭 **Ghana** | 2 | `0APT` (1), `thegentlemen` (1) |
-| 🇸🇳 **Sénégal** | 1 | `The Green Blood Group` (1) ⚠️ **139 To** |
-| 🇸🇴 **Somalie** | 1 | `0APT` (1) |
-| 🇹🇿 **Tanzanie** | 1 | `0APT` (1) |
-| 🇰🇪 **Kenya** | 1 | `thegentlemen` (1) |
-| 🇲🇺 **Maurice** | 1 | `lockbit5` (1) |
-| 🇹🇳 **Tunisie** | 1 | `thegentlemen` (1) |
-| 🇸🇩 **Soudan** | 1 | `apt73/bashe` (1) |
-| 🇨🇮 **Côte d'Ivoire** | 1 | `incransom` (1) |
-| 🇲🇦 **Maroc** | 1 | `tengu` (1) |
-| 🇳🇦 **Namibie** | 1 | `qilin` (1) |
-
----
-
-## 🎯 Répartition par acteur de menace
-
-| Acteur | Incidents | Pays ciblés | Volume total |
-|--------|-----------|-------------|--------------|
-| `thegentlemen` | **5** | Kenya, Ghana, Égypte, Afrique du Sud (×2), Tunisie | ~? |
-| `0APT` | **3** | Somalie, Ghana, Tanzanie | **~7 To** |
-| `lockbit5` | **2** | Maurice, Égypte | ~? |
-| `incransom` | **2** | Nigeria, Côte d'Ivoire | **~210 Go** |
-| `The Green Blood Group` | **1** | Sénégal | **139 To** ⚠️ |
-| `killsec` | **1** | Nigeria | ~? |
-| `vect` | **1** | Afrique du Sud | 151 Go |
-| `qilin` | **1** | Namibie | ~? |
-| `payload` | **1** | Égypte | ~? |
-| `tengu` | **1** | Maroc | ~? |
-| `apt73/bashe` | **1** | Soudan | ~? |
-
----
-
-## 📈 Analyse par secteur
-
-| Secteur | Incidents | Acteurs principaux |
-|---------|-----------|---------------------|
-| **Gouvernement** | 3 | `The Green Blood Group`, `lockbit5`, `thegentlemen` |
-| **Aviation** | 3 | `0APT` (2), `thegentlemen`, `incransom` |
-| **Énergie** | 2 | `incransom`, `vect` |
-| **Banque/Fintech** | 2 | `thegentlemen`, `killsec` |
-| **Média** | 1 | `0APT` |
-| **Juridique** | 1 | `0APT` |
-| **Hôtellerie** | 1 | `lockbit5` |
-| **Immobilier** | 1 | `payload` |
-| **Conseil** | 1 | `apt73/bashe` |
-| **Commerce** | 1 | `qilin` |
-| **Automobile** | 1 | `Lockbit5` |
-| **IT Consulting** | 1 | `thegentlemen` |
-| **Service public** | 1 | `thegentlemen` |
-
----
-## 🔍 Top 5 des pays les plus ciblés en février 2026
-
-- Afrique du Sud ████████████░░░░ 3
-- Égypte ████████████░░░░ 3
-- Nigeria ████████░░░░░░░░ 2
-- Ghana ████████░░░░░░░░ 2
-- Sénégal ████░░░░░░░░░░░░ 1 (139 To)
-
-
----
-
-# 📊 Visual intelligence layer
-
-## 🗺️ Heatmap – État des lieux de l'intensité de la menace régionale
+## 🗺️ RÉPARTITION PAR PAYS
 
 ```mermaid
-flowchart TB
-  classDef high fill:#ffcccc,stroke:#b30000,stroke-width:2px;
-  classDef medium fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
-  classDef low fill:#fff2cc,stroke:#b39b00,stroke-width:2px;
-
-  subgraph West["Afrique de l’Ouest (6 incidents)"]
-  
-    SN["🇸🇳 Sénégal"]
-    GH["🇬🇭 Ghana"]
-    NG["🇳🇬 Nigeria"]
-    CI["🇨🇮 Côte d'Ivoire"]
-  end
-
-  subgraph North["Afrique du Nord (4 incidents)"]
-  
-    EG["🇪🇬 Égypte"]
-    MA["🇲🇦 Maroc"]
-    TN["🇹🇳 Tunisie"]
-    SD["🇸🇩 Soudan"]
-  end
-
-  subgraph East["Afrique de l’Est (3 incidents)"]
-  
-    SO["🇸🇴 Somalie"]
-    TZ["🇹🇿 Tanzanie"]
-    KE["🇰🇪 Kenya"]
-  end
-
-  subgraph South["Afrique Australe (4 incidents)"]
-  
-    ZA["🇿🇦 Afrique du Sud"]
-    NA["🇳🇦 Namibie"]
-    MU["🇲🇺 Maurice"]
-  end
-
-  class West high;
-  class South high;
-  class North medium;
-  class East medium;
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ff6b6b'}}}%%
+xychart-beta
+    title "Incidents par pays - Janvier 2026"
+    x-axis ["Afrique du Sud", "Kenya", "Égypte", "Maroc", "Algérie", "Maurice", "Mozambique", "Sénégal", "Tanzanie", "Togo", "Tunisie"]
+    y-axis "Nombre d'incidents" 0 --> 5
+    bar [4, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1]
 ```
----
-## 📊 Diagramme de victimes par pays
+
+Pays	Incidents	Principaux acteurs
+🇿🇦 Afrique du Sud	4	thegentlemen (3), vect (1)
+🇰🇪 Kenya	4	thegentlemen, tengu, blackshrantac, devman
+🇪🇬 Égypte	3	thegentlemen, tengu, direwolf
+🇲🇦 Maroc	2	tengu, skra1a
+🇩🇿 Algérie	1	tengu
+🇲🇺 Maurice	1	thegentlemen
+🇲🇿 Mozambique	1	qilin
+🇸🇳 Sénégal	1	breach3d
+🇹🇿 Tanzanie	1	benzona
+🇹🇬 Togo	1	Bigbrother
+🇹🇳 Tunisie	1	tengu
 
 
+## 🎯 RÉPARTITION PAR ACTEUR
+```mermaid
+%%{init: {'theme': 'base'}}%%
+xychart-beta
+    title "Incidents par acteur - Janvier 2026"
+    x-axis ["thegentlemen", "tengu", "vect", "qilin", "blackshrantac", "devman", "direwolf", "benzona", "skra1a", "breach3d", "Bigbrother"]
+    y-axis "Nombre d'incidents" 0 --> 7
+    bar [6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+Acteur	Incidents	Pays touchés
+thegentlemen	6	Égypte, Kenya, Maurice, Afrique du Sud (3)
+tengu	5	Algérie, Égypte, Kenya, Maroc, Tunisie
+vect	1	Afrique du Sud
+qilin	1	Mozambique
+blackshrantac	1	Kenya
+devman	1	Kenya
+direwolf	1	Égypte
+benzona	1	Tanzanie
+skra1a	1	Maroc
+breach3d	1	Sénégal
+Bigbrother	1	Togo
+
+## 📈 RÉPARTITION PAR SECTEUR
+```mermaid
+%%{init: {'theme': 'base'}}%%
+pie showData
+    title "Secteurs ciblés - Janvier 2026"
+    "Administration/Gouvernement" : 4
+    "Services financiers" : 3
+    "Industrie" : 3
+    "Transport/Logistique" : 3
+    "Technologie" : 1
+    "Énergie" : 1
+    "Santé" : 1
+    "Bâtiment" : 1
+    "Tourisme" : 1
+    "Mines" : 1
+    "Agroalimentaire" : 1 
+```
+
+Secteur	Incidents	Acteurs principaux
+🏛️ Administration / Gouvernement	4	thegentlemen (2), Bigbrother, devman
+💰 Services financiers	3	thegentlemen (2), breach3d
+🏭 Industrie	3	tengu (2), vect
+✈️ Transport / Logistique	3	tengu, qilin, skra1a
+💻 Technologie	1	thegentlemen
+⚡ Énergie	1	direwolf
+🏥 Santé	1	benzona
+🏗️ Bâtiment	1	tengu
+🧳 Tourisme	1	tengu
+⛏️ Mines	1	tengu
+🌾 Agroalimentaire	1	tengu
+
+## 🔥 TOP 5 DES PAYS LES PLUS CIBLÉS
+```mermaid
+%%{init: {'theme': 'base'}}%%
+xychart-beta
+    title "Top 5 des pays les plus ciblés - Janvier 2026"
+    x-axis ["Afrique du Sud", "Kenya", "Égypte", "Maroc", "Algérie"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 4, 3, 2, 1]
+```
+
+Pays	Incidents	Principaux acteurs
+🇿🇦 Afrique du Sud	4	thegentlemen (3), vect (1)
+🇰🇪 Kenya	4	thegentlemen, tengu, blackshrantac, devman
+🇪🇬 Égypte	3	thegentlemen, tengu, direwolf
+🇲🇦 Maroc	2	tengu, skra1a
+🇩🇿 Algérie	1	tengu
+
+## 🎯 MATRICE ACTEURS VS PAYS
+Pays	thegentlemen	tengu	vect	qilin	blackshrantac	devman	direwolf	benzona	skra1a	breach3d	Bigbrother	Total
+🇿🇦 Afrique du Sud	3	0	1	0	0	0	0	0	0	0	0	4
+🇰🇪 Kenya	1	1	0	0	1	1	0	0	0	0	0	4
+🇪🇬 Égypte	1	1	0	0	0	0	1	0	0	0	0	3
+🇲🇦 Maroc	0	1	0	0	0	0	0	0	1	0	0	2
+🇩🇿 Algérie	0	1	0	0	0	0	0	0	0	0	0	1
+🇲🇺 Maurice	1	0	0	0	0	0	0	0	0	0	0	1
+🇲🇿 Mozambique	0	0	0	1	0	0	0	0	0	0	0	1
+🇸🇳 Sénégal	0	0	0	0	0	0	0	0	0	1	0	1
+🇹🇿 Tanzanie	0	0	0	0	0	0	0	1	0	0	0	1
+🇹🇬 Togo	0	0	0	0	0	0	0	0	0	0	1	1
+🇹🇳 Tunisie	0	1	0	0	0	0	0	0	0	0	0	1
+Total	6	5	1	1	1	1	1	1	1	1	1	20
+
+## CHRONOLOGIE DES INCIDENTS
+```mermaid
+timeline
+    title Chronologie des incidents - Janvier 2026
+    section Semaine 1
+        03/01 : 🇹🇬 Togo (Bigbrother)
+        06/01 : 🇿🇦 Hytec (vect)
+        08/01 : 🇰🇪 NWA Kenya (blackshrantac)
+    section Semaine 2
+        11/01 : 🇪🇬 Real Tech (thegentlemen)
+        13/01 : 🇪🇬 Tepco-Group (direwolf)
+        14/01 : 🇲🇺 Rogers Capital (thegentlemen)
+    section Semaine 3
+        16/01 : 🇸🇳 PixPay (breach3d) + 🇲🇿 CFM (qilin)
+        17/01 : 🇹🇿 ccbrt (benzona) + 🇲🇦 Nafae (tengu)
+    section Semaine 4
+        20/01 : 🇰🇪 CPF, NSSF + 🇿🇦 Paltrack, Rola, Witzenberg (5 incidents)
+        26/01 : 🇰🇪 namico.go.ke (tengu)
+    section Semaine 5
+        27/01 : 🇹🇳 FRUIT-BONTÉ + 🇪🇬 skyegtours (tengu)
+        28/01 : 🇩🇿 Tahkout Group (tengu)
+        31/01 : 🇲🇦 AOM Aviation (skra1a)
+```        
+## CARTOGRAPHIE ACTEURS → VICTIMES
 ```mermaid
 flowchart LR
-
-  %% ===== VICTIMS (Vertical column) =====
-  subgraph Victimes
-    V1["DAF Sénégal\n(daf.sn)"]
-    V2["BlueSky Aviation\n(bluesky-air.com)"]
-    V3["Global Media Alliance\n(globalmediaalliance.com)"]
-    V4["Vertex Law Chambers\n(vertexlaw.co.tz)"]
-    V5["Wells Fargo\n(fargo.co.ke)"]
-    V6["Ghana Bauxite\n(ghanabauxite.com)"]
-    V7["Nile Air\n(nileair.com)"]
-    V8["Intsika Yethu\n(intsikayethu.gov.za)"]
-    V9["BITS\n(bits.com.tn)"]
-    V10["Sands Suites\n(sands.mu)"]
-    V11["Min. Agriculture\n(moa.gov.eg)"]
-    V12["Diesel-Electric\n(diesel-electric.co.za)"]
-    V13["Midwestern Oil & Gas\n(midwesternog.com)"]
-    V14["Air Côte d’Ivoire\n(aircotedivoire.com)"]
-    V15["SODIC\n(sodic.com)"]
-    V16["Shora Advisory\n(shora.ma)"]
-    V17["CYMOT\n(cymot.com)"]
-    V18["EnerTec\n(enertec.co.za)"]
-    V19["AMTAAR\n(amtaar.com)"]
-    V20["Getly\n(getly.app)"]
-  end
-
-  %% ===== COUNTRIES (Horizontal) =====
-  P1["🇸🇳 Sénégal"]
-  P2["🇸🇴 Somalie"]
-  P3["🇬🇭 Ghana"]
-  P4["🇹🇿 Tanzanie"]
-  P5["🇰🇪 Kenya"]
-  P6["🇳🇬 Nigeria"]
-  P7["🇪🇬 Égypte"]
-  P8["🇿🇦 Afrique du Sud"]
-  P9["🇹🇳 Tunisie"]
-  P10["🇲🇺 Maurice"]
-  P11["🇨🇮 Côte d’Ivoire"]
-  P12["🇲🇦 Maroc"]
-  P13["🇳🇦 Namibie"]
-  P14["🇸🇩 Soudan"]
-
-  %% LINKS
-  V1 --> P1
-  V2 --> P2
-  V3 --> P3
-  V4 --> P4
-  V5 --> P5
-  V6 --> P3
-  V7 --> P7
-  V8 --> P8
-  V9 --> P9
-  V10 --> P10
-  V11 --> P7
-  V12 --> P8
-  V13 --> P6
-  V14 --> P11
-  V15 --> P7
-  V16 --> P12
-  V17 --> P13
-  V18 --> P8
-  V19 --> P14
-  V20 --> P6
-```
----
-
-## 🧩 Cartographie Acteurs → Victimes 
-
-```mermaid
-flowchart LR
-
-  %% ===== STYLE =====
   classDef actor fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
   classDef victim fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
 
-  %% ===== ACTEURS =====
-  A1["The Green Blood Group"]:::actor
-  A2["0APT"]:::actor
-  A3["thegentlemen"]:::actor
-  A4["lockbit5"]:::actor
-  A5["incransom"]:::actor
-  A6["payload"]:::actor
-  A7["tengu"]:::actor
-  A8["qilin"]:::actor
-  A9["vect"]:::actor
-  A10["apt73 / bashe"]:::actor
-  A11["killsec"]:::actor
+  A1["thegentlemen"]:::actor
+  A2["tengu"]:::actor
+  A3["vect"]:::actor
+  A4["qilin"]:::actor
+  A5["blackshrantac"]:::actor
+  A6["devman"]:::actor
+  A7["direwolf"]:::actor
+  A8["benzona"]:::actor
+  A9["skra1a"]:::actor
+  A10["breach3d"]:::actor
+  A11["Bigbrother"]:::actor
 
-  %% ===== VICTIMES =====
-  V1["DAF Sénégal\n(daf.sn)\n🇸🇳 Sénégal"]:::victim
-  V2["BlueSky Aviation\n(bluesky-air.com)\n🇸🇴 Somalie"]:::victim
-  V3["Global Media Alliance\n(globalmediaalliance.com)\n🇬🇭 Ghana"]:::victim
-  V4["Vertex Law Chambers\n(vertexlaw.co.tz)\n🇹🇿 Tanzanie"]:::victim
-  V5["Wells Fargo Kenya\n(fargo.co.ke)\n🇰🇪 Kenya"]:::victim
-  V6["Ghana Bauxite\n(ghanabauxite.com)\n🇬🇭 Ghana"]:::victim
-  V7["Nile Air\n(nileair.com)\n🇪🇬 Égypte"]:::victim
-  V8["Intsika Yethu Municipality\n(intsikayethu.gov.za)\n🇿🇦 Afrique du Sud"]:::victim
-  V9["BITS\n(bits.com.tn)\n🇹🇳 Tunisie"]:::victim
-  V10["Sands Suites Resort\n(sands.mu)\n🇲🇺 Île Maurice"]:::victim
-  V11["Ministry of Agriculture\n(moa.gov.eg)\n🇪🇬 Égypte"]:::victim
-  V12["Diesel-Electric\n(diesel-electric.co.za)\n🇿🇦 Afrique du Sud"]:::victim
-  V13["Midwestern Oil & Gas\n(midwesternog.com)\n🇳🇬 Nigeria"]:::victim
-  V14["Air Côte d’Ivoire\n(aircotedivoire.com)\n🇨🇮 Côte d’Ivoire"]:::victim
-  V15["SODIC\n(sodic.com)\n🇪🇬 Égypte"]:::victim
-  V16["Shora Advisory\n(shora.ma)\n🇲🇦 Maroc"]:::victim
-  V17["CYMOT\n(cymot.com)\n🇳🇦 Namibie"]:::victim
-  V18["EnerTec\n(enertec.co.za)\n🇿🇦 Afrique du Sud"]:::victim
-  V19["AMTAAR\n(amtaar.com)\n🇸🇩 Soudan"]:::victim
-  V20["Getly\n(getly.app)\n🇳🇬 Nigeria"]:::victim
+  V1["Real Tech\n🇪🇬 Égypte"]:::victim
+  V2["CPF Financial\n🇰🇪 Kenya"]:::victim
+  V3["Rogers Capital\n🇲🇺 Maurice"]:::victim
+  V4["Paltrack\n🇿🇦 Afrique du Sud"]:::victim
+  V5["Rola Motor\n🇿🇦 Afrique du Sud"]:::victim
+  V6["Witzenberg\n🇿🇦 Afrique du Sud"]:::victim
+  V7["skyegtours\n🇪🇬 Égypte"]:::victim
+  V8["namico.go.ke\n🇰🇪 Kenya"]:::victim
+  V9["Nafae Sanitaire\n🇲🇦 Maroc"]:::victim
+  V10["FRUIT-BONTÉ\n🇹🇳 Tunisie"]:::victim
+  V11["Tahkout Group\n🇩🇿 Algérie"]:::victim
+  V12["Hytec\n🇿🇦 Afrique du Sud"]:::victim
+  V13["CFM Mozambique\n🇲🇿 Mozambique"]:::victim
+  V14["NWA Kenya\n🇰🇪 Kenya"]:::victim
+  V15["NSSF\n🇰🇪 Kenya"]:::victim
+  V16["Tepco-Group\n🇪🇬 Égypte"]:::victim
+  V17["ccbrt.org\n🇹🇿 Tanzanie"]:::victim
+  V18["AOM Aviation\n🇲🇦 Maroc"]:::victim
+  V19["PixPay\n🇸🇳 Sénégal"]:::victim
+  V20["Gouv. Togo\n🇹🇬 Togo"]:::victim
 
-  %% ===== RELATIONS =====
   A1 --> V1
-  A2 --> V2
-  A2 --> V3
-  A2 --> V4
-  A3 --> V5
-  A3 --> V6
-  A3 --> V7
-  A3 --> V8
-  A3 --> V9
-  A4 --> V10
-  A4 --> V11
-  A4 --> V12
-  A5 --> V13
+  A1 --> V2
+  A1 --> V3
+  A1 --> V4
+  A1 --> V5
+  A1 --> V6
+  A2 --> V7
+  A2 --> V8
+  A2 --> V9
+  A2 --> V10
+  A2 --> V11
+  A3 --> V12
+  A4 --> V13
   A5 --> V14
   A6 --> V15
   A7 --> V16
@@ -266,54 +211,103 @@ flowchart LR
   A10 --> V19
   A11 --> V20
 ```
----
-## Répartition par secteur
-
+## 🗺️ HEATMAP - INTENSITÉ DE LA MENACE RÉGIONALE
 ```mermaid
-%%{init: {'theme': 'base'}}%%
-pie
-    title Secteurs ciblés
-    "Gouvernement" : 3
-    "Aviation" : 3
-    "Énergie" : 2
-    "Banque/Fintech" : 2
-    "Média" : 1
-    "Juridique" : 1
-    "Hôtellerie" : 1
-    "Immobilier" : 1
-    "Conseil" : 1
-    "Commerce de détail" : 1
-    "Automobile" : 1
-    "Conseil IT" : 1
-    "Service public" : 1
+flowchart TB
+  classDef high fill:#ffcccc,stroke:#b30000,stroke-width:2px;
+  classDef medium fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
+  classDef low fill:#fff2cc,stroke:#b39b00,stroke-width:2px;
 
+  subgraph West["Afrique de l'Ouest (2 incidents)"]
+    SN["🇸🇳 Sénégal\n(PixPay)"]
+  end
+
+  subgraph North["Afrique du Nord (7 incidents)"]
+    EG["🇪🇬 Égypte\n(3 incidents)"]
+    MA["🇲🇦 Maroc\n(2 incidents)"]
+    TN["🇹🇳 Tunisie\n(1 incident)"]
+    DZ["🇩🇿 Algérie\n(1 incident)"]
+  end
+
+  subgraph East["Afrique de l'Est (6 incidents)"]
+    KE["🇰🇪 Kenya\n(4 incidents)"]
+    TZ["🇹🇿 Tanzanie\n(1 incident)"]
+  end
+
+  subgraph South["Afrique Australe (5 incidents)"]
+    ZA["🇿🇦 Afrique du Sud\n(4 incidents)"]
+    MZ["🇲🇿 Mozambique\n(1 incident)"]
+    MU["🇲🇺 Maurice\n(1 incident)"]
+  end
+
+  class North high;
+  class East high;
+  class South high;
+  class West medium;
 ```
----
 
-## 🔴 Incident critique : DAF SÉNÉGAL
+## 📊 TABLEAU RÉCAPITULATIF COMPLET
+Date	Pays	Victime	Acteur	Secteur	Type
+03/01	🇹🇬 Togo	Gouvernement du Togo	Bigbrother	Administration	IAB
+06/01	🇿🇦 Afrique du Sud	Hytec South Africa	vect	Ingénierie	Ransomware
+08/01	🇰🇪 Kenya	National Water Authority	blackshrantac	Services publics	Ransomware
+11/01	🇪🇬 Égypte	Real Tech	thegentlemen	Technologie	Ransomware
+13/01	🇪🇬 Égypte	Tepco-Group	direwolf	Énergie	Ransomware
+14/01	🇲🇺 Maurice	Rogers Capital	thegentlemen	Finance	Ransomware
+16/01	🇸🇳 Sénégal	PixPay	breach3d	FinTech	Fuite données
+16/01	🇲🇿 Mozambique	CFM Mozambique	qilin	Transport	Ransomware
+17/01	🇹🇿 Tanzanie	ccbrt.org	benzona	Santé	Ransomware
+17/01	🇲🇦 Maroc	Nafae Sanitaire	tengu	Bâtiment	Ransomware
+20/01	🇰🇪 Kenya	CPF Financial Services	thegentlemen	Finance	Ransomware
+20/01	🇰🇪 Kenya	NSSF	devman	Sécurité sociale	Ransomware
+20/01	🇿🇦 Afrique du Sud	Paltrack	thegentlemen	Logistique	Ransomware
+20/01	🇿🇦 Afrique du Sud	Rola Motor Group	thegentlemen	Automobile	Ransomware
+20/01	🇿🇦 Afrique du Sud	Witzenberg Municipality	thegentlemen	Administration	Ransomware
+26/01	🇰🇪 Kenya	namico.go.ke	tengu	Mines	Ransomware
+27/01	🇹🇳 Tunisie	FRUIT-BONTÉ	tengu	Agroalimentaire	Ransomware
+27/01	🇪🇬 Égypte	skyegtours.com	tengu	Tourisme	Ransomware
+28/01	🇩🇿 Algérie	Tahkout Group	tengu	Automobile	Ransomware
+31/01	🇲🇦 Maroc	AOM Aviation Group	skra1a	Aviation	Fuite données
 
-- **Acteur** : `The Green Blood Group`
-- **Volume** : 139 To
-- **Pays** : Sénégal
-- **Secteur** : Gouvernement
-- **Données** : Base citoyens, biométrie, immigration
+## 🔴 FOCUS SUR LES INCIDENTS CRITIQUES
+🇸🇳 PixPay Sénégal - Fuite de données financières
 
-**⚠️ Plus grande fuite de données jamais recensée en Afrique.**
+    Date: 16 janvier 2026
 
----
+    Acteur: breach3d
 
-## 🔗 Liens utiles
+    Type: Fuite de données
 
-- [Rapport complet (FR)](../README.md)
-- [Full report (EN)](../README_EN.md)
+    Secteur: FinTech (Paiement mobile)
 
-## ✍🏿 Auteur
+    Site web: pay.pixpay.sn
 
-**Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
----
+    Impact: Base de données financières exposée
 
-*AFRINTEL -- Initiative de Veille Open CTI*\
-*TLP:CLEAR - Partage public autorisé*
+🇲🇦 AOM Aviation Maroc - Fuite de données
 
+    Date: 31 janvier 2026
+
+    Acteur: skra1a
+
+    Type: Fuite de données
+
+    Secteur: Transport Aérien / Aviation Civile
+
+    Site web: airoceangroup.ma
+
+    Impact: Base de données aviation exposée
+
+🇹🇬 Togo - Vente d'accès récurrente par Bigbrother
+
+    Acteur: Bigbrother
+
+    Contexte: Accès SSH revendiqué en septembre 2025 sur gouv.tg, nouveaux accès en janvier 2026
+
+    Type: Initial Access Broker (IAB)
+
+    Secteur: Administration Publique Centrale
+
+    Site web: gouv.tg
+
+    Risque: Accumulation d'accès pouvant faciliter des attaques futures
