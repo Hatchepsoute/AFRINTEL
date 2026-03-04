@@ -1,79 +1,80 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
-![AFRINTEL](https://img.shields.io/badge/Project-AFRINTEL-black)
-![Africa Threat Map](https://img.shields.io/badge/Africa-Threat%20Monitoring-darkgreen)
-![Cyber Incidents](https://img.shields.io/badge/Cyber%20Incidents-Tracked-blue)
-![Threat Landscape](https://img.shields.io/badge/Threat%20Landscape-Analysis-orange)
+![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
+
 # AFRINTEL - African Threat Intelligence
+
 <p align="center">
   <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>
 </p>
 
-👉🏾 [English version](README_EN.md)
+👉🏾 [French version](README_FR.md)
 
 ---
 
-# 🌍 AFRINTEL Cyber Incident Intelligence
+## 🌍 About AFRINTEL
 
-AFRINTEL est une initiative open‑source de **Cyber Threat Intelligence (CTI)** dédiée au suivi et à l’analyse des cyberattaques ciblant les organisations africaines.
+**AFRINTEL** is an open‑source **Cyber Threat Intelligence (CTI)** initiative that tracks cyberattacks targeting organizations across Africa.
 
-Les rapports sont basés sur l’observation de :
+The analysis relies on monitoring:
 
-- sites de fuite ransomware
-- forums cybercriminels
-- sources OSINT publiques
+- ransomware leak sites (**dark web**)
+- cybercriminal forums and underground marketplaces
+- platforms used to publish compromised data
+- public OSINT sources
 
----
-
-# 📊 Accès rapide aux rapports
-
-## 📅 Rapports mensuels
-
-| Mois | Rapport | Report |
-|-----|--------|-----------|
-| **Janvier 2026** | [Voir le rapport](reports/january/README.md) | [English version](reports/january/README_EN.md) |
-| **Février 2026** | [Voir le rapport](reports/february/README.md) | [English version](reports/february/README_EN.md) |
+The objective is to provide **strategic visibility on cyber threats affecting the African continent**.
 
 ---
 
-# 📈 Statistiques
+## 📊 Monthly reports
 
-| Mois | Statistiques |Statistics |
-|-----|-------------|--------------|
-| **Janvier 2026/January 2026** | [Voir les statistiques](statistics/january/README.md) |[View statistics](statistics/january/README_EN.md) |
-| **Février 2026/February 2026** | [Voir les statistiques](statistics/february/README.md) |[View statistics](statistics/february/README_EN.md) |
-
----
-
-# 🔍 Analyse comparative
-
-📄 [Janvier vs Février 2026](comparison/README.md)
-
-Cette analyse compare :
-
-- évolution des acteurs ransomware
-- répartition géographique
-- secteurs ciblés
-- tendances opérationnelles
+| Month | French | English |
+|------|--------|--------|
+| **January 2026** | [View report](reports/january/README.md) | [English](reports/january/README_EN.md) |
+| **February 2026** | [View report](reports/february/README.md) | [English](reports/february/README_EN.md) |
 
 ---
 
-# 🌍 Visual Intelligence
+## 📈 Statistics
+
+| Month | French | English |
+|------|--------|--------|
+| **January 2026** | [Statistics](statistics/january/README.md) | [English](statistics/january/README_EN.md) |
+| **February 2026** | [Statistics](statistics/february/README.md) | [English](statistics/february/README_EN.md) |
+
+---
+
+## 🔍 Comparative analysis
+
+📄 [January vs February 2026](comparison/README.md)
+
+Focus on:
+
+- ransomware actors  
+- affected countries  
+- targeted sectors  
+- operational trends  
+
+---
+
+## 🧠 Visual intelligence
 
 📊 [Visual Intelligence Dashboard](visual-intelligence/README.md)
 
-Inclut :
+Includes:
 
-- cartographie cyber Afrique
-- graphes acteurs → pays
-- heatmaps régionales
-- visualisations sectorielles
+- Africa cyber threat map  
+- actors → victims → countries diagrams  
+- regional heatmaps  
+- sector visualizations  
 
 ---
 
-# 📂 Structure du projet
-```text
+## 📂 Project structure
+
+```
 AFRINTEL
 │
 ├── reports
@@ -88,22 +89,21 @@ AFRINTEL
 │
 └── visual-intelligence
 ```
----
-
-## 📄 Licence
-
-MIT License - voir [LICENSE](LICENSE)
 
 ---
 
-## ✍🏿 Auteur
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
+
+---
+
+## ✍🏿 Author
 
 **Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence
 
+SOC & Cyber Threat Intelligence Consultant  
 [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
 ---
 
-* AFRINTEL - Initiative de veille CTI africaine  
-* TLP:CLEAR - Public release
+*AFRINTEL - Open African CTI Monitoring Initiative*

@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-Ransomfeed%20%2F%20Leak%20Sites-lightgrey)
 ![Period](https://img.shields.io/badge/Period-2026--02-informational)
 
-# AFRINTEL -- Rapport de vague CTI (Afrique)
+# AFRINTEL - Rapport de vague CTI (Afrique)
 👉🏾 [**English version available here** ](README_EN.md)
 ## Panorama des Ransomwares en Afrique - Février 2026
 

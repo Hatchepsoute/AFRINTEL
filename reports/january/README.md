@@ -431,4 +431,5 @@ Consultant SOC & Cyber Threat Intelligence
 
 --------------------------------------------------------------------------
 *AFRINTEL - Initiative de Veille Open CTI*
+
 *TLP:CLEAR - Partage public autorisé*

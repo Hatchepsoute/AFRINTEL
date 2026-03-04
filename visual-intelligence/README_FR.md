@@ -110,7 +110,7 @@ end
 subgraph Afrique_Australe["Afrique australe"]
 ZA["🇿🇦 Afrique du Sud"]
 NA["🇳🇦 Namibie"]
-MU["🇲🇺 Maurice"]
+MU["🇲🇺 Île Maurice"]
 end
 
 class ZA high;
@@ -132,4 +132,4 @@ class MU low;
 
 ---
 
-AFRINTEL — Initiative africaine de Cyber Threat Intelligence
+*AFRINTEL - Initiative africaine de Cyber Threat Intelligence*
