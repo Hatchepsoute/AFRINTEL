@@ -32,8 +32,8 @@ The objective is to provide **strategic visibility on cyber threats affecting th
 
 | Month | French | English |
 |------|--------|--------|
-| **January 2026** | [View report](reports/january/README.md) | [English](reports/january/README_EN.md) |
-| **February 2026** | [View report](reports/february/README.md) | [English](reports/february/README_EN.md) |
+| **January 2026** | [View report](reports/january/README.md) | [View report](reports/january/README_EN.md) |
+| **February 2026** | [View report](reports/february/README.md) | [View report](reports/february/README_EN.md) |
 
 ---
 
@@ -41,8 +41,8 @@ The objective is to provide **strategic visibility on cyber threats affecting th
 
 | Month | French | English |
 |------|--------|--------|
-| **January 2026** | [Statistics](statistics/january/README.md) | [English](statistics/january/README_EN.md) |
-| **February 2026** | [Statistics](statistics/february/README.md) | [English](statistics/february/README_EN.md) |
+| **January 2026** | [Statistics](statistics/january/README.md) | [Statistics](statistics/january/README_EN.md) |
+| **February 2026** | [Statistics](statistics/february/README.md) | [Statistics](statistics/february/README_EN.md) |
 
 ---
 
@@ -99,10 +99,8 @@ MIT License - see [LICENSE](LICENSE)
 ---
 
 ## ✍🏿 Author
-
 **Adama ASSIONGBON**  
-
-SOC & Cyber Threat Intelligence Consultant  
+*SOC & Cyber Threat Intelligence Consultant*  
 [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---
 
