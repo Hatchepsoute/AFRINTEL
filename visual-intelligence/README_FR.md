@@ -75,7 +75,7 @@ A11 --> C11
 
 ---
 
-# 🌍 Carte des cybermenaces en Afrique - janvier–février 2026
+# 🌍 Carte des cybermenaces en Afrique - janvier - février 2026
 
 Cette visualisation représente la **pression cyber observée sur le continent africain sur la période janvier-février 2026**, basée sur les incidents documentés par AFRINTEL. Elle met en évidence les **zones de concentration d’activité ransomware et d’attaques cyber**.
 

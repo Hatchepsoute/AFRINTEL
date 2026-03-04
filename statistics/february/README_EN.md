@@ -229,8 +229,8 @@ pie
 ---
 ## 🔗 Quick links
 
-- [Full report (FR)](./reports/february/README.md)
-- [Full report (EN)](./reports/february/README_EN.md)
+- [Full report (FR)](/reports/february/README.md)
+- [Full report (EN)](/reports/february/README_EN.md)
 ---
 ## ✍🏿 Author
 

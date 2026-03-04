@@ -187,8 +187,8 @@ Leak involving aviation‑related operational or database records.
 ---
 ## 🔗 Quick links
 
-- [Full report (FR)](./reports/january/README.md)
-- [Full report (EN)](./reports/january/README_EN.md)
+- [Full report (FR)](/reports/january/README.md)
+- [Full report (EN)](/reports/january/README_EN.md)
 ---
 
 *AFRINTEL - African Threat Intelligence Initiative*

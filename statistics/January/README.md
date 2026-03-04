@@ -286,8 +286,8 @@ flowchart LR
 
 ## 🔗 Liens utiles
 
-- [Rapport mensuel (FR)](./reports/january/README.md)
-- [Monthly report (EN)](./reports/january/README_EN.md)
+- [Rapport mensuel (FR)](/reports/january/README.md)
+- [Monthly report (EN)](/reports/january/README_EN.md)
 
 ---
 

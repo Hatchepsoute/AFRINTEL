@@ -306,8 +306,8 @@ pie
 
 ## 🔗 Liens utiles
 
-- [Rapport complet (FR)](./reports/february/README.md)
-- [Full report (EN)](./reports/february/README_EN.md)
+- [Rapport complet (FR)](/reports/february/README.md)
+- [Full report (EN)](/reports/february/README_EN.md)
 ---
 ## ✍🏿 Auteur
 

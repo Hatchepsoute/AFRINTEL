@@ -243,5 +243,5 @@ TLP:CLEAR – diffusion publique
 ## ✍🏿 Auteur
 
 Adama ASSIONGBON  
-Consultant SOC & Cyber Threat Intelligence  
-https://www.linkedin.com/in/adama-assiongbon-9029893a/
+[Consultant SOC & Cyber Threat Intelligence]  
+(https://www.linkedin.com/in/adama-assiongbon-9029893a/)
