@@ -1,108 +1,105 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![TLP:CLEAR](https://img.shields.io/badge/TLP-CLEAR-green.svg)](https://www.first.org/tlp/)
 
-# AFRINTEL - African Threat Intelligence
+# AFRINTEL — African Threat Intelligence
 
 <p align="center">
   <img src="docs/afrintel_logo.png" alt="AFRINTEL Logo" width="200"/>
 </p>
 
-👉🏾 [**English version available here**](./README_EN.md)
-
-## 📋 À propos
-
-**AFRINTEL** est un référentiel de Cyber Threat Intelligence (CTI) en open-source, dédié au suivi, à la structuration et à l'analyse des cyberincidents affectant les organisations africaines. Le projet collecte, analyse et documente les incidents ransomware affectant les organisations africaines, en s'appuyant sur l'observation directe des sites du dark web et du deep web.
-
-**Objectifs :**
-- 📊 **Documenter** les cyberattaques en Afrique
-- 🛡️ **Fournir** des rapports CTI exploitables par les équipes SOC
-- 🤝 **Faciliter** le partage d'indicateurs de compromission (IoC)
-- 🌍 **Sensibiliser** les organisations africaines aux cybermenaces
+👉🏾 [English version](README_EN.md)
 
 ---
 
-## 🚀 Fonctionnalités
+# 🌍 AFRINTEL Cyber Incident Intelligence
 
-| Fonctionnalité | Description |
-|----------------|-------------|
-| **📊 Génération JSON** | Structure normalisée des incidents (format AFRINTEL) |
-| **📝 Rapports bilingues** | Production de rapports CTI en français et anglais |
-| **🛡️ SOC-ready** | Recommandations actionnables et mapping MITRE ATT&CK |
-| **📦 Export STIX 2.1** | Compatibilité avec OpenCTI, MISP et autres plateformes CTI |
-| **📈 Statistiques** | Visualisation des tendances par pays, secteur et acteur |
+AFRINTEL est une initiative open‑source de **Cyber Threat Intelligence (CTI)** dédiée au suivi et à l’analyse des cyberattaques ciblant les organisations africaines.
 
----
+Les rapports sont basés sur l’observation de :
 
-## 📊 Aperçu des données
-
-### Janvier 2026
-| Métrique | Valeur |
-|----------|--------|
-| **Incidents documentés** | 20 |
-| **Pays touchés** | 11 |
-| **Acteurs de menace actifs** | 11 |
-| **Fuites de données** | 2 |
-
-🔴 **Incidents critiques** : PixPay Sénégal (fuite données financières), AOM Aviation Maroc (fuite base de données)
-
-[📄 Consulter le rapport Janvier 2026 →](reports/january/README.md)
+- sites de fuite ransomware
+- forums cybercriminels
+- sources OSINT publiques
 
 ---
 
-### Février 2026
-| Métrique | Valeur |
-|----------|--------|
-| **Incidents documentés** | 20 |
-| **Pays touchés** | 13 |
-| **Acteurs de menace actifs** | 10 |
-| **Volume de données publiées** | ~147 To |
+# 📊 Accès rapide aux rapports
 
-🔴 **Incident critique** : **DAF SÉNÉGAL** (139 To) - Plus grande fuite de données jamais signalée en Afrique
-- Base de données citoyens
-- Données biométriques
-- Registres d'immigration
+## 📅 Rapports mensuels
 
-[📄 Consulter le rapport Février 2026 →](reports/february/README.md)
+| Mois | Rapport | Version EN |
+|-----|--------|-----------|
+| **Janvier 2026** | [Voir le rapport](reports/january/README.md) | [EN](reports/january/README_EN.md) |
+| **Février 2026** | [Voir le rapport](reports/february/README.md) | [EN](reports/february/README_EN.md) |
 
 ---
 
-## 📝 Note méthodologique
+# 📈 Statistiques
 
-Les rapports AFRINTEL sont basés sur **l'observation directe** des sites de fuite de groupes ransomware et des canaux de cybersécurité sur le dark web (réseau Tor). Les incidents sont classés selon leur type (ransomware, fuite de données, vente d'accès IAB).
-
-**Classification des statuts :**
-- 🔴 **Revendication** : Information publiée sur un site de fuite
-- 🟡 **Échantillons publiés** : Données partiellement exposées
-- 🟢 **Données publiées** : Fuite de données confirmée
+| Mois | Statistiques |
+|-----|-------------|
+| **Janvier 2026** | [Voir les statistiques](statistics/january/README.md) |
+| **Février 2026** | [Voir les statistiques](statistics/february/README.md) |
 
 ---
 
-## 🤝🏿 Contribution
+# 🔍 Analyse comparative
 
-Les contributions sont les bienvenues !
+📄 [Janvier vs Février 2026](comparison/README.md)
 
-**Vous pouvez :**
-- 🔍 **Partager** vos observations sur de nouveaux incidents
-- 📝 **Suggérer** des améliorations pour les rapports
-- 🐛 **Signaler** des bugs ou des incohérences
+Cette analyse compare :
 
----
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+- évolution des acteurs ransomware
+- répartition géographique
+- secteurs ciblés
+- tendances opérationnelles
 
 ---
 
-## ✍🏿 Auteur
+# 🌍 Visual Intelligence
 
-**Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+📊 [Visual Intelligence Dashboard](visual-intelligence/README.md)
+
+Inclut :
+
+- cartographie cyber Afrique
+- graphes acteurs → pays
+- heatmaps régionales
+- visualisations sectorielles
 
 ---
 
-*AFRINTEL -- Initiative de Veille Open CTI*\
-*TLP:CLEAR - Partage public autorisé*
+# 📂 Structure du projet
 
+AFRINTEL
+│
+├── reports
+│   ├── january
+│   └── february
+│
+├── statistics
+│   ├── january
+│   └── february
+│
+├── comparison
+│
+└── visual-intelligence
+
+---
+
+# 📄 Licence
+
+MIT License — voir [LICENSE](LICENSE)
+
+---
+
+# ✍🏿 Auteur
+
+Adama ASSIONGBON  
+Consultant SOC & Cyber Threat Intelligence
+
+LinkedIn  
+https://www.linkedin.com/in/adama-assiongbon-9029893a/
+
+---
+
+AFRINTEL — Initiative de veille CTI africaine  
+TLP:CLEAR

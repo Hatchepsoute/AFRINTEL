@@ -1,7 +1,9 @@
-# AFRINTEL -- Statistiques par acteur et par pays (Février 2026)
+# AFRINTEL — Statistiques par acteur et par pays (Février 2026)
+👉🏾 [**English version available here**](README_EN.md)
 
-Ce dossier contient les statistiques détaillées des incidents ransomware recensés en Afrique pour le mois de février 2026.
+En février 2026, l’écosystème cybercriminel opérant contre le continent africain démontre une maturité opérationnelle croissante, combinant campagnes structurées de groupes ransomware et exploitation opportuniste d’infrastructures exposées.  
 
+Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégique des risques émergents, des concentrations géographiques des incidents et des secteurs les plus ciblés, afin d’orienter la posture de défense, les priorités de détection et les investissements en cybersécurité.
 ---
 
 ## 📊 Vue d'ensemble
@@ -73,74 +75,14 @@ Ce dossier contient les statistiques détaillées des incidents ransomware recen
 | **Service public** | 1 | `thegentlemen` |
 
 ---
-## 🔍 Top 5 des pays les plus ciblés
+## 🔍 Top 5 des pays les plus ciblés en février 2026
 
 - Afrique du Sud ████████████░░░░ 3
 - Égypte ████████████░░░░ 3
 - Nigeria ████████░░░░░░░░ 2
 - Ghana ████████░░░░░░░░ 2
 - Sénégal ████░░░░░░░░░░░░ 1 (139 To)
----
-```mermaid
-flowchart LR
 
-  %% ===== ACTORS =====
-  A1["The Green Blood Group"]
-  A2["0APT"]
-  A3["thegentlemen"]
-  A4["lockbit5"]
-  A5["incransom"]
-  A6["payload"]
-  A7["tengu"]
-  A8["qilin"]
-  A9["vect"]
-  A10["apt73 / bashe"]
-  A11["killsec"]
-
-  %% ===== VICTIMS (Name + Domain + Flag) =====
-  V1["DAF Sénégal\n(daf.sn)\n🇸🇳 Sénégal"]
-  V2["BlueSky Aviation\n(bluesky-air.com)\n🇸🇴 Somalie"]
-  V3["Global Media Alliance\n(globalmediaalliance.com)\n🇬🇭 Ghana"]
-  V4["Vertex Law Chambers\n(vertexlaw.co.tz)\n🇹🇿 Tanzanie"]
-  V5["Wells Fargo Kenya\n(fargo.co.ke)\n🇰🇪 Kenya"]
-  V6["Ghana Bauxite\n(ghanabauxite.com)\n🇬🇭 Ghana"]
-  V7["Nile Air\n(nileair.com)\n🇪🇬 Égypte"]
-  V8["Intsika Yethu Municipality\n(intsikayethu.gov.za)\n🇿🇦 Afrique du Sud"]
-  V9["BITS\n(bits.com.tn)\n🇹🇳 Tunisie"]
-  V10["Sands Suites Resort\n(sands.mu)\n🇲🇺 Maurice"]
-  V11["Ministry of Agriculture\n(moa.gov.eg)\n🇪🇬 Égypte"]
-  V12["Diesel-Electric\n(diesel-electric.co.za)\n🇿🇦 Afrique du Sud"]
-  V13["Midwestern Oil & Gas\n(midwesternog.com)\n🇳🇬 Nigeria"]
-  V14["Air Côte d’Ivoire\n(aircotedivoire.com)\n🇨🇮 Côte d’Ivoire"]
-  V15["SODIC\n(sodic.com)\n🇪🇬 Égypte"]
-  V16["Shora Advisory\n(shora.ma)\n🇲🇦 Maroc"]
-  V17["CYMOT\n(cymot.com)\n🇳🇦 Namibie"]
-  V18["EnerTec\n(enertec.co.za)\n🇿🇦 Afrique du Sud"]
-  V19["AMTAAR\n(amtaar.com)\n🇸🇩 Soudan"]
-  V20["Getly\n(getly.app)\n🇳🇬 Nigeria"]
-
-  %% ===== LINKS =====
-  A1 --> V1
-  A2 --> V2
-  A2 --> V3
-  A2 --> V4
-  A3 --> V5
-  A3 --> V6
-  A3 --> V7
-  A3 --> V8
-  A3 --> V9
-  A4 --> V10
-  A4 --> V11
-  A4 --> V12
-  A5 --> V13
-  A5 --> V14
-  A6 --> V15
-  A7 --> V16
-  A8 --> V17
-  A9 --> V18
-  A10 --> V19
-  A11 --> V20
-```
 
 ---
 
@@ -326,7 +268,28 @@ flowchart LR
   A10 --> V19
   A11 --> V20
 ```
+---
+## Répartition par secteur
 
+```mermaid
+%%{init: {'theme': 'base'}}%%
+pie
+    title Secteurs ciblés
+    "Gouvernement" : 3
+    "Aviation" : 3
+    "Énergie" : 2
+    "Banque/Fintech" : 2
+    "Média" : 1
+    "Juridique" : 1
+    "Hôtellerie" : 1
+    "Immobilier" : 1
+    "Conseil" : 1
+    "Commerce de détail" : 1
+    "Automobile" : 1
+    "Conseil IT" : 1
+    "Service public" : 1
+
+```
 ---
 
 ## 🔴 Incident critique : DAF SÉNÉGAL
@@ -349,6 +312,7 @@ flowchart LR
 ## ✍🏿 Auteur
 
 **Adama ASSIONGBON**  
+
 Consultant SOC & Cyber Threat Intelligence  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---
