@@ -115,7 +115,7 @@ DEVMAN["devman (1)"]:::low
 
 ---
 
-## 🗺️ Heatmap stylisée — Intensité par région
+## 🗺️ Heatmap - Intensité par région
 
 ```mermaid
 flowchart TB
@@ -260,16 +260,16 @@ flowchart LR
 
 ## 📌 Incidents critiques (Janvier 2026)
 
-### 🇳🇪 Niger — Défacement massif (**Unknown**)
+### 🇳🇪 Niger - Défacement massif (**Unknown**)
 - **Nature** : défacement coordonné multi-sites (non revendiqué)
 - **Risque** : exposition systémique (surface web publique / gouvernance patch)
 - **Impact** : confiance institutionnelle / disponibilité / visibilité médiatique
 
-### 🇸🇳 PixPay — Fuite de données (`breach3d`)
+### 🇸🇳 PixPay - Fuite de données (`breach3d`)
 - **Nature** : exposition/vente de données (FinTech)
 - **Impact** : fraude, usurpation, risques réglementaires, atteinte à la confiance
 
-### 🇲🇦 AOM Aviation — Fuite de données (`skra1a`)
+### 🇲🇦 AOM Aviation - Fuite de données (`skra1a`)
 - **Nature** : base de données exposée
 - **Impact** : chaîne d’approvisionnement, passagers/partenaires, opérations
 

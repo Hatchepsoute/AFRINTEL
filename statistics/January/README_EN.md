@@ -25,7 +25,7 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 ---
 
-# 🗺️ Country Distribution
+# 🗺️ Country distribution
 
 | Country | Incidents | Main actors |
 |---|---|---|
@@ -44,7 +44,7 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 ---
 
-# 🎯 Actor Distribution
+# 🎯 Actor distribution
 
 | Actor | Incidents |
 |---|---|
@@ -83,7 +83,7 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 # 📊 Visual Intelligence Layer
 
-## Actor Distribution
+## Actor distribution
 
 ```mermaid
 flowchart TB
