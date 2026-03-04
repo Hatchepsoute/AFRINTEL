@@ -74,7 +74,7 @@ A11 --> C11
 
 ---
 
-# 🌍 Cyber threat map of Africa
+# 🌍 Cyber threat map of Africa - January-February 2026
 
 This visualization represents the cyber pressure observed on the African continent during the **January-February 2026** period, based on incidents documented by AFRINTEL. It highlights **areas of concentrated ransomware activity and cyberattacks**.
 
