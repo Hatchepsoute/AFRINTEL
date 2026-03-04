@@ -1,7 +1,8 @@
-
-![Janvier 2026](https://img.shields.io/badge/Janvier%202026-21%20Incidents-blue)
-![Février 2026](https://img.shields.io/badge/Février%202026-20%20Incidents-blue)
-
+![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
+![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
+![AFRINTEL](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Africa Threat Map](https://img.shields.io/badge/Africa-Threat%20Monitoring-darkgreen)
 # AFRINTEL - Graphes de renseignement sur les cybermenaces
 
 👉🏾 [Version anglaise disponible ici](README.md)
@@ -12,7 +13,7 @@ Ces graphes sont conçus pour être intégrés dans les **rapports AFRINTEL** ou
 
 # 📊 Acteurs de menace vs pays ciblés
 
-Ce graphe montre quels **groupes ransomware ou acteurs de menace ont ciblé certains pays africains**.
+Ce graphe montre quels **groupes ransomware ou acteurs de menace ont ciblé certains pays africains** en Janvier et Février 2026.
 
 ```mermaid
 flowchart LR
@@ -29,6 +30,8 @@ A6["vect"]:::actor
 A7["qilin"]:::actor
 A8["payload"]:::actor
 A9["killsec"]:::actor
+A10["Bigbrother"]:::actor
+A11["Unknown"]:::actor
 
 C1["🇿🇦 Afrique du Sud"]:::country
 C2["🇪🇬 Égypte"]:::country
@@ -39,6 +42,8 @@ C6["🇲🇦 Maroc"]:::country
 C7["🇹🇳 Tunisie"]:::country
 C8["🇳🇦 Namibie"]:::country
 C9["🇲🇺 Maurice"]:::country
+C10["🇹🇬 Togo"]:::country
+C11["🇳🇪 Niger"]:::country
 
 A1 --> C1
 A1 --> C2
@@ -64,13 +69,17 @@ A6 --> C1
 A7 --> C8
 A8 --> C2
 A9 --> C4
+A10 --> C10
+A11 --> C11
 ```
 
 ---
 
-# 🌍 Carte stylisée des cybermenaces en Afrique
+# 🌍 Carte des cybermenaces en Afrique
 
-Ce diagramme représente **la pression des cybermenaces par région sur le continent africain**.
+Cette visualisation représente la **pression cyber observée sur le continent africain sur la période janvier–février 2026**, basée sur les incidents documentés par AFRINTEL.
+
+Elle met en évidence les **zones de concentration d’activité ransomware et d’attaques cyber**.
 
 ```mermaid
 flowchart TB
@@ -90,6 +99,8 @@ NG["🇳🇬 Nigeria"]
 GH["🇬🇭 Ghana"]
 SN["🇸🇳 Sénégal"]
 CI["🇨🇮 Côte d’Ivoire"]
+TG["🇹🇬 Togo"]
+NE["🇳🇪 Niger"]
 end
 
 subgraph Afrique_de_lEst["Afrique de l'Est"]
@@ -102,7 +113,6 @@ subgraph Afrique_Australe["Afrique australe"]
 ZA["🇿🇦 Afrique du Sud"]
 NA["🇳🇦 Namibie"]
 MU["🇲🇺 Maurice"]
-MZ["🇲🇿 Mozambique"]
 end
 
 class ZA high;
@@ -116,29 +126,11 @@ class MA medium;
 class TZ low;
 class SN low;
 class CI low;
+class TG low;
+class NE low;
 class NA low;
 class MU low;
 ```
-
----
-
-# Interprétation
-
-**Régions avec forte pression cyber :**
-- Afrique du Sud
-- Égypte
-- Kenya
-
-**Pression intermédiaire :**
-- Nigeria
-- Ghana
-- Maroc
-
-**Zones de menace émergente :**
-- Tanzanie
-- Sénégal
-- Namibie
-- Maurice
 
 ---
 

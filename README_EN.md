@@ -5,8 +5,6 @@
 ![Cyber Incidents](https://img.shields.io/badge/Cyber%20Incidents-Tracked-blue)
 ![Threat Landscape](https://img.shields.io/badge/Threat%20Landscape-Analysis-orange)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
-![AFRINTEL](https://img.shields.io/badge/Project-AFRINTEL-black)
-
 # AFRINTEL - African Threat Intelligence
 <p align="center">
   <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>

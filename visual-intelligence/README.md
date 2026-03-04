@@ -1,14 +1,18 @@
 ![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
 ![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
+![AFRINTEL](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Africa Threat Map](https://img.shields.io/badge/Africa-Threat%20Monitoring-darkgreen)
 # AFRINTEL - Visual threat intelligence graphs
-👉🏾 [**French version available here** ](README_FR.md)
+👉🏾 [**French version available here**](README_FR.md)
+
 These graphs are designed for integration into AFRINTEL reports or statistical dashboards.
 
 ---
 
 # 📊 Threat actors vs targeted countries
 
-This graph shows which **ransomware groups or threat actors targeted specific African countries**.
+This graph shows which **ransomware groups or threat actors targeted specific African countries in January and February 2026**.
 
 ```mermaid
 flowchart LR
@@ -25,16 +29,20 @@ A6["vect"]:::actor
 A7["qilin"]:::actor
 A8["payload"]:::actor
 A9["killsec"]:::actor
+A10["Bigbrother"]:::actor
+A11["Unknown"]:::actor
 
-C1["🇿🇦 South Africa"]:::country
-C2["🇪🇬 Egypt"]:::country
+C1["🇿🇦 Afrique du Sud"]:::country
+C2["🇪🇬 Égypte"]:::country
 C3["🇰🇪 Kenya"]:::country
 C4["🇳🇬 Nigeria"]:::country
 C5["🇬🇭 Ghana"]:::country
-C6["🇲🇦 Morocco"]:::country
-C7["🇹🇳 Tunisia"]:::country
-C8["🇳🇦 Namibia"]:::country
-C9["🇲🇺 Mauritius"]:::country
+C6["🇲🇦 Maroc"]:::country
+C7["🇹🇳 Tunisie"]:::country
+C8["🇳🇦 Namibie"]:::country
+C9["🇲🇺 Maurice"]:::country
+C10["🇹🇬 Togo"]:::country
+C11["🇳🇪 Niger"]:::country
 
 A1 --> C1
 A1 --> C2
@@ -60,13 +68,15 @@ A6 --> C1
 A7 --> C8
 A8 --> C2
 A9 --> C4
+A10 --> C10
+A11 --> C11
 ```
 
 ---
 
-# 🌍 Stylized cyber threat map of Africa
+# 🌍 Cyber threat map of Africa
 
-This diagram represents **regional cyber threat pressure across Africa**.
+This visualization represents the cyber pressure observed on the African continent during the **January-February 2026** period, based on incidents documented by AFRINTEL. It highlights **areas of concentrated ransomware activity and cyberattacks**.
 
 ```mermaid
 flowchart TB
@@ -86,6 +96,8 @@ NG["🇳🇬 Nigeria"]
 GH["🇬🇭 Ghana"]
 SN["🇸🇳 Senegal"]
 CI["🇨🇮 Ivory Coast"]
+TG["🇹🇬 Togo"]
+NE["🇳🇪 Niger"]
 end
 
 subgraph East_Africa["East Africa"]
@@ -118,24 +130,4 @@ class MU low;
 
 ---
 
-# Interpretation
-
-**High threat pressure regions**
-- South Africa
-- Egypt
-- Kenya
-
-**Medium pressure**
-- Nigeria
-- Ghana
-- Morocco
-
-**Lower but emerging threat zones**
-- Tanzania
-- Senegal
-- Namibia
-- Mauritius
-
----
-
-AFRINTEL - African Threat Intelligence Initiative
+**AFRINTEL** - African Threat Intelligence Initiative
