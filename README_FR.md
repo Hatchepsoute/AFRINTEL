@@ -101,9 +101,8 @@ Licence MIT - voir [LICENSE](LICENSE)
 ---
 
 ## ✍🏿 Auteur
-
-Adama ASSIONGBON 
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+*Adama ASSIONGBON* 
+*Consultant SOC & Cyber Threat Intelligence  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*
 ---
 *AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*
