@@ -427,8 +427,8 @@ Ce rapport est basé sur **l'observation directe** des sites de fuite de groupes
 
 **Adama ASSIONGBON**  
 Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
 --------------------------------------------------------------------------
-* AFRINTEL -- Initiative de Veille Open CTI*\
-* TLP:CLEAR - Partage public autorisé*
+*AFRINTEL - Initiative de Veille Open CTI*
+*TLP:CLEAR - Partage public autorisé*
