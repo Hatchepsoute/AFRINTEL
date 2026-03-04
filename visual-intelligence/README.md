@@ -1,11 +1,12 @@
-
-# AFRINTEL - Visual Threat Intelligence Graphs
-
+![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
+![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+# AFRINTEL - Visual threat intelligence graphs
+👉🏾 [**French version available here** ](README_FR.md)
 These graphs are designed for integration into AFRINTEL reports or statistical dashboards.
 
 ---
 
-# 📊 Threat Actors vs Targeted Countries
+# 📊 Threat actors vs targeted countries
 
 This graph shows which **ransomware groups or threat actors targeted specific African countries**.
 
@@ -63,7 +64,7 @@ A9 --> C4
 
 ---
 
-# 🌍 Stylized Cyber Threat Map of Africa
+# 🌍 Stylized cyber threat map of Africa
 
 This diagram represents **regional cyber threat pressure across Africa**.
 

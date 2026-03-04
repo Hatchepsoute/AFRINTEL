@@ -1,6 +1,7 @@
-
-# AFRINTEL - Comparative Cyber Threat Analysis
-👉🏾 [**English version available here** ](README_EN.md)
+![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
+![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+# AFRINTEL - Comparative cyber threat analysis
+👉🏾 [**French version available here** ](README_FR.md)
 ## January vs February 2026 (Africa)
 
 This report provides a **comparative Cyber Threat Intelligence (CTI) analysis** of cyber incidents affecting Africa during **January and February 2026**.  
@@ -22,7 +23,7 @@ The objective is to identify **evolving threat actors, geographic concentrations
 
 ---
 
-# 🌍 Geographic Distribution Comparison
+# 🌍 Geographic distribution comparison
 
 ```mermaid
 flowchart LR
@@ -53,7 +54,7 @@ FEB --> MA
 
 ---
 
-# 📈 Incident Volume by Month
+# 📈 Incident volume by month
 
 ```mermaid
 %%{init: {'theme': 'base'}}%%
@@ -66,7 +67,7 @@ bar [21,20]
 
 ---
 
-# 🎯 Threat Actor Activity
+# 🎯 Threat actor activity
 
 ```mermaid
 flowchart TB
@@ -85,7 +86,7 @@ VECT["vect"]:::low
 PAYLOAD["payload"]:::low
 ```
 
-### Key Observations
+### Key observations
 
 • **thegentlemen remains the most active actor across both months**  
 • **tengu dominates January activity**  
@@ -93,7 +94,7 @@ PAYLOAD["payload"]:::low
 
 ---
 
-# 🏭 Sector Exposure Comparison
+# 🏭 Sector exposure comparison
 
 ```mermaid
 pie
@@ -117,15 +118,15 @@ January attacks were **more distributed across sectors**, while February shows a
 
 ---
 
-# 🔥 Major Incidents
+# 🔥 Major incidents
 
 ### January 2026
 
-• **Government Defacement — Niger**
+• **Government Defacement - Niger**
 - Multi‑site attack
 - Unattributed actor
 
-• **PixPay Data Leak — Senegal**
+• **PixPay Data Leak - Senegal**
 - Financial sector exposure
 
 ---
@@ -141,7 +142,7 @@ January attacks were **more distributed across sectors**, while February shows a
 
 ---
 
-# 🧠 Strategic CTI Insights
+# 🧠 Strategic CTI insights
 
 ### 1️⃣ Ransomware industrialization
 
@@ -193,7 +194,7 @@ South Africa • Egypt • Kenya • Nigeria • Morocco
 
 ---
 
-# 🛡 Strategic Recommendations
+# 🛡 Strategic recommendations
 
 SOC and CTI teams should prioritize:
 
@@ -215,7 +216,7 @@ Deploy monitoring for:
 • suspicious outbound traffic  
 • credential abuse  
 
-### Infrastructure Protection
+### Infrastructure protection
 
 Strengthen:
 
@@ -228,7 +229,7 @@ Strengthen:
 # AFRINTEL
 
 * **African Threat Intelligence Initiative**
-* TLP:CLEAR – Public release*
+* TLP:CLEAR – Public release
 ---
 ## ✍🏿 Auteur
 

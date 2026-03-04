@@ -8,11 +8,11 @@
 👉🏾 [**French version available here** ](README.md)
 ## Africa Cyber Threat Landscape - January 2026
 
-> Source: Monitoring of Ransomware group leak sites (Darkweb)
+> Source: Monitoring of ransomware group leak sites (Darkweb)
 
 ------------------------------------------------------------------------
 
-## 📊 Executive Summary
+## 📊 Executive summary
 
 During January 2026, **21 African organizations** fell victim to cyberattacks, primarily ransomware, data leaks, and government website defacements.
 
@@ -273,14 +273,14 @@ The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database 
 | **Ransomware** | 18 |
 | **Defacements** | 1 (Niger - 7+ sites) |
 
-### Top 3 Major incidents
+### Top 3 major incidents
 | Rank | Incident | Type | Impact |
 |------|----------|------|--------|
 | 🥇 | **Niger Defacement** | Coordinated attack | 7+ government sites |
 | 🥈 | **PixPay (Senegal)** | Data Leak | Financial data |
 | 🥉 | **AOM Aviation (Morocco)** | Data Leak | Aviation database |
 
-### Top Threat Actors
+### Top threat actors
 | Actor | Incidents | Countries Affected |
 |-------|-----------|--------------|
 | `thegentlemen` | 6 | Egypt, Kenya, Mauritius, South Africa (3) |
@@ -348,7 +348,7 @@ The **AOM Aviation Group (Air Ocean Maroc)** suffered a data leak with database 
 - **PixPay (Senegal)** : January 16 - Financial data exposed
 - **AOM Aviation (Morocco)** : January 31 - Aviation databases leaked
 
-### 🔴 Major Cross-Border Threat Actors
+### 🔴 Major cross-border threat actors
 - **thegentlemen** : 6 incidents in 4 countries - **major actor**
 - **tengu** : 5 incidents in 5 different countries - **pan-African presence**
 

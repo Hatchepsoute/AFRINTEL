@@ -1,3 +1,15 @@
+[![Status](https://img.shields.io/badge/Status-CTI%20Monitoring-orange)]()
+[![Coverage](https://img.shields.io/badge/Coverage-41%20Incidents-blue)]()
+[![Countries](https://img.shields.io/badge/Countries-15%20African%20Countries-green)]()
+[![Threat Actors](https://img.shields.io/badge/Threat%20Actors-11-red)]()
+![Africa Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
+![CTI](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
+![Reports](https://img.shields.io/badge/Reports-Monthly-orange)
+![Ransomware](https://img.shields.io/badge/Focus-Ransomware-red)
+[![Timeframe](https://img.shields.io/badge/Timeframe-2026-yellow)]()
+[![Data Source](https://img.shields.io/badge/Data%20Source-Ransomware%20Leak%20Sites-black)]()
+[![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)]()
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)]()
 # AFRINTEL - African Threat Intelligence
 <p align="center">
   <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>
@@ -18,9 +30,9 @@ Reports rely on monitoring:
 
 ---
 
-# 📊 Quick Access
+# 📊 Quick access
 
-## Monthly Reports
+## Monthly reports
 
 | Month | Report |
 |-----|------|
@@ -38,7 +50,7 @@ Reports rely on monitoring:
 
 ---
 
-# 🔍 Comparative Analysis
+# 🔍 Comparative analysis
 
 📄 [January vs February 2026](comparison/README.md)
 
@@ -53,7 +65,7 @@ This section analyzes:
 
 # 🌍 Visual Intelligence
 
-📊 [Visual Intelligence Dashboard](visual-intelligence/README.md)
+📊 [Visual intelligence dashboard](visual-intelligence/README.md)
 
 Includes:
 
@@ -64,7 +76,7 @@ Includes:
 
 ---
 
-# 📂 Repository Structure
+# 📂 Repository structure
 ```text
 AFRINTEL
 │
@@ -88,7 +100,7 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## Author
+## ✍🏿 Author
 
 **Adama ASSIONGBON**  
 SOC & Cyber Threat Intelligence Consultant
