@@ -1,7 +1,8 @@
+# AFRINTEL - African Threat Intelligence
 <p align="center">
-  <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="200"/>
+  <img src="comparison/afrintel_logo.png" alt="AFRINTEL Logo" width="100"/>
 </p>
-# AFRINTEL — African Threat Intelligence
+
 👉🏾 [French version](README.md)
 ---
 
