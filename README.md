@@ -1,6 +1,8 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
 ![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web-black)
+![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 
 # AFRINTEL - African Threat Intelligence
@@ -98,10 +100,11 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## ✍🏿 Author
+## ✍🏿 Auteur
+
 **Adama ASSIONGBON**  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+Consultant SOC & Cyber Threat Intelligence  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---
 
 *AFRINTEL - Open African CTI Monitoring Initiative*

@@ -1,5 +1,11 @@
 ![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
 ![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
+![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
+![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web-black)
+![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
+![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 # AFRINTEL - Analyse comparative des cybermenaces
 👉🏾 [English version avilable here](README.md)
 

@@ -1,6 +1,8 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
 ![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web-black)
+![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 
 # AFRINTEL - Cyber Threat Intelligence en Afrique
@@ -32,8 +34,8 @@ L’objectif est de fournir une **visibilité stratégique sur les cybermenaces 
 
 | Mois | Français | Anglais |
 |------|----------|--------|
-| **Janvier 2026** | [Voir le rapport](reports/january/README.md) | [English](reports/january/README_EN.md) |
-| **Février 2026** | [Voir le rapport](reports/february/README.md) | [English](reports/february/README_EN.md) |
+| **Janvier 2026** | [Voir le rapport](reports/january/README.md) | [View report](reports/january/README_EN.md) |
+| **Février 2026** | [Voir le rapport](reports/february/README.md) | [View report](reports/february/README_EN.md) |
 
 ---
 
@@ -41,14 +43,14 @@ L’objectif est de fournir une **visibilité stratégique sur les cybermenaces 
 
 | Mois | Français | Anglais |
 |------|----------|--------|
-| **Janvier 2026** | [Voir les statistiques](statistics/january/README.md) | [English](statistics/january/README_EN.md) |
-| **Février 2026** | [Voir les statistiques](statistics/february/README.md) | [English](statistics/february/README_EN.md) |
+| **Janvier 2026** | [Voir les statistiques](statistics/january/README.md) | [Statistics](statistics/january/README_EN.md) |
+| **Février 2026** | [Voir les statistiques](statistics/february/README.md) | [Statistics](statistics/february/README_EN.md) |
 
 ---
 
 ## 🔍 Analyse comparative
 
-📄 [Comparaison Janvier vs Février 2026](comparison/README.md)
+📄 [Comparaison Janvier vs Février 2026](comparison/README_FR.md)
 
 Analyse portant sur :
 
@@ -59,9 +61,9 @@ Analyse portant sur :
 
 ---
 
-## 🧠 Visual Intelligence
+## 🧠 Visual intelligence
 
-📊 [Tableau de bord Visual Intelligence](visual-intelligence/README.md)
+📊 [Tableau de bord Visual Intelligence](visual-intelligence/README_FR.md)
 
 Inclut :
 
@@ -100,8 +102,8 @@ Licence MIT - voir [LICENSE](LICENSE)
 
 ## ✍🏿 Auteur
 
-**Adama ASSIONGBON** 
-*Consultant SOC & Cyber Threat Intelligence*
-[LinkedIn  ](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+**Adama ASSIONGBON**  
+Consultant SOC & Cyber Threat Intelligence  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---
 *AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*
