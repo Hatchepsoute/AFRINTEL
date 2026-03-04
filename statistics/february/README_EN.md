@@ -37,7 +37,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 ---
 
-## 🎯 Distribution by Threat Actor
+## 🎯 Distribution by threat actor
 
 | Actor | Incidents | Targeted Countries | Total Volume |
 |--------|-----------|-------------|--------------|
@@ -55,7 +55,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 ---
 
-## 📈 Sector Analysis
+## 📈 Sector analysis
 
 | Sector | Incidents | Main Actors |
 |---------|-----------|---------------------|
@@ -75,7 +75,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 ---
 
-## 🔍 Top 5 Most Targeted Countries – February 2026
+## 🔍 Top 5 Most targeted countries - February 2026
 
 - South Africa ████████████░░░░ 3  
 - Egypt ████████████░░░░ 3  
@@ -85,7 +85,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 ---
 
-## Actor → Victim Mapping
+## Actor → victim mapping
 ```mermaid
 flowchart LR
 
@@ -151,7 +151,7 @@ flowchart LR
   A11 --> V20
 ```
 ---
-## 📊 Visual Intelligence Layer
+## 📊 Visual intelligence layer
 ### 🗺️ Heatmap - Regional Threat Intensity Overview
 ```mermaid
 flowchart TB
@@ -216,7 +216,7 @@ pie
     "Public Services" : 1
 ```
 ---
-## 🔴 Critical Incident: DAF SENEGAL
+## 🔴 Critical incident: DAF SENEGAL
 
 - **Actor**: `The Green Blood Group`
 - **Volume**: 139 TB
@@ -227,14 +227,18 @@ pie
 ⚠️ Largest data leak ever recorded in Africa.
 
 ---
+## 🔗 Quick links
 
+- [Full report (FR)](./reports/february/README.md)
+- [Full report (EN)](./reports/february/README_EN.md)
+---
 ## ✍🏿 Author
 
 **Adama ASSIONGBON**  
-SOC & Cyber Threat Intelligence Consultant  
+SOC & Cyber Threat Intelligence Consultant
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
 ---
 
-* AFRINTEL — Open CTI Monitoring Initiative  
-* TLP:CLEAR — Public Sharing Permitted
+*AFRINTEL - Open CTI Monitoring Initiative*  
+*TLP:CLEAR - Public Sharing Permitted*

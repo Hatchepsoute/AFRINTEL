@@ -1,7 +1,7 @@
-# AFRINTEL — Statistiques par acteur et par pays (Février 2026)
+# AFRINTEL - Statistiques par acteur et par pays (Février 2026)
 👉🏾 [**English version available here**](README_EN.md)
 
-En février 2026, l’écosystème cybercriminel opérant contre le continent africain démontre une maturité opérationnelle croissante, combinant campagnes structurées de groupes ransomware et exploitation opportuniste d’infrastructures exposées.  
+En février 2026, l’écosystème cybercriminel opérant contre le continent africain démontre une maturité opérationnelle croissante, combinant campagnes structurées de groupes ransomware et exploitation opportuniste d’infrastructures exposées.
 
 Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégique des risques émergents, des concentrations géographiques des incidents et des secteurs les plus ciblés, afin d’orienter la posture de défense, les priorités de détection et les investissements en cybersécurité.
 ---
@@ -306,17 +306,15 @@ pie
 
 ## 🔗 Liens utiles
 
-- [Rapport complet (FR)](../README.md)
-- [Full report (EN)](../README_EN.md)
-
+- [Rapport complet (FR)](./reports/february/README.md)
+- [Full report (EN)](./reports/february/README_EN.md)
+---
 ## ✍🏿 Auteur
 
 **Adama ASSIONGBON**  
-
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+Consultant SOC & Cyber Threat Intelligence [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 ---
 
-*AFRINTEL -- Initiative de Veille Open CTI*\
+*AFRINTEL -- Initiative de Veille Open CTI*
 *TLP:CLEAR - Partage public autorisé*
 

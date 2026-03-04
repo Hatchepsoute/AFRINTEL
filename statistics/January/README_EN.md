@@ -165,27 +165,31 @@ title Targeted sectors — January 2026
 
 ---
 
-# ⚠ Key Incidents
+# ⚠ Key incidents
 
-### 🇳🇪 Niger — Government defacement (Unknown)
+### 🇳🇪 Niger - Government defacement (Unknown)
 Large‑scale coordinated website defacement targeting multiple government portals.
 
-### 🇸🇳 PixPay — Data breach (breach3d)
+### 🇸🇳 PixPay - Data breach (breach3d)
 Exposure and sale of fintech‑related data.
 
-### 🇲🇦 AOM Aviation — Data exposure (skra1a)
+### 🇲🇦 AOM Aviation - Data exposure (skra1a)
 Leak involving aviation‑related operational or database records.
 
 ---
 
-# 🛡 SOC & CTI Recommendations
+# 🛡 SOC & CTI recommendations
 
 • Monitor dominant actors **thegentlemen** and **tengu**  
 • Harden public‑facing government portals (WAF, patching, CMS security)  
 • Monitor abnormal data exfiltration patterns  
 • Prepare ransomware and data‑leak crisis playbooks  
+---
+## 🔗 Quick links
 
+- [Full report (FR)](./reports/january/README.md)
+- [Full report (EN)](./reports/january/README_EN.md)
 ---
 
-**AFRINTEL — African Threat Intelligence Initiative**  
+*AFRINTEL - African Threat Intelligence Initiative*
 *TLP:CLEAR*
