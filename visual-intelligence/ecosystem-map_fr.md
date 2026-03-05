@@ -7,6 +7,7 @@
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
 ## 🔗 Cartographie des acteurs de menace - Janvier & Février 2026
 👉🏾 [English version](/visual-intelligence/ecosystem-map.md)
+
 Ce graphique illustre les connexions entre les groupes ransomware et leurs cibles à travers l'Afrique, basé sur 41 incidents documentés dans 18 pays.
 
 ```mermaid

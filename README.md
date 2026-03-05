@@ -94,27 +94,38 @@ These bundles contain structured intelligence about ransomware actors, victims, 
 
 ```
 AFRINTEL
-│
 ├── comparison
-│
-├── reports
-│   ├── january
-│   └── february
-│
-├── statistics
-│   ├── january
-│   └── february
-│
-├── stix
-│   ├── january
-│   ├── february
-│   └── README.md
-│
-├── visual-intelligence
-│
-├── README.md
+│   ├── afrintel_logo.png
+│   ├── README_FR.md
+│   └── README.md
+├── LICENSE
 ├── README_FR.md
-└── LICENSE
+├── README.md
+├── reports
+│   ├── february
+│   │   ├── README_EN.md
+│   │   └── README.md
+│   └── january
+│       ├── README_EN.md
+│       └── README.md
+├── statistics
+│   ├── february
+│   │   ├── README_EN.md
+│   │   └── README.md
+│   └── january
+│       ├── README_EN.md
+│       └── README.md
+├── stix
+│   ├── february
+│   │   └── afrintel-february-2026-bundle.json
+│   ├── january
+│   │   └── afrintel-january-2026-bundle.json
+│   └── README.md
+└── visual-intelligence
+    ├── ecosystem-map_fr.md
+    ├── ecosystem-map.md
+    ├── README_FR.md
+    └── README.md
 ```
 
 ---

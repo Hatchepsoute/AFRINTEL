@@ -7,6 +7,7 @@
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
 ## 🔗 Threat Actor Mapping - January & February 2026
 👉🏾 [French version](/visual-intelligence/ecosystem-map_fr.md)
+
 This graph shows the connections between ransomware groups and their targets across Africa, based on 41 incidents documented across 18 countries.
 
 ```mermaid
