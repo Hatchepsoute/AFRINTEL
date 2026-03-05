@@ -10,6 +10,8 @@
 
 Ce graphique illustre les connexions entre les groupes ransomware et leurs cibles à travers l'Afrique, basé sur 41 incidents documentés dans 18 pays.
 
+### Acteurs → victimes → pays (Janvier + Février 2026)
+
 ```mermaid
 flowchart LR
 

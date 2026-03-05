@@ -9,7 +9,7 @@
 👉🏾 [French version](/visual-intelligence/ecosystem-map_fr.md)
 
 This graph shows the connections between ransomware groups and their targets across Africa, based on 41 incidents documented across 18 countries.
-
+### Actors → victims → countries (January + February 2026)
 ```mermaid
 flowchart LR
 
