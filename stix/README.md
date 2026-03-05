@@ -15,8 +15,8 @@ The bundles include structured information about:
 
 | Month | STIX Bundle |
 |------|------|
-| January 2026 | january/afrintel-january-2026-bundle.json |
-| February 2026 | february/afrintel-february-2026-bundle.json |
+| January 2026 |[january/afrintel-january-2026-bundle.json](/january/afrintel-january-2026-bundle.json) |
+| February 2026 |[february/afrintel-february-2026-bundle.json](/february/afrintel-february-2026-bundle.json) |
 
 These datasets can be imported into:
 

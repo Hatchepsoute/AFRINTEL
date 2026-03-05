@@ -17,133 +17,181 @@ flowchart LR
 classDef actor fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
 classDef victim fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
 classDef country fill:#e8ffe6,stroke:#2b8a3e,stroke-width:2px;
-classDef sector fill:#f3e6ff,stroke:#6f42c1,stroke-width:2px;
+classDef unknown fill:#f2f2f2,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5;
 
 %% ===== ACTORS =====
-A1["thegentlemen"]:::actor
-A2["tengu"]:::actor
-A3["0APT"]:::actor
-A4["lockbit5"]:::actor
-A5["The Green Blood Group"]:::actor
-A6["incransom"]:::actor
-A7["qilin"]:::actor
-A8["vect"]:::actor
-A9["payload"]:::actor
-A10["apt73/bashe"]:::actor
-A11["killsec"]:::actor
-A12["Bigbrother"]:::actor
+A1["Bigbrother"]:::actor
+A2["Vect"]:::actor
+A3["BlackShrantac"]:::actor
+A4["TheGentlemen"]:::actor
+A5["Direwolf"]:::actor
+A6["Breach3d"]:::actor
+A7["Qilin"]:::actor
+A8["Benzona"]:::actor
+A9["Tengu"]:::actor
+A10["Devman"]:::actor
+A11["Skra1a"]:::actor
+A12["The Green Blood Group"]:::actor
+A13["0APT"]:::actor
+A14["KillSec"]:::actor
+A15["INC Ransom"]:::actor
+A16["LockBit 5.0"]:::actor
+A17["Payload"]:::actor
+A18["APT73 / Bashe"]:::actor
+A19["LockBit5"]:::actor
+A20["Unknown"]:::unknown
+
+%% ===== JANUARY VICTIMS =====
+V1["Government of Togo"]:::victim
+V2["Niger Government Websites"]:::victim
+V3["Hytec South Africa"]:::victim
+V4["National Water Authority"]:::victim
+V5["Real Tech"]:::victim
+V6["Tepco Group"]:::victim
+V7["Rogers Capital"]:::victim
+V8["PixPay"]:::victim
+V9["CFM Mozambique"]:::victim
+V10["CCBRT"]:::victim
+V11["Nafae Sanitaire"]:::victim
+V12["CPF Financial Services"]:::victim
+V13["NSSF"]:::victim
+V14["Paltrack"]:::victim
+V15["Rola Motor Group"]:::victim
+V16["Witzenberg Municipality"]:::victim
+V17["namico.go.ke"]:::victim
+V18["FRUIT-BONTÉ Agrofood"]:::victim
+V19["Skyeg Tours"]:::victim
+V20["Tahkout Group"]:::victim
+V21["AOM Aviation Group"]:::victim
+
+%% ===== FEBRUARY VICTIMS =====
+V22["DAF Senegal"]:::victim
+V23["BlueSky Aviation"]:::victim
+V24["Global Media Alliance"]:::victim
+V25["Vertex Law Chambers"]:::victim
+V26["Wells Fargo Kenya"]:::victim
+V27["Getly"]:::victim
+V28["Ghana Bauxite"]:::victim
+V29["Midwestern Oil & Gas"]:::victim
+V30["Nile Air"]:::victim
+V31["Sands Suites Resort"]:::victim
+V32["Intsika Yethu Municipality"]:::victim
+V33["BITS"]:::victim
+V34["SODIC"]:::victim
+V35["AMTAAR"]:::victim
+V36["Air Côte d’Ivoire"]:::victim
+V37["Shora Advisory"]:::victim
+V38["Ministry of Agriculture Egypt"]:::victim
+V39["CYMOT"]:::victim
+V40["EnerTec"]:::victim
+V41["Diesel-Electric"]:::victim
 
 %% ===== COUNTRIES =====
-C1["🇸🇳 Senegal"]:::country
-C2["🇿🇦 South Africa"]:::country
-C3["🇰🇪 Kenya"]:::country
-C4["🇪🇬 Egypt"]:::country
-C5["🇳🇬 Nigeria"]:::country
-C6["🇬🇭 Ghana"]:::country
-C7["🇲🇦 Morocco"]:::country
-C8["🇹🇳 Tunisia"]:::country
-C9["🇲🇺 Mauritius"]:::country
-C10["🇹🇿 Tanzania"]:::country
-C11["🇸🇴 Somalia"]:::country
-C12["🇳🇦 Namibia"]:::country
-C13["🇲🇿 Mozambique"]:::country
-C14["🇨🇮 Ivory Coast"]:::country
-C15["🇸🇩 Sudan"]:::country
-C16["🇹🇬 Togo"]:::country
-C17["🇳🇪 Niger"]:::country
-C18["🇩🇿 Algeria"]:::country
+C1["🇹🇬 Togo"]:::country
+C2["🇳🇪 Niger"]:::country
+C3["🇿🇦 South Africa"]:::country
+C4["🇰🇪 Kenya"]:::country
+C5["🇪🇬 Egypt"]:::country
+C6["🇲🇺 Mauritius"]:::country
+C7["🇸🇳 Senegal"]:::country
+C8["🇲🇿 Mozambique"]:::country
+C9["🇹🇿 Tanzania"]:::country
+C10["🇲🇦 Morocco"]:::country
+C11["🇩🇿 Algeria"]:::country
+C12["🇸🇴 Somalia"]:::country
+C13["🇬🇭 Ghana"]:::country
+C14["🇳🇬 Nigeria"]:::country
+C15["🇹🇳 Tunisia"]:::country
+C16["🇸🇩 Sudan"]:::country
+C17["🇨🇮 Ivory Coast"]:::country
+C18["🇳🇦 Namibia"]:::country
 
-%% ===== SECTORS =====
-S1["Government"]:::sector
-S2["Aviation"]:::sector
-S3["Energy"]:::sector
-S4["Finance"]:::sector
-S5["Media"]:::sector
-S6["Hospitality"]:::sector
-S7["Public Admin"]:::sector
-S8["Retail"]:::sector
-S9["IT Consulting"]:::sector
-S10["Construction"]:::sector
-S11["Tourism"]:::sector
-S12["Mining"]:::sector
-S13["Food Industry"]:::sector
+%% ===== JANUARY RELATIONS =====
+A1 --> V1
+A20 --> V2
+A2 --> V3
+A3 --> V4
+A4 --> V5
+A5 --> V6
+A4 --> V7
+A6 --> V8
+A7 --> V9
+A8 --> V10
+A9 --> V11
+A4 --> V12
+A10 --> V13
+A4 --> V14
+A4 --> V15
+A4 --> V16
+A9 --> V17
+A9 --> V18
+A9 --> V19
+A9 --> V20
+A11 --> V21
 
-%% ===== ACTOR → COUNTRY RELATIONSHIPS =====
-A1 --> C2
-A1 --> C3
-A1 --> C4
-A1 --> C6
-A1 --> C9
+%% ===== FEBRUARY RELATIONS =====
+A12 --> V22
+A13 --> V23
+A13 --> V24
+A13 --> V25
+A4 --> V26
+A14 --> V27
+A4 --> V28
+A15 --> V29
+A4 --> V30
+A16 --> V31
+A4 --> V32
+A4 --> V33
+A17 --> V34
+A18 --> V35
+A15 --> V36
+A9 --> V37
+A16 --> V38
+A7 --> V39
+A2 --> V40
+A19 --> V41
 
-A2 --> C1
-A2 --> C4
-A2 --> C3
-A2 --> C7
-A2 --> C8
-A2 --> C11
-A2 --> C13
-A2 --> C18
+%% ===== COUNTRY LINKS =====
+V1 --> C1
+V2 --> C2
+V3 --> C3
+V4 --> C4
+V5 --> C5
+V6 --> C5
+V7 --> C6
+V8 --> C7
+V9 --> C8
+V10 --> C9
+V11 --> C10
+V12 --> C4
+V13 --> C4
+V14 --> C3
+V15 --> C3
+V16 --> C3
+V17 --> C4
+V18 --> C15
+V19 --> C5
+V20 --> C11
+V21 --> C10
 
-A3 --> C2
-A3 --> C3
-A3 --> C6
-A3 --> C10
-A3 --> C11
-
-A4 --> C4
-A4 --> C7
-A4 --> C8
-A4 --> C9
-
-A5 --> C1
-
-A6 --> C5
-A6 --> C13
-A6 --> C14
-
-A7 --> C12
-
-A8 --> C2
-
-A9 --> C4
-
-A10 --> C15
-
-A11 --> C5
-
-A12 --> C16
-
-%% ===== COUNTRY → SECTOR RELATIONSHIPS =====
-C1 --> S1
-C2 --> S3
-C2 --> S7
-C2 --> S11
-C3 --> S4
-C3 --> S7
-C3 --> S12
-C4 --> S1
-C4 --> S2
-C4 --> S4
-C4 --> S11
-C5 --> S3
-C5 --> S4
-C6 --> S5
-C6 --> S7
-C7 --> S2
-C7 --> S3
-C7 --> S10
-C8 --> S4
-C8 --> S9
-C8 --> S13
-C9 --> S4
-C9 --> S6
-C10 --> S4
-C10 --> S13
-C11 --> S2
-C12 --> S8
-C13 --> S3
-C14 --> S2
-C15 --> S9
-C16 --> S1
-C17 --> S7
-C18 --> S11
+V22 --> C7
+V23 --> C12
+V24 --> C13
+V25 --> C9
+V26 --> C4
+V27 --> C14
+V28 --> C13
+V29 --> C14
+V30 --> C5
+V31 --> C6
+V32 --> C3
+V33 --> C15
+V34 --> C5
+V35 --> C16
+V36 --> C17
+V37 --> C10
+V38 --> C5
+V39 --> C18
+V40 --> C3
+V41 --> C3
+```

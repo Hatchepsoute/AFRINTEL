@@ -129,5 +129,6 @@ class MU low;
 ```
 
 ---
+👉🏾 [See the visual intelligence layer](/visual-intelligence/ecosystem-map.md)
 
 **AFRINTEL** - African Threat Intelligence Initiative
