@@ -86,7 +86,7 @@ Ces bundles contiennent des renseignements structurés sur les acteurs de ransom
 ---
 ## CTI ecosystem map
 
-👉🏾 [Voir visual intelligence layer:](visual-intelligence/ecosystem-map.md)
+👉🏾 [Voir visual intelligence layer:](/visual-intelligence/ecosystem-map.md)
 ---
 ## 📂 Structure du projet
 
