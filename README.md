@@ -9,7 +9,7 @@
 <p align="left">
 <img src="comparison/afrintel_logo.png" width="90" align="left" style="margin-right:15px"/>
 
-# AFRINTEL – African Threat Intelligence
+# AFRINTEL - African Threat Intelligence
 </p>
 
 👉🏾 [French version](README_FR.md)
@@ -74,11 +74,30 @@ Includes:
 - sector visualizations  
 
 ---
+## Threat intelligence data
 
+AFRINTEL provides structured CTI datasets in **STIX format**.
+
+📦 Available bundles:
+
+- [January 2026 STIX dataset](stix/january/afrintel-january-2026-bundle.json)
+- [February 2026 STIX dataset](stix/february/afrintel-february-2026-bundle.json)
+
+These bundles contain structured intelligence about ransomware actors, victims, targeted countries and sectors across Africa.
+
+---
+## CTI ecosystem map
+
+See the visual intelligence layer:
+
+👉 visual-intelligence/ecosystem-map.md
+---
 ## 📂 Project structure
 
 ```
 AFRINTEL
+│
+├── comparison
 │
 ├── reports
 │   ├── january
@@ -88,9 +107,16 @@ AFRINTEL
 │   ├── january
 │   └── february
 │
-├── comparison
+├── stix
+│   ├── january
+│   ├── february
+│   └── README.md
 │
-└── visual-intelligence
+├── visual-intelligence
+│
+├── README.md
+├── README_FR.md
+└── LICENSE
 ```
 
 ---
@@ -104,8 +130,8 @@ MIT License - see [LICENSE](LICENSE)
 ## ✍🏿 Auteur
 
 *Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*
+*Consultant SOC & Cyber Threat Intelligence*  
+*[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*
 ---
 
 *AFRINTEL - Open African CTI Monitoring Initiative*
