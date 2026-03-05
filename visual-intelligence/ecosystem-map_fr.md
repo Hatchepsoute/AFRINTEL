@@ -5,20 +5,19 @@
 ![Countries](https://img.shields.io/badge/Countries-18-yellow)
 ![Threat Actors](https://img.shields.io/badge/Threat%20Actors-12-orange)
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
-## 🔗 Threat Actor Mapping - January & February 2026
-👉🏾 [French version](/visual-intelligence/ecosystem-map_fr.md)
-This graph shows the connections between ransomware groups and their targets across Africa, based on 41 incidents documented across 18 countries.
+## 🔗 Cartographie des acteurs de menace - Janvier & Février 2026
+👉🏾 [English version](/visual-intelligence/ecosystem-map.md)
+Ce graphique illustre les connexions entre les groupes ransomware et leurs cibles à travers l'Afrique, basé sur 41 incidents documentés dans 18 pays.
 
 ```mermaid
 flowchart LR
 
 %% ===== STYLES =====
 classDef actor fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
-classDef victim fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
 classDef country fill:#e8ffe6,stroke:#2b8a3e,stroke-width:2px;
 classDef sector fill:#f3e6ff,stroke:#6f42c1,stroke-width:2px;
 
-%% ===== ACTORS =====
+%% ===== ACTEURS =====
 A1["thegentlemen"]:::actor
 A2["tengu"]:::actor
 A3["0APT"]:::actor
@@ -32,42 +31,42 @@ A10["apt73/bashe"]:::actor
 A11["killsec"]:::actor
 A12["Bigbrother"]:::actor
 
-%% ===== COUNTRIES =====
-C1["🇸🇳 Senegal"]:::country
-C2["🇿🇦 South Africa"]:::country
+%% ===== PAYS =====
+C1["🇸🇳 Sénégal"]:::country
+C2["🇿🇦 Afrique du Sud"]:::country
 C3["🇰🇪 Kenya"]:::country
-C4["🇪🇬 Egypt"]:::country
+C4["🇪🇬 Égypte"]:::country
 C5["🇳🇬 Nigeria"]:::country
 C6["🇬🇭 Ghana"]:::country
-C7["🇲🇦 Morocco"]:::country
-C8["🇹🇳 Tunisia"]:::country
-C9["🇲🇺 Mauritius"]:::country
-C10["🇹🇿 Tanzania"]:::country
-C11["🇸🇴 Somalia"]:::country
-C12["🇳🇦 Namibia"]:::country
+C7["🇲🇦 Maroc"]:::country
+C8["🇹🇳 Tunisie"]:::country
+C9["🇲🇺 Maurice"]:::country
+C10["🇹🇿 Tanzanie"]:::country
+C11["🇸🇴 Somalie"]:::country
+C12["🇳🇦 Namibie"]:::country
 C13["🇲🇿 Mozambique"]:::country
-C14["🇨🇮 Ivory Coast"]:::country
-C15["🇸🇩 Sudan"]:::country
+C14["🇨🇮 Côte d'Ivoire"]:::country
+C15["🇸🇩 Soudan"]:::country
 C16["🇹🇬 Togo"]:::country
 C17["🇳🇪 Niger"]:::country
-C18["🇩🇿 Algeria"]:::country
+C18["🇩🇿 Algérie"]:::country
 
-%% ===== SECTORS =====
-S1["Government"]:::sector
+%% ===== SECTEURS =====
+S1["Gouvernement"]:::sector
 S2["Aviation"]:::sector
-S3["Energy"]:::sector
+S3["Énergie"]:::sector
 S4["Finance"]:::sector
-S5["Media"]:::sector
-S6["Hospitality"]:::sector
-S7["Public Admin"]:::sector
-S8["Retail"]:::sector
-S9["IT Consulting"]:::sector
-S10["Construction"]:::sector
-S11["Tourism"]:::sector
-S12["Mining"]:::sector
-S13["Food Industry"]:::sector
+S5["Média"]:::sector
+S6["Hôtellerie"]:::sector
+S7["Admin. publique"]:::sector
+S8["Commerce"]:::sector
+S9["Conseil IT"]:::sector
+S10["Bâtiment"]:::sector
+S11["Tourisme"]:::sector
+S12["Mines"]:::sector
+S13["Agroalimentaire"]:::sector
 
-%% ===== ACTOR → COUNTRY RELATIONSHIPS =====
+%% ===== RELATIONS ACTEURS → PAYS =====
 A1 --> C2
 A1 --> C3
 A1 --> C4
@@ -112,7 +111,7 @@ A11 --> C5
 
 A12 --> C16
 
-%% ===== COUNTRY → SECTOR RELATIONSHIPS =====
+%% ===== RELATIONS PAYS → SECTEURS =====
 C1 --> S1
 C2 --> S3
 C2 --> S7

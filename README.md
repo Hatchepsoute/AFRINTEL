@@ -88,7 +88,7 @@ These bundles contain structured intelligence about ransomware actors, victims, 
 ---
 ## CTI ecosystem map
 
-👉🏾 [See the visual intelligence layer:](/visual-intelligence/ecosystem-map.md)
+👉🏾 [See the visual intelligence layer](/visual-intelligence/ecosystem-map.md)
 ---
 ## 📂 Project structure
 

@@ -84,9 +84,9 @@ AFRINTEL fournit des ensembles de données CTI structurées au **format STIX**.
 
 Ces bundles contiennent des renseignements structurés sur les acteurs de ransomwares, les victimes, les pays et secteurs ciblés à travers l'Afrique.
 ---
-## CTI ecosystem map
+## Visualisation de l'écosystème CTI
 
-👉🏾 [Voir visual intelligence layer:](/visual-intelligence/ecosystem-map.md)
+👉🏾 [Explorer la cartographie des menaces](/visual-intelligence/ecosystem-map_fr.md)
 ---
 ## 📂 Structure du projet
 
