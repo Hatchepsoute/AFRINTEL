@@ -64,7 +64,7 @@ Focus on:
 
 ## 🧠 Visual intelligence
 
-📊 [Visual Intelligence Dashboard](visual-intelligence/README.md)
+📊 [Visual intelligence dashboard](visual-intelligence/README.md)
 
 Includes:
 
@@ -73,6 +73,9 @@ Includes:
 - regional heatmaps  
 - sector visualizations  
 
+### CTI ecosystem map
+
+👉🏾 [See the visual intelligence layer](/visual-intelligence/ecosystem-map.md)
 ---
 ## Threat intelligence data
 
@@ -85,10 +88,6 @@ AFRINTEL provides structured CTI datasets in **STIX format**.
 
 These bundles contain structured intelligence about ransomware actors, victims, targeted countries and sectors across Africa.
 
----
-## CTI ecosystem map
-
-👉🏾 [See the visual intelligence layer](/visual-intelligence/ecosystem-map.md)
 ---
 ## 📂 Project structure
 

@@ -71,7 +71,9 @@ Inclut :
 - diagrammes acteurs → victimes → pays  
 - heatmaps régionales  
 - visualisations sectorielles  
+### Visualisation de l'écosystème CTI
 
+👉🏾 [Explorer la cartographie des menaces](/visual-intelligence/ecosystem-map_fr.md)
 ---
 ## Données de renseignement sur les menaces
 
@@ -83,10 +85,6 @@ AFRINTEL fournit des ensembles de données CTI structurées au **format STIX**.
 - [Données STIX février 2026](stix/february/afrintel-february-2026-bundle.json)
 
 Ces bundles contiennent des renseignements structurés sur les acteurs de ransomwares, les victimes, les pays et secteurs ciblés à travers l'Afrique.
----
-## Visualisation de l'écosystème CTI
-
-👉🏾 [Explorer la cartographie des menaces](/visual-intelligence/ecosystem-map_fr.md)
 ---
 ## 📂 Structure du projet
 
