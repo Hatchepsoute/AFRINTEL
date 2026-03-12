@@ -1,5 +1,5 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-# Cyberattaques en Afrique (2025) : Liste des 149 victimes, incluant 3 doubles revendications par des groupes distincts.
+# Cyberattaques en Afrique (2025) : liste des 149 victimes, incluant 3 doubles revendications par des groupes distincts.
 👉🏾 [**English version available here** ](./README.md)
 ## Janvier 2025
 ### 06 Janvier 2025
