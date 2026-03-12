@@ -116,16 +116,16 @@ xychart-beta
 ### 4.10 Graphe acteur → victime → pays
 ```mermaid
 graph LR
-    JabarootDZ["Jabaroot DZ"] -->|CNSS, Ministère Industrie|🇲🇦 Maroc
-    devman -->|Tawasol|🇪🇬 Égypte
+    JabarootDZ["Jabaroot DZ"] -->|CNSS, Ministère Industrie| Maroc["🇲🇦 Maroc"]
+    devman -->|Tawasol| Egypte["🇪🇬 Égypte"]
     devman -->|Premier Meats| AfriqueSud["🇿🇦 Afrique du Sud"]
-    dragonforce -->|IACC Holdings| 🇪🇬 Égypte
-    ransomhouse -->|Cell C|🇿🇦 Afrique du Sud
-    crypto24 -->|IBS| 🇪🇬 Égypte
-    PhantomAtlas["Phantom Atlas"] -->|MGPTT| 🇩🇿 Algérie
-    cicada3301 -->|Natilait| 🇹🇳 Tunisie
-    gunra -->|Dar Al Teb| 🇪🇬 Égypte
-    inconnu["Inconnu"] -->|FRMF| 🇲🇦 Maroc
+    dragonforce -->|IACC Holdings| Egypte
+    ransomhouse -->|Cell C| AfriqueSud
+    crypto24 -->|IBS| Egypte
+    PhantomAtlas["Phantom Atlas"] -->|MGPTT| Algerie["🇩🇿 Algérie"]
+    cicada3301 -->|Natilait| Tunisie["🇹🇳 Tunisie"]
+    gunra -->|Dar Al Teb| Egypte
+    inconnu["Inconnu"] -->|FRMF| Maroc
 ```
 ## 5. Analyse sectorielle
 - **Administrations publiques** : 4 attaques (CNSS, Ministère de l'Industrie, MGPTT, FRMF). Les groupes Jabaroot DZ et Phantom Atlas ont ciblé des institutions clés au Maroc et en Algérie, avec des données sensibles (bénéficiaires, documents administratifs).
