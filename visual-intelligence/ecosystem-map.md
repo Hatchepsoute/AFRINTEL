@@ -8,7 +8,9 @@
 ## 🔗 Threat Actor Mapping - January & February 2026
 👉🏾 [French version](/visual-intelligence/ecosystem-map_fr.md)
 
-This graph shows the connections between ransomware groups and their targets across Africa, based on 41 incidents documented across 18 countries.
+## CTI Ecosystem Map — Africa Cyber Incidents (Jan-Feb 2026)
+
+This visual map illustrates the relationships between threat actors, their victims, and the countries impacted across Africa during the first two months of 2026.
 ### Actors → victims → countries (January + February 2026)
 ```mermaid
 flowchart LR
