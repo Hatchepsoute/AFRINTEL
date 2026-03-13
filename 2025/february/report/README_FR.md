@@ -118,34 +118,34 @@ L'Égypte est le pays le plus touché, avec des attaques sur des infrastructures
 ### 6.1. Graphe Acteur → Victime → Pays
 ```mermaid
 graph LR
-    fog -->|Xlab Group| Égypte
-    ransomhub -->|ASK Gras Savoye| Maroc
-    ransomhub -->|SAWS| Afrique du Sud
-    flocker -->|services.gov.zm| Zambie
-    killsec -->|Brolly| Ghana
-    akira -->|Paratus| Namibie
-    hunter -->|SPEED Co| Égypte
-    killsec -->|Shaghalni| Égypte
+    fog -->|Xlab Group| Egypte["🇪🇬 Égypte"]
+    ransomhub -->|ASK Gras Savoye| Maroc["🇲🇦 Maroc"]
+    ransomhub -->|SAWS| AfriqueSud["🇿🇦 Afrique du Sud"]
+    flocker -->|services.gov.zm| Zambie["🇿🇲 Zambie"]
+    killsec -->|Brolly| Ghana["🇬🇭 Ghana"]
+    akira -->|Paratus| Namibie["🇳🇦 Namibie"]
+    hunter -->|SPEED Co| Egypte
+    killsec -->|Shaghalni| Egypte
 ```
 ### 6.2. Timeline des attaques
 ```mermaid
 timeline
-    title AFRINTEL February 2025 - Chronologie des attaques
+    title AFRINTEL February 2025 - Attack Timeline
 
-    section 03 Feb
-        fog : Xlab Group (Égypte)
-    section 12 Feb
-        ransomhub : ASK Gras Savoye (Maroc)
-        ransomhub : SAWS (Afrique du Sud)
-    section 19 Feb
-        flocker : services.gov.zm (Zambie)
-        killsec : Brolly (Ghana)
-    section 21 Feb
-        akira : Paratus (Namibie)
-    section 22 Feb
-        hunter : SPEED Co (Égypte)
-    section 23 Feb
-        killsec : Shaghalni (Égypte)
+    section Feb 03
+        fog : Xlab Group (🇪🇬 Egypt)
+    section Feb 12
+        ransomhub : ASK Gras Savoye (🇲🇦 Morocco)
+        ransomhub : SAWS (🇿🇦 South Africa)
+    section Feb 19
+        flocker : services.gov.zm (🇿🇲 Zambia)
+        killsec : Brolly (🇬🇭 Ghana)
+    section Feb 21
+        akira : Paratus (🇳🇦 Namibia)
+    section Feb 22
+        hunter : SPEED Co (🇪🇬 Egypt)
+    section Feb 23
+        killsec : Shaghalni (🇪🇬 Egypt)
 ```
 ## 7. TTPs observées
 D'après les descriptions disponibles, on note :

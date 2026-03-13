@@ -110,34 +110,34 @@ Egypt is the most affected country, with attacks on critical infrastructure (log
 ### 6.1. Actor → Victim → Country Graph
 ```mermaid
 graph LR
-    fog -->|Xlab Group| Egypt
-    ransomhub -->|ASK Gras Savoye| Morocco
-    ransomhub -->|SAWS| South Africa
-    flocker -->|services.gov.zm| Zambia
-    killsec -->|Brolly| Ghana
-    akira -->|Paratus| Namibia
+    fog -->|Xlab Group| Egypt["🇪🇬 Egypt"]
+    ransomhub -->|ASK Gras Savoye| Morocco["🇲🇦 Morocco"]
+    ransomhub -->|SAWS| SouthAfrica["🇿🇦 South Africa"]
+    flocker -->|services.gov.zm| Zambia["🇿🇲 Zambia"]
+    killsec -->|Brolly| Ghana["🇬🇭 Ghana"]
+    akira -->|Paratus| Namibia["🇳🇦 Namibia"]
     hunter -->|SPEED Co| Egypt
     killsec -->|Shaghalni| Egypt
 ```
 ### 6.2. Attack timeline
 ```mermaid
 timeline
-    title AFRINTEL February 2025 - Attack timeline
+    title AFRINTEL February 2025 - Attack Timeline
 
-    section 03 Feb
-        fog : Xlab Group (Egypt)
-    section 12 Feb
-        ransomhub : ASK Gras Savoye (Morocco)
-        ransomhub : SAWS (South Africa)
-    section 19 Feb
-        flocker : services.gov.zm (Zambia)
-        killsec : Brolly (Ghana)
-    section 21 Feb
-        akira : Paratus (Namibia)
-    section 22 Feb
-        hunter : SPEED Co (Egypt)
-    section 23 Feb
-        killsec : Shaghalni (Egypt)
+    section Feb 03
+        fog : Xlab Group (🇪🇬 Egypt)
+    section Feb 12
+        ransomhub : ASK Gras Savoye (🇲🇦 Morocco)
+        ransomhub : SAWS (🇿🇦 South Africa)
+    section Feb 19
+        flocker : services.gov.zm (🇿🇲 Zambia)
+        killsec : Brolly (🇬🇭 Ghana)
+    section Feb 21
+        akira : Paratus (🇳🇦 Namibia)
+    section Feb 22
+        hunter : SPEED Co (🇪🇬 Egypt)
+    section Feb 23
+        killsec : Shaghalni (🇪🇬 Egypt)
 ```
 ## 7. Observed TTPs
 Based on the available descriptions, we note:
