@@ -96,3 +96,10 @@
 - **Statut:** Fuite de données massive. Publication d'un échantillon de données sensibles incluant PII (Nom, CIN), données de contact et hashs de mots de passe (bcrypt).
 - **Description victime:** INWI est l'un des trois principaux opérateurs de télécommunications au Maroc, fournissant des services de téléphonie mobile, fixe et d'internet (ADSL/Fibre).
 
+## ✍🏿 Auteur
+*Adama ASSIONGBON*  
+*Consultant SOC & Cyber Threat Intelligence*  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+---
+*AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*

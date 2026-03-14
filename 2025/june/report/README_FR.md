@@ -43,7 +43,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 ```mermaid
 xychart-beta
     title "Attaques par secteur - Juin 2025"
-    x-axis ["Gouvernement", "Banque/Finance", "Services entreprises", "Télécoms", "Commerce", "Conglomérat", "Défense"]
+    x-axis ["Gouvernement", "Banque", "Services entreprises", "Télécoms", "Commerce", "Conglomérat", "Défense"]
     y-axis "Nombre d'attaques" 0 --> 4
     bar [3, 2, 2, 1, 1, 1, 1]
 ```

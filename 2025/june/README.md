@@ -92,3 +92,11 @@
 - **Website:** https://inwi.ma
 - **Status:** Massive data leak. Publication of a sample of sensitive data including PII (Name, National ID), contact information, and password hashes (bcrypt).
 - **Victim Description:** INWI is one of the three main telecommunications operators in Morocco, providing mobile, fixed-line, and internet services (ADSL/Fiber).
+
+## ✍🏿 Author
+*Adama ASSIONGBON*  
+*SOC & Cyber Threat Intelligence Consultant*  
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+---
+*AFRINTEL - Open CTI Monitoring Initiative on Africa*

@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 
-# CTI Report: Cyber Attacks in Africa - June 2025
-👉🏾 [**Version française disponible ici**](./README_FR.md)
+# CTI Report: Cyber attacks in Africa - June 2025
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Introduction
 This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during June 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
@@ -44,7 +44,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 ```mermaid
 xychart-beta
     title "Attacks by sector - June 2025"
-    x-axis ["Government", "Banking/Finance", "Business Services", "Telecom", "Retail", "Conglomerate", "Defense"]
+    x-axis ["Government", "Banking", "Business Services", "Telecom", "Retail", "Conglomerate", "Defense"]
     y-axis "Number of attacks" 0 --> 4
     bar [3, 2, 2, 1, 1, 1, 1]
 ```

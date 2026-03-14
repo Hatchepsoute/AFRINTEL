@@ -600,7 +600,7 @@
 ### 13 Juillet 2025
 #### 🇹🇿 Tanzanie - Twaweza
 - **Groupe ransomware:** nightspire
-- **Secteur:** Organisations non gouvernementales (ONG)
+- **Secteur:** ONG (Éducation & Gouvernance)
 - **Site web:** twaweza.org
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** Twaweza East Africa est une organisation panafricaine de premier plan, basée en Tanzanie (avec des bureaux au Kenya et en Ouganda).

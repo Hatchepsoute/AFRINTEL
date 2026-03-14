@@ -587,7 +587,7 @@
 ### 13 July 2025
 #### 🇹🇿 Tanzania - Twaweza
 - **Ransomware Group:** nightspire
-- **Sector:** Non-Governmental Organizations (NGOs)
+- **Sector:** NGO (Education & Governance)
 - **Website:** twaweza.org
 - **Status:** Claim & data leak
 - **Victim Description:** Twaweza East Africa is a leading pan-African organization, based in Tanzania (with offices in Kenya and Uganda).

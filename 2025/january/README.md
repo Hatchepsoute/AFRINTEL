@@ -1,3 +1,4 @@
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 # List of African cyberattack victims in January 2025 (16 victims)
 [**French version available here**](./README_FR.md)
 ## January 2025
