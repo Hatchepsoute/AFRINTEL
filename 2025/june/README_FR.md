@@ -1,3 +1,5 @@
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+
 #Liste des victimes africaines de cyberattaques en Juin 2025 (11 victimes)
 👉🏾 [**English version available here**](README.md)
 ## Juin 2025
