@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 
-# List of African Cyberattack Victims in July 2025 (13 victims)
+# List of African cyberattack victims in July 2025 (13 victims)
 👉🏾 [**French version available here**](./README_FR.md)
 
 ## July 2025
@@ -108,7 +108,9 @@
 - **Website:** https://bhbank.tn/
 - **Status:** Major compromise & Account takeover (ATO).
 - **Victim Description:** Historic and systemic banking institution in Tunisia (Banque de l'Habitat), a pillar of real estate financing and the national economy.
-
+---
+[July 2025 Report](./report/README.md)
+---
 ## ✍🏿 Author
 *Adama ASSIONGBON*  
 *SOC & Cyber Threat Intelligence Consultant*  

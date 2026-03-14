@@ -108,7 +108,9 @@
 - **Site web:** https://bhbank.tn/
 - **Statut:** Compromission majeure & Prise de contrôle de comptes (ATO).
 - **Description victime:** Institution bancaire historique et systémique en Tunisie (Banque de l'Habitat), pilier du financement de l'immobilier et de l'économie nationale.
-
+---
+[Rapport de Juillet 2025](./report/README_FR.md)
+---
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  
 *Consultant SOC & Cyber Threat Intelligence*  
