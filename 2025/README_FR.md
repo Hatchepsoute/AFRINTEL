@@ -547,6 +547,7 @@
 #### 🇿🇦 Afrique du Sud - carducci
 - **Groupe ransomware:** warlock
 - **Secteur:** Commerce de détail (Mode)
+- **Site web:** http://carducci.co.za/
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** Carducci est une marque de mode sud-africaine basée au Cap, fondée en 1978. Elle est spécialisée dans les vêtements pour hommes élégants, notamment les costumes, les tenues décontractées et les accessoires. La marque est réputée pour son savoir-faire et ses tissus raffinés. Carducci fait partie du groupe Seardel
 

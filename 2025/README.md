@@ -538,6 +538,7 @@
 #### 🇿🇦 South Africa - carducci
 - **Ransomware Group:** warlock
 - **Sector:** Retail (Fashion)
+- **Website:** http://carducci.co.za/
 - **Status:** Claim & data leak
 - **Victim Description:** Carducci is a South African fashion brand based in Cape Town, founded in 1978. It specializes in elegant menswear, including suits, casual wear, and accessories. The brand is renowned for its craftsmanship and refined fabrics. Carducci is part of the Seardel group.
 
