@@ -49,7 +49,7 @@ Immobilier / Construction | 1 |
 Restauration | 1 |
 
 ```mermaid
-pie title Répartition par secteur d'activité - Afrique - Septembre 2025
+pie title Répartition par secteur d'activité - Septembre 2025
 "Finance" : 2
 "Assurances" : 2
 "Industrie manufacturière" : 2
@@ -73,7 +73,7 @@ Namibie | 1 |
 Sénégal | 1 |
 
 ```mermaid
-pie title Répartition par pays - Afrique - Septembre 2025
+pie title Répartition par pays - Septembre 2025
 "Égypte" : 2
 "Nigeria" : 2
 "Maroc" : 2
