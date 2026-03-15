@@ -83,7 +83,7 @@ pie title Répartition des Secteurs - Septembre 2025
 
 ```mermaid
 graph TD
-    subgraph "Répartition des Attaques par Pays (Septembre 2025)"
+    subgraph "Répartition des attaques par pays (Septembre 2025)"
     EG[🇪🇬 Égypte: 2] --- Total((Total: 12))
     NG[🇳🇬 Nigeria: 2] --- Total
     MA[🇲🇦 Maroc: 2] --- Total
