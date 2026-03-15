@@ -63,7 +63,7 @@ pie title Répartition des attaques par acteur (août 2025)
 ```mermaid
 xychart-beta
     title "Attaques par secteur - Août 2025"
-    x-axis ["Technology", "Energy", "Banking/Finance", "Agribusiness", "Logistics", "Retail", "IoT/Security", "Government"]
+    x-axis ["Technology", "Energy", "Finance", "Agribusiness", "Logistics", "Retail", "IoT/Security", "Government"]
     y-axis "Nombre d'attaques" 0 --> 5
     bar [4, 2, 2, 1, 1, 1, 1, 1]
 ```
@@ -86,7 +86,7 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Attaques par pays - Août 2025"
-    x-axis ["🇿🇦 Afrique du Sud", "🇹🇳 Tunisie", "🇰🇪 Kenya", "🇲🇦 Maroc", "🇳🇬 Nigeria", "🇩🇿 Algérie", "🇺🇬 Ouganda", "🇪🇬 Égypte", "🇲🇺 Maurice", "🇹🇬 Togo"]
+    x-axis ["🇿🇦Afrique du Sud", "🇹🇳Tunisie", "🇰🇪Kenya", "🇲🇦Maroc", "🇳🇬Nigeria", "🇩🇿Algérie", "🇺🇬Ouganda", "🇪🇬Égypte", "🇲🇺Maurice", "🇹🇬Togo"]
     y-axis "Nombre d'attaques" 0 --> 4
     bar [3, 2, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
