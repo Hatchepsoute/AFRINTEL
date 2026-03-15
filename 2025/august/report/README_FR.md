@@ -86,7 +86,7 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Attaques par pays - Août 2025"
-    x-axis ["🇿🇦Afrique du Sud", "🇹🇳Tunisie", "🇰🇪Kenya", "🇲🇦Maroc", "🇳🇬Nigeria", "🇩🇿Algérie", "🇺🇬Ouganda", "🇪🇬Égypte", "🇲🇺Maurice", "🇹🇬Togo"]
+    x-axis ["🇿🇦Afrique Sud", "🇹🇳Tunisie", "🇰🇪Kenya", "🇲🇦Maroc", "🇳🇬Nigeria", "🇩🇿Algérie", "🇺🇬Ouganda", "🇪🇬Égypte", "🇲🇺Maurice", "🇹🇬Togo"]
     y-axis "Nombre d'attaques" 0 --> 4
     bar [3, 2, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
