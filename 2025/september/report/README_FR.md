@@ -5,7 +5,7 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
 # 🛡️ AFRINTEL | Rapport CTI : Cyberattaques en Afrique
-## 📅 Période : Septembre 2025 (12 victimes recensées)
+## Période : Septembre 2025 (12 victimes recensées)
 👉🏾 [**English version available here**](./README.md)
 
 ---

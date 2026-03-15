@@ -1,10 +1,11 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields. xio/badge/Data%20Source-OSINT-darkgreen)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+
 # 🛡️ AFRINTEL | CTI Report: Cyberattacks in Africa
-## 📅 Period: September 2025 (12 documented victims)
+## Period: September 2025 (12 documented victims)
 👉🏾 [**French version available here**](./README_FR.md)
 
 ---
