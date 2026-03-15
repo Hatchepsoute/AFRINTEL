@@ -50,11 +50,11 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 | Restauration / Services alimentaires | 1 |
 
 #### 3.2.1 Top secteurs ciblés
-- Finance/Assurances  [████████████████████] 4
-- Administrations     [██████████] 2
-- Industrie           [██████████] 2
-- Technologies        [██████████] 2
-- Autres              [██████████] 2
+- Finance/Assurances  	[████████████████████] 4
+- Administrations     	[██████████] 2
+- Industrie           	[██████████] 2
+- Technologies        	[██████████] 2
+- Autres              	[██████████] 2
 
 ```mermaid
 pie title Répartition des Secteurs - Septembre 2025
