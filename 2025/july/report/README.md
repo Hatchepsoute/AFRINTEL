@@ -1,5 +1,8 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # CTI Report: Cyber attacks in Africa - July 2025 (13 victims)
 👉🏾 [**French version available here**](./README_FR.md)
 
@@ -74,7 +77,7 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-    title "Attacks by Country - July 2025"
+    title "Attacks by country - July 2025"
     x-axis ["🇹🇳 Tunisia", "🇲🇦 Morocco", "🇳🇬 Nigeria", "🇿🇦 South Africa", "🇹🇿 Tanzania", "🇰🇪 Kenya", "🇪🇬 Egypt", "🇳🇦 Namibia"]
     y-axis "Number of Attacks" 0 --> 6
     bar [5, 2, 1, 1, 1, 1, 1, 1]
