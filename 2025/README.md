@@ -873,8 +873,8 @@
 - **Ransomware Group:** blackshrantac
 - **Sector:** Public Administration / Finance / Taxation
 - **Website:** www.impots.gouv.sn
-- **Status:** Claim & data leak
-- **Victim Description:** General Directorate of Taxes and Estates of Senegal.
+- **Status:** Claimed & Leaked - 1 Terabyte (1 TB) of sensitive data. This massive volume includes structured tax databases, land registries, and taxpayer banking information.
+- **Victim Description:** The **DGID** is the central agency of Senegal's Ministry of Finance and Budget, responsible for tax collection, national domain management, and the land registry (cadastre).
 
 ## October 2025
 
