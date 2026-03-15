@@ -5,7 +5,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Rapport CTI : Cyberattaques en Afrique — Septembre 2025 (12 victimes)
+# Rapport CTI : Cyberattaques en Afrique - Septembre 2025 (12 victimes)
 
 👉🏾 English version available in README.md
 
@@ -14,9 +14,7 @@
 # 1. Introduction
 
 Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse des cyberattaques observées en Afrique durant **septembre 2025**.
-
 Les informations proviennent de **sources OSINT**, notamment de la surveillance de **sites de fuite de groupes ransomware** et d’écosystèmes d’extorsion numérique.
-
 Ce rapport s’inscrit dans le cadre du projet **AFRINTEL**, une initiative visant à documenter les cybermenaces affectant les organisations africaines.
 
 Objectifs :
@@ -51,8 +49,7 @@ Immobilier / Construction | 1 |
 Restauration | 1 |
 
 ```mermaid
-pie
-title Répartition par secteur d'activité — Afrique — Septembre 2025
+pie title Répartition par secteur d'activité - Afrique - Septembre 2025
 "Finance" : 2
 "Assurances" : 2
 "Industrie manufacturière" : 2
@@ -74,9 +71,9 @@ Côte d'Ivoire | 1 |
 Zimbabwe | 1 |
 Namibie | 1 |
 Sénégal | 1 |
+
 ```mermaid
-pie
-title Répartition par pays — Afrique — Septembre 2025
+pie title Répartition par pays - Afrique - Septembre 2025
 "Égypte" : 2
 "Nigeria" : 2
 "Maroc" : 2
@@ -113,7 +110,7 @@ arcusmedia | 1 |
 BlackShrantac | 1 |
 ```mermaid
 pie
-title Répartition par groupe ransomware — Afrique — Septembre 2025
+title Répartition par groupe ransomware - Afrique - Septembre 2025
 "thegentlemen" : 2
 "killsec" : 2
 "obscura" : 1
@@ -162,8 +159,8 @@ BlackShrantac --> DGID
 ## thegentlemen
 
 09/09/2025  
-- 🇲🇦 Dolidol — Industrie manufacturière  
-- 🇿🇼 Proplastics Limited — Industrie manufacturière  
+- 🇲🇦 Dolidol - Industrie manufacturière  
+- 🇿🇼 Proplastics Limited - Industrie manufacturière  
 
 Observation CTI :  
 Le groupe a mené **deux opérations simultanées dans deux pays différents**.
@@ -172,8 +169,8 @@ Le groupe a mené **deux opérations simultanées dans deux pays différents**.
 
 ## killsec
 
-- 10/09/2025 — 🇳🇬 Princeps Credit Systems (Finance)
-- 22/09/2025 — 🇲🇦 Fractalite (Technologies)
+- 10/09/2025 - 🇳🇬 Princeps Credit Systems (Finance)
+- 22/09/2025 - 🇲🇦 Fractalite (Technologies)
 
 Observation :  
 Ciblage de **secteurs économiques sensibles**.
@@ -183,7 +180,7 @@ Ciblage de **secteurs économiques sensibles**.
 ## obscura
 
 05/09/2025  
-🇪🇬 MeamarGroup — Immobilier / Construction
+🇪🇬 MeamarGroup - Immobilier / Construction
 
 ---
 
@@ -200,14 +197,14 @@ Fuite massive de **2,5 millions d’enregistrements financiers**.
 ## yurei
 
 08/09/2025  
-🇳🇬 The Promise Nigeria — Restauration
+🇳🇬 The Promise Nigeria - Restauration
 
 ---
 
 ## radar
 
 11/09/2025  
-🇳🇦 Epia Financial Services — Finance
+🇳🇦 Epia Financial Services - Finance
 
 ---
 
