@@ -51,11 +51,11 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 | Catering / Food Services | 1 |
 
 #### 3.2.1 Top Targeted sectors visualization
-Finance/Insurance   [████████████████████] 4
-Public Admin        [██████████] 2
-Manufacturing       [██████████] 2
-Technology          [██████████] 2
-Others              [██████████] 2
+- Finance/Insurance   [████████████████████] 4
+- Public Admin        [██████████] 2
+- Manufacturing       [██████████] 2
+- Technology          [██████████] 2
+- Others              [██████████] 2
 
 ```mermaid
 pie title Sector distribution - September 2025
@@ -134,7 +134,8 @@ graph TD
 
 #### 4.10 BlackShrantac (1 attack)
 * **29/09/2025: Direction Générale des Impôts et des Domaines (Senegal)** - Tax Administration. Massive exfiltration of **1 TB of sensitive data** (tax databases, land registries, banking info).
----
+#### 4.11 Actor → victim → country
+
 ```mermaid
 graph LR
 
