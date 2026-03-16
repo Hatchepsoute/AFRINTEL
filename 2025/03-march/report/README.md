@@ -123,15 +123,26 @@ xychart-beta
 ### 6.1. Threat actor → victim → country graph
 ```mermaid
 graph LR
-    play -->|IT-IQ Botswana| 🇧🇼 Botswana
-    killsec -->|Workforce Group| 🇳🇬 Nigeria
-    arcusmedia -->|LINKGROUP| 🇿🇦 South Africa
-    arcusmedia -->|synaptic.co.tz| 🇹🇿 Tanzania
-    lynx -->|ACDC Express|🇿🇦 South Africa
-    funksec -->|ISEE|🇪🇬 Égypte
-    nightspire -->|MISR AL MAHABA HOSPITAL| 🇪🇬 Egypt
-    nightspire -->|INI Investments| 🇪🇬 Egypt
-    babuk2 -->|moh.gov.rw| 🇷🇼 Rwanda
+    %% Groups & Victims
+    Play["Play"] -->|"IT-IQ Botswana"| BW["🇧🇼 Botswana"]
+    Killsec["Killsec"] -->|"Workforce Group"| NG["🇳🇬 Nigeria"]
+    
+    ArcusMedia["ArcusMedia"] -->|"LINKGROUP"| ZA["🇿🇦 South Africa"]
+    ArcusMedia -->|"synaptic.co.tz"| TZ["🇹🇿 Tanzania"]
+    
+    Lynx["Lynx"] -->|"ACDC Express"| ZA
+    
+    FunkSec["FunkSec"] -->|"ISEE"| EG["🇪🇬 Egypt"]
+    
+    Nightspire["Nightspire"] -->|"MISR AL MAHABA HOSPITAL"| EG
+    Nightspire -->|"INI Investments"| EG
+    
+    Babuk2["Babuk2"] -->|"moh.gov.rw"| RW["🇷🇼 Rwanda"]
+
+    %% Visual Styles
+    style Lynx fill:#b30000,stroke:#333,color:#fff
+    style Nightspire fill:#1a1a1a,stroke:#333,color:#fff
+    style Play fill:#1a1a1a,stroke:#333,color:#fff
 ```
 North Africa (Egypt) and Southern Africa (South Africa, Botswana) concentrate the majority of attacks, with a presence in East Africa (Tanzania, Rwanda) and West Africa (Nigeria).
 
