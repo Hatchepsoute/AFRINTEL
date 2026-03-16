@@ -134,26 +134,40 @@ East and North Africa are the most affected, with a notable presence in West Afr
 ### 6.1. Actor → victim → country graph
 ```mermaid
 graph LR
-    funksec -->|gags.gov.eg, mts.gov.eg| 🇪🇬 Egypt
-    funksec -->|seocommarrakech.com|🇲🇦 Morocco
-    funksec -->|cu-barika.dz|🇩🇿 Algeria
-    funksec -->|achieverssciencejournal.org| 🇳🇬 Nigeria
-    funksec -->|qed.co.ug| 🇺🇬 Uganda
+    %% Group: FunkSec
+    FunkSec["FunkSec"] -->|"gags.gov.eg / mts.gov.eg"| EG["🇪🇬 Egypt"]
+    FunkSec -->|"seocommarrakech.com"| MA["🇲🇦 Morocco"]
+    FunkSec -->|"cu-barika.dz"| DZ["🇩🇿 Algeria"]
+    FunkSec -->|"achieverssciencejournal.org"| NG["🇳🇬 Nigeria"]
+    FunkSec -->|"qed.co.ug"| UG["🇺🇬 Uganda"]
 
-    GDLockerSec -->|lnrbda.gov.ng|🇳🇬 Nigeria
-    GDLockerSec -->|usmba.ac.ma|🇲🇦 Morocco
-    GDLockerSec -->|fgse.cu.edu.eg|🇪🇬 Egypt
+    %% Group: GDLockerSec
+    GDLockerSec["GDLockerSec"] -->|"lnrbda.gov.ng"| NG
+    GDLockerSec -->|"usmba.ac.ma"| MA
+    GDLockerSec -->|"fgse.cu.edu.eg"| EG
 
-    ransomhub -->|Molars Dental|🇰🇪 Kenya
-    ransomhub -->|INTELS|🇳🇬 Nigeria
+    %% Group: RansomHub
+    RansomHub["RansomHub"] -->|"Molars Dental"| KE["🇰🇪 Kenya"]
+    RansomHub -->|"INTELS"| NG
 
-    spacebears -->|Sharm Reef Hotel|🇪🇬 Egypt
-    spacebears -->|Clinique Inaya| 🇩🇿Algeria
+    %% Group: SpaceBears
+    SpaceBears["SpaceBears"] -->|"Sharm Reef Hotel"| EG
+    SpaceBears -->|"Clinique Inaya"| DZ
 
-    babuk2 -->|workers.com.zm|🇿🇲 Zambia
-    babuk2 -->|Zetech University|🇰🇪 Kenya
+    %% Group: Babuk2
+    Babuk2["Babuk2"] -->|"workers.com.zm"| ZM["🇿🇲 Zambia"]
+    Babuk2 -->|"Zetech University"| KE
 
-    apt73 -->|Pick n Pay| 🇿🇦 South Africa
+    %% Group: APT73
+    APT73["APT73"] -->|"Pick n Pay"| ZA["🇿🇦 South Africa"]
+
+    %% Group: Lynx (New addition from your recent analysis)
+    Lynx["Lynx"] -->|"Lion of Africa Insurance"| ZA
+
+    %% Styling for better visibility
+    style FunkSec fill:#1a1a1a,stroke:#333,color:#fff
+    style Lynx fill:#b30000,stroke:#333,color:#fff
+    style RansomHub fill:#b30000,stroke:#333,color:#fff
 ```
 ### 6.2. Attack timeline
 ```mermaid

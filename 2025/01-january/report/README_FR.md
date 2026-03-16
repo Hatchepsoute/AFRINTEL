@@ -151,26 +151,36 @@ L'Afrique de l'Est et du Nord sont les plus touchées, avec une présence notabl
 ### 6.1. Graphe acteur → victime → pays
 ```mermaid
 graph LR
-    funksec -->|gags.gov.eg, mts.gov.eg| 🇪🇬 Égypte
-    funksec -->|seocommarrakech.com|🇲🇦 Maroc
-    funksec -->|cu-barika.dz| 🇩🇿 Algérie
-    funksec -->|achieverssciencejournal.org|🇳🇬 Nigeria
-    funksec -->|qed.co.ug| 🇺🇬 Ouganda
+    %% Groupe FunkSec
+    FunkSec -->|"gags.gov.eg / mts.gov.eg"| EG["🇪🇬 Égypte"]
+    FunkSec -->|"seocommarrakech.com"| MA["🇲🇦 Maroc"]
+    FunkSec -->|"cu-barika.dz"| DZ["🇩🇿 Algérie"]
+    FunkSec -->|"achieverssciencejournal.org"| NG["🇳🇬 Nigeria"]
+    FunkSec -->|"qed.co.ug"| UG["🇺🇬 Ouganda"]
 
-    GDLockerSec -->|lnrbda.gov.ng| 🇳🇬 Nigeria
-    GDLockerSec -->|usmba.ac.ma| 🇲🇦 Maroc
-    GDLockerSec -->|fgse.cu.edu.eg| 🇪🇬 Égypte
+    %% Groupe GDLockerSec
+    GDLockerSec -->|"lnrbda.gov.ng"| NG
+    GDLockerSec -->|"usmba.ac.ma"| MA
+    GDLockerSec -->|"fgse.cu.edu.eg"| EG
 
-    ransomhub -->|Molars Dental| 🇰🇪 Kenya
-    ransomhub -->|INTELS| 🇳🇬 Nigeria
+    %% Groupe RansomHub
+    RansomHub -->|"Molars Dental"| KE["🇰🇪 Kenya"]
+    RansomHub -->|"INTELS"| NG
 
-    spacebears -->|Sharm Reef Hotel| 🇪🇬 Égypte
-    spacebears -->|Clinique Inaya| 🇩🇿Algérie
+    %% Groupe SpaceBears
+    SpaceBears -->|"Sharm Reef Hotel"| EG
+    SpaceBears -->|"Clinique Inaya"| DZ
 
-    babuk2 -->|workers.com.zm|🇿🇲 Zambie
-    babuk2 -->|Zetech University| 🇰🇪 Kenya
+    %% Groupe Babuk2
+    Babuk2 -->|"workers.com.zm"| ZM["🇿🇲 Zambie"]
+    Babuk2 -->|"Zetech University"| KE
 
-    apt73 -->|Pick n Pay| 🇿🇦 Afrique du Sud
+    %% Groupe APT73
+    APT73 -->|"Pick n Pay"| ZA["🇿🇦 Afrique du Sud"]
+
+    %% Styles (Optionnel pour la visibilité)
+    style FunkSec fill:#f96,stroke:#333,stroke-width:2px
+    style RansomHub fill:#f66,stroke:#333,stroke-width:2px
 ```
 ### 6.2. Timeline des attaques
 ```mermaid
