@@ -54,14 +54,14 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 ### 3.4 CTI map of Africa
 A visual representation of attacks per country.
 
-🇪🇬 Egypt          	████
-🇳🇬 Nigeria          	███
-🇲🇦 Morocco      	██
-🇰🇪 Kenya              	██
-🇩🇿Algeria         	██
-🇿🇦 South Africa 	█
-🇺🇬 Uganda   		█
-🇿🇲 Zambia       	█
+- 🇪🇬 Egypt          	       ████   4
+- 🇳🇬 Nigeria             	     ███      3
+- 🇲🇦 Morocco      	    ██         2
+- 🇰🇪 Kenya              	     ██         2
+- 🇩🇿Algeria         	       ██         2
+- 🇿🇦 South Africa 	    █            1
+- 🇺🇬 Uganda   		       █            1
+- 🇿🇲 Zambia       	       █            1
 
 ## 4. Detailed attacks by ransomware group
 ```mermaid

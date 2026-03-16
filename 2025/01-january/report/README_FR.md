@@ -69,14 +69,14 @@ xychart-beta
 
 ### 3.4 Carte CTI Afrique
 Une carte des attaques.
-🇪🇬 Egypte            	████
-🇳🇬 Nigeria               	███
-🇲🇦 Maroc              	██
-🇰🇪 Kenya                  	██
-🇩🇿Algerie            	██
-🇿🇦 Afrique du Sud 	█
-🇺🇬 Uganda         	█
-🇿🇲 Zambie             	█
+- 🇪🇬 Egypte          	    ████   4
+- 🇳🇬 Nigeria             	     ███      3
+- 🇲🇦 Maroc      	             ██         2
+- 🇰🇪 Kenya              	     ██         2
+- 🇩🇿Algerie         	       ██         2
+- 🇿🇦 South Africa 	    █            1
+- 🇺🇬 Uganda   		       █            1
+- 🇿🇲 Zambie      	         █            1
 
 ```mermaid
 xychart-beta
