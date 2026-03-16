@@ -838,7 +838,6 @@
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** Proplastics Limited est le principal fabricant et fournisseur de systèmes de tuyauterie en plastique (PVC, PEHD) au Zimbabwe.
 
-
 ### 10 Septembre 2025
 #### 🇳🇬 Nigeria - Princeps Credit Systems Limited
 - **Groupe ransomware:** killsec
@@ -889,11 +888,11 @@
 
 ### 29 Septembre 2025
 #### 🇸🇳 Sénégal - Direction Générale des Impôts et des Domaines (DGID)
-- **Groupe ransomware:** blackshrantac
+- **Groupe ransomware:** BlackShrantac
 - **Secteur:** Administration Publique / Finances / Fiscalité.
 - **Site web:** www.impots.gouv.sn
-- **Statut:** Revendication & divulgation des données
-- **Description victime:** Direction générale des impôts et des domaines du Sénégal.
+- **Statut:** Revendication & divulgation de 1 Téraoctet (1 To) de données. Ce volume massif comprend des bases de données fiscales structurées, des registres fonciers et des informations bancaires de contribuables.
+- **Description victime:** La **DGID** est l'organe central du Ministère des Finances du Sénégal, responsable de la collecte des impôts, de la gestion du domaine national et du cadastre.
 
 ## Octobre 2025
 
