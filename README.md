@@ -35,8 +35,8 @@ The objective is to provide **strategic visibility on cyber threats affecting th
 
 | Month | French | English |
 |------|--------|--------|
-| **January 2026** | [View report](reports/january/README.md) | [View report](reports/january/README_EN.md) |
-| **February 2026** | [View report](reports/february/README.md) | [View report](reports/february/README_EN.md) |
+| **January 2026** | [View report](reports/2026/01-january/README_FR.md) | [View report](reports/2026/01-january/README.md) |
+| **February 2026** | [View report](reports/2026/02-february/README_FR.md) | [View report](reports/2026/02-february/README.md) |
 
 ---
 
@@ -44,8 +44,8 @@ The objective is to provide **strategic visibility on cyber threats affecting th
 
 | Month | French | English |
 |------|--------|--------|
-| **January 2026** | [Statistics](statistics/january/README.md) | [Statistics](statistics/january/README_EN.md) |
-| **February 2026** | [Statistics](statistics/february/README.md) | [Statistics](statistics/february/README_EN.md) |
+| **January 2026** | [Statistics](statistics/2026/01-january/README_FR.md) | [Statistics](statistics/2026/01-january/README.md) |
+| **February 2026** | [Statistics](statistics/2026/02-february/README_FR.md) | [Statistics](statistics/2026/02-february/README.md) |
 
 ---
 
@@ -83,8 +83,8 @@ AFRINTEL provides structured CTI datasets in **STIX format**.
 
 📦 Available bundles:
 
-- [January 2026 STIX dataset](stix/january/afrintel-january-2026-bundle.json)
-- [February 2026 STIX dataset](stix/february/afrintel-february-2026-bundle.json)
+- [January 2026 STIX dataset](stix/2026/01-january/afrintel-january-2026-bundle.json)
+- [February 2026 STIX dataset](stix/2026/02-february/afrintel-february-2026-bundle.json)
 
 These bundles contain structured intelligence about ransomware actors, victims, targeted countries and sectors across Africa.
 
@@ -93,37 +93,38 @@ These bundles contain structured intelligence about ransomware actors, victims, 
 
 ```
 AFRINTEL
-├── comparison
-│   ├── afrintel_logo.png
-│   ├── README_FR.md
-│   └── README.md
-├── LICENSE
-├── README_FR.md
 ├── README.md
-├── reports
-│   ├── february
-│   │   ├── README_EN.md
-│   │   └── README.md
-│   └── january
-│       ├── README_EN.md
-│       └── README.md
-├── statistics
-│   ├── february
-│   │   ├── README_EN.md
-│   │   └── README.md
-│   └── january
-│       ├── README_EN.md
-│       └── README.md
-├── stix
-│   ├── february
-│   │   └── afrintel-february-2026-bundle.json
-│   ├── january
-│   │   └── afrintel-january-2026-bundle.json
-│   └── README.md
-└── visual-intelligence
-    ├── ecosystem-map_fr.md
-    ├── ecosystem-map.md
-    ├── README_FR.md
+├── README_FR.md
+├── LICENSE
+│
+├── data/
+│   └── devman.md
+│
+├── reports/
+│   ├── 2025/
+│   │   ├── 01-january/
+│   │   ├── 02-february/
+│   │   ├── 03-march/
+│   │   └── ...
+│   └── 2026/
+│       ├── 01-january/
+│       └── 02-february/
+│
+├── stix/
+│   ├── 2025/
+│   │   ├── 01-january/
+│   │   ├── 02-february/
+│   │   └── 03-march/
+│   └── 2026/
+│
+├── statistics/
+│   └── 2026/
+│
+├── visual-intelligence/
+│   ├── ecosystem-map.md
+│   └── ecosystem-map_fr.md
+│
+└── comparison/
     └── README.md
 ```
 
@@ -135,7 +136,7 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-## ✍🏿 Auteur
+✍🏿 Auteur
 
 ***Adama ASSIONGBON***  
 *Consultant SOC & Cyber Threat Intelligence*  
