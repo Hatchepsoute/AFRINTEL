@@ -30,7 +30,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**         | **09**            |
 
 ```mermaid
-pie title Breakdown of ransomware attacks by group (March 2025)
+pie title Breakdown of ransomware attacks by group
     "arcusmedia" : 2
     "nightspire" : 2
     "play" : 1
