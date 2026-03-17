@@ -134,7 +134,6 @@ Licence MIT - voir [LICENSE](LICENSE)
 ---
 
 ✍🏿 Auteur
-
 *Adama ASSIONGBON*
 *Consultant SOC & Cyber Threat Intelligence [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*
 ---
