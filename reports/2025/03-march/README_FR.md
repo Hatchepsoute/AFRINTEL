@@ -30,7 +30,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **09**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware
+pie title Des attaques par groupe ransomware
     "arcusmedia" : 2
     "nightspire" : 2
     "play" : 1
