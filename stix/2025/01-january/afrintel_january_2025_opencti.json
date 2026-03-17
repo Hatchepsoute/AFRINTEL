@@ -1,0 +1,932 @@
+{
+  "type": "bundle",
+  "id": "bundle--19c8c76f-e213-4c19-badd-444ea7f9bc2a",
+  "objects": [
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--fc8bc161-4102-481d-90b2-42796248f155",
+      "name": "ransomhub",
+      "created": "2026-03-17T02:49:59.448429Z",
+      "modified": "2026-03-17T02:49:59.448501Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--2e09ef53-54b6-4973-9bc3-3b5ff1a38fde",
+      "name": "Molars Dental Practice",
+      "identity_class": "organization",
+      "sectors": [
+        "healthcare"
+      ],
+      "created": "2026-03-17T02:49:59.448735Z",
+      "modified": "2026-03-17T02:49:59.448762Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--57b3b0f9-e7b8-43fd-b9f1-b9ce7241bea8",
+      "name": "Ransomware attack against Molars Dental Practice",
+      "description": "Ransomware claim targeting Molars Dental Practice in Kenya.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.448794Z",
+      "modified": "2026-03-17T02:49:59.448827Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--897004a0-7f4f-4b50-bed6-5c1bc49003eb",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--57b3b0f9-e7b8-43fd-b9f1-b9ce7241bea8",
+      "target_ref": "intrusion-set--fc8bc161-4102-481d-90b2-42796248f155",
+      "created": "2026-03-17T02:49:59.448914Z",
+      "modified": "2026-03-17T02:49:59.448938Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--7590d7f4-09a5-42c9-8619-8ae8164cbbab",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fc8bc161-4102-481d-90b2-42796248f155",
+      "target_ref": "identity--2e09ef53-54b6-4973-9bc3-3b5ff1a38fde",
+      "created": "2026-03-17T02:49:59.448994Z",
+      "modified": "2026-03-17T02:49:59.449031Z"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "name": "funksec",
+      "created": "2026-03-17T02:49:59.449052Z",
+      "modified": "2026-03-17T02:49:59.449055Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--a0572ade-72e9-4ddd-9376-755f81bc06d3",
+      "name": "General Authority for Government Services",
+      "identity_class": "organization",
+      "sectors": [
+        "public administration"
+      ],
+      "created": "2026-03-17T02:49:59.449163Z",
+      "modified": "2026-03-17T02:49:59.449166Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--16b3902a-b734-4353-b28c-c5e892bd2a8f",
+      "name": "Ransomware attack against General Authority for Government Services",
+      "description": "Ransomware claim targeting General Authority for Government Services in Egypt.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449170Z",
+      "modified": "2026-03-17T02:49:59.449172Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--0bb0752c-80b8-4cff-a20e-9cbb7c3c4a06",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--16b3902a-b734-4353-b28c-c5e892bd2a8f",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449205Z",
+      "modified": "2026-03-17T02:49:59.449208Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b2b6d4ba-2e2f-464e-a108-1a39239ce33c",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--a0572ade-72e9-4ddd-9376-755f81bc06d3",
+      "created": "2026-03-17T02:49:59.449229Z",
+      "modified": "2026-03-17T02:49:59.449232Z"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--ec05b06a-301c-4b93-97c9-0219563a01ed",
+      "name": "apt73",
+      "created": "2026-03-17T02:49:59.449250Z",
+      "modified": "2026-03-17T02:49:59.449252Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--5da20860-7c0b-4e4c-909e-3924e0545fa1",
+      "name": "Pick n Pay",
+      "identity_class": "organization",
+      "sectors": [
+        "retail"
+      ],
+      "created": "2026-03-17T02:49:59.449282Z",
+      "modified": "2026-03-17T02:49:59.449284Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--e5a54e70-5eaf-4baf-af5e-bd3fad094f3c",
+      "name": "Ransomware attack against Pick n Pay",
+      "description": "Ransomware claim targeting Pick n Pay in South Africa.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449288Z",
+      "modified": "2026-03-17T02:49:59.449290Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--bb3d2a9f-e616-4f3d-aca4-5f7685408e2e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--e5a54e70-5eaf-4baf-af5e-bd3fad094f3c",
+      "target_ref": "intrusion-set--ec05b06a-301c-4b93-97c9-0219563a01ed",
+      "created": "2026-03-17T02:49:59.449307Z",
+      "modified": "2026-03-17T02:49:59.449310Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--0126e23e-0f58-4af5-b8ff-44e478a20853",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--ec05b06a-301c-4b93-97c9-0219563a01ed",
+      "target_ref": "identity--5da20860-7c0b-4e4c-909e-3924e0545fa1",
+      "created": "2026-03-17T02:49:59.449319Z",
+      "modified": "2026-03-17T02:49:59.449321Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--85b0ddb4-d82c-4537-bd58-667084415746",
+      "name": "SEOCOM Marrakech",
+      "identity_class": "organization",
+      "sectors": [
+        "technology"
+      ],
+      "created": "2026-03-17T02:49:59.449337Z",
+      "modified": "2026-03-17T02:49:59.449339Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--84028953-5f1f-4ed7-adb4-889726f88879",
+      "name": "Ransomware attack against SEOCOM Marrakech",
+      "description": "Ransomware claim targeting SEOCOM Marrakech in Morocco.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449342Z",
+      "modified": "2026-03-17T02:49:59.449344Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f5bf1826-3c30-4a25-9f3e-d6d789fcd89b",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--84028953-5f1f-4ed7-adb4-889726f88879",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449353Z",
+      "modified": "2026-03-17T02:49:59.449356Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--5d77a30d-d782-4ead-8ea4-bc658dc031ea",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--85b0ddb4-d82c-4537-bd58-667084415746",
+      "created": "2026-03-17T02:49:59.449367Z",
+      "modified": "2026-03-17T02:49:59.449369Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--a2c41eba-8a42-4eaa-b408-3f7e94aef1cc",
+      "name": "INTELS Nigeria Limited",
+      "identity_class": "organization",
+      "sectors": [
+        "oil & gas logistics"
+      ],
+      "created": "2026-03-17T02:49:59.449385Z",
+      "modified": "2026-03-17T02:49:59.449387Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--d7c1f445-ca9d-49e8-ba77-019ecbde42a2",
+      "name": "Ransomware attack against INTELS Nigeria Limited",
+      "description": "Ransomware claim targeting INTELS Nigeria Limited in Nigeria.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449389Z",
+      "modified": "2026-03-17T02:49:59.449391Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b9f056ff-b6a0-48fb-ac57-15ababbd7b0f",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d7c1f445-ca9d-49e8-ba77-019ecbde42a2",
+      "target_ref": "intrusion-set--fc8bc161-4102-481d-90b2-42796248f155",
+      "created": "2026-03-17T02:49:59.449400Z",
+      "modified": "2026-03-17T02:49:59.449403Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e21f704c-2d0c-4077-b09c-d09d562bbefb",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fc8bc161-4102-481d-90b2-42796248f155",
+      "target_ref": "identity--a2c41eba-8a42-4eaa-b408-3f7e94aef1cc",
+      "created": "2026-03-17T02:49:59.449411Z",
+      "modified": "2026-03-17T02:49:59.449414Z"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--91d749f4-a116-47eb-b484-5b1a1b95440e",
+      "name": "spacebears",
+      "created": "2026-03-17T02:49:59.449422Z",
+      "modified": "2026-03-17T02:49:59.449424Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--6fb3038e-e670-4105-929c-8dce1c1617c2",
+      "name": "Sharm Reef Hotel",
+      "identity_class": "organization",
+      "sectors": [
+        "hospitality"
+      ],
+      "created": "2026-03-17T02:49:59.449440Z",
+      "modified": "2026-03-17T02:49:59.449442Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--00227964-c0d3-46b8-98af-0c39d9d1a03f",
+      "name": "Ransomware attack against Sharm Reef Hotel",
+      "description": "Ransomware claim targeting Sharm Reef Hotel in Egypt.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449444Z",
+      "modified": "2026-03-17T02:49:59.449446Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--147f4d19-fc14-40bd-9109-7438679cc8ad",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--00227964-c0d3-46b8-98af-0c39d9d1a03f",
+      "target_ref": "intrusion-set--91d749f4-a116-47eb-b484-5b1a1b95440e",
+      "created": "2026-03-17T02:49:59.449461Z",
+      "modified": "2026-03-17T02:49:59.449463Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--48934870-c405-4fdb-9a2d-7d3f40522557",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--91d749f4-a116-47eb-b484-5b1a1b95440e",
+      "target_ref": "identity--6fb3038e-e670-4105-929c-8dce1c1617c2",
+      "created": "2026-03-17T02:49:59.449472Z",
+      "modified": "2026-03-17T02:49:59.449474Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--b4848777-c5e2-4e90-9dfd-3ccf05407d06",
+      "name": "Misr Technology Services",
+      "identity_class": "organization",
+      "sectors": [
+        "public administration"
+      ],
+      "created": "2026-03-17T02:49:59.449492Z",
+      "modified": "2026-03-17T02:49:59.449494Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--595a90a8-ebde-45e6-9652-e168fc538ed0",
+      "name": "Ransomware attack against Misr Technology Services",
+      "description": "Ransomware claim targeting Misr Technology Services in Egypt.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449497Z",
+      "modified": "2026-03-17T02:49:59.449499Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e608ba9b-6b6c-4592-84b3-2b3bc5db5536",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--595a90a8-ebde-45e6-9652-e168fc538ed0",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449519Z",
+      "modified": "2026-03-17T02:49:59.449522Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--cbb5b03c-482a-493c-8535-6e92dc4563e8",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--b4848777-c5e2-4e90-9dfd-3ccf05407d06",
+      "created": "2026-03-17T02:49:59.449530Z",
+      "modified": "2026-03-17T02:49:59.449533Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--8a957650-56e7-484a-9835-4cf9c04f8f85",
+      "name": "Barika University Center",
+      "identity_class": "organization",
+      "sectors": [
+        "education"
+      ],
+      "created": "2026-03-17T02:49:59.449548Z",
+      "modified": "2026-03-17T02:49:59.449550Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--57b66b72-d99f-4a61-9907-e13c776d5364",
+      "name": "Ransomware attack against Barika University Center",
+      "description": "Ransomware claim targeting Barika University Center in Algeria.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449553Z",
+      "modified": "2026-03-17T02:49:59.449555Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c09cf164-b88e-4f98-bd2b-6dd1912ed380",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--57b66b72-d99f-4a61-9907-e13c776d5364",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449564Z",
+      "modified": "2026-03-17T02:49:59.449567Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d733428b-ff16-445b-9d4d-ac6621743fb8",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--8a957650-56e7-484a-9835-4cf9c04f8f85",
+      "created": "2026-03-17T02:49:59.449575Z",
+      "modified": "2026-03-17T02:49:59.449578Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--666ea656-d323-4a67-8e6d-dd7e2508abe5",
+      "name": "Inaya Clinic",
+      "identity_class": "organization",
+      "sectors": [
+        "healthcare"
+      ],
+      "created": "2026-03-17T02:49:59.449592Z",
+      "modified": "2026-03-17T02:49:59.449594Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--a9e2e596-8726-4a1f-9c77-61dcfda7ca0c",
+      "name": "Ransomware attack against Inaya Clinic",
+      "description": "Ransomware claim targeting Inaya Clinic in Algeria.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449597Z",
+      "modified": "2026-03-17T02:49:59.449599Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--aaea12e7-9973-4b3c-b9e4-00f49685d29a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a9e2e596-8726-4a1f-9c77-61dcfda7ca0c",
+      "target_ref": "intrusion-set--91d749f4-a116-47eb-b484-5b1a1b95440e",
+      "created": "2026-03-17T02:49:59.449609Z",
+      "modified": "2026-03-17T02:49:59.449611Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--583746dd-1ade-46a3-9438-a64da0ea56e9",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--91d749f4-a116-47eb-b484-5b1a1b95440e",
+      "target_ref": "identity--666ea656-d323-4a67-8e6d-dd7e2508abe5",
+      "created": "2026-03-17T02:49:59.449620Z",
+      "modified": "2026-03-17T02:49:59.449622Z"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "name": "GDLockerSec",
+      "created": "2026-03-17T02:49:59.449631Z",
+      "modified": "2026-03-17T02:49:59.449633Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--25a39469-277c-42e9-8819-f5bc1240ef37",
+      "name": "Lower Niger River Basin Development Authority",
+      "identity_class": "organization",
+      "sectors": [
+        "public administration"
+      ],
+      "created": "2026-03-17T02:49:59.449648Z",
+      "modified": "2026-03-17T02:49:59.449650Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--b63ce418-0e2e-4686-ac57-5f9692ad98b2",
+      "name": "Ransomware attack against Lower Niger River Basin Development Authority",
+      "description": "Ransomware claim targeting Lower Niger River Basin Development Authority in Nigeria.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449653Z",
+      "modified": "2026-03-17T02:49:59.449655Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--82afd4a8-2879-4d44-9597-c60055cd32d9",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b63ce418-0e2e-4686-ac57-5f9692ad98b2",
+      "target_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "created": "2026-03-17T02:49:59.449664Z",
+      "modified": "2026-03-17T02:49:59.449666Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--815f9972-5811-41af-a2d5-627a0675daea",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "target_ref": "identity--25a39469-277c-42e9-8819-f5bc1240ef37",
+      "created": "2026-03-17T02:49:59.449674Z",
+      "modified": "2026-03-17T02:49:59.449677Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--3e0c897b-8298-460a-a79f-d9eb138798ab",
+      "name": "Sidi Mohamed Ben Abdellah University",
+      "identity_class": "organization",
+      "sectors": [
+        "education"
+      ],
+      "created": "2026-03-17T02:49:59.449697Z",
+      "modified": "2026-03-17T02:49:59.449699Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--ff168ca9-f356-4cf6-a438-c733f6eae07b",
+      "name": "Ransomware attack against Sidi Mohamed Ben Abdellah University",
+      "description": "Ransomware claim targeting Sidi Mohamed Ben Abdellah University in Morocco.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449704Z",
+      "modified": "2026-03-17T02:49:59.449706Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d377d9a7-4bfd-46e4-b19b-a2fada41357f",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ff168ca9-f356-4cf6-a438-c733f6eae07b",
+      "target_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "created": "2026-03-17T02:49:59.449731Z",
+      "modified": "2026-03-17T02:49:59.449759Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f3cd5655-8f13-4767-ab73-21d20a30172a",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "target_ref": "identity--3e0c897b-8298-460a-a79f-d9eb138798ab",
+      "created": "2026-03-17T02:49:59.449780Z",
+      "modified": "2026-03-17T02:49:59.449783Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--97439ad7-a6b3-421d-9df7-3206261a2da0",
+      "name": "Achievers Journal of Scientific Research",
+      "identity_class": "organization",
+      "sectors": [
+        "education"
+      ],
+      "created": "2026-03-17T02:49:59.449798Z",
+      "modified": "2026-03-17T02:49:59.449800Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--a27024b3-9cc6-4e1e-9f40-c63811606faa",
+      "name": "Ransomware attack against Achievers Journal of Scientific Research",
+      "description": "Ransomware claim targeting Achievers Journal of Scientific Research in Nigeria.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449803Z",
+      "modified": "2026-03-17T02:49:59.449805Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--85944591-a8b3-4dda-ba7a-95dd536d44b0",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a27024b3-9cc6-4e1e-9f40-c63811606faa",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449813Z",
+      "modified": "2026-03-17T02:49:59.449815Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e9aa1418-0af4-4694-a985-7ec0caa676e8",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--97439ad7-a6b3-421d-9df7-3206261a2da0",
+      "created": "2026-03-17T02:49:59.449827Z",
+      "modified": "2026-03-17T02:49:59.449829Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--60071b59-23ae-4cf5-a5f7-ec904e2e8c3f",
+      "name": "FGSE Cairo University",
+      "identity_class": "organization",
+      "sectors": [
+        "education"
+      ],
+      "created": "2026-03-17T02:49:59.449845Z",
+      "modified": "2026-03-17T02:49:59.449847Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--f7fe0c07-67c8-468c-bf01-bd671371f6cc",
+      "name": "Ransomware attack against FGSE Cairo University",
+      "description": "Ransomware claim targeting FGSE Cairo University in Egypt.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449849Z",
+      "modified": "2026-03-17T02:49:59.449851Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--549f6511-f948-4697-bde8-9393c1697bca",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f7fe0c07-67c8-468c-bf01-bd671371f6cc",
+      "target_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "created": "2026-03-17T02:49:59.449865Z",
+      "modified": "2026-03-17T02:49:59.449868Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e5ad91f4-0226-4daa-a19e-6038cc5160d7",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--8c095c55-ed97-42a7-ba97-a6d5d68f464a",
+      "target_ref": "identity--60071b59-23ae-4cf5-a5f7-ec904e2e8c3f",
+      "created": "2026-03-17T02:49:59.449893Z",
+      "modified": "2026-03-17T02:49:59.449896Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--f11277cb-68a0-471a-a45a-4d58b2a42171",
+      "name": "QED",
+      "identity_class": "organization",
+      "sectors": [
+        "consulting"
+      ],
+      "created": "2026-03-17T02:49:59.449911Z",
+      "modified": "2026-03-17T02:49:59.449913Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--6a7bfdee-cf0b-4437-91d3-dc75bc614304",
+      "name": "Ransomware attack against QED",
+      "description": "Ransomware claim targeting QED in Uganda.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449915Z",
+      "modified": "2026-03-17T02:49:59.449917Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--9347be40-3e74-4dd6-b401-227fc588b0a3",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--6a7bfdee-cf0b-4437-91d3-dc75bc614304",
+      "target_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "created": "2026-03-17T02:49:59.449926Z",
+      "modified": "2026-03-17T02:49:59.449928Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--2ae62a60-59a6-46a6-8187-a936cfbfe880",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--fe5ea09d-d3ae-4728-823d-28320d944ce7",
+      "target_ref": "identity--f11277cb-68a0-471a-a45a-4d58b2a42171",
+      "created": "2026-03-17T02:49:59.449937Z",
+      "modified": "2026-03-17T02:49:59.449939Z"
+    },
+    {
+      "type": "intrusion-set",
+      "id": "intrusion-set--85b836c4-cd48-4b7c-bd52-bdebc8567c87",
+      "name": "babuk2",
+      "created": "2026-03-17T02:49:59.449950Z",
+      "modified": "2026-03-17T02:49:59.449952Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "id": "identity--b605f452-d4e3-44fa-a1ad-3ba69d4e1089",
+      "name": "Workers",
+      "identity_class": "organization",
+      "sectors": [
+        "hr services"
+      ],
+      "created": "2026-03-17T02:49:59.449966Z",
+      "modified": "2026-03-17T02:49:59.449968Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--d75945ec-2455-421e-a444-1e7020b113d6",
+      "name": "Ransomware attack against Workers",
+      "description": "Ransomware claim targeting Workers in Zambia.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.449971Z",
+      "modified": "2026-03-17T02:49:59.449973Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--909fbd6b-a22d-4ac6-a352-e650493fd74f",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d75945ec-2455-421e-a444-1e7020b113d6",
+      "target_ref": "intrusion-set--85b836c4-cd48-4b7c-bd52-bdebc8567c87",
+      "created": "2026-03-17T02:49:59.449984Z",
+      "modified": "2026-03-17T02:49:59.449986Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--973d0cc3-314a-4a25-b03a-6eb9269d0470",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--85b836c4-cd48-4b7c-bd52-bdebc8567c87",
+      "target_ref": "identity--b605f452-d4e3-44fa-a1ad-3ba69d4e1089",
+      "created": "2026-03-17T02:49:59.449995Z",
+      "modified": "2026-03-17T02:49:59.449997Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--df491ea7-05b9-4c95-a0d4-956bb2c51baa",
+      "name": "Zetech University",
+      "identity_class": "organization",
+      "sectors": [
+        "education"
+      ],
+      "created": "2026-03-17T02:49:59.450012Z",
+      "modified": "2026-03-17T02:49:59.450014Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "id": "incident--fcdff574-58e0-4236-b2c8-9f887af38ee4",
+      "name": "Ransomware attack against Zetech University",
+      "description": "Ransomware claim targeting Zetech University in Kenya.",
+      "labels": [
+        "ransomware",
+        "data-leak"
+      ],
+      "created": "2026-03-17T02:49:59.450017Z",
+      "modified": "2026-03-17T02:49:59.450019Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2025/01-january"
+        }
+      ]
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--6c463a01-090b-4056-bc07-c494769a7da7",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--fcdff574-58e0-4236-b2c8-9f887af38ee4",
+      "target_ref": "intrusion-set--85b836c4-cd48-4b7c-bd52-bdebc8567c87",
+      "created": "2026-03-17T02:49:59.450042Z",
+      "modified": "2026-03-17T02:49:59.450044Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--de65d90a-3cb4-43b2-8866-85ca45a830e2",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--85b836c4-cd48-4b7c-bd52-bdebc8567c87",
+      "target_ref": "identity--df491ea7-05b9-4c95-a0d4-956bb2c51baa",
+      "created": "2026-03-17T02:49:59.450053Z",
+      "modified": "2026-03-17T02:49:59.450055Z"
+    }
+  ]
+}

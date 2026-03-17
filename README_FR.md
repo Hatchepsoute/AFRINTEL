@@ -34,8 +34,8 @@ L’objectif est de fournir une **visibilité stratégique sur les cybermenaces 
 
 | Mois | Français | Anglais |
 |------|----------|--------|
-| **Janvier 2026** | [Voir le rapport](reports/january/README.md) | [View report](reports/january/README_EN.md) |
-| **Février 2026** | [Voir le rapport](reports/february/README.md) | [View report](reports/february/README_EN.md) |
+| **Janvier 2026** | [Voir le rapport](reports/2026/01-january/README.md) | [View report](reports/2026/01-january/README_EN.md) |
+| **Février 2026** | [Voir le rapport](reports/2026/01-february/README.md) | [View report](reports/2026/01-february/README_EN.md) |
 
 ---
 

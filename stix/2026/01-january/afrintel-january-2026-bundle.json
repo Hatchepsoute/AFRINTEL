@@ -1,0 +1,1104 @@
+{
+  "type": "bundle",
+  "id": "bundle--9a8b7c6d-5e4f-3a2b-1c9d-8e7f6a5b4c3d",
+  "spec_version": "2.1",
+  "objects": [
+    {
+      "type": "identity",
+      "id": "identity--d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+      "name": "Gouvernement du Togo",
+      "identity_class": "organization",
+      "sectors": ["Administration Publique Centrale"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2e",
+      "name": "Bigbrother",
+      "description": "Initial Access Broker (IAB) specializing in government infrastructures - Active since September 2025",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Gouvernement du Togo - Togo",
+      "description": "The same actor had previously claimed an SSH access in September 2025 to the gouv.tg infrastructure, putting this access up for sale on the deepweb. In January 2026, he claims new access to other Togolese government platforms and also puts them up for sale. | Website: gouv.tg | Status: Claimed",
+      "incident_type": "access-broker",
+      "created": "2026-01-03T00:00:00Z",
+      "modified": "2026-01-03T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "gouv.tg",
+        "status": "Claimed",
+        "sector": "Administration Publique Centrale"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c5d6e7f8-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+      "relationship_type": "targets",
+      "source_ref": "incident--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "target_ref": "identity--d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+      "created": "2026-01-03T00:00:00Z",
+      "modified": "2026-01-03T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d7e8f9a0-b1c2-3d4e-5f6a-7b8c9d0e1f2a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "target_ref": "threat-actor--b7c8d9e0-f1a2-3b4c-5d6e-7f8a9b0c1d2e",
+      "created": "2026-01-03T00:00:00Z",
+      "modified": "2026-01-03T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b",
+      "name": "Sites gouvernementaux Niger",
+      "identity_class": "organization",
+      "sectors": ["Administration Publique"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "Sites gouvernementaux Niger - Niger",
+      "description": "Multiple Nigerian government websites defaced simultaneously displaying the same politically-charged message. This coordinated attack reveals a common security flaw in government infrastructure. Affected sites: https://erp.ansi.ne/, https://startups.ansi.ne/, https://stagiaires.ansi.ne/, https://www.magel.gouv.ne/, https://parcelles.urbanisme.gouv.ne/, http://www.promotionfemme.gouv.ne/, http://www.industrie.gouv.ne/ | Status: Unclaimed",
+      "incident_type": "defacement",
+      "created": "2026-01-04T00:00:00Z",
+      "modified": "2026-01-04T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "status": "Unclaimed",
+        "sector": "Administration Publique"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f1a2b3c4-d5e6-7f8a-9b0c-1d2e3f4a5b6c",
+      "relationship_type": "targets",
+      "source_ref": "incident--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "target_ref": "identity--e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b",
+      "created": "2026-01-04T00:00:00Z",
+      "modified": "2026-01-04T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "name": "Hytec South Africa",
+      "identity_class": "organization",
+      "sectors": ["Ingénierie Hydraulique et Mécanique"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--c4d5e6f7-8a9b-0c1d-2e3f-4a5b6c7d8e9f",
+      "name": "vect",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "Hytec South Africa - South Africa",
+      "description": "Website: hytec.com | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-06T00:00:00Z",
+      "modified": "2026-01-06T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "hytec.com",
+        "status": "Claimed",
+        "sector": "Ingénierie Hydraulique et Mécanique"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a4b5c6d7-e8f9-0a1b-2c3d-4e5f6a7b8c9d",
+      "relationship_type": "targets",
+      "source_ref": "incident--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "target_ref": "identity--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "created": "2026-01-06T00:00:00Z",
+      "modified": "2026-01-06T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b5c6d7e8-f9a0-1b2c-3d4e-5f6a7b8c9d0e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "target_ref": "threat-actor--c4d5e6f7-8a9b-0c1d-2e3f-4a5b6c7d8e9f",
+      "created": "2026-01-06T00:00:00Z",
+      "modified": "2026-01-06T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--d5e6f7a8-b9c0-1d2e-3f4a-5b6c7d8e9f0a",
+      "name": "National Water Authority",
+      "identity_class": "organization",
+      "sectors": ["Services publics (Gestion de l'eau)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--e6f7a8b9-c0d1-2e3f-4a5b-6c7d8e9f0a1b",
+      "name": "blackshrantac",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "National Water Authority - Kenya",
+      "description": "Website: nwa.go.ke | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-08T00:00:00Z",
+      "modified": "2026-01-08T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "nwa.go.ke",
+        "status": "Claimed",
+        "sector": "Services publics (Gestion de l'eau)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c6d7e8f9-a0b1-2c3d-4e5f-6a7b8c9d0e1f",
+      "relationship_type": "targets",
+      "source_ref": "incident--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "target_ref": "identity--d5e6f7a8-b9c0-1d2e-3f4a-5b6c7d8e9f0a",
+      "created": "2026-01-08T00:00:00Z",
+      "modified": "2026-01-08T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d7e8f9a0-b1c2-3d4e-5f6a-7b8c9d0e1f2a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "target_ref": "threat-actor--e6f7a8b9-c0d1-2e3f-4a5b-6c7d8e9f0a1b",
+      "created": "2026-01-08T00:00:00Z",
+      "modified": "2026-01-08T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "name": "Real Tech",
+      "identity_class": "organization",
+      "sectors": ["Technologie / Sécurité IT"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "name": "thegentlemen",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "name": "Real Tech - Egypt",
+      "description": "Website: realtech-eg.com | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-11T00:00:00Z",
+      "modified": "2026-01-11T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "realtech-eg.com",
+        "status": "Claimed",
+        "sector": "Technologie / Sécurité IT"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e8f9a0b1-c2d3-4e5f-6a7b-8c9d0e1f2a3b",
+      "relationship_type": "targets",
+      "source_ref": "incident--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "target_ref": "identity--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "created": "2026-01-11T00:00:00Z",
+      "modified": "2026-01-11T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f9a0b1c2-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-11T00:00:00Z",
+      "modified": "2026-01-11T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--f9a0b1c2-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      "name": "Tepco-Group",
+      "identity_class": "organization",
+      "sectors": ["Électricité / Ingénierie Électrique"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d",
+      "name": "direwolf",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "name": "Tepco-Group - Egypt",
+      "description": "Website: tepco-group.com | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-13T00:00:00Z",
+      "modified": "2026-01-13T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "tepco-group.com",
+        "status": "Claimed",
+        "sector": "Électricité / Ingénierie Électrique"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "relationship_type": "targets",
+      "source_ref": "incident--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "target_ref": "identity--f9a0b1c2-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      "created": "2026-01-13T00:00:00Z",
+      "modified": "2026-01-13T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "target_ref": "threat-actor--a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d",
+      "created": "2026-01-13T00:00:00Z",
+      "modified": "2026-01-13T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Rogers Capital",
+      "identity_class": "organization",
+      "sectors": ["Services Financiers & Technologie"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "name": "Rogers Capital - Mauritius",
+      "description": "Website: rogerscapital.mu | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-14T00:00:00Z",
+      "modified": "2026-01-14T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "rogerscapital.mu",
+        "status": "Claimed",
+        "sector": "Services Financiers & Technologie"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "relationship_type": "targets",
+      "source_ref": "incident--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "target_ref": "identity--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "created": "2026-01-14T00:00:00Z",
+      "modified": "2026-01-14T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-14T00:00:00Z",
+      "modified": "2026-01-14T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "PixPay",
+      "identity_class": "organization",
+      "sectors": ["FinTech (Paiement mobile)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "name": "breach3d",
+      "description": "Threat actor specializing in data leaks",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "name": "PixPay - Senegal",
+      "description": "Financial data leak exposing financial databases. | Website: pay.pixpay.sn | Status: Data leaked",
+      "incident_type": "data-breach",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "pay.pixpay.sn",
+        "status": "Data leaked",
+        "sector": "FinTech (Paiement mobile)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "relationship_type": "targets",
+      "source_ref": "incident--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "target_ref": "identity--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "target_ref": "threat-actor--b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "CFM Mozambique",
+      "identity_class": "organization",
+      "sectors": ["Transport & Logistique (Rail & Ports)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "name": "qilin",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "name": "CFM Mozambique - Mozambique",
+      "description": "Website: cfm.co.mz | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "cfm.co.mz",
+        "status": "Claimed",
+        "sector": "Transport & Logistique (Rail & Ports)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "relationship_type": "targets",
+      "source_ref": "incident--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "target_ref": "identity--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "target_ref": "threat-actor--c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "created": "2026-01-16T00:00:00Z",
+      "modified": "2026-01-16T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "CCBRT",
+      "identity_class": "organization",
+      "sectors": ["Santé / Soins Spécialisés"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8a",
+      "name": "benzona",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "name": "CCBRT - Tanzania",
+      "description": "Website: ccbrt.org | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "ccbrt.org",
+        "status": "Claimed",
+        "sector": "Santé / Soins Spécialisés"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "relationship_type": "targets",
+      "source_ref": "incident--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "target_ref": "identity--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "target_ref": "threat-actor--d3e4f5a6-b7c8-9d0e-1f2a-3b4c5d6e7f8a",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "name": "Nafae Sanitaire",
+      "identity_class": "organization",
+      "sectors": ["Bâtiment (Plomberie & Chauffage)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "name": "tengu",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "name": "Nafae Sanitaire - Morocco",
+      "description": "Website: nafaesanitaire.com | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "nafaesanitaire.com",
+        "status": "Claimed",
+        "sector": "Bâtiment (Plomberie & Chauffage)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d1e2f3a4-b5c6-7d8e-9f0a-1b2c3d4e5f6a",
+      "relationship_type": "targets",
+      "source_ref": "incident--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "target_ref": "identity--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e2f3a4b5-c6d7-8e9f-0a1b-2c3d4e5f6a7b",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "target_ref": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "created": "2026-01-17T00:00:00Z",
+      "modified": "2026-01-17T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "name": "CPF Financial Services",
+      "identity_class": "organization",
+      "sectors": ["Services financiers (Fonds de pension)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+      "name": "CPF Financial Services - Kenya",
+      "description": "Website: cpf.or.ke | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "cpf.or.ke",
+        "status": "Claimed",
+        "sector": "Services financiers (Fonds de pension)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e3f4a5b6-c7d8-9e0f-1a2b-3c4d5e6f7a8b",
+      "relationship_type": "targets",
+      "source_ref": "incident--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+      "target_ref": "identity--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f3a4b5c6-d7e8-9f0a-1b2c-3d4e5f6a7b8c",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "name": "NSSF",
+      "identity_class": "organization",
+      "sectors": ["Sécurité sociale (Retraites)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--f4a5b6c7-d8e9-0f1a-2b3c-4d5e6f7a8b9c",
+      "name": "devman",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "name": "NSSF - Kenya",
+      "description": "Website: nssf.or.ke | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "nssf.or.ke",
+        "status": "Claimed",
+        "sector": "Sécurité sociale (Retraites)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f4b5c6d7-e8f9-0a1b-2c3d-4e5f6a7b8c9d",
+      "relationship_type": "targets",
+      "source_ref": "incident--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "target_ref": "identity--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a4b5c6d7-e8f9-0a1b-2c3d-4e5f6a7b8c9d",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "target_ref": "threat-actor--f4a5b6c7-d8e9-0f1a-2b3c-4d5e6f7a8b9c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "name": "Paltrack",
+      "identity_class": "organization",
+      "sectors": ["Logiciels logistiques (Agroalimentaire)"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "name": "Paltrack - South Africa",
+      "description": "Website: paltrack.co.za | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "paltrack.co.za",
+        "status": "Claimed",
+        "sector": "Logiciels logistiques (Agroalimentaire)"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a5b6c7d8-e9f0-1a2b-3c4d-5e6f7a8b9c0d",
+      "relationship_type": "targets",
+      "source_ref": "incident--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "target_ref": "identity--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b5c6d7e8-f9a0-1b2c-3d4e-5f6a7b8c9d0e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "name": "Rola Motor Group",
+      "identity_class": "organization",
+      "sectors": ["Distribution Automobile"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+      "name": "Rola Motor Group - South Africa",
+      "description": "Website: rola.co.za | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "rola.co.za",
+        "status": "Claimed",
+        "sector": "Distribution Automobile"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b6c7d8e9-f0a1-2b3c-4d5e-6f7a8b9c0d1e",
+      "relationship_type": "targets",
+      "source_ref": "incident--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+      "target_ref": "identity--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c6d7e8f9-a0b1-2c3d-4e5f-6a7b8c9d0e1f",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "name": "Witzenberg Municipality",
+      "identity_class": "organization",
+      "sectors": ["Administration Publique / Gouvernement Local"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
+      "name": "Witzenberg Municipality - South Africa",
+      "description": "Website: witzenberg.gov.za | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "witzenberg.gov.za",
+        "status": "Claimed",
+        "sector": "Administration Publique / Gouvernement Local"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c7d8e9f0-a1b2-3c4d-5e6f-7a8b9c0d1e2f",
+      "relationship_type": "targets",
+      "source_ref": "incident--d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
+      "target_ref": "identity--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d7e8f9a0-b1c2-3d4e-5f6a-7b8c9d0e1f2a",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
+      "target_ref": "threat-actor--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "created": "2026-01-20T00:00:00Z",
+      "modified": "2026-01-20T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "name": "namico.go.ke",
+      "identity_class": "organization",
+      "sectors": ["Mines et Ressources Minérales"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "name": "namico.go.ke - Kenya",
+      "description": "Website: namico.go.ke | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-26T00:00:00Z",
+      "modified": "2026-01-26T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "namico.go.ke",
+        "status": "Claimed",
+        "sector": "Mines et Ressources Minérales"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--d8e9f0a1-b2c3-4d5e-6f7a-8b9c0d1e2f3a",
+      "relationship_type": "targets",
+      "source_ref": "incident--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "target_ref": "identity--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+      "created": "2026-01-26T00:00:00Z",
+      "modified": "2026-01-26T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e8f9a0b1-c2d3-4e5f-6a7b-8c9d0e1f2a3b",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+      "target_ref": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "created": "2026-01-26T00:00:00Z",
+      "modified": "2026-01-26T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+      "name": "FRUIT-BONTÉ Agroalimentaire",
+      "identity_class": "organization",
+      "sectors": ["Industrie Agroalimentaire"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "name": "FRUIT-BONTÉ Agroalimentaire - Tunisia",
+      "description": "Website: fruit-bonte.com.tn | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "fruit-bonte.com.tn",
+        "status": "Claimed",
+        "sector": "Industrie Agroalimentaire"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--e9f0a1b2-c3d4-5e6f-7a8b-9c0d1e2f3a4b",
+      "relationship_type": "targets",
+      "source_ref": "incident--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "target_ref": "identity--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f9a0b1c2-d3e4-5f6a-7b8c-9d0e1f2a3b4c",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+      "target_ref": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "name": "skyegtours.com",
+      "identity_class": "organization",
+      "sectors": ["Tourisme / Transport & Voyages"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+      "name": "skyegtours.com - Egypt",
+      "description": "Website: skyegtours.com | Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "skyegtours.com",
+        "status": "Claimed",
+        "sector": "Tourisme / Transport & Voyages"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--f0a1b2c3-d4e5-6f7a-8b9c-0d1e2f3a4b5c",
+      "relationship_type": "targets",
+      "source_ref": "incident--a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+      "target_ref": "identity--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a0b1c2d3-e4f5-6a7b-8c9d-0e1f2a3b4c5d",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+      "target_ref": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "created": "2026-01-27T00:00:00Z",
+      "modified": "2026-01-27T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "name": "Tahkout Group",
+      "identity_class": "organization",
+      "sectors": ["Industrie Automobile & Transport"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--b0c1d2e3-f4a5-6b7c-8d9e-0f1a2b3c4d5e",
+      "name": "Tahkout Group - Algeria",
+      "description": "Status: Claimed",
+      "incident_type": "ransomware",
+      "created": "2026-01-28T00:00:00Z",
+      "modified": "2026-01-28T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "status": "Claimed",
+        "sector": "Industrie Automobile & Transport"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+      "relationship_type": "targets",
+      "source_ref": "incident--b0c1d2e3-f4a5-6b7c-8d9e-0f1a2b3c4d5e",
+      "target_ref": "identity--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+      "created": "2026-01-28T00:00:00Z",
+      "modified": "2026-01-28T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b1c2d3e4-f5a6-7b8c-9d0e-1f2a3b4c5d6e",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b0c1d2e3-f4a5-6b7c-8d9e-0f1a2b3c4d5e",
+      "target_ref": "threat-actor--e4f5a6b7-c8d9-0e1f-2a3b-4c5d6e7f8a9b",
+      "created": "2026-01-28T00:00:00Z",
+      "modified": "2026-01-28T00:00:00Z"
+    },
+    {
+      "type": "identity",
+      "id": "identity--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+      "name": "AOM Aviation Group",
+      "identity_class": "organization",
+      "sectors": ["Transport Aérien / Aviation Civile"],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "threat-actor",
+      "id": "threat-actor--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+      "name": "skra1a",
+      "description": "Threat actor from AFRINTEL report - january",
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    },
+    {
+      "type": "incident",
+      "id": "incident--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+      "name": "AOM Aviation Group - Morocco",
+      "description": "Aviation database leak. | Website: airoceangroup.ma | Status: Data leaked",
+      "incident_type": "data-breach",
+      "created": "2026-01-31T00:00:00Z",
+      "modified": "2026-01-31T00:00:00Z",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "x_afrintel": {
+        "website": "airoceangroup.ma",
+        "status": "Data leaked",
+        "sector": "Transport Aérien / Aviation Civile"
+      }
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+      "relationship_type": "targets",
+      "source_ref": "incident--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "identity--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+      "created": "2026-01-31T00:00:00Z",
+      "modified": "2026-01-31T00:00:00Z"
+    },
+    {
+      "type": "relationship",
+      "id": "relationship--c2d3e4f5-a6b7-8c9d-0e1f-2a3b4c5d6e7f",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+      "target_ref": "threat-actor--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f",
+      "created": "2026-01-31T00:00:00Z",
+      "modified": "2026-01-31T00:00:00Z"
+    },
+    {
+      "type": "report",
+      "id": "report--d2e3f4a5-b6c7-8d9e-0f1a-2b3c4d5e6f7a",
+      "name": "AFRINTEL Report - January 2026",
+      "description": "Monthly threat intelligence report for Africa - January 2026",
+      "published": "2026-03-05T22:00:00Z",
+      "report_types": ["threat-report"],
+      "object_refs": [
+        "incident--a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d",
+        "incident--b2c3d4e5-f6a7-8b9c-0d1e-2f3a4b5c6d7e",
+        "incident--c3d4e5f6-a7b8-9c0d-1e2f-3a4b5c6d7e8f",
+        "incident--d4e5f6a7-b8c9-0d1e-2f3a-4b5c6d7e8f9a",
+        "incident--e5f6a7b8-c9d0-1e2f-3a4b-5c6d7e8f9a0b",
+        "incident--f6a7b8c9-d0e1-2f3a-4b5c-6d7e8f9a0b1c",
+        "incident--a7b8c9d0-e1f2-3a4b-5c6d-7e8f9a0b1c2d",
+        "incident--b8c9d0e1-f2a3-4b5c-6d7e-8f9a0b1c2d3e",
+        "incident--c9d0e1f2-a3b4-5c6d-7e8f-9a0b1c2d3e4f",
+        "incident--d0e1f2a3-b4c5-6d7e-8f9a-0b1c2d3e4f5a",
+        "incident--e1f2a3b4-c5d6-7e8f-9a0b-1c2d3e4f5a6b",
+        "incident--f2a3b4c5-d6e7-8f9a-0b1c-2d3e4f5a6b7c",
+        "incident--a3b4c5d6-e7f8-9a0b-1c2d-3e4f5a6b7c8d",
+        "incident--b4c5d6e7-f8a9-0b1c-2d3e-4f5a6b7c8d9e",
+        "incident--c5d6e7f8-a9b0-1c2d-3e4f-5a6b7c8d9e0f",
+        "incident--d6e7f8a9-b0c1-2d3e-4f5a-6b7c8d9e0f1a",
+        "incident--e7f8a9b0-c1d2-3e4f-5a6b-7c8d9e0f1a2b",
+        "incident--f8a9b0c1-d2e3-4f5a-6b7c-8d9e0f1a2b3c",
+        "incident--a9b0c1d2-e3f4-5a6b-7c8d-9e0f1a2b3c4d",
+        "incident--b0c1d2e3-f4a5-6b7c-8d9e-0f1a2b3c4d5e",
+        "incident--c1d2e3f4-a5b6-7c8d-9e0f-1a2b3c4d5e6f"
+      ],
+      "created": "2026-03-05T22:00:00Z",
+      "modified": "2026-03-05T22:00:00Z"
+    }
+  ]
+}
