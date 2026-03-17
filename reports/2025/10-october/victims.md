@@ -3,7 +3,8 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-
+# List of African cyberattack victims in October 2025 (18 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 
 ## October 2025
 

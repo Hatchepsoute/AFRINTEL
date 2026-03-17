@@ -3,9 +3,10 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Liste des victimes africaines de cyberattaques en Octobre 2025 (18 victimes)
+👉🏾 [**English version available here**](./victims.md)
 
 ## Octobre 2025
-
 ### 01 Octobre 2025
 #### 🇿🇦 Afrique du Sud - Climatron (Pty) Ltd
 - **Groupe ransomware:** incransom
