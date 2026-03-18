@@ -33,7 +33,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**     | **11**            |
 
 ```mermaid
-pie title Breakdown by Ransomware Group / Actor
+pie title Breakdown by Ransomware Group
     "NightSpire" : 2
     "warlock" : 2
     "incransom" : 1
@@ -46,7 +46,7 @@ pie title Breakdown by Ransomware Group / Actor
 ```
 
 ### 3.2 Breakdown by sector
-| Sector | Number of Attacks |
+| Sector | Number of attacks |
 |---------|-------------------|
 | Government / Administrations | 3 |
 | Banking / Finance | 2 |
@@ -58,7 +58,7 @@ pie title Breakdown by Ransomware Group / Actor
 | **Total** | **11** |
 
 ```mermaid
-pie title Breakdown by industry sector (June 2025)
+pie title Breakdown by industry sector - June 2025
     "Government" : 3
     "Banking" : 2
     "Business Services" : 2

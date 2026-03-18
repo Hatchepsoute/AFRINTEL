@@ -33,7 +33,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**     | **11**            |
 
 ```mermaid
-pie title Répartition par groupe / acteur de menace
+pie title Répartition par groupe / acteur
     "NightSpire" : 2
     "warlock" : 2
     "incransom" : 1
@@ -57,7 +57,7 @@ pie title Répartition par groupe / acteur de menace
 | **Total** | **11** |
 
 ```mermaid
-pie title Répartition par secteur d'activité (Juin 2025)
+pie title Répartition par secteur d'activité - Juin 2025
     "Gouvernement" : 3
     "Banque" : 2
     "Services aux entreprises" : 2
