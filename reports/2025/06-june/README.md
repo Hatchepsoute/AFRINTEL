@@ -7,7 +7,7 @@
 👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during June 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during June 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the *AFRINTEL* project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
 ## 2. Executive summary
 - **Total number of recorded attacks:** 11
@@ -33,7 +33,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**     | **11**            |
 
 ```mermaid
-pie title Breakdown by Ransomware Group
+pie title Breakdown by ransomware group
     "NightSpire" : 2
     "warlock" : 2
     "incransom" : 1
@@ -58,7 +58,7 @@ pie title Breakdown by Ransomware Group
 | **Total** | **11** |
 
 ```mermaid
-pie title Breakdown by industry sector - June 2025
+pie title Breakdown by industry sector/June 2025
     "Government" : 3
     "Banking" : 2
     "Business Services" : 2
