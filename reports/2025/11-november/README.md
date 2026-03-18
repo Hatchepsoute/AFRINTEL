@@ -104,7 +104,7 @@ graph LR
 | **Total** | **11** |
 
 ```mermaid
-pie title Répartition par pays (Novembre 2025)
+pie title Breakdown by country (November 2025)
     "🇪🇬 Egypt" : 4
     "🇲🇦 Morocco" : 2
     "🇨🇮 Ivory Coast" : 2
