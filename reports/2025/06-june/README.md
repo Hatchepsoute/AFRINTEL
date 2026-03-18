@@ -32,6 +32,19 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | Unknown       | 1                 |
 | **Total**     | **11**            |
 
+```mermaid
+pie title Breakdown by Ransomware Group / Actor
+    "NightSpire" : 2
+    "warlock" : 2
+    "incransom" : 1
+    "Lynx" : 1
+    "DieNet" : 1
+    "Phantom Atlas" : 1
+    "RiseAgainLuigi & B4baYega" : 1
+    "Evil_BYTE_Officiel" : 1
+    "Unknown" : 1
+```
+
 ### 3.2 Breakdown by sector
 | Sector | Number of Attacks |
 |---------|-------------------|
@@ -45,15 +58,18 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by sector - June 2025"
-    x-axis ["Government", "Banking", "Business Services", "Telecom", "Retail", "Conglomerate", "Defense"]
-    y-axis "Number of attacks" 0 --> 4
-    bar [3, 2, 2, 1, 1, 1, 1]
+pie title Breakdown by industry sector (June 2025)
+    "Government" : 3
+    "Banking" : 2
+    "Business Services" : 2
+    "Telecommunications" : 1
+    "Retail" : 1
+    "Conglomerate" : 1
+    "Defense" : 1
 ```
 
 ### 3.3 Breakdown by country
-| Country | Number of Attacks |
+| Country | Number of attacks |
 |------|-------------------|
 | 🇲🇦 Morocco | 5 |
 | 🇩🇿 Algeria | 2 |
@@ -63,11 +79,12 @@ xychart-beta
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country - June 2025"
-    x-axis ["🇲🇦 Morocco", "🇩🇿 Algeria", "🇿🇦 South Africa", "🇲🇺 Mauritius", "🇳🇬 Nigeria"]
-    y-axis "Number of attacks" 0 --> 6
-    bar [5, 2, 2, 1, 1]
+pie title Breakdown by country (June 2025)
+    "🇲🇦 Morocco" : 5
+    "🇩🇿 Algeria" : 2
+    "🇿🇦 South Africa" : 2
+    "🇲🇺 Mauritius" : 1
+    "🇳🇬 Nigeria" : 1
 ```
 
 ## 4. Detailed attacks by group/actor
@@ -104,7 +121,7 @@ xychart-beta
 
 ### 4.9 Unknown (1 attack)
 - **13/06/2025:** Nigerian Navy (Nigeria, defense) - exfiltration and sale listing of over 200 sensitive documents.
-### 4.10 Actor → Victim → country graph
+### 4.10 Actor → victim → country graph
 ```mermaid
 graph LR
     NightSpire -->|ANCFCC| Morocco1["🇲🇦 Morocco"]

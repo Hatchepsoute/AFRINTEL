@@ -32,6 +32,18 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | Inconnu       | 1                 |
 | **Total**     | **11**            |
 
+```mermaid
+pie title Répartition par groupe / acteur de menace
+    "NightSpire" : 2
+    "warlock" : 2
+    "incransom" : 1
+    "Lynx" : 1
+    "DieNet" : 1
+    "Phantom Atlas" : 1
+    "RiseAgainLuigi & B4baYega" : 1
+    "Evil_BYTE_Officiel" : 1
+    "Inconnu" : 1
+```
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
@@ -43,12 +55,16 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | Conglomérat | 1 |
 | Défense | 1 |
 | **Total** | **11** |
+
 ```mermaid
-xychart-beta
-    title "Attaques par secteur - Juin 2025"
-    x-axis ["Gouvernement", "Banque", "Services entreprises", "Télécoms", "Commerce", "Conglomérat", "Défense"]
-    y-axis "Nombre d'attaques" 0 --> 4
-    bar [3, 2, 2, 1, 1, 1, 1]
+pie title Répartition par secteur d'activité (Juin 2025)
+    "Gouvernement" : 3
+    "Banque" : 2
+    "Services aux entreprises" : 2
+    "Télécommunications" : 1
+    "Commerce" : 1
+    "Conglomérat" : 1
+    "Défense" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
@@ -61,15 +77,14 @@ xychart-beta
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays - Juin 2025"
-    x-axis ["🇲🇦 Maroc", "🇩🇿 Algérie", "🇿🇦 Afrique du Sud", "🇲🇺 Maurice", "🇳🇬 Nigeria"]
-    y-axis "Nombre d'attaques" 0 --> 6
-    bar [5, 2, 2, 1, 1]
+pie title Répartition par pays (Juin 2025)
+    "🇲🇦 Maroc" : 5
+    "🇩🇿 Algérie" : 2
+    "🇿🇦 Afrique du Sud" : 2
+    "🇲🇺 Maurice" : 1
+    "🇳🇬 Nigeria" : 1
 ```
-
 ## 4. Détail des attaques par groupe/acteur
-
 ### 4.1 NightSpire (2 attaques)
 - **02/06/2025** : ANCFCC (Maroc, gouvernement) – 3,1 Go de données exfiltrées (10 080 certificats fonciers).
 - **06/06/2025** : Ingonyama Trust Board (Afrique du Sud, administration foncière).
