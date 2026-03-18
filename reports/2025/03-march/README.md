@@ -52,11 +52,13 @@ pie title Ransomware attacks by group
 | **Total** | **09** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur"
-    x-axis ["Technology consulting", "Education", "Healthcare", "Retail", "Finance", "Public administrations"]
-    y-axis "Nombre d'attaques" 0 --> 4
-    bar [3, 2, 1, 1, 1, 1]
+pie title Breakdown by industry sector
+    "Tech Consulting" : 3
+    "Education" : 2
+    "Healthcare" : 1
+    "Retail" : 1
+    "Finance" : 1
+    "Public Administration" : 1
 ```
 
 ### 3.3 Breakdown by country
@@ -71,11 +73,13 @@ xychart-beta
 | **Total** | **09** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country"
-    x-axis ["🇪🇬 Egypt", "🇿🇦  South Africa", "🇧🇼 Botswana", "🇳🇬 Nigeria", " 🇹🇿 Tanzania", "🇷🇼 Rwanda"]
-    y-axis "Nomber of attacks" 0 --> 4
-    bar [3, 2, 1, 1, 1, 1]
+pie title Breakdown by country
+    "🇪🇬 Egypt" : 3
+    "🇿🇦 South Africa" : 2
+    "🇧🇼 Botswana" : 1
+    "🇳🇬 Nigeria" : 1
+    "🇹🇿 Tanzania" : 1
+    "🇷🇼 Rwanda" : 1
 ```
 
 ## 4. Detailed attacks by ransomware group

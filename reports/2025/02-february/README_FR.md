@@ -27,7 +27,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | flocker           | 1                 |
 | akira             | 1                 |
 | hunter            | 1                 |
-| **Total**         | **8**             |
+| **Total**         | **08**             |
 
 ```mermaid
 pie title Répartition des attaques par groupe ransomware (février 2025)
@@ -47,14 +47,16 @@ pie title Répartition des attaques par groupe ransomware (février 2025)
 | Logistique | 1 |
 | Services publics (Météo) | 1 |
 | Gouvernement (portail) | 1 |
-| **Total** | **8** |
+| **Total** | **08** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur"
-    x-axis ["Services aux entreprises", "Assurances", "Télécoms", "Logistique", "Services publics", "Gouvernement"]
-    y-axis "Nombre d'attaques" 0 --> 3
-    bar [2, 2, 1, 1, 1, 1]
+pie title Répartition par secteur d'activité (Janvier 2025)
+    "Services aux entreprises" : 2
+    "Assurances" : 2
+    "Télécoms" : 1
+    "Logistique" : 1
+    "Services publics" : 1
+    "Gouvernement" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
@@ -65,14 +67,16 @@ xychart-beta
 | Zambie | 1 |
 | Ghana | 1 |
 | Namibie | 1 |
-| **Total** | **8** |
+| **Total** | **08** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays"
-    x-axis ["Égypte", "Afrique du Sud", "Maroc", "Zambie", "Ghana", "Namibie"]
-    y-axis "Nombre d'attaques" 0 --> 4
-    bar [3, 1, 1, 1, 1, 1]
+pie title Répartition par pays
+    "🇪🇬 Égypte" : 3
+    "🇿🇦 Afrique du Sud" : 1
+    "🇲🇦 Maroc" : 1
+    "🇿🇲 Zambie" : 1
+    "🇬🇭 Ghana" : 1
+    "🇳🇦 Namibie" : 1
 ```
 
 ## 4. Détail des attaques par groupe ransomware
@@ -119,7 +123,7 @@ xychart-beta
 
 L'Égypte est le pays le plus touché, avec des attaques sur des infrastructures critiques (logistique) et des services numériques.
 
-### 6.1. Graphe Acteur → Victime → Pays
+### 6.1. Graphe acteur → victime → pays
 ```mermaid
 graph LR
     fog -->|Xlab Group| Egypte["🇪🇬 Égypte"]

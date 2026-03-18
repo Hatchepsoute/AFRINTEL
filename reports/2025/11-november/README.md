@@ -132,6 +132,7 @@ pie title Breakdown by country (November 2025)
 * **qilin** (Nov 26): Arabia Holding (Egypt, Real Estate) - Claimed & Leaked.
 * **benzona** (Nov 26): SEV-CI (Ivory Coast, Health/NGO) - Claimed & Leaked.
 
+### 4.4 Actor → victim → country graph
 ```mermaid
 graph LR
     %% clop Relations (Red)

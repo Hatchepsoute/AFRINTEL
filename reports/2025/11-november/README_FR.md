@@ -133,6 +133,7 @@ pie title Répartition par pays (Novembre 2025)
 * **qilin** (26/11) : Arabia Holding (Égypte, Immobilier) - Revendication & divulgation.
 * **benzona** (26/11) : SEV-CI (Côte d'Ivoire, Santé/ONG) - Revendication & divulgation.
 
+### 4.4 Graphe acteur → victim → pays 
 ```mermaid
 graph LR
     %% Relations clop (Rouge)

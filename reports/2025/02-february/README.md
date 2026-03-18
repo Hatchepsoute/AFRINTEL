@@ -18,7 +18,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 ## 3. Key statistics
 
 ### 3.1 Breakdown by ransomware group
-| Ransomware Group | Number of Attacks |
+| Ransomware Group | Number of attacks |
 |-------------------|-------------------|
 | ransomhub         | 2                 |
 | killsec           | 2                 |
@@ -26,7 +26,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | flocker           | 1                 |
 | akira             | 1                 |
 | hunter            | 1                 |
-| **Total**         | **8**             |
+| **Total**         | **08**             |
 
 ### 3.2 Breakdown by sector
 | Sector | Number of Attacks |
@@ -37,18 +37,20 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | Logistics | 1 |
 | Public Services (Meteorology) | 1 |
 | Government (Portal) | 1 |
-| **Total** | **8** |
+| **Total** | **08** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by sector"
-    x-axis ["Business Services", "Insurance / Insurtech", "Telecommunications", "Logistics", "Public Services", "Government"]
-    y-axis "Number of attacks " 0 --> 3
-    bar [2, 2, 1, 1, 1, 1]
+pie title Breakdown by industry sector (January 2025)
+    "Business Services" : 2
+    "Insurance" : 2
+    "Telecoms" : 1
+    "Logistics" : 1
+    "Public Services" : 1
+    "Government" : 1
 ```
 
 ### 3.3 Breakdown by Country
-| Country | Number of Attacks |
+| Country | Number of attacks |
 |------|-------------------|
 |🇪🇬 Egypt | 3 |
 |🇿🇦 South Africa | 1 |
@@ -56,14 +58,16 @@ xychart-beta
 |🇿🇲  Zambia | 1 |
 |🇬🇭 Ghana | 1 |
 |🇳🇦 Namibia | 1 |
-| **Total** | **8** |
+| **Total** | **08** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country"
-    x-axis ["🇪🇬 Egypt", "🇿🇦 South Africa", "🇲🇦 Morocco", "🇿🇲 Zambia", " 🇬🇭 Ghana", "🇳🇦 Namibia"]
-    y-axis "Number of Attacks" 0 --> 4
-    bar [3, 1, 1, 1, 1, 1]
+pie title Breakdown by country
+    "🇪🇬 Egypt" : 3
+    "🇿🇦 South Africa" : 1
+    "🇲🇦 Morocco" : 1
+    "🇿🇲 Zambia" : 1
+    "🇬🇭 Ghana" : 1
+    "🇳🇦 Namibia" : 1
 ```
 
 ## 4. Detailed attacks by ransomware group
@@ -110,7 +114,7 @@ xychart-beta
 
 Egypt is the most affected country, with attacks on critical infrastructure (logistics) and digital services.
 
-### 6.1. Actor → Victim → Country Graph
+### 6.1. Actor → victim → country graph
 ```mermaid
 graph LR
     fog -->|Xlab Group| Egypt["🇪🇬 Egypt"]

@@ -83,11 +83,15 @@ Une carte des attaques.
 - 🇿🇲 Zambie      	         █            1
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays"
-    x-axis ["🇪🇬 Égypte", "🇳🇬 Nigeria", "🇩🇿 Algérie", " 🇲🇦 Maroc", "Kenya", "🇿🇦 Afrique du Sud", "🇺🇬 Ouganda", "🇿🇲 Zambie"]
-    y-axis "Nombre d'attaques" 0 --> 5
-    bar [4, 3, 2, 2, 2, 1, 1, 1]
+pie title Attaques par pays (Janvier 2025)
+    "🇪🇬 Égypte" : 4
+    "🇳🇬 Nigeria" : 3
+    "🇩🇿 Algérie" : 2
+    "🇲🇦 Maroc" : 2
+    "🇰🇪 Kenya" : 2
+    "🇿🇦 Afrique du Sud" : 1
+    "🇺🇬 Ouganda" : 1
+    "🇿🇲 Zambie" : 1
 ```
 
 ## 4. Détail des attaques par groupe ransomware

@@ -68,11 +68,15 @@ A visual representation of attacks per country.
 
 ## 4. Detailed attacks by ransomware group
 ```mermaid
-xychart-beta
-    title "Attacks by country"
-    x-axis ["🇪🇬 Egypt", "🇳🇬 Nigeria", "🇩🇿 Algeria", "🇲🇦 Morocco", "🇰🇪 Kenya", "South Africa", "🇺🇬 Uganda", "🇿🇲 Zambia"]
-    y-axis "Number of attacks" 0 --> 5
-    bar [4, 3, 2, 2, 2, 1, 1, 1]
+pie title Attacks by country (January 2025)
+    "🇪🇬 Egypt" : 4
+    "🇳🇬 Nigeria" : 3
+    "🇩🇿 Algeria" : 2
+    "🇲🇦 Morocco" : 2
+    "🇰🇪 Kenya" : 2
+    "🇿🇦 South Africa" : 1
+    "🇺🇬 Uganda" : 1
+    "🇿🇲 Zambia" : 1
 ```
 
 ### 4.1 FunkSec (5 attacks)
