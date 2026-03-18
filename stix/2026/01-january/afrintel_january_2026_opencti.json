@@ -1,0 +1,1861 @@
+{
+  "type": "bundle",
+  "id": "bundle--542cfd7a-5885-4991-ba35-8d6ca64bdb79",
+  "objects": [
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "unknown",
+      "description": "Threat actor or ransomware group referenced by AFRINTEL for 01-january 2026.",
+      "labels": [
+        "ransomware",
+        "afrintel",
+        "2026",
+        "01-january"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--492d57f6-ff14-468e-962a-4aa15ddeea88",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Government of Togo",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Togo.",
+      "labels": [
+        "victim",
+        "organization",
+        "togo",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--add54beb-4d6b-4b2e-b805-c8768ebbeebe",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Government of Togo",
+      "description": "Claimed ransomware incident affecting Government of Togo in Togo.",
+      "first_seen": "2026-01-03T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "togo",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Togo",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "03 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--815a27d4-e8dd-4d0c-9931-34243830819f",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--add54beb-4d6b-4b2e-b805-c8768ebbeebe",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bf2ec658-716f-49df-a8bd-37d0c9086d55",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--492d57f6-ff14-468e-962a-4aa15ddeea88"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5b51502b-6c82-43e5-acea-a6c409ade68f",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--add54beb-4d6b-4b2e-b805-c8768ebbeebe",
+      "target_ref": "identity--492d57f6-ff14-468e-962a-4aa15ddeea88"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c1487e23-5814-4b80-b272-dde6536c8a3b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Government Websites",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Niger.",
+      "labels": [
+        "victim",
+        "organization",
+        "niger",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--ab6bffba-f915-462d-9b17-33d8e48b0566",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Government Websites",
+      "description": "Claimed ransomware incident affecting Government Websites in Niger.",
+      "first_seen": "2026-01-04T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "niger",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Niger",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "04 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--944a80db-a7a4-450d-9876-5ae8b3929e0b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ab6bffba-f915-462d-9b17-33d8e48b0566",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--723946f3-3cbd-43ab-bf61-7d87797e6b06",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--c1487e23-5814-4b80-b272-dde6536c8a3b"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b2820ef5-99d2-4d68-a7bc-e6034198d9cd",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--ab6bffba-f915-462d-9b17-33d8e48b0566",
+      "target_ref": "identity--c1487e23-5814-4b80-b272-dde6536c8a3b"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--a3dd2e28-69a2-48ac-abbc-e4ee72fc3086",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Hytec South Africa",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in South Africa.",
+      "labels": [
+        "victim",
+        "organization",
+        "south-africa",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--4d7dad45-2653-490e-a487-e0f5fd640529",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Hytec South Africa",
+      "description": "Claimed ransomware incident affecting Hytec South Africa in South Africa.",
+      "first_seen": "2026-01-06T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "south-africa",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "06 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5728daea-67bf-4d04-90c4-a202b2b52f16",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--4d7dad45-2653-490e-a487-e0f5fd640529",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--00c2989a-15f7-4862-9756-3f258b178234",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--a3dd2e28-69a2-48ac-abbc-e4ee72fc3086"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--54c83755-1db1-47cf-9cec-4b1762e12710",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--4d7dad45-2653-490e-a487-e0f5fd640529",
+      "target_ref": "identity--a3dd2e28-69a2-48ac-abbc-e4ee72fc3086"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--10eb4bc5-294d-408d-a8db-e241451cb86e",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "National Water Authority",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Kenya.",
+      "labels": [
+        "victim",
+        "organization",
+        "kenya",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--749045e2-1a1b-4f0b-9a8a-fa12b94fad6a",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against National Water Authority",
+      "description": "Claimed ransomware incident affecting National Water Authority in Kenya.",
+      "first_seen": "2026-01-08T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "kenya",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "08 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--42961142-0089-4aca-b004-dad66a648307",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--749045e2-1a1b-4f0b-9a8a-fa12b94fad6a",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5ca00a05-4c76-4e8d-bd5c-29494771db9b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--10eb4bc5-294d-408d-a8db-e241451cb86e"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9b7a0629-6d6e-4538-9ab8-179ae43044b8",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--749045e2-1a1b-4f0b-9a8a-fa12b94fad6a",
+      "target_ref": "identity--10eb4bc5-294d-408d-a8db-e241451cb86e"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b5ffffbd-5a4b-45b9-b2ba-db171f9c6957",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Real Tech",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Egypt.",
+      "labels": [
+        "victim",
+        "organization",
+        "egypt",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--7d4a76e7-b0e8-4135-a89b-b5649d6069ff",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Real Tech",
+      "description": "Claimed ransomware incident affecting Real Tech in Egypt.",
+      "first_seen": "2026-01-11T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "egypt",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "11 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--29ca34c2-1b0f-47a6-b469-434a0880405d",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--7d4a76e7-b0e8-4135-a89b-b5649d6069ff",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d2eb33c1-80e6-4e43-98cc-df8ddc114cab",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--b5ffffbd-5a4b-45b9-b2ba-db171f9c6957"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--12c13469-a491-4ac0-ae2c-7a9d27b06d93",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--7d4a76e7-b0e8-4135-a89b-b5649d6069ff",
+      "target_ref": "identity--b5ffffbd-5a4b-45b9-b2ba-db171f9c6957"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5463c775-5ac5-423f-8e6f-86fe616ebd45",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Tepco-Group",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Egypt.",
+      "labels": [
+        "victim",
+        "organization",
+        "egypt",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--26bbefd5-5974-426d-a373-eddaa935170e",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Tepco-Group",
+      "description": "Claimed ransomware incident affecting Tepco-Group in Egypt.",
+      "first_seen": "2026-01-13T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "egypt",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "13 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c8584cf9-3914-49d9-a2fd-73200fb3930b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--26bbefd5-5974-426d-a373-eddaa935170e",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c092a0e9-69d7-422d-8bc1-b710f531046e",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--5463c775-5ac5-423f-8e6f-86fe616ebd45"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2a286747-667d-4d9a-9989-14bccbcc4814",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--26bbefd5-5974-426d-a373-eddaa935170e",
+      "target_ref": "identity--5463c775-5ac5-423f-8e6f-86fe616ebd45"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--fab4eaa8-62ed-43ad-a927-5ed3bf4f0a2d",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Rogers Capital",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Mauritius.",
+      "labels": [
+        "victim",
+        "organization",
+        "mauritius",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--112ac9ec-7df5-43d5-b7c2-b5a470083464",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Rogers Capital",
+      "description": "Claimed ransomware incident affecting Rogers Capital in Mauritius.",
+      "first_seen": "2026-01-14T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "mauritius",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Mauritius",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "14 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--963134bf-a523-42db-aee4-7abb5b8926e6",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--112ac9ec-7df5-43d5-b7c2-b5a470083464",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--de79a82b-0676-4ee5-a451-3eb526f5c42c",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--fab4eaa8-62ed-43ad-a927-5ed3bf4f0a2d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--39f3439d-25d4-4254-9a72-602cdc77f89c",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--112ac9ec-7df5-43d5-b7c2-b5a470083464",
+      "target_ref": "identity--fab4eaa8-62ed-43ad-a927-5ed3bf4f0a2d"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d86862da-284a-4e3c-996c-0ae9e1382ef1",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "PixPay",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Senegal.",
+      "labels": [
+        "victim",
+        "organization",
+        "senegal",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--f683ea5f-73ca-4683-b0a8-d364c7ff54d8",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against PixPay",
+      "description": "Claimed ransomware incident affecting PixPay in Senegal.",
+      "first_seen": "2026-01-16T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "senegal",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Senegal",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "16 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2a117093-ef09-4db4-aa49-dbbe88b35a28",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f683ea5f-73ca-4683-b0a8-d364c7ff54d8",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c7849b3c-238d-42ae-a93a-0393356d823e",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--d86862da-284a-4e3c-996c-0ae9e1382ef1"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8fc678c8-9d48-48df-ac91-1a4aa8bdc499",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--f683ea5f-73ca-4683-b0a8-d364c7ff54d8",
+      "target_ref": "identity--d86862da-284a-4e3c-996c-0ae9e1382ef1"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--dbe2f3ac-fbaa-4287-95bc-c38a2ee7e045",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "CFM Mozambique",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Mozambique.",
+      "labels": [
+        "victim",
+        "organization",
+        "mozambique",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--9a0c2fdd-f8d9-45c1-9f8c-605960ef8f73",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against CFM Mozambique",
+      "description": "Claimed ransomware incident affecting CFM Mozambique in Mozambique.",
+      "first_seen": "2026-01-16T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "mozambique",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Mozambique",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "16 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3c142b30-a701-49dc-af88-b7364778e185",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--9a0c2fdd-f8d9-45c1-9f8c-605960ef8f73",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c5c57db0-0431-4b5d-80ee-c8d89f241486",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--dbe2f3ac-fbaa-4287-95bc-c38a2ee7e045"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2239a210-a9e3-4d0c-aaf1-aed66b403f6b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--9a0c2fdd-f8d9-45c1-9f8c-605960ef8f73",
+      "target_ref": "identity--dbe2f3ac-fbaa-4287-95bc-c38a2ee7e045"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--40335d4f-f9b7-45d6-b402-5367f3472583",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "CCBRT",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Tanzania.",
+      "labels": [
+        "victim",
+        "organization",
+        "tanzania",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--13d0d979-94a8-43d4-a15e-8d80b93155af",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against CCBRT",
+      "description": "Claimed ransomware incident affecting CCBRT in Tanzania.",
+      "first_seen": "2026-01-17T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "tanzania",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Tanzania",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "17 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--09671df0-b4fa-4628-8236-8c0828200d22",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--13d0d979-94a8-43d4-a15e-8d80b93155af",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b241f238-1d0d-44f7-8b4c-c48ceaec515b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--40335d4f-f9b7-45d6-b402-5367f3472583"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--01de63a8-30b2-4c18-9749-fa9e3dd23200",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--13d0d979-94a8-43d4-a15e-8d80b93155af",
+      "target_ref": "identity--40335d4f-f9b7-45d6-b402-5367f3472583"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--1cfad4d2-f50a-4b8e-a446-160a4388a03d",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Nafae Sanitaire",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Morocco.",
+      "labels": [
+        "victim",
+        "organization",
+        "morocco",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--55c1d109-b14c-43be-906d-7389b9367b8e",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Nafae Sanitaire",
+      "description": "Claimed ransomware incident affecting Nafae Sanitaire in Morocco.",
+      "first_seen": "2026-01-17T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "morocco",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "17 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e8bf7346-c270-4168-bf8f-5d1b37ae8746",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--55c1d109-b14c-43be-906d-7389b9367b8e",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--31ef1b19-c9be-4674-b08c-2197cfd166bd",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--1cfad4d2-f50a-4b8e-a446-160a4388a03d"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bba22f4c-a2b8-4877-bc4d-637704f94d7b",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--55c1d109-b14c-43be-906d-7389b9367b8e",
+      "target_ref": "identity--1cfad4d2-f50a-4b8e-a446-160a4388a03d"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--fae7700e-318e-40a6-84a1-d6082fa72b38",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "CPF Financial Services",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Kenya.",
+      "labels": [
+        "victim",
+        "organization",
+        "kenya",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--4afb2b95-e8e7-4b74-8edd-058928a0d9f6",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against CPF Financial Services",
+      "description": "Claimed ransomware incident affecting CPF Financial Services in Kenya.",
+      "first_seen": "2026-01-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "kenya",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "20 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d9867e00-6dfe-4627-96d3-14129be259fa",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--4afb2b95-e8e7-4b74-8edd-058928a0d9f6",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--598eab2f-409e-4116-89c2-d72db8114a9c",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--fae7700e-318e-40a6-84a1-d6082fa72b38"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--02d28f02-107a-4432-a2ad-c24da1d499c4",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--4afb2b95-e8e7-4b74-8edd-058928a0d9f6",
+      "target_ref": "identity--fae7700e-318e-40a6-84a1-d6082fa72b38"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7aeb2aaa-780f-4bbe-9294-d985d41917d4",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "NSSF",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Kenya.",
+      "labels": [
+        "victim",
+        "organization",
+        "kenya",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--28b21d7c-5fd4-4ef4-90b5-47c6f597c52f",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against NSSF",
+      "description": "Claimed ransomware incident affecting NSSF in Kenya.",
+      "first_seen": "2026-01-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "kenya",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "20 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--06762f5c-960e-4df1-9327-e309b66bca39",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--28b21d7c-5fd4-4ef4-90b5-47c6f597c52f",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6d69fc14-753c-4c20-aa0a-69b3b6f763c9",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--7aeb2aaa-780f-4bbe-9294-d985d41917d4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--90e7ecf2-03c9-4e61-842c-641d14bc4694",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--28b21d7c-5fd4-4ef4-90b5-47c6f597c52f",
+      "target_ref": "identity--7aeb2aaa-780f-4bbe-9294-d985d41917d4"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--fd5edcdd-bf88-4aed-86c3-4a2c2f49a8c2",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Paltrack",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in South Africa.",
+      "labels": [
+        "victim",
+        "organization",
+        "south-africa",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--d3db8d0f-bdae-4e69-a9dc-504bdb69da1f",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Paltrack",
+      "description": "Claimed ransomware incident affecting Paltrack in South Africa.",
+      "first_seen": "2026-01-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "south-africa",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "20 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--87fc8220-da80-4636-8416-19c3e5dd8eaf",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d3db8d0f-bdae-4e69-a9dc-504bdb69da1f",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f8e3acd1-1f25-4949-a212-c5ae1f004b25",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--fd5edcdd-bf88-4aed-86c3-4a2c2f49a8c2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cb5d8d01-7d3c-48b9-89f7-6068a231b230",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--d3db8d0f-bdae-4e69-a9dc-504bdb69da1f",
+      "target_ref": "identity--fd5edcdd-bf88-4aed-86c3-4a2c2f49a8c2"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f97a87f2-b7e9-4429-a1a3-24f234159659",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Rola Motor Group",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in South Africa.",
+      "labels": [
+        "victim",
+        "organization",
+        "south-africa",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--f36d3e14-d6d4-43cc-8089-fc3177da7dad",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Rola Motor Group",
+      "description": "Claimed ransomware incident affecting Rola Motor Group in South Africa.",
+      "first_seen": "2026-01-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "south-africa",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "20 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ffaf57fe-521d-4ae8-9f83-d250814adee9",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f36d3e14-d6d4-43cc-8089-fc3177da7dad",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f63c5e94-599e-4818-8f27-c29c1300b942",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--f97a87f2-b7e9-4429-a1a3-24f234159659"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bc42597c-c17c-449f-9ed8-4bf9be754d96",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--f36d3e14-d6d4-43cc-8089-fc3177da7dad",
+      "target_ref": "identity--f97a87f2-b7e9-4429-a1a3-24f234159659"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b22aaa26-1ab9-4e2e-8a1b-27492f676779",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Witzenberg Municipality",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in South Africa.",
+      "labels": [
+        "victim",
+        "organization",
+        "south-africa",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--ba6c7e02-ef4f-4025-9588-23795db84ee0",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Witzenberg Municipality",
+      "description": "Claimed ransomware incident affecting Witzenberg Municipality in South Africa.",
+      "first_seen": "2026-01-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "south-africa",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "20 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d063c50f-eff1-4d94-8b5b-d08318087953",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ba6c7e02-ef4f-4025-9588-23795db84ee0",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fc638f34-cdbe-471a-847c-428715c2cca1",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--b22aaa26-1ab9-4e2e-8a1b-27492f676779"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0f006f59-ca8a-49e4-add4-d241e9c46e81",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--ba6c7e02-ef4f-4025-9588-23795db84ee0",
+      "target_ref": "identity--b22aaa26-1ab9-4e2e-8a1b-27492f676779"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c6ccba2e-fa1c-4cfd-91db-90f15ce552e2",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "namico.go.ke",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Kenya.",
+      "labels": [
+        "victim",
+        "organization",
+        "kenya",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--760d3d7e-4e54-4f23-96aa-28d187c22bf1",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against namico.go.ke",
+      "description": "Claimed ransomware incident affecting namico.go.ke in Kenya.",
+      "first_seen": "2026-01-26T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "kenya",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "26 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0e1cc24c-0804-44c0-95a9-3e763aad6475",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--760d3d7e-4e54-4f23-96aa-28d187c22bf1",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--15e64e4b-8dc7-499d-9c17-05f95bbc3ee7",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--c6ccba2e-fa1c-4cfd-91db-90f15ce552e2"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9ce09e27-0fbf-4f14-963a-ca5d6d2a2940",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--760d3d7e-4e54-4f23-96aa-28d187c22bf1",
+      "target_ref": "identity--c6ccba2e-fa1c-4cfd-91db-90f15ce552e2"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9879cabc-22cc-47f4-bd9a-97b59217f1fa",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "FRUIT-BONTÉ",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Tunisia.",
+      "labels": [
+        "victim",
+        "organization",
+        "tunisia",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--cc4936a6-ef80-4d25-a53d-7e5fc6647827",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against FRUIT-BONTÉ",
+      "description": "Claimed ransomware incident affecting FRUIT-BONTÉ in Tunisia.",
+      "first_seen": "2026-01-27T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "tunisia",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "27 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5846d21e-cc40-444e-bf24-537addc2e0cf",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--cc4936a6-ef80-4d25-a53d-7e5fc6647827",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f7f6fb2e-7c73-40a7-9a33-0f57d7adfe01",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--9879cabc-22cc-47f4-bd9a-97b59217f1fa"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--08b98931-d565-4072-a881-3b5b760f86c6",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--cc4936a6-ef80-4d25-a53d-7e5fc6647827",
+      "target_ref": "identity--9879cabc-22cc-47f4-bd9a-97b59217f1fa"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ee29ab59-8b74-4503-aba2-ac9d9009fcd5",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "skyegtours.com",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Egypt.",
+      "labels": [
+        "victim",
+        "organization",
+        "egypt",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--c0cb6203-c653-47d7-8424-5aa56fe512dc",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against skyegtours.com",
+      "description": "Claimed ransomware incident affecting skyegtours.com in Egypt.",
+      "first_seen": "2026-01-27T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "egypt",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "27 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ee0a65b4-573e-4d9e-9513-96b02390d8a9",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c0cb6203-c653-47d7-8424-5aa56fe512dc",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bc34cfb9-069b-40b9-8fa8-63f85b4dc092",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--ee29ab59-8b74-4503-aba2-ac9d9009fcd5"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c38e3bdc-1d1d-426d-be3d-6a650a2d599c",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--c0cb6203-c653-47d7-8424-5aa56fe512dc",
+      "target_ref": "identity--ee29ab59-8b74-4503-aba2-ac9d9009fcd5"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b7d1640d-a97e-47f8-b5b8-cded1cb1d7ec",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Tahkout Group",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Algeria.",
+      "labels": [
+        "victim",
+        "organization",
+        "algeria",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--54ad873a-41ac-4bec-83d8-4c576fea0c69",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against Tahkout Group",
+      "description": "Claimed ransomware incident affecting Tahkout Group in Algeria.",
+      "first_seen": "2026-01-28T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "algeria",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "28 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--031a6422-5d03-4a36-885c-454524585c44",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--54ad873a-41ac-4bec-83d8-4c576fea0c69",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--02168946-d772-465d-a2e2-097afd2c48be",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--b7d1640d-a97e-47f8-b5b8-cded1cb1d7ec"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f8381280-f591-4c01-b773-81cb2d9b087a",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--54ad873a-41ac-4bec-83d8-4c576fea0c69",
+      "target_ref": "identity--b7d1640d-a97e-47f8-b5b8-cded1cb1d7ec"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e0749d71-2845-495b-be8f-a3ab15856d29",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "AOM Aviation Group",
+      "identity_class": "organization",
+      "sectors": [
+        "unknown"
+      ],
+      "description": "Victim organization in Morocco.",
+      "labels": [
+        "victim",
+        "organization",
+        "morocco",
+        "afrintel"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--f6e2e591-b16b-4b87-8cbb-a95d358ef949",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "Ransomware attack against AOM Aviation Group",
+      "description": "Claimed ransomware incident affecting AOM Aviation Group in Morocco.",
+      "first_seen": "2026-01-31T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "ransomware",
+        "claim-unverified",
+        "morocco",
+        "unknown"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ],
+      "extensions": {},
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_sector_raw": "unknown",
+      "x_afrintel_date_display": "31 January 2026"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0988e0fc-a9aa-4463-8e0d-d4f9059bf9c0",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--f6e2e591-b16b-4b87-8cbb-a95d358ef949",
+      "target_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--75536fca-62c8-44ea-abb9-1f4fa7ce02d4",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+      "target_ref": "identity--e0749d71-2845-495b-be8f-a3ab15856d29"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2079ba71-5d97-4877-bac7-d547a3148849",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--f6e2e591-b16b-4b87-8cbb-a95d358ef949",
+      "target_ref": "identity--e0749d71-2845-495b-be8f-a3ab15856d29"
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--71335fbd-6acf-4dd2-b79d-f5a1aadb9129",
+      "created": "2026-03-18T03:15:58Z",
+      "modified": "2026-03-18T03:15:58Z",
+      "name": "AFRINTEL ransomware incidents - 01-january 2026",
+      "description": "AFRINTEL monthly ransomware/extortion victim dataset for 01-january 2026.",
+      "report_types": [
+        "threat-report"
+      ],
+      "published": "2026-01-03T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "monthly-report",
+        "2026",
+        "01-january"
+      ],
+      "object_refs": [
+        "intrusion-set--a01a0fe5-a330-4c01-b5d7-45c09e8d922f",
+        "identity--492d57f6-ff14-468e-962a-4aa15ddeea88",
+        "identity--c1487e23-5814-4b80-b272-dde6536c8a3b",
+        "identity--a3dd2e28-69a2-48ac-abbc-e4ee72fc3086",
+        "identity--10eb4bc5-294d-408d-a8db-e241451cb86e",
+        "identity--b5ffffbd-5a4b-45b9-b2ba-db171f9c6957",
+        "identity--5463c775-5ac5-423f-8e6f-86fe616ebd45",
+        "identity--fab4eaa8-62ed-43ad-a927-5ed3bf4f0a2d",
+        "identity--d86862da-284a-4e3c-996c-0ae9e1382ef1",
+        "identity--dbe2f3ac-fbaa-4287-95bc-c38a2ee7e045",
+        "identity--40335d4f-f9b7-45d6-b402-5367f3472583",
+        "identity--1cfad4d2-f50a-4b8e-a446-160a4388a03d",
+        "identity--fae7700e-318e-40a6-84a1-d6082fa72b38",
+        "identity--7aeb2aaa-780f-4bbe-9294-d985d41917d4",
+        "identity--fd5edcdd-bf88-4aed-86c3-4a2c2f49a8c2",
+        "identity--f97a87f2-b7e9-4429-a1a3-24f234159659",
+        "identity--b22aaa26-1ab9-4e2e-8a1b-27492f676779",
+        "identity--c6ccba2e-fa1c-4cfd-91db-90f15ce552e2",
+        "identity--9879cabc-22cc-47f4-bd9a-97b59217f1fa",
+        "identity--ee29ab59-8b74-4503-aba2-ac9d9009fcd5",
+        "identity--b7d1640d-a97e-47f8-b5b8-cded1cb1d7ec",
+        "identity--e0749d71-2845-495b-be8f-a3ab15856d29",
+        "incident--add54beb-4d6b-4b2e-b805-c8768ebbeebe",
+        "incident--ab6bffba-f915-462d-9b17-33d8e48b0566",
+        "incident--4d7dad45-2653-490e-a487-e0f5fd640529",
+        "incident--749045e2-1a1b-4f0b-9a8a-fa12b94fad6a",
+        "incident--7d4a76e7-b0e8-4135-a89b-b5649d6069ff",
+        "incident--26bbefd5-5974-426d-a373-eddaa935170e",
+        "incident--112ac9ec-7df5-43d5-b7c2-b5a470083464",
+        "incident--f683ea5f-73ca-4683-b0a8-d364c7ff54d8",
+        "incident--9a0c2fdd-f8d9-45c1-9f8c-605960ef8f73",
+        "incident--13d0d979-94a8-43d4-a15e-8d80b93155af",
+        "incident--55c1d109-b14c-43be-906d-7389b9367b8e",
+        "incident--4afb2b95-e8e7-4b74-8edd-058928a0d9f6",
+        "incident--28b21d7c-5fd4-4ef4-90b5-47c6f597c52f",
+        "incident--d3db8d0f-bdae-4e69-a9dc-504bdb69da1f",
+        "incident--f36d3e14-d6d4-43cc-8089-fc3177da7dad",
+        "incident--ba6c7e02-ef4f-4025-9588-23795db84ee0",
+        "incident--760d3d7e-4e54-4f23-96aa-28d187c22bf1",
+        "incident--cc4936a6-ef80-4d25-a53d-7e5fc6647827",
+        "incident--c0cb6203-c653-47d7-8424-5aa56fe512dc",
+        "incident--54ad873a-41ac-4bec-83d8-4c576fea0c69",
+        "incident--f6e2e591-b16b-4b87-8cbb-a95d358ef949"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/2026/01-january"
+        }
+      ]
+    }
+  ]
+}

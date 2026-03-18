@@ -1,29 +1,136 @@
-![STIX Dataset](https://img.shields.io/badge/CTI-STIX%20Dataset-purple)
+![STIX Dataset](https://img.shields.io/badge/CTI-STIX%202.1-purple)
+![OpenCTI](https://img.shields.io/badge/Platform-OpenCTI-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+
 # AFRINTEL Threat Intelligence Dataset (STIX)
+👉🏾 [**French version available here**](./README_FR.md)
 
-This directory contains structured threat intelligence datasets in **STIX 2.x format**.
+This directory contains structured Cyber Threat Intelligence datasets generated from AFRINTEL ransomware monitoring.
 
-The bundles include structured information about:
+All bundles are provided in **STIX 2.1 format** and are designed for direct ingestion into CTI platforms such as **OpenCTI**, **MISP**, and other STIX-compatible environments.
 
-- ransomware actors
-- victims
-- targeted countries
-- sectors
-- relationships between incidents and threat actors
+---
+
+## Purpose
+
+AFRINTEL STIX datasets transform raw ransomware victim tracking into structured intelligence that can be operationalized by CTI and SOC teams.
+
+```text
+victims.md → Structured CTI → STIX 2.1 → OpenCTI / SOC
+```
+
+These datasets support:
+
+- threat actor tracking
+- victim intelligence enrichment
+- campaign correlation
+- operational CTI workflows
+- SOC enrichment and investigation
+
+---
+
+## Dataset content
+
+Each STIX bundle may include:
+
+- `intrusion-set` → ransomware groups or malicious actors
+- `identity` → victim organizations
+- `incident` → ransomware incidents
+- `relationship` → actor ↔ victim ↔ incident links
+- `report` → AFRINTEL monthly threat report object
+
+---
 
 ## Available datasets
 
+### AFRINTEL 2025
+
 | Month | STIX Bundle |
 |------|------|
-| January 2026 |[january/afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
-| February 2026 |[february/afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
-| January 2025 |[january/afrintel_january_2025_opencti.json](./2025/01-january/afrintel_january_2025_opencti.json) |
-| February 2025 |[february/afrintel_february_2025_opencti.json](./2025/02-february/afrintel_february_2025_opencti.json) |
-| March 2025 |[march/afrintel_march_2025_opencti.json](./2025/03-march/afrintel_march_2025_opencti.json) |
+| January 2025 | [afrintel_january_2025_opencti.json](./2025/01-january/afrintel_january_2025_opencti.json) |
+| February 2025 | [afrintel_february_2025_opencti.json](./2025/02-february/afrintel_february_2025_opencti.json) |
+| March 2025 | [afrintel_march_2025_opencti.json](./2025/03-march/afrintel_march_2025_opencti.json) |
+| April 2025 | [afrintel_april_2025_opencti.json](./2025/04-april/afrintel_april_2025_opencti.json) |
+| May 2025 | [afrintel_may_2025_opencti.json](./2025/05-may/afrintel_may_2025_opencti.json) |
+| June 2025 | [afrintel_june_2025_opencti.json](./2025/06-june/afrintel_june_2025_opencti.json) |
+| July 2025 | [afrintel_july_2025_opencti.json](./2025/07-july/afrintel_july_2025_opencti.json) |
+| August 2025 | [afrintel_august_2025_opencti.json](./2025/08-august/afrintel_august_2025_opencti.json) |
+| September 2025 | [afrintel_september_2025_opencti.json](./2025/09-september/afrintel_september_2025_opencti.json) |
+| October 2025 | [afrintel_october_2025_opencti.json](./2025/10-october/afrintel_october_2025_opencti.json) |
+| November 2025 | [afrintel_november_2025_opencti.json](./2025/11-november/afrintel_november_2025_opencti.json) |
+| December 2025 | [afrintel_december_2025_opencti.json](./2025/12-december/afrintel_december_2025_opencti.json) |
+
+### AFRINTEL 2026
+
+| Month | STIX Bundle |
+|------|------|
+| January 2026 | [afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
+| February 2026 | [afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
+
+---
+
+## Generation workflow
+
+For 2025 monthly datasets, STIX bundles can be generated automatically from AFRINTEL victim datasets using:
+
+```bash
+python3 scripts/afrintel_victims_to_stix.py --repo .
+```
+
+You can also target a specific year or month:
+
+```bash
+python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
+python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025 --month 01-january
+```
+
+---
+
+## Source attribution
+
+Each generated STIX object includes AFRINTEL as a source reference:
+
+```json
+{
+  "source_name": "AFRINTEL",
+  "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/<year>/<month>"
+}
+```
+
+---
+
+## Integration use cases
 
 These datasets can be imported into:
 
-- OpenCTI
-- MISP
-- Maltego
-- other STIX compatible CTI platforms
+- **OpenCTI**
+- **MISP**
+- **Maltego**
+- other **STIX-compatible CTI platforms**
+
+They can also support SOC workflows such as:
+
+- intelligence enrichment
+- actor-to-victim correlation
+- campaign tracking
+- case triage support
+
+---
+
+## Roadmap
+
+- automated STIX generation via GitHub Actions
+- MISP export support
+- IOC extraction enrichment
+- ATT&CK mapping enrichment
+- campaign clustering and timeline analysis
+
+---
+
+## License
+
+This dataset is part of the AFRINTEL project and is distributed under the MIT License.
+
+---
+
+**AFRINTEL - Operationalizing ransomware intelligence across Africa.**
