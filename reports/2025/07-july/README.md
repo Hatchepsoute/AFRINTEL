@@ -16,7 +16,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 - **Most affected countries:** Tunisia (5), Morocco (2), Nigeria (1), South Africa (1), Tanzania (1), Kenya (1), Egypt (1), Namibia (1).
 - **Notable exfiltrated data volumes:** Ransom demand of $2.27M for eehc.gov.eg (Egypt). Other volumes not specified.
 
-## 3. Key Statistics
+## 3. Key statistics
 
 ### 3.1 Breakdown by group/actor
 | Group/Actor | Number of Attacks |
@@ -56,11 +56,12 @@ pie title Attack distribution by actor (July 2025)
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by sector - July 2025"
-    x-axis ["Banking/Finance", "Public Admin", "Education/Training", "Telecoms", "Mining"]
-    y-axis "Number of Attacks" 0 --> 5
-    bar [4, 3, 3, 2, 1]
+pie title Breakdown by industry sector (July 2025)
+    "Banking / Finance" : 4
+    "Public Administration" : 3
+    "Education / Training" : 3
+    "Telecommunications" : 2
+    "Mining Industry" : 1
 ```
 ### 3.3 Breakdown by country
 | Country | Number of attacks |
@@ -76,15 +77,18 @@ xychart-beta
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country - July 2025"
-    x-axis ["🇹🇳 Tunisia", "🇲🇦 Morocco", "🇳🇬 Nigeria", "🇿🇦 South Africa", "🇹🇿 Tanzania", "🇰🇪 Kenya", "🇪🇬 Egypt", "🇳🇦 Namibia"]
-    y-axis "Number of Attacks" 0 --> 6
-    bar [5, 2, 1, 1, 1, 1, 1, 1]
+pie title Breakdown by country (July 2025)
+    "🇹🇳 Tunisia" : 5
+    "🇲🇦 Morocco" : 2
+    "🇳🇬 Nigeria" : 1
+    "🇿🇦 South Africa" : 1
+    "🇹🇿 Tanzania" : 1
+    "🇰🇪 Kenya" : 1
+    "🇪🇬 Egypt" : 1
+    "🇳🇦 Namibia" : 1
 ```
 
 ## 4. Detailed attacks by group/actor
-
 ### 4.1 Dark 07x Team (5 attacks)
 - **25/07/2025:** Ministry of Finance (Tunisia, government) – "Full Access" claim.
 - **25/07/2025:** Academy of Banks and Finance (Tunisia, training) – Admin interface compromise.
@@ -196,7 +200,7 @@ timeline
 - **All sectors:** train employees on phishing risks, implement multi-factor authentication and regular security audits.
 
 ## 9. Conclusion
-July 2025 was marked by a major campaign by the Dark 07x Team against Tunisia, with five attacks targeting the government and banking sector. The diversity of actors (traditional ransomware, hacktivists) and targets (banks, administrations, education, telecoms) shows a multifaceted threat. The $2.27M ransom demand in Egypt and sensitive data leaks in Nigeria and Tunisia underscore the urgency of strengthened regional cybersecurity cooperation.
+July 2025 was marked by a major campaign by the **Dark 07x Team** against Tunisia, with five attacks targeting the government and banking sector. The diversity of actors (traditional ransomware, hacktivists) and targets (banks, administrations, education, telecoms) shows a multifaceted threat. The $2.27M ransom demand in Egypt and sensitive data leaks in Nigeria and Tunisia underscore the urgency of strengthened regional cybersecurity cooperation.
 
 ## ✍🏿 Author
 *Adama ASSIONGBON*  

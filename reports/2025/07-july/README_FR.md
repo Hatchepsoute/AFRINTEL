@@ -56,11 +56,12 @@ pie title Répartition des attaques par acteur (juillet 2025)
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur - Juillet 2025"
-    x-axis ["Banque/Finance", "Admins publiques", "Éducation/Formation", "Télécoms", "Industrie minière"]
-    y-axis "Nombre d'attaques" 0 --> 5
-    bar [4, 3, 3, 2, 1]
+pie title Répartition par secteur d'activité (Juillet 2025)
+    "Banque / Finance" : 4
+    "Administrations publiques" : 3
+    "Éducation / Formation" : 3
+    "Télécommunications" : 2
+    "Industrie minière" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
@@ -76,11 +77,15 @@ xychart-beta
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays - Juillet 2025"
-    x-axis ["🇹🇳 Tunisie", "🇲🇦 Maroc", "🇳🇬 Nigeria", "🇿🇦 Afrique du Sud", "🇹🇿 Tanzanie", "🇰🇪 Kenya", "🇪🇬 Égypte", "🇳🇦 Namibie"]
-    y-axis "Nombre d'attaques" 0 --> 6
-    bar [5, 2, 1, 1, 1, 1, 1, 1]
+pie title Répartition par pays (Juillet 2025)
+    "🇹🇳 Tunisie" : 5
+    "🇲🇦 Maroc" : 2
+    "🇳🇬 Nigeria" : 1
+    "🇿🇦 Afrique du Sud" : 1
+    "🇹🇿 Tanzanie" : 1
+    "🇰🇪 Kenya" : 1
+    "🇪🇬 Égypte" : 1
+    "🇳🇦 Namibie" : 1
 ```
 
 ## 4. Détail des attaques par groupe/acteur
@@ -197,7 +202,7 @@ timeline
 - **Tous secteurs** : sensibiliser les employés aux risques de phishing, mettre en place l'authentification multi-facteurs et des audits de sécurité réguliers.
 
 ## 9. Conclusion
-Juillet 2025 a été marqué par une campagne majeure du groupe Dark 07x Team contre la Tunisie, avec cinq attaques visant le gouvernement et le secteur bancaire. La diversité des acteurs (ransomwares traditionnels, hacktivistes) et des cibles (banques, administrations, éducation, télécoms) montre une menace protéiforme. La demande de rançon de 2,27 M$ en Égypte et les fuites de données sensibles au Nigeria et en Tunisie soulignent l'urgence d'une coopération régionale renforcée en matière de cybersécurité.
+Juillet 2025 a été marqué par une campagne majeure du groupe **Dark 07x Team** contre la Tunisie, avec cinq attaques visant le gouvernement et le secteur bancaire. La diversité des acteurs (ransomwares traditionnels, hacktivistes) et des cibles (banques, administrations, éducation, télécoms) montre une menace protéiforme. La demande de rançon de 2,27 M$ en Égypte et les fuites de données sensibles au Nigeria et en Tunisie soulignent l'urgence d'une coopération régionale renforcée en matière de cybersécurité.
 
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  
