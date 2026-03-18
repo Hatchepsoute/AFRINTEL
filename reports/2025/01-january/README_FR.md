@@ -30,7 +30,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **16**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware (janv 2025)
+pie title Répartition des attaques par groupe ransomware-Janv 2025
     "funksec" : 5
     "GDLockerSec" : 3
     "babuk2" : 2
