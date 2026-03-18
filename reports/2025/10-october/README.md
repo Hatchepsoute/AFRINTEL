@@ -4,12 +4,9 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# CTI Report: Cyberattacks in Africa - October 2025 (18 victims)
+# CTI Report: Cyberattacks in Africa - October 2025 (17 victims)
 
 👉🏾 [**French version available here**](README_FR.md)
-
----
-
 ## 1. Introduction
 This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during October 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
@@ -18,13 +15,13 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 ## 2. Executive summary
 October 2025 shows a significant ransomware activity affecting African organizations, with multiple sectors targeted including finance, logistics, technology, education, and public administration.
 
-A total of 18 confirmed ransomware claims targeting organizations operating in 11 African countries were identified during this period.
+A total of 17 confirmed ransomware claims targeting organizations operating in 11 African countries were identified during this period.
 
-* **Total recorded attacks**: 18
-* **Most active threat actors**: `incransom` (4 attacks), `qilin` (3 attacks), `tengu` (2 attacks). 
-    * *Other active groups*: beast, lockbit5, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attack each).
-* **Most targeted sectors**: Logistics (3), Finance (3), Technologies (1), Public Administration (1).
-* **Most affected countries**: 🇿🇦 South Africa (5), 🇲🇦 Morocco (3), 🇪🇬 Egypt (2).
+* **Total recorded attacks**: 17
+* **Most active threat actors**: `incransom` (4 attacks), `qilin` (3 attacks), `tengu` (2 attacks).
+    * *Other active groups*: beast, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attack each).
+* **Most targeted sectors**: Logistics (3), Finance (3).
+* **Most affected countries**: 🇿🇦 South Africa (4), 🇲🇦 Morocco (3), 🇪🇬 Egypt (2).
 * **Notable data exfiltration volumes**: 
     * **Alios Finance Group** (Tanzania & Tunisia): 100 GB each.
     * **TMF Logistics** (Algeria): 39 GB.
@@ -40,7 +37,6 @@ A total of 18 confirmed ransomware claims targeting organizations operating in 1
 | **qilin** | 3 |
 | **tengu** | 2 |
 | **beast** | 1 |
-| **lockbit5** | 1 |
 | **brotherhood** | 1 |
 | **medusa** | 1 |
 | **obscura** | 1 |
@@ -48,7 +44,7 @@ A total of 18 confirmed ransomware claims targeting organizations operating in 1
 | **radar** | 1 |
 | **clop** | 1 |
 | **blackshrantac** | 1 |
-| **Total** | **18** |
+| **Total** | **17** |
 
 ```mermaid
 pie
@@ -58,7 +54,6 @@ title Ransomware groups activity
 "Tengu" : 2
 "Medusa" : 1
 "Beast" : 1
-"lockbit5" : 1
 "Brotherhood" : 1
 "TheGentlemen" : 1
 "Radar" : 1
@@ -71,11 +66,10 @@ title Ransomware groups activity
 | Sector | Number of Attacks |
 | :--- | :---: |
 | 🚚 Logistics | 3 |
-| 💰 Finance | 3 |
+| 💰 Finance | 2 |
 | 💻 Technology | 1 |
 | 🏗️ Construction | 1 |
 | ⛪ Religion | 1 |
-| 🏛️ Public Administration | 1 |
 | 🏠 Real Estate | 1 |
 | ✈️ Aviation | 1 |
 | ⛏️ Mining | 1 |
@@ -84,7 +78,7 @@ title Ransomware groups activity
 | 📦 Wholesale Trade | 1 |
 | 🧪 Pharmaceutical | 1 |
 | ⚖️ Legal | 1 |
-| **Total** | **18** |
+| **Total** | **17** |
 
 ```mermaid
 pie title Breakdown by industry sector (Oct 2025)
@@ -93,7 +87,6 @@ pie title Breakdown by industry sector (Oct 2025)
     "Technology" : 1
     "Construction" : 1
     "Religion" : 1
-    "Public Admin" : 1
     "Real Estate" : 1
     "Aviation" : 1
     "Mining" : 1
@@ -126,7 +119,7 @@ graph LR
     J[⚖️ Legal]
     end
 
-    L --- Total((Total: 18))
+    L --- Total((Total: 17))
     F --- Total
     T --- Total
     C --- Total
@@ -146,9 +139,9 @@ graph LR
     style F fill:#dfd
 ```
 ### 3.3 Breakdown by country
-| Country | Number of Attacks |
+| Country | Number of attacks |
 | :--- | :---: |
-| 🇿🇦 South Africa | 5 |
+| 🇿🇦 South Africa |4 |
 | 🇲🇦 Morocco | 3 |
 | 🇪🇬 Egypt | 2 |
 | 🇰🇪 Kenya | 1 |
@@ -159,12 +152,12 @@ graph LR
 | 🇹🇿 Tanzania | 1 |
 | 🇹🇳 Tunisia | 1 |
 | 🇩🇿 Algeria | 1 |
-| **Total** | **18** |
+| **Total** | **17** |
 
 ```mermaid
 pie
 title Ransomware incidents by country (October 2025)
-"🇿🇦 South Africa" : 5
+"🇿🇦 South Africa" : 4
 "🇲🇦 Morocco" : 3
 "🇪🇬 Egypt" : 2
 "🇲🇬 Madagascar" : 1
@@ -198,12 +191,13 @@ title Ransomware incidents by country (October 2025)
 
 ### 4.4 Other Groups (1 attack each)
 * **beast** (Oct 05): The Methodist Church of Southern Africa (South Africa, Religion).
-* **lockbit5** (Oct 07): elundini.gov.za (South Africa, Public Administration).
 * **brotherhood** (Oct 10): Momentum Logistics (South Africa, Logistics).
 * **medusa** (Oct 13): LA VOIE EXPRESS (Morocco, Logistics).
 * **obscura** (Oct 13): meamargroup.com (Egypt, Real Estate) – **3rd attack against this company**.
 * **thegentlemen** (Oct 17): Madagascar Airlines (Madagascar, Aviation).
 * **clop** (Oct 18): University of the Witwatersrand (South Africa, Education).
+* **radar** (Oct 18): TK HOLDINGS GROUP (DRC, Mining).
+* **blackshrantac** (Oct 20): Al Ahly Leasing & Factoring (Egypt, Finance).
 ### 4.5 Actor → Victim → Country Graph
 ```mermaid
 graph LR
@@ -217,7 +211,6 @@ graph LR
     tengu -->|STAR LÉGUMES| Morocco1["🇲🇦 Morocco"]
     tengu -->|LC2A| Morocco2["🇲🇦 Morocco"]
     beast -->|Methodist Church| SA2["🇿🇦 South Africa"]
-    lockbit5 -->|elundini.gov.za| SA3["🇿🇦 South Africa"]
     brotherhood -->|Momentum Logistics| SA4["🇿🇦 South Africa"]
     medusa -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Morocco"]
     obscura -->|meamargroup.com| Egypt1["🇪🇬 Egypt"]
@@ -225,13 +218,23 @@ graph LR
     radar -->|TK HOLDINGS| DRC["🇨🇩 DRC"]
     clop -->|Wits University| SA5["🇿🇦 South Africa"]
     blackshrantac -->|Al Ahly Leasing| Egypt2["🇪🇬 Egypt"]
+
+    %% Styles et Couleurs
+    style incransom fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
+    style qilin fill:#ffa500,stroke:#333,stroke-width:2px
+    style tengu fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
+    style thegentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
+    
+    %% Style des pays (Nodes de destination)
+    classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
+    class SA1,SA2,SA4,SA5,Tanzania,Tunisia,Algeria,Kenya,Gabon,Nigeria,Morocco1,Morocco2,Morocco3,Egypt1,Egypt2,Madagascar,DRC country
 ```
 ---
 
 ## 5. Strategic observations & TTPs
-* **Massive Data Exfiltration**: High focus on sensitive data theft (up to 100 GB) to maximize extortion pressure.
-* **Persistent Vulnerabilities**: The repeated targeting of *meamargroup.com* (3rd time) suggests unpatched entry points or poor remediation.
-* **Geographical Dispersion**: Balanced threat distribution between North Africa (7 attacks) and Sub-Saharan Africa (11 attacks).
+* **Massive data exfiltration**: High focus on sensitive data theft (up to 100 GB) to maximize extortion pressure.
+* **Persistent vulnerabilities**: The repeated targeting of *meamargroup.com* (2nd time) suggests unpatched entry points or poor remediation.
+* **Geographical dispersion**: Balanced threat distribution between North Africa (7 attacks) and Sub-Saharan Africa (10 attacks).
 
 ---
 
@@ -239,7 +242,9 @@ graph LR
 1.  **Logistics & Finance**: Implement data-at-rest encryption and monitor for anomalous outbound traffic (exfiltration).
 2.  **Public Sector**: Conduct regular security audits and enforce strict Multi-Factor Authentication (MFA).
 3.  **Education & Research**: Protect personal student data and research intellectual property through network segmentation.
-4.  **Incident Response**: Regularly test Business Continuity Plans (BCP) and Disaster Recovery Plans (DRP).
+4.  **General: Regularly test Incident Response plans:**
+    * **BCP (Business Continuity Plan)**: To ensure the maintenance of critical business operations during an active cyberattack.
+    * **DRP (Disaster Recovery Plan)**: To guarantee the rapid restoration of IT infrastructure and data following the incident.
 
 ---
 

@@ -898,14 +898,6 @@
 - **Status:** Claim & data leak
 - **Victim Description:** The Methodist Church of Southern Africa (MCSA) is one of the most influential Christian denominations in the region. It operates not only in South Africa but also in Botswana, Lesotho, Namibia, Eswatini, and Mozambique.
 
-### 07 December 2025
-#### 🇿🇦 South Africa - elundini.gov.za
-- **Ransomware Group:** lockbit5
-- **Sector:** Public Administration / Local Government
-- **Website:** elundini.gov.za
-- **Status:** Claim & data leak
-- **Victim Description:** Elundini Local Municipality is a key administrative authority located in the Joe Gqabi District (Eastern Cape), encompassing the towns of Maclear, Ugie, and Mount Fletcher.
-
 ### 10 October 2025
 #### 🇿🇦 South Africa - Momentum Logistics
 - **Ransomware Group:** brotherhood
@@ -923,7 +915,7 @@
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 
 ### 13 October 2025
-#### 🇪🇬 Egypt - meamargroup.com (third attack)
+#### 🇪🇬 Egypt - MeamarGroup (Second attack)
 - **Ransomware Group:** obscura
 - **Sector:** Maritime transport / Real Estate
 - **Website:** meamargroup.com
@@ -1158,6 +1150,14 @@
 - **Website:** www.incolease.com
 - **Status:** Claim & data leak
 - **Victim Description:** Egyptian leasing company.
+
+### 07 December 2025
+#### 🇿🇦 South Africa - elundini.gov.za
+- **Ransomware Group:** lockbit5
+- **Sector:** Public Administration / Local Government
+- **Website:** elundini.gov.za
+- **Status:** Claim & data leak
+- **Victim Description:** Elundini Local Municipality is a key administrative authority located in the Joe Gqabi District (Eastern Cape), encompassing the towns of Maclear, Ugie, and Mount Fletcher.
 
 ### 08 December 2025
 #### 🇪🇬 Egypt - Arkan

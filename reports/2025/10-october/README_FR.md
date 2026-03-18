@@ -4,27 +4,19 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Rapport CTI : Cyberattaques en Afrique - Octobre 2025 (18 victimes)
+# Rapport CTI : Cyberattaques en Afrique - Octobre 2025 (17 victimes)
 
 👉🏾 [**English version available here**](./README.md)
-
----
-
-## 1. Introduction
-Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois d'octobre 2025. Les informations sont issues de sources **OSINT** et de sites de fuites de groupes ransomware, compilées dans le cadre du projet **AFRINTEL**. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
-
----
-
 ## 2. Résumé exécutif
 Octobre 2025 affiche une activité significative de ransomwares affectant les organisations africaines, avec plusieurs secteurs ciblés, notamment la finance, la logistique, la technologie, l'éducation et l'administration publique.
 
-Un total de 18 revendications de ransomwares confirmées ciblant des organisations opérant dans 11 pays africains ont été identifiées au cours de cette période.
+Un total de 17 revendications de ransomwares confirmées ciblant des organisations opérant dans 11 pays africains ont été identifiées au cours de cette période.
 
-* **Nombre total d'attaques recensées** : 18
-* **Acteurs les plus actifs** : `incransom` (4 attaques), `qilin` (3 attaques), `tengu` (2 attaques). 
-    * *Autres groupes actifs* : beast, lockbit5, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attaque chacun).
-* **Secteurs les plus ciblés** : Logistique (3), Finance (3), Technologies (1), Administration publique (1).
-* **Pays les plus touchés** : 🇿🇦 Afrique du Sud (5), 🇲🇦 Maroc (3), 🇪🇬 Égypte (2).
+* **Nombre total d'attaques recensées** : 17
+* **Acteurs les plus actifs** : `incransom` (4 attaques), `qilin` (3 attaques), `tengu` (2 attaques).
+    * *Autres groupes actifs* : beast, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attaque chacun).
+* **Secteurs les plus ciblés** : Logistique (3), Finance (3).
+* **Pays les plus touchés** : 🇿🇦 Afrique du Sud (4), 🇲🇦 Maroc (3), 🇪🇬 Égypte (2).
 * **Volumes de données exfiltrés notables** : 
     * **Alios Finance Group** (Tanzanie & Tunisie) : 100 Go chacun.
     * **TMF Logistics** (Algérie) : 39 Go.
@@ -39,8 +31,8 @@ Un total de 18 revendications de ransomwares confirmées ciblant des organisatio
 | **incransom** | 4 |
 | **qilin** | 3 |
 | **tengu** | 2 |
-| Autres (beast, lockbit5, etc.) | 9 |
-| **Total** | **18** |
+| Autres (beast, brotherhood, etc.) | 8 |
+| **Total** | **17** |
 
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
@@ -50,7 +42,7 @@ Un total de 18 revendications de ransomwares confirmées ciblant des organisatio
 | Technologies | 1 |
 | Construction | 1 |
 | Religion | 1 |
-| Administration publique | 1 |
+| Administration publique | 0 |
 | Immobilier | 1 |
 | Aviation | 1 |
 | Mines | 1 |
@@ -59,7 +51,7 @@ Un total de 18 revendications de ransomwares confirmées ciblant des organisatio
 | Commerce de gros | 1 |
 | Pharmaceutique | 1 |
 | Juridique | 1 |
-| **Total** | **18** |
+| **Total** | **17** |
 
 ```mermaid
 graph LR
@@ -72,7 +64,6 @@ graph LR
     T[💻 Technologie]
     C[🏗️ Construction]
     R[⛪ Religion]
-    A[🏛️ Administration publique]
     RE[🏠 Immobilier]
     AV[✈️ Aviation]
     M[⛏️ Mines]
@@ -83,12 +74,11 @@ graph LR
     J[⚖️ Juridique]
     end
 
-    L --- Total((Total : 18))
+    L --- Total((Total : 17))
     F --- Total
     T --- Total
     C --- Total
     R --- Total
-    A --- Total
     RE --- Total
     AV --- Total
     M --- Total
@@ -105,7 +95,7 @@ graph LR
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 | :--- | :---: |
-| 🇿🇦 Afrique du Sud | 5 |
+| 🇿🇦 Afrique du Sud | 4 |
 | 🇲🇦 Maroc | 3 |
 | 🇪🇬 Égypte | 2 |
 | 🇰🇪 Kenya | 1 |
@@ -116,12 +106,12 @@ graph LR
 | 🇹🇿 Tanzanie | 1 |
 | 🇹🇳 Tunisie | 1 |
 | 🇩🇿 Algérie | 1 |
-| **Total** | **18** |
+| **Total** | **17** |
 
 ```mermaid
 pie
 title Incidents de ransomware par pays (Octobre 2025)
-"🇿🇦 Afrique du Sud" : 5
+"🇿🇦 Afrique du Sud" : 4
 "🇲🇦 Maroc" : 3
 "🇪🇬 Égypte" : 2
 "🇲🇬 Madagascar" : 1
@@ -157,7 +147,6 @@ title Incidents de ransomware par pays (Octobre 2025)
 
 ### 4.4 Autres groupes (1 attaque chacun)
 * **beast** (05/10) : The Methodist Church of Southern Africa (Afrique du Sud, religion).
-* **lockbit5** (07/10) : elundini.gov.za (Afrique du Sud, administration publique).
 * **brotherhood** (10/10) : Momentum Logistics (Afrique du Sud, logistique).
 * **medusa** (13/10) : LA VOIE EXPRESS (Maroc, logistique).
 * **obscura** (13/10) : meamargroup.com (Égypte, immobilier) – **3ème attaque contre cette entreprise**.
@@ -186,7 +175,6 @@ graph LR
 
     %% Autres acteurs
     beast(beast) -->|Église Méthodiste| SA2["🇿🇦 Afrique du Sud"]
-    lockbit5(lockbit5) -->|elundini.gov.za| SA3["🇿🇦 Afrique du Sud"]
     brotherhood(brotherhood) -->|Momentum Logistics| SA4["🇿🇦 Afrique du Sud"]
     medusa(medusa) -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Maroc"]
     obscura(obscura) -->|meamargroup.com| Egypt1["🇪🇬 Égypte"]
@@ -203,7 +191,7 @@ graph LR
     
     %% Style des pays (Nodes de destination)
     classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class SA1,SA2,SA3,SA4,SA5,Tanzania,Tunisia,Algeria,Kenya,Gabon,Nigeria,Morocco1,Morocco2,Morocco3,Egypt1,Egypt2,Madagascar,DRC country
+    class SA1,SA2,SA4,SA5,Tanzania,Tunisia,Algeria,Kenya,Gabon,Nigeria,Morocco1,Morocco2,Morocco3,Egypt1,Egypt2,Madagascar,DRC country
 ```
 ---
 
@@ -211,16 +199,16 @@ graph LR
 * **Logistique (3)** : Ciblé par brotherhood, medusa et incransom. Secteur hautement vulnérable.
 * **Finance (3)** : Grosses exfiltrations (Alios, Al Ahly).
 * **Technologies (1)** : Turnkey Africa (Fintech panafricaine).
-* **Immobilier (1)** : Cas particulier de Meamar Group, frappé pour la 3ème fois.
+* **Immobilier (1)** : Cas particulier de Meamar Group, frappé pour la 2ème fois.
 * **Autres** : Santé, Mines, Aviation, Éducation, tous touchés au moins une fois.
 
 ---
 
 ## 6. Analyse géographique
-* **Afrique du Sud** : Leader des victimes (5). Diversité sectorielle totale.
+* **Afrique du Sud** : Leader des victimes (4). Diversité sectorielle totale.
 * **Maroc** : Focus sur la logistique et le commerce (3).
 * **Égypte** : Focus immobilier et finance (2).
-* **Répartition** : Afrique du Nord (7 attaques) vs Afrique subsaharienne (11 attaques), montrant une menace globalisée sur tout le continent.
+* **Répartition** : Afrique du Nord (7 attaques) vs Afrique subsaharienne (10 attaques), montrant une menace globalisée sur tout le continent.
 
 ---
 
@@ -235,12 +223,14 @@ graph LR
 1.  **Secteurs Logistique & Finance** : Chiffrement des données au repos, segmentation réseau et surveillance des flux sortants (exfiltration).
 2.  **Secteur Public** : Audits de sécurité réguliers et durcissement des accès (IAM).
 3.  **Éducation & Recherche** : Protection des données personnelles et authentification multi-facteurs (MFA) obligatoire.
-4.  **Général** : Tester régulièrement les plans de réponse aux incidents (BCP/DRP).
+4.  **Général : Tester régulièrement les plans de réponse aux incidents :**
+    * **BCP (Business Continuity Plan)** / **PCA (Plan de Continuité d'Activité)** : Pour assurer le maintien des opérations critiques de l'entreprise pendant l'attaque.
+    * **DRP (Disaster Recovery Plan)** / **PRA (Plan de Reprise d'Activité)** : Pour garantir la restauration rapide des infrastructures informatiques et des données après l'incident.
 
 ---
 
 ## 9. Conclusion
-Octobre 2025 confirme que l'Afrique est une cible majeure pour le cyber-extorsion. La prédominance de `incransom` et la récurrence des attaques sur certaines cibles soulignent un besoin urgent de renforcement des capacités de défense et d'une meilleure hygiène informatique à l'échelle continentale.
+Octobre 2025 confirme que l'Afrique est une cible majeure pour le cyber-extorsion. La prédominance du groupe ransomware  INC Ransom (`incransom`) et la récurrence des attaques sur certaines cibles soulignent un besoin urgent de renforcement des capacités de défense et d'une meilleure hygiène informatique à l'échelle continentale.
 
 ---
 

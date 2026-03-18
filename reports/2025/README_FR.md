@@ -916,14 +916,6 @@
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** The Methodist Church of Southern Africa (MCSA) est l'une des dénominations chrétiennes les plus influentes de la région. Elle opère non seulement en Afrique du Sud, mais aussi au Botswana, au Lesotho, en Namibie, au Swaziland et au Mozambique.
 
-### 07 Décembre 2025
-#### 🇿🇦 Afrique du Sud - elundini.gov.za
-- **Groupe ransomware:** lockbit5
-- **Secteur:** Administration Publique / Gouvernement Local.
-- **Site web:** elundini.gov.za
-- **Statut:** Revendication & divulgation des données
-- **Description victime:** La Municipalité locale d'Elundini est une autorité administrative clé située dans le district de Joe Gqabi (Cap oriental), englobant les villes de Maclear, Ugie et Mount Fletcher.
-
 ### 10 Octobre 2025
 #### 🇿🇦 Afrique du Sud - Momentum Logistics
 - **Groupe ransomware:** brotherhood
@@ -941,7 +933,7 @@
 - **Description victime:** Société marocaine de logistique basée à Casablanca, offrant des services de messagerie, transport et entreposage.
 
 ### 13 Octobre 2025
-#### 🇪🇬 Égypte - meamargroup.com (troisième attaque)
+#### 🇪🇬 Égypte - MeamarGroup (Deuxième attaque)
 - **Groupe ransomware:** obscura
 - **Secteur:** Transport maritime / Immobilier
 - **Site web:** meamargroup.com
@@ -1088,7 +1080,6 @@
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** Groupe Marjane est le plus grand groupe marocain de grande distribution, exploitant des hypermarchés et supermarchés.
 
-
 ### 09 Novembre 2025
 #### 🇿🇦 Afrique du Sud - Eastern Cape Department of Human Settlements (ECDHS)
 - **Groupe ransomware:** nightspire
@@ -1180,6 +1171,14 @@
 - **Site web:** www.incolease.com
 - **Statut:** Revendication & divulgation des données
 - **Description victime:** Société de leasing égyptienne.
+
+### 07 Décembre 2025
+#### 🇿🇦 Afrique du Sud - elundini.gov.za
+- **Groupe ransomware:** lockbit5
+- **Secteur:** Administration Publique / Gouvernement Local.
+- **Site web:** elundini.gov.za
+- **Statut:** Revendication & divulgation des données
+- **Description victime:** La Municipalité locale d'Elundini est une autorité administrative clé située dans le district de Joe Gqabi (Cap oriental), englobant les villes de Maclear, Ugie et Mount Fletcher.
 
 ### 08 Décembre 2025
 #### 🇪🇬 Égypte - Arkan
