@@ -57,7 +57,7 @@ pie title Répartition par groupe / acteur
 | **Total** | **11** |
 
 ```mermaid
-pie title Répartition par secteur d'activité - Juin 2025
+pie title Répartition par secteur d'activité -Juin 2025
     "Gouvernement" : 3
     "Banque" : 2
     "Services aux entreprises" : 2
