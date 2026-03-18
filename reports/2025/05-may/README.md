@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 
 # CTI Report: Cyber Attacks in Africa - May 2025
-👉🏾 [**Version française disponible ici**](./README_FR.md)
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Introduction
 This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during May 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.

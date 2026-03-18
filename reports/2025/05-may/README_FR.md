@@ -29,7 +29,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **14**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware
+pie title Répartition des attaques par groupe
     "devman" : 6
     "killsec" : 1
     "nightspire" : 1
