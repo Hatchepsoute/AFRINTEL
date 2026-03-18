@@ -27,7 +27,15 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | spacebears        | 2                 |
 | apt73             | 1                 |
 | **Total**         | **16**            |
-
+```mermaid
+pie title Breakdown by ransomware group (januanry 2025)
+    "funksec" : 5
+    "GDLockerSec" : 3
+    "babuk2" : 2
+    "ransomhub" : 2
+    "spacebears" : 2
+    "apt73" : 1
+```
 ### 3.2 Breakdown by sector
 | Sector | Number of attacks |
 |---------|-------------------|
@@ -41,6 +49,18 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | Hospitality | 1 |
 | **Total** | **16** |
 
+```mermaid
+pie title Breakdown by industry sector
+    "Education" : 5
+    "Public Administrations" : 3
+    "Healthcare" : 2
+    "Business Services" : 2
+    "Retail" : 1
+    "Logistics" : 1
+    "Digital Marketing" : 1
+    "Hospitality" : 1
+```
+
 ### 3.3 Breakdown by Country
 | Country | Number of attacks |
 |------|-------------------|
@@ -53,7 +73,17 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | 🇺🇬 Uganda | 1 |
 | 🇿🇲 Zambia | 1 |
 | **Total** | **16** |
-
+```mermaid
+pie title Attacks by country (January 2025)
+    "🇪🇬 Egypt" : 4
+    "🇳🇬 Nigeria" : 3
+    "🇩🇿 Algeria" : 2
+    "🇲🇦 Morocco" : 2
+    "🇰🇪 Kenya" : 2
+    "🇿🇦 South Africa" : 1
+    "🇺🇬 Uganda" : 1
+    "🇿🇲 Zambia" : 1
+```
 ### 3.4 CTI map of Africa
 A visual representation of attacks per country.
 
@@ -67,18 +97,6 @@ A visual representation of attacks per country.
 - 🇿🇲 Zambia       	       █            1
 
 ## 4. Detailed attacks by ransomware group
-```mermaid
-pie title Attacks by country (January 2025)
-    "🇪🇬 Egypt" : 4
-    "🇳🇬 Nigeria" : 3
-    "🇩🇿 Algeria" : 2
-    "🇲🇦 Morocco" : 2
-    "🇰🇪 Kenya" : 2
-    "🇿🇦 South Africa" : 1
-    "🇺🇬 Uganda" : 1
-    "🇿🇲 Zambia" : 1
-```
-
 ### 4.1 FunkSec (5 attacks)
 - **09/01/2025:** gags.gov.eg (Egypt, administrations)
 - **11/01/2025:** seocommarrakech.com (Morocco, marketing)

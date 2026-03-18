@@ -52,11 +52,15 @@ pie title Répartition des attaques par groupe ransomware (janvier 2025)
 | **Total** | **16** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur"
-    x-axis ["Éducation", "Administrations", "Santé", "Services", "Commerce", "Logistique", "Marketing", "Hôtellerie"]
-    y-axis "Nombre d'attaques" 0 --> 6
-    bar [5, 3, 2, 2, 1, 1, 1, 1]
+pie title Répartition par secteur d'activité
+    "Éducation" : 5
+    "Administrations publiques" : 3
+    "Santé" : 2
+    "Services aux entreprises" : 2
+    "Commerce / Vente au détail" : 1
+    "Logistique" : 1
+    "Marketing numérique" : 1
+    "Hôtellerie / Restauration" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
@@ -71,17 +75,6 @@ xychart-beta
 |🇿🇲 Zambie | 1 |
 | **Total** | **16** |
 
-### 3.4 Carte CTI Afrique
-Une carte des attaques.
-- 🇪🇬 Egypte          	    ████   4
-- 🇳🇬 Nigeria             	     ███      3
-- 🇲🇦 Maroc      	             ██         2
-- 🇰🇪 Kenya              	     ██         2
-- 🇩🇿Algerie         	       ██         2
-- 🇿🇦 South Africa 	    █            1
-- 🇺🇬 Uganda   		       █            1
-- 🇿🇲 Zambie      	         █            1
-
 ```mermaid
 pie title Attaques par pays (Janvier 2025)
     "🇪🇬 Égypte" : 4
@@ -93,6 +86,16 @@ pie title Attaques par pays (Janvier 2025)
     "🇺🇬 Ouganda" : 1
     "🇿🇲 Zambie" : 1
 ```
+### 3.4 Carte CTI Afrique
+Une carte des attaques.
+- 🇪🇬 Egypte          	    ████   4
+- 🇳🇬 Nigeria             	     ███      3
+- 🇲🇦 Maroc      	             ██         2
+- 🇰🇪 Kenya              	     ██         2
+- 🇩🇿Algerie         	       ██         2
+- 🇿🇦 South Africa 	    █            1
+- 🇺🇬 Uganda   		       █            1
+- 🇿🇲 Zambie      	         █            1
 
 ## 4. Détail des attaques par groupe ransomware
 
