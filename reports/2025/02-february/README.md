@@ -9,7 +9,7 @@
 This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during February 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
 ## 2. Executive summary
-- **Total number of recorded attacks:** 8
+- **Total number of recorded attacks:** 08
 - **Most active ransomware groups:** ransomhub (2 attacks), killsec (2), fog (1), flocker (1), akira (1), hunter (1).
 - **Most targeted sectors:** Business Services (2), Insurance/Insurtech (2), Telecommunications (1), Logistics (1), Public Services (1), Government (1).
 - **Most affected countries:** Egypt (3), South Africa (1), Morocco (1), Zambia (1), Ghana (1), Namibia (1).

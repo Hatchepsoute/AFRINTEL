@@ -57,8 +57,19 @@ pie title Attack Distribution by Ransomware Group (April 2025)
 | Healthcare | 1 |
 | **Total** | **11** |
 
+```mermaid
+pie title Breakdown by industry sector
+    "Public Administration" : 4
+    "Agribusiness" : 2
+    "Finance / Logistics" : 1
+    "Telecommunications" : 1
+    "Business Services (BPO)" : 1
+    "Information Technology" : 1
+    "Healthcare" : 1
+```
+
 ### 3.3 Breakdown by country
-| Country | Number of Attacks |
+| Country | Number of attacks |
 |------|-------------------|
 |🇪🇬 Egypt | 4 |
 |🇲🇦 Morocco | 3 |
@@ -68,11 +79,12 @@ pie title Attack Distribution by Ransomware Group (April 2025)
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country - April 2025"
-    x-axis ["🇪🇬 Egypt", "🇲🇦  Morocco", "🇿🇦 South Africa", "🇩🇿 Algeria", "🇹🇳Tunisia"]
-    y-axis "Number of attacks" 0 --> 5
-    bar [4, 3, 2, 1, 1]
+pie title Breakdown by country (April 2025)
+    "🇪🇬 Egypt" : 4
+    "🇲🇦 Morocco" : 3
+    "🇿🇦 South Africa" : 2
+    "🇩🇿 Algeria" : 1
+    "🇹🇳 Tunisia" : 1
 ```
 ## 4. Detailed attacks by ransomware group
 

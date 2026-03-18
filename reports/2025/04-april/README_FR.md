@@ -57,11 +57,14 @@ pie title Répartition des attaques par groupe ransomware (avril 2025)
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur - Avril 2025"
-    x-axis ["Admins publiques", "Agroalimentaire", "Finance/Log.", "Télécoms", "Services BPO", "Technologies", "Santé"]
-    y-axis "Nombre d'attaques" 0 --> 5
-    bar [4, 2, 1, 1, 1, 1, 1]
+pie title Répartition par secteur d'activité
+    "Administrations publiques" : 4
+    "Agroalimentaire" : 2
+    "Finance / Logistique" : 1
+    "Télécommunications" : 1
+    "Services aux entreprises (BPO)" : 1
+    "Technologies (IT)" : 1
+    "Santé" : 1
 ```
 
 ### 3.3 Répartition par pays
@@ -75,11 +78,12 @@ xychart-beta
 | **Total** | **11** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays - Avril 2025"
-    x-axis ["🇪🇬 Égypte", "🇲🇦  Maroc", "🇿🇦 Afrique du Sud", "🇩🇿 Algérie", "🇹🇳 Tunisie"]
-    y-axis "Nombre d'attaques" 0 --> 5
-    bar [4, 3, 2, 1, 1]
+pie title Répartition par pays (Avril 2025)
+    "🇪🇬 Égypte" : 4
+    "🇲🇦 Maroc" : 3
+    "🇿🇦 Afrique du Sud" : 2
+    "🇩🇿 Algérie" : 1
+    "🇹🇳 Tunisie" : 1
 ```
 
 ## 4. Détail des attaques par groupe ransomware
