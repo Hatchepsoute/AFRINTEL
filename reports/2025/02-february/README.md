@@ -40,7 +40,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total** | **08** |
 
 ```mermaid
-pie title Breakdown by industry sector (January 2025)
+pie title Breakdown by industry sector (Feb 2025)
     "Business Services" : 2
     "Insurance" : 2
     "Telecoms" : 1

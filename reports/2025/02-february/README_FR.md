@@ -30,7 +30,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **08**             |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware (février 2025)
+pie title Répartition des attaques par groupe (Fev 2025)
     "ransomhub" : 2
     "killsec" : 2
     "fog" : 1
@@ -50,7 +50,7 @@ pie title Répartition des attaques par groupe ransomware (février 2025)
 | **Total** | **08** |
 
 ```mermaid
-pie title Répartition par secteur d'activité (Janvier 2025)
+pie title Répartition par secteur d'activité (Fév 2025)
     "Services aux entreprises" : 2
     "Assurances" : 2
     "Télécoms" : 1
@@ -92,7 +92,6 @@ pie title Répartition par pays
 - **23/02/2025** : Shaghalni (Égypte, recrutement)
 
 *Remarque* : killsec a frappé une startup technologique et une plateforme de recrutement, montrant un intérêt pour les secteurs innovants.
-
 ### 4.3 fog (1 attaque)
 - **03/02/2025** : Xlab Group (Égypte, services IT)
 

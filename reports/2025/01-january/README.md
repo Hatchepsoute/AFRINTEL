@@ -28,7 +28,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | apt73             | 1                 |
 | **Total**         | **16**            |
 ```mermaid
-pie title Breakdown by ransomware group-Jan 2025
+pie title Breakdown by ransomware groups
     "funksec" : 5
     "GDLockerSec" : 3
     "babuk2" : 2
