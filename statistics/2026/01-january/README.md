@@ -3,7 +3,7 @@
 ![Africa Scope](https://img.shields.io/badge/Africa%20Scope-Continental-green)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Ransomfeed%20%2F%20Leak%20Sites-lightgrey)
 ![Period](https://img.shields.io/badge/Period-2026--01-informational)
-# # AFRINTEL - Cyberattack statistics in Africa by actor and country (January 2026)
+#  AFRINTEL - Cyberattack statistics in Africa by actor and country (January 2026)
 
 👉🏾 [**French statistical intelligence report**](./README_FR.md)
 
@@ -182,7 +182,7 @@ Leak involving aviation‑related operational or database records.
 
 ---
 
-# 🛡 SOC & CTI recommendations
+##  🛡 SOC & CTI recommendations
 
 • Monitor dominant actors **thegentlemen** and **tengu**  
 • Harden public‑facing government portals (WAF, patching, CMS security)  
