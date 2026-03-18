@@ -120,7 +120,7 @@ pie title Breakdown by country (April 2025)
 
 ### 4.9 Unknown (1 attack)
 - **23/04/2025:** FRMF (Morocco, sports/administration)
-### 4.10 Threat Actor → Victim → Country Mapping
+### 4.10 Threat actor → victim → country mapping
 ```mermaid
 graph LR
     JabarootDZ["Jabaroot DZ"] -->|CNSS, Ministry of Industry| Morocco["🇲🇦 Morocco"]

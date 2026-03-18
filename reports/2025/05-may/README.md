@@ -29,6 +29,19 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | Unknown           | 1                 |
 | **Total**         | **14**            |
 
+```mermaid
+pie title Breakdown by ransomware group (May 2025)
+    "devman" : 6
+    "killsec" : 1
+    "nightspire" : 1
+    "incransom" : 1
+    "arkana" : 1
+    "everest" : 1
+    "datacarry" : 1
+    "worldleaks" : 1
+    "Inconnu" : 1
+```
+
 ### 3.2 Breakdown by sector
 | Sector | Number of Attacks |
 |---------|-------------------|
@@ -44,11 +57,16 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total** | **14** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by sector - May 2025"
-    x-axis ["Technology", "Healthcare", "Finance", "Business Services", "Industry", "Transport", "Government", "Mining", "Retail"]
-    y-axis "Number of attacks" 0 --> 5
-    bar [4, 2, 2, 1, 1, 1, 1, 1, 1]
+pie title Breakdown by industry sector (May 2025)
+    "Technology" : 4
+    "Healthcare" : 2
+    "Finance" : 2
+    "HR Services" : 1
+    "Manufacturing" : 1
+    "Transportation" : 1
+    "Government" : 1
+    "Mining" : 1
+    "Retail" : 1
 ```
 
 ### 3.3 Breakdown by country
@@ -63,11 +81,13 @@ xychart-beta
 | **Total** | **14** |
 
 ```mermaid
-xychart-beta
-    title "Attacks by country - May 2025"
-    x-axis ["🇿🇦 South Africa", "🇪🇬 Egypt", "🇰🇪 Kenya", "🇧🇼 Botswana", "🇨🇲 Cameroon", "🇹🇬 Togo"]
-    y-axis "Number of attacks" 0 --> 10
-    bar [9, 1, 1, 1, 1, 1]
+pie title Breakdown by country (May 2025)
+    "🇿🇦 South Africa" : 9
+    "🇪🇬 Egypt" : 1
+    "🇰🇪 Kenya" : 1
+    "🇧🇼 Botswana" : 1
+    "🇨🇲 Cameroon" : 1
+    "🇹🇬 Togo" : 1
 ```
 ## 4. Detailed Attacks by Ransomware Group
 

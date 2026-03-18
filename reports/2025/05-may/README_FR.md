@@ -56,11 +56,16 @@ pie title Répartition des attaques par groupe ransomware (mai 2025)
 | **Total** | **14** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur - Mai 2025"
-    x-axis ["Technologies", "Santé", "Finance", "Services RH", "Industrie", "Transport", "Gouvernement", "Mines", "Retail"]
-    y-axis "Nombre d'attaques" 0 --> 5
-    bar [4, 2, 2, 1, 1, 1, 1, 1, 1]
+pie title Répartition par secteur d'activité (Mai 2025)
+    "Technologies" : 4
+    "Santé" : 2
+    "Finance" : 2
+    "Services RH" : 1
+    "Industrie" : 1
+    "Transport" : 1
+    "Gouvernement" : 1
+    "Mines" : 1
+    "Retail" : 1
 ```
 
 ### 3.3 Répartition par pays
@@ -75,15 +80,16 @@ xychart-beta
 | **Total** | **14** |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays - Mai 2025"
-    x-axis ["🇿🇦 Afrique du Sud", "🇪🇬 Égypte", "🇰🇪 Kenya", "🇧🇼 Botswana", "🇨🇲 Cameroun", "🇹🇬 Togo"]
-    y-axis "Nombre d'attaques" 0 --> 10
-    bar [9, 1, 1, 1, 1, 1]
+pie title Répartition par pays (Mai 2025)
+    "🇿🇦 Afrique du Sud" : 9
+    "🇪🇬 Égypte" : 1
+    "🇰🇪 Kenya" : 1
+    "🇧🇼 Botswana" : 1
+    "🇨🇲 Cameroun" : 1
+    "🇹🇬 Togo" : 1
 ```
 
 ## 4. Détail des attaques par groupe ransomware
-
 ### 4.1 devman (6 attaques)
 - **01/05/2025** : iOCO (Afrique du Sud, technologies)
 - **01/05/2025** : DovesIT (Afrique du Sud, technologies)
