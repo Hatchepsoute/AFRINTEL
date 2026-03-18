@@ -30,7 +30,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**         | **14**            |
 
 ```mermaid
-pie title Breakdown by ransomware group-May 2025
+pie title Breakdown by ransomware group
     "devman" : 6
     "killsec" : 1
     "nightspire" : 1
@@ -57,7 +57,7 @@ pie title Breakdown by ransomware group-May 2025
 | **Total** | **14** |
 
 ```mermaid
-pie title Breakdown by industry sector (May 2025)
+pie title Breakdown by industry sector- May 2025
     "Technology" : 4
     "Healthcare" : 2
     "Finance" : 2

@@ -29,7 +29,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **14**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware (mai 2025)
+pie title Répartition des attaques par groupe ransomware
     "devman" : 6
     "killsec" : 1
     "nightspire" : 1
@@ -56,7 +56,7 @@ pie title Répartition des attaques par groupe ransomware (mai 2025)
 | **Total** | **14** |
 
 ```mermaid
-pie title Répartition par secteur d'activité (Mai 2025)
+pie title Répartition par secteur d'activité
     "Technologies" : 4
     "Santé" : 2
     "Finance" : 2
@@ -88,7 +88,6 @@ pie title Répartition par pays (Mai 2025)
     "🇨🇲 Cameroun" : 1
     "🇹🇬 Togo" : 1
 ```
-
 ## 4. Détail des attaques par groupe ransomware
 ### 4.1 devman (6 attaques)
 - **01/05/2025** : iOCO (Afrique du Sud, technologies)
