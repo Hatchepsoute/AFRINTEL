@@ -24,23 +24,9 @@ L’ensemble de données comprend **149 revendications publiques** affectant **1
 
 👉🏾 [**Liste des victimes** ](./victims_FR.md)
 ## 3. Répartition mensuelle
-| Mois      | Revendications |
-|-----------|----------------|
-| Janvier   | 16 |
-| Février   | 8  |
-| Mars      | 9  |
-| Avril     | 11 |
-| Mai       | 14 |
-| Juin      | 11 |
-| Juillet   | 13 |
-| Août      | 13 |
-| Septembre | 12 |
-| Octobre   | 17 |
-| Novembre  | 11 |
-| Décembre  | 14 |
-| **Total** | **149** |
-
-Le premier trimestre (janv.-mars) a totalisé 33 attaques, suivi de 36 au T2, 38 au T3 et un pic de 42 au T4.
+| Mois | Jan | Fév | Mar | Avr | Mai | Juin | Juil | Août | Sep | Oct | Nov | Déc | **Total** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Cyberattaques** | 16 | 8 | 9 | 11 | 14 | 11 | 13 | 13 | 12 | 17 | 11 | 14 | **149** |
 
 ```mermaid
 xychart-beta
@@ -50,6 +36,22 @@ xychart-beta
     bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
     line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
 ```
+### 3.1 Évolution trimestrielle
+| Trimestre | Mois | Attaques | Cumul |
+| :--- | :--- | :---: | :---: |
+| **T1** | Jan-Mar | 16 + 8 + 9 | **33** |
+| **T2** | Avr-Juin | 11 + 14 + 11 | **36** |
+| **T3** | Juil-Sep | 13 + 13 + 12 | **38** |
+| **T4** | Oct-Déc | 17 + 11 + 14 | **42** |
+
+```mermaid
+pie title Des attaques par trimestre - 2025
+    "T1 (Jan-Mar)" : 33
+    "T2 (Avr-Juin)" : 36
+    "T3 (Juil-Sep)" : 38
+    "T4 (Oct-Déc)" : 42
+```
+Le premier trimestre (janv.-mars) a totalisé 33 attaques, suivi de 36 au T2, 38 au T3 et un pic de 42 au T4.
 
 ## 4. Groupes ransomware les plus actifs
 | Rang | Groupe           | Revendications |

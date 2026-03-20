@@ -24,21 +24,9 @@ The dataset comprises **149 publicly claimed attacks** affecting **146 unique vi
 
 👉🏾 [**Victims list** ](./victims.md)
 ## 3. Monthly breakdown
-| Month     | Claims |
-|-----------|--------|
-| January   | 16 |
-| February  | 8  |
-| March     | 9  |
-| April     | 11 |
-| May       | 14 |
-| June      | 11 |
-| July      | 13 |
-| August    | 13 |
-| September | 12 |
-| October   | 17 |
-| November  | 11 |
-| December  | 14 |
-| **Total** | **149** |
+| Month | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec | **Total** |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Cyberattacks** | 16 | 8 | 9 | 11 | 14 | 11 | 13 | 13 | 12 | 17 | 11 | 14 | **149** |
 
 ```mermaid
 xychart-beta
@@ -48,7 +36,21 @@ xychart-beta
     bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
     line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
 ```
+### 3.1 Quarterly evolution
+| Quarter | Months | Attacks | Total |
+| :--- | :--- | :---: | :---: |
+| **Q1** | Jan-Mar | 16 + 8 + 9 | **33** |
+| **Q2** | Apr-Jun | 11 + 14 + 11 | **36** |
+| **Q3** | Jul-Sep | 13 + 13 + 12 | **38** |
+| **Q4** | Oct-Dec | 17 + 11 + 14 | **42** |
 
+```mermaid
+pie title Quarterly attack distribution - 2025
+    "Q1 (Jan-Mar)" : 33
+    "Q2 (Apr-Jun)" : 36
+    "Q3 (Jul-Sep)" : 38
+    "Q4 (Oct-Dec)" : 42
+```
 The first quarter (Jan-Mar) saw 33 attacks, followed by 36 in Q2, 38 in Q3 and a peak of 42 in Q4.
 
 ## 4. Most active ransomware groups
@@ -123,7 +125,7 @@ pie title Breakdown of attacks by sector - 2025
  
 The technology sector was hit hardest, followed closely by government bodies and financial institutions. Critical infrastructure (energy, transport, defence) also suffered several attacks.
 
-## 6. Most Targeted Countries
+## 6. Most targeted countries
 | Rank | Country            | Claims |
 |------|--------------------|--------|
 | 1    | 🇿🇦 South Africa   | 29     |
@@ -136,7 +138,7 @@ The technology sector was hit hardest, followed closely by government bodies and
 | 8    | 🇿🇲 Zambia         | 4      |
 | 9    | 🇹🇿 Tanzania       | 3      |
 | 9    | 🇳🇦 Namibia        | 3      |
-| 9    | 🇨🇮 Côte d'Ivoire  | 3      |
+| 9    | 🇨🇮 Ivory Coast  | 3      |
 | 12   | 🇬🇭 Ghana          | 2      |
 | 12   | 🇺🇬 Uganda         | 2      |
 | 12   | 🇧🇼 Botswana       | 2      |
@@ -152,7 +154,7 @@ The technology sector was hit hardest, followed closely by government bodies and
 
 
 ```mermaid
-pie title Breakdown of Attacks by Country - 2025
+pie title Breakdown of attacks by country - 2025
     "🇿🇦 South Africa (29)" : 29
     "🇪🇬 Egypt (29)" : 29
     "🇲🇦 Morocco (21)" : 21
@@ -180,7 +182,7 @@ pie title Répartition des attaques par pays - 2025
     "🇿🇲 Zambia (4)" : 4
     "🇹🇿 Tanzania (3)" : 3
     "🇳🇦 Namibia (3)" : 3
-    "🇨🇮 Côte d'Ivoire (3)" : 3
+    "🇨🇮 Ivory Coast (3)" : 3
     "Other (20)" : 20
 ```
 
