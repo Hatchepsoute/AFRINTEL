@@ -8,7 +8,7 @@
 
 👉🏾 [**French version available here**](./README_FR.md)
 
-## 📊 1. Global Statistics
+## 📊 1. Global statistics
 The **AFRINTEL** project recorded intense cybercriminal activity across the African continent during 2025, characterized by a diversification of targets and unprecedented volumes of exfiltrated data.
 
 | Indicator | Value |
@@ -76,7 +76,7 @@ pie title Quarterly attack distribution - 2025
 ```
 ---
 
-## 🦠 3. Top 15 Ransomware Groups (2025)
+## 🦠 3. Top 15 ransomware groups (2025)
 
 The African threat landscape is characterized by the presence of major international RaaS (Ransomware-as-a-Service) players alongside emerging specialized groups.
 
@@ -102,7 +102,7 @@ The African threat landscape is characterized by the presence of major internati
 | - | *Other 30+ groups* | 61 |
 | **Total** | | **149** |
 
-### 📊 3.1 Market share - Top 10 groups
+### 📊 3.1 Market share - top 10 groups
 
 ```mermaid
 pie title Top 10 ransomware groups (by claims)
@@ -121,7 +121,7 @@ pie title Top 10 ransomware groups (by claims)
 
 ---
 
-## 🌍 4. Most Targeted Countries (Top 10 and others)
+## 🌍 4. Most targeted countries (Top 10 and others)
 
 The 2025 landscape shows a high concentration of ransomware activity in a few key economic hubs. The top 3 countries (South Africa, Egypt, and Morocco) account for over **53%** of the total claims on the continent.
 
@@ -171,7 +171,7 @@ xychart-beta
     bar [29,29,21,12,12,8,7,4,3,3,3]
 ```
 
-### 📍4.3 Other Affected Countries (1‑2 claims)
+### 📍4.3 Other affected countries (1‑2 claims)
 
 While the top hubs concentrate the majority of attacks, a wide range of other nations are increasingly appearing on ransomware leak sites, totaling **18 additional claims**.
 

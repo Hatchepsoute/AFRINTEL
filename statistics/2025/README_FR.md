@@ -4,11 +4,11 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# AFRINTEL - Statistiques Annuelles 2025 (149 victimes)
+# AFRINTEL - Statistiques annuelles 2025 (149 victimes)
 
 👉🏾 [**English version available here**](./README.md)
 
-## 📊 1. Statistiques Globales
+## 📊 1. Statistiques globales
 Le projet **AFRINTEL** a recensé une activité cybercriminelle intense sur le continent africain durant l'année 2025, caractérisée par une diversification des cibles et des volumes de données exfiltrés sans précédent.
 
 | Indicateur | Valeur |
@@ -41,7 +41,7 @@ xychart-beta
 ```
 ```mermaid
 quadrantChart
-    title Criticité Mensuelle - 2025
+    title Criticité mensuelle - 2025
     x-axis Faible Volume --> Volume Élevé
     y-axis Faible Impact --> Impact Élevé
     quadrant-1 Zone Critique
@@ -122,7 +122,7 @@ pie title Top 10 ransomware groups (by claims)
 ```
 ---
 
-## 🌍 4. Analyse Géographique & Régionale
+## 🌍 4. Analyse géographique & régionale
 
 ### 🌍 4.1 Pays les plus touchés (Top 10 et autres)
 
