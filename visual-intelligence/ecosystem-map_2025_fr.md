@@ -1,4 +1,5 @@
-# AFRINTEL 2025 — Carte de l’écosystème CTI
+# AFRINTEL 2025 - Carte de l’écosystème CTI
+👉🏾 [**English version available here**](./ecosystem-map_2025.md)
 
 Cette visualisation propose une **vue stratégique lisible** du dataset AFRINTEL 2025 en se concentrant sur :
 - les **acteurs les plus actifs**

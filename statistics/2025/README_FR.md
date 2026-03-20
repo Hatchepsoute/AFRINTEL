@@ -279,11 +279,11 @@ pie title Top 10 des secteurs les plus ciblés - 2025
 #### 📊 6.1.1 Comparaison des volumes de données
 ```mermaid
 pie title Répartition des fuites majeures (Volume)
-    "NSSF Kenya (2.5 To)" : 2500
-    "INTELS Nigeria (1.5 To)" : 1500
-    "DGID Senegal (1 To)" : 1000
-    "SPEED Co (444 Go)" : 444
-    "INI Investments (400 Go)" : 400
+    "🇰🇪 NSSF Kenya (2.5 To)" : 2500
+    "🇳🇬 INTELS Nigeria (1.5 To)" : 1500
+    "🇸🇳 DGID Senegal (1 To)" : 1000
+    "🇪🇬 SPEED Co (444 Go)" : 444
+    "🇪🇬 INI Investments (400 Go)" : 400
 ```
 ### 6.2 Phénomène de double revendication
 | Victime | Pays | 1er groupe | 2ème groupe |

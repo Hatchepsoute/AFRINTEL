@@ -226,7 +226,7 @@ pie title Attacks by region
 
 ## 🏢 5. Sectoral analysis
 
-### 5.1 Top 15 Most Targeted Sectors
+### 5.1 Top 15 most targeted sectors
 | Rank | Industry Sector | Number of Attacks |
 | :--- | :--- | :---: |
 | 1 | 💻 **Technologies** | 22 |
@@ -246,7 +246,7 @@ pie title Attacks by region
 | 13 | **Business Services** | 3 |
 
 ```mermaid
-pie title Top 10 Most targeted sectors - 2025
+pie title Top 10 most targeted sectors - 2025
     "Technology (22)" : 22
     "Public Administration (21)" : 21
     "Finance (18)" : 18
@@ -275,11 +275,11 @@ pie title Top 10 Most targeted sectors - 2025
 #### 📊 6.1.1 Data volume comparison
 ```mermaid
 pie title Breakdown of major data leaks (Volume)
-    "NSSF Kenya (2.5 TB)" : 2500
-    "INTELS Nigeria (1.5 TB)" : 1500
-    "DGID Senegal (1 TB)" : 1000
-    "SPEED Co (444 GB)" : 444
-    "INI Investments (400 GB)" : 400
+    "🇰🇪 NSSF Kenya (2.5 TB)" : 2500
+    "🇳🇬 INTELS Nigeria (1.5 TB)" : 1500
+    "🇸🇳 DGID Senegal (1 TB)" : 1000
+    "🇪🇬 SPEED Co (444 GB)" : 444
+    "🇪🇬 INI Investments (400 GB)" : 400
 ```
 ### 6.2 Double claim phenomenon (same victim, two different groups)
 | Victim | Country | 1st Group | 2nd Group |

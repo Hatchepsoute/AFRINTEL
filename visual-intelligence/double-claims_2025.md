@@ -1,4 +1,4 @@
-# AFRINTEL 2025 — Double Claims Map
+# AFRINTEL 2025 - double claims map
 
 This graph focuses on the **double-claim phenomenon**, where the same victim appears under two distinct threat actors / ransomware groups during 2025.
 

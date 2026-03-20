@@ -1,4 +1,5 @@
-# AFRINTEL 2025 — CTI Ecosystem Map
+# AFRINTEL 2025 - CTI ecosystem map
+👉🏾 [**French version available here**](./ecosystem-map_2025_fr.md)
 
 This visualization provides a **readable strategic map** of the 2025 AFRINTEL dataset by focusing on:
 - the **most active threat actors**
