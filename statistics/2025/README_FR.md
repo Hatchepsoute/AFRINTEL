@@ -31,6 +31,7 @@ L'activité a connu une croissance quasi constante, culminant au dernier trimest
 | Mois | Jan | Fév | Mar | Avr | Mai | Juin | Juil | Août | Sep | Oct | Nov | Déc | **Total** |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Cyberattaques** | 16 | 8 | 9 | 11 | 14 | 11 | 13 | 13 | 12 | 17 | 11 | 14 | **149** |
+
 ```mermaid
 xychart-beta
     title "Cyberattaques mensuelles - 2025"
@@ -72,7 +73,7 @@ quadrantChart
 | **T4** | Oct-Déc | 17 + 11 + 14 | **42** |
 
 ```mermaid
-pie title Répartition des attaques par trimestre - 2025
+pie title Des attaques par trimestre - 2025
     "T1 (Jan-Mar)" : 33
     "T2 (Avr-Juin)" : 36
     "T3 (Juil-Sep)" : 38
@@ -220,7 +221,7 @@ L'analyse par grandes zones géographiques révèle une concentration majeure de
 
 #### 📊 Répartition de la menace par région
 ```mermaid
-pie title Répartition Régionale des Ransomwares - 2025
+pie title Répartition Régionale des Ransomwares
     "Afrique du Nord (69)" : 69
     "Afrique Australe (43)" : 43
     "Afrique de l'Ouest (21)" : 21
