@@ -41,29 +41,6 @@ xychart-beta
     line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
 ```
 
-```mermaid
-quadrantChart
-    title Criticité mensuelle - 2025
-    x-axis Faible Volume --> Volume Élevé
-    y-axis Faible Impact --> Impact Élevé
-    quadrant-1 Zone Critique
-    quadrant-2 Alerte Élevée
-    quadrant-3 Surveillance
-    quadrant-4 Maintenance
-    "Jan": [0.8, 0.85]
-    "Fév": [0.2, 0.3]
-    "Mar": [0.3, 0.4]
-    "Avr": [0.5, 0.5]
-    "Mai": [0.7, 0.75]
-    "Juin": [0.5, 0.55]
-    "Juil": [0.65, 0.65]
-    "Août": [0.65, 0.7]
-    "Sep": [0.6, 0.6]
-    "Oct": [0.95, 0.95]
-    "Nov": [0.55, 0.5]
-    "Déc": [0.65, 0.7]
-```
-
 ### 2.2 Évolution trimestrielle
 | Trimestre | Mois | Attaques | Cumul |
 | :--- | :--- | :---: | :---: |
