@@ -5,7 +5,7 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
 # AFRINTEL - Annual Report 2025: Cyber Attacks in Africa
-👉🏾 [**Version française disponible ici**](./README_FR.md)
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Introduction
 This report provides a comprehensive overview of ransomware and data‑leak attacks targeting African organisations during 2025. All incidents were collected from OSINT sources, ransomware leak sites, and underground forums as part of the AFRINTEL open‑source CTI initiative.
