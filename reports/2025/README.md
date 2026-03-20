@@ -107,11 +107,18 @@ pie title Most active ransomware groups
 | *Other sectors*            | 23     |
 
 ```mermaid
-xychart-beta
-    title "Attacks by sector"
-    x-axis ["Technology", "Public Admin", "Finance", "Education", "Healthcare", "Logistics", "Retail", "Agribusiness", "Telecom", "Manufacturing"]
-    y-axis "Number of attacks" 0 --> 25
-    bar [22, 21, 18, 16, 12, 10, 8, 7, 6, 6]
+pie title Breakdown of attacks by sector - 2025
+    "Technology (22)" : 22
+    "Public Administration (21)" : 21
+    "Finance (18)" : 18
+    "Education (16)" : 16
+    "Healthcare (12)" : 12
+    "Logistics (10)" : 10
+    "Retail (8)" : 8
+    "Agribusiness (7)" : 7
+    "Telecommunications (6)" : 6
+    "Manufacturing (6)" : 6
+    "Others (23)" : 23
 ```
  
 The technology sector was hit hardest, followed closely by government bodies and financial institutions. Critical infrastructure (energy, transport, defence) also suffered several attacks.
@@ -145,11 +152,19 @@ The technology sector was hit hardest, followed closely by government bodies and
 
 
 ```mermaid
-xychart-beta
-    title "Attacks by country"
-    x-axis ["🇿🇦South Africa", "🇪🇬Egypt", "🇲🇦Morocco", "🇳🇬Nigeria", "🇹🇳Tunisia", "🇰🇪Kenya", "🇩🇿Algeria", "🇿🇲Zambia", "🇹🇿Tanzania", "🇳🇦Namibia", "🇨🇮Côte d'Ivoire"]
-    y-axis "Number of attacks" 0 --> 35
-    bar [29, 29, 21, 11, 11, 8, 7, 4, 3, 3, 3]
+pie title Breakdown of Attacks by Country - 2025
+    "🇿🇦 South Africa (29)" : 29
+    "🇪🇬 Egypt (29)" : 29
+    "🇲🇦 Morocco (21)" : 21
+    "🇳🇬 Nigeria (11)" : 11
+    "🇹🇳 Tunisia (11)" : 11
+    "🇰🇪 Kenya (8)" : 8
+    "🇩🇿 Algeria (7)" : 7
+    "🇿🇲 Zambia (4)" : 4
+    "🇹🇿 Tanzania (3)" : 3
+    "🇳🇦  Namibia (3)" : 3
+    "🇨🇮 Ivory Coast (3)" : 3
+    "Others (20)" : 20
 ```
 
 South Africa and Egypt were equally the most heavily targeted nations, accounting for nearly 40 % of all attacks. North Africa (Egypt, Morocco, Algeria, Tunisia) together represented 69 attacks (46 %), while Southern Africa (South Africa, Zambia, Namibia, Botswana, Zimbabwe, Mauritius, Madagascar) contributed 43 attacks (29 %).

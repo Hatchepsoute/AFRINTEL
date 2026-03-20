@@ -107,11 +107,18 @@ pie title Groupes ransomware les plus actifs
 | *Autres secteurs*           | 23     |
 
 ```mermaid
-xychart-beta
-    title "Attaques par secteur"
-    x-axis ["Technologies", "Admins publiques", "Finance", "Éducation", "Santé", "Logistique", "Commerce", "Agroalimentaire", "Télécoms", "Industrie"]
-    y-axis "Nombre d'attaques" 0 --> 25
-    bar [22, 21, 18, 16, 12, 10, 8, 7, 6, 6]
+pie title Répartition des attaques par secteur - 2025
+    "Technologies (22)" : 22
+    "Administrations publiques (21)" : 21
+    "Finance (18)" : 18
+    "Éducation (16)" : 16
+    "Santé (12)" : 12
+    "Logistique (10)" : 10
+    "Commerce (8)" : 8
+    "Agroalimentaire (7)" : 7
+    "Télécoms (6)" : 6
+    "Industrie (6)" : 6
+    "Autres (23)" : 23
 ```
 
 Le secteur des technologies a été le plus durement touché, suivi de près par les administrations publiques et les institutions financières. Les infrastructures critiques (énergie, transport, défense) ont également subi plusieurs attaques.
@@ -144,11 +151,19 @@ Le secteur des technologies a été le plus durement touché, suivi de près par
 | 18   | 🇷🇼 Rwanda              | 1      |
 
 ```mermaid
-xychart-beta
-    title "Attaques par pays"
-    x-axis ["🇿🇦Afrique du Sud", "🇪🇬Égypte", "🇲🇦Maroc", "🇳🇬 Nigeria", "🇹🇳 Tunisie", "🇰🇪 Kenya", "🇩🇿 Algérie", "🇿🇲 Zambie", "🇹🇿 Tanzanie", "🇳🇦 Namibie", "🇨🇮 Côte d'Ivoire"]
-    y-axis "Nombre d'attaques" 0 --> 35
-    bar [29, 29, 21, 11, 11, 8, 7, 4, 3, 3, 3]
+pie title Répartition des attaques par pays - 2025
+    "🇿🇦 Afrique du Sud (29)" : 29
+    "🇪🇬 Égypte (29)" : 29
+    "🇲🇦 Maroc (21)" : 21
+    "🇳🇬 Nigeria (11)" : 11
+    "🇹🇳 Tunisie (11)" : 11
+    "🇰🇪 Kenya (8)" : 8
+    "🇩🇿 Algérie (7)" : 7
+    "🇿🇲 Zambie (4)" : 4
+    "🇹🇿 Tanzanie (3)" : 3
+    "🇳🇦 Namibie (3)" : 3
+    "🇨🇮 Côte d'Ivoire (3)" : 3
+    "🌍 Autres (20)" : 20
 ```
 L’Afrique du Sud et l’Égypte sont les pays les plus ciblés, représentant près de 40 % de toutes les attaques. L’Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) totalise 69 attaques (46 %), tandis que l’Afrique australe (Afrique du Sud, Zambie, Namibie, Botswana, Zimbabwe, Maurice, Madagascar) en compte 43 (29 %).
 
