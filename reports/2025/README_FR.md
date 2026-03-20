@@ -10,7 +10,7 @@
 ## 1. Introduction
 Ce rapport offre une vue d’ensemble des attaques de ransomware et des fuites de données ayant ciblé des organisations africaines au cours de l’année 2025. Tous les incidents ont été collectés à partir de sources OSINT, de sites de fuite de groupes ransomware et de forums clandestins, dans le cadre de l’initiative open source AFRINTEL.
 
-Le jeu de données comprend **149 revendications publiques** affectant **146 victimes uniques** - trois organisations ont été frappées deux fois par des groupes ransomware différents. L’analyse porte sur les tendances mensuelles, les acteurs de la menace, les secteurs touchés, la répartition géographique et les principales tactiques, techniques et procédures (TTP).
+L’ensemble de données comprend **149 revendications publiques** affectant **146 victimes uniques** dont trois organisations ont été frappées à deux reprises par des groupes ransomware différents. L’analyse porte sur les tendances mensuelles, les acteurs de la menace, les secteurs touchés, la répartition géographique et les principales tactiques, techniques et procédures (TTP).
 
 ## 2. Résumé exécutif
 - **Total des revendications :** 149 (146 victimes uniques, 3 doubles revendications)
