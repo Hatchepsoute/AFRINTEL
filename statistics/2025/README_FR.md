@@ -62,6 +62,7 @@ quadrantChart
     "Nov": [0.55, 0.5]
     "Déc": [0.65, 0.7]
 ```
+
 ### 2.2 Évolution trimestrielle
 | Trimestre | Mois | Attaques | Cumul |
 | :--- | :--- | :---: | :---: |
