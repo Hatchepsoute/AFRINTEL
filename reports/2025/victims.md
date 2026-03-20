@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # Cyber attacks in Africa (2025): list of 149 victims, including 3 double claims by distinct groups
-👉🏾 [**French version available here** ](./README_FR.md)
+👉🏾 [**French version available here** ](./victims_FR.md)
 ## January 2025
 
 ### 06 January 2025
