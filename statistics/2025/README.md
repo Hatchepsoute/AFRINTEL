@@ -37,6 +37,7 @@ xychart-beta
     bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
     line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
 ```
+
 ```mermaid
 quadrantChart
     title Monthly Criticality - 2025
@@ -59,6 +60,7 @@ quadrantChart
     "Nov": [0.55, 0.5]
     "Dec": [0.65, 0.7]
 ```
+
 ### 2.2 Quarterly evolution
 | Quarter | Months | Attacks | Total |
 | :--- | :--- | :---: | :---: |

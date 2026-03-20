@@ -39,6 +39,7 @@ xychart-beta
     bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
     line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
 ```
+
 ```mermaid
 quadrantChart
     title Criticité mensuelle - 2025
