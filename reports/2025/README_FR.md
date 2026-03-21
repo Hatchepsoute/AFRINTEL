@@ -169,22 +169,6 @@ pie title Répartition des attaques par pays - 2025
 ```
 L’Afrique du Sud et l’Égypte sont les pays les plus ciblés, représentant près de 40 % de toutes les attaques. L’Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) totalise 69 attaques (46 %), tandis que l’Afrique australe (Afrique du Sud, Zambie, Namibie, Botswana, Zimbabwe, Maurice, Madagascar) en compte 43 (29 %).
 
-```mermaid
-pie title Répartition des attaques par pays - 2025
-    "🇿🇦 Afrique du Sud (29)" : 29
-    "🇪🇬Égypte (29)" : 29
-    "🇲🇦 Maroc (21)" : 21
-    "🇳🇬 Nigeria (11)" : 11
-    "🇹🇳 Tunisie (11)" : 11
-    "🇰🇪 Kenya (8)" : 8
-    "🇩🇿 Algerie (7)" : 7
-    "🇿🇲 Zambie (4)" : 4
-    "🇹🇿 Tanzanie (3)" : 3
-    "🇳🇦 Namibie (3)" : 3
-    "🇨🇮 Côte d'Ivoire (3)" : 3
-    "Other (20)" : 20
-```
-
 ## 7. Incidents notables
 | Victime                    | Pays          | Groupe       | Volume de données | Rançon |
 |----------------------------|---------------|--------------|-------------------|--------|

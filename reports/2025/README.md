@@ -170,21 +170,6 @@ pie title Breakdown of attacks by country - 2025
 ```
 
 South Africa and Egypt were equally the most heavily targeted nations, accounting for nearly 40 % of all attacks. North Africa (Egypt, Morocco, Algeria, Tunisia) together represented 69 attacks (46 %), while Southern Africa (South Africa, Zambia, Namibia, Botswana, Zimbabwe, Mauritius, Madagascar) contributed 43 attacks (29 %).
-```mermaid
-pie title Répartition des attaques par pays - 2025
-    "🇿🇦 South Africa (29)" : 29
-    "🇪🇬 Egypt (29)" : 29
-    "🇲🇦 Morocco (21)" : 21
-    "🇳🇬 Nigeria (11)" : 11
-    "🇹🇳 Tunisia (11)" : 11
-    "🇰🇪 Kenya (8)" : 8
-    "🇩🇿 Algeria (7)" : 7
-    "🇿🇲 Zambia (4)" : 4
-    "🇹🇿 Tanzania (3)" : 3
-    "🇳🇦 Namibia (3)" : 3
-    "🇨🇮 Ivory Coast (3)" : 3
-    "Other (20)" : 20
-```
 
 ## 7. Notable incidents
 | Victim | Country | Group | Data volume | Ransom |
