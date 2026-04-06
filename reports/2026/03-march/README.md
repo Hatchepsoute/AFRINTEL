@@ -54,10 +54,10 @@ pie
 ```mermaid
 pie
     title Most targeted countries
-    "🇿🇦 South Africa" : 10
-    "🇲🇦 Morocco" : 8
-    "🇪🇬 Egypt" : 7
-    "Others" : 10
+    "🇿🇦 South Africa (10)" : 10
+    "🇲🇦 Morocco (8)" : 8
+    "🇪🇬 Egypt (7)" : 7
+    "Others (10)" : 10
 ```
 
 **Breakdown by country:**
@@ -102,33 +102,14 @@ pie
 | 🇨🇩 DRC                | 0          | 1           |
 
 ```mermaid
-bar
-    title Ransomware by country
-    "🇿🇦 South Africa" : 10
-    "🇲🇦 Morocco" : 5
-    "🇪🇬 Egypt" : 3
-    "🇳🇬 Nigeria" : 0
-    "🇿🇲 Zambia" : 0
-    "🇲🇬 Madagascar" : 1
-    "🇹🇳 Tunisia" : 1
-    "🇳🇦 Namibia" : 1
-    "🇹🇿 Tanzania" : 1
-    "🇨🇩 DRC" : 0
+xychart-beta
+    title "Ransomware vs Data Breaches by country"
+    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
+    y-axis "Number of incidents" 0 to 12
+    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
-```mermaid
-bar
-    title Data Breaches by country
-    "🇿🇦 South Africa" : 2
-    "🇲🇦 Morocco" : 3
-    "🇪🇬 Egypt" : 5
-    "🇳🇬 Nigeria" : 2
-    "🇿🇲 Zambia" : 1
-    "🇲🇬 Madagascar" : 0
-    "🇹🇳 Tunisia" : 0
-    "🇳🇦 Namibia" : 0
-    "🇹🇿 Tanzania" : 0
-    "🇨🇩 DRC" : 1
-```
+
 
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
@@ -162,33 +143,6 @@ xychart-beta
     bar [5, 4, 3, 2, 2, 2, 2]
 ```
 
-**Daily timeline (March 2026):**
-- 01/03: 3 incidents
-- 02/03: 3
-- 03/03: 3
-- 04/03: 1
-- 05/03: 1
-- 06/03: 2
-- 09/03: 1
-- 12/03: 1
-- 13/03: 2
-- 14/03: 1
-- 19/03: 1
-- 20/03: 2
-- 21/03: 1
-- 22/03: 1
-- 26/03: 4
-- 29/03: 2
-- 30/03: 3
-- 31/03: 3
-
-```mermaid
-xychart-beta
-    title "Daily incident timeline - March 2026"
-    x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
-    y-axis "Incidents" 0 to 5
-    line [3, 3, 3, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 4, 2, 3, 3]
-```
 ## 4. Detailed analysis by incident type
 
 ### 4.1 Ransomware (21 incidents)

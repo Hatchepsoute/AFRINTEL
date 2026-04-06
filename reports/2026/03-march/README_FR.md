@@ -51,10 +51,10 @@ pie
 ```mermaid
 pie
     title Pays les plus ciblés
-    "🇿🇦 Afrique du Sud" : 10
-    "🇲🇦 Maroc" : 8
-    "🇪🇬 Égypte" : 7
-    "Autres" : 10
+    "🇿🇦 Afrique du Sud (10)" : 10
+    "🇲🇦 Maroc (8)" : 8
+    "🇪🇬 Égypte (7)" : 7
+    "Autres (10)" : 10
 ```
 
 **Répartition par pays :**
@@ -97,35 +97,17 @@ pie
 | 🇳🇦 Namibie            | 1          | 0                 |
 | 🇹🇿 Tanzanie           | 1          | 0                 |
 | 🇨🇩 RDC                | 0          | 1                 |
-```mermaid
-bar
-    title Ransomware par pays
-    "🇿🇦 Afrique du Sud" : 10
-    "🇲🇦 Maroc" : 5
-    "🇪🇬 Égypte" : 3
-    "🇳🇬 Nigeria" : 0
-    "🇿🇲 Zambie" : 0
-    "🇲🇬 Madagascar" : 1
-    "🇹🇳 Tunisie" : 1
-    "🇳🇦 Namibie" : 1
-    "🇹🇿 Tanzanie" : 1
-    "🇨🇩 RDC" : 0
-```
 
 ```mermaid
-bar
-    title Fuites de données par pays
-    "🇿🇦 Afrique du Sud" : 2
-    "🇲🇦 Maroc" : 3
-    "🇪🇬 Égypte" : 5
-    "🇳🇬 Nigeria" : 2
-    "🇿🇲 Zambie" : 1
-    "🇲🇬 Madagascar" : 0
-    "🇹🇳 Tunisie" : 0
-    "🇳🇦 Namibie" : 0
-    "🇹🇿 Tanzanie" : 0
-    "🇨🇩 RDC" : 1
-``` 
+xychart-beta
+    title "Ransomware vs Fuites de données par pays"
+    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
+    y-axis "Nombre d'incidents" 0 to 12
+    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+```
+
+
 ```mermaid
 xychart-beta
     title "Ransomware vs Fuites de données par pays"
@@ -176,38 +158,9 @@ pie
 ```mermaid
 xychart-beta
     title "Acteurs les plus actifs"
-    x-axis "Incidents" 0 to 6
-    y-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
-    bar [5, 4, 3, 2, 2, 2, 2]
-```
-
-
-**Chronologie quotidienne (mars 2026) :**
-- 01/03 : 3 incidents
-- 02/03 : 3
-- 03/03 : 3
-- 04/03 : 1
-- 05/03 : 1
-- 06/03 : 2
-- 09/03 : 1
-- 12/03 : 1
-- 13/03 : 2
-- 14/03 : 1
-- 19/03 : 1
-- 20/03 : 2
-- 21/03 : 1
-- 22/03 : 1
-- 26/03 : 4
-- 29/03 : 2
-- 30/03 : 3
-- 31/03 : 3
-
-```mermaid
-xychart-beta
-    title "Chronologie des incidents - Mars 2026"
-    x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
-    y-axis "Incidents" 0 to 5
-    line [3, 3, 3, 1, 1, 2, 1, 1, 2, 1, 1, 2, 1, 1, 4, 2, 3, 3]
+    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
+    y-axis "Incidents" 0 to 6
+    bar "Incidents" [5, 4, 3, 2, 2, 2, 2]
 ```
 
 ## 4. Analyse détaillée par type d’incident
