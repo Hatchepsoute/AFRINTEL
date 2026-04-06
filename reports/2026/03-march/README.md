@@ -88,22 +88,26 @@ pie
 ```
 
 **Ransomware vs Data Breaches by country:**
-| Country       | Ransomware | Data Breach |
-|---------------|------------|-------------|
-| South Africa  | 10         | 2           |
-| Morocco       | 5          | 3           |
-| Egypt         | 3          | 5           |
-| Nigeria       | 0          | 2           |
-| Zambia        | 0          | 1           |
-| DRC           | 0          | 1           |
+| Country               | Ransomware | Data Breach |
+|-----------------------|------------|-------------|
+| 🇿🇦 South Africa       | 10         | 2           |
+| 🇲🇦 Morocco            | 5          | 3           |
+| 🇪🇬 Egypt              | 3          | 5           |
+| 🇳🇬 Nigeria            | 0          | 2           |
+| 🇿🇲 Zambia             | 0          | 1           |
+| 🇲🇬 Madagascar         | 1          | 0           |
+| 🇹🇳 Tunisia            | 1          | 0           |
+| 🇳🇦 Namibia            | 1          | 0           |
+| 🇹🇿 Tanzania           | 1          | 0           |
+| 🇨🇩 DRC                | 0          | 1           |
 
 ```mermaid
-pie
+xychart-beta
     title "Ransomware vs Data Breaches by country"
-    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇨🇩 DRC"]
+    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
     y-axis "Number of incidents" 0 to 12
-    bar [10, 5, 3, 0, 0, 0]
-    bar [2, 3, 5, 2, 1, 1]
+    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
 
 

@@ -71,7 +71,7 @@ pie
 
 ```mermaid
 pie
-    title Nombre de victimes par pays (mars 2026)
+    title Nombre de victimes par pays- mars 2026
     "🇿🇦 Afrique du Sud (10)" : 10
     "🇲🇦 Maroc (8)" : 8
     "🇪🇬 Égypte (7)" : 7
@@ -85,22 +85,33 @@ pie
 ```
 
 **Comparaison ransomware vs fuites par pays :**
-| Pays           | Ransomware | Fuites |
-|----------------|------------|--------|
-| Afrique du Sud | 10         | 2      |
-| Maroc          | 5          | 3      |
-| Égypte         | 3          | 5      |
-| Nigeria        | 0          | 2      |
-| Zambie         | 0          | 1      |
-| RDC            | 0          | 1      |
-
+| Pays                  | Ransomware | Fuites de données |
+|-----------------------|------------|-------------------|
+| 🇿🇦 Afrique du Sud     | 10         | 2                 |
+| 🇲🇦 Maroc              | 5          | 3                 |
+| 🇪🇬 Égypte             | 3          | 5                 |
+| 🇳🇬 Nigeria            | 0          | 2                 |
+| 🇿🇲 Zambie             | 0          | 1                 |
+| 🇲🇬 Madagascar         | 1          | 0                 |
+| 🇹🇳 Tunisie            | 1          | 0                 |
+| 🇳🇦 Namibie            | 1          | 0                 |
+| 🇹🇿 Tanzanie           | 1          | 0                 |
+| 🇨🇩 RDC                | 0          | 1                 |
 ```mermaid
 xychart-beta
     title "Ransomware vs Fuites de données par pays"
-    x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
+    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
     y-axis "Nombre d'incidents" 0 to 12
-    bar [10, 5, 3, 0, 0, 0]
-    bar [2, 3, 5, 2, 1, 1]
+    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+```
+```mermaid
+xychart-beta
+    title "Ransomware vs Fuites de données par pays"
+    x-axis ["Afrique Sud", "Maroc", "Égypte", "Nigeria", "Zambie", "Madagascar", "Tunisie", "Namibie", "Tanzanie", "RDC"]
+    y-axis "Incidents" 0 to 12
+    line [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    line [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
 
 **Répartition sectorielle :**
