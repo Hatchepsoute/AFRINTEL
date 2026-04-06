@@ -1,4 +1,100 @@
-.env
-*.log
+########################################
+# 🧹 FILES TEMPORAIRES (CRITIQUE)
+########################################
+
+# Fichiers backup éditeurs
+*~
+*.bak
+*.tmp
+*.old
+
+# Vim / Nano
+*.swp
+*.swo
+
+# VSCode
+.vscode/
+
+# Emacs
+*#
+
+########################################
+# 📄 FICHIERS DE TRAVAIL CTI
+########################################
+
+# Exports temporaires
+*.csv
+*.xlsx
+*.json.tmp
+*.json.bak
+
+# Notes locales non destinées au repo
+notes/
+drafts/
+temp/
+tmp/
+
+########################################
+# 🧠 DONNÉES CTI SENSIBLES / INTERMÉDIAIRES
+########################################
+
+# Dumps ou fichiers bruts OSINT
+raw_data/
+scraping/
+feeds/
+
+########################################
+# 🐍 PYTHON (si tu automatises AFRINTEL)
+########################################
+
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+.env.*
+
+venv/
 .venv/
+
+########################################
+# 📦 EXPORTS / BUILD
+########################################
+
+# PDF / PPT générés localement
+*.pdf
+*.pptx
+
+# Graph exports
+*.png
+*.svg
+
+########################################
+# 🧾 LOGS
+########################################
+
+*.log
+
+########################################
+# 🔐 CLÉS / TOKENS (TRÈS IMPORTANT)
+########################################
+
+*.key
+*.pem
+*.env
+config.json
+
+########################################
+# 🐧 OS FILES
+########################################
+
+# Linux
+*~
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
