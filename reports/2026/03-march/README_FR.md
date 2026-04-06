@@ -103,8 +103,9 @@ xychart-beta
     title "Ransomware vs Fuites de données par pays"
     x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
     y-axis "Nombre d'incidents" 0 to 12
-    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
-    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+    
+    bar "Ransomware" [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    bar "Fuite de données" [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
 
 
@@ -156,11 +157,15 @@ pie
 | xNov             | Fuite de données | 2       | Supply chain marocaine |
 
 ```mermaid
-xychart-beta
-    title "Acteurs les plus actifs"
-    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
-    y-axis "Incidents" 0 to 6
-    bar "Incidents" [5, 4, 3, 2, 2, 2, 2]
+pie
+    title Acteurs les plus actifs
+    "CrowStealer (5)" : 5
+    "APT73/BASHE (4)" : 4
+    "XP95 (3)" : 3
+    "Qilin (2)" : 2
+    "The Gentlemen (2)" : 2
+    "INC Ransom (2)" : 2
+    "xNov (2)" : 2
 ```
 
 ## 4. Analyse détaillée par type d’incident
@@ -178,13 +183,28 @@ xychart-beta
 | Tanzanie         | 1                   | Morpheus |
 
 ```mermaid
-xychart-beta
-    title "Ransomware - Nombre d'attaques par pays"
-    x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie"]
-    y-axis "Attaques" 0 to 12
-    bar [10, 5, 3, 1, 1, 1, 1]
+bar
+    title Ransomware par pays
+    "🇿🇦 Afrique du Sud" : 10
+    "🇲🇦 Maroc" : 5
+    "🇪🇬 Egypte" : 3
+    "🇲🇬 Madagascar" : 1
+    "🇹🇳 Tunisie" : 1
+    "🇳🇦 Namibie" : 1
+    "🇹🇿 Tanzanie" : 1
 ```
 
+```mermaid
+bar
+    title Fuite de données par pays
+    "🇿🇦 South Africa" : 2
+    "🇲🇦 Morocco" : 3
+    "🇪🇬 Egypt" : 5
+    "🇳🇬 Nigeria" : 2
+    "🇿🇲 Zambia" : 1
+    "🇨🇩 DRC" : 1
+```
+ 
 **Observations clés** :
 - **XP95** est devenu une menace majeure en Afrique du Sud : gouvernement de Gauteng (3,8 To), Stats SA (154 Go) et GCRA (147 Go). Les données sont vendues, pas seulement chiffrées.
 - **APT73/BASHE** a ciblé des institutions stratégiques marocaines (HACA, Maroc Telecom, 2M TV, IRES), suggérant une motivation géopolitique.
