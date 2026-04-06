@@ -112,18 +112,11 @@ xychart-beta
 ```
 
 ```mermaid
-bar
-    title Data Breaches by country
-    "🇿🇦 South Africa" : 2
-    "🇲🇦 Morocco" : 3
-    "🇪🇬 Egypt" : 5
-    "🇳🇬 Nigeria" : 2
-    "🇿🇲 Zambia" : 1
-    "🇲🇬 Madagascar" : 0
-    "🇹🇳 Tunisia" : 0
-    "🇳🇦 Namibia" : 0
-    "🇹🇿 Tanzania" : 0
-    "🇨🇩 DRC" : 1
+xychart-beta
+    title "Data Breaches by country"
+    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
+    y-axis "Number of incidents" 0 to 6
+    bar "Data Breaches" [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
@@ -180,7 +173,7 @@ xychart-beta
     title "Ransomware - Number of attacks by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania"]
     y-axis "Attacks" 0 to 12
-    bar [10, 5, 3, 1, 1, 1, 1]
+    bar "Ransomware" [10, 5, 3, 1, 1, 1, 1]
 ```
 
 **Key observations**:
@@ -204,7 +197,7 @@ xychart-beta
     title "Data breaches - Number by country"
     x-axis ["🇪🇬 Egypt", "🇲🇦 Morocco", "🇿🇦 South Africa", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇨🇩 DRC"]
     y-axis "Breaches" 0 to 6
-    bar [5, 3, 2, 2, 1, 1]
+    bar "Data Breaches" [5, 3, 2, 2, 1, 1]
 ```
 
 **Key observations**:
