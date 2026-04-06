@@ -61,20 +61,20 @@ pie
 ```
 
 **Breakdown by country:**
-- South Africa: 10
-- Morocco: 8
-- Egypt: 7
-- Nigeria: 2
-- Zambia: 1
-- Madagascar: 1
-- Tunisia: 1
-- Namibia: 1
-- Tanzania: 1
-- DRC: 1
+- 🇿🇦 South Africa: 10
+- 🇲🇦 Morocco: 8
+- 🇪🇬 Egypt: 7
+- 🇳🇬 Nigeria: 2
+- 🇿🇲 Zambia: 1
+- 🇲🇬 Madagascar: 1
+- 🇹🇳 Tunisia: 1
+- 🇳🇦 Namibia: 1
+- 🇹🇿 Tanzania: 1
+- 🇨🇩 DRC: 1
 
 ```mermaid
 pie
-    title Number of victims by country (March 2026)
+    title Number of victims by country(March 2026)
     "🇿🇦 South Africa (10)" : 10
     "🇲🇦 Morocco (8)" : 8
     "🇪🇬 Egypt (7)" : 7
@@ -132,7 +132,7 @@ pie
 | xNov             | Data breach     | 2         | Moroccan supply chain |
 
 ```mermaid
-pie
+xychart-beta
     title "Most prolific threat actors"
     x-axis "Incidents" 0 to 6
     y-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
@@ -160,7 +160,7 @@ pie
 - 31/03: 3
 
 ```mermaid
-pie
+xychart-beta
     title "Daily incident timeline - March 2026"
     x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
     y-axis "Incidents" 0 to 5
@@ -181,7 +181,7 @@ pie
 | Tanzania         | 1                  | Morpheus |
 
 ```mermaid
-pie
+xychart-beta
     title "Ransomware - Number of attacks by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania"]
     y-axis "Attacks" 0 to 12
@@ -205,7 +205,7 @@ pie
 | DRC              | 1        | privillege |
 
 ```mermaid
-pie
+xychart-beta
     title "Data breaches - Number by country"
     x-axis ["🇪🇬 Egypt", "🇲🇦 Morocco", "🇿🇦 South Africa", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇨🇩 DRC"]
     y-axis "Breaches" 0 to 6

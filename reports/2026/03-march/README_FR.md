@@ -58,16 +58,16 @@ pie
 ```
 
 **Répartition par pays :**
-- Afrique du Sud : 10
-- Maroc : 8
-- Égypte : 7
-- Nigeria : 2
-- Zambie : 1
-- Madagascar : 1
-- Tunisie : 1
-- Namibie : 1
-- Tanzanie : 1
-- RDC : 1
+- 🇿🇦 Afrique du Sud : 10
+- 🇲🇦 Maroc : 8
+- 🇪🇬 Égypte : 7
+- 🇳🇬 Nigeria : 2
+- 🇿🇲 Zambie : 1
+- 🇲🇬 Madagascar : 1
+- 🇹🇳 Tunisie : 1
+- 🇳🇦 Namibie : 1
+- 🇹🇿 Tanzanie : 1
+- 🇨🇩 RDC : 1
 
 ```mermaid
 pie
@@ -95,7 +95,7 @@ pie
 | RDC            | 0          | 1      |
 
 ```mermaid
-pie
+xychart-beta
     title "Ransomware vs Fuites de données par pays"
     x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
     y-axis "Nombre d'incidents" 0 to 12
@@ -142,7 +142,7 @@ pie
 | xNov             | Fuite de données | 2       | Supply chain marocaine |
 
 ```mermaid
-pie
+xychart-beta
     title "Acteurs les plus actifs"
     x-axis "Incidents" 0 to 6
     y-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
@@ -171,7 +171,7 @@ pie
 - 31/03 : 3
 
 ```mermaid
-pie
+xychart-beta
     title "Chronologie des incidents - Mars 2026"
     x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
     y-axis "Incidents" 0 to 5
@@ -193,7 +193,7 @@ pie
 | Tanzanie         | 1                   | Morpheus |
 
 ```mermaid
-pie
+xychart-beta
     title "Ransomware - Nombre d'attaques par pays"
     x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie"]
     y-axis "Attaques" 0 to 12
@@ -217,7 +217,7 @@ pie
 | RDC              | 1      | privillege |
 
 ```mermaid
-pie
+xychart-beta
     title "Fuites de données - Nombre par pays"
     x-axis ["🇪🇬 Égypte", "🇲🇦 Maroc", "🇿🇦 Afrique du Sud", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
     y-axis "Fuites" 0 to 6
