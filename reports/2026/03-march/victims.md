@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
-# List of African cyberattack victims - March 2026 (36 victims)
+# List of African cyberattack victims - March 2026 (41 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Scope and methodology
@@ -16,21 +16,24 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Verification:** Validation of institutional URLs and enrichment of technical descriptions.
 
 ## Quick overview
-- **Victims recorded:** 36
-- **Countries affected:** 11
-- **Actors observed:** 23
-- **Most affected countries:** South Africa (11), Morocco (8), Egypt (8)
+- **Victims recorded:** 41
+- **Countries affected:** 14
+- **Actors observed:** 27
+- **Most affected countries:** South Africa (13), Morocco (8), Egypt (8)
 
 ### Incident typology
-- **Ransomware (encryption + ransom):** 19 incidents (53%)
-- **Data breaches / system intrusions:** 17 incidents (47%)
+- **Ransomware (encryption + ransom):** 19 incidents (46.3%)
+- **Data breaches / system intrusions:** 22 incidents (53.7%)
 
 ### Breakdown by country
-- 🇿🇦 South Africa: **11** victims
+- 🇿🇦 South Africa: **13** victims
 - 🇲🇦 Morocco: **8** victims
 - 🇪🇬 Egypt: **8** victims
 - 🇳🇬 Nigeria: **2** victims
+- 🇨🇲 Cameroon: **1** victim
+- 🇩🇿 Algeria: **1** victim
 - 🇸🇳 Senegal: **1** victim
+- 🇬🇳 Guinea: **1** victim
 - 🇿🇲 Zambia: **1** victim
 - 🇲🇬 Madagascar: **1** victim
 - 🇹🇳 Tunisia: **1** victim
@@ -42,10 +45,10 @@ This list records ransomware and data breach incidents targeting African entitie
 - **CrowStealer**: 5 victims
 - **APT73/BASHE**: 4 victims
 - **XP95**: 3 victims
+- **xNov**: 3 victims
 - **Qilin**: 2 victims
 - **The Gentlemen**: 2 victims
 - **INC Ransom**: 2 victims
-- **xNov**: 2 victims
 - **LockBit 5.0**: 1 victim
 - **Crypto24**: 1 victim
 - **PEAR**: 1 victim
@@ -62,15 +65,22 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Bytetobreach**: 1 victim
 - **privillege**: 1 victim
 - **Coordinated network (UBA Senegal)**: 1 victim
+- **Grubder (Bridges)**: 1 victim
+- **Blackwinter99 (UNISA)**: 1 victim
+- **zimablue (Loozap)**: 1 victim
+- **Keymous (Guinea Health)**: 1 victim
 
 ### Ransomware vs Data Breaches by country
 | Country               | Ransomware | Data Breach |
 |-----------------------|------------|-------------|
-| 🇿🇦 South Africa       | 7          | 4           |
+| 🇿🇦 South Africa       | 7          | 6           |
 | 🇲🇦 Morocco            | 5          | 3           |
 | 🇪🇬 Egypt              | 3          | 5           |
 | 🇳🇬 Nigeria            | 0          | 2           |
+| 🇨🇲 Cameroon           | 0          | 1           |
+| 🇩🇿 Algeria            | 0          | 1           |
 | 🇸🇳 Senegal            | 0          | 1           |
+| 🇬🇳 Guinea             | 0          | 1           |
 | 🇿🇲 Zambia             | 0          | 1           |
 | 🇲🇬 Madagascar         | 1          | 0           |
 | 🇹🇳 Tunisia            | 1          | 0           |
@@ -101,6 +111,30 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Website:** [mcdss.gov.zm](https://www.mcdss.gov.zm)
 - **Status:** Massive database leak
 - **Victim description:** Institution responsible for social protection and empowerment. Leak of the "Social Cash Transfer" (SCT) system: full identities (names, NRC numbers, dates of birth), contact details, benefit amounts.
+
+#### 🇿🇦 South Africa - Eventing South Africa
+- **Actor / Group:** xNov
+- **Sector:** Sports / Leisure
+- **Website:** [eventingsa.co.za](https://www.eventingsa.co.za)
+- **Leak Date:** January 16, 2026 (Identified in March 2026)
+- **Status:** Database leak (Public)
+- **Victim description:** Eventing South Africa is the national governing body for eventing equestrian sports. xNov leaked a database containing club and member information: names, email addresses, login credentials (passwords), affiliation details, horse and rider records, competition data, and administrative/financial records (payments, invoices).
+
+#### 🇩🇿 Algeria - Bridges (tebridges.dz)
+- **Actor / Group:** Grubder
+- **Sector:** Technology / Business Services (CRM)
+- **Website:** [tebridges.dz](https://www.tebridges.dz)
+- **Incident Date:** February 02, 2026
+- **Status:** Database for sale ($1,743)
+- **Victim description:** Bridges is a technology solutions provider in Algeria. Grubder listed a database with ~672,000 active records (PII and CRM) including full names, primary phone numbers, detailed local addresses, postal codes, and account statuses. A data sample (CSV) validated the extraction.
+
+#### 🇨🇲 Cameroon - Loozap (loozap.com)
+- **Actor / Group:** zimablue
+- **Sector:** E-commerce / Online classifieds
+- **Website:** [loozap.com](http://loozap.com/)
+- **Incident Date:** January 28, 2026 (identified in March 2026)
+- **Status:** Database leak (~34,000 users)
+- **Victim description:** Loozap is an online classifieds platform widely used in Central Africa. A threat actor published a database containing approximately 34,000 user accounts. Analysis of the exposed sample reveals personal data (emails, names, location), IP addresses, and SHA1‑hashed passwords. The dataset also includes profile information (gender, city, social interactions) and user activity metadata, indicating a full compromise of the application database.
 
 ### 02 March 2026
 #### 🇪🇬 Egypt - Waste Management Regulatory Authority (WMRA)
@@ -144,7 +178,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Sector:** Education / Government
 - **Website:** [amo.onousc.ma](https://amo.onousc.ma)
 - **Status:** Data leak
-- **Victim description:** Body responsible for student social services in Morocco (scholarships, university housing, health coverage). Exposure of 3,631 student records related to Mandatory Health Insurance (AMO): names, CINE numbers, university registration numbers, CNE, dates of birth, enrollment statuses (approved/rejected with reasons).
+- **Victim description:** Body responsible for student social services in Morocco (scholarships, university housing, health coverage). Exposure of 3,631 student records related to Mandatory Health Insurance (AMO): names, CINE numbers, university registration numbers, CNE, dates of birth, enrollment statuses.
 
 ### 04 March 2026
 #### 🇲🇦 Morocco - Outsourcia
@@ -215,6 +249,14 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Website:** [gridff.com](http://gridff.com)
 - **Status:** Claim
 - **Victim description:** Egyptian company specializing in high-end interior fit-out for commercial and residential sectors.
+
+### 17 March 2026
+#### 🇿🇦 South Africa - University of South Africa (UNISA)
+- **Actor / Group:** Blackwinter99
+- **Sector:** Education / Higher Education
+- **Website:** [unisa.ac.za](https://www.unisa.ac.za)
+- **Status:** Data leak (admin credentials disclosed)
+- **Victim description:** UNISA is Africa's largest distance learning institution. Blackwinter99 publicly disclosed login credentials for the site's administration page on an underground forum, providing direct access to high-level platform privileges, enabling massive student data exfiltration, tampering with academic records, or complete takeover of the web infrastructure.
 
 ### 19 March 2026
 #### 🇳🇦 Namibia - Namibia Airports Company
@@ -299,14 +341,14 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Sector:** Government / National Statistics
 - **Website:** [statssa.gov.za](https://www.statssa.gov.za)
 - **Status:** Ransomware / Database for Sale ($100,000)
-- **Victim description:** Stats SA is the national statistical agency of South Africa. Threat actor XP95 exfiltrated 154 GB of data (453,362 files). The breach potentially compromises sensitive socio-economic data, census records, employment information, inflation data, and national administrative records. A $100,000 ransom has been demanded, with a public sale deadline set for April 20, 2026.
+- **Victim description:** Stats SA is the national statistical agency of South Africa. XP95 exfiltrated 154 GB of data (453,362 files). The breach potentially compromises sensitive socio-economic data, census records, employment information, inflation data, and national administrative records. A $100,000 ransom has been demanded, with a public sale deadline set for April 20, 2026.
 
 #### 🇿🇦 South Africa - Gauteng City Region Academy (GCRA)
 - **Ransomware group:** XP95
 - **Sector:** Education / Training (Provincial Government)
 - **Website:** [gcra.gauteng.gov.za](https://gcra.gauteng.gov.za)
 - **Status:** Ransomware / Database for Sale
-- **Victim description:** The GCRA is the agency responsible for skills development in the Gauteng province. The exfiltration of 147 GB of data potentially compromises student records (bursaries, registrations, PII), training program data, and the academy's administrative documents. Threat actor XP95 has set a ransom deadline before the public sale of the files.
+- **Victim description:** The GCRA is the agency responsible for skills development in the Gauteng province. The exfiltration of 147 GB of data potentially compromises student records (bursaries, registrations, PII), training program data, and the academy's administrative documents. XP95 has set a ransom deadline before the public sale of the files.
 
 ### 30 March 2026
 #### 🇹🇿 Tanzania - SBC Tanzania Limited
@@ -352,3 +394,11 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Date of breach:** September 2025 (identified in March 2026)
 - **Status:** Database leak (historical archive)
 - **Victim description:** Body responsible for modernizing public administration in the DRC. Data exfiltrated in September 2025: administrative records and information on state employees.
+
+#### 🇬🇳 Guinea - Ministry of Health (sante.gov.gn)
+- **Actor / Group:** Keymous
+- **Sector:** Government / Public Health
+- **Website:** [sante.gov.gn](https://sante.gov.gn/)
+- **Date of incident:** July 2025 (observed activity, identified in March 2026)
+- **Status:** Suspected compromise (correlated with internal system access and data leaks)
+- **Victim description:** The official website of Guinea’s Ministry of Health is directly linked to compromised internal systems, including DHIS2 dashboards exposed by Keymous. The correlation between access to health surveillance tools, leaked government data (emails, staff records), and ministerial infrastructure strongly suggests a broader compromise of the ministry’s digital ecosystem. This exposure may enable targeted attacks, data manipulation, and influence operations.

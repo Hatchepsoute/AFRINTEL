@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Source%20des%20données-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques - Mars 2026 (36 victimes)
+# Liste des victimes africaines de cyberattaques - Mars 2026 (41 victimes)
 👉🏾 [**English version available here**](./victims.md)
 
 ## Portée et méthodologie
@@ -16,21 +16,24 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Vérification :** Validation des URLs institutionnelles et enrichissement des descriptions techniques.
 
 ## Synthèse rapide
-- **Victimes recensées :** 36
-- **Pays touchés :** 11
-- **Acteurs observés :** 23
-- **Pays les plus touchés :** Afrique du Sud (11), Maroc (8), Égypte (8)
+- **Victimes recensées :** 41
+- **Pays touchés :** 14
+- **Acteurs observés :** 27
+- **Pays les plus touchés :** Afrique du Sud (13), Maroc (8), Égypte (8)
 
 ### Typologie des incidents
-- **Ransomware (chiffrement + rançon) :** 19 incidents (53 %)
-- **Fuites de données / intrusions système :** 17 incidents (47 %)
+- **Ransomware (chiffrement + rançon) :** 19 incidents (46,3 %)
+- **Fuites de données / intrusions système :** 22 incidents (53,7 %)
 
 ### Répartition par pays
-- 🇿🇦 Afrique du Sud : **11** victimes
+- 🇿🇦 Afrique du Sud : **13** victimes
 - 🇲🇦 Maroc : **8** victimes
 - 🇪🇬 Égypte : **8** victimes
 - 🇳🇬 Nigeria : **2** victimes
+- 🇨🇲 Cameroun : **1** victime
+- 🇩🇿 Algérie : **1** victime
 - 🇸🇳 Sénégal : **1** victime
+- 🇬🇳 Guinée : **1** victime
 - 🇿🇲 Zambie : **1** victime
 - 🇲🇬 Madagascar : **1** victime
 - 🇹🇳 Tunisie : **1** victime
@@ -42,10 +45,10 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **CrowStealer** : 5 victimes
 - **APT73/BASHE** : 4 victimes
 - **XP95** : 3 victimes
+- **xNov** : 3 victimes
 - **Qilin** : 2 victimes
 - **The Gentlemen** : 2 victimes
 - **INC Ransom** : 2 victimes
-- **xNov** : 2 victimes
 - **LockBit 5.0** : 1 victime
 - **Crypto24** : 1 victime
 - **PEAR** : 1 victime
@@ -62,15 +65,22 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Bytetobreach** : 1 victime
 - **privillege** : 1 victime
 - **Réseau coordonné (UBA Sénégal)** : 1 victime
+- **Grubder (Bridges)** : 1 victime
+- **Blackwinter99 (UNISA)** : 1 victime
+- **zimablue (Loozap)** : 1 victime
+- **Keymous (Santé Guinée)** : 1 victime
 
 ### Comparaison ransomware vs fuites par pays
 | Pays                  | Ransomware | Fuites de données |
 |-----------------------|------------|-------------------|
-| 🇿🇦 Afrique du Sud     | 7          | 4                 |
+| 🇿🇦 Afrique du Sud     | 7          | 6                 |
 | 🇲🇦 Maroc              | 5          | 3                 |
 | 🇪🇬 Égypte             | 3          | 5                 |
 | 🇳🇬 Nigeria            | 0          | 2                 |
+| 🇨🇲 Cameroun           | 0          | 1                 |
+| 🇩🇿 Algérie            | 0          | 1                 |
 | 🇸🇳 Sénégal            | 0          | 1                 |
+| 🇬🇳 Guinée             | 0          | 1                 |
 | 🇿🇲 Zambie             | 0          | 1                 |
 | 🇲🇬 Madagascar         | 1          | 0                 |
 | 🇹🇳 Tunisie            | 1          | 0                 |
@@ -101,6 +111,30 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Site web :** [mcdss.gov.zm](https://www.mcdss.gov.zm)
 - **Statut :** Fuite de base de données massive
 - **Description victime :** Institution chargée de la protection sociale et de l'autonomisation. Fuite du système "Social Cash Transfer" (SCT) : identités complètes (noms, NRC, dates de naissance), coordonnées, montants des aides.
+
+#### 🇿🇦 Afrique du Sud - Eventing South Africa
+- **Acteur / Groupe :** xNov
+- **Secteur :** Sport / Loisirs
+- **Site web :** [eventingsa.co.za](https://www.eventingsa.co.za)
+- **Date de la fuite :** 16 Janvier 2026 (Identifiée en Mars 2026)
+- **Statut :** Fuite de base de données (Publique)
+- **Description victime :** Eventing South Africa est l'organisme officiel régissant les compétitions de concours complet d'équitation. xNov a divulgué une base de données contenant des informations sur les clubs et les membres : noms, adresses e-mail, identifiants de connexion (mots de passe), détails d'affiliation, registres des chevaux et cavaliers, données de compétition, ainsi que des informations administratives et financières (paiements, factures).
+
+#### 🇩🇿 Algérie - Bridges (tebridges.dz)
+- **Acteur / Groupe :** Grubder
+- **Secteur :** Technologie / Services aux entreprises (CRM)
+- **Site web :** [tebridges.dz](https://www.tebridges.dz)
+- **Date de l'incident :** 02 Février 2026
+- **Statut :** Base de données en vente (1 743 $)
+- **Description victime :** Bridges est un fournisseur de solutions technologiques en Algérie. Grubder a mis en vente une base de données d'environ 672 000 enregistrements actifs (PII et CRM) incluant noms complets, numéros de téléphone principaux, adresses locales détaillées, codes postaux et statuts de compte. Un échantillon de données (CSV) a validé l'extraction.
+
+#### 🇨🇲 Cameroun - Loozap (loozap.com)
+- **Acteur / Groupe :** zimablue
+- **Secteur :** E-commerce / Petites annonces en ligne
+- **Site web :** [loozap.com](http://loozap.com/)
+- **Date de l'incident :** 28 janvier 2026 (identifiée en mars 2026)
+- **Statut :** Base de données divulguée (~34 000 utilisateurs)
+- **Description victime :** Loozap est une plateforme de petites annonces en ligne utilisée principalement en Afrique centrale. Un acteur malveillant a publié une base de données contenant environ 34 000 comptes utilisateurs. L’analyse de l’échantillon révèle la présence de données personnelles (emails, noms, localisation), adresses IP, ainsi que des mots de passe hashés en SHA1. Les données incluent également des informations de profil (genre, ville, interactions sociales) et des métadonnées d’activité utilisateur, confirmant une compromission complète de la base applicative.
 
 ### 02 Mars 2026
 #### 🇪🇬 Égypte - Autorité de Régulation de la Gestion des Déchets (WMRA)
@@ -144,7 +178,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Secteur :** Éducation / Gouvernement
 - **Site web :** [amo.onousc.ma](https://amo.onousc.ma)
 - **Statut :** Fuite de données
-- **Description victime :** Organisme chargé de la gestion des œuvres sociales pour les étudiants au Maroc (bourses, cités universitaires, couverture santé). Exposition des dossiers de 3 631 étudiants liés à l’Assurance Maladie Obligatoire (AMO) : noms, prénoms, CINE, numéros d’immatriculation universitaire, CNE, dates de naissance, statuts d’inscription (validés/rejetés).
+- **Description victime :** Organisme chargé de la gestion des œuvres sociales pour les étudiants au Maroc (bourses, cités universitaires, couverture santé). Exposition des dossiers de 3 631 étudiants liés à l’Assurance Maladie Obligatoire (AMO) : noms, prénoms, CINE, numéros d’immatriculation universitaire, CNE, dates de naissance, statuts d’inscription.
 
 ### 04 Mars 2026
 #### 🇲🇦 Maroc - Outsourcia
@@ -215,6 +249,14 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Site web :** [gridff.com](http://gridff.com)
 - **Statut :** Revendication
 - **Description victime :** Société égyptienne spécialisée dans l'aménagement intérieur haut de gamme pour les secteurs commerciaux et résidentiels.
+
+### 17 Mars 2026
+#### 🇿🇦 Afrique du Sud - University of South Africa (UNISA)
+- **Acteur / Groupe :** Blackwinter99
+- **Secteur :** Éducation / Enseignement Supérieur
+- **Site web :** [unisa.ac.za](https://www.unisa.ac.za)
+- **Statut :** Fuite de données (divulgation d'identifiants admin)
+- **Description victime :** L'UNISA est la plus grande institution d'enseignement à distance en Afrique. Blackwinter99 a divulgué publiquement sur un forum clandestin les identifiants de connexion de la page d'administration du site, offrant un accès direct aux privilèges élevés de la plateforme, permettant l'exfiltration massive de données étudiantes, la modification des dossiers académiques ou une prise de contrôle totale de l'infrastructure web.
 
 ### 19 Mars 2026
 #### 🇳🇦 Namibie - Namibia Airports Company
@@ -299,14 +341,14 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Secteur :** Gouvernement / Statistiques Nationales
 - **Site web :** [statssa.gov.za](https://www.statssa.gov.za)
 - **Statut :** Ransomware / Vente de base de données (100 000 $)
-- **Description victime :** Stats SA est l'agence nationale de statistique de l'Afrique du Sud. L'acteur XP95 a exfiltré 154 Go de données (453 362 fichiers). La brèche compromet potentiellement des données socio-économiques sensibles, des recensements, des informations sur l'emploi, l'inflation et des registres administratifs nationaux. Une rançon de 100 000 $ a été exigée avant une mise en vente publique prévue pour le 20 avril 2026.
+- **Description victime :** Stats SA est l'agence nationale de statistique de l'Afrique du Sud. XP95 a exfiltré 154 Go de données (453 362 fichiers). La brèche compromet potentiellement des données socio-économiques sensibles, des recensements, des informations sur l'emploi, l'inflation et des registres administratifs nationaux. Une rançon de 100 000 $ a été exigée avant une mise en vente publique prévue pour le 20 avril 2026.
 
 #### 🇿🇦 Afrique du Sud - Gauteng City Region Academy (GCRA)
 - **Groupe ransomware :** XP95
 - **Secteur :** Éducation / Formation (Gouvernement provincial)
 - **Site web :** [gcra.gauteng.gov.za](https://gcra.gauteng.gov.za)
 - **Statut :** Ransomware / Vente de base de données
-- **Description victime :** La GCRA est l'agence responsable du développement des compétences pour la province de Gauteng. L'exfiltration de 147 Go de données compromet potentiellement les dossiers des étudiants (bourses, inscriptions, PII), les données des programmes de formation et les documents administratifs de l'académie. L'acteur XP95 a fixé une date limite pour le paiement de la rançon avant la mise en vente publique des fichiers.
+- **Description victime :** La GCRA est l'agence responsable du développement des compétences pour la province de Gauteng. L'exfiltration de 147 Go de données compromet potentiellement les dossiers des étudiants (bourses, inscriptions, PII), les données des programmes de formation et les documents administratifs de l'académie. XP95 a fixé une date limite pour le paiement de la rançon avant la mise en vente publique des fichiers.
 
 ### 30 Mars 2026
 #### 🇹🇿 Tanzanie - SBC Tanzania Limited
@@ -352,3 +394,11 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Date de la fuite :** Septembre 2025 (identifiée en mars 2026)
 - **Statut :** Fuite de base de données (archive historique)
 - **Description victime :** Organisme en charge de la modernisation de l'administration en RDC. Données exfiltrées en septembre 2025 : dossiers administratifs et informations sur les agents de l'État.
+
+#### 🇬🇳 Guinée - Ministère de la Santé (sante.gov.gn)
+- **Acteur / Groupe :** Keymous
+- **Secteur :** Gouvernement / Santé publique
+- **Site web :** [sante.gov.gn](https://sante.gov.gn/)
+- **Date de l'incident :** Juillet 2025 (activité observée, identifiée en mars 2026)
+- **Statut :** Compromission suspectée (corrélée à accès systèmes internes et fuites de données)
+- **Description victime :** Le site officiel du Ministère de la Santé de Guinée est directement lié aux systèmes internes compromis, notamment les dashboards DHIS2 exposés par Keymous. La corrélation entre l’accès aux outils de surveillance sanitaire, les données gouvernementales divulguées (emails, personnels) et les infrastructures ministérielles suggère une compromission plus large de l’écosystème numérique du ministère. Cette exposition pourrait permettre des attaques ciblées, de la manipulation de données sanitaires et des opérations d’influence.

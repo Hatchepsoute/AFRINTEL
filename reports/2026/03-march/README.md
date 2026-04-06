@@ -6,43 +6,52 @@
 
 # CTI Report - Cyberattacks in Africa (March 2026)
 
-## 1. Executive Summary
+👉🏾 [**French version available here**](./README_FR.md)
+## 1. Executive summary
 
-In March 2026, **36 cyber incidents** targeting African entities were publicly claimed or detected. The continent continues to face a dual threat: **ransomware** (encryption with ransom demand) and **data breaches / system intrusions** (exfiltration without encryption or direct financial fraud). Key findings:
+In March 2026, **41 cyber incidents** targeting African entities were publicly claimed or detected. The continent continues to face a dual threat: **ransomware** (encryption with ransom demand) and **data breaches / system intrusions** (exfiltration without encryption or direct financial fraud). Key findings:
 
-- **19 ransomware attacks (53%)** and **17 data breaches / intrusions (47%)**.
-- **11 countries** affected; **South Africa** (11 incidents), **Morocco** (8) and **Egypt** (8) account for 75% of all victims.
-- **23 distinct threat actors**; **CrowStealer** (5 incidents), **APT73/BASHE** (4) and **XP95** (3) are the most active.
-- **Government and education sectors** represent 44% of victims, highlighting a strategic focus on public institutions.
+- **19 ransomware attacks (46.3%)** and **22 data breaches / intrusions (53.7%)**.
+- **14 countries** affected; **South Africa** (13 incidents), **Morocco** (8) and **Egypt** (8) account for 71% of all victims.
+- **27 distinct threat actors**; **CrowStealer** (5 incidents), **APT73/BASHE** (4) and **XP95** (3) are the most active.
+- **Government and education sectors** represent 39% of victims, highlighting a strategic focus on public institutions.
 - Massive data leaks: Egyptian health ministry (3.8M records), Gauteng provincial government (3.8 TB), Remita Nigeria (3 TB), Stats SA (154 GB).
-- New major incident: **UBA Senegal** – a coordinated cyber heist involving system compromise, database manipulation, and over 3,400 fraudulent ATM withdrawals totaling 1.143 billion FCFA (~$1.9M USD), disclosed in March but executed in late January.
+- New major incident: **UBA Senegal** - a coordinated cyber heist involving system compromise, database manipulation, and over 3,400 fraudulent ATM withdrawals totaling 1.143 billion FCFA (~$1.9M USD), disclosed in March but executed in late January.
+- Emerging threats: **Loozap (Cameroon)** - 34,000 user accounts leaked (SHA1 passwords); **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by actor Keymous.
+
+## 📋 Victim list
+
+👉🏾 [View full victim list](./victims.md)
 
 ## 2. Methodology
 
 - **Scope**: 54 African countries.
-- **Period**: 1 – 31 March 2026 (incidents disclosed or claimed during this month; actual attack dates may be earlier).
-- **Sources**: DLS (leak sites), OSINT, Telegram channels, underground forums, media reports.
+- **Period**: 1 - 31 March 2026 (incidents disclosed or claimed during this month; actual attack dates may be earlier).
+- **Sources**: Dark web, DLS (leak sites), OSINT, Telegram channels, underground forums, media reports.
 - **Inclusion**: Publicly claimed or attributed incidents with identified victim, country, sector.
 - **Typology**:
   - *Ransomware*: encryption + ransom demand (claim on DLS).
   - *Data breach / intrusion*: unencrypted exfiltration, database sold or published, or system compromise leading to financial fraud.
 
-## 3. Global Overview
+## 3. Global overview
 
 | Indicator                     | Value |
 |-------------------------------|-------|
-| Total victims                 | 36    |
-| Countries affected            | 11    |
-| Distinct actors               | 23    |
-| Ransomware incidents          | 19 (53%) |
-| Data breaches / intrusions    | 17 (47%) |
+| Total victims                 | 41    |
+| Countries affected            | 14    |
+| Distinct actors               | 27    |
+| Ransomware incidents          | 19 (46.3%) |
+| Data breaches / intrusions    | 22 (53.7%) |
 
 **Most targeted countries:**
-- 🇿🇦 South Africa: 11 victims
+- 🇿🇦 South Africa: 13 victims
 - 🇲🇦 Morocco: 8 victims
 - 🇪🇬 Egypt: 8 victims
 - 🇳🇬 Nigeria: 2 victims
+- 🇨🇲 Cameroon: 1 victim
+- 🇩🇿 Algeria: 1 victim
 - 🇸🇳 Senegal: 1 victim
+- 🇬🇳 Guinea: 1 victim
 - 🇿🇲 Zambia: 1 victim
 - 🇲🇬 Madagascar: 1 victim
 - 🇹🇳 Tunisia: 1 victim
@@ -51,33 +60,38 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 - 🇨🇩 DRC: 1 victim
 
 **Ransomware vs Data Breaches by country:**
-| Country               | Ransomware | Data Breach/Intrusion |
-|-----------------------|------------|----------------------|
-| 🇿🇦 South Africa       | 7          | 4                    |
-| 🇲🇦 Morocco            | 5          | 3                    |
-| 🇪🇬 Egypt              | 3          | 5                    |
-| 🇳🇬 Nigeria            | 0          | 2                    |
-| 🇸🇳 Senegal            | 0          | 1                    |
-| 🇿🇲 Zambia             | 0          | 1                    |
-| 🇲🇬 Madagascar         | 1          | 0                    |
-| 🇹🇳 Tunisia            | 1          | 0                    |
-| 🇳🇦 Namibia            | 1          | 0                    |
-| 🇹🇿 Tanzania           | 1          | 0                    |
-| 🇨🇩 DRC                | 0          | 1                    |
+| Country               | Ransomware | Data Breach |
+|-----------------------|------------|-------------|
+| South Africa          | 7          | 6           |
+| Morocco               | 5          | 3           |
+| Egypt                 | 3          | 5           |
+| Nigeria               | 0          | 2           |
+| Cameroon              | 0          | 1           |
+| Algeria               | 0          | 1           |
+| Senegal               | 0          | 1           |
+| Guinea                | 0          | 1           |
+| Zambia                | 0          | 1           |
+| Madagascar            | 1          | 0           |
+| Tunisia               | 1          | 0           |
+| Namibia               | 1          | 0           |
+| Tanzania              | 1          | 0           |
+| DRC                   | 0          | 1           |
 
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
 |---------------------------|-----------|------------|
-| Government / Admin        | 9         | 25%        |
-| Education / University    | 7         | 19%        |
-| Health                    | 3         | 8%         |
-| Insurance                 | 3         | 8%         |
-| Telecommunications        | 3         | 8%         |
-| Engineering/Construction  | 3         | 8%         |
-| Finance / Banking         | 2         | 6%         |
-| IT/Consulting             | 2         | 6%         |
-| Fintech                   | 1         | 3%         |
-| Others                    | 3         | 8%         |
+| Government / Admin        | 10        | 24.4%      |
+| Education / University    | 7         | 17.1%      |
+| Health                    | 4         | 9.8%       |
+| Insurance                 | 3         | 7.3%       |
+| Telecommunications        | 3         | 7.3%       |
+| Engineering/Construction  | 3         | 7.3%       |
+| Finance / Banking         | 2         | 4.9%       |
+| IT/Consulting             | 2         | 4.9%       |
+| Fintech                   | 1         | 2.4%       |
+| E-commerce / Classifieds  | 1         | 2.4%       |
+| Sports / Leisure          | 1         | 2.4%       |
+| Others                    | 4         | 9.8%       |
 
 **Most prolific actors:**
 | Actor            | Type            | Incidents | Primary targets |
@@ -85,13 +99,13 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 | CrowStealer      | Data broker     | 5         | Egyptian government & education |
 | APT73/BASHE      | Ransomware      | 4         | Moroccan state institutions |
 | XP95             | Ransomware      | 3         | South African government |
+| xNov             | Data breach     | 3         | Moroccan supply chain, South African sports |
 | Qilin            | Ransomware      | 2         | Morocco, Madagascar |
 | The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
-| xNov             | Data breach     | 2         | Moroccan supply chain |
 
-**Daily timeline (March 2026 – disclosure dates):**
-- 01/03: 3 incidents
+**Daily timeline (March 2026 - disclosure dates):**
+- 01/03: 6 incidents (CIC, Zambia, Eventing SA, Bridges, Loozap, Diesel)
 - 02/03: 3
 - 03/03: 3
 - 04/03: 1
@@ -101,17 +115,18 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 - 12/03: 1
 - 13/03: 2
 - 14/03: 1
+- 17/03: 1 (UNISA)
 - 19/03: 1
 - 20/03: 2
 - 21/03: 1
 - 22/03: 1
-- 24/03: 1 (UBA Senegal disclosure)
+- 24/03: 1 (UBA Senegal)
 - 26/03: 4
 - 29/03: 2
 - 30/03: 3
 - 31/03: 3
 
-## 4. Detailed Analysis by Incident Type
+## 4. Detailed analysis by incident Type
 
 ### 4.1 Ransomware (19 incidents)
 
@@ -130,60 +145,68 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 - **APT73/BASHE** targeted strategic Moroccan institutions (HACA, Maroc Telecom, 2M TV, IRES), suggesting possible geopolitical motivation.
 - Insurance sector heavily hit in South Africa (Lion of Africa, The Unlimited).
 
-### 4.2 Data Breaches / System Intrusions (17 incidents)
+### 4.2 Data Breaches / System Intrusions (22 incidents)
 
 | Country          | Breaches/Intrusions | Main actors |
 |------------------|---------------------|-------------|
 | Egypt            | 5                   | CrowStealer (5) |
+| South Africa     | 6                   | xNov (2), TelephoneHooliganism, Blackwinter99, XP95 (already counted), Walter Sisulu University |
 | Morocco          | 3                   | xNov (2), anisanas2 |
-| South Africa     | 4                   | TelephoneHooliganism, XP95 (already counted in ransomware), Walter Sisulu University (data breach) |
 | Nigeria          | 2                   | AshleyWood2022, Bytetobreach |
+| Cameroon         | 1                   | zimablue |
+| Algeria          | 1                   | Grubder |
 | Senegal          | 1                   | Coordinated network |
+| Guinea           | 1                   | Keymous |
 | Zambia           | 1                   | Spirigatito |
 | DRC              | 1                   | privillege |
 
 **Key observations**:
 - **CrowStealer** dominates Egyptian breaches, including a medical database of 3.8 million patients (Ministry of Health) sold for $2,500.
-- **xNov** exposed student records (ONOUSC, 3,631 entries) and L'Oréal Morocco supply chain data (296 pharmacies, 361,000 sales records, OAuth2 secrets).
+- **xNov** exposed student records (ONOUSC, 3,631 entries), L'Oréal Morocco supply chain data (296 pharmacies, 361,000 sales records, OAuth2 secrets), and Eventing South Africa (equestrian database).
 - **UBA Senegal** (disclosed in March, executed in late January): attackers compromised the internal information system, manipulated databases (created/modified accounts, increased withdrawal limits, transferred funds), then coordinated over 3,400 ATM withdrawals across multiple cities in a few hours, netting 1.143 billion FCFA (~$1.9M). Potential exploited vulnerabilities: lack of real-time SOC monitoring, insufficient anti-fraud procedures, possible internal complicity.
+- **Loozap (Cameroon)** - 34,000 user accounts leaked with SHA1‑hashed passwords, IP addresses, personal data.
+- **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by Keymous, exposing health surveillance tools and government email/staff records.
 - Massive Nigerian breaches: Remita (3 TB, including KYC documents and government HSM keys) and Ahmadu Bello University (11,000+ staff records).
 
 ## 5. Sectoral Impact
 
 | Sector                | Incidents | Percentage |
 |-----------------------|-----------|------------|
-| Government / Admin    | 9         | 25%        |
-| Education / University| 7         | 19%        |
-| Health                | 3         | 8%         |
-| Insurance             | 3         | 8%         |
-| Telecommunications    | 3         | 8%         |
-| Engineering/Construction | 3      | 8%         |
-| Finance / Banking     | 2         | 6%         |
-| IT/Consulting         | 2         | 6%         |
-| Fintech               | 1         | 3%         |
-| Others                | 3         | 8%         |
+| Government / Admin    | 10        | 24.4%      |
+| Education / University| 7         | 17.1%      |
+| Health                | 4         | 9.8%       |
+| Insurance             | 3         | 7.3%       |
+| Telecommunications    | 3         | 7.3%       |
+| Engineering/Construction | 3      | 7.3%       |
+| Finance / Banking     | 2         | 4.9%       |
+| IT/Consulting         | 2         | 4.9%       |
+| Fintech               | 1         | 2.4%       |
+| E-commerce / Classifieds | 1      | 2.4%       |
+| Sports / Leisure      | 1         | 2.4%       |
+| Others                | 4         | 9.8%       |
 
 **Takeaways**:
-- Public sector (government + education) accounts for **44%** of all incidents.
-- Health data remains highly valued: Egyptian health ministry breach (3.8M records) and South African insurance leaks.
+- Public sector (government + education) accounts for **41.5%** of all incidents.
+- Health data remains highly valued: Egyptian health ministry breach (3.8M records), South African insurance leaks, Guinea health ministry compromise.
 - Telecoms (Orange Madagascar, Maroc Telecom) are strategic targets.
 - The UBA Senegal incident highlights a new trend: **direct financial fraud through system compromise**, bypassing traditional ransomware.
+- E‑commerce platforms (Loozap) are increasingly targeted for user credential theft.
 
-## 6. Threat Actor Profile
+## 6. Threat actor profile
 
 | Actor            | Type            | Incidents | Primary targets |
 |------------------|-----------------|-----------|-----------------|
 | CrowStealer      | Data broker     | 5         | Egyptian government & education |
 | APT73/BASHE      | Ransomware      | 4         | Moroccan state institutions |
 | XP95             | Ransomware      | 3         | South African government |
+| xNov             | Data breach     | 3         | Moroccan supply chain, South African sports, education |
 | Qilin            | Ransomware      | 2         | Morocco, Madagascar |
 | The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
-| xNov             | Data breach     | 2         | Moroccan supply chain |
 
-**Emerging actors**: xNov (supply chain focus), XP95 (South African government targeting). The UBA Senegal attack involved a **coordinated network** possibly with internal complicity – not a traditional ransomware group but a financially motivated intrusion team.
+**Emerging actors**: xNov (supply chain focus), XP95 (South African government targeting), zimablue (Cameroon e‑commerce), Keymous (West African health ministries), Grubder (Algerian tech sector).
 
-### 6.1 Risk Assessment
+### 6.1 Risk assessment
 
 | Country | Risk Level |
 |--------|-----------|
@@ -192,22 +215,25 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 | Egypt | 🔴 High |
 | Nigeria | 🟠 Medium-High |
 | Senegal | 🟠 Medium (post-UBA) |
+| Cameroon | 🟠 Medium (emerging) |
+| Guinea | 🟠 Medium |
 | Others | 🟠 Medium |
 
-## 7. Key Trends & Intelligence Gaps
+## 7. Key trends & intelligence gaps
 
 ### Trends
-1. **Ransomware evolves into data extortion** – XP95 and others sell exfiltrated data instead of merely encrypting.
-2. **Supply chain attacks** – Smarteez (L'Oréal Morocco provider) shows vulnerability of digital service providers.
-3. **Massive health data leaks** – Egyptian health ministry breach (3.8M records) highlights poor security in public health IT.
-4. **Geopolitical targeting** – APT73/BASHE focus on Moroccan state media and telecoms.
-5. **Direct financial fraud via system compromise** – UBA Senegal demonstrates that attackers bypass ransomware to go straight for the money, exploiting weak SOC and anti-fraud controls.
+1. **Ransomware evolves into data extortion** - XP95 and others sell exfiltrated data instead of merely encrypting.
+2. **Supply chain attacks** - Smarteez (L'Oréal Morocco provider) shows vulnerability of digital service providers.
+3. **Massive health data leaks** - Egyptian health ministry breach (3.8M records) highlights poor security in public health IT.
+4. **Geopolitical targeting** - APT73/BASHE focus on Moroccan state media and telecoms.
+5. **Direct financial fraud via system compromise** - UBA Senegal demonstrates that attackers bypass ransomware to go straight for the money, exploiting weak SOC and anti-fraud controls.
+6. **E‑commerce credential theft** - Loozap (Cameroon) leak of 34,000 accounts with weak SHA1 hashing.
 
 ### Gaps
 - Many attacks go undetected or unreported; this list only includes publicly disclosed incidents.
-- Attribution uncertainty for some groups (e.g., CrowStealer may be a reseller, not attacker).
 - Actual data volumes may be inflated by actors.
-- The UBA Senegal attack was executed in late January but only disclosed in March – significant delay in public awareness.
+- The UBA Senegal attack was executed in late January but only disclosed in March - significant delay in public awareness.
+- Guinea’s Ministry of Health compromise remains partially confirmed (correlated access, not full disclosure).
 
 ## 8. MITRE ATT&CK Mapping (Contextual)
 
@@ -218,6 +244,8 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 | ONOUSC | T1078 - Valid Accounts |
 | Egypt Health DB | T1005 - Data from Local System |
 | UBA Senegal | T1190 - Exploit Public-Facing App, T1078 - Valid Accounts, T1048 - Exfiltration over Alternative Protocol, T1531 - Account Manipulation |
+| Loozap | T1190 - Exploit Public-Facing App, T1005 - Data from Local System (weak SHA1 storage) |
+| Guinea Health | T1190, T1078 (suspected) |
 
 **Common techniques observed**:
 - T1566 - Phishing  
@@ -236,12 +264,13 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 - **Staff training**: Phishing awareness (primary initial vector).
 - **Real-time monitoring**: Deploy or strengthen Security Operations Centers (SOC) with 24/7 capability; implement transaction anomaly detection (especially for financial institutions).
 - **Anti-fraud mechanisms**: Dynamic withdrawal limits, automatic blocking on abnormal patterns, behavioral analysis.
+- **Password security**: Enforce strong hashing (bcrypt, Argon2) instead of SHA1; implement MFA for all user accounts.
 
 ### For CTI analysts
-- Monitor **XP95** and **xNov** for new campaigns.
+- Monitor **XP95**, **xNov**, **zimablue**, **Keymous** for new campaigns.
 - Track supply chain exposures (especially digital marketing and logistics providers).
-- Prioritize monitoring of government, education, and health sectors in North and Southern Africa.
-- Watch for **non-ransomware financial intrusions** – UBA Senegal is likely not an isolated case.
+- Prioritize monitoring of government, education, and health sectors in North, West, and Southern Africa.
+- Watch for **non-ransomware financial intrusions** - UBA Senegal is likely not an isolated case.
 
 ## 10. SOC Recommendations
 
@@ -270,7 +299,7 @@ In March 2026, **36 cyber incidents** targeting African entities were publicly c
 
 ## 12. Conclusion
 
-March 2026 confirms that **Africa is a prime target for industrialized cybercrime**. The convergence of ransomware groups, data brokers, supply chain attacks, and now **direct financial system intrusions** (UBA Senegal) creates a high-risk environment. South Africa, Morocco, and Egypt remain the most affected, but the UBA incident shows that **West Africa is also under serious threat**. Financial institutions must urgently strengthen real-time monitoring and anti-fraud capabilities. AFRINTEL will continue tracking these trends.
+March 2026 confirms that **Africa is a prime target for industrialized cybercrime**. The convergence of ransomware groups, data brokers, supply chain attacks, direct financial intrusions (UBA Senegal), and e‑commerce credential theft (Loozap) creates a high-risk environment. South Africa, Morocco, and Egypt remain the most affected, but **West and Central Africa are emerging as new hotspots** (Senegal, Cameroon, Guinea). Health ministries are increasingly targeted, as seen in Egypt and Guinea. Financial institutions and e‑commerce platforms must urgently strengthen real-time monitoring, anti-fraud capabilities, and password security. AFRINTEL will continue tracking these trends.
 
 **AFRINTEL** - African Cyber Threat Intelligence Initiative  
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
