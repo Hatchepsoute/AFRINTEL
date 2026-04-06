@@ -114,8 +114,8 @@ xychart-beta
     title "Ransomware vs Fuites de données par pays"
     x-axis ["Afrique Sud", "Maroc", "Égypte", "Nigeria", "Zambie", "Madagascar", "Tunisie", "Namibie", "Tanzanie", "RDC"]
     y-axis "Incidents" 0 to 12
-    line [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
-    line [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+    line "Ransomware" [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
+    line "Fuites de données" [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
 ```
 
 **Répartition sectorielle :**
@@ -183,26 +183,19 @@ pie
 | Tanzanie         | 1                   | Morpheus |
 
 ```mermaid
-bar
-    title Ransomware par pays
-    "🇿🇦 Afrique du Sud" : 10
-    "🇲🇦 Maroc" : 5
-    "🇪🇬 Egypte" : 3
-    "🇲🇬 Madagascar" : 1
-    "🇹🇳 Tunisie" : 1
-    "🇳🇦 Namibie" : 1
-    "🇹🇿 Tanzanie" : 1
+xychart-beta
+    title "Ransomware par pays"
+    x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Egypte", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie"]
+    y-axis "Attaques" 0 to 12
+    bar "Ransomware" [10, 5, 3, 1, 1, 1, 1]
 ```
 
 ```mermaid
-bar
-    title Fuite de données par pays
-    "🇿🇦 South Africa" : 2
-    "🇲🇦 Morocco" : 3
-    "🇪🇬 Egypt" : 5
-    "🇳🇬 Nigeria" : 2
-    "🇿🇲 Zambia" : 1
-    "🇨🇩 DRC" : 1
+xychart-beta
+    title "Fuite de données par pays"
+    x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
+    y-axis "Fuites" 0 to 6
+    bar "Fuites de données" [2, 3, 5, 2, 1, 1]
 ```
  
 **Observations clés** :
@@ -226,7 +219,7 @@ xychart-beta
     title "Fuites de données - Nombre par pays"
     x-axis ["🇪🇬 Égypte", "🇲🇦 Maroc", "🇿🇦 Afrique du Sud", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
     y-axis "Fuites" 0 to 6
-    bar [5, 3, 2, 2, 1, 1]
+    bar "Fuites de données" [5, 3, 2, 2, 1, 1]
 ```
 
 **Observations clés** :
