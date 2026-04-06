@@ -126,7 +126,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 - 30/03: 3
 - 31/03: 3
 
-## 4. Detailed analysis by incident Type
+## 4. Detailed analysis by incident type
 
 ### 4.1 Ransomware (19 incidents)
 
@@ -150,7 +150,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 | Country          | Breaches/Intrusions | Main actors |
 |------------------|---------------------|-------------|
 | Egypt            | 5                   | CrowStealer (5) |
-| South Africa     | 6                   | xNov (2), TelephoneHooliganism, Blackwinter99, XP95 (already counted), Walter Sisulu University |
+| South Africa     | 6                   | xNov (2), TelephoneHooliganism, Blackwinter99, XP95 |
 | Morocco          | 3                   | xNov (2), anisanas2 |
 | Nigeria          | 2                   | AshleyWood2022, Bytetobreach |
 | Cameroon         | 1                   | zimablue |

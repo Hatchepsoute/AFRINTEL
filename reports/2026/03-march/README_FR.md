@@ -149,7 +149,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 | Pays             | Fuites/Intrusions | Acteurs principaux |
 |------------------|-------------------|---------------------|
 | Égypte           | 5                 | CrowStealer (5) |
-| Afrique du Sud   | 6                 | xNov (2), TelephoneHooliganism, Blackwinter99, XP95 (déjà compté), Walter Sisulu University |
+| Afrique du Sud   | 6                 | xNov (2), TelephoneHooliganism, Blackwinter99, XP95|
 | Maroc            | 3                 | xNov (2), anisanas2 |
 | Nigeria          | 2                 | AshleyWood2022, Bytetobreach |
 | Cameroun         | 1                 | zimablue |
