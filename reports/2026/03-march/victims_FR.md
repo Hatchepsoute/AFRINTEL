@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Source%20des%20données-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques - Mars 2026 (35 victimes)
+# Liste des victimes africaines de cyberattaques - Mars 2026 (36 victimes)
 👉🏾 [**English version available here**](./victims.md)
 
 ## Portée et méthodologie
@@ -16,20 +16,21 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Vérification :** Validation des URLs institutionnelles et enrichissement des descriptions techniques.
 
 ## Synthèse rapide
-- **Victimes recensées :** 35
-- **Pays touchés :** 10
-- **Acteurs observés :** 22
-- **Pays les plus touchés :** Afrique du Sud (10), Maroc (8), Égypte (7)
+- **Victimes recensées :** 36
+- **Pays touchés :** 11
+- **Acteurs observés :** 23
+- **Pays les plus touchés :** Afrique du Sud (11), Maroc (8), Égypte (8)
 
 ### Typologie des incidents
-- **Ransomware (chiffrement + rançon) :** 21 incidents (60 %)
-- **Fuites de données (exfiltration sans chiffrement) :** 14 incidents (40 %)
+- **Ransomware (chiffrement + rançon) :** 19 incidents (53 %)
+- **Fuites de données / intrusions système :** 17 incidents (47 %)
 
 ### Répartition par pays
-- 🇿🇦 Afrique du Sud : **10** victimes
+- 🇿🇦 Afrique du Sud : **11** victimes
 - 🇲🇦 Maroc : **8** victimes
-- 🇪🇬 Égypte : **7** victimes
+- 🇪🇬 Égypte : **8** victimes
 - 🇳🇬 Nigeria : **2** victimes
+- 🇸🇳 Sénégal : **1** victime
 - 🇿🇲 Zambie : **1** victime
 - 🇲🇬 Madagascar : **1** victime
 - 🇹🇳 Tunisie : **1** victime
@@ -60,6 +61,22 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **AshleyWood2022** : 1 victime
 - **Bytetobreach** : 1 victime
 - **privillege** : 1 victime
+- **Réseau coordonné (UBA Sénégal)** : 1 victime
+
+### Comparaison ransomware vs fuites par pays
+| Pays                  | Ransomware | Fuites de données |
+|-----------------------|------------|-------------------|
+| 🇿🇦 Afrique du Sud     | 7          | 4                 |
+| 🇲🇦 Maroc              | 5          | 3                 |
+| 🇪🇬 Égypte             | 3          | 5                 |
+| 🇳🇬 Nigeria            | 0          | 2                 |
+| 🇸🇳 Sénégal            | 0          | 1                 |
+| 🇿🇲 Zambie             | 0          | 1                 |
+| 🇲🇬 Madagascar         | 1          | 0                 |
+| 🇹🇳 Tunisie            | 1          | 0                 |
+| 🇳🇦 Namibie            | 1          | 0                 |
+| 🇹🇿 Tanzanie           | 1          | 0                 |
+| 🇨🇩 RDC                | 0          | 1                 |
 
 ## Mars 2026
 
@@ -237,6 +254,15 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Site web :** [sfce.co.za](http://www.sfce.co.za)
 - **Statut :** Revendication
 - **Description victime :** Cabinet de conseil en ingénierie basé en Afrique du Sud.
+
+### 24 Mars 2026
+#### 🇸🇳 Sénégal - United Bank for Africa (UBA Sénégal)
+- **Acteur / Groupe :** Réseau coordonné (suspicions de complicités internes)
+- **Secteur :** Finance / Banque
+- **Site web :** [ubasenegal.com](https://www.ubasenegal.com)
+- **Date de l’attaque :** 30-31 janvier 2026 (révélée le 24 mars 2026)
+- **Statut :** Intrusion système & fraude massive (1,143 milliard FCFA ~ 1,9 million USD)
+- **Description victime :** UBA Sénégal a subi une cyberattaque d’une ampleur exceptionnelle. En quelques heures, plus de 3 400 retraits frauduleux ont été effectués dans les GAB de plusieurs villes (Dakar, Thiès, Kaolack). Les attaquants ont compromis le système d’information interne, manipulé les bases de données (création/modification de comptes, augmentation des plafonds de retrait, transferts de fonds depuis des clients légitimes), puis ont coordonné des retraits simultanés pour vider les distributeurs avant détection. Vulnérabilités probables : absence de supervision SOC en temps réel, procédures antifraude insuffisantes sur les retraits massifs, possible complicité interne, et mauvaise configuration des dispositifs de sécurité. Cet incident est un signal d’alarme majeur pour les institutions financières ouest‑africaines.
 
 ### 26 Mars 2026
 #### 🇿🇦 Afrique du Sud - ETFSA

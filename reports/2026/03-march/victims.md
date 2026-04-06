@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
-# List of African cyberattack victims - March 2026 (35 victims)
+# List of African cyberattack victims - March 2026 (36 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Scope and methodology
@@ -16,20 +16,21 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Verification:** Validation of institutional URLs and enrichment of technical descriptions.
 
 ## Quick overview
-- **Victims recorded:** 35
-- **Countries affected:** 10
-- **Actors observed:** 22
-- **Most affected countries:** South Africa (10), Morocco (8), Egypt (7)
+- **Victims recorded:** 36
+- **Countries affected:** 11
+- **Actors observed:** 23
+- **Most affected countries:** South Africa (11), Morocco (8), Egypt (8)
 
 ### Incident typology
-- **Ransomware (encryption + ransom):** 21 incidents (60%)
-- **Data breaches (exfiltration without encryption):** 14 incidents (40%)
+- **Ransomware (encryption + ransom):** 19 incidents (53%)
+- **Data breaches / system intrusions:** 17 incidents (47%)
 
 ### Breakdown by country
-- 🇿🇦 South Africa: **10** victims
+- 🇿🇦 South Africa: **11** victims
 - 🇲🇦 Morocco: **8** victims
-- 🇪🇬 Egypt: **7** victims
+- 🇪🇬 Egypt: **8** victims
 - 🇳🇬 Nigeria: **2** victims
+- 🇸🇳 Senegal: **1** victim
 - 🇿🇲 Zambia: **1** victim
 - 🇲🇬 Madagascar: **1** victim
 - 🇹🇳 Tunisia: **1** victim
@@ -60,6 +61,22 @@ This list records ransomware and data breach incidents targeting African entitie
 - **AshleyWood2022**: 1 victim
 - **Bytetobreach**: 1 victim
 - **privillege**: 1 victim
+- **Coordinated network (UBA Senegal)**: 1 victim
+
+### Ransomware vs Data Breaches by country
+| Country               | Ransomware | Data Breach |
+|-----------------------|------------|-------------|
+| 🇿🇦 South Africa       | 7          | 4           |
+| 🇲🇦 Morocco            | 5          | 3           |
+| 🇪🇬 Egypt              | 3          | 5           |
+| 🇳🇬 Nigeria            | 0          | 2           |
+| 🇸🇳 Senegal            | 0          | 1           |
+| 🇿🇲 Zambia             | 0          | 1           |
+| 🇲🇬 Madagascar         | 1          | 0           |
+| 🇹🇳 Tunisia            | 1          | 0           |
+| 🇳🇦 Namibia            | 1          | 0           |
+| 🇹🇿 Tanzania           | 1          | 0           |
+| 🇨🇩 DRC                | 0          | 1           |
 
 ## March 2026
 
@@ -237,6 +254,15 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Website:** [sfce.co.za](http://www.sfce.co.za)
 - **Status:** Claim
 - **Victim description:** Engineering consulting firm based in South Africa.
+
+### 24 March 2026
+#### 🇸🇳 Senegal - United Bank for Africa (UBA Senegal)
+- **Actor / Group:** Coordinated network (suspected internal complicity)
+- **Sector:** Finance / Banking
+- **Website:** [ubasenegal.com](https://www.ubasenegal.com)
+- **Date of attack:** 30-31 January 2026 (disclosed on 24 March 2026)
+- **Status:** System intrusion & massive fraud (1.143 billion FCFA ~ $1.9 million USD)
+- **Victim description:** UBA Senegal suffered an exceptional cyberattack. Over a few hours, more than 3,400 fraudulent withdrawals were executed across ATMs in multiple cities (Dakar, Thiès, Kaolack). Attackers compromised the internal information system, manipulated databases (creating/modifying accounts, increasing withdrawal limits, transferring funds from legitimate clients), then coordinated simultaneous withdrawals to empty ATMs before detection. Potential exploited vulnerabilities: lack of real-time SOC monitoring, insufficient anti‑fraud procedures on mass withdrawals, possible internal complicity, and weak security configurations. This incident is a major wake‑up call for West African financial institutions.
 
 ### 26 March 2026
 #### 🇿🇦 South Africa - ETFSA
