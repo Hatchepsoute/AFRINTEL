@@ -102,14 +102,33 @@ pie
 | 🇨🇩 DRC                | 0          | 1           |
 
 ```mermaid
-xychart-beta
-    title "Ransomware vs Data Breaches by country"
-    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
-    y-axis "Number of incidents" 0 to 12
-    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
-    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+bar
+    title Ransomware by country
+    "🇿🇦 South Africa" : 10
+    "🇲🇦 Morocco" : 5
+    "🇪🇬 Egypt" : 3
+    "🇳🇬 Nigeria" : 0
+    "🇿🇲 Zambia" : 0
+    "🇲🇬 Madagascar" : 1
+    "🇹🇳 Tunisia" : 1
+    "🇳🇦 Namibia" : 1
+    "🇹🇿 Tanzania" : 1
+    "🇨🇩 DRC" : 0
 ```
-
+```mermaid
+bar
+    title Data Breaches by country
+    "🇿🇦 South Africa" : 2
+    "🇲🇦 Morocco" : 3
+    "🇪🇬 Egypt" : 5
+    "🇳🇬 Nigeria" : 2
+    "🇿🇲 Zambia" : 1
+    "🇲🇬 Madagascar" : 0
+    "🇹🇳 Tunisia" : 0
+    "🇳🇦 Namibia" : 0
+    "🇹🇿 Tanzania" : 0
+    "🇨🇩 DRC" : 1
+```
 
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |

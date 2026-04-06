@@ -98,13 +98,34 @@ pie
 | 🇹🇿 Tanzanie           | 1          | 0                 |
 | 🇨🇩 RDC                | 0          | 1                 |
 ```mermaid
-xychart-beta
-    title "Ransomware vs Fuites de données par pays"
-    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
-    y-axis "Nombre d'incidents" 0 to 12
-    bar [10, 5, 3, 0, 0, 1, 1, 1, 1, 0]
-    bar [2, 3, 5, 2, 1, 0, 0, 0, 0, 1]
+bar
+    title Ransomware par pays
+    "🇿🇦 Afrique du Sud" : 10
+    "🇲🇦 Maroc" : 5
+    "🇪🇬 Égypte" : 3
+    "🇳🇬 Nigeria" : 0
+    "🇿🇲 Zambie" : 0
+    "🇲🇬 Madagascar" : 1
+    "🇹🇳 Tunisie" : 1
+    "🇳🇦 Namibie" : 1
+    "🇹🇿 Tanzanie" : 1
+    "🇨🇩 RDC" : 0
 ```
+
+```mermaid
+bar
+    title Fuites de données par pays
+    "🇿🇦 Afrique du Sud" : 2
+    "🇲🇦 Maroc" : 3
+    "🇪🇬 Égypte" : 5
+    "🇳🇬 Nigeria" : 2
+    "🇿🇲 Zambie" : 1
+    "🇲🇬 Madagascar" : 0
+    "🇹🇳 Tunisie" : 0
+    "🇳🇦 Namibie" : 0
+    "🇹🇿 Tanzanie" : 0
+    "🇨🇩 RDC" : 1
+``` 
 ```mermaid
 xychart-beta
     title "Ransomware vs Fuites de données par pays"
