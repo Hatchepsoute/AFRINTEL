@@ -113,12 +113,12 @@
 - **Description victime :** L'une des plus grandes sociétés égyptiennes de développement immobilier.
 
 ### 18 Février 2026
-#### 🇸🇩 Soudan - amtaar.com
+#### 🇸🇩 Soudan - Amtaar Investment 
 - **Groupe ransomware :** apt73/bashe
-- **Secteur :** Conseil
+- **Secteur :** Agriculture / Agro-industrie
 - **Site web :** amtaar.com
-- **Statut :** Revendication
-- **Description victime :** Société d'investissement et de conseil agricole basée au Soudan.
+- **Statut :** Revendication & divulgation de 3,5 Go de données
+- **Description victime :** Société de conseil et d'investissement agricole gérant 6 000 hectares de terres irriguées au Soudan, acteur clé de la sécurité alimentaire nationale.
 
 ### 19 Février 2026
 #### 🇨🇮 Côte d'Ivoire - aircotedivoire.com

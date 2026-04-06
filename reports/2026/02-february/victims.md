@@ -113,12 +113,12 @@
 - **Victim Description:** One of Egypt's leading real estate development companies.
 
 ### 18 February 2026
-#### 🇸🇩 Sudan - amtaar.com
+#### 🇸🇩 Sudan - Amtaar Investment
 - **Threat Actor:** apt73/bashe
-- **Sector:** Consulting
+- **Sector:** Agriculture / Agribusiness
 - **Website:** amtaar.com
-- **Status:** Claim
-- **Victim Description:** Agricultural investment and consulting firm based in Sudan.
+- **Status:** Claimed & leaked 3.5 GB of data
+- **Victim Description:** A major agricultural investment and consulting firm operating in Sudan, managing 6,000 hectares of irrigated land and serving as a key player in national food security..
 
 ### 19 February 2026
 #### 🇨🇮 Ivory Coast - aircotedivoire.com
