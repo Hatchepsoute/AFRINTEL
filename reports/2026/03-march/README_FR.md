@@ -15,7 +15,9 @@ En mars 2026, **35 incidents cyber** ciblant des entités africaines ont été r
 - **22 acteurs distincts** ; **CrowStealer** (5 incidents), **APT73/BASHE** (4) et **XP95** (3) sont les plus actifs.
 - **Secteurs gouvernemental et éducatif** : 46 % des victimes, montrant un ciblage stratégique des institutions publiques.
 - Fuites massives : ministère de la Santé égyptien (3,8 M d’enregistrements), province de Gauteng (3,8 To), Remita Nigeria (3 To), Stats SA (154 Go).
+## 📋 Liste des victimes
 
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 ## 2. Méthodologie
 
 - **Périmètre** : 54 pays africains.
@@ -47,7 +49,7 @@ pie
 - 🇪🇬 Égypte : 7 victimes
 
 ```mermaid
-xychart-beta
+pie
     title Pays les plus ciblés
     "🇿🇦 Afrique du Sud" : 10
     "🇲🇦 Maroc" : 8
@@ -93,7 +95,7 @@ pie
 | RDC            | 0          | 1      |
 
 ```mermaid
-xychart-beta
+pie
     title "Ransomware vs Fuites de données par pays"
     x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
     y-axis "Nombre d'incidents" 0 to 12
@@ -140,7 +142,7 @@ pie
 | xNov             | Fuite de données | 2       | Supply chain marocaine |
 
 ```mermaid
-xychart-beta
+pie
     title "Acteurs les plus actifs"
     x-axis "Incidents" 0 to 6
     y-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
@@ -169,7 +171,7 @@ xychart-beta
 - 31/03 : 3
 
 ```mermaid
-xychart-beta
+pie
     title "Chronologie des incidents - Mars 2026"
     x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
     y-axis "Incidents" 0 to 5
@@ -191,7 +193,7 @@ xychart-beta
 | Tanzanie         | 1                   | Morpheus |
 
 ```mermaid
-xychart-beta
+pie
     title "Ransomware - Nombre d'attaques par pays"
     x-axis ["🇿🇦 Afrique du Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie"]
     y-axis "Attaques" 0 to 12
@@ -215,7 +217,7 @@ xychart-beta
 | RDC              | 1      | privillege |
 
 ```mermaid
-xychart-beta
+pie
     title "Fuites de données - Nombre par pays"
     x-axis ["🇪🇬 Égypte", "🇲🇦 Maroc", "🇿🇦 Afrique du Sud", "🇳🇬 Nigeria", "🇿🇲 Zambie", "🇨🇩 RDC"]
     y-axis "Fuites" 0 to 6

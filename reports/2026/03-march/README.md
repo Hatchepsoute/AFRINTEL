@@ -6,6 +6,7 @@
 
 # CTI Report - Cyberattacks in Africa (March 2026)
 👉🏾 [**French version available here**](./README_FR.md)
+
 ## 1. Executive summary
 
 In March 2026, **35 cyber incidents** targeting African entities were publicly claimed or detected. The continent continues to face a dual threat: **ransomware** (encryption with ransom demand) and **data breaches** (exfiltration without encryption). Key findings:
@@ -16,6 +17,9 @@ In March 2026, **35 cyber incidents** targeting African entities were publicly c
 - **Government and education sectors** represent 46% of victims, highlighting a strategic focus on public institutions.
 - Massive data leaks: Egyptian health ministry (3.8M records), Gauteng provincial government (3.8 TB), Remita Nigeria (3 TB), Stats SA (154 GB).
 
+## 📋 Victim List
+
+👉🏾 [View full victim list](./victims.md)
 ## 2. Methodology
 
 - **Scope**: 54 African countries.
@@ -48,7 +52,7 @@ pie
 - 🇪🇬 Egypt: 7 victims
 
 ```mermaid
-xychart-beta
+pie
     title Most targeted countries
     "🇿🇦 South Africa" : 10
     "🇲🇦 Morocco" : 8
@@ -94,7 +98,7 @@ pie
 | DRC           | 0          | 1           |
 
 ```mermaid
-xychart-beta
+pie
     title "Ransomware vs Data Breaches by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇨🇩 DRC"]
     y-axis "Number of incidents" 0 to 12
@@ -128,7 +132,7 @@ xychart-beta
 | xNov             | Data breach     | 2         | Moroccan supply chain |
 
 ```mermaid
-xychart-beta
+pie
     title "Most prolific threat actors"
     x-axis "Incidents" 0 to 6
     y-axis ["CrowStealer", "APT73/BASHE", "XP95", "Qilin", "The Gentlemen", "INC Ransom", "xNov"]
@@ -156,7 +160,7 @@ xychart-beta
 - 31/03: 3
 
 ```mermaid
-xychart-beta
+pie
     title "Daily incident timeline - March 2026"
     x-axis ["1/3", "2/3", "3/3", "4/3", "5/3", "6/3", "9/3", "12/3", "13/3", "14/3", "19/3", "20/3", "21/3", "22/3", "26/3", "29/3", "30/3", "31/3"]
     y-axis "Incidents" 0 to 5
@@ -177,7 +181,7 @@ xychart-beta
 | Tanzania         | 1                  | Morpheus |
 
 ```mermaid
-xychart-beta
+pie
     title "Ransomware - Number of attacks by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania"]
     y-axis "Attacks" 0 to 12
@@ -201,7 +205,7 @@ xychart-beta
 | DRC              | 1        | privillege |
 
 ```mermaid
-xychart-beta
+pie
     title "Data breaches - Number by country"
     x-axis ["🇪🇬 Egypt", "🇲🇦 Morocco", "🇿🇦 South Africa", "🇳🇬 Nigeria", "🇿🇲 Zambia", "🇨🇩 DRC"]
     y-axis "Breaches" 0 to 6
