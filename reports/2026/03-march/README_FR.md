@@ -77,7 +77,7 @@ pie
     "🇨🇩 RDC (1)" : 1
 ```
 
-**Comparaison ransomware vs fuites par pays :**
+**Comparaison ransomware vs fuites de données par pays :**
 | Pays                  | Ransomware | Fuites de données |
 |-----------------------|------------|-------------------|
 | Afrique du Sud        | 7          | 6                 |
