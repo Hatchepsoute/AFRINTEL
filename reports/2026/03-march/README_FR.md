@@ -14,7 +14,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 - **14 pays touchés** ; **Afrique du Sud** (13 incidents), **Maroc** (8) et **Égypte** (8) représentent 71 % des victimes.
 - **27 acteurs distincts** ; **CrowStealer** (5 incidents), **APT73/BASHE** (4) et **XP95** (3) sont les plus actifs.
 - **Secteurs gouvernemental et éducatif** : 41,5 % des victimes, montrant un ciblage stratégique des institutions publiques.
-- Fuites massives : ministère de la Santé égyptien (3,8 M d’enregistrements), province de Gauteng (3,8 To), Remita Nigeria (3 To), Stats SA (154 Go).
+- Fuites massives : ministère de la Santé égyptien (3,8 M d’enregistrements), province de Gauteng (3,8 To), Remita Nigeria (3 To), Stats SA (154 Go). Au Maroc, plusieurs fuites majeures ont touché des institutions gouvernementales, dont le Ministère de la Justice (300 Go de dossiers judiciaires).
 - Nouvel incident majeur : **UBA Sénégal** - un braquage cyber coordonné avec compromission du système, manipulation de bases de données et plus de 3 400 retraits frauduleux en GAB totalisant 1,143 milliard FCFA (~1,9 M USD), révélé en mars mais exécuté fin janvier.
 - Menaces émergentes : **Loozap (Cameroun)** - 34 000 comptes utilisateurs divulgués (mots de passe en SHA1) ; **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par l’acteur Keymous.
 
@@ -58,6 +58,25 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 - 🇹🇿 Tanzanie : 1 victime
 - 🇨🇩 RDC : 1 victime
 
+```mermaid
+pie
+    title Nombre de victimes par pays (mars 2026)
+    "🇿🇦 Afrique du Sud (13)" : 13
+    "🇲🇦 Maroc (8)" : 8
+    "🇪🇬 Égypte (8)" : 8
+    "🇳🇬 Nigeria (2)" : 2
+    "🇨🇲 Cameroun (1)" : 1
+    "🇩🇿 Algérie (1)" : 1
+    "🇸🇳 Sénégal (1)" : 1
+    "🇬🇳 Guinée (1)" : 1
+    "🇿🇲 Zambie (1)" : 1
+    "🇲🇬 Madagascar (1)" : 1
+    "🇹🇳 Tunisie (1)" : 1
+    "🇳🇦 Namibie (1)" : 1
+    "🇹🇿 Tanzanie (1)" : 1
+    "🇨🇩 RDC (1)" : 1
+```
+
 **Comparaison ransomware vs fuites par pays :**
 | Pays                  | Ransomware | Fuites de données |
 |-----------------------|------------|-------------------|
@@ -76,6 +95,15 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 | Tanzanie              | 1          | 0                 |
 | RDC                   | 0          | 1                 |
 
+```mermaid
+xychart-beta
+    title "Ransomware vs fuites de données par pays"
+    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇨🇲 Cameroun", "🇩🇿 Algérie", "🇸🇳 Sénégal", "🇬🇳 Guinée", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
+    y-axis "Nombre d'incidents" 0 to 14
+    bar [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
+    bar [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+```
+
 **Répartition sectorielle :**
 | Secteur                    | Incidents | Pourcentage |
 |----------------------------|-----------|-------------|
@@ -92,6 +120,23 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 | Sport / Loisirs            | 1         | 2,4 %       |
 | Autres                     | 4         | 9,8 %       |
 
+```mermaid
+pie
+    title Répartition sectorielle (mars 2026)
+    "Gouvernement (10)" : 10
+    "Éducation (7)" : 7
+    "Santé (4)" : 4
+    "Assurance (3)" : 3
+    "Télécoms (3)" : 3
+    "Ingénierie/Construction (3)" : 3
+    "Finance/Banque (2)" : 2
+    "IT/Consulting (2)" : 2
+    "Fintech (1)" : 1
+    "E-commerce/Annonces (1)" : 1
+    "Sport/Loisirs (1)" : 1
+    "Autres (4)" : 4
+```
+
 **Acteurs les plus prolifiques :**
 | Acteur           | Type           | Incidents | Cibles principales |
 |------------------|----------------|-----------|---------------------|
@@ -102,7 +147,6 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 | Qilin            | Ransomware     | 2         | Maroc, Madagascar |
 | The Gentlemen    | Ransomware     | 2         | Tunisie, Afrique du Sud |
 | INC Ransom       | Ransomware     | 2         | Namibie, Afrique du Sud |
-
 
 ## 4. Analyse détaillée par type d’incident
 
@@ -122,6 +166,14 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 - **XP95** est devenu une menace majeure en Afrique du Sud : gouvernement de Gauteng (3,8 To), Stats SA (154 Go) et GCRA (147 Go). Les données sont vendues, pas seulement chiffrées.
 - **APT73/BASHE** a ciblé des institutions stratégiques marocaines (HACA, Maroc Telecom, 2M TV, IRES), suggérant une motivation géopolitique.
 - Le secteur des assurances lourdement touché en Afrique du Sud (Lion of Africa, The Unlimited).
+
+```mermaid
+xychart-beta
+    title "Acteurs les plus actifs"
+    x-axis "Incidents" 0 to 6
+    y-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
+    bar [5, 4, 3, 3, 2, 2, 2]
+```
 
 ### 4.2 Fuites de données / intrusions système (22 incidents)
 

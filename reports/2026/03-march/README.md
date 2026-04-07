@@ -15,7 +15,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 - **14 countries** affected; **South Africa** (13 incidents), **Morocco** (8) and **Egypt** (8) account for 71% of all victims.
 - **27 distinct threat actors**; **CrowStealer** (5 incidents), **APT73/BASHE** (4) and **XP95** (3) are the most active.
 - **Government and education sectors** represent 39% of victims, highlighting a strategic focus on public institutions.
-- Massive data leaks: Egyptian health ministry (3.8M records), Gauteng provincial government (3.8 TB), Remita Nigeria (3 TB), Stats SA (154 GB).
+- Massive data leaks: Egyptian health ministry (3.8M records), Gauteng provincial government (3.8 TB), Remita Nigeria (3 TB), Stats SA (154 GB). In Morocco, several major breaches hit government institutions, including the Ministry of Justice (300 GB of court case files).
 - New major incident: **UBA Senegal** - a coordinated cyber heist involving system compromise, database manipulation, and over 3,400 fraudulent ATM withdrawals totaling 1.143 billion FCFA (~$1.9M USD), disclosed in March but executed in late January.
 - Emerging threats: **Loozap (Cameroon)** - 34,000 user accounts leaked (SHA1 passwords); **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by actor Keymous.
 
@@ -59,7 +59,26 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 - 🇹🇿 Tanzania: 1 victim
 - 🇨🇩 DRC: 1 victim
 
-**Ransomware vs Data Breaches by country:**
+```mermaid
+pie
+    title Number of victims by country (March 2026)
+    "🇿🇦 South Africa (13)" : 13
+    "🇲🇦 Morocco (8)" : 8
+    "🇪🇬 Egypt (8)" : 8
+    "🇳🇬 Nigeria (2)" : 2
+    "🇨🇲 Cameroon (1)" : 1
+    "🇩🇿 Algeria (1)" : 1
+    "🇸🇳 Senegal (1)" : 1
+    "🇬🇳 Guinea (1)" : 1
+    "🇿🇲 Zambia (1)" : 1
+    "🇲🇬 Madagascar (1)" : 1
+    "🇹🇳 Tunisia (1)" : 1
+    "🇳🇦 Namibia (1)" : 1
+    "🇹🇿 Tanzania (1)" : 1
+    "🇨🇩 DRC (1)" : 1
+```
+
+**Ransomware vs data breaches by country:**
 | Country               | Ransomware | Data Breach |
 |-----------------------|------------|-------------|
 | South Africa          | 7          | 6           |
@@ -76,6 +95,15 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 | Namibia               | 1          | 0           |
 | Tanzania              | 1          | 0           |
 | DRC                   | 0          | 1           |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Data Breaches by country"
+    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇨🇲 Cameroon", "🇩🇿 Algeria", "🇸🇳 Senegal", "🇬🇳 Guinea", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
+    y-axis "Number of incidents" 0 to 14
+    bar [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
+    bar [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+```
 
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
@@ -104,6 +132,13 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 | The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
 
+```mermaid
+xychart-beta
+    title "Most prolific threat actors"
+    x-axis "Incidents" 0 to 6
+    y-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
+    bar [5, 4, 3, 3, 2, 2, 2]
+```
 
 ## 4. Detailed analysis by incident type
 
@@ -163,6 +198,23 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 | E-commerce / Classifieds | 1      | 2.4%       |
 | Sports / Leisure      | 1         | 2.4%       |
 | Others                | 4         | 9.8%       |
+
+```mermaid
+pie
+    title Sector distribution (March 2026)
+    "Government (10)" : 10
+    "Education (7)" : 7
+    "Health (4)" : 4
+    "Insurance (3)" : 3
+    "Telecoms (3)" : 3
+    "Engineering/Construction (3)" : 3
+    "Finance/Banking (2)" : 2
+    "IT/Consulting (2)" : 2
+    "Fintech (1)" : 1
+    "E-commerce/Classifieds (1)" : 1
+    "Sports/Leisure (1)" : 1
+    "Others (4)" : 4
+```
 
 **Takeaways**:
 - Public sector (government + education) accounts for **41.5%** of all incidents.
@@ -280,5 +332,5 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 
 March 2026 confirms that **Africa is a prime target for industrialized cybercrime**. The convergence of ransomware groups, data brokers, supply chain attacks, direct financial intrusions (UBA Senegal), and e‑commerce credential theft (Loozap) creates a high-risk environment. South Africa, Morocco, and Egypt remain the most affected, but **West and Central Africa are emerging as new hotspots** (Senegal, Cameroon, Guinea). Health ministries are increasingly targeted, as seen in Egypt and Guinea. Financial institutions and e‑commerce platforms must urgently strengthen real-time monitoring, anti-fraud capabilities, and password security. AFRINTEL will continue tracking these trends.
 
-**AFRINTEL** - African Cyber Threat Intelligence Initiative  
+**AFRINTEL** - African Cyber Threat Intelligence 
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
