@@ -95,14 +95,30 @@ pie
 | Tanzanie              | 1          | 0                 |
 | RDC                   | 0          | 1                 |
 
-```mermaid    
-xychart-beta
-    title "Ransomware vs fuites de donnees par pays"
-    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Egypte", "🇳🇬 Nigeria", "🇨🇲 Cameroun", "🇩🇿 Algerie", "🇸🇳 Senegal", "🇬🇳 Guinee", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
-    y-axis "Nombre incidents" 0 to 14
-
-    bar "Ransomware" [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
-    bar "Fuites" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+```mermaid
+pie
+    title Ransomware par pays
+    "Afrique Sud (7)" : 7
+    "Maroc (5)" : 5
+    "Egypte (3)" : 3
+    "Madagascar (1)" : 1
+    "Tunisie (1)" : 1
+    "Namibie (1)" : 1
+    "Tanzanie (1)" : 1
+```
+```mermaid
+pie
+    title Fuites de donnees par pays
+    "Egypte (5)" : 5
+    "Maroc (3)" : 3
+    "Afrique Sud (6)" : 6
+    "Nigeria (2)" : 2
+    "Cameroun (1)" : 1
+    "Algerie (1)" : 1
+    "Senegal (1)" : 1
+    "Guinee (1)" : 1
+    "Zambie (1)" : 1
+    "RDC (1)" : 1
 ```
 
 **Répartition sectorielle :**
@@ -169,12 +185,15 @@ pie
 - Le secteur des assurances lourdement touché en Afrique du Sud (Lion of Africa, The Unlimited).
 
 ```mermaid
-xychart-beta
-    title "Acteurs les plus actifs"
-    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
-    y-axis "Incidents" 0 to 6
-
-    bar "Incidents" [5, 4, 3, 3, 2, 2, 2]
+pie
+    title les acteurs les plus actifs
+    "CrowStealer (5)" : 5
+    "APT73/BASHE (4)" : 4
+    "XP95 (3)" : 3
+    "xNov (3)" : 3
+    "Qilin (2)" : 2
+    "The Gentlemen (2)" : 2
+    "INC Ransom (2)" : 2
 ```
 
 ### 4.2 Fuites de données / intrusions système (22 incidents)

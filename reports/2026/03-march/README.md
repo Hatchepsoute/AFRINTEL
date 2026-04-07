@@ -97,15 +97,30 @@ pie
 | DRC                   | 0          | 1           |
 
 ```mermaid
-xychart-beta
-    title "Ransomware vs Data Breaches by country"
-    x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇨🇲 Cameroon", "🇩🇿 Algeria", "🇸🇳 Senegal", "🇬🇳 Guinea", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
-    y-axis "Number of incidents" 0 to 14
-
-    bar "Ransomware" [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
-    bar "Data Breaches" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+pie
+    title Ransomware by country
+    "South Africa (7)" : 7
+    "Morocco (5)" : 5
+    "Egypt (3)" : 3
+    "Madagascar (1)" : 1
+    "Tunisia (1)" : 1
+    "Namibia (1)" : 1
+    "Tanzania (1)" : 1
 ```
-
+```mermaid
+pie
+    title Data Breaches by country
+    "Egypt (5)" : 5
+    "Morocco (3)" : 3
+    "South Africa (6)" : 6
+    "Nigeria (2)" : 2
+    "Cameroon (1)" : 1
+    "Algeria (1)" : 1
+    "Senegal (1)" : 1
+    "Guinea (1)" : 1
+    "Zambia (1)" : 1
+    "DRC (1)" : 1
+```
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
 |---------------------------|-----------|------------|
@@ -134,12 +149,15 @@ xychart-beta
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
 
 ```mermaid
-xychart-beta
-    title "Most prolific threat actors"
-    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
-    y-axis "Incidents" 0 to 6
-
-    bar "Incidents" [5, 4, 3, 3, 2, 2, 2]
+pie
+    title Most active threat actors
+    "CrowStealer (5)" : 5
+    "APT73/BASHE (4)" : 4
+    "XP95 (3)" : 3
+    "xNov (3)" : 3
+    "Qilin (2)" : 2
+    "The Gentlemen (2)" : 2
+    "INC Ransom (2)" : 2
 ```
 
 ## 4. Detailed analysis by incident type
