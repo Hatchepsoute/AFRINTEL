@@ -19,7 +19,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 - New major incident: **UBA Senegal** - a coordinated cyber heist involving system compromise, database manipulation, and over 3,400 fraudulent ATM withdrawals totaling 1.143 billion FCFA (~$1.9M USD), disclosed in March but executed in late January.
 - Emerging threats: **Loozap (Cameroon)** - 34,000 user accounts leaked (SHA1 passwords); **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by actor Keymous.
 
-## 📋 Victim list
+### 📋 Victim list
 
 👉🏾 [View full victim list](./victims.md)
 
@@ -179,7 +179,7 @@ pie
 - **APT73/BASHE** targeted strategic Moroccan institutions (HACA, Maroc Telecom, 2M TV, IRES), suggesting possible geopolitical motivation.
 - Insurance sector heavily hit in South Africa (Lion of Africa, The Unlimited).
 
-### 4.2 Data Breaches / System Intrusions (22 incidents)
+### 4.2 Data Breaches / System intrusions (22 incidents)
 
 | Country          | Breaches/Intrusions | Main actors |
 |------------------|---------------------|-------------|
@@ -202,7 +202,7 @@ pie
 - **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by Keymous, exposing health surveillance tools and government email/staff records.
 - Massive Nigerian breaches: Remita (3 TB, including KYC documents and government HSM keys) and Ahmadu Bello University (11,000+ staff records).
 
-## 5. Sectoral Impact
+## 5. Sectoral impact
 
 | Sector                | Incidents | Percentage |
 |-----------------------|-----------|------------|
@@ -323,7 +323,7 @@ pie
 - Prioritize monitoring of government, education, and health sectors in North, West, and Southern Africa.
 - Watch for **non-ransomware financial intrusions** - UBA Senegal is likely not an isolated case.
 
-## 10. SOC Recommendations
+## 10. SOC recommendations
 
 ### Detection priorities
 - Monitor **data exfiltration patterns (T1041)**  
@@ -339,7 +339,7 @@ pie
 - Identity logs  
 - Core banking system logs (for financial institutions)
 
-## 11. Strategic Recommendations
+## 11. Strategic recommendations
 
 - Enforce **MFA on all critical systems**  
 - Implement **network segmentation** (separate ATM network from core banking)  

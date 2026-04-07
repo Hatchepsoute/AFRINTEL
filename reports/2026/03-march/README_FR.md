@@ -18,7 +18,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 - Nouvel incident majeur : **UBA Sénégal** - un braquage cyber coordonné avec compromission du système, manipulation de bases de données et plus de 3 400 retraits frauduleux en GAB totalisant 1,143 milliard FCFA (~1,9 M USD), révélé en mars mais exécuté fin janvier.
 - Menaces émergentes : **Loozap (Cameroun)** - 34 000 comptes utilisateurs divulgués (mots de passe en SHA1) ; **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par l’acteur Keymous.
 
-## 📋 Liste des victimes
+### 📋 Liste des victimes
 
 👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 
@@ -108,7 +108,7 @@ pie
 ```
 ```mermaid
 pie
-    title Fuites de donnees par pays
+    title Fuites de données par pays
     "Afrique Sud (6)" : 6
     "Egypte (5)" : 5
     "Maroc (3)" : 3
