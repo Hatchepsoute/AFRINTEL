@@ -95,13 +95,14 @@ pie
 | Tanzanie              | 1          | 0                 |
 | RDC                   | 0          | 1                 |
 
-```mermaid
+```mermaid    
 xychart-beta
     title "Ransomware vs fuites de données par pays"
     x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇨🇲 Cameroun", "🇩🇿 Algérie", "🇸🇳 Sénégal", "🇬🇳 Guinée", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
     y-axis "Nombre d'incidents" 0 to 14
-    bar [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
-    bar [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+
+    bar "Ransomware" [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
+    bar "Fuites de données" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
 ```
 
 **Répartition sectorielle :**

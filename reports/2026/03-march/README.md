@@ -101,6 +101,7 @@ xychart-beta
     title "Ransomware vs Data Breaches by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇨🇲 Cameroon", "🇩🇿 Algeria", "🇸🇳 Senegal", "🇬🇳 Guinea", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
     y-axis "Number of incidents" 0 to 14
+    
     bar [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
     bar [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
 ```
