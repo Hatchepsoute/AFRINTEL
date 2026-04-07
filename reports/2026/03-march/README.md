@@ -110,9 +110,9 @@ pie
 ```mermaid
 pie
     title Data Breaches by country
+    "South Africa (6)" : 6
     "Egypt (5)" : 5
     "Morocco (3)" : 3
-    "South Africa (6)" : 6
     "Nigeria (2)" : 2
     "Cameroon (1)" : 1
     "Algeria (1)" : 1
