@@ -97,12 +97,12 @@ pie
 
 ```mermaid    
 xychart-beta
-    title "Ransomware vs fuites de données par pays"
-    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Égypte", "🇳🇬 Nigeria", "🇨🇲 Cameroun", "🇩🇿 Algérie", "🇸🇳 Sénégal", "🇬🇳 Guinée", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
-    y-axis "Nombre d'incidents" 0 to 14
+    title "Ransomware vs fuites de donnees par pays"
+    x-axis ["🇿🇦 Afrique Sud", "🇲🇦 Maroc", "🇪🇬 Egypte", "🇳🇬 Nigeria", "🇨🇲 Cameroun", "🇩🇿 Algerie", "🇸🇳 Senegal", "🇬🇳 Guinee", "🇿🇲 Zambie", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇹🇿 Tanzanie", "🇨🇩 RDC"]
+    y-axis "Nombre incidents" 0 to 14
 
     bar "Ransomware" [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
-    bar "Fuites de données" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+    bar "Fuites" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
 ```
 
 **Répartition sectorielle :**
@@ -171,9 +171,10 @@ pie
 ```mermaid
 xychart-beta
     title "Acteurs les plus actifs"
-    x-axis "Incidents" 0 to 6
-    y-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
-    bar [5, 4, 3, 3, 2, 2, 2]
+    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
+    y-axis "Incidents" 0 to 6
+
+    bar "Incidents" [5, 4, 3, 3, 2, 2, 2]
 ```
 
 ### 4.2 Fuites de données / intrusions système (22 incidents)

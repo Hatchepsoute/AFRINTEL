@@ -101,9 +101,9 @@ xychart-beta
     title "Ransomware vs Data Breaches by country"
     x-axis ["🇿🇦 South Africa", "🇲🇦 Morocco", "🇪🇬 Egypt", "🇳🇬 Nigeria", "🇨🇲 Cameroon", "🇩🇿 Algeria", "🇸🇳 Senegal", "🇬🇳 Guinea", "🇿🇲 Zambia", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇹🇿 Tanzania", "🇨🇩 DRC"]
     y-axis "Number of incidents" 0 to 14
-    
-    bar [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
-    bar [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
+
+    bar "Ransomware" [7, 5, 3, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0]
+    bar "Data Breaches" [6, 3, 5, 2, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1]
 ```
 
 **Sector distribution:**
@@ -136,9 +136,10 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Most prolific threat actors"
-    x-axis "Incidents" 0 to 6
-    y-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
-    bar [5, 4, 3, 3, 2, 2, 2]
+    x-axis ["CrowStealer", "APT73/BASHE", "XP95", "xNov", "Qilin", "The Gentlemen", "INC Ransom"]
+    y-axis "Incidents" 0 to 6
+
+    bar "Incidents" [5, 4, 3, 3, 2, 2, 2]
 ```
 
 ## 4. Detailed analysis by incident type
