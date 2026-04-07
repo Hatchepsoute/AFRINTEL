@@ -105,12 +105,12 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Statut :** Fuite de base de données
 - **Description victime :** Premier fournisseur d'enseignement canadien en Égypte, associé à la Cape Breton University (CBU). La fuite (studentsdata.csv) contient 2 925 enregistrements : noms, filières, niveaux, GPA, années.
 
-#### 🇿🇲 Zambie - Ministère du Développement Communautaire et des Services Sociaux
+#### 🇿🇲 Zambie - ZISPIS (Zambia Integrated Social Protection Information System)
 - **Acteur / Groupe :** Spirigatito
-- **Secteur :** Gouvernement / Services sociaux
+- **Secteur :** Gouvernement / Protection sociale
 - **Site web :** [mcdss.gov.zm](https://www.mcdss.gov.zm)
-- **Statut :** Fuite de base de données massive
-- **Description victime :** Institution chargée de la protection sociale et de l'autonomisation. Fuite du système "Social Cash Transfer" (SCT) : identités complètes (noms, NRC, dates de naissance), coordonnées, montants des aides.
+- **Statut :** Base de données divulguée (≈ 34,1 millions d’enregistrements / 500 Go)
+- **Description victime :** Le système ZISPIS, registre national unifié utilisé par le gouvernement zambien pour gérer les programmes de protection sociale, a été compromis. L’attaque aurait impacté environ 15 millions de bénéficiaires avec plus de 34 millions d’enregistrements exposés. Les données incluent des informations personnelles complètes (nom, date de naissance, genre, identifiants nationaux), des données socio-économiques détaillées (situation du foyer, niveau d’éducation, conditions de vie), ainsi que des données financières (paiements, cycles, soldes) et géographiques (coordonnées GPS). Les échantillons publiés confirment également l’exposition de logs systèmes et d’activités utilisateurs, indiquant une compromission profonde de la plateforme applicative. :contentReference[oaicite:0]{index=0}
 
 #### 🇿🇦 Afrique du Sud - Eventing South Africa
 - **Acteur / Groupe :** xNov

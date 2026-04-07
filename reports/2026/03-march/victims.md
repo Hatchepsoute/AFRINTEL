@@ -105,12 +105,12 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Status:** Database leak
 - **Victim description:** First Canadian education provider in Egypt, affiliated with Cape Breton University (CBU). The leak (studentsdata.csv) contains 2,925 records: names, majors, levels, GPAs, years.
 
-#### 🇿🇲 Zambia - Ministry of Community Development and Social Services
-- **Actor / Group:** Spirigatito
-- **Sector:** Government / Social services
+#### 🇿🇲 Zambia - ZISPIS (Zambia Integrated Social Protection Information System)
+- **Threat Actor:** Spirigatito
+- **Sector:** Government / Social Protection
 - **Website:** [mcdss.gov.zm](https://www.mcdss.gov.zm)
-- **Status:** Massive database leak
-- **Victim description:** Institution responsible for social protection and empowerment. Leak of the "Social Cash Transfer" (SCT) system: full identities (names, NRC numbers, dates of birth), contact details, benefit amounts.
+- **Status:** Database leaked (~34.1 million records / 500 GB)
+- **Victim Description:** The ZISPIS system, a unified national registry used by the Zambian government to manage social protection programs, has been compromised. The breach reportedly affected approximately 15 million individuals and exposed over 34 million records. The leaked data includes full personal information (name, date of birth, gender, national identifiers), detailed socio-economic data (household conditions, education level, living standards), financial data (payments, balances, cycles), and geographic information (GPS coordinates). Published samples also confirm the exposure of system audit logs and user activity, indicating a deep compromise of the application infrastructure. :contentReference[oaicite:1]{index=1}
 
 #### 🇿🇦 South Africa - Eventing South Africa
 - **Actor / Group:** xNov

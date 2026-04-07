@@ -104,27 +104,6 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 | The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
 
-**Daily timeline (March 2026 - disclosure dates):**
-- 01/03: 6 incidents (CIC, Zambia, Eventing SA, Bridges, Loozap, Diesel)
-- 02/03: 3
-- 03/03: 3
-- 04/03: 1
-- 05/03: 1
-- 06/03: 2
-- 09/03: 1
-- 12/03: 1
-- 13/03: 2
-- 14/03: 1
-- 17/03: 1 (UNISA)
-- 19/03: 1
-- 20/03: 2
-- 21/03: 1
-- 22/03: 1
-- 24/03: 1 (UBA Senegal)
-- 26/03: 4
-- 29/03: 2
-- 30/03: 3
-- 31/03: 3
 
 ## 4. Detailed analysis by incident type
 
