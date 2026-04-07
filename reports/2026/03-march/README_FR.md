@@ -60,7 +60,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 
 ```mermaid
 pie
-    title Nombre de victimes/pays (mars 2026)
+    title Nombre de victimes / pays (mars 2026)
     "🇿🇦 Afrique du Sud (13)" : 13
     "🇲🇦 Maroc (8)" : 8
     "🇪🇬 Égypte (8)" : 8
