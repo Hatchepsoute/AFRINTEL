@@ -202,10 +202,11 @@ pie showData
 | Others                    | 18        | 30.0%      |
 
 
+**Sector distribution of Incidents - April 2026**
 
 ```mermaid
 pie showData
-    title Sector distribution of Incidents - April 2026
+    title Sector distribution of Incidents
     "🏛️ Government / Administration" : 14
     "🎓 Education / University" : 8
     "🏥 Healthcare / Medical" : 5
