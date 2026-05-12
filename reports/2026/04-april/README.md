@@ -153,8 +153,9 @@ pie
 *Numbers in parentheses indicate the number of incidents when >1.*
 
 **Ransomware victims by country - April 2026**
+
 ```mermaid
-pie 
+pie
     title Ransomware victims by country
     "🇪🇬 Egypt" : 9
     "🇿🇦 South Africa" : 3
