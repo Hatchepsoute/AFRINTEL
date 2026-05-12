@@ -110,7 +110,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Sector:** Government / Social Protection
 - **Website:** [mcdss.gov.zm](https://www.mcdss.gov.zm)
 - **Status:** Database leaked (~34.1 million records / 500 GB)
-- **Victim Description:** The ZISPIS system, a unified national registry used by the Zambian government to manage social protection programs, has been compromised. The breach reportedly affected approximately 15 million individuals and exposed over 34 million records. The leaked data includes full personal information (name, date of birth, gender, national identifiers), detailed socio-economic data (household conditions, education level, living standards), financial data (payments, balances, cycles), and geographic information (GPS coordinates). Published samples also confirm the exposure of system audit logs and user activity, indicating a deep compromise of the application infrastructure. :contentReference[oaicite:1]{index=1}
+- **Victim Description:** The ZISPIS system, a unified national registry used by the Zambian government to manage social protection programs, has been compromised. The breach reportedly affected approximately 15 million individuals and exposed over 34 million records. The leaked data includes full personal information (name, date of birth, gender, national identifiers), detailed socio-economic data (household conditions, education level, living standards), financial data (payments, balances, cycles), and geographic information (GPS coordinates). Published samples also confirm the exposure of system audit logs and user activity, indicating a deep compromise of the application infrastructure. 
 
 #### 🇿🇦 South Africa - Eventing South Africa
 - **Actor / Group:** xNov
