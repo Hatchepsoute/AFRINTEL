@@ -73,7 +73,7 @@ pie showData
     "🇸🇳 Sénégal" : 1
     "🇺🇬 Ouganda" : 1
     "🇿🇲 Zambie" : 1
-    "🌍 Multi-pays" : 1
+    "🌍 Multi pays Afrique" : 1
 ```
 
 ### Ransomware vs fuites de données par pays
@@ -152,7 +152,7 @@ pie showData
     "🇪🇹 Éthiopie" : 1
     "🇸🇳 Sénégal" : 1
     "🇺🇬 Ouganda" : 1
-    "🌍 Multi-pays Afrique" : 1
+    "🌍 Multi pays Afrique" : 1
 ```
 
 **Répartition sectorielle :**

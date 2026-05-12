@@ -37,7 +37,7 @@ pie showData
     "🇸🇳 Senegal" : 1
     "🇺🇬 Uganda" : 1
     "🇿🇲 Zambia" : 1
-    "🌍 Multi-country" : 1
+    "🌍 Multi country Africa" : 1
 ```
 
 ### 📋 Victim list
