@@ -15,7 +15,7 @@ Avril 2026 a enregistré **60 incidents cyber revendiqués publiquement** sur le
 Principales conclusions :
 - **20 ransomwares (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
 - **18 pays** touchés ; le **Maroc** (17 incidents), l’**Égypte** (11) et l’**Afrique du Sud** (8) concentrent 60 % des victimes.
-- Plus de **30 acteurs distincts** ; les courtiers de données **Grubder** (7 victimes) et **anisanas2** (4 victimes) en tête.
+- Plus de **30 acteurs distincts** ; les courtiers de données **Grubder** (7 victimes) et **anisanas2** (3 victimes) en tête.
 - Les secteurs gouvernemental, éducatif et de la santé restent les plus visés (45 % combinés).
 - Brèches massives : base du personnel du Palais Royal (3 300 fiches avec CNIE), Pick n Pay ASAP/Bottles.com (données bancaires complètes), Kenya Airports Authority (2 To revendiqués), fuite de la messagerie CNSS Bénin (7,1 Go).
 

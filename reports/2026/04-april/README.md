@@ -15,7 +15,7 @@ April 2026 recorded **60 publicly claimed cyber incidents** across Africa - **20
 Key findings:
 - **20 ransomware attacks (33.3%)** and **40 data leaks / access sales (66.7%)**.
 - **18 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 60% of victims.
-- **30+ distinct threat actors**; prolific data brokers **Grubder** (7 victims) and **anisanas2** (4 victims) lead.
+- **30+ distinct threat actors**; prolific data brokers **Grubder** (7 victims) and **anisanas2** (3 victims) lead.
 - Government, education, and healthcare remain prime targets (combined 45%).
 - Massive breaches: Royal Palace staff DB (3,300 records with CNIE), Pick n Pay ASAP/Bottles.com (full payment cards, GPS), Kenya Airports Authority (claimed 2 TB), CNSS Benin mailbox leak (7.1 GB).
 
