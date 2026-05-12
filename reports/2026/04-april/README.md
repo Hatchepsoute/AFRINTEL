@@ -20,7 +20,7 @@ Key findings:
 - Massive breaches: Royal Palace staff DB (3,300 records with CNIE), Pick n Pay ASAP/Bottles.com (full payment cards, GPS), Kenya Airports Authority (claimed 2 TB), CNSS Benin mailbox leak (7.1 GB).
 
 ```mermaid
-pie showData
+pie
     title Victim distribution by country-April 2026
     "🇲🇦 Morocco" : 17
     "🇪🇬 Egypt" : 11
@@ -123,7 +123,7 @@ pie showData
 
 **Ransomware victims by country - April 2026**
 ```mermaid
-pie showData
+pie 
     title Ransomware victims by country
     "🇪🇬 Egypt" : 9
     "🇿🇦 South Africa" : 3
@@ -138,7 +138,7 @@ pie showData
 **Data leaks by country - April 2026**
 
 ```mermaid
-pie showData
+pie
     title Data leaks by country 
     "🇲🇦 Morocco" : 15
     "🇿🇦 South Africa" : 5
