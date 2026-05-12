@@ -64,6 +64,37 @@ pie
 | Ransomware incidents       | 20 (33.3%) |
 | Data leaks / access sales  | 40 (66.7%) |
 
+### Country ranking
+
+**All incidents combined (60):**
+| Rank | Country | Incidents |
+|------|--------|-----------|
+| 1 | 🇲🇦 Morocco | 17 |
+| 2 | 🇪🇬 Egypt | 11 |
+| 3 | 🇿🇦 South Africa | 8 |
+| 4-6 | 🇳🇬 Nigeria, 🇩🇿 Algeria, 🇹🇳 Tunisia | 4 each |
+| 7-8 | 🇰🇪 Kenya, 🇬🇭 Ghana | 2 each |
+| 9-15 | 🇧🇯 Benin, 🇧🇼 Botswana, 🇪🇹 Ethiopia, 🇸🇨 Seychelles, 🇸🇳 Senegal, 🇺🇬 Uganda, 🇿🇲 Zambia | 1 each |
+| – | 🌍 Multi‑country incident (Angola, South Africa, Nigeria) | 1 (counted as 1 victim) |
+
+**By ransomware (20):**
+| Rank | Country | Ransomware |
+|------|--------|------------|
+| 1 | 🇪🇬 Egypt | 9 |
+| 2 | 🇿🇦 South Africa | 3 |
+| 3-4 | 🇲🇦 Morocco, 🇬🇭 Ghana | 2 each |
+| 5-8 | 🇰🇪 Kenya, 🇧🇼 Botswana, 🇸🇨 Seychelles, 🇿🇲 Zambia | 1 each |
+
+**By data leaks (40):**
+| Rank | Country | Data leaks |
+|------|--------|------------|
+| 1 | 🇲🇦 Morocco | 15 |
+| 2 | 🇿🇦 South Africa | 5 |
+| 3-5 | 🇳🇬 Nigeria, 🇩🇿 Algeria, 🇹🇳 Tunisia | 4 each |
+| 6 | 🇪🇬 Egypt | 2 |
+| 7-11 | 🇰🇪 Kenya, 🇧🇯 Benin, 🇪🇹 Ethiopia, 🇸🇳 Senegal, 🇺🇬 Uganda | 1 each |
+| – | 🌍 Multi‑country Africa | 1 |
+
 **Most targeted countries:**
 - 🇲🇦 Morocco: 17 victims
 - 🇪🇬 Egypt: 11 victims

@@ -44,6 +44,37 @@ Principales conclusions :
 | Ransomwares                    | 20 (33,3 %) |
 | Fuites de données / ventes d’accès | 40 (66,7 %) |
 
+### Classement des pays les plus touchés
+
+**Tous incidents confondus (60) :**
+| Rang | Pays | Incidents |
+|------|------|-----------|
+| 1 | 🇲🇦 Maroc | 17 |
+| 2 | 🇪🇬 Égypte | 11 |
+| 3 | 🇿🇦 Afrique du Sud | 8 |
+| 4-6 | 🇳🇬 Nigeria, 🇩🇿 Algérie, 🇹🇳 Tunisie | 4 chacun |
+| 7-8 | 🇰🇪 Kenya, 🇬🇭 Ghana | 2 chacun |
+| 9-15 | 🇧🇯 Bénin, 🇧🇼 Botswana, 🇪🇹 Éthiopie, 🇸🇨 Seychelles, 🇸🇳 Sénégal, 🇺🇬 Ouganda, 🇿🇲 Zambie | 1 chacun |
+| – | 🌍 Incident multi‑pays (Angola, Afrique du Sud, Nigeria) | 1 (compté comme 1 victime) |
+
+**Par ransomware (20) :**
+| Rang | Pays | Ransomwares |
+|------|------|-------------|
+| 1 | 🇪🇬 Égypte | 9 |
+| 2 | 🇿🇦 Afrique du Sud | 3 |
+| 3-4 | 🇲🇦 Maroc, 🇬🇭 Ghana | 2 chacun |
+| 5-8 | 🇰🇪 Kenya, 🇧🇼 Botswana, 🇸🇨 Seychelles, 🇿🇲 Zambie | 1 chacun |
+
+**Par fuites de données (40) :**
+| Rang | Pays | Fuites |
+|------|------|--------|
+| 1 | 🇲🇦 Maroc | 15 |
+| 2 | 🇿🇦 Afrique du Sud | 5 |
+| 3-5 | 🇳🇬 Nigeria, 🇩🇿 Algérie, 🇹🇳 Tunisie | 4 chacun |
+| 6 | 🇪🇬 Égypte | 2 |
+| 7-11 | 🇰🇪 Kenya, 🇧🇯 Bénin, 🇪🇹 Éthiopie, 🇸🇳 Sénégal, 🇺🇬 Ouganda | 1 chacun |
+| – | 🌍 Multi‑pays Afrique | 1 |
+
 **Pays les plus touchés :**
 - 🇲🇦 Maroc : 17 victimes
 - 🇪🇬 Égypte : 11 victimes
@@ -55,6 +86,7 @@ Principales conclusions :
 - 🇬🇭 Ghana : 2 victimes
 - Autres (1 victime chacun) : Sénégal, Bénin, Éthiopie, Botswana, Seychelles, Zambie, Ouganda, plus 1 incident multi‑pays (Angola/Afrique du Sud/Nigeria).
 
+### Répartition des victimes par pays
 ```mermaid
 pie showData
     title Répartition des victimes par pays-Avril 2026
