@@ -152,6 +152,7 @@ pie
 
 *Numbers in parentheses indicate the number of incidents when >1.*
 
+
 **Ransomware victims by country - April 2026**
 
 ```mermaid
@@ -166,6 +167,7 @@ pie showData
     "🇸🇨 Seychelles" : 1
     "🇿🇲 Zambia" : 1
 ```
+
 
 **Data leaks by country - April 2026**
 
@@ -199,9 +201,11 @@ pie showData
 | Telecommunications        | 2         | 3.3%       |
 | Others                    | 18        | 30.0%      |
 
+
+
 ```mermaid
 pie showData
-    title Sector Distribution of Incidents - April 2026
+    title **Sector distribution of Incidents - April 2026**
     "🏛️ Government / Administration" : 14
     "🎓 Education / University" : 8
     "🏥 Healthcare / Medical" : 5
@@ -229,6 +233,9 @@ pie showData
 | wh6ami               | 2                  | Data leaks    |
 | dark07x              | 2                  | Data leaks    |
 | NormalLeVrai         | 2                  | Data leaks    |
+
+
+**Most active threat actors - April 2026**
 
 
 ```mermaid
