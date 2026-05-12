@@ -205,7 +205,7 @@ pie showData
 
 ```mermaid
 pie showData
-    title **Sector distribution of Incidents - April 2026**
+    title Sector distribution of Incidents - April 2026
     "🏛️ Government / Administration" : 14
     "🎓 Education / University" : 8
     "🏥 Healthcare / Medical" : 5
