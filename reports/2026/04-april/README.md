@@ -155,7 +155,7 @@ pie
 **Ransomware victims by country - April 2026**
 
 ```mermaid
-pie
+pie showData
     title Ransomware victims by country
     "🇪🇬 Egypt" : 9
     "🇿🇦 South Africa" : 3
@@ -170,7 +170,7 @@ pie
 **Data leaks by country - April 2026**
 
 ```mermaid
-pie
+pie showData
     title Data leaks by country 
     "🇲🇦 Morocco" : 15
     "🇿🇦 South Africa" : 5
