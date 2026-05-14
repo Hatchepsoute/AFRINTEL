@@ -5,7 +5,7 @@
 ![Victims](https://img.shields.io/badge/Victims-60-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
 ![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-40-orange)
-![Countries](https://img.shields.io/badge/Countries%20Affected-18-blueviolet)
+![Countries](https://img.shields.io/badge/Countries%20Affected-16-blueviolet)
 ![Threat%20Actors](https://img.shields.io/badge/Threat%20Actors-30%2B-darkred)
 ![Intel%20Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 ![Status](https://img.shields.io/badge/Status-OSINT%20Monitoring-success)
@@ -378,11 +378,9 @@
 - **Sector :** Online Pharmacy / Healthcare E‑commerce
 - **Website :** [chezpara.ma](https://chezpara.ma/)
 - **Status :** Claimed Database Sale
-- **Initial publication date :** Febuary 23, 2026
+- **Initial publication date :** February 23, 2026
 - **Discovery Date :** April 19, 2026
-
 - **Description :** ~400,000 customer records including names, phone numbers, detailed addresses, delivery info, and order comments.
-
 ---
 
 ### April 20, 2026
@@ -432,13 +430,22 @@
 - **Status :** Data Leak / Claim
 - **Description :** 1.2 TB of data allegedly for sale ($10,000 USD). Sample exposes player licensing records, full identities, addresses, phone numbers, sports IDs, and data on minors.
 
-#### 🇲🇦 Morocco - Wafasalaf (Automobile Financing Ecosystem) [Data Leak]
-- **Threat Actor / Group :** Unknown
-- **Sector :** Finance / Auto Credit
-- **Website :** [wafasalaf.ma](https://www.wafasalaf.ma/)
-- **Status :** Data leak - exposure of sensitive documents
-- **Description :** Leaked documents include credit contracts, collection records, debt acknowledgements, bank orders, national ID cards (CIN), Bank of Africa statements, ONEE bills, and vehicle registration papers (Peugeot 2008). High risk of identity theft and banking fraud.
 
+#### 🇲🇦 Morocco - Pharmacie.ma [Data Leak]
+- **Threat Actor / Group :** Tanaka
+- **Sector :** Healthcare / Pharmacy / E-health
+- **Website :** [pharmacie.ma](https://www.pharmacie.ma)
+- **Status :** Data Leak / Claim
+- **Discovery Date:** April 21, 2026
+- **Victim Description :**  
+  Pharmacie.ma is a Moroccan online portal focused on pharmaceutical information, medicines, and healthcare-related content. The platform primarily targets pharmacists, pharmacy students, and users seeking medical information in Morocco.
+
+- **Leak Description :**  
+  On January 27, 2026, a user identified as “Tanaka” published a claim on an underground forum attributed to the threat actor “Karuhunters”, alleging that a breach occurring on September 29, 2025 resulted in the exfiltration of approximately 41,772 user records associated with Pharmacie.ma.
+- **Sample Analysis :**  
+  The analyzed SQL samples contain email addresses, names, phone numbers, “pharmacy_student” profiles, geographic information, and account status data.
+- **CTI Note :**  
+  The observed data appears to correspond to a historical user database associated with Pharmacie.ma. The exact claimed leak size remains independently unverified.
 
 #### 🇲🇦 Morocco - Al Akhawayn University (AUI) [Data Leak]
 
@@ -565,7 +572,7 @@
 - **Sector :** Sports
 - **Website :** [planetsport.ma](https://planetsport.ma)
 - **Status :** Claimed
-- **Description :** Morocco’s leading sports goods retailer.
+- **Description :** Planet Sport is Morocco’s leading sports goods retailer operating a nationwide network of stores distributing international sports brands.
 
 #### 🇿🇲 Zambia - zsiclife.co.zm [Ransomware]
 - **Ransomware Group :** krybit
@@ -793,7 +800,7 @@
 
 - **Threat Actor / Group :** dark07x
 - **Sector :** Sports / Sports Federation
-- **Website :** lrfa.org.dz
+- **Website :** [lrfa.org.dz](https:// lrfa.org.dz)
 - **Affected Platform :** Foot’Up
 - **Status :** Data Leak / Claimed Compromise
 - **Initial Publication Date :** January 16, 2026

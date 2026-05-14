@@ -14,7 +14,7 @@ Avril 2026 a enregistré **60 incidents cyber revendiqués publiquement** sur le
 
 Principales conclusions :
 - **20 ransomwares (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
-- **18 pays** touchés ; le **Maroc** (17 incidents), l’**Égypte** (11) et l’**Afrique du Sud** (8) concentrent 60 % des victimes.
+- **16 pays** touchés ; le **Maroc** (17 incidents), l’**Égypte** (11) et l’**Afrique du Sud** (8) concentrent 60 % des victimes.
 - Plus de **30 acteurs distincts** ; les courtiers de données **Grubder** (7 victimes) et **anisanas2** (3 victimes) en tête.
 - Les secteurs gouvernemental, éducatif et de la santé restent les plus visés (45 % combinés).
 - Brèches massives : base du personnel du Palais Royal (3 300 fiches avec CNIE), Pick n Pay ASAP/Bottles.com (données bancaires complètes), Kenya Airports Authority (2 To revendiqués), fuite de la messagerie CNSS Bénin (7,1 Go).
@@ -39,7 +39,7 @@ Principales conclusions :
 | Indicateur                     | Valeur |
 |--------------------------------|--------|
 | Nombre total de victimes       | 60     |
-| Pays touchés                   | 18     |
+| Pays touchés                   | 16     |
 | Acteurs distincts              | 30+    |
 | Ransomwares                    | 20 (33,3 %) |
 | Fuites de données / ventes d’accès | 40 (66,7 %) |
@@ -187,30 +187,43 @@ pie showData
     "🌍 Multi pays Afrique" : 1
 ```
 
+### Répartition par zone géographique
+
+| Zone | Pays inclus | Incidents totaux | Ransomwares | Fuites |
+|------|-------------|------------------|-------------|--------|
+| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 (60 %) | 13 | 23 |
+| Afrique de l’Ouest | 🇳🇬 Nigeria, 🇧🇯 Bénin, 🇸🇳 Sénégal, 🇬🇭 Ghana | 8 (13 %) | 2 | 6 |
+| Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇲 Zambie | 10 (17 %) | 5 | 5 |
+| Afrique de l’Est | 🇪🇹 Éthiopie, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Ouganda | 5 (8 %) | 2 | 3 |
+| Multi‑pays | 🇦🇴 Angola, 🇿🇦 Afrique du Sud, 🇳🇬 Nigeria (incident combiné) | 1 (2 %) | 0 | 1 |
+
+*L’Afrique du Nord capte à elle seule 60 % des incidents, essentiellement par des fuites de données.*
+
+
 **Répartition sectorielle :**
 | Secteur                    | Incidents | Pourcentage |
 |----------------------------|-----------|-------------|
-| Gouvernement / Admin       | 14        | 23,3 %      |
+| Gouvernement / Admin       | 15        | 25,0 %      |
 | Éducation / Université     | 8         | 13,3 %      |
-| Santé / Médical            | 5         | 8,3 %       |
+| Santé / Médical            | 4         | 6,7 %       |
 | Finance / Banque           | 4         | 6,7 %       |
 | E-commerce / Retail        | 3         | 5,0 %       |
-| Sports / Fédérations       | 3         | 5,0 %       |
+| Sports / Fédérations       | 4         | 6,7 %       |
 | Pétrole & Énergie          | 3         | 5,0 %       |
-| Télécommunications         | 2         | 3,3 %       |
+| Télécommunications         | 1         | 1,7 %       |
 | Autres                     | 18        | 30,0 %      |
 
 ```mermaid
 pie showData
     title Répartition sectorielle des incidents - Avril 2026
-    "🏛️ Gouvernement / Administration" : 14
+    "🏛️ Gouvernement / Administration" : 15
     "🎓 Éducation / Université" : 8
-    "🏥 Santé / Médical" : 5
+    "🏥 Santé / Médical" : 4
     "💰 Finance / Banque" : 4
     "🛒 E-commerce / Retail" : 3
-    "⚽ Sports / Fédérations" : 3
+    "⚽ Sports / Fédérations" : 4
     "⛽ Pétrole & Énergie" : 3
-    "📡 Télécommunications" : 2
+    "📡 Télécommunications" : 1
     "🏭 Autres secteurs" : 18
 ```
 
@@ -287,17 +300,17 @@ pie showData
 
 ## 5. Impact sectoriel
 
-- Gouvernement / Admin : 14 incidents (23,3 %)
+- Gouvernement / Admin : 15 incidents (25,0 %)
 - Éducation / Université : 8 incidents (13,3 %)
-- Santé / Médical : 5 incidents (8,3 %)
+- Santé / Médical : 4 incidents (6,7 %)
 - Finance / Banque : 4 incidents (6,7 %)
 - E-commerce / Retail : 3 incidents (5,0 %)
-- Sports / Fédérations : 3 incidents (5,0 %)
+- Sports / Fédérations : 4 incidents (6,7 %)
 - Pétrole & Énergie : 3 incidents (5,0 %)
-- Télécommunications : 2 incidents (3,3 %)
+- Télécommunications : 1 incident (1,7 %)
 - Autres : 18 incidents (30,0 %)
 
-Le secteur public (gouvernement + éducation) représente **36,7 %** des incidents. Les données de santé restent très convoitées (CNOPS, LNM6, Chezpara.ma). Les fédérations sportives (FRMF, FRMT, LRFA) émergent comme cibles de choix.
+Le secteur public (gouvernement + éducation) représente **38,3 %** des incidents. Les données de santé restent très convoitées (CNOPS, LNM6, Chezpara.ma, SUPTECH SANTÉ). Les fédérations sportives (FRMF, FRMT, LRFA) émergent comme cibles de choix.
 
 ## 6. Profil des acteurs
 

@@ -5,7 +5,7 @@
 ![Victimes](https://img.shields.io/badge/Victimes-60-critical)
 ![Ransomwares](https://img.shields.io/badge/Ransomwares-20-red)
 ![Fuites%20de%20données](https://img.shields.io/badge/Fuites%20de%20données-40-orange)
-![Pays%20touchés](https://img.shields.io/badge/Pays%20touchés-18-blueviolet)
+![Pays%20touchés](https://img.shields.io/badge/Pays%20touchés-16-blueviolet)
 ![Acteurs](https://img.shields.io/badge/Acteurs%20de%20menace-30%2B-darkred)
 ![Type%20de%20renseignement](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 ![Statut](https://img.shields.io/badge/Statut-Veille%20OSINT-success)
@@ -414,14 +414,14 @@
 - **Acteur / Groupe :** 0xLei / Nullsec
 - **Secteur :** Administration publique / Immobilier
 - **Site web :** [fha.gov.ng](https://www.fha.gov.ng/)
-- **Statut :** Fuite non vérifiée - archives techniques
+- **Statut :** Fuite de données
 - **Description :** ~170 Mo de code source, fichiers backend, configurations.
 
 #### 🇳🇬 Nigeria - EFCC [Fuite de données]
 - **Acteur / Groupe :** ki4t / Nullsec Nigeria
 - **Secteur :** Application de la loi / Anti‑corruption
 - **Site web :** [efcc.gov.ng](https://www.efcc.gov.ng/)
-- **Statut :** Fuite non vérifiée - dump SQL partiel
+- **Statut :** Fuite de données - dump SQL partiel
 - **Description :** Comptes utilisateurs, emails, téléphones, rôles internes, hashs bcrypt, IP internes, données d’agents.
 
 #### 🇲🇦 Maroc - Fédération Royale Marocaine de Football (FRMF) [Fuite de données]
@@ -431,13 +431,24 @@
 - **Statut :** Fuite de données / Revendication
 - **Description :** 1,2 To de données à vendre (10 000 USD). Échantillons : gestion des licences, identités, adresses, téléphones, données de mineurs.
 
-#### 🇲🇦 Maroc - Wafasalaf (Écosystème financement automobile) [Fuite de données]
-- **Acteur / Groupe :** Inconnu
-- **Secteur :** Finance / Crédit auto
-- **Site web :** [wafasalaf.ma](https://www.wafasalaf.ma/)
-- **Statut :** Fuite de documents sensibles
-- **Description :** Contrats de crédit, relevés de contentieux, ordres de prélèvement, CIN, attestations bancaires, factures ONEE, pièces d’immatriculation (Peugeot 2008). Risque élevé d’usurpation d’identité et de fraude bancaire.
+#### 🇲🇦 Maroc - Pharmacie.ma [Fuite de données]
 
+- **Acteur / Groupe :** Tanaka
+- **Secteur :** Santé / Pharmacie / E-health
+- **Site web :** [pharmacie.ma](https://www.pharmacie.ma)
+- **Statut :** Fuite de données / Revendication
+- **Date de découverte :** 21 Avril 2026
+- **Description victime :**  
+  Pharmacie.ma est un portail marocain spécialisé dans les informations pharmaceutiques, les médicaments et les contenus liés à la santé. La plateforme cible notamment les pharmaciens, étudiants en pharmacie et utilisateurs recherchant des informations médicales au Maroc.
+
+- **Description de la fuite :**  
+  Le 27 janvier 2026, un utilisateur nommé “Tanaka” a publié sur un forum clandestin une revendication attribuée au groupe “Karuhunters”, affirmant qu’une compromission survenue le 29 septembre 2025 aurait entraîné l’exfiltration d’environ 41 772 enregistrements utilisateurs associés à Pharmacie.ma.
+
+- **Analyse des échantillons :**  
+  Les échantillons SQL analysés contiennent des adresses email, noms, numéros de téléphone, profils “pharmacy_student”, informations géographiques et statuts de comptes utilisateurs.
+
+- **Note CTI :**  
+  Les données observées semblent correspondre à une base utilisateurs historique associée à Pharmacie.ma. Le volume exact revendiqué reste non vérifié indépendamment.
 #### 🇲🇦 Maroc - Al Akhawayn University (AUI) [Fuite de données]
 
 - **Acteur / Groupe :** anisanas2
@@ -719,10 +730,8 @@
 
 - **Note CTI :**
   Les échantillons publiés contiennent des données cohérentes avec une plateforme municipale opérationnelle ainsi que des journaux d’administration détaillés. 
-  
-
+ 
 #### 🇿🇦 Afrique du Sud - Pick n Pay ASAP / Bottles.com [Fuite de données]
-
 - **Acteur / Groupe :** p4pr1k4
 - **Secteur :** E-commerce / Livraison / Retail
 - **Site web :** [bottles.com](https://bottles.com)
@@ -791,12 +800,11 @@
 
 - **Acteur / Groupe :** dark07x
 - **Secteur :** Sport / Fédération sportive
-- **Site web :** lrfa.org.dz
+- **Site web :** [lrfa.org.dz](https:// lrfa.org.dz)
 - **Plateforme concernée :** Foot’Up
 - **Statut :** Fuite de données / Compromission revendiquée
 - **Date de publication initiale :** 16 Janvier 2026
 - **Date de découverte :** 30 Avril 2026
-
 - **Description :** Une publication sur un forum cybercriminel revendique la compromission de la plateforme officielle de gestion de la Ligue Régionale de Football d’Alger (LRFA). L’acteur affirme avoir extrait des données liées à plusieurs clubs algériens ainsi qu’aux infrastructures administratives du football régional.
 
 - **Clubs mentionnés dans les artefacts :**
@@ -833,5 +841,3 @@
 
 - **Note CTI :**
   L’acteur affirme disposer d’un accès étendu à l’infrastructure du football régional algérien. Toutefois, l’étendue exacte de la compromission et l’authenticité complète des accès revendiqués ne peuvent pas être confirmées indépendamment à ce stade.
-
-

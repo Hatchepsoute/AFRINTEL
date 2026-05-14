@@ -14,14 +14,14 @@ April 2026 recorded **60 publicly claimed cyber incidents** across Africa - **20
 
 Key findings:
 - **20 ransomware attacks (33.3%)** and **40 data leaks / access sales (66.7%)**.
-- **18 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 60% of victims.
+- **16 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 60% of victims.
 - **30+ distinct threat actors**; prolific data brokers **Grubder** (7 victims) and **anisanas2** (3 victims) lead.
 - Government, education, and healthcare remain prime targets (combined 45%).
 - Massive breaches: Royal Palace staff DB (3,300 records with CNIE), Pick n Pay ASAP/Bottles.com (full payment cards, GPS), Kenya Airports Authority (claimed 2 TB), CNSS Benin mailbox leak (7.1 GB).
 
 ```mermaid
 pie showData
-    title Victim distribution by country-April 2026
+    title victim distribution by country-April 2026
     "🇲🇦 Morocco" : 17
     "🇪🇬 Egypt" : 11
     "🇿🇦 South Africa" : 8
@@ -59,7 +59,7 @@ pie showData
 | Indicator                  | Value |
 |----------------------------|-------|
 | Total victims              | 60    |
-| Countries affected         | 18    |
+| Countries affected         | 16    |
 | Distinct actors            | 30+   |
 | Ransomware incidents       | 20 (33.3%) |
 | Data leaks / access sales  | 40 (66.7%) |
@@ -94,6 +94,7 @@ pie showData
 | 6 | 🇪🇬 Egypt | 2 |
 | 7-11 | 🇰🇪 Kenya, 🇧🇯 Benin, 🇪🇹 Ethiopia, 🇸🇳 Senegal, 🇺🇬 Uganda | 1 each |
 | – | 🌍 Multi‑country Africa | 1 |
+
 
 **Most targeted countries:**
 - 🇲🇦 Morocco: 17 victims
@@ -188,17 +189,30 @@ pie showData
     "🌍 Multi-country Africa" : 1
 ```
 
+### Geographic breakdown
+
+| Region | Countries | Total incidents | Ransomware | Data leaks |
+|--------|-----------|-----------------|------------|------------|
+| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 (60 %) | 13 | 23 |
+| West Africa | 🇳🇬 Nigeria, 🇧🇯 Benin, 🇸🇳 Senegal, 🇬🇭 Ghana | 8 (13 %) | 2 | 6 |
+| Southern Africa | 🇿🇦 South Africa, 🇧🇼 Botswana, 🇿🇲 Zambia | 10 (17 %) | 5 | 5 |
+| East Africa | 🇪🇹 Ethiopia, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Uganda | 5 (8 %) | 2 | 3 |
+| Multi‑country | 🇦🇴 Angola, 🇿🇦 South Africa, 🇳🇬 Nigeria (combined incident) | 1 (2 %) | 0 | 1 |
+
+*North Africa alone accounts for 60% of all incidents, driven primarily by data leaks.*
+
+
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
 |---------------------------|-----------|------------|
-| Government / Admin        | 14        | 23.3%      |
+| Government / Admin        | 15        | 25.0%      |
 | Education / University    | 8         | 13.3%      |
-| Health / Medical          | 5         | 8.3%       |
+| Health / Medical          | 4         | 6.7%       |
 | Finance / Banking         | 4         | 6.7%       |
 | E-commerce / Retail       | 3         | 5.0%       |
-| Sports / Federations      | 3         | 5.0%       |
+| Sports / Federations      | 4         | 6.7%       |
 | Oil & Energy              | 3         | 5.0%       |
-| Telecommunications        | 2         | 3.3%       |
+| Telecommunications        | 1         | 1.7%       |
 | Others                    | 18        | 30.0%      |
 
 
@@ -206,15 +220,15 @@ pie showData
 
 ```mermaid
 pie showData
-    title Sector distribution of Incidents
-    "🏛️ Government / Administration" : 14
+    title Sector Distribution of Incidents - April 2026
+    "🏛️ Government / Administration" : 15
     "🎓 Education / University" : 8
-    "🏥 Healthcare / Medical" : 5
+    "🏥 Healthcare / Medical" : 4
     "💰 Finance / Banking" : 4
     "🛒 E-commerce / Retail" : 3
-    "⚽ Sports / Federations" : 3
+    "⚽ Sports / Federations" : 4
     "⛽ Oil & Energy" : 3
-    "📡 Telecommunications" : 2
+    "📡 Telecommunications" : 1
     "🏭 Other Sectors" : 18
 ```
 
@@ -302,17 +316,17 @@ pie showData
 
 | Sector                    | Incidents | Percentage |
 |---------------------------|-----------|------------|
-| Government / Admin        | 14        | 23.3%      |
+| Government / Admin        | 15        | 25.0%      |
 | Education / University    | 8         | 13.3%      |
-| Health / Medical          | 5         | 8.3%       |
+| Health / Medical          | 4         | 6.7%       |
 | Finance / Banking         | 4         | 6.7%       |
 | E-commerce / Retail       | 3         | 5.0%       |
-| Sports / Federations      | 3         | 5.0%       |
+| Sports / Federations      | 4         | 6.7%       |
 | Oil & Energy              | 3         | 5.0%       |
-| Telecommunications        | 2         | 3.3%       |
-| Others                     | 18        | 30.0%      |
+| Telecommunications        | 1         | 1.7%       |
+| Others                    | 18        | 30.0%      |
 
-Public sector (government + education) accounts for **36.7%** of incidents. Healthcare data leaks (CNOPS, LNM6, Chezpara.ma, SUPTECH SANTÉ) show sensitive medical information is actively traded. Sports organisations (FRMF, FRMT, LRFA) are increasingly targeted for identity and licensing data.
+Public sector (government + education) accounts for **38.3%** of incidents. Healthcare data leaks (CNOPS, LNM6, Chezpara.ma, SUPTECH SANTÉ) show sensitive medical information is actively traded. Sports organisations (FRMF, FRMT, LRFA) are increasingly targeted for identity and licensing data.
 
 ## 6. Threat actor profile
 

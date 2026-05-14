@@ -112,4 +112,23 @@ Les éléments techniques publiés présentent plusieurs similarités (ERP volum
 - **Note CTI :**
   La publication mentionne explicitement un conflit post-compromission avec la victime ainsi que la diffusion publique des données via plusieurs archives.
 ---
-  
+
+### 12 Mai 2026
+#### 🇲🇦 Maroc - SDTM / Groupe Barid Al-Maghrib
+
+- **Acteur /Groupe :** Sejjil
+- **Secteur :** Logistique / Transport / Services postaux / ERP
+- **Organisation ciblée :** SDTM – Groupe Barid Al-Maghrib
+- **Site web :** [poste.ma](https://www.poste.ma)
+- **Statut :** Fuite de données / Revendication
+- **Description victime :**  
+  SDTM est une filiale logistique du Groupe Barid Al-Maghrib spécialisée dans le transport, la distribution, la gestion de flotte et les services associés aux opérations postales et financières au Maroc.
+
+- **Description de la fuite :**  
+  Une publication apparue le 12 mai 2026 revendique l’exposition complète de l’infrastructure ERP et financière de SDTM. L’auteur affirme détenir 129 fichiers CSV structurés provenant de systèmes SAGE ERP, passerelles SMS, données bancaires et plateformes internes associées aux opérations logistiques et financières.
+
+- **Analyse des échantillons :**  
+  Les échantillons observés contiennent des métadonnées administratives, comptes utilisateurs ERP, hashes MD5 de mots de passe, tokens de session actifs, adresses email professionnelles, informations d’agences, numéros de téléphone, données financières internes, identifiants RIB, désignations de comptes et informations clients incluant CIN et adresses physiques.
+
+- **CTI Note :**  
+  Les données publiées suggèrent une compromission profonde d’environnements ERP et applicatifs internes. La présence de tokens actifs, comptes administratifs et données financières structurées pourrait faciliter des opérations de fraude, d’accès persistant ou de compromission latérale. Le volume exact et l’authenticité complète de l’ensemble revendiqué restent à confirmer indépendamment.

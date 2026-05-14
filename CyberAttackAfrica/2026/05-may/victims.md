@@ -111,5 +111,22 @@ At this stage, it is not possible to confirm with certainty whether both actors 
 - **CTI Note :**
   The publication explicitly references a post-compromise dispute with the victim as well as public distribution of the leaked archives.
 ---
+### May 12, 2026
+#### 🇲🇦 Morocco - SDTM / Groupe Barid Al-Maghrib
 
+- **Threat Actor / Group :** Sejjil
+- **Sector :** Logistics / Transportation / Postal Services / ERP
+- **Targeted Organization :** SDTM – Groupe Barid Al-Maghrib
+- **Web site :** [poste.ma](https://www.poste.ma)
+- **Status :** Data Leak / Claim
+- **Victim Description :**  
+  SDTM is a logistics subsidiary of Groupe Barid Al-Maghrib involved in transportation, distribution, fleet management, and operational support services linked to postal and financial activities in Morocco.
 
+- **Leak Description :**  
+  A post published on May 12, 2026 claims the complete exposure of SDTM’s ERP and financial infrastructure. The actor alleges possession of 129 structured CSV files originating from SAGE ERP systems, SMS gateways, banking datasets, and internal operational platforms associated with logistics and financial workflows.
+
+- **Sample Analysis :**  
+  The analyzed samples contain administrative metadata, ERP user accounts, MD5 password hashes, active session tokens, corporate email addresses, agency information, phone numbers, internal financial records, bank account identifiers (RIB), account designations, and customer-related information including national ID references and physical addresses.
+
+- **CTI Note :**  
+  The exposed data suggests a deep compromise of internal ERP and application environments. The presence of active tokens, administrative accounts, and structured financial datasets could facilitate fraud operations, persistent access, or lateral compromise activities. The full authenticity and exact scope of the claimed dataset remain independently unverified.
