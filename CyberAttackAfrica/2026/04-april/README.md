@@ -191,13 +191,12 @@ pie showData
 
 ### Geographic breakdown
 
-| Region | Countries | Total incidents | Ransomware | Data leaks |
-|--------|-----------|-----------------|------------|------------|
-| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 (60 %) | 13 | 23 |
-| West Africa | 🇳🇬 Nigeria, 🇧🇯 Benin, 🇸🇳 Senegal, 🇬🇭 Ghana | 8 (13 %) | 2 | 6 |
-| Southern Africa | 🇿🇦 South Africa, 🇧🇼 Botswana, 🇿🇲 Zambia | 10 (17 %) | 5 | 5 |
-| East Africa | 🇪🇹 Ethiopia, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Uganda | 5 (8 %) | 2 | 3 |
-| Multi‑country | 🇦🇴 Angola, 🇿🇦 South Africa, 🇳🇬 Nigeria (combined incident) | 1 (2 %) | 0 | 1 |
+| Region | Countries | Total Incidents | Ransomware | Data Leaks |
+|--------|-----------|-----------------|------------|-------------|
+| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 (60%) | 13 | 23 |
+| West Africa | 🇳🇬 Nigeria, 🇧🇯 Benin, 🇸🇳 Senegal, 🇬🇭 Ghana | 9 (15%) | 2 | 7 |
+| Southern Africa | 🇿🇦 South Africa, 🇦🇴 Angola, 🇧🇼 Botswana, 🇿🇲 Zambia | 11 (18%) | 5 | 6 |
+| East Africa | 🇪🇹 Ethiopia, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Uganda | 5 (8%) | 2 | 3 |
 
 *North Africa alone accounts for 60% of all incidents, driven primarily by data leaks.*
 
@@ -293,7 +292,7 @@ pie showData
 - Insurance, food, and automotive sectors also hit in South Africa.
 
 
-### 4.2 Data Leaks & Access Sales (40 incidents)
+### 4.2 Data leaks & access sales (40 incidents)
 
 | Country       | Incidents | Main actors |
 |---------------|-----------|-------------|

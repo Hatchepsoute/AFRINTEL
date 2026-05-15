@@ -189,13 +189,12 @@ pie showData
 
 ### Répartition par zone géographique
 
-| Zone | Pays inclus | Incidents totaux | Ransomwares | Fuites |
-|------|-------------|------------------|-------------|--------|
-| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 (60 %) | 13 | 23 |
-| Afrique de l’Ouest | 🇳🇬 Nigeria, 🇧🇯 Bénin, 🇸🇳 Sénégal, 🇬🇭 Ghana | 8 (13 %) | 2 | 6 |
-| Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇲 Zambie | 10 (17 %) | 5 | 5 |
-| Afrique de l’Est | 🇪🇹 Éthiopie, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Ouganda | 5 (8 %) | 2 | 3 |
-| Multi‑pays | 🇦🇴 Angola, 🇿🇦 Afrique du Sud, 🇳🇬 Nigeria (incident combiné) | 1 (2 %) | 0 | 1 |
+| Région | Pays | Incidents totaux | Ransomwares | Fuites de données |
+|--------|------|------------------|-------------|-------------------|
+| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 (60%) | 13 | 23 |
+| Afrique de l’Ouest | 🇳🇬 Nigeria, 🇧🇯 Bénin, 🇸🇳 Sénégal, 🇬🇭 Ghana | 9 (15%) | 2 | 7 |
+| Afrique australe | 🇿🇦 Afrique du Sud, 🇦🇴 Angola, 🇧🇼 Botswana, 🇿🇲 Zambie | 11 (18%) | 5 | 6 |
+| Afrique de l’Est | 🇪🇹 Éthiopie, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Ouganda | 5 (8%) | 2 | 3 |
 
 *L’Afrique du Nord capte à elle seule 60 % des incidents, essentiellement par des fuites de données.*
 
