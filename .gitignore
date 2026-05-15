@@ -1,8 +1,8 @@
 ########################################
-# 🧹 FILES TEMPORAIRES (CRITIQUE)
+# 🧹 TEMPORARY / BACKUP FILES
 ########################################
 
-# Fichiers backup éditeurs
+# Editor backups
 *~
 *.bak
 *.tmp
@@ -12,39 +12,21 @@
 *.swp
 *.swo
 
-# VSCode
-.vscode/
-
 # Emacs
 *#
 
 ########################################
-# 📄 FICHIERS DE TRAVAIL CTI
+# 💻 IDE / EDITOR
 ########################################
 
-# Exports temporaires
-*.csv
-*.xlsx
-*.json.tmp
-*.json.bak
+# VSCode
+.vscode/
 
-# Notes locales non destinées au repo
-notes/
-drafts/
-temp/
-tmp/
+# JetBrains
+.idea/
 
 ########################################
-# 🧠 DONNÉES CTI SENSIBLES / INTERMÉDIAIRES
-########################################
-
-# Dumps ou fichiers bruts OSINT
-raw_data/
-scraping/
-feeds/
-
-########################################
-# 🐍 PYTHON (si tu automatises AFRINTEL)
+# 🐍 PYTHON
 ########################################
 
 __pycache__/
@@ -52,23 +34,70 @@ __pycache__/
 *.pyo
 *.pyd
 
-.env
-.env.*
-
+# Virtual environments
 venv/
 .venv/
+env/
 
 ########################################
-# 📦 EXPORTS / BUILD
+# 🔐 SECRETS / TOKENS / CONFIG
 ########################################
 
-# PDF / PPT générés localement
-*.pdf
-*.pptx
+.env
+.env.*
+*.key
+*.pem
 
-# Graph exports
-*.png
-*.svg
+# Local config files containing credentials
+config.json
+secrets.json
+
+########################################
+# 📄 CTI WORKING FILES
+########################################
+
+# Local drafts / working notes
+notes/
+drafts/
+temp/
+tmp/
+
+########################################
+# 🧠 RAW OSINT / SCRAPING DATA
+########################################
+
+raw_data/
+scraping/
+feeds/
+
+########################################
+# 📊 GENERATED REPORTS / EXPORTS
+########################################
+
+generated/
+exports/
+generated_reports/
+
+########################################
+# 📈 GRAPH / MERMAID CACHE
+########################################
+
+.mermaid-cache/
+.graph-cache/
+
+########################################
+# 🧬 STIX / OPENCTI TEMP FILES
+########################################
+
+*.bundle.json.tmp
+*.stix2
+
+########################################
+# 🧠 CTI PLATFORM DATA
+########################################
+
+opencti-data/
+misp-data/
 
 ########################################
 # 🧾 LOGS
@@ -77,24 +106,20 @@ venv/
 *.log
 
 ########################################
-# 🔐 CLÉS / TOKENS (TRÈS IMPORTANT)
-########################################
-
-*.key
-*.pem
-*.env
-config.json
-
-########################################
 # 🐧 OS FILES
 ########################################
 
-# Linux
-*~
-
-# Mac
+# macOS
 .DS_Store
 
 # Windows
 Thumbs.db
 desktop.ini
+
+########################################
+# 🚫 OPTIONAL LARGE DATASETS
+########################################
+
+# Uncomment if needed
+# datasets/raw/
+# datasets/private/
