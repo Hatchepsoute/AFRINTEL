@@ -98,7 +98,7 @@ pie
 ```mermaid
 pie
     title Ransomware par pays
-    "Afrique Sud (7)" : 7
+    "Afrique de Sud (7)" : 7
     "Maroc (5)" : 5
     "Egypte (3)" : 3
     "Madagascar (1)" : 1
@@ -109,7 +109,7 @@ pie
 ```mermaid
 pie
     title Fuites de données par pays
-    "Afrique Sud (6)" : 6
+    "Afrique de Sud (6)" : 6
     "Egypte (5)" : 5
     "Maroc (3)" : 3
     "Nigeria (2)" : 2

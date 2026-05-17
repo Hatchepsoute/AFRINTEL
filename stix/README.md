@@ -66,38 +66,11 @@ Each STIX bundle may include:
 |------|------|
 | January 2026 | [afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
 | February 2026 | [afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
+| March 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
+| April 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
 
 ---
 
-## Generation workflow
-
-For 2025 monthly datasets, STIX bundles can be generated automatically from AFRINTEL victim datasets using:
-
-```bash
-python3 scripts/afrintel_victims_to_stix.py --repo .
-```
-
-You can also target a specific year or month:
-
-```bash
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025 --month 01-january
-```
-
----
-
-## Source attribution
-
-Each generated STIX object includes AFRINTEL as a source reference:
-
-```json
-{
-  "source_name": "AFRINTEL",
-  "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/<year>/<month>"
-}
-```
-
----
 
 ## Integration use cases
 
@@ -114,7 +87,6 @@ They can also support SOC workflows such as:
 - actor-to-victim correlation
 - campaign tracking
 - case triage support
-
 ---
 
 ## Roadmap
@@ -126,11 +98,4 @@ They can also support SOC workflows such as:
 - campaign clustering and timeline analysis
 
 ---
-
-## License
-
-This dataset is part of the AFRINTEL project and is distributed under the MIT License.
-
----
-
 **AFRINTEL - Operationalizing ransomware intelligence across Africa.**

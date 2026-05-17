@@ -1,0 +1,129 @@
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Statistics-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Period](https://img.shields.io/badge/Period-March%202026-lightgrey)
+
+# AFRINTEL - Africa Cyber Statistics (March 2026)
+
+## Global overview
+
+| Indicator | Value |
+|---|---|
+| Victims recorded | 41 |
+| Countries affected | 14 |
+| Threat actors observed | 27 |
+| Ransomware incidents | 19 |
+| Data breaches / intrusions | 22 |
+
+```mermaid
+pie
+    title Incident distribution
+    "Ransomware (19)" : 19
+    "Breaches / Intrusions (22)" : 22
+```
+
+## Most affected countries
+
+| Country | Victims |
+|---|---|
+| 🇿🇦 South Africa | 13 |
+| 🇲🇦 Morocco | 8 |
+| 🇪🇬 Egypt | 8 |
+| 🇳🇬 Nigeria | 2 |
+| 🇨🇲 Cameroon | 1 |
+| 🇩🇿 Algeria | 1 |
+| 🇸🇳 Senegal | 1 |
+| 🇬🇳 Guinea | 1 |
+| 🇿🇲 Zambia | 1 |
+| 🇲🇬 Madagascar | 1 |
+| 🇹🇳 Tunisia | 1 |
+| 🇳🇦 Namibia | 1 |
+| 🇹🇿 Tanzania | 1 |
+| 🇨🇩 DRC | 1 |
+
+```mermaid
+xychart-beta
+    title "Victims by country"
+    x-axis ["ZA","MA","EG","NG","CM","DZ","SN","GN","ZM","MG","TN","NA","TZ","CD"]
+    y-axis "Victims" 0 --> 15
+    bar [13,8,8,2,1,1,1,1,1,1,1,1,1,1]
+```
+
+## Threat actor distribution
+
+| Actor | Victims |
+|---|---|
+| CrowStealer | 5 |
+| APT73/BASHE | 4 |
+| XP95 | 3 |
+| xNov | 3 |
+| Qilin | 2 |
+| The Gentlemen | 2 |
+| INC Ransom | 2 |
+
+```mermaid
+pie
+    title Most active actors
+    "CrowStealer (5)" : 5
+    "APT73/BASHE (4)" : 4
+    "XP95 (3)" : 3
+    "xNov (3)" : 3
+    "Qilin (2)" : 2
+    "The Gentlemen (2)" : 2
+    "INC Ransom (2)" : 2
+```
+
+## Sector distribution
+
+| Sector | Incidents |
+|---|---|
+| Government / Administration | 10 |
+| Education / University | 7 |
+| Health | 4 |
+| Insurance | 3 |
+| Telecommunications | 3 |
+| Engineering / Construction | 3 |
+| Finance / Banking | 2 |
+| IT / Consulting | 2 |
+
+```mermaid
+pie
+    title Targeted sectors
+    "Government (10)" : 10
+    "Education (7)" : 7
+    "Health (4)" : 4
+    "Insurance (3)" : 3
+    "Telecommunications (3)" : 3
+    "Engineering (3)" : 3
+    "Finance (2)" : 2
+    "IT/Consulting (2)" : 2
+```
+
+## Ransomware vs Breaches by country
+
+| Country | Ransomware | Breaches |
+|---|---|---|
+| 🇿🇦 South Africa | 7 | 6 |
+| 🇲🇦 Morocco | 5 | 3 |
+| 🇪🇬 Egypt | 3 | 5 |
+| 🇳🇬 Nigeria | 0 | 2 |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Breaches"
+    x-axis ["South Africa","Morocco","Egypt","Nigeria"]
+    y-axis "Incidents" 0 --> 8
+    bar [7,5,3,0]
+    bar [6,3,5,2]
+```
+
+## CTI Trends
+
+- South Africa remains the main ransomware hotspot in Africa.
+- Morocco and Egypt continue to face targeting against state institutions.
+- Government and education sectors account for over 40% of incidents.
+- Data-exfiltration actors are becoming more active than traditional ransomware groups.
+- Supply-chain attacks and financial intrusions are rapidly increasing.
+
+---
+
+AFRINTEL - African Cyber Threat Intelligence

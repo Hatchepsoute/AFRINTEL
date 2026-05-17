@@ -34,8 +34,10 @@ L’objectif est de fournir une **visibilité stratégique sur les cybermenaces 
 
 | Mois | Français | Anglais |
 |------|----------|--------|
-| **Janvier 2026** | [Voir le rapport](reports/2026/01-january/README_FR.md) | [View report](reports/2026/01-january/README.md) |
-| **Février 2026** | [Voir le rapport](reports/2026/01-february/README_FR.md) | [View report](reports/2026/01-february/README.md) |
+| **Janvier 2026** | [Voir le rapport](CyberAttackAfrica/2026/01-january/README_FR.md) | [View report](CyberAttackAfrica/2026/01-january/README.md) |
+| **Février 2026** | [Voir le rapport](CyberAttackAfrica/2026/02-february/README_FR.md) | [View report](CyberAttackAfrica/2026/02-february/README.md) |
+| **Mars 2026** | [Voir le rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [View report](CyberAttackAfrica/2026/03-march/README.md) |
+| **Avril 2026** | [Voir le rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [View report](CyberAttackAfrica/2026/04-april/README.md) |
 
 ---
 
@@ -45,12 +47,16 @@ L’objectif est de fournir une **visibilité stratégique sur les cybermenaces 
 |------|----------|--------|
 | **Janvier 2026** | [Voir les statistiques](statistics/2026/01-january/README_FR.md) | [Statistics](statistics/2026/01-january/README.md) |
 | **Février 2026** | [Voir les statistiques](statistics/2026/02-february/README_FR.md) | [Statistics](statistics/2026/02-february/README.md) |
+| **Mars 2026** | [Voir les statistiques](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
+| **Avril 2026** | [Voir les statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 
 ---
 
 ## 🔍 Analyse comparative
 
-📄 [Comparaison Janvier vs Février 2026](comparison/README_FR.md)
+📄 [Comparaison Janvier vs Février 2026](comparison/2026/01-january-february/README_FR.md)
+📄 [Comparaison Février vs Mars 2026](comparison/2026/02-february-march/README_FR.md)
+📄 [Comparaison Mars vs Avril 2026](comparison/2026/03-march-april/README_FR.md)
 
 Analyse portant sur :
 
@@ -81,8 +87,10 @@ AFRINTEL fournit des ensembles de données CTI structurées au **format STIX**.
 
 📦 Bundles disponibles :
 
-- [Données STIX janvier 2026](stix/2026/01-january/afrintel-january-2026-bundle.json)
-- [Données STIX février 2026](stix/2026/02-february/afrintel-february-2026-bundle.json)
+- [Données STIX janvier 2026](stix/2026/01-january/afrintel_january_2026_opencti.json)
+- [Données STIX février 2026](stix/2026/afrintel_february_2026_opencti.json)
+- [Données STIX mars 2026](stix/2026/03-march/afrintel_march_2026_opencti.json)
+- [Données STIX april 2026](stix/2026/04-april/afrintel_april_2026_opencti.json)
 
 Ces bundles contiennent des renseignements structurés sur les acteurs de ransomwares, les victimes, les pays et secteurs ciblés à travers l'Afrique.
 ---
@@ -97,7 +105,7 @@ AFRINTEL
 ├── data/
 │   └── devman.md
 │
-├── reports/
+├── CyberAttackAfrica/
 │   ├── 2025/
 │   │   ├── 01-january/
 │   │   ├── 02-february/

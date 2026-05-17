@@ -68,39 +68,8 @@ Chaque bundle STIX peut contenir :
 |------|------|
 | Janvier 2026 | [afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
 | Février 2026 | [afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
-
----
-
-## ⚙️ Génération automatique
-
-Les bundles STIX sont générés automatiquement via :
-
-```bash
-python3 scripts/afrintel_victims_to_stix.py --repo .
-```
-
-Exemples :
-
-```bash
-# Générer toute l’année
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
-
-# Générer un mois spécifique
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025 --month 03-march
-```
-
----
-
-## 🔗 Source
-
-Chaque objet STIX contient la référence AFRINTEL :
-
-```json
-{
-  "source_name": "AFRINTEL",
-  "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/reports/<year>/<month>"
-}
-```
+| Mars 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
+| Avril 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
 
 ---
 
@@ -132,10 +101,4 @@ Exemples d’usage :
 
 ---
 
-## 📜 Licence
-
-Ce dataset fait partie du projet AFRINTEL et est distribué sous licence MIT.
-
----
-
-**AFRINTEL — Industrialisation du renseignement ransomware en Afrique.**
+**AFRINTEL - Industrialisation du renseignement ransomware en Afrique.**
