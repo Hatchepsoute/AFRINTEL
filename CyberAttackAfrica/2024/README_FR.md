@@ -312,6 +312,6 @@ L’année 2024 confirme que l’Afrique n’est pas épargnée par les cybermen
 
 ---
 
-* Libre de diffusion (TLP:CLEAR).*
+*Libre de diffusion (TLP:CLEAR).*
 
 **Contact :** Adama ASSIONGBON - [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
