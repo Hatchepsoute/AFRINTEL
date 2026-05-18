@@ -105,8 +105,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Secteurs les plus ciblés (nombre d'attaques)"
-    x-axis ["Manufacturier", "Services financiers", "Services", "Tech & IT", "Télécoms", "Santé", "Distribution", "Gouvernement"]
-    y-axis "Nombre d'attaques" 0 to 15
+    x-axis ["Industrie" "Services financiers" "Services" "Tech & IT" "Télécoms" "Santé" "Distribution" "Gouvernement"]
+    y-axis "Nombre d'attaques" 0 --> 15
     bar [13, 9, 8, 7, 6, 5, 5, 5]
 ```
 
@@ -188,9 +188,9 @@ gantt
 
 ```mermaid
 xychart-beta
-    title "Attaques par région géostratégique"
-    x-axis ["Afrique australe", "Afrique du Nord", "Afrique de l'Est", "Afrique de l'Ouest", "Afrique centrale"]
-    y-axis "Nombre d'attaques" 0 to 50
+    title "Attaques par Région Géostratégique"
+    x-axis ["Afrique australe" "Afrique du Nord" "Afrique de l'Est" "Afrique de l'Ouest" "Afrique centrale"]
+    y-axis "Nombre d'attaques" 0 --> 50
     bar [44, 24, 11, 10, 3]
 ```
 
@@ -228,8 +228,8 @@ Aucune trêve significative ; les cybercriminels opèrent toute l’année avec 
 ```mermaid
 xychart-beta
     title "Évolution mensuelle des attaques (2024)"
-    x-axis ["janv", "févr", "mars", "avr", "mai", "juin", "juil", "août", "sept", "oct", "nov", "déc"]
-    y-axis "Nombre d'attaques" 0 to 18
+    x-axis ["Janv" "Févr" "Mars" "Avril" "Mai" "Juin" "Juil" "Août" "Sept" "Oct" "Nov" "Déc"]
+    y-axis "Nombre d'attaques" 0 --> 18
     bar [2, 4, 5, 4, 10, 4, 6, 10, 5, 8, 12, 16]
 ```
 ### Évolution mensuelle des attaques (2024) - vue sparkline
@@ -265,22 +265,22 @@ timeline
     October : 8 attaques
     November : 12 attaques
     Décember : 16 attaques
-
+---
 ```mermaid
 pie showData
-    title Chronologie des attaques ransomware en Afrique (2024)
-    January : 2 attaques
-    February : 4 attaques
-    March : 5 attaques
-    April : 4 attaques
-    May : 10 attaques
-    June : 4 attaques
-    July : 6 attaques
-    August : 10 attaques
-    September : 5 attaques
-    October : 8 attaques
-    November : 12 attaques
-    Décember : 16 attaques
+    title Répartition des attaques de ransomware en Afrique (2024)
+    "Janvier" : 2
+    "Février" : 4
+    "Mars" : 5
+    "Avril" : 4
+    "Mai" : 10
+    "Juin" : 4
+    "Juillet" : 6
+    "Août" : 10
+    "Septembre" : 5
+    "Octobre" : 8
+    "Novembre" : 12
+    "Décembre" : 16
 ```
 ---
 

@@ -105,8 +105,8 @@ pie showData
 ```mermaid
 xychart-beta
     title "Most Targeted Sectors (number of attacks)"
-    x-axis ["Manufacturing", "Financial services", "Services", "Tech & IT", "Telecoms", "Healthcare", "Retail", "Government"]
-    y-axis "Number of attacks" 0 to 15
+    x-axis ["Manufacturing" "Financial services" "Services" "Tech & IT" "Telecoms" "Healthcare" "Retail" "Government"]
+    y-axis "Number of attacks" 0 --> 15
     bar [13, 9, 8, 7, 6, 5, 5, 5]
 ```
 
@@ -175,7 +175,7 @@ gantt
 
 ## 4. Geostrategic analysis by region
 
-### 4.1 Summary Table
+### 4.1 Summary table
 
 | Region | Countries affected (# attacks) | Total | % | Main targeted sectors | Main groups |
 |--------|--------------------------------|-------|----|-----------------------|--------------|
@@ -190,8 +190,8 @@ gantt
 ```mermaid
 xychart-beta
     title "Attacks by Geostrategic Region"
-    x-axis ["Southern Africa", "North Africa", "East Africa", "West Africa", "Central Africa"]
-    y-axis "Number of attacks" 0 to 50
+    x-axis ["Southern Africa" "North Africa" "East Africa" "West Africa" "Central Africa"]
+    y-axis "Number of attacks" 0 --> 50
     bar [44, 24, 11, 10, 3]
 ```
 ### 4.2 Geostrategic interpretation
@@ -228,8 +228,8 @@ No significant break; criminals operate year‑round with a preference for holid
 ```mermaid
 xychart-beta
     title "Monthly Evolution of Attacks (2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-    y-axis "Number of attacks" 0 to 18
+    x-axis ["Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"]
+    y-axis "Number of attacks" 0 --> 18
     bar [2, 4, 5, 4, 10, 4, 6, 10, 5, 8, 12, 16]
 ```
 
@@ -266,22 +266,22 @@ timeline
     November : 12 attacks
     December : 16 attacks
 ```
-
+---
 ```mermaid
 pie showData
-    title Timeline of ransomware attacks in Africa (2024)
-    January : 2 attacks
-    February : 4 attacks
-    March : 5 attacks
-    April : 4 attacks
-    May : 10 attacks
-    June : 4 attacks
-    July : 6 attacks
-    August : 10 attacks
-    September : 5 attacks
-    October : 8 attacks
-    November : 12 attacks
-    December : 16 attacks
+    title Timeline of Ransomware Attacks in Africa (2024)
+    "January" : 2
+    "February" : 4
+    "March" : 5
+    "April" : 4
+    "May" : 10
+    "June" : 4
+    "July" : 6
+    "August" : 10
+    "September" : 5
+    "October" : 8
+    "November" : 12
+    "December" : 16
 ```
 ---
 
