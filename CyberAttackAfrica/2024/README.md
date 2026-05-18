@@ -185,7 +185,6 @@ gantt
 | **East Africa** | 🇰🇪 Kenya (4), 🇸🇨 Seychelles (3), 🇹🇿 Tanzania (2), 🇩🇯 Djibouti (1), 🇪🇹 Ethiopia (1) | **11** | 12.8 % | Telecoms, Fintech, Market Infrastructures | Hunters, ArcusMedia, KillSec, Meow, BrainCipher |
 | **Central Africa** | 🇨🇲 Cameroon (2), 🇨🇬 Congo (1) | **3** | 3.5 % | Insurance, Public services | SpaceBears, Eldorado, Fog |
 
-> **Note:** The totals above (44+24+10+11+3 = 92) reflect regional reclassifications; based on the raw 86 victims, some may appear in multiple categories. This table is a strategic analysis, not a simple arithmetic sum.
 
 ```mermaid
 xychart-beta

@@ -170,6 +170,7 @@ gantt
 | Autres (14)    | 20       | ████████████████████ |
 
 *Chaque bloc █ représente 1 attaque. Longueur max = 22 blocs.*
+
 ---
 
 ## 4. Analyse géostratégique par région
@@ -184,7 +185,6 @@ gantt
 | **Afrique de l’Est** | 🇰🇪 Kenya (4), 🇸🇨 Seychelles (3), 🇹🇿 Tanzanie (2), 🇩🇯 Djibouti (1), 🇪🇹 Éthiopie (1) | **11** | 12,8 % | Télécoms, Fintech, Infrastructures de marché | Hunters, ArcusMedia, KillSec, Meow, BrainCipher |
 | **Afrique centrale** | 🇨🇲 Cameroun (2), 🇨🇬 Congo (1) | **3** | 3,5 % | Assurances, Services publics | SpaceBears, Eldorado, Fog |
 
-> **Note :** Les totaux ci-dessus (44+24+10+11+3 = 92) tiennent compte des redécoupages régionaux ; sur la base des 86 victimes brutes, certaines peuvent chevaucher plusieurs classements. Le présent tableau est une analyse stratégique, non une simple somme arithmétique des lignes pays.
 
 ```mermaid
 xychart-beta
