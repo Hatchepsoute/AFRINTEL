@@ -105,7 +105,7 @@ pie showData
 ```mermaid
 xychart-beta
     title "Most Targeted Sectors (number of attacks)"
-    x-axis ["Manufacturing" "Financial services" "Services" "Tech & IT" "Telecoms" "Healthcare" "Retail" "Government"]
+    x-axis ["Manufacturing", "Financial services", "Services", "Tech & IT", "Telecoms", "Healthcare", "Retail", "Government"]
     y-axis "Number of attacks" 0 --> 15
     bar [13, 9, 8, 7, 6, 5, 5, 5]
 ```
