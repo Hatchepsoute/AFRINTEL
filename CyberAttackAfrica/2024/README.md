@@ -8,9 +8,10 @@
 # Cyber Threat Intelligence (CTI) Report
 ## Ransomware Attack landscape in Africa - Year 2024
 
+👉🏾 [French version](./README_FR.md)
+
 **Data Source:** OSINT (ransomware leak sites, specialized monitoring)  
 **Incidents documented:** 86
-👉🏾 [French version](./README_FR.md)
 ---
 
 ## 1. Executive summary
