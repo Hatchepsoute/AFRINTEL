@@ -212,8 +212,8 @@ xychart-beta
 | Healthcare              | 5        | 0     | 0    | 0    | 0       |
 | Government / Admin      | 2        | 2     | 1    | 0    | 0       |
 | Oil & Energy            | 0        | 4     | 0    | 0    | 0       |
-
 *Figures are derived from the 86 documented victims.*
+
 ---
 
 ## 5. Timeline and trends
@@ -227,7 +227,7 @@ No significant break; criminals operate year‑round with a preference for holid
 
 ```mermaid
 xychart-beta
-    title "Monthly Evolution of Attacks (2024)"
+    title "Monthly evolution of attacks (2024)"
     x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     y-axis "Number of attacks" 0 --> 18
     bar [2, 4, 5, 4, 10, 4, 6, 10, 5, 8, 12, 16]
