@@ -295,13 +295,12 @@
 
 ### May 13, 2024
 
-#### 🇨🇮 Ivory Coast - Treasury of cote d'ivoire
+#### 🇨🇮 Côte d'Ivoire - Public Treasury of Côte d'Ivoire (DGTCP)
 - **Ransomware group:** hunters
-- **Sector:** Finance
+- **Sector:** Government / Financial Services
 - **Website:** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Status:** Claimed & Data Leak
-- **Victim description:** Treasury of cote d'ivoire is a major commercial enterprise operating in the finance sector, contributing significantly to the regional economic landscape in Ivory Coast.
-
+- **Victim description:** The Public Treasury of Côte d'Ivoire (DGTCP) is the sovereign institution responsible for national financial management, state accounting, and supervision of the domestic financial sector.
 ----------------------------
 
 ### May 16, 2024
