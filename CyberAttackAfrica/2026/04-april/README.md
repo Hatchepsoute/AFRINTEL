@@ -67,92 +67,100 @@ pie showData
 ### Country ranking
 
 **All incidents combined (60):**
-| Rank | Country | Incidents |
-|------|--------|-----------|
-| 1 | 🇲🇦 Morocco | 17 |
-| 2 | 🇪🇬 Egypt | 11 |
-| 3 | 🇿🇦 South Africa | 8 |
-| 4-6 | 🇳🇬 Nigeria, 🇩🇿 Algeria, 🇹🇳 Tunisia | 4 each |
-| 7-8 | 🇰🇪 Kenya, 🇬🇭 Ghana | 2 each |
-| 9-15 | 🇧🇯 Benin, 🇧🇼 Botswana, 🇪🇹 Ethiopia, 🇸🇨 Seychelles, 🇸🇳 Senegal, 🇺🇬 Uganda, 🇿🇲 Zambia | 1 each |
-| – | 🌍 Multi‑country incident (Angola, South Africa, Nigeria) | 1 (counted as 1 victim) |
+| Rank | Country | Incidents | Chart |
+| :---: | :--- | :---: | :--- |
+| **1** | 🇲🇦 Morocco | **17** | █████████████████ |
+| **2** | 🇪🇬 Egypt | **11** | ███████████ |
+| **3** | 🇿🇦 South Africa | **8** | ████████ |
+| **4** | 🇳🇬 Nigeria | **4** | ████ |
+| **5** | 🇩🇿 Algeria | **4** | ████ |
+| **6** | 🇹🇳 Tunisia | **4** | ████ |
+| **7** | 🇰🇪 Kenya | **2** | ██ |
+| **8** | 🇬🇭 Ghana | **2** | ██ |
+| **9** | 🇧🇯 Benin | **1** | █ |
+| **10** | 🇧🇼 Botswana | **1** | █ |
+| **11** | 🇪🇹 Ethiopia | **1** | █ |
+| **12** | 🇸🇨 Seychelles | **1** | █ |
+| **13** | 🇸🇳 Senegal | **1** | █ |
+| **14** | 🇺🇬 Uganda | **1** | █ |
+| **15** | 🇿🇲 Zambia | **1** | █ |
+| **–** | 🌍 Multi‑country *(AO, ZA, NG)* | **1** | █ |
 
-**By ransomware (20):**
-| Rank | Country | Ransomware |
-|------|--------|------------|
-| 1 | 🇪🇬 Egypt | 9 |
-| 2 | 🇿🇦 South Africa | 3 |
-| 3-4 | 🇲🇦 Morocco, 🇬🇭 Ghana | 2 each |
-| 5-8 | 🇰🇪 Kenya, 🇧🇼 Botswana, 🇸🇨 Seychelles, 🇿🇲 Zambia | 1 each |
+*Note: The multi-country incident is counted as 1 global victim.*
 
-**By data leaks (40):**
-| Rank | Country | Data leaks |
-|------|--------|------------|
-| 1 | 🇲🇦 Morocco | 15 |
-| 2 | 🇿🇦 South Africa | 5 |
-| 3-5 | 🇳🇬 Nigeria, 🇩🇿 Algeria, 🇹🇳 Tunisia | 4 each |
-| 6 | 🇪🇬 Egypt | 2 |
-| 7-11 | 🇰🇪 Kenya, 🇧🇯 Benin, 🇪🇹 Ethiopia, 🇸🇳 Senegal, 🇺🇬 Uganda | 1 each |
-| – | 🌍 Multi‑country Africa | 1 |
+### 📊 Distribution by ransomware incidents (Total: 20)
+
+| Rank | Country | Incidents | Chart |
+| :---: | :--- | :---: | :--- |
+| **1** | 🇪🇬 Egypt | **9** | █████████ |
+| **2** | 🇿🇦 South Africa | **3** | ███ |
+| **3** | 🇲🇦 Morocco | **2** | ██ |
+| **4** | 🇬🇭 Ghana | **2** | ██ |
+| **5** | 🇰🇪 Kenya | **1** | █ |
+| **6** | 🇧🇼 Botswana | **1** | █ |
+| **7** | 🇸🇨 Seychelles | **1** | █ |
+| **8** | 🇿🇲 Zambia | **1** | █ |
+
+### 📊 Distribution by data leak incidents (Total: 40)
+
+| Rank | Country | Incidents | Chart |
+| :---: | :--- | :---: | :--- |
+| **1** | 🇲🇦 Morocco | **15** | ███████████████ |
+| **2** | 🇿🇦 South Africa | **5** | █████ |
+| **3** | 🇳🇬 Nigeria | **4** | ████ |
+| **4** | 🇩🇿 Algeria | **4** | ████ |
+| **5** | 🇹🇳 Tunisia | **4** | ████ |
+| **6** | 🇪🇬 Egypt | **2** | ██ |
+| **7** | 🇰🇪 Kenya | **1** | █ |
+| **8** | 🇧🇯 Benin | **1** | █ |
+| **9** | 🇪🇹 Ethiopia | **1** | █ |
+| **10** | 🇸🇳 Senegal | **1** | █ |
+| **11** | 🇺🇬 Uganda | **1** | █ |
+| **–** | 🌍 Multi‑country Africa | **1** | █ |
 
 
-**Most targeted countries:**
-- 🇲🇦 Morocco: 17 victims
-- 🇪🇬 Egypt: 11 victims
-- 🇿🇦 South Africa: 8 victims
-- 🇳🇬 Nigeria: 4 victims
-- 🇩🇿 Algeria: 4 victims
-- 🇹🇳 Tunisia: 4 victims
-- 🇰🇪 Kenya: 2 victims
-- 🇬🇭 Ghana: 2 victims
-- Others (1 victim each): Senegal, Benin, Ethiopia, Botswana, Seychelles, Zambia, Uganda, plus 1 multi‑country incident (Angola/South Africa/Nigeria).
+### 📊 Ransomware vs. Data Leaks comparison by country
 
+| Country | Ransomware | Data Leaks | Side-by-Side Distribution |
+| :--- | :---: | :---: | :--- |
+| 🇲🇦 Morocco | **2** | **15** | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇪🇬 Egypt | **9** | **2** | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇿🇦 South Africa | **3** | **5** | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | **0** | **4** | 🟦🟦🟦🟦 |
+| 🇩🇿 Algeria | **0** | **4** | 🟦🟦🟦🟦 |
+| 🇹🇳 Tunisia | **0** | **4** | 🟦🟦🟦🟦 |
+| 🇰🇪 Kenya | **1** | **1** | 🟧 🟦 |
+| 🇬🇭 Ghana | **2** | **0** | 🟧🟧 |
+| 🇧🇯 Benin | **0** | **1** | 🟦 |
+| 🇧🇼 Botswana | **1** | **0** | 🟧 |
+| 🇪🇹 Ethiopia | **0** | **1** | 🟦 |
+| 🇸🇨 Seychelles | **1** | **0** | 🟧 |
+| 🇸🇳 Senegal | **0** | **1** | 🟦 |
+| 🇺🇬 Uganda | **0** | **1** | 🟦 |
+| 🇿🇲 Zambia | **1** | **0** | 🟧 |
+| 🌍 Multi-country Africa | **0** | **1** | 🟦 |
+| **Total (60)** | **20** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
-### Ransomware vs data leaks by country
+### 📊 Summary of targeted sectors by country
 
-| Country               | Ransomware | Data Leaks |
-|-----------------------|------------|-------------|
-| 🇲🇦 Morocco           | 2          | 15          |
-| 🇪🇬 Egypt             | 9          | 2           |
-| 🇿🇦 South Africa      | 3          | 5           |
-| 🇳🇬 Nigeria           | 0          | 4           |
-| 🇩🇿 Algeria           | 0          | 4           |
-| 🇹🇳 Tunisia           | 0          | 4           |
-| 🇰🇪 Kenya             | 1          | 1           |
-| 🇬🇭 Ghana             | 2          | 0           |
-| 🇧🇯 Benin             | 0          | 1           |
-| 🇧🇼 Botswana          | 1          | 0           |
-| 🇪🇹 Ethiopia          | 0          | 1           |
-| 🇸🇨 Seychelles        | 1          | 0           |
-| 🇸🇳 Senegal           | 0          | 1           |
-| 🇺🇬 Uganda            | 0          | 1           |
-| 🇿🇲 Zambia            | 1          | 0           |
-| 🌍 Multi-country Africa | 0        | 1           |
-| **Total**             | **20**     | **40**      |
-
-### Targeted sectors by country
-
-| Country | Main targeted sectors |
-|---------|----------------------|
-| 🇩🇿 Algeria | Government (2), Insurance, Sports |
-| 🇧🇯 Benin | Government |
-| 🇧🇼 Botswana | Education |
-| 🇪🇬 Egypt | Education (2), Finance, Energy (2), Automotive, Engineering, Manufacturing, Construction |
-| 🇪🇹 Ethiopia | Energy |
-| 🇬🇭 Ghana | Health, Finance |
-| 🇰🇪 Kenya | Government, Aviation |
-| 🇲🇦 Morocco | Government (2), Education (3), Health (3), Finance (2), Sports (3), Digital identity, Services, Agribusiness, Personal data |
-| 🇳🇬 Nigeria | Government (3), NGO (1) + multi‑country government access |
-| 🇸🇳 Senegal | Government |
-| 🇸🇨 Seychelles | Government |
-| 🇿🇦 South Africa | E‑commerce (2), Government (2), Education, Telecoms, Tourism, Agribusiness + multi‑country government access |
-| 🇹🇳 Tunisia | E‑commerce, Education, Services, Social network |
-| 🇺🇬 Uganda | Government |
-| 🇿🇲 Zambia | Insurance |
-| 🇦🇴 Angola | Multi‑country government access (combined incident) |
-
-*Numbers in parentheses indicate the number of incidents when >1.*
-
+| Rank | Country | Sector Vol. | Targeted Sectors & Breakdown |
+| :---: | :--- | :--- | :--- |
+| **1** | 🇲🇦 Morocco | ███████████████ | Education (**3**), Healthcare (**3**), Sports (**3**), Government (**2**), Finance (**2**), Digital Identity (**1**), Services (**1**), Food & Retail (**1**), Personal Data (**1**) |
+| **2** | 🇪🇬 Egypt | █████████ | Education (**2**), Energy (**2**), Finance (**1**), Automotive (**1**), Engineering (**1**), Manufacturing (**1**), Construction (**1**) |
+| **3** | 🇿🇦 South Africa | ███████ | E-commerce (**2**), Government (**2**), Education (**1**), Telecoms (**1**), Tourism (**1**), Food & Retail (**1**) + *Multi-country gouv. access* |
+| **4** | 🇳🇬 Nigeria | ████ | Government (**3**), NGO (**1**) + *Multi-country gouv. access* |
+| **5** | 🇩🇿 Algeria | ████ | Government (**2**), Insurance (**1**), Sports (**1**) |
+| **6** | 🇹🇳 Tunisia | ████ | E-commerce (**1**), Education (**1**), Services (**1**), Social Network (**1**) |
+| **7** | 🇰🇪 Kenya | ██ | Government (**1**), Aviation (**1**) |
+| **8** | 🇬🇭 Ghana | ██ | Healthcare (**1**), Finance (**1**) |
+| **9** | 🇧🇯 Benin | █ | Government (**1**) |
+| **10** | 🇧🇼 Botswana | █ | Education (**1**) |
+| **11** | 🇪🇹 Ethiopia | █ | Energy (**1**) |
+| **12** | 🇸🇳 Senegal | █ | Government (**1**) |
+| **13** | 🇸🇨 Seychelles | █ | Government (**1**) |
+| **14** | 🇺🇬 Uganda | █ | Government (**1**) |
+| **15** | 🇿🇲 Zambia | █ | Insurance (**1**) |
+| **–** | 🌍 Angola | █ | *Multi-country government access (combined incident)* |
 
 **Ransomware victims by country - April 2026**
 
@@ -189,30 +197,33 @@ pie showData
     "🌍 Multi-country Africa" : 1
 ```
 
-### Geographic breakdown
+### 📊 Geographic breakdown of incidents by region
 
-| Region | Countries | Total Incidents | Ransomware | Data Leaks |
-|--------|-----------|-----------------|------------|-------------|
-| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 (60%) | 13 | 23 |
-| West Africa | 🇳🇬 Nigeria, 🇧🇯 Benin, 🇸🇳 Senegal, 🇬🇭 Ghana | 9 (15%) | 2 | 7 |
-| Southern Africa | 🇿🇦 South Africa, 🇦🇴 Angola, 🇧🇼 Botswana, 🇿🇲 Zambia | 11 (18%) | 5 | 6 |
-| East Africa | 🇪🇹 Ethiopia, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Uganda | 5 (8%) | 2 | 3 |
+| Region | Total Incidents | Ransomware | Data Leaks | Side-by-Side Distribution |
+| :--- | :---: | :---: | :---: | :--- |
+| **North Africa** | **36** (60%) | 13 | 23 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | **11** (18%) | 5 | 6 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦 |
+| **West Africa** | **9** (15%) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **East Africa** | **5** (8%) | 2 | 3 | 🟧🟧 🟦🟦🟦 |
+| **Total** | **61** | **22** | **39** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
-*North Africa alone accounts for 60% of all incidents, driven primarily by data leaks.*
+*Note: The breakdown totals 61 here due to splitting the multi-country incident (Angola/Nigeria/South Africa) across its respective regions.*
 
 
-**Sector distribution:**
-| Sector                    | Incidents | Percentage |
-|---------------------------|-----------|------------|
-| Government / Admin        | 15        | 25.0%      |
-| Education / University    | 8         | 13.3%      |
-| Health / Medical          | 4         | 6.7%       |
-| Finance / Banking         | 4         | 6.7%       |
-| E-commerce / Retail       | 3         | 5.0%       |
-| Sports / Federations      | 4         | 6.7%       |
-| Oil & Energy              | 3         | 5.0%       |
-| Telecommunications        | 1         | 1.7%       |
-| Others                    | 18        | 30.0%      |
+### 📊 Cyberattacks Breakdown by Activity Sector
+
+| Activity Sector | Incidents | Share (%) | Chart |
+| :--- | :---: | :---: | :--- |
+| **Government / Administration** | **15** | 25.0 % | ███████████████ |
+| **Education / University** | **8** | 13.3 % | ████████ |
+| **Healthcare / Medical** | **4** | 6.7 % | ████ |
+| **Finance / Banking** | **4** | 6.7 % | ████ |
+| **Sports / Federations** | **4** | 6.7 % | ████ |
+| **E-commerce / Retail** | **3** | 5.0 % | ███ |
+| **Oil & Energy** | **3** | 5.0 % | ███ |
+| **Telecommunications** | **1** | 1.7 % | █ |
+| **Others** *(Miscellaneous sectors)* | **18** | 30.0 % | ██████████████████ |
+| **Total** | **60** | **100 %** | |
 
 
 **Sector distribution of Incidents - April 2026**
@@ -231,22 +242,24 @@ pie showData
     "🏭 Other Sectors" : 18
 ```
 
-### Most prolific threat actors
+### 📊 Most Prolific Threat Actors and Groups
 
-|Threat Actor / Group  | Number of Incidents | Dominant activity type        |
-|----------------------|--------------------|----------------------|
-| Grubder              | 7                  | Data leaks    |
-| Payload              | 4                  | Ransomware           |
-| APT73 / BASHE        | 4                  | Ransomware           |
-| TheGentlemen         | 4                  | Ransomware           |
-| Krybit               | 3                  | Ransomware           |
-| Anisanas2            | 3                  | Data leaks    |
-| DragonForce          | 2                  | Ransomware           |
-| LockBit5             | 2                  | Ransomware           |
-| Rihana               | 2                  | Data leaks    |
-| wh6ami               | 2                  | Data leaks    |
-| dark07x              | 2                  | Data leaks    |
-| NormalLeVrai         | 2                  | Data leaks    |
+| Threat Actor / Group | Incidents | Primary Activity | Distribution & Method |
+| :--- | :---: | :--- | :--- |
+| **Grubder** | **7** | Data leaks | 🟦🟦🟦🟦🟦🟦🟦 |
+| **Payload** | **4** | Ransomware | 🟧🟧🟧🟧 |
+| **APT73 / BASHE** | **4** | Ransomware | 🟧🟧🟧🟧 |
+| **TheGentlemen** | **4** | Ransomware | 🟧🟧🟧🟧 |
+| **Krybit** | **3** | Ransomware | 🟧🟧🟧 |
+| **Anisanas2** | **3** | Data leaks | 🟦🟦🟦 |
+| **DragonForce** | **2** | Ransomware | 🟧🟧 |
+| **LockBit5** | **2** | Ransomware | 🟧🟧 |
+| **Rihana** | **2** | Data leaks | 🟦🟦 |
+| **wh6ami** | **2** | Data leaks | 🟦🟦 |
+| **dark07x** | **2** | Data leaks | 🟦🟦 |
+| **NormalLeVrai** | **2** | Data leaks | 🟦🟦 |
+
+*Legend: 🟧 Ransomware \| 🟦 Data Leaks*
 
 
 **Most active threat actors - April 2026**
@@ -275,75 +288,77 @@ pie showData
 
 ### 4.1 Ransomware (20 incidents)
 
-| Country          | Attacks | Main actors |
-|------------------|---------|-------------|
-| Egypt            | 9       | payload (4), dragonforce, lockbit5, thegentlemen, apt73/bashe |
-| South Africa     | 3       | dragonforce, krybit, thegentlemen |
-| Morocco          | 2       | worldleaks, lockbit5 |
-| Ghana            | 2       | thegentlemen, apt73/bashe |
-| Kenya            | 1       | apt73/bashe |
-| Botswana         | 1       | krybit |
-| Seychelles       | 1       | apt73/bashe |
-| Zambia           | 1       | krybit |
+| Rank | Country | Attacks | Chart | Main Threat Actors |
+| :---: | :--- | :---: | :--- | :--- |
+| **1** | 🇪🇬 Egypt | **9** | █████████ | payload (4), dragonforce, lockbit5, thegentlemen, apt73/bashe |
+| **2** | 🇿🇦 South Africa | **3** | ███ | dragonforce, krybit, thegentlemen |
+| **3** | 🇲🇦 Morocco | **2** | ██ | worldleaks, lockbit5 |
+| **4** | 🇬🇭 Ghana | **2** | ██ | thegentlemen, apt73/bashe |
+| **5** | 🇰🇪 Kenya | **1** | █ | apt73/bashe |
+| **6** | 🇧🇼 Botswana | **1** | █ | krybit |
+| **7** | 🇸🇨 Seychelles | **1** | █ | apt73/bashe |
+| **8** | 🇿🇲 Zambia | **1** | █ | krybit |
 
-**Key observations:**
-- ransomware group **payload** hammered Egyptian economic sectors (finance, oil, manufacturing, real estate).
-- **apt73/bashe** spread across government portals (Seychelles e‑gov, Kenya IFMIS) and strategic industries (Ghana insurance, Egyptian oil).
-- Insurance, food, and automotive sectors also hit in South Africa.
-
+**Observations:** The **payload** ransomware group heavily targeted the Egyptian economy (finance, oil, manufacturing). The **apt73/bashe** group expanded its reach from government entities (Seychelles, Kenya) into the insurance and oil sectors.
 
 ### 4.2 Data leaks & access sales (40 incidents)
 
-| Country       | Incidents | Main actors |
-|---------------|-----------|-------------|
-| Morocco       | 15        | anisanas2, Sejjil, Rihana, MDGhost, Keymous, xNov, bxxxx1 |
-| South Africa  | 5         | wh6ami, p4pr1k4, Grubder |
-| Algeria       | 4         | dark07x, BlueEx, Grubder |
-| Tunisia       | 4         | Grubder, mecrobyte, forrest |
-| Nigeria       | 4         | NormalLeVrai, 0xLei, ki4t, AckLine |
-| Egypt         | 2         | Grubder |
-| Others        | 6         | various (see victim list) |
+| Rank | Country | Incidents | Chart | Main Actors |
+| :---: | :--- | :---: | :--- | :--- |
+| **1** | 🇲🇦 Morocco | **15** | ███████████████ | anisanas2, Sejjil, Rihana, MDGhost, Keymous, xNov, bxxxx1 |
+| **2** | 🇿🇦 South Africa | **5** | █████ | wh6ami, p4pr1k4, Grubder |
+| **3** | 🇩🇿 Algeria | **4** | ████ | dark07x, BlueEx, Grubder |
+| **4** | 🇹🇳 Tunisia | **4** | ████ | Grubder, mecrobyte, forrest |
+| **5** | 🇳🇬 Nigeria | **4** | ████ | NormalLeVrai, 0xLei, ki4t, AckLine |
+| **6** | 🇪🇬 Egypt | **2** | ██ | Grubder |
+| **–** | 🌍 Others | **6** | ██████ | Various (see victim list) |
 
 **Key observations:**
-- **Grubder** dominated with 7 victims, selling databases from small CRM to large university portals.
+- **Grubder** dominated with 7 victims, selling databases from small CRM (Customer Relationship Management) to large university portals.
 - **anisanas2** focused on Morocco, leaking student records, medical data, and football federation files.
 - **dark07x** compromised Algerian insurance and football management platforms, exposing national ID cards and internal documents.
 - Two massive municipality leaks in South Africa (Northern Cape Roads, Buffalo City) by **wh6ami** exposed tender processes and admin logs.
 - The **Pick n Pay ASAP / Bottles.com** breach included full payment card data (VISA, Mastercard, 3DS) and passwords, representing one of the most dangerous e‑commerce breaches of the year.
 
-## 5. Sectoral impact
+## 5. Sectoral Impact
 
-| Sector                    | Incidents | Percentage |
-|---------------------------|-----------|------------|
-| Government / Admin        | 15        | 25.0%      |
-| Education / University    | 8         | 13.3%      |
-| Health / Medical          | 4         | 6.7%       |
-| Finance / Banking         | 4         | 6.7%       |
-| E-commerce / Retail       | 3         | 5.0%       |
-| Sports / Federations      | 4         | 6.7%       |
-| Oil & Energy              | 3         | 5.0%       |
-| Telecommunications        | 1         | 1.7%       |
-| Others                    | 18        | 30.0%      |
+| Activity Sector | Incidents | Share (%) | Visual Impact |
+| :--- | :---: | :---: | :--- |
+| **Government / Administration** | **15** | 25.0% | ███████████████ |
+| **Education / University** | **8** | 13.3% | ████████ |
+| **Healthcare / Medical** | **4** | 6.7% | ████ |
+| **Finance / Banking** | **4** | 6.7% | ████ |
+| **Sports / Federations** | **4** | 6.7% | ████ |
+| **E-commerce / Retail** | **3** | 5.0% | ███ |
+| **Oil & Energy** | **3** | 5.0% | ███ |
+| **Telecommunications** | **1** | 1.7% | █ |
+| **Others** *(Miscellaneous sectors)* | **18** | 30.0% | ██████████████████ |
 
-Public sector (government + education) accounts for **38.3%** of incidents. Healthcare data leaks (CNOPS, LNM6, Chezpara.ma, SUPTECH SANTÉ) show sensitive medical information is actively traded. Sports organisations (FRMF, FRMT, LRFA) are increasingly targeted for identity and licensing data.
+**Key Observations:**
+* **Public Sector Dominance:** Combined, the public sector (Government + Education) accounts for **38.3%** of all recorded incidents.
+* **Critical Data Targets:** Healthcare and medical data remain highly coveted by threat actors (with breaches targeting critical entities like CNOPS, LNM6, Chezpara.ma, and SUPTECH SANTÉ).
+* **Emerging Trends:** Sports federations (such as FRMF, FRMT, and LRFA) are rapidly emerging as prime targets for data leaks and extortion.
 
-## 6. Threat actor profile
+## 6. Threat Actor Profile
 
-| Actor / Group     | Type                | Incidents | Primary targets |
-|-------------------|---------------------|-----------|-----------------|
-| Grubder           | Data broker         | 7         | Governments, universities, e‑commerce |
-| payload           | Ransomware          | 4         | Finance, oil, industry |
-| APT73 / BASHE     | Ransomware          | 4         | e‑government, oil, insurance |
-| TheGentlemen      | Ransomware          | 4         | Health, food, engineering |
-| anisanas2         | Data leak           | 3         | Education, health, Moroccan football |
-| dark07x           | Data leak           | 2         | Insurance, Algerian football |
-| DragonForce       | Ransomware          | 2         | Tourism, pharmaceutical industry |
-| LockBit5          | Ransomware          | 2         | Automotive, sports |
-| wh6ami            | Data leak           | 2         | South African municipalities |
-| Rihana            | Data leak           | 2         | Royal household, emails |
-| NormalLeVrai      | Data leak           | 2         | NGO, government (social security) |
+| Threat Actor / Group | Type | Incidents | Chart | Primary Targets |
+| :--- | :--- | :---: | :--- | :--- |
+| **Grubder** | Data broker | **7** | ███████ | Governments, universities, e‑commerce |
+| **payload** | Ransomware | **4** | ████ | Finance, oil, industry |
+| **APT73 / BASHE** | Ransomware | **4** | ████ | e‑government, oil, insurance |
+| **TheGentlemen** | Ransomware | **4** | ████ | Health, food, engineering |
+| **anisanas2** | Data leak | **3** | ███ | Education, health, Moroccan football |
+| **dark07x** | Data leak | **2** | ██ | Insurance, Algerian football |
+| **DragonForce** | Ransomware | **2** | ██ | Tourism, pharmaceutical industry |
+| **LockBit5** | Ransomware | **2** | ██ | Automotive, sports |
+| **wh6ami** | Data leak | **2** | ██ | South African municipalities |
+| **Rihana** | Data leak | **2** | ██ | Royal household, emails |
+| **NormalLeVrai** | Data leak | **2** | ██ | NGO, government (social security) |
 
-**Emerging actors**: **wh6ami** (municipal admin access), **forrest** (mobile app data), **mecrobyte** (Tunisian education), **Keymous** (Moroccan tennis).
+**Emerging Actors:** * **wh6ami** (municipal admin access)
+* **forrest** (mobile app data)
+* **mecrobyte** (Tunisian education)
+* **Keymous** (Moroccan tennis)
 
 ### 6.1 Risk assessment
 
@@ -357,56 +372,65 @@ Public sector (government + education) accounts for **38.3%** of incidents. Heal
 | Tunisia | 🟠 Medium |
 | Others | 🟡 Low-Medium |
 
-## 7. Key trends & intelligence gaps
+## 7. Key Trends & Intelligence Gaps
 
-### Trends
-1. **Explosion of data broker activity** - Grubder alone accounted for 7 victims, monetising everything from student records to CRM databases.
-2. **Identity documents as a commodity** - Multiple listings offered scanned IDs, passports, and KYC packages (Moroccan Identity Documents, Algeria Post, Inter Partner Assistance).
-3. **Access sales targeting government** - superduper1 (multi‑country) and w00l_ysh1 (Senegal treasury) sold high‑privilege accesses, including Domain Controllers.
-4. **Ransomware diversification** - Groups like payload expanded beyond traditional targets into oil, real estate, and automotive.
-5. **E‑commerce breaches with payment data** - Pick n Pay ASAP / Bottles.com leaked full card details and 3DS data, illustrating poor PCI‑DSS compliance.
-6. **Mailbox scraping** - CNSS Benin’s entire official mailbox was dumped, exposing pension cards and life certificates.
+### 📈 Key Cyber Threat Trends
 
-### Gaps
-- Many incidents remain claims without independent verification; actual impact may be greater.
-- Some leaks are resales of older datasets (e.g., Gemaroc September 2024 dump).
-- Attribution is based solely on forum handles; true identities and affiliations are unknown.
+* **Explosion of Data Broker Activity:** A massive surge in unauthorized monetization. A single prominent broker (**Grubder**) accounted for 7 distinct victims in April alone, successfully commercializing assets ranging from high-volume student enrollment records to corporate CRM databases.
+* **Identity Documents as a Commodity:** Threat actors are systematically packaging and selling deeply sensitive personal files. Multiple underground listings actively offered batches of scanned passports, national IDs, and complete Know-Your-Customer (KYC) compliance packages (with major leaks hitting *Moroccan Identity Documents*, *Algeria Post*, and *Inter Partner Assistance*).
+* **High-Value Access Sales Targeting Governments:** Initial Access Brokers (IABs) are significantly escalating their capabilities. Threat actors such as **superduper1** (offering multi-country government access) and **w00l_ysh1** (targeting the Senegal National Treasury) successfully auctioned high-privilege access, explicitly compromising Active Directory Domain Controllers.
+* **Ransomware Portfolio Diversification:** Traditional extortion groups are expanding their scopes beyond standard corporate targets. Groups like **payload** have actively diversified their target selection, aggressively moving into heavy industry, real estate, automotive, and critical oil/energy infrastructures.
+* **E-Commerce Breaches and Payment Data Exposure:** Supply chain and platform vulnerabilities are exposing critical financial data. The high-profile compromise of **Pick n Pay ASAP / Bottles.com** resulted in the exposure of full credit card details and 3D-Secure (3DS) logs, exposing systemic flaws in regional PCI-DSS compliance.
+* **Targeted Mailbox Scraping Campaigns:** Attackers are prioritizing full email archive exfiltration to bypass traditional defenses. For instance, the complete official mailbox database of **CNSS Benin** was harvested and dumped, exposing highly sensitive personal records, pension cards, and official certificates of life.
 
-## 8. MITRE ATT&CK Mapping (contextual)
+## 8. MITRE ATT&CK Mapping (Contextual)
 
-| Incident | Techniques |
-|---------|-----------|
-| Pick n Pay/Bottles | T1005, T1041, T1078 |
-| Royal Palace DB | T1005, T1078 |
-| Kenya Airports Authority | T1041, T1078 |
-| DGCPT Senegal | T1078, T1068 (privilege escalation), T1021.002 (remote desktop) |
-| CNSS Benin | T1114.002 (email collection), T1005 |
+| Phase | Technique ID | Technique Name | Context / Incidents |
+| :--- | :---: | :--- | :--- |
+| **Initial Access / Persistence** | **T1078** | Valid Accounts | Pick n Pay, Royal Palace, Kenya Airports, DGCPT |
+| **Collection** | **T1005** | Data from Local System | Pick n Pay/Bottles, Royal Palace DB, CNSS Benin |
+| **Collection** | **T1114.002** | Remote Email Collection | CNSS Benin |
+| **Privilege Escalation** | **T1068** | Exploitation for Privilege Escalation | DGCPT Senegal |
+| **Lateral Movement** | **T1021.002** | SMB/Windows Admin Shares (RDP) | DGCPT Senegal |
+| **Exfiltration** | **T1041** | Exfiltration Over C2 Channel | Pick n Pay/Bottles, Kenya Airports Authority |
 
-**Common techniques**: T1190 (public‑facing apps), T1078 (valid accounts), T1041 (exfiltration), T1486 (ransomware).
+> 🔑 **Common Core Techniques Identified Across Regional Campaigns:**
+> * **T1190** – Exploit Public-Facing Application (Primary initial entry vector)
+> * **T1078** – Valid Accounts (Exploited via stolen OAuth secrets and IAB listings)
+> * **T1041** – Exfiltration Over C2 Channel (Bulk database and CRM extraction)
+> * **T1486** – Data Encrypted for Impact (Ransomware deployment stage)
+
+---
 
 ## 9. Recommendations
 
-- **Governments**: enforce MFA on all external portals, audit e‑gov systems, and monitor for access listings.
-- **Financial & e‑commerce**: implement robust PCI‑DSS controls, tokenize cardholder data, and deploy transaction monitoring.
-- **Educational & health institutions**: segment networks, encrypt sensitive databases, and regularly test incident response.
-- **Individuals**: be vigilant about phishing; avoid password reuse (especially after large email list leaks).
+* **Governments:** Enforce phishing-resistant Multi-Factor Authentication (MFA) on all external-facing portals, run continuous security audits on e-gov infrastructures, and closely monitor underground forums for Initial Access Broker (IAB) listings.
+* **Financial & E-commerce:** Tighten compliance with PCI-DSS frameworks, tokenize all cardholder and payment data at rest, and deploy real-time behavioral transaction monitoring.
+* **Educational & Healthcare Institutions:** Enforce strict network segmentation (isolating medical/academic databases from general IT), encrypt sensitive databases natively, and conduct routine tabletop incident response exercises.
+* **Individuals:** Maintain heightened vigilance against spear-phishing campaigns, leverage password managers, and completely rotate credentials following known local leaks.
 
-## 10. SOC recommendations
+---
 
-- Monitor for **unusual access to government portals** (T1078).
-- Detect **bulk data downloads from educational/health databases**.
-- Analyse **outbound traffic** for large exfiltrations.
-- For banks: implement **real‑time ATM withdrawal anomaly detection**.
+## 10. SOC & Tactical Recommendations
 
-## 11. Strategic recommendations
+* **[T1078] Credential Abuse Detection:** Create high-fidelity alerting for unusual geolocation connections or concurrent active sessions involving administrative and government portals.
+* **[T1005] Bulk Extraction Mitigation:** Implement data loss prevention (DLP) rules to detect and throttle abnormal bulk data downloads from critical healthcare or educational repositories.
+* **[T1041] Exfiltration Monitoring:** Baseline outbound traffic volume patterns to catch large, unscheduled data exfiltrations to unauthorized external IP spaces.
+* **[Banking Specific] Fraud Detection:** Fine-tune behavioral anomaly detection engines to flag sudden, high-frequency ATM withdrawal patterns or unauthorized administrative account modifications.
 
-- Strengthen public‑private threat intelligence sharing (especially for IAB activity).
-- Regulate third‑party payment platforms to enforce PCI‑DSS.
-- Encourage mandatory SOC capabilities for critical infrastructure.
+---
+
+## 11. Strategic Recommendations
+
+* **Threat Intelligence Ecosystems:** Strengthen public-private threat intelligence sharing models, establishing early-warning pipelines specifically tailored around Initial Access Broker (IAB) telemetry.
+* **Regulatory Frameworks:** Mandate strict third-party risk management assessments and hold regional mobile payment integrations accountable to unified PCI-DSS requirements.
+* **Critical Infrastructure Resilience:** Legislate mandatory, active SOC monitoring capabilities and clear incident disclosure requirements for critical national infrastructure (CNI).
+
+---
 
 ## 12. Conclusion
 
-April 2026 marked a sharp increase in data broker operations and deep intrusions into government, education, and health systems. The rise of identity document trading and access sales signals a maturing underground economy. Morocco, Egypt, and South Africa remain the epicentre, but new hotspots (Algeria, Tunisia, Kenya) are emerging. AFRINTEL will continue to monitor these evolving threats.
+April 2026 recorded a notable escalation in data broker telemetry alongside highly invasive intrusions penetrating regional government, academic, and medical architectures. The proliferation of localized identity document marketplaces and active network access brokers highlights a rapidly maturing underground ecosystem across the continent. While Morocco, Egypt, and South Africa remain the primary targets, secondary focal points—including Algeria, Tunisia, and Kenya—are actively scaling in volume. 
 
-**AFRINTEL** - African Cyber Threat Intelligence
-[GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** – African Cyber Threat Intelligence  
+🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -159,12 +159,12 @@
 
 ### March 22, 2024
 
-#### 🇪🇬 Egypt - Power generation  engineering and services company (pgesco) - pgesco
+#### 🇪🇬 Egypt - Power generation engineering and services company (pgesco) - pgesco
 - **Ransomware group:** ransomhub
 - **Sector:** Oil
 - **Website:** [pgesco.com](https://www.pgesco.com)
 - **Status:** Claimed & Data Leak
-- **Victim description:** Power generation  engineering and services company (pgesco) - pgesco is a major commercial enterprise operating in the oil sector, contributing significantly to the regional economic landscape in Egypt.
+- **Victim description:** Power generation engineering and services company (pgesco) - pgesco is a major commercial enterprise operating in the oil sector, contributing significantly to the regional economic landscape in Egypt.
 
 ----------------------------
 
@@ -183,12 +183,12 @@
 
 ### April 4, 2024
 
-#### 🇸🇨 Seychelles - Remitano - cryptocurrency exchange
+#### 🇸🇨 Seychelles - Remitano
 - **Ransomware group:** incransom
 - **Sector:** Banking institutions
-- **Website:** [remitano - cryptocurrency exchange.com](https://www.remitano - cryptocurrency exchange.com)
+- **Website:** [remitano.com](https://remitano.com)
 - **Status:** Claimed & Data Leak
-- **Victim description:** Remitano - cryptocurrency exchange is a major commercial enterprise operating in the banking institutions sector, contributing significantly to the regional economic landscape in Seychelles.
+- **Victim description:** Remitano is a major commercial enterprise operating in the cryptocurrency exchange and banking institutions sector, contributing significantly to the regional economic landscape in Seychelles.
 
 ----------------------------
 
@@ -205,7 +205,7 @@
 
 ### April 29, 2024
 
-#### 🇲🇦 Marocco - Sm emballage
+#### 🇲🇦 Morocco - Sm emballage
 - **Ransomware group:** spacebears
 - **Sector:** Manufacturing
 - **Website:** [smemballage.com](https://www.smemballage.com)
@@ -230,7 +230,7 @@
 #### 🇱🇾 Libya - Mellitah oil & gas / enigas ly (eni electricity, oil & gas)
 - **Ransomware group:** ransomhub
 - **Sector:** Oil
-- **Website:** [mellitah oil & gas .com](https://www.mellitah oil & gas .com)
+- **Website:** [mellitahog.ly](https://www.mellitahog.ly)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Mellitah oil & gas / enigas ly (eni electricity, oil & gas) is a major commercial enterprise operating in the oil sector, contributing significantly to the regional economic landscape in Libya.
 
@@ -243,7 +243,7 @@
 #### 🇳🇬 Nigeria - Nestoil
 - **Ransomware group:** blacksuit
 - **Sector:** Construction
-- **Website:** [nestoilgroup.com](https://www.nestoilgroup.com)
+- **Website:** [nestoilgroup.com](https://nestoilgroup.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Nestoil is a major commercial enterprise operating in the construction sector, contributing significantly to the regional economic landscape in Nigeria.
 
@@ -301,6 +301,7 @@
 - **Website:** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Status:** Claimed & Data Leak
 - **Victim description:** The Public Treasury of Côte d'Ivoire (DGTCP) is the sovereign institution responsible for national financial management, state accounting, and supervision of the domestic financial sector.
+
 ----------------------------
 
 ### May 16, 2024
@@ -308,7 +309,7 @@
 #### 🇪🇬 Egypt - Egyptian sudanese
 - **Ransomware group:** arcusmedia
 - **Sector:** Services
-- **Website:** [egyptian sudanese.com](https://www.egyptian sudanese.com)
+- **Website:** [egyptiansudanese.com](https://www.egyptiansudanese.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Egyptian sudanese is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in Egypt.
 
@@ -388,7 +389,7 @@
 
 #### 🇰🇪 Kenya - Kenya urban roads authority
 - **Ransomware group:** hunters
-- **Sector:** Rail transport
+- **Sector:** Road transport / Infrastructure
 - **Website:** [kura.go.ke](https://www.kura.go.ke)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Kenya urban roads authority is a vital state-owned public institution or regulatory authority executing administrative services and citizen management operations.
@@ -523,7 +524,7 @@
 #### 🇿🇦 South Africa - Don’t waste group
 - **Ransomware group:** incransom
 - **Sector:** Services
-- **Website:** [don’t waste group.com](https://www.don’t waste group.com)
+- **Website:** [dontwastegroup.com](https://dontwastegroup.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Don’t waste group is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in South Africa.
 
@@ -564,7 +565,7 @@
 
 ### August 28, 2024
 
-#### 🇩🇯 Djibouti - Dpfza.gov.dj
+#### 🇩🇺 Djibouti - Dpfza.gov.dj
 - **Ransomware group:** ransomhub
 - **Sector:** Government and administrations
 - **Website:** [dpfza.gov.dj](https://www.dpfza.gov.dj)
@@ -578,7 +579,7 @@
 #### 🇿🇼 Zimbabwe - Success microfinance bank
 - **Ransomware group:** meow
 - **Sector:** Banking institutions
-- **Website:** [success microfinance bank.com](https://www.success microfinance bank.com)
+- **Website:**  [successbank.co.zw](https://successbank.co.zw) 
 - **Status:** Claimed & Data Leak
 - **Victim description:** Success microfinance bank is a major commercial enterprise operating in the banking institutions sector, contributing significantly to the regional economic landscape in Zimbabwe.
 
@@ -681,7 +682,7 @@
 #### 🇿🇦 South Africa - Gmg mining supplies
 - **Ransomware group:** sarcoma
 - **Sector:** Mining
-- **Website:** [gmg mining supplies.com](https://www.gmg mining supplies.com)
+- **Website:** [gmgminingsupplies.com](https://gmgminingsupplies.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Gmg mining supplies is a major commercial enterprise operating in the mining sector, contributing significantly to the regional economic landscape in South Africa.
 
@@ -692,7 +693,7 @@
 #### 🇿🇦 South Africa - National edging
 - **Ransomware group:** sarcoma
 - **Sector:** Retail (distribution)
-- **Website:** [national edging.com](https://www.national edging.com)
+- **Website:** [nationaledging.com](https://nationaledging.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** National edging is a major commercial enterprise operating in the retail (distribution) sector, contributing significantly to the regional economic landscape in South Africa.
 
@@ -771,7 +772,7 @@
 #### 🇳🇬 Nigeria - Enviromentaldesign international
 - **Ransomware group:** akira
 - **Sector:** Engineering consulting
-- **Website:** [enviromentaldesign international.com](https://www.enviromentaldesign international.com)
+- **Website:** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
 - **Status:** Claimed & Data Leak
 - **Victim description:** Enviromentaldesign international is a major commercial enterprise operating in the engineering consulting sector, contributing significantly to the regional economic landscape in Nigeria.
 
@@ -782,7 +783,7 @@
 #### 🇪🇬 Egypt - The egyptian tax authority (eta)
 - **Ransomware group:** moneymessage
 - **Sector:** Finance
-- **Website:** [the egyptian tax authority (eta).com](https://www.the egyptian tax authority (eta).com)
+- **Website:** [eta.gov.eg](https://www.eta.gov.eg)
 - **Status:** Claimed & Data Leak
 - **Victim description:** The egyptian tax authority (eta) is a vital state-owned public institution or regulatory authority executing administrative services and citizen management operations.
 
@@ -962,7 +963,7 @@
 - **Sector:** Telecommunications
 - **Website:** [cellc.co.za](https://www.cellc.co.za)
 - **Status:** Claimed & Data Leak
-- **Victim description:** Cell c is a leading mobile network operator providing telecommunications infrastructure, voice, broadband data, and digital services.
+- **Victim description:** Cell C is the fourth-largest mobile network operator in South Africa, serving over 13 million customers (direct and MVNO). The company operates on an asset-light business model, leveraging roaming infrastructure from MTN and Vodacom, and is majority-owned by Blue Label Telecoms.
 
 ----------------------------
 
@@ -978,6 +979,6 @@
 ----------------------------
 
 ## ✍🏿 Author
-*Adama ASSIONGBON*
-*SOC & Cyber Threat Intelligence Consultant*
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
+- *Adama ASSIONGBON*
+- *SOC & Cyber Threat Intelligence Consultant*
+- [LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
