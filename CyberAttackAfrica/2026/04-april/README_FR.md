@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
 ![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%26%20Data%20Breach-red)
-![Period](https://img.shields.io/badge/Période-Avril%202026-lightgrey)
+![Period](https://img.shields.io/badge/P%C3%A9riode-Avril_2026-708090)
 ![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
 # Rapport CTI - menaces cyber en Afrique (Avril 2026)
