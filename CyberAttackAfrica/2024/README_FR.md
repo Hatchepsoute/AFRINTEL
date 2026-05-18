@@ -113,27 +113,30 @@ L’Afrique du Sud représente à elle seule près d’un tiers du dataset 2024.
 
 ## 4. Répartition par secteur
 
-| Secteur | Victimes | Part |
-|---|---:|---:|
-| Services financiers & assurances | 15 | 17,4 % |
-| Technologies & services IT | 9 | 10,5 % |
-| Services / services aux entreprises | 8 | 9,3 % |
-| Industrie manufacturière & industrielle | 8 | 9,3 % |
-| Distribution / retail / e-commerce | 7 | 8,1 % |
-| Services professionnels | 6 | 7,0 % |
-| Télécommunications | 5 | 5,8 % |
-| Santé & pharmacie | 5 | 5,8 % |
-| Gouvernement & secteur public | 4 | 4,7 % |
-| Logistique / transport | 3 | 3,5 % |
-| Agriculture, agroalimentaire & boissons | 3 | 3,5 % |
-| Médias / sport / audiovisuel | 2 | 2,3 % |
-| Éducation | 2 | 2,3 % |
-| Eau / services publics | 2 | 2,3 % |
-| Contexte public limité / inconnu | 2 | 2,3 % |
-| Énergie / pétrole & gaz | 2 | 2,3 % |
-| Automobile / transport industriel | 1 | 1,2 % |
-| Mines & ressources naturelles | 1 | 1,2 % |
-| Construction / ingénierie | 1 | 1,2 % |
+| Secteur | Victimes | Part | Impact visuel |
+|---|---:|---:|:---|
+| Services financiers & assurances | 15 | 17,4 % | ███████████████ |
+| Technologies & services IT | 9 | 10,5 % | █████████ |
+| Services / services aux entreprises | 8 | 9,3 % | ████████ |
+| Industrie manufacturière & industrielle | 8 | 9,3 % | ████████ |
+| Distribution / retail / e-commerce | 7 | 8,1 % | ███████ |
+| Services professionnels | 6 | 7,0 % | ██████ |
+| Télécommunications | 5 | 5,8 % | █████ |
+| Santé & pharmacie | 5 | 5,8 % | █████ |
+| Gouvernement & secteur public | 4 | 4,7 % | ████ |
+| Logistique / transport | 3 | 3,5 % | ███ |
+| Agriculture, agroalimentaire & boissons | 3 | 3,5 % | ███ |
+| Médias / sport / audiovisuel | 2 | 2,3 % | ██ |
+| Éducation | 2 | 2,3 % | ██ |
+| Eau / services publics | 2 | 2,3 % | ██ |
+| Contexte public limité / inconnu | 2 | 2,3 % | ██ |
+| Énergie / pétrole & gaz | 2 | 2,3 % | ██ |
+| Automobile / transport industriel | 1 | 1,2 % | █ |
+| Mines & ressources naturelles | 1 | 1,2 % | █ |
+| Construction / ingénierie | 1 | 1,2 % | █ |
+
+
+
 
 ```mermaid
 xychart-beta
@@ -155,33 +158,36 @@ Les organisations industrielles restent attractives, car l’interruption opéra
 
 ## 5. Activité des groupes ransomware
 
-| Groupe | Victimes | Part |
-|---|---:|---:|
-| lockbit3 | 16 | 18,6 % |
-| ransomhub | 12 | 14,0 % |
-| killsec | 10 | 11,6 % |
-| hunters | 8 | 9,3 % |
-| spacebears | 5 | 5,8 % |
-| arcusmedia | 4 | 4,7 % |
-| sarcoma | 3 | 3,5 % |
-| blacksuit | 3 | 3,5 % |
-| darkvault | 3 | 3,5 % |
-| madliberator | 2 | 2,3 % |
-| moneymessage | 2 | 2,3 % |
-| ransomhouse | 2 | 2,3 % |
-| raworld | 2 | 2,3 % |
-| meow | 2 | 2,3 % |
-| incransom | 2 | 2,3 % |
-| apt73/bashe | 1 | 1,2 % |
-| fog | 1 | 1,2 % |
-| braincipher | 1 | 1,2 % |
-| orca | 1 | 1,2 % |
-| hellcat | 1 | 1,2 % |
-| akira | 1 | 1,2 % |
-| cactus | 1 | 1,2 % |
-| eldorado | 1 | 1,2 % |
-| dragonforce | 1 | 1,2 % |
-| medusa | 1 | 1,2 % |
+| Groupe | Victimes | Part | Impact visuel |
+|---|---:|---:|:---|
+| lockbit3 | 16 | 18,6 % | ████████████████ |
+| ransomhub | 12 | 14,0 % | ████████████ |
+| killsec | 10 | 11,6 % | ██████████ |
+| hunters | 8 | 9,3 % | ████████ |
+| spacebears | 5 | 5,8 % | █████ |
+| arcusmedia | 4 | 4,7 % | ████ |
+| sarcoma | 3 | 3,5 % | ███ |
+| blacksuit | 3 | 3,5 % | ███ |
+| darkvault | 3 | 3,5 % | ███ |
+| madliberator | 2 | 2,3 % | ██ |
+| moneymessage | 2 | 2,3 % | ██ |
+| ransomhouse | 2 | 2,3 % | ██ |
+| raworld | 2 | 2,3 % | ██ |
+| meow | 2 | 2,3 % | ██ |
+| incransom | 2 | 2,3 % | ██ |
+| apt73/bashe | 1 | 1,2 % | █ |
+| fog | 1 | 1,2 % | █ |
+| braincipher | 1 | 1,2 % | █ |
+| orca | 1 | 1,2 % | █ |
+| hellcat | 1 | 1,2 % | █ |
+| akira | 1 | 1,2 % | █ |
+| cactus | 1 | 1,2 % | █ |
+| eldorado | 1 | 1,2 % | █ |
+| dragonforce | 1 | 1,2 % | █ |
+| medusa | 1 | 1,2 % | █ |
+
+
+
 
 ```mermaid
 xychart-beta

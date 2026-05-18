@@ -111,29 +111,31 @@ South Africa alone represents almost one third of the 2024 dataset. This is cons
 
 ---
 
-## 4. Sector distribution
+## 4. Industry sector distribution
 
-| Sector | Victims | Share |
-|---|---:|---:|
-| Financial services & insurance | 15 | 17.4% |
-| Technology & IT services | 9 | 10.5% |
-| Services / business services | 8 | 9.3% |
-| Manufacturing & industrial | 8 | 9.3% |
-| Retail / distribution / e-commerce | 7 | 8.1% |
-| Professional services | 6 | 7.0% |
-| Telecommunications | 5 | 5.8% |
-| Healthcare & pharmaceuticals | 5 | 5.8% |
-| Government & public sector | 4 | 4.7% |
-| Logistics / transport | 3 | 3.5% |
-| Agriculture, agribusiness & food | 3 | 3.5% |
-| Media / sports / audiovisual | 2 | 2.3% |
-| Education | 2 | 2.3% |
-| Water / public utilities | 2 | 2.3% |
-| Unknown / limited public context | 2 | 2.3% |
-| Energy / oil & gas | 2 | 2.3% |
-| Automotive / transport industry | 1 | 1.2% |
-| Mining & natural resources | 1 | 1.2% |
-| Construction / engineering | 1 | 1.2% |
+| Sector | Victims | Share | Side-by-Side Distribution |
+|---|---:|---:|:---|
+| Financial Services & Insurance | 15 | 17.4 % | ███████████████ |
+| Technology & IT Services | 9 | 10.5 % | █████████ |
+| Business Services | 8 | 9.3 % | ████████ |
+| Manufacturing & Industrial | 8 | 9.3 % | ████████ |
+| Retail, Distribution & E-commerce | 7 | 8.1 % | ███████ |
+| Professional Services | 6 | 7.0 % | ██████ |
+| Telecommunications | 5 | 5.8 % | █████ |
+| Healthcare & Pharmacy | 5 | 5.8 % | █████ |
+| Government & Public Sector | 4 | 4.7 % | ████ |
+| Logistics & Transport | 3 | 3.5 % | ███ |
+| Agriculture, Food & Beverage | 3 | 3.5 % | ███ |
+| Media, Sports & Broadcast | 2 | 2.3 % | ██ |
+| Education | 2 | 2.3 % | ██ |
+| Water & Utilities | 2 | 2.3 % | ██ |
+| Unknown / Limited Context | 2 | 2.3 % | ██ |
+| Energy, Oil & Gas | 2 | 2.3 % | ██ |
+| Automotive / Industrial Transport | 1 | 1.2 % | █ |
+| Mining & Natural Resources | 1 | 1.2 % | █ |
+| Construction & Engineering | 1 | 1.2 % | █ |
+
+
 
 ```mermaid
 xychart-beta
@@ -153,35 +155,38 @@ Manufacturing and industrial organizations remain attractive because disruption 
 
 ---
 
-## 5. Threat actor activity
 
-| Group | Victims | Share |
-|---|---:|---:|
-| lockbit3 | 16 | 18.6% |
-| ransomhub | 12 | 14.0% |
-| killsec | 10 | 11.6% |
-| hunters | 8 | 9.3% |
-| spacebears | 5 | 5.8% |
-| arcusmedia | 4 | 4.7% |
-| sarcoma | 3 | 3.5% |
-| blacksuit | 3 | 3.5% |
-| darkvault | 3 | 3.5% |
-| madliberator | 2 | 2.3% |
-| moneymessage | 2 | 2.3% |
-| ransomhouse | 2 | 2.3% |
-| raworld | 2 | 2.3% |
-| meow | 2 | 2.3% |
-| incransom | 2 | 2.3% |
-| apt73/bashe | 1 | 1.2% |
-| fog | 1 | 1.2% |
-| braincipher | 1 | 1.2% |
-| orca | 1 | 1.2% |
-| hellcat | 1 | 1.2% |
-| akira | 1 | 1.2% |
-| cactus | 1 | 1.2% |
-| eldorado | 1 | 1.2% |
-| dragonforce | 1 | 1.2% |
-| medusa | 1 | 1.2% |
+## 5. Ransomware groups activity
+
+| Group | Victims | Share | Side-by-Side Distribution |
+|---|---:|---:|:---|
+| lockbit3 | 16 | 18.6 % | ████████████████ |
+| ransomhub | 12 | 14.0 % | ████████████ |
+| killsec | 10 | 11.6 % | ██████████ |
+| hunters | 8 | 9.3 % | ████████ |
+| spacebears | 5 | 5.8 % | █████ |
+| arcusmedia | 4 | 4.7 % | ████ |
+| sarcoma | 3 | 3.5 % | ███ |
+| blacksuit | 3 | 3.5 % | ███ |
+| darkvault | 3 | 3.5 % | ███ |
+| madliberator | 2 | 2.3 % | ██ |
+| moneymessage | 2 | 2.3 % | ██ |
+| ransomhouse | 2 | 2.3 % | ██ |
+| raworld | 2 | 2.3 % | ██ |
+| meow | 2 | 2.3 % | ██ |
+| incransom | 2 | 2.3 % | ██ |
+| apt73/bashe | 1 | 1.2 % | █ |
+| fog | 1 | 1.2 % | █ |
+| braincipher | 1 | 1.2 % | █ |
+| orca | 1 | 1.2 % | █ |
+| hellcat | 1 | 1.2 % | █ |
+| akira | 1 | 1.2 % | █ |
+| cactus | 1 | 1.2 % | █ |
+| eldorado | 1 | 1.2 % | █ |
+| dragonforce | 1 | 1.2 % | █ |
+| medusa | 1 | 1.2 % | █ |
+
+
 
 ```mermaid
 xychart-beta
