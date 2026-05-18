@@ -188,7 +188,7 @@ gantt
 
 ```mermaid
 xychart-beta
-    title "Attiques par région géostratégique"
+    title "Attaques par région géostratégique"
     x-axis ["Afrique australe", "Afrique du Nord", "Afrique de l'Est", "Afrique de l'Ouest", "Afrique centrale"]
     y-axis "Nombre d'attaques" 0 --> 50
     bar [44, 24, 11, 10, 3]
