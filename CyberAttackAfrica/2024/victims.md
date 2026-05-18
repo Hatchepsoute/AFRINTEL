@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa (2024): List of 86 Victims with Professional Context
+# Cyber Attacks in Africa (2024): list of 86 victims
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
