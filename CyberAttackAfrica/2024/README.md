@@ -228,7 +228,7 @@ No significant break; criminals operate year‑round with a preference for holid
 ```mermaid
 xychart-beta
     title "Monthly Evolution of Attacks (2024)"
-    x-axis ["Jan" "Feb" "Mar" "Apr" "May" "Jun" "Jul" "Aug" "Sep" "Oct" "Nov" "Dec"]
+    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
     y-axis "Number of attacks" 0 --> 18
     bar [2, 4, 5, 4, 10, 4, 6, 10, 5, 8, 12, 16]
 ```
@@ -313,6 +313,6 @@ The year 2024 confirms that Africa is not spared from global cyber threats. Rans
 
 ---
 
-*Report generated from public data - Free distribution (TLP:CLEAR).*
+*Free distribution (TLP:CLEAR).*
 
 **Contact:** Adama ASSIONGBON - [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)

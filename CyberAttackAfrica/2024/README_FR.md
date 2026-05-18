@@ -228,7 +228,7 @@ Aucune trêve significative ; les cybercriminels opèrent toute l’année avec 
 ```mermaid
 xychart-beta
     title "Évolution mensuelle des attaques (2024)"
-    x-axis ["Janv" "Févr" "Mars" "Avril" "Mai" "Juin" "Juil" "Août" "Sept" "Oct" "Nov" "Déc"]
+    x-axis ["Janv", "Févr", "Mars", "Avril", "Mai", "Juin", "Juil", "Août", "Sept", "Oct", "Nov", "Déc"]
     y-axis "Nombre d'attaques" 0 --> 18
     bar [2, 4, 5, 4, 10, 4, 6, 10, 5, 8, 12, 16]
 ```
@@ -312,6 +312,6 @@ L’année 2024 confirme que l’Afrique n’est pas épargnée par les cybermen
 
 ---
 
-*Rapport généré à partir des données publiques - Libre de diffusion (TLP:CLEAR).*
+* Libre de diffusion (TLP:CLEAR).*
 
 **Contact :** Adama ASSIONGBON - [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
