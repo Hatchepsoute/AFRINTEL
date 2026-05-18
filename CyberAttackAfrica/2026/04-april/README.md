@@ -197,18 +197,17 @@ pie showData
     "🌍 Multi-country Africa" : 1
 ```
 
-### 📊 Geographic breakdown of incidents by region
+### 📊 Geographic Breakdown of Incidents by Region
 
 | Region | Total Incidents | Ransomware | Data Leaks | Side-by-Side Distribution |
 | :--- | :---: | :---: | :---: | :--- |
-| **North Africa** | **36** (60%) | 13 | 23 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Southern Africa** | **11** (18%) | 5 | 6 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦 |
-| **West Africa** | **9** (15%) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
-| **East Africa** | **5** (8%) | 2 | 3 | 🟧🟧 🟦🟦🟦 |
-| **Total** | **61** | **22** | **39** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+| **North Africa** | **36** (58.1%) | 13 | 23 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | **12** (19.4%) | 5 | 7 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **West Africa** | **9** (14.5%) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **East Africa** | **5** (8.1%) | 2 | 3 | 🟧🟧 🟦🟦🟦 |
+| **Regionalized Total** | **62** | **22** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
-*Note: The breakdown totals 61 here due to splitting the multi-country incident (Angola/Nigeria/South Africa) across its respective regions.*
-
+*Note: The regionalized total reaches 62 because the multi-country incident (Angola / Nigeria / South Africa), counted as a single incident in the global total of 60, was geographically distributed across regions to reflect its actual territorial impact.*
 
 ### 📊 Cyberattacks Breakdown by Activity Sector
 
