@@ -212,6 +212,7 @@ xychart-beta
 | Healthcare              | 5        | 0     | 0    | 0    | 0       |
 | Government / Admin      | 2        | 2     | 1    | 0    | 0       |
 | Oil & Energy            | 0        | 4     | 0    | 0    | 0       |
+
 *Figures are derived from the 86 documented victims.*
 
 ---
