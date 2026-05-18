@@ -202,11 +202,11 @@ pie showData
 
 | Région | Total Incidents | Ransomware | Fuites | Répartition Côte-à-Côte |
 | :--- | :---: | :---: | :---: | :--- |
-| **Afrique du Nord** | **36** (58,1%) | 13 | 23 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique du Nord** | **36** (58,1%) | 11 | 25 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique Australe** | **12** (19,4%) | 5 | 7 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique de l'Ouest** | **9** (14,5%) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique de l'Est** | **5** (8,1%) | 2 | 3 | 🟧🟧 🟦🟦🟦 |
-| **Total régionalisé** | **62** | **22** | **40** | *Légende : 🟧 Ransomware \| 🟦 Fuite de Données* |
+| **Total régionalisé** | **62** | **20** | **42** | *Légende : 🟧 Ransomware \| 🟦 Fuite de Données* |
 
 *Note : Le total régionalisé atteint 62 car l’incident multi-pays (Angola / Nigeria / Afrique du Sud), compté comme un seul incident dans le total global de 60, est ventilé par zones géographiques afin de refléter son impact territorial réel.*
 
