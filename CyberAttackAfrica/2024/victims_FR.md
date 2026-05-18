@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyberattaques en Afrique (2024) : liste des 86 victimes 
+# Cyberattaques en Afrique (2024) : liste des 86 victimes
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -12,34 +12,34 @@
 
 ### 10 Janvier 2024
 
-#### 🇿🇦 Afrique du Sud - Tiautoinvestments
+#### 🇿🇦 Afrique du Sud - TiAuto Investments
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Industrie manufacturière / Distribution automobile
 - **Site web :** [tiautoinvestments.co.za](https://www.tiautoinvestments.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Tiautoinvestments est une grande entreprise de distribution et de vente au détail de produits automobiles, exploitant un vaste réseau de centres de services en Afrique du Sud.
+- **Description victime :** TiAuto Investments est une holding sud-africaine de distribution automobile basée à Midrand, active dans la vente de pneus, jantes, batteries et services de montage automobile.
 
 ----------------------------
 
 ### 10 Janvier 2024
 
-#### 🇿🇦 Afrique du Sud - Twt
+#### 🇿🇦 Afrique du Sud - Tiger Wheel & Tyre (TWT)
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Distribution automobile / Services de montage
 - **Site web :** [twt.co.za](https://www.twt.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Twt est une entreprise manufacturière industrielle spécialisée dans la production, la transformation des matières premières, l'emballage ou les biens de consommation.
+- **Description victime :** Tiger Wheel & Tyre (TWT), filiale de TiAuto Investments, est un réseau sud-africain de vente et de services automobiles spécialisé dans les pneus, jantes, batteries et services associés.
 
 ----------------------------
 
 ### 29 Janvier 2024
 
-#### 🇿🇦 Afrique du Sud - Crowe.za
+#### 🇿🇦 Afrique du Sud - Crowe South Africa
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Services
+- **Secteur :** Audit / Comptabilité / Conseil
 - **Site web :** [crowe.com.za](https://www.crowe.com.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Crowe.za est un cabinet de services professionnels de premier plan spécialisé en comptabilité, fiscalité, audit externe et conseil aux entreprises.
+- **Description victime :** Crowe South Africa est un cabinet de services professionnels fournissant des prestations d’audit, de comptabilité, de fiscalité et de conseil à des clients publics et privés.
 
 ----------------------------
 
@@ -47,56 +47,56 @@
 
 ### 6 Février 2024
 
-#### 🇪🇬 Égypte - Arpuplus
+#### 🇪🇬 Égypte - ArpuPlus
 - **Groupe ransomware :** medusa
-- **Secteur :** Technologies
+- **Secteur :** Technologies / Services mobiles à valeur ajoutée
 - **Site web :** [arpuplus.com](https://www.arpuplus.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Arpuplus est une entreprise commerciale majeure opérant dans le secteur des technologies, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** ArpuPlus est une société technologique égyptienne, filiale d’A15, spécialisée dans les services mobiles à valeur ajoutée, les plateformes numériques, le paiement et la distribution de contenus.
 
 ----------------------------
 
 ### 10 Février 2024
 
-#### 🇹🇳 Tunisie - Sopem tunisie
+#### 🇹🇳 Tunisie - SOPEM Tunisie
 - **Groupe ransomware :** hunters
 - **Secteur :** Industrie manufacturière
 - **Site web :** [sopem.com.tn](https://www.sopem.com.tn)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sopem tunisie est une entreprise manufacturière industrielle spécialisée dans la production, la transformation des matières premières, l'emballage ou les biens de consommation.
+- **Description victime :** SOPEM Tunisie est une entreprise tunisienne du secteur manufacturier opérant dans la production industrielle et les activités d’approvisionnement associées.
 
 ----------------------------
 
 ### 13 Février 2024
 
-#### 🇿🇦 Afrique du Sud - Auruminstitute
+#### 🇿🇦 Afrique du Sud - The Aurum Institute
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Santé
+- **Secteur :** Santé / Recherche médicale
 - **Site web :** [auruminstitute.org](https://www.auruminstitute.org)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Auruminstitute est une infrastructure de santé critique, un centre de recherche médicale ou un réseau pharmaceutique fournissant des services de santé publique.
+- **Description victime :** The Aurum Institute est une organisation sud-africaine de recherche médicale et de santé publique impliquée dans la prévention des maladies, la recherche clinique et les programmes d’appui sanitaire.
 
 ----------------------------
 
 ### 27 Février 2024
 
-#### 🇨🇮 Côte d'Ivoire - Npgandour
+#### 🇨🇮 Côte d'Ivoire - Nouvelle Parfumerie Gandour
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Services
+- **Secteur :** Biens de consommation / Cosmétique
 - **Site web :** [npgandour.com](https://www.npgandour.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Npgandour est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
+- **Description victime :** Nouvelle Parfumerie Gandour est une entreprise ivoirienne de biens de consommation associée à la parfumerie, aux cosmétiques et aux produits d’hygiène personnelle.
 
 ----------------------------
 
 ### 29 Février 2024
 
-#### 🇿🇦 Afrique du Sud - Erwat
+#### 🇿🇦 Afrique du Sud - ERWAT
 - **Groupe ransomware :** dragonforce
-- **Secteur :** Distribution et approvisionnement en eau
+- **Secteur :** Eau / Assainissement
 - **Site web :** [erwat.co.za](https://www.erwat.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Erwat est une entreprise commerciale majeure opérant dans le secteur de la distribution et de l'approvisionnement en eau, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** ERWAT est une entreprise sud-africaine de gestion de l’eau et des eaux usées, fournissant des services de traitement, d’assainissement et de protection environnementale aux secteurs public et privé.
 
 ----------------------------
 
@@ -104,67 +104,67 @@
 
 ### 9 Mars 2024
 
-#### 🇪🇬 Égypte - Go4kora
+#### 🇪🇬 Égypte - Go4Kora
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Sports
+- **Secteur :** Médias sportifs / Streaming
 - **Site web :** [go4kora.tv](https://www.go4kora.tv)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Go4kora est une entreprise commerciale majeure opérant dans le secteur des sports, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** Go4Kora est une plateforme égyptienne spécialisée dans l’actualité sportive, les résultats de football et la diffusion de contenus liés aux compétitions sportives internationales.
 
 ----------------------------
 
 ### 11 Mars 2024
 
-#### 🇿🇦 Afrique du Sud - Gpaa.gov.za
+#### 🇿🇦 Afrique du Sud - Government Pensions Administration Agency (GPAA)
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Gouvernement et administrations
+- **Secteur :** Gouvernement / Administration des pensions
 - **Site web :** [gpaa.gov.za](https://www.gpaa.gov.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Gpaa.gov.za est une institution publique ou une autorité de régulation étatique essentielle, chargée des services administratifs et de la gestion publique.
+- **Description victime :** La Government Pensions Administration Agency (GPAA) administre les services de pension du secteur public sud-africain pour le compte du Government Employees Pension Fund et d’autres institutions publiques.
 
 ----------------------------
 
 ### 15 Mars 2024
 
-#### 🇹🇳 Tunisie - Atl leasing
+#### 🇹🇳 Tunisie - ATL Leasing
 - **Groupe ransomware :** hunters
-- **Secteur :** Services financiers
+- **Secteur :** Services financiers / Leasing
 - **Site web :** [atl.com.tn](https://www.atl.com.tn)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Atl leasing est une entreprise commerciale majeure opérant dans le secteur des services financiers, contribuant de manière significative au tissu économique régional en Tunisie.
+- **Description victime :** ATL Leasing est une société tunisienne de services financiers spécialisée dans le leasing et les solutions de financement destinées aux entreprises et professionnels.
 
 ----------------------------
 
 ### 15 Mars 2024
 
-#### 🇪🇬 Égypte - Elezabypharmacy
+#### 🇪🇬 Égypte - El Ezaby Pharmacy
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Industrie pharmaceutique
+- **Secteur :** Pharmacie / Santé
 - **Site web :** [elezabypharmacy.com](https://www.elezabypharmacy.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Elezabypharmacy est une entreprise commerciale majeure opérant dans le secteur de la pharmacie et de la fabrication de médicaments, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** El Ezaby Pharmacy est l’une des plus grandes chaînes pharmaceutiques privées d’Égypte, opérant un vaste réseau de pharmacies et de services de santé.
 
 ----------------------------
 
 ### 16 Mars 2024
 
-#### 🇳🇦 Namibie - Agribank.na
+#### 🇳🇦 Namibie - Agribank Namibia
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Banques
+- **Secteur :** Banque / Finance agricole
 - **Site web :** [agribank.com.na](https://www.agribank.com.na)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Agribank.na est une entreprise commerciale majeure opérant dans le secteur des institutions bancaires, contribuant de manière significative au tissu économique régional en Namibie.
+- **Description victime :** Agribank Namibia est une institution publique de financement agricole soutenant le développement du secteur agricole à travers des prêts et services financiers en Namibie.
 
 ----------------------------
 
 ### 22 Mars 2024
 
-#### 🇪🇬 Égypte - Power generation engineering and services company (pgesco) - pgesco
+#### 🇪🇬 Égypte - Power Generation Engineering and Services Company (PGESCo)
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Énergie / Pétrole
+- **Secteur :** Énergie / Ingénierie électrique
 - **Site web :** [pgesco.com](https://www.pgesco.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Power generation engineering and services company (pgesco) est une entreprise commerciale majeure opérant dans le secteur du pétrole et de l'énergie, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** PGESCo est une société égyptienne d’ingénierie spécialisée dans la production électrique, les infrastructures énergétiques, la gestion de projets et les services techniques associés.
 
 ----------------------------
 
@@ -172,10 +172,10 @@
 
 #### 🇿🇦 Afrique du Sud - Nampak
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Industrie manufacturière / Emballage
 - **Site web :** [nampak.com](https://www.nampak.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Nampak est une entreprise manufacturière industrielle spécialisée dans la production, la transformation des matières premières, l'emballage ou les biens de consommation.
+- **Description victime :** Nampak est un fabricant sud-africain d’emballages et l’un des principaux groupes africains de packaging diversifié pour les marchés industriels et de consommation.
 
 ----------------------------
 
@@ -185,54 +185,54 @@
 
 #### 🇸🇨 Seychelles - Remitano
 - **Groupe ransomware :** incransom
-- **Secteur :** Banques
-- **Site web :** [remitano.com](https://remitano.com)
+- **Secteur :** Échange de cryptomonnaies / Fintech
+- **Site web :** [remitano.com](https://www.remitano.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Remitano est une entreprise commerciale majeure opérant dans le secteur des plateformes d'échange de cryptomonnaies et des institutions bancaires, contribuant de manière significative au tissu économique régional aux Seychelles.
+- **Description victime :** Remitano est une plateforme d’échange de cryptomonnaies pair-à-pair offrant des services d’achat, de vente, de conservation, d’escrow et de portefeuille fiat.
 
 ----------------------------
 
 ### 13 Avril 2024
 
-#### 🇿🇦 Afrique du Sud - Caxton and ctp publishers and printers
+#### 🇿🇦 Afrique du Sud - Caxton and CTP Publishers and Printers
 - **Groupe ransomware :** hunters
-- **Secteur :** Médias et audiovisuel
+- **Secteur :** Médias / Édition / Impression
 - **Site web :** [caxton.co.za](https://www.caxton.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Caxton and ctp publishers and printers est une entreprise commerciale majeure opérant dans le secteur des médias et de l'audiovisuel, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Caxton and CTP Publishers and Printers est un groupe sud-africain de médias, d’édition et d’impression exploitant journaux, magazines, impression commerciale et activités médias associées.
 
 ----------------------------
 
 ### 29 Avril 2024
 
-#### 🇲🇦 Maroc - Sm emballage
+#### 🇲🇦 Maroc - SM Emballage
 - **Groupe ransomware :** spacebears
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Industrie manufacturière / Emballage
 - **Site web :** [smemballage.com](https://www.smemballage.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sm emballage est une entreprise manufacturière industrielle spécialisée dans la production, la transformation des matières premières, l'emballage ou les biens de consommation.
+- **Description victime :** SM Emballage est une entreprise marocaine spécialisée dans la fabrication d’emballages personnalisés pour l’industrie, de la conception à la production contrôlée.
 
 ----------------------------
 
 ### 29 Avril 2024
 
-#### 🇿🇦 Afrique du Sud - Thinkadam
+#### 🇿🇦 Afrique du Sud - ThinkAdam
 - **Groupe ransomware :** spacebears
-- **Secteur :** Technologies
+- **Secteur :** Technologies / Gestion de terminaux
 - **Site web :** [thinkadam.co](https://www.thinkadam.co)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Thinkadam est une entreprise commerciale majeure opérant dans le secteur des technologies, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** ThinkAdam est une société sud-africaine spécialisée dans les solutions de verrouillage et de gestion de terminaux pour les modèles de financement, location et paiement progressif de smartphones dans les marchés émergents.
 
 ----------------------------
 
 ### 30 Avril 2024
 
-#### 🇱🇾 Libye - Mellitah oil & gas / enigas ly (eni electricity, oil & gas)
+#### 🇱🇾 Libye - Mellitah Oil & Gas / ENI Gas Libya
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Énergie / Pétrole
+- **Secteur :** Énergie / Pétrole et gaz
 - **Site web :** [mellitahog.ly](https://www.mellitahog.ly)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Mellitah oil & gas est une entreprise commerciale majeure opérant dans le secteur du pétrole et du gaz, contribuant de manière significative au tissu économique régional en Libye.
+- **Description victime :** Mellitah Oil & Gas est une société libyenne du secteur pétrolier et gazier, associée aux opérations amont et énergétiques liées à la présence d’ENI en Libye.
 
 ----------------------------
 
@@ -242,21 +242,21 @@
 
 #### 🇳🇬 Nigéria - Nestoil
 - **Groupe ransomware :** blacksuit
-- **Secteur :** Construction
+- **Secteur :** Pétrole et gaz / Ingénierie / Construction
 - **Site web :** [nestoilgroup.com](https://www.nestoilgroup.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Nestoil est une entreprise commerciale majeure opérant dans le secteur de la construction, contribuant de manière significative au tissu économique régional au Nigéria.
+- **Description victime :** Nestoil est un groupe nigérian spécialisé dans l’ingénierie, la construction, les services énergétiques et les activités de support au secteur pétrolier et gazier.
 
 ----------------------------
 
 ### 6 Mai 2024
 
-#### 🇪🇬 Égypte - Elarabygroup
+#### 🇪🇬 Égypte - El Araby Group
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Services aux entreprises
+- **Secteur :** Industrie électronique / Distribution
 - **Site web :** [elarabygroup.com](https://www.elarabygroup.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Elarabygroup est une entreprise commerciale majeure opérant dans le secteur des services professionnels et commerciaux, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** El Araby Group est un conglomérat industriel égyptien majeur spécialisé dans l’électronique, l’électroménager, la fabrication et la distribution de produits technologiques.
 
 ----------------------------
 
@@ -267,29 +267,29 @@
 - **Secteur :** Santé
 - **Site web :** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Lenmed est une entreprise commerciale majeure opérant dans le secteur des services de santé, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Lenmed est un groupe de santé opérant des hôpitaux et services médicaux en Afrique australe, incluant des établissements privés et des services spécialisés.
 
 ----------------------------
 
 ### 7 Mai 2024
 
-#### 🇿🇦 Afrique du Sud - Kamo jou trading
+#### 🇿🇦 Afrique du Sud - Kamo Jou Trading
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Services financiers & Assurances
+- **Secteur :** Services financiers
 - **Site web :** [kamojou.co.za](https://www.kamojou.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Kamo jou trading est une entreprise commerciale majeure opérant dans le secteur de la finance, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Kamo Jou Trading est référencée dans le jeu de données comme une victime sud-africaine du secteur financier. Les données disponibles fournissent peu de contexte public au-delà du domaine et de la revendication ransomware.
 
 ----------------------------
 
 ### 9 Mai 2024
 
-#### 🇳🇦 Namibie - Eif.na
+#### 🇳🇦 Namibie - Environmental Investment Fund of Namibia (EIF)
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Services financiers
+- **Secteur :** Finance publique / Fonds environnemental
 - **Site web :** [eif.org.na](https://www.eif.org.na)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Eif.na est une entreprise commerciale majeure opérant dans le secteur des organisations financières, contribuant de manière significative au tissu économique régional en Namibie.
+- **Description victime :** L’Environmental Investment Fund of Namibia (EIF) est une institution financière publique soutenant les projets environnementaux, climatiques et de développement durable en Namibie.
 
 ----------------------------
 
@@ -297,32 +297,32 @@
 
 #### 🇨🇮 Côte d'Ivoire - Trésor Public de Côte d'Ivoire (DGTCP)
 - **Groupe ransomware :** hunters
-- **Secteur :** Gouvernement / Services financiers
+- **Secteur :** Gouvernement / Finances publiques
 - **Site web :** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Le Trésor Public de Côte d'Ivoire (DGTCP) est l'institution souveraine chargée de la gestion des finances publiques, de la comptabilité de l'État et de la surveillance du secteur financier national.
+- **Description victime :** Le Trésor Public de Côte d'Ivoire (DGTCP) est l’institution souveraine chargée de la gestion des finances publiques, de la comptabilité de l’État et des opérations du trésor national.
 
 ----------------------------
 
 ### 16 Mai 2024
 
-#### 🇪🇬 Égypte - Egyptian sudanese
+#### 🇪🇬 Égypte - Egyptian Sudanese
 - **Groupe ransomware :** arcusmedia
 - **Secteur :** Services
 - **Site web :** [egyptiansudanese.com](https://www.egyptiansudanese.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Egyptian sudanese est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** Egyptian Sudanese est référencée comme une organisation égyptienne du secteur des services dans le dataset ransomware ; les données sources fournissent peu de contexte métier au-delà du domaine et de la revendication.
 
 ----------------------------
 
 ### 25 Mai 2024
 
-#### 🇸🇳 Sénégal - Sysroad
+#### 🇸🇳 Sénégal - SYSROAD
 - **Groupe ransomware :** lockbit3
-- **Secteur :** Conseil en technologies de l'information
+- **Secteur :** Conseil IT / Intégration télécom
 - **Site web :** [sysroad.com](https://www.sysroad.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sysroad est une entreprise commerciale majeure opérant dans le secteur du conseil en technologies de l'information, contribuant de manière significative au tissu économique régional au Sénégal.
+- **Description victime :** SYSROAD est un intégrateur sénégalais de solutions IT et télécoms accompagnant les organisations dans les infrastructures numériques, l’intégration technologique et les services de connectivité.
 
 ----------------------------
 
@@ -330,34 +330,34 @@
 
 ### 4 Juin 2024
 
-#### 🇿🇦 Afrique du Sud - Botselo
+#### 🇿🇦 Afrique du Sud - Botselo Mills
 - **Groupe ransomware :** arcusmedia
-- **Secteur :** Agriculture & Agroalimentaire
+- **Secteur :** Agriculture / Agroalimentaire
 - **Site web :** [botselo.com](https://www.botselo.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Botselo est une entreprise commerciale majeure opérant dans le secteur de l'agriculture et de l'agroalimentaire, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Botselo Mills est une entreprise sud-africaine d’agroalimentaire et de minoterie opérant dans la production alimentaire et la chaîne de valeur agricole.
 
 ----------------------------
 
 ### 6 Juin 2024
 
-#### 🇨🇬 Congo - Burotec.biz
+#### 🇨🇬 Congo - BUROTEC S.A.
 - **Groupe ransomware :** eldorado
-- **Secteur :** Services
+- **Secteur :** Services aux entreprises / Solutions bureautiques
 - **Site web :** [burotec.biz](https://www.burotec.biz)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Burotec.biz est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional au Congo.
+- **Description victime :** BUROTEC S.A. est une entreprise basée en République du Congo, référencée dans le dataset dans les services aux entreprises, avec des éléments sources pointant vers la zone de Brazzaville.
 
 ----------------------------
 
 ### 23 Juin 2024
 
-#### 🇿🇦 Afrique du Sud - Www.glynmarais
+#### 🇿🇦 Afrique du Sud - Glyn Marais
 - **Groupe ransomware :** cactus
-- **Secteur :** Services juridiques / Avocats
+- **Secteur :** Services juridiques / Cabinet d’avocats
 - **Site web :** [glynmarais.co.za](https://www.glynmarais.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Glynmarais est une entreprise commerciale majeure opérant dans le secteur juridique et des avocats d'affaires, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Glyn Marais est un cabinet d’avocats d’affaires sud-africain spécialisé dans le droit commercial, les fusions-acquisitions, le droit bancaire et les services juridiques aux entreprises.
 
 ----------------------------
 
@@ -365,56 +365,56 @@
 
 ### 1er Juillet 2024
 
-#### 🇹🇳 Tunisie - Maxcess-logistics
+#### 🇹🇳 Tunisie - Maxcess Logistics
 - **Groupe ransomware :** killsec
-- **Secteur :** Logistique
+- **Secteur :** Logistique / Transit
 - **Site web :** [maxcess-logistics.com](https://www.maxcess-logistics.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Maxcess-logistics est une entreprise commerciale majeure opérant dans le secteur de la logistique, contribuant de manière significative au tissu économique régional en Tunisie.
+- **Description victime :** Maxcess Logistics est une société tunisienne de transit et logistique fournissant des services de fret aérien, fret maritime, dédouanement et chaîne d’approvisionnement.
 
 ----------------------------
 
 ### 5 Juillet 2024
 
-#### 🇿🇦 Afrique du Sud - National health laboratory services
+#### 🇿🇦 Afrique du Sud - National Health Laboratory Service (NHLS)
 - **Groupe ransomware :** blacksuit
-- **Secteur :** Santé
+- **Secteur :** Santé / Diagnostic de laboratoire
 - **Site web :** [nhls.ac.za](https://www.nhls.ac.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** National health laboratory services est une entreprise commerciale majeure opérant dans le secteur des services de santé, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Le National Health Laboratory Service (NHLS) est le principal service sud-africain de pathologie diagnostique, soutenant la santé publique par les analyses de laboratoire et services médicaux associés.
 
 ----------------------------
 
 ### 13 Juillet 2024
 
-#### 🇰🇪 Kenya - Kenya urban roads authority
+#### 🇰🇪 Kenya - Kenya Urban Roads Authority (KURA)
 - **Groupe ransomware :** hunters
-- **Secteur :** Transport routier / Infrastructures
+- **Secteur :** Transport routier / Infrastructures publiques
 - **Site web :** [kura.go.ke](https://www.kura.go.ke)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Kenya urban roads authority est une institution publique ou une autorité de régulation étatique essentielle, chargée du développement et de la gestion des infrastructures routières urbaines.
+- **Description victime :** La Kenya Urban Roads Authority (KURA) est une agence gouvernementale kenyane responsable du développement, de la maintenance et de la gestion des infrastructures routières urbaines.
 
 ----------------------------
 
 ### 17 Juillet 2024
 
-#### 🇿🇼 Zimbabwe - Zb financial holdings
+#### 🇿🇼 Zimbabwe - ZB Financial Holdings
 - **Groupe ransomware :** madliberator
-- **Secteur :** Services financiers
+- **Secteur :** Services financiers / Banque
 - **Site web :** [zb.co.zw](https://www.zb.co.zw)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Zb financial holdings est une entreprise commerciale majeure opérant dans le secteur des services financiers, contribuant de manière significative au tissu économique régional au Zimbabwe.
+- **Description victime :** ZB Financial Holdings est un groupe zimbabwéen de services financiers proposant des services bancaires, d’assurance, d’investissement et produits financiers associés.
 
 ----------------------------
 
 ### 17 Juillet 2024
 
-#### 🇿🇦 Afrique du Sud - Cities network
+#### 🇿🇦 Afrique du Sud - South African Cities Network
 - **Groupe ransomware :** madliberator
-- **Secteur :** Services
+- **Secteur :** Gouvernance urbaine / Politiques publiques
 - **Site web :** [sacities.net](https://www.sacities.net)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Cities network est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** South African Cities Network est une plateforme de partage de connaissances et de gouvernance urbaine consacrée aux villes sud-africaines, au développement municipal et à la collaboration en politiques publiques.
 
 ----------------------------
 
@@ -425,18 +425,18 @@
 - **Secteur :** Services
 - **Site web :** [assih.com](https://www.assih.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Assih est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** Assih est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur services en/au Égypte. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
 ### 22 Juillet 2024
 
-#### 🇿🇦 Afrique du Sud - Sibanye-stillwater
+#### 🇿🇦 Afrique du Sud - Sibanye-Stillwater
 - **Groupe ransomware :** ransomhouse
-- **Secteur :** Industrie lourde
+- **Secteur :** Industrie minière / Industrie lourde
 - **Site web :** [sibanyestillwater.com](https://www.sibanyestillwater.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sibanye-stillwater est une entreprise commerciale majeure opérant dans le secteur de l'industrie lourde et de l'extraction minière, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Sibanye-Stillwater est un groupe minier sud-africain spécialisé dans les métaux du groupe platine, l’or et d’autres actifs miniers.
 
 ----------------------------
 
@@ -446,10 +446,10 @@
 
 #### 🇸🇨 Seychelles - Remitano
 - **Groupe ransomware :** meow
-- **Secteur :** Services financiers & Assurances
+- **Secteur :** Échange de cryptomonnaies / Fintech
 - **Site web :** [remitano.com](https://www.remitano.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Remitano est une entreprise commerciale majeure opérant dans le secteur de la finance et des cryptomonnaies, contribuant de manière significative au tissu économique régional aux Seychelles.
+- **Description victime :** Remitano est une plateforme d’échange de cryptomonnaies pair-à-pair offrant des services d’achat, de vente, de conservation, d’escrow et de portefeuille fiat.
 
 ----------------------------
 
@@ -460,18 +460,18 @@
 - **Secteur :** Distribution
 - **Site web :** [acdcexpress.com](https://www.acdcexpress.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Acdcexpress est une entreprise commerciale majeure opérant dans le secteur de la distribution et de la vente au détail, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Acdcexpress est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur distribution en/au Afrique du Sud. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
 ### 13 Août 2024
 
-#### 🇿🇼 Zimbabwe - Netone
+#### 🇿🇼 Zimbabwe - NetOne
 - **Groupe ransomware :** hunters
 - **Secteur :** Télécommunications
 - **Site web :** [netone.co.zw](https://www.netone.co.zw)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Netone est un opérateur de réseau mobile de premier plan fournissant des infrastructures de télécommunications, des services de téléphonie et des données haut débit au Zimbabwe.
+- **Description victime :** NetOne est un opérateur mobile zimbabwéen fournissant des infrastructures de télécommunications, services voix, données et haut débit.
 
 ----------------------------
 
@@ -482,29 +482,29 @@
 - **Secteur :** Santé
 - **Site web :** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Lenmed est une entreprise commerciale majeure opérant dans le secteur des services de santé, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Lenmed est un groupe de santé opérant des hôpitaux et services médicaux en Afrique australe, incluant des établissements privés et des services spécialisés.
 
 ----------------------------
 
 ### 13 Août 2024
 
-#### 🇿🇦 Afrique du Sud - Gpf.za
+#### 🇿🇦 Afrique du Sud - Gpf.Org.Za
 - **Groupe ransomware :** darkvault
-- **Secteur :** Services financiers & Assurances
+- **Secteur :** Services financiers
 - **Site web :** [gpf.org.za](https://www.gpf.org.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Gpf.za est une entreprise commerciale majeure opérant dans le secteur du financement du logement public, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Gpf.Org.Za est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur services financiers en/au Afrique du Sud. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
 ### 17 Août 2024
 
-#### 🇿🇦 Afrique du Sud - Wwwconfig
+#### 🇿🇦 Afrique du Sud - Netconfig
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Télécommunications
+- **Secteur :** Services managés / Télécommunications
 - **Site web :** [netconfig.co.za](https://www.netconfig.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Netconfig est un fournisseur de services gérés et d'infrastructures de télécommunications de premier plan en Afrique du Sud.
+- **Description victime :** Netconfig est un fournisseur sud-africain de services managés, d’infrastructures réseau et de solutions de télécommunications pour les entreprises.
 
 ----------------------------
 
@@ -512,32 +512,32 @@
 
 #### 🇨🇮 Côte d'Ivoire - Codival
 - **Groupe ransomware :** spacebears
-- **Secteur :** Distribution
+- **Secteur :** Distribution / Transport de fonds
 - **Site web :** [codival.ci](https://www.codival.ci)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Codival est une entreprise commerciale majeure opérant dans le secteur de la distribution et du transport de fonds, contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
+- **Description victime :** Codival est une entreprise ivoirienne associée à la distribution et aux activités de transport de fonds/logistique de valeur dans un contexte de services aux entreprises.
 
 ----------------------------
 
 ### 22 Août 2024
 
-#### 🇿🇦 Afrique du Sud - Don’t waste group
+#### 🇿🇦 Afrique du Sud - Don’t Waste Group
 - **Groupe ransomware :** incransom
-- **Secteur :** Services
-- **Site web :** [dontwastegroup.com](https://dontwastegroup.com)
+- **Secteur :** Services environnementaux / Gestion des déchets
+- **Site web :** [dontwastegroup.com](https://www.dontwastegroup.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Don’t waste group est une entreprise commerciale majeure opérant dans le secteur de la gestion environnementale et des services, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Don’t Waste Group est une entreprise sud-africaine de services environnementaux spécialisée dans la gestion des déchets, le recyclage, le suivi des ressources et les solutions de durabilité.
 
 ----------------------------
 
 ### 22 Août 2024
 
-#### 🇰🇪 Kenya - Instadriver.co
+#### 🇰🇪 Kenya - InstaDriver
 - **Groupe ransomware :** killsec
-- **Secteur :** Distribution
+- **Secteur :** Logistique / Plateforme de recrutement de chauffeurs
 - **Site web :** [instadriver.co](https://www.instadriver.co)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Instadriver.co est une entreprise commerciale majeure opérant dans le secteur des plateformes de recrutement et de distribution de services, contribuant de manière significative au tissu économique régional au Kenya.
+- **Description victime :** InstaDriver est une plateforme kenyane spécialisée dans le recrutement et la mise en relation de chauffeurs professionnels pour les secteurs du transport, de la logistique et des services de mobilité.
 
 ----------------------------
 
@@ -548,7 +548,7 @@
 - **Secteur :** Services financiers
 - **Site web :** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Ingotbrokers est une entreprise commerciale majeure opérant dans le secteur du courtage et des services financiers, contribuant de manière significative au tissu économique régional aux Seychelles.
+- **Description victime :** Ingotbrokers est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur services financiers en/au Seychelles. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
@@ -556,32 +556,32 @@
 
 #### 🇿🇦 Afrique du Sud - Onedayonly
 - **Groupe ransomware :** killsec
-- **Secteur :** E-commerce / Boutiques
+- **Secteur :** E-commerce
 - **Site web :** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Onedayonly est une entreprise commerciale majeure opérant dans le secteur du commerce électronique, contribuant de manière significative au tissu économique régional en Afrique du Sud.
+- **Description victime :** Onedayonly est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur e-commerce en/au Afrique du Sud. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
 ### 28 Août 2024
 
-#### 🇩🇯 Djibouti - Dpfza.gov.dj
+#### 🇩🇯 Djibouti - Djibouti Ports and Free Zones Authority (DPFZA)
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Gouvernement et administrations
+- **Secteur :** Gouvernement / Ports et zones franches
 - **Site web :** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Dpfza.gov.dj est l'Autorité des Ports et des Zones Franches de Djibouti, une institution publique essentielle chargée de la gestion publique et de la régulation des infrastructures portuaires.
+- **Description victime :** La Djibouti Ports and Free Zones Authority (DPFZA) est l’autorité publique chargée de la gestion des ports, zones franches et infrastructures logistiques stratégiques de Djibouti.
 
 ----------------------------
 
 ### 28 Août 2024
 
-#### 🇿🇼 Zimbabwe - Success microfinance bank
+#### 🇿🇼 Zimbabwe - Success Microfinance Bank
 - **Groupe ransomware :** meow
-- **Secteur :** Banques
-- **Site web :** [successbank.co.zw](https://successbank.co.zw) 
+- **Secteur :** Banque / Microfinance
+- **Site web :** [successbank.co.zw](https://www.successbank.co.zw)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Success microfinance bank est une institution bancaire spécialisée dans la microfinance, contribuant de manière significative au tissu économique régional au Zimbabwe.
+- **Description victime :** Success Microfinance Bank est une institution bancaire zimbabwéenne spécialisée dans la microfinance et les services financiers aux particuliers et petites entreprises.
 
 ----------------------------
 
@@ -592,7 +592,7 @@
 - **Secteur :** Technologies
 - **Site web :** [ghanare.com](https://www.ghanare.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Ghana Reinsurance (Ghana Re) est une entreprise commerciale majeure opérant dans le secteur des technologies et des assurances, contribuant de manière significative au tissu économique régional au Ghana.
+- **Description victime :** Ghanare est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur technologies en/au Ghana. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
@@ -600,23 +600,23 @@
 
 ### 6 Septembre 2024
 
-#### 🇸🇳 Sénégal - Sesam informatics
+#### 🇸🇳 Sénégal - SESAM Informatics
 - **Groupe ransomware :** hunters
-- **Secteur :** Technologies
+- **Secteur :** Technologies / Développement logiciel
 - **Site web :** [sesam-informatics.com](https://www.sesam-informatics.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sesam informatics est une entreprise commerciale majeure opérant dans le secteur des technologies et du développement de logiciels, contribuant de manière significative au tissu économique régional au Sénégal.
+- **Description victime :** SESAM Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.
 
 ----------------------------
 
 ### 12 Septembre 2024
 
-#### 🇨🇲 Cameroun - Cnps cameroun
+#### 🇨🇲 Cameroun - CNPS Cameroun
 - **Groupe ransomware :** spacebears
-- **Secteur :** Gouvernement et administrations
+- **Secteur :** Gouvernement / Sécurité sociale
 - **Site web :** [cnps.cm](https://www.cnps.cm)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** La CNPS Cameroun (Caisse Nationale de Prévoyance Sociale) est une institution publique chargée de la gestion de la sécurité sociale, contribuant de manière financièrement critique au tissu économique du Cameroun.
+- **Description victime :** La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l’organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.
 
 ----------------------------
 
@@ -627,18 +627,18 @@
 - **Secteur :** Télécommunications
 - **Site web :** [emtel.com](https://www.emtel.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Emtel est un opérateur de réseau mobile de premier plan fournissant des infrastructures de télécommunications, des services de téléphonie et des données haut débit à l'Île Maurice.
+- **Description victime :** Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, services voix, données et haut débit.
 
 ----------------------------
 
 ### 16 Septembre 2024
 
-#### 🇹🇳 Tunisie - Excelplast tunisie
+#### 🇹🇳 Tunisie - Excelplast Tunisie
 - **Groupe ransomware :** orca
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Industrie manufacturière / Plasturgie
 - **Site web :** [excelplastunisie.com](https://www.excelplastunisie.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Excelplast tunisie est une entreprise manufacturière industrielle spécialisée dans la production de plastique, la transformation des matières premières et l'emballage.
+- **Description victime :** Excelplast Tunisie est une entreprise manufacturière tunisienne spécialisée dans la production de plastique, la transformation des matières premières et l’emballage.
 
 ----------------------------
 
@@ -651,7 +651,7 @@
 - **Secteur :** Conseil en technologies de l'information
 - **Site web :** [enterpriseoutsourcing.com](https://www.enterpriseoutsourcing.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Enterpriseoutsourcing est une entreprise commerciale majeure opérant dans le secteur du conseil et des services managés en technologies de l'information en Afrique du Sud.
+- **Description victime :** Enterpriseoutsourcing est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur conseil en technologies de l'information en/au Afrique du Sud. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
@@ -659,10 +659,10 @@
 
 #### 🇿🇦 Afrique du Sud - Winwinza
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Éducation / Écoles
+- **Secteur :** Schools
 - **Site web :** [winwinza.com](https://www.winwinza.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Winwinza est une entreprise commerciale majeure opérant dans le secteur des plateformes éducatives et des services scolaires, contribuant au tissu économique régional en Afrique du Sud.
+- **Description victime :** Winwinza est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur schools en/au Afrique du Sud. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
@@ -670,65 +670,65 @@
 
 #### 🇩🇿 Algérie - Yassir
 - **Groupe ransomware :** killsec
-- **Secteur :** Conseil en technologies de l'information
+- **Secteur :** Technologies / Mobilité et livraison
 - **Site web :** [yassir.com](https://www.yassir.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Yassir est une entreprise technologique majeure (super-app) fournissant des services de transport, de livraison et financiers, présente fortement en Algérie et dans la région.
+- **Description victime :** Yassir est une super-app algérienne fournissant des services de VTC, livraison, courses et services numériques en Algérie et sur des marchés régionaux.
 
 ----------------------------
 
 ### 9 Octobre 2024
 
-#### 🇿🇦 Afrique du Sud - Gmg mining supplies
+#### 🇿🇦 Afrique du Sud - GMG Mining Supplies
 - **Groupe ransomware :** sarcoma
-- **Secteur :** Industrie minière & Ressources naturelles
-- **Site web :** [gmgminingsupplies.com](https://gmgminingsupplies.com)
+- **Secteur :** Industrie minière / Équipements industriels
+- **Site web :** [gmgminingsupplies.com](https://www.gmgminingsupplies.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Gmg mining supplies est une entreprise commerciale majeure opérant dans le secteur des équipements et de l'approvisionnement minier en Afrique du Sud.
+- **Description victime :** GMG Mining Machines and Supplies est une entreprise sud-africaine spécialisée dans la fourniture, reconstruction et location d’équipements miniers, machines mobiles sans rail, pièces et services associés.
 
 ----------------------------
 
 ### 9 Octobre 2024
 
-#### 🇿🇦 Afrique du Sud - National edging
+#### 🇿🇦 Afrique du Sud - National Edging
 - **Groupe ransomware :** sarcoma
-- **Secteur :** Distribution
-- **Site web :** [nationaledging.com](https://nationaledging.com)
+- **Secteur :** Industrie / Fournitures industrielles
+- **Site web :** [nationaledging.com](https://www.nationaledging.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** National edging est une entreprise commerciale majeure opérant dans le secteur de la distribution de composants et de fournitures industrielles en Afrique du Sud.
+- **Description victime :** National Edging est une entreprise sud-africaine spécialisée dans la fourniture de chants, adhésifs, matériaux de finition et composants industriels pour les secteurs du meuble, de la cuisine et de l’agencement.
 
 ----------------------------
 
 ### 11 Octobre 2024
 
-#### 🇬🇭 Ghana - Volta river authority
+#### 🇬🇭 Ghana - Volta River Authority (VRA)
 - **Groupe ransomware :** blacksuit
-- **Secteur :** Services
+- **Secteur :** Énergie / Production électrique
 - **Site web :** [vra.com](https://www.vra.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Volta river authority est une institution publique et le principal producteur d'électricité au Ghana, chargée de la gestion publique des ressources énergétiques.
+- **Description victime :** La Volta River Authority (VRA) est le principal producteur public d’électricité du Ghana, responsable de centrales hydroélectriques, thermiques et d’infrastructures énergétiques stratégiques du pays.
 
 ----------------------------
 
 ### 16 Octobre 2024
 
-#### 🇱🇾 Libye - Moi.gov.ly
+#### 🇱🇾 Libye - Ministry of Interior Libya
 - **Groupe ransomware :** killsec
-- **Secteur :** Administrations locales
+- **Secteur :** Gouvernement / Ministère de l’Intérieur
 - **Site web :** [moi.gov.ly](https://www.moi.gov.ly)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Le portail du Ministère de l'Intérieur de Libye (Moi.gov.ly) est une institution publique essentielle, chargée de la sécurité nationale et de la gestion publique.
+- **Description victime :** Le Ministère de l’Intérieur libyen est une institution gouvernementale chargée de la sécurité intérieure, des forces de police et de la gestion des affaires administratives sécuritaires du pays.
 
 ----------------------------
 
 ### 25 Octobre 2024
 
-#### 🇪🇬 Égypte - Matouk bassiouny
+#### 🇪🇬 Égypte - Matouk Bassiouny
 - **Groupe ransomware :** raworld
-- **Secteur :** Services juridiques / Avocats
+- **Secteur :** Services juridiques / Cabinet d’avocats
 - **Site web :** [matoukbassiouny.com](https://www.matoukbassiouny.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Matouk bassiouny est un cabinet de conseil juridique de premier plan opérant dans le secteur des services légaux, contribuant de manière significative au tissu économique régional en Égypte.
+- **Description victime :** Matouk Bassiouny est un important cabinet d’avocats égyptien basé au Caire, reconnu pour le droit des affaires, l’arbitrage, le contentieux et le conseil juridique.
 
 ----------------------------
 
@@ -736,133 +736,133 @@
 
 ### 2 Novembre 2024
 
-#### 🇿🇦 Afrique du Sud - Sumitomo
+#### 🇿🇦 Afrique du Sud - Sumitomo Rubber South Africa
 - **Groupe ransomware :** killsec
-- **Secteur :** Industrie manufacturière
+- **Secteur :** Industrie manufacturière / Pneumatiques
 - **Site web :** [srigroup.co.za](https://www.srigroup.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Sumitomo Rubber South Africa est une entreprise manufacturière industrielle spécialisée dans la production de pneumatiques et de biens de consommation en Afrique du Sud.
+- **Description victime :** Sumitomo Rubber South Africa est une entreprise de fabrication de pneumatiques opérant en Afrique du Sud et liée au groupe Sumitomo Rubber Industries.
 
 ----------------------------
 
 ### 4 Novembre 2024
 
-#### 🇹🇿 Tanzanie - College of business - tanzania
+#### 🇹🇿 Tanzanie - College of Business Education (CBE)
 - **Groupe ransomware :** hellcat
-- **Secteur :** Éducation / Universités
+- **Secteur :** Éducation / Enseignement supérieur
 - **Site web :** [cbe.ac.tz](https://www.cbe.ac.tz)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Le College of Business Education (CBE) en Tanzanie est un établissement d'enseignement supérieur majeur, formant aux métiers du commerce et de la gestion.
+- **Description victime :** Le College of Business Education (CBE) est un établissement tanzanien d’enseignement supérieur proposant des formations en commerce, gestion, comptabilité et domaines professionnels associés.
 
 ----------------------------
 
 ### 4 Novembre 2024
 
-#### 🇸🇩 Soudan - Kenanasugarcompany
+#### 🇸🇩 Soudan - Kenana Sugar Company
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Agriculture & Agroalimentaire
+- **Secteur :** Agriculture / Industrie sucrière
 - **Site web :** [kenanasugarcompany.com](https://www.kenanasugarcompany.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Kenana Sugar Company est un complexe agro-industriel majeur spécialisé dans la production et le raffinage de sucre de canne au Soudan.
+- **Description victime :** Kenana Sugar Company est un important complexe agro-industriel soudanais spécialisé dans la culture de la canne à sucre, la production de sucre et les activités agricoles et industrielles associées.
 
 ----------------------------
 
 ### 14 Novembre 2024
 
-#### 🇳🇬 Nigéria - Enviromentaldesign international
+#### 🇳🇬 Nigéria - Environmental Design International
 - **Groupe ransomware :** akira
-- **Secteur :** Ingénierie & Conseil
-- **Site web :** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
+- **Secteur :** Ingénierie / Conseil
+- **Site web :** [environmentaldesigninternational.com](https://www.environmentaldesigninternational.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Environmental Design International est une entreprise commerciale majeure opérant dans le secteur de l'ingénierie et du conseil environnemental au Nigéria.
+- **Description victime :** Environmental Design International est référencée comme victime liée au Nigéria dans le dataset, dans le secteur de l’ingénierie et du conseil ; la revendication mentionnait des documents d’ingénierie, financiers et personnels.
 
 ----------------------------
 
 ### 17 Novembre 2024
 
-#### 🇪🇬 Égypte - The egyptian tax authority (eta)
+#### 🇪🇬 Égypte - Egyptian Tax Authority (ETA)
 - **Groupe ransomware :** moneymessage
-- **Secteur :** Services financiers & Assurances
+- **Secteur :** Gouvernement / Administration fiscale
 - **Site web :** [eta.gov.eg](https://www.eta.gov.eg)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** L'Autorité Fiscale Égyptienne (ETA) est une institution publique étatique essentielle, chargée de la collecte des taxes et de la gestion publique des finances.
+- **Description victime :** L’Egyptian Tax Authority (ETA) est l’administration fiscale publique égyptienne chargée de la collecte des impôts, de la conformité, des services aux contribuables et de la gestion fiscale.
 
 ----------------------------
 
 ### 24 Novembre 2024
 
-#### 🇰🇪 Kenya - Efi sales
+#### 🇰🇪 Kenya - EFI Sales
 - **Groupe ransomware :** killsec
-- **Secteur :** Distribution
+- **Secteur :** Distribution / Équipements industriels
 - **Site web :** [efisales.co.ke](https://www.efisales.co.ke)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Efi sales est une entreprise commerciale majeure opérant dans le secteur de la distribution d'équipements industriels et de services au Kenya.
+- **Description victime :** EFI Sales est une entreprise basée au Kenya référencée dans le secteur de la distribution, associée à la fourniture d’équipements industriels et services connexes.
 
 ----------------------------
 
 ### 27 Novembre 2024
 
-#### 🇪🇹 Éthiopie - Habeshacement
+#### 🇪🇹 Éthiopie - Habesha Cement
 - **Groupe ransomware :** lockbit3
 - **Secteur :** Industrie lourde / Matériaux de construction
 - **Site web :** [habeshacement.com](https://www.habeshacement.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Habesha Cement est une entreprise commerciale majeure opérant dans le secteur de la production de ciment et des matériaux de construction en Éthiopie.
+- **Description victime :** Habesha Cement est une cimenterie éthiopienne constituée en 2008, spécialisée dans la production de ciment et de matériaux de construction pour les infrastructures et le secteur immobilier.
 
 ----------------------------
 
 ### 27 Novembre 2024
 
-#### 🇪🇬 Égypte - Contrack facilities management
+#### 🇪🇬 Égypte - Contrack Facilities Management
 - **Groupe ransomware :** raworld
-- **Secteur :** Services aux entreprises
+- **Secteur :** Services aux entreprises / Facility management
 - **Site web :** [contrackfm.com](https://www.contrackfm.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Contrack facilities management est une entreprise commerciale majeure opérant dans le secteur de la gestion des installations et services aux bâtiments en Égypte.
+- **Description victime :** Contrack Facilities Management est une société égyptienne de facility management fournissant des services de maintenance, d’exploitation et de support pour les bâtiments et sites d’entreprise.
 
 ----------------------------
 
 ### 28 Novembre 2024
 
-#### 🇳🇬 Nigéria - Briatek.ng
+#### 🇳🇬 Nigéria - Briatek
 - **Groupe ransomware :** killsec
-- **Secteur :** Conseil en technologies de l'information
+- **Secteur :** Conseil IT / Intégration logicielle
 - **Site web :** [briatek.com.ng](https://www.briatek.com.ng)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Briatek est une entreprise technologique majeure spécialisée dans le conseil informatique et l'intégration de solutions logicielles au Nigéria.
+- **Description victime :** Briatek est une entreprise technologique nigériane spécialisée dans le conseil informatique, l’intégration logicielle et les solutions numériques pour les organisations.
 
 ----------------------------
 
 ### 28 Novembre 2024
 
-#### 🇨🇲 Cameroun - Chanas assurances s.a. (chanasassurances)
+#### 🇨🇲 Cameroun - Chanas Assurances S.A. (Chanasassurances)
 - **Groupe ransomware :** fog
-- **Secteur :** Services d'assurances
+- **Secteur :** Services d'assurance
 - **Site web :** [chanasassurances.com](https://www.chanasassurances.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Chanas assurances s.a. est une compagnie d'assurances de premier plan au Cameroun, offrant des services de gestion des risques pour les particuliers et les entreprises.
+- **Description victime :** Chanas Assurances S.A. (Chanasassurances) est référencée dans le dataset ransomware Afrique 2024 comme une organisation opérant dans le secteur services d'assurance en/au Cameroun. Le contexte public disponible reste limité au-delà du domaine et de la revendication publique.
 
 ----------------------------
 
 ### 29 Novembre 2024
 
-#### 🇳🇦 Namibie - Namforce life insurance
+#### 🇳🇦 Namibie - Namforce Life Insurance
 - **Groupe ransomware :** spacebears
-- **Secteur :** Services d'assurances
+- **Secteur :** Assurance-vie / Services financiers
 - **Site web :** [namforce.com.na](https://www.namforce.com.na)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Namforce est une entreprise commerciale majeure spécialisée dans l'assurance-vie et les services financiers en Namibie.
+- **Description victime :** Namforce Life Insurance est une société namibienne spécialisée dans les produits d’assurance-vie, de protection financière et de gestion des risques pour les particuliers et les organisations.
 
 ----------------------------
 
 ### 29 Novembre 2024
 
-#### 🇿🇦 Afrique du Sud - Ppotts
+#### 🇿🇦 Afrique du Sud - PPOTTS
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Technologies
+- **Secteur :** Technologies / Services numériques
 - **Site web :** [ppotts.com](https://www.ppotts.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Ppotts est une entreprise commerciale majeure opérant dans le secteur du développement de logiciels et des technologies de l'information en Afrique du Sud.
+- **Description victime :** PPOTTS est référencée comme victime sud-africaine du secteur technologique dans le dataset. Le contexte public est limité, mais le domaine est associé aux logiciels, services numériques ou solutions technologiques d’entreprise.
 
 ----------------------------
 
@@ -870,34 +870,34 @@
 
 ### 3 Décembre 2024
 
-#### 🇸🇩 Soudan - Www.dalgroup
+#### 🇸🇩 Soudan - DAL Group
 - **Groupe ransomware :** ransomhub
 - **Secteur :** Agroalimentaire / Boissons
 - **Site web :** [dalgroup.com](https://www.dalgroup.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** DAL Group est le plus grand conglomérat privé du Soudan, opérant massivement dans le secteur agroalimentaire, de la distribution et des boissons.
+- **Description victime :** DAL Group est le plus grand conglomérat privé du Soudan, opérant dans les secteurs agroalimentaire, industriel, agricole, de la distribution et des boissons.
 
 ----------------------------
 
 ### 9 Décembre 2024
 
-#### 🇲🇷 Mauritanie - Bankily.mr
+#### 🇲🇷 Mauritanie - Bankily
 - **Groupe ransomware :** apt73/bashe
-- **Secteur :** Banques
+- **Secteur :** Mobile banking / Services financiers
 - **Site web :** [bankily.mr](https://www.bankily.mr)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Bankily est le premier service de mobile banking en Mauritanie, propulsé par la Banque Populaire de Mauritanie (BPM).
+- **Description victime :** Bankily est une plateforme de mobile banking mauritanienne exploitée par la Banque Populaire de Mauritanie (BPM), fournissant des services financiers numériques et de paiement mobile.
 
 ----------------------------
 
 ### 10 Décembre 2024
 
-#### 🇳🇦 Namibie - Telecom namibia
+#### 🇳🇦 Namibie - Telecom Namibia
 - **Groupe ransomware :** hunters
 - **Secteur :** Télécommunications
 - **Site web :** [telecom.na](https://www.telecom.na)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Telecom namibia est l'opérateur national historique de télécommunications fournissant des services de voix, de données haut débit et d'infrastructures en Namibie.
+- **Description victime :** Telecom Namibia est l’opérateur national historique de télécommunications fournissant des services de voix, de haut débit, de connectivité de données et d’infrastructure en Namibie.
 
 ----------------------------
 
@@ -905,76 +905,76 @@
 
 #### 🇪🇬 Égypte - Kazyon
 - **Groupe ransomware :** moneymessage
-- **Secteur :** Grande distribution
+- **Secteur :** Grande distribution / Hard-discount
 - **Site web :** [kazyon.com](https://www.kazyon.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Kazyon est la plus grande chaîne de supermarchés de hard-discount en Égypte et dans la région d'Afrique du Nord.
+- **Description victime :** Kazyon est une grande chaîne égyptienne de supermarchés hard-discount proposant des produits alimentaires, ménagers et de consommation via un large réseau de magasins.
 
 ----------------------------
 
 ### 15 Décembre 2024
 
-#### 🇿🇲 Zambie - Tumeny payments limited
+#### 🇿🇲 Zambie - Tumeny Payments Limited
 - **Groupe ransomware :** killsec
-- **Secteur :** Infrastructures de marché / Fintech
+- **Secteur :** Fintech / Infrastructures de paiement
 - **Site web :** [tumenypay.com](https://www.tumenypay.com)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Tumeny Payments est une entreprise de fintech majeure fournissant des solutions de paiement numérique et d'infrastructures de transfert de fonds en Zambie.
+- **Description victime :** Tumeny Payments Limited est une fintech zambienne fournissant des services de paiement numérique, transfert d’argent et infrastructures de paiement.
 
 ----------------------------
 
 ### 20 Décembre 2024
 
-#### 🇧🇼 Botswana - Water utilities corporation
+#### 🇧🇼 Botswana - Water Utilities Corporation (WUC)
 - **Groupe ransomware :** killsec
-- **Secteur :** Distribution et approvisionnement en eau
+- **Secteur :** Distribution d’eau / Service public
 - **Site web :** [wuc.bw](https://www.wuc.bw)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Water Utilities Corporation (WUC) est l'entreprise étatique majeure chargée de l'approvisionnement et de la gestion de la distribution d'eau au Botswana.
+- **Description victime :** Water Utilities Corporation (WUC) est l’entreprise publique botswanaise chargée de l’approvisionnement, de la distribution et de la gestion des services d’eau.
 
 ----------------------------
 
 ### 21 Décembre 2024
 
-#### 🇹🇳 Tunisie - Www.groupe-setcar.tn
+#### 🇹🇳 Tunisie - Groupe SETCAR
 - **Groupe ransomware :** ransomhub
-- **Secteur :** Automobile / Transport
+- **Secteur :** Automobile / Véhicules industriels
 - **Site web :** [groupe-setcar.com.tn](https://www.groupe-setcar.com.tn)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Le Groupe Setcar est un conglomérat industriel majeur en Tunisie, spécialisé dans l'assemblage de véhicules industriels, l'automobile et la logistique.
+- **Description victime :** Le Groupe SETCAR est un groupe industriel tunisien spécialisé dans les bus, autocars, véhicules industriels, activités automobiles et solutions de transport associées.
 
 ----------------------------
 
 ### 24 Décembre 2024
 
-#### 🇿🇦 Afrique du Sud - Baker tilly morrison murray
+#### 🇿🇦 Afrique du Sud - Baker Tilly Morrison Murray
 - **Groupe ransomware :** sarcoma
-- **Secteur :** Audit & Conseil
+- **Secteur :** Audit / Comptabilité / Conseil
 - **Site web :** [bakertillymm.co.za](https://www.bakertillymm.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Baker tilly morrison murray est un cabinet de services professionnels de premier plan spécialisé en comptabilité, fiscalité, audit externe et conseil aux entreprises en Afrique du Sud.
+- **Description victime :** Baker Tilly Morrison Murray est un cabinet sud-africain de services professionnels fournissant des services de comptabilité, audit, fiscalité et conseil.
 
 ----------------------------
 
 ### 28 Décembre 2024
 
-#### 🇿🇦 Afrique du Sud - Cell c
+#### 🇿🇦 Afrique du Sud - Cell C
 - **Groupe ransomware :** ransomhouse
 - **Secteur :** Télécommunications
 - **Site web :** [cellc.co.za](https://www.cellc.co.za)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Cell C est le quatrième opérateur de réseau mobile en Afrique du Sud, comptant plus de 13 millions d'abonnés (directs et MVNO). L'entreprise opère selon un modèle asset-light en s'appuyant sur les infrastructures de roaming de MTN et Vodacom, et est contrôlée majoritairement par le groupe Blue Label Telecoms.
+- **Description victime :** Cell C est un opérateur mobile sud-africain fournissant des services de voix, données, messagerie et télécommunications mobiles.
 
 ----------------------------
 
 ### 29 Décembre 2024
 
-#### 🇹🇿 Tanzanie - Wosac
+#### 🇹🇿 Tanzanie - WOSAC
 - **Groupe ransomware :** arcusmedia
-- **Secteur :** Transport maritime
+- **Secteur :** Transport maritime / Agence maritime
 - **Site web :** [wosac.co.tz](https://www.wosac.co.tz)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Wosac (White Orange Shipping Agency) est une entreprise commerciale majeure opérant dans le secteur du transport maritime et des services d'agence de fret en Tanzanie.
+- **Description victime :** WOSAC est une entreprise tanzanienne de transport maritime et d’agence maritime fournissant des services de fret, shipping et logistique associée.
 
 ----------------------------
 

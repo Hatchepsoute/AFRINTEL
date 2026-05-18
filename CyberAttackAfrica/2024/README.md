@@ -6,11 +6,11 @@
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
 # Cyber Threat Intelligence (CTI) Report
-## Ransomware Attack Landscape in Africa - Year 2024
+## Ransomware Attack landscape in Africa - Year 2024
 
 **Data Source:** OSINT (ransomware leak sites, specialized monitoring)  
 **Incidents documented:** 86
-
+👉🏾 [French version](./README_FR.md)
 ---
 
 ## 1. Executive summary

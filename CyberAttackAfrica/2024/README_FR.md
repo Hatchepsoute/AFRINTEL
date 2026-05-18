@@ -10,7 +10,7 @@
 
 **Source des données :** OSINT (sites de fuite de groupes ransomware, veille spécialisée)  
 **Nombre d’incidents documentés :** 86
-
+👉🏾 [English version](./README.md)
 ---
 
 ## 1. Résumé exécutif
