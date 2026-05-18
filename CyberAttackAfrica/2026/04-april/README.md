@@ -19,27 +19,6 @@ Key findings:
 - Government, education, and healthcare remain prime targets (combined 45%).
 - Massive breaches: Royal Palace staff DB (3,300 records with CNIE), Pick n Pay ASAP/Bottles.com (full payment cards, GPS), Kenya Airports Authority (claimed 2 TB), CNSS Benin mailbox leak (7.1 GB).
 
-```mermaid
-pie showData
-    title victim distribution by country-April 2026
-    "🇲🇦 Morocco" : 17
-    "🇪🇬 Egypt" : 11
-    "🇿🇦 South Africa" : 8
-    "🇳🇬 Nigeria" : 4
-    "🇩🇿 Algeria" : 4
-    "🇹🇳 Tunisia" : 4
-    "🇰🇪 Kenya" : 2
-    "🇬🇭 Ghana" : 2
-    "🇧🇯 Benin" : 1
-    "🇧🇼 Botswana" : 1
-    "🇪🇹 Ethiopia" : 1
-    "🇸🇨 Seychelles" : 1
-    "🇸🇳 Senegal" : 1
-    "🇺🇬 Uganda" : 1
-    "🇿🇲 Zambia" : 1
-    "🌍 Multi country Africa" : 1
-```
-
 ### 📋 Victim list
 
 👉🏾 [View full victim list](./victims.md)
@@ -87,6 +66,27 @@ pie showData
 | **–** | 🌍 Multi‑country *(AO, ZA, NG)* | **1** | █ |
 
 *Note: The multi-country incident is counted as 1 global victim.*
+
+```mermaid
+pie showData
+    title Victims distribution by country - April 2026
+    "🇲🇦 Morocco" : 17
+    "🇪🇬 Egypt" : 11
+    "🇿🇦 South Africa" : 8
+    "🇳🇬 Nigeria" : 4
+    "🇩🇿 Algeria" : 4
+    "🇹🇳 Tunisia" : 4
+    "🇰🇪 Kenya" : 2
+    "🇬🇭 Ghana" : 2
+    "🇧🇯 Benin" : 1
+    "🇧🇼 Botswana" : 1
+    "🇪🇹 Ethiopia" : 1
+    "🇸🇨 Seychelles" : 1
+    "🇸🇳 Senegal" : 1
+    "🇺🇬 Uganda" : 1
+    "🇿🇲 Zambia" : 1
+    "🌍 Multi country Africa" : 1
+```
 
 ### 📊 Distribution by ransomware incidents (Total: 20)
 
