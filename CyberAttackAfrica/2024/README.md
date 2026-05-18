@@ -190,7 +190,7 @@ gantt
 ```mermaid
 xychart-beta
     title "Attacks by Geostrategic Region"
-    x-axis ["Southern Africa" "North Africa" "East Africa" "West Africa" "Central Africa"]
+    x-axis ["Southern Africa", "North Africa", "East Africa", "West Africa", "Central Africa"]
     y-axis "Number of attacks" 0 --> 50
     bar [44, 24, 11, 10, 3]
 ```
