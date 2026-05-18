@@ -6,6 +6,8 @@
 ![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
 ![OSINT](https://img.shields.io/badge/Data%20Source-OSINT-blue)
 ![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 <p align="left">
 <img src="comparison/afrintel_logo.png" width="90" align="left" style="margin-right:15px"/>
 
@@ -18,115 +20,211 @@
 
 ## 🌍 About AFRINTEL
 
-**AFRINTEL** is an open‑source **Cyber Threat Intelligence (CTI)** initiative that tracks cyberattacks targeting organizations across Africa.
+**AFRINTEL** is an open-source **Cyber Threat Intelligence (CTI)** initiative dedicated to tracking, documenting, and analyzing cyberattacks targeting organizations across Africa.
 
-The analysis relies on monitoring:
+The project focuses on:
+
+- ransomware operations
+- data leaks and extortion campaigns
+- initial access broker (IAB) activity
+- underground marketplace monitoring
+- cybercriminal ecosystem mapping
+- Africa-focused CTI reporting
+
+AFRINTEL analysis relies on monitoring:
 
 - ransomware leak sites (**dark web**)
-- cybercriminal forums and underground marketplaces
-- platforms used to publish compromised data
+- underground cybercriminal forums
+- data broker marketplaces
+- exposed database listings
 - public OSINT sources
+- Telegram and underground channels
 
 The objective is to provide **strategic visibility on cyber threats affecting the African continent**.
 
 ---
 
-## 📊 Monthly reports
+## 🔬 Methodology
 
-| Month | French | English |
-|------|--------|--------|
-| **January 2026** | [View report](reports/2026/01-january/README_FR.md) | [View report](reports/2026/01-january/README.md) |
-| **February 2026** | [View report](reports/2026/02-february/README_FR.md) | [View report](reports/2026/02-february/README.md) |
+AFRINTEL tracks publicly claimed cyber incidents affecting African organizations.
+
+### Sources
+
+- Ransomware leak sites (DLS)
+- Underground forums
+- Data broker marketplaces
+- Telegram channels
+- Open-source intelligence (OSINT)
+
+### Classification
+
+- **Ransomware** → encryption and extortion activity
+- **Data Leak** → data exposure, database publication or sale
+- **Access Sale** → sale of compromised access to systems/networks
+
+### Reliability Note
+
+Leak-site publications and underground claims are treated as:
+
+```text
+Claim - Unverified
+```
+
+unless corroborated by:
+
+- victim confirmation
+- technical evidence
+- validated data samples
+- multiple trusted sources
 
 ---
 
-## 📈 Statistics
+## 📊 AFRINTEL Coverage
+
+| Category | Coverage |
+|---|---|
+| African countries monitored | 54 |
+| Threat actors tracked | 100+ |
+| Ransomware groups monitored | 70+ |
+| Data leak actors monitored | 50+ |
+| Years covered | 2024 - 2026 |
+| Intelligence formats | Markdown / STIX / Visual CTI |
+
+---
+
+## 🚨 Latest Intelligence
+
+### April 2026 Highlights
+
+- 60 publicly claimed cyber incidents across Africa
+- Morocco, Egypt, and South Africa remain primary hotspots
+- Surge in data broker and initial access broker activity
+- Government and healthcare sectors heavily targeted
+- Large-scale KYC and identity document exposure observed
+- Kenya Airports Authority claimed compromise (2 TB)
+- CNSS Benin mailbox scraping campaign documented
+
+📄 [Read April 2026 CTI Report](CyberAttackAfrica/2026/04-april/README.md)
+
+---
+
+## 📊 Monthly CTI Reports
+
+| Month | French | English |
+|------|--------|--------|
+| **January 2026** | [Voir le rapport](CyberAttackAfrica/2026/01-january/README_FR.md) | [View report](CyberAttackAfrica/2026/01-january/README.md) |
+| **February 2026** | [Voir le rapport](CyberAttackAfrica/2026/02-february/README_FR.md) | [View report](CyberAttackAfrica/2026/02-february/README.md) |
+| **March 2026** | [Voir le rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [View report](CyberAttackAfrica/2026/03-march/README.md) |
+| **April 2026** | [Voir le rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [View report](CyberAttackAfrica/2026/04-april/README.md) |
+
+---
+
+## 📈 Statistics & Trend Analysis
 
 | Month | French | English |
 |------|--------|--------|
 | **January 2026** | [Statistics](statistics/2026/01-january/README_FR.md) | [Statistics](statistics/2026/01-january/README.md) |
 | **February 2026** | [Statistics](statistics/2026/02-february/README_FR.md) | [Statistics](statistics/2026/02-february/README.md) |
+| **March 2026** | [Statistics](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
+| **April 2026** | [Statistics](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 
 ---
 
-## 🔍 Comparative analysis
+## 🔍 Comparative Intelligence Analysis
 
-📄 [January vs February 2026](comparison/README.md)
+| Comparison | French | English |
+|---|---|---|
+| January vs February 2026 | [FR](comparison/2026/01-january-february/README_FR.md) | [EN](comparison/2026/01-january-february/README.md) |
+| February vs March 2026 | [FR](comparison/2026/02-february-march/README_FR.md) | [EN](comparison/2026/02-february-march/README.md) |
+| March vs April 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 
-Focus on:
+Focus areas:
 
-- ransomware actors  
-- affected countries  
-- targeted sectors  
-- operational trends  
+- ransomware ecosystem evolution
+- targeted countries and sectors
+- actor operational patterns
+- regional threat escalation
+- leak market evolution
 
 ---
 
-## 🧠 Visual intelligence
+## 🧠 Visual Intelligence
 
-📊 [Visual intelligence dashboard](visual-intelligence/README.md)
+📊 [Visual Intelligence Dashboard](visual-intelligence/04-april/README.md)
 
 Includes:
 
-- Africa cyber threat map  
-- actors → victims → countries diagrams  
-- regional heatmaps  
-- sector visualizations  
+- Africa cyber threat maps
+- actor → victim → country diagrams
+- ransomware vs leak heatmaps
+- sector intelligence mapping
+- regional exposure visualization
+- threat actor ecosystem mapping
 
-### CTI ecosystem map
+### CTI Ecosystem Maps
 
-👉🏾 [See the visual intelligence layer](/visual-intelligence/ecosystem-map.md)
----
-## Threat intelligence data
-
-AFRINTEL provides structured CTI datasets in **STIX format**.
-
-📦 Available bundles:
-
-- [January 2026 STIX dataset](stix/2026/01-january/afrintel-january-2026-bundle.json)
-- [February 2026 STIX dataset](stix/2026/02-february/afrintel-february-2026-bundle.json)
-
-These bundles contain structured intelligence about ransomware actors, victims, targeted countries and sectors across Africa.
+- [April 2026 Ecosystem Map](visual-intelligence/04-april/ecosystem-map_april_2026.md)
+- [Ransomware vs Leaks](visual-intelligence/04-april/ransomware-vs-leaks_april_2026.md)
+- [Country Hotspots](visual-intelligence/04-april/country-hotspots_april_2026.md)
+- [Sector Map](visual-intelligence/04-april/sector-map_april_2026.md)
 
 ---
-## 📂 Project structure
 
-```
+## 📦 STIX / OpenCTI Intelligence Datasets
+
+AFRINTEL provides structured CTI datasets in **STIX 2.1 / OpenCTI-ready format**.
+
+### Available STIX Bundles
+
+| Dataset | File |
+|---|---|
+| January 2026 | [STIX Bundle](stix/2026/01-january/afrintel_january_2026_opencti.json) |
+| February 2026 | [STIX Bundle](stix/2026/02-february/afrintel_february_2026_opencti.json) |
+| March 2026 | [STIX Bundle](stix/2026/03-march/afrintel_march_2026_opencti.json) |
+| April 2026 | [STIX Bundle](stix/2026/04-april/afrintel_april_2026_opencti.json) |
+
+These datasets contain:
+
+- threat actors
+- ransomware groups
+- victims
+- targeted sectors
+- geographic intelligence
+- contextual MITRE ATT&CK mapping
+
+---
+
+## 📂 Project Structure
+
+```text
 AFRINTEL
+├── comparison/
+├── CyberAttackAfrica/
+│   ├── 2024/
+│   ├── 2025/
+│   └── 2026/
+├── scripts/
+├── statistics/
+├── stix/
+├── visual-intelligence/
+├── workflows/
 ├── README.md
 ├── README_FR.md
-├── LICENSE
-│
-├── data/
-│   └── devman.md
-│
-├── reports/
-│   ├── 2025/
-│   │   ├── 01-january/
-│   │   ├── 02-february/
-│   │   ├── 03-march/
-│   │   └── ...
-│   └── 2026/
-│       ├── 01-january/
-│       └── 02-february/
-│
-├── stix/
-│   ├── 2025/
-│   │   ├── 01-january/
-│   │   ├── 02-february/
-│   │   └── 03-march/
-│   └── 2026/
-│
-├── statistics/
-│   └── 2026/
-│
-├── visual-intelligence/
-│   ├── ecosystem-map.md
-│   └── ecosystem-map_fr.md
-│
-└── comparison/
-    └── README.md
+└── LICENSE
 ```
+
+---
+
+## 🛡️ Strategic Goals
+
+AFRINTEL aims to:
+
+- improve visibility on cyber threats targeting Africa
+- document ransomware and extortion ecosystems
+- support SOC and CTI teams with actionable intelligence
+- facilitate OpenCTI/STIX enrichment workflows
+- promote Africa-focused cyber threat research
+- strengthen regional cyber threat awareness
 
 ---
 
@@ -136,11 +234,14 @@ MIT License - see [LICENSE](LICENSE)
 
 ---
 
-✍🏿 Auteur
+## ✍🏿 Author
 
-Adama ASSIONGBON
+**Adama ASSIONGBON**
 
-*Consultant SOC & Cyber Threat Intelligence [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)*
+Consultant SOC & Cyber Threat Intelligence
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
 ---
 
 *AFRINTEL - Open African CTI Monitoring Initiative*
