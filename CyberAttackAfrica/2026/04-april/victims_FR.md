@@ -404,7 +404,7 @@
 
 ### 21 Avril 2026
 #### 🇲🇦 Maroc - LNM6 (Laboratoire National Mohammed VI) [Fuite de données]
-- **Acteur / Groupe :** Anisanas2 / KingDataSeller
+- **Acteur / Groupe :** Anisanas2 
 - **Secteur :** Santé / Laboratoire médical
 - **Site web :** N/A
 - **Statut :** Fuite de base (~100 Go)
@@ -533,7 +533,7 @@
 - **Site web :** [tawjih.tn](https://tawjih.tn/)
 - **Date de la fuite :** 26 Avril 2026
 - **Statut :** Fuite de données / Base de données revendiquée
-- **Description :** Tawjih.tn est une plateforme tunisienne d’orientation académique destinée principalement aux étudiants et bacheliers souhaitant préparer leur parcours universitaire et professionnel. Une publication découverte le 05 Mai 2026 sur un forum cybercriminel revendique la fuite d’une base de données associée à la plateforme. L’acteur malveillant affirme disposer d’informations liées aux utilisateurs de la plateforme, potentiellement incluant des données personnelles et académiques. Bien que le contenu complet de la base ne soit pas entièrement exposé dans la publication analysée, les éléments visibles suggèrent une compromission potentielle d’une base backend utilisée pour la gestion des comptes utilisateurs et des services d’orientation académique.
+- **Description :** Tawjih.tn est une plateforme tunisienne d’orientation académique destinée principalement aux étudiants et bacheliers souhaitant préparer leur parcours universitaire et professionnel. L’acteur malveillant affirme disposer d’informations liées aux utilisateurs de la plateforme, potentiellement incluant des données personnelles et académiques. Bien que le contenu complet de la base ne soit pas entièrement exposé dans la publication analysée, les éléments visibles suggèrent une compromission potentielle d’une base backend utilisée pour la gestion des comptes utilisateurs et des services d’orientation académique.
 
 ---
 

@@ -283,7 +283,7 @@
 - **Description :** Kenya’s Integrated Financial Management Information System for national and county governments.
 
 #### 🇲🇦 Morocco - GET / GENERAL ELECTRIC TRADING (gemaroc.com) [Data Leak]
-- **Threat Actor / Group :**  bxxxx1 
+- **Threat Actor / Group :**  bxxxx1
 - **Sector :** Industrial Services / IT Infrastructure
 - **Website :** [gemaroc.com](https://gemaroc.com/)
 - **Status :** Data Leak / Redistributed Dump
@@ -402,7 +402,7 @@
 
 ### April 21, 2026
 #### 🇲🇦 Morocco - LNM6 (National Laboratory Mohammed VI) [Data Leak]
-- **Threat Actor / Group :** Anisanas2 / KingDataSeller
+- **Threat Actor / Group :** anisanas2 
 - **Sector :** Healthcare / Medical Laboratory
 - **Website :** N/A
 - **Status :** Database Leak (~100 GB)
@@ -531,7 +531,7 @@
 - **Website :** [tawjih.tn](https://tawjih.tn/)
 - **Leak Date :** April 26, 2026
 - **Status :** Data Leak / Claimed Database Dump
-- **Description :** Tawjih.tn is a Tunisian academic guidance platform mainly designed to help students and baccalaureate graduates plan their educational and career paths. A cybercriminal forum post discovered on May 05, 2026 claims the leak of a database associated with the platform. The threat actor alleges possession of user-related information potentially including personal and academic data. Although the full dataset is not publicly exposed in the analyzed publication, the visible elements suggest a potential compromise affecting a backend database used for user account management and academic guidance services.
+- **Description :** Tawjih.tn is a Tunisian academic guidance platform mainly designed to help students and baccalaureate graduates plan their educational and career paths. The threat actor alleges possession of user-related information potentially including personal and academic data. Although the full dataset is not publicly exposed in the analyzed publication, the visible elements suggest a potential compromise affecting a backend database used for user account management and academic guidance services.
 
 ---
 
@@ -800,7 +800,7 @@
 
 - **Threat Actor / Group :** dark07x
 - **Sector :** Sports / Sports Federation
-- **Website :** [lrfa.org.dz](https:// lrfa.org.dz)
+- **Website :** [lrfa.org.dz](https://lrfa.org.dz)
 - **Affected Platform :** Foot’Up
 - **Status :** Data Leak / Claimed Compromise
 - **Initial Publication Date :** January 16, 2026
