@@ -1,0 +1,3526 @@
+{
+  "type": "bundle",
+  "id": "bundle--dfe21d40-ab78-5ba3-8a80-6085ead1cf05",
+  "objects": [
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+      "created": "2017-01-20T00:00:00.000Z",
+      "definition_type": "tlp",
+      "name": "TLP:CLEAR",
+      "definition": {
+        "tlp": "white"
+      }
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3c33c498-7f5f-5335-8fa9-e34a4e158e98",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence initiative focused on ransomware, extortion and data leak monitoring across Africa.",
+      "labels": [
+        "AFRINTEL",
+        "cti",
+        "osint",
+        "africa",
+        "tlp-clear"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL GitHub Repository",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ],
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--78de8d89-dfda-5f0a-91f5-0d479b9fb5d8",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "TiAuto Investments",
+      "identity_class": "organization",
+      "description": "TiAuto Investments is a South African automotive retail and wholesale holding company headquartered in Midrand, operating brands focused on wheels, tyres, batteries and automotive fitment services.",
+      "sectors": [
+        "Manufacturing / Automotive retail"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.tiautoinvestments.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Manufacturing / Automotive retail",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "January 10, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--adb84c5e-74eb-53f7-9a24-e5583954e68e",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Tiger Wheel & Tyre (TWT)",
+      "identity_class": "organization",
+      "description": "Tiger Wheel & Tyre (TWT), part of TiAuto Investments, is a South African automotive retail and fitment network specializing in tyres, wheels, batteries and related vehicle services.",
+      "sectors": [
+        "Automotive retail / Fitment services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.twt.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Automotive retail / Fitment services",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "January 10, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f6b09b6d-67d3-50e8-8ce9-5013c83d1588",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Crowe South Africa",
+      "identity_class": "organization",
+      "description": "Crowe South Africa is a professional services firm providing audit, accounting, tax and advisory services to public and private sector clients.",
+      "sectors": [
+        "Audit / Accounting / Advisory"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.crowe.com.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Audit / Accounting / Advisory",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "January 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--fdd8e300-f9e3-593a-b5a6-e279c0de5964",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "ArpuPlus",
+      "identity_class": "organization",
+      "description": "ArpuPlus is an Egyptian technology company and A15 subsidiary providing mobile value-added services, digital platforms, payment and content distribution solutions.",
+      "sectors": [
+        "Technology / Mobile value-added services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:medusa"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.arpuplus.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Technology / Mobile value-added services",
+      "x_afrintel_threat_actor": "medusa",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "February 6, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--cffad267-05c3-587d-b22a-e26e34f4be78",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "SOPEM Tunisie",
+      "identity_class": "organization",
+      "description": "SOPEM Tunisie is a Tunisian manufacturing company operating in industrial production and related supply activities.",
+      "sectors": [
+        "Manufacturing"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tunisia",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.sopem.com.tn"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_country_en": "Tunisia",
+      "x_afrintel_sector": "Manufacturing",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "February 10, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--0d2c0a60-b14c-5e0f-bd1a-0f51b0df368d",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "The Aurum Institute",
+      "identity_class": "organization",
+      "description": "The Aurum Institute is a South African health research and public health organization involved in medical research, disease prevention and healthcare support programmes.",
+      "sectors": [
+        "Healthcare / Medical research"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.auruminstitute.org"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Healthcare / Medical research",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "February 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--2d259940-9b12-5880-90e9-98f7d7d32289",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Nouvelle Parfumerie Gandour",
+      "identity_class": "organization",
+      "description": "Nouvelle Parfumerie Gandour is an Ivorian consumer goods company associated with perfumery, cosmetics and personal care products.",
+      "sectors": [
+        "Consumer goods / Cosmetics"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Côte d'Ivoire",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.npgandour.com"
+        }
+      ],
+      "x_afrintel_country": "Côte d'Ivoire",
+      "x_afrintel_country_en": "Côte d'Ivoire",
+      "x_afrintel_sector": "Consumer goods / Cosmetics",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "February 27, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--86d539eb-62e4-5bd3-9301-d24625bc409a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "ERWAT",
+      "identity_class": "organization",
+      "description": "ERWAT is a South African water and wastewater management company providing wastewater treatment, water care and environmental services to public and private sector customers.",
+      "sectors": [
+        "Water and wastewater management"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:dragonforce"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.erwat.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Water and wastewater management",
+      "x_afrintel_threat_actor": "dragonforce",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "February 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7770a5c5-af37-5781-bf91-8bd2390aa492",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Go4Kora",
+      "identity_class": "organization",
+      "description": "Go4Kora is an Egypt-linked sports media and streaming platform focused on football news, match results and sports content distribution.",
+      "sectors": [
+        "Sports media / Streaming"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.go4kora.tv"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Sports media / Streaming",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 9, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8e458616-90b1-5ace-a064-1092280df6c7",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Government Pensions Administration Agency (GPAA)",
+      "identity_class": "organization",
+      "description": "The Government Pensions Administration Agency (GPAA) administers public-sector pension services in South Africa on behalf of the Government Employees Pension Fund and related public institutions.",
+      "sectors": [
+        "Government / Pension administration"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.gpaa.gov.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Government / Pension administration",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 11, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--1d7f37e3-48ce-5dfb-8350-193be0f27ae8",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "ATL Leasing",
+      "identity_class": "organization",
+      "description": "ATL Leasing is a Tunisian financial services company specializing in leasing and financing solutions for businesses and professionals.",
+      "sectors": [
+        "Financial services / Leasing"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tunisia",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.atl.com.tn"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_country_en": "Tunisia",
+      "x_afrintel_sector": "Financial services / Leasing",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 15, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--60481995-d58e-5b23-ab3e-2d05edc44107",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "El Ezaby Pharmacy",
+      "identity_class": "organization",
+      "description": "El Ezaby Pharmacy is one of Egypt’s major private pharmacy chains, operating a large pharmacy network and healthcare-related customer services.",
+      "sectors": [
+        "Pharmaceutical retail / Healthcare"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.elezabypharmacy.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Pharmaceutical retail / Healthcare",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 15, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--005b4de3-e762-564a-92fd-6e6c8a87fa93",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Agribank Namibia",
+      "identity_class": "organization",
+      "description": "Agribank Namibia is a state-owned agricultural finance institution supporting agricultural development through loans and financial services in Namibia.",
+      "sectors": [
+        "Banking / Agricultural finance"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Namibia",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.agribank.com.na"
+        }
+      ],
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_country_en": "Namibia",
+      "x_afrintel_sector": "Banking / Agricultural finance",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 16, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d98e9f8d-82b4-5ff7-b66d-d703ffc973d3",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Power Generation Engineering and Services Company (PGESCo)",
+      "identity_class": "organization",
+      "description": "PGESCo is an Egyptian engineering services company focused on power generation, energy infrastructure, project management and related technical services.",
+      "sectors": [
+        "Energy / Power engineering"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.pgesco.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Energy / Power engineering",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 22, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5e893d56-8afd-5636-aea8-5cb13192298b",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Nampak",
+      "identity_class": "organization",
+      "description": "Nampak is a South African packaging manufacturer and one of Africa’s major diversified packaging companies, producing packaging for consumer and industrial markets.",
+      "sectors": [
+        "Manufacturing / Packaging"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.nampak.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Manufacturing / Packaging",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "March 27, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c38404fb-81bb-5b65-b5bb-f68999ab2bcb",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Remitano",
+      "identity_class": "organization",
+      "description": "Remitano is a peer-to-peer cryptocurrency exchange platform offering escrow-based crypto buying, selling, storage and fiat wallet services.",
+      "sectors": [
+        "Cryptocurrency exchange / Fintech"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Seychelles",
+        "actor:incransom"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.remitano.com"
+        }
+      ],
+      "x_afrintel_country": "Seychelles",
+      "x_afrintel_country_en": "Seychelles",
+      "x_afrintel_sector": "Cryptocurrency exchange / Fintech",
+      "x_afrintel_threat_actor": "incransom",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "April 4, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ec261d73-f8a9-5f57-8752-74bd424efca7",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Caxton and CTP Publishers and Printers",
+      "identity_class": "organization",
+      "description": "Caxton and CTP Publishers and Printers is a South African media, publishing and printing group operating newspapers, magazines, commercial printing and related media assets.",
+      "sectors": [
+        "Media / Publishing / Printing"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.caxton.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Media / Publishing / Printing",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "April 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8f8034b0-faa0-52c1-9979-b499361c58a2",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "SM Emballage",
+      "identity_class": "organization",
+      "description": "SM Emballage is a Moroccan packaging manufacturer providing customized industrial packaging solutions, from design to controlled production and batch release.",
+      "sectors": [
+        "Manufacturing / Packaging"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Morocco",
+        "actor:spacebears"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.smemballage.com"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_en": "Morocco",
+      "x_afrintel_sector": "Manufacturing / Packaging",
+      "x_afrintel_threat_actor": "spacebears",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "April 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3472689b-fe8a-5c34-a744-84b5b194888f",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "ThinkAdam",
+      "identity_class": "organization",
+      "description": "ThinkAdam is a South African technology company providing advanced device-locking and device-management solutions for smartphone financing, rental, leasing and pay-as-you-go models in emerging markets.",
+      "sectors": [
+        "Technology / Device management"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:spacebears"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.thinkadam.co"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Technology / Device management",
+      "x_afrintel_threat_actor": "spacebears",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "April 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--88fef71b-835e-5b43-971a-8e24b8db566a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Mellitah Oil & Gas / ENI Gas Libya",
+      "identity_class": "organization",
+      "description": "Mellitah Oil & Gas is a Libyan oil and gas company associated with upstream and energy operations, including activities linked to ENI’s Libyan energy footprint.",
+      "sectors": [
+        "Energy / Oil and gas"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Libya",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.mellitahog.ly"
+        }
+      ],
+      "x_afrintel_country": "Libya",
+      "x_afrintel_country_en": "Libya",
+      "x_afrintel_sector": "Energy / Oil and gas",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "April 30, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4ad55fff-7229-5fe8-8b0e-54bd20a84ff0",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Nestoil",
+      "identity_class": "organization",
+      "description": "Nestoil is a Nigerian oil and gas engineering, procurement, construction and energy services group operating across infrastructure and upstream support activities.",
+      "sectors": [
+        "Oil and gas / Engineering / Construction"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Nigeria",
+        "actor:blacksuit"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.nestoilgroup.com"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_en": "Nigeria",
+      "x_afrintel_sector": "Oil and gas / Engineering / Construction",
+      "x_afrintel_threat_actor": "blacksuit",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 6, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5727dbd2-99b5-5d3b-9248-45cacf64d4d5",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "El Araby Group",
+      "identity_class": "organization",
+      "description": "El Araby Group is a major Egyptian industrial and commercial group specializing in electronics, home appliances, manufacturing and distribution of technology products.",
+      "sectors": [
+        "Electronics manufacturing / Retail distribution"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.elarabygroup.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Electronics manufacturing / Retail distribution",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 6, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--43c75f9d-4513-5a69-bb03-144a8bde081d",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Lenmed",
+      "identity_class": "organization",
+      "description": "Lenmed is a healthcare group operating hospitals and medical services in Southern Africa, including private healthcare facilities and specialist services.",
+      "sectors": [
+        "Healthcare services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.lenmed.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Healthcare services",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 7, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--47fe9a2d-f15c-52e7-82fb-89dcdd3e2c89",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Kamo Jou Trading",
+      "identity_class": "organization",
+      "description": "Kamo Jou Trading is listed in the dataset as a South African financial-sector victim. The available source data provides limited public context beyond the domain and claimed ransomware listing.",
+      "sectors": [
+        "Financial services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.kamojou.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Financial services",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 7, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6c18890f-742a-53ba-ab2d-75ae9355d5c0",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Environmental Investment Fund of Namibia (EIF)",
+      "identity_class": "organization",
+      "description": "The Environmental Investment Fund of Namibia (EIF) is a public financial institution supporting environmental, climate and sustainable development projects in Namibia.",
+      "sectors": [
+        "Public finance / Environmental fund"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Namibia",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.eif.org.na"
+        }
+      ],
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_country_en": "Namibia",
+      "x_afrintel_sector": "Public finance / Environmental fund",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 9, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--2411093d-f8fb-5a15-8bf6-13ceb31d4977",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Public Treasury of Côte d'Ivoire (DGTCP)",
+      "identity_class": "organization",
+      "description": "The Public Treasury of Côte d'Ivoire (DGTCP) is the sovereign institution responsible for public finance management, state accounting and oversight of national treasury operations.",
+      "sectors": [
+        "Government / Public finance"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Côte d'Ivoire",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.tresor.gouv.ci"
+        }
+      ],
+      "x_afrintel_country": "Côte d'Ivoire",
+      "x_afrintel_country_en": "Côte d'Ivoire",
+      "x_afrintel_sector": "Government / Public finance",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f3c1807f-af01-5f8e-bd3e-3d9aa5583a60",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Egyptian Sudanese",
+      "identity_class": "organization",
+      "description": "Egyptian Sudanese is listed as an Egypt-based service-sector organization in the ransomware dataset; the source data provides limited business context beyond the domain and claim.",
+      "sectors": [
+        "Services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:arcusmedia"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.egyptiansudanese.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Services",
+      "x_afrintel_threat_actor": "arcusmedia",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 16, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6c93f8db-5f6a-53e3-80ba-9deac929fdc6",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "SYSROAD",
+      "identity_class": "organization",
+      "description": "SYSROAD is a Senegal-based IT and telecom solutions integrator supporting organizations with digital infrastructure, technology integration and business connectivity services.",
+      "sectors": [
+        "IT consulting / Telecom integration"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Senegal",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.sysroad.com"
+        }
+      ],
+      "x_afrintel_country": "Senegal",
+      "x_afrintel_country_en": "Senegal",
+      "x_afrintel_sector": "IT consulting / Telecom integration",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "May 25, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8b3b5f41-8bc8-59b5-9768-2fe4f369bc81",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Botselo Mills",
+      "identity_class": "organization",
+      "description": "Botselo Mills is a South African agribusiness and milling company operating in food production and agricultural value-chain activities.",
+      "sectors": [
+        "Agriculture / Agribusiness"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:arcusmedia"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.botselo.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Agriculture / Agribusiness",
+      "x_afrintel_threat_actor": "arcusmedia",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "June 4, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d5a2f9cd-0ef0-54f1-bbcd-83419ab3ab2b",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "BUROTEC S.A.",
+      "identity_class": "organization",
+      "description": "BUROTEC S.A. is a Republic of Congo-based company listed in the dataset under business services, with available source references pointing to the Brazzaville area.",
+      "sectors": [
+        "Business services / Office solutions"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Congo",
+        "actor:eldorado"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.burotec.biz"
+        }
+      ],
+      "x_afrintel_country": "Congo",
+      "x_afrintel_country_en": "Congo",
+      "x_afrintel_sector": "Business services / Office solutions",
+      "x_afrintel_threat_actor": "eldorado",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "June 6, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--750ab870-e00e-5174-933e-91493131b470",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Glyn Marais",
+      "identity_class": "organization",
+      "description": "Glyn Marais is a South African commercial law firm focused on corporate law, mergers and acquisitions, banking law and legal advisory services for businesses.",
+      "sectors": [
+        "Legal services / Law firm"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:cactus"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.glynmarais.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Legal services / Law firm",
+      "x_afrintel_threat_actor": "cactus",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "June 23, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--bda48c41-619b-567c-a91c-51e5ac033c49",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Maxcess Logistics",
+      "identity_class": "organization",
+      "description": "Maxcess Logistics is a Tunisian freight forwarding and logistics company providing air freight, sea freight, customs clearance and supply-chain services.",
+      "sectors": [
+        "Logistics / Freight forwarding"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tunisia",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.maxcess-logistics.com"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_country_en": "Tunisia",
+      "x_afrintel_sector": "Logistics / Freight forwarding",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 1, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--bdb187ca-0836-5abd-b996-9e4d73d7cda2",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "National Health Laboratory Service (NHLS)",
+      "identity_class": "organization",
+      "description": "The National Health Laboratory Service (NHLS) is South Africa’s major diagnostic pathology service, supporting public healthcare through laboratory testing and related medical services.",
+      "sectors": [
+        "Healthcare / Diagnostic pathology"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:blacksuit"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.nhls.ac.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Healthcare / Diagnostic pathology",
+      "x_afrintel_threat_actor": "blacksuit",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 5, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--29c9f368-21a8-57c5-b560-710302df6ca7",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Kenya Urban Roads Authority (KURA)",
+      "identity_class": "organization",
+      "description": "The Kenya Urban Roads Authority (KURA) is a Kenyan government agency responsible for developing, maintaining and managing urban road infrastructure.",
+      "sectors": [
+        "Road transport / Public infrastructure"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Kenya",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.kura.go.ke"
+        }
+      ],
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_country_en": "Kenya",
+      "x_afrintel_sector": "Road transport / Public infrastructure",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d5ad1c29-59bd-52ef-af65-12d9428c0c06",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "ZB Financial Holdings",
+      "identity_class": "organization",
+      "description": "ZB Financial Holdings is a Zimbabwean financial services group offering banking, insurance, investment and related financial products.",
+      "sectors": [
+        "Financial services / Banking"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Zimbabwe",
+        "actor:madliberator"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.zb.co.zw"
+        }
+      ],
+      "x_afrintel_country": "Zimbabwe",
+      "x_afrintel_country_en": "Zimbabwe",
+      "x_afrintel_sector": "Financial services / Banking",
+      "x_afrintel_threat_actor": "madliberator",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 17, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e0a26b43-569d-5170-be68-ae1cecb451cb",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "South African Cities Network",
+      "identity_class": "organization",
+      "description": "The South African Cities Network is a knowledge-sharing and urban governance platform focused on South African cities, municipal development and public policy collaboration.",
+      "sectors": [
+        "Urban governance / Public policy"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:madliberator"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.sacities.net"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Urban governance / Public policy",
+      "x_afrintel_threat_actor": "madliberator",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 17, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--1f8e85c8-1301-544a-bf3f-d6d697227dae",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Assih",
+      "identity_class": "organization",
+      "description": "Alameda Healthcare is a corporate entity operating in the healthcare field aiming to lead the private health care sectors in Egypt, MENA Region, East Europe, and East Asia into new frontiers building on Alameda’s vast experience and reputation",
+      "sectors": [
+        "Services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.assih.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Services",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 17, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--bd8e1a55-379f-5908-9f17-8358eb78197e",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Sibanye-Stillwater",
+      "identity_class": "organization",
+      "description": "Sibanye-Stillwater is a South African mining and precious metals group operating platinum group metals, gold and other mining assets.",
+      "sectors": [
+        "Mining / Heavy industry"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhouse"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.sibanyestillwater.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Mining / Heavy industry",
+      "x_afrintel_threat_actor": "ransomhouse",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "July 22, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c38404fb-81bb-5b65-b5bb-f68999ab2bcb",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Remitano",
+      "identity_class": "organization",
+      "description": "Remitano is a peer-to-peer cryptocurrency exchange platform offering escrow-based crypto buying, selling, storage and fiat wallet services.",
+      "sectors": [
+        "Cryptocurrency exchange / Fintech"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Seychelles",
+        "actor:meow"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.remitano.com"
+        }
+      ],
+      "x_afrintel_country": "Seychelles",
+      "x_afrintel_country_en": "Seychelles",
+      "x_afrintel_sector": "Cryptocurrency exchange / Fintech",
+      "x_afrintel_threat_actor": "meow",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 1, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b5a38ef2-e984-57c8-bdc1-167f212c9e5a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Acdcexpress",
+      "identity_class": "organization",
+      "description": "ACDC Express is a South African Electrical Retail and Wholesale Franchise, specializing in Everything Electrical.",
+      "sectors": [
+        "Retail (distribution)"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.acdcexpress.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Retail (distribution)",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 11, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--663167d0-0ab2-543b-8e90-2a43ccd1b059",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "NetOne",
+      "identity_class": "organization",
+      "description": "NetOne is a Zimbabwean mobile network operator providing telecommunications infrastructure, voice, data and broadband services.",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Zimbabwe",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.netone.co.zw"
+        }
+      ],
+      "x_afrintel_country": "Zimbabwe",
+      "x_afrintel_country_en": "Zimbabwe",
+      "x_afrintel_sector": "Telecommunications",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--43c75f9d-4513-5a69-bb03-144a8bde081d",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Lenmed",
+      "identity_class": "organization",
+      "description": "Lenmed is a healthcare group operating hospitals and medical services in Southern Africa, including private healthcare facilities and specialist services.",
+      "sectors": [
+        "Healthcare services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:darkvault"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.lenmed.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Healthcare services",
+      "x_afrintel_threat_actor": "darkvault",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--64d147ff-625f-5a49-9291-128d5cd878ff",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Gpf.Org.Za",
+      "identity_class": "organization",
+      "description": "The Gauteng Partnership Fund, an agency of the Gauteng Department of Human Settlements, combines resources from the private and public sectors to speed up the development of affordable rental housing near amenities and economic opportunities. Its aim is to enhance the socioeconomic state of Gauteng communities.",
+      "sectors": [
+        "Finance"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:darkvault"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.gpf.org.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Finance",
+      "x_afrintel_threat_actor": "darkvault",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--0c36e05d-8c39-5896-8e27-a78161552f7a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Netconfig",
+      "identity_class": "organization",
+      "description": "Netconfig is a South African managed services provider delivering network infrastructure, connectivity and telecommunications solutions for businesses.",
+      "sectors": [
+        "Managed services / Telecommunications"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.netconfig.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Managed services / Telecommunications",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 17, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7cd547a1-62d4-5e94-a4e6-17640725f87c",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Codival",
+      "identity_class": "organization",
+      "description": "Codival is an Ivorian company associated with distribution and cash-handling/logistics activities, operating in a business services context.",
+      "sectors": [
+        "Distribution / Cash logistics"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Côte d'Ivoire",
+        "actor:spacebears"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.codival.ci"
+        }
+      ],
+      "x_afrintel_country": "Côte d'Ivoire",
+      "x_afrintel_country_en": "Côte d'Ivoire",
+      "x_afrintel_sector": "Distribution / Cash logistics",
+      "x_afrintel_threat_actor": "spacebears",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 21, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4eaf6bf4-401e-5a60-aa24-b02b45343ba2",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Don’t Waste Group",
+      "identity_class": "organization",
+      "description": "Don’t Waste Group is a South African environmental services company focused on waste management, recycling, resource monitoring and sustainability solutions.",
+      "sectors": [
+        "Environmental services / Waste management"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:incransom"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.dontwastegroup.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Environmental services / Waste management",
+      "x_afrintel_threat_actor": "incransom",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 22, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--048de6ef-aef4-57c9-bfc1-1073c703a826",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "InstaDriver",
+      "identity_class": "organization",
+      "description": "InstaDriver is a Kenyan platform specialized in recruiting and connecting professional drivers with employers in transport, logistics and mobility services.",
+      "sectors": [
+        "Logistics / Driver recruitment platform"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Kenya",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.instadriver.co"
+        }
+      ],
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_country_en": "Kenya",
+      "x_afrintel_sector": "Logistics / Driver recruitment platform",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 22, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--41193d6c-cf06-5be8-a960-7bf411104078",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Ingotbrokers",
+      "identity_class": "organization",
+      "description": "INGOT Brokers is a premium multi-asset brokerage firm aimed at making financial markets easily available and accessible to traders of all kinds and experience levels. The company is regulated by the Financial Services Authority Mahe, Seychelles., providing a trustworthy and outstanding trading experience. Our...",
+      "sectors": [
+        "Financial organizations"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Seychelles",
+        "actor:darkvault"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.ingotbrokers.com"
+        }
+      ],
+      "x_afrintel_country": "Seychelles",
+      "x_afrintel_country_en": "Seychelles",
+      "x_afrintel_sector": "Financial organizations",
+      "x_afrintel_threat_actor": "darkvault",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 24, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b54a2de1-0993-52b5-802d-a17f862ebf07",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Onedayonly",
+      "identity_class": "organization",
+      "description": "OneDayOnly is an online shopping platform offering a variety of deals on consumer products, including home and garden items, apparel, electronics, and more. The platform features limited-time promotions, clearance sales, and everyday essentials, appealing to a wide range of customers looking for discounts and...",
+      "sectors": [
+        "Shops"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.onedayonly.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Shops",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 26, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--77549004-47ba-55df-a114-9a850a5c1594",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Djibouti Ports and Free Zones Authority (DPFZA)",
+      "identity_class": "organization",
+      "description": "The Djibouti Ports and Free Zones Authority (DPFZA) is the public authority responsible for managing Djibouti’s ports, free zones and strategic logistics infrastructure.",
+      "sectors": [
+        "Government / Ports and free zones"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Djibouti",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.dpfza.gov.dj"
+        }
+      ],
+      "x_afrintel_country": "Djibouti",
+      "x_afrintel_country_en": "Djibouti",
+      "x_afrintel_sector": "Government / Ports and free zones",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--efd450aa-6aa2-5323-8b4f-c096305bcf5c",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Success Microfinance Bank",
+      "identity_class": "organization",
+      "description": "Success Microfinance Bank is a Zimbabwean microfinance banking institution providing financial services to individuals and small businesses.",
+      "sectors": [
+        "Banking / Microfinance"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Zimbabwe",
+        "actor:meow"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.successbank.co.zw"
+        }
+      ],
+      "x_afrintel_country": "Zimbabwe",
+      "x_afrintel_country_en": "Zimbabwe",
+      "x_afrintel_sector": "Banking / Microfinance",
+      "x_afrintel_threat_actor": "meow",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e22ad0a7-f62c-5de8-991e-fff364b19535",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Ghanare",
+      "identity_class": "organization",
+      "description": "Ghanare.com is an online platform dedicated to providing comprehensive real estate services in Ghana. It connects buyers, sellers, and renters with property listings, including residential, commercial, and land options. The platform aims to simplify the property search process, offering detailed property...",
+      "sectors": [
+        "Technologies"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Ghana",
+        "actor:BrainCipher"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.ghanare.com"
+        }
+      ],
+      "x_afrintel_country": "Ghana",
+      "x_afrintel_country_en": "Ghana",
+      "x_afrintel_sector": "Technologies",
+      "x_afrintel_threat_actor": "BrainCipher",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "August 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3c2d493d-e917-5478-99e2-6bf89f3e2581",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "SESAM Informatics",
+      "identity_class": "organization",
+      "description": "SESAM Informatics is a Senegal-based technology and software services company operating in digital solutions and IT development.",
+      "sectors": [
+        "Technology / Software development"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Senegal",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.sesam-informatics.com"
+        }
+      ],
+      "x_afrintel_country": "Senegal",
+      "x_afrintel_country_en": "Senegal",
+      "x_afrintel_sector": "Technology / Software development",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "September 6, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--0c14b4e1-c4d8-5909-96a4-7864512489b5",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "CNPS Cameroon",
+      "identity_class": "organization",
+      "description": "The Caisse Nationale de Prévoyance Sociale (CNPS) of Cameroon is the public body responsible for social security management and social benefits for workers.",
+      "sectors": [
+        "Government / Social security"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Cameroon",
+        "actor:spacebears"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.cnps.cm"
+        }
+      ],
+      "x_afrintel_country": "Cameroon",
+      "x_afrintel_country_en": "Cameroon",
+      "x_afrintel_sector": "Government / Social security",
+      "x_afrintel_threat_actor": "spacebears",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "September 12, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--dab527bb-0a1b-560f-9be9-15aac1a19b86",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Emtel",
+      "identity_class": "organization",
+      "description": "Emtel is a Mauritian mobile network operator providing telecommunications infrastructure, voice, data and broadband services.",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Mauritius",
+        "actor:arcusmedia"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.emtel.com"
+        }
+      ],
+      "x_afrintel_country": "Mauritius",
+      "x_afrintel_country_en": "Mauritius",
+      "x_afrintel_sector": "Telecommunications",
+      "x_afrintel_threat_actor": "arcusmedia",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "September 15, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c04a00fe-2ca7-539f-95eb-25c077980e3a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Excelplast Tunisie",
+      "identity_class": "organization",
+      "description": "Excelplast Tunisie is a Tunisian plastics manufacturing company involved in plastic production, raw material transformation and packaging activities.",
+      "sectors": [
+        "Manufacturing / Plastics"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tunisia",
+        "actor:orca"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.excelplastunisie.com"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_country_en": "Tunisia",
+      "x_afrintel_sector": "Manufacturing / Plastics",
+      "x_afrintel_threat_actor": "orca",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "September 16, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--daeb06f8-1fd7-5680-8ef9-7d1b14e55ce6",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Enterpriseoutsourcing",
+      "identity_class": "organization",
+      "description": "Enterprise Outsourcing is a technology services company offering a range of solutions including IT consulting, cloud services, cybersecurity, and digital transformation. They focus on enhancing business operations through innovative technology, aiming to improve efficiency and security. Their services cater to...",
+      "sectors": [
+        "Information Technologies Consulting"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.enterpriseoutsourcing.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Information Technologies Consulting",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 4, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--2e6a1f25-5e08-548c-9110-906a73d41199",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Winwinza",
+      "identity_class": "organization",
+      "description": "I'm sorry, but I couldn't find any specific information about \"winwinza.com.\" It's possible that it's a small or relatively unknown company, or it might not exist at all in the current databases or public records available to me. If you have more context or details about the company, I might be able to help further.",
+      "sectors": [
+        "Schools"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.winwinza.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Schools",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 5, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3a9c1916-440e-5005-bbca-d56e6e90eae5",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Yassir",
+      "identity_class": "organization",
+      "description": "Yassir is an Algerian super-app providing ride-hailing, delivery, grocery and digital service features across Algeria and regional markets.",
+      "sectors": [
+        "Technology / Mobility and delivery platform"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Algeria",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.yassir.com"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_country_en": "Algeria",
+      "x_afrintel_sector": "Technology / Mobility and delivery platform",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 7, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--850ec03f-ed50-56b8-a8cf-29a74d1f2655",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "GMG Mining Supplies",
+      "identity_class": "organization",
+      "description": "GMG Mining Machines and Supplies is a South African supplier and rebuilder of trackless mobile machinery, mining equipment, spare parts and related mining services.",
+      "sectors": [
+        "Mining / Industrial equipment"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:sarcoma"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.gmgminingsupplies.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Mining / Industrial equipment",
+      "x_afrintel_threat_actor": "sarcoma",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 9, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f6f77d0c-6e6d-5ba4-85a5-e0082c6ca01f",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "National Edging",
+      "identity_class": "organization",
+      "description": "National Edging is a South African supplier of edgebanding, adhesives, furniture finishing materials and industrial components for kitchen, furniture and shop-fitting industries.",
+      "sectors": [
+        "Industrial supplies / Furniture materials"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:sarcoma"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.nationaledging.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Industrial supplies / Furniture materials",
+      "x_afrintel_threat_actor": "sarcoma",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 9, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--910b8e61-e852-5ca3-a48c-464e069964ae",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Volta River Authority (VRA)",
+      "identity_class": "organization",
+      "description": "The Volta River Authority (VRA) is Ghana’s main public power generation organization, responsible for hydroelectric, thermal and strategic energy infrastructure.",
+      "sectors": [
+        "Energy / Power generation"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Ghana",
+        "actor:blacksuit"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.vra.com"
+        }
+      ],
+      "x_afrintel_country": "Ghana",
+      "x_afrintel_country_en": "Ghana",
+      "x_afrintel_sector": "Energy / Power generation",
+      "x_afrintel_threat_actor": "blacksuit",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 11, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8ecf68a2-aee7-5ad4-b386-9651fa8747d1",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Ministry of Interior Libya",
+      "identity_class": "organization",
+      "description": "The Ministry of Interior of Libya is the government institution responsible for internal security, police forces and security-related administrative affairs.",
+      "sectors": [
+        "Government / Interior ministry"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Libya",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.moi.gov.ly"
+        }
+      ],
+      "x_afrintel_country": "Libya",
+      "x_afrintel_country_en": "Libya",
+      "x_afrintel_sector": "Government / Interior ministry",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 16, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--90ffe8ac-2c10-5f18-b1b4-a89ba8b67513",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Matouk Bassiouny",
+      "identity_class": "organization",
+      "description": "Matouk Bassiouny is a prominent Egyptian law firm headquartered in Cairo, known for corporate law, arbitration, dispute resolution and legal advisory services.",
+      "sectors": [
+        "Legal services / Law firm"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:raworld"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.matoukbassiouny.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Legal services / Law firm",
+      "x_afrintel_threat_actor": "raworld",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "October 25, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8c2c7d26-3da9-52fc-a631-d6d183f98de9",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Sumitomo Rubber South Africa",
+      "identity_class": "organization",
+      "description": "Sumitomo Rubber South Africa is a tyre manufacturing company operating in South Africa and linked to the Sumitomo Rubber Industries group.",
+      "sectors": [
+        "Manufacturing / Tyres"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.srigroup.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Manufacturing / Tyres",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 2, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--95de12e7-e6ff-5d80-8e7d-cf17e0583fc6",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "College of Business Education (CBE)",
+      "identity_class": "organization",
+      "description": "The College of Business Education (CBE) is a Tanzanian higher education institution providing business, management, accounting and related professional education.",
+      "sectors": [
+        "Education / Higher education"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tanzania",
+        "actor:hellcat"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.cbe.ac.tz"
+        }
+      ],
+      "x_afrintel_country": "Tanzania",
+      "x_afrintel_country_en": "Tanzania",
+      "x_afrintel_sector": "Education / Higher education",
+      "x_afrintel_threat_actor": "hellcat",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 4, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--68aed263-1f11-5a1d-9c2b-37040bfb9f6a",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Kenana Sugar Company",
+      "identity_class": "organization",
+      "description": "Kenana Sugar Company is a major Sudanese agro-industrial company focused on sugarcane cultivation, sugar production and related agricultural and industrial operations.",
+      "sectors": [
+        "Agriculture / Sugar industry"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Sudan",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.kenanasugarcompany.com"
+        }
+      ],
+      "x_afrintel_country": "Sudan",
+      "x_afrintel_country_en": "Sudan",
+      "x_afrintel_sector": "Agriculture / Sugar industry",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 4, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--a9694409-0fe4-5011-ac0c-31de1ac27bc9",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Environmental Design International",
+      "identity_class": "organization",
+      "description": "Environmental Design International is listed as a Nigeria-related victim in the dataset under engineering consulting; the ransomware post referenced engineering documents, financial data and personal documents.",
+      "sectors": [
+        "Engineering consulting"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Nigeria",
+        "actor:akira"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.environmentaldesigninternational.com"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_en": "Nigeria",
+      "x_afrintel_sector": "Engineering consulting",
+      "x_afrintel_threat_actor": "akira",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 14, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ae76a89f-e12d-5937-8785-44db66e8b8e6",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Egyptian Tax Authority (ETA)",
+      "identity_class": "organization",
+      "description": "The Egyptian Tax Authority (ETA) is Egypt’s public tax administration body responsible for tax collection, compliance, taxpayer services and fiscal administration.",
+      "sectors": [
+        "Government / Tax administration"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:moneymessage"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.eta.gov.eg"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Government / Tax administration",
+      "x_afrintel_threat_actor": "moneymessage",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 17, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--efbaf513-1816-58b5-81e7-b5696eadb253",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "EFI Sales",
+      "identity_class": "organization",
+      "description": "EFI Sales is a Kenya-based company listed in the dataset under retail distribution, associated with industrial equipment and service distribution activities.",
+      "sectors": [
+        "Retail distribution / Industrial equipment"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Kenya",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.efisales.co.ke"
+        }
+      ],
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_country_en": "Kenya",
+      "x_afrintel_sector": "Retail distribution / Industrial equipment",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 24, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--cc979aa5-0af2-58f9-9fe8-477c7dd51baf",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Habesha Cement",
+      "identity_class": "organization",
+      "description": "Habesha Cement is an Ethiopian cement manufacturer incorporated in 2008 and focused on cement production and construction materials for infrastructure and real-estate markets.",
+      "sectors": [
+        "Heavy industry / Construction materials"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Ethiopia",
+        "actor:lockbit3"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.habeshacement.com"
+        }
+      ],
+      "x_afrintel_country": "Ethiopia",
+      "x_afrintel_country_en": "Ethiopia",
+      "x_afrintel_sector": "Heavy industry / Construction materials",
+      "x_afrintel_threat_actor": "lockbit3",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 27, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--20f182c2-e44c-5d51-8499-ecd1ad2b7038",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Contrack Facilities Management",
+      "identity_class": "organization",
+      "description": "Contrack Facilities Management is an Egypt-based facilities management company providing building maintenance, operations and support services for properties and business sites.",
+      "sectors": [
+        "Business services / Facilities management"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:raworld"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.contrackfm.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Business services / Facilities management",
+      "x_afrintel_threat_actor": "raworld",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 27, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9ff83322-b8df-5c76-b67b-f9d88cb05cf3",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Briatek",
+      "identity_class": "organization",
+      "description": "Briatek is a Nigerian technology company focused on IT consulting, software integration and digital solutions for organizations.",
+      "sectors": [
+        "IT consulting / Software integration"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Nigeria",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.briatek.com.ng"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_en": "Nigeria",
+      "x_afrintel_sector": "IT consulting / Software integration",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--4cf27a68-0128-5887-b5c6-645501a980ec",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Chanas Assurances S.A. (Chanasassurances)",
+      "identity_class": "organization",
+      "description": "Chanas Assurances S.A. (Chanasassurances) is listed in the 2024 Africa ransomware dataset as an organization operating in the insurance services sector in Cameroon. Available source context is limited beyond the domain and public claim.",
+      "sectors": [
+        "Insurance services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Cameroon",
+        "actor:fog"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.chanasassurances.com"
+        }
+      ],
+      "x_afrintel_country": "Cameroon",
+      "x_afrintel_country_en": "Cameroon",
+      "x_afrintel_sector": "Insurance services",
+      "x_afrintel_threat_actor": "fog",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--2af9445b-cf55-56f8-bd4a-0eb1129f10d2",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Namforce Life Insurance",
+      "identity_class": "organization",
+      "description": "Namforce Life Insurance is a Namibian life insurance company providing life cover, financial protection and risk-management products to individuals and organizations.",
+      "sectors": [
+        "Life insurance / Financial services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Namibia",
+        "actor:spacebears"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.namforce.com.na"
+        }
+      ],
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_country_en": "Namibia",
+      "x_afrintel_sector": "Life insurance / Financial services",
+      "x_afrintel_threat_actor": "spacebears",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--20a7452c-4ae9-5b2d-8224-9fcbd8987d05",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "PPOTTS",
+      "identity_class": "organization",
+      "description": "PPOTTS is listed as a South Africa-based technology victim in the dataset. Public context is limited, but the domain is associated with software, digital services or business technology solutions.",
+      "sectors": [
+        "Technology / Digital services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.ppotts.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Technology / Digital services",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "November 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3108c0c-2c2a-5ef9-b22a-e6be767ba5a8",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "DAL Group",
+      "identity_class": "organization",
+      "description": "DAL Group is Sudan’s largest private conglomerate, operating across agribusiness, food production, beverages, industry, distribution and related sectors.",
+      "sectors": [
+        "Agribusiness / Food and beverages"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Sudan",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.dalgroup.com"
+        }
+      ],
+      "x_afrintel_country": "Sudan",
+      "x_afrintel_country_en": "Sudan",
+      "x_afrintel_sector": "Agribusiness / Food and beverages",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 3, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--dac3da60-3b4d-52dc-abbd-ba8f7a7c42e1",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Bankily",
+      "identity_class": "organization",
+      "description": "Bankily is a Mauritanian mobile banking service operated by Banque Populaire de Mauritanie (BPM), providing digital financial and mobile payment services.",
+      "sectors": [
+        "Mobile banking / Financial services"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Mauritania",
+        "actor:apt73/bashe"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.bankily.mr"
+        }
+      ],
+      "x_afrintel_country": "Mauritania",
+      "x_afrintel_country_en": "Mauritania",
+      "x_afrintel_sector": "Mobile banking / Financial services",
+      "x_afrintel_threat_actor": "apt73/bashe",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 9, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--297a708b-b8a1-5d0c-85af-8fd1a098d59f",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Telecom Namibia",
+      "identity_class": "organization",
+      "description": "Telecom Namibia is Namibia’s national telecommunications operator, providing voice, broadband, data connectivity and infrastructure services.",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Namibia",
+        "actor:hunters"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.telecom.na"
+        }
+      ],
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_country_en": "Namibia",
+      "x_afrintel_sector": "Telecommunications",
+      "x_afrintel_threat_actor": "hunters",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 10, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--018c29e8-39a9-59b1-a249-379f8e1a19ac",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Kazyon",
+      "identity_class": "organization",
+      "description": "Kazyon is a major Egyptian discount supermarket chain offering grocery, household and consumer products through a large retail store network.",
+      "sectors": [
+        "Retail / Discount supermarket"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Egypt",
+        "actor:moneymessage"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.kazyon.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_en": "Egypt",
+      "x_afrintel_sector": "Retail / Discount supermarket",
+      "x_afrintel_threat_actor": "moneymessage",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 13, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7b7501b1-d4f8-5860-a13f-7bd062e1e776",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Tumeny Payments Limited",
+      "identity_class": "organization",
+      "description": "Tumeny Payments Limited is a Zambian fintech company providing digital payment, money transfer and payment infrastructure services.",
+      "sectors": [
+        "Fintech / Payment infrastructure"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Zambia",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.tumenypay.com"
+        }
+      ],
+      "x_afrintel_country": "Zambia",
+      "x_afrintel_country_en": "Zambia",
+      "x_afrintel_sector": "Fintech / Payment infrastructure",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 15, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ac217b96-6ce2-5010-b3e2-1771ef5d792f",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Water Utilities Corporation (WUC)",
+      "identity_class": "organization",
+      "description": "Water Utilities Corporation (WUC) is Botswana’s public water utility responsible for water supply, distribution and water services management.",
+      "sectors": [
+        "Water supply / Public utility"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Botswana",
+        "actor:killsec"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.wuc.bw"
+        }
+      ],
+      "x_afrintel_country": "Botswana",
+      "x_afrintel_country_en": "Botswana",
+      "x_afrintel_sector": "Water supply / Public utility",
+      "x_afrintel_threat_actor": "killsec",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 20, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--06a13601-93d9-5bbb-94f7-04869f272b39",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Groupe SETCAR",
+      "identity_class": "organization",
+      "description": "Groupe SETCAR is a Tunisian industrial group specializing in buses, coaches, industrial vehicles, automotive activities and related transport solutions.",
+      "sectors": [
+        "Automotive / Industrial vehicles"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tunisia",
+        "actor:ransomhub"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.groupe-setcar.com.tn"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_country_en": "Tunisia",
+      "x_afrintel_sector": "Automotive / Industrial vehicles",
+      "x_afrintel_threat_actor": "ransomhub",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 21, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6d6944e4-588d-535d-90b9-c46f395a937d",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Baker Tilly Morrison Murray",
+      "identity_class": "organization",
+      "description": "Baker Tilly Morrison Murray is a South African professional services firm providing accounting, audit, tax and advisory services.",
+      "sectors": [
+        "Audit / Accounting / Consulting"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:sarcoma"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.bakertillymm.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Audit / Accounting / Consulting",
+      "x_afrintel_threat_actor": "sarcoma",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 24, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ac10cab3-440a-5183-8e4d-ae028ad09f4f",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "Cell C",
+      "identity_class": "organization",
+      "description": "Cell C is a South African mobile network operator providing voice, data, messaging and mobile telecommunications services.",
+      "sectors": [
+        "Telecommunications"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:South Africa",
+        "actor:ransomhouse"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.cellc.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_en": "South Africa",
+      "x_afrintel_sector": "Telecommunications",
+      "x_afrintel_threat_actor": "ransomhouse",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 28, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ffcd2c83-d319-5643-af8f-ab399431729d",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "name": "WOSAC",
+      "identity_class": "organization",
+      "description": "WOSAC is a Tanzania-based maritime and shipping agency company providing freight, shipping and related logistics services.",
+      "sectors": [
+        "Maritime transport / Shipping agency"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "victim",
+        "africa",
+        "2024",
+        "ransomware-claim",
+        "data-leak",
+        "tlp-clear",
+        "country:Tanzania",
+        "actor:arcusmedia"
+      ],
+      "external_references": [
+        {
+          "source_name": "Victim website",
+          "url": "https://www.wosac.co.tz"
+        }
+      ],
+      "x_afrintel_country": "Tanzania",
+      "x_afrintel_country_en": "Tanzania",
+      "x_afrintel_sector": "Maritime transport / Shipping agency",
+      "x_afrintel_threat_actor": "arcusmedia",
+      "x_afrintel_status": "Claimed & Data Leak",
+      "x_afrintel_date": "December 29, 2024",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--dfe21d40-ab78-5ba3-8a80-6085ead1cf05",
+      "created": "2026-05-18T00:00:00.000Z",
+      "modified": "2026-05-18T00:00:00.000Z",
+      "created_by_ref": "identity--3c33c498-7f5f-5335-8fa9-e34a4e158e98",
+      "name": "AFRINTEL — 2024 Victim List: Cyber Attacks in Africa",
+      "description": "Public AFRINTEL list of 86 African victims documented in 2024. Leak-site publications are treated as claims unless independently corroborated.",
+      "published": "2024-12-31T23:59:59.000Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "AFRINTEL",
+        "Africa",
+        "2024",
+        "victim-list",
+        "ransomware",
+        "data-leak",
+        "cyber-extortion",
+        "osint",
+        "tlp-clear",
+        "en"
+      ],
+      "object_refs": [
+        "identity--3c33c498-7f5f-5335-8fa9-e34a4e158e98",
+        "identity--78de8d89-dfda-5f0a-91f5-0d479b9fb5d8",
+        "identity--adb84c5e-74eb-53f7-9a24-e5583954e68e",
+        "identity--f6b09b6d-67d3-50e8-8ce9-5013c83d1588",
+        "identity--fdd8e300-f9e3-593a-b5a6-e279c0de5964",
+        "identity--cffad267-05c3-587d-b22a-e26e34f4be78",
+        "identity--0d2c0a60-b14c-5e0f-bd1a-0f51b0df368d",
+        "identity--2d259940-9b12-5880-90e9-98f7d7d32289",
+        "identity--86d539eb-62e4-5bd3-9301-d24625bc409a",
+        "identity--7770a5c5-af37-5781-bf91-8bd2390aa492",
+        "identity--8e458616-90b1-5ace-a064-1092280df6c7",
+        "identity--1d7f37e3-48ce-5dfb-8350-193be0f27ae8",
+        "identity--60481995-d58e-5b23-ab3e-2d05edc44107",
+        "identity--005b4de3-e762-564a-92fd-6e6c8a87fa93",
+        "identity--d98e9f8d-82b4-5ff7-b66d-d703ffc973d3",
+        "identity--5e893d56-8afd-5636-aea8-5cb13192298b",
+        "identity--c38404fb-81bb-5b65-b5bb-f68999ab2bcb",
+        "identity--ec261d73-f8a9-5f57-8752-74bd424efca7",
+        "identity--8f8034b0-faa0-52c1-9979-b499361c58a2",
+        "identity--3472689b-fe8a-5c34-a744-84b5b194888f",
+        "identity--88fef71b-835e-5b43-971a-8e24b8db566a",
+        "identity--4ad55fff-7229-5fe8-8b0e-54bd20a84ff0",
+        "identity--5727dbd2-99b5-5d3b-9248-45cacf64d4d5",
+        "identity--43c75f9d-4513-5a69-bb03-144a8bde081d",
+        "identity--47fe9a2d-f15c-52e7-82fb-89dcdd3e2c89",
+        "identity--6c18890f-742a-53ba-ab2d-75ae9355d5c0",
+        "identity--2411093d-f8fb-5a15-8bf6-13ceb31d4977",
+        "identity--f3c1807f-af01-5f8e-bd3e-3d9aa5583a60",
+        "identity--6c93f8db-5f6a-53e3-80ba-9deac929fdc6",
+        "identity--8b3b5f41-8bc8-59b5-9768-2fe4f369bc81",
+        "identity--d5a2f9cd-0ef0-54f1-bbcd-83419ab3ab2b",
+        "identity--750ab870-e00e-5174-933e-91493131b470",
+        "identity--bda48c41-619b-567c-a91c-51e5ac033c49",
+        "identity--bdb187ca-0836-5abd-b996-9e4d73d7cda2",
+        "identity--29c9f368-21a8-57c5-b560-710302df6ca7",
+        "identity--d5ad1c29-59bd-52ef-af65-12d9428c0c06",
+        "identity--e0a26b43-569d-5170-be68-ae1cecb451cb",
+        "identity--1f8e85c8-1301-544a-bf3f-d6d697227dae",
+        "identity--bd8e1a55-379f-5908-9f17-8358eb78197e",
+        "identity--c38404fb-81bb-5b65-b5bb-f68999ab2bcb",
+        "identity--b5a38ef2-e984-57c8-bdc1-167f212c9e5a",
+        "identity--663167d0-0ab2-543b-8e90-2a43ccd1b059",
+        "identity--43c75f9d-4513-5a69-bb03-144a8bde081d",
+        "identity--64d147ff-625f-5a49-9291-128d5cd878ff",
+        "identity--0c36e05d-8c39-5896-8e27-a78161552f7a",
+        "identity--7cd547a1-62d4-5e94-a4e6-17640725f87c",
+        "identity--4eaf6bf4-401e-5a60-aa24-b02b45343ba2",
+        "identity--048de6ef-aef4-57c9-bfc1-1073c703a826",
+        "identity--41193d6c-cf06-5be8-a960-7bf411104078",
+        "identity--b54a2de1-0993-52b5-802d-a17f862ebf07",
+        "identity--77549004-47ba-55df-a114-9a850a5c1594",
+        "identity--efd450aa-6aa2-5323-8b4f-c096305bcf5c",
+        "identity--e22ad0a7-f62c-5de8-991e-fff364b19535",
+        "identity--3c2d493d-e917-5478-99e2-6bf89f3e2581",
+        "identity--0c14b4e1-c4d8-5909-96a4-7864512489b5",
+        "identity--dab527bb-0a1b-560f-9be9-15aac1a19b86",
+        "identity--c04a00fe-2ca7-539f-95eb-25c077980e3a",
+        "identity--daeb06f8-1fd7-5680-8ef9-7d1b14e55ce6",
+        "identity--2e6a1f25-5e08-548c-9110-906a73d41199",
+        "identity--3a9c1916-440e-5005-bbca-d56e6e90eae5",
+        "identity--850ec03f-ed50-56b8-a8cf-29a74d1f2655",
+        "identity--f6f77d0c-6e6d-5ba4-85a5-e0082c6ca01f",
+        "identity--910b8e61-e852-5ca3-a48c-464e069964ae",
+        "identity--8ecf68a2-aee7-5ad4-b386-9651fa8747d1",
+        "identity--90ffe8ac-2c10-5f18-b1b4-a89ba8b67513",
+        "identity--8c2c7d26-3da9-52fc-a631-d6d183f98de9",
+        "identity--95de12e7-e6ff-5d80-8e7d-cf17e0583fc6",
+        "identity--68aed263-1f11-5a1d-9c2b-37040bfb9f6a",
+        "identity--a9694409-0fe4-5011-ac0c-31de1ac27bc9",
+        "identity--ae76a89f-e12d-5937-8785-44db66e8b8e6",
+        "identity--efbaf513-1816-58b5-81e7-b5696eadb253",
+        "identity--cc979aa5-0af2-58f9-9fe8-477c7dd51baf",
+        "identity--20f182c2-e44c-5d51-8499-ecd1ad2b7038",
+        "identity--9ff83322-b8df-5c76-b67b-f9d88cb05cf3",
+        "identity--4cf27a68-0128-5887-b5c6-645501a980ec",
+        "identity--2af9445b-cf55-56f8-bd4a-0eb1129f10d2",
+        "identity--20a7452c-4ae9-5b2d-8224-9fcbd8987d05",
+        "identity--d3108c0c-2c2a-5ef9-b22a-e6be767ba5a8",
+        "identity--dac3da60-3b4d-52dc-abbd-ba8f7a7c42e1",
+        "identity--297a708b-b8a1-5d0c-85af-8fd1a098d59f",
+        "identity--018c29e8-39a9-59b1-a249-379f8e1a19ac",
+        "identity--7b7501b1-d4f8-5860-a13f-7bd062e1e776",
+        "identity--ac217b96-6ce2-5010-b3e2-1771ef5d792f",
+        "identity--06a13601-93d9-5bbb-94f7-04869f272b39",
+        "identity--6d6944e4-588d-535d-90b9-c46f395a937d",
+        "identity--ac10cab3-440a-5183-8e4d-ae028ad09f4f",
+        "identity--ffcd2c83-d319-5643-af8f-ab399431729d"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL 2024 Victim List (EN)",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/victims.md"
+        }
+      ],
+      "x_opencti_report_status": "published",
+      "x_opencti_reliability": "B",
+      "x_afrintel_total_victims": 86,
+      "x_afrintel_source_type": "OSINT / ransomware leak-site claims",
+      "x_afrintel_reliability_note": "Leak-site publications are treated as claims unless independently confirmed by the victim or trusted public sources.",
+      "object_marking_refs": [
+        "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 ![OpenCTI](https://img.shields.io/badge/Platform-OpenCTI-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 
-# AFRINTEL Threat Intelligence Dataset (STIX)
+# AFRINTEL Threat Intelligence dataset (STIX)
 👉🏾 [**French version available here**](./README_FR.md)
 
 This directory contains structured Cyber Threat Intelligence datasets generated from AFRINTEL ransomware monitoring.
@@ -43,6 +43,16 @@ Each STIX bundle may include:
 
 ## Available datasets
 
+
+### AFRINTEL 2024
+
+| Dataset | STIX Bundle |
+|------|------|
+| 2024 Victim List (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
+| 2024 Victim List (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
+| 2024 CTI Report (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
+| 2024 CTI Report (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
+
 ### AFRINTEL 2025
 
 | Month | STIX Bundle |
@@ -64,8 +74,8 @@ Each STIX bundle may include:
 
 | Month | STIX Bundle |
 |------|------|
-| January 2026 | [afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
-| February 2026 | [afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
+| January 2026 | [afrintel_january_2026_opencti.json](./2026/01-january/afrintel_january_2026_opencti.json) |
+| February 2026 | [afrintel_february_2026_opencti.json](./2026/02-february/afrintel_february_2026_opencti.json) |
 | March 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
 | April 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
 

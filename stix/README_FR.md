@@ -11,7 +11,7 @@ Tous les bundles sont fournis au format **STIX 2.1**, prêts à être ingérés 
 
 ---
 
-## 🎯 Objectif
+## Objectif
 
 Les datasets STIX AFRINTEL transforment des observations OSINT brutes en renseignement exploitable :
 
@@ -43,7 +43,17 @@ Chaque bundle STIX peut contenir :
 
 ## 📊 Datasets disponibles
 
-### 🇦🇫 AFRINTEL 2025
+
+### AFRINTEL 2024
+
+| Dataset | Bundle STIX |
+|------|------|
+| Liste des victimes 2024 (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
+| Liste des victimes 2024 (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
+| Rapport CTI 2024 (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
+| Rapport CTI 2024 (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
+
+### AFRINTEL 2025
 
 | Mois | Bundle STIX |
 |------|------|
@@ -62,12 +72,12 @@ Chaque bundle STIX peut contenir :
 
 ---
 
-### 🇦🇫 AFRINTEL 2026
+### AFRINTEL 2026
 
 | Mois | Bundle STIX |
 |------|------|
-| Janvier 2026 | [afrintel-january-2026-bundle.json](./2026/01-january/afrintel-january-2026-bundle.json) |
-| Février 2026 | [afrintel-february-2026-bundle.json](./2026/02-february/afrintel-february-2026-bundle.json) |
+| Janvier 2026 | [afrintel_january_2026_opencti.json](./2026/01-january/afrintel_january_2026_opencti.json) |
+| Février 2026 | [afrintel_february_2026_opencti.json](./2026/02-february/afrintel_february_2026_opencti.json) |
 | Mars 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
 | Avril 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
 
@@ -88,7 +98,6 @@ Exemples d’usage :
 - corrélation acteur ↔ victime
 - tracking de campagnes ransomware
 - support à l’investigation SOC
-
 ---
 
 ## 🚀 Roadmap
@@ -98,7 +107,5 @@ Exemples d’usage :
 - enrichissement IoC (IP, domaines, hash)
 - mapping MITRE ATT&CK
 - clustering de campagnes
-
 ---
-
 **AFRINTEL - Industrialisation du renseignement ransomware en Afrique.**

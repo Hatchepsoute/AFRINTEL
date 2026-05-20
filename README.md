@@ -215,7 +215,7 @@ AFRINTEL
 
 ---
 
-## 🛡️ Strategic Goals
+## 🛡️ Strategic goals
 
 AFRINTEL aims to:
 

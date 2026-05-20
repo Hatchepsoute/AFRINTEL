@@ -69,7 +69,6 @@
 - **Status :** Data Leak / Claim
 
 - **Description :**  *SDTM* is a logistics subsidiary of Groupe Barid Al-Maghrib specializing in transportation, distribution, fleet management, and operational services supporting postal and financial activities in Morocco.
-
 - **Leak Description :**  
   On May 12, 2026, the threat actor Sejjil claimed the complete exposure of SDTM’s ERP and financial infrastructure. According to the post, the exposed dataset includes 129 structured CSV files originating from SAGE ERP systems, SMS gateways, banking data, and internal platforms linked to logistics and financial operations.
 
@@ -78,3 +77,49 @@
 
 - **CTI Note :**  
   The exposed data suggests a deep compromise of internal ERP and application environments. The presence of active tokens, administrative accounts, and structured financial datasets could facilitate fraud operations, persistent access, or lateral compromise activities. The full authenticity and exact scope of the claimed dataset remain independently unverified.
+  
+### May 13, 2026
+#### 🇪🇬 Egypt - Ministry of Education
+
+- **Threat Actor / Group :** Revesky
+- **Sector :** Government / Education
+- **Website :** [moe.gov.eg](https://moe.gov.eg/)
+- **Status :** Data Leak / Access Sale
+
+- **Victim Description :**  
+  The Egyptian Ministry of Education is the governmental institution responsible for managing the national education system, including schools, student records, teachers, and digital educational platforms. On May 13, 2026, the threat actor *Revesky* claimed the leak of multiple databases totaling approximately 22.6 GB of data related to students, teachers, and administrators.
+
+- **Sample Analysis :**  
+  The published information mentions approximately 26.8 million student records and 3.8 million teacher and administrator records. The actor also claims to possess full administrative privileges allowing management of teacher and student accounts, password resets, modification of administrative information, and access to sensitive educational platform functions.
+  
+### May 16, 2026
+#### 🇪🇬 Egypt - Professional Academy for Teachers (PAT)
+
+- **Threat Actor / Group :** INT3X
+- **Sector :** Government / Education
+- **Targeted Organization :** Professional Academy for Teachers (PAT)
+- **Website :** https://pat.edu.eg
+- **Status :** Data Sale / Massive Data Exfiltration
+
+- **Victim description :**  
+  The Professional Academy for Teachers (PAT), an Egyptian institution linked to the Ministry of Education responsible for teacher accreditation, training, and educational management, was claimed by the threat actor INT3X.  
+  The actor claims to possess between 8 and 10 GB of compressed data and more than 80 GB of uncompressed files, including information related to approximately 1.2 million teachers, STEM students, academic content, MSSQL backups, Microsoft Access databases, identity photographs, and administrative records.
+- **Sample analysis :**  
+  The exposed samples contain structured datasets including full names, phone numbers, email addresses, national identification numbers, teacher codes, job positions, teaching subjects, schools, regional education offices, grade levels, and internal administrative information.  
+  Several screenshots also reveal Microsoft Access databases (.mdb/.accdb), MSSQL backup files (.bak), accreditation datasets, login history records, IP addresses, and thousands of photographs of teachers and educational staff.  
+  Some records additionally expose personal emails, mobile numbers, HR-related information, and identifiers associated with Egyptian educational systems. 
+  
+### May 17, 2026
+#### 🇲🇦 Morocco - Multiple Moroccan Government Platforms
+- **Threat Actor / Group :** superstarkmc
+- **Sector :** Government / Education / Taxation / Public Services
+- **Websites :**  
+  [men.gov.ma](https://www.men.gov.ma)  
+  [tax.gov.ma](https://www.tax.gov.ma)  
+  [tgr.gov.ma](https://www.tgr.gov.ma)
+- **Status :** Data Leak / Access Sale / Credential Exposure
+- **Victim description :**  
+  Multiple Moroccan government platforms related to education, taxation, treasury services, culture, justice, transport, and administrative services were referenced in a post claiming a large-scale credential leak. Mentioned domains include Massar, Moutamadris, Waliye, Tax.gov.ma, TGR, and several Moroccan administrative platforms.  
+  The threat actor claims to possess approximately 827,000 lines of data (~16 MB) and offers the access for sale.
+- **Sample analysis :**  
+  The exposed data contains hundreds of credentials linked to Moroccan government services, including *@taalim.ma* email accounts, usernames, plaintext passwords, tax portals, educational administrative systems, HR services, recruitment platforms, school management portals, treasury services, and road infraction systems. Several entries appear to expose access to sensitive financial, educational, and administrative services. 
