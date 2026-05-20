@@ -63,9 +63,10 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 - **Statut :** Fuite de données / Vente d’accès
 - **Description victime :**  
   Le Ministère égyptien de l’Éducation est l’institution gouvernementale chargée de l’administration du système éducatif national en Égypte, incluant les établissements scolaires, la gestion des élèves, des enseignants et des plateformes éducatives numériques. Le 13 mai 2026, l’acteur *Revesky* revendique la fuite de plusieurs bases de données totalisant environ 22,6 Go de données liées aux élèves, enseignants et administrateurs.
-- **Analyse des échantillons :**  
+- **Analyse des échantillons :** 
   Les éléments publiés évoquent environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements liés au personnel éducatif et administratif. L’acteur affirme également disposer de privilèges administratifs complets permettant la gestion des comptes enseignants et étudiants, la réinitialisation de mots de passe, la modification d’informations administratives et l’accès à certaines fonctionnalités sensibles de la plateforme éducative.
-  ---
+ 
+ ---
 ### 16 Mai 2026
 #### 🇪🇬 Égypte - Professional Academy for Teachers (PAT)
 - **Acteur / Groupe :** INT3X

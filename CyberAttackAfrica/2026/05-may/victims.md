@@ -9,6 +9,7 @@
 - **Description :**  Egypt’s Ministry of Labour (formerly Ministry of Manpower) is the governmental authority responsible for employment management, labour affairs, work permits, and workforce administration in Egypt.
 - **Sample analysis :**  
   The analyzed samples contain full names, national ID numbers, birth dates, addresses, phone numbers, email addresses, professional information, passport numbers, passport expiration dates, and administrative records associated with workers and expatriates.
+
 ---
 ### May 04, 2026
 #### 🇩🇿 Algeria - Ministry of Pharmaceutical Industry [Data Leak]
@@ -55,8 +56,8 @@
   On May 12, 2026, the threat actor Sejjil claimed the complete exposure of SDTM’s ERP and financial infrastructure. According to the post, the exposed dataset includes 129 structured CSV files originating from SAGE ERP systems, SMS gateways, banking data, and internal platforms linked to logistics and financial operations.
 - **Sample analysis :**  
   The analyzed samples contain administrative metadata, ERP user accounts, MD5 password hashes, active session tokens, corporate email addresses, agency-related information, phone numbers, internal financial data, bank account identifiers (RIB), account designations, and customer-related information including national ID references and physical addresses.
-
   
+---
 ### May 13, 2026
 #### 🇪🇬 Egypt - Ministry of Education
 - **Threat Actor / Group :** Revesky
@@ -67,7 +68,7 @@
   The Egyptian Ministry of Education is the governmental institution responsible for managing the national education system, including schools, student records, teachers, and digital educational platforms. On May 13, 2026, the threat actor *Revesky* claimed the leak of multiple databases totaling approximately 22.6 GB of data related to students, teachers, and administrators.
 - **Sample analysis :**  
   The published information mentions approximately 26.8 million student records and 3.8 million teacher and administrator records. The actor also claims to possess full administrative privileges allowing management of teacher and student accounts, password resets, modification of administrative information, and access to sensitive educational platform functions.
- 
+--- 
 ### May 16, 2026
 #### 🇪🇬 Egypt - Professional Academy for Teachers (PAT)
 - **Threat Actor / Group :** INT3X
@@ -82,7 +83,7 @@
   The exposed samples contain structured datasets including full names, phone numbers, email addresses, national identification numbers, teacher codes, job positions, teaching subjects, schools, regional education offices, grade levels, and internal administrative information.  
   Several screenshots also reveal Microsoft Access databases (.mdb/.accdb), MSSQL backup files (.bak), accreditation datasets, login history records, IP addresses, and thousands of photographs of teachers and educational staff.  
   Some records additionally expose personal emails, mobile numbers, HR-related information, and identifiers associated with Egyptian educational systems. 
-  
+ --- 
 ### May 17, 2026
 #### 🇲🇦 Morocco - Multiple Moroccan Government Platforms
 - **Threat Actor / Group :** superstarkmc
