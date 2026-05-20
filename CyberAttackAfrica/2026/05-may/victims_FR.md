@@ -79,8 +79,7 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   L’auteur affirme détenir entre 8 et 10 Go de données compressées et plus de 80 Go de données non compressées, incluant des informations concernant environ 1,2 million d’enseignants, des étudiants STEM, des contenus académiques, des sauvegardes MSSQL, des bases Microsoft Access ainsi que des images d’identité et documents administratifs.
 - **Analyse des échantillons :**  
   Les échantillons observés montrent des exports structurés contenant des noms complets, numéros de téléphone, adresses email, numéros d’identification nationale, codes enseignants, postes occupés, matières enseignées, établissements scolaires, académies régionales, niveaux scolaires et informations administratives internes.  
-  Plusieurs captures affichent également des bases Microsoft Access (.mdb/.accdb), des sauvegardes MSSQL (.bak), des données d’accréditation académique, des historiques de connexion, des adresses IP, ainsi que des milliers de photographies d’enseignants et personnels éducatifs.  
-  Certains enregistrements exposent également des emails personnels, des téléphones mobiles, des informations RH et des identifiants liés aux systèmes éducatifs égyptiens.
+
 ---
 ### 17 Mai 2026
 #### 🇲🇦 Maroc - Multiples plateformes gouvernementales marocaines

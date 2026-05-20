@@ -81,8 +81,7 @@
   The actor claims to possess between 8 and 10 GB of compressed data and more than 80 GB of uncompressed files, including information related to approximately 1.2 million teachers, STEM students, academic content, MSSQL backups, Microsoft Access databases, identity photographs, and administrative records.
 - **Sample analysis :**  
   The exposed samples contain structured datasets including full names, phone numbers, email addresses, national identification numbers, teacher codes, job positions, teaching subjects, schools, regional education offices, grade levels, and internal administrative information.  
-  Several screenshots also reveal Microsoft Access databases (.mdb/.accdb), MSSQL backup files (.bak), accreditation datasets, login history records, IP addresses, and thousands of photographs of teachers and educational staff.  
-  Some records additionally expose personal emails, mobile numbers, HR-related information, and identifiers associated with Egyptian educational systems. 
+  
  --- 
 ### May 17, 2026
 #### 🇲🇦 Morocco - Multiple Moroccan Government Platforms
