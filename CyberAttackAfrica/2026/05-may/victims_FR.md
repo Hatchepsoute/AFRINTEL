@@ -12,16 +12,14 @@
 
 - **Analyse des échantillons :**  
   Les échantillons analysés contiennent des noms complets, numéros d’identité nationale, dates de naissance, adresses, numéros de téléphone, adresses email, informations professionnelles, numéros de passeport, dates d’expiration de passeport et données administratives associées aux travailleurs.
-- **CTI Note :**  
-  Les données exposées pourraient être exploitées pour du phishing ciblé, de l’usurpation d’identité ou des fraudes administratives. L’authenticité complète de la base reste à confirmer.
+  
 ---
 ### 04 Mai 2026
 #### 🇩🇿 Algérie - Ministère de l’Industrie Pharmaceutique [Fuite de données]
-
 - **Acteur / Groupe :** kamalsheikhxx
 - **Secteur :** Gouvernement / Santé / Industrie pharmaceutique
 - **Statut :** Publication de dump complet revendiquée
-
+- **Site web :** [miph.gov.dz/](https://miph.gov.dz/)
 - **Description :** Une publication sur un forum cybercriminel revendique la fuite d’environ 34,3 Go de données attribuées au Ministère algérien de l’Industrie Pharmaceutique, comprenant plus de 52 000 fichiers et 17 800 dossiers couvrant la période 2019–2025.
 
 - **Données observées :**
@@ -33,8 +31,7 @@
   - inventaires pharmaceutiques
   - listes de substances psychotropes
   - documents PDF, Excel, Word et ZIP
-- **Analyse CTI :**
-  Les données exposées suggèrent une compromission potentielle de documents réglementaires, commerciaux et administratifs sensibles liés au secteur pharmaceutique algérien. Les risques incluent espionnage économique, fraude documentaire et exploitation d’informations réglementaires sensibles.
+
   ---
   
 ### 06 Mai 2026
@@ -56,8 +53,6 @@
   - bases Sage200EVO SQL
   - données financières et commerciales
 
-- **Analyse CTI :**
-  Les éléments publiés suggèrent une exposition de données commerciales, comptables et clients potentiellement sensibles liées au secteur sud-africain de la distribution et des biens de consommation. Les risques incluent fraude financière, espionnage commercial et compromission d’informations clients.
 ---
 
 ### 12 Mai 2026
