@@ -79,8 +79,7 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   Le Ministère égyptien de l’Éducation est l’institution gouvernementale chargée de l’administration du système éducatif national en Égypte, incluant les établissements scolaires, la gestion des élèves, des enseignants et des plateformes éducatives numériques. Le 13 mai 2026, l’acteur *Revesky* revendique la fuite de plusieurs bases de données totalisant environ 22,6 Go de données liées aux élèves, enseignants et administrateurs.
 - **Analyse des échantillons :** 
   Les éléments publiés évoquent environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements liés au personnel éducatif et administratif. L’acteur affirme également disposer de privilèges administratifs complets permettant la gestion des comptes enseignants et étudiants, la réinitialisation de mots de passe, la modification d’informations administratives et l’accès à certaines fonctionnalités sensibles de la plateforme éducative.
- 
- 
+ ---
 #### 🌍 Multi-pays - DHIS2 / Ministères de la Santé
 - **Acteur / Source :** Keymous  
 - **Secteur :** Santé / Gouvernement  
@@ -101,7 +100,6 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   ▫️ Honduras  
   ▫️ Togo  
   ▫️ Sierra Leone  
-
   Une telle compromission pourrait permettre :
   ▫️ accès non autorisé à des données sanitaires nationales  
   ▫️ manipulation ou suppression de données épidémiologiques  
@@ -126,18 +124,14 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 ---
 ### 17 Mai 2026
 #### 🇿🇦 Afrique du Sud - Statistics South Africa (Stats SA)
-
 - **Acteur / Groupe :** Kazu  
 - **Secteur :** Gouvernement / Statistiques nationales / Administration publique  
 - **Site web :** [statssa.gov.za](https://www.statssa.gov.za/)  
 - **Statut :** Vente de données  
 - **Description :** Statistics South Africa (Stats SA) est l’organisme officiel sud-africain chargé de la collecte, du traitement et de la publication des statistiques nationales démographiques, économiques et sociales.  
-
 - **Analyse :**  
   L’acteur malveillant revendique la possession d’environ **154 Go** de données contenant plus de **453 000 fichiers** attribués à Statistics South Africa.
-
   Les échantillons diffusés montrent notamment :
-
   - des cartes d’identité sud-africaines  
   - des relevés académiques et certificats scolaires  
   - des CV contenant des informations personnelles  
@@ -148,16 +142,11 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 #### 🇲🇦 Maroc - Multiples plateformes gouvernementales marocaines
 - **Acteur / Groupe :** superstarkmc
 - **Secteur :** Gouvernement / Éducation / Fiscalité / Services publics
-- **Sites web :**  
-  [men.gov.ma](https://www.men.gov.ma)  
-  [tax.gov.ma](https://www.tax.gov.ma)  
-  [tgr.gov.ma](https://www.tgr.gov.ma)
+- **Sites web :** [men.gov.ma](https://www.men.gov.ma); [tax.gov.ma](https://www.tax.gov.ma) ; [tgr.gov.ma](https://www.tgr.gov.ma)
 - **Statut :** Fuite de données / Vente d’accès / Exposition d’identifiants
-- **Description victime :**  
-  Plusieurs plateformes gouvernementales marocaines liées à l’éducation, la fiscalité, la trésorerie publique, la culture, la justice, le transport et les services administratifs ont été citées dans une publication revendiquant une fuite massive d’identifiants d’accès. Les domaines mentionnés incluent notamment Massar, Moutamadris, Waliye, Tax.gov.ma, TGR et plusieurs services administratifs marocains.  
+- **Description victime :**  Plusieurs plateformes gouvernementales marocaines liées à l’éducation, la fiscalité, la trésorerie publique, la culture, la justice, le transport et les services administratifs ont été citées dans une publication revendiquant une fuite massive d’identifiants d’accès. Les domaines mentionnés incluent notamment Massar, Moutamadris, Waliye, Tax.gov.ma, TGR et plusieurs services administratifs marocains.  
   L’auteur affirme détenir environ 827 000 lignes de données (~16 MB) et propose la vente des accès.
-- **Analyse des échantillons :**  
-  Les données observées contiennent des centaines d’identifiants associés à des plateformes gouvernementales marocaines, incluant adresses email *@taalim.ma*, noms d’utilisateurs, mots de passe en clair, accès fiscaux, comptes administratifs éducatifs, services RH, plateformes de concours, systèmes de gestion scolaire, services de trésorerie et plateformes liées aux infractions routières. Plusieurs entrées semblent exposer des accès liés à des services financiers, éducatifs et administratifs sensibles. 
+- **Analyse des échantillons :**  Les données observées contiennent des centaines d’identifiants associés à des plateformes gouvernementales marocaines, incluant adresses email *@taalim.ma*, noms d’utilisateurs, mots de passe en clair, accès fiscaux, comptes administratifs éducatifs, services RH, plateformes de concours, systèmes de gestion scolaire, services de trésorerie et plateformes liées aux infractions routières. Plusieurs entrées semblent exposer des accès liés à des services financiers, éducatifs et administratifs sensibles. 
   
 ### 20 Mai 2026
 #### 🇲🇦 Maroc - Watiqa.ma
@@ -165,22 +154,18 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 - **Secteur :** Gouvernement / État civil  
 - **Site web :** [watiqa.ma](https://www.watiqa.ma)  
 - **Statut :** Fuite de base de données / Revendication  
-- **Description :**    Watiqa.ma est la plateforme officielle marocaine permettant aux citoyens de demander en ligne des documents d’état civil et administratifs.
-- **Analyse :**  
-  L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  
+- **Description :**  Watiqa.ma est la plateforme officielle marocaine permettant aux citoyens de demander en ligne des documents d’état civil et administratifs.
+- **Analyse :** L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  
   Les données observées pourraient être exploitées pour des opérations d’usurpation d’identité, de fraude administrative, de phishing ciblé et d’ingénierie sociale contre des citoyens marocains.  
-  
- 
+---
 ### 21 Mai 2026
 #### 🇲🇦 Maroc - Avito.ma
 - **Acteur / Source :** fexus  
 - **Secteur :** E-commerce / Marketplace  
-- **Site web :** https://www.avito.ma  
+- **Site web :** [avito.ma ](https://www.avito.ma) 
 - **Statut :** Fuite de données / Vente présumée  
 - **Description :**  Avito.ma est l’une des principales plateformes marocaines de petites annonces et de marketplace, utilisée pour les ventes entre particuliers et professionnels.
-
-- **Analyse :**  
-  L’acteur revendique une fuite contenant des informations d’utilisateurs d’Avito.ma, incluant notamment adresses e-mail, numéros de téléphone, villes et mots de passe.  
+- **Analyse :**  L’acteur revendique une fuite contenant des informations d’utilisateurs d’Avito.ma, incluant notamment adresses e-mail, numéros de téléphone, villes et mots de passe.  
   Les échantillons publiés montrent plusieurs profils associés au secteur immobilier (“Crédit Immobilier”) avec des données personnelles marocaines réparties dans différentes villes telles que Casablanca, Khouribga, Kénitra, Guelmim et Oued Zem.  
   Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce qui augmente significativement les risques de :
   ▫️ compromission de comptes  
@@ -192,21 +177,17 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
  ---
 ### 22 Mai 2026
 #### 🇲🇦 Maroc - Spacex.ma
-
 - **Acteur / Source :** DarkMafiaX  
 - **Secteur :** E-commerce / Boutique en ligne  
-- **Site web :** https://spacex.ma  
+- **Site web :** [spacex.ma](https://spacex.ma) 
 - **Statut :** Fuite de données / Divulgation d’accès administrateur  
-- **Description :**  
-  Spacex.ma est présenté comme une plateforme de boutique en ligne marocaine.
-- **Analyse :**  
-  L’acteur malveillant a publiquement partagé un accès présumé à l’interface d’administration du site, incluant une URL d’administration ainsi qu’un couple identifiant/mot de passe associé à un compte “admin”.  
+- **Description :**  Spacex.ma est présenté comme une plateforme de boutique en ligne marocaine.
+- **Analyse :**  L’acteur malveillant a publiquement partagé un accès présumé à l’interface d’administration du site, incluant une URL d’administration ainsi qu’un couple identifiant/mot de passe associé à un compte “admin”.  
   Une telle exposition pourrait permettre :
   ▫️ prise de contrôle du panneau d’administration  
   ▫️ modification du contenu du site  
   ▫️ accès aux données clients et commandes  
   ▫️ déploiement de contenus malveillants ou phishing  
   ▫️ compromission de l’infrastructure web sous-jacente  
-
   AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
 
