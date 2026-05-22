@@ -9,7 +9,6 @@
 - **Description :**  Egypt’s Ministry of Labour (formerly Ministry of Manpower) is the governmental authority responsible for employment management, labour affairs, work permits, and workforce administration in Egypt.
 - **Sample analysis :**  
   The analyzed samples contain full names, national ID numbers, birth dates, addresses, phone numbers, email addresses, professional information, passport numbers, passport expiration dates, and administrative records associated with workers and expatriates.
-
 ---
 ### May 04, 2026
 #### 🇩🇿 Algeria - Ministry of Pharmaceutical Industry [Data Leak]
@@ -94,8 +93,7 @@
   DHIS2 is a widely used open-source platform deployed by Ministries of Health for health data management, epidemic surveillance and vaccination program monitoring.
 - **Analysis:**  
   The threat actor claims to possess access to multiple DHIS2 instances used by healthcare institutions and Ministries of Health across several African and international countries.  
-  The published artifacts include multiple **URL / username / password** combinations associated with government health platforms, suggesting a credible compromise of administrative or operational accounts.  
-  The claimed accesses notably involve infrastructures in:
+  The published artifacts include multiple **URL / username / password** combinations associated with government health platforms, suggesting a credible compromise of administrative or operational accounts.  The claimed accesses notably involve infrastructures in:
   ▫️ Mozambique  
   ▫️ Liberia  
   ▫️ Nigeria  
@@ -103,7 +101,7 @@
   ▫️ Honduras  
   ▫️ Togo  
   ▫️ Sierra Leone  
-  Such a compromise could potentially allow:
+Such a compromise could potentially allow:
   ▫️ unauthorized access to national health data  
   ▫️ manipulation or deletion of epidemiological information  
   ▫️ compromise of vaccination tracking systems  
@@ -175,7 +173,7 @@
   ▫️ targeted phishing campaigns  
   ▫️ fraud and identity theft  
   ▫️ attacks against other services using the same credentials  
-  AFRINTEL did not conduct any authentication attempts or interaction with the affected systems.
+AFRINTEL did not conduct any authentication attempts or interaction with the affected systems.
 ---
 ### 22 May 2026
 #### 🇲🇦 Morocco - Spacex.ma
@@ -193,4 +191,4 @@
   ▫️ access to customer and order data  
   ▫️ deployment of malicious content or phishing pages  
   ▫️ compromise of the underlying web infrastructure  
-  AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
+AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.

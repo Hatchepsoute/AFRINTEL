@@ -79,20 +79,15 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   Le Ministère égyptien de l’Éducation est l’institution gouvernementale chargée de l’administration du système éducatif national en Égypte, incluant les établissements scolaires, la gestion des élèves, des enseignants et des plateformes éducatives numériques. Le 13 mai 2026, l’acteur *Revesky* revendique la fuite de plusieurs bases de données totalisant environ 22,6 Go de données liées aux élèves, enseignants et administrateurs.
 - **Analyse des échantillons :** 
   Les éléments publiés évoquent environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements liés au personnel éducatif et administratif. L’acteur affirme également disposer de privilèges administratifs complets permettant la gestion des comptes enseignants et étudiants, la réinitialisation de mots de passe, la modification d’informations administratives et l’accès à certaines fonctionnalités sensibles de la plateforme éducative.
- ---
+
+
 #### 🌍 Multi-pays - DHIS2 / Ministères de la Santé
 - **Acteur / Source :** Keymous  
 - **Secteur :** Santé / Gouvernement  
 - **Plateformes ciblées :** DHIS2 (District Health Information System)  
 - **Statut :** Vente d’accès / Compromission présumée  
-- **Description :**  
-  DHIS2 est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.
-
-- **Analyse :**  
-  L’acteur malveillant revendique plusieurs accès à des instances DHIS2 utilisées par des institutions sanitaires et ministères de la Santé dans plusieurs pays africains et internationaux.  
-
-  Les artefacts publiés incluent plusieurs couples **URL / identifiant / mot de passe** associés à des plateformes gouvernementales de santé, suggérant une compromission crédible d’identifiants administratifs ou opérationnels.  
-  Les accès revendiqués concernent notamment des infrastructures au :
+- **Description :**  **DHIS2** est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.
+- **Analyse :** L’acteur malveillant revendique plusieurs accès à des instances DHIS2 utilisées par des institutions sanitaires et ministères de la Santé dans plusieurs pays africains et internationaux.  Les artefacts publiés incluent plusieurs couples **URL / identifiant / mot de passe** associés à des plateformes gouvernementales de santé, suggérant une compromission crédible d’identifiants administratifs ou opérationnels.  Les accès revendiqués concernent notamment des infrastructures au :
     ▫️ Mozambique  
   ▫️ Liberia  
   ▫️ Nigeria  
@@ -100,14 +95,13 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   ▫️ Honduras  
   ▫️ Togo  
   ▫️ Sierra Leone  
-  Une telle compromission pourrait permettre :
+Une telle compromission pourrait permettre :
   ▫️ accès non autorisé à des données sanitaires nationales  
   ▫️ manipulation ou suppression de données épidémiologiques  
   ▫️ compromission des systèmes de suivi vaccinal  
   ▫️ exfiltration de données médicales et administratives  
   ▫️ perturbation des opérations de santé publique  
-
-  AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
+AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
  ---
 ### 16 Mai 2026
 #### 🇪🇬 Égypte - Professional Academy for Teachers (PAT)
@@ -155,8 +149,7 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 - **Site web :** [watiqa.ma](https://www.watiqa.ma)  
 - **Statut :** Fuite de base de données / Revendication  
 - **Description :**  Watiqa.ma est la plateforme officielle marocaine permettant aux citoyens de demander en ligne des documents d’état civil et administratifs.
-- **Analyse :** L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  
-  Les données observées pourraient être exploitées pour des opérations d’usurpation d’identité, de fraude administrative, de phishing ciblé et d’ingénierie sociale contre des citoyens marocains.  
+- **Analyse :** L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  Les données observées pourraient être exploitées pour des opérations d’usurpation d’identité, de fraude administrative, de phishing ciblé et d’ingénierie sociale contre des citoyens marocains.  
 ---
 ### 21 Mai 2026
 #### 🇲🇦 Maroc - Avito.ma
@@ -167,7 +160,7 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
 - **Description :**  Avito.ma est l’une des principales plateformes marocaines de petites annonces et de marketplace, utilisée pour les ventes entre particuliers et professionnels.
 - **Analyse :**  L’acteur revendique une fuite contenant des informations d’utilisateurs d’Avito.ma, incluant notamment adresses e-mail, numéros de téléphone, villes et mots de passe.  
   Les échantillons publiés montrent plusieurs profils associés au secteur immobilier (“Crédit Immobilier”) avec des données personnelles marocaines réparties dans différentes villes telles que Casablanca, Khouribga, Kénitra, Guelmim et Oued Zem.  
-  Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce qui augmente significativement les risques de :
+Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce qui augmente significativement les risques de :
   ▫️ compromission de comptes  
   ▫️ credential stuffing  
   ▫️ phishing ciblé  
@@ -189,5 +182,5 @@ Le 12 mai 2026 le cybercriminel  *Sejjil*  revendique l’exposition complète d
   ▫️ accès aux données clients et commandes  
   ▫️ déploiement de contenus malveillants ou phishing  
   ▫️ compromission de l’infrastructure web sous-jacente  
-  AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
+AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
 
