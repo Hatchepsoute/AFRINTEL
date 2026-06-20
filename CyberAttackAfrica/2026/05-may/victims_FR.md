@@ -337,14 +337,14 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Selon la revendication publiée, plusieurs catégories de données et d'informations techniques auraient été exposées.
   Les éléments revendiqués incluent notamment :
-  ▫️ 175 géomètres agréés avec noms complets, adresses e-mail personnelles, adresses postales, entreprises associées, numéros de licence et statut d'accréditation
-  ▫️ 730 assistants géomètres approuvés contenant noms complets, numéros d'identification nationaux, numéros d'enregistrement et informations sur leurs superviseurs
-  ▫️ informations personnelles supplémentaires via des points de vérification exposés (numéros de téléphone, identifiants nationaux, profils utilisateurs)
-  ▫️ documentation complète de l'API exposant les endpoints, paramètres de requêtes et mécanismes d'authentification
-  ▫️ panneau d'administration Django accessible via un formulaire de connexion
-  ▫️ divulgation de paramètres de configuration sensibles comprenant notamment la technologie utilisée (PostgreSQL), les comptes applicatifs, la configuration de messagerie et certains paramètres JWT
-  ▫️ structure complète des URL de l'application permettant de cartographier l'ensemble des fonctionnalités accessibles
-  ▫️ plus de 45 documents officiels gouvernementaux relatifs à la législation foncière, aux procédures cadastrales et à la réglementation du secteur
+    -▫️ 175 géomètres agréés avec noms complets, adresses e-mail personnelles, adresses postales, entreprises associées, numéros de licence et statut d'accréditation
+    -▫️ 730 assistants géomètres approuvés contenant noms complets, numéros d'identification nationaux, numéros d'enregistrement et informations sur leurs superviseurs
+    -▫️ informations personnelles supplémentaires via des points de vérification exposés (numéros de téléphone, identifiants nationaux, profils utilisateurs)
+    -▫️ documentation complète de l'API exposant les endpoints, paramètres de requêtes et mécanismes d'authentification
+    -▫️ panneau d'administration Django accessible via un formulaire de connexion
+    -▫️ divulgation de paramètres de configuration sensibles comprenant notamment la technologie utilisée (PostgreSQL), les comptes applicatifs, la configuration de messagerie et certains paramètres JWT
+    -▫️ structure complète des URL de l'application permettant de cartographier l'ensemble des fonctionnalités accessibles
+    -▫️ plus de 45 documents officiels gouvernementaux relatifs à la législation foncière, aux procédures cadastrales et à la réglementation du secteur
 
   Cette revendication est particulièrement préoccupante car elle ne concerne pas uniquement des données personnelles, mais également des informations techniques susceptibles de faciliter des attaques ultérieures contre l'infrastructure de l'organisation.
   La présence de données d'identification nationales associées à des informations professionnelles augmente également les risques d'usurpation d'identité, de fraude documentaire et d'ingénierie sociale ciblée.

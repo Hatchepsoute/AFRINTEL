@@ -343,14 +343,14 @@ Such a compromise could potentially allow:
 - **Analysis:**
   According to the published claim, multiple categories of personal and technical data were allegedly exposed.
   The reported exposure includes:
-  ▫️ 175 licensed surveyors containing full names, personal email addresses, postal addresses, company affiliations, license numbers and licensing status
-  ▫️ 730 approved survey assistants including full names, national ID numbers, registration numbers and supervising surveyor information
-  ▫️ additional personally identifiable information exposed through verification endpoints, including phone numbers and identification records
-  ▫️ complete API documentation detailing endpoints, request parameters and authentication mechanisms
-  ▫️ access to a Django administration login panel
-  ▫️ disclosure of sensitive configuration information including PostgreSQL settings, application accounts, email configuration and JWT-related settings
-  ▫️ complete application URL routing structure exposing the platform architecture
-  ▫️ more than 45 official government documents related to land legislation, cadastral regulations and surveying procedures
+    -▫️ 175 licensed surveyors containing full names, personal email addresses, postal addresses, company affiliations, license numbers and licensing status
+    -▫️ 730 approved survey assistants including full names, national ID numbers, registration numbers and supervising surveyor information
+    -▫️ additional personally identifiable information exposed through verification endpoints, including phone numbers and identification records
+    -▫️ complete API documentation detailing endpoints, request parameters and authentication mechanisms
+    -▫️ access to a Django administration login panel
+    -▫️ disclosure of sensitive configuration information including PostgreSQL settings, application accounts, email configuration and JWT-related settings
+    -▫️ complete application URL routing structure exposing the platform architecture
+    -▫️ more than 45 official government documents related to land legislation, cadastral regulations and surveying procedures
   This claim is significant because it allegedly involves not only personal information but also technical infrastructure details that could facilitate future attacks against the organization.
   The exposure of national identification data combined with professional records could increase the risk of identity theft, document fraud and targeted social engineering campaigns.
   
@@ -387,7 +387,6 @@ Such a compromise could potentially allow:
 - **Description:** CRIT Tunisie is a subsidiary of the French CRIT Group, specializing in human resources, permanent and temporary employment (CDI/CDD), and workforce placement. Operating in Tunisia to support local and international businesses, the company manages sourcing, selection, and staffing solutions across key industry sectors including manufacturing, logistics, services, and customer relations. The **Titan** ransomware group claimed a compromise of the organization on May 18, 2026.
 
 #### 🇸🇳 Senegal - Trésor Public du Sénégal
-
 - **Ransomware group:** AuditTeam
 - **Sector:** Government / Public Finance
 - **Status:** Claim - Data Sample Published
