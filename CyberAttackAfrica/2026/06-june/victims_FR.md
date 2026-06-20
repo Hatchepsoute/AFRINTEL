@@ -10,6 +10,26 @@
 - **Analyse :**  
   Exposition de données sensibles sur le personnel aéronautique, y compris des pilotes militaires et affiliés à l'État. Risques : usurpation d'identité, phishing ciblé, espionnage et usurpation de personnel aéronautique. La présence de pilotes militaires et d'entreprises publiques rend cette base particulièrement sensible pour la sécurité nationale.
 ---
+### 10 Juin 2026
+#### 🇳🇬 Nigéria - Jeroid.co [Fuite / Vente de base de données]
+- **Acteur / Groupe :** burti (forum [Citizen])
+- **Secteur :** Cryptomonnaie / Fintech / Plateforme d'échange
+- **Statut :** Fuite / Vente de base de données
+- **Site web :** [jeroid.co](https://jeroid.co) / [jeroid.ng](https://jeroid.ng)
+- **Description :**  
+  Vente de la base de données complète de Jeroid, la plus grande plateforme d'échange crypto-to-Naira du Nigéria. Données incluses :
+  - **312 433 utilisateurs** (100 % avec email, 98 % avec téléphone)
+  - **759 900 portefeuilles** (129 423 avec solde) – TVL : 306 M$
+  - **110 282 BVN** (numéros de vérification bancaire)
+  - **64 300 NIN** (numéros d'identité nationaux)
+  - **70 956 photos de vérification faciale** (stockées sur un bucket S3 public sans authentification)
+  - **3 872 passeports**, **2 106 cartes d'électeur**, **1 700 permis de conduire**
+  - **65 013 utilisateurs avec KYC complet niveau 3** (BVN + NIN + scan facial + document d'identité)
+  - 89 comptes internes (dont cadres dirigeants)
+  Prix demandé : **2 000 $ US**.
+- **Analyse :**  
+  L'une des fuites financières les plus graves jamais recensées. Le BVN et le NIN sont les identifiants bancaires et nationaux principaux du Nigéria – leur exposition permet l'usurpation d'identité complète, la fraude financière, les arnaques aux prêts et le blanchiment d'argent. Le bucket S3 non authentifié contenant les selfies de vérification aggrave le risque avec le vol d'identité biométrique. Cette fuite menace tout l'écosystème bancaire nigérian et la confiance des citoyens dans les plateformes fintech.
+---
 ### 13 Juin 2026
 #### 🇳🇬 Nigeria - National Institute for Legislative and Democratic Studies (NILDS)
 
@@ -17,26 +37,21 @@
 - **Secteur :** Gouvernement / Recherche législative
 - **Sites web :** [nils.gov.ng](https://nils.gov.ng)
 - **Statut :** Fuite de données / Revendication
-
 - **Description :**  
   Le National Institute for Legislative and Democratic Studies (NILDS) est un organisme rattaché à l’Assemblée nationale nigériane, chargé de la recherche, de la formation et du soutien aux activités législatives et démocratiques.
-
 - **Analyse :**  
   Les acteurs revendiquent la compromission de plusieurs bases de données associées au NILDS et à des portails parlementaires nigérians. Les échantillons publiés montrent la structure de plusieurs bases de données, des comptes administrateurs, des adresses e-mail, des identifiants utilisateurs et des mots de passe associés à différents systèmes. Les données exposées pourraient permettre un accès non autorisé à des applications internes, faciliter des campagnes de phishing ciblé et compromettre davantage l’infrastructure institutionnelle concernée. À ce stade, cette revendication repose sur les éléments publiés par les acteurs et n’a pas été confirmée indépendamment.
   
 #### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l'ordre (Offre d'accès portails)
-
 - **Acteur / Source :** [Citizen] Governor (via forum cybercriminel)
 - **Secteur :** Gouvernement / Forces de l'ordre / Plateformes sociales
 - **Statut :** Offre active
 - **Site web :** Non spécifié
-
 - **Description :**  
   Un cybercriminel propose à la vente des comptes email gouvernementaux et policiers actifs, spécifiquement destinés à accéder aux **portails d'application de la loi (Law Enforcement Portals)** des grandes plateformes sociales (Meta, Instagram, TikTok, X, etc.). Ces portails officiels permettent aux autorités légitimes de :
   - **Effectuer des demandes de données (Subpoena)** : Obtenir des adresses IP, numéros de téléphone, emails, messages directs (DM), publications supprimées et informations sur les appareils.
   - **Effectuer des demandes d'urgence (EDR)** : Obtenir des données moins complètes (sans les messages directs) en cas de danger immédiat.
   - **Supprimer des comptes ou retirer des contenus** violant la loi.
-
   Le catalogue des comptes africains proposés comprend :
   * 🇪🇬 **Égypte (Gouvernemental)** : 120 $
   * 🇲🇼 **Malawi (Gouvernemental)** : 60 $
@@ -47,18 +62,15 @@
   * 🇿🇲 **Zambie (Police, Gouvernemental)** : 60 $
   * 🇸🇱 **Sierra Leone (Gouvernemental)** : 80 $
   * 🇾🇪 **Yémen (Gouvernemental)** : 140 $
-
 - **Analyse :**  
   Cette offre s'inscrit dans la même logique que celle de l'acteur « Convince », mais avec une spécificité plus dangereuse : elle ne vend pas seulement des adresses email brutes, mais des **comptes complets ayant déjà accès aux portails officiels des plateformes**. Cela signifie que l'acheteur n'a même pas besoin de rédiger de fausses demandes EDR ; il peut directement se connecter à l'interface Meta ou X avec les identifiants d'un véritable agent gouvernemental. Le risque est majeur : usurpation d'identité massive, extraction de données personnelles (y compris les messages privés via subpoena), et manipulation des contenus en ligne. La présence de pays comme la Palestine et le Yémen dans la liste « africaine » (selon le vendeur) suggère une classification géographique approximative, mais ne diminue pas la menace pour les institutions africaines légitimes concernées.
 ---
 ### 17 Juin 2026
 #### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l'ordre
-
 - **Acteur / Source :** Convince (via le forum cybercriminel [Immortal]) – Contacts : Telegram (@renavol), Session, Signal, Discord
 - **Secteur :** Gouvernement / Forces de l'ordre
 - **Statut :** Offre active
 - **Site web :** Non spécifié
-
 - **Description :**  
   Un cybercriminel propose à la vente des adresses e-mail réelles et actives d'institutions africaines. Ces accès sont spécifiquement destinés à usurper l'identité des autorités officielles pour soumettre de fausses demandes de divulgation d'urgence (EDR – *Emergency Disclosure Requests*) auprès de grandes plateformes numériques telles que Google, Meta ou Telegram.
 
@@ -71,6 +83,5 @@
   * 🇳🇬 **Nigeria :** 2 e-mails (50 $, Police)
   * 🇪🇬 **Égypte :** 1 e-mail (60 $, Ministère des Finances)
   * 🇲🇦 **Maroc :** 2 e-mails (70 $)
-
 - **Analyse :**  
   Cette offre ne constitue pas une fuite de données subie passivement par ces pays, mais représente une exposition critique de leurs vecteurs d'authentification officiels. La commercialisation de ces adresses, combinée au tutoriel EDR complet vendu par le même acteur, permet à des tiers malveillants d'obtenir indûment des données personnelles et d'utilisateurs sur les plateformes en ligne en exploitant la confiance accordée aux autorités de ces pays. Cela accentue significativement le risque d'usurpation d'identité administrative et de fraudes transfrontalières à l'échelle régionale et internationale. Cette menace est d'autant plus préoccupante qu'elle concerne plusieurs institutions déjà ciblées par des fuites de données en mai 2026 (Égypte, Maroc, Nigeria), créant un terrain favorable à des attaques combinées.
