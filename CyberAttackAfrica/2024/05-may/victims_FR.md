@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 
 # Cyberattaques en Afrique - Mai 2024 : Liste des victimes
-👉🏾 [**English version available here**](./victims_may_2024.md)
+👉🏾 [**English version available here**](./victims.md)
 
 ## 📅 Mai 2024
 
@@ -69,7 +69,7 @@
 - **Secteur :** Services financiers & Assurances
 - **Site web :** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Treasury of cote d'ivoire est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Ivory Coast.
+- **Description victime :** Treasury of cote d'ivoire est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
 
 ----------------------------
 

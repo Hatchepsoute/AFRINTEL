@@ -86,7 +86,7 @@ This list records ransomware and data breach incidents targeting African entitie
 | 🇹🇳 Tunisia            | 1          | 0           |
 | 🇳🇦 Namibia            | 1          | 0           |
 | 🇹🇿 Tanzania           | 1          | 0           |
-| 🇨🇩 DRC                | 0          | 1           |
+| 🇨🇩 Congo (DRC)        | 0          | 1           |
 
 ## March 2026
 
@@ -387,7 +387,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Status:** Supply chain compromise / Database leak
 - **Victim description:** Smarteez is a Moroccan digital provider used by L'Oréal Morocco for field operations management. Exposure of critical data: information on 296 pharmacies (GPS, segmentation), 361,000 sales/KPI records, 22 plaintext OAuth2 application secrets, complete administrative logs. A production APK was also disclosed.
 
-#### 🇨🇩 DRC - Public Administration Reform Fund (FRAP)
+#### 🇨🇩 Congo (DRC) - Public Administration Reform Fund (FRAP)
 - **Actor / Group:** privillege
 - **Sector:** Government / Administration
 - **Website:** [frap.cd](https://frap.cd/)

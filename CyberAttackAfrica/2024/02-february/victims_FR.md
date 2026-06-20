@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyberattaques en Afrique — Février 2024 : liste des 5 victimes
+# Cyberattaques en Afrique: Février 2024 : liste des 5 victimes
 
 ### 6 Février 2024
 

@@ -71,7 +71,7 @@
 - **Secteur :** Retail (distribution)
 - **Site web :** [codival.ci](https://www.codival.ci)
 - **Statut :** Revendication & divulgation des données
-- **Description victime :** Codival est une entreprise commerciale majeure opérant dans le secteur des retail (distribution), contribuant de manière significative au tissu économique régional en Ivory Coast.
+- **Description victime :** Codival est une entreprise commerciale majeure opérant dans le secteur des retail (distribution), contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
 
 ----------------------------
 

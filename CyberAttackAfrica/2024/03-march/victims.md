@@ -5,7 +5,7 @@
 
 # Cyber Attacks in Africa — March 2024: List of 7 Victims
 
-👉🏾 [**Version française disponible ici**](./victims_mars_2024_FR.md)
+👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
 ## March 2024
 

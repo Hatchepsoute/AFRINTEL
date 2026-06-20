@@ -659,15 +659,12 @@
   
 
 #### 🇿🇦 South Africa - Northern Cape Department of Roads & Public Works [Data Leak]
-
 - **Threat Actor / Group :** wh6ami
 - **Sector :** Government / Public Infrastructure / Transportation
 - **Website :** *.gov.za
 - **Leak Date :** March 16, 2026 (discovered in April 2026)
 - **Status :** Claimed Database Sale
-
 - **Description :** A cybercriminal forum post claims the sale of a database allegedly linked to South Africa’s Northern Cape Department of Roads & Public Works. The published samples contain data extracted from contact forms and administrative exchanges related to public infrastructure, tenders, internships, applications, and institutional requests.
-
 - **Observed Data :**
   - full names
   - email addresses

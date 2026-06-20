@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 
 # Cyber Attacks in Africa - May 2024: List of Victims
-👉🏾 [**Version française disponible ici**](./victims_mai_2024_FR.md)
+👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
 ## 📅 May 2024
 

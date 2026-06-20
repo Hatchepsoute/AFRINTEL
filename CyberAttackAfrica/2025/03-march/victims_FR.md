@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # Liste des victimes africaines de cyberattaques en Mars 2025 (09 victimes)
-👉🏾 [**English version available here**]((./victims.md)
+👉🏾 [**English version available here**](./victims.md)
 ## Mars 2025
 
 ### 02 Mars 2025

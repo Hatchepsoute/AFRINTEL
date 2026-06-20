@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa — January 2024: List of 3 Victims
+# Cyber Attacks in Africa: January 2024: List of 3 Victims
 
 ### January 10, 2024
 
