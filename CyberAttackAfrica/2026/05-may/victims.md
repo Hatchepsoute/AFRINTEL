@@ -102,20 +102,18 @@
 - **Analysis :**
   According to the threat actor, approximately **20 GB of data** was released following the alleged failure of negotiations with the organization.
   The leaked data reportedly includes:
-  ▫️ full internal reports
-  ▫️ customer databases containing thousands of records
-  ▫️ scripts and technical documents
-  ▫️ invoices
-  ▫️ CEO reports
-  ▫️ accounting and financial backups
-  ▫️ a full Sage 200 Evolution database (SAGE200EVOSQL)
+        ▫️ full internal reports
+        ▫️ customer databases containing thousands of records
+        ▫️ scripts and technical documents
+        ▫️ invoices
+        ▫️ CEO reports
+        ▫️ accounting and financial backups
+        ▫️ a full Sage 200 Evolution database (SAGE200EVOSQL)
   The reviewed samples indicate the presence of financial records, accounting information, customer account data, invoices, financial reports, and IT asset inventories linked to CGCSA.
   Exposure of such information could provide threat actors with detailed insight into the organization's financial operations, business relationships, member companies, suppliers, and internal IT environment.
   The leak also appears to contain backups of business and accounting systems that may include sensitive financial information and data related to CGCSA member organizations.
   
- 
 #### 🌍 Africa (Multi-country) – Resume Docs Data Leak
-
 - **Actor / Source:** attackercompany (via the [Citizen] forum)
 - **Sector:** Recruitment / Personal Data
 - **Status:** Claimed data leak

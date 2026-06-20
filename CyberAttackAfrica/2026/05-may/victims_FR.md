@@ -103,13 +103,13 @@
 - **Analyse :**
   Selon la publication, environ **20 Go de données** auraient été divulgués après l'échec présumé de négociations avec l'organisation.
   Les données revendiquées comprennent notamment :
-  ▫️ rapports internes complets
-  ▫️ bases de données clients contenant plusieurs milliers d'enregistrements
-  ▫️ scripts et documents techniques
-  ▫️ factures
-  ▫️ rapports de direction (CEO Reports)
-  ▫️ sauvegardes comptables et financières
-  ▫️ base complète Sage 200 Evolution (SAGE200EVOSQL)
+        -▫️ rapports internes complets
+         -▫️ bases de données clients contenant plusieurs milliers d'enregistrements
+         -▫️ scripts et documents techniques
+         -▫️ factures
+         -▫️ rapports de direction (CEO Reports)
+        -▫️ sauvegardes comptables et financières
+        -▫️ base complète Sage 200 Evolution (SAGE200EVOSQL)
   Les fichiers observés dans les échantillons montrent la présence de documents financiers, de données comptables, de comptes clients, de factures, de rapports financiers et d'inventaires d'actifs informatiques associés au CGCSA.
   L'exposition de ce type d'informations pourrait permettre à des acteurs malveillants d'obtenir une visibilité détaillée sur les opérations financières, les relations commerciales, les adhérents, les fournisseurs et l'environnement informatique de l'organisation.
   La fuite semble également inclure des sauvegardes de systèmes métiers et comptables susceptibles de contenir des informations financières sensibles ainsi que des données relatives aux entreprises membres du CGCSA.
