@@ -390,19 +390,15 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Gouvernement / Finances Publiques
 - **Statut :** Claim - Data Sample Published
 - **Site web :** [www.tresor.sn](https://www.tresor.sn)
-
 - **Description :**
   Le Trésor Public du Sénégal est l'institution étatique responsable de la gestion des finances publiques, de l'exécution du budget national et du suivi du recouvrement fiscal et des dépenses de l'État. Le groupe ransomware **AuditTeam** a revendiqué la compromission de l'institution les 17-18 mai 2026. L'analyse technique des données exfiltrées indique que l'acteur disposait d'un accès persistant à au moins deux serveurs internes avant la publication de la revendication.
-
 - **Analyse :**
   L'analyse des données exfiltrées révèle la compromission de deux systèmes internes, tous deux accessibles avant le déploiement du ransomware.
-
   **Serveur 10.6.0.61 (Oracle Database 12.2.0, port 1555) :** Trois dumps de bases de données ont été extraits par l'acteur le 9 mai 2026 :
   - `COLLOC.CO_PERSONNELS` (~40 394 enregistrements) : registre du personnel et de la paie des agents de l'État. Champs présents : identifiants des employés, prénoms et noms, numéros de téléphone, données bancaires (code banque, code guichet, numéro de compte, RIB), codes de service, année de gestion et montants de rémunération.
   - `COLLOC.REDEVABLES` (~960 146 enregistrements) : registre national des contribuables et débiteurs fiscaux. Champs présents : numéro d'identification fiscale (N_C_CONTRIB), dénomination ou nom complet, adresse, téléphone et numéro de registre de commerce. Les données couvrent la période à partir de 2017.
   - `GFORD.ORD_MANDATS` (~659 195 enregistrements) : base complète des ordres de paiement publics. Champs présents : numéro de mandat, date, objet de la transaction, montants (HT et TTC), coordonnées bancaires du bénéficiaire (code banque, guichet, compte, RIB), dénomination du bénéficiaire, NINEA (Numéro d'Identification Nationale des Entreprises et Associations) et libellé de l'opération. Les données couvrent au moins la période d'avril 2024 jusqu'à la date d'extraction.
-
-  **Serveur 10.6.0.26 (Système SICA — Gestion de la Paie et des Salaires) :** Des fichiers opérationnels couvrant la période du 2 janvier 2025 au 8 mai 2026 (18 mois d'opérations financières) ont été extraits, notamment :
+  **Serveur 10.6.0.26 (Système SICA - Gestion de la Paie et des Salaires) :** Des fichiers opérationnels couvrant la période du 2 janvier 2025 au 8 mai 2026 (18 mois d'opérations financières) ont été extraits, notamment :
   - Fichiers de paie pour les agents de l'État pour mars 2026, par zone géographique.
   - Fichiers de virement datés du 8 mai 2026, au format CSV bancaire standard (code banque, code guichet, numéro de compte, RIB, montant, nom du bénéficiaire, libellé de l'opération). Types observés : salaires, indemnités de correction d'examens, achats de fournitures. Ces fichiers confirment un accès aux systèmes opérationnels actifs au jour de l'extraction.
   - Fichiers de mandat de paiement (série MD26-XXXXXX) pour les autorisations de paie individuelles.

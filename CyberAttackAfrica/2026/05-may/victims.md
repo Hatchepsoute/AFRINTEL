@@ -392,26 +392,20 @@ Such a compromise could potentially allow:
 - **Sector:** Government / Public Finance
 - **Status:** Claim - Data Sample Published
 - **Website:** [www.tresor.sn](https://www.tresor.sn)
-
 - **Description:**
   The Trésor Public du Sénégal is the state institution responsible for managing public finances, executing the national budget, and overseeing tax collection and government expenditure. The **AuditTeam** ransomware group claimed the compromise of the institution on May 17-18, 2026. Technical analysis of exfiltrated data indicates the actor had persistent access to at least two internal servers before the public claim was made.
-
 - **Analysis:**
   Analysis of exfiltrated data reveals the compromise of two internal systems, both accessed before ransomware deployment.
-
   **Server 10.6.0.61 (Oracle Database 12.2.0, port 1555):** Three database dumps were extracted on May 9, 2026:
   - `COLLOC.CO_PERSONNELS` (~40,394 records): government personnel and payroll registry. Fields include employee identifiers, names, phone numbers, bank details (bank code, branch, account number, RIB), service codes, management year, and salary amounts.
   - `COLLOC.REDEVABLES` (~960,146 records): national taxpayer and debtor registry. Fields include taxpayer ID (N_C_CONTRIB), full name or business denomination, address, phone number, and business registration number. Data spans from 2017 onwards.
   - `GFORD.ORD_MANDATS` (~659,195 records): complete public payment order database. Fields include mandate number, date, transaction purpose, amount (with and without VAT), beneficiary bank details (bank code, branch, account number, RIB), beneficiary name, NINEA (Numéro d'Identification Nationale des Entreprises et Associations), and operation description. Data covers at least April 2024 through extraction date.
-
-  **Server 10.6.0.26 (SICA — Payroll and Salary Management System):** Operational files spanning January 2, 2025 to May 8, 2026 (18 months of financial operations) were extracted, including:
+  **Server 10.6.0.26 (SICA -- Payroll and Salary Management System):** Operational files spanning January 2, 2025 to May 8, 2026 (18 months of financial operations) were extracted, including:
   - Government salary batch files for March 2026 by geographic region.
   - Wire transfer files (virement) dated May 8, 2026 in bank-standard CSV format (bank code, branch, account number, RIB, amount, beneficiary name, operation label). Types observed include salary payments, exam correction allowances, and supply purchases. These files confirm active access to live operational systems on the day of extraction.
   - Payment mandate files (MD26-XXXXXX series) documenting individual payroll authorizations.
   - Exam allowance transfers (CFEE 2025) linking the Trésor system to national primary education examination payment flows.
-
   Total estimated compromised records: approximately **1,659,735 database entries** across three tables, plus 323 days of SICA financial operation files.
-
   **CTI observations:**
   - The database extraction (May 9, 2026) and SICA file activity (up to May 8, 2026) predate the AuditTeam public claim (May 17-18, 2026) by approximately 9 days, confirming sustained covert access before ransomware deployment. This is consistent with AuditTeam's double-extortion methodology: exfiltrate first, encrypt second.
   - The REDEVABLES table (~960,146 records) represents one of the largest PII exposures from a public financial institution in West Africa recorded in AFRINTEL.
@@ -421,7 +415,6 @@ Such a compromise could potentially allow:
   - **Confidence level: High. Impact level: Level 4** (critical national financial infrastructure, large-scale PII, access to live operational financial systems, double extortion).
 
 #### 🌍 Multi-country (incl. 🇪🇬 Egypt, 🇱🇾 Libya) - Passport Scans [Data Leak]
-
 - **Actor / Group:** raylie (forum [Citizen])
 - **Sector:** PII / Travel Documents / Government
 - **Status:** Data Leak (Public)
