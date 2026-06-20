@@ -113,12 +113,11 @@
   Exposure of such information could provide threat actors with detailed insight into the organization's financial operations, business relationships, member companies, suppliers, and internal IT environment.
   The leak also appears to contain backups of business and accounting systems that may include sensitive financial information and data related to CGCSA member organizations.
   
-#### 🌍 Africa (Multi-country) – Resume Docs Data Leak
+#### 🌍 Africa (Multi-country) – Resume docs data leak
 - **Actor / Source:** attackercompany (via the [Citizen] forum)
-- **Sector:** Recruitment / Personal Data
+- **Sector:** Recruitment / Personal data
 - **Status:** Claimed data leak
 - **Website:** Not specified (seller contact details intentionally omitted)
-
 - **Description:**  
   A cybercriminal claims a massive leak of resume documents (*resume docs*) on a global scale. The data allegedly involves hundreds of thousands of individuals across more than 200 countries.
   African countries explicitly listed in the published count include:

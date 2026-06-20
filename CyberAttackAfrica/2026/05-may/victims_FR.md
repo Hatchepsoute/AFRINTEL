@@ -114,7 +114,7 @@
   L'exposition de ce type d'informations pourrait permettre à des acteurs malveillants d'obtenir une visibilité détaillée sur les opérations financières, les relations commerciales, les adhérents, les fournisseurs et l'environnement informatique de l'organisation.
   La fuite semble également inclure des sauvegardes de systèmes métiers et comptables susceptibles de contenir des informations financières sensibles ainsi que des données relatives aux entreprises membres du CGCSA.
 
-#### 🌍 Afrique (Multi-pays) – Fuite de données de CV (Resume Docs)
+#### 🌍 Afrique (Multi-pays) – Fuite de données de CV (Resume docs)
 - **Acteur / Groupe:** attackercompany (via le forum [Citizen])
 - **Secteur :** Recrutement / Données personnelles
 - **Statut :** Fuite de données revendiquée
