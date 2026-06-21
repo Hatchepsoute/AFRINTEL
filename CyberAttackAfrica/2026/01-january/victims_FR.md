@@ -11,16 +11,16 @@
 
 ### 03 Janvier 2026
 #### 🇹🇬 Togo - Gouvernement du Togo (gouv.tg)
-- **Groupe ransomware :** Bigbrother (Initial Access Broker)
-- **Secteur :** Administration Publique Centrale
+- **Acteur / Source :** Bigbrother (Initial Access Broker)
+- **Secteur :** Administration publique centrale
 - **Site web :** gouv.tg
 - **Statut :** Revendication (Vente d'accès)
 - **Description victime :** Infrastructure du gouvernement togolais. L'acteur prétend détenir de nouveaux accès à plusieurs plateformes officielles.
 
 ### 04 Janvier 2026
-#### 🇳🇪 Niger - Sites Gouvernementaux (Défacement Massif)
-- **Groupe ransomware :** Non revendiqué
-- **Secteur :** Administration Publique
+#### 🇳🇪 Niger - Sites gouvernementaux (Défacement massif)
+- **Acteur / Source :** Non revendiqué
+- **Secteur :** Administration publique
 - **Sites web :** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
 - **Statut :** Non revendiqué (Défacement massif)
 - **Description victime :** Plusieurs plateformes officielles du gouvernement nigérien touchées par une attaque coordonnée affichant un message à caractère politique.

@@ -11,7 +11,7 @@
 
 ### 03 January 2026
 #### 🇹🇬 Togo - Government of Togo (gouv.tg)
-- **Ransomware Group:** Bigbrother (Initial Access Broker)
+- **Actor / Source:** Bigbrother (Initial Access Broker)
 - **Sector:** Central Public Administration
 - **Website:** gouv.tg
 - **Status:** Claimed (Access Sale)
@@ -19,11 +19,11 @@
 
 ### 04 January 2026
 #### 🇳🇪 Niger - Government Websites (Massive Defacement)
-- **Ransomware Group:** Unclaimed
+- **Actor / Source:** Unclaimed
 - **Sector:** Public Administration
 - **Websites:** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
 - **Status:** Unclaimed (Massive Defacement)
-- **Victim Description:** Multiple official Nigerian government platforms hit by a coordinated attack displaying a politically-charged message.
+- **Victim Description:** Multiple official Nigerien government platforms hit by a coordinated attack displaying a politically-charged message.
 
 ### 06 January 2026
 #### 🇿🇦 South Africa - Hytec South Africa

@@ -241,7 +241,7 @@ FRAP (public administration reform fund): breach attributed to September 2025, i
 - **APT73/BASHE** targeted strategic Moroccan institutions (HACA, Maroc Telecom, 2M TV, IRES), suggesting possible geopolitical motivation.
 - Insurance sector heavily hit in South Africa (Lion of Africa, The Unlimited).
 
-### 4.2 Data Breaches / System intrusions (22 incidents)
+### 5.2 Data breaches / System intrusions (22 incidents)
 
 | Country          | Breaches/Intrusions | Main actors |
 |------------------|---------------------|-------------|
@@ -264,7 +264,7 @@ FRAP (public administration reform fund): breach attributed to September 2025, i
 - **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by Keymous, exposing health surveillance tools and government email/staff records.
 - Massive Nigerian breaches: Remita (3 TB, including KYC documents and government HSM keys) and Ahmadu Bello University (11,000+ staff records).
 
-## 5. Sectoral impact
+## 6. Sectoral impact
 
 | Sector                | Incidents | Percentage |
 |-----------------------|-----------|------------|
@@ -305,7 +305,7 @@ pie
 - The UBA Senegal incident highlights a new trend: **direct financial fraud through system compromise**, bypassing traditional ransomware.
 - E‑commerce platforms (Loozap) are increasingly targeted for user credential theft.
 
-## 6. Threat actor profile
+## 7. Threat actor profile
 
 | Actor            | Type            | Incidents | Primary targets |
 |------------------|-----------------|-----------|-----------------|
@@ -319,7 +319,7 @@ pie
 
 **Emerging actors**: xNov (supply chain focus), XP95 (South African government targeting), zimablue (Cameroon e‑commerce), Keymous (West African health ministries), Grubder (Algerian tech sector).
 
-### 6.1 Risk assessment
+### 7.1 Risk assessment
 
 | Country | Risk Level |
 |--------|-----------|
@@ -332,7 +332,7 @@ pie
 | Guinea | 🟠 Medium |
 | Others | 🟠 Medium |
 
-## 7. Key trends & intelligence gaps
+## 8. Key trends and intelligence gaps
 
 ### Trends
 1. **Ransomware evolves into data extortion** - XP95 and others sell exfiltrated data instead of merely encrypting.
@@ -348,7 +348,7 @@ pie
 - The UBA Senegal attack was executed in late January but only disclosed in March - significant delay in public awareness.
 - Guinea’s Ministry of Health compromise remains partially confirmed (correlated access, not full disclosure).
 
-## 8. MITRE ATT&CK Mapping (Contextual)
+## 9. MITRE ATT&CK mapping (contextual)
 
 | Incident | Techniques |
 |---------|-----------|
@@ -368,7 +368,7 @@ pie
 - T1486 - Ransomware  
 - T1531 - Account Manipulation (UBA Senegal)
 
-## 9. Recommendations
+## 10. Recommendations
 
 ### For African governments and enterprises
 - **Database security**: Encrypt sensitive data, implement access controls, regular audits.
@@ -385,7 +385,7 @@ pie
 - Prioritize monitoring of government, education, and health sectors in North, West, and Southern Africa.
 - Watch for **non-ransomware financial intrusions** - UBA Senegal is likely not an isolated case.
 
-## 10. SOC recommendations
+## 11. SOC tactical recommendations
 
 ### Detection priorities
 - Monitor **data exfiltration patterns (T1041)**  
@@ -401,7 +401,7 @@ pie
 - Identity logs  
 - Core banking system logs (for financial institutions)
 
-## 11. Strategic recommendations
+## 12. Strategic recommendations
 
 - Enforce **MFA on all critical systems**  
 - Implement **network segmentation** (separate ATM network from core banking)  
@@ -410,7 +410,7 @@ pie
 - Conduct **incident response exercises** including red-team simulations  
 - **Regulatory push**: Central banks should mandate minimum SOC and fraud detection standards for financial institutions
 
-## 12. Conclusion
+## 13. Conclusion
 
 March 2026 confirms that **Africa is a prime target for industrialized cybercrime**. The convergence of ransomware groups, data brokers, supply chain attacks, direct financial intrusions (UBA Senegal), and e‑commerce credential theft (Loozap) creates a high-risk environment. South Africa, Morocco, and Egypt remain the most affected, but **West and Central Africa are emerging as new hotspots** (Senegal, Cameroon, Guinea). Health ministries are increasingly targeted, as seen in Egypt and Guinea. Financial institutions and e‑commerce platforms must urgently strengthen real-time monitoring, anti-fraud capabilities, and password security. AFRINTEL will continue tracking these trends.
 

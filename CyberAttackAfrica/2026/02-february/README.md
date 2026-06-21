@@ -1,367 +1,350 @@
-![Status](https://img.shields.io/badge/Status-Claim--Unverified-orange)
-![Coverage](https://img.shields.io/badge/Coverage-20%20Victims-blue)
-![Africa Scope](https://img.shields.io/badge/Africa%20Scope-Continental-green)
-![Data Source](https://img.shields.io/badge/Data%20Source-Ransomfeed%20%2F%20Leak%20Sites-lightgrey)
-![Period](https://img.shields.io/badge/Period-2026--02-informational)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Breach-red)
+![Period](https://img.shields.io/badge/Period-February%202026-lightgrey)
+![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
-# AFRINTEL -- CTI Wave Report (Africa)
+# CTI Report - Cyberattacks in Africa (February 2026)
 
-👉🏾 [**French version available here** ](README_FR.md)
-## Africa Ransomware Landscape -- February 2026
+👉🏾 [**French version available here**](./README_FR.md)
 
-> Source: Monitoring of Ransomware Group leak sites (Darkweb)
+## 1. Executive summary
 
-------------------------------------------------------------------------
+February 2026 recorded **20 cyber incidents** publicly claimed or detected across Africa, all attributed to ransomware or data extortion groups. The month is defined by one extraordinary event: the alleged 139 TB exfiltration from DAF SENEGAL (Directorate of General Administration and Equipment), by far the largest data breach claim recorded by AFRINTEL in 2026. Key findings:
 
-## 📊 Executive summary
+- **20 ransomware / data extortion incidents (100%)**.
+- **14 countries** affected; **South Africa** (3), **Egypt** (3), **Ghana** (2) and **Nigeria** (2) lead.
+- **11 distinct threat actors**; **thegentlemen** (5 incidents) dominates, followed by **0APT** (3) and **LockBit 5.0** (3).
+- Aviation sector under sustained pressure: BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire all claimed in February.
+- Noteworthy: 0APT, responsible for 3 large-volume claims (BlueSky 3.5 TB, Global Media Alliance 2.5 TB, Vertex Law 850 GB), subsequently disappeared from public leak sites. Claims remain unverified.
 
-During February 2026, **20 African organizations** fell victim to ransomware group attacks on the darkweb.
+> **Note:** The Diesel-Electric South Africa claim (LockBit 5.0, February 27) may overlap with a separate LockBit 5.0 claim for the same victim in March 2026. Requires independent verification.
 
-### 🔴 CRITICAL INCIDENT: DAF SENEGAL (139 TB of leaked data)
+### 📋 Victim list
 
-On **February 5, 2026**, the **Direction de l'Administration Générale et de l'Équipement (DAF) du Sénégal** appeared on a darkweb leak site with an **unprecedented data breach**:
+👉🏾 [View full victim list](./victims.md)
 
-| Metric | Value |
-|--------|-------|
-| **Data Volume** | **139 TERABYTES** |
-| **Data Type** | Citizen Database, Biometric Data, Immigration Records |
-| **Location** | Dakar, Senegal |
-| **Threat Actor** | The Green Blood Group |
-| **Encryption Date** | 2026 |
-| **Status** | Claim |
+## 2. Methodology
 
-**⚠️ This is the LARGEST data breach reported in Africa for 2026.**
+- **Scope**: 54 African countries.
+- **Period**: 1-28 February 2026 (incidents disclosed or claimed during this month; actual attack dates may be earlier).
+- **Sources**: Dark web, DLS (leak sites), OSINT, Telegram channels, underground forums.
+- **Inclusion**: Publicly claimed or attributed incidents with identified victim, country, sector.
+- **Typology**: All incidents this month involve ransomware encryption, double extortion (encrypt + threaten to publish), or large-scale data exfiltration by criminal groups. No pure data broker activity identified.
 
-### 🔴 EMERGENCE AND DISAPPEARANCE OF THE "0APT" GROUP
+## 3. Global overview
 
-A **new threat actor, 0APT**, appeared in early February with **3 attacks**:
-- 🇸🇴 BlueSky Aviation (Somalia) - 3.5 TB exfiltrated
-- 🇬🇭 Global Media Alliance (Ghana) - 2.5 TB exfiltrated
-- 🇹🇿 Vertex Law Chambers (Tanzania) - 850 GB exfiltrated
+| Indicator                     | Value |
+|-------------------------------|-------|
+| Total victims                 | 20    |
+| Countries affected            | 14    |
+| Distinct actors               | 11    |
+| Ransomware / data extortion   | 20 (100%) |
 
-**⚠️ CRITICAL OBSERVATION:** As of early March, **all 0APT leak sites are no longer accessible**.
+**Most targeted countries:**
+- 🇿🇦 South Africa: 3 victims
+- 🇪🇬 Egypt: 3 victims
+- 🇬🇭 Ghana: 2 victims
+- 🇳🇬 Nigeria: 2 victims
+- 🇸🇳 Senegal: 1 victim
+- 🇸🇴 Somalia: 1 victim
+- 🇹🇿 Tanzania: 1 victim
+- 🇰🇪 Kenya: 1 victim
+- 🇲🇺 Mauritius: 1 victim
+- 🇹🇳 Tunisia: 1 victim
+- 🇸🇩 Sudan: 1 victim
+- 🇨🇮 Ivory Coast: 1 victim
+- 🇲🇦 Morocco: 1 victim
+- 🇳🇦 Namibia: 1 victim
 
-This raises **urgent questions** for the CTI community:
-- Was this a **temporary operation**?
-- Is 0APT **rebranding** under a new name?
-- Were these attacks a **test** for a larger campaign?
+```mermaid
+pie
+    title Number of victims by country (February 2026)
+    "🇿🇦 South Africa (3)" : 3
+    "🇪🇬 Egypt (3)" : 3
+    "🇬🇭 Ghana (2)" : 2
+    "🇳🇬 Nigeria (2)" : 2
+    "🇸🇳 Senegal (1)" : 1
+    "🇸🇴 Somalia (1)" : 1
+    "🇹🇿 Tanzania (1)" : 1
+    "🇰🇪 Kenya (1)" : 1
+    "🇲🇺 Mauritius (1)" : 1
+    "🇹🇳 Tunisia (1)" : 1
+    "🇸🇩 Sudan (1)" : 1
+    "🇨🇮 Ivory Coast (1)" : 1
+    "🇲🇦 Morocco (1)" : 1
+    "🇳🇦 Namibia (1)" : 1
+```
 
-### 📊 Other notable trends
-- `thegentlemen` remains the most active (5 incidents)
-- Geographic expansion to **13 countries**
-- **Government, Aviation, and Energy** sectors most targeted
+**Top 3 largest claimed breaches:**
+| Rank | Victim | Actor | Volume |
+|:---:|--------|-------|-------:|
+| 1 | 🇸🇳 DAF SENEGAL | The Green Blood Group | 139 TB |
+| 2 | 🇸🇴 BlueSky Aviation (Somalia) | 0APT | 3.5 TB |
+| 3 | 🇬🇭 Global Media Alliance (Ghana) | 0APT | 2.5 TB |
 
-------------------------------------------------------------------------
+**Most prolific actors:**
+| Actor | Incidents | Countries |
+|-------|:---------:|----------|
+| thegentlemen | 5 | Kenya, Ghana, Egypt, South Africa, Tunisia |
+| 0APT | 3 | Somalia, Ghana, Tanzania |
+| LockBit 5.0 | 3 | Mauritius, Egypt, South Africa |
+| incransom | 2 | Nigeria, Ivory Coast |
+| vect | 1 | South Africa |
+| tengu | 1 | Morocco |
+| payload | 1 | Egypt |
+| apt73/bashe | 1 | Sudan |
+| qilin | 1 | Namibia |
+| killsec | 1 | Nigeria |
+| The Green Blood Group | 1 | Senegal |
 
-## 🌍 Victim breakdown (all 20 listings)
+```mermaid
+pie
+    title Most active threat actors (February 2026)
+    "thegentlemen (5)" : 5
+    "0APT (3)" : 3
+    "LockBit 5.0 (3)" : 3
+    "incransom (2)" : 2
+    "Others - 1 each (7)" : 7
+```
 
-### 🇸🇳 Senegal -- DAF SENEGAL (CRITICAL)
-- **Date:** 2026-02-05
-- **Threat Actor:** `The Green Blood Group`
-- **Data Volume:** **139 TB** ⚠️
-- **Compromised Data:**
-  - Citizen Database
-  - Biometric Data
-  - Immigration Records
-  - Backup Systems
-  - Sensitive Administrative Documents
-- **Location:** Dakar, Senegal
-- **Status:** Claim
-------------------------------------------------------------------------
+## 4. Country-by-country overview
 
-### 🇸🇴 Somalia -- BlueSky Aviation
-- **Threat Actor:** `0APT`
-- **Date:** 2026-02-01
-- **Data Exfiltrated:** 3.5 TB
-- **Sector:** Aviation
-- **Website:** bluesky-air.com 
-- **Status:** Claim
+> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
 
-------------------------------------------------------------------------
+### 🇸🇳 Senegal (1 incident - Critical)
 
-### 🇬🇭 Ghana -- Global Media Alliance
-- **Threat Actor:** `0APT`
-- **Date:** 2026-02-05
-- **Data Exfiltrated:** 2.5 TB
-- **Sector:** Media
-- **Website:** gmaworld.com 
-- **Status:** Claim
+**DAF SENEGAL** (Direction de l'Administration Générale et de l'Équipement) is the most critical claim of the month. The Green Blood Group claims 139 TB of exfiltrated data including citizen databases and biometric records. If even partially authentic, this would represent one of the largest government data exposures in African history. Biometric record exposure creates irreversible risks: unlike passwords, biometric identifiers cannot be changed. Risks include identity fraud at national scale, tampering with government service delivery, and potential exploitation of citizen identity infrastructure.
 
-------------------------------------------------------------------------
+### 🇸🇴 Somalia (1 incident)
 
-### 🇹🇿 Tanzania -- Vertex Law Chambers
-- **Threat Actor:** `0APT`
-- **Date:** 2026-02-06
-- **Data Exfiltrated:** 850 GB
-- **Sector:** Legal
-- **Website:** vertexlaw.co.tz 
-- **Status:** Claim
+**BlueSky Aviation** (bluesky-air.com) was claimed by 0APT with 3.5 TB of alleged exfiltration. This is one of three large-volume claims made by 0APT in February before the group disappeared from public leak sites. The claim remains unverified. Aviation sector exposure risks include operational data, passenger records, and flight logistics information.
 
-------------------------------------------------------------------------
+### 🇬🇭 Ghana (2 incidents)
 
-### 🇰🇪 Kenya -- Wells Fargo
-- **Threat Actor:** `thegentlemen`
-- **Date:** 2026-02-06
-- **Sector:** Banking
-- **Website:** fargo.co.ke
-- **Status:** Claim
-------------------------------------------------------------------------
+**Global Media Alliance** (gmaworld.com) was claimed by 0APT (2.5 TB). An integrated media and communications company, its exposure would risk advertiser contracts, editorial content, and personnel data. **Ghana Bauxite Company** (ghanabauxite.com) was claimed by thegentlemen. A state-linked mining enterprise, its targeting reflects the group's emerging interest in African extractive industries alongside its traditional multi-sector approach.
 
-### 🇳🇬 Nigeria -- Getly
-- **Threat Actor:** `killsec`
-- **Date:** 2026-02-09
-- **Sector:** Fintech
-- **Website:** getly.app
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇹🇿 Tanzania (1 incident)
 
-### 🇬🇭 Ghana -- Ghana Bauxite
-- **Threat Actor:** `thegentlemen`
-- **Date:** 2026-02-11
-- **Sector:** Public Service
-- **Website:** ghanabauxite.com
-- **Status:** Claim
-------------------------------------------------------------------------
+**Vertex Law Chambers** (vertexlaw.co.tz) was claimed by 0APT (850 GB). A law firm breach creates particularly high sensitivity: client files, privileged communications, court records, and business contracts are all potentially exposed.
 
-### 🇳🇬 Nigeria -- Midwestern Oil & Gas
-- **Threat Actor:** `incransom`
-- **Date:** 2026-02-12
-- **Sector:** Energy
-- **Website:** midwesternog.com
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇰🇪 Kenya (1 incident)
 
-### 🇪🇬 Egypt -- Nile Air
-- **Threat Actor:** `thegentlemen`
-- **Date:** 2026-02-13
-- **Sector:** Airlines
-- **Website:** nileair.com
-- **Status:** Claim
-------------------------------------------------------------------------
+**Wells Fargo Kenya** (fargo.co.ke, thegentlemen) is a local security and financial logistics provider. Financial and security logistics data exposure creates risks of physical security compromise and financial fraud.
 
-### 🇲🇺 Mauritius -- Sands Suites
-- **Threat Actor:** `lockbit5`
-- **Date:** 2026-02-14
-- **Sector:** Hospitality
-- **Website:** sands.mu
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇳🇬 Nigeria (2 incidents)
 
-### 🇿🇦 South Africa -- Intsika Yethu Municipality
-- **Threat Actor:** `thegentlemen`
-- **Date:** 2026-02-15
-- **Sector:** Local Government
-- **Website:** intsikayethu.gov.za
-- **Status:** Claim
-------------------------------------------------------------------------
+**Getly** (getly.app, killsec, February 9) is a fintech application. Mobile fintech breaches directly expose users' financial accounts and transaction histories. **Midwestern Oil & Gas** (midwesternog.com, incransom, February 12) is an upstream oil and gas company. Critical energy sector targeting in Nigeria mirrors a broader trend observed across February (aviation, energy, mining all hit).
 
-### 🇹🇳 Tunisia -- BITS
-- **Threat Actor:** `thegentlemen`
-- **Date:** 2026-02-15
-- **Sector:** IT Consulting
-- **Website:** bits.com.tn
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇪🇬 Egypt (3 incidents)
 
-### 🇪🇬 Egypt -- sodic.com
-- **Threat Actor:** `payload`
-- **Date:** 2026-02-17
-- **Sector:** Real Estate
-- **Website:** sodic.com
-- **Status:** Claim
-------------------------------------------------------------------------
+Egypt records three distinct ransomware groups in February. **Nile Air** (nileair.com, thegentlemen, February 13) is a private airline at Cairo International Airport. **sodic.com** (payload, February 17) is one of Egypt's leading real estate developers. **Ministry of Agriculture** (moa.gov.eg, LockBit 5.0, February 20) is a government ministry with responsibilities for food security and land management. The simultaneous targeting by three different ransomware groups across aviation, real estate, and government sectors illustrates Egypt's sustained exposure.
 
-### 🇸🇩 Sudan -- amtaar.com
-- **Threat Actor:** `apt73/bashe`
-- **Date:** 2026-02-18
-- **Sector:** Consulting
-- **Website:** amtaar.com
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇲🇺 Mauritius (1 incident)
 
-### 🇨🇮 Ivory Coast -- aircotedivoire.com
-- **Threat Actor:** `incransom`
-- **Date:** 2026-02-19
-- **Sector:** Airlines
-- **Website:** aircotedivoire.com
-- **Status:** Claim
-------------------------------------------------------------------------
+**Sands Suites** (sands.mu, LockBit 5.0, February 14) is a luxury resort. Hospitality sector breaches typically expose guest personal data, payment information, and loyalty program records.
 
-### 🇲🇦 Morocco -- Shora Advisory
-- **Threat Actor:** `tengu`
-- **Date:** 2026-02-20
-- **Sector:** Accounting
-- **Website:** shora.ma
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇿🇦 South Africa (3 incidents)
 
-### 🇪🇬 Egypt -- moa.gov.eg
-- **Threat Actor:** `lockbit5`
-- **Date:** 2026-02-20
-- **Sector:** Government
-- **Website:** moa.gov.eg
-- **Status:** Claim
-------------------------------------------------------------------------
+**Intsika Yethu Municipality** (intsikayethu.gov.za, thegentlemen, February 15) is a local municipality in the Eastern Cape. Municipal data breaches risk exposing citizen service records, infrastructure details, and staff data. **EnerTec** (enertec.co.za, vect, February 24, 151.79 GB) is an energy solutions and battery distribution company. **Diesel-Electric** (diesel-electric.co.za, LockBit 5.0, February 27) is a major automotive components distributor. A possible re-publication of this same victim appeared under LockBit 5.0 in March 2026, requiring verification.
 
-### 🇳🇦 Namibia -- CYMOT
-- **Threat Actor:** `qilin`
-- **Date:** 2026-02-22
-- **Sector:** Retail
-- **Website:** cymot.com
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇹🇳 Tunisia (1 incident)
 
-### 🇿🇦 South Africa -- EnerTec
-- **Threat Actor:** `vect`
-- **Date:** 2026-02-24
-- **Data Volume:** 151.79 GB
-- **Sector:** Energy
-- **Website:** enertec.co.za
-- **Status:** Claim
-------------------------------------------------------------------------
+**BITS** (bits.com.tn, thegentlemen, February 15) is an IT services and consulting firm. IT consulting firms hold client infrastructure documentation and access credentials, creating high secondary breach risk.
 
-### 🇿🇦 South Africa -- Diesel-Electric
-- **Threat Actor:** `Lockbit5`
-- **Date:** 2026-02-27
-- **Sector:** Automotive
-- **Website:** diesel-electric.co.za
-- **Status:** Claim
-------------------------------------------------------------------------
+### 🇸🇩 Sudan (1 incident)
 
-## 📊 Statistics
+**Amtaar Investment** (amtaar.com, apt73/bashe, February 18): 3.5 GB of data were claimed and partially published. Amtaar is a major agricultural investment firm managing 6,000 hectares of irrigated land with a key role in national food security. This is the only February incident with confirmed partial data publication. Sudan's conflict context amplifies the potential strategic impact of agricultural sector data exposure.
 
-| Metric | Value |
-|--------|-------|
-| **Total Incidents** | 20 |
-| **Countries Affected** | 13 |
-| **Active Threat Actors** | 10 |
-| **Known Exfiltrated Data** | ~147 TB+ |
+### 🇨🇮 Ivory Coast (1 incident)
 
-### Top 3 Largest Breaches
-| Rank | Incident | Data Volume |
-|------|----------|-------------|
-| 🥇 | **DAF SENEGAL** | **139 TB** |
-| 🥈 | BlueSky Aviation | 3.5 TB |
-| 🥉 | Global Media Alliance | 2.5 TB |
+**Air Côte d'Ivoire** (aircotedivoire.com, incransom, February 19) is the national airline. Combined with BlueSky Somalia and Nile Air Egypt, February 2026 becomes the month with the most African airline ransomware claims recorded by AFRINTEL.
 
-### Top Threat Actors
-| Actor | Incidents |
-|-------|-----------|
-| `thegentlemen` | 5 |
-| `0APT` | 3 |
-| `lockbit5` | 2 |
-| `incransom` | 2 |
+### 🇲🇦 Morocco (1 incident)
 
-### Top Affected Countries
-| Country | Incidents |
+**Shora Advisory** (shora.ma, tengu, February 20) is an accounting and financial advisory firm. Financial advisory firms hold sensitive business financial records, tax data, and corporate strategy documents.
+
+### 🇳🇦 Namibia (1 incident)
+
+**CYMOT** (cymot.com, qilin, February 22) is a Namibian retailer of automotive spares, tools, and equipment.
+
+---
+
+## 5. Detailed analysis by incident type
+
+### 5.1 Ransomware and data extortion (20 incidents)
+
+| Country | Incidents | Main actors |
+|---------|:---------:|-------------|
+| South Africa | 3 | thegentlemen, vect, LockBit 5.0 |
+| Egypt | 3 | thegentlemen, payload, LockBit 5.0 |
+| Ghana | 2 | 0APT, thegentlemen |
+| Nigeria | 2 | killsec, incransom |
+| Senegal | 1 | The Green Blood Group (139 TB) |
+| Somalia | 1 | 0APT (3.5 TB) |
+| Tanzania | 1 | 0APT (850 GB) |
+| Kenya | 1 | thegentlemen |
+| Mauritius | 1 | LockBit 5.0 |
+| Tunisia | 1 | thegentlemen |
+| Sudan | 1 | apt73/bashe (3.5 GB leaked) |
+| Ivory Coast | 1 | incransom |
+| Morocco | 1 | tengu |
+| Namibia | 1 | qilin |
+
+**Key observations:**
+- **0APT** emerged as a new prolific actor in early February (3 claims in 5 days) then disappeared from public DLS. The authenticity of TB-scale claims remains unverified.
+- **Aviation sector**: 3 airlines claimed (BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire) by 3 different actors. Likely independent opportunistic targeting.
+- **thegentlemen** continues its January 2026 pattern with 5 new claims in 4 countries.
+- **LockBit 5.0** claims 3 victims, confirming its operational continuity under the LockBit 5.x branding.
+
+## 6. Sectoral impact
+
+| Sector | Incidents | Percentage |
+|--------|:---------:|:----------:|
+| Government / Administration | 3 | 15.0% |
+| Airlines / Aviation | 3 | 15.0% |
+| Energy | 2 | 10.0% |
+| Finance / Banking / FinTech | 2 | 10.0% |
+| Mining / Extractive | 2 | 10.0% |
+| Legal | 1 | 5.0% |
+| Media | 1 | 5.0% |
+| Hospitality | 1 | 5.0% |
+| IT consulting | 1 | 5.0% |
+| Real estate | 1 | 5.0% |
+| Agriculture | 1 | 5.0% |
+| Retail | 1 | 5.0% |
+| Accounting | 1 | 5.0% |
+
+```mermaid
+pie
+    title Sector distribution (February 2026)
+    "Government/Admin (3)" : 3
+    "Airlines/Aviation (3)" : 3
+    "Energy (2)" : 2
+    "Finance/FinTech (2)" : 2
+    "Mining (2)" : 2
+    "Legal (1)" : 1
+    "Media (1)" : 1
+    "Hospitality (1)" : 1
+    "IT consulting (1)" : 1
+    "Real estate (1)" : 1
+    "Agriculture (1)" : 1
+    "Retail/Accounting (2)" : 2
+```
+
+**Takeaways:**
+- Government, aviation, and energy form the critical infrastructure cluster (8 incidents, 40%).
+- Aviation's concentration (3 airlines in one month) is unprecedented in AFRINTEL records.
+- The DAF Senegal breach (government biometric data) represents a potential Level 4 impact scenario if confirmed.
+
+## 7. Threat actor profile
+
+| Actor | Type | Incidents | Primary targets |
+|-------|------|:---------:|-----------------|
+| thegentlemen | Ransomware group | 5 | Cross-sector, 4 countries |
+| 0APT | Unknown (disappeared) | 3 | Aviation, media, legal |
+| LockBit 5.0 | Ransomware | 3 | Hospitality, government, automotive |
+| incransom | Ransomware | 2 | Energy, aviation |
+| The Green Blood Group | Ransomware / extortion | 1 | Senegal (government) |
+| apt73/bashe | Ransomware | 1 | Sudan (agriculture) |
+| vect | Ransomware | 1 | South Africa (energy) |
+| tengu | Ransomware | 1 | Morocco (accounting) |
+| payload | Ransomware | 1 | Egypt (real estate) |
+| killsec | Ransomware | 1 | Nigeria (fintech) |
+| qilin | Ransomware | 1 | Namibia (retail) |
+
+**Actor notes:**
+- **0APT**: Large TB-scale claims with no published evidence. Disappeared after February. Low confidence until verified.
+- **The Green Blood Group**: First AFRINTEL appearance. 139 TB government claim, unverified.
+- **LockBit 5.0**: Third consecutive month of African activity.
+
+### 7.1 Risk assessment
+
+| Country | Risk level |
 |---------|-----------|
-| South Africa | 3 |
-| Egypt | 3 |
-| Nigeria | 2 |
-| Ghana | 2 |
-| Senegal | 1 (139 TB) |
+| Senegal | 🔴 Critical (139 TB government + biometric - unverified) |
+| South Africa | 🔴 High (3 incidents: government, energy, automotive) |
+| Egypt | 🔴 High (3 incidents including government ministry) |
+| Sudan | 🟠 Medium-High (partial data confirmed, critical agriculture sector) |
+| Somalia | 🟠 Medium (claim unverified, aviation sector) |
+| Nigeria | 🟠 Medium (fintech + oil sector) |
+| Others | 🟡 Low-Medium |
 
-### Targeted Sectors
-| Sector | Incidents |
-|--------|-----------|
-| Government | 3 (including Senegal) |
-| Aviation | 3 |
-| Energy | 2 |
-| Banking/Fintech | 2 |
-| Media | 1 |
-| Legal | 1 |
-| Hospitality | 1 |
-| Real Estate | 1 |
-| Consulting | 1 |
-| Retail | 1 |
-| Automotive | 1 |
-| IT Consulting | 1 |
-| Public Service | 1 |
+## 8. Key trends and intelligence gaps
 
-------------------------------------------------------------------------
+### Trends
 
-## 📈 Strategic observations
+1. **DAF Senegal - potential record breach**: 139 TB including biometric data is an extraordinary claim. If confirmed, it marks a significant escalation in attacks against West African governments.
+2. **Aviation sector under attack**: Three airlines claimed in one month across three countries and three actors. Independent opportunistic targeting rather than a coordinated campaign.
+3. **0APT emergence and disappearance**: Three high-volume claims in 5 days then silence. Either the group went underground, claims were fabricated, or an established actor tested a new persona.
+4. **thegentlemen maintains pace**: Five incidents in February following six in January confirms consistent pan-African operational tempo.
+5. **LockBit 5.0 persistence**: Three claims confirm continued African targeting.
 
-### 🔴 CRITICAL: DAF SENEGAL - Largest African breach of 2026
+### Gaps
 
-- **139 TB** of sensitive government data exposed
-- Includes **biometric data** and **citizen database** - national security implications
-- Potential **identity theft** risk affecting millions of Senegalese citizens
-- Threat Actor: The Green Blood Group
+- DAF Senegal 139 TB claim not independently verified. No victim statement or external confirmation.
+- 0APT's true identity, tooling, and infrastructure are unknown.
+- Diesel-Electric South Africa: potential overlap between February and March 2026 LockBit 5.0 claims requires clarification.
+- The Green Blood Group's prior activity and technical capabilities are not documented.
 
-### 🔴 New Threat Actor: 0APT (Disappeared)
+## 9. MITRE ATT&CK mapping (contextual)
 
-- 3 attacks in 7 days, then **disappearance**
-- Total known exfiltration: **~7 TB**
-- Sites now **offline** - rebranding or completed operation?
-- **Priority #1 for monitoring**: May reappear under a new name
+| Incident | Techniques |
+|----------|-----------|
+| DAF Senegal | T1486 - Ransomware, T1041 - Exfiltration, T1005 - Data from Local System |
+| 0APT clusters | T1041 - Exfiltration, T1486 - Ransomware (assumed) |
+| Amtaar Sudan | T1486 - Ransomware, T1041 - Exfiltration (partial publish confirmed) |
+| thegentlemen (general) | T1486 - Ransomware, T1566 - Phishing (likely initial vector) |
 
-### 🌍 Geographic highlights
+**Common techniques observed:**
+- T1566 - Phishing (assumed primary initial vector)
+- T1190 - Exploit Public-Facing Application
+- T1486 - Ransomware (20 incidents)
+- T1041 - Exfiltration (DAF Senegal, Amtaar Sudan, 0APT clusters)
 
-- **West Africa** now a major target (Senegal, Ghana, Nigeria, Ivory Coast)
-- **East Africa** emerging (Somalia, Tanzania, Kenya)
-- **North Africa** remains active (Egypt, Morocco, Tunisia)
-- **Southern Africa** consistent (South Africa, Namibia)
+## 10. Recommendations
 
-------------------------------------------------------------------------
+### For African governments and enterprises
 
-## 🛡️ Post-incident recommendations
+- **Biometric data protection**: Organizations holding national biometric databases must treat these as highest-sensitivity assets requiring offline backups, strict access controls, and real-time anomaly detection on outbound data flows.
+- **Volume-based exfiltration detection**: Implement outbound transfer thresholds; 139 TB cannot leave a network undetected with proper monitoring in place.
+- **Aviation sector hardening**: Airport and airline OT systems must be segmented from IT networks; ransomware affecting reservation systems risks direct operational disruption.
+- **Ransomware IR playbooks**: Government ministries must maintain tested incident response plans with verified offline backups.
 
-### 🔴 Lessons learned from DAF SENEGAL
-- **Key takeaways**: The compromise of biometric and citizen database data exposes individuals to long-term identity theft risks
-- **Recommended monitoring**: Detection of suspicious activities using Senegalese identities (fraud, document applications)
-- **Communication**: Public awareness campaigns to inform citizens about risks and protective measures
+### For CTI analysts
 
-### For all African governments
-1. **Review biometric data storage** security
-2. **Segment citizen databases** from public-facing systems
-3. **Implement honeypots** to detect unauthorized access
-4. **Prepare identity theft response** plans
+- Track **The Green Blood Group** for additional claims or evidence publication.
+- Monitor **0APT** for reappearance under the same or alternative aliases.
+- Verify the **Diesel-Electric** double-claim (February + March) against victim communications.
+- Watch **apt73/bashe** expanding into East/Central Africa (Sudan is first AFRINTEL appearance for this region).
 
-### For the private sector
-1. **Monitor for 0APT resurgence** (may rebrand)
-2. **Update detection rules** for mass exfiltration events (>100 GB)
-3. **Validate backup integrity** immediately
-4. **Enforce MULTI-FACTOR AUTHENTICATION (MFA)** on all privileged accounts
+## 11. SOC tactical recommendations
 
-------------------------------------------------------------------------
+### Detection priorities
 
-## 🔎 CTI monitoring priorities
+- **Large-scale exfiltration detection (T1041)**: Alert on outbound transfers exceeding 10 GB in 24 hours from non-backup systems
+- **Ransomware deployment (T1486)**: Monitor mass file modification events, VSS deletion, and encryption process signatures
+- **Lateral movement pre-encryption**: Detect abnormal admin account usage, RDP chain movements, PsExec or similar tool usage
+- **Aviation and OT monitoring**: Segregate reservation and operational systems; detect unauthorized cross-segment connections
 
-| Priority | Focus | Reason |
-|----------|-------|-----------|
-| 🔴 **#1** | **0APT resurgence** | Disappeared group - may reappear under new name |
-| 🔴 **#2** | **DAF SENEGAL** | Largest breach |
-| 🟡 **#3** | `thegentlemen` | Most active (5 incidents) |
-| 🟡 **#4** | Government sector | 3 incidents including massive breach |
+### Monitoring sources
 
-------------------------------------------------------------------------
+- EDR / Sysmon
+- DLP (Data Loss Prevention): outbound volume alerts
+- Network flow analysis (NetFlow/IPFIX)
+- Firewall / Proxy logs
+- Identity and access management logs
 
-## 📝 Methodological note
+## 12. Strategic recommendations
 
-This report is based on **direct observation** of ransomware group leak sites in the dark web (Tor network). 
+- West African governments must establish **minimum IT security requirements for government administration systems**, following the DAF Senegal claim.
+- Create **cross-border aviation sector information sharing** between North African, West African, and East African CERT teams.
+- Develop **national biometric data protection frameworks** with specific security controls for government databases holding fingerprints, facial recognition data, and identity records.
+- **Critical infrastructure registries** should mandate cybersecurity incident reporting timelines for faster regional situational awareness.
 
--------------------------------------------------------------------------
-## ℹ️ Supplementary note on operational modes
+## 13. Conclusion
 
-**NB:** Ransomware groups adopt different publication strategies:
+February 2026 is marked above all by the scale and sensitivity of the DAF Senegal claim: if confirmed, 139 TB of citizen and biometric data would constitute one of the most significant government breaches in Africa's cyber history. Beyond this single case, the month demonstrates a broad threat landscape: 14 countries, 11 actors, and a particularly intense focus on aviation, energy, and critical government entities. thegentlemen, LockBit 5.0, and 0APT (briefly) all maintain high operational pace. AFRINTEL continues monitoring all active groups and will update assessments as verification progresses.
 
-- **Progressive publication**: Some groups publish **samples** of exfiltrated data during negotiations to **put pressure** on their victims and prove the legitimacy of their claims.
-
-- **Full publication**: Other groups **publish all data** after negotiation failure, typically after a public **deadline** displayed on their leak site expires.
-
-- **Data resale**: Some groups **sell the data** to other criminal groups or malicious actors on underground markets, multiplying the risks for victims (identity theft, targeted scams, etc.).
-
-These nuances explain why some victims see their data partially exposed before the deadline, while others experience massive leaks after talks break down, or discover their data for sale on illicit marketplaces.
-
-------------------------------------------------------------------------
-## ✍🏿 Author
-
-**Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
-----------------------------------------
-
-*AFRINTEL -- Open CTI Monitoring Initiative*\
-*TLP:CLEAR - Publicly shareable*
+**AFRINTEL** - African Cyber Threat Intelligence
+[GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

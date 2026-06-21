@@ -98,9 +98,9 @@ pie
 ```mermaid
 pie
     title Ransomware par pays
-    "Afrique de Sud (7)" : 7
+    "Afrique du Sud (7)" : 7
     "Maroc (5)" : 5
-    "Egypte (3)" : 3
+    "Égypte (3)" : 3
     "Madagascar (1)" : 1
     "Tunisie (1)" : 1
     "Namibie (1)" : 1
@@ -109,14 +109,14 @@ pie
 ```mermaid
 pie
     title Fuites de données par pays
-    "Afrique de Sud (6)" : 6
-    "Egypte (5)" : 5
+    "Afrique du Sud (6)" : 6
+    "Égypte (5)" : 5
     "Maroc (3)" : 3
     "Nigeria (2)" : 2
     "Cameroun (1)" : 1
-    "Algerie (1)" : 1
-    "Senegal (1)" : 1
-    "Guinee (1)" : 1
+    "Algérie (1)" : 1
+    "Sénégal (1)" : 1
+    "Guinée (1)" : 1
     "Zambie (1)" : 1
     "RDC (1)" : 1
 ```
@@ -165,9 +165,71 @@ pie
 | The Gentlemen    | Ransomware     | 2         | Tunisie, Afrique du Sud |
 | INC Ransom       | Ransomware     | 2         | Namibie, Afrique du Sud |
 
-## 4. Analyse détaillée par type d’incident
+## 4. Vue d’ensemble pays par pays
 
-### 4.1 Ransomware (19 incidents)
+> Tous les éléments présentés proviennent d’incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
+
+### 🇿🇦 Afrique du Sud (13 incidents : 7 ransomwares, 6 fuites de données)
+
+L’Afrique du Sud enregistre le plus grand nombre de victimes en mars avec 13 incidents couvrant les secteurs gouvernemental, éducatif, assurantiel, de l’ingénierie et des technologies. Le groupe XP95 est à l’origine des événements les plus impactants : gouvernement provincial du Gauteng (3,8 To vendus pour 25 000 $), Stats SA (154 Go, rançon de 100 000 $) et GCRA (147 Go). Il s’agit d’incidents d’extorsion par exfiltration de données, pas de ransomware classique : XP95 vend les données plutôt que de chiffrer les systèmes. La brèche du Gauteng compromet potentiellement des données de santé, d’éducation, de logement et d’activité économique pour la province la plus peuplée d’Afrique du Sud. Les identifiants administrateur de l’UNISA (plus grande université d’enseignement à distance d’Afrique) ont également été publiés, exposant un risque de compromission directe.
+
+### 🇲🇦 Maroc (8 incidents : 5 ransomwares, 3 fuites de données)
+
+Le Maroc a été lourdement ciblé par APT73/BASHE sur quatre entités stratégiques d’État : HACA (régulateur de l’audiovisuel), Maroc Telecom, 2M TV (télévision nationale) et l’IRES (think tank du Cabinet Royal). Cette concentration sur les médias et télécoms d’État marocains suggère une motivation géopolitique possible. xNov a exposé les données de la mutuelle étudiante ONOUSC (3 631 entrées) et les données de la supply chain Smarteez/L’Oréal Maroc (secrets OAuth2). anisanas2 a divulgué 300 Go du ministère de la Justice, dont 150 000 dossiers judiciaires.
+
+### 🇪🇬 Égypte (8 incidents : 3 ransomwares, 5 fuites de données)
+
+CrowStealer domine les incidents égyptiens avec 5 fuites : Canadian International College (2 925 dossiers étudiants), Autorité de régulation des déchets (WMRA), Orascom Construction, ministère de la Santé (3,8 millions de dossiers patients vendus 2 500 $) et ministère de l’Éducation. Cet acteur cible systématiquement les infrastructures gouvernementales et éducatives égyptiennes. La fuite du ministère de la Santé représente la plus grande exposition individuelle de données de santé sur le continent en mars.
+
+### 🇳🇬 Nigeria (2 incidents : 0 ransomware, 2 fuites de données)
+
+Remita/SystemSpecs a subi une fuite critique de 3 To incluant des documents KYC, du code source, des registres Docker et des clés HSM de chiffrement gouvernementales. Compte tenu du rôle de Remita comme colonne vertébrale des paiements gouvernementaux du Nigeria, l’exposition des clés HSM constitue un risque souverain pour l’infrastructure financière nationale. L’université Ahmadu Bello a également eu plus de 11 000 dossiers de personnels divulgués par AshleyWood2022.
+
+### 🇸🇳 Sénégal (1 incident - Intrusion système)
+
+UBA Sénégal a subi une cyberattaque coordonnée exécutée les 30 et 31 janvier mais rendue publique le 24 mars. Les attaquants ont compromis les systèmes internes, manipulé les bases de données pour augmenter les plafonds de retrait et transférer des fonds, puis coordonné plus de 3 400 retraits GAB frauduleux dans plusieurs villes, causant des pertes de 1,143 milliard FCFA (~1,9 M$). Cet incident illustre une catégorie d’attaque distincte : fraude financière directe par compromission système, sans déploiement de ransomware.
+
+### 🇿🇲 Zambie (1 incident - Fuite critique gouvernementale)
+
+ZISPIS, le registre national de protection sociale, a été compromis par Spirigatito avec environ 34,1 millions d’enregistrements (500 Go) exfiltrés, pouvant affecter jusqu’à 15 millions de personnes. Données personnelles, socioéconomiques, financières et GPS exposées. L’une des plus grandes fuites gouvernementales d’Afrique subsaharienne recensées par AFRINTEL.
+
+### 🇨🇲 Cameroun (1 incident)
+
+Loozap, une plateforme de petites annonces, a eu 34 000 comptes utilisateurs divulgués avec des mots de passe hashés en SHA1 par zimablue. L’utilisation du SHA1 témoigne de pratiques de sécurité insuffisantes. Date de l’incident : 28 janvier, identifié en mars.
+
+### 🇩🇿 Algérie (1 incident)
+
+Bridges (tebridges.dz), un prestataire CRM, a eu une base de données de 672 000 enregistrements vendue 1 743 $ par Grubder. Date d’attaque : 2 février, identifiée en mars.
+
+### 🇬🇳 Guinée (1 incident - Suspecté)
+
+Les tableaux de bord DHIS2 du ministère de la Santé de Guinée auraient été compromis par Keymous (activité observée en juillet 2025, identifiée en mars 2026). Des données personnelles du personnel gouvernemental et des outils de surveillance sanitaire potentiellement exposés. Les artefacts publiés suggèrent un accès par identifiants plutôt qu’un dump conventionnel. Partiellement confirmé.
+
+### 🇲🇬 Madagascar (1 incident)
+
+Orange Madagascar, opérateur télécom national de référence, a été revendiquée par Qilin. Cibler un opérateur télécom national critique fait peser des risques sur la connectivité et les communications.
+
+### 🇹🇳 Tunisie (1 incident)
+
+K.PROPHA (distribution pharmaceutique) a été revendiquée par The Gentlemen.
+
+### 🇳🇦 Namibie (1 incident)
+
+Namibia Airports Company a été revendiquée par INC Ransom. Les aéroports constituent des infrastructures nationales critiques.
+
+### 🇹🇿 Tanzanie (1 incident)
+
+SBC Tanzania (embouteilleur PepsiCo) a été revendiquée par Morpheus.
+
+### 🇨🇩 RDC (1 incident - Historique)
+
+FRAP (fonds de réforme de l’administration publique) : fuite attribuée à septembre 2025, identifiée en mars 2026.
+
+---
+
+## 5. Analyse détaillée par type d’incident
+
+### 5.1 Ransomware (19 incidents)
 
 | Pays             | Attaques ransomware | Acteurs principaux |
 |------------------|---------------------|---------------------|
@@ -196,7 +258,7 @@ pie
     "INC Ransom (2)" : 2
 ```
 
-### 4.2 Fuites de données / intrusions système (22 incidents)
+### 5.2 Fuites de données / intrusions système (22 incidents)
 
 | Pays             | Fuites/Intrusions | Acteurs principaux |
 |------------------|-------------------|---------------------|
@@ -219,7 +281,7 @@ pie
 - **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par Keymous, exposant des outils de surveillance sanitaire et des données gouvernementales (emails, personnels).
 - Fuites massives au Nigeria : Remita (3 To, incluant documents KYC et clés HSM gouvernementales) et université Ahmadu Bello (11 000+ dossiers).
 
-## 5. Impact sectoriel
+## 6. Impact sectoriel
 
 | Secteur                  | Incidents | Pourcentage |
 |--------------------------|-----------|-------------|
@@ -243,7 +305,7 @@ pie
 - L’incident UBA Sénégal illustre une nouvelle tendance : **fraude financière directe par compromission système**, contournant le ransomware classique.
 - Les plateformes de e‑commerce (Loozap) sont de plus en plus ciblées pour le vol d’identifiants.
 
-## 6. Profil des acteurs
+## 7. Profil des acteurs
 
 | Acteur           | Type           | Incidents | Cibles principales |
 |------------------|----------------|-----------|---------------------|
@@ -257,7 +319,7 @@ pie
 
 **Acteurs émergents** : xNov (ciblage supply chain), XP95 (gouvernement sud-africain), zimablue (e‑commerce camerounais), Keymous (ministères de la santé ouest-africains), Grubder (secteur tech algérien).
 
-### 6.1 Niveau de risque
+### 7.1 Niveau de risque
 
 | Pays | Risque |
 |------|--------|
@@ -270,7 +332,7 @@ pie
 | Guinée | 🟠 Moyen |
 | Autres | 🟠 Moyen |
 
-## 7. Tendances clés et lacunes de renseignement
+## 8. Tendances clés et lacunes de renseignement
 
 ### Tendances
 1. **Évolution des ransomwares** - XP95 et d’autres vendent les données exfiltrées plutôt que de simplement chiffrer.
@@ -286,7 +348,7 @@ pie
 - L’attaque UBA Sénégal a eu lieu fin janvier mais n’a été révélée qu’en mars - délai important dans la prise de conscience publique.
 - La compromission du ministère de la Santé guinéen reste partiellement confirmée (accès corrélé, pas de divulgation complète).
 
-## 8. Mapping MITRE ATT&CK (contextuel)
+## 9. Mapping MITRE ATT&CK (contextuel)
 
 | Incident | Techniques |
 |----------|-----------|
@@ -306,7 +368,7 @@ pie
 - T1486 - Ransomware  
 - T1531 - Manipulation de comptes (UBA Sénégal)
 
-## 9. Recommandations
+## 10. Recommandations
 
 ### Pour les gouvernements et entreprises africains
 - **Sécurité des bases de données** : chiffrement des données sensibles, contrôles d’accès, audits réguliers.
@@ -323,7 +385,7 @@ pie
 - Prioriser la surveillance des secteurs gouvernemental, éducatif et de la santé en Afrique du Nord, Ouest et Australe.
 - Surveiller les **intrusions financières non ransomware** - UBA Sénégal n’est probablement pas un cas isolé.
 
-## 10. Recommandations SOC
+## 11. Recommandations SOC tactiques
 
 - Détection exfiltration (T1041)  
 - Surveillance comptes privilégiés  
@@ -331,7 +393,7 @@ pie
 - Monitoring API / OAuth  
 - Pour les banques : détection en temps réel des anomalies de retraits GAB (vélocité, localisation, pics de montants)
 
-## 11. Recommandations stratégiques
+## 12. Recommandations stratégiques
 
 - Activer MFA  
 - Segmenter le réseau (séparer réseau GAB du cœur bancaire)  
@@ -340,7 +402,7 @@ pie
 - Effectuer des exercices de crise incluant des simulations red-team  
 - **Cadre réglementaire** : les banques centrales devraient imposer des standards minimaux de SOC et de détection de fraude
 
-## 12. Conclusion
+## 13. Conclusion
 
 Mars 2026 confirme que **l’Afrique est une cible privilégiée pour la cybercriminalité industrialisée**. La convergence des groupes ransomware, courtiers de données, attaques supply chain, intrusions financières directes (UBA Sénégal) et vols d’identifiants sur plateformes e‑commerce (Loozap) crée un environnement à haut risque. L’Afrique du Sud, le Maroc et l’Égypte restent les plus touchés, mais **l’Afrique de l’Ouest et centrale émergent comme de nouveaux points chauds** (Sénégal, Cameroun, Guinée). Les ministères de la santé sont de plus en plus ciblés, comme en Égypte et en Guinée. Les institutions financières et les plateformes de e‑commerce doivent urgemment renforcer leur supervision en temps réel, leurs capacités antifraude et la sécurité des mots de passe. AFRINTEL continuera de suivre ces évolutions.
 

@@ -1,435 +1,365 @@
-![Status](https://img.shields.io/badge/Status-Claim--Unverified-orange)
-![Coverage](https://img.shields.io/badge/Coverage-21%20Victims-blue)
-![Africa Scope](https://img.shields.io/badge/Africa%20Scope-Continental-green)
-![Data Source](https://img.shields.io/badge/Data%20Source-Ransomfeed%20%2F%20Leak%20Sites-lightgrey)
-![Period](https://img.shields.io/badge/Period-2026--01-informational)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Breach-red)
+![Period](https://img.shields.io/badge/Period-January%202026-lightgrey)
+![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
-# AFRINTEL - Rapport de vague CTI (Afrique)
-👉🏾 [**English version available here** ](README.md)
-## Panorama des cybermenaces en Afrique - Janvier 2026
+# Rapport CTI - Cyberattaques en Afrique (janvier 2026)
 
-> Source: Surveillance des sites de fuite des groupes ransomwares (Darkweb)
+👉🏾 [**English version available here**](./README.md)
 
-------------------------------------------------------------------------
+## 1. Synthèse exécutive
 
-## 📊 Résumé exécutif
+En janvier 2026, **21 incidents cyber** visant des entités africaines ont été publiquement revendiqués ou détectés. Le mois est dominé par les ransomwares, avec une présence transnationale notable de deux groupes, associée à deux fuites de données et un défacement gouvernemental coordonné. Points clés :
 
-Durant le mois de janvier 2026, **21 organisations africaines** ont été victimes de cyberattaques, principalement des ransomwares, des fuites de données et des défacements de sites gouvernementaux.
+- **18 revendications ransomware/vente d'accès (85,7 %)**, **2 fuites de données (9,5 %)** et **1 défacement (4,8 %)**.
+- **12 pays** touchés : **l'Afrique du Sud** (4 incidents) et le **Kenya** (4) sont les plus ciblés, suivis de l'**Égypte** (3).
+- **12 acteurs distincts** : **thegentlemen** (6 incidents) et **tengu** (5) dominent avec une portée panafricaine combinée.
+- Les secteurs gouvernemental, financier et des transports représentent la majorité des victimes.
+- Incidents critiques : défacement coordonné de 7+ sites gouvernementaux nigériens (à caractère politique, non revendiqué), fuite de données PixPay Sénégal (paiement mobile), fuite de données AOM Aviation Maroc (base de données aviation), et l'acteur IAB Bigbrother vendant de manière répétée des accès à l'infrastructure gouvernementale togolaise.
 
-### 🔴 INCIDENTS CRITIQUES
+### 📋 Liste des victimes
 
-#### 🇳🇪 Niger - Défacement massif de sites gouvernementaux
-Le **4 janvier 2026**, plusieurs sites web du gouvernement nigérien ont été victimes d'une attaque de **défacement** coordonnée, affichant le même message à caractère politique. Cette attaque non revendiquée a touché de nombreuses plateformes officielles.
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 
-| Métrique | Valeur |
-|--------|-------|
-| **Type d'incident** | Défacement |
-| **Secteur** | Administration Publique |
-| **Localisation** | Niger |
-| **Acteur de la menace** | Non revendiqué |
-| **Date de l'incident** | 2026-01-04 |
-| **Sites touchés** | https://erp.ansi.ne/, https://startups.ansi.ne/, https://stagiaires.ansi.ne/, https://www.magel.gouv.ne/, https://parcelles.urbanisme.gouv.ne/, http://www.promotionfemme.gouv.ne/, http://www.industrie.gouv.ne/ |
+## 2. Méthodologie
 
-#### 🇸🇳 PixPay Sénégal (Fuite de données financières)
-Le **16 janvier 2026**, la plateforme de paiement **PixPay (pay.pixpay.sn) au Sénégal** a subi une fuite de données majeure exposant des informations financières sensibles.
+- **Périmètre** : 54 pays africains.
+- **Période** : 1-31 janvier 2026 (incidents divulgués ou revendiqués durant ce mois ; les dates réelles d'attaque peuvent être antérieures).
+- **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground, rapports médias.
+- **Inclusion** : Incidents revendiqués ou attribués publiquement, avec victime, pays et secteur identifiés.
+- **Typologie** :
+  - *Ransomware* : chiffrement + demande de rançon (revendication sur DLS).
+  - *Fuite de données / intrusion* : exfiltration non chiffrée, base de données vendue ou publiée.
+  - *Vente d'accès* : vente d'identifiants compromis ou d'accès à des systèmes par un Initial Access Broker (IAB).
+  - *Défacement* : modification visuelle de sites web, souvent à des fins politiques ou idéologiques.
 
-| Métrique | Valeur |
-|--------|-------|
-| **Type d'incident** | Fuite de données |
-| **Type de données** | Base de données financières |
-| **Secteur** | FinTech (Paiement mobile) |
-| **Localisation** | Dakar, Sénégal |
-| **Acteur de la menace** | breach3d |
-| **Date de l'incident** | 2026-01-16 |
+## 3. Vue d'ensemble
 
-#### 🇲🇦 AOM Aviation Group Maroc (Fuite de données)
-Le groupe **AOM Aviation (Air Ocean Maroc)** a subi une fuite de données avec exposition de sa base de données sur le deepweb.
+| Indicateur | Valeur |
+|------------|--------|
+| Total des victimes | 21 |
+| Pays touchés | 12 |
+| Acteurs distincts | 12 |
+| Incidents ransomware | 17 (81,0 %) |
+| Vente d'accès (IAB) | 1 (4,8 %) |
+| Fuites de données | 2 (9,5 %) |
+| Défacement | 1 (4,8 %) |
 
-| Métrique | Valeur |
-|--------|-------|
-| **Type d'incident** | Fuite de données |
-| **Secteur** | Transport Aérien / Aviation Civile |
-| **Localisation** | Maroc |
-| **Acteur de la menace** | skra1a |
-| **Date de l'incident** | 2026-01-31 |
+**Pays les plus ciblés :**
+- 🇿🇦 Afrique du Sud : 4 victimes
+- 🇰🇪 Kenya : 4 victimes
+- 🇪🇬 Égypte : 3 victimes
+- 🇲🇦 Maroc : 2 victimes
+- 🇹🇬 Togo : 1 victime
+- 🇳🇪 Niger : 1 victime (7+ sites gouvernementaux)
+- 🇸🇳 Sénégal : 1 victime
+- 🇲🇿 Mozambique : 1 victime
+- 🇹🇿 Tanzanie : 1 victime
+- 🇲🇺 Maurice : 1 victime
+- 🇩🇿 Algérie : 1 victime
+- 🇹🇳 Tunisie : 1 victime
 
-### 🔴 ACTIVITÉ DES GROUPES MAJEURS
+```mermaid
+pie
+    title Nombre de victimes par pays (janvier 2026)
+    "🇿🇦 Afrique du Sud (4)" : 4
+    "🇰🇪 Kenya (4)" : 4
+    "🇪🇬 Égypte (3)" : 3
+    "🇲🇦 Maroc (2)" : 2
+    "🇹🇬 Togo (1)" : 1
+    "🇳🇪 Niger (1)" : 1
+    "🇸🇳 Sénégal (1)" : 1
+    "🇲🇿 Mozambique (1)" : 1
+    "🇹🇿 Tanzanie (1)" : 1
+    "🇲🇺 Maurice (1)" : 1
+    "🇩🇿 Algérie (1)" : 1
+    "🇹🇳 Tunisie (1)" : 1
+```
 
-#### Groupe "TENGU" - 5 incidents
-- 🇩🇿 **Tahkout Group** (Algérie) - 2026-01-28 - Industrie automobile
-- 🇪🇬 **skyegtours.com** (Égypte) - 2026-01-27 - Tourisme
-- 🇰🇪 **namico.go.ke** (Kenya) - 2026-01-26 - Mines
-- 🇲🇦 **Nafae Sanitaire** (Maroc) - 2026-01-17 - Bâtiment
-- 🇹🇳 **FRUIT-BONTÉ** (Tunisie) - 2026-01-27 - Agroalimentaire
+**Type d'incident par pays :**
+| Pays | Ransomware | Fuite de données | Vente d'accès | Défacement |
+|------|:----------:|:----------------:|:-------------:|:----------:|
+| Afrique du Sud | 4 | 0 | 0 | 0 |
+| Kenya | 4 | 0 | 0 | 0 |
+| Égypte | 3 | 0 | 0 | 0 |
+| Maroc | 1 | 1 | 0 | 0 |
+| Togo | 0 | 0 | 1 | 0 |
+| Niger | 0 | 0 | 0 | 1 |
+| Sénégal | 0 | 1 | 0 | 0 |
+| Mozambique | 1 | 0 | 0 | 0 |
+| Tanzanie | 1 | 0 | 0 | 0 |
+| Maurice | 1 | 0 | 0 | 0 |
+| Algérie | 1 | 0 | 0 | 0 |
+| Tunisie | 1 | 0 | 0 | 0 |
 
-#### Groupe "THEGENTLEMEN" - 6 incidents
-- 🇪🇬 **Real Tech** (Égypte) - 2026-01-11 - Technologie
-- 🇰🇪 **CPF Financial Services** (Kenya) - 2026-01-20 - Services financiers
-- 🇲🇺 **Rogers Capital** (Maurice) - 2026-01-14 - Services financiers
-- 🇿🇦 **Paltrack** (Afrique du Sud) - 2026-01-20 - Logistique
-- 🇿🇦 **Rola Motor Group** (Afrique du Sud) - 2026-01-20 - Automobile
-- 🇿🇦 **Witzenberg Municipality** (Afrique du Sud) - 2026-01-20 - Administration locale
+```mermaid
+pie
+    title Répartition par type d'incident (janvier 2026)
+    "Ransomware (17)" : 17
+    "Fuite de données (2)" : 2
+    "Vente d'accès (1)" : 1
+    "Défacement (1)" : 1
+```
 
-### 📊 Autres Tendances Notables
-- **12 pays** touchés sur le continent (nouveau : Niger)
-- **21 incidents** recensés au total
-- **2 fuites de données majeures** (Sénégal, Maroc)
-- **1 défacement massif** (Niger, 7+ sites)
-- **Secteurs les plus ciblés** : Administration, Finance, Industrie
+**Acteurs les plus prolifiques :**
+| Acteur | Type | Incidents | Pays ciblés |
+|--------|------|:---------:|------------|
+| thegentlemen | Ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
+| tengu | Ransomware | 5 | Algérie, Égypte, Kenya, Maroc, Tunisie |
+| blackshrantac | Ransomware | 1 | Kenya |
+| vect | Ransomware | 1 | Afrique du Sud |
+| qilin | Ransomware | 1 | Mozambique |
+| devman | Ransomware | 1 | Kenya |
+| direwolf | Ransomware | 1 | Égypte |
+| benzona | Ransomware | 1 | Tanzanie |
+| skra1a | Courtier de données | 1 | Maroc |
+| breach3d | Courtier de données | 1 | Sénégal |
+| Bigbrother | Initial Access Broker | 1 | Togo |
+| Non revendiqué | Défacement | 1 | Niger |
 
-------------------------------------------------------------------------
+```mermaid
+pie
+    title Acteurs les plus actifs (janvier 2026)
+    "thegentlemen (6)" : 6
+    "tengu (5)" : 5
+    "Autres - 1 chacun (10)" : 10
+```
 
-## 🌍 Répartition des victimes par date
+## 4. Vue d'ensemble pays par pays
 
-### 03 janvier 2026
-#### 🇹🇬 Togo - Gouvernement du Togo
-- **Acteur:** `Bigbrother`
-- **Contexte:** Le même acteur avait déjà revendiqué un **accès SSH** en **septembre 2025** sur l'infrastructure `gouv.tg`, mettant cet accès en vente sur le deepweb. En janvier 2026, il revendique **de nouveaux accès** sur d'autres plateformes du gouvernement togolais et les met également en vente.
-- **Type:** Vente d'accès (Initial Access Broker)
-- **Secteur:** Administration Publique Centrale
-- **Site web:** gouv.tg
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+> Tous les éléments présentés proviennent d'incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
 
-### 04 janvier 2026
-#### 🇳🇪 Niger - Sites gouvernementaux (DÉFACEMENT MASSIF)
-- **Acteur:** `Non revendiqué`
-- **Type:** Défacement
-- **Secteur:** Administration Publique
-- **Sites touchés:**
-  - https://erp.ansi.ne/
-  - https://startups.ansi.ne/
-  - https://stagiaires.ansi.ne/
-  - https://www.magel.gouv.ne/
-  - https://parcelles.urbanisme.gouv.ne/
-  - http://www.promotionfemme.gouv.ne/
-  - http://www.industrie.gouv.ne/
-- **Observation:** Tous ces sites ont affiché le même message à caractère politique, révélant une vulnérabilité commune dans l'infrastructure gouvernementale.
-- **Statut:** Pas de revendication 
-------------------------------------------------------------------------
+### 🇿🇦 Afrique du Sud (4 incidents : 4 ransomwares)
 
-### 6 janvier 2026
-#### 🇿🇦 Afrique du Sud - Hytec South Africa
-- **Acteur:** `vect`
-- **Secteur:** Ingénierie Hydraulique et Mécanique
-- **Site web:** hytec.com
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+The Gentlemen a dominé l'activité sud-africaine avec trois frappes simultanées le 20 janvier : Paltrack (logiciel logistique pour l'agroalimentaire), Rola Motor Group (concessionnaire et distribution automobile) et Witzenberg Municipality (gouvernement local, Cap-Occidental). Hytec South Africa (ingénierie hydraulique et mécanique) a également été revendiquée par vect. La concentration d'activité sur une seule journée suggère un ciblage coordonné. Le gouvernement local et la chaîne d'approvisionnement industrielle représentent un profil d'exposition récurrent pour l'Afrique du Sud.
 
-### 8 janvier 2026
-#### 🇰🇪 Kenya - National Water Authority
-- **Acteur:** `blackshrantac`
-- **Secteur:** Services publics (Gestion de l'eau)
-- **Site web:** nwa.go.ke
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇰🇪 Kenya (4 incidents : 4 ransomwares)
 
-### 11 janvier 2026
-#### 🇪🇬 Égypte - Real Tech
-- **Acteur:** `thegentlemen`
-- **Secteur:** Technologie / Sécurité IT
-- **Site web:** realtech-eg.com
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+Le Kenya enregistre le deuxième score le plus élevé en janvier avec quatre incidents ransomware touchant des institutions publiques. La National Water Authority (blackshrantac, 8 janvier) est un service d'utilité critique responsable de la gestion des ressources en eau. CPF Financial Services (thegentlemen, 20 janvier) et le NSSF (devman, 20 janvier) gèrent des fonds de retraite et de sécurité sociale, ce qui en fait des cibles à haute valeur pour l'extorsion de données. La National Mining Corporation NAMICO (tengu, 26 janvier) est une entreprise d'État du secteur extractif. La diversité des secteurs touchés, tous publics ou parapublics, reflète un ciblage délibéré des institutions liées au gouvernement kenyan.
 
-### 13 janvier 2026
-#### 🇪🇬 Égypte - Tepco-Group
-- **Acteur:** `direwolf`
-- **Secteur:** Électricité / Ingénierie Électrique
-- **Site web:** tepco-group.com
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇪🇬 Égypte (3 incidents : 3 ransomwares)
 
-### 14 janvier 2026
-#### 🇲🇺 Maurice - Rogers Capital
-- **Acteur:** `thegentlemen`
-- **Secteur:** Services Financiers & Technologie
-- **Site web:** rogerscapital.mu
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+L'Égypte enregistre trois revendications ransomware de trois acteurs différents : Real Tech (thegentlemen, 11 janvier, technologie et sécurité informatique), Tepco-Group (direwolf, 13 janvier, ingénierie électrique) et skyegtours.com (tengu, 27 janvier, tourisme et voyage). La dispersion des secteurs et des acteurs suggère un ciblage opportuniste plutôt qu'une campagne coordonnée spécifiquement contre l'Égypte.
 
-### 16 janvier 2026
-#### 🇸🇳 Sénégal - PixPay (FUITE DE DONNÉES)
-- **Acteur:** `breach3d`
-- **Type:** Fuite de données
-- **Secteur:** FinTech (Paiement mobile)
-- **Site web:** pay.pixpay.sn
-- **Localisation:** Dakar, Sénégal
-- **Statut:** Données publiées  
-------------------------------------------------------------------------
+### 🇲🇦 Maroc (2 incidents : 1 ransomware, 1 fuite de données)
 
-### 16 janvier 2026
-#### 🇲🇿 Mozambique - CFM Mozambique
-- **Acteur:** `qilin`
-- **Secteur:** Transport & Logistique (Rail & Ports)
-- **Site web:** cfm.co.mz
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+Nafae Sanitaire (tengu, 17 janvier, construction/plomberie) a été revendiquée par ransomware. AOM Aviation Group/Air Ocean Maroc (skra1a, 31 janvier) a subi une fuite de données avec publication d'une base de données aviation sur le deep web. L'exposition du secteur aérien est notable compte tenu de la sensibilité des données opérationnelles et passagers dans l'aviation civile.
 
-### 17 janvier 2026
-#### 🇹🇿 Tanzanie - ONG CCBRT - ccbrt.org
-- **Acteur:** `benzona`
-- **Secteur:** Santé / Soins Spécialisés
-- **Site web:** ccbrt.org
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇹🇬 Togo (1 incident : vente d'accès)
 
-### 17 janvier 2026
-#### 🇲🇦 Maroc - Nafae Sanitaire
-- **Acteur:** `tengu`
-- **Secteur:** Bâtiment (Plomberie & Chauffage)
-- **Site web:** nafaesanitaire.com
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+L'acteur Bigbrother, opérant en tant qu'Initial Access Broker, a revendiqué de nouveaux accès à des plateformes gouvernementales togolaises le 3 janvier. Cela fait suite à une première revendication d'accès à l'infrastructure gouv.tg en septembre 2025. Le ciblage répété de la même entité gouvernementale par le même IAB indique un accès persistant et un risque d'escalade : un accès non vendu ou non corrigé peut être exploité pour des opérations ransomware, d'espionnage ou destructrices.
 
-### 20 janvier 2026
-#### 🇰🇪 Kenya - CPF Financial Services
-- **Acteur:** `thegentlemen`
-- **Secteur:** Services financiers (Fonds de pension)
-- **Site web:** cpf.or.ke
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇳🇪 Niger (1 incident : défacement)
 
-### 20 janvier 2026
-#### 🇰🇪 Kenya - NSSF
-- **Acteur:** `devman`
-- **Secteur:** Sécurité sociale (Retraites)
-- **Site web:** nssf.or.ke
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+Le 4 janvier, sept sites gouvernementaux nigériens ou plus ont été simultanément défacés, affichant un message à caractère politique identique. La nature coordonnée sur plusieurs domaines (ANSI, MAGEL, urbanisme, industrie, promotion de la femme) indique soit une vulnérabilité commune dans l'infrastructure d'hébergement partagé, soit une opération d'accès coordonnée. L'attaque n'a pas été revendiquée, ce qui est inhabituel pour les défacements hacktivistes, et pourrait suggérer un acteur à motivation politique évitant l'attribution.
 
-### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud - Paltrack
-- **Acteur:** `thegentlemen`
-- **Secteur:** Logiciels logistiques (Agroalimentaire)
-- **Site web:** paltrack.co.za
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇸🇳 Sénégal (1 incident : fuite de données)
 
-### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud - Rola Motor Group
-- **Acteur:** `thegentlemen`
-- **Secteur:** Distribution Automobile
-- **Site web:** rola.co.za
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+PixPay (breach3d, 16 janvier), une plateforme de paiement mobile sénégalaise, a subi une fuite de base de données financières. L'exposition de données de paiement mobile crée des risques directs de fraude, de prise de contrôle de comptes et de phishing ciblé contre les utilisateurs.
 
-### 20 janvier 2026
-#### 🇿🇦 Afrique du Sud - Witzenberg Municipality
-- **Acteur:** `thegentlemen`
-- **Secteur:** Administration Publique / Gouvernement Local
-- **Site web:** witzenberg.gov.za
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇲🇿 Mozambique (1 incident : ransomware)
 
-### 26 janvier 2026
-#### 🇰🇪 Kenya - namico.go.ke
-- **Acteur:** `tengu`
-- **Secteur:** Mines et Ressources Minérales
-- **Site web:** namico.go.ke
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+CFM Mozambique (qilin, 16 janvier), l'autorité nationale des chemins de fer et des ports, a été revendiquée par le groupe Qilin. Cibler des infrastructures de transport nationales fait peser des risques sur la logistique de la chaîne d'approvisionnement et les opérations portuaires.
 
-### 27 janvier 2026
-#### 🇹🇳 Tunisie - FRUIT-BONTÉ Agroalimentaire
-- **Acteur:** `tengu`
-- **Secteur:** Industrie Agroalimentaire
-- **Site web:** fruit-bonte.com.tn
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇹🇿 Tanzanie (1 incident : ransomware)
 
-### 27 janvier 2026
-#### 🇪🇬 Égypte - skyegtours.com
-- **Acteur:** `tengu`
-- **Secteur:** Tourisme / Transport & Voyages
-- **Site web:** skyegtours.com
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+CCBRT (benzona, 17 janvier), une ONG de santé fournissant des services de réhabilitation spécialisée, a été revendiquée par le groupe benzona. Les ONG de santé représentent une catégorie spécifique : budgets de cybersécurité limités, données patients sensibles, et communications partenaires/donateurs de valeur opérationnelle.
 
-### 28 janvier 2026
-#### 🇩🇿 Algérie - Tahkout Group
-- **Acteur:** `tengu`
-- **Secteur:** Industrie Automobile & Transport
-- **Statut:** Revendication 
-------------------------------------------------------------------------
+### 🇲🇺 Maurice (1 incident : ransomware)
 
-### 31 janvier 2026
-#### 🇲🇦 Maroc - AOM Aviation Group (FUITE DE DONNÉES)
-- **Acteur:** `skra1a`
-- **Type:** Fuite de données
-- **Secteur:** Transport Aérien / Aviation Civile
-- **Site web:** airoceangroup.ma
-- **Statut:** Données publiées  
+Rogers Capital (thegentlemen, 14 janvier), prestataire de services financiers et technologiques, a été revendiquée par The Gentlemen. Les services financiers dans les économies insulaires servent souvent de hubs pour les flux de capitaux régionaux, ce qui augmente la sensibilité des données.
 
-------------------------------------------------------------------------
+### 🇩🇿 Algérie (1 incident : ransomware)
 
-## 📊 Statistiques
+Tahkout Group (tengu, 28 janvier), important conglomérat industriel impliqué dans l'assemblage automobile et le transport, a été revendiqué. L'empreinte industrielle étendue du groupe amplifie l'impact potentiel d'une perturbation.
 
-| Métrique | Valeur |
-|--------|-------|
-| **Total des incidents** | 21 |
-| **Pays touchés** | 12 |
-| **Acteurs de menace actifs** | 11 |
-| **Fuites de données** | 2 (Sénégal, Maroc) |
-| **Ransomwares** | 18 |
-| **Défacements** | 1 (Niger - 7+ sites) |
+### 🇹🇳 Tunisie (1 incident : ransomware)
 
-### Top 3 des incidents majeurs
-| Rang | Incident | Type | Impact |
-|------|----------|------|--------|
-| 🥇 | **Défacement Niger** | Attaque coordonnée | 7+ sites gouvernementaux |
-| 🥈 | **PixPay (Sénégal)** | Fuite données | Données financières |
-| 🥉 | **AOM Aviation (Maroc)** | Fuite données | Base de données aviation |
+FRUIT-BONTÉ (tengu, 27 janvier), entreprise agroalimentaire et de transformation fruitière, a été revendiquée. Le secteur agroalimentaire en Afrique du Nord est de plus en plus ciblé, indiquant que les courtiers en données et groupes ransomwares s'étendent au-delà des secteurs traditionnels.
 
-### Principaux acteurs de menace
-| Acteur | Incidents | Pays touchés |
-|-------|-----------|--------------|
-| `thegentlemen` | 6 | Égypte, Kenya, Maurice, Afrique du Sud (3) |
-| `tengu` | 5 | Algérie, Égypte, Kenya, Maroc, Tunisie |
-| `vect` | 1 | Afrique du Sud |
-| `qilin` | 1 | Mozambique |
-| `blackshrantac` | 1 | Kenya |
-| `devman` | 1 | Kenya |
-| `direwolf` | 1 | Égypte |
-| `benzona` | 1 | Tanzanie |
-| `skra1a` | 1 | Maroc |
-| `breach3d` | 1 | Sénégal |
-| `Bigbrother` | 1 | Togo |
-| `Non revendiqué` | 1 | Niger |
+---
 
-### Principaux pays touchés
-| Pays | Incidents | Principaux acteurs |
-|---------|-----------|---------------------|
+## 5. Analyse détaillée par type d'incident
+
+### 5.1 Ransomware et ventes d'accès (18 revendications)
+
+| Pays | Attaques | Acteurs principaux |
+|------|:--------:|-------------------|
 | Afrique du Sud | 4 | thegentlemen (3), vect (1) |
-| Kenya | 4 | thegentlemen, tengu, blackshrantac, devman |
-| Égypte | 3 | thegentlemen, tengu, direwolf |
-| Maroc | 2 | tengu, skra1a |
-| Niger | 1 | Non revendiqué (défacement) |
-| Algérie | 1 | tengu |
-| Maurice | 1 | thegentlemen |
+| Kenya | 4 | thegentlemen, devman, blackshrantac, tengu |
+| Égypte | 3 | thegentlemen, direwolf, tengu |
+| Maroc | 1 | tengu |
 | Mozambique | 1 | qilin |
-| Sénégal | 1 | breach3d |
 | Tanzanie | 1 | benzona |
-| Togo | 1 | Bigbrother |
+| Maurice | 1 | thegentlemen |
+| Algérie | 1 | tengu |
 | Tunisie | 1 | tengu |
+| Togo | 1 | Bigbrother (IAB, vente d'accès) |
 
-### Secteurs ciblés
-| Secteur | Incidents |
-|--------|-----------|
-| Administration / Gouvernement | 5 (Togo, Niger, Witzenberg + autres) |
-| Services financiers | 3 |
-| Industrie | 3 |
-| Transport / Logistique | 3 |
-| Technologie | 1 |
-| Énergie | 1 |
-| Santé | 1 |
-| Bâtiment | 1 |
-| Tourisme | 1 |
-| Mines | 1 |
-| Agroalimentaire | 1 |
+**Observations clés :**
+- **thegentlemen** et **tengu** totalisent 11 des 21 incidents (52 %). Leur présence panafricaine simultanée en janvier suggère deux groupes prolifiques opérant indépendamment ou partageant des outils.
+- Le 20 janvier a été la journée la plus active : 5 revendications en Afrique du Sud et au Kenya (Paltrack, Rola, Witzenberg, CPF, NSSF).
+- **Bigbrother/Togo** illustre un schéma IAB : accès SSH vendu en septembre 2025, puis nouvel accès revendiqué en janvier 2026. La persistance de l'accès augmente le risque d'opérations à fort impact en aval.
 
-------------------------------------------------------------------------
+### 5.2 Fuites de données (2 incidents)
 
-## 📈 Observations stratégiques
+| Victime | Acteur | Secteur | Données exposées |
+|---------|--------|---------|-----------------|
+| PixPay (Sénégal) | breach3d | FinTech / Paiement mobile | Base de données financières |
+| AOM Aviation Group (Maroc) | skra1a | Transport aérien / Aviation civile | Base de données aviation |
 
-### 🔴 Nouveau : Défacement massif au Niger
-- **4 janvier 2026** : Plusieurs sites gouvernementaux nigériens défigurés simultanément
-- **Message commun** : Tous les sites ont affiché le même contenu à caractère politique
-- **Non revendiqué** : L'attaque n'a pas été revendiquée par un groupe connu
-- **Vulnérabilité** : Cette attaque coordonnée révèle une faille de sécurité commune dans l'infrastructure gouvernementale
-- **Risque** : Ces défacements, bien que de forme, cachent des failles de fond (sécurité des accès)
+### 5.3 Défacement (1 incident)
 
-### 🔴 Ciblage récurrent du Togo par Bigbrother
-- **Septembre 2025** : Premier accès SSH revendiqué sur `gouv.tg` mis en vente
-- **Janvier 2026** : Nouveaux accès sur d'autres plateformes gouvernementales
-- **Modus operandi** : Initial Access Broker spécialisé dans les infrastructures gouvernementales
-- **Risque** : Accumulation d'accès pouvant faciliter des attaques futures (ransomware, espionnage)
+| Victime | Acteur | Secteur | Portée |
+|---------|--------|---------|--------|
+| Sites gouvernementaux nigériens (7+) | Non revendiqué | Administration publique | Coordonné, à motivation politique |
 
-### 🔴 Fuites de données émergentes
-- **PixPay (Sénégal)** : 16 janvier - Données financières exposées
-- **AOM Aviation (Maroc)** : 31 janvier - Bases de données aériennes divulguées
+## 6. Impact sectoriel
 
-### 🔴 Acteurs majeurs transfrontaliers
-- **thegentlemen** : 6 incidents dans 4 pays - **acteur majeur**
-- **tengu** : 5 incidents dans 5 pays différents - **présence panafricaine**
+| Secteur | Incidents | Pourcentage |
+|---------|:---------:|:-----------:|
+| Gouvernement / Administration publique | 4 | 19,0 % |
+| Services financiers / FinTech | 4 | 19,0 % |
+| Transport / Logistique | 3 | 14,3 % |
+| Industrie / Ingénierie | 3 | 14,3 % |
+| Technologie / Informatique | 2 | 9,5 % |
+| Santé | 1 | 4,8 % |
+| Mines | 1 | 4,8 % |
+| Agroalimentaire | 1 | 4,8 % |
+| Tourisme | 1 | 4,8 % |
+| Aviation | 1 | 4,8 % |
 
-### 🌍 Points forts géographiques
-- **Afrique de l'Est** : Kenya (4 incidents), Tanzanie
-- **Afrique Australe** : Afrique du Sud (4), Mozambique
-- **Afrique du Nord** : Égypte (3), Maroc (2), Algérie, Tunisie
-- **Afrique de l'Ouest** : Sénégal, Togo, Niger
+```mermaid
+pie
+    title Répartition sectorielle (janvier 2026)
+    "Gouvernement/Admin (4)" : 4
+    "Finance/FinTech (4)" : 4
+    "Transport/Logistique (3)" : 3
+    "Industrie/Ingénierie (3)" : 3
+    "Technologie/IT (2)" : 2
+    "Santé (1)" : 1
+    "Mines (1)" : 1
+    "Agroalimentaire (1)" : 1
+    "Tourisme (1)" : 1
+    "Aviation (1)" : 1
+```
 
-------------------------------------------------------------------------
+**Enseignements :**
+- Le gouvernement et les services financiers partagent la première place (4 incidents chacun), confirmant leur attractivité persistante comme cibles.
+- La présence simultanée d'infrastructures critiques (eau, transport, ports, mines) indique que les groupes ransomwares ne se limitent plus aux cibles commerciales faciles.
+- Les ONG de santé (CCBRT Tanzanie) représentent une catégorie sous-protégée.
 
-## 🛡️ Recommandations post-incident
+## 7. Profil des acteurs de menaces
 
-### 🔴 Retour d'expérience sur le défacement au Niger
-- **Surveillance renforcée** des infrastructures gouvernementales ouest-africaines
-- **Audit de sécurité** des sites web publics pour détecter les vulnérabilités communes
-- **Mise à jour** des systèmes de gestion de contenu et des serveurs
-- **Veille** sur les attaques coordonnées ciblant plusieurs sites d'une même institution
+| Acteur | Type | Incidents | Cibles principales |
+|--------|------|:---------:|-------------------|
+| thegentlemen | Groupe ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
+| tengu | Groupe ransomware | 5 | Algérie, Égypte, Kenya, Maroc, Tunisie |
+| blackshrantac | Ransomware | 1 | Kenya (services publics) |
+| vect | Ransomware | 1 | Afrique du Sud (ingénierie) |
+| qilin | Ransomware | 1 | Mozambique (infrastructure) |
+| devman | Ransomware | 1 | Kenya (sécurité sociale) |
+| direwolf | Ransomware | 1 | Égypte (ingénierie) |
+| benzona | Ransomware | 1 | Tanzanie (ONG santé) |
+| skra1a | Courtier de données | 1 | Maroc (aviation) |
+| breach3d | Courtier de données | 1 | Sénégal (fintech) |
+| Bigbrother | Initial Access Broker | 1 | Togo (gouvernement) |
+| Non revendiqué | Défacement | 1 | Niger (gouvernement) |
 
-### 🔴 Retour d'expérience sur Bigbrother et le Togo
-- **Surveillance renforcée** des acteurs IAB (Initial Access Brokers) ciblant les gouvernements africains
-- **Rotation des identifiants** et audits de sécurité après chaque revendication d'accès
-- **Partage d'informations** entre pays pour détecter les schémas d'attaque transfrontaliers
+**Acteurs émergents :** benzona, vect, direwolf (première apparition dans AFRINTEL).
 
-### 🔴 Retour d'expérience sur les fuites de données
-- **Secteurs sensibles** : FinTech (PixPay) et Aviation (AOM) particulièrement vulnérables
-- **Surveillance recommandée** : Détection de bases de données mises en vente sur le darkweb
-- **Communication** : Information rapide des utilisateurs en cas de fuite
+### 7.1 Niveau de risque
 
-### Pour les gouvernements Africains
-1. **Renforcez la sécurité** des infrastructures critiques (CFM Mozambique, NWA Kenya, sites gouvernementaux)
-2. **Auditez les accès** aux bases de données gouvernementales (Togo, Niger, Witzenberg)
-3. **Mettez en place des cellules de réponse** aux incidents (défacements, fuites, ransomwares)
-4. **Surveillez les IAB** ciblant spécifiquement les administrations publiques
+| Pays | Niveau de risque |
+|------|----------------|
+| Afrique du Sud | 🔴 Élevé (4 ransomwares, industrie/gouvernement) |
+| Kenya | 🔴 Élevé (4 ransomwares, institutions publiques critiques) |
+| Égypte | 🟠 Moyen-Élevé (3 ransomwares, secteurs multiples) |
+| Maroc | 🟠 Moyen (fuite de données + ransomware) |
+| Togo | 🟠 Moyen (accès IAB persistant depuis septembre 2025) |
+| Niger | 🟠 Moyen (défacement coordonné, attribution non résolue) |
+| Autres | 🟡 Faible-Moyen |
 
-### Pour le Secteur privé
-1. **Surveillez les groupes actifs** : `thegentlemen` (6 incidents) et `tengu` (5 incidents)
-2. **Protégez les données financières** (PixPay, CPF, Rogers Capital)
-3. **Segmentez les réseaux** pour limiter la propagation des ransomwares
-4. **Appliquez l'AUTHENTIFICATION MULTIFACTEUR (MFA)** sur tous les comptes privilégiés
+## 8. Tendances clés et lacunes de renseignement
 
-------------------------------------------------------------------------
+### Tendances
 
-## 🔎 Priorités de Surveillance CTI
+1. **Double dominance de thegentlemen et tengu** : 52 % des incidents de janvier sont attribués à deux groupes opérant simultanément dans 7 pays chacun. Leur expansion conjointe en Afrique de l'Est, du Nord et Australe en un seul mois constitue un schéma opérationnel notable.
+2. **Vague sur le Kenya** : 4 incidents, tous ciblant des institutions publiques (eau, retraites, sécurité sociale, mines). Schéma cohérent avec un ciblage délibéré des infrastructures liées au gouvernement.
+3. **Activité IAB sur le gouvernement togolais** : les revendications répétées de Bigbrother suggèrent un accès persistant non remédiué, augmentant le risque d'opérations de suivi à plus fort impact.
+4. **Défacement gouvernemental coordonné au Niger** : non revendiqué, à motivation politique, touchant 7+ ministères simultanément. Exploite probablement des vulnérabilités CMS partagées ou une infrastructure d'hébergement commune.
+5. **Émergence des fuites de données** : PixPay (paiement mobile) et AOM Aviation (aviation civile) indiquent que les courtiers en données s'étendent à de nouveaux secteurs.
 
-| Priorité | Focus | Raison |
-|----------|-------|-----------|
-| 🔴 **#1** | **thegentlemen & tengu** | 11 incidents cumulés - acteurs majeurs |
-| 🔴 **#2** | **Défacements gouvernementaux** | Niger - Attaque coordonnée inédite |
-| 🔴 **#3** | **Bigbrother / Togo** | Ciblage récurrent depuis septembre 2025 |
-| 🔴 **#4** | **Fuites de données** | Tendance émergente (Sénégal, Maroc) |
-| 🟡 **#5** | **Secteur financier** | PixPay, CPF, Rogers Capital ciblés |
-| 🟡 **#6** | **Afrique de l'Est** | Kenya (4 incidents) |
+### Lacunes
 
-------------------------------------------------------------------------
+- La plupart des revendications ransomware restent non vérifiées ; aucune confirmation publique des victimes.
+- Les attaquants du défacement nigérien restent non attribués.
+- L'acheteur de l'accès Bigbrother et la nature de l'accès exploité sont inconnus.
+- Les volumes réels de données dans les incidents de fuite n'ont pas été vérifiés de manière indépendante.
 
-## 📝 Note méthodologique
+## 9. Cartographie MITRE ATT&CK (contextuelle)
 
-Ce rapport est basé sur **l'observation directe** des sites de fuite de groupes ransomware et des canaux de cybersécurité dans le dark web (réseau Tor).
+| Incident | Techniques |
+|----------|-----------|
+| Défacement Niger | T1190 - Exploitation d'application web, T1491 - Défacement |
+| Bigbrother/Togo | T1078 - Comptes valides, T1650 - Acquisition d'accès |
+| PixPay | T1005 - Données du système local, T1041 - Exfiltration |
+| AOM Aviation | T1005 - Données du système local, T1041 - Exfiltration |
+| Ransomware général | T1486 - Chiffrement, T1490 - Inhibition de la récupération système |
 
---------------------------------------------------------------------------------------
+**Techniques couramment observées :**
+- T1566 - Phishing (vecteur initial probable pour la majorité des ransomwares)
+- T1190 - Exploitation d'application web
+- T1078 - Comptes valides (activité IAB Togo)
+- T1486 - Ransomware (17 incidents)
+- T1491 - Défacement (Niger)
 
-## ℹ️ Note complémentaire sur les modes opératoires
+## 10. Recommandations
 
-**NB :** Les groupes cybercriminels adoptent différentes stratégies :
+### Pour les gouvernements et entreprises africains
 
-- **Ransomware** : Chiffrement des données + demande de rançon
-- **Fuites de données** : Publication ou revente de bases de données exfiltrées
-- **Double extorsion** : Chiffrement + menace de publication
-- **Initial Access Brokers (IAB)** : Vente d'accès à des réseaux d'entreprises ou d'administrations
-- **Défacement** : Modification de l'apparence de sites web à des fins politiques ou idéologiques, souvent révélatrice de failles de sécurité plus profondes
+- **Gestion des correctifs** : priorité aux applications web (CMS, portails gouvernementaux, plateformes financières).
+- **Surveillance IAB** : toute revendication de vente d'accès à une infrastructure gouvernementale doit déclencher une rotation immédiate des identifiants et un audit forensique.
+- **MFA obligatoire** : tous les comptes privilégiés et accès VPN doivent utiliser l'authentification multi-facteurs.
+- **Réponse aux incidents** : établir des playbooks IR dédiés aux scénarios ransomware et défacement, incluant des protocoles de communication.
+- **Risque tiers** : les logiciels logistiques (Paltrack), les plateformes aviation et les prestataires fintech doivent être inclus dans les évaluations de sécurité.
 
-------------------------------------------------------------------------
-## ✍🏿 Auteur
+### Pour les analystes CTI
 
-**Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+- Suivre **thegentlemen** et **tengu** pour de nouvelles campagnes africaines ; leur portée simultanée sur 12 pays en un mois indique une expansion active.
+- Surveiller **Bigbrother** pour de nouvelles revendications d'accès au gouvernement togolais et l'activité des acheteurs potentiels.
+- Surveiller les opérations de suivi liées au défacement nigérien (possible escalade après reconnaissance).
+- Émettre une alerte si des données PixPay ou AOM apparaissent sur des marchés secondaires.
 
---------------------------------------------------------------------------
-*AFRINTEL - Initiative de Veille Open CTI*
+## 11. Recommandations SOC tactiques
 
-*TLP:CLEAR - Partage public autorisé*
+### Priorités de détection
+
+- Surveiller les **patterns de déploiement ransomware (T1486)** : événements de chiffrement de fichiers, suppression de copies shadow, modification rapide de fichiers
+- Détecter l'**activité de staging IAB** : connexions VPN inhabituelles, activité en dehors des heures normales sur des comptes privilégiés, signaux de mouvement latéral
+- Pister l'**exfiltration de données (T1041)** : transferts sortants volumineux, utilisation de services de stockage cloud, connexions vers des nœuds de sortie Tor
+- Pour les portails gouvernementaux : surveiller les **journaux d'applications web** pour les tentatives d'exploitation (T1190)
+
+### Sources de surveillance
+
+- EDR / Sysmon
+- Journaux firewall / proxy
+- Journaux DNS
+- Journaux de gestion des identités et des accès
+- Pare-feu applicatif web (WAF)
+- Journaux d'authentification VPN
+
+## 12. Recommandations stratégiques
+
+- Établir des **mécanismes de partage CTI régionaux** entre les gouvernements d'Afrique de l'Est (Kenya, Tanzanie, Mozambique) face à l'activité ransomware transfrontalière.
+- Imposer des **standards de sécurité minimaux** pour les sites gouvernementaux en Afrique de l'Ouest (correctifs CMS, pare-feu applicatifs) suite au défacement massif nigérien.
+- Créer des **listes de surveillance IAB nationales** : quand l'infrastructure gouvernementale d'un pays apparaît sur des forums criminels, un protocole de réponse structuré doit être prédéfini.
+- Prioriser les **exigences de sécurité réglementaires FinTech** : les plateformes de paiement mobile détiennent des données financières à une échelle qui rend les fuites très dommageables.
+
+## 13. Conclusion
+
+Janvier 2026 ouvre l'année avec une vague ransomware large et géographiquement dispersée en Afrique. La domination de deux groupes (thegentlemen et tengu) sur 12 pays, la persistance de l'IAB Bigbrother contre l'infrastructure gouvernementale togolaise, et le défacement coordonné nigérien indiquent un paysage de menaces de plus en plus organisé et délibéré. L'Afrique du Sud et le Kenya restent les principales cibles, mais la diffusion en Afrique de l'Ouest, de l'Est, centrale et du Nord confirme qu'aucune sous-région africaine n'est hors de portée. AFRINTEL continuera de suivre ces acteurs et l'activité croissante des fuites de données au fil de l'année.
+
+**AFRINTEL** - Cyber Threat Intelligence africaine
+[GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
