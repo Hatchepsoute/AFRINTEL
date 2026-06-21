@@ -160,9 +160,71 @@ pie
     "INC Ransom (2)" : 2
 ```
 
-## 4. Detailed analysis by incident type
+## 4. Country-by-country overview
 
-### 4.1 Ransomware (19 incidents)
+> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
+
+### 🇿🇦 South Africa (13 incidents: 7 ransomware, 6 data breaches)
+
+South Africa recorded the highest victim count in March with 13 incidents across government, education, insurance, engineering, and IT sectors. The XP95 group drove the most impactful events: Gauteng Provincial Government (3.8 TB sold for $25,000), Stats SA (154 GB, $100,000 ransom demand), and GCRA (147 GB). These are data extortion incidents, not standard ransomware: XP95 sells exfiltrated data rather than encrypting systems. The Gauteng breach potentially compromises health, education, housing, and economic data for South Africa's most populous province. Admin credentials for UNISA (Africa's largest distance learning institution) were also publicly leaked, creating direct compromise risk.
+
+### 🇲🇦 Morocco (8 incidents: 5 ransomware, 3 data breaches)
+
+Morocco was heavily targeted by APT73/BASHE across four strategic state entities: HACA (audiovisual regulation authority), Maroc Telecom, 2M TV (national television), and IRES (Royal Cabinet think tank). This concentration on Moroccan state media and telecoms suggests a possible geopolitical motivation. xNov exposed ONOUSC student health insurance records (3,631 entries) and Smarteez/L'Oréal Morocco supply chain data (OAuth2 secrets). anisanas2 leaked 300 GB from the Ministry of Justice, including 150,000 court case files.
+
+### 🇪🇬 Egypt (8 incidents: 3 ransomware, 5 data breaches)
+
+CrowStealer dominated Egyptian incidents with 5 breaches: Canadian International College (2,925 student records), Waste Management Regulatory Authority (WMRA), Orascom Construction, Ministry of Health (3.8 million patient records sold for $2,500), and Ministry of Education. This actor systematically targets Egyptian government and education infrastructure. The Ministry of Health breach is the largest single health data exposure for the continent in March.
+
+### 🇳🇬 Nigeria (2 incidents: 0 ransomware, 2 data breaches)
+
+Remita/SystemSpecs suffered a critical 3 TB breach including KYC documents, source code, Docker registries, and government HSM encryption keys. Given Remita's role as Nigeria's government payment backbone, the exposure of HSM keys constitutes a sovereign financial infrastructure risk. Ahmadu Bello University also had 11,000+ staff records leaked by AshleyWood2022.
+
+### 🇸🇳 Senegal (1 incident - System intrusion)
+
+UBA Senegal suffered a coordinated cyber-heist executed on January 30-31 but publicly disclosed on March 24. Attackers compromised internal systems, manipulated databases to increase withdrawal limits and transfer funds, then coordinated over 3,400 fraudulent ATM withdrawals across multiple cities, resulting in 1.143 billion FCFA (~$1.9M) in losses. This represents a distinct attack category: direct financial fraud through system compromise, without ransomware deployment.
+
+### 🇿🇲 Zambia (1 incident - Critical government breach)
+
+ZISPIS, the national social protection registry, was breached by Spirigatito with approximately 34.1 million records (500 GB) exfiltrated, potentially affecting 15 million individuals. Full personal, socioeconomic, financial, and GPS data exposed. One of the largest government data breaches in Sub-Saharan Africa recorded by AFRINTEL.
+
+### 🇨🇲 Cameroon (1 incident)
+
+Loozap, a classifieds platform, had 34,000 user accounts leaked with SHA1-hashed passwords by zimablue. The use of SHA1 indicates poor security practices. Incident date January 28, identified in March.
+
+### 🇩🇿 Algeria (1 incident)
+
+Bridges (tebridges.dz), a CRM provider, had a 672,000-record database sold for $1,743 by Grubder. Attack date February 2, identified in March.
+
+### 🇬🇳 Guinea (1 incident - Suspected)
+
+Guinea's Ministry of Health DHIS2 dashboards were reportedly compromised by Keymous (activity observed July 2025, identified March 2026). Government staff records and health surveillance tools potentially exposed. The published artifacts suggest credential-based access, not a conventional data dump. Partially confirmed.
+
+### 🇲🇬 Madagascar (1 incident)
+
+Orange Madagascar, the telecommunications leader, was claimed by Qilin. Targeting a critical national telecoms operator poses risks to connectivity and communications infrastructure.
+
+### 🇹🇳 Tunisia (1 incident)
+
+K.PROPHA (pharmaceutical distribution) was claimed by The Gentlemen.
+
+### 🇳🇦 Namibia (1 incident)
+
+Namibia Airports Company was claimed by INC Ransom. Airports represent critical national infrastructure.
+
+### 🇹🇿 Tanzania (1 incident)
+
+SBC Tanzania (PepsiCo bottler) was claimed by Morpheus.
+
+### 🇨🇩 DRC (1 incident - Historical)
+
+FRAP (public administration reform fund): breach attributed to September 2025, identified in March 2026.
+
+---
+
+## 5. Detailed analysis by incident type
+
+### 5.1 Ransomware (19 incidents)
 
 | Country          | Ransomware attacks | Main actors |
 |------------------|--------------------|-------------|
