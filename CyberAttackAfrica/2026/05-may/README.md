@@ -254,7 +254,7 @@ pie showData
 ### 🇳🇬 Nigeria (3 ransomware)
 
 - Three distinct ransomware groups each claimed one Nigerian victim: MedusaLocker, KillSec, 0day Syndicate. No data leaks recorded for direct Nigerian targets.
-- Also affected by two multi-country incidents: Resume docs (attackercompany) and DHIS2 (Keymous).
+- Also affected by two multi-country incidents: Resume docs (attackercompany, CV/resume database) and DHIS2 (Keymous). The DHIS2 incident is particularly significant: the published artifacts include URL/username/password pairs for health platform instances, indicating a credible compromise of administrative or operational accounts, not a simple data dump.
 
 ### 🇩🇿 Algeria (2 data leaks)
 
@@ -282,15 +282,23 @@ pie showData
 
 - cc5ab claimed one data leak from a Kenyan target. Also affected by the Resume docs multi-country incident (attackercompany).
 
+### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposure via DHIS2)
+
+These four countries are affected exclusively through the DHIS2 / Ministries of health access sale (Keymous, May 13, 2026).
+
+- The published artifacts include multiple URL / username / password combinations targeting DHIS2 instances operated by government health institutions in each of these countries.
+- This suggests a credible compromise of administrative or operational accounts, not a conventional data dump. Unauthorized access, if active, would expose national health surveillance data, epidemiological records, and vaccination tracking systems.
+- AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
+
 ### Multi-country incidents (3 data leaks, 11 countries)
 
 Three incidents each affected multiple African countries simultaneously. Each is counted once in the global total of 54.
 
-| Incident | Actor | Countries affected |
-|---|---|---|
-| Resume docs data leak | attackercompany | 🇰🇪 Kenya, 🇪🇹 Ethiopia, 🇳🇬 Nigeria, 🇿🇼 Zimbabwe |
-| DHIS2 / Ministries of health | Keymous | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigeria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |
-| Passport scans | raylie | 🇪🇬 Egypt, 🇱🇾 Libya |
+| Incident | Actor | Evidence type | Countries affected |
+|---|---|---|---|
+| Resume docs data leak | attackercompany | Database published | 🇰🇪 Kenya, 🇪🇹 Ethiopia, 🇳🇬 Nigeria, 🇿🇼 Zimbabwe |
+| DHIS2 / Ministries of health | Keymous | URL/credential pairs published (admin account access) | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigeria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |
+| Passport scans | raylie | Document images published | 🇪🇬 Egypt, 🇱🇾 Libya |
 
 ---
 
@@ -407,7 +415,7 @@ Three incidents each affected multiple African countries simultaneously. Each is
 | Phase | Technique ID | Technique name | Context |
 | :--- | :---: | :--- | :--- |
 | **Initial Access** | **T1190** | Exploit Public-Facing Application | FutureShop API, Mansoura University, LSB Kenya |
-| **Initial Access** | **T1078** | Valid Accounts | Moroccan gov credentials, Tanzania Police |
+| **Initial Access** | **T1078** | Valid Accounts | Moroccan gov credentials, Tanzania Police, DHIS2 health platform credentials (URL/password pairs published) |
 | **Collection** | **T1005** | Data from Local System | PAT Egypt, SDTM Morocco, SITA SA |
 | **Collection** | **T1114.002** | Remote Email Collection | Tanzania Police webmail |
 | **Exfiltration** | **T1041** | Exfiltration Over C2 Channel | Wuzzuf.net, Telkom, CGCSA |

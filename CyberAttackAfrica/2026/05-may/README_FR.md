@@ -254,7 +254,7 @@ pie showData
 ### 🇳🇬 Nigéria (3 ransomwares)
 
 - Trois groupes distincts ont chacun revendiqué une victime : MedusaLocker, KillSec, 0day Syndicate. Aucune fuite de données directement attribuée à une cible nigériane.
-- Touché par deux incidents multi-pays : Resume docs (attackercompany) et DHIS2 (Keymous).
+- Touché par deux incidents multi-pays : Resume docs (attackercompany, base de CV) et DHIS2 (Keymous). L'incident DHIS2 est particulièrement significatif : les artefacts publiés incluent des couples URL/identifiant/mot de passe pour des instances de la plateforme de santé, indiquant une compromission crédible de comptes administratifs ou opérationnels, et non un simple dump de données.
 
 ### 🇩🇿 Algérie (2 fuites de données)
 
@@ -282,15 +282,23 @@ pie showData
 
 - cc5ab a revendiqué une fuite depuis une cible kenyane. Touché également par l'incident multi-pays Resume docs (attackercompany).
 
+### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposition via DHIS2)
+
+Ces quatre pays sont touchés exclusivement par la vente d'accès DHIS2 / Ministères de la santé (Keymous, 13 mai 2026).
+
+- Les artefacts publiés incluent plusieurs couples URL / identifiant / mot de passe ciblant des instances DHIS2 opérées par des institutions sanitaires gouvernementales dans chacun de ces pays.
+- Cela suggère une compromission crédible de comptes administratifs ou opérationnels, et non un dump de données conventionnel. Un accès actif exposerait les données de surveillance sanitaire nationale, les registres épidémiologiques et les systèmes de suivi vaccinal.
+- AFRINTEL n'a effectué aucune tentative d'authentification afin d'éviter toute interaction non autorisée avec les systèmes concernés.
+
 ### Incidents multi-pays (3 fuites de données, 11 pays)
 
 Trois incidents ont touché plusieurs pays africains simultanément. Chacun est comptabilisé une seule fois dans le total global de 54.
 
-| Incident | Acteur | Pays concernés |
-|---|---|---|
-| Fuite de CV (Resume docs) | attackercompany | 🇰🇪 Kenya, 🇪🇹 Éthiopie, 🇳🇬 Nigéria, 🇿🇼 Zimbabwe |
-| DHIS2 / Ministères de la santé | Keymous | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigéria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |
-| Scans de passeports | raylie | 🇪🇬 Égypte, 🇱🇾 Libye |
+| Incident | Acteur | Type d'artefact | Pays concernés |
+|---|---|---|---|
+| Fuite de CV (Resume docs) | attackercompany | Base de données publiée | 🇰🇪 Kenya, 🇪🇹 Éthiopie, 🇳🇬 Nigéria, 🇿🇼 Zimbabwe |
+| DHIS2 / Ministères de la santé | Keymous | Couples URL/identifiant/mot de passe (accès admin) | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigéria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |
+| Scans de passeports | raylie | Images de documents publiées | 🇪🇬 Égypte, 🇱🇾 Libye |
 
 ---
 
@@ -399,7 +407,7 @@ Trois incidents ont touché plusieurs pays africains simultanément. Chacun est 
 | Phase | Identifiant | Nom de la technique | Contexte |
 | :--- | :---: | :--- | :--- |
 | **Accès initial** | **T1190** | Exploit Public-Facing Application | FutureShop API, Mansoura University, LSB Kenya |
-| **Accès initial** | **T1078** | Valid Accounts | Identifiants gouvernementaux marocains, Police tanzanienne |
+| **Accès initial** | **T1078** | Valid Accounts | Identifiants gouvernementaux marocains, Police tanzanienne, identifiants DHIS2 (couples URL/mot de passe publiés) |
 | **Collecte** | **T1005** | Data from Local System | PAT Égypte, SDTM Maroc, SITA Afrique du Sud |
 | **Collecte** | **T1114.002** | Remote Email Collection | Messagerie Police tanzanienne |
 | **Exfiltration** | **T1041** | Exfiltration Over C2 Channel | Wuzzuf.net, Telkom, CGCSA |
