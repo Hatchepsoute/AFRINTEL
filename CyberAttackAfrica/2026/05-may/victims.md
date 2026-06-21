@@ -113,7 +113,7 @@
   Exposure of such information could provide threat actors with detailed insight into the organization's financial operations, business relationships, member companies, suppliers, and internal IT environment.
   The leak also appears to contain backups of business and accounting systems that may include sensitive financial information and data related to CGCSA member organizations.
   
-#### 🌍 Africa (Multi-country) – Resume docs data leak
+#### 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe – Resume docs data leak
 - **Actor / Source:** attackercompany (via the [Citizen] forum)
 - **Sector:** Recruitment / Personal data
 - **Status:** Claimed data leak
@@ -239,7 +239,7 @@
   The published information mentions approximately 26.8 million student records and 3.8 million teacher and administrator records. The actor also claims to possess full administrative privileges allowing management of teacher and student accounts, password resets, modification of administrative information, and access to sensitive educational platform functions.
 
 
-#### 🌍 Multi-country - DHIS2 / Ministries of Health
+#### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone – DHIS2 / Ministries of Health
 
 - **Threat Actor / Group:** Keymous  
 - **Sector:** Healthcare / Government  
@@ -410,7 +410,7 @@ Such a compromise could potentially allow:
   - The presence of CFEE exam allowance transfers in the SICA system demonstrates cross-sectoral infrastructure dependency: a breach of the Trésor directly affects Ministry of Education payment flows.
   - **Confidence level: High. Impact level: Level 4** (critical national financial infrastructure, large-scale PII, access to live operational financial systems, double extortion).
 
-#### 🌍 Multi-country (incl. 🇪🇬 Egypt, 🇱🇾 Libya) - Passport Scans [Data Leak]
+#### 🇪🇬 Egypt / 🇱🇾 Libya – Passport Scans [Data Leak]
 - **Actor / Group:** raylie (forum [Citizen])
 - **Sector:** PII / Travel Documents / Government
 - **Status:** Data Leak (Public)

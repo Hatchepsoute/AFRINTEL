@@ -114,7 +114,7 @@
   L'exposition de ce type d'informations pourrait permettre à des acteurs malveillants d'obtenir une visibilité détaillée sur les opérations financières, les relations commerciales, les adhérents, les fournisseurs et l'environnement informatique de l'organisation.
   La fuite semble également inclure des sauvegardes de systèmes métiers et comptables susceptibles de contenir des informations financières sensibles ainsi que des données relatives aux entreprises membres du CGCSA.
 
-#### 🌍 Afrique (Multi-pays) – Fuite de données de CV (Resume docs)
+#### 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigéria / 🇿🇼 Zimbabwe – Fuite de données de CV (Resume docs)
 - **Acteur / Groupe:** attackercompany (via le forum [Citizen])
 - **Secteur :** Recrutement / Données personnelles
 - **Statut :** Fuite de données revendiquée
@@ -239,7 +239,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
   Les éléments publiés évoquent environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements liés au personnel éducatif et administratif. L’acteur affirme également disposer de privilèges administratifs complets permettant la gestion des comptes enseignants et étudiants, la réinitialisation de mots de passe, la modification d’informations administratives et l’accès à certaines fonctionnalités sensibles de la plateforme éducative.
 
 
-#### 🌍 Multi-pays - DHIS2 / Ministères de la Santé
+#### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigéria / 🇹🇬 Togo / 🇸🇱 Sierra Leone – DHIS2 / Ministères de la Santé
 - **Acteur / Groupe:** Keymous  
 - **Secteur :** Santé / Gouvernement  
 - **Plateformes ciblées :** DHIS2 (District Health Information System)  
@@ -414,7 +414,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   - La présence de virements liés aux indemnités d'examen CFEE dans le système SICA illustre la dépendance inter-institutionnelle : une compromission du Trésor affecte directement les flux de paiement du Ministère de l'Éducation.
   - **Niveau de confiance : Élevé. Niveau d'impact : Niveau 4** (infrastructure financière nationale critique, exposition PII à grande échelle, accès aux systèmes financiers opérationnels actifs, double extorsion).
 
-#### 🌍 Multi-pays (dont 🇪🇬 Égypte, 🇱🇾 Libye) - Scans de passeports [Fuite de données]
+#### 🇪🇬 Égypte / 🇱🇾 Libye – Scans de passeports [Fuite de données]
 - **Acteur / Groupe :** raylie (forum [Citizen])
 - **Secteur :** Données personnelles / Documents de voyage / Gouvernement
 - **Statut :** Fuite de données (publique)
