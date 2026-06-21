@@ -46,7 +46,7 @@ Principales conclusions :
 | Indicateur | Valeur |
 |---|---|
 | Total victimes | 54 |
-| Pays touchés | 11 + multi-pays |
+| Pays touchés | 18 (11 directs + 7 via incidents multi-pays) |
 | Acteurs distincts | 25+ |
 | Incidents ransomware | 16 (29,6 %) |
 | Fuites de données / ventes d'accès | 38 (70,4 %) |
@@ -68,7 +68,9 @@ Principales conclusions :
 | **9** | 🇨🇮 Côte d'Ivoire | **1** | █ |
 | **10** | 🇰🇪 Kenya | **1** | █ |
 | **11** | 🇸🇳 Sénégal | **1** | █ |
-| **–** | 🌍 Multi-pays | **3** | ███ |
+| **–** | 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigéria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
+| **–** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigéria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
+| **–** | 🇪🇬 Égypte / 🇱🇾 Libye (Scans de passeports) | **1** | █ |
 
 ```mermaid
 pie showData
@@ -77,14 +79,16 @@ pie showData
     "🇿🇦 Afrique du Sud" : 14
     "🇲🇦 Maroc" : 5
     "🇹🇳 Tunisie" : 5
-    "🇳🇬 Nigeria" : 3
+    "🇳🇬 Nigéria" : 3
     "🇩🇿 Algérie" : 2
     "🇹🇿 Tanzanie" : 2
     "🇬🇭 Ghana" : 1
     "🇨🇮 Côte d'Ivoire" : 1
     "🇰🇪 Kenya" : 1
     "🇸🇳 Sénégal" : 1
-    "🌍 Multi-pays" : 3
+    "Resume docs (KE/ET/NG/ZW)" : 1
+    "DHIS2 (MZ/LR/NG/TG/SL)" : 1
+    "Scans passeports (EG/LY)" : 1
 ```
 
 ### Répartition des incidents ransomware (Total : 16)
@@ -110,7 +114,9 @@ pie showData
 | **5** | 🇩🇿 Algérie | **2** | ██ |
 | **6** | 🇹🇿 Tanzanie | **2** | ██ |
 | **7** | 🇰🇪 Kenya | **1** | █ |
-| **–** | 🌍 Multi-pays | **3** | ███ |
+| **–** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | █ |
+| **–** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | █ |
+| **–** | 🇪🇬🇱🇾 Scans de passeports | **1** | █ |
 
 ### Comparaison ransomware vs. fuites par pays
 
@@ -127,7 +133,9 @@ pie showData
 | 🇨🇮 Côte d'Ivoire | **1** | **0** | 🟧 |
 | 🇰🇪 Kenya | **0** | **1** | 🟦 |
 | 🇸🇳 Sénégal | **1** | **0** | 🟧 |
-| 🌍 Multi-pays | **0** | **3** | 🟦🟦🟦 |
+| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | 🟦 |
+| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | 🟦 |
+| 🇪🇬🇱🇾 Scans de passeports | **0** | **1** | 🟦 |
 | **Total (54)** | **16** | **38** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
 
 ```mermaid
@@ -145,7 +153,7 @@ pie showData
 | **Afrique australe** | **15** (27,8 %) | 1 | 14 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique de l'Ouest** | **5** (9,3 %) | 4 | 1 | 🟧🟧🟧🟧 🟦 |
 | **Afrique de l'Est** | **3** (5,6 %) | 0 | 3 | 🟦🟦🟦 |
-| **Multi-pays** | **3** (5,6 %) | 0 | 3 | 🟦🟦🟦 |
+| 🇰🇪🇪🇹🇳🇬🇿🇼🇲🇿🇱🇷🇹🇬🇸🇱🇱🇾 Multi-pays (3 incidents) | **3** (5,6 %) | 0 | 3 | 🟦🟦🟦 |
 
 *Légende : 🟧 Ransomware | 🟦 Fuites de données*
 
@@ -215,9 +223,80 @@ pie showData
 
 ---
 
-## 4. Analyse détaillée par type d'incident
+## 4. Bilan par pays
 
-### 4.1 Ransomware (16 incidents)
+> Toutes les entrées couvrent uniquement les incidents publiquement revendiqués. Les revendications restent non confirmées sauf corroboration indépendante.
+
+### 🇪🇬 Égypte (16 incidents : 7 ransomwares, 9 fuites de données)
+
+- **Ransomware (7) :** NightSpire a revendiqué trois cibles (Papa John's, Rawaj Consumer Finance, B Investments) ; TheGentlemen, Qilin, LockBit 5.0 et Lamashtu (Luna Group) ont chacun revendiqué une victime supplémentaire.
+- **Fuites éducation (4) :** Ministère de l'Éducation (26,8 millions d'enregistrements élèves, Revesky), Professional Academy for Teachers (1,2 million, INT3X), Université de Mansoura (989K), base combinée éducation et RH (37 Go, INT3X). Exposition totale : plus de 28 millions d'enregistrements.
+- **Autres fuites (5) :** Wuzzuf.net (672K enregistrements, Databasehooligan) ; revendications de cc5ab, DR-X-LOL, CrowStealer, bigF et Keymous.
+- Touchée également par l'incident multi-pays : scans de passeports (raylie).
+
+### 🇿🇦 Afrique du Sud (14 incidents : 1 ransomware, 13 fuites de données)
+
+- **Campagne OpSouthAfrica :** La coalition 404Crew Cyber Team (NullSec Nigeria, NullSec Philippines, Infernalis) a revendiqué 8 institutions : Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, Sheriff Randburg West.
+- **Data broker (3) :** Databasehooligan a vendu Telkom SA (742K), Wanderers Club (674K) et MIDAS SA.
+- **Autres fuites (2) :** cc5ab et Kazu ont chacun revendiqué une cible sud-africaine.
+- **Ransomware (1) :** PrinzEugen a revendiqué Standard Bank (non vérifié, aucun échantillon publié).
+
+### 🇲🇦 Maroc (5 fuites de données)
+
+- Cinq revendications : Sejjil, superstarkmc, JBT2026 (registre civil Watiqa.ma), fexus, DarkMafiaX.
+- Exposition principale : environ 827 000 lignes d'identifiants depuis des plateformes gouvernementales (Massar, Moutamadris, Waliye, Tax.gov.ma, TGR et autres portails administratifs).
+
+### 🇹🇳 Tunisie (5 incidents : 2 ransomwares, 3 fuites de données)
+
+- **Ransomware (2) :** TheGentlemen et Titan ont chacun revendiqué une victime tunisienne.
+- **Data broker (3) :** Databasehooligan a vendu trois bases de plateformes d'emploi (MyTelnet, OptionCarriere.tn, Keejob).
+
+### 🇳🇬 Nigéria (3 ransomwares)
+
+- Trois groupes distincts ont chacun revendiqué une victime : MedusaLocker, KillSec, 0day Syndicate. Aucune fuite de données directement attribuée à une cible nigériane.
+- Touché par deux incidents multi-pays : Resume docs (attackercompany) et DHIS2 (Keymous).
+
+### 🇩🇿 Algérie (2 fuites de données)
+
+- Databasehooligan a vendu la base de l'OGEBC (Office de Gestion des Biens Culturels), 425K enregistrements.
+- kamalsheikhxx a revendiqué une fuite algérienne supplémentaire.
+
+### 🇹🇿 Tanzanie (2 fuites de données)
+
+- Kampuchean a mis en vente l'accès à la messagerie de la police tanzanienne : 10 000+ comptes officiers avec mots de passe en clair, exposition critique pour les forces de l'ordre.
+- XOverStm a revendiqué une vente de base de données supplémentaire.
+
+### 🇸🇳 Sénégal (1 ransomware)
+
+- AuditTeam a ciblé le Trésor Public du Sénégal. Double extorsion confirmée : environ 1,66 million d'enregistrements exfiltrés dans trois bases Oracle (registre national des contribuables ~960K, registre du personnel ~40K, ordres de paiement publics ~659K incluant les NINEA et coordonnées bancaires des bénéficiaires).
+
+### 🇬🇭 Ghana (1 ransomware)
+
+- TheGentlemen a revendiqué une victime ghanéenne.
+
+### 🇨🇮 Côte d'Ivoire (1 ransomware)
+
+- TheGentlemen a revendiqué une victime en Côte d'Ivoire.
+
+### 🇰🇪 Kenya (1 fuite de données)
+
+- cc5ab a revendiqué une fuite depuis une cible kenyane. Touché également par l'incident multi-pays Resume docs (attackercompany).
+
+### Incidents multi-pays (3 fuites de données, 11 pays)
+
+Trois incidents ont touché plusieurs pays africains simultanément. Chacun est comptabilisé une seule fois dans le total global de 54.
+
+| Incident | Acteur | Pays concernés |
+|---|---|---|
+| Fuite de CV (Resume docs) | attackercompany | 🇰🇪 Kenya, 🇪🇹 Éthiopie, 🇳🇬 Nigéria, 🇿🇼 Zimbabwe |
+| DHIS2 / Ministères de la santé | Keymous | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigéria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |
+| Scans de passeports | raylie | 🇪🇬 Égypte, 🇱🇾 Libye |
+
+---
+
+## 5. Analyse détaillée par type d'incident
+
+### 5.1 Ransomware (16 incidents)
 
 | Rang | Pays | Attaques | Acteurs principaux |
 | :---: | :--- | :---: | :--- |
@@ -231,7 +310,7 @@ pie showData
 
 **Observations :** **NightSpire** a revendiqué trois cibles égyptiennes en un mois (Papa John's, Rawaj Consumer Finance, B Investments). **TheGentlemen** a démontré une portée géographique inédite en frappant quatre pays différents. L'attaque contre le **Trésor Public du Sénégal** représente l'incident ransomware le plus grave du mois. L'analyse technique confirme une double extorsion : les données ont été exfiltrées depuis deux serveurs internes (Oracle DB + système SICA de paie) environ 9 jours avant le déploiement du ransomware, totalisant environ 1 659 735 enregistrements : registre national des contribuables (~960K), registre du personnel (~40K) et base complète des ordres de paiement publics (~659K) incluant les NINEA et coordonnées bancaires des bénéficiaires.
 
-### 4.2 Fuites de données et ventes d'accès (38 incidents)
+### 5.2 Fuites de données et ventes d'accès (38 incidents)
 
 | Rang | Pays | Incidents | Acteurs principaux |
 | :---: | :--- | :---: | :--- |
@@ -241,13 +320,15 @@ pie showData
 | **4** | 🇹🇳 Tunisie | **3** | Databasehooligan (3) |
 | **5** | 🇩🇿 Algérie | **2** | kamalsheikhxx, Databasehooligan |
 | **6** | 🇹🇿 Tanzanie | **2** | XOverStm, Kampuchean |
-| **–** | 🌍 Multi-pays | **3** | Keymous, attackercompany, raylie |
+| **–** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | attackercompany |
+| **–** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | Keymous |
+| **–** | 🇪🇬🇱🇾 Scans de passeports | **1** | raylie |
 
 **Observations :** **Databasehooligan** a ciblé des bases CRM structurées dans quatre pays, à des prix allant de 900 à 1 400 dollars. La coalition **404Crew x NullSec Nigeria** a mené une campagne soutenue contre les institutions sud-africaines sous le nom "OpSouthAfrica". L'Égypte a subi une vague de compromissions touchant les systèmes éducatifs avec plus de 28 millions d'enregistrements exposés. La vente de la messagerie de la police tanzanienne représente une menace critique pour les opérations judiciaires du pays.
 
 ---
 
-## 5. Impact sectoriel
+## 6. Impact sectoriel
 
 | Secteur d'activité | Incidents | Part (%) | Impact visuel |
 | :--- | :---: | :---: | :--- |
@@ -272,7 +353,7 @@ pie showData
 
 ---
 
-## 6. Profil des acteurs de menaces
+## 7. Profil des acteurs de menaces
 
 | Acteur | Type | Incidents | Cibles principales |
 | :--- | :--- | :---: | :--- |
@@ -287,7 +368,7 @@ pie showData
 
 **Acteurs émergents :** PrinzEugen (Standard Bank), Lamashtu (Luna Group), Kampuchean (Police tanzanienne), JBT2026 (Watiqa.ma).
 
-### 6.1 Niveau de risque
+### 7.1 Niveau de risque
 
 | Pays | Risque |
 |---|---|
@@ -302,7 +383,7 @@ pie showData
 
 ---
 
-## 7. Tendances clés
+## 8. Tendances clés
 
 - **Le secteur éducatif comme cible stratégique :** La compromission simultanée de quatre entités éducatives égyptiennes expose des dizaines de millions d'enregistrements, suggérant l'exploitation d'une vulnérabilité commune ou d'une infrastructure partagée.
 - **Campagne "OpSouthAfrica" :** La coalition 404Crew / NullSec Nigeria / Infernalis a ciblé au moins huit institutions sud-africaines en mai, en mêlant publication de données et revendications politiques liées aux tensions xénophobes.
@@ -313,7 +394,7 @@ pie showData
 
 ---
 
-## 8. Cartographie MITRE ATT&CK (contextuelle)
+## 9. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Identifiant | Nom de la technique | Contexte |
 | :--- | :---: | :--- | :--- |
@@ -327,7 +408,7 @@ pie showData
 
 ---
 
-## 9. Recommandations
+## 10. Recommandations
 
 - **Gouvernements :** Imposer l'authentification multifacteur (MFA) sur tous les portails administratifs et éducatifs ; auditer l'exposition d'identifiants sur les forums underground ; traiter la fuite des identifiants gouvernementaux marocains comme un risque d'identité systémique nécessitant une réinitialisation immédiate des mots de passe.
 - **Institutions éducatives :** Isoler les bases de données étudiants et enseignants des interfaces web exposées ; chiffrer les données sensibles au repos ; activer les logs d'audit sur les plateformes administratives.
@@ -337,7 +418,7 @@ pie showData
 
 ---
 
-## 10. Recommandations SOC (tactiques)
+## 11. Recommandations SOC (tactiques)
 
 - **[T1078] Surveillance des identifiants :** Corréler les données de fuites avec les annuaires internes ; signaler les comptes exposés dans les incidents Maroc, Police tanzanienne et Stats SA.
 - **[T1190] Exposition API :** Imposer l'authentification sur toutes les API publiques ; scanner les buckets S3 non authentifiés et les panneaux d'administration exposés.
@@ -346,7 +427,7 @@ pie showData
 
 ---
 
-## 11. Conclusion
+## 12. Conclusion
 
 Mai 2026 confirme la maturité croissante de l'écosystème cybercriminel ciblant l'Afrique, avec un volume (54 incidents) et une sévérité (millions d'enregistrements, ransomware sur infrastructure critique) toujours élevés. L'Égypte et l'Afrique du Sud concentrent à elles seules 56 % des incidents enregistrés. L'exposition systémique du secteur éducatif égyptien et la campagne soutenue OpSouthAfrica représentent les menaces structurantes du mois. La montée de Databasehooligan comme data broker dominant et de NightSpire comme groupe ransomware émergent témoignent de l'évolution continue de l'écosystème criminel.
 
