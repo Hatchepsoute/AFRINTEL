@@ -92,17 +92,32 @@ sauf en présence de :
 
 ## 🚨 Dernières analyses CTI
 
-### Points clés – Avril 2026
+### Points clés – Mai 2026
 
-- 60 incidents cyber revendiqués publiquement en Afrique
-- Le Maroc, l’Égypte et l’Afrique du Sud restent les principaux foyers
-- Explosion des activités de data brokers et d’Initial Access Brokers
-- Secteurs gouvernemental et santé fortement ciblés
-- Multiplication des fuites KYC et documents d’identité
-- Compromission revendiquée de Kenya Airports Authority (2 To)
-- Campagne massive de mailbox scraping contre la CNSS Bénin
+- 54 incidents cyber revendiqués publiquement en Afrique
+- L’Égypte (16) et l’Afrique du Sud (14) concentrent 56 % des incidents
+- Secteur éducatif égyptien sous attaque systémique : 28 millions d’enregistrements élèves et enseignants exposés
+- Campagne OpSouthAfrica : 8 institutions publiques sud-africaines ciblées
+- Databasehooligan domine l’activité data broker sur 4 pays (8 victimes)
+- NightSpire ransomware : 3 cibles égyptiennes en un seul mois
+- Trésor Public du Sénégal : ransomware AuditTeam avec exfiltration confirmée (~1,66 million d’enregistrements)
+- Messagerie de la police tanzanienne : 10 000 comptes officiers avec mots de passe en clair mis en vente
 
-📄 [Lire le rapport CTI Avril 2026](CyberAttackAfrica/2026/04-april/README_FR.md)
+📄 [Lire le rapport CTI Mai 2026](CyberAttackAfrica/2026/05-may/README_FR.md)
+
+---
+
+### Juin 2026 – Collecte en cours
+
+> Collecte des données en cours. Les chiffres sont partiels et seront mis à jour au fil des incidents documentés dans le mois.
+
+- 5 incidents documentés au 21 juin 2026 (fuites de données et ventes d’accès uniquement)
+- Jeroid.co (Nigéria) : fuite fintech majeure, 312 433 utilisateurs, 759 900 portefeuilles (TVL 306 M$), 110 282 BVN, 64 300 NIN, 70 956 photos biométriques sur un bucket S3 public
+- Usurpation des forces de l’ordre : deux acteurs ("Convince" et "Governor") vendent des identifiants EDR/LEP ciblant au moins 11 pays africains
+- NILDS Nigéria : institution gouvernementale revendiquée par la coalition 404Crew CT x NullSec Nigeria
+- Base de données de pilotes militaires et civils égyptiens mise en vente
+
+📄 [Voir les incidents de juin 2026](CyberAttackAfrica/2026/06-june/victims_FR.md)
 
 ---
 
@@ -114,6 +129,8 @@ sauf en présence de :
 | **Février 2026** | [Voir le rapport](CyberAttackAfrica/2026/02-february/README_FR.md) | [View report](CyberAttackAfrica/2026/02-february/README.md) |
 | **Mars 2026** | [Voir le rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [View report](CyberAttackAfrica/2026/03-march/README.md) |
 | **Avril 2026** | [Voir le rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [View report](CyberAttackAfrica/2026/04-april/README.md) |
+| **Mai 2026** | [Voir le rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [View report](CyberAttackAfrica/2026/05-may/README.md) |
+| **Juin 2026** | [Voir le rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [View report](CyberAttackAfrica/2026/06-june/README.md) |
 
 ---
 
@@ -125,6 +142,8 @@ sauf en présence de :
 | **Février 2026** | [Voir les statistiques](statistics/2026/02-february/README_FR.md) | [Statistics](statistics/2026/02-february/README.md) |
 | **Mars 2026** | [Voir les statistiques](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
 | **Avril 2026** | [Voir les statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
+| **Mai 2026** | [Voir les statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
+| **Juin 2026** | [Voir les statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
 
 ---
 
@@ -135,6 +154,8 @@ sauf en présence de :
 | Janvier vs Février 2026 | [FR](comparison/2026/01-january-february/README_FR.md) | [EN](comparison/2026/01-january-february/README.md) |
 | Février vs Mars 2026 | [FR](comparison/2026/02-february-march/README_FR.md) | [EN](comparison/2026/02-february-march/README.md) |
 | Mars vs Avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
+| Avril vs Mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
+| Mai vs Juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 
 Axes d’analyse :
 
@@ -148,7 +169,7 @@ Axes d’analyse :
 
 ## 🧠 Visual Intelligence
 
-📊 [Tableau de bord Visual Intelligence](visual-intelligence/04-april/README_FR.md)
+📊 [Tableau de bord Visual Intelligence — Mai 2026](visual-intelligence/05-may/README_FR.md)
 
 Inclut :
 
@@ -159,7 +180,15 @@ Inclut :
 - visualisation régionale des impacts
 - cartographie des écosystèmes cybercriminels
 
-### Cartographies CTI
+### Cartographies CTI — Mai 2026
+
+- [Ecosystem Map Mai 2026](visual-intelligence/05-may/ecosystem-map_may_2026.md)
+- [Ransomware vs Fuites](visual-intelligence/05-may/ransomware-vs-leaks_may_2026.md)
+- [Pays les plus touchés](visual-intelligence/05-may/country-hotspots_may_2026.md)
+- [Cartographie sectorielle](visual-intelligence/05-may/sector-map_may_2026.md)
+- [Acteurs de menace](visual-intelligence/05-may/actors_may_2026.md)
+
+### Cartographies CTI — Avril 2026
 
 - [Ecosystem Map Avril 2026](visual-intelligence/04-april/ecosystem-map_april_2026_fr.md)
 - [Ransomware vs Fuites](visual-intelligence/04-april/ransomware-vs-leaks_april_2026_fr.md)
@@ -180,6 +209,8 @@ AFRINTEL fournit des ensembles de données CTI structurés au format **STIX 2.1 
 | Février 2026 | [STIX Bundle](stix/2026/02-february/afrintel_february_2026_opencti.json) |
 | Mars 2026 | [STIX Bundle](stix/2026/03-march/afrintel_march_2026_opencti.json) |
 | Avril 2026 | [STIX Bundle](stix/2026/04-april/afrintel_april_2026_opencti.json) |
+| Mai 2026 | [STIX Bundle](stix/2026/05-may/afrintel_may_2026_opencti.json) |
+| Juin 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
 
 Ces jeux de données contiennent :
 

@@ -1,0 +1,780 @@
+{
+  "type": "bundle",
+  "id": "bundle--a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, and access sales affecting African organizations.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "definition_type": "tlp",
+      "name": "TLP:CLEAR",
+      "definition": {
+        "tlp": "clear"
+      }
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b1c2d3e4-f5a6-7890-bcde-fa1234567890",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "AFRINTEL May 2026 CyberAttackAfrica Report",
+      "description": "STIX 2.1 bundle generated from AFRINTEL victims.md for May 2026. Contains 54 incidents: 16 ransomware and 38 data leaks/access sales across 11 African countries plus multi-country incidents. Key incidents: Egyptian education sector systemic breach (28M+ records), OpSouthAfrica coalition campaign, Databasehooligan data broker (8 victims), NightSpire ransomware (3 Egyptian targets), Tresor Public du Senegal (AuditTeam, ~1.66M records).",
+      "published": "2026-05-31T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "may-2026",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL CyberAttackAfrica May 2026",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/CyberAttackAfrica/2026/05-may",
+          "description": "Primary source used for this STIX/OpenCTI export"
+        }
+      ],
+      "object_refs": [
+        "intrusion-set--may26-databasehooligan",
+        "intrusion-set--may26-thegentlemen",
+        "intrusion-set--may26-nightspire",
+        "intrusion-set--may26-404crew",
+        "intrusion-set--may26-auditteam",
+        "intrusion-set--may26-nullsec-nigeria",
+        "intrusion-set--may26-int3x",
+        "intrusion-set--may26-keymous",
+        "incident--may26-001",
+        "incident--may26-002",
+        "incident--may26-003",
+        "incident--may26-004",
+        "incident--may26-005",
+        "incident--may26-006",
+        "incident--may26-007",
+        "incident--may26-008",
+        "incident--may26-009",
+        "incident--may26-010",
+        "incident--may26-011",
+        "incident--may26-012",
+        "identity--may26-moe-egypt",
+        "identity--may26-pat-egypt",
+        "identity--may26-mansoura-univ",
+        "identity--may26-tresor-senegal",
+        "identity--may26-standard-bank",
+        "identity--may26-telkom-sa",
+        "identity--may26-tanzania-police",
+        "identity--may26-wuzzuf",
+        "identity--may26-papajohns-egypt",
+        "identity--may26-rawaj",
+        "identity--may26-ephraim-mogale",
+        "identity--may26-sita-sa"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-databasehooligan",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Databasehooligan",
+      "description": "Data broker active in May 2026. Targeted CRM-structured databases across Tunisia, South Africa, Egypt, and Algeria. 8 victims including Telkom SA (742K records), Wanderers Club (674K), Wuzzuf.net (672K), MyTelnet Tunisia, OptionCarriere.tn, Keejob, MIDAS SA, OGEBC Algeria. Selling between $900 and $1,400 per dataset.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-broker",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-thegentlemen",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "TheGentlemen",
+      "description": "Ransomware group. Hit four African countries in May 2026: Egypt, Tunisia, Ghana, and Ivory Coast. 4 confirmed ransomware incidents.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-nightspire",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "NightSpire",
+      "description": "Ransomware group. Claimed three Egyptian targets in May 2026: Papa John's Egypt, Rawaj Consumer Finance, B Investments. Focused campaign against Egyptian business infrastructure.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-404crew",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "404Crew Cyber Team",
+      "description": "Data leak coalition group. Ran OpSouthAfrica campaign in May 2026 with NullSec Nigeria and Infernalis, targeting at least 8 South African public institutions: Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, Sheriff Randburg West.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-auditteam",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "AuditTeam",
+      "description": "Ransomware group. Attacked Tresor Public du Senegal in May 2026. Double-extortion confirmed: exfiltrated ~1,659,735 records from Oracle databases and SICA payroll files approximately 9 days before ransomware deployment.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-nullsec-nigeria",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "NullSec Nigeria",
+      "description": "Data leak coalition partner. Active in OpSouthAfrica campaign alongside 404Crew Cyber Team and Infernalis. 2+ South African public institution victims.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-int3x",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "INT3X",
+      "description": "Data leak actor. 2 incidents in May 2026, targeting Egyptian education institutions including Mansoura University (989K records) and Professional Academy for Teachers (1.2M records).",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--may26-keymous",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Keymous",
+      "description": "Access sale and data leak actor. 2 incidents in May 2026. Involved in multi-country health system (DHIS2) access sale affecting seven countries including Mozambique, Liberia, Nigeria, Togo, and Sierra Leone.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "data-leak",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-001",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Ministry of Education — 26.8M student records breach",
+      "description": "Claim: Data broker published 26.8 million student records from Egypt's Ministry of Education. Includes student personal data and academic records. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "egypt",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-002",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Professional Academy for Teachers — 1.2M teacher records breach",
+      "description": "Claim: 1.2 million teacher records from Egypt's Professional Academy for Teachers allegedly exfiltrated and offered for sale. Sensitive education sector exposure. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "egypt",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-003",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Mansoura University — 989K records breach",
+      "description": "Claim: INT3X actor allegedly exfiltrated 989,000 records from Mansoura University, Egypt. Student and staff data. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "egypt",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-004",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Senegal Tresor Public — AuditTeam ransomware with double extortion",
+      "description": "Ransomware claim: AuditTeam group deployed ransomware against the Tresor Public du Senegal. Double-extortion confirmed by published data sample: approximately 1,659,735 records exfiltrated from three Oracle databases (national taxpayer registry ~960K, payroll register ~40K, public payment orders ~659K with NINEA identifiers and banking data) plus 18 months of SICA payroll files. Data exfiltrated approximately 9 days before ransomware deployment. Incident is a claim and has not been officially confirmed by the victim.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "senegal",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-005",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "South Africa Telkom — 742K records breach (Databasehooligan)",
+      "description": "Claim: Databasehooligan sold a structured CRM database from Telkom South Africa containing approximately 742,000 records. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "south-africa",
+        "telecom"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-006",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Tanzania Police webmail — 10,000+ officer accounts exposed",
+      "description": "Claim: Actor 'Kampuchean' offered for sale the Tanzania Police webmail database containing over 10,000 officer accounts with plaintext passwords. Critical law enforcement operational security risk. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "tanzania",
+        "law-enforcement"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-007",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "South Africa OpSouthAfrica — 404Crew coalition campaign",
+      "description": "Claim: 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines, and Infernalis ran a sustained data leak campaign (OpSouthAfrica) targeting South African public institutions: Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, Sheriff Randburg West. Political messaging around xenophobia grievances. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "south-africa",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-008",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Wuzzuf.net — 672K records breach (Databasehooligan)",
+      "description": "Claim: Databasehooligan sold a structured recruitment/jobs database from Wuzzuf.net Egypt containing approximately 672,000 records. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "egypt",
+        "recruitment"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-009",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Multi-country DHIS2 health system access sale",
+      "description": "Claim: Actor 'Keymous' sold administrative access to DHIS2 health information systems in seven countries: Mozambique, Liberia, Nigeria, Bhutan, Honduras, Togo, and Sierra Leone. DHIS2 is used for national public health data management. Critical threat to public health data sovereignty. Incident is a claim from cybercriminal forums and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified",
+        "multi-country",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-010",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Papa John's — NightSpire ransomware",
+      "description": "Ransomware claim: NightSpire group claimed ransomware attack against Papa John's Egypt. Part of a concentrated campaign against Egyptian business infrastructure. Incident is a claim and has not been officially confirmed by the victim.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "claim-unverified",
+        "egypt",
+        "food-beverage"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-011",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Rawaj Consumer Finance — NightSpire ransomware",
+      "description": "Ransomware claim: NightSpire group claimed ransomware attack against Rawaj Consumer Finance, Egypt. Part of a concentrated campaign against Egyptian financial services. Incident is a claim and has not been officially confirmed by the victim.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "claim-unverified",
+        "egypt",
+        "finance"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--may26-012",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Multi-country government EDR email access sales (Moroccan credentials)",
+      "description": "Claim: Multiple actors sold Moroccan government credentials (827K lines) and multi-country government email addresses specifically for submitting fraudulent Emergency Disclosure Requests (EDR) to Meta, Google, and Telegram. Signals growing underground market for law enforcement impersonation. Incident is a claim from cybercriminal forums.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified",
+        "multi-country",
+        "government",
+        "law-enforcement"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-moe-egypt",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Egypt Ministry of Education",
+      "identity_class": "organization",
+      "sectors": ["education"],
+      "description": "Egyptian Ministry of Education. Alleged victim of data breach in May 2026 with 26.8 million student records reportedly exfiltrated.",
+      "labels": ["afrintel", "africa", "egypt", "education"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-pat-egypt",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Professional Academy for Teachers — Egypt",
+      "identity_class": "organization",
+      "sectors": ["education"],
+      "description": "Egyptian Professional Academy for Teachers. Alleged victim of data breach in May 2026 with 1.2 million teacher records reportedly exfiltrated.",
+      "labels": ["afrintel", "africa", "egypt", "education"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-mansoura-univ",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Mansoura University — Egypt",
+      "identity_class": "organization",
+      "sectors": ["education"],
+      "description": "Mansoura University, Egypt. Alleged victim of data breach in May 2026 with 989,000 records reportedly exfiltrated by INT3X.",
+      "labels": ["afrintel", "africa", "egypt", "education"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-tresor-senegal",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Tresor Public du Senegal",
+      "identity_class": "organization",
+      "sectors": ["government"],
+      "description": "Senegal national treasury (Tresor Public). Alleged victim of AuditTeam ransomware in May 2026 with ~1.66M records exfiltrated including national taxpayer registry, payroll, and payment orders.",
+      "labels": ["afrintel", "africa", "senegal", "government"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-telkom-sa",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Telkom South Africa",
+      "identity_class": "organization",
+      "sectors": ["telecommunications"],
+      "description": "Telkom South Africa. Alleged victim of data sale by Databasehooligan in May 2026 with approximately 742,000 CRM records offered for sale.",
+      "labels": ["afrintel", "africa", "south-africa", "telecom"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-tanzania-police",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Tanzania Police Force — webmail",
+      "identity_class": "organization",
+      "sectors": ["government"],
+      "description": "Tanzania Police Force. Alleged victim of webmail credential exposure in May 2026. 10,000+ officer accounts with plaintext passwords offered for sale by actor 'Kampuchean'.",
+      "labels": ["afrintel", "africa", "tanzania", "law-enforcement"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-wuzzuf",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Wuzzuf.net — Egypt",
+      "identity_class": "organization",
+      "sectors": ["recruitment"],
+      "description": "Wuzzuf.net, Egyptian online recruitment platform. Alleged victim of data sale by Databasehooligan in May 2026 with approximately 672,000 records.",
+      "labels": ["afrintel", "africa", "egypt", "recruitment"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-papajohns-egypt",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Papa John's Egypt",
+      "identity_class": "organization",
+      "sectors": ["food-beverage"],
+      "description": "Papa John's Egypt franchise. Alleged ransomware victim of NightSpire group in May 2026.",
+      "labels": ["afrintel", "africa", "egypt", "food-beverage"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-rawaj",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Rawaj Consumer Finance — Egypt",
+      "identity_class": "organization",
+      "sectors": ["finance"],
+      "description": "Rawaj Consumer Finance, Egypt. Alleged ransomware victim of NightSpire group in May 2026.",
+      "labels": ["afrintel", "africa", "egypt", "finance"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-ephraim-mogale",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "Ephraim Mogale Municipality — South Africa",
+      "identity_class": "organization",
+      "sectors": ["government"],
+      "description": "Ephraim Mogale Local Municipality, South Africa. Alleged data leak victim of OpSouthAfrica coalition in May 2026.",
+      "labels": ["afrintel", "africa", "south-africa", "government"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--may26-sita-sa",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "name": "SITA — South Africa",
+      "identity_class": "organization",
+      "sectors": ["government"],
+      "description": "State Information Technology Agency (SITA), South Africa. Alleged data leak victim of OpSouthAfrica coalition in May 2026.",
+      "labels": ["afrintel", "africa", "south-africa", "government"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r001",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-004",
+      "target_ref": "intrusion-set--may26-auditteam",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r002",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-010",
+      "target_ref": "intrusion-set--may26-nightspire",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r003",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-011",
+      "target_ref": "intrusion-set--may26-nightspire",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r004",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-005",
+      "target_ref": "intrusion-set--may26-databasehooligan",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r005",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-008",
+      "target_ref": "intrusion-set--may26-databasehooligan",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r006",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--may26-007",
+      "target_ref": "intrusion-set--may26-404crew",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r007",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--may26-auditteam",
+      "target_ref": "identity--may26-tresor-senegal",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r008",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--may26-nightspire",
+      "target_ref": "identity--may26-papajohns-egypt",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r009",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--may26-databasehooligan",
+      "target_ref": "identity--may26-telkom-sa",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--may26-r010",
+      "created": "2026-05-31T00:00:00Z",
+      "modified": "2026-05-31T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--may26-404crew",
+      "target_ref": "identity--may26-sita-sa",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    }
+  ]
+}

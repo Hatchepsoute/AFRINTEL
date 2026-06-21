@@ -1,0 +1,480 @@
+{
+  "type": "bundle",
+  "id": "bundle--c2d3e4f5-a6b7-8901-cdef-ab2345678901",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, and access sales affecting African organizations.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "marking-definition",
+      "spec_version": "2.1",
+      "id": "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487",
+      "created": "2022-10-01T00:00:00.000Z",
+      "definition_type": "tlp",
+      "name": "TLP:CLEAR",
+      "definition": {
+        "tlp": "clear"
+      }
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--d2e3f4a5-b6c7-8901-defa-bc2345678901",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "AFRINTEL June 2026 CyberAttackAfrica Report",
+      "description": "STIX 2.1 bundle generated from AFRINTEL victims.md for June 2026. Contains 5 incidents: 0 ransomware and 5 data leaks/access sales across 2 African countries plus multi-country incidents. Key incidents: Jeroid.co fintech mega-breach (312,433 users, 759,900 wallets, $306M TVL, 110,282 BVN, 64,300 NIN, 70,956 biometric photos); law enforcement portal access sales targeting 11 African countries (Convince + Governor actors); NILDS Nigeria government claim; Egypt pilots database.",
+      "published": "2026-06-21T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "june-2026",
+        "data-leaks",
+        "access-sales",
+        "osint"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL CyberAttackAfrica June 2026",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/tree/main/CyberAttackAfrica/2026/06-june",
+          "description": "Primary source used for this STIX/OpenCTI export"
+        }
+      ],
+      "object_refs": [
+        "intrusion-set--jun26-xyphorix",
+        "intrusion-set--jun26-burti",
+        "intrusion-set--jun26-404crew-nullsec",
+        "intrusion-set--jun26-convince",
+        "intrusion-set--jun26-governor",
+        "incident--jun26-001",
+        "incident--jun26-002",
+        "incident--jun26-003",
+        "incident--jun26-004",
+        "incident--jun26-005",
+        "identity--jun26-egyptian-pilots-db",
+        "identity--jun26-jeroid",
+        "identity--jun26-nilds",
+        "identity--jun26-gov-africa-edr",
+        "identity--jun26-gov-africa-lep"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--jun26-xyphorix",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Xyphorix",
+      "description": "Data broker active on the [Citizen] forum. Sold a database of Egyptian military and civil aviation pilots in June 2026. Includes personnel from Egypt Air, Qatar Airways, Fly Emirates, Petroleum Air Services, Suez Canal Authority, and the Ministry of Civil Aviation.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-broker",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--jun26-burti",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "burti",
+      "description": "Data broker active on the [Citizen] forum. Sold the full Jeroid.co database in June 2026: 312,433 users, 759,900 wallets ($306M TVL), 110,282 BVN, 64,300 NIN, 70,956 face verification biometric photos (stored on a public unauthenticated S3 bucket), 65,013 Level 3 KYC users. Asking price: $2,000 USD.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-broker",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--jun26-404crew-nullsec",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "404Crew Cyber Team x NullSec Nigeria",
+      "description": "Data leak coalition. Claimed the compromise of the National Institute for Legislative and Democratic Studies (NILDS) in Nigeria in June 2026. Published database structures, admin accounts, and credentials for parliamentary systems.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--jun26-convince",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Convince",
+      "description": "Access sale actor active on the [Immortal] cybercriminal forum. Sold active government email addresses from 8 African countries (Ethiopia, Tanzania, Angola, Kenya, Zambia, Nigeria, Egypt, Morocco) specifically for submitting fraudulent Emergency Disclosure Requests (EDR) to Meta, Google, and Telegram. Sold alongside a full EDR tutorial. Contacts: Telegram (@renavol), Session, Signal, Discord.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "intrusion-set",
+      "spec_version": "2.1",
+      "id": "intrusion-set--jun26-governor",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Governor",
+      "description": "Access sale actor active on the [Citizen] cybercriminal forum. Sold complete government and police accounts with active authenticated access to Law Enforcement Portals (LEP) of Meta, Instagram, TikTok, and X. Targets include 9 countries: Egypt ($120), Malawi ($60), Tanzania ($60), Algeria ($100), Palestine ($130), Kenya ($85), Zambia ($60), Sierra Leone ($80), Yemen ($140). LEP access enables data subpoena requests, emergency disclosure requests, and content removal.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--jun26-001",
+      "created": "2026-06-06T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Egypt — Egyptian pilots database sale (Xyphorix)",
+      "description": "Claim: Actor Xyphorix sold a database containing personal information of Egyptian military and civil aviation pilots on the [Citizen] forum. Fields include names, phone numbers, occupation, city, and marital status. Samples show pilots from Egypt Air, Qatar Airways, Fly Emirates, Petroleum Air Services, Suez Canal Authority, and Ministry of Civil Aviation. Price not specified. Incident is a claim from a cybercriminal forum and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "claim-unverified",
+        "egypt",
+        "aviation",
+        "military"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--jun26-002",
+      "created": "2026-06-10T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Nigeria Jeroid.co — fintech mega-breach (312K users, $306M TVL, biometric exposure)",
+      "description": "Claim: Actor 'burti' sold the full database of Jeroid.co, Nigeria's largest crypto-to-Naira exchange platform, on the [Citizen] forum. Dataset includes: 312,433 users (100% with email, 98% with phone); 759,900 wallets (129,423 with balance, platform TVL $306M); 110,282 Bank Verification Numbers (BVN); 64,300 National Identification Numbers (NIN); 70,956 face verification biometric photos stored on an unauthenticated public S3 bucket; 3,872 passports, 2,106 voter cards, 1,700 driver licenses; 65,013 users with full Level 3 KYC (BVN + NIN + face scan + ID document); 89 internal staff accounts including executives. Asking price: $2,000 USD. Incident is a claim from a cybercriminal forum and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "nigeria",
+        "fintech",
+        "cryptocurrency",
+        "biometric"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--jun26-003",
+      "created": "2026-06-13T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Nigeria NILDS — 404Crew Cyber Team x NullSec Nigeria government claim",
+      "description": "Claim: The 404Crew Cyber Team x NullSec Nigeria coalition claimed the compromise of multiple databases associated with the National Institute for Legislative and Democratic Studies (NILDS) and Nigerian parliamentary portals. Published samples include database structures, administrator accounts, email addresses, usernames, and credentials linked to various parliamentary systems. NILDS is affiliated with Nigeria's National Assembly. Incident is a claim based on published samples and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "nigeria",
+        "government",
+        "legislative"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--jun26-004",
+      "created": "2026-06-17T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Africa multi-country — Convince EDR email access sale (8 African countries)",
+      "description": "Claim: Actor 'Convince' (Immortal forum) sold active government email addresses from 8 African countries specifically designed for submitting fraudulent Emergency Disclosure Requests (EDR) to Meta, Google, and Telegram. Countries and prices: Ethiopia 2 emails ($40), Tanzania 13,000 emails ($5), Angola 3 emails ($20), Kenya 5 emails ($20), Zambia 650 emails (make offer), Nigeria 2 emails ($50 police), Egypt 1 email ($60 Ministry of Finance), Morocco 2 emails ($70). Sold alongside a complete EDR tutorial. This represents a critical exposure of official authentication vectors enabling impersonation of law enforcement. Incident is a claim from a cybercriminal forum.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified",
+        "multi-country",
+        "government",
+        "law-enforcement",
+        "edr-fraud"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--jun26-005",
+      "created": "2026-06-20T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Africa multi-country — Governor LEP portal access sale (9 countries including African nations)",
+      "description": "Claim: Actor 'Governor' ([Citizen] forum) sold active government and police accounts with authenticated access to Law Enforcement Portals (LEP) of Meta, Instagram, TikTok, and X. Unlike raw email addresses, these are complete accounts already authenticated on the platform portals, enabling direct data subpoena requests, emergency data requests, and content removal orders. African countries in catalog: Egypt ($120), Malawi ($60), Tanzania ($60), Algeria ($100), Kenya ($85), Zambia ($60), Sierra Leone ($80). Also includes Palestine ($130) and Yemen ($140). Incident is a claim from a cybercriminal forum and has not been independently confirmed.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "access-sale",
+        "claim-unverified",
+        "multi-country",
+        "government",
+        "law-enforcement",
+        "lep-abuse"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--jun26-egyptian-pilots-db",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Egyptian Pilots Database (Egypt Air, Qatar Airways, MCA, Suez Canal Authority)",
+      "identity_class": "organization",
+      "sectors": ["aviation", "government"],
+      "description": "Database containing personal information of Egyptian military and civil aviation pilots. Organizations represented: Egypt Air, Qatar Airways, Fly Emirates, Petroleum Air Services, Suez Canal Authority, Ministry of Civil Aviation. Alleged victim of data sale by Xyphorix on June 6, 2026.",
+      "labels": ["afrintel", "africa", "egypt", "aviation", "military"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--jun26-jeroid",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "Jeroid.co / Jeroid.ng",
+      "identity_class": "organization",
+      "sectors": ["financial-services"],
+      "description": "Jeroid.co, Nigeria's largest crypto-to-Naira exchange platform. Websites: jeroid.co / jeroid.ng. Alleged victim of database sale by actor 'burti' on June 10, 2026. 312,433 users, 759,900 wallets, $306M TVL, 110,282 BVN, 64,300 NIN, 70,956 biometric photos. Asking price: $2,000 USD.",
+      "labels": ["afrintel", "africa", "nigeria", "fintech", "cryptocurrency"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--jun26-nilds",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "National Institute for Legislative and Democratic Studies (NILDS) — Nigeria",
+      "identity_class": "organization",
+      "sectors": ["government"],
+      "description": "National Institute for Legislative and Democratic Studies (NILDS), Nigeria. Website: nils.gov.ng. Institution affiliated with the National Assembly providing research, training, and technical support for legislative governance. Alleged victim of data leak claimed by 404Crew Cyber Team x NullSec Nigeria on June 13, 2026.",
+      "labels": ["afrintel", "africa", "nigeria", "government", "legislative"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--jun26-gov-africa-edr",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "African government institutions — EDR email exposure (8 countries)",
+      "identity_class": "group",
+      "sectors": ["government"],
+      "description": "Collective identity representing the 8 African government and law enforcement institutions whose email addresses were sold by actor 'Convince' for EDR fraud. Countries: Ethiopia, Tanzania, Angola, Kenya, Zambia, Nigeria (police), Egypt (Ministry of Finance), Morocco.",
+      "labels": ["afrintel", "africa", "multi-country", "government", "law-enforcement"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--jun26-gov-africa-lep",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "name": "African government/police institutions — LEP portal access (7 African countries)",
+      "identity_class": "group",
+      "sectors": ["government"],
+      "description": "Collective identity representing the 7 African government and law enforcement institutions whose LEP portal accounts were sold by actor 'Governor'. African countries: Egypt, Malawi, Tanzania, Algeria, Kenya, Zambia, Sierra Leone. Also includes Palestine and Yemen (seller's classification).",
+      "labels": ["afrintel", "africa", "multi-country", "government", "law-enforcement"],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r001",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--jun26-001",
+      "target_ref": "intrusion-set--jun26-xyphorix",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r002",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--jun26-002",
+      "target_ref": "intrusion-set--jun26-burti",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r003",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--jun26-003",
+      "target_ref": "intrusion-set--jun26-404crew-nullsec",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r004",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--jun26-004",
+      "target_ref": "intrusion-set--jun26-convince",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r005",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--jun26-005",
+      "target_ref": "intrusion-set--jun26-governor",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r006",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--jun26-xyphorix",
+      "target_ref": "identity--jun26-egyptian-pilots-db",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r007",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--jun26-burti",
+      "target_ref": "identity--jun26-jeroid",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r008",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--jun26-404crew-nullsec",
+      "target_ref": "identity--jun26-nilds",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r009",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--jun26-convince",
+      "target_ref": "identity--jun26-gov-africa-edr",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--jun26-r010",
+      "created": "2026-06-21T00:00:00Z",
+      "modified": "2026-06-21T00:00:00Z",
+      "relationship_type": "targets",
+      "source_ref": "intrusion-set--jun26-governor",
+      "target_ref": "identity--jun26-gov-africa-lep",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": ["marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"]
+    }
+  ]
+}

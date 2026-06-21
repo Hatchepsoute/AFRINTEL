@@ -41,6 +41,26 @@
 - **Analysis:**  
   The threat actors claim to have compromised multiple databases associated with NILDS and Nigerian parliamentary platforms. The published samples reveal database structures, administrator accounts, email addresses, usernames, and credentials linked to various systems. Such exposure could enable unauthorized access to internal applications, facilitate targeted phishing campaigns, and increase the risk of further compromise of affected government infrastructure. At this stage, the claim is based solely on information released by the threat actors and has not been independently verified.
 
+### June 17, 2026
+#### 🌍 Africa (Multi-country) – Public Institutions & Law Enforcement
+- **Actor / Source:** Convince (via the cybercriminal forum [Immortal]) – Contacts: Telegram (@renavol), Session, Signal, Discord
+- **Sector:** Government / Law Enforcement
+- **Status:** Active offer
+- **Website:** Not specified
+- **Description:**  
+  A cybercriminal is offering for sale real and active email addresses from African institutions. These accesses are specifically intended to impersonate official authorities in order to submit fake Emergency Disclosure Requests (EDR) to major digital platforms such as Google, Meta, or Telegram.
+  The catalog of African government email addresses put up for sale includes:
+  * 🇪🇹 **Ethiopia:** 2 emails ($40)
+  * 🇹🇿 **Tanzania:** 13,000 emails ($5)
+  * 🇦🇴 **Angola:** 3 emails ($20)
+  * 🇰🇪 **Kenya:** 5 emails ($20)
+  * 🇿🇲 **Zambia:** 650 emails (make offer)
+  * 🇳🇬 **Nigeria:** 2 emails ($50, Police)
+  * 🇪🇬 **Egypt:** 1 email ($60, Ministry of Finance)
+  * 🇲🇦 **Morocco:** 2 emails ($70)
+- **Analysis:**  
+  This offer does not constitute a data breach passively suffered by these countries, but rather represents a critical exposure of their official authentication vectors. The commercialization of these addresses, combined with the full EDR tutorial sold by the same actor, allows malicious third parties to unduly obtain personal and user data from online platforms by exploiting the trust placed in these countries' authorities. This significantly increases the risk of administrative identity theft and cross-border fraud at both regional and international levels. This threat is all the more concerning as it involves several institutions already targeted by data leaks in May 2026 (Egypt, Morocco, Nigeria), creating favorable conditions for combined attacks.
+---
 ### June 20, 2026
 #### 🌍 Africa (Multi-country) – Public Institutions & Law Enforcement (Portal Access Offer)
 - **Actor / Source:** [Citizen] Governor (via cybercriminal forum)
@@ -64,23 +84,3 @@
   * 🇾🇪 **Yemen (Governmental)**: $140
 - **Analysis:**  
   This offer follows the same logic as the "Convince" actor's, but with a more dangerous specificity: it sells not just raw email addresses, but **complete accounts that already have access to the official platform portals**. This means the buyer does not even need to draft fake EDR requests; they can directly log into the Meta or X interface using a genuine government agent's credentials. The risk is major: mass identity theft, extraction of personal data (including private messages via subpoenas), and manipulation of online content. The inclusion of countries like Palestine and Yemen in the "African" list (according to the seller) suggests an approximate geographical classification, but does not diminish the threat to legitimate African institutions involved.
----
-### June 17, 2026
-#### 🌍 Africa (Multi-country) – Public Institutions & Law Enforcement
-- **Actor / Source:** Convince (via the cybercriminal forum [Immortal]) – Contacts: Telegram (@renavol), Session, Signal, Discord
-- **Sector:** Government / Law Enforcement
-- **Status:** Active offer
-- **Website:** Not specified
-- **Description:**  
-  A cybercriminal is offering for sale real and active email addresses from African institutions. These accesses are specifically intended to impersonate official authorities in order to submit fake Emergency Disclosure Requests (EDR) to major digital platforms such as Google, Meta, or Telegram.
-  The catalog of African government email addresses put up for sale includes:
-  * 🇪🇹 **Ethiopia:** 2 emails ($40)
-  * 🇹🇿 **Tanzania:** 13,000 emails ($5)
-  * 🇦🇴 **Angola:** 3 emails ($20)
-  * 🇰🇪 **Kenya:** 5 emails ($20)
-  * 🇿🇲 **Zambia:** 650 emails (make offer)
-  * 🇳🇬 **Nigeria:** 2 emails ($50, Police)
-  * 🇪🇬 **Egypt:** 1 email ($60, Ministry of Finance)
-  * 🇲🇦 **Morocco:** 2 emails ($70)
-- **Analysis:**  
-  This offer does not constitute a data breach passively suffered by these countries, but rather represents a critical exposure of their official authentication vectors. The commercialization of these addresses, combined with the full EDR tutorial sold by the same actor, allows malicious third parties to unduly obtain personal and user data from online platforms by exploiting the trust placed in these countries' authorities. This significantly increases the risk of administrative identity theft and cross-border fraud at both regional and international levels. This threat is all the more concerning as it involves several institutions already targeted by data leaks in May 2026 (Egypt, Morocco, Nigeria), creating favorable conditions for combined attacks.

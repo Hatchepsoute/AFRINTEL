@@ -41,8 +41,9 @@
   Le National Institute for Legislative and Democratic Studies (NILDS) est un organisme rattaché à l’Assemblée nationale nigériane, chargé de la recherche, de la formation et du soutien aux activités législatives et démocratiques.
 - **Analyse :**  
   Les acteurs revendiquent la compromission de plusieurs bases de données associées au NILDS et à des portails parlementaires nigérians. Les échantillons publiés montrent la structure de plusieurs bases de données, des comptes administrateurs, des adresses e-mail, des identifiants utilisateurs et des mots de passe associés à différents systèmes. Les données exposées pourraient permettre un accès non autorisé à des applications internes, faciliter des campagnes de phishing ciblé et compromettre davantage l’infrastructure institutionnelle concernée. À ce stade, cette revendication repose sur les éléments publiés par les acteurs et n’a pas été confirmée indépendamment.
-  
-#### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l'ordre (Offre d'accès portails)
+---
+### 20 Juin 2026
+#### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l’ordre (Offre d’accès portails)
 - **Acteur / Source :** [Citizen] Governor (via forum cybercriminel)
 - **Secteur :** Gouvernement / Forces de l'ordre / Plateformes sociales
 - **Statut :** Offre active
