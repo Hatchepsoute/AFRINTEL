@@ -62,19 +62,19 @@ En janvier 2026, **21 incidents cyber** visant des entités africaines ont été
 
 ```mermaid
 pie
-    title Nombre de victimes par pays (janvier 2026)
-    "🇿🇦 Afrique du Sud (4)" : 4
-    "🇰🇪 Kenya (4)" : 4
-    "🇪🇬 Égypte (3)" : 3
-    "🇲🇦 Maroc (2)" : 2
-    "🇹🇬 Togo (1)" : 1
-    "🇳🇪 Niger (1)" : 1
-    "🇸🇳 Sénégal (1)" : 1
-    "🇲🇿 Mozambique (1)" : 1
-    "🇹🇿 Tanzanie (1)" : 1
-    "🇲🇺 Maurice (1)" : 1
-    "🇩🇿 Algérie (1)" : 1
-    "🇹🇳 Tunisie (1)" : 1
+ title Nombre de victimes par pays (janvier 2026)
+ "Afrique du Sud (4)" : 4
+ "Kenya (4)" : 4
+ "Égypte (3)" : 3
+ "Maroc (2)" : 2
+ "Togo (1)" : 1
+ "Niger (1)" : 1
+ "Sénégal (1)" : 1
+ "Mozambique (1)" : 1
+ "Tanzanie (1)" : 1
+ "Maurice (1)" : 1
+ "Algérie (1)" : 1
+ "Tunisie (1)" : 1
 ```
 
 **Type d'incident par pays :**
@@ -95,11 +95,11 @@ pie
 
 ```mermaid
 pie
-    title Répartition par type d'incident (janvier 2026)
-    "Ransomware (17)" : 17
-    "Fuite de données (2)" : 2
-    "Vente d'accès (1)" : 1
-    "Défacement (1)" : 1
+ title Répartition par type d'incident (janvier 2026)
+ "Ransomware (17)" : 17
+ "Fuite de données (2)" : 2
+ "Vente d'accès (1)" : 1
+ "Défacement (1)" : 1
 ```
 
 **Acteurs les plus prolifiques :**
@@ -120,10 +120,10 @@ pie
 
 ```mermaid
 pie
-    title Acteurs les plus actifs (janvier 2026)
-    "thegentlemen (6)" : 6
-    "tengu (5)" : 5
-    "Autres - 1 chacun (10)" : 10
+ title Acteurs les plus actifs (janvier 2026)
+ "thegentlemen (6)" : 6
+ "tengu (5)" : 5
+ "Autres - 1 chacun (10)" : 10
 ```
 
 ## 4. Vue d'ensemble pays par pays
@@ -232,17 +232,17 @@ FRUIT-BONTÉ (tengu, 27 janvier), entreprise agroalimentaire et de transformatio
 
 ```mermaid
 pie
-    title Répartition sectorielle (janvier 2026)
-    "Gouvernement/Admin (4)" : 4
-    "Finance/FinTech (4)" : 4
-    "Transport/Logistique (3)" : 3
-    "Industrie/Ingénierie (3)" : 3
-    "Technologie/IT (2)" : 2
-    "Santé (1)" : 1
-    "Mines (1)" : 1
-    "Agroalimentaire (1)" : 1
-    "Tourisme (1)" : 1
-    "Aviation (1)" : 1
+ title Répartition sectorielle (janvier 2026)
+ "Gouvernement/Admin (4)" : 4
+ "Finance/FinTech (4)" : 4
+ "Transport/Logistique (3)" : 3
+ "Industrie/Ingénierie (3)" : 3
+ "Technologie/IT (2)" : 2
+ "Santé (1)" : 1
+ "Mines (1)" : 1
+ "Agroalimentaire (1)" : 1
+ "Tourisme (1)" : 1
+ "Aviation (1)" : 1
 ```
 
 **Enseignements :**

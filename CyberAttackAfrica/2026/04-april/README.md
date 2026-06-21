@@ -69,23 +69,23 @@ Key findings:
 
 ```mermaid
 pie showData
-    title Victims distribution by country - April 2026
-    "🇲🇦 Morocco" : 17
-    "🇪🇬 Egypt" : 11
-    "🇿🇦 South Africa" : 8
-    "🇳🇬 Nigeria" : 4
-    "🇩🇿 Algeria" : 4
-    "🇹🇳 Tunisia" : 4
-    "🇰🇪 Kenya" : 2
-    "🇬🇭 Ghana" : 2
-    "🇧🇯 Benin" : 1
-    "🇧🇼 Botswana" : 1
-    "🇪🇹 Ethiopia" : 1
-    "🇸🇨 Seychelles" : 1
-    "🇸🇳 Senegal" : 1
-    "🇺🇬 Uganda" : 1
-    "🇿🇲 Zambia" : 1
-    "🌍 Multi country Africa" : 1
+ title Victims distribution by country - April 2026
+ "Morocco" : 17
+ "Egypt" : 11
+ "South Africa" : 8
+ "Nigeria" : 4
+ "Algeria" : 4
+ "Tunisia" : 4
+ "Kenya" : 2
+ "Ghana" : 2
+ "Benin" : 1
+ "Botswana" : 1
+ "Ethiopia" : 1
+ "Seychelles" : 1
+ "Senegal" : 1
+ "Uganda" : 1
+ "Zambia" : 1
+ "Multi country Africa" : 1
 ```
 
 ### 📊 Distribution by ransomware incidents (Total: 20)
@@ -166,15 +166,15 @@ pie showData
 
 ```mermaid
 pie showData
-    title Ransomware victims by country
-    "🇪🇬 Egypt" : 9
-    "🇿🇦 South Africa" : 3
-    "🇲🇦 Morocco" : 2
-    "🇬🇭 Ghana" : 2
-    "🇰🇪 Kenya" : 1
-    "🇧🇼 Botswana" : 1
-    "🇸🇨 Seychelles" : 1
-    "🇿🇲 Zambia" : 1
+ title Ransomware victims by country
+ "Egypt" : 9
+ "South Africa" : 3
+ "Morocco" : 2
+ "Ghana" : 2
+ "Kenya" : 1
+ "Botswana" : 1
+ "Seychelles" : 1
+ "Zambia" : 1
 ```
 
 
@@ -182,19 +182,19 @@ pie showData
 
 ```mermaid
 pie showData
-    title Data leaks by country 
-    "🇲🇦 Morocco" : 15
-    "🇿🇦 South Africa" : 5
-    "🇳🇬 Nigeria" : 4
-    "🇩🇿 Algeria" : 4
-    "🇹🇳 Tunisia" : 4
-    "🇪🇬 Egypt" : 2
-    "🇰🇪 Kenya" : 1
-    "🇧🇯 Benin" : 1
-    "🇪🇹 Ethiopia" : 1
-    "🇸🇳 Senegal" : 1
-    "🇺🇬 Uganda" : 1
-    "🌍 Multi-country Africa" : 1
+ title Data leaks by country 
+ "Morocco" : 15
+ "South Africa" : 5
+ "Nigeria" : 4
+ "Algeria" : 4
+ "Tunisia" : 4
+ "Egypt" : 2
+ "Kenya" : 1
+ "Benin" : 1
+ "Ethiopia" : 1
+ "Senegal" : 1
+ "Uganda" : 1
+ "Multi-country Africa" : 1
 ```
 
 ### 📊 Geographic Breakdown of incidents by region
@@ -232,16 +232,16 @@ pie showData
 
 ```mermaid
 pie showData
-    title Sector Distribution of Incidents - April 2026
-    "🏛️ Government / Administration" : 15
-    "🎓 Education / University" : 8
-    "🏥 Healthcare / Medical" : 4
-    "💰 Finance / Banking" : 4
-    "🛒 E-commerce / Retail" : 3
-    "⚽ Sports / Federations" : 4
-    "⛽ Oil & Energy" : 3
-    "📡 Telecommunications" : 1
-    "🏭 Other Sectors" : 18
+ title Sector Distribution of Incidents - April 2026
+ "Government / Administration" : 15
+ "Education / University" : 8
+ "Healthcare / Medical" : 4
+ "Finance / Banking" : 4
+ "E-commerce / Retail" : 3
+ "Sports / Federations" : 4
+ "Oil & Energy" : 3
+ "Telecommunications" : 1
+ "Other Sectors" : 18
 ```
 
 ### 📊 Most Prolific Threat Actors and Groups
@@ -269,20 +269,20 @@ pie showData
 
 ```mermaid
 pie showData
-    title Most active threat actors - April 2026
-    "Grubder (7)" : 7
-    "Payload (4)" : 4
-    "APT73/BASHE (4)" : 4
-    "TheGentlemen (4)" : 4
-    "Krybit (3)" : 3
-    "Anisanas2 (3)" : 3
-    "DragonForce (2)" : 2
-    "LockBit5 (2)" : 2
-    "Rihana (2)" : 2
-    "wh6ami (2)" : 2
-    "dark07x (2)" : 2
-    "NormalLeVrai (2)" : 2
-    "Others (23)" : 23
+ title Most active threat actors - April 2026
+ "Grubder (7)" : 7
+ "Payload (4)" : 4
+ "APT73/BASHE (4)" : 4
+ "TheGentlemen (4)" : 4
+ "Krybit (3)" : 3
+ "Anisanas2 (3)" : 3
+ "DragonForce (2)" : 2
+ "LockBit5 (2)" : 2
+ "Rihana (2)" : 2
+ "wh6ami (2)" : 2
+ "dark07x (2)" : 2
+ "NormalLeVrai (2)" : 2
+ "Others (23)" : 23
 ```
 *Among the actors having carried out a single incident are notably Nullsec/0xLei, MDGhost, RubiconH4ck, Keymous, xNov, superduper1, w00l_ysh1, BlueEx, Sejjil, forrest, mecrobyte, and others (see the complete list of victims).*
 

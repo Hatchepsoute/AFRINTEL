@@ -61,21 +61,21 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 
 ```mermaid
 pie
-    title Number of victims by country (March 2026)
-    "🇿🇦 South Africa (13)" : 13
-    "🇲🇦 Morocco (8)" : 8
-    "🇪🇬 Egypt (8)" : 8
-    "🇳🇬 Nigeria (2)" : 2
-    "🇨🇲 Cameroon (1)" : 1
-    "🇩🇿 Algeria (1)" : 1
-    "🇸🇳 Senegal (1)" : 1
-    "🇬🇳 Guinea (1)" : 1
-    "🇿🇲 Zambia (1)" : 1
-    "🇲🇬 Madagascar (1)" : 1
-    "🇹🇳 Tunisia (1)" : 1
-    "🇳🇦 Namibia (1)" : 1
-    "🇹🇿 Tanzania (1)" : 1
-    "🇨🇩 DRC (1)" : 1
+ title Number of victims by country (March 2026)
+ "South Africa (13)" : 13
+ "Morocco (8)" : 8
+ "Egypt (8)" : 8
+ "Nigeria (2)" : 2
+ "Cameroon (1)" : 1
+ "Algeria (1)" : 1
+ "Senegal (1)" : 1
+ "Guinea (1)" : 1
+ "Zambia (1)" : 1
+ "Madagascar (1)" : 1
+ "Tunisia (1)" : 1
+ "Namibia (1)" : 1
+ "Tanzania (1)" : 1
+ "DRC (1)" : 1
 ```
 
 **Ransomware vs data breaches by country:**
@@ -98,28 +98,28 @@ pie
 
 ```mermaid
 pie
-    title Ransomware by country
-    "South Africa (7)" : 7
-    "Morocco (5)" : 5
-    "Egypt (3)" : 3
-    "Madagascar (1)" : 1
-    "Tunisia (1)" : 1
-    "Namibia (1)" : 1
-    "Tanzania (1)" : 1
+ title Ransomware by country
+ "South Africa (7)" : 7
+ "Morocco (5)" : 5
+ "Egypt (3)" : 3
+ "Madagascar (1)" : 1
+ "Tunisia (1)" : 1
+ "Namibia (1)" : 1
+ "Tanzania (1)" : 1
 ```
 ```mermaid
 pie
-    title Data Breaches by country
-    "South Africa (6)" : 6
-    "Egypt (5)" : 5
-    "Morocco (3)" : 3
-    "Nigeria (2)" : 2
-    "Cameroon (1)" : 1
-    "Algeria (1)" : 1
-    "Senegal (1)" : 1
-    "Guinea (1)" : 1
-    "Zambia (1)" : 1
-    "DRC (1)" : 1
+ title Data Breaches by country
+ "South Africa (6)" : 6
+ "Egypt (5)" : 5
+ "Morocco (3)" : 3
+ "Nigeria (2)" : 2
+ "Cameroon (1)" : 1
+ "Algeria (1)" : 1
+ "Senegal (1)" : 1
+ "Guinea (1)" : 1
+ "Zambia (1)" : 1
+ "DRC (1)" : 1
 ```
 **Sector distribution:**
 | Sector                    | Incidents | Percentage |
@@ -150,14 +150,14 @@ pie
 
 ```mermaid
 pie
-    title Most active threat actors
-    "CrowStealer (5)" : 5
-    "APT73/BASHE (4)" : 4
-    "XP95 (3)" : 3
-    "xNov (3)" : 3
-    "Qilin (2)" : 2
-    "The Gentlemen (2)" : 2
-    "INC Ransom (2)" : 2
+ title Most active threat actors
+ "CrowStealer (5)" : 5
+ "APT73/BASHE (4)" : 4
+ "XP95 (3)" : 3
+ "xNov (3)" : 3
+ "Qilin (2)" : 2
+ "The Gentlemen (2)" : 2
+ "INC Ransom (2)" : 2
 ```
 
 ## 4. Country-by-country overview
@@ -283,19 +283,19 @@ FRAP (public administration reform fund): breach attributed to September 2025, i
 
 ```mermaid
 pie
-    title Sector distribution (March 2026)
-    "Government (10)" : 10
-    "Education (7)" : 7
-    "Health (4)" : 4
-    "Insurance (3)" : 3
-    "Telecoms (3)" : 3
-    "Engineering/Construction (3)" : 3
-    "Finance/Banking (2)" : 2
-    "IT/Consulting (2)" : 2
-    "Fintech (1)" : 1
-    "E-commerce/Classifieds (1)" : 1
-    "Sports/Leisure (1)" : 1
-    "Others (4)" : 4
+ title Sector distribution (March 2026)
+ "Government (10)" : 10
+ "Education (7)" : 7
+ "Health (4)" : 4
+ "Insurance (3)" : 3
+ "Telecoms (3)" : 3
+ "Engineering/Construction (3)" : 3
+ "Finance/Banking (2)" : 2
+ "IT/Consulting (2)" : 2
+ "Fintech (1)" : 1
+ "E-commerce/Classifieds (1)" : 1
+ "Sports/Leisure (1)" : 1
+ "Others (4)" : 4
 ```
 
 **Takeaways**:

@@ -102,23 +102,23 @@ Principales conclusions :
 ### Répartition des victimes par pays
 ```mermaid
 pie showData
-    title Répartition des victimes par pays-Avril 2026
-    "🇲🇦 Maroc" : 17
-    "🇪🇬 Égypte" : 11
-    "🇿🇦 Afrique du Sud" : 8
-    "🇳🇬 Nigeria" : 4
-    "🇩🇿 Algérie" : 4
-    "🇹🇳 Tunisie" : 4
-    "🇰🇪 Kenya" : 2
-    "🇬🇭 Ghana" : 2
-    "🇧🇯 Bénin" : 1
-    "🇧🇼 Botswana" : 1
-    "🇪🇹 Éthiopie" : 1
-    "🇸🇨 Seychelles" : 1
-    "🇸🇳 Sénégal" : 1
-    "🇺🇬 Ouganda" : 1
-    "🇿🇲 Zambie" : 1
-    "🌍 Multi pays Afrique" : 1
+ title Répartition des victimes par pays-Avril 2026
+ "Maroc" : 17
+ "Égypte" : 11
+ "Afrique du Sud" : 8
+ "Nigeria" : 4
+ "Algérie" : 4
+ "Tunisie" : 4
+ "Kenya" : 2
+ "Ghana" : 2
+ "Bénin" : 1
+ "Botswana" : 1
+ "Éthiopie" : 1
+ "Seychelles" : 1
+ "Sénégal" : 1
+ "Ouganda" : 1
+ "Zambie" : 1
+ "Multi pays Afrique" : 1
 ```
 
 ### 📊 Comparaison Ransomwares vs. Fuites de Données par Pays
@@ -168,34 +168,34 @@ pie showData
 
 ```mermaid
 pie showData
-    title Répartition des ransomwares par pays
-    "🇪🇬 Égypte" : 9
-    "🇿🇦 Afrique du Sud" : 3
-    "🇲🇦 Maroc" : 2
-    "🇬🇭 Ghana" : 2
-    "🇰🇪 Kenya" : 1
-    "🇧🇼 Botswana" : 1
-    "🇸🇨 Seychelles" : 1
-    "🇿🇲 Zambie" : 1
+ title Répartition des ransomwares par pays
+ "Égypte" : 9
+ "Afrique du Sud" : 3
+ "Maroc" : 2
+ "Ghana" : 2
+ "Kenya" : 1
+ "Botswana" : 1
+ "Seychelles" : 1
+ "Zambie" : 1
 ```
 
 **Fuites de données par pays - Avril 2026**
 
 ```mermaid
 pie showData
-    title Répartition des fuites de données par pays
-    "🇲🇦 Maroc" : 15
-    "🇿🇦 Afrique du Sud" : 5
-    "🇳🇬 Nigeria" : 4
-    "🇩🇿 Algérie" : 4
-    "🇹🇳 Tunisie" : 4
-    "🇪🇬 Égypte" : 2
-    "🇰🇪 Kenya" : 1
-    "🇧🇯 Bénin" : 1
-    "🇪🇹 Éthiopie" : 1
-    "🇸🇳 Sénégal" : 1
-    "🇺🇬 Ouganda" : 1
-    "🌍 Multi pays Afrique" : 1
+ title Répartition des fuites de données par pays
+ "Maroc" : 15
+ "Afrique du Sud" : 5
+ "Nigeria" : 4
+ "Algérie" : 4
+ "Tunisie" : 4
+ "Égypte" : 2
+ "Kenya" : 1
+ "Bénin" : 1
+ "Éthiopie" : 1
+ "Sénégal" : 1
+ "Ouganda" : 1
+ "Multi pays Afrique" : 1
 ```
 
 ### 📊 Répartition géographique des incidents par région
@@ -229,16 +229,16 @@ pie showData
 
 ```mermaid
 pie showData
-    title Répartition sectorielle des incidents - Avril 2026
-    "🏛️ Gouvernement / Administration" : 15
-    "🎓 Éducation / Université" : 8
-    "🏥 Santé / Médical" : 4
-    "💰 Finance / Banque" : 4
-    "🛒 E-commerce / Retail" : 3
-    "⚽ Sports / Fédérations" : 4
-    "⛽ Pétrole & Énergie" : 3
-    "📡 Télécommunications" : 1
-    "🏭 Autres secteurs" : 18
+ title Répartition sectorielle des incidents - Avril 2026
+ "Gouvernement / Administration" : 15
+ "Éducation / Université" : 8
+ "Santé / Médical" : 4
+ "Finance / Banque" : 4
+ "E-commerce / Retail" : 3
+ "Sports / Fédérations" : 4
+ "Pétrole & Énergie" : 3
+ "Télécommunications" : 1
+ "Autres secteurs" : 18
 ```
 
 
@@ -263,20 +263,20 @@ pie showData
 
 ```mermaid
 pie showData
-    title Acteurs les plus actifs - Avril 2026
-    "Grubder (7)" : 7
-    "Payload (4)" : 4
-    "APT73/BASHE (4)" : 4
-    "TheGentlemen (4)" : 4
-    "Krybit (3)" : 3
-    "Anisanas2 (3)" : 3
-    "DragonForce (2)" : 2
-    "LockBit5 (2)" : 2
-    "Rihana (2)" : 2
-    "wh6ami (2)" : 2
-    "dark07x (2)" : 2
-    "NormalLeVrai (2)" : 2
-    "Autres (23)" : 23
+ title Acteurs les plus actifs - Avril 2026
+ "Grubder (7)" : 7
+ "Payload (4)" : 4
+ "APT73/BASHE (4)" : 4
+ "TheGentlemen (4)" : 4
+ "Krybit (3)" : 3
+ "Anisanas2 (3)" : 3
+ "DragonForce (2)" : 2
+ "LockBit5 (2)" : 2
+ "Rihana (2)" : 2
+ "wh6ami (2)" : 2
+ "dark07x (2)" : 2
+ "NormalLeVrai (2)" : 2
+ "Autres (23)" : 23
 ```
 *Parmi les acteurs ayant réalisé un seul incident figurent notamment Nullsec/0xLei, MDGhost, RubiconH4ck, Keymous, xNov, superduper1, w00l_ysh1, BlueEx, Sejjil, forrest, mecrobyte, et d’autres (voir la liste complète des victimes).*
 

@@ -62,19 +62,19 @@ In January 2026, **21 cyber incidents** targeting African entities were publicly
 
 ```mermaid
 pie
-    title Number of victims by country (January 2026)
-    "🇿🇦 South Africa (4)" : 4
-    "🇰🇪 Kenya (4)" : 4
-    "🇪🇬 Egypt (3)" : 3
-    "🇲🇦 Morocco (2)" : 2
-    "🇹🇬 Togo (1)" : 1
-    "🇳🇪 Niger (1)" : 1
-    "🇸🇳 Senegal (1)" : 1
-    "🇲🇿 Mozambique (1)" : 1
-    "🇹🇿 Tanzania (1)" : 1
-    "🇲🇺 Mauritius (1)" : 1
-    "🇩🇿 Algeria (1)" : 1
-    "🇹🇳 Tunisia (1)" : 1
+ title Number of victims by country (January 2026)
+ "South Africa (4)" : 4
+ "Kenya (4)" : 4
+ "Egypt (3)" : 3
+ "Morocco (2)" : 2
+ "Togo (1)" : 1
+ "Niger (1)" : 1
+ "Senegal (1)" : 1
+ "Mozambique (1)" : 1
+ "Tanzania (1)" : 1
+ "Mauritius (1)" : 1
+ "Algeria (1)" : 1
+ "Tunisia (1)" : 1
 ```
 
 **Incident type by country:**
@@ -95,11 +95,11 @@ pie
 
 ```mermaid
 pie
-    title Incident type distribution (January 2026)
-    "Ransomware (17)" : 17
-    "Data leak (2)" : 2
-    "Access sale (1)" : 1
-    "Defacement (1)" : 1
+ title Incident type distribution (January 2026)
+ "Ransomware (17)" : 17
+ "Data leak (2)" : 2
+ "Access sale (1)" : 1
+ "Defacement (1)" : 1
 ```
 
 **Most prolific actors:**
@@ -120,10 +120,10 @@ pie
 
 ```mermaid
 pie
-    title Most active threat actors (January 2026)
-    "thegentlemen (6)" : 6
-    "tengu (5)" : 5
-    "Others - 1 each (10)" : 10
+ title Most active threat actors (January 2026)
+ "thegentlemen (6)" : 6
+ "tengu (5)" : 5
+ "Others - 1 each (10)" : 10
 ```
 
 ## 4. Country-by-country overview
@@ -232,17 +232,17 @@ FRUIT-BONTÉ (tengu, January 27), an agri-food and fruit processing company, was
 
 ```mermaid
 pie
-    title Sector distribution (January 2026)
-    "Government/Admin (4)" : 4
-    "Finance/FinTech (4)" : 4
-    "Transport/Logistics (3)" : 3
-    "Industry/Engineering (3)" : 3
-    "Technology/IT (2)" : 2
-    "Healthcare (1)" : 1
-    "Mining (1)" : 1
-    "Food industry (1)" : 1
-    "Tourism (1)" : 1
-    "Aviation (1)" : 1
+ title Sector distribution (January 2026)
+ "Government/Admin (4)" : 4
+ "Finance/FinTech (4)" : 4
+ "Transport/Logistics (3)" : 3
+ "Industry/Engineering (3)" : 3
+ "Technology/IT (2)" : 2
+ "Healthcare (1)" : 1
+ "Mining (1)" : 1
+ "Food industry (1)" : 1
+ "Tourism (1)" : 1
+ "Aviation (1)" : 1
 ```
 
 **Takeaways:**

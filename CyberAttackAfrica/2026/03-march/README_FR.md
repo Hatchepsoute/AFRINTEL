@@ -60,21 +60,21 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 
 ```mermaid
 pie
-    title Nombre de victimes / pays (mars 2026)
-    "🇿🇦 Afrique du Sud (13)" : 13
-    "🇲🇦 Maroc (8)" : 8
-    "🇪🇬 Égypte (8)" : 8
-    "🇳🇬 Nigeria (2)" : 2
-    "🇨🇲 Cameroun (1)" : 1
-    "🇩🇿 Algérie (1)" : 1
-    "🇸🇳 Sénégal (1)" : 1
-    "🇬🇳 Guinée (1)" : 1
-    "🇿🇲 Zambie (1)" : 1
-    "🇲🇬 Madagascar (1)" : 1
-    "🇹🇳 Tunisie (1)" : 1
-    "🇳🇦 Namibie (1)" : 1
-    "🇹🇿 Tanzanie (1)" : 1
-    "🇨🇩 RDC (1)" : 1
+ title Nombre de victimes / pays (mars 2026)
+ "Afrique du Sud (13)" : 13
+ "Maroc (8)" : 8
+ "Égypte (8)" : 8
+ "Nigeria (2)" : 2
+ "Cameroun (1)" : 1
+ "Algérie (1)" : 1
+ "Sénégal (1)" : 1
+ "Guinée (1)" : 1
+ "Zambie (1)" : 1
+ "Madagascar (1)" : 1
+ "Tunisie (1)" : 1
+ "Namibie (1)" : 1
+ "Tanzanie (1)" : 1
+ "RDC (1)" : 1
 ```
 
 **Comparaison ransomware vs fuites de données par pays :**
@@ -97,28 +97,28 @@ pie
 
 ```mermaid
 pie
-    title Ransomware par pays
-    "Afrique du Sud (7)" : 7
-    "Maroc (5)" : 5
-    "Égypte (3)" : 3
-    "Madagascar (1)" : 1
-    "Tunisie (1)" : 1
-    "Namibie (1)" : 1
-    "Tanzanie (1)" : 1
+ title Ransomware par pays
+ "Afrique du Sud (7)" : 7
+ "Maroc (5)" : 5
+ "Égypte (3)" : 3
+ "Madagascar (1)" : 1
+ "Tunisie (1)" : 1
+ "Namibie (1)" : 1
+ "Tanzanie (1)" : 1
 ```
 ```mermaid
 pie
-    title Fuites de données par pays
-    "Afrique du Sud (6)" : 6
-    "Égypte (5)" : 5
-    "Maroc (3)" : 3
-    "Nigeria (2)" : 2
-    "Cameroun (1)" : 1
-    "Algérie (1)" : 1
-    "Sénégal (1)" : 1
-    "Guinée (1)" : 1
-    "Zambie (1)" : 1
-    "RDC (1)" : 1
+ title Fuites de données par pays
+ "Afrique du Sud (6)" : 6
+ "Égypte (5)" : 5
+ "Maroc (3)" : 3
+ "Nigeria (2)" : 2
+ "Cameroun (1)" : 1
+ "Algérie (1)" : 1
+ "Sénégal (1)" : 1
+ "Guinée (1)" : 1
+ "Zambie (1)" : 1
+ "RDC (1)" : 1
 ```
 
 **Répartition sectorielle :**
@@ -139,19 +139,19 @@ pie
 
 ```mermaid
 pie
-    title Répartition sectorielle (mars 2026)
-    "Gouvernement (10)" : 10
-    "Éducation (7)" : 7
-    "Santé (4)" : 4
-    "Assurance (3)" : 3
-    "Télécoms (3)" : 3
-    "Ingénierie/Construction (3)" : 3
-    "Finance/Banque (2)" : 2
-    "IT/Consulting (2)" : 2
-    "Fintech (1)" : 1
-    "E-commerce/Annonces (1)" : 1
-    "Sport/Loisirs (1)" : 1
-    "Autres (4)" : 4
+ title Répartition sectorielle (mars 2026)
+ "Gouvernement (10)" : 10
+ "Éducation (7)" : 7
+ "Santé (4)" : 4
+ "Assurance (3)" : 3
+ "Télécoms (3)" : 3
+ "Ingénierie/Construction (3)" : 3
+ "Finance/Banque (2)" : 2
+ "IT/Consulting (2)" : 2
+ "Fintech (1)" : 1
+ "E-commerce/Annonces (1)" : 1
+ "Sport/Loisirs (1)" : 1
+ "Autres (4)" : 4
 ```
 
 **Acteurs les plus prolifiques :**
@@ -248,14 +248,14 @@ FRAP (fonds de réforme de l’administration publique) : fuite attribuée à se
 
 ```mermaid
 pie
-    title les acteurs les plus actifs
-    "CrowStealer (5)" : 5
-    "APT73/BASHE (4)" : 4
-    "XP95 (3)" : 3
-    "xNov (3)" : 3
-    "Qilin (2)" : 2
-    "The Gentlemen (2)" : 2
-    "INC Ransom (2)" : 2
+ title les acteurs les plus actifs
+ "CrowStealer (5)" : 5
+ "APT73/BASHE (4)" : 4
+ "XP95 (3)" : 3
+ "xNov (3)" : 3
+ "Qilin (2)" : 2
+ "The Gentlemen (2)" : 2
+ "INC Ransom (2)" : 2
 ```
 
 ### 5.2 Fuites de données / intrusions système (22 incidents)

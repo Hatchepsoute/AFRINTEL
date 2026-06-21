@@ -74,21 +74,21 @@ Principales conclusions :
 
 ```mermaid
 pie showData
-    title Répartition des victimes par pays - Mai 2026
-    "🇪🇬 Égypte" : 16
-    "🇿🇦 Afrique du Sud" : 14
-    "🇲🇦 Maroc" : 5
-    "🇹🇳 Tunisie" : 5
-    "🇳🇬 Nigéria" : 3
-    "🇩🇿 Algérie" : 2
-    "🇹🇿 Tanzanie" : 2
-    "🇬🇭 Ghana" : 1
-    "🇨🇮 Côte d'Ivoire" : 1
-    "🇰🇪 Kenya" : 1
-    "🇸🇳 Sénégal" : 1
-    "Resume docs (KE/ET/NG/ZW)" : 1
-    "DHIS2 (MZ/LR/NG/TG/SL)" : 1
-    "Scans passeports (EG/LY)" : 1
+ title Répartition des victimes par pays - Mai 2026
+ "Égypte" : 16
+ "Afrique du Sud" : 14
+ "Maroc" : 5
+ "Tunisie" : 5
+ "Nigéria" : 3
+ "Algérie" : 2
+ "Tanzanie" : 2
+ "Ghana" : 1
+ "Côte d'Ivoire" : 1
+ "Kenya" : 1
+ "Sénégal" : 1
+ "Resume docs (KE/ET/NG/ZW)" : 1
+ "DHIS2 (MZ/LR/NG/TG/SL)" : 1
+ "Scans passeports (EG/LY)" : 1
 ```
 
 ### Répartition des incidents ransomware (Total : 16)
@@ -140,9 +140,9 @@ pie showData
 
 ```mermaid
 pie showData
-    title Ransomware vs fuites de données - Mai 2026
-    "Fuites de données et ventes d'accès" : 38
-    "Ransomware" : 16
+ title Ransomware vs fuites de données - Mai 2026
+ "Fuites de données et ventes d'accès" : 38
+ "Ransomware" : 16
 ```
 
 ### Répartition géographique par région
@@ -177,19 +177,19 @@ pie showData
 
 ```mermaid
 pie showData
-    title Répartition sectorielle - Mai 2026
-    "🏛️ Gouvernement / Administration" : 14
-    "📋 Recrutement / Données personnelles" : 8
-    "🎓 Éducation / Université" : 5
-    "💰 Finance / Banque" : 4
-    "🍔 Agroalimentaire / Hôtellerie" : 4
-    "🚛 Logistique / Transport" : 3
-    "🚗 Automobile" : 3
-    "🛒 E-commerce / Numérique" : 3
-    "📡 Télécommunications / TIC" : 3
-    "❤️ ONG / Caritatif" : 2
-    "🏥 Santé" : 2
-    "🏭 Autres" : 3
+ title Répartition sectorielle - Mai 2026
+ "Gouvernement / Administration" : 14
+ "Recrutement / Données personnelles" : 8
+ "Éducation / Université" : 5
+ "Finance / Banque" : 4
+ "Agroalimentaire / Hôtellerie" : 4
+ "Logistique / Transport" : 3
+ "Automobile" : 3
+ "E-commerce / Numérique" : 3
+ "Télécommunications / TIC" : 3
+ "ONG / Caritatif" : 2
+ "Santé" : 2
+ "Autres" : 3
 ```
 
 ### Acteurs de menaces les plus actifs
@@ -209,16 +209,16 @@ pie showData
 
 ```mermaid
 pie showData
-    title Acteurs les plus actifs - Mai 2026
-    "Databasehooligan (8)" : 8
-    "TheGentlemen (4)" : 4
-    "404Crew Cyber Team (4)" : 4
-    "NightSpire (3)" : 3
-    "INT3X (2)" : 2
-    "Keymous (2)" : 2
-    "cc5ab (2)" : 2
-    "NullSec Nigeria (2)" : 2
-    "Autres (27)" : 27
+ title Acteurs les plus actifs - Mai 2026
+ "Databasehooligan (8)" : 8
+ "TheGentlemen (4)" : 4
+ "404Crew Cyber Team (4)" : 4
+ "NightSpire (3)" : 3
+ "INT3X (2)" : 2
+ "Keymous (2)" : 2
+ "cc5ab (2)" : 2
+ "NullSec Nigeria (2)" : 2
+ "Autres (27)" : 27
 ```
 
 ---

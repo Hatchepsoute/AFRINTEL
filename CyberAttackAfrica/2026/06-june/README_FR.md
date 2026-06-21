@@ -62,19 +62,19 @@ Principales conclusions :
 
 ```mermaid
 pie showData
-    title Répartition des victimes par pays - Juin 2026
-    "🇳🇬 Nigéria" : 2
-    "🇪🇬 Égypte" : 1
-    "🌍 Multi-pays" : 2
+ title Répartition des victimes par pays - Juin 2026
+ "Nigéria" : 2
+ "Égypte" : 1
+ "Multi-pays" : 2
 ```
 
 ### Répartition par type d'incident
 
 ```mermaid
 pie showData
-    title Types d'incidents - Juin 2026
-    "Fuites de données et ventes d'accès" : 5
-    "Ransomware" : 0
+ title Types d'incidents - Juin 2026
+ "Fuites de données et ventes d'accès" : 5
+ "Ransomware" : 0
 ```
 
 ### Répartition sectorielle
@@ -88,10 +88,10 @@ pie showData
 
 ```mermaid
 pie showData
-    title Répartition sectorielle - Juin 2026
-    "🏛️ Gouvernement / Forces de l'ordre" : 3
-    "💰 Fintech / Cryptomonnaie" : 1
-    "✈️ Aviation / Militaire" : 1
+ title Répartition sectorielle - Juin 2026
+ "Gouvernement / Forces de l'ordre" : 3
+ "Fintech / Cryptomonnaie" : 1
+ "Aviation / Militaire" : 1
 ```
 
 ---

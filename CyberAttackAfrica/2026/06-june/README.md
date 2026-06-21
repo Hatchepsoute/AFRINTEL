@@ -62,19 +62,19 @@ Key findings:
 
 ```mermaid
 pie showData
-    title Victims distribution by country - June 2026
-    "🇳🇬 Nigeria" : 2
-    "🇪🇬 Egypt" : 1
-    "🌍 Multi-country" : 2
+ title Victims distribution by country - June 2026
+ "Nigeria" : 2
+ "Egypt" : 1
+ "Multi-country" : 2
 ```
 
 ### Incident type distribution
 
 ```mermaid
 pie showData
-    title Incident types - June 2026
-    "Data leaks and access sales" : 5
-    "Ransomware" : 0
+ title Incident types - June 2026
+ "Data leaks and access sales" : 5
+ "Ransomware" : 0
 ```
 
 ### Sector distribution
@@ -88,10 +88,10 @@ pie showData
 
 ```mermaid
 pie showData
-    title Sector distribution - June 2026
-    "🏛️ Government / Law Enforcement" : 3
-    "💰 Fintech / Cryptocurrency" : 1
-    "✈️ Aviation / Military" : 1
+ title Sector distribution - June 2026
+ "Government / Law Enforcement" : 3
+ "Fintech / Cryptocurrency" : 1
+ "Aviation / Military" : 1
 ```
 
 ---

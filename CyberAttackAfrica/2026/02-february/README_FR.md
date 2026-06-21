@@ -59,21 +59,21 @@ Février 2026 enregistre **20 incidents cyber** publiquement revendiqués ou dé
 
 ```mermaid
 pie
-    title Nombre de victimes par pays (février 2026)
-    "🇿🇦 Afrique du Sud (3)" : 3
-    "🇪🇬 Égypte (3)" : 3
-    "🇬🇭 Ghana (2)" : 2
-    "🇳🇬 Nigeria (2)" : 2
-    "🇸🇳 Sénégal (1)" : 1
-    "🇸🇴 Somalie (1)" : 1
-    "🇹🇿 Tanzanie (1)" : 1
-    "🇰🇪 Kenya (1)" : 1
-    "🇲🇺 Maurice (1)" : 1
-    "🇹🇳 Tunisie (1)" : 1
-    "🇸🇩 Soudan (1)" : 1
-    "🇨🇮 Côte d'Ivoire (1)" : 1
-    "🇲🇦 Maroc (1)" : 1
-    "🇳🇦 Namibie (1)" : 1
+ title Nombre de victimes par pays (février 2026)
+ "Afrique du Sud (3)" : 3
+ "Égypte (3)" : 3
+ "Ghana (2)" : 2
+ "Nigeria (2)" : 2
+ "Sénégal (1)" : 1
+ "Somalie (1)" : 1
+ "Tanzanie (1)" : 1
+ "Kenya (1)" : 1
+ "Maurice (1)" : 1
+ "Tunisie (1)" : 1
+ "Soudan (1)" : 1
+ "Côte d'Ivoire (1)" : 1
+ "Maroc (1)" : 1
+ "Namibie (1)" : 1
 ```
 
 **Top 3 des plus grandes fuites revendiquées :**
@@ -100,12 +100,12 @@ pie
 
 ```mermaid
 pie
-    title Acteurs les plus actifs (février 2026)
-    "thegentlemen (5)" : 5
-    "0APT (3)" : 3
-    "LockBit 5.0 (3)" : 3
-    "incransom (2)" : 2
-    "Autres - 1 chacun (7)" : 7
+ title Acteurs les plus actifs (février 2026)
+ "thegentlemen (5)" : 5
+ "0APT (3)" : 3
+ "LockBit 5.0 (3)" : 3
+ "incransom (2)" : 2
+ "Autres - 1 chacun (7)" : 7
 ```
 
 ## 4. Vue d'ensemble pays par pays
@@ -217,19 +217,19 @@ L'Égypte enregistre trois groupes ransomwares distincts en février. **Nile Air
 
 ```mermaid
 pie
-    title Répartition sectorielle (février 2026)
-    "Gouvernement/Admin (3)" : 3
-    "Airlines/Aviation (3)" : 3
-    "Énergie (2)" : 2
-    "Finance/FinTech (2)" : 2
-    "Mines (2)" : 2
-    "Juridique (1)" : 1
-    "Médias (1)" : 1
-    "Hôtellerie (1)" : 1
-    "Conseil IT (1)" : 1
-    "Immobilier (1)" : 1
-    "Agriculture (1)" : 1
-    "Détail/Comptabilité (2)" : 2
+ title Répartition sectorielle (février 2026)
+ "Gouvernement/Admin (3)" : 3
+ "Airlines/Aviation (3)" : 3
+ "Énergie (2)" : 2
+ "Finance/FinTech (2)" : 2
+ "Mines (2)" : 2
+ "Juridique (1)" : 1
+ "Médias (1)" : 1
+ "Hôtellerie (1)" : 1
+ "Conseil IT (1)" : 1
+ "Immobilier (1)" : 1
+ "Agriculture (1)" : 1
+ "Détail/Comptabilité (2)" : 2
 ```
 
 **Enseignements :**

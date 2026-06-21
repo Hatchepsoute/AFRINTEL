@@ -59,21 +59,21 @@ February 2026 recorded **20 cyber incidents** publicly claimed or detected acros
 
 ```mermaid
 pie
-    title Number of victims by country (February 2026)
-    "🇿🇦 South Africa (3)" : 3
-    "🇪🇬 Egypt (3)" : 3
-    "🇬🇭 Ghana (2)" : 2
-    "🇳🇬 Nigeria (2)" : 2
-    "🇸🇳 Senegal (1)" : 1
-    "🇸🇴 Somalia (1)" : 1
-    "🇹🇿 Tanzania (1)" : 1
-    "🇰🇪 Kenya (1)" : 1
-    "🇲🇺 Mauritius (1)" : 1
-    "🇹🇳 Tunisia (1)" : 1
-    "🇸🇩 Sudan (1)" : 1
-    "🇨🇮 Ivory Coast (1)" : 1
-    "🇲🇦 Morocco (1)" : 1
-    "🇳🇦 Namibia (1)" : 1
+ title Number of victims by country (February 2026)
+ "South Africa (3)" : 3
+ "Egypt (3)" : 3
+ "Ghana (2)" : 2
+ "Nigeria (2)" : 2
+ "Senegal (1)" : 1
+ "Somalia (1)" : 1
+ "Tanzania (1)" : 1
+ "Kenya (1)" : 1
+ "Mauritius (1)" : 1
+ "Tunisia (1)" : 1
+ "Sudan (1)" : 1
+ "Ivory Coast (1)" : 1
+ "Morocco (1)" : 1
+ "Namibia (1)" : 1
 ```
 
 **Top 3 largest claimed breaches:**
@@ -100,12 +100,12 @@ pie
 
 ```mermaid
 pie
-    title Most active threat actors (February 2026)
-    "thegentlemen (5)" : 5
-    "0APT (3)" : 3
-    "LockBit 5.0 (3)" : 3
-    "incransom (2)" : 2
-    "Others - 1 each (7)" : 7
+ title Most active threat actors (February 2026)
+ "thegentlemen (5)" : 5
+ "0APT (3)" : 3
+ "LockBit 5.0 (3)" : 3
+ "incransom (2)" : 2
+ "Others - 1 each (7)" : 7
 ```
 
 ## 4. Country-by-country overview
@@ -217,19 +217,19 @@ Egypt records three distinct ransomware groups in February. **Nile Air** (nileai
 
 ```mermaid
 pie
-    title Sector distribution (February 2026)
-    "Government/Admin (3)" : 3
-    "Airlines/Aviation (3)" : 3
-    "Energy (2)" : 2
-    "Finance/FinTech (2)" : 2
-    "Mining (2)" : 2
-    "Legal (1)" : 1
-    "Media (1)" : 1
-    "Hospitality (1)" : 1
-    "IT consulting (1)" : 1
-    "Real estate (1)" : 1
-    "Agriculture (1)" : 1
-    "Retail/Accounting (2)" : 2
+ title Sector distribution (February 2026)
+ "Government/Admin (3)" : 3
+ "Airlines/Aviation (3)" : 3
+ "Energy (2)" : 2
+ "Finance/FinTech (2)" : 2
+ "Mining (2)" : 2
+ "Legal (1)" : 1
+ "Media (1)" : 1
+ "Hospitality (1)" : 1
+ "IT consulting (1)" : 1
+ "Real estate (1)" : 1
+ "Agriculture (1)" : 1
+ "Retail/Accounting (2)" : 2
 ```
 
 **Takeaways:**

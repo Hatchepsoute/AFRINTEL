@@ -74,21 +74,21 @@ Key findings:
 
 ```mermaid
 pie showData
-    title Victims distribution by country - May 2026
-    "🇪🇬 Egypt" : 16
-    "🇿🇦 South Africa" : 14
-    "🇲🇦 Morocco" : 5
-    "🇹🇳 Tunisia" : 5
-    "🇳🇬 Nigeria" : 3
-    "🇩🇿 Algeria" : 2
-    "🇹🇿 Tanzania" : 2
-    "🇬🇭 Ghana" : 1
-    "🇨🇮 Ivory Coast" : 1
-    "🇰🇪 Kenya" : 1
-    "🇸🇳 Senegal" : 1
-    "Resume docs (KE/ET/NG/ZW)" : 1
-    "DHIS2 (MZ/LR/NG/TG/SL)" : 1
-    "Passport scans (EG/LY)" : 1
+ title Victims distribution by country - May 2026
+ "Egypt" : 16
+ "South Africa" : 14
+ "Morocco" : 5
+ "Tunisia" : 5
+ "Nigeria" : 3
+ "Algeria" : 2
+ "Tanzania" : 2
+ "Ghana" : 1
+ "Ivory Coast" : 1
+ "Kenya" : 1
+ "Senegal" : 1
+ "Resume docs (KE/ET/NG/ZW)" : 1
+ "DHIS2 (MZ/LR/NG/TG/SL)" : 1
+ "Passport scans (EG/LY)" : 1
 ```
 
 ### Ransomware distribution (Total: 16)
@@ -140,9 +140,9 @@ pie showData
 
 ```mermaid
 pie showData
-    title Ransomware vs Data Leaks - May 2026
-    "Data leaks and access sales" : 38
-    "Ransomware" : 16
+ title Ransomware vs Data Leaks - May 2026
+ "Data leaks and access sales" : 38
+ "Ransomware" : 16
 ```
 
 ### Geographic breakdown by region
@@ -177,19 +177,19 @@ pie showData
 
 ```mermaid
 pie showData
-    title Sector distribution - May 2026
-    "🏛️ Government / Administration" : 14
-    "📋 Recruitment / Personal Data" : 8
-    "🎓 Education / University" : 5
-    "💰 Finance / Banking" : 4
-    "🍔 Food / Beverage / Hospitality" : 4
-    "🚛 Logistics / Transport" : 3
-    "🚗 Automotive" : 3
-    "🛒 E-commerce / Digital" : 3
-    "📡 Telecom / ICT" : 3
-    "❤️ NGO / Charity" : 2
-    "🏥 Healthcare" : 2
-    "🏭 Others" : 3
+ title Sector distribution - May 2026
+ "Government / Administration" : 14
+ "Recruitment / Personal Data" : 8
+ "Education / University" : 5
+ "Finance / Banking" : 4
+ "Food / Beverage / Hospitality" : 4
+ "Logistics / Transport" : 3
+ "Automotive" : 3
+ "E-commerce / Digital" : 3
+ "Telecom / ICT" : 3
+ "NGO / Charity" : 2
+ "Healthcare" : 2
+ "Others" : 3
 ```
 
 ### Most prolific threat actors and groups
@@ -209,16 +209,16 @@ pie showData
 
 ```mermaid
 pie showData
-    title Most active threat actors - May 2026
-    "Databasehooligan (8)" : 8
-    "TheGentlemen (4)" : 4
-    "404Crew Cyber Team (4)" : 4
-    "NightSpire (3)" : 3
-    "INT3X (2)" : 2
-    "Keymous (2)" : 2
-    "cc5ab (2)" : 2
-    "NullSec Nigeria (2)" : 2
-    "Others (27)" : 27
+ title Most active threat actors - May 2026
+ "Databasehooligan (8)" : 8
+ "TheGentlemen (4)" : 4
+ "404Crew Cyber Team (4)" : 4
+ "NightSpire (3)" : 3
+ "INT3X (2)" : 2
+ "Keymous (2)" : 2
+ "cc5ab (2)" : 2
+ "NullSec Nigeria (2)" : 2
+ "Others (27)" : 27
 ```
 
 ---
