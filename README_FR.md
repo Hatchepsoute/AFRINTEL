@@ -169,7 +169,7 @@ Axes d’analyse :
 
 ## 🧠 Visual Intelligence
 
-📊 [Tableau de bord Visual Intelligence — Mai 2026](visual-intelligence/05-may/README_FR.md)
+📊 [Tableau de bord visual intelligence - Mai 2026](visual-intelligence/05-may/README_FR.md)
 
 Inclut :
 
@@ -180,7 +180,7 @@ Inclut :
 - visualisation régionale des impacts
 - cartographie des écosystèmes cybercriminels
 
-### Cartographies CTI — Mai 2026
+### Cartographies CTI - Mai 2026
 
 - [Ecosystem Map Mai 2026](visual-intelligence/05-may/ecosystem-map_may_2026.md)
 - [Ransomware vs Fuites](visual-intelligence/05-may/ransomware-vs-leaks_may_2026.md)
@@ -188,7 +188,7 @@ Inclut :
 - [Cartographie sectorielle](visual-intelligence/05-may/sector-map_may_2026.md)
 - [Acteurs de menace](visual-intelligence/05-may/actors_may_2026.md)
 
-### Cartographies CTI — Avril 2026
+### Cartographies CTI - Avril 2026
 
 - [Ecosystem Map Avril 2026](visual-intelligence/04-april/ecosystem-map_april_2026_fr.md)
 - [Ransomware vs Fuites](visual-intelligence/04-april/ransomware-vs-leaks_april_2026_fr.md)

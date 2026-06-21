@@ -1,5 +1,5 @@
-# AFRINTEL — Country Hotspots
-## Most affected countries — May 2026
+# AFRINTEL - Country hotspots
+## Most affected countries - May 2026
 
 ```mermaid
 pie showData

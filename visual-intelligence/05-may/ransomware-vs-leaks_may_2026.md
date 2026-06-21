@@ -1,4 +1,4 @@
-# AFRINTEL — Ransomware vs Data Leaks
+# AFRINTEL - Ransomware vs data leaks
 ## May 2026
 
 ```mermaid

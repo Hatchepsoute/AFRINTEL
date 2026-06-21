@@ -109,12 +109,12 @@ unless corroborated by:
 
 ---
 
-### June 2026 — Ongoing collection
+### June 2026 - Ongoing collection
 
 > Data collection in progress. Figures are partial and will be updated as new incidents are documented throughout the month.
 
 - 5 incidents documented as of June 21, 2026 (data leaks and access sales only)
-- Jeroid.co (Nigeria): major fintech breach — 312,433 users, 759,900 wallets ($306M TVL), 110,282 BVN, 64,300 NIN, 70,956 biometric face photos on a public S3 bucket
+- Jeroid.co (Nigeria): major fintech breach, 312,433 users, 759,900 wallets ($306M TVL), 110,282 BVN, 64,300 NIN, 70,956 biometric face photos on a public S3 bucket
 - Law enforcement impersonation: two actors ("Convince" and "Governor") selling EDR/LEP portal credentials targeting at least 11 African countries
 - NILDS Nigeria: government legislative research institution claimed by 404Crew CT x NullSec Nigeria
 - Egyptian military and civil aviation pilots database offered for sale
@@ -171,7 +171,7 @@ Focus areas:
 
 ## 🧠 Visual Intelligence
 
-📊 [Visual Intelligence Dashboard — May 2026](visual-intelligence/05-may/README.md)
+📊 [Visual intelligence dashboard - May 2026](visual-intelligence/05-may/README.md)
 
 Includes:
 
@@ -182,7 +182,7 @@ Includes:
 - regional exposure visualization
 - threat actor ecosystem mapping
 
-### CTI Ecosystem Maps — May 2026
+### CTI ecosystem maps - May 2026
 
 - [May 2026 Ecosystem Map](visual-intelligence/05-may/ecosystem-map_may_2026.md)
 - [Ransomware vs Leaks](visual-intelligence/05-may/ransomware-vs-leaks_may_2026.md)
@@ -190,7 +190,7 @@ Includes:
 - [Sector Map](visual-intelligence/05-may/sector-map_may_2026.md)
 - [Threat Actors](visual-intelligence/05-may/actors_may_2026.md)
 
-### CTI Ecosystem Maps — April 2026
+### CTI ecosystem maps - April 2026
 
 - [April 2026 Ecosystem Map](visual-intelligence/04-april/ecosystem-map_april_2026.md)
 - [Ransomware vs Leaks](visual-intelligence/04-april/ransomware-vs-leaks_april_2026.md)

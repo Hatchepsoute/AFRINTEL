@@ -1,5 +1,5 @@
-# AFRINTEL — Threat Actor Intelligence
-## Most active actors — May 2026
+# AFRINTEL - Threat actor intelligence
+## Most active actors - May 2026
 
 ```mermaid
 pie showData
@@ -17,7 +17,7 @@ pie showData
 
 ## Actor profiles
 
-### Databasehooligan — Data broker (8 victims)
+### Databasehooligan, data broker (8 victims)
 
 ```mermaid
 flowchart LR
@@ -31,7 +31,7 @@ DBH --> DZ["🇩🇿 OGEBC Algeria"]
 
 ---
 
-### TheGentlemen — Ransomware (4 victims)
+### TheGentlemen, ransomware (4 victims)
 
 ```mermaid
 flowchart LR
@@ -45,7 +45,7 @@ GENT --> CI["🇨🇮 Ivory Coast (1)"]
 
 ---
 
-### NightSpire — Ransomware (3 victims, Egypt)
+### NightSpire, ransomware (3 victims, Egypt)
 
 ```mermaid
 flowchart LR
@@ -58,7 +58,7 @@ NIGHT --> BI["B Investments"]
 
 ---
 
-### 404Crew Cyber Team — Data leak coalition (4+ victims, South Africa)
+### 404Crew Cyber Team, data leak coalition (4+ victims, South Africa)
 
 ```mermaid
 flowchart LR
@@ -76,7 +76,7 @@ C404 --> SRW["Sheriff Randburg West"]
 
 ---
 
-### AuditTeam — Ransomware + double extortion (1 victim, Senegal)
+### AuditTeam, ransomware and double extortion (1 victim, Senegal)
 
 **Profile:** Ransomware group. Attacked Tresor Public du Senegal with confirmed double extortion. Most impactful government ransomware incident of May 2026: ~1.66M records exfiltrated (national taxpayer registry, payroll, payment orders with NINEA identifiers and banking coordinates).
 
