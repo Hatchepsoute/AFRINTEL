@@ -132,51 +132,73 @@ pie
 
 ### 🇿🇦 South Africa (4 incidents: 4 ransomware)
 
-The Gentlemen group dominated South African activity with three simultaneous strikes on January 20: Paltrack (logistics software for the agri-food sector), Rola Motor Group (automotive dealership and distribution), and Witzenberg Municipality (local government, Western Cape). Hytec South Africa (hydraulic and mechanical engineering) was also claimed by vect. The concentration of activity on a single day suggests coordinated targeting. Local government and industrial supply chain represent a recurring exposure pattern for South Africa.
+South Africa recorded four ransomware incidents in January, all targeting industrial and government-linked organizations. The threat actor thegentlemen struck three victims on the same day, January 20: Paltrack, a logistics software company serving the agri-food sector; Rola Motor Group, an automotive dealership and distribution network; and Witzenberg Municipality, a local government entity in the Western Cape. The concentration of three claims on a single day suggests coordinated targeting across distinct sectors. A fourth victim, Hytec South Africa, a hydraulic and mechanical engineering company, was claimed by the threat actor vect. Local government and industrial supply chain represent a recurring exposure pattern for South Africa.
+
+---
 
 ### 🇰🇪 Kenya (4 incidents: 4 ransomware)
 
-Kenya recorded the joint-highest victim count in January with four ransomware incidents spread across public institutions. The National Water Authority (blackshrantac, January 8) is a critical utility responsible for the country's water resource management. CPF Financial Services (thegentlemen, January 20) and NSSF (devman, January 20) manage pension and social security funds, making them high-value targets for data extortion. The National Mining Corporation NAMICO (tengu, January 26) is a state-owned enterprise in the extractive sector. The breadth of sectors affected, all public or quasi-public, reflects a pattern of strategic targeting of Kenyan government-linked institutions.
+Kenya recorded the joint-highest victim count in January with four ransomware claims, all targeting public or quasi-public institutions. The threat actor blackshrantac claimed the National Water Authority on January 8, a critical utility responsible for the country's water resource management. On January 20, the threat actor thegentlemen claimed CPF Financial Services, a pension and capital management provider, and the threat actor devman claimed NSSF, the national social security fund, making January 20 the most active single day of the month. The threat actor tengu claimed NAMICO, the National Mining Corporation, on January 26. The breadth of sectors affected reflects a pattern of deliberate targeting of Kenyan government-linked infrastructure.
+
+---
 
 ### 🇪🇬 Egypt (3 incidents: 3 ransomware)
 
-Egypt recorded three ransomware claims from three different actors: Real Tech (thegentlemen, January 11, technology and IT security), Tepco-Group (direwolf, January 13, electrical engineering), and skyegtours.com (tengu, January 27, tourism and travel). The distribution across sectors and actors suggests opportunistic targeting rather than a coordinated campaign against Egypt specifically.
+Egypt recorded three ransomware claims from three different actors across distinct sectors. The threat actor thegentlemen claimed Real Tech, a technology and IT security company, on January 11. The threat actor direwolf claimed Tepco-Group, an electrical engineering firm, on January 13. The threat actor tengu claimed skyegtours.com, a tourism and travel platform, on January 27. The distribution across sectors and actors suggests opportunistic targeting rather than a coordinated campaign against Egypt.
+
+---
 
 ### 🇲🇦 Morocco (2 incidents: 1 ransomware, 1 data leak)
 
-Nafae Sanitaire (tengu, January 17, construction/plumbing) was claimed by ransomware. AOM Aviation Group/Air Ocean Maroc (skra1a, January 31) suffered a data leak with an aviation database published on the deep web. The aviation sector exposure is notable given the sensitivity of operational and passenger data in civil aviation.
+Morocco was hit by two distinct incident types in January. The threat actor tengu claimed Nafae Sanitaire, a construction and plumbing supply company, on January 17. The threat actor skra1a published an aviation database from AOM Aviation Group (Air Ocean Maroc) on January 31, exposing operational and civil aviation data on the deep web. The aviation sector data exposure is notable given the sensitivity of operational and passenger records.
+
+---
 
 ### 🇹🇬 Togo (1 incident: access sale)
 
-The Bigbrother actor, operating as an Initial Access Broker, claimed new accesses to Togolese government platforms on January 3. This follows a prior access claim to gouv.tg infrastructure in September 2025. The recurring targeting of the same government entity by the same IAB indicates persistent access and a risk of escalation: unsold or unpatched access can be leveraged for ransomware, espionage, or destructive operations.
+The threat actor Bigbrother, operating as an Initial Access Broker, claimed new accesses to Togolese government platforms on January 3. This follows a prior access claim to gouv.tg infrastructure in September 2025. The recurring targeting of the same government entity by the same IAB indicates persistent access and a risk of escalation: unsold or unpatched access can be leveraged for ransomware, espionage, or destructive operations.
+
+---
 
 ### 🇳🇪 Niger (1 incident: defacement)
 
 On January 4, seven or more Nigerien government websites were simultaneously defaced displaying an identical politically charged message. The coordinated nature across multiple domains (ANSI, MAGEL, urbanism, industry, women's promotion ministries) indicates either a common vulnerability in shared hosting infrastructure or a coordinated access operation. The attack was unclaimed, which is unusual for hacktivist defacements and may suggest a politically motivated actor avoiding attribution.
 
+---
+
 ### 🇸🇳 Senegal (1 incident: data leak)
 
-PixPay (breach3d, January 16), a Senegalese mobile payment platform, suffered a financial database leak. Mobile payment exposure creates direct risks of payment fraud, account takeover, and targeted phishing against users.
+PixPay, a Senegalese mobile payment platform, had its financial database published by the threat actor breach3d on January 16. Mobile payment data exposure creates direct risks of payment fraud, account takeover, and targeted phishing against users.
+
+---
 
 ### 🇲🇿 Mozambique (1 incident: ransomware)
 
-CFM Mozambique (qilin, January 16), the national railway and port authority, was claimed by the Qilin ransomware group. Targeting national transport infrastructure poses risks to supply chain logistics and port operations.
+CFM Mozambique, the national railway and port authority, was claimed by the threat actor Qilin on January 16. Targeting national transport infrastructure poses risks to supply chain logistics and port operations.
+
+---
 
 ### 🇹🇿 Tanzania (1 incident: ransomware)
 
-CCBRT (benzona, January 17), a healthcare NGO providing specialized rehabilitation services, was claimed by the benzona group. Healthcare NGOs represent a distinct target: limited cybersecurity budgets, sensitive patient data, and donor/partner communications of operational value.
+CCBRT, a healthcare NGO providing specialized rehabilitation services, was claimed by the threat actor benzona on January 17. Healthcare NGOs represent a distinct target category: limited cybersecurity budgets, sensitive patient data, and donor and partner communications of operational value.
+
+---
 
 ### 🇲🇺 Mauritius (1 incident: ransomware)
 
-Rogers Capital (thegentlemen, January 14), a financial services and technology provider, was claimed by The Gentlemen. Financial services in island economies often serve as hubs for regional capital flows, increasing data sensitivity.
+Rogers Capital, a financial services and technology provider, was claimed by the threat actor thegentlemen on January 14. Financial services providers in island economies often serve as hubs for regional capital flows, increasing the sensitivity of their data.
+
+---
 
 ### 🇩🇿 Algeria (1 incident: ransomware)
 
-Tahkout Group (tengu, January 28), a major industrial conglomerate involved in automotive assembly and transport, was claimed. The group's broad industrial footprint amplifies potential disruption impact.
+Tahkout Group, a major industrial conglomerate involved in automotive assembly and transport, was claimed by the threat actor tengu on January 28. The group's broad industrial footprint amplifies the potential disruption impact of any operational compromise.
+
+---
 
 ### 🇹🇳 Tunisia (1 incident: ransomware)
 
-FRUIT-BONTÉ (tengu, January 27), an agri-food and fruit processing company, was claimed. The agri-food sector in North Africa is increasingly targeted, suggesting data brokers and ransomware groups are expanding beyond traditional sectors.
+FRUIT-BONTÉ, an agri-food and fruit processing company, was claimed by the threat actor tengu on January 27. The agri-food sector in North Africa is increasingly targeted, suggesting ransomware groups are expanding beyond traditional sectors.
 
 ---
 
