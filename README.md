@@ -25,30 +25,12 @@
 
 ---
 
-## Latest intelligence
+## Cyber threats in Africa - May 2026
 
-### May 2026
+May 2026 recorded **54 publicly claimed cyber incidents**, the highest monthly figure in AFRINTEL 2026 records. Egypt (16 incidents) and South Africa (14) concentrated 56% of activity. Key events include the systemic exposure of 28M+ Egyptian education records, the OpSouthAfrica coalition campaign targeting 8 South African public institutions, the confirmed exfiltration of ~1.66M records from Senegal's Trésor Public, and the sale of 10,000+ Tanzanian police officer accounts with plaintext passwords.
 
-- **54 incidents** across Africa | Egypt (16) and South Africa (14) account for 56%
-- Egyptian education sector: 28M+ student and teacher records exposed
-- OpSouthAfrica coalition: 8 South African public institutions targeted
-- Trésor Public du Sénégal: AuditTeam ransomware, ~1.66M records exfiltrated
-- Databasehooligan: 8 victims across 4 countries
-- Tanzania Police webmail: 10,000+ officer accounts with plaintext passwords offered for sale
-
-📄 [May 2026 CTI Report](CyberAttackAfrica/2026/05-may/README.md)
-
----
-
-### June 2026 (in progress - updated June 22, 2026)
-
-- **5 incidents** | Data leaks and access sales only — 0 ransomware
-- **Jeroid.co (Nigeria):** 312,433 users, 759,900 wallets ($306M TVL), 110,282 BVN, 64,300 NIN, 70,956 biometric face photos on a public S3 bucket
-- **Law enforcement credentials for sale:** two actors ("Convince" and "Governor") selling EDR/LEP portal access targeting at least 11 African countries
-- **NILDS Nigeria:** parliamentary research institute claimed by 404Crew CT x NullSec Nigeria
-- **Egyptian pilots database:** military and civil aviation personnel data offered for sale
-
-📄 [June 2026 incidents](CyberAttackAfrica/2026/06-june/victims.md)
+📄 [Full CTI report - May 2026](CyberAttackAfrica/2026/05-may/README.md)
+📋 [Victim list - May 2026](CyberAttackAfrica/2026/05-may/victims.md)
 
 ---
 

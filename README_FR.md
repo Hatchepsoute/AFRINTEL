@@ -24,30 +24,12 @@
 
 ---
 
-## Dernières analyses
+## Cybermenaces en Afrique - mai 2026
 
-### Mai 2026
+Mai 2026 enregistre **54 incidents cyber** revendiqués publiquement, le chiffre mensuel le plus élevé des archives AFRINTEL 2026. L'Égypte (16 incidents) et l'Afrique du Sud (14) concentrent 56 % de l'activité. Les faits marquants incluent l'exposition systémique de 28 millions d'enregistrements du secteur éducatif égyptien, la campagne OpSouthAfrica ciblant 8 institutions publiques sud-africaines, l'exfiltration confirmée d'environ 1,66 million d'enregistrements du Trésor Public du Sénégal, et la mise en vente de plus de 10 000 comptes de policiers tanzaniens avec mots de passe en clair.
 
-- **54 incidents** en Afrique | Égypte (16) et Afrique du Sud (14) concentrent 56 % des incidents
-- Secteur éducatif égyptien : 28 millions d'enregistrements élèves et enseignants exposés
-- Coalition OpSouthAfrica : 8 institutions publiques sud-africaines ciblées
-- Trésor Public du Sénégal : ransomware AuditTeam, ~1,66 million d'enregistrements exfiltrés
-- Databasehooligan : 8 victimes dans 4 pays
-- Messagerie de la police tanzanienne : 10 000 comptes officiers avec mots de passe en clair mis en vente
-
-📄 [Rapport CTI mai 2026](CyberAttackAfrica/2026/05-may/README_FR.md)
-
----
-
-### Juin 2026 (collecte en cours - au 22 juin 2026)
-
-- **5 incidents** | Fuites de données et ventes d'accès uniquement, 0 ransomware
-- **Jeroid.co (Nigéria) :** 312 433 utilisateurs, 759 900 portefeuilles (TVL 306 M$), 110 282 BVN, 64 300 NIN, 70 956 photos biométriques sur un bucket S3 public
-- **Ventes d'identifiants forces de l'ordre :** deux acteurs ("Convince" et "Governor") vendent des accès EDR/LEP ciblant au moins 11 pays africains
-- **NILDS Nigéria :** institution de recherche parlementaire revendiquée par 404Crew CT x NullSec Nigeria
-- **Base de données pilotes égyptiens :** données de personnel aviation militaire et civile mises en vente
-
-📄 [Incidents de juin 2026](CyberAttackAfrica/2026/06-june/victims_FR.md)
+📄 [Rapport CTI complet - mai 2026](CyberAttackAfrica/2026/05-may/README_FR.md)
+📋 [Liste des victimes - mai 2026](CyberAttackAfrica/2026/05-may/victims_FR.md)
 
 ---
 
@@ -60,7 +42,7 @@
 | Mars 2026 | [Rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [Report](CyberAttackAfrica/2026/03-march/README.md) |
 | Avril 2026 | [Rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [Report](CyberAttackAfrica/2026/04-april/README.md) |
 | Mai 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
-| Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
+| Juin 2026 | *en cours* | *in progress* |
 
 ---
 
@@ -73,7 +55,7 @@
 | Mars 2026 | [Statistiques](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
 | Avril 2026 | [Statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 | Mai 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
-| Juin 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
+| Juin 2026 | *en cours* | *in progress* |
 
 ---
 
