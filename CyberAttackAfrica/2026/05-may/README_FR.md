@@ -311,7 +311,7 @@ L’acteur malveillant cc5ab a revendiqué la compromission du Land Surveyors Bo
 
 ### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposition via DHIS2)
 
-Ces quatre pays ont été touchés exclusivement par la vente d’accès DHIS2 revendiquée par l’acteur malveillant Keymous (13 mai). Les artefacts publiés incluent plusieurs couples URL/identifiant/mot de passe ciblant des instances DHIS2 exploitées par des institutions sanitaires gouvernementales dans chacun de ces pays. Ce schéma est cohérent avec une compromission crédible de comptes administratifs ou opérationnels plutôt qu’un dump de données conventionnel. Un accès actif exposerait les données de surveillance sanitaire nationale, les registres épidémiologiques et les systèmes de suivi vaccinal. AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
+Ces quatre pays ont été touchés exclusivement par la divulgation d’identifiants d’accès DHIS2, revendiquée par l’acteur malveillant Keymous (le 13 mai). Les artefacts publiés incluent plusieurs combinaisons URL/identifiant/mot de passe ciblant des instances DHIS2 exploitées par des institutions sanitaires gouvernementales dans chacun de ces pays. 
 
 ---
 

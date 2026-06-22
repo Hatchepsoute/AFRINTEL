@@ -132,51 +132,73 @@ pie
 
 ### 🇿🇦 Afrique du Sud (4 incidents : 4 ransomwares)
 
-The Gentlemen a dominé l'activité sud-africaine avec trois frappes simultanées le 20 janvier : Paltrack (logiciel logistique pour l'agroalimentaire), Rola Motor Group (concessionnaire et distribution automobile) et Witzenberg Municipality (gouvernement local, Cap-Occidental). Hytec South Africa (ingénierie hydraulique et mécanique) a également été revendiquée par vect. La concentration d'activité sur une seule journée suggère un ciblage coordonné. Le gouvernement local et la chaîne d'approvisionnement industrielle représentent un profil d'exposition récurrent pour l'Afrique du Sud.
+L'Afrique du Sud enregistre quatre incidents ransomware en janvier, ciblant tous des organisations industrielles ou liées au gouvernement. L'acteur malveillant thegentlemen a revendiqué trois victimes le même jour, le 20 janvier : Paltrack, un éditeur de logiciels logistiques pour l'agroalimentaire ; Rola Motor Group, un réseau de concessions et distribution automobile ; et Witzenberg Municipality, une entité de gouvernement local du Cap-Occidental. La concentration de trois revendications en une seule journée suggère un ciblage coordonné sur des secteurs distincts. Une quatrième victime, Hytec South Africa, spécialisée dans l'ingénierie hydraulique et mécanique, a été revendiquée par l'acteur malveillant vect. Le gouvernement local et la chaîne d'approvisionnement industrielle représentent un profil d'exposition récurrent pour l'Afrique du Sud.
+
+---
 
 ### 🇰🇪 Kenya (4 incidents : 4 ransomwares)
 
-Le Kenya enregistre le deuxième score le plus élevé en janvier avec quatre incidents ransomware touchant des institutions publiques. La National Water Authority (blackshrantac, 8 janvier) est un service d'utilité critique responsable de la gestion des ressources en eau. CPF Financial Services (thegentlemen, 20 janvier) et le NSSF (devman, 20 janvier) gèrent des fonds de retraite et de sécurité sociale, ce qui en fait des cibles à haute valeur pour l'extorsion de données. La National Mining Corporation NAMICO (tengu, 26 janvier) est une entreprise d'État du secteur extractif. La diversité des secteurs touchés, tous publics ou parapublics, reflète un ciblage délibéré des institutions liées au gouvernement kenyan.
+Le Kenya enregistre le score le plus élevé en janvier avec quatre revendications ransomware, toutes visant des institutions publiques ou parapubliques. L'acteur malveillant blackshrantac a revendiqué la National Water Authority le 8 janvier, service d'utilité critique responsable de la gestion des ressources en eau. Le 20 janvier, l'acteur malveillant thegentlemen a revendiqué CPF Financial Services, gestionnaire de fonds de retraite et de capitaux, tandis que l'acteur malveillant devman a revendiqué le NSSF, le fonds national de sécurité sociale, faisant du 20 janvier la journée la plus chargée du mois. L'acteur malveillant tengu a ensuite revendiqué NAMICO, la National Mining Corporation, le 26 janvier. La diversité des secteurs touchés, tous publics ou parapublics, reflète un ciblage délibéré des institutions liées au gouvernement kenyan.
+
+---
 
 ### 🇪🇬 Égypte (3 incidents : 3 ransomwares)
 
-L'Égypte enregistre trois revendications ransomware de trois acteurs différents : Real Tech (thegentlemen, 11 janvier, technologie et sécurité informatique), Tepco-Group (direwolf, 13 janvier, ingénierie électrique) et skyegtours.com (tengu, 27 janvier, tourisme et voyage). La dispersion des secteurs et des acteurs suggère un ciblage opportuniste plutôt qu'une campagne coordonnée spécifiquement contre l'Égypte.
+L'Égypte enregistre trois revendications ransomware issues de trois acteurs distincts opérant dans des secteurs différents. L'acteur malveillant thegentlemen a revendiqué Real Tech, une société de technologie et de sécurité informatique, le 11 janvier. L'acteur malveillant direwolf a revendiqué Tepco-Group, un bureau d'ingénierie électrique, le 13 janvier. L'acteur malveillant tengu a revendiqué skyegtours.com, une plateforme de tourisme et de voyages, le 27 janvier. La dispersion des secteurs et des acteurs suggère un ciblage opportuniste plutôt qu'une campagne coordonnée spécifiquement contre l'Égypte.
+
+---
 
 ### 🇲🇦 Maroc (2 incidents : 1 ransomware, 1 fuite de données)
 
-Nafae Sanitaire (tengu, 17 janvier, construction/plomberie) a été revendiquée par ransomware. AOM Aviation Group/Air Ocean Maroc (skra1a, 31 janvier) a subi une fuite de données avec publication d'une base de données aviation sur le deep web. L'exposition du secteur aérien est notable compte tenu de la sensibilité des données opérationnelles et passagers dans l'aviation civile.
+Le Maroc est touché par deux types d'incidents distincts en janvier. L'acteur malveillant tengu a revendiqué Nafae Sanitaire, une entreprise de fournitures en construction et plomberie, le 17 janvier. L'acteur malveillant skra1a a publié une base de données aviation issue d'AOM Aviation Group (Air Ocean Maroc) le 31 janvier, exposant des données opérationnelles et de l'aviation civile sur le dark web. L'exposition des données du secteur aérien est notable compte tenu de la sensibilité des données opérationnelles et passagers.
+
+---
 
 ### 🇹🇬 Togo (1 incident : vente d'accès)
 
-L'acteur Bigbrother, opérant en tant qu'Initial Access Broker, a revendiqué de nouveaux accès à des plateformes gouvernementales togolaises le 3 janvier. Cela fait suite à une première revendication d'accès à l'infrastructure gouv.tg en septembre 2025. Le ciblage répété de la même entité gouvernementale par le même IAB indique un accès persistant et un risque d'escalade : un accès non vendu ou non corrigé peut être exploité pour des opérations ransomware, d'espionnage ou destructrices.
+L'acteur malveillant Bigbrother, opérant en tant qu'Initial Access Broker, a revendiqué de nouveaux accès à des plateformes gouvernementales togolaises le 3 janvier. Cela fait suite à une première revendication d'accès à l'infrastructure gouv.tg en septembre 2025. Le ciblage répété de la même entité gouvernementale par le même IAB indique un accès persistant et un risque d'escalade : un accès non vendu ou non corrigé peut être exploité pour des opérations ransomware, d'espionnage ou destructrices.
+
+---
 
 ### 🇳🇪 Niger (1 incident : défacement)
 
 Le 4 janvier, sept sites gouvernementaux nigériens ou plus ont été simultanément défacés, affichant un message à caractère politique identique. La nature coordonnée sur plusieurs domaines (ANSI, MAGEL, urbanisme, industrie, promotion de la femme) indique soit une vulnérabilité commune dans l'infrastructure d'hébergement partagé, soit une opération d'accès coordonnée. L'attaque n'a pas été revendiquée, ce qui est inhabituel pour les défacements hacktivistes, et pourrait suggérer un acteur à motivation politique évitant l'attribution.
 
+---
+
 ### 🇸🇳 Sénégal (1 incident : fuite de données)
 
-PixPay (breach3d, 16 janvier), une plateforme de paiement mobile sénégalaise, a subi une fuite de base de données financières. L'exposition de données de paiement mobile crée des risques directs de fraude, de prise de contrôle de comptes et de phishing ciblé contre les utilisateurs.
+PixPay, une plateforme de paiement mobile sénégalaise, a vu sa base de données financières publiée par l'acteur malveillant breach3d le 16 janvier. L'exposition de données de paiement mobile crée des risques directs de fraude, de prise de contrôle de comptes et de phishing ciblé contre les utilisateurs.
+
+---
 
 ### 🇲🇿 Mozambique (1 incident : ransomware)
 
-CFM Mozambique (qilin, 16 janvier), l'autorité nationale des chemins de fer et des ports, a été revendiquée par le groupe Qilin. Cibler des infrastructures de transport nationales fait peser des risques sur la logistique de la chaîne d'approvisionnement et les opérations portuaires.
+CFM Mozambique, l'autorité nationale des chemins de fer et des ports, a été revendiquée par l'acteur malveillant Qilin le 16 janvier. Cibler des infrastructures de transport nationales fait peser des risques sur la logistique de la chaîne d'approvisionnement et les opérations portuaires.
+
+---
 
 ### 🇹🇿 Tanzanie (1 incident : ransomware)
 
-CCBRT (benzona, 17 janvier), une ONG de santé fournissant des services de réhabilitation spécialisée, a été revendiquée par le groupe benzona. Les ONG de santé représentent une catégorie spécifique : budgets de cybersécurité limités, données patients sensibles, et communications partenaires/donateurs de valeur opérationnelle.
+CCBRT, une ONG de santé fournissant des services de réhabilitation spécialisée, a été revendiquée par l'acteur malveillant benzona le 17 janvier. Les ONG de santé représentent une catégorie spécifique : budgets de cybersécurité limités, données patients sensibles, et communications partenaires et donateurs de valeur opérationnelle.
+
+---
 
 ### 🇲🇺 Maurice (1 incident : ransomware)
 
-Rogers Capital (thegentlemen, 14 janvier), prestataire de services financiers et technologiques, a été revendiquée par The Gentlemen. Les services financiers dans les économies insulaires servent souvent de hubs pour les flux de capitaux régionaux, ce qui augmente la sensibilité des données.
+Rogers Capital, prestataire de services financiers et technologiques, a été revendiquée par l'acteur malveillant thegentlemen le 14 janvier. Les prestataires de services financiers dans les économies insulaires servent souvent de hubs pour les flux de capitaux régionaux, ce qui augmente la sensibilité des données.
+
+---
 
 ### 🇩🇿 Algérie (1 incident : ransomware)
 
-Tahkout Group (tengu, 28 janvier), important conglomérat industriel impliqué dans l'assemblage automobile et le transport, a été revendiqué. L'empreinte industrielle étendue du groupe amplifie l'impact potentiel d'une perturbation.
+Tahkout Group, important conglomérat industriel impliqué dans l'assemblage automobile et le transport, a été revendiqué par l'acteur malveillant tengu le 28 janvier. L'empreinte industrielle étendue du groupe amplifie l'impact potentiel de toute compromission opérationnelle.
+
+---
 
 ### 🇹🇳 Tunisie (1 incident : ransomware)
 
-FRUIT-BONTÉ (tengu, 27 janvier), entreprise agroalimentaire et de transformation fruitière, a été revendiquée. Le secteur agroalimentaire en Afrique du Nord est de plus en plus ciblé, indiquant que les courtiers en données et groupes ransomwares s'étendent au-delà des secteurs traditionnels.
+FRUIT-BONTÉ, entreprise agroalimentaire et de transformation fruitière, a été revendiquée par l'acteur malveillant tengu le 27 janvier. Le secteur agroalimentaire en Afrique du Nord est de plus en plus ciblé, indiquant que les groupes ransomwares s'étendent au-delà des secteurs traditionnels.
 
 ---
 

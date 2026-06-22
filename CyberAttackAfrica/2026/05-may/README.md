@@ -311,7 +311,7 @@ The threat actor cc5ab claimed the compromise of the Land Surveyors Board of Ken
 
 ### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposure via DHIS2)
 
-These four countries were affected exclusively through the DHIS2 Ministries of Health access sale claimed by the threat actor Keymous (May 13). The published artifacts include multiple URL/username/password pairs targeting DHIS2 health platform instances operated by government health institutions in each of these countries. This pattern is consistent with a credible compromise of administrative or operational accounts rather than a conventional data dump. Unauthorized access, if active, would expose national health surveillance data, epidemiological records, and vaccination tracking systems. AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
+These four countries were exclusively affected by the leak of DHIS2 access credentials claimed by the threat actor Keymous (on May 13th). The published artifacts include several combinations of URLs, usernames, and passwords targeting DHIS2 instances operated by government health institutions in each country.
 
 ---
 
