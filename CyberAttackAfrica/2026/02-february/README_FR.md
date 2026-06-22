@@ -114,59 +114,85 @@ pie
 
 ### 🇸🇳 Sénégal (1 incident - Critique)
 
-**DAF SÉNÉGAL** (Direction de l'Administration Générale et de l'Équipement) est la revendication la plus critique du mois. The Green Blood Group revendique 139 To de données exfiltrées incluant des bases de données citoyennes et des enregistrements biométriques. Si même partiellement authentique, cela représenterait l'une des plus grandes expositions de données gouvernementales de l'histoire africaine. L'exposition de données biométriques crée des risques irréversibles : contrairement aux mots de passe, les identifiants biométriques ne peuvent pas être modifiés. Risques : fraude identitaire à l'échelle nationale, perturbation de la fourniture des services publics et exploitation potentielle de l'infrastructure d'identité citoyenne.
+La DAF Sénégal (Direction de l'Administration Générale et de l'Équipement), organe administratif central du gouvernement, est la revendication la plus critique du mois. L'acteur malveillant The Green Blood Group revendique 139 To de données exfiltrées incluant des bases de données citoyennes et des enregistrements biométriques. Si même partiellement authentique, cela représenterait l'une des plus grandes expositions de données gouvernementales de l'histoire africaine. L'exposition de données biométriques crée des risques irréversibles : contrairement aux mots de passe, les identifiants biométriques ne peuvent pas être modifiés. Les conséquences potentielles incluent la fraude identitaire à l'échelle nationale, la perturbation des services publics et l'exploitation de l'infrastructure d'identité citoyenne.
+
+---
 
 ### 🇸🇴 Somalie (1 incident)
 
-**BlueSky Aviation** (bluesky-air.com) a été revendiquée par 0APT avec 3,5 To d'exfiltration alléguée. C'est l'une des trois revendications à fort volume faites par 0APT en février avant que le groupe disparaisse des sites de fuite publics. La revendication reste non vérifiée. Les risques d'une exposition du secteur aérien incluent les données opérationnelles, les dossiers passagers et les informations logistiques de vol.
+BlueSky Aviation (bluesky-air.com), une société de services aéronautiques somalienne, a été revendiquée par l'acteur malveillant 0APT avec 3,5 To d'exfiltration alléguée. C'est l'une des trois revendications à fort volume formulées par l'acteur malveillant 0APT en février avant que le groupe disparaisse des sites de fuite publics. La revendication reste non vérifiée. Les risques d'une exposition du secteur aérien incluent les données opérationnelles, les dossiers passagers et les informations logistiques de vol.
+
+---
 
 ### 🇬🇭 Ghana (2 incidents)
 
-**Global Media Alliance** (gmaworld.com) a été revendiquée par 0APT (2,5 To). En tant qu'entreprise de médias et communications intégrée, son exposition risquerait des contrats publicitaires, des contenus éditoriaux et des données personnelles. **Ghana Bauxite Company** (ghanabauxite.com) a été revendiquée par thegentlemen. Entreprise minière liée à l'État, son ciblage illustre l'intérêt croissant du groupe pour les industries extractives africaines.
+Global Media Alliance (gmaworld.com), une entreprise de médias et communications intégrée, a été revendiquée par l'acteur malveillant 0APT avec 2,5 To de données alléguées. Son exposition risquerait des contrats publicitaires, des contenus éditoriaux et des données personnelles. Ghana Bauxite Company (ghanabauxite.com), une entreprise minière liée à l'État, a été revendiquée par l'acteur malveillant thegentlemen. Son ciblage illustre l'intérêt croissant de ce groupe pour les industries extractives africaines.
+
+---
 
 ### 🇹🇿 Tanzanie (1 incident)
 
-**Vertex Law Chambers** (vertexlaw.co.tz, 0APT, 850 Go). Une fuite dans un cabinet d'avocats crée une sensibilité particulièrement élevée : dossiers clients, communications privilégiées, archives judiciaires et contrats commerciaux sont tous potentiellement exposés.
+Vertex Law Chambers (vertexlaw.co.tz), un cabinet d'avocats, a été revendiqué par l'acteur malveillant 0APT avec 850 Go d'exfiltration alléguée. Une fuite dans un cabinet d'avocats crée une sensibilité particulièrement élevée : dossiers clients, communications privilégiées, archives judiciaires et contrats commerciaux sont tous potentiellement exposés.
+
+---
 
 ### 🇰🇪 Kenya (1 incident)
 
-**Wells Fargo Kenya** (fargo.co.ke, thegentlemen) est un prestataire local de sécurité et de logistique financière. L'exposition de données de sécurité physique et de logistique financière crée des risques de compromission de la sécurité physique et de fraude financière.
+Wells Fargo Kenya (fargo.co.ke), un prestataire local de sécurité et de logistique financière, a été revendiqué par l'acteur malveillant thegentlemen. L'exposition de données de sécurité et de logistique financière crée des risques de compromission de la sécurité physique et de fraude financière.
+
+---
 
 ### 🇳🇬 Nigeria (2 incidents)
 
-**Getly** (getly.app, killsec, 9 février) est une application fintech. Les violations de fintech mobile exposent directement les comptes financiers et les historiques de transactions des utilisateurs. **Midwestern Oil & Gas** (midwesternog.com, incransom, 12 février) est une société pétrolière et gazière en amont. Le ciblage du secteur énergétique critique au Nigeria reflète une tendance plus large observée en février (aviation, énergie, mines toutes touchées).
+Getly (getly.app), une application fintech, a été revendiquée par l'acteur malveillant killsec le 9 février. Les violations de fintech mobile exposent directement les comptes financiers et les historiques de transactions des utilisateurs. Midwestern Oil and Gas (midwesternog.com), une société pétrolière et gazière en amont, a été revendiquée par l'acteur malveillant incransom le 12 février. Le ciblage du secteur énergétique critique au Nigeria reflète une tendance plus large observée en février avec l'aviation, l'énergie et les mines toutes touchées.
+
+---
 
 ### 🇪🇬 Égypte (3 incidents)
 
-L'Égypte enregistre trois groupes ransomwares distincts en février. **Nile Air** (nileair.com, thegentlemen, 13 février) est une compagnie aérienne privée à l'aéroport du Caire. **sodic.com** (payload, 17 février) est l'un des principaux promoteurs immobiliers égyptiens. Le **Ministère de l'Agriculture** (moa.gov.eg, LockBit 5.0, 20 février) est responsable de la sécurité alimentaire et de l'aménagement foncier. Le ciblage simultané par trois groupes différents sur l'aviation, l'immobilier et le gouvernement illustre l'exposition soutenue de l'Égypte.
+L'Égypte enregistre trois groupes ransomwares distincts en février. Nile Air (nileair.com), une compagnie aérienne privée à l'aéroport du Caire, a été revendiquée par l'acteur malveillant thegentlemen le 13 février. SODIC (sodic.com), l'un des principaux promoteurs immobiliers égyptiens, a été revendiqué par l'acteur malveillant payload le 17 février. Le ministère de l'Agriculture (moa.gov.eg), responsable de la sécurité alimentaire et de l'aménagement foncier, a été revendiqué par l'acteur malveillant LockBit 5.0 le 20 février. Le ciblage simultané par trois groupes différents sur l'aviation, l'immobilier et le gouvernement illustre l'exposition soutenue de l'Égypte.
+
+---
 
 ### 🇲🇺 Maurice (1 incident)
 
-**Sands Suites** (sands.mu, LockBit 5.0, 14 février) est un complexe hôtelier de luxe. Les violations du secteur hôtelier exposent généralement les données personnelles des clients, les informations de paiement et les programmes de fidélité.
+Sands Suites (sands.mu), un complexe hôtelier de luxe, a été revendiqué par l'acteur malveillant LockBit 5.0 le 14 février. Les violations du secteur hôtelier exposent généralement les données personnelles des clients, les informations de paiement et les programmes de fidélité.
+
+---
 
 ### 🇿🇦 Afrique du Sud (3 incidents)
 
-**Intsika Yethu Municipality** (intsikayethu.gov.za, thegentlemen, 15 février) est une municipalité locale du Cap-Oriental. Les violations de données municipales risquent d'exposer les dossiers de services aux citoyens, les détails d'infrastructure et les données du personnel. **EnerTec** (enertec.co.za, vect, 24 février, 151,79 Go) est une société de solutions énergétiques et de distribution de batteries. **Diesel-Electric** (diesel-electric.co.za, LockBit 5.0, 27 février) est un distributeur majeur de composants automobiles. Une possible republication de la même victime est apparue sous LockBit 5.0 en mars 2026 et nécessite une vérification.
+Intsika Yethu Municipality (intsikayethu.gov.za), une municipalité locale du Cap-Oriental, a été revendiquée par l'acteur malveillant thegentlemen le 15 février. Les violations de données municipales risquent d'exposer les dossiers de services aux citoyens, les détails d'infrastructure et les données du personnel. EnerTec (enertec.co.za), une société de solutions énergétiques et de distribution de batteries, a été revendiquée par l'acteur malveillant vect le 24 février, avec 151,79 Go de données alléguées. Diesel-Electric (diesel-electric.co.za), un grand distributeur de composants automobiles, a été revendiqué par l'acteur malveillant LockBit 5.0 le 27 février. Une possible republication de la même victime est apparue sous LockBit 5.0 en mars 2026 et nécessite vérification.
+
+---
 
 ### 🇹🇳 Tunisie (1 incident)
 
-**BITS** (bits.com.tn, thegentlemen, 15 février) est une société de services et de conseil informatique. Les cabinets de conseil IT détiennent la documentation d'infrastructure des clients et des identifiants d'accès, créant un risque élevé de violation secondaire.
+BITS (bits.com.tn), une société de services et de conseil informatique, a été revendiquée par l'acteur malveillant thegentlemen le 15 février. Les cabinets de conseil IT détiennent la documentation d'infrastructure des clients et des identifiants d'accès, créant un risque élevé de violation secondaire.
+
+---
 
 ### 🇸🇩 Soudan (1 incident)
 
-**Amtaar Investment** (amtaar.com, apt73/bashe, 18 février) : 3,5 Go de données ont été revendiqués et partiellement publiés. Amtaar est une grande entreprise d'investissement agricole gérant 6 000 hectares de terres irriguées, jouant un rôle clé dans la sécurité alimentaire nationale. C'est le seul incident de février avec une publication partielle de données confirmée. Le contexte du conflit soudanais amplifie l'impact stratégique potentiel de l'exposition de données du secteur agricole.
+Amtaar Investment (amtaar.com), une grande entreprise d'investissement agricole gérant 6 000 hectares de terres irriguées jouant un rôle clé dans la sécurité alimentaire nationale, a été revendiquée par l'acteur malveillant apt73/bashe le 18 février, avec 3,5 Go de données partiellement publiés. C'est le seul incident de février avec publication partielle confirmée. Le contexte du conflit soudanais amplifie l'impact stratégique potentiel de l'exposition de données du secteur agricole.
+
+---
 
 ### 🇨🇮 Côte d'Ivoire (1 incident)
 
-**Air Côte d'Ivoire** (aircotedivoire.com, incransom, 19 février) est la compagnie aérienne nationale. Avec BlueSky Somalie et Nile Air Égypte, février 2026 devient le mois le plus actif pour les revendications ransomware sur les compagnies aériennes africaines dans les archives AFRINTEL.
+Air Côte d'Ivoire (aircotedivoire.com), la compagnie aérienne nationale, a été revendiquée par l'acteur malveillant incransom le 19 février. Avec BlueSky Somalie et Nile Air Égypte, février 2026 devient le mois avec le plus de revendications ransomware sur des compagnies aériennes africaines dans les archives AFRINTEL.
+
+---
 
 ### 🇲🇦 Maroc (1 incident)
 
-**Shora Advisory** (shora.ma, tengu, 20 février) est un cabinet de conseil en comptabilité et finance. Les cabinets de conseil financier détiennent des données financières d'entreprise sensibles, des données fiscales et des documents de stratégie.
+Shora Advisory (shora.ma), un cabinet de conseil en comptabilité et finance, a été revendiqué par l'acteur malveillant tengu le 20 février. Les cabinets de conseil financier détiennent des données financières d'entreprise sensibles, des données fiscales et des documents de stratégie.
+
+---
 
 ### 🇳🇦 Namibie (1 incident)
 
-**CYMOT** (cymot.com, qilin, 22 février) est un détaillant namibien de pièces automobiles, outils et équipements.
+CYMOT (cymot.com), un détaillant namibien de pièces automobiles, outils et équipements, a été revendiqué par l'acteur malveillant Qilin le 22 février.
 
 ---
 

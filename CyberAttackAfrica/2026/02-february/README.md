@@ -114,59 +114,85 @@ pie
 
 ### 🇸🇳 Senegal (1 incident - Critical)
 
-**DAF SENEGAL** (Direction de l'Administration Générale et de l'Équipement) is the most critical claim of the month. The Green Blood Group claims 139 TB of exfiltrated data including citizen databases and biometric records. If even partially authentic, this would represent one of the largest government data exposures in African history. Biometric record exposure creates irreversible risks: unlike passwords, biometric identifiers cannot be changed. Risks include identity fraud at national scale, tampering with government service delivery, and potential exploitation of citizen identity infrastructure.
+DAF Senegal (Direction de l'Administration Générale et de l'Équipement), a central government administrative body, is the most critical claim of the month. The threat actor The Green Blood Group claims 139 TB of exfiltrated data including citizen databases and biometric records. If even partially authentic, this would represent one of the largest government data exposures in African history. Biometric record exposure creates irreversible risks: unlike passwords, biometric identifiers cannot be changed. Potential consequences include identity fraud at national scale, tampering with government service delivery, and exploitation of citizen identity infrastructure.
+
+---
 
 ### 🇸🇴 Somalia (1 incident)
 
-**BlueSky Aviation** (bluesky-air.com) was claimed by 0APT with 3.5 TB of alleged exfiltration. This is one of three large-volume claims made by 0APT in February before the group disappeared from public leak sites. The claim remains unverified. Aviation sector exposure risks include operational data, passenger records, and flight logistics information.
+BlueSky Aviation (bluesky-air.com), a Somali aviation services company, was claimed by the threat actor 0APT with 3.5 TB of alleged exfiltration. This is one of three large-volume claims made by the threat actor 0APT in February before the group disappeared from public data leak sites. The claim remains unverified. Aviation sector exposure risks include operational data, passenger records, and flight logistics information.
+
+---
 
 ### 🇬🇭 Ghana (2 incidents)
 
-**Global Media Alliance** (gmaworld.com) was claimed by 0APT (2.5 TB). An integrated media and communications company, its exposure would risk advertiser contracts, editorial content, and personnel data. **Ghana Bauxite Company** (ghanabauxite.com) was claimed by thegentlemen. A state-linked mining enterprise, its targeting reflects the group's emerging interest in African extractive industries alongside its traditional multi-sector approach.
+Global Media Alliance (gmaworld.com), an integrated media and communications company, was claimed by the threat actor 0APT with 2.5 TB of alleged data. Its exposure would risk advertiser contracts, editorial content, and personnel data. Ghana Bauxite Company (ghanabauxite.com), a state-linked mining enterprise, was claimed by the threat actor thegentlemen. Its targeting reflects the group's emerging interest in African extractive industries alongside its traditional multi-sector approach.
+
+---
 
 ### 🇹🇿 Tanzania (1 incident)
 
-**Vertex Law Chambers** (vertexlaw.co.tz) was claimed by 0APT (850 GB). A law firm breach creates particularly high sensitivity: client files, privileged communications, court records, and business contracts are all potentially exposed.
+Vertex Law Chambers (vertexlaw.co.tz), a law firm, was claimed by the threat actor 0APT with 850 GB of alleged exfiltration. A law firm breach creates particularly high sensitivity: client files, privileged communications, court records, and business contracts are all potentially exposed.
+
+---
 
 ### 🇰🇪 Kenya (1 incident)
 
-**Wells Fargo Kenya** (fargo.co.ke, thegentlemen) is a local security and financial logistics provider. Financial and security logistics data exposure creates risks of physical security compromise and financial fraud.
+Wells Fargo Kenya (fargo.co.ke), a local security and financial logistics provider, was claimed by the threat actor thegentlemen. Financial and security logistics data exposure creates risks of physical security compromise and financial fraud.
+
+---
 
 ### 🇳🇬 Nigeria (2 incidents)
 
-**Getly** (getly.app, killsec, February 9) is a fintech application. Mobile fintech breaches directly expose users' financial accounts and transaction histories. **Midwestern Oil & Gas** (midwesternog.com, incransom, February 12) is an upstream oil and gas company. Critical energy sector targeting in Nigeria mirrors a broader trend observed across February (aviation, energy, mining all hit).
+Getly (getly.app), a fintech application, was claimed by the threat actor killsec on February 9. Mobile fintech breaches directly expose users' financial accounts and transaction histories. Midwestern Oil and Gas (midwesternog.com), an upstream oil and gas company, was claimed by the threat actor incransom on February 12. Critical energy sector targeting in Nigeria mirrors a broader trend observed across February with aviation, energy, and mining all affected.
+
+---
 
 ### 🇪🇬 Egypt (3 incidents)
 
-Egypt records three distinct ransomware groups in February. **Nile Air** (nileair.com, thegentlemen, February 13) is a private airline at Cairo International Airport. **sodic.com** (payload, February 17) is one of Egypt's leading real estate developers. **Ministry of Agriculture** (moa.gov.eg, LockBit 5.0, February 20) is a government ministry with responsibilities for food security and land management. The simultaneous targeting by three different ransomware groups across aviation, real estate, and government sectors illustrates Egypt's sustained exposure.
+Egypt records three distinct ransomware groups in February. Nile Air (nileair.com), a private airline at Cairo International Airport, was claimed by the threat actor thegentlemen on February 13. SODIC (sodic.com), one of Egypt's leading real estate developers, was claimed by the threat actor payload on February 17. The Ministry of Agriculture (moa.gov.eg), responsible for food security and land management, was claimed by the threat actor LockBit 5.0 on February 20. The simultaneous targeting by three different groups across aviation, real estate, and government illustrates Egypt's sustained exposure.
+
+---
 
 ### 🇲🇺 Mauritius (1 incident)
 
-**Sands Suites** (sands.mu, LockBit 5.0, February 14) is a luxury resort. Hospitality sector breaches typically expose guest personal data, payment information, and loyalty program records.
+Sands Suites (sands.mu), a luxury resort, was claimed by the threat actor LockBit 5.0 on February 14. Hospitality sector breaches typically expose guest personal data, payment information, and loyalty program records.
+
+---
 
 ### 🇿🇦 South Africa (3 incidents)
 
-**Intsika Yethu Municipality** (intsikayethu.gov.za, thegentlemen, February 15) is a local municipality in the Eastern Cape. Municipal data breaches risk exposing citizen service records, infrastructure details, and staff data. **EnerTec** (enertec.co.za, vect, February 24, 151.79 GB) is an energy solutions and battery distribution company. **Diesel-Electric** (diesel-electric.co.za, LockBit 5.0, February 27) is a major automotive components distributor. A possible re-publication of this same victim appeared under LockBit 5.0 in March 2026, requiring verification.
+Intsika Yethu Municipality (intsikayethu.gov.za), a local municipality in the Eastern Cape, was claimed by the threat actor thegentlemen on February 15. Municipal data breaches risk exposing citizen service records, infrastructure details, and staff data. EnerTec (enertec.co.za), an energy solutions and battery distribution company, was claimed by the threat actor vect on February 24, with 151.79 GB of data alleged. Diesel-Electric (diesel-electric.co.za), a major automotive components distributor, was claimed by the threat actor LockBit 5.0 on February 27. A possible re-publication of this same victim appeared under LockBit 5.0 in March 2026, requiring verification.
+
+---
 
 ### 🇹🇳 Tunisia (1 incident)
 
-**BITS** (bits.com.tn, thegentlemen, February 15) is an IT services and consulting firm. IT consulting firms hold client infrastructure documentation and access credentials, creating high secondary breach risk.
+BITS (bits.com.tn), an IT services and consulting firm, was claimed by the threat actor thegentlemen on February 15. IT consulting firms hold client infrastructure documentation and access credentials, creating high secondary breach risk.
+
+---
 
 ### 🇸🇩 Sudan (1 incident)
 
-**Amtaar Investment** (amtaar.com, apt73/bashe, February 18): 3.5 GB of data were claimed and partially published. Amtaar is a major agricultural investment firm managing 6,000 hectares of irrigated land with a key role in national food security. This is the only February incident with confirmed partial data publication. Sudan's conflict context amplifies the potential strategic impact of agricultural sector data exposure.
+Amtaar Investment (amtaar.com), a major agricultural investment firm managing 6,000 hectares of irrigated land with a key role in national food security, was claimed by the threat actor apt73/bashe on February 18, with 3.5 GB of data partially published. This is the only February incident with confirmed partial data publication. Sudan's conflict context amplifies the potential strategic impact of agricultural sector data exposure.
+
+---
 
 ### 🇨🇮 Ivory Coast (1 incident)
 
-**Air Côte d'Ivoire** (aircotedivoire.com, incransom, February 19) is the national airline. Combined with BlueSky Somalia and Nile Air Egypt, February 2026 becomes the month with the most African airline ransomware claims recorded by AFRINTEL.
+Air Côte d'Ivoire (aircotedivoire.com), the national airline, was claimed by the threat actor incransom on February 19. Combined with BlueSky Somalia and Nile Air Egypt, February 2026 becomes the month with the most African airline ransomware claims recorded in AFRINTEL.
+
+---
 
 ### 🇲🇦 Morocco (1 incident)
 
-**Shora Advisory** (shora.ma, tengu, February 20) is an accounting and financial advisory firm. Financial advisory firms hold sensitive business financial records, tax data, and corporate strategy documents.
+Shora Advisory (shora.ma), an accounting and financial advisory firm, was claimed by the threat actor tengu on February 20. Financial advisory firms hold sensitive business financial records, tax data, and corporate strategy documents.
+
+---
 
 ### 🇳🇦 Namibia (1 incident)
 
-**CYMOT** (cymot.com, qilin, February 22) is a Namibian retailer of automotive spares, tools, and equipment.
+CYMOT (cymot.com), a Namibian retailer of automotive spares, tools, and equipment, was claimed by the threat actor Qilin on February 22.
 
 ---
 
