@@ -229,72 +229,97 @@ pie showData
 
 ### 🇪🇬 Égypte (16 incidents : 7 ransomwares, 9 fuites de données)
 
-- **Ransomware (7) :** NightSpire a revendiqué trois cibles (Papa John's, Rawaj Consumer Finance, B Investments) ; TheGentlemen, Qilin, LockBit 5.0 et Lamashtu (Luna Group) ont chacun revendiqué une victime supplémentaire.
-- **Fuites éducation (4) :** Ministère de l'Éducation (26,8 millions d'enregistrements élèves, Revesky), Professional Academy for Teachers (1,2 million, INT3X), Université de Mansoura (989K), base combinée éducation et RH (37 Go, INT3X). Exposition totale : plus de 28 millions d'enregistrements.
-- **Autres fuites (5) :** Wuzzuf.net (672K enregistrements, Databasehooligan) ; revendications de cc5ab, DR-X-LOL, CrowStealer, bigF et Keymous.
-- Touchée également par l'incident multi-pays : scans de passeports (raylie).
+L’Égypte est le pays le plus ciblé en mai 2026, représentant 30 % de l’ensemble des incidents. Le secteur de l’éducation a subi une vague coordonnée d’exfiltrations de données.
+
+**Ransomware (7) :** L’acteur malveillant NightSpire a revendiqué trois victimes égyptiennes en l’espace de quelques jours : Papa John’s Egypt (24 mai), Rawaj Consumer Finance (24 mai) et B Investments Holding (26 mai). L’acteur malveillant Lamashtu a ciblé Luna Group (4 mai), un conglomérat industriel egyptien spécialisé dans l’agroalimentaire et les produits ménagers. L’acteur malveillant LockBit 5.0 a revendiqué Rhactus Hotel (7 mai). L’acteur malveillant Qilin a ciblé Imex International, une entreprise égyptienne de logistique internationale (8 mai). L’acteur malveillant TheGentlemen a revendiqué Misr Chemical Industries (9 mai), un acteur industriel majeur dans la chimie.
+
+**Fuites données éducation (4) :** L’acteur malveillant Revesky a revendiqué la compromission du ministère de l’Éducation égyptien le 13 mai, affirmant détenir environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements d’enseignants et d’administrateurs, ainsi qu’un accès administratif complet aux plateformes éducatives. L’acteur malveillant INT3X a ciblé deux organisations : l’université de Mansoura (10 mai, environ 989 000 enregistrements d’étudiants incluant les numéros nationaux d’identité, couvrant 2012-2026) et la Professional Academy for Teachers (16 mai, environ 1,2 million d’enregistrements d’enseignants avec codes de poste, matières enseignées et affectations d’établissements). L’acteur malveillant bigF a revendiqué une base combinée éducation et RH (4 mai), représentant environ 37 Go liés à plusieurs institutions dont les universités de Mansoura et de Galala, avec plus de 1,5 million d’enregistrements d’étudiants.
+
+**Autres fuites (5) :** L’acteur malveillant CrowStealer a revendiqué une fuite depuis le ministère de la Main-d’oeuvre égyptien (2 mai), exposant des données de travailleurs et d’expatriés incluant numéros nationaux d’identité et numéros de passeport. L’acteur malveillant cc5ab a publié une exposition d’API non authentifiée affectant FutureShop, une plateforme de e-commerce égyptienne (12 mai), révélant 3 893 enregistrements clients, 5 181 commandes, 2 438 adresses de livraison avec coordonnées GPS et 60 profils de boutiques avec documents de registre commercial. L’acteur malveillant DR-X-LOL a publié une fuite depuis Baitzakat.org.eg (15 mai), revendiquant plus de 300 000 enregistrements de citoyens égyptiens incluant les numéros nationaux d’identité et des affiliations gouvernementales. L’acteur malveillant Databasehooligan a mis en vente la base de données de Wuzzuf.net (24 mai), la principale plateforme de recrutement égyptienne, revendiquant environ 672 000 enregistrements dont des images de pièces d’identité et des vidéos de vérification biométrique. L’acteur malveillant Keymous a revendiqué un accès à Citex Systems (28 mai), une entreprise égyptienne de télécommunications et d’informatique, exposant des données employés et des informations de gestion de projets internes.
+
+**Multi-pays :** L’Égypte a également été touchée par la fuite de scans de passeports publiée par l’acteur malveillant raylie (18 mai), qui a exposé des images de documents de passeport de plus de 20 pays.
+
+---
 
 ### 🇿🇦 Afrique du Sud (14 incidents : 1 ransomware, 13 fuites de données)
 
-- **Campagne OpSouthAfrica :** La coalition 404Crew Cyber Team (NullSec Nigeria, NullSec Philippines, Infernalis) a revendiqué 8 institutions : Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, Sheriff Randburg West.
-- **Data broker (3) :** Databasehooligan a vendu Telkom SA (742K), Wanderers Club (674K) et MIDAS SA.
-- **Autres fuites (2) :** cc5ab et Kazu ont chacun revendiqué une cible sud-africaine.
-- **Ransomware (1) :** PrinzEugen a revendiqué Standard Bank (non vérifié, aucun échantillon publié).
+L’Afrique du Sud est le deuxième pays le plus ciblé : 13 incidents sur 14 sont des fuites de données, dont 8 s’inscrivent dans la campagne coordonnée "OpSouthAfrica".
+
+**Campagne OpSouthAfrica (8 institutions) :** Une coalition composée des acteurs malveillants 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines et Infernalis a mené une campagne soutenue contre des institutions publiques sud-africaines. Les acteurs malveillants NullSec Nigeria, 404Crew Cyber Team et Infernalis ont revendiqué la municipalité d’Ephraim Mogale (15 mai, province du Limpopo), affirmant détenir environ 111 Go de documents administratifs et de correspondances officielles. La même coalition a revendiqué le Département des Services correctionnels (16 mai), publiant des documents de marchés publics et des communications officielles du Commissaire national. L’acteur malveillant 404Crew Cyber Team a revendiqué Bellavista School (15 mai), exposant des enregistrements d’inscription d’élèves et de parents. Le 23 mai, les acteurs malveillants NullSec Nigeria et NullSec Philippines ont revendiqué la State Information Technology Agency (SITA) et le South African Revenue Service (SARS), publiant des échantillons d’identifiants ; le jeu de données SARS contient principalement des couples email/mot de passe d’organisations tierces, nécessitant une validation complémentaire pour confirmer une compromission directe du SARS. Le 24 mai, l’acteur malveillant 404Crew Cyber Team a revendiqué CERVI My Private Care (plateforme de santé numérique), publiant des coordonnées bancaires et numéros BHF de prestataires de soins ; il a également revendiqué mevent. (plateforme de personnel de santé, avec des données de contact d’infirmières dans plusieurs provinces sud-africaines) et Sheriff Randburg West (office d’exécution judiciaire), exposant des données de contact de citoyens ayant utilisé ses services en ligne.
+
+**Ventes data broker (3 victimes) :** L’acteur malveillant Databasehooligan a vendu trois bases de données commerciales sud-africaines le 27 mai : Telkom (environ 742 000 enregistrements clients incluant numéros nationaux d’identité, données de facturation et historique de tickets d’assistance, à 900 dollars), Wanderers Club (environ 674 000 enregistrements de membres incluant catégories d’adhésion sportive et réservations d’événements, à 1 400 dollars) et MIDAS, distributeur de pièces automobiles (environ 463 000 enregistrements clients et logistiques incluant numéros de TVA, à 1 100 dollars).
+
+**Autres fuites (2) :** L’acteur malveillant Stormous (opérant sous le pseudonyme XOverStm) a publié environ 20 Go de données prétendument issues du Consumer Goods Council of South Africa (CGCSA, 5 mai), incluant une sauvegarde complète de la base Sage 200 Evolution avec registres financiers, comptes clients et inventaires informatiques. L’acteur malveillant Kazu a revendiqué la vente de 154 Go de données et de plus de 453 000 fichiers issus de Statistics South Africa (Stats SA, 17 mai), incluant des documents de recensement, des scans de cartes d’identité nationales et des dossiers d’agents de terrain.
+
+**Ransomware (1) :** L’acteur malveillant PrinzEugen a revendiqué Standard Bank Group (4 mai), le plus grand groupe bancaire africain en termes d’actifs. Aucun échantillon de données n’a été publié au moment de l’observation ; la revendication reste non vérifiée.
+
+---
 
 ### 🇲🇦 Maroc (5 fuites de données)
 
-- Cinq revendications : Sejjil, superstarkmc, JBT2026 (registre civil Watiqa.ma), fexus, DarkMafiaX.
-- Exposition principale : environ 827 000 lignes d'identifiants depuis des plateformes gouvernementales (Massar, Moutamadris, Waliye, Tax.gov.ma, TGR et autres portails administratifs).
+L’acteur malveillant Sejjil a revendiqué la compromission complète de l’infrastructure ERP et financière de SDTM, filiale logistique du Groupe Barid Al-Maghrib (12 mai), affirmant détenir 129 fichiers CSV structurés issus de systèmes SAGE ERP, incluant des comptes utilisateurs ERP, des hachages de mots de passe MD5, des jetons de session actifs, des identifiants bancaires (RIB) et des références d’identité nationale de clients. L’acteur malveillant superstarkmc a revendiqué une fuite massive d’identifiants depuis plusieurs plateformes gouvernementales marocaines (17 mai), affirmant détenir environ 827 000 lignes d’identifiants provenant de services tels que Massar, Moutamadris, Waliye, Tax.gov.ma et la Trésorerie Générale du Royaume (TGR), couvrant l’éducation, la fiscalité et les portails administratifs. L’acteur malveillant JBT2026 a revendiqué une base de données issue de Watiqa.ma (20 mai), la plateforme officielle marocaine de demande de documents d’état civil, avec environ 695 400 enregistrements incluant noms complets, dates de naissance, adresses et données d’état civil. L’acteur malveillant fexus a revendiqué une fuite de données depuis Avito.ma (21 mai), la principale plateforme marocaine d’annonces en ligne, avec des adresses email, numéros de téléphone et mots de passe en clair. L’acteur malveillant DarkMafiaX a divulgué ce qui semble être un identifiant administratif pour Spacex.ma (22 mai), une boutique en ligne marocaine, permettant un accès potentiel au panneau d’administration, aux données clients et à l’infrastructure web.
+
+---
 
 ### 🇹🇳 Tunisie (5 incidents : 2 ransomwares, 3 fuites de données)
 
-- **Ransomware (2) :** TheGentlemen et Titan ont chacun revendiqué une victime tunisienne.
-- **Data broker (3) :** Databasehooligan a vendu trois bases de plateformes d'emploi (MyTelnet, OptionCarriere.tn, Keejob).
+L’acteur malveillant TheGentlemen a revendiqué une attaque par ransomware contre SETCAR, un fabricant tunisien de pièces automobiles et équipements (12 mai). L’acteur malveillant Titan a revendiqué CRIT Tunisie (18 mai), filiale du groupe français CRIT spécialisée dans le placement de personnel et les services RH. Les trois fuites de données ont été menées par l’acteur malveillant Databasehooligan au cours des derniers jours de mai : Keejob (27 mai, environ 137 000 enregistrements incluant candidatures, lettres de motivation et attentes salariales, à 1 400 dollars), MyTelnet (27 mai, profils CRM d’abonnés avec données démographiques, points de fidélité et historiques d’utilisation) et OptionCarriere.tn (31 mai, environ 274 000 enregistrements couvrant candidats, historiques de candidatures et informations d’entreprises recruteuses, à 1 300 dollars).
+
+---
 
 ### 🇳🇬 Nigéria (3 ransomwares)
 
-- Trois groupes distincts ont chacun revendiqué une victime : MedusaLocker, KillSec, 0day Syndicate. Aucune fuite de données directement attribuée à une cible nigériane.
-- Touché par deux incidents multi-pays : Resume docs (attackercompany, base de CV) et DHIS2 (Keymous). L'incident DHIS2 est particulièrement significatif : les artefacts publiés incluent des couples URL/identifiant/mot de passe pour des instances de la plateforme de santé, indiquant une compromission crédible de comptes administratifs ou opérationnels, et non un simple dump de données.
+Trois opérateurs distincts ont chacun ciblé une organisation nigériane. L’acteur malveillant MedusaLocker a revendiqué ActionAid / TACOSA (5 mai), une ONG humanitaire internationale ; la revendication concerne des données de programmes communautaires et des informations sur les bénéficiaires. L’acteur malveillant KillSec a revendiqué MRS Holdings (9 mai), un grand conglomérat énergétique nigérian actif dans le pétrole, le gaz et l’électricité. L’acteur malveillant 0day Syndicate a revendiqué XL Africa Group (28 mai), un groupe de services externalisés B2B avec des opérations au Nigéria, au Ghana, au Liberia et en Sierra Leone. Le Nigéria a également été touché par l’incident multi-pays Resume docs (l’acteur malveillant attackercompany) et la vente d’accès DHIS2 aux ministères de la santé (l’acteur malveillant Keymous). L’incident DHIS2 est particulièrement significatif : les artefacts publiés incluent des couples URL/identifiant/mot de passe ciblant des instances de plateformes gouvernementales de santé, indiquant une compromission crédible de comptes administratifs plutôt qu’un simple dump de données.
+
+---
 
 ### 🇩🇿 Algérie (2 fuites de données)
 
-- Databasehooligan a vendu la base de l'OGEBC (Office de Gestion des Biens Culturels), 425K enregistrements.
-- kamalsheikhxx a revendiqué une fuite algérienne supplémentaire.
+L’acteur malveillant kamalsheikhxx a revendiqué une fuite de 34,3 Go depuis le ministère algérien de l’Industrie pharmaceutique (4 mai), couvrant plus de 52 000 fichiers sur la période 2019-2025 : rapports d’importation de médicaments, registres commerciaux pharmaceutiques, déclarations douanières, listes de substances psychotropes et données personnelles de responsables d’entreprises. L’acteur malveillant Databasehooligan a mis en vente la base de données de l’OGEBC (Office de Gestion des Biens Culturels) pour 900 dollars (19 mai), revendiquant 425 000 enregistrements issus d’un organisme public de gestion du patrimoine culturel national, incluant données de contact clients, historiques de commandes, tickets d’assistance et notes internes.
+
+---
 
 ### 🇹🇿 Tanzanie (2 fuites de données)
 
-- Kampuchean a mis en vente l'accès à la messagerie de la police tanzanienne : 10 000+ comptes officiers avec mots de passe en clair, exposition critique pour les forces de l'ordre.
-- XOverStm a revendiqué une vente de base de données supplémentaire.
+L’acteur malveillant XOverStm a proposé à la vente une base de données de plus de 120 000 enregistrements de citoyens tanzaniens (3 mai) pour 350 dollars, incluant noms complets, adresses physiques, numéros de téléphone et villes de résidence, décrits par le vendeur comme des données actives et validées. Le cybercriminel Kampuchean a ensuite proposé à la vente la base complète de messagerie de la police tanzanienne (domaine tpf.go.tz) pour 550 dollars (22 mai), revendiquant plus de 10 000 comptes email complets d’officiers de police avec mots de passe en clair (déhachés). Cette seconde revendication est particulièrement critique : l’accès à des comptes email officiels de police permet d’usurper l’identité d’officiers, d’accéder à des données d’enquêtes actives et d’obtenir des points d’entrée vers d’autres systèmes administratifs connectés.
+
+---
 
 ### 🇸🇳 Sénégal (1 ransomware)
 
-- AuditTeam a ciblé le Trésor Public du Sénégal. Double extorsion confirmée : environ 1,66 million d'enregistrements exfiltrés dans trois bases Oracle (registre national des contribuables ~960K, registre du personnel ~40K, ordres de paiement publics ~659K incluant les NINEA et coordonnées bancaires des bénéficiaires).
+L’acteur malveillant AuditTeam a revendiqué la compromission du Trésor Public du Sénégal, l’institution chargée de la gestion des finances publiques du pays (17-18 mai). L’analyse technique des échantillons exfiltrés confirme que l’acteur avait un accès covert à deux serveurs internes environ 9 jours avant la revendication publique. Le serveur 10.6.0.61 a livré trois dumps de bases Oracle : un registre du personnel et de la paie de l’État (~40 394 enregistrements incluant coordonnées bancaires et montants de salaires), un registre national des contribuables et débiteurs (~960 146 enregistrements avec identifiants fiscaux, adresses et numéros d’immatriculation) et une base complète d’ordres de paiement publics (~659 195 enregistrements incluant les NINEA et coordonnées bancaires complètes des bénéficiaires). Le serveur 10.6.0.26 (système SICA de gestion des salaires) contenait 18 mois de fichiers de virements et d’opérations salariales jusqu’au 8 mai 2026. Exposition totale estimée : environ 1 659 735 entrées de bases de données. Il s’agit de l’incident ransomware le plus grave du dataset AFRINTEL de mai 2026, représentant un impact de niveau 4 sur l’infrastructure financière critique du Sénégal.
+
+---
 
 ### 🇬🇭 Ghana (1 ransomware)
 
-- TheGentlemen a revendiqué une victime ghanéenne.
+L’acteur malveillant TheGentlemen a revendiqué une attaque par ransomware contre Kasapreko (6 mai), l’un des plus grands fabricants et distributeurs de boissons du Ghana, dont les produits sont distribués sur plusieurs marchés africains.
 
-### 🇨🇮 Côte d'Ivoire (1 ransomware)
+---
 
-- TheGentlemen a revendiqué une victime en Côte d'Ivoire.
+### 🇨🇮 Côte d’Ivoire (1 ransomware)
+
+L’acteur malveillant TheGentlemen a revendiqué une attaque par ransomware contre Mayelia Automotive (28 mai), une entreprise ivoirienne spécialisée dans le contrôle technique et les services automobiles.
+
+---
 
 ### 🇰🇪 Kenya (1 fuite de données)
 
-- cc5ab a revendiqué une fuite depuis une cible kenyane. Touché également par l'incident multi-pays Resume docs (attackercompany).
+L’acteur malveillant cc5ab a revendiqué la compromission du Land Surveyors Board of Kenya (LSB, 16 mai), l’organe gouvernemental chargé de l’agrément des géomètres. La revendication inclut 175 enregistrements de géomètres agréés, 730 enregistrements d’assistants géomètres avec numéros nationaux d’identité, la documentation complète de l’API avec paramètres de requêtes, un accès au panneau d’administration Django et des données de configuration PostgreSQL incluant des paramètres JWT. La combinaison de données personnelles et d’informations techniques sur l’infrastructure pourrait faciliter à la fois des fraudes à l’identité et de futures attaques contre l’organisation. Le Kenya a également été inclus dans l’incident multi-pays Resume docs (l’acteur malveillant attackercompany).
+
+---
 
 ### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposition via DHIS2)
 
-Ces quatre pays sont touchés exclusivement par la vente d'accès DHIS2 / Ministères de la santé (Keymous, 13 mai 2026).
+Ces quatre pays ont été touchés exclusivement par la vente d’accès DHIS2 revendiquée par l’acteur malveillant Keymous (13 mai). Les artefacts publiés incluent plusieurs couples URL/identifiant/mot de passe ciblant des instances DHIS2 exploitées par des institutions sanitaires gouvernementales dans chacun de ces pays. Ce schéma est cohérent avec une compromission crédible de comptes administratifs ou opérationnels plutôt qu’un dump de données conventionnel. Un accès actif exposerait les données de surveillance sanitaire nationale, les registres épidémiologiques et les systèmes de suivi vaccinal. AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
 
-- Les artefacts publiés incluent plusieurs couples URL / identifiant / mot de passe ciblant des instances DHIS2 opérées par des institutions sanitaires gouvernementales dans chacun de ces pays.
-- Cela suggère une compromission crédible de comptes administratifs ou opérationnels, et non un dump de données conventionnel. Un accès actif exposerait les données de surveillance sanitaire nationale, les registres épidémiologiques et les systèmes de suivi vaccinal.
-- AFRINTEL n'a effectué aucune tentative d'authentification afin d'éviter toute interaction non autorisée avec les systèmes concernés.
+---
 
 ### Incidents multi-pays (3 fuites de données, 11 pays)
 
 Trois incidents ont touché plusieurs pays africains simultanément. Chacun est comptabilisé une seule fois dans le total global de 54.
 
-| Incident | Acteur | Type d'artefact | Pays concernés |
+| Incident | Acteur | Type d’artefact | Pays concernés |
 |---|---|---|---|
 | Fuite de CV (Resume docs) | attackercompany | Base de données publiée | 🇰🇪 Kenya, 🇪🇹 Éthiopie, 🇳🇬 Nigéria, 🇿🇼 Zimbabwe |
 | DHIS2 / Ministères de la santé | Keymous | Couples URL/identifiant/mot de passe (accès admin) | 🇲🇿 Mozambique, 🇱🇷 Liberia, 🇳🇬 Nigéria, 🇹🇬 Togo, 🇸🇱 Sierra Leone |

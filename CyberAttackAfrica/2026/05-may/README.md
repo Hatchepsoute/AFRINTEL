@@ -229,66 +229,91 @@ pie showData
 
 ### 🇪🇬 Egypt (16 incidents: 7 ransomware, 9 data leaks)
 
-- **Ransomware (7):** NightSpire claimed three targets (Papa John's, Rawaj Consumer Finance, B Investments); TheGentlemen, Qilin, LockBit 5.0, and Lamashtu (Luna Group) each claimed one additional Egyptian victim.
-- **Education data leaks (4):** Ministry of Education (26.8M student records, Revesky), Professional Academy for Teachers (1.2M, INT3X), Mansoura University (989K), combined Educational & HR database (37 GB, INT3X). Total exposure exceeds 28M records.
-- **Other data leaks (5):** Wuzzuf.net recruitment platform (672K records, Databasehooligan); additional claims by cc5ab, DR-X-LOL, CrowStealer, bigF, and Keymous.
-- Also affected by multi-country incident: passport scans (raylie).
+Egypt was the most targeted country in May 2026, accounting for 30% of all incidents. The education sector bore the brunt of the month's data exfiltration wave.
+
+**Ransomware (7):** The threat actor NightSpire claimed three Egyptian victims in quick succession: Papa John's Egypt (May 24), Rawaj Consumer Finance (May 24), and B Investments Holding (May 26). The threat actor Lamashtu claimed Luna Group (May 4), a major Egyptian food processing and household care conglomerate. The threat actor LockBit 5.0 targeted Rhactus Hotel (May 7). The threat actor Qilin claimed Imex International, a logistics and freight forwarding firm (May 8). The threat actor TheGentlemen claimed Misr Chemical Industries (May 9), a major industrial manufacturer.
+
+**Education data leaks (4):** The threat actor Revesky claimed the compromise of Egypt's Ministry of Education on May 13, asserting possession of approximately 26.8 million student records and 3.8 million teacher and administrator records, along with full administrative access to educational platform functions. The threat actor INT3X claimed two targets: Mansoura University (May 10, approximately 989,000 student records including national ID numbers spanning 2012-2026) and the Professional Academy for Teachers (May 16, approximately 1.2 million teacher records with teacher codes, job positions, and school affiliations). The threat actor bigF claimed a combined Educational and HR database (May 4), approximately 37 GB across institutions including Mansoura and Galala universities, with over 1.5 million student records and close to 60 million combined entries.
+
+**Other data leaks (5):** The threat actor CrowStealer claimed a data leak from Egypt's Ministry of Manpower (May 2), exposing worker and expatriate records including national ID numbers and passport data. The threat actor cc5ab published an unauthenticated API exposure affecting FutureShop, an Egyptian e-commerce platform (May 12), disclosing 3,893 customer records, 5,181 orders, 2,438 delivery addresses with GPS coordinates, and 60 store profiles with commercial registration documents. The threat actor DR-X-LOL published a leak from Baitzakat.org.eg (May 15), claiming over 300,000 Egyptian citizen records including national ID numbers and government affiliation. The threat actor Databasehooligan offered the Wuzzuf.net recruitment database for sale (May 24), claiming approximately 672,000 records including identity document images and biometric verification videos. The threat actor Keymous claimed access to Citex Systems (May 28), an Egyptian telecommunications and ICT company, exposing employee records and internal project data.
+
+**Multi-country:** Egypt was also among the countries affected by the passport scan leak published by the threat actor raylie (May 18), which exposed full passport document images across more than 20 countries.
+
+---
 
 ### 🇿🇦 South Africa (14 incidents: 1 ransomware, 13 data leaks)
 
-- **OpSouthAfrica campaign:** The 404Crew Cyber Team coalition (NullSec Nigeria, NullSec Philippines, Infernalis) claimed 8 institutions: Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, Sheriff Randburg West.
-- **Data broker (3):** Databasehooligan sold Telkom SA (742K records), Wanderers Club (674K), and MIDAS SA databases.
-- **Other data leaks (2):** cc5ab and Kazu each claimed one South African target.
-- **Ransomware (1):** PrinzEugen claimed Standard Bank (unverified, no sample published).
+South Africa was the second most targeted country, with 13 out of 14 incidents being data leaks. Eight of those were part of the coordinated "OpSouthAfrica" campaign.
+
+**OpSouthAfrica campaign (8 institutions):** A coalition comprising the threat actors 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines, and Infernalis ran a sustained campaign targeting South African public institutions. The threat actors NullSec Nigeria, 404Crew Cyber Team, and Infernalis claimed Ephraim Mogale Local Municipality (May 15, Limpopo Province), asserting possession of approximately 111 GB of administrative documents and official correspondence. The same coalition claimed the Department of Correctional Services (May 16), publishing internal procurement documents and official communications from the National Commissioner. The threat actor 404Crew Cyber Team claimed Bellavista School (May 15), exposing student and parent registration records. On May 23, the threat actors NullSec Nigeria and NullSec Philippines claimed the State Information Technology Agency (SITA) and the South African Revenue Service (SARS), publishing credential samples; the SARS dataset primarily contained third-party email-password combinations, requiring additional validation to confirm a direct SARS compromise. On May 24, the threat actor 404Crew Cyber Team claimed CERVI My Private Care (a digital healthcare platform), publishing banking details and BHF practice numbers of healthcare providers; it also claimed mevent. (a healthcare staffing platform, with nurse contact records across multiple South African provinces) and Sheriff Randburg West (a judicial enforcement office), exposing citizen contact data from online submissions.
+
+**Data broker sales (3 victims):** The threat actor Databasehooligan sold three South African commercial databases on May 27: Telkom (approximately 742,000 customer records including national ID numbers, billing data, and support ticket history for $900), Wanderers Club (approximately 674,000 member records including sports membership categories and event bookings for $1,400), and MIDAS automotive parts distributor (approximately 463,000 customer and logistics records including VAT numbers for $1,100).
+
+**Other data leaks (2):** The threat actor Stormous (operating as XOverStm) published approximately 20 GB of data allegedly from the Consumer Goods Council of South Africa (CGCSA, May 5), including a complete Sage 200 Evolution database backup with financial records, customer accounts, and IT asset inventories. The threat actor Kazu claimed sale of 154 GB of data containing over 453,000 files from Statistics South Africa (Stats SA, May 17), including census documents, national ID card scans, and fieldworker records.
+
+**Ransomware (1):** The threat actor PrinzEugen claimed Standard Bank Group (May 4), Africa's largest bank by assets. No data sample was published at the time of observation; the claim is unverified.
+
+---
 
 ### 🇲🇦 Morocco (5 data leaks)
 
-- Five data leak claims: Sejjil, superstarkmc, JBT2026 (Watiqa.ma civil registry), fexus, DarkMafiaX.
-- Largest exposure: approximately 827K credential lines from government platforms (Massar, Moutamadris, Waliye, Tax.gov.ma, TGR, and other administrative portals).
+The threat actor Sejjil claimed the complete ERP and financial infrastructure of SDTM, a logistics subsidiary of Groupe Barid Al-Maghrib (May 12), alleging 129 structured CSV files from SAGE ERP systems including ERP user accounts, MD5 password hashes, active session tokens, bank account identifiers (RIB), and customer national ID references. The threat actor superstarkmc claimed a large-scale credential leak from multiple Moroccan government platforms (May 17), asserting approximately 827,000 credential lines from services including Massar, Moutamadris, Waliye, Tax.gov.ma, and the Treasury General (TGR), covering education, taxation, and administrative portals. The threat actor JBT2026 claimed a database from Watiqa.ma (May 20), the official Moroccan civil registry online platform, with approximately 695,400 records including full names, birth dates, addresses, and civil registry details. The threat actor fexus claimed a data leak from Avito.ma (May 21), Morocco's leading classified ad marketplace, with email addresses, phone numbers, and plaintext passwords. The threat actor DarkMafiaX disclosed what appears to be an administrative credential for Spacex.ma (May 22), a Moroccan online store, providing potential access to the admin panel, customer data, and web infrastructure.
+
+---
 
 ### 🇹🇳 Tunisia (5 incidents: 2 ransomware, 3 data leaks)
 
-- **Ransomware (2):** TheGentlemen and Titan each claimed one Tunisian victim.
-- **Data broker (3):** Databasehooligan sold three Tunisian job platform databases (MyTelnet, OptionCarriere.tn, Keejob).
+The threat actor TheGentlemen claimed a ransomware attack against SETCAR, a Tunisian automotive manufacturer and equipment company (May 12). The threat actor Titan claimed CRIT Tunisie (May 18), a subsidiary of the French CRIT Group specializing in workforce staffing and HR services. The three data leaks were all carried out by the threat actor Databasehooligan across the final days of May: Keejob (May 27, approximately 137,000 records including job applications, cover letters, and salary expectations for $1,400), MyTelnet (May 27, subscriber CRM profiles with demographic data, loyalty points, and usage history), and OptionCarriere.tn (May 31, approximately 274,000 records covering job seekers, application history, and recruiting company data for $1,300).
+
+---
 
 ### 🇳🇬 Nigeria (3 ransomware)
 
-- Three distinct ransomware groups each claimed one Nigerian victim: MedusaLocker, KillSec, 0day Syndicate. No data leaks recorded for direct Nigerian targets.
-- Also affected by two multi-country incidents: Resume docs (attackercompany, CV/resume database) and DHIS2 (Keymous). The DHIS2 incident is particularly significant: the published artifacts include URL/username/password pairs for health platform instances, indicating a credible compromise of administrative or operational accounts, not a simple data dump.
+Three distinct ransomware operators each targeted one Nigerian organization. The threat actor MedusaLocker claimed ActionAid / TACOSA (May 5), an international humanitarian NGO; the claim involved community program data and beneficiary information. The threat actor KillSec claimed MRS Holdings (May 9), a major Nigerian energy conglomerate active in oil, gas, and power. The threat actor 0day Syndicate claimed XL Africa Group (May 28), a diversified B2B outsourcing group with operations in Nigeria, Ghana, Liberia, and Sierra Leone. Nigeria was also among the countries affected by the Resume docs multi-country incident (the threat actor attackercompany) and the DHIS2 Ministries of Health access sale (the threat actor Keymous). The DHIS2 incident is particularly significant: the published artifacts include URL/username/password pairs for government health platform instances, indicating a credible compromise of administrative accounts rather than a conventional data dump.
+
+---
 
 ### 🇩🇿 Algeria (2 data leaks)
 
-- Databasehooligan sold the OGEBC (Office de Gestion des Biens Culturels) database (425K records).
-- kamalsheikhxx claimed one additional Algerian data leak.
+The threat actor kamalsheikhxx claimed a 34.3 GB leak from Algeria's Ministry of Pharmaceutical Industry (May 4), involving over 52,000 files covering the 2019-2025 period: drug import reports, pharmaceutical commercial registers, customs declarations, psychotropic substance lists, and personal data of company officials. The threat actor Databasehooligan offered the database of Algeria's OGEBC (Office de Gestion des Biens Culturels) for sale at $900 (May 19), claiming 425,000 records from a national cultural heritage management institution, including customer contact data, order histories, support tickets, and internal notes.
+
+---
 
 ### 🇹🇿 Tanzania (2 data leaks)
 
-- Kampuchean offered Tanzania Police webmail access for sale: 10,000+ officer accounts with plaintext passwords, posing immediate law enforcement exposure.
-- XOverStm claimed one additional Tanzanian database sale.
+The threat actor XOverStm offered a database of 120,000+ Tanzanian citizen records for sale (May 3) at $350, including full names, physical addresses, mobile numbers, and cities, described by the seller as active and validated data. The cybercriminal Kampuchean then offered the complete webmail database of the Tanzanian police (tpf.go.tz) for $550 (May 22), claiming over 10,000 full police officer email accounts with plaintext (dehashed) passwords. This second claim is particularly critical: access to official police email accounts enables impersonation of officers, exposure of active investigation data, and leverage to reset connected administrative systems.
+
+---
 
 ### 🇸🇳 Senegal (1 ransomware)
 
-- AuditTeam hit the Trésor Public du Sénégal (national treasury). Confirmed double extortion: approximately 1.66M records exfiltrated across three Oracle databases (national taxpayer registry ~960K, payroll register ~40K, public payment orders ~659K including NINEA identifiers and beneficiary banking coordinates).
+The threat actor AuditTeam claimed the compromise of the Trésor Public du Sénégal, the institution responsible for managing Senegal's public finances (May 17-18). Technical analysis of the exfiltrated samples confirms the actor had covert access to two internal servers approximately 9 days before the public claim. Server 10.6.0.61 yielded three Oracle database dumps: a government personnel and payroll registry (~40,394 records including employee bank details and salary amounts), a national taxpayer and debtor registry (~960,146 records with taxpayer IDs, addresses, and business registration numbers), and a complete public payment order database (~659,195 records with NINEA identifiers and full beneficiary banking coordinates). Server 10.6.0.26 (SICA payroll system) contained 18 months of wire transfer and salary operation files through May 8, 2026. Total estimated exposure: approximately 1,659,735 database entries. This is the most severe ransomware incident in the AFRINTEL May 2026 dataset, representing a Level 4 impact on Senegal's critical financial infrastructure.
+
+---
 
 ### 🇬🇭 Ghana (1 ransomware)
 
-- TheGentlemen claimed one Ghanaian victim.
+The threat actor TheGentlemen claimed a ransomware attack against Kasapreko (May 6), one of Ghana's largest beverage manufacturers and distributors, with products distributed across multiple African markets.
+
+---
 
 ### 🇨🇮 Ivory Coast (1 ransomware)
 
-- TheGentlemen claimed one victim in Ivory Coast.
+The threat actor TheGentlemen claimed a ransomware attack against Mayelia Automotive (May 28), an Ivorian company specializing in vehicle inspection and automotive services.
+
+---
 
 ### 🇰🇪 Kenya (1 data leak)
 
-- cc5ab claimed one data leak from a Kenyan target. Also affected by the Resume docs multi-country incident (attackercompany).
+The threat actor cc5ab claimed the compromise of the Land Surveyors Board of Kenya (LSB, May 16), a government body responsible for licensing land surveyors. The claimed exposure included 175 licensed surveyor records, 730 survey assistant records with national ID numbers, full API documentation with endpoint parameters, Django admin panel access, and PostgreSQL configuration data including JWT-related settings. This combination of personal data and technical infrastructure details could facilitate both identity fraud and future attacks against the organization. Kenya was also among the countries included in the Resume docs multi-country incident (the threat actor attackercompany).
+
+---
 
 ### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇹🇬 Togo / 🇸🇱 Sierra Leone (exposure via DHIS2)
 
-These four countries are affected exclusively through the DHIS2 / Ministries of health access sale (Keymous, May 13, 2026).
+These four countries were affected exclusively through the DHIS2 Ministries of Health access sale claimed by the threat actor Keymous (May 13). The published artifacts include multiple URL/username/password pairs targeting DHIS2 health platform instances operated by government health institutions in each of these countries. This pattern is consistent with a credible compromise of administrative or operational accounts rather than a conventional data dump. Unauthorized access, if active, would expose national health surveillance data, epidemiological records, and vaccination tracking systems. AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
 
-- The published artifacts include multiple URL / username / password combinations targeting DHIS2 instances operated by government health institutions in each of these countries.
-- This suggests a credible compromise of administrative or operational accounts, not a conventional data dump. Unauthorized access, if active, would expose national health surveillance data, epidemiological records, and vaccination tracking systems.
-- AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
+---
 
 ### Multi-country incidents (3 data leaks, 11 countries)
 
