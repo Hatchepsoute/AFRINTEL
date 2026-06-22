@@ -97,7 +97,7 @@ pie
 
 ```mermaid
 pie
- title Ransomware par pays
+ title Attaques ransomware par pays
  "Afrique du Sud (7)" : 7
  "Maroc (5)" : 5
  "Égypte (3)" : 3
@@ -167,7 +167,7 @@ pie
 
 ## 4. Vue d’ensemble pays par pays
 
-> Tous les éléments présentés proviennent d’incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
+> Tous les éléments présentés proviennent d’incidents revendiqués sur le dark web, sur les sites web des groupes de ransomware et les forums underground.
 
 ### 🇿🇦 Afrique du Sud (13 incidents : 7 ransomwares, 6 fuites de données)
 

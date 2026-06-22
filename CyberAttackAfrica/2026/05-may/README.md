@@ -225,7 +225,7 @@ pie showData
 
 ## 4. Country-by-country overview
 
-> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
+> All items presented originate from incidents claimed on the dark web, on ransomware group websites, and underground forums.
 
 ### 🇪🇬 Egypt (16 incidents: 7 ransomware, 9 data leaks)
 

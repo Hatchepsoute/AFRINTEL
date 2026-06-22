@@ -225,7 +225,7 @@ pie showData
 
 ## 4. Bilan par pays
 
-> Toutes les entrées couvrent uniquement les incidents publiquement revendiqués. Les revendications restent non confirmées sauf corroboration indépendante.
+> Tous les éléments présentés proviennent d’incidents revendiqués sur le dark web, sur les sites web des groupes de ransomware et les forums underground.
 
 ### 🇪🇬 Égypte (16 incidents : 7 ransomwares, 9 fuites de données)
 

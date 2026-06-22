@@ -282,7 +282,7 @@ pie showData
 
 ## 4. Vue d’ensemble pays par pays
 
-> Tous les éléments présentés proviennent d’incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
+> Tous les éléments présentés proviennent d’incidents revendiqués sur le dark web, sur les sites web des groupes de ransomware et les forums underground.
 
 ### 🇲🇦 Maroc (17 incidents : 2 ransomwares, 15 fuites de données)
 

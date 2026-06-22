@@ -162,7 +162,7 @@ pie
 
 ## 4. Country-by-country overview
 
-> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
+> All items presented originate from incidents claimed on the dark web, on ransomware group websites, and underground forums.
 
 ### 🇿🇦 South Africa (13 incidents: 7 ransomware, 6 data breaches)
 

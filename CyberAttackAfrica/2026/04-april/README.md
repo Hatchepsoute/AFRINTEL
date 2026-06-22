@@ -288,7 +288,7 @@ pie showData
 
 ## 4. Country-by-country overview
 
-> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
+> All data presented originates from incidents claimed on dark web platforms, ransomware leak sites, and underground forums.
 
 ### 🇲🇦 Morocco (17 incidents: 2 ransomware, 15 data leaks)
 
