@@ -292,65 +292,139 @@ pie showData
 
 ### 🇲🇦 Morocco (17 incidents: 2 ransomware, 15 data leaks)
 
-Morocco is the most affected country in April with 17 incidents, driven by a surge of data broker activity. The most critical breach involves the **LNM6 National Laboratory Mohammed VI** (anisanas2): 100 GB of medical PDF reports exposing HIV, HPV, STI, tuberculosis, hormonal, and genetic results, including paediatric and neonatal data. The **Royal Palace Staff database** (Rihana, 3,300 records with CNIE national ID numbers and physical addresses) raises spear-phishing and espionage risks for sensitive state personnel. **CNOPS** (>3 million records) exposes national health insurance members with full identity and CIN data. The **OFPPT** vocational training institution (anisanas2, >400,000 profiles) and **Al Akhawayn University** were also compromised. The **Royal Moroccan Football Federation** breach (MDGhost, 1.2 TB) includes data on minors. A dataset of 4 million Moroccan email addresses was also published for spam/phishing use. Ransomware activity includes Equatorial Coca-Cola Bottling (worldleaks) and planetsport.ma (LockBit 5.0).
+Morocco was the most affected country in April 2026 with 17 incidents, driven by a concentrated wave of data broker activity across health, education, sport, and government sectors.
+
+The most sensitive incident is the claim by the threat actor anisanas2 against the Laboratoire National Mohammed VI (LNM6, April 21): approximately 100 GB of medical PDF reports were allegedly exfiltrated, exposing full patient identities alongside biological test results including HIV, HPV, STIs, tuberculosis, hormonal and genetic data, as well as paediatric and neonatal records. This is one of the most critical medical data exposures in the AFRINTEL dataset.
+
+The threat actor Rihana claimed what it presented as a staff database of the Royal Palace (Dar El Makhzen, April 14), offering approximately 3,300 records including full names, Moroccan CNIE national identity numbers, physical addresses, birth dates, and recruitment dates. Such data significantly raises the risk of targeted social engineering and spear-phishing against sensitive institutional personnel.
+
+The threat actor JBT2026, relayed by Jabaroot, claimed a leak from CNOPS (April 8), Morocco's public health insurance institution, alleging exposure of over 3 million records including full names, membership numbers, national identity numbers (CIN), and complete physical addresses of insured individuals.
+
+The threat actor anisanas2 claimed two further education breaches: OFPPT (April 12), Morocco's main public vocational training institution, with over 400,000 profiles including national identity numbers (CNI), Massar codes, and activity logs; and Al Akhawayn University (April 21), a leading Moroccan university, with a dataset the actor described as verified and authentic.
+
+The threat actor MDGhost claimed Royal Moroccan Football Federation (FRMF) data (April 21), offering 1.2 TB for $10,000 and alleging exposure of player licensing records, full identities, phone numbers, sports IDs, and data on minors.
+
+The threat actor Sejjil claimed internal financial logs from Al Barid Bank (April 19), including instant transfer records, direct debit operations, branch data, and transaction amounts. The threat actor xNov claimed over 231 student dossiers from SUPTECH SANTÉ (April 20), a Moroccan biomedical engineering school, including national ID card scans, diploma scans, Massar codes, and registration details. The threat actor Keymous claimed approximately 20,000 player and club member records from the Royal Moroccan Tennis Federation (FRMT, April 29), including names, club affiliations, gender, and sports IDs. The threat actor Rihana also published a dataset of 4 million Moroccan email addresses (April 29), explicitly offered for mass spam and phishing operations. The threat actor bxxxx1 published a SQL dump from GET / General Electric Trading (gemaroc.com, April 13), including Dolibarr ERP/CRM content, WordPress databases, HR records, and financial data. The threat actor Richard2002 claimed approximately 400,000 customer records from Chezpara.ma (April 19), a Moroccan online pharmacy. The threat actor Tanaka, attributed to Karuhunters, claimed 41,772 user records from Pharmacie.ma (April 21). The threat actor kutam_dz published a SQL dump from the Regional Investment Center Rabat-Salé-Kénitra (CRI, April 26), exposing professional records primarily of notaries.
+
+On the ransomware side, the threat actor worldleaks claimed Equatorial Coca-Cola Bottling (April 22), a Coca-Cola bottling partner operating in North and West Africa. The threat actor LockBit 5.0 claimed planetsport.ma (April 29), Morocco's leading sports goods retailer.
+
+---
 
 ### 🇪🇬 Egypt (11 incidents: 9 ransomware, 2 data leaks)
 
-Egypt records the highest ransomware concentration in April with 9 attacks. The **payload** group led with 4 victims: United Finance Egypt (NBFI leasing/factoring), El Wastani Petroleum (oil/gas), Better House (real estate), and Oriental Weavers (world's largest carpet manufacturer). **APT73/BASHE** claimed Alexandria Petroleum (state oil refiner). **The Gentlemen** hit ACE Consulting Engineers (project management, 35+ countries). **LockBit 5.0** targeted a Mercedes-Benz authorized dealer. **DragonForce** struck AUG Pharma. Data leak activity remains lower but includes two large university breaches by Grubder: Cairo University (284,000 records with national IDs) and Ain Shams University (563,000 records with enrollment and authentication data).
+Egypt recorded the highest ransomware concentration in April with 9 attacks, targeting finance, energy, industry, construction, and engineering.
+
+The threat actor payload led with four victims: United Finance Egypt (April 3, a non-bank financial institution specializing in leasing, factoring, and mortgages), El Wastani Petroleum Company (April 8, an oil and gas company operating in the Nile Delta and North Sinai), Better House (April 20, an Egyptian real estate developer with over 150 projects), and Oriental Weavers (April 16, one of the world's largest carpet manufacturers, headquartered in Cairo).
+
+The threat actor TheGentlemen claimed two Egyptian targets: ACE Consulting Engineers (April 8, an international engineering consultancy operating in over 35 countries) and EEC Group (April 26, an Egyptian engineering, construction, and steel structure manufacturing conglomerate). The threat actor APT73/BASHE claimed Alexandria Petroleum Company (alx-pc.com, April 27), a state-owned oil refining company. The threat actor LockBit 5.0 targeted German Auto Service (gas.mercedes-benz.com.eg, April 6), an authorized Mercedes-Benz dealer in Giza. The threat actor DragonForce claimed AUG Pharma (April 4), an Egyptian pharmaceutical company.
+
+On the data leak side, the threat actor Grubder claimed two major university databases: Cairo University (April 1, approximately 284,000 records including national identification numbers, enrollment details, and academic information) and Ain Shams University (April 2, approximately 563,000 records including authentication data and financial status records).
+
+---
 
 ### 🇿🇦 South Africa (8 incidents: 3 ransomware, 5 data leaks)
 
-South Africa records a significant mix of ransomware and data broker activity. The most critical data breach is **Pick n Pay ASAP / Bottles.com** (p4pr1k4): payment card data including VISA, Mastercard, 3DS data, GPS delivery coordinates, and passwords. **Buffalo City Metropolitan Municipality** and the **Northern Cape Department of Roads & Public Works** (both by wh6ami) exposed administrative logs, tender data, and municipal employee records. Grubder sold two additional databases: Takealot.com (delivery addresses with home access instructions) and MySchool SA (437,000 student records). Ransomware groups DragonForce (Singita luxury lodges), Krybit (MegaSurf ISP), and The Gentlemen (Sunspray Food) all struck in April.
+South Africa recorded a significant mix of ransomware activity and sensitive data broker sales, with three government and municipal datasets among the most critical incidents.
+
+The threat actor p4pr1k4 claimed Pick n Pay ASAP / Bottles.com (April 30, discovered), the most severe South African data leak of the month: the exposed data reportedly includes full names, email addresses, phone numbers, passwords, VISA and Mastercard banking card details, 3DS-related authentication data, delivery addresses with GPS coordinates, and customer service notes. This is one of the most dangerous e-commerce data exposures in the AFRINTEL 2026 dataset.
+
+The threat actor wh6ami claimed two government databases: Buffalo City Metropolitan Municipality (April 30, discovered), exposing government email addresses, user roles, administrator action logs, tender-related information, and municipal employee records; and the Northern Cape Department of Roads and Public Works (April 30, discovered), exposing contact form exchanges, tender requests, internship applications, supplier inquiries, and road project information.
+
+The threat actor Grubder claimed two South African databases: Takealot.com (April 2, a leaked CSV file with detailed delivery addresses, GPS coordinates, phone numbers, and private home access instructions from South Africa's largest online retailer) and MySchool South Africa (April 2, approximately 437,000 student records including names, emails, phone numbers, birth dates, enrollment details, and payment statuses).
+
+On the ransomware side, the threat actor DragonForce claimed Singita (April 2), a luxury ecotourism brand operating high-end lodges and game reserves across Africa. The threat actor Krybit claimed MegaSurf (megasurf.co.za, April 9), a South African ISP and data centre operator. The threat actor TheGentlemen claimed Sunspray Food (April 19), South Africa's largest independent manufacturer of spray-dried food ingredients.
+
+---
 
 ### 🇳🇬 Nigeria (4 incidents: 0 ransomware, 4 data leaks)
 
-Nigeria records four data leak incidents with high sensitivity. **Oyo State Ministry of Trade** (AckLine): 275,000 commercial ID cards (21.5 GB) including facial photos, creating significant identity theft and KYC fraud risks. The **EFCC** (Nigeria's anti-corruption agency, ki4t/Nullsec Nigeria) had a partial SQL dump published exposing agent data, internal IPs, and bcrypt-hashed passwords. The **Federal Housing Authority** (0xLei/Nullsec) had source code and configuration files leaked. Welfare.org.ng (NormalLeVrai) had source code, backups, and 12,000+ records compromised.
+Nigeria recorded four data leak incidents with high sensitivity across law enforcement, public administration, housing, and civil society.
+
+The threat actor AckLine claimed Oyo State Ministry of Trade, Industry, Investment and Cooperatives (April 27), alleging a scraping of approximately 275,000 commercial ID cards (21.5 GB compressed) including full names, birth dates, addresses, professional details, and facial photographs. The biometric nature of this data significantly amplifies identity theft and KYC fraud risks.
+
+The threat actors ki4t and Nullsec Nigeria claimed a partial SQL dump from the EFCC (April 21), Nigeria's Economic and Financial Crimes Commission, exposing user accounts, agent data, internal IP addresses, email addresses, phone numbers, and bcrypt-hashed passwords. The threat actors 0xLei and Nullsec claimed the Federal Housing Authority (FHA, April 21), a Nigerian public housing agency, exposing approximately 170 MB of source code, backend files, and configuration data. The threat actor NormalLeVrai claimed Welfare.org.ng (April 6), a Nigerian community services platform, with alleged access to emails, source code, backups, and a database of over 12,000 records.
+
+---
 
 ### 🇩🇿 Algeria (4 incidents: 0 ransomware, 4 data leaks)
 
-Algeria was exclusively targeted by data brokers in April. **Algeria Post** (BlueEx, 500,000+ records) is particularly critical: the leak includes photographs of Algerian national identity cards, enabling document fraud, SIM swapping, and identity impersonation at scale. **Inter Partner Assistance Algeria** (dark07x) exposed automobile accident reports, national ID cards, and insurance documents. The **Algiers Regional Football League** (dark07x) had player and coach data including identity documents exposed via the Foot'Up management platform. The **Ministry of Culture** (Grubder, 247,000 records) was also compromised.
+Algeria was exclusively targeted by data brokers in April, with four incidents exposing national identity documents, insurance records, sports federation data, and cultural administration information.
+
+The most critical incident involves the threat actor BlueEx, who claimed a database of more than 500,000 records from Algeria Post (April 30, discovered), including photographs of Algerian national identity cards alongside full names, email addresses, and phone numbers. The presence of official document images enables document fraud, SIM swapping, and large-scale identity impersonation.
+
+The threat actor dark07x claimed two incidents: Inter Partner Assistance Algeria (April 30, discovered), an automotive and insurance assistance company, with exposure of automobile accident reports, national identity cards, vehicle insurance documents, CRMA service orders, official signatures and stamps, and internal administrative records; and the Algiers Regional Football League (LRFA) via the Foot'Up management platform (April 30, discovered), with exposure of national identity cards, sports licenses, player data, coach information, match sheets, and scanned documents from multiple Algerian football clubs.
+
+The threat actor Grubder claimed the Ministry of Culture (April 1), alleging approximately 247,000 records including administrative contacts, cultural event registrations, grant applications, names, emails, phone numbers, and funding details.
+
+---
 
 ### 🇹🇳 Tunisia (4 incidents: 0 ransomware, 4 data leaks)
 
-Tunisia saw four data broker incidents. Grubder sold two large CRM databases: **Fatales.tn** (431,000 customers with booking history, VIP loyalty data, and payment info) and **NSSTunis** (312,000 records with demographic and marketing data). **Tawjih.tn**, a student guidance platform, was compromised by mecrobyte. **Exscape App** (forrest) exposed 5,000 profiles including GPS coordinates and potential minor user accounts.
+Tunisia saw four data broker incidents in April, targeting e-commerce CRM platforms, a student guidance service, and a mobile social application.
+
+The threat actor Grubder claimed two large CRM databases: Fatales.tn (April 2, approximately 431,000 customer records including full names, booking history, VIP loyalty levels, loyalty points, birth dates, and payment methods) and NSSTunis (April 2, approximately 312,000 records with demographic data, product interests, and marketing segmentation). The threat actor mecrobyte claimed Tawjih.tn (April 26), a Tunisian academic guidance platform for baccalaureate graduates, with potential exposure of personal and academic data. The threat actor forrest claimed Exscape App (April 30, discovered), a Tunisian social mobile application, with approximately 5,000 user profiles including GPS coordinates, birth dates, and age categories indicating potential minor user accounts.
+
+---
 
 ### 🇰🇪 Kenya (2 incidents: 1 ransomware, 1 data leak)
 
-Kenya faced high-impact targeting of critical public infrastructure. **IFMIS** (Kenya's national financial management system for all government levels) was claimed by APT73/BASHE, representing a direct threat to government financial operations. **Kenya Airports Authority** (KAA, RubiconH4ck) claims 2 TB of data including aviation information systems, posing risks to critical transport infrastructure confidentiality and operational security.
+Kenya faced high-impact targeting of critical public infrastructure in April.
 
-### 🇬🇭 Ghana (2 incidents: 2 ransomware, 0 data leaks)
+The threat actor APT73/BASHE claimed IFMIS (April 13), Kenya's Integrated Financial Management Information System used by national and county governments. A successful compromise of this platform would directly threaten government financial operations at all levels of the state. The threat actor RubiconH4ck claimed the Kenya Airports Authority (KAA, April 16), asserting possession of approximately 2 TB of data allegedly including aviation information systems, user data, and internal service records, posing potential risks to aviation infrastructure confidentiality and operational security.
 
-Ghana recorded two ransomware incidents. **International Maritime Hospital** in Tema (The Gentlemen) is a government-affiliated healthcare facility. **Provident Insurance** (APT73/BASHE) is a private wealth management firm. Both sectors reflect the group's expansion beyond North and East Africa into West African service industries.
+---
 
-### 🇪🇹 Ethiopia (1 incident: 0 ransomware, 1 data leak)
+### 🇬🇭 Ghana (2 incidents: 2 ransomware)
 
-**National Oil Ethiopia PLC** (ByteToBreach, 800+ GB ERP database) represents one of the most technically detailed claims of the month. The actor describes a full intrusion chain from initial Microsoft Exchange ProxyLogon exploitation to ransomware deployment, with access to client data, contracts, salaries, email accounts, and sensitive ERP systems.
+The threat actor TheGentlemen claimed the International Maritime Hospital in Tema (April 14), a government-affiliated healthcare facility specializing in maritime and general health services. The threat actor APT73/BASHE claimed Provident Insurance (providentgh.com, April 27), a Ghanaian private insurance and wealth management company. Both incidents demonstrate the geographic expansion of these two groups beyond North and East Africa into West African service sectors.
+
+---
+
+### 🇪🇹 Ethiopia (1 incident: 1 data leak)
+
+The threat actor ByteToBreach claimed National Oil Ethiopia PLC (NOC, April 1, discovered), a major Ethiopian energy company in petroleum operations and fuel distribution. The published claim describes a full intrusion chain: initial access via Microsoft Exchange ProxyLogon exploitation, lateral movement, exfiltration of an ERP database reportedly exceeding 800 GB, and final ransomware deployment. The claimed exfiltrated data includes client records, contracts, salaries, email accounts, and sensitive ERP operational data. This is one of the most technically detailed compromise claims in the AFRINTEL April 2026 dataset.
+
+---
 
 ### 🇧🇼 Botswana (1 incident: 1 ransomware)
 
-Livingstone Kolobeng College, a private secondary school in Gaborone, was claimed by Krybit.
+The threat actor Krybit claimed Livingstone Kolobeng College (lkc.ac.bw, April 4), a private secondary school in Gaborone.
+
+---
 
 ### 🇸🇨 Seychelles (1 incident: 1 ransomware)
 
-The official e-government portal **egov.sc** was claimed by APT73/BASHE, targeting national digital public services infrastructure.
+The threat actor APT73/BASHE claimed the official Seychelles e-government portal egov.sc (April 9), targeting the national digital public services platform for the Republic of Seychelles.
 
-### 🇸🇳 Senegal (1 incident: 0 ransomware, 1 access sale)
+---
 
-**DGCPT** (Directorate General of Public Accounting and Treasury, w00l_ysh1): VPN credentials, Windows Server administrator access, Domain Controller access, and a network of 200+ computers were advertised for sale (VPN $500, servers $2,000, DC $15,000). If authentic, this constitutes an advanced compromise of Senegal's sovereign financial infrastructure.
+### 🇸🇳 Senegal (1 incident: 1 access sale)
 
-### 🇧🇯 Benin (1 incident: 0 ransomware, 1 data leak)
+The cybercriminal w00l_ysh1 advertised for sale access to the Directorate General of Public Accounting and Treasury (DGCPT, April 5, publication initially dated March 8), Senegal's central treasury institution. The claimed accesses include VPN credentials ($500), Windows Server administrator access to two servers ($2,000), Domain Controller access ($15,000), and connectivity to a network of over 200 computers with financial databases and internal servers. Domain Controller access, if authentic, would enable lateral movement, ransomware deployment, and full Active Directory compromise across Senegal's sovereign financial infrastructure.
 
-**CNSS Benin** (National Social Security Fund, NormalLeVrai): 7.1 GB of mailbox data including approximately 5,993 emails, 9,019 attachments, and 31,000+ files. Content includes pension cards, identity documents, passports, HR data, medical data, and banking information related to insured individuals and retirees.
+---
 
-### 🇺🇬 Uganda (1 incident: 0 ransomware, 1 data leak)
+### 🇧🇯 Benin (1 incident: 1 data leak)
 
-**Uganda Ministry of Agriculture E-Extension** (vicmeow): CSV dump exposing emails, names, phone numbers, plaintext passwords, and an SMS gateway API token, enabling direct credential abuse and mass messaging operations.
+The threat actor NormalLeVrai claimed the official CNSS Benin mailbox (National Social Security Fund, April 25), publishing approximately 7.1 GB of data: approximately 5,993 emails, 9,019 attachments, and over 31,000 files. The disclosed content includes pension cards, certificates of life, passports, consular cards, identity documents, beneficiary files, HR and medical data, and banking information related to insured individuals and retirees.
+
+---
+
+### 🇺🇬 Uganda (1 incident: 1 data leak)
+
+The threat actor vicmeow claimed a CSV dump from Uganda's Ministry of Agriculture E-Extension platform (April 27), exposing email addresses, full names, phone numbers, postal addresses, weak or plaintext passwords, and an SMS gateway API token. The exposure of the API token enables direct unauthorized access to the SMS gateway, facilitating mass messaging operations and impersonation of the platform.
+
+---
 
 ### 🇿🇲 Zambia (1 incident: 1 ransomware)
 
-**ZSIC Life** (insurance and wealth management) was claimed by Krybit ransomware.
+The threat actor Krybit claimed ZSIC Life (zsiclife.co.zm, April 29), a Zambian life insurance and wealth management company.
+
+---
 
 ### Multi-country incident
+
+The cybercriminal superduper1 advertised for sale administrative access to multiple African governmental infrastructures (April 4), claiming eGov administrator panels, Angolan national police mailboxes, government medical domains in Angola, military and intelligence-related access, South African government and sports department accounts, and Nigerian government staff accounts. The published elements suggest resale of compromised credentials or persistent access; no independent technical evidence currently confirms the claimed accesses.
 
 | Incident | Actor | Evidence type | Countries affected |
 | :--- | :--- | :--- | :--- |
