@@ -5,7 +5,7 @@
 - **Actor / Group:** anisanas2 (forum [Citizen])
 - **Sector:** Education / Vocational Training / Mining
 - **Status:** Data Leak
-- **Website:** [imt.ac.ma] (under Ministry of Energy Transition and Sustainable Development)
+- **Website:** [imt.ac.ma](https://imt.ac.ma)
 - **Description:**  
   Data leak from Morocco's Institut des Mines de Touissit (IMT), a public vocational training institution founded in 1954. Exposed data includes:
   - **100+ student records** (ESA and GT programs) with CIN (National ID), Massar IDs, full names, emails, phone numbers

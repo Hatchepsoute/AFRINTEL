@@ -6,7 +6,7 @@
 - **Acteur / Groupe :** anisanas2 (forum [Citizen])
 - **Secteur :** Éducation / Formation professionnelle / Mines
 - **Statut :** Fuite de données
-- **Site web :** [imt.ac.ma] (sous le Ministère de la Transition Énergétique et du Développement Durable)
+- **Site web :** [imt.ac.ma](https://imt.ac.ma)
 - **Description :**  
   Fuite de données de l'Institut des Mines de Touissit (IMT), un établissement public de formation professionnelle fondé en 1954. Données exposées :
   - **100+ fiches étudiants** (filières ESA et GT) avec CIN, identifiants Massar, noms, emails, téléphones
