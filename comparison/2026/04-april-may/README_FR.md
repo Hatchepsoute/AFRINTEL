@@ -16,11 +16,11 @@ TLP:CLEAR - Distribution publique
 
 | Indicateur | Avril 2026 | Mai 2026 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 60 | 54 | -6 (-10 %) |
+| Total incidents | 60 | 57 | -3 (-5 %) |
 | Pays touchés | 16 | 11 + multi-pays | Périmètre plus resserré |
 | Acteurs distincts | 30+ | 25+ | Légère baisse |
 | Ransomware | 20 | 16 | -4 (-20 %) |
-| Fuites de données / ventes d'accès | 40 | 38 | -2 (-5 %) |
+| Fuites de données / ventes d'accès | 40 | 41 | +1 (+3 %) |
 | Incidents gouvernementaux | Très élevés | Élevés | Stable |
 | Incidents secteur éducatif | Modérés | Systémiques | Forte hausse |
 | Fuites KYC / identité | Massives | Élevées | Soutenu |
@@ -34,7 +34,7 @@ xychart-beta
 title "Incidents cyber en Afrique"
 x-axis ["Avril 2026","Mai 2026"]
 y-axis "Incidents" 0 --> 70
-bar [60,54]
+bar [60,57]
 ```
 
 ---
@@ -47,7 +47,7 @@ title "Ransomware vs fuites de données / ventes d'accès"
 x-axis ["Avril 2026","Mai 2026"]
 y-axis "Incidents" 0 --> 50
 bar [20, 16]
-line [40, 38]
+line [40, 41]
 ```
 
 *Légende : barres = ransomware, ligne = fuites de données / ventes d'accès*
@@ -60,7 +60,7 @@ line [40, 38]
 flowchart LR
 
 APR["Avril 2026\n60 incidents"]
-MAY["Mai 2026\n54 incidents"]
+MAY["Mai 2026\n57 incidents"]
 
 EG["🇪🇬 Égypte"]
 ZA["🇿🇦 Afrique du Sud"]
@@ -101,7 +101,7 @@ MAY --> CI
 |---|---:|---:|:---:|
 | 🇪🇬 Égypte | ~15 | 16 | ↑ |
 | 🇿🇦 Afrique du Sud | ~12 | 14 | ↑ |
-| 🇲🇦 Maroc | ~10 | 5 | ↓ |
+| 🇲🇦 Maroc | ~10 | 7 | ↓ |
 | 🇹🇳 Tunisie | ~5 | 5 | → |
 | 🇳🇬 Nigéria | ~5 | 3 | ↓ |
 | 🇩🇿 Algérie | ~4 | 2 | ↓ |
@@ -169,10 +169,10 @@ GRUB["Grubder\n(dominant Avril)"]:::low
 
 ### Ce qui a diminué d'avril à mai
 
-- **Maroc :** de 10+ incidents en avril à 5 en mai, encore élevé mais baisse notable.
+- **Maroc :** de 10+ incidents en avril à 7 en mai, encore élevé avec une campagne persistante d'exfiltration de données publiques (RADEM Meknès, vente massive multi-entités).
 - **Kenya :** avril comprenait la revendication Kenya Airports Authority (2 To) ; mai n'enregistre qu'un seul incident.
 - **Santé :** la vague d'incidents santé d'avril (CNOPS Maroc notamment) ne s'est pas reproduite à la même échelle.
-- **Volume total :** légère baisse de 60 à 54, portée principalement par la réduction des ransomwares (-4) et des incidents multi-pays.
+- **Volume total :** légère baisse de 60 à 57, portée principalement par la réduction des ransomwares (-4). Les fuites de données ont légèrement augmenté (+1).
 
 ### Continuités structurelles
 
@@ -185,7 +185,7 @@ GRUB["Grubder\n(dominant Avril)"]:::low
 
 ## Évaluation stratégique
 
-Le passage d'avril à mai révèle un **volume d'attaques soutenu avec un glissement qualitatif des cibles**. La baisse globale de 60 à 54 incidents est marginale ; ce qui a changé, c'est le focus sectoriel. L'éducation en Égypte est devenue une catégorie stratégique, et le ransomware a touché des institutions gouvernementales à fort impact (Trésor Public du Sénégal). L'émergence de NightSpire et la consolidation de la coalition 404Crew signalent une maturation continue de l'écosystème criminel ciblant l'Afrique.
+Le passage d'avril à mai révèle un **volume d'attaques soutenu avec un glissement qualitatif des cibles**. La baisse globale de 60 à 57 incidents est marginale ; ce qui a changé, c'est le focus sectoriel. L'éducation en Égypte est devenue une catégorie stratégique, et le ransomware a touché des institutions gouvernementales à fort impact (Trésor Public du Sénégal). L'émergence de NightSpire et la consolidation de la coalition 404Crew signalent une maturation continue de l'écosystème criminel ciblant l'Afrique.
 
 ### Perspectives de risque à 30-60-90 jours (depuis juin 2026)
 

@@ -265,7 +265,18 @@ Such a compromise could potentially allow:
   ▫️ disruption of public health operations  
   AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
 ---
-### 15 May 2026
+### May 15, 2026
+
+#### 🇪🇹 Ethiopia - NGO Registration Database [Data Leak / Sale]
+- **Actor / Group:** 404Crew Cyber Team (forum [Citizen])
+- **Sector:** Government / Civil Society / NGO Regulation
+- **Status:** Database Leak / Sale
+- **Website:** [csogov.et] (government agency for NGO registration and audit)
+- **Description:**  
+  Sale of a full database from Ethiopia’s official NGO registration and auditing agency. The dataset contains **3,668 records** of registered civil society organizations. Each record includes the organization’s English and Amharic names, registration date, certificate number, category (Local Organization), type (Charitable Association, Professional Association, etc.), head office address, and contact email.
+- **Analysis:**  
+  Exposure of the entire civil society registry compromises sensitive operational data of NGOs, including their leadership contacts and locations. This enables targeted phishing, physical harassment, and espionage against humanitarian organizations. The data also reveals government oversight structures, potentially facilitating attacks on regulatory bodies.
+
 #### 🇿🇦 South Africa - Ephraim Mogale Local Municipality
 - **Threat Actor / Group:** NullSec Nigeria x 404Crew Cyber Team x Infernalis
 - **Sector:** Local Government / Municipal Administration
@@ -489,7 +500,6 @@ AFRINTEL did not conduct any authentication attempts or interaction with the aff
   ▫️ compromise of the underlying web infrastructure  
 AFRINTEL did not perform any authentication attempts in order to avoid unauthorized interaction with the affected systems.
 
-
 #### 🇹🇿 Tanzania - Police (Webmail) [Database Leak / Sale]
 
 - **Actor / Source:** [Citizen] Kampuchean
@@ -507,6 +517,23 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
   - leverage to reset other administrative access linked to the institution.
 
   This exposes the Tanzanian police to major risks: espionage, leakage of sensitive judicial information, and use of credentials to access other government services. The sale of this type of access significantly amplifies the threats against the country's law enforcement institutions, especially since the database contains plaintext passwords, making the accounts immediately exploitable without any decryption effort.
+  
+  
+#### 🇲🇦 Morocco - RADEM Meknès [Massive data leak - Critical infrastructure]
+- **Actor / Group:** anisanas2 
+- **Sector:** Water / Electricity / Critical infrastructure / Public utilities
+- **Status:** Massive data leak
+- **Website:** [www.radem.ma](http://www.radem.ma)
+- **Description:**  
+  Massive data leak concerning RADEM (Régie Autonome Intercommunale de Distribution d'Eau et d'Électricité de Meknès), the public utility company responsible for the production, distribution and maintenance of drinking water and electricity in Meknès and its surrounding communes. The attacker claims to have extracted nearly **1.1 million documents**. An initial batch of **18,000 PDF documents** has been released online, with a promise to publish the full database and all remaining documents within 24 hours on Telegram. Exposed data includes:
+  - **Customer information:** names, full addresses, contract numbers, customer numbers.
+  - **Operational data:** distribution routes, branch offices, and other technical data related to water and electricity distribution.
+- **Analysis:**  
+  The compromise of a public utility managing critical infrastructure (water and electricity) represents a major threat to national security and the continuity of essential services. Established in 1969 and employing between 501 and 1,000 people, RADEM is a central player in the Fès-Meknès region. The exposure of customer data (names, addresses, contract numbers) enables targeted phishing campaigns, identity theft and financial fraud. Operational data (distribution routes, branch offices) could be exploited to map sensitive infrastructure, plan sabotage or malicious acts. The massive scale of the leak (1.1 million documents) makes it one of the most significant concerning public infrastructure in Morocco. The staggered release (18,000 documents first, then the rest) suggests a strategy of pressure or data monetisation. RADEM, operating under the supervision of local authorities, will have to answer for the protection of its users' data and the security of its critical infrastructure.
+  
+
+---
+
 ---
 ### May 23, 2026
 #### 🇿🇦 South Africa - SITA (State Information Technology Agency)
@@ -745,3 +772,27 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
   Asking price: **$1,300**.
 - **Analysis:**  
   Massive exposure of sensitive personal data. Key risks: identity theft, employment fraud, targeted phishing, and social engineering against companies. The presence of fields such as LinkedIn, date of birth, and emergency contact makes this database particularly dangerous. The platform risks loss of trust and potential legal consequences.
+  
+#### 🇲🇦 Morocco - Massive sale of Moroccan databases [Data leak / Put up for sale]
+
+- **Actor / Group:** [VIP] anisanas2 / PKA291 (BreachForums / Telegram)
+- **Sector:** Government / Justice / Transport / Education / Insurance / Logistics
+- **Status:** Stolen data put up for sale
+- **Website:** Multiple entities (see description)
+- **Description:**  
+  An actor offering for sale a collection of stolen Moroccan databases, representing a combined total of over **12 million lines and documents**. The data, initially extracted by the PKA291 group, covers several sensitive sectors. Global offer at **5,500 USD** or sold individually:
+
+  **Government entities:**
+  - **Ministry of Justice:** 2 million documents / 150,000 court files – 3,000 USD.
+  - **NARSA** (National Road Safety Agency): 2 million lines – 800 USD.
+  - **RADEM Meknès** (Water and electricity utility): 1.1 million documents – 600 USD.
+  - **OFPPT** (Vocational Training Office): 400,000 lines – 300 USD.
+  - **LNM6** (unidentified institution): 95,000 documents – 500 USD.
+
+  **Private companies:**
+  - **Delivery companies:** 8 million lines – 1,800 USD.
+  - **Insurance company:** initial access – 600 USD.
+  - **Other companies:** 500,000 lines – 350 USD.
+
+- **Analysis:**  
+  This massive sale constitutes one of the most significant data leaks concerning Morocco, affecting both strategic government institutions and private companies. Judicial data (files, complaints, decisions) exposes sensitive information about citizens and ongoing cases. NARSA data (driving licences, licence plates, fines) enables identity theft and the creation of fraudulent administrative documents. The presence of OFPPT data (vocational training) exposes the personal information and academic records of learners and trainers. The centralisation of these databases by a single actor suggests a coordinated extraction campaign targeting Moroccan infrastructures, potentially through shared vulnerabilities (administrative access, unsecured APIs). The sale of this data on cybercriminal forums exposes Moroccan citizens and companies to increased risks of fraud, identity theft and blackmail. The absence of any mention of an authority having notified these breaches raises questions about the responsiveness of the entities concerned. Notably, these same Moroccan institutions had already been subject to data leaks in April 2026, with the same malicious actor having disclosed samples and complete data at the time, confirming a persistence of the threat and the absence of effective corrective measures.

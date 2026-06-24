@@ -244,10 +244,10 @@ CYMOT (cymot.com), a Namibian retailer of automotive spares, tools, and equipmen
 ```mermaid
 pie
  title Sector distribution (February 2026)
- "Government/Admin (3)" : 3
- "Airlines/Aviation (3)" : 3
+ "Government (3)" : 3
+ "Aviation (3)" : 3
  "Energy (2)" : 2
- "Finance/FinTech (2)" : 2
+ "Finance (2)" : 2
  "Mining (2)" : 2
  "Legal (1)" : 1
  "Media (1)" : 1
@@ -255,7 +255,7 @@ pie
  "IT consulting (1)" : 1
  "Real estate (1)" : 1
  "Agriculture (1)" : 1
- "Retail/Accounting (2)" : 2
+ "Retail (2)" : 2
 ```
 
 **Takeaways:**

@@ -262,6 +262,17 @@ Une telle compromission pourrait permettre :
 AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
  ---
 ### 15 Mai 2026
+#### 🇪🇹 Éthiopie - Base de données des ONG [Fuite / Vente de données]
+
+- **Acteur / Groupe :** 404Crew Cyber Team (forum [Citizen])
+- **Secteur :** Gouvernement / Société civile / Régulation des ONG
+- **Statut :** Fuite / Vente de base de données
+- **Site web :** [csogov.et] (agence gouvernementale d’enregistrement et d’audit des ONG)
+- **Description :**  
+  Vente de la base de données complète de l’agence éthiopienne d’enregistrement des ONG. L’ensemble contient **3 668 enregistrements** d’organisations de la société civile. Chaque fiche comprend le nom en anglais et en amharique, la date d’enregistrement, le numéro de certificat, la catégorie (organisation locale), le type (association caritative, professionnelle, etc.), l’adresse du siège et l’e-mail de contact.
+- **Analyse :**  
+  L’exposition de l’intégralité du registre des ONG compromet des données opérationnelles sensibles, notamment les contacts dirigeants et les localisations. Cela permet du phishing ciblé, du harcèlement physique et de l’espionnage contre les organisations humanitaires. Les données révèlent également la structure de contrôle gouvernementale, facilitant d’éventuelles attaques contre les autorités de régulation.
+
 #### 🇿🇦 Afrique du Sud - Ephraim Mogale Local Municipality
 - **Acteur / Groupe :** NullSec Nigeria x 404Crew Cyber Team x Infernalis
 - **Secteur :** Gouvernement local / Administration municipale
@@ -504,6 +515,20 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   - un levier pour réinitialiser d'autres accès administratifs liés à l'institution.
 
   Cela expose la police tanzanienne à des risques majeurs : espionnage, fuite d'informations judiciaires sensibles, et utilisation des identifiants pour accéder à d'autres services gouvernementaux. La vente de ce type d'accès amplifie considérablement les menaces pesant sur les institutions répressives du pays, d'autant que la base contient des mots de passe en clair, rendant les comptes immédiatement exploitables sans effort de décryptage.
+
+
+#### 🇲🇦 Maroc - RADEM Meknès [Fuite de données massive – Infrastructure critique]
+- **Acteur / Groupe :** anisanas2 (forum Darkforums)
+- **Secteur :** Eau / Électricité / Infrastructure critique / Services publics
+- **Statut :** Fuite de données massive
+- **Site web :** [www.radem.ma](http://www.radem.ma)
+- **Description :**  
+  Fuite de données massive concernant la RADEM (Régie Autonome Intercommunale de Distribution d'Eau et d'Électricité de Meknès), l'entreprise publique chargée de la production, de la distribution et de la maintenance de l'eau potable et de l'électricité à Meknès et ses communes environnantes. L'attaquant revendique l'extraction de près de **1,1 million de documents**. Une première salve de **18 000 documents PDF** est mise en ligne, avec promesse de publier l'intégralité de la base de données et tous les documents dans les 24 heures sur Telegram. Données exposées :
+  - **Informations clients** : noms, adresses complètes, numéros de contrat, numéros de client.
+  - **Données opérationnelles** : tournées, agences de rattachement, et autres données techniques liées à la distribution d'eau et d'électricité.
+- **Analyse :**  
+  La compromission d'une régie publique gérant des infrastructures critiques (eau et électricité) représente une menace majeure pour la sécurité nationale et la continuité des services essentiels. Créée en 1969 et employant entre 501 et 1 000 personnes, la RADEM est un acteur central de la région Fès-Meknès. L'exposition des données clients (nom, adresse, numéros de contrat) permet des campagnes de phishing ciblées, des usurpations d'identité et des escroqueries financières. Les données opérationnelles (tournées, agences) pourraient être exploitées pour cartographier les infrastructures sensibles, planifier des sabotages ou des actes de malveillance. La taille massive de la fuite (1,1 million de documents) en fait l'une des plus importantes concernant une infrastructure publique au Maroc. La publication échelonnée (18 000 documents puis le reste) suggère une stratégie de pression ou de monnayage de la donnée. La RADEM, opérant sous tutelle des autorités locales, devra répondre de la protection des données de ses usagers et de la sécurité de ses infrastructures critiques.
+  
 ---
 ### 23 Mai 2026
 #### 🇿🇦 Afrique du Sud - SITA (State Information Technology Agency)
@@ -746,4 +771,27 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**  
   Exposition massive de données personnelles sensibles. Risques principaux : usurpation d'identité, fraudes à l'emploi, phishing ciblé, ingénierie sociale contre les entreprises. La présence de champs comme LinkedIn, date de naissance et contact d'urgence rend cette base particulièrement dangereuse. La plateforme risque une perte de confiance et des poursuites.
  
+#### 🇲🇦 Maroc - Vente massive de bases de données marocaines [Fuite de données / Mise en vente]
+
+- **Acteur / Groupe :** [VIP] anisanas2 / PKA291
+- **Secteur :** Gouvernement / Justice / Transport / Formation / Assurance / Logistique
+- **Statut :** Mise en vente de données volées
+- **Site web :** Multiples entités (voir description)
+- **Description :**  
+  Un acteur proposant à la vente un ensemble de bases de données marocaines volées, représentant un total combiné de plus de **12 millions de lignes et documents**. Les données, initialement extraites par le groupe PKA291, couvrent plusieurs secteurs sensibles. Offre globale à **5 500 USD** ou vente à l'unité :
+
+  **Entités gouvernementales :**
+  - **Ministère de la Justice** : 2 millions de documents / 150 000 dossiers judiciaires – 3 000 USD.
+  - **NARSA** (Agence Nationale de la Sécurité Routière) : 2 millions de lignes – 800 USD.
+  - **RADEM Meknès** (Régie d'eau et d'électricité) : 1,1 million de documents – 600 USD.
+  - **OFPPT** (Office de la Formation Professionnelle) : 400 000 lignes – 300 USD.
+  - **LNM6** (institution non identifiée) : 95 000 documents – 500 USD.
+
+  **Entreprises privées :**
+  - **Sociétés de livraison** : 8 millions de lignes – 1 800 USD.
+  - **Compagnie d'assurance** : accès initial – 600 USD.
+  - **Autres sociétés** : 500 000 lignes – 350 USD.
+
+- **Analyse :**  
+  Cette offre de vente massive constitue l'une des plus importantes fuites de données concernant le Maroc, touchant à la fois des institutions gouvernementales stratégiques et des entreprises privées. Les données judiciaires (dossiers, plaintes, décisions) exposent des informations sensibles sur des citoyens et des affaires en cours. Les données de NARSA (permis de conduire, plaques d'immatriculation, amendes) permettent l'usurpation d'identité et la création de faux documents administratifs. La présence des données de l'OFPPT (formation professionnelle) expose les parcours et informations personnelles des apprenants et formateurs. La centralisation de ces bases par un même acteur suggère une campagne d'extraction coordonnée ciblant les infrastructures marocaines, potentiellement via des vulnérabilités partagées (accès administratifs, API non sécurisées). La vente de ces données sur des forums cybercriminels expose les citoyens et entreprises marocains à des risques accrus d'escroqueries, d'usurpation d'identité et de chantage. L'absence de mention d'une autorité ayant notifié ces fuites soulève des questions sur la réactivité des entités concernées. À noter que ces mêmes institutions marocaines avaient déjà fait l'objet de fuites de données en avril 2026, le même acteur malveillant ayant divulgué à l'époque des échantillons et des données complètes, confirmant une persistance de la menace et l'absence de mesures correctives efficaces.
 

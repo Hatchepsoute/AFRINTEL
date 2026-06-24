@@ -4,7 +4,7 @@
 ```mermaid
 pie showData
     title Ransomware vs Data Leaks - May 2026
-    "Data leaks and access sales (38)" : 38
+    "Data leaks and access sales (41)" : 41
     "Ransomware (16)" : 16
 ```
 
@@ -29,10 +29,11 @@ pie showData
     title Data leaks / access sales by country - May 2026
     "🇿🇦 South Africa (13)" : 13
     "🇪🇬 Egypt (9)" : 9
-    "🇲🇦 Morocco (5)" : 5
+    "🇲🇦 Morocco (7)" : 7
     "🇹🇳 Tunisia (3)" : 3
     "🇩🇿 Algeria (2)" : 2
     "🇹🇿 Tanzania (2)" : 2
+    "🇪🇹 Ethiopia (1)" : 1
     "🇰🇪 Kenya (1)" : 1
     "🌍 Multi-country (3)" : 3
 ```
@@ -59,7 +60,8 @@ pie showData
 |---|:---:|:---:|:---|
 | 🇪🇬 Egypt | 7 | 9 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇿🇦 South Africa | 1 | 13 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇲🇦 Morocco | 0 | 5 | 🟦🟦🟦🟦🟦 |
+| 🇲🇦 Morocco | 0 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
+| 🇪🇹 Ethiopia | 0 | 1 | 🟦 |
 | 🇹🇳 Tunisia | 2 | 3 | 🟧🟧 🟦🟦🟦 |
 | 🇳🇬 Nigeria | 3 | 0 | 🟧🟧🟧 |
 | 🇩🇿 Algeria | 0 | 2 | 🟦🟦 |

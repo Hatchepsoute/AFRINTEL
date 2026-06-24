@@ -5,13 +5,14 @@
 pie showData
     title Most active threat actors - May 2026
     "Databasehooligan (8)" : 8
+    "404Crew Cyber Team (5)" : 5
     "TheGentlemen (4)" : 4
-    "404Crew Cyber Team (4)" : 4
     "NightSpire (3)" : 3
     "INT3X (2)" : 2
     "Keymous (2)" : 2
     "cc5ab (2)" : 2
     "NullSec Nigeria (2)" : 2
+    "anisanas2 (2)" : 2
     "Others (27)" : 27
 ```
 
@@ -76,6 +77,18 @@ C404 --> SRW["Sheriff Randburg West"]
 
 ---
 
+### anisanas2, data leak and data sale (2 victims, Morocco)
+
+```mermaid
+flowchart LR
+ANI["anisanas2\n(+ PKA291)"] --> RADEM["🇲🇦 RADEM Meknès (water and electricity utility)"]
+ANI --> BUNDLE["🇲🇦 Multi-entity bundle (Ministry of Justice, NARSA, OFPPT, logistics, insurance)"]
+```
+
+**Profile:** Threat actor active on Darkforums. Conducted two large-scale operations targeting Moroccan public infrastructure and institutions in May 2026. The RADEM Meknès breach exposed approximately 1.1 million documents from a critical utility. The multi-entity bundle (coordinated with PKA291) covered over 12 million rows across government, transport, and vocational training sectors, offered at 5,500 USD globally. Continuation of a campaign that began in April 2026.
+
+---
+
 ### AuditTeam, ransomware and double extortion (1 victim, Senegal)
 
 **Profile:** Ransomware group. Attacked Tresor Public du Senegal with confirmed double extortion. Most impactful government ransomware incident of May 2026: ~1.66M records exfiltrated (national taxpayer registry, payroll, payment orders with NINEA identifiers and banking coordinates).
@@ -94,5 +107,6 @@ C404 --> SRW["Sheriff Randburg West"]
 | Keymous | Access/Leak | | 1 | 1 | Multi-country |
 | cc5ab | Data leak | | 2 | | EG, KE |
 | NullSec Nigeria | Coalition | | 2+ | | ZA |
+| anisanas2 | Data leak/sale | | 2 | | MA |
 | AuditTeam | Ransomware | 1 | | | SN |
 | Kampuchean | Data broker | | 1 | | TZ |

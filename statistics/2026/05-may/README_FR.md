@@ -1,9 +1,9 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
 ![Période](https://img.shields.io/badge/Période-Mai%202026-lightgrey)
-![Victimes](https://img.shields.io/badge/Victimes-54-critical)
+![Victimes](https://img.shields.io/badge/Victimes-57-critical)
 ![Ransomwares](https://img.shields.io/badge/Ransomwares-16-red)
-![Fuites](https://img.shields.io/badge/Fuites%20de%20données-38-orange)
+![Fuites](https://img.shields.io/badge/Fuites%20de%20données-41-orange)
 ![Pays](https://img.shields.io/badge/Pays%20touchés-18-blueviolet)
 ![Intel](https://img.shields.io/badge/Type-Statistiques%20CTI-purple)
 
@@ -16,7 +16,7 @@
 
 Ces statistiques sont basées sur les incidents publiquement revendiqués ou observés dans le périmètre AFRINTEL pour mai 2026. Les contenus issus de forums cybercriminels, leak sites ou canaux underground sont traités comme des **revendications** tant qu'ils ne sont pas confirmés indépendamment par la victime ou par des preuves techniques vérifiables.
 
-Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont comptabilisés comme **1 incident chacun** dans le total global de 54. Dans les fichiers victimes, chaque entrée liste désormais les pays concernés explicitement plutôt qu'un label générique "Multi-pays", afin de permettre l'identification par pays. Dans le tableau d'exposition géographique (section 2.2), chaque pays touché est listé individuellement. La somme des expositions par pays dépasse donc le total de 54 incidents.
+Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont comptabilisés comme **1 incident chacun** dans le total global de 57. Dans les fichiers victimes, chaque entrée liste désormais les pays concernés explicitement plutôt qu'un label générique "Multi-pays", afin de permettre l'identification par pays. Dans le tableau d'exposition géographique (section 2.2), chaque pays touché est listé individuellement. La somme des expositions par pays dépasse donc le total de 57 incidents.
 
 ---
 
@@ -24,10 +24,10 @@ Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont co
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 54 |
+| Total incidents | 57 |
 | Attaques ransomware | 16 |
-| Fuites de données / ventes d'accès | 38 |
-| Pays touchés | 18 (11 directs + 7 via incidents multi-pays) |
+| Fuites de données / ventes d'accès | 41 |
+| Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
 | Acteurs distincts | 25+ |
 | Pays le plus touché | Égypte |
 | Principal pays ransomware | Égypte |
@@ -37,15 +37,15 @@ Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont co
 
 | Type d'incident | Nombre | Pourcentage |
 |---|---:|---:|
-| Ransomware | 16 | 29,6 % |
-| Fuites de données / ventes d'accès | 38 | 70,4 % |
-| **Total** | **54** | **100 %** |
+| Ransomware | 16 | 28,1 % |
+| Fuites de données / ventes d'accès | 41 | 71,9 % |
+| **Total** | **57** | **100 %** |
 
 ```mermaid
 pie showData
     title Répartition globale des incidents - Mai 2026
     "Ransomware" : 16
-    "Fuites de données et ventes d'accès" : 38
+    "Fuites de données et ventes d'accès" : 41
 ```
 
 ---
@@ -54,34 +54,35 @@ pie showData
 
 ### 2.1 Incidents directs par pays
 
-Ces 51 incidents ont une seule victime identifiée par pays. Les 3 incidents multi-pays sont détaillés en section 2.2.
+Ces 54 incidents ont une seule victime identifiée par pays. Les 3 incidents multi-pays sont détaillés en section 2.2.
 
 | Pays | Incidents |
 |---|---:|
 | 🇪🇬 Égypte | 16 |
 | 🇿🇦 Afrique du Sud | 14 |
-| 🇲🇦 Maroc | 5 |
+| 🇲🇦 Maroc | 7 |
 | 🇹🇳 Tunisie | 5 |
 | 🇳🇬 Nigéria | 3 |
 | 🇩🇿 Algérie | 2 |
 | 🇹🇿 Tanzanie | 2 |
+| 🇪🇹 Éthiopie | 1 |
 | 🇬🇭 Ghana | 1 |
 | 🇨🇮 Côte d'Ivoire | 1 |
 | 🇰🇪 Kenya | 1 |
 | 🇸🇳 Sénégal | 1 |
-| **Sous-total (directs)** | **51** |
+| **Sous-total (directs)** | **54** |
 
 ```mermaid
 xychart-beta
     title "Incidents directs par pays - Mai 2026"
-    x-axis ["Égypte","Afrique du Sud","Maroc","Tunisie","Nigéria","Algérie","Tanzanie","Ghana","Côte d'Ivoire","Kenya","Sénégal"]
+    x-axis ["Égypte","Afrique du Sud","Maroc","Tunisie","Nigéria","Algérie","Tanzanie","Éthiopie","Ghana","Côte d'Ivoire","Kenya","Sénégal"]
     y-axis "Incidents" 0 --> 17
-    bar [16,14,5,5,3,2,2,1,1,1,1]
+    bar [16,14,7,5,3,2,2,1,1,1,1,1]
 ```
 
 ### 2.2 Exposition géographique des incidents multi-pays
 
-3 incidents ont touché plusieurs pays simultanément. Chacun est comptabilisé une seule fois dans le total global de 54, mais expose plusieurs pays.
+3 incidents ont touché plusieurs pays simultanément. Chacun est comptabilisé une seule fois dans le total global de 57, mais expose plusieurs pays.
 
 | Incident | Acteur | Pays concernés |
 |---|---|---|
@@ -91,13 +92,13 @@ xychart-beta
 
 ### 2.3 Exposition géographique totale (18 pays)
 
-> La colonne "Exposition multi-pays" comptabilise le nombre d'incidents multi-pays touchant chaque pays. Les sommes de colonnes dépassent 54 car ces incidents concernent plusieurs pays simultanément.
+> La colonne "Exposition multi-pays" comptabilise le nombre d'incidents multi-pays touchant chaque pays. Les sommes de colonnes dépassent 57 car ces incidents concernent plusieurs pays simultanément.
 
 | Pays | Incidents directs | Exposition multi-pays | Exposition totale |
 |---|---:|---:|---:|
 | 🇪🇬 Égypte | 16 | 1 (Scans passeports) | 17 |
 | 🇿🇦 Afrique du Sud | 14 | 0 | 14 |
-| 🇲🇦 Maroc | 5 | 0 | 5 |
+| 🇲🇦 Maroc | 7 | 0 | 7 |
 | 🇹🇳 Tunisie | 5 | 0 | 5 |
 | 🇳🇬 Nigéria | 3 | 2 (Resume docs, DHIS2) | 5 |
 | 🇩🇿 Algérie | 2 | 0 | 2 |
@@ -106,14 +107,14 @@ xychart-beta
 | 🇨🇮 Côte d'Ivoire | 1 | 0 | 1 |
 | 🇰🇪 Kenya | 1 | 1 (Resume docs) | 2 |
 | 🇸🇳 Sénégal | 1 | 0 | 1 |
-| 🇪🇹 Éthiopie | 0 | 1 (Resume docs) | 1 |
+| 🇪🇹 Éthiopie | 1 | 1 (Resume docs) | 2 |
 | 🇿🇼 Zimbabwe | 0 | 1 (Resume docs) | 1 |
 | 🇲🇿 Mozambique | 0 | 1 (DHIS2) | 1 |
 | 🇱🇷 Liberia | 0 | 1 (DHIS2) | 1 |
 | 🇹🇬 Togo | 0 | 1 (DHIS2) | 1 |
 | 🇸🇱 Sierra Leone | 0 | 1 (DHIS2) | 1 |
 | 🇱🇾 Libye | 0 | 1 (Scans passeports) | 1 |
-| **Total** | **51 incidents directs** | **11 expositions pays** | **18 pays distincts** |
+| **Total** | **54 incidents directs** | **11 expositions pays** | **18 pays distincts** |
 
 ---
 
@@ -123,20 +124,21 @@ xychart-beta
 |---|---:|---:|---:|
 | 🇪🇬 Égypte | 7 | 9 | 16 |
 | 🇿🇦 Afrique du Sud | 1 | 13 | 14 |
-| 🇲🇦 Maroc | 0 | 5 | 5 |
+| 🇲🇦 Maroc | 0 | 7 | 7 |
 | 🇹🇳 Tunisie | 2 | 3 | 5 |
 | 🇳🇬 Nigéria | 3 | 0 | 3 |
 | 🇩🇿 Algérie | 0 | 2 | 2 |
 | 🇹🇿 Tanzanie | 0 | 2 | 2 |
+| 🇪🇹 Éthiopie | 0 | 1 | 1 |
 | 🇬🇭 Ghana | 1 | 0 | 1 |
 | 🇨🇮 Côte d'Ivoire | 1 | 0 | 1 |
 | 🇰🇪 Kenya | 0 | 1 | 1 |
 | 🇸🇳 Sénégal | 1 | 0 | 1 |
-| **Sous-total (directs)** | **16** | **35** | **51** |
+| **Sous-total (directs)** | **16** | **38** | **54** |
 | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | 0 | 1 | 1 |
 | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | 0 | 1 | 1 |
 | 🇪🇬🇱🇾 Scans de passeports | 0 | 1 | 1 |
-| **Total** | **16** | **38** | **54** |
+| **Total** | **16** | **41** | **57** |
 
 ### Ransomware par pays
 
@@ -153,9 +155,9 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Fuites de données par pays (directs) - Mai 2026"
-    x-axis ["Afrique du Sud","Égypte","Maroc","Tunisie","Algérie","Tanzanie","Kenya"]
+    x-axis ["Afrique du Sud","Égypte","Maroc","Tunisie","Algérie","Tanzanie","Éthiopie","Kenya"]
     y-axis "Fuites de données" 0 --> 14
-    bar [13,9,5,3,2,2,1]
+    bar [13,9,7,3,2,2,1,1]
 ```
 
 ---
@@ -164,19 +166,19 @@ xychart-beta
 
 | Région | Pays inclus | Incidents directs | Exposition multi-pays |
 |---|---|---:|---:|
-| Afrique du Nord | 🇪🇬 Égypte, 🇲🇦 Maroc, 🇹🇳 Tunisie, 🇩🇿 Algérie, 🇱🇾 Libye | 28 | +2 (Égypte via Scans passeports, Libye via Scans passeports) |
+| Afrique du Nord | 🇪🇬 Égypte, 🇲🇦 Maroc, 🇹🇳 Tunisie, 🇩🇿 Algérie, 🇱🇾 Libye | 30 | +2 (Égypte via Scans passeports, Libye via Scans passeports) |
 | Afrique australe | 🇿🇦 Afrique du Sud, 🇿🇼 Zimbabwe, 🇲🇿 Mozambique | 14 | +2 (Zimbabwe via Resume docs, Mozambique via DHIS2) |
 | Afrique de l'Ouest | 🇳🇬 Nigéria, 🇬🇭 Ghana, 🇨🇮 Côte d'Ivoire, 🇸🇳 Sénégal, 🇱🇷 Liberia, 🇹🇬 Togo, 🇸🇱 Sierra Leone | 6 | +5 (Nigéria x2 via Resume docs + DHIS2, Liberia, Togo, Sierra Leone via DHIS2) |
-| Afrique de l'Est | 🇹🇿 Tanzanie, 🇰🇪 Kenya, 🇪🇹 Éthiopie | 3 | +2 (Kenya via Resume docs, Éthiopie via Resume docs) |
+| Afrique de l'Est | 🇹🇿 Tanzanie, 🇰🇪 Kenya, 🇪🇹 Éthiopie | 4 | +2 (Kenya via Resume docs, Éthiopie via Resume docs) |
 
-> Les incidents multi-pays sont comptabilisés une seule fois dans le total global de 54. La colonne "Exposition multi-pays" indique les touches additionnelles par région issues de ces incidents. Total pays distincts : 18 répartis sur 4 régions.
+> Les incidents multi-pays sont comptabilisés une seule fois dans le total global de 57. La colonne "Exposition multi-pays" indique les touches additionnelles par région issues de ces incidents. Total pays distincts : 18 répartis sur 4 régions.
 
 ```mermaid
 xychart-beta
     title "Incidents directs par région - Mai 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique de l'Est"]
-    y-axis "Incidents directs" 0 --> 30
-    bar [28,14,6,3]
+    y-axis "Incidents directs" 0 --> 32
+    bar [30,14,6,4]
 ```
 
 ---
@@ -185,26 +187,26 @@ xychart-beta
 
 | Secteur | Incidents | Pourcentage |
 |---|---:|---:|
-| Gouvernement / Administration | 14 | 25,9 % |
-| Recrutement / Données personnelles | 8 | 14,8 % |
-| Éducation / Université | 5 | 9,3 % |
-| Finance / Banque | 4 | 7,4 % |
-| Agroalimentaire / Hôtellerie | 4 | 7,4 % |
-| Logistique / Transport | 3 | 5,6 % |
-| Automobile | 3 | 5,6 % |
-| E-commerce / Numérique | 3 | 5,6 % |
-| Télécommunications / TIC | 3 | 5,6 % |
-| ONG / Caritatif | 2 | 3,7 % |
-| Santé | 2 | 3,7 % |
-| Autres | 3 | 5,6 % |
-| **Total** | **54** | **100 %** |
+| Gouvernement / Administration | 17 | 29,8 % |
+| Recrutement / Données personnelles | 8 | 14,0 % |
+| Éducation / Université | 5 | 8,8 % |
+| Finance / Banque | 4 | 7,0 % |
+| Agroalimentaire / Hôtellerie | 4 | 7,0 % |
+| Logistique / Transport | 3 | 5,3 % |
+| Automobile | 3 | 5,3 % |
+| E-commerce / Numérique | 3 | 5,3 % |
+| Télécommunications / TIC | 3 | 5,3 % |
+| ONG / Caritatif | 2 | 3,5 % |
+| Santé | 2 | 3,5 % |
+| Autres | 3 | 5,3 % |
+| **Total** | **57** | **100 %** |
 
 ```mermaid
 xychart-beta
     title "Répartition sectorielle - Mai 2026"
     x-axis ["Gouvernement","Recrutement/Data","Éducation","Finance","Agroalim./Hôtellerie","Logistique","Automobile","E-commerce","Télécoms","ONG","Santé","Autres"]
-    y-axis "Incidents" 0 --> 15
-    bar [14,8,5,4,4,3,3,3,3,2,2,3]
+    y-axis "Incidents" 0 --> 18
+    bar [17,8,5,4,4,3,3,3,3,2,2,3]
 ```
 
 ---
@@ -215,20 +217,21 @@ xychart-beta
 |---|---:|---|
 | Databasehooligan | 8 | Fuites de données |
 | TheGentlemen | 4 | Ransomware |
-| 404Crew Cyber Team | 4 | Fuites de données (coalitions) |
+| 404Crew Cyber Team | 5 | Fuites de données (coalitions) |
 | NightSpire | 3 | Ransomware |
 | INT3X | 2 | Fuites de données |
 | Keymous | 2 | Ventes d'accès / fuites |
 | cc5ab | 2 | Fuites de données |
 | NullSec Nigeria | 2 | Fuites de données (coalitions) |
+| anisanas2 | 2 | Fuites / ventes de données (Maroc) |
 | Autres acteurs | 27 | Mixte |
 
 ```mermaid
 xychart-beta
     title "Acteurs les plus actifs - Mai 2026"
-    x-axis ["Databasehooligan","TheGentlemen","404Crew CT","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","Autres"]
+    x-axis ["Databasehooligan","404Crew CT","TheGentlemen","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","anisanas2","Autres"]
     y-axis "Incidents" 0 --> 30
-    bar [8,4,4,3,2,2,2,2,27]
+    bar [8,5,4,3,2,2,2,2,2,27]
 ```
 
 ---
@@ -278,6 +281,6 @@ La vente d'accès administrateur à DHIS2 dans sept pays (Mozambique, Liberia, N
 
 ## 9. Conclusion
 
-Mai 2026 enregistre **54 incidents** touchant **18 pays distincts** (11 avec des incidents directs, 7 supplémentaires via les incidents multi-pays). L'Égypte et l'Afrique du Sud concentrent à elles seules 56 % des incidents directs, confirmant leur statut de cibles prioritaires sur le continent. Le ciblage systémique du secteur éducatif égyptien, la campagne coordonnée OpSouthAfrica et le balayage CRM de Databasehooligan dans quatre pays sont les tendances structurantes du mois.
+Mai 2026 enregistre **57 incidents** touchant **18 pays distincts** (12 avec des incidents directs, 6 supplémentaires via les incidents multi-pays). L'Égypte et l'Afrique du Sud concentrent à elles seules 52,6 % des incidents directs, confirmant leur statut de cibles prioritaires sur le continent. Le ciblage systémique du secteur éducatif égyptien, la campagne coordonnée OpSouthAfrica et le balayage CRM de Databasehooligan dans quatre pays sont les tendances structurantes du mois. La campagne marocaine persistante (RADEM Meknès, vente massive multi-entités) conduite par l'acteur malveillant anisanas2 et PKA291 rappelle que le Maroc reste une cible significative pour l'exfiltration de données publiques et d'identifiants administratifs.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

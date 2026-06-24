@@ -255,11 +255,11 @@ FRUIT-BONTÉ, an agri-food and fruit processing company, was claimed by the thre
 ```mermaid
 pie
  title Sector distribution (January 2026)
- "Government/Admin (4)" : 4
- "Finance/FinTech (4)" : 4
- "Transport/Logistics (3)" : 3
- "Industry/Engineering (3)" : 3
- "Technology/IT (2)" : 2
+ "Government (4)" : 4
+ "Finance (4)" : 4
+ "Transport (3)" : 3
+ "Industry (3)" : 3
+ "Technology (2)" : 2
  "Healthcare (1)" : 1
  "Mining (1)" : 1
  "Food industry (1)" : 1

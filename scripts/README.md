@@ -50,11 +50,11 @@ It allows analysts to operationalize publicly observed ransomware activity into 
 ## 📁 Expected Repository Structure
 
 ```bash
-reports/
-└── 2025/
+CyberAttackAfrica/
+└── 2026/
     ├── 01-january/
     │   └── victims.md
-    ├── 02-february/
+    ├── 05-may/
     │   └── victims.md
     └── ...
 ```
@@ -74,7 +74,7 @@ python3 scripts/afrintel_victims_to_stix.py --repo .
 ### 📅 Run for a specific year
 
 ```bash
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
+python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026
 ```
 
 ---
@@ -82,7 +82,7 @@ python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
 ### 📆 Run for a specific month
 
 ```bash
-python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025 --month 01-january
+python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026 --month 05-may
 ```
 
 ---
@@ -98,7 +98,7 @@ stix/<year>/<month>/afrintel_<month>_<year>_opencti.json
 Example:
 
 ```bash
-stix/2025/03-march/afrintel_march_2025_opencti.json
+stix/2026/05-may/afrintel_may_2026_opencti.json
 ```
 
 ---

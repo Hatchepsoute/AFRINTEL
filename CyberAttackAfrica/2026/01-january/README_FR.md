@@ -255,11 +255,11 @@ FRUIT-BONTÉ, entreprise agroalimentaire et de transformation fruitière, a ét�
 ```mermaid
 pie
  title Répartition sectorielle (janvier 2026)
- "Gouvernement/Admin (4)" : 4
- "Finance/FinTech (4)" : 4
- "Transport/Logistique (3)" : 3
- "Industrie/Ingénierie (3)" : 3
- "Technologie/IT (2)" : 2
+ "Gouvernement (4)" : 4
+ "Finance (4)" : 4
+ "Transport (3)" : 3
+ "Industrie (3)" : 3
+ "Technologie (2)" : 2
  "Santé (1)" : 1
  "Mines (1)" : 1
  "Agroalimentaire (1)" : 1

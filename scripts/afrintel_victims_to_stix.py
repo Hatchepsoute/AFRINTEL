@@ -4,8 +4,8 @@ AFRINTEL victims.md -> STIX 2.1 bundles for OpenCTI
 
 Usage:
   python3 scripts/afrintel_victims_to_stix.py --repo .
-  python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025
-  python3 scripts/afrintel_victims_to_stix.py --repo . --year 2025 --month 01-january
+  python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026
+  python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026 --month 05-may
 """
 
 from __future__ import annotations
@@ -18,96 +18,31 @@ import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, Iterable, List, Optional, Tuple
+
+AFRINTEL_ID = "identity--d3497218-f905-57e1-a219-a8700a85eb4a"
+TLP_CLEAR_ID = "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+STIX_NAMESPACE = uuid.uuid5(uuid.NAMESPACE_URL, "https://github.com/Hatchepsoute/AFRINTEL")
+
+MONTHS_EN = {
+    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
+    "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12,
+}
+MONTHS_FR = {
+    "janvier": 1, "février": 2, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5,
+    "juin": 6, "juillet": 7, "août": 8, "aout": 8, "septembre": 9, "octobre": 10,
+    "novembre": 11, "décembre": 12, "decembre": 12,
+}
+
+DATE_RE = re.compile(r"^###\s+(.+?)\s*$", re.M)
+ENTRY_RE = re.compile(r"^####\s+(.+?)\s*$", re.M)
+FIELD_RE = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*:?\s*(.*?)\s*$")
+STIX_ID_RE = re.compile(r"^[a-z0-9-]+--[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$")
 
 
-def now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
-
-
-def stix_id(object_type: str) -> str:
-    return f"{object_type}--{uuid.uuid4()}"
-
-
-def slugify(value: str) -> str:
-    value = value.strip().lower()
-    value = re.sub(r"[^a-z0-9]+", "-", value)
-    value = re.sub(r"-{2,}", "-", value).strip("-")
-    return value or "unknown"
-
-
-def ensure_url(url: str) -> str:
-    url = url.strip()
-    if not url:
-        return url
-    if " / " in url:
-        url = url.split(" / ")[0].strip()
-    if not re.match(r"^https?://", url, flags=re.I):
-        return "https://" + url
-    return url
-
-
-def normalize_status(raw: str) -> Tuple[str, List[str]]:
-    text = raw.strip().lower()
-    labels = ["afrintel", "ransomware", "claim-unverified"]
-
-    if "sale" in text or "mise en vente" in text:
-        labels.append("sale-listing")
-    if "sample" in text or "échantillon" in text:
-        labels.append("sample-published")
-        return "Claim - Data Sample Published", labels
-    if "full leak" in text or "fully published" in text or "publication" in text or "divulgation" in text or "leaked" in text:
-        labels.append("data-published")
-        return "Claim - Data Sample Published", labels
-
-    return "Claim - Unverified", labels
-
-
-def normalize_sector(raw: str) -> str:
-    value = raw.lower()
-    mapping = {
-        "healthcare": "healthcare",
-        "hospital": "healthcare",
-        "santé": "healthcare",
-        "insurance": "insurance",
-        "assurance": "insurance",
-        "finance": "financial-services",
-        "financial": "financial-services",
-        "bank": "financial-services",
-        "education": "education",
-        "research": "education",
-        "technology": "technology",
-        "digital": "technology",
-        "seo": "technology",
-        "telecom": "telecommunications",
-        "telecommunications": "telecommunications",
-        "retail": "retail",
-        "distribution": "retail",
-        "government": "government",
-        "public": "government",
-        "administration": "government",
-        "logistics": "logistics",
-        "transport": "transport",
-        "tourism": "hospitality",
-        "hospitality": "hospitality",
-        "oil": "energy",
-        "gas": "energy",
-        "agriculture": "agriculture",
-        "agribusiness": "agriculture",
-        "mining": "mining",
-        "legal": "legal-services",
-        "hr": "professional-services",
-        "recruitment": "professional-services",
-        "consulting": "professional-services",
-    }
-    for key, out in mapping.items():
-        if key in value:
-            return out
-    return slugify(raw) or "unknown"
-
-
-@dataclass
+@dataclass(frozen=True)
 class VictimRecord:
+    index: int
     date_display: str
     date_iso: str
     country: str
@@ -116,341 +51,499 @@ class VictimRecord:
     sector: str
     actor: str
     status: str
+    incident_type: str
     description: str
+    source_path: str
 
 
-DATE_RE = re.compile(r"^###\s+(.+?)\s*$", re.M)
-ENTRY_RE = re.compile(r"^####\s+(.+?)\s*$", re.M)
+def now_iso() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 
-MONTHS_EN = {
-    "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
-    "july": 7, "august": 8, "september": 9, "october": 10, "november": 11, "december": 12
-}
-MONTHS_FR = {
-    "janvier": 1, "février": 2, "fevrier": 2, "mars": 3, "avril": 4, "mai": 5,
-    "juin": 6, "juillet": 7, "août": 8, "aout": 8, "septembre": 9, "octobre": 10,
-    "novembre": 11, "décembre": 12, "decembre": 12
-}
+
+def stix_id(object_type: str, key: str) -> str:
+    return f"{object_type}--{uuid.uuid5(STIX_NAMESPACE, object_type + ':' + key)}"
+
+
+def slugify(value: str) -> str:
+    value = strip_flags(value).strip().lower()
+    value = re.sub(r"[^a-z0-9]+", "-", value)
+    value = re.sub(r"-{2,}", "-", value).strip("-")
+    return value or "unknown"
+
+
+def strip_flags(value: str) -> str:
+    return re.sub(r"[\U0001F1E6-\U0001F1FF]{2}\s*", "", value).strip()
+
+
+def clean_inline(value: str) -> str:
+    value = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", value)
+    value = re.sub(r"[`*_]", "", value)
+    value = value.replace("–", "-").strip()
+    return re.sub(r"\s+", " ", value)
+
+
+def clean_actor(value: str) -> str:
+    value = clean_inline(value)
+    value = re.sub(r"^\[[^\]]+\]\s*", "", value).strip()
+    value = re.split(r"\s+\(via\b|\s+\(forum\b|\s+-\s+Contacts?:", value, maxsplit=1, flags=re.I)[0]
+    return value.strip() or "Unknown"
+
+
+def extract_url(value: str) -> str:
+    value = value.strip()
+    if not value or re.search(r"not\s+(specified|applicable)|non précisé", value, re.I):
+        return ""
+    match = re.search(r"https?://[^\s)]+", value)
+    if match:
+        return match.group(0).rstrip(".,;")
+    match = re.search(r"\[([^\]]+)\]", value)
+    if match and "." in match.group(1):
+        return "https://" + match.group(1).strip().rstrip("/")
+    first = re.split(r"\s*/\s*|\s*;\s*|,", value, maxsplit=1)[0].strip()
+    first = clean_inline(first).rstrip("/")
+    if "." in first and not re.search(r"\s", first):
+        return first if re.match(r"^https?://", first, re.I) else "https://" + first
+    return ""
 
 
 def parse_date_to_iso(date_text: str) -> str:
-    text = date_text.strip()
-    m = re.match(r"(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})", text)
-    if not m:
-        raise ValueError(f"Unable to parse date: {date_text}")
-    day = int(m.group(1))
-    month_name = m.group(2).lower()
-    year = int(m.group(3))
-    month = MONTHS_EN.get(month_name) or MONTHS_FR.get(month_name)
-    if not month:
-        raise ValueError(f"Unknown month in date: {date_text}")
-    return f"{year:04d}-{month:02d}-{day:02d}"
+    text = re.sub(r"\s+", " ", date_text.strip().replace(",", " "))
+    text = re.sub(r"\s+", " ", text)
+
+    # May 02 2026 / Juin 6 2026
+    m = re.match(r"([A-Za-zÀ-ÿ]+)\s+(\d{1,2})\s+(\d{4})$", text)
+    if m:
+        month_name, day, year = m.group(1).lower(), int(m.group(2)), int(m.group(3))
+        month = MONTHS_EN.get(month_name) or MONTHS_FR.get(month_name)
+        if month:
+            return f"{year:04d}-{month:02d}-{day:02d}"
+
+    # 02 May 2026 / 02 mai 2026
+    m = re.match(r"(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$", text)
+    if m:
+        day, month_name, year = int(m.group(1)), m.group(2).lower(), int(m.group(3))
+        month = MONTHS_EN.get(month_name) or MONTHS_FR.get(month_name)
+        if month:
+            return f"{year:04d}-{month:02d}-{day:02d}"
+
+    raise ValueError(f"Unable to parse date: {date_text}")
 
 
-def strip_flag_country_org(header: str) -> Tuple[str, str]:
+def split_country_org(header: str) -> Tuple[str, str]:
     text = header.strip()
-    text = re.sub(r"^[^\wA-Za-zÀ-ÿ]+", "", text).strip()
-    if " - " not in text:
-        return "Unknown", text
-    country, org = text.split(" - ", 1)
-    return country.strip(), org.strip()
+    parts = re.split(r"\s+[-–]\s+", text, maxsplit=1)
+    if len(parts) == 1:
+        return "Unknown", clean_inline(strip_flags(text))
+    country = clean_inline(strip_flags(parts[0]))
+    organization = clean_inline(parts[1])
+    organization = re.sub(r"\s+\[[^\]]+\]\s*$", "", organization).strip()
+    return country or "Unknown", organization or "Unknown"
 
 
-def parse_month_victims(md_path: Path) -> List[VictimRecord]:
+def parse_fields(block: str) -> Dict[str, str]:
+    fields: Dict[str, List[str]] = {}
+    current: Optional[str] = None
+    for raw_line in block.splitlines():
+        line = raw_line.rstrip()
+        match = FIELD_RE.match(line)
+        if match:
+            key = match.group(1).strip().strip(":").lower()
+            key = re.sub(r"\s+", " ", key)
+            current = key
+            fields.setdefault(current, [])
+            value = match.group(2).strip()
+            if value:
+                fields[current].append(value)
+            continue
+        if current and line.strip() and not line.lstrip().startswith(("###", "---")):
+            fields[current].append(line.strip())
+    return {key: clean_inline(" ".join(value)) for key, value in fields.items()}
+
+
+def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
+    for key, value in fields.items():
+        if any(needle in key for needle in needles):
+            return value
+    return ""
+
+
+def classify_incident(fields: Dict[str, str], status: str) -> str:
+    joined_keys = " ".join(fields.keys())
+    text = f"{joined_keys} {status}".lower()
+    if "ransomware" in text:
+        return "ransomware"
+    if "access" in text or "credential" in text or "identifiant" in text:
+        return "access-sale"
+    return "data-leak"
+
+
+def normalize_status(status: str, incident_type: str) -> Tuple[str, List[str]]:
+    text = status.lower()
+    labels = ["afrintel", "africa", "claim-unverified", incident_type]
+    if "sample" in text or "échantillon" in text:
+        labels.append("data-sample-published")
+        return "Claim - Data Sample Published", labels
+    if "full" in text or "public" in text or "published" in text or "dump" in text:
+        labels.append("data-fully-published")
+        return "Data Fully Published", labels
+    if "confirmed" in text or "confirm" in text:
+        return "Incident Confirmed by Victim", labels
+    return "Claim - Unverified", labels
+
+
+def normalize_sector(raw: str) -> str:
+    value = raw.lower()
+    mapping = {
+        "government": "government", "public": "government", "administration": "government", "ministry": "government",
+        "education": "education", "university": "education", "school": "education", "teacher": "education",
+        "health": "healthcare", "medical": "healthcare", "dhis2": "healthcare",
+        "finance": "financial-services", "bank": "financial-services", "treasury": "financial-services",
+        "recruit": "professional-services", "job": "professional-services", "human resources": "professional-services", "hr": "professional-services",
+        "telecom": "telecommunications", "ict": "technology", "technology": "technology", "digital": "technology",
+        "e-commerce": "retail", "retail": "retail", "marketplace": "retail",
+        "logistics": "transport", "transport": "transport", "postal": "transport",
+        "automotive": "automotive", "food": "food-and-beverage", "beverage": "food-and-beverage", "hospitality": "hospitality",
+        "ngo": "non-profit", "charity": "non-profit", "civil society": "non-profit",
+        "energy": "energy", "oil": "energy", "gas": "energy", "sports": "sports", "legal": "legal-services",
+    }
+    for key, output in mapping.items():
+        if key in value:
+            return output
+    return slugify(raw)
+
+
+def safe_description(rec: VictimRecord) -> str:
+    incident_label = rec.incident_type.replace("-", " ")
+    base = (
+        f"AFRINTEL recorded a publicly claimed {incident_label} affecting {rec.organization} "
+        f"in {rec.country} on {rec.date_display}. The source actor is listed as {rec.actor}. "
+        f"Status: {rec.status}. Sector: {rec.sector}."
+    )
+    if rec.description:
+        return base + " Source summary: " + rec.description[:600]
+    return base
+
+
+def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
     text = md_path.read_text(encoding="utf-8")
     date_matches = list(DATE_RE.finditer(text))
-    if not date_matches:
-        return []
-
     records: List[VictimRecord] = []
 
-    for idx, dmatch in enumerate(date_matches):
-        date_display = dmatch.group(1).strip()
-        date_iso = parse_date_to_iso(date_display)
-        block_start = dmatch.end()
-        block_end = date_matches[idx + 1].start() if idx + 1 < len(date_matches) else len(text)
-        date_block = text[block_start:block_end]
-
+    for date_index, date_match in enumerate(date_matches):
+        date_display = date_match.group(1).strip()
+        try:
+            date_iso = parse_date_to_iso(date_display)
+        except ValueError:
+            continue
+        date_start = date_match.end()
+        date_end = date_matches[date_index + 1].start() if date_index + 1 < len(date_matches) else len(text)
+        date_block = text[date_start:date_end]
         entry_matches = list(ENTRY_RE.finditer(date_block))
-        for j, ematch in enumerate(entry_matches):
-            header = ematch.group(1).strip()
-            entry_start = ematch.end()
-            entry_end = entry_matches[j + 1].start() if j + 1 < len(entry_matches) else len(date_block)
+
+        for entry_index, entry_match in enumerate(entry_matches):
+            header = entry_match.group(1).strip()
+            entry_start = entry_match.end()
+            entry_end = entry_matches[entry_index + 1].start() if entry_index + 1 < len(entry_matches) else len(date_block)
             entry_block = date_block[entry_start:entry_end]
+            fields = parse_fields(entry_block)
 
-            country, organization = strip_flag_country_org(header)
-            actor = ""
-            sector = ""
-            domain = ""
-            status = ""
-            description = ""
+            country, organization = split_country_org(header)
+            actor = first_matching(fields, ["ransomware group", "actor", "threat actor", "groupe ransomware", "acteur"])
+            sector = first_matching(fields, ["sector", "secteur"])
+            status = first_matching(fields, ["status", "statut"])
+            website = first_matching(fields, ["website", "websites", "observed websites", "site web"])
+            description = first_matching(fields, ["description", "victim description", "leak description", "analysis", "sample analysis"])
 
-            for line in entry_block.splitlines():
-                line = line.strip()
-                if not line.startswith("- **"):
-                    continue
-                key_val = re.match(r"- \*\*(.+?)\*\*:\s*(.+)\s*$", line)
-                if not key_val:
-                    continue
-                key = key_val.group(1).strip().lower()
-                val = key_val.group(2).strip()
+            actor = clean_actor(actor) if actor else "Unknown"
+            sector = sector or "Unknown"
+            status = status or "Claim - Unverified"
+            incident_type = classify_incident(fields, status)
 
-                if "group" in key or "actor" in key or "cybercriminal" in key:
-                    actor = val
-                elif "sector" in key:
-                    sector = val
-                elif "website" in key or "site web" in key:
-                    domain = val
-                elif "status" in key or "statut" in key:
-                    status = val
-                elif "victim description" in key or "description victime" in key:
-                    description = val
-
-            if not actor:
-                actor = "unknown"
-            if not sector:
-                sector = "unknown"
-            if not status:
-                status = "Claim - Unverified"
-
-            organization = re.sub(r"\s+\((.*?)\)\s*$", "", organization).strip()
-
-            records.append(
-                VictimRecord(
-                    date_display=date_display,
-                    date_iso=date_iso,
-                    country=country,
-                    organization=organization,
-                    domain=ensure_url(domain),
-                    sector=sector,
-                    actor=actor.strip(),
-                    status=status,
-                    description=description.strip(),
-                )
-            )
+            records.append(VictimRecord(
+                index=len(records) + 1,
+                date_display=date_display,
+                date_iso=date_iso,
+                country=country,
+                organization=organization,
+                domain=extract_url(website),
+                sector=clean_inline(sector),
+                actor=actor,
+                status=clean_inline(status),
+                incident_type=incident_type,
+                description=description,
+                source_path=str(md_path.relative_to(repo)),
+            ))
 
     return records
 
 
+def base_objects(created: str) -> List[dict]:
+    return [
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": AFRINTEL_ID,
+            "created": "2024-01-01T00:00:00Z",
+            "modified": created,
+            "name": "AFRINTEL",
+            "identity_class": "organization",
+            "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations.",
+            "external_references": [{"source_name": "AFRINTEL", "url": "https://github.com/Hatchepsoute/AFRINTEL"}],
+        },
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": TLP_CLEAR_ID,
+            "created": "2022-10-01T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:CLEAR",
+            "definition": {"tlp": "clear"},
+        },
+    ]
+
+
 def build_month_bundle(records: List[VictimRecord], year: str, month_dir: str, github_base: str) -> dict:
-    source_url = f"{github_base.rstrip('/')}/reports/{year}/{month_dir}"
-    source_ref = {"source_name": "AFRINTEL", "url": source_url}
+    if not records:
+        raise ValueError("No victim records to convert")
 
-    objects: List[dict] = []
+    created = now_iso()
+    source_url = f"{github_base.rstrip('/')}/CyberAttackAfrica/{year}/{month_dir}/victims.md"
+    source_ref = {"source_name": "AFRINTEL victims.md", "url": source_url}
+
+    objects: List[dict] = base_objects(created)
     actor_ids: Dict[str, str] = {}
-    victim_ids: Dict[str, str] = {}
+    victim_ids: List[str] = []
     incident_ids: List[str] = []
-
-    report_name = f"AFRINTEL ransomware incidents - {month_dir} {year}"
+    relationship_ids: List[str] = []
 
     for rec in records:
-        actor_key = rec.actor.strip()
-        if actor_key not in actor_ids:
-            actor_id = stix_id("intrusion-set")
+        actor_key = rec.actor.lower()
+        actor_id = actor_ids.get(actor_key)
+        if not actor_id:
+            actor_id = stix_id("intrusion-set", f"{year}:{month_dir}:actor:{rec.actor}")
             actor_ids[actor_key] = actor_id
             objects.append({
                 "type": "intrusion-set",
                 "spec_version": "2.1",
                 "id": actor_id,
-                "created": now_iso(),
-                "modified": now_iso(),
-                "name": actor_key,
-                "description": f"Threat actor or ransomware group referenced by AFRINTEL for {month_dir} {year}.",
-                "labels": ["ransomware", "afrintel", slugify(year), slugify(month_dir)],
+                "created": created,
+                "modified": created,
+                "name": rec.actor,
+                "description": f"Threat actor, ransomware group, or source referenced by AFRINTEL for {month_dir} {year}. Claims are unverified unless stated otherwise.",
+                "labels": ["afrintel", "africa", "claim-unverified", slugify(year), slugify(month_dir)],
+                "created_by_ref": AFRINTEL_ID,
+                "object_marking_refs": [TLP_CLEAR_ID],
                 "external_references": [source_ref],
             })
 
-        victim_key = f"{rec.organization}|{rec.country}"
-        if victim_key not in victim_ids:
-            victim_id = stix_id("identity")
-            victim_ids[victim_key] = victim_id
-            ext_refs = [source_ref]
-            if rec.domain:
-                ext_refs.append({"source_name": "website", "url": rec.domain})
-
-            objects.append({
-                "type": "identity",
-                "spec_version": "2.1",
-                "id": victim_id,
-                "created": now_iso(),
-                "modified": now_iso(),
-                "name": rec.organization,
-                "identity_class": "organization",
-                "sectors": [normalize_sector(rec.sector)],
-                "description": rec.description or f"Victim organization in {rec.country}.",
-                "labels": ["victim", "organization", slugify(rec.country), "afrintel"],
-                "external_references": ext_refs,
-            })
-
-        normalized_status, incident_labels = normalize_status(rec.status)
-        incident_name = f"Ransomware attack against {rec.organization}"
-
-        incident_id = stix_id("incident")
-        incident_ids.append(incident_id)
-        ext_refs = [source_ref]
+        victim_id = stix_id("identity", f"{year}:{month_dir}:victim:{rec.index}:{rec.country}:{rec.organization}")
+        victim_ids.append(victim_id)
+        victim_refs = [source_ref]
         if rec.domain:
-            ext_refs.append({"source_name": "website", "url": rec.domain})
+            victim_refs.append({"source_name": "website", "url": rec.domain})
+
+        objects.append({
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": victim_id,
+            "created": created,
+            "modified": created,
+            "name": rec.organization,
+            "identity_class": "organization" if "/" not in rec.country else "group",
+            "sectors": [normalize_sector(rec.sector)],
+            "description": f"Victim entity or affected dataset recorded by AFRINTEL in {rec.country}. Sector: {rec.sector}.",
+            "labels": ["afrintel", "victim", slugify(rec.country), normalize_sector(rec.sector)],
+            "created_by_ref": AFRINTEL_ID,
+            "object_marking_refs": [TLP_CLEAR_ID],
+            "external_references": victim_refs,
+            "x_afrintel_country": rec.country,
+            "x_afrintel_source_path": rec.source_path,
+        })
+
+        normalized_status, labels = normalize_status(rec.status, rec.incident_type)
+        incident_id = stix_id("incident", f"{year}:{month_dir}:incident:{rec.index}:{rec.date_iso}:{rec.country}:{rec.organization}")
+        incident_ids.append(incident_id)
+        incident_refs = [source_ref]
+        if rec.domain:
+            incident_refs.append({"source_name": "website", "url": rec.domain})
 
         objects.append({
             "type": "incident",
             "spec_version": "2.1",
             "id": incident_id,
-            "created": now_iso(),
-            "modified": now_iso(),
-            "name": incident_name,
-            "description": rec.description or f"Claimed ransomware incident affecting {rec.organization} in {rec.country}.",
+            "created": created,
+            "modified": created,
+            "name": f"AFRINTEL May 2026 incident {rec.index:02d}: {rec.organization}",
+            "description": safe_description(rec),
             "first_seen": f"{rec.date_iso}T00:00:00Z",
-            "labels": incident_labels + [slugify(rec.country), normalize_sector(rec.sector)],
-            "external_references": ext_refs,
-            "extensions": {},
-            "x_opencti_incident_type": "ransomware",
+            "labels": labels + [slugify(rec.country), normalize_sector(rec.sector)],
+            "created_by_ref": AFRINTEL_ID,
+            "object_marking_refs": [TLP_CLEAR_ID],
+            "external_references": incident_refs,
+            "x_opencti_incident_type": "ransomware" if rec.incident_type == "ransomware" else "data-leak",
+            "x_afrintel_incident_index": rec.index,
             "x_afrintel_status": normalized_status,
             "x_afrintel_country": rec.country,
             "x_afrintel_sector_raw": rec.sector,
+            "x_afrintel_actor": rec.actor,
             "x_afrintel_date_display": rec.date_display,
+            "x_afrintel_source_path": rec.source_path,
         })
 
-        objects.append({
-            "type": "relationship",
-            "spec_version": "2.1",
-            "id": stix_id("relationship"),
-            "created": now_iso(),
-            "modified": now_iso(),
-            "relationship_type": "attributed-to",
-            "source_ref": incident_id,
-            "target_ref": actor_ids[actor_key],
-        })
+        for suffix, relationship_type, source_ref_id, target_ref_id in [
+            ("attributed", "attributed-to", incident_id, actor_id),
+            ("actor-targets", "targets", actor_id, victim_id),
+            ("incident-targets", "targets", incident_id, victim_id),
+        ]:
+            rel_id = stix_id("relationship", f"{year}:{month_dir}:{rec.index}:{suffix}")
+            relationship_ids.append(rel_id)
+            objects.append({
+                "type": "relationship",
+                "spec_version": "2.1",
+                "id": rel_id,
+                "created": created,
+                "modified": created,
+                "relationship_type": relationship_type,
+                "source_ref": source_ref_id,
+                "target_ref": target_ref_id,
+                "created_by_ref": AFRINTEL_ID,
+                "object_marking_refs": [TLP_CLEAR_ID],
+            })
 
-        objects.append({
-            "type": "relationship",
-            "spec_version": "2.1",
-            "id": stix_id("relationship"),
-            "created": now_iso(),
-            "modified": now_iso(),
-            "relationship_type": "targets",
-            "source_ref": actor_ids[actor_key],
-            "target_ref": victim_ids[victim_key],
-        })
-
-        objects.append({
-            "type": "relationship",
-            "spec_version": "2.1",
-            "id": stix_id("relationship"),
-            "created": now_iso(),
-            "modified": now_iso(),
-            "relationship_type": "targets",
-            "source_ref": incident_id,
-            "target_ref": victim_ids[victim_key],
-        })
-
-    report_id = stix_id("report")
-    object_refs = list(actor_ids.values()) + list(victim_ids.values()) + incident_ids
-    first_seen_dates = sorted({r.date_iso for r in records})
-    published = f"{first_seen_dates[0]}T00:00:00Z" if first_seen_dates else now_iso()
+    ransomware_count = sum(1 for rec in records if rec.incident_type == "ransomware")
+    leak_count = len(records) - ransomware_count
+    direct_countries = {rec.country for rec in records if "/" not in rec.country}
+    month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
+    report_id = stix_id("report", f"{year}:{month_dir}:report")
+    report_refs = list(actor_ids.values()) + victim_ids + incident_ids
 
     objects.append({
         "type": "report",
         "spec_version": "2.1",
         "id": report_id,
-        "created": now_iso(),
-        "modified": now_iso(),
-        "name": report_name,
-        "description": f"AFRINTEL monthly ransomware/extortion victim dataset for {month_dir} {year}.",
+        "created": created,
+        "modified": created,
+        "name": f"AFRINTEL {month_name.title()} {year} CyberAttackAfrica Report",
+        "description": (
+            f"STIX 2.1 bundle generated from AFRINTEL victims.md for {month_name.title()} {year}. "
+            f"Contains {len(records)} incidents: {ransomware_count} ransomware and {leak_count} data leaks/access sales "
+            f"across {len(direct_countries)} direct African country entries plus multi-country incidents. "
+            "All cybercriminal claims are treated as unverified unless independently corroborated."
+        ),
+        "published": f"{max(rec.date_iso for rec in records)}T00:00:00Z",
         "report_types": ["threat-report"],
-        "published": published,
-        "labels": ["afrintel", "monthly-report", slugify(year), slugify(month_dir)],
-        "object_refs": object_refs,
+        "labels": ["afrintel", "africa", f"{month_name}-{year}", "ransomware", "data-leaks", "access-sales", "osint"],
+        "created_by_ref": AFRINTEL_ID,
+        "object_marking_refs": [TLP_CLEAR_ID],
         "external_references": [source_ref],
+        "object_refs": report_refs,
+        "x_afrintel_total_incidents": len(records),
+        "x_afrintel_ransomware_count": ransomware_count,
+        "x_afrintel_data_leak_access_sale_count": leak_count,
+        "x_afrintel_victim_identity_count": len(victim_ids),
     })
 
-    return {
-        "type": "bundle",
-        "id": stix_id("bundle"),
-        "objects": objects,
-    }
+    bundle = {"type": "bundle", "id": stix_id("bundle", f"{year}:{month_dir}:bundle"), "objects": objects}
+    validate_bundle(bundle, expected_victims=len(records), expected_incidents=len(records))
+    return bundle
+
+
+def validate_bundle(bundle: dict, expected_victims: int, expected_incidents: int) -> None:
+    objects = bundle.get("objects", [])
+    ids = [obj.get("id") for obj in objects if obj.get("id")]
+    if len(ids) != len(set(ids)):
+        raise ValueError("Duplicate STIX IDs detected")
+    bad_ids = [obj_id for obj_id in ids if not STIX_ID_RE.match(obj_id)]
+    if bad_ids:
+        raise ValueError(f"Invalid STIX IDs detected: {bad_ids[:5]}")
+    id_set = set(ids)
+    missing_refs = []
+    for obj in objects:
+        for key, value in obj.items():
+            if key.endswith("_ref") and isinstance(value, str) and "--" in value and value not in id_set:
+                missing_refs.append((obj.get("id"), key, value))
+            elif key.endswith("_refs") and isinstance(value, list):
+                for item in value:
+                    if isinstance(item, str) and "--" in item and item not in id_set:
+                        missing_refs.append((obj.get("id"), key, item))
+    if missing_refs:
+        raise ValueError(f"Dangling STIX references detected: {missing_refs[:5]}")
+
+    victim_count = sum(1 for obj in objects if obj.get("type") == "identity" and "victim" in obj.get("labels", []))
+    incident_count = sum(1 for obj in objects if obj.get("type") == "incident")
+    if victim_count != expected_victims:
+        raise ValueError(f"Victim identity count mismatch: {victim_count} != {expected_victims}")
+    if incident_count != expected_incidents:
+        raise ValueError(f"Incident count mismatch: {incident_count} != {expected_incidents}")
+
+
+def reports_root(repo: Path) -> Path:
+    current = repo / "CyberAttackAfrica"
+    if current.exists():
+        return current
+    legacy = repo / "reports"
+    if legacy.exists():
+        return legacy
+    raise FileNotFoundError(f"Neither CyberAttackAfrica nor reports directory found under {repo}")
 
 
 def process_month(repo: Path, year: str, month_dir: str, github_base: str, output_root: Optional[Path] = None) -> Path:
-    month_path = repo / "reports" / year / month_dir
+    root = reports_root(repo)
+    month_path = root / year / month_dir
     victims_md = month_path / "victims.md"
-
     if not victims_md.exists():
         raise FileNotFoundError(f"victims.md not found: {victims_md}")
 
-    records = parse_month_victims(victims_md)
+    records = parse_month_victims(victims_md, repo)
     if not records:
         raise ValueError(f"No victim records parsed from {victims_md}")
 
     bundle = build_month_bundle(records, year, month_dir, github_base)
-
     out_root = output_root or (repo / "stix" / year / month_dir)
     out_root.mkdir(parents=True, exist_ok=True)
-
     month_slug = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     out_path = out_root / f"afrintel_{month_slug}_{year}_opencti.json"
-    out_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return out_path
 
 
-def find_month_dirs(reports_year_path: Path) -> List[str]:
-    months = []
-    for child in sorted(reports_year_path.iterdir()):
-        if child.is_dir() and re.match(r"^\d{2}-", child.name):
-            months.append(child.name)
-    return months
+def find_month_dirs(year_path: Path) -> List[str]:
+    return [child.name for child in sorted(year_path.iterdir()) if child.is_dir() and re.match(r"^\d{2}-", child.name)]
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate AFRINTEL OpenCTI STIX bundles from victims.md files.")
     parser.add_argument("--repo", required=True, help="Path to AFRINTEL repository root")
-    parser.add_argument("--year", help="Specific year, e.g. 2025")
-    parser.add_argument("--month", help="Specific month folder, e.g. 01-january")
-    parser.add_argument(
-        "--github-base",
-        default="https://github.com/Hatchepsoute/AFRINTEL/tree/main",
-        help="Base GitHub URL used to build source references",
-    )
-    parser.add_argument(
-        "--output-root",
-        help="Optional custom output root. Default: <repo>/stix/<year>/<month>/",
-    )
-
+    parser.add_argument("--year", help="Specific year, e.g. 2026")
+    parser.add_argument("--month", help="Specific month folder, e.g. 05-may")
+    parser.add_argument("--github-base", default="https://github.com/Hatchepsoute/AFRINTEL/tree/main", help="Base GitHub URL used to build source references")
+    parser.add_argument("--output-root", help="Optional custom output root. Default: <repo>/stix/<year>/<month>/")
     args = parser.parse_args()
+
     repo = Path(args.repo).resolve()
-
-    reports_root = repo / "reports"
-    if not reports_root.exists():
-        print(f"[ERROR] reports directory not found: {reports_root}", file=sys.stderr)
-        return 1
-
+    root = reports_root(repo)
     output_root = Path(args.output_root).resolve() if args.output_root else None
     generated: List[Path] = []
 
-    years = [args.year] if args.year else [p.name for p in sorted(reports_root.iterdir()) if p.is_dir()]
+    years = [args.year] if args.year else [p.name for p in sorted(root.iterdir()) if p.is_dir() and re.match(r"^\d{4}$", p.name)]
     for year in years:
-        year_path = reports_root / year
+        year_path = root / year
         if not year_path.exists():
             print(f"[WARN] year not found: {year_path}", file=sys.stderr)
             continue
-
         months = [args.month] if args.month else find_month_dirs(year_path)
         for month_dir in months:
-            month_path = year_path / month_dir
-            if not month_path.exists():
-                print(f"[WARN] month not found: {month_path}", file=sys.stderr)
-                continue
             try:
                 out = process_month(repo, year, month_dir, args.github_base, output_root)
                 generated.append(out)
-                print(f"[OK] Generated: {out}")
+                print(f"[OK] Generated and validated: {out}")
             except Exception as exc:
                 print(f"[ERROR] {year}/{month_dir}: {exc}", file=sys.stderr)
 
     if not generated:
         print("[ERROR] No STIX bundles generated.", file=sys.stderr)
         return 2
-
-    print(f"\nGenerated {len(generated)} bundle(s).")
+    print(f"Generated {len(generated)} bundle(s).")
     return 0
 
 

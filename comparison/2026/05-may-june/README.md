@@ -18,11 +18,11 @@ TLP:CLEAR – Public distribution
 
 | Indicator | May 2026 | June 2026 | Change |
 |---|---:|---:|---:|
-| Total incidents | 54 | 5 | -49 (significant) |
+| Total incidents | 57 | 5 | -52 (significant) |
 | Countries directly affected | 11 + multi | 2 + multi | Sharp decrease |
 | Distinct actors | 25+ | 5 | Decrease |
 | Ransomware | 16 | 0 | -16 (-100%) |
-| Data leaks / access sales | 38 | 5 | -33 (-87%) |
+| Data leaks / access sales | 41 | 5 | -36 (-88%) |
 | Government-related incidents | High | High | Stable |
 | Law enforcement exposure | Moderate | Critical | ↑↑ |
 | Fintech sector | Low | Critical | ↑↑ new |
@@ -38,7 +38,7 @@ xychart-beta
 title "Cyber incidents in Africa"
 x-axis ["May 2026","June 2026 (partial)"]
 y-axis "Incidents" 0 --> 60
-bar [54,5]
+bar [57,5]
 ```
 
 ---
@@ -48,7 +48,7 @@ bar [54,5]
 ```mermaid
 pie showData
     title May 2026 - Incident type distribution
-    "Data leaks / access sales" : 38
+    "Data leaks / access sales" : 41
     "Ransomware" : 16
 ```
 
@@ -66,7 +66,7 @@ pie showData
 ```mermaid
 flowchart LR
 
-MAY["May 2026\n54 incidents"]
+MAY["May 2026\n57 incidents"]
 JUN["June 2026\n5 incidents"]
 
 EG["🇪🇬 Egypt"]
@@ -107,7 +107,7 @@ JUN --> MULTI
 |---|---:|---:|:---:|
 | 🇪🇬 Egypt | 16 | 1 | ↓ |
 | 🇿🇦 South Africa | 14 | 0 | ↓ absent |
-| 🇲🇦 Morocco | 5 | 0 | ↓ absent |
+| 🇲🇦 Morocco | 7 | 0 | ↓ absent |
 | 🇹🇳 Tunisia | 5 | 0 | ↓ absent |
 | 🇳🇬 Nigeria | 3 | 2 | ↓ but present |
 | 🇩🇿 Algeria | 2 | 0 | ↓ absent |
@@ -120,7 +120,7 @@ JUN --> MULTI
 
 | Sector | May 2026 | June 2026 | Trend |
 |---|:---:|:---:|:---:|
-| Government / Administration | 14 (25.9%) | 3 (60%) | Dominates June |
+| Government / Administration | 17 (29.8%) | 3 (60%) | Dominates June |
 | Fintech / Cryptocurrency | 0 | 1 (20%) | **New entry** |
 | Aviation / Military | 0 | 1 (20%) | **New entry** |
 | Education / University | 5 (9.3%) | 0 | ↓ absent |
@@ -168,7 +168,7 @@ CREW["404Crew CT\n(both months)"]:::medium
 
 - **Ransomware:** 16 incidents in May, 0 in June. This is the most striking shift. No ransomware group published African victims in the documented June period.
 - **South Africa:** 14 incidents in May, 0 in June. The OpSouthAfrica campaign ended without replacement.
-- **Morocco:** 5 incidents in May, 0 in June.
+- **Morocco:** 7 incidents in May, 0 in June.
 - **Tunisia:** 5 incidents in May, 0 in June.
 - **Education sector:** 5 incidents in May (systemic Egypt breach), 0 in June.
 - **Databasehooligan:** 8 victims in May, no visible activity in June.
@@ -178,7 +178,7 @@ CREW["404Crew CT\n(both months)"]:::medium
 - **Law enforcement impersonation market:** two independent actors (Convince and Governor) sell EDR credentials and authenticated LEP portal accounts targeting at least 11 African countries. This represents a new structural threat to digital governance, absent from May's documented activity.
 - **Fintech as a high-value target:** Jeroid.co breach (Nigeria) is the first major fintech data leak of 2026 combining BVN, NIN, and biometric data at scale.
 - **Military/aviation sector:** Egyptian pilots database – a new sector category not seen in May.
-- **Nigeria dominant in June:** 2 of 5 directly attributed incidents, versus 3 of 54 in May.
+- **Nigeria dominant in June:** 2 of 5 directly attributed incidents, versus 3 of 57 in May.
 
 ### Continuities
 

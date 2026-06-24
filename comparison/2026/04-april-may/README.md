@@ -16,11 +16,11 @@ TLP:CLEAR – Public distribution
 
 | Indicator | April 2026 | May 2026 | Change |
 |---|---:|---:|---:|
-| Total incidents | 60 | 54 | -6 (-10%) |
+| Total incidents | 60 | 57 | -3 (-5%) |
 | Countries affected | 16 | 11 + multi-country | Narrower scope |
 | Distinct actors | 30+ | 25+ | Slight decrease |
 | Ransomware | 20 | 16 | -4 (-20%) |
-| Data leaks / access sales | 40 | 38 | -2 (-5%) |
+| Data leaks / access sales | 40 | 41 | +1 (+3%) |
 | Government-related incidents | Very High | High | Stable |
 | Education sector incidents | Moderate | Systemic | Sharp increase |
 | Identity / KYC leaks | Massive | High | Sustained |
@@ -34,7 +34,7 @@ xychart-beta
 title "Cyber incidents in Africa"
 x-axis ["April 2026","May 2026"]
 y-axis "Incidents" 0 --> 70
-bar [60,54]
+bar [60,57]
 ```
 
 ---
@@ -47,7 +47,7 @@ title "Ransomware vs data leaks/access sales"
 x-axis ["April 2026","May 2026"]
 y-axis "Incidents" 0 --> 50
 bar [20, 16]
-line [40, 38]
+line [40, 41]
 ```
 
 *Legend: bars = ransomware, line = data leaks/access sales*
@@ -60,7 +60,7 @@ line [40, 38]
 flowchart LR
 
 APR["April 2026\n60 incidents"]
-MAY["May 2026\n54 incidents"]
+MAY["May 2026\n57 incidents"]
 
 EG["🇪🇬 Egypt"]
 ZA["🇿🇦 South Africa"]
@@ -101,7 +101,7 @@ MAY --> CI
 |---|---:|---:|:---:|
 | 🇪🇬 Egypt | ~15 | 16 | ↑ |
 | 🇿🇦 South Africa | ~12 | 14 | ↑ |
-| 🇲🇦 Morocco | ~10 | 5 | ↓ |
+| 🇲🇦 Morocco | ~10 | 7 | ↓ |
 | 🇹🇳 Tunisia | ~5 | 5 | → |
 | 🇳🇬 Nigeria | ~5 | 3 | ↓ |
 | 🇩🇿 Algeria | ~4 | 2 | ↓ |
@@ -172,10 +172,10 @@ GRUB["Grubder\n(April dominant)"]:::low
 
 ### What decreased from April to May
 
-- **Morocco:** from 10+ incidents in April to 5 in May – still elevated but significant reduction.
+- **Morocco:** from 10+ incidents in April to 7 in May – still elevated, with a persistent data exfiltration campaign (RADEM Meknès, multi-entity bundle sale by anisanas2 and PKA291).
 - **Kenya:** April included the Kenya Airports Authority 2TB claim; May had only 1 incident.
 - **Healthcare:** CNOPS Morocco and widespread health incidents in April did not repeat at the same scale in May.
-- **Total incident volume:** slight decline from 60 to 54, driven primarily by a reduction in ransomware (-4) and multi-country incidents.
+- **Total incident volume:** slight decline from 60 to 57, driven primarily by a reduction in ransomware (-4). Data leaks increased slightly (+1).
 
 ### Structural continuities
 
@@ -188,7 +188,7 @@ GRUB["Grubder\n(April dominant)"]:::low
 
 ## Strategic assessment
 
-The April-to-May shift shows **sustained attack volume with a qualitative shift in targeting**. The overall reduction from 60 to 54 incidents is marginal; what changed is the sectoral focus. Education in Egypt became a strategic target category, and ransomware hit higher-impact government institutions (Tresor Public du Senegal). The emergence of NightSpire and consolidation of the 404Crew coalition signal ongoing ecosystem maturation.
+The April-to-May shift shows **sustained attack volume with a qualitative shift in targeting**. The overall reduction from 60 to 57 incidents is marginal; what changed is the sectoral focus. Education in Egypt became a strategic target category, and ransomware hit higher-impact government institutions (Tresor Public du Senegal). The emergence of NightSpire and consolidation of the 404Crew coalition signal ongoing ecosystem maturation.
 
 ### 30-60-90 day risk outlook (from June 2026)
 

@@ -244,10 +244,10 @@ CYMOT (cymot.com), un détaillant namibien de pièces automobiles, outils et éq
 ```mermaid
 pie
  title Répartition sectorielle (février 2026)
- "Gouvernement/Admin (3)" : 3
- "Airlines/Aviation (3)" : 3
+ "Gouvernement (3)" : 3
+ "Aviation (3)" : 3
  "Énergie (2)" : 2
- "Finance/FinTech (2)" : 2
+ "Finance (2)" : 2
  "Mines (2)" : 2
  "Juridique (1)" : 1
  "Médias (1)" : 1
@@ -255,7 +255,7 @@ pie
  "Conseil IT (1)" : 1
  "Immobilier (1)" : 1
  "Agriculture (1)" : 1
- "Détail/Comptabilité (2)" : 2
+ "Commerce (2)" : 2
 ```
 
 **Enseignements :**
