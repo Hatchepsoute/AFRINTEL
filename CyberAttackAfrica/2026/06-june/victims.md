@@ -16,7 +16,7 @@
   
 #### 🇲🇦 Morocco - Tlog.ma [Data Leak / Sale]
 
-- **Actor / Group:** anisanas2 (forum [Citizen])
+- **Actor / Group:** anisanas2
 - **Sector:** Logistics / Express Delivery
 - **Status:** Data Leak / Sale
 - **Website:** [tlog.ma](https://tlog.ma)

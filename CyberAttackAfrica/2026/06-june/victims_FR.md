@@ -16,7 +16,7 @@
   L'exposition des données personnelles (CIN, téléphone, email) combinée aux relevés académiques permet l'usurpation d'identité, le phishing ciblé et la fraude académique. La présence des relevés de notes permet aux employeurs ou concurrents d'identifier les performances des étudiants. Le CIN (identifiant national marocain) est un identifiant permanent, ce qui rend cette fuite particulièrement sensible pour la sécurité des identités nationales. La réputation de l'institution, fondée en 1954, est également menacée.
   
 #### 🇲🇦 Maroc - Tlog.ma [Fuite / Vente de données]
-- **Acteur / Groupe :** anisanas2 (forum [Citizen])
+- **Acteur / Groupe :** anisanas2 
 - **Secteur :** Logistique / Livraison express
 - **Statut :** Fuite / Vente de données
 - **Site web :** [tlog.ma](https://tlog.ma)
