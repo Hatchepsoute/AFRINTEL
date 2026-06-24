@@ -59,7 +59,7 @@
   
 #### 🇪🇬 Egypt - Egyptian Pilots Database [Database Leak / Sale]
 
-- **Actor / Group:** Xyphorix (forum [Citizen])
+- **Actor / Group:** Xyphorix 
 - **Sector:** Aviation / Government / Military
 - **Status:** Database Leak / Sale
 - **Website:** Not specified
@@ -88,7 +88,7 @@
 ---
 ### June 10, 2026
 #### 🇳🇬 Nigeria - Jeroid.co [Database Leak / Sale]
-- **Actor / Group:** burti (forum [Citizen])
+- **Actor / Group:** burti 
 - **Sector:** Cryptocurrency / Fintech / Exchange
 - **Status:** Database Leak / Sale
 - **Website:** [jeroid.co](https://jeroid.co) / [jeroid.ng](https://jeroid.ng)
@@ -108,7 +108,7 @@
   
 #### 🇿🇦 South Africa - UNISA (University of South Africa) [Data leak – Technical Support]
 
-- **Actor / Group:** GOD User (Pwnforums forum)
+- **Actor / Group:** GOD User 
 - **Sector:** Education / Technical Support / Higher Education
 - **Status:** Data leak
 - **Website:** [osprey.unisa.ac.za](https://osprey.unisa.ac.za)
@@ -137,7 +137,7 @@
 
 ### June 17, 2026
 #### 🌍 Africa (Multi-country) – Public Institutions & Law Enforcement
-- **Actor / Source:** Convince (via the cybercriminal forum [Immortal]) – Contacts: Telegram (@renavol), Session, Signal, Discord
+- **Actor / Source:** Convince (via the cybercriminal forum) 
 - **Sector:** Government / Law Enforcement
 - **Status:** Active offer
 - **Website:** Not specified
@@ -178,7 +178,8 @@
   * 🇾🇪 **Yemen (Governmental)**: $140
 - **Analysis:**  
   This offer follows the same logic as the "Convince" actor's, but with a more dangerous specificity: it sells not just raw email addresses, but **complete accounts that already have access to the official platform portals**. This means the buyer does not even need to draft fake EDR requests; they can directly log into the Meta or X interface using a genuine government agent's credentials. The risk is major: mass identity theft, extraction of personal data (including private messages via subpoenas), and manipulation of online content. The inclusion of countries like Palestine and Yemen in the "African" list (according to the seller) suggests an approximate geographical classification, but does not diminish the threat to legitimate African institutions involved.
-
+---
+---
 ### June 20, 2024
 #### 🇹🇿 Tanzania - BRELA (Business Registrations and Licensing Agency) [Data Breach]
 
@@ -194,7 +195,8 @@
   - **279,462 unique company registrations** with incorporation numbers, TINs, directors, shareholders, financial documents
 - **Analysis:**  
   Catastrophic national data breach. The exposure of TINs (Taxpayer Identification Numbers) combined with National IDs, passport numbers, and biometric data enables complete identity theft, financial fraud, tax fraud, and impersonation of business owners. Foreign nationals (Indian, Chinese, etc.) registered in Tanzania are also affected. The breach compromises the entire business registration ecosystem and threatens Tanzania's tax system and financial sector.
-
+---
+---
 ### June 21, 2026
 #### 🇳🇬 Nigeria - Nigerian Military (army.mil.ng) [Credential Leak]
 
@@ -203,13 +205,11 @@
 - **Status:** Data Leak (public)
 - **Website:** [army.mil.ng](https://army.mil.ng)
 - **Description:**  
-  Public leak of credentials and authentication data from the Nigerian military domain `army.mil.ng`. The dataset includes at least **20+ unique email accounts** belonging to military personnel, with plaintext passwords. Exposed accounts include high-level addresses (e.g., `hq.naic@army.mil.ng`, `na.cyber@army.mil.ng`, `ticnaic@army.mil.ng`) and various unit/battalion accounts. Credentials were captured from Chrome and Edge browsers and include login URLs for military webmail, DigitalGlobe satellite imagery portals (`securewatch.digitalglobe.com`), and other internal systems. The actor claims the leak is politically motivated, protesting government policies on terrorism.
+  Public leak of credentials and authentication data from the Nigerian military domain `army.mil.ng`. The dataset includes at least **20+ unique email accounts** belonging to military personnel, with plaintext passwords. Exposed accounts include high-level addresses and various unit/battalion accounts. Credentials were captured from Chrome and Edge browsers and include login URLs for military webmail, DigitalGlobe satellite imagery portals (`securewatch.digitalglobe.com`), and other internal systems. The actor claims the leak is politically motivated, protesting government policies on terrorism.
 - **Analysis:**  
   Extremely critical national security breach. Exposed military email accounts with plaintext passwords allow full access to internal communications, operational orders, intelligence sharing platforms, and satellite imagery services. This enables espionage, impersonation of military officers, sabotage of operations, and further compromise of classified systems. The presence of credentials for DigitalGlobe (used for reconnaissance) is particularly alarming. The Nigerian military must immediately revoke all exposed passwords and implement multi-factor authentication.
 
 ---
-
-### 24 June 2026
 
 
 

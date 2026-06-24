@@ -137,14 +137,14 @@
 ---
 ### 20 Juin 2026
 #### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l’ordre (Offre d’accès portails)
-- **Acteur / Source :** [Citizen] Governor (via forum cybercriminel)
+- **Acteur / Source :** Governor
 - **Secteur :** Gouvernement / Forces de l'ordre / Plateformes sociales
 - **Statut :** Offre active
 - **Site web :** Non spécifié
 - **Description :**  
   Un cybercriminel propose à la vente des comptes email gouvernementaux et policiers actifs, spécifiquement destinés à accéder aux **portails d'application de la loi (Law Enforcement Portals)** des grandes plateformes sociales (Meta, Instagram, TikTok, X, etc.). Ces portails officiels permettent aux autorités légitimes de :
   - **Effectuer des demandes de données (Subpoena)** : Obtenir des adresses IP, numéros de téléphone, emails, messages directs (DM), publications supprimées et informations sur les appareils.
-  - **Effectuer des demandes d'urgence (EDR)** : Obtenir des données moins complètes (sans les messages directs) en cas de danger immédiat.
+  - **Effectuer des demandes d'urgence (EDR) ou *Emergency Disclosure Requests* ** : Obtenir des données moins complètes (sans les messages directs) en cas de danger immédiat.
   - **Supprimer des comptes ou retirer des contenus** violant la loi.
   Le catalogue des comptes africains proposés comprend :
   * 🇪🇬 **Égypte (Gouvernemental)** : 120 $
@@ -157,11 +157,11 @@
   * 🇸🇱 **Sierra Leone (Gouvernemental)** : 80 $
   * 🇾🇪 **Yémen (Gouvernemental)** : 140 $
 - **Analyse :**  
-  Cette offre s'inscrit dans la même logique que celle de l'acteur « Convince », mais avec une spécificité plus dangereuse : elle ne vend pas seulement des adresses email brutes, mais des **comptes complets ayant déjà accès aux portails officiels des plateformes**. Cela signifie que l'acheteur n'a même pas besoin de rédiger de fausses demandes EDR ; il peut directement se connecter à l'interface Meta ou X avec les identifiants d'un véritable agent gouvernemental. Le risque est majeur : usurpation d'identité massive, extraction de données personnelles (y compris les messages privés via subpoena), et manipulation des contenus en ligne. La présence de pays comme la Palestine et le Yémen dans la liste « africaine » (selon le vendeur) suggère une classification géographique approximative, mais ne diminue pas la menace pour les institutions africaines légitimes concernées.
+  Cette offre s'inscrit dans la même logique que celle de l'acteur « Convince », mais avec une spécificité plus dangereuse : elle ne vend pas seulement des adresses email brutes, mais des **comptes complets ayant déjà accès aux portails officiels des plateformes**. Cela signifie que l'acheteur n'a même pas besoin de rédiger de fausses demandes EDR (*Emergency Disclosure Requests*) ; il peut directement se connecter à l'interface Meta ou X avec les identifiants d'un véritable agent gouvernemental. Le risque est majeur : usurpation d'identité massive, extraction de données personnelles (y compris les messages privés via subpoena), et manipulation des contenus en ligne. La présence de pays comme la Palestine et le Yémen dans la liste « africaine » (selon le vendeur) suggère une classification géographique approximative, mais ne diminue pas la menace pour les institutions africaines légitimes concernées.
 ---
 ### 17 Juin 2026
 #### 🌍 Afrique (Multi-pays) – Institutions Publiques & Forces de l'ordre
-- **Acteur / Source :** Convince (via le forum cybercriminel [Immortal]) – Contacts : Telegram (@renavol), Session, Signal, Discord
+- **Acteur / Source :** Convince
 - **Secteur :** Gouvernement / Forces de l'ordre
 - **Statut :** Offre active
 - **Site web :** Non spécifié
@@ -179,7 +179,8 @@
   * 🇲🇦 **Maroc :** 2 e-mails (70 $)
 - **Analyse :**  
   Cette offre ne constitue pas une fuite de données subie passivement par ces pays, mais représente une exposition critique de leurs vecteurs d'authentification officiels. La commercialisation de ces adresses, combinée au tutoriel EDR complet vendu par le même acteur, permet à des tiers malveillants d'obtenir indûment des données personnelles et d'utilisateurs sur les plateformes en ligne en exploitant la confiance accordée aux autorités de ces pays. Cela accentue significativement le risque d'usurpation d'identité administrative et de fraudes transfrontalières à l'échelle régionale et internationale. Cette menace est d'autant plus préoccupante qu'elle concerne plusieurs institutions déjà ciblées par des fuites de données en mai 2026 (Égypte, Maroc, Nigeria), créant un terrain favorable à des attaques combinées.
-  
+  ---
+  ---
 ### 20 Juin 2024
 #### 🇹🇿 Tanzanie - BRELA (Business Registrations and Licensing Agency) [Fuite de données]
 
@@ -195,7 +196,8 @@
   - **279 462 enregistrements uniques de sociétés** avec numéros d'incorporation, TIN, directeurs, actionnaires, documents financiers
 - **Analyse :**  
   Fuite nationale catastrophique. L'exposition des TIN (numéros d'identification fiscale) combinée aux identifiants nationaux, numéros de passeport et données biométriques permet l'usurpation d'identité complète, la fraude financière, la fraude fiscale et l'usurpation de propriétaires d'entreprises. Les ressortissants étrangers (Indiens, Chinois, etc.) enregistrés en Tanzanie sont également concernés. La fuite compromet tout l'écosystème d'enregistrement des entreprises et menace le système fiscal et le secteur financier tanzaniens.
-
+---
+---
 ### 21 Juin 2026
 #### 🇳🇬 Nigéria - Armée nigériane (army.mil.ng) [Fuite d'identifiants]
 
@@ -204,10 +206,10 @@
 - **Statut :** Fuite de données (publique)
 - **Site web :** [army.mil.ng](https://army.mil.ng)
 - **Description :**  
-  Fuite publique d'identifiants et de données d'authentification du domaine militaire nigérian `army.mil.ng`. L'ensemble comprend au moins **20+ comptes email uniques** de militaires, avec leurs mots de passe en clair. Les comptes exposés incluent des adresses de haut niveau (ex. `hq.naic@army.mil.ng`, `na.cyber@army.mil.ng`, `ticnaic@army.mil.ng`) et divers comptes d'unités/bataillons. Les identifiants ont été capturés depuis les navigateurs Chrome et Edge et incluent des URL de connexion vers la webmail militaire, les portails d'imagerie satellite DigitalGlobe (`securewatch.digitalglobe.com`) et d'autres systèmes internes. L'acteur justifie la fuite par une protestation politique contre la politique antiterroriste du gouvernement.
+  Fuite publique d'identifiants et de données d'authentification du domaine militaire nigérian `army.mil.ng`. L'ensemble comprend au moins **20+ comptes email uniques** de militaires, avec leurs mots de passe en clair. Les comptes exposés incluent des adresses de haut niveau et divers comptes d'unités/bataillons. Les identifiants ont été capturés depuis les navigateurs Chrome et Edge et incluent des URL de connexion vers la webmail militaire, les portails d'imagerie satellite DigitalGlobe (`securewatch.digitalglobe.com`) et d'autres systèmes internes. L'acteur justifie la fuite par une protestation politique contre la politique antiterroriste du gouvernement.
 - **Analyse :**  
   Fuite d'une gravité extrême pour la sécurité nationale. Les comptes email militaires avec mots de passe en clair permettent un accès total aux communications internes, aux ordres opérationnels, aux plateformes de partage de renseignement et aux services d'imagerie satellite. Cela facilite l'espionnage, l'usurpation d'identité d'officiers, le sabotage d'opérations et la compromission ultérieure de systèmes classifiés. La présence d'identifiants pour DigitalGlobe (utilisé pour la reconnaissance) est particulièrement alarmante. L'armée nigériane doit immédiatement révoquer tous les mots de passe exposés et mettre en place une authentification multi-facteurs.
 ---
-### 24 Juin 2026
+
 
 
