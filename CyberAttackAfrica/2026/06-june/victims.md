@@ -32,19 +32,30 @@
 
 #### 🇲🇦 Morocco - Mines d'Aouli [Data leak and revelation of strategic assets]
 
-- **Actor / Group:** anisanas2 (Darkforums forum)
-- **Sector:** Mining / State / Mineral extraction
-- **Status:** Data leak / Revelation of hidden assets
-- **Website:** Not applicable (company in liquidation)
-- **Description:**  
-  Massive leak of financial and tax documents from "Mines d'Aouli", a Moroccan state-owned company that has been in liquidation for over nine years. The leaked documents cover fiscal years from 2001 to 2025 and reveal the true nature of this "ghost" company. Exposed data includes:
-  - **Complete balance sheets (Assets/Liabilities)** from 2001 to 2025, showing stagnant assets and accumulated losses of nearly **39.3 million Dirhams**.
-  - **Tax declarations (Corporate Tax, VAT)** and reconciliation tables from net accounting result to taxable income, detailing adjustments and deductions.
-  - **Management result statements (ESG)** and profit formation tables, highlighting a total absence of revenue for several years.
-  - **Details of provisions:** an 8.6 million Dirham provision ("Provision sur dossiers M.P.") frozen since 2009, a receivable of **567,153.29 Dirhams** from the National Electricity Office (ONE) dating back to 2007, and 9 mining concessions in the Aouli region (zinc, lead, silver) granted by Royal Decree in 1951.
-  - **Internal correspondence:** a 2016 strategy letter from the HIMVEST group concerning the exploitation of concessions C154, C155, C156, detailing plans for slag heap valorisation and a feasibility study.
-- **Analysis:**  
-  This leak reveals a mechanism for capturing strategic assets. The company, officially in liquidation, generates no revenue, has no employees, and accumulates losses, yet it continues to exist legally for one sole reason: holding highly coveted mining titles. By not closing the liquidation, the State, through its main shareholder (BRPM, 98.3%), prevents transparent reallocation of these concessions. The data shows a public injection of **3 million Dirhams** ("Avance de l'État") with no interest or repayment obligation, a violation of Article 55 of the Commercial Code (Law 15-95) which limits liquidation to 3 years, and obscure provisions that protect unidentified interests. This situation allows the lock‑in of access to mineral resources, outside any competitive or public tender process. The potential value of the deposits is astronomical, while the company is artificially kept alive with minimal bank fees and legal fees.
+#### 🇲🇦 Morocco - Mines d’Aouli
+* **Threat Actor / Group:** anisanas2
+* **Sector:** Mining / State / Mineral Extraction
+* **Status:** Data leak / Disclosure of strategic assets
+* **Website:** Not applicable (company under liquidation)
+* **Description:**
+  A cybercriminal actor claims to have published internal documents allegedly linked to **Mines d’Aouli**, a Moroccan mining company referenced as being under liquidation in several observed fiscal documents.
+
+  The exposed documents appear to cover a long period, from **2001 to 2025**, and include tax filings, balance sheets, profit and loss statements, tax records, VAT tables, provision statements, accounting balances, bank journals and internal working documents.
+
+  The observed material points to a heavily degraded financial situation, including recurring losses, significant negative retained earnings, apparent absence of meaningful revenue over several recent fiscal years, financing debts, shareholder accounts, old receivables and long-term provisions for risks and charges.
+
+  Sensitive elements observed include a **3 million dirham state advance**, an **8.6 million dirham provision related to M.P. files**, a receivable linked to ONE, and documents referring to mining concessions and an exploitation project led by **HIMVEST** around concessions **C154, C155 and C156**.
+
+* **CTI Analysis:**
+  This leak goes beyond a standard document exposure. It reveals financial, fiscal and administrative material that could allow a third party to reconstruct the history of a mining company under liquidation, including its ownership structure, debts, provisions, receivables and certain mining-related assets or rights.
+
+  The main CTI value lies in the strategic nature of the documents. They may be used to understand the entity’s financial structure, institutional links, third-party relationships and the economic stakes associated with specific mining titles or concessions.
+
+  The observed data suggests an atypical situation: a company legally maintained in existence despite limited or absent operational activity in recent documents, while still holding mining or historical assets that may retain economic or strategic value.
+
+  At this stage, the incident can be assessed as an **internal document leak with reputational, institutional and economic impact**. Any conclusion related to legal irregularities, administrative lock-in or asset capture should remain treated as a hypothesis requiring independent verification.
+
+
   
 #### 🇪🇬 Egypt - Egyptian Pilots Database [Database Leak / Sale]
 

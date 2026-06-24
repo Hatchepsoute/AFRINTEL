@@ -29,22 +29,33 @@
 - **Analyse :**  
   L’exposition de données personnelles détaillées (noms, adresses précises, téléphones) couplées à l’historique d’achats permet le harcèlement physique, l’usurpation d’identité, le phishing ciblé et les cambriolages. Le jeu de données révèle également les relations commerciales et la chaîne d’approvisionnement d’entreprises marocaines (fournisseurs comme Maison des Parfums, Gurkan cargo, etc.). Le même acteur que pour la fuite de l’IMT Maroc indique une campagne soutenue contre des entités marocaines.
   
-#### 🇲🇦 Maroc - Mines d'Aouli [Fuite de données et révélation d'actifs stratégiques]
 
-- **Acteur / Groupe :** anisanas2 (forum Darkforums)
-- **Secteur :** Mines / État / Extraction minière
-- **Statut :** Fuite de données / Révélation d'actifs cachés
-- **Site web :** Non applicable (société en liquidation)
-- **Description :**  
-  Fuite massive des documents financiers et fiscaux de la société "Mines d'Aouli", une entreprise d'État marocaine en liquidation depuis plus de neuf ans. Les documents divulgués couvrent les exercices de 2001 à 2025 et révèlent la véritable nature de cette société "fantôme". Données exposées :
-  - **Bilans comptables complets (Actif/Passif)** de 2001 à 2025, montrant des actifs stagnants et des pertes cumulées de près de **39,3 millions de Dirhams**.
-  - **Déclarations fiscales (IS, TVA)** et tableaux de passage du résultat net au résultat fiscal, détaillant les réintégrations et déductions.
-  - **États des soldes de gestion (ESG)** et tableaux de formation des résultats, mettant en évidence l'absence totale de chiffre d'affaires depuis plusieurs années.
-  - **Détails des provisions** : une provision "sur dossiers M.P." de **8,6 millions de Dirhams** gelée depuis 2009, une créance de **567 153,29 Dirhams** de l'ONE (Office National de l'Électricité) datant de 2007, ainsi que 9 concessions minières dans la région d'Aouli (zinc, plomb, argent) accordées par décret royal en 1951.
-  - **Correspondance interne** : une lettre de stratégie (2016) du groupe HIMVEST concernant l'exploitation des concessions C154, C155, C156, détaillant les plans pour la valorisation des haldes et l'étude de faisabilité.
-- **Analyse :**  
-  Cette fuite révèle un mécanisme de captation d'actifs stratégiques. La société, officiellement en liquidation, ne génère aucun revenu, n'a pas d'employés et accumule des pertes, mais elle continue d'exister légalement pour une seule raison : détenir des titres miniers extrêmement convoités. En ne clôturant pas la liquidation, l'État, via son actionnaire principal (BRPM, 98,3%), empêche la réattribution transparente de ces concessions. Les données montrent une injection publique de **3 millions de Dirhams** ("Avance de l'État") sans intérêt ni obligation de remboursement, un manquement à l'article 55 du Code de Commerce (Loi 15-95) qui limite la liquidation à 3 ans, et des provisions obscures qui protègent des intérêts non identifiés. Cette situation permet de verrouiller l'accès aux ressources minières, hors de tout processus concurrentiel ou d'appel d'offres public. La valorisation potentielle des gisements est astronomique, tandis que la société est maintenue artificiellement en vie avec des frais bancaires minimes et des honoraires d'avocats.
-  
+#### 🇲🇦 Maroc - Mines d’Aouli
+* **Acteur / Groupe :** anisanas2
+* **Secteur :** Mines / État / Extraction minière
+- **Statut :** Fuite de données / Révélation d’actifs stratégiques
+* **Site web :** Non applicable (société en liquidation)
+* **Description :**
+  Un acteur cybercriminel revendique la publication de documents internes attribués à **Mines d’Aouli**, société marocaine du secteur minier mentionnée comme étant en liquidation dans plusieurs documents fiscaux observés.
+
+  Les documents exposés semblent couvrir une période longue, allant de **2001 à 2025**, et comprennent notamment des liasses fiscales, bilans comptables actif/passif, comptes de produits et charges, déclarations fiscales, tableaux de TVA, états de provisions, balances comptables, journaux bancaires et documents internes de travail.
+
+  Les éléments observés font apparaître une situation financière fortement dégradée, avec des pertes récurrentes, un report à nouveau négatif important, une absence apparente de chiffre d’affaires significatif sur plusieurs exercices récents, des dettes de financement, des comptes d’associés, des créances anciennes et des provisions durables pour risques et charges.
+
+  Parmi les éléments sensibles relevés figurent notamment une **avance de l’État de 3 millions de dirhams**, une **provision sur dossiers M.P. de 8,6 millions de dirhams**, une créance liée à l’ONE, ainsi que des documents évoquant des concessions minières et un projet d’exploitation porté par **HIMVEST** autour des concessions **C154, C155 et C156**.
+
+* **Analyse :**
+  Cette fuite dépasse le cadre d’une simple exposition documentaire. Elle révèle des éléments financiers, fiscaux et administratifs permettant de reconstituer l’historique d’une société minière en liquidation, son actionnariat, ses dettes, ses provisions, ses créances et certains actifs ou droits miniers associés.
+
+  L’intérêt CTI principal réside dans la portée stratégique des documents. Ils peuvent être exploités pour comprendre la structure financière de l’entité, ses liens institutionnels, ses relations avec des tiers, ainsi que les enjeux économiques associés à certains titres ou concessions minières.
+
+  Les données observées suggèrent une situation atypique : une société maintenue juridiquement en existence malgré une activité opérationnelle limitée ou absente dans les documents récents, avec des actifs miniers ou historiques susceptibles de conserver une valeur économique ou stratégique.
+
+  À ce stade, l’incident peut être qualifié comme une **fuite de documents internes à impact réputationnel, institutionnel et économique**. Les conclusions relatives à une éventuelle irrégularité juridique, à un verrouillage administratif ou à une captation d’actifs doivent toutefois rester considérées comme des hypothèses nécessitant une vérification indépendante.
+
+---
+
+
 #### 🇪🇬 Égypte - Base de données des pilotes égyptiens [Fuite / Vente de base de données]
 
 - **Acteur / Groupe :** Xyphorix (forum [Citizen])
