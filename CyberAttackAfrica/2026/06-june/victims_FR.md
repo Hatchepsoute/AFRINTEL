@@ -1,5 +1,7 @@
 # Victimes africaines - Juin 2026 (40 incidents)
 
+> **Note de lecture ransomware :** une fiche ransomware est intégrée lorsqu'AFRINTEL a observé la victime sur le site de divulgation du groupe. `Claim - Unverified` signifie qu'aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte. Cela ne signifie pas que la publication du groupe n'a pas été observée. Sans données analysées, AFRINTEL ne déduit ni chiffrement, ni interruption opérationnelle, ni vecteur d'accès initial.
+
 ### 01 Juin 2026
 #### 🇬🇦 Gabon - Finam Gabon
 
@@ -21,14 +23,6 @@
 
   Lors du suivi réalisé en juin 2026, aucun fichier ni échantillon de données attribué à Finam Gabon n'était publiquement accessible sur le leak site de DeadLock. Le sous-domaine associé au téléchargement des données renvoyait une réponse HTTP 403.
 
-- **Analyse :**
-  L'absence de divulgation ne semble pas liée à une indisponibilité générale de l'infrastructure de DeadLock. Le leak site du groupe reste actif, de nouvelles victimes continuent d'y être ajoutées et les données de nombreuses autres organisations sont effectivement publiées.
-
-  La situation paraît donc spécifique à Finam Gabon. Elle pourrait notamment s'expliquer par une négociation prolongée, un accord avec la victime, un paiement total ou partiel de la rançon, une vente privée des données ou une exfiltration insuffisante pour permettre une publication crédible.
-
-  Aucune preuve publique ne permet toutefois de confirmer qu'une rançon a été payée ou qu'un accord a été conclu.
-
-  Finam Gabon doit donc être comptabilisée comme une victime revendiquée par DeadLock, mais pas comme une victime dont les données ont été publiquement divulguées.
 ---
 ### 01 Juin 2026
 #### 🇳🇬 Nigeria - Fidelity Pension Managers
@@ -39,7 +33,7 @@
 - **Site web :** [fidelitypensionmanagers.com](https://www.fidelitypensionmanagers.com/)
 
 - **Description :**
-  Fidelity Pension Managers est décrit dans le fichier source comme un administrateur de fonds de pension agréé au Nigeria, avec des services numériques pour les comptes retraite. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Fidelity Pension Managers est un administrateur de fonds de pension agréé au Nigeria, avec des services numériques pour les comptes retraite. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 02 juin 2026
 #### 🇿🇦 Afrique du Sud - African National Congress (ANC)
@@ -69,7 +63,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [bouri.net](https://bouri.net/)
 
 - **Description :**
-  Bouri Group est décrit dans le fichier source comme un groupe égyptien actif dans la fabrication, l'importation et la distribution de biens domestiques et d'électroménager. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Bouri Group est un groupe égyptien actif dans la fabrication, l'importation et la distribution de biens domestiques et d'électroménager. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 05 Juin 2026
 #### 🇿🇦 Afrique du Sud - Access Dental
@@ -80,7 +74,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [accessdental.co.za](https://www.accessdental.co.za/)
 
 - **Description :**
-  Access Dental est listée dans le fichier source comme une entité sud-africaine du secteur dentaire. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Access Dental est une organisation sud-africaine active dans le secteur dentaire. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 05 Juin 2026
 #### 🇿🇼 Zimbabwe - First Mutual Holdings
@@ -91,7 +85,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [firstmutual.co.zw](https://www.firstmutual.co.zw/)
 
 - **Description :**
-  First Mutual Holdings est listée dans le fichier source comme une organisation financière zimbabwéenne. La source mentionne une base de données interne, sans détail confirmé indépendamment dans la fiche victime.
+  First Mutual Holdings est un groupe de services financiers zimbabwéen. AFRINTEL a observé sa publication sur le site de divulgation de Nightspire, où le groupe mentionne une base de données interne. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le contenu de la base, le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 06 Juin 2026
 #### 🇲🇦 Maroc - IMT (Institut des Mines de Touissit) [Fuite de données]
@@ -188,7 +182,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 ### 10 Juin 2026
 #### 🇳🇬 Nigéria - Jeroid.co [Fuite / Vente de base de données]
 
-- **Acteur / Groupe :** burti (forum [Citizen])
+- **Acteur / Groupe :** burti
 - **Secteur :** Finance / Banking
 - **Statut :** Claim - Data Sample Published
 - **Site web :** [jeroid.co](https://jeroid.co) / [jeroid.ng](https://jeroid.ng)
@@ -258,7 +252,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [elgouna.com](https://www.elgouna.com/hotels/sheraton-miramar-resort-el-gouna)
 
 - **Description :**
-  Sheraton Miramar Resort El Gouna est listé dans le fichier source comme un établissement hôtelier situé en Égypte. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Sheraton Miramar Resort El Gouna est un établissement hôtelier situé à El Gouna, en Égypte. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 16 Juin 2026
 #### 🇹🇳 Tunisie - Sumitomo Electric Bordnetze, site SEBN Tunisia / Fejja
@@ -269,7 +263,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [sebn.com](https://www.sebn.com/en/locations/sebn-tn/)
 
 - **Description :**
-  Sumitomo Electric Bordnetze est un équipementier automobile. Le fichier source mentionne explicitement le site SEBN Tunisia / Fejja et un volume de données revendiqué lié à cette opération tunisienne. Aucun échantillon de données publié n'a été observé indépendamment à ce stade.
+  Sumitomo Electric Bordnetze est un équipementier automobile disposant d'une implantation sur le site SEBN Tunisia / Fejja. AFRINTEL a observé ce site tunisien dans la publication ransomware d'Aurora, avec un volume de données revendiqué. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le contenu, le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 17 Juin 2026
 #### 🌍 Afrique (Multi-pays) - Institutions Publiques & Forces de l'ordre
@@ -303,7 +297,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [greatfoods.com.eg](https://greatfoods.com.eg/)
 
 - **Description :**
-  Great Foods est décrit dans le fichier source comme une société égyptienne de fabrication et de distribution alimentaire, membre du groupe El Naggar. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Great Foods est une société égyptienne de fabrication et de distribution alimentaire, membre du groupe El Naggar. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇸🇳 Sénégal - Cour des Comptes du Sénégal
 
@@ -328,7 +322,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [bvi.co.bw](https://bvi.co.bw/)
 
 - **Description :**
-  Botswana Vaccine Institute est listé dans le fichier source comme une organisation pharmaceutique animale basée au Botswana. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Botswana Vaccine Institute est une organisation botswanaise spécialisée dans la production de vaccins vétérinaires. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇿🇦 Afrique du Sud - Grey High School
 
@@ -338,7 +332,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [greyhighschool.com](https://www.greyhighschool.com/)
 
 - **Description :**
-  Grey High School est listée dans le fichier source comme un établissement scolaire sud-africain. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Grey High School est un établissement d'enseignement secondaire en Afrique du Sud. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇲🇺 Maurice - Nundun Gopee & Co Ltd
 
@@ -348,7 +342,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** [nundungopee.mu](http://www.nundungopee.mu)
 
 - **Description :**
-  Nundun Gopee & Co Ltd est associée dans le fichier source au domaine nundungopee.mu et à Maurice. La description source étant limitée, l'entrée est conservée comme revendication non vérifiée.
+  Nundun Gopee & Co Ltd est une organisation mauricienne associée au domaine nundungopee.mu. AFRINTEL a observé sa publication sur le site de divulgation de LockBit 5. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 19 Juin 2026
 #### 🇲🇦 Maroc - MUPRAS RAM
@@ -465,7 +459,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Site web :** [cbl.gov.ly](https://cbl.gov.ly/en/)
 
 - **Description :**
-  La Central Bank of Libya est l'institution bancaire centrale libyenne. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  La Central Bank of Libya est l'institution bancaire centrale libyenne. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 23 Juin 2026
 #### 🇰🇪 Kenya - Kenya National Highways Authority (KeNHA)
@@ -476,7 +470,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Site web :** [kenha.co.ke](https://kenha.co.ke/)
 
 - **Description :**
-  Kenya National Highways Authority est l'autorité publique kényane chargée de la construction, de la gestion et de la maintenance des routes nationales. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Kenya National Highways Authority est l'autorité publique kényane chargée de la construction, de la gestion et de la maintenance des routes nationales. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 
 
@@ -527,7 +521,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Site web :** [clc-tn.com](https://clc-tn.com/)
 
 - **Description :**
-  Centrale Laitière du Cap-Bon est décrite dans le fichier source comme une société laitière tunisienne et une filiale de Délice Holding, spécialisée dans la collecte, le traitement, le conditionnement UHT et la distribution de lait. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Centrale Laitière du Cap-Bon est une société laitière tunisienne et une filiale de Délice Holding, spécialisée dans la collecte, le traitement, le conditionnement UHT et la distribution de lait. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇲🇦 Maroc - Avito.ma
 
@@ -682,7 +676,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Site web :** [monoprix.tn](https://www.monoprix.tn)
 
 - **Description :**
-  monoprix.tn est associé dans le fichier source au secteur de la distribution en Tunisie. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  monoprix.tn est une plateforme tunisienne de distribution. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇿🇦 Afrique du Sud - Fidelity Security Group
 
@@ -692,7 +686,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Site web :** [fidelity-services.com](https://fidelity-services.com/)
 
 - **Description :**
-  Fidelity Security Group est décrit dans le fichier source comme un fournisseur sud-africain de services et solutions de sécurité. L'entrée est traitée comme une revendication ransomware ou extorsion non vérifiée.
+  Fidelity Security Group est un fournisseur sud-africain de services et solutions de sécurité. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
 ### 29 Juin 2026
 #### 🇱🇾 Libye - Ministry of Technical and Vocational Education

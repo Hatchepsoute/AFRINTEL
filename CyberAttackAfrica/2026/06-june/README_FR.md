@@ -313,7 +313,7 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 
 | Pays | Acteur | Date | Victime | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| 🇬🇦 Gabon | DeadLock | 1er juin | Finam Gabon | Échéance de divulgation annoncée pour le 15 mai mais aucune donnée jamais observée publiquement ; négociation, règlement privé, vente privée ou exfiltration insuffisante possibles ; aucune de ces hypothèses n'est confirmée. |
+| 🇬🇦 Gabon | DeadLock | 1er juin | Finam Gabon | Échéance de divulgation annoncée pour le 15 mai ; aucune donnée n'était publiquement accessible lors du suivi AFRINTEL et la raison de cette absence de publication reste inconnue. |
 | 🇿🇼 Zimbabwe | Nightspire | 5 juin | First Mutual Holdings | Revendication non vérifiée. |
 | 🇸🇳 Sénégal | Krybit | 17 juin | Cour des Comptes du Sénégal | 19,73 Go ; documents d'audit, budgétaires et RH de l'institution supérieure de contrôle du pays. |
 | 🇧🇼 Botswana | LockBit 5 | 18 juin | Botswana Vaccine Institute | Revendication non vérifiée. |
@@ -445,7 +445,7 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 
 - L'opérateur réel derrière les fuites de "plateforme de gestion de startups non identifiée" et "entreprise marocaine de livraison non identifiée" (toutes deux attribuées à anisanas2) n'a pas été établi ; sans plateforme nommée, les personnes concernées ne peuvent pas être notifiées de manière significative.
 - Plusieurs revendications ransomware de ce mois (Bouri Group, Access Dental, Sheraton Miramar, Great Foods, Central Bank of Libya, KeNHA, monoprix.tn, Fidelity Security Group et d'autres) ne comportent aucun échantillon publié ; AFRINTEL les enregistre comme des revendications, pas des compromissions confirmées, et leur statut réel reste inconnu.
-- La question de savoir si l'absence de publication pour Finam Gabon reflète un paiement de rançon, un règlement privé ou une exfiltration ratée reste non confirmée.
+- La raison pour laquelle la publication annoncée des données de Finam Gabon n'était pas accessible reste inconnue.
 - La portée réelle des catalogues d'identifiants Convince et Governor pourrait dépasser ce qui a été publiquement listé ; les deux pourraient représenter des inventaires partiels.
 
 ---

@@ -1,5 +1,7 @@
 # African victims - June 2026 (40 incidents)
 
+> **Ransomware reading note:** a ransomware entry is included when AFRINTEL observed the victim listing on the group's leak site. `Claim - Unverified` means that no published data or accessible sample was available for analysis at collection time. It does not mean that the listing itself was not observed. Without analysed data, AFRINTEL does not infer encryption, operational disruption or the initial access vector.
+
 ### June 01, 2026
 #### 🇬🇦 Gabon - Finam Gabon
 
@@ -21,14 +23,6 @@
 
   During AFRINTEL monitoring in June 2026, no files or data samples attributed to Finam Gabon were publicly accessible on DeadLock's leak site. The download subdomain associated with the victim returned an HTTP 403 response.
 
-- **Analysis:**
-  The absence of a data release does not appear to result from a general failure of DeadLock's infrastructure. The group's leak site remains active, new victims continue to be listed and data belonging to many other organizations is publicly available.
-
-  The situation therefore appears to be specific to Finam Gabon. Possible explanations include extended negotiations, an agreement with the victim, full or partial ransom payment, a private sale of the data or insufficient data exfiltration to support a credible public release.
-
-  However, no public evidence confirms that a ransom was paid or that an agreement was reached.
-
-  Finam Gabon should therefore be recorded as a victim claimed by DeadLock, but not as a victim whose data was publicly disclosed.
 ---
 ### June 01, 2026
 #### 🇳🇬 Nigeria - Fidelity Pension Managers
@@ -39,7 +33,7 @@
 - **Website:** [fidelitypensionmanagers.com](https://www.fidelitypensionmanagers.com/)
 
 - **Description:**
-  Fidelity Pension Managers is described in the source file as a licensed pension fund administrator in Nigeria, with digital services for retirement accounts. The entry is treated as an unverified ransomware or extortion claim.
+  Fidelity Pension Managers is a licensed pension fund administrator in Nigeria, with digital services for retirement accounts. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 02, 2026
 #### 🇿🇦 South Africa - African National Congress (ANC)
@@ -68,7 +62,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [bouri.net](https://bouri.net/)
 
 - **Description:**
-  Bouri Group is described in the source file as an Egyptian group active in the manufacturing, import and distribution of household goods and home appliances. The entry is treated as an unverified ransomware or extortion claim.
+  Bouri Group is an Egyptian group active in the manufacturing, import and distribution of household goods and home appliances. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 05, 2026
 #### 🇿🇦 South Africa - Access Dental
@@ -79,7 +73,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [accessdental.co.za](https://www.accessdental.co.za/)
 
 - **Description:**
-  Access Dental is listed in the source file as a South African entity in the dental sector. The entry is treated as an unverified ransomware or extortion claim.
+  Access Dental is a South African organization operating in the dental sector. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 05, 2026
 #### 🇿🇼 Zimbabwe - First Mutual Holdings
@@ -90,7 +84,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [firstmutual.co.zw](https://www.firstmutual.co.zw/)
 
 - **Description:**
-  First Mutual Holdings is listed in the source file as a Zimbabwean financial organization. The source mentions an internal database but does not provide independently confirmed details in the victim card.
+  First Mutual Holdings is a Zimbabwean financial services group. AFRINTEL observed its listing on Nightspire's leak site, where the group referred to an internal database. No published data or accessible sample was available for analysis at collection time, so the database content, encryption status, operational impact and initial access vector remain unknown.
 ---
 ### June 06, 2026
 #### 🇲🇦 Morocco - IMT (Institut des Mines de Touissit) [Data Leak]
@@ -257,7 +251,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [elgouna.com](https://www.elgouna.com/hotels/sheraton-miramar-resort-el-gouna)
 
 - **Description:**
-  Sheraton Miramar Resort El Gouna is listed in the source file as a hotel located in Egypt. The entry is treated as an unverified ransomware or extortion claim.
+  Sheraton Miramar Resort El Gouna is a hotel located in El Gouna, Egypt. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 16, 2026
 #### 🇹🇳 Tunisia - Sumitomo Electric Bordnetze, SEBN Tunisia / Fejja site
@@ -268,7 +262,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [sebn.com](https://www.sebn.com/en/locations/sebn-tn/)
 
 - **Description:**
-  Sumitomo Electric Bordnetze is an automotive supplier. The source file explicitly mentions the SEBN Tunisia / Fejja site and a claimed data volume associated with this Tunisian operation. No published data sample was independently observed at this stage.
+  Sumitomo Electric Bordnetze is an automotive supplier with an operation at the SEBN Tunisia / Fejja site. AFRINTEL observed this Tunisian site in Aurora's ransomware listing, together with a claimed data volume. No published data or accessible sample was available for analysis at collection time; the content, encryption status, operational impact and initial access vector remain unknown.
 ---
 ### June 17, 2026
 #### 🌍 Africa (Multi-country) - Public Institutions & Law Enforcement
@@ -302,7 +296,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [greatfoods.com.eg](https://greatfoods.com.eg/)
 
 - **Description:**
-  Great Foods is described in the source file as an Egyptian food manufacturing and distribution company, part of El Naggar Group. The entry is treated as an unverified ransomware or extortion claim.
+  Great Foods is an Egyptian food manufacturing and distribution company, part of El Naggar Group. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 #### 🇸🇳 Senegal - Cour des Comptes du Sénégal
 
@@ -327,7 +321,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [bvi.co.bw](https://bvi.co.bw/)
 
 - **Description:**
-  Botswana Vaccine Institute is listed in the source file as an animal pharmaceutical organization based in Botswana. The entry is treated as an unverified ransomware or extortion claim.
+  Botswana Vaccine Institute is a Botswana-based animal-health organization producing veterinary vaccines. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 #### 🇿🇦 South Africa - Grey High School
 
@@ -337,7 +331,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [greyhighschool.com](https://www.greyhighschool.com/)
 
 - **Description:**
-  Grey High School is listed in the source file as a South African school. The entry is treated as an unverified ransomware or extortion claim.
+  Grey High School is a secondary school in South Africa. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 #### 🇲🇺 Mauritius - Nundun Gopee & Co Ltd
 
@@ -347,7 +341,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** [nundungopee.mu](http://www.nundungopee.mu)
 
 - **Description:**
-  Nundun Gopee & Co Ltd is associated in the source file with the domain nundungopee.mu and Mauritius. The source description is limited, so the entry is retained as an unverified claim.
+  Nundun Gopee & Co Ltd is a Mauritian organization associated with the domain nundungopee.mu. AFRINTEL observed its listing on LockBit 5's leak site. No published data or accessible sample was available for analysis at collection time; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 19, 2026
 #### 🇲🇦 Morocco - MUPRAS RAM
@@ -465,7 +459,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 - **Website:** [cbl.gov.ly](https://cbl.gov.ly/en/)
 
 - **Description:**
-  The Central Bank of Libya is Libya's central banking institution. The entry is treated as an unverified ransomware or extortion claim.
+  The Central Bank of Libya is Libya's central banking institution. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 23, 2026
 #### 🇰🇪 Kenya - Kenya National Highways Authority (KeNHA)
@@ -476,7 +470,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 - **Website:** [kenha.co.ke](https://kenha.co.ke/)
 
 - **Description:**
-  Kenya National Highways Authority is the Kenyan public authority responsible for the construction, management and maintenance of national roads. The entry is treated as an unverified ransomware or extortion claim.
+  Kenya National Highways Authority is the Kenyan public authority responsible for the construction, management and maintenance of national roads. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 
 
@@ -527,7 +521,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Website:** [clc-tn.com](https://clc-tn.com/)
 
 - **Description:**
-  Centrale Laitière du Cap-Bon is described in the source file as a Tunisian dairy company and a subsidiary of Delice Holding, specializing in milk collection, processing, UHT packaging and distribution. The entry is treated as an unverified ransomware or extortion claim.
+  Centrale Laitière du Cap-Bon is a Tunisian dairy company and a subsidiary of Delice Holding, specializing in milk collection, processing, UHT packaging and distribution. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 #### 🇲🇦 Morocco - Avito.ma
 
@@ -682,7 +676,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Website:** [monoprix.tn](https://www.monoprix.tn)
 
 - **Description:**
-  monoprix.tn is associated in the source file with the retail sector in Tunisia. The entry is treated as an unverified ransomware or extortion claim.
+  monoprix.tn is a Tunisian retail platform. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 
 #### 🇿🇦 South Africa - Fidelity Security Group
 
@@ -692,7 +686,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Website:** [fidelity-services.com](https://fidelity-services.com/)
 
 - **Description:**
-  Fidelity Security Group is described in the source file as a South African provider of security services and solutions. The entry is treated as an unverified ransomware or extortion claim.
+  Fidelity Security Group is a South African provider of security services and solutions. AFRINTEL observed the victim listing on the ransomware group's leak site. At collection time, no published data or accessible sample was available for analysis. The listing is therefore documented as an observed ransomware claim; encryption, operational disruption and the initial access vector remain unknown.
 ---
 ### June 29, 2026
 #### 🇱🇾 Libya - Ministry of Technical and Vocational Education

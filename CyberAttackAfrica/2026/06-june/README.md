@@ -313,7 +313,7 @@ Two Libyan ministries hit by the same actor on consecutive days at the end of Ju
 
 | Country | Actor | Date | Victim | Notes |
 | :--- | :--- | :--- | :--- | :--- |
-| 🇬🇦 Gabon | DeadLock | June 1 | Finam Gabon | Disclosure deadline announced for May 15 but no data was ever observed publicly; possible negotiation, private settlement, private sale, or insufficient exfiltration; none is confirmed. |
+| 🇬🇦 Gabon | DeadLock | June 1 | Finam Gabon | Disclosure deadline announced for May 15; no data was publicly accessible during AFRINTEL monitoring, and the reason for non-publication remains unknown. |
 | 🇿🇼 Zimbabwe | Nightspire | June 5 | First Mutual Holdings | Unverified claim. |
 | 🇸🇳 Senegal | Krybit | June 17 | Cour des Comptes du Sénégal | 19.73 GB; audit, budgetary and HR documents from the country's supreme audit institution. |
 | 🇧🇼 Botswana | LockBit 5 | June 18 | Botswana Vaccine Institute | Unverified claim. |
@@ -445,7 +445,7 @@ Two Libyan ministries hit by the same actor on consecutive days at the end of Ju
 
 - The actual operator behind the "unidentified startup management platform" and "unidentified Moroccan delivery company" leaks (both attributed to anisanas2) has not been established; without a named platform, affected individuals cannot be meaningfully notified.
 - Several ransomware claims this month (Bouri Group, Access Dental, Sheraton Miramar, Great Foods, Central Bank of Libya, KeNHA, monoprix.tn, Fidelity Security Group and others) carry no published sample; AFRINTEL records them as claims, not confirmed breaches, and their true status is unknown.
-- Whether Finam Gabon's non-publication reflects a ransom payment, a private settlement, or a failed exfiltration remains unconfirmed.
+- The reason why Finam Gabon's announced data publication was not accessible remains unknown.
 - The true reach of the Convince and Governor credential catalogs may extend beyond what was publicly listed; both may represent partial inventories.
 
 ---
