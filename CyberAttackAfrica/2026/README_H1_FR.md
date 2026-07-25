@@ -7,7 +7,7 @@
 
 ## Janvier à juin 2026
 
-👉🏾 [English version](./README.md)
+👉🏾 [English version](./README_H1.md)
 
 TLP:CLEAR, diffusion publique
 
@@ -29,7 +29,7 @@ L'activité augmente fortement au deuxième trimestre. Avril et mai totalisent *
 - **Autre :** une défiguration recensée en janvier, hors des deux catégories principales.
 - **Confiance :** les publications criminelles restent des revendications sauf confirmation indépendante. L'analyse de données ou d'échantillons peut renforcer la crédibilité d'une exposition sans démontrer le vecteur d'accès initial.
 
-Fichiers sources : [janvier](../../../CyberAttackAfrica/2026/01-january/victims.md), [février](../../../CyberAttackAfrica/2026/02-february/victims.md), [mars](../../../CyberAttackAfrica/2026/03-march/victims.md), [avril](../../../CyberAttackAfrica/2026/04-april/victims.md), [mai](../../../CyberAttackAfrica/2026/05-may/victims.md), [juin](../../../CyberAttackAfrica/2026/06-june/victims.md).
+Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/victims.md), [mars](./03-march/victims.md), [avril](./04-april/victims.md), [mai](./05-may/victims.md), [juin](./06-june/victims.md).
 
 ## 3. Vue d'ensemble du semestre
 

@@ -70,7 +70,7 @@ Juin 2026 enregistre **40 incidents cyber** revendiqués publiquement : le ranso
 | Mars vs avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | Avril vs mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
-| Rapport S1 2026 | [FR](comparison/2026/01-january-june/README_FR.md) | [EN](comparison/2026/01-january-june/README.md) |
+| Rapport S1 2026 | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
 ---

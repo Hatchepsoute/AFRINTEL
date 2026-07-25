@@ -7,7 +7,7 @@
 
 ## January to June 2026
 
-👉🏾 [Version française](./README_FR.md)
+👉🏾 [Version française](./README_H1_FR.md)
 
 TLP:CLEAR, public distribution
 
@@ -29,7 +29,7 @@ Activity accelerated sharply during the second quarter. April and May alone acco
 - **Other:** one January website-defacement incident outside the two principal categories.
 - **Confidence:** criminal publications remain claims unless independently confirmed. Analysed data or samples may support the credibility of an exposure without proving the initial access vector.
 
-Source files: [January](../../../CyberAttackAfrica/2026/01-january/victims.md), [February](../../../CyberAttackAfrica/2026/02-february/victims.md), [March](../../../CyberAttackAfrica/2026/03-march/victims.md), [April](../../../CyberAttackAfrica/2026/04-april/victims.md), [May](../../../CyberAttackAfrica/2026/05-may/victims.md), [June](../../../CyberAttackAfrica/2026/06-june/victims.md).
+Source files: [January](./01-january/victims.md), [February](./02-february/victims.md), [March](./03-march/victims.md), [April](./04-april/victims.md), [May](./05-may/victims.md), [June](./06-june/victims.md).
 
 ## 3. Semester overview
 

@@ -71,7 +71,7 @@ June 2026 recorded **40 publicly claimed cyber incidents**: ransomware reached p
 | March vs April 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | April vs May 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
-| H1 2026 report | [FR](comparison/2026/01-january-june/README_FR.md) | [EN](comparison/2026/01-january-june/README.md) |
+| H1 2026 report | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
 ---
