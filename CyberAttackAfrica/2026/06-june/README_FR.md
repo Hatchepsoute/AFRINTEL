@@ -276,9 +276,9 @@ pie showData
 
 **Ransomware (4) :**
 - **Black X** (2 juin, African National Congress) : 2 310 865 dossiers d'adhérents avec numéros d'identité sud-africains, adresses et langues, publiés directement ; l'une des plus grandes expositions de données d'un parti politique jamais enregistrées sur le continent.
-- **WorldLeaks** (5 juin, Access Dental) : revendication non vérifiée.
-- **LockBit 5** (18 juin, Grey High School) : revendication non vérifiée.
-- **CMD Organization** (28 juin, Fidelity Security Group) : revendication non vérifiée.
+- **WorldLeaks** (5 juin, Access Dental) : victime publiée sur le site du groupe ransomware.
+- **LockBit 5** (18 juin, Grey High School) : victime publiée sur le site du groupe ransomware.
+- **CMD Organization** (28 juin, Fidelity Security Group) : victime publiée sur le site du groupe ransomware.
 
 **Fuites (2) :**
 - **L'acteur malveillant mosad** (8 juin, Armée sud-africaine / SANDF) : document classifié "Warning Instruction" de 2022 détaillant un déploiement de maintien de l'ordre, incluant les téléphones, e-mails et identifiants liés aux numéros de sécurité sociale d'officiers supérieurs nommément cités. Un document militaire restreint qui circule sur Telegram quatre ans après sa rédaction révèle une fuite interne persistante qui n'a jamais été colmatée.
@@ -289,7 +289,7 @@ pie showData
 ### 🇳🇬 Nigéria (4 incidents : 1 ransomware, 3 fuites)
 
 **Ransomware (1) :**
-- **DeadLock** (1er juin, Fidelity Pension Managers) : revendication non vérifiée.
+- **DeadLock** (1er juin, Fidelity Pension Managers) : victime publiée sur le site du groupe ransomware.
 
 **Fuites (3) :**
 - **L'acteur malveillant burti** (10 juin, Jeroid.co) : 312 433 utilisateurs, 110 282 BVN, 64 300 NIN et 70 956 photos de vérification faciale biométrique laissées sur un bucket S3 public non authentifié, vendus pour 2 000 dollars. C'est l'exposition fintech la plus grave enregistrée par AFRINTEL au Nigéria cette année, tandis que le vecteur d'accès initial reste inconnu.
@@ -301,9 +301,9 @@ pie showData
 ### 🇪🇬 Égypte (4 incidents : 3 ransomwares, 1 fuite)
 
 **Ransomware (3) :**
-- **Le groupe ransomware TheGentlemen** (4 juin, Bouri Group) : revendication non vérifiée.
-- **Le groupe ransomware Nightspire** (15 juin, Sheraton Miramar Resort El Gouna) : revendication non vérifiée.
-- **Le groupe ransomware Lamashtu** (17 juin, Great Foods) : revendication non vérifiée.
+- **Le groupe ransomware TheGentlemen** (4 juin, Bouri Group) : victime publiée sur le site du groupe ransomware.
+- **Le groupe ransomware Nightspire** (15 juin, Sheraton Miramar Resort El Gouna) : victime publiée sur le site du groupe ransomware.
+- **Le groupe ransomware Lamashtu** (17 juin, Great Foods) : victime publiée sur le site du groupe ransomware.
 
 **Fuite (1) :**
 - **L'acteur malveillant Xyphorix** (6 juin, base de données des pilotes égyptiens) : données personnelles de pilotes militaires, commerciaux et civils d'Egypt Air, Qatar Airways, Fly Emirates, l'Autorité du Canal de Suez et le Ministère de l'Aviation Civile, vendues sans prix communiqué. Des données de pilotes liés à l'armée mises en vente sur un forum criminel constituent une exposition de sécurité nationale, pas une fuite de données personnelles ordinaire.
@@ -313,9 +313,9 @@ pie showData
 ### 🇹🇳 Tunisie (4 incidents : 3 ransomwares, 1 fuite)
 
 **Ransomware (3) :**
-- **Le groupe ransomware Aurora** (16 juin, Sumitomo Electric Bordnetze, SEBN Tunisia) : revendication non vérifiée, site de Fejja.
-- **Le groupe ransomware SETTRA** (26 juin, Centrale Laitière du Cap-Bon) : revendication non vérifiée.
-- **Le groupe ransomware Stormous** (28 juin, monoprix.tn) : revendication non vérifiée.
+- **Le groupe ransomware Aurora** (16 juin, Sumitomo Electric Bordnetze, SEBN Tunisia) : publication observée sur le site du groupe ransomware pour le site de Fejja.
+- **Le groupe ransomware SETTRA** (26 juin, Centrale Laitière du Cap-Bon) : victime publiée sur le site du groupe ransomware.
+- **Le groupe ransomware Stormous** (28 juin, monoprix.tn) : victime publiée sur le site du groupe ransomware.
 
 **Fuite (1) :**
 - **L'acteur malveillant AshleyWood2022** (23 juin, Examens.tn) : dump complet de la base de données `examens.sql` de 717 Mo, 3 697 comptes utilisateurs et 74 891 enregistrements de métadonnées, incluant jetons de session, jetons de réinitialisation de mot de passe et données OAuth. Un dump complet de base de données WordPress de ce type provient presque toujours d'un plugin non corrigé ou d'un fichier de sauvegarde exposé, à vérifier avant de conclure à un exploit inédit.
@@ -325,7 +325,7 @@ pie showData
 ### 🇱🇾 Libye (3 incidents : 1 ransomware, 2 fuites)
 
 **Ransomware (1) :**
-- **Le groupe ransomware Qilin** (22 juin, Central Bank of Libya) : revendication non vérifiée.
+- **Le groupe ransomware Qilin** (22 juin, Central Bank of Libya) : victime publiée sur le site du groupe ransomware.
 
 **Fuites (2), même acteur, deux ministères consécutifs :**
 - **L'acteur malveillant EvaN47** (29 juin, Ministère de l'Enseignement technique et professionnel) : volume revendiqué de 900 000 dossiers d'étudiants, incluant une table de comptes utilisateurs distincte avec des e-mails @tve.gov.ly et un champ lié aux mots de passe.
@@ -340,13 +340,13 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 | Pays | Acteur | Date | Victime | Notes |
 | :--- | :--- | :--- | :--- | :--- |
 | 🇬🇦 Gabon | DeadLock | 1er juin | Finam Gabon | Échéance de divulgation annoncée pour le 15 mai ; aucune donnée n'était publiquement accessible lors du suivi AFRINTEL et la raison de cette absence de publication reste inconnue. |
-| 🇿🇼 Zimbabwe | Nightspire | 5 juin | First Mutual Holdings | Revendication non vérifiée. |
+| 🇿🇼 Zimbabwe | Nightspire | 5 juin | First Mutual Holdings | Victime publiée sur le site du groupe ransomware. |
 | 🇸🇳 Sénégal | Krybit | 17 juin | Cour des Comptes du Sénégal | 19,73 Go ; documents d'audit, budgétaires et RH de l'institution supérieure de contrôle du pays. |
-| 🇧🇼 Botswana | LockBit 5 | 18 juin | Botswana Vaccine Institute | Revendication non vérifiée. |
-| 🇲🇺 Maurice | LockBit 5 | 18 juin | Nundun Gopee & Co | Revendication non vérifiée. |
+| 🇧🇼 Botswana | LockBit 5 | 18 juin | Botswana Vaccine Institute | Victime publiée sur le site du groupe ransomware. |
+| 🇲🇺 Maurice | LockBit 5 | 18 juin | Nundun Gopee & Co | Victime publiée sur le site du groupe ransomware. |
 | 🇹🇿 Tanzanie | hammer | 20 juin | BRELA | 10,2 millions d'enregistrements couvrant 8 millions de personnes ; TIN, numéros d'identité nationaux et données complètes d'enregistrement d'entreprises. Le plus grand jeu de données du mois. |
 | 🇾🇹 Mayotte | DeadLock | 21 juin | Commune de Ouangani | 138 Mo entièrement publiés : paie, état civil, coordonnées bancaires et conventions de financement municipales. |
-| 🇰🇪 Kenya | DeadLock | 23 juin | Kenya National Highways Authority | Revendication non vérifiée. |
+| 🇰🇪 Kenya | DeadLock | 23 juin | Kenya National Highways Authority | Victime publiée sur le site du groupe ransomware. |
 
 ---
 
@@ -381,7 +381,7 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 | **4** | 🇾🇹 Mayotte | **1** | DeadLock |
 | **4** | 🇰🇪 Kenya | **1** | DeadLock |
 
-**Observations :** le ransomware a doublé sa part dans les incidents mensuels par rapport à mai (28 % à 50 %). **DeadLock** a été le groupe le plus dispersé géographiquement, touchant quatre pays répartis sur le continent (Gabon, Nigéria, Mayotte, Kenya) avec un schéma constant : revendication, menace de divulgation et, dans le cas de Mayotte, publication effective. **LockBit 5** a touché trois pays en une seule semaine (18 juin) avec des revendications non vérifiées, ce qui évoque davantage une vague de publications opportuniste que des intrusions confirmées dans chaque cas ; plusieurs entrées ransomware de juin ne comportent aucun échantillon publié et doivent être lues comme des revendications jusqu'à preuve du contraire. Les exceptions documentées par une publication de données sont la **Commune de Ouangani à Mayotte**, où DeadLock a effectivement publié 138 Mo incluant des données de paie et d'état civil, ainsi que **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
+**Observations :** le ransomware a doublé sa part dans les incidents mensuels par rapport à mai (28 % à 50 %). **DeadLock** a été le groupe le plus dispersé géographiquement, touchant quatre pays répartis sur le continent (Gabon, Nigéria, Mayotte, Kenya) avec un schéma constant : revendication, menace de divulgation et, dans le cas de Mayotte, publication effective. **LockBit 5** a publié trois victimes situées dans trois pays en une seule semaine, le 18 juin. Aucun échantillon publié n’était accessible pour ces trois entrées lors de la collecte AFRINTEL. Les exceptions documentées par une publication de données sont la **Commune de Ouangani à Mayotte**, où DeadLock a effectivement publié 138 Mo incluant des données de paie et d'état civil, ainsi que **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
 
 ### 4.2 Fuites de données et ventes d'accès (20 incidents uniques, 33 occurrences pays)
 
