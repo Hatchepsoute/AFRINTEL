@@ -438,7 +438,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 19 Mai 2026
 #### 🇩🇿 Algérie - OGEBC (Office de Gestion des Biens Culturels) [Fuite / Vente de base de données]
 
-- **Acteur / Source :** Databasehooligan (via le forum [Citizen])
+- **Acteur / Groupe :** Databasehooligan (via le forum [Citizen])
 - **Secteur :** Gouvernement / Patrimoine culturel / Gestion des biens
 - **Statut :** Offre de vente active
 - **Site web :** [www.ogebc.com](https://www.ogebc.com)
@@ -472,7 +472,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Acteur / Groupe:** fexus  
 - **Secteur :** E-commerce / Marketplace  
 - **Site web :** [avito.ma](https://www.avito.ma) 
-- **Statut :** Fuite de données / Vente présumée  
+- **Statut :** Fuite de données 
 - **Description :**  Avito.ma est l’une des principales plateformes marocaines de petites annonces et de marketplace, utilisée pour les ventes entre particuliers et professionnels.
 - **Analyse :**  L’acteur revendique une fuite contenant des informations d’utilisateurs d’Avito.ma, incluant notamment adresses e-mail, numéros de téléphone, villes et mots de passe.  
   Les échantillons publiés montrent plusieurs profils associés au secteur immobilier (“Crédit Immobilier”) avec des données personnelles marocaines réparties dans différentes villes telles que Casablanca, Khouribga, Kénitra, Guelmim et Oued Zem.  
@@ -518,7 +518,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 
 #### 🇲🇦 Maroc - RADEM Meknès [Fuite de données massive – Infrastructure critique]
-- **Acteur / Groupe :** anisanas2 (forum Darkforums)
+- **Acteur / Groupe :** anisanas2
 - **Secteur :** Eau / Électricité / Infrastructure critique / Services publics
 - **Statut :** Fuite de données massive
 - **Site web :** [www.radem.ma](http://www.radem.ma)
@@ -621,7 +621,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les éléments publiés démontrent l'exposition effective d'informations personnelles et constituent un indicateur crédible d'un accès non autorisé à des données associées au Sheriff Randburg West.
   
 #### 🇪🇬 Égypte - Wuzzuf.net [Fuite / Vente de base de données]
-- **Acteur / Groupe :** Databasehooligan (forum [Citizen])
+- **Acteur / Groupe :** Databasehooligan 
 - **Secteur :** Recrutement / Plateforme d'emploi en ligne
 - **Statut :** Fuite / Vente de base de données
 - **Site web :** [www.wuzzuf.net](https://www.wuzzuf.net)

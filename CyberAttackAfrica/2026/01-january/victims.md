@@ -11,7 +11,7 @@
 
 ### 03 January 2026
 #### 🇹🇬 Togo - Government of Togo (gouv.tg)
-- **Actor / Source:** Bigbrother (Initial Access Broker)
+- **Actor / Group:** Bigbrother (Initial Access Broker)
 - **Sector:** Central Public Administration
 - **Website:** gouv.tg
 - **Status:** Claimed (Access Sale)
@@ -19,7 +19,7 @@
 
 ### 04 January 2026
 #### 🇳🇪 Niger - Government Websites (Massive Defacement)
-- **Actor / Source:** Unclaimed
+- **Actor / Group:** Unclaimed
 - **Sector:** Public Administration
 - **Websites:** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
 - **Status:** Unclaimed (Massive Defacement)

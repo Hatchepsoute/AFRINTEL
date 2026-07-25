@@ -373,7 +373,7 @@ def build_month_bundle(records: List[VictimRecord], year: str, month_dir: str, g
             "id": incident_id,
             "created": created,
             "modified": created,
-            "name": f"AFRINTEL May 2026 incident {rec.index:02d}: {rec.organization}",
+            "name": f"AFRINTEL {month_dir.split(chr(45), 1)[1].title() if chr(45) in month_dir else month_dir.title()} {year} incident {rec.index:02d}: {rec.organization}",
             "description": safe_description(rec),
             "first_seen": f"{rec.date_iso}T00:00:00Z",
             "labels": labels + [slugify(rec.country), normalize_sector(rec.sector)],
@@ -516,7 +516,7 @@ def main() -> int:
     parser.add_argument("--repo", required=True, help="Path to AFRINTEL repository root")
     parser.add_argument("--year", help="Specific year, e.g. 2026")
     parser.add_argument("--month", help="Specific month folder, e.g. 05-may")
-    parser.add_argument("--github-base", default="https://github.com/Hatchepsoute/AFRINTEL/tree/main", help="Base GitHub URL used to build source references")
+    parser.add_argument("--github-base", default="https://github.com/Hatchepsoute/AFRINTEL/blob/main", help="Base GitHub URL used to build source references")
     parser.add_argument("--output-root", help="Optional custom output root. Default: <repo>/stix/<year>/<month>/")
     args = parser.parse_args()
 

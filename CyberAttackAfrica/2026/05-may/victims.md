@@ -13,7 +13,7 @@
 ### May 03, 2026
 #### 🇹🇿 Tanzania - Personal Database (120,000+ records)
 
-- **Actor / Source:** XOverStm (via the [Citizen] forum)
+- **Actor / Group:** XOverStm (via the [Citizen] forum)
 - **Sector:** Personal Data / Database
 - **Status:** Active sale offer
 - **Website:** Not specified
@@ -54,7 +54,7 @@
   - PDF, Excel, Word, and ZIP files
   
 #### 🇪🇬 Egypt - Educational & HR Databases
-- **Threat Actor / Source:** bigF  
+- **Threat Actor / Group:** bigF  
 - **Sector:** Education / Human Resources  
 - **Status:** Data Leak / Sale Claim  
 - **Observed websites:** [mans.edu.eg](https://www.mans.edu.eg) ; [gu.edu.eg](https://gu.edu.eg)
@@ -114,7 +114,7 @@
   The leak also appears to contain backups of business and accounting systems that may include sensitive financial information and data related to CGCSA member organizations.
   
 #### 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe – Resume docs data leak
-- **Actor / Source:** attackercompany (via the [Citizen] forum)
+- **Actor / Group:** attackercompany (via the [Citizen] forum)
 - **Sector:** Recruitment / Personal data
 - **Status:** Claimed data leak
 - **Website:** Not specified (seller contact details intentionally omitted)
@@ -178,7 +178,7 @@
 ---
 ### May 10, 2026
 #### 🇪🇬 Egypt - Mansoura University
-- **Threat Actor / Source:** INT3X  
+- **Threat Actor / Group:** INT3X  
 - **Sector:** Education / University  
 - **Website:** [mans.edu.eg](https://www.mans.edu.eg)
 - **Status:** Data Leak / Claim  
@@ -289,7 +289,7 @@ Such a compromise could potentially allow:
   
 
 #### 🇿🇦 South Africa - Bellavista School
-- **Actor / Source:** 404Crew Cyber Team
+- **Actor / Group:** 404Crew Cyber Team
 - **Sector:** Education
 - **Website:** [bellavista.org.za](https://www.bellavista.org.za)
 - **Status:** Data Leak
@@ -328,7 +328,7 @@ Such a compromise could potentially allow:
 
 
 #### 🇿🇦 South Africa - Department of Correctional Services (DCS)
-- **Actor / Source:** NullSec Nigeria x 404Crew Cyber Team x Infernalis
+- **Actor / Group:** NullSec Nigeria x 404Crew Cyber Team x Infernalis
 - **Sector:** Government / Correctional Services
 - **Website:** [dcs.gov.za](https://www.dcs.gov.za)
 - **Status:** Document Leak / Claim
@@ -342,7 +342,7 @@ Such a compromise could potentially allow:
   The publication is presented as part of a politically motivated campaign linked by the threat actors to xenophobia-related grievances.
   
 #### 🇰🇪 Kenya - Land Surveyors Board of Kenya (LSB)
-- **Actor / Source:** cc5ab
+- **Actor / Group:** cc5ab
 - **Sector:** Government / Land Regulation
 - **Status:** Data Breach Claim
 - **Website:** [lsb.go.ke](https://www.lsb.go.ke)
@@ -433,7 +433,7 @@ Such a compromise could potentially allow:
 ---
 ### May 19, 2026
 #### 🇩🇿 Algeria - OGEBC (National Cultural Asset Management) [Database Leak / Sale]
-- **Actor / Source:** Databasehooligan (via the [Citizen] forum)
+- **Actor / Group:** Databasehooligan (via the [Citizen] forum)
 - **Sector:** Government / Cultural Heritage / Asset Management
 - **Status:** Active sale offer
 - **Website:** [www.ogebc.com](https://www.ogebc.com)
@@ -456,7 +456,7 @@ Such a compromise could potentially allow:
 ---
 ### May 20, 2026
 #### 🇲🇦 Morocco - Watiqa.ma
-- **Threat Actor / Source:** JBT2026  
+- **Threat Actor / Group:** JBT2026  
 - **Sector:** Government / Civil Registry  
 - **Website:** [watiqa.ma](https://www.watiqa.ma) 
 - **Status:** Database Leak / Claim  
@@ -466,10 +466,10 @@ Such a compromise could potentially allow:
 --- 
 ### May 21, 2026
 #### 🇲🇦 Morocco - Avito.ma
-- **Threat Actor / Source:** fexus  
+- **Threat Actor / Group:** fexus  
 - **Sector:** E-commerce / Marketplace  
-- **Website:** https://www.avito.ma  
-- **Status:** Data Leak / Suspected Sale  
+- **Website:** [avito.ma](https://www.avito.ma)  
+- **Status:** Data Leak 
 - **Description:**  Avito.ma is one of Morocco’s leading online marketplace and classified advertisement platforms, widely used by individuals and businesses.
 - **Analysis:**  
   The threat actor claims to possess leaked Avito.ma user data, including email addresses, phone numbers, cities and passwords.  
@@ -484,7 +484,7 @@ AFRINTEL did not conduct any authentication attempts or interaction with the aff
 ---
 ### May 22, 2026
 #### 🇲🇦 Morocco - Spacex.ma
-- **Threat Actor / Source:** DarkMafiaX  
+- **Threat Actor / Group:** DarkMafiaX  
 - **Sector:** E-commerce / Online Store  
 - **Website:** [spacex.ma](https://spacex.ma) 
 - **Status:** Data Leak / Administrative Access Disclosure  
@@ -502,7 +502,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 #### 🇹🇿 Tanzania - Police (Webmail) [Database Leak / Sale]
 
-- **Actor / Source:** [Citizen] Kampuchean
+- **Actor / Group:** [Citizen] Kampuchean
 - **Sector:** Government / Law Enforcement
 - **Status:** Active sale offer
 - **Website:** [tpf.go.tz](https://tpf.go.tz)
@@ -537,7 +537,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 ---
 ### May 23, 2026
 #### 🇿🇦 South Africa - SITA (State Information Technology Agency)
-- **Actor / Source:** NullSec Nigeria x NullSec Philippines
+- **Actor / Group:** NullSec Nigeria x NullSec Philippines
 - **Sector:** Information Technology / Government Services
 - **Website:** [sita.co.za](https://www.sita.co.za)
 - **Status:** Data Leak / Claim
@@ -550,7 +550,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 #### 🇿🇦 South Africa - South African Revenue Service (SARS)
 
-- **Actor / Source:** NullSec Nigeria x NullSec Philippines
+- **Actor / Group:** NullSec Nigeria x NullSec Philippines
 - **Sector:** Government / Tax Administration
 - **Website:** [sars.gov.za](https://www.sars.gov.za)
 - **Status:** Data Leak / Claim
@@ -580,7 +580,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 #### 🇿🇦 South Africa - CERVI My Private Care
 
-- **Actor / Source:** 404Crew Cyber Team
+- **Actor / Group:** 404Crew Cyber Team
 - **Sector:** Digital Health (HealthTech) / Healthcare Services
 - **Website:** [cervi.co.za](https://www.cervi.co.za)
 - **Status:** Data Leak
@@ -596,7 +596,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 
 #### 🇿🇦 South Africa - mevent.
-- **Actor / Source:** 404Crew Cyber Team
+- **Actor / Group:** 404Crew Cyber Team
 - **Sector:** Events Management / MICE Services (claimed)
 - **Website:** [mevent.co.za](https://www.mevent.co.za)
 - **Status:** Data Leak
@@ -611,7 +611,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
  
 
 #### 🇿🇦 South Africa - Sheriff Randburg West
-- **Actor / Source:** 404Crew Cyber Team
+- **Actor / Group:** 404Crew Cyber Team
 - **Sector:** Judicial Services / Court Enforcement
 - **Website:** [sheriffrandburgwest.co.za](https://www.sheriffrandburgwest.co.za)
 - **Status:** Data Leak
@@ -651,7 +651,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 ### May 27, 2026
 #### 🇹🇳 Tunisia - Keejob
 
-- **Threat Actor / Source:** Databasehooligan
+- **Threat Actor / Group:** Databasehooligan
 - **Sector:** Recruitment / Employment services
 - **Status:** Data Leak / Data sale claim
 - **Website:** [keejob.com](https://www.keejob.com)
@@ -663,7 +663,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 
 #### 🇹🇳 Tunisia - MyTelnet
-* **Threat Actor / Source:** Databasehooligan
+* **Threat Actor / Group:** Databasehooligan
 * **Sector:** Telecommunications / Internet Service Provider (ISP)
 * **Status:** Data Leak / Data sale
 * **Website:** [mytelnet.tn](https://www.mytelnet.tn)
@@ -675,7 +675,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 ### May 27, 2026
 #### 🇿🇦 South Africa - MIDAS
 
-- **Actor / Source:** Databasehooligan
+- **Actor / Group:** Databasehooligan
 - **Sector:** Automotive Distribution / Spare Parts / Logistics
 - **Website:** [midas.co.za](https://www.midas.co.za)
 - **Status:** Data Leak / Data Sale
@@ -692,7 +692,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 ### May 27, 2026
 #### 🇿🇦 South Africa - Wanderers Club
 
-- **Actor / Source:** Databasehooligan
+- **Actor / Group:** Databasehooligan
 - **Sector:** Sports / Leisure / Private Club
 - **Website:** [wanderers.co.za](https://www.wanderers.co.za)
 - **Status:** Data Leak / Data Sale
@@ -712,7 +712,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 #### 🇿🇦 South Africa - Telkom
 
-- **Actor / Source:** Databasehooligan
+- **Actor / Group:** Databasehooligan
 - **Sector:** Telecommunications / Internet Service Provider
 - **Website:** [telkom.co.za](https://www.telkom.co.za)
 - **Status:** Data Leak / Data Sale
@@ -729,7 +729,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 ---
 ### May 28, 2026
 #### 🇪🇬 Egypt - Citex Systems
-- **Threat Actor / Source:** Keymous
+- **Threat Actor / Group:** Keymous
 - **Sector:** Telecommunications / ICT
 - **Website:** [citexltd.com](https://www.citexltd.com)
 - **Status:** Data Leak / Claim

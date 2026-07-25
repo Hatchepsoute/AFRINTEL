@@ -11,7 +11,7 @@
 
 ### 03 Janvier 2026
 #### 🇹🇬 Togo - Gouvernement du Togo (gouv.tg)
-- **Acteur / Source :** Bigbrother (Initial Access Broker)
+- **Acteur / Groupe :** Bigbrother (Initial Access Broker)
 - **Secteur :** Administration publique centrale
 - **Site web :** gouv.tg
 - **Statut :** Revendication (Vente d'accès)
@@ -19,7 +19,7 @@
 
 ### 04 Janvier 2026
 #### 🇳🇪 Niger - Sites gouvernementaux (Défacement massif)
-- **Acteur / Source :** Non revendiqué
+- **Acteur / Groupe :** Non revendiqué
 - **Secteur :** Administration publique
 - **Sites web :** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
 - **Statut :** Non revendiqué (Défacement massif)

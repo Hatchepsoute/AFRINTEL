@@ -31,7 +31,7 @@
 - **Description victime:** International Business Service (IBS) est l'un des plus grands prestataires de services d'externalisation en Égypte. L'entreprise est spécialisée dans la gestion des ressources humaines, le recrutement de masse, l'externalisation de la paie et les services de maintenance/logistique pour les grandes entreprises et multinationales opérant en Égypte.
 
 ### 08 Avril 2025
-### 🇲🇦 Maroc - CNSS (Caisse Nationale de Sécurité Sociale)
+#### 🇲🇦 Maroc - CNSS (Caisse Nationale de Sécurité Sociale)
 - **Groupe/Cybercriminel:** Jabaroot DZ
 - **Secteur:** Administrations publiques (Sécurité sociale)
 - **Site web:** www.cnss.ma
@@ -39,7 +39,7 @@
 - **Description victime:** Caisse nationale de sécurité sociale du Maroc.
 
 ### 08 Avril 2025
-### 🇲🇦 Maroc - Ministère de l'Industrie et du Commerce (miepeec.gov.ma)
+#### 🇲🇦 Maroc - Ministère de l'Industrie et du Commerce (miepeec.gov.ma)
 - **Groupe/Cybercriminel:** Jabaroot DZ
 - **Secteur:** Gouvernement / Économie et Industrie.
 - **Site web:** miepeec.gov.ma
@@ -48,7 +48,7 @@
 
 
 ### 09 Avril 2025
-### 🇩🇿 Algérie - MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
+#### 🇩🇿 Algérie - MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
 - **Groupe/Cybercriminel:** Phantom Atlas
 - **Secteur:** Social / Mutuelle de Santé.
 - **Site web:** mgptt.dz
