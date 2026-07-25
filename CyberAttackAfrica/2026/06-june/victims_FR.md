@@ -205,7 +205,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇿🇦 Afrique du Sud - UNISA (University of South Africa) [Fuite de données - Support technique]
 
-- **Acteur / Groupe :** GOD User (forum Pwnforums)
+- **Acteur / Groupe :** GOD User 
 - **Secteur :** Education / University
 - **Statut :** Data Fully Published
 - **Site web :** [osprey.unisa.ac.za](https://osprey.unisa.ac.za)
@@ -367,7 +367,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 ### 20 Juin 2026
 #### 🌍 Afrique (Multi-pays) - Institutions Publiques & Forces de l'ordre (Offre d'accès portails)
 
-- **Acteur / Groupe :** [Citizen] Governor (via un forum cybercriminel)
+- **Acteur / Groupe :** Governor
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Unverified
 - **Site web :** Non spécifié

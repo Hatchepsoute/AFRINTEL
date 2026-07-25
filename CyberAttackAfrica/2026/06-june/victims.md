@@ -366,7 +366,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 ### June 20, 2026
 #### 🌍 Africa (Multi-country) - Public Institutions & Law Enforcement (Portal Access Offer)
 
-- **Actor / Group:** [Citizen] Governor (via a cybercriminal forum)
+- **Actor / Group:** Governor
 - **Sector:** Government / Administration
 - **Status:** Claim - Unverified
 - **Website:** Not specified

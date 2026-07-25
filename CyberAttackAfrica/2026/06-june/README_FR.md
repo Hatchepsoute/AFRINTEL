@@ -21,7 +21,6 @@ Principales conclusions :
 - **BRELA (Tanzanie) :** 10,2 millions d'enregistrements couvrant 8 millions de personnes, le plus grand jeu de données du mois, exposant tout l'écosystème d'enregistrement des entreprises et des contribuables du pays.
 - **Deux ministères libyens** (Enseignement technique et professionnel, puis Éducation) ont été touchés par le même acteur, EvaN47, lors des deux derniers jours du mois, une tendance à surveiller en juillet.
 
-> Toutes les publications issues de forums cybercriminels, de leak sites et de canaux clandestins sont traitées comme des **revendications non vérifiées** sauf corroboration indépendante.
 
 ### Liste des victimes
 
@@ -39,7 +38,6 @@ Principales conclusions :
   - *Ransomware* : revendication ou divulgation attribuée à un groupe ransomware. Le chiffrement n'est pas présumé sans élément probant.
   - *Fuite de données / vente d'accès* : exfiltration sans chiffrement, base de données vendue ou publiée, ou vente d'accès/d'identifiants.
 
-> Toutes les publications issues de forums cybercriminels, de leak sites et de canaux clandestins sont traitées comme des **revendications non vérifiées** sauf corroboration indépendante.
 
 ---
 
@@ -47,52 +45,65 @@ Principales conclusions :
 
 | Indicateur | Valeur |
 |---|---|
-| Total victimes | 40 |
+| Total victimes | 40 incidents uniques |
 | Pays touchés | 20 (14 directs + 6 via incidents multi-pays) |
+| Occurrences pays | 53 (38 directes + 15 expositions issues de 2 incidents multi-pays) |
 | Acteurs distincts | 25 |
 | Incidents ransomware | 20 (50,0 %) |
 | Fuites de données / ventes d'accès | 20 (50,0 %) |
 
 ### Classement par pays
 
-**Tous incidents confondus (40) :**
+**Classement géographique élargi (53 occurrences pays issues de 40 incidents uniques) :**
 
-| Rang | Pays | Incidents | Graphe |
-| :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Maroc | **9** | █████████ |
-| **2** | 🇿🇦 Afrique du Sud | **6** | ██████ |
-| **3** | 🇳🇬 Nigéria | **4** | ████ |
-| **3** | 🇪🇬 Égypte | **4** | ████ |
-| **3** | 🇹🇳 Tunisie | **4** | ████ |
-| **6** | 🇱🇾 Libye | **3** | ███ |
-| **7** | 🌍 Multi-pays (ventes d'identifiants) | **2** | ██ |
-| **8** | 🇬🇦 Gabon | **1** | █ |
-| **8** | 🇿🇼 Zimbabwe | **1** | █ |
-| **8** | 🇸🇳 Sénégal | **1** | █ |
-| **8** | 🇧🇼 Botswana | **1** | █ |
-| **8** | 🇲🇺 Maurice | **1** | █ |
-| **8** | 🇹🇿 Tanzanie | **1** | █ |
-| **8** | 🇾🇹 Mayotte | **1** | █ |
-| **8** | 🇰🇪 Kenya | **1** | █ |
+| Rang | Pays | Incidents directs | Expositions multi-pays | Total géographique | Graphe |
+| :---: | :--- | :---: | :---: | :---: | :--- |
+| **1** | 🇲🇦 Maroc | 9 | 1 | **10** | ██████████ |
+| **2** | 🇿🇦 Afrique du Sud | 6 | 0 | **6** | ██████ |
+| **2** | 🇪🇬 Égypte | 4 | 2 | **6** | ██████ |
+| **4** | 🇳🇬 Nigéria | 4 | 1 | **5** | █████ |
+| **5** | 🇹🇳 Tunisie | 4 | 0 | **4** | ████ |
+| **6** | 🇱🇾 Libye | 3 | 0 | **3** | ███ |
+| **6** | 🇹🇿 Tanzanie | 1 | 2 | **3** | ███ |
+| **6** | 🇰🇪 Kenya | 1 | 2 | **3** | ███ |
+| **9** | 🇿🇲 Zambie | 0 | 2 | **2** | ██ |
+| **10** | 🇬🇦 Gabon | 1 | 0 | **1** | █ |
+| **10** | 🇿🇼 Zimbabwe | 1 | 0 | **1** | █ |
+| **10** | 🇸🇳 Sénégal | 1 | 0 | **1** | █ |
+| **10** | 🇧🇼 Botswana | 1 | 0 | **1** | █ |
+| **10** | 🇲🇺 Maurice | 1 | 0 | **1** | █ |
+| **10** | 🇾🇹 Mayotte | 1 | 0 | **1** | █ |
+| **10** | 🇪🇹 Éthiopie | 0 | 1 | **1** | █ |
+| **10** | 🇦🇴 Angola | 0 | 1 | **1** | █ |
+| **10** | 🇲🇼 Malawi | 0 | 1 | **1** | █ |
+| **10** | 🇩🇿 Algérie | 0 | 1 | **1** | █ |
+| **10** | 🇸🇱 Sierra Leone | 0 | 1 | **1** | █ |
+
+> Le rapport recense 40 incidents uniques. Le classement géographique totalise 53 occurrences pays, car les offres Convince et Governor sont ventilées dans chaque pays africain explicitement mentionné. Cette ventilation ne modifie pas le total global. La Palestine et le Yémen sont exclus de ce classement, car ils sont hors du périmètre africain.
 
 ```mermaid
 pie showData
- title Répartition des victimes par pays - Juin 2026
- "Maroc" : 9
+ title Répartition des occurrences par pays - Juin 2026
+ "Maroc" : 10
  "Afrique du Sud" : 6
- "Nigéria" : 4
- "Égypte" : 4
+ "Égypte" : 6
+ "Nigéria" : 5
  "Tunisie" : 4
  "Libye" : 3
- "Multi-pays" : 2
+ "Tanzanie" : 3
+ "Kenya" : 3
+ "Zambie" : 2
  "Gabon" : 1
  "Zimbabwe" : 1
  "Sénégal" : 1
  "Botswana" : 1
  "Maurice" : 1
- "Tanzanie" : 1
  "Mayotte" : 1
- "Kenya" : 1
+ "Éthiopie" : 1
+ "Angola" : 1
+ "Malawi" : 1
+ "Algérie" : 1
+ "Sierra Leone" : 1
 ```
 
 ### Répartition des ransomwares (Total : 20)
@@ -113,39 +124,54 @@ pie showData
 | **4** | 🇾🇹 Mayotte | **1** | █ |
 | **4** | 🇰🇪 Kenya | **1** | █ |
 
-### Répartition des fuites de données / ventes d'accès (Total : 20)
+### Répartition géographique des fuites de données / ventes d'accès
 
-| Rang | Pays | Incidents | Graphe |
+**20 incidents uniques, soit 33 occurrences pays après ventilation des deux offres multi-pays.**
+
+| Rang | Pays | Occurrences | Graphe |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Maroc | **8** | ████████ |
-| **2** | 🇳🇬 Nigéria | **3** | ███ |
-| **3** | 🇿🇦 Afrique du Sud | **2** | ██ |
-| **3** | 🇱🇾 Libye | **2** | ██ |
-| **3** | 🌍 Multi-pays | **2** | ██ |
-| **6** | 🇪🇬 Égypte | **1** | █ |
-| **6** | 🇹🇳 Tunisie | **1** | █ |
-| **6** | 🇹🇿 Tanzanie | **1** | █ |
+| **1** | 🇲🇦 Maroc | **9** | █████████ |
+| **2** | 🇳🇬 Nigéria | **4** | ████ |
+| **3** | 🇪🇬 Égypte | **3** | ███ |
+| **3** | 🇹🇿 Tanzanie | **3** | ███ |
+| **5** | 🇿🇦 Afrique du Sud | **2** | ██ |
+| **5** | 🇱🇾 Libye | **2** | ██ |
+| **5** | 🇰🇪 Kenya | **2** | ██ |
+| **5** | 🇿🇲 Zambie | **2** | ██ |
+| **9** | 🇹🇳 Tunisie | **1** | █ |
+| **9** | 🇪🇹 Éthiopie | **1** | █ |
+| **9** | 🇦🇴 Angola | **1** | █ |
+| **9** | 🇲🇼 Malawi | **1** | █ |
+| **9** | 🇩🇿 Algérie | **1** | █ |
+| **9** | 🇸🇱 Sierra Leone | **1** | █ |
 
 ### Comparaison ransomware vs fuites de données par pays
 
 | Pays | Ransomware | Fuites de données | Répartition côte à côte |
 | :--- | :---: | :---: | :--- |
-| 🇲🇦 Maroc | **1** | **8** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | **1** | **9** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇿🇦 Afrique du Sud | **4** | **2** | 🟧🟧🟧🟧 🟦🟦 |
-| 🇳🇬 Nigéria | **1** | **3** | 🟧 🟦🟦🟦 |
-| 🇪🇬 Égypte | **3** | **1** | 🟧🟧🟧 🟦 |
+| 🇪🇬 Égypte | **3** | **3** | 🟧🟧🟧 🟦🟦🟦 |
+| 🇳🇬 Nigéria | **1** | **4** | 🟧 🟦🟦🟦🟦 |
 | 🇹🇳 Tunisie | **3** | **1** | 🟧🟧🟧 🟦 |
 | 🇱🇾 Libye | **1** | **2** | 🟧 🟦🟦 |
-| 🌍 Multi-pays | **0** | **2** | 🟦🟦 |
+| 🇹🇿 Tanzanie | **0** | **3** | 🟦🟦🟦 |
+| 🇰🇪 Kenya | **1** | **2** | 🟧 🟦🟦 |
+| 🇿🇲 Zambie | **0** | **2** | 🟦🟦 |
 | 🇬🇦 Gabon | **1** | **0** | 🟧 |
 | 🇿🇼 Zimbabwe | **1** | **0** | 🟧 |
 | 🇸🇳 Sénégal | **1** | **0** | 🟧 |
 | 🇧🇼 Botswana | **1** | **0** | 🟧 |
 | 🇲🇺 Maurice | **1** | **0** | 🟧 |
-| 🇹🇿 Tanzanie | **0** | **1** | 🟦 |
 | 🇾🇹 Mayotte | **1** | **0** | 🟧 |
-| 🇰🇪 Kenya | **1** | **0** | 🟧 |
-| **Total (40)** | **20** | **20** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
+| 🇪🇹 Éthiopie | **0** | **1** | 🟦 |
+| 🇦🇴 Angola | **0** | **1** | 🟦 |
+| 🇲🇼 Malawi | **0** | **1** | 🟦 |
+| 🇩🇿 Algérie | **0** | **1** | 🟦 |
+| 🇸🇱 Sierra Leone | **0** | **1** | 🟦 |
+| **Occurrences pays (53)** | **20** | **33** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
+
+> Le total analytique reste de 40 incidents uniques, soit 20 ransomwares et 20 fuites de données ou ventes d'accès. Les 33 occurrences pays de la colonne des fuites incluent la ventilation géographique des deux incidents multi-pays.
 
 ```mermaid
 pie showData
@@ -156,16 +182,16 @@ pie showData
 
 ### Répartition géographique par région
 
-| Région | Total incidents | Ransomware | Fuites | Côte à côte |
+| Région | Occurrences pays | Ransomware | Fuites | Côte à côte |
 | :--- | :---: | :---: | :---: | :--- |
-| **Afrique du Nord** | **20** (50,0 %) | 8 | 12 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Afrique australe** | **8** (20,0 %) | 6 | 2 | 🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| **Afrique de l'Ouest et centrale** | **6** (15,0 %) | 2 | 4 | 🟧🟧 🟦🟦🟦🟦 |
-| **Afrique de l'Est** | **2** (5,0 %) | 1 | 1 | 🟧 🟦 |
-| **Océan Indien** | **2** (5,0 %) | 2 | 0 | 🟧🟧 |
-| **Multi-pays (ventes d'identifiants)** | **2** (5,0 %) | 0 | 2 | 🟦🟦 |
+| **Afrique du Nord** | **24** (45,3 %) | 8 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique australe** | **11** (20,8 %) | 6 | 5 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| **Afrique de l'Ouest et centrale** | **9** (17,0 %) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique de l'Est** | **7** (13,2 %) | 1 | 6 | 🟧 🟦🟦🟦🟦🟦🟦 |
+| **Océan Indien** | **2** (3,8 %) | 2 | 0 | 🟧🟧 |
+| **Total** | **53** | **20** | **33** | |
 
-*Légende : 🟧 Ransomware | 🟦 Fuites de données. Afrique du Nord : Maroc, Égypte, Tunisie, Libye. Afrique australe : Afrique du Sud, Botswana, Zimbabwe. Afrique de l'Ouest et centrale : Nigéria, Gabon, Sénégal. Afrique de l'Est : Kenya, Tanzanie. Océan Indien : Maurice, Mayotte.*
+*Légende : 🟧 Ransomware | 🟦 Fuites de données. Afrique du Nord : Maroc, Égypte, Tunisie, Libye, Algérie. Afrique australe : Afrique du Sud, Botswana, Zimbabwe, Zambie, Malawi. Afrique de l'Ouest et centrale : Nigéria, Gabon, Sénégal, Sierra Leone, Angola. Afrique de l'Est : Kenya, Tanzanie, Éthiopie. Océan Indien : Maurice, Mayotte. L'Angola est classé ici en Afrique centrale.*
 
 ### Répartition sectorielle
 
@@ -357,24 +383,30 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 
 **Observations :** le ransomware a doublé sa part dans les incidents mensuels par rapport à mai (28 % à 50 %). **DeadLock** a été le groupe le plus dispersé géographiquement, touchant quatre pays répartis sur le continent (Gabon, Nigéria, Mayotte, Kenya) avec un schéma constant : revendication, menace de divulgation et, dans le cas de Mayotte, publication effective. **LockBit 5** a touché trois pays en une seule semaine (18 juin) avec des revendications non vérifiées, ce qui évoque davantage une vague de publications opportuniste que des intrusions confirmées dans chaque cas ; plusieurs entrées ransomware de juin ne comportent aucun échantillon publié et doivent être lues comme des revendications jusqu'à preuve du contraire. Les exceptions documentées par une publication de données sont la **Commune de Ouangani à Mayotte**, où DeadLock a effectivement publié 138 Mo incluant des données de paie et d'état civil, ainsi que **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
 
-### 4.2 Fuites de données et ventes d'accès (20 incidents)
+### 4.2 Fuites de données et ventes d'accès (20 incidents uniques, 33 occurrences pays)
 
-| Rang | Pays | Incidents | Principaux acteurs |
+| Rang | Pays | Occurrences | Principaux acteurs |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Maroc | **8** | anisanas2 (7), 404Crew Cyber Team |
-| **2** | 🇳🇬 Nigéria | **3** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg |
-| **3** | 🇿🇦 Afrique du Sud | **2** | mosad, GOD User |
-| **3** | 🇱🇾 Libye | **2** | EvaN47 (les deux incidents) |
-| **3** | 🌍 Multi-pays | **2** | Convince, Governor |
-| **6** | 🇪🇬 Égypte | **1** | Xyphorix |
-| **6** | 🇹🇳 Tunisie | **1** | AshleyWood2022 |
-| **6** | 🇹🇿 Tanzanie | **1** | hammer |
+| **1** | 🇲🇦 Maroc | **9** | anisanas2 (7), 404Crew Cyber Team, Convince |
+| **2** | 🇳🇬 Nigéria | **4** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg, Convince |
+| **3** | 🇪🇬 Égypte | **3** | Xyphorix, Convince, Governor |
+| **3** | 🇹🇿 Tanzanie | **3** | hammer, Convince, Governor |
+| **5** | 🇿🇦 Afrique du Sud | **2** | mosad, GOD User |
+| **5** | 🇱🇾 Libye | **2** | EvaN47 |
+| **5** | 🇰🇪 Kenya | **2** | Convince, Governor |
+| **5** | 🇿🇲 Zambie | **2** | Convince, Governor |
+| **9** | 🇹🇳 Tunisie | **1** | AshleyWood2022 |
+| **9** | 🇪🇹 Éthiopie | **1** | Convince |
+| **9** | 🇦🇴 Angola | **1** | Convince |
+| **9** | 🇲🇼 Malawi | **1** | Governor |
+| **9** | 🇩🇿 Algérie | **1** | Governor |
+| **9** | 🇸🇱 Sierra Leone | **1** | Governor |
 
 **Observations clés :**
 - **anisanas2** représente à lui seul 35 % de toutes les fuites/ventes de données ce mois-ci (7 sur 20), toutes au Maroc. Aucun autre acteur n'approche ce niveau de concentration.
 - Les trois fuites nigérianes couvrent trois modèles de menace totalement différents en un mois : une exposition biométrique fintech (Jeroid.co), une fuite parlementaire hacktiviste (NILDS) et un dump d'identifiants militaires en clair (army.mil.ng). Cette diversité, dans un seul pays en quatre semaines, en dit plus sur l'étendue de la surface d'exposition nigériane qu'un incident isolé.
 - **EvaN47** touchant deux ministères libyens de l'éducation deux jours consécutifs (29-30 juin) est le signal de campagne coordonnée le plus clair du mois ; à suivre en juillet.
-- Les listings **Convince** et **Governor** exposent ensemble des identifiants gouvernementaux ou policiers liés à au moins 15 juridictions africaines. Aucun des deux incidents n'est une "fuite" au sens classique, ce sont deux produits commerciaux construits spécifiquement pour tromper Meta, Google, TikTok et X afin d'obtenir des données utilisateurs sous de faux prétextes légaux.
+- Les listings **Convince** et **Governor** exposent ensemble des identifiants gouvernementaux ou policiers correspondant à 15 mentions pays réparties sur 11 pays africains. Aucun des deux incidents n'est une "fuite" au sens classique, ce sont deux produits commerciaux construits spécifiquement pour tromper Meta, Google, TikTok et X afin d'obtenir des données utilisateurs sous de faux prétextes légaux.
 
 ---
 
@@ -438,7 +470,7 @@ Deux ministères libyens touchés par le même acteur deux jours consécutifs en
 2. **La campagne marocaine non résolue :** anisanas2 est actif contre des cibles marocaines depuis trois mois consécutifs (avril, mai, juin), touchant au moins dix organisations dans des secteurs sans lien entre eux. Sans réponse, cela ressemble de moins en moins à de la criminalité opportuniste et de plus en plus à une opération établie disposant d'un flux fiable de cibles marocaines.
 3. **La fintech reste la cible la plus vulnérable de la région :** l'exposition S3 prétendument non authentifiée de Jeroid.co, si elle est confirmée par les éléments observés, représente une grave défaillance de contrôle du stockage cloud. Cela ne devrait plus se produire mi-2026.
 4. **L'hygiène des identifiants militaires et de défense reste un problème actif :** la fuite en clair de la messagerie de l'armée nigériane et la fuite de document classifié SANDF pointent toutes deux vers le même problème sous-jacent : des comptes personnels et d'anciens documents laissés sans gestion bien après le moment où ils auraient dû être renouvelés ou archivés de manière sécurisée.
-5. **L'usurpation des forces de l'ordre en tant que service se consolide :** Convince et Governor exploitent deux niveaux du même modèle économique (adresses e-mail brutes contre comptes portails pleinement authentifiés) sur au moins 15 juridictions africaines. C'est un vecteur d'abus transfrontalier qu'aucun CERT national ne peut résoudre seul ; cela nécessite un engagement direct avec Meta, Google, TikTok et X.
+5. **L'usurpation des forces de l'ordre en tant que service se consolide :** Convince et Governor exploitent deux niveaux du même modèle économique (adresses e-mail brutes contre comptes portails pleinement authentifiés) sur 15 mentions pays réparties entre 11 pays africains. C'est un vecteur d'abus transfrontalier qu'aucun CERT national ne peut résoudre seul ; cela nécessite un engagement direct avec Meta, Google, TikTok et X.
 6. **Le secteur éducatif libyen pourrait entrer dans une campagne soutenue :** deux ministères touchés par le même acteur deux jours consécutifs est le signal de campagne naissante le plus fort du mois.
 
 ### Lacunes de renseignement

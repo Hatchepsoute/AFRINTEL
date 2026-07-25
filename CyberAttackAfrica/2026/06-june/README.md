@@ -21,7 +21,6 @@ Key findings:
 - **BRELA (Tanzania):** 10.2 million records covering 8 million people, the largest single dataset recorded this month, exposing the country's entire business registration and taxpayer ecosystem.
 - **Two ministries in Libya** (Technical and Vocational Education, then Education) were hit by the same actor, EvaN47, in the final two days of the month, a pattern worth watching into July.
 
-> All claims from cybercriminal forums, leak sites, and underground channels are treated as **unverified claims** unless independently corroborated.
 
 ### Victim list
 
@@ -39,7 +38,6 @@ Key findings:
   - *Ransomware*: claim or disclosure attributed to a ransomware group. Encryption is not assumed unless supporting evidence is available.
   - *Data leak / access sale*: exfiltration without encryption, database sold/published, or access/credential sale.
 
-> All claims from cybercriminal forums, leak sites, and underground channels are treated as **unverified claims** unless independently corroborated.
 
 ---
 
@@ -47,52 +45,65 @@ Key findings:
 
 | Indicator | Value |
 |---|---|
-| Total victims | 40 |
+| Total victims | 40 unique incidents |
 | Countries affected | 20 (14 direct + 6 via multi-country incidents) |
+| Country occurrences | 53 (38 direct + 15 exposures from 2 multi-country incidents) |
 | Distinct actors | 25 |
 | Ransomware incidents | 20 (50.0%) |
 | Data leaks / access sales | 20 (50.0%) |
 
 ### Country ranking
 
-**All incidents combined (40):**
+**Expanded geographic ranking (53 country occurrences from 40 unique incidents):**
 
-| Rank | Country | Incidents | Chart |
-| :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Morocco | **9** | █████████ |
-| **2** | 🇿🇦 South Africa | **6** | ██████ |
-| **3** | 🇳🇬 Nigeria | **4** | ████ |
-| **3** | 🇪🇬 Egypt | **4** | ████ |
-| **3** | 🇹🇳 Tunisia | **4** | ████ |
-| **6** | 🇱🇾 Libya | **3** | ███ |
-| **7** | 🌍 Multi-country (credential sales) | **2** | ██ |
-| **8** | 🇬🇦 Gabon | **1** | █ |
-| **8** | 🇿🇼 Zimbabwe | **1** | █ |
-| **8** | 🇸🇳 Senegal | **1** | █ |
-| **8** | 🇧🇼 Botswana | **1** | █ |
-| **8** | 🇲🇺 Mauritius | **1** | █ |
-| **8** | 🇹🇿 Tanzania | **1** | █ |
-| **8** | 🇾🇹 Mayotte | **1** | █ |
-| **8** | 🇰🇪 Kenya | **1** | █ |
+| Rank | Country | Direct incidents | Multi-country exposures | Geographic total | Chart |
+| :---: | :--- | :---: | :---: | :---: | :--- |
+| **1** | 🇲🇦 Morocco | 9 | 1 | **10** | ██████████ |
+| **2** | 🇿🇦 South Africa | 6 | 0 | **6** | ██████ |
+| **2** | 🇪🇬 Egypt | 4 | 2 | **6** | ██████ |
+| **4** | 🇳🇬 Nigeria | 4 | 1 | **5** | █████ |
+| **5** | 🇹🇳 Tunisia | 4 | 0 | **4** | ████ |
+| **6** | 🇱🇾 Libya | 3 | 0 | **3** | ███ |
+| **6** | 🇹🇿 Tanzania | 1 | 2 | **3** | ███ |
+| **6** | 🇰🇪 Kenya | 1 | 2 | **3** | ███ |
+| **9** | 🇿🇲 Zambia | 0 | 2 | **2** | ██ |
+| **10** | 🇬🇦 Gabon | 1 | 0 | **1** | █ |
+| **10** | 🇿🇼 Zimbabwe | 1 | 0 | **1** | █ |
+| **10** | 🇸🇳 Senegal | 1 | 0 | **1** | █ |
+| **10** | 🇧🇼 Botswana | 1 | 0 | **1** | █ |
+| **10** | 🇲🇺 Mauritius | 1 | 0 | **1** | █ |
+| **10** | 🇾🇹 Mayotte | 1 | 0 | **1** | █ |
+| **10** | 🇪🇹 Ethiopia | 0 | 1 | **1** | █ |
+| **10** | 🇦🇴 Angola | 0 | 1 | **1** | █ |
+| **10** | 🇲🇼 Malawi | 0 | 1 | **1** | █ |
+| **10** | 🇩🇿 Algeria | 0 | 1 | **1** | █ |
+| **10** | 🇸🇱 Sierra Leone | 0 | 1 | **1** | █ |
+
+> The report records 40 unique incidents. The geographic ranking totals 53 country occurrences because the Convince and Governor offers are allocated to every explicitly named African country. This allocation does not change the global total. Palestine and Yemen are excluded because they fall outside the African scope.
 
 ```mermaid
 pie showData
- title Victims distribution by country - June 2026
- "Morocco" : 9
+ title Country occurrence distribution - June 2026
+ "Morocco" : 10
  "South Africa" : 6
- "Nigeria" : 4
- "Egypt" : 4
+ "Egypt" : 6
+ "Nigeria" : 5
  "Tunisia" : 4
  "Libya" : 3
- "Multi-country" : 2
+ "Tanzania" : 3
+ "Kenya" : 3
+ "Zambia" : 2
  "Gabon" : 1
  "Zimbabwe" : 1
  "Senegal" : 1
  "Botswana" : 1
  "Mauritius" : 1
- "Tanzania" : 1
  "Mayotte" : 1
- "Kenya" : 1
+ "Ethiopia" : 1
+ "Angola" : 1
+ "Malawi" : 1
+ "Algeria" : 1
+ "Sierra Leone" : 1
 ```
 
 ### Ransomware distribution (Total: 20)
@@ -113,39 +124,54 @@ pie showData
 | **4** | 🇾🇹 Mayotte | **1** | █ |
 | **4** | 🇰🇪 Kenya | **1** | █ |
 
-### Data leaks / access sales distribution (Total: 20)
+### Geographic distribution of data leaks / access sales
 
-| Rank | Country | Incidents | Chart |
+**20 unique incidents, representing 33 country occurrences after allocating the two multi-country offers.**
+
+| Rank | Country | Occurrences | Chart |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Morocco | **8** | ████████ |
-| **2** | 🇳🇬 Nigeria | **3** | ███ |
-| **3** | 🇿🇦 South Africa | **2** | ██ |
-| **3** | 🇱🇾 Libya | **2** | ██ |
-| **3** | 🌍 Multi-country | **2** | ██ |
-| **6** | 🇪🇬 Egypt | **1** | █ |
-| **6** | 🇹🇳 Tunisia | **1** | █ |
-| **6** | 🇹🇿 Tanzania | **1** | █ |
+| **1** | 🇲🇦 Morocco | **9** | █████████ |
+| **2** | 🇳🇬 Nigeria | **4** | ████ |
+| **3** | 🇪🇬 Egypt | **3** | ███ |
+| **3** | 🇹🇿 Tanzania | **3** | ███ |
+| **5** | 🇿🇦 South Africa | **2** | ██ |
+| **5** | 🇱🇾 Libya | **2** | ██ |
+| **5** | 🇰🇪 Kenya | **2** | ██ |
+| **5** | 🇿🇲 Zambia | **2** | ██ |
+| **9** | 🇹🇳 Tunisia | **1** | █ |
+| **9** | 🇪🇹 Ethiopia | **1** | █ |
+| **9** | 🇦🇴 Angola | **1** | █ |
+| **9** | 🇲🇼 Malawi | **1** | █ |
+| **9** | 🇩🇿 Algeria | **1** | █ |
+| **9** | 🇸🇱 Sierra Leone | **1** | █ |
 
 ### Ransomware vs. data leaks comparison by country
 
-| Country | Ransomware | Data Leaks | Side-by-side distribution |
+| Country | Ransomware | Data leaks | Side-by-side distribution |
 | :--- | :---: | :---: | :--- |
-| 🇲🇦 Morocco | **1** | **8** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇲🇦 Morocco | **1** | **9** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇿🇦 South Africa | **4** | **2** | 🟧🟧🟧🟧 🟦🟦 |
-| 🇳🇬 Nigeria | **1** | **3** | 🟧 🟦🟦🟦 |
-| 🇪🇬 Egypt | **3** | **1** | 🟧🟧🟧 🟦 |
+| 🇪🇬 Egypt | **3** | **3** | 🟧🟧🟧 🟦🟦🟦 |
+| 🇳🇬 Nigeria | **1** | **4** | 🟧 🟦🟦🟦🟦 |
 | 🇹🇳 Tunisia | **3** | **1** | 🟧🟧🟧 🟦 |
 | 🇱🇾 Libya | **1** | **2** | 🟧 🟦🟦 |
-| 🌍 Multi-country | **0** | **2** | 🟦🟦 |
+| 🇹🇿 Tanzania | **0** | **3** | 🟦🟦🟦 |
+| 🇰🇪 Kenya | **1** | **2** | 🟧 🟦🟦 |
+| 🇿🇲 Zambia | **0** | **2** | 🟦🟦 |
 | 🇬🇦 Gabon | **1** | **0** | 🟧 |
 | 🇿🇼 Zimbabwe | **1** | **0** | 🟧 |
 | 🇸🇳 Senegal | **1** | **0** | 🟧 |
 | 🇧🇼 Botswana | **1** | **0** | 🟧 |
 | 🇲🇺 Mauritius | **1** | **0** | 🟧 |
-| 🇹🇿 Tanzania | **0** | **1** | 🟦 |
 | 🇾🇹 Mayotte | **1** | **0** | 🟧 |
-| 🇰🇪 Kenya | **1** | **0** | 🟧 |
-| **Total (40)** | **20** | **20** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+| 🇪🇹 Ethiopia | **0** | **1** | 🟦 |
+| 🇦🇴 Angola | **0** | **1** | 🟦 |
+| 🇲🇼 Malawi | **0** | **1** | 🟦 |
+| 🇩🇿 Algeria | **0** | **1** | 🟦 |
+| 🇸🇱 Sierra Leone | **0** | **1** | 🟦 |
+| **Country occurrences (53)** | **20** | **33** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+
+> The analytical total remains 40 unique incidents, comprising 20 ransomware incidents and 20 data leaks or access sales. The 33 leak-related country occurrences include the geographic allocation of the two multi-country incidents.
 
 ```mermaid
 pie showData
@@ -156,16 +182,16 @@ pie showData
 
 ### Geographic breakdown by region
 
-| Region | Total incidents | Ransomware | Leaks | Side-by-side |
+| Region | Country occurrences | Ransomware | Leaks | Side-by-side |
 | :--- | :---: | :---: | :---: | :--- |
-| **North Africa** | **20** (50.0%) | 8 | 12 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Southern Africa** | **8** (20.0%) | 6 | 2 | 🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| **West & Central Africa** | **6** (15.0%) | 2 | 4 | 🟧🟧 🟦🟦🟦🟦 |
-| **East Africa** | **2** (5.0%) | 1 | 1 | 🟧 🟦 |
-| **Indian Ocean** | **2** (5.0%) | 2 | 0 | 🟧🟧 |
-| **Multi-country (credential sales)** | **2** (5.0%) | 0 | 2 | 🟦🟦 |
+| **North Africa** | **24** (45.3%) | 8 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | **11** (20.8%) | 6 | 5 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| **West & Central Africa** | **9** (17.0%) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **East Africa** | **7** (13.2%) | 1 | 6 | 🟧 🟦🟦🟦🟦🟦🟦 |
+| **Indian Ocean** | **2** (3.8%) | 2 | 0 | 🟧🟧 |
+| **Total** | **53** | **20** | **33** | |
 
-*Legend: 🟧 Ransomware | 🟦 Data Leaks. North Africa: Morocco, Egypt, Tunisia, Libya. Southern Africa: South Africa, Botswana, Zimbabwe. West & Central Africa: Nigeria, Gabon, Senegal. East Africa: Kenya, Tanzania. Indian Ocean: Mauritius, Mayotte.*
+*Legend: 🟧 Ransomware | 🟦 Data Leaks. North Africa: Morocco, Egypt, Tunisia, Libya, Algeria. Southern Africa: South Africa, Botswana, Zimbabwe, Zambia, Malawi. West & Central Africa: Nigeria, Gabon, Senegal, Sierra Leone, Angola. East Africa: Kenya, Tanzania, Ethiopia. Indian Ocean: Mauritius, Mayotte. Angola is classified here as Central Africa.*
 
 ### Sector distribution
 
@@ -357,24 +383,30 @@ Two Libyan ministries hit by the same actor on consecutive days at the end of Ju
 
 **Observations:** ransomware doubled its share of monthly incidents compared to May (28% to 50%). **DeadLock** was the most geographically distributed group, hitting four countries spread across the continent (Gabon, Nigeria, Mayotte, Kenya) with a consistent pattern: claim, threaten disclosure, and in the Mayotte case, actually publish. **LockBit 5** hit three countries in a single week (June 18) with unverified claims, suggesting an opportunistic listing spree rather than confirmed intrusions in every case, several June ransomware entries carry no published sample and should be read as claims until proven otherwise. The documented data-publication exceptions are **Mayotte.s Municipality of Ouangani**, where DeadLock followed through with a 138 MB publication including payroll and civil registry data, and the **ANC** publication, where Black X published 2.3 million membership records directly.
 
-### 4.2 Data leaks & access sales (20 incidents)
+### 4.2 Data leaks & access sales (20 unique incidents, 33 country occurrences)
 
-| Rank | Country | Incidents | Main actors |
+| Rank | Country | Occurrences | Main actors |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇲🇦 Morocco | **8** | anisanas2 (7), 404Crew Cyber Team |
-| **2** | 🇳🇬 Nigeria | **3** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg |
-| **3** | 🇿🇦 South Africa | **2** | mosad, GOD User |
-| **3** | 🇱🇾 Libya | **2** | EvaN47 (both incidents) |
-| **3** | 🌍 Multi-country | **2** | Convince, Governor |
-| **6** | 🇪🇬 Egypt | **1** | Xyphorix |
-| **6** | 🇹🇳 Tunisia | **1** | AshleyWood2022 |
-| **6** | 🇹🇿 Tanzania | **1** | hammer |
+| **1** | 🇲🇦 Morocco | **9** | anisanas2 (7), 404Crew Cyber Team, Convince |
+| **2** | 🇳🇬 Nigeria | **4** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg, Convince |
+| **3** | 🇪🇬 Egypt | **3** | Xyphorix, Convince, Governor |
+| **3** | 🇹🇿 Tanzania | **3** | hammer, Convince, Governor |
+| **5** | 🇿🇦 South Africa | **2** | mosad, GOD User |
+| **5** | 🇱🇾 Libya | **2** | EvaN47 |
+| **5** | 🇰🇪 Kenya | **2** | Convince, Governor |
+| **5** | 🇿🇲 Zambia | **2** | Convince, Governor |
+| **9** | 🇹🇳 Tunisia | **1** | AshleyWood2022 |
+| **9** | 🇪🇹 Ethiopia | **1** | Convince |
+| **9** | 🇦🇴 Angola | **1** | Convince |
+| **9** | 🇲🇼 Malawi | **1** | Governor |
+| **9** | 🇩🇿 Algeria | **1** | Governor |
+| **9** | 🇸🇱 Sierra Leone | **1** | Governor |
 
 **Key observations:**
 - **anisanas2** alone accounts for 35% of all data leaks/sales this month (7 of 20), all in Morocco. No other actor comes close to that concentration.
 - Nigeria's three leaks span three completely different threat models in one month: a fintech biometric exposure (Jeroid.co), a hacktivist parliamentary leak (NILDS), and a plaintext military credential dump (army.mil.ng). That range, in a single country in four weeks, says more about the breadth of Nigeria's exposed attack surface than any single incident does.
 - **EvaN47** hitting two Libyan education ministries on consecutive days (June 29-30) is the clearest coordinated-campaign signal of the month; it should be tracked into July.
-- The **Convince** and **Governor** listings together expose government or police credentials tied to at least 15 African jurisdictions. Neither incident is a "leak" in the traditional sense, both are commercial products built specifically to defraud Meta, Google, TikTok and X into handing over user data under false legal pretenses.
+- The **Convince** and **Governor** listings together expose government or police credentials representing 15 country mentions across 11 African countries. Neither incident is a "leak" in the traditional sense, both are commercial products built specifically to defraud Meta, Google, TikTok and X into handing over user data under false legal pretenses.
 
 ---
 
@@ -438,7 +470,7 @@ Two Libyan ministries hit by the same actor on consecutive days at the end of Ju
 2. **Morocco's unresolved campaign:** anisanas2 has now been active against Moroccan targets for three straight months (April, May, June), hitting at least ten organizations across unrelated sectors. Left unaddressed, this is starting to look less like opportunistic crime and more like a standing operation with a reliable pipeline of Moroccan targets.
 3. **Fintech remains the softest target in the region:** Jeroid.co's allegedly unauthenticated S3 exposure, if confirmed by the observed evidence, represents a severe cloud-storage control failure. This should not still be happening in mid-2026.
 4. **Military and defense credential hygiene is a live problem:** the Nigerian Army plaintext webmail leak and the SANDF classified document leak both point to the same underlying issue, personal accounts and old documents sitting unmanaged long after they should have been rotated or archived securely.
-5. **Law-enforcement impersonation-as-a-service is consolidating:** Convince and Governor are running two tiers of the same business (raw email addresses vs. fully authenticated portal accounts) across at least 15 African jurisdictions. This is a cross-border abuse vector that individual national CERTs cannot solve alone; it needs direct engagement with Meta, Google, TikTok and X.
+5. **Law-enforcement impersonation-as-a-service is consolidating:** Convince and Governor are running two tiers of the same business (raw email addresses vs. fully authenticated portal accounts) across 15 country mentions spanning 11 African countries. This is a cross-border abuse vector that individual national CERTs cannot solve alone; it needs direct engagement with Meta, Google, TikTok and X.
 6. **Libya's education sector may be entering a sustained campaign:** two ministries hit by the same actor on back-to-back days is the strongest early-campaign signal of the month.
 
 ### Intelligence gaps
