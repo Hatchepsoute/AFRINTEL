@@ -25,12 +25,22 @@
 
 ---
 
-## Cyber threats in Africa - June 2026
+## Featured reports
+
+### Cyber threats in Africa - June 2026
 
 June 2026 recorded **40 publicly claimed cyber incidents**: ransomware reached parity with data leaks for the first time in 2026 (20/20, up from 28% ransomware in May). Morocco (9 incidents) was the most targeted country, driven almost entirely by a single actor cluster, anisanas2, active for a third consecutive month. The month's most severe incidents include a severe biometric/KYC data exposure at Nigerian fintech Jeroid.co, a plaintext credential leak from the Nigerian Army's webmail domain, and a reported 10.2M-record exposure at Tanzania's business registration agency (BRELA).
 
 📄 [Full CTI report - June 2026](CyberAttackAfrica/2026/06-june/README.md)
 📋 [Victim list - June 2026](CyberAttackAfrica/2026/06-june/victims.md)
+
+### First-half 2026 cyber threat report
+
+From January to June 2026, AFRINTEL documented **239 Africa-related cyber incidents**: **112 ransomware incidents**, **126 data leaks or access sales**, and **1 website defacement**. Q2 accounted for 157 incidents, compared with 82 in Q1. Ransomware remained stable at 56 incidents per quarter, while data leaks and access sales rose from 25 in Q1 to 101 in Q2.
+
+📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
+
+🇫🇷 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
 
 ---
 
