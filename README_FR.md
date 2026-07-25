@@ -24,12 +24,12 @@
 
 ---
 
-## Cybermenaces en Afrique - mai 2026
+## Cybermenaces en Afrique - juin 2026
 
-Mai 2026 enregistre **54 incidents cyber** revendiqués publiquement, le chiffre mensuel le plus élevé des archives AFRINTEL 2026. L'Égypte (16 incidents) et l'Afrique du Sud (14) concentrent 56 % de l'activité. Les faits marquants incluent l'exposition systémique de 28 millions d'enregistrements du secteur éducatif égyptien, la campagne OpSouthAfrica ciblant 8 institutions publiques sud-africaines, l'exfiltration confirmée d'environ 1,66 million d'enregistrements du Trésor Public du Sénégal, et la mise en vente de plus de 10 000 comptes de policiers tanzaniens avec mots de passe en clair.
+Juin 2026 enregistre **40 incidents cyber** revendiqués publiquement : le ransomware atteint la parité avec les fuites de données pour la première fois en 2026 (20/20, contre 28 % de ransomware en mai). Le Maroc (9 incidents) est le pays le plus ciblé, presque entièrement du fait d'un seul cluster d'acteur, anisanas2, actif pour le troisième mois consécutif. Les incidents les plus graves du mois incluent une exposition biométrique/KYC grave chez la fintech nigériane Jeroid.co, une fuite d'identifiants en clair issue de la messagerie de l'armée nigériane, et une exposition signalée de 10,2 millions d'enregistrements chez l'agence tanzanienne d'enregistrement des entreprises (BRELA).
 
-📄 [Rapport CTI complet - mai 2026](CyberAttackAfrica/2026/05-may/README_FR.md)
-📋 [Liste des victimes - mai 2026](CyberAttackAfrica/2026/05-may/victims_FR.md)
+📄 [Rapport CTI complet - juin 2026](CyberAttackAfrica/2026/06-june/README_FR.md)
+📋 [Liste des victimes - juin 2026](CyberAttackAfrica/2026/06-june/victims_FR.md)
 
 ---
 
@@ -42,7 +42,8 @@ Mai 2026 enregistre **54 incidents cyber** revendiqués publiquement, le chiffre
 | Mars 2026 | [Rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [Report](CyberAttackAfrica/2026/03-march/README.md) |
 | Avril 2026 | [Rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [Report](CyberAttackAfrica/2026/04-april/README.md) |
 | Mai 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
-| Juin 2026 | *en cours* | *in progress* |
+| Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
+| Juillet 2026 | *en cours* | *in progress* |
 
 ---
 
@@ -55,7 +56,8 @@ Mai 2026 enregistre **54 incidents cyber** revendiqués publiquement, le chiffre
 | Mars 2026 | [Statistiques](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
 | Avril 2026 | [Statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 | Mai 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
-| Juin 2026 | *en cours* | *in progress* |
+| Juin 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
+| Juillet 2026 | *en cours* | *in progress* |
 
 ---
 
@@ -68,6 +70,8 @@ Mai 2026 enregistre **54 incidents cyber** revendiqués publiquement, le chiffre
 | Mars vs avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | Avril vs mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
+| Rapport S1 2026 | [FR](comparison/2026/01-january-june/README_FR.md) | [EN](comparison/2026/01-january-june/README.md) |
+
 
 ---
 
