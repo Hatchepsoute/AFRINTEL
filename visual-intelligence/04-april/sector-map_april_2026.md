@@ -1,4 +1,4 @@
-# AFRINTEL — Sector Map
+# AFRINTEL - Sector Map
 ## April 2026
 
 | Sector | Incidents | Percentage |

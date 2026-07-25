@@ -123,7 +123,7 @@ AFRINTEL/
 
 ---
 
-## Auteur
+## ✍🏿 Auteur
 
 **Adama ASSIONGBON** - Consultant SOC & Cyber Threat Intelligence
 

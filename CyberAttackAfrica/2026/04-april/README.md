@@ -182,7 +182,7 @@ pie showData
 
 ```mermaid
 pie showData
- title Data leaks by country 
+ title Data leaks by country
  "Morocco" : 15
  "South Africa" : 5
  "Nigeria" : 4
@@ -578,7 +578,7 @@ The cybercriminal superduper1 advertised for sale administrative access to multi
 
 ## 13. Conclusion
 
-April 2026 recorded a notable escalation in data broker telemetry alongside highly invasive intrusions penetrating regional government, academic, and medical architectures. The proliferation of localized identity document marketplaces and active network access brokers highlights a rapidly maturing underground ecosystem across the continent. While Morocco, Egypt, and South Africa remain the primary targets, secondary focal points—including Algeria, Tunisia, and Kenya—are actively scaling in volume. 
+April 2026 recorded a notable escalation in data broker telemetry alongside highly invasive intrusions penetrating regional government, academic, and medical architectures. The proliferation of localized identity document marketplaces and active network access brokers highlights a rapidly maturing underground ecosystem across the continent. While Morocco, Egypt, and South Africa remain the primary targets, secondary focal points - including Algeria, Tunisia, and Kenya - are actively scaling in volume.
 
-**AFRINTEL** – African Cyber Threat Intelligence  
+**AFRINTEL** – African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-Graphe CTI AFRINTEL — Actors → Victims → Countries → Sectors
+Graphe CTI AFRINTEL - Actors → Victims → Countries → Sectors
 ```mermaid
 graph LR
 

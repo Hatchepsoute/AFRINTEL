@@ -1,4 +1,4 @@
-# AFRINTEL — Country Hotspots
+# AFRINTEL - Country Hotspots
 ## April 2026
 
 | Rank | Country | Incidents | CTI Reading |

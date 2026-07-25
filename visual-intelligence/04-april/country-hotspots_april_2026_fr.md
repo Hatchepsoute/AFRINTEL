@@ -1,4 +1,4 @@
-# AFRINTEL — Hotspots pays
+# AFRINTEL - Hotspots pays
 ## Avril 2026
 
 | Rang | Pays | Incidents | Lecture CTI |

@@ -1,5 +1,5 @@
-# AFRINTEL — Carte écosystème CTI
-## Acteurs → Pays → Secteurs — Avril 2026
+# AFRINTEL - Carte écosystème CTI
+## Acteurs → Pays → Secteurs - Avril 2026
 
 ```mermaid
 flowchart LR

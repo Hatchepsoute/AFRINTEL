@@ -88,7 +88,7 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 
 ## Visual intelligence
 
-📊 [May 2026 dashboard](visual-intelligence/05-may/README.md) — ecosystem maps, actor diagrams, country hotspots, sector exposure
+📊 [May 2026 dashboard](visual-intelligence/05-may/README.md) - ecosystem maps, actor diagrams, country hotspots, sector exposure
 
 📊 [April 2026 dashboard](visual-intelligence/04-april/README.md)
 
@@ -124,7 +124,7 @@ AFRINTEL/
 
 ---
 
-## Author
+## ✍🏿 Author
 
 **Adama ASSIONGBON** - SOC & Cyber Threat Intelligence Consultant
 

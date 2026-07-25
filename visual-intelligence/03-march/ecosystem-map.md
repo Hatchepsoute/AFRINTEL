@@ -75,7 +75,7 @@ pie
     "Education / University (1)" : 1
 ```
 
-## Full map — Actor → Victim → Country → Sector
+## Full map - Actor → Victim → Country → Sector
 
 ```mermaid
 flowchart LR
@@ -290,7 +290,7 @@ flowchart LR
     class S_Government___Public_Health sector;
 ```
 
-## Simplified map — Actor → Victim
+## Simplified map - Actor → Victim
 
 ```mermaid
 flowchart LR

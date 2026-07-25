@@ -290,7 +290,7 @@ flowchart LR
     class S_Gouvernement___Sant__publique sector;
 ```
 
-## Carte simplifiée — Actor → Victim
+## Carte simplifiée - Actor → Victim
 
 ```mermaid
 flowchart LR

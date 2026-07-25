@@ -1,4 +1,4 @@
-# AFRINTEL — Most Active Threat Actors
+# AFRINTEL - Most Active Threat Actors
 ## April 2026
 
 | Threat Actor / Group | Incidents | Dominant Type |

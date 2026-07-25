@@ -1,5 +1,5 @@
-# AFRINTEL — CTI Ecosystem Map
-## Actors → Countries → Sectors — April 2026
+# AFRINTEL - CTI Ecosystem Map
+## Actors → Countries → Sectors - April 2026
 
 ```mermaid
 flowchart LR

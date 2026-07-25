@@ -1,4 +1,4 @@
-# AFRINTEL — Ransomware vs Data Leaks
+# AFRINTEL - Ransomware vs Data Leaks
 ## April 2026
 
 | Country | Ransomware | Data Leaks |

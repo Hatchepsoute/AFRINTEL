@@ -204,6 +204,6 @@ timeline
 ## 9. Conclusion
 August 2025 saw a diverse range of cyberattacks across Africa, with the technology and energy sectors being the most impacted. Multiple threat actors were involved, and the sale of privileged access indicates an evolving threat landscape. Increased regional cooperation and intelligence sharing remain critical to mitigating these threats.
 
-## Author
+## ✍🏿 Author
 Adama ASSIONGBON  
 SOC & Cyber Threat Intelligence Consultant

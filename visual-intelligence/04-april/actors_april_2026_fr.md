@@ -1,4 +1,4 @@
-# AFRINTEL — Acteurs les plus actifs
+# AFRINTEL - Acteurs les plus actifs
 ## Avril 2026
 
 | Acteur / Groupe | Incidents | Type dominant |

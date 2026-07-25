@@ -12,7 +12,7 @@ The month of March 2024 was marked by sustained threat actor activity from ranso
 
 Cybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia** and **Namibia**.
 
-### Key Indicators — March 2024
+### Key Indicators - March 2024
 * **Total Validated Victims:** 7
 * **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack).
 * **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1).
@@ -32,7 +32,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ## 3. DETAILED INCIDENT MAPPING (MARCH 2024)
 
 ### 🗓️ March 19, 2024
-#### 🇪🇬 Egypt — Go4Kora
+#### 🇪🇬 Egypt - Go4Kora
 * **Incident Identifier:** AFRINTEL-2024-13649
 * **Ransomware Group:** RansomHub
 * **Work Sector:** Sports Media & Audience Entertainment
@@ -43,7 +43,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 20, 2024
-#### 🇿🇦 South Africa — Government Printing Works (GPW)
+#### 🇿🇦 South Africa - Government Printing Works (GPW)
 * **Incident Identifier:** AFRINTEL-2024-13658
 * **Ransomware Group:** LockBit 3.0
 * **Work Sector:** Public Administrations & State Security Printing
@@ -54,7 +54,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 25, 2024
-#### 🇹🇳 Tunisia — Arab Tunisian Leasing (ATL Leasing)
+#### 🇹🇳 Tunisia - Arab Tunisian Leasing (ATL Leasing)
 * **Incident Identifier:** AFRINTEL-2024-13740
 * **Ransomware Group:** Hunters International
 * **Work Sector:** Financial Services & Asset Leasing
@@ -65,7 +65,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 25, 2024
-#### 🇪🇬 Egypt — El Ezaby Pharmacy
+#### 🇪🇬 Egypt - El Ezaby Pharmacy
 * **Incident Identifier:** AFRINTEL-2024-13743
 * **Ransomware Group:** LockBit 3.0
 * **Work Sector:** Healthcare & Pharmaceutical Retail
@@ -76,7 +76,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 26, 2024
-#### 🇳🇦 Namibia — Agricultural Bank of Namibia (Agribank)
+#### 🇳🇦 Namibia - Agricultural Bank of Namibia (Agribank)
 * **Incident Identifier:** AFRINTEL-2024-13757
 * **Ransomware Group:** LockBit 3.0
 * **Work Sector:** Banking & Agricultural Finance
@@ -87,7 +87,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 29, 2024
-#### 🇪🇬 Egypt — PGESCo (Power Generation Engineering and Services Company)
+#### 🇪🇬 Egypt - PGESCo (Power Generation Engineering and Services Company)
 * **Incident Identifier:** AFRINTEL-2024-13908
 * **Ransomware Group:** RansomHub
 * **Work Sector:** Energy, Oil/Gas & Infrastructure Engineering
@@ -98,7 +98,7 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 ---
 
 ### 🗓️ March 31, 2024
-#### 🇿🇦 South Africa — Nampak
+#### 🇿🇦 South Africa - Nampak
 * **Incident Identifier:** AFRINTEL-2024-13957
 * **Ransomware Group:** LockBit 3.0
 * **Work Sector:** Industrial Manufacturing (Packaging Solutions)
@@ -124,4 +124,4 @@ In light of the observed tactics, techniques, and procedures (TTPs) utilized by 
 **Principal Author:** *Adama ASSIONGBON* *Senior SOC & Cyber Threat Intelligence (CTI) Consultant* Casablanca, Morocco.  
 [LinkedIn Professional Profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
 
-**Data Source:** OSINT Registries & Dark Web Leak Site Monitoring — AFRINTEL Project 2024.
+**Data Source:** OSINT Registries & Dark Web Leak Site Monitoring - AFRINTEL Project 2024.

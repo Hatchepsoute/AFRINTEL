@@ -1,4 +1,4 @@
-# AFRINTEL — Carte sectorielle
+# AFRINTEL - Carte sectorielle
 ## Avril 2026
 
 | Secteur | Incidents | Pourcentage |

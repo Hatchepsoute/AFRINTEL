@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa — March 2024: List of 7 Victims
+# Cyber Attacks in Africa - March 2024: List of 7 Victims
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 

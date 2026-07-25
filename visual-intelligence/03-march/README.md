@@ -1,4 +1,4 @@
-# AFRINTEL Visual Intelligence — March 2026
+# AFRINTEL Visual Intelligence - March 2026
 
 - [Ecosystem Map EN](./ecosystem-map.md)
 - [Carte écosystème FR](./ecosystem-map_FR.md)
