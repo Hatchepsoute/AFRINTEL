@@ -93,17 +93,17 @@ xychart-beta
 
 | Period | Ransomware | Data leaks / access sales | Other | Total |
 |---|---:|---:|---:|---:|
-| Q1, January to March | 56 | 25 | 1 | 82 |
-| Q2, April to June | 56 | 101 | 0 | 157 |
+| First quarter, January to March | 56 | 25 | 1 | 82 |
+| Second quarter, April to June | 56 | 101 | 0 | 157 |
 | **H1 2026** | **112** | **126** | **1** | **239** |
 
-Q2 recorded **75 more incidents than Q1**, an increase of **91.5%**. Ransomware volume remained stable at 56 incidents in each quarter. Data leaks and access sales rose from 25 in Q1 to 101 in Q2, an increase of **304%**.
+The second quarter recorded **75 more incidents than first quarter**, an increase of **91.5%**. Ransomware volume remained stable at 56 incidents in each quarter. Data leaks and access sales rose from 25 in the first quarter to 101 in the second quarter, an increase of **304%**.
 
 ## 6. Key CTI findings
 
 1. **Ransomware remained persistent rather than continuously accelerating.** Monthly volume stayed between 16 and 20 incidents.
-2. **Data leaks became the principal volume driver in Q2.** April and May recorded 81 leaks or access sales, compared with 25 during the entire first quarter.
-3. **June changed the balance without returning to Q1 conditions.** Total volume declined after the April-May peak, but ransomware returned to 50% of monthly incidents.
+2. **Data leaks became the principal volume driver in the second quarter.** April and May recorded 81 leaks or access sales, compared with 25 during the entire first quarter.
+3. **June changed the balance without returning to conditions observed during the first quarter.** Total volume declined after the April-May peak, but ransomware returned to 50% of monthly incidents.
 4. **Claim status must remain visible.** Ransomware listings without accessible published data remain claims, not confirmed encryption or publication.
 5. **Observed data strengthens exposure assessments, not intrusion attribution.** Dataset analysis can establish structure, sensitivity and potential impact while the initial access vector remains unknown.
 
@@ -128,13 +128,13 @@ Q2 recorded **75 more incidents than Q1**, an increase of **91.5%**. Ransomware 
 
 ## 9. Strategic outlook
 
-The first half of 2026 shows two parallel risks. Ransomware maintained a stable operational baseline, while data leaks and access sales expanded sharply during Q2. The semester should not be described as a simple ransomware wave. The more significant structural change was the growth of data brokerage, credential exposure and publication of structured datasets.
+The first half of 2026 shows two parallel risks. Ransomware maintained a stable operational baseline, while data leaks and access sales expanded sharply during the second quarter. The semester should not be described as a simple ransomware wave. The more significant structural change was the growth of data brokerage, credential exposure and publication of structured datasets.
 
 For the second half of 2026, AFRINTEL should monitor whether the June 50/50 distribution becomes a sustained ransomware recovery or remains a temporary correction after the April-May leak peak.
 
 ## 10. Conclusion
 
-AFRINTEL recorded **239 incidents during H1 2026**: **112 ransomware**, **126 data leaks or access sales**, and **1 defacement**. Q2 accounted for nearly two-thirds of semester activity, and all net growth over Q1 came from leaks and access sales.
+AFRINTEL recorded **239 incidents during H1 2026**: **112 ransomware**, **126 data leaks or access sales**, and **1 defacement**. second quarter accounted for nearly two-thirds of semester activity, and all net growth over the first quarter came from leaks and access sales.
 
 The defensive priority is dual: maintain ransomware readiness while strengthening controls against credential exposure, bulk data extraction, cloud-storage exposure and underground data sales.
 

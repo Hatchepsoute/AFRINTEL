@@ -93,17 +93,17 @@ xychart-beta
 
 | Période | Ransomware | Fuites / ventes d'accès | Autre | Total |
 |---|---:|---:|---:|---:|
-| T1, janvier à mars | 56 | 25 | 1 | 82 |
-| T2, avril à juin | 56 | 101 | 0 | 157 |
+| premier trimestre, janvier à mars | 56 | 25 | 1 | 82 |
+| deuxième trimestre, avril à juin | 56 | 101 | 0 | 157 |
 | **S1 2026** | **112** | **126** | **1** | **239** |
 
-Le T2 enregistre **75 incidents de plus que le T1**, soit une hausse de **91,5 %**. Le ransomware reste stable, avec 56 incidents dans chaque trimestre. Les fuites et ventes d'accès passent de 25 au T1 à 101 au T2, soit une hausse de **304 %**.
+Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestre**, soit une hausse de **91,5 %**. Le ransomware reste stable, avec 56 incidents dans chaque trimestre. Les fuites et ventes d'accès passent de 25 au premier trimestre à 101 au deuxième trimestre, soit une hausse de **304 %**.
 
 ## 6. Principaux constats CTI
 
 1. **Le ransomware reste persistant sans accélération continue.** Son volume mensuel reste compris entre 16 et 20 incidents.
-2. **Les fuites deviennent le principal moteur du volume au T2.** Avril et mai enregistrent 81 fuites ou ventes d'accès, contre 25 sur l'ensemble du T1.
-3. **Juin modifie l'équilibre sans revenir à la situation du T1.** Le volume baisse après le pic d'avril-mai, mais le ransomware revient à 50 % des incidents mensuels.
+2. **Les fuites deviennent le principal moteur du volume au deuxième trimestre.** Avril et mai enregistrent 81 fuites ou ventes d'accès, contre 25 sur l'ensemble du premier trimestre.
+3. **Juin modifie l'équilibre sans revenir à la situation du premier trimestre.** Le volume baisse après le pic d'avril-mai, mais le ransomware revient à 50 % des incidents mensuels.
 4. **Le statut de revendication doit rester visible.** Une publication ransomware sans données accessibles reste une revendication, pas une preuve de chiffrement ou de publication.
 5. **Les données observées renforcent l'évaluation de l'exposition, pas l'attribution de l'intrusion.** L'analyse permet d'établir la structure, la sensibilité et l'impact potentiel des données, tandis que le vecteur initial peut rester inconnu.
 
@@ -128,13 +128,13 @@ Le T2 enregistre **75 incidents de plus que le T1**, soit une hausse de **91,5 %
 
 ## 9. Perspective stratégique
 
-Le premier semestre fait apparaître deux risques parallèles. Le ransomware conserve un niveau opérationnel stable, tandis que les fuites et ventes d'accès augmentent fortement au T2. Le changement structurel le plus important est la progression du courtage de données, des expositions d'identifiants et des publications de données structurées.
+Le premier semestre fait apparaître deux risques parallèles. Le ransomware conserve un niveau opérationnel stable, tandis que les fuites et ventes d'accès augmentent fortement au deuxième trimestre. Le changement structurel le plus important est la progression du courtage de données, des expositions d'identifiants et des publications de données structurées.
 
 Pour le second semestre, AFRINTEL devra déterminer si la répartition 50/50 de juin marque un retour durable du ransomware ou une correction temporaire après le pic de fuites d'avril et mai.
 
 ## 10. Conclusion
 
-AFRINTEL a recensé **239 incidents au premier semestre 2026** : **112 ransomware**, **126 fuites ou ventes d'accès** et **1 défiguration**. Le T2 représente près des deux tiers de l'activité semestrielle et toute la hausse nette par rapport au T1 provient des fuites et ventes d'accès.
+AFRINTEL a recensé **239 incidents au premier semestre 2026** : **112 ransomware**, **126 fuites ou ventes d'accès** et **1 défiguration**. Le deuxième trimestre représente près des deux tiers de l'activité semestrielle et toute la hausse nette par rapport au premier trimestre provient des fuites et ventes d'accès.
 
 La priorité défensive est double : maintenir la préparation au ransomware tout en renforçant les contrôles contre l'exposition d'identifiants, l'extraction massive de données, l'exposition du stockage cloud et les ventes clandestines de données.
 
