@@ -10,7 +10,9 @@
 
 ## 1. Executive summary
 
-February 2026 recorded **20 cyber incidents** publicly claimed or detected across Africa, all attributed to ransomware or data extortion groups. The month is defined by one extraordinary event: the alleged 139 TB exfiltration from DAF SENEGAL (Directorate of General Administration and Equipment), by far the largest data breach claim recorded by AFRINTEL in 2026. Key findings:
+February 2026 records **20 cyber incidents** across **14 African countries**, all attributed to ransomware or data extortion groups. The key event is the publication
+of sensitive data attributed to **DAF Senegal**, including citizen and biometric information reviewed by AFRINTEL. The **139 TB** volume is claimed by
+the actor, but could not be measured from the accessible material. Key findings:
 
 - **20 ransomware / data extortion incidents (100%)**.
 - **14 countries** affected; **South Africa** (3), **Egypt** (3), **Ghana** (2) and **Nigeria** (2) lead.
