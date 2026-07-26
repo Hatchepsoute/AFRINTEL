@@ -83,7 +83,7 @@ Key findings:
 
 ```mermaid
 pie showData
- title Country distribution - June 2026
+ title Number of victims by country - June 2026
  "Morocco" : 10
  "South Africa" : 6
  "Egypt" : 6
