@@ -22,8 +22,17 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Pays les plus touchés :** Afrique du Sud (13), Maroc (8), Égypte (8)
 
 ### Typologie des incidents
-- **Ransomware (chiffrement + rançon) :** 19 incidents (46,3 %)
+- **Revendications ou publications ransomware :** 19 incidents (46,3 %)
 - **Fuites de données / intrusions système :** 22 incidents (53,7 %)
+
+### Incidents marquants
+
+- **Égypte :** 3,8 millions d’enregistrements revendiqués dans un incident attribué au ministère de la Santé.
+- **Maroc :** une publication de 300 Go attribuée au ministère de la Justice comprenait des dossiers judiciaires.
+- **Sénégal :** UBA Senegal a signalé une fraude coordonnée impliquant plus de 3 400 retraits aux distributeurs, pour un total de 1,143 milliard de FCFA.
+- **Afrique du Sud :** une exposition de 3,8 To a été attribuée au gouvernement provincial du Gauteng.
+
+> Les fiches ci-dessous documentent des revendications, publications ou incidents signalés. AFRINTEL ne confirme pas une compromission sans élément indépendant.
 
 ### Répartition par pays
 - 🇿🇦 Afrique du Sud : **13** victimes

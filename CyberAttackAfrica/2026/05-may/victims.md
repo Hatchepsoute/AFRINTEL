@@ -1,5 +1,18 @@
 # African victims - May 2026
 
+## Monthly snapshot
+
+May 2026 includes **57 unique incidents**: **16 ransomware incidents** and **41 data leaks or access sales**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
+
+### Notable incidents
+
+- **Egypt:** the education sector was affected by several large claims, including 26.8 million student records attributed to the Ministry of Education.
+- **South Africa:** multiple public institutions were targeted during the coordinated OpSouthAfrica campaign.
+- **Tanzania:** more than 10,000 police webmail accounts with plaintext passwords were offered for sale.
+- **Senegal:** AuditTeam claimed data exfiltration from the Trésor Public, including approximately 1.66 million database records.
+
+> The entries below document observed claims or publications. AFRINTEL does not confirm a compromise without independent evidence.
+
 ### May 02, 2026
 #### 🇪🇬 Egypt - Ministry of Manpower / Ministry of Labour [Data Leak]
 - **Threat Actor / Group:** CrowStealer
@@ -400,26 +413,26 @@ Such a compromise could potentially allow:
 - **Status:** Claim - Data Sample Published
 - **Website:** [www.tresor.sn](https://www.tresor.sn)
 - **Description:**
-  The Trésor Public du Sénégal is the state institution responsible for managing public finances, executing the national budget, and overseeing tax collection and government expenditure. The **AuditTeam** ransomware group claimed the compromise of the institution on May 17-18, 2026. Technical analysis of exfiltrated data indicates the actor had persistent access to at least two internal servers before the public claim was made.
+  The Trésor Public du Sénégal is the state institution responsible for managing public finances, executing the national budget, and overseeing tax collection and government expenditure. The **AuditTeam** ransomware group claimed the compromise of the institution on May 17-18, 2026. The analysed files were presented as originating from two internal systems and contain dates preceding the public claim. The duration and method of access remain unknown.
 - **Analysis:**
-  Analysis of exfiltrated data reveals the compromise of two internal systems, both accessed before ransomware deployment.
+  The analysed files were presented as data extracted from two internal systems. They do not independently establish the complete intrusion sequence or ransomware deployment.
   **Server 10.6.0.61 (Oracle Database 12.2.0, port 1555):** Three database dumps were extracted on May 9, 2026:
   - `COLLOC.CO_PERSONNELS` (~40,394 records): government personnel and payroll registry. Fields include employee identifiers, names, phone numbers, bank details (bank code, branch, account number, RIB), service codes, management year, and salary amounts.
   - `COLLOC.REDEVABLES` (~960,146 records): national taxpayer and debtor registry. Fields include taxpayer ID (N_C_CONTRIB), full name or business denomination, address, phone number, and business registration number. Data spans from 2017 onwards.
   - `GFORD.ORD_MANDATS` (~659,195 records): complete public payment order database. Fields include mandate number, date, transaction purpose, amount (with and without VAT), beneficiary bank details (bank code, branch, account number, RIB), beneficiary name, NINEA (Numéro d'Identification Nationale des Entreprises et Associations), and operation description. Data covers at least April 2024 through extraction date.
   **Server 10.6.0.26 (SICA -- Payroll and Salary Management System):** Operational files spanning January 2, 2025 to May 8, 2026 (18 months of financial operations) were extracted, including:
   - Government salary batch files for March 2026 by geographic region.
-  - Wire transfer files (virement) dated May 8, 2026 in bank-standard CSV format (bank code, branch, account number, RIB, amount, beneficiary name, operation label). Types observed include salary payments, exam correction allowances, and supply purchases. These files confirm active access to live operational systems on the day of extraction.
+  - Wire transfer files (virement) dated May 8, 2026 in bank-standard CSV format (bank code, branch, account number, RIB, amount, beneficiary name, operation label). Types observed include salary payments, exam correction allowances, and supply purchases. The dates show that the files contain recent operational information, but do not independently confirm live system access on that date.
   - Payment mandate files (MD26-XXXXXX series) documenting individual payroll authorizations.
   - Exam allowance transfers (CFEE 2025) linking the Trésor system to national primary education examination payment flows.
-  Total estimated compromised records: approximately **1,659,735 database entries** across three tables, plus 323 days of SICA financial operation files.
+  Total records represented in the analysed material: approximately **1,659,735 database entries** across three tables, plus 323 days of SICA financial operation files.
   **CTI observations:**
-  - The database extraction (May 9, 2026) and SICA file activity (up to May 8, 2026) predate the AuditTeam public claim (May 17-18, 2026) by approximately 9 days, confirming sustained covert access before ransomware deployment. This is consistent with AuditTeam's double-extortion methodology: exfiltrate first, encrypt second.
+  - The dates visible in the databases and SICA activity files precede the AuditTeam public claim by approximately nine days. This indicates that the material presented as exfiltrated predates the publication, but does not confirm the duration of access, encryption or the complete incident sequence.
   - The REDEVABLES table (~960,146 records) represents one of the largest PII exposures from a public financial institution in West Africa recorded in AFRINTEL.
   - The GFORD.ORD_MANDATS database exposes NINEA identifiers and banking coordinates of all government suppliers and contractors, creating significant risk of supplier fraud, BEC (Business Email Compromise), and targeted financial social engineering against the public sector supply chain.
   - Salary and wire transfer data (employee bank accounts, amounts, identities) enables direct financial fraud targeting public sector employees.
-  - The presence of CFEE exam allowance transfers in the SICA system demonstrates cross-sectoral infrastructure dependency: a breach of the Trésor directly affects Ministry of Education payment flows.
-  - **Confidence level: High. Impact level: Level 4** (critical national financial infrastructure, large-scale PII, access to live operational financial systems, double extortion).
+  - The presence of CFEE exam allowance transfers in the SICA material indicates an inter-institutional dependency involving Ministry of Education payment flows.
+  - **Confidence level: High. Impact level: Level 4** (critical national financial infrastructure and large-scale exposure of sensitive financial and identity data).
 
 #### 🇪🇬 Egypt / 🇱🇾 Libya – Passport Scans [Data Leak]
 - **Actor / Group:** raylie (forum [Citizen])
@@ -795,4 +808,4 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
   - **Other companies:** 500,000 lines – 350 USD.
 
 - **Analysis:**  
-  This massive sale constitutes one of the most significant data leaks concerning Morocco, affecting both strategic government institutions and private companies. Judicial data (files, complaints, decisions) exposes sensitive information about citizens and ongoing cases. NARSA data (driving licences, licence plates, fines) enables identity theft and the creation of fraudulent administrative documents. The presence of OFPPT data (vocational training) exposes the personal information and academic records of learners and trainers. The centralisation of these databases by a single actor suggests a coordinated extraction campaign targeting Moroccan infrastructures, potentially through shared vulnerabilities (administrative access, unsecured APIs). The sale of this data on cybercriminal forums exposes Moroccan citizens and companies to increased risks of fraud, identity theft and blackmail. The absence of any mention of an authority having notified these breaches raises questions about the responsiveness of the entities concerned. Notably, these same Moroccan institutions had already been subject to data leaks in April 2026, with the same malicious actor having disclosed samples and complete data at the time, confirming a persistence of the threat and the absence of effective corrective measures.
+  This sale concerns both government institutions and private companies in Morocco. The claimed judicial, road-safety and vocational-training data could create risks of fraud, identity theft, phishing and blackmail. The same actor also published claims concerning Moroccan institutions in April 2026, indicating repeated activity that warrants continued monitoring. The source material does not establish the initial access vector, the remediation status or any institutional response.

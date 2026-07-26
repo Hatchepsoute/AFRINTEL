@@ -1,5 +1,18 @@
 # Victimes africaines - Juin 2026 (40 incidents)
 
+## Résumé du mois
+
+Juin 2026 compte **40 incidents uniques** : **20 ransomwares** et **20 fuites de données ou ventes d’accès**. Les fiches concernent directement ou indirectement **20 pays africains**, notamment par l’intermédiaire de deux offres multi-pays de vente d’accès.
+
+### Incidents marquants
+
+- **Maroc :** 7 incidents associés au cluster d’acteur anisanas2 au cours du mois.
+- **Nigéria :** exposition revendiquée de données fintech et biométriques associées à Jeroid.co, ainsi que d’identifiants de messagerie attribués à l’armée nigériane.
+- **Tanzanie :** 10,2 millions d’enregistrements revendiqués pour BRELA, concernant environ 8 millions de personnes.
+- **Libye :** deux publications successives d’EvaN47 visant des ministères chargés de l’éducation.
+
+> Les fiches ci-dessous documentent des revendications ou publications observées. AFRINTEL ne confirme pas une compromission sans élément indépendant.
+
 > **Note de lecture ransomware :** une fiche ransomware est intégrée lorsqu'AFRINTEL a observé la victime sur le site de divulgation du groupe. `Claim - Unverified` signifie qu'aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte. Cela ne signifie pas que la publication du groupe n'a pas été observée. Sans données analysées, AFRINTEL ne déduit ni chiffrement, ni interruption opérationnelle, ni vecteur d'accès initial.
 
 ### 01 Juin 2026
@@ -426,7 +439,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇾🇹 Mayotte - Commune de Ouangani
 
-- **Groupe ransomware:** DeadLock
+- **Groupe ransomware :** DeadLock
 - **Secteur :** Government / Administration
 - **Site web :** [ville-ouangani.yt](https://ville-ouangani.yt/)
 - **Statut :** Data Fully Published

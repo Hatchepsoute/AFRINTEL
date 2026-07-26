@@ -7,6 +7,19 @@
 # Liste des victimes africaines de cyberattaques en Janvier 2026 (21 victimes)
 👉🏾 [**English version available here**](./victims.md)
 
+## Résumé du mois
+
+Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de données**, **1 vente d’accès** et **1 défacement coordonné**, répartis dans **12 pays africains**.
+
+### Incidents marquants
+
+- **Niger :** défacement coordonné de plus de sept sites gouvernementaux.
+- **Sénégal :** publication d’une base de données financières attribuée à PixPay.
+- **Maroc :** publication d’une base de données aéronautiques attribuée à AOM Aviation Group.
+- **Togo :** vente revendiquée d’accès à des infrastructures gouvernementales par Bigbrother.
+
+> Les fiches ci-dessous documentent des revendications ou publications observées. AFRINTEL ne confirme pas une compromission sans élément indépendant.
+
 ## Janvier 2026
 
 ### 03 Janvier 2026

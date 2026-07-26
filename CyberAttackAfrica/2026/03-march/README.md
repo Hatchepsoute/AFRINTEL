@@ -9,7 +9,7 @@
 👉🏾 [**French version available here**](./README_FR.md)
 ## 1. Executive summary
 
-In March 2026, **41 cyber incidents** targeting African entities were publicly claimed or detected. The continent continues to face a dual threat: **ransomware** (encryption with ransom demand) and **data breaches / system intrusions** (exfiltration without encryption or direct financial fraud). Key findings:
+In March 2026, **41 cyber incidents** targeting African entities were publicly claimed or detected. The continent continues to face a dual threat: **ransomware claims or publications** and **data breaches / system intrusions**. A ransomware listing does not by itself establish encryption or operational disruption. Key findings:
 
 - **19 ransomware attacks (46.3%)** and **22 data breaches / intrusions (53.7%)**.
 - **14 countries** affected; **South Africa** (13 incidents), **Morocco** (8) and **Egypt** (8) account for 71% of all victims.
@@ -30,7 +30,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 - **Sources**: Dark web, DLS (leak sites), OSINT, Telegram channels, underground forums, media reports.
 - **Inclusion**: Publicly claimed or attributed incidents with identified victim, country, sector.
 - **Typology**:
-  - *Ransomware*: encryption + ransom demand (claim on DLS).
+  - *Ransomware*: victim publication or claim by a ransomware group. Encryption is not presumed without supporting evidence.
   - *Data breach / intrusion*: unencrypted exfiltration, database sold or published, or system compromise leading to financial fraud.
 
 ## 3. Global overview
@@ -160,91 +160,14 @@ pie
  "INC Ransom (2)" : 2
 ```
 
-## 4. Country-by-country overview
+## 4. Geographic summary
 
-> All items presented originate from incidents claimed on the dark web, on ransomware group websites, and underground forums.
+> **For details of each incident, see [`victims.md`](./victims.md).**
 
-### 🇿🇦 South Africa (13 incidents: 7 ransomware, 6 data breaches)
-
-South Africa recorded the highest victim count in March with 13 incidents across government, education, insurance, engineering, and IT sectors. The threat actor XP95 drove the most impactful events: Gauteng Provincial Government, with 3.8 TB of provincial data put up for sale at $25,000; Stats SA, the national statistics authority, with 154 GB exfiltrated and a $100,000 ransom demand; and GCRA, the Gauteng City Region Academy, with 147 GB taken. These are data extortion incidents, not standard ransomware: the threat actor XP95 sells exfiltrated data rather than encrypting systems. The Gauteng breach potentially compromises health, education, housing, and economic data for South Africa's most populous province. The threat actor Blackwinter99 published admin credentials for UNISA, Africa's largest distance learning institution, creating direct compromise risk. The threat actor LockBit 5.0 claimed Diesel-Electric Group, a major automotive components distributor. The threat actor Lynx claimed Lion of Africa Insurance, a specialized insurer. The threat actor DragonForce claimed The Unlimited, an insurance services company, with 137 GB alleged. The threat actor TheGentlemen claimed Elundini Municipality, a local government entity. The threat actor NightSpire claimed Semenya Furumele Consulting, a professional services firm. The threat actor INC Ransom claimed ETFSA, a wealth management provider. The threat actor TelephoneHooliganism offered access credentials to Walter Sisulu University for $1,150. The threat actor Coinbase Cartel claimed Nashua, an IT managed services provider. The threat actor xNov exposed an equestrian event database from Eventing South Africa.
-
----
-
-### 🇲🇦 Morocco (8 incidents: 5 ransomware, 3 data breaches)
-
-Morocco was heavily targeted in March, with a notable concentration on state institutions. The threat actor APT73/BASHE struck four strategic Moroccan entities: HACA, the audiovisual regulation authority; Maroc Telecom, the national telecommunications operator; 2M TV, the national public broadcaster; and IRES, the Royal Cabinet think tank. This concentration on state media and telecoms suggests a possible geopolitical motivation behind the campaign. The threat actor xNov exposed student health insurance records from ONOUSC, covering 3,631 entries, and published Smarteez supply chain data for the L'Oréal Morocco network, including 22 OAuth2 secrets and GPS coordinates for 296 pharmacies. The threat actor anisanas2 leaked 300 GB from the Ministry of Justice, including approximately 150,000 court case files. The threat actor Qilin claimed Outsourcia, a major BPO and business process services firm.
-
----
-
-### 🇪🇬 Egypt (8 incidents: 3 ransomware, 5 data breaches)
-
-Egypt recorded eight incidents in March, with the threat actor CrowStealer dominating through five systematic breaches targeting government and education infrastructure. The threat actor CrowStealer claimed Canadian International College (CIC Cairo) with 2,925 student records; the Waste Management Regulatory Authority (WMRA); Orascom Construction, one of Egypt's largest engineering groups; the Ministry of Health with 3.8 million patient records sold for $2,500; and the Ministry of Education. The Ministry of Health breach is the largest single health data exposure recorded by AFRINTEL for the continent in March. The threat actor Crypto24 claimed Rowad Modern Engineering. The threat actor PEAR claimed INTERACT Technology Solutions. The threat actor Payload claimed Grid Fine Finishes, a construction finishing services company.
-
----
-
-### 🇳🇬 Nigeria (2 incidents: 2 data breaches)
-
-Nigeria recorded two high-severity breaches. The threat actor Bytetobreach claimed Remita, operated by SystemSpecs and serving as Nigeria's government payment processing backbone, with 3 TB of data including KYC documents, source code, Docker registries, and government HSM encryption keys. The exposure of HSM keys constitutes a sovereign financial infrastructure risk. The threat actor AshleyWood2022 leaked more than 11,000 staff records from Ahmadu Bello University, one of Nigeria's largest federal universities.
-
----
-
-### 🇸🇳 Senegal (1 incident: system intrusion)
-
-UBA Senegal suffered a coordinated cyber-heist executed on January 30-31 but publicly disclosed on March 24. Attackers compromised the bank's internal systems, manipulated databases to increase withdrawal limits and transfer funds, then coordinated over 3,400 fraudulent ATM withdrawals across multiple cities, resulting in 1.143 billion FCFA (approximately $1.9 million) in losses. This incident represents a distinct attack category: direct financial fraud through system compromise, without ransomware deployment. The attack vector and actor identity have not been publicly confirmed.
-
----
-
-### 🇿🇲 Zambia (1 incident: critical government breach)
-
-ZISPIS, the national social protection information system, was claimed by the threat actor Spirigatito with approximately 34.1 million records (500 GB) allegedly exfiltrated, potentially affecting 15 million individuals. Exposed data categories include full personal, socioeconomic, financial, and GPS data. This represents one of the largest government data breaches in Sub-Saharan Africa recorded by AFRINTEL.
-
----
-
-### 🇨🇲 Cameroon (1 incident)
-
-Loozap, a classifieds and e-commerce platform, had 34,000 user accounts leaked by the threat actor zimablue, including SHA1-hashed passwords, IP addresses, and personal data. The use of SHA1 indicates inadequate security practices. The incident date was January 28, identified in March.
-
----
-
-### 🇩🇿 Algeria (1 incident)
-
-Bridges (tebridges.dz), a CRM services provider, had a database of 672,000 records sold for $1,743 by the threat actor Grubder. The attack date was February 2, identified in March.
-
----
-
-### 🇬🇳 Guinea (1 incident: suspected)
-
-Guinea's Ministry of Health had its DHIS2 health surveillance dashboards reportedly compromised by the threat actor Keymous. Activity was observed in July 2025 and identified in March 2026. Government staff records and health surveillance tools were potentially exposed. Published artifacts suggest credential-based access rather than a conventional data dump. Partially confirmed.
-
----
-
-### 🇲🇬 Madagascar (1 incident)
-
-Orange Madagascar, the national telecommunications operator and market leader, was claimed by the threat actor Qilin. Targeting a critical national telecoms operator poses risks to connectivity and communications infrastructure.
-
----
-
-### 🇹🇳 Tunisia (1 incident)
-
-K.PROPHA, a pharmaceutical distribution company, was claimed by the threat actor TheGentlemen.
-
----
-
-### 🇳🇦 Namibia (1 incident)
-
-Namibia Airports Company, the authority managing national airport infrastructure, was claimed by the threat actor INC Ransom. Airports represent critical national infrastructure with both physical and data security implications.
-
----
-
-### 🇹🇿 Tanzania (1 incident)
-
-SBC Tanzania, the PepsiCo bottling partner and beverage distributor, was claimed by the threat actor Morpheus.
-
----
-
-### 🇨🇩 DRC (1 incident: historical)
-
-FRAP, the Fund for the Reform of Public Administration, was breached in September 2025 by the threat actor privillege, with the incident identified and reported in March 2026. This highlights the delay between intrusion and public disclosure common in public administration breaches.
+- **Concentration:** South Africa (13), Morocco (8) and Egypt (8) account for 29 of 41 incidents, or 70.7% of the month.
+- **Threat mix:** 19 ransomware claims or publications and 22 data breaches or system intrusions were recorded across 14 countries.
+- **Public-sector exposure:** government and education entities remained prominent, with significant claims involving institutions in Egypt, Morocco, South Africa, Senegal and Guinea.
+- **High-impact cases:** the month included the reported UBA Senegal fraud and large-volume claims attributed to the Egyptian Ministry of Health, the Gauteng provincial government, Remita and the Moroccan Ministry of Justice.
 
 ---
 
@@ -376,23 +299,15 @@ pie
 
 ## 9. MITRE ATT&CK mapping (contextual)
 
-| Incident | Techniques |
-|---------|-----------|
-| Smarteez | T1552 - Credentials in Files |
-| Gauteng | T1041 - Exfiltration |
-| ONOUSC | T1078 - Valid Accounts |
-| Egypt Health DB | T1005 - Data from Local System |
-| UBA Senegal | T1190 - Exploit Public-Facing App, T1078 - Valid Accounts, T1048 - Exfiltration over Alternative Protocol, T1531 - Account Manipulation |
-| Loozap | T1190 - Exploit Public-Facing App, T1005 - Data from Local System (weak SHA1 storage) |
-| Guinea Health | T1190, T1078 (suspected) |
+| Phase | Technique | Analytical scope |
+| :--- | :--- | :--- |
+| Initial access | T1566 - Phishing | Defensive detection hypothesis, not observed from the claims alone |
+| Initial access | T1190 - Exploit Public-Facing Application | Defensive detection hypothesis, not observed from the claims alone |
+| Account access | T1078 - Valid Accounts | Relevant to access or credential sales, without confirming use of the accounts |
+| Collection | T1005 - Data from Local System | Contextual hypothesis when internal data is published; the collection mechanism remains unknown |
+| Impact | T1486 - Data Encrypted for Impact | Relevant to ransomware preparedness, without confirming encryption for every entry |
 
-**Common techniques observed**:
-- T1566 - Phishing  
-- T1190 - Exploit Public-Facing Application  
-- T1041 - Exfiltration  
-- T1078 - Valid Accounts  
-- T1486 - Ransomware  
-- T1531 - Account Manipulation (UBA Senegal)
+> These techniques are defensive hypotheses. A claim, data sale or leak-site publication is not sufficient to treat them as observed.
 
 ## 10. Recommendations
 

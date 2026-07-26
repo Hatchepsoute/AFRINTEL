@@ -7,6 +7,19 @@
 # Liste des victimes africaines de cyberattaques en Février 2026 (20 victimes)
 👉🏾 [**English version available here**](./victims.md)
 
+## Résumé du mois
+
+Février 2026 compte **20 incidents uniques** attribués à des **groupes ransomware ou d’extorsion de données** et **aucune fuite autonome ni vente d’accès classée séparément**, dans **14 pays africains**.
+
+### Incidents marquants
+
+- **Sénégal :** Green Blood Group revendique l’exfiltration de 139 To attribués à DAF SÉNÉGAL.
+- **Somalie, Ghana et Tanzanie :** 0APT a publié trois revendications représentant un volume cumulé de 6,85 To.
+- **Aviation :** BlueSky Aviation, Nile Air et Air Côte d’Ivoire ont été revendiquées au cours du mois.
+- **Afrique du Sud :** la revendication concernant Diesel-Electric pourrait recouper une autre fiche LockBit 5.0 enregistrée en mars et nécessite une vérification indépendante.
+
+> Les fiches ci-dessous documentent des revendications ou publications observées. Les volumes revendiqués et les compromissions ne sont pas confirmés sans élément indépendant.
+
 ## Février 2026
 
 ### 01 Février 2026

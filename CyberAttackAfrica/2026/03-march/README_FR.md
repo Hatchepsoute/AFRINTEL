@@ -8,7 +8,7 @@
 👉🏾 [**English version available here**](./README.md)
 ## 1. Synthèse exécutive
 
-En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été revendiqués ou détectés publiquement. Le continent fait face à une double menace : **ransomware** (chiffrement avec rançon) et **fuites de données / intrusions système** (exfiltration sans chiffrement ou fraude financière directe). Principales conclusions :
+En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été revendiqués ou détectés publiquement. Le continent fait face à une double menace : les **revendications ou publications ransomware** et les **fuites de données ou intrusions système**. Une publication ransomware ne permet pas, à elle seule, d’établir un chiffrement ou une interruption opérationnelle. Principales conclusions :
 
 - **19 attaques de ransomware (46,3 %)** et **22 fuites de données / intrusions (53,7 %)**.
 - **14 pays touchés** ; **Afrique du Sud** (13 incidents), **Maroc** (8) et **Égypte** (8) représentent 71 % des victimes.
@@ -29,7 +29,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 - **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground, rapports médiatiques.
 - **Inclusion** : incidents publiquement revendiqués ou attribués avec victime, pays et secteur identifiés.
 - **Typologie** :
-  - *Ransomware* : chiffrement + rançon (revendication sur DLS).
+  - *Ransomware* : publication d’une victime ou revendication par un groupe ransomware. Le chiffrement n’est pas présumé sans élément probant.
   - *Fuite de données / intrusion* : exfiltration non chiffrée, base de données vendue ou publiée, ou compromission système menant à une fraude financière.
 
 ## 3. Vue d’ensemble
@@ -165,91 +165,14 @@ pie
 | The Gentlemen    | Ransomware     | 2         | Tunisie, Afrique du Sud |
 | INC Ransom       | Ransomware     | 2         | Namibie, Afrique du Sud |
 
-## 4. Vue d’ensemble pays par pays
+## 4. Synthèse géographique
 
-> Tous les éléments présentés proviennent d’incidents revendiqués sur le dark web, sur les sites web des groupes de ransomware et les forums underground.
+> **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-### 🇿🇦 Afrique du Sud (13 incidents : 7 ransomwares, 6 fuites de données)
-
-L’Afrique du Sud enregistre le plus grand nombre de victimes en mars avec 13 incidents couvrant les secteurs gouvernemental, éducatif, assurantiel, de l’ingénierie et des technologies. L’acteur malveillant XP95 est à l’origine des événements les plus impactants : le gouvernement provincial du Gauteng, avec 3,8 To de données provinciales mis en vente pour 25 000 $ ; Stats SA, l’autorité nationale des statistiques, avec 154 Go exfiltrés et une rançon de 100 000 $ ; et la GCRA, l’académie régionale du Gauteng, avec 147 Go prélevés. Il s’agit d’incidents d’extorsion par exfiltration de données, pas de ransomware classique : l’acteur malveillant XP95 vend les données plutôt que de chiffrer les systèmes. La brèche du Gauteng compromet potentiellement des données de santé, d’éducation, de logement et d’activité économique pour la province la plus peuplée d’Afrique du Sud. L’acteur malveillant Blackwinter99 a publié des identifiants administrateur de l’UNISA, la plus grande université d’enseignement à distance d’Afrique, exposant un risque de compromission directe. L’acteur malveillant LockBit 5.0 a revendiqué Diesel-Electric Group, un grand distributeur de composants automobiles. L’acteur malveillant Lynx a revendiqué Lion of Africa Insurance, un assureur spécialisé. L’acteur malveillant DragonForce a revendiqué The Unlimited, une société de services d’assurance, avec 137 Go allégués. L’acteur malveillant TheGentlemen a revendiqué Elundini Municipality, une entité de gouvernement local. L’acteur malveillant NightSpire a revendiqué Semenya Furumele Consulting, une société de services professionnels. L’acteur malveillant INC Ransom a revendiqué ETFSA, un gestionnaire de patrimoine. L’acteur malveillant TelephoneHooliganism a proposé des identifiants d’accès à l’université Walter Sisulu pour 1 150 $. L’acteur malveillant Coinbase Cartel a revendiqué Nashua, un prestataire de services IT managés. L’acteur malveillant xNov a exposé une base de données équestre issue d’Eventing South Africa.
-
----
-
-### 🇲🇦 Maroc (8 incidents : 5 ransomwares, 3 fuites de données)
-
-Le Maroc a été lourdement ciblé en mars, avec une concentration notable sur les institutions d’État. L’acteur malveillant APT73/BASHE a frappé quatre entités stratégiques marocaines : la HACA, régulateur de l’audiovisuel ; Maroc Telecom, l’opérateur national de télécommunications ; 2M TV, la chaîne nationale publique ; et l’IRES, le think tank du Cabinet Royal. Cette concentration sur les médias et télécoms d’État marocains suggère une motivation géopolitique possible derrière la campagne. L’acteur malveillant xNov a exposé les données de la mutuelle étudiante ONOUSC (3 631 entrées) et publié des données de la supply chain Smarteez pour le réseau L’Oréal Maroc, incluant 22 secrets OAuth2 et les coordonnées GPS de 296 pharmacies. L’acteur malveillant anisanas2 a divulgué 300 Go du ministère de la Justice, dont environ 150 000 dossiers judiciaires. L’acteur malveillant Qilin a revendiqué Outsourcia, une grande société de BPO et de services aux entreprises.
-
----
-
-### 🇪🇬 Égypte (8 incidents : 3 ransomwares, 5 fuites de données)
-
-L’Égypte enregistre huit incidents en mars, avec l’acteur malveillant CrowStealer dominant par cinq fuites systématiques ciblant les infrastructures gouvernementales et éducatives. L’acteur malveillant CrowStealer a revendiqué le Canadian International College (CIC Cairo) avec 2 925 dossiers étudiants ; l’Autorité de régulation des déchets (WMRA) ; Orascom Construction, l’un des plus grands groupes d’ingénierie d’Égypte ; le ministère de la Santé avec 3,8 millions de dossiers patients vendus 2 500 $ ; et le ministère de l’Éducation. La fuite du ministère de la Santé représente la plus grande exposition individuelle de données de santé enregistrée par AFRINTEL sur le continent en mars. L’acteur malveillant Crypto24 a revendiqué Rowad Modern Engineering. L’acteur malveillant PEAR a revendiqué INTERACT Technology Solutions. L’acteur malveillant Payload a revendiqué Grid Fine Finishes, une société de services de finition en construction.
-
----
-
-### 🇳🇬 Nigeria (2 incidents : 2 fuites de données)
-
-Le Nigeria enregistre deux fuites de haute gravité. L’acteur malveillant Bytetobreach a revendiqué Remita, opéré par SystemSpecs et servant de colonne vertébrale des paiements gouvernementaux du Nigeria, avec 3 To de données incluant des documents KYC, du code source, des registres Docker et des clés HSM de chiffrement gouvernementales. L’exposition des clés HSM constitue un risque souverain pour l’infrastructure financière nationale. L’acteur malveillant AshleyWood2022 a divulgué plus de 11 000 dossiers de personnels de l’université Ahmadu Bello, l’une des plus grandes universités fédérales du Nigeria.
-
----
-
-### 🇸🇳 Sénégal (1 incident : intrusion système)
-
-UBA Sénégal a subi une cyberattaque coordonnée exécutée les 30 et 31 janvier mais rendue publique le 24 mars. Les attaquants ont compromis les systèmes internes de la banque, manipulé les bases de données pour augmenter les plafonds de retrait et transférer des fonds, puis coordonné plus de 3 400 retraits GAB frauduleux dans plusieurs villes, causant des pertes de 1,143 milliard FCFA (environ 1,9 M$). Cet incident illustre une catégorie d’attaque distincte : fraude financière directe par compromission système, sans déploiement de ransomware. Le vecteur d’attaque et l’identité de l’acteur n’ont pas été confirmés publiquement.
-
----
-
-### 🇿🇲 Zambie (1 incident : fuite critique gouvernementale)
-
-ZISPIS, le système national d’information de protection sociale, a été revendiqué par l’acteur malveillant Spirigatito avec environ 34,1 millions d’enregistrements (500 Go) prétendument exfiltrés, pouvant affecter jusqu’à 15 millions de personnes. Les catégories de données exposées incluent des données personnelles, socioéconomiques, financières et GPS complètes. L’une des plus grandes fuites gouvernementales d’Afrique subsaharienne recensées par AFRINTEL.
-
----
-
-### 🇨🇲 Cameroun (1 incident)
-
-Loozap, une plateforme de petites annonces et de commerce en ligne, a eu 34 000 comptes utilisateurs divulgués par l’acteur malveillant zimablue, incluant des mots de passe hashés en SHA1, des adresses IP et des données personnelles. L’utilisation du SHA1 témoigne de pratiques de sécurité insuffisantes. Date de l’incident : 28 janvier, identifié en mars.
-
----
-
-### 🇩🇿 Algérie (1 incident)
-
-Bridges (tebridges.dz), un prestataire de services CRM, a eu une base de données de 672 000 enregistrements vendue 1 743 $ par l’acteur malveillant Grubder. Date d’attaque : 2 février, identifiée en mars.
-
----
-
-### 🇬🇳 Guinée (1 incident : suspecté)
-
-Les tableaux de bord DHIS2 du ministère de la Santé de Guinée auraient été compromis par l’acteur malveillant Keymous. L’activité a été observée en juillet 2025 et identifiée en mars 2026. Des données personnelles du personnel gouvernemental et des outils de surveillance sanitaire ont été potentiellement exposés. Les artefacts publiés suggèrent un accès par identifiants plutôt qu’un dump conventionnel. Partiellement confirmé.
-
----
-
-### 🇲🇬 Madagascar (1 incident)
-
-Orange Madagascar, l’opérateur télécom national de référence et leader du marché, a été revendiqué par l’acteur malveillant Qilin. Cibler un opérateur télécom national critique fait peser des risques sur la connectivité et les communications.
-
----
-
-### 🇹🇳 Tunisie (1 incident)
-
-K.PROPHA, une entreprise de distribution pharmaceutique, a été revendiquée par l’acteur malveillant TheGentlemen.
-
----
-
-### 🇳🇦 Namibie (1 incident)
-
-Namibia Airports Company, l’autorité gérant les infrastructures aéroportuaires nationales, a été revendiquée par l’acteur malveillant INC Ransom. Les aéroports constituent des infrastructures nationales critiques aux implications sécuritaires à la fois physiques et numériques.
-
----
-
-### 🇹🇿 Tanzanie (1 incident)
-
-SBC Tanzania, partenaire d’embouteillage PepsiCo et distributeur de boissons, a été revendiquée par l’acteur malveillant Morpheus.
-
----
-
-### 🇨🇩 RDC (1 incident : historique)
-
-Le FRAP, fonds de réforme de l’administration publique, a subi une intrusion en septembre 2025 par l’acteur malveillant privillege, avec l’incident identifié et signalé en mars 2026. Ce cas illustre le délai fréquent entre l’intrusion et la divulgation publique dans les entités d’administration publique.
+- **Concentration :** l’Afrique du Sud (13), le Maroc (8) et l’Égypte (8) représentent 29 des 41 incidents, soit 70,7 % du mois.
+- **Répartition des menaces :** 19 revendications ou publications ransomware et 22 fuites de données ou intrusions système ont été recensées dans 14 pays.
+- **Exposition du secteur public :** les administrations et les établissements éducatifs restent très présents, avec des revendications importantes concernant des institutions en Égypte, au Maroc, en Afrique du Sud, au Sénégal et en Guinée.
+- **Cas à fort impact :** le mois comprend la fraude signalée concernant UBA Sénégal et des revendications volumétriques attribuées au ministère égyptien de la Santé, au gouvernement provincial du Gauteng, à Remita et au ministère marocain de la Justice.
 
 ---
 
@@ -374,25 +297,17 @@ pie
 - L’attaque UBA Sénégal a eu lieu fin janvier mais n’a été révélée qu’en mars - délai important dans la prise de conscience publique.
 - La compromission du ministère de la Santé guinéen reste partiellement confirmée (accès corrélé, pas de divulgation complète).
 
-## 9. Mapping MITRE ATT&CK (contextuel)
+## 9. Cartographie MITRE ATT&CK (contextuelle)
 
-| Incident | Techniques |
-|----------|-----------|
-| Smarteez | T1552 |
-| Gauteng | T1041 |
-| ONOUSC | T1078 |
-| Santé Égypte | T1005 |
-| UBA Sénégal | T1190, T1078, T1048, T1531 |
-| Loozap | T1190, T1005 (stockage SHA1 faible) |
-| Santé Guinée | T1190, T1078 (suspecté) |
+| Phase | Technique | Portée analytique |
+| :--- | :--- | :--- |
+| Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
+| Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
+| Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
 
-**Techniques observées couramment** :
-- T1566 - Phishing  
-- T1190 - Exploitation web  
-- T1041 - Exfiltration  
-- T1078 - Comptes valides  
-- T1486 - Ransomware  
-- T1531 - Manipulation de comptes (UBA Sénégal)
+> Ces techniques constituent des hypothèses défensives. Une revendication, une vente de données ou une publication sur un site de fuite ne suffit pas à les considérer comme observées.
 
 ## 10. Recommandations
 

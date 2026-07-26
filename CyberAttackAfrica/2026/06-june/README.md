@@ -245,119 +245,16 @@ pie showData
 
 ---
 
-### Country-by-country overview
+### Geographic summary
 
-> **For full details on each incident (data volumes, sample analysis, actor tactics, etc.), please refer to the complete victim list:** [`victims.md`](./victims.md)
+> **For details of each incident, see the complete victim list:** [`victims.md`](./victims.md)
 
----
-
-### 🇲🇦 Morocco (9 incidents: 1 ransomware, 8 leaks)
-
-**Ransomware (1):**
-- **The ransomware group Krybit** (June 19, MUPRAS RAM): mutual insurance body for Royal Air Maroc employees; leaked material covers member contributions, medical reimbursements, banking flows and IT contracts, a high-criticality exposure by any measure.
-
-**The anisanas2 campaign (7 incidents, June 6-27):** the same actor cluster already flagged in AFRINTEL's May 2026 report for the RADEM Meknès and Ministry of Justice bundle is still active, now in its third consecutive month against Morocco.
-- **IMT (Institut des Mines de Touissit)** (June 6): 100+ student and 37+ teacher records with national IDs.
-- **Tlog.ma** (June 6): 700,000 logistics client records; $500 ransom demand for the full database.
-- **Mines d'Aouli** (June 6): 2001-2025 fiscal and liquidation documents from a mining company under liquidation.
-- **Unidentified startup management platform** (June 26): identity documents and financials for four downstream Moroccan companies (ARSYS INFO, AUDD, Black Service Solution, Media Triangle); the operator itself is still unidentified.
-- **Unidentified Moroccan delivery company** (June 26): 486,024 delivery records covering seven years of nationwide operations.
-- **Avito.ma** (June 26): 200,000-listing sample, $800 asking price for the full archive; the same platform was already sampled by a different actor in May 2026.
-- **Stellantis Morocco** (June 27): 992-record automotive sales-lead sample; the file's brand mix suggests a CRM source rather than a confirmed direct compromise.
-
-**Other leak (1):**
-- **The threat actor 404Crew Cyber Team** (June 25, MG Maroc): 2025-2026 payroll and social security declaration sample from a medical professionals' association.
-
-**Assessment:** this is not a series of isolated incidents. One actor cluster has now hit at least ten Moroccan targets recorded from claims or analysed publications since April across education, logistics, mining, e-commerce, startups and automotive, with no publicly documented coordinated response observed by AFRINTEL. That pattern, not any single breach, is the real Moroccan story of Q2 2026.
-
----
-
-### 🇿🇦 South Africa (6 incidents: 4 ransomware, 2 leaks)
-
-**Ransomware (4):**
-- **Black X** (June 2, African National Congress): 2,310,865 membership records with South African ID numbers, addresses and languages published directly, one of the largest political-party data exposures on record for the continent.
-- **WorldLeaks** (June 5, Access Dental): victim listing observed on the ransomware group's site.
-- **LockBit 5** (June 18, Grey High School): victim listing observed on the ransomware group's site.
-- **CMD Organization** (June 28, Fidelity Security Group): victim listing observed on the ransomware group's site.
-
-**Leaks (2):**
-- **The threat actor mosad** (June 8, South African Army / SANDF): a classified 2022 "Warning Instruction" document detailing crowd-control deployment, including named senior officers' phone numbers, emails and national ID-linked identifiers. A restricted military document circulating on Telegram four years after being written points to a persistent internal leak vector that has not been closed.
-- **The threat actor GOD User** (June 10, UNISA): full SQL dump of a technical-support system with plaintext passwords across customer, technician and administrator accounts.
-
----
-
-### 🇳🇬 Nigeria (4 incidents: 1 ransomware, 3 leaks)
-
-**Ransomware (1):**
-- **DeadLock** (June 1, Fidelity Pension Managers): victim listing observed on the ransomware group's site.
-
-**Leaks (3):**
-- **The threat actor burti** (June 10, Jeroid.co): 312,433 users, 110,282 BVN, 64,300 NIN, and 70,956 biometric face-verification photos left on an unauthenticated public S3 bucket, sold for $2,000. This is the most severe fintech exposure AFRINTEL has recorded in Nigeria this year while the initial access vector remains unknown.
-- **The coalition 404Crew Cyber Team x NullSec Nigeria** (June 13, NILDS / National Assembly): parliamentary database sample, hacktivist-motivated (#OpNigeria), medium confidence.
-- **The threat actor NulleSecNg** (June 21, Nigerian Army, army.mil.ng): 20+ plaintext webmail credentials for military personnel, including access to a DigitalGlobe satellite imagery portal. Plaintext passwords for a national army's webmail, sitting next to satellite reconnaissance access, is the kind of incident that should trigger an emergency credential rotation the same day it is found, not a routine ticket.
-
----
-
-### 🇪🇬 Egypt (4 incidents: 3 ransomware, 1 leak)
-
-**Ransomware (3):**
-- **The ransomware group TheGentlemen** (June 4, Bouri Group): victim listing observed on the ransomware group's site.
-- **The ransomware group Nightspire** (June 15, Sheraton Miramar Resort El Gouna): victim listing observed on the ransomware group's site.
-- **The ransomware group Lamashtu** (June 17, Great Foods): victim listing observed on the ransomware group's site.
-
-**Leak (1):**
-- **The threat actor Xyphorix** (June 6, Egyptian Pilots Database): personal data of military, commercial and civilian pilots from Egypt Air, Qatar Airways, Fly Emirates, Suez Canal Authority and the Ministry of Civil Aviation, sold with no price disclosed. Military-affiliated pilot data for sale on a criminal forum is a national-security exposure, not a routine personal-data leak.
-
----
-
-### 🇹🇳 Tunisia (4 incidents: 3 ransomware, 1 leak)
-
-**Ransomware (3):**
-- **The ransomware group Aurora** (June 16, Sumitomo Electric Bordnetze, SEBN Tunisia): victim listing observed on the ransomware group's site for the Fejja location.
-- **The ransomware group SETTRA** (June 26, Centrale Laitière du Cap-Bon): victim listing observed on the ransomware group's site.
-- **The ransomware group Stormous** (June 28, monoprix.tn): victim listing observed on the ransomware group's site.
-
-**Leak (1):**
-- **The threat actor AshleyWood2022** (June 23, Examens.tn): complete 717 MB `examens.sql` database dump, 3,697 user accounts and 74,891 metadata records, including session tokens, password-reset tokens and OAuth data. The initial access vector is unknown. An exposed backup or a vulnerable WordPress component should be investigated as detection hypotheses, without treating either as established.
-
----
-
-### 🇱🇾 Libya (3 incidents: 1 ransomware, 2 leaks)
-
-**Ransomware (1):**
-- **The ransomware group Qilin** (June 22, Central Bank of Libya): victim listing observed on the ransomware group's site.
-
-**Leaks (2), same actor, back-to-back government ministries:**
-- **The threat actor EvaN47** (June 29, Ministry of Technical and Vocational Education): claimed 900,000 student records, including a separate user-account table with @tve.gov.ly emails and password-related fields.
-- **The threat actor EvaN47** (June 30, Ministry of Education): claimed 287 GB of certificates, national ID numbers, photos and passport scans for students nationwide.
-
-Two Libyan ministries hit by the same actor on consecutive days at the end of June is a pattern, not a coincidence; it should be treated as an active campaign against Libyan government education infrastructure going into July.
-
----
-
-### Single-incident countries (8)
-
-| Country | Actor | Date | Victim | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| 🇬🇦 Gabon | DeadLock | June 1 | Finam Gabon | Disclosure deadline announced for May 15; no data was publicly accessible during AFRINTEL monitoring, and the reason for non-publication remains unknown. |
-| 🇿🇼 Zimbabwe | Nightspire | June 5 | First Mutual Holdings | Victim listing observed on the ransomware group's site. |
-| 🇸🇳 Senegal | Krybit | June 17 | Cour des Comptes du Sénégal | 19.73 GB; audit, budgetary and HR documents from the country's supreme audit institution. |
-| 🇧🇼 Botswana | LockBit 5 | June 18 | Botswana Vaccine Institute | Victim listing observed on the ransomware group's site. |
-| 🇲🇺 Mauritius | LockBit 5 | June 18 | Nundun Gopee & Co | Victim listing observed on the ransomware group's site. |
-| 🇹🇿 Tanzania | hammer | June 20 | BRELA | 10.2 million records covering 8 million people; TINs, National IDs and full company registration data. The single largest dataset of the month. |
-| 🇾🇹 Mayotte | DeadLock | June 21 | Municipality of Ouangani | 138 MB fully published: payroll, civil registry, banking details and municipal financing agreements. |
-| 🇰🇪 Kenya | DeadLock | June 23 | Kenya National Highways Authority | Victim listing observed on the ransomware group's site. |
-
----
-
-### Multi-country credential and portal-access sales (2 incidents)
-
-- **The threat actor Convince** (June 17): government email addresses for sale across 8 countries (Ethiopia, Tanzania, Angola, Kenya, Zambia, Nigeria, Egypt, Morocco), marketed explicitly for filing fraudulent Emergency Disclosure Requests (EDR) to Meta, Google and Telegram. This is not a passive breach, it is a for-sale tool for impersonating African governments to platform providers.
-- **The threat actor [Citizen] Governor** (June 20): fully authenticated government and police accounts with direct law-enforcement portal access to Meta, TikTok and X, listed for 9 jurisdictions (Egypt, Malawi, Tanzania, Algeria, Kenya, Zambia, Sierra Leone, plus Palestine and Yemen, which fall outside AFRINTEL's African scope). This is a more severe variant of the same abuse model: the buyer does not even need to forge a request, they log in as a real official.
-
-**Global summary (40 incidents, 20 countries):** Morocco (9) and South Africa (6) account for 37.5% of all incidents. Ransomware reached parity with data leaks for the first time in 2026 (20/20), driven by a wide geographic spread of DeadLock, LockBit 5 and Nightspire rather than concentration in one country. The most critical single incidents are the Jeroid.co fintech/biometric exposure, the Nigerian Army plaintext credential leak, and the BRELA Tanzania breach.
-
-> **For complete technical details, sample analysis, and full victim descriptions, see:** [`victims.md`](./victims.md)
+- **Concentration:** Morocco (9 direct incidents) and South Africa (6) account for 37.5% of the month's 40 unique incidents. The expanded geographic ranking reaches 53 country occurrences when exposures from the two multi-country incidents are included.
+- **Campaign targeting Morocco:** anisanas2 is associated with 7 of the 9 direct incidents recorded in the country in June. Claims and publications analysed since April show a persistent cluster affecting several sectors, including education, logistics, mining, e-commerce, startups and automotive.
+- **Ransomware distribution:** South Africa recorded 4 incidents, while Egypt and Tunisia recorded 3 each. DeadLock had the widest geographic spread, with victims published in Gabon, Nigeria, Mayotte and Kenya.
+- **High-impact exposures:** the most sensitive cases involve fintech and biometric data associated with Jeroid.co, email credentials attributed to the Nigerian Army, the 10.2 million records claimed for BRELA in Tanzania and two consecutive publications targeting Libyan education ministries.
+- **Multi-country risk:** two sales of credentials or access to government and law-enforcement portals account for 15 occurrences across 11 African countries. They create a risk of institutional impersonation targeting major platforms.
+- **Overall picture:** the 40 unique incidents affect 20 African countries, either directly or through multi-country exposure. Ransomware and data leaks or access sales reached parity, with 20 incidents in each category.
 
 ---
 

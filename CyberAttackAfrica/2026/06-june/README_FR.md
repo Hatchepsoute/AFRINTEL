@@ -191,7 +191,13 @@ pie showData
 | **Océan Indien** | **2** (3,8 %) | 2 | 0 | 🟧🟧 |
 | **Total** | **53** | **20** | **33** | |
 
-*Légende : 🟧 Ransomware | 🟦 Fuites de données. Afrique du Nord : Maroc, Égypte, Tunisie, Libye, Algérie. Afrique australe : Afrique du Sud, Botswana, Zimbabwe, Zambie, Malawi. Afrique de l'Ouest et centrale : Nigéria, Gabon, Sénégal, Sierra Leone, Angola. Afrique de l'Est : Kenya, Tanzanie, Éthiopie. Océan Indien : Maurice, Mayotte. L'Angola est classé ici en Afrique centrale.*
+*Légende : 🟧 Ransomware | 🟦 Fuites de données.
+- Afrique du Nord : Maroc, Égypte, Tunisie, Libye, Algérie. 
+- Afrique australe : Afrique du Sud, Botswana, Zimbabwe, Zambie, Malawi. 
+- Afrique de l'Ouest et centrale : Nigéria, Gabon, Sénégal, Sierra Leone, Angola. 
+- Afrique de l'Est : Kenya, Tanzanie, Éthiopie. 
+- Océan Indien : Maurice, Mayotte. 
+- L'Angola est classé ici en Afrique centrale.*
 
 ### Répartition sectorielle
 
@@ -245,119 +251,16 @@ pie showData
 
 ---
 
-### Vue d'ensemble pays par pays
+### Synthèse géographique
 
-> **Pour le détail complet de chaque incident (volumes de données, analyse d'échantillon, tactiques des acteurs, etc.), voir la liste complète des victimes :** [`victims_FR.md`](./victims_FR.md)
+> **Pour le détail de chaque incident, voir la liste complète des victimes :** [`victims_FR.md`](./victims_FR.md)
 
----
-
-### 🇲🇦 Maroc (9 incidents : 1 ransomware, 8 fuites)
-
-**Ransomware (1) :**
-- **Le groupe ransomware Krybit** (19 juin, MUPRAS RAM) : organisme de mutuelle prévoyance des employés de Royal Air Maroc ; les documents publiés couvrent les cotisations des membres, les remboursements médicaux, les flux bancaires et les contrats informatiques, une exposition d'une criticité élevée à tous égards.
-
-**La campagne anisanas2 (7 incidents, 6-27 juin) :** le même cluster d'acteur déjà signalé dans le rapport AFRINTEL de mai 2026 pour RADEM Meknès et le lot Ministère de la Justice reste actif, désormais dans son troisième mois consécutif contre le Maroc.
-- **IMT (Institut des Mines de Touissit)** (6 juin) : 100+ dossiers d'étudiants et 37+ dossiers d'enseignants avec numéros CIN.
-- **Tlog.ma** (6 juin) : 700 000 dossiers clients logistiques ; demande de rançon de 500 dollars pour la base complète.
-- **Mines d'Aouli** (6 juin) : documents fiscaux et de liquidation 2001-2025 d'une société minière en liquidation.
-- **Plateforme de gestion de startups non identifiée** (26 juin) : documents d'identité et financiers de quatre entreprises marocaines en aval (ARSYS INFO, AUDD, Black Service Solution, Media Triangle) ; l'opérateur reste lui-même non identifié.
-- **Entreprise marocaine de livraison non identifiée** (26 juin) : 486 024 dossiers de livraison couvrant sept ans d'opérations nationales.
-- **Avito.ma** (26 juin) : échantillon de 200 000 annonces, prix demandé de 800 dollars pour l'archive complète ; la même plateforme avait déjà fait l'objet d'un échantillon par un autre acteur en mai 2026.
-- **Stellantis Maroc** (27 juin) : échantillon de 992 pistes commerciales automobiles ; le mélange de marques présent dans le fichier évoque plutôt une source CRM qu'une compromission directe confirmée.
-
-**Autre fuite (1) :**
-- **L'acteur malveillant 404Crew Cyber Team** (25 juin, MG Maroc) : échantillon de déclarations de paie et de cotisations sociales 2025-2026 d'une association de professionnels de santé.
-
-**Évaluation sans détour :** il ne s'agit pas d'une série d'incidents isolés. Un seul cluster d'acteur a désormais touché au moins dix organisations marocaines recensées à partir de revendications ou de publications analysées depuis avril, dans l'éducation, la logistique, les mines, le e-commerce, les startups et l'automobile, sans réaction publique visible des autorités marocaines ou des hébergeurs concernés. C'est ce schéma, plus qu'une seule fuite isolée, qui constitue le véritable sujet marocain du deuxième trimestre 2026.
-
----
-
-### 🇿🇦 Afrique du Sud (6 incidents : 4 ransomwares, 2 fuites)
-
-**Ransomware (4) :**
-- **Black X** (2 juin, African National Congress) : 2 310 865 dossiers d'adhérents avec numéros d'identité sud-africains, adresses et langues, publiés directement ; l'une des plus grandes expositions de données d'un parti politique jamais enregistrées sur le continent.
-- **WorldLeaks** (5 juin, Access Dental) : victime publiée sur le site du groupe ransomware.
-- **LockBit 5** (18 juin, Grey High School) : victime publiée sur le site du groupe ransomware.
-- **CMD Organization** (28 juin, Fidelity Security Group) : victime publiée sur le site du groupe ransomware.
-
-**Fuites (2) :**
-- **L'acteur malveillant mosad** (8 juin, Armée sud-africaine / SANDF) : document classifié "Warning Instruction" de 2022 détaillant un déploiement de maintien de l'ordre, incluant les téléphones, e-mails et identifiants liés aux numéros de sécurité sociale d'officiers supérieurs nommément cités. Un document militaire restreint qui circule sur Telegram quatre ans après sa rédaction révèle une fuite interne persistante qui n'a jamais été colmatée.
-- **L'acteur malveillant GOD User** (10 juin, UNISA) : dump SQL complet d'un système de support technique avec mots de passe en clair sur les comptes clients, techniciens et administrateurs.
-
----
-
-### 🇳🇬 Nigéria (4 incidents : 1 ransomware, 3 fuites)
-
-**Ransomware (1) :**
-- **DeadLock** (1er juin, Fidelity Pension Managers) : victime publiée sur le site du groupe ransomware.
-
-**Fuites (3) :**
-- **L'acteur malveillant burti** (10 juin, Jeroid.co) : 312 433 utilisateurs, 110 282 BVN, 64 300 NIN et 70 956 photos de vérification faciale biométrique laissées sur un bucket S3 public non authentifié, vendus pour 2 000 dollars. C'est l'exposition fintech la plus grave enregistrée par AFRINTEL au Nigéria cette année, tandis que le vecteur d'accès initial reste inconnu.
-- **La coalition 404Crew Cyber Team x NullSec Nigeria** (13 juin, NILDS / Assemblée nationale) : échantillon de base de données parlementaire, motivation hacktiviste (#OpNigeria), confiance moyenne.
-- **L'acteur malveillant NulleSecNg** (21 juin, Armée nigériane, army.mil.ng) : plus de 20 identifiants de messagerie en clair pour du personnel militaire, incluant un accès à un portail d'imagerie satellite DigitalGlobe. Des mots de passe en clair pour la messagerie d'une armée nationale, associés à un accès satellite de reconnaissance, est le type d'incident qui devrait déclencher une rotation d'urgence des identifiants le jour même de sa découverte, pas un ticket de routine.
-
----
-
-### 🇪🇬 Égypte (4 incidents : 3 ransomwares, 1 fuite)
-
-**Ransomware (3) :**
-- **Le groupe ransomware TheGentlemen** (4 juin, Bouri Group) : victime publiée sur le site du groupe ransomware.
-- **Le groupe ransomware Nightspire** (15 juin, Sheraton Miramar Resort El Gouna) : victime publiée sur le site du groupe ransomware.
-- **Le groupe ransomware Lamashtu** (17 juin, Great Foods) : victime publiée sur le site du groupe ransomware.
-
-**Fuite (1) :**
-- **L'acteur malveillant Xyphorix** (6 juin, base de données des pilotes égyptiens) : données personnelles de pilotes militaires, commerciaux et civils d'Egypt Air, Qatar Airways, Fly Emirates, l'Autorité du Canal de Suez et le Ministère de l'Aviation Civile, vendues sans prix communiqué. Des données de pilotes liés à l'armée mises en vente sur un forum criminel constituent une exposition de sécurité nationale, pas une fuite de données personnelles ordinaire.
-
----
-
-### 🇹🇳 Tunisie (4 incidents : 3 ransomwares, 1 fuite)
-
-**Ransomware (3) :**
-- **Le groupe ransomware Aurora** (16 juin, Sumitomo Electric Bordnetze, SEBN Tunisia) : publication observée sur le site du groupe ransomware pour le site de Fejja.
-- **Le groupe ransomware SETTRA** (26 juin, Centrale Laitière du Cap-Bon) : victime publiée sur le site du groupe ransomware.
-- **Le groupe ransomware Stormous** (28 juin, monoprix.tn) : victime publiée sur le site du groupe ransomware.
-
-**Fuite (1) :**
-- **L'acteur malveillant AshleyWood2022** (23 juin, Examens.tn) : dump complet de la base de données `examens.sql` de 717 Mo, 3 697 comptes utilisateurs et 74 891 enregistrements de métadonnées, incluant jetons de session, jetons de réinitialisation de mot de passe et données OAuth. Un dump complet de base de données WordPress de ce type provient presque toujours d'un plugin non corrigé ou d'un fichier de sauvegarde exposé, à vérifier avant de conclure à un exploit inédit.
-
----
-
-### 🇱🇾 Libye (3 incidents : 1 ransomware, 2 fuites)
-
-**Ransomware (1) :**
-- **Le groupe ransomware Qilin** (22 juin, Central Bank of Libya) : victime publiée sur le site du groupe ransomware.
-
-**Fuites (2), même acteur, deux ministères consécutifs :**
-- **L'acteur malveillant EvaN47** (29 juin, Ministère de l'Enseignement technique et professionnel) : volume revendiqué de 900 000 dossiers d'étudiants, incluant une table de comptes utilisateurs distincte avec des e-mails @tve.gov.ly et un champ lié aux mots de passe.
-- **L'acteur malveillant EvaN47** (30 juin, Ministère de l'Éducation) : volume revendiqué de 287 Go de certificats, numéros d'identité nationaux, photos et scans de passeports d'étudiants à l'échelle nationale.
-
-Deux ministères libyens touchés par le même acteur deux jours consécutifs en fin de mois relèvent d'un schéma, pas d'une coïncidence ; à traiter comme une campagne active contre les infrastructures éducatives gouvernementales libyennes en entrant dans juillet.
-
----
-
-### Pays à incident unique (8)
-
-| Pays | Acteur | Date | Victime | Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| 🇬🇦 Gabon | DeadLock | 1er juin | Finam Gabon | Échéance de divulgation annoncée pour le 15 mai ; aucune donnée n'était publiquement accessible lors du suivi AFRINTEL et la raison de cette absence de publication reste inconnue. |
-| 🇿🇼 Zimbabwe | Nightspire | 5 juin | First Mutual Holdings | Victime publiée sur le site du groupe ransomware. |
-| 🇸🇳 Sénégal | Krybit | 17 juin | Cour des Comptes du Sénégal | 19,73 Go ; documents d'audit, budgétaires et RH de l'institution supérieure de contrôle du pays. |
-| 🇧🇼 Botswana | LockBit 5 | 18 juin | Botswana Vaccine Institute | Victime publiée sur le site du groupe ransomware. |
-| 🇲🇺 Maurice | LockBit 5 | 18 juin | Nundun Gopee & Co | Victime publiée sur le site du groupe ransomware. |
-| 🇹🇿 Tanzanie | hammer | 20 juin | BRELA | 10,2 millions d'enregistrements couvrant 8 millions de personnes ; TIN, numéros d'identité nationaux et données complètes d'enregistrement d'entreprises. Le plus grand jeu de données du mois. |
-| 🇾🇹 Mayotte | DeadLock | 21 juin | Commune de Ouangani | 138 Mo entièrement publiés : paie, état civil, coordonnées bancaires et conventions de financement municipales. |
-| 🇰🇪 Kenya | DeadLock | 23 juin | Kenya National Highways Authority | Victime publiée sur le site du groupe ransomware. |
-
----
-
-### Ventes multi-pays d'identifiants et d'accès portails (2 incidents)
-
-- **L'acteur malveillant Convince** (17 juin) : adresses e-mail gouvernementales en vente dans 8 pays (Éthiopie, Tanzanie, Angola, Kenya, Zambie, Nigéria, Égypte, Maroc), commercialisées explicitement pour soumettre de fausses demandes de divulgation d'urgence (EDR) à Meta, Google et Telegram. Ce n'est pas une fuite passive, c'est un outil vendu pour usurper l'identité de gouvernements africains auprès de fournisseurs de plateformes.
-- **L'acteur malveillant [Citizen] Governor** (20 juin) : comptes gouvernementaux et policiers pleinement authentifiés donnant un accès direct aux portails forces de l'ordre de Meta, TikTok et X, listés pour 9 juridictions (Égypte, Malawi, Tanzanie, Algérie, Kenya, Zambie, Sierra Leone, ainsi que la Palestine et le Yémen, hors périmètre africain d'AFRINTEL). C'est une variante plus sévère du même modèle d'abus : l'acheteur n'a même pas besoin de forger une demande, il se connecte comme un véritable agent officiel.
-
-**Synthèse globale (40 incidents, 20 pays) :** le Maroc (9) et l'Afrique du Sud (6) représentent 37,5 % de l'ensemble des incidents. Le ransomware a atteint la parité avec les fuites de données pour la première fois en 2026 (20/20), porté par une large dispersion géographique de DeadLock, LockBit 5 et Nightspire plutôt que par une concentration sur un seul pays. Les incidents individuels les plus critiques sont l'exposition fintech/biométrique de Jeroid.co, la fuite d'identifiants en clair de l'armée nigériane et la fuite de BRELA en Tanzanie.
-
-> **Pour le détail technique complet, l'analyse d'échantillons et les descriptions complètes des victimes, voir :** [`victims_FR.md`](./victims_FR.md)
+- **Concentration :** le Maroc (9 incidents directs) et l'Afrique du Sud (6) concentrent 37,5 % des 40 incidents uniques du mois. Le classement géographique élargi atteint 53 occurrences pays lorsque les expositions issues des deux incidents multi-pays sont comptabilisées.
+- **Campagne visant le Maroc :** anisanas2 est associé à 7 des 9 incidents directs recensés dans le pays en juin. Les revendications et publications analysées depuis avril montrent un cluster persistant touchant plusieurs secteurs, notamment l'éducation, la logistique, les mines, le e-commerce, les startups et l'automobile.
+- **Diffusion du ransomware :** l'Afrique du Sud en compte 4, tandis que l'Égypte et la Tunisie en comptent 3 chacune. DeadLock présente la plus forte dispersion géographique, avec des victimes publiées au Gabon, au Nigéria, à Mayotte et au Kenya.
+- **Expositions à fort impact :** les cas les plus sensibles concernent les données fintech et biométriques associées à Jeroid.co, les identifiants de messagerie attribués à l'armée nigériane, les 10,2 millions d'enregistrements revendiqués pour BRELA en Tanzanie et deux publications successives visant des ministères libyens de l'éducation.
+- **Risque multi-pays :** deux ventes d'identifiants ou d'accès à des portails gouvernementaux et policiers représentent 15 occurrences réparties dans 11 pays africains. Elles créent un risque d'usurpation d'identité institutionnelle auprès de grandes plateformes.
+- **Bilan :** les 40 incidents uniques concernent 20 pays africains, directement ou par exposition multi-pays. Le ransomware et les fuites de données ou ventes d'accès atteignent la parité, avec 20 incidents dans chaque catégorie.
 
 ---
 

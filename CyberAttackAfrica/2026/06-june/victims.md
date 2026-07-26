@@ -1,5 +1,18 @@
 # African victims - June 2026 (40 incidents)
 
+## Monthly snapshot
+
+June 2026 includes **40 unique incidents**: **20 ransomware incidents** and **20 data leaks or access sales**. The records directly or indirectly concern **20 African countries**, including exposure through two multi-country access-sale listings.
+
+### Notable incidents
+
+- **Morocco:** 7 incidents associated with the anisanas2 actor cluster during the month.
+- **Nigeria:** claimed exposure of fintech and biometric data associated with Jeroid.co, and email credentials attributed to the Nigerian Army.
+- **Tanzania:** 10.2 million records claimed for BRELA, covering approximately 8 million people.
+- **Libya:** two consecutive publications by EvaN47 targeting ministries responsible for education.
+
+> The entries below document observed claims or publications. AFRINTEL does not confirm a compromise without independent evidence.
+
 > **Ransomware reading note:** a ransomware entry is included when AFRINTEL observed the victim listing on the group's leak site. `Claim - Unverified` means that no published data or accessible sample was available for analysis at collection time. It does not mean that the listing itself was not observed. Without analysed data, AFRINTEL does not infer encryption, operational disruption or the initial access vector.
 
 ### June 01, 2026

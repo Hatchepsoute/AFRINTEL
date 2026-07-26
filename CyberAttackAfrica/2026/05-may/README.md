@@ -34,10 +34,9 @@ Key findings:
 - **Sources**: Dark web, DLS (leak sites), OSINT, Telegram channels, underground forums.
 - **Inclusion**: Publicly claimed or attributed incidents with identified victim, country, and sector.
 - **Typology**:
-  - *Ransomware*: encryption + ransom demand.
+  - *Ransomware*: victim publication or claim by a ransomware group. Encryption is not presumed without supporting evidence.
   - *Data leak / access sale*: exfiltration without encryption, database sold/published, or access sale to compromised systems.
 
-> All claims from cybercriminal forums, leak sites, and underground channels are treated as **unverified claims** unless independently corroborated.
 
 ---
 
@@ -229,157 +228,14 @@ pie showData
 
 ---
 
-## 4. Country Breakdown - Concise summary (with key dates)
+## 4. Geographic summary
 
-> **For full details on each incident (data volumes, sample analysis, actor tactics, etc.), please refer to the complete victim list:** [`victims.md`](./victims.md)
+> **For details of each incident, see [`victims.md`](./victims.md).**
 
----
-
-### 🇪🇬 Egypt (16 incidents: 7 ransomware, 9 leaks)
-
-**Ransomware (7):**
-- **The ransomware group NightSpire** (3 targets, May 24‑26): Papa John's Egypt, Rawaj Consumer Finance, B Investments Holding
-- **The ransomware group TheGentlemen** (May 9): Misr Chemical Industries
-- **The ransomware group Lamashtu** (May 4): Luna Group (agri‑food)
-- **The ransomware group LockBit 5.0** (May 7): Rhactus Hotel
-- **The ransomware group Qilin** (May 8): Imex International (logistics)
-
-**Education sector leaks (4):**
-- **The threat actor Revesky** (May 13 – Ministry of Education): 26.8M students + 3.8M teachers
-- **The threat actor INT3X** (May 10 – Mansoura University): 989,000 students (2012‑2026)
-- **The threat actor INT3X** (May 16 – Professional Academy for Teachers): 1.2M teachers
-- **The threat actor bigF** (May 4): 37 GB (Mansoura + Galala), 1.5M students
-
-**Other leaks (5):**
-- **The threat actor CrowStealer** (May 2 – Ministry of Manpower): 34,528 workers/expatriates
-- **The threat actor cc5ab** (May 12 – FutureShop): exposed API – 3,893 customers, 5,181 orders, S3 bucket
-- **The threat actor DR‑X‑LOL** (May 15 – Baitzakat.org.eg): 300,000 citizens (national ID numbers)
-- **The cybercriminal Databasehooligan** (May 24 – Wuzzuf.net): 672,000 job seekers (ID documents, videos) → $1,100
-- **The threat actor Keymous** (May 28 – Citex Systems): employee and project data
-
----
-
-### 🇿🇦 South Africa (14 incidents: 1 ransomware, 13 leaks)
-
-**Ransomware (1):**
-- **The ransomware group PrinzEugen** (May 4 – Standard Bank Group) – unverified claim
-
-**"OpSouthAfrica" Campaign (8) – coalition of 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines & Infernalis (May 15‑24):**
-- **Ephraim Mogale Municipality** (May 15): 111 GB administrative documents
-- **Bellavista School** (May 15): student/parent data
-- **Department of Correctional Services** (May 16): internal documents
-- **CERVI My Private Care** (May 24): banking details + BHF provider numbers
-- **mevent.** (May 24): contact data of nurses
-- **Sheriff Randburg West** (May 24): citizen data
-- **SITA** (May 23): exposed credentials
-- **SARS** (May 23): email/password pairs (origin uncertain, third‑party data)
-
-**Sales by the cybercriminal Databasehooligan (May 27):**
-- **Telkom**: 742,000 customers (ID numbers, billing, tickets) → $900
-- **Wanderers Club**: 674,000 members (sports memberships) → $1,400
-- **MIDAS**: 463,000 customers/logistics (VAT numbers) → $1,100
-
-**Other leaks (2):**
-- **The threat actor Stormous** (May 5 – CGCSA): 20 GB, Sage 200 Evolution (finances, inventories)
-- **The threat actor Kazu** (May 17 – Stats SA): 154 GB, 453,000 files (ID cards, census)
-
----
-
-### 🇲🇦 Morocco (7 leaks)
-
-- **The threat actor Sejjil** (May 12 – SDTM/Barid Al‑Maghrib): 129 CSV files from SAGE ERP, MD5 hashes, RIB numbers, national IDs
-- **The threat actor superstarkmc** (May 17 – Government platforms): 827,000 credentials (Massar, Moutamadris, Waliye, Tax.gov, TGR)
-- **The threat actor JBT2026** (May 20 – Watiqa.ma): 695,400 civil registry records
-- **The threat actor fexus** (May 21 – Avito.ma): emails, phones, plaintext passwords
-- **The threat actor DarkMafiaX** (May 22 – Spacex.ma): disclosed admin credentials
-- **The threat actor anisanas2** (May 22 – RADEM Meknès): ~1.1 million documents exfiltrated (customer data: names, addresses, contract numbers; operational data: distribution routes, branch offices); critical exposure of a public regional utility managing water and electricity infrastructure
-- **The threat actors anisanas2 / PKA291** (May 31 – Massive Moroccan database sale): over 12 million lines and documents covering Ministry of Justice (2M docs, 150,000 court files, $3,000), NARSA (2M lines, $800), OFPPT (400,000 lines), delivery companies (8M lines) and an insurance company (initial access); global bundle priced at $5,500
-
----
-
-### 🇹🇳 Tunisia (5 incidents: 2 ransomware, 3 leaks)
-
-**Ransomware (2):**
-- **The ransomware group TheGentlemen** (May 12 – SETCAR): automotive parts manufacturer
-- **The ransomware group Titan** (May 18 – CRIT Tunisie): HR / staffing services
-
-**Leaks (3) – the cybercriminal Databasehooligan (May 27‑31):**
-- **Keejob** (May 27): 137,000 records → $1,400
-- **MyTelnet** (May 27): subscriber CRM profiles
-- **OptionCarriere.tn** (May 31): 274,000 records (candidates, employers) → $1,300
-
----
-
-### 🇳🇬 Nigeria (3 ransomware)
-
-- **The ransomware group MedusaLocker** (May 5 – ActionAid/TACOSA): humanitarian NGO
-- **The ransomware group KillSec** (May 9 – MRS Holdings): energy conglomerate
-- **The ransomware group 0day Syndicate** (May 28 – XL Africa Group): B2B services
-
-Multi‑country also involved: **The threat actor attackercompany** (Resume docs) and **the threat actor Keymous** (DHIS2).
-
----
-
-### 🇩🇿 Algeria (2 leaks)
-
-- **The threat actor kamalsheikhxx** (May 4 – Ministry of Pharmaceutical Industry): 34.3 GB, 52,000 files (2019‑2025)
-- **The cybercriminal Databasehooligan** (May 19 – OGEBC cultural heritage): 425,000 records → $900
-
----
-
-### 🇹🇿 Tanzania (2 leaks)
-
-- **The cybercriminal XOverStm** (May 3 – Citizen database): 120,000 records (names, addresses, phones) → $350
-- **The cybercriminal Kampuchean** (May 22 – Police webmail): 10,000 officer accounts, plaintext passwords → $550
-
----
-
-### 🇪🇹 Ethiopia (1 leak)
-
-- **The threat actor 404Crew Cyber Team** (May 15 – NGO Registration Database): 3,668 civil society organization records from Ethiopia's NGO registration and auditing agency, including names, registration metadata, certificate numbers, categories, addresses, and contact emails.
-
----
-
-### 🇸🇳 Senegal (1 ransomware - CRITICAL)
-
-- **The ransomware group AuditTeam** (May 17‑18 – Public Treasury): ~1,659,735 records exfiltrated
-  - **Server 10.6.0.61** (Oracle): dumps of `COLLOC.REDEVABLES` (960,146 taxpayers with NINEA), `GFORD.ORD_MANDATS` (659,195 payment orders with bank details), `COLLOC.CO_PERSONNELS` (40,394 employees with salaries)
-  - **Server 10.6.0.26** (SICA): 18 months of payroll and transfer files
-  - Persistent access confirmed ~9 days before public claim
-
----
-
-### 🇬🇭 Ghana (1 ransomware)
-
-- **The ransomware group TheGentlemen** (May 6 – Kasapreko): beverage manufacturer
-
----
-
-### 🇨🇮 Ivory Coast (1 ransomware)
-
-- **The ransomware group TheGentlemen** (May 28 – Mayelia Automotive): vehicle inspection services
-
----
-
-### 🇰🇪 Kenya (1 leak)
-
-- **The threat actor cc5ab** (May 16 – Land Surveyors Board): 175 licensed surveyors, 730 assistants (national IDs), full API docs, Django admin panel, PostgreSQL config, JWT params
-
----
-
-### Multi-country incidents (3)
-
-| Incident | Actor | Date | Countries affected |
-|----------|-------|------|-------------------|
-| Resume docs | **The threat actor attackercompany** | May 5 | 🇰🇪🇪🇹🇳🇬🇿🇼 (Kenya, Ethiopia, Nigeria, Zimbabwe) |
-| DHIS2 / Ministries of Health | **The threat actor Keymous** | May 13 | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 (Mozambique, Liberia, Nigeria, Togo, Sierra Leone) |
-| Passport scans | **The threat actor raylie** | May 18 | 🇪🇬🇱🇾 (Egypt, Libya) |
-
----
-
-**Global summary (57 incidents, 18 countries):** Egypt (16) and South Africa (14) account for 52.6% of all incidents. The Egyptian education sector alone exposed over 28 million records. The most critical incidents are the Senegal Public Treasury breach (~1.66M records) and the Tanzanian police webmail sale (10,000 plaintext officer accounts). **The cybercriminal Databasehooligan** dominates data brokerage with 8 structured sales across four countries.
-
-> **For complete technical details, sample analysis, and full victim descriptions, see:** [`victims.md`](./victims.md)
+- **Concentration:** Egypt (16), South Africa (14), Morocco (7) and Tunisia (5) account for 42 of 57 incidents, or 73.7% of the month.
+- **Threat mix:** 16 ransomware claims or publications and 41 data leaks or access sales were recorded. The incidents concern 18 African countries: 12 directly and 6 additional countries through multi-country exposure.
+- **Campaign activity:** Egyptian education entities faced several large claims, while OpSouthAfrica targeted public institutions and Databasehooligan appeared across four countries.
+- **High-impact exposures:** notable cases involved Tanzanian police webmail accounts and the AuditTeam claim concerning the Trésor Public du Sénégal.
 
 ---
 
@@ -487,33 +343,25 @@ Multi‑country also involved: **The threat actor attackercompany** (Resume docs
 
 - **Education sector as strategic target:** The simultaneous breach of four Egyptian education entities exposing tens of millions of student and teacher records suggests either a coordinated campaign or opportunistic exploitation of shared infrastructure vulnerabilities.
 - **"OpSouthAfrica" coalition campaign:** The 404Crew Cyber Team, NullSec Nigeria, and Infernalis targeted at least eight South African institutions in May, combining data leak publication with political messaging around xenophobia grievances.
-- **Databasehooligan CRM sweep:** The same data broker sold structured CRM / consumer databases from eight organizations across Tunisia, South Africa, Egypt, and Algeria, suggesting systematic exploitation of a shared vulnerability or common platform.
+- **Databasehooligan CRM sweep:** The same data broker sold structured CRM or consumer databases from eight organizations across Tunisia, South Africa, Egypt, and Algeria. A shared vulnerability or common platform remains possible but is not established by the available evidence.
 - **NightSpire concentration on Egypt:** Three Egyptian targets in one month by a single ransomware group suggests a focused campaign against Egyptian business infrastructure, particularly in finance and consumer services.
 - **Government email accounts as access vectors:** Moroccan government credential exposure (827K lines), Tanzanian police webmail sale, and multi-country EDR-fraud account offers signal a growing market for law enforcement impersonation.
 - **Multi-country health system compromise:** The DHIS2 access sale affecting seven countries (Mozambique, Liberia, Nigeria, Bhutan, Honduras, Togo, Sierra Leone) represents a critical threat to public health data sovereignty.
-- **Persistent targeting of Morocco:** Two large-scale incidents were recorded in the final ten days of May: the RADEM Meknès breach (1.1 million documents from a critical water and electricity utility) and a bundled sale of over 12 million lines and documents covering the Ministry of Justice, NARSA, OFPPT, and private companies. The anisanas2/PKA291 actor had already targeted Morocco in April 2026, confirming a sustained, coordinated campaign.
+- **Repeated targeting of Morocco:** Two large-scale claims were recorded in the final ten days of May: RADEM Meknès, involving a claimed 1.1 million documents, and a bundled sale advertised as containing more than 12 million lines and documents from several institutions and companies. The anisanas2/PKA291 actor had also published Morocco-related claims in April 2026, indicating repeated activity without establishing a shared access vector.
 
 ---
 
 ## 9. MITRE ATT&CK mapping (contextual)
 
-| Phase | Technique ID | Technique name | Context |
-| :--- | :---: | :--- | :--- |
-| **Initial Access** | **T1190** | Exploit Public-Facing Application | FutureShop API, Mansoura University, LSB Kenya |
-| **Initial Access** | **T1078** | Valid Accounts | Moroccan gov credentials, Tanzania Police, DHIS2 health platform credentials (URL/password pairs published) |
-| **Collection** | **T1005** | Data from Local System | PAT Egypt, SDTM Morocco, SITA SA |
-| **Collection** | **T1114.002** | Remote Email Collection | Tanzania Police webmail |
-| **Exfiltration** | **T1041** | Exfiltration Over C2 Channel | Wuzzuf.net, Telkom, CGCSA |
-| **Impact** | **T1486** | Data Encrypted for Impact | All ransomware incidents |
-| **Privilege Escalation** | **T1078.003** | Local Accounts | DHIS2 admin credentials |
+| Phase | Technique | Analytical scope |
+| :--- | :--- | :--- |
+| Initial access | T1566 - Phishing | Defensive detection hypothesis, not observed from the claims alone |
+| Initial access | T1190 - Exploit Public-Facing Application | Defensive detection hypothesis, not observed from the claims alone |
+| Account access | T1078 - Valid Accounts | Relevant to access or credential sales, without confirming use of the accounts |
+| Collection | T1005 - Data from Local System | Contextual hypothesis when internal data is published; the collection mechanism remains unknown |
+| Impact | T1486 - Data Encrypted for Impact | Relevant to ransomware preparedness, without confirming encryption for every entry |
 
-> Common cross-campaign techniques:
-> - **T1190** – Exploit Public-Facing Application (primary entry vector for data leaks)
-> - **T1078** – Valid Accounts (credential theft, IAB listings, infostealer logs)
-> - **T1486** – Data Encrypted for Impact (ransomware deployment)
-> - **T1041** – Exfiltration Over C2 Channel (bulk database extraction)
-
----
+> These techniques are defensive hypotheses. A claim, data sale or leak-site publication is not sufficient to treat them as observed.
 
 ## 10. Recommendations
 

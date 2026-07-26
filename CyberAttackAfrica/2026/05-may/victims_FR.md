@@ -1,5 +1,18 @@
 # Victimes africaines - Mai 2026
 
+## Résumé du mois
+
+Mai 2026 compte **57 incidents uniques** : **16 ransomwares** et **41 fuites de données ou ventes d’accès**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+
+### Incidents marquants
+
+- **Égypte :** le secteur éducatif a été concerné par plusieurs revendications importantes, dont 26,8 millions de dossiers d’étudiants attribués au ministère de l’Éducation.
+- **Afrique du Sud :** plusieurs institutions publiques ont été ciblées pendant la campagne coordonnée OpSouthAfrica.
+- **Tanzanie :** plus de 10 000 comptes de messagerie de la police avec des mots de passe en clair ont été proposés à la vente.
+- **Sénégal :** AuditTeam revendique une exfiltration au Trésor public, comprenant environ 1,66 million d’enregistrements issus de bases de données.
+
+> Les fiches ci-dessous documentent des revendications ou publications observées. AFRINTEL ne confirme pas une compromission sans élément indépendant.
+
 ### 02 Mai 2026
 #### 🇪🇬 Égypte - Ministère du Travail (Ministry of Labour / Manpower) [Fuite de données]
 - **Acteur / Groupe:** CrowStealer
@@ -402,28 +415,28 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Statut :** Claim - Data Sample Published
 - **Site web :** [www.tresor.sn](https://www.tresor.sn)
 - **Description :**
-  Le Trésor Public du Sénégal est l'institution étatique responsable de la gestion des finances publiques, de l'exécution du budget national et du suivi du recouvrement fiscal et des dépenses de l'État. Le groupe ransomware **AuditTeam** a revendiqué la compromission de l'institution les 17-18 mai 2026. L'analyse technique des données exfiltrées indique que l'acteur disposait d'un accès persistant à au moins deux serveurs internes avant la publication de la revendication.
+  Le Trésor Public du Sénégal est l'institution étatique responsable de la gestion des finances publiques, de l'exécution du budget national et du suivi du recouvrement fiscal et des dépenses de l'État. Le groupe ransomware **AuditTeam** a revendiqué la compromission de l'institution les 17-18 mai 2026. Les fichiers analysés sont présentés comme provenant de deux systèmes internes et comportent des dates antérieures à la revendication publique. La durée et la méthode d'accès restent inconnues.
 - **Analyse :**
-  L'analyse des données exfiltrées révèle la compromission de deux systèmes internes, tous deux accessibles avant le déploiement du ransomware.
+  Les fichiers analysés sont présentés comme des données extraites de deux systèmes internes. Ils ne permettent pas d'établir indépendamment la séquence complète de l'intrusion ni le déploiement d'un ransomware.
   **Serveur 10.6.0.61 (Oracle Database 12.2.0, port 1555) :** Trois dumps de bases de données ont été extraits par l'acteur le 9 mai 2026 :
   - `COLLOC.CO_PERSONNELS` (~40 394 enregistrements) : registre du personnel et de la paie des agents de l'État. Champs présents : identifiants des employés, prénoms et noms, numéros de téléphone, données bancaires (code banque, code guichet, numéro de compte, RIB), codes de service, année de gestion et montants de rémunération.
   - `COLLOC.REDEVABLES` (~960 146 enregistrements) : registre national des contribuables et débiteurs fiscaux. Champs présents : numéro d'identification fiscale (N_C_CONTRIB), dénomination ou nom complet, adresse, téléphone et numéro de registre de commerce. Les données couvrent la période à partir de 2017.
   - `GFORD.ORD_MANDATS` (~659 195 enregistrements) : base complète des ordres de paiement publics. Champs présents : numéro de mandat, date, objet de la transaction, montants (HT et TTC), coordonnées bancaires du bénéficiaire (code banque, guichet, compte, RIB), dénomination du bénéficiaire, NINEA (Numéro d'Identification Nationale des Entreprises et Associations) et libellé de l'opération. Les données couvrent au moins la période d'avril 2024 jusqu'à la date d'extraction.
   **Serveur 10.6.0.26 (Système SICA - Gestion de la Paie et des Salaires) :** Des fichiers opérationnels couvrant la période du 2 janvier 2025 au 8 mai 2026 (18 mois d'opérations financières) ont été extraits, notamment :
   - Fichiers de paie pour les agents de l'État pour mars 2026, par zone géographique.
-  - Fichiers de virement datés du 8 mai 2026, au format CSV bancaire standard (code banque, code guichet, numéro de compte, RIB, montant, nom du bénéficiaire, libellé de l'opération). Types observés : salaires, indemnités de correction d'examens, achats de fournitures. Ces fichiers confirment un accès aux systèmes opérationnels actifs au jour de l'extraction.
+  - Fichiers de virement datés du 8 mai 2026, au format CSV bancaire standard (code banque, code guichet, numéro de compte, RIB, montant, nom du bénéficiaire, libellé de l'opération). Types observés : salaires, indemnités de correction d'examens, achats de fournitures. Les dates montrent que les fichiers contiennent des informations opérationnelles récentes, sans confirmer indépendamment un accès direct aux systèmes à cette date.
   - Fichiers de mandat de paiement (série MD26-XXXXXX) pour les autorisations de paie individuelles.
   - Virements pour les indemnités d'examen (CFEE 2025), connectant le système du Trésor aux flux de paiement du cycle national d'examens primaires.
 
-  Total estimé des enregistrements compromis : environ **1 659 735 enregistrements** répartis dans trois tables, auxquels s'ajoutent 323 jours de fichiers opérationnels SICA.
+  Total des enregistrements représentés dans les éléments analysés : environ **1 659 735 enregistrements** répartis dans trois tables, auxquels s'ajoutent 323 jours de fichiers opérationnels SICA.
 
   **Observations CTI :**
-  - L'extraction des bases de données (9 mai 2026) et les fichiers d'activité SICA (jusqu'au 8 mai 2026) précèdent la publication de la revendication AuditTeam (17-18 mai 2026) d'environ 9 jours. Cela confirme un accès persistant et discret avant le déploiement du ransomware, caractéristique de la méthode de double extorsion d'AuditTeam : exfiltration d'abord, chiffrement ensuite.
+  - Les dates visibles dans les bases de données et les fichiers d’activité SICA précèdent la publication de la revendication AuditTeam d’environ neuf jours. Cet écart indique que les données présentées comme exfiltrées sont antérieures à la publication, mais ne permet pas de confirmer la durée d’accès, un chiffrement ou la séquence complète de l’incident.
   - La table REDEVABLES (~960 146 enregistrements) représente l'une des plus importantes expositions de données personnelles jamais enregistrées par AFRINTEL pour une institution financière publique en Afrique de l'Ouest.
   - La base GFORD.ORD_MANDATS expose les NINEA et les coordonnées bancaires de l'ensemble des fournisseurs et prestataires de l'État, créant un risque significatif de fraude aux fournisseurs, de BEC (Business Email Compromise) et d'ingénierie sociale financière ciblée contre la chaîne d'approvisionnement publique.
   - Les données de salaires et de virements (comptes bancaires, montants, identités des agents) permettent des fraudes financières directes visant les employés du secteur public.
-  - La présence de virements liés aux indemnités d'examen CFEE dans le système SICA illustre la dépendance inter-institutionnelle : une compromission du Trésor affecte directement les flux de paiement du Ministère de l'Éducation.
-  - **Niveau de confiance : Élevé. Niveau d'impact : Niveau 4** (infrastructure financière nationale critique, exposition PII à grande échelle, accès aux systèmes financiers opérationnels actifs, double extorsion).
+  - La présence de virements liés aux indemnités d'examen CFEE dans les éléments SICA indique une dépendance inter-institutionnelle concernant les flux de paiement du Ministère de l'Éducation.
+  - **Niveau de confiance : Élevé. Niveau d'impact : Niveau 4** (infrastructure financière nationale critique et exposition à grande échelle de données financières et d'identité sensibles).
 
 #### 🇪🇬 Égypte / 🇱🇾 Libye – Scans de passeports [Fuite de données]
 - **Acteur / Groupe :** raylie (forum [Citizen])
@@ -793,5 +806,4 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   - **Autres sociétés** : 500 000 lignes – 350 USD.
 
 - **Analyse :**  
-  Cette offre de vente massive constitue l'une des plus importantes fuites de données concernant le Maroc, touchant à la fois des institutions gouvernementales stratégiques et des entreprises privées. Les données judiciaires (dossiers, plaintes, décisions) exposent des informations sensibles sur des citoyens et des affaires en cours. Les données de NARSA (permis de conduire, plaques d'immatriculation, amendes) permettent l'usurpation d'identité et la création de faux documents administratifs. La présence des données de l'OFPPT (formation professionnelle) expose les parcours et informations personnelles des apprenants et formateurs. La centralisation de ces bases par un même acteur suggère une campagne d'extraction coordonnée ciblant les infrastructures marocaines, potentiellement via des vulnérabilités partagées (accès administratifs, API non sécurisées). La vente de ces données sur des forums cybercriminels expose les citoyens et entreprises marocains à des risques accrus d'escroqueries, d'usurpation d'identité et de chantage. L'absence de mention d'une autorité ayant notifié ces fuites soulève des questions sur la réactivité des entités concernées. À noter que ces mêmes institutions marocaines avaient déjà fait l'objet de fuites de données en avril 2026, le même acteur malveillant ayant divulgué à l'époque des échantillons et des données complètes, confirmant une persistance de la menace et l'absence de mesures correctives efficaces.
-
+  Cette vente concerne à la fois des institutions publiques et des entreprises privées au Maroc. Les données judiciaires, routières et de formation professionnelle revendiquées pourraient créer des risques de fraude, d’usurpation d’identité, de phishing et de chantage. Le même acteur a également publié des revendications concernant des institutions marocaines en avril 2026, ce qui indique une activité répétée à suivre. Les sources disponibles ne permettent pas d’établir le vecteur d’accès initial, l’état de la remédiation ni une éventuelle réponse institutionnelle.

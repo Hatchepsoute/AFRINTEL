@@ -12,7 +12,7 @@
 
 In January 2026, **21 cyber incidents** targeting African entities were publicly claimed or detected. The month was dominated by ransomware with a notable cross-border presence of two groups, alongside two data leaks and a coordinated government defacement. Key findings:
 
-- **18 ransomware/access-sale claims (85.7%)** and **2 data leaks (9.5%)** and **1 defacement (4.8%)**.
+- **17 ransomware claims (81.0%)**, **2 data leaks (9.5%)**, **1 access sale (4.8%)**, and **1 defacement (4.8%)**.
 - **12 countries** affected; **South Africa** (4 incidents) and **Kenya** (4) are the most targeted, followed by **Egypt** (3).
 - **12 distinct threat actors**; **thegentlemen** (6 incidents) and **tengu** (5) dominate the landscape with a combined pan-African reach.
 - Government, financial services, and transport sectors account for the majority of victims.
@@ -29,7 +29,7 @@ In January 2026, **21 cyber incidents** targeting African entities were publicly
 - **Sources**: Dark web, DLS (leak sites), OSINT, Telegram channels, underground forums, media reports.
 - **Inclusion**: Publicly claimed or attributed incidents with identified victim, country, sector.
 - **Typology**:
-  - *Ransomware*: encryption + ransom demand (claim on DLS).
+  - *Ransomware*: victim publication or claim by a ransomware group. Encryption is not presumed without supporting evidence.
   - *Data breach / intrusion*: unencrypted exfiltration, database sold or published.
   - *Access sale*: sale of compromised credentials or system access by an Initial Access Broker (IAB).
   - *Defacement*: website visual modification, often for political or ideological purposes.
@@ -126,79 +126,14 @@ pie
  "Others - 1 each (10)" : 10
 ```
 
-## 4. Country-by-country overview
+## 4. Geographic summary
 
-> All entries cover publicly claimed incidents only. Claims remain unverified unless independently confirmed.
+> **For details of each incident, see [`victims.md`](./victims.md).**
 
-### 🇿🇦 South Africa (4 incidents: 4 ransomware)
-
-South Africa recorded four ransomware incidents in January, all targeting industrial and government-linked organizations. The threat actor thegentlemen struck three victims on the same day, January 20: Paltrack, a logistics software company serving the agri-food sector; Rola Motor Group, an automotive dealership and distribution network; and Witzenberg Municipality, a local government entity in the Western Cape. The concentration of three claims on a single day suggests coordinated targeting across distinct sectors. A fourth victim, Hytec South Africa, a hydraulic and mechanical engineering company, was claimed by the threat actor vect. Local government and industrial supply chain represent a recurring exposure pattern for South Africa.
-
----
-
-### 🇰🇪 Kenya (4 incidents: 4 ransomware)
-
-Kenya recorded the joint-highest victim count in January with four ransomware claims, all targeting public or quasi-public institutions. The threat actor blackshrantac claimed the National Water Authority on January 8, a critical utility responsible for the country's water resource management. On January 20, the threat actor thegentlemen claimed CPF Financial Services, a pension and capital management provider, and the threat actor devman claimed NSSF, the national social security fund, making January 20 the most active single day of the month. The threat actor tengu claimed NAMICO, the National Mining Corporation, on January 26. The breadth of sectors affected reflects a pattern of deliberate targeting of Kenyan government-linked infrastructure.
-
----
-
-### 🇪🇬 Egypt (3 incidents: 3 ransomware)
-
-Egypt recorded three ransomware claims from three different actors across distinct sectors. The threat actor thegentlemen claimed Real Tech, a technology and IT security company, on January 11. The threat actor direwolf claimed Tepco-Group, an electrical engineering firm, on January 13. The threat actor tengu claimed skyegtours.com, a tourism and travel platform, on January 27. The distribution across sectors and actors suggests opportunistic targeting rather than a coordinated campaign against Egypt.
-
----
-
-### 🇲🇦 Morocco (2 incidents: 1 ransomware, 1 data leak)
-
-Morocco was hit by two distinct incident types in January. The threat actor tengu claimed Nafae Sanitaire, a construction and plumbing supply company, on January 17. The threat actor skra1a published an aviation database from AOM Aviation Group (Air Ocean Maroc) on January 31, exposing operational and civil aviation data on the deep web. The aviation sector data exposure is notable given the sensitivity of operational and passenger records.
-
----
-
-### 🇹🇬 Togo (1 incident: access sale)
-
-The threat actor Bigbrother, operating as an Initial Access Broker, claimed new accesses to Togolese government platforms on January 3. This follows a prior access claim to gouv.tg infrastructure in September 2025. The recurring targeting of the same government entity by the same IAB indicates persistent access and a risk of escalation: unsold or unpatched access can be leveraged for ransomware, espionage, or destructive operations.
-
----
-
-### 🇳🇪 Niger (1 incident: defacement)
-
-On January 4, seven or more Nigerien government websites were simultaneously defaced displaying an identical politically charged message. The coordinated nature across multiple domains (ANSI, MAGEL, urbanism, industry, women's promotion ministries) indicates either a common vulnerability in shared hosting infrastructure or a coordinated access operation. The attack was unclaimed, which is unusual for hacktivist defacements and may suggest a politically motivated actor avoiding attribution.
-
----
-
-### 🇸🇳 Senegal (1 incident: data leak)
-
-PixPay, a Senegalese mobile payment platform, had its financial database published by the threat actor breach3d on January 16. Mobile payment data exposure creates direct risks of payment fraud, account takeover, and targeted phishing against users.
-
----
-
-### 🇲🇿 Mozambique (1 incident: ransomware)
-
-CFM Mozambique, the national railway and port authority, was claimed by the threat actor Qilin on January 16. Targeting national transport infrastructure poses risks to supply chain logistics and port operations.
-
----
-
-### 🇹🇿 Tanzania (1 incident: ransomware)
-
-CCBRT, a healthcare NGO providing specialized rehabilitation services, was claimed by the threat actor benzona on January 17. Healthcare NGOs represent a distinct target category: limited cybersecurity budgets, sensitive patient data, and donor and partner communications of operational value.
-
----
-
-### 🇲🇺 Mauritius (1 incident: ransomware)
-
-Rogers Capital, a financial services and technology provider, was claimed by the threat actor thegentlemen on January 14. Financial services providers in island economies often serve as hubs for regional capital flows, increasing the sensitivity of their data.
-
----
-
-### 🇩🇿 Algeria (1 incident: ransomware)
-
-Tahkout Group, a major industrial conglomerate involved in automotive assembly and transport, was claimed by the threat actor tengu on January 28. The group's broad industrial footprint amplifies the potential disruption impact of any operational compromise.
-
----
-
-### 🇹🇳 Tunisia (1 incident: ransomware)
-
-FRUIT-BONTÉ, an agri-food and fruit processing company, was claimed by the threat actor tengu on January 27. The agri-food sector in North Africa is increasingly targeted, suggesting ransomware groups are expanding beyond traditional sectors.
+- **Concentration:** South Africa and Kenya recorded 4 incidents each, followed by Egypt with 3. Together, they account for 11 of 21 incidents.
+- **Ransomware activity:** 17 claims were recorded. TheGentlemen accounted for 6 incidents and tengu for 5, with activity spanning several regions.
+- **Other incident types:** the month also included two data leaks, one access sale targeting Togolese government infrastructure and one coordinated defacement affecting Nigerien government websites.
+- **Notable exposure:** the PixPay and AOM Aviation publications involved financial and aviation data, while the exact scope and impact remain dependent on the available source material.
 
 ---
 
@@ -315,27 +250,21 @@ pie
 
 ### Gaps
 
-- Many ransomware claims remain unverified; no public confirmation from victims.
 - The Niger defacement attackers remain unattributed.
 - Bigbrother's buyer and the nature of exploited access are unknown.
 - Actual data volumes in leak incidents have not been independently verified.
 
 ## 9. MITRE ATT&CK mapping (contextual)
 
-| Incident | Techniques |
-|----------|-----------|
-| Niger defacement | T1190 - Exploit Public-Facing App, T1491 - Defacement |
-| Bigbrother/Togo | T1078 - Valid Accounts, T1650 - Acquire Access |
-| PixPay | T1005 - Data from Local System, T1041 - Exfiltration |
-| AOM Aviation | T1005 - Data from Local System, T1041 - Exfiltration |
-| General ransomware | T1486 - Ransomware, T1490 - Inhibit System Recovery |
+| Phase | Technique | Analytical scope |
+| :--- | :--- | :--- |
+| Initial access | T1566 - Phishing | Defensive detection hypothesis, not observed from the claims alone |
+| Initial access | T1190 - Exploit Public-Facing Application | Defensive detection hypothesis, not observed from the claims alone |
+| Account access | T1078 - Valid Accounts | Relevant to access or credential sales, without confirming use of the accounts |
+| Collection | T1005 - Data from Local System | Contextual hypothesis when internal data is published; the collection mechanism remains unknown |
+| Impact | T1486 - Data Encrypted for Impact | Relevant to ransomware preparedness, without confirming encryption for every entry |
 
-**Common techniques observed:**
-- T1566 - Phishing (likely initial vector for most ransomware)
-- T1190 - Exploit Public-Facing Application
-- T1078 - Valid Accounts (Togo IAB activity)
-- T1486 - Ransomware (17 incidents)
-- T1491 - Defacement (Niger)
+> These techniques are defensive hypotheses. A claim, data sale or leak-site publication is not sufficient to treat them as observed.
 
 ## 10. Recommendations
 

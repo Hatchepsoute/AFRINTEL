@@ -10,13 +10,19 @@
 
 ## 1. Synthèse exécutive
 
-Février 2026 enregistre **20 incidents cyber** publiquement revendiqués ou détectés à travers l'Afrique, tous attribués à des groupes ransomwares ou d'extorsion de données. Le mois est marqué par un événement extraordinaire : l'exfiltration alléguée de 139 To depuis la DAF SENEGAL (Direction de l'Administration Générale et de l'Équipement), de loin la plus grande revendication de fuite de données enregistrée par AFRINTEL en 2026. Points clés :
+Février 2026 enregistre **20 incidents cyber** publiquement revendiqués ou détectés à travers l'Afrique, tous attribués à des groupes ransomwares ou d'extorsion de données. Le mois est marqué par la divulgation de données de la DAF SÉNÉGAL (Direction de l'Administration Générale et de l'Équipement). AFRINTEL a consulté les données publiées, qui comprennent notamment des informations citoyennes et des éléments biométriques. L'acteur annonce un volume de 139 To, mais les éléments accessibles ne permettent pas de mesurer ce volume. Points clés :
+118c- **Divulgation DAF Sénégal :** AFRINTEL a consulté les données publiées. Leur contenu est sensible et comprend notamment des informations citoyennes et des éléments biométriques. Le volume de 139 To est celui annoncé par l'acteur et ne peut pas être mesuré à partir des éléments accessibles.
+187c- La divulgation DAF Sénégal concerne des données gouvernementales sensibles, dont des éléments biométriques, et représente un impact de niveau 4.
+207c- **The Green Blood Group** : Première apparition AFRINTEL. L'acteur a publié des données de la DAF Sénégal et annonce un volume de 139 To. Ce volume n'a pas pu être mesuré par AFRINTEL.
+226c1. **DAF Sénégal - divulgation de données gouvernementales sensibles** : AFRINTEL a consulté les données publiées, qui comprennent notamment des informations citoyennes et des éléments biométriques. Cette divulgation marque une escalade significative des attaques contre les administrations ouest-africaines. Le volume de 139 To reste la valeur annoncée par l'acteur et ne peut pas être mesuré à partir des éléments accessibles.
+234c- Le volume total des données publiées par The Green Blood Group n'a pas pu être mesuré. La valeur de 139 To provient de l'annonce de l'acteur.
+293cFévrier 2026 est avant tout marqué par la divulgation de données citoyennes et biométriques de la DAF Sénégal. AFRINTEL a consulté les données publiées et retient leur sensibilité comme le principal élément d'impact. Le volume de 139 To correspond à la valeur annoncée par l'acteur, sans possibilité de le mesurer à partir des éléments accessibles. Au-delà de ce cas, le mois présente un paysage de menaces large et diversifié : 14 pays, 11 acteurs, et une intensité particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. thegentlemen, LockBit 5.0 et 0APT ont maintenu un rythme opérationnel élevé pendant la période observée.
 
 - **20 incidents ransomware / extorsion de données (100 %)**.
 - **14 pays** touchés : l'**Afrique du Sud** (3), l'**Égypte** (3), le **Ghana** (2) et le **Nigeria** (2) en tête.
 - **11 acteurs distincts** : **thegentlemen** (5 incidents) domine, suivi de **0APT** (3) et **LockBit 5.0** (3).
 - Le secteur de l'aviation sous pression soutenue : BlueSky Somalia, Nile Air Égypte, Air Côte d'Ivoire tous revendiqués en février.
-- À noter : 0APT, responsable de 3 revendications à fort volume (BlueSky 3,5 To, Global Media Alliance 2,5 To, Vertex Law 850 Go), a ensuite disparu des sites de fuite publics. Les revendications restent non vérifiées.
+- À noter : 0APT, responsable de 3 revendications à fort volume (BlueSky 3,5 To, Global Media Alliance 2,5 To, Vertex Law 850 Go), a ensuite disparu des sites de fuite publics.
 
 > **Note :** La revendication Diesel-Electric Afrique du Sud (LockBit 5.0, 27 février) pourrait se chevaucher avec une revendication distincte du même acteur pour la même victime en mars 2026. Vérification indépendante requise.
 
@@ -30,7 +36,7 @@ Février 2026 enregistre **20 incidents cyber** publiquement revendiqués ou dé
 - **Période** : 1-28 février 2026 (incidents divulgués ou revendiqués durant ce mois ; les dates réelles d'attaque peuvent être antérieures).
 - **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground.
 - **Inclusion** : Incidents revendiqués ou attribués publiquement, avec victime, pays et secteur identifiés.
-- **Typologie** : Tous les incidents de ce mois impliquent un chiffrement ransomware, une double extorsion (chiffrement + menace de publication) ou une exfiltration massive de données par des groupes criminels. Aucune activité de courtier en données pure identifiée.
+- **Typologie** : tous les incidents du mois sont attribués à des groupes ransomware ou d’extorsion de données. Le chiffrement, l’interruption opérationnelle et le vecteur d’accès initial ne sont pas présumés lorsque la source documente uniquement une victime publiée ou une revendication d’exfiltration. Aucune activité autonome de courtier en données n’a été identifiée.
 
 ## 3. Vue d'ensemble
 
@@ -108,91 +114,14 @@ pie
  "Autres - 1 chacun (7)" : 7
 ```
 
-## 4. Vue d'ensemble pays par pays
+## 4. Synthèse géographique
 
-> Tous les éléments présentés proviennent d'incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
+> **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-### 🇸🇳 Sénégal (1 incident - Critique)
-
-La DAF Sénégal (Direction de l'Administration Générale et de l'Équipement), organe administratif central du gouvernement, est la revendication la plus critique du mois. L'acteur malveillant The Green Blood Group revendique 139 To de données exfiltrées incluant des bases de données citoyennes et des enregistrements biométriques. Si même partiellement authentique, cela représenterait l'une des plus grandes expositions de données gouvernementales de l'histoire africaine. L'exposition de données biométriques crée des risques irréversibles : contrairement aux mots de passe, les identifiants biométriques ne peuvent pas être modifiés. Les conséquences potentielles incluent la fraude identitaire à l'échelle nationale, la perturbation des services publics et l'exploitation de l'infrastructure d'identité citoyenne.
-
----
-
-### 🇸🇴 Somalie (1 incident)
-
-BlueSky Aviation (bluesky-air.com), une société de services aéronautiques somalienne, a été revendiquée par l'acteur malveillant 0APT avec 3,5 To d'exfiltration alléguée. C'est l'une des trois revendications à fort volume formulées par l'acteur malveillant 0APT en février avant que le groupe disparaisse des sites de fuite publics. La revendication reste non vérifiée. Les risques d'une exposition du secteur aérien incluent les données opérationnelles, les dossiers passagers et les informations logistiques de vol.
-
----
-
-### 🇬🇭 Ghana (2 incidents)
-
-Global Media Alliance (gmaworld.com), une entreprise de médias et communications intégrée, a été revendiquée par l'acteur malveillant 0APT avec 2,5 To de données alléguées. Son exposition risquerait des contrats publicitaires, des contenus éditoriaux et des données personnelles. Ghana Bauxite Company (ghanabauxite.com), une entreprise minière liée à l'État, a été revendiquée par l'acteur malveillant thegentlemen. Son ciblage illustre l'intérêt croissant de ce groupe pour les industries extractives africaines.
-
----
-
-### 🇹🇿 Tanzanie (1 incident)
-
-Vertex Law Chambers (vertexlaw.co.tz), un cabinet d'avocats, a été revendiqué par l'acteur malveillant 0APT avec 850 Go d'exfiltration alléguée. Une fuite dans un cabinet d'avocats crée une sensibilité particulièrement élevée : dossiers clients, communications privilégiées, archives judiciaires et contrats commerciaux sont tous potentiellement exposés.
-
----
-
-### 🇰🇪 Kenya (1 incident)
-
-Wells Fargo Kenya (fargo.co.ke), un prestataire local de sécurité et de logistique financière, a été revendiqué par l'acteur malveillant thegentlemen. L'exposition de données de sécurité et de logistique financière crée des risques de compromission de la sécurité physique et de fraude financière.
-
----
-
-### 🇳🇬 Nigeria (2 incidents)
-
-Getly (getly.app), une application fintech, a été revendiquée par l'acteur malveillant killsec le 9 février. Les violations de fintech mobile exposent directement les comptes financiers et les historiques de transactions des utilisateurs. Midwestern Oil and Gas (midwesternog.com), une société pétrolière et gazière en amont, a été revendiquée par l'acteur malveillant incransom le 12 février. Le ciblage du secteur énergétique critique au Nigeria reflète une tendance plus large observée en février avec l'aviation, l'énergie et les mines toutes touchées.
-
----
-
-### 🇪🇬 Égypte (3 incidents)
-
-L'Égypte enregistre trois groupes ransomwares distincts en février. Nile Air (nileair.com), une compagnie aérienne privée à l'aéroport du Caire, a été revendiquée par l'acteur malveillant thegentlemen le 13 février. SODIC (sodic.com), l'un des principaux promoteurs immobiliers égyptiens, a été revendiqué par l'acteur malveillant payload le 17 février. Le ministère de l'Agriculture (moa.gov.eg), responsable de la sécurité alimentaire et de l'aménagement foncier, a été revendiqué par l'acteur malveillant LockBit 5.0 le 20 février. Le ciblage simultané par trois groupes différents sur l'aviation, l'immobilier et le gouvernement illustre l'exposition soutenue de l'Égypte.
-
----
-
-### 🇲🇺 Maurice (1 incident)
-
-Sands Suites (sands.mu), un complexe hôtelier de luxe, a été revendiqué par l'acteur malveillant LockBit 5.0 le 14 février. Les violations du secteur hôtelier exposent généralement les données personnelles des clients, les informations de paiement et les programmes de fidélité.
-
----
-
-### 🇿🇦 Afrique du Sud (3 incidents)
-
-Intsika Yethu Municipality (intsikayethu.gov.za), une municipalité locale du Cap-Oriental, a été revendiquée par l'acteur malveillant thegentlemen le 15 février. Les violations de données municipales risquent d'exposer les dossiers de services aux citoyens, les détails d'infrastructure et les données du personnel. EnerTec (enertec.co.za), une société de solutions énergétiques et de distribution de batteries, a été revendiquée par l'acteur malveillant vect le 24 février, avec 151,79 Go de données alléguées. Diesel-Electric (diesel-electric.co.za), un grand distributeur de composants automobiles, a été revendiqué par l'acteur malveillant LockBit 5.0 le 27 février. Une possible republication de la même victime est apparue sous LockBit 5.0 en mars 2026 et nécessite vérification.
-
----
-
-### 🇹🇳 Tunisie (1 incident)
-
-BITS (bits.com.tn), une société de services et de conseil informatique, a été revendiquée par l'acteur malveillant thegentlemen le 15 février. Les cabinets de conseil IT détiennent la documentation d'infrastructure des clients et des identifiants d'accès, créant un risque élevé de violation secondaire.
-
----
-
-### 🇸🇩 Soudan (1 incident)
-
-Amtaar Investment (amtaar.com), une grande entreprise d'investissement agricole gérant 6 000 hectares de terres irriguées jouant un rôle clé dans la sécurité alimentaire nationale, a été revendiquée par l'acteur malveillant apt73/bashe le 18 février, avec 3,5 Go de données partiellement publiés. C'est le seul incident de février avec publication partielle confirmée. Le contexte du conflit soudanais amplifie l'impact stratégique potentiel de l'exposition de données du secteur agricole.
-
----
-
-### 🇨🇮 Côte d'Ivoire (1 incident)
-
-Air Côte d'Ivoire (aircotedivoire.com), la compagnie aérienne nationale, a été revendiquée par l'acteur malveillant incransom le 19 février. Avec BlueSky Somalie et Nile Air Égypte, février 2026 devient le mois avec le plus de revendications ransomware sur des compagnies aériennes africaines dans les archives AFRINTEL.
-
----
-
-### 🇲🇦 Maroc (1 incident)
-
-Shora Advisory (shora.ma), un cabinet de conseil en comptabilité et finance, a été revendiqué par l'acteur malveillant tengu le 20 février. Les cabinets de conseil financier détiennent des données financières d'entreprise sensibles, des données fiscales et des documents de stratégie.
-
----
-
-### 🇳🇦 Namibie (1 incident)
-
-CYMOT (cymot.com), un détaillant namibien de pièces automobiles, outils et équipements, a été revendiqué par l'acteur malveillant Qilin le 22 février.
+- **Répartition :** 20 incidents concernent 14 pays. L’Afrique du Sud et l’Égypte en comptent 3 chacune, tandis que le Ghana et le Nigéria en comptent 2 chacun.
+- **Activité des acteurs :** TheGentlemen arrive en tête avec 5 incidents, suivi de 0APT et LockBit 5.0 avec 3 incidents chacun.
+- **Signal sectoriel :** BlueSky Aviation, Nile Air et Air Côte d’Ivoire montrent une pression soutenue sur le secteur aérien dans trois pays.
+- **Revendications volumétriques :** les 139 To attribués à DAF Sénégal et les trois revendications de 0APT sont significatifs, mais les volumes et les détails des compromissions ne sont pas confirmés indépendamment.
 
 ---
 
@@ -218,7 +147,7 @@ CYMOT (cymot.com), un détaillant namibien de pièces automobiles, outils et éq
 | Namibie | 1 | qilin |
 
 **Observations clés :**
-- **0APT** a émergé comme nouvel acteur prolifique début février (3 revendications en 5 jours) puis a disparu des DLS publics. L'authenticité des volumes revendiqués (total 6,85 To sur 3 victimes) reste non vérifiée.
+- **0APT** a émergé comme nouvel acteur prolifique début février (3 revendications en 5 jours) puis a disparu des DLS publics.
 - **Secteur aérien** : 3 compagnies aériennes revendiquées (BlueSky Somalie, Nile Air Égypte, Air Côte d'Ivoire) par 3 acteurs différents. Ciblage opportuniste indépendant probable.
 - **thegentlemen** poursuit son rythme de janvier 2026 avec 5 nouvelles revendications dans 4 pays.
 - **LockBit 5.0** revendique 3 victimes, confirmant sa continuité opérationnelle sous le branding LockBit 5.x.
@@ -281,18 +210,18 @@ pie
 
 **Notes sur les acteurs :**
 - **0APT** : Revendications à fort volume sans preuves publiées. Disparu après février. Faible niveau de confiance jusqu'à vérification.
-- **The Green Blood Group** : Première apparition AFRINTEL. Revendication de 139 To sur un gouvernement, non vérifiée.
+- **The Green Blood Group** : Première apparition AFRINTEL. Revendication de 139 To sur un gouvernement.
 - **LockBit 5.0** : Troisième mois consécutif d'activité africaine.
 
 ### 7.1 Niveau de risque
 
 | Pays | Niveau de risque |
 |------|----------------|
-| Sénégal | 🔴 Critique (139 To gouvernement + biométrie - non vérifiés) |
+| Sénégal | 🔴 Critique (139 To gouvernement + biométrie) |
 | Afrique du Sud | 🔴 Élevé (3 incidents : gouvernement, énergie, automobile) |
 | Égypte | 🔴 Élevé (3 incidents dont un ministère gouvernemental) |
 | Soudan | 🟠 Moyen-Élevé (fuite partielle confirmée, secteur agricole critique) |
-| Somalie | 🟠 Moyen (revendication non vérifiée, secteur aérien) |
+| Somalie | 🟠 Moyen (secteur aérien) |
 | Nigeria | 🟠 Moyen (fintech + secteur pétrolier) |
 | Autres | 🟡 Faible-Moyen |
 
@@ -315,18 +244,15 @@ pie
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
-| Incident | Techniques |
-|----------|-----------|
-| DAF Sénégal | T1486 - Ransomware, T1041 - Exfiltration, T1005 - Données du système local |
-| Clusters 0APT | T1041 - Exfiltration, T1486 - Ransomware (supposé) |
-| Amtaar Soudan | T1486 - Ransomware, T1041 - Exfiltration (publication partielle confirmée) |
-| thegentlemen (général) | T1486 - Ransomware, T1566 - Phishing (vecteur initial probable) |
+| Phase | Technique | Portée analytique |
+| :--- | :--- | :--- |
+| Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
+| Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
+| Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
 
-**Techniques couramment observées :**
-- T1566 - Phishing (vecteur initial principal supposé)
-- T1190 - Exploitation d'application web
-- T1486 - Ransomware (20 incidents)
-- T1041 - Exfiltration (DAF Sénégal, Amtaar Soudan, clusters 0APT)
+> Ces techniques constituent des hypothèses défensives. Une revendication, une vente de données ou une publication sur un site de fuite ne suffit pas à les considérer comme observées.
 
 ## 10. Recommandations
 

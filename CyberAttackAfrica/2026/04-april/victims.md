@@ -16,6 +16,15 @@
 - **Ransomware attacks** : 20
 - **Data leaks (non‑ransomware)** : 40
 
+### Notable incidents
+
+- **Morocco:** a database attributed to Royal Palace staff reportedly contained 3,300 records.
+- **South Africa:** the Pick n Pay ASAP/Bottles.com exposure included payment-card and location data.
+- **Kenya:** a ransomware claim targeting the Kenya Airports Authority cited a volume of 2 TB.
+- **Benin:** a 7.1 GB mailbox publication was attributed to CNSS Benin.
+
+> The entries below document observed claims or publications. Claimed volumes and compromises remain unconfirmed without independent evidence.
+
 ---
 
 ### April 01, 2026

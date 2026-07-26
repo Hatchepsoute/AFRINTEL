@@ -7,6 +7,19 @@
 # List of African cyberattack victims in February 2026 (20 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
+## Monthly snapshot
+
+February 2026 includes **20 unique incidents** attributed to **ransomware or data-extortion groups** and **no standalone data leak or access sale classified separately**, across **14 African countries**.
+
+### Notable incidents
+
+- **Senegal:** the Green Blood Group claimed the exfiltration of 139 TB from DAF SENEGAL.
+- **Somalia, Ghana and Tanzania:** 0APT issued three large-volume claims totalling 6.85 TB.
+- **Aviation:** BlueSky Aviation, Nile Air and Air Côte d’Ivoire were claimed during the month.
+- **South Africa:** the Diesel-Electric claim may overlap with another LockBit 5.0 entry recorded in March and requires independent verification.
+
+> The entries below document observed claims or publications. Claimed volumes and compromises remain unconfirmed without independent evidence.
+
 ## February 2026
 
 ### 01 February 2026

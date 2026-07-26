@@ -22,8 +22,17 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Most affected countries:** South Africa (13), Morocco (8), Egypt (8)
 
 ### Incident typology
-- **Ransomware (encryption + ransom):** 19 incidents (46.3%)
+- **Ransomware claims or publications:** 19 incidents (46.3%)
 - **Data breaches / system intrusions:** 22 incidents (53.7%)
+
+### Notable incidents
+
+- **Egypt:** 3.8 million records claimed in an incident attributed to the Ministry of Health.
+- **Morocco:** a 300 GB publication attributed to the Ministry of Justice included court-case files.
+- **Senegal:** UBA Senegal disclosed a coordinated fraud involving more than 3,400 ATM withdrawals totalling 1.143 billion FCFA.
+- **South Africa:** a 3.8 TB exposure was attributed to the Gauteng provincial government.
+
+> The entries below document observed claims, publications or reported incidents. AFRINTEL does not confirm a compromise without independent evidence.
 
 ### Breakdown by country
 - 🇿🇦 South Africa: **13** victims

@@ -16,6 +16,15 @@
 - **Attaques par ransomware** : 20
 - **Fuites de données (hors ransomware)** : 40
 
+### Incidents marquants
+
+- **Maroc :** une base attribuée au personnel du Palais royal contiendrait 3 300 enregistrements.
+- **Afrique du Sud :** l’exposition de Pick n Pay ASAP/Bottles.com comprenait des données de cartes de paiement et de localisation.
+- **Kenya :** une revendication ransomware visant la Kenya Airports Authority mentionnait un volume de 2 To.
+- **Bénin :** une publication de messageries de 7,1 Go a été attribuée à la CNSS du Bénin.
+
+> Les fiches ci-dessous documentent des revendications ou publications observées. Les volumes revendiqués et les compromissions ne sont pas confirmés sans élément indépendant.
+
 ---
 
 ### 01 Avril 2026

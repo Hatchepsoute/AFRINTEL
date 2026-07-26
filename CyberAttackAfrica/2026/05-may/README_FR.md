@@ -34,7 +34,7 @@ Principales conclusions :
 - **Sources** : Dark web, DLS, OSINT, canaux Telegram, forums underground.
 - **Inclusion** : incidents publiquement revendiqués avec victime, pays et secteur identifiés.
 - **Typologie** :
-  - *Ransomware* : chiffrement + demande de rançon.
+  - *Ransomware* : publication d’une victime ou revendication par un groupe ransomware. Le chiffrement n’est pas présumé sans élément probant.
   - *Fuite de données / vente d'accès* : exfiltration sans chiffrement, base vendue ou publiée, ou vente d'accès compromis.
 
 > Toutes les revendications issues de forums cybercriminels, leak sites et canaux underground sont traitées comme des **revendications non confirmées** sauf corroboration indépendante.
@@ -229,157 +229,14 @@ pie showData
 
 ---
 
-## 4. Bilan par pays - Résumé succinct (avec dates clés)
+## 4. Synthèse géographique
 
-> **Pour tous les détails techniques (volumes de données, analyses d'échantillons, tactiques des acteurs, etc.), veuillez consulter la liste complète des victimes :** [`victims_FR.md`](./victims_FR.md)
+> **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
----
-
-### 🇪🇬 Égypte (16 incidents : 7 ransomwares, 9 fuites)
-
-**Ransomwares (7) :**
-- **Le groupe ransomware NightSpire** (3 cibles, 24-26 mai) : Papa John's Egypt, Rawaj Consumer Finance, B Investments Holding
-- **Le groupe ransomware TheGentlemen** (9 mai) : Misr Chemical Industries
-- **Le groupe ransomware Lamashtu** (4 mai) : Luna Group (agroalimentaire)
-- **Le groupe ransomware LockBit 5.0** (7 mai) : Rhactus Hotel
-- **Le groupe ransomware Qilin** (8 mai) : Imex International (logistique)
-
-**Fuites dans le secteur éducatif (4) :**
-- **L'acteur malveillant Revesky** (13 mai - Ministère de l'Éducation) : 26,8M d'élèves + 3,8M d'enseignants
-- **L'acteur malveillant INT3X** (10 mai - Université de Mansoura) : 989 000 étudiants (2012-2026)
-- **L'acteur malveillant INT3X** (16 mai - Professional Academy for Teachers) : 1,2M d'enseignants
-- **L'acteur malveillant bigF** (4 mai) : 37 Go (Mansoura + Galala), 1,5M d'étudiants
-
-**Autres fuites (5) :**
-- **L'acteur malveillant CrowStealer** (2 mai - Ministère du Travail) : 34 528 travailleurs/expatriés
-- **L'acteur malveillant cc5ab** (12 mai - FutureShop) : API exposée - 3 893 clients, 5 181 commandes, bucket S3
-- **L'acteur malveillant DR-X-LOL** (15 mai - Baitzakat.org.eg) : 300 000 citoyens (numéros d'identité nationale)
-- **Le cybercriminel Databasehooligan** (24 mai - Wuzzuf.net) : 672 000 chercheurs d'emploi (documents d'identité, vidéos) - 1 100 $
-- **L'acteur malveillant Keymous** (28 mai - Citex Systems) : données employés et projets
-
----
-
-### 🇿🇦 Afrique du Sud (14 incidents : 1 ransomware, 13 fuites)
-
-**Ransomware (1) :**
-- **Le groupe ransomware PrinzEugen** (4 mai - Standard Bank Group) : revendication non vérifiée
-
-**Campagne "OpSouthAfrica" (8) - coalition des acteurs malveillants 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines et Infernalis (15-24 mai) :**
-- **Municipalité d'Ephraim Mogale** (15 mai) : 111 Go de documents administratifs
-- **Bellavista School** (15 mai) : données élèves/parents
-- **Department of Correctional Services** (16 mai) : documents internes
-- **CERVI My Private Care** (24 mai) : coordonnées bancaires + numéros BHF des prestataires
-- **mevent.** (24 mai) : données de contact d'infirmières
-- **Sheriff Randburg West** (24 mai) : données de citoyens
-- **SITA** (23 mai) : identifiants exposés
-- **SARS** (23 mai) : couples email/mot de passe (origine incertaine, données tiers)
-
-**Ventes du cybercriminel Databasehooligan (27 mai) :**
-- **Telkom** : 742 000 clients (NID, facturation, tickets) - 900 $
-- **Wanderers Club** : 674 000 membres (adhésions sportives) - 1 400 $
-- **MIDAS** : 463 000 clients/logistique (TVA) - 1 100 $
-
-**Autres fuites (2) :**
-- **L'acteur malveillant Stormous** (5 mai - CGCSA) : 20 Go, base Sage 200 Evolution (finances, inventaires)
-- **L'acteur malveillant Kazu** (17 mai - Stats SA) : 154 Go, 453 000 fichiers (cartes d'identité, recensement)
-
----
-
-### 🇲🇦 Maroc (7 fuites)
-
-- **L'acteur malveillant Sejjil** (12 mai - SDTM/Groupe Barid Al-Maghrib) : 129 fichiers CSV SAGE ERP, hashes MD5, RIB, CIN
-- **L'acteur malveillant superstarkmc** (17 mai - Plateformes gouvernementales) : 827 000 identifiants (Massar, Moutamadris, Waliye, Tax.gov, TGR)
-- **L'acteur malveillant JBT2026** (20 mai - Watiqa.ma) : 695 400 enregistrements d'état civil
-- **L'acteur malveillant fexus** (21 mai - Avito.ma) : emails, téléphones, mots de passe en clair
-- **L'acteur malveillant DarkMafiaX** (22 mai - Spacex.ma) : identifiants admin divulgués
-- **L'acteur malveillant anisanas2** (22 mai - RADEM Meknès) : ~1,1 million de documents exfiltrés (données clients eau/électricité : noms, adresses, numéros de contrat ; données opérationnelles : tournées, agences) ; exposition critique d'une infrastructure publique régionale
-- **Les acteurs malveillants anisanas2 / PKA291** (31 mai - Vente massive de bases marocaines) : plus de 12 millions de lignes et documents couvrant le Ministère de la Justice (2M docs, 150 000 dossiers judiciaires, 3 000 USD), NARSA (2M lignes, 800 USD), OFPPT (400 000 lignes), livraison (8M lignes) et une compagnie d'assurance (accès initial) ; bundle global estimé à 5 500 USD
-
----
-
-### 🇹🇳 Tunisie (5 incidents : 2 ransomwares, 3 fuites)
-
-**Ransomwares (2) :**
-- **Le groupe ransomware TheGentlemen** (12 mai - SETCAR) : fabricant de pièces automobiles
-- **Le groupe ransomware Titan** (18 mai - CRIT Tunisie) : RH / placement de personnel
-
-**Fuites (3) - le cybercriminel Databasehooligan (27-31 mai) :**
-- **Keejob** (27 mai) : 137 000 enregistrements - 1 400 $
-- **MyTelnet** (27 mai) : profils CRM abonnés
-- **OptionCarriere.tn** (31 mai) : 274 000 enregistrements (candidats, employeurs) - 1 300 $
-
----
-
-### 🇳🇬 Nigeria (3 ransomwares)
-
-- **Le groupe ransomware MedusaLocker** (5 mai - ActionAid/TACOSA) : ONG humanitaire
-- **Le groupe ransomware KillSec** (9 mai - MRS Holdings) : conglomérat énergétique
-- **Le groupe ransomware 0day Syndicate** (28 mai - XL Africa Group) : services B2B
-
-Incidents multi-pays impliquant également le Nigeria : **l'acteur malveillant attackercompany** (Resume docs) et **l'acteur malveillant Keymous** (DHIS2).
-
----
-
-### 🇩🇿 Algérie (2 fuites)
-
-- **L'acteur malveillant kamalsheikhxx** (4 mai - Ministère de l'Industrie Pharmaceutique) : 34,3 Go, 52 000 fichiers (2019-2025)
-- **Le cybercriminel Databasehooligan** (19 mai - OGEBC patrimoine culturel) : 425 000 enregistrements - 900 $
-
----
-
-### 🇹🇿 Tanzanie (2 fuites)
-
-- **Le cybercriminel XOverStm** (3 mai - Base citoyens) : 120 000 enregistrements (noms, adresses, téléphones) - 350 $
-- **Le cybercriminel Kampuchean** (22 mai - Webmail police) : 10 000 comptes officiers, mots de passe en clair - 550 $
-
----
-
-### 🇪🇹 Éthiopie (1 fuite)
-
-- **L'acteur malveillant 404Crew Cyber Team** (15 mai - NGO Registration Database) : 3 668 enregistrements d'organisations de la société civile issus de l'agence éthiopienne d'enregistrement et d'audit des ONG, incluant noms, métadonnées d'enregistrement, numéros de certificat, catégories, adresses et emails de contact.
-
----
-
-### 🇸🇳 Sénégal (1 ransomware - CRITIQUE)
-
-- **Le groupe ransomware AuditTeam** (17-18 mai - Trésor Public) : ~1 659 735 enregistrements exfiltrés
-  - **Serveur 10.6.0.61** (Oracle) : dumps des tables `COLLOC.REDEVABLES` (960 146 contribuables avec NINEA), `GFORD.ORD_MANDATS` (659 195 ordres de paiement avec coordonnées bancaires), `COLLOC.CO_PERSONNELS` (40 394 agents avec salaires)
-  - **Serveur 10.6.0.26** (SICA) : 18 mois de fichiers de paie et de virements
-  - Accès persistant confirmé ~9 jours avant la revendication publique
-
----
-
-### 🇬🇭 Ghana (1 ransomware)
-
-- **Le groupe ransomware TheGentlemen** (6 mai - Kasapreko) : fabricant de boissons
-
----
-
-### 🇨🇮 Côte d'Ivoire (1 ransomware)
-
-- **Le groupe ransomware TheGentlemen** (28 mai - Mayelia Automotive) : services de contrôle technique
-
----
-
-### 🇰🇪 Kenya (1 fuite)
-
-- **L'acteur malveillant cc5ab** (16 mai - Land Surveyors Board) : 175 géomètres agréés, 730 assistants (NID), documentation complète de l'API, panneau d'administration Django, configuration PostgreSQL et paramètres JWT
-
----
-
-### Incidents multi-pays (3)
-
-| Incident | Acteur | Date | Pays concernés |
-|----------|--------|------|----------------|
-| Resume docs | **L'acteur malveillant attackercompany** | 5 mai | 🇰🇪🇪🇹🇳🇬🇿🇼 (Kenya, Éthiopie, Nigeria, Zimbabwe) |
-| DHIS2 / Ministères de la Santé | **L'acteur malveillant Keymous** | 13 mai | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 (Mozambique, Liberia, Nigeria, Togo, Sierra Leone) |
-| Scans de passeports | **L'acteur malveillant raylie** | 18 mai | 🇪🇬🇱🇾 (Égypte, Libye) |
-
----
-
-**Synthèse globale (57 incidents, 18 pays) :** L'Égypte (16) et l'Afrique du Sud (14) concentrent à elles seules 52,6 % des incidents. Le secteur éducatif égyptien a exposé à lui seul plus de 28 millions d'enregistrements. Les incidents les plus critiques sont la fuite du Trésor Public sénégalais (~1,66M d'enregistrements) et la vente de la messagerie de la police tanzanienne (10 000 comptes d'officiers en clair). **Le cybercriminel Databasehooligan** domine le courtage de données avec 8 ventes structurées à travers quatre pays.
-
-> **Pour les détails techniques complets, analyses d'échantillons et descriptions détaillées des victimes, voir :** [`victims_FR.md`](./victims_FR.md)
+- **Concentration :** l’Égypte (16), l’Afrique du Sud (14), le Maroc (7) et la Tunisie (5) représentent 42 des 57 incidents, soit 73,7 % du mois.
+- **Répartition des menaces :** 16 revendications ou publications ransomware et 41 fuites de données ou ventes d’accès ont été recensées. Les incidents concernent 18 pays africains : 12 directement et 6 pays supplémentaires par exposition multi-pays.
+- **Activité de campagne :** plusieurs entités éducatives égyptiennes ont fait l’objet de revendications importantes, tandis qu’OpSouthAfrica ciblait des institutions publiques et que Databasehooligan apparaissait dans quatre pays.
+- **Expositions à fort impact :** les cas notables concernent des comptes de messagerie de la police tanzanienne et la revendication d’AuditTeam visant le Trésor public du Sénégal.
 
 ---
 
@@ -488,17 +345,15 @@ Incidents multi-pays impliquant également le Nigeria : **l'acteur malveillant a
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
-| Phase | Identifiant | Nom de la technique | Contexte |
-| :--- | :---: | :--- | :--- |
-| **Accès initial** | **T1190** | Exploit Public-Facing Application | FutureShop API, Mansoura University, LSB Kenya |
-| **Accès initial** | **T1078** | Valid Accounts | Identifiants gouvernementaux marocains, Police tanzanienne, identifiants DHIS2 (couples URL/mot de passe publiés) |
-| **Collecte** | **T1005** | Data from Local System | PAT Égypte, SDTM Maroc, SITA Afrique du Sud |
-| **Collecte** | **T1114.002** | Remote Email Collection | Messagerie Police tanzanienne |
-| **Exfiltration** | **T1041** | Exfiltration Over C2 Channel | Wuzzuf.net, Telkom, CGCSA |
-| **Impact** | **T1486** | Data Encrypted for Impact | Tous les incidents ransomware |
-| **Élévation de privilèges** | **T1078.003** | Local Accounts | Identifiants admin DHIS2 |
+| Phase | Technique | Portée analytique |
+| :--- | :--- | :--- |
+| Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
+| Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
+| Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
 
----
+> Ces techniques constituent des hypothèses défensives. Une revendication, une vente de données ou une publication sur un site de fuite ne suffit pas à les considérer comme observées.
 
 ## 10. Recommandations
 

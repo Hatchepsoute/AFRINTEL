@@ -12,7 +12,7 @@
 
 En janvier 2026, **21 incidents cyber** visant des entités africaines ont été publiquement revendiqués ou détectés. Le mois est dominé par les ransomwares, avec une présence transnationale notable de deux groupes, associée à deux fuites de données et un défacement gouvernemental coordonné. Points clés :
 
-- **18 revendications ransomware/vente d'accès (85,7 %)**, **2 fuites de données (9,5 %)** et **1 défacement (4,8 %)**.
+- **17 revendications ransomware (81,0 %)**, **2 fuites de données (9,5 %)**, **1 vente d’accès (4,8 %)** et **1 défacement (4,8 %)**.
 - **12 pays** touchés : **l'Afrique du Sud** (4 incidents) et le **Kenya** (4) sont les plus ciblés, suivis de l'**Égypte** (3).
 - **12 acteurs distincts** : **thegentlemen** (6 incidents) et **tengu** (5) dominent avec une portée panafricaine combinée.
 - Les secteurs gouvernemental, financier et des transports représentent la majorité des victimes.
@@ -29,7 +29,7 @@ En janvier 2026, **21 incidents cyber** visant des entités africaines ont été
 - **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground, rapports médias.
 - **Inclusion** : Incidents revendiqués ou attribués publiquement, avec victime, pays et secteur identifiés.
 - **Typologie** :
-  - *Ransomware* : chiffrement + demande de rançon (revendication sur DLS).
+  - *Ransomware* : publication d’une victime ou revendication par un groupe ransomware. Le chiffrement n’est pas présumé sans élément probant.
   - *Fuite de données / intrusion* : exfiltration non chiffrée, base de données vendue ou publiée.
   - *Vente d'accès* : vente d'identifiants compromis ou d'accès à des systèmes par un Initial Access Broker (IAB).
   - *Défacement* : modification visuelle de sites web, souvent à des fins politiques ou idéologiques.
@@ -62,18 +62,18 @@ En janvier 2026, **21 incidents cyber** visant des entités africaines ont été
 
 ```mermaid
 pie
- title Nombre de victimes par pays (janvier 2026)
+ title Nombre de victimes par pays - janvier 2026
  "Afrique du Sud (4)" : 4
  "Kenya (4)" : 4
- "Égypte (3)" : 3
+ "Egypte (3)" : 3
  "Maroc (2)" : 2
  "Togo (1)" : 1
  "Niger (1)" : 1
- "Sénégal (1)" : 1
+ "Senegal (1)" : 1
  "Mozambique (1)" : 1
  "Tanzanie (1)" : 1
  "Maurice (1)" : 1
- "Algérie (1)" : 1
+ "Algerie (1)" : 1
  "Tunisie (1)" : 1
 ```
 
@@ -95,11 +95,11 @@ pie
 
 ```mermaid
 pie
- title Répartition par type d'incident (janvier 2026)
+ title Repartition par type d incident - janvier 2026
  "Ransomware (17)" : 17
- "Fuite de données (2)" : 2
- "Vente d'accès (1)" : 1
- "Défacement (1)" : 1
+ "Fuite de donnees (2)" : 2
+ "Vente d acces (1)" : 1
+ "Defacement (1)" : 1
 ```
 
 **Acteurs les plus prolifiques :**
@@ -120,85 +120,20 @@ pie
 
 ```mermaid
 pie
- title Acteurs les plus actifs (janvier 2026)
+ title Acteurs les plus actifs - janvier 2026
  "thegentlemen (6)" : 6
  "tengu (5)" : 5
  "Autres - 1 chacun (10)" : 10
 ```
 
-## 4. Vue d'ensemble pays par pays
+## 4. Synthèse géographique
 
-> Tous les éléments présentés proviennent d'incidents revendiqués publiquement. Les revendications restent non confirmées sauf preuve indépendante.
+> **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-### 🇿🇦 Afrique du Sud (4 incidents : 4 ransomwares)
-
-L'Afrique du Sud enregistre quatre incidents ransomware en janvier, ciblant tous des organisations industrielles ou liées au gouvernement. L'acteur malveillant thegentlemen a revendiqué trois victimes le même jour, le 20 janvier : Paltrack, un éditeur de logiciels logistiques pour l'agroalimentaire ; Rola Motor Group, un réseau de concessions et distribution automobile ; et Witzenberg Municipality, une entité de gouvernement local du Cap-Occidental. La concentration de trois revendications en une seule journée suggère un ciblage coordonné sur des secteurs distincts. Une quatrième victime, Hytec South Africa, spécialisée dans l'ingénierie hydraulique et mécanique, a été revendiquée par l'acteur malveillant vect. Le gouvernement local et la chaîne d'approvisionnement industrielle représentent un profil d'exposition récurrent pour l'Afrique du Sud.
-
----
-
-### 🇰🇪 Kenya (4 incidents : 4 ransomwares)
-
-Le Kenya enregistre le score le plus élevé en janvier avec quatre revendications ransomware, toutes visant des institutions publiques ou parapubliques. L'acteur malveillant blackshrantac a revendiqué la National Water Authority le 8 janvier, service d'utilité critique responsable de la gestion des ressources en eau. Le 20 janvier, l'acteur malveillant thegentlemen a revendiqué CPF Financial Services, gestionnaire de fonds de retraite et de capitaux, tandis que l'acteur malveillant devman a revendiqué le NSSF, le fonds national de sécurité sociale, faisant du 20 janvier la journée la plus chargée du mois. L'acteur malveillant tengu a ensuite revendiqué NAMICO, la National Mining Corporation, le 26 janvier. La diversité des secteurs touchés, tous publics ou parapublics, reflète un ciblage délibéré des institutions liées au gouvernement kenyan.
-
----
-
-### 🇪🇬 Égypte (3 incidents : 3 ransomwares)
-
-L'Égypte enregistre trois revendications ransomware issues de trois acteurs distincts opérant dans des secteurs différents. L'acteur malveillant thegentlemen a revendiqué Real Tech, une société de technologie et de sécurité informatique, le 11 janvier. L'acteur malveillant direwolf a revendiqué Tepco-Group, un bureau d'ingénierie électrique, le 13 janvier. L'acteur malveillant tengu a revendiqué skyegtours.com, une plateforme de tourisme et de voyages, le 27 janvier. La dispersion des secteurs et des acteurs suggère un ciblage opportuniste plutôt qu'une campagne coordonnée spécifiquement contre l'Égypte.
-
----
-
-### 🇲🇦 Maroc (2 incidents : 1 ransomware, 1 fuite de données)
-
-Le Maroc est touché par deux types d'incidents distincts en janvier. L'acteur malveillant tengu a revendiqué Nafae Sanitaire, une entreprise de fournitures en construction et plomberie, le 17 janvier. L'acteur malveillant skra1a a publié une base de données aviation issue d'AOM Aviation Group (Air Ocean Maroc) le 31 janvier, exposant des données opérationnelles et de l'aviation civile sur le dark web. L'exposition des données du secteur aérien est notable compte tenu de la sensibilité des données opérationnelles et passagers.
-
----
-
-### 🇹🇬 Togo (1 incident : vente d'accès)
-
-L'acteur malveillant Bigbrother, opérant en tant qu'Initial Access Broker, a revendiqué de nouveaux accès à des plateformes gouvernementales togolaises le 3 janvier. Cela fait suite à une première revendication d'accès à l'infrastructure gouv.tg en septembre 2025. Le ciblage répété de la même entité gouvernementale par le même IAB indique un accès persistant et un risque d'escalade : un accès non vendu ou non corrigé peut être exploité pour des opérations ransomware, d'espionnage ou destructrices.
-
----
-
-### 🇳🇪 Niger (1 incident : défacement)
-
-Le 4 janvier, sept sites gouvernementaux nigériens ou plus ont été simultanément défacés, affichant un message à caractère politique identique. La nature coordonnée sur plusieurs domaines (ANSI, MAGEL, urbanisme, industrie, promotion de la femme) indique soit une vulnérabilité commune dans l'infrastructure d'hébergement partagé, soit une opération d'accès coordonnée. L'attaque n'a pas été revendiquée, ce qui est inhabituel pour les défacements hacktivistes, et pourrait suggérer un acteur à motivation politique évitant l'attribution.
-
----
-
-### 🇸🇳 Sénégal (1 incident : fuite de données)
-
-PixPay, une plateforme de paiement mobile sénégalaise, a vu sa base de données financières publiée par l'acteur malveillant breach3d le 16 janvier. L'exposition de données de paiement mobile crée des risques directs de fraude, de prise de contrôle de comptes et de phishing ciblé contre les utilisateurs.
-
----
-
-### 🇲🇿 Mozambique (1 incident : ransomware)
-
-CFM Mozambique, l'autorité nationale des chemins de fer et des ports, a été revendiquée par l'acteur malveillant Qilin le 16 janvier. Cibler des infrastructures de transport nationales fait peser des risques sur la logistique de la chaîne d'approvisionnement et les opérations portuaires.
-
----
-
-### 🇹🇿 Tanzanie (1 incident : ransomware)
-
-CCBRT, une ONG de santé fournissant des services de réhabilitation spécialisée, a été revendiquée par l'acteur malveillant benzona le 17 janvier. Les ONG de santé représentent une catégorie spécifique : budgets de cybersécurité limités, données patients sensibles, et communications partenaires et donateurs de valeur opérationnelle.
-
----
-
-### 🇲🇺 Maurice (1 incident : ransomware)
-
-Rogers Capital, prestataire de services financiers et technologiques, a été revendiquée par l'acteur malveillant thegentlemen le 14 janvier. Les prestataires de services financiers dans les économies insulaires servent souvent de hubs pour les flux de capitaux régionaux, ce qui augmente la sensibilité des données.
-
----
-
-### 🇩🇿 Algérie (1 incident : ransomware)
-
-Tahkout Group, important conglomérat industriel impliqué dans l'assemblage automobile et le transport, a été revendiqué par l'acteur malveillant tengu le 28 janvier. L'empreinte industrielle étendue du groupe amplifie l'impact potentiel de toute compromission opérationnelle.
-
----
-
-### 🇹🇳 Tunisie (1 incident : ransomware)
-
-FRUIT-BONTÉ, entreprise agroalimentaire et de transformation fruitière, a été revendiquée par l'acteur malveillant tengu le 27 janvier. Le secteur agroalimentaire en Afrique du Nord est de plus en plus ciblé, indiquant que les groupes ransomwares s'étendent au-delà des secteurs traditionnels.
+- **Concentration :** l’Afrique du Sud et le Kenya comptent 4 incidents chacun, suivis de l’Égypte avec 3. Ces trois pays représentent 11 des 21 incidents.
+- **Activité ransomware :** 17 revendications ont été recensées. TheGentlemen représente 6 incidents et tengu 5, avec une activité répartie dans plusieurs régions.
+- **Autres types d’incidents :** le mois comprend également deux fuites de données, une vente d’accès visant des infrastructures gouvernementales togolaises et un défacement coordonné de sites gouvernementaux nigériens.
+- **Exposition notable :** les publications concernant PixPay et AOM Aviation portent sur des données financières et aéronautiques, avec une portée et un impact limités aux éléments disponibles dans les sources.
 
 ---
 
@@ -254,13 +189,13 @@ FRUIT-BONTÉ, entreprise agroalimentaire et de transformation fruitière, a ét�
 
 ```mermaid
 pie
- title Répartition sectorielle (janvier 2026)
+ title Repartition sectorielle - janvier 2026
  "Gouvernement (4)" : 4
  "Finance (4)" : 4
  "Transport (3)" : 3
  "Industrie (3)" : 3
  "Technologie (2)" : 2
- "Santé (1)" : 1
+ "Sante (1)" : 1
  "Mines (1)" : 1
  "Agroalimentaire (1)" : 1
  "Tourisme (1)" : 1
@@ -315,27 +250,21 @@ pie
 
 ### Lacunes
 
-- La plupart des revendications ransomware restent non vérifiées ; aucune confirmation publique des victimes.
 - Les attaquants du défacement nigérien restent non attribués.
 - L'acheteur de l'accès Bigbrother et la nature de l'accès exploité sont inconnus.
 - Les volumes réels de données dans les incidents de fuite n'ont pas été vérifiés de manière indépendante.
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
-| Incident | Techniques |
-|----------|-----------|
-| Défacement Niger | T1190 - Exploitation d'application web, T1491 - Défacement |
-| Bigbrother/Togo | T1078 - Comptes valides, T1650 - Acquisition d'accès |
-| PixPay | T1005 - Données du système local, T1041 - Exfiltration |
-| AOM Aviation | T1005 - Données du système local, T1041 - Exfiltration |
-| Ransomware général | T1486 - Chiffrement, T1490 - Inhibition de la récupération système |
+| Phase | Technique | Portée analytique |
+| :--- | :--- | :--- |
+| Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
+| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
+| Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
+| Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
 
-**Techniques couramment observées :**
-- T1566 - Phishing (vecteur initial probable pour la majorité des ransomwares)
-- T1190 - Exploitation d'application web
-- T1078 - Comptes valides (activité IAB Togo)
-- T1486 - Ransomware (17 incidents)
-- T1491 - Défacement (Niger)
+> Ces techniques constituent des hypothèses défensives. Une revendication, une vente de données ou une publication sur un site de fuite ne suffit pas à les considérer comme observées.
 
 ## 10. Recommandations
 
