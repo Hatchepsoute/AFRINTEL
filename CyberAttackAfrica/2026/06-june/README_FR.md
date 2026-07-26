@@ -83,7 +83,7 @@ Principales conclusions :
 
 ```mermaid
 pie showData
- title Répartition des occurrences par pays - Juin 2026
+ title Répartition par pays - Juin 2026
  "Maroc" : 10
  "Afrique du Sud" : 6
  "Égypte" : 6
