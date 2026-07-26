@@ -10,13 +10,9 @@
 
 ## 1. Synthèse exécutive
 
-Février 2026 enregistre **20 incidents cyber** publiquement revendiqués ou détectés à travers l'Afrique, tous attribués à des groupes ransomwares ou d'extorsion de données. Le mois est marqué par la divulgation de données de la DAF SÉNÉGAL (Direction de l'Administration Générale et de l'Équipement). AFRINTEL a consulté les données publiées, qui comprennent notamment des informations citoyennes et des éléments biométriques. L'acteur annonce un volume de 139 To, mais les éléments accessibles ne permettent pas de mesurer ce volume. Points clés :
-118c- **Divulgation DAF Sénégal :** AFRINTEL a consulté les données publiées. Leur contenu est sensible et comprend notamment des informations citoyennes et des éléments biométriques. Le volume de 139 To est celui annoncé par l'acteur et ne peut pas être mesuré à partir des éléments accessibles.
-187c- La divulgation DAF Sénégal concerne des données gouvernementales sensibles, dont des éléments biométriques, et représente un impact de niveau 4.
-207c- **The Green Blood Group** : Première apparition AFRINTEL. L'acteur a publié des données de la DAF Sénégal et annonce un volume de 139 To. Ce volume n'a pas pu être mesuré par AFRINTEL.
-226c1. **DAF Sénégal - divulgation de données gouvernementales sensibles** : AFRINTEL a consulté les données publiées, qui comprennent notamment des informations citoyennes et des éléments biométriques. Cette divulgation marque une escalade significative des attaques contre les administrations ouest-africaines. Le volume de 139 To reste la valeur annoncée par l'acteur et ne peut pas être mesuré à partir des éléments accessibles.
-234c- Le volume total des données publiées par The Green Blood Group n'a pas pu être mesuré. La valeur de 139 To provient de l'annonce de l'acteur.
-293cFévrier 2026 est avant tout marqué par la divulgation de données citoyennes et biométriques de la DAF Sénégal. AFRINTEL a consulté les données publiées et retient leur sensibilité comme le principal élément d'impact. Le volume de 139 To correspond à la valeur annoncée par l'acteur, sans possibilité de le mesurer à partir des éléments accessibles. Au-delà de ce cas, le mois présente un paysage de menaces large et diversifié : 14 pays, 11 acteurs, et une intensité particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. thegentlemen, LockBit 5.0 et 0APT ont maintenu un rythme opérationnel élevé pendant la période observée.
+Février 2026 compte **20 incidents cyber** recensés dans **14 pays africains**, tous attribués à des groupes ransomware ou d'extorsion de données. Le fait marquant est la publication
+de données sensibles attribuées à la **DAF Sénégal**, comprenant des informations citoyennes et biométriques consultées par AFRINTEL. Le volume de **139 To** est revendiqué par
+l'acteur, mais n'a pas pu être mesuré à partir des éléments accessibles. Points clés :
 
 - **20 incidents ransomware / extorsion de données (100 %)**.
 - **14 pays** touchés : l'**Afrique du Sud** (3), l'**Égypte** (3), le **Ghana** (2) et le **Nigeria** (2) en tête.
