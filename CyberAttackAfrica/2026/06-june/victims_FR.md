@@ -182,10 +182,10 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Site web :** Non applicable (document militaire interne)
 
 - **Description :**
-  Publication d'une instruction de mise en garde ("Warning Instruction") classifiée de l'Armée sud-africaine, datée du 6 août 2022, préparant les forces d'infanterie à un déploiement en soutien de la police sud-africaine (SAPS) pour faire face aux troubles civils. Le document, authentifié par le Major Général P.N. Dube (GOC SA Army Infantry Formation), détaille les préparatifs opérationnels. Informations exposées :
+  Publication d'une instruction de mise en garde ("Warning Instruction") classifiée attribuée à l'Armée sud-africaine, datée du 6 août 2022, préparant les forces d'infanterie à un déploiement en soutien de la police sud-africaine (SAPS) pour faire face aux troubles civils. Le document identifie des responsables militaires et détaille les préparatifs opérationnels. Informations exposées :
   - **Instructions opérationnelles complètes :** plan de déploiement, mise en alerte de 25 heures, logement de 200 soldats, équipement de maintien de l'ordre.
   - **Chiffres et effectifs :** 100 soldats formés au contrôle des foules à déployer, 100 conducteurs de véhicules blindés Mamba.
-  - **Chaîne de commandement :** noms, grades et coordonnées (téléphones, emails, numéros SSN) des officiers supérieurs impliqués, dont le Major Général P.N. Dube, le Colonel M.S. Rampai, le Colonel H.E. Maleka, le Lt Col B.I. Taimane.
+  - **Chaîne de commandement :** noms, grades et coordonnées d'officiers supérieurs identifiables. AFRINTEL omet volontairement les noms et coordonnées individuels.
   - **Calendrier et logistique :** dates précises de préparation, mouvements de troupes, besoins en équipement (matelas, transport) et procédures de soumission des listes d'effectifs.
   - **Cadre juridique :** références aux lois sud-africaines (Constitution, Defence Act) et directives opérationnelles (Op CORONA).
 
@@ -230,10 +230,10 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   - **Table `incidents`** : 37 tickets de support avec descriptions détaillées des problèmes techniques rencontrés par les clients.
   - **Table `registrations`** : liens entre clients et produits (logiciels de gestion sportive) avec dates d'enregistrement.
   - **Tables `products` et `countries`** : listes de produits et codes pays.
-  - **Table `administrators`** : 2 comptes administrateurs (admin, joel) avec mots de passe en clair.
+  - **Table `administrators`** : 2 comptes administrateurs nommés avec mots de passe en clair. AFRINTEL omet volontairement les noms des comptes.
 
 - **Analyse :**
-  La présence de mots de passe en clair dans toutes les tables constitue une faille de sécurité critique. Les données personnelles (noms, adresses, emails, téléphones) exposent les clients et techniciens à des risques d'usurpation d'identité, de phishing ciblé et d'attaques par force brute sur d'autres comptes utilisant les mêmes identifiants. Les descriptions d'incidents peuvent révéler des vulnérabilités logicielles internes. La compromission des comptes administrateurs (`admin`, `joel`) permet un accès total au système, menaçant l'intégrité du support technique de l'université. Bien que la base soit de petite taille (21 ko), elle est représentative d'un système réel avec des données authentiques, ce qui en fait une cible de choix pour des attaques ultérieures.
+  La présence de mots de passe en clair dans toutes les tables constitue une faille de sécurité critique. Les données personnelles (noms, adresses, emails, téléphones) exposent les clients et techniciens à des risques d'usurpation d'identité, de phishing ciblé et de réutilisation d'identifiants. Les descriptions d'incidents peuvent révéler des faiblesses logicielles internes. Si les identifiants administrateurs publiés étaient valides au moment de l'exposition, ils auraient pu permettre un accès non autorisé au système de support technique. Bien que la base soit de petite taille (21 ko), la structure et les enregistrements observés justifient une remédiation sans qu'AFRINTEL reproduise les identifiants de comptes.
 ---
 ### 13 Juin 2026
 #### 🇳🇬 Nigeria - National Institute for Legislative and Democratic Studies (NILDS) / National Assembly of Nigeria

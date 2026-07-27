@@ -181,10 +181,10 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Website:** Not applicable (internal military document)
 
 - **Description:**
-  Publication of a classified "Warning Instruction" from the South African Army, dated 6 August 2022, preparing infantry forces for deployment in support of the South African Police Service (SAPS) to address civil unrest. The document, authenticated by Major General P.N. Dube (GOC SA Army Infantry Formation), details operational preparations. Exposed information includes:
+  Publication of a classified "Warning Instruction" attributed to the South African Army, dated 6 August 2022, preparing infantry forces for deployment in support of the South African Police Service (SAPS) to address civil unrest. The document identifies senior military personnel and details operational preparations. Exposed information includes:
   - **Complete operational instructions:** deployment plan, 25-hour standby alert, accommodation for 200 soldiers, crowd control equipment.
   - **Troop numbers and assets:** 100 crowd-control trained soldiers to be deployed, 100 Mamba armoured vehicle drivers.
-  - **Command structure:** names, ranks and contact details (phone numbers, emails, SSNs) of senior officers involved, including Major General P.N. Dube, Colonel M.S. Rampai, Colonel H.E. Maleka, Lt Col B.I. Taimane.
+  - **Command structure:** names, ranks and contact details of identifiable senior officers. Individual names and contact details are intentionally omitted by AFRINTEL.
   - **Timeline and logistics:** specific preparation dates, troop movements, equipment requirements (mattresses, transport) and personnel list submission procedures.
   - **Legal framework:** references to South African laws (Constitution, Defence Act) and operational directives (Op CORONA).
 
@@ -229,10 +229,10 @@ The consistency and volume of the files strengthen the credibility of a data exf
   - **`incidents` table:** 37 support tickets with detailed descriptions of technical issues encountered by customers.
   - **`registrations` table:** links between customers and products (sports management software) with registration dates.
   - **`products` and `countries` tables:** product lists and country codes.
-  - **`administrators` table:** 2 administrator accounts (admin, joel) with passwords in plain text.
+  - **`administrators` table:** 2 named administrator accounts with passwords in plain text. Account names are intentionally omitted by AFRINTEL.
 
 - **Analysis:**
-  The presence of plain-text passwords across all tables constitutes a critical security flaw. The personal data (names, addresses, emails, phone numbers) exposes customers and technicians to identity theft, targeted phishing and brute-force attacks on other accounts using the same credentials. Incident descriptions may reveal internal software vulnerabilities. The compromise of administrator accounts (`admin`, `joel`) allows full system access, threatening the integrity of the university's technical support. Although the database is small (21 KB), it is representative of a real system with authentic data, making it a prime target for further attacks.
+  The presence of plain-text passwords across all tables constitutes a critical security flaw. The personal data (names, addresses, emails, phone numbers) exposes customers and technicians to identity theft, targeted phishing and credential-reuse attacks. Incident descriptions may reveal internal software weaknesses. If the published administrator credentials were valid at the time of exposure, they could have enabled unauthorized access to the technical support system. Although the database is small (21 KB), the observed structure and records warrant remediation without requiring AFRINTEL to reproduce account identifiers.
 ---
 ### June 13, 2026
 #### 🇳🇬 Nigeria - National Institute for Legislative and Democratic Studies (NILDS) / National Assembly of Nigeria

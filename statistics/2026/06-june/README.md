@@ -195,11 +195,11 @@ xychart-beta
 
 | Sector | Incidents | Percentage |
 |---|---:|---:|
-| Government / Administration / Defense | 12 | 30.0% |
-| Finance / Banking / Insurance | 6 | 15.0% |
-| Education | 4 | 10.0% |
+| Government / Administration | 12 | 30.0% |
+| Finance / Banking | 6 | 15.0% |
+| Education / University | 4 | 10.0% |
 | E-commerce / Retail | 4 | 10.0% |
-| Healthcare | 3 | 7.5% |
+| Healthcare / Medical | 3 | 7.5% |
 | Others | 11 | 27.5% |
 | **Total** | **40** | **100%** |
 
@@ -244,11 +244,11 @@ Morocco recorded **9 incidents**, its highest monthly total in 2026, of which **
 
 ### 7.2 Ransomware regains ground
 
-Ransomware reached **50% of incidents (20/40)**, up from 28.1% in May. The escalation is driven by geographic spread rather than concentration: DeadLock hit 4 countries, LockBit 5 hit 3 countries in a single week (June 18), and South Africa alone recorded 4 ransomware claims.
+Ransomware listings reached **50% of incidents (20/40)**, up from 28.1% in the [May victim dataset](../../../CyberAttackAfrica/2026/05-may/victims.md). One month is insufficient to establish a durable change in actor behaviour, but the geographic spread of DeadLock and LockBit 5 warrants monitoring.
 
-### 7.3 Fintech as the softest target in the region
+### 7.3 High-sensitivity fintech exposure
 
-The analysed Jeroid.co material (Nigeria) indicates the exposure of 312,433 users, 110,282 BVN, 64,300 NIN and 70,956 biometric photos through an unauthenticated public S3 bucket. The initial access vector remains unknown, and it remains the most severe single data exposure of the month.
+The analysed Jeroid.co material suggests exposure involving the volumes claimed by the actor, including 312,433 users and 70,956 biometric photos, through an unauthenticated S3 bucket. AFRINTEL does not confirm the complete claimed dataset or the initial access vector.
 
 ### 7.4 Military and defense credential hygiene
 
@@ -281,6 +281,6 @@ The same actor, EvaN47, targeted the Ministry of Technical and Vocational Educat
 
 ## 9. Conclusion
 
-June 2026 recorded **40 incidents** affecting **20 distinct countries** (14 with direct incidents, 6 additional via the Convince and Governor credential-sale schemes). Ransomware reached parity with data leaks for the first time in 2026, a genuine escalation rather than statistical noise. Morocco absorbed nearly a quarter of all incidents, almost entirely due to the anisanas2 cluster now in its third consecutive month of activity with no visible containment. The reported Jeroid.co fintech exposure and the Nigerian Army credential leak stand out as the month's most severe individual incidents, one a potentially severe cloud-storage control failure, the other a national-security failure.
+June 2026 recorded **40 incidents** affecting **20 distinct countries** when direct incidents and multi-country exposures are combined. Ransomware listings reached parity with data leaks and access sales. Morocco accounted for 9 direct incident records, while publications attributed to anisanas2 continued for a third month; coordination and initial access paths remain unknown. The claimed Jeroid.co exposure and Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

@@ -10,16 +10,16 @@
 
 ## 1. Executive summary
 
-June 2026 recorded **40 publicly claimed cyber incidents** across Africa: **20 ransomware attacks (50%)** and **20 data leaks / access sales (50%)**. This is a sharp shift from May 2026, when ransomware accounted for only 28% of incidents. Volume dropped from 57 to 40 incidents, but the risk profile did not soften: this month includes one of the worst fintech biometric exposures documented on the continent, a plaintext credential leak from a national army's webmail domain, and a sustained single-actor campaign against Morocco that has now run for three consecutive months without any visible law enforcement disruption.
+June 2026 recorded **40 publicly reported or claimed cyber incidents** across Africa: **20 ransomware listings or disclosures (50%)** and **20 data leaks / access sales (50%)**. This is a marked shift from May 2026, when ransomware represented 28.1% of the 57 incidents recorded in the [May victim dataset](../05-may/victims.md). June includes a high-sensitivity claimed fintech biometric exposure, a publication of plaintext credentials attributed to a national army's webmail domain, and a three-month sequence of publications attributed to the same actor cluster against Moroccan organizations.
 
 Key findings:
-- **20 ransomware attacks (50%)** and **20 data leaks / access sales (50%)**, an unusually even split and a real escalation of ransomware activity compared to May.
+- **20 ransomware listings or disclosures (50%)** and **20 data leaks / access sales (50%)**, an even split and a higher ransomware share than in May.
 - **14 countries** directly affected, plus **6 additional countries** exposed only through two multi-country credential-sale schemes (Ethiopia, Angola, Zambia, Malawi, Algeria, Sierra Leone), for **20 African countries** touched overall.
-- **Morocco (9 incidents)** is the most targeted country of the month, almost entirely driven by a single actor cluster, **anisanas2**, which hit 7 different Moroccan organizations across education, logistics, mining, e-commerce and automotive. This is the same cluster flagged in the May 2026 report; three months in, there is still no sign the campaign has been contained.
-- **Jeroid.co (Nigeria), threat actor burti:** 312,433 users, 110,282 BVN, 64,300 NIN and 70,956 biometric face-verification photos exposed on an unauthenticated public S3 bucket, sold for $2,000. The analysed material indicates a severe KYC data exposure; the initial access vector remains unknown.
-- **Nigerian Army (army.mil.ng):** plaintext webmail credentials for 20+ military accounts, including access to a satellite imagery portal (DigitalGlobe). This is the single most serious national-security incident of the month and deserves to be treated as one, not filed as "another leak."
-- **BRELA (Tanzania):** 10.2 million records covering 8 million people, the largest single dataset recorded this month, exposing the country's entire business registration and taxpayer ecosystem.
-- **Two ministries in Libya** (Technical and Vocational Education, then Education) were hit by the same actor, EvaN47, in the final two days of the month, a pattern worth watching into July.
+- **Morocco (9 direct incidents)** is the most represented country of the month. Seven publications are attributed to **anisanas2** across education, logistics, mining, e-commerce and automotive. The same cluster also appeared in AFRINTEL records for April and May 2026; whether the underlying events form one coordinated operation remains unknown.
+- **Jeroid.co (Nigeria), source actor burti:** the actor claimed a dataset covering 312,433 users, 110,282 BVN, 64,300 NIN and 70,956 biometric face-verification photos, offered for $2,000. The analysed material suggests that KYC data was accessible through an unauthenticated S3 bucket; AFRINTEL does not confirm the full claimed volume or the initial access vector.
+- **Nigerian Army (army.mil.ng):** published material reportedly included plaintext webmail credentials for more than 20 military accounts and credentials associated with a satellite imagery portal. If valid at the time of observation, the material presented a high national-security risk.
+- **BRELA (Tanzania):** the actor claimed 10.2 million records covering 8 million people, the largest claimed dataset volume recorded this month. The complete scope was not independently confirmed.
+- **Two Libyan ministries** were the subject of consecutive publications attributed to EvaN47 on June 29 and 30. This temporal pattern warrants monitoring but does not by itself establish a coordinated campaign.
 
 
 ### Victim list
@@ -83,7 +83,7 @@ Key findings:
 
 ```mermaid
 pie showData
- title Number of victims by country - June 2026
+ title Geographic occurrences by country - June 2026
  "Morocco" : 10
  "South Africa" : 6
  "Egypt" : 6
@@ -197,22 +197,22 @@ pie showData
 
 | Activity sector | Incidents | Share (%) | Chart |
 | :--- | :---: | :---: | :--- |
-| **Government / Administration / Defense** | **12** | 30.0% | ████████████ |
-| **Finance / Banking / Insurance** | **6** | 15.0% | ██████ |
-| **Education** | **4** | 10.0% | ████ |
+| **Government / Administration** | **12** | 30.0% | ████████████ |
+| **Finance / Banking** | **6** | 15.0% | ██████ |
+| **Education / University** | **4** | 10.0% | ████ |
 | **E-commerce / Retail** | **4** | 10.0% | ████ |
-| **Healthcare** | **3** | 7.5% | ███ |
+| **Healthcare / Medical** | **3** | 7.5% | ███ |
 | **Others** | **11** | 27.5% | ███████████ |
 | **Total** | **40** | **100%** | |
 
 ```mermaid
 pie showData
  title Sector distribution - June 2026
- "Government / Administration / Defense" : 12
- "Finance / Banking / Insurance" : 6
- "Education" : 4
+ "Government / Administration" : 12
+ "Finance / Banking" : 6
+ "Education / University" : 4
  "E-commerce / Retail" : 4
- "Healthcare" : 3
+ "Healthcare / Medical" : 3
  "Others" : 11
 ```
 
@@ -302,7 +302,7 @@ pie showData
 **Key observations:**
 - **anisanas2** alone accounts for 35% of all data leaks/sales this month (7 of 20), all in Morocco. No other actor comes close to that concentration.
 - Nigeria's three leaks span three completely different threat models in one month: a fintech biometric exposure (Jeroid.co), a hacktivist parliamentary leak (NILDS), and a plaintext military credential dump (army.mil.ng). That range, in a single country in four weeks, says more about the breadth of Nigeria's exposed attack surface than any single incident does.
-- **EvaN47** hitting two Libyan education ministries on consecutive days (June 29-30) is the clearest coordinated-campaign signal of the month; it should be tracked into July.
+- Two consecutive publications attributed to **EvaN47** concerned Libyan education ministries on June 29-30. This is a monitoring lead; the available material does not establish coordination beyond the shared actor attribution and timing.
 - The **Convince** and **Governor** listings together expose government or police credentials representing 15 country mentions across 11 African countries. Neither incident is a "leak" in the traditional sense, both are commercial products built specifically to defraud Meta, Google, TikTok and X into handing over user data under false legal pretenses.
 
 ---
@@ -311,15 +311,15 @@ pie showData
 
 | Activity sector | Incidents | Share (%) | Visual impact |
 | :--- | :---: | :---: | :--- |
-| **Government / Administration / Defense** | **12** | 30.0% | ████████████ |
-| **Finance / Banking / Insurance** | **6** | 15.0% | ██████ |
-| **Education** | **4** | 10.0% | ████ |
+| **Government / Administration** | **12** | 30.0% | ████████████ |
+| **Finance / Banking** | **6** | 15.0% | ██████ |
+| **Education / University** | **4** | 10.0% | ████ |
 | **E-commerce / Retail** | **4** | 10.0% | ████ |
-| **Healthcare** | **3** | 7.5% | ███ |
+| **Healthcare / Medical** | **3** | 7.5% | ███ |
 | **Others** | **11** | 27.5% | ███████████ |
 
 **Key observations:**
-- **Government dominance persists:** the public sector (Government/Administration/Defense) accounts for 30.0% of June incidents, essentially matching May's 29.8%. This is the third consecutive month where African state infrastructure is the single most targeted category on the continent, and there is no sign in the public record of a coordinated continental response.
+- **Public-sector prominence persists:** Government / Administration accounts for 30.0% of June incidents, close to the 29.8% recorded in the [May victim dataset](../05-may/victims.md). It remains the largest sector category in AFRINTEL's June dataset.
 - **Finance jumps to second place:** six incidents (Jeroid.co, Finam Gabon, Fidelity Pension Managers, First Mutual Holdings, Central Bank of Libya, MUPRAS RAM) reflect sustained interest in financial and insurance targets, from central banks to microfinance institutions.
 - **Two national-security-grade incidents this month:** the SANDF classified document leak and the Nigerian Army credential dump both fall under Government/Defense and both involve direct exposure of military personnel and operational data, an unusually severe pairing for a single month.
 - **Healthcare and education remain steady mid-tier targets** (7.5% and 10.0% respectively), consistent with prior months, no major escalation observed.
@@ -363,10 +363,10 @@ pie showData
 
 ### Trends
 
-1. **Ransomware regained ground:** a 50/50 split with data leaks marks a clear escalation from May's 28/72 split. This is not noise, it is a real shift in actor behavior, driven mainly by wide geographic spread (DeadLock, LockBit 5) rather than concentration in one country.
-2. **Morocco's unresolved campaign:** anisanas2 has now been active against Moroccan targets for three straight months (April, May, June), hitting at least ten organizations across unrelated sectors. Left unaddressed, this is starting to look less like opportunistic crime and more like a standing operation with a reliable pipeline of Moroccan targets.
-3. **Fintech remains the softest target in the region:** Jeroid.co's allegedly unauthenticated S3 exposure, if confirmed by the observed evidence, represents a severe cloud-storage control failure. This should not still be happening in mid-2026.
-4. **Military and defense credential hygiene is a live problem:** the Nigerian Army plaintext webmail leak and the SANDF classified document leak both point to the same underlying issue, personal accounts and old documents sitting unmanaged long after they should have been rotated or archived securely.
+1. **Ransomware regained ground:** the 50/50 split is higher than May's 28.1/71.9 split. One month is insufficient to establish a durable change in actor behaviour, but the geographic spread of DeadLock and LockBit 5 warrants monitoring.
+2. **Repeated Morocco-focused activity:** publications attributed to anisanas2 appear across April, May and June. The continuity is observed; a coordinated standing operation remains an analytical hypothesis.
+3. **High-sensitivity fintech exposure:** the Jeroid.co material suggests a serious cloud-storage control failure involving KYC data. The full volume and initial access vector remain unconfirmed.
+4. **Military and defense credential hygiene:** the Nigerian Army credential publication and SANDF document publication demonstrate exposure of sensitive material. The underlying compromise paths and document-lifecycle failures remain unknown.
 5. **Law-enforcement impersonation-as-a-service is consolidating:** Convince and Governor are running two tiers of the same business (raw email addresses vs. fully authenticated portal accounts) across 15 country mentions spanning 11 African countries. This is a cross-border abuse vector that individual national CERTs cannot solve alone; it needs direct engagement with Meta, Google, TikTok and X.
 6. **Libya's education sector may be entering a sustained campaign:** two ministries hit by the same actor on back-to-back days is the strongest early-campaign signal of the month.
 
@@ -381,18 +381,20 @@ pie showData
 
 ## 8. MITRE ATT&CK mapping (contextual)
 
+The following techniques are defensive hypotheses derived from the exposed material. They do not establish the intrusion path unless the source explicitly described the collection method.
+
 | Phase | Technique ID | Technique name | Context |
 | :--- | :---: | :--- | :--- |
-| **Initial Access** | **T1078** | Valid Accounts | Government/police email and portal credentials sold by Convince and Governor; Nigerian Army webmail accounts |
-| **Credential Access** | **T1552.001** | Unsecured Credentials in Files | UNISA plaintext passwords, Nigerian Army plaintext webmail passwords |
-| **Credential Access** | **T1555.003** | Credentials from Web Browsers | Nigerian Army credentials captured from Chrome/Edge stores |
-| **Collection** | **T1213** | Data from Information Repositories | NILDS parliamentary database, unidentified startup management platform documents |
-| **Exfiltration** | **T1530** | Data from Cloud Storage Object | Jeroid.co publicly accessible S3 storage observed in the source material (biometric photos, KYC documents) |
-| **Reconnaissance** | **T1596** | Search Open Websites/Domains | Avito.ma listing scrape (no evidence of internal system access) |
+| **Initial Access** | **T1078** | Valid Accounts | Defensive hypothesis for the government and police portal credentials offered by Convince and Governor; use of the credentials was not observed |
+| **Credential Access** | **T1552.001** | Unsecured Credentials: Credentials In Files | Contextually relevant to the plaintext credentials reported in the UNISA and Nigerian Army material |
+| **Credential Access** | **T1555.003** | Credentials from Password Stores: Credentials from Web Browsers | The Nigerian Army card states that credentials were captured from Chrome and Edge browser stores |
+| **Collection** | **T1213** | Data from Information Repositories | Possible collection context for the NILDS database and startup-platform documents; the acquisition path is unknown |
+| **Collection** | **T1530** | Data from Cloud Storage Object | The Jeroid.co material suggests access to KYC objects in an unauthenticated S3 bucket; full scope remains unconfirmed |
+| **Reconnaissance** | **T1593** | Search Open Websites/Domains | Context for the Avito.ma listing scrape; no evidence of access to internal systems |
 
 > Common cross-campaign techniques:
 > - **T1078** - Valid Accounts (credential theft, portal-access sales, satellite imagery portal access)
-> - **T1530** - Data from Cloud Storage Object (unauthenticated S3 buckets, the single most preventable failure mode this month)
+> - **T1530** - Data from Cloud Storage Object (defensive hypothesis for exposed cloud objects)
 > - **T1552 / T1555** - Unsecured or browser-stored credentials (government and university systems)
 
 ---
@@ -402,7 +404,7 @@ pie showData
 - **Fintech and crypto platforms:** audit every cloud storage bucket holding KYC or biometric data today, not after the next incident. Jeroid.co's reported exposure is a control-failure scenario every African fintech should test itself against immediately.
 - **Governments and defense ministries:** rotate all credentials tied to .gov, .mil and .ac domains as a standing policy, not a reactive one. The Nigerian Army webmail leak, with satellite imagery portal access attached, should have triggered emergency rotation the day it was found.
 - **Platform trust & safety teams (Meta, Google, TikTok, X):** treat the Convince and Governor listings as an active abuse campaign against your own EDR/subpoena process, not just an African CERT problem. Out-of-band verification for law-enforcement data requests is overdue.
-- **Moroccan organizations across all sectors:** anisanas2 has hit at least ten targets recorded from claims or analysed publications in three months with no visible interruption. A sector-wide advisory is warranted; waiting for individual notification is not working.
+- **Moroccan organizations across all sectors:** AFRINTEL recorded at least ten claims or analysed publications attributed to anisanas2 over three months. A sector-wide advisory and coordinated notification process are warranted.
 - **Education platforms:** harden CMS and WordPress deployments (Examens.tn's 717 MB dump is a familiar failure pattern); enforce session invalidation and credential rotation after any suspected compromise.
 - **Ransomware-targeted organizations generally:** assume double extortion by default. Krybit and DeadLock both followed through on data publication in this dataset after their deadlines passed.
 
@@ -410,7 +412,7 @@ pie showData
 
 ## 10. SOC tactical recommendations
 
-- **[T1530] Cloud storage exposure:** continuously scan for public S3/Blob buckets tied to organizational domains, with priority on fintech and KYC pipelines; this control class is relevant to the month's most severe reported leak.
+- **[T1530] Cloud storage exposure:** continuously scan for public S3/Blob buckets tied to organizational domains, with priority on fintech and KYC pipelines; this control class is relevant to the high-sensitivity reported exposure.
 - **[T1552 / T1555] Credential hygiene:** monitor infostealer logs and browser-credential dumps for entries tied to .gov, .mil and .ac domains; the Nigerian Army leak was pulled directly from Chrome/Edge credential stores.
 - **[T1078] Portal-access abuse:** any organization with legal authority to file EDR or subpoena requests with major platforms should require out-of-band verification for every such request, not rely on the requester's email domain alone.
 - **[T1486] Ransomware tracking:** monitor DeadLock, LockBit 5, Krybit, Nightspire and Qilin leak sites for early listing of new African targets; deploy honeytoken files on shared drives in high-risk sectors (government, finance).
@@ -430,7 +432,7 @@ pie showData
 
 ## 12. Conclusion
 
-June 2026 recorded fewer incidents than May (40 versus 57), but volume is the wrong metric to focus on this month. Ransomware reached parity with data leaks for the first time in 2026, a real escalation rather than statistical noise. Morocco absorbed nearly a quarter of all incidents, almost entirely due to one actor cluster that has remained active for three straight months, a pattern that deserves a coordinated response, not case-by-case handling. The Jeroid.co fintech breach and the Nigerian Army credential leak are the two most severe individual incidents of the month, one a claimed cloud-storage exposure with potentially severe reach, the other a national-security failure sitting inside a routine-looking data leak. Neither should be treated as ordinary.
+June 2026 recorded 40 incidents, compared with 57 in the [May victim dataset](../05-may/victims.md). Ransomware listings and disclosures reached parity with data leaks and access sales, while Morocco accounted for 9 of the 40 direct incident records. Publications attributed to anisanas2 continued for a third month, but their coordination and initial access paths remain unknown. The claimed Jeroid.co fintech exposure and the Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset and warrant prioritized defensive review.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)
