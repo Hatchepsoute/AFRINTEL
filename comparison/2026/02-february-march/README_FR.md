@@ -1,103 +1,52 @@
-# AFRINTEL - Analyse comparative des cybermenaces
+# Comparaison AFRINTEL : février et mars 2026
 
-👉🏾 [English version available here](README.md)
+👉🏾 [English version](README.md)
 
-## Février vs Mars 2026 (Afrique)
+## Comparaison générale
 
-Ce rapport présente une analyse comparative CTI des incidents cyber affectant l’Afrique durant février et mars 2026.
+| Indicateur | Février | Mars | Évolution |
+|---|---:|---:|---:|
+| Total des incidents | 20 | 41 | +21 (+105,0 %) |
+| Ransomware | 20 | 19 | -1 (-5,0 %) |
+| Fuites de données et ventes d'accès | 0 | 22 | +22 |
+| Pays représentés | 14 | 14 | 0 |
 
----
+La hausse de mars provient entièrement des fuites de données et des ventes d'accès. Le volume de ransomware est resté proche de celui de février.
 
-# 📊 Comparaison générale
+## Évolution par pays
 
-| Indicateur | Février 2026 | Mars 2026 |
-|---|---|---|
-| Incidents | 20 | 48 |
-| Pays touchés | 13 | 14 |
-| Acteurs observés | 10 | 24+ |
-| Ransomware | dominant | élevé |
-| Fuites de données | limitées | explosion |
-| Incidents gouvernementaux | importants | très élevés |
+| Pays | Février | Mars | Évolution |
+|---|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 3 | 13 | +10 |
+| 🇪🇬 Égypte | 3 | 8 | +5 |
+| 🇲🇦 Maroc | 1 | 8 | +7 |
+| 🇳🇬 Nigeria | 2 | 2 | 0 |
+| 🇸🇳 Sénégal | 1 | 1 | 0 |
+| 🇹🇳 Tunisie | 1 | 1 | 0 |
 
----
+L'Afrique du Sud, le Maroc et l'Égypte représentent 29 des 41 fiches de mars.
 
-# 🌍 Répartition géographique
+## Évolution par secteur
 
-```mermaid
-flowchart LR
+En février, Government / Administration et Aviation comptaient 3 fiches chacun, suivis par Oil & Energy et Finance / Banking avec 2 fiches chacun. En mars, Government / Administration atteint 10 fiches, Education / University 7, Healthcare / Medical 4, puis Insurance, Telecommunications et Engineering / Construction 3 chacun.
 
-FEB["Février 2026
-20 incidents"]
+## Évolution des acteurs
 
-MAR["Mars 2026
-48 incidents"]
+TheGentlemen arrive en tête en février avec 5 fiches, suivi de 0APT avec 3 et LockBit 5.0 avec 3. Mars est dominé par CrowStealer avec 5 fiches, APT73/BASHE avec 4, XP_95 avec 3 et xNova avec 3.
 
-ZA["🇿🇦 Afrique du Sud"]
-EG["🇪🇬 Égypte"]
-MA["🇲🇦 Maroc"]
-SN["🇸🇳 Sénégal"]
-NG["🇳🇬 Nigeria"]
+## Évaluation CTI
 
-FEB --> ZA
-FEB --> EG
-FEB --> SN
-FEB --> NG
+La couverture géographique reste stable, mais la répartition des incidents évolue fortement. Mars combine un niveau de ransomware proche de février avec 22 fiches de fuite ou de vente d'accès. La surveillance doit donc couvrir les infrastructures d'extorsion ainsi que la réutilisation ou la vente de données et d'accès exposés.
 
-MAR --> ZA
-MAR --> EG
-MAR --> MA
-MAR --> NG
-```
+## Priorités SOC
 
----
+1. Surveiller les journaux d'identité, de VPN et d'accès privilégiés pour détecter les authentifications anormales.
+2. Détecter les transferts sortants volumineux et les créations inhabituelles d'archives.
+3. Maintenir une surveillance sectorielle des administrations publiques, de l'éducation et de la santé.
+4. Conserver les éléments permettant de rapprocher les publications ransomware des activités liées à la vente de données ou d'accès.
 
-# 📈 Volume d'incidents
+## Conclusion
 
-```mermaid
-xychart-beta
-title "Incidents cyber"
-x-axis ["Février","Mars"]
-y-axis "Incidents" 0 --> 55
-bar [20,48]
-```
+Mars compte 41 incidents contre 20 en février. La hausse provient des fuites de données et des ventes d'accès, tandis que le ransomware reste presque stable.
 
----
-
-# 🎯 Tendances CTI
-
-- Février 2026 reste dominé par le ransomware classique.
-- Mars 2026 montre une montée forte des fuites de données et intrusions.
-- Le Maroc devient un hotspot CTI majeur en mars.
-- Les opérations orientées exfiltration augmentent fortement.
-- Les secteurs gouvernement, santé et éducation deviennent prioritaires.
-
----
-
-# 🔥 Incidents majeurs
-
-## Février 2026
-
-- DAF Sénégal (139 To)
-- 0APT et disparition des leak sites
-- attaques aviation et énergie
-
-## Mars 2026
-
-- Smarteez / impact L’Oréal Maroc
-- opérations AuditTeam
-- multiplication des campagnes multi-pays
-
----
-
-# 🛡 Recommandations SOC
-
-- Surveiller les exfiltrations massives
-- Corréler authentifications privilégiées et trafic sortant
-- Renforcer MFA et segmentation réseau
-- Intensifier la veille CTI sur les leak sites
-
----
-
-# AFRINTEL
-
-TLP:CLEAR
+*AFRINTEL, Open African CTI Monitoring Initiative*

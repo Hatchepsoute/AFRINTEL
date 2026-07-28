@@ -26,7 +26,7 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 | Data leak incidents | **2** |
 | Website defacement | **1** |
 
-> Reliability note: entries on leak sites and underground forums are treated as **claims** unless independently confirmed.
+> Methodology: the dataset records publications observed on leak sites and underground forums, together with their AFRINTEL status.
 
 ---
 

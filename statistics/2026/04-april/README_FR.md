@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques sont basées sur les incidents publiquement revendiqués ou observés dans le périmètre AFRINTEL pour avril 2026. Les contenus issus de forums cybercriminels, leak sites ou canaux underground sont traités comme des **revendications** tant qu’ils ne sont pas confirmés indépendamment par la victime ou par des preuves techniques vérifiables.
+Ces statistiques couvrent les publications observées dans le périmètre AFRINTEL pour avril 2026. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
 L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé comme **1 incident** dans le total global de 60. Pour l’analyse régionale, il est également projeté dans les zones géographiques concernées afin de refléter l’exposition régionale réelle.
 
@@ -154,21 +154,26 @@ xychart-beta
 |---|---:|---:|
 | Gouvernement / Administration | 15 | 25,0 % |
 | Éducation / Université | 8 | 13,3 % |
+| Industrie / Automobile / Fabrication / Construction / Ingénierie | 7 | 11,7 % |
+| Finance / Banque / Assurance / Gestion de patrimoine | 5 | 8,3 % |
 | Santé / Médical | 4 | 6,7 % |
-| Finance / Banque | 4 | 6,7 % |
 | Sports / Fédérations | 4 | 6,7 % |
-| E-commerce / Retail | 3 | 5,0 % |
+| E-commerce / Retail | 4 | 6,7 % |
 | Pétrole & Énergie | 3 | 5,0 % |
+| Technologie / Numérique / Services aux entreprises | 3 | 5,0 % |
+| Alimentation / Boissons | 2 | 3,3 % |
+| Transport / Aviation / Tourisme | 2 | 3,3 % |
 | Télécommunications | 1 | 1,7 % |
-| Autres secteurs | 18 | 30,0 % |
+| ONG / Action sociale | 1 | 1,7 % |
+| Agrégation de données personnelles | 1 | 1,7 % |
 | **Total** | **60** | **100 %** |
 
 ```mermaid
 xychart-beta
     title "Repartition sectorielle - Avril 2026"
-    x-axis ["Gouvernement","Education","Sante","Finance","Sports","E-commerce","Energie","Telecoms","Autres"]
-    y-axis "Incidents" 0 --> 20
-    bar [15,8,4,4,4,3,3,1,18]
+    x-axis ["Gouvernement","Education","Industrie","Finance","Sante","Sports","E-commerce","Energie","Technologie","Alimentation","Transport","Telecoms","ONG","Agregation"]
+    y-axis "Incidents" 0 --> 16
+    bar [15,8,7,5,4,4,4,3,3,2,2,1,1,1]
 ```
 
 ---
@@ -189,7 +194,7 @@ xychart-beta
 | wh6ami | 2 | Fuites de données |
 | dark07x | 2 | Fuites de données |
 | NormalLeVrai | 2 | Fuites de données |
-| Autres acteurs | 23 | Mixte |
+| Fiches hors classement affiché | 23 | Mixte |
 
 ```mermaid
 xychart-beta

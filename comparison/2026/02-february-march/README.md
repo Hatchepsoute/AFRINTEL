@@ -1,103 +1,52 @@
-# AFRINTEL - Comparative Cyber Threat Analysis
+# AFRINTEL comparison: February vs March 2026
 
-👉🏾 [Version française disponible ici](README_FR.md)
+👉🏾 [Version française](README_FR.md)
 
-## February vs March 2026 (Africa)
+## Executive comparison
 
-This report provides a comparative CTI analysis of cyber incidents affecting Africa during February and March 2026.
+| Indicator | February | March | Change |
+|---|---:|---:|---:|
+| Total incidents | 20 | 41 | +21 (+105.0%) |
+| Ransomware | 20 | 19 | -1 (-5.0%) |
+| Data leaks and access sales | 0 | 22 | +22 |
+| Countries represented | 14 | 14 | 0 |
 
----
+The March increase came entirely from data leaks and access sales. Ransomware volume remained close to its February level.
 
-# 📊 General Comparison
+## Country evolution
 
-| Indicator | February 2026 | March 2026 |
-|---|---|---|
-| Incidents | 20 | 48 |
-| Countries affected | 13 | 14 |
-| Threat actors observed | 10 | 24+ |
-| Ransomware | dominant | high |
-| Data leaks | limited | explosive increase |
-| Government incidents | important | very high |
+| Country | February | March | Change |
+|---|---:|---:|---:|
+| 🇿🇦 South Africa | 3 | 13 | +10 |
+| 🇪🇬 Egypt | 3 | 8 | +5 |
+| 🇲🇦 Morocco | 1 | 8 | +7 |
+| 🇳🇬 Nigeria | 2 | 2 | 0 |
+| 🇸🇳 Senegal | 1 | 1 | 0 |
+| 🇹🇳 Tunisia | 1 | 1 | 0 |
 
----
+South Africa, Morocco and Egypt accounted for 29 of the 41 March records.
 
-# 🌍 Geographic Distribution
+## Sector evolution
 
-```mermaid
-flowchart LR
+February was led by Government / Administration and Aviation with 3 records each, followed by Oil & Energy and Finance / Banking with 2 each. In March, Government / Administration reached 10 records, Education / University 7, Healthcare / Medical 4, and Insurance, Telecommunications and Engineering / Construction 3 each.
 
-FEB["February 2026
-20 incidents"]
+## Actor evolution
 
-MAR["March 2026
-48 incidents"]
+TheGentlemen led February with 5 records, followed by 0APT with 3 and LockBit 5.0 with 3. March was led by CrowStealer with 5, APT73/BASHE with 4, XP_95 with 3 and xNova with 3.
 
-ZA["🇿🇦 South Africa"]
-EG["🇪🇬 Egypt"]
-MA["🇲🇦 Morocco"]
-SN["🇸🇳 Senegal"]
-NG["🇳🇬 Nigeria"]
+## CTI assessment
 
-FEB --> ZA
-FEB --> EG
-FEB --> SN
-FEB --> NG
+The geographic coverage was unchanged, but the incident mix changed materially. March combined a ransomware level similar to February with 22 leak or access-sale records. Monitoring priorities should therefore cover both extortion infrastructure and the reuse or sale of exposed data and access.
 
-MAR --> ZA
-MAR --> EG
-MAR --> MA
-MAR --> NG
-```
+## SOC priorities
 
----
+1. Monitor identity, VPN and privileged-access telemetry for abnormal authentication patterns.
+2. Detect large outbound transfers and unusual archive creation.
+3. Maintain sector-specific monitoring for public administration, education and healthcare.
+4. Preserve evidence needed to correlate ransomware publications with related data-sale activity.
 
-# 📈 Incident Volume
+## Conclusion
 
-```mermaid
-xychart-beta
-title "Cyber incidents"
-x-axis ["February","March"]
-y-axis "Incidents" 0 --> 55
-bar [20,48]
-```
+March recorded 41 incidents against 20 in February. The increase was driven by data leaks and access sales, while ransomware remained nearly stable.
 
----
-
-# 🎯 CTI Trends
-
-- February 2026 remained dominated by traditional ransomware activity.
-- March 2026 showed a sharp increase in data leaks and intrusions.
-- Morocco became a major CTI hotspot during March.
-- Exfiltration-oriented operations significantly increased.
-- Government, healthcare and education sectors became priority targets.
-
----
-
-# 🔥 Major Incidents
-
-## February 2026
-
-- DAF Senegal (139 TB)
-- 0APT emergence and disappearance
-- aviation and energy attacks
-
-## March 2026
-
-- Smarteez / L’Oréal Morocco impact
-- AuditTeam operations
-- growth of multi-country campaigns
-
----
-
-# 🛡 SOC Recommendations
-
-- Monitor large-scale exfiltration
-- Correlate privileged authentication with outbound traffic
-- Strengthen MFA and segmentation
-- Increase CTI monitoring on leak sites
-
----
-
-# AFRINTEL
-
-TLP:CLEAR
+*AFRINTEL, Open African CTI Monitoring Initiative*

@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques sont fondées sur les incidents revendiqués ou observés publiquement dans le périmètre de surveillance AFRINTEL pour juin 2026 (1-30 juin 2026). Les incidents sont rattachés à juin lorsqu'ils ont été identifiés et analysés pour la première fois par AFRINTEL, même si la revendication initiale est antérieure ; cette date initiale reste documentée dans la fiche victime. Les publications issues de forums cybercriminels, de leak sites ou de canaux clandestins sont traitées comme des **revendications** sauf confirmation indépendante de la victime ou preuve technique vérifiable.
+Ces statistiques couvrent les publications observées dans le périmètre de surveillance AFRINTEL pour juin 2026 (1-30 juin 2026). Les incidents sont rattachés à juin lorsqu'ils ont été identifiés et analysés pour la première fois par AFRINTEL, même si la date de publication initiale est antérieure ; cette date reste documentée dans la fiche victime. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
 Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès portails LEP Governor) sont comptés comme **1 incident chacun** dans le total global de 40. Dans le tableau d'exposition géographique (section 2.3), chaque pays touché par ces incidents est listé individuellement, donc les totaux par pays dépassent 40.
 

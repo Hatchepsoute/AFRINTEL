@@ -14,7 +14,7 @@
 
 ## Methodology note
 
-These statistics are based on publicly claimed or observed incidents within the AFRINTEL monitoring scope for April 2026. Content originating from cybercriminal forums, leak sites, or underground channels is treated as a **claim** unless independently confirmed by the victim or supported by verifiable technical evidence.
+These statistics cover publications observed within the AFRINTEL monitoring scope for April 2026. Each record retains the status documented in its victim card.
 
 The multi-country incident involving `Angola / South Africa / Nigeria` is counted as **1 incident** in the global total of 60. For regional exposure analysis, it is also mapped to each affected geographic region.
 
@@ -154,21 +154,26 @@ xychart-beta
 |---|---:|---:|
 | Government / Administration | 15 | 25.0% |
 | Education / University | 8 | 13.3% |
+| Industry / Automotive / Manufacturing / Construction / Engineering | 7 | 11.7% |
+| Finance / Banking / Insurance / Wealth Management | 5 | 8.3% |
 | Healthcare / Medical | 4 | 6.7% |
-| Finance / Banking | 4 | 6.7% |
 | Sports / Federations | 4 | 6.7% |
-| E-commerce / Retail | 3 | 5.0% |
+| E-commerce / Retail | 4 | 6.7% |
 | Oil & Energy | 3 | 5.0% |
+| Technology / Digital / Business Services | 3 | 5.0% |
+| Food / Beverage | 2 | 3.3% |
+| Transport / Aviation / Tourism | 2 | 3.3% |
 | Telecommunications | 1 | 1.7% |
-| Other sectors | 18 | 30.0% |
+| NGO / Social Welfare | 1 | 1.7% |
+| Personal Data Aggregation | 1 | 1.7% |
 | **Total** | **60** | **100%** |
 
 ```mermaid
 xychart-beta
     title "Sector distribution - April 2026"
-    x-axis ["Government","Education","Healthcare","Finance","Sports","E-commerce","Energy","Telecoms","Others"]
-    y-axis "Incidents" 0 --> 20
-    bar [15,8,4,4,4,3,3,1,18]
+    x-axis ["Government","Education","Industry","Finance","Healthcare","Sports","E-commerce","Energy","Technology","Food","Transport","Telecoms","NGO","Data aggregation"]
+    y-axis "Incidents" 0 --> 16
+    bar [15,8,7,5,4,4,4,3,3,2,2,1,1,1]
 ```
 
 ---
@@ -189,7 +194,7 @@ xychart-beta
 | wh6ami | 2 | Data leaks |
 | dark07x | 2 | Data leaks |
 | NormalLeVrai | 2 | Data leaks |
-| Other actors | 23 | Mixed |
+| Records outside displayed ranking | 23 | Mixed |
 
 ```mermaid
 xychart-beta

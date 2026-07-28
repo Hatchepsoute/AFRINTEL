@@ -10,7 +10,7 @@ These scripts enable seamless integration with platforms such as **OpenCTI**, **
 
 ### `afrintel_victims_to_stix.py`
 
-Convert AFRINTEL ransomware victim datasets (`victims.md`) into **STIX 2.1 bundles** compatible with OpenCTI.
+Convert AFRINTEL bilingual victim datasets and analytical reports into **STIX 2.1 bundles** compatible with OpenCTI.
 
 ---
 
@@ -28,7 +28,9 @@ It allows analysts to operationalize publicly observed ransomware activity into 
 
 ## 🔍 Features
 
-* 📥 Parses AFRINTEL monthly datasets (`victims.md`)
+* 📥 Parses AFRINTEL monthly datasets (`victims.md` and `victims_FR.md`)
+* 📊 Includes monthly CTI reports and statistics in English and French
+* 📈 Includes the previous-to-current month comparison in the current month's bundle
 *  Extracts:
 
   * Threat actors (ransomware groups)
@@ -53,10 +55,26 @@ It allows analysts to operationalize publicly observed ransomware activity into 
 CyberAttackAfrica/
 └── 2026/
     ├── 01-january/
-    │   └── victims.md
+    │   ├── victims.md
+    │   ├── victims_FR.md
+    │   ├── README.md
+    │   └── README_FR.md
     ├── 05-may/
-    │   └── victims.md
+    │   ├── victims.md
+    │   ├── victims_FR.md
+    │   ├── README.md
+    │   └── README_FR.md
     └── ...
+statistics/
+└── 2026/
+    └── 05-may/
+        ├── README.md
+        └── README_FR.md
+comparison/
+└── 2026/
+    └── 04-april-may/
+        ├── README.md
+        └── README_FR.md
 ```
 
 ---
@@ -87,6 +105,16 @@ python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026 --month 05-may
 
 ---
 
+### Generate the first-half bundle
+
+```bash
+python3 scripts/afrintel_victims_to_stix.py --repo . --year 2026 --h1
+```
+
+The H1 bundle merges the January through June objects without changing their STIX IDs. It also includes the bilingual first-half reports, monthly statistics and month-over-month comparisons.
+
+---
+
 ## 📦 Output
 
 Generated STIX bundles are stored in:
@@ -99,6 +127,12 @@ Example:
 
 ```bash
 stix/2026/05-may/afrintel_may_2026_opencti.json
+```
+
+First-half output:
+
+```bash
+stix/2026/afrintel_h1_2026_opencti.json
 ```
 
 ---
@@ -144,4 +178,3 @@ Contributions are welcome to improve parsing, enrich data, and expand CTI capabi
 ---
 
 **AFRINTEL - Turning African cyber threat signals into actionable intelligence.**
-

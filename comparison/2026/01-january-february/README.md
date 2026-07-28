@@ -1,245 +1,60 @@
-![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
-![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
-![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
-![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
-![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web-black)
-![Deep Web](https://img.shields.io/badge/Data%20Source-Deep%20Web-darkgrey)
-![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
-# AFRINTEL - Comparative cyber threat analysis
-👉🏾 [**French version available here** ](README_FR.md)
-## January vs February 2026 (Africa)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Comparative%20CTI-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 
-This report provides a **comparative Cyber Threat Intelligence (CTI) analysis** of cyber incidents affecting Africa during **January and February 2026**.  
-The objective is to identify **evolving threat actors, geographic concentrations, sector exposure, and operational trends** observed across the continent.
+# Comparative cyber threat analysis
 
----
+## January vs February 2026
 
-# 📊 High‑Level Comparison
+👉🏾 [Version française](./README_FR.md)
 
-| Metric | January 2026 | February 2026 |
+Figures derive from [January](../../../CyberAttackAfrica/2026/01-january/victims.md) and [February](../../../CyberAttackAfrica/2026/02-february/victims.md).
+
+## General comparison
+
+| Indicator | January | February | Change |
+|---|---:|---:|---:|
+| Total records | 21 | 20 | -1 (-4.8%) |
+| Ransomware | 17 | 20 | +3 (+17.6%) |
+| Data leaks / access sales | 3 | 0 | -3 |
+| Website defacement | 1 | 0 | -1 |
+| Countries represented | 12 | 14 | +2 |
+
+## Geographic evolution
+
+| Country | January | February |
+|---|---:|---:|
+| South Africa | 4 | 3 |
+| Egypt | 3 | 3 |
+| Kenya | 4 | 1 |
+| Morocco | 2 | 1 |
+| Nigeria | 0 | 2 |
+| Ghana | 0 | 2 |
+| Senegal | 1 | 1 |
+| Tunisia | 1 | 1 |
+
+February added direct records concerning Somalia, Sudan, Ivory Coast and Namibia. January alone included the Niger government-site defacement.
+
+## Sector and actor evolution
+
+| View | January | February |
 |---|---|---|
-| Incidents | **21** | **20** |
-| Countries affected | 12 | 13 |
-| Threat actors | 11 | 10 |
-| Ransomware | 18 | dominant |
-| Data leaks | 2 | multiple |
-| Defacement | 1 | rare |
-| Data exposed | limited | **~147 TB** |
+| Leading sectors | Government 4; Finance 4; Industry 3; Transport 3 | Government 3; Aviation 3; Energy 2; Banking / Fintech 2 |
+| Leading actor labels | TheGentlemen 6; Tengu 5 | TheGentlemen 5; 0APT 3; LockBit 5 3 |
 
----
+## CTI assessment
 
-# 🌍 Geographic distribution comparison
+- Overall volume remained nearly stable.
+- February contained only ransomware listings, while January also contained data leaks, an access sale and the Niger defacement.
+- The geographic distribution broadened from 12 to 14 countries despite the one-record decline.
+- The 139 TB figure associated with DAF Senegal is retained only as the volume documented in that victim card.
 
-```mermaid
-flowchart LR
+## SOC priorities
 
-JAN["January 2026
-21 incidents"]
-FEB["February 2026
-20 incidents"]
+- Maintain ransomware readiness across identity, endpoint, backup and privileged-access controls.
+- Apply rapid credential rotation when access-sale or exposed-account material is documented.
+- Track victim listings, accessible data publications and operational disruption as separate fields.
 
-SA["South Africa"]
-EG["Egypt"]
-KE["Kenya"]
-NG["Nigeria"]
-GH["Ghana"]
-MA["Morocco"]
+## Conclusion
 
-JAN --> SA
-JAN --> EG
-JAN --> KE
-JAN --> MA
+January and February recorded comparable totals, but their composition differed. February was entirely ransomware-related, while January combined ransomware, data exposure, access sale and politically motivated defacement.
 
-FEB --> SA
-FEB --> EG
-FEB --> NG
-FEB --> GH
-FEB --> MA
-```
-
----
-
-# 📈 Incident volume by month
-
-```mermaid
-%%{init: {'theme': 'base'}}%%
-xychart-beta
-title "Cyber Incidents per Month"
-x-axis ["January","February"]
-y-axis "Incidents" 0 --> 25
-bar [21,20]
-```
-
----
-
-# 🎯 Threat actor activity
-
-```mermaid
-flowchart TB
-
-classDef high fill:#ff4d4d,color:#ffffff
-classDef medium fill:#ffa64d,color:#000000
-classDef low fill:#ffe6b3,color:#000000
-
-TG["thegentlemen"]:::high
-TENGU["tengu"]:::high
-APT["0APT"]:::medium
-LOCKBIT["lockbit5"]:::medium
-INCR["incransom"]:::low
-QILIN["qilin"]:::low
-VECT["vect"]:::low
-PAYLOAD["payload"]:::low
-```
-
-### Key observations
-
-• **thegentlemen remains the most active actor across both months**  
-• **tengu dominates January activity**  
-• **0APT emerges in February with multi‑country operations**
-
----
-
-# 🏭 Sector exposure comparison
-
-```mermaid
-pie
-title Sector targeting evolution
-"Government" : 6
-"Aviation" : 4
-"Finance / Fintech" : 4
-"Energy" : 3
-"Industry" : 3
-"Transport" : 3
-"Technology" : 2
-```
-
-### Interpretation
-
-January attacks were **more distributed across sectors**, while February shows a **clear concentration on strategic industries** such as:
-
-• aviation  
-• government infrastructure  
-• energy sector  
-
----
-
-# 🔥 Major incidents
-
-### January 2026
-
-• **Government Defacement - Niger**
-- Multi‑site attack
-- Unattributed actor
-
-• **PixPay Data Leak - Senegal**
-- Financial sector exposure
-
----
-
-### February 2026
-
-• **DAF Senegal breach**
-- **139 TB data exposure**
-- Largest known African data breach
-
-• **EnerTec South Africa**
-- 151 GB industrial data leak
-
----
-
-# 🧠 Strategic CTI insights
-
-### 1️⃣ Ransomware industrialization
-
-Several groups demonstrate **Ransomware‑as‑a‑Service (RaaS)** characteristics:
-
-- thegentlemen
-- lockbit5
-- incransom
-- vect
-
----
-
-### 2️⃣ Expansion of attack surface
-
-Key drivers:
-
-• digitalization of African public services  
-• increasing fintech adoption  
-• growing aviation sector connectivity
-
----
-
-### 3️⃣ Geographic cyber hotspots
-
-Primary threat clusters:
-
-| Rank | Region |
-|---|---|
-| 1 | South Africa |
-| 2 | Egypt |
-| 3 | Kenya |
-| 4 | Nigeria |
-| 5 | Morocco |
-
----
-
-# 🔮 Threat Outlook (Next Months)
-
-Based on current patterns, the following sectors are **high‑risk targets for upcoming campaigns**:
-
-• Government institutions  
-• Aviation infrastructure  
-• Financial platforms  
-• Energy providers
-
-Countries likely to remain **primary cyber targets**:
-
-South Africa • Egypt • Kenya • Nigeria • Morocco
-
----
-
-# 🛡 Strategic recommendations
-
-SOC and CTI teams should prioritize:
-
-### Threat Monitoring
-
-Monitor ransomware groups:
-
-- thegentlemen
-- lockbit5
-- incransom
-- vect
-- qilin
-
-### Detection Capabilities
-
-Deploy monitoring for:
-
-• abnormal data exfiltration  
-• suspicious outbound traffic  
-• credential abuse  
-
-### Infrastructure protection
-
-Strengthen:
-
-• public government portals  
-• aviation networks  
-• financial platforms
-
----
-
-# AFRINTEL
-
-* **African Threat Intelligence Initiative**
-* TLP:CLEAR - Public release
----
-## ✍🏿 Auteur
-
-**Adama ASSIONGBON**  
-Consultant SOC & Cyber Threat Intelligence  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
+**AFRINTEL** - TLP:CLEAR

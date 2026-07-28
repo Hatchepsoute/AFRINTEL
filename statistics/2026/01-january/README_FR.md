@@ -23,7 +23,7 @@ Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le conti
 | **Fuites de données** | **2** |
 | **Défacement** | **1** |
 
-> **Note de fiabilité** : les inscriptions sur leak sites et publications underground sont traitées comme des **revendications** sauf corroboration externe.
+> **Méthodologie** : le jeu de données recense les publications observées sur les leak sites et les forums clandestins, avec leur statut AFRINTEL.
 
 ---
 

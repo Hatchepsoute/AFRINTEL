@@ -23,6 +23,7 @@ from typing import Dict, Iterable, List, Optional, Tuple
 AFRINTEL_ID = "identity--d3497218-f905-57e1-a219-a8700a85eb4a"
 TLP_CLEAR_ID = "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
 STIX_NAMESPACE = uuid.uuid5(uuid.NAMESPACE_URL, "https://github.com/Hatchepsoute/AFRINTEL")
+AFRINTEL_AUTHOR_ID = f"identity--{uuid.uuid5(STIX_NAMESPACE, 'identity:author:adama-assiongbon')}"
 
 MONTHS_EN = {
     "january": 1, "february": 2, "march": 3, "april": 4, "may": 5, "june": 6,
@@ -60,6 +61,17 @@ class VictimRecord:
     incident_type: str
     description: str
     source_path: str
+
+
+@dataclass(frozen=True)
+class ReportDocument:
+    language: str
+    kind: str
+    name: str
+    content: str
+    source_path: str
+    labels: Tuple[str, ...]
+    comparison_periods: Tuple[str, ...] = ()
 
 
 def now_iso() -> str:
@@ -173,13 +185,20 @@ def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
     return ""
 
 
-def classify_incident(fields: Dict[str, str], status: str) -> str:
+def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
     joined_keys = " ".join(fields.keys())
-    text = f"{joined_keys} {status}".lower()
-    if "ransomware" in text:
-        return "ransomware"
-    if "access" in text or "credential" in text or "identifiant" in text:
+    status_text = status.lower()
+    if "access" in status_text or "credential" in status_text or "identifiant" in status_text:
         return "access-sale"
+    if any(term in status_text for term in (
+        "data leak", "data leaked", "database", "massive leak", "system intrusion",
+        "supply chain compromise", "suspected compromise", "defacement",
+    )):
+        return "data-leak"
+    if "ransomware" in status_text or "ransomware" in joined_keys:
+        return "ransomware"
+    if default_incident_type:
+        return default_incident_type
     return "data-leak"
 
 
@@ -297,6 +316,11 @@ def clean_report_markdown(text: str) -> str:
 
 def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
     text = md_path.read_text(encoding="utf-8")
+    default_incident_type = (
+        "ransomware"
+        if re.search(r"no standalone data leak or access sale classified separately", text, re.I)
+        else ""
+    )
     date_matches = list(DATE_RE.finditer(text))
     records: List[VictimRecord] = []
 
@@ -328,7 +352,7 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
             actor = clean_actor(actor) if actor else "Unknown"
             sector = sector or "Unknown"
             status = status or "Claim - Unverified"
-            incident_type = classify_incident(fields, status)
+            incident_type = classify_incident(fields, status, default_incident_type)
 
             records.append(VictimRecord(
                 index=len(records) + 1,
@@ -358,8 +382,23 @@ def base_objects(created: str) -> List[dict]:
             "modified": created,
             "name": "AFRINTEL",
             "identity_class": "organization",
-            "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations.",
+            "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
             "external_references": [{"source_name": "AFRINTEL", "url": "https://github.com/Hatchepsoute/AFRINTEL"}],
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": AFRINTEL_AUTHOR_ID,
+            "created": "2024-01-01T00:00:00Z",
+            "modified": created,
+            "name": "Adama ASSIONGBON",
+            "identity_class": "individual",
+            "roles": ["SOC Consultant", "Cyber Threat Intelligence Consultant", "AFRINTEL Maintainer"],
+            "description": "Author and maintainer of the AFRINTEL project.",
+            "external_references": [{
+                "source_name": "LinkedIn",
+                "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/",
+            }],
         },
     ]
 
@@ -370,7 +409,7 @@ def build_month_bundle(
     year: str,
     month_dir: str,
     github_base: str,
-    report_documents: Dict[str, str],
+    report_documents: List[ReportDocument],
 ) -> dict:
     if not records:
         raise ValueError("No victim records to convert")
@@ -488,44 +527,46 @@ def build_month_bundle(
     month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     report_refs = list(actor_ids.values()) + victim_ids + incident_ids
 
-    report_names = {
-        "en": f"AFRINTEL monthly CTI report - {month_name.title()} {year}",
-        "fr": f"Rapport CTI mensuel AFRINTEL - {MONTH_NAMES_FR.get(month_name, month_name.title())} {year}",
-    }
-    report_files = {"en": "README.md", "fr": "README_FR.md"}
-
-    for language in ("en", "fr"):
-        content = report_documents.get(language)
-        if not content:
-            continue
-        report_file = report_files[language]
-        report_base = re.sub(r"/blob/[^/]+$", "/tree/main", github_base.rstrip("/"))
-        report_url = f"{report_base}/CyberAttackAfrica/{year}/{month_dir}"
-        objects.append({
+    for document in report_documents:
+        report_url = f"{github_base.rstrip('/')}/{document.source_path}"
+        report_key = (
+            f"{year}:{month_dir}:report:{document.language}"
+            if document.kind == "monthly-cti"
+            else f"{year}:{month_dir}:report:{document.kind}:{document.language}"
+        )
+        report_object = {
             "type": "report",
             "spec_version": "2.1",
-            "id": stix_id("report", f"{year}:{month_dir}:report:{language}"),
+            "id": stix_id("report", report_key),
             "created": created,
             "modified": created,
-            "name": report_names[language],
-            "description": content,
-            "lang": language,
+            "name": document.name,
+            "description": document.content,
+            "lang": document.language,
             "published": f"{max(rec.date_iso for rec in records)}T00:00:00Z",
             "report_types": ["threat-report"],
             "labels": [
-                "afrintel", "africa", "monthly-report", "cti-report", language,
-                f"{month_name}-{year}", "ransomware", "data-leaks", "access-sales", "osint",
+                "afrintel", "africa", document.language, f"{month_name}-{year}",
+                "ransomware", "data-leaks", "access-sales", "osint", *document.labels,
             ],
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
-            "external_references": [{"source_name": f"AFRINTEL {report_file}", "url": report_url}],
-            "object_refs": report_refs,
-            "x_afrintel_source_path": f"CyberAttackAfrica/{year}/{month_dir}/{report_file}",
+            "external_references": [{
+                "source_name": f"AFRINTEL {Path(document.source_path).name}",
+                "url": report_url,
+            }],
+            "object_refs": [AFRINTEL_AUTHOR_ID, *report_refs],
+            "x_afrintel_source_path": document.source_path,
+            "x_afrintel_report_kind": document.kind,
+            "x_afrintel_author_ref": AFRINTEL_AUTHOR_ID,
             "x_afrintel_total_incidents": len(records),
             "x_afrintel_ransomware_count": ransomware_count,
             "x_afrintel_data_leak_access_sale_count": leak_count,
             "x_afrintel_victim_identity_count": len(victim_ids),
-        })
+        }
+        if document.comparison_periods:
+            report_object["x_afrintel_comparison_periods"] = list(document.comparison_periods)
+        objects.append(report_object)
 
     bundle = {"type": "bundle", "id": stix_id("bundle", f"{year}:{month_dir}:bundle"), "objects": objects}
     validate_bundle(
@@ -603,17 +644,192 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
                 f"{rec_en.date_iso} != {rec_fr.date_iso}"
             )
 
-    report_documents: Dict[str, str] = {}
+    month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
+    month_name_fr = MONTH_NAMES_FR.get(month_name, month_name.title())
+    report_documents: List[ReportDocument] = []
+
+    monthly_names = {
+        "en": f"AFRINTEL monthly CTI report - {month_name.title()} {year}",
+        "fr": f"Rapport CTI mensuel AFRINTEL - {month_name_fr} {year}",
+    }
     for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
         report_path = month_path / filename
         if report_path.exists():
-            report_documents[language] = clean_report_markdown(report_path.read_text(encoding="utf-8"))
+            report_documents.append(ReportDocument(
+                language=language,
+                kind="monthly-cti",
+                name=monthly_names[language],
+                content=clean_report_markdown(report_path.read_text(encoding="utf-8")),
+                source_path=str(report_path.relative_to(repo)),
+                labels=("monthly-report", "cti-report"),
+            ))
+
+    statistics_path = repo / "statistics" / year / month_dir
+    statistics_names = {
+        "en": f"AFRINTEL monthly statistics - {month_name.title()} {year}",
+        "fr": f"Statistiques mensuelles AFRINTEL - {month_name_fr} {year}",
+    }
+    for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
+        document_path = statistics_path / filename
+        if document_path.exists():
+            report_documents.append(ReportDocument(
+                language=language,
+                kind="monthly-statistics",
+                name=statistics_names[language],
+                content=clean_report_markdown(document_path.read_text(encoding="utf-8")),
+                source_path=str(document_path.relative_to(repo)),
+                labels=("monthly-report", "statistics-report"),
+            ))
+
+    month_dirs = find_month_dirs(root / year)
+    if month_dir in month_dirs:
+        month_index = month_dirs.index(month_dir)
+        if month_index > 0:
+            previous_month_dir = month_dirs[month_index - 1]
+            previous_month_name = previous_month_dir.split("-", 1)[1]
+            comparison_dir = f"{previous_month_dir}-{month_name}"
+            comparison_path = repo / "comparison" / year / comparison_dir
+            comparison_names = {
+                "en": (
+                    f"AFRINTEL monthly comparison - {previous_month_name.title()} vs "
+                    f"{month_name.title()} {year}"
+                ),
+                "fr": (
+                    f"Comparaison mensuelle AFRINTEL - "
+                    f"{MONTH_NAMES_FR.get(previous_month_name, previous_month_name.title())} "
+                    f"et {month_name_fr} {year}"
+                ),
+            }
+            for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
+                document_path = comparison_path / filename
+                if document_path.exists():
+                    report_documents.append(ReportDocument(
+                        language=language,
+                        kind="monthly-comparison",
+                        name=comparison_names[language],
+                        content=clean_report_markdown(document_path.read_text(encoding="utf-8")),
+                        source_path=str(document_path.relative_to(repo)),
+                        labels=("comparison-report", "month-over-month"),
+                        comparison_periods=(previous_month_dir, month_dir),
+                    ))
 
     bundle = build_month_bundle(records, records_fr, year, month_dir, github_base, report_documents)
     out_root = output_root or (repo / "stix" / year / month_dir)
     out_root.mkdir(parents=True, exist_ok=True)
     month_slug = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     out_path = out_root / f"afrintel_{month_slug}_{year}_opencti.json"
+    out_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return out_path
+
+
+def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Optional[Path] = None) -> Path:
+    root = reports_root(repo)
+    year_path = root / year
+    month_dirs = [
+        month_dir for month_dir in find_month_dirs(year_path)
+        if 1 <= int(month_dir.split("-", 1)[0]) <= 6
+    ]
+    if len(month_dirs) != 6:
+        raise ValueError(f"H1 requires six monthly folders, found {len(month_dirs)}: {month_dirs}")
+
+    objects_by_id: Dict[str, dict] = {}
+    for month_dir in month_dirs:
+        month_slug = month_dir.split("-", 1)[1]
+        bundle_path = repo / "stix" / year / month_dir / f"afrintel_{month_slug}_{year}_opencti.json"
+        if not bundle_path.exists():
+            raise FileNotFoundError(f"Monthly STIX bundle not found: {bundle_path}")
+        monthly_bundle = json.loads(bundle_path.read_text(encoding="utf-8"))
+        for obj in monthly_bundle.get("objects", []):
+            object_id = obj.get("id")
+            if not object_id:
+                raise ValueError(f"STIX object without id in {bundle_path}")
+            objects_by_id[object_id] = obj
+
+    created = now_iso()
+    merged_objects = list(objects_by_id.values())
+    merged_refs = [obj["id"] for obj in merged_objects]
+    h1_documents = [
+        ReportDocument(
+            language="en",
+            kind="half-year-cti",
+            name=f"AFRINTEL first-half cyber threat report - H1 {year}",
+            content=clean_report_markdown((year_path / "README_H1.md").read_text(encoding="utf-8")),
+            source_path=f"CyberAttackAfrica/{year}/README_H1.md",
+            labels=("half-year-report", "cti-report", "statistics-report"),
+            comparison_periods=(f"{year}-01-01", f"{year}-06-30"),
+        ),
+        ReportDocument(
+            language="fr",
+            kind="half-year-cti",
+            name=f"Rapport AFRINTEL sur les cybermenaces du premier semestre {year}",
+            content=clean_report_markdown((year_path / "README_H1_FR.md").read_text(encoding="utf-8")),
+            source_path=f"CyberAttackAfrica/{year}/README_H1_FR.md",
+            labels=("half-year-report", "cti-report", "statistics-report"),
+            comparison_periods=(f"{year}-01-01", f"{year}-06-30"),
+        ),
+    ]
+
+    incident_count = sum(obj.get("type") == "incident" for obj in merged_objects)
+    victim_count = sum(
+        obj.get("type") == "identity" and "victim" in obj.get("labels", [])
+        for obj in merged_objects
+    )
+    ransomware_count = sum(
+        obj.get("type") == "incident" and "ransomware" in obj.get("labels", [])
+        for obj in merged_objects
+    )
+
+    for document in h1_documents:
+        report = {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": stix_id("report", f"{year}:h1:report:{document.language}"),
+            "created": created,
+            "modified": created,
+            "name": document.name,
+            "description": document.content,
+            "lang": document.language,
+            "published": f"{year}-06-30T23:59:59Z",
+            "report_types": ["threat-report"],
+            "labels": [
+                "afrintel", "africa", "h1", f"h1-{year}", document.language,
+                "half-year-report", "cti-report", "statistics-report", "osint",
+            ],
+            "created_by_ref": AFRINTEL_ID,
+            "object_marking_refs": [TLP_CLEAR_ID],
+            "external_references": [{
+                "source_name": f"AFRINTEL {Path(document.source_path).name}",
+                "url": f"{github_base.rstrip('/')}/{document.source_path}",
+            }],
+            "object_refs": merged_refs,
+            "x_afrintel_source_path": document.source_path,
+            "x_afrintel_report_kind": document.kind,
+            "x_afrintel_author_ref": AFRINTEL_AUTHOR_ID,
+            "x_afrintel_comparison_periods": list(document.comparison_periods),
+            "x_afrintel_total_incidents": incident_count,
+            "x_afrintel_ransomware_count": ransomware_count,
+            "x_afrintel_data_leak_access_sale_defacement_count": incident_count - ransomware_count,
+            "x_afrintel_victim_identity_count": victim_count,
+            "x_afrintel_months_covered": month_dirs,
+        }
+        merged_objects.append(report)
+
+    bundle = {
+        "type": "bundle",
+        "id": stix_id("bundle", f"{year}:h1:bundle"),
+        "objects": merged_objects,
+    }
+    monthly_report_count = sum(obj.get("type") == "report" for obj in objects_by_id.values())
+    validate_bundle(
+        bundle,
+        expected_victims=239,
+        expected_incidents=239,
+        expected_reports=monthly_report_count + len(h1_documents),
+    )
+
+    out_root = output_root or (repo / "stix" / year)
+    out_root.mkdir(parents=True, exist_ok=True)
+    out_path = out_root / f"afrintel_h1_{year}_opencti.json"
     out_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return out_path
 
@@ -627,6 +843,7 @@ def main() -> int:
     parser.add_argument("--repo", required=True, help="Path to AFRINTEL repository root")
     parser.add_argument("--year", help="Specific year, e.g. 2026")
     parser.add_argument("--month", help="Specific month folder, e.g. 05-may")
+    parser.add_argument("--h1", action="store_true", help="Build a first-half bundle from January through June monthly bundles")
     parser.add_argument("--github-base", default="https://github.com/Hatchepsoute/AFRINTEL/blob/main", help="Base GitHub URL used to build source references")
     parser.add_argument("--output-root", help="Optional custom output root. Default: <repo>/stix/<year>/<month>/")
     args = parser.parse_args()
@@ -635,6 +852,19 @@ def main() -> int:
     root = reports_root(repo)
     output_root = Path(args.output_root).resolve() if args.output_root else None
     generated: List[Path] = []
+
+    if args.h1:
+        if not args.year:
+            print("[ERROR] --h1 requires --year.", file=sys.stderr)
+            return 2
+        try:
+            out = process_h1_bundle(repo, args.year, args.github_base, output_root)
+            print(f"[OK] Generated and validated: {out}")
+            print("Generated 1 bundle(s).")
+            return 0
+        except Exception as exc:
+            print(f"[ERROR] {args.year}/H1: {exc}", file=sys.stderr)
+            return 2
 
     years = [args.year] if args.year else [p.name for p in sorted(root.iterdir()) if p.is_dir() and re.match(r"^\d{4}$", p.name)]
     for year in years:

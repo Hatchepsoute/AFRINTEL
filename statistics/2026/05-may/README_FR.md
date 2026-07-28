@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques sont basées sur les incidents publiquement revendiqués ou observés dans le périmètre AFRINTEL pour mai 2026. Les contenus issus de forums cybercriminels, leak sites ou canaux underground sont traités comme des **revendications** tant qu'ils ne sont pas confirmés indépendamment par la victime ou par des preuves techniques vérifiables.
+Ces statistiques couvrent les publications observées dans le périmètre AFRINTEL pour mai 2026. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
 Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont comptabilisés comme **1 incident chacun** dans le total global de 57. Dans les fichiers victimes, chaque entrée liste désormais les pays concernés explicitement plutôt qu'un label générique "Multi-pays", afin de permettre l'identification par pays. Dans le tableau d'exposition géographique (section 2.2), chaque pays touché est listé individuellement. La somme des expositions par pays dépasse donc le total de 57 incidents.
 

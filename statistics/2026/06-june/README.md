@@ -14,7 +14,7 @@
 
 ## Methodology note
 
-These statistics are based on publicly claimed or observed incidents within the AFRINTEL monitoring scope for June 2026 (1-30 June 2026). Incidents are assigned to June when they were first identified and assessed by AFRINTEL, even when the original claim date is earlier; the original date remains documented in the victim card. Content originating from cybercriminal forums, leak sites, or underground channels is treated as a **claim** unless independently confirmed by the victim or supported by verifiable technical evidence.
+These statistics cover publications observed within the AFRINTEL monitoring scope for June 2026 (1-30 June 2026). Incidents are assigned to June when they were first identified and assessed by AFRINTEL, even when the original publication date is earlier; that date remains documented in the victim card. Each record retains the status documented in its victim card.
 
 The two multi-country incidents (Convince EDR email sale, Governor LEP portal access sale) are counted as **1 incident each** in the global total of 40. In the geographic exposure table (section 2.3), each country touched by these incidents is listed individually, so country-level totals exceed 40.
 
