@@ -21,7 +21,7 @@
 | :---: | :---: | :---: | :---: |
 | 54 | 100+ | 2024-2026 | Markdown, STIX 2.1, Visual CTI |
 
-> All claims from leak sites and underground forums are treated as unverified unless independently corroborated.
+> AFRINTEL records publications observed on leak sites, underground forums and OSINT sources. Each incident retains the status documented in its victim card.
 
 ---
 
@@ -29,18 +29,23 @@
 
 ### Cyber threats in Africa - June 2026
 
-June 2026 recorded **40 publicly claimed cyber incidents**: ransomware reached parity with data leaks for the first time in 2026 (20/20, up from 28% ransomware in May). Morocco (9 incidents) was the most targeted country, driven almost entirely by a single actor cluster, anisanas2, active for a third consecutive month. The month's most severe incidents include a severe biometric/KYC data exposure at Nigerian fintech Jeroid.co, a plaintext credential leak from the Nigerian Army's webmail domain, and a reported 10.2M-record exposure at Tanzania's business registration agency (BRELA).
+June 2026 recorded **40 cyber incident publications**: 20 ransomware records and 20 data leaks or access sales. Morocco was the leading direct country label with 9 records, including 7 publications attributed to anisanas2. High-sensitivity cases include the biometric and KYC data exposure associated with Nigerian fintech Jeroid.co, plaintext credentials attributed to the Nigerian Army's webmail domain, and the claimed 10.2-million-record BRELA dataset in Tanzania.
 
 📄 [Full CTI report - June 2026](CyberAttackAfrica/2026/06-june/README.md)
 📋 [Victim list - June 2026](CyberAttackAfrica/2026/06-june/victims.md)
+📊 [Visual intelligence - June 2026](visual-intelligence/06-june/README.md)
 
 ### First-half 2026 cyber threat report
 
-From January to June 2026, AFRINTEL documented **239 Africa-related cyber incidents**: **112 ransomware incidents**, **126 data leaks or access sales**, and **1 website defacement**. second quarter accounted for 157 incidents, compared with 82 in the first quarter. Ransomware remained stable at 56 incidents per quarter, while data leaks and access sales rose from 25 in the first quarter to 101 in the second quarter.
+From January to June 2026, AFRINTEL documented **239 Africa-related cyber incidents**: **112 ransomware incidents**, **126 data leaks or access sales**, and **1 website defacement**. The second quarter accounted for 157 incidents, compared with 82 in the first quarter. Ransomware remained stable at 56 incidents per quarter, while data leaks and access sales rose from 25 in the first quarter to 101 in the second quarter.
 
 📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
 
 🇫🇷 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
+
+📦 [H1 2026 STIX 2.1 / OpenCTI bundle](stix/2026/afrintel_h1_2026_opencti.json)
+
+🖼️ [H1 2026 statistical visual for LinkedIn](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png)
 
 ---
 
@@ -88,9 +93,15 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 
 ## Visual intelligence
 
-📊 [May 2026 dashboard](visual-intelligence/05-may/README.md) - ecosystem maps, actor diagrams, country hotspots, sector exposure
-
-📊 [April 2026 dashboard](visual-intelligence/04-april/README.md)
+| Period | Dashboard |
+| :--- | :--- |
+| January 2026 | [Visual intelligence](visual-intelligence/01-january/README.md) |
+| February 2026 | [Visual intelligence](visual-intelligence/02-february/README.md) |
+| March 2026 | [Visual intelligence](visual-intelligence/03-march/README.md) |
+| April 2026 | [Visual intelligence](visual-intelligence/04-april/README.md) |
+| May 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
+| June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
+| H1 2026 | [Statistical LinkedIn visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png) |
 
 ---
 
@@ -104,8 +115,9 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | April 2026 | [STIX Bundle](stix/2026/04-april/afrintel_april_2026_opencti.json) |
 | May 2026 | [STIX Bundle](stix/2026/05-may/afrintel_may_2026_opencti.json) |
 | June 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
+| H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
-STIX 2.1 bundles are compatible with OpenCTI and include threat actors, victims, targeted sectors, and contextual MITRE ATT&CK mapping.
+The monthly STIX 2.1 bundles include bilingual victim and incident descriptions, CTI reports, statistics, month-over-month comparisons, source references, AFRINTEL's organizational identity and the project author's identity. The H1 bundle consolidates the 239 January-June incidents and 36 bilingual analytical reports while preserving the monthly STIX IDs for OpenCTI correlation. Contextual MITRE ATT&CK mappings are documented in the report descriptions.
 
 ---
 
