@@ -52,7 +52,7 @@ Juin 2026 compte **40 incidents uniques** : **20 ransomwares** et **20 fuites de
 #### 🇿🇦 Afrique du Sud - African National Congress (ANC)
 
 - **Groupe ransomware :** Black X
-- **Secteur :** Others
+- **Secteur :** Organisations politiques / Partis
 - **Site web :** [anc1912.org.za](https://www.anc1912.org.za/)
 - **Statut :** Data Fully Published
 
@@ -120,7 +120,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 #### 🇲🇦 Maroc - Tlog.ma [Fuite / Vente de données]
 
 - **Acteur / Groupe :** anisanas2
-- **Secteur :** Others
+- **Secteur :** Transport / Logistique
 - **Statut :** Claim - Data Sample Published
 - **Site web :** [tlog.ma](https://tlog.ma)
 
@@ -133,12 +133,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   L'acteur menace de divulguer davantage si la rançon (**500 $** pour la DB complète) n'est pas payée sous 48 h.
 
 - **Analyse :**
-  L'exposition de données personnelles détaillées (noms, adresses précises, téléphones) couplées à l'historique d'achats permet le harcèlement physique, l'usurpation d'identité, le phishing ciblé et les cambriolages. Le jeu de données révèle également les relations commerciales et la chaîne d'approvisionnement d'entreprises marocaines (fournisseurs comme Maison des Parfums, Gurkan cargo, etc.). Le même acteur que pour la fuite de l'IMT Maroc indique une campagne soutenue contre des entités marocaines.
+  L'exposition de données personnelles détaillées (noms, adresses précises, téléphones) couplées à l'historique d'achats permet le harcèlement physique, l'usurpation d'identité, le phishing ciblé et les cambriolages. Le jeu de données révèle également des relations commerciales et la chaîne d'approvisionnement d'entreprises marocaines. Le même acteur a aussi publié les éléments concernant l'IMT, ce qui établit une activité répétée visant le Maroc sans démontrer un vecteur d'accès commun.
 
 #### 🇲🇦 Maroc - Mines d'Aouli
 
 - **Acteur / Groupe :** anisanas2
-- **Secteur :** Others
+- **Secteur :** Mines / Industries extractives
 - **Statut :** Data Fully Published
 - **Site web :** Non applicable (société en liquidation)
 
@@ -260,7 +260,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 #### 🇪🇬 Égypte - Sheraton Miramar Resort El Gouna
 
 - **Groupe ransomware :** Nightspire
-- **Secteur :** Others
+- **Secteur :** Hôtellerie / Tourisme
 - **Statut :** Claim - Unverified
 - **Site web :** [elgouna.com](https://www.elgouna.com/hotels/sheraton-miramar-resort-el-gouna)
 
@@ -271,7 +271,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 #### 🇹🇳 Tunisie - Sumitomo Electric Bordnetze, site SEBN Tunisia / Fejja
 
 - **Groupe ransomware :** Aurora
-- **Secteur :** Others
+- **Secteur :** Industrie / Automobile / Fabrication
 - **Statut :** Claim - Unverified
 - **Site web :** [sebn.com](https://www.sebn.com/en/locations/sebn-tn/)
 
@@ -350,7 +350,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 #### 🇲🇺 Maurice - Nundun Gopee & Co Ltd
 
 - **Groupe ransomware :** LockBit 5
-- **Secteur :** Others
+- **Secteur :** Construction / Immobilier
 - **Statut :** Claim - Unverified
 - **Site web :** [nundungopee.mu](http://www.nundungopee.mu)
 
@@ -529,7 +529,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 #### 🇹🇳 Tunisie - Centrale Laitière du Cap-Bon (CLC)
 
 - **Groupe ransomware :** SETTRA
-- **Secteur :** Others
+- **Secteur :** Alimentation / Boissons
 - **Statut :** Claim - Unverified
 - **Site web :** [clc-tn.com](https://clc-tn.com/)
 
@@ -552,7 +552,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 #### 🇲🇦 Maroc - Plateforme de gestion de startups, opérateur non identifié
 
 - **Acteur / Groupe :** Anisanas2
-- **Secteur :** Others
+- **Secteur :** Services aux entreprises / Technologie
 - **Statut :** Data Fully Published
 - **Site web :** Non identifié pour l'opérateur de la plateforme
 
@@ -616,7 +616,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 #### 🇲🇦 Maroc - Entreprise marocaine de livraison non identifiée
 
 - **Acteur / Groupe :** anisanas2
-- **Secteur :** Others
+- **Secteur :** Transport / Logistique
 - **Statut :** Data Fully Published
 - **Site web :** Non identifié
 
@@ -658,7 +658,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 #### 🇲🇦 Maroc - Stellantis Maroc
 
 - **Acteur / Groupe :** anisanas2
-- **Secteur :** Others
+- **Secteur :** Industrie / Automobile / Fabrication
 - **Statut :** Claim - Data Sample Published
 - **Site web :** [stellantis.com](https://www.stellantis.com)
 
@@ -694,7 +694,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 #### 🇿🇦 Afrique du Sud - Fidelity Security Group
 
 - **Groupe ransomware :** CMD Organization
-- **Secteur :** Others
+- **Secteur :** Services de sécurité
 - **Statut :** Claim - Unverified
 - **Site web :** [fidelity-services.com](https://fidelity-services.com/)
 

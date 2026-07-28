@@ -84,6 +84,13 @@ pie
 | Ingénierie / Construction | 3 |
 | Finance / Banque | 2 |
 | IT / Consulting | 2 |
+| Fintech | 1 |
+| E-commerce / Classifieds | 1 |
+| Sports / Leisure | 1 |
+| Aviation | 1 |
+| Gestion de patrimoine | 1 |
+| Recherche / Think tank | 1 |
+| Alimentation / Boissons | 1 |
 
 ```mermaid
 pie
@@ -96,6 +103,13 @@ pie
     "Ingénierie (3)" : 3
     "Finance (2)" : 2
     "IT/Consulting (2)" : 2
+    "Fintech (1)" : 1
+    "E-commerce (1)" : 1
+    "Sports (1)" : 1
+    "Aviation (1)" : 1
+    "Gestion de patrimoine (1)" : 1
+    "Recherche (1)" : 1
+    "Alimentation / Boissons (1)" : 1
 ```
 
 ## Ransomware vs Fuites par pays
@@ -118,11 +132,11 @@ xychart-beta
 
 ## Tendances CTI
 
-- L’Afrique du Sud reste l’épicentre des opérations ransomware en Afrique.
-- Le Maroc et l’Égypte concentrent les campagnes contre les institutions étatiques.
+- L’Afrique du Sud enregistre le volume le plus élevé en mars, avec 13 fiches.
+- Le Maroc et l’Égypte comptent chacun 8 fiches, dont des publications concernant des institutions publiques.
 - Les secteurs gouvernementaux et éducatifs représentent plus de 40 % des incidents.
-- Les groupes orientés exfiltration de données deviennent plus actifs que les ransomware classiques.
-- Les attaques supply chain et compromissions financières progressent rapidement.
+- Les fuites et intrusions représentent 22 des 41 fiches de mars.
+- Une exposition de chaîne d’approvisionnement et une intrusion financière directe sont documentées pendant le mois.
 
 ---
 

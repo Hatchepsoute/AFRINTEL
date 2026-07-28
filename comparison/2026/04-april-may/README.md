@@ -172,7 +172,7 @@ GRUB["Grubder\n(April dominant)"]:::low
 
 ### What decreased from April to May
 
-- **Morocco:** from 10+ incidents in April to 7 in May – still elevated, with a persistent data exfiltration campaign (RADEM Meknès, multi-entity bundle sale by anisanas2 and PKA291).
+- **Morocco:** from 10+ incidents in April to 7 in May – still elevated, with a persistent data exfiltration campaign (RADEM Meknès, multi-entity bundle sale by anisanas2).
 - **Kenya:** April included the Kenya Airports Authority 2TB claim; May had only 1 incident.
 - **Healthcare:** CNOPS Morocco and widespread health incidents in April did not repeat at the same scale in May.
 - **Total incident volume:** slight decline from 60 to 57, driven primarily by a reduction in ransomware (-4). Data leaks increased slightly (+1).

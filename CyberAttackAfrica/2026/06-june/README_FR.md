@@ -208,7 +208,15 @@ pie showData
 | **Education / University** | **4** | 10,0 % | ████ |
 | **E-commerce / Retail** | **4** | 10,0 % | ████ |
 | **Healthcare / Medical** | **3** | 7,5 % | ███ |
-| **Autres** | **11** | 27,5 % | ███████████ |
+| **Transport / Logistique** | **2** | 5,0 % | ██ |
+| **Industrie / Automobile / Fabrication** | **2** | 5,0 % | ██ |
+| **Organisations politiques / Partis** | **1** | 2,5 % | █ |
+| **Mines / Industries extractives** | **1** | 2,5 % | █ |
+| **Hôtellerie / Tourisme** | **1** | 2,5 % | █ |
+| **Construction / Immobilier** | **1** | 2,5 % | █ |
+| **Alimentation / Boissons** | **1** | 2,5 % | █ |
+| **Services aux entreprises / Technologie** | **1** | 2,5 % | █ |
+| **Services de sécurité** | **1** | 2,5 % | █ |
 | **Total** | **40** | **100 %** | |
 
 ```mermaid
@@ -219,14 +227,22 @@ pie showData
  "Education / University" : 4
  "E-commerce / Retail" : 4
  "Healthcare / Medical" : 3
- "Autres" : 11
+ "Transport / Logistique" : 2
+ "Industrie / Automobile / Fabrication" : 2
+ "Organisations politiques / Partis" : 1
+ "Mines / Industries extractives" : 1
+ "Hôtellerie / Tourisme" : 1
+ "Construction / Immobilier" : 1
+ "Alimentation / Boissons" : 1
+ "Services aux entreprises / Technologie" : 1
+ "Services de sécurité" : 1
 ```
 
 ### Acteurs de menace les plus actifs
 
 | Acteur / Groupe | Incidents | Activité principale | Graphe |
 | :--- | :---: | :--- | :--- |
-| **anisanas2** | **7** | Fuites / ventes de données (Maroc, campagne soutenue sur 3 mois) | 🟦🟦🟦🟦🟦🟦🟦 |
+| **anisanas2** | **7** | Fuites / ventes de données (Maroc, publications observées sur 3 mois) | 🟦🟦🟦🟦🟦🟦🟦 |
 | **DeadLock** | **4** | Ransomware (multi-pays : Gabon, Nigéria, Mayotte, Kenya) | 🟧🟧🟧🟧 |
 | **LockBit 5** | **3** | Ransomware (Botswana, Afrique du Sud, Maurice) | 🟧🟧🟧 |
 | **Nightspire** | **2** | Ransomware (Zimbabwe, Égypte) | 🟧🟧 |
@@ -246,7 +262,7 @@ pie showData
  "Krybit (2)" : 2
  "404Crew Cyber Team (2)" : 2
  "EvaN47 (2)" : 2
- "Autres (18)" : 18
+ "Fiches hors classement affiché (18)" : 18
 ```
 
 ---
@@ -308,7 +324,7 @@ pie showData
 **Observations clés :**
 - **anisanas2** représente à lui seul 35 % de toutes les fuites/ventes de données ce mois-ci (7 sur 20), toutes au Maroc. Aucun autre acteur n'approche ce niveau de concentration.
 - Les trois fuites nigérianes couvrent trois modèles de menace totalement différents en un mois : une exposition biométrique fintech (Jeroid.co), une fuite parlementaire hacktiviste (NILDS) et un dump d'identifiants militaires en clair (army.mil.ng). Cette diversité, dans un seul pays en quatre semaines, en dit plus sur l'étendue de la surface d'exposition nigériane qu'un incident isolé.
-- **EvaN47** touchant deux ministères libyens de l'éducation deux jours consécutifs (29-30 juin) est le signal de campagne coordonnée le plus clair du mois ; à suivre en juillet.
+- **EvaN47** est associé à deux publications concernant des ministères libyens de l'éducation les 29 et 30 juin. Cette séquence justifie une surveillance en juillet sans établir une campagne coordonnée.
 - Les listings **Convince** et **Governor** exposent ensemble des identifiants gouvernementaux ou policiers correspondant à 15 mentions pays réparties sur 11 pays africains. Aucun des deux incidents n'est une "fuite" au sens classique, ce sont deux produits commerciaux construits spécifiquement pour tromper Meta, Google, TikTok et X afin d'obtenir des données utilisateurs sous de faux prétextes légaux.
 
 ---
@@ -322,13 +338,22 @@ pie showData
 | **Education / University** | **4** | 10,0 % | ████ |
 | **E-commerce / Retail** | **4** | 10,0 % | ████ |
 | **Healthcare / Medical** | **3** | 7,5 % | ███ |
-| **Autres** | **11** | 27,5 % | ███████████ |
+| **Transport / Logistique** | **2** | 5,0 % | ██ |
+| **Industrie / Automobile / Fabrication** | **2** | 5,0 % | ██ |
+| **Organisations politiques / Partis** | **1** | 2,5 % | █ |
+| **Mines / Industries extractives** | **1** | 2,5 % | █ |
+| **Hôtellerie / Tourisme** | **1** | 2,5 % | █ |
+| **Construction / Immobilier** | **1** | 2,5 % | █ |
+| **Alimentation / Boissons** | **1** | 2,5 % | █ |
+| **Services aux entreprises / Technologie** | **1** | 2,5 % | █ |
+| **Services de sécurité** | **1** | 2,5 % | █ |
+| **Total** | **40** | **100 %** | |
 
 **Observations clés :**
-- **Importance du secteur public :** Government / Administration représente 30,0 % des incidents de juin, proche des 29,8 % du [jeu de données de mai](../05-may/victims_FR.md). Il reste la première catégorie sectorielle dans le jeu de données AFRINTEL de juin.
-- **La finance passe en deuxième position :** six incidents (Jeroid.co, Finam Gabon, Fidelity Pension Managers, First Mutual Holdings, Central Bank of Libya, MUPRAS RAM) traduisent un intérêt soutenu pour les cibles financières et d'assurance, des banques centrales aux institutions de microfinance.
+- **Government / Administration reste la première catégorie :** 12 incidents, soit 30,0 %, contre 20 sur 57 en mai (35,1 %).
+- **Finance / Banking double :** six incidents contre trois en mai, concernant la fintech, les retraites, la banque centrale et l'assurance mutualiste.
 - **Deux incidents de niveau sécurité nationale ce mois-ci :** la fuite de document classifié SANDF et le dump d'identifiants de l'armée nigériane relèvent tous deux de Gouvernement/Défense et impliquent tous deux une exposition directe de personnel militaire et de données opérationnelles, une association inhabituellement grave pour un seul mois.
-- **Santé et éducation restent des cibles intermédiaires stables** (7,5 % et 10,0 % respectivement), conformes aux mois précédents, sans escalade majeure observée.
+- **L'éducation et la santé totalisent sept fiches :** quatre dans Education / University et trois dans Healthcare / Medical. Ces seuls volumes mensuels ne suffisent pas à établir une tendance générale.
 
 ---
 
@@ -361,7 +386,7 @@ pie showData
 | Tunisie | 🟠 Moyen |
 | Libye | 🟠 Moyen (à surveiller : deux ministères touchés en deux jours, campagne possible en juillet) |
 | Tanzanie | 🟠 Moyen (incident unique, mais 10,2M d'enregistrements constituent une exposition d'échelle nationale) |
-| Autres | 🟡 Faible-Moyen |
+| Pays restants | 🟡 Faible-Moyen |
 
 ---
 
@@ -373,13 +398,13 @@ pie showData
 2. **Activité répétée ciblant le Maroc :** des publications attribuées à anisanas2 apparaissent en avril, mai et juin. La continuité est observée ; une opération coordonnée reste une hypothèse analytique.
 3. **Exposition fintech à forte sensibilité :** les éléments Jeroid.co suggèrent une défaillance grave de contrôle du stockage cloud impliquant des données KYC. Le volume complet et le vecteur d’accès initial restent non confirmés.
 4. **Hygiène des identifiants militaires et de défense :** les publications Armée nigériane et SANDF démontrent l’exposition de contenus sensibles. Les chemins de compromission et les défaillances de cycle de vie restent inconnus.
-5. **L'usurpation des forces de l'ordre en tant que service se consolide :** Convince et Governor exploitent deux niveaux du même modèle économique (adresses e-mail brutes contre comptes portails pleinement authentifiés) sur 15 mentions pays réparties entre 11 pays africains. C'est un vecteur d'abus transfrontalier qu'aucun CERT national ne peut résoudre seul ; cela nécessite un engagement direct avec Meta, Google, TikTok et X.
-6. **Le secteur éducatif libyen pourrait entrer dans une campagne soutenue :** deux ministères touchés par le même acteur deux jours consécutifs est le signal de campagne naissante le plus fort du mois.
+5. **Offres transfrontalières d'usurpation des forces de l'ordre :** les publications Convince et Governor contiennent 15 mentions pays couvrant 11 pays africains. Les fiches n'établissent pas de lien entre les deux vendeurs.
+6. **Publications consécutives concernant des ministères libyens :** deux ministères sont publiés par le même acteur les 29 et 30 juin. Cette séquence justifie une surveillance sans établir une campagne durable.
 
 ### Lacunes de renseignement
 
 - L'opérateur réel derrière les fuites de "plateforme de gestion de startups non identifiée" et "entreprise marocaine de livraison non identifiée" (toutes deux attribuées à anisanas2) n'a pas été établi ; sans plateforme nommée, les personnes concernées ne peuvent pas être notifiées de manière significative.
-- Plusieurs revendications ransomware de ce mois (Bouri Group, Access Dental, Sheraton Miramar, Great Foods, Central Bank of Libya, KeNHA, monoprix.tn, Fidelity Security Group et d'autres) ne comportent aucun échantillon publié ; AFRINTEL les enregistre comme des revendications, pas des compromissions confirmées, et leur statut réel reste inconnu.
+- Pour les publications Bouri Group, Access Dental, Sheraton Miramar, Great Foods, Central Bank of Libya, KeNHA, monoprix.tn et Fidelity Security Group, aucun échantillon de données n’était accessible pendant la collecte. Les fiches consignent les publications observées et les éléments disponibles à ce moment.
 - La raison pour laquelle la publication annoncée des données de Finam Gabon n'était pas accessible reste inconnue.
 - La portée réelle des catalogues d'identifiants Convince et Governor pourrait dépasser ce qui a été publiquement listé ; les deux pourraient représenter des inventaires partiels.
 
@@ -422,7 +447,7 @@ Les techniques suivantes sont des hypothèses défensives dérivées des éléme
 - **[T1552 / T1555] Hygiène des identifiants :** surveiller les logs infostealers et les dumps d'identifiants navigateur pour les entrées liées aux domaines .gov, .mil et .ac ; la fuite de l'armée nigériane a été extraite directement des gestionnaires d'identifiants Chrome/Edge.
 - **[T1078] Abus d'accès portail :** toute organisation disposant de l'autorité légale pour soumettre des demandes EDR ou de citation à comparaître aux grandes plateformes devrait exiger une vérification hors bande pour chaque demande, sans se fier uniquement au domaine e-mail du demandeur.
 - **[T1486] Suivi des ransomwares :** surveiller les leak sites de DeadLock, LockBit 5, Krybit, Nightspire et Qilin pour détecter précocement de nouvelles cibles africaines ; déployer des fichiers honeytoken sur les partages dans les secteurs à haut risque (gouvernement, finance).
-- **[Suivi de cluster d'acteur] :** mettre en place une veille dédiée sur anisanas2 compte tenu de la campagne soutenue de trois mois contre le Maroc ; corréler les futurs listings avec les TTP connus (forum, structure tarifaire, structure d'échantillon) pour une attribution précoce.
+- **[Suivi d'acteur] :** maintenir une veille dédiée sur anisanas2 car des publications liées au Maroc apparaissent pendant trois mois consécutifs ; comparer les prochaines publications selon le compte source, le prix annoncé et la structure des échantillons.
 
 ---
 
@@ -438,7 +463,7 @@ Les techniques suivantes sont des hypothèses défensives dérivées des éléme
 
 ## 12. Conclusion
 
-Juin 2026 recense 40 incidents, contre 57 dans le [jeu de données de mai](../05-may/victims_FR.md). Les publications ransomware atteignent la parité avec les fuites de données et ventes d’accès, tandis que le Maroc compte 9 des 40 incidents directs. Les publications attribuées à anisanas2 se poursuivent pour un troisième mois, mais leur coordination et leurs vecteurs d’accès restent inconnus. La revendication Jeroid.co et la publication d’identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin et justifient une revue défensive prioritaire.
+Juin 2026 recense 40 incidents, contre 57 dans le [jeu de données de mai](../05-may/victims_FR.md), soit une baisse de 17 fiches (-29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 20 (-51,2 %). Le Maroc compte 9 des 38 incidents directs ; deux fiches supplémentaires sont multi-pays. Les publications attribuées à anisanas2 se poursuivent pour un troisième mois. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

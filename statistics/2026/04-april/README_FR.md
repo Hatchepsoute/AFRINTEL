@@ -130,10 +130,11 @@ xychart-beta
 
 | Région | Pays inclus | Incidents totaux | Ransomwares | Fuites de données |
 |---|---|---:|---:|---:|
-| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 (60 %) | 13 | 23 |
+| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 occurrences géographiques | 11 | 25 |
 | Afrique de l’Ouest | 🇳🇬 Nigeria, 🇧🇯 Bénin, 🇸🇳 Sénégal, 🇬🇭 Ghana | 9 (15 %) | 2 | 7 |
-| Afrique australe | 🇿🇦 Afrique du Sud, 🇦🇴 Angola, 🇧🇼 Botswana, 🇿🇲 Zambie | 11 (18 %) | 5 | 6 |
+| Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇲 Zambie | 11 (18 %) | 5 | 6 |
 | Afrique de l’Est | 🇪🇹 Éthiopie, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Ouganda | 5 (8 %) | 2 | 3 |
+| Afrique centrale | 🇦🇴 Angola | 1 occurrence géographique | 0 | 1 |
 
 > Note : l’incident multi-pays impliquant l’Angola, l’Afrique du Sud et le Nigeria est comptabilisé dans les régions concernées pour l’analyse d’exposition régionale. Cette vue régionale représente donc une lecture d’exposition, pas un total dédupliqué strict.
 

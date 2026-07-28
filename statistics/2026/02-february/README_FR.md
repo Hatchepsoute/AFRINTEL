@@ -16,9 +16,9 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 | Métrique | Valeur |
 |----------|--------|
 | **Total des incidents** | 20 |
-| **Pays touchés** | 13 |
-| **Acteurs de menace actifs** | 10 |
-| **Volume total de données exfiltrées** | ~147 To |
+| **Pays touchés** | 14 |
+| **Acteurs de menace actifs** | 11 |
+| **Plus grand volume revendiqué** | 139 To, DAF Sénégal |
 
 ---
 
@@ -26,7 +26,7 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 
 | Pays | Nombre d'incidents | Principaux acteurs |
 |------|-------------------|---------------------|
-| 🇿🇦 **Afrique du Sud** | 3 | `thegentlemen` (2), `Lockbit5` (1), `vect` (1) |
+| 🇿🇦 **Afrique du Sud** | 3 | `thegentlemen` (1), `Lockbit5` (1), `vect` (1) |
 | 🇪🇬 **Égypte** | 3 | `thegentlemen` (1), `lockbit5` (1), `payload` (1) |
 | 🇳🇬 **Nigeria** | 2 | `killsec` (1), `incransom` (1) |
 | 🇬🇭 **Ghana** | 2 | `0APT` (1), `thegentlemen` (1) |
@@ -49,7 +49,7 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 |--------|-----------|-------------|--------------|
 | `thegentlemen` | **5** | Kenya, Ghana, Égypte, Afrique du Sud (×2), Tunisie | ~? |
 | `0APT` | **3** | Somalie, Ghana, Tanzanie | **~7 To** |
-| `lockbit5` | **2** | Maurice, Égypte | ~? |
+| `lockbit5` | **3** | Maurice, Égypte, Afrique du Sud | Non agrégé |
 | `incransom` | **2** | Nigeria, Côte d'Ivoire | **~210 Go** |
 | `The Green Blood Group` | **1** | Sénégal | **139 To** ⚠️ |
 | `killsec` | **1** | Nigeria | ~? |
@@ -109,7 +109,7 @@ flowchart TB
     CI["🇨🇮 Côte d'Ivoire"]
   end
 
-  subgraph North["Afrique du Nord (4 incidents)"]
+  subgraph North["Afrique du Nord (6 incidents)"]
   
     EG["🇪🇬 Égypte"]
     MA["🇲🇦 Maroc"]
@@ -124,7 +124,7 @@ flowchart TB
     KE["🇰🇪 Kenya"]
   end
 
-  subgraph South["Afrique Australe (4 incidents)"]
+  subgraph South["Afrique australe (5 incidents)"]
   
     ZA["🇿🇦 Afrique du Sud"]
     NA["🇳🇦 Namibie"]

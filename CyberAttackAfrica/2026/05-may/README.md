@@ -10,16 +10,16 @@
 
 ## 1. Executive summary
 
-May 2026 recorded **57 publicly claimed cyber incidents** across Africa: **16 ransomware attacks** and **41 data leaks / access sales**. The month was marked by a sustained assault on the Egyptian education sector, a coordinated campaign against South African public institutions (OpSouthAfrica), the dominance of the **Databasehooligan** data broker across four countries, and three NightSpire ransomware hits against Egyptian targets in a single month.
+May 2026 recorded **57 publicly reported or claimed cyber incidents** across Africa: **16 ransomware listings or disclosures** and **41 data leaks / access sales**. The month included repeated claims affecting Egyptian education entities, publications under the OpSouthAfrica banner, sustained Databasehooligan sales across four countries and three NightSpire victim listings concerning Egyptian organizations.
 
 Key findings:
-- **16 ransomware attacks (28.1%)** and **41 data leaks / access sales (71.9%)**.
+- **16 ransomware listings or disclosures (28.1%)** and **41 data leaks / access sales (71.9%)**.
 - **12 countries** affected, plus 3 multi-country incidents; **Egypt** (16 incidents), **South Africa** (14), **Morocco** (7), and **Tunisia** (5) account for 73.7% of victims.
-- **TheGentlemen** ransomware group hit four countries in one month (Egypt, Tunisia, Ghana, Ivory Coast); **NightSpire** claimed three Egyptian targets.
-- **Databasehooligan** dominated data broker activity with 8 victims across Tunisia, South Africa, Egypt, and Algeria.
-- Egyptian education sector under systemic attack: Ministry of Education (26.8M student records), Professional Academy for Teachers (1.2M teacher records), Mansoura University (989K records), and a joint Educational & HR database (37 GB).
-- Tanzania Police webmail leaked: 10,000+ officer accounts with plaintext passwords offered for sale.
-- Trésor Public du Sénégal (national treasury): AuditTeam ransomware with confirmed data exfiltration (~1.66M records across three Oracle databases plus 18 months of SICA payroll files).
+- Claims attributed to **TheGentlemen** concerned organizations in four countries in one month (Egypt, Tunisia, Ghana, Ivory Coast); **NightSpire** claimed three Egyptian targets.
+- **Databasehooligan** was associated with the highest number of dataset sale offers, with 8 organizations across Tunisia, South Africa, Egypt, and Algeria.
+- Claims concerning Egyptian education included the Ministry of Education (26.8M student records), Professional Academy for Teachers (1.2M teacher records), Mansoura University (989K records), and a joint Educational & HR database (37 GB). The complete claimed volumes were not independently confirmed.
+- Tanzania Police webmail: an actor offered a dataset allegedly containing 10,000+ officer accounts with plaintext passwords. AFRINTEL did not test the credentials.
+- Trésor Public du Sénégal: analysed files support a claim involving approximately 1.66M records, but do not independently establish the full intrusion sequence, encryption or ransomware deployment.
 
 ### Victim list
 
@@ -46,7 +46,7 @@ Key findings:
 |---|---|
 | Total victims | 57 |
 | Countries affected | 18 (12 direct + 6 via multi-country incidents) |
-| Distinct actors | 25+ |
+| Distinct actors | 31 named sources or actors |
 | Ransomware incidents | 16 (28.1%) |
 | Data leaks / access sales | 41 (71.9%) |
 
@@ -68,9 +68,9 @@ Key findings:
 | **10** | 🇨🇮 Ivory Coast | **1** | █ |
 | **11** | 🇰🇪 Kenya | **1** | █ |
 | **12** | 🇸🇳 Senegal | **1** | █ |
-| **–** | 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
-| **–** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
-| **–** | 🇪🇬 Egypt / 🇱🇾 Libya (Passport scans) | **1** | █ |
+| **-** | 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
+| **-** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
+| **-** | 🇪🇬 Egypt / 🇱🇾 Libya (Passport scans) | **1** | █ |
 
 ```mermaid
 pie showData
@@ -116,9 +116,9 @@ pie showData
 | **6** | 🇹🇿 Tanzania | **2** | ██ |
 | **7** | 🇪🇹 Ethiopia | **1** | █ |
 | **8** | 🇰🇪 Kenya | **1** | █ |
-| **–** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | █ |
-| **–** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | █ |
-| **–** | 🇪🇬🇱🇾 Passport scans | **1** | █ |
+| **-** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | █ |
+| **-** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | █ |
+| **-** | 🇪🇬🇱🇾 Passport scans | **1** | █ |
 
 ### Ransomware vs. data leaks comparison by country
 
@@ -164,35 +164,43 @@ pie showData
 
 | Activity sector | Incidents | Share (%) | Chart |
 | :--- | :---: | :---: | :--- |
-| **Government / Administration** | **17** | 29.8% | █████████████████ |
-| **Recruitment / Personal Data** | **8** | 14.0% | ████████ |
-| **Education / University** | **5** | 8.8% | █████ |
-| **Finance / Banking** | **4** | 7.0% | ████ |
-| **Food / Beverage / Hospitality** | **4** | 7.0% | ████ |
-| **Logistics / Transport** | **3** | 5.3% | ███ |
-| **Automotive** | **3** | 5.3% | ███ |
-| **E-commerce / Digital** | **3** | 5.3% | ███ |
-| **Telecom / ICT** | **3** | 5.3% | ███ |
-| **NGO / Charity** | **2** | 3.5% | ██ |
-| **Healthcare** | **2** | 3.5% | ██ |
-| **Others** | **3** | 5.3% | ███ |
+| **Government / Administration** | **20** | 35.09% | ████████████████████ |
+| **Human Resources / Recruitment** | **5** | 8.77% | █████ |
+| **Industry / Automotive / Manufacturing** | **5** | 8.77% | █████ |
+| **E-commerce / Retail** | **4** | 7.02% | ████ |
+| **Education / University** | **3** | 5.26% | ███ |
+| **Finance / Banking** | **3** | 5.26% | ███ |
+| **Telecommunications** | **3** | 5.26% | ███ |
+| **Oil & Energy** | **2** | 3.51% | ██ |
+| **Food / Beverage / Restaurants** | **2** | 3.51% | ██ |
+| **Transport / Logistics** | **2** | 3.51% | ██ |
+| **NGO / Social Welfare** | **2** | 3.51% | ██ |
+| **Hospitality / Events** | **2** | 3.51% | ██ |
+| **Healthcare / Medical** | **1** | 1.75% | █ |
+| **Sports / Federations** | **1** | 1.75% | █ |
+| **Personal Data Aggregation** | **1** | 1.75% | █ |
+| **Business Services** | **1** | 1.75% | █ |
 | **Total** | **57** | **100%** | |
 
 ```mermaid
 pie showData
  title Sector distribution - May 2026
- "Government / Administration" : 17
- "Recruitment / Personal Data" : 8
- "Education / University" : 5
- "Finance / Banking" : 4
- "Food / Beverage / Hospitality" : 4
- "Logistics / Transport" : 3
- "Automotive" : 3
- "E-commerce / Digital" : 3
- "Telecom / ICT" : 3
- "NGO / Charity" : 2
- "Healthcare" : 2
- "Others" : 3
+ "Government / Administration" : 20
+ "Human Resources / Recruitment" : 5
+ "Industry / Automotive / Manufacturing" : 5
+ "E-commerce / Retail" : 4
+ "Education / University" : 3
+ "Finance / Banking" : 3
+ "Telecommunications" : 3
+ "Oil & Energy" : 2
+ "Food / Beverage / Restaurants" : 2
+ "Transport / Logistics" : 2
+ "NGO / Social Welfare" : 2
+ "Hospitality / Events" : 2
+ "Healthcare / Medical" : 1
+ "Sports / Federations" : 1
+ "Personal Data Aggregation" : 1
+ "Business Services" : 1
 ```
 
 ### Most prolific threat actors and groups
@@ -200,8 +208,8 @@ pie showData
 | Threat actor / Group | Incidents | Primary activity | Chart |
 | :--- | :---: | :--- | :--- |
 | **Databasehooligan** | **8** | Data leaks / sales | 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **TheGentlemen** | **4** | Ransomware | 🟧🟧🟧🟧 |
 | **404Crew Cyber Team** | **5** | Data leaks (coalitions) | 🟦🟦🟦🟦🟦 |
+| **TheGentlemen** | **4** | Ransomware | 🟧🟧🟧🟧 |
 | **NightSpire** | **3** | Ransomware | 🟧🟧🟧 |
 | **INT3X** | **2** | Data leaks | 🟦🟦 |
 | **Keymous** | **2** | Data leaks / access sales | 🟦🟦 |
@@ -215,20 +223,20 @@ pie showData
 pie showData
  title Most active threat actors - May 2026
  "Databasehooligan (8)" : 8
- "TheGentlemen (4)" : 4
  "404Crew Cyber Team (5)" : 5
+ "TheGentlemen (4)" : 4
  "NightSpire (3)" : 3
  "INT3X (2)" : 2
  "Keymous (2)" : 2
  "cc5ab (2)" : 2
  "NullSec Nigeria (2)" : 2
  "anisanas2 (2)" : 2
- "Others (27)" : 27
+ "Records outside displayed ranking (27)" : 27
 ```
 
 ---
 
-## 4. Geographic summary
+### Geographic summary
 
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
@@ -239,11 +247,11 @@ pie showData
 
 ---
 
-## 5. Detailed analysis by incident type
+## 4. Detailed analysis by incident type
 
-### 5.1 Ransomware (16 incidents)
+### 4.1 Ransomware (16 incidents)
 
-| Rank | Country | Attacks | Main threat actors |
+| Rank | Country | Listings or disclosures | Main threat actors |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇪🇬 Egypt | **7** | NightSpire (3), TheGentlemen, Qilin, LockBit 5.0, Lamashtu |
 | **2** | 🇳🇬 Nigeria | **3** | MedusaLocker, KillSec, 0day Syndicate |
@@ -253,61 +261,65 @@ pie showData
 | **6** | 🇸🇳 Senegal | **1** | AuditTeam |
 | **7** | 🇨🇮 Ivory Coast | **1** | TheGentlemen |
 
-**Observations:** **NightSpire** claimed three Egyptian targets in the same month (Papa John's, Rawaj Consumer Finance, B Investments), establishing itself as the leading ransomware group on the continent for May. **TheGentlemen** demonstrated notable geographic reach, hitting four countries in a single month. The attack on the **Trésor Public du Sénégal** represents the highest-impact government ransomware incident of the month. Technical analysis confirms double-extortion: data was exfiltrated from two internal servers (Oracle DB + SICA payroll system) approximately 9 days before the ransomware was deployed, yielding approximately 1,659,735 records including a national taxpayer registry (~960K), a payroll register (~40K), and a full public payment order database (~659K) containing NINEA identifiers and beneficiary banking coordinates.
+**Observations:** NightSpire published three Egyptian victim listings during the month. TheGentlemen showed the widest geographic distribution, with claims in four countries. For the Trésor Public du Sénégal, the analysed files support the data-exposure claim, but do not independently confirm ransomware deployment, encryption or the complete intrusion sequence.
 
-### 5.2 Data leaks & access sales (41 incidents)
+### 4.2 Data leaks & access sales (41 incidents)
 
 | Rank | Country | Incidents | Main actors |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇿🇦 South Africa | **13** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
 | **2** | 🇪🇬 Egypt | **9** | INT3X, Revesky, cc5ab, DR-X-LOL, CrowStealer, bigF, Keymous, Databasehooligan |
-| **3** | 🇲🇦 Morocco | **7** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2, PKA291 |
+| **3** | 🇲🇦 Morocco | **7** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2 |
 | **4** | 🇹🇳 Tunisia | **3** | Databasehooligan (3) |
 | **5** | 🇩🇿 Algeria | **2** | kamalsheikhxx, Databasehooligan |
 | **6** | 🇹🇿 Tanzania | **2** | XOverStm, Kampuchean |
 | **7** | 🇪🇹 Ethiopia | **1** | 404Crew Cyber Team |
-| **–** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | attackercompany |
-| **–** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | Keymous |
-| **–** | 🇪🇬🇱🇾 Passport scans | **1** | raylie |
+| **-** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | attackercompany |
+| **-** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | Keymous |
+| **-** | 🇪🇬🇱🇾 Passport scans | **1** | raylie |
 
 **Key observations:**
 - **Databasehooligan** targeted CRM-structured databases across four countries, selling between $900 and $1,400 per dataset, with victims including Telkom SA (742K records), Wanderers Club SA (674K), Wuzzuf.net Egypt (672K), MyTelnet Tunisia, OptionCarriere.tn, Keejob, MIDAS SA, and OGEBC Algeria.
 - The **404Crew Cyber Team** coalition (with NullSec Nigeria, NullSec Philippines, and Infernalis) ran a sustained campaign against South African institutions under the "OpSouthAfrica" banner, targeting Ephraim Mogale Municipality, DCS, Bellavista School, SITA, SARS, mevent., CERVI, and Sheriff Randburg West. The same actor also advertised Ethiopia's NGO Registration Database for sale.
-- Egypt's **education sector** faced a systemic breach wave: the Ministry of Education (26.8M student records), Professional Academy for Teachers (1.2M teacher records), Mansoura University (989K students), and a combined Educational & HR database (37 GB).
+- Claims concerning Egypt’s education sector referenced four datasets or entities. Their temporal proximity warrants monitoring but does not establish a shared vulnerability or coordinated campaign.
 - **Tanzania Police** webmail was put up for sale with 10,000+ officer accounts and plaintext passwords, posing critical law enforcement exposure.
 
 ---
 
-## 6. Sectoral impact
+## 5. Sectoral impact
 
 | Activity sector | Incidents | Share (%) | Visual impact |
 | :--- | :---: | :---: | :--- |
-| **Government / Administration** | **17** | 29.8% | █████████████████ |
-| **Recruitment / Personal Data** | **8** | 14.0% | ████████ |
-| **Education / University** | **5** | 8.8% | █████ |
-| **Finance / Banking** | **4** | 7.0% | ████ |
-| **Food / Beverage / Hospitality** | **4** | 7.0% | ████ |
-| **Logistics / Transport** | **3** | 5.3% | ███ |
-| **Automotive** | **3** | 5.3% | ███ |
-| **E-commerce / Digital** | **3** | 5.3% | ███ |
-| **Telecom / ICT** | **3** | 5.3% | ███ |
-| **NGO / Charity** | **2** | 3.5% | ██ |
-| **Healthcare** | **2** | 3.5% | ██ |
-| **Others** | **3** | 5.3% | ███ |
+| **Government / Administration** | **20** | 35.09% | ████████████████████ |
+| **Human Resources / Recruitment** | **5** | 8.77% | █████ |
+| **Industry / Automotive / Manufacturing** | **5** | 8.77% | █████ |
+| **E-commerce / Retail** | **4** | 7.02% | ████ |
+| **Education / University** | **3** | 5.26% | ███ |
+| **Finance / Banking** | **3** | 5.26% | ███ |
+| **Telecommunications** | **3** | 5.26% | ███ |
+| **Oil & Energy** | **2** | 3.51% | ██ |
+| **Food / Beverage / Restaurants** | **2** | 3.51% | ██ |
+| **Transport / Logistics** | **2** | 3.51% | ██ |
+| **NGO / Social Welfare** | **2** | 3.51% | ██ |
+| **Hospitality / Events** | **2** | 3.51% | ██ |
+| **Healthcare / Medical** | **1** | 1.75% | █ |
+| **Sports / Federations** | **1** | 1.75% | █ |
+| **Personal Data Aggregation** | **1** | 1.75% | █ |
+| **Business Services** | **1** | 1.75% | █ |
+| **Total** | **57** | **100%** | |
 
 **Key observations:**
-- **Government dominance:** The public sector (Government + Education) accounts for 38.6% of all May incidents, confirming the persistent targeting of African state infrastructure.
-- **Education under systemic assault:** Egypt's education sector alone contributed 4 of the 5 education incidents, with total exposure exceeding 28 million student and teacher records.
-- **Recruitment / Personal Data surge:** Databasehooligan's focus on CRM-structured recruitment and consumer platforms (Keejob, MyTelnet, OptionCarriere.tn, Wuzzuf.net, MIDAS, Telkom, Wanderers Club) drove the second-largest sector.
-- **Critical infrastructure targeted:** The Trésor Public du Sénégal confirms double-extortion with ~1.66M records exfiltrated (national taxpayer registry, payroll, payment orders with NINEA and banking data). The Tanzania Police webmail sale represents a parallel threat to law enforcement operational security.
+- Government / Administration accounts for 20 incidents. The former residual category has been fully reclassified into eight explicit sectors, led by Human Resources / Recruitment and Industry / Automotive / Manufacturing with 5 incidents each.
+- Education / University records 3 incidents. Claims affecting mixed government and education datasets are classified under their primary Government / Administration sector.
+- The analysed Trésor Public files and the Tanzania Police webmail offer are high-sensitivity public-sector cases, but neither establishes the complete intrusion path.
 
 ---
 
-## 7. Threat actor profile
+## 6. Threat actor profile
 
 | Threat actor | Type | Incidents | Primary targets |
 | :--- | :--- | :---: | :--- |
-| **Databasehooligan** | Data broker | **8** | CRM/recruitment databases (multi-country) |
+| **Databasehooligan** | Account offering datasets for sale | **8** | CRM/recruitment databases (multi-country) |
 | **TheGentlemen** | Ransomware | **4** | Industry, automotive, food (4 countries) |
 | **404Crew Cyber Team** | Data leak (coalitions) | **5+** | South African public institutions, Ethiopian civil society registry |
 | **NightSpire** | Ransomware | **3** | Egyptian finance and food services |
@@ -322,9 +334,8 @@ pie showData
 - **Lamashtu** (Luna Group Egypt)
 - **Kampuchean** (Tanzania Police webmail)
 - **JBT2026** (Watiqa.ma Morocco civil registry)
-- **PKA291** (coordinated Moroccan database extraction campaign)
 
-### 7.1 Risk assessment
+### 6.1 Risk assessment
 
 | Country | Risk level |
 |---|---|
@@ -335,23 +346,23 @@ pie showData
 | Nigeria | 🟠 Medium-High |
 | Algeria | 🟡 Medium |
 | Tanzania | 🟠 Medium-High |
-| Others | 🟡 Low-Medium |
+| Remaining countries | 🟡 Low-Medium |
 
 ---
 
-## 8. Key trends
+## 7. Key trends and intelligence gaps
 
-- **Education sector as strategic target:** The simultaneous breach of four Egyptian education entities exposing tens of millions of student and teacher records suggests either a coordinated campaign or opportunistic exploitation of shared infrastructure vulnerabilities.
+- **Repeated education-sector claims:** Four Egyptian education-related records were documented. A coordinated campaign or shared infrastructure weakness remains an analytical hypothesis.
 - **"OpSouthAfrica" coalition campaign:** The 404Crew Cyber Team, NullSec Nigeria, and Infernalis targeted at least eight South African institutions in May, combining data leak publication with political messaging around xenophobia grievances.
-- **Databasehooligan CRM sweep:** The same data broker sold structured CRM or consumer databases from eight organizations across Tunisia, South Africa, Egypt, and Algeria. A shared vulnerability or common platform remains possible but is not established by the available evidence.
-- **NightSpire concentration on Egypt:** Three Egyptian targets in one month by a single ransomware group suggests a focused campaign against Egyptian business infrastructure, particularly in finance and consumer services.
+- **Databasehooligan dataset sale offers:** Eight structured CRM or consumer datasets concerning organizations in Tunisia, South Africa, Egypt, and Algeria were offered for sale. The source records do not establish a shared platform or common access vector.
+- **NightSpire concentration on Egypt:** Three victim listings concerned Egyptian organizations. This is a monitoring signal, not proof of a coordinated campaign.
 - **Government email accounts as access vectors:** Moroccan government credential exposure (827K lines), Tanzanian police webmail sale, and multi-country EDR-fraud account offers signal a growing market for law enforcement impersonation.
 - **Multi-country health system compromise:** The DHIS2 access sale affecting seven countries (Mozambique, Liberia, Nigeria, Bhutan, Honduras, Togo, Sierra Leone) represents a critical threat to public health data sovereignty.
-- **Repeated targeting of Morocco:** Two large-scale claims were recorded in the final ten days of May: RADEM Meknès, involving a claimed 1.1 million documents, and a bundled sale advertised as containing more than 12 million lines and documents from several institutions and companies. The anisanas2/PKA291 actor had also published Morocco-related claims in April 2026, indicating repeated activity without establishing a shared access vector.
+- **Repeated targeting of Morocco:** Two large-scale claims were recorded in the final ten days of May: RADEM Meknès, involving a claimed 1.1 million documents, and a bundled sale advertised as containing more than 12 million lines and documents from several institutions and companies. The anisanas2 actor had also published Morocco-related claims in April 2026, indicating repeated activity without establishing a shared access vector.
 
 ---
 
-## 9. MITRE ATT&CK mapping (contextual)
+## 8. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Analytical scope |
 | :--- | :--- | :--- |
@@ -363,7 +374,7 @@ pie showData
 
 > These techniques are defensive hypotheses. A claim, data sale or leak-site publication is not sufficient to treat them as observed.
 
-## 10. Recommendations
+## 9. Recommendations
 
 - **Governments:** Enforce MFA on all administrative and educational portals; audit credential exposure on underground forums; treat the Moroccan gov credential leak as a systemic identity risk requiring immediate password resets across all affected platforms.
 - **Educational institutions:** Isolate student and staff databases from public-facing web infrastructure; encrypt sensitive data at rest; implement audit logging on administrative platforms.
@@ -373,7 +384,7 @@ pie showData
 
 ---
 
-## 11. SOC tactical recommendations
+## 10. SOC tactical recommendations
 
 - **[T1078] Credential monitoring:** Correlate dark web leak data against internal user directories; flag accounts exposed in Moroccan gov, Tanzania Police, and Stats SA claims.
 - **[T1190] API exposure:** Implement authenticated access controls on all public-facing APIs; scan for unauthenticated S3 buckets and exposed admin panels.
@@ -382,9 +393,17 @@ pie showData
 
 ---
 
+## 11. Strategic recommendations
+
+- Establish cross-sector notification channels for repeated claims affecting public institutions and critical services.
+- Require periodic audits of cloud storage, exposed APIs and privileged accounts in government, education and financial services.
+- Coordinate with platforms and national CERTs on abuse of government or law-enforcement identities.
+
+---
+
 ## 12. Conclusion
 
-May 2026 confirmed the continued maturation of threat actor activity targeting Africa, with both volume (57 incidents) and severity (millions of records, critical infrastructure ransomware) remaining high. Egypt and South Africa jointly absorbed 52.6% of recorded incidents. The systematic exposure of education records in Egypt and the sustained OpSouthAfrica coalition campaign represent the defining threat patterns of the month. The rise of Databasehooligan as a dominant data broker and NightSpire as an emerging ransomware group signals the ongoing evolution of the criminal ecosystem.
+May 2026 recorded 57 publicly reported or claimed incidents, down from 60 in April (-3; -5.0%). Ransomware records decreased from 20 to 16 (-20.0%), while data leaks and access sales increased from 40 to 41 (+2.5%). Egypt and South Africa accounted for 52.6% of direct incidents. Repeated education-sector claims in Egypt, publications under the OpSouthAfrica banner and dataset sale offers associated with Databasehooligan across four countries were the main observed patterns.
 
-**AFRINTEL** – African Cyber Threat Intelligence
+**AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

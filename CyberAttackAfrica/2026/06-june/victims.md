@@ -52,7 +52,7 @@ June 2026 includes **40 unique incidents**: **20 ransomware incidents** and **20
 #### 🇿🇦 South Africa - African National Congress (ANC)
 
 - **Ransomware group:** Black X
-- **Sector:** Others
+- **Sector:** Political Organizations / Parties
 - **Website:** [anc1912.org.za](https://www.anc1912.org.za/)
 - **Status:** Data Fully Published
 
@@ -119,7 +119,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 #### 🇲🇦 Morocco - Tlog.ma [Data Leak / Sale]
 
 - **Actor / Group:** anisanas2
-- **Sector:** Others
+- **Sector:** Transport / Logistics
 - **Status:** Claim - Data Sample Published
 - **Website:** [tlog.ma](https://tlog.ma)
 
@@ -132,12 +132,12 @@ The consistency and volume of the files strengthen the credibility of a data exf
   The actor threatens to leak more if ransom (**$500** for full DB) is not paid within 48 hours.
 
 - **Analysis:**
-  Exposure of detailed client PII (full names, precise addresses, phone numbers) combined with purchase histories enables physical harassment, identity theft, targeted phishing, and residential burglary. The dataset reveals the supply chain and commercial relationships of Moroccan businesses (suppliers like Maison des Parfums, Gurkan cargo, etc.). The actor is the same as the previous IMT Morocco breach, indicating a sustained campaign against Moroccan entities.
+  Exposure of detailed client PII (full names, precise addresses, phone numbers) combined with purchase histories enables physical harassment, identity theft, targeted phishing, and residential burglary. The dataset reveals the supply chain and commercial relationships of Moroccan businesses. The same actor also published the IMT material, establishing repeated Morocco-focused activity without demonstrating a shared access vector.
 
 #### 🇲🇦 Morocco - Mines d'Aouli
 
 - **Actor / Group:** anisanas2
-- **Sector:** Others
+- **Sector:** Mining / Extractive Industries
 - **Status:** Data Fully Published
 - **Website:** Not applicable (company under liquidation)
 
@@ -259,7 +259,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 #### 🇪🇬 Egypt - Sheraton Miramar Resort El Gouna
 
 - **Ransomware group:** Nightspire
-- **Sector:** Others
+- **Sector:** Hospitality / Tourism
 - **Status:** Claim - Unverified
 - **Website:** [elgouna.com](https://www.elgouna.com/hotels/sheraton-miramar-resort-el-gouna)
 
@@ -270,7 +270,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 #### 🇹🇳 Tunisia - Sumitomo Electric Bordnetze, SEBN Tunisia / Fejja site
 
 - **Ransomware group:** Aurora
-- **Sector:** Others
+- **Sector:** Industry / Automotive / Manufacturing
 - **Status:** Claim - Unverified
 - **Website:** [sebn.com](https://www.sebn.com/en/locations/sebn-tn/)
 
@@ -349,7 +349,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 #### 🇲🇺 Mauritius - Nundun Gopee & Co Ltd
 
 - **Ransomware group:** LockBit 5
-- **Sector:** Others
+- **Sector:** Construction / Real Estate
 - **Status:** Claim - Unverified
 - **Website:** [nundungopee.mu](http://www.nundungopee.mu)
 
@@ -529,7 +529,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 #### 🇹🇳 Tunisia - Centrale Laitière du Cap-Bon (CLC)
 
 - **Ransomware group:** SETTRA
-- **Sector:** Others
+- **Sector:** Food / Beverage
 - **Status:** Claim - Unverified
 - **Website:** [clc-tn.com](https://clc-tn.com/)
 
@@ -547,12 +547,12 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
   Avito.ma is a Moroccan classified advertising platform used by individuals and businesses to sell vehicles, real estate, electronic devices and other products.
 
 - **Analysis:**
-  PKA291 claims to have collected the complete Avito.ma archive and is offering the full database for USD 800. The shared document is a sample containing 200,000 listings and 17 fields, including seller information, phone numbers, listing identifiers, titles, prices, locations and publication dates. The sample contains approximately 47,695 distinct phone numbers and data collected between 24 and 25 June 2026. Its structure mainly indicates automated scraping of publicly available listings, with no visible evidence of access to Avito.ma's internal systems. No passwords, session tokens or authentication credentials were observed. The information could nevertheless support spam, smishing, targeted fraud and seller profiling. The sample appears structurally consistent, but it does not confirm the existence or completeness of the full database offered for sale. Avito.ma had already been the subject of a publication in May 2026, but the sample released at that time contained only around ten records attributed to customers or sellers.
+  anisanas2 claims to have collected the complete Avito.ma archive and is offering the full database for USD 800. The shared document is a sample containing 200,000 listings and 17 fields, including seller information, phone numbers, listing identifiers, titles, prices, locations and publication dates. The sample contains approximately 47,695 distinct phone numbers and data collected between 24 and 25 June 2026. Its structure mainly indicates automated scraping of publicly available listings, with no visible evidence of access to Avito.ma's internal systems. No passwords, session tokens or authentication credentials were observed. The information could nevertheless support spam, smishing, targeted fraud and seller profiling. The sample appears structurally consistent, but it does not confirm the existence or completeness of the full database offered for sale. Avito.ma had already been the subject of a publication in May 2026, but the sample released at that time contained only around ten records attributed to customers or sellers.
 
 #### 🇲🇦 Morocco - Startup management platform, operator unidentified
 
 - **Actor / Group:** anisanas2
-- **Sector:** Others
+- **Sector:** Business Services / Technology
 - **Status:** Data Fully Published
 - **Website:** Platform operator unidentified
 
@@ -616,7 +616,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 #### 🇲🇦 Morocco - Unidentified Moroccan delivery company
 
 - **Actor / Group:** anisanas2
-- **Sector:** Others
+- **Sector:** Transport / Logistics
 - **Status:** Data Fully Published
 - **Website:** Not identified
 
@@ -658,7 +658,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 #### 🇲🇦 Morocco - Stellantis Morocco
 
 - **Actor / Group:** anisanas2
-- **Sector:** Others
+- **Sector:** Industry / Automotive / Manufacturing
 - **Status:** Claim - Data Sample Published
 - **Website:** [stellantis.com](https://www.stellantis.com)
 
@@ -694,7 +694,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 #### 🇿🇦 South Africa - Fidelity Security Group
 
 - **Ransomware group:** CMD Organization
-- **Sector:** Others
+- **Sector:** Security Services
 - **Status:** Claim - Unverified
 - **Website:** [fidelity-services.com](https://fidelity-services.com/)
 

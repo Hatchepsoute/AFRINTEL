@@ -10,9 +10,9 @@ This folder contains detailed statistics of ransomware incidents recorded across
 | Metric | Value |
 |----------|--------|
 | **Total incidents** | 20 |
-| **Countries impacted** | 13 |
-| **Active threat actors** | 10 |
-| **Total exfiltrated data volume** | ~147 TB |
+| **Countries impacted** | 14 |
+| **Active threat actors** | 11 |
+| **Largest claimed volume** | 139 TB, DAF Senegal |
 
 ---
 
@@ -20,7 +20,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 | Country | Number of Incidents | Main Actors |
 |------|-------------------|---------------------|
-| 🇿🇦 **South Africa** | 3 | `thegentlemen` (2), `lockbit5` (1), `vect` (1) |
+| 🇿🇦 **South Africa** | 3 | `thegentlemen` (1), `lockbit5` (1), `vect` (1) |
 | 🇪🇬 **Egypt** | 3 | `thegentlemen` (1), `lockbit5` (1), `payload` (1) |
 | 🇳🇬 **Nigeria** | 2 | `killsec` (1), `incransom` (1) |
 | 🇬🇭 **Ghana** | 2 | `0APT` (1), `thegentlemen` (1) |
@@ -43,7 +43,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 |--------|-----------|-------------|--------------|
 | `thegentlemen` | **5** | Kenya, Ghana, Egypt, South Africa (×2), Tunisia | ~? |
 | `0APT` | **3** | Somalia, Ghana, Tanzania | **~7 TB** |
-| `lockbit5` | **2** | Mauritius, Egypt | ~? |
+| `lockbit5` | **3** | Mauritius, Egypt, South Africa | Not aggregated |
 | `incransom` | **2** | Nigeria, Ivory Coast | **~210 GB** |
 | `The Green Blood Group` | **1** | Senegal | **139 TB** ⚠️ |
 | `killsec` | **1** | Nigeria | ~? |
@@ -167,7 +167,7 @@ flowchart TB
     CI["🇨🇮 Ivory Coast"]
   end
 
-  subgraph North["North Africa (4 incidents)"]
+  subgraph North["North Africa (6 incidents)"]
   
     EG["🇪🇬 Egypt"]
     MA["🇲🇦 Morocco"]
@@ -182,7 +182,7 @@ flowchart TB
     KE["🇰🇪 Kenya"]
   end
 
-  subgraph South["Southern Africa (4 incidents)"]
+  subgraph South["Southern Africa (5 incidents)"]
   
     ZA["🇿🇦 South Africa"]
     NA["🇳🇦 Namibia"]
@@ -229,8 +229,8 @@ pie
 ---
 ## 🔗 Quick links
 
-- [Full report (FR)](/reports/february/README.md)
-- [Full report (EN)](/reports/february/README_EN.md)
+- [Full report (FR)](../../../CyberAttackAfrica/2026/02-february/README_FR.md)
+- [Full report (EN)](../../../CyberAttackAfrica/2026/02-february/README.md)
 ---
 ## ✍🏿 Author
 

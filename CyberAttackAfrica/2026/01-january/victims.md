@@ -13,7 +13,7 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 
 ### Notable incidents
 
-- **Niger:** coordinated defacement affecting more than seven government websites.
+- **Niger:** coordinated defacement of more than seven Nigerien state websites displaying political messages about the country’s geopolitical situation.
 - **Senegal:** publication of a financial database attributed to PixPay.
 - **Morocco:** publication of an aviation database attributed to AOM Aviation Group.
 - **Togo:** claimed sale of access to government infrastructure by Bigbrother.
@@ -36,7 +36,7 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Sector:** Public Administration
 - **Websites:** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
 - **Status:** Unclaimed (Massive Defacement)
-- **Victim Description:** Multiple official Nigerien government platforms hit by a coordinated attack displaying a politically-charged message.
+- **Victim Description:** Multiple official websites of the Nigerien state were defaced in a coordinated operation. The pages displayed political messages concerning Niger’s geopolitical situation at the time of the incident.
 
 ### 06 January 2026
 #### 🇿🇦 South Africa - Hytec South Africa

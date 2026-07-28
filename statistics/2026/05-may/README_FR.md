@@ -25,10 +25,10 @@ Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont co
 | Indicateur | Valeur |
 |---|---:|
 | Total incidents | 57 |
-| Attaques ransomware | 16 |
+| Publications ou divulgations ransomware | 16 |
 | Fuites de données / ventes d'accès | 41 |
 | Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
-| Acteurs distincts | 25+ |
+| Acteurs ou sources nommés distincts | 31 |
 | Pays le plus touché | Égypte |
 | Principal pays ransomware | Égypte |
 | Principal pays fuites de données | Afrique du Sud |
@@ -187,26 +187,30 @@ xychart-beta
 
 | Secteur | Incidents | Pourcentage |
 |---|---:|---:|
-| Gouvernement / Administration | 17 | 29,8 % |
-| Recrutement / Données personnelles | 8 | 14,0 % |
-| Éducation / Université | 5 | 8,8 % |
-| Finance / Banque | 4 | 7,0 % |
-| Agroalimentaire / Hôtellerie | 4 | 7,0 % |
-| Logistique / Transport | 3 | 5,3 % |
-| Automobile | 3 | 5,3 % |
-| E-commerce / Numérique | 3 | 5,3 % |
-| Télécommunications / TIC | 3 | 5,3 % |
-| ONG / Caritatif | 2 | 3,5 % |
-| Santé | 2 | 3,5 % |
-| Autres | 3 | 5,3 % |
+| Government / Administration | 20 | 35,09 % |
+| Ressources humaines / Recrutement | 5 | 8,77 % |
+| Industrie / Automobile / Fabrication | 5 | 8,77 % |
+| E-commerce / Retail | 4 | 7,02 % |
+| Education / University | 3 | 5,26 % |
+| Finance / Banking | 3 | 5,26 % |
+| Telecommunications | 3 | 5,26 % |
+| Oil & Energy | 2 | 3,51 % |
+| Alimentation / Boissons / Restauration | 2 | 3,51 % |
+| Transport / Logistique | 2 | 3,51 % |
+| ONG / Action sociale | 2 | 3,51 % |
+| Hôtellerie / Événementiel | 2 | 3,51 % |
+| Healthcare / Medical | 1 | 1,75 % |
+| Sports / Federations | 1 | 1,75 % |
+| Agrégation de données personnelles | 1 | 1,75 % |
+| Services aux entreprises | 1 | 1,75 % |
 | **Total** | **57** | **100 %** |
 
 ```mermaid
 xychart-beta
     title "Répartition sectorielle - Mai 2026"
-    x-axis ["Gouvernement","Recrutement/Data","Éducation","Finance","Agroalim./Hôtellerie","Logistique","Automobile","E-commerce","Télécoms","ONG","Santé","Autres"]
-    y-axis "Incidents" 0 --> 18
-    bar [17,8,5,4,4,3,3,3,3,2,2,3]
+    x-axis ["Gouvernement","RH","Industrie","E-commerce","Éducation","Finance","Télécoms","Énergie","Alimentation","Transport","ONG","Hôtellerie","Santé","Sports","Agrégation","Services"]
+    y-axis "Incidents" 0 --> 21
+    bar [20,5,5,4,3,3,3,2,2,2,2,2,1,1,1,1]
 ```
 
 ---
@@ -216,20 +220,20 @@ xychart-beta
 | Acteur / Groupe | Incidents | Type dominant |
 |---|---:|---|
 | Databasehooligan | 8 | Fuites de données |
-| TheGentlemen | 4 | Ransomware |
 | 404Crew Cyber Team | 5 | Fuites de données (coalitions) |
+| TheGentlemen | 4 | Ransomware |
 | NightSpire | 3 | Ransomware |
 | INT3X | 2 | Fuites de données |
 | Keymous | 2 | Ventes d'accès / fuites |
 | cc5ab | 2 | Fuites de données |
 | NullSec Nigeria | 2 | Fuites de données (coalitions) |
 | anisanas2 | 2 | Fuites / ventes de données (Maroc) |
-| Autres acteurs | 27 | Mixte |
+| Fiches hors classement affiché | 27 | Mixte |
 
 ```mermaid
 xychart-beta
     title "Acteurs les plus actifs - Mai 2026"
-    x-axis ["Databasehooligan","404Crew CT","TheGentlemen","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","anisanas2","Autres"]
+    x-axis ["Databasehooligan","404Crew CT","TheGentlemen","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","anisanas2","Hors classement"]
     y-axis "Incidents" 0 --> 30
     bar [8,5,4,3,2,2,2,2,2,27]
 ```
@@ -238,21 +242,21 @@ xychart-beta
 
 ## 7. Analyse des tendances CTI
 
-### 7.1 L'Égypte comme principal foyer ransomware
+### 7.1 L'Égypte enregistre le plus grand volume ransomware en mai
 
 L'Égypte concentre **7 incidents ransomware**, soit **43,8 %** de l'activité ransomware du mois. NightSpire a revendiqué à lui seul trois cibles égyptiennes en un mois. Les secteurs visés incluent la finance, la restauration, l'industrie chimique, la logistique, l'agriculture et l'hôtellerie.
 
-### 7.2 L'Afrique du Sud sous pression coordonnée
+### 7.2 Afrique du Sud : 14 fiches dont les publications OpSouthAfrica
 
-L'Afrique du Sud enregistre **14 incidents** dont 13 fuites de données orchestrées par la coalition 404Crew Cyber Team (avec NullSec Nigeria, NullSec Philippines et Infernalis) sous le label "OpSouthAfrica". Les institutions ciblées incluent des municipalités, des services pénitentiaires, l'autorité fiscale et l'infrastructure IT de l'État.
+L'Afrique du Sud enregistre **14 incidents**, dont 13 fuites de données. Au moins huit publications concernant des institutions sont associées à la bannière OpSouthAfrica et à des acteurs participants tels que 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines et Infernalis. Les autres fiches impliquent d'autres acteurs.
 
 ### 7.3 Le secteur éducatif comme cible stratégique
 
-L'éducation égyptienne a subi une vague de compromissions : Ministère de l'Éducation (26,8 millions d'enregistrements élèves), Professional Academy for Teachers (1,2 million d'enseignants), Université de Mansoura (989 000 enregistrements), bases éducatives et RH (37 Go). L'exposition totale dépasse 28 millions d'enregistrements.
+Les revendications concernant l’éducation égyptienne mentionnent le Ministère de l’Éducation, la Professional Academy for Teachers, l’Université de Mansoura et une base combinée éducation/RH. Les volumes complets revendiqués ne sont pas confirmés indépendamment.
 
-### 7.4 Domination de Databasehooligan sur les plateformes CRM / recrutement
+### 7.4 Offres de vente associées à Databasehooligan
 
-Un même acteur a ciblé huit organisations dans quatre pays (Tunisie, Afrique du Sud, Égypte, Algérie), vendant des bases CRM et consommateurs structurées entre 900 et 1 400 dollars chacune. Cela suggère l'exploitation systématique d'une vulnérabilité commune ou d'une plateforme SaaS partagée.
+Huit jeux de données CRM ou consommateurs structurés concernant des organisations en Tunisie, Afrique du Sud, Égypte et Algérie ont été proposés à la vente par le compte Databasehooligan, à des prix annoncés de 900 à 1 400 dollars chacun. Les fiches sources n'établissent ni plateforme partagée ni vecteur d'accès commun.
 
 ### 7.5 Exposition des identifiants gouvernementaux
 
@@ -260,7 +264,7 @@ Les plateformes gouvernementales marocaines (827 000 lignes d'identifiants), la 
 
 ### 7.6 Compromission multi-pays du système de santé DHIS2
 
-La vente d'accès administrateur à DHIS2 dans sept pays (Mozambique, Liberia, Nigeria, Bhoutan, Honduras, Togo, Sierra Leone) représente une menace critique pour les systèmes nationaux de surveillance sanitaire.
+L’offre DHIS2 mentionne cinq pays africains : Mozambique, Liberia, Nigeria, Togo et Sierra Leone. Le Bhoutan et le Honduras figurent dans la source mais sont exclus des statistiques africaines AFRINTEL. AFRINTEL n’a pas testé les identifiants proposés.
 
 ---
 
@@ -281,6 +285,6 @@ La vente d'accès administrateur à DHIS2 dans sept pays (Mozambique, Liberia, N
 
 ## 9. Conclusion
 
-Mai 2026 enregistre **57 incidents** touchant **18 pays distincts** (12 avec des incidents directs, 6 supplémentaires via les incidents multi-pays). L'Égypte et l'Afrique du Sud concentrent à elles seules 52,6 % des incidents directs, confirmant leur statut de cibles prioritaires sur le continent. Le ciblage systémique du secteur éducatif égyptien, la campagne coordonnée OpSouthAfrica et le balayage CRM de Databasehooligan dans quatre pays sont les tendances structurantes du mois. La campagne marocaine persistante (RADEM Meknès, vente massive multi-entités) conduite par l'acteur malveillant anisanas2 et PKA291 rappelle que le Maroc reste une cible significative pour l'exfiltration de données publiques et d'identifiants administratifs.
+Mai 2026 recense **57 incidents signalés ou revendiqués publiquement** concernant **18 pays africains** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 60 incidents en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 16 (-20,0 %), tandis que les fuites de données et ventes d'accès passent de 40 à 41 (+2,5 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation, les publications OpSouthAfrica et les offres de vente associées à Databasehooligan sont les principaux schémas observés.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

@@ -130,10 +130,11 @@ xychart-beta
 
 | Region | Countries Included | Total Incidents | Ransomware | Data Leaks |
 |---|---|---:|---:|---:|
-| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 (60%) | 13 | 23 |
+| North Africa | 🇲🇦 Morocco, 🇩🇿 Algeria, 🇹🇳 Tunisia, 🇪🇬 Egypt | 36 geographic occurrences | 11 | 25 |
 | West Africa | 🇳🇬 Nigeria, 🇧🇯 Benin, 🇸🇳 Senegal, 🇬🇭 Ghana | 9 (15%) | 2 | 7 |
-| Southern Africa | 🇿🇦 South Africa, 🇦🇴 Angola, 🇧🇼 Botswana, 🇿🇲 Zambia | 11 (18%) | 5 | 6 |
+| Southern Africa | 🇿🇦 South Africa, 🇧🇼 Botswana, 🇿🇲 Zambia | 11 (18%) | 5 | 6 |
 | East Africa | 🇪🇹 Ethiopia, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Uganda | 5 (8%) | 2 | 3 |
+| Central Africa | 🇦🇴 Angola | 1 geographic occurrence | 0 | 1 |
 
 > Note: the multi-country incident involving Angola, South Africa, and Nigeria is counted within affected regions for regional exposure analysis. This view reflects exposure distribution, not a strictly deduplicated total.
 

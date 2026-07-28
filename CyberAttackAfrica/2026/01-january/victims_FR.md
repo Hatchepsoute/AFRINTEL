@@ -13,7 +13,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### Incidents marquants
 
-- **Niger :** défacement coordonné de plus de sept sites gouvernementaux.
+- **Niger :** défacement coordonné de plus de sept sites de l’État nigérien affichant des messages politiques sur la situation géopolitique du pays.
 - **Sénégal :** publication d’une base de données financières attribuée à PixPay.
 - **Maroc :** publication d’une base de données aéronautiques attribuée à AOM Aviation Group.
 - **Togo :** vente revendiquée d’accès à des infrastructures gouvernementales par Bigbrother.

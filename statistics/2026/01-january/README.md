@@ -21,7 +21,8 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 | Countries affected | **12** |
 | Identified threat actors | **11** |
 | Unattributed incidents | **1** *(Niger- Unknown)* |
-| Ransomware incidents | **18** |
+| Ransomware incidents | **17** |
+| Access sales | **1** |
 | Data leak incidents | **2** |
 | Website defacement | **1** |
 
@@ -71,8 +72,8 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 | Sector | Incidents |
 |---|---|
-| Government / Administration | 5 |
-| Financial Services | 3 |
+| Government / Administration | 4 |
+| Financial Services | 4 |
 | Industry | 3 |
 | Transport / Logistics | 3 |
 | Technology | 1 |
@@ -154,8 +155,8 @@ end
 ```mermaid
 pie
 title Targeted sectors- January 2026
-"Government" : 5
-"Finance" : 3
+"Government" : 4
+"Finance" : 4
 "Industry" : 3
 "Transport" : 3
 "Technology" : 1
@@ -172,7 +173,7 @@ title Targeted sectors- January 2026
 # ⚠ Key incidents
 
 ### 🇳🇪 Niger - Government defacement (Unknown)
-Large‑scale coordinated website defacement targeting multiple government portals.
+Coordinated defacement of more than seven Nigerien state websites displaying political messages concerning the country’s geopolitical situation at the time.
 
 ### 🇸🇳 PixPay - Data breach (breach3d)
 Exposure and sale of fintech‑related data.
@@ -191,8 +192,8 @@ Leak involving aviation‑related operational or database records.
 ---
 ## 🔗 Quick links
 
-- [Full report (FR)](/reports/2026/01-january/README.md)
-- [Full report (EN)](/reports/2026/01-january/README_EN.md)
+- [Full report (FR)](../../../CyberAttackAfrica/2026/01-january/README_FR.md)
+- [Full report (EN)](../../../CyberAttackAfrica/2026/01-january/README.md)
 ---
 
 *AFRINTEL - African Threat Intelligence Initiative*

@@ -10,10 +10,10 @@
 
 ## 1. Synthèse exécutive
 
-Avril 2026 a enregistré **60 incidents cyber revendiqués publiquement** sur le continent - **20 ransomwares** et **40 fuites de données / ventes d’accès**. La menace s’intensifie avec une prolifération de courtiers de données, des expositions très sensibles (personnel du palais royal, documents d’identité, dossiers médicaux) et des ventes d’accès ciblant les gouvernements. Les groupes de ransomware **payload**, **apt73/bashe**, **thegentlemen** et **krybit** maintiennent la pression, tandis que les acteurs de fuites **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominent le marché souterrain.
+Avril 2026 a enregistré **60 incidents cyber revendiqués publiquement** sur le continent - **20 publications ou revendications ransomware** et **40 fuites de données / ventes d’accès**. La menace s’intensifie avec une prolifération de courtiers de données, des expositions très sensibles (personnel du palais royal, documents d’identité, dossiers médicaux) et des ventes d’accès ciblant les gouvernements. Les groupes de ransomware **payload**, **apt73/bashe**, **thegentlemen** et **krybit** maintiennent la pression, tandis que les acteurs de fuites **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominent le marché souterrain.
 
 Principales conclusions :
-- **20 ransomwares (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
+- **20 publications ou revendications ransomware (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
 - **16 pays** touchés ; le **Maroc** (17 incidents), l’**Égypte** (11) et l’**Afrique du Sud** (8) concentrent 60 % des victimes.
 - Plus de **30 acteurs distincts** ; les courtiers de données **Grubder** (7 victimes) et **anisanas2** (3 victimes) en tête.
 - Les secteurs gouvernemental, éducatif et de la santé restent les plus visés (45 % combinés).
@@ -238,7 +238,7 @@ pie showData
  "Sports / Fédérations" : 4
  "Pétrole & Énergie" : 3
  "Télécommunications" : 1
- "Autres secteurs" : 18
+ "Secteurs détaillés" : 18
 ```
 
 
@@ -276,7 +276,7 @@ pie showData
  "wh6ami (2)" : 2
  "dark07x (2)" : 2
  "NormalLeVrai (2)" : 2
- "Autres (23)" : 23
+ "Fiches hors classement (23)" : 23
 ```
 *Parmi les acteurs ayant réalisé un seul incident figurent notamment Nullsec/0xLei, MDGhost, RubiconH4ck, Keymous, xNov, superduper1, w00l_ysh1, BlueEx, Sejjil, forrest, mecrobyte, et d’autres (voir la liste complète des victimes).*
 
@@ -374,7 +374,7 @@ pie showData
 | Nigeria | 🟠 Moyen-Élevé |
 | Algérie | 🟠 Moyen |
 | Tunisie | 🟠 Moyen |
-| Autres | 🟡 Faible-Moyen |
+| Autres pays | 🟡 Faible-Moyen |
 
 ## 8. Tendances clés et lacunes de renseignement
 
@@ -427,7 +427,7 @@ pie showData
 
 ## 13. Conclusion
 
-Le mois d'avril 2026 s'est distingué par une accélération marquée des opérations des data brokers et par des intrusions profondes ciblant les infrastructures étatiques, éducatives et médicales africaines. L'expansion du commerce de documents d'identité et des ventes d'accès confirme la structuration d'une économie souterraine mature. Si le Maroc, l'Égypte et l'Afrique du Sud restent l'épicentre de cette activité, l'émergence de nouveaux foyers (Algérie, Tunisie, Kenya) appelle à une vigilance accrue. AFRINTEL poursuivra le suivi et la documentation de ces dynamiques de menaces.
+Avril compte 60 fiches, contre 41 en mars (+46,3 %). La hausse provient principalement des fuites de données et ventes d’accès, passées de 22 à 40 fiches. Le Maroc, l’Égypte et l’Afrique du Sud enregistrent les volumes les plus élevés. Des forums cybercriminels ont publié de manière répétée des offres concernant des bases africaines, des documents d’identité et des accès administratifs.
 
 **AFRINTEL** – African Cyber Threat Intelligence  
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

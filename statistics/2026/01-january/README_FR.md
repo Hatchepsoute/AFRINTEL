@@ -18,7 +18,8 @@ Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le conti
 | **Pays touchés** | **12** |
 | **Acteurs identifiés** | **11** |
 | **Incidents non attribués** | **1** *(Niger - `Unknown`)* |
-| **Ransomware** | **18** |
+| **Ransomware** | **17** |
+| **Ventes d'accès** | **1** |
 | **Fuites de données** | **2** |
 | **Défacement** | **1** |
 
@@ -68,8 +69,8 @@ Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le conti
 
 | Secteur | Incidents |
 |---|---:|
-| Gouvernement / Administration | 5 |
-| Services financiers | 3 |
+| Gouvernement / Administration | 4 |
+| Services financiers | 4 |
 | Industrie | 3 |
 | Transport / Logistique | 3 |
 | Technologie | 1 |
@@ -166,8 +167,8 @@ flowchart TB
 %%{init: {'theme': 'base'}}%%
 pie
     title Secteurs ciblés - Janvier 2026
-    "Gouvernement / Administration" : 5
-    "Services financiers" : 3
+    "Gouvernement / Administration" : 4
+    "Services financiers" : 4
     "Industrie" : 3
     "Transport / Logistique" : 3
     "Technologie" : 1
@@ -183,7 +184,7 @@ pie
 
 ## 🧩 Cartographie Acteurs → Victimes (OSINT-safe)
 
-> Certains incidents “one-off” n’ont pas de victime explicitée dans le rapport source : ils sont conservés comme **victime non précisée** afin d’éviter toute invention.
+> Les relations ci-dessous reprennent les victimes nommées dans `victims.md`, source unique du mois.
 
 ```mermaid
 flowchart LR
@@ -225,11 +226,11 @@ flowchart LR
   V14["CFM Mozambique\n(Unknown domain)\n🇲🇿 Mozambique"]:::victim
   V15["Togo access claim\n(Unknown domain)\n🇹🇬 Togo"]:::victim
 
-  V16["Victime non précisée\n(Unknown)\n🇿🇦 Afrique du Sud"]:::victim
-  V17["Victime non précisée\n(Unknown)\n🇪🇬 Égypte"]:::victim
-  V18["Victime non précisée\n(Unknown)\n🇹🇿 Tanzanie"]:::victim
-  V19["Victime non précisée\n(Unknown)\n🇰🇪 Kenya"]:::victim
-  V20["Victime non précisée\n(Unknown)\n🇰🇪 Kenya"]:::victim
+  V16["Hytec South Africa\n(hytec.com)\n🇿🇦 Afrique du Sud"]:::victim
+  V17["Tepco-Group\n(tepco-group.com)\n🇪🇬 Égypte"]:::victim
+  V18["CCBRT\n(ccbrt.org)\n🇹🇿 Tanzanie"]:::victim
+  V19["National Water Authority\n(nwa.go.ke)\n🇰🇪 Kenya"]:::victim
+  V20["NSSF\n(nssf.or.ke)\n🇰🇪 Kenya"]:::victim
 
   V21["Défacement gouvernemental\n(Multi-sites)\n🇳🇪 Niger"]:::victim
 
@@ -266,7 +267,7 @@ flowchart LR
 ## 📌 Incidents critiques (Janvier 2026)
 
 ### 🇳🇪 Niger - Défacement massif (**Unknown**)
-- **Nature** : défacement coordonné multi-sites (non revendiqué)
+- **Nature** : défacement coordonné de sites de l’État nigérien avec messages politiques liés à la situation géopolitique du pays
 - **Risque** : exposition systémique (surface web publique / gouvernance patch)
 - **Impact** : confiance institutionnelle / disponibilité / visibilité médiatique
 
@@ -291,8 +292,8 @@ flowchart LR
 
 ## 🔗 Liens utiles
 
-- [Rapport mensuel (FR)](/reports/2026/01-january/README_FR.md)
-- [Monthly report (EN)](/reports/2026/01-january/README.md)
+- [Rapport mensuel (FR)](../../../CyberAttackAfrica/2026/01-january/README_FR.md)
+- [Monthly report (EN)](../../../CyberAttackAfrica/2026/01-january/README.md)
 
 ---
 

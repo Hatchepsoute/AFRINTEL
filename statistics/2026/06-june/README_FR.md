@@ -200,15 +200,23 @@ xychart-beta
 | Education / University | 4 | 10,0 % |
 | E-commerce / Retail | 4 | 10,0 % |
 | Healthcare / Medical | 3 | 7,5 % |
-| Autres | 11 | 27,5 % |
+| Transport / Logistique | 2 | 5,0 % |
+| Industrie / Automobile / Fabrication | 2 | 5,0 % |
+| Organisations politiques / Partis | 1 | 2,5 % |
+| Mines / Industries extractives | 1 | 2,5 % |
+| Hôtellerie / Tourisme | 1 | 2,5 % |
+| Construction / Immobilier | 1 | 2,5 % |
+| Alimentation / Boissons | 1 | 2,5 % |
+| Services aux entreprises / Technologie | 1 | 2,5 % |
+| Services de sécurité | 1 | 2,5 % |
 | **Total** | **40** | **100 %** |
 
 ```mermaid
 xychart-beta
     title "Répartition sectorielle - Juin 2026"
-    x-axis ["Gouvernement","Finance","Éducation","E-commerce","Santé","Autres"]
+    x-axis ["Gouvernement","Finance","Éducation","E-commerce","Santé","Transport","Industrie","Politique","Mines","Hôtellerie","Construction","Alimentation","Services tech","Sécurité"]
     y-axis "Incidents" 0 --> 13
-    bar [12,6,4,4,3,11]
+    bar [12,6,4,4,3,2,2,1,1,1,1,1,1,1]
 ```
 
 ---
@@ -224,12 +232,12 @@ xychart-beta
 | Krybit | 2 | Ransomware / données publiées |
 | 404Crew Cyber Team | 2 | Fuite de données (coalition et solo) |
 | EvaN47 | 2 | Fuite de données (Libye) |
-| Autres acteurs | 18 | Mixte |
+| Fiches hors classement affiché | 18 | Mixte |
 
 ```mermaid
 xychart-beta
     title "Acteurs les plus actifs - Juin 2026"
-    x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Autres"]
+    x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Hors classement"]
     y-axis "Incidents" 0 --> 19
     bar [7,4,3,2,2,2,2,18]
 ```
@@ -260,7 +268,7 @@ Deux acteurs distincts, Convince et Governor, ont vendu des identifiants gouvern
 
 ### 7.6 Les ministères libyens touchés coup sur coup
 
-Le même acteur, EvaN47, a ciblé le Ministère de l'Enseignement technique et professionnel (29 juin) et le Ministère de l'Éducation (30 juin) deux jours consécutifs, le signal de campagne naissante le plus fort du mois, à surveiller en juillet.
+EvaN47 a publié des fiches concernant le Ministère de l'Enseignement technique et professionnel le 29 juin et le Ministère de l'Éducation le 30 juin. Cette séquence justifie une surveillance en juillet sans établir une campagne coordonnée.
 
 ---
 
@@ -268,7 +276,7 @@ Le même acteur, EvaN47, a ciblé le Ministère de l'Enseignement technique et p
 
 | Priorité | Axe de surveillance |
 |---|---|
-| Critique | Suivi du cluster anisanas2 (Maroc, campagne soutenue sur 3 mois) |
+| Critique | Suivi d'anisanas2 (publications liées au Maroc sur 3 mois consécutifs) |
 | Critique | Exposition de stockage cloud public (S3/Blob) sur les plateformes fintech et KYC |
 | Élevée | Rotation des identifiants gouvernementaux et militaires (domaines .gov, .mil, .ac) |
 | Élevée | Indicateurs précoces de ransomware sur les leak sites de DeadLock, LockBit 5, Krybit, Nightspire, Qilin |
@@ -281,6 +289,6 @@ Le même acteur, EvaN47, a ciblé le Ministère de l'Enseignement technique et p
 
 ## 9. Conclusion
 
-Juin 2026 recense **40 incidents** concernant **20 pays distincts** lorsque les incidents directs et les expositions multi-pays sont combinés. Les publications ransomware atteignent la parité avec les fuites de données et ventes d’accès. Le Maroc compte 9 incidents directs, tandis que les publications attribuées à anisanas2 se poursuivent pour un troisième mois ; leur coordination et les vecteurs d’accès restent inconnus. La revendication Jeroid.co et la publication d’identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
+Juin 2026 recense **40 incidents** concernant **20 pays distincts** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 57 fiches en mai (-17 ; -29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 20 (-51,2 %). Le Maroc compte 9 des 38 fiches directes ; deux fiches supplémentaires sont multi-pays. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

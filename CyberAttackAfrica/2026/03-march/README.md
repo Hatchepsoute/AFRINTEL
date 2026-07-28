@@ -135,7 +135,10 @@ pie
 | Fintech                   | 1         | 2.4%       |
 | E-commerce / Classifieds  | 1         | 2.4%       |
 | Sports / Leisure          | 1         | 2.4%       |
-| Others                    | 4         | 9.8%       |
+| Aviation                  | 1         | 2.4%       |
+| Wealth Management         | 1         | 2.4%       |
+| Research / Think tank    | 1         | 2.4%       |
+| Food / Beverage          | 1         | 2.4%       |
 
 **Most prolific actors:**
 | Actor            | Type            | Incidents | Primary targets |
@@ -228,7 +231,10 @@ pie
 | Fintech               | 1         | 2.4%       |
 | E-commerce / Classifieds | 1      | 2.4%       |
 | Sports / Leisure      | 1         | 2.4%       |
-| Others                | 4         | 9.8%       |
+| Aviation              | 1         | 2.4%       |
+| Wealth Management     | 1         | 2.4%       |
+| Research / Think tank| 1         | 2.4%       |
+| Food / Beverage      | 1         | 2.4%       |
 
 ```mermaid
 pie
@@ -244,7 +250,10 @@ pie
  "Fintech (1)" : 1
  "E-commerce/Classifieds (1)" : 1
  "Sports/Leisure (1)" : 1
- "Others (4)" : 4
+ "Aviation (1)" : 1
+ "Wealth Management (1)" : 1
+ "Research (1)" : 1
+ "Food / Beverage (1)" : 1
 ```
 
 **Takeaways**:
@@ -279,7 +288,7 @@ pie
 | Senegal | 🟠 Medium (post-UBA) |
 | Cameroon | 🟠 Medium (emerging) |
 | Guinea | 🟠 Medium |
-| Others | 🟠 Medium |
+| Remaining countries | 🟠 Medium |
 
 ## 8. Key trends and intelligence gaps
 

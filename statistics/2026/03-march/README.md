@@ -84,6 +84,13 @@ pie
 | Engineering / Construction | 3 |
 | Finance / Banking | 2 |
 | IT / Consulting | 2 |
+| Fintech | 1 |
+| E-commerce / Classifieds | 1 |
+| Sports / Leisure | 1 |
+| Aviation | 1 |
+| Wealth Management | 1 |
+| Research / Think tank | 1 |
+| Food / Beverage | 1 |
 
 ```mermaid
 pie
@@ -96,6 +103,13 @@ pie
     "Engineering (3)" : 3
     "Finance (2)" : 2
     "IT/Consulting (2)" : 2
+    "Fintech (1)" : 1
+    "E-commerce (1)" : 1
+    "Sports (1)" : 1
+    "Aviation (1)" : 1
+    "Wealth Management (1)" : 1
+    "Research (1)" : 1
+    "Food / Beverage (1)" : 1
 ```
 
 ## Ransomware vs Breaches by country
@@ -118,11 +132,11 @@ xychart-beta
 
 ## CTI Trends
 
-- South Africa remains the main ransomware hotspot in Africa.
-- Morocco and Egypt continue to face targeting against state institutions.
+- South Africa recorded the highest March volume, with 13 records.
+- Morocco and Egypt each recorded 8 records, including publications concerning state institutions.
 - Government and education sectors account for over 40% of incidents.
-- Data-exfiltration actors are becoming more active than traditional ransomware groups.
-- Supply-chain attacks and financial intrusions are rapidly increasing.
+- Data breaches and intrusions represented 22 of 41 March records.
+- Supply-chain exposure and a direct financial intrusion were documented during the month.
 
 ---
 

@@ -135,7 +135,10 @@ pie
 | Fintech                    | 1         | 2,4 %       |
 | E-commerce / Petites annonces | 1      | 2,4 %       |
 | Sport / Loisirs            | 1         | 2,4 %       |
-| Autres                     | 4         | 9,8 %       |
+| Aviation                   | 1         | 2,4 %       |
+| Gestion de patrimoine      | 1         | 2,4 %       |
+| Recherche / Think tank    | 1         | 2,4 %       |
+| Alimentation / Boissons   | 1         | 2,4 %       |
 
 ```mermaid
 pie
@@ -151,7 +154,10 @@ pie
  "Fintech (1)" : 1
  "E-commerce/Annonces (1)" : 1
  "Sport/Loisirs (1)" : 1
- "Autres (4)" : 4
+ "Aviation (1)" : 1
+ "Gestion de patrimoine (1)" : 1
+ "Recherche (1)" : 1
+ "Alimentation / Boissons (1)" : 1
 ```
 
 **Acteurs les plus prolifiques :**
@@ -245,7 +251,10 @@ pie
 | Fintech                  | 1         | 2,4 %       |
 | E-commerce / Annonces    | 1         | 2,4 %       |
 | Sport / Loisirs          | 1         | 2,4 %       |
-| Autres                   | 4         | 9,8 %       |
+| Aviation               | 1         | 2,4 %       |
+| Gestion de patrimoine  | 1         | 2,4 %       |
+| Recherche / Think tank| 1         | 2,4 %       |
+| Alimentation / Boissons| 1        | 2,4 %       |
 
 **Enseignements** :
 - Le secteur public (gouvernement + éducation) représente **41,5 %** des incidents.
@@ -279,7 +288,7 @@ pie
 | Sénégal | 🟠 Moyen (post-UBA) |
 | Cameroun | 🟠 Moyen (émergent) |
 | Guinée | 🟠 Moyen |
-| Autres | 🟠 Moyen |
+| Autres pays | 🟠 Moyen |
 
 ## 8. Tendances clés et lacunes de renseignement
 

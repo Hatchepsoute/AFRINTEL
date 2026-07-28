@@ -10,10 +10,10 @@
 
 ## 1. Executive summary
 
-April 2026 recorded **60 publicly claimed cyber incidents** across Africa - **20 ransomware attacks** and **40 data leaks / access sales**. The threat landscape intensified with a surge in data broker activity, highly sensitive database exposures (royal staff, identity documents, medical records), and targeted access sales against government infrastructure. Ransomware groups **payload**, **apt73/bashe**, **thegentlemen**, and **krybit** maintained pressure, while data‑leak actors **Grubder**, **anisanas2**, **dark07x**, **wh6ami**, and **Rihana** dominated the underground market.
+April 2026 recorded **60 publicly claimed cyber incidents** across Africa - **20 ransomware claims or publications** and **40 data leaks / access sales**. The threat landscape intensified with a surge in data broker activity, highly sensitive database exposures (royal staff, identity documents, medical records), and targeted access sales against government infrastructure. Ransomware groups **payload**, **apt73/bashe**, **thegentlemen**, and **krybit** maintained pressure, while data‑leak actors **Grubder**, **anisanas2**, **dark07x**, **wh6ami**, and **Rihana** dominated the underground market.
 
 Key findings:
-- **20 ransomware attacks (33.3%)** and **40 data leaks / access sales (66.7%)**.
+- **20 ransomware claims or publications (33.3%)** and **40 data leaks / access sales (66.7%)**.
 - **16 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 60% of victims.
 - **30+ distinct threat actors**; prolific data brokers **Grubder** (7 victims) and **anisanas2** (3 victims) lead.
 - Government, education, and healthcare remain prime targets (combined 45%).
@@ -224,7 +224,7 @@ pie showData
 | **E-commerce / Retail** | **3** | 5.0 % | ███ |
 | **Oil & Energy** | **3** | 5.0 % | ███ |
 | **Telecommunications** | **1** | 1.7 % | █ |
-| **Others** *(Miscellaneous sectors)* | **18** | 30.0 % | ██████████████████ |
+| **Detailed sectors from victim cards** | **18** | 30.0 % | ██████████████████ |
 | **Total** | **60** | **100 %** | |
 
 
@@ -241,7 +241,7 @@ pie showData
  "Sports / Federations" : 4
  "Oil & Energy" : 3
  "Telecommunications" : 1
- "Other Sectors" : 18
+ "Detailed sectors" : 18
 ```
 
 ### 📊 Most Prolific Threat Actors and Groups
@@ -282,7 +282,7 @@ pie showData
  "wh6ami (2)" : 2
  "dark07x (2)" : 2
  "NormalLeVrai (2)" : 2
- "Others (23)" : 23
+ "Records outside ranking (23)" : 23
 ```
 *Among the actors having carried out a single incident are notably Nullsec/0xLei, MDGhost, RubiconH4ck, Keymous, xNov, superduper1, w00l_ysh1, BlueEx, Sejjil, forrest, mecrobyte, and others (see the complete list of victims).*
 
@@ -324,14 +324,14 @@ pie showData
 | **4** | 🇹🇳 Tunisia | **4** | ████ | Grubder, mecrobyte, forrest |
 | **5** | 🇳🇬 Nigeria | **4** | ████ | NormalLeVrai, 0xLei, ki4t, AckLine |
 | **6** | 🇪🇬 Egypt | **2** | ██ | Grubder |
-| **–** | 🌍 Others | **6** | ██████ | Various (see victim list) |
+| **–** | 🌍 Remaining country labels | **6** | ██████ | Various (see victim list) |
 
 **Key observations:**
 - **Grubder** dominated with 7 victims, selling databases from small CRM (Customer Relationship Management) to large university portals.
 - **anisanas2** focused on Morocco, leaking student records, medical data, and football federation files.
 - **dark07x** compromised Algerian insurance and football management platforms, exposing national ID cards and internal documents.
 - Two massive municipality leaks in South Africa (Northern Cape Roads, Buffalo City) by **wh6ami** exposed tender processes and admin logs.
-- The **Pick n Pay ASAP / Bottles.com** breach included full payment card data (VISA, Mastercard, 3DS) and passwords, representing one of the most dangerous e‑commerce breaches of the year.
+- The **Pick n Pay ASAP / Bottles.com** breach included full payment card data (VISA, Mastercard, 3DS) and passwords, creating direct risks of payment fraud, account abuse and targeted phishing.
 
 ## 6. Sectoral impact
 
@@ -345,12 +345,12 @@ pie showData
 | **E-commerce / Retail** | **3** | 5.0% | ███ |
 | **Oil & Energy** | **3** | 5.0% | ███ |
 | **Telecommunications** | **1** | 1.7% | █ |
-| **Others** *(Miscellaneous sectors)* | **18** | 30.0% | ██████████████████ |
+| **Detailed sectors from victim cards** | **18** | 30.0% | ██████████████████ |
 
 **Key Observations:**
 * **Public Sector Dominance:** Combined, the public sector (Government + Education) accounts for **38.3%** of all recorded incidents.
 * **Critical Data Targets:** Healthcare and medical data remain highly coveted by threat actors (with breaches targeting critical entities like CNOPS, LNM6, Chezpara.ma, and SUPTECH SANTÉ).
-* **Emerging Trends:** Sports federations (such as FRMF, FRMT, and LRFA) are rapidly emerging as prime targets for data leaks and extortion.
+* **Emerging Trends:** Four sports and federation records were documented in April.
 
 ## 7. Threat actor profile
 
@@ -389,7 +389,7 @@ pie showData
 
 ### 📈 Key Cyber Threat Trends
 
-* **Explosion of Data Broker Activity:** A massive surge in unauthorized monetization. A single prominent broker (**Grubder**) accounted for 7 distinct victims in April alone, successfully commercializing assets ranging from high-volume student enrollment records to corporate CRM databases.
+* **Explosion of Data Broker Activity:** A massive surge in unauthorized monetization. A single prominent broker (**Grubder**) accounted for 7 distinct victims in April alone, offering datasets ranging from high-volume student enrollment records to corporate CRM databases.
 * **Identity Documents as a Commodity:** Threat actors are systematically packaging and selling deeply sensitive personal files. Multiple underground listings actively offered batches of scanned passports, national IDs, and complete Know-Your-Customer (KYC) compliance packages (with major leaks hitting *Moroccan Identity Documents*, *Algeria Post*, and *Inter Partner Assistance*).
 * **High-Value Access Sales Targeting Governments:** Initial Access Brokers (IABs) are significantly escalating their capabilities. Threat actors such as **superduper1** (offering multi-country government access) and **w00l_ysh1** (targeting the Senegal National Treasury) successfully auctioned high-privilege access, explicitly compromising Active Directory Domain Controllers.
 * **Ransomware Portfolio Diversification:** Traditional extortion groups are expanding their scopes beyond standard corporate targets. Groups like **payload** have actively diversified their target selection, aggressively moving into heavy industry, real estate, automotive, and critical oil/energy infrastructures.
@@ -436,7 +436,7 @@ pie showData
 
 ## 13. Conclusion
 
-April 2026 recorded a notable escalation in data broker telemetry alongside highly invasive intrusions penetrating regional government, academic, and medical architectures. The proliferation of localized identity document marketplaces and active network access brokers highlights a rapidly maturing underground ecosystem across the continent. While Morocco, Egypt, and South Africa remain the primary targets, secondary focal points - including Algeria, Tunisia, and Kenya - are actively scaling in volume.
+April recorded 60 incident records, up from 41 in March (+46.3%). The increase was driven mainly by data leaks and access sales, which rose from 22 to 40 records. Morocco, Egypt and South Africa recorded the highest April volumes. Criminal forums repeatedly advertised African datasets, identity documents and administrative access during the month.
 
 **AFRINTEL** – African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

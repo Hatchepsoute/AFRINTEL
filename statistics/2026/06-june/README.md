@@ -200,15 +200,23 @@ xychart-beta
 | Education / University | 4 | 10.0% |
 | E-commerce / Retail | 4 | 10.0% |
 | Healthcare / Medical | 3 | 7.5% |
-| Others | 11 | 27.5% |
+| Transport / Logistics | 2 | 5.0% |
+| Industry / Automotive / Manufacturing | 2 | 5.0% |
+| Political Organizations / Parties | 1 | 2.5% |
+| Mining / Extractive Industries | 1 | 2.5% |
+| Hospitality / Tourism | 1 | 2.5% |
+| Construction / Real Estate | 1 | 2.5% |
+| Food / Beverage | 1 | 2.5% |
+| Business Services / Technology | 1 | 2.5% |
+| Security Services | 1 | 2.5% |
 | **Total** | **40** | **100%** |
 
 ```mermaid
 xychart-beta
     title "Sector distribution - June 2026"
-    x-axis ["Government","Finance","Education","E-commerce","Healthcare","Others"]
+    x-axis ["Government","Finance","Education","E-commerce","Healthcare","Transport","Industry","Political","Mining","Hospitality","Construction","Food","Business tech","Security"]
     y-axis "Incidents" 0 --> 13
-    bar [12,6,4,4,3,11]
+    bar [12,6,4,4,3,2,2,1,1,1,1,1,1,1]
 ```
 
 ---
@@ -224,12 +232,12 @@ xychart-beta
 | Krybit | 2 | Ransomware / data published |
 | 404Crew Cyber Team | 2 | Data leaks (coalition and solo) |
 | EvaN47 | 2 | Data leaks (Libya) |
-| Other actors | 18 | Mixed |
+| Records outside displayed ranking | 18 | Mixed |
 
 ```mermaid
 xychart-beta
     title "Most active threat actors - June 2026"
-    x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Others"]
+    x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Outside ranking"]
     y-axis "Incidents" 0 --> 19
     bar [7,4,3,2,2,2,2,18]
 ```
@@ -260,7 +268,7 @@ Two separate actors, Convince and Governor, sold government and police credentia
 
 ### 7.6 Libya's education ministries hit back-to-back
 
-The same actor, EvaN47, targeted the Ministry of Technical and Vocational Education (June 29) and the Ministry of Education (June 30) on consecutive days, the strongest early-campaign signal of the month, worth tracking into July.
+EvaN47 published records concerning the Ministry of Technical and Vocational Education on June 29 and the Ministry of Education on June 30. The sequence warrants monitoring into July without establishing a coordinated campaign.
 
 ---
 
@@ -268,7 +276,7 @@ The same actor, EvaN47, targeted the Ministry of Technical and Vocational Educat
 
 | Priority | Monitoring focus |
 |---|---|
-| Critical | anisanas2 cluster tracking (Morocco, 3-month sustained campaign) |
+| Critical | anisanas2 monitoring (Morocco-related publications across 3 consecutive months) |
 | Critical | Public cloud storage exposure (S3/Blob) on fintech and KYC platforms |
 | High | Government and military credential rotation (.gov, .mil, .ac domains) |
 | High | Ransomware early indicators from DeadLock, LockBit 5, Krybit, Nightspire, Qilin leak sites |
@@ -281,6 +289,6 @@ The same actor, EvaN47, targeted the Ministry of Technical and Vocational Educat
 
 ## 9. Conclusion
 
-June 2026 recorded **40 incidents** affecting **20 distinct countries** when direct incidents and multi-country exposures are combined. Ransomware listings reached parity with data leaks and access sales. Morocco accounted for 9 direct incident records, while publications attributed to anisanas2 continued for a third month; coordination and initial access paths remain unknown. The claimed Jeroid.co exposure and Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
+June 2026 recorded **40 incidents** concerning **20 distinct countries** when direct incidents and multi-country exposures are combined, compared with 57 records in May (-17; -29.8%). Ransomware listings and disclosures increased from 16 to 20 (+25.0%), while data leaks and access sales decreased from 41 to 20 (-51.2%). Morocco accounted for 9 of the 38 direct records; two additional records were multi-country. The Jeroid.co publication and Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

@@ -81,11 +81,11 @@ C404 --> SRW["Sheriff Randburg West"]
 
 ```mermaid
 flowchart LR
-ANI["anisanas2\n(+ PKA291)"] --> RADEM["🇲🇦 RADEM Meknès (water and electricity utility)"]
+ANI["anisanas2"] --> RADEM["🇲🇦 RADEM Meknès (water and electricity utility)"]
 ANI --> BUNDLE["🇲🇦 Multi-entity bundle (Ministry of Justice, NARSA, OFPPT, logistics, insurance)"]
 ```
 
-**Profile:** Threat actor active on Darkforums. Conducted two large-scale operations targeting Moroccan public infrastructure and institutions in May 2026. The RADEM Meknès breach exposed approximately 1.1 million documents from a critical utility. The multi-entity bundle (coordinated with PKA291) covered over 12 million rows across government, transport, and vocational training sectors, offered at 5,500 USD globally. Continuation of a campaign that began in April 2026.
+**Profile:** Threat actor active on Darkforums. Conducted two large-scale operations targeting Moroccan public infrastructure and institutions in May 2026. The RADEM Meknès breach exposed approximately 1.1 million documents from a critical utility. The multi-entity bundle (attributed to anisanas2) covered over 12 million rows across government, transport, and vocational training sectors, offered at 5,500 USD globally. Continuation of a campaign that began in April 2026.
 
 ---
 
