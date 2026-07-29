@@ -45,6 +45,15 @@ DATE_RE = re.compile(r"^###\s+(.+?)\s*$", re.M)
 ENTRY_RE = re.compile(r"^####\s+(.+?)\s*$", re.M)
 FIELD_RE = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*:?\s*(.*?)\s*$")
 STIX_ID_RE = re.compile(r"^[a-z0-9-]+--[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$")
+STIX_INDUSTRY_SECTORS = {
+    "agriculture", "aerospace", "automotive", "chemical", "commercial",
+    "communications", "construction", "defense", "education", "energy",
+    "entertainment", "financial-services", "government", "emergency-services",
+    "government-local", "government-national", "government-public-services",
+    "government-regional", "healthcare", "hospitality-leisure", "infrastructure",
+    "insurance", "manufacturing", "mining", "non-profit", "pharmaceuticals",
+    "retail", "technology", "telecommunications", "transportation", "utilities",
+}
 
 
 @dataclass(frozen=True)
@@ -188,11 +197,13 @@ def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
 def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
     joined_keys = " ".join(fields.keys())
     status_text = status.lower()
+    if "defacement" in status_text or "défacement" in status_text:
+        return "defacement"
     if "access" in status_text or "credential" in status_text or "identifiant" in status_text:
         return "access-sale"
     if any(term in status_text for term in (
         "data leak", "data leaked", "database", "massive leak", "system intrusion",
-        "supply chain compromise", "suspected compromise", "defacement",
+        "supply chain compromise", "suspected compromise", "fuite", "base de données",
     )):
         return "data-leak"
     if "ransomware" in status_text or "ransomware" in joined_keys:
@@ -205,6 +216,10 @@ def classify_incident(fields: Dict[str, str], status: str, default_incident_type
 def normalize_status(status: str, incident_type: str) -> Tuple[str, List[str]]:
     text = status.lower()
     labels = ["afrintel", "africa", "claim-unverified", incident_type]
+    if is_unattributed("", status):
+        labels.remove("claim-unverified")
+        labels.append("unattributed")
+        return "Under Investigation", labels
     if "sample" in text or "échantillon" in text:
         labels.append("data-sample-published")
         return "Claim - Data Sample Published", labels
@@ -216,25 +231,73 @@ def normalize_status(status: str, incident_type: str) -> Tuple[str, List[str]]:
     return "Claim - Unverified", labels
 
 
-def normalize_sector(raw: str) -> str:
+def normalize_sector(raw: str) -> Optional[str]:
     value = raw.lower()
     mapping = {
-        "government": "government", "public": "government", "administration": "government", "ministry": "government",
-        "education": "education", "university": "education", "school": "education", "teacher": "education",
-        "health": "healthcare", "medical": "healthcare", "dhis2": "healthcare",
-        "finance": "financial-services", "bank": "financial-services", "treasury": "financial-services",
-        "recruit": "professional-services", "job": "professional-services", "human resources": "professional-services", "hr": "professional-services",
+        "local government": "government-local", "collectivité": "government-local",
+        "municipal": "government-local", "municipality": "government-local",
+        "national government": "government-national", "central public": "government-national",
+        "administration centrale": "government-national", "ministry": "government-national",
+        "ministère": "government-national",
+        "government": "government", "public": "government", "administration": "government",
+        "education": "education", "university": "education", "school": "education",
+        "teacher": "education", "academic": "education",
+        "health": "healthcare", "santé": "healthcare", "medical": "healthcare", "dhis2": "healthcare",
+        "pharma": "pharmaceuticals",
+        "finance": "financial-services", "financial": "financial-services", "bank": "financial-services",
+        "treasury": "financial-services", "wealth": "financial-services", "pension": "financial-services",
+        "fintech": "financial-services", "payment": "financial-services", "paiement": "financial-services",
+        "insurance": "insurance", "assurance": "insurance",
+        "recruit": "commercial", "job": "commercial", "human resources": "commercial",
+        "ressources humaines": "commercial", "legal": "commercial", "juridique": "commercial",
+        "accounting": "commercial", "outsourcing": "commercial", "business services": "commercial",
+        "services / crm": "commercial", "real estate": "commercial",
         "telecom": "telecommunications", "ict": "technology", "technology": "technology", "digital": "technology",
-        "e-commerce": "retail", "retail": "retail", "marketplace": "retail",
-        "logistics": "transport", "transport": "transport", "postal": "transport",
-        "automotive": "automotive", "food": "food-and-beverage", "beverage": "food-and-beverage", "hospitality": "hospitality",
+        "software": "technology", "informatique": "technology", "numérique": "technology",
+        "it consulting": "technology", "it &": "technology", "it infrastructure": "technology",
+        "mobile application": "technology", "social network": "technology",
+        "e-commerce": "retail", "commerce": "retail", "retail": "retail", "marketplace": "retail",
+        "logistics": "transportation", "transport": "transportation", "postal": "transportation",
+        "aviation": "transportation", "airline": "transportation", "port": "transportation",
+        "rail": "transportation",
+        "automotive": "automotive", "automobile": "automotive",
+        "food": "manufacturing", "beverage": "manufacturing", "aliment": "manufacturing",
+        "engineering": "manufacturing", "ingénierie": "manufacturing", "mechanical": "manufacturing",
+        "mécanique": "manufacturing", "manufactur": "manufacturing", "industrie": "manufacturing",
+        "construction": "construction", "mining": "mining", "minier": "mining",
+        "hospitality": "hospitality-leisure", "tourism": "hospitality-leisure", "tourisme": "hospitality-leisure",
         "ngo": "non-profit", "charity": "non-profit", "civil society": "non-profit",
-        "energy": "energy", "oil": "energy", "gas": "energy", "sports": "sports", "legal": "legal-services",
+        "think tank": "non-profit", "political": "non-profit",
+        "energy": "energy", "énergie": "energy", "oil": "energy", "gas": "energy",
+        "water": "utilities", "eau": "utilities", "utility": "utilities",
+        "sports": "entertainment", "sport": "entertainment", "media": "entertainment",
+        "law enforcement": "emergency-services", "anti-corruption": "government",
+        "internet service": "telecommunications",
+        "personal data": "commercial", "data aggregation": "commercial",
+        "security": "commercial", "sécurité": "commercial",
+        "agriculture": "agriculture", "agri": "agriculture",
     }
     for key, output in mapping.items():
         if key in value:
             return output
-    return slugify(raw)
+    return None
+
+
+def is_unattributed(actor: str, status: str = "") -> bool:
+    value = f"{actor} {status}".lower()
+    return any(term in value for term in (
+        "unclaimed", "unattributed", "unknown", "not specified", "non précisé",
+        "non revendiqué", "non revendique", "acteur inconnu",
+    ))
+
+
+def incident_label_fr(incident_type: str) -> str:
+    return {
+        "ransomware": "ransomware",
+        "data-leak": "fuite de données",
+        "access-sale": "vente d'accès",
+        "defacement": "défacement",
+    }.get(incident_type, incident_type)
 
 
 def normalize_dashes(value: str) -> str:
@@ -243,23 +306,37 @@ def normalize_dashes(value: str) -> str:
 
 def safe_description(rec: VictimRecord) -> str:
     incident_label = rec.incident_type.replace("-", " ")
-    base = (
-        f"AFRINTEL recorded a publicly claimed {incident_label} affecting {rec.organization} "
-        f"in {rec.country} on {rec.date_display}. The source actor is listed as {rec.actor}. "
-        f"Status: {rec.status}. Sector: {rec.sector}."
-    )
+    if is_unattributed(rec.actor, rec.status):
+        base = (
+            f"AFRINTEL recorded an observed {incident_label} affecting {rec.organization} "
+            f"in {rec.country} on {rec.date_display}. No actor attribution is recorded. "
+            f"Status: {rec.status}. Sector: {rec.sector}."
+        )
+    else:
+        base = (
+            f"AFRINTEL recorded a publicly claimed {incident_label} affecting {rec.organization} "
+            f"in {rec.country} on {rec.date_display}. The source actor is listed as {rec.actor}. "
+            f"Status: {rec.status}. Sector: {rec.sector}."
+        )
     if rec.description:
         base += " Source summary: " + rec.description[:2000]
     return normalize_dashes(base)
 
 
-def safe_description_fr(rec: VictimRecord) -> str:
-    incident_label = "ransomware" if rec.incident_type == "ransomware" else "fuite de données ou vente d'accès"
-    base = (
-        f"AFRINTEL a recensé une revendication publique de type {incident_label} concernant {rec.organization} "
-        f"en {rec.country}, à la date du {rec.date_display}. L'acteur source est indiqué comme {rec.actor}. "
-        f"Statut : {rec.status}. Secteur : {rec.sector}."
-    )
+def safe_description_fr(rec: VictimRecord, incident_type: Optional[str] = None) -> str:
+    incident_label = incident_label_fr(incident_type or rec.incident_type)
+    if is_unattributed(rec.actor, rec.status):
+        base = (
+            f"AFRINTEL a recensé un {incident_label} observé concernant {rec.organization} "
+            f"en {rec.country}, à la date du {rec.date_display}. Aucune attribution à un acteur n'est enregistrée. "
+            f"Statut : {rec.status}. Secteur : {rec.sector}."
+        )
+    else:
+        base = (
+            f"AFRINTEL a recensé une revendication publique de type {incident_label} concernant {rec.organization} "
+            f"en {rec.country}, à la date du {rec.date_display}. L'acteur source est indiqué comme {rec.actor}. "
+            f"Statut : {rec.status}. Secteur : {rec.sector}."
+        )
     if rec.description:
         base += " Résumé de la source : " + rec.description[:2000]
     return normalize_dashes(base)
@@ -269,7 +346,7 @@ def bilingual_incident_description(rec_en: VictimRecord, rec_fr: Optional[Victim
     english = safe_description(rec_en)
     if rec_fr is None:
         return english
-    french = safe_description_fr(rec_fr)
+    french = safe_description_fr(rec_fr, rec_en.incident_type)
     return f"## English\n\n{english}\n\n## Français\n\n{french}"
 
 
@@ -429,13 +506,15 @@ def build_month_bundle(
 
     for rec in records:
         rec_fr = records_fr_by_index.get(rec.index)
+        sector_ov = normalize_sector(rec.sector)
+        unattributed = is_unattributed(rec.actor, rec.status)
         actor_key = rec.actor.lower()
-        actor_id = actor_ids.get(actor_key)
-        if not actor_id:
-            actor_id = stix_id("intrusion-set", f"{year}:{month_dir}:actor:{rec.actor}")
+        actor_id = actor_ids.get(actor_key) if not unattributed else None
+        if not unattributed and not actor_id:
+            actor_id = stix_id("threat-actor", f"{year}:{month_dir}:actor:{rec.actor}")
             actor_ids[actor_key] = actor_id
             objects.append({
-                "type": "intrusion-set",
+                "type": "threat-actor",
                 "spec_version": "2.1",
                 "id": actor_id,
                 "created": created,
@@ -454,7 +533,7 @@ def build_month_bundle(
         if rec.domain:
             victim_refs.append({"source_name": "website", "url": rec.domain})
 
-        objects.append({
+        victim_object = {
             "type": "identity",
             "spec_version": "2.1",
             "id": victim_id,
@@ -462,15 +541,18 @@ def build_month_bundle(
             "modified": created,
             "name": rec.organization,
             "identity_class": "organization" if "/" not in rec.country else "group",
-            "sectors": [normalize_sector(rec.sector)],
             "description": bilingual_victim_description(rec, rec_fr),
-            "labels": ["afrintel", "victim", slugify(rec.country), normalize_sector(rec.sector)],
+            "labels": ["afrintel", "victim", slugify(rec.country)] + ([sector_ov] if sector_ov else []),
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
             "external_references": victim_refs,
             "x_afrintel_country": rec.country,
+            "x_afrintel_sector_raw": rec.sector,
             "x_afrintel_source_path": rec.source_path,
-        })
+        }
+        if sector_ov:
+            victim_object["sectors"] = [sector_ov]
+        objects.append(victim_object)
 
         normalized_status, labels = normalize_status(rec.status, rec.incident_type)
         incident_id = stix_id("incident", f"{year}:{month_dir}:incident:{rec.index}:{rec.date_iso}:{rec.country}:{rec.organization}")
@@ -488,11 +570,11 @@ def build_month_bundle(
             "name": f"AFRINTEL {month_dir.split(chr(45), 1)[1].title() if chr(45) in month_dir else month_dir.title()} {year} incident {rec.index:02d}: {rec.organization}",
             "description": bilingual_incident_description(rec, rec_fr),
             "first_seen": f"{rec.date_iso}T00:00:00Z",
-            "labels": labels + [slugify(rec.country), normalize_sector(rec.sector)],
+            "labels": labels + [slugify(rec.country)] + ([sector_ov] if sector_ov else []),
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
             "external_references": incident_refs,
-            "x_opencti_incident_type": "ransomware" if rec.incident_type == "ransomware" else "data-leak",
+            "x_opencti_incident_type": rec.incident_type,
             "x_afrintel_incident_index": rec.index,
             "x_afrintel_status": normalized_status,
             "x_afrintel_country": rec.country,
@@ -502,11 +584,13 @@ def build_month_bundle(
             "x_afrintel_source_path": rec.source_path,
         })
 
-        for suffix, relationship_type, source_ref_id, target_ref_id in [
-            ("attributed", "attributed-to", incident_id, actor_id),
-            ("actor-targets", "targets", actor_id, victim_id),
-            ("incident-targets", "targets", incident_id, victim_id),
-        ]:
+        relationships = [("incident-targets", "targets", incident_id, victim_id)]
+        if actor_id:
+            relationships[0:0] = [
+                ("attributed", "attributed-to", incident_id, actor_id),
+                ("actor-targets", "targets", actor_id, victim_id),
+            ]
+        for suffix, relationship_type, source_ref_id, target_ref_id in relationships:
             rel_id = stix_id("relationship", f"{year}:{month_dir}:{rec.index}:{suffix}")
             relationship_ids.append(rel_id)
             objects.append({
@@ -523,7 +607,9 @@ def build_month_bundle(
             })
 
     ransomware_count = sum(1 for rec in records if rec.incident_type == "ransomware")
-    leak_count = len(records) - ransomware_count
+    leak_count = sum(1 for rec in records if rec.incident_type == "data-leak")
+    access_sale_count = sum(1 for rec in records if rec.incident_type == "access-sale")
+    defacement_count = sum(1 for rec in records if rec.incident_type == "defacement")
     month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     report_refs = list(actor_ids.values()) + victim_ids + incident_ids
 
@@ -561,7 +647,9 @@ def build_month_bundle(
             "x_afrintel_author_ref": AFRINTEL_AUTHOR_ID,
             "x_afrintel_total_incidents": len(records),
             "x_afrintel_ransomware_count": ransomware_count,
-            "x_afrintel_data_leak_access_sale_count": leak_count,
+            "x_afrintel_data_leak_count": leak_count,
+            "x_afrintel_access_sale_count": access_sale_count,
+            "x_afrintel_defacement_count": defacement_count,
             "x_afrintel_victim_identity_count": len(victim_ids),
         }
         if document.comparison_periods:
@@ -580,6 +668,21 @@ def build_month_bundle(
 
 def validate_bundle(bundle: dict, expected_victims: int, expected_incidents: int, expected_reports: int) -> None:
     objects = bundle.get("objects", [])
+    intrusion_sets = [obj.get("id") for obj in objects if obj.get("type") == "intrusion-set"]
+    if intrusion_sets:
+        raise ValueError(
+            "AFRINTEL publication sources must be modeled as threat-actor, not intrusion-set: "
+            f"{intrusion_sets[:5]}"
+        )
+    bad_sectors = [
+        (obj.get("id"), sector)
+        for obj in objects
+        if obj.get("type") == "identity"
+        for sector in obj.get("sectors", [])
+        if sector not in STIX_INDUSTRY_SECTORS
+    ]
+    if bad_sectors:
+        raise ValueError(f"Non-standard STIX industry sectors detected: {bad_sectors[:5]}")
     ids = [obj.get("id") for obj in objects if obj.get("id")]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate STIX IDs detected")
@@ -778,6 +881,18 @@ def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Opti
         obj.get("type") == "incident" and "ransomware" in obj.get("labels", [])
         for obj in merged_objects
     )
+    data_leak_count = sum(
+        obj.get("type") == "incident" and "data-leak" in obj.get("labels", [])
+        for obj in merged_objects
+    )
+    access_sale_count = sum(
+        obj.get("type") == "incident" and "access-sale" in obj.get("labels", [])
+        for obj in merged_objects
+    )
+    defacement_count = sum(
+        obj.get("type") == "incident" and "defacement" in obj.get("labels", [])
+        for obj in merged_objects
+    )
 
     for document in h1_documents:
         report = {
@@ -808,7 +923,9 @@ def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Opti
             "x_afrintel_comparison_periods": list(document.comparison_periods),
             "x_afrintel_total_incidents": incident_count,
             "x_afrintel_ransomware_count": ransomware_count,
-            "x_afrintel_data_leak_access_sale_defacement_count": incident_count - ransomware_count,
+            "x_afrintel_data_leak_count": data_leak_count,
+            "x_afrintel_access_sale_count": access_sale_count,
+            "x_afrintel_defacement_count": defacement_count,
             "x_afrintel_victim_identity_count": victim_count,
             "x_afrintel_months_covered": month_dirs,
         }

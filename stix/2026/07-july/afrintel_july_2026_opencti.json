@@ -1,0 +1,199 @@
+{
+  "type": "bundle",
+  "id": "bundle--a32d3e5a-b0d6-5615-8963-12e08aac890a",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--8bb129fd-2238-5376-9413-bf32e72dfca6",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "name": "anisanas2",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "07-july"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ef42539a-ac6f-52ab-84cc-d2e6935937e6",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "name": "Distamed",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Healthcare / Medical equipment.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Santé / Équipements médicaux.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://distamed.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_sector_raw": "Healthcare / Medical equipment",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/07-july/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--6daf2a38-bf04-5035-aaf2-70c782e7ebce",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "name": "AFRINTEL July 2026 incident 01: Distamed",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Distamed in Morocco on 24 July 2026. The source actor is listed as anisanas2. Status: Data leak / Data offered for sale. Sector: Healthcare / Medical equipment. Source summary: Distamed is a Moroccan company specialising in medical equipment and digital healthcare solutions. Its activities include cardiology, pulmonology, neurology, sleep diagnostics, rehabilitation and medical imaging.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Distamed en Maroc, à la date du 24 juillet 2026. L'acteur source est indiqué comme anisanas2. Statut : Fuite de données / Vente de données. Secteur : Santé / Équipements médicaux. Résumé de la source : Distamed est une entreprise marocaine spécialisée dans les équipements médicaux et les solutions numériques de santé. Elle intervient notamment dans les domaines de la cardiologie, de la pneumologie, de la neurologie, du diagnostic du sommeil, de la réadaptation et de l’imagerie médicale.",
+      "first_seen": "2026-07-24T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "data-leak",
+        "morocco",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://distamed.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_sector_raw": "Healthcare / Medical equipment",
+      "x_afrintel_actor": "anisanas2",
+      "x_afrintel_date_display": "24 July 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/07-july/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bcb08494-50af-5d64-bbb7-b4cfc6e261c0",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--6daf2a38-bf04-5035-aaf2-70c782e7ebce",
+      "target_ref": "threat-actor--8bb129fd-2238-5376-9413-bf32e72dfca6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1aa4d239-2ea0-54f1-831b-4e60f3414952",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--8bb129fd-2238-5376-9413-bf32e72dfca6",
+      "target_ref": "identity--ef42539a-ac6f-52ab-84cc-d2e6935937e6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--299adc10-1dd0-56c6-ba2d-abcb0d241ef0",
+      "created": "2026-07-29T10:50:45Z",
+      "modified": "2026-07-29T10:50:45Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--6daf2a38-bf04-5035-aaf2-70c782e7ebce",
+      "target_ref": "identity--ef42539a-ac6f-52ab-84cc-d2e6935937e6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}

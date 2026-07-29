@@ -44,14 +44,18 @@ Each STIX bundle may include:
 ## Available datasets
 
 
-### AFRINTEL 2024
+### AFRINTEL 2026
 
-| Dataset | STIX Bundle |
+| Period | STIX Bundle |
 |------|------|
-| 2024 Victim List (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
-| 2024 Victim List (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
-| 2024 CTI Report (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
-| 2024 CTI Report (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
+| First half of 2026 | [afrintel_h1_2026_opencti.json](https://raw.githubusercontent.com/Hatchepsoute/AFRINTEL/refs/heads/main/stix/2026/afrintel_h1_2026_opencti.json) |
+| January 2026 | [afrintel_january_2026_opencti.json](./2026/01-january/afrintel_january_2026_opencti.json) |
+| February 2026 | [afrintel_february_2026_opencti.json](./2026/02-february/afrintel_february_2026_opencti.json) |
+| March 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
+| April 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
+| May 2026 | [afrintel_may_2026_opencti.json](./2026/05-may/afrintel_may_2026_opencti.json) |
+| June 2026 | [afrintel_june_2026_opencti.json](./2026/06-june/afrintel_june_2026_opencti.json) |
+| July 2026 | [afrintel_july_2026_opencti.json](./2026/07-july/afrintel_july_2026_opencti.json) |
 
 ### AFRINTEL 2025
 
@@ -70,16 +74,14 @@ Each STIX bundle may include:
 | November 2025 | [afrintel_november_2025_opencti.json](./2025/11-november/afrintel_november_2025_opencti.json) |
 | December 2025 | [afrintel_december_2025_opencti.json](./2025/12-december/afrintel_december_2025_opencti.json) |
 
-### AFRINTEL 2026
+### AFRINTEL 2024
 
-| Month | STIX Bundle |
+| Dataset | STIX Bundle |
 |------|------|
-| January 2026 | [afrintel_january_2026_opencti.json](./2026/01-january/afrintel_january_2026_opencti.json) |
-| February 2026 | [afrintel_february_2026_opencti.json](./2026/02-february/afrintel_february_2026_opencti.json) |
-| March 2026 | [afrintel_march_2026_opencti.json](./2026/03-march/afrintel_march_2026_opencti.json) |
-| April 2026 | [afrintel_april_2026_opencti.json](./2026/04-april/afrintel_april_2026_opencti.json) |
-| May 2026 | [afrintel_may_2026_opencti.json](./2026/05-may/afrintel_may_2026_opencti.json) |
-| June 2026 | [afrintel_june_2026_opencti.json](./2026/06-june/afrintel_june_2026_opencti.json) |
+| 2024 Victim List (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
+| 2024 Victim List (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
+| 2024 CTI Report (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
+| 2024 CTI Report (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
 
 ---
 
