@@ -32,14 +32,14 @@
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Gouvernement / Culture / Administration publique
 - **Site web :** [m-culture.gov.dz](https://www.m-culture.gov.dz/)
-- **Statut :** Fuite de données / Vente de base revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Environ 247 000 enregistrements exposés (contacts administratifs, inscriptions événements culturels, demandes de subventions). Données : noms, emails, téléphones, statuts de paiement, financements, dossiers de candidature.
 
 #### 🇪🇬 Égypte - Cairo University (cu.edu.eg) [Fuite de données]
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Université
 - **Site web :** [cu.edu.eg](https://cu.edu.eg/)
-- **Statut :** Fuite de données / Vente de base de données revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Cairo University est l’une des plus anciennes et prestigieuses universités publiques d’Égypte, basée au Caire et accueillant des centaines de milliers d’étudiants. Une base de données revendiquée sur un forum cybercriminel expose environ 284 000 enregistrements liés aux étudiants, inscriptions académiques et systèmes de support universitaire. Les données mentionnées incluent notamment des informations personnelles, numéros d’identification nationaux, emails, numéros de téléphone, informations académiques, détails d’inscription, statuts financiers et tickets de support. L’analyse préliminaire suggère l’exposition d’une base backend universitaire utilisée pour la gestion des étudiants, des admissions, des inscriptions académiques et du support administratif.
 
 
@@ -49,7 +49,7 @@
 - **Secteur :** Énergie / Pétrole & Gaz / Infrastructure critique
 - **Site web :** [nationaloilethiopia.com](https://www.nationaloilethiopia.com/)
 - **Date de la fuite :** 24 Mars 2026 mais découverte en Avril 2026
-- **Statut :** Compromission revendiquée / Vente et publication de données
+- **Statut :** Claim - Data Sample Published
 - **Description :** National Oil Ethiopia PLC (NOC) est une entreprise majeure du secteur énergétique éthiopien spécialisée dans les activités pétrolières, la distribution de carburants et les services associés. Une publication sur un forum cybercriminel revendique une compromission complète de l’infrastructure de l’organisation ayant conduit à l’exfiltration de plusieurs bases de données, dont une base ERP principale estimée à plus de 800 Go. L’acteur affirme avoir obtenu des informations sensibles incluant données clients, contrats, salaires, emails, adresses, informations personnelles (PII) ainsi que des données opérationnelles internes. La publication décrit également une chaîne d’intrusion complète allant d’un accès initial via une vulnérabilité Microsoft Exchange ProxyLogon jusqu’au déploiement final d’un ransomware. Les captures et descriptions publiées suggèrent une compromission avancée des systèmes internes, des accès administrateurs, des bases de données et potentiellement des solutions de sécurité déployées au sein de l’infrastructure.
 ---
 
@@ -58,21 +58,21 @@
 - **Groupe ransomware :** dragonforce
 - **Secteur :** Industrie du voyage et du tourisme
 - **Site web :** [singita.com](https://singita.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Gestionnaire de lodges de luxe et de réserves naturelles en Afrique.
 
 #### 🇿🇦 Afrique du Sud - Takealot.com [Fuite de données]
 - **Acteur / Groupe :** Grubder
 - **Secteur :** E‑commerce
 - **Site web :** [takealot.com](https://www.takealot.com)
-- **Statut :** Fuite de base - À vendre (1 200 $)
+- **Statut :** Claim - Data Sample Published
 - **Description :** Leader sud‑africain du e‑commerce. Le fichier `DeliveryAddress_South Africa.csv` expose adresses de livraison détaillées, coordonnées GPS, numéros de téléphone, instructions d’accès privées.
 
 #### 🇿🇦 Afrique du Sud - MySchool South Africa [Fuite de données]
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Services étudiants
 - **Site web :** [myschool.co.za](https://www.myschool.co.za/)
-- **Statut :** Fuite de données / Vente de base revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Environ 437 000 enregistrements : contacts étudiants, inscriptions, tickets de support, noms, emails, téléphones, dates de naissance, statuts de paiement.
 
 
@@ -81,7 +81,7 @@
 - **Acteur / Groupe :** Grubder
 - **Secteur :** E-commerce / Beauté / CRM
 - **Site web :** [fatales.tn](https://www.fatales.tn/)
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Fatales.tn contenant environ 431 000 enregistrements clients liés aux contacts utilisateurs, historiques de réservation et programmes de fidélité. L’acteur affirme que les données sont organisées en plusieurs ensembles structurés couvrant la gestion client, les réservations et les opérations marketing.
 
 - **Données observées :**
@@ -106,7 +106,7 @@
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Services / CRM
 - **Site web :** [nsstunis.com](https://www.nsstunis.com/)
-- **Statut :** Fuite de données / Vente de base revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** ~312 000 enregistrements : noms, emails, téléphones, infos familiales, centres d’intérêt, statuts marketing, données démographiques.
 
 
@@ -114,7 +114,7 @@
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Université
 - **Site web :** [ums.asu.edu.eg](https://ums.asu.edu.eg/)
-- **Statut :** Fuite de données / Vente de base de données revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Ain Shams University est l’une des principales universités publiques d’Égypte, basée au Caire et reconnue pour ses programmes académiques et de recherche. Une base de données revendiquée sur un forum cybercriminel expose environ 563 000 enregistrements liés aux étudiants, aux inscriptions académiques et aux systèmes d’authentification. Les données mentionnées incluent notamment des informations personnelles, emails, numéros de téléphone, identifiants universitaires, détails d’inscription, programmes académiques, statuts financiers et éléments liés à la vérification d’identité et à l’authentification. L’analyse préliminaire suggère l’exposition d’une base backend universitaire utilisée pour la gestion des étudiants, des inscriptions et des mécanismes de vérification académique.
 ---
 
@@ -123,7 +123,7 @@
 - **Groupe ransomware :** payload
 - **Secteur :** Finance
 - **Site web :** [uf-eg.com](https://uf-eg.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Institution financière non bancaire (crédit‑bail, affacturage, prêts). Infrastructure entièrement compromise, données clients exposées.
 
 ---
@@ -133,21 +133,21 @@
 - **Groupe ransomware :** krybit
 - **Secteur :** Établissements académiques
 - **Site web :** [lkc.ac.bw](https://lkc.ac.bw)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Livingstone Kolobeng College, école secondaire privée à Gaborone.
 
 #### 🇪🇬 Égypte - AUG Pharma [Ransomware]
 - **Groupe ransomware :** dragonforce
 - **Secteur :** Industrie pharmaceutique
 - **Site web :** [augpharma.com](https://augpharma.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Société pharmaceutique égyptienne.
 
 #### 🇦🇴 🇿🇦 🇳🇬 Afrique - Fuite de données gouvernementales et accès administrateurs [Fuite de données]
 
 - **Acteur / Groupe :** superduper1
 - **Secteur :** Gouvernement / Défense / Santé / Renseignement
-- **Statut :** Fuite de données / Vente d’accès revendiquée
+- **Statut :** Claim - Unverified
 - **Site web :** N/A
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’accès à plusieurs messageries gouvernementales, panneaux administrateurs et comptes liés à des institutions publiques africaines.
 
@@ -178,7 +178,7 @@
 - **Acteur / Groupe :** w00l_ysh1
 - **Secteur :** Gouvernement / Finances publiques
 - **Site web :** [sentresor.org](https://www.sentresor.org/)
-- **Statut :** Vente d’accès gouvernementaux revendiquée
+- **Statut :** Claim - Unverified
 - **Date de publication initiale :** 08 Mars 2026
 - **Date de découverte :** 05 Avril 2026
 
@@ -212,14 +212,14 @@
 - **Groupe ransomware :** lockbit5
 - **Secteur :** Automobile
 - **Site web :** [gas.mercedes-benz.com.eg](https://gas.mercedes-benz.com.eg)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Concessionnaire Mercedes‑Benz agréé à Gizeh.
 
 #### 🇳🇬 Nigeria - Welfare.org.ng [Fuite de données]
 - **Acteur / Groupe :** Citizen / NormalLeVrai
 - **Secteur :** ONG / Aide sociale
 - **Site web :** [welfare.org.ng](https://welfare.org.ng/)
-- **Statut :** Vente de données / Compromission revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Plateforme nigériane de services communautaires. Compromission du site principal et sous‑domaines, avec code source, sauvegardes et base de données >12 000 enregistrements.
 
 ---
@@ -229,21 +229,21 @@
 - **Groupe ransomware :** payload
 - **Secteur :** Pétrole
 - **Site web :** [egyptoil-gas.com](https://egyptoil-gas.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Exploration, production et traitement de gaz naturel dans le delta du Nil et le Sinaï Nord.
 
 #### 🇪🇬 Égypte - ACE Consulting Engineers [Ransomware]
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Conseil en ingénierie
 - **Site web :** [ace-mb.com](https://ace-mb.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Cabinet d’ingénierie international fondé en 1950, présent dans plus de 35 pays.
 
 #### 🇲🇦 Maroc - CNOPS [Fuite de données]
 - **Acteur / Groupe :** JBT2026 (relayé par Jabaroot)
 - **Secteur :** Santé / Assurance maladie / Administration publique
 - **Site web :** [cnops.org.ma](https://www.cnops.org.ma/)
-- **Statut :** Fuite de données / Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Plus de 3 millions d’enregistrements d’assurés marocains : noms, numéros d’affiliation, CIN, adresses complètes.
 
 ---
@@ -253,14 +253,14 @@
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Administrations publiques
 - **Site web :** [egov.sc](https://egov.sc)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Portail officiel e‑gouvernement des Seychelles.
 
 #### 🇿🇦 Afrique du Sud - megasurf.co.za [Ransomware]
 - **Groupe ransomware :** krybit
 - **Secteur :** Fournisseurs d’accès Internet
 - **Site web :** [megasurf.co.za](https://megasurf.co.za)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** FAI et opérateur de centre de données sud‑africain.
 
 ---
@@ -270,14 +270,14 @@
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Formation professionnelle / Éducation
 - **Site web :** [ofppt.ma](https://www.ofppt.ma)
-- **Statut :** Fuite de données - Base à vendre (>400 000 profils)
+- **Statut :** Claim - Unverified
 - **Description :** Principal organisme de formation professionnelle au Maroc. Données exposées : noms, téléphones, emails, CNI, code Massar, ville, statut, logs d’activité.
 
 #### 🇲🇦 Maroc - Documents d’identité marocains (Passeports/KYC) [Fuite de données]
 - **Acteur / Groupe :** Arnoldsudney
 - **Secteur :** Identité numérique / Documents officiels
 - **Site web :** N/A
-- **Statut :** Vente de documents d’identité
+- **Statut :** Claim - Unverified
 - **Description :** Offre de passeports, cartes d’identité, selfies de vérification, permis de conduire et packs KYC complets.
 
 ---
@@ -287,14 +287,14 @@
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Administration centrale
 - **Site web :** [ifmis.go.ke](https://ifmis.go.ke)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Système intégré de gestion des informations financières du Kenya.
 
 #### 🇲🇦 Maroc - GET / GENERAL ELECTRIC TRADING (gemaroc.com) [Fuite de données]
 - **Acteur / Groupe :**  bxxxx1 
 - **Secteur :** Services industriels / Infrastructure IT
 - **Site web :** [gemaroc.com](https://gemaroc.com/)
-- **Statut :** Fuite de données / Redistribution de dump
+- **Statut :** Claim - Data Sample Published
 - **Description :** Dump SQL (septembre 2024) exposant Dolibarr ERP/CRM, bases WordPress, données RH, financières, tickets, logs.
 
 ---
@@ -304,7 +304,7 @@
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Services de santé
 - **Site web :** [imah.gov.gh](https://imah.gov.gh)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Hôpital public à Tema, spécialisé en santé maritime et générale.
 
 
@@ -313,7 +313,7 @@
 - **Acteur / Groupe :** Rihana
 - **Secteur :** Gouvernement / Maison Royale
 - **Site web :** N/A (institution)
-- **Statut :** Fuite de données / Vente de base
+- **Statut :** Claim - Data Sample Published
 - **Description :** Une publication diffusée sur un forum cybercriminel revendique la vente d’une base de données présentée comme liée au personnel du Palais Royal marocain (Dar El Makhzen). L’échantillon analysé contient environ 3 300 enregistrements comprenant plusieurs catégories de données personnelles et administratives sensibles.
 
 - **Éléments observés dans les données divulguées :**
@@ -355,7 +355,7 @@
 - **Groupe ransomware :** payload
 - **Secteur :** Industrie manufacturière
 - **Site web :** [orientalweavers.com](https://orientalweavers.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Un des plus grands fabricants de tapis et moquettes au monde, basé au Caire.
 
 
@@ -364,7 +364,7 @@
 - **Acteur / Groupe :** RubiconH4ck
 - **Secteur :** Aviation / Transport / Infrastructure critique
 - **Site web :** [kaa.go.ke](https://www.kaa.go.ke/)
-- **Statut :** Fuite de données/Vente de base de données revendiquée
+- **Statut :** Claim - Unverified
 - **Description :** Kenya Airports Authority (KAA) est l’organisme public kényan chargé de la gestion et de l’exploitation des principaux aéroports du pays, incluant les infrastructures aériennes stratégiques et les services associés. Une publication sur un forum cybercriminel revendique la vente d’environ 2 To de données attribuées à l’organisation. L’acteur affirme que les données incluent des systèmes d’information, des données utilisateurs, des services internes ainsi que des adresses complètes d’utilisateurs. L’annonce suggère une compromission potentielle d’infrastructures critiques liées au secteur aérien kényan. Bien que les éléments publiquement exposés restent limités, le volume revendiqué et la nature des informations mentionnées pourraient représenter un risque significatif pour la sécurité opérationnelle, la confidentialité des données et les infrastructures associées au transport aérien.
 ---
 
@@ -373,21 +373,21 @@
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Agroalimentaire
 - **Site web :** [sunspray.co.za](https://sunspray.co.za)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Plus grand fabricant sud‑africain d’ingrédients alimentaires lyophilisés.
 
 #### 🇲🇦 Maroc - Al Barid Bank [Fuite de données]
 - **Acteur / Groupe :** Sejjil
 - **Secteur :** Banque / Services financiers
 - **Site web :** [albaridbank.ma](https://www.albaridbank.ma/)
-- **Statut :** Fuite présumée / Vente revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Description :** Logs financiers internes (2025) avec transferts instantanés, prélèvements, informations d’agences, numéros de téléphone.
 
 #### 🇲🇦 Maroc - Chezpara.ma [Fuite de données]
 - **Acteur / Groupe :** Richard2002
 - **Secteur :** Pharmacie en ligne / E‑commerce santé
 - **Site web :** [chezpara.ma](https://chezpara.ma/)
-- **Statut :** Vente de base revendiquée
+- **Statut :** Claim - Unverified
 - **Date de publication initiale :** 23 Février 2026
 - **Date de découverte :** 19 Avril 2026
 - **Description :** ~400 000 enregistrements clients : noms, téléphones, adresses détaillées, infos de livraison, commentaires de commandes.
@@ -399,14 +399,14 @@
 - **Groupe ransomware :** payload
 - **Secteur :** Construction
 - **Site web :** [betterhouse-eg.com](https://betterhouse-eg.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Promoteur immobilier égyptien (plus de 150 projets).
 
 #### 🇲🇦 Maroc - SUPTECH SANTÉ [Fuite de données]
 - **Acteur / Groupe :** xNov
 - **Secteur :** Éducation / Formation / Technologies de santé
 - **Site web :** suptech-sante.ma
-- **Statut :** Fuite de données / Revendication
+- **Statut :** Claim - Unverified
 - **Description :** >231 dossiers étudiants : CIN, scans de diplômes, emails, téléphones, codes Massar, confirmations d’inscription.
 
 ---
@@ -416,28 +416,28 @@
 - **Acteur / Groupe :** Anisanas2 
 - **Secteur :** Santé / Laboratoire médical
 - **Site web :** N/A
-- **Statut :** Fuite de base (~100 Go)
+- **Statut :** Claim - Data Sample Published
 - **Description :** Rapports médicaux PDF exposés : identité complète, résultats biologiques (VIH, HPV, IST, tuberculose, hormonaux, génétique), données pédiatriques et néonatales.
 
 #### 🇳🇬 Nigeria - Federal Housing Authority (FHA) [Fuite de données]
 - **Acteur / Groupe :** 0xLei / Nullsec
 - **Secteur :** Administration publique / Immobilier
 - **Site web :** [fha.gov.ng](https://www.fha.gov.ng/)
-- **Statut :** Fuite de données
+- **Statut :** Claim - Unverified
 - **Description :** ~170 Mo de code source, fichiers backend, configurations.
 
 #### 🇳🇬 Nigeria - EFCC [Fuite de données]
 - **Acteur / Groupe :** ki4t / Nullsec Nigeria
 - **Secteur :** Application de la loi / Anti‑corruption
 - **Site web :** [efcc.gov.ng](https://www.efcc.gov.ng/)
-- **Statut :** Fuite de données - dump SQL partiel
+- **Statut :** Claim - Data Sample Published
 - **Description :** Comptes utilisateurs, emails, téléphones, rôles internes, hashs bcrypt, IP internes, données d’agents.
 
 #### 🇲🇦 Maroc - Fédération Royale Marocaine de Football (FRMF) [Fuite de données]
 - **Acteur / Groupe :** MDGhost
 - **Secteur :** Sport
 - **Site web :** [frmf.ma](https://frmf.ma/)
-- **Statut :** Fuite de données / Revendication
+- **Statut :** Claim - Data Sample Published
 - **Description :** 1,2 To de données à vendre (10 000 USD). Échantillons : gestion des licences, identités, adresses, téléphones, données de mineurs.
 
 #### 🇲🇦 Maroc - Pharmacie.ma [Fuite de données]
@@ -445,7 +445,7 @@
 - **Acteur / Groupe :** Tanaka
 - **Secteur :** Santé / Pharmacie / E-health
 - **Site web :** [pharmacie.ma](https://www.pharmacie.ma)
-- **Statut :** Fuite de données / Revendication
+- **Statut :** Claim - Data Sample Published
 - **Date de découverte :** 21 Avril 2026
 - **Description victime :**  
   Pharmacie.ma est un portail marocain spécialisé dans les informations pharmaceutiques, les médicaments et les contenus liés à la santé. La plateforme cible notamment les pharmaciens, étudiants en pharmacie et utilisateurs recherchant des informations médicales au Maroc.
@@ -463,7 +463,7 @@
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Éducation / Université
 - **Site web :** [Al Akhawayn University (AUI)](https://aui.ma/)
-- **Statut :** Fuite de données / Base de données revendiquée
+- **Statut :** Claim - Unverified
 - **Date de publication initiale :** 08 Février 2026
 - **Date de découverte :** 21 Avril 2026
 
@@ -493,7 +493,7 @@
 - **Groupe ransomware :** worldleaks
 - **Secteur :** Agroalimentaire
 - **Site web :** [eccbc.com](https://eccbc.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Partenaire embouteilleur de Coca‑Cola en Afrique du Nord et de l’Ouest.
 
 ---
@@ -504,7 +504,7 @@
 - **Acteur / Groupe :** NormalLeVrai
 - **Secteur :** Gouvernement / Sécurité sociale
 - **Site web :** [cnss.bj](https://www.cnss.bj/)
-- **Statut :** Fuite de données / Publication de messagerie
+- **Statut :** Claim - Data Sample Published
 
 - **Description :** Une publication sur un forum cybercriminel revendique la fuite de données issues de la boîte officielle `info@cnss.bj` de la CNSS du Bénin. Les éléments publiés mentionnent environ 5 993 e-mails, 9 019 pièces jointes et plus de 31 000 fichiers analysés pour un volume total estimé à 7,1 Go.
 
@@ -526,14 +526,14 @@
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Industrie manufacturière
 - **Site web :** [eecegypt.com](https://eecegypt.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Conglomérat égyptien d’ingénierie, construction et structures métalliques.
 
 #### 🇲🇦 Maroc - Centre Régional d’Investissement Rabat‑Salé‑Kénitra (CRI) [Fuite de données]
 - **Acteur / Groupe :** kutam_dz
 - **Secteur :** Administration publique / Investissement / Juridique
 - **Site web :** [cri-rsk.ma](https://www.cri-rsk.ma/)
-- **Statut :** Fuite de données - Dump SQL public
+- **Statut :** Claim - Data Sample Published
 - **Description :** Expose des données professionnelles (notaires) : noms, téléphones multiples, adresses postales, emails, province, profession.
 
 #### 🇹🇳 Tunisie - Tawjih.tn [Fuite de données]
@@ -541,7 +541,7 @@
 - **Secteur :** Éducation / Orientation académique
 - **Site web :** [tawjih.tn](https://tawjih.tn/)
 - **Date de la fuite :** 26 Avril 2026
-- **Statut :** Fuite de données / Base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Description :** Tawjih.tn est une plateforme tunisienne d’orientation académique destinée principalement aux étudiants et bacheliers souhaitant préparer leur parcours universitaire et professionnel. L’acteur malveillant affirme disposer d’informations liées aux utilisateurs de la plateforme, potentiellement incluant des données personnelles et académiques. Bien que le contenu complet de la base ne soit pas entièrement exposé dans la publication analysée, les éléments visibles suggèrent une compromission potentielle d’une base backend utilisée pour la gestion des comptes utilisateurs et des services d’orientation académique.
 
 ---
@@ -551,28 +551,28 @@
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Pétrole
 - **Site web :** [alx-pc.com](https://alx-pc.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Alexandria Petroleum Company, raffinerie publique.
 
 #### 🇬🇭 Ghana - providentgh.com [Ransomware]
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Gestion de patrimoine
 - **Site web :** [providentgh.com](https://providentgh.com)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Compagnie d’assurance privée au Ghana.
 
 #### 🇺🇬 Ouganda - Ministère de l’Agriculture (E‑Extension) [Fuite de données]
 - **Acteur / Groupe :** vicmeow
 - **Secteur :** Administration publique / Agriculture
 - **Site web :** [extension.agriculture.go.ug](https://extension.agriculture.go.ug/)
-- **Statut :** Fuite de données - Dump CSV
+- **Statut :** Claim - Data Sample Published
 - **Description :** Plateforme agricole ougandaise. Expose emails, noms, téléphones, adresses, mots de passe faibles/en clair, token API SMS.
 
 #### 🇳🇬 Nigeria - Ministère du Commerce de l’État d’Oyo [Fuite de données]
 - **Acteur / Groupe :** AckLine
 - **Secteur :** Administration publique / Commerce
 - **Site web :** oyostate.gov.ng
-- **Statut :** Fuite de données (scraping revendiqué)
+- **Statut :** Claim - Unverified
 - **Description :** ~275 000 cartes d’identité commerciales (21,5 Go) : noms, dates de naissance, adresses, professions, photos. Risque critique d’usurpation d’identité.
 
 ---
@@ -582,28 +582,28 @@
 - **Groupe ransomware :** lockbit5
 - **Secteur :** Sports
 - **Site web :** [planetsport.ma](https://planetsport.ma)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Leader marocain de la distribution d’articles de sport.
 
 #### 🇿🇲 Zambie - zsiclife.co.zm [Ransomware]
 - **Groupe ransomware :** krybit
 - **Secteur :** Services d’assurance
 - **Site web :** [zsiclife.co.zm](https://zsiclife.co.zm)
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description :** Assurance vie et gestion de patrimoine en Zambie.
 
 #### 🇲🇦 Maroc - Fédération Royale Marocaine de Tennis (FRMT) [Fuite de données]
 - **Acteur / Groupe :** Keymous
 - **Secteur :** Sports
 - **Site web :** [frmtennis.ma](https://frmtennis.ma/)
-- **Statut :** Fuite de données / Revendication
+- **Statut :** Claim - Unverified
 - **Description :** ~20 000 enregistrements de licenciés : noms, prénoms, clubs, sexe.
 
 #### 🇲🇦 Maroc - Liste de 4 millions d’adresses email marocaines [Fuite de données]
 - **Acteur / Groupe :** Rihana
 - **Secteur :** Données personnelles / Emailing / Marketing
 - **Site web :** N/A
-- **Statut :** Publication / Partage de base de données
+- **Statut :** Claim - Unverified
 - **Description :** Une publication sur un forum cybercriminel revendique le partage d’une liste contenant environ 4 millions d’adresses email attribuées à des utilisateurs marocains. L’acteur précise que les données seraient principalement destinées à des campagnes de spam et d’email marketing. L’annonce mentionne plusieurs domaines populaires utilisés au Maroc, notamment Gmail, Hotmail, Outlook, Yahoo et Menara.ma. Aucun organisme spécifique n’est directement identifié comme source de la fuite, ce qui suggère potentiellement une agrégation de données issues de multiples compromissions, collectes OSINT ou anciennes fuites de données. Ce type de dataset peut être exploité pour des campagnes de phishing, spam massif, credential stuffing ou ingénierie sociale ciblée.
 ----------
 
@@ -613,7 +613,7 @@
 
 - **Acteur / Groupe :** forrest
 - **Secteur :** Application mobile / Réseau social
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Date de fuite :** 17 Janvier 2026 (découverte en Avril 2026)
 
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Exscape App contenant environ 5 000 profils utilisateurs tunisiens.
@@ -643,7 +643,7 @@
 - **Secteur :** Services postaux / Gouvernement / Télécommunications
 - **Site web :** [poste.dz](https://www.poste.dz/)
 - **Date de fuite :** 29 Janvier 2026 (découverte en Avril 2026)
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 
 - **Description :** Une publication sur un forum cybercriminel revendique la vente de plus de 500 000 enregistrements attribués à Algeria Post. Les échantillons publiés incluent des informations personnelles associées à des citoyens algériens ainsi que des photographies de cartes nationales d’identité algériennes.
 
@@ -677,7 +677,7 @@
 - **Secteur :** Gouvernement / Infrastructures publiques / Transport
 - **Site web :** *.gov.za
 - **Date de fuite :** 16 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée au Department of Roads & Public Works de la province du Northern Cape en Afrique du Sud. Les échantillons publiés contiennent des données issues de formulaires de contact et d’échanges administratifs liés aux infrastructures publiques, appels d’offres, stages, candidatures et demandes institutionnelles.
 
@@ -708,7 +708,7 @@
 - **Secteur :** Gouvernement / Administration municipale
 - **Site web :** *.gov.za
 - **Date de fuite :** 13 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Buffalo City Metropolitan Municipality en Afrique du Sud. L’acteur affirme disposer d’un accès administrateur aux systèmes et publie plusieurs échantillons liés aux services municipaux, aux utilisateurs internes et aux journaux d’administration.
 
@@ -745,7 +745,7 @@
 - **Secteur :** E-commerce / Livraison / Retail
 - **Site web :** [bottles.com](https://bottles.com)
 - **Date de fuite :** 23 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Vente de base de données revendiquée
+- **Statut :** Claim - Data Sample Published
 
 - **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Bottles.com, devenu Pick n Pay ASAP après son acquisition par Pick n Pay. Les données publiées concernent des utilisateurs sud-africains de la plateforme de livraison.
 
@@ -774,7 +774,7 @@
 - **Acteur / Groupe :** dark07x
 - **Secteur :** Assurance / Assistance automobile / Services d’assistance
 - **Site web :** [ipassistance-dz.com](https://ipassistance-dz.com)
-- **Statut :** Fuite de données / Compromission revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Date de publication initiale :** 19 Janvier 2026
 - **Date de découverte :** 30 Avril 2026
 
@@ -811,7 +811,7 @@
 - **Secteur :** Sport / Fédération sportive
 - **Site web :** [lrfa.org.dz](https:// lrfa.org.dz)
 - **Plateforme concernée :** Foot’Up
-- **Statut :** Fuite de données / Compromission revendiquée
+- **Statut :** Claim - Data Sample Published
 - **Date de publication initiale :** 16 Janvier 2026
 - **Date de découverte :** 30 Avril 2026
 - **Description :** Une publication sur un forum cybercriminel revendique la compromission de la plateforme officielle de gestion de la Ligue Régionale de Football d’Alger (LRFA). L’acteur affirme avoir extrait des données liées à plusieurs clubs algériens ainsi qu’aux infrastructures administratives du football régional.

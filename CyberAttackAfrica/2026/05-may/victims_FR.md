@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **57 incidents uniques** : **16 ransomwares** et **41 fuites de données ou ventes d’accès**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de données ou ventes d’accès**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
 
 ### Incidents marquants
 
@@ -107,8 +107,10 @@ Mai 2026 compte **57 incidents uniques** : **16 ransomwares** et **41 fuites de 
 - **Statut :** Claim - Unverified
 - **Description :**  ActionAid est une organisation internationale de lutte contre la pauvreté et les injustices sociales, collaborant avec des entités locales telles que TACOSA (The ActionAid Community and Social Action). Le groupe de ransomware MedusaLocker a revendiqué une compromission des systèmes informatiques affectant ces entités, mettant en péril des données sensibles liées aux programmes de développement communautaire et aux informations des bénéficiaires.
 
+---
+### 03 Mai 2026
 #### 🇿🇦 Afrique du Sud - Consumer Goods Council of South Africa (CGCSA)
-- **Acteur / Groupe :** Stormous (XOverStm)
+- **Groupe ransomware :** Stormous (XOverStm)
 - **Secteur :** E-commerce / Retail
 - **Site web :** [cgcsa.co.za](https://www.cgcsa.co.za)
 - **Statut :** Claim - Data Sample Published
@@ -128,6 +130,8 @@ Mai 2026 compte **57 incidents uniques** : **16 ransomwares** et **41 fuites de 
   L'exposition de ce type d'informations pourrait permettre à des acteurs malveillants d'obtenir une visibilité détaillée sur les opérations financières, les relations commerciales, les adhérents, les fournisseurs et l'environnement informatique de l'organisation.
   La fuite semble également inclure des sauvegardes de systèmes métiers et comptables susceptibles de contenir des informations financières sensibles ainsi que des données relatives aux entreprises membres du CGCSA.
 
+---
+### 05 Mai 2026
 #### 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigéria / 🇿🇼 Zimbabwe - Fuite de données de CV (Resume docs)
 - **Acteur / Groupe :** attackercompany (via le forum [Citizen])
 - **Secteur :** Ressources humaines / Recrutement
@@ -411,7 +415,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ---
 ### 18 Mai 2026
 #### 🇹🇳 Tunisie - CRIT Tunisie
-- **Acteur / Groupe :** Titan
+- **Groupe ransomware :** Titan
 - **Secteur :** Ressources humaines / Recrutement
 - **Site web :** [crit-tunisie.net](https://www.crit-tunisie.net)
 - **Statut :** Claim - Unverified

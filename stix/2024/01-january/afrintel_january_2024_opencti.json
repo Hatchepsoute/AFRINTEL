@@ -1,0 +1,556 @@
+{
+  "type": "bundle",
+  "id": "bundle--18136f8b-aa19-59e3-b17b-948d5a455840",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "lockbit3",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 01-january 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "01-january"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--a37e6979-4f00-5df6-bc50-182006009ac4",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "TiAuto Investments",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Automotive & Retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Industrie automobile & Distribution.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tiautoinvestments.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Automotive & Retail",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md",
+      "sectors": [
+        "retail"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--3ef3a07d-2c3e-5e18-b17f-a0d2d2e47156",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL January 2024 incident 01: TiAuto Investments",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting TiAuto Investments in South Africa on January 10, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Automotive & Retail. Source summary: TiAuto Investments is a prominent South African holding company specialized in the retail and wholesale distribution of wheels, tires, and automotive accessories. Founded in 2006 and headquartered in Midrand, it controls leading continental brands like Tiger Wheel & Tyre and Tyres & More.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant TiAuto Investments en Afrique du Sud, à la date du 10 Janvier 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Industrie automobile & Distribution. Résumé de la source : TiAuto Investments est un groupe de premier plan en Afrique du Sud spécialisé dans le commerce de gros et de détail de jantes, de pneus et de produits automobiles. Fondé en 2006 et basé à Midrand, il détient des marques phares du continent telles que Tiger Wheel & Tyre et Tyres & More.",
+      "first_seen": "2024-01-10T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tiautoinvestments.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Automotive & Retail",
+      "x_afrintel_actor": "lockbit3",
+      "x_afrintel_date_display": "January 10, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b20ae70b-c06d-5cea-94aa-efd41c777a05",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--3ef3a07d-2c3e-5e18-b17f-a0d2d2e47156",
+      "target_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--131776cc-b12c-5f2d-a230-f328b0c04cd1",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "target_ref": "identity--a37e6979-4f00-5df6-bc50-182006009ac4",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--91cddc00-2071-5599-884c-3e891082eb66",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--3ef3a07d-2c3e-5e18-b17f-a0d2d2e47156",
+      "target_ref": "identity--a37e6979-4f00-5df6-bc50-182006009ac4",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e3237b0a-ea2d-599a-8081-43657b2ec57b",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Tiger Wheel & Tyre",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Automotive & Fitment Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Automobile & Services de maintenance.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "automotive"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://twt.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Automotive & Fitment Services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md",
+      "sectors": [
+        "automotive"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--ce57198f-9fcb-540e-b753-97c4382cbbb1",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL January 2024 incident 02: Tiger Wheel & Tyre",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Tiger Wheel & Tyre in South Africa on January 10, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Automotive & Fitment Services. Source summary: Tiger Wheel & Tyre is a flagship subsidiary of TiAuto Investments, boasting over 50 years of operation and managing more than 100 fitment centers across South Africa and Southern Africa. It specializes in wheel alignment, balancing, and premium tire retail services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Tiger Wheel & Tyre en Afrique du Sud, à la date du 10 Janvier 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Automobile & Services de maintenance. Résumé de la source : Tiger Wheel & Tyre est une filiale majeure du groupe TiAuto Investments, forte de plus de 50 ans d'existence et exploitant plus de 100 centres de services à travers l'Afrique du Sud et l'Afrique australe. Elle est spécialisée dans les services de géométrie, d'équilibrage et la vente de pneumatiques toutes catégories.",
+      "first_seen": "2024-01-10T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "automotive"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://twt.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Automotive & Fitment Services",
+      "x_afrintel_actor": "lockbit3",
+      "x_afrintel_date_display": "January 10, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a52ea1b5-2ebe-5707-8309-f6cb497eff83",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ce57198f-9fcb-540e-b753-97c4382cbbb1",
+      "target_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--762db7ff-d35b-5976-8075-d7575498b6d4",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "target_ref": "identity--e3237b0a-ea2d-599a-8081-43657b2ec57b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--45f07640-9bc4-57d3-8242-8415b1fde207",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--ce57198f-9fcb-540e-b753-97c4382cbbb1",
+      "target_ref": "identity--e3237b0a-ea2d-599a-8081-43657b2ec57b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b8741bea-2de8-5d62-87f5-864e27c81e20",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Crowe Southern Africa",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Audit, Tax & Advisory.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Audit, Conseil & Comptabilité.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://crowe.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Audit, Tax & Advisory",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--1d08a7dc-dc6c-5f41-8604-5262cf506c48",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL January 2024 incident 03: Crowe Southern Africa",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Crowe Southern Africa in South Africa on January 29, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Audit, Tax & Advisory. Source summary: Crowe Southern Africa is a premier professional services firm and an independent member of the global Crowe Global network. With established offices in Johannesburg, Cape Town, and Stellenbosch, it delivers high-quality audit, tax, forensic accounting, and corporate financial advisory. ## ✍🏿 Author Adama ASSIONGBON SOC & Cyber Threat Intelligence Consultant LinkedIn profile\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Crowe Southern Africa en Afrique du Sud, à la date du 29 Janvier 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Audit, Conseil & Comptabilité. Résumé de la source : Crowe Southern Africa est un cabinet de services professionnels de premier plan et membre indépendant du réseau mondial Crowe Global. Établi de longue date avec des bureaux à Johannesburg, Cape Town et Stellenbosch, il fournit des services d'audit, de fiscalité, de juricomptabilité (forensics) et de conseil financier. ## ✍🏿 Author Adama ASSIONGBON Consultant SOC & Cyber Threat Intelligence LinkedIn profile",
+      "first_seen": "2024-01-29T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://crowe.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Audit, Tax & Advisory",
+      "x_afrintel_actor": "lockbit3",
+      "x_afrintel_date_display": "January 29, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b7f8cf8d-cb96-59b7-b8b3-33e1bb5646c8",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--1d08a7dc-dc6c-5f41-8604-5262cf506c48",
+      "target_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--100c67da-4a67-570b-b37d-77bd806e82ea",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+      "target_ref": "identity--b8741bea-2de8-5d62-87f5-864e27c81e20",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0eca17df-9cf8-58d8-8471-622f445038f9",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--1d08a7dc-dc6c-5f41-8604-5262cf506c48",
+      "target_ref": "identity--b8741bea-2de8-5d62-87f5-864e27c81e20",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--44621f5d-f1a1-58ef-88d0-9ccd76933c18",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL monthly CTI report - January 2024",
+      "description": "# CTI Report - January 2024: LockBit3 opens the year against South African businesses\n\n### 1. Executive summary\n\nIn January 2024, Africa recorded **3 documented ransomware victims**, all located in **South Africa** and all claimed by the **LockBit3** group. The month is marked by a concentration of attacks on the South African private sector, automotive distribution and professional services.\n\n**Key figures:**\n- 🔹 **3 victims** identified\n- 🔹 **1 active group**: LockBit3 (3)\n- 🔹 **Country affected**: South Africa (3)\n- 🔹 **Sectors**: Automotive & Retail (2), Audit / Tax & Advisory (1)\n\n---\n\n### 2. Attack timeline\n\n| Date | Victim | Country | Ransomware group |\n|------|--------|---------|-----------------|\n| January 10 | TiAuto Investments | South Africa | LockBit3 |\n| January 10 | Tiger Wheel & Tyre | South Africa | LockBit3 |\n| January 29 | Crowe Southern Africa | South Africa | LockBit3 |\n\n---\n\n### 3. Victim analysis\n\n#### 3.1 By country\n\n| Country | Number of attacks |\n|---------|-----------------|\n| South Africa | 3 |\n\n#### 3.2 By sector\n\n| Sector | Count |\n|--------|-------|\n| Automotive & Retail | 2 |\n| Audit / Tax & Advisory | 1 |\n\n#### 3.3 Ransomware groups\n\n| Ransomware group | Number of attacks |\n|-----------------|-----------------|\n| LockBit3 | 3 |\n\n---\n\n### 4. Key observations\n\n- **LockBit3 monopoly**: all 3 claims in January 2024 are attributed to LockBit3, confirming its dominant position on the African continent at the start of the year.\n- **South Africa only**: geographic concentration on a single country, suggesting targeted prospection or opportunistic exploitation of South African infrastructure.\n- **Automotive sector targeted**: TiAuto Investments and its subsidiary Tiger Wheel & Tyre are attacked on the same date (January 10), likely via a shared infrastructure or a supply chain compromise.\n- **Professional services**: Crowe Southern Africa (audit, tax) demonstrates interest in firms holding sensitive financial data on multiple clients.\n\n---\n\n### 5. Recommendations\n\n| Domain | Recommended action |\n|--------|--------------------|\n| Automotive & retail distribution | Audit RDP/VPN access, enforce MFA, monitor lateral movements. |\n| Professional services (audit, tax) | Encrypt client data, segment file servers, verify third-party access. |\n| All organizations | Monitor LockBit3 TTPs: phishing, credential stuffing, exposed RDP exploitation. |\n\n---\n\n*Report generated from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*",
+      "lang": "en",
+      "published": "2024-01-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "en",
+        "january-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/README.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+        "identity--a37e6979-4f00-5df6-bc50-182006009ac4",
+        "identity--e3237b0a-ea2d-599a-8081-43657b2ec57b",
+        "identity--b8741bea-2de8-5d62-87f5-864e27c81e20",
+        "incident--3ef3a07d-2c3e-5e18-b17f-a0d2d2e47156",
+        "incident--ce57198f-9fcb-540e-b753-97c4382cbbb1",
+        "incident--1d08a7dc-dc6c-5f41-8604-5262cf506c48"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/README.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 3,
+      "x_afrintel_ransomware_count": 3,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 3
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--0b91855c-3d32-508f-a1f2-1aed8ed73442",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Rapport CTI mensuel AFRINTEL - Janvier 2024",
+      "description": "# Rapport CTI - Janvier 2024 : LockBit3 ouvre l'année contre les entreprises sud-africaines\n\n### 1. Résumé exécutif\n\nEn janvier 2024, l'Afrique a enregistré **3 victimes** documentées d'attaques par ransomware, toutes localisées en **Afrique du Sud** et toutes revendiquées par le groupe **LockBit3**. Le mois est marqué par une concentration des attaques sur le secteur privé sud-africain, distribution automobile et services professionnels.\n\n**Chiffres clés :**\n- 🔹 **3 victimes** identifiées\n- 🔹 **1 groupe actif** : LockBit3 (3)\n- 🔹 **Pays touché** : Afrique du Sud (3)\n- 🔹 **Secteurs** : Automobile & Retail (2), Audit / Conseil Fiscal (1)\n\n---\n\n### 2. Chronologie des attaques\n\n| Date | Victime | Pays | Groupe ransomware |\n|------|---------|------|-------------------|\n| 10 janvier | TiAuto Investments | Afrique du Sud | LockBit3 |\n| 10 janvier | Tiger Wheel & Tyre | Afrique du Sud | LockBit3 |\n| 29 janvier | Crowe Southern Africa | Afrique du Sud | LockBit3 |\n\n---\n\n### 3. Analyse des victimes\n\n#### 3.1 Par pays\n\n| Pays | Nombre d'attaques |\n|------|-----------------|\n| Afrique du Sud | 3 |\n\n#### 3.2 Par secteur\n\n| Secteur | Nombre |\n|---------|--------|\n| Automobile & Retail | 2 |\n| Audit / Conseil Fiscal | 1 |\n\n#### 3.3 Groupes ransomware\n\n| Groupe ransomware | Nombre d'attaques |\n|-----------------|-----------------|\n| LockBit3 | 3 |\n\n---\n\n### 4. Points d'attention\n\n- **Monopole LockBit3** : les 3 revendications de janvier 2024 sont attribuées à LockBit3, confirmant sa position dominante sur le continent africain en début d'année.\n- **Afrique du Sud uniquement** : concentration géographique sur un seul pays, suggérant une prospection ciblée ou une exploitation opportuniste des infrastructures sud-africaines.\n- **Secteur automobile visé** : TiAuto Investments et sa filiale Tiger Wheel & Tyre sont attaquées le même jour (10 janvier), probablement via une infrastructure partagée ou une compromission de la chaîne d'approvisionnement.\n- **Services professionnels** : Crowe Southern Africa (audit, fiscalité) illustre l'intérêt des acteurs malveillants pour les entreprises détenant des données financières sensibles sur de multiples clients.\n\n---\n\n### 5. Recommandations\n\n| Domaine | Action recommandée |\n|---------|--------------------|\n| Distribution automobile & retail | Auditer les accès RDP/VPN, imposer le MFA, surveiller les mouvements latéraux. |\n| Services professionnels (audit, fiscal) | Chiffrer les données clients, segmenter les serveurs de fichiers, vérifier les accès tiers. |\n| Toutes organisations | Surveiller les TTPs de LockBit3 : phishing, credential stuffing, exploitation RDP exposé. |\n\n---\n\n*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*",
+      "lang": "fr",
+      "published": "2024-01-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "fr",
+        "january-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/01-january/README_FR.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--d77c49f2-b123-56e5-a3a7-b293c23529a1",
+        "identity--a37e6979-4f00-5df6-bc50-182006009ac4",
+        "identity--e3237b0a-ea2d-599a-8081-43657b2ec57b",
+        "identity--b8741bea-2de8-5d62-87f5-864e27c81e20",
+        "incident--3ef3a07d-2c3e-5e18-b17f-a0d2d2e47156",
+        "incident--ce57198f-9fcb-540e-b753-97c4382cbbb1",
+        "incident--1d08a7dc-dc6c-5f41-8604-5262cf506c48"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/01-january/README_FR.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 3,
+      "x_afrintel_ransomware_count": 3,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 3
+    }
+  ]
+}

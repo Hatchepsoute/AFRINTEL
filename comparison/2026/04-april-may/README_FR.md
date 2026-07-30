@@ -7,11 +7,11 @@
 | Indicateur | Avril | Mai | Évolution |
 |---|---:|---:|---:|
 | Total des incidents | 60 | 57 | -3 (-5,0 %) |
-| Ransomware | 20 | 16 | -4 (-20,0 %) |
-| Fuites de données et ventes d'accès | 40 | 41 | +1 (+2,5 %) |
+| Ransomware | 20 | 17 | -3 (-15,0 %) |
+| Fuites de données et ventes d'accès | 40 | 40 | 0 (0,0 %) |
 | Pays distincts après éclatement des fiches multi-pays | 16 | 18 | +2 |
 
-Le volume global baisse légèrement. Les fuites de données et les ventes d'accès restent stables, tandis que les publications ransomware passent de 20 à 16.
+Le volume global baisse légèrement. Les fuites de données et les ventes d'accès restent stables, tandis que les publications ransomware passent de 20 à 17.
 
 ## Évolution par pays
 
@@ -64,6 +64,6 @@ Le total mensuel reste proche, mais la distribution évolue. L'Égypte et l'Afri
 
 ## Conclusion
 
-Mai compte 57 incidents contre 60 en avril. La baisse provient du ransomware, tandis que les fuites et ventes d'accès progressent d'une fiche.
+Mai compte 57 incidents contre 60 en avril. La baisse provient du ransomware, tandis que les fuites et ventes d'accès restent stables.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

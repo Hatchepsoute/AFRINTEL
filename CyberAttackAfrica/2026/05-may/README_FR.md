@@ -10,10 +10,10 @@
 
 ## 1. Synthèse exécutive
 
-Mai 2026 recense **57 incidents cyber signalés ou revendiqués publiquement** en Afrique : **16 publications ou divulgations ransomware** et **41 fuites de données / ventes d’accès**. Le mois comprend des revendications répétées visant des entités éducatives égyptiennes, des publications sous la bannière OpSouthAfrica, des ventes attribuées à Databasehooligan dans quatre pays et trois publications NightSpire concernant des organisations égyptiennes.
+Mai 2026 recense **57 incidents cyber signalés ou revendiqués publiquement** en Afrique : **17 publications ou divulgations ransomware** et **40 fuites de données / ventes d’accès**. Le mois comprend des revendications répétées visant des entités éducatives égyptiennes, des publications sous la bannière OpSouthAfrica, des ventes attribuées à Databasehooligan dans quatre pays et trois publications NightSpire concernant des organisations égyptiennes.
 
 Principales conclusions :
-- **16 ransomwares (28,1 %)** et **41 fuites de données / ventes d'accès (71,9 %)**.
+- **17 ransomwares (29,8 %)** et **40 fuites de données / ventes d'accès (70,2 %)**.
 - **12 pays** touchés, plus 3 incidents multi-pays ; **l'Égypte** (16 incidents), **l'Afrique du Sud** (14), **le Maroc** (7) et **la Tunisie** (5) concentrent 73,7 % des victimes.
 - Des revendications attribuées à **TheGentlemen** concernent quatre pays en un mois (Égypte, Tunisie, Ghana, Côte d'Ivoire) ; **NightSpire** a revendiqué trois cibles égyptiennes.
 - **Databasehooligan** est associé à 8 publications de vente en Tunisie, Afrique du Sud, Égypte et Algérie.
@@ -48,8 +48,8 @@ Principales conclusions :
 | Total victimes | 57 |
 | Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
 | Acteurs ou sources nommés distincts | 31 |
-| Incidents ransomware | 16 (28,1 %) |
-| Fuites de données / ventes d'accès | 41 (71,9 %) |
+| Incidents ransomware | 17 (29,8 %) |
+| Fuites de données / ventes d'accès | 40 (70,2 %) |
 
 ### Classement des pays les plus touchés
 
@@ -93,23 +93,23 @@ pie showData
  "Scans passeports (EG/LY)" : 1
 ```
 
-### Répartition des incidents ransomware (Total : 16)
+### Répartition des incidents ransomware (Total : 17)
 
 | Rang | Pays | Incidents | Graphique |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇪🇬 Égypte | **7** | ███████ |
 | **2** | 🇳🇬 Nigeria | **3** | ███ |
 | **3** | 🇹🇳 Tunisie | **2** | ██ |
-| **4** | 🇿🇦 Afrique du Sud | **1** | █ |
+| **4** | 🇿🇦 Afrique du Sud | **2** | ██ |
 | **5** | 🇬🇭 Ghana | **1** | █ |
 | **6** | 🇸🇳 Sénégal | **1** | █ |
 | **7** | 🇨🇮 Côte d'Ivoire | **1** | █ |
 
-### Répartition des fuites de données / ventes d'accès (Total : 41)
+### Répartition des fuites de données / ventes d'accès (Total : 40)
 
 | Rang | Pays | Incidents | Graphique |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇿🇦 Afrique du Sud | **13** | █████████████ |
+| **1** | 🇿🇦 Afrique du Sud | **12** | ████████████ |
 | **2** | 🇪🇬 Égypte | **9** | █████████ |
 | **3** | 🇲🇦 Maroc | **7** | ███████ |
 | **4** | 🇹🇳 Tunisie | **3** | ███ |
@@ -126,7 +126,7 @@ pie showData
 | Pays | Ransomware | Fuites | Répartition côte-à-côte |
 | :--- | :---: | :---: | :--- |
 | 🇪🇬 Égypte | **7** | **9** | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 Afrique du Sud | **1** | **13** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 Afrique du Sud | **2** | **12** | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇲🇦 Maroc | **0** | **7** | 🟦🟦🟦🟦🟦🟦🟦 |
 | 🇹🇳 Tunisie | **2** | **3** | 🟧🟧 🟦🟦🟦 |
 | 🇳🇬 Nigeria | **3** | **0** | 🟧🟧🟧 |
@@ -140,13 +140,13 @@ pie showData
 | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | 🟦 |
 | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | 🟦 |
 | 🇪🇬🇱🇾 Scans de passeports | **0** | **1** | 🟦 |
-| **Total (57)** | **16** | **41** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
+| **Total (57)** | **17** | **40** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
 
 ```mermaid
 pie showData
  title Ransomware vs fuites de données - Mai 2026
- "Fuites de données et ventes d'accès" : 41
- "Ransomware" : 16
+ "Fuites de données et ventes d'accès" : 40
+ "Ransomware" : 17
 ```
 
 ### Répartition géographique par région
@@ -154,7 +154,7 @@ pie showData
 | Région | Total incidents | Ransomware | Fuites | Répartition côte-à-côte |
 | :--- | :---: | :---: | :---: | :--- |
 | **Afrique du Nord** | **30** (52,6 %) | 9 | 21 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Afrique australe** | **14** (24,6 %) | 1 | 13 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique australe** | **14** (24,6 %) | 2 | 12 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique de l'Ouest** | **6** (10,5 %) | 6 | 0 | 🟧🟧🟧🟧🟧🟧 |
 | **Afrique de l'Est** | **4** (7,0 %) | 0 | 4 | 🟦🟦🟦🟦 |
 | 🇰🇪🇪🇹🇳🇬🇿🇼🇲🇿🇱🇷🇹🇬🇸🇱🇱🇾 Multi-pays (3 incidents) | **3** (5,3 %) | 0 | 3 | 🟦🟦🟦 |
@@ -242,7 +242,7 @@ pie showData
 > **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
 - **Concentration :** l’Égypte (16), l’Afrique du Sud (14), le Maroc (7) et la Tunisie (5) représentent 42 des 57 incidents, soit 73,7 % du mois.
-- **Répartition des menaces :** 16 revendications ou publications ransomware et 41 fuites de données ou ventes d’accès ont été recensées. Les incidents concernent 18 pays africains : 12 directement et 6 pays supplémentaires par exposition multi-pays.
+- **Répartition des menaces :** 17 revendications ou publications ransomware et 40 fuites de données ou ventes d’accès ont été recensées. Les incidents concernent 18 pays africains : 12 directement et 6 pays supplémentaires par exposition multi-pays.
 - **Activité de campagne :** plusieurs entités éducatives égyptiennes ont fait l’objet de revendications importantes, tandis qu’OpSouthAfrica ciblait des institutions publiques et que Databasehooligan apparaissait dans quatre pays.
 - **Expositions à fort impact :** les cas notables concernent des comptes de messagerie de la police tanzanienne et la revendication d’AuditTeam visant le Trésor public du Sénégal.
 
@@ -250,25 +250,25 @@ pie showData
 
 ## 4. Analyse détaillée par type d'incident
 
-### 4.1 Ransomware (16 incidents)
+### 4.1 Ransomware (17 incidents)
 
 | Rang | Pays | Publications ou divulgations | Acteurs principaux |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇪🇬 Égypte | **7** | NightSpire (3), TheGentlemen, Qilin, LockBit 5.0, Lamashtu |
 | **2** | 🇳🇬 Nigeria | **3** | MedusaLocker, KillSec, 0day Syndicate |
 | **3** | 🇹🇳 Tunisie | **2** | TheGentlemen, Titan |
-| **4** | 🇿🇦 Afrique du Sud | **1** | PrinzEugen |
+| **4** | 🇿🇦 Afrique du Sud | **2** | PrinzEugen, Stormous |
 | **5** | 🇬🇭 Ghana | **1** | TheGentlemen |
 | **6** | 🇸🇳 Sénégal | **1** | AuditTeam |
 | **7** | 🇨🇮 Côte d'Ivoire | **1** | TheGentlemen |
 
-**Observations :** NightSpire a publié trois victimes égyptiennes pendant le mois. TheGentlemen présente la plus large répartition géographique, avec des revendications dans quatre pays. Pour le Trésor public du Sénégal, les fichiers analysés étayent la revendication d’exposition, sans confirmer le déploiement du ransomware, le chiffrement ou la séquence complète.
+**Observations :** NightSpire a publié trois victimes égyptiennes pendant le mois. TheGentlemen présente la plus large répartition géographique, avec des revendications dans quatre pays. Stormous a revendiqué le Consumer Goods Council of South Africa (CGCSA), auparavant comptabilisé à tort comme une simple fuite de données ; le cas est reclassé en publication ransomware. Pour le Trésor public du Sénégal, les fichiers analysés étayent la revendication d’exposition, sans confirmer le déploiement du ransomware, le chiffrement ou la séquence complète.
 
-### 4.2 Fuites de données et ventes d'accès (41 incidents)
+### 4.2 Fuites de données et ventes d'accès (40 incidents)
 
 | Rang | Pays | Incidents | Acteurs principaux |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇿🇦 Afrique du Sud | **13** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
+| **1** | 🇿🇦 Afrique du Sud | **12** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
 | **2** | 🇪🇬 Égypte | **9** | INT3X, Revesky, cc5ab, DR-X-LOL, CrowStealer, bigF, Keymous, Databasehooligan |
 | **3** | 🇲🇦 Maroc | **7** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2 |
 | **4** | 🇹🇳 Tunisie | **3** | Databasehooligan (3) |
@@ -396,7 +396,7 @@ pie showData
 
 ## 12. Conclusion
 
-Mai 2026 recense 57 incidents signalés ou revendiqués publiquement, contre 60 en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 16 (-20,0 %), tandis que les fuites de données et ventes d’accès passent de 40 à 41 (+2,5 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation égyptienne, les publications sous la bannière OpSouthAfrica et les offres de vente associées à Databasehooligan dans quatre pays constituent les principaux schémas observés.
+Mai 2026 recense 57 incidents signalés ou revendiqués publiquement, contre 60 en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 17 (-15,0 %), tandis que les fuites de données et ventes d’accès restent stables à 40 (0,0 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation égyptienne, les publications sous la bannière OpSouthAfrica et les offres de vente associées à Databasehooligan dans quatre pays constituent les principaux schémas observés.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

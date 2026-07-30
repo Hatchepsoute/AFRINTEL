@@ -427,7 +427,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 - **Acteur / Groupe :** NulleSecNg (forum [Citizen])
 - **Secteur :** Government / Administration
-- **Statut :** Claim - Data Sample Published
+- **Statut :** Data Fully Published
 - **Site web :** [army.mil.ng](https://army.mil.ng)
 
 - **Description :**

@@ -9,8 +9,8 @@ This directory provides a visual intelligence view of cyber incidents monitored 
 The visualizations are based on the following consolidated statistics:
 
 - **57 total incidents**
-- **16 ransomware attacks**
-- **41 data leaks / access sales**
+- **17 ransomware attacks**
+- **40 data leaks / access sales**
 - **11 countries affected + multi-country incidents**
 - **25+ distinct threat actors**
 

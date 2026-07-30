@@ -27,7 +27,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Acteur / Groupe :** Bigbrother (Initial Access Broker)
 - **Secteur :** Administration publique centrale
 - **Site web :** gouv.tg
-- **Statut :** Revendication (Vente d'accès)
+- **Statut :** Claim - Unverified
 - **Description victime :** Infrastructure du gouvernement togolais. L'acteur prétend détenir de nouveaux accès à plusieurs plateformes officielles.
 
 ### 04 Janvier 2026
@@ -35,7 +35,8 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Acteur / Groupe :** Non revendiqué
 - **Secteur :** Administration publique
 - **Sites web :** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
-- **Statut :** Non revendiqué (Défacement massif)
+- **Type d.incident :** Défacement
+- **Statut :** Under Investigation
 - **Description victime :** Plusieurs plateformes officielles du gouvernement nigérien touchées par une attaque coordonnée affichant un message à caractère politique.
 
 ### 06 Janvier 2026
@@ -43,7 +44,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** vect
 - **Secteur :** Ingénierie Hydraulique et Mécanique
 - **Site web :** hytec.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise sud-africaine spécialisée dans les solutions d'ingénierie hydraulique et mécanique.
 
 ### 08 Janvier 2026
@@ -51,7 +52,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** blackshrantac
 - **Secteur :** Services Publics (Gestion de l'eau)
 - **Site web :** nwa.go.ke
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Autorité publique kenyane responsable de la gestion des ressources en eau.
 
 ### 11 Janvier 2026
@@ -59,7 +60,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Technologie / Sécurité Informatique
 - **Site web :** realtech-eg.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Firme égyptienne opérant dans le secteur des technologies et de la sécurité informatique.
 
 ### 13 Janvier 2026
@@ -67,7 +68,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** direwolf
 - **Secteur :** Ingénierie Électrique
 - **Site web :** tepco-group.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Groupe égyptien spécialisé dans l'ingénierie électrique.
 
 ### 14 Janvier 2026
@@ -75,15 +76,15 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Services Financiers et Technologie
 - **Site web :** rogerscapital.mu
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Prestataire de services financiers et technologiques basé à Maurice.
 
 ### 16 Janvier 2026
 #### 🇸🇳 Sénégal - PixPay
-- **Groupe ransomware :** breach3d
+- **Acteur / Groupe :** breach3d
 - **Secteur :** FinTech (Paiement Mobile)
 - **Site web :** pay.pixpay.sn
-- **Statut :** Fuite de données (Base de données financière)
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Plateforme sénégalese de paiement mobile.
 
 ### 16 Janvier 2026
@@ -91,7 +92,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** qilin
 - **Secteur :** Transport et Logistique (Rail et Ports)
 - **Site web :** cfm.co.mz
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Autorité nationale des chemins de fer et des ports du Mozambique.
 
 ### 17 Janvier 2026
@@ -99,7 +100,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** benzona
 - **Secteur :** Santé / Soins Spécialisés
 - **Site web :** ccbrt.org
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** ONG de santé tanzanienne fournissant des services de réadaptation spécialisés.
 
 ### 17 Janvier 2026
@@ -107,7 +108,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Construction (Plomberie et Chauffage)
 - **Site web :** nafaesanitaire.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise marocaine opérant dans le secteur du bâtiment et du sanitaire.
 
 ### 20 Janvier 2026
@@ -115,7 +116,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Services Financiers (Fonds de pension)
 - **Site web :** cpf.or.ke
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Prestataire de services financiers au Kenya axé sur la gestion des fonds de retraite.
 
 ### 20 Janvier 2026
@@ -123,7 +124,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** devman
 - **Secteur :** Sécurité Sociale (Retraite)
 - **Site web :** nssf.or.ke
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Caisse nationale de sécurité sociale et de retraite du Kenya.
 
 ### 20 Janvier 2026
@@ -131,7 +132,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Logiciels Logistiques (Agroalimentaire)
 - **Site web :** paltrack.co.za
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Fournisseur de solutions logicielles logistiques pour l'industrie agroalimentaire en Afrique du Sud.
 
 ### 20 Janvier 2026
@@ -139,7 +140,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Distribution Automobile
 - **Site web :** rola.co.za
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Groupe sud-africain de concessionnaires et de distribution automobile.
 
 ### 20 Janvier 2026
@@ -147,7 +148,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Administration Publique / Gouvernement Local
 - **Site web :** witzenberg.gov.za
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Autorité gouvernementale locale dans le Cap-Occidental, Afrique du Sud.
 
 ### 26 Janvier 2026
@@ -155,7 +156,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Mines et Ressources Minérales
 - **Site web :** namico.go.ke
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise minière d'État du Kenya.
 
 ### 27 Janvier 2026
@@ -163,7 +164,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Industrie Agroalimentaire
 - **Site web :** fruit-bonte.com.tn
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise tunisienne opérant dans l'industrie agroalimentaire et la transformation de fruits.
 
 ### 27 Janvier 2026
@@ -171,20 +172,20 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Tourisme / Voyages et Transport
 - **Site web :** skyegtours.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Agence de voyages et de tourisme égyptienne.
 
 ### 28 Janvier 2026
 #### 🇩🇿 Algérie - Groupe Tahkout
 - **Groupe ransomware :** tengu
 - **Secteur :** Industrie Automobile et Transport
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Important conglomérat industriel algérien impliqué dans l'assemblage automobile et le transport.
 
 ### 31 Janvier 2026
 #### 🇲🇦 Maroc - AOM Aviation Group (Air Ocean Maroc)
-- **Groupe ransomware :** skra1a
+- **Acteur / Groupe :** skra1a
 - **Secteur :** Transport Aérien / Aviation Civile
 - **Site web :** airoceangroup.ma
-- **Statut :** Fuite de données (Base de données aéronautique)
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Groupe marocain fournissant des services de transport aérien et d'aviation civile.

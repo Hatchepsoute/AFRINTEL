@@ -4,7 +4,7 @@
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Santé / Équipements médicaux
 - **Site web :** [distamed.ma](https://distamed.ma)
-- **Statut :** Fuite de données / Vente de données
+- **Statut :** Claim - Data Sample Published
 
 - **Description :**
 

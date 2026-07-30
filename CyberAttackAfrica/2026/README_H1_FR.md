@@ -13,7 +13,7 @@ TLP:CLEAR, diffusion publique
 
 ## 1. Synthèse exécutive
 
-AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** durant le premier semestre 2026 : **112 incidents ransomware**, **126 fuites de données ou ventes d'accès** et **1 défacement de sites web**.
+AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** durant le premier semestre 2026 : **113 incidents ransomware**, **125 fuites de données ou ventes d'accès** et **1 défacement de sites web**.
 
 Les fuites et ventes d'accès représentent **52,7 %** de l'activité recensée, contre **46,9 %** pour le ransomware. En excluant l'unique défacement, les deux catégories principales regroupent 238 incidents : 47,1 % de ransomware et 52,9 % de fuites ou ventes d'accès.
 
@@ -36,8 +36,8 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 | Indicateur | Valeur |
 |---|---:|
 | Total des incidents documentés | 239 |
-| Ransomware | 112 |
-| Fuites de données / ventes d'accès | 126 |
+| Ransomware | 113 |
+| Fuites de données / ventes d'accès | 125 |
 | Défacement de sites web | 1 |
 | Mois au volume le plus élevé | Avril, 60 incidents |
 | Deuxième mois au volume le plus élevé | Mai, 57 incidents |
@@ -46,8 +46,8 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 ```mermaid
 pie showData
     title Répartition des incidents AFRINTEL, S1 2026
-    "Ransomware" : 112
-    "Fuites et ventes d'accès" : 126
+    "Ransomware" : 113
+    "Fuites et ventes d'accès" : 125
     "Défacement de sites web" : 1
 ```
 
@@ -59,9 +59,9 @@ pie showData
 | Février | 20 | 0 | 0 | 20 | 8,4 % |
 | Mars | 19 | 22 | 0 | 41 | 17,2 % |
 | Avril | 20 | 40 | 0 | 60 | 25,1 % |
-| Mai | 16 | 41 | 0 | 57 | 23,8 % |
+| Mai | 17 | 40 | 0 | 57 | 23,8 % |
 | Juin | 20 | 20 | 0 | 40 | 16,7 % |
-| **S1 2026** | **112** | **126** | **1** | **239** | **100 %** |
+| **S1 2026** | **113** | **125** | **1** | **239** | **100 %** |
 
 ```mermaid
 xychart-beta
@@ -78,7 +78,7 @@ xychart-beta
     title "Activité ransomware, S1 2026"
     x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
     y-axis "Incidents" 0 --> 45
-    bar [17,20,19,20,16,20]
+    bar [17,20,19,20,17,20]
 ```
 
 ```mermaid
@@ -86,7 +86,7 @@ xychart-beta
     title "Fuites de données et ventes d'accès, S1 2026"
     x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
     y-axis "Incidents" 0 --> 45
-    bar [3,0,22,40,41,20]
+    bar [3,0,22,40,40,20]
 ```
 
 ## 5. Comparaison des trimestres
@@ -94,15 +94,15 @@ xychart-beta
 | Période | Ransomware | Fuites / ventes d’accès | Défacement de sites web | Total |
 |---|---:|---:|---:|---:|
 | premier trimestre, janvier à mars | 56 | 25 | 1 | 82 |
-| deuxième trimestre, avril à juin | 56 | 101 | 0 | 157 |
-| **S1 2026** | **112** | **126** | **1** | **239** |
+| deuxième trimestre, avril à juin | 57 | 100 | 0 | 157 |
+| **S1 2026** | **113** | **125** | **1** | **239** |
 
-Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestre**, soit une hausse de **91,5 %**. Le ransomware reste stable, avec 56 incidents dans chaque trimestre. Les fuites et ventes d'accès passent de 25 au premier trimestre à 101 au deuxième trimestre, soit une hausse de **304 %**.
+Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestre**, soit une hausse de **91,5 %**. Le ransomware reste quasi stable, passant de 56 incidents au premier trimestre à 57 au deuxième. Les fuites et ventes d'accès passent de 25 au premier trimestre à 100 au deuxième trimestre, soit une hausse de **300 %**.
 
 ## 6. Principaux constats CTI
 
-1. **Le ransomware reste persistant sans accélération continue.** Son volume mensuel reste compris entre 16 et 20 incidents.
-2. **Les fuites deviennent le principal moteur du volume au deuxième trimestre.** Avril et mai enregistrent 81 fuites ou ventes d'accès, contre 25 sur l'ensemble du premier trimestre.
+1. **Le ransomware reste persistant sans accélération continue.** Son volume mensuel reste compris entre 17 et 20 incidents.
+2. **Les fuites deviennent le principal moteur du volume au deuxième trimestre.** Avril et mai enregistrent 80 fuites ou ventes d'accès, contre 25 sur l'ensemble du premier trimestre.
 3. **Juin modifie l'équilibre sans revenir à la situation du premier trimestre.** Le volume baisse après le pic d'avril-mai, mais le ransomware revient à 50 % des incidents mensuels.
 4. **Le semestre est géographiquement concentré.** L'Afrique du Sud, l'Égypte et le Maroc regroupent 137 des 239 fiches, soit 57,3 %.
 5. **Government / Administration est le premier secteur normalisé.** Il représente 70 fiches, soit 29,3 %, devant Industrie / Automobile / Fabrication / Construction / Mines et Finance / Banking avec 25 fiches chacun.
@@ -255,14 +255,14 @@ Pour le second semestre, AFRINTEL devra déterminer si la répartition 50/50 de 
 
 ## 10. Conclusion
 
-AFRINTEL a recensé **239 incidents au premier semestre 2026** : **112 ransomware**, **126 fuites ou ventes d'accès** et **1 défacement**. Le deuxième trimestre représente 157 fiches, soit 65,7 % de l'activité semestrielle. Toute la hausse nette par rapport au premier trimestre provient des fuites et ventes d'accès.
+AFRINTEL a recensé **239 incidents au premier semestre 2026** : **113 ransomware**, **125 fuites ou ventes d'accès** et **1 défacement**. Le deuxième trimestre représente 157 fiches, soit 65,7 % de l'activité semestrielle. Toute la hausse nette par rapport au premier trimestre provient des fuites et ventes d'accès.
 
 La priorité défensive est double : maintenir la préparation au ransomware tout en renforçant les contrôles contre l'exposition d'identifiants, l'extraction massive de données, l'exposition du stockage cloud et les ventes clandestines de données.
 
 ### Contrôles de cohérence
 
 - Totaux mensuels : 21 + 20 + 41 + 60 + 57 + 40 = 239.
-- Totaux par type : 112 + 126 + 1 = 239.
+- Totaux par type : 113 + 125 + 1 = 239.
 - Géographie directe : 233 fiches mono-pays + 6 fiches multi-pays = 239.
 - Géographie développée : 233 occurrences mono-pays + 29 occurrences multi-pays = 262.
 - Totaux sectoriels : les 22 lignes sectorielles explicites totalisent 239.

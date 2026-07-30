@@ -7,11 +7,11 @@
 | Indicator | May | June | Change |
 |---|---:|---:|---:|
 | Total incidents | 57 | 40 | -17 (-29.8%) |
-| Ransomware | 16 | 20 | +4 (+25.0%) |
-| Data leaks and access sales | 41 | 20 | -21 (-51.2%) |
+| Ransomware | 17 | 20 | +3 (+17.6%) |
+| Data leaks and access sales | 40 | 20 | -20 (-50.0%) |
 | Distinct countries after expanding multi-country records | 18 | 20 | +2 |
 
-The June decrease came from data leaks and access sales. Ransomware increased from 16 to 20 records.
+The June decrease came from data leaks and access sales. Ransomware increased from 17 to 20 records.
 
 ## Country evolution
 
@@ -65,6 +65,6 @@ June had fewer records but wider geographic coverage after expanding multi-count
 
 ## Conclusion
 
-June recorded 40 incidents against 57 in May. Leaks and access sales declined by 21 records, while ransomware increased by four.
+June recorded 40 incidents against 57 in May. Leaks and access sales declined by 20 records, while ransomware increased by three.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

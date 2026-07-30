@@ -27,14 +27,14 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** 0APT
 - **Sector:** Aviation
 - **Website:** bluesky-air.com
-- **Status:** Claim (3.5 TB exfiltrated)
+- **Status:** Claim - Unverified
 - **Victim Description:** Somali aviation company providing air transport services.
 
 ### 05 February 2026
 #### 🇸🇳 Senegal - DAF SENEGAL (Direction de l'Administration Générale et de l'Équipement)
 - **Threat Actor:** The Green Blood Group
 - **Sector:** Government
-- **Status:** Claim (139 TB exfiltrated)
+- **Status:** Claim - Unverified
 - **Victim Description:** Senegalese government administration. Major data breach involving citizen databases and biometric records.
 
 ### 05 February 2026
@@ -42,7 +42,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** 0APT
 - **Sector:** Media
 - **Website:** gmaworld.com
-- **Status:** Claim (2.5 TB exfiltrated)
+- **Status:** Claim - Unverified
 - **Victim Description:** Integrated media and communications company based in Ghana.
 
 ### 06 February 2026
@@ -50,7 +50,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** 0APT
 - **Sector:** Legal
 - **Website:** vertexlaw.co.tz
-- **Status:** Claim (850 GB exfiltrated)
+- **Status:** Claim - Unverified
 - **Victim Description:** Law firm providing legal services in Tanzania.
 
 ### 06 February 2026
@@ -58,7 +58,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** thegentlemen
 - **Sector:** Banking
 - **Website:** fargo.co.ke
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Security and logistics provider, also involved in banking/financial services in Kenya.
 
 ### 09 February 2026
@@ -66,7 +66,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** killsec
 - **Sector:** Fintech
 - **Website:** getly.app
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Nigerian financial technology application.
 
 ### 11 February 2026
@@ -74,7 +74,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** thegentlemen
 - **Sector:** Public Service
 - **Website:** ghanabauxite.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Ghanaian enterprise involved in the bauxite mining and production sector.
 
 ### 12 February 2026
@@ -82,7 +82,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** incransom
 - **Sector:** Energy
 - **Website:** midwesternog.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Nigerian upstream oil and gas company.
 
 ### 13 February 2026
@@ -90,7 +90,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** thegentlemen
 - **Sector:** Airlines
 - **Website:** nileair.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Private Egyptian airline based at Cairo International Airport.
 
 ### 14 February 2026
@@ -98,7 +98,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** lockbit5
 - **Sector:** Hospitality
 - **Website:** sands.mu
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Luxury resort located in Mauritius.
 
 ### 15 February 2026
@@ -106,7 +106,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** thegentlemen
 - **Sector:** Local Government
 - **Website:** intsikayethu.gov.za
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Local municipality in the Eastern Cape province of South Africa.
 
 ### 15 February 2026
@@ -114,7 +114,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** thegentlemen
 - **Sector:** IT Consulting
 - **Website:** bits.com.tn
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Tunisian IT services and consulting firm.
 
 ### 17 February 2026
@@ -122,7 +122,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** payload
 - **Sector:** Real Estate
 - **Website:** sodic.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** One of Egypt's leading real estate development companies.
 
 ### 18 February 2026
@@ -130,7 +130,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** apt73/bashe
 - **Sector:** Agriculture / Agribusiness
 - **Website:** amtaar.com
-- **Status:** Claimed & leaked 3.5 GB of data
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** A major agricultural investment and consulting firm operating in Sudan, managing 6,000 hectares of irrigated land and serving as a key player in national food security..
 
 ### 19 February 2026
@@ -138,7 +138,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** incransom
 - **Sector:** Airlines
 - **Website:** aircotedivoire.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** National airline of Ivory Coast.
 
 ### 20 February 2026
@@ -146,7 +146,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** tengu
 - **Sector:** Accounting
 - **Website:** shora.ma
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Moroccan accounting and financial advisory firm.
 
 ### 20 February 2026
@@ -154,7 +154,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** lockbit5
 - **Sector:** Government
 - **Website:** moa.gov.eg
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Egyptian Ministry of Agriculture and Land Reclamation.
 
 ### 22 February 2026
@@ -162,7 +162,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** qilin
 - **Sector:** Retail
 - **Website:** cymot.com
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Namibian supplier of spares, tools, and equipment.
 
 ### 24 February 2026
@@ -170,7 +170,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** vect
 - **Sector:** Energy
 - **Website:** enertec.co.za
-- **Status:** Claim (151.79 GB)
+- **Status:** Claim - Unverified
 - **Victim Description:** South African energy solutions and battery distribution company.
 
 ### 27 February 2026
@@ -178,5 +178,5 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Threat Actor:** Lockbit5
 - **Sector:** Automotive
 - **Website:** diesel-electric.co.za
-- **Status:** Claim
+- **Status:** Claim - Unverified
 - **Victim Description:** Major distributor in South Africa specialized in automotive components.

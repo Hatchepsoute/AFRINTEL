@@ -16,7 +16,7 @@ L’ensemble de données comprend **149 revendications publiques** affectant **1
 - **Total des revendications :** 149 (146 victimes uniques, 3 doubles revendications)
 - **Mois le plus actif :** octobre (17 revendications)
 - **Mois le moins actif :** février (8 revendications)
-- **Groupes les plus prolifiques :** qilin (11), devman (10), incransom (8)
+- **Groupes les plus prolifiques :** qilin (11), devman (10), nightspire (9)
 - **Pays les plus ciblés :** Afrique du Sud et Égypte (29 chacun), Maroc (21)
 - **Secteurs les plus ciblés :** Technologies (22), Administrations publiques (21), Finance (18)
 - **Plus grande exfiltration :** NSSF Kenya - 2,5 To (devman)
@@ -60,9 +60,9 @@ Le premier trimestre (janv.-mars) a totalisé 33 attaques, suivi de 36 au T2, 38
 | 2    | devman           | 10     |
 | 3    | incransom        | 8      |
 | 4    | funksec          | 7      |
-| 4    | nightspire       | 7      |
+| 4    | nightspire       | 9      |
 | 6    | killsec          | 6      |
-| 7    | Dark 07x Team    | 5      |
+| 7    | Dark 07x Team    | 4      |
 | 8    | clop             | 4      |
 | 8    | ransomhub        | 4      |
 | 8    | warlock          | 4      |
@@ -81,9 +81,9 @@ pie title Groupes ransomware les plus actifs
     "devman (10)" : 10
     "incransom (8)" : 8
     "funksec (7)" : 7
-    "nightspire (7)" : 7
+    "nightspire (9)" : 9
     "killsec (6)" : 6
-    "Dark 07x Team (5)" : 5
+    "Dark 07x Team (4)" : 4
     "clop (4)" : 4
     "ransomhub (4)" : 4
     "warlock (4)" : 4
@@ -131,8 +131,8 @@ Le secteur des technologies a été le plus durement touché, suivi de près par
 | 1    | 🇿🇦 Afrique du Sud      | 29     |
 | 1    | 🇪🇬 Égypte              | 29     |
 | 3    | 🇲🇦 Maroc               | 21     |
-| 4    | 🇳🇬 Nigeria             | 11     |
-| 4    | 🇹🇳 Tunisie             | 11     |
+| 4    | 🇳🇬 Nigeria             | 12     |
+| 4    | 🇹🇳 Tunisie             | 12     |
 | 6    | 🇰🇪 Kenya               | 8      |
 | 7    | 🇩🇿 Algérie             | 7      |
 | 8    | 🇿🇲 Zambie              | 4      |
@@ -157,15 +157,15 @@ pie title Répartition des attaques par pays - 2025
     "🇿🇦 Afrique du Sud (29)" : 29
     "🇪🇬 Égypte (29)" : 29
     "🇲🇦 Maroc (21)" : 21
-    "🇳🇬 Nigeria (11)" : 11
-    "🇹🇳 Tunisie (11)" : 11
+    "🇳🇬 Nigeria (12)" : 12
+    "🇹🇳 Tunisie (12)" : 12
     "🇰🇪 Kenya (8)" : 8
     "🇩🇿 Algérie (7)" : 7
     "🇿🇲 Zambie (4)" : 4
     "🇹🇿 Tanzanie (3)" : 3
     "🇳🇦 Namibie (3)" : 3
     "🇨🇮 Côte d'Ivoire (3)" : 3
-    "🌍 Autres (20)" : 20
+    "🌍 Autres (18)" : 18
 ```
 L’Afrique du Sud et l’Égypte sont les pays les plus ciblés, représentant près de 40 % de toutes les attaques. L’Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) totalise 69 attaques (46 %), tandis que l’Afrique australe (Afrique du Sud, Zambie, Namibie, Botswana, Zimbabwe, Maurice, Madagascar) en compte 43 (29 %).
 

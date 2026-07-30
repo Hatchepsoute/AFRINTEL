@@ -195,19 +195,19 @@ def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
 
 
 def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
-    joined_keys = " ".join(fields.keys())
+    joined_text = " ".join([*fields.keys(), *fields.values()]).lower()
     status_text = status.lower()
-    if "defacement" in status_text or "défacement" in status_text:
+    if "defacement" in status_text or "défacement" in status_text or "defacement" in joined_text or "défacement" in joined_text:
         return "defacement"
-    if "access" in status_text or "credential" in status_text or "identifiant" in status_text:
+    if "ransomware" in status_text or "ransomware" in " ".join(fields.keys()).lower():
+        return "ransomware"
+    if "access" in status_text or "accès" in status_text or "credential" in status_text or "identifiant" in status_text:
         return "access-sale"
     if any(term in status_text for term in (
         "data leak", "data leaked", "database", "massive leak", "system intrusion",
         "supply chain compromise", "suspected compromise", "fuite", "base de données",
     )):
         return "data-leak"
-    if "ransomware" in status_text or "ransomware" in joined_keys:
-        return "ransomware"
     if default_incident_type:
         return default_incident_type
     return "data-leak"
@@ -216,18 +216,30 @@ def classify_incident(fields: Dict[str, str], status: str, default_incident_type
 def normalize_status(status: str, incident_type: str) -> Tuple[str, List[str]]:
     text = status.lower()
     labels = ["afrintel", "africa", "claim-unverified", incident_type]
+    if "under investigation" in text:
+        labels.remove("claim-unverified")
+        labels.append("under-investigation")
+        return "Under Investigation", labels
     if is_unattributed("", status):
         labels.remove("claim-unverified")
         labels.append("unattributed")
         return "Under Investigation", labels
     if "sample" in text or "échantillon" in text:
+        labels.remove("claim-unverified")
         labels.append("data-sample-published")
         return "Claim - Data Sample Published", labels
     if "full" in text or "public" in text or "published" in text or "dump" in text:
+        labels.remove("claim-unverified")
         labels.append("data-fully-published")
         return "Data Fully Published", labels
     if "confirmed" in text or "confirm" in text:
+        labels.remove("claim-unverified")
+        labels.append("incident-confirmed")
         return "Incident Confirmed by Victim", labels
+    if "resolved" in text or "résolu" in text:
+        labels.remove("claim-unverified")
+        labels.append("resolved")
+        return "Resolved", labels
     return "Claim - Unverified", labels
 
 
@@ -555,6 +567,8 @@ def build_month_bundle(
         objects.append(victim_object)
 
         normalized_status, labels = normalize_status(rec.status, rec.incident_type)
+        if unattributed and "unattributed" not in labels:
+            labels.append("unattributed")
         incident_id = stix_id("incident", f"{year}:{month_dir}:incident:{rec.index}:{rec.date_iso}:{rec.country}:{rec.organization}")
         incident_ids.append(incident_id)
         incident_refs = [source_ref, source_ref_fr]
@@ -570,7 +584,7 @@ def build_month_bundle(
             "name": f"AFRINTEL {month_dir.split(chr(45), 1)[1].title() if chr(45) in month_dir else month_dir.title()} {year} incident {rec.index:02d}: {rec.organization}",
             "description": bilingual_incident_description(rec, rec_fr),
             "first_seen": f"{rec.date_iso}T00:00:00Z",
-            "labels": labels + [slugify(rec.country)] + ([sector_ov] if sector_ov else []),
+            "labels": list(dict.fromkeys(labels + [slugify(rec.country)] + ([sector_ov] if sector_ov else []))),
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
             "external_references": incident_refs,
@@ -686,6 +700,12 @@ def validate_bundle(bundle: dict, expected_victims: int, expected_incidents: int
     ids = [obj.get("id") for obj in objects if obj.get("id")]
     if len(ids) != len(set(ids)):
         raise ValueError("Duplicate STIX IDs detected")
+    duplicate_labels = [
+        obj.get("id") for obj in objects
+        if len(obj.get("labels", [])) != len(set(obj.get("labels", [])))
+    ]
+    if duplicate_labels:
+        raise ValueError(f"Duplicate STIX labels detected: {duplicate_labels[:5]}")
     bad_ids = [obj_id for obj_id in ids if not STIX_ID_RE.match(obj_id)]
     if bad_ids:
         raise ValueError(f"Invalid STIX IDs detected: {bad_ids[:5]}")

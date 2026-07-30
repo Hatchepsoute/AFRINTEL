@@ -311,8 +311,8 @@ pie
 
 ## 🔗 Liens utiles
 
-- [Rapport complet (FR)](/reports/2026/01-february/README_FR.md)
-- [Full report (EN)](/reports/2026/01-february/README.md)
+- [Rapport complet (FR)](../../../CyberAttackAfrica/2026/02-february/README_FR.md)
+- [Full report (EN)](../../../CyberAttackAfrica/2026/02-february/README.md)
 ---
 ## ✍🏿 Auteur
 

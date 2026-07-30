@@ -1,4 +1,4 @@
-[### June 4, 2024
+### June 4, 2024
 
 #### 🇿🇦 South Africa - Botselo
 - **Ransomware group:** arcusmedia

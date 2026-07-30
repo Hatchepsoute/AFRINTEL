@@ -1,4 +1,4 @@
-### 1er Août 2024
+### 01 Août 2024
 
 #### 🇸🇨 Seychelles - Remitano
 - **Groupe ransomware :** meow

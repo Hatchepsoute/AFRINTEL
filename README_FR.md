@@ -36,7 +36,7 @@ Juin 2026 compte **40 publications d'incidents cyber** : 20 fiches ransomware et
 
 ### Rapport sur les cybermenaces du premier semestre 2026
 
-De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** : **112 incidents ransomware**, **126 fuites de données ou ventes d'accès** et **1 défacement de sites web**. Le deuxième trimestre représente 157 incidents, contre 82 au premier trimestre. Le ransomware reste stable à 56 incidents par trimestre, tandis que les fuites et ventes d'accès passent de 25 au premier trimestre à 101 au deuxième trimestre.
+De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** : **113 incidents ransomware**, **125 fuites de données ou ventes d'accès** et **1 défacement de sites web**. Le deuxième trimestre représente 157 incidents, contre 82 au premier trimestre. Le ransomware reste quasi stable, passant de 56 incidents au premier trimestre à 57 au deuxième, tandis que les fuites et ventes d'accès passent de 25 au premier trimestre à 100 au deuxième trimestre.
 
 📊 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
 

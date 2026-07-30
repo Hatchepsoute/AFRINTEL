@@ -33,11 +33,11 @@ Ces données permettent :
 
 Chaque bundle STIX peut contenir :
 
-- `intrusion-set` → groupes ransomware  
-- `identity` → organisations victimes  
-- `incident` → événements ransomware  
-- `relationship` → liens acteur ↔ victime ↔ incident  
-- `report` → rapport mensuel AFRINTEL  
+- `threat-actor` → groupes ransomware, acteurs malveillants ou personas de publication
+- `identity` → organisations victimes
+- `incident` → événements ransomware
+- `relationship` → liens acteur ↔ victime ↔ incident
+- `report` → rapport mensuel AFRINTEL
 
 ---
 
@@ -76,12 +76,16 @@ Chaque bundle STIX peut contenir :
 
 ### AFRINTEL 2024
 
+Les deux fichiers de rapport CTI ci-dessous sont des documents JSON analytiques, pas des bundles STIX. Les exports de victimes et les fichiers mensuels sont des bundles STIX 2.1 régénérés depuis les fiches sources bilingues.
+
+
 | Dataset | Bundle STIX |
 |------|------|
+| Bundles mensuels 2024 | [Janvier](./2024/01-january/afrintel_january_2024_opencti.json) · [Février](./2024/02-february/afrintel_february_2024_opencti.json) · [Mars](./2024/03-march/afrintel_march_2024_opencti.json) · [Avril](./2024/04-april/afrintel_april_2024_opencti.json) · [Mai](./2024/05-may/afrintel_may_2024_opencti.json) · [Juin](./2024/06-june/afrintel_june_2024_opencti.json) · [Juillet](./2024/07-july/afrintel_july_2024_opencti.json) · [Août](./2024/08-august/afrintel_august_2024_opencti.json) · [Septembre](./2024/09-september/afrintel_september_2024_opencti.json) · [Octobre](./2024/10-october/afrintel_october_2024_opencti.json) · [Novembre](./2024/11-november/afrintel_november_2024_opencti.json) · [Décembre](./2024/12-december/afrintel_december_2024_opencti.json) |
 | Liste des victimes 2024 (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
 | Liste des victimes 2024 (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
-| Rapport CTI 2024 (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
-| Rapport CTI 2024 (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
+| Rapport CTI analytique 2024 (EN, JSON non-STIX) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
+| Rapport CTI analytique 2024 (FR, JSON non-STIX) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
 
 ---
 

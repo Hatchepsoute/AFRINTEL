@@ -75,7 +75,7 @@
 
 ### 21 Mai 2025
 #### 🇿🇦 Afrique du Sud - Anglo American plc
-- **Groupe ransomware: arkana
+- **Groupe ransomware:** arkana
 - **Secteur:** Mines
 - **Statut:** Revendication & divulgation des données
 - **Site web:** angloamerican.com

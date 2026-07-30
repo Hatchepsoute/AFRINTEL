@@ -68,9 +68,9 @@ Le paysage des menaces en Afrique se caractérise par la présence de grands act
 | 2 | **devman** | 10 |
 | 3 | **incransom** | 8 |
 | 4 | **funksec** | 7 |
-| 4 | **nightspire** | 7 |
+| 4 | **nightspire** | 9 |
 | 6 | **killsec** | 6 |
-| 7 | **Dark 07x Team** | 5 |
+| 7 | **Dark 07x Team** | 4 |
 | 8 | **clop** | 4 |
 | 8 | **ransomhub** | 4 |
 | 8 | **warlock** | 4 |
@@ -92,13 +92,13 @@ pie title Top 10 ransomware groups (by claims)
     "devman (10)" : 10
     "incransom (8)" : 8
     "funksec (7)" : 7
-    "nightspire (7)" : 7
+    "nightspire (9)" : 9
     "killsec (6)" : 6
-    "Dark 07x Team (5)" : 5
+    "Dark 07x Team (4)" : 4
     "clop (4)" : 4
     "ransomhub (4)" : 4
     "warlock (4)" : 4
-    "Others (79)" : 79
+    "Others (82)" : 82
 ```
 ---
 

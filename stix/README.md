@@ -33,7 +33,7 @@ These datasets support:
 
 Each STIX bundle may include:
 
-- `intrusion-set` → ransomware groups or malicious actors
+- `threat-actor` → ransomware groups, malicious actors or publication personas
 - `identity` → victim organizations
 - `incident` → ransomware incidents
 - `relationship` → actor ↔ victim ↔ incident links
@@ -76,12 +76,16 @@ Each STIX bundle may include:
 
 ### AFRINTEL 2024
 
+The two CTI report files below are analytical JSON documents, not STIX bundles. The victim exports and monthly files are regenerated STIX 2.1 bundles derived from the bilingual source cards.
+
+
 | Dataset | STIX Bundle |
 |------|------|
+| 2024 monthly bundles | [January](./2024/01-january/afrintel_january_2024_opencti.json) · [February](./2024/02-february/afrintel_february_2024_opencti.json) · [March](./2024/03-march/afrintel_march_2024_opencti.json) · [April](./2024/04-april/afrintel_april_2024_opencti.json) · [May](./2024/05-may/afrintel_may_2024_opencti.json) · [June](./2024/06-june/afrintel_june_2024_opencti.json) · [July](./2024/07-july/afrintel_july_2024_opencti.json) · [August](./2024/08-august/afrintel_august_2024_opencti.json) · [September](./2024/09-september/afrintel_september_2024_opencti.json) · [October](./2024/10-october/afrintel_october_2024_opencti.json) · [November](./2024/11-november/afrintel_november_2024_opencti.json) · [December](./2024/12-december/afrintel_december_2024_opencti.json) |
 | 2024 Victim List (EN) | [afrintel_2024_victims_EN_opencti.json](./2024/afrintel_2024_victims_EN_opencti.json) |
 | 2024 Victim List (FR) | [afrintel_2024_victims_FR_opencti.json](./2024/afrintel_2024_victims_FR_opencti.json) |
-| 2024 CTI Report (EN) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
-| 2024 CTI Report (FR) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
+| 2024 analytical CTI report (EN, non-STIX JSON) | [AFRINTEL_CTI_report_2024_en.json](./2024/AFRINTEL_CTI_report_2024_en.json) |
+| 2024 analytical CTI report (FR, non-STIX JSON) | [AFRINTEL_CTI_report_2024_fr.json](./2024/AFRINTEL_CTI_report_2024_fr.json) |
 
 ---
 

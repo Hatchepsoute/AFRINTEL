@@ -1,0 +1,912 @@
+{
+  "type": "bundle",
+  "id": "bundle--33d2e708-0b9b-5acf-bc83-7a2b715dd5d2",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--cd33aa51-92ae-5409-9838-712a634a7204",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "medusa",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 02-february 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "02-february"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--ded896d6-2c59-5d28-8735-dc35ed909c45",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "ArpuPlus",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Digital Services & Telecom.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Technologies numériques & Télécoms.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "egypt",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://arpuplus.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "Digital Services & Telecom",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md",
+      "sectors": [
+        "telecommunications"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--c06d1efc-d508-5606-a538-48a041543923",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL February 2024 incident 01: ArpuPlus",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ArpuPlus in Egypt on February 6, 2024. The source actor is listed as medusa. Status: Claimed & Data Leak. Sector: Digital Services & Telecom. Source summary: ArpuPlus, founded in 2003 in Cairo as a subsidiary of A15, is a leading digital venture builder and mobile services provider across the MENA region. Operating from 11 regional offices, it delivers value-added systems including video-on-demand, music distribution, telehealth, and enterprise messaging solutions.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ArpuPlus en Égypte, à la date du 6 Février 2024. L'acteur source est indiqué comme medusa. Statut : Revendication & divulgation des données. Secteur : Technologies numériques & Télécoms. Résumé de la source : ArpuPlus, fondée en 2003 au Caire en tant que filiale du groupe A15, est un constructeur de projets numériques (venture builder) et un fournisseur de services mobiles de premier plan dans la région MENA. Présente via 11 bureaux, elle fournit des plateformes de vidéo à la demande, de distribution musicale, de télésanté et de communication d'entreprise.",
+      "first_seen": "2024-02-06T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "egypt",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://arpuplus.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "Digital Services & Telecom",
+      "x_afrintel_actor": "medusa",
+      "x_afrintel_date_display": "February 6, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8ada1f1f-8938-5f34-9c8e-396bbf1f210a",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c06d1efc-d508-5606-a538-48a041543923",
+      "target_ref": "threat-actor--cd33aa51-92ae-5409-9838-712a634a7204",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--acedb33e-55de-5f9b-ad51-fc90353fef3b",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--cd33aa51-92ae-5409-9838-712a634a7204",
+      "target_ref": "identity--ded896d6-2c59-5d28-8735-dc35ed909c45",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--849bebd1-e3c1-5820-9a31-454242e8a830",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--c06d1efc-d508-5606-a538-48a041543923",
+      "target_ref": "identity--ded896d6-2c59-5d28-8735-dc35ed909c45",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--9a0e2f75-5766-515b-b95f-6e7fd153d855",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "hunters",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 02-february 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "02-february"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--6d3a112b-1984-57b8-abbf-8b02ab1c2830",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "SOPEM Tunisie",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Manufacturing (Metallurgy).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Industrie manufacturière (Métallurgie).",
+      "labels": [
+        "afrintel",
+        "victim",
+        "tunisia",
+        "manufacturing"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://sopem.com.tn"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_sector_raw": "Manufacturing (Metallurgy)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md",
+      "sectors": [
+        "manufacturing"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--89d86ac2-65ec-5dc8-91cd-cff51c382a0a",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL February 2024 incident 02: SOPEM Tunisie",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting SOPEM Tunisie in Tunisia on February 10, 2024. The source actor is listed as hunters. Status: Claimed & Data Leak. Sector: Manufacturing (Metallurgy). Source summary: SOPEM Tunisie (Société Tunisienne de Profilage de Métaux) is an industrial manufacturing company specialized in metal profiling and transformation. Headquartered in Tunisia, the firm supplies metal structures and industrial engineering components for construction and manufacturing sectors.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant SOPEM Tunisie en Tunisie, à la date du 10 Février 2024. L'acteur source est indiqué comme hunters. Statut : Revendication & divulgation des données. Secteur : Industrie manufacturière (Métallurgie). Résumé de la source : SOPEM Tunisie (Société Tunisienne de Profilage de Métaux) est une entreprise manufacturière spécialisée dans le profilage et la transformation industrielle des métaux. Basée en Tunisie, elle fournit des composants industriels et des structures métalliques pour les secteurs du bâtiment et de l'ingénierie.",
+      "first_seen": "2024-02-10T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "tunisia",
+        "manufacturing"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://sopem.com.tn"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_sector_raw": "Manufacturing (Metallurgy)",
+      "x_afrintel_actor": "hunters",
+      "x_afrintel_date_display": "February 10, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--685e7a77-437d-50fd-9f51-c40f3c8023a2",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--89d86ac2-65ec-5dc8-91cd-cff51c382a0a",
+      "target_ref": "threat-actor--9a0e2f75-5766-515b-b95f-6e7fd153d855",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2bbc13e1-fecb-5e9f-b3d0-7059df9871cc",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9a0e2f75-5766-515b-b95f-6e7fd153d855",
+      "target_ref": "identity--6d3a112b-1984-57b8-abbf-8b02ab1c2830",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0d78eef7-5e6f-5ef5-bdc9-eed13ff9e39e",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--89d86ac2-65ec-5dc8-91cd-cff51c382a0a",
+      "target_ref": "identity--6d3a112b-1984-57b8-abbf-8b02ab1c2830",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "lockbit3",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 02-february 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "02-february"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--653c1bf5-92f4-5941-8105-f7430e6284c5",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "The Aurum Institute",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Healthcare & Research.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Santé publique & Recherche médicale.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://auruminstitute.org"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Healthcare & Research",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--2eeebb29-4396-5b31-8986-4432e59e41ef",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL February 2024 incident 03: The Aurum Institute",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting The Aurum Institute in South Africa on February 13, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Healthcare & Research. Source summary: The Aurum Institute is a prominent African public benefit organization established in 1998 and headquartered in Johannesburg. Specialized in health research and policy implementation, it focuses on global health issues, generating critical scientific evidence and health programs against HIV and Tuberculosis.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant The Aurum Institute en Afrique du Sud, à la date du 13 Février 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Santé publique & Recherche médicale. Résumé de la source : The Aurum Institute est une organisation africaine d'utilité publique de premier plan fondée en 1998 et basée à Johannesburg. Axée sur la recherche médicale et la santé publique, l'organisation génère des données scientifiques et déploie des programmes sanitaires mondiaux d'envergure, notamment contre le VIH et la tuberculose.",
+      "first_seen": "2024-02-13T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://auruminstitute.org"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Healthcare & Research",
+      "x_afrintel_actor": "lockbit3",
+      "x_afrintel_date_display": "February 13, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a3cb8319-7739-597c-902b-5148d367f411",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--2eeebb29-4396-5b31-8986-4432e59e41ef",
+      "target_ref": "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--added0aa-4181-5cc1-94c9-a45ca9ebac47",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+      "target_ref": "identity--653c1bf5-92f4-5941-8105-f7430e6284c5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f3f10489-daaf-5116-a9b4-1b978ef9744c",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--2eeebb29-4396-5b31-8986-4432e59e41ef",
+      "target_ref": "identity--653c1bf5-92f4-5941-8105-f7430e6284c5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7af13d09-ed68-587a-8441-55327e3e7bd6",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Nouvelle Parfumerie Gandour (NPGCI)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Ivory Coast. Sector: Consumer Goods (Cosmetics).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Côte d'Ivoire. Secteur : Industrie cosmétique.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "ivory-coast"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://npgandour.com"
+        }
+      ],
+      "x_afrintel_country": "Ivory Coast",
+      "x_afrintel_sector_raw": "Consumer Goods (Cosmetics)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--11339459-76b9-5fd0-a84a-1267f36b7c43",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL February 2024 incident 04: Nouvelle Parfumerie Gandour (NPGCI)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Nouvelle Parfumerie Gandour (NPGCI) in Ivory Coast on February 27, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Consumer Goods (Cosmetics). Source summary: Nouvelle Parfumerie Gandour (NPGCI) is a leading West African cosmetics and consumer goods manufacturing company, based in the Yopougon industrial zone in Abidjan, Ivory Coast. The firm produces a vast portfolio of body care, hair care, oral hygiene, and perfume products distributed continent-wide.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Nouvelle Parfumerie Gandour (NPGCI) en Côte d'Ivoire, à la date du 27 Février 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Industrie cosmétique. Résumé de la source : La Nouvelle Parfumerie Gandour (NPGCI) est une entreprise industrielle cosmétique leader en Afrique de l'Ouest, basée dans la zone industrielle de Yopougon à Abidjan, en Côte d'Ivoire. Fondée sur des principes de fabrication rigoureux, elle produit une vaste gamme de produits corporels, capillaires, bucco-dentaires et de parfumerie.",
+      "first_seen": "2024-02-27T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "ivory-coast"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://npgandour.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 4,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Ivory Coast",
+      "x_afrintel_sector_raw": "Consumer Goods (Cosmetics)",
+      "x_afrintel_actor": "lockbit3",
+      "x_afrintel_date_display": "February 27, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--df6a90be-02c1-5860-ba2b-f7232fcaa711",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--11339459-76b9-5fd0-a84a-1267f36b7c43",
+      "target_ref": "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cfcb6e0f-2e23-50a6-8a45-674b4ba48c5f",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+      "target_ref": "identity--7af13d09-ed68-587a-8441-55327e3e7bd6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--80f982b8-d52b-5363-8158-eb99cc46a745",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--11339459-76b9-5fd0-a84a-1267f36b7c43",
+      "target_ref": "identity--7af13d09-ed68-587a-8441-55327e3e7bd6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--d9bef70b-cca0-5348-b115-52cd11c22b07",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "dragonforce",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 02-february 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "02-february"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--39792502-85c5-5499-afa0-fb8cdd8c0b79",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "ERWAT (Ekurhuleni Water Care Company)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Utilities (Wastewater Management).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Services publics (Gestion des eaux).",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "utilities"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://erwat.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Utilities (Wastewater Management)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md",
+      "sectors": [
+        "utilities"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--fe7b5860-7ff2-5e60-805f-05b30749b8f5",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL February 2024 incident 05: ERWAT (Ekurhuleni Water Care Company)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ERWAT (Ekurhuleni Water Care Company) in South Africa on February 29, 2024. The source actor is listed as dragonforce. Status: Claimed & Data Leak. Sector: Utilities (Wastewater Management). Source summary: ERWAT (Ekurhuleni Water Care Company) is a major South African public utility established in 1992, specializing in bulk wastewater conveyance and treatment. It provides cost-effective and innovative environmental wastewater management solutions to thousands of industries and over 3.5 million residents. ## ✍🏿 Author Adama ASSIONGBON SOC & Cyber Threat Intelligence Consultant LinkedIn profile\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ERWAT (Ekurhuleni Water Care Company) en Afrique du Sud, à la date du 29 Février 2024. L'acteur source est indiqué comme dragonforce. Statut : Revendication & divulgation des données. Secteur : Services publics (Gestion des eaux). Résumé de la source : ERWAT (Ekurhuleni Water Care Company) est une entreprise publique sud-africaine de premier plan créée en 1992, spécialisée dans l'assainissement et le traitement des eaux usées industrielles et domestiques. Elle assure la gestion des infrastructures d'épuration pour des milliers d'industries et plus de 3,5 millions d'habitants. ## ✍🏿 Author Adama ASSIONGBON Consultant SOC & Cyber Threat Intelligence LinkedIn profile",
+      "first_seen": "2024-02-29T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "utilities"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://erwat.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 5,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Utilities (Wastewater Management)",
+      "x_afrintel_actor": "dragonforce",
+      "x_afrintel_date_display": "February 29, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e0af6ee4-042f-50f1-8d52-6cfc8b9861dc",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--fe7b5860-7ff2-5e60-805f-05b30749b8f5",
+      "target_ref": "threat-actor--d9bef70b-cca0-5348-b115-52cd11c22b07",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3c19fdfb-5698-508a-9619-d69e90692c62",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d9bef70b-cca0-5348-b115-52cd11c22b07",
+      "target_ref": "identity--39792502-85c5-5499-afa0-fb8cdd8c0b79",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--64972543-2cc0-5751-ae54-5d4f60e9e6d1",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--fe7b5860-7ff2-5e60-805f-05b30749b8f5",
+      "target_ref": "identity--39792502-85c5-5499-afa0-fb8cdd8c0b79",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--7aa76d25-19bc-52ff-b8f9-65e3b9fc6d3e",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "AFRINTEL monthly CTI report - February 2024",
+      "description": "# CTI Report - February 2024: Geographic expansion across North and West Africa\n\n### 1. Executive summary\n\nIn February 2024, Africa recorded **5 documented ransomware victims** across 4 countries. Compared to January (3 victims, all South Africa), the month marks a clear **geographic expansion**. Egypt, Tunisia, Ivory Coast and South Africa are all targeted. Four distinct ransomware groups are active.\n\n**Key figures:**\n- 🔹 **5 victims** identified\n- 🔹 **4 active groups**: Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1)\n- 🔹 **Countries affected**: South Africa (2), Egypt (1), Tunisia (1), Ivory Coast (1)\n- 🔹 **Sectors**: Digital Services/Telecom, Manufacturing, Healthcare & Research, Consumer Goods, Utilities\n\n---\n\n### 2. Attack timeline\n\n| Date | Victim | Country | Ransomware group |\n|------|--------|---------|-----------------|\n| February 6 | ArpuPlus | Egypt | Medusa |\n| February 10 | SOPEM Tunisie | Tunisia | Hunters |\n| February 13 | The Aurum Institute | South Africa | LockBit3 |\n| February 27 | Nouvelle Parfumerie Gandour (NPGCI) | Ivory Coast | LockBit3 |\n| February 29 | ERWAT | South Africa | DragonForce |\n\n---\n\n### 3. Victim analysis\n\n#### 3.1 By country\n\n| Country | Number of attacks |\n|---------|-----------------|\n| South Africa | 2 |\n| Egypt | 1 |\n| Tunisia | 1 |\n| Ivory Coast | 1 |\n\n#### 3.2 By sector\n\n| Sector | Count |\n|--------|-------|\n| Digital Services / Telecom | 1 |\n| Manufacturing (Metallurgy) | 1 |\n| Healthcare & Research | 1 |\n| Consumer Goods (Cosmetics) | 1 |\n| Utilities (Wastewater) | 1 |\n\n#### 3.3 Ransomware groups\n\n| Ransomware group | Number of attacks |\n|-----------------|-----------------|\n| LockBit3 | 2 |\n| Medusa | 1 |\n| Hunters | 1 |\n| DragonForce | 1 |\n\n---\n\n### 4. Key observations\n\n- **Geographic expansion**: February 2024 is the first month to see simultaneous attacks across North Africa (Egypt, Tunisia), West Africa (Ivory Coast) and Southern Africa (South Africa).\n- **DragonForce first appearance**: the group claims ERWAT (wastewater utility serving 3.5 million people), a critical infrastructure attack signalling interest in essential services.\n- **Healthcare under fire**: The Aurum Institute, a major HIV/TB research organization, is targeted by LockBit3, sensitive public health data at risk.\n- **West African manufacturing**: NPGCI (FMCG cosmetics, Abidjan) marks LockBit3's first West African victim of the year.\n- **Digital services in North Africa**: ArpuPlus (Egypt) shows emerging interest in MENA telecom and digital value-added service providers.\n\n---\n\n### 5. Recommendations\n\n| Domain | Recommended action |\n|--------|--------------------|\n| Critical infrastructure (water, energy) | Segment OT/IT networks, enforce offline backups, monitor SCADA access. |\n| Healthcare & research | Encrypt research databases, restrict external access, monitor for data exfiltration. |\n| Digital/Telecom providers | Patch API and platform vulnerabilities, monitor for credential leaks. |\n| Manufacturing | Audit industrial systems exposure, enforce endpoint protection. |\n| All organizations | Track DragonForce and Medusa as emerging groups, review their IOCs. |\n\n---\n\n*Report generated from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*",
+      "lang": "en",
+      "published": "2024-02-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "en",
+        "february-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/README.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--cd33aa51-92ae-5409-9838-712a634a7204",
+        "threat-actor--9a0e2f75-5766-515b-b95f-6e7fd153d855",
+        "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+        "threat-actor--d9bef70b-cca0-5348-b115-52cd11c22b07",
+        "identity--ded896d6-2c59-5d28-8735-dc35ed909c45",
+        "identity--6d3a112b-1984-57b8-abbf-8b02ab1c2830",
+        "identity--653c1bf5-92f4-5941-8105-f7430e6284c5",
+        "identity--7af13d09-ed68-587a-8441-55327e3e7bd6",
+        "identity--39792502-85c5-5499-afa0-fb8cdd8c0b79",
+        "incident--c06d1efc-d508-5606-a538-48a041543923",
+        "incident--89d86ac2-65ec-5dc8-91cd-cff51c382a0a",
+        "incident--2eeebb29-4396-5b31-8986-4432e59e41ef",
+        "incident--11339459-76b9-5fd0-a84a-1267f36b7c43",
+        "incident--fe7b5860-7ff2-5e60-805f-05b30749b8f5"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/README.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 5,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 5
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--d4e19c07-82e3-5470-9e22-252431876a7f",
+      "created": "2026-07-30T11:00:03Z",
+      "modified": "2026-07-30T11:00:03Z",
+      "name": "Rapport CTI mensuel AFRINTEL - Février 2024",
+      "description": "# Rapport CTI - Février 2024 : Expansion géographique vers l'Afrique du Nord et de l'Ouest\n\n### 1. Résumé exécutif\n\nEn février 2024, l'Afrique a enregistré **5 victimes** documentées d'attaques par ransomware dans 4 pays. Par rapport à janvier (3 victimes, toutes en Afrique du Sud), le mois marque une **expansion géographique nette**, l'Égypte, la Tunisie, la Côte d'Ivoire et l'Afrique du Sud sont toutes ciblées. Quatre groupes ransomware distincts sont actifs.\n\n**Chiffres clés :**\n- 🔹 **5 victimes** identifiées\n- 🔹 **4 groupes actifs** : Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1)\n- 🔹 **Pays touchés** : Afrique du Sud (2), Égypte (1), Tunisie (1), Côte d'Ivoire (1)\n- 🔹 **Secteurs** : Services numériques/Télécom, Industrie, Santé & Recherche, Biens de consommation, Services publics\n\n---\n\n### 2. Chronologie des attaques\n\n| Date | Victime | Pays | Groupe ransomware |\n|------|---------|------|-------------------|\n| 6 février | ArpuPlus | Égypte | Medusa |\n| 10 février | SOPEM Tunisie | Tunisie | Hunters |\n| 13 février | The Aurum Institute | Afrique du Sud | LockBit3 |\n| 27 février | Nouvelle Parfumerie Gandour (NPGCI) | Côte d'Ivoire | LockBit3 |\n| 29 février | ERWAT | Afrique du Sud | DragonForce |\n\n---\n\n### 3. Analyse des victimes\n\n#### 3.1 Par pays\n\n| Pays | Nombre d'attaques |\n|------|-----------------|\n| Afrique du Sud | 2 |\n| Égypte | 1 |\n| Tunisie | 1 |\n| Côte d'Ivoire | 1 |\n\n#### 3.2 Par secteur\n\n| Secteur | Nombre |\n|---------|--------|\n| Services numériques / Télécom | 1 |\n| Industrie (Métallurgie) | 1 |\n| Santé & Recherche | 1 |\n| Biens de consommation (Cosmétiques) | 1 |\n| Services publics (Traitement des eaux) | 1 |\n\n#### 3.3 Groupes ransomware\n\n| Groupe ransomware | Nombre d'attaques |\n|-----------------|-----------------|\n| LockBit3 | 2 |\n| Medusa | 1 |\n| Hunters | 1 |\n| DragonForce | 1 |\n\n---\n\n### 4. Points d'attention\n\n- **Expansion géographique** : Février 2024 est le premier mois à voir des attaques simultanées en Afrique du Nord (Égypte, Tunisie), Afrique de l'Ouest (Côte d'Ivoire) et Afrique australe (Afrique du Sud).\n- **Première apparition de DragonForce** : le groupe revendique ERWAT (traitement des eaux usées desservant 3,5 millions de personnes), une attaque d'infrastructure critique signalant un intérêt pour les services essentiels.\n- **Santé sous pression** : The Aurum Institute, organisation majeure de recherche VIH/Tuberculose, est ciblée par LockBit3, des données de santé publique sensibles sont exposées.\n- **Industrie ouest-africaine** : NPGCI (cosmétiques grand public, Abidjan) marque la première victime ouest-africaine de LockBit3 en 2024.\n- **Services numériques en Afrique du Nord** : ArpuPlus (Égypte) illustre un intérêt croissant pour les opérateurs télécom et les fournisseurs de services à valeur ajoutée de la zone MENA.\n\n---\n\n### 5. Recommandations\n\n| Domaine | Action recommandée |\n|---------|--------------------|\n| Infrastructures critiques (eau, énergie) | Segmenter les réseaux OT/IT, maintenir des sauvegardes hors ligne, surveiller les accès SCADA. |\n| Santé & Recherche | Chiffrer les bases de données de recherche, restreindre les accès externes, surveiller l'exfiltration. |\n| Fournisseurs numériques/Télécom | Corriger les vulnérabilités d'API, surveiller les fuites de credentials. |\n| Industrie | Auditer l'exposition des systèmes industriels, renforcer la protection endpoint. |\n| Toutes organisations | Surveiller DragonForce et Medusa comme groupes émergents, analyser leurs IOCs. |\n\n---\n\n*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*",
+      "lang": "fr",
+      "published": "2024-02-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "fr",
+        "february-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/02-february/README_FR.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--cd33aa51-92ae-5409-9838-712a634a7204",
+        "threat-actor--9a0e2f75-5766-515b-b95f-6e7fd153d855",
+        "threat-actor--9449a8ac-d46b-51cf-8046-5eb666bd687b",
+        "threat-actor--d9bef70b-cca0-5348-b115-52cd11c22b07",
+        "identity--ded896d6-2c59-5d28-8735-dc35ed909c45",
+        "identity--6d3a112b-1984-57b8-abbf-8b02ab1c2830",
+        "identity--653c1bf5-92f4-5941-8105-f7430e6284c5",
+        "identity--7af13d09-ed68-587a-8441-55327e3e7bd6",
+        "identity--39792502-85c5-5499-afa0-fb8cdd8c0b79",
+        "incident--c06d1efc-d508-5606-a538-48a041543923",
+        "incident--89d86ac2-65ec-5dc8-91cd-cff51c382a0a",
+        "incident--2eeebb29-4396-5b31-8986-4432e59e41ef",
+        "incident--11339459-76b9-5fd0-a84a-1267f36b7c43",
+        "incident--fe7b5860-7ff2-5e60-805f-05b30749b8f5"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/02-february/README_FR.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 5,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 5
+    }
+  ]
+}

@@ -27,14 +27,14 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** 0APT
 - **Secteur :** Aviation
 - **Site web :** bluesky-air.com
-- **Statut :** Revendication (3,5 To exfiltrés)
+- **Statut :** Claim - Unverified
 - **Description victime :** Compagnie aérienne somalienne fournissant des services de transport.
 
 ### 05 Février 2026
 #### 🇸🇳 Sénégal - DAF SÉNÉGAL (Direction de l'Administration Générale et de l'Équipement)
 - **Groupe ransomware :** The Green Blood Group
 - **Secteur :** Gouvernement
-- **Statut :** Revendication (139 To exfiltrés)
+- **Statut :** Claim - Unverified
 - **Description victime :** Administration gouvernementale sénégalaise. Violation massive incluant les bases de données citoyens et les registres biométriques.
 
 ### 05 Février 2026
@@ -42,7 +42,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** 0APT
 - **Secteur :** Média
 - **Site web :** gmaworld.com
-- **Statut :** Revendication (2,5 To exfiltrés)
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise intégrée de médias et de communications basée au Ghana.
 
 ### 06 Février 2026
@@ -50,7 +50,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** 0APT
 - **Secteur :** Juridique
 - **Site web :** vertexlaw.co.tz
-- **Statut :** Revendication (850 Go exfiltrés)
+- **Statut :** Claim - Unverified
 - **Description victime :** Cabinet d'avocats fournissant des services juridiques en Tanzanie.
 
 ### 06 Février 2026
@@ -58,7 +58,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Banque
 - **Site web :** fargo.co.ke
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Prestataire de sécurité et logistique, également impliqué dans les services bancaires/financiers au Kenya.
 
 ### 09 Février 2026
@@ -66,7 +66,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** killsec
 - **Secteur :** Fintech
 - **Site web :** getly.app
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Application nigériane de technologie financière.
 
 ### 11 Février 2026
@@ -74,7 +74,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Service public
 - **Site web :** ghanabauxite.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise ghanéenne impliquée dans le secteur de l'extraction et de la production de bauxite.
 
 ### 12 Février 2026
@@ -82,7 +82,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** incransom
 - **Secteur :** Énergie
 - **Site web :** midwesternog.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise nigériane du secteur pétrolier et gazier.
 
 ### 13 Février 2026
@@ -90,7 +90,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Compagnies aériennes
 - **Site web :** nileair.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Compagnie aérienne privée égyptienne basée à l'aéroport international du Caire.
 
 ### 14 Février 2026
@@ -98,7 +98,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** lockbit5
 - **Secteur :** Hôtellerie
 - **Site web :** sands.mu
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Resort de luxe situé à Maurice.
 
 ### 15 Février 2026
@@ -106,7 +106,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Administration locale
 - **Site web :** intsikayethu.gov.za
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Municipalité locale dans la province du Cap Oriental en Afrique du Sud.
 
 ### 15 Février 2026
@@ -114,7 +114,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Conseil en technologies
 - **Site web :** bits.com.tn
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Cabinet tunisien de conseil et de services informatiques.
 
 ### 17 Février 2026
@@ -122,7 +122,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** payload
 - **Secteur :** Immobilier
 - **Site web :** sodic.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** L'une des plus grandes sociétés égyptiennes de développement immobilier.
 
 ### 18 Février 2026
@@ -130,7 +130,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Agriculture / Agro-industrie
 - **Site web :** amtaar.com
-- **Statut :** Revendication & divulgation de 3,5 Go de données
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Société de conseil et d'investissement agricole gérant 6 000 hectares de terres irriguées au Soudan, acteur clé de la sécurité alimentaire nationale.
 
 ### 19 Février 2026
@@ -138,7 +138,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** incransom
 - **Secteur :** Compagnies aériennes
 - **Site web :** aircotedivoire.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Compagnie aérienne nationale de la Côte d'Ivoire.
 
 ### 20 Février 2026
@@ -146,7 +146,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** tengu
 - **Secteur :** Comptabilité
 - **Site web :** shora.ma
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Cabinet marocain d'expertise comptable et de conseil financier.
 
 ### 20 Février 2026
@@ -154,7 +154,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** lockbit5
 - **Secteur :** Gouvernement
 - **Site web :** moa.gov.eg
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Ministère égyptien de l'Agriculture et de la Mise en valeur des terres.
 
 ### 22 Février 2026
@@ -162,7 +162,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** qilin
 - **Secteur :** Commerce de détail
 - **Site web :** cymot.com
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Fournisseur namibien de pièces détachées, d'outils et d'équipements.
 
 ### 24 Février 2026
@@ -170,7 +170,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** vect
 - **Secteur :** Énergie
 - **Site web :** enertec.co.za
-- **Statut :** Revendication (151,79 Go)
+- **Statut :** Claim - Unverified
 - **Description victime :** Entreprise sud-africaine de solutions énergétiques et de distribution de batteries.
 
 ### 27 Février 2026
@@ -178,5 +178,5 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 - **Groupe ransomware :** Lockbit5
 - **Secteur :** Automobile
 - **Site web :** diesel-electric.co.za
-- **Statut :** Revendication
+- **Statut :** Claim - Unverified
 - **Description victime :** Important distributeur en Afrique du Sud spécialisé dans les composants automobiles.

@@ -7,11 +7,11 @@
 | Indicateur | Mai | Juin | Évolution |
 |---|---:|---:|---:|
 | Total des incidents | 57 | 40 | -17 (-29,8 %) |
-| Ransomware | 16 | 20 | +4 (+25,0 %) |
-| Fuites de données et ventes d'accès | 41 | 20 | -21 (-51,2 %) |
+| Ransomware | 17 | 20 | +3 (+17,6 %) |
+| Fuites de données et ventes d'accès | 40 | 20 | -20 (-50,0 %) |
 | Pays distincts après éclatement des fiches multi-pays | 18 | 20 | +2 |
 
-La baisse de juin provient des fuites de données et des ventes d'accès. Le ransomware passe de 16 à 20 fiches.
+La baisse de juin provient des fuites de données et des ventes d'accès. Le ransomware passe de 17 à 20 fiches.
 
 ## Évolution par pays
 
@@ -65,6 +65,6 @@ Juin compte moins de fiches, mais couvre davantage de pays après éclatement de
 
 ## Conclusion
 
-Juin compte 40 incidents contre 57 en mai. Les fuites et ventes d'accès reculent de 21 fiches, tandis que le ransomware progresse de quatre.
+Juin compte 40 incidents contre 57 en mai. Les fuites et ventes d'accès reculent de 20 fiches, tandis que le ransomware progresse de trois.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

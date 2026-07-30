@@ -3,7 +3,7 @@
 
 ## 📅 Juillet 2024
 
-### 1er Juillet 2024
+### 01 Juillet 2024
 #### 🇹🇳 Tunisie - Maxcess-logistics
 - **Groupe ransomware :** killsec
 - **Secteur :** Logistique & Chaîne d'approvisionnement

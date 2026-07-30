@@ -4,8 +4,8 @@
 ```mermaid
 pie showData
     title Ransomware vs Data Leaks - May 2026
-    "Data leaks and access sales (41)" : 41
-    "Ransomware (16)" : 16
+    "Data leaks and access sales (40)" : 40
+    "Ransomware (17)" : 17
 ```
 
 ## Ransomware distribution by country
@@ -16,7 +16,7 @@ pie showData
     "🇪🇬 Egypt (7)" : 7
     "🇳🇬 Nigeria (3)" : 3
     "🇹🇳 Tunisia (2)" : 2
-    "🇿🇦 South Africa (1)" : 1
+    "🇿🇦 South Africa (2)" : 2
     "🇬🇭 Ghana (1)" : 1
     "🇸🇳 Senegal (1)" : 1
     "🇨🇮 Ivory Coast (1)" : 1
@@ -27,7 +27,7 @@ pie showData
 ```mermaid
 pie showData
     title Data leaks / access sales by country - May 2026
-    "🇿🇦 South Africa (13)" : 13
+    "🇿🇦 South Africa (12)" : 12
     "🇪🇬 Egypt (9)" : 9
     "🇲🇦 Morocco (7)" : 7
     "🇹🇳 Tunisia (3)" : 3
@@ -52,6 +52,7 @@ pie showData
 | LockBit 5.0 | 1 | Egypt |
 | Lamashtu | 1 | Egypt |
 | PrinzEugen | 1 | South Africa (Standard Bank claim) |
+| Stormous | 1 | South Africa (Consumer Goods Council of South Africa) |
 | Titan | 1 | Tunisia |
 
 ## Side-by-side country comparison
@@ -59,7 +60,7 @@ pie showData
 | Country | Ransomware | Data Leaks | Visual |
 |---|:---:|:---:|:---|
 | 🇪🇬 Egypt | 7 | 9 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 South Africa | 1 | 13 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 South Africa | 2 | 12 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇲🇦 Morocco | 0 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
 | 🇪🇹 Ethiopia | 0 | 1 | 🟦 |
 | 🇹🇳 Tunisia | 2 | 3 | 🟧🟧 🟦🟦🟦 |

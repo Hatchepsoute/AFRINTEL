@@ -1,5 +1,12 @@
 # CHANGELOG - Mai 2026
 
+## [1.3.0] - 2026-07-29
+
+### Corrections de classification
+- Consumer Goods Council of South Africa (CGCSA), 03 mai 2026 : l'acteur Stormous était indiqué sous `Actor / Group` / `Acteur / Groupe` (fuite de données) alors qu'il est traité comme groupe ransomware ailleurs dans le dépôt. Reclassé en `Ransomware group` / `Groupe ransomware` dans victims.md et victims_FR.md, cohérent avec ransomware_victims.md.
+- Fichiers mis à jour : victims.md, victims_FR.md, README.md, README_FR.md, statistics/README.md, statistics/README_FR.md, stix/afrintel_may_2026_opencti.json, stix/afrintel_h1_2026_opencti.json, comparison/04-april-may (FR/EN), comparison/05-may-june (FR/EN), CyberAttackAfrica/2026/README_H1.md et README_H1_FR.md.
+- Total ransomware mai : 16 -> 17. Total fuites de données / ventes d'accès mai : 41 -> 40. Total incidents mai inchangé (57).
+
 ## [1.2.0] - 2026-06-24
 
 ### Ajout

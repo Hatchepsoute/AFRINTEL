@@ -13,7 +13,7 @@ TLP:CLEAR, public distribution
 
 ## 1. Executive summary
 
-AFRINTEL documented **239 Africa-related cyber incidents** during the first half of 2026: **112 ransomware incidents**, **126 data leaks or access sales**, and **1 website defacement**.
+AFRINTEL documented **239 Africa-related cyber incidents** during the first half of 2026: **113 ransomware incidents**, **125 data leaks or access sales**, and **1 website defacement**.
 
 Data leaks and access sales represented **52.7%** of all recorded activity, slightly exceeding ransomware at **46.9%**. When the single defacement is excluded, the two principal AFRINTEL categories account for 238 incidents: 47.1% ransomware and 52.9% data leaks or access sales.
 
@@ -36,8 +36,8 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 | Indicator | Value |
 |---|---:|
 | Total documented incidents | 239 |
-| Ransomware | 112 |
-| Data leaks / access sales | 126 |
+| Ransomware | 113 |
+| Data leaks / access sales | 125 |
 | Website defacement | 1 |
 | Highest-volume month | April, 60 incidents |
 | Second-highest month | May, 57 incidents |
@@ -46,8 +46,8 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 ```mermaid
 pie showData
     title AFRINTEL incident distribution, H1 2026
-    "Ransomware" : 112
-    "Data leaks and access sales" : 126
+    "Ransomware" : 113
+    "Data leaks and access sales" : 125
     "Website defacement" : 1
 ```
 
@@ -59,9 +59,9 @@ pie showData
 | February | 20 | 0 | 0 | 20 | 8.4% |
 | March | 19 | 22 | 0 | 41 | 17.2% |
 | April | 20 | 40 | 0 | 60 | 25.1% |
-| May | 16 | 41 | 0 | 57 | 23.8% |
+| May | 17 | 40 | 0 | 57 | 23.8% |
 | June | 20 | 20 | 0 | 40 | 16.7% |
-| **H1 2026** | **112** | **126** | **1** | **239** | **100%** |
+| **H1 2026** | **113** | **125** | **1** | **239** | **100%** |
 
 ```mermaid
 xychart-beta
@@ -78,7 +78,7 @@ xychart-beta
     title "Ransomware activity, H1 2026"
     x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
     y-axis "Incidents" 0 --> 45
-    bar [17,20,19,20,16,20]
+    bar [17,20,19,20,17,20]
 ```
 
 ```mermaid
@@ -86,7 +86,7 @@ xychart-beta
     title "Data leaks and access sales, H1 2026"
     x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
     y-axis "Incidents" 0 --> 45
-    bar [3,0,22,40,41,20]
+    bar [3,0,22,40,40,20]
 ```
 
 ## 5. Quarter comparison
@@ -94,15 +94,15 @@ xychart-beta
 | Period | Ransomware | Data leaks / access sales | Website defacement | Total |
 |---|---:|---:|---:|---:|
 | First quarter, January to March | 56 | 25 | 1 | 82 |
-| Second quarter, April to June | 56 | 101 | 0 | 157 |
-| **H1 2026** | **112** | **126** | **1** | **239** |
+| Second quarter, April to June | 57 | 100 | 0 | 157 |
+| **H1 2026** | **113** | **125** | **1** | **239** |
 
-The second quarter recorded **75 more incidents than first quarter**, an increase of **91.5%**. Ransomware volume remained stable at 56 incidents in each quarter. Data leaks and access sales rose from 25 in the first quarter to 101 in the second quarter, an increase of **304%**.
+The second quarter recorded **75 more incidents than first quarter**, an increase of **91.5%**. Ransomware volume stayed nearly stable, from 56 incidents in the first quarter to 57 in the second quarter. Data leaks and access sales rose from 25 in the first quarter to 100 in the second quarter, an increase of **300%**.
 
 ## 6. Key CTI findings
 
-1. **Ransomware remained persistent rather than continuously accelerating.** Monthly volume stayed between 16 and 20 incidents.
-2. **Data leaks became the principal volume driver in the second quarter.** April and May recorded 81 leaks or access sales, compared with 25 during the entire first quarter.
+1. **Ransomware remained persistent rather than continuously accelerating.** Monthly volume stayed between 17 and 20 incidents.
+2. **Data leaks became the principal volume driver in the second quarter.** April and May recorded 80 leaks or access sales, compared with 25 during the entire first quarter.
 3. **June changed the balance without returning to conditions observed during the first quarter.** Total volume declined after the April-May peak, but ransomware returned to 50% of monthly incidents.
 4. **The semester was geographically concentrated.** South Africa, Egypt and Morocco accounted for 137 of 239 records, or 57.3%.
 5. **Government / Administration was the leading normalized sector.** It accounted for 70 records, or 29.3%, followed by Industry / Automotive / Manufacturing / Construction / Mining and Finance / Banking with 25 records each.
@@ -255,14 +255,14 @@ For the second half of 2026, AFRINTEL should monitor whether the June 50/50 dist
 
 ## 10. Conclusion
 
-AFRINTEL recorded **239 incidents during H1 2026**: **112 ransomware**, **126 data leaks or access sales**, and **1 defacement**. The second quarter accounted for 157 records, or 65.7% of semester activity. All net growth over the first quarter came from leaks and access sales.
+AFRINTEL recorded **239 incidents during H1 2026**: **113 ransomware**, **125 data leaks or access sales**, and **1 defacement**. The second quarter accounted for 157 records, or 65.7% of semester activity. All net growth over the first quarter came from leaks and access sales.
 
 The defensive priority is dual: maintain ransomware readiness while strengthening controls against credential exposure, bulk data extraction, cloud-storage exposure and underground data sales.
 
 ### Consistency checks
 
 - Monthly totals: 21 + 20 + 41 + 60 + 57 + 40 = 239.
-- Type totals: 112 + 126 + 1 = 239.
+- Type totals: 113 + 125 + 1 = 239.
 - Direct geography: 233 single-country records + 6 multi-country records = 239.
 - Expanded geography: 233 single-country occurrences + 29 multi-country occurrences = 262.
 - Sector totals: all 22 explicit sector rows sum to 239.

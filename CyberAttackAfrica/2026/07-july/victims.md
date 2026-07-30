@@ -5,7 +5,7 @@
 - **Actor / Group :** anisanas2
 - **Sector:** Healthcare / Medical equipment
 - **Website:** [distamed.ma](https://distamed.ma)
-- **Status:** Data leak / Data offered for sale
+- **Status:** Claim - Data Sample Published
 
 - **Description:**
 

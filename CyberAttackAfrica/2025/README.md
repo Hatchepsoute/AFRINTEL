@@ -16,7 +16,7 @@ The dataset comprises **149 publicly claimed attacks** affecting **146 unique vi
 - **Total claims:** 149 (146 unique victims, 3 double claims)
 - **Most active month:** October (17 claims)
 - **Least active month:** February (8 claims)
-- **Most prolific groups:** qilin (11), devman (10), incransom (8)
+- **Most prolific groups:** qilin (11), devman (10), nightspire (9)
 - **Most targeted countries:** South Africa & Egypt (29 each), Morocco (21)
 - **Most targeted sectors:** Technology (22), Public Administrations (21), Finance (18)
 - **Largest exfiltration:** NSSF Kenya - 2.5 TB (devman)
@@ -60,9 +60,9 @@ The first quarter (Jan-Mar) saw 33 attacks, followed by 36 in Q2, 38 in Q3 and a
 | 2    | devman           | 10     |
 | 3    | incransom        | 8      |
 | 4    | funksec          | 7      |
-| 4    | nightspire       | 7      |
+| 4    | nightspire       | 9      |
 | 6    | killsec          | 6      |
-| 7    | Dark 07x Team    | 5      |
+| 7    | Dark 07x Team    | 4      |
 | 8    | clop             | 4      |
 | 8    | ransomhub        | 4      |
 | 8    | warlock          | 4      |
@@ -81,9 +81,9 @@ pie title Most active ransomware groups
     "devman (10)" : 10
     "incransom (8)" : 8
     "funksec (7)" : 7
-    "nightspire (7)" : 7
+    "nightspire (9)" : 9
     "killsec (6)" : 6
-    "Dark 07x Team (5)" : 5
+    "Dark 07x Team (4)" : 4
     "clop (4)" : 4
     "ransomhub (4)" : 4
     "warlock (4)" : 4
@@ -131,8 +131,8 @@ The technology sector was hit hardest, followed closely by government bodies and
 | 1    | 🇿🇦 South Africa   | 29     |
 | 1    | 🇪🇬 Egypt          | 29     |
 | 3    | 🇲🇦 Morocco        | 21     |
-| 4    | 🇳🇬 Nigeria        | 11     |
-| 4    | 🇹🇳 Tunisia        | 11     |
+| 4    | 🇳🇬 Nigeria        | 12     |
+| 4    | 🇹🇳 Tunisia        | 12     |
 | 6    | 🇰🇪 Kenya          | 8      |
 | 7    | 🇩🇿 Algeria        | 7      |
 | 8    | 🇿🇲 Zambia         | 4      |
@@ -158,15 +158,15 @@ pie title Breakdown of attacks by country - 2025
     "🇿🇦 South Africa (29)" : 29
     "🇪🇬 Egypt (29)" : 29
     "🇲🇦 Morocco (21)" : 21
-    "🇳🇬 Nigeria (11)" : 11
-    "🇹🇳 Tunisia (11)" : 11
+    "🇳🇬 Nigeria (12)" : 12
+    "🇹🇳 Tunisia (12)" : 12
     "🇰🇪 Kenya (8)" : 8
     "🇩🇿 Algeria (7)" : 7
     "🇿🇲 Zambia (4)" : 4
     "🇹🇿 Tanzania (3)" : 3
     "🇳🇦  Namibia (3)" : 3
     "🇨🇮 Ivory Coast (3)" : 3
-    "Others (20)" : 20
+    "Others (18)" : 18
 ```
 
 South Africa and Egypt were equally the most heavily targeted nations, accounting for nearly 40 % of all attacks. North Africa (Egypt, Morocco, Algeria, Tunisia) together represented 69 attacks (46 %), while Southern Africa (South Africa, Zambia, Namibia, Botswana, Zimbabwe, Mauritius, Madagascar) contributed 43 attacks (29 %).

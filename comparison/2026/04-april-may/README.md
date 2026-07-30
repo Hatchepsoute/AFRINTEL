@@ -7,11 +7,11 @@
 | Indicator | April | May | Change |
 |---|---:|---:|---:|
 | Total incidents | 60 | 57 | -3 (-5.0%) |
-| Ransomware | 20 | 16 | -4 (-20.0%) |
-| Data leaks and access sales | 40 | 41 | +1 (+2.5%) |
+| Ransomware | 20 | 17 | -3 (-15.0%) |
+| Data leaks and access sales | 40 | 40 | 0 (0.0%) |
 | Distinct countries after expanding multi-country records | 16 | 18 | +2 |
 
-The overall volume declined slightly. Data leaks and access sales remained stable, while ransomware publications fell from 20 to 16.
+The overall volume declined slightly. Data leaks and access sales remained flat, while ransomware publications fell from 20 to 17.
 
 ## Country evolution
 
@@ -64,6 +64,6 @@ The monthly total remained close, but the distribution changed. Egypt and South 
 
 ## Conclusion
 
-May recorded 57 incidents against 60 in April. The decrease came from ransomware, while leaks and access sales increased by one record.
+May recorded 57 incidents against 60 in April. The decrease came from ransomware, while leaks and access sales remained flat.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

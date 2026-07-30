@@ -1,0 +1,1695 @@
+{
+  "type": "bundle",
+  "id": "bundle--b3e34666-2bb2-5bfd-bc5c-54a98df397cc",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "ransomhub",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5f820cf7-5271-5674-8706-8f8ccd2703e5",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "DAL Group",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Sudan. Sector: Food & Beverages / Agribusiness.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Soudan. Secteur : Agroalimentaire / Boissons.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "sudan",
+        "manufacturing"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://dalgroup.com"
+        }
+      ],
+      "x_afrintel_country": "Sudan",
+      "x_afrintel_sector_raw": "Food & Beverages / Agribusiness",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "manufacturing"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--11c4692a-de56-5dda-a7bc-18c911e780bc",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 01: DAL Group",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting DAL Group in Sudan on December 3, 2024. The source actor is listed as ransomhub. Status: Claimed & Data Leak. Sector: Food & Beverages / Agribusiness. Source summary: DAL Group is Sudan's largest private conglomerate, operating across agribusiness, industry, agriculture, distribution, and beverages sectors.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant DAL Group en Soudan, à la date du 3 Décembre 2024. L'acteur source est indiqué comme ransomhub. Statut : Revendication & divulgation des données. Secteur : Agroalimentaire / Boissons. Résumé de la source : DAL Group est le plus grand conglomérat privé du Soudan, opérant dans les secteurs agroalimentaire, industriel, agricole, de la distribution et des boissons.",
+      "first_seen": "2024-12-03T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "sudan",
+        "manufacturing"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://dalgroup.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Sudan",
+      "x_afrintel_sector_raw": "Food & Beverages / Agribusiness",
+      "x_afrintel_actor": "ransomhub",
+      "x_afrintel_date_display": "December 3, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bbffe412-93e4-5082-9a80-6c4bc59b5400",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--11c4692a-de56-5dda-a7bc-18c911e780bc",
+      "target_ref": "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9e1859cc-4d1e-52ce-8806-050f3e78226b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+      "target_ref": "identity--5f820cf7-5271-5674-8706-8f8ccd2703e5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cb844afb-b82d-5128-9131-0c6f4ed1f1e5",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--11c4692a-de56-5dda-a7bc-18c911e780bc",
+      "target_ref": "identity--5f820cf7-5271-5674-8706-8f8ccd2703e5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--4a6d5104-8616-50e2-aac2-a11e9d695cc0",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "apt73/bashe",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--a3c2a455-db98-5fec-87b3-3066d952b142",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Bankily",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mauritania. Sector: Mobile Banking / Financial Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Mauritanie. Secteur : Mobile banking / Services financiers.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "mauritania",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://bankily.mr"
+        }
+      ],
+      "x_afrintel_country": "Mauritania",
+      "x_afrintel_sector_raw": "Mobile Banking / Financial Services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "financial-services"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--4a427b33-cd2e-5e48-931c-f353db756c08",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 02: Bankily",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Bankily in Mauritania on December 9, 2024. The source actor is listed as apt73/bashe. Status: Claimed & Data Leak. Sector: Mobile Banking / Financial Services. Source summary: Bankily is a Mauritanian mobile banking platform operated by Banque Populaire de Mauritanie (BPM), providing digital financial services and mobile payment solutions.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Bankily en Mauritanie, à la date du 9 Décembre 2024. L'acteur source est indiqué comme apt73/bashe. Statut : Revendication & divulgation des données. Secteur : Mobile banking / Services financiers. Résumé de la source : Bankily est une plateforme de mobile banking mauritanienne exploitée par la Banque Populaire de Mauritanie (BPM), fournissant des services financiers numériques et de paiement mobile.",
+      "first_seen": "2024-12-09T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "mauritania",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://bankily.mr"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Mauritania",
+      "x_afrintel_sector_raw": "Mobile Banking / Financial Services",
+      "x_afrintel_actor": "apt73/bashe",
+      "x_afrintel_date_display": "December 9, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--32ad27d0-85bc-59f9-84eb-68f8c9463d90",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--4a427b33-cd2e-5e48-931c-f353db756c08",
+      "target_ref": "threat-actor--4a6d5104-8616-50e2-aac2-a11e9d695cc0",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f85d7361-312e-5dff-94a3-7485f4b7ee3d",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--4a6d5104-8616-50e2-aac2-a11e9d695cc0",
+      "target_ref": "identity--a3c2a455-db98-5fec-87b3-3066d952b142",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b80e5e5b-b5d6-5b6c-97b1-15f50a3edb6f",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--4a427b33-cd2e-5e48-931c-f353db756c08",
+      "target_ref": "identity--a3c2a455-db98-5fec-87b3-3066d952b142",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--730ef542-2262-50ef-8991-2ca3a0169e36",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "hunters",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8a62f76d-87b9-5724-b689-077455dd527b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Telecom Namibia",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Namibia. Sector: Telecommunications.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Namibie. Secteur : Télécommunications.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "namibia",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://telecom.na"
+        }
+      ],
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_sector_raw": "Telecommunications",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "telecommunications"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--0bc104ac-d7fe-5125-b96b-adbc1342f7be",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 03: Telecom Namibia",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Telecom Namibia in Namibia on December 10, 2024. The source actor is listed as hunters. Status: Claimed & Data Leak. Sector: Telecommunications. Source summary: Telecom Namibia is the national incumbent telecommunications operator providing voice, broadband, data connectivity, and infrastructure services in Namibia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Telecom Namibia en Namibie, à la date du 10 Décembre 2024. L'acteur source est indiqué comme hunters. Statut : Revendication & divulgation des données. Secteur : Télécommunications. Résumé de la source : Telecom Namibia est l'opérateur national historique de télécommunications fournissant des services de voix, de haut débit, de connectivité de données et d'infrastructure en Namibie.",
+      "first_seen": "2024-12-10T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "namibia",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://telecom.na"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Namibia",
+      "x_afrintel_sector_raw": "Telecommunications",
+      "x_afrintel_actor": "hunters",
+      "x_afrintel_date_display": "December 10, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d90ab0db-66d4-5454-bab9-83ff17b2068b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--0bc104ac-d7fe-5125-b96b-adbc1342f7be",
+      "target_ref": "threat-actor--730ef542-2262-50ef-8991-2ca3a0169e36",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--089294f0-3c7d-5f48-8af4-1fc80b3c3b58",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--730ef542-2262-50ef-8991-2ca3a0169e36",
+      "target_ref": "identity--8a62f76d-87b9-5724-b689-077455dd527b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--400387cb-6385-5f1a-a48a-b9ed93b3bb8b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--0bc104ac-d7fe-5125-b96b-adbc1342f7be",
+      "target_ref": "identity--8a62f76d-87b9-5724-b689-077455dd527b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--a508807f-6439-5a64-a4c5-462c76768b40",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "moneymessage",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8eaad3ea-6381-5f32-b69b-ada4bbd80682",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Kazyon",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Retail / Hard-discount.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Grande distribution / Hard-discount.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "egypt",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://kazyon.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "Retail / Hard-discount",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "retail"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--b9fb8ecf-97d2-5b42-bb79-a1608524ab52",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 04: Kazyon",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Kazyon in Egypt on December 13, 2024. The source actor is listed as moneymessage. Status: Claimed & Data Leak. Sector: Retail / Hard-discount. Source summary: Kazyon is a major Egyptian hard-discount supermarket chain offering food, household, and consumer products through a wide store network.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Kazyon en Égypte, à la date du 13 Décembre 2024. L'acteur source est indiqué comme moneymessage. Statut : Revendication & divulgation des données. Secteur : Grande distribution / Hard-discount. Résumé de la source : Kazyon est une grande chaîne égyptienne de supermarchés hard-discount proposant des produits alimentaires, ménagers et de consommation via un large réseau de magasins.",
+      "first_seen": "2024-12-13T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "egypt",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://kazyon.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 4,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_sector_raw": "Retail / Hard-discount",
+      "x_afrintel_actor": "moneymessage",
+      "x_afrintel_date_display": "December 13, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--aa22a68c-8ce6-56e0-a5c5-801a50ab9762",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b9fb8ecf-97d2-5b42-bb79-a1608524ab52",
+      "target_ref": "threat-actor--a508807f-6439-5a64-a4c5-462c76768b40",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e0f851d8-f7a4-54da-a0aa-d32bf86bf7be",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--a508807f-6439-5a64-a4c5-462c76768b40",
+      "target_ref": "identity--8eaad3ea-6381-5f32-b69b-ada4bbd80682",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--767282af-b643-51f7-8c0b-2871a1123262",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--b9fb8ecf-97d2-5b42-bb79-a1608524ab52",
+      "target_ref": "identity--8eaad3ea-6381-5f32-b69b-ada4bbd80682",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "killsec",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--7be1895a-0c71-5b06-bb9c-cb4e829697e2",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Tumeny Payments Limited",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Zambia. Sector: Fintech / Payment Infrastructure.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Zambie. Secteur : Fintech / Infrastructures de paiement.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "zambia",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tumenypay.com"
+        }
+      ],
+      "x_afrintel_country": "Zambia",
+      "x_afrintel_sector_raw": "Fintech / Payment Infrastructure",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "financial-services"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--33f48b9d-8fc2-5214-9b04-a6a22cb1bfdf",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 05: Tumeny Payments Limited",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Tumeny Payments Limited in Zambia on December 15, 2024. The source actor is listed as killsec. Status: Claimed & Data Leak. Sector: Fintech / Payment Infrastructure. Source summary: Tumeny Payments Limited is a Zambian fintech company providing digital payment services, money transfer, and payment infrastructure solutions.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Tumeny Payments Limited en Zambie, à la date du 15 Décembre 2024. L'acteur source est indiqué comme killsec. Statut : Revendication & divulgation des données. Secteur : Fintech / Infrastructures de paiement. Résumé de la source : Tumeny Payments Limited est une fintech zambienne fournissant des services de paiement numérique, transfert d'argent et infrastructures de paiement.",
+      "first_seen": "2024-12-15T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "zambia",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tumenypay.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 5,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Zambia",
+      "x_afrintel_sector_raw": "Fintech / Payment Infrastructure",
+      "x_afrintel_actor": "killsec",
+      "x_afrintel_date_display": "December 15, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--bc6c8258-d03a-57ed-a1f0-858f092f5f04",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--33f48b9d-8fc2-5214-9b04-a6a22cb1bfdf",
+      "target_ref": "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--36dd210e-c47c-52a4-9def-e14c8a3a3e3b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+      "target_ref": "identity--7be1895a-0c71-5b06-bb9c-cb4e829697e2",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6794ab43-0ba9-5b35-b1e0-7b76e6639c61",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--33f48b9d-8fc2-5214-9b04-a6a22cb1bfdf",
+      "target_ref": "identity--7be1895a-0c71-5b06-bb9c-cb4e829697e2",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d2789eeb-9a6b-5781-8a82-25fe022f1fd6",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Water Utilities Corporation (WUC)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Botswana. Sector: Water Distribution / Public Utilities.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Botswana. Secteur : Distribution d'eau / Service public.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "botswana",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://wuc.bw"
+        }
+      ],
+      "x_afrintel_country": "Botswana",
+      "x_afrintel_sector_raw": "Water Distribution / Public Utilities",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--744003e6-9c18-525d-b1de-084de6ea08fb",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 06: Water Utilities Corporation (WUC)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Water Utilities Corporation (WUC) in Botswana on December 20, 2024. The source actor is listed as killsec. Status: Claimed & Data Leak. Sector: Water Distribution / Public Utilities. Source summary: Water Utilities Corporation (WUC) is the Botswana public utility responsible for water supply, distribution, and water services management across the country.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Water Utilities Corporation (WUC) en Botswana, à la date du 20 Décembre 2024. L'acteur source est indiqué comme killsec. Statut : Revendication & divulgation des données. Secteur : Distribution d'eau / Service public. Résumé de la source : Water Utilities Corporation (WUC) est l'entreprise publique botswanaise chargée de l'approvisionnement, de la distribution et de la gestion des services d'eau.",
+      "first_seen": "2024-12-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "botswana",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://wuc.bw"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Botswana",
+      "x_afrintel_sector_raw": "Water Distribution / Public Utilities",
+      "x_afrintel_actor": "killsec",
+      "x_afrintel_date_display": "December 20, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--71da2a4f-ea84-56e0-9517-56297b59de56",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--744003e6-9c18-525d-b1de-084de6ea08fb",
+      "target_ref": "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4d2fccf5-ffdd-531c-8b25-c5e95c8ed7dd",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+      "target_ref": "identity--d2789eeb-9a6b-5781-8a82-25fe022f1fd6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a2d3ed05-7310-5d79-9fa8-6e500b4f71e8",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--744003e6-9c18-525d-b1de-084de6ea08fb",
+      "target_ref": "identity--d2789eeb-9a6b-5781-8a82-25fe022f1fd6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--cd6df46e-f822-5b12-9b22-dbc291aca2f5",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Groupe SETCAR",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Automotive / Industrial Vehicles.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Automobile / Véhicules industriels.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "tunisia",
+        "automotive"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://groupe-setcar.com.tn"
+        }
+      ],
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_sector_raw": "Automotive / Industrial Vehicles",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "automotive"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--8e26fd7e-85de-542c-8ae4-be824c4109a3",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 07: Groupe SETCAR",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Groupe SETCAR in Tunisia on December 21, 2024. The source actor is listed as ransomhub. Status: Claimed & Data Leak. Sector: Automotive / Industrial Vehicles. Source summary: Groupe SETCAR is a Tunisian industrial group specialised in buses, coaches, industrial vehicles, automotive activities, and transport solutions.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Groupe SETCAR en Tunisie, à la date du 21 Décembre 2024. L'acteur source est indiqué comme ransomhub. Statut : Revendication & divulgation des données. Secteur : Automobile / Véhicules industriels. Résumé de la source : Le Groupe SETCAR est un groupe industriel tunisien spécialisé dans les bus, autocars, véhicules industriels, activités automobiles et solutions de transport associées.",
+      "first_seen": "2024-12-21T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "tunisia",
+        "automotive"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://groupe-setcar.com.tn"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 7,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Tunisia",
+      "x_afrintel_sector_raw": "Automotive / Industrial Vehicles",
+      "x_afrintel_actor": "ransomhub",
+      "x_afrintel_date_display": "December 21, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--34b1e565-2fe8-5ccc-b53e-149f43d3b8dc",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--8e26fd7e-85de-542c-8ae4-be824c4109a3",
+      "target_ref": "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3d962e13-83d9-567b-be74-78abfbab108b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+      "target_ref": "identity--cd6df46e-f822-5b12-9b22-dbc291aca2f5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1732229b-a952-592c-a0dd-7af75401fb08",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--8e26fd7e-85de-542c-8ae4-be824c4109a3",
+      "target_ref": "identity--cd6df46e-f822-5b12-9b22-dbc291aca2f5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--2030809b-0cb8-50a9-8f06-7b80126fefc7",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "sarcoma",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e83dddce-7f4b-53e5-a488-bbccb35010f1",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Baker Tilly Morrison Murray",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Audit / Accounting / Consulting.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Audit / Comptabilité / Conseil.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "commercial"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://bakertillymm.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Audit / Accounting / Consulting",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "commercial"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--60954362-f9cd-53e7-8c12-cff71ebe7d82",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 08: Baker Tilly Morrison Murray",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Baker Tilly Morrison Murray in South Africa on December 24, 2024. The source actor is listed as sarcoma. Status: Claimed & Data Leak. Sector: Audit / Accounting / Consulting. Source summary: Baker Tilly Morrison Murray is a South African professional services firm providing accounting, audit, tax, and advisory services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Baker Tilly Morrison Murray en Afrique du Sud, à la date du 24 Décembre 2024. L'acteur source est indiqué comme sarcoma. Statut : Revendication & divulgation des données. Secteur : Audit / Comptabilité / Conseil. Résumé de la source : Baker Tilly Morrison Murray est un cabinet sud-africain de services professionnels fournissant des services de comptabilité, audit, fiscalité et conseil.",
+      "first_seen": "2024-12-24T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "commercial"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://bakertillymm.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 8,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Audit / Accounting / Consulting",
+      "x_afrintel_actor": "sarcoma",
+      "x_afrintel_date_display": "December 24, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8b8f5420-f5a6-568d-8f86-82ce78b65a79",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--60954362-f9cd-53e7-8c12-cff71ebe7d82",
+      "target_ref": "threat-actor--2030809b-0cb8-50a9-8f06-7b80126fefc7",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2da4758a-1983-5aa6-abe8-2ac5e1a3ff38",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2030809b-0cb8-50a9-8f06-7b80126fefc7",
+      "target_ref": "identity--e83dddce-7f4b-53e5-a488-bbccb35010f1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--206e9e20-c78a-530c-8fd9-fe39a1d40242",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--60954362-f9cd-53e7-8c12-cff71ebe7d82",
+      "target_ref": "identity--e83dddce-7f4b-53e5-a488-bbccb35010f1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--dcc54536-3e13-5890-a89e-569e2e2bca32",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "ransomhouse",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8fb1e407-65d8-5793-830f-5e55183096c0",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Cell C",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Telecommunications.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Télécommunications.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cellc.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Telecommunications",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "telecommunications"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--b205b3fc-48a3-5d14-87e9-9423e219d8fa",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 09: Cell C",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Cell C in South Africa on December 28, 2024. The source actor is listed as ransomhouse. Status: Claimed & Data Leak. Sector: Telecommunications. Source summary: Cell C is the fourth-largest mobile network operator in South Africa, serving over 13 million customers (direct and MVNO). The company operates on an asset-light business model, leveraging roaming infrastructure from MTN and Vodacom, and is majority-owned by Blue Label Telecoms.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Cell C en Afrique du Sud, à la date du 28 Décembre 2024. L'acteur source est indiqué comme ransomhouse. Statut : Revendication & divulgation des données. Secteur : Télécommunications. Résumé de la source : Cell C est un opérateur mobile sud-africain fournissant des services de voix, données, messagerie et télécommunications mobiles.",
+      "first_seen": "2024-12-28T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa",
+        "telecommunications"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cellc.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 9,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Telecommunications",
+      "x_afrintel_actor": "ransomhouse",
+      "x_afrintel_date_display": "December 28, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--abaf5922-ab13-5326-bf16-d17b7a1bda2b",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--b205b3fc-48a3-5d14-87e9-9423e219d8fa",
+      "target_ref": "threat-actor--dcc54536-3e13-5890-a89e-569e2e2bca32",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b53dd2ae-1a6b-57a1-8df3-6de0f9c83926",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--dcc54536-3e13-5890-a89e-569e2e2bca32",
+      "target_ref": "identity--8fb1e407-65d8-5793-830f-5e55183096c0",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3d2543d7-ddfb-5143-acf0-12b7ab88689d",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--b205b3fc-48a3-5d14-87e9-9423e219d8fa",
+      "target_ref": "identity--8fb1e407-65d8-5793-830f-5e55183096c0",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--88b0895c-f6dd-5aed-bae9-a9ec505da4c1",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "arcusmedia",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 12-december 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "12-december"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--bc4cef29-8d88-52f0-aed0-a20e33a7cc1a",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "WOSAC",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tanzania. Sector: Maritime Transport / Shipping Agency.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tanzanie. Secteur : Transport maritime / Agence maritime.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "tanzania",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://wosac.co.tz"
+        }
+      ],
+      "x_afrintel_country": "Tanzania",
+      "x_afrintel_sector_raw": "Maritime Transport / Shipping Agency",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--9e7565af-fb55-5e3a-be6a-244093ab9528",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL December 2024 incident 10: WOSAC",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting WOSAC in Tanzania on December 29, 2024. The source actor is listed as arcusmedia. Status: Claimed & Data Leak. Sector: Maritime Transport / Shipping Agency. Source summary: WOSAC is a Tanzanian maritime transport and shipping agency company providing freight, shipping, and associated logistics services. ## ✍🏿 Author Adama ASSIONGBON SOC & Cyber Threat Intelligence Consultant LinkedIn profile\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant WOSAC en Tanzanie, à la date du 29 Décembre 2024. L'acteur source est indiqué comme arcusmedia. Statut : Revendication & divulgation des données. Secteur : Transport maritime / Agence maritime. Résumé de la source : WOSAC est une entreprise tanzanienne de transport maritime et d'agence maritime fournissant des services de fret, shipping et logistique associée. ## ✍🏿 Auteur Adama ASSIONGBON Consultant SOC & Cyber Threat Intelligence Profil LinkedIn",
+      "first_seen": "2024-12-29T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "tanzania",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://wosac.co.tz"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 10,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Tanzania",
+      "x_afrintel_sector_raw": "Maritime Transport / Shipping Agency",
+      "x_afrintel_actor": "arcusmedia",
+      "x_afrintel_date_display": "December 29, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e7c3542b-c662-5059-b477-79143566c8bc",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--9e7565af-fb55-5e3a-be6a-244093ab9528",
+      "target_ref": "threat-actor--88b0895c-f6dd-5aed-bae9-a9ec505da4c1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--64c611b1-bcd4-5b0c-bf07-96b5c9f873da",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--88b0895c-f6dd-5aed-bae9-a9ec505da4c1",
+      "target_ref": "identity--bc4cef29-8d88-52f0-aed0-a20e33a7cc1a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c0aa807e-f3cc-5cb6-8e5a-59d11bf5a188",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--9e7565af-fb55-5e3a-be6a-244093ab9528",
+      "target_ref": "identity--bc4cef29-8d88-52f0-aed0-a20e33a7cc1a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--97a58352-6821-5436-a628-6c6ef57db1d0",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "AFRINTEL monthly CTI report - December 2024",
+      "description": "# CTI Report - December 2024: 10 victims across 9 countries: Cell C and critical infrastructure targeted at year-end\n\n### 1. Executive summary\n\nDecember 2024 closes the year with **10 documented ransomware victims** across 9 countries. The month marks two critical infrastructure attacks: **Cell C** (South Africa's 4th largest MNO, 13M+ customers) claimed by RansomHouse, and **Water Utilities Corporation Botswana** (national water supply) hit by KillSec. The financial sector also takes multiple hits: Bankily (Mauritania mobile banking) and Tumeny Payments (Zambia fintech) are both claimed. DAL Group (Sudan's largest private conglomerate) and Telecom Namibia (national incumbent operator) round out a month of high-impact targets.\n\n**Key figures:**\n- 🔹 **10 victims** identified\n- 🔹 **8 active groups**: RansomHub (2), KillSec (2), RansomHouse (1), Hunters (1), MoneyMessage (1), apt73/bashe (1), Sarcoma (1), ArcusMedia (1)\n- 🔹 **Countries affected**: South Africa (2), Tanzania (1), Sudan (1), Mauritania (1), Namibia (1), Egypt (1), Zambia (1), Botswana (1), Tunisia (1)\n- 🔹 **Sectors**: Telecommunications (2), Mobile Banking / Fintech (2), Food & Agribusiness, Water / Public Utilities, Retail, Audit / Consulting, Automotive / Industrial, Maritime\n\n---\n\n### 2. Attack timeline\n\n| Date | Victim | Country | Ransomware group |\n|------|--------|---------|-----------------|\n| December 3 | DAL Group | Sudan | RansomHub |\n| December 9 | Bankily | Mauritania | apt73/bashe |\n| December 10 | Telecom Namibia | Namibia | Hunters |\n| December 13 | Kazyon | Egypt | MoneyMessage |\n| December 15 | Tumeny Payments Limited | Zambia | KillSec |\n| December 20 | Water Utilities Corporation (WUC) | Botswana | KillSec |\n| December 21 | Groupe SETCAR | Tunisia | RansomHub |\n| December 24 | Baker Tilly Morrison Murray | South Africa | Sarcoma |\n| December 28 | Cell C | South Africa | RansomHouse |\n| December 29 | WOSAC | Tanzania | ArcusMedia |\n\n---\n\n### 3. Victim analysis\n\n#### 3.1 By country\n\n| Country | Number of attacks |\n|---------|-----------------|\n| South Africa | 2 |\n| Tanzania | 1 |\n| Sudan | 1 |\n| Mauritania | 1 |\n| Namibia | 1 |\n| Egypt | 1 |\n| Zambia | 1 |\n| Botswana | 1 |\n| Tunisia | 1 |\n\n#### 3.2 By sector\n\n| Sector | Count |\n|--------|-------|\n| Telecommunications | 2 |\n| Mobile Banking / Fintech | 2 |\n| Food & Agribusiness | 1 |\n| Water / Public Utilities | 1 |\n| Retail / Hard-discount | 1 |\n| Audit / Accounting / Consulting | 1 |\n| Automotive / Industrial Vehicles | 1 |\n| Maritime / Shipping | 1 |\n\n#### 3.3 Ransomware groups\n\n| Ransomware group | Number of attacks |\n|-----------------|-----------------|\n| RansomHub | 2 |\n| KillSec | 2 |\n| RansomHouse | 1 |\n| Hunters | 1 |\n| MoneyMessage | 1 |\n| apt73/bashe | 1 |\n| Sarcoma | 1 |\n| ArcusMedia | 1 |\n\n---\n\n### 4. Key observations\n\n- **Cell C (South Africa)**: RansomHouse's claim against the country's 4th largest MNO, serving 13 million+ customers, is December's most impactful attack. Potential exposure of subscriber PII, usage records, and billing data at scale.\n- **Water Utilities Corporation Botswana**: KillSec claims the national water utility, a public infrastructure operator. Any disruption to operational systems could affect water supply to urban and rural populations.\n- **Double telecom hit**: Telecom Namibia and Cell C both claimed in December, signalling a coordinated targeting pattern against African telecoms at year-end.\n- **Financial sector cluster**: Bankily (mobile banking, Mauritania) and Tumeny Payments (fintech, Zambia) both targeted. Digital payment infrastructure is a growing ransomware target on the continent.\n- **DAL Group Sudan**: RansomHub claims Sudan's largest private conglomerate, operating across food, agribusiness, and distribution, during an already acute humanitarian crisis in the country.\n- **apt73/bashe first notable claim**: the group, tracked as an active threat actor, makes its most prominent African claim yet with Bankily, a platform used by thousands for daily financial transactions.\n- **Year-end pattern**: 10 victims in December maintains a high baseline, consistent with prior years where year-end operational loosening expands the attack surface.\n\n---\n\n**Full-year 2024 total: 86 documented victims across 30+ countries.**\n\n### 5. Recommendations\n\n| Domain | Recommended action |\n|--------|--------------------|\n| Telecommunications | Harden billing and subscriber management systems, enforce MFA for internal admin portals, prepare crisis communication plans for data breach scenarios. |\n| Water / Public Utilities | Airgap OT/SCADA networks from corporate IT, audit KillSec TTPs, ensure operational continuity plans are documented and tested. |\n| Mobile Banking / Fintech | Encrypt transaction databases, monitor for bulk account data exfiltration, notify regulators proactively in case of breach. |\n| Conglomerates | Segment subsidiaries' networks to prevent lateral movement, conduct cross-subsidiary access reviews. |\n| All organizations | Year-end skeleton staffing = reduced incident response capacity, ensure on-call rotations are active and detection thresholds are not lowered. |\n\n---\n\n*Report generated from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*",
+      "lang": "en",
+      "published": "2024-12-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "en",
+        "december-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/README.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+        "threat-actor--4a6d5104-8616-50e2-aac2-a11e9d695cc0",
+        "threat-actor--730ef542-2262-50ef-8991-2ca3a0169e36",
+        "threat-actor--a508807f-6439-5a64-a4c5-462c76768b40",
+        "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+        "threat-actor--2030809b-0cb8-50a9-8f06-7b80126fefc7",
+        "threat-actor--dcc54536-3e13-5890-a89e-569e2e2bca32",
+        "threat-actor--88b0895c-f6dd-5aed-bae9-a9ec505da4c1",
+        "identity--5f820cf7-5271-5674-8706-8f8ccd2703e5",
+        "identity--a3c2a455-db98-5fec-87b3-3066d952b142",
+        "identity--8a62f76d-87b9-5724-b689-077455dd527b",
+        "identity--8eaad3ea-6381-5f32-b69b-ada4bbd80682",
+        "identity--7be1895a-0c71-5b06-bb9c-cb4e829697e2",
+        "identity--d2789eeb-9a6b-5781-8a82-25fe022f1fd6",
+        "identity--cd6df46e-f822-5b12-9b22-dbc291aca2f5",
+        "identity--e83dddce-7f4b-53e5-a488-bbccb35010f1",
+        "identity--8fb1e407-65d8-5793-830f-5e55183096c0",
+        "identity--bc4cef29-8d88-52f0-aed0-a20e33a7cc1a",
+        "incident--11c4692a-de56-5dda-a7bc-18c911e780bc",
+        "incident--4a427b33-cd2e-5e48-931c-f353db756c08",
+        "incident--0bc104ac-d7fe-5125-b96b-adbc1342f7be",
+        "incident--b9fb8ecf-97d2-5b42-bb79-a1608524ab52",
+        "incident--33f48b9d-8fc2-5214-9b04-a6a22cb1bfdf",
+        "incident--744003e6-9c18-525d-b1de-084de6ea08fb",
+        "incident--8e26fd7e-85de-542c-8ae4-be824c4109a3",
+        "incident--60954362-f9cd-53e7-8c12-cff71ebe7d82",
+        "incident--b205b3fc-48a3-5d14-87e9-9423e219d8fa",
+        "incident--9e7565af-fb55-5e3a-be6a-244093ab9528"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/README.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 10,
+      "x_afrintel_ransomware_count": 10,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 10
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--5e7e3ee6-92a8-5ec5-8a8e-8c041c499dac",
+      "created": "2026-07-30T11:00:04Z",
+      "modified": "2026-07-30T11:00:04Z",
+      "name": "Rapport CTI mensuel AFRINTEL - Décembre 2024",
+      "description": "# Rapport CTI - Décembre 2024 : 10 victimes dans 9 pays: Cell C et infrastructures critiques ciblées en fin d'année\n\n### 1. Résumé exécutif\n\nDécembre 2024 clôture l'année avec **10 victimes** documentées d'attaques par ransomware dans 9 pays. Le mois enregistre deux attaques contre des infrastructures critiques majeures : **Cell C** (4e opérateur de téléphonie mobile d'Afrique du Sud, 13 millions de clients) revendiqué par RansomHouse, et **Water Utilities Corporation Botswana** (distribution nationale d'eau) frappé par KillSec. Le secteur financier est également touché : Bankily (mobile banking en Mauritanie) et Tumeny Payments (fintech en Zambie) sont toutes deux revendiquées. DAL Group (le plus grand conglomérat privé du Soudan) et Telecom Namibia (opérateur national incumbent) complètent un mois de cibles à fort impact.\n\n**Chiffres clés :**\n- 🔹 **10 victimes** identifiées\n- 🔹 **8 groupes actifs** : RansomHub (2), KillSec (2), RansomHouse (1), Hunters (1), MoneyMessage (1), apt73/bashe (1), Sarcoma (1), ArcusMedia (1)\n- 🔹 **Pays touchés** : Afrique du Sud (2), Tanzanie (1), Soudan (1), Mauritanie (1), Namibie (1), Égypte (1), Zambie (1), Botswana (1), Tunisie (1)\n- 🔹 **Secteurs** : Télécommunications (2), Banque mobile / Fintech (2), Agroalimentaire, Eau / Services publics, Distribution, Audit / Conseil, Automobile / Industrie, Maritime\n\n---\n\n### 2. Chronologie des attaques\n\n| Date | Victime | Pays | Groupe ransomware |\n|------|---------|------|-------------------|\n| 3 décembre | DAL Group | Soudan | RansomHub |\n| 9 décembre | Bankily | Mauritanie | apt73/bashe |\n| 10 décembre | Telecom Namibia | Namibie | Hunters |\n| 13 décembre | Kazyon | Égypte | MoneyMessage |\n| 15 décembre | Tumeny Payments Limited | Zambie | KillSec |\n| 20 décembre | Water Utilities Corporation (WUC) | Botswana | KillSec |\n| 21 décembre | Groupe SETCAR | Tunisie | RansomHub |\n| 24 décembre | Baker Tilly Morrison Murray | Afrique du Sud | Sarcoma |\n| 28 décembre | Cell C | Afrique du Sud | RansomHouse |\n| 29 décembre | WOSAC | Tanzanie | ArcusMedia |\n\n---\n\n### 3. Analyse des victimes\n\n#### 3.1 Par pays\n\n| Pays | Nombre d'attaques |\n|------|-----------------|\n| Afrique du Sud | 2 |\n| Tanzanie | 1 |\n| Soudan | 1 |\n| Mauritanie | 1 |\n| Namibie | 1 |\n| Égypte | 1 |\n| Zambie | 1 |\n| Botswana | 1 |\n| Tunisie | 1 |\n\n#### 3.2 Par secteur\n\n| Secteur | Nombre |\n|---------|--------|\n| Télécommunications | 2 |\n| Banque mobile / Fintech | 2 |\n| Agroalimentaire / Conglomérat | 1 |\n| Eau / Services publics | 1 |\n| Distribution / Grande distribution | 1 |\n| Audit / Comptabilité / Conseil | 1 |\n| Automobile / Véhicules industriels | 1 |\n| Transport maritime | 1 |\n\n#### 3.3 Groupes ransomware\n\n| Groupe ransomware | Nombre d'attaques |\n|-----------------|-----------------|\n| RansomHub | 2 |\n| KillSec | 2 |\n| RansomHouse | 1 |\n| Hunters | 1 |\n| MoneyMessage | 1 |\n| apt73/bashe | 1 |\n| Sarcoma | 1 |\n| ArcusMedia | 1 |\n\n---\n\n### 4. Points d'attention\n\n- **Cell C (Afrique du Sud)** : la revendication de RansomHouse contre le 4e opérateur du pays, 13 millions de clients, est l'attaque la plus impactante de décembre. Exposition potentielle des données personnelles abonnés, enregistrements d'usage et données de facturation à grande échelle.\n- **Water Utilities Corporation Botswana** : KillSec revendique la régie nationale de l'eau, un opérateur d'infrastructure publique. Toute perturbation des systèmes opérationnels pourrait affecter l'approvisionnement en eau des populations urbaines et rurales.\n- **Double attaque télécom** : Telecom Namibia et Cell C tous deux revendiqués en décembre, signalant un ciblage coordonné des télécoms africains en fin d'année.\n- **Cluster fintech** : Bankily (mobile banking, Mauritanie) et Tumeny Payments (fintech, Zambie) tous deux ciblés. L'infrastructure de paiement numérique est une cible ransomware en forte croissance sur le continent.\n- **DAL Group Soudan** : RansomHub revendique le plus grand conglomérat privé du Soudan, actif dans l'alimentaire, l'agroalimentaire et la distribution, dans un contexte de crise humanitaire déjà aiguë.\n- **Première revendication notable d'apt73/bashe** : le groupe, suivi comme acteur actif, effectue sa revendication africaine la plus marquante avec Bankily, une plateforme utilisée quotidiennement par des milliers de personnes.\n- **Dynamique de fin d'année** : 10 victimes en décembre maintient un niveau élevé, cohérent avec les années précédentes où le relâchement opérationnel de fin d'année élargit la surface d'attaque.\n\n---\n\n**Total annuel 2024 : 86 victimes documentées dans plus de 30 pays.**\n\n### 5. Recommandations\n\n| Domaine | Action recommandée |\n|---------|--------------------|\n| Télécommunications | Durcir les systèmes de facturation et de gestion abonnés, enforcer le MFA pour les portails d'administration interne, préparer des plans de communication de crise pour les scénarios de violation de données. |\n| Eau / Services publics | Isoler les réseaux OT/SCADA du SI d'entreprise, auditer les TTPs de KillSec, s'assurer que les plans de continuité opérationnelle sont documentés et testés. |\n| Banque mobile / Fintech | Chiffrer les bases de données transactionnelles, surveiller les exfiltrations massives de données de comptes, notifier les régulateurs de manière proactive en cas de violation. |\n| Conglomérats | Segmenter les réseaux des filiales pour prévenir les mouvements latéraux, conduire des audits d'accès inter-filiales. |\n| Toutes organisations | Le personnel réduit en fin d'année = capacité de réponse aux incidents diminuée, s'assurer que les rotations d'astreinte sont actives et que les seuils de détection ne sont pas abaissés. |\n\n---\n\n*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*",
+      "lang": "fr",
+      "published": "2024-12-29T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "fr",
+        "december-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "cti-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/12-december/README_FR.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--9e317dc7-a2dd-5f7e-a723-5d68ea0e67de",
+        "threat-actor--4a6d5104-8616-50e2-aac2-a11e9d695cc0",
+        "threat-actor--730ef542-2262-50ef-8991-2ca3a0169e36",
+        "threat-actor--a508807f-6439-5a64-a4c5-462c76768b40",
+        "threat-actor--11df3d75-3c55-58e1-8561-e4a67f1dbb2a",
+        "threat-actor--2030809b-0cb8-50a9-8f06-7b80126fefc7",
+        "threat-actor--dcc54536-3e13-5890-a89e-569e2e2bca32",
+        "threat-actor--88b0895c-f6dd-5aed-bae9-a9ec505da4c1",
+        "identity--5f820cf7-5271-5674-8706-8f8ccd2703e5",
+        "identity--a3c2a455-db98-5fec-87b3-3066d952b142",
+        "identity--8a62f76d-87b9-5724-b689-077455dd527b",
+        "identity--8eaad3ea-6381-5f32-b69b-ada4bbd80682",
+        "identity--7be1895a-0c71-5b06-bb9c-cb4e829697e2",
+        "identity--d2789eeb-9a6b-5781-8a82-25fe022f1fd6",
+        "identity--cd6df46e-f822-5b12-9b22-dbc291aca2f5",
+        "identity--e83dddce-7f4b-53e5-a488-bbccb35010f1",
+        "identity--8fb1e407-65d8-5793-830f-5e55183096c0",
+        "identity--bc4cef29-8d88-52f0-aed0-a20e33a7cc1a",
+        "incident--11c4692a-de56-5dda-a7bc-18c911e780bc",
+        "incident--4a427b33-cd2e-5e48-931c-f353db756c08",
+        "incident--0bc104ac-d7fe-5125-b96b-adbc1342f7be",
+        "incident--b9fb8ecf-97d2-5b42-bb79-a1608524ab52",
+        "incident--33f48b9d-8fc2-5214-9b04-a6a22cb1bfdf",
+        "incident--744003e6-9c18-525d-b1de-084de6ea08fb",
+        "incident--8e26fd7e-85de-542c-8ae4-be824c4109a3",
+        "incident--60954362-f9cd-53e7-8c12-cff71ebe7d82",
+        "incident--b205b3fc-48a3-5d14-87e9-9423e219d8fa",
+        "incident--9e7565af-fb55-5e3a-be6a-244093ab9528"
+      ],
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/12-december/README_FR.md",
+      "x_afrintel_report_kind": "monthly-cti",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 10,
+      "x_afrintel_ransomware_count": 10,
+      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 10
+    }
+  ]
+}

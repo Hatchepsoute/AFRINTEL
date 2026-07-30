@@ -10,10 +10,10 @@
 
 ## 1. Executive summary
 
-May 2026 recorded **57 publicly reported or claimed cyber incidents** across Africa: **16 ransomware listings or disclosures** and **41 data leaks / access sales**. The month included repeated claims affecting Egyptian education entities, publications under the OpSouthAfrica banner, sustained Databasehooligan sales across four countries and three NightSpire victim listings concerning Egyptian organizations.
+May 2026 recorded **57 publicly reported or claimed cyber incidents** across Africa: **17 ransomware listings or disclosures** and **40 data leaks / access sales**. The month included repeated claims affecting Egyptian education entities, publications under the OpSouthAfrica banner, sustained Databasehooligan sales across four countries and three NightSpire victim listings concerning Egyptian organizations.
 
 Key findings:
-- **16 ransomware listings or disclosures (28.1%)** and **41 data leaks / access sales (71.9%)**.
+- **17 ransomware listings or disclosures (29.8%)** and **40 data leaks / access sales (70.2%)**.
 - **12 countries** affected, plus 3 multi-country incidents; **Egypt** (16 incidents), **South Africa** (14), **Morocco** (7), and **Tunisia** (5) account for 73.7% of victims.
 - Claims attributed to **TheGentlemen** concerned organizations in four countries in one month (Egypt, Tunisia, Ghana, Ivory Coast); **NightSpire** claimed three Egyptian targets.
 - **Databasehooligan** was associated with the highest number of dataset sale offers, with 8 organizations across Tunisia, South Africa, Egypt, and Algeria.
@@ -47,8 +47,8 @@ Key findings:
 | Total victims | 57 |
 | Countries affected | 18 (12 direct + 6 via multi-country incidents) |
 | Distinct actors | 31 named sources or actors |
-| Ransomware incidents | 16 (28.1%) |
-| Data leaks / access sales | 41 (71.9%) |
+| Ransomware incidents | 17 (29.8%) |
+| Data leaks / access sales | 40 (70.2%) |
 
 ### Country ranking
 
@@ -92,23 +92,23 @@ pie showData
  "Passport scans (EG/LY)" : 1
 ```
 
-### Ransomware distribution (Total: 16)
+### Ransomware distribution (Total: 17)
 
 | Rank | Country | Incidents | Chart |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇪🇬 Egypt | **7** | ███████ |
 | **2** | 🇳🇬 Nigeria | **3** | ███ |
 | **3** | 🇹🇳 Tunisia | **2** | ██ |
-| **4** | 🇿🇦 South Africa | **1** | █ |
+| **4** | 🇿🇦 South Africa | **2** | ██ |
 | **5** | 🇬🇭 Ghana | **1** | █ |
 | **6** | 🇸🇳 Senegal | **1** | █ |
 | **7** | 🇨🇮 Ivory Coast | **1** | █ |
 
-### Data leaks / access sales distribution (Total: 41)
+### Data leaks / access sales distribution (Total: 40)
 
 | Rank | Country | Incidents | Chart |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇿🇦 South Africa | **13** | █████████████ |
+| **1** | 🇿🇦 South Africa | **12** | ████████████ |
 | **2** | 🇪🇬 Egypt | **9** | █████████ |
 | **3** | 🇲🇦 Morocco | **7** | ███████ |
 | **4** | 🇹🇳 Tunisia | **3** | ███ |
@@ -125,7 +125,7 @@ pie showData
 | Country | Ransomware | Data Leaks | Side-by-side distribution |
 | :--- | :---: | :---: | :--- |
 | 🇪🇬 Egypt | **7** | **9** | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 South Africa | **1** | **13** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 South Africa | **2** | **12** | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇲🇦 Morocco | **0** | **7** | 🟦🟦🟦🟦🟦🟦🟦 |
 | 🇹🇳 Tunisia | **2** | **3** | 🟧🟧 🟦🟦🟦 |
 | 🇳🇬 Nigeria | **3** | **0** | 🟧🟧🟧 |
@@ -139,13 +139,13 @@ pie showData
 | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | 🟦 |
 | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | 🟦 |
 | 🇪🇬🇱🇾 Passport scans | **0** | **1** | 🟦 |
-| **Total (57)** | **16** | **41** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+| **Total (57)** | **17** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
 ```mermaid
 pie showData
  title Ransomware vs Data Leaks - May 2026
- "Data leaks and access sales" : 41
- "Ransomware" : 16
+ "Data leaks and access sales" : 40
+ "Ransomware" : 17
 ```
 
 ### Geographic breakdown by region
@@ -153,7 +153,7 @@ pie showData
 | Region | Total incidents | Ransomware | Leaks | Side-by-side |
 | :--- | :---: | :---: | :---: | :--- |
 | **North Africa** | **30** (52.6%) | 9 | 21 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Southern Africa** | **14** (24.6%) | 1 | 13 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | **14** (24.6%) | 2 | 12 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **West Africa** | **6** (10.5%) | 6 | 0 | 🟧🟧🟧🟧🟧🟧 |
 | **East Africa** | **4** (7.0%) | 0 | 4 | 🟦🟦🟦🟦 |
 | 🇰🇪🇪🇹🇳🇬🇿🇼🇲🇿🇱🇷🇹🇬🇸🇱🇱🇾 Multi-country (3 incidents) | **3** (5.3%) | 0 | 3 | 🟦🟦🟦 |
@@ -241,7 +241,7 @@ pie showData
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
 - **Concentration:** Egypt (16), South Africa (14), Morocco (7) and Tunisia (5) account for 42 of 57 incidents, or 73.7% of the month.
-- **Threat mix:** 16 ransomware claims or publications and 41 data leaks or access sales were recorded. The incidents concern 18 African countries: 12 directly and 6 additional countries through multi-country exposure.
+- **Threat mix:** 17 ransomware claims or publications and 40 data leaks or access sales were recorded. The incidents concern 18 African countries: 12 directly and 6 additional countries through multi-country exposure.
 - **Campaign activity:** Egyptian education entities faced several large claims, while OpSouthAfrica targeted public institutions and Databasehooligan appeared across four countries.
 - **High-impact exposures:** notable cases involved Tanzanian police webmail accounts and the AuditTeam claim concerning the Trésor Public du Sénégal.
 
@@ -249,25 +249,25 @@ pie showData
 
 ## 4. Detailed analysis by incident type
 
-### 4.1 Ransomware (16 incidents)
+### 4.1 Ransomware (17 incidents)
 
 | Rank | Country | Listings or disclosures | Main threat actors |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇪🇬 Egypt | **7** | NightSpire (3), TheGentlemen, Qilin, LockBit 5.0, Lamashtu |
 | **2** | 🇳🇬 Nigeria | **3** | MedusaLocker, KillSec, 0day Syndicate |
 | **3** | 🇹🇳 Tunisia | **2** | TheGentlemen, Titan |
-| **4** | 🇿🇦 South Africa | **1** | PrinzEugen |
+| **4** | 🇿🇦 South Africa | **2** | PrinzEugen, Stormous |
 | **5** | 🇬🇭 Ghana | **1** | TheGentlemen |
 | **6** | 🇸🇳 Senegal | **1** | AuditTeam |
 | **7** | 🇨🇮 Ivory Coast | **1** | TheGentlemen |
 
-**Observations:** NightSpire published three Egyptian victim listings during the month. TheGentlemen showed the widest geographic distribution, with claims in four countries. For the Trésor Public du Sénégal, the analysed files support the data-exposure claim, but do not independently confirm ransomware deployment, encryption or the complete intrusion sequence.
+**Observations:** NightSpire published three Egyptian victim listings during the month. TheGentlemen showed the widest geographic distribution, with claims in four countries. Stormous claimed the Consumer Goods Council of South Africa (CGCSA), previously miscounted as a non-ransomware data leak; it is now reclassified as a ransomware listing. For the Trésor Public du Sénégal, the analysed files support the data-exposure claim, but do not independently confirm ransomware deployment, encryption or the complete intrusion sequence.
 
-### 4.2 Data leaks & access sales (41 incidents)
+### 4.2 Data leaks & access sales (40 incidents)
 
 | Rank | Country | Incidents | Main actors |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇿🇦 South Africa | **13** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
+| **1** | 🇿🇦 South Africa | **12** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
 | **2** | 🇪🇬 Egypt | **9** | INT3X, Revesky, cc5ab, DR-X-LOL, CrowStealer, bigF, Keymous, Databasehooligan |
 | **3** | 🇲🇦 Morocco | **7** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2 |
 | **4** | 🇹🇳 Tunisia | **3** | Databasehooligan (3) |
@@ -403,7 +403,7 @@ pie showData
 
 ## 12. Conclusion
 
-May 2026 recorded 57 publicly reported or claimed incidents, down from 60 in April (-3; -5.0%). Ransomware records decreased from 20 to 16 (-20.0%), while data leaks and access sales increased from 40 to 41 (+2.5%). Egypt and South Africa accounted for 52.6% of direct incidents. Repeated education-sector claims in Egypt, publications under the OpSouthAfrica banner and dataset sale offers associated with Databasehooligan across four countries were the main observed patterns.
+May 2026 recorded 57 publicly reported or claimed incidents, down from 60 in April (-3; -5.0%). Ransomware records decreased from 20 to 17 (-15.0%), while data leaks and access sales stayed flat at 40 (0.0%). Egypt and South Africa accounted for 52.6% of direct incidents. Repeated education-sector claims in Egypt, publications under the OpSouthAfrica banner and dataset sale offers associated with Databasehooligan across four countries were the main observed patterns.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

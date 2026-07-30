@@ -1,24 +1,26 @@
+# AFRINTEL victim records 2025
+
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Cyber attacks in Africa (2025): list of 149 victims, including 3 double claims by distinct groups
-👉🏾 [**French version available here** ](./victims_FR.md)
+# List of African cyberattack victims in January 2025 (16 victims)
+[**French version available here**](./victims_FR.md)
 ## January 2025
 
 ### 06 January 2025
 #### 🇰🇪 Kenya - Molars Dental Practice
 - **Ransomware Group:** ransomhub
 - **Sector:** Healthcare (Dental)
-- **Website:** molars.co.ke
+- **Website:** https://molars.co.ke
 - **Status:** Claim & 19 GB data leak
 - **Victim Description:** Molars is a leading dental clinic network based in Nairobi, providing specialized care ranging from orthodontics to dental surgery for local and international clientele.
 
 ### 09 January 2025
 #### 🇪🇬 Egypt - General Authority for Government Services
 - **Ransomware Group:** funksec
-- **Sector:** Public Administrations / Finance / Public Procurement
+- **Sector:** Public Administrations / Finance / Public Procurement.
 - **Website:** gags.gov.eg
 - **Status:** Claim & data leak
 - **Victim Description:** GAGS is the regulatory authority for government services in Egypt. It oversees tender procedures, state inventory management, and disposal of public assets.
@@ -26,7 +28,7 @@
 ### 09 January 2025
 #### 🇿🇦 South Africa - Pick n Pay (pnp.co.za)
 - **Ransomware Group:** apt73
-- **Sector:** Retail / Mass Distribution
+- **Sector:** Retail / Mass Distribution.
 - **Website:** pnp.co.za
 - **Status:** Claim & data leak
 - **Victim Description:** **Pick n Pay Group Ltd** is the second largest food retailer in South Africa.
@@ -34,7 +36,7 @@
 ### 11 January 2025
 #### 🇲🇦 Morocco - SEOCOM Marrakech (seocommarrakech.com)
 - **Ransomware Group:** funksec
-- **Sector:** Technology / Digital Marketing / SEO
+- **Sector:** Technology / Digital Marketing / SEO.
 - **Website:** seocommarrakech.com
 - **Status:** Claim & data leak
 - **Victim Description:** SEOCOM is a Moroccan agency providing SEO (Search Engine Optimization), advertising campaign management (SEA), and web development services for local and international companies.
@@ -42,7 +44,7 @@
 ### 14 January 2025
 #### 🇳🇬 Nigeria - INTELS Nigeria Limited (intelservice.com)
 - **Ransomware Group:** ransomhub
-- **Sector:** Oil & Gas Logistics / Port Services
+- **Sector:** Oil & Gas Logistics / Port Services.
 - **Website:** intelservices.com
 - **Status:** Claim & data leak. The group claimed to have exfiltrated approximately 1.5 TB of sensitive data.
 - **Victim Description:** Intels is a pillar of the Nigerian economy, managing 90% of offshore oil exploration support activities.
@@ -50,7 +52,7 @@
 ### 14 January 2025
 #### 🇪🇬 Egypt - Sharm Reef Hotel
 - **Ransomware Group:** spacebears
-- **Sector:** Hospitality / Tourism
+- **Sector:** Hospitality / Tourism.
 - **Website:** sharmreefhotel.com / sharmelsheikh.com
 - **Status:** Claim & data leak
 - **Victim Description:** Sharm Reef Hotel is a 4-star resort located on the Um El Sid plateau in Sharm El Sheikh, Egypt.
@@ -66,7 +68,7 @@
 ### 21 January 2025
 #### 🇩🇿 Algeria - Barika University Center (cu-barika.dz)
 - **Ransomware Group:** funksec
-- **Sector:** Education / Higher Education / Research
+- **Sector:** Education / Higher Education / Research.
 - **Website:** cu-barika.dz
 - **Status:** Claim & data leak
 - **Victim Description:** The Barika University Center (Ahmed Ben Abderrezak El Hamouda) is a higher education hub located in the wilaya of Batna, offering programs in technological sciences, law, and humanities.
@@ -82,7 +84,7 @@
 ### 24 January 2025
 #### 🇳🇬 Nigeria - Lower Niger River Basin Development Authority (LNRBDA)
 - **Ransomware Group:** GDLockerSec
-- **Sector:** Public Administrations / Water Resources / Agriculture
+- **Sector:** Public Administrations / Water Resources / Agriculture.
 - **Website:** lnrbda.gov.ng
 - **Status:** Claim & data leak
 - **Victim Description:** LNRBDA is a strategic agency under the supervision of the Nigerian Federal Ministry of Water Resources. It manages dam projects, irrigation, drinking water supply, and rural development.
@@ -90,7 +92,7 @@
 ### 24 January 2025
 #### 🇲🇦 Morocco - Sidi Mohamed Ben Abdellah University (www.usmba.ac.ma)
 - **Ransomware Group:** GDLockerSec
-- **Sector:** Education / Higher Education / Research
+- **Sector:** Education / Higher Education / Research.
 - **Website:** usmba.ac.ma
 - **Status:** Claim & data leak
 - **Victim Description:** USMBA is a multidisciplinary university comprising numerous institutions (Faculties of Medicine, Science, Letters, ENCG, ENSA, etc.).
@@ -98,7 +100,7 @@
 ### 26 January 2025
 #### 🇳🇬 Nigeria - Achievers Journal of Scientific Research
 - **Ransomware Group:** funksec
-- **Sector:** Education / Scientific Research / Academic Publishing
+- **Sector:** Education / Scientific Research / Academic Publishing.
 - **Website:** achieverssciencejournal.org
 - **Status:** Claim & data leak
 - **Victim Description:** AJSR is a multidisciplinary peer-reviewed journal that publishes original research in the fields of applied sciences, engineering, and technology.
@@ -106,7 +108,7 @@
 ### 26 January 2025
 #### 🇪🇬 Egypt - FGSE, Cairo University (fgse.cu.edu.eg)
 - **Ransomware Group:** GDLockerSec
-- **Sector:** Education / Higher Education / Educational Research
+- **Sector:** Education / Higher Education / Educational Research.
 - **Website:** fgse.cu.edu.eg
 - **Status:** Claim & data leak
 - **Victim Description:** The FGSE (Faculty of Graduate Studies for Education) is one of the oldest and most respected research institutions in Egypt.
@@ -135,6 +137,15 @@
 - **Status:** Claim & data leak
 - **Victim Description:** Zetech University is a leading higher education institution in Kenya.
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in February 2025 (08 victims)
+👉🏾 [**French version available here** ](./victims_FR.md)
 ## February 2025
 
 ### 03 February 2025
@@ -201,6 +212,15 @@
 - **Status:** Claim & data leak
 - **Victim Description:** Shaghalni is one of the leading recruitment platforms in Egypt, specializing in connecting job seekers (notably technical and blue-collar profiles) with companies.
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in March 2025 (09 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 ## March 2025
 
 ### 02 March 2025
@@ -270,11 +290,20 @@
 ### 31 March 2025
 #### 🇷🇼 Rwanda - moh.gov.rw
 - **Ransomware Group:** babuk2
-- **Sector:** Public Administrations (Health)
+- **Sector:** Public administrations (Health)
 - **Website:** moh.gov.rw
 - **Status:** Claim & data leak
 - **Victim Description:** Ministry of Health of Rwanda.
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in April 2025 (11 victims)
+[**French version available here**](./victims_FR.md)
 ## April 2025
 
 ### 06 April 2025
@@ -364,6 +393,23 @@
 - **Website:** daralteb.com
 - **Status:** Claim & data leak
 - **Victim Description:** Dar Al Teb is one of Egypt's most renowned medical centers, specializing in reproductive medicine, in vitro fertilization (IVF), and women's health.
+## ✍🏿 Author
+*Adama ASSIONGBON*
+*SOC & Cyber Threat Intelligence Consultant*
+[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+---
+*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African Cyberattack Victims in May 2025 (14 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 
 ## May 2025
 
@@ -480,12 +526,22 @@
 - **Status:** Massive data leak (1 GB)
 - **Victim Description:** Netmaster is a leading digital service provider in Togo. It acts as the registrar for the national .tg domain and provides web hosting, professional email, and SSL certificate solutions to many Togolese companies and institutions.
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in June 2025 (11 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
+
 ## June 2025
 
 ### 02 June 2025
 #### 🇲🇦 Morocco - ANCFCC (Agence Nationale de la Conservation Foncière)
-- **Group/actor:** NightSpire
-- **Sector:** Government / Real Estate and Land Registry
+- **Group/Actor:** NightSpire
+- **Sector:** Government / Real Estate and Land Registry.
 - **Website:** https://www.ancfcc.gov.ma/
 - **Status:** Massive leak (3.1 GB). Publication of over 10,080 original property certificates.
 - **Victim Description:** The ANCFCC is the vital body responsible for land registration, cadastre, and cartography in Morocco.
@@ -494,14 +550,14 @@
 #### 🇲🇦 Morocco - MTT EXPERTISES
 - **Ransomware Group:** incransom
 - **Sector:** Business Services
-- **Website:** mttexpertises.com
+- **Website:** https://mttexpertises.com
 - **Status:** Claim & data leak
 - **Victim Description:** MTT Expertises is a multidisciplinary engineering and expertise firm based in Casablanca (with offices in Agadir and Tangier).
 
 ### 06 June 2025
 #### 🇿🇦 South Africa - Ingonyama Trust Board
 - **Ransomware Group:** NightSpire
-- **Sector:** Land Administration / Public Sector
+- **Sector:** Land Administration / Public Sector.
 - **Website:** ingonyamatrust.org.za
 - **Status:** Claim & data leak
 - **Victim Description:** The Ingonyama Trust Board (ITB) is a South African administrative authority responsible for managing approximately 2.8 million hectares of communal land in KwaZulu-Natal province.
@@ -509,16 +565,16 @@
 ### 06 June 2025
 #### 🇲🇦 Morocco - Best Profil (bestprofil.ma)
 - **Ransomware Group:** Lynx
-- **Sector:** Human Resources / Recruitment / Temporary Work
-- **Website:** bestprofil.ma
+- **Sector:** Human Resources / Recruitment / Temporary Work.
+- **Website:** https://bestprofil.ma
 - **Status:** Total exfiltration & publication (26 GB). The data is now freely accessible on the Lynx group's leak site after ransom negotiations failed.
 - **Victim Description:** Best Profil is one of the leaders in recruitment and temporary work in Morocco.
 
 ### 08 June 2025
 #### 🇩🇿 Algeria - Crédit Populaire d'Algérie (cpa-bank.dz)
-- **Group/actor:** DieNet (Hacktivism)
-- **Sector:** Banking / Financial Services
-- **Website:** cpa-bank.dz
+- **Group/Actor:** DieNet (Hacktivism)
+- **Sector:** Banking / Financial Services.
+- **Website:** https://cpa-bank.dz
 - **Status:** Data leak. Compromise & Sample release.
 - **Victim Description:** Crédit Populaire d'Algérie (CPA) is one of the country's main public banks.
 
@@ -526,15 +582,15 @@
 #### 🇲🇺 Mauritius - Currimjee Jeewanjee & Co
 - **Ransomware Group:** warlock
 - **Sector:** Conglomerate / Multi-sectoral
-- **Website:** www.currimjee.com
+- **Website:** https://www.currimjee.com
 - **Status:** Claim & data leak
 - **Victim Description:** One of the oldest and most important conglomerates in Mauritius, operating in telecommunications (Emtel), energy, real estate, tourism, and financial services.
 
 ### 11 June 2025
 #### 🇩🇿 Algeria - Banque Nationale d'Algérie (bna.dz)
-- **Group/actor:** Phantom Atlas
-- **Sector:** Banking / Financial Services
-- **Website:** bna.dz / ebanking.bna.dz
+- **Group/Actor:** Phantom Atlas.
+- **Sector:** Banking / Financial Services.
+- **Website:** https://bna.dz / https://ebanking.bna.dz
 - **Status:** Data leak. Massive exfiltration (90 GB) / Partial publication (7 GB).
 - **Victim Description:** The Banque Nationale d'Algérie (BNA) is the primary commercial bank of the Algerian state.
 
@@ -548,43 +604,61 @@
 
 ### 13 June 2025
 #### 🇳🇬 Nigeria - Nigerian Navy (navy.mil.ng)
-- **Group/actor:** Unknown
-- **Sector:** Defense / National Security
-- **Website:** navy.mil.ng
+- **Group/Actor:** Unknown.
+- **Sector:** Defense / National Security.
+- **Website:** https://navy.mil.ng
 - **Status:** Data leak. Exfiltration & Sale listing (+200 documents)
 - **Victim Description:** The Nigerian Navy is the naval branch of the Nigerian Armed Forces. It is one of the largest navies on the African continent.
 
 ### 18 June 2025
 #### 🇲🇦 Morocco - Ministry of National Education (men.gov.ma / massar.men.gov.ma)
 - **Group:** RiseAgainLuigi & B4baYega
-- **Sector:** Government / Education
-- **Website:** men.gov.ma / massar.men.gov.ma
+- **Sector:** Government / Education.
+- **Website:** https://men.gov.ma / massar.men.gov.ma
 - **Status:** Data leak & sale listing of massive data (+6 million records)
 - **Victim Description:** The Ministry of National Education of Morocco. The Massar platform is the ministry's digital backbone, centralizing grades, registrations, and tracking for all students in the Kingdom.
 
 ### 20 June 2025
 #### 🇲🇦 Morocco - INWI (inwi.ma)
 - **Malicious group/actor:** Evil_BYTE_Officiel
-- **Sector:** Telecommunications
-- **Website:** inwi.ma
+- **Sector:** Telecommunications.
+- **Website:** https://inwi.ma
 - **Status:** Massive data leak. Publication of a sample of sensitive data including PII (Name, National ID), contact information, and password hashes (bcrypt).
 - **Victim Description:** INWI is one of the three main telecommunications operators in Morocco, providing mobile, fixed-line, and internet services (ADSL/Fiber).
+
+## ✍🏿 Author
+*Adama ASSIONGBON*
+*SOC & Cyber Threat Intelligence Consultant*
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+---
+*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in July 2025 (13 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 
 ## July 2025
 
 ### 01 July 2025
 #### 🇳🇬 Nigeria - Chartered Institute of Bankers of Nigeria (CIBN)
-- **Group/actor:** Hepd
-- **Sector:** Financial Services / Professional Regulatory Body
-- **Website:** cibng.org
+- **Group/Actor:** Hepd
+- **Sector:** Financial Services / Professional Regulatory Body.
+- **Website:** https://cibng.org
 - **Status:** Data leak & Publication (Deep Web). Publication of a database including sensitive information on the country's banking elite.
 - **Victim Description:** The umbrella institution for the banking profession in Nigeria, responsible for the accreditation and ethics of bankers, including members of the Central Bank (CBN).
 
 ### 08 July 2025
 #### 🇿🇦 South Africa - MAFATE BUSINESS ENTERPRISE
 - **Ransomware Group:** d4rk4rmy
-- **Sector:** Industrial Supplies / Mining Support Services
-- **Website:** mafate.co.za
+- **Sector:** Industrial Supplies / Mining Support Services.
+- **Website:** https://mafate.co.za
 - **Status:** Claim & data leak
 - **Victim Description:** Mafate Business Enterprise is an industrial service provider established in Middelburg (Mpumalanga), at the heart of the South African mining region.
 
@@ -592,38 +666,38 @@
 #### 🇹🇿 Tanzania - Twaweza
 - **Ransomware Group:** nightspire
 - **Sector:** NGO (Education & Governance)
-- **Website:** twaweza.org
+- **Website:** https://twaweza.org
 - **Status:** Claim & data leak
 - **Victim Description:** Twaweza East Africa is a leading pan-African organization, based in Tanzania (with offices in Kenya and Uganda).
 
 ### 14 July 2025
 #### 🇲🇦 Morocco - IWACLUB (iwaclub.ma)
-- **Group/actor:** Keymous
-- **Sector:** Telecommunications / Distribution & Retail
-- **Website:** iwaclub.ma
+- **Group/Actor:** Keymous
+- **Sector:** Telecommunications / Distribution & Retail.
+- **Website:** https://iwaclub.ma
 - **Status:** Data leak & disclosure
 - **Victim Description:** IWACLUB is the professional application dedicated to the reseller network of the company IWACO, one of the most important distributors of telecommunications solutions (notably the operator inwi) and technological products in Morocco.
 
 ### 15 July 2025
 #### 🇰🇪 Kenya - Adrian Kenya
 - **Ransomware Group:** lynx
-- **Sector:** Telecommunications / Energy Infrastructure / ICT
-- **Website:** adrian.co.ke / www.adriankenya.com
+- **Sector:** Telecommunications / Energy Infrastructure / ICT.
+- **Website:** https://adrian.co.ke / www.adriankenya.com
 - **Status:** Claim & data leak
 - **Victim Description:** Adrian Group (Adrian Kenya) is a Kenyan leader in technological engineering.
 
 ### 15 July 2025
 #### 🇪🇬 Egypt - eehc.gov.eg
 - **Ransomware Group:** devman
-- **Sector:** Public administrations
-- **Website:** eehc.gov.eg
+- **Sector:** Public Administrations
+- **Website:** https://eehc.gov.eg
 - **Status:** Claim & data leak
 - **Victim Description:** Egyptian government website. Ransom demand: $2,270,000 USD.
 
 ### 15 July 2025
 #### 🇳🇦 Namibia - Otjiwarongo Municipality
 - **Ransomware Group:** incransom
-- **Sector:** Public administrations / Local Government
+- **Sector:** Public Administrations / Local Government.
 - **Website:** www.otjimun.org.na
 - **Status:** Claim & data leak
 - **Victim Description:** The municipality of Otjiwarongo is the local government body for the city of Otjiwarongo, capital of the Otjozondjupa region in Namibia.
@@ -632,22 +706,22 @@
 #### 🇲🇦 Morocco - Mohammed VI Polytechnic University (UM6P)
 - **Malicious group/actor:** Mercobyte
 - **Sector:** Education / Higher Education
-- **Website:** um6p.ma
+- **Website:** https://um6p.ma
 - **Status:** Targeted data leak & Influence operation. Publication of student ID photos accompanied by a political message, etc.
 - **Victim Description:** An excellence institution (University) based in Benguerir, a strategic hub for research, innovation, and executive training in Morocco.
 
 ### 25 July 2025
 #### 🇹🇳 Tunisia - Ministry of Finance (finances.gov.tn)
 - **Malicious group/actor:** Dark 07x Team
-- **Sector:** Government / Tax Administration
-- **Website:** finances.gov.tn
+- **Sector:** Government / Tax Administration.
+- **Website:** https://finances.gov.tn
 - **Status:** "Full Access" Claim
 - **Victim Description:** Tunisian Ministry of Finance.
 
 ### 25 July 2025
 #### 🇹🇳 Tunisia - Academy of Banks and Finance (abf.tn)
 - **Malicious group/actor:** Dark 07x Team
-- **Sector:** Professional Training / Banking Sector
+- **Sector:** Professional Training / Banking Sector.
 - **Website:** abf.tn
 - **Status:** Compromise of the administration interface
 - **Victim Description:** The Academy of Banks and Finance (ABF) is the continuing education body of the Tunisian Professional Association of Banks and Financial Institutions (APTBEF).
@@ -655,27 +729,46 @@
 ### 25 July 2025
 #### 🇹🇳 Tunisia - BTK Bank
 - **Malicious group/actor:** Dark 07x Team
-- **Sector:** Banking / Financial Services
-- **Website:** btknet.com
-- **Status:** Account compromise (ATO) & Sale listing
+- **Sector:** Banking / Financial Services.
+- **Website:** https://btknet.com
+- **Status:** Account compromise (ATO) & Sale listing.
 - **Victim Description:** (Historically Banque de Tunisie et des Émirats, now BCP Group - Banque Centrale Populaire) is a universal Tunisian banking institution.
 
 ### 25 July 2025
 #### 🇹🇳 Tunisia - Banque de Tunisie (bt.com.tn)
 - **Malicious group/actor:** Dark 07x Team
-- **Sector:** Banking / Financial Services
-- **Website:** bt.com.tn
-- **Status:** Exfiltration of financial data & Identities
+- **Sector:** Banking / Financial Services.
+- **Website:** https://bt.com.tn
+- **Status:** Exfiltration of financial data & Identities.
 - **Victim Description:** Banque de Tunisie (BT) is one of the oldest and largest private banks in the country.
 
 ### 28 July 2025
 #### 🇹🇳 Tunisia - BH Bank
 - **Group:** Dark 07x Team
-- **Sector:** Banking / Financial Services
+- **Sector:** Banking / Financial Services.
 - **Website:** https://bhbank.tn/
-- **Status:** Major compromise & Account takeover (ATO)
+- **Status:** Major compromise & Account takeover (ATO).
 - **Victim Description:** Historic and systemic banking institution in Tunisia (Banque de l'Habitat), a pillar of real estate financing and the national economy.
+---
+[July 2025 Report](./07-july/report/README.md)
+---
+## ✍🏿 Author
+*Adama ASSIONGBON*
+*SOC & Cyber Threat Intelligence Consultant*
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
+---
+*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in August 2025 (13 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 ## August 2025
 
 ### 06 August 2025
@@ -781,14 +874,34 @@
 - **Website:** gouv.tg
 - **Status:** Sale listing of privileged access. Admin access offered for $1,000 (in Monero), indicating an active system or network-level compromise (RDP/VPN).
 - **Victim Description:** Official portal and digital infrastructures of the Togolese Republic, hosting administrative services and state data.
+---
+[August 2025 report](./08-august/report/README.md)
 
+## ✍🏿 Author
+*Adama ASSIONGBON*
+*SOC & Cyber Threat Intelligence Consultant*
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+
+---
+*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+---
+
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in September 2025 (12 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 ## September 2025
 
 ### 05 September 2025
 #### 🇪🇬 Egypt - MeamarGroup
 - **Ransomware Group:** obscura
 - **Sector:** Real Estate / Construction / Engineering
-- **Website:** meamargroup.com
+- **Website:** https://meamargroup.com
 - **Status:** Claim & data leak
 - **Victim Description:** MeamarGroup (including Meamar Real Estate Development and Meamar Construction) is a major player in the Egyptian construction sector for over 25 years. Based in Cairo (New Cairo), the group manages over 400 projects ranging from luxury residential complexes to industrial and medical facilities (like the Biogeneric Pharma factory).
 
@@ -804,7 +917,7 @@
 #### 🇳🇬 Nigeria - The Promise Nigeria
 - **Ransomware Group:** yurei
 - **Sector:** Catering / Food Services / Industrial Catering
-- **Website:** www.thepromisenig.com
+- **Website:** https://www.thepromisenig.com
 - **Status:** Claim & data leak
 - **Victim Description:** The Promise is a leading Quick Service Restaurant (QSR) chain and industrial catering service in Nigeria, particularly established in Port Harcourt and the Niger Delta region.
 
@@ -812,7 +925,7 @@
 #### 🇲🇦 Morocco - Dolidol
 - **Ransomware Group:** thegentlemen
 - **Sector:** Manufacturing Industry / Bedding / Furniture
-- **Website:** www.dolidol.ma
+- **Website:** https://www.dolidol.ma
 - **Status:** Claim & data leak
 - **Victim Description:** Dolidol (a subsidiary of the Palmeraie Industries et Services group) is the undisputed leader in bedding and polyurethane foam in Morocco.
 
@@ -820,7 +933,7 @@
 #### 🇿🇼 Zimbabwe - Proplastics Limited
 - **Ransomware Group:** thegentlemen
 - **Sector:** Manufacturing Industry (Plastics)
-- **Website:** www.proplastics.co.zw
+- **Website:** https://www.proplastics.co.zw
 - **Status:** Claim & data leak
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 
@@ -828,7 +941,7 @@
 #### 🇳🇬 Nigeria - Princeps Credit Systems Limited
 - **Ransomware Group:** killsec
 - **Sector:** Finance
-- **Website:** princepsfinance.com
+- **Website:** https://princepsfinance.com
 - **Status:** Claim & data leak
 - **Victim Description:** Financial institution based in Lagos, specializing in consumer credit and SME financing.
 
@@ -836,7 +949,7 @@
 #### 🇳🇦 Namibia - Epia Financial Services
 - **Ransomware Group:** radar
 - **Sector:** Financial Services
-- **Website:** epiafs.com
+- **Website:** https://epiafs.com
 - **Status:** Claim & data leak
 - **Victim Description:** Financial institution based in Windhoek, offering wealth management, investment advice, and brokerage services in Namibia.
 
@@ -844,7 +957,7 @@
 #### 🇰🇪 Kenya - Office Of The Registrar Of Political Parties
 - **Ransomware Group:** qilin
 - **Sector:** Public administrations
-- **Website:** www.orpp.go.ke
+- **Website:** https://www.orpp.go.ke
 - **Status:** Claim & data leak
 - **Victim Description:** Kenyan state body responsible for the registration, regulation, and supervision of political party funding.
 
@@ -852,7 +965,7 @@
 #### 🇰🇪 Kenya - Jubilee Life Insurance
 - **Ransomware Group:** warlock
 - **Sector:** Insurance / Financial Services
-- **Website:** jubileelife.com
+- **Website:** https://jubileelife.com
 - **Status:** Claim & data leak
 - **Victim Description:** Major player in life insurance and fund management in Kenya, a subsidiary of Jubilee Holdings Limited.
 
@@ -860,7 +973,7 @@
 #### 🇪🇬 Egypt - Accflex ERP
 - **Ransomware Group:** arcusmedia
 - **Sector:** Technology / ERP Software Publishing
-- **Website:** www.accflex.com
+- **Website:** https://www.accflex.com
 - **Status:** Claim & data leak
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
 
@@ -868,7 +981,7 @@
 #### 🇲🇦 Morocco - Fractalite (fractalite.com)
 - **Ransomware Group:** killsec
 - **Sector:** Technology / Digital Services / Software Development
-- **Website:** fractalite.com
+- **Website:** https://fractalite.com
 - **Status:** Claim & data leak
 - **Victim Description:** Fractalite is a Moroccan digital consulting and engineering agency, specializing in software development and digital support for businesses.
 
@@ -876,17 +989,31 @@
 #### 🇸🇳 Senegal - Direction Générale des Impôts et des Domaines (DGID)
 - **Ransomware Group:** blackshrantac
 - **Sector:** Public Administration / Finance / Taxation
-- **Website:** www.impots.gouv.sn
+- **Website:** https://www.impots.gouv.sn
 - **Status:** Claimed & Leaked - 1 Terabyte (1 TB) of sensitive data. This massive volume includes structured tax databases, land registries, and taxpayer banking information.
 - **Victim Description:** The **DGID** is the central agency of Senegal's Ministry of Finance and Budget, responsible for tax collection, national domain management, and the land registry (cadastre).
 
-## October 2025
+## ✍🏿 Auteur
+*Adama ASSIONGBON*
+*Consultant SOC & Cyber Threat Intelligence*
+[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# List of African cyberattack victims in October 2025 (17 victims)
+
+👉🏾 [**French version available here**](./victims_FR.md)
+## October 2025
 ### 01 October 2025
 #### 🇿🇦 South Africa - Climatron (Pty) Ltd
 - **Ransomware Group:** incransom
 - **Sector:** Construction / HVAC
-- **Website:** climatron.co.za
+- **Website:** https://climatron.co.za
 - **Status:** Claim & data leak
 - **Victim Description:** Climatron (Pty) Ltd is a company specializing in industrial and commercial air conditioning solutions, based in Johannesburg.
 
@@ -910,15 +1037,15 @@
 #### 🇲🇦 Morocco - LA VOIE EXPRESS
 - **Ransomware Group:** medusa
 - **Sector:** Logistics
-- **Website:** lavoieexpress.ma
+- **Website:** https://lavoieexpress.ma
 - **Status:** Claim & data leak
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 
 ### 13 October 2025
-#### 🇪🇬 Egypt - MeamarGroup (Second attack)
+#### 🇪🇬 Egypt - meamargroup.com (third attack)
 - **Ransomware Group:** obscura
 - **Sector:** Maritime transport / Real Estate
-- **Website:** meamargroup.com
+- **Website:** https://meamargroup.com
 - **Status:** Claim & data leak
 - **Victim Description:** Egyptian company specializing in real estate development.
 
@@ -926,7 +1053,7 @@
 #### 🇰🇪 Kenya - Turnkey Africa
 - **Ransomware Group:** qilin
 - **Sector:** Technology / Fintech (Insurance Solutions)
-- **Website:** turnkeyafrica.com
+- **Website:** https://turnkeyafrica.com
 - **Status:** Claim & data leak
 - **Victim Description:** Turnkey Africa is a pan-African technology leader. The company develops and provides software management solutions (Core Insurance Systems) for insurance and reinsurance companies in over 10 African countries.
 
@@ -942,7 +1069,7 @@
 #### 🇨🇩 Congo (DRC) - TK HOLDINGS GROUP
 - **Ransomware Group:** radar
 - **Sector:** Mining / Conglomerate
-- **Website:** congomineralservices.com
+- **Website:** https://congomineralservices.com
 - **Status:** Claim & data leak
 - **Victim Description:** Congolese holding with activities in timber, logistics, and mineral exploration.
 
@@ -950,7 +1077,7 @@
 #### 🇿🇦 South Africa - University of the Witwatersrand (WITS)
 - **Ransomware Group:** clop
 - **Sector:** Education (University)
-- **Website:** www.wits.ac.za
+- **Website:** https://www.wits.ac.za
 - **Status:** Claim & data leak
 - **Victim Description:** The University of the Witwatersrand, located in Johannesburg, is one of Africa's most prestigious research institutions.
 
@@ -958,7 +1085,7 @@
 #### 🇬🇦 Gabon - SANgel
 - **Ransomware Group:** qilin
 - **Sector:** Agribusiness
-- **Website:** sangel-gabon.com
+- **Website:** https://sangel-gabon.com
 - **Status:** Claim & data leak
 - **Victim Description:** Gabonese food production and distribution company based in Libreville, specializing in frozen products.
 
@@ -974,7 +1101,7 @@
 #### 🇲🇦 Morocco - STAR LÉGUMES
 - **Ransomware Group:** tengu
 - **Sector:** Wholesale Trade (Food Products)
-- **Website:** starlegumes.com
+- **Website:** https://starlegumes.com
 - **Status:** Claim & data leak
 - **Victim Description:** Moroccan wholesaler of fruits, vegetables, spices, and dried seeds based in Casablanca.
 
@@ -982,7 +1109,7 @@
 #### 🇲🇦 Morocco - Le MULTI LABORATOIRE LC2A
 - **Ransomware Group:** tengu
 - **Sector:** Pharmaceutical Industry / Laboratory
-- **Website:** multi-laboratoire-lc2a.com
+- **Website:** https://multi-laboratoire-lc2a.com
 - **Status:** Claim & data leak
 - **Victim Description:** Moroccan laboratory offering a platform for configuring analytical projects for businesses.
 
@@ -990,7 +1117,7 @@
 #### 🇳🇬 Nigeria - Henrietta Ezeoke Law Firm
 - **Ransomware Group:** qilin
 - **Sector:** Legal Services
-- **Website:** houstonwrongfuldeathlawyers.com
+- **Website:** https://houstonwrongfuldeathlawyers.com
 - **Status:** Claim & data leak
 - **Victim Description:** Nigerian law firm.
 
@@ -998,7 +1125,7 @@
 #### 🇹🇿 Tanzania - Alios Finance Group
 - **Ransomware Group:** incransom
 - **Sector:** Finance
-- **Website:** aliosfinance.co.tz
+- **Website:** https://aliosfinance.co.tz
 - **Status:** Claim & data leak
 - **Victim Description:** Pan-African financial operator present in Tanzania, offering specialized financing solutions. 100 GB of data exfiltrated.
 
@@ -1006,17 +1133,28 @@
 #### 🇹🇳 Tunisia - Alios Finance Group
 - **Ransomware Group:** incransom
 - **Sector:** Finance
-- **Website:** aliosfinance.tn
+- **Website:** https://aliosfinance.tn
 - **Status:** Claim & data leak
-- **Victim Description:** Pan-African financial operator present in Tunisia. 100 GB of data exfiltrated.
+- **Victim Description:** Pan-African financial operator present in Tunisia, specializing in financing for businesses and individuals. During this intrusion, 100 GB of data were exfiltrated by the incransom group.
 
 ### 31 October 2025
 #### 🇩🇿 Algeria - TMF Logistics
 - **Ransomware Group:** incransom
 - **Sector:** Logistics
-- **Website:** tmf-logistics.com
+- **Website:** https://tmf-logistics.com
 - **Status:** Claim & data leak
-- **Victim Description:** Algerian logistics company. 39 GB of data were exfiltrated during the attack.
+- **Victim Description:** TMF Logistics is an Algerian company specializing in transport and logistics solutions. During this attack, the incransom group claimed the exfiltration of 39 GB of sensitive company data.
+
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+
+# List of African cyberattack victims in November 2025 (11 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 
 ## November 2025
 
@@ -1109,6 +1247,16 @@
 - **Status:** Claim & data leak
 - **Victim Description:** Santé Espoir Vie Côte d'Ivoire (SEV-CI) is a leading Ivorian non-governmental organization. It works to improve the health of populations, with a particular focus on the fight against HIV/AIDS, tuberculosis, and the strengthening of community health systems.
 
+---
+
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+
+# List of African cyberattack victims in December 2025 (14 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
 ## December 2025
 
 ### 05 December 2025
@@ -1222,10 +1370,3 @@
 - **Website:** proplastics.co.zw
 - **Status:** Claim & data leak
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
-## ✍🏿 Author
-*Adama ASSIONGBON*  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
----
-*AFRINTEL - Open CTI Monitoring Initiative on Africa*

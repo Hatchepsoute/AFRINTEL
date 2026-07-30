@@ -131,6 +131,6 @@ class MU low;
 ```
 
 ---
-👉🏾 [Explorer la cartographie des menaces](/visual-intelligence/ecosystem-map_fr.md)
+👉🏾 [Explorer la cartographie des menaces](./ecosystem-map_fr.md)
 
 *AFRINTEL - Initiative africaine de Cyber Threat Intelligence*

@@ -6,7 +6,7 @@
 ![Threat Actors](https://img.shields.io/badge/Threat%20Actors-12-orange)
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
 ## 🔗 Threat Actor Mapping - January & February 2026
-👉🏾 [French version](/visual-intelligence/ecosystem-map_fr.md)
+👉🏾 [French version](./ecosystem-map_fr.md)
 
 ## CTI Ecosystem Map - Africa Cyber Incidents (Jan-Feb 2026)
 

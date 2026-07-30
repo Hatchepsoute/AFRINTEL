@@ -2,8 +2,8 @@
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
 ![Période](https://img.shields.io/badge/Période-Mai%202026-lightgrey)
 ![Victimes](https://img.shields.io/badge/Victimes-57-critical)
-![Ransomwares](https://img.shields.io/badge/Ransomwares-16-red)
-![Fuites](https://img.shields.io/badge/Fuites%20de%20données-41-orange)
+![Ransomwares](https://img.shields.io/badge/Ransomwares-17-red)
+![Fuites](https://img.shields.io/badge/Fuites%20de%20données-40-orange)
 ![Pays](https://img.shields.io/badge/Pays%20touchés-18-blueviolet)
 ![Intel](https://img.shields.io/badge/Type-Statistiques%20CTI-purple)
 
@@ -25,8 +25,8 @@ Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont co
 | Indicateur | Valeur |
 |---|---:|
 | Total incidents | 57 |
-| Publications ou divulgations ransomware | 16 |
-| Fuites de données / ventes d'accès | 41 |
+| Publications ou divulgations ransomware | 17 |
+| Fuites de données / ventes d'accès | 40 |
 | Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
 | Acteurs ou sources nommés distincts | 31 |
 | Pays le plus touché | Égypte |
@@ -37,15 +37,15 @@ Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont co
 
 | Type d'incident | Nombre | Pourcentage |
 |---|---:|---:|
-| Ransomware | 16 | 28,1 % |
-| Fuites de données / ventes d'accès | 41 | 71,9 % |
+| Ransomware | 17 | 29,8 % |
+| Fuites de données / ventes d'accès | 40 | 70,2 % |
 | **Total** | **57** | **100 %** |
 
 ```mermaid
 pie showData
     title Répartition globale des incidents - Mai 2026
-    "Ransomware" : 16
-    "Fuites de données et ventes d'accès" : 41
+    "Ransomware" : 17
+    "Fuites de données et ventes d'accès" : 40
 ```
 
 ---
@@ -123,7 +123,7 @@ xychart-beta
 | Pays | Ransomware | Fuites de données / ventes d'accès | Total |
 |---|---:|---:|---:|
 | 🇪🇬 Égypte | 7 | 9 | 16 |
-| 🇿🇦 Afrique du Sud | 1 | 13 | 14 |
+| 🇿🇦 Afrique du Sud | 2 | 12 | 14 |
 | 🇲🇦 Maroc | 0 | 7 | 7 |
 | 🇹🇳 Tunisie | 2 | 3 | 5 |
 | 🇳🇬 Nigéria | 3 | 0 | 3 |
@@ -134,11 +134,11 @@ xychart-beta
 | 🇨🇮 Côte d'Ivoire | 1 | 0 | 1 |
 | 🇰🇪 Kenya | 0 | 1 | 1 |
 | 🇸🇳 Sénégal | 1 | 0 | 1 |
-| **Sous-total (directs)** | **16** | **38** | **54** |
+| **Sous-total (directs)** | **17** | **37** | **54** |
 | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | 0 | 1 | 1 |
 | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | 0 | 1 | 1 |
 | 🇪🇬🇱🇾 Scans de passeports | 0 | 1 | 1 |
-| **Total** | **16** | **41** | **57** |
+| **Total** | **17** | **40** | **57** |
 
 ### Ransomware par pays
 
@@ -147,7 +147,7 @@ xychart-beta
     title "Ransomware par pays - Mai 2026"
     x-axis ["Égypte","Nigeria","Tunisie","Afrique du Sud","Ghana","Sénégal","Côte d'Ivoire"]
     y-axis "Ransomware" 0 --> 8
-    bar [7,3,2,1,1,1,1]
+    bar [7,3,2,2,1,1,1]
 ```
 
 ### Fuites de données par pays
@@ -157,7 +157,7 @@ xychart-beta
     title "Fuites de données par pays (directs) - Mai 2026"
     x-axis ["Afrique du Sud","Égypte","Maroc","Tunisie","Algérie","Tanzanie","Éthiopie","Kenya"]
     y-axis "Fuites de données" 0 --> 14
-    bar [13,9,7,3,2,2,1,1]
+    bar [12,9,7,3,2,2,1,1]
 ```
 
 ---
@@ -244,11 +244,11 @@ xychart-beta
 
 ### 7.1 L'Égypte enregistre le plus grand volume ransomware en mai
 
-L'Égypte concentre **7 incidents ransomware**, soit **43,8 %** de l'activité ransomware du mois. NightSpire a revendiqué à lui seul trois cibles égyptiennes en un mois. Les secteurs visés incluent la finance, la restauration, l'industrie chimique, la logistique, l'agriculture et l'hôtellerie.
+L'Égypte concentre **7 incidents ransomware**, soit **41,2 %** de l'activité ransomware du mois. NightSpire a revendiqué à lui seul trois cibles égyptiennes en un mois. Les secteurs visés incluent la finance, la restauration, l'industrie chimique, la logistique, l'agriculture et l'hôtellerie.
 
 ### 7.2 Afrique du Sud : 14 fiches dont les publications OpSouthAfrica
 
-L'Afrique du Sud enregistre **14 incidents**, dont 13 fuites de données. Au moins huit publications concernant des institutions sont associées à la bannière OpSouthAfrica et à des acteurs participants tels que 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines et Infernalis. Les autres fiches impliquent d'autres acteurs.
+L'Afrique du Sud enregistre **14 incidents**, dont 12 fuites de données et 2 publications ransomware (PrinzEugen, Stormous). Au moins huit publications concernant des institutions sont associées à la bannière OpSouthAfrica et à des acteurs participants tels que 404Crew Cyber Team, NullSec Nigeria, NullSec Philippines et Infernalis. Les autres fiches impliquent d'autres acteurs.
 
 ### 7.3 Le secteur éducatif comme cible stratégique
 
@@ -285,6 +285,6 @@ L’offre DHIS2 mentionne cinq pays africains : Mozambique, Liberia, Nigeria, To
 
 ## 9. Conclusion
 
-Mai 2026 recense **57 incidents signalés ou revendiqués publiquement** concernant **18 pays africains** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 60 incidents en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 16 (-20,0 %), tandis que les fuites de données et ventes d'accès passent de 40 à 41 (+2,5 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation, les publications OpSouthAfrica et les offres de vente associées à Databasehooligan sont les principaux schémas observés.
+Mai 2026 recense **57 incidents signalés ou revendiqués publiquement** concernant **18 pays africains** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 60 incidents en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 17 (-15,0 %), tandis que les fuites de données et ventes d'accès restent stables à 40 (0,0 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation, les publications OpSouthAfrica et les offres de vente associées à Databasehooligan sont les principaux schémas observés.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

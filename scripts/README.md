@@ -39,7 +39,7 @@ It allows analysts to operationalize publicly observed ransomware activity into 
   * Attack dates and status
 *  Generates STIX 2.1 objects:
 
-  * `intrusion-set`
+  * `threat-actor`
   * `identity`
   * `incident`
   * `relationship`

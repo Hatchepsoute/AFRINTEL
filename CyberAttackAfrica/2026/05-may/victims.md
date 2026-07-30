@@ -2,7 +2,7 @@
 
 ## Monthly snapshot
 
-May 2026 includes **57 unique incidents**: **16 ransomware incidents** and **41 data leaks or access sales**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
+May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 data leaks or access sales**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
 
 ### Notable incidents
 
@@ -105,10 +105,12 @@ May 2026 includes **57 unique incidents**: **16 ransomware incidents** and **41 
 - **Status:** Claim - Unverified
 - **Description:** ActionAid is an international non-governmental organization focused on combating poverty and social injustice, operating locally in collaboration with entities such as TACOSA (The ActionAid Community and Social Action). The MedusaLocker ransomware group claimed a compromise of the organization's digital infrastructure, threatening the exposure of sensitive data tied to community development programs and beneficiary information.
 
+---
+### May 03, 2026
 #### 🇿🇦 South Africa - Consumer Goods Council of South Africa (CGCSA)
-- **Actor / Group:** Stormous (XOverStm)
+- **Ransomware group:** Stormous (XOverStm)
 - **Sector:** E-commerce / Retail
-- **Website :** [cgcsa.co.za](https://www.cgcsa.co.za)
+- **Website:** [cgcsa.co.za](https://www.cgcsa.co.za)
 - **Status:** Claim - Data Sample Published
 - **Description :**
   The Stormous group published what it claims to be a data leak originating from the Consumer Goods Council of South Africa (CGCSA), an organization representing the retail, wholesale, and consumer goods sectors in South Africa.
@@ -126,6 +128,8 @@ May 2026 includes **57 unique incidents**: **16 ransomware incidents** and **41 
   Exposure of such information could provide threat actors with detailed insight into the organization's financial operations, business relationships, member companies, suppliers, and internal IT environment.
   The leak also appears to contain backups of business and accounting systems that may include sensitive financial information and data related to CGCSA member organizations.
 
+---
+### May 05, 2026
 #### 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe - Resume docs data leak
 - **Actor / Group:** attackercompany (via the [Citizen] forum)
 - **Sector:** Human Resources / Recruitment
@@ -420,7 +424,7 @@ Such a compromise could potentially allow:
 #### 🇸🇳 Senegal - Trésor Public du Sénégal
 - **Ransomware group:** AuditTeam
 - **Sector:** Government / Administration
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Website:** [www.tresor.sn](https://www.tresor.sn)
 - **Description:**
   The Trésor Public du Sénégal is the state institution responsible for managing public finances, executing the national budget, and overseeing tax collection and government expenditure. The **AuditTeam** ransomware group claimed the compromise of the institution on May 17-18, 2026. The analysed files were presented as originating from two internal systems and contain dates preceding the public claim. The duration and method of access remain unknown.
