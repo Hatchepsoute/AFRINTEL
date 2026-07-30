@@ -44,7 +44,9 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 
 📦 [Bundle STIX 2.1 / OpenCTI du S1 2026](stix/2026/afrintel_h1_2026_opencti.json)
 
-🖼️ [Visuel statistique LinkedIn du S1 2026](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png)
+🖼️ [Visuel statistique du S1 2026](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png)
+
+🗺️ [Carte visuelle du S1 2026](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png)
 
 ---
 
@@ -100,7 +102,8 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Avril 2026 | [Visual intelligence](visual-intelligence/04-april/README_FR.md) |
 | Mai 2026 | [Visual intelligence](visual-intelligence/05-may/README_FR.md) |
 | Juin 2026 | [Visual intelligence](visual-intelligence/06-june/README_FR.md) |
-| S1 2026 | [Visuel statistique LinkedIn](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png) |
+| S1 2026 | [Visuel statistique](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
+| S1 2026, carte | [Carte visuelle](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
 ---
 

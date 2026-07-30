@@ -16,6 +16,10 @@ This directory presents visual intelligence derived from the 40 incident cards d
 - **53 geographic occurrences**
 - **25 distinct actors or sources**
 
+## June visual map
+
+![AFRINTEL visual map for June 2026](./afrintel_juin_2026_carte.png)
+
 ## Available files
 
 | File | Description |
@@ -25,6 +29,7 @@ This directory presents visual intelligence derived from the 40 incident cards d
 | [sector-map_june_2026.md](./sector-map_june_2026.md) | Distribution of the 40 incidents by explicit sector |
 | [ransomware-vs-leaks_june_2026.md](./ransomware-vs-leaks_june_2026.md) | Ransomware and leak comparison |
 | [actors_june_2026.md](./actors_june_2026.md) | Most active actors and sources |
+| [afrintel_juin_2026_carte.png](./afrintel_juin_2026_carte.png) | June 2026 visual map |
 
 ## Counting rules
 

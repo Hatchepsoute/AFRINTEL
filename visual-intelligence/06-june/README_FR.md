@@ -16,6 +16,10 @@ Ce dossier présente des visualisations dérivées des 40 fiches d'incidents doc
 - **53 occurrences géographiques**
 - **25 acteurs ou sources distincts**
 
+## Carte visuelle de juin
+
+![Carte visuelle AFRINTEL de juin 2026](./afrintel_juin_2026_carte.png)
+
 ## Fichiers disponibles
 
 | Fichier | Description |
@@ -25,6 +29,7 @@ Ce dossier présente des visualisations dérivées des 40 fiches d'incidents doc
 | [sector-map_june_2026_fr.md](./sector-map_june_2026_fr.md) | Répartition des 40 incidents par secteur explicite |
 | [ransomware-vs-leaks_june_2026_fr.md](./ransomware-vs-leaks_june_2026_fr.md) | Comparaison entre ransomware et fuites |
 | [actors_june_2026_fr.md](./actors_june_2026_fr.md) | Acteurs et sources les plus actifs |
+| [afrintel_juin_2026_carte.png](./afrintel_juin_2026_carte.png) | Carte visuelle de juin 2026 |
 
 ## Règles de comptage
 

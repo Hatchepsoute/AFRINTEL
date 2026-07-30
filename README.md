@@ -45,7 +45,9 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 
 📦 [H1 2026 STIX 2.1 / OpenCTI bundle](stix/2026/afrintel_h1_2026_opencti.json)
 
-🖼️ [H1 2026 statistical visual for LinkedIn](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png)
+🖼️ [H1 2026 statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png)
+
+🗺️ [H1 2026 visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png)
 
 ---
 
@@ -101,7 +103,8 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | April 2026 | [Visual intelligence](visual-intelligence/04-april/README.md) |
 | May 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
 | June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
-| H1 2026 | [Statistical LinkedIn visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics_linkedin.png) |
+| H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
+| H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
 ---
 
