@@ -1,0 +1,7 @@
+__metadata__
+**/__pycache__
+**/.pytest_cache
+**/.venv
+**/venv
+**/config.yml
+tests

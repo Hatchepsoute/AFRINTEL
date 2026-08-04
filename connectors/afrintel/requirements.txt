@@ -1,0 +1,4 @@
+pycti==7.260728.0
+isodate==0.7.2
+requests~=2.33.0
+PyYAML~=6.0.2

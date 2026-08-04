@@ -57,6 +57,7 @@ env/
 # Local config files containing credentials
 config.json
 secrets.json
+connectors/**/config.yml
 
 ########################################
 # 📄 CTI WORKING FILES

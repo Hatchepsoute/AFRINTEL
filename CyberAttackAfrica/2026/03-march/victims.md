@@ -18,7 +18,7 @@ This list records ransomware and data breach incidents targeting African entitie
 ## Quick overview
 - **Victims recorded:** 41
 - **Countries affected:** 14
-- **Actors observed:** 27
+- **Actors observed:** 26 attributed actors; 1 incident without public attribution
 - **Most affected countries:** South Africa (13), Morocco (8), Egypt (8)
 
 ### Incident typology
@@ -29,7 +29,7 @@ This list records ransomware and data breach incidents targeting African entitie
 
 - **Egypt:** 3.8 million records claimed in an incident attributed to the Ministry of Health.
 - **Morocco:** a 300 GB publication attributed to the Ministry of Justice included court-case files.
-- **Senegal:** UBA Senegal disclosed a coordinated fraud involving more than 3,400 ATM withdrawals totalling 1.143 billion FCFA.
+- **Senegal:** according to ngCERT advisory ngCERT-2026-060005, the UBA Senegal cash-out operation involved 3,421 ATM transactions. Losses were previously reported at 1.143 billion FCFA; ngCERT describes them as exceeding USD 2 million.
 - **South Africa:** a 3.8 TB exposure was attributed to the Gauteng provincial government.
 
 > The entries below document observed claims, publications or reported incidents. AFRINTEL does not confirm a compromise without independent evidence.
@@ -73,7 +73,6 @@ This list records ransomware and data breach incidents targeting African entitie
 - **AshleyWood2022**: 1 victim
 - **Bytetobreach**: 1 victim
 - **privillege**: 1 victim
-- **Coordinated network (UBA Senegal)**: 1 victim
 - **Grubder (Bridges)**: 1 victim
 - **Blackwinter99 (UNISA)**: 1 victim
 - **zimablue (Loozap)**: 1 victim
@@ -308,12 +307,13 @@ This list records ransomware and data breach incidents targeting African entitie
 
 ### 24 March 2026
 #### 🇸🇳 Senegal - United Bank for Africa (UBA Senegal)
-- **Actor / Group:** Coordinated network (suspected internal complicity)
+- **Actor / Group:** Unattributed
 - **Sector:** Finance / Banking
 - **Website:** [ubasenegal.com](https://www.ubasenegal.com)
 - **Date of attack:** 30-31 January 2026 (disclosed on 24 March 2026)
-- **Status:** Incident Confirmed by Victim
-- **Victim description:** UBA Senegal suffered an exceptional cyberattack. Over a few hours, more than 3,400 fraudulent withdrawals were executed across ATMs in multiple cities (Dakar, Thiès, Kaolack). Attackers compromised the internal information system, manipulated databases (creating/modifying accounts, increasing withdrawal limits, transferring funds from legitimate clients), then coordinated simultaneous withdrawals to empty ATMs before detection. Potential exploited vulnerabilities: lack of real-time SOC monitoring, insufficient anti‑fraud procedures on mass withdrawals, possible internal complicity, and weak security configurations. This incident is a major wake‑up call for West African financial institutions.
+- **Status:** Under Investigation
+- **Reference:** https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions
+- **Victim description:** According to ngCERT, a cyber-enabled ATM cash-out operation affecting UBA Senegal involved 3,421 ATM transactions. Losses were previously reported at 1.143 billion FCFA; the ngCERT advisory describes them as exceeding USD 2 million. The advisory assesses that privileged access to card-authorization infrastructure likely enabled manipulation of transaction controls and coordinated withdrawals. The initial-access vector, exact technical sequence and any insider involvement remain unknown. Phishing, supply-chain weaknesses, insider access and ATM malware are presented by ngCERT as possible scenarios for this attack class, not as confirmed findings for UBA Senegal.
 
 ### 26 March 2026
 #### 🇿🇦 South Africa - ETFSA

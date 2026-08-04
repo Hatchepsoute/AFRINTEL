@@ -12,10 +12,10 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 
 - **19 attaques de ransomware (46,3 %)** et **22 fuites de données / intrusions (53,7 %)**.
 - **14 pays touchés** ; **Afrique du Sud** (13 incidents), **Maroc** (8) et **Égypte** (8) représentent 71 % des victimes.
-- **27 acteurs distincts** ; **CrowStealer** (5 incidents), **APT73/BASHE** (4) et **XP95** (3) sont les plus actifs.
+- **26 acteurs attribués et 1 incident sans attribution publique** ; **CrowStealer** (5 incidents), **APT73/BASHE** (4) et **XP95** (3) sont les plus actifs.
 - **Secteurs gouvernemental et éducatif** : 41,5 % des victimes, montrant un ciblage stratégique des institutions publiques.
 - Fuites massives : ministère de la Santé égyptien (3,8 M d’enregistrements), province de Gauteng (3,8 To), Remita Nigeria (3 To), Stats SA (154 Go). Au Maroc, plusieurs fuites majeures ont touché des institutions gouvernementales, dont le Ministère de la Justice (300 Go de dossiers judiciaires).
-- Nouvel incident majeur : **UBA Sénégal** - un braquage cyber coordonné avec compromission du système, manipulation de bases de données et plus de 3 400 retraits frauduleux en GAB totalisant 1,143 milliard FCFA (~1,9 M USD), révélé en mars mais exécuté fin janvier.
+- Incident majeur actualisé : **UBA Sénégal** - l’avis ngCERT ngCERT-2026-060005 fait état de 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; le ngCERT les présente comme supérieures à 2 millions USD. L’opération a eu lieu fin janvier et a été révélée en mars.
 - Menaces émergentes : **Loozap (Cameroun)** - 34 000 comptes utilisateurs divulgués (mots de passe en SHA1) ; **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par l’acteur Keymous.
 
 ### 📋 Liste des victimes
@@ -38,7 +38,7 @@ En mars 2026, **41 incidents cyber** ciblant des entités africaines ont été r
 |--------------------------------|--------|
 | Nombre total de victimes       | 41     |
 | Pays touchés                   | 14     |
-| Acteurs distincts              | 27     |
+| Acteurs attribués              | 26     |
 | Incidents de ransomware        | 19 (46,3 %) |
 | Fuites de données / intrusions | 22 (53,7 %) |
 
@@ -223,7 +223,7 @@ pie
 | Nigeria          | 2                 | AshleyWood2022, Bytetobreach |
 | Cameroun         | 1                 | zimablue |
 | Algérie          | 1                 | Grubder |
-| Sénégal          | 1                 | Réseau coordonné |
+| Sénégal          | 1                 | Non attribué |
 | Guinée           | 1                 | Keymous |
 | Zambie           | 1                 | Spirigatito |
 | RDC              | 1                 | privillege |
@@ -231,7 +231,7 @@ pie
 **Observations clés** :
 - **CrowStealer** domine les fuites égyptiennes, y compris une base de données médicale de 3,8 millions de patients (ministère de la Santé) vendue 2 500 $.
 - **xNov** a exposé des dossiers étudiants (ONOUSC, 3 631 entrées), les données supply chain de L’Oréal Maroc (296 pharmacies, 361 000 ventes, secrets OAuth2), et la base de données d’Eventing South Africa (équitation).
-- **UBA Sénégal** (révélé en mars, exécuté fin janvier) : les attaquants ont compromis le système d’information interne, manipulé les bases de données (création/modification de comptes, augmentation des plafonds de retrait, transferts de fonds), puis coordonné plus de 3 400 retraits GAB en quelques heures, emportant 1,143 milliard FCFA (~1,9 M USD). Vulnérabilités probables : absence de SOC temps réel, procédures antifraude insuffisantes, possible complicité interne.
+- **UBA Sénégal** (révélé en mars, exécuté fin janvier) : selon [l’avis ngCERT ngCERT-2026-060005](https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions), l’opération de cash-out a impliqué 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; le ngCERT les présente comme supérieures à 2 millions USD. Un accès privilégié à l’infrastructure d’autorisation des cartes est jugé probable, mais le vecteur initial, la séquence technique exacte et une éventuelle implication interne restent inconnus.
 - **Loozap (Cameroun)** - 34 000 comptes utilisateurs divulgués avec mots de passe hashés en SHA1, adresses IP, données personnelles.
 - **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par Keymous, exposant des outils de surveillance sanitaire et des données gouvernementales (emails, personnels).
 - Fuites massives au Nigeria : Remita (3 To, incluant documents KYC et clés HSM gouvernementales) et université Ahmadu Bello (11 000+ dossiers).
@@ -260,7 +260,7 @@ pie
 - Le secteur public (gouvernement + éducation) représente **41,5 %** des incidents.
 - Les données de santé restent très valorisées : fuite du ministère de la Santé égyptien (3,8 M d’enregistrements), fuites d’assurances sud-africaines, compromission du ministère de la Santé guinéen.
 - Les télécoms (Orange Madagascar, Maroc Telecom) sont des cibles stratégiques.
-- L’incident UBA Sénégal illustre une nouvelle tendance : **fraude financière directe par compromission système**, contournant le ransomware classique.
+- L’incident UBA Sénégal illustre un risque distinct : **fraude financière directe visant les contrôles d’autorisation des paiements**, séparée du ransomware classique.
 - Les plateformes de e‑commerce (Loozap) sont de plus en plus ciblées pour le vol d’identifiants.
 
 ## 7. Profil des acteurs
@@ -297,13 +297,13 @@ pie
 2. **Attaques de la supply chain** - Smarteez (prestataire de L’Oréal Maroc) montre la vulnérabilité des sous-traitants digitaux.
 3. **Fuites massives de données de santé** - Ministère de la Santé égyptien (3,8 M d’enregistrements) révèle des failles dans la sécurité des systèmes publics.
 4. **Ciblage géopolitique** - APT73/BASHE concentré sur les médias et télécoms d’État marocains.
-5. **Fraude financière directe par compromission système** - UBA Sénégal démontre que les attaquants contournent le ransomware pour aller directement à l’argent, exploitant des SOC et contrôles antifraude faibles.
+5. **Fraude financière directe visant l’autorisation des paiements** - UBA Sénégal illustre l’impact des opérations coordonnées de cash-out. Les éléments publics n’établissent ni le vecteur initial ni une défaillance précise du SOC.
 6. **Vol d’identifiants sur les plateformes e‑commerce** - Loozap (Cameroun) : fuite de 34 000 comptes avec hashage SHA1 faible.
 
 ### Lacunes
 - De nombreuses attaques restent non détectées ou non déclarées ; cette liste ne couvre que les incidents publics.
 - Les volumes de données annoncés peuvent être gonflés.
-- L’attaque UBA Sénégal a eu lieu fin janvier mais n’a été révélée qu’en mars - délai important dans la prise de conscience publique.
+- L’opération UBA Sénégal a eu lieu fin janvier, a été révélée en mars, puis documentée par le ngCERT le 25 juin 2026 ; le vecteur d’accès initial reste inconnu.
 - La compromission du ministère de la Santé guinéen reste partiellement confirmée (accès corrélé, pas de divulgation complète).
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
@@ -333,7 +333,7 @@ pie
 - Surveiller **XP95**, **xNov**, **zimablue**, **Keymous** pour de nouvelles campagnes.
 - Cartographier les expositions de la supply chain (notamment marketing digital et logistique).
 - Prioriser la surveillance des secteurs gouvernemental, éducatif et de la santé en Afrique du Nord, Ouest et Australe.
-- Surveiller les **intrusions financières non ransomware** - UBA Sénégal n’est probablement pas un cas isolé.
+- Surveiller les **intrusions financières non ransomware** - UBA Sénégal justifie une surveillance élargie des opérations de cash-out visant les institutions financières africaines.
 
 ## 11. Recommandations SOC tactiques
 

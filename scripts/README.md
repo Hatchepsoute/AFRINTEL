@@ -151,10 +151,12 @@ This script enables:
 ##  Future enhancements
 
 * GitHub Actions automation (auto-generate STIX on commit)
-* Direct OpenCTI connector integration
 * Export to MISP format
 * IOC extraction (IPs, domains, hashes)
 * Timeline & campaign correlation
+
+A dedicated OpenCTI connector that imports these bundles automatically is
+available in [`connectors/afrintel/`](../connectors/afrintel/).
 
 ---
 

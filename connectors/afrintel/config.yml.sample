@@ -1,0 +1,18 @@
+opencti:
+  url: "http://localhost:8080"
+  token: "CHANGEME-opencti-api-token"
+connector:
+  id: "CHANGEME-generate-a-uuid4"
+  type: "EXTERNAL_IMPORT"
+  name: "AFRINTEL"
+  scope: "identity,threat-actor,incident,relationship,report"
+  confidence_level: 50
+  update_existing_data: true
+  log_level: "info"
+  duration_period: "P1D"
+afrintel:
+  source: "github"
+  github_repo: "Hatchepsoute/AFRINTEL"
+  github_branch: "main"
+  github_token: ""
+  repo_path: "/repo"

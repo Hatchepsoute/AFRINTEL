@@ -16,7 +16,7 @@ Leak-site, forum and underground-channel posts are treated as **unverified claim
 |---|---:|
 | Victims | 41 |
 | Affected countries | 14 |
-| Observed actors | 27 |
+| Attributed actors | 26 |
 | Affected sectors | 37 |
 
 ## Victims by country
@@ -218,8 +218,7 @@ flowchart LR
     class V_Semenya_Furumele_Consulting_Engineers victim;
     class C_South_Africa country;
     class S_Engineering_consulting sector;
-    A_Coordinated_network__suspected_internal_complicity["Coordinated network (suspected internal complicity)"] --> V_United_Bank_for_Africa__UBA_Senegal["United Bank for Africa (UBA Senegal)"] --> C_Senegal["🇸🇳 Senegal"] --> S_Finance___Banking["Finance / Banking"]
-    class A_Coordinated_network__suspected_internal_complicity actor;
+    V_United_Bank_for_Africa__UBA_Senegal["United Bank for Africa (UBA Senegal) — unattributed"] --> C_Senegal["🇸🇳 Senegal"] --> S_Finance___Banking["Finance / Banking"]
     class V_United_Bank_for_Africa__UBA_Senegal victim;
     class C_Senegal country;
     class S_Finance___Banking sector;

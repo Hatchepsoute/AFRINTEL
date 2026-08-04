@@ -69,6 +69,7 @@ class VictimRecord:
     status: str
     incident_type: str
     description: str
+    reference_url: str
     source_path: str
 
 
@@ -437,6 +438,7 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
             status = first_matching(fields, ["status", "statut"])
             website = first_matching(fields, ["website", "websites", "observed websites", "site web"])
             description = first_matching(fields, ["description", "victim description", "leak description", "analysis", "sample analysis"])
+            reference = first_matching(fields, ["reference", "référence"])
 
             actor = clean_actor(actor) if actor else "Unknown"
             sector = sector or "Unknown"
@@ -455,6 +457,7 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
                 status=clean_inline(status),
                 incident_type=incident_type,
                 description=description,
+                reference_url=extract_url(reference),
                 source_path=str(md_path.relative_to(repo)),
             ))
 
@@ -544,6 +547,8 @@ def build_month_bundle(
         victim_refs = [source_ref, source_ref_fr]
         if rec.domain:
             victim_refs.append({"source_name": "website", "url": rec.domain})
+        if rec.reference_url:
+            victim_refs.append({"source_name": "incident source", "url": rec.reference_url})
 
         victim_object = {
             "type": "identity",
@@ -574,6 +579,8 @@ def build_month_bundle(
         incident_refs = [source_ref, source_ref_fr]
         if rec.domain:
             incident_refs.append({"source_name": "website", "url": rec.domain})
+        if rec.reference_url:
+            incident_refs.append({"source_name": "incident source", "url": rec.reference_url})
 
         objects.append({
             "type": "incident",

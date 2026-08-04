@@ -13,10 +13,10 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 
 - **19 ransomware attacks (46.3%)** and **22 data breaches / intrusions (53.7%)**.
 - **14 countries** affected; **South Africa** (13 incidents), **Morocco** (8) and **Egypt** (8) account for 71% of all victims.
-- **27 distinct threat actors**; **CrowStealer** (5 incidents), **APT73/BASHE** (4) and **XP95** (3) are the most active.
+- **26 attributed threat actors and 1 incident without public attribution**; **CrowStealer** (5 incidents), **APT73/BASHE** (4) and **XP95** (3) are the most active.
 - **Government and education sectors** represent 39% of victims, highlighting a strategic focus on public institutions.
 - Massive data leaks: Egyptian health ministry (3.8M records), Gauteng provincial government (3.8 TB), Remita Nigeria (3 TB), Stats SA (154 GB). In Morocco, several major breaches hit government institutions, including the Ministry of Justice (300 GB of court case files).
-- New major incident: **UBA Senegal** - a coordinated cyber heist involving system compromise, database manipulation, and over 3,400 fraudulent ATM withdrawals totaling 1.143 billion FCFA (~$1.9M USD), disclosed in March but executed in late January.
+- Updated major incident: **UBA Senegal** - ngCERT advisory ngCERT-2026-060005 reports 3,421 ATM transactions. Losses were previously reported at 1.143 billion FCFA; ngCERT describes them as exceeding USD 2 million. The operation occurred in late January and was disclosed in March.
 - Emerging threats: **Loozap (Cameroon)** - 34,000 user accounts leaked (SHA1 passwords); **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by actor Keymous.
 
 ### 📋 Victim list
@@ -39,7 +39,7 @@ In March 2026, **41 cyber incidents** targeting African entities were publicly c
 |-------------------------------|-------|
 | Total victims                 | 41    |
 | Countries affected            | 14    |
-| Distinct actors               | 27    |
+| Attributed actors             | 26    |
 | Ransomware incidents          | 19 (46.3%) |
 | Data breaches / intrusions    | 22 (53.7%) |
 
@@ -203,7 +203,7 @@ pie
 | Nigeria          | 2                   | AshleyWood2022, Bytetobreach |
 | Cameroon         | 1                   | zimablue |
 | Algeria          | 1                   | Grubder |
-| Senegal          | 1                   | Coordinated network |
+| Senegal          | 1                   | Unattributed |
 | Guinea           | 1                   | Keymous |
 | Zambia           | 1                   | Spirigatito |
 | DRC              | 1                   | privillege |
@@ -211,7 +211,7 @@ pie
 **Key observations**:
 - **CrowStealer** dominates Egyptian breaches, including a medical database of 3.8 million patients (Ministry of Health) sold for $2,500.
 - **xNov** exposed student records (ONOUSC, 3,631 entries), L'Oréal Morocco supply chain data (296 pharmacies, 361,000 sales records, OAuth2 secrets), and Eventing South Africa (equestrian database).
-- **UBA Senegal** (disclosed in March, executed in late January): attackers compromised the internal information system, manipulated databases (created/modified accounts, increased withdrawal limits, transferred funds), then coordinated over 3,400 ATM withdrawals across multiple cities in a few hours, netting 1.143 billion FCFA (~$1.9M). Potential exploited vulnerabilities: lack of real-time SOC monitoring, insufficient anti-fraud procedures, possible internal complicity.
+- **UBA Senegal** (disclosed in March, executed in late January): according to [ngCERT advisory ngCERT-2026-060005](https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions), the cash-out operation involved 3,421 ATM transactions. Losses were previously reported at 1.143 billion FCFA; ngCERT describes them as exceeding USD 2 million. Privileged access to card-authorization infrastructure is assessed as likely, but the initial-access vector, exact technical sequence and any insider involvement remain unknown.
 - **Loozap (Cameroon)** - 34,000 user accounts leaked with SHA1‑hashed passwords, IP addresses, personal data.
 - **Guinea Ministry of Health** - suspected compromise of DHIS2 dashboards by Keymous, exposing health surveillance tools and government email/staff records.
 - Massive Nigerian breaches: Remita (3 TB, including KYC documents and government HSM keys) and Ahmadu Bello University (11,000+ staff records).
@@ -260,7 +260,7 @@ pie
 - Public sector (government + education) accounts for **41.5%** of all incidents.
 - Health data remains highly valued: Egyptian health ministry breach (3.8M records), South African insurance leaks, Guinea health ministry compromise.
 - Telecoms (Orange Madagascar, Maroc Telecom) are strategic targets.
-- The UBA Senegal incident highlights a new trend: **direct financial fraud through system compromise**, bypassing traditional ransomware.
+- The UBA Senegal incident highlights a distinct risk: **direct financial fraud targeting payment-authorization controls**, separate from traditional ransomware.
 - E‑commerce platforms (Loozap) are increasingly targeted for user credential theft.
 
 ## 7. Threat actor profile
@@ -297,13 +297,13 @@ pie
 2. **Supply chain attacks** - Smarteez (L'Oréal Morocco provider) shows vulnerability of digital service providers.
 3. **Massive health data leaks** - Egyptian health ministry breach (3.8M records) highlights poor security in public health IT.
 4. **Geopolitical targeting** - APT73/BASHE focus on Moroccan state media and telecoms.
-5. **Direct financial fraud via system compromise** - UBA Senegal demonstrates that attackers bypass ransomware to go straight for the money, exploiting weak SOC and anti-fraud controls.
+5. **Direct financial fraud targeting payment authorization** - UBA Senegal shows the impact of coordinated cash-out operations. The public evidence does not establish the initial-access vector or a specific SOC control failure.
 6. **E‑commerce credential theft** - Loozap (Cameroon) leak of 34,000 accounts with weak SHA1 hashing.
 
 ### Gaps
 - Many attacks go undetected or unreported; this list only includes publicly disclosed incidents.
 - Actual data volumes may be inflated by actors.
-- The UBA Senegal attack was executed in late January but only disclosed in March - significant delay in public awareness.
+- The UBA Senegal operation occurred in late January, was disclosed in March and was subsequently documented by ngCERT on 25 June 2026; the initial-access vector remains unknown.
 - Guinea’s Ministry of Health compromise remains partially confirmed (correlated access, not full disclosure).
 
 ## 9. MITRE ATT&CK mapping (contextual)
@@ -333,7 +333,7 @@ pie
 - Monitor **XP95**, **xNov**, **zimablue**, **Keymous** for new campaigns.
 - Track supply chain exposures (especially digital marketing and logistics providers).
 - Prioritize monitoring of government, education, and health sectors in North, West, and Southern Africa.
-- Watch for **non-ransomware financial intrusions** - UBA Senegal is likely not an isolated case.
+- Watch for **non-ransomware financial intrusions** - UBA Senegal warrants broader monitoring of cash-out activity across African financial institutions.
 
 ## 11. SOC tactical recommendations
 

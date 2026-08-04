@@ -18,7 +18,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 ## Synthèse rapide
 - **Victimes recensées :** 41
 - **Pays touchés :** 14
-- **Acteurs observés :** 27
+- **Acteurs observés :** 26 acteurs attribués ; 1 incident sans attribution publique
 - **Pays les plus touchés :** Afrique du Sud (13), Maroc (8), Égypte (8)
 
 ### Typologie des incidents
@@ -29,7 +29,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 
 - **Égypte :** 3,8 millions d’enregistrements revendiqués dans un incident attribué au ministère de la Santé.
 - **Maroc :** une publication de 300 Go attribuée au ministère de la Justice comprenait des dossiers judiciaires.
-- **Sénégal :** UBA Senegal a signalé une fraude coordonnée impliquant plus de 3 400 retraits aux distributeurs, pour un total de 1,143 milliard de FCFA.
+- **Sénégal :** selon l’avis ngCERT ngCERT-2026-060005, l’opération de cash-out visant UBA Sénégal a impliqué 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; le ngCERT les présente comme supérieures à 2 millions USD.
 - **Afrique du Sud :** une exposition de 3,8 To a été attribuée au gouvernement provincial du Gauteng.
 
 > Les fiches ci-dessous documentent des revendications, publications ou incidents signalés. AFRINTEL ne confirme pas une compromission sans élément indépendant.
@@ -73,7 +73,6 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **AshleyWood2022** : 1 victime
 - **Bytetobreach** : 1 victime
 - **privillege** : 1 victime
-- **Réseau coordonné (UBA Sénégal)** : 1 victime
 - **Grubder (Bridges)** : 1 victime
 - **Blackwinter99 (UNISA)** : 1 victime
 - **zimablue (Loozap)** : 1 victime
@@ -308,12 +307,13 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 
 ### 24 Mars 2026
 #### 🇸🇳 Sénégal - United Bank for Africa (UBA Sénégal)
-- **Acteur / Groupe :** Réseau coordonné (suspicions de complicités internes)
+- **Acteur / Groupe :** Non attribué
 - **Secteur :** Finance / Banque
 - **Site web :** [ubasenegal.com](https://www.ubasenegal.com)
 - **Date de l’attaque :** 30-31 janvier 2026 (révélée le 24 mars 2026)
-- **Statut :** Incident Confirmed by Victim
-- **Description victime :** UBA Sénégal a subi une cyberattaque d’une ampleur exceptionnelle. En quelques heures, plus de 3 400 retraits frauduleux ont été effectués dans les GAB de plusieurs villes (Dakar, Thiès, Kaolack). Les attaquants ont compromis le système d’information interne, manipulé les bases de données (création/modification de comptes, augmentation des plafonds de retrait, transferts de fonds depuis des clients légitimes), puis ont coordonné des retraits simultanés pour vider les distributeurs avant détection. Vulnérabilités probables : absence de supervision SOC en temps réel, procédures antifraude insuffisantes sur les retraits massifs, possible complicité interne, et mauvaise configuration des dispositifs de sécurité. Cet incident est un signal d’alarme majeur pour les institutions financières ouest‑africaines.
+- **Statut :** Under Investigation
+- **Référence :** https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions
+- **Description victime :** Selon le ngCERT, une opération de cash-out cyber visant UBA Sénégal a impliqué 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; l’avis du ngCERT les présente comme supérieures à 2 millions USD. Le ngCERT estime qu’un accès privilégié à l’infrastructure d’autorisation des cartes aurait permis la modification de contrôles transactionnels et la coordination des retraits. Le vecteur d’accès initial, la séquence technique exacte et une éventuelle implication interne restent inconnus. Le phishing, les faiblesses de la chaîne d’approvisionnement, l’accès interne et les malwares ATM sont présentés par le ngCERT comme des scénarios possibles pour cette classe d’attaque, et non comme des faits confirmés pour UBA Sénégal.
 
 ### 26 Mars 2026
 #### 🇿🇦 Afrique du Sud - ETFSA

@@ -10,7 +10,8 @@
 |---|---|
 | Victimes recensées | 41 |
 | Pays touchés | 14 |
-| Acteurs observés | 27 |
+| Acteurs attribués | 26 |
+| Incidents sans attribution publique | 1 |
 | Incidents ransomware | 19 |
 | Fuites de données / intrusions | 22 |
 

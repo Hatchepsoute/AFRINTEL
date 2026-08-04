@@ -1,3 +1,28 @@
+
+### 21 juillet 2026
+#### 🇹🇳 Tunisie - Ministère de la Justice
+- **Acteur / Groupe :** R3V4ULT
+- **Secteur :** Gouvernement / Justice / Administration publique
+- **Site web :** [justice.gov.tn](https://justice.gov.tn)
+- **Statut :** Fuite de données 
+- **Description :**
+Le ministère tunisien de la Justice est l’administration publique chargée du secteur judiciaire en Tunisie. Ses activités couvrent notamment l’administration des juridictions, des établissements pénitentiaires et des services judiciaires.
+
+- **Analyse :**
+
+L’acteur R3V4ULT a publié sur un forum cybercriminel un premier ensemble de données présenté comme provenant du ministère tunisien de la Justice. La publication, motivée par un discours hacktiviste lié aux interruptions d’eau et d’électricité en Tunisie, contient deux liens de téléchargement et annonce de possibles divulgations supplémentaires.
+
+Le fichier CSV analysé comprend 6 599 contacts uniques, structurés selon quatre champs : prénom, nom, adresse e-mail et domaine. Parmi ces entrées, 6 593 adresses utilisent les domaines institutionnels justice.gov.tn, mail.justice.gov.tn, e-justice.tn ou mail.e-justice.tn. Aucun mot de passe, hash, jeton d’authentification ou contenu de messagerie n’a été identifié.
+
+L’échantillon comprend également un document administratif numérisé de trois pages, daté du 23 octobre 2024, contenant des références internes, des lignes budgétaires, des montants, des cachets et des signatures. Les dépenses visibles concernent notamment l’eau, l’électricité, le gaz, les télécommunications, les loyers, le transport, la maintenance, les fournitures administratives et certaines dépenses médicales liées aux détenus. Une demande d’approvisionnement en carburant est également visible dans la publication.
+
+Les fichiers observés constituent un échantillon initial et non une publication complète. Ils ne permettent pas de confirmer un accès aux boîtes de messagerie, la compromission d’identifiants ou le vecteur d’intrusion. Les données exposées peuvent toutefois faciliter le phishing ciblé, l’usurpation d’agents publics, la cartographie des services judiciaires et la préparation de fraudes reposant sur des références administratives crédibles.
+
+Comme le rappelle un proverbe éthiopien, « Quand les toiles d’araignée s’unissent, elles peuvent ligoter un lion. » Le ministère devrait renforcer l’authentification multifacteur, surveiller les usages anormaux des comptes institutionnels et rechercher l’origine de l’exposition.
+
+Le secteur gouvernemental restant particulièrement exposé aux fuites de données en Afrique, les autres administrations doivent considérer cette publication comme une alerte sectorielle, contrôler leurs annuaires exposés, informer leurs équipes SOC et sensibiliser les agents aux campagnes de phishing susceptibles de réutiliser ces informations.
+
+---
 ### 24 juillet 2026
 #### 🇲🇦 Maroc - Distamed
 

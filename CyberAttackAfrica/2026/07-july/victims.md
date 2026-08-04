@@ -1,4 +1,30 @@
 
+
+### 21 July 2026
+#### 🇹🇳 Tunisia - Ministry of Justice
+- **Actor / Group:** R3V4ULT
+- **Sector:** Government / Justice / Public administration
+- **Website:** justice.gov.tn
+- **Status:** Data leak
+- **Description:**
+
+The Tunisian Ministry of Justice is the public administration responsible for the judicial sector in Tunisia. Its activities include the administration of courts, correctional facilities and judicial services.
+
+- **Analysis:**
+
+The actor R3V4ULT published an initial dataset on a cybercriminal forum, presenting it as originating from the Tunisian Ministry of Justice. The post uses a hacktivist narrative related to water and electricity disruptions in Tunisia, contains two download links and announces possible additional disclosures.
+
+The analysed CSV file contains 6,599 unique contact records, structured into four fields: first name, surname, email address and domain. Of these records, 6,593 addresses use the institutional domains justice.gov.tn, mail.justice.gov.tn, e-justice.tn or mail.e-justice.tn. No passwords, hashes, authentication tokens or email content were identified.
+
+The sample also includes a three-page scanned administrative document dated 23 October 2024, containing internal references, budget lines, financial amounts, stamps and signatures. The visible expenses relate to water, electricity, gas, telecommunications, rent, transportation, maintenance, administrative supplies and certain medical expenses associated with detainees. A fuel supply request is also visible in the forum publication.
+
+The observed files represent an initial sample, not a complete release. They do not confirm access to email accounts, compromised credentials or the intrusion vector. The exposed information could nevertheless support targeted phishing, impersonation of public officials, mapping of judicial departments and fraud using credible administrative references.
+
+As an Ethiopian proverb states, “When spider webs unite, they can tie up a lion.” The Ministry should strengthen multifactor authentication, monitor abnormal use of institutional accounts and investigate the source of the exposure.
+
+As the government sector remains particularly exposed to data leaks in Africa, other public institutions should treat this publication as a sector-wide warning, review exposed directories, notify their SOC teams and prepare employees for phishing campaigns that may reuse the leaked information.
+
+---
 ### 24 July 2026
 #### 🇲🇦 Morocco - Distamed
 

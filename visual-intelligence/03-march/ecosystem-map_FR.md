@@ -16,7 +16,7 @@ Les publications issues des leak sites, forums et canaux underground sont trait�
 |---|---:|
 | Victimes | 41 |
 | Pays touchés | 14 |
-| Acteurs observés | 27 |
+| Acteurs attribués | 26 |
 | Secteurs touchés | 37 |
 
 ## Victimes par pays
@@ -218,8 +218,7 @@ flowchart LR
     class V_Semenya_Furumele_Consulting_Engineers victim;
     class C_Afrique_du_Sud country;
     class S_Ing_nierie_conseil sector;
-    A_R_seau_coordonn___suspicions_de_complicit_s_internes["Réseau coordonné (suspicions de complicités internes)"] --> V_United_Bank_for_Africa__UBA_S_n_gal["United Bank for Africa (UBA Sénégal)"] --> C_S_n_gal["🇸🇳 Sénégal"] --> S_Finance___Banque["Finance / Banque"]
-    class A_R_seau_coordonn___suspicions_de_complicit_s_internes actor;
+    V_United_Bank_for_Africa__UBA_S_n_gal["United Bank for Africa (UBA Sénégal) — non attribué"] --> C_S_n_gal["🇸🇳 Sénégal"] --> S_Finance___Banque["Finance / Banque"]
     class V_United_Bank_for_Africa__UBA_S_n_gal victim;
     class C_S_n_gal country;
     class S_Finance___Banque sector;

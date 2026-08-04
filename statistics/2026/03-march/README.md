@@ -10,7 +10,8 @@
 |---|---|
 | Victims recorded | 41 |
 | Countries affected | 14 |
-| Threat actors observed | 27 |
+| Attributed threat actors | 26 |
+| Incidents without public attribution | 1 |
 | Ransomware incidents | 19 |
 | Data breaches / intrusions | 22 |
 
