@@ -34,19 +34,13 @@ July 2026 brought in 42 incident records: 18 ransomware claims, 18 data leaks, 6
 📄 [Full CTI report - July 2026](CyberAttackAfrica/2026/07-july/README.md)
 📋 [Victim list - July 2026](CyberAttackAfrica/2026/07-july/victims.md)
 
-### August 2026 — in progress
-
-August is still being worked through. Four incidents logged so far, and both the totals and the read on them are likely to shift before the month closes.
-
-📋 [August working victim list](CyberAttackAfrica/2026/08-august/victims.md)
-
 ### First-half 2026 cyber threat report
 
 Between January and June 2026, AFRINTEL logged 239 incidents across the continent: 113 ransomware, 125 data leaks or access-sale offers, 1 defacement. Activity nearly doubled quarter over quarter, 82 incidents in Q1 against 157 in Q2. Ransomware barely moved, 56 to 57, while leaks and access sales jumped from 25 to 100.
 
 📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
 
-🇫🇷 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
+📊 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
 
 📦 [H1 2026 STIX 2.1 / OpenCTI bundle](stix/2026/afrintel_h1_2026_opencti.json)
 

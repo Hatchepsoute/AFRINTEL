@@ -33,12 +33,6 @@ Juillet 2026 a rapporté 42 fiches d'incident : 18 revendications ransomware, 18
 📄 [Rapport CTI complet - juillet 2026](CyberAttackAfrica/2026/07-july/README_FR.md)
 📋 [Liste des victimes - juillet 2026](CyberAttackAfrica/2026/07-july/victims_FR.md)
 
-### Août 2026 — en cours
-
-Août est encore en cours de traitement. Quatre incidents recensés pour l'instant, et aussi bien les totaux que la lecture qu'on en fait devraient bouger avant la fin du mois.
-
-📋 [Liste de travail des victimes d'août](CyberAttackAfrica/2026/08-august/victims_FR.md)
-
 ### Rapport sur les cybermenaces du premier semestre 2026
 
 Entre janvier et juin 2026, AFRINTEL a recensé 239 incidents sur le continent : 113 ransomware, 125 fuites de données ou ventes d'accès, 1 défacement. L'activité a presque doublé d'un trimestre à l'autre, 82 incidents au premier trimestre contre 157 au deuxième. Le ransomware a à peine bougé, 56 puis 57, tandis que les fuites et ventes d'accès sont passées de 25 à 100.
