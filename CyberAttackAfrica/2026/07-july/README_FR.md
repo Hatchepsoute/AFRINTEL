@@ -36,21 +36,21 @@ Les volumes annoncés par les acteurs ne sont pas repris comme des faits établi
 
 ## 3. Vue globale
 
-| Pays | Occurrences |
-| :--- | ---: |
-| 🇪🇬 Égypte | 7 |
-| 🇹🇳 Tunisie | 7 |
-| 🇲🇦 Maroc | 6 |
-| 🇿🇦 Afrique du Sud | 6 |
-| 🇳🇬 Nigeria | 4 |
-| 🇩🇿 Algérie | 4 |
-| 🇨🇮 Côte d’Ivoire | 3 |
-| 🇬🇭 Ghana | 2 |
-| 🇧🇼 Botswana | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇰🇪 Kenya | 1 |
-| 🇸🇸 Soudan du Sud | 1 |
-| **Total géographique** | **43** |
+| Pays | Occurrences | Barre |
+| :--- | ---: | :--- |
+| 🇪🇬 Égypte | 7 | ███████ |
+| 🇹🇳 Tunisie | 7 | ███████ |
+| 🇲🇦 Maroc | 6 | ██████ |
+| 🇿🇦 Afrique du Sud | 6 | ██████ |
+| 🇳🇬 Nigeria | 4 | ████ |
+| 🇩🇿 Algérie | 4 | ████ |
+| 🇨🇮 Côte d’Ivoire | 3 | ███ |
+| 🇬🇭 Ghana | 2 | ██ |
+| 🇧🇼 Botswana | 1 | █ |
+| 🇨🇲 Cameroun | 1 | █ |
+| 🇰🇪 Kenya | 1 | █ |
+| 🇸🇸 Soudan du Sud | 1 | █ |
+| **Total géographique** | **43** | - |
 
 ```mermaid
 pie showData
@@ -72,10 +72,12 @@ pie showData
 ~~~mermaid
 xychart-beta
     title "Occurrences géographiques par pays - juillet 2026"
-    x-axis ["Égypte","Tunisie","Maroc","Afrique du Sud","Nigeria","Algérie","Côte d’Ivoire","Ghana","Botswana","Cameroun","Kenya","Soudan du Sud"]
+    x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
     bar [7,7,6,6,4,4,3,2,1,1,1,1]
 ~~~
+
+Légende : EG = Égypte, TN = Tunisie, MA = Maroc, ZA = Afrique du Sud, NG = Nigeria, DZ = Algérie, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroun, KE = Kenya, SS = Soudan du Sud
 
 ### Comparaison ransomware et fuites de données par pays
 
@@ -102,10 +104,12 @@ Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géogra
 ~~~mermaid
 xychart-beta
     title "Ransomware par pays - juillet 2026"
-    x-axis ["Afrique du Sud","Égypte","Maroc","Nigeria","Côte d’Ivoire","Ghana","Cameroun","Botswana","Kenya","Soudan du Sud"]
+    x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
     bar [5,2,2,2,2,1,1,1,1,1]
 ~~~
+
+Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Côte d’Ivoire, GH = Ghana, CM = Cameroun, BW = Botswana, KE = Kenya, SS = Soudan du Sud
 
 ### Répartition géographique des fuites de données et ventes d'accès
 
@@ -124,10 +128,12 @@ xychart-beta
 ~~~mermaid
 xychart-beta
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
-    x-axis ["Tunisie","Égypte","Maroc","Algérie","Nigeria","Afrique du Sud","Côte d’Ivoire","Ghana"]
+    x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
     bar [7,5,4,4,2,1,1,1]
 ~~~
+
+Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, ZA = Afrique du Sud, CI = Côte d’Ivoire, GH = Ghana
 
 ### Répartition géographique par région
 
