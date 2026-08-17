@@ -251,7 +251,7 @@ Le domaine `planetsport.ma` avait été listé par LockBit 5 en avril 2026. Une 
 
 ### Zenith Bank
 
-Zenith Bank apparaît dans une revendication de données antérieure et dans une revendication ransomware en juillet. Cette répétition justifie une surveillance renforcée, mais ne permet pas de conclure que les deux publications proviennent de la même compromission.
+Zenith Bank Plc a été mentionnée dans une revendication de fuite de données publiée le 9 août 2025 par KaruHunters, qui alléguait la mise en vente de plus de 1,8 million de dossiers de clients et d’employés. En juillet 2026, Zenith Bank est réapparue dans une revendication ransomware attribuée à ExfilSquad. Les deux publications sont séparées de près de onze mois et impliquent des acteurs différents. Cette répétition justifie une surveillance renforcée, mais les éléments disponibles ne permettent pas d’établir que les deux publications proviennent de la même compromission.
 
 ## 7. Tendances et lacunes de renseignement
 

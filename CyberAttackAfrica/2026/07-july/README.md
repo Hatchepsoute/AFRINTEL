@@ -251,7 +251,7 @@ The `planetsport.ma` domain was listed by LockBit 5 in April 2026. A free July p
 
 ### Zenith Bank
 
-Zenith Bank appears in an earlier data claim and in a July ransomware listing. This warrants monitoring, but does not establish that both publications came from the same compromise.
+Zenith Bank Plc was listed in a data-leak claim published on 9 August 2025 by KaruHunters, alleging the sale of more than 1.8 million customer and employee records. In July 2026, Zenith Bank appeared again in a separate ransomware claim attributed to ExfilSquad. The two publications are separated by nearly eleven months and involve different actors. This recurrence justifies enhanced monitoring, but the available evidence does not establish that both publications result from the same compromise.
 
 ## 7. Key trends and intelligence gaps
 
