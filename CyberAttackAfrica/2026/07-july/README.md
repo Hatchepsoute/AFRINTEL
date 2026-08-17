@@ -12,7 +12,7 @@ AFRINTEL recorded **42 incident records** in July 2026, involving **12 African c
 - **6 access-sale offers**;
 - **0 defacements**.
 
-Egypt and Tunisia led the geographic count with seven occurrences each, followed by Morocco with six and South Africa with five. The month was split between ransomware visibility, data-leak publications and access brokering; no single actor dominated the dataset.
+Egypt and Tunisia led the geographic count with seven occurrences each. Morocco and South Africa followed with six each. The month was split between ransomware visibility, data-leak publications and access brokering; no single actor dominated the dataset.
 
 The report combines leak-site listings, underground-forum posts and locally reviewed samples. A criminal publication remains a claim unless independent evidence supports it. The strongest records are those supported by structured files, coherent screenshots or visible administrative interfaces.
 
@@ -20,7 +20,7 @@ The report combines leak-site listings, underground-forum posts and locally revi
 
 All figures derive from [`victims.md`](./victims.md), the monthly source of truth. Each card is counted once in the incident total, using AFRINTEL’s detection date.
 
-The geographic table totals **42 country occurrences**, matching the incident count. One identity-photo record concerns both Nigeria and Côte d’Ivoire and is counted in both country views; this is offset by the MTN record, which is not attributed to a specific country and does not appear in the country breakdown.
+The geographic table contains **43 country occurrences rather than 42 incidents**. One identity-photo record concerns both Nigeria and Côte d’Ivoire and is therefore counted in both country views. The MTN record is attributed to South Africa with reservation; the national entity is not independently confirmed.
 
 Claimed volumes are not treated as established facts. Download links, credentials, personal data and secrets are not reproduced in this report.
 
@@ -31,7 +31,7 @@ Claimed volumes are not treated as established facts. Download links, credential
 | 🇪🇬 Egypt | 7 |
 | 🇹🇳 Tunisia | 7 |
 | 🇲🇦 Morocco | 6 |
-| 🇿🇦 South Africa | 5 |
+| 🇿🇦 South Africa | 6 |
 | 🇳🇬 Nigeria | 4 |
 | 🇩🇿 Algeria | 4 |
 | 🇨🇮 Côte d’Ivoire | 3 |
@@ -40,7 +40,7 @@ Claimed volumes are not treated as established facts. Download links, credential
 | 🇨🇲 Cameroon | 1 |
 | 🇰🇪 Kenya | 1 |
 | 🇸🇸 South Sudan | 1 |
-| **Total geographic occurrences** | **42** |
+| **Total geographic occurrences** | **43** |
 
 ```mermaid
 pie showData
@@ -48,7 +48,7 @@ pie showData
     "Egypt" : 7
     "Tunisia" : 7
     "Morocco" : 6
-    "South Africa" : 5
+    "South Africa" : 6
     "Nigeria" : 4
     "Algeria" : 4
     "Côte d’Ivoire" : 3
@@ -66,7 +66,7 @@ pie showData
 | Egypt | 2 | 5 |
 | Tunisia | 0 | 7 |
 | Morocco | 2 | 4 |
-| South Africa | 5 | 0 |
+| South Africa | 5 | 1 |
 | Nigeria | 2 | 2 |
 | Algeria | 0 | 4 |
 | Côte d’Ivoire | 2 | 1 |
@@ -75,17 +75,17 @@ pie showData
 | Botswana | 1 | 0 |
 | Kenya | 1 | 0 |
 | South Sudan | 1 | 0 |
-| **Total** | **18** | **24** |
+| **Total** | **18** | **25** |
 
 ### Geographic breakdown by region
 
 | Region | Occurrences | Ransomware | Leaks and access sales |
 |---|---:|---:|---:|
 | North Africa | **24** | 4 | 20 |
-| Southern Africa | **6** | 6 | 0 |
+| Southern Africa | **7** | 6 | 1 |
 | West and Central Africa | **10** | 6 | 4 |
 | East Africa | **2** | 2 | 0 |
-| **Total** | **42** | **18** | **24** |
+| **Total** | **43** | **18** | **25** |
 
 ## 4. Detailed analysis by incident type
 

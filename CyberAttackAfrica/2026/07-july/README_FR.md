@@ -12,7 +12,7 @@ AFRINTEL a recensé **42 fiches d’incidents** en juillet 2026, concernant **12
 - **6 offres de vente d’accès** ;
 - **0 défacement**.
 
-L’Égypte et la Tunisie arrivent en tête avec sept occurrences géographiques chacune, suivies du Maroc avec six et de l’Afrique du Sud avec cinq. La répartition montre un mois partagé entre ransomware, fuites de données et courtage d’accès, sans acteur dominant unique.
+L’Égypte et la Tunisie arrivent en tête avec sept occurrences géographiques chacune. Le Maroc et l’Afrique du Sud suivent avec six occurrences. La répartition montre un mois partagé entre ransomware, fuites de données et courtage d’accès, sans acteur dominant unique.
 
 Le rapport couvre des publications de sites de fuite, des messages de forums et des échantillons examinés localement. Une publication criminelle reste une revendication tant qu’elle n’est pas confirmée par des éléments indépendants. Les analyses les plus solides sont celles appuyées par des fichiers structurés, des captures cohérentes ou des interfaces administratives visibles.
 
@@ -20,7 +20,7 @@ Le rapport couvre des publications de sites de fuite, des messages de forums et 
 
 Les chiffres sont dérivés de [`victims_FR.md`](./victims_FR.md), source de référence du mois. Chaque fiche est comptée une fois dans le total des incidents, selon la date de détection retenue par AFRINTEL.
 
-La ventilation géographique totalise **42 occurrences**, conforme au nombre d'incidents. Une fiche concernant des photographies de pièces d’identité associe le Nigeria et la Côte d’Ivoire et est comptée dans les deux pays ; cet écart est compensé par la fiche MTN, qui n'est rattachée à aucun pays précis et n'apparaît donc pas dans la ventilation géographique.
+La ventilation géographique totalise **43 occurrences** au lieu de 42 : une fiche concernant des photographies de pièces d’identité associe le Nigeria et la Côte d’Ivoire et est donc comptée dans les deux pays. La fiche MTN est attribuée à l'Afrique du Sud sous réserve ; l'entité nationale n'est pas confirmée de manière indépendante.
 
 Les volumes annoncés par les acteurs ne sont pas repris comme des faits établis. Les liens de téléchargement, les identifiants, les données personnelles et les secrets ne sont pas reproduits dans ce rapport.
 
@@ -31,7 +31,7 @@ Les volumes annoncés par les acteurs ne sont pas repris comme des faits établi
 | 🇪🇬 Égypte | 7 |
 | 🇹🇳 Tunisie | 7 |
 | 🇲🇦 Maroc | 6 |
-| 🇿🇦 Afrique du Sud | 5 |
+| 🇿🇦 Afrique du Sud | 6 |
 | 🇳🇬 Nigeria | 4 |
 | 🇩🇿 Algérie | 4 |
 | 🇨🇮 Côte d’Ivoire | 3 |
@@ -40,7 +40,7 @@ Les volumes annoncés par les acteurs ne sont pas repris comme des faits établi
 | 🇨🇲 Cameroun | 1 |
 | 🇰🇪 Kenya | 1 |
 | 🇸🇸 Soudan du Sud | 1 |
-| **Total géographique** | **42** |
+| **Total géographique** | **43** |
 
 ```mermaid
 pie showData
@@ -48,7 +48,7 @@ pie showData
     "Égypte" : 7
     "Tunisie" : 7
     "Maroc" : 6
-    "Afrique du Sud" : 5
+    "Afrique du Sud" : 6
     "Nigeria" : 4
     "Algérie" : 4
     "Côte d’Ivoire" : 3
@@ -66,7 +66,7 @@ pie showData
 | Égypte | 2 | 5 |
 | Tunisie | 0 | 7 |
 | Maroc | 2 | 4 |
-| Afrique du Sud | 5 | 0 |
+| Afrique du Sud | 5 | 1 |
 | Nigeria | 2 | 2 |
 | Algérie | 0 | 4 |
 | Côte d'Ivoire | 2 | 1 |
@@ -75,17 +75,17 @@ pie showData
 | Botswana | 1 | 0 |
 | Kenya | 1 | 0 |
 | Soudan du Sud | 1 | 0 |
-| **Total** | **18** | **24** |
+| **Total** | **18** | **25** |
 
 ### Ventilation régionale
 
 | Région | Occurrences | Ransomware | Fuites et ventes d'accès |
 |---|---:|---:|---:|
 | Afrique du Nord | **24** | 4 | 20 |
-| Afrique australe | **6** | 6 | 0 |
+| Afrique australe | **7** | 6 | 1 |
 | Afrique de l'Ouest et centrale | **10** | 6 | 4 |
 | Afrique de l'Est | **2** | 2 | 0 |
-| **Total** | **42** | **18** | **24** |
+| **Total** | **43** | **18** | **25** |
 
 ## 4. Analyse détaillée par type d'incident
 
