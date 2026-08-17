@@ -70,7 +70,7 @@ pie showData
 ```
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["Égypte","Tunisie","Maroc","Afrique du Sud","Nigeria","Algérie","Côte d’Ivoire","Ghana","Botswana","Cameroun","Kenya","Soudan du Sud"]
@@ -102,7 +102,7 @@ Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géogra
 ### Ransomware par pays
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Ransomware par pays - juillet 2026"
     x-axis ["Afrique du Sud","Égypte","Maroc","Nigeria","Côte d’Ivoire","Ghana","Cameroun","Botswana","Kenya","Soudan du Sud"]
@@ -126,7 +126,7 @@ xychart-beta
 | **Total** |  | **25** |  |
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
     x-axis ["Tunisie","Égypte","Maroc","Algérie","Nigeria","Afrique du Sud","Côte d’Ivoire","Ghana"]
@@ -148,7 +148,7 @@ xychart-beta
 La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
@@ -166,6 +166,7 @@ xychart-beta
 | **Total** | **42** | **100 %** |
 
 
+```mermaid
 pie showData
     title Répartition des types d'incidents - juillet 2026
     "Ransomware" : 18
@@ -201,7 +202,7 @@ Les fuites de données couvrent des documents d’identité, des données médic
 | Caoutchouc / Agriculture | 1 | 2,4 % | █ |
 | **Total** | **42** | **100 %** |  |
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Répartition sectorielle - juillet 2026"
     x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
@@ -224,7 +225,7 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 | Autres sources nommées | 27 | Activités diverses |
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Acteurs et sources les plus présents - juillet 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Autres sources"]

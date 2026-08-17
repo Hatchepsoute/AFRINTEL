@@ -70,7 +70,7 @@ pie showData
 ```
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Geographic occurrences by country - July 2026"
     x-axis ["Egypt","Tunisia","Morocco","South Africa","Nigeria","Algeria","Côte d’Ivoire","Ghana","Botswana","Cameroon","Kenya","South Sudan"]
@@ -102,7 +102,7 @@ The 25 leak and access-sale occurrences include the additional country allocatio
 ### Ransomware by country
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Ransomware by country - July 2026"
     x-axis ["South Africa","Egypt","Morocco","Nigeria","Côte d’Ivoire","Ghana","Cameroon","Botswana","Kenya","South Sudan"]
@@ -126,7 +126,7 @@ xychart-beta
 | **Total** |  | **25** |  |
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Geographic distribution of data leaks and access sales - July 2026"
     x-axis ["Tunisia","Egypt","Morocco","Algeria","Nigeria","South Africa","Côte d’Ivoire","Ghana"]
@@ -148,7 +148,7 @@ xychart-beta
 The Nigeria and Côte d’Ivoire identity-document record contributes one occurrence to each country. MTN is allocated to South Africa in this working view, although its national entity is not confirmed. These allocations do not change the global total of 42 unique incidents.
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Geographic occurrences by region - July 2026"
     x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
@@ -166,6 +166,7 @@ xychart-beta
 | **Total** | **42** | **100%** |
 
 
+```mermaid
 pie showData
     title Incident type breakdown - July 2026
     "Ransomware" : 18
@@ -201,7 +202,7 @@ The leak side was more varied: identity documents, medical data, university acco
 | Rubber / Agriculture | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Sector distribution - July 2026"
     x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
@@ -224,7 +225,7 @@ Government and administration remained the largest sectoral grouping. The record
 | Other named sources | 27 | Mixed activity |
 
 
-~~~mermaid
+```mermaid
 xychart-beta
     title "Most active actors and sources - July 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Other sources"]
