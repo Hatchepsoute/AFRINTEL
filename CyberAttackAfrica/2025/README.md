@@ -83,7 +83,7 @@ pie showData
 ### Ransomware, leaks and access sales by country
 
 | Country | Ransomware | Data leaks | Access sales | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 🇪🇬 Egypt | 28 | 5 | 0 | 33 | █████████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
 | 🇲🇦 Morocco | 12 | 19 | 0 | 31 | ███████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | 🇿🇦 South Africa | 28 | 2 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
@@ -115,12 +115,12 @@ pie showData
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Chart | Distribution |
-| :--- | ---: | ---: | ---: | ---: |
-| North Africa | 96 | 50 | 46 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Southern Africa | 43 | 41 | 2 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| West and Central Africa | 38 | 16 | 22 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| East Africa | 19 | 15 | 4 | ██ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| Region | Occurrences | Ransomware | Leaks / access | Chart | Distribution (approx. 1 block / 5 incidents) |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| North Africa | 96 | 50 | 46 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 43 | 41 | 2 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| West and Central Africa | 38 | 16 | 22 | ████ | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| East Africa | 19 | 15 | 4 | ██ | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart-beta

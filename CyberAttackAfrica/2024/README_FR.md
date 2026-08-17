@@ -82,7 +82,7 @@ pie showData
 ### Comparaison ransomware, fuites et ventes d’accès par pays
 
 | Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
 | 🇿🇦 Afrique du Sud | 29 | 1 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
 | 🇪🇬 Égypte | 11 | 2 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
 | 🇩🇿 Algérie | 2 | 5 | 0 | 7 | ███████ | 🟧🟧 🟦🟦🟦🟦🟦 |
@@ -113,12 +113,12 @@ pie showData
 
 ### Répartition géographique par région
 
-| Région | Occurrences | Ransomware | Fuites / accès | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 34 | 22 | 12 | ████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Afrique australe | 43 | 42 | 1 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l’Ouest et centrale | 25 | 14 | 11 | ██████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Afrique de l’Est | 14 | 8 | 6 | ███ | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦 |
+| Région | Occurrences | Ransomware | Fuites / accès | Barre | Distribution (environ 1 bloc / 5 incidents) |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Afrique du Nord | 34 | 22 | 12 | ████████ | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
+| Afrique australe | 43 | 42 | 1 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| Afrique de l’Ouest et centrale | 25 | 14 | 11 | ██████ | 🟧🟧🟧 🟦🟦🟦 |
+| Afrique de l’Est | 14 | 8 | 6 | ███ | 🟧🟧 🟦🟦 |
 
 ```mermaid
 xychart-beta
