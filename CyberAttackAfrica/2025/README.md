@@ -2,12 +2,18 @@
 
 👉🏾 [French version](./README_FR.md)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](2025-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](https://img.shields.io/badge/Period-2025-blue)
 
 ---
 ## 1. Executive summary
 
-AFRINTEL recorded **196 records**: **122 ransomware**, **71 data leaks**, **3 access sales** and **0 defacements**.
+AFRINTEL recorded **196 records** in 2025: **122 ransomware claims (62.2%)**, **71 data leaks (36.2%)**, **3 access sales (1.5%)** and **no defacements**. The observed volume was strongly concentrated in North Africa, with **96 records**, followed by Southern Africa (**43**), West and Central Africa (**38**) and East Africa (**19**).
+
+The three most represented countries were **Egypt (33)**, **Morocco (31)** and **South Africa (30)**. This concentration does not necessarily indicate a higher level of compromise in those countries; it reflects the scope of the documented publications and claims collected by AFRINTEL.
+
+The year was marked by the weight of ransomware, but also by significant exposure of data linked to government, financial and technology organizations. Government and administration (**40 records**) and finance and banking (**39**) were the two most represented sectors, together accounting for nearly **40%** of the corpus. The most visible actors were **qilin (11 records)**, **nightspire (10)** and **devman (10)**, although publication frequency alone does not establish a common campaign or operational attribution.
+
+The main CTI challenge remains claim qualification: confirming the intrusion, distinguishing a new compromise from a repost and assessing the actual size of the advertised datasets. Access sales and data leaks should therefore be tracked as risk signals distinct from ransomware, while analysts look for possible links between exposed access, exfiltration and extortion.
 
 ## 2. Methodology
 
@@ -188,11 +194,13 @@ Legend: 1 = Morocco; 2 = Algeria; 3 = Mauritania; 4 = Tunisia; 5 = Egypt; 6 = Ni
 
 ## 4. Detailed analysis by incident type
 
-Ransomware claims represent 122 records. Leaks and access sales represent 74 records and include administrative, financial, healthcare, education and business data.
+Ransomware claims account for **122 records**, or **62.2%** of the corpus. They were particularly dominant in Southern Africa (**41 records**) and remained the majority in North Africa (**50**), while leaks and access sales reached **46** and **22** records respectively in those two regions.
+
+Data leaks and access sales account for **74 records**. Morocco leads with **19 records**, followed by Algeria (**15**), Mauritania (**8**) and Tunisia (**7**). The claimed data involved administrative, financial, healthcare, education and business environments. This distribution shows that data leakage is not only a consequence of ransomware: it also appears as an independent risk involving exposed databases, access sales or reposted samples.
 
 ## 5. Sectoral impact
 
-Government, finance, technology and education account for a substantial share of the records.
+Government and administration (**40 records**) and finance and banking (**39**) ranked highest, followed by technology and IT (**25**) and education (**17**). Government and finance alone represented nearly **40%** of the corpus. This concentration broadens defensive priorities to public systems, financial services, technology providers and education entities, with different risks depending on the data exposed.
 
 ## 6. Threat actor profile and risk assessment
 
@@ -231,7 +239,7 @@ Legend: 1 = qilin; 2 = nightspire; 3 = devman; 4 = incransom; 5 = funksec; 6 = P
 
 ## 7. Key trends and intelligence gaps
 
-Main gaps are independent confirmation, actual dataset size and the relationship between repeated claims.
+The 2025 record highlights three intelligence gaps. First, a published claim does not always confirm the intrusion or the actual dataset size. Second, the same organization may appear in separate publications, without allowing an immediate conclusion that the case is a new compromise, an update or a repost. Finally, access sales and leaks should be correlated with IAM, VPN, EDR, email, proxy and WAF telemetry to determine whether they represent an active risk or an older exposure.
 
 ## 8. Contextual MITRE ATT&CK mapping
 
@@ -256,6 +264,6 @@ Main gaps are independent confirmation, actual dataset size and the relationship
 
 ## 12. Conclusion
 
-These figures describe publications observed by AFRINTEL and support monitoring and defensive prioritisation.
+The 2025 record confirms a diverse cyber pressure: ransomware remained dominant, while data leaks and access sales expanded the risk surface across government, banking, technology and education. These figures describe publications observed by AFRINTEL; they should guide monitoring, technical validation and risk reduction without treating a claim as a confirmed compromise.
 
 **AFRINTEL** - TLP:CLEAR

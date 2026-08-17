@@ -2,12 +2,20 @@
 
 👉🏾 [Version anglaise](./README.md)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](2024-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Période-2024-blue)
 
 ---
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **116 fiches** : **86 ransomware**, **27 fuites de données**, **3 ventes d’accès** et **0 défacement.**
+AFRINTEL a recensé **116 fiches** en 2024 : **86 revendications ransomware (74,1 %)**, **27 fuites de données (23,3 %)**, **3 ventes d’accès (2,6 %)** et **aucun défacement**.
+
+Le signal le plus fort de l’année est la domination du ransomware, avec près de trois fiches sur quatre. L’**Afrique du Sud concentre 30 fiches**, dont **29 liées au ransomware**, très loin devant l’Égypte (**13**), l’Algérie et le Nigeria (**7 chacun**). Cette concentration doit être lue comme une tendance des publications observées par AFRINTEL, et non comme une mesure exhaustive de toutes les compromissions sur le continent.
+
+Les fuites de données et les ventes d’accès présentent un profil différent. Elles sont davantage réparties entre l’Algérie, le Burkina Faso, le Maroc, le Nigeria, l’Égypte et plusieurs autres pays. Les publications concernent notamment des environnements administratifs, financiers, éducatifs, médicaux et commerciaux. Elles exposent un risque qui dépasse la seule indisponibilité des systèmes : fraude, hameçonnage ciblé, réutilisation d’identifiants et pression sur les organisations concernées.
+
+Sur le plan sectoriel, les technologies et l’informatique (**18 fiches**), la finance et la banque (**15**), l’éducation (**12**) et le gouvernement (**12**) arrivent en tête. Les acteurs les plus visibles sont **lockbit3 (16 fiches)**, **ransomhub (12)**, **killsec (10)** et **hunters (8)**. Leur présence répétée justifie une veille renforcée, mais ne suffit pas à démontrer une campagne commune ni une attribution opérationnelle.
+
+L’enjeu central pour les équipes CTI et SOC en 2024 est donc double : réduire l’impact des attaques ransomware, tout en traitant les fuites et ventes d’accès comme des signaux précurseurs ou des vecteurs de compromission à part entière. La qualification des revendications, la détection des republications et la mesure réelle des volumes annoncés restent indispensables avant toute conclusion.
 
 ## 2. Méthodologie
 
@@ -186,11 +194,11 @@ Légende: 1 = Algérie; 2 = Burkina Faso; 3 = Maroc; 4 = Nigeria; 5 = Égypte; 6
 
 ## 4. Analyse détaillée par type d’incident
 
-Les revendications ransomware représentent 86 fiches. Les fuites et ventes d’accès représentent 30 fiches et concernent notamment des données administratives, financières, médicales, éducatives et commerciales.
+Les revendications ransomware représentent **86 fiches**, soit **74,1 %** du corpus. Elles sont fortement concentrées en Afrique du Sud, qui compte **29 fiches ransomware**, tandis que l’Égypte arrive ensuite avec **11**. Les fuites de données et ventes d’accès représentent **30 fiches** au total. Elles sont moins concentrées géographiquement et couvrent notamment des données administratives, financières, médicales, éducatives et commerciales. Cette différence de répartition impose de distinguer les mesures de résilience contre le chiffrement des actions de prévention de l’exfiltration, de la fraude et de la réutilisation des accès.
 
 ## 5. Impact sectoriel
 
-Les secteurs gouvernemental, financier, technologique et éducatif concentrent une part importante des fiches.
+Les secteurs technologique et informatique (**18 fiches**), financier et bancaire (**15**), éducatif (**12**) et gouvernemental (**12**) regroupent les volumes les plus élevés. Cette répartition montre que le risque ne se limite pas aux administrations : les prestataires technologiques, les établissements financiers et les acteurs de l’éducation constituent également des surfaces d’exposition importantes. Les données publiées ou revendiquées peuvent combiner informations professionnelles, données personnelles, documents administratifs et éléments utiles à des campagnes de fraude.
 
 ## 6. Profil des acteurs et évaluation du risque
 
@@ -229,7 +237,7 @@ Légende: 1 = lockbit3; 2 = ransomhub; 3 = killsec; 4 = hunters; 5 = spacebears;
 
 ## 7. Tendances et lacunes de renseignement
 
-Les limites principales sont la confirmation indépendante, la taille réelle des jeux de données et le lien entre revendications répétées.
+Les tendances sont suffisamment nettes pour prioriser la défense, mais plusieurs limites doivent rester visibles. Les publications étudiées ne permettent pas toujours de confirmer l’intrusion, la taille réelle des données ou la date exacte de compromission. Les doubles revendications et les republications peuvent aussi gonfler artificiellement la perception d’une campagne. La priorité CTI consiste donc à relier les revendications aux journaux EDR, IAM, VPN, messagerie, proxy et sauvegardes, puis à comparer les échantillons sans diffuser de données personnelles.
 
 ## 8. Cartographie MITRE ATT&CK contextuelle
 
@@ -254,6 +262,6 @@ Les limites principales sont la confirmation indépendante, la taille réelle de
 
 ## 12. Conclusion
 
-Ces chiffres décrivent les publications observées par AFRINTEL et servent à prioriser la veille et la défense.
+L’année 2024 confirme que le paysage cyber africain combine une pression ransomware très visible et une circulation plus diffuse de données et d’accès exposés. Les chiffres présentés décrivent les publications observées par AFRINTEL ; ils servent à orienter la veille, la validation technique et les priorités de défense, sans transformer une revendication en compromission confirmée.
 
 **AFRINTEL** - TLP:CLEAR

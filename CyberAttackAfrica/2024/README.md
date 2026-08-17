@@ -2,12 +2,20 @@
 
 👉🏾 [French version](./README_FR.md)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](2024-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](https://img.shields.io/badge/Period-2024-blue)
 
 ---
 ## 1. Executive summary
 
-AFRINTEL recorded **116 records**: **86 ransomware**, **27 data leaks**, **3 access sales** and **0 defacements**.
+AFRINTEL recorded **116 records** in 2024: **86 ransomware claims (74.1%)**, **27 data leaks (23.3%)**, **3 access sales (2.6%)** and **no defacements**.
+
+The strongest signal of the year was the dominance of ransomware, which accounted for nearly three out of every four records. **South Africa accounted for 30 records**, including **29 ransomware-related records**, well ahead of Egypt (**13**) and Algeria and Nigeria (**7 each**). This concentration should be read as a trend in AFRINTEL’s observed publications, not as a complete measure of all compromises across the continent.
+
+Data leaks and access sales showed a different profile. They were more widely distributed across Algeria, Burkina Faso, Morocco, Nigeria, Egypt and several other countries. The publications involved administrative, financial, education, healthcare and business environments. Their risk extends beyond system disruption to fraud, targeted phishing, credential reuse and pressure on affected organizations.
+
+By sector, technology and IT (**18 records**), finance and banking (**15**), education (**12**) and government (**12**) ranked highest. The most visible actors were **lockbit3 (16 records)**, **ransomhub (12)**, **killsec (10)** and **hunters (8)**. Repeated appearances justify closer monitoring, but do not by themselves demonstrate a common campaign or operational attribution.
+
+The central challenge for CTI and SOC teams in 2024 was therefore twofold: reduce the impact of ransomware while treating leaks and access sales as full risk signals and possible entry points. Claim qualification, repost detection and validation of advertised data volumes remain essential before drawing conclusions.
 
 ## 2. Methodology
 
@@ -186,11 +194,11 @@ Legend: 1 = Algeria; 2 = Burkina Faso; 3 = Morocco; 4 = Nigeria; 5 = Egypt; 6 = 
 
 ## 4. Detailed analysis by incident type
 
-Ransomware claims represent 86 records. Leaks and access sales represent 30 records and include administrative, financial, healthcare, education and business data.
+Ransomware claims represent **86 records**, or **74.1%** of the corpus. They were heavily concentrated in South Africa, with **29 ransomware records**, followed by Egypt with **11**. Data leaks and access sales account for **30 records**. They are less geographically concentrated and include administrative, financial, healthcare, education and business data. This difference requires separate controls for encryption resilience and for preventing exfiltration, fraud and access reuse.
 
 ## 5. Sectoral impact
 
-Government, finance, technology and education account for a substantial share of the records.
+Technology and IT (**18 records**), finance and banking (**15**), education (**12**) and government (**12**) were the most represented sectors. This distribution shows that exposure is not limited to public institutions: technology providers, financial organizations and education entities also represent significant attack surfaces. Published or claimed data may combine professional information, personal data, administrative documents and material useful for fraud campaigns.
 
 ## 6. Threat actor profile and risk assessment
 
@@ -229,7 +237,7 @@ Legend: 1 = lockbit3; 2 = ransomhub; 3 = killsec; 4 = hunters; 5 = spacebears; 6
 
 ## 7. Key trends and intelligence gaps
 
-Main gaps are independent confirmation, actual dataset size and the relationship between repeated claims.
+The trends are strong enough to guide defensive priorities, but several limitations remain. The reviewed publications do not always confirm the intrusion, the actual dataset size or the exact compromise date. Double claims and reposts may also inflate the perception of a campaign. CTI teams should therefore link claims to EDR, IAM, VPN, email, proxy and backup telemetry, and compare samples without redistributing personal data.
 
 ## 8. Contextual MITRE ATT&CK mapping
 
@@ -254,6 +262,6 @@ Main gaps are independent confirmation, actual dataset size and the relationship
 
 ## 12. Conclusion
 
-These figures describe publications observed by AFRINTEL and support monitoring and defensive prioritisation.
+The 2024 record confirms a cyber landscape combining highly visible ransomware pressure with a more distributed circulation of exposed data and access. These figures describe publications observed by AFRINTEL; they support monitoring, technical validation and defensive prioritisation without treating a claim as a confirmed compromise.
 
 **AFRINTEL** - TLP:CLEAR

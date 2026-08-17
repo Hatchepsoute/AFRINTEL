@@ -2,12 +2,18 @@
 
 👉🏾 [Version anglaise](./README.md)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](2025-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Période-2025-blue)
 
 ---
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **196 fiches** : **122 ransomware**, **71 fuites de données**, **3 ventes d’accès** et **0 défacement.**
+AFRINTEL a recensé **196 fiches** en 2025 : **122 revendications ransomware (62,2 %)**, **71 fuites de données (36,2 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest et centrale (**38**) et l’Afrique de l’Est (**19**).
+
+Les trois pays les plus représentés sont l’**Égypte (33)**, le **Maroc (31)** et l’**Afrique du Sud (30)**. Cette concentration ne traduit pas nécessairement un niveau de compromission supérieur dans ces pays : elle reflète le périmètre des publications et revendications documentées par AFRINTEL.
+
+L’année se distingue par le poids du ransomware, mais aussi par une exposition importante des données issues des administrations, des établissements financiers et des organisations technologiques. Le gouvernement et l’administration (**40 fiches**) ainsi que la finance et la banque (**39**) constituent les deux secteurs les plus représentés, soit près de **40 %** du corpus. Les acteurs les plus visibles sont **qilin (11 fiches)**, **nightspire (10)** et **devman (10)**, sans que cette fréquence suffise à établir une campagne commune ou une attribution opérationnelle.
+
+Le principal enjeu CTI reste la qualification des revendications : confirmer l’intrusion, distinguer une nouvelle compromission d’une republication et mesurer la taille réelle des données annoncées. Les ventes d’accès et les fuites doivent donc être suivies comme des signaux de risque distincts du ransomware, tout en recherchant les liens possibles entre accès exposés, exfiltration et extorsion.
 
 ## 2. Méthodologie
 
@@ -188,11 +194,13 @@ Légende: 1 = Maroc; 2 = Algérie; 3 = Mauritanie; 4 = Tunisie; 5 = Égypte; 6 =
 
 ## 4. Analyse détaillée par type d’incident
 
-Les revendications ransomware représentent 122 fiches. Les fuites et ventes d’accès représentent 74 fiches et concernent notamment des données administratives, financières, médicales, éducatives et commerciales.
+Les revendications ransomware représentent **122 fiches**, soit **62,2 %** du corpus. Elles dominent particulièrement en Afrique australe (**41 fiches**) et restent majoritaires en Afrique du Nord (**50**), tandis que les fuites et ventes d’accès atteignent respectivement **46** et **22** fiches dans ces deux régions.
+
+Les fuites de données et ventes d’accès représentent **74 fiches**. Le Maroc arrive en tête avec **19 fiches**, suivi de l’Algérie (**15**), de la Mauritanie (**8**) et de la Tunisie (**7**). Les données revendiquées concernent notamment des environnements administratifs, financiers, médicaux, éducatifs et commerciaux. Cette répartition montre que la fuite de données ne constitue pas seulement une conséquence du ransomware : elle apparaît aussi comme un risque autonome, associé à l’exposition de bases, à la revente d’accès ou à la republication d’échantillons.
 
 ## 5. Impact sectoriel
 
-Les secteurs gouvernemental, financier, technologique et éducatif concentrent une part importante des fiches.
+Les secteurs gouvernemental et administratif (**40 fiches**) ainsi que financier et bancaire (**39**) arrivent en tête, devant les technologies et l’informatique (**25**) et l’éducation (**17**). À eux seuls, les secteurs gouvernemental et financier représentent près de **40 %** du corpus. Cette concentration élargit la priorité de défense aux systèmes publics, aux services financiers, aux prestataires technologiques et aux établissements éducatifs, avec des risques distincts selon la nature des données exposées.
 
 ## 6. Profil des acteurs et évaluation du risque
 
@@ -231,7 +239,7 @@ Légende: 1 = qilin; 2 = nightspire; 3 = devman; 4 = incransom; 5 = funksec; 6 =
 
 ## 7. Tendances et lacunes de renseignement
 
-Les limites principales sont la confirmation indépendante, la taille réelle des jeux de données et le lien entre revendications répétées.
+L’année 2025 met en évidence trois lacunes de renseignement. Premièrement, la revendication publiée ne permet pas toujours de confirmer l’intrusion ni le volume réel des données. Deuxièmement, une même organisation peut apparaître dans des publications distinctes, sans qu’il soit possible de conclure immédiatement à une nouvelle compromission, une mise à jour ou une republication. Enfin, les ventes d’accès et les fuites doivent être corrélées avec les journaux IAM, VPN, EDR, messagerie, proxy et WAF afin de déterminer si elles correspondent à un risque actif ou à une exposition ancienne.
 
 ## 8. Cartographie MITRE ATT&CK contextuelle
 
@@ -256,6 +264,6 @@ Les limites principales sont la confirmation indépendante, la taille réelle de
 
 ## 12. Conclusion
 
-Ces chiffres décrivent les publications observées par AFRINTEL et servent à prioriser la veille et la défense.
+L’année 2025 confirme une pression cyber diversifiée : le ransomware reste majoritaire, mais les fuites de données et les ventes d’accès élargissent la surface de risque vers les administrations, les banques, les technologies et l’éducation. Les chiffres décrivent les publications observées par AFRINTEL ; ils doivent guider la veille, la validation technique et la réduction du risque, sans transformer une revendication en compromission confirmée.
 
 **AFRINTEL** - TLP:CLEAR
