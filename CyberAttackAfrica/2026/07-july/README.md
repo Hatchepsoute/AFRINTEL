@@ -69,13 +69,13 @@ pie showData
     "South Sudan" : 1
 ```
 
-~~~mermaid
+
 xychart-beta
     title "Geographic occurrences by country - July 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
     bar [7,7,6,6,4,4,3,2,1,1,1,1]
-~~~
+```
 
 Legend: EG = Egypt, TN = Tunisia, MA = Morocco, ZA = South Africa, NG = Nigeria, DZ = Algeria, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroon, KE = Kenya, SS = South Sudan
 
@@ -101,13 +101,13 @@ The 25 leak and access-sale occurrences include the additional country allocatio
 
 ### Ransomware by country
 
-~~~mermaid
+
 xychart-beta
     title "Ransomware by country - July 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
     bar [5,2,2,2,2,1,1,1,1,1]
-~~~
+```
 
 Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d’Ivoire, GH = Ghana, CM = Cameroon, BW = Botswana, KE = Kenya, SS = South Sudan
 
@@ -125,13 +125,13 @@ Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d�
 | 6 | 🇬🇭 Ghana | **1** | █ |
 | **Total** |  | **25** |  |
 
-~~~mermaid
+
 xychart-beta
     title "Geographic distribution of data leaks and access sales - July 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
     bar [7,5,4,4,2,1,1,1]
-~~~
+```
 
 Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA = South Africa, CI = Côte d’Ivoire, GH = Ghana
 
@@ -147,13 +147,13 @@ Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA =
 
 The Nigeria and Côte d’Ivoire identity-document record contributes one occurrence to each country. MTN is allocated to South Africa in this working view, although its national entity is not confirmed. These allocations do not change the global total of 42 unique incidents.
 
-~~~mermaid
+
 xychart-beta
     title "Geographic occurrences by region - July 2026"
     x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
     y-axis "Occurrences" 0 --> 26
     bar [24,7,10,2]
-~~~
+```
 
 ## 4. Detailed analysis by incident type
 
@@ -164,13 +164,13 @@ xychart-beta
 | 🟪 Access sale | 6 | 14.3% |
 | **Total** | **42** | **100%** |
 
-~~~mermaid
+
 pie showData
     title Incident type breakdown - July 2026
     "Ransomware" : 18
     "Data leaks" : 18
     "Access sales" : 6
-~~~
+```
 
 Ransomware publications were mainly associated with **arcusmedia**, **dragonforce**, **krybit** and **thegentlemen**. These are listings or claims; they do not automatically establish encryption, exfiltration or operational disruption.
 
@@ -199,13 +199,13 @@ The leak side was more varied: identity documents, medical data, university acco
 | Gaming / Entertainment | 1 | 2.4% | █ |
 | Rubber / Agriculture | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
-~~~mermaid
+
 xychart-beta
     title "Sector distribution - July 2026"
     x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
     y-axis "Records" 0 --> 12
     bar [11,5,4,3,3,3,2,11]
-~~~
+```
 
 Government and administration remained the largest sectoral grouping. The records covered public procurement, justice, employment, identity, land administration and public services, creating risks that extend beyond data disclosure into fraud and targeted impersonation.
 
@@ -221,13 +221,13 @@ Government and administration remained the largest sectoral grouping. The record
 | Phantom Atlas | 2 | Data leak |
 | Other named sources | 27 | Mixed activity |
 
-~~~mermaid
+
 xychart-beta
     title "Most active actors and sources - July 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Other sources"]
     y-axis "Records" 0 --> 28
     bar [4,3,2,2,2,2,27]
-~~~
+```
 
 Frequency alone does not establish a coordinated campaign. The dataset combines ransomware groups, publication accounts, access brokers and reposters.
 

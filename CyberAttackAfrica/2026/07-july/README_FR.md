@@ -69,13 +69,13 @@ pie showData
     "Soudan du Sud" : 1
 ```
 
-~~~mermaid
+
 xychart-beta
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
     bar [7,7,6,6,4,4,3,2,1,1,1,1]
-~~~
+```
 
 Légende : EG = Égypte, TN = Tunisie, MA = Maroc, ZA = Afrique du Sud, NG = Nigeria, DZ = Algérie, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroun, KE = Kenya, SS = Soudan du Sud
 
@@ -101,13 +101,13 @@ Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géogra
 
 ### Ransomware par pays
 
-~~~mermaid
+
 xychart-beta
     title "Ransomware par pays - juillet 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
     bar [5,2,2,2,2,1,1,1,1,1]
-~~~
+```
 
 Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Côte d’Ivoire, GH = Ghana, CM = Cameroun, BW = Botswana, KE = Kenya, SS = Soudan du Sud
 
@@ -125,13 +125,13 @@ Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Cô
 | 6 | 🇬🇭 Ghana | **1** | █ |
 | **Total** |  | **25** |  |
 
-~~~mermaid
+
 xychart-beta
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
     bar [7,5,4,4,2,1,1,1]
-~~~
+```
 
 Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, ZA = Afrique du Sud, CI = Côte d’Ivoire, GH = Ghana
 
@@ -147,13 +147,13 @@ Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, 
 
 La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
 
-~~~mermaid
+
 xychart-beta
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
     bar [24,7,10,2]
-~~~
+```
 
 ## 4. Analyse détaillée par type d'incident
 
@@ -164,13 +164,13 @@ xychart-beta
 | 🟪 Vente d’accès | 6 | 14,3 % |
 | **Total** | **42** | **100 %** |
 
-~~~mermaid
+
 pie showData
     title Répartition des types d'incidents - juillet 2026
     "Ransomware" : 18
     "Fuites de données" : 18
     "Ventes d'accès" : 6
-~~~
+```
 
 Les publications ransomware sont principalement associées à **arcusmedia**, **dragonforce**, **krybit** et **thegentlemen**. Ces occurrences correspondent à des publications ou revendications ; elles ne démontrent pas systématiquement un chiffrement, une exfiltration ou une interruption d’activité.
 
@@ -199,13 +199,13 @@ Les fuites de données couvrent des documents d’identité, des données médic
 | Jeux / Divertissement | 1 | 2,4 % | █ |
 | Caoutchouc / Agriculture | 1 | 2,4 % | █ |
 | **Total** | **42** | **100 %** |  |
-~~~mermaid
+
 xychart-beta
     title "Répartition sectorielle - juillet 2026"
     x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
     y-axis "Fiches" 0 --> 12
     bar [11,5,4,3,3,3,2,11]
-~~~
+```
 
 Les administrations restent le premier ensemble sectoriel. Les fiches concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
 
@@ -221,13 +221,13 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 | Phantom Atlas | 2 | Fuite de données |
 | Autres sources nommées | 27 | Activités diverses |
 
-~~~mermaid
+
 xychart-beta
     title "Acteurs et sources les plus présents - juillet 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Autres sources"]
     y-axis "Fiches" 0 --> 28
     bar [4,3,2,2,2,2,27]
-~~~
+```
 
 La fréquence d’un nom ne suffit pas à établir une campagne coordonnée. Le corpus mélange groupes ransomware, comptes de publication, courtiers d’accès et republications.
 
