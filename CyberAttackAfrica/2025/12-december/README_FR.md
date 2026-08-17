@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Rapport CTI : Cyberattaques en Afrique - Décembre 2025 (14 victimes)
+# Rapport CTI : Cyberattaques en Afrique - Décembre 2025 (18 victimes)
 
 👉🏾 [**English version available here**](./README.md)
 
@@ -14,13 +14,14 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 ---
 
 ## 2. Résumé exécutif
-Décembre 2025 marque une hausse de l'activité des ransomwares avec 14 victimes recensées dans 7 pays africains. Le mois est caractérisé par une concentration d'attaques en Égypte et en Afrique du Sud, ainsi qu'un ciblage persistant du secteur de la santé en Afrique du Nord.
+Décembre 2025 marque une hausse de l'activité des ransomwares avec 14 victimes ransomware et 4 revendications de fuite de données non liées au ransomware, recensées dans 10 pays africains. Le mois est caractérisé par une concentration d'attaques en Égypte et en Afrique du Sud, un ciblage persistant du secteur de la santé, et une nouvelle revendication touchant le secteur de l'énergie/des infrastructures critiques au Kenya.
 
-* **Nombre total d'attaques recensées** : 14
+* **Nombre total d'attaques recensées** : 18
 * **Acteurs les plus actifs** : `lockbit5` (3 attaques), `qilin` (3 attaques).
-    * *Autres groupes actifs* : dragonforce (2), nova (2), kazu, ransomhouse, devman, direwolf (1 chacun).
-* **Secteurs les plus ciblés** : Santé (3), Finance/Leasing (2), Assurances (2), Administrations publiques (2).
-* **Pays les plus touchés** : 🇪🇬 Égypte (4), 🇿🇦 Afrique du Sud (3), 🇹🇳 Tunisie (3).
+    * *Autres groupes ransomware actifs* : dragonforce (2), nova (2), kazu, ransomhouse, devman, direwolf (1 chacun).
+    * *Revendications de fuite de données hors ransomware* : GhostVector, camillabf, KaruHunters, LindaBF (1 revendication chacun, non rattachée à un groupe ransomware nommé).
+* **Secteurs les plus ciblés** : Santé (4), Finance/Leasing (2), Assurances (2), Administrations publiques (2), Industrie manufacturière (2).
+* **Pays les plus touchés** : 🇪🇬 Égypte (5), 🇿🇦 Afrique du Sud (3), 🇹🇳 Tunisie (3), 🇲🇦 Maroc (1), 🇰🇪 Kenya (1).
 * **Incident notable** : Double cyberattaque sur l'**Hôpital La Rabta** (Tunisie) par deux groupes différents (devman et qilin) en l'espace de deux semaines.
 
 ---
@@ -50,41 +51,59 @@ pie title Activité des groupes de ransomware (Déc 2025)
     "devman" : 1
     "direwolf" : 1
 ```
+
+### 3.1b Revendications de fuite de données hors ransomware
+| Acteur | Victime | Pays |
+| :--- | :--- | :---: |
+| **GhostVector** | Oran University 1 Ahmed Ben Bella | 🇩🇿 Algérie |
+| **camillabf** | 100 Watt Plast | 🇪🇬 Égypte |
+| **KaruHunters** | Pharmacie.ma | 🇲🇦 Maroc |
+| **LindaBF** | KETRACO | 🇰🇪 Kenya |
+| **Total** | | **4** |
+
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 | :--- | :---: |
-| 🏥 Santé | 3 |
+| 🏥 Santé | 4 |
 | 💰 Finance / Leasing | 2 |
 | 🛡️ Assurances | 2 |
 | 🏛️ Administration publique | 2 |
+| 🏭 Industrie manufacturière | 2 |
 | 💻 Technologies | 1 |
 | 🚚 Logistique / Automobile | 1 |
 | 🏗️ Immobilier / Industrie | 1 |
-| 🏭 Industrie manufacturière | 1 |
 | 🌾 Agroalimentaire | 1 |
-| **Total** | **14** |
+| 🎓 Éducation | 1 |
+| ⚡ Énergie | 1 |
+| **Total** | **18** |
 
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 | :--- | :---: |
-| 🇪🇬 Égypte | 4 |
+| 🇪🇬 Égypte | 5 |
 | 🇿🇦 Afrique du Sud | 3 |
 | 🇹🇳 Tunisie | 3 |
 | 🇳🇬 Nigeria | 1 |
 | 🇬🇭 Ghana | 1 |
 | 🇿🇲 Zambie | 1 |
 | 🇿🇼 Zimbabwe | 1 |
-| **Total** | **14** |
+| 🇲🇦 Maroc | 1 |
+| 🇩🇿 Algérie | 1 |
+| 🇰🇪 Kenya | 1 |
+| **Total** | **18** |
 
 ```mermaid
 pie title Répartition par pays (Décembre 2025)
-    "🇪🇬 Égypte" : 4
-    "🇿🇦 Afrique du Sud" : 3
-    "🇹🇳 Tunisie" : 3
-    "🇳🇬 Nigeria" : 1
-    "🇬🇭 Ghana" : 1
-    "🇿🇲 Zambie" : 1
-    "🇿🇼 Zimbabwe" : 1
+    "Égypte" : 5
+    "Afrique du Sud" : 3
+    "Tunisie" : 3
+    "Nigeria" : 1
+    "Ghana" : 1
+    "Zambie" : 1
+    "Zimbabwe" : 1
+    "Maroc" : 1
+    "Algérie" : 1
+    "Kenya" : 1
 ```
 ---
 
@@ -114,47 +133,67 @@ pie title Répartition par pays (Décembre 2025)
 * **devman** (12/12/2025) : **Hôpital La Rabta** (Tunisie, Santé) - Première attaque enregistrée.
 * **direwolf** (22/12/2025) : **Polaris Parks** (Égypte, Immobilier/Industrie) - Revendication & divulgation.
 
-### 4.6 Graphe acteur → victime → pays
+### 4.6 Revendications de fuite de données hors ransomware (4 attaques)
+* **29/12/2025** : **Oran University 1 Ahmed Ben Bella** (Algérie, Éducation) - Claim - Data Sample Published, acteur GhostVector. Une publication annonce une base datée de 2023 avec environ 58 000 enregistrements (noms, dates de naissance, téléphones, genre, emails, empreintes de mot de passe, nationalité).
+* **29/12/2025** : **100 Watt Plast** (Égypte, Industrie/Fabrication) - Claim - Data Sample Published, acteur camillabf. Un jeu de données revendiqué de 180 000 enregistrements (nom, email, téléphone, mot de passe), avec une vingtaine d'enregistrements complets directement visibles dans l'échantillon.
+* **31/12/2025** : **Pharmacie.ma** (Maroc, Santé/E-commerce pharmaceutique) - Claim - Data Sample Published, acteur KaruHunters. Deux sauvegardes complètes de base de données examinées, couvrant jusqu'à environ 27 900 comptes professionnels enregistrés (pharmaciens, médecins, personnel officinal et étudiants).
+* **31/12/2025** : **Kenya Electricity Transmission Company (KETRACO)** (Kenya, Énergie/Infrastructure critique) - Claim - Data Sample Published, acteur LindaBF. L'échantillon montre une liste d'utilisateurs newsletter/annuaire (noms, emails, dates de création de compte) ; une valeur de mot de passe répétée dans plusieurs enregistrements ramène le niveau de confiance à moyen.
+
+### 4.7 Graphe acteur → victime → pays
 ```mermaid
 graph LR
-    lockbit5 -->|incolease.com| EG1["🇪🇬 Égypte"]
-    lockbit5 -->|elundini.gov.za| SA1["🇿🇦 Afrique du Sud"]
-    lockbit5 -->|Proplastics| ZW["🇿🇼 Zimbabwe"]
-    qilin -->|Kasapreko| GH["🇬🇭 Ghana"]
-    qilin -->|Diesel Electric| SA2["🇿🇦 Afrique du Sud"]
-    qilin -->|Hôpital La Rabta| TN1["🇹🇳 Tunisie"]
-    dragonforce -->|3S Software| EG2["🇪🇬 Égypte"]
-    dragonforce -->|NCR| SA3["🇿🇦 Afrique du Sud"]
-    nova -->|NHIMA| ZM["🇿🇲 Zambie"]
-    nova -->|STR| TN2["🇹🇳 Tunisie"]
-    kazu -->|Leadway| NG["🇳🇬 Nigeria"]
-    ransomhouse -->|Arkan| EG3["🇪🇬 Égypte"]
-    devman -->|Hôpital La Rabta| TN3["🇹🇳 Tunisie"]
-    direwolf -->|Polaris Parks| EG4["🇪🇬 Égypte"]
+    lockbit5 -->|incolease.com| EG1["Égypte"]
+    lockbit5 -->|elundini.gov.za| SA1["Afrique du Sud"]
+    lockbit5 -->|Proplastics| ZW["Zimbabwe"]
+    qilin -->|Kasapreko| GH["Ghana"]
+    qilin -->|Diesel Electric| SA2["Afrique du Sud"]
+    qilin -->|Hôpital La Rabta| TN1["Tunisie"]
+    dragonforce -->|3S Software| EG2["Égypte"]
+    dragonforce -->|NCR| SA3["Afrique du Sud"]
+    nova -->|NHIMA| ZM["Zambie"]
+    nova -->|STR| TN2["Tunisie"]
+    kazu -->|Leadway| NG["Nigeria"]
+    ransomhouse -->|Arkan| EG3["Égypte"]
+    devman -->|Hôpital La Rabta| TN3["Tunisie"]
+    direwolf -->|Polaris Parks| EG4["Égypte"]
+    GhostVector -->|Oran University 1| DZ["Algérie"]
+    camillabf -->|100 Watt Plast| EG5["Égypte"]
+    KaruHunters -->|Pharmacie.ma| MA1["Maroc"]
+    LindaBF -->|KETRACO| KE["Kenya"]
 
     %% Styles et Couleurs
     style lockbit5 fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
     style qilin fill:#ffa500,stroke:#333,stroke-width:2px
     style dragonforce fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
     style nova fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    
+    style GhostVector fill:#888,stroke:#333,stroke-width:2px,color:#fff
+    style camillabf fill:#888,stroke:#333,stroke-width:2px,color:#fff
+    style KaruHunters fill:#888,stroke:#333,stroke-width:2px,color:#fff
+    style LindaBF fill:#888,stroke:#333,stroke-width:2px,color:#fff
+
     %% Style des pays
     classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,SA2,SA3,Nigeria,Tunisia1,Tunisia2,Tunisia3,Zimbabwe,Ghana country
+    class EG1,EG2,EG3,EG4,EG5,SA1,SA2,SA3,ZM,NG,TN1,TN2,TN3,ZW,GH,MA1,DZ,KE country
 ```
 ---
 
 ## 5. Analyse sectorielle
-* **Santé (3)** : Forte vulnérabilité en Tunisie avec trois incidents majeurs touchant des CHU et des associations médicales.
+* **Santé (4)** : Forte vulnérabilité en Tunisie avec trois incidents majeurs touchant des CHU et des associations médicales, ainsi qu'une revendication de fuite de données touchant une plateforme marocaine de e-commerce pharmaceutique.
 * **Administration Publique (2)** : Ciblage d'organismes de régulation critiques (NCR en Afrique du Sud) et de municipalités locales (Elundini).
 * **Assurance & Finance (4)** : Focus continu sur les secteurs à forte valeur ajoutée au Nigeria, en Égypte et en Zambie.
+* **Industrie manufacturière (2)** : Attaque ransomware contre un fabricant zimbabwéen de plastiques, ainsi qu'une revendication distincte de fuite de données contre un fabricant égyptien de produits électriques et plastiques (100 Watt Plast).
+* **Éducation (1)** : Une revendication de fuite de données contre une université publique algérienne (Oran University 1), annonçant un jeu de données daté de 2023 d'environ 58 000 enregistrements d'étudiants/personnel.
+* **Énergie (1)** : Une nouvelle revendication de fuite de données contre l'opérateur national kényan de transport d'électricité (KETRACO), premier cas lié aux infrastructures critiques/énergie recensé ce mois-ci.
 
 ---
 
 ## 6. Analyse géographique
-* **🇪🇬 Égypte** : Reste la cible principale pour le deuxième mois consécutif avec **4 victimes**.
+* **🇪🇬 Égypte** : Reste la cible principale pour le deuxième mois consécutif avec **5 victimes**, entre attaques ransomware (technologie, finance, industrie) et une revendication de fuite de données supplémentaire (100 Watt Plast).
 * **🇿🇦 Afrique du Sud** : Hausse significative avec **3 victimes**, incluant un régulateur financier national.
 * **🇹🇳 Tunisie** : Émergence comme zone à risque pour les infrastructures de santé avec **3 attaques** en décembre.
+* **🇲🇦 Maroc** : Une revendication de fuite de données (Pharmacie.ma, acteur KaruHunters), ajoutant une dimension santé distincte de l'activité ransomware du mois.
+* **🇩🇿 Algérie** : Une revendication de fuite de données contre une université publique (Oran University 1, acteur GhostVector).
+* **🇰🇪 Kenya** : Une nouvelle revendication de fuite de données contre l'opérateur national de transport d'électricité (KETRACO, acteur LindaBF) ; l'échantillon présente des incohérences internes (une valeur de mot de passe répétée) qui ramènent le niveau de confiance à moyen.
 
 ---
 
@@ -176,7 +215,7 @@ graph LR
 ---
 
 ## 9. Conclusion
-Décembre 2025 témoigne d'une intensification de l'impact des ransomwares en Afrique du Nord et australe. La répétition des attaques contre des institutions de santé indique que les attaquants privilégient des cibles où l'arrêt d'activité est critique.
+Décembre 2025 témoigne d'une intensification de l'impact des ransomwares en Afrique du Nord et australe, aux côtés de quatre revendications indépendantes de fuite de données hors ransomware couvrant l'éducation (Algérie), l'industrie manufacturière (Égypte), la santé (Maroc) et, pour la première fois ce mois-ci, l'énergie/les infrastructures critiques (Kenya). La diversification des acteurs (8 groupes ransomware nommés et quatre acteurs distincts de revendication) et la répétition des attaques contre des institutions de santé indiquent que les attaquants privilégient des cibles où l'arrêt d'activité est critique, tandis que la revendication KETRACO confirme un intérêt persistant pour les opérateurs africains d'infrastructures critiques, même lorsque les données exposées restent limitées.
 
 ---
 

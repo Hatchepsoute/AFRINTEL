@@ -10,79 +10,93 @@
 Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois d'avril 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
 ## 2. Résumé exécutif
-- **Nombre total d'attaques recensées** : 11
-- **Groupes ransomware les plus actifs** : Jabaroot DZ (2 attaques), devman (2), dragonforce (1), ransomhouse (1), crypto24 (1), Phantom Atlas (1), cicada3301 (1), gunra (1), inconnu (1).
-- **Secteurs les plus ciblés** : Administrations publiques (4), Agroalimentaire (2), Finance/Logistique (1), Télécommunications (1), Services aux entreprises (1), Technologies (1), Santé (1).
-- **Pays les plus touchés** : Égypte (4), Maroc (3), Afrique du Sud (2), Algérie (1), Tunisie (1).
+- **Nombre total d'attaques recensées** : 17
+- **Acteurs les plus actifs** : Phantom Atlas (3 attaques), Jabaroot DZ (2), devman (2), dragonforce (1), ransomhouse (1), crypto24 (1), cicada3301 (1), gunra (1), p4xar (1), B4baYega (1), Killer_Bee (1), oblivion666 (1).
+- **Secteurs les plus ciblés** : Gouvernement / Administrations publiques (5), Finance / Banque / Assurance (2), Santé (2), Agroalimentaire (2), Défense / Sécurité nationale (1), Télécommunications (1), Services aux entreprises / RH (1), Technologie / Services IT (1), Éducation (1).
+- **Pays les plus touchés** : Égypte (4), Maroc (4), Algérie (3), Afrique du Sud (2), Sénégal (1), Mauritanie (1), Tunisie (1).
 - **Volume de données exfiltrées** : 27,75 Go pour IACC Holdings. Les autres volumes ne sont pas précisés.
 
 ## 3. Statistiques clés
 
-### 3.1 Répartition par groupe ransomware
-| Groupe ransomware | Nombre d'attaques |
+### 3.1 Répartition par acteur/source
+| Acteur / Groupe | Nombre d'attaques |
 |-------------------|-------------------|
+| Phantom Atlas     | 3                 |
 | Jabaroot DZ       | 2                 |
 | devman            | 2                 |
 | dragonforce       | 1                 |
 | ransomhouse       | 1                 |
 | crypto24          | 1                 |
-| Phantom Atlas     | 1                 |
 | cicada3301        | 1                 |
 | gunra             | 1                 |
-| Inconnu           | 1                 |
-| **Total**         | **11**            |
+| p4xar             | 1                 |
+| B4baYega          | 1                 |
+| Killer_Bee        | 1                 |
+| oblivion666       | 1                 |
+| **Total**         | **16**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe ransomware (avril 2025)
+pie title Répartition des attaques par acteur (avril 2025)
+    "Phantom Atlas" : 3
     "Jabaroot DZ" : 2
     "devman" : 2
     "dragonforce" : 1
     "ransomhouse" : 1
     "crypto24" : 1
-    "Phantom Atlas" : 1
     "cicada3301" : 1
     "gunra" : 1
-    "Inconnu" : 1
+    "p4xar" : 1
+    "B4baYega" : 1
+    "Killer_Bee" : 1
+    "oblivion666" : 1
 ```
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
-| Administrations publiques | 4 |
+| Gouvernement / Administrations publiques | 5 |
+| Finance / Banque / Assurance | 2 |
+| Santé | 2 |
 | Agroalimentaire | 2 |
-| Finance / Logistique | 1 |
+| Défense / Sécurité nationale | 1 |
 | Télécommunications | 1 |
-| Services aux entreprises (BPO) | 1 |
-| Technologies (IT) | 1 |
-| Santé | 1 |
-| **Total** | **11** |
+| Services aux entreprises / RH | 1 |
+| Technologie / Services IT | 1 |
+| Éducation | 1 |
+| **Total** | **16** |
 
 ```mermaid
 pie title Répartition par secteur d'activité
-    "Administrations publiques" : 4
+    "Administrations publiques" : 5
+    "Finance / Banque / Assurance" : 2
+    "Santé" : 2
     "Agroalimentaire" : 2
-    "Finance / Logistique" : 1
+    "Défense / Sécurité nationale" : 1
     "Télécommunications" : 1
-    "Services aux entreprises (BPO)" : 1
-    "Technologies (IT)" : 1
-    "Santé" : 1
+    "Services aux entreprises" : 1
+    "Technologie / IT" : 1
+    "Éducation" : 1
 ```
 
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 |------|-------------------|
 |🇪🇬 Égypte | 4 |
-|🇲🇦 Maroc | 3 |
+|🇲🇦 Maroc | 4 |
+|🇩🇿 Algérie | 3 |
 |🇿🇦 Afrique du Sud | 2 |
-|🇩🇿 Algérie | 1 |
+|🇸🇳 Sénégal | 1 |
+|🇲🇷 Mauritanie | 1 |
 |🇹🇳 Tunisie | 1 |
-| **Total** | **11** |
+| **Total** | **16** |
 
 ```mermaid
 pie title Répartition par pays (Avril 2025)
     "🇪🇬 Égypte" : 4
-    "🇲🇦 Maroc" : 3
+    "🇲🇦 Maroc" : 4
+    "🇩🇿 Algérie" : 3
     "🇿🇦 Afrique du Sud" : 2
-    "🇩🇿 Algérie" : 1
+    "🇸🇳 Sénégal" : 1
+    "🇲🇷 Mauritanie" : 1
     "🇹🇳 Tunisie" : 1
 ```
 
@@ -118,10 +132,19 @@ pie title Répartition par pays (Avril 2025)
 ### 4.8 gunra (1 attaque)
 - **23/04/2025** : Dar Al Teb (Égypte, santé)
 
-### 4.9 Inconnu (1 attaque)
-- **23/04/2025** : FRMF (Maroc, sport/administration)
+### 4.9 p4xar (1 attaque)
+- **13/04/2025** : ISMAC (Maroc, éducation) - échantillon SQL substantiel contenant des données sensibles d’étudiants ; la publication revendiquée de la base complète n’a pas pu être vérifiée.
 
-### 4.10 Graphe acteur → victime → pays
+### 4.10 B4baYega (1 attaque)
+- **13/04/2025** : Ministère de l'Habitat et de la Politique de la Ville (Maroc, gouvernement) - simple revendication ; l'archive sous-jacente était protégée par mot de passe et n'a pas pu être vérifiée de manière indépendante.
+
+### 4.11 Killer_Bee (1 revendication)
+- **13/04/2025:** BMI / SEDAD Mobile Wallet (Mauritanie, finance / paiement mobile) - échantillon anonymisé ; plus de 90 000 enregistrements revendiqués non vérifiés.
+
+### 4.12 oblivion666 (1 revendication)
+- **04/04/2025 :** Forces Armées Sénégalaises / armee.sn (Sénégal, défense) - annonce de vente d'accès (domaines et accès administrateur serveurs/pare-feu) ; aucun échantillon ni preuve technique fournie, non vérifié.
+
+### 4.13 Graphe acteur → victime → pays
 ```mermaid
 graph LR
     JabarootDZ["Jabaroot DZ"] -->|CNSS, Ministère Industrie| Maroc["🇲🇦 Maroc"]
@@ -133,21 +156,28 @@ graph LR
     PhantomAtlas["Phantom Atlas"] -->|MGPTT| Algerie["🇩🇿 Algérie"]
     cicada3301 -->|Natilait| Tunisie["🇹🇳 Tunisie"]
     gunra -->|Dar Al Teb| Egypte
-    inconnu["Inconnu"] -->|FRMF| Maroc
+    p4xar -->|ISMAC| Maroc
+    B4baYega -->|Ministère de l'Habitat| Maroc
+    KillerBee["Killer_Bee"] -->|BMI / SEDAD| Mauritanie["🇲🇷 Mauritanie"]
+    oblivion666 -->|Forces Armées Sénégalaises| Senegal["🇸🇳 Sénégal"]
 ```
 ## 5. Analyse sectorielle
-- **Administrations publiques** : 4 attaques (CNSS, Ministère de l'Industrie, MGPTT, FRMF). Les groupes Jabaroot DZ et Phantom Atlas ont ciblé des institutions clés au Maroc et en Algérie, avec des données sensibles (bénéficiaires, documents administratifs).
+- **Administrations publiques** : 4 attaques (CNSS, Ministère de l'Industrie, Ministère de l'Habitat, MGPTT). Les groupes Jabaroot DZ, B4baYega et Phantom Atlas ont ciblé des institutions clés au Maroc et en Algérie, avec des données sensibles (bénéficiaires, documents administratifs).
 - **Agroalimentaire** : 2 attaques (Premier Meats, Natilait) par devman et cicada3301, visant des entreprises de transformation alimentaire en Afrique du Sud et Tunisie.
 - **Finance/Logistique** : 1 attaque (IACC Holdings) par dragonforce, avec exfiltration de 27,75 Go.
 - **Télécommunications** : 1 attaque (Cell C) par ransomhouse, touchant un opérateur majeur sud-africain.
 - **Services aux entreprises** : 1 attaque (IBS) par crypto24, ciblant un prestataire BPO égyptien.
 - **Technologies** : 1 attaque (Tawasol) par devman, visant un intégrateur de solutions IT.
 - **Santé** : 1 attaque (Dar Al Teb) par gunra, frappant un centre médical spécialisé.
+- **Éducation** : 1 revendication de fuite (ISMAC) attribuée à p4xar, étayée par un échantillon SQL substantiel contenant des données sensibles d’étudiants.
+- **Défense / Sécurité nationale** : 1 revendication de vente d'accès (Forces Armées Sénégalaises / armee.sn) par oblivion666, proposant des domaines et un accès administrateur serveurs/pare-feu, sans échantillon accessible.
 
 ### 5.1 Timeline des attaques
 ```mermaid
 timeline
     title Chronologie des attaques - Avril 2025
+    section 04 Avr
+        oblivion666 : Forces Armées Sénégalaises (🇸🇳 Sénégal)
     section 06 Avr
         dragonforce : IACC Holdings (🇪🇬 Égypte)
     section 07 Avr
@@ -159,33 +189,38 @@ timeline
     section 09 Avr
         Phantom Atlas : MGPTT (🇩🇿 Algérie)
     section 13 Avr
+        Killer_Bee : BMI / SEDAD Mobile Wallet (🇲🇷 Mauritanie)
         devman : Tawasol (🇪🇬 Égypte)
+        p4xar : ISMAC (🇲🇦 Maroc)
+        B4baYega : Ministère de l'Habitat (🇲🇦 Maroc)
     section 20 Avr
         devman : Premier Meats (🇿🇦 Afrique du Sud)
     section 22 Avr
         cicada3301 : Natilait (🇹🇳 Tunisie)
     section 23 Avr
         gunra : Dar Al Teb (🇪🇬 Égypte)
-        inconnu : FRMF (🇲🇦 Maroc)
 ```
 ## 6. Analyse géographique
-- **Égypte** : 4 attaques (IACC, IBS, Tawasol, Dar Al Teb) - finance, BPO, IT, santé. L'Égypte reste le pays le plus ciblé du continent.
-- **Maroc** : 3 attaques (CNSS, Ministère, FRMF) - administrations publiques et sport. Deux attaques coordonnées par Jabaroot DZ le même jour.
+- **Maroc** : 4 attaques (CNSS, Ministère de l'Industrie, Ministère de l'Habitat, ISMAC) - administration publique et éducation. Deux revendications ont été publiées par Jabaroot DZ le même jour ; celle visant l'ISMAC est étayée par un échantillon SQL substantiel, et celle visant le Ministère de l'Habitat reste non vérifiée en raison d'une archive protégée par mot de passe.
+- **Égypte** : 4 attaques (IACC, IBS, Tawasol, Dar Al Teb) - finance, BPO, IT, santé. L'Égypte reste parmi les pays les plus ciblés du continent.
 - **Afrique du Sud** : 2 attaques (Cell C, Premier Meats) - télécoms et agroalimentaire.
 - **Algérie** : 1 attaque (MGPTT) - mutuelle de santé, avec publication de données personnelles.
 - **Tunisie** : 1 attaque (Natilait) - agroalimentaire.
+- **Mauritanie** : 1 revendication de fuite (BMI / SEDAD Mobile Wallet) - finance / paiement mobile.
+- **Sénégal** : 1 revendication de vente d'accès (Forces Armées Sénégalaises / armee.sn) - défense, non vérifiée.
 
-L'Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) concentre 9 attaques sur 11, confirmant une forte pression sur la région.
+L'Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) concentre 10 attaques sur 14, confirmant une forte pression sur la région.
 
 ## 7. TTPs observées
-- **Exfiltration de données** : IACC Holdings (27,75 Go) et MGPTT (listes de bénéficiaires) illustrent la collecte de données sensibles.
+- **Exfiltration de données** : IACC Holdings (27,75 Go), MGPTT (listes de bénéficiaires) et l’échantillon SQL de l’ISMAC illustrent la collecte et l’exposition de données sensibles.
 - **Ciblage d'institutions publiques** : 4 attaques sur des organismes gouvernementaux, avec des motivations potentiellement politiques (revendication "représailles" pour MGPTT).
-- **Diversité des acteurs** : 9 groupes différents actifs, dont des acteurs hacktivistes (Jabaroot DZ, Phantom Atlas) et des ransomwares traditionnels.
+- **Vente d'accès** : oblivion666 a proposé à la vente des domaines et un accès administrateur à l'infrastructure des forces armées sénégalaises, illustrant le segment courtier d'accès de l'écosystème aux côtés des revendications de ransomware et de fuite de données.
+- **Diversité des acteurs** : 12 groupes différents actifs, dont des acteurs hacktivistes (Jabaroot DZ, Phantom Atlas) et des ransomwares traditionnels.
 - **Double extorsion** : Revendications accompagnées de fuites de données pour pression.
 - **Exploitation de failles web** : Probable pour les sites gouvernementaux.
 
 ## 8. Recommandations
-- **Secteur public** : Renforcer la sécurité des portails administratifs et des bases de données citoyennes, particulièrement au Maroc et en Algérie.
+- **Secteurs public et éducatif** : Renforcer les portails administratifs et étudiants, imposer la MFA aux accès privilégiés, limiter les exports de bases et surveiller la création anormale de dumps SQL, particulièrement au Maroc et en Algérie.
 - **Égypte** : Accroître la vigilance dans les secteurs financier, BPO et santé, très ciblés.
 - **Agroalimentaire** : Les entreprises comme Premier Meats et Natilait doivent sécuriser leurs chaînes d'approvisionnement numériques.
 - **Télécoms** : Opérateurs comme Cell C doivent protéger les données des abonnés.

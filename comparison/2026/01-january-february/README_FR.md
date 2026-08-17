@@ -31,7 +31,7 @@ Les chiffres proviennent des fiches de [janvier](../../../CyberAttackAfrica/2026
 | Sénégal | 1 | 1 |
 | Tunisie | 1 | 1 |
 
-Février ajoute des fiches directes concernant la Somalie, le Soudan, la Côte d'Ivoire et la Namibie. Janvier comprend seul le défacement des sites gouvernementaux nigériens.
+Février apporte des fiches directes pour la Somalie, le Soudan, la Côte d'Ivoire et la Namibie, absentes de janvier. Le défacement des sites gouvernementaux nigériens, lui, n'a eu lieu qu'en janvier.
 
 ## Évolution sectorielle et acteurs
 
@@ -42,10 +42,10 @@ Février ajoute des fiches directes concernant la Somalie, le Soudan, la Côte d
 
 ## Analyse CTI
 
-- Le volume global reste presque stable.
-- Février ne contient que des publications ransomware, tandis que janvier comprend aussi des fuites, une vente d'accès et le défacement du Niger.
-- La couverture géographique passe de 12 à 14 pays malgré une baisse d'une fiche.
-- Le volume de 139 To associé à DAF Sénégal est conservé uniquement comme volume documenté dans cette fiche.
+- Le volume global a à peine bougé d'un mois à l'autre.
+- Février, c'était que du ransomware. Janvier avait ça, plus des fuites, une vente d'accès et le défacement du Niger.
+- La couverture géographique s'est élargie, 12 à 14 pays, alors même que le total des fiches baissait d'une unité.
+- Le chiffre de 139 To associé à DAF Sénégal n'est repris ici que comme le volume documenté dans cette fiche, pas comme une donnée vérifiée.
 
 ## Priorités SOC
 
@@ -55,6 +55,6 @@ Février ajoute des fiches directes concernant la Somalie, le Soudan, la Côte d
 
 ## Conclusion
 
-Janvier et février présentent des volumes proches, mais une composition différente. Février est entièrement lié au ransomware, tandis que janvier combine ransomware, exposition de données, vente d'accès et défacement politique.
+Les totaux sont proches entre les deux mois, mais leur composition diffère. Février, c'est du ransomware d'un bout à l'autre. Janvier mélangeait en plus exposition de données, vente d'accès et défacement à motivation politique.
 
 **AFRINTEL** - TLP:CLEAR

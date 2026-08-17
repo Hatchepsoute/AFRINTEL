@@ -11,7 +11,7 @@
 | Fuites de données et ventes d'accès | 40 | 20 | -20 (-50,0 %) |
 | Pays distincts après éclatement des fiches multi-pays | 18 | 20 | +2 |
 
-La baisse de juin provient des fuites de données et des ventes d'accès. Le ransomware passe de 17 à 20 fiches.
+La baisse de juin vient entièrement des fuites de données et ventes d'accès. Le ransomware, lui, va dans l'autre sens, de 17 à 20 fiches.
 
 ## Évolution par pays
 
@@ -29,7 +29,7 @@ La baisse de juin provient des fuites de données et des ventes d'accès. Le ran
 | 🇸🇳 Sénégal | 1 | 1 | 0 |
 | Fiches multi-pays | 3 | 2 | -1 |
 
-Les libellés pays directs représentent 54 fiches en mai, plus trois fiches multi-pays, et 38 fiches en juin, plus deux fiches multi-pays.
+Les libellés pays directs couvrent 54 fiches en mai, plus trois fiches multi-pays, et 38 fiches en juin, plus deux fiches multi-pays.
 
 ## Évolution par secteur
 
@@ -46,15 +46,15 @@ Les libellés pays directs représentent 54 fiches en mai, plus trois fiches mul
 | Telecommunications | 3 | 0 | -3 |
 | NGO / Associations | 2 | 0 | -2 |
 
-Government / Administration reste le premier secteur, mais passe de 20 à 12 fiches. Finance / Banking double, de 3 à 6 fiches.
+Government / Administration reste en tête même en tombant de 20 à 12 fiches. Finance / Banking double, de 3 à 6.
 
 ## Évolution des acteurs
 
-Mai est dominé par Databasehooligan avec 8 fiches, 404Crew avec 5 et TheGentlemen avec 4. Juin est dominé par anisanas2 avec 7 fiches, DeadLock avec 4 et LockBit 5.0 avec 3.
+Databasehooligan menait mai avec 8 fiches, 404Crew à 5, TheGentlemen à 4. Juin a une tête d'affiche différente : anisanas2 à 7, DeadLock à 4, LockBit 5.0 à 3.
 
 ## Évaluation CTI
 
-Juin compte moins de fiches, mais couvre davantage de pays après éclatement des entrées multi-pays. Le Maroc devient le premier libellé pays direct, tandis que les concentrations en Égypte et en Afrique du Sud diminuent. La répartition des incidents évolue vers le ransomware.
+Juin compte moins de fiches au total, mais couvre en fait davantage de pays une fois les entrées multi-pays éclatées. Le Maroc prend la tête des libellés pays directs pendant que les concentrations en Égypte et en Afrique du Sud reculent. L'ensemble de la répartition penche de nouveau vers le ransomware.
 
 ## Priorités SOC
 
@@ -65,6 +65,6 @@ Juin compte moins de fiches, mais couvre davantage de pays après éclatement de
 
 ## Conclusion
 
-Juin compte 40 incidents contre 57 en mai. Les fuites et ventes d'accès reculent de 20 fiches, tandis que le ransomware progresse de trois.
+Juin se solde par 40 incidents contre 57 en mai. Les fuites et ventes d'accès reculent de 20 fiches ; le ransomware en gagne trois.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

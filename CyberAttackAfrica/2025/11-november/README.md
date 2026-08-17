@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
 
-# CTI Report: Cyberattacks in Africa - November 2025 (11 victims)
+# CTI Report: Cyberattacks in Africa - November 2025 (14 victims)
 
 👉🏾 [**French version available here**](./README_FR.md)
 
@@ -14,13 +14,13 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 ---
 
 ## 2. Executive summary
-November 2025 shows persistent ransomware activity affecting African organizations, with a notable focus on Egypt and Morocco. A total of 11 confirmed ransomware claims targeting organizations in 6 African countries were identified.
+November 2025 shows persistent ransomware activity affecting African organizations, with a notable focus on Egypt and Morocco. A total of 10 ransomware claims and 4 data-leak claims, targeting organizations in 6 African countries, were identified.
 
-* **Total recorded attacks**: 11
+* **Total recorded attacks**: 14
 * **Most active threat actors**: `clop` (3 attacks), `nightspire` (3 attacks).
-    * *Other active groups*: spacebears, sprigatito, stormous, qilin, benzona (1 attack each).
-* **Most targeted sectors**: Logistics (2), Financial Services (2), Construction/Industry (2).
-* **Most affected countries**: 🇪🇬 Egypt (4), 🇲🇦 Morocco (2), 🇨🇮 Ivory Coast (2).
+    * *Other active groups*: spacebears, sprigatito, stormous, qilin, benzona (1 attack each); 3 additional claims are unattributed.
+* **Most targeted sectors**: Logistics (2), Financial Services (2), Construction/Industry (2), Technology (2), Public Administration (2).
+* **Most affected countries**: 🇪🇬 Egypt (4), 🇲🇦 Morocco (4), 🇨🇮 Ivory Coast (2), 🇿🇦 South Africa (2).
 * **Notable data leak**: **Anka** (Ivory Coast) with a 12.1 GB database affecting over 537,000 users.
 
 ---
@@ -37,7 +37,8 @@ November 2025 shows persistent ransomware activity affecting African organizatio
 | **stormous** | 1 |
 | **qilin** | 1 |
 | **benzona** | 1 |
-| **Total** | **11** |
+| **Unknown** | 3 |
+| **Total** | **14** |
 
 ```mermaid
 pie title Ransomware groups activity (Nov 2025)
@@ -48,6 +49,7 @@ pie title Ransomware groups activity (Nov 2025)
     "stormous" : 1
     "qilin" : 1
     "benzona" : 1
+    "Unknown" : 3
 ```
 ### 3.2 Breakdown by industry sector
 | Sector | Number of Attacks |
@@ -55,12 +57,13 @@ pie title Ransomware groups activity (Nov 2025)
 | 🚚 Logistics | 2 |
 | 💰 Financial Services | 2 |
 | 🏗️ Construction / Industry | 2 |
-| 💻 Technology | 1 |
+| 💻 Technology | 2 |
+| 🏛️ Public Administration | 2 |
 | 🛒 Retail / E-commerce | 1 |
-| 🏛️ Public Administration | 1 |
 | 🏠 Real Estate / Investment | 1 |
 | 🏥 Health / NGO | 1 |
-| **Total** | **11** |
+| 👥 Human Resources / Recruitment | 1 |
+| **Total** | **14** |
 
 ```mermaid
 graph LR
@@ -76,9 +79,10 @@ graph LR
     A[🏛️ Public Admin]
     RE[🏠 Real Estate]
     H[🏥 Health / NGO]
+    HR[👥 Human Resources / Recruitment]
     end
 
-    L --- Total((Total: 11))
+    L --- Total((Total: 14))
     F --- Total
     I --- Total
     T --- Total
@@ -86,6 +90,7 @@ graph LR
     A --- Total
     RE --- Total
     H --- Total
+    HR --- Total
 
     style Total fill:#f96,stroke:#333,stroke-width:2px
     style L fill:#dfd
@@ -96,19 +101,19 @@ graph LR
 | Country | Number of Attacks |
 | :--- | :---: |
 | 🇪🇬 Egypt | 4 |
-| 🇲🇦 Morocco | 2 |
+| 🇲🇦 Morocco | 4 |
 | 🇨🇮 Ivory Coast | 2 |
-| 🇿🇦 South Africa | 1 |
+| 🇿🇦 South Africa | 2 |
 | 🇿🇲 Zambia | 1 |
 | 🇳🇬 Nigeria | 1 |
-| **Total** | **11** |
+| **Total** | **14** |
 
 ```mermaid
 pie title Breakdown by country (November 2025)
     "🇪🇬 Egypt" : 4
-    "🇲🇦 Morocco" : 2
+    "🇲🇦 Morocco" : 4
     "🇨🇮 Ivory Coast" : 2
-    "🇿🇦 South Africa" : 1
+    "🇿🇦 South Africa" : 2
     "🇿🇲 Zambia" : 1
     "🇳🇬 Nigeria" : 1
 ```
@@ -132,7 +137,12 @@ pie title Breakdown by country (November 2025)
 * **qilin** (Nov 26): Arabia Holding (Egypt, Real Estate) - Claimed & Leaked.
 * **benzona** (Nov 26): SEV-CI (Ivory Coast, Health/NGO) - Claimed & Leaked.
 
-### 4.4 Actor → victim → country graph
+### 4.4 Unattributed claims (3 attacks)
+* **2025-11-08**: NARSA - Agence Nationale de la Sécurité Routière (Morocco, Public Administration / Transportation) - Claim - Data Sample Published. Vehicle-registration CSV export (~150,000 rows claimed) with owner, vehicle and registration-centre fields.
+* **2025-11-30**: Joutech (Morocco, Technology) - Claim - Data Sample Published. Newsletter/contact export of 1,350 records; exact business activity not independently confirmed.
+* **2025-11-04**: Wannabees (South Africa, Human Resources / Recruitment) - Claim - Data Sample Published. Five-record applicant export reviewed; actor not identified.
+
+### 4.5 Actor → victim → country graph
 ```mermaid
 graph LR
     %% clop Relations (Red)
@@ -151,16 +161,20 @@ graph LR
     stormous(stormous) -->|Marjane| Morocco2["🇲🇦 Morocco"]
     qilin(qilin) -->|Arabia Holding| Egypt4["🇪🇬 Egypt"]
     benzona(benzona) -->|SEV-CI| CI2["🇨🇮 Ivory Coast"]
+    Unknown(Unknown) -->|Joutech| Morocco3["🇲🇦 Morocco"]
+    Unknown -->|NARSA| Morocco4["🇲🇦 Morocco"]
+    Unknown -->|Wannabees| SA2["🇿🇦 South Africa"]
 
     %% Styles and Colors
     style clop fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
     style nightspire fill:#ffa500,stroke:#333,stroke-width:2px
     style sprigatito fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
     style stormous fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
+    style Unknown fill:#888,stroke:#333,stroke-width:2px,color:#fff
     
     %% Country Styles
     classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,Nigeria,Morocco1,Morocco2,CI1,CI2 country
+    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,SA2,Nigeria,Morocco1,Morocco2,Morocco3,Morocco4,CI1,CI2 country
 ```
 ---
 
@@ -168,15 +182,16 @@ graph LR
 * **Logistics (2)**: Targeting of strategic platforms (Dovern Import in Morocco and Anka in Ivory Coast), confirming the vulnerability of regional supply chains.
 * **Financial services (2)**: Attacks against a major banking institution (Zanaco in Zambia) and a pension fund manager (Fidelity in Nigeria).
 * **Construction / Industry (2)**: Focus on Egyptian industrial leaders (Elsewedy Electric and Samcrete), prime targets for industrial espionage and extortion.
-* **Public administration (1)**: Notable incident in South Africa (Eastern Cape), a reminder that citizen services remain a preferred target.
+* **Public administration (2)**: Notable incidents in South Africa (Eastern Cape) and Morocco (NARSA vehicle-registration data), a reminder that citizen services remain a preferred target.
+* **Human Resources / Recruitment (1)**: Wannabees shows the exposure risk of recruitment databases containing identity, employment and remuneration data.
 
 ---
 
 ## 6. Geographical analysis
 * **🇪🇬 Egypt**: Epicenter of activity this month with **4 victims**. The targeting is exclusively industrial and technological.
-* **🇲🇦 Morocco**: Stable activity with **2 victims** (Logistics and Retail), affecting major players in the local market.
+* **🇲🇦 Morocco**: Activity with **4 victims** (Logistics, Retail, a public-sector road-safety agency and an unattributed Technology data-leak claim), affecting major players in the local market.
 * **🇨🇮 Ivory Coast**: Emergence of high-impact attacks (2 victims), notably with the massive user data leak from the Anka platform.
-* **Global Distribution**: **North Africa (6 attacks)** vs **Sub-Saharan Africa (5 attacks)**. The threat is particularly concentrated on the continent's economic powerhouses (Egypt, Morocco, South Africa, Nigeria).
+* **Global Distribution**: **North Africa (8 attacks)** vs **Sub-Saharan Africa (6 attacks)**. The threat is particularly concentrated on the continent's economic powerhouses (Egypt, Morocco, South Africa, Nigeria).
 
 ---
 
@@ -197,7 +212,7 @@ graph LR
 ---
 
 ## 9. Conclusion
-November 2025 shows a diversification of threat actors (7 different groups for 11 victims). The concentration of attacks on Egypt and the targeting of massive user data in West Africa indicate an evolution of extortion strategies toward more varied sectors than traditional finance.
+November 2025 shows a diversification of threat actors (7 named groups plus three unattributed data-leak cases, for 14 victims). The concentration of attacks on Egypt and the targeting of massive user data in West Africa indicate an evolution of extortion strategies toward more varied sectors than traditional finance.
 
 ---
 

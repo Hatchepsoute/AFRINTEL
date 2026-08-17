@@ -31,7 +31,7 @@ Figures derive from [January](../../../CyberAttackAfrica/2026/01-january/victims
 | Senegal | 1 | 1 |
 | Tunisia | 1 | 1 |
 
-February added direct records concerning Somalia, Sudan, Ivory Coast and Namibia. January alone included the Niger government-site defacement.
+February brought in direct records from Somalia, Sudan, Ivory Coast and Namibia, none of which showed up in January. The Niger government-site defacement, on the other hand, was a January-only event.
 
 ## Sector and actor evolution
 
@@ -42,10 +42,10 @@ February added direct records concerning Somalia, Sudan, Ivory Coast and Namibia
 
 ## CTI assessment
 
-- Overall volume remained nearly stable.
-- February contained only ransomware listings, while January also contained data leaks, an access sale and the Niger defacement.
-- The geographic distribution broadened from 12 to 14 countries despite the one-record decline.
-- The 139 TB figure associated with DAF Senegal is retained only as the volume documented in that victim card.
+- Overall volume barely moved between the two months.
+- February was ransomware-only. January had that plus data leaks, an access sale and the Niger defacement.
+- The country count actually widened, 12 to 14, even as the total record count dipped by one.
+- The 139 TB figure tied to DAF Senegal is kept here only as the volume documented in that victim card, not as a verified number.
 
 ## SOC priorities
 
@@ -55,6 +55,6 @@ February added direct records concerning Somalia, Sudan, Ivory Coast and Namibia
 
 ## Conclusion
 
-January and February recorded comparable totals, but their composition differed. February was entirely ransomware-related, while January combined ransomware, data exposure, access sale and politically motivated defacement.
+Totals came out close between the two months, but what made them up was different. February was ransomware start to finish, while January mixed in data exposure, an access sale and a politically motivated defacement.
 
 **AFRINTEL** - TLP:CLEAR

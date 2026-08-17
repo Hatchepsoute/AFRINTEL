@@ -11,7 +11,7 @@
 | Data leaks and access sales | 40 | 20 | -20 (-50.0%) |
 | Distinct countries after expanding multi-country records | 18 | 20 | +2 |
 
-The June decrease came from data leaks and access sales. Ransomware increased from 17 to 20 records.
+June's drop came entirely from data leaks and access sales. Ransomware actually went the other way, 17 up to 20.
 
 ## Country evolution
 
@@ -29,7 +29,7 @@ The June decrease came from data leaks and access sales. Ransomware increased fr
 | 🇸🇳 Senegal | 1 | 1 | 0 |
 | Multi-country records | 3 | 2 | -1 |
 
-Direct country labels account for 54 May records plus three multi-country records, and 38 June records plus two multi-country records.
+Direct country labels cover 54 May records plus three multi-country records, and 38 June records plus two multi-country records.
 
 ## Sector evolution
 
@@ -46,15 +46,15 @@ Direct country labels account for 54 May records plus three multi-country record
 | Telecommunications | 3 | 0 | -3 |
 | NGO / Associations | 2 | 0 | -2 |
 
-Government / Administration remained the leading sector but declined from 20 to 12 records. Finance / Banking doubled from 3 to 6.
+Government/Administration stayed on top even as it fell from 20 to 12 records. Finance/Banking doubled, 3 to 6.
 
 ## Actor evolution
 
-May was led by Databasehooligan with 8 records, 404Crew with 5 and TheGentlemen with 4. June was led by anisanas2 with 7 records, DeadLock with 4 and LockBit 5.0 with 3.
+Databasehooligan led May with 8, 404Crew at 5, TheGentlemen at 4. June's top names were different: anisanas2 at 7, DeadLock at 4, LockBit 5.0 at 3.
 
 ## CTI assessment
 
-June had fewer records but wider geographic coverage after expanding multi-country entries. Morocco became the leading direct country label, while the concentrations in Egypt and South Africa declined. The incident mix shifted toward ransomware.
+June had fewer records overall but actually wider geographic coverage once multi-country entries are expanded. Morocco took over as the leading direct country label while Egypt and South Africa's concentrations dropped. The mix as a whole tilted back toward ransomware.
 
 ## SOC priorities
 
@@ -65,6 +65,6 @@ June had fewer records but wider geographic coverage after expanding multi-count
 
 ## Conclusion
 
-June recorded 40 incidents against 57 in May. Leaks and access sales declined by 20 records, while ransomware increased by three.
+June closed at 40 incidents against May's 57. Leaks and access sales dropped by 20 records; ransomware gained three.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

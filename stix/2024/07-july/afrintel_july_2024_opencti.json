@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -43,8 +43,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "killsec",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -73,8 +73,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Maxcess-logistics",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Logistics.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Logistique & Chaîne d'approvisionnement.",
@@ -113,10 +113,10 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "AFRINTEL July 2024 incident 01: Maxcess-logistics",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Maxcess-logistics in Tunisia on July 1, 2024. The source actor is listed as killsec. Status: Claimed & Data Leak. Sector: Logistics. Source summary: Maxcess-logistics is a major commercial enterprise operating in the logistics sector, contributing significantly to the regional economic landscape in Tunisia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Maxcess-logistics en Tunisie, à la date du 01 Juillet 2024. L'acteur source est indiqué comme killsec. Statut : Revendication & divulgation des données. Secteur : Logistique & Chaîne d'approvisionnement. Résumé de la source : Maxcess-logistics est une entreprise commerciale majeure opérant dans le secteur de la logistique, contribuant de manière significative au tissu économique régional en Tunisie.",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Maxcess-logistics in Tunisia on July 1, 2024. The source actor is listed as killsec. Status: Claim - Unverified. Sector: Logistics. Source summary: Maxcess-logistics is a major commercial enterprise operating in the logistics sector, contributing significantly to the regional economic landscape in Tunisia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Maxcess-logistics en Tunisie, à la date du 01 Juillet 2024. L'acteur source est indiqué comme killsec. Statut : Claim - Unverified. Secteur : Logistique & Chaîne d'approvisionnement. Résumé de la source : Maxcess-logistics est une entreprise commerciale majeure opérant dans le secteur de la logistique, contribuant de manière significative au tissu économique régional en Tunisie.",
       "first_seen": "2024-07-01T00:00:00Z",
       "labels": [
         "afrintel",
@@ -157,8 +157,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--9eeddc38-d71e-563e-8372-27573bb30d48",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
       "target_ref": "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
@@ -171,8 +171,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--0016e86e-5610-5ca6-92f4-7b56b455973f",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
       "target_ref": "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
@@ -185,8 +185,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--34bd7772-1194-5d34-be83-538028e45114",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
       "target_ref": "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
@@ -198,9 +198,157 @@
     {
       "type": "threat-actor",
       "spec_version": "2.1",
+      "id": "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "TheColorYellow, post published on RaidForums",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "07-july"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "National War College (nwc.ndu.edu)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Ethiopia. Sector: Defense / Military education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Éthiopie. Secteur : Défense / Enseignement militaire.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "ethiopia",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        }
+      ],
+      "x_afrintel_country": "Ethiopia",
+      "x_afrintel_sector_raw": "Defense / Military education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md",
+      "sectors": [
+        "education"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 02: National War College (nwc.ndu.edu)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting National War College (nwc.ndu.edu) in Ethiopia on July 2, 2024. The source actor is listed as TheColorYellow, post published on RaidForums. Status: Claim - Data Sample Published. Sector: Defense / Military education. Source summary: The National War College referenced in the post appears, based on the letterhead visible in the samples, to correspond to the FDRE Defence War College, a Federal Democratic Republic of Ethiopia military-education institution.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant National War College (nwc.ndu.edu) en Éthiopie, à la date du 02 Juillet 2024. L'acteur source est indiqué comme TheColorYellow, publication postée sur RaidForums. Statut : Claim - Data Sample Published. Secteur : Défense / Enseignement militaire. Résumé de la source : Le National War College mentionné dans la publication correspond, d'après l'en-tête visible dans les échantillons, au FDRE Defence War College, un établissement d'enseignement militaire de la République Fédérale Démocratique d'Éthiopie.",
+      "first_seen": "2024-07-02T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "ethiopia",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Ethiopia",
+      "x_afrintel_sector_raw": "Defense / Military education",
+      "x_afrintel_actor": "TheColorYellow, post published on RaidForums",
+      "x_afrintel_date_display": "July 2, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7c241b0d-353f-5795-b682-1f720f8ab356",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+      "target_ref": "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7bff3263-489b-55a3-824a-39657818d3de",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
+      "target_ref": "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--121989a1-3688-5aea-acb3-1d92de438a39",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+      "target_ref": "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
       "id": "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "blacksuit",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -228,9 +376,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--c6de617c-fa78-5c44-a7e3-c77ce49ca785",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "National health laboratory services",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Healthcare services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Santé / Services de laboratoires médicaux publics.",
@@ -268,11 +416,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--59d1e500-174c-5b47-83f7-d6fa2442a6a9",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 02: National health laboratory services",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting National health laboratory services in South Africa on July 5, 2024. The source actor is listed as blacksuit. Status: Claimed & Data Leak. Sector: Healthcare services. Source summary: National health laboratory services is a major commercial enterprise operating in the healthcare services sector, contributing significantly to the regional economic landscape in South Africa.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant National health laboratory services (NHLS) en Afrique du Sud, à la date du 5 Juillet 2024. L'acteur source est indiqué comme blacksuit. Statut : Revendication & divulgation des données (Incident critique). Secteur : Santé / Services de laboratoires médicaux publics. Résumé de la source : Les National Health Laboratory Services constituent une entité publique et commerciale majeure gérant les services de laboratoires de santé publique à l'échelle nationale en Afrique du Sud.",
+      "id": "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 03: National health laboratory services",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting National health laboratory services in South Africa on July 5, 2024. The source actor is listed as blacksuit. Status: Claim - Unverified. Sector: Healthcare services. Source summary: National health laboratory services is a major commercial enterprise operating in the healthcare services sector, contributing significantly to the regional economic landscape in South Africa.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant National health laboratory services (NHLS) en Afrique du Sud, à la date du 5 Juillet 2024. L'acteur source est indiqué comme blacksuit. Statut : Claim - Unverified. Secteur : Santé / Services de laboratoires médicaux publics. Résumé de la source : Les National Health Laboratory Services constituent une entité publique et commerciale majeure gérant les services de laboratoires de santé publique à l'échelle nationale en Afrique du Sud.",
       "first_seen": "2024-07-05T00:00:00Z",
       "labels": [
         "afrintel",
@@ -301,7 +449,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 2,
+      "x_afrintel_incident_index": 3,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
       "x_afrintel_sector_raw": "Healthcare services",
@@ -312,11 +460,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--7c241b0d-353f-5795-b682-1f720f8ab356",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--db99fa46-2487-5481-a0d9-c6add01aad1a",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--59d1e500-174c-5b47-83f7-d6fa2442a6a9",
+      "source_ref": "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
       "target_ref": "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -326,12 +474,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--7bff3263-489b-55a3-824a-39657818d3de",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--6b97cf3a-97fe-54c0-8ed9-424fdd1313a3",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
-      "target_ref": "identity--c6de617c-fa78-5c44-a7e3-c77ce49ca785",
+      "target_ref": "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -340,12 +488,420 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--121989a1-3688-5aea-acb3-1d92de438a39",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--b73b4fca-0c98-594d-831d-1631c5ae092e",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--59d1e500-174c-5b47-83f7-d6fa2442a6a9",
-      "target_ref": "identity--c6de617c-fa78-5c44-a7e3-c77ce49ca785",
+      "source_ref": "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+      "target_ref": "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2024",
+        "07-july"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "Hôpital Chahids Mahmoudi (hcm-dz.com)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Healthcare / Private hospital.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Santé / Établissement hospitalier privé.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "algeria",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://hcm-dz.com"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Healthcare / Private hospital",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 04: Hôpital Chahids Mahmoudi (hcm-dz.com)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Hôpital Chahids Mahmoudi (hcm-dz.com) in Algeria on July 11, 2024. The source actor is listed as Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum. Status: Claim - Data Sample Published. Sector: Healthcare / Private hospital. Source summary: Hôpital Chahids Mahmoudi is an Algerian hospital based in Tizi Ouzou, specialized in oncology and nuclear medicine, with an extension in Algiers and a clinic opened in Constantine in 2024. It operates the hcm-dz.com domain for its professional communications.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Hôpital Chahids Mahmoudi (hcm-dz.com) en Algérie, à la date du 11 Juillet 2024. L'acteur source est indiqué comme Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel. Statut : Claim - Data Sample Published. Secteur : Santé / Établissement hospitalier privé. Résumé de la source : L'Hôpital Chahids Mahmoudi est un établissement hospitalier algérien basé à Tizi Ouzou, spécialisé notamment en oncologie et médecine nucléaire, avec une extension à Alger et une clinique ouverte à Constantine en 2024. Il exploite le domaine hcm-dz.com pour ses communications professionnelles.",
+      "first_seen": "2024-07-11T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "algeria",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://hcm-dz.com"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 4,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Healthcare / Private hospital",
+      "x_afrintel_actor": "Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum",
+      "x_afrintel_date_display": "July 11, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--27c0dbd0-b697-5fae-af24-abd7ea254854",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+      "target_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--23aa939e-ea58-5ce3-b64a-4862c4b65d31",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "target_ref": "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--e66b25d8-bbcd-5023-b239-c10275adc7d7",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+      "target_ref": "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "University of Tlemcen (univ-tlemcen.dz)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Education / Higher education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Éducation / Enseignement supérieur.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "algeria",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://univ-tlemcen.dz"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Education / Higher education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md",
+      "sectors": [
+        "education"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 05: University of Tlemcen (univ-tlemcen.dz)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting University of Tlemcen (univ-tlemcen.dz) in Algeria on July 11, 2024. The source actor is listed as Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum. Status: Claim - Data Sample Published. Sector: Education / Higher education. Source summary: The University of Tlemcen (Abou Bekr Belkaïd) is an Algerian public higher-education institution. It operates a Moodle e-learning platform accessible via the univ-tlemcen.dz domain.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Université de Tlemcen (univ-tlemcen.dz) en Algérie, à la date du 11 Juillet 2024. L'acteur source est indiqué comme Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel. Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement supérieur. Résumé de la source : L'Université de Tlemcen (Abou Bekr Belkaïd) est un établissement public algérien d'enseignement supérieur. Elle exploite une plateforme d'apprentissage en ligne Moodle accessible via le domaine univ-tlemcen.dz.",
+      "first_seen": "2024-07-11T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "algeria",
+        "education"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://univ-tlemcen.dz"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 5,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Education / Higher education",
+      "x_afrintel_actor": "Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum",
+      "x_afrintel_date_display": "July 11, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--876d49ab-73b5-5f3c-bef0-17108dca6ed5",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+      "target_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--53e868ea-1717-5285-94e4-e713657f7afa",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "target_ref": "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4f9eb5ef-1c0a-5be1-948e-623f4568786e",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+      "target_ref": "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "Algeria.com (web portal)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Media / Web portal (travel, news, lifestyle).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Médias / Portail web (voyage, actualités, style de vie).",
+      "labels": [
+        "afrintel",
+        "victim",
+        "algeria",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://algeria.com"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Media / Web portal (travel, news, lifestyle)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 06: Algeria.com (web portal)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Algeria.com (web portal) in Algeria on July 11, 2024. The source actor is listed as Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum. Status: Claim - Data Sample Published. Sector: Media / Web portal (travel, news, lifestyle). Source summary: Algeria.com is a web portal dedicated to Algeria (travel, news and lifestyle), which in the past offered user accounts and email addresses under its own domain to some of its visitors.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Algeria.com (portail web) en Algérie, à la date du 11 Juillet 2024. L'acteur source est indiqué comme Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel. Statut : Claim - Data Sample Published. Secteur : Médias / Portail web (voyage, actualités, style de vie). Résumé de la source : Algeria.com est un portail web consacré à l'Algérie (tourisme, actualités et style de vie), qui a proposé par le passé des comptes utilisateurs et des adresses email sous son propre domaine à une partie de ses visiteurs.",
+      "first_seen": "2024-07-11T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "algeria",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/07-july/victims_FR.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://algeria.com"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Media / Web portal (travel, news, lifestyle)",
+      "x_afrintel_actor": "Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum",
+      "x_afrintel_date_display": "July 11, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6ae9aa61-3796-5125-a1da-612abfdb1db5",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+      "target_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1789703c-4070-570e-a395-98d929c3e471",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+      "target_ref": "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--43cbcff8-1050-58f3-a05e-6b295da55a4e",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+      "target_ref": "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -355,8 +911,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "hunters",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -384,9 +940,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--1c37c3b9-595f-5300-b678-66b7bd578c58",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Kenya urban roads authority",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Rail transport / Urban Infrastructure.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Kenya. Secteur : Infrastructures publiques / Transport routier urbain.",
@@ -424,11 +980,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--7385bca3-567d-56f5-92f3-565ad5621177",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 03: Kenya urban roads authority",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Kenya urban roads authority in Kenya on July 13, 2024. The source actor is listed as hunters. Status: Claimed & Data Leak. Sector: Rail transport / Urban Infrastructure. Source summary: Kenya urban roads authority is a vital state-owned public institution or regulatory authority executing administrative services and citizen management operations.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Kenya urban roads authority (KURA) en Kenya, à la date du 13 Juillet 2024. L'acteur source est indiqué comme hunters. Statut : Revendication & divulgation des données. Secteur : Infrastructures publiques / Transport routier urbain. Résumé de la source : La Kenya Urban Roads Authority est une institution publique et une autorité de régulation étatique essentielle, chargée du développement, de la gestion et de la maintenance des infrastructures routières urbaines.",
+      "id": "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 07: Kenya urban roads authority",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Kenya urban roads authority in Kenya on July 13, 2024. The source actor is listed as hunters. Status: Claim - Unverified. Sector: Rail transport / Urban Infrastructure. Source summary: Kenya urban roads authority is a vital state-owned public institution or regulatory authority executing administrative services and citizen management operations.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Kenya urban roads authority (KURA) en Kenya, à la date du 13 Juillet 2024. L'acteur source est indiqué comme hunters. Statut : Claim - Unverified. Secteur : Infrastructures publiques / Transport routier urbain. Résumé de la source : La Kenya Urban Roads Authority est une institution publique et une autorité de régulation étatique essentielle, chargée du développement, de la gestion et de la maintenance des infrastructures routières urbaines.",
       "first_seen": "2024-07-13T00:00:00Z",
       "labels": [
         "afrintel",
@@ -457,7 +1013,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 3,
+      "x_afrintel_incident_index": 7,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Kenya",
       "x_afrintel_sector_raw": "Rail transport / Urban Infrastructure",
@@ -468,11 +1024,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--db99fa46-2487-5481-a0d9-c6add01aad1a",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--1b819084-ce18-5a99-9345-38ce8c2a97df",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--7385bca3-567d-56f5-92f3-565ad5621177",
+      "source_ref": "incident--306be1e3-a697-547f-b82a-937d76508bb1",
       "target_ref": "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -482,12 +1038,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--6b97cf3a-97fe-54c0-8ed9-424fdd1313a3",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--22010776-8b59-57bc-86c9-def04582b65d",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
-      "target_ref": "identity--1c37c3b9-595f-5300-b678-66b7bd578c58",
+      "target_ref": "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -496,12 +1052,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--b73b4fca-0c98-594d-831d-1631c5ae092e",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--7bc5c3be-5d5f-5832-88e1-b80e785dcc0c",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--7385bca3-567d-56f5-92f3-565ad5621177",
-      "target_ref": "identity--1c37c3b9-595f-5300-b678-66b7bd578c58",
+      "source_ref": "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+      "target_ref": "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -511,8 +1067,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "madliberator",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -540,9 +1096,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--e63b527d-0b43-5e16-a617-984b415c8154",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Zb financial holdings",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Zimbabwe. Sector: Financial organizations.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Zimbabwe. Secteur : Institutions financières / Banque & Assurance.",
@@ -580,11 +1136,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--078db40b-6bf1-537a-bb6c-cb2f69bb1d26",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 04: Zb financial holdings",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Zb financial holdings in Zimbabwe on July 17, 2024. The source actor is listed as madliberator. Status: Claimed & Data Leak. Sector: Financial organizations. Source summary: Zb financial holdings is a major commercial enterprise operating in the financial organizations sector, contributing significantly to the regional economic landscape in Zimbabwe.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Zb financial holdings en Zimbabwe, à la date du 17 Juillet 2024. L'acteur source est indiqué comme madliberator. Statut : Revendication & divulgation des données. Secteur : Institutions financières / Banque & Assurance. Résumé de la source : Zb financial holdings est une institution financière et commerciale de premier plan offrant des services bancaires, d'investissement et d'assurance au Zimbabwe.",
+      "id": "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 08: Zb financial holdings",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Zb financial holdings in Zimbabwe on July 17, 2024. The source actor is listed as madliberator. Status: Claim - Unverified. Sector: Financial organizations. Source summary: Zb financial holdings is a major commercial enterprise operating in the financial organizations sector, contributing significantly to the regional economic landscape in Zimbabwe.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Zb financial holdings en Zimbabwe, à la date du 17 Juillet 2024. L'acteur source est indiqué comme madliberator. Statut : Claim - Unverified. Secteur : Institutions financières / Banque & Assurance. Résumé de la source : Zb financial holdings est une institution financière et commerciale de premier plan offrant des services bancaires, d'investissement et d'assurance au Zimbabwe.",
       "first_seen": "2024-07-17T00:00:00Z",
       "labels": [
         "afrintel",
@@ -613,7 +1169,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 4,
+      "x_afrintel_incident_index": 8,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Zimbabwe",
       "x_afrintel_sector_raw": "Financial organizations",
@@ -624,11 +1180,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--27c0dbd0-b697-5fae-af24-abd7ea254854",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--69c6e2c2-68d7-5f4c-8b23-7280ab7902ed",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--078db40b-6bf1-537a-bb6c-cb2f69bb1d26",
+      "source_ref": "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
       "target_ref": "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -638,12 +1194,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--23aa939e-ea58-5ce3-b64a-4862c4b65d31",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--46c7c924-eaa4-5f06-ac04-b08fcb6f5979",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
-      "target_ref": "identity--e63b527d-0b43-5e16-a617-984b415c8154",
+      "target_ref": "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -652,12 +1208,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--e66b25d8-bbcd-5023-b239-c10275adc7d7",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--81162324-6793-57a6-a8dd-f105f3717532",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--078db40b-6bf1-537a-bb6c-cb2f69bb1d26",
-      "target_ref": "identity--e63b527d-0b43-5e16-a617-984b415c8154",
+      "source_ref": "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+      "target_ref": "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -666,9 +1222,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--4e788fe5-ebf8-59eb-b777-7f48f3681403",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Cities network",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Services de conseil urbain / Développement territorial.",
@@ -702,11 +1258,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--489c2582-aaa5-5ca3-93b0-6639422cc921",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 05: Cities network",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Cities network in South Africa on July 17, 2024. The source actor is listed as madliberator. Status: Claimed & Data Leak. Sector: Services. Source summary: Cities network is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in South Africa.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Cities network en Afrique du Sud, à la date du 17 Juillet 2024. L'acteur source est indiqué comme madliberator. Statut : Revendication & divulgation des données. Secteur : Services de conseil urbain / Développement territorial. Résumé de la source : South African Cities Network est une structure de services et de partenariat stratégique encourageant l'échange d'expertises et le développement durable des grandes agglomérations en Afrique du Sud.",
+      "id": "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 09: Cities network",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Cities network in South Africa on July 17, 2024. The source actor is listed as madliberator. Status: Claim - Unverified. Sector: Services. Source summary: Cities network is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in South Africa.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Cities network en Afrique du Sud, à la date du 17 Juillet 2024. L'acteur source est indiqué comme madliberator. Statut : Claim - Unverified. Secteur : Services de conseil urbain / Développement territorial. Résumé de la source : South African Cities Network est une structure de services et de partenariat stratégique encourageant l'échange d'expertises et le développement durable des grandes agglomérations en Afrique du Sud.",
       "first_seen": "2024-07-17T00:00:00Z",
       "labels": [
         "afrintel",
@@ -734,7 +1290,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 5,
+      "x_afrintel_incident_index": 9,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
       "x_afrintel_sector_raw": "Services",
@@ -745,11 +1301,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--876d49ab-73b5-5f3c-bef0-17108dca6ed5",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--85329acb-6771-57df-aeb5-2d5c7c658260",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--489c2582-aaa5-5ca3-93b0-6639422cc921",
+      "source_ref": "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
       "target_ref": "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -759,12 +1315,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--53e868ea-1717-5285-94e4-e713657f7afa",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--77c4bfb0-419a-5170-b48e-6834fa79352b",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
-      "target_ref": "identity--4e788fe5-ebf8-59eb-b777-7f48f3681403",
+      "target_ref": "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -773,12 +1329,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--4f9eb5ef-1c0a-5be1-948e-623f4568786e",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--184d175d-c5e7-5dde-9717-7450ebeaec30",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--489c2582-aaa5-5ca3-93b0-6639422cc921",
-      "target_ref": "identity--4e788fe5-ebf8-59eb-b777-7f48f3681403",
+      "source_ref": "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+      "target_ref": "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -788,8 +1344,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "lockbit3",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -817,9 +1373,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--7226b997-1a74-5509-9657-8cb558437dec",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Assih",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Services aux entreprises / Conseil.",
@@ -853,11 +1409,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--1bf417ec-94e4-5e6d-9bb6-02fc2aaa4e55",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 06: Assih",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Assih in Egypt on July 17, 2024. The source actor is listed as lockbit3. Status: Claimed & Data Leak. Sector: Services. Source summary: Assih is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in Egypt.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Assih en Égypte, à la date du 17 Juillet 2024. L'acteur source est indiqué comme lockbit3. Statut : Revendication & divulgation des données. Secteur : Services aux entreprises / Conseil. Résumé de la source : Assih est une entreprise commerciale d'importance opérant dans le secteur des services et du commerce général en Égypte.",
+      "id": "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 10: Assih",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Assih in Egypt on July 17, 2024. The source actor is listed as lockbit3. Status: Claim - Unverified. Sector: Services. Source summary: Assih is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in Egypt.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Assih en Égypte, à la date du 17 Juillet 2024. L'acteur source est indiqué comme lockbit3. Statut : Claim - Unverified. Secteur : Services aux entreprises / Conseil. Résumé de la source : Assih est une entreprise commerciale d'importance opérant dans le secteur des services et du commerce général en Égypte.",
       "first_seen": "2024-07-17T00:00:00Z",
       "labels": [
         "afrintel",
@@ -885,7 +1441,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 6,
+      "x_afrintel_incident_index": 10,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
       "x_afrintel_sector_raw": "Services",
@@ -896,11 +1452,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--6ae9aa61-3796-5125-a1da-612abfdb1db5",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--006cf4bc-e0da-59fe-be96-e2bc039b3833",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--1bf417ec-94e4-5e6d-9bb6-02fc2aaa4e55",
+      "source_ref": "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
       "target_ref": "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -910,12 +1466,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--1789703c-4070-570e-a395-98d929c3e471",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--6454e732-1acb-5f03-93c7-b505ad73429c",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
-      "target_ref": "identity--7226b997-1a74-5509-9657-8cb558437dec",
+      "target_ref": "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -924,12 +1480,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--43cbcff8-1050-58f3-a05e-6b295da55a4e",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--980227f6-eaaf-5982-b2ab-e620bd161bc8",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--1bf417ec-94e4-5e6d-9bb6-02fc2aaa4e55",
-      "target_ref": "identity--7226b997-1a74-5509-9657-8cb558437dec",
+      "source_ref": "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+      "target_ref": "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -939,8 +1495,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "ransomhouse",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 07-july 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -968,9 +1524,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--655fc9dc-652e-55bd-be43-b72c376d01da",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Sibanye-stillwater",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Heavy industries / Mining.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Industrie lourde / Extraction minière (Or & Métaux du groupe du platine).",
@@ -1008,11 +1564,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--dc589c09-316b-5c90-8a51-1d220ad5ddb5",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
-      "name": "AFRINTEL July 2024 incident 07: Sibanye-stillwater",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Sibanye-stillwater in South Africa on July 22, 2024. The source actor is listed as ransomhouse. Status: Claimed & Data Leak. Sector: Heavy industries / Mining. Source summary: Sibanye-stillwater is a major commercial enterprise operating in the heavy industries sector, contributing significantly to the regional economic landscape in South Africa. ## ✍🏿 Author Adama ASSIONGBON Senior SOC & Cyber Threat Intelligence (CTI) Consultant\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Sibanye-stillwater en Afrique du Sud, à la date du 22 Juillet 2024. L'acteur source est indiqué comme ransomhouse. Statut : Revendication & divulgation des données (Impact fort). Secteur : Industrie lourde / Extraction minière (Or & Métaux du groupe du platine). Résumé de la source : Sibanye-Stillwater est un groupe minier international de premier plan, comptant parmi les plus grands producteurs d'or et de platinoïdes au monde, basé en Afrique du Sud. ## ✍🏿 Auteur Adama ASSIONGBON Consultant Senior SOC & Cyber Threat Intelligence (CTI)",
+      "id": "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL July 2024 incident 11: Sibanye-stillwater",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Sibanye-stillwater in South Africa on July 22, 2024. The source actor is listed as ransomhouse. Status: Claim - Unverified. Sector: Heavy industries / Mining. Source summary: Sibanye-stillwater is a major commercial enterprise operating in the heavy industries sector, contributing significantly to the regional economic landscape in South Africa. ## ✍🏿 Author Adama ASSIONGBON Senior SOC & Cyber Threat Intelligence (CTI) Consultant\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Sibanye-stillwater en Afrique du Sud, à la date du 22 Juillet 2024. L'acteur source est indiqué comme ransomhouse. Statut : Claim - Unverified. Secteur : Industrie lourde / Extraction minière (Or & Métaux du groupe du platine). Résumé de la source : Sibanye-Stillwater est un groupe minier international de premier plan, comptant parmi les plus grands producteurs d'or et de platinoïdes au monde, basé en Afrique du Sud. ## ✍🏿 Auteur Adama ASSIONGBON Consultant Senior SOC & Cyber Threat Intelligence (CTI)",
       "first_seen": "2024-07-22T00:00:00Z",
       "labels": [
         "afrintel",
@@ -1041,7 +1597,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 7,
+      "x_afrintel_incident_index": 11,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
       "x_afrintel_sector_raw": "Heavy industries / Mining",
@@ -1052,11 +1608,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--1b819084-ce18-5a99-9345-38ce8c2a97df",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--3a8ea34d-daa7-5752-bffb-9a0e8a7e139a",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--dc589c09-316b-5c90-8a51-1d220ad5ddb5",
+      "source_ref": "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a",
       "target_ref": "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -1066,12 +1622,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--22010776-8b59-57bc-86c9-def04582b65d",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--1b4397f5-3808-5524-8d07-10c7154dc098",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
-      "target_ref": "identity--655fc9dc-652e-55bd-be43-b72c376d01da",
+      "target_ref": "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1080,12 +1636,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--7bc5c3be-5d5f-5832-88e1-b80e785dcc0c",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "id": "relationship--25a26f73-4023-540f-a645-1205ff21e6f3",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "relationship_type": "targets",
-      "source_ref": "incident--dc589c09-316b-5c90-8a51-1d220ad5ddb5",
-      "target_ref": "identity--655fc9dc-652e-55bd-be43-b72c376d01da",
+      "source_ref": "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a",
+      "target_ref": "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1095,10 +1651,10 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--3811d29f-43d7-5522-a125-2c50de43e0d4",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "AFRINTEL monthly CTI report - July 2024",
-      "description": "# CTI Report - July 2024: Ransomware activity peak in Africa\n\n### 1. Executive summary\n\nIn July 2024, Africa recorded **7 documented ransomware victims**. The month saw a **strong rebound** after the June lull (3 victims) and significant geographic and sectoral diversity.\n\n**Key figures:**\n- 🔹 **7 victims** identified\n- 🔹 **6 different groups**: KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1)\n- 🔹 **Countries affected**: South Africa (3), Tunisia (1), Kenya (1), Zimbabwe (1), Egypt (1)\n- 🔹 **Sectors**: Logistics, Healthcare, Rail transport, Finance, Services, Government, Heavy industries (mining)\n\n---\n\n### 2. Attack timeline\n\n| Date       | Victim                          | Country          | Ransomware group |\n|------------|----------------------------------|------------------|------------------|\n| July 1     | Maxcess-logistics                | Tunisia          | KillSec          |\n| July 5     | National health laboratory services | South Africa | Blacksuit        |\n| July 13    | Kenya urban roads authority      | Kenya            | Hunters          |\n| July 17    | Zb financial holdings            | Zimbabwe         | Madliberator     |\n| July 17    | Cities network                   | South Africa     | Madliberator     |\n| July 17    | Assih                            | Egypt            | LockBit3         |\n| July 22    | Sibanye-stillwater               | South Africa     | RansomHouse      |\n\n---\n\n### 3. Victim analysis\n\n#### 3.1 By country\n\n| Country          | Number of attacks |\n|------------------|------------------|\n| South Africa     | 3                |\n| Tunisia          | 1                |\n| Kenya            | 1                |\n| Zimbabwe         | 1                |\n| Egypt            | 1                |\n\n#### 3.2 By sector\n\n| Sector                            | Count |\n|-----------------------------------|-------|\n| Logistics                         | 1     |\n| Healthcare (national lab)         | 1     |\n| Rail/road transport authority     | 1     |\n| Financial organizations           | 1     |\n| Services (generic)                | 1     |\n| Government administration         | 1     |\n| Heavy industries (mining)         | 1     |\n\n#### 3.3 Ransomware groups\n\n| Ransomware group | Number of attacks |\n|------------------|------------------|\n| Madliberator     | 2                |\n| KillSec          | 1                |\n| Blacksuit        | 1                |\n| Hunters          | 1                |\n| LockBit3         | 1                |\n| RansomHouse      | 1                |\n\n---\n\n### 4. Key observations\n\n- **Activity rebound**: 7 attacks in July vs 3 in June - back to a high level.\n- **Madliberator** appears for the first time and strikes twice on the same day (July 17) in Zimbabwe and South Africa.\n- **Healthcare sector**: South Africa’s National Health Laboratory Service (NHLS) is a critical target.\n- **Government entities**: Kenya Urban Roads Authority and Assih (Egypt) show interest in state infrastructure.\n- **Mining industry**: Sibanye-Stillwater (gold, platinum) is a strategic target.\n- **New group**: RansomHouse (aka RansomHouse) - active on the continent.\n\n---\n### 5. Recommendations for July 2024\n\n| Domain                        | Recommended action |\n|-------------------------------|--------------------|\n| Laboratories & healthcare      | Isolate critical systems, monitor access to sensitive data. |\n| Government administrations    | Strengthen RDP/VPN monitoring, segment networks. |\n| Mining industries             | Offline backups, OT security audits. |\n| All organizations             | Track emerging groups (Madliberator, RansomHouse) and their TTPs. |\n\n---\n\n*Rapport généré à partir des données OSINT AFRINTEL - Diffusion libre (TLP:CLEAR)*\n*Report generated from AFRINTEL OSINT data - Free distribution (TLP:CLEAR)*",
+      "description": "# CTI Report - July 2024: Ransomware activity peak in Africa\n\n### 1. Executive summary\n\nIn July 2024, Africa recorded **11 documented victims** in this file: **7 ransomware victims**, claimed by six different groups, and **4 data leak claims**. Three of the data leak claims are in **Algeria**, all coming from a single compilation reposted on July 11, 2024 by the account Addka72424 (originally attributed to FriendlyChemist), bundling older samples dated between 2019 and 2023 and associated with Hôpital Chahids Mahmoudi, the University of Tlemcen and the Algeria.com portal. The fourth is a July 2 claim by the actor TheColorYellow against an **Ethiopian military-education institution** (documents reviewed by AFRINTEL bear the FDRE Defence War College letterhead, though the domain cited in the post, nwc.ndu.edu, matches the unrelated US National Defense University). The month saw a **strong rebound** in ransomware activity after the June lull (3 victims), significant geographic and sectoral diversity, and the resurfacing of an old Algerian dataset that has been circulating on cybercriminal forums for several years.\n\n**Key figures:**\n- 🔹 **11 victims** identified\n- 🔹 **8 sources**: KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1), Addka72424 (3), TheColorYellow (1)\n- 🔹 **Countries affected**: South Africa (3), Algeria (3), Tunisia (1), Kenya (1), Zimbabwe (1), Egypt (1), Ethiopia (1)\n- 🔹 **Sectors**: Logistics, Healthcare (public lab), Urban road transport, Finance, Urban consulting services, Business services, Heavy industries, Healthcare (private hospital), Education, Media / Web portal, Defense / Military education\n- 🔹 **Incident types**: Ransomware (7), Data Leak (4)\n\n---\n\n### 2. Attack timeline\n\n| Date       | Victim                          | Country          | Actor / Group | Type | Leak date |\n|------------|----------------------------------|------------------|------------------|------|-----------|\n| July 1     | Maxcess-logistics                | Tunisia          | KillSec          | Ransomware | - |\n| July 2     | National War College (nwc.ndu.edu) | Ethiopia       | TheColorYellow    | Data Leak | - |\n| July 5     | National health laboratory services | South Africa | Blacksuit        | Ransomware | - |\n| July 11    | Hôpital Chahids Mahmoudi (hcm-dz.com) | Algeria      | Addka72424 (repost, FriendlyChemist) | Data Leak | September 21, 2023 |\n| July 11    | University of Tlemcen (univ-tlemcen.dz) | Algeria   | Addka72424 (repost, FriendlyChemist) | Data Leak | June 27, 2022 |\n| July 11    | Algeria.com (web portal)         | Algeria          | Addka72424 (repost, FriendlyChemist) | Data Leak | September 2019 |\n| July 13    | Kenya urban roads authority      | Kenya            | Hunters           | Ransomware | - |\n| July 17    | Zb financial holdings            | Zimbabwe         | Madliberator      | Ransomware | - |\n| July 17    | Cities network                   | South Africa     | Madliberator      | Ransomware | - |\n| July 17    | Assih                            | Egypt            | LockBit3          | Ransomware | - |\n| July 22    | Sibanye-stillwater               | South Africa     | RansomHouse       | Ransomware | - |\n\n---\n\n### 3. Victim analysis\n\n#### 3.1 By country\n\n| Country          | Number of attacks |\n|------------------|------------------|\n| South Africa     | 3                |\n| Algeria          | 3                |\n| Tunisia          | 1                |\n| Kenya            | 1                |\n| Zimbabwe         | 1                |\n| Egypt            | 1                |\n| Ethiopia         | 1                |\n\n#### 3.2 By sector\n\n| Sector                                | Count |\n|----------------------------------------|-------|\n| Logistics                              | 1     |\n| Healthcare (public lab)                | 1     |\n| Rail/road transport authority          | 1     |\n| Financial organizations                | 1     |\n| Urban consulting services              | 1     |\n| Business services / Consulting         | 1     |\n| Heavy industries (mining)              | 1     |\n| Healthcare (private hospital)          | 1     |\n| Education / Higher education           | 1     |\n| Media / Web portal                     | 1     |\n| Defense / Military education           | 1     |\n\n#### 3.3 Ransomware groups\n\n| Ransomware group | Number of attacks |\n|------------------|------------------|\n| Madliberator     | 2                |\n| KillSec          | 1                |\n| Blacksuit        | 1                |\n| Hunters          | 1                |\n| LockBit3         | 1                |\n| RansomHouse      | 1                |\n\n#### 3.4 Data leak sources\n\n| Source | Number of claims |\n|--------|-------------------|\n| Addka72424 (repost, originally attributed to FriendlyChemist) | 3 |\n| TheColorYellow (post on RaidForums) | 1 |\n\n---\n\n### 4. Key observations\n\n- **Ransomware activity rebound**: 7 ransomware attacks in July vs 3 in June - back to a high level.\n- **Madliberator** appears for the first time and strikes twice on the same day (July 17) in Zimbabwe and South Africa.\n- **Healthcare sector**: South Africa's National Health Laboratory Service (NHLS) is a critical ransomware target.\n- **Government entities**: Kenya Urban Roads Authority and Assih (Egypt) show interest in state infrastructure.\n- **Mining industry**: Sibanye-Stillwater (gold, platinum) is a strategic target.\n- **New group**: RansomHouse - active on the continent.\n- **Reposted Algerian compilation**: the three July 11, 2024 entries (Hôpital Chahids Mahmoudi, University of Tlemcen, Algeria.com) come from a single compilation titled \"Algerian Databases Collection\", reposted by the account Addka72424 from an original post attributed to FriendlyChemist. These are not new intrusions but the recirculation of samples dated between 2019 and 2023. They are counted separately from ransomware as data leaks, with differentiated confidence levels (medium for the hospital, high for the university, low for Algeria.com) based on the quality of the observed samples.\n- **Ethiopia, domain inconsistency flagged**: the July 2 claim by TheColorYellow cites the domain \"nwc.ndu.edu\", which in reality belongs to the (US) National Defense University's National War College, but the document samples shown bear the emblem and Amharic-language letterhead of the FDRE Defence War College, an Ethiopian military institution. AFRINTEL records the claim against the Ethiopian institution identifiable from the letterhead and flags the domain cited by the actor as unverified rather than discarding or silently correcting the claim.\n\n---\n\n### 5. Recommendations for July 2024\n\n| Domain                        | Recommended action |\n|-------------------------------|--------------------|\n| Laboratories & healthcare      | Isolate critical systems, monitor access to sensitive data. |\n| Government administrations    | Strengthen RDP/VPN monitoring, segment networks. |\n| Mining industries             | Offline backups, OT security audits. |\n| Hospitals                     | Verify whether the reposted email logs correspond to a real system, review email gateway access logs, and raise staff awareness of phishing exploiting patient references. |\n| Higher education              | Verify the status of the affected Moodle database, reset exposed accounts starting with administrator accounts, and review the scope of the authentication federation with the other identified universities. |\n| Defense / Military education  | Audit Exchange server access logs and mailbox export activity, restrict administrative-document distribution, and independently verify the institution's public-facing domain records to detect impersonation or metadata confusion in future claims. |\n| All organizations             | Track emerging groups (Madliberator, RansomHouse) and their TTPs, and monitor the reuse of old Algerian datasets circulating on forums. |\n\n---\n\n*Rapport généré à partir des données OSINT AFRINTEL - Diffusion libre (TLP:CLEAR)*\n*Report generated from AFRINTEL OSINT data - Free distribution (TLP:CLEAR)*",
       "lang": "en",
       "published": "2024-07-22T00:00:00Z",
       "report_types": [
@@ -1129,44 +1685,54 @@
       "object_refs": [
         "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
         "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
+        "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
         "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
+        "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
         "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
         "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
         "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
         "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
         "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
-        "identity--c6de617c-fa78-5c44-a7e3-c77ce49ca785",
-        "identity--1c37c3b9-595f-5300-b678-66b7bd578c58",
-        "identity--e63b527d-0b43-5e16-a617-984b415c8154",
-        "identity--4e788fe5-ebf8-59eb-b777-7f48f3681403",
-        "identity--7226b997-1a74-5509-9657-8cb558437dec",
-        "identity--655fc9dc-652e-55bd-be43-b72c376d01da",
+        "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+        "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+        "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+        "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+        "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+        "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
+        "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
+        "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
+        "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
+        "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
         "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
-        "incident--59d1e500-174c-5b47-83f7-d6fa2442a6a9",
-        "incident--7385bca3-567d-56f5-92f3-565ad5621177",
-        "incident--078db40b-6bf1-537a-bb6c-cb2f69bb1d26",
-        "incident--489c2582-aaa5-5ca3-93b0-6639422cc921",
-        "incident--1bf417ec-94e4-5e6d-9bb6-02fc2aaa4e55",
-        "incident--dc589c09-316b-5c90-8a51-1d220ad5ddb5"
+        "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+        "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+        "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+        "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+        "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+        "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+        "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+        "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+        "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+        "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/README.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 7,
+      "x_afrintel_total_incidents": 11,
       "x_afrintel_ransomware_count": 7,
-      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_data_leak_count": 4,
       "x_afrintel_access_sale_count": 0,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 7
+      "x_afrintel_victim_identity_count": 11
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--050b31c0-4577-5066-8e7d-7d2f6f766533",
-      "created": "2026-07-30T11:00:04Z",
-      "modified": "2026-07-30T11:00:04Z",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
       "name": "Rapport CTI mensuel AFRINTEL - Juillet 2024",
-      "description": "# Rapport CTI - Juillet 2024 : Pic d’activité des ransomwares en Afrique\n### 1. Résumé exécutif\n\nEn juillet 2024, l’Afrique a enregistré **7 victimes** documentées d’attaques par ransomware. Le mois a été marqué par une **forte reprise** après le creux de juin (3 victimes) et une grande diversité géographique et sectorielle.\n\n**Chiffres clés :**\n- 🔹 **7 victimes** identifiées\n- 🔹 **5 groupes différents** : KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1)\n- 🔹 **Pays touchés** : Afrique du Sud (3), Tunisie (1), Kenya (1), Zimbabwe (1), Égypte (1)\n- 🔹 **Secteurs** : Logistique, Santé, Transport ferroviaire, Finance, Services, Administration publique, Industries lourdes\n\n---\n\n### 2. Chronologie des attaques\n\n| Date       | Victime                          | Pays             | Groupe ransomware |\n|------------|----------------------------------|------------------|-------------------|\n| 1er juillet | Maxcess-logistics                | Tunisie          | KillSec           |\n| 5 juillet  | National health laboratory services | Afrique du Sud | Blacksuit         |\n| 13 juillet | Kenya urban roads authority      | Kenya            | Hunters           |\n| 17 juillet | Zb financial holdings            | Zimbabwe         | Madliberator      |\n| 17 juillet | Cities network                   | Afrique du Sud   | Madliberator      |\n| 17 juillet | Assih                            | Égypte           | LockBit3          |\n| 22 juillet | Sibanye-stillwater               | Afrique du Sud   | RansomHouse       |\n\n---\n\n### 3. Analyse des victimes\n\n#### 3.1 Par pays\n\n| Pays               | Nombre d’attaques |\n|--------------------|------------------|\n| Afrique du Sud     | 3                |\n| Tunisie            | 1                |\n| Kenya              | 1                |\n| Zimbabwe           | 1                |\n| Égypte             | 1                |\n\n#### 3.2 Par secteur\n\n| Secteur                            | Nombre |\n|------------------------------------|--------|\n| Logistique                         | 1      |\n| Services de santé (laboratoire)    | 1      |\n| Transport ferroviaire / routes     | 1      |\n| Organismes financiers              | 1      |\n| Services (générique)               | 1      |\n| Administration publique            | 1      |\n| Industries lourdes (mines)         | 1      |\n\n#### 3.3 Groupes ransomware\n\n| Groupe ransomware | Nombre d’attaques |\n|------------------|------------------|\n| Madliberator     | 2                |\n| KillSec          | 1                |\n| Blacksuit        | 1                |\n| Hunters          | 1                |\n| LockBit3         | 1                |\n| RansomHouse      | 1                |\n\n---\n\n### 4. Points d’attention\n\n- **Reprise d’activité** : 7 attaques en juillet contre 3 en juin - retour à un niveau élevé.\n- **Madliberator** apparaît pour la première fois et frappe deux fois le même jour (17 juillet) au Zimbabwe et en Afrique du Sud.\n- **Secteur santé** : le laboratoire national sud-africain (NHLS) est une cible critique.\n- **Administrations publiques** : le Kenya Urban Roads Authority et Assih (Égypte) montrent l’intérêt pour les infrastructures étatiques.\n- **Industrie minière** : Sibanye-Stillwater (or, platine) est une cible stratégique.\n- **Nouveau groupe** : RansomHouse (alias RansomHouse) - actif sur le continent.\n\n---\n### 5. Recommandations pour juillet 2024\n\n| Domaine                        | Action recommandée |\n|--------------------------------|--------------------|\n| Laboratoires et santé          | Isoler les systèmes critiques, surveiller les accès aux données sensibles. |\n| Administrations publiques      | Mettre en place une surveillance renforcée des RDP et VPN, segmenter les réseaux. |\n| Industries minières            | Sauvegardes hors ligne, audits de sécurité OT. |\n| Toutes organisations           | Suivre les nouveaux groupes (Madliberator, RansomHouse) et leurs modes opératoires. |\n\n---",
+      "description": "# Rapport CTI - Juillet 2024 : Pic d’activité des ransomwares en Afrique\n### 1. Résumé exécutif\n\nEn juillet 2024, l'Afrique a enregistré **11 victimes** documentées dans ce fichier : **7 victimes de ransomware**, revendiquées par six groupes différents, et **4 revendications de fuite de données**. Trois de ces revendications concernent l'**Algérie**, toutes issues d'une même compilation republiée le 11 juillet 2024 par le compte Addka72424 (à l'origine attribuée à FriendlyChemist), regroupant des échantillons anciens datés de 2019 à 2023 et associés à l'Hôpital Chahids Mahmoudi, à l'Université de Tlemcen et au portail Algeria.com. La quatrième est une revendication du 2 juillet par l'acteur TheColorYellow visant un **établissement d'enseignement militaire éthiopien** (les documents examinés par AFRINTEL portent l'en-tête du FDRE Defence War College, bien que le domaine cité dans la publication, nwc.ndu.edu, corresponde à la National Defense University américaine, sans lien apparent). Le mois est marqué par une **forte reprise** de l'activité ransomware après le creux de juin (3 victimes), une grande diversité géographique et sectorielle, ainsi que par la réapparition d'un ancien jeu de données algériennes en circulation depuis plusieurs années sur les forums cybercriminels.\n\n**Chiffres clés :**\n- 🔹 **11 victimes** identifiées\n- 🔹 **8 sources** : KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1), Addka72424 (3), TheColorYellow (1)\n- 🔹 **Pays touchés** : Afrique du Sud (3), Algérie (3), Tunisie (1), Kenya (1), Zimbabwe (1), Égypte (1), Éthiopie (1)\n- 🔹 **Secteurs** : Logistique, Santé (laboratoire public), Transport routier urbain, Finance, Services de conseil, Services aux entreprises, Industries lourdes, Santé (hôpital privé), Éducation, Médias / Portail web, Défense / Enseignement militaire\n- 🔹 **Types d'incident** : Ransomware (7), Fuite de données (4)\n\n---\n\n### 2. Chronologie des attaques\n\n| Date       | Victime                          | Pays             | Acteur / Groupe | Type | Date de la fuite |\n|------------|----------------------------------|------------------|------------------|------|-------------------|\n| 1er juillet | Maxcess-logistics                | Tunisie          | KillSec           | Ransomware | - |\n| 2 juillet  | National War College (nwc.ndu.edu) | Éthiopie       | TheColorYellow    | Fuite de données | - |\n| 5 juillet  | National health laboratory services | Afrique du Sud | Blacksuit         | Ransomware | - |\n| 11 juillet | Hôpital Chahids Mahmoudi (hcm-dz.com) | Algérie      | Addka72424 (repost FriendlyChemist) | Fuite de données | 21 septembre 2023 |\n| 11 juillet | Université de Tlemcen (univ-tlemcen.dz) | Algérie   | Addka72424 (repost FriendlyChemist) | Fuite de données | 27 juin 2022 |\n| 11 juillet | Algeria.com (portail web)        | Algérie          | Addka72424 (repost FriendlyChemist) | Fuite de données | Septembre 2019 |\n| 13 juillet | Kenya urban roads authority      | Kenya            | Hunters           | Ransomware | - |\n| 17 juillet | Zb financial holdings            | Zimbabwe         | Madliberator      | Ransomware | - |\n| 17 juillet | Cities network                   | Afrique du Sud   | Madliberator      | Ransomware | - |\n| 17 juillet | Assih                            | Égypte           | LockBit3          | Ransomware | - |\n| 22 juillet | Sibanye-stillwater               | Afrique du Sud   | RansomHouse       | Ransomware | - |\n\n---\n\n### 3. Analyse des victimes\n\n#### 3.1 Par pays\n\n| Pays               | Nombre d’attaques |\n|--------------------|------------------|\n| Afrique du Sud     | 3                |\n| Algérie            | 3                |\n| Tunisie            | 1                |\n| Kenya              | 1                |\n| Zimbabwe           | 1                |\n| Égypte             | 1                |\n| Éthiopie           | 1                |\n\n#### 3.2 Par secteur\n\n| Secteur                                   | Nombre |\n|--------------------------------------------|--------|\n| Logistique                                 | 1      |\n| Services de santé (laboratoire public)     | 1      |\n| Transport routier urbain                   | 1      |\n| Organismes financiers                      | 1      |\n| Services de conseil urbain                 | 1      |\n| Services aux entreprises / Conseil         | 1      |\n| Industries lourdes (mines)                 | 1      |\n| Santé (hôpital privé)                      | 1      |\n| Éducation / Enseignement supérieur         | 1      |\n| Médias / Portail web                       | 1      |\n| Défense / Enseignement militaire           | 1      |\n\n#### 3.3 Groupes ransomware\n\n| Groupe ransomware | Nombre d’attaques |\n|------------------|------------------|\n| Madliberator     | 2                |\n| KillSec          | 1                |\n| Blacksuit        | 1                |\n| Hunters          | 1                |\n| LockBit3         | 1                |\n| RansomHouse      | 1                |\n\n#### 3.4 Sources de fuite de données\n\n| Source | Nombre de revendications |\n|--------|--------------------------|\n| Addka72424 (republication, origine attribuée à FriendlyChemist) | 3 |\n| TheColorYellow (publication sur RaidForums) | 1 |\n\n---\n\n### 4. Points d’attention\n\n- **Reprise d’activité ransomware** : 7 attaques ransomware en juillet contre 3 en juin - retour à un niveau élevé.\n- **Madliberator** apparaît pour la première fois et frappe deux fois le même jour (17 juillet) au Zimbabwe et en Afrique du Sud.\n- **Secteur santé** : le laboratoire national sud-africain (NHLS) est une cible critique côté ransomware.\n- **Administrations publiques** : le Kenya Urban Roads Authority et Assih (Égypte) montrent l’intérêt pour les infrastructures étatiques.\n- **Industrie minière** : Sibanye-Stillwater (or, platine) est une cible stratégique.\n- **Nouveau groupe** : RansomHouse - actif sur le continent.\n- **Compilation algérienne republiée** : les trois entrées du 11 juillet 2024 (Hôpital Chahids Mahmoudi, Université de Tlemcen, Algeria.com) proviennent d’une seule compilation intitulée « Algerian Databases Collection », republiée par le compte Addka72424 à partir d’un post initial attribué à FriendlyChemist. Il ne s’agit pas de nouvelles intrusions mais de la recirculation d’échantillons datés de 2019 à 2023. Elles sont comptabilisées séparément des ransomwares comme des fuites de données, avec des niveaux de confiance différenciés (moyen pour l’hôpital, élevé pour l’université, faible pour Algeria.com) selon la qualité des échantillons observés.\n- **Éthiopie, incohérence de domaine signalée** : la revendication du 2 juillet par TheColorYellow cite le domaine « nwc.ndu.edu », qui appartient en réalité au National War College de la National Defense University américaine, mais les échantillons de documents montrés portent l'emblème et l'en-tête en amharique du FDRE Defence War College, un établissement militaire éthiopien. AFRINTEL enregistre la revendication contre l'établissement éthiopien identifiable par l'en-tête et signale le domaine cité par l'acteur comme non vérifié, plutôt que de l'écarter ou de le corriger silencieusement.\n\n---\n\n### 5. Recommandations pour juillet 2024\n\n| Domaine                        | Action recommandée |\n|--------------------------------|--------------------|\n| Laboratoires et santé          | Isoler les systèmes critiques, surveiller les accès aux données sensibles. |\n| Administrations publiques      | Mettre en place une surveillance renforcée des RDP et VPN, segmenter les réseaux. |\n| Industries minières            | Sauvegardes hors ligne, audits de sécurité OT. |\n| Établissements hospitaliers    | Vérifier si les journaux de messagerie republiés correspondent à un système réel, contrôler les accès à la passerelle de messagerie et sensibiliser le personnel médical au phishing exploitant des références de patients. |\n| Enseignement supérieur         | Vérifier l’état de la base Moodle concernée, réinitialiser les comptes exposés en priorité les comptes administrateurs, et contrôler l’étendue de la fédération d’authentification avec les autres universités identifiées. |\n| Défense / Enseignement militaire | Auditer les journaux d'accès au serveur Exchange et l'activité d'export de boîtes aux lettres, restreindre la diffusion des documents administratifs, et vérifier de façon indépendante les enregistrements de domaine de l'établissement pour détecter une usurpation ou une confusion de métadonnées dans de futures revendications. |\n| Toutes organisations           | Suivre les nouveaux groupes (Madliberator, RansomHouse) et leurs modes opératoires, et surveiller la réutilisation d’anciens jeux de données algériens en circulation sur les forums. |\n\n---",
       "lang": "fr",
       "published": "2024-07-22T00:00:00Z",
       "report_types": [
@@ -1197,35 +1763,201 @@
       "object_refs": [
         "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
         "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
+        "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
         "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
+        "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
         "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
         "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
         "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
         "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
         "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
-        "identity--c6de617c-fa78-5c44-a7e3-c77ce49ca785",
-        "identity--1c37c3b9-595f-5300-b678-66b7bd578c58",
-        "identity--e63b527d-0b43-5e16-a617-984b415c8154",
-        "identity--4e788fe5-ebf8-59eb-b777-7f48f3681403",
-        "identity--7226b997-1a74-5509-9657-8cb558437dec",
-        "identity--655fc9dc-652e-55bd-be43-b72c376d01da",
+        "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+        "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+        "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+        "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+        "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+        "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
+        "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
+        "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
+        "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
+        "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
         "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
-        "incident--59d1e500-174c-5b47-83f7-d6fa2442a6a9",
-        "incident--7385bca3-567d-56f5-92f3-565ad5621177",
-        "incident--078db40b-6bf1-537a-bb6c-cb2f69bb1d26",
-        "incident--489c2582-aaa5-5ca3-93b0-6639422cc921",
-        "incident--1bf417ec-94e4-5e6d-9bb6-02fc2aaa4e55",
-        "incident--dc589c09-316b-5c90-8a51-1d220ad5ddb5"
+        "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+        "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+        "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+        "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+        "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+        "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+        "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+        "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+        "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+        "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2024/07-july/README_FR.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 7,
+      "x_afrintel_total_incidents": 11,
       "x_afrintel_ransomware_count": 7,
-      "x_afrintel_data_leak_count": 0,
+      "x_afrintel_data_leak_count": 4,
       "x_afrintel_access_sale_count": 0,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 7
+      "x_afrintel_victim_identity_count": 11
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--b3882663-0944-526f-aa05-eff46a835685",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "AFRINTEL monthly statistics - July 2024",
+      "description": "# AFRINTEL CTI statistics - July 2024\n\n## Summary\n\nThis statistical sheet is compiled from the 11 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 11 |\n| Ransomware | 7 |\n| Data leaks | 4 |\n| Access sales | 0 |\n| Defacement | 0 |\n| Unclassified public claims | 0 |\n| Countries | 7 |\n| Sectors | 10 |\n| Actors / sources | 8 |\n\n## 1. Country\n\n| Country | Incidents |\n|---|---:|\n| 🇿🇦 South Africa | 3 |\n| 🇩🇿 Algeria | 3 |\n| 🇹🇳 Tunisia | 1 |\n| 🇪🇹 Ethiopia | 1 |\n| 🇰🇪 Kenya | 1 |\n| 🇿🇼 Zimbabwe | 1 |\n| 🇪🇬 Egypt | 1 |\n\n## 2. Sector\n\n| Sector | Incidents |\n|---|---:|\n| Services | 2 |\n| Logistics | 1 |\n| Defense / Military education | 1 |\n| Healthcare services | 1 |\n| Healthcare / Private hospital | 1 |\n| Education / Higher education | 1 |\n| Media / Web portal (travel, news, lifestyle) | 1 |\n| Rail transport / Urban Infrastructure | 1 |\n| Financial organizations | 1 |\n| Heavy industries / Mining | 1 |\n\n## 3. Actor / source\n\n| Actor / source | Incidents |\n|---|---:|\n| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 |\n| madliberator | 2 |\n| killsec | 1 |\n| TheColorYellow, post published on RaidForums | 1 |\n| blacksuit | 1 |\n| hunters | 1 |\n| lockbit3 | 1 |\n| ransomhouse | 1 |\n\n## 4. Type\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 7 |\n| Data Leak | 4 |\n\n## CTI reading\n\nThe monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.\n\n**AFRINTEL** - TLP:CLEAR",
+      "lang": "en",
+      "published": "2024-07-22T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "en",
+        "july-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "statistics-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/statistics/2024/07-july/README.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
+        "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
+        "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
+        "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+        "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
+        "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
+        "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
+        "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
+        "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
+        "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+        "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+        "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+        "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+        "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+        "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
+        "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
+        "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
+        "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
+        "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
+        "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
+        "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+        "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+        "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+        "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+        "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+        "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+        "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+        "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+        "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+        "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a"
+      ],
+      "x_afrintel_source_path": "statistics/2024/07-july/README.md",
+      "x_afrintel_report_kind": "monthly-statistics",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 11,
+      "x_afrintel_ransomware_count": 7,
+      "x_afrintel_data_leak_count": 4,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 11
+    },
+    {
+      "type": "report",
+      "spec_version": "2.1",
+      "id": "report--c973b912-8091-5291-92fd-539fa65d2c18",
+      "created": "2026-08-16T20:14:20Z",
+      "modified": "2026-08-16T20:14:20Z",
+      "name": "Statistiques mensuelles AFRINTEL - Juillet 2024",
+      "description": "# Statistiques CTI AFRINTEL - Juillet 2024\n\nCette fiche reprend les 11 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.\n\n| Indicateur | Valeur |\n|---|---:|\n| Total incidents | 11 |\n| Ransomware | 7 |\n| Fuites de données | 4 |\n| Pays touchés | 7 |\n| Secteurs | 11 |\n| Acteurs / sources | 8 |\n\n## Pays\n\n| Pays | Incidents |\n|---|---:|\n| 🇿🇦 Afrique du Sud | 3 |\n| 🇩🇿 Algérie | 3 |\n| 🇹🇳 Tunisie | 1 |\n| 🇪🇹 Éthiopie | 1 |\n| 🇰🇪 Kenya | 1 |\n| 🇿🇼 Zimbabwe | 1 |\n| 🇪🇬 Égypte | 1 |\n\n## Secteurs\n\n| Secteur | Incidents |\n|---|---:|\n| Logistique & Chaîne d'approvisionnement | 1 |\n| Défense / Enseignement militaire | 1 |\n| Santé / Services de laboratoires médicaux publics | 1 |\n| Santé / Établissement hospitalier privé | 1 |\n| Éducation / Enseignement supérieur | 1 |\n| Médias / Portail web (voyage, actualités, style de vie) | 1 |\n| Infrastructures publiques / Transport routier urbain | 1 |\n| Institutions financières / Banque & Assurance | 1 |\n| Services de conseil urbain / Développement territorial | 1 |\n| Services aux entreprises / Conseil | 1 |\n| Industrie lourde / Extraction minière (Or & Métaux du groupe du platine) | 1 |\n\n## Acteurs / sources\n\n| Acteur / source | Incidents |\n|---|---:|\n| Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel | 3 |\n| madliberator | 2 |\n| killsec | 1 |\n| TheColorYellow, publication postée sur RaidForums | 1 |\n| blacksuit | 1 |\n| hunters | 1 |\n| lockbit3 | 1 |\n| ransomhouse | 1 |\n\n## Types\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 7 |\n| Data Leak | 4 |\n\n**AFRINTEL** - TLP:CLEAR",
+      "lang": "fr",
+      "published": "2024-07-22T00:00:00Z",
+      "report_types": [
+        "threat-report"
+      ],
+      "labels": [
+        "afrintel",
+        "africa",
+        "fr",
+        "july-2024",
+        "ransomware",
+        "data-leaks",
+        "access-sales",
+        "osint",
+        "monthly-report",
+        "statistics-report"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL README_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/statistics/2024/07-july/README_FR.md"
+        }
+      ],
+      "object_refs": [
+        "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+        "threat-actor--2a07acbd-2fb3-58ab-9d7b-c203887f7b50",
+        "threat-actor--f04b2c1f-17e3-5c65-a2d0-d3ee9a7cb4e7",
+        "threat-actor--b2030c02-e85c-53d8-99d0-b479d0beeba7",
+        "threat-actor--2c2d5e21-75af-512e-86ff-5d4aa4bbac77",
+        "threat-actor--a0d7edad-0f63-5ed1-87c8-1282ff594806",
+        "threat-actor--e05fad58-4175-59bd-9d81-5032780bf88e",
+        "threat-actor--710c36eb-1cbc-5ff3-bf86-ffae7385266f",
+        "threat-actor--be7536e0-f1f4-5d0e-8e72-acc51a521c9a",
+        "identity--36ce9cc9-a471-51e8-8209-b8312a0e5bb0",
+        "identity--d9c7a77b-2439-5d86-8620-276b9231a269",
+        "identity--1bab5d10-0304-5fa6-b622-f06993baac2f",
+        "identity--eeb1d9b8-2a0d-5494-adcd-b3e8636839a0",
+        "identity--9c2c748e-e3de-5a2d-8679-4490d0dea742",
+        "identity--eff0eb25-3c56-59d5-9d46-e2105a3dd36d",
+        "identity--c922007a-841a-5a82-9c68-a92c1dc2c3cf",
+        "identity--7e94cb01-3129-5ad1-9b6c-10f4b7b6e709",
+        "identity--28bbb040-c58d-5583-b33c-7a2ffa8b0bdd",
+        "identity--bf0ab669-fe6b-5c5d-8a4d-32963702fb82",
+        "identity--1eca0efb-ccf4-5454-8c71-3ea60b0d69bd",
+        "incident--fd26d36e-452b-5fed-b744-1b7041467ede",
+        "incident--ee0e881e-9cff-5596-adf0-52503fd32c9b",
+        "incident--22c756a4-d0ea-5604-8abb-c3ac0ae7e818",
+        "incident--d1c110a7-96ec-5804-8873-1171ee988df8",
+        "incident--8d13ee99-36c9-5751-95b6-a963029e6e15",
+        "incident--7c7a9212-7e11-5398-a576-044badf3a9ff",
+        "incident--306be1e3-a697-547f-b82a-937d76508bb1",
+        "incident--a0ac61d7-805f-5239-a001-6adc8862d049",
+        "incident--3086b793-dfc1-596c-b3d7-b892c86466f3",
+        "incident--22734d39-c6fb-5223-b026-949b10bcbd1e",
+        "incident--535456c9-4d28-5f46-8fd6-b82fb5ec1e4a"
+      ],
+      "x_afrintel_source_path": "statistics/2024/07-july/README_FR.md",
+      "x_afrintel_report_kind": "monthly-statistics",
+      "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "x_afrintel_total_incidents": 11,
+      "x_afrintel_ransomware_count": 7,
+      "x_afrintel_data_leak_count": 4,
+      "x_afrintel_access_sale_count": 0,
+      "x_afrintel_defacement_count": 0,
+      "x_afrintel_victim_identity_count": 11
     }
   ]
 }

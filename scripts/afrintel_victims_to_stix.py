@@ -105,7 +105,13 @@ def strip_flags(value: str) -> str:
 
 def clean_inline(value: str) -> str:
     value = re.sub(r"\[([^\]]+)\]\(([^)]+)\)", r"\1", value)
-    value = re.sub(r"[`*_]", "", value)
+    # Strip markdown emphasis/code delimiters but keep literal underscores or
+    # asterisks that are part of a word (e.g. an actor handle like "N0ull_0X"),
+    # mirroring GFM's rule that intraword underscores/asterisks are not emphasis.
+    value = re.sub(r"`([^`]+)`", r"\1", value)
+    value = re.sub(r"\*\*(.+?)\*\*", r"\1", value)
+    value = re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"\1", value)
+    value = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", value)
     value = value.replace("–", "-").strip()
     return re.sub(r"\s+", " ", value)
 
@@ -154,6 +160,16 @@ def parse_date_to_iso(date_text: str) -> str:
         if month:
             return f"{year:04d}-{month:02d}-{day:02d}"
 
+    # Month YYYY / Mois AAAA (no day given in the section header): default to
+    # the first of the month so the entry is still captured with a sortable
+    # ISO date instead of being silently dropped.
+    m = re.match(r"([A-Za-zÀ-ÿ]+)\s+(\d{4})$", text)
+    if m:
+        month_name, year = m.group(1).lower(), int(m.group(2))
+        month = MONTHS_EN.get(month_name) or MONTHS_FR.get(month_name)
+        if month:
+            return f"{year:04d}-{month:02d}-01"
+
     raise ValueError(f"Unable to parse date: {date_text}")
 
 
@@ -196,6 +212,17 @@ def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
 
 
 def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
+    explicit_type = first_matching(fields, ["incident type", "type d'incident", "type d’incident"]).lower()
+    if explicit_type:
+        if "ransomware" in explicit_type:
+            return "ransomware"
+        if "defacement" in explicit_type or "défacement" in explicit_type:
+            return "defacement"
+        if "access" in explicit_type or "accès" in explicit_type:
+            return "access-sale"
+        if "leak" in explicit_type or "fuite" in explicit_type:
+            return "data-leak"
+
     joined_text = " ".join([*fields.keys(), *fields.values()]).lower()
     status_text = status.lower()
     if "defacement" in status_text or "défacement" in status_text or "defacement" in joined_text or "défacement" in joined_text:
@@ -966,8 +993,8 @@ def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Opti
     monthly_report_count = sum(obj.get("type") == "report" for obj in objects_by_id.values())
     validate_bundle(
         bundle,
-        expected_victims=239,
-        expected_incidents=239,
+        expected_victims=victim_count,
+        expected_incidents=incident_count,
         expected_reports=monthly_report_count + len(h1_documents),
     )
 
@@ -982,12 +1009,71 @@ def find_month_dirs(year_path: Path) -> List[str]:
     return [child.name for child in sorted(year_path.iterdir()) if child.is_dir() and re.match(r"^\d{2}-", child.name)]
 
 
+def process_full_year_bundle(repo: Path, year: str, output_root: Optional[Path] = None) -> List[Path]:
+    """Merge all monthly STIX bundles for a year into two annual bundles (EN/FR).
+
+    Unlike the H1 bundle, this does not synthesize a combined annual report
+    object; each output keeps the existing per-month 'monthly-cti' report,
+    filtered to its own language, matching the pre-existing
+    afrintel_<year>_victims_<LANG>_opencti.json convention.
+    """
+    root = reports_root(repo)
+    year_path = root / year
+    month_dirs = find_month_dirs(year_path)
+    if not month_dirs:
+        raise ValueError(f"No monthly folders found for {year}")
+
+    objects_by_id: Dict[str, dict] = {}
+    for month_dir in month_dirs:
+        month_slug = month_dir.split("-", 1)[1]
+        bundle_path = repo / "stix" / year / month_dir / f"afrintel_{month_slug}_{year}_opencti.json"
+        if not bundle_path.exists():
+            raise FileNotFoundError(f"Monthly STIX bundle not found: {bundle_path}")
+        monthly_bundle = json.loads(bundle_path.read_text(encoding="utf-8"))
+        for obj in monthly_bundle.get("objects", []):
+            object_id = obj.get("id")
+            if not object_id:
+                raise ValueError(f"STIX object without id in {bundle_path}")
+            objects_by_id[object_id] = obj
+
+    out_root = output_root or (repo / "stix" / year)
+    out_root.mkdir(parents=True, exist_ok=True)
+    outputs: List[Path] = []
+
+    for language, suffix in (("en", "EN"), ("fr", "FR")):
+        objects = [
+            obj for obj in objects_by_id.values()
+            if obj.get("type") != "report"
+            or (obj.get("lang") == language and obj.get("x_afrintel_report_kind") == "monthly-cti")
+        ]
+        victim_count = sum(
+            obj.get("type") == "identity" and "victim" in obj.get("labels", [])
+            for obj in objects
+        )
+        incident_count = sum(obj.get("type") == "incident" for obj in objects)
+        report_count = sum(obj.get("type") == "report" for obj in objects)
+
+        bundle = {
+            "type": "bundle",
+            "id": stix_id("bundle", f"{year}:victims:{language}"),
+            "objects": objects,
+        }
+        validate_bundle(bundle, expected_victims=victim_count, expected_incidents=incident_count, expected_reports=report_count)
+
+        out_path = out_root / f"afrintel_{year}_victims_{suffix}_opencti.json"
+        out_path.write_text(json.dumps(bundle, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        outputs.append(out_path)
+
+    return outputs
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate AFRINTEL OpenCTI STIX bundles from victims.md files.")
     parser.add_argument("--repo", required=True, help="Path to AFRINTEL repository root")
     parser.add_argument("--year", help="Specific year, e.g. 2026")
     parser.add_argument("--month", help="Specific month folder, e.g. 05-may")
     parser.add_argument("--h1", action="store_true", help="Build a first-half bundle from January through June monthly bundles")
+    parser.add_argument("--full-year", action="store_true", help="Merge all monthly bundles for --year into annual EN/FR bundles (requires monthly bundles to already exist)")
     parser.add_argument("--github-base", default="https://github.com/Hatchepsoute/AFRINTEL/blob/main", help="Base GitHub URL used to build source references")
     parser.add_argument("--output-root", help="Optional custom output root. Default: <repo>/stix/<year>/<month>/")
     args = parser.parse_args()
@@ -1008,6 +1094,20 @@ def main() -> int:
             return 0
         except Exception as exc:
             print(f"[ERROR] {args.year}/H1: {exc}", file=sys.stderr)
+            return 2
+
+    if args.full_year:
+        if not args.year:
+            print("[ERROR] --full-year requires --year.", file=sys.stderr)
+            return 2
+        try:
+            outs = process_full_year_bundle(repo, args.year, output_root)
+            for out in outs:
+                print(f"[OK] Generated and validated: {out}")
+            print(f"Generated {len(outs)} bundle(s).")
+            return 0
+        except Exception as exc:
+            print(f"[ERROR] {args.year}/full-year: {exc}", file=sys.stderr)
             return 2
 
     years = [args.year] if args.year else [p.name for p in sorted(root.iterdir()) if p.is_dir() and re.match(r"^\d{4}$", p.name)]

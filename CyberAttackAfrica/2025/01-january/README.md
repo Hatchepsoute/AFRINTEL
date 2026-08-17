@@ -10,7 +10,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 
 ## 2. Executive summary
 - **Total number of recorded attacks:** 16
-- **Most active ransomware groups:** funksec (5 attacks), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
+- **Most active ransomware groups:** funksec (6 attacks), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
 - **Most targeted sectors:** Education (5), Public Administrations (3), Healthcare (2), Business Services (2), Retail (1), Logistics (1), Marketing (1), Hospitality (1).
 - **Most affected countries:** Egypt (4), Nigeria (3), Algeria (2), Morocco (2), Kenya (2), South Africa (1), Uganda (1), Zambia (1).
 - **Exfiltrated data volume:** At least 1.5 TB for INTELS Nigeria, 19 GB for molars.co.ke. Other volumes are not specified.
@@ -20,7 +20,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 ### 3.1 Breakdown by ransomware group
 | Ransomware Group | Number of Attacks |
 |-------------------|-------------------|
-| funksec           | 5                 |
+| funksec           | 6                 |
 | GDLockerSec       | 3                 |
 | babuk2            | 2                 |
 | ransomhub         | 2                 |
@@ -29,7 +29,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**         | **16**            |
 ```mermaid
 pie title Breakdown by ransomware groups
-    "funksec" : 5
+    "funksec" : 6
     "GDLockerSec" : 3
     "babuk2" : 2
     "ransomhub" : 2
@@ -97,15 +97,15 @@ A visual representation of attacks per country.
 - 🇿🇲 Zambia       	       █            1
 
 ## 4. Detailed attacks by ransomware group
-### 4.1 FunkSec (5 attacks)
-- **09/01/2025:** gags.gov.eg (Egypt, administrations)
+### 4.1 FunkSec (6 attacks)
+- **09/01/2025:** gags.gov.eg (Egypt, administrations) - Claim - Data Sample Published, High confidence: authenticated admin-panel access observed, including a SQL injection payload.
 - **11/01/2025:** seocommarrakech.com (Morocco, marketing)
-- **15/01/2025:** mts.gov.eg (Egypt, administrations)
+- **15/01/2025:** mts.gov.eg (Egypt, administrations) - Claim - Data Sample Published, High confidence: internal system reports (permits, port traffic, payment collection) reviewed, dated consistently with the claim.
 - **21/01/2025:** cu-barika.dz (Algeria, education)
-- **26/01/2025:** achieverssciencejournal.org (Nigeria, education)
-- **27/01/2025:** qed.co.ug (Uganda, education/services)
+- **26/01/2025:** achieverssciencejournal.org (Nigeria, education) - Claim - Data Sample Published, High confidence.
+- **27/01/2025:** qed.co.ug (Uganda, business services/messaging) - Claim - Data Sample Published, Very High confidence: 1.8M+ contact records observed and a self-created "Funksec" admin account left inside the victim's application.
 
-*Note:* funksec primarily targeted administrations and education, with a varied geographic distribution.
+*Note:* funksec primarily targeted administrations and education, with a varied geographic distribution. Three of the six claims (GAGS, MTS, QED) are now corroborated by reviewed material rather than resting on the leak-site post alone.
 
 ### 4.2 GDLockerSec (3 attacks)
 - **24/01/2025:** lnrbda.gov.ng (Nigeria, administrations)
@@ -115,7 +115,7 @@ A visual representation of attacks per country.
 *Note:* GDLockerSec struck educational and governmental institutions, with seemingly small data volumes (a few MB).
 
 ### 4.3 Babuk2 (2 attacks)
-- **27/01/2025:** workers.com.zm (Zambia, HR services)
+- **27/01/2025:** workers.com.zm (Zambia, HR services) - Claim - Data Sample Published, High confidence: a full WordPress/WooCommerce/GiveWP database export was reviewed; the reviewed file carried no actor-specific branding, so attribution to babuk2 is retained but flagged for manual verification.
 - **27/01/2025:** zetech.ac.ke (Kenya, education)
 
 *Note:* Babuk2 targeted a service company and a university.

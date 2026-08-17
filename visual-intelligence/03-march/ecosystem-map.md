@@ -15,18 +15,18 @@ Leak-site, forum and underground-channel posts are treated as **unverified claim
 | Indicator | Value |
 |---|---:|
 | Victims | 41 |
-| Affected countries | 14 |
+| Affected countries | 12 (plus 1 multi-country incident) |
 | Attributed actors | 26 |
-| Affected sectors | 37 |
+| Affected sectors | 38 |
 
 ## Victims by country
 
 ```mermaid
 xychart-beta
     title "Victims by country - March 2026"
-    x-axis ["🇿🇦 South Africa", "🇪🇬 Egypt", "🇿🇲 Zambia", "🇩🇿 Algeria", "🇨🇲 Cameroon", "🇲🇦 Morocco", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇸🇳 Senegal", "🇹🇿 Tanzania", "🇳🇬 Nigeria", "🇨🇩 DRC", "🇬🇳 Guinea"]
+    x-axis ["🇿🇦 South Africa", "🇪🇬 Egypt", "🇿🇲 Zambia", "🇩🇿 Algeria", "🌍 Multi-country", "🇲🇦 Morocco", "🇲🇬 Madagascar", "🇹🇳 Tunisia", "🇳🇦 Namibia", "🇸🇳 Senegal", "🇹🇿 Tanzania", "🇳🇬 Nigeria", "🇬🇳 Guinea"]
     y-axis "Victims" 0 --> 15
-    bar [13, 8, 1, 1, 1, 8, 1, 1, 1, 1, 1, 2, 1, 1]
+    bar [13, 9, 1, 1, 1, 8, 1, 1, 1, 1, 1, 2, 1]
 ```
 
 ## Incident typology
@@ -108,10 +108,10 @@ flowchart LR
     class V_Bridges__tebridges_dz victim;
     class C_Algeria country;
     class S_Technology___Business_Services__CRM sector;
-    A_zimablue["zimablue"] --> V_Loozap__loozap_com["Loozap (loozap.com)"] --> C_Cameroon["🇨🇲 Cameroon"] --> S_E_commerce___Online_classifieds["E-commerce / Online classifieds"]
+    A_zimablue["zimablue"] --> V_Loozap__loozap_com["Loozap (loozap.com)"] --> C_MultiCountry["🌍 Multi-country"] --> S_E_commerce___Online_classifieds["E-commerce / Online classifieds"]
     class A_zimablue actor;
     class V_Loozap__loozap_com victim;
-    class C_Cameroon country;
+    class C_MultiCountry country;
     class S_E_commerce___Online_classifieds sector;
     A_CrowStealer["CrowStealer"] --> V_Waste_Management_Regulatory_Authority__WMRA["Waste Management Regulatory Authority (WMRA)"] --> C_Egypt["🇪🇬 Egypt"] --> S_Government___Environment["Government / Environment"]
     class A_CrowStealer actor;
@@ -277,11 +277,11 @@ flowchart LR
     class V_Smarteez__L_Or_al_Morocco_Supply_Chain_Provider victim;
     class C_Morocco country;
     class S_Digital_Marketing___Cosmetics__L_Or_al_Supply_Chain sector;
-    A_privillege["privillege"] --> V_Public_Administration_Reform_Fund__FRAP["Public Administration Reform Fund (FRAP)"] --> C_DRC["🇨🇩 DRC"] --> S_Government___Administration["Government / Administration"]
-    class A_privillege actor;
-    class V_Public_Administration_Reform_Fund__FRAP victim;
-    class C_DRC country;
-    class S_Government___Administration sector;
+    A_Al_Sheikh["Al-Sheikh"] --> V_Semsar_Masr__semsarmasr_com["Semsar Masr (semsarmasr.com)"] --> C_Egypt["🇪🇬 Egypt"] --> S_Real_Estate___Online_classifieds["Real Estate / Online classifieds"]
+    class A_Al_Sheikh actor;
+    class V_Semsar_Masr__semsarmasr_com victim;
+    class C_Egypt country;
+    class S_Real_Estate___Online_classifieds sector;
     A_Keymous["Keymous"] --> V_Ministry_of_Health__sante_gov_gn["Ministry of Health (sante.gov.gn)"] --> C_Guinea["🇬🇳 Guinea"] --> S_Government___Public_Health["Government / Public Health"]
     class A_Keymous actor;
     class V_Ministry_of_Health__sante_gov_gn victim;

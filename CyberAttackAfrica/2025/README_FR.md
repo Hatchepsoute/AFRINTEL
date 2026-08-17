@@ -1,233 +1,278 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Rapport CTI annuel global AFRINTEL — 2025
 
-# AFRINTEL - Rapport annuel 2025 : Cyberattaques en Afrique
-👉🏾 [**English version available here**](./README.md)
+Ce rapport suit la visibilité publique des cyberattaques contre des organisations africaines en 2025. Les chiffres sont recalculés à partir des fiches victimes mensuelles, les revendications comptées telles qu'elles apparaissent dans ces sources, rien de plus.
 
-## 1. Introduction
-Ce rapport offre une vue d’ensemble des attaques de ransomware et des fuites de données ayant ciblé des organisations africaines au cours de l’année 2025. Tous les incidents ont été collectés à partir de sources OSINT, de sites de fuite de groupes ransomware et de forums clandestins, dans le cadre de l’initiative open source AFRINTEL.
+👉🏾 [Version anglaise](./README.md)
 
-L’ensemble de données comprend **149 revendications publiques** affectant **146 victimes uniques** dont trois organisations ont été frappées à deux reprises par des groupes ransomware différents. L’analyse porte sur les tendances mensuelles, les acteurs de la menace, les secteurs touchés, la répartition géographique et les principales tactiques, techniques et procédures (TTP).
+## 1. Vue d’ensemble
 
-## 2. Résumé exécutif
-- **Total des revendications :** 149 (146 victimes uniques, 3 doubles revendications)
-- **Mois le plus actif :** octobre (17 revendications)
-- **Mois le moins actif :** février (8 revendications)
-- **Groupes les plus prolifiques :** qilin (11), devman (10), nightspire (9)
-- **Pays les plus ciblés :** Afrique du Sud et Égypte (29 chacun), Maroc (21)
-- **Secteurs les plus ciblés :** Technologies (22), Administrations publiques (21), Finance (18)
-- **Plus grande exfiltration :** NSSF Kenya - 2,5 To (devman)
-- **Demande de rançon la plus élevée :** NSSF Kenya - 4,5 M$
+**196 fiches** au total : **122 ransomware**, **71 fuites de données**, **3 ventes d'accès**, **0 défacement**, et 0 laissées sans classification d'incident explicite.
 
-👉🏾 [**Liste des victimes** ](./victims_FR.md)
-## 3. Répartition mensuelle
-| Mois | Jan | Fév | Mar | Avr | Mai | Juin | Juil | Août | Sep | Oct | Nov | Déc | **Total** |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Cyberattaques** | 16 | 8 | 9 | 11 | 14 | 11 | 13 | 13 | 12 | 17 | 11 | 14 | **149** |
+Ce classement mesure la présence publique dans les sources AFRINTEL, pas l'ampleur réelle de chaque attaque survenue.
+
+## Méthodologie
+
+Les chiffres viennent des fiches victimes annuelles, compilées à partir des fichiers mensuels. Une fiche correspond à une publication ou revendication documentée, pas forcément à une victime unique. Les publications de forums et de sites de fuite restent des revendications tant que rien ne les confirme de manière indépendante.
+
+## 2. Classement général par pays
+
+| Pays | Incidents |
+|---|---:|
+| 🇪🇬 Égypte | 33 |
+| 🇲🇦 Maroc | 31 |
+| 🇿🇦 Afrique du Sud | 30 |
+| 🇩🇿 Algérie | 19 |
+| 🇳🇬 Nigeria | 14 |
+| 🇹🇳 Tunisie | 13 |
+| 🇰🇪 Kenya | 10 |
+| 🇲🇷 Mauritanie | 8 |
+| 🇿🇲 Zambie | 4 |
+| 🇬🇭 Ghana | 3 |
+| 🇨🇮 Côte d’Ivoire | 3 |
+| 🇳🇦 Namibie | 3 |
+| 🇹🇿 Tanzanie | 3 |
+| 🇧🇼 Botswana | 2 |
+| 🇨🇩 Congo (RDC) | 2 |
+| 🇲🇺 Maurice | 2 |
+| 🇸🇳 Sénégal | 2 |
+| 🇹🇬 Togo | 1 |
+| 🇺🇬 Ouganda | 2 |
+| 🇿🇼 Zimbabwe | 2 |
+| 🇦🇴 Angola | 1 |
+| 🇧🇫 Burkina Faso | 1 |
+| 🇨🇲 Cameroun | 1 |
+| 🇩🇯 Djibouti | 1 |
+| 🇪🇷 Érythrée | 1 |
+| 🇬🇦 Gabon | 1 |
+| 🇲🇬 Madagascar | 1 |
+| 🇷🇼 Rwanda | 1 |
+
+## 3. Classement ransomware par pays
+
+| Pays | Incidents ransomware |
+|---|---:|
+| 🇪🇬 Égypte | 28 |
+| 🇿🇦 Afrique du Sud | 28 |
+| 🇲🇦 Maroc | 12 |
+| 🇳🇬 Nigeria | 9 |
+| 🇰🇪 Kenya | 8 |
+| 🇹🇳 Tunisie | 6 |
+| 🇩🇿 Algérie | 4 |
+| 🇿🇲 Zambie | 4 |
+| 🇳🇦 Namibie | 3 |
+| 🇹🇿 Tanzanie | 3 |
+
+### Top 10 ransomware
+
+| Pays | Incidents ransomware |
+|---|---:|
+| 🇪🇬 Égypte | 28 |
+| 🇿🇦 Afrique du Sud | 28 |
+| 🇲🇦 Maroc | 12 |
+| 🇳🇬 Nigeria | 9 |
+| 🇰🇪 Kenya | 8 |
+| 🇹🇳 Tunisie | 6 |
+| 🇩🇿 Algérie | 4 |
+| 🇿🇲 Zambie | 4 |
+| 🇳🇦 Namibie | 3 |
+| 🇹🇿 Tanzanie | 3 |
+
+## 4. Groupes ransomware les plus présents
+
+| Groupe | Incidents |
+|---|---:|
+| qilin | 11 |
+| devman | 10 |
+| incransom | 8 |
+| nightspire | 8 |
+| funksec | 7 |
+| killsec | 6 |
+| clop | 4 |
+| ransomhub | 4 |
+| warlock | 4 |
+| GDLockerSec | 3 |
+| arcusmedia | 3 |
+| babuk2 | 3 |
+| dragonforce | 3 |
+| lockbit5 | 3 |
+| lynx | 3 |
+| spacebears | 3 |
+| thegentlemen | 3 |
+| akira | 2 |
+| direwolf | 2 |
+| nova | 2 |
+| obscura | 2 |
+| radar | 2 |
+| ransomhouse | 2 |
+| tengu | 2 |
+| BlackShrantac | 1 |
+| Datacarry | 1 |
+| Wieko | 1 |
+| apt73 | 1 |
+| arkana | 1 |
+| beast | 1 |
+| benzona | 1 |
+| blackshrantac | 1 |
+| brotherhood | 1 |
+| cicada3301 | 1 |
+| crypto24 | 1 |
+| d4rk4rmy | 1 |
+| everest | 1 |
+| flocker | 1 |
+| fog | 1 |
+| gunra | 1 |
+| hunter | 1 |
+| kazu | 1 |
+| medusa | 1 |
+| play | 1 |
+| stormous | 1 |
+| worldleaks | 1 |
+| yurei | 1 |
+
+## 5. Classement des fuites de données par pays
+
+| Pays | Fuites de données |
+|---|---:|
+| 🇲🇦 Maroc | 19 |
+| 🇩🇿 Algérie | 15 |
+| 🇲🇷 Mauritanie | 8 |
+| 🇹🇳 Tunisie | 7 |
+| 🇪🇬 Égypte | 5 |
+| 🇳🇬 Nigeria | 5 |
+| 🇨🇮 Côte d’Ivoire | 2 |
+| 🇰🇪 Kenya | 2 |
+| 🇿🇦 Afrique du Sud | 2 |
+| 🇹🇬 Togo | 1 |
+| 🇦🇴 Angola | 1 |
+| 🇨🇩 Congo (RDC) | 1 |
+| 🇩🇯 Djibouti | 1 |
+| 🇪🇷 Érythrée | 1 |
+| 🇬🇭 Ghana | 1 |
+
+### Top 10 fuites de données
+
+| Pays | Fuites de données |
+|---|---:|
+| 🇲🇦 Maroc | 19 |
+| 🇩🇿 Algérie | 15 |
+| 🇲🇷 Mauritanie | 8 |
+| 🇹🇳 Tunisie | 7 |
+| 🇪🇬 Égypte | 5 |
+| 🇳🇬 Nigeria | 5 |
+| 🇨🇮 Côte d’Ivoire | 2 |
+| 🇰🇪 Kenya | 2 |
+| 🇿🇦 Afrique du Sud | 2 |
+| 🇹🇬 Togo | 1 |
+
+## Répartition sectorielle
+
+Les secteurs sont ici regroupés selon une nomenclature commune. Là où une fiche ne donnait pas de quoi trancher, le secteur est indiqué comme non précisé.
+
+| Secteur normalisé | Incidents |
+|---|---:|
+| Government / Administration | 40 |
+| Finance / Banking | 39 |
+| Technology / IT | 25 |
+| Education / University | 17 |
+| Healthcare / Medical | 14 |
+| Transport / Logistics | 10 |
+| Manufacturing / Industry | 10 |
+| Retail / E-commerce | 8 |
+| Professional / Business Services | 7 |
+| Defense / Security | 6 |
+| Construction / Real Estate | 6 |
+| Energy / Utilities | 4 |
+| Agriculture / Agribusiness | 3 |
+| Mining | 2 |
+| Legal / Justice | 2 |
+| Not specified | 2 |
+| Civil Society / NGO | 1 |
+
+## 6. Acteurs ou sources associés aux fuites
+
+| Acteur / source | Fuites |
+|---|---:|
+| Phantom Atlas | 7 |
+| kill9 | 6 |
+| Dark 07x Team | 5 |
+| Inconnu | 3 |
+| Keymous | 3 |
+| B4baYega | 2 |
+| Evil_BYTE_Officiel | 2 |
+| Jabaroot DZ | 2 |
+| KaruHunters | 2 |
+| Non précisé | 2 |
+| mrdump, publication sur un forum cybercriminel (DarkForums) | 2 |
+| nightspire | 2 |
+| 0x0day, publication postée sur le forum cybercriminel DarkForums | 1 |
+| BIGBROTHER | 1 |
+| Chucky_BF | 1 |
+| DBhacker_BF | 1 |
+| EternalRed | 1 |
+| Fire Wire | 1 |
+| Gh1nDar | 1 |
+| GhostCrawl | 1 |
+| GhostVector (compte source) | 1 |
+| Hepd | 1 |
+| KILLUAX | 1 |
+| KickingPigs | 1 |
+| Killer_Bee | 1 |
+| LindaBF, publication sur un forum cybercriminel (RaidForums) | 1 |
+| MdHackersArmy (publication postée par Doxeur23azi sur un forum cybercriminel, DarkForums) | 1 |
+| Mercobyte | 1 |
+| MisterSam | 1 |
+| N1KA | 1 |
+| RL000 | 1 |
+| RainbowDF | 1 |
+| RiseAgainLuigi & B4baYega | 1 |
+| Spirigatito, publication postée sur un forum cybercriminel | 1 |
+| TajineSec / Tajinesec_MA (revendication publiée) | 1 |
+| Tanaka | 1 |
+| anisanas2 | 1 |
+| cache | 1 |
+| camillabf, publication sur un forum cybercriminel (RaidForums) | 1 |
+| mrdump (canal Telegram « Server dump ») | 1 |
+| mrdump (publication sur le canal Telegram « Server dump ») | 1 |
+| oblivion666 | 1 |
+| p4xar | 1 |
+| privilege | 1 |
+| privilege, publication sur un forum cybercriminel | 1 |
+| sanji_shi5 (compte source) | 1 |
+
+## Visualisations
+
+Les graphiques montrent les dix premiers pays ; les tableaux précédents conservent le classement complet.
 
 ```mermaid
 xychart-beta
-    title "Cyberattaques mensuelles - 2025"
-    x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"]
-    y-axis "Nombre d'attaques" 0 --> 20
-    bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
-    line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
+    title "Top 10 pays — tous les incidents"
+    x-axis ["Égypte", "Maroc", "Afrique du Sud", "Algérie", "Nigeria", "Tunisie", "Kenya", "Mauritanie", "Zambie", "Ghana"]
+    y-axis "Incidents" 0 --> 34
+    bar [33, 31, 30, 19, 14, 13, 10, 8, 4, 3]
 ```
-### 3.1 Évolution trimestrielle
-| Trimestre | Mois | Attaques | Cumul |
-| :--- | :--- | :---: | :---: |
-| **T1** | Jan-Mar | 16 + 8 + 9 | **33** |
-| **T2** | Avr-Juin | 11 + 14 + 11 | **36** |
-| **T3** | Juil-Sep | 13 + 13 + 12 | **38** |
-| **T4** | Oct-Déc | 17 + 11 + 14 | **42** |
 
 ```mermaid
-pie title Des attaques par trimestre - 2025
-    "T1 (Jan-Mar)" : 33
-    "T2 (Avr-Juin)" : 36
-    "T3 (Juil-Sep)" : 38
-    "T4 (Oct-Déc)" : 42
+xychart-beta
+    title "Top 10 pays — ransomware"
+    x-axis ["Égypte", "Afrique du Sud", "Maroc", "Nigeria", "Kenya", "Tunisie", "Algérie", "Zambie", "Namibie", "Tanzanie"]
+    y-axis "Incidents" 0 --> 29
+    bar [28, 28, 12, 9, 8, 6, 4, 4, 3, 3]
 ```
-Le premier trimestre (janv.-mars) a totalisé 33 attaques, suivi de 36 au T2, 38 au T3 et un pic de 42 au T4.
-
-## 4. Groupes ransomware les plus actifs
-| Rang | Groupe           | Revendications |
-|------|------------------|----------------|
-| 1    | qilin            | 11     |
-| 2    | devman           | 10     |
-| 3    | incransom        | 8      |
-| 4    | funksec          | 7      |
-| 4    | nightspire       | 9      |
-| 6    | killsec          | 6      |
-| 7    | Dark 07x Team    | 4      |
-| 8    | clop             | 4      |
-| 8    | ransomhub        | 4      |
-| 8    | warlock          | 4      |
-| 11   | arcusmedia       | 3      |
-| 11   | babuk2           | 3      |
-| 11   | dragonforce      | 3      |
-| 11   | GDLockerSec      | 3      |
-| 11   | lockbit5         | 3      |
-| 11   | spacebears       | 3      |
-| 11   | thegentlemen     | 3      |
-|      | *Autres groupes* | 61     |
 
 ```mermaid
-pie title Groupes ransomware les plus actifs
-    "qilin (11)" : 11
-    "devman (10)" : 10
-    "incransom (8)" : 8
-    "funksec (7)" : 7
-    "nightspire (9)" : 9
-    "killsec (6)" : 6
-    "Dark 07x Team (4)" : 4
-    "clop (4)" : 4
-    "ransomhub (4)" : 4
-    "warlock (4)" : 4
-    "Autres (74)" : 74
-```
-- **qilin** est devenu l’acteur le plus actif au second semestre, frappant les secteurs de l’énergie, de l’assurance et des technologies en Afrique de l’Est et australe.
-- **devman** est resté une menace persistante, notamment en Afrique du Sud et au Kenya, et a revendiqué la plus grosse exfiltration de l’année (NSSF Kenya, 2,5 To).
-- **incransom** a été actif tout au long de l’année, exfiltrant souvent de grands volumes (100 Go, 39 Go) auprès d’entreprises logistiques et financières.
-
-## 5. Secteurs les plus ciblés
-| Secteur                     | Revendications |
-|-----------------------------|----------------|
-| Technologies                | 22     |
-| Administrations publiques   | 21     |
-| Finance                     | 18     |
-| Éducation                   | 16     |
-| Santé                       | 12     |
-| Logistique                  | 10     |
-| Commerce de détail          | 8      |
-| Agroalimentaire             | 7      |
-| Télécommunications          | 6      |
-| Industrie manufacturière    | 6      |
-| *Autres secteurs*           | 23     |
-
-```mermaid
-pie title Répartition des attaques par secteur - 2025
-    "Technologies (22)" : 22
-    "Administrations publiques (21)" : 21
-    "Finance (18)" : 18
-    "Éducation (16)" : 16
-    "Santé (12)" : 12
-    "Logistique (10)" : 10
-    "Commerce (8)" : 8
-    "Agroalimentaire (7)" : 7
-    "Télécoms (6)" : 6
-    "Industrie (6)" : 6
-    "Autres (23)" : 23
+xychart-beta
+    title "Top 10 pays — fuites de données"
+    x-axis ["Maroc", "Algérie", "Mauritanie", "Tunisie", "Nigeria", "Égypte", "Kenya", "Afrique du Sud", "Côte d’Ivoire", "Ghana"]
+    y-axis "Incidents" 0 --> 20
+    bar [19, 15, 8, 7, 5, 5, 2, 2, 2, 1]
 ```
 
-Le secteur des technologies a été le plus durement touché, suivi de près par les administrations publiques et les institutions financières. Les infrastructures critiques (énergie, transport, défense) ont également subi plusieurs attaques.
+## 7. Lecture CTI
 
-## 6. Pays les plus ciblés
-| Rang | Pays                    | Revendications |
-|------|-------------------------|----------------|
-| 1    | 🇿🇦 Afrique du Sud      | 29     |
-| 1    | 🇪🇬 Égypte              | 29     |
-| 3    | 🇲🇦 Maroc               | 21     |
-| 4    | 🇳🇬 Nigeria             | 12     |
-| 4    | 🇹🇳 Tunisie             | 12     |
-| 6    | 🇰🇪 Kenya               | 8      |
-| 7    | 🇩🇿 Algérie             | 7      |
-| 8    | 🇿🇲 Zambie              | 4      |
-| 9    | 🇹🇿 Tanzanie            | 3      |
-| 9    | 🇳🇦 Namibie             | 3      |
-| 9    | 🇨🇮 Côte d’Ivoire       | 3      |
-| 12   | 🇬🇭 Ghana               | 2      |
-| 12   | 🇺🇬 Ouganda             | 2      |
-| 12   | 🇧🇼 Botswana            | 2      |
-| 12   | 🇹🇬 Togo                | 2      |
-| 12   | 🇿🇼 Zimbabwe            | 2      |
-| 12   | 🇲🇺 Maurice             | 2      |
-| 18   | 🇲🇬 Madagascar          | 1      |
-| 18   | 🇨🇩 RDC                 | 1      |
-| 18   | 🇬🇦 Gabon               | 1      |
-| 18   | 🇨🇲 Cameroun            | 1      |
-| 18   | 🇸🇳 Sénégal             | 1      |
-| 18   | 🇷🇼 Rwanda              | 1      |
+Le ransomware domine en volume brut, mais les fuites de données racontent autre chose, le plus souvent un post de forum avec un dump SQL ou un échantillon de document attaché plutôt qu'une inscription sur un site de fuite. Volumes annoncés, authenticité des archives, liens réels entre des revendications répétées : rien de tout ça ne se tranche ici, il faut vérifier fiche par fiche.
 
-```mermaid
-pie title Répartition des attaques par pays - 2025
-    "🇿🇦 Afrique du Sud (29)" : 29
-    "🇪🇬 Égypte (29)" : 29
-    "🇲🇦 Maroc (21)" : 21
-    "🇳🇬 Nigeria (12)" : 12
-    "🇹🇳 Tunisie (12)" : 12
-    "🇰🇪 Kenya (8)" : 8
-    "🇩🇿 Algérie (7)" : 7
-    "🇿🇲 Zambie (4)" : 4
-    "🇹🇿 Tanzanie (3)" : 3
-    "🇳🇦 Namibie (3)" : 3
-    "🇨🇮 Côte d'Ivoire (3)" : 3
-    "🌍 Autres (18)" : 18
-```
-L’Afrique du Sud et l’Égypte sont les pays les plus ciblés, représentant près de 40 % de toutes les attaques. L’Afrique du Nord (Égypte, Maroc, Algérie, Tunisie) totalise 69 attaques (46 %), tandis que l’Afrique australe (Afrique du Sud, Zambie, Namibie, Botswana, Zimbabwe, Maurice, Madagascar) en compte 43 (29 %).
+## 8. Précautions
 
-## 7. Incidents notables
-| Victime                    | Pays          | Groupe       | Volume de données | Rançon |
-|----------------------------|---------------|--------------|-------------------|--------|
-| NSSF Kenya                 | 🇰🇪 Kenya      | devman       | 2,5 To            | 4,5 M$ |
-| INTELS Nigeria             | 🇳🇬 Nigeria    | ransomhub    | 1,5 To            | - |
-| DGID Sénégal               | 🇸🇳 Sénégal    | BlackShrantac| 1 To              | - |
-| SPEED Co                   | 🇪🇬 Égypte     | hunter       | 444,8 Go          | - |
-| INI Investments            | 🇪🇬 Égypte     | nightspire   | 400 Go            | - |
+Sites de fuite et forums clandestins sont traités comme des sources de revendication, rien de plus. Aucune donnée personnelle brute n'est reproduite dans ce rapport.
 
-- **Doubles revendications** (même victime, groupes différents) :
-  - Hôpital La Rabta (Tunisie) - devman (12 déc.) & qilin (26 déc.)
-  - Netstar South Africa (Afrique du Sud) - devman (23 mai) & incransom (20 août)
-  - Proplastics Limited (Zimbabwe) - thegentlemen (9 sept.) & lockbit5 (26 déc.)
-
-## 8. Répartition régionale
-| Région            | Revendications | Part |
-|-------------------|----------------|------|
-| Afrique du Nord   | 69             | 46,3 % |
-| Afrique australe  | 43             | 28,9 % |
-| Afrique de l’Ouest| 21             | 14,1 % |
-| Afrique de l’Est  | 14             | 9,4 %  |
-| Afrique centrale  | 2              | 1,3 %  |
-
-```mermaid
-pie title Attaques par région
-    "Afrique du Nord (69)" : 69
-    "Afrique australe (43)" : 43
-    "Afrique de l'Ouest (21)" : 21
-    "Afrique de l'Est (14)" : 14
-    "Afrique centrale (2)" : 2
-```
-## 9. TTP observées
-- **Exfiltration massive** - de nombreux groupes ont exfiltré des centaines de gigaoctets, voire des téraoctets, avant le chiffrement.
-- **Double extorsion** - presque toutes les attaques s’accompagnaient de fuites de données sur des sites TOR dédiés.
-- **Injections SQL** - utilisées contre plusieurs applications web (ex. Yasat, New Era Com) pour vider les bases de données.
-- **Ciblage d’infrastructures critiques** - énergie (KenGen, Uganda Electricity), transport (SAA, Madagascar Airlines), défense (Nigerian Navy).
-- **Implication de hacktivistes** - des groupes comme DieNet, Phantom Atlas, Dark 07x Team ont revendiqué des fuites à motivation politique.
-- **Victimisation répétée** - trois organisations ont été attaquées deux fois par des groupes ransomware différents.
-
-## 10. Recommandations
-- **Mesures sectorielles** :
-  - **Technologies** - mettre en place une validation rigoureuse des entrées, un WAF et des tests d’intrusion réguliers.
-  - **Administrations publiques** - appliquer l’authentification multi‑facteurs, des sauvegardes hors ligne et une surveillance continue.
-  - **Finance** - segmenter les réseaux, chiffrer les données sensibles, surveiller les accès anormaux.
-  - **Énergie et transport** - adopter une détection avancée des menaces et des plans de réponse aux incidents.
-- **Général** :
-  - Organiser des formations régulières de sensibilisation des employés (le phishing reste un vecteur d’accès initial majeur).
-  - Maintenir des sauvegardes isolées et hors ligne.
-  - Partager les indicateurs de compromission (IoC) entre les CSIRT régionaux.
-
-## 11. Conclusion
-L’année 2025 a été marquée par une activité soutenue des ransomware en Afrique, avec une tendance nette vers le vol massif de données et la double extorsion. L’Afrique du Sud et l’Égypte ont été les plus touchées, mais aucune région n’a été épargnée. L’émergence de groupes comme qilin, devman et incransom, ainsi que la diversification des cibles (des infrastructures critiques aux startups insurtech), souligne la nécessité d’une intelligence proactive des menaces et d’une coopération transfrontalière.
-
-👉🏾 [**Liste des victimes** ](./victims_FR.md)
----
-## ✍🏿 Auteur
-*Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence*  
-[Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
----
-*AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*
+**AFRINTEL** — TLP:CLEAR

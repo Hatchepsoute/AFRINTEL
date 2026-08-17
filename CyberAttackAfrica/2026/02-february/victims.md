@@ -24,7 +24,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 01 February 2026
 #### 🇸🇴 Somalia - BlueSky Aviation
-- **Threat Actor:** 0APT
+- **Ransomware Group:** 0APT
 - **Sector:** Aviation
 - **Website:** bluesky-air.com
 - **Status:** Claim - Unverified
@@ -32,14 +32,14 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 05 February 2026
 #### 🇸🇳 Senegal - DAF SENEGAL (Direction de l'Administration Générale et de l'Équipement)
-- **Threat Actor:** The Green Blood Group
+- **Ransomware Group:** The Green Blood Group
 - **Sector:** Government
 - **Status:** Claim - Unverified
 - **Victim Description:** Senegalese government administration. Major data breach involving citizen databases and biometric records.
 
 ### 05 February 2026
 #### 🇬🇭 Ghana - Global Media Alliance
-- **Threat Actor:** 0APT
+- **Ransomware Group:** 0APT
 - **Sector:** Media
 - **Website:** gmaworld.com
 - **Status:** Claim - Unverified
@@ -47,7 +47,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 06 February 2026
 #### 🇹🇿 Tanzania - Vertex Law Chambers
-- **Threat Actor:** 0APT
+- **Ransomware Group:** 0APT
 - **Sector:** Legal
 - **Website:** vertexlaw.co.tz
 - **Status:** Claim - Unverified
@@ -55,7 +55,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 06 February 2026
 #### 🇰🇪 Kenya - Wells Fargo
-- **Threat Actor:** thegentlemen
+- **Ransomware Group:** thegentlemen
 - **Sector:** Banking
 - **Website:** fargo.co.ke
 - **Status:** Claim - Unverified
@@ -63,15 +63,18 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 09 February 2026
 #### 🇳🇬 Nigeria - Getly
-- **Threat Actor:** killsec
+- **Ransomware Group:** killsec
 - **Sector:** Fintech
 - **Website:** getly.app
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Nigerian financial technology application.
+
+- **Analysis:**
+  AFRINTEL reviewed a set of sample documents associated with this claim. The accessible material consists of Nigerian National Identification Number (NIN) slips and digital NIN cards for multiple individuals, including full names, NIN numbers, dates of birth, photographs and, in some cases, residential addresses. This is consistent with Know Your Customer (KYC) identity verification data collected by a fintech application during customer onboarding. Exposure of this type of document creates a significant risk of identity theft, account takeover and fraudulent use of national identification numbers. AFRINTEL did not access the platform's backend systems and cannot confirm the total volume of records affected or the initial access vector.
 
 ### 11 February 2026
 #### 🇬🇭 Ghana - Ghana Bauxite
-- **Threat Actor:** thegentlemen
+- **Ransomware Group:** thegentlemen
 - **Sector:** Public Service
 - **Website:** ghanabauxite.com
 - **Status:** Claim - Unverified
@@ -79,15 +82,18 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 12 February 2026
 #### 🇳🇬 Nigeria - Midwestern Oil & Gas
-- **Threat Actor:** incransom
+- **Ransomware Group:** incransom
 - **Sector:** Energy
 - **Website:** midwesternog.com
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Nigerian upstream oil and gas company.
+
+- **Analysis:**
+  AFRINTEL reviewed the incransom leak site listing for Midwestern Oil & Gas, which states a company revenue of approximately USD 27.6 million. The listing displays a large set of sample document previews spanning multiple categories: internal financial and audit reports, community affairs and stakeholder engagement reports, HSE and pipeline maintenance records, technical and engineering documentation, procurement and inventory materials, and photographs of personnel and field operations. The breadth of categories suggests broad access to the company's shared file infrastructure rather than to a single system. AFRINTEL did not access the full files and cannot confirm the exact data volume, exfiltration scope or initial access vector.
 
 ### 13 February 2026
 #### 🇪🇬 Egypt - Nile Air
-- **Threat Actor:** thegentlemen
+- **Ransomware Group:** thegentlemen
 - **Sector:** Airlines
 - **Website:** nileair.com
 - **Status:** Claim - Unverified
@@ -95,7 +101,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 14 February 2026
 #### 🇲🇺 Mauritius - Sands Suites
-- **Threat Actor:** lockbit5
+- **Ransomware Group:** lockbit5
 - **Sector:** Hospitality
 - **Website:** sands.mu
 - **Status:** Claim - Unverified
@@ -103,7 +109,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 15 February 2026
 #### 🇿🇦 South Africa - Intsika Yethu Municipality
-- **Threat Actor:** thegentlemen
+- **Ransomware Group:** thegentlemen
 - **Sector:** Local Government
 - **Website:** intsikayethu.gov.za
 - **Status:** Claim - Unverified
@@ -111,7 +117,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 15 February 2026
 #### 🇹🇳 Tunisia - BITS
-- **Threat Actor:** thegentlemen
+- **Ransomware Group:** thegentlemen
 - **Sector:** IT Consulting
 - **Website:** bits.com.tn
 - **Status:** Claim - Unverified
@@ -119,7 +125,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 17 February 2026
 #### 🇪🇬 Egypt - sodic.com
-- **Threat Actor:** payload
+- **Ransomware Group:** payload
 - **Sector:** Real Estate
 - **Website:** sodic.com
 - **Status:** Claim - Unverified
@@ -127,7 +133,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 18 February 2026
 #### 🇸🇩 Sudan - Amtaar Investment
-- **Threat Actor:** apt73/bashe
+- **Ransomware Group:** apt73/bashe
 - **Sector:** Agriculture / Agribusiness
 - **Website:** amtaar.com
 - **Status:** Claim - Data Sample Published
@@ -135,23 +141,29 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 19 February 2026
 #### 🇨🇮 Ivory Coast - aircotedivoire.com
-- **Threat Actor:** incransom
+- **Ransomware Group:** incransom
 - **Sector:** Airlines
 - **Website:** aircotedivoire.com
-- **Status:** Claim - Unverified
+- **Status:** Data Fully Published
 - **Victim Description:** National airline of Ivory Coast.
+
+- **Analysis:**
+  AFRINTEL reviewed the incransom (INC Ransom) leak site entry for this victim, listed under the group's Disclosures section. The listing states an estimated annual revenue of USD 40.5 million, approximately 1,000 employees and a headquarters in Abidjan, and confirms a data disclosure of approximately 208 GB (208,351,284,086 bytes) following a ransomware attack against the airline. AFRINTEL also reviewed a data sample distinct from the leak site listing: a PDF document generated by Microsoft Access, titled "État d'opération", corresponding to a payroll bank transfer order dated 21 June 2022 and covering 529 Air Côte d'Ivoire employees, for a cumulative total amount of 676,139,136 (currency not specified in the document, consistent with FCFA). Each line lists a full name, an internal staff number, the beneficiary bank and a complete bank account identifier (RIB), along with the individual transfer amount. The source file name referenced in the document ("E:\VIREMENTS SALAIRES JUIN 2022.txt") is consistent with an export from the airline's payroll management or bulk transfer environment. AFRINTEL does not reproduce any individual name, staff number or bank account detail from this sample. This element, dated 2022, confirms exposure of internal financial and HR data distinct from the leak site listing alone, but it does not establish whether the full claimed volume (208 GB) consists of the same type of content, nor does it confirm the initial access vector.
 
 ### 20 February 2026
 #### 🇲🇦 Morocco - Shora Advisory
-- **Threat Actor:** tengu
+- **Ransomware Group:** tengu
 - **Sector:** Accounting
 - **Website:** shora.ma
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Moroccan accounting and financial advisory firm.
+
+- **Analysis:**
+  AFRINTEL reviewed the tengu leak site listing and accompanying sample documents for this victim. The material includes an internal folder structure covering client accounting files organized by fiscal year (folders labelled "ARRETE DES COMPTES" for 2018 to 2020) and grouped by client type (associations, public establishments, individuals and companies), alongside marketing, HR and administrative folders, for a combined archive described as approximately 23.5 GB across roughly 16,000 files and 2,000 folders. Individual sample documents include a CNSS social security payment slip issued to Shora Auditing SARL and internal client correspondence. Because Shora operates as an accounting and audit firm, this exposure risks affecting the confidentiality of financial records belonging to numerous third-party client organizations, not only Shora itself. AFRINTEL did not access the full archive and cannot confirm the exact scope of client data involved or the initial access vector.
 
 ### 20 February 2026
 #### 🇪🇬 Egypt - moa.gov.eg (Ministry of Agriculture)
-- **Threat Actor:** lockbit5
+- **Ransomware Group:** lockbit5
 - **Sector:** Government
 - **Website:** moa.gov.eg
 - **Status:** Claim - Unverified
@@ -159,7 +171,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 22 February 2026
 #### 🇳🇦 Namibia - CYMOT
-- **Threat Actor:** qilin
+- **Ransomware Group:** qilin
 - **Sector:** Retail
 - **Website:** cymot.com
 - **Status:** Claim - Unverified
@@ -167,7 +179,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 24 February 2026
 #### 🇿🇦 South Africa - EnerTec
-- **Threat Actor:** vect
+- **Ransomware Group:** vect
 - **Sector:** Energy
 - **Website:** enertec.co.za
 - **Status:** Claim - Unverified
@@ -175,7 +187,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 27 February 2026
 #### 🇿🇦 South Africa - Diesel-Electric
-- **Threat Actor:** Lockbit5
+- **Ransomware Group:** Lockbit5
 - **Sector:** Automotive
 - **Website:** diesel-electric.co.za
 - **Status:** Claim - Unverified

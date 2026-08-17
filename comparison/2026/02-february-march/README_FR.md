@@ -11,7 +11,7 @@
 | Fuites de données et ventes d'accès | 0 | 22 | +22 |
 | Pays représentés | 14 | 14 | 0 |
 
-La hausse de mars provient entièrement des fuites de données et des ventes d'accès. Le volume de ransomware est resté proche de celui de février.
+La hausse de mars vient entièrement des fuites de données et des ventes d'accès. Le ransomware, lui, est resté proche de son niveau de février.
 
 ## Évolution par pays
 
@@ -24,19 +24,19 @@ La hausse de mars provient entièrement des fuites de données et des ventes d'a
 | 🇸🇳 Sénégal | 1 | 1 | 0 |
 | 🇹🇳 Tunisie | 1 | 1 | 0 |
 
-L'Afrique du Sud, le Maroc et l'Égypte représentent 29 des 41 fiches de mars.
+L'Afrique du Sud, le Maroc et l'Égypte réunissent à eux trois 29 des 41 fiches de mars.
 
 ## Évolution par secteur
 
-En février, Government / Administration et Aviation comptaient 3 fiches chacun, suivis par Oil & Energy et Finance / Banking avec 2 fiches chacun. En mars, Government / Administration atteint 10 fiches, Education / University 7, Healthcare / Medical 4, puis Insurance, Telecommunications et Engineering / Construction 3 chacun.
+En février, Government / Administration et Aviation étaient en tête avec 3 fiches chacun, suivis d'Oil & Energy et Finance / Banking à 2. Mars a fait grimper Government / Administration à 10 fiches, Education / University à 7, Healthcare / Medical à 4, avec Insurance, Telecommunications et Engineering / Construction à égalité à 3.
 
 ## Évolution des acteurs
 
-TheGentlemen arrive en tête en février avec 5 fiches, suivi de 0APT avec 3 et LockBit 5.0 avec 3. Mars est dominé par CrowStealer avec 5 fiches, APT73/BASHE avec 4, XP_95 avec 3 et xNova avec 3.
+TheGentlemen menait février avec 5 fiches, 0APT et LockBit 5.0 à 3 chacun. Mars a changé de tête d'affiche : CrowStealer à 5, APT73/BASHE à 4, XP_95 et xNova à égalité à 3.
 
 ## Évaluation CTI
 
-La couverture géographique reste stable, mais la répartition des incidents évolue fortement. Mars combine un niveau de ransomware proche de février avec 22 fiches de fuite ou de vente d'accès. La surveillance doit donc couvrir les infrastructures d'extorsion ainsi que la réutilisation ou la vente de données et d'accès exposés.
+La couverture géographique a peu bougé, mais la répartition des incidents oui. Mars a gardé le ransomware à peu près au niveau de février tout en ajoutant 22 fiches de fuite ou de vente d'accès par-dessus. La surveillance doit donc couvrir aussi bien les infrastructures d'extorsion que la réutilisation ou la revente de données et d'accès exposés, pas l'un ou l'autre.
 
 ## Priorités SOC
 
@@ -47,6 +47,6 @@ La couverture géographique reste stable, mais la répartition des incidents év
 
 ## Conclusion
 
-Mars compte 41 incidents contre 20 en février. La hausse provient des fuites de données et des ventes d'accès, tandis que le ransomware reste presque stable.
+Mars se solde par 41 incidents contre 20 en février. Les fuites de données et ventes d'accès ont porté presque toute cette croissance, le ransomware est resté stable.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

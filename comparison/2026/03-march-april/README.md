@@ -11,7 +11,7 @@
 | Data leaks and access sales | 22 | 40 | +18 (+81.8%) |
 | Geographic labels represented | 14 | 16 | +2 |
 
-April's increase was mainly driven by data leaks and access sales. One April record covers several African countries and counts once in the global total.
+Data leaks and access sales did most of the work behind April's jump. One April record spans several African countries but still only counts once in the global total.
 
 ## Country evolution
 
@@ -28,15 +28,15 @@ April's increase was mainly driven by data leaks and access sales. One April rec
 
 ## Sector evolution
 
-Government / Administration remained the leading sector, rising from 10 to 15 records. Education / University rose from 7 to 8. April also recorded 7 Industry / Automotive / Manufacturing / Construction / Engineering cases, 5 Finance / Banking / Insurance / Wealth cases, and 4 records each in Healthcare / Medical, Sports and E-commerce / Retail.
+Government/Administration stayed on top, climbing from 10 to 15 records. Education/University edged up from 7 to 8. April also brought 7 Industry/Automotive/Manufacturing/Construction/Engineering cases, 5 Finance/Banking/Insurance/Wealth cases, and 4 apiece in Healthcare/Medical, Sports and E-commerce/Retail.
 
 ## Actor evolution
 
-March was led by CrowStealer with 5 records and APT73/BASHE with 4. April was led by Grubder with 7, followed by Payload, APT73/BASHE and TheGentlemen with 4 each.
+CrowStealer led March with 5, APT73/BASHE at 4. April's lineup changed: Grubder at 7, then Payload, APT73/BASHE and TheGentlemen tied at 4.
 
 ## CTI assessment
 
-The ransomware count changed little between the two months. The main shift was the increase from 22 to 40 leak and access-sale records, with Morocco becoming the leading country in April.
+Ransomware barely shifted between the two months. What actually moved was leak and access-sale volume, 22 to 40, and Morocco took over as the leading country in April.
 
 ## SOC priorities
 
@@ -47,6 +47,6 @@ The ransomware count changed little between the two months. The main shift was t
 
 ## Conclusion
 
-April reached 60 incidents, 19 more than March. Data leaks and access sales accounted for 18 of the 19 additional records.
+April closed at 60 incidents, 19 more than March. Data leaks and access sales accounted for 18 of those 19 extra records, almost the entire increase.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

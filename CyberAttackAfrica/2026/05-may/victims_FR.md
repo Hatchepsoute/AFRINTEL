@@ -28,6 +28,7 @@ Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de 
 - **Acteur / Groupe :** XOverStm (via le forum [Citizen])
 - **Secteur :** Agrégation de données personnelles
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** Non spécifié
 
 - **Description :**
@@ -72,6 +73,7 @@ Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de 
 - **Acteur / Groupe :** bigF
 - **Secteur :** Education / University
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Sites web observés :** [mans.edu.eg](https://www.mans.edu.eg) ; [gu.edu.eg](https://gu.edu.eg)
 - **Description :**
   Un cybercriminel revendique la possession d’environ **37 Go** de bases de données liées à des établissements éducatifs égyptiens et à des systèmes RH.
@@ -136,6 +138,7 @@ Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de 
 - **Acteur / Groupe :** attackercompany (via le forum [Citizen])
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Site web :** Non spécifié (coordonnées du vendeur volontairement omises)
 - **Description :**
   Un cybercriminel revendique une fuite massive de documents CV (*resume docs*) à l’échelle mondiale. Les données concerneraient des centaines de milliers de personnes réparties dans plus de 200 pays.
@@ -208,6 +211,7 @@ Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de 
 - **Secteur :** Education / University
 - **Site web :** [mans.edu.eg](https://www.mans.edu.eg)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**
   Mansoura University est l’une des plus grandes et anciennes universités d’Égypte, accueillant un important volume d’étudiants et de données académiques.
 - **Analyse :**
@@ -222,6 +226,7 @@ Mai 2026 compte **57 incidents uniques** : **17 ransomwares** et **40 fuites de 
 - **Secteur :** Transport / Logistique
 - **Site web :**  [groupesdtm.com](https://www.groupesdtm.com/)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**    SDTM est une filiale logistique du Groupe Barid Al-Maghrib spécialisée dans le transport, la distribution, la gestion de flotte et les services associés aux opérations postales et financières au Maroc.
 Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète de l’infrastructure ERP et financière de SDTM. L’auteur affirme détenir 129 fichiers CSV structurés provenant de systèmes SAGE ERP, passerelles SMS, données bancaires et plateformes internes associées aux opérations logistiques et financières.
 - **Analyse des échantillons :**
@@ -257,6 +262,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Secteur :** Government / Administration
 - **Site web :** [moe.gov.eg](https://moe.gov.eg/)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :**
   Le Ministère égyptien de l’Éducation est l’institution gouvernementale chargée de l’administration du système éducatif national en Égypte, incluant les établissements scolaires, la gestion des élèves, des enseignants et des plateformes éducatives numériques. Le 13 mai 2026, l’acteur *Revesky* revendique la fuite de plusieurs bases de données totalisant environ 22,6 Go de données liées aux élèves, enseignants et administrateurs.
 - **Analyse des échantillons :**
@@ -269,6 +275,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Plateformes ciblées :** DHIS2 (District Health Information System)
 - **Site web :** Non précisé
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Vente d'accès
 - **Description :**  **DHIS2** est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.
 - **Analyse :** L’acteur malveillant revendique plusieurs accès à des instances DHIS2 utilisées par des institutions sanitaires et ministères de la Santé dans plusieurs pays africains et internationaux.  Les artefacts publiés incluent plusieurs couples **URL / identifiant / mot de passe** associés à des plateformes gouvernementales de santé, suggérant une compromission crédible d’identifiants administratifs ou opérationnels.  Les accès revendiqués concernent notamment des infrastructures au :
  ▫️🇲🇿 Mozambique
@@ -305,6 +312,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [ephraimmogalelm.gov.za](https://www.ephraimmogalelm.gov.za)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**
   Ephraim Mogale Local Municipality est une municipalité locale sud-africaine chargée de l'administration publique, de la gestion des services municipaux et du développement local au sein de la province du Limpopo.
 - **Analyse :**
@@ -315,6 +323,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Education / University
 - **Site web :** [bellavista.org.za](https://www.bellavista.org.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :**
   Bellavista School est un établissement éducatif sud-africain spécialisé dans l'accompagnement scolaire et le soutien pédagogique des élèves présentant des besoins éducatifs spécifiques.
 - **Analyse :**
@@ -344,6 +353,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Organisation ciblée :** Professional Academy for Teachers (PAT)
 - **Site web :** [pat.edu.eg](https://pat.edu.eg)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :**
   La Professional Academy for Teachers (PAT), institution égyptienne liée au ministère de l’Éducation et chargée de la gestion, de la formation et de l’accréditation des enseignants, a été revendiquée par l’acteur INT3X.
   L’auteur affirme détenir entre 8 et 10 Go de données compressées et plus de 80 Go de données non compressées, incluant des informations concernant environ 1,2 million d’enseignants, des étudiants STEM, des contenus académiques, des sauvegardes MSSQL, des bases Microsoft Access ainsi que des images d’identité et documents administratifs.
@@ -356,6 +366,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [dcs.gov.za](https://www.dcs.gov.za)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**
   Le Department of Correctional Services (DCS) est l'administration pénitentiaire sud-africaine chargée de la gestion des établissements correctionnels, de la réinsertion des détenus et des services pénitentiaires à l'échelle nationale.
 - **Analyse :**
@@ -369,6 +380,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Acteur / Groupe :** cc5ab
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Site web :** [lsb.go.ke](https://www.lsb.go.ke)
 - **Description :**
   Un acteur malveillant affirme avoir compromis le système du Land Surveyors Board of Kenya (LSB), organisme gouvernemental chargé de la réglementation et de l'accréditation des géomètres au Kenya.
@@ -394,6 +406,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [statssa.gov.za](https://www.statssa.gov.za/)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :** Statistics South Africa (Stats SA) est l’organisme officiel sud-africain chargé de la collecte, du traitement et de la publication des statistiques nationales démographiques, économiques et sociales.
 - **Analyse :**
   L’acteur malveillant revendique la possession d’environ **154 Go** de données contenant plus de **453 000 fichiers** attribués à Statistics South Africa.
@@ -403,12 +416,14 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
         - des CV contenant des informations personnelles
         - des documents liés aux opérations de recensement
          - des fichiers administratifs et éducatifs sensibles
+- **Note de double revendication :** Ces chiffres (154 Go, environ 453 000 fichiers) correspondent à la revendication ransomware enregistrée le 29 mars 2026 sous l'acteur XP95, qui incluait une demande de rançon de 100 000 $ et une échéance de mise en vente publique fixée au 20 avril 2026. Cette publication de mai ne comporte aucune demande de rançon et est enregistrée comme une fuite de données, pas comme du ransomware. La correspondance étroite entre le volume et le nombre de fichiers suggère que Kazu revend ou republie le jeu de données initialement revendiqué par XP95 plutôt que de signaler une compromission indépendante ; AFRINTEL ne peut pas confirmer indépendamment la relation entre les deux publications.
 
 #### 🇲🇦 Maroc - Multiples plateformes gouvernementales marocaines
 - **Acteur / Groupe :** superstarkmc
 - **Secteur :** Government / Administration
 - **Sites web :** [men.gov.ma](https://www.men.gov.ma); [tax.gov.ma](https://www.tax.gov.ma) ; [tgr.gov.ma](https://www.tgr.gov.ma)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :**  Plusieurs plateformes gouvernementales marocaines liées à l’éducation, la fiscalité, la trésorerie publique, la culture, la justice, le transport et les services administratifs ont été citées dans une publication revendiquant une fuite massive d’identifiants d’accès. Les domaines mentionnés incluent notamment Massar, Moutamadris, Waliye, Tax.gov.ma, TGR et plusieurs services administratifs marocains.
   L’auteur affirme détenir environ 827 000 lignes de données (~16 MB) et propose la vente des accès.
 - **Analyse des échantillons :**  Les données observées contiennent des centaines d’identifiants associés à des plateformes gouvernementales marocaines, incluant adresses email *@taalim.ma*, noms d’utilisateurs, mots de passe en clair, accès fiscaux, comptes administratifs éducatifs, services RH, plateformes de concours, systèmes de gestion scolaire, services de trésorerie et plateformes liées aux infractions routières. Plusieurs entrées semblent exposer des accès liés à des services financiers, éducatifs et administratifs sensibles.
@@ -491,6 +506,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [watiqa.ma](https://www.watiqa.ma)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**  Watiqa.ma est la plateforme officielle marocaine permettant aux citoyens de demander en ligne des documents d’état civil et administratifs.
 - **Analyse :** L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  Les données observées pourraient être exploitées pour des opérations d’usurpation d’identité, de fraude administrative, de phishing ciblé et d’ingénierie sociale contre des citoyens marocains.
 ---
@@ -500,6 +516,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** E-commerce / Retail
 - **Site web :** [avito.ma](https://www.avito.ma)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :**  Avito.ma est l’une des principales plateformes marocaines de petites annonces et de marketplace, utilisée pour les ventes entre particuliers et professionnels.
 - **Analyse :**  L’acteur revendique une fuite contenant des informations d’utilisateurs d’Avito.ma, incluant notamment adresses e-mail, numéros de téléphone, villes et mots de passe.
   Les échantillons publiés montrent plusieurs profils associés au secteur immobilier (“Crédit Immobilier”) avec des données personnelles marocaines réparties dans différentes villes telles que Casablanca, Khouribga, Kénitra, Guelmim et Oued Zem.
@@ -517,6 +534,7 @@ Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce 
 - **Secteur :** E-commerce / Retail
 - **Site web :** [spacex.ma](https://spacex.ma)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Vente d'accès
 - **Description :**  Spacex.ma est présenté comme une plateforme de boutique en ligne marocaine.
 - **Analyse :**  L’acteur malveillant a publiquement partagé un accès présumé à l’interface d’administration du site, incluant une URL d’administration ainsi qu’un couple identifiant/mot de passe associé à un compte “admin”.
   Une telle exposition pourrait permettre :
@@ -562,6 +580,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [sita.co.za](https://www.sita.co.za)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**
   SITA (State Information Technology Agency) est l’agence gouvernementale sud-africaine chargée de fournir des services informatiques et des infrastructures numériques aux administrations publiques.
 - **Analyse :**
@@ -574,6 +593,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [sars.gov.za](https://www.sars.gov.za)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :**
   Le South African Revenue Service (SARS) est l'administration fiscale nationale d'Afrique du Sud, chargée de la collecte des impôts, des droits de douane et de la gestion des services fiscaux du pays.
 - **Analyse :**
@@ -604,6 +624,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Healthcare / Medical
 - **Site web :** [cervi.co.za](https://www.cervi.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :**
   CERVI My Private Care est une plateforme sud-africaine de santé numérique utilisée pour la gestion et la coordination de professionnels de santé, pharmacies, cliniques et autres prestataires médicaux.
 - **Analyse :**
@@ -620,6 +641,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Hôtellerie / Événementiel
 - **Site web :** [mevent.co.za](https://www.mevent.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :**
   mevent. est une société sud-africaine spécialisée dans l'organisation d'événements, conférences, voyages d'affaires et services MICE (Meetings, Incentives, Conferences & Events).
 - **Analyse :**
@@ -635,6 +657,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Government / Administration
 - **Site web :** [sheriffrandburgwest.co.za](https://www.sheriffrandburgwest.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description :**
   Le Sheriff Randburg West est un bureau officiel de shérif judiciaire en Afrique du Sud, chargé notamment de l'exécution des décisions de justice, des significations d'actes judiciaires et de diverses procédures légales.
 - **Analyse :**
@@ -674,6 +697,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [keejob.com](https://www.keejob.com)
 - **Description :**
   Un cybercriminel propose à la vente pour **1 400 USD** une base de données qu'il attribue à la plateforme tunisienne de recrutement Keejob. Selon la publication, l'ensemble contiendrait environ **137 000 enregistrements** liés aux contacts, campagnes e-mail et candidatures.
@@ -685,6 +709,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Telecommunications
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [mytelnet.tn](https://www.mytelnet.tn)
 - **Description :** Un cybercriminel propose à la vente pour **1 100 USD** une base de données qu'il attribue à l'opérateur tunisien MyTelnet. Selon la publication, l'ensemble regrouperait des informations clients, des profils d'utilisation de services ainsi que des données démographiques détaillées liées aux abonnés.
 - **Analyse :**
@@ -698,6 +723,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [midas.co.za](https://www.midas.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 
 - **Description :**
   MIDAS est un acteur sud-africain spécialisé dans la distribution de pièces automobiles, d’accessoires et de solutions logistiques destinées aux professionnels et aux particuliers.
@@ -717,6 +743,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Sports / Federations
 - **Site web :** [wanderers.co.za](https://www.wanderers.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 
 - **Description :**
   The Wanderers Club est l’un des principaux clubs sportifs et de loisirs d’Afrique du Sud, proposant diverses activités sportives, adhésions et événements à ses membres.
@@ -736,6 +763,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Telecommunications
 - **Site web :** [telkom.co.za](https://www.telkom.co.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 
 - **Description :**
   Telkom est l’un des principaux opérateurs télécoms d’Afrique du Sud, fournissant des services de téléphonie fixe et mobile, Internet, fibre optique et solutions numériques aux particuliers et aux entreprises.
@@ -753,6 +781,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Secteur :** Telecommunications
 - **Site web :** [citexltd.com](https://www.citexltd.com)
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
 - **Description :** Citex Systems est une société égyptienne spécialisée dans les télécommunications, les infrastructures réseau, les solutions fintech et les services informatiques.
 - **Analyse :**
   L’acteur affirme avoir obtenu un accès à plusieurs bases de données internes de l’entreprise, incluant des informations sur les employés, des données de gestion de projets ainsi que des informations issues du système de messagerie.

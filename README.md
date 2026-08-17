@@ -15,29 +15,34 @@
 
 ---
 
-**AFRINTEL** is an open-source CTI project tracking cyberattacks targeting African organizations: ransomware, data leaks, access sales, and underground marketplace activity across 54 countries, monitored from dark web sources, leak sites, and OSINT.
+**AFRINTEL** is an open-source CTI project that tracks cyberattacks against African organizations: ransomware, data leaks, access sales and underground marketplace activity across all 54 countries on the continent, built from dark web sources, leak sites and OSINT.
 
 | Countries monitored | Threat actors tracked | Period covered | Formats |
 | :---: | :---: | :---: | :---: |
 | 54 | 100+ | 2024-2026 | Markdown, STIX 2.1, Visual CTI |
 
-> AFRINTEL records publications observed on leak sites, underground forums and OSINT sources. Each incident retains the status documented in its victim card.
+> What ends up here is what got observed: posts on leak sites, underground forums and OSINT sources. A victim card keeps whatever status it had when AFRINTEL last reviewed it.
 
 ---
 
 ## Featured reports
 
-### Cyber threats in Africa - June 2026
+### Cyber threats in Africa - July 2026
 
-June 2026 recorded **40 cyber incident publications**: 20 ransomware records and 20 data leaks or access sales. Morocco was the leading direct country label with 9 records, including 7 publications attributed to anisanas2. High-sensitivity cases include the biometric and KYC data exposure associated with Nigerian fintech Jeroid.co, plaintext credentials attributed to the Nigerian Army's webmail domain, and the claimed 10.2-million-record BRELA dataset in Tanzania.
+July 2026 brought in 42 incident records: 18 ransomware claims, 18 data leaks, 6 access-sale offers. Egypt and Tunisia top the list at 7 each, Morocco and South Africa follow at 6. One record, Planet Sport, might just be a free repost of April's LockBit 5 claim rather than a new compromise, so the real count of distinct breaches could be a touch lower. The cases worth watching go beyond ransomware: government identity and land records, medical and lab data, university accounts, utility payment records, civil-service exam data, real information sitting on forums.
 
-📄 [Full CTI report - June 2026](CyberAttackAfrica/2026/06-june/README.md)
-📋 [Victim list - June 2026](CyberAttackAfrica/2026/06-june/victims.md)
-📊 [Visual intelligence - June 2026](visual-intelligence/06-june/README.md)
+📄 [Full CTI report - July 2026](CyberAttackAfrica/2026/07-july/README.md)
+📋 [Victim list - July 2026](CyberAttackAfrica/2026/07-july/victims.md)
+
+### August 2026 — in progress
+
+August is still being worked through. Four incidents logged so far, and both the totals and the read on them are likely to shift before the month closes.
+
+📋 [August working victim list](CyberAttackAfrica/2026/08-august/victims.md)
 
 ### First-half 2026 cyber threat report
 
-From January to June 2026, AFRINTEL documented **239 Africa-related cyber incidents**: **113 ransomware incidents**, **125 data leaks or access sales**, and **1 website defacement**. The second quarter accounted for 157 incidents, compared with 82 in the first quarter. Ransomware stayed nearly stable, from 56 incidents in the first quarter to 57 in the second, while data leaks and access sales rose from 25 in the first quarter to 100 in the second quarter.
+Between January and June 2026, AFRINTEL logged 239 incidents across the continent: 113 ransomware, 125 data leaks or access-sale offers, 1 defacement. Activity nearly doubled quarter over quarter, 82 incidents in Q1 against 157 in Q2. Ransomware barely moved, 56 to 57, while leaks and access sales jumped from 25 to 100.
 
 📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
 
@@ -51,6 +56,17 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 
 ---
 
+## Annual CTI reports
+
+Each annual report pulls together everything documented that year: country rankings, the ransomware/leak split, the actors that came up most often, and the CTI read on what it means. French and English carry the same numbers.
+
+| Year | FR | EN |
+| :--- | :--- | :--- |
+| 2024 | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2025 | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+
+---
+
 ## Monthly CTI reports
 
 | Month | FR | EN |
@@ -61,7 +77,8 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | April 2026 | [Rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [Report](CyberAttackAfrica/2026/04-april/README.md) |
 | May 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
 | June 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
-| July 2026 | *in progress* | *in progress* |
+| July 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
+| August 2026 | *in progress* | *in progress* |
 
 ---
 
@@ -76,6 +93,7 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | May 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
 | June 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
 | July 2026 | *in progress* | *in progress* |
+| August 2026 | *in progress* | *in progress* |
 
 ---
 
@@ -88,6 +106,7 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | March vs April 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | April vs May 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
+| June vs July 2026 | *in progress* | *in progress* |
 | H1 2026 report | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
@@ -103,6 +122,8 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | April 2026 | [Visual intelligence](visual-intelligence/04-april/README.md) |
 | May 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
 | June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
+| July 2026 | *in progress* |
+| August 2026 | *in progress* |
 | H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
@@ -118,9 +139,11 @@ From January to June 2026, AFRINTEL documented **239 Africa-related cyber incide
 | April 2026 | [STIX Bundle](stix/2026/04-april/afrintel_april_2026_opencti.json) |
 | May 2026 | [STIX Bundle](stix/2026/05-may/afrintel_may_2026_opencti.json) |
 | June 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
+| July 2026 | [STIX Bundle](stix/2026/07-july/afrintel_july_2026_opencti.json) |
+| August 2026 | *in progress* |
 | H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
-The monthly STIX 2.1 bundles include bilingual victim and incident descriptions, CTI reports, statistics, month-over-month comparisons, source references, AFRINTEL's organizational identity and the project author's identity. The H1 bundle consolidates the 239 January-June incidents and 36 bilingual analytical reports while preserving the monthly STIX IDs for OpenCTI correlation. Contextual MITRE ATT&CK mappings are documented in the report descriptions.
+Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. The H1 bundle folds in all 239 January-through-June incidents plus 36 bilingual reports, keeping the original monthly STIX IDs so OpenCTI can still correlate everything. MITRE ATT&CK context lives in the report descriptions themselves.
 
 ---
 

@@ -5,7 +5,7 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
 # 🛡️ AFRINTEL | Rapport CTI : Cyberattaques en Afrique
-## Période : Septembre 2025 (12 victimes recensées)
+## Période : Septembre 2025 (18 victimes recensées)
 👉🏾 [**English version available here**](./README.md)
 
 ---
@@ -14,11 +14,14 @@
 Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de septembre 2025. Les informations sont issues de sources **OSINT** et de sites de fuites de groupes ransomware, compilées dans le cadre du projet **AFRINTEL**. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants et des secteurs ciblés sur le continent.
 
 ## 2. Résumé Exécutif
-* **Nombre total d'attaques recensées :** 12.
-* **Acteurs les plus actifs :** `thegentlemen` (2 attaques) et `killsec` (2 attaques).
-* **Secteurs les plus ciblés :** Finance, Assurances, Industrie, Technologies et Administrations publiques.
+* **Nombre total d'attaques recensées :** 18.
+* **Acteurs les plus actifs :** `thegentlemen` (2 attaques), `killsec` (2 attaques) et `privilege` (2 attaques).
+* **Secteurs les plus ciblés :** Administrations publiques, Finance, Assurances, Industrie, Technologies, Télécommunications et Éducation.
 * **Volumes de données critiques :** * **Direction Générale des Impôts et des Domaines (Sénégal) :** 1 To de données fiscales exfiltrées.
     * **NSIA Assurances (Côte d'Ivoire) :** 2,5 millions d'enregistrements transactionnels mis en vente.
+    * **Université des Frères Mentouri Constantine 1 (Algérie) :** plus de 10 Go de données académiques et personnelles revendiquées exfiltrées.
+    * **MobileSub (Nigeria) :** dump SQL de 42 tables couvrant les paiements, la KYC, les transactions et les comptes utilisateurs.
+    * **Kolomoni Microfinance Bank (Nigeria) :** fichier CSV de 37 825 lignes contenant des données financières, de contact, démographiques et de connexion.
 
 ---
 
@@ -29,6 +32,7 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 | :--- | :---: |
 | **thegentlemen** | 2 |
 | **killsec** | 2 |
+| **privilege** | 2 |
 | **obscura** | 1 |
 | **Tanaka** | 1 |
 | **yurei** | 1 |
@@ -36,61 +40,76 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 | **qilin** | 1 |
 | **warlock** | 1 |
 | **arcusmedia** | 1 |
-| **BlackShrantac** | 1 |
+| **blackshrantac** | 1 |
+| **KILLUAX** | 1 |
+| **Fire Wire** | 1 |
+| **Non précisé** | 2 |
 
 ### 🏗️ 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 | :--- | :---: |
-| Finance | 2 |
+| Administrations publiques | 4 |
+| Finance | 4 |
 | Assurances | 2 |
 | Industrie manufacturière | 2 |
 | Technologies | 2 |
-| Administrations publiques | 2 |
 | Immobilier / Construction | 1 |
 | Restauration / Services alimentaires | 1 |
+| Télécommunications | 1 |
+| Éducation | 1 |
 
 #### 3.2.1 Top secteurs ciblés
 - Finance/Assurances  	[████████████████████] 4
-- Administrations     	[██████████] 2
+- Administrations     	[████████████████████] 4
 - Industrie           	[██████████] 2
 - Technologies        	[██████████] 2
-- Autres              	[██████████] 2
+- Télécommunications  	[█████] 1
+- Éducation           	[█████] 1
+- Immobilier / Restauration              	[██████████] 2
 
 ```mermaid
 pie title Répartition des Secteurs - Septembre 2025
-    "Finance" : 2
+    "Administrations" : 4
+    "Finance" : 4
     "Assurances" : 2
     "Industrie" : 2
     "Technologies" : 2
-    "Administrations" : 2
     "Immobilier" : 1
     "Restauration" : 1
+    "Télécommunications" : 1
+    "Éducation" : 1
 ```
  
 ### 🌍 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 | :--- | :---: |
-| 🇪🇬 Égypte | 2 |
-| 🇳🇬 Nigeria | 2 |
+| 🇪🇬 Égypte | 3 |
 | 🇲🇦 Maroc | 2 |
+| 🇳🇬 Nigeria | 4 |
 | 🇰🇪 Kenya | 2 |
+| 🇩🇿 Algérie | 1 |
 | 🇨🇮 Côte d'Ivoire | 1 |
 | 🇿🇼 Zimbabwe | 1 |
 | 🇳🇦 Namibie | 1 |
+| 🇦🇴 Angola | 1 |
+| 🇨🇩 RD Congo | 1 |
 | 🇸🇳 Sénégal | 1 |
-| **Total** | **12** |
+| **Total** | **18** |
 
 
 ```mermaid
 graph TD
     subgraph "Répartition des attaques par pays (Septembre 2025)"
-    EG[🇪🇬 Égypte: 2] --- Total((Total: 12))
-    NG[🇳🇬 Nigeria: 2] --- Total
+    EG[🇪🇬 Égypte: 3] --- Total((Total: 18))
     MA[🇲🇦 Maroc: 2] --- Total
+    NG[🇳🇬 Nigeria: 4] --- Total
     KE[🇰🇪 Kenya: 2] --- Total
+    DZ[🇩🇿 Algérie: 1] --- Total
     CI[🇨🇮 Côte d'Ivoire: 1] --- Total
     ZW[🇿🇼 Zimbabwe: 1] --- Total
     NA[🇳🇦 Namibie: 1] --- Total
+    AO[🇦🇴 Angola: 1] --- Total
+    CD[🇨🇩 RD Congo: 1] --- Total
     SN[🇸🇳 Sénégal: 1] --- Total
     end
 
@@ -135,7 +154,17 @@ graph TD
 #### 4.10 BlackShrantac (1 attaque)
 * **29/09/2025 : Direction Générale des Impôts et des Domaines (Sénégal)** - Secteur Administration Fiscale. Exfiltration massive de **1 To de données sensibles** (bases fiscales, registres fonciers, informations bancaires).
 
-#### 4.11 Acteur → victime → pays
+#### 4.11 Non attribué (1 attaque)
+* **30/09/2025 : Telecom Egypt / TE Data (Égypte)** - Secteur Télécommunications. Claim - Data Sample Published. Échantillon réduit (36 enregistrements) de données de session/comptabilité RADIUS abonnés (identifiants, IP de NAS, adresse MAC, IP attribuée, horodatages de session), aucun acteur revendicateur identifié.
+
+#### 4.12 Fire Wire (1 attaque)
+* **02/09/2025 : Université des Frères Mentouri Constantine 1 (Algérie)** - Secteur Éducation / Enseignement supérieur. Claim - Data Sample Published. Plus de 10 Go revendiqués exfiltrés : plannings d'examens de Master 2, plus de 200 dossiers étudiants détaillés (identité + notes), un annuaire de contacts de conformité véhicules et un modèle de contacts de conférence.
+
+#### 4.13 Non précisé (2 attaques)
+* **04/09/2025 : MobileSub (Nigeria)** - Fintech / Services de paiement. Claim - Data Sample Published ; dump SQL de 42 tables.
+* **24/09/2025 : Kolomoni Microfinance Bank (Nigeria)** - Microfinance / Banque. Claim - Data Sample Published ; CSV de 37 825 lignes.
+
+### 4.14 Acteur → victime → pays
 
 ```mermaid
 graph LR
@@ -176,13 +205,19 @@ V11 --> P4
 A10[BlackShrantac] --> V12[DGID Sénégal]
 V12 --> P8[Sénégal]
 
+A11[Non attribué] --> V13[Telecom Egypt / TE Data]
+V13 --> P4
+
+A12[Fire Wire] --> V14[Université Mentouri Constantine 1]
+V14 --> P9[Algérie]
+
 classDef actor fill:#8b0000,color:#fff,stroke:#5c0000,stroke-width:1px;
 classDef victim fill:#0b5394,color:#fff,stroke:#073763,stroke-width:1px;
 classDef country fill:#38761d,color:#fff,stroke:#274e13,stroke-width:1px;
 
-class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10 actor;
-class V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12 victim;
-class P1,P2,P3,P4,P5,P6,P7,P8 country;
+class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12 actor;
+class V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14 victim;
+class P1,P2,P3,P4,P5,P6,P7,P8,P9 country;
 ```
 ---
 
@@ -200,7 +235,7 @@ class P1,P2,P3,P4,P5,P6,P7,P8 country;
 ---
 
 ## 7. Conclusion
-Le mois de septembre 2025 confirme que l'Afrique est un terrain d'opération majeur pour les groupes ransomware. La diversité des acteurs (10 groupes différents) et l'ampleur des exfiltrations (DGID, NSIA) appellent à une vigilance accrue et à un partage d'intelligence (CTI) renforcé entre les pays du continent.
+Le mois de septembre 2025 confirme que l'Afrique est un terrain d'opération majeur pour les groupes ransomware et les acteurs de fuite de données. La diversité des acteurs (11 groupes nommés et un cas de fuite non attribué) et l'ampleur des exfiltrations (DGID, NSIA, UMC1) appellent à une vigilance accrue et à un partage d'intelligence (CTI) renforcé entre les pays du continent.
 
 ---
 

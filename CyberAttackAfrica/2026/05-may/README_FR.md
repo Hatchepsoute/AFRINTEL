@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Mai 2026 recense **57 incidents cyber signalés ou revendiqués publiquement** en Afrique : **17 publications ou divulgations ransomware** et **40 fuites de données / ventes d’accès**. Le mois comprend des revendications répétées visant des entités éducatives égyptiennes, des publications sous la bannière OpSouthAfrica, des ventes attribuées à Databasehooligan dans quatre pays et trois publications NightSpire concernant des organisations égyptiennes.
+Mai 2026 a rapporté **57 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **40 fuites de données ou ventes d'accès**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
 
 Principales conclusions :
 - **17 ransomwares (29,8 %)** et **40 fuites de données / ventes d'accès (70,2 %)**.
@@ -262,7 +262,7 @@ pie showData
 | **6** | 🇸🇳 Sénégal | **1** | AuditTeam |
 | **7** | 🇨🇮 Côte d'Ivoire | **1** | TheGentlemen |
 
-**Observations :** NightSpire a publié trois victimes égyptiennes pendant le mois. TheGentlemen présente la plus large répartition géographique, avec des revendications dans quatre pays. Stormous a revendiqué le Consumer Goods Council of South Africa (CGCSA), auparavant comptabilisé à tort comme une simple fuite de données ; le cas est reclassé en publication ransomware. Pour le Trésor public du Sénégal, les fichiers analysés étayent la revendication d’exposition, sans confirmer le déploiement du ransomware, le chiffrement ou la séquence complète.
+**Observations :** NightSpire a publié trois victimes égyptiennes ce mois-ci. TheGentlemen affiche la répartition géographique la plus large, avec des revendications dans quatre pays. Stormous a revendiqué le Consumer Goods Council of South Africa (CGCSA), un cas d'abord comptabilisé à tort comme une simple fuite de données, reclassé ici en publication ransomware. Pour le Trésor public du Sénégal, les fichiers analysés étayent bien la revendication d'exposition, mais ne confirment ni le déploiement du ransomware, ni le chiffrement, ni la séquence complète de l'intrusion.
 
 ### 4.2 Fuites de données et ventes d'accès (40 incidents)
 
@@ -279,7 +279,7 @@ pie showData
 | **-** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | Keymous |
 | **-** | 🇪🇬🇱🇾 Scans de passeports | **1** | raylie |
 
-**Observations :** NightSpire a publié trois victimes égyptiennes pendant le mois. TheGentlemen présente la plus large répartition géographique, avec des revendications dans quatre pays. Pour le Trésor public du Sénégal, les fichiers analysés étayent la revendication d’exposition, sans confirmer le déploiement du ransomware, le chiffrement ou la séquence complète.
+**Observations :** l'Afrique du Sud concentre le plus de fuites et ventes d'accès (12), portées par Databasehooligan, 404Crew Cyber Team, NullSec Nigeria, Kazu et cc5ab. L'Égypte suit avec 9 incidents, le Maroc avec 7. Trois publications multi-pays complètent le tableau du mois : les CV divulgués (Kenya, Éthiopie, Nigeria, Zimbabwe), l'accès DHIS2 (Mozambique, Liberia, Nigeria, Togo, Sierra Leone) et des scans de passeports (Égypte, Libye).
 
 ---
 
@@ -345,13 +345,13 @@ pie showData
 
 ## 7. Tendances clés et lacunes de renseignement
 
-- **Revendications répétées dans l’éducation :** quatre entrées liées à l’éducation égyptienne sont documentées. Une campagne coordonnée ou une faiblesse d’infrastructure commune reste une hypothèse analytique.
-- **Campagne "OpSouthAfrica" :** La coalition 404Crew / NullSec Nigeria / Infernalis a ciblé au moins huit institutions sud-africaines en mai, en mêlant publication de données et revendications politiques liées aux tensions xénophobes.
-- **Publications CRM de Databasehooligan :** huit jeux de données structurés ont été proposés à la vente dans quatre pays. Les fiches sources n’établissent ni plateforme partagée ni vecteur d’accès commun.
-- **Concentration de NightSpire sur l’Égypte :** trois publications concernent des organisations égyptiennes. Il s’agit d’un signal de surveillance, pas d’une preuve de campagne coordonnée.
-- **Comptes gouvernementaux comme vecteurs d'accès :** L'exposition des identifiants de plateformes gouvernementales marocaines (827 000 lignes), la vente de la messagerie de la police tanzanienne et les offres de comptes pour fausses requêtes EDR signalent un marché croissant d'usurpation d'autorité publique.
-- **Compromission multi-pays DHIS2 :** La vente d'accès à sept pays (Mozambique, Liberia, Nigeria, Bhoutan, Honduras, Togo, Sierra Leone) représente une menace critique pour les systèmes de surveillance sanitaire africains.
-- **Activité répétée visant le Maroc :** deux revendications importantes apparaissent en fin de mois, RADEM Meknès et une vente groupée multi-entités. anisanas2 apparaît aussi dans les données d’avril ; cette continuité justifie une surveillance sans établir un vecteur d’accès commun.
+- **L'éducation égyptienne continue d'être touchée.** Quatre fiches ce mois-ci. Campagne coordonnée ou simple faiblesse d'infrastructure partagée, la question reste ouverte.
+- **"OpSouthAfrica" ressemble à un effort de coalition.** 404Crew, NullSec Nigeria et Infernalis ont ciblé ensemble au moins huit institutions sud-africaines en mai, mêlant publication de données et discours politique autour des tensions xénophobes.
+- **Databasehooligan vend un peu partout.** Huit jeux de données structurés proposés dans quatre pays. Rien dans les fiches sources ne les relie à une plateforme commune ou un vecteur d'accès partagé.
+- **NightSpire est resté concentré sur l'Égypte.** Trois publications ce mois-ci, un signal à surveiller, pas encore une preuve de campagne coordonnée.
+- **Les comptes email gouvernementaux deviennent un vecteur d'accès à part entière.** Identifiants gouvernementaux marocains exposés (827 000 lignes), messagerie de la police tanzanienne en vente, offres de comptes pour requêtes EDR frauduleuses dans plusieurs pays : un marché d'usurpation d'autorité publique qui grandit.
+- **L'accès DHIS2 vendu dans sept pays** (Mozambique, Liberia, Nigeria, Bhoutan, Honduras, Togo, Sierra Leone) représente à lui seul une menace critique pour la souveraineté des données de santé publique.
+- **Le Maroc reste une cible récurrente.** Deux revendications importantes dans les dix derniers jours de mai : RADEM Meknès (1,1 million de documents revendiqués) et une vente groupée annoncée à plus de 12 millions de lignes. anisanas2 avait déjà publié des revendications marocaines en avril, l'activité se répète donc, sans qu'un vecteur d'accès commun soit établi entre les deux.
 
 ---
 
@@ -396,7 +396,7 @@ pie showData
 
 ## 12. Conclusion
 
-Mai 2026 recense 57 incidents signalés ou revendiqués publiquement, contre 60 en avril (-3 ; -5,0 %). Les fiches ransomware passent de 20 à 17 (-15,0 %), tandis que les fuites de données et ventes d’accès restent stables à 40 (0,0 %). L’Égypte et l’Afrique du Sud représentent 52,6 % des incidents directs. Les revendications liées à l’éducation égyptienne, les publications sous la bannière OpSouthAfrica et les offres de vente associées à Databasehooligan dans quatre pays constituent les principaux schémas observés.
+Mai se solde par 57 incidents signalés ou revendiqués publiquement, légèrement en dessous des 60 d'avril, un recul de 5,0 %. Les fiches ransomware passent de 20 à 17, tandis que les fuites de données et ventes d'accès restent stables à 40. L'Égypte et l'Afrique du Sud représentent à elles deux 52,6 % des incidents directs. Ce qui marque le mois : les revendications répétées dans l'éducation égyptienne, les publications sous la bannière OpSouthAfrica, et les ventes de Databasehooligan qui se sont étendues à quatre pays.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

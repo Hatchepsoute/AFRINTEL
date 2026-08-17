@@ -11,7 +11,7 @@
 | Fuites de données et ventes d'accès | 40 | 40 | 0 (0,0 %) |
 | Pays distincts après éclatement des fiches multi-pays | 16 | 18 | +2 |
 
-Le volume global baisse légèrement. Les fuites de données et les ventes d'accès restent stables, tandis que les publications ransomware passent de 20 à 17.
+Le volume global baisse légèrement. Les fuites de données et ventes d'accès restent stables, c'est le ransomware qui recule, de 20 à 17.
 
 ## Évolution par pays
 
@@ -30,7 +30,7 @@ Le volume global baisse légèrement. Les fuites de données et les ventes d'acc
 | 🇪🇹 Éthiopie | 1 | 1 | 0 |
 | Fiches multi-pays | 1 | 3 | +2 |
 
-Les libellés pays directs représentent 59 fiches en avril, plus une fiche multi-pays, et 54 fiches en mai, plus trois fiches multi-pays.
+Les libellés pays directs couvrent 59 fiches en avril, plus une fiche multi-pays, et 54 fiches en mai, plus trois fiches multi-pays.
 
 ## Évolution par secteur
 
@@ -45,15 +45,15 @@ Les libellés pays directs représentent 59 fiches en avril, plus une fiche mult
 | Human resources / Recruitment | 0 | 5 | +5 |
 | Telecommunications | 1 | 3 | +2 |
 
-Government / Administration représente 20 des 57 fiches de mai. Human resources / Recruitment apparaît dans 5 fiches de mai, contre aucune en avril.
+Government / Administration prend à lui seul 20 des 57 fiches de mai. Human resources / Recruitment passe de zéro en avril à 5 en mai.
 
 ## Évolution des acteurs
 
-Avril est dominé par Grubder avec 7 fiches, suivi de Payload, APT73/BASHE et TheGentlemen avec 4 chacun. Mai est dominé par Databasehooligan avec 8 fiches, 404Crew avec 5, TheGentlemen avec 4 et NightSpire avec 3.
+Grubder menait avril avec 7 fiches, Payload, APT73/BASHE et TheGentlemen à égalité à 4. Mai change de tête d'affiche : Databasehooligan à 8, 404Crew à 5, TheGentlemen à 4, NightSpire à 3.
 
 ## Évaluation CTI
 
-Le total mensuel reste proche, mais la distribution évolue. L'Égypte et l'Afrique du Sud remplacent le Maroc comme principales concentrations géographiques. Government / Administration progresse de cinq fiches, tandis que Education / University recule de cinq.
+Le total mensuel reste proche, mais la répartition change. L'Égypte et l'Afrique du Sud prennent le relais du Maroc comme principales concentrations géographiques. Government / Administration gagne cinq fiches pendant qu'Education / University en perd cinq, presque un échange direct.
 
 ## Priorités SOC
 
@@ -64,6 +64,6 @@ Le total mensuel reste proche, mais la distribution évolue. L'Égypte et l'Afri
 
 ## Conclusion
 
-Mai compte 57 incidents contre 60 en avril. La baisse provient du ransomware, tandis que les fuites et ventes d'accès restent stables.
+Mai se solde par 57 incidents contre 60 en avril. Le ransomware explique la baisse ; les fuites et ventes d'accès sont restées exactement stables.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

@@ -10,9 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Février 2026 compte **20 incidents cyber** recensés dans **14 pays africains**, tous attribués à des groupes ransomware ou d'extorsion de données. Le fait marquant est la publication
-de données sensibles attribuées à la **DAF Sénégal**, comprenant des informations citoyennes et biométriques consultées par AFRINTEL. Le volume de **139 To** est revendiqué par
-l'acteur, mais n'a pas pu être mesuré à partir des éléments accessibles. Points clés :
+Février 2026 a rapporté **20 incidents cyber** dans **14 pays africains**, tous liés à des groupes ransomware ou d'extorsion de données. Le fait marquant, c'est la publication de données sensibles attribuées à la **DAF Sénégal**, des informations citoyennes et biométriques qu'AFRINTEL a pu consulter. L'acteur revendique **139 To** ; ce chiffre n'a pas pu être mesuré à partir de ce qui était réellement accessible. Points clés :
 
 - **20 incidents ransomware / extorsion de données (100 %)**.
 - **14 pays** touchés : l'**Afrique du Sud** (3), l'**Égypte** (3), le **Ghana** (2) et le **Nigeria** (2) en tête.
@@ -114,10 +112,10 @@ pie
 
 > **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-- **Répartition :** 20 incidents concernent 14 pays. L’Afrique du Sud et l’Égypte en comptent 3 chacune, tandis que le Ghana et le Nigéria en comptent 2 chacun.
-- **Activité des acteurs :** TheGentlemen arrive en tête avec 5 incidents, suivi de 0APT et LockBit 5.0 avec 3 incidents chacun.
-- **Signal sectoriel :** BlueSky Aviation, Nile Air et Air Côte d’Ivoire montrent une pression soutenue sur le secteur aérien dans trois pays.
-- **Revendications volumétriques :** les 139 To attribués à DAF Sénégal et les trois revendications de 0APT sont significatifs, mais les volumes et les détails des compromissions ne sont pas confirmés indépendamment.
+- **Répartition :** 20 incidents dans 14 pays. Afrique du Sud et Égypte à 3 chacune, Ghana et Nigéria à 2 chacun.
+- **Activité des acteurs :** TheGentlemen en tête avec 5 incidents, 0APT et LockBit 5.0 suivent avec 3 chacun.
+- **Signal sectoriel :** BlueSky Aviation, Nile Air et Air Côte d'Ivoire, trois compagnies, trois pays, une pression soutenue sur le secteur aérien ce mois-ci.
+- **Revendications volumétriques :** les 139 To attribués à DAF Sénégal et les trois revendications de 0APT sont les chiffres qui marquent, mais ni les volumes ni les détails de compromission n'ont été confirmés de manière indépendante.
 
 ---
 
@@ -143,10 +141,10 @@ pie
 | Namibie | 1 | qilin |
 
 **Observations clés :**
-- **0APT** a émergé comme nouvel acteur prolifique début février (3 revendications en 5 jours) puis a disparu des DLS publics.
-- **Secteur aérien** : 3 compagnies aériennes revendiquées (BlueSky Somalie, Nile Air Égypte, Air Côte d'Ivoire) par 3 acteurs différents. Ciblage opportuniste indépendant probable.
-- **thegentlemen** poursuit son rythme de janvier 2026 avec 5 nouvelles revendications dans 4 pays.
-- **LockBit 5.0** revendique 3 victimes, confirmant sa continuité opérationnelle sous le branding LockBit 5.x.
+- **0APT** est sorti de nulle part début février, 3 revendications en 5 jours, puis silence radio sur les DLS publics pour le reste du mois.
+- **Secteur aérien** : 3 compagnies revendiquées (BlueSky Somalie, Nile Air Égypte, Air Côte d'Ivoire), 3 acteurs différents. Ça ressemble plus à de l'opportunisme indépendant qu'à une campagne coordonnée.
+- **thegentlemen** ne ralentit pas : 5 nouvelles revendications dans 4 pays après janvier.
+- **LockBit 5.0** revendique 3 victimes, toujours sous le branding LockBit 5.x.
 
 ## 6. Impact sectoriel
 
@@ -184,9 +182,9 @@ pie
 ```
 
 **Enseignements :**
-- Gouvernement, aviation et énergie forment le cluster infrastructures critiques (8 incidents, 40 %).
-- La concentration aviation (3 compagnies aériennes en un mois) est inédite dans les archives AFRINTEL.
-- La violation DAF Sénégal (données gouvernementales biométriques) représente un scénario d'impact de niveau 4 si confirmé.
+- Gouvernement, aviation et énergie forment ensemble un cluster infrastructures critiques, 8 incidents, 40 % du mois.
+- Trois compagnies aériennes en un mois, du jamais-vu dans les archives AFRINTEL.
+- DAF Sénégal, données gouvernementales et biométriques réunies, coche les cases du niveau d'impact 4 si la revendication se confirme.
 
 ## 7. Profil des acteurs de menaces
 
@@ -225,11 +223,11 @@ pie
 
 ### Tendances
 
-1. **DAF Sénégal - violation potentiellement record** : 139 To incluant des données biométriques est une revendication extraordinaire. Si confirmée, elle marquerait une escalade significative des attaques contre les gouvernements ouest-africains.
-2. **Secteur aérien sous attaque** : trois compagnies aériennes revendiquées en un mois dans trois pays par trois acteurs différents. Ciblage opportuniste indépendant plutôt que campagne coordonnée.
-3. **Émergence et disparition de 0APT** : trois revendications à fort volume en 5 jours puis silence. Soit le groupe a atteint ses objectifs, soit les revendications étaient fabriquées, soit un acteur existant a testé un nouveau pseudonyme.
-4. **thegentlemen maintient le rythme** : cinq incidents en février après six en janvier confirme un tempo opérationnel panafricain soutenu.
-5. **Persistance de LockBit 5.0** : trois revendications confirment la continuité africaine sous le branding LockBit 5.x.
+1. **DAF Sénégal pourrait être une violation record.** 139 To dont des données biométriques, c'est un chiffre extraordinaire à revendiquer. S'il se confirme, c'est une vraie escalade contre les gouvernements ouest-africains.
+2. **L'aviation a pris cher.** Trois compagnies, trois pays, trois acteurs, en un seul mois. Ça ressemble à de l'opportunisme indépendant, pas à une campagne coordonnée contre le secteur.
+3. **0APT a brillé puis disparu.** Trois revendications à fort volume en 5 jours, puis plus rien sur les DLS publics pour le reste du mois. Objectifs atteints, revendications fabriquées, ou acteur existant testant un nouveau pseudonyme, impossible de trancher.
+4. **thegentlemen ne ralentit pas.** Cinq incidents en février après six en janvier, un tempo panafricain qui tient la distance.
+5. **LockBit 5.0 continue d'apparaître.** Trois revendications ce mois-ci, le ciblage africain ne faiblit pas.
 
 ### Lacunes
 
@@ -292,7 +290,7 @@ pie
 
 ## 13. Conclusion
 
-Février 2026 est avant tout marqué par l'ampleur et la sensibilité de la revendication DAF Sénégal : si confirmés, 139 To de données citoyennes et biométriques constitueraient l'une des violations gouvernementales les plus significatives de l'histoire cyber africaine. Au-delà de ce cas unique, le mois démontre un paysage de menaces large et diversifié : 14 pays, 11 acteurs, et une intensité particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. thegentlemen, LockBit 5.0 et 0APT (brièvement) maintiennent tous un rythme opérationnel élevé. AFRINTEL continue de surveiller tous les groupes actifs et mettra à jour les évaluations au fur et à mesure de la vérification.
+Ce qui domine février 2026, c'est l'ampleur et la sensibilité de la revendication DAF Sénégal : si les 139 To de données citoyennes et biométriques se confirment, ce serait l'une des violations gouvernementales les plus lourdes de l'histoire cyber africaine. En dehors de ce cas, le mois reste large et varié, 14 pays, 11 acteurs, avec une pression particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. thegentlemen, LockBit 5.0 et 0APT, le temps qu'il a duré, ont tous maintenu un rythme opérationnel soutenu. AFRINTEL continue de surveiller les groupes actifs et mettra à jour ces évaluations à mesure que des éléments de vérification arrivent.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

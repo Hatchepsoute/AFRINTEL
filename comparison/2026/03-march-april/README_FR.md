@@ -11,7 +11,7 @@
 | Fuites de données et ventes d'accès | 22 | 40 | +18 (+81,8 %) |
 | Libellés géographiques représentés | 14 | 16 | +2 |
 
-La hausse d'avril provient principalement des fuites de données et des ventes d'accès. Une fiche d'avril couvre plusieurs pays africains et compte une seule fois dans le total global.
+Les fuites de données et ventes d'accès ont fait l'essentiel de la hausse d'avril. Une fiche d'avril couvre plusieurs pays africains, mais ne compte qu'une seule fois dans le total global.
 
 ## Évolution par pays
 
@@ -28,15 +28,15 @@ La hausse d'avril provient principalement des fuites de données et des ventes d
 
 ## Évolution par secteur
 
-Government / Administration reste le premier secteur et passe de 10 à 15 fiches. Education / University passe de 7 à 8. Avril compte aussi 7 cas Industry / Automotive / Manufacturing / Construction / Engineering, 5 cas Finance / Banking / Insurance / Wealth, puis 4 fiches chacun pour Healthcare / Medical, Sports et E-commerce / Retail.
+Government / Administration reste en tête et passe de 10 à 15 fiches. Education / University grimpe de 7 à 8. Avril apporte aussi 7 cas Industry / Automotive / Manufacturing / Construction / Engineering, 5 cas Finance / Banking / Insurance / Wealth, et 4 fiches chacun pour Healthcare / Medical, Sports et E-commerce / Retail.
 
 ## Évolution des acteurs
 
-Mars est dominé par CrowStealer avec 5 fiches et APT73/BASHE avec 4. Avril est dominé par Grubder avec 7 fiches, suivi de Payload, APT73/BASHE et TheGentlemen avec 4 chacun.
+CrowStealer menait mars avec 5 fiches, APT73/BASHE à 4. Avril change de tête d'affiche : Grubder à 7, puis Payload, APT73/BASHE et TheGentlemen à égalité à 4.
 
 ## Évaluation CTI
 
-Le nombre de ransomwares évolue peu entre les deux mois. Le principal changement est le passage de 22 à 40 fiches de fuite ou de vente d'accès, avec le Maroc en tête en avril.
+Le ransomware a à peine bougé entre les deux mois. Ce qui a vraiment changé, c'est le volume de fuites et ventes d'accès, 22 à 40, avec le Maroc qui prend la tête en avril.
 
 ## Priorités SOC
 
@@ -47,6 +47,6 @@ Le nombre de ransomwares évolue peu entre les deux mois. Le principal changemen
 
 ## Conclusion
 
-Avril atteint 60 incidents, soit 19 de plus que mars. Les fuites de données et les ventes d'accès représentent 18 de ces 19 fiches supplémentaires.
+Avril se solde par 60 incidents, 19 de plus que mars. Les fuites de données et ventes d'accès représentent 18 de ces 19 fiches en plus, presque toute la hausse.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

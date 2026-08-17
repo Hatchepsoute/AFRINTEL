@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-En janvier 2026, **21 incidents cyber** visant des entités africaines ont été publiquement revendiqués ou détectés. Le mois est dominé par les ransomwares, avec une présence transnationale notable de deux groupes, associée à deux fuites de données et un défacement gouvernemental coordonné. Points clés :
+Janvier 2026 a rapporté **21 incidents cyber** contre des cibles africaines, revendiqués ou détectés dans le mois. Le ransomware a mené la danse, avec deux groupes actifs au-delà des frontières, aux côtés de deux fuites de données, une vente d'accès et un défacement gouvernemental coordonné. Points clés :
 
 - **17 revendications ransomware (81,0 %)**, **2 fuites de données (9,5 %)**, **1 vente d’accès (4,8 %)** et **1 défacement (4,8 %)**.
 - **12 pays** touchés : **l'Afrique du Sud** (4 incidents) et le **Kenya** (4) sont les plus ciblés, suivis de l'**Égypte** (3).
@@ -130,10 +130,10 @@ pie
 
 > **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-- **Concentration :** l’Afrique du Sud et le Kenya comptent 4 incidents chacun, suivis de l’Égypte avec 3. Ces trois pays représentent 11 des 21 incidents.
-- **Activité ransomware :** 17 revendications ont été recensées. TheGentlemen représente 6 incidents et tengu 5, avec une activité répartie dans plusieurs régions.
-- **Autres types d’incidents :** le mois comprend également deux fuites de données, une vente d’accès visant des infrastructures gouvernementales togolaises et un défacement coordonné de sites gouvernementaux nigériens.
-- **Exposition notable :** les publications concernant PixPay et AOM Aviation portent sur des données financières et aéronautiques, avec une portée et un impact limités aux éléments disponibles dans les sources.
+- **Concentration :** l'Afrique du Sud et le Kenya à 4 incidents chacun, l'Égypte suit avec 3. À eux trois, ça fait 11 des 21 fiches du mois.
+- **Activité ransomware :** 17 revendications au total. TheGentlemen en couvre 6 à lui seul, tengu 5, et les deux se sont montrés sur plusieurs régions plutôt que de rester cantonnés à une zone.
+- **Autres types d'incidents :** deux fuites de données, une vente d'accès visant l'infrastructure gouvernementale togolaise, et un défacement coordonné de sites gouvernementaux nigériens complètent le tableau du mois.
+- **Exposition notable :** PixPay et AOM Aviation ont chacun rendu publiques des données financières et aéronautiques ; jusqu'où va vraiment cette exposition dépend d'éléments qu'AFRINTEL n'a pas pu vérifier de manière indépendante.
 
 ---
 
@@ -155,9 +155,9 @@ pie
 | Togo | 1 | Bigbrother (IAB, vente d'accès) |
 
 **Observations clés :**
-- **thegentlemen** et **tengu** totalisent 11 des 21 fiches (52 %) dans 7 pays distincts. Les sources de janvier n'établissent aucune relation opérationnelle entre les deux groupes.
-- Le 20 janvier a été la journée la plus active : 5 revendications en Afrique du Sud et au Kenya (Paltrack, Rola, Witzenberg, CPF, NSSF).
-- **Bigbrother/Togo** illustre une récurrence de publications IAB : un accès SSH a été proposé en septembre 2025, puis un nouvel accès a été revendiqué en janvier 2026. Une revue des accès et des identifiants est prioritaire.
+- **thegentlemen** et **tengu** totalisent à eux deux 11 des 21 fiches (52 %) dans 7 pays distincts. Rien dans les sources de janvier ne relie pourtant les deux groupes entre eux.
+- Le 20 janvier a été la journée la plus chargée, 5 revendications rien qu'en Afrique du Sud et au Kenya : Paltrack, Rola, Witzenberg, CPF, NSSF.
+- **Bigbrother/Togo** ressemble à un cas d'école d'IAB : un accès SSH proposé en septembre 2025, puis un nouvel accès revendiqué en janvier. Un accès qui persiste comme ça augmente le risque qu'une opération plus lourde suive.
 
 ### 5.2 Fuites de données (2 incidents)
 
@@ -203,9 +203,9 @@ pie
 ```
 
 **Enseignements :**
-- Le gouvernement et les services financiers partagent la première place (4 incidents chacun), confirmant leur attractivité persistante comme cibles.
-- Les publications ransomware de janvier incluent des organisations liées à l'eau, au transport, aux ports et aux mines. Les publications établissent l'exposition sectorielle ; les fiches sources ne documentent pas d'impact opérationnel.
-- Les ONG de santé (CCBRT Tanzanie) représentent une catégorie sous-protégée.
+- Gouvernement et services financiers sont à égalité en tête, 4 incidents chacun, deux secteurs qui restent attractifs mois après mois.
+- Les listings ransomware de janvier touchent des organisations liées à l'eau, au transport, aux ports et aux mines. Ça établit l'exposition sectorielle, ça ne dit rien sur un éventuel arrêt d'activité, les fiches sources ne vont pas jusque-là.
+- Les ONG de santé, CCBRT Tanzanie en l'occurrence, ressortent comme une catégorie sous-protégée à surveiller.
 
 ## 7. Profil des acteurs de menaces
 
@@ -242,11 +242,11 @@ pie
 
 ### Tendances
 
-1. **Concentration autour de thegentlemen et tengu** : 52 % des fiches de janvier sont attribuées à ces deux groupes. TheGentlemen apparaît dans 4 pays et tengu dans 5, soit 7 pays distincts au total.
-2. **Vague sur le Kenya** : 4 incidents, tous ciblant des institutions publiques (eau, retraites, sécurité sociale, mines). Schéma cohérent avec un ciblage délibéré des infrastructures liées au gouvernement.
-3. **Publications IAB répétées concernant le gouvernement togolais** : Bigbrother a publié une vente d'accès en septembre 2025 puis une nouvelle revendication d'accès en janvier 2026. Ces publications justifient une revue immédiate des identifiants et des accès.
-4. **Défacement gouvernemental coordonné au Niger** : le défacement observé touche plus de sept sites de l’État nigérien et affiche des messages politiques liés à la situation géopolitique du pays au moment de l’incident. La dépendance technique commune utilisée dans l'opération n'est pas identifiée dans la fiche source.
-5. **Émergence des fuites de données** : PixPay (paiement mobile) et AOM Aviation (aviation civile) indiquent que les courtiers en données s'étendent à de nouveaux secteurs.
+1. **thegentlemen et tengu dominent le mois.** À eux deux, 52 % des fiches de janvier, thegentlemen dans 4 pays, tengu dans 5, sept pays distincts une fois les deux combinés.
+2. **Le Kenya se démarque.** Les 4 incidents touchent tous des institutions publiques : eau, retraites, sécurité sociale, mines. Ça ne ressemble pas à de l'opportunisme dispersé, plutôt à un ciblage délibéré des infrastructures liées au gouvernement.
+3. **Le Togo revient sans cesse.** Bigbrother a vendu un accès en septembre 2025, puis en a revendiqué un nouveau en janvier. Deux publications sur la même infrastructure gouvernementale, c'est déjà une raison suffisante pour lancer la revue des accès et des identifiants maintenant, pas plus tard.
+4. **Les sites gouvernementaux nigériens sont tombés ensemble.** Plus de sept sites de l'État défigurés avec le même message politique, mais la source ne dit pas quelle dépendance technique commune l'opération a exploitée.
+5. **Deux secteurs sans lien ont fui des données.** PixPay (paiement mobile) et AOM Aviation (aviation civile) n'ont rien en commun à part être deux publications de données, pas de quoi parler de tendance sectorielle sur cette seule base.
 
 ### Lacunes
 
@@ -310,7 +310,7 @@ pie
 
 ## 13. Conclusion
 
-Janvier 2026 compte 21 fiches d'incidents dans 12 pays africains. Le ransomware représente 17 fiches, dont 11 attribuées à thegentlemen et tengu dans 7 pays distincts. Le mois comprend également deux publications de données, une vente d'accès et un défacement coordonné. L'Afrique du Sud et le Kenya enregistrent les volumes les plus élevés, suivis de l'Égypte. Les observations couvrent l'Afrique du Nord, de l'Ouest, de l'Est et australe.
+Janvier se solde par 21 fiches d'incidents dans 12 pays. Le ransomware en représente 17, et thegentlemen plus tengu couvrent à eux seuls 11 fiches dans 7 pays. Le reste du mois, deux publications de données, une vente d'accès, un défacement coordonné, complète le tableau. L'Afrique du Sud et le Kenya arrivent en tête sur le volume, l'Égypte juste derrière. Entre les trois, l'activité a touché l'Afrique du Nord, de l'Ouest, de l'Est et australe.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

@@ -15,18 +15,18 @@ Les publications issues des leak sites, forums et canaux underground sont trait�
 | Indicateur | Valeur |
 |---|---:|
 | Victimes | 41 |
-| Pays touchés | 14 |
+| Pays touchés | 12 (plus 1 incident multi-pays) |
 | Acteurs attribués | 26 |
-| Secteurs touchés | 37 |
+| Secteurs touchés | 38 |
 
 ## Victimes par pays
 
 ```mermaid
 xychart-beta
     title "Victimes par pays - Mars 2026"
-    x-axis ["🇿🇦 Afrique du Sud", "🇪🇬 Égypte", "🇿🇲 Zambie", "🇩🇿 Algérie", "🇨🇲 Cameroun", "🇲🇦 Maroc", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇸🇳 Sénégal", "🇹🇿 Tanzanie", "🇳🇬 Nigeria", "🇨🇩 RDC", "🇬🇳 Guinée"]
+    x-axis ["🇿🇦 Afrique du Sud", "🇪🇬 Égypte", "🇿🇲 Zambie", "🇩🇿 Algérie", "🌍 Multi-pays", "🇲🇦 Maroc", "🇲🇬 Madagascar", "🇹🇳 Tunisie", "🇳🇦 Namibie", "🇸🇳 Sénégal", "🇹🇿 Tanzanie", "🇳🇬 Nigeria", "🇬🇳 Guinée"]
     y-axis "Victimes" 0 --> 15
-    bar [13, 8, 1, 1, 1, 8, 1, 1, 1, 1, 1, 2, 1, 1]
+    bar [13, 9, 1, 1, 1, 8, 1, 1, 1, 1, 1, 2, 1]
 ```
 
 ## Typologie des incidents
@@ -108,10 +108,10 @@ flowchart LR
     class V_Bridges__tebridges_dz victim;
     class C_Alg_rie country;
     class S_Technologie___Services_aux_entreprises__CRM sector;
-    A_zimablue["zimablue"] --> V_Loozap__loozap_com["Loozap (loozap.com)"] --> C_Cameroun["🇨🇲 Cameroun"] --> S_E_commerce___Petites_annonces_en_ligne["E-commerce / Petites annonces en ligne"]
+    A_zimablue["zimablue"] --> V_Loozap__loozap_com["Loozap (loozap.com)"] --> C_MultiPays["🌍 Multi-pays"] --> S_E_commerce___Petites_annonces_en_ligne["E-commerce / Petites annonces en ligne"]
     class A_zimablue actor;
     class V_Loozap__loozap_com victim;
-    class C_Cameroun country;
+    class C_MultiPays country;
     class S_E_commerce___Petites_annonces_en_ligne sector;
     A_CrowStealer["CrowStealer"] --> V_Autorit__de_R_gulation_de_la_Gestion_des_D_chets__WMRA["Autorité de Régulation de la Gestion des Déchets (WMRA)"] --> C_gypte["🇪🇬 Égypte"] --> S_Gouvernement___Environnement["Gouvernement / Environnement"]
     class A_CrowStealer actor;
@@ -277,11 +277,11 @@ flowchart LR
     class V_Smarteez__Prestataire_L_Or_al_Maroc___Supply_Chain victim;
     class C_Maroc country;
     class S_Marketing_Digital___Cosm_tique__Supply_Chain_L_Or_al sector;
-    A_privillege["privillege"] --> V_Fonds_pour_la_R_forme_de_l_Administration_Publique__FRA["Fonds pour la Réforme de l'Administration Publique (FRAP)"] --> C_RDC["🇨🇩 RDC"] --> S_Gouvernement___Administration["Gouvernement / Administration"]
-    class A_privillege actor;
-    class V_Fonds_pour_la_R_forme_de_l_Administration_Publique__FRA victim;
-    class C_RDC country;
-    class S_Gouvernement___Administration sector;
+    A_Al_Sheikh["Al-Sheikh"] --> V_Semsar_Masr__semsarmasr_com["Semsar Masr (semsarmasr.com)"] --> C_gypte["🇪🇬 Égypte"] --> S_Immobilier___Petites_annonces_en_ligne["Immobilier / Petites annonces en ligne"]
+    class A_Al_Sheikh actor;
+    class V_Semsar_Masr__semsarmasr_com victim;
+    class C_gypte country;
+    class S_Immobilier___Petites_annonces_en_ligne sector;
     A_Keymous["Keymous"] --> V_Minist_re_de_la_Sant___sante_gov_gn["Ministère de la Santé (sante.gov.gn)"] --> C_Guin_e["🇬🇳 Guinée"] --> S_Gouvernement___Sant__publique["Gouvernement / Santé publique"]
     class A_Keymous actor;
     class V_Minist_re_de_la_Sant___sante_gov_gn victim;

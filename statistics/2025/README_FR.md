@@ -1,306 +1,343 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel](https://img.shields.io/badge/Intel-CTI-purple)
+# Rapport CTI annuel AFRINTEL — 2025
 
-# AFRINTEL - Statistiques annuelles 2025 (149 victimes)
+Ce bilan reprend les 196 fiches des douze fichiers mensuels AFRINTEL de 2025. Les revendications sont comptées telles qu’elles apparaissent dans les sources mensuelles ; une même organisation peut donc apparaître plusieurs fois.
 
-👉🏾 [**English version available here**](./README.md)
+👉🏾 [English version](./README.md)
 
-## 📊 1. Statistiques globales
-Le projet **AFRINTEL** a recensé une activité cybercriminelle intense sur le continent africain durant l'année 2025, caractérisée par une diversification des cibles et des volumes de données exfiltrés sans précédent.
+## 1. Résumé exécutif
 
-| Indicateur | Valeur |
-| :--- | :--- |
-| **Total des attaques recensées** | 149 |
-| **Victimes uniques** | 146 |
-| **Doubles revendications** | 3 |
-| **Groupes distincts identifiés** | 56 |
-| **Pays touchés** | 23 |
-| **Secteurs impactés** | 24 |
-| **Volume total exfiltré documenté** | +10 To |
+L’Afrique du Sud est le pays le plus représenté avec 33 fiches. Les données restent une mesure de visibilité OSINT : elles ne constituent pas un recensement exhaustif des incidents réels.
 
----
+## 2. Méthode
 
-## 📅 2. Analyse temporelle
+Les tableaux sont calculés directement à partir des fiches victimes mensuelles. Aucune information manquante n’a été complétée ; les publications de forums et de sites de fuite restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
 
-### 2.1 Répartition mensuelle
-L'activité a connu une croissance quasi constante, culminant au dernier trimestre.
+## 3. Évolution mensuelle
 
-| Mois | Jan | Fév | Mar | Avr | Mai | Juin | Juil | Août | Sep | Oct | Nov | Déc | **Total** |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Cyberattaques** | 16 | 8 | 9 | 11 | 14 | 11 | 13 | 13 | 12 | 17 | 11 | 14 | **149** |
+| Mois | Incidents |
+|---|---:|
+| Mai | 21 |
+| Juin | 21 |
+| Juillet | 20 |
+| Octobre | 19 |
+| Septembre | 18 |
+| Décembre | 18 |
+| Avril | 17 |
+| Janvier | 16 |
+| Novembre | 14 |
+| Août | 13 |
+| Mars | 11 |
+| Février | 8 |
 
-```mermaid
-xychart-beta
-    title "Cyberattaques mensuelles - 2025"
-    x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep", "Oct", "Nov", "Déc"]
-    y-axis "Nombre d'attaques" 0 --> 20
-    bar [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
-    line [16, 8, 9, 11, 14, 11, 13, 13, 12, 17, 11, 14]
-```
+## 4. Répartition par pays
 
-### 2.2 Évolution trimestrielle
-| Trimestre | Mois | Attaques | Cumul |
-| :--- | :--- | :---: | :---: |
-| **T1** | Jan-Mar | 16 + 8 + 9 | **33** |
-| **T2** | Avr-Juin | 11 + 14 + 11 | **36** |
-| **T3** | Juil-Sep | 13 + 13 + 12 | **38** |
-| **T4** | Oct-Déc | 17 + 11 + 14 | **42** |
+| Pays | Incidents |
+|---|---:|
+| 🇪🇬 Égypte | 33 |
+| 🇲🇦 Maroc | 31 |
+| 🇿🇦 Afrique du Sud | 30 |
+| 🇩🇿 Algérie | 19 |
+| 🇳🇬 Nigeria | 14 |
+| 🇹🇳 Tunisie | 13 |
+| 🇰🇪 Kenya | 10 |
+| 🇲🇷 Mauritanie | 8 |
+| 🇿🇲 Zambie | 4 |
+| 🇬🇭 Ghana | 3 |
+| 🇳🇦 Namibie | 3 |
+| 🇹🇿 Tanzanie | 3 |
+| 🇨🇮 Côte d'Ivoire | 3 |
+| 🇺🇬 Ouganda | 2 |
+| 🇧🇼 Botswana | 2 |
+| 🇸🇳 Sénégal | 2 |
+| 🇹🇬 Togo | 2 |
+| 🇲🇺 Maurice | 2 |
+| 🇿🇼 Zimbabwe | 2 |
+| 🇨🇩 Congo (RDC) | 2 |
+| 🇧🇫 Burkina Faso | 1 |
+| 🇷🇼 Rwanda | 1 |
+| 🇨🇲 Cameroun | 1 |
+| 🇩🇯 Djibouti | 1 |
+| 🇪🇷 Érythrée | 1 |
+| 🇦🇴 Angola | 1 |
+| 🇲🇬 Madagascar | 1 |
+| 🇬🇦 Gabon | 1 |
 
-```mermaid
-pie title Des attaques par trimestre - 2025
-    "T1 (Jan-Mar)" : 33
-    "T2 (Avr-Juin)" : 36
-    "T3 (Juil-Sep)" : 38
-    "T4 (Oct-Déc)" : 42
-```
----
+## 5. Secteurs
 
-## 🦠 3. Top 15 des groupes de ransomware (2025)
+| Secteur | Incidents |
+|---|---:|
+| Finance | 6 |
+| Banque / Services financiers | 6 |
+| Banque / Services Financiers. | 6 |
+| Santé | 5 |
+| Logistique | 5 |
+| Conseil en technologies | 3 |
+| Administrations publiques | 2 |
+| Éducation / Enseignement Supérieur / Recherche. | 2 |
+| Éducation / Enseignement Supérieur | 2 |
+| Télécommunications | 2 |
+| Agroalimentaire | 2 |
+| Transport aérien | 2 |
+| Éducation / Enseignement supérieur | 2 |
+| Technologie / Télématique / Sécurité IoT | 2 |
+| Défense / Sécurité nationale | 2 |
+| Gouvernement / Diplomatie | 2 |
+| Assurances / Services Financiers. | 2 |
+| Industrie manufacturière (Plastiques) | 2 |
+| Santé (Dentaire) | 1 |
+| Administrations publiques/ Finances / Marchés Publics. | 1 |
+| Commerce de détail/Grande distribution (Retail). | 1 |
+| Technologies / Marketing Digital / SEO. | 1 |
+| Logistique Pétrolière et Gazière / Services Portuaires. | 1 |
+| Hôtellerie / Tourisme. | 1 |
+| Administrations publiques / Ressources en Eau / Agriculture. | 1 |
+| Éducation / Recherche Scientifique / Publication Académique. | 1 |
+| Éducation / Enseignement Supérieur / Recherche Pédagogique. | 1 |
+| Services de Conseil / SMS en masse et messagerie broadcast | 1 |
+| Services RH / Recrutement | 1 |
+| Services aux entreprises / Conseil en technologie (IT & Digital Solutions). | 1 |
+| Assurances / Courtage | 1 |
+| Services publics / Environnement (Météorologie) | 1 |
+| Gouvernement / Services Publics Numériques. | 1 |
+| Assurances/Insurtech | 1 |
+| Logistique/ distribustion | 1 |
+| Services / Recrutement (RH Tech) | 1 |
+| Éducation / Services RH | 1 |
+| Administration publique / Régulation de la santé | 1 |
+| Commerce de détail (Distribution) | 1 |
+| Éducation / Enseignement privé. | 1 |
+| Santé / Secteur Hospitalier | 1 |
+| Santé / Santé publique | 1 |
+| Administrations publiques (Santé) | 1 |
+| Défense / Sécurité Nationale | 1 |
+| Finance / Logistique | 1 |
+| Technologies (Télécommunications) | 1 |
+| Services aux entreprises / Externalisation (BPO) | 1 |
+| Administrations publiques (Sécurité sociale) | 1 |
+| Gouvernement / Économie et Industrie. | 1 |
+| Gouvernement / Sécurité sociale | 1 |
+| Social / Mutuelle de Santé. | 1 |
+| Gouvernement / Administration du travail | 1 |
+| Finance / Paiement mobile | 1 |
+| Technologies de l'Information | 1 |
+| Éducation / Enseignement supérieur / Audiovisuel et cinéma | 1 |
+| Gouvernement / Habitat / Politique de la ville | 1 |
+| Services financiers / Banque d'investissement / Conseil en financement de projets | 1 |
+| Agroalimentaire / Industrie Laitière | 1 |
+| Technologies / Services managés (MSP) / Cloud | 1 |
+| Technologies de l'Information (IT) / Services Managés (MSP) | 1 |
+| Services aux entreprises / Ressources Humaines | 1 |
+| Finance / Association | 1 |
+| Équipements de protection individuelle (EPI) / Industrie | 1 |
+| Gouvernement / Services Sociaux | 1 |
+| Pharmacie / Santé | 1 |
+| Mines | 1 |
+| Retail / Distribution (Vêtements et chaussures). | 1 |
+| Assurance | 1 |
+| Technologie / Services Numériques (Hébergement & Domaines). | 1 |
+| Gouvernement / Immobilier et Foncier. | 1 |
+| Services juridiques / Association professionnelle | 1 |
+| Services aux entreprises | 1 |
+| Administration Foncière / Secteur Public. | 1 |
+| Ressources Humaines / Recrutement / Intérim. | 1 |
+| Télécommunications / Infrastructure Internet nationale | 1 |
+| Assurance / Services financiers | 1 |
+| Conglomérat / multi-sectoriel | 1 |
+| Commerce de détail (Mode) | 1 |
+| Gouvernement / Administration publique / Affaires sociales | 1 |
+| Gouvernement / Administration publique / Jeunesse et sports | 1 |
+| Gouvernement / Éducation. | 1 |
+| Gouvernement / Douanes et commerce extérieur | 1 |
+| Sport / Administration Publique. | 1 |
+| Télécommunications. | 1 |
+| Gouvernement / Transports | 1 |
+| Services Financiers / Organisme de Régulation Professionnelle. | 1 |
+| Services postaux / Services financiers | 1 |
+| Fournitures Industrielles / Services à l'Exploitation Minière. | 1 |
+| Bâtiment / Travaux publics / Organisation professionnelle | 1 |
+| ONG (Éducation & Gouvernance) | 1 |
+| Télécommunications / Distribution & Retail. | 1 |
+| Gouvernement / Énergie et mines ; tiers cité : industrie chimique / étanchéité du bâtiment | 1 |
+| Gouvernement / Infrastructure numérique | 1 |
+| Télécommunications / Infrastructures Énergétiques / TIC. | 1 |
+| Gouvernement / Énergie (Électricité) | 1 |
+| Administrations publique / Gouvernement Local. | 1 |
+| Gouvernement / Marchés publics (Qualification des entreprises et du personnel) | 1 |
+| Gouvernement / Administration Fiscale. | 1 |
+| Formation Professionnelle / Secteur Bancaire. | 1 |
+| Gouvernement / Administration publique / Éducation | 1 |
+| Technologies / Distribution Multimédia. | 1 |
+| Énergie / Infrastructures Critiques (Production d'Électricité). | 1 |
+| Télécoms / Infrastructures / Services IT. | 1 |
+| Agroalimentaire/ Industrie / Logistique | 1 |
+| Technologies (Éditeur de logiciels) | 1 |
+| Énergie (Électricité) | 1 |
+| Commerce de détail / E-commerce. | 1 |
+| Services de Sécurité / Défense / Ressources Humaines. | 1 |
+| Gouvernement / Infrastructures Critiques. | 1 |
+| Fintech / Services de paiement | 1 |
+| Immobilier / Construction / Ingénierie. | 1 |
+| Restauration / Services alimentaires / Traiteur. | 1 |
+| Industrie Manufacturière / Literie / Ameublement. | 1 |
+| Services financiers | 1 |
+| Gouvernement / Administration publique | 1 |
+| Gouvernement / Administration | 1 |
+| Assurances / Services financiers | 1 |
+| Technologies / Édition de logiciels ERP. | 1 |
+| Technologies/ Services Numériques / Développement Logiciel. | 1 |
+| Microfinance / Banque | 1 |
+| Administration Publique / Finances / Fiscalité. | 1 |
+| Construction / CVC | 1 |
+| Religion / Organisation caritative | 1 |
+| Transport / Logistique | 1 |
+| Immobilier / Construction / Ingénierie | 1 |
+| Technologies/ Fintech (Solutions pour l'Assurance). | 1 |
+| Exploitation minière / Conglomérat | 1 |
+| Éducation (Université) | 1 |
+| Commerce de gros (Produits alimentaires) | 1 |
+| Industrie pharmaceutique / Laboratoire | 1 |
+| Services juridiques | 1 |
+| Éducation / Enseignement supérieur / Agronomie et sciences vétérinaires | 1 |
+| Gouvernement / Éducation / Enseignement supérieur | 1 |
+| Ressources humaines / Recrutement | 1 |
+| Technologies / Industrie | 1 |
+| Services financiers (Banque) | 1 |
+| Commerce de détail / Grande distribution / E-commerce. | 1 |
+| Gouvernement / Transport / Sécurité routière | 1 |
+| Administrations publiques/ Logement social. | 1 |
+| Services financiers (Gestion de pension) | 1 |
+| Construction | 1 |
+| Industrie manufacturière du bois et des matériaux de construction. | 1 |
+| Immobilier / Investissement / Développement Urbain. | 1 |
+| Santé / ONG / Humanitaire. | 1 |
+| Technologie / Services numériques (activité exacte non confirmée de manière indépendante) | 1 |
+| Technologies | 1 |
+| Assurances (Santé) | 1 |
+| Agroalimentaire / Boissons (Alcoolisées et non alcoolisées). | 1 |
+| Distribution automobile / Équipement de diagnostic | 1 |
+| Administration Publique / Gouvernement Local. | 1 |
+| Finance / Commerce | 1 |
+| Assurances | 1 |
+| Santé / Association Médicale / Éducation. | 1 |
+| Développement Immobilier / Gestion de Parcs Industriels et de Loisirs. | 1 |
+| Administrations publiques (Régulation financière) | 1 |
+| Éducation / Université | 1 |
+| Industrie / Fabrication de produits électriques et plastiques | 1 |
+| Santé / E-commerce pharmaceutique | 1 |
+| Énergie / Transport d'électricité (Infrastructure critique) | 1 |
 
-Le paysage des menaces en Afrique se caractérise par la présence de grands acteurs internationaux du RaaS (Ransomware-as-a-Service) aux côtés de groupes émergents spécialisés.
+## 6. Acteurs ou sources
 
-| Rang | Groupe | Revendications |
-| :--- | :--- | :---: |
-| 1 | **qilin** | 11 |
-| 2 | **devman** | 10 |
-| 3 | **incransom** | 8 |
-| 4 | **funksec** | 7 |
-| 4 | **nightspire** | 9 |
-| 6 | **killsec** | 6 |
-| 7 | **Dark 07x Team** | 4 |
-| 8 | **clop** | 4 |
-| 8 | **ransomhub** | 4 |
-| 8 | **warlock** | 4 |
-| 11 | **arcusmedia** | 3 |
-| 11 | **babuk2** | 3 |
-| 11 | **dragonforce** : 3 |
-| 11 | **GDLockerSec** | 3 |
-| 11 | **lockbit5** | 3 |
-| 11 | **spacebears** | 3 |
-| 11 | **thegentlemen** | 3 |
-| - | *Autres (30+ groupes)* | 61 |
-| **Total** | | **149** |
+| Acteur / source | Incidents |
+|---|---:|
+| qilin | 11 |
+| nightspire | 10 |
+| devman | 10 |
+| incransom | 8 |
+| funksec | 7 |
+| Phantom Atlas | 7 |
+| killsec | 6 |
+| kill9 | 6 |
+| Dark 07x Team | 5 |
+| ransomhub | 4 |
+| warlock | 4 |
+| clop | 4 |
+| spacebears | 3 |
+| GDLockerSec | 3 |
+| babuk2 | 3 |
+| arcusmedia | 3 |
+| lynx | 3 |
+| dragonforce | 3 |
+| Keymous | 3 |
+| Inconnu | 3 |
+| thegentlemen | 3 |
+| lockbit5 | 3 |
+| akira | 2 |
+| ransomhouse | 2 |
+| Jabaroot DZ | 2 |
+| B4baYega | 2 |
+| mrdump, publication sur un forum cybercriminel (DarkForums) | 2 |
+| Evil_BYTE_Officiel | 2 |
+| KaruHunters | 2 |
+| direwolf | 2 |
+| Non précisé | 2 |
+| obscura | 2 |
+| radar | 2 |
+| tengu | 2 |
+| nova | 2 |
+| apt73 | 1 |
+| fog | 1 |
+| flocker | 1 |
+| hunter | 1 |
+| play | 1 |
+| MisterSam | 1 |
+| Ghudra | 1 |
+| oblivion666 | 1 |
+| crypto24 | 1 |
+| Killer_Bee | 1 |
+| p4xar | 1 |
+| cicada3301 | 1 |
+| gunra | 1 |
+| arkana | 1 |
+| everest | 1 |
+| Datacarry | 1 |
+| worldleaks | 1 |
+| cache | 1 |
+| TajineSec / Tajinesec_MA (revendication publiée) | 1 |
+| 0x0day, publication postée sur le forum cybercriminel DarkForums | 1 |
+| RiseAgainLuigi & B4baYega | 1 |
+| mrdump (canal Telegram « Server dump ») | 1 |
+| KickingPigs | 1 |
+| mrdump (publication sur le canal Telegram « Server dump ») | 1 |
+| MdHackersArmy (publication postée par Doxeur23azi sur un forum cybercriminel, DarkForums) | 1 |
+| Hepd | 1 |
+| sanji_shi5 (compte source) | 1 |
+| d4rk4rmy | 1 |
+| Mercobyte | 1 |
+| Gh1nDar | 1 |
+| Wieko | 1 |
+| RainbowDF | 1 |
+| Chucky_BF | 1 |
+| N1KA | 1 |
+| GhostCrawl | 1 |
+| BIGBROTHER | 1 |
+| Fire Wire | 1 |
+| Tanaka | 1 |
+| yurei | 1 |
+| privilege, publication sur un forum cybercriminel | 1 |
+| privilege | 1 |
+| BlackShrantac | 1 |
+| KILLUAX | 1 |
+| beast | 1 |
+| brotherhood | 1 |
+| medusa | 1 |
+| blackshrantac | 1 |
+| DBhacker_BF | 1 |
+| EternalRed | 1 |
+| Spirigatito, publication postée sur un forum cybercriminel | 1 |
+| stormous | 1 |
+| anisanas2 | 1 |
+| benzona | 1 |
+| RL000 | 1 |
+| kazu | 1 |
+| GhostVector (compte source) | 1 |
+| camillabf, publication sur un forum cybercriminel (RaidForums) | 1 |
+| LindaBF, publication sur un forum cybercriminel (RaidForums) | 1 |
 
-### 📊 3.1. Répartition par groupe (Top 10)
+## 7. Classification
 
-```mermaid
-pie title Top 10 ransomware groups (by claims)
-    "qilin (11)" : 11
-    "devman (10)" : 10
-    "incransom (8)" : 8
-    "funksec (7)" : 7
-    "nightspire (9)" : 9
-    "killsec (6)" : 6
-    "Dark 07x Team (4)" : 4
-    "clop (4)" : 4
-    "ransomhub (4)" : 4
-    "warlock (4)" : 4
-    "Others (82)" : 82
-```
----
+| Type | Incidents |
+|---|---:|
+| Ransomware | 122 |
+| Data Leak | 71 |
+| Access Sale | 3 |
 
-## 🌍 4. Analyse géographique & régionale
+## 8. Lecture CTI et priorités SOC
 
-### 🌍 4.1 Pays les plus touchés (Top 10 et autres)
+La concentration des fiches sur quelques pays reflète d’abord l’accès aux sources publiques. Les équipes SOC doivent conserver une veille des accès distants, protéger les sauvegardes, contrôler les comptes privilégiés et préparer la réponse aux revendications de données.
 
-Le paysage de l'année 2025 montre une forte concentration de l'activité des ransomwares sur quelques hubs économiques majeurs. Le trio de tête (Afrique du Sud, Égypte et Maroc) représente à lui seul plus de **53 %** du total des revendications sur le continent.
+## Conclusion
 
-### 🏆 Top 10 des pays les plus touchés
+Le bilan 2025 couvre 196 fiches documentées. Les limites de preuve et les éventuelles doubles revendications doivent rester visibles dans toute interprétation.
 
-| Rang | Pays | Revendications |
-| :--- | :--- | :---: |
-| 1 | 🇿🇦 **Afrique du Sud** | 29 |
-| 1 | 🇪🇬 **Égypte** | 29 |
-| 3 | 🇲🇦 **Maroc** | 21 |
-| 4 | 🇳🇬 **Nigeria** | 12 |
-| 4 | 🇹🇳 **Tunisie** | 12 |
-| 6 | 🇰🇪 **Kenya** | 8 |
-| 7 | 🇩🇿 **Algérie** | 7 |
-| 8 | 🇿🇲 **Zambie** | 4 |
-| 9 | 🇹🇿 **Tanzanie** | 3 |
-| 9 | 🇳🇦 **Namibie** | 3 |
-| 9 | 🇨🇮 **Côte d'Ivoire** | 3 |
-| - | *Autres (12 pays)* | 18 |
-| **Total** | | **149** |
-
-### 📊 4.2 Répartition géographique
-
-```mermaid
-pie title Top 10 des pays les plus ciblés - 2025
-    "🇿🇦Afrique du Sud (29)" : 29
-    "🇪🇬Egypte (29)" : 29
-    "🇲🇦Maroc (21)" : 21
-    "🇳🇬Nigeria (12)" : 12
-    "🇹🇳Tunisie (12)" : 12
-    "🇰🇪Kenya (8)" : 8
-    "🇩🇿Algerie (7)" : 7
-    "🇿🇲Zambie  (4)" : 4
-    "🇹🇿Tanzanie (3)" : 3
-    "🇳🇦Namibie  (3)" : 3
-    "🇨🇮Côte d'Ivoire (3)" : 3
-    "Others (12)" : 18
-```
-```mermaid
-xychart-beta
-    title "Top 10 countries (by claims)"
-    x-axis ["🇿🇦 ", "🇪🇬 ", "🇲🇦 ", "🇳🇬 ", "🇹🇳 ", "🇰🇪 ", "🇩🇿 ", "🇿🇲 ", "🇹🇿", "🇳🇦 ", "🇨🇮"]
-    y-axis "Claims" 0 --> 35
-    bar [29,29,21,12,12,8,7,4,3,3,3]
-```
-
-### 📍4.3 Autres pays touchés (1‑2 revendications)
-
-Bien que les hubs principaux concentrent la majorité des attaques, une grande variété d'autres nations apparaît de plus en plus sur les sites de fuite des ransomwares, totalisant **18 revendications supplémentaires**.
-
-| Pays | Revendications |
-| :--- | :---: |
-| 🇬🇭 **Ghana** | 2 |
-| 🇺🇬 **Ouganda** | 2 |
-| 🇧🇼 **Botswana** | 2 |
-| 🇹🇬 **Togo** | 2 |
-| 🇿🇼 **Zimbabwe** | 2 |
-| 🇲🇺 **Maurice** | 2 |
-| 🇲🇬 **Madagascar** | 1 |
-| 🇨🇩 **Congo (RDC)** | 1 |
-| 🇬🇦 **Gabon** | 1 |
-| 🇨🇲 **Cameroun** | 1 |
-| 🇸🇳 **Sénégal** | 1 |
-| 🇷🇼 **Rwanda** | 1 |
-
-#### 📊 4.3.1 Visualisation de la "longue traîne"
-```mermaid
-pie title Répartition des pays (1-2 revendications)
-    "Ghana" : 2
-    "Ouganda" : 2
-    "Botswana" : 2
-    "Togo" : 2
-    "Zimbabwe" : 2
-    "Maurice" : 2
-    "Autres (6 pays)" : 6
-```
-
-### 4.4 Synthèse par région
-Ce tableau récapitule la distribution géographique des 149 cyberattaques recensées par le projet *AFRINTEL* sur le continent africain au cours de l'année 2025.
-
-L'analyse par grandes zones géographiques révèle une concentration majeure de la menace sur la partie septentrionale du continent, portée par l'activité intense en **Égypte** et au **Maroc**.
-
-| Région | Nombre d'attaques | Part (%) |
-| :--- | :---: | :---: |
-| **Afrique du Nord** | 69 | 46.3% |
-| **Afrique Australe** | 43 | 28.9% |
-| **Afrique de l'Ouest** | 21 | 14.1% |
-| **Afrique de l'Est** | 14 | 9.4% |
-| **Afrique Centrale** | 2 | 1.3% |
-| **Total** | **149** | **100%** |
-
-#### 📊 Répartition de la menace par région
-```mermaid
-pie title Répartition Régionale des Ransomwares
-    "Afrique du Nord (69)" : 69
-    "Afrique Australe (43)" : 43
-    "Afrique de l'Ouest (21)" : 21
-    "Afrique de l'Est (14)" : 14
-    "Afrique Centrale (2)" : 2
-```
----
-
-## 🏢 5. Analyse sectorielle
-Les secteurs technologiques et administratifs restent les cibles prioritaires pour l'extorsion de données.
-### 5.1 Top 15 des secteurs les plus ciblés
-| Rang | Secteur d'activité | Nombre d'attaques |
-| :--- | :--- | :---: |
-| 1 | 💻 **Technologies** | 22 |
-| 2 | 🏛️ **Administrations publiques** | 21 |
-| 3 | 💰 **Finance** | 18 |
-| 4 | 🎓 **Éducation** | 16 |
-| 5 | 🏥 **Santé** | 12 |
-| 6 | 🚚 **Logistique** | 10 |
-| 7 | 🛒 **Commerce de détail** | 8 |
-| 8 | 🌾 **Agroalimentaire** | 7 |
-| 9 | 🏗️ **Industrie manufacturière** | 6 |
-| 9 | 📞 **Télécommunications** | 6 |
-|11 |	**Assurances**	  | 5 |
-|11 |	**Banque**	  | 5 |
-|13 |	**Construction**	  | 3 |
-|13 |	**Énergie**	  | 3 |
-|13 |	**Services aux entreprises**	| 3 |
-
-
-```mermaid
-pie title Top 10 des secteurs les plus ciblés - 2025
-    "Technologies (22)" : 22
-    "Administration Publique (21)" : 21
-    "Finance (18)" : 18
-    "Éducation (16)" : 16
-    "Santé (12)" : 12
-    "Logistique (10)" : 10
-    "Commerce de détail (8)" : 8
-    "Agro-industrie (7)" : 7
-    "Télécommunications (6)" : 6
-    "Industrie (6)" : 6
-    "Autres (23)" : 23
-```
----
-
-## 💾 6. Incidents majeurs & doubles revendications
-
-### 6.1 Top 5 des exfiltrations de données
-| Victime | Pays | Groupe | Volume |
-| :--- | :---: | :--- | :--- |
-| **NSSF Kenya** | 🇰🇪 | devman | **2,5 To** |
-| **INTELS Nigeria** | 🇳🇬 | ransomhub | 1,5 To |
-| **DGID Sénégal** | 🇸🇳 | BlackShrantac | 1 To |
-| **SPEED Co** | 🇪🇬 | hunter4 | 444,8 Go |
-| **INI Investments** | 🇪🇬 | nightspire | 400 Go |
-
-#### 📊 6.1.1 Comparaison des volumes de données
-```mermaid
-pie title Répartition des fuites majeures (Volume)
-    "🇰🇪 NSSF Kenya (2.5 To)" : 2500
-    "🇳🇬 INTELS Nigeria (1.5 To)" : 1500
-    "🇸🇳 DGID Senegal (1 To)" : 1000
-    "🇪🇬 SPEED Co (444 Go)" : 444
-    "🇪🇬 INI Investments (400 Go)" : 400
-```
-### 6.2 Phénomène de double revendication
-| Victime | Pays | 1er groupe | 2ème groupe |
-| :--- | :---: | :--- | :--- |
-| **Hopital La Rabta** | 🇹🇳 | devman (12/12) | qilin (26/12) |
-| **Netstar South Africa** | 🇿🇦 | devman (23/05) | incransom (20/08) |
-| **Proplastics Limited** | 🇿🇼 | thegentlemen (09/09) | lockbit5 (26/12) |
-
-## 📌 7. Points saillants 2025
-
-L'année 2025 a été marquée par une intensification des opérations de double extorsion. Voici les éléments majeurs à retenir :
-
-* 🚀 **Pic d'activité** : Octobre, avec **17 attaques** recensées.
-* 📉 **Mois le moins actif** : Février (**08 attaques**).
-* 🏆 **Acteur dominant** : `Qilin` avec **11 attaques** documentées.
-* 📍 **Pays le plus ciblé** : L'Afrique du Sud & Egypte (**29 cyberattaques** chacun).
-* 💻 **Secteur le plus ciblé** : Technologies (**22 attaques**) puis Administrations publiques (**21**).
-* 💾 **Plus grande exfiltration** : **2,5 To** de données dérobées à la NSSF Kenya.
-* 💰 **Rançon record** : **4,5 M$** réclamés à la NSSF Kenya.
-
----
-
-## 📊 8. Faits et chiffres clés
-
-Cette section résume les données consolidées du projet *AFRINTEL* pour l'ensemble de l'exercice.
-
-* **Total des revendications** : **149** (correspondant à **146 victimes uniques**, 3 organisations ayant été ciblées deux fois).
-* **Groupe le plus prolifique** : `qilin` (**11 revendications**).
-* **Mois le plus actif** : Octobre (**17 revendications** validées).
-* **Pays les plus ciblés** : Afrique du Sud et Égypte (**29 chacun**).
-* **Plus importante fuite de données** : NSSF Kenya - **2,5 To** (attribué à `devman`).
-* **Demande de rançon la plus élevée** : NSSF Kenya - **4,5 millions de dollars**.
-* **Secteurs sous pression** : Technologies, administration publique et finance.
-* **Dominance régionale** : L'**Afrique du Nord** concentre **46 %** de toutes les attaques du continent (**69 revendications**).
----
-
-### ✍🏿 Auteur
-**Adama ASSIONGBON** *Consultant SOC & Cyber Threat Intelligence* [Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
-***AFRINTEL*** - *Initiative ouverte de veille CTI sur l’Afrique*
+**AFRINTEL** — TLP:CLEAR

@@ -4,11 +4,26 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa: October 2024: List of 8 Victims
+# Cyber Attacks in Africa: October 2024: List of 12 Victims
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
 ## October 2024
+
+### October 3, 2024
+
+#### 🇲🇬 Madagascar - University of Antananarivo (univ-antananarivo.mg)
+- **Incident type:** Data Leak
+- **Actor / Group:** RainbowBF
+- **Sector:** Education / Higher Education
+- **Website:** [univ-antananarivo.mg](https://www.univ-antananarivo.mg)
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim description:** The University of Antananarivo is Madagascar's oldest and largest public university, comprising multiple faculties and higher-education institutes in the capital region.
+- **Analysis:** AFRINTEL reviewed a forum listing on the Breached platform, posted by the account RainbowBF on 3 October 2024, titled "Madagascar univ-antananarivo.mg Database Access" and tagged under the platform's "Breached" content category. The underlying content is paywalled behind the forum's internal credit system and was not unlocked by AFRINTEL; no database export, record screenshot or other verifiable sample was accessible during collection. AFRINTEL treats this as an unconfirmed claim of database access and does not confirm the existence, scope or authenticity of any underlying data. Given the university's status as Madagascar's principal public higher-education institution, a genuine compromise would carry a material risk of exposure of student and staff personal data; this risk cannot currently be assessed due to the absence of accessible evidence. AFRINTEL does not reproduce any content from the forum listing beyond its title and metadata.
+
+----------------------------
 
 ### October 4, 2024
 
@@ -16,7 +31,9 @@
 - **Ransomware group:** ransomhub
 - **Sector:** Information Technologies Consulting
 - **Website:** [enterpriseoutsourcing.com](https://www.enterpriseoutsourcing.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 2
 - **Victim description:** Enterpriseoutsourcing is a South African organisation operating in the information technologies consulting sector.
 
 ----------------------------
@@ -27,7 +44,9 @@
 - **Ransomware group:** ransomhub
 - **Sector:** Education / Schools
 - **Website:** [winwinza.com](https://www.winwinza.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 3
 - **Victim description:** Winwinza is a South African organisation operating in the education sector.
 
 ----------------------------
@@ -38,10 +57,25 @@
 - **Ransomware group:** killsec
 - **Sector:** Technologies / Mobility & Delivery
 - **Website:** [yassir.com](https://www.yassir.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 2
 - **Victim description:** Yassir is an Algerian super-app providing ride-hailing, delivery, grocery, and digital services in Algeria and across regional markets.
 
 ----------------------------
+
+### October 9, 2024
+
+#### 🇳🇬 Nigeria - Unidentified healthcare facilities provider
+- **Actor / Group:** Tanaka
+- **Sector:** Healthcare / Medical Services
+- **Website:** Not identified
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim description:** The source describes an unidentified Nigerian healthcare facilities provider operating across multiple facilities. The organization name and the affected facilities could not be established from the source material.
+- **Analysis:** A forum publication by Tanaka dated 9 October 2024 claims that approximately 130,000 patient records from multiple Nigerian healthcare facilities were leaked by the actor grep/cn. The local workbook supplied for analysis contains 84 data rows, not 129,825 or 130,000 rows, so the advertised volume cannot be independently confirmed from the available file. The workbook contains patient-related fields including names, identifiers, telephone numbers, age, dates of birth, sex, marital status and facility-related identifiers; raw records were not reproduced. The evidence supports a healthcare data-exposure claim with a high potential impact, but the exact provider, facility scope, acquisition method, completeness and total volume remain unknown.
 
 ### October 9, 2024
 
@@ -49,7 +83,9 @@
 - **Ransomware group:** sarcoma
 - **Sector:** Mining / Industrial Equipment
 - **Website:** [gmgminingsupplies.com](https://gmgminingsupplies.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 2
 - **Victim description:** GMG Mining Machines and Supplies is a South African company specialised in the supply, reconstruction, and rental of mining equipment, rail-less mobile machines, parts, and associated services.
 
 ----------------------------
@@ -60,8 +96,11 @@
 - **Ransomware group:** sarcoma
 - **Sector:** Industry / Industrial Supplies
 - **Website:** [nationaledging.com](https://nationaledging.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Very High
+- **Impact level:** Level 3
 - **Victim description:** National Edging is a South African company specialised in the supply of edgebanding, adhesives, finishing materials, and industrial components for the furniture, kitchen, and fitment sectors.
+- **Analysis:** AFRINTEL reviewed a local sample of documents consistent with the claim made by the threat actor sarcoma, comprising full passport scans of at least three individuals (two South African nationals and one Indian national holding a UAE residence permit), a signed contract with Freitan Group of Companies (Pty) Ltd bearing a financial director's signature, a corporate travel-booking form referencing the legal entity National Converting Agencies (Pty) Ltd, an email address on the nationaledging.co.za domain and a South African passport and identity number, and a delivery note documenting a shipment of edging and glue products between company branches (Gauteng) with onward collection referenced in Zimbabwe. The direct reference to the nationaledging.co.za domain, together with internally consistent corporate identity (National Converting Agencies/National Edging), signed contractual material and multiple full identity documents, supports a very high confidence assessment of a genuine internal compromise. The exposure of full passport and national identity data for multiple individuals, together with signed contracts and logistics records extending into a cross-border (Zimbabwe) supply chain, creates a significant risk of identity fraud, document forgery and targeted social engineering against employees, business partners and travellers associated with the company. AFRINTEL does not reproduce any name, passport number, identity number, date of birth or contact detail from the reviewed sample.
 
 ----------------------------
 
@@ -71,7 +110,9 @@
 - **Ransomware group:** blacksuit
 - **Sector:** Energy / Electricity Generation
 - **Website:** [vra.com](https://www.vra.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 3
 - **Victim description:** The Volta River Authority (VRA) is Ghana's main public electricity producer, responsible for hydroelectric and thermal power plants and strategic energy infrastructure.
 
 ----------------------------
@@ -82,8 +123,48 @@
 - **Ransomware group:** killsec
 - **Sector:** Government / Ministry of Interior
 - **Website:** [moi.gov.ly](https://www.moi.gov.ly)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 3
 - **Victim description:** The Libyan Ministry of Interior is the government institution responsible for internal security, police forces, and the management of the country's administrative and security affairs.
+
+----------------------------
+
+### October 17, 2024
+
+#### 🇩🇿 Algeria - Ministry of National Education (education.gov.dz)
+- **Actor / Group:** Moroccan Empire; reposted by AmeliaBeaumont on a cybercriminal forum
+- **Sector:** Government / National Education
+- **Website:** [education.gov.dz](https://www.education.gov.dz)
+- **Claimed initial leak date:** October 6, 2022
+- **Date of the reviewed post:** October 17, 2024 (the post directly includes a link to the original dump, first shared on September 18, 2023)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim Description:** The Ministry of National Education is the Algerian administration responsible for the public education system. The post claims the theft of a database containing information on approximately 90,000 students, including administrator accounts and login credentials.
+- **Analysis:** The account AmeliaBeaumont published, on October 17, 2024, a claim describing an intrusion attributed to the actor "Moroccan Empire" and dated October 6, 2022. As the original download link (a .onion address on a leak forum) was no longer working, the post directly includes a link to the dump, first shared on September 18, 2023, which displays a SQL/CSV sample with a field schema including: birth certificate number, contract type, institution, commune, last name, first name (in French and Arabic), date of birth, place of birth, insurance number, phone number, diploma, specialty, account credentials (`compte`, `cle`), email address, and a plaintext password field. At least two complete records are visible in the sample, containing names, dates of birth, phone numbers, an email address and a plaintext password tied to identified individuals.
+
+  The presence of a schema consistent with a school administrative management system, including identity, schooling and plaintext login data, supports a high confidence level regarding authentic access to a database of the ministry or an affiliated institution. The total claimed volume of 90,000 students could not be independently verified beyond the observed sample. The fact that the same dump remains shared and referenced more than two years after the initially claimed leak indicates prolonged recirculation of this dataset. The exposure of plaintext passwords, combined with identity and schooling data, creates a high risk of account takeover, identity theft and targeted phishing against students, their families and administrative staff. AFRINTEL does not reproduce any name, date of birth, phone number, email address, password or other personal data from the reviewed sample.
+
+----------------------------
+
+### October 21, 2024
+
+#### 🇲🇦 Morocco - Al Massira University Residences
+- **Actor / Group:** bxxxx1
+- **Sector:** Education / Student Accommodation
+- **Website:** [ruam.ma](https://ruam.ma)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+
+- **Description:**
+  Al Massira University Residences provide student accommodation in Kenitra. The network includes the Al Massira 1, Al Massira 2 and Al Massira 3 residences near the city’s higher education institutions.
+
+- **Analysis:**
+  A cybercriminal-forum post attributed to bxxxx1 presents email addresses associated with people who searched for or applied for accommodation through the Al Massira University Residences platform. The actor claims the data was obtained after logging into the `ruam.ma` control panel, suggesting possible compromise of an administrative account or management interface; however, the screenshot provides no technical evidence identifying the access method. The visible sample contains email addresses only, mostly from public mail services with some university, administrative or professional domains. No passwords, identity numbers, telephone numbers, student documents or financial information are visible. The post states that the data was extracted in October 2024 and includes a text-file download link and an archive or access password, neither of which AFRINTEL reproduces. No total record count, file size, price or deadline is stated, and the screenshot does not establish whether the visible list is complete. The addresses could support targeted phishing impersonating student accommodation services, fraudulent admission or payment notifications, and password-spraying target lists. Since no passwords are visible, direct account compromise cannot be inferred from the sample.
 
 ----------------------------
 
@@ -93,7 +174,9 @@
 - **Ransomware group:** raworld
 - **Sector:** Legal Consulting / Law Firm
 - **Website:** [matoukbassiouny.com](https://www.matoukbassiouny.com)
-- **Status:** Claimed & Data Leak
+- **Status:** Claim - Unverified
+- **Confidence level:** Low
+- **Impact level:** Level 2
 - **Victim description:** Matouk Bassiouny is a prominent Egyptian law firm based in Cairo, recognised for corporate law, arbitration, litigation, and legal advisory services.
 
 ----------------------------

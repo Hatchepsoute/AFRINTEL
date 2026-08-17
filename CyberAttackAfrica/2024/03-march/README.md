@@ -8,24 +8,25 @@
 
 ## 1. EXECUTIVE SUMMARY
 
-The month of March 2024 was marked by sustained threat actor activity from ransomware groups targeting critical infrastructure, financial institutions, and major public sector entities across the African continent. In total, **7 critical incidents** were officially recorded and analyzed within the scope of the AFRINTEL project.
+The month of March 2024 was marked by sustained threat actor activity from ransomware groups targeting critical infrastructure, financial institutions, and major public sector entities across the African continent, alongside one unattributed data leak claim against a higher-education institution. In total, **8 critical incidents** were officially recorded and analyzed within the scope of the AFRINTEL project.
 
-Cybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia** and **Namibia**.
+Cybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia**, **Namibia** and **Morocco**.
 
 ### Key Indicators - March 2024
-* **Total Validated Victims:** 7
-* **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack).
-* **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1).
+* **Total Validated Victims:** 8
+* **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack), plus 1 unattributed data leak claim (ESGC.MA, Morocco).
+* **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1), Education / Higher Education (1).
 
 ---
 
 ## 2. THREAT ACTOR LANDSCAPE (RANSOMWARE)
 
-Three organized cybercrime syndicates account for all the claimed attacks this month:
+Three organized cybercrime syndicates account for the seven ransomware-attributed attacks this month, alongside one additional unattributed data leak claim tracked separately below:
 
-1. **LockBit 3.0 (42.8% of attacks):** Despite suffering international law enforcement disruptions (Operation Cronos) earlier in 2024, the LockBit franchise demonstrates significant resilience across the African continent, striking 4 prominent entities through its active network of affiliates.
-2. **RansomHub (28.6% of attacks):** This emerging threat group confirms its rapid rise in power, specifically targeting high-visibility energy infrastructure and digital media outlets in Egypt.
-3. **Hunters International (14.3% of attacks):** An opportunistic threat actor exploiting the Hive ransomware codebase, identified this month targeting the North African financial services sector.
+1. **LockBit 3.0 (50% of incidents):** Despite suffering international law enforcement disruptions (Operation Cronos) earlier in 2024, the LockBit franchise demonstrates significant resilience across the African continent, striking 4 prominent entities through its active network of affiliates.
+2. **RansomHub (25% of incidents):** This emerging threat group confirms its rapid rise in power, specifically targeting high-visibility energy infrastructure and digital media outlets in Egypt.
+3. **Hunters International (12.5% of incidents):** An opportunistic threat actor exploiting the Hive ransomware codebase, identified this month targeting the North African financial services sector.
+4. **Unattributed data leak claim (12.5% of incidents):** A March 26, 2024 forum post by the account UnknownMember claims a 2021 database sample from the Higher School of Commerce and Management (ESGC.MA) in Morocco. This is a data leak claim rather than a ransomware incident and is not attributed to any of the three groups above.
 
 ---
 
@@ -86,6 +87,17 @@ Three organized cybercrime syndicates account for all the claimed attacks this m
 
 ---
 
+### 🗓️ March 26, 2024
+#### 🇲🇦 Morocco - Higher School of Commerce and Management (ESGC.MA)
+* **Incident Identifier:** AFRINTEL-2024-TBD
+* **Actor / Group:** Unattributed, publication by the forum account UnknownMember
+* **Work Sector:** Education / Higher Education
+* **Website:** [esgc.ma](https://esgc.ma)
+* **Attack Status:** Claim with a published data sample; not attributed to a ransomware group.
+* **Description & Context:** ESGC.MA is presented as a Moroccan higher-education institution focused on commerce and management. A forum post dated March 26, 2024 claims a 2021 database of approximately 500 entries, with a displayed sample showing names, email addresses, password hashes, phone numbers and account-creation dates. The complete dataset and the underlying compromise are not independently verified. AFRINTEL does not reproduce personal data or credentials from the sample.
+
+---
+
 ### 🗓️ March 29, 2024
 #### 🇪🇬 Egypt - PGESCo (Power Generation Engineering and Services Company)
 * **Incident Identifier:** AFRINTEL-2024-13908
@@ -116,6 +128,7 @@ In light of the observed tactics, techniques, and procedures (TTPs) utilized by 
 2. **Perimeter Hardening against RansomHub:** As this group frequently leverages compromised legitimate credentials or known unpatched vulnerabilities on edge servers, a comprehensive external asset scan (via Shodan/Censys) is urgently required.
 3. **Strict Network Segmentation:** Isolate industrial control systems (OT/SCADA) or critical production environments (such as manufacturing lines or secure printing networks) from corporate office networks.
 4. **Persistence Detection Engineering:** Monitor for anomalous PowerShell execution patterns and the unauthorized use of dual-use administration utilities (Living-off-the-Land) such as AnyDesk, NetSupport, or Rclone used for data staging and exfiltration.
+5. **Web Application & Credential Hygiene (Education Sector):** For platforms handling student and staff personal data, such as the claim affecting ESGC.MA, enforce strong password hashing (bcrypt/Argon2), rotate credentials on any confirmed exposure, and monitor for redistribution of the claimed dataset across other cybercriminal forums.
 
 ---
 

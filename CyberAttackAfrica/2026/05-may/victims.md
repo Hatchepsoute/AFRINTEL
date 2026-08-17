@@ -29,6 +29,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Actor / Group:** XOverStm (via the [Citizen] forum)
 - **Sector:** Personal Data Aggregation
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** Not specified
 
 - **Description:**
@@ -70,6 +71,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Actor / Group:** bigF
 - **Sector:** Education / University
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Website:** [mans.edu.eg](https://www.mans.edu.eg) ; [gu.edu.eg](https://gu.edu.eg)
 - **Description:**
   A threat actor claims to possess approximately **37 GB** of databases linked to Egyptian educational institutions and HR systems.
@@ -134,6 +136,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Actor / Group:** attackercompany (via the [Citizen] forum)
 - **Sector:** Human Resources / Recruitment
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Website:** Not specified (seller contact details intentionally omitted)
 - **Description:**
   A cybercriminal claims a massive leak of resume documents (*resume docs*) on a global scale. The data allegedly involves hundreds of thousands of individuals across more than 200 countries.
@@ -206,6 +209,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Sector:** Education / University
 - **Website:** [mans.edu.eg](https://www.mans.edu.eg)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**
   Mansoura University is one of the largest and oldest universities in Egypt, hosting a significant volume of student and academic data.
 - **Analysis:**
@@ -221,6 +225,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Targeted Organization :** SDTM - Groupe Barid Al-Maghrib
 - **Website :** [groupesdtm.com](https://www.groupesdtm.com/)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description :**  *SDTM* is a logistics subsidiary of Groupe Barid Al-Maghrib specializing in transportation, distribution, fleet management, and operational services supporting postal and financial activities in Morocco.
 - **Leak description :**
   On May 12, 2026, the threat actor Sejjil claimed the complete exposure of SDTM’s ERP and financial infrastructure. According to the post, the exposed dataset includes 129 structured CSV files originating from SAGE ERP systems, SMS gateways, banking data, and internal platforms linked to logistics and financial operations.
@@ -257,6 +262,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Sector:** Government / Administration
 - **Website :** [moe.gov.eg](https://moe.gov.eg/)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim description :**
   The Egyptian Ministry of Education is the governmental institution responsible for managing the national education system, including schools, student records, teachers, and digital educational platforms. On May 13, 2026, the threat actor *Revesky* claimed the leak of multiple databases totaling approximately 22.6 GB of data related to students, teachers, and administrators.
 - **Sample analysis :**
@@ -270,6 +276,7 @@ May 2026 includes **57 unique incidents**: **17 ransomware incidents** and **40 
 - **Targeted Platforms:** DHIS2 (District Health Information System)
 - **Website:** Not specified
 - **Status:** Claim - Unverified
+- **Incident type:** Access Sale
 - **Description:**
   DHIS2 is a widely used open-source platform deployed by Ministries of Health for health data management, epidemic surveillance and vaccination program monitoring.
 - **Analysis:**
@@ -309,6 +316,7 @@ Such a compromise could potentially allow:
 - **Sector:** Government / Administration
 - **Website:** [ephraimmogalelm.gov.za](https://www.ephraimmogalelm.gov.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**
   Ephraim Mogale Local Municipality is a South African local government authority responsible for public administration, municipal services management, and local development within Limpopo Province.
 - **Analysis:**
@@ -320,6 +328,7 @@ Such a compromise could potentially allow:
 - **Sector:** Education / University
 - **Website:** [bellavista.org.za](https://www.bellavista.org.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   Bellavista School is a South African educational institution specializing in learning support and educational assistance for students with specific learning needs.
 - **Analysis:**
@@ -347,6 +356,7 @@ Such a compromise could potentially allow:
 - **Targeted Organization :** Professional Academy for Teachers (PAT)
 - **Website :** [pat.edu.eg](https://pat.edu.eg)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim description :**
   The Professional Academy for Teachers (PAT), an Egyptian institution linked to the Ministry of Education responsible for teacher accreditation, training, and educational management, was claimed by the threat actor INT3X.
   The actor claims to possess between 8 and 10 GB of compressed data and more than 80 GB of uncompressed files, including information related to approximately 1.2 million teachers, STEM students, academic content, MSSQL backups, Microsoft Access databases, identity photographs, and administrative records.
@@ -359,6 +369,7 @@ Such a compromise could potentially allow:
 - **Sector:** Government / Administration
 - **Website:** [dcs.gov.za](https://www.dcs.gov.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**
   The Department of Correctional Services (DCS) is the South African government agency responsible for correctional facilities, inmate rehabilitation, and prison administration nationwide.
 - **Analysis:**
@@ -372,6 +383,7 @@ Such a compromise could potentially allow:
 - **Actor / Group:** cc5ab
 - **Sector:** Government / Administration
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Website:** [lsb.go.ke](https://www.lsb.go.ke)
 - **Description:**
   A threat actor claims to have compromised the Land Surveyors Board of Kenya (LSB), the Kenyan government body responsible for regulating and licensing land surveyors.
@@ -396,6 +408,7 @@ Such a compromise could potentially allow:
 - **Sector:** Government / Administration
 - **Website:** [statssa.gov.za](https://www.statssa.gov.za/)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:** Statistics South Africa (Stats SA) is the official South African government agency responsible for collecting, processing and publishing national demographic, economic and social statistics.
 - **Analysis:**  The threat actor claims to possess approximately **154 GB** of data containing more than **453,000 files** allegedly linked to Stats SA. Shared samples include:
   - South African identity cards
@@ -403,12 +416,14 @@ Such a compromise could potentially allow:
   - CVs containing personal information
   - Census and fieldworker-related documents
   - Administrative and educational records
+- **Double-claim note:** These figures (154 GB, approximately 453,000 files) match the ransomware claim recorded on March 29, 2026 under the actor XP95, which included a $100,000 ransom demand and an April 20, 2026 public-sale deadline. This May publication carries no ransom demand and is recorded as a data leak, not ransomware. The close correspondence of volume and file count suggests Kazu is reselling or reposting the dataset originally claimed by XP95 rather than reporting an independent compromise; AFRINTEL cannot independently confirm the relationship between the two publications.
 
 #### 🇲🇦 Morocco - Multiple Moroccan Government Platforms
 - **Threat Actor / Group :** superstarkmc
 - **Sector:** Government / Administration
 - **Websites :**  [men.gov.ma](https://www.men.gov.ma) ; [tax.gov.ma](https://www.tax.gov.ma) ; [tgr.gov.ma](https://www.tgr.gov.ma)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim description :**  Multiple Moroccan government platforms related to education, taxation, treasury services, culture, justice, transport, and administrative services were referenced in a post claiming a large-scale credential leak. Mentioned domains include Massar, Moutamadris, Waliye, Tax.gov.ma, TGR, and several Moroccan administrative platforms.
   The threat actor claims to possess approximately 827,000 lines of data (~16 MB) and offers the access for sale.
 - **Sample analysis :**  The exposed data contains hundreds of credentials linked to Moroccan government services, including *@taalim.ma* email accounts, usernames, plaintext passwords, tax portals, educational administrative systems, HR services, recruitment platforms, school management portals, treasury services, and road infraction systems. Several entries appear to expose access to sensitive financial, educational, and administrative services.
@@ -487,6 +502,7 @@ Such a compromise could potentially allow:
 - **Sector:** Government / Administration
 - **Website:** [watiqa.ma](https://www.watiqa.ma)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**  Watiqa.ma is the official Moroccan platform allowing citizens to request civil registry and administrative documents online.
 - **Analysis:**   The threat actor claims to possess approximately **695,400 records** containing sensitive personal and family-related information, including names, birth dates, addresses, phone numbers and civil registry details.
   The exposed data could potentially be used for identity theft, administrative fraud, targeted phishing campaigns and social engineering operations targeting Moroccan citizens.
@@ -497,6 +513,7 @@ Such a compromise could potentially allow:
 - **Sector:** E-commerce / Retail
 - **Website:** [avito.ma](https://www.avito.ma)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**  Avito.ma is one of Morocco’s leading online marketplace and classified advertisement platforms, widely used by individuals and businesses.
 - **Analysis:**
   The threat actor claims to possess leaked Avito.ma user data, including email addresses, phone numbers, cities and passwords.
@@ -515,6 +532,7 @@ AFRINTEL did not conduct any authentication attempts or interaction with the aff
 - **Sector:** E-commerce / Retail
 - **Website:** [spacex.ma](https://spacex.ma)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Access Sale
 - **Description:**
   Spacex.ma is presented as a Moroccan online store platform.
 - **Analysis:**
@@ -565,6 +583,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Government / Administration
 - **Website:** [sita.co.za](https://www.sita.co.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**
   The State Information Technology Agency (SITA) is South Africa’s government IT agency responsible for delivering information technology services and digital infrastructure to public sector institutions.
 - **Analysis:**
@@ -578,6 +597,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Government / Administration
 - **Website:** [sars.gov.za](https://www.sars.gov.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**
   The South African Revenue Service (SARS) is South Africa's national tax authority, responsible for tax collection, customs administration, and fiscal services.
 - **Analysis:**
@@ -608,6 +628,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Healthcare / Medical
 - **Website:** [cervi.co.za](https://www.cervi.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   CERVI My Private Care is a South African digital healthcare platform used to manage and coordinate healthcare professionals, pharmacies, clinics, and other medical service providers.
 - **Analysis:**
@@ -624,6 +645,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Hospitality / Events
 - **Website:** [mevent.co.za](https://www.mevent.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   mevent. is a South African company specializing in event management, business travel, conferences, and MICE (Meetings, Incentives, Conferences & Events) services.
 - **Analysis:**
@@ -639,6 +661,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Government / Administration
 - **Website:** [sheriffrandburgwest.co.za](https://www.sheriffrandburgwest.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   Sheriff Randburg West is an official South African sheriff's office responsible for the enforcement of court orders, service of legal documents, and other judicial procedures.
 - **Analysis:**
@@ -678,6 +701,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Actor / Group:** Databasehooligan
 - **Sector:** Human Resources / Recruitment
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [keejob.com](https://www.keejob.com)
 - **Description:**
   A threat actor is offering for sale, for **$ 1,400**, a database allegedly associated with the Tunisian recruitment platform Keejob. According to the advertisement, the dataset contains approximately **137,000 records** related to contacts, email campaigns, and job applications.
@@ -690,6 +714,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Actor / Group:** Databasehooligan
 - **Sector:** Telecommunications
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [mytelnet.tn](https://www.mytelnet.tn)
 - **Description:**  A cybercriminal is offering for sale a database allegedly originating from Tunisian ISP MyTelnet for **USD 1,100**. According to the advertisement, the dataset contains customer information, product usage profiles, and detailed demographic records related to subscribers.
 - **Analysis:**
@@ -703,6 +728,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Industry / Automotive / Manufacturing
 - **Website:** [midas.co.za](https://www.midas.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   MIDAS is a South African company specializing in automotive parts distribution, accessories, and logistics solutions for businesses and consumers.
 - **Analysis:**
@@ -720,6 +746,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Sports / Federations
 - **Website:** [wanderers.co.za](https://www.wanderers.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 
 - **Description:**
   The Wanderers Club is one of South Africa’s leading sports and recreational clubs, offering a wide range of sporting activities, memberships, and events for its members.
@@ -740,6 +767,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Telecommunications
 - **Website:** [telkom.co.za](https://www.telkom.co.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Description:**
   Telkom is one of South Africa’s leading telecommunications operators, providing fixed-line, mobile, broadband, fiber, and digital services to both residential and business customers.
 - **Analysis:**
@@ -757,6 +785,7 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Telecommunications
 - **Website:** [citexltd.com](https://www.citexltd.com)
 - **Status:** Claim - Unverified
+- **Incident type:** Data Leak
 - **Description:**  Citex Systems is an Egyptian telecommunications and ICT company providing network infrastructure, fintech solutions and technology services.
 - **Analysis:**
   The threat actor claims to have obtained access to multiple internal company databases, including employee records, project management information and corporate mailing data.

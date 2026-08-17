@@ -11,7 +11,7 @@
 | Data leaks and access sales | 40 | 40 | 0 (0.0%) |
 | Distinct countries after expanding multi-country records | 16 | 18 | +2 |
 
-The overall volume declined slightly. Data leaks and access sales remained flat, while ransomware publications fell from 20 to 17.
+Overall volume dipped slightly. Data leaks and access sales held flat, ransomware is where the drop came from, 20 down to 17.
 
 ## Country evolution
 
@@ -30,7 +30,7 @@ The overall volume declined slightly. Data leaks and access sales remained flat,
 | 🇪🇹 Ethiopia | 1 | 1 | 0 |
 | Multi-country records | 1 | 3 | +2 |
 
-Direct country labels account for 59 April records plus one multi-country record, and 54 May records plus three multi-country records.
+Direct country labels cover 59 April records plus one multi-country record, and 54 May records plus three multi-country records.
 
 ## Sector evolution
 
@@ -45,15 +45,15 @@ Direct country labels account for 59 April records plus one multi-country record
 | Human resources / Recruitment | 0 | 5 | +5 |
 | Telecommunications | 1 | 3 | +2 |
 
-Government / Administration represented 20 of the 57 May records. Human resources and recruitment appeared in 5 May records after no occurrence in April.
+Government/Administration took 20 of May's 57 records on its own. Human resources and recruitment went from zero in April to 5 in May.
 
 ## Actor evolution
 
-April was led by Grubder with 7 records, followed by Payload, APT73/BASHE and TheGentlemen with 4 each. May was led by Databasehooligan with 8, 404Crew with 5, TheGentlemen with 4 and NightSpire with 3.
+Grubder led April with 7, then Payload, APT73/BASHE and TheGentlemen tied at 4. May's lineup shifted: Databasehooligan at 8, 404Crew at 5, TheGentlemen at 4, NightSpire at 3.
 
 ## CTI assessment
 
-The monthly total remained close, but the distribution changed. Egypt and South Africa replaced Morocco as the main geographic concentrations. Government / Administration increased by five records, while Education / University declined by five.
+The monthly total held close, but where the activity landed changed. Egypt and South Africa took over from Morocco as the main geographic concentrations. Government/Administration gained five records while Education/University lost five, almost a direct swap.
 
 ## SOC priorities
 
@@ -64,6 +64,6 @@ The monthly total remained close, but the distribution changed. Egypt and South 
 
 ## Conclusion
 
-May recorded 57 incidents against 60 in April. The decrease came from ransomware, while leaks and access sales remained flat.
+May closed at 57 incidents against April's 60. Ransomware accounted for the drop; leaks and access sales stayed exactly flat.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

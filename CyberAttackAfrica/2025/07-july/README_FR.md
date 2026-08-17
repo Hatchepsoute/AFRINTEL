@@ -3,18 +3,18 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Rapport CTI : Cyberattaques en Afrique - Juillet 2025 (13 victimes)
+# Rapport CTI : Cyberattaques en Afrique - Juillet 2025 (20 victimes)
 👉🏾 [**English version available here**](./README.md)
 
 ## 1. Introduction
 Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de juillet 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
 ## 2. Résumé exécutif
-- **Nombre total d'attaques recensées** : 13
-- **Acteurs les plus actifs** : Dark 07x Team (5 attaques), Hepd (1), d4rk4rmy (1), nightspire (1), Keymous (1), lynx (1), devman (1), incransom (1), Mercobyte (1).
-- **Secteurs les plus ciblés** : Banque/Finance (4), Administrations publiques (3), Télécommunications (2), Éducation/Formation (2), Industrie minière (1), ONG (1).
-- **Pays les plus touchés** : Tunisie (5), Maroc (2), Nigeria (1), Afrique du Sud (1), Tanzanie (1), Kenya (1), Égypte (1), Namibie (1).
-- **Volumes de données exfiltrés notables** : Rançon de 2,27 M$ demandée pour eehc.gov.eg (Égypte). Autres volumes non précisés.
+- **Nombre total d'attaques recensées** : 21
+- **Acteurs les plus actifs** : Dark 07x Team (5 attaques), Hepd (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Wieko (1), sanji_shi5 (1), Inconnu (2), jrintel (1), Gh1nDar (1).
+- **Secteurs les plus ciblés** : Administrations publiques (6), Banque/Finance (4), Éducation/Formation (4), Télécommunications (2), Association professionnelle/Bâtiment (1), Industrie minière (1), Services postaux/financiers (1), Diplomatie/Gouvernement (1).
+- **Pays les plus touchés** : Tunisie (5), Maroc (4), Algérie (3), Nigeria (1), Afrique du Sud (1), Tanzanie (1), Kenya (1), Égypte (1), Namibie (1), Mauritanie (1), Érythrée (1).
+- **Volumes de données exfiltrés notables** : Rançon de 2,27 M$ demandée pour eehc.gov.eg (Égypte). FNBTP (Maroc) : base de données de 180 lignes / 14 colonnes publiée gratuitement. Ambassade d'Érythrée aux États-Unis : revendication non vérifiée portant sur environ 5 000 enregistrements de citoyens. Autres volumes non précisés.
 
 ## 3. Statistiques clés
 
@@ -24,68 +24,94 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | Dark 07x Team | 5                 |
 | Hepd          | 1                 |
 | d4rk4rmy      | 1                 |
+| Evil_BYTE_Officiel | 1            |
 | nightspire    | 1                 |
 | Keymous       | 1                 |
+| Phantom Atlas | 1                 |
 | lynx          | 1                 |
 | devman        | 1                 |
 | incransom     | 1                 |
 | Mercobyte     | 1                 |
-| **Total**     | **13**            |
+| Wieko         | 1                 |
+| sanji_shi5    | 1                 |
+| Inconnu       | 1                 |
+| jrintel       | 1                 |
+| Gh1nDar       | 1                 |
+| **Total**     | **20**            |
 
 ```mermaid
 pie title Répartition des attaques par acteur (juillet 2025)
     "Dark 07x Team" : 5
     "Hepd" : 1
     "d4rk4rmy" : 1
+    "Evil_BYTE_Officiel" : 1
     "nightspire" : 1
     "Keymous" : 1
+    "Phantom Atlas" : 1
     "lynx" : 1
     "devman" : 1
     "incransom" : 1
     "Mercobyte" : 1
+    "Wieko" : 1
+    "sanji_shi5" : 1
+    "Inconnu" : 2
+    "jrintel" : 1
+    "Gh1nDar" : 1
 ```
 ### 3.2 Répartition par secteur d'activité
 
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
+| Administrations publiques| 6 |
 | Banque / Finance| 4 |
-| Administrations publiques| 3 |
-| Éducation / Formation | 3 |
+| Éducation / Formation | 4 |
 | Télécommunications | 2 |
+| Association professionnelle / Bâtiment | 1 |
 | Industrie minière | 1 |
-| **Total** | **13** |
+| Services postaux / financiers | 1 |
+| Diplomatie / Gouvernement | 1 |
+| **Total** | **20** |
 
 ```mermaid
 pie title Répartition par secteur d'activité (Juillet 2025)
+    "Administrations publiques" : 6
     "Banque / Finance" : 4
-    "Administrations publiques" : 3
-    "Éducation / Formation" : 3
+    "Éducation / Formation" : 4
     "Télécommunications" : 2
+    "Association professionnelle" : 1
     "Industrie minière" : 1
+    "Services postaux / financiers" : 1
+    "Diplomatie / Gouvernement" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 |------|-------------------|
 | 🇹🇳 Tunisie | 5 |
-| 🇲🇦 Maroc | 2 |
+| 🇲🇦 Maroc | 4 |
+| 🇩🇿 Algérie | 2 |
 | 🇿🇦 Afrique du Sud | 1 |
 | 🇳🇬 Nigeria | 1 |
 | 🇹🇿 Tanzanie | 1 |
-| 🇰🇪 Kenya | 1 |
+| 🇰🇪 Kenya | 2 |
 | 🇪🇬 Égypte | 1 |
 | 🇳🇦 Namibie | 1 |
-| **Total** | **13** |
+| 🇲🇷 Mauritanie | 1 |
+| 🇪🇷 Érythrée | 1 |
+| **Total** | **20** |
 
 ```mermaid
 pie title Répartition par pays (Juillet 2025)
     "🇹🇳 Tunisie" : 5
-    "🇲🇦 Maroc" : 2
+    "🇲🇦 Maroc" : 4
+    "🇩🇿 Algérie" : 2
     "🇳🇬 Nigeria" : 1
     "🇿🇦 Afrique du Sud" : 1
     "🇹🇿 Tanzanie" : 1
-    "🇰🇪 Kenya" : 1
+    "🇰🇪 Kenya" : 2
     "🇪🇬 Égypte" : 1
     "🇳🇦 Namibie" : 1
+    "🇲🇷 Mauritanie" : 1
+    "🇪🇷 Érythrée" : 1
 ```
 
 ## 4. Détail des attaques par groupe/acteur
@@ -104,25 +130,38 @@ pie title Répartition par pays (Juillet 2025)
 ### 4.3 d4rk4rmy (1 attaque)
 - **08/07/2025** : MAFATE BUSINESS ENTERPRISE (Afrique du Sud, services miniers) – Revendication & divulgation.
 
-### 4.4 nightspire (1 attaque)
+### 4.4 Evil_BYTE_Officiel (1 attaque)
+- **09/07/2025** : Fédération Nationale du Bâtiment et des Travaux Publics - FNBTP (Maroc, association professionnelle/bâtiment) – Claim - Data Fully Published. Base de données d'adhérents de 180 lignes / 14 colonnes (table `societe`) publiée gratuitement sur un forum underground ; aucun prix ni demande de rançon.
+
+### 4.5 nightspire (1 attaque)
 - **13/07/2025** : Twaweza (Tanzanie, ONG éducative) – Revendication & divulgation.
 
-### 4.5 Keymous (1 attaque)
+### 4.6 Keymous (1 attaque)
 - **14/07/2025** : IWACLUB (Maroc, télécommunications/distribution) – Fuite de données.
 
-### 4.6 lynx (1 attaque)
+### 4.7 lynx (1 attaque)
 - **15/07/2025** : Adrian Kenya (Kenya, télécommunications/ingénierie) – Revendication & divulgation.
 
-### 4.7 devman (1 attaque)
+### 4.8 devman (1 attaque)
 - **15/07/2025** : eehc.gov.eg (Égypte, gouvernement) – Rançon de 2,27 M$ demandée.
 
-### 4.8 incransom (1 attaque)
+### 4.9 incransom (1 attaque)
 - **15/07/2025** : Otjiwarongo Municipality (Namibie, gouvernement local) – Revendication & divulgation.
 
-### 4.9 Mercobyte (1 attaque)
+### 4.10 Mercobyte (1 attaque)
 - **18/07/2025** : Université Mohammed VI Polytechnique (Maroc, éducation) – Fuite de données ciblée et opération d'influence.
 
-### 4.10 Graphe acteur → victime → pays
+### 4.11 Wieko (1 attaque)
+- **29/07/2025** : Ministère de l’Éducation nationale, du Préscolaire et des Sports (Maroc, éducation) – revendication de combo list étayée par un échantillon visible ; aucune compromission directe du SI central du ministère n’est établie.
+
+### 4.12 Inconnu (2 attaques)
+- **14/07/2025** : ICT Authority (Kenya, gouvernement/infrastructure numérique) – aucun acteur revendicateur identifié ; l'échantillon CSV fourni contient 1 697 lignes de type annuaire, examiné sans reproduire de données personnelles.
+- **15/07/2025** : Portail QCE - qce.gov.mr (Mauritanie, gouvernement/marchés publics) – aucun acteur revendicateur identifié ; échantillon local de dossiers de qualification de personnel (CV, cartes d'identité nationale, diplômes, contrats de travail notariés) daté à partir des métadonnées des fichiers en l'absence de date de publication.
+
+### 4.13 Gh1nDar (1 attaque)
+- **27/07/2025** : Ambassade d'Érythrée aux États-Unis (Érythrée, diplomatie/gouvernement) – Claim - Unverified. Revendication non vérifiée d'une fuite portant sur environ 5 000 enregistrements de citoyens ; aucun échantillon accessible.
+
+### 4.14 Graphe acteur → victime → pays
 ```mermaid
 graph LR
     Dark07["Dark 07x Team"] -->|Ministère des Finances| Tunisie1["🇹🇳 Tunisie"]
@@ -132,31 +171,39 @@ graph LR
     Dark07 -->|BH Bank| Tunisie5["🇹🇳 Tunisie"]
     Hepd -->|CIBN| Nigeria["🇳🇬 Nigeria"]
     d4rk4rmy -->|MAFATE| AfriqueSud["🇿🇦 Afrique du Sud"]
+    EvilByte["Evil_BYTE_Officiel"] -->|FNBTP| Maroc0["🇲🇦 Maroc"]
     nightspire -->|Twaweza| Tanzanie["🇹🇿 Tanzanie"]
     Keymous -->|IWACLUB| Maroc1["🇲🇦 Maroc"]
     lynx -->|Adrian Kenya| Kenya["🇰🇪 Kenya"]
     devman -->|eehc.gov.eg| Egypte["🇪🇬 Égypte"]
     incransom -->|Otjiwarongo| Namibie["🇳🇦 Namibie"]
     Mercobyte -->|UM6P| Maroc2["🇲🇦 Maroc"]
+    Wieko -->|Ministère Éducation| Maroc3["🇲🇦 Maroc"]
+    Inconnu -->|Portail QCE| Mauritanie["🇲🇷 Mauritanie"]
+    Gh1nDar -->|Ambassade d'Érythrée| Erythree["🇪🇷 Érythrée"]
 ```
 ## 5. Analyse sectorielle
 - **Banque/Finance** : 4 attaques (CIBN, BTK, Banque de Tunisie, BH Bank). Dark 07x Team a ciblé trois banques tunisiennes et Hepd a visé l'organisme de régulation nigérian, montrant une attention soutenue au secteur financier.
-- **Administrations publiques** : 3 attaques (eehc.gov.eg, Otjiwarongo Municipality, Ministère des Finances Tunisie). Les acteurs devman, incransom et Dark 07x Team ont frappé des institutions gouvernementales, avec une demande de rançon élevée pour l'Égypte.
-- **Éducation/Formation** : 3 attaques (Twaweza, ABF, UM6P). Nightspire a visé une ONG éducative en Tanzanie, Dark 07x Team une académie bancaire et Mercobyte une université de prestige au Maroc avec une opération d'influence.
+- **Administrations publiques** : 4 revendications (eehc.gov.eg, Otjiwarongo Municipality, Ministère des Finances tunisien, Portail QCE Mauritanie).
+- **Éducation/Formation** : 4 attaques (Twaweza, ABF, UM6P, Ministère de l’Éducation). La publication de Wieko annonce une combo list multi-établissements et n’établit pas une compromission du SI central du ministère.
 - **Télécommunications** : 2 attaques (IWACLUB, Adrian Kenya). Keymous et lynx ont ciblé des entreprises du secteur au Maroc et au Kenya.
+- **Association professionnelle/Bâtiment** : 1 attaque (FNBTP) par Evil_BYTE_Officiel, exposant une base de données d'adhérents de 180 lignes publiée gratuitement.
 - **Industrie minière** : 1 attaque (MAFATE) par d4rk4rmy en Afrique du Sud.
+- **Diplomatie/Gouvernement** : 1 revendication non vérifiée (Ambassade d'Érythrée aux États-Unis) par Gh1nDar, concernant la représentation diplomatique d'un État africain à l'étranger.
 
 ## 6. Analyse géographique
 - **Tunisie** : 5 attaques, toutes menées par Dark 07x Team, ciblant le gouvernement et le secteur bancaire. La Tunisie est le pays le plus touché du mois, avec une campagne coordonnée.
-- **Maroc** : 2 attaques (IWACLUB, UM6P) par Keymous et Mercobyte, touchant les télécoms et l'éducation.
+- **Maroc** : 4 revendications (FNBTP, IWACLUB, UM6P, Ministère de l’Éducation) impliquant Evil_BYTE_Officiel, Keymous, Mercobyte et Wieko.
 - **Nigeria** : 1 attaque (CIBN) par Hepd, visant l'organisme de régulation bancaire.
 - **Afrique du Sud** : 1 attaque (MAFATE) par d4rk4rmy dans le secteur minier.
 - **Tanzanie** : 1 attaque (Twaweza) par nightspire, touchant une ONG éducative.
 - **Kenya** : 1 attaque (Adrian Kenya) par lynx dans les télécoms.
 - **Égypte** : 1 attaque (eehc.gov.eg) par devman, avec une demande de rançon élevée.
 - **Namibie** : 1 attaque (Otjiwarongo Municipality) par incransom, visant une administration locale.
+- **Mauritanie** : 1 revendication non attribuée (Portail QCE), une plateforme publique de qualification du personnel et des entreprises, avec un échantillon examiné localement de CV, cartes d'identité nationale, diplômes et contrats de travail notariés.
+- **Érythrée** : 1 revendication non vérifiée (Ambassade d'Érythrée aux États-Unis) par Gh1nDar, visant une représentation diplomatique érythréenne plutôt qu'une entité domestique.
 
-L'Afrique du Nord (Tunisie, Maroc, Égypte) concentre 8 attaques sur 13, confirmant la pression sur cette région. La Tunisie est particulièrement frappée par une campagne massive.
+L'Afrique du Nord (Tunisie, Maroc, Égypte) concentre 10 revendications sur 17, confirmant la pression sur cette région. La Tunisie est particulièrement frappée par une campagne massive.
 
 ### 6.1 Chronologie des attaques
 ```mermaid
@@ -167,6 +214,8 @@ timeline
         Hepd : CIBN (🇳🇬 Nigeria)
     section 08 Juillet
         d4rk4rmy : MAFATE (🇿🇦 Afrique du Sud)
+    section 09 Juillet
+        Evil_BYTE_Officiel : FNBTP (🇲🇦 Maroc)
     section 13 Juillet
         nightspire : Twaweza (🇹🇿 Tanzanie)
     section 14 Juillet
@@ -175,6 +224,7 @@ timeline
         lynx : Adrian Kenya (🇰🇪 Kenya)
         devman : eehc.gov.eg (🇪🇬 Égypte)
         incransom : Otjiwarongo (🇳🇦 Namibie)
+        Inconnu : Portail QCE (🇲🇷 Mauritanie)
     section 18 Juillet
         Mercobyte : UM6P (🇲🇦 Maroc)
     section 25 Juillet
@@ -182,8 +232,12 @@ timeline
         Dark 07x Team : ABF (🇹🇳 Tunisie)
         Dark 07x Team : BTK Bank (🇹🇳 Tunisie)
         Dark 07x Team : Banque de Tunisie (🇹🇳 Tunisie)
+    section 27 Juillet
+        Gh1nDar : Ambassade d'Érythrée (🇪🇷 Érythrée)
     section 28 Juillet
         Dark 07x Team : BH Bank (🇹🇳 Tunisie)
+    section 29 Juillet
+        Wieko : Ministère de l’Éducation (🇲🇦 Maroc)
 ```
         
 ## 7. TTPs observées
@@ -193,16 +247,18 @@ timeline
 - **Demande de rançon** : devman a exigé 2,27 M$ pour eehc.gov.eg.
 - **Opérations d'influence** : Mercobyte a publié des photos d'étudiants avec un message politique, allant au-delà de l'extorsion classique.
 - **Hacktivisme** : Dark 07x Team semble avoir des motivations multiples (financières et politiques).
+- **Publication gratuite / divulgation réputationnelle** : Evil_BYTE_Officiel a publié gratuitement la base de données FNBTP plutôt que de la vendre, cohérent avec une motivation réputationnelle plutôt que purement financière.
+- **Circulation de jeux de données non attribués** : le cas du Portail QCE (Mauritanie) implique un échantillon de documents de qualification de personnel circulant sans acteur revendicateur ni post de forum identifié.
 
 ## 8. Recommandations
 - **Tunisie** : les institutions financières et gouvernementales doivent renforcer leur cybersécurité de manière urgente face à des campagnes coordonnées. Mettre en place une cellule de veille et de réponse aux incidents.
 - **Secteur bancaire** : les banques (CIBN, BTK, BT, BH) doivent revoir leurs protocoles d'authentification et segmenter leurs réseaux pour limiter les compromissions de comptes.
 - **Éducation** : les universités (UM6P), académies (ABF) et ONG éducatives (Twaweza) doivent protéger les données personnelles et former le personnel aux risques.
-- **Administrations publiques** : renforcer la sécurité des sites web gouvernementaux (eehc.gov.eg, Otjiwarongo) et mettre en place des sauvegardes hors ligne.
+- **Administrations publiques** : renforcer la sécurité des sites web et portails gouvernementaux (eehc.gov.eg, Otjiwarongo, Portail QCE Mauritanie), imposer des contrôles d'accès stricts sur les plateformes traitant des pièces d'identité nationale, et mettre en place des sauvegardes hors ligne.
 - **Tous secteurs** : sensibiliser les employés aux risques de phishing, mettre en place l'authentification multi-facteurs et des audits de sécurité réguliers.
 
 ## 9. Conclusion
-Juillet 2025 a été marqué par une campagne majeure du groupe **Dark 07x Team** contre la Tunisie, avec cinq attaques visant le gouvernement et le secteur bancaire. La diversité des acteurs (ransomwares traditionnels, hacktivistes) et des cibles (banques, administrations, éducation, télécoms) montre une menace protéiforme. La demande de rançon de 2,27 M$ en Égypte et les fuites de données sensibles au Nigeria et en Tunisie soulignent l'urgence d'une coopération régionale renforcée en matière de cybersécurité.
+Juillet 2025 a été marqué par une campagne majeure du groupe **Dark 07x Team** contre la Tunisie, avec cinq attaques visant le gouvernement et le secteur bancaire. La diversité des acteurs (ransomwares traditionnels, hacktivistes) et des cibles (banques, administrations, éducation, télécoms, et une représentation diplomatique) montre une menace protéiforme. La demande de rançon de 2,27 M$ en Égypte et les fuites de données sensibles au Nigeria et en Tunisie soulignent l'urgence d'une coopération régionale renforcée en matière de cybersécurité. Le cas de l'Érythrée reste une revendication non vérifiée visant la représentation diplomatique d'un État africain à l'étranger.
 
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  

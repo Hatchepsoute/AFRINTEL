@@ -11,7 +11,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 
 ## 2. Résumé exécutif
 - **Nombre total d'attaques recensées** : 16
-- **Groupes ransomware les plus actifs** : funksec (5 attaques), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
+- **Groupes ransomware les plus actifs** : funksec (6 attaques), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
 - **Secteurs les plus ciblés** : Éducation (5), Administrations publiques (3), Santé (2), Services aux entreprises (2), Commerce de détail (1), Logistique (1), Marketing (1), Hôtellerie (1).
 - **Pays les plus touchés** : Égypte (4), Nigeria (3), Algérie (2), Maroc (2), Kenya (2), Afrique du Sud (1), Ouganda (1), Zambie (1).
 - **Volume de données exfiltrées** : Au moins 1,5 To pour INTELS Nigeria, 19 Go pour molars.co.ke. Les autres volumes ne sont pas précisés.
@@ -21,7 +21,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 ### 3.1 Répartition par groupe ransomware
 | Groupe ransomware | Nombre d'attaques |
 |-------------------|-------------------|
-| funksec           | 5                 |
+| funksec           | 6                 |
 | GDLockerSec       | 3                 |
 | babuk2            | 2                 |
 | ransomhub         | 2                 |
@@ -31,7 +31,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 
 ```mermaid
 pie title Répartition des attaques par groupe
-    "funksec" : 5
+    "funksec" : 6
     "GDLockerSec" : 3
     "babuk2" : 2
     "ransomhub" : 2
@@ -99,15 +99,15 @@ Une carte des attaques.
 
 ## 4. Détail des attaques par groupe ransomware
 
-### 4.1 FunkSec (5 attaques)
-- **09/01/2025** : gags.gov.eg (Égypte, administrations)
+### 4.1 FunkSec (6 attaques)
+- **09/01/2025** : gags.gov.eg (Égypte, administrations) - Claim - Data Sample Published, confiance élevée : accès authentifié au panneau d'administration observé, incluant un payload d'injection SQL.
 - **11/01/2025** : seocommarrakech.com (Maroc, marketing)
-- **15/01/2025** : mts.gov.eg (Égypte, administrations)
+- **15/01/2025** : mts.gov.eg (Égypte, administrations) - Claim - Data Sample Published, confiance élevée : rapports système internes (permis, trafic portuaire, recouvrement) examinés, datés de manière cohérente avec la revendication.
 - **21/01/2025** : cu-barika.dz (Algérie, éducation)
-- **26/01/2025** : achieverssciencejournal.org (Nigeria, éducation)
-- **27/01/2025** : qed.co.ug (Ouganda, éducation/services)
+- **26/01/2025** : achieverssciencejournal.org (Nigeria, éducation) - Claim - Data Sample Published, confiance élevée.
+- **27/01/2025** : qed.co.ug (Ouganda, services aux entreprises/messagerie) - Claim - Data Sample Published, confiance très élevée : plus de 1,8 million d'enregistrements de contacts observés et compte administrateur « Funksec » auto-créé laissé dans l'application de la victime.
 
-*Remarque* : funksec a ciblé principalement les administrations et l'éducation, avec une répartition géographique variée.
+*Remarque* : funksec a ciblé principalement les administrations et l'éducation, avec une répartition géographique variée. Trois des six revendications (GAGS, MTS, QED) sont désormais corroborées par du matériel examiné plutôt que de reposer uniquement sur la publication du leak site.
 
 ### 4.2 GDLockerSec (3 attaques)
 - **24/01/2025** : lnrbda.gov.ng (Nigeria, administrations)
@@ -117,7 +117,7 @@ Une carte des attaques.
 *Remarque* : GDLockerSec a frappé des institutions éducatives et gouvernementales, avec des volumes de données apparemment faibles (quelques Mo).
 
 ### 4.3 Babuk2 (2 attaques)
-- **27/01/2025** : workers.com.zm (Zambie, services RH)
+- **27/01/2025** : workers.com.zm (Zambie, services RH) - Claim - Data Sample Published, confiance élevée : un export complet de base de données WordPress/WooCommerce/GiveWP a été examiné ; le fichier examiné ne portait aucune marque propre à un acteur, l'attribution à babuk2 est donc conservée mais signalée pour vérification manuelle.
 - **27/01/2025** : zetech.ac.ke (Kenya, éducation)
 
 *Remarque* : babuk2 a ciblé une entreprise de services et une université.

@@ -11,29 +11,31 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 
 ## 2. Résumé exécutif
 - **Nombre total d'attaques recensées** : 08
-- **Groupes ransomware les plus actifs** : ransomhub (2 attaques), killsec (2), fog (1), flocker (1), akira (1), hunter (1).
-- **Secteurs les plus ciblés** : Services aux entreprises (2), Assurances (2), Télécommunications (1), Logistique (1), Services publics (1), Gouvernement (1).
-- **Pays les plus touchés** : Égypte (3), Afrique du Sud (1), Maroc (1), Zambie (1), Ghana (1), Namibie (1).
+- **Acteurs les plus actifs** : ransomhub (2 attaques), killsec (2), fog (1), 0x0day (1), flocker (1), akira (1), hunter (1).
+- **Secteurs les plus ciblés** : Finance / Banque / Assurance (3), Technologie / Services IT (1), Services publics (1), Gouvernement / Administrations publiques (1), Télécommunications (1), Commerce de détail (1), Services aux entreprises / RH (1).
+- **Pays les plus touchés** : Égypte (3), Ghana (2), Maroc (1), Afrique du Sud (1), Zambie (1), Namibie (1).
 - **Volume de données exfiltrées** : 444,8 Go pour SPEED Co (Égypte), 1,2 Go pour le portail gouvernemental zambien. Les autres volumes ne sont pas précisés.
 
 ## 3. Statistiques clés
 
-### 3.1 Répartition par groupe ransomware
-| Groupe ransomware | Nombre d'attaques |
+### 3.1 Répartition par acteur
+| Acteur / Groupe | Nombre d'attaques |
 |-------------------|-------------------|
 | ransomhub         | 2                 |
 | killsec           | 2                 |
 | fog               | 1                 |
+| 0x0day *(fuite de données, sous investigation, non-ransomware)* | 1 |
 | flocker           | 1                 |
 | akira             | 1                 |
 | hunter            | 1                 |
-| **Total**         | **08**             |
+| **Total**         | **09**             |
 
 ```mermaid
-pie title Répartition des attaques par groupe (Fev 2025)
+pie title Répartition des attaques par acteur (Fev 2025)
     "ransomhub" : 2
     "killsec" : 2
     "fog" : 1
+    "0x0day" : 1
     "flocker" : 1
     "akira" : 1
     "hunter" : 1
@@ -41,33 +43,35 @@ pie title Répartition des attaques par groupe (Fev 2025)
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
-| Services aux entreprises | 2 |
-| Assurances / Insurtech | 2 |
-| Télécommunications | 1 |
-| Logistique | 1 |
+| Finance / Banque / Assurance | 3 |
+| Technologie / Services IT | 1 |
 | Services publics (Météo) | 1 |
-| Gouvernement (portail) | 1 |
-| **Total** | **08** |
+| Gouvernement / Administrations publiques (portail) | 1 |
+| Télécommunications | 1 |
+| Commerce de détail | 1 |
+| Services aux entreprises / RH | 1 |
+| **Total** | **09** |
 
 ```mermaid
 pie title Répartition par secteur d'activité (Fév 2025)
-    "Services aux entreprises" : 2
-    "Assurances" : 2
-    "Télécoms" : 1
-    "Logistique" : 1
+    "Finance / Banque / Assurance" : 3
+    "Technologie / IT" : 1
     "Services publics" : 1
     "Gouvernement" : 1
+    "Télécoms" : 1
+    "Commerce" : 1
+    "Services aux entreprises" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 |------|-------------------|
 | Égypte | 3 |
-| Afrique du Sud | 1 |
+| Ghana | 2 |
 | Maroc | 1 |
+| Afrique du Sud | 1 |
 | Zambie | 1 |
-| Ghana | 1 |
 | Namibie | 1 |
-| **Total** | **08** |
+| **Total** | **09** |
 
 ```mermaid
 pie title Répartition par pays

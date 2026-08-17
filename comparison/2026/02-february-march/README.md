@@ -11,7 +11,7 @@
 | Data leaks and access sales | 0 | 22 | +22 |
 | Countries represented | 14 | 14 | 0 |
 
-The March increase came entirely from data leaks and access sales. Ransomware volume remained close to its February level.
+March's jump came entirely from data leaks and access sales. Ransomware stayed close to where February left it.
 
 ## Country evolution
 
@@ -24,19 +24,19 @@ The March increase came entirely from data leaks and access sales. Ransomware vo
 | 🇸🇳 Senegal | 1 | 1 | 0 |
 | 🇹🇳 Tunisia | 1 | 1 | 0 |
 
-South Africa, Morocco and Egypt accounted for 29 of the 41 March records.
+South Africa, Morocco and Egypt between them account for 29 of March's 41 records.
 
 ## Sector evolution
 
-February was led by Government / Administration and Aviation with 3 records each, followed by Oil & Energy and Finance / Banking with 2 each. In March, Government / Administration reached 10 records, Education / University 7, Healthcare / Medical 4, and Insurance, Telecommunications and Engineering / Construction 3 each.
+February's top sectors were Government/Administration and Aviation, 3 records each, then Oil & Energy and Finance/Banking at 2 apiece. March pushed Government/Administration up to 10, Education/University to 7, Healthcare/Medical to 4, with Insurance, Telecommunications and Engineering/Construction tied at 3 each.
 
 ## Actor evolution
 
-TheGentlemen led February with 5 records, followed by 0APT with 3 and LockBit 5.0 with 3. March was led by CrowStealer with 5, APT73/BASHE with 4, XP_95 with 3 and xNova with 3.
+TheGentlemen led February with 5 records, 0APT and LockBit 5.0 both at 3. March had a different lineup: CrowStealer at 5, APT73/BASHE at 4, XP_95 and xNova tied at 3.
 
 ## CTI assessment
 
-The geographic coverage was unchanged, but the incident mix changed materially. March combined a ransomware level similar to February with 22 leak or access-sale records. Monitoring priorities should therefore cover both extortion infrastructure and the reuse or sale of exposed data and access.
+Geographic coverage barely changed, but the incident mix did. March kept ransomware roughly where February had it while adding 22 leak or access-sale records on top. That means monitoring priorities need to cover both extortion infrastructure and the reuse or resale of exposed data and access, not just one or the other.
 
 ## SOC priorities
 
@@ -47,6 +47,6 @@ The geographic coverage was unchanged, but the incident mix changed materially. 
 
 ## Conclusion
 
-March recorded 41 incidents against 20 in February. The increase was driven by data leaks and access sales, while ransomware remained nearly stable.
+March closed at 41 incidents against February's 20. Data leaks and access sales drove nearly all of that growth, ransomware held steady.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

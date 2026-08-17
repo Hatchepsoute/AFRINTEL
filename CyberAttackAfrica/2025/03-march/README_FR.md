@@ -9,55 +9,59 @@
 Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de mars 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
 ## 2. Résumé exécutif
-- **Nombre total d'attaques recensées** : 09
-- **Groupes ransomware les plus actifs** : arcusmedia (2 attaques), nightspire (2), play (1), killsec (1), lynx (1), funksec (1), babuk2 (1).
-- **Secteurs les plus ciblés** : Conseil en technologies (3), Éducation (2), Santé (1), Commerce de détail (1), Finance (1), Administrations publiques (1).
-- **Pays les plus touchés** : Égypte (3), Afrique du Sud (2), Botswana (1), Nigeria (1), Tanzanie (1), Rwanda (1).
+- **Nombre total d'attaques recensées** : 11
+- **Acteurs les plus actifs** : arcusmedia (2 attaques), nightspire (2), play (1), killsec (1), MisterSam (1), lynx (1), funksec (1), Ghudra (1), babuk2 (1).
+- **Secteurs les plus ciblés** : Technologie / Services IT (3), Éducation (2), Santé (2), Gouvernement / Administrations publiques (2), Commerce de détail (1), Finance / Banque / Assurance (1).
+- **Pays les plus touchés** : Égypte (3), Afrique du Sud (2), Nigeria (2), Botswana (1), Tanzanie (1), Burkina Faso (1), Rwanda (1).
 - **Volume de données exfiltrées** : 400 Go pour INI Investments (Égypte). Les autres volumes ne sont pas précisés.
 
 ## 3. Statistiques clés
 
-### 3.1 Répartition par groupe ransomware
-| Groupe ransomware | Nombre d'attaques |
+### 3.1 Répartition par acteur
+| Acteur / Groupe | Nombre d'attaques |
 |-------------------|-------------------|
 | arcusmedia        | 2                 |
 | nightspire        | 2                 |
 | play              | 1                 |
 | killsec           | 1                 |
+| MisterSam         | 1                 |
 | lynx              | 1                 |
 | funksec           | 1                 |
+| Ghudra *(vente d'accès, non-ransomware)* | 1 |
 | babuk2            | 1                 |
-| **Total**         | **09**            |
+| **Total**         | **11**            |
 
 ```mermaid
-pie title Des attaques par groupe ransomware
+pie title Des attaques par acteur
     "arcusmedia" : 2
     "nightspire" : 2
     "play" : 1
     "killsec" : 1
+    "MisterSam" : 1
     "lynx" : 1
     "funksec" : 1
+    "Ghudra" : 1
     "babuk2" : 1
 ```
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
-| Conseil en technologies | 3 |
+| Technologie / Services IT | 3 |
 | Éducation | 2 |
-| Santé | 1 |
+| Santé | 2 |
+| Gouvernement / Administrations publiques | 2 |
 | Commerce de détail | 1 |
-| Finance | 1 |
-| Administrations publiques | 1 |
-| **Total** | **09** |
+| Finance / Banque / Assurance | 1 |
+| **Total** | **11** |
 
 ```mermaid
 pie title Répartition par secteur d'activité
-    "Conseil tech" : 3
+    "Tech / IT" : 3
     "Éducation" : 2
-    "Santé" : 1
+    "Santé" : 2
+    "Administrations" : 2
     "Commerce" : 1
     "Finance" : 1
-    "Administrations" : 1
 ```
 
 ### 3.3 Répartition par pays
@@ -65,20 +69,22 @@ pie title Répartition par secteur d'activité
 |------|-------------------|
 | 🇪🇬 Égypte | 3 |
 | 🇿🇦 Afrique du Sud | 2 |
+| 🇳🇬 Nigeria | 2 |
 | 🇧🇼  Botswana | 1 |
-| 🇳🇬 Nigeria | 1 |
 | 🇹🇿  Tanzanie | 1 |
+| 🇧🇫 Burkina Faso | 1 |
 | 🇷🇼 Rwanda | 1 |
-| **Total** | **09** |
+| **Total** | **11** |
 
 
 ```mermaid
 pie title Répartition par pays
     "🇪🇬 Égypte" : 3
     "🇿🇦 Afrique du Sud" : 2
+    "🇳🇬 Nigeria" : 2
     "🇧🇼 Botswana" : 1
-    "🇳🇬 Nigeria" : 1
     "🇹🇿 Tanzanie" : 1
+    "🇧🇫 Burkina Faso" : 1
     "🇷🇼 Rwanda" : 1
 ```
 ## 4. Détail des attaques par groupe ransomware

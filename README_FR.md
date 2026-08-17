@@ -14,29 +14,34 @@
 
 ---
 
-**AFRINTEL** est un projet CTI open source dédié au suivi des cyberattaques visant les organisations africaines : ransomwares, fuites de données, ventes d'accès et activité des marchés underground, sur 54 pays, via des sources dark web, leak sites et OSINT.
+**AFRINTEL** est un projet CTI open source qui suit les cyberattaques visant les organisations africaines : ransomwares, fuites de données, ventes d'accès et activité des marchés underground, sur les 54 pays du continent, à partir de sources dark web, de leak sites et d'OSINT.
 
 | Pays surveillés | Acteurs suivis | Période couverte | Formats |
 | :---: | :---: | :---: | :---: |
 | 54 | 100+ | 2024-2026 | Markdown, STIX 2.1, Visual CTI |
 
-> AFRINTEL recense les publications observées sur les leak sites, les forums clandestins et les sources OSINT. Chaque incident conserve le statut documenté dans sa fiche victime.
+> Ce qui figure ici, c'est ce qui a été observé : des publications sur des leak sites, des forums clandestins et des sources OSINT. Une fiche victime garde le statut qu'elle avait au dernier examen d'AFRINTEL.
 
 ---
 
 ## Rapports à la une
 
-### Cybermenaces en Afrique - juin 2026
+### Cybermenaces en Afrique - juillet 2026
 
-Juin 2026 compte **40 publications d'incidents cyber** : 20 fiches ransomware et 20 fuites de données ou ventes d'accès. Le Maroc est le premier libellé pays direct avec 9 fiches, dont 7 publications attribuées à anisanas2. Les cas à forte sensibilité comprennent l'exposition de données biométriques et KYC associée à la fintech nigériane Jeroid.co, des identifiants en clair attribués au domaine de messagerie de l'armée nigériane et le jeu de 10,2 millions d'enregistrements revendiqué pour BRELA en Tanzanie.
+Juillet 2026 a rapporté 42 fiches d'incident : 18 revendications ransomware, 18 fuites de données, 6 offres de vente d'accès. L'Égypte et la Tunisie arrivent en tête avec 7 chacune, suivies du Maroc et de l'Afrique du Sud à 6. Une fiche, Planet Sport, pourrait n'être qu'une republication gratuite de la revendication LockBit 5 d'avril plutôt qu'une nouvelle compromission, donc le vrai nombre de compromissions distinctes est peut-être un peu plus bas. Les dossiers à surveiller dépassent le seul ransomware : données gouvernementales d'identité et foncières, données médicales et de laboratoire, comptes universitaires, données de paiement de services publics, dossiers de concours administratifs, de vraies informations qui traînent sur des forums.
 
-📄 [Rapport CTI complet - juin 2026](CyberAttackAfrica/2026/06-june/README_FR.md)
-📋 [Liste des victimes - juin 2026](CyberAttackAfrica/2026/06-june/victims_FR.md)
-📊 [Visual intelligence - juin 2026](visual-intelligence/06-june/README_FR.md)
+📄 [Rapport CTI complet - juillet 2026](CyberAttackAfrica/2026/07-july/README_FR.md)
+📋 [Liste des victimes - juillet 2026](CyberAttackAfrica/2026/07-july/victims_FR.md)
+
+### Août 2026 — en cours
+
+Août est encore en cours de traitement. Quatre incidents recensés pour l'instant, et aussi bien les totaux que la lecture qu'on en fait devraient bouger avant la fin du mois.
+
+📋 [Liste de travail des victimes d'août](CyberAttackAfrica/2026/08-august/victims_FR.md)
 
 ### Rapport sur les cybermenaces du premier semestre 2026
 
-De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** : **113 incidents ransomware**, **125 fuites de données ou ventes d'accès** et **1 défacement de sites web**. Le deuxième trimestre représente 157 incidents, contre 82 au premier trimestre. Le ransomware reste quasi stable, passant de 56 incidents au premier trimestre à 57 au deuxième, tandis que les fuites et ventes d'accès passent de 25 au premier trimestre à 100 au deuxième trimestre.
+Entre janvier et juin 2026, AFRINTEL a recensé 239 incidents sur le continent : 113 ransomware, 125 fuites de données ou ventes d'accès, 1 défacement. L'activité a presque doublé d'un trimestre à l'autre, 82 incidents au premier trimestre contre 157 au deuxième. Le ransomware a à peine bougé, 56 puis 57, tandis que les fuites et ventes d'accès sont passées de 25 à 100.
 
 📊 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
 
@@ -60,7 +65,8 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Avril 2026 | [Rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [Report](CyberAttackAfrica/2026/04-april/README.md) |
 | Mai 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
 | Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
-| Juillet 2026 | *en cours* | *in progress* |
+| Juillet 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
+| Août 2026 | *en cours* | *in progress* |
 
 ---
 
@@ -75,6 +81,7 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Mai 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
 | Juin 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
 | Juillet 2026 | *en cours* | *in progress* |
+| Août 2026 | *en cours* | *in progress* |
 
 ---
 
@@ -87,6 +94,7 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Mars vs avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | Avril vs mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
+| Juin vs juillet 2026 | *en cours* | *en cours* |
 | Rapport S1 2026 | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
@@ -102,6 +110,8 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Avril 2026 | [Visual intelligence](visual-intelligence/04-april/README_FR.md) |
 | Mai 2026 | [Visual intelligence](visual-intelligence/05-may/README_FR.md) |
 | Juin 2026 | [Visual intelligence](visual-intelligence/06-june/README_FR.md) |
+| Juillet 2026 | *en cours* |
+| Août 2026 | *en cours* |
 | S1 2026 | [Visuel statistique](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | S1 2026, carte | [Carte visuelle](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
@@ -117,9 +127,11 @@ De janvier à juin 2026, AFRINTEL a documenté **239 incidents cyber liés à l'
 | Avril 2026 | [STIX Bundle](stix/2026/04-april/afrintel_april_2026_opencti.json) |
 | Mai 2026 | [STIX Bundle](stix/2026/05-may/afrintel_may_2026_opencti.json) |
 | Juin 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
+| Juillet 2026 | [STIX Bundle](stix/2026/07-july/afrintel_july_2026_opencti.json) |
+| Août 2026 | *en cours* |
 | S1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
-Les bundles STIX 2.1 mensuels comprennent les descriptions bilingues des victimes et incidents, les rapports CTI, les statistiques, les comparaisons mensuelles, les références sources, l'identité organisationnelle AFRINTEL et l'identité de l'auteur du projet. Le bundle S1 consolide les 239 incidents de janvier à juin et 36 rapports analytiques bilingues, tout en conservant les identifiants STIX mensuels pour la corrélation dans OpenCTI. Les cartographies MITRE ATT&CK contextuelles sont documentées dans les descriptions des rapports.
+Chaque bundle STIX 2.1 mensuel porte les descriptions bilingues des incidents et des victimes, le rapport CTI, les statistiques, les comparaisons mois par mois, les références sources, et les objets d'identité d'AFRINTEL et de son auteur. Le bundle S1 regroupe les 239 incidents de janvier à juin et 36 rapports bilingues, en conservant les identifiants STIX mensuels d'origine pour que la corrélation reste possible dans OpenCTI. Le contexte MITRE ATT&CK se trouve directement dans les descriptions des rapports.
 
 ---
 

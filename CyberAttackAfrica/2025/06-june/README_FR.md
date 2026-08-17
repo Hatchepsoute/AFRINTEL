@@ -10,79 +10,97 @@
 Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de juin 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet *AFRINTEL*. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
 ## 2. Résumé exécutif
-- **Nombre total d'attaques recensées** : 11
-- **Acteurs les plus actifs** : NightSpire (2 attaques), warlock (2), incransom (1), Lynx (1), DieNet (1), Phantom Atlas (1), RiseAgainLuigi & B4baYega (1), Evil_BYTE_Officiel (1), inconnu (1).
-- **Secteurs les plus ciblés** : Gouvernement / Administrations (3), Banque / Finance (2), Services aux entreprises (2), Télécommunications (1), Commerce de détail (1), Conglomérat (1), Défense (1).
-- **Pays les plus touchés** : Maroc (5), Algérie (2), Afrique du Sud (2), Maurice (1), Nigeria (1).
-- **Volumes de données exfiltrés notables** : 90 Go (BNA Algérie), 26 Go (Best Profil Maroc), 3,1 Go (ANCFCC Maroc), plus de 200 documents (Nigerian Navy).
+- **Nombre total d'attaques recensées** : 21
+- **Acteurs les plus actifs** : mrdump (4 attaques), NightSpire (2), Phantom Atlas (2), warlock (2), Keymous (2), B4baYega (1), incransom (1), Lynx (1), TajineSec / Tajinesec_MA (1), RiseAgainLuigi & B4baYega (1), Evil_BYTE_Officiel (1), KickingPigs (1), MdHackersArmy (1).
+- **Secteurs les plus ciblés** : Gouvernement / Administrations (7), Banque / Finance (2), Services aux entreprises (2), Télécommunications (2), Défense (2), Services juridiques (1), Commerce de détail (1), Conglomérat (1), Sport / Administration publique (1), Diplomatie / Gouvernement (1).
+- **Pays les plus touchés** : Maroc (7), Algérie (7), Afrique du Sud (2), Maurice (1), Égypte (1), Tunisie (1), Djibouti (1).
+- **Volumes de données exfiltrés notables** : 90 Go (BNA Algérie), 26 Go (Best Profil Maroc), 3,1 Go (ANCFCC Maroc), 237 éléments revendiqués / 26 enregistrements échantillon (Ministère de la Solidarité sociale, Égypte), 4 289 enregistrements revendiqués / une trentaine d'enregistrements échantillon (FRMF, Maroc). Ambassade de Djibouti au Maroc : revendication non vérifiée, sans description ni volume de données divulgués.
 
 ## 3. Statistiques clés
 
 ### 3.1 Répartition par groupe/acteur
 | Groupe/Acteur | Nombre d'attaques |
 |---------------|-------------------|
+| mrdump        | 4                 |
 | NightSpire    | 2                 |
+| Phantom Atlas | 2                 |
 | warlock       | 2                 |
+| Keymous       | 2                 |
+| B4baYega      | 1                 |
 | incransom     | 1                 |
 | Lynx          | 1                 |
-| DieNet        | 1                 |
-| Phantom Atlas | 1                 |
+| TajineSec / Tajinesec_MA | 1      |
 | RiseAgainLuigi & B4baYega | 1 |
 | Evil_BYTE_Officiel | 1          |
-| Inconnu       | 1                 |
-| **Total**     | **11**            |
+| KickingPigs   | 1                 |
+| MdHackersArmy | 1                 |
+| **Total**     | **20**            |
 
 ```mermaid
 pie title Répartition par groupe / acteur
+    "mrdump" : 4
     "NightSpire" : 2
+    "Phantom Atlas" : 2
     "warlock" : 2
+    "Keymous" : 2
+    "B4baYega" : 1
     "incransom" : 1
     "Lynx" : 1
-    "DieNet" : 1
-    "Phantom Atlas" : 1
+    "TajineSec / Tajinesec_MA" : 1
     "RiseAgainLuigi & B4baYega" : 1
     "Evil_BYTE_Officiel" : 1
-    "Inconnu" : 1
+    "KickingPigs" : 1
+    "MdHackersArmy" : 1
 ```
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
-| Gouvernement / Administrations | 3 |
+| Gouvernement / Administrations | 7 |
 | Banque / Finance | 2 |
 | Services aux entreprises | 2 |
-| Télécommunications | 1 |
+| Télécommunications | 2 |
+| Défense | 2 |
+| Services juridiques | 1 |
 | Commerce de détail | 1 |
 | Conglomérat | 1 |
-| Défense | 1 |
-| **Total** | **11** |
+| Sport / Administration publique | 1 |
+| Diplomatie / Gouvernement | 1 |
+| **Total** | **20** |
 
 ```mermaid
 pie title Répartition par secteur d'activité/Juin 2025
-    "Gouvernement" : 3
+    "Gouvernement" : 7
     "Banque" : 2
     "Services aux entreprises" : 2
-    "Télécommunications" : 1
+    "Télécommunications" : 2
+    "Défense" : 2
+    "Services juridiques" : 1
     "Commerce" : 1
     "Conglomérat" : 1
-    "Défense" : 1
+    "Sport / Administration publique" : 1
+    "Diplomatie / Gouvernement" : 1
 ```
 ### 3.3 Répartition par pays
 | Pays | Nombre d'attaques |
 |------|-------------------|
-| 🇲🇦 Maroc | 5 |
-| 🇩🇿 Algérie | 2 |
+| 🇲🇦 Maroc | 7 |
+| 🇩🇿 Algérie | 7 |
 | 🇿🇦 Afrique du Sud | 2 |
 | 🇲🇺 Maurice | 1 |
-| 🇳🇬 Nigeria | 1 |
-| **Total** | **11** |
+| 🇪🇬 Égypte | 1 |
+| 🇹🇳 Tunisie | 1 |
+| 🇩🇯 Djibouti | 1 |
+| **Total** | **20** |
 
 ```mermaid
 pie title Répartition par pays (Juin 2025)
-    "🇲🇦 Maroc" : 5
-    "🇩🇿 Algérie" : 2
+    "🇲🇦 Maroc" : 7
+    "🇩🇿 Algérie" : 7
     "🇿🇦 Afrique du Sud" : 2
     "🇲🇺 Maurice" : 1
-    "🇳🇬 Nigeria" : 1
+    "🇪🇬 Égypte" : 1
+    "🇹🇳 Tunisie" : 1
+    "🇩🇯 Djibouti" : 1
 ```
 ## 4. Détail des attaques par groupe/acteur
 ### 4.1 NightSpire (2 attaques)
@@ -115,9 +133,21 @@ pie title Répartition par pays (Juin 2025)
 ### 4.8 Evil_BYTE_Officiel (1 attaque)
 - **20/06/2025** : INWI (Maroc, télécommunications) – fuite massive de données personnelles (PII, hashs de mots de passe).
 
-### 4.9 Inconnu (1 attaque)
-- **13/06/2025** : Nigerian Navy (Nigeria, défense) – exfiltration et mise en vente de plus de 200 documents sensibles.
-### 4.10 Graphe acteur → victime → pays
+### 4.9 B4baYega (1 attaque)
+- **02/06/2025** : Portail de l'Ordre des Avocats - avocatsmaroc.com / mossaada.ma (Maroc, services juridiques) – compromission d'une application de gestion de dossiers juridiques ; code source et sauvegardes SQL diffusés aux côtés d'une archive protégée par mot de passe.
+
+- **13/06/2025** :  (Nigeria, défense) – exfiltration et mise en vente de plus de 200 documents sensibles.
+
+### 4.11 Keymous (2 attaques)
+- **14/06/2025** : Ministère de la Solidarité sociale (Égypte, gouvernement) – publication de forum revendiquant 237 éléments de documents confidentiels et d'informations personnelles sur des ministres, responsables gouvernementaux et représentants institutionnels de plusieurs pays africains, arabes et asiatiques ; un échantillon CSV de 26 enregistrements a été examiné par AFRINTEL.
+- **19/06/2025** : FRMF (Maroc, sport / administration publique) – publication DarkForums revendiquant une base de données de joueurs et de personnel de la FRMF couvrant plus de 4 289 enregistrements nominatifs ; AFRINTEL a examiné un échantillon local de documents d'enregistrement FIFA Connect et de licence CAF Pro, ainsi que des extraits de tableur correspondant à la structure de champs revendiquée.
+
+*Remarque* : Keymous a été actif à deux reprises en juin, ciblant un ministère gouvernemental et une fédération sportive nationale dans deux pays différents.
+
+### 4.12 MdHackersArmy (1 attaque)
+- **29/06/2025** : Ambassade de Djibouti au Maroc (Djibouti, diplomatie/gouvernement) – Claim - Unverified. Publication postée par Doxeur23azi sur DarkForums, attribuée à MdHackersArmy ; aucune description de données, échantillon ni volume divulgués.
+
+### 4.13 Graphe acteur → victime → pays
 ```mermaid
 graph LR
     NightSpire -->|ANCFCC| Maroc1["🇲🇦 Maroc"]
@@ -130,25 +160,32 @@ graph LR
     PhantomAtlas["Phantom Atlas"] -->|BNA| Algerie2["🇩🇿 Algérie"]
     RiseAgain["RiseAgainLuigi & B4baYega"] -->|Ministère Éducation| Maroc4["🇲🇦 Maroc"]
     EvilByte["Evil_BYTE_Officiel"] -->|INWI| Maroc5["🇲🇦 Maroc"]
-    Inconnu -->|Nigerian Navy| Nigeria["🇳🇬 Nigeria"]
+    B4baYega -->|Portail des Avocats| Maroc6["🇲🇦 Maroc"]
+    Keymous -->|Ministère de la Solidarité sociale| Egypte1["🇪🇬 Égypte"]
+    Keymous -->|FRMF| Maroc7["🇲🇦 Maroc"]
+    MdHackersArmy -->|Ambassade de Djibouti| Djibouti1["🇩🇯 Djibouti"]
 ```
 ## 5. Analyse sectorielle
-- **Gouvernement / Administrations** : 3 attaques (ANCFCC, Ingonyama, Ministère Éducation). Les acteurs NightSpire et le duo RiseAgainLuigi/B4baYega ont ciblé des institutions clés, avec des fuites de données sensibles (certificats fonciers, dossiers scolaires).
+- **Gouvernement / Administrations** : 4 attaques (ANCFCC, Ingonyama, Ministère Éducation, Ministère de la Solidarité sociale). Les acteurs NightSpire, le duo RiseAgainLuigi/B4baYega et Keymous ont ciblé des institutions clés, avec des fuites de données sensibles (certificats fonciers, dossiers scolaires, données personnelles de responsables gouvernementaux/institutionnels).
 - **Banque / Finance** : 2 attaques (CPA, BNA) par DieNet et Phantom Atlas, deux groupes hacktivistes, avec des volumes importants (90 Go pour la BNA).
 - **Services aux entreprises** : 2 attaques (MTT EXPERTISES, Best Profil) par incransom et Lynx, ce dernier ayant publié 26 Go de données RH.
+- **Services juridiques** : 1 attaque (Portail de l'Ordre des Avocats) par B4baYega, exposant le code source et les sauvegardes SQL d'une application de gestion de dossiers utilisée par des avocats marocains.
 - **Télécommunications** : 1 attaque (INWI) par Evil_BYTE_Officiel, exposant des données personnelles d'abonnés.
 - **Commerce de détail** : 1 attaque (carducci) par warlock.
 - **Conglomérat** : 1 attaque (Currimjee) par warlock.
-- **Défense** : 1 attaque (Nigerian Navy) par un acteur inconnu, avec mise en vente de documents sensibles.
+- **Défense** : , avec mise en vente de documents sensibles.
+- **Sport / Administration publique** : 1 attaque (FRMF) par Keymous, exposant des échantillons de dossiers d'enregistrement et de licence de joueurs et de personnel de la fédération.
+- **Diplomatie / Gouvernement** : 1 revendication non vérifiée (Ambassade de Djibouti au Maroc) attribuée à MdHackersArmy, concernant la représentation diplomatique d'un État africain dans un autre pays africain.
 
 ## 6. Analyse géographique
-- **Maroc** : 5 attaques, touchant des secteurs variés : gouvernement (ANCFCC, Ministère Éducation), services (MTT, Best Profil), télécoms (INWI). Le Maroc est de loin le pays le plus ciblé du mois.
+- **Maroc** : 7 attaques, touchant des secteurs variés : gouvernement (ANCFCC, Ministère Éducation), services (MTT, Best Profil), services juridiques (Portail des Avocats), télécoms (INWI), fédération sportive (FRMF). Le Maroc est de loin le pays le plus ciblé du mois.
 - **Algérie** : 2 attaques visant le secteur bancaire (CPA, BNA), avec des volumes de données très importants.
 - **Afrique du Sud** : 2 attaques (Ingonyama, carducci) dans l'administration foncière et le commerce.
 - **Maurice** : 1 attaque sur un conglomérat historique (Currimjee).
-- **Nigeria** : 1 attaque sur la marine nationale, ce qui est particulièrement préoccupant pour la sécurité nationale.
+- **Égypte** : 1 publication de forum revendiquant des données d'un ministère des affaires sociales, impliquant des informations personnelles de responsables gouvernementaux et institutionnels de plusieurs pays ; AFRINTEL a examiné un échantillon de 26 enregistrements.
+- **Djibouti** : 1 revendication non vérifiée (Ambassade de Djibouti au Maroc) attribuée à MdHackersArmy, visant une représentation diplomatique djiboutienne implantée au Maroc plutôt qu'une entité domestique.
 
-L'Afrique du Nord (Maroc, Algérie) concentre 7 attaques sur 11, confirmant la pression persistante sur cette région.
+L'Afrique du Nord (Maroc, Algérie, Égypte) concentre 10 attaques sur 14, confirmant la pression persistante sur cette région.
 ### 6.2 Chronologie des attaques
 ```mermaid
 timeline
@@ -156,6 +193,7 @@ timeline
 
     section 02 Juin
         NightSpire : ANCFCC (🇲🇦 Maroc)
+        B4baYega : Portail des Avocats (🇲🇦 Maroc)
     section 06 Juin
         NightSpire : Ingonyama (🇿🇦 Afrique du Sud)
         incransom : MTT (🇲🇦 Maroc)
@@ -167,29 +205,34 @@ timeline
         warlock : carducci (🇿🇦 Afrique du Sud)
         Phantom Atlas : BNA (🇩🇿 Algérie)
     section 13 Juin
-        Inconnu : Marine Nigériane (🇳🇬 Nigeria)
+    section 14 Juin
+        Keymous : Ministère de la Solidarité sociale (🇪🇬 Égypte)
     section 18 Juin
         RiseAgainLuigi & B4baYega : Ministère de l'Éducation (🇲🇦 Maroc)
+    section 19 Juin
+        Keymous : FRMF (🇲🇦 Maroc)
     section 20 Juin
         Evil_BYTE_Officiel : INWI (🇲🇦 Maroc)
+    section 29 Juin
+        MdHackersArmy : Ambassade de Djibouti (🇩🇯 Djibouti)
 ```
 ## 7. TTPs observées
 - **Exfiltration massive** : volumes importants pour la BNA (90 Go), Best Profil (26 Go), ANCFCC (3,1 Go).
-- **Ciblage d'institutions gouvernementales** : ANCFCC, Ingonyama, Ministère Éducation, Nigerian Navy.
+- **Ciblage d'institutions gouvernementales** : ANCFCC, Ingonyama, Ministère Éducation, .
 - **Utilisation de l'hacktivisme** : DieNet et Phantom Atlas revendiquent des fuites à caractère politique (ex: "représailles").
 - **Double extorsion / publication** : Lynx a publié les données de Best Profil après échec des négociations.
-- **Exploitation de données personnelles** : fuite de PII (INWI, Massar) et de documents sensibles (Nigerian Navy).
+- **Exploitation de données personnelles** : fuite de PII (INWI, Massar) et de documents sensibles ().
 - **Diversité des acteurs** : ransomwares traditionnels (incransom, Lynx, warlock) et groupes hacktivistes.
 
 ## 8. Recommandations
 - **Maroc** : renforcer la sécurité des infrastructures gouvernementales (ANCFCC, Ministère Éducation) et des opérateurs télécoms (INWI). Mettre en place une surveillance des fuites de données.
 - **Algérie** : les banques (CPA, BNA) doivent revoir leurs protocoles de sécurité et segmenter leurs réseaux pour limiter l'exfiltration massive.
 - **Afrique du Sud** : protéger les données foncières (Ingonyama) et les bases de données clients (carducci).
-- **Secteur de la défense** : la Nigerian Navy doit enquêter sur la fuite de documents classifiés et renforcer les contrôles d'accès.
+- **Secteur de la défense** : la  doit enquêter sur la fuite de documents classifiés et renforcer les contrôles d'accès.
 - **Tous secteurs** : sensibiliser les employés aux risques de phishing, mettre en place l'authentification multi-facteurs et des sauvegardes hors ligne.
 
 ## 9. Conclusion
-Juin 2025 a été marqué par une forte activité au Maroc, avec des attaques visant des institutions gouvernementales et des entreprises stratégiques. La présence de groupes hacktivistes (DieNet, Phantom Atlas) à côté de ransomwares traditionnels montre une diversification des menaces. Les fuites massives de données (BNA, Best Profil) et les atteintes à la défense nigériane soulignent l'urgence d'une coopération régionale en matière de cybersécurité.
+Juin 2025 a été marqué par une forte activité au Maroc, avec des attaques visant des institutions gouvernementales et des entreprises stratégiques. La présence de groupes hacktivistes (DieNet, Phantom Atlas) à côté de ransomwares traditionnels montre une diversification des menaces. Les fuites massives de données (BNA, Best Profil) et les atteintes à la défense nigériane soulignent l'urgence d'une coopération régionale en matière de cybersécurité. Une revendication très peu documentée visant l'ambassade de Djibouti au Maroc illustre par ailleurs que les représentations diplomatiques africaines à l'étranger restent exposées à des revendications opportunistes, même en l'absence de données vérifiables.
 
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  

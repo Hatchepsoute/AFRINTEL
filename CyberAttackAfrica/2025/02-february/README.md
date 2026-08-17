@@ -10,63 +10,66 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 
 ## 2. Executive summary
 - **Total number of recorded attacks:** 08
-- **Most active ransomware groups:** ransomhub (2 attacks), killsec (2), fog (1), flocker (1), akira (1), hunter (1).
-- **Most targeted sectors:** Business Services (2), Insurance/Insurtech (2), Telecommunications (1), Logistics (1), Public Services (1), Government (1).
-- **Most affected countries:** Egypt (3), South Africa (1), Morocco (1), Zambia (1), Ghana (1), Namibia (1).
+- **Most active actors:** ransomhub (2 attacks), killsec (2), fog (1), 0x0day (1), flocker (1), akira (1), hunter (1).
+- **Most targeted sectors:** Finance / Banking / Insurance (3), Technology / IT services (1), Public Services (1), Government / Public administrations (1), Telecommunications (1), Retail / Distribution (1), Business services / HR (1).
+- **Most affected countries:** Egypt (3), Ghana (2), Morocco (1), South Africa (1), Zambia (1), Namibia (1).
 - **Exfiltrated data volume:** 444.8 GB for SPEED Co (Egypt), 1.2 GB for the Zambian government portal. Other volumes are not specified.
 
 ## 3. Key statistics
 
-### 3.1 Breakdown by ransomware group
-| Ransomware Group | Number of attacks |
+### 3.1 Breakdown by actor
+| Actor / Group | Number of attacks |
 |-------------------|-------------------|
 | ransomhub         | 2                 |
 | killsec           | 2                 |
 | fog               | 1                 |
+| 0x0day *(data leak, under investigation, non-ransomware)* | 1 |
 | flocker           | 1                 |
 | akira             | 1                 |
 | hunter            | 1                 |
-| **Total**         | **08**             |
+| **Total**         | **09**             |
 
 ### 3.2 Breakdown by sector
 | Sector | Number of Attacks |
 |---------|-------------------|
-| Business Services | 2 |
-| Insurance / Insurtech | 2 |
-| Telecommunications | 1 |
-| Logistics | 1 |
+| Finance / Banking / Insurance | 3 |
+| Technology / IT services | 1 |
 | Public Services (Meteorology) | 1 |
-| Government (Portal) | 1 |
-| **Total** | **08** |
+| Government / Public administrations (Portal) | 1 |
+| Telecommunications | 1 |
+| Retail / Distribution | 1 |
+| Business services / HR | 1 |
+| **Total** | **09** |
 
 ```mermaid
 pie title Breakdown by industry sector (Feb 2025)
-    "Business Services" : 2
-    "Insurance" : 2
-    "Telecoms" : 1
-    "Logistics" : 1
+    "Finance / Banking / Insurance" : 3
+    "Technology / IT" : 1
     "Public Services" : 1
     "Government" : 1
+    "Telecoms" : 1
+    "Retail" : 1
+    "Business services" : 1
 ```
 
 ### 3.3 Breakdown by Country
 | Country | Number of attacks |
 |------|-------------------|
 |🇪🇬 Egypt | 3 |
-|🇿🇦 South Africa | 1 |
+|🇬🇭 Ghana | 2 |
 |🇲🇦 Morocco | 1 |
+|🇿🇦 South Africa | 1 |
 |🇿🇲  Zambia | 1 |
-|🇬🇭 Ghana | 1 |
 |🇳🇦 Namibia | 1 |
-| **Total** | **08** |
+| **Total** | **09** |
 
 ```mermaid
 pie title Breakdown by country
     "🇪🇬 Egypt" : 3
-    "🇿🇦 South Africa" : 1
+    "🇬🇭 Ghana" : 2
     "🇲🇦 Morocco" : 1
+    "🇿🇦 South Africa" : 1
     "🇿🇲 Zambia" : 1
-    "🇬🇭 Ghana" : 1
     "🇳🇦 Namibia" : 1
 ```
 

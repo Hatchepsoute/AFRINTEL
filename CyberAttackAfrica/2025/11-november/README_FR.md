@@ -3,7 +3,7 @@
 ![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel](https://img.shields.io/badge/Intel-CTI-purple)
-# Rapport CTI : Cyberattaques en Afrique - Novembre 2025 (11 victimes)
+# Rapport CTI : Cyberattaques en Afrique - Novembre 2025 (14 victimes)
 
 👉🏾 [**English version available here**](./README.md)
 
@@ -13,13 +13,13 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 ---
 
 ## 2. Résumé exécutif
-Novembre 2025 montre une activité persistante de ransomwares ciblant les organisations africaines, avec un focus marqué sur l'Égypte et le Maroc. Un total de 11 revendications confirmées ciblant des organisations opérant dans 6 pays africains ont été identifiées.
+Novembre 2025 montre une activité persistante de ransomwares ciblant les organisations africaines, avec un focus marqué sur l'Égypte et le Maroc. Un total de 10 revendications ransomware et 4 revendications de fuite de données, ciblant des organisations opérant dans 6 pays africains, ont été identifiées.
 
-* **Nombre total d'attaques recensées** : 11
+* **Nombre total d'attaques recensées** : 14
 * **Acteurs les plus actifs** : `clop` (3 attaques), `nightspire` (3 attaques).
-    * *Autres groupes actifs* : spacebears, sprigatito, stormous, qilin, benzona (1 attaque chacun).
-* **Secteurs les plus ciblés** : Logistique (2), Services financiers (2), Construction/Industrie (2).
-* **Pays les plus touchés** : 🇪🇬 Égypte (4), 🇲🇦 Maroc (2), 🇨🇮 Côte d'Ivoire (2).
+    * *Autres groupes actifs* : spacebears, sprigatito, stormous, qilin, benzona (1 attaque chacun) ; 2 revendications supplémentaires sont non attribuées.
+* **Secteurs les plus ciblés** : Logistique (2), Services financiers (2), Construction/Industrie (2), Technologies (2), Administration publique (2).
+* **Pays les plus touchés** : 🇪🇬 Égypte (4), 🇲🇦 Maroc (4), 🇨🇮 Côte d'Ivoire (2), 🇿🇦 Afrique du Sud (2).
 * **Fuite de données notable** : **Anka** (Côte d'Ivoire) avec une base de données de 12,1 Go affectant plus de 537 000 utilisateurs.
 
 ---
@@ -36,7 +36,8 @@ Novembre 2025 montre une activité persistante de ransomwares ciblant les organi
 | **stormous** | 1 |
 | **qilin** | 1 |
 | **benzona** | 1 |
-| **Total** | **11** |
+| **Non attribué** | 3 |
+| **Total** | **14** |
 
 ```mermaid
 pie title Ransomware groups activity (Nov 2025)
@@ -47,6 +48,7 @@ pie title Ransomware groups activity (Nov 2025)
     "stormous" : 1
     "qilin" : 1
     "benzona" : 1
+    "Non attribué" : 3
 ```
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
@@ -54,12 +56,13 @@ pie title Ransomware groups activity (Nov 2025)
 | Logistique | 2 |
 | Services financiers | 2 |
 | Construction / Industrie | 2 |
-| Technologies | 1 |
+| Technologies | 2 |
+| Administration publique | 2 |
 | Commerce / E-commerce | 1 |
-| Administration publique | 1 |
 | Immobilier / Investissement | 1 |
 | Santé / ONG | 1 |
-| **Total** | **11** |
+| Ressources humaines / Recrutement | 1 |
+| **Total** | **14** |
 
 ```mermaid
 graph LR
@@ -75,9 +78,10 @@ graph LR
     A[🏛️ Admin publique]
     RE[🏠 Immobilier]
     H[🏥 Santé / ONG]
+    HR[👥 Ressources humaines / Recrutement]
     end
 
-    L --- Total((Total : 11))
+    L --- Total((Total : 14))
     F --- Total
     I --- Total
     T --- Total
@@ -85,6 +89,7 @@ graph LR
     A --- Total
     RE --- Total
     H --- Total
+    HR --- Total
 
     style Total fill:#f96,stroke:#333,stroke-width:2px
     style L fill:#dfd
@@ -96,19 +101,19 @@ graph LR
 | Pays | Nombre d'attaques |
 | :--- | :---: |
 | 🇪🇬 Égypte | 4 |
-| 🇲🇦 Maroc | 2 |
+| 🇲🇦 Maroc | 4 |
 | 🇨🇮 Côte d'Ivoire | 2 |
-| 🇿🇦 Afrique du Sud | 1 |
+| 🇿🇦 Afrique du Sud | 2 |
 | 🇿🇲 Zambie | 1 |
 | 🇳🇬 Nigeria | 1 |
-| **Total** | **11** |
+| **Total** | **14** |
 
 ```mermaid
 pie title Répartition par pays (Novembre 2025)
     "🇪🇬 Égypte" : 4
-    "🇲🇦 Maroc" : 2
+    "🇲🇦 Maroc" : 4
     "🇨🇮 Côte d'Ivoire" : 2
-    "🇿🇦 Afrique du Sud" : 1
+    "🇿🇦 Afrique du Sud" : 2
     "🇿🇲 Zambie" : 1
     "🇳🇬 Nigeria" : 1
 ```
@@ -133,7 +138,12 @@ pie title Répartition par pays (Novembre 2025)
 * **qilin** (26/11) : Arabia Holding (Égypte, Immobilier) - Revendication & divulgation.
 * **benzona** (26/11) : SEV-CI (Côte d'Ivoire, Santé/ONG) - Revendication & divulgation.
 
-### 4.4 Graphe acteur → victim → pays 
+### 4.4 Revendications non attribuées (3 attaques)
+* **08/11/2025** : NARSA - Agence Nationale de la Sécurité Routière (Maroc, Administration publique / Transport) - Claim - Data Sample Published. Export CSV d'immatriculations de véhicules (environ 150 000 lignes revendiquées) avec champs propriétaire, véhicule et centre d'immatriculation.
+* **30/11/2025** : Joutech (Maroc, Technologies) - Claim - Data Sample Published. Export newsletter/contacts, 1 350 enregistrements ; activité exacte de l'entreprise non confirmée de manière indépendante.
+* **04/11/2025** : Wannabees (Afrique du Sud, Ressources humaines / Recrutement) - Claim - Data Sample Published. Export examiné de cinq dossiers de candidats ; acteur non identifié.
+
+### 4.5 Graphe acteur → victim → pays
 ```mermaid
 graph LR
     %% Relations clop (Rouge)
@@ -152,16 +162,20 @@ graph LR
     stormous(stormous) -->|Marjane| Morocco2["🇲🇦 Maroc"]
     qilin(qilin) -->|Arabia Holding| Egypt4["🇪🇬 Égypte"]
     benzona(benzona) -->|SEV-CI| CI2["🇨🇮 Côte d'Ivoire"]
+    NonAttribue(Non attribué) -->|Joutech| Morocco3["🇲🇦 Maroc"]
+    NonAttribue -->|NARSA| Morocco4["🇲🇦 Maroc"]
+    NonAttribue -->|Wannabees| SA2["🇿🇦 Afrique du Sud"]
 
     %% Styles et Couleurs
     style clop fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
     style nightspire fill:#ffa500,stroke:#333,stroke-width:2px
     style sprigatito fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
     style stormous fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
+    style NonAttribue fill:#888,stroke:#333,stroke-width:2px,color:#fff
     
     %% Style des pays
     classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,Nigeria,Morocco1,Morocco2,CI1,CI2 country
+    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,SA2,Nigeria,Morocco1,Morocco2,Morocco3,Morocco4,CI1,CI2 country
 ```
 ---
 
@@ -169,15 +183,16 @@ graph LR
 * **Logistique (2)** : Ciblage de plateformes stratégiques (Dovern Import au Maroc et Anka en Côte d'Ivoire), confirmant la vulnérabilité des chaînes d'approvisionnement régionales.
 * **Services Financiers (2)** : Attaques contre une institution bancaire majeure (Zanaco en Zambie) et un gestionnaire de fonds de pension (Fidelity au Nigeria).
 * **Construction / Industrie (2)** : Focus sur des fleurons industriels égyptiens (Elsewedy Electric et Samcrete), cibles de choix pour l'espionnage industriel et l'extorsion.
-* **Administration Publique (1)** : Incident notable en Afrique du Sud (Eastern Cape), rappelant que les services aux citoyens restent une cible privilégiée.
+* **Administration Publique (2)** : Incidents notables en Afrique du Sud (Eastern Cape) et au Maroc (données d'immatriculation NARSA), rappelant que les services aux citoyens restent une cible privilégiée.
+* **Ressources humaines / Recrutement (1)** : Wannabees illustre le risque lié aux bases de recrutement contenant des données d'identité, d'emploi et de rémunération.
 
 ---
 
 ## 6. Analyse géographique
 * **🇪🇬 Égypte** : Épicentre de l'activité ce mois-ci avec **4 victimes**. Le ciblage est exclusivement industriel et technologique.
-* **🇲🇦 Maroc** : Activité stable avec **2 victimes** (Logistique et Commerce de détail), touchant des acteurs majeurs du marché local.
+* **🇲🇦 Maroc** : Activité avec **4 victimes** (Logistique, Commerce de détail, une agence publique de sécurité routière et une revendication non attribuée de fuite de données dans les Technologies), touchant des acteurs majeurs du marché local.
 * **🇨🇮 Côte d'Ivoire** : Émergence d'attaques à fort impact (2 victimes), notamment avec la fuite massive de données utilisateurs de la plateforme Anka.
-* **Répartition Globale** : **Afrique du Nord (6 attaques)** vs **Afrique subsaharienne (5 attaques)**. La menace est particulièrement concentrée sur les puissances économiques du continent (Égypte, Maroc, Afrique du Sud, Nigeria).
+* **Répartition Globale** : **Afrique du Nord (8 attaques)** vs **Afrique subsaharienne (6 attaques)**. La menace est particulièrement concentrée sur les puissances économiques du continent (Égypte, Maroc, Afrique du Sud, Nigeria).
 
 ---
 
@@ -198,7 +213,7 @@ graph LR
 ---
 
 ## 9. Conclusion
-Novembre 2025 témoigne d'une diversification des acteurs de menace (7 groupes différents pour 11 victimes). La concentration des attaques sur l'Égypte et le ciblage de données utilisateurs massives en Afrique de l'Ouest indiquent une évolution des stratégies d'extorsion vers des secteurs plus variés que la simple finance traditionnelle.
+Novembre 2025 témoigne d'une diversification des acteurs de menace (7 groupes nommés et trois cas de fuite de données non attribués, pour 14 victimes). La concentration des attaques sur l'Égypte et le ciblage de données utilisateurs massives en Afrique de l'Ouest indiquent une évolution des stratégies d'extorsion vers des secteurs plus variés que la simple finance traditionnelle.
 ---
 
 ### ✍🏿 Auteur

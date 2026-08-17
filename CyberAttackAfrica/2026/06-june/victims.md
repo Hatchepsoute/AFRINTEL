@@ -121,6 +121,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Actor / Group:** anisanas2
 - **Sector:** Transport / Logistics
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [tlog.ma](https://tlog.ma)
 
 - **Description:**
@@ -139,6 +140,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Actor / Group:** anisanas2
 - **Sector:** Mining / Extractive Industries
 - **Status:** Data Fully Published
+- **Incident type:** Data Leak
 - **Website:** Not applicable (company under liquidation)
 
 - **Description:**
@@ -241,6 +243,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Coalition:** NullSec Nigeria
 - **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [nilds.gov.ng](https://nilds.gov.ng/) / [nass.gov.ng](https://nass.gov.ng/)
 
 - **Description:**
@@ -283,6 +286,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Actor / Group:** Convince (via a cybercriminal forum)
 - **Sector:** Government / Administration
 - **Status:** Claim - Unverified
+- **Incident type:** Access Sale
 - **Website:** Not specified
 
 - **Description:**
@@ -382,6 +386,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 - **Actor / Group:** Governor
 - **Sector:** Government / Administration
 - **Status:** Claim - Unverified
+- **Incident type:** Access Sale
 - **Website:** Not specified
 
 - **Description:**
@@ -424,7 +429,8 @@ The consistency and volume of the files strengthen the credibility of a data exf
 ### June 21, 2026
 #### 🇳🇬 Nigeria - Nigerian Military (army.mil.ng) [Credential Leak]
 
-- **Actor / Group:** NulleSecNg
+- **Actor / Group:** [Citizen] Stunxet
+- **Affiliated group:** NullSec Nigeria
 - **Sector:** Government / Administration
 - **Status:** Data Fully Published
 - **Website:** [army.mil.ng](https://army.mil.ng)
@@ -492,6 +498,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 - **Actor / Group:** AshleyWood2022
 - **Sector:** Education / University
 - **Status:** Data Fully Published
+- **Incident type:** Data Leak
 - **Website:** [examens.tn](https://examens.tn/)
 
 - **Description:**
@@ -517,6 +524,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** 404Crew Cyber Team
 - **Sector:** Healthcare / Medical
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [mgmaroc.com](https://mgmaroc.com)
 
 - **Description:**
@@ -541,6 +549,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** anisanas2
 - **Sector:** E-commerce / Retail
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [avito.ma](https://www.avito.ma)
 
 - **Description:**
@@ -554,6 +563,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** anisanas2
 - **Sector:** Business Services / Technology
 - **Status:** Data Fully Published
+- **Incident type:** Data Leak
 - **Website:** Platform operator unidentified
 
 - **Description:**
@@ -618,6 +628,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** anisanas2
 - **Sector:** Transport / Logistics
 - **Status:** Data Fully Published
+- **Incident type:** Data Leak
 - **Website:** Not identified
 
 - **Description:**
@@ -660,6 +671,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** anisanas2
 - **Sector:** Industry / Automotive / Manufacturing
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [stellantis.com](https://www.stellantis.com)
 
 - **Description:**
@@ -707,6 +719,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** [Citizen] EvaN47
 - **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [tve.gov.ly](https://tve.gov.ly)
 
 - **Description:**
@@ -731,6 +744,7 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 - **Actor / Group:** EvaN47
 - **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Website:** [moe.gov.ly](https://moe.gov.ly)
 
 - **Description:**

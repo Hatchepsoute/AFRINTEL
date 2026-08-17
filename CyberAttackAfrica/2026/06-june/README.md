@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-June 2026 recorded **40 publicly reported or claimed cyber incidents** across Africa: **20 ransomware listings or disclosures (50%)** and **20 data leaks / access sales (50%)**. This is a marked shift from May 2026, when ransomware represented 28.1% of the 57 incidents recorded in the [May victim dataset](../05-may/victims.md). June includes a high-sensitivity claimed fintech biometric exposure, a publication of plaintext credentials attributed to a national army's webmail domain, and a three-month sequence of publications attributed to the same actor cluster against Moroccan organizations.
+June 2026 brought in **40 publicly reported or claimed cyber incidents** across Africa, **20 ransomware listings or disclosures (50%)**, **20 data leaks or access sales (50%)**. That's a real shift from May, when ransomware made up just 28.1% of the 57 incidents recorded in the [May victim dataset](../05-may/victims.md). The month also brought a high-sensitivity fintech biometric exposure claim, plaintext credentials published for a national army's webmail domain, and a three-month run of publications from the same actor cluster against Moroccan organizations.
 
 Key findings:
 - **20 ransomware listings or disclosures (50%)** and **20 data leaks / access sales (50%)**, an even split and a higher ransomware share than in May.
@@ -294,14 +294,14 @@ pie showData
 | **4** | 🇾🇹 Mayotte | **1** | DeadLock |
 | **4** | 🇰🇪 Kenya | **1** | DeadLock |
 
-**Observations:** ransomware doubled its share of monthly incidents compared to May (28% to 50%). **DeadLock** was the most geographically distributed group, hitting four countries spread across the continent (Gabon, Nigeria, Mayotte, Kenya) with a consistent pattern: claim, threaten disclosure, and in the Mayotte case, actually publish. **LockBit 5** published three victim listings across three countries in a single week, on June 18. No published sample was accessible for these three entries during AFRINTEL collection. The documented data-publication exceptions are **Mayotte's Municipality of Ouangani**, where DeadLock followed through with a 138 MB publication including payroll and civil registry data, and the **ANC** publication, where Black X published 2.3 million membership records directly.
+**Observations:** ransomware's share of monthly incidents doubled compared to May, 28% to 50%. **DeadLock** spread widest geographically, four countries across the continent (Gabon, Nigeria, Mayotte, Kenya), and stuck to a consistent pattern: claim, threaten disclosure, and in Mayotte's case, actually follow through. **LockBit 5** published three victim listings across three countries in a single week, on June 18, none of which had an accessible sample during AFRINTEL's collection. The two exceptions where data actually got published: **Mayotte's Municipality of Ouangani**, where DeadLock delivered a 138 MB dump of payroll and civil-registry data, and the **ANC**, where Black X published 2.3 million membership records outright.
 
 ### 4.2 Data leaks & access sales (20 unique incidents, 33 country occurrences)
 
 | Rank | Country | Occurrences | Main actors |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇲🇦 Morocco | **9** | anisanas2 (7), 404Crew Cyber Team, Convince |
-| **2** | 🇳🇬 Nigeria | **4** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg, Convince |
+| **2** | 🇳🇬 Nigeria | **4** | burti, 404Crew CT x NullSec Nigeria, NullSec Nigeria, Convince |
 | **3** | 🇪🇬 Egypt | **3** | Xyphorix, Convince, Governor |
 | **3** | 🇹🇿 Tanzania | **3** | hammer, Convince, Governor |
 | **5** | 🇿🇦 South Africa | **2** | mosad, GOD User |
@@ -365,7 +365,7 @@ pie showData
 
 **Emerging actors:**
 - **burti** (Jeroid.co, Nigeria): first AFRINTEL appearance, high-severity fintech data broker.
-- **NulleSecNg** (Nigerian Army credential leak): politically-motivated, first documented appearance.
+- **NullSec Nigeria** (Nigerian Army credential leak): politically-motivated, first documented appearance.
 - **Convince** and **Governor**: two separate actors running parallel law-enforcement impersonation businesses; possibly connected, both first appeared in AFRINTEL records in May-June 2026.
 - **mosad** (SANDF classified document leak): single appearance, high-sensitivity military source.
 
@@ -388,12 +388,12 @@ pie showData
 
 ### Trends
 
-1. **Ransomware regained ground:** the 50/50 split is higher than May's 28.1/71.9 split. One month is insufficient to establish a durable change in actor behaviour, but the geographic spread of DeadLock and LockBit 5 warrants monitoring.
-2. **Repeated Morocco-focused activity:** publications attributed to anisanas2 appear across April, May and June. The continuity is observed; a coordinated standing operation remains an analytical hypothesis.
-3. **High-sensitivity fintech exposure:** the Jeroid.co material suggests a serious cloud-storage control failure involving KYC data. The full volume and initial access vector remain unconfirmed.
-4. **Military and defense credential hygiene:** the Nigerian Army credential publication and SANDF document publication demonstrate exposure of sensitive material. The underlying compromise paths and document-lifecycle failures remain unknown.
-5. **Cross-border law-enforcement impersonation offers:** the Convince and Governor publications contain 15 country mentions spanning 11 African countries. The records do not establish that the two sellers are connected.
-6. **Consecutive Libyan ministry publications:** two ministries were published by the same actor on June 29 and 30. This supports continued monitoring without establishing a sustained campaign.
+1. **Ransomware regained ground.** The 50/50 split is a jump from May's 28.1/71.9. One month doesn't prove a lasting shift in actor behaviour, but DeadLock and LockBit 5's geographic spread is worth watching.
+2. **Morocco keeps coming up.** Publications tied to anisanas2 span April, May and June. The continuity is real; whether it's one standing operation is still just a hypothesis.
+3. **A fintech exposure looks genuinely serious.** The Jeroid.co material points to a real cloud-storage control failure involving KYC data. Full volume and initial access vector are both still unconfirmed.
+4. **Military credential hygiene is a live concern.** Both the Nigerian Army credential publication and the SANDF document publication show sensitive material getting out. How the compromises happened and where the document-lifecycle controls failed remain unknown.
+5. **Law-enforcement impersonation is going cross-border.** Convince and Governor's publications together mention 15 countries across 11 African nations. Nothing ties the two sellers together, though.
+6. **Two Libyan ministries, back to back.** Same actor, June 29 and 30. Worth continued monitoring, not yet a sustained campaign.
 
 ### Intelligence gaps
 
@@ -457,7 +457,7 @@ The following techniques are defensive hypotheses derived from the exposed mater
 
 ## 12. Conclusion
 
-June 2026 recorded 40 incidents, compared with 57 in the [May victim dataset](../05-may/victims.md), a decrease of 17 records (-29.8%). Ransomware listings and disclosures increased from 16 to 20 (+25.0%), while data leaks and access sales decreased from 41 to 20 (-51.2%). Morocco accounted for 9 of the 38 direct incident records; two additional records were multi-country. Publications attributed to anisanas2 continued for a third month. The Jeroid.co fintech publication and the Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
+June closed at 40 incidents, down from 57 in the [May victim dataset](../05-may/victims.md), a drop of 17 records, 29.8%. Ransomware listings and disclosures rose from 16 to 20, while data leaks and access sales fell sharply, 41 to 20. Morocco took 9 of the 38 direct incident records, with two more multi-country. anisanas2's publications kept going for a third straight month. The Jeroid.co fintech publication and the Nigerian Army credential leak stand out as the most sensitive cases this month.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

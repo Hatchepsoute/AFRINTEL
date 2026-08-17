@@ -10,9 +10,7 @@
 
 ## 1. Executive summary
 
-February 2026 records **20 cyber incidents** across **14 African countries**, all attributed to ransomware or data extortion groups. The key event is the publication
-of sensitive data attributed to **DAF Senegal**, including citizen and biometric information reviewed by AFRINTEL. The **139 TB** volume is claimed by
-the actor, but could not be measured from the accessible material. Key findings:
+February 2026 brought **20 cyber incidents** across **14 African countries**, every one of them tied to ransomware or data extortion. The event that stands out is the publication of sensitive **DAF Senegal** data, citizen and biometric records AFRINTEL was able to review. The actor claims **139 TB**; that figure couldn't be measured from what was actually accessible. Key findings:
 
 - **20 ransomware / data extortion incidents (100%)**.
 - **14 countries** affected; **South Africa** (3), **Egypt** (3), **Ghana** (2) and **Nigeria** (2) lead.
@@ -114,10 +112,10 @@ pie
 
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
-- **Distribution:** 20 incidents affected 14 countries. South Africa and Egypt recorded 3 each, while Ghana and Nigeria recorded 2 each.
-- **Actor activity:** TheGentlemen led with 5 incidents, followed by 0APT and LockBit 5.0 with 3 each.
-- **Sector signal:** BlueSky Aviation, Nile Air and Air Côte d’Ivoire show sustained pressure on aviation across three countries.
-- **High-volume claims:** the 139 TB claim attributed to DAF Senegal and the three 0APT claims are significant, but the claimed volumes and compromise details remain independently unconfirmed.
+- **Distribution:** 20 incidents spread across 14 countries. South Africa and Egypt at 3 each, Ghana and Nigeria at 2 each.
+- **Actor activity:** TheGentlemen led with 5 incidents, 0APT and LockBit 5.0 followed with 3 apiece.
+- **Sector signal:** BlueSky Aviation, Nile Air and Air Côte d'Ivoire, three airlines, three countries, sustained pressure on the aviation sector this month.
+- **High-volume claims:** the 139 TB attributed to DAF Senegal and the three 0APT claims are the numbers that jump out, but none of the claimed volumes or compromise details have been independently confirmed.
 
 ---
 
@@ -143,10 +141,10 @@ pie
 | Namibia | 1 | qilin |
 
 **Key observations:**
-- **0APT** emerged as a new prolific actor in early February (3 claims in 5 days) then disappeared from public DLS.
-- **Aviation sector**: 3 airlines claimed (BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire) by 3 different actors. Likely independent opportunistic targeting.
-- **thegentlemen** appears in 5 February records across 5 countries.
-- **LockBit 5.0** published 3 victims under the LockBit 5.x branding.
+- **0APT** came out of nowhere in early February, 3 claims in 5 days, then went quiet on public leak sites for the rest of the month.
+- **Aviation**: 3 airlines claimed (BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire), 3 different actors. Reads more like independent opportunism than a coordinated push.
+- **thegentlemen** shows up 5 times this month, across 5 countries.
+- **LockBit 5.0** published 3 victims under the 5.x branding.
 
 ## 6. Sectoral impact
 
@@ -185,9 +183,9 @@ pie
 ```
 
 **Takeaways:**
-- Government, aviation, and energy form the critical infrastructure cluster (8 incidents, 40%).
-- Three aviation organizations were published during the month, each by a different actor.
-- The DAF Senegal publication involves government and biometric data and meets the AFRINTEL Level 4 impact criteria.
+- Government, aviation and energy together make up a critical-infrastructure cluster, 8 incidents, 40% of the month.
+- Three aviation organizations went public this month, each claimed by a different actor.
+- DAF Senegal, government and biometric data both, clears the bar for AFRINTEL's Level 4 impact rating.
 
 ## 7. Threat actor profile
 
@@ -226,11 +224,11 @@ pie
 
 ### Trends
 
-1. **DAF Senegal - potential record breach**: 139 TB including biometric data is an extraordinary claim. If confirmed, it marks a significant escalation in attacks against West African governments.
-2. **Aviation sector under attack**: Three airlines claimed in one month across three countries and three actors. Independent opportunistic targeting rather than a coordinated campaign.
-3. **0APT publication sequence**: Three high-volume claims were published within five days. No additional public DLS publication was observed later in the month.
-4. **thegentlemen maintains pace**: Five incidents in February following six in January confirms consistent pan-African operational tempo.
-5. **LockBit 5.0 persistence**: Three claims confirm continued African targeting.
+1. **DAF Senegal could be a record-breaking breach.** 139 TB including biometric data is an extraordinary number to claim. If it holds up, that's a real escalation against West African governments.
+2. **Aviation took a hit.** Three airlines, three countries, three actors, in one month. Looks like independent opportunism rather than anyone running a coordinated campaign against the sector.
+3. **0APT burned bright and went dark.** Three high-volume claims in five days, then nothing more on public leak sites for the rest of the month.
+4. **thegentlemen isn't slowing down.** Five incidents in February on the heels of six in January, a steady pan-African tempo.
+5. **LockBit 5.0 keeps showing up.** Three claims this month, African targeting hasn't let up.
 
 ### Gaps
 
@@ -292,7 +290,7 @@ pie
 
 ## 13. Conclusion
 
-February 2026 records 20 ransomware or data-extortion publications across 14 countries and 11 actors. DAF Senegal is the most sensitive case because the publication concerns citizen and biometric information and includes a claimed volume of 139 TB. Aviation accounts for three records, while government, energy and finance also appear repeatedly. TheGentlemen published five victims, and 0APT and LockBit 5.0 published three each.
+February closed with 20 ransomware or data-extortion publications across 14 countries and 11 actors. DAF Senegal is the case that matters most, citizen and biometric information, a claimed 139 TB. Aviation took three of the month's records, and government, energy and finance kept turning up too. TheGentlemen published five victims; 0APT and LockBit 5.0 published three each.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

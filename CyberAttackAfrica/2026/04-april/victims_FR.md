@@ -585,6 +585,9 @@
 - **Statut :** Claim - Unverified
 - **Description :** Leader marocain de la distribution d’articles de sport.
 
+- **Analyse :**
+  AFRINTEL documente la publication d’avril comme une revendication ransomware LockBit 5 non vérifiée. Le même domaine, `planetsport.ma`, est apparu dans une publication substantielle de données attribuée à Mozvo en juillet 2026. Cette chronologie soulève l’hypothèse que les données de juillet aient été téléchargées puis republiées ou redistribuées gratuitement par un tiers après une exfiltration antérieure liée à LockBit, ou que Mozvo soit un affilié ou un opérateur associé. AFRINTEL ne dispose d’aucun élément prouvant une relation entre Mozvo et LockBit 5, et la revendication d’avril ne contient aucune preuve indépendante de chiffrement, d’exfiltration ou d’accès initial. Les entrées d’avril et de juillet sont conservées comme deux événements liés mais distincts, dans l’attente d’éléments complémentaires.
+
 #### 🇿🇲 Zambie - zsiclife.co.zm [Ransomware]
 - **Groupe ransomware :** krybit
 - **Secteur :** Services d’assurance

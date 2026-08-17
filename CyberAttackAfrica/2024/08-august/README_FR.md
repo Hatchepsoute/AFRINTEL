@@ -5,21 +5,21 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Août 2024 : Mois record avec 14 victimes et 2 double-claims
+# Rapport CTI - Août 2024 : Mois record avec 15 cas (14 revendications ransomware et 1 fuite de données) et 2 double-claims
 
 👉🏾 [English version available here](./README.md)
 
 ### 1. Résumé exécutif
 
-Août 2024 est le **mois le plus actif de l'année** avec **14 victimes** documentées dans 7 pays. Le mois inclut **2 double-claims** par des groupes ransomware distincts (Remitano et Lenmed), chacun préalablement revendiqué par d'autres acteurs. DarkVault mène avec 3 revendications. Neuf groupes distincts sont actifs simultanément.
+Août 2024 est le **mois le plus actif de l'année** avec **15 cas** documentés dans 8 pays. Le mois inclut **2 double-claims** par des groupes ransomware distincts (Remitano et Lenmed), chacun préalablement revendiqué par d'autres acteurs. DarkVault mène avec 3 revendications. Neuf groupes distincts sont actifs simultanément.
 
 👉🏾 [Liste des victimes](./victims_FR.md)
 
 **Chiffres clés :**
-- 🔹 **14 victimes** identifiées (dont 2 double-claims par des groupes distincts)
+- 🔹 **15 cas** identifiés (14 revendications ransomware et 1 fuite de données ; dont 2 double-claims)
 - 🔹 **9 groupes actifs** : DarkVault (3), KillSec (2), Meow (2), RansomHub (2), LockBit3 (1), Hunters (1), SpaceBears (1), InCransom (1), BrainCipher (1)
-- 🔹 **Pays touchés** : Afrique du Sud (6), Seychelles (2), Zimbabwe (2), Côte d'Ivoire (1), Kenya (1), Djibouti (1), Ghana (1)
-- 🔹 **Secteurs** : Finance, Retail/Distribution, Télécommunications, Santé, Gouvernement, Technologies
+- 🔹 **Pays touchés** : Afrique du Sud (6), Seychelles (2), Zimbabwe (2), Tunisie (1), Côte d'Ivoire (1), Kenya (1), Djibouti (1), Ghana (1)
+- 🔹 **Secteurs** : Finance, Retail/Distribution, Télécommunications, Santé, Gouvernement, Technologies, Événementiel / Plateformes numériques
 
 ---
 
@@ -33,6 +33,7 @@ Août 2024 est le **mois le plus actif de l'année** avec **14 victimes** docume
 | 13 août | Lenmed | Afrique du Sud | DarkVault | ⚠️ Double-claim (mai 2024 - LockBit3) |
 | 13 août | Gpf.za | Afrique du Sud | DarkVault | |
 | 17 août | Wwwconfig (Netconfig) | Afrique du Sud | RansomHub | |
+| 19 août | Eventizer | Tunisie | Bambi | Fuite de données |
 | 21 août | Codival | Côte d'Ivoire | SpaceBears | |
 | 22 août | Don't Waste Group | Afrique du Sud | InCransom | |
 | 22 août | Instadriver.co | Kenya | KillSec | |
@@ -44,7 +45,7 @@ Août 2024 est le **mois le plus actif de l'année** avec **14 victimes** docume
 
 ```mermaid
 timeline
-    title Attaques ransomware en Afrique - Août 2024
+    title Incidents cyber en Afrique - Août 2024
     1er août : Remitano (Seychelles) - Meow
     11 août : Acdcexpress (Afrique du Sud) - LockBit3
     13 août : Netone (Zimbabwe) - Hunters
@@ -72,6 +73,7 @@ timeline
 | Afrique du Sud | 6 |
 | Seychelles | 2 |
 | Zimbabwe | 2 |
+| Tunisie | 1 |
 | Côte d'Ivoire | 1 |
 | Kenya | 1 |
 | Djibouti | 1 |
@@ -79,10 +81,11 @@ timeline
 
 ```mermaid
 pie showData
-    title Répartition par pays - Août 2024 (14 victimes)
+    title Répartition par pays - Août 2024 (15 cas)
     "Afrique du Sud" : 6
     "Seychelles" : 2
     "Zimbabwe" : 2
+    "Tunisie" : 1
     "Côte d'Ivoire" : 1
     "Kenya" : 1
     "Djibouti" : 1
@@ -102,13 +105,14 @@ pie showData
 | Services | 1 |
 | Organismes financiers | 1 |
 | E-commerce | 1 |
+| Événementiel / Plateforme numérique | 1 |
 
 ```mermaid
 xychart-beta
     title "Secteurs ciblés - Août 2024"
-    x-axis ["Finance", "Retail", "Télécom", "Santé", "Gouvernement", "Tech", "Services", "E-commerce"]
+    x-axis ["Finance", "Retail", "Télécom", "Santé", "Gouvernement", "Tech", "Services", "E-commerce", "Événementiel"]
     y-axis "Nombre d'attaques" 0 to 4
-    bar [3, 3, 2, 1, 1, 1, 1, 1]
+    bar [3, 3, 2, 1, 1, 1, 1, 1, 1]
 ```
 
 #### 3.3 Groupes ransomware
@@ -154,11 +158,12 @@ gantt
 
 ### 4. Points d'attention
 
-- **Mois record** : 14 victimes est le nombre mensuel le plus élevé de 2024, représentant presque le double de la moyenne janvier-février.
+- **Mois record** : 15 cas est le nombre mensuel le plus élevé de 2024, représentant presque le double de la moyenne janvier-février.
 - **2 double-claims confirmés** : Remitano (Seychelles, crypto) et Lenmed (Afrique du Sud, santé) ont chacun été revendiqués précédemment par des groupes différents, suggérant une revente de données ou une compromission indépendante des mêmes cibles.
 - **DarkVault en tête** : le groupe revendique 3 victimes sud-africaines en une seule journée (13 août), indiquant une campagne coordonnée.
 - **Première apparition de BrainCipher** en Afrique : le groupe revendique Ghanare (Ghana, tech), marquant son entrée sur le continent.
 - **Gouvernement ciblé à Djibouti** : Dpfza.gov.dj (Djibouti Port Free Zone Authority), infrastructure stratégique pour la logistique est-africaine.
+- **Fuite Eventizer** : un échantillon de champs de contact et de contexte de comptes a été publié, mais le volume revendiqué de 60 000 enregistrements et son exhaustivité restent non vérifiés.
 - **Secteur télécom** : Netone (Zimbabwe, opérateur mobile majeur) et Wwwconfig/Netconfig (Afrique du Sud) reflètent un intérêt soutenu pour les infrastructures de connectivité.
 
 ---
@@ -168,7 +173,7 @@ xychart-beta
     title "Évolution mensuelle des attaques (Jan - Août 2024)"
     x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août"]
     y-axis "Nombre d'attaques" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 14]
+    bar [3, 5, 7, 5, 8, 3, 7, 15]
 ```
 
 ### 5. Recommandations

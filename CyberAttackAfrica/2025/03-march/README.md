@@ -9,56 +9,60 @@
 This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during March 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
 ## 2. Executive summary
-- **Total number of recorded attacks:** 09
-- **Most active ransomware groups:** arcusmedia (2 attacks), nightspire (2), play (1), killsec (1), lynx (1), funksec (1), babuk2 (1).
-- **Most targeted sectors:** Technology Consulting (3), Education (2), Healthcare (1), Retail (1), Finance (1), Public Administrations (1).
-- **Most affected countries:** Egypt (3), South Africa (2), Botswana (1), Nigeria (1), Tanzania (1), Rwanda (1).
+- **Total number of recorded attacks:** 11
+- **Most active actors:** arcusmedia (2 attacks), nightspire (2), play (1), killsec (1), MisterSam (1), lynx (1), funksec (1), Ghudra (1), babuk2 (1).
+- **Most targeted sectors:** Technology / IT services (3), Education (2), Healthcare (2), Government / Public administrations (2), Retail / Distribution (1), Finance / Banking / Insurance (1).
+- **Most affected countries:** Egypt (3), South Africa (2), Nigeria (2), Botswana (1), Tanzania (1), Burkina Faso (1), Rwanda (1).
 - **Exfiltrated data volume:** 400 GB for INI Investments (Egypt). Other volumes are not specified.
 
 ## 3. Key statistics
 
-### 3.1 Breakdown by ransomware group
-| Ransomware Group | Number of Attacks |
+### 3.1 Breakdown by actor
+| Actor / Group | Number of Attacks |
 |-------------------|-------------------|
 | arcusmedia        | 2                 |
 | nightspire        | 2                 |
 | play              | 1                 |
 | killsec           | 1                 |
+| MisterSam         | 1                 |
 | lynx              | 1                 |
 | funksec           | 1                 |
+| Ghudra *(access sale, non-ransomware)* | 1 |
 | babuk2            | 1                 |
-| **Total**         | **09**            |
+| **Total**         | **11**            |
 
 ```mermaid
-pie title Ransomware attacks by group
+pie title Attacks by actor
     "arcusmedia" : 2
     "nightspire" : 2
     "play" : 1
     "killsec" : 1
+    "MisterSam" : 1
     "lynx" : 1
     "funksec" : 1
+    "Ghudra" : 1
     "babuk2" : 1
 ```
 
 ### 3.2 Breakdown by sector
 | Sector | Number of Attacks |
 |---------|-------------------|
-| Technology consulting | 3 |
+| Technology / IT services | 3 |
 | Education | 2 |
-| Healthcare | 1 |
-| Retail | 1 |
-| Finance | 1 |
-| Public administrations | 1 |
-| **Total** | **09** |
+| Healthcare | 2 |
+| Government / Public administrations | 2 |
+| Retail / Distribution | 1 |
+| Finance / Banking / Insurance | 1 |
+| **Total** | **11** |
 
 ```mermaid
 pie title Breakdown by industry sector
-    "Tech Consulting" : 3
+    "Tech / IT services" : 3
     "Education" : 2
-    "Healthcare" : 1
+    "Healthcare" : 2
+    "Public Administration" : 2
     "Retail" : 1
     "Finance" : 1
-    "Public Administration" : 1
 ```
 
 ### 3.3 Breakdown by country
@@ -66,19 +70,21 @@ pie title Breakdown by industry sector
 |------|-------------------|
 | 🇪🇬 Egypt | 3 |
 | 🇿🇦 South Africa | 2 |
+| 🇳🇬 Nigeria | 2 |
 | 🇧🇼 Botswana | 1 |
-| 🇳🇬 Nigeria | 1 |
 | 🇹🇿 Tanzania | 1 |
+| 🇧🇫 Burkina Faso | 1 |
 | 🇷🇼 Rwanda | 1 |
-| **Total** | **09** |
+| **Total** | **11** |
 
 ```mermaid
 pie title Breakdown by country
     "🇪🇬 Egypt" : 3
     "🇿🇦 South Africa" : 2
+    "🇳🇬 Nigeria" : 2
     "🇧🇼 Botswana" : 1
-    "🇳🇬 Nigeria" : 1
     "🇹🇿 Tanzania" : 1
+    "🇧🇫 Burkina Faso" : 1
     "🇷🇼 Rwanda" : 1
 ```
 

@@ -583,6 +583,9 @@
 - **Status :** Claim - Unverified
 - **Description :** Planet Sport is Morocco’s leading sports goods retailer operating a nationwide network of stores distributing international sports brands.
 
+- **Analysis :**
+  AFRINTEL records the April publication as an unverified LockBit 5 ransomware claim. The same domain, `planetsport.ma`, appeared in a substantial data publication attributed to Mozvo in July 2026. This chronology raises the hypothesis that the July material may have been downloaded and freely republished or redistributed by a third party after an earlier LockBit-related exfiltration, or that Mozvo may be an affiliate or associated operator. AFRINTEL has no evidence proving a relationship between Mozvo and LockBit 5, and the April claim contains no independently verified proof of encryption, exfiltration or initial access. The April and July records are retained as linked but separate events pending further evidence.
+
 #### 🇿🇲 Zambia - zsiclife.co.zm [Ransomware]
 - **Ransomware Group :** krybit
 - **Sector :** Insurance services

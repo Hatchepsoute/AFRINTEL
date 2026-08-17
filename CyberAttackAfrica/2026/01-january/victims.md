@@ -9,7 +9,7 @@
 
 ## Monthly snapshot
 
-January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 data leaks**, **1 access sale**, and **1 coordinated defacement** across **12 African countries**.
+January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 data leaks**, **1 access sale**, and **1 coordinated defacement** across **12 African countries**.
 
 ### Notable incidents
 
@@ -28,6 +28,7 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Sector:** Central Public Administration
 - **Website:** gouv.tg
 - **Status:** Claim - Unverified
+- **Incident type:** Access Sale
 - **Victim Description:** Infrastructure of the Togolese government. The actor claims new access to several official platforms.
 
 ### 04 January 2026
@@ -76,8 +77,11 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Ransomware Group:** thegentlemen
 - **Sector:** Financial Services & Technology
 - **Website:** rogerscapital.mu
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Financial services and technology provider based in Mauritius.
+
+- **Analysis:**
+  AFRINTEL reviewed a corpus of approximately 102 files associated with this claim, including PDF, DOC/DOCX, RTF and spreadsheet documents. The material consists of client onboarding and regulatory compliance documentation typical of a global business licence (GBL) and trust administration practice: FATCA and CRS classification reports, certificates of incorporation, GBL licences, trust deeds, audited financial statements, business plans, fund management documents and structure charts. The corpus references several investment funds, trusts and related entities administered or handled by Rogers Capital. It includes corporate, financial, tax-reporting, ownership and beneficiary-related information, as well as professional contact and account-related references. The files primarily concern fund and trust structures rather than individual retail clients, but their disclosure would expose confidential corporate and regulatory information for multiple entities, creating risks of targeted phishing, business email compromise, identity impersonation, payment fraud and reputational pressure on affected fund managers and counterparties. AFRINTEL did not identify a confirmed plaintext password dump, encryption evidence or a technical intrusion vector in the reviewed material; the initial access method remains unknown. The presence of the documents supports the classification as a published data sample, but does not independently confirm the underlying intrusion.
 
 ### 16 January 2026
 #### 🇸🇳 Senegal - PixPay
@@ -85,7 +89,11 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Sector:** FinTech (Mobile Payment)
 - **Website:** pay.pixpay.sn
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim Description:** Senegalese mobile payment platform.
+
+- **Analysis:**
+  AFRINTEL reviewed the forum post and the accompanying sample. The actor breach3d states that the published material covers payment APIs and related data, and lists JWT tokens, API keys, access tokens and database access credentials among the contents. The accessible sample corresponds to a production environment configuration file containing service endpoints, database connection parameters and secret keys for the pay.pixpay.sn platform, rather than a customer records database. If genuine, exposure of this type of material would allow an attacker to interact directly with PixPay's payment backend, with a risk of unauthorized API calls, token or session forgery, and further lateral compromise of connected systems. AFRINTEL cannot confirm whether the credentials were still valid at collection time or have since been rotated.
 
 ### 16 January 2026
 #### 🇲🇿 Mozambique - CFM Mozambique (Portos e Caminhos de Ferro de Moçambique)
@@ -108,8 +116,11 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Ransomware Group:** tengu
 - **Sector:** Construction (Plumbing & Heating)
 - **Website:** nafaesanitaire.com
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Moroccan company operating in the construction and sanitary sector.
+
+- **Analysis:**
+  AFRINTEL reviewed the tengu leak site listing for this victim, marked as Encrypted. The group describes a claimed 18.2 GB volume structured into eight categories: daily cash journals covering 2022 to 2026, customer financial positions (debts and receivables), a company bank account number (RIB), Sage 100 accounting and business databases, HR records including staff absence tracking, employment contracts and commercial agreements, supplier and client contact data, and full backups of the accounting systems. This level of detail is consistent with direct access to the company's accounting environment. AFRINTEL did not access the underlying files and cannot independently confirm their integrity, completeness or the exact initial access vector.
 
 ### 20 January 2026
 #### 🇰🇪 Kenya - CPF Financial Services
@@ -156,8 +167,11 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Ransomware Group:** tengu
 - **Sector:** Mining and Mineral Resources
 - **Website:** namico.go.ke
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Kenya's state-owned mining enterprise.
+
+- **Analysis:**
+  AFRINTEL reviewed the tengu leak site listing for NAMICO, marked as Encrypted. The group lists a claimed 15 GB volume and displays a file tree including DB, ERP and PORTALS directories, several versions of a compressed staff portal application (CO.STAFFPORTAL), a full database backup file (approximately 4.8 GB) and SQL Server database files exceeding 7 GB. This is consistent with access to NAMICO's internal ERP, staff portal and database infrastructure rather than a single document set. AFRINTEL did not access the underlying database content and cannot confirm what categories of records it contains or the initial access vector.
 
 ### 27 January 2026
 #### 🇹🇳 Tunisia - FRUIT-BONTÉ
@@ -179,8 +193,11 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 #### 🇩🇿 Algeria - Tahkout Group
 - **Ransomware Group:** tengu
 - **Sector:** Automotive Industry & Transport
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Victim Description:** Major Algerian industrial conglomerate involved in automotive assembly and transport.
+
+- **Analysis:**
+  AFRINTEL reviewed the tengu leak site listing for Tahkout Group, marked as Encrypted, with a claimed volume of 83 GB. In addition to the leak site page, AFRINTEL reviewed the group's published proof images, apparently taken from a compromised Windows Server host: a Server Manager console showing Active Directory Domain Services, DHCP and DNS roles configured (consistent with a domain controller), a network share named "Shares" containing folders labelled COMMERCIAL, DLG PAIE, PATRIMOINE, Pointage, POINTAGE FACIAL, Ressources Humaines, RH and Suivi Contrats, and a full-screen ransom notice reading "YOUR SYSTEM HAS BEEN BLOCKED BY TENGU RANSOMWARE". These elements indicate that the group obtained privileged access to core identity infrastructure and to payroll, HR, biometric attendance and contract-related file shares, and that ransomware was executed on at least one host. AFRINTEL did not access the leaked files themselves and cannot confirm the exfiltrated data volume, the full operational impact or the initial access vector.
 
 ### 31 January 2026
 #### 🇲🇦 Morocco - AOM Aviation Group (Air Ocean Maroc)
@@ -188,4 +205,5 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Sector:** Air Transport / Civil Aviation
 - **Website:** airoceangroup.ma
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim Description:** Moroccan group providing air transport and civil aviation services.

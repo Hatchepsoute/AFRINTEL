@@ -73,6 +73,8 @@ Each STIX bundle may include:
 | October 2025 | [afrintel_october_2025_opencti.json](./2025/10-october/afrintel_october_2025_opencti.json) |
 | November 2025 | [afrintel_november_2025_opencti.json](./2025/11-november/afrintel_november_2025_opencti.json) |
 | December 2025 | [afrintel_december_2025_opencti.json](./2025/12-december/afrintel_december_2025_opencti.json) |
+| 2025 Victim List (EN) | [afrintel_2025_victims_EN_opencti.json](./2025/afrintel_2025_victims_EN_opencti.json) |
+| 2025 Victim List (FR) | [afrintel_2025_victims_FR_opencti.json](./2025/afrintel_2025_victims_FR_opencti.json) |
 
 ### AFRINTEL 2024
 

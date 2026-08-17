@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-In January 2026, **21 cyber incidents** targeting African entities were publicly claimed or detected. The month was dominated by ransomware with a notable cross-border presence of two groups, alongside two data leaks and a coordinated government defacement. Key findings:
+January 2026 brought in **21 cyber incidents** against African targets, claimed or detected over the month. Ransomware drove most of it, with two groups showing up across borders, alongside two data leaks, one access sale and a coordinated government defacement. Key findings:
 
 - **17 ransomware claims (81.0%)**, **2 data leaks (9.5%)**, **1 access sale (4.8%)**, and **1 defacement (4.8%)**.
 - **12 countries** affected; **South Africa** (4 incidents) and **Kenya** (4) are the most targeted, followed by **Egypt** (3).
@@ -130,10 +130,10 @@ pie
 
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
-- **Concentration:** South Africa and Kenya recorded 4 incidents each, followed by Egypt with 3. Together, they account for 11 of 21 incidents.
-- **Ransomware activity:** 17 claims were recorded. TheGentlemen accounted for 6 incidents and tengu for 5, with activity spanning several regions.
-- **Other incident types:** the month also included two data leaks, one access sale targeting Togolese government infrastructure and one coordinated defacement affecting Nigerien government websites.
-- **Notable exposure:** the PixPay and AOM Aviation publications involved financial and aviation data, while the exact scope and impact remain dependent on the available source material.
+- **Concentration:** South Africa and Kenya each saw 4 incidents, Egypt trailed with 3. Between them, that's 11 of the month's 21 records.
+- **Ransomware activity:** 17 claims in total. TheGentlemen alone accounts for 6, tengu for 5, and both showed up across several regions rather than sticking to one.
+- **Other incident types:** two data leaks, an access sale against Togolese government infrastructure, and a coordinated defacement hitting Nigerien government sites round out the month.
+- **Notable exposure:** PixPay and AOM Aviation both went public with financial and aviation data respectively; how far the exposure actually reaches depends on material AFRINTEL hasn't independently verified.
 
 ---
 
@@ -155,9 +155,9 @@ pie
 | Togo | 1 | Bigbrother (IAB, access sale) |
 
 **Key observations:**
-- **thegentlemen** and **tengu** collectively account for 11 of 21 records (52%) across 7 distinct countries. No operational relationship between the two groups is established by the January sources.
-- January 20 was the most active single day: 5 claims in South Africa and Kenya alone (Paltrack, Rola, Witzenberg, CPF, NSSF).
-- **Bigbrother/Togo** represents an IAB pattern: prior SSH access sold (September 2025), then new access claimed (January 2026). Persistent access increases risk of future high-impact operations.
+- **thegentlemen** and **tengu** together cover 11 of 21 records (52%) across 7 distinct countries. Nothing in the January sources ties the two groups together operationally, though.
+- January 20 was the busiest single day, 5 claims in South Africa and Kenya alone: Paltrack, Rola, Witzenberg, CPF, NSSF.
+- **Bigbrother/Togo** looks like a classic IAB pattern: SSH access sold back in September 2025, then a fresh access claim in January. Persistent access like that raises the odds of a bigger operation down the line.
 
 ### 5.2 Data leaks (2 incidents)
 
@@ -203,9 +203,9 @@ pie
 ```
 
 **Takeaways:**
-- Government and financial services share the top position (4 incidents each), confirming their sustained attractiveness as targets.
-- January ransomware publications included organizations supporting water, transport, port and mining functions. The observed listings establish sector exposure; operational impact is not documented in the source cards.
-- Healthcare NGOs (CCBRT Tanzania) represent an underprotected category.
+- Government and financial services tie at the top, 4 incidents each, both sectors staying attractive targets month after month.
+- January's ransomware listings touched organizations supporting water, transport, port and mining functions. That establishes sector exposure; it doesn't tell us whether operations were actually disrupted, the source cards don't go that far.
+- Healthcare NGOs, CCBRT Tanzania in this case, look like an underprotected category worth watching.
 
 ## 7. Threat actor profile
 
@@ -242,11 +242,11 @@ pie
 
 ### Trends
 
-1. **Concentration around thegentlemen and tengu**: 52% of January records are attributed to these two groups. TheGentlemen appears in 4 countries and tengu in 5, covering 7 distinct countries together.
-2. **Surge in Kenya**: 4 incidents, all targeting public institutions (water, pension, social security, mining). Pattern consistent with deliberate targeting of government-adjacent infrastructure.
-3. **Repeated IAB publications concerning Togolese government infrastructure**: Bigbrother published an access sale in September 2025 and a new access claim in January 2026. The records justify immediate credential and access review.
-4. **Coordinated government defacement in Niger**: the observed defacement affected more than seven Nigerien state websites and displayed political messages concerning the country’s geopolitical situation at the time. The common technical dependency used in the operation is not identified in the source card.
-5. **Data publications in two distinct sectors**: PixPay concerns mobile payments and AOM Aviation concerns civil aviation. These two records show cross-sector data exposure but are insufficient to define a monthly sector trend.
+1. **thegentlemen and tengu dominate the month.** Between them, 52% of January's records, thegentlemen in 4 countries, tengu in 5, seven distinct countries covered once the two are combined.
+2. **Kenya stands out.** All 4 incidents there hit public institutions, water, pension, social security, mining. That reads less like scattered opportunism and more like deliberate targeting of government-adjacent infrastructure.
+3. **Togo keeps coming up.** Bigbrother sold access in September 2025, then claimed new access again in January. Two publications on the same government infrastructure is reason enough to push credential and access review now, not later.
+4. **Niger's government sites went down together.** More than seven state websites defaced with the same political messaging, but the source material doesn't identify what technical dependency the operation actually exploited.
+5. **Two unrelated sectors leaked data.** PixPay (mobile payments) and AOM Aviation (civil aviation) don't share a pattern beyond both being data publications, not enough on their own to call a sector trend.
 
 ### Gaps
 
@@ -310,7 +310,7 @@ pie
 
 ## 13. Conclusion
 
-January 2026 recorded 21 incident records across 12 African countries. Ransomware represented 17 records, with thegentlemen and tengu accounting for 11 records across 7 distinct countries. The month also included two data publications, one access sale and one coordinated defacement. South Africa and Kenya recorded the highest volumes, followed by Egypt. The observed activity covered North, West, East and Southern Africa.
+January closed out with 21 incident records across 12 countries. Ransomware made up 17 of them, and thegentlemen plus tengu alone covered 11 records across 7 countries. The rest of the month, two data publications, one access sale, one coordinated defacement, filled out the picture. South Africa and Kenya led on volume, Egypt close behind. Between them, the activity touched North, West, East and Southern Africa.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

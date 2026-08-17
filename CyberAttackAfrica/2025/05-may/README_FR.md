@@ -6,44 +6,49 @@
 Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de mai 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
 ## 2. Résumé exécutif
-- **Nombre total d'attaques recensées** : 14
-- **Groupes ransomware les plus actifs** : devman (6 attaques), killsec (1), nightspire (1), incransom (1), arkana (1), everest (1), datacarry (1), worldleaks (1), inconnu (1).
-- **Secteurs les plus ciblés** : Technologies (4), Santé (2), Finance (2), Services aux entreprises (1), Industrie (1), Transport (1), Gouvernement (1), Mines (1), Retail (1).
-- **Pays les plus touchés** : Afrique du Sud (9), Égypte (1), Kenya (1), Botswana (1), Cameroun (1), Togo (1).
-- **Volume de données exfiltrées** : 2,5 To pour NSSF Kenya, 1 Go pour Netmaster Togo. Les autres volumes ne sont pas précisés.
+- **Nombre total d'attaques recensées** : 21
+- **Acteurs les plus actifs** : devman (6 attaques), kill9 (6), killsec (1), nightspire (1), incransom (1), Phantom Atlas (1), arkana (1), everest (1), datacarry (1), worldleaks (1), cache (1).
+- **Secteurs les plus ciblés** : Banque / Services financiers (6), Technologies (4), Santé (2), Finance / Assurance (2), Services aux entreprises (1), Industrie (1), Transport (1), Gouvernement (1), Éducation (1), Mines (1), Retail (1).
+- **Pays les plus touchés** : Afrique du Sud (9), Mauritanie (6), Égypte (1), Kenya (1), Botswana (1), Algérie (1), Cameroun (1), Togo (1).
+- **Volume de données exfiltrées** : 2,5 To pour NSSF Kenya, 1 Go pour Netmaster Togo. La revendication bancaire mauritanienne (kill9) a publié des échantillons clients et de cartes bancaires sans volume total précisé ; les autres volumes ne sont pas précisés.
 
 ## 3. Statistiques clés
 
-### 3.1 Répartition par groupe ransomware
-| Groupe ransomware | Nombre d'attaques |
+### 3.1 Répartition par acteur malveillant
+| Acteur | Nombre d'attaques |
 |-------------------|-------------------|
 | devman            | 6                 |
+| kill9             | 6                 |
 | killsec           | 1                 |
 | nightspire        | 1                 |
 | incransom         | 1                 |
+| Phantom Atlas     | 1                 |
 | arkana            | 1                 |
 | everest           | 1                 |
 | datacarry         | 1                 |
 | worldleaks        | 1                 |
-| Inconnu           | 1                 |
-| **Total**         | **14**            |
+| cache             | 1                 |
+| **Total**         | **21**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe
+pie title Répartition des attaques par acteur
     "devman" : 6
+    "kill9" : 6
     "killsec" : 1
     "nightspire" : 1
     "incransom" : 1
+    "Phantom Atlas" : 1
     "arkana" : 1
     "everest" : 1
     "datacarry" : 1
     "worldleaks" : 1
-    "Inconnu" : 1
+    "cache" : 1
 ```
 
 ### 3.2 Répartition par secteur d'activité
 | Secteur | Nombre d'attaques |
 |---------|-------------------|
+| Banque / Services financiers | 6 |
 | Technologies | 4 |
 | Santé / Pharmacie | 2 |
 | Finance / Assurance | 2 |
@@ -51,12 +56,14 @@ pie title Répartition des attaques par groupe
 | Industrie (EPI) | 1 |
 | Transport aérien | 1 |
 | Gouvernement / Social | 1 |
+| Éducation | 1 |
 | Mines | 1 |
 | Retail / Distribution | 1 |
-| **Total** | **14** |
+| **Total** | **21** |
 
 ```mermaid
 pie title Répartition par secteur d'activité
+    "Banque" : 6
     "Technologies" : 4
     "Santé" : 2
     "Finance" : 2
@@ -64,6 +71,7 @@ pie title Répartition par secteur d'activité
     "Industrie" : 1
     "Transport" : 1
     "Gouvernement" : 1
+    "Éducation" : 1
     "Mines" : 1
     "Retail" : 1
 ```
@@ -72,23 +80,27 @@ pie title Répartition par secteur d'activité
 | Pays | Nombre d'attaques |
 |------|-------------------|
 | 🇿🇦 Afrique du Sud | 9 |
+| 🇲🇷 Mauritanie | 6 |
 | 🇪🇬 Égypte | 1 |
 | 🇰🇪 Kenya | 1 |
 | 🇧🇼 Botswana | 1 |
+| 🇩🇿 Algérie | 1 |
 | 🇨🇲 Cameroun | 1 |
 | 🇹🇬 Togo | 1 |
-| **Total** | **14** |
+| **Total** | **21** |
 
 ```mermaid
 pie title Répartition par pays (Mai 2025)
     "🇿🇦 Afrique du Sud" : 9
+    "🇲🇷 Mauritanie" : 6
     "🇪🇬 Égypte" : 1
     "🇰🇪 Kenya" : 1
     "🇧🇼 Botswana" : 1
+    "🇩🇿 Algérie" : 1
     "🇨🇲 Cameroun" : 1
     "🇹🇬 Togo" : 1
 ```
-## 4. Détail des attaques par groupe ransomware
+## 4. Détail des attaques par acteur malveillant
 ### 4.1 devman (6 attaques)
 - **01/05/2025** : iOCO (Afrique du Sud, technologies)
 - **01/05/2025** : DovesIT (Afrique du Sud, technologies)
@@ -99,34 +111,45 @@ pie title Répartition par pays (Mai 2025)
 
 *Remarque* : devman a concentré ses attaques sur l'Afrique du Sud (5) et le Kenya (1), avec une diversification sectorielle (technologies, RH, industrie, gouvernement). L'attaque contre la NSSF kenyane est la plus volumineuse du mois.
 
-### 4.2 killsec (1 attaque)
+### 4.2 kill9 (6 attaques)
+- **15/05/2025** : Banque Al-Wava Mauritanienne Islamique - BAMIS (Mauritanie, banque) – échantillon de carte publié
+- **15/05/2025** : Banque Mauritanienne pour le Commerce International (Mauritanie, banque) – échantillon de carte publié
+- **15/05/2025** : Banque pour le Commerce et l'Industrie - BCI (Mauritanie, banque) – échantillon de carte publié
+- **15/05/2025** : Orabank Mauritanie-SA (Mauritanie, banque) – échantillon de carte publié
+- **15/05/2025** : Banque Islamique de Mauritanie - BIM Bank (Mauritanie, banque) – citée dans la revendication, aucun échantillon dédié
+- **15/05/2025** : General Bank of Mauritania - GBM (Mauritanie, banque) – citée dans la revendication, aucun échantillon dédié
+
+*Remarque* : kill9 a publié un unique post DarkForums revendiquant une intrusion coordonnée dans six banques mauritaniennes, avec une fenêtre de vente de 48 heures annoncée pour l'ensemble des données via Telegram. Quatre des six établissements (BAMIS, Banque Mauritanienne pour le Commerce International, BCI, Orabank) sont associés à des échantillons de cartes bancaires spécifiquement attribués dans le post ; les deux restants (BIM Bank, GBM) ne sont cités que dans la liste des cibles de l'acteur sans échantillon dédié, et sont donc enregistrés avec un niveau de confiance plus faible. Le post montrait également un échantillon de carte attribué à un septième établissement non listé (Banque El Amana), qu'AFRINTEL ne peut pas rattacher au périmètre annoncé de six banques.
+
+### 4.3 killsec (1 attaque)
 - **20/05/2025** : Medswana (Botswana, pharmacie/santé)
 
-### 4.3 nightspire (1 attaque)
+### 4.4 nightspire (1 attaque)
 - **05/05/2025** : Future Association for Microfinance (Égypte, finance)
 
-### 4.4 incransom (1 attaque)
+### 4.5 incransom (1 attaque)
 - **16/05/2025** : South African Airways (Afrique du Sud, transport aérien)
 
-### 4.5 arkana (1 attaque)
+### 4.6 arkana (1 attaque)
 - **21/05/2025** : Anglo American plc (Afrique du Sud, mines)
 
-### 4.6 everest (1 attaque)
+### 4.7 everest (1 attaque)
 - **26/05/2025** : Mediclinic Group (Afrique du Sud, santé)
 
-### 4.7 datacarry (1 attaque)
+### 4.8 datacarry (1 attaque)
 - **26/05/2025** : FrontierCo (Afrique du Sud, retail/distribution)
 
-### 4.8 worldleaks (1 attaque)
+### 4.9 worldleaks (1 attaque)
 - **31/05/2025** : ASCOMA Cameroon (Cameroun, assurance)
 
-### 4.9 Inconnu (1 attaque)
-- **31/05/2025** : Netmaster (Togo, technologies/hébergement) – 1 Go exfiltré
-### 4.10 Graphe acteur → victime → pays
+### 4.10 cache (1 attaque)
+- **31/05/2025** : Netmaster (Togo, technologies/hébergement) – 1 Go exfiltré (fuite de données)
+### 4.11 Graphe acteur → victime → pays
 ```mermaid
 graph LR
     devman -->|iOCO, DovesIT, HR co, Pienaar, Netstar| AfriqueSud["🇿🇦 Afrique du Sud"]
     devman -->|NSSF| Kenya["🇰🇪 Kenya"]
+    kill9 -->|BAMIS, BMCI, BCI, Orabank, BIM, GBM| Mauritanie["🇲🇷 Mauritanie"]
     killsec -->|Medswana| Botswana["🇧🇼 Botswana"]
     nightspire -->|Future Microfinance| Egypte["🇪🇬 Égypte"]
     incransom -->|SAA| AfriqueSud
@@ -134,10 +157,11 @@ graph LR
     everest -->|Mediclinic| AfriqueSud
     datacarry -->|FrontierCo| AfriqueSud
     worldleaks -->|ASCOMA| Cameroun["🇨🇲 Cameroun"]
-    inconnu["Inconnu"] -->|Netmaster| Togo["🇹🇬 Togo"]
+    cache["cache"] -->|Netmaster| Togo["🇹🇬 Togo"]
 ```
 ## 5. Analyse sectorielle
-- **Technologies** : 4 attaques (iOCO, DovesIT, Netstar, Netmaster). devman domine, avec une attaque sur un registrar togolais par un groupe inconnu.
+- **Banque / Services financiers** : 6 attaques, toutes revendiquées par kill9 contre des banques mauritaniennes (BAMIS, Banque Mauritanienne pour le Commerce International, BCI, Orabank Mauritanie-SA, BIM Bank, GBM) dans un unique post coordonné. Des échantillons de cartes spécifiquement attribués soutiennent quatre des six revendications avec un niveau de confiance moyen ; les deux autres restent non vérifiées.
+- **Technologies** : 4 attaques (iOCO, DovesIT, Netstar, Netmaster). devman domine, avec une fuite de données touchant un registrar togolais revendiquée par le cybercriminel cache.
 - **Santé / Pharmacie** : 2 attaques (Medswana, Mediclinic). killsec et everest ciblent des acteurs de la santé au Botswana et en Afrique du Sud.
 - **Finance / Assurance** : 2 attaques (Future Microfinance, ASCOMA). nightspire et worldleaks visent une ONG égyptienne et un courtier camerounais.
 - **Services aux entreprises (RH)** : 1 attaque (South African HR company) par devman, montrant l'intérêt pour les données personnelles.
@@ -149,30 +173,33 @@ graph LR
 
 ## 6. Analyse géographique
 - **Afrique du Sud** : 9 attaques, dont 6 de devman. Tous les secteurs sont représentés, avec une forte concentration sur les technologies et les infrastructures critiques.
+- **Mauritanie** : 6 attaques, toutes revendiquées par kill9 dans un unique post ciblant le secteur bancaire du pays ; la deuxième campagne mono-acteur/mono-pays la plus importante du mois après celle de devman en Afrique du Sud.
 - **Égypte** : 1 attaque (microfinance) par nightspire.
 - **Kenya** : 1 attaque majeure (NSSF) par devman, avec 2,5 To de données exfiltrées.
 - **Botswana** : 1 attaque (pharmacie) par killsec.
 - **Cameroun** : 1 attaque (assurance) par worldleaks.
-- **Togo** : 1 attaque (hébergement web) par un groupe inconnu.
+- **Togo** : 1 attaque (hébergement web) revendiquée par le cybercriminel cache.
 
-L'Afrique du Sud est de loin le pays le plus touché, confirmant sa position de hub économique régional et de cible privilégiée.
+L'Afrique du Sud reste le pays le plus touché en volume, confirmant sa position de hub économique régional et de cible privilégiée, mais le secteur bancaire mauritanien a fait l'objet de la deuxième campagne revendiquée du mois.
 
 ## 7. TTPs observées
 - **Exfiltration massive** : NSSF Kenya (2,5 To) et Netmaster (1 Go) illustrent la collecte de grands volumes de données.
-- **Ciblage d'infrastructures critiques** : transport aérien (SAA), mines (Anglo American), santé (Mediclinic), gouvernement (NSSF).
-- **Domination d'un acteur** : devman est responsable de près de la moitié des attaques (6/14), montrant une campagne active.
+- **Ciblage coordonné multi-établissements** : kill9 a revendiqué six banques mauritaniennes en un seul post, avec des échantillons de cartes bancaires étayant quatre des six revendications.
+- **Ciblage d'infrastructures critiques** : transport aérien (SAA), mines (Anglo American), santé (Mediclinic), gouvernement (NSSF), secteur bancaire (Mauritanie).
+- **Domination de deux acteurs** : devman et kill9 sont chacun responsables de 6 des 20 incidents recensés (30 % chacun), traduisant deux campagnes actives en parallèle.
 - **Diversité des victimes** : grands groupes (Anglo, SAA, Mediclinic) et PME (DovesIT, Pienaar) sont également visés.
-- **Double extorsion** : revendications avec échantillons de données publiés.
+- **Double extorsion / modèle de vente** : revendications avec échantillons de données publiés, dont un compte à rebours de vente de 48 heures dans le cas mauritanien.
 
 ## 8. Recommandations
 - **Afrique du Sud** : renforcer la cybersécurité dans tous les secteurs, en particulier les technologies et les infrastructures critiques.
+- **Secteur bancaire mauritanien** : les établissements cités doivent revoir en urgence la segmentation de leurs réseaux, faire tourner les identifiants exposés et surveiller les transactions frauduleuses sur les plages BIN mentionnées dans la revendication.
 - **Secteur public** : les organismes comme la NSSF doivent mettre en place des sauvegardes hors ligne et une segmentation réseau.
 - **Entreprises de technologies** : les MSP (iOCO, DovesIT, Netstar) sont des cibles privilégiées ; elles doivent sécuriser leurs accès et surveiller les activités anormales.
 - **Secteur minier** : Anglo American doit protéger ses données sensibles et ses systèmes industriels.
 - **Tous secteurs** : former les employés à la détection des phishing, authentification multi-facteurs, et audits réguliers.
 
 ## 9. Conclusion
-Mai 2025 a été marqué par une activité soutenue du groupe devman, qui a frappé l'Afrique du Sud et le Kenya avec une attaque massive sur la NSSF (2,5 To). La diversité sectorielle (technologies, santé, mines, transport) montre que les attaquants ciblent aussi bien les infrastructures critiques que les entreprises de services. L'Afrique du Sud reste le pays le plus touché, avec 9 attaques. La coopération régionale et le partage d'information sont plus que jamais nécessaires.
+Mai 2025 a été marqué par deux campagnes parallèles d'ampleur comparable : l'activité soutenue de devman contre l'Afrique du Sud et le Kenya, avec une attaque massive sur la NSSF (2,5 To), et la revendication coordonnée de kill9 contre six banques mauritaniennes, publiée comme une offre de vente avec un compte à rebours de 48 heures. La diversité sectorielle (technologies, santé, mines, transport, banque) montre que les attaquants ciblent aussi bien les infrastructures critiques que les entreprises de services. L'Afrique du Sud reste le pays le plus touché en volume, mais la revendication bancaire mauritanienne illustre un glissement vers un ciblage coordonné à l'échelle d'un secteur entier. La coopération régionale et le partage d'information sont plus que jamais nécessaires.
 
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  

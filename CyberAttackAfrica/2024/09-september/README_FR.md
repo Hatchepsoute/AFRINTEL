@@ -5,21 +5,21 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Septembre 2024 : Mois calme avec 4 victimes dans 4 pays
+# Rapport CTI - Septembre 2024 : Mois calme avec 5 victimes dans 5 pays
 
 👉🏾 [English version available here](./README.md)
 
 ### 1. Résumé exécutif
 
-Septembre 2024 enregistre **4 victimes** documentées d'attaques par ransomware dans 4 pays distincts, le nombre mensuel le plus bas depuis janvier 2024. Chaque attaque implique un groupe ransomware différent, suggérant des campagnes opportunistes indépendantes plutôt qu'une vague coordonnée. L'Afrique de l'Ouest, l'Afrique centrale, l'Afrique du Nord et l'océan Indien apparaissent simultanément pour la première fois dans un même mois.
+Septembre 2024 enregistre **5 incidents** documentés dans 5 pays distincts, le nombre mensuel le plus bas depuis janvier 2024. Chaque attaque implique un groupe ransomware différent, suggérant des campagnes opportunistes indépendantes plutôt qu'une vague coordonnée. L'Afrique de l'Ouest, l'Afrique centrale, l'Afrique du Nord et l'océan Indien apparaissent simultanément pour la première fois dans un même mois.
 
 👉🏾 [Liste des victimes](./victims_FR.md)
 
 **Chiffres clés :**
-- 🔹 **4 victimes** identifiées
-- 🔹 **4 groupes actifs** : Hunters (1), SpaceBears (1), ArcusMedia (1), Orca (1)
-- 🔹 **Pays touchés** : Sénégal (1), Cameroun (1), Maurice (1), Tunisie (1)
-- 🔹 **Secteurs** : Technologies, Gouvernement/Sécurité sociale, Télécommunications, Industrie
+- 🔹 **5 victimes** identifiées
+- 🔹 **5 comptes/groupes source** : Hunters (1), SpaceBears (1), ArcusMedia (1), Orca (1), NizaarFarah (1)
+- 🔹 **Pays touchés** : Sénégal (1), Cameroun (1), Maurice (1), Tunisie (1), Nigeria (1)
+- 🔹 **Secteurs** : Technologies, Gouvernement/Sécurité sociale, Télécommunications, Industrie, Défense/Sécurité nationale
 
 ---
 
@@ -28,6 +28,7 @@ Septembre 2024 enregistre **4 victimes** documentées d'attaques par ransomware 
 | Date | Victime | Pays | Groupe ransomware |
 |------|---------|------|-------------------|
 | 6 septembre | Sesam Informatics | Sénégal | Hunters |
+| 7 septembre | Nigerian Navy (navy.mil.ng) | Nigeria | NizaarFarah (compte source) |
 | 12 septembre | CNPS Cameroun | Cameroun | SpaceBears |
 | 15 septembre | Emtel | Maurice | ArcusMedia |
 | 16 septembre | Excelplast Tunisie | Tunisie | Orca |
@@ -36,6 +37,7 @@ Septembre 2024 enregistre **4 victimes** documentées d'attaques par ransomware 
 timeline
     title Attaques ransomware en Afrique - Septembre 2024
     6 septembre : Sesam Informatics (Sénégal) - Hunters
+    7 septembre : Nigerian Navy (Nigeria) - NizaarFarah
     12 septembre : CNPS Cameroun (Cameroun) - SpaceBears
     15 septembre : Emtel (Maurice) - ArcusMedia
     16 septembre : Excelplast Tunisie (Tunisie) - Orca
@@ -53,14 +55,16 @@ timeline
 | Cameroun | 1 |
 | Maurice | 1 |
 | Tunisie | 1 |
+| Nigeria | 1 |
 
 ```mermaid
 pie showData
-    title Répartition par pays - Septembre 2024 (4 victimes)
+    title Répartition par pays - Septembre 2024 (5 victimes)
     "Sénégal" : 1
     "Cameroun" : 1
     "Maurice" : 1
     "Tunisie" : 1
+    "Nigeria" : 1
 ```
 
 #### 3.2 Par secteur
@@ -71,13 +75,14 @@ pie showData
 | Gouvernement / Sécurité sociale | 1 |
 | Télécommunications | 1 |
 | Industrie manufacturière (Plasturgie) | 1 |
+| Défense / Sécurité nationale | 1 |
 
 ```mermaid
 xychart-beta
     title "Secteurs ciblés - Septembre 2024"
-    x-axis ["Technologies", "Gouvernement", "Télécom", "Industrie"]
+    x-axis ["Technologies", "Gouvernement", "Télécom", "Industrie", "Défense"]
     y-axis "Nombre d'attaques" 0 to 2
-    bar [1, 1, 1, 1]
+    bar [1, 1, 1, 1, 1]
 ```
 
 #### 3.3 Groupes ransomware
@@ -93,10 +98,11 @@ xychart-beta
 
 ### 4. Points d'attention
 
-- **Forte baisse d'activité** : après le record d'août (14 victimes), septembre retombe à 4, la plus grande baisse mensuelle de l'année. Cela peut refléter une fatigue des campagnes estivales ou une pause tactique des grands groupes.
+- **Forte baisse d'activité** : après le record d'août (15 victimes), septembre retombe à 5, la plus grande baisse mensuelle de l'année. Cela peut refléter une fatigue des campagnes estivales ou une pause tactique des grands groupes.
 - **CNPS Cameroun - sécurité sociale ciblée** : SpaceBears revendique l'organisme national de sécurité sociale du Cameroun, une institution sensible détenant les dossiers d'emploi et de prestations sociales de millions de travailleurs.
 - **Emtel (Maurice)** : la revendication d'ArcusMedia contre le principal opérateur télécom mauricien signale un intérêt croissant pour les fournisseurs de connectivité des îles de l'océan Indien.
-- **Diversité géographique** : 4 victimes dans 4 pays différents avec 4 groupes différents, aucun acteur dominant ce mois-ci.
+- **Revendication Nigerian Navy** : un compte source (NizaarFarah) publie une capture mentionnant des fichiers confidentiels et des identifiants email attribués à la Nigerian Navy, avec une date de fuite revendiquée au 8 novembre 2020. AFRINTEL n'a ni collecté ni reproduit les fichiers ou identifiants sous-jacents ; la revendication reste non vérifiée.
+- **Diversité géographique** : 5 victimes dans 5 pays différents avec 5 comptes ou groupes source différents, aucun acteur dominant ce mois-ci.
 - **Première apparition d'Orca en Afrique** : le groupe revendique Excelplast Tunisie, marquant sa première revendication documentée sur le continent africain.
 
 ---
@@ -106,7 +112,7 @@ xychart-beta
     title "Évolution mensuelle des attaques (Jan - Sep 2024)"
     x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep"]
     y-axis "Nombre d'attaques" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 14, 4]
+    bar [3, 5, 7, 5, 8, 3, 7, 15, 5]
 ```
 
 ### 5. Recommandations

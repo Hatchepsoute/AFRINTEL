@@ -122,6 +122,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Transport / Logistique
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [tlog.ma](https://tlog.ma)
 
 - **Description :**
@@ -140,6 +141,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Mines / Industries extractives
 - **Statut :** Data Fully Published
+- **Type d'incident :** Fuite de données
 - **Site web :** Non applicable (société en liquidation)
 
 - **Description :**
@@ -242,6 +244,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Coalition :** NullSec Nigeria
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [nilds.gov.ng](https://nilds.gov.ng/) / [nass.gov.ng](https://nass.gov.ng/)
 
 - **Description :**
@@ -284,6 +287,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Acteur / Groupe :** Convince (via un forum cybercriminel)
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Vente d'accès
 - **Site web :** Non spécifié
 
 - **Description :**
@@ -383,6 +387,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Acteur / Groupe :** Governor
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Vente d'accès
 - **Site web :** Non spécifié
 
 - **Description :**
@@ -425,7 +430,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 ### 21 Juin 2026
 #### 🇳🇬 Nigéria - Armée nigériane (army.mil.ng) [Fuite d'identifiants]
 
-- **Acteur / Groupe :** NulleSecNg (forum [Citizen])
+- **Acteur / Groupe :** [Citizen] Stunxet
+- **Groupe affilié :** NullSec Nigeria
 - **Secteur :** Government / Administration
 - **Statut :** Data Fully Published
 - **Site web :** [army.mil.ng](https://army.mil.ng)
@@ -492,6 +498,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Acteur / Groupe :** AshleyWood2022
 - **Secteur :** Education / University
 - **Statut :** Data Fully Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [examens.tn](https://examens.tn/)
 
 - **Description :**
@@ -517,6 +524,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Healthcare / Medical
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [mgmaroc.com](https://mgmaroc.com)
 
 - **Description :**
@@ -541,6 +549,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** Anisanas2
 - **Secteur :** E-commerce / Retail
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [avito.ma](https://www.avito.ma)
 
 - **Description :**
@@ -554,6 +563,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** Anisanas2
 - **Secteur :** Services aux entreprises / Technologie
 - **Statut :** Data Fully Published
+- **Type d'incident :** Fuite de données
 - **Site web :** Non identifié pour l'opérateur de la plateforme
 
 - **Description :**
@@ -618,6 +628,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Transport / Logistique
 - **Statut :** Data Fully Published
+- **Type d'incident :** Fuite de données
 - **Site web :** Non identifié
 
 - **Description :**
@@ -660,6 +671,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [stellantis.com](https://www.stellantis.com)
 
 - **Description :**
@@ -707,6 +719,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** EvaN47
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [tve.gov.ly](https://tve.gov.ly)
 
 - **Description :**
@@ -731,6 +744,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 - **Acteur / Groupe :** EvaN47
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Site web :** [moe.gov.ly](https://moe.gov.ly)
 
 - **Description :**

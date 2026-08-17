@@ -11,7 +11,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 
 ## 2. Résumé exécutif
 - **Nombre total d'attaques recensées** : 13
-- **Acteurs les plus actifs** : qilin (3 attaques), inconnu (2), akira (1), warlock (1), direwolf (1), incransom (1), RainbowDF (1), Chucky_BF (1), GhostCrawt (1), BIGBROTHER (1).
+- **Acteurs les plus actifs** : qilin (3 attaques), inconnu (2), akira (1), warlock (1), direwolf (1), incransom (1), RainbowDF (1), Chucky_BF (1), GhostCrawl (1), BIGBROTHER (1).
 - **Secteurs les plus ciblés** : Technologies (4), Énergie (2), Banque/Finance (2), Agroalimentaire/Industrie (1), Logistique (1), Commerce de détail (1), IoT/Sécurité (1), Gouvernement (1).
 - **Pays les plus touchés** : Afrique du Sud (3), Tunisie (2), Kenya (1), Maroc (1), Nigeria (1), Algérie (1), Ouganda (1), Égypte (1), Maurice (1), Togo (1).
 - **Volumes de données exfiltrés notables** : Zenith Bank (Nigeria) - 1,8 million d'enregistrements ; New Era Com (Maroc) - 607 Mo (dump SQL) ; Body Graphics (Afrique du Sud) - plus de 6 500 fiches clients ; TEAM4 Security (Égypte) - lots de données multiples.
@@ -29,7 +29,7 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | incransom | 1 |
 | RainbowDF | 1 |
 | Chucky_BF | 1 |
-| GhostCrawt | 1 |
+| GhostCrawl | 1 |
 | BIGBROTHER | 1 |
 | **Total** | **13** |
 
@@ -43,7 +43,7 @@ pie title Répartition des attaques par acteur (août 2025)
     "incransom" : 1
     "RainbowDF" : 1
     "Chucky_BF" : 1
-    "GhostCrawt" : 1
+    "GhostCrawl" : 1
     "BIGBROTHER" : 1
 ```
 
@@ -123,7 +123,7 @@ xychart-beta
 ### 4.8 Chucky_BF (1 attaque)
 - **06/08/2025** : New Era Com (Maroc, télécoms/services IT) - Dump SQL public de 607 Mo contenant plus de 476 000 enregistrements.
 
-### 4.9 GhostCrawt (1 attaque)
+### 4.9 GhostCrawl (1 attaque)
 - **23/08/2025** : TEAM4 Security (Égypte, sécurité/défense/RH) - Fuite massive et mise en vente de 5 lots de données RH, médicales, civiles et financières.
 
 ### 4.10 BIGBROTHER (1 attaque)
@@ -142,7 +142,7 @@ graph LR
     incransom -->|Netstar| AfriqueSud3["🇿🇦 Afrique du Sud"]
     RainbowDF -->|Yasat| Tunisie2["🇹🇳 Tunisie"]
     Chucky_BF -->|New Era Com| Maroc["🇲🇦 Maroc"]
-    GhostCrawt -->|TEAM4| Egypte["🇪🇬 Égypte"]
+    GhostCrawl -->|TEAM4| Egypte["🇪🇬 Égypte"]
     BIGBROTHER -->|Govt Infrastructures| Togo["🇹🇬 Togo"]
 ```
 ## 5. Analyse sectorielle
@@ -184,14 +184,14 @@ timeline
     section 20 Août
         incransom : Netstar (Afrique du Sud)
     section 23 Août
-        GhostCrawt : TEAM4 (Égypte)
+        GhostCrawl : TEAM4 (Égypte)
     section 25 Août
         qilin : SWAN (Maurice)
         BIGBROTHER : Govt Infrastructures (Togo)
 ```
 ## 7. TTPs observées
 - **Injections SQL** : probablement utilisées contre Yasat et New Era Com, aboutissant à des dumps complets de bases de données.
-- **Exfiltration et vente de données** : plusieurs acteurs (Inconnu, GhostCrawt, BIGBROTHER) ont mis en vente les données volées sur des forums clandestins.
+- **Exfiltration et vente de données** : plusieurs acteurs (Inconnu, GhostCrawl, BIGBROTHER) ont mis en vente les données volées sur des forums clandestins.
 - **Ciblage d'infrastructures critiques** : qilin s'est concentré sur des compagnies d'électricité au Kenya et en Ouganda.
 - **Attaques répétées** : Netstar a été de nouveau frappée par incransom après un premier incident en mai 2025.
 - **Vente d'accès privilégiés** : BIGBROTHER a proposé un accès administrateur aux systèmes gouvernementaux togolais, indiquant probablement une compromission RDP/VPN.

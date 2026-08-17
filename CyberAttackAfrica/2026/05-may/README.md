@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-May 2026 recorded **57 publicly reported or claimed cyber incidents** across Africa: **17 ransomware listings or disclosures** and **40 data leaks / access sales**. The month included repeated claims affecting Egyptian education entities, publications under the OpSouthAfrica banner, sustained Databasehooligan sales across four countries and three NightSpire victim listings concerning Egyptian organizations.
+May 2026 brought in **57 publicly reported or claimed cyber incidents** across Africa, **17 ransomware listings or disclosures**, **40 data leaks or access sales**. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
 
 Key findings:
 - **17 ransomware listings or disclosures (29.8%)** and **40 data leaks / access sales (70.2%)**.
@@ -261,7 +261,7 @@ pie showData
 | **6** | 🇸🇳 Senegal | **1** | AuditTeam |
 | **7** | 🇨🇮 Ivory Coast | **1** | TheGentlemen |
 
-**Observations:** NightSpire published three Egyptian victim listings during the month. TheGentlemen showed the widest geographic distribution, with claims in four countries. Stormous claimed the Consumer Goods Council of South Africa (CGCSA), previously miscounted as a non-ransomware data leak; it is now reclassified as a ransomware listing. For the Trésor Public du Sénégal, the analysed files support the data-exposure claim, but do not independently confirm ransomware deployment, encryption or the complete intrusion sequence.
+**Observations:** NightSpire put out three Egyptian victim listings this month. TheGentlemen spread widest geographically, claims in four countries. Stormous claimed the Consumer Goods Council of South Africa (CGCSA), which had been miscounted as a non-ransomware data leak, now reclassified as a ransomware listing. For the Trésor Public du Sénégal, the analysed files back the data-exposure claim, but they don't independently confirm ransomware deployment, encryption or the full intrusion sequence.
 
 ### 4.2 Data leaks & access sales (40 incidents)
 
@@ -352,13 +352,13 @@ pie showData
 
 ## 7. Key trends and intelligence gaps
 
-- **Repeated education-sector claims:** Four Egyptian education-related records were documented. A coordinated campaign or shared infrastructure weakness remains an analytical hypothesis.
-- **"OpSouthAfrica" coalition campaign:** The 404Crew Cyber Team, NullSec Nigeria, and Infernalis targeted at least eight South African institutions in May, combining data leak publication with political messaging around xenophobia grievances.
-- **Databasehooligan dataset sale offers:** Eight structured CRM or consumer datasets concerning organizations in Tunisia, South Africa, Egypt, and Algeria were offered for sale. The source records do not establish a shared platform or common access vector.
-- **NightSpire concentration on Egypt:** Three victim listings concerned Egyptian organizations. This is a monitoring signal, not proof of a coordinated campaign.
-- **Government email accounts as access vectors:** Moroccan government credential exposure (827K lines), Tanzanian police webmail sale, and multi-country EDR-fraud account offers signal a growing market for law enforcement impersonation.
-- **Multi-country health system compromise:** The DHIS2 access sale affecting seven countries (Mozambique, Liberia, Nigeria, Bhutan, Honduras, Togo, Sierra Leone) represents a critical threat to public health data sovereignty.
-- **Repeated targeting of Morocco:** Two large-scale claims were recorded in the final ten days of May: RADEM Meknès, involving a claimed 1.1 million documents, and a bundled sale advertised as containing more than 12 million lines and documents from several institutions and companies. The anisanas2 actor had also published Morocco-related claims in April 2026, indicating repeated activity without establishing a shared access vector.
+- **Egyptian education keeps getting hit.** Four separate records this month. Whether that's a coordinated campaign or just a shared infrastructure weakness is still an open question.
+- **"OpSouthAfrica" looks like a coalition effort.** 404Crew Cyber Team, NullSec Nigeria and Infernalis together targeted at least eight South African institutions in May, mixing data leaks with political messaging around xenophobia grievances.
+- **Databasehooligan is selling everywhere.** Eight structured CRM or consumer datasets, Tunisia, South Africa, Egypt, Algeria, offered for sale. Nothing in the source records ties them to one platform or a shared access vector.
+- **NightSpire stayed focused on Egypt.** Three victim listings this month, worth watching, not yet proof of a coordinated campaign.
+- **Government email is becoming an access vector in its own right.** Moroccan government credential exposure (827K lines), a Tanzanian police webmail sale, multi-country EDR-fraud account offers, all point to a growing market for impersonating law enforcement.
+- **DHIS2 access being sold across seven countries** (Mozambique, Liberia, Nigeria, Bhutan, Honduras, Togo, Sierra Leone) is a real threat to public-health data sovereignty on its own.
+- **Morocco kept getting targeted.** Two large claims landed in the final ten days of May: RADEM Meknès (1.1 million documents claimed) and a bundled sale advertised at over 12 million lines across several institutions. anisanas2 had already published Morocco-related claims in April, so the activity is repeating, though nothing establishes a shared access vector between the two.
 
 ---
 
@@ -403,7 +403,7 @@ pie showData
 
 ## 12. Conclusion
 
-May 2026 recorded 57 publicly reported or claimed incidents, down from 60 in April (-3; -5.0%). Ransomware records decreased from 20 to 17 (-15.0%), while data leaks and access sales stayed flat at 40 (0.0%). Egypt and South Africa accounted for 52.6% of direct incidents. Repeated education-sector claims in Egypt, publications under the OpSouthAfrica banner and dataset sale offers associated with Databasehooligan across four countries were the main observed patterns.
+May closed at 57 publicly reported or claimed incidents, down slightly from 60 in April, a 5.0% dip. Ransomware records fell from 20 to 17, while data leaks and access sales held flat at 40. Egypt and South Africa together accounted for 52.6% of direct incidents. The patterns that stood out: repeated education-sector claims in Egypt, publications under the OpSouthAfrica banner, and Databasehooligan's dataset sales spreading across four countries.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

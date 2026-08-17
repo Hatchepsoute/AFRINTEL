@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-April 2026 recorded **60 publicly claimed cyber incidents** across Africa - **20 ransomware claims or publications** and **40 data leaks / access sales**. The threat landscape intensified with a surge in data broker activity, highly sensitive database exposures (royal staff, identity documents, medical records), and targeted access sales against government infrastructure. Ransomware groups **payload**, **apt73/bashe**, **thegentlemen**, and **krybit** maintained pressure, while data‑leak actors **Grubder**, **anisanas2**, **dark07x**, **wh6ami**, and **Rihana** dominated the underground market.
+April 2026 brought in **60 publicly claimed cyber incidents** across Africa, **20 ransomware claims or publications**, **40 data leaks or access sales**. Data-broker activity picked up noticeably this month: highly sensitive database exposures (royal staff, identity documents, medical records) and targeted access sales against government infrastructure both intensified. Ransomware groups **payload**, **apt73/bashe**, **thegentlemen** and **krybit** kept up the pressure, while **Grubder**, **anisanas2**, **dark07x**, **wh6ami** and **Rihana** dominated the data-leak side of the underground market.
 
 Key findings:
 - **20 ransomware claims or publications (33.3%)** and **40 data leaks / access sales (66.7%)**.
@@ -290,10 +290,10 @@ pie showData
 
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
-- **Concentration:** Morocco (17), Egypt (11) and South Africa (8) account for 36 of 60 incidents, or 60% of the month.
-- **Threat mix:** 20 ransomware claims or publications and 40 data leaks or access sales were recorded across 16 countries.
-- **Actor activity:** Grubder led data-leak activity with 7 victims. Payload, APT73/BASHE and TheGentlemen each accounted for 4 ransomware claims.
-- **High-impact exposures:** notable claims involved Royal Palace staff data in Morocco, Pick n Pay ASAP/Bottles.com in South Africa, the Kenya Airports Authority and CNSS Benin.
+- **Concentration:** Morocco (17), Egypt (11) and South Africa (8) between them account for 36 of the month's 60 incidents, 60%.
+- **Threat mix:** 20 ransomware claims or publications, 40 data leaks or access sales, across 16 countries.
+- **Actor activity:** Grubder led on the data-leak side with 7 victims. Payload, APT73/BASHE and TheGentlemen each claimed 4 ransomware victims.
+- **High-impact exposures:** Royal Palace staff data in Morocco, Pick n Pay ASAP/Bottles.com in South Africa, the Kenya Airports Authority, CNSS Benin, all notable claims this month.
 
 ---
 
@@ -312,7 +312,7 @@ pie showData
 | **7** | 🇸🇨 Seychelles | **1** | █ | apt73/bashe |
 | **8** | 🇿🇲 Zambia | **1** | █ | krybit |
 
-**Observations:** The **payload** ransomware group heavily targeted the Egyptian economy (finance, oil, manufacturing). The **apt73/bashe** group expanded its reach from government entities (Seychelles, Kenya) into the insurance and oil sectors.
+**Observations:** **payload** went hard after the Egyptian economy this month, finance, oil, manufacturing. **apt73/bashe** widened its reach too, moving from government entities in Seychelles and Kenya into insurance and oil.
 
 ### 5.2 Data leaks and access sales (40 incidents)
 
@@ -327,11 +327,11 @@ pie showData
 | **–** | 🌍 Remaining country labels | **6** | ██████ | Various (see victim list) |
 
 **Key observations:**
-- **Grubder** dominated with 7 victims, selling databases from small CRM (Customer Relationship Management) to large university portals.
-- **anisanas2** focused on Morocco, leaking student records, medical data, and football federation files.
-- **dark07x** compromised Algerian insurance and football management platforms, exposing national ID cards and internal documents.
-- Two massive municipality leaks in South Africa (Northern Cape Roads, Buffalo City) by **wh6ami** exposed tender processes and admin logs.
-- The **Pick n Pay ASAP / Bottles.com** breach included full payment card data (VISA, Mastercard, 3DS) and passwords, creating direct risks of payment fraud, account abuse and targeted phishing.
+- **Grubder** dominated with 7 victims, selling everything from small CRM databases to large university portals.
+- **anisanas2** stuck to Morocco, leaking student records, medical data and football federation files.
+- **dark07x** compromised Algerian insurance and football management platforms, national ID cards and internal documents exposed in the process.
+- **wh6ami** hit two South African municipalities hard, Northern Cape Roads and Buffalo City, exposing tender processes and admin logs.
+- The **Pick n Pay ASAP / Bottles.com** breach is the one to watch: full payment card data (VISA, Mastercard, 3DS) plus passwords, a direct line to payment fraud, account abuse and targeted phishing.
 
 ## 6. Sectoral impact
 
@@ -389,12 +389,12 @@ pie showData
 
 ### 📈 Key Cyber Threat Trends
 
-* **Explosion of Data Broker Activity:** A massive surge in unauthorized monetization. A single prominent broker (**Grubder**) accounted for 7 distinct victims in April alone, offering datasets ranging from high-volume student enrollment records to corporate CRM databases.
-* **Identity Documents as a Commodity:** Threat actors are systematically packaging and selling deeply sensitive personal files. Multiple underground listings actively offered batches of scanned passports, national IDs, and complete Know-Your-Customer (KYC) compliance packages (with major leaks hitting *Moroccan Identity Documents*, *Algeria Post*, and *Inter Partner Assistance*).
-* **High-Value Access Sales Targeting Governments:** Initial Access Brokers (IABs) are significantly escalating their capabilities. Threat actors such as **superduper1** (offering multi-country government access) and **w00l_ysh1** (targeting the Senegal National Treasury) successfully auctioned high-privilege access, explicitly compromising Active Directory Domain Controllers.
-* **Ransomware Portfolio Diversification:** Traditional extortion groups are expanding their scopes beyond standard corporate targets. Groups like **payload** have actively diversified their target selection, aggressively moving into heavy industry, real estate, automotive, and critical oil/energy infrastructures.
-* **E-Commerce Breaches and Payment Data Exposure:** Supply chain and platform vulnerabilities are exposing critical financial data. The high-profile compromise of **Pick n Pay ASAP / Bottles.com** resulted in the exposure of full credit card details and 3D-Secure (3DS) logs, exposing systemic flaws in regional PCI-DSS compliance.
-* **Targeted Mailbox Scraping Campaigns:** Attackers are prioritizing full email archive exfiltration to bypass traditional defenses. For instance, the complete official mailbox database of **CNSS Benin** was harvested and dumped, exposing highly sensitive personal records, pension cards, and official certificates of life.
+* **Data brokers had a busy month.** One name in particular, **Grubder**, racked up 7 distinct victims in April alone, everything from student enrollment records to corporate CRM databases.
+* **Identity documents are turning into a commodity.** Several underground listings offered batches of scanned passports, national IDs and full KYC packages, *Moroccan Identity Documents*, *Algeria Post* and *Inter Partner Assistance* among the bigger ones hit.
+* **Access brokers went after governments.** **superduper1** offered multi-country government access, **w00l_ysh1** targeted the Senegal National Treasury, both claiming high-privilege access with Active Directory Domain Controllers explicitly compromised.
+* **Ransomware groups branched out.** **payload** in particular didn't stick to its usual targets, pushing into heavy industry, real estate, automotive and oil/energy infrastructure.
+* **E-commerce kept leaking payment data.** The **Pick n Pay ASAP / Bottles.com** compromise exposed full credit card details and 3D-Secure logs, the kind of thing that points to real gaps in regional PCI-DSS compliance.
+* **Full mailboxes got scraped, not just files.** **CNSS Benin**'s entire official mailbox database was harvested and dumped, pension cards and certificates of life included.
 
 ## 9. MITRE ATT&CK mapping (contextual)
 
@@ -436,7 +436,7 @@ pie showData
 
 ## 13. Conclusion
 
-April recorded 60 incident records, up from 41 in March (+46.3%). The increase was driven mainly by data leaks and access sales, which rose from 22 to 40 records. Morocco, Egypt and South Africa recorded the highest April volumes. Criminal forums repeatedly advertised African datasets, identity documents and administrative access during the month.
+April closed at 60 incident records, up from 41 in March, a 46.3% jump. Data leaks and access sales drove most of that increase, from 22 records to 40. Morocco, Egypt and South Africa took the highest volumes. African datasets, identity documents and administrative access kept showing up on criminal forums all month.
 
 **AFRINTEL** – African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

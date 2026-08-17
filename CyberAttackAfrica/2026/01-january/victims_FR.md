@@ -28,6 +28,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Secteur :** Administration publique centrale
 - **Site web :** gouv.tg
 - **Statut :** Claim - Unverified
+- **Type d'incident :** Vente d'accès
 - **Description victime :** Infrastructure du gouvernement togolais. L'acteur prétend détenir de nouveaux accès à plusieurs plateformes officielles.
 
 ### 04 Janvier 2026
@@ -76,8 +77,11 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** thegentlemen
 - **Secteur :** Services Financiers et Technologie
 - **Site web :** rogerscapital.mu
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Prestataire de services financiers et technologiques basé à Maurice.
+
+- **Analyse :**
+  AFRINTEL a examiné un corpus d'environ 102 fichiers associés à cette revendication, comprenant des documents PDF, DOC/DOCX, RTF et des tableurs. Le contenu correspond à une documentation de conformité et d'entrée en relation typique d'une activité d'administration de licences Global Business (GBL) et de trusts : rapports de classification FATCA et CRS, certificats de constitution, licences GBL, actes de trust, états financiers audités, business plans, documents de gestion de fonds et organigrammes de structure. Le corpus fait référence à plusieurs fonds d'investissement, trusts et entités connexes administrés ou traités par Rogers Capital. Il contient des informations corporatives, financières, fiscales, de déclaration réglementaire, de détention et liées aux bénéficiaires, ainsi que des références à des contacts professionnels et à des comptes. Les documents concernent principalement des structures de fonds et de trusts plutôt que des clients particuliers, mais leur divulgation exposerait des informations réglementaires et commerciales confidentielles pour plusieurs entités, créant des risques de phishing ciblé, de fraude au président, d'usurpation d'identité, de fraude aux paiements et de pression réputationnelle sur les gestionnaires de fonds et les contreparties concernés. AFRINTEL n'a identifié aucun dump confirmé de mots de passe en clair, aucune preuve de chiffrement ni aucun vecteur d'intrusion technique dans les éléments consultés ; le mode d'accès initial reste inconnu. La présence de ces documents justifie la classification comme échantillon de données publié, mais ne confirme pas indépendamment l'intrusion sous-jacente.
 
 ### 16 Janvier 2026
 #### 🇸🇳 Sénégal - PixPay
@@ -85,7 +89,11 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Secteur :** FinTech (Paiement Mobile)
 - **Site web :** pay.pixpay.sn
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :** Plateforme sénégalese de paiement mobile.
+
+- **Analyse :**
+  AFRINTEL a consulté la publication et l'échantillon associé. L'acteur breach3d indique que le contenu publié concerne les API de paiement et des données associées, et cite parmi le contenu des jetons JWT, des clés API, des jetons d'accès et des identifiants d'accès à la base de données. L'échantillon accessible correspond à un fichier de configuration d'environnement de production contenant des points d'accès de services, des paramètres de connexion à la base de données et des clés secrètes pour la plateforme pay.pixpay.sn, plutôt qu'à une base de données clients. Si son authenticité est confirmée, l'exposition de ce type d'éléments permettrait à un attaquant d'interagir directement avec le back-end de paiement de PixPay, avec un risque d'appels API non autorisés, de falsification de jetons ou de sessions, et de compromission latérale de systèmes connectés. AFRINTEL ne peut pas confirmer si les identifiants étaient encore valides au moment de la collecte ou s'ils ont depuis été révoqués.
 
 ### 16 Janvier 2026
 #### 🇲🇿 Mozambique - CFM Mozambique (Portos e Caminhos de Ferro de Moçambique)
@@ -108,8 +116,11 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Construction (Plomberie et Chauffage)
 - **Site web :** nafaesanitaire.com
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Entreprise marocaine opérant dans le secteur du bâtiment et du sanitaire.
+
+- **Analyse :**
+  AFRINTEL a consulté la fiche du site de fuite du groupe tengu pour cette victime, marquée Encrypted. Le groupe décrit un volume revendiqué de 18,2 Go structuré en huit catégories : journaux de caisse quotidiens couvrant 2022 à 2026, situations financières clients (créances et dettes), un numéro de compte bancaire de l'entreprise (RIB), des bases de données comptables et commerciales Sage 100, des données RH incluant le suivi des absences, des contrats de travail et accords commerciaux, des données de contact fournisseurs et clients, ainsi que des sauvegardes complètes des systèmes comptables. Ce niveau de détail est cohérent avec un accès direct à l'environnement comptable de l'entreprise. AFRINTEL n'a pas eu accès aux fichiers eux-mêmes et ne peut pas confirmer de façon indépendante leur intégrité, leur exhaustivité ni le vecteur d'accès initial exact.
 
 ### 20 Janvier 2026
 #### 🇰🇪 Kenya - CPF Financial Services
@@ -156,8 +167,11 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Groupe ransomware :** tengu
 - **Secteur :** Mines et Ressources Minérales
 - **Site web :** namico.go.ke
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Entreprise minière d'État du Kenya.
+
+- **Analyse :**
+  AFRINTEL a consulté la fiche du site de fuite du groupe tengu pour NAMICO, marquée Encrypted. Le groupe revendique un volume de 15 Go et affiche une arborescence de fichiers comprenant des répertoires DB, ERP et PORTALS, plusieurs versions compressées d'une application de portail du personnel (CO.STAFFPORTAL), un fichier de sauvegarde complète de base de données (environ 4,8 Go) et des fichiers de base de données SQL Server dépassant 7 Go. Ces éléments sont cohérents avec un accès à l'infrastructure ERP, au portail du personnel et aux bases de données internes de NAMICO, plutôt qu'à un simple ensemble de documents. AFRINTEL n'a pas eu accès au contenu de la base de données et ne peut pas confirmer quelles catégories d'enregistrements elle contient, ni le vecteur d'accès initial.
 
 ### 27 Janvier 2026
 #### 🇹🇳 Tunisie - FRUIT-BONTÉ
@@ -179,8 +193,11 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 #### 🇩🇿 Algérie - Groupe Tahkout
 - **Groupe ransomware :** tengu
 - **Secteur :** Industrie Automobile et Transport
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Description victime :** Important conglomérat industriel algérien impliqué dans l'assemblage automobile et le transport.
+
+- **Analyse :**
+  AFRINTEL a consulté la fiche du site de fuite du groupe tengu pour le Groupe Tahkout, marquée Encrypted, avec un volume revendiqué de 83 Go. Outre la page du site de fuite, AFRINTEL a consulté les images de preuve publiées par le groupe, apparemment prises depuis un hôte Windows Server compromis : une console Server Manager affichant les rôles Active Directory Domain Services, DHCP et DNS configurés (cohérent avec un contrôleur de domaine), un partage réseau nommé « Shares » contenant des dossiers intitulés COMMERCIAL, DLG PAIE, PATRIMOINE, Pointage, POINTAGE FACIAL, Ressources Humaines, RH et Suivi Contrats, ainsi qu'un écran de demande de rançon en plein écran indiquant « YOUR SYSTEM HAS BEEN BLOCKED BY TENGU RANSOMWARE ». Ces éléments indiquent que le groupe a obtenu un accès privilégié à l'infrastructure d'identité principale ainsi qu'aux partages liés à la paie, aux RH, au pointage biométrique et aux contrats, et qu'un ransomware a été exécuté sur au moins un hôte. AFRINTEL n'a pas eu accès aux fichiers divulgués eux-mêmes et ne peut pas confirmer le volume de données exfiltrées, l'impact opérationnel complet ni le vecteur d'accès initial.
 
 ### 31 Janvier 2026
 #### 🇲🇦 Maroc - AOM Aviation Group (Air Ocean Maroc)
@@ -188,4 +205,5 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Secteur :** Transport Aérien / Aviation Civile
 - **Site web :** airoceangroup.ma
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :** Groupe marocain fournissant des services de transport aérien et d'aviation civile.

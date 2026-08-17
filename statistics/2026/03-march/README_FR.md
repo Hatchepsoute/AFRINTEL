@@ -9,7 +9,7 @@
 | Indicateur | Valeur |
 |---|---|
 | Victimes recensées | 41 |
-| Pays touchés | 14 |
+| Pays touchés | 12 (plus 1 incident multi-pays) |
 | Acteurs attribués | 26 |
 | Incidents sans attribution publique | 1 |
 | Incidents ransomware | 19 |
@@ -28,9 +28,9 @@ pie
 |---|---|
 | 🇿🇦 Afrique du Sud | 13 |
 | 🇲🇦 Maroc | 8 |
-| 🇪🇬 Égypte | 8 |
+| 🇪🇬 Égypte | 9 |
 | 🇳🇬 Nigeria | 2 |
-| 🇨🇲 Cameroun | 1 |
+| 🌍 Multi-pays | 1 |
 | 🇩🇿 Algérie | 1 |
 | 🇸🇳 Sénégal | 1 |
 | 🇬🇳 Guinée | 1 |
@@ -39,14 +39,13 @@ pie
 | 🇹🇳 Tunisie | 1 |
 | 🇳🇦 Namibie | 1 |
 | 🇹🇿 Tanzanie | 1 |
-| 🇨🇩 RDC | 1 |
 
 ```mermaid
 xychart-beta
     title "Victimes par pays"
-    x-axis ["ZA","MA","EG","NG","CM","DZ","SN","GN","ZM","MG","TN","NA","TZ","CD"]
+    x-axis ["ZA","MA","EG","NG","MULTI","DZ","SN","GN","ZM","MG","TN","NA","TZ"]
     y-axis "Victimes" 0 --> 15
-    bar [13,8,8,2,1,1,1,1,1,1,1,1,1,1]
+    bar [13,8,9,2,1,1,1,1,1,1,1,1,1]
 ```
 
 ## Répartition par acteur
@@ -77,7 +76,7 @@ pie
 
 | Secteur | Incidents |
 |---|---|
-| Gouvernement / Administration | 10 |
+| Gouvernement / Administration | 9 |
 | Éducation / Université | 7 |
 | Santé | 4 |
 | Assurance | 3 |
@@ -87,6 +86,7 @@ pie
 | IT / Consulting | 2 |
 | Fintech | 1 |
 | E-commerce / Classifieds | 1 |
+| Immobilier / Classifieds | 1 |
 | Sports / Leisure | 1 |
 | Aviation | 1 |
 | Gestion de patrimoine | 1 |
@@ -96,7 +96,7 @@ pie
 ```mermaid
 pie
     title Secteurs ciblés
-    "Gouvernement (10)" : 10
+    "Gouvernement (9)" : 9
     "Éducation (7)" : 7
     "Santé (4)" : 4
     "Assurance (3)" : 3
@@ -106,6 +106,7 @@ pie
     "IT/Consulting (2)" : 2
     "Fintech (1)" : 1
     "E-commerce (1)" : 1
+    "Immobilier (1)" : 1
     "Sports (1)" : 1
     "Aviation (1)" : 1
     "Gestion de patrimoine (1)" : 1
@@ -119,7 +120,7 @@ pie
 |---|---|---|
 | 🇿🇦 Afrique du Sud | 7 | 6 |
 | 🇲🇦 Maroc | 5 | 3 |
-| 🇪🇬 Égypte | 3 | 5 |
+| 🇪🇬 Égypte | 3 | 6 |
 | 🇳🇬 Nigeria | 0 | 2 |
 
 ```mermaid
@@ -134,7 +135,7 @@ xychart-beta
 ## Tendances CTI
 
 - L’Afrique du Sud enregistre le volume le plus élevé en mars, avec 13 fiches.
-- Le Maroc et l’Égypte comptent chacun 8 fiches, dont des publications concernant des institutions publiques.
+- Le Maroc compte 8 fiches et l’Égypte 9, dont des publications concernant des institutions publiques.
 - Les secteurs gouvernementaux et éducatifs représentent plus de 40 % des incidents.
 - Les fuites et intrusions représentent 22 des 41 fiches de mars.
 - Une exposition de chaîne d’approvisionnement et une intrusion financière directe sont documentées pendant le mois.

@@ -17,7 +17,7 @@ Août 2025 enregistre **13 victimes** documentées dans 10 pays, la dispersion g
 
 **Chiffres clés :**
 - 🔹 **13 victimes** identifiées
-- 🔹 **10 groupes actifs** : Qilin (3), Inconnu (2), RainbowDF (1), Chucky_BF (1), Akira (1), Warlock (1), Direwolf (1), InCransom (1), GhostCrawt (1), BIGBROTHER (1)
+- 🔹 **10 groupes actifs** : Qilin (3), Inconnu (2), RainbowDF (1), Chucky_BF (1), Akira (1), Warlock (1), Direwolf (1), InCransom (1), GhostCrawl (1), BIGBROTHER (1)
 - 🔹 **Pays touchés** : Afrique du Sud (3), Tunisie (2), Kenya (1), Maroc (1), Nigéria (1), Algérie (1), Ouganda (1), Égypte (1), Maurice (1), Togo (1)
 - 🔹 **Secteurs** : Énergie/Infrastructures critiques (2), Banque & Finance (3), Technologie/Logiciel (3), Gouvernement (2), Télécom/IT (1), Agroalimentaire/Industrie (1), Logistique (1)
 
@@ -37,7 +37,7 @@ Août 2025 enregistre **13 victimes** documentées dans 10 pays, la dispersion g
 | 18 août | Body Graphics Tattoo Supply | Afrique du Sud | Inconnu |
 | 18 août | International Freight & Commerce (IFC) | Tunisie | Direwolf |
 | 20 août | Netstar South Africa (deuxième attaque) | Afrique du Sud | InCransom |
-| 23 août | TEAM4 Security | Égypte | GhostCrawt |
+| 23 août | TEAM4 Security | Égypte | GhostCrawl |
 | 25 août | SWAN Mauritius | Maurice | Qilin |
 | 25 août | Infrastructures gouvernementales (gouv.tg) | Togo | BIGBROTHER |
 
@@ -54,7 +54,7 @@ timeline
               Body Graphics (Afrique du Sud) - Inconnu
               IFC Tunisie (Tunisie) - Direwolf
     20 août : Netstar SA (Afrique du Sud) - InCransom
-    23 août : TEAM4 Security (Égypte) - GhostCrawt
+    23 août : TEAM4 Security (Égypte) - GhostCrawl
     25 août : SWAN Maurice - Qilin
               Infra. gouv. Togo - BIGBROTHER
 ```
@@ -125,7 +125,7 @@ xychart-beta
 | Warlock | 1 | SYSPRO (Afrique du Sud) |
 | Direwolf | 1 | IFC Tunisie |
 | InCransom | 1 | Netstar SA (deuxième attaque) |
-| GhostCrawt | 1 | TEAM4 Security (Égypte) |
+| GhostCrawl | 1 | TEAM4 Security (Égypte) |
 | BIGBROTHER | 1 | Infrastructure gouvernementale du Togo |
 
 ---
@@ -133,7 +133,7 @@ xychart-beta
 ### 4. Points d'attention
 
 - **Qilin domine août** : 3 victimes dans 3 pays distincts (Kenya, Ouganda, Maurice) ciblant **la production d'électricité, le transport d'électricité et l'assurance**, une campagne délibérée contre les infrastructures financières et énergétiques critiques d'Afrique de l'Est et australe.
-- **Brèche Zenith Bank** : l'une des plus grandes banques du Nigéria et d'Afrique anglophone fait face à une exfiltration revendiquée de **1,8 million de dossiers** incluant données clients et fichiers employés, risque financier systémique potentiel.
+- **Brèche Zenith Bank** : l'une des plus grandes banques du Nigéria et d'Afrique anglophone fait face à une exfiltration revendiquée de **1,8 million de dossiers** incluant données clients et fichiers employés ; AFRINTEL a examiné un échantillon CSV local de 18 lignes sans reproduire de valeurs brutes.
 - **Risque de chaîne d'approvisionnement SYSPRO** : la compromission d'un grand éditeur de logiciel ERP expose les clients industriels et de distribution potentiellement équipés de SYSPRO. Une évaluation d'impact est requise sur l'ensemble de la base clients.
 - **Vente d'accès aux systèmes gouvernementaux togolais** : BIGBROTHER liste un accès admin à `gouv.tg` pour 1 000 $ en Monero, indicateur direct d'une compromission active et privilégiée des infrastructures numériques étatiques.
 - **Deuxième attaque contre Netstar** : InCransom revendique Netstar South Africa (suivi de véhicules/SVR, filiale Altron) pour la deuxième fois, renforçant le pattern de double-claim et revente de données observé les mois précédents.

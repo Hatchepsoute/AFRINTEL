@@ -15,9 +15,9 @@ TLP:CLEAR, diffusion publique
 
 AFRINTEL a documenté **239 incidents cyber liés à l'Afrique** durant le premier semestre 2026 : **113 incidents ransomware**, **125 fuites de données ou ventes d'accès** et **1 défacement de sites web**.
 
-Les fuites et ventes d'accès représentent **52,7 %** de l'activité recensée, contre **46,9 %** pour le ransomware. En excluant l'unique défacement, les deux catégories principales regroupent 238 incidents : 47,1 % de ransomware et 52,9 % de fuites ou ventes d'accès.
+Les fuites et ventes d'accès devancent légèrement le ransomware sur l'ensemble du semestre, **52,3 %** contre **47,3 %**. En retirant l'unique défacement, l'écart bouge à peine : 47,5 % de ransomware, 52,5 % de fuites ou ventes d'accès sur les 238 incidents restants.
 
-L'activité augmente fortement au deuxième trimestre. Avril et mai totalisent **117 incidents**, soit **49,0 %** du semestre. Juin enregistre moins d'incidents qu'avril et mai, mais le ransomware retrouve la parité avec les fuites, avec 20 incidents dans chaque catégorie.
+Ce qui compte vraiment, c'est l'accélération au deuxième trimestre. Avril et mai à eux seuls totalisent **117 incidents**, quasiment la moitié du semestre à **49,0 %**. Juin retombe par rapport aux deux, mais le ransomware revient à la parité avec les fuites, 20 incidents dans chaque catégorie.
 
 ## 2. Méthodologie et périmètre
 
@@ -97,16 +97,16 @@ xychart-beta
 | deuxième trimestre, avril à juin | 57 | 100 | 0 | 157 |
 | **S1 2026** | **113** | **125** | **1** | **239** |
 
-Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestre**, soit une hausse de **91,5 %**. Le ransomware reste quasi stable, passant de 56 incidents au premier trimestre à 57 au deuxième. Les fuites et ventes d'accès passent de 25 au premier trimestre à 100 au deuxième trimestre, soit une hausse de **300 %**.
+Le deuxième trimestre devance le premier de **75 incidents**, une hausse de 91,5 %. Le ransomware a à peine bougé, 56 incidents au T1 contre 57 au T2. C'est du côté des fuites et ventes d'accès que la croissance s'est jouée, 25 au T1 contre 100 au T2, une hausse de **300,0 %**.
 
 ## 6. Principaux constats CTI
 
-1. **Le ransomware reste persistant sans accélération continue.** Son volume mensuel reste compris entre 17 et 20 incidents.
-2. **Les fuites deviennent le principal moteur du volume au deuxième trimestre.** Avril et mai enregistrent 80 fuites ou ventes d'accès, contre 25 sur l'ensemble du premier trimestre.
-3. **Juin modifie l'équilibre sans revenir à la situation du premier trimestre.** Le volume baisse après le pic d'avril-mai, mais le ransomware revient à 50 % des incidents mensuels.
-4. **Le semestre est géographiquement concentré.** L'Afrique du Sud, l'Égypte et le Maroc regroupent 137 des 239 fiches, soit 57,3 %.
-5. **Government / Administration est le premier secteur normalisé.** Il représente 70 fiches, soit 29,3 %, devant Industrie / Automobile / Fabrication / Construction / Mines et Finance / Banking avec 25 fiches chacun.
-6. **La répétition des publications ne démontre pas une campagne d'intrusion commune.** Une activité associée au même compte source sur plusieurs mois est décrite comme une continuité de publication tant que les fiches n'établissent pas de vecteur d'accès commun.
+1. **Le ransomware s'est maintenu plutôt qu'accéléré.** Son volume mensuel n'a jamais quitté la fourchette 17-20.
+2. **Les fuites ont porté le deuxième trimestre.** Avril et mai à eux seuls, 80 fuites ou ventes d'accès, contre 25 pour tout le premier trimestre.
+3. **Juin a déplacé l'équilibre sans revenir aux conditions du T1.** Le volume total a baissé après le pic avril-mai, mais le ransomware est remonté à la moitié des incidents du mois.
+4. **Le semestre est resté géographiquement concentré.** Afrique du Sud, Égypte et Maroc réunissent à eux trois 137 des 239 fiches, 57,3 %.
+5. **Gouvernement et administration dominent tous les autres secteurs.** 70 fiches, 29,3 %, avec Industrie/Automobile/Fabrication/Construction/Mines et Finance/Banque à égalité derrière à 25 chacun.
+6. **Un nom qui revient d'un mois à l'autre ne prouve pas une intrusion commune.** Une activité associée au même compte source sur plusieurs mois est enregistrée comme une continuité de publication tant que les fiches n'établissent pas de vecteur d'accès partagé.
 
 ## 7. Limites du renseignement
 
@@ -124,7 +124,7 @@ Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestr
 | Libellé pays direct | Fiches |
 |---|---:|
 | 🇿🇦 Afrique du Sud | 48 |
-| 🇪🇬 Égypte | 45 |
+| 🇪🇬 Égypte | 46 |
 | 🇲🇦 Maroc | 44 |
 | 🇹🇳 Tunisie | 16 |
 | 🇳🇬 Nigeria | 15 |
@@ -152,7 +152,6 @@ Le deuxième trimestre enregistre **75 incidents de plus que le premier trimestr
 | 🇲🇬 Madagascar | 1 |
 | 🇬🇳 Guinée | 1 |
 | 🇬🇦 Gabon | 1 |
-| 🇨🇩 République démocratique du Congo | 1 |
 | 🇨🇲 Cameroun | 1 |
 | 🇧🇯 Bénin | 1 |
 | **Fiches mono-pays** | **233** |
@@ -249,15 +248,15 @@ Le total des incidents reste **239**. Le remplacement des six fiches multi-pays 
 
 Aucune technique n'est attribuée à un incident du S1 sans télémétrie probante.
 
-Le premier semestre fait apparaître deux risques parallèles. Le ransomware conserve un niveau opérationnel stable, tandis que les fuites et ventes d'accès augmentent fortement au deuxième trimestre. Le changement structurel le plus important est la progression du courtage de données, des expositions d'identifiants et des publications de données structurées.
+Le premier semestre fait ressortir deux risques qui avancent en parallèle. Le ransomware a tenu une base opérationnelle stable, pendant que les fuites et ventes d'accès explosaient au deuxième trimestre. Réduire le semestre à une simple vague ransomware raterait l'essentiel. Le vrai changement structurel, c'est la montée du courtage de données, de l'exposition d'identifiants et de la publication de jeux de données structurés.
 
-Pour le second semestre, AFRINTEL devra déterminer si la répartition 50/50 de juin marque un retour durable du ransomware ou une correction temporaire après le pic de fuites d'avril et mai.
+Pour le second semestre, AFRINTEL devra surveiller si la répartition 50/50 de juin devient un retour durable du ransomware, ou si ce n'était qu'une correction temporaire après le pic de fuites d'avril-mai.
 
 ## 10. Conclusion
 
-AFRINTEL a recensé **239 incidents au premier semestre 2026** : **113 ransomware**, **125 fuites ou ventes d'accès** et **1 défacement**. Le deuxième trimestre représente 157 fiches, soit 65,7 % de l'activité semestrielle. Toute la hausse nette par rapport au premier trimestre provient des fuites et ventes d'accès.
+AFRINTEL a recensé **239 incidents sur l'ensemble du S1 2026** : **113 ransomware**, **125 fuites ou ventes d'accès**, **1 défacement**. Le deuxième trimestre porte 157 de ces fiches, 65,7 % de l'activité semestrielle. Toute la croissance nette par rapport au T1 vient des fuites et ventes d'accès, pas du ransomware.
 
-La priorité défensive est double : maintenir la préparation au ransomware tout en renforçant les contrôles contre l'exposition d'identifiants, l'extraction massive de données, l'exposition du stockage cloud et les ventes clandestines de données.
+La priorité défensive tient sur deux fronts à la fois : maintenir la préparation au ransomware tout en resserrant les contrôles contre l'exposition d'identifiants, l'extraction massive de données, l'exposition du stockage cloud et les ventes clandestines de données.
 
 ### Contrôles de cohérence
 

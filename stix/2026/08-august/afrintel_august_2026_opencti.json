@@ -1,0 +1,487 @@
+{
+  "type": "bundle",
+  "id": "bundle--a82d822b-6f09-5cc4-aca2-c0500cc21755",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "Florence, post published on a cybercriminal forum",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "08-august"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--caddf769-cb0a-535b-9ce7-604ac85cb5bb",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "Ministry of Commerce",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Government / Public administration / Commerce.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Gouvernement / Administration publique / Commerce.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "algeria",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Government / Public administration / Commerce",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--d86ef932-0b24-5a6e-a50d-29452e7eda13",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "AFRINTEL August 2026 incident 01: Ministry of Commerce",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed access sale affecting Ministry of Commerce in Algeria on 05 August 2026. The source actor is listed as Florence, post published on a cybercriminal forum. Status: Claim - Unverified. Sector: Government / Public administration / Commerce. Source summary: The Algerian Ministry of Commerce is the public administration responsible for national commerce policy, market regulation and related administrative services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type vente d'accès concernant Ministère du Commerce en Algérie, à la date du 05 août 2026. L'acteur source est indiqué comme Florence, publication sur un forum cybercriminel. Statut : Claim - Unverified. Secteur : Gouvernement / Administration publique / Commerce. Résumé de la source : Le ministère algérien du Commerce est l’administration publique chargée de la politique commerciale nationale, de la régulation des marchés et des services administratifs associés.",
+      "first_seen": "2026-08-05T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "access-sale",
+        "algeria",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_opencti_incident_type": "access-sale",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_sector_raw": "Government / Public administration / Commerce",
+      "x_afrintel_actor": "Florence, post published on a cybercriminal forum",
+      "x_afrintel_date_display": "05 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--35e9500e-73a3-593c-93a8-3383eb7b691a",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--d86ef932-0b24-5a6e-a50d-29452e7eda13",
+      "target_ref": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6d6e40e8-5bc5-5365-af38-4bd906396ede",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
+      "target_ref": "identity--caddf769-cb0a-535b-9ce7-604ac85cb5bb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1658bb14-775c-5a6f-88f5-f0fc57c75609",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--d86ef932-0b24-5a6e-a50d-29452e7eda13",
+      "target_ref": "identity--caddf769-cb0a-535b-9ce7-604ac85cb5bb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "08-august"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9986c9de-a74c-51e0-908c-478b1cb5d5bb",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "Unidentified PAYGO device financing platform (Angaza-based)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Kenya. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "kenya",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "sectors": [
+        "financial-services"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--2cda7a8c-29e9-58e2-a3c4-5153ad54ad6a",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "AFRINTEL August 2026 incident 02: Unidentified PAYGO device financing platform (Angaza-based)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Unidentified PAYGO device financing platform (Angaza-based) in Kenya on 08 August 2026. The source actor is listed as OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket. Status: Data Fully Published. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail. Source summary: The reviewed material describes Kenyan operations of an unidentified pay-as-you-go (PAYGO) consumer device financing platform built on the Angaza SaaS system, used to sell branded smartphones (Tecno Spark and Tecno Pop models observed) on installment plans through local field agents. The same archive reportedly contains data for parallel operations in at least a dozen additional markets across Africa and Asia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza) en Kenya, à la date du 08 août 2026. L'acteur source est indiqué comme OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement. Statut : Data Fully Published. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail. Résumé de la source : Les éléments examinés décrivent les opérations kényanes d'une plateforme non identifiée de financement d'appareils en paiement échelonné (PAYGO), construite sur le système SaaS Angaza, utilisée pour vendre des smartphones de marque (modèles Tecno Spark et Tecno Pop observés) à crédit via des agents de terrain locaux. La même archive contiendrait des données pour des opérations parallèles dans au moins une douzaine de marchés supplémentaires en Afrique et en Asie.",
+      "first_seen": "2026-08-08T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-fully-published",
+        "kenya",
+        "financial-services"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Data Fully Published",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_sector_raw": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
+      "x_afrintel_actor": "OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket",
+      "x_afrintel_date_display": "08 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0bc3c544-e59b-5418-9198-edcd5bbe18e1",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--2cda7a8c-29e9-58e2-a3c4-5153ad54ad6a",
+      "target_ref": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--57b21e2e-16e6-5818-a4c0-86f7d60cfb3a",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
+      "target_ref": "identity--9986c9de-a74c-51e0-908c-478b1cb5d5bb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d59be69c-69c1-5202-a452-95f5ddcd4bd0",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--2cda7a8c-29e9-58e2-a3c4-5153ad54ad6a",
+      "target_ref": "identity--9986c9de-a74c-51e0-908c-478b1cb5d5bb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "08-august"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9b484201-0e5b-56ef-a412-b950f11a0ec1",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "mpowa.mobi (Youth Services Platform)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Youth Development / Employment Services (Government-adjacent).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Développement de la jeunesse / Services à l'emploi (proche du gouvernement).",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Youth Development / Employment Services (Government-adjacent)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--2236db8f-b36e-53e8-bb80-9d1ef82946eb",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "name": "AFRINTEL August 2026 incident 03: mpowa.mobi (Youth Services Platform)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting mpowa.mobi (Youth Services Platform) in South Africa on 08 August 2026. The source actor is listed as exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool. Status: Data Fully Published. Sector: Youth Development / Employment Services (Government-adjacent). Source summary: mpowa.mobi is a South African government-adjacent youth development and employment platform connecting young jobseekers with opportunities and support services, reportedly developed as part of a Code for South Africa-linked initiative.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant mpowa.mobi (Plateforme de services jeunesse) en Afrique du Sud, à la date du 08 août 2026. L'acteur source est indiqué comme exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse. Statut : Data Fully Published. Secteur : Développement de la jeunesse / Services à l'emploi (proche du gouvernement). Résumé de la source : mpowa.mobi est une plateforme sud-africaine de développement de la jeunesse et d'aide à l'emploi, proche des dispositifs publics, mettant en relation de jeunes demandeurs d'emploi avec des opportunités et des services d'accompagnement, développée dans le cadre d'une initiative liée à Code for South Africa.",
+      "first_seen": "2026-08-08T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-fully-published",
+        "south-africa",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Data Fully Published",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_sector_raw": "Youth Development / Employment Services (Government-adjacent)",
+      "x_afrintel_actor": "exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool",
+      "x_afrintel_date_display": "08 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0403bedf-2653-535f-aa64-ed4b6366aa78",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--2236db8f-b36e-53e8-bb80-9d1ef82946eb",
+      "target_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6e9a0650-b8f4-5ab1-b98b-ea2d02494b6e",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
+      "target_ref": "identity--9b484201-0e5b-56ef-a412-b950f11a0ec1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8e60494b-451f-51ba-ad30-86433660434c",
+      "created": "2026-08-08T12:50:30Z",
+      "modified": "2026-08-08T12:50:30Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--2236db8f-b36e-53e8-bb80-9d1ef82946eb",
+      "target_ref": "identity--9b484201-0e5b-56ef-a412-b950f11a0ec1",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}

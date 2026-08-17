@@ -1,32 +1,32 @@
-## 📊 Liste des victimes regroupées par pays (2024)
+## 📊 Victimes regroupées par pays (2024)
 
 ### 🇿🇦 Afrique du Sud (30 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| TiAuto Investments | Industrie manufacturière / Distribution automobile | lockbit3 |
-| Tiger Wheel & Tyre (TWT) | Distribution automobile / Services de montage | lockbit3 |
-| Crowe South Africa | Audit / Comptabilité / Conseil | lockbit3 |
-| The Aurum Institute | Santé / Recherche médicale | lockbit3 |
-| ERWAT | Eau / Assainissement | dragonforce |
-| Government Pensions Administration Agency (GPAA) | Gouvernement / Administration des pensions | lockbit3 |
-| Nampak | Industrie manufacturière / Emballage | lockbit3 |
-| Caxton and CTP Publishers and Printers | Médias / Édition / Impression | hunters |
-| ThinkAdam | Technologies / Gestion de terminaux | spacebears |
-| Lenmed (Mai) | Santé | lockbit3 |
-| Kamo Jou Trading | Services financiers | ransomhub |
-| Botselo Mills | Agriculture / Agroalimentaire | arcusmedia |
-| Glyn Marais | Services juridiques / Cabinet d’avocats | cactus |
-| National Health Laboratory Service (NHLS) | Santé / Diagnostic de laboratoire | blacksuit |
-| South African Cities Network | Gouvernance urbaine / Politiques publiques | madliberator |
-| Sibanye-Stillwater | Industrie minière / Industrie lourde | ransomhouse |
-| Acdcexpress | Distribution | lockbit3 |
-| Lenmed (Août) | Santé | darkvault |
-| Gpf.Org.Za | Services financiers | darkvault |
-| Netconfig | Services managés / Télécommunications | ransomhub |
-| Don’t Waste Group | Services environnementaux / Gestion des déchets | incransom |
-| Onedayonly | E-commerce | killsec |
+| TiAuto Investments | Industrie automobile & Distribution | lockbit3 |
+| Tiger Wheel & Tyre | Automobile & Services de maintenance | lockbit3 |
+| Crowe Southern Africa | Audit, Conseil & Comptabilité | lockbit3 |
+| The Aurum Institute | Santé publique & Recherche médicale | lockbit3 |
+| ERWAT (Ekurhuleni Water Care Company) | Services publics (Gestion des eaux) | dragonforce |
+| Government Printing Works (GPW) | Administrations publiques & Impressions de sécurité d'État | lockbit3 |
+| Nampak | Industrie manufacturière (Emballages industriels) | lockbit3 |
+| Caxton and CTP Publishers and Printers | Médias, édition et audiovisuel | hunters |
+| Thinkadam | Technologies de l'information / Téléphonie | spacebears |
+| Lenmed | Healthcare services | lockbit3 |
+| Kamo jou trading | Services financiers & Assurances | ransomhub |
+| Botselo | Agriculture and agribusiness | arcusmedia |
+| Www.glynmarais | Attorney | cactus |
+| National health laboratory services (NHLS) | Santé / Services de laboratoires médicaux publics | blacksuit |
+| Cities network | Services de conseil urbain / Développement territorial | madliberator |
+| Sibanye-stillwater | Industrie lourde / Extraction minière (Or & Métaux du groupe du platine) | ransomhouse |
+| Acdcexpress | Retail (distribution) | lockbit3 |
+| Lenmed | Healthcare services | darkvault |
+| Gpf.za | Services financiers & Assurances | darkvault |
+| Wwwconfig | Télécommunications | ransomhub |
+| Don’t waste group | Services | incransom |
+| Onedayonly | Shops | killsec |
 | Enterpriseoutsourcing | Conseil en technologies de l'information | ransomhub |
-| Winwinza | Schools | ransomhub |
+| Winwinza | Éducation / Écoles | ransomhub |
 | GMG Mining Supplies | Industrie minière / Équipements industriels | sarcoma |
 | National Edging | Industrie / Fournitures industrielles | sarcoma |
 | Sumitomo Rubber South Africa | Industrie manufacturière / Pneumatiques | killsec |
@@ -36,194 +36,243 @@
 
 ---
 
-### 🇩🇿 Algérie (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇪🇬 Égypte (12 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Yassir | Technologies / Mobilité et livraison | killsec |
-
----
-
-### 🇧🇼 Botswana (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Water Utilities Corporation (WUC) | Distribution d’eau / Service public | killsec |
-
----
-
-### 🇨🇲 Cameroun (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| CNPS Cameroun | Gouvernement / Sécurité sociale | spacebears |
-| Chanas Assurances S.A. | Services d'assurance | fog |
-
----
-
-### 🇨🇬 Congo (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| BUROTEC S.A. | Services aux entreprises / Solutions bureautiques | eldorado |
-
----
-
-### 🇨🇮 Côte d'Ivoire (3 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Nouvelle Parfumerie Gandour | Biens de consommation / Cosmétique | lockbit3 |
-| Trésor Public de Côte d'Ivoire (DGTCP) | Gouvernement / Finances publiques | hunters |
-| Codival | Distribution / Transport de fonds | spacebears |
-
----
-
-### 🇩🇯 Djibouti (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Djibouti Ports and Free Zones Authority (DPFZA) | Gouvernement / Ports et zones franches | ransomhub |
-
----
-
-### 🇪🇬 Égypte (11 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| ArpuPlus | Technologies / Services mobiles à valeur ajoutée | medusa |
-| Go4Kora | Médias sportifs / Streaming | ransomhub |
-| El Ezaby Pharmacy | Pharmacie / Santé | lockbit3 |
-| Power Generation Engineering and Services Company | Énergie / Ingénierie électrique | ransomhub |
-| El Araby Group | Industrie électronique / Distribution | lockbit3 |
-| Egyptian Sudanese | Services | arcusmedia |
-| Assih | Services | lockbit3 |
-| Matouk Bassiouny | Services juridiques / Cabinet d’avocats | raworld |
+| Btech.com | Commerce de détail / Électronique | Tanaka, publication sur un forum cybercriminel (RaidForums) |
+| ArpuPlus | Technologies numériques & Télécoms | medusa |
+| Go4Kora | Médias sportifs & Divertissement | ransomhub |
+| El Ezaby Pharmacy | Santé & Distribution pharmaceutique | lockbit3 |
+| PGESCo | Énergie & Ingénierie des infrastructures | ransomhub |
+| Elarabygroup | Business Services | lockbit3 |
+| Egyptian sudanese | Services | arcusmedia |
+| Assih | Services aux entreprises / Conseil | lockbit3 |
+| Matouk Bassiouny | Services juridiques / Cabinet d'avocats | raworld |
 | Egyptian Tax Authority (ETA) | Gouvernement / Administration fiscale | moneymessage |
 | Contrack Facilities Management | Services aux entreprises / Facility management | raworld |
 | Kazyon | Grande distribution / Hard-discount | moneymessage |
 
 ---
 
-### 🇪🇹 Éthiopie (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇩🇿 Algérie (7 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Habesha Cement | Industrie lourde / Matériaux de construction | lockbit3 |
+| Université d'Oran | Éducation / Enseignement supérieur | zebi, republication sur un forum cybercriminel |
+| Hôpital Chahids Mahmoudi (hcm-dz.com) | Santé / Établissement hospitalier privé | Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel |
+| Université de Tlemcen (univ-tlemcen.dz) | Éducation / Enseignement supérieur | Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel |
+| Algeria.com (portail web) | Médias / Portail web (voyage, actualités, style de vie) | Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel |
+| Yassir | Technologies / Mobilité et livraison | killsec |
+| Ministère de l'Éducation Nationale (education.gov.dz) | Gouvernement / Éducation nationale | Moroccan Empire ; republié par AmeliaBeaumont sur un forum cybercriminel |
+| ASJP (Algerian Scientific Journal Platform) | Éducation / Recherche Scientifique / Publication Académique | funksec |
 
 ---
 
-### 🇬🇭 Ghana (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇳🇬 Nigeria (7 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
+| The Citizens' Watch | Société civile / Gouvernance / Organisation à but non lucratif | X0Frankenstein, publication sur un forum cybercriminel |
+| Nestoil | Construction | blacksuit |
+| Nigerian Navy (navy.mil.ng) | Défense / Sécurité Nationale | NizaarFarah (compte source) |
+| Prestataire non identifié d’établissements de santé | Santé / Services médicaux | Tanaka |
+| Environmental Design International | Ingénierie / Conseil | akira |
+| Briatek | Conseil IT / Intégration logicielle | killsec |
+| Gouvernement de l'État d'Ekiti | Administrations publiques / Gouvernement d'État | funksec |
+
+---
+
+### 🇹🇳 Tunisie (6 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| SOPEM Tunisie | Industrie manufacturière (Métallurgie) | hunters |
+| ATL Leasing | Services financiers & Crédit-bail | hunters |
+| Maxcess-logistics | Logistique & Chaîne d'approvisionnement | killsec |
+| Eventizer | Événementiel / Plateforme numérique / Services aux entreprises | Bambi, publication sur un forum cybercriminel |
+| Excelplast Tunisie | Industrie manufacturière / Plasturgie | orca |
+| Groupe SETCAR | Automobile / Véhicules industriels | ransomhub |
+
+---
+
+### 🇲🇦 Maroc (5 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Morocco Forum Site | Technologie / Communauté en ligne | r57 |
+| Higher School of Commerce and Management (ESGC.MA) | Education / Enseignement superieur | Non attribue ; publication par UnknownMember |
+| SM EMBALLAGE | Industrie manufacturière / Emballages industriels | spacebears |
+| Résidences universitaires Al Massira | Éducation / Hébergement étudiant | bxxxx1 |
+| Arab Civil Aviation Organization (ACAO) | Aviation / Organisation intergouvernementale | Non attribué ; republié par Hxp7 |
+
+---
+
+### 🇧🇫 Burkina Faso (4 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| BIA-Market | E-commerce / Retail | Tanaka, publication sur le forum SQL.ticanalyse.org |
+| ONEF (Observatoire national de l’emploi et de la formation) | Gouvernement / Emploi et formation | Pedi |
+| Portail du système de santé publique du Burkina Faso | Santé / Santé publique | Sentap |
+| Système gouvernemental de gestion des données COVID-19 | Santé / Santé publique | Sentap |
+
+---
+
+### 🇨🇮 Côte d'Ivoire (4 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Agence Emploi Jeunes | Gouvernement / Services d'emploi | Tanaka, publication sur un forum clandestin |
+| Nouvelle Parfumerie Gandour (NPGCI) | Industrie cosmétique | lockbit3 |
+| Treasury of cote d'ivoire | Services financiers & Assurances | hunters |
+| Codival | Retail (distribution) | spacebears |
+
+---
+
+### 🇬🇭 Ghana (4 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Financial Intelligence Centre (FIC) | Gouvernement / Renseignement financier / Lutte anti-blanchiment | DataHoes, publication sur un forum cybercriminel |
+| National Teaching Council (tpg.ntc.gov.gh) | Gouvernement / Éducation (régulation de la formation des enseignants) | Tanaka, publication sur un forum clandestin |
 | Ghanare | Technologies | BrainCipher |
 | Volta River Authority (VRA) | Énergie / Production électrique | blacksuit |
 
 ---
 
-### 🇰🇪 Kenya (3 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇰🇪 Kenya (4 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Kenya Urban Roads Authority (KURA) | Transport routier / Infrastructures publiques | hunters |
-| InstaDriver | Logistique / Plateforme de recrutement | killsec |
+| Kenya News Broadcasting Company (K24) | Médias / Audiovisuel | Tanaka |
+| Kenya urban roads authority (KURA) | Infrastructures publiques / Transport routier urbain | hunters |
+| Instadriver.co | Retail (distribution) | killsec |
 | EFI Sales | Distribution / Équipements industriels | killsec |
 
 ---
 
-### 🇱🇾 Libye (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Mellitah Oil & Gas / ENI Gas Libya | Énergie / Pétrole et gaz | ransomhub |
-| Ministry of Interior Libya | Gouvernement / Ministère de l’Intérieur | killsec |
-
----
-
-### 🇲🇦 Maroc (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| SM Emballage | Industrie manufacturière / Emballage | spacebears |
-
----
-
-### 🇲🇺 Maurice (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Emtel | Télécommunications | arcusmedia |
-
----
-
-### 🇲🇷 Mauritanie (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| Bankily | Mobile banking / Services financiers | apt73/bashe |
-
----
-
 ### 🇳🇦 Namibie (4 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Agribank Namibia | Banque / Finance agricole | lockbit3 |
-| Environmental Investment Fund of Namibia (EIF) | Finance publique / Fonds environnemental | lockbit3 |
+| Agribank Namibia | Secteur bancaire & Financement agricole | lockbit3 |
+| Eif.na | Financial organizations | lockbit3 |
 | Namforce Life Insurance | Assurance-vie / Services financiers | spacebears |
 | Telecom Namibia | Télécommunications | hunters |
 
 ---
 
-### 🇳🇬 Nigéria (3 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇨🇲 Cameroun (3 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Nestoil | Pétrole et gaz / Ingénierie / Construction | blacksuit |
-| Environmental Design International | Ingénierie / Conseil | akira |
-| Briatek | Conseil IT / Intégration logicielle | killsec |
+| University of Buea (UB) | Éducation / Enseignement supérieur / Recherche | cnHunter, publication sur un forum cybercriminel |
+| CNPS Cameroun | Gouvernement / Sécurité sociale | spacebears |
+| Chanas Assurances S.A. | Services d'assurance | fog |
 
 ---
 
 ### 🇸🇨 Seychelles (3 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Remitano (Avril) | Échange de cryptomonnaies / Fintech | incransom |
-| Remitano (Août) | Échange de cryptomonnaies / Fintech | meow |
-| Ingotbrokers | Services financiers | darkvault |
+| Remitano (Cryptocurrency Exchange) | Institutions bancaires et financières / Crypto-actifs | incransom |
+| Remitano | Services financiers & Assurances | meow |
+| Ingotbrokers | Financial organizations | darkvault |
 
 ---
 
-### 🇸🇳 Sénégal (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇿🇼 Zimbabwe (3 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| SYSROAD | Conseil IT / Intégration télécom | lockbit3 |
-| SESAM Informatics | Technologies / Développement logiciel | hunters |
+| Zb financial holdings | Institutions financières / Banque & Assurance | madliberator |
+| Netone | Télécommunications | hunters |
+| Success microfinance bank | Banking institutions | meow |
+
+---
+
+### 🇪🇹 Éthiopie (3 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Regional Trade and Integration Ministries of Ethiopia | Gouvernement / Administration publique | ThreatSec, publication de Tanaka sur un forum clandestin |
+| National War College (nwc.ndu.edu) | Défense / Enseignement militaire | TheColorYellow, publication postée sur RaidForums |
+| Habesha Cement | Industrie lourde / Matériaux de construction | lockbit3 |
+
+---
+
+### 🇱🇾 Libye (2 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Mellitah Oil & Gas (Eni / NOC Joint Venture) | Énergie / Pétrole & Gaz | ransomhub |
+| Ministère de l'Intérieur (moi.gov.ly) | Gouvernement / Ministère de l'Intérieur | killsec |
 
 ---
 
 ### 🇸🇩 Soudan (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
 | Kenana Sugar Company | Agriculture / Industrie sucrière | ransomhub |
 | DAL Group | Agroalimentaire / Boissons | ransomhub |
 
 ---
 
+### 🇸🇳 Sénégal (2 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Sysroad | Information Technologies Consulting | lockbit3 |
+| SESAM Informatics | Technologies / Développement logiciel | hunters |
+
+---
+
 ### 🇹🇿 Tanzanie (2 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
 | College of Business Education (CBE) | Éducation / Enseignement supérieur | hellcat |
 | WOSAC | Transport maritime / Agence maritime | arcusmedia |
 
 ---
 
-### 🇹🇳 Tunisie (5 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇧🇼 Botswana (1 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| SOPEM Tunisie | Industrie manufacturière | hunters |
-| ATL Leasing | Services financiers / Leasing | hunters |
-| Maxcess Logistics | Logistique / Transit | killsec |
-| Excelplast Tunisie | Industrie manufacturière / Plasturgie | orca |
-| Groupe SETCAR | Automobile / Véhicules industriels | ransomhub |
+| Water Utilities Corporation (WUC) | Distribution d'eau / Service public | killsec |
 
 ---
 
-### 🇿🇲 Zambie (1 victime)
-| Victime | Secteur d'activité | Groupe Ransomware |
+### 🇨🇬 Congo (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Burotec.biz | Services | eldorado |
+
+---
+
+### 🇩🇯 Djibouti (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Dpfza.gov.dj | Government and administrations | ransomhub |
+
+---
+
+### 🇲🇬 Madagascar (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Université d'Antananarivo (univ-antananarivo.mg) | Éducation / Enseignement supérieur | RainbowBF |
+
+---
+
+### 🇲🇺 Maurice (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Emtel | Télécommunications | arcusmedia |
+
+---
+
+### 🇲🇷 Mauritanie (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Bankily | Mobile banking / Services financiers | apt73/bashe |
+
+---
+
+### 🇷🇼 Rwanda (1 victimes)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| Gouvernement du Rwanda (plusieurs domaines) | Gouvernement / Administration publique | Milad, publication sur un forum cybercriminel (compte depuis affiché comme banni) |
+
+---
+
+### 🇿🇲 Zambie (1 victimes)
+| Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
 | Tumeny Payments Limited | Fintech / Infrastructures de paiement | killsec |
 
 ---
-
-### 🇿🇼 Zimbabwe (3 victimes)
-| Victime | Secteur d'activité | Groupe Ransomware |
-| :--- | :--- | :--- |
-| ZB Financial Holdings | Services financiers / Banque | madliberator |
-| NetOne | Télécommunications | hunters |
-| Success Microfinance Bank | Banque / Microfinance | meow |

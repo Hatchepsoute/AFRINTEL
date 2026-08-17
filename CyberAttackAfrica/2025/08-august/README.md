@@ -10,7 +10,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 
 ## 2. Executive summary
 - **Total number of recorded attacks**: 13
-- **Most active actors**: qilin (3 attacks), unknown (2), akira (1), warlock (1), direwolf (1), incransom (1), RainbowDF (1), Chucky_BF (1), GhostCrawt (1), BIGBROTHER (1).
+- **Most active actors**: qilin (3 attacks), unknown (2), akira (1), warlock (1), direwolf (1), incransom (1), RainbowDF (1), Chucky_BF (1), GhostCrawl (1), BIGBROTHER (1).
 - **Most targeted sectors**: Technology (4), Energy (2), Banking/Finance (2), Agri‑food/Industry (1), Logistics (1), Retail (1), IoT/Security (1), Government (1).
 - **Most affected countries**: South Africa (3), Tunisia (2), Kenya (1), Morocco (1), Nigeria (1), Algeria (1), Uganda (1), Egypt (1), Mauritius (1), Togo (1).
 - **Notable data exfiltration volumes**: Zenith Bank (Nigeria) - 1.8 million records; New Era Com (Morocco) - 607 MB SQL dump; Body Graphics (South Africa) - over 6,500 client records; TEAM4 Security (Egypt) - multiple data sets.
@@ -28,7 +28,7 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | incransom | 1 |
 | RainbowDF | 1 |
 | Chucky_BF | 1 |
-| GhostCrawt | 1 |
+| GhostCrawl | 1 |
 | BIGBROTHER | 1 |
 | **Total** | **13** |
 
@@ -42,7 +42,7 @@ pie title Attack Distribution by Actor (August 2025)
     "incransom" : 1
     "RainbowDF" : 1
     "Chucky_BF" : 1
-    "GhostCrawt" : 1
+    "GhostCrawl" : 1
     "BIGBROTHER" : 1
 ```
 
@@ -121,7 +121,7 @@ xychart-beta
 ### 4.8 Chucky_BF (1 attack)
 - **06/08/2025**: New Era Com (Morocco, telecom/IT services) - public SQL dump of 607 MB containing more than 476,000 records.
 
-### 4.9 GhostCrawt (1 attack)
+### 4.9 GhostCrawl (1 attack)
 - **23/08/2025**: TEAM4 Security (Egypt, security/defense/RH services) - massive leak and sale of five datasets including HR, medical, civil, and financial records.
 
 ### 4.10 BIGBROTHER (1 attack)
@@ -140,7 +140,7 @@ graph LR
     incransom -->|Netstar| SouthAfrica3["🇿🇦 South Africa"]
     RainbowDF -->|Yasat| Tunisia2["🇹🇳 Tunisia"]
     Chucky_BF -->|New Era Com| Morocco["🇲🇦 Morocco"]
-    GhostCrawt -->|TEAM4| Egypt["🇪🇬 Egypt"]
+    GhostCrawl -->|TEAM4| Egypt["🇪🇬 Egypt"]
     BIGBROTHER -->|Govt Infrastructures| Togo["🇹🇬 Togo"]
 ```
 ## 5. Sector Analysis
@@ -181,7 +181,7 @@ timeline
     section 20 August
         incransom : Netstar (🇿🇦 South Africa)
     section 23 August
-        GhostCrawt : TEAM4 (🇪🇬 Egypt)
+        GhostCrawl : TEAM4 (🇪🇬 Egypt)
     section 25 August
         qilin : SWAN (🇲🇺 Mauritius)
         BIGBROTHER : Govt Infrastructures (🇹🇬 Togo)

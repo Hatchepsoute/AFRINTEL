@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Juin 2026 recense **40 incidents cyber signalés ou revendiqués publiquement** sur le continent : **20 publications ou divulgations ransomware (50 %)** et **20 fuites de données / ventes d'accès (50 %)**. Il s'agit d'une hausse de la part du ransomware par rapport à mai 2026, où elle représentait 28,1 % des 57 incidents du [jeu de données de mai](../05-may/victims_FR.md). Juin comprend une revendication d'exposition biométrique fintech à forte sensibilité, une publication d'identifiants en clair attribués à la messagerie d'une armée nationale et une succession de publications attribuées au même cluster contre des organisations marocaines sur trois mois.
+Juin 2026 a rapporté **40 incidents cyber signalés ou revendiqués publiquement** sur le continent, **20 publications ou divulgations ransomware (50 %)**, **20 fuites de données ou ventes d'accès (50 %)**. C'est une vraie hausse de la part ransomware par rapport à mai, où elle ne représentait que 28,1 % des 57 incidents du [jeu de données de mai](../05-may/victims_FR.md). Le mois a aussi apporté une revendication d'exposition biométrique fintech à forte sensibilité, des identifiants en clair publiés pour la messagerie d'une armée nationale, et une succession de publications du même cluster contre des organisations marocaines, déjà sur trois mois.
 
 Principales conclusions :
 - **20 publications ou divulgations ransomware (50 %)** et **20 fuites de données / ventes d'accès (50 %)**, une répartition équilibrée et une part ransomware supérieure à celle de mai.
@@ -300,14 +300,14 @@ pie showData
 | **4** | 🇾🇹 Mayotte | **1** | DeadLock |
 | **4** | 🇰🇪 Kenya | **1** | DeadLock |
 
-**Observations :** le ransomware a doublé sa part dans les incidents mensuels par rapport à mai (28 % à 50 %). **DeadLock** a été le groupe le plus dispersé géographiquement, touchant quatre pays répartis sur le continent (Gabon, Nigéria, Mayotte, Kenya) avec un schéma constant : revendication, menace de divulgation et, dans le cas de Mayotte, publication effective. **LockBit 5** a publié trois victimes situées dans trois pays en une seule semaine, le 18 juin. Aucun échantillon publié n’était accessible pour ces trois entrées lors de la collecte AFRINTEL. Les exceptions documentées par une publication de données sont la **Commune de Ouangani à Mayotte**, où DeadLock a effectivement publié 138 Mo incluant des données de paie et d'état civil, ainsi que **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
+**Observations :** la part du ransomware dans les incidents mensuels a doublé par rapport à mai, de 28 % à 50 %. **DeadLock** a été le groupe le plus dispersé géographiquement, quatre pays sur le continent (Gabon, Nigéria, Mayotte, Kenya), avec un schéma constant : revendication, menace de divulgation, et dans le cas de Mayotte, publication effective. **LockBit 5** a publié trois victimes dans trois pays en une seule semaine, le 18 juin, sans qu'aucun échantillon ne soit accessible pour ces trois fiches lors de la collecte AFRINTEL. Les deux exceptions où des données ont réellement été publiées : la **Commune de Ouangani à Mayotte**, où DeadLock a livré 138 Mo de données de paie et d'état civil, et **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
 
 ### 4.2 Fuites de données et ventes d'accès (20 incidents uniques, 33 occurrences pays)
 
 | Rang | Pays | Occurrences | Principaux acteurs |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇲🇦 Maroc | **9** | anisanas2 (7), 404Crew Cyber Team, Convince |
-| **2** | 🇳🇬 Nigéria | **4** | burti, 404Crew CT x NullSec Nigeria, NulleSecNg, Convince |
+| **2** | 🇳🇬 Nigéria | **4** | burti, 404Crew CT x NullSec Nigeria, NullSec Nigeria, Convince |
 | **3** | 🇪🇬 Égypte | **3** | Xyphorix, Convince, Governor |
 | **3** | 🇹🇿 Tanzanie | **3** | hammer, Convince, Governor |
 | **5** | 🇿🇦 Afrique du Sud | **2** | mosad, GOD User |
@@ -371,7 +371,7 @@ pie showData
 
 **Acteurs émergents :**
 - **burti** (Jeroid.co, Nigéria) : première apparition AFRINTEL, data broker fintech à forte sévérité.
-- **NulleSecNg** (fuite d'identifiants de l'armée nigériane) : à motivation politique, première apparition documentée.
+- **NullSec Nigeria** (fuite d'identifiants de l'armée nigériane) : à motivation politique, première apparition documentée.
 - **Convince** et **Governor** : deux acteurs distincts exploitant en parallèle des activités d'usurpation des forces de l'ordre ; potentiellement liés, tous deux apparus pour la première fois dans les archives AFRINTEL entre mai et juin 2026.
 - **mosad** (fuite de document classifié SANDF) : apparition unique, source militaire à forte sensibilité.
 
@@ -394,12 +394,12 @@ pie showData
 
 ### Tendances
 
-1. **Le ransomware regagne du terrain :** la répartition 50/50 est supérieure aux 28,1/71,9 de mai. Un mois ne suffit pas à établir un changement durable du comportement des acteurs, mais la dispersion de DeadLock et LockBit 5 justifie une surveillance.
-2. **Activité répétée ciblant le Maroc :** des publications attribuées à anisanas2 apparaissent en avril, mai et juin. La continuité est observée ; une opération coordonnée reste une hypothèse analytique.
-3. **Exposition fintech à forte sensibilité :** les éléments Jeroid.co suggèrent une défaillance grave de contrôle du stockage cloud impliquant des données KYC. Le volume complet et le vecteur d’accès initial restent non confirmés.
-4. **Hygiène des identifiants militaires et de défense :** les publications Armée nigériane et SANDF démontrent l’exposition de contenus sensibles. Les chemins de compromission et les défaillances de cycle de vie restent inconnus.
-5. **Offres transfrontalières d'usurpation des forces de l'ordre :** les publications Convince et Governor contiennent 15 mentions pays couvrant 11 pays africains. Les fiches n'établissent pas de lien entre les deux vendeurs.
-6. **Publications consécutives concernant des ministères libyens :** deux ministères sont publiés par le même acteur les 29 et 30 juin. Cette séquence justifie une surveillance sans établir une campagne durable.
+1. **Le ransomware regagne du terrain.** La répartition 50/50 dépasse largement les 28,1/71,9 de mai. Un mois ne suffit pas à parler de changement durable, mais la dispersion de DeadLock et LockBit 5 mérite d'être suivie.
+2. **Le Maroc reste une cible récurrente.** Des publications attribuées à anisanas2 apparaissent en avril, mai et juin. La continuité est bien réelle ; qu'il s'agisse d'une seule opération coordonnée reste une hypothèse.
+3. **Une exposition fintech qui paraît sérieuse.** Les éléments Jeroid.co pointent vers une vraie défaillance de contrôle du stockage cloud impliquant des données KYC. Volume complet et vecteur d'accès initial restent tous les deux non confirmés.
+4. **L'hygiène des identifiants militaires pose question.** Les publications Armée nigériane et SANDF montrent des contenus sensibles qui sortent. Comment les compromissions ont eu lieu et où le cycle de vie documentaire a lâché restent inconnus.
+5. **L'usurpation des forces de l'ordre passe les frontières.** Les publications Convince et Governor cumulent 15 mentions de pays sur 11 pays africains. Rien ne relie les deux vendeurs entre eux, cela dit.
+6. **Deux ministères libyens, coup sur coup.** Même acteur, 29 et 30 juin. À surveiller, pas encore une campagne établie.
 
 ### Lacunes de renseignement
 
@@ -463,7 +463,7 @@ Les techniques suivantes sont des hypothèses défensives dérivées des éléme
 
 ## 12. Conclusion
 
-Juin 2026 recense 40 incidents, contre 57 dans le [jeu de données de mai](../05-may/victims_FR.md), soit une baisse de 17 fiches (-29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 20 (-51,2 %). Le Maroc compte 9 des 38 incidents directs ; deux fiches supplémentaires sont multi-pays. Les publications attribuées à anisanas2 se poursuivent pour un troisième mois. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
+Juin se solde par 40 incidents, contre 57 dans le [jeu de données de mai](../05-may/victims_FR.md), une baisse de 17 fiches, 29,8 %. Les publications ransomware passent de 16 à 20, tandis que les fuites de données et ventes d'accès chutent nettement, de 41 à 20. Le Maroc compte 9 des 38 incidents directs, avec deux fiches multi-pays en plus. Les publications d'anisanas2 se poursuivent, déjà un troisième mois d'affilée. La publication Jeroid.co et celle sur les identifiants de l'armée nigériane restent les cas les plus sensibles du mois.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

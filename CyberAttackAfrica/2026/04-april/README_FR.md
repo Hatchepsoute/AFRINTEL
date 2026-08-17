@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Avril 2026 a enregistré **60 incidents cyber revendiqués publiquement** sur le continent - **20 publications ou revendications ransomware** et **40 fuites de données / ventes d’accès**. La menace s’intensifie avec une prolifération de courtiers de données, des expositions très sensibles (personnel du palais royal, documents d’identité, dossiers médicaux) et des ventes d’accès ciblant les gouvernements. Les groupes de ransomware **payload**, **apt73/bashe**, **thegentlemen** et **krybit** maintiennent la pression, tandis que les acteurs de fuites **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominent le marché souterrain.
+Avril 2026 a rapporté **60 incidents cyber revendiqués publiquement** sur le continent, **20 publications ou revendications ransomware**, **40 fuites de données ou ventes d'accès**. L'activité des courtiers de données a nettement accéléré ce mois-ci : expositions très sensibles (personnel du palais royal, documents d'identité, dossiers médicaux) et ventes d'accès ciblant des gouvernements se sont multipliées. Les groupes ransomware **payload**, **apt73/bashe**, **thegentlemen** et **krybit** ont maintenu la pression, pendant que **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominaient le marché souterrain des fuites.
 
 Principales conclusions :
 - **20 publications ou revendications ransomware (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
@@ -284,10 +284,10 @@ pie showData
 
 > **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-- **Concentration :** le Maroc (17), l’Égypte (11) et l’Afrique du Sud (8) représentent 36 des 60 incidents, soit 60 % du mois.
-- **Répartition des menaces :** 20 revendications ou publications ransomware et 40 fuites de données ou ventes d’accès ont été recensées dans 16 pays.
-- **Activité des acteurs :** Grubder arrive en tête des fuites avec 7 victimes. Payload, APT73/BASHE et TheGentlemen représentent chacun 4 revendications ransomware.
-- **Expositions à fort impact :** les revendications notables concernent des données du personnel du Palais royal au Maroc, Pick n Pay ASAP/Bottles.com en Afrique du Sud, la Kenya Airports Authority et la CNSS du Bénin.
+- **Concentration :** Maroc (17), Égypte (11) et Afrique du Sud (8) réunissent 36 des 60 incidents du mois, 60 %.
+- **Répartition des menaces :** 20 revendications ou publications ransomware, 40 fuites de données ou ventes d'accès, dans 16 pays.
+- **Activité des acteurs :** Grubder en tête côté fuites avec 7 victimes. Payload, APT73/BASHE et TheGentlemen revendiquent chacun 4 victimes ransomware.
+- **Expositions à fort impact :** données du personnel du Palais royal au Maroc, Pick n Pay ASAP/Bottles.com en Afrique du Sud, Kenya Airports Authority, CNSS du Bénin, les revendications qui marquent ce mois-ci.
 
 ---
 
@@ -306,7 +306,7 @@ pie showData
 | **7** | 🇸🇨 Seychelles | **1** | █ | apt73/bashe |
 | **8** | 🇿🇲 Zambie | **1** | █ | krybit |
 
-**Observations :** Le groupe ransomware **payload** a lourdement ciblé l’économie égyptienne (finance, pétrole, industrie). Le groupe **apt73/bashe** s’est étendu des gouvernements (Seychelles, Kenya) aux assurances et au pétrole.
+**Observations :** **payload** s'en est pris directement à l'économie égyptienne ce mois-ci, finance, pétrole, industrie. **apt73/bashe** a élargi son terrain de chasse, du gouvernement (Seychelles, Kenya) vers les assurances et le pétrole.
 
 
 
@@ -322,7 +322,7 @@ pie showData
 | **6** | 🇪🇬 Égypte | **2** | ██ | Grubder |
 | **–** | 🌍 Autres | **6** | ██████ | Divers (voir liste des victimes) |
 
-**Observations :** **Grubder** a vendu des bases allant de petites CRM (Customer Relationship Management) à des universités. **anisanas2** a ciblé la santé et le football marocains. **dark07x** a exposé des cartes d’identité et des dossiers automobiles. La fuite **Pick n Pay ASAP / Bottles.com** inclut des données de paiement complètes.
+**Observations :** **Grubder** a vendu de tout, de petites bases CRM jusqu'à des portails universitaires entiers. **anisanas2** est resté concentré sur le Maroc, santé et football. **dark07x** a exposé cartes d'identité et dossiers automobiles. La fuite **Pick n Pay ASAP / Bottles.com** est celle à surveiller : données de paiement complètes.
 
 ## 6. Impact sectoriel
 
@@ -339,9 +339,9 @@ pie showData
 | **Autres** *(Secteurs diffus)* | **18** | 30,0 % | ██████████████████ |
 
 **Observations clés :**
-* **Dominance du secteur public :** Le bloc secteur public (Gouvernement + Éducation) concentre à lui seul **38,3 %** des incidents.
-* **Données critiques convoitées :** Les données de santé restent une cible hautement stratégique pour les attaquants (incidents notables touchant la CNOPS, LNM6, Chezpara.ma et SUPTECH SANTÉ).
-* **Nouvelles tendances :** Les fédérations et ligues sportives (FRMF, FRMT, LRFA) émergent désormais comme des cibles de choix pour l'exfiltration et la revente de données.
+* Le secteur public, gouvernement plus éducation, concentre à lui seul **38,3 %** des incidents du mois.
+* Les données de santé restent une cible stratégique : CNOPS, LNM6, Chezpara.ma, SUPTECH SANTÉ, tous touchés.
+* Nouveau signal : les fédérations et ligues sportives (FRMF, FRMT, LRFA) commencent à devenir des cibles régulières pour l'exfiltration et la revente de données.
 
 ## 7. Profil des acteurs de menaces
 
@@ -380,12 +380,12 @@ pie showData
 
 ### 📈 Tendances majeures des cybermenaces
 
-* **Explosion de l'activité des Data Brokers :** On observe une monétisation agressive des données exfiltrées. Un seul acteur prolifique (**Grubder**) totalise à lui seul 7 victimes en un mois, revendant indifféremment des fichiers d'inscription universitaire ou des bases de données CRM d'entreprises.
-* **Marchandisation des documents d'identité (KYC) :** Les pièces d'identité officielles deviennent des produits de commodité sur le *dark web*. Plusieurs publications d'acteurs de menaces proposaient des lots de passeports scannés, de cartes nationales d'identité et de dossiers de conformité KYC (notamment via des fuites ciblant les *Documents d'identité marocains*, *Algérie Poste*, ou encore *Inter Partner Assistance*).
-* **Vente d'accès initiaux visant les infrastructures étatiques :** Les Initial Access Brokers (IAB) haussent considérablement leur niveau d'impact. Des profils comme **superduper1** (accès étatiques multi-pays) ou **w00l_ysh1** (Trésor Public du Sénégal) ont mis aux enchères des accès à privilèges élevés, incluant le compromis direct de Contrôleurs de Domaine (Domain Controllers).
-* **Diversification du ciblage par Ransomware :** Les groupes d'extorsion traditionnels ne se cantonnent plus aux entreprises de services standard. Le groupe **payload**, par exemple, s'est diversifié de manière agressive dans l'industrie lourde, l'immobilier, l'automobile et les infrastructures énergétiques et pétrolières.
-* **Compromission d'E-commerce et fuites de données de paiement :** Les failles applicatives exposent lourdement la chaîne monétique. L'incident ayant touché **Pick n Pay ASAP / Bottles.com** a révélé la fuite de numéros de cartes complets et de logs de validation 3D-Secure (3DS), illustrant un défaut majeur de conformité PCI-DSS dans la région.
-* **Aspiration ciblée de messageries officielles (Mailbox Scraping) :** L'exfiltration d'archives de messagerie complètes s'affirme comme une méthode de choix pour contourner la persistance complexe. Le cas de la **CNSS Bénin**, dont l'intégralité de la boîte mail officielle a été siphonnée, a exposé des milliers de cartes de pensionnés et de certificats de vie.
+* **Les courtiers de données ont eu un mois chargé.** Un seul nom ressort particulièrement, **Grubder**, 7 victimes distinctes rien qu'en avril, des fichiers d'inscription universitaire jusqu'aux bases CRM d'entreprises.
+* **Les documents d'identité deviennent une marchandise.** Plusieurs publications underground proposaient des lots de passeports scannés, de cartes nationales d'identité et de dossiers KYC complets, *Documents d'identité marocains*, *Algérie Poste* et *Inter Partner Assistance* parmi les cas les plus notables.
+* **Les courtiers d'accès ont visé les gouvernements.** **superduper1** a proposé un accès gouvernemental multi-pays, **w00l_ysh1** a visé le Trésor Public du Sénégal, tous deux revendiquant un accès à privilèges élevés avec compromission directe de contrôleurs de domaine.
+* **Les groupes ransomware ont diversifié leurs cibles.** **payload** en particulier ne s'est pas limité à ses cibles habituelles, poussant vers l'industrie lourde, l'immobilier, l'automobile et les infrastructures pétrolières et énergétiques.
+* **L'e-commerce continue de fuiter des données de paiement.** La compromission de **Pick n Pay ASAP / Bottles.com** a exposé des numéros de cartes complets et des logs 3D-Secure, le genre de signal qui pointe vers de vraies failles de conformité PCI-DSS dans la région.
+* **Des messageries entières ont été aspirées, pas juste des fichiers.** L'intégralité de la messagerie officielle de la **CNSS Bénin** a été siphonnée, cartes de pensionnés et certificats de vie inclus.
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
@@ -427,7 +427,7 @@ pie showData
 
 ## 13. Conclusion
 
-Avril compte 60 fiches, contre 41 en mars (+46,3 %). La hausse provient principalement des fuites de données et ventes d’accès, passées de 22 à 40 fiches. Le Maroc, l’Égypte et l’Afrique du Sud enregistrent les volumes les plus élevés. Des forums cybercriminels ont publié de manière répétée des offres concernant des bases africaines, des documents d’identité et des accès administratifs.
+Avril se solde par 60 fiches, contre 41 en mars, une hausse de 46,3 %. Les fuites de données et ventes d'accès portent l'essentiel de cette progression, de 22 à 40 fiches. Maroc, Égypte et Afrique du Sud prennent les volumes les plus élevés. Bases africaines, documents d'identité et accès administratifs n'ont cessé de circuler sur les forums cybercriminels tout au long du mois.
 
 **AFRINTEL** – African Cyber Threat Intelligence  
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

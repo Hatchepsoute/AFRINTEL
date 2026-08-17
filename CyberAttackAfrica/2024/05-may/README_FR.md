@@ -29,7 +29,7 @@ En mai 2024, l’Afrique a enregistré **8 nouvelles victimes** documentées d�
 
 | Date       | Victime                          | Pays             | Groupe ransomware |
 |------------|----------------------------------|------------------|-------------------|
-| 6 mai      | Nestoil                          | Nigéria          | Blacksuit         |
+| 6 mai      | Nestoil                          | Nigeria          | Blacksuit         |
 | 6 mai      | Elarabygroup                     | Égypte           | LockBit3          |
 | 7 mai      | Lenmed                           | Afrique du Sud   | LockBit3          |
 | 7 mai      | Kamo jou trading                 | Afrique du Sud   | RansomHub         |
