@@ -83,7 +83,7 @@ Principales conclusions :
 
 ```mermaid
 pie showData
- title Occurrences géographiques par pays - Juin 2026
+ title Occurrences géographiques - Juin 2026
  "Maroc" : 10
  "Afrique du Sud" : 6
  "Égypte" : 6
