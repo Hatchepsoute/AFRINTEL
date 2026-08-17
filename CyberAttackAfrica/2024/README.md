@@ -82,7 +82,7 @@ pie showData
 ### Ransomware, leaks and access sales by country
 
 | Country | Ransomware | Data leaks | Access sales | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
 | 🇿🇦 South Africa | 29 | 1 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
 | 🇪🇬 Egypt | 11 | 2 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
 | 🇩🇿 Algeria | 2 | 5 | 0 | 7 | ███████ | 🟧🟧 🟦🟦🟦🟦🟦 |
@@ -113,12 +113,12 @@ pie showData
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Chart | Distribution (approx. 1 block / 5 incidents) |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| North Africa | 34 | 22 | 12 | ████████ | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
-| Southern Africa | 43 | 42 | 1 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| West and Central Africa | 25 | 14 | 11 | ██████ | 🟧🟧🟧 🟦🟦🟦 |
-| East Africa | 14 | 8 | 6 | ███ | 🟧🟧 🟦🟦 |
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | ---: |
+| North Africa | 34 | 22 | 12 | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
+| Southern Africa | 43 | 42 | 1 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| West and Central Africa | 25 | 14 | 11 | 🟧🟧🟧 🟦🟦🟦 |
+| East Africa | 14 | 8 | 6 | 🟧🟧 🟦🟦 |
 
 ```mermaid
 xychart-beta
@@ -194,18 +194,18 @@ Government, finance, technology and education account for a substantial share of
 
 ## 6. Threat actor profile and risk assessment
 
-| Actor / source | Records |
-| :--- | ---: |
-| lockbit3 | 16 |
-| ransomhub | 12 |
-| killsec | 10 |
-| hunters | 8 |
-| spacebears | 5 |
-| arcusmedia | 4 |
-| Tanaka, publication on an underground forum | 3 |
-| blacksuit | 3 |
-| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 |
-| darkvault | 3 |
+| Actor / Group | Records | Activity |
+| :--- | ---: | ---: |
+| lockbit3 | 16 | ██████████ |
+| ransomhub | 12 | ████████ |
+| killsec | 10 | ██████ |
+| hunters | 8 | █████ |
+| spacebears | 5 | ███ |
+| arcusmedia | 4 | ██ |
+| Tanaka, publication on an underground forum | 3 | ██ |
+| blacksuit | 3 | ██ |
+| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 | ██ |
+| darkvault | 3 | ██ |
 
 | Country | Level |
 | :--- | ---: |

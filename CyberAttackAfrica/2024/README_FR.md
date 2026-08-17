@@ -81,44 +81,44 @@ pie showData
 
 ### Comparaison ransomware, fuites et ventes d’accès par pays
 
-| Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 🇿🇦 Afrique du Sud | 29 | 1 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| 🇪🇬 Égypte | 11 | 2 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇩🇿 Algérie | 2 | 5 | 0 | 7 | ███████ | 🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 4 | 3 | 0 | 7 | ███████ | 🟧🟧🟧🟧 🟦🟦🟦 |
-| 🇹🇳 Tunisie | 5 | 1 | 0 | 6 | ██████ | 🟧🟧🟧🟧🟧 🟦 |
-| 🇲🇦 Maroc | 1 | 4 | 0 | 5 | █████ | 🟧 🟦🟦🟦🟦 |
-| 🇧🇫 Burkina Faso | 0 | 2 | 2 | 4 | ████ | 🟦🟦🟦🟦 |
-| 🇬🇭 Ghana | 2 | 2 | 0 | 4 | ████ | 🟧🟧 🟦🟦 |
-| 🇨🇮 Côte d’Ivoire | 3 | 1 | 0 | 4 | ████ | 🟧🟧🟧 🟦 |
-| 🇰🇪 Kenya | 3 | 1 | 0 | 4 | ████ | 🟧🟧🟧 🟦 |
-| 🇳🇦 Namibie | 4 | 0 | 0 | 4 | ████ | 🟧🟧🟧🟧 |
-| 🇨🇲 Cameroun | 2 | 0 | 1 | 3 | ███ | 🟧🟧 🟦 |
-| 🇪🇹 Éthiopie | 1 | 2 | 0 | 3 | ███ | 🟧 🟦🟦 |
-| 🇸🇨 Seychelles | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇿🇼 Zimbabwe | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇱🇾 Libye | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇸🇳 Sénégal | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇸🇩 Soudan | 1 | 1 | 0 | 2 | ██ | 🟧 🟦 |
-| 🇹🇿 Tanzanie | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇧🇼 Botswana | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇨🇬 Congo | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇩🇯 Djibouti | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇲🇬 Madagascar | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇲🇷 Mauritanie | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇲🇺 Maurice | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇷🇼 Rwanda | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇿🇲 Zambie | 1 | 0 | 0 | 1 | █ | 🟧 |
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: |
+| 🇿🇦 Afrique du Sud | 29 | 1 | 30 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| 🇪🇬 Égypte | 11 | 2 | 13 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇩🇿 Algérie | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 4 | 3 | 7 | 🟧🟧🟧🟧 🟦🟦🟦 |
+| 🇹🇳 Tunisie | 5 | 1 | 6 | 🟧🟧🟧🟧🟧 🟦 |
+| 🇲🇦 Maroc | 1 | 4 | 5 | 🟧 🟦🟦🟦🟦 |
+| 🇧🇫 Burkina Faso | 0 | 4 | 4 |  🟦🟦🟦🟦 |
+| 🇬🇭 Ghana | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇨🇮 Côte d’Ivoire | 3 | 1 | 4 | 🟧🟧🟧 🟦 |
+| 🇰🇪 Kenya | 3 | 1 | 4 | 🟧🟧🟧 🟦 |
+| 🇳🇦 Namibie | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇨🇲 Cameroun | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇪🇹 Éthiopie | 1 | 2 | 3 | 🟧 🟦🟦 |
+| 🇸🇨 Seychelles | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇿🇼 Zimbabwe | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇱🇾 Libye | 2 | 0 | 2 | 🟧🟧 |
+| 🇸🇳 Sénégal | 2 | 0 | 2 | 🟧🟧 |
+| 🇸🇩 Soudan | 1 | 1 | 2 | 🟧 🟦 |
+| 🇹🇿 Tanzanie | 2 | 0 | 2 | 🟧🟧 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇨🇬 Congo | 1 | 0 | 1 | 🟧 |
+| 🇩🇯 Djibouti | 1 | 0 | 1 | 🟧 |
+| 🇲🇬 Madagascar | 0 | 1 | 1 |  🟦 |
+| 🇲🇷 Mauritanie | 1 | 0 | 1 | 🟧 |
+| 🇲🇺 Maurice | 1 | 0 | 1 | 🟧 |
+| 🇷🇼 Rwanda | 0 | 1 | 1 |  🟦 |
+| 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 
 ### Répartition géographique par région
 
-| Région | Occurrences | Ransomware | Fuites / accès | Barre | Distribution (environ 1 bloc / 5 incidents) |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 34 | 22 | 12 | ████████ | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
-| Afrique australe | 43 | 42 | 1 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l’Ouest et centrale | 25 | 14 | 11 | ██████ | 🟧🟧🟧 🟦🟦🟦 |
-| Afrique de l’Est | 14 | 8 | 6 | ███ | 🟧🟧 🟦🟦 |
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | ---: |
+| Afrique du Nord | 34 | 22 | 12 | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
+| Afrique australe | 43 | 42 | 1 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| Afrique de l’Ouest et centrale | 25 | 14 | 11 | 🟧🟧🟧 🟦🟦🟦 |
+| Afrique de l’Est | 14 | 8 | 6 | 🟧🟧 🟦🟦 |
 
 ```mermaid
 xychart-beta
@@ -194,18 +194,18 @@ Les secteurs gouvernemental, financier, technologique et éducatif concentrent u
 
 ## 6. Profil des acteurs et évaluation du risque
 
-| Acteur / source | Fiches |
-| :--- | ---: |
-| lockbit3 | 16 |
-| ransomhub | 12 |
-| killsec | 10 |
-| hunters | 8 |
-| spacebears | 5 |
-| arcusmedia | 4 |
-| Tanaka, publication on an underground forum | 3 |
-| blacksuit | 3 |
-| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 |
-| darkvault | 3 |
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | ---: |
+| lockbit3 | 16 | ██████████ |
+| ransomhub | 12 | ████████ |
+| killsec | 10 | ██████ |
+| hunters | 8 | █████ |
+| spacebears | 5 | ███ |
+| arcusmedia | 4 | ██ |
+| Tanaka, publication on an underground forum | 3 | ██ |
+| blacksuit | 3 | ██ |
+| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 | ██ |
+| darkvault | 3 | ██ |
 
 | Pays | Niveau |
 | :--- | ---: |

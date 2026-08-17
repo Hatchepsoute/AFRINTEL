@@ -82,45 +82,45 @@ pie showData
 
 ### Comparaison ransomware, fuites et ventes d’accès par pays
 
-| Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 🇪🇬 Égypte | 28 | 5 | 0 | 33 | █████████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇲🇦 Maroc | 12 | 19 | 0 | 31 | ███████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 Afrique du Sud | 28 | 2 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇩🇿 Algérie | 4 | 15 | 0 | 19 | ███████████████████ | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 9 | 5 | 0 | 14 | ██████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇹🇳 Tunisie | 6 | 7 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇰🇪 Kenya | 8 | 2 | 0 | 10 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇲🇷 Mauritanie | 0 | 8 | 0 | 8 | ████████ | 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇲 Zambie | 4 | 0 | 0 | 4 | ████ | 🟧🟧🟧🟧 |
-| 🇬🇭 Ghana | 2 | 1 | 0 | 3 | ███ | 🟧🟧 🟦 |
-| 🇨🇮 Côte d’Ivoire | 1 | 2 | 0 | 3 | ███ | 🟧 🟦🟦 |
-| 🇳🇦 Namibie | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇹🇿 Tanzanie | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇧🇼 Botswana | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇨🇩 RDC | 1 | 1 | 0 | 2 | ██ | 🟧 🟦 |
-| 🇲🇺 Maurice | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇸🇳 Sénégal | 1 | 0 | 1 | 2 | ██ | 🟧 🟦 |
-| 🇹🇬 Togo | 0 | 1 | 1 | 2 | ██ | 🟦🟦 |
-| 🇺🇬 Ouganda | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇿🇼 Zimbabwe | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇦🇴 Angola | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | █ | 🟦 |
-| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇩🇯 Djibouti | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇪🇷 Érythrée | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇬🇦 Gabon | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | █ | 🟧 |
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: |
+| 🇪🇬 Égypte | 28 | 5 | 33 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | 12 | 19 | 31 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 Afrique du Sud | 28 | 2 | 30 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇩🇿 Algérie | 4 | 15 | 19 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 9 | 5 | 14 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇹🇳 Tunisie | 6 | 7 | 13 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| 🇰🇪 Kenya | 8 | 2 | 10 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇲🇷 Mauritanie | 0 | 8 | 8 |  🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇲 Zambie | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇬🇭 Ghana | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇨🇮 Côte d’Ivoire | 1 | 2 | 3 | 🟧 🟦🟦 |
+| 🇳🇦 Namibie | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇹🇿 Tanzanie | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇧🇼 Botswana | 2 | 0 | 2 | 🟧🟧 |
+| 🇨🇩 RDC | 1 | 1 | 2 | 🟧 🟦 |
+| 🇲🇺 Maurice | 2 | 0 | 2 | 🟧🟧 |
+| 🇸🇳 Sénégal | 1 | 1 | 2 | 🟧 🟦 |
+| 🇹🇬 Togo | 0 | 2 | 2 |  🟦🟦 |
+| 🇺🇬 Ouganda | 2 | 0 | 2 | 🟧🟧 |
+| 🇿🇼 Zimbabwe | 2 | 0 | 2 | 🟧🟧 |
+| 🇦🇴 Angola | 0 | 1 | 1 |  🟦 |
+| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |
+| 🇨🇲 Cameroun | 1 | 0 | 1 | 🟧 |
+| 🇩🇯 Djibouti | 0 | 1 | 1 |  🟦 |
+| 🇪🇷 Érythrée | 0 | 1 | 1 |  🟦 |
+| 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
+| 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
+| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
 
 ### Répartition géographique par région
 
-| Région | Occurrences | Ransomware | Fuites / accès | Barre | Distribution (environ 1 bloc / 5 incidents) |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 96 | 50 | 46 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Afrique australe | 43 | 41 | 2 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l’Ouest et centrale | 38 | 16 | 22 | ████ | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| Afrique de l’Est | 19 | 15 | 4 | ██ | 🟧🟧🟧 🟦 |
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | ---: |
+| Afrique du Nord | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
+| Afrique de l’Ouest et centrale | 38 | 16 | 22 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| Afrique de l’Est | 19 | 15 | 4 | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart-beta
@@ -196,18 +196,18 @@ Les secteurs gouvernemental, financier, technologique et éducatif concentrent u
 
 ## 6. Profil des acteurs et évaluation du risque
 
-| Acteur / source | Fiches |
-| :--- | ---: |
-| qilin | 11 |
-| nightspire | 10 |
-| devman | 10 |
-| incransom | 8 |
-| funksec | 7 |
-| Phantom Atlas | 7 |
-| killsec | 6 |
-| kill9 | 6 |
-| Dark 07x Team | 5 |
-| ransomhub | 4 |
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | ---: |
+| qilin | 11 | ██████████ |
+| nightspire | 10 | █████████ |
+| devman | 10 | █████████ |
+| incransom | 8 | ███████ |
+| funksec | 7 | ██████ |
+| Phantom Atlas | 7 | ██████ |
+| killsec | 6 | █████ |
+| kill9 | 6 | █████ |
+| Dark 07x Team | 5 | █████ |
+| ransomhub | 4 | ████ |
 
 | Pays | Niveau |
 | :--- | ---: |
