@@ -70,6 +70,7 @@ pie showData
 ```
 
 
+```mermaid
 xychart-beta
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
@@ -102,6 +103,7 @@ Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géogra
 ### Ransomware par pays
 
 
+```mermaid
 xychart-beta
     title "Ransomware par pays - juillet 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
@@ -126,6 +128,7 @@ Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Cô
 | **Total** |  | **25** |  |
 
 
+```mermaid
 xychart-beta
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
@@ -148,6 +151,7 @@ Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, 
 La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
 
 
+```mermaid
 xychart-beta
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
@@ -200,6 +204,7 @@ Les fuites de données couvrent des documents d’identité, des données médic
 | Caoutchouc / Agriculture | 1 | 2,4 % | █ |
 | **Total** | **42** | **100 %** |  |
 
+```mermaid
 xychart-beta
     title "Répartition sectorielle - juillet 2026"
     x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
@@ -222,6 +227,7 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 | Autres sources nommées | 27 | Activités diverses |
 
 
+```mermaid
 xychart-beta
     title "Acteurs et sources les plus présents - juillet 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Autres sources"]
