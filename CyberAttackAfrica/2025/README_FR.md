@@ -82,45 +82,55 @@ pie showData
 
 ### Comparaison ransomware, fuites et ventes d’accès par pays
 
-| Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre |
-| :--- | ---: | ---: | ---: | ---: | ---: |
-| 🇪🇬 Égypte | 28 | 5 | 0 | 33 | █████████████████████████████████ |
-| 🇲🇦 Maroc | 12 | 19 | 0 | 31 | ███████████████████████████████ |
-| 🇿🇦 Afrique du Sud | 28 | 2 | 0 | 30 | ██████████████████████████████ |
-| 🇩🇿 Algérie | 4 | 15 | 0 | 19 | ███████████████████ |
-| 🇳🇬 Nigeria | 9 | 5 | 0 | 14 | ██████████████ |
-| 🇹🇳 Tunisie | 6 | 7 | 0 | 13 | █████████████ |
-| 🇰🇪 Kenya | 8 | 2 | 0 | 10 | ██████████ |
-| 🇲🇷 Mauritanie | 0 | 8 | 0 | 8 | ████████ |
-| 🇿🇲 Zambie | 4 | 0 | 0 | 4 | ████ |
-| 🇬🇭 Ghana | 2 | 1 | 0 | 3 | ███ |
-| 🇨🇮 Côte d’Ivoire | 1 | 2 | 0 | 3 | ███ |
-| 🇳🇦 Namibie | 3 | 0 | 0 | 3 | ███ |
-| 🇹🇿 Tanzanie | 3 | 0 | 0 | 3 | ███ |
-| 🇧🇼 Botswana | 2 | 0 | 0 | 2 | ██ |
-| 🇨🇩 RDC | 1 | 1 | 0 | 2 | ██ |
-| 🇲🇺 Maurice | 2 | 0 | 0 | 2 | ██ |
-| 🇸🇳 Sénégal | 1 | 0 | 1 | 2 | ██ |
-| 🇹🇬 Togo | 0 | 1 | 1 | 2 | ██ |
-| 🇺🇬 Ouganda | 2 | 0 | 0 | 2 | ██ |
-| 🇿🇼 Zimbabwe | 2 | 0 | 0 | 2 | ██ |
-| 🇦🇴 Angola | 0 | 1 | 0 | 1 | █ |
-| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | █ |
-| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 | █ |
-| 🇩🇯 Djibouti | 0 | 1 | 0 | 1 | █ |
-| 🇪🇷 Érythrée | 0 | 1 | 0 | 1 | █ |
-| 🇬🇦 Gabon | 1 | 0 | 0 | 1 | █ |
-| 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | █ |
-| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | █ |
+| Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre | Distribution |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 🇪🇬 Égypte | 28 | 5 | 0 | 33 | █████████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | 12 | 19 | 0 | 31 | ███████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 Afrique du Sud | 28 | 2 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇩🇿 Algérie | 4 | 15 | 0 | 19 | ███████████████████ | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 9 | 5 | 0 | 14 | ██████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇹🇳 Tunisie | 6 | 7 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| 🇰🇪 Kenya | 8 | 2 | 0 | 10 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| 🇲🇷 Mauritanie | 0 | 8 | 0 | 8 | ████████ | 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇲 Zambie | 4 | 0 | 0 | 4 | ████ | 🟧🟧🟧🟧 |
+| 🇬🇭 Ghana | 2 | 1 | 0 | 3 | ███ | 🟧🟧 🟦 |
+| 🇨🇮 Côte d’Ivoire | 1 | 2 | 0 | 3 | ███ | 🟧 🟦🟦 |
+| 🇳🇦 Namibie | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
+| 🇹🇿 Tanzanie | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
+| 🇧🇼 Botswana | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
+| 🇨🇩 RDC | 1 | 1 | 0 | 2 | ██ | 🟧 🟦 |
+| 🇲🇺 Maurice | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
+| 🇸🇳 Sénégal | 1 | 0 | 1 | 2 | ██ | 🟧 🟦 |
+| 🇹🇬 Togo | 0 | 1 | 1 | 2 | ██ | 🟦🟦 |
+| 🇺🇬 Ouganda | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
+| 🇿🇼 Zimbabwe | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
+| 🇦🇴 Angola | 0 | 1 | 0 | 1 | █ | 🟦 |
+| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | █ | 🟦 |
+| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 | █ | 🟧 |
+| 🇩🇯 Djibouti | 0 | 1 | 0 | 1 | █ | 🟦 |
+| 🇪🇷 Érythrée | 0 | 1 | 0 | 1 | █ | 🟦 |
+| 🇬🇦 Gabon | 1 | 0 | 0 | 1 | █ | 🟧 |
+| 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | █ | 🟧 |
+| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | █ | 🟧 |
 
 ### Répartition géographique par région
 
-| Région | Occurrences | Ransomware | Fuites / accès | Barre |
+| Région | Occurrences | Ransomware | Fuites / accès | Barre | Distribution |
 | :--- | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 96 | 50 | 46 | ██████████ |
-| Afrique australe | 43 | 41 | 2 | ████ |
-| Afrique de l’Ouest et centrale | 38 | 16 | 22 | ████ |
-| Afrique de l’Est | 19 | 15 | 4 | ██ |
+| Afrique du Nord | 96 | 50 | 46 | ██████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | 43 | 41 | 2 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Afrique de l’Ouest et centrale | 38 | 16 | 22 | ████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique de l’Est | 19 | 15 | 4 | ██ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région - 2025"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 97
+    bar [96,43,38,19]
+```
+
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
 
 ### Répartition sectorielle
 
@@ -143,6 +153,38 @@ pie showData
 | Mines | 2 | 1,0% | █ |
 | Non précisé | 2 | 1,0% | █ |
 | Société civile / ONG | 1 | 0,5% | █ |
+
+```mermaid
+xychart-beta
+    title "Répartition sectorielle - 2025"
+    x-axis ["1","2","3","4","5","6","7","8"]
+    y-axis "Fiches" 0 --> 41
+    bar [40,39,25,17,14,10,10,8]
+```
+
+Légende : 1 = Technologies; 2 = Finance; 3 = Éducation; 4 = Gouvernement; 5 = Commerce; 6 = Santé; 7 = Industrie; 8 = Services professionnels
+
+### Graphiques par type d’incident
+
+```mermaid
+xychart-beta
+    title "Top 10 ransomware - 2025"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Fiches" 0 --> 29
+    bar [28,28,12,9,8,6,4,4,3,3]
+```
+
+Légende: 1 = Égypte; 2 = Afrique du Sud; 3 = Maroc; 4 = Nigeria; 5 = Kenya; 6 = Tunisie; 7 = Algérie; 8 = Zambie; 9 = Namibie; 10 = Tanzanie
+
+```mermaid
+xychart-beta
+    title "Top 10 fuites et ventes d’accès - 2025"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Fiches" 0 --> 20
+    bar [19,15,8,7,5,5,2,2,2,2]
+```
+
+Légende: 1 = Maroc; 2 = Algérie; 3 = Mauritanie; 4 = Tunisie; 5 = Égypte; 6 = Nigeria; 7 = Côte d’Ivoire; 8 = Kenya; 9 = Afrique du Sud; 10 = Togo
 
 ## 4. Analyse détaillée par type d’incident
 
@@ -174,6 +216,18 @@ Les secteurs gouvernemental, financier, technologique et éducatif concentrent u
 | 🇿🇦 Afrique du Sud | 🔴 Élevé |
 | 🇩🇿 Algérie | 🔴 Élevé |
 | 🇳🇬 Nigeria | 🔴 Élevé |
+
+### Graphique des acteurs les plus présents
+
+```mermaid
+xychart-beta
+    title "Acteurs les plus présents - 2025"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Fiches" 0 --> 12
+    bar [11,10,10,8,7,7,6,6,5,4]
+```
+
+Légende: 1 = qilin; 2 = nightspire; 3 = devman; 4 = incransom; 5 = funksec; 6 = Phantom Atlas; 7 = killsec; 8 = kill9; 9 = Dark 07x Team; 10 = ransomhub
 
 ## 7. Tendances et lacunes de renseignement
 
