@@ -70,15 +70,14 @@ pie showData
 ```
 
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Geographic occurrences by country - July 2026"
-    x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
+    x-axis ["Egypt","Tunisia","Morocco","South Africa","Nigeria","Algeria","Côte d’Ivoire","Ghana","Botswana","Cameroon","Kenya","South Sudan"]
     y-axis "Occurrences" 0 --> 8
     bar [7,7,6,6,4,4,3,2,1,1,1,1]
 ```
 
-Legend: EG = Egypt, TN = Tunisia, MA = Morocco, ZA = South Africa, NG = Nigeria, DZ = Algeria, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroon, KE = Kenya, SS = South Sudan
 
 ### Ransomware versus leaks and access sales by country
 
@@ -103,15 +102,14 @@ The 25 leak and access-sale occurrences include the additional country allocatio
 ### Ransomware by country
 
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Ransomware by country - July 2026"
-    x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
+    x-axis ["South Africa","Egypt","Morocco","Nigeria","Côte d’Ivoire","Ghana","Cameroon","Botswana","Kenya","South Sudan"]
     y-axis "Ransomware" 0 --> 6
     bar [5,2,2,2,2,1,1,1,1,1]
 ```
 
-Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d’Ivoire, GH = Ghana, CM = Cameroon, BW = Botswana, KE = Kenya, SS = South Sudan
 
 ### Geographic distribution of data leaks and access sales
 
@@ -128,15 +126,14 @@ Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d�
 | **Total** |  | **25** |  |
 
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Geographic distribution of data leaks and access sales - July 2026"
-    x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
+    x-axis ["Tunisia","Egypt","Morocco","Algeria","Nigeria","South Africa","Côte d’Ivoire","Ghana"]
     y-axis "Occurrences" 0 --> 8
     bar [7,5,4,4,2,1,1,1]
 ```
 
-Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA = South Africa, CI = Côte d’Ivoire, GH = Ghana
 
 ### Geographic breakdown by region
 
@@ -151,7 +148,7 @@ Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA =
 The Nigeria and Côte d’Ivoire identity-document record contributes one occurrence to each country. MTN is allocated to South Africa in this working view, although its national entity is not confirmed. These allocations do not change the global total of 42 unique incidents.
 
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Geographic occurrences by region - July 2026"
     x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
@@ -204,7 +201,7 @@ The leak side was more varied: identity documents, medical data, university acco
 | Rubber / Agriculture | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Sector distribution - July 2026"
     x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
@@ -227,7 +224,7 @@ Government and administration remained the largest sectoral grouping. The record
 | Other named sources | 27 | Mixed activity |
 
 
-```mermaid
+~~~mermaid
 xychart-beta
     title "Most active actors and sources - July 2026"
     x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Other sources"]
