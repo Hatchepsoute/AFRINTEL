@@ -1,5 +1,5 @@
-# AFRINTEL — Rapport CTI mensuel
-## Cyberattaques en Afrique — juillet 2026
+# AFRINTEL - Rapport CTI mensuel
+## Cyberattaques en Afrique - juillet 2026
 
 👉🏾 [Version anglaise](./README.md) · [Fiches victimes](./victims_FR.md)
 
@@ -24,7 +24,7 @@ La ventilation géographique totalise **43 occurrences** au lieu de 42 : une fic
 
 Les volumes annoncés par les acteurs ne sont pas repris comme des faits établis. Les liens de téléchargement, les identifiants, les données personnelles et les secrets ne sont pas reproduits dans ce rapport.
 
-## 3. Répartition géographique
+## 3. Vue globale
 
 | Pays | Occurrences |
 | :--- | ---: |
@@ -44,7 +44,7 @@ Les volumes annoncés par les acteurs ne sont pas repris comme des faits établi
 
 ```mermaid
 pie showData
-    title Occurrences géographiques — juillet 2026
+    title Occurrences géographiques - juillet 2026
     "Égypte" : 7
     "Tunisie" : 7
     "Maroc" : 6
@@ -59,7 +59,35 @@ pie showData
     "Soudan du Sud" : 1
 ```
 
-## 4. Types d’incidents
+### Comparaison ransomware, fuites et ventes d'accès par pays
+
+| Pays | Ransomware | Fuites et ventes d'accès |
+|---|---:|---:|
+| Égypte | 2 | 5 |
+| Tunisie | 0 | 7 |
+| Maroc | 2 | 4 |
+| Afrique du Sud | 5 | 1 |
+| Nigeria | 2 | 2 |
+| Algérie | 0 | 4 |
+| Côte d'Ivoire | 2 | 1 |
+| Ghana | 1 | 1 |
+| Cameroun | 1 | 0 |
+| Botswana | 1 | 0 |
+| Kenya | 1 | 0 |
+| Soudan du Sud | 1 | 0 |
+| **Total** | **18** | **25** |
+
+### Ventilation régionale
+
+| Région | Occurrences | Ransomware | Fuites et ventes d'accès |
+|---|---:|---:|---:|
+| Afrique du Nord | **24** | 4 | 20 |
+| Afrique australe | **7** | 6 | 1 |
+| Afrique de l'Ouest et centrale | **10** | 6 | 4 |
+| Afrique de l'Est | **2** | 2 | 0 |
+| **Total** | **43** | **18** | **25** |
+
+## 4. Analyse détaillée par type d'incident
 
 | Type | Fiches | Part |
 | :--- | ---: | ---: |
@@ -112,13 +140,13 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 
 La fréquence d’un nom ne suffit pas à établir une campagne coordonnée. Le corpus mélange groupes ransomware, comptes de publication, courtiers d’accès et republications.
 
-## 7. Dossiers à surveiller
+### 6.2 Dossiers à surveiller
 
 ### Ministère égyptien de l’Agriculture
 
 Les éléments examinés comprennent des correspondances, contrats, paiements, inspections, inventaires techniques et captures d’application. L’ensemble est cohérent avec une exposition de documents administratifs et opérationnels. Si l’authenticité est confirmée, les risques incluent la fraude foncière, la falsification documentaire et le phishing contextualisé.
 
-### Nerasolgh — Ghana
+### Nerasolgh - Ghana
 
 Les exports examinés présentent des structures liées aux clients, au personnel, aux paiements USSD, aux transactions et à certains champs bancaires. L’acteur revendique 26 millions d’enregistrements, mais le volume effectivement examiné est beaucoup plus limité. L’écart entre la revendication et l’échantillon demeure une inconnue importante.
 
@@ -126,11 +154,11 @@ Les exports examinés présentent des structures liées aux clients, au personne
 
 Ces deux dossiers doivent rester distincts. L’échantillon d’Heliopolis montre des structures de comptes parents et étudiants. La publication HIMS revendique des données concernant les étudiants, le personnel, la finance et les paiements. Les volumes annoncés n’ont pas été confirmés indépendamment.
 
-### Adex — Tunisie
+### Adex - Tunisie
 
 La republication attribuée à BIGBROTHER montre une interface administrative dont le nombre d’enregistrements est proche du volume annoncé. Cela rend l’accès allégué plausible, sans établir l’identité de l’intrus initial ni l’étendue des données.
 
-## 8. Revendications multiples et hypothèses
+### 6.3 Revendications multiples et hypothèses
 
 ### Planet Sport
 
@@ -140,7 +168,27 @@ Le domaine `planetsport.ma` avait été listé par LockBit 5 en avril 2026. Une 
 
 Zenith Bank apparaît dans une revendication de données antérieure et dans une revendication ransomware en juillet. Cette répétition justifie une surveillance renforcée, mais ne permet pas de conclure que les deux publications proviennent de la même compromission.
 
-## 9. Évaluation de confiance et lacunes
+## 7. Tendances et lacunes de renseignement
+
+### Tendances
+
+- Les ransomware et les fuites de données représentent chacun 18 fiches.
+- Six offres concernent des environnements publics, télécoms ou administratifs.
+- Des documents d'identité et des éléments liés aux passeports apparaissent dans plusieurs fiches.
+- Le gouvernement et l'administration restent le principal groupe sectoriel.
+- Planet Sport et Adex illustrent les difficultés d'attribution liées aux republications.
+- La qualité des preuves varie des exports structurés aux simples revendications.
+
+### Lacunes de renseignement
+
+- La confirmation par les victimes est généralement absente.
+- Le volume complet des données est inconnu dans plusieurs cas.
+- Le vecteur d'intrusion initial est rarement visible.
+- Les filiales nationales ne sont pas toujours identifiables, notamment pour MTN.
+- Une nouvelle compromission et une republication sont parfois difficiles à distinguer.
+- La remédiation après publication reste inconnue.
+
+
 
 Les principales limites portent sur :
 
@@ -153,18 +201,26 @@ Les principales limites portent sur :
 
 Les niveaux de confiance sont donc évalués fiche par fiche. Le rapport ne transforme pas une revendication en incident confirmé.
 
-## 10. Correspondances MITRE ATT&CK contextuelles
+## 8. Correspondances MITRE ATT&CK contextuelles
 
 | Phase | Technique | Interprétation défensive |
 | :--- | :--- | :--- |
-| Accès initial | T1190 — Exploit Public-Facing Application | Pertinent pour les portails et applications exposés ; non confirmé pour chaque cas. |
-| Accès initial | T1078 — Valid Accounts | Pertinent pour les accès webmail, Fortinet et comptes privilégiés allégués. |
-| Accès aux identifiants | T1003 — OS Credential Dumping | Contextuel lorsque des identifiants ou hachages sont mentionnés. |
-| Collecte | T1213 — Data from Information Repositories | Pertinent pour les référentiels universitaires, publics et d’entreprise. |
-| Exfiltration | T1041 — Exfiltration Over C2 Channel | Hypothèse défensive ; non observée systématiquement. |
-| Impact | T1486 — Data Encrypted for Impact | À retenir uniquement lorsqu’un chiffrement est documenté. |
+| Accès initial | T1190 - Exploit Public-Facing Application | Pertinent pour les portails et applications exposés ; non confirmé pour chaque cas. |
+| Accès initial | T1078 - Valid Accounts | Pertinent pour les accès webmail, Fortinet et comptes privilégiés allégués. |
+| Accès aux identifiants | T1003 - OS Credential Dumping | Contextuel lorsque des identifiants ou hachages sont mentionnés. |
+| Collecte | T1213 - Data from Information Repositories | Pertinent pour les référentiels universitaires, publics et d’entreprise. |
+| Exfiltration | T1041 - Exfiltration Over C2 Channel | Hypothèse défensive ; non observée systématiquement. |
+| Impact | T1486 - Data Encrypted for Impact | À retenir uniquement lorsqu’un chiffrement est documenté. |
 
-## 11. Priorités SOC
+## 9. Recommandations
+
+- **Administrations :** imposer une MFA résistante au phishing, auditer les services exposés et surveiller les comptes privilégiés.
+- **Télécommunications :** examiner les journaux des accès administrateurs, VPN et messageries, puis renouveler les identifiants exposés.
+- **Universités et santé :** segmenter les bases sensibles, limiter les exports massifs et vérifier les comptes de service.
+- **Banques et e-commerce :** surveiller les authentifications anormales, les paiements et la récupération de comptes.
+- **Toutes les organisations :** préserver les preuves et valider les indicateurs sans redistribuer de données personnelles.
+
+## 10. Recommandations tactiques SOC
 
 1. Vérifier l’exposition des comptes privilégiés, des portails Fortinet, de la messagerie et des applications publiques.
 2. Imposer la MFA et faire tourner les identifiants dès qu’une exposition est plausible.
@@ -173,9 +229,17 @@ Les niveaux de confiance sont donc évalués fiche par fiche. Le rapport ne tran
 5. Préserver les journaux et les éléments de preuve avant toute remédiation destructive.
 6. Préparer une réponse distincte pour les revendications ransomware, les fuites de données et les ventes d’accès.
 
-## Conclusion
+## 11. Recommandations stratégiques
+
+- Mettre en place des canaux régionaux de partage sur les ransomware et les courtiers d'accès.
+- Imposer des évaluations des services exposés et des fournisseurs tiers pour les organisations publiques et critiques.
+- Maintenir des procédures distinctes pour les ransomware, les fuites, les ventes d'accès et les republications.
+- Améliorer les inventaires afin d'identifier rapidement les filiales nationales.
+- Organiser des exercices sur l'exposition de données d'identité, les accès privilégiés et la divulgation publique.
+
+## 12. Conclusion
 
 Juillet 2026 présente une menace fragmentée mais large. Le ransomware reste très visible, tandis que les fuites et les ventes d’accès exposent des données d’identité, de santé, d’éducation, d’administration et de paiement. La qualité des preuves varie fortement d’une fiche à l’autre ; cette différence doit rester visible dans toute décision opérationnelle.
 
-**AFRINTEL — Adama ASSIONGBON, Consultant SOC & CTI**  
+**AFRINTEL - Adama ASSIONGBON, Consultant SOC & CTI**
 [Repository GitHub](https://github.com/Hatchepsoute/AFRINTEL)

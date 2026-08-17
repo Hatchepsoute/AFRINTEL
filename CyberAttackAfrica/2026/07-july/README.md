@@ -1,5 +1,5 @@
-# AFRINTEL — Monthly CTI report
-## Cyberattacks in Africa — July 2026
+# AFRINTEL - Monthly CTI report
+## Cyberattacks in Africa - July 2026
 
 👉🏾 [French version](./README_FR.md) · [Victim cards](./victims.md)
 
@@ -24,7 +24,7 @@ The geographic table contains **43 country occurrences rather than 42 incidents*
 
 Claimed volumes are not treated as established facts. Download links, credentials, personal data and secrets are not reproduced in this report.
 
-## 3. Geographic distribution
+## 3. Global overview
 
 | Country | Occurrences |
 | :--- | ---: |
@@ -44,7 +44,7 @@ Claimed volumes are not treated as established facts. Download links, credential
 
 ```mermaid
 pie showData
-    title Geographic occurrences — July 2026
+    title Geographic occurrences - July 2026
     "Egypt" : 7
     "Tunisia" : 7
     "Morocco" : 6
@@ -59,7 +59,35 @@ pie showData
     "South Sudan" : 1
 ```
 
-## 4. Incident types
+### Ransomware versus leaks and access sales by country
+
+| Country | Ransomware | Leaks and access sales |
+|---|---:|---:|
+| Egypt | 2 | 5 |
+| Tunisia | 0 | 7 |
+| Morocco | 2 | 4 |
+| South Africa | 5 | 1 |
+| Nigeria | 2 | 2 |
+| Algeria | 0 | 4 |
+| Côte d’Ivoire | 2 | 1 |
+| Ghana | 1 | 1 |
+| Cameroon | 1 | 0 |
+| Botswana | 1 | 0 |
+| Kenya | 1 | 0 |
+| South Sudan | 1 | 0 |
+| **Total** | **18** | **25** |
+
+### Geographic breakdown by region
+
+| Region | Occurrences | Ransomware | Leaks and access sales |
+|---|---:|---:|---:|
+| North Africa | **24** | 4 | 20 |
+| Southern Africa | **7** | 6 | 1 |
+| West and Central Africa | **10** | 6 | 4 |
+| East Africa | **2** | 2 | 0 |
+| **Total** | **43** | **18** | **25** |
+
+## 4. Detailed analysis by incident type
 
 | Type | Records | Share |
 | :--- | ---: | ---: |
@@ -112,13 +140,13 @@ Government and administration remained the largest sectoral grouping. The record
 
 Frequency alone does not establish a coordinated campaign. The dataset combines ransomware groups, publication accounts, access brokers and reposters.
 
-## 7. Cases requiring follow-up
+### 6.2 Cases requiring follow-up
 
 ### Egyptian Ministry of Agriculture
 
 The reviewed material included correspondence, contracts, payments, inspection records, technical inventories and application screenshots. The set was coherent with administrative and operational documentation. If authentic, it could support land-related fraud, document forgery and highly contextual phishing.
 
-### Nerasolgh — Ghana
+### Nerasolgh - Ghana
 
 The reviewed exports showed customer, staff, USSD-payment, transaction and banking-related structures. The actor claimed 26 million records, while the material available for review was considerably smaller. The gap between the claim and the sample remains unresolved.
 
@@ -126,11 +154,11 @@ The reviewed exports showed customer, staff, USSD-payment, transaction and banki
 
 These records should remain separate. Heliopolis’s sample showed parent and student-account structures. HIMS claimed student, staff, financial and payment data. Neither advertised volume was independently confirmed.
 
-### Adex — Tunisia
+### Adex - Tunisia
 
 The BIGBROTHER repost showed an administration interface with a record count close to the advertised “15k”. This makes the claimed access plausible, but does not establish the original intruder or the complete scope of the data.
 
-## 8. Repeated claims and unresolved links
+### 6.3 Repeated claims and unresolved links
 
 ### Planet Sport
 
@@ -140,24 +168,52 @@ The `planetsport.ma` domain was listed by LockBit 5 in April 2026. A free July p
 
 Zenith Bank appears in an earlier data claim and in a July ransomware listing. This warrants monitoring, but does not establish that both publications came from the same compromise.
 
-## 9. Confidence and intelligence gaps
+## 7. Key trends and intelligence gaps
+
+### Trends
+
+- Ransomware and data leaks each account for 18 records.
+- Six access offers concern public, telecom or administrative environments.
+- Identity and passport-related material appears in several records.
+- Government and administration remain the largest sector group.
+- Planet Sport and Adex illustrate the attribution problems caused by reposting.
+- Evidence quality varies from structured exports to unsupported claims.
+
+### Intelligence gaps
+
+- Victim confirmation is generally unavailable.
+- Complete data volumes are unknown in several cases.
+- Initial access vectors are rarely visible.
+- National subsidiaries are not always identifiable, including MTN.
+- New compromises and reposts can be difficult to separate.
+- Remediation after publication is unknown.
+
+
 
 The main gaps concern victim confirmation, archive authenticity and completeness, actual exposed volumes, the initial access vector, the distinction between original intrusion and redistribution, and any remediation after publication.
 
 Confidence is therefore assessed at card level. This report does not turn a claim into a confirmed incident.
 
-## 10. Contextual MITRE ATT&CK mapping
+## 8. MITRE ATT&CK mapping, contextual
 
 | Phase | Technique | Defensive interpretation |
 | :--- | :--- | :--- |
-| Initial access | T1190 — Exploit Public-Facing Application | Relevant to exposed portals and applications; not confirmed for every case. |
-| Initial access | T1078 — Valid Accounts | Relevant to alleged webmail, Fortinet and privileged-account access. |
-| Credential access | T1003 — OS Credential Dumping | Contextual where credentials or hashes are mentioned. |
-| Collection | T1213 — Data from Information Repositories | Relevant to university, public-sector and business repositories. |
-| Exfiltration | T1041 — Exfiltration Over C2 Channel | Defensive hypothesis; not consistently observed. |
-| Impact | T1486 — Data Encrypted for Impact | Use only where encryption is documented. |
+| Initial access | T1190 - Exploit Public-Facing Application | Relevant to exposed portals and applications; not confirmed for every case. |
+| Initial access | T1078 - Valid Accounts | Relevant to alleged webmail, Fortinet and privileged-account access. |
+| Credential access | T1003 - OS Credential Dumping | Contextual where credentials or hashes are mentioned. |
+| Collection | T1213 - Data from Information Repositories | Relevant to university, public-sector and business repositories. |
+| Exfiltration | T1041 - Exfiltration Over C2 Channel | Defensive hypothesis; not consistently observed. |
+| Impact | T1486 - Data Encrypted for Impact | Use only where encryption is documented. |
 
-## 11. SOC priorities
+## 9. Recommendations
+
+- **Governments:** enforce phishing-resistant MFA, audit exposed services and monitor privileged accounts.
+- **Telecommunications:** review administrator, VPN and webmail logs and rotate exposed credentials.
+- **Universities and healthcare:** segment sensitive databases, restrict bulk exports and review service accounts.
+- **Banks and e-commerce:** monitor abnormal authentication, payment activity and account recovery.
+- **All organisations:** preserve evidence and validate indicators without redistributing personal data.
+
+## 10. SOC tactical recommendations
 
 1. Review privileged accounts, Fortinet portals, webmail and public-facing applications.
 2. Enforce MFA and rotate credentials whenever exposure is plausible.
@@ -166,9 +222,17 @@ Confidence is therefore assessed at card level. This report does not turn a clai
 5. Preserve logs and evidence before destructive remediation.
 6. Maintain separate response playbooks for ransomware, data leaks and access sales.
 
-## Conclusion
+## 11. Strategic recommendations
+
+- Establish regional information-sharing channels for ransomware and access-broker activity.
+- Require exposed-service and third-party assessments for public and critical organisations.
+- Maintain separate playbooks for ransomware, leaks, access sales and reposts.
+- Improve asset inventories so national subsidiaries can be identified quickly.
+- Exercise response plans for identity-data exposure, privileged access and public disclosure.
+
+## 12. Conclusion
 
 July 2026 showed a broad but fragmented threat picture. Ransomware remained highly visible, while leaks and access offers exposed identity, healthcare, education, government and payment-related data. Evidence quality varied sharply between records; that distinction should remain visible in operational decision-making.
 
-**AFRINTEL — Adama ASSIONGBON, SOC & CTI Consultant**
+**AFRINTEL - Adama ASSIONGBON, SOC & CTI Consultant**
 [AFRINTEL GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)
