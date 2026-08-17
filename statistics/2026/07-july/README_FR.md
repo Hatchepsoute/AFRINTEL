@@ -98,28 +98,35 @@ Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géo
 
 ## 4. Ventilation régionale
 
-| Région | Occurrences | Ransomware | Fuites et ventes d'accès |
-|---|---:|---:|---:|
-| Afrique du Nord | 24 | 4 | 20 |
-| Afrique australe | 7 | 6 | 1 |
-| Afrique de l'Ouest et centrale | 10 | 6 | 4 |
-| Afrique de l'Est | 2 | 2 | 0 |
-| **Total** | **43** | **18** | **25** |
+| Région | Pays inclus | Occurrences | Ransomware | Fuites et ventes d'accès | Répartition |
+|---|---|---:|---:|---:|---|
+| Afrique du Nord | Égypte, Tunisie, Maroc, Algérie | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | Afrique du Sud, Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
+| Afrique de l'Ouest et centrale | Nigeria, Côte d'Ivoire, Ghana, Cameroun | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| Afrique de l'Est | Kenya, Soudan du Sud | **2** | 2 | 0 | 🟧🟧 |
+| **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
+
+~~~mermaid
+xychart-beta
+    title "Occurrences géographiques par région - juillet 2026"
+    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
+    y-axis "Occurrences" 0 --> 26
+    bar [24,7,10,2]
+~~~
 
 ## 5. Répartition sectorielle
 
-| Secteur | Fiches | Part |
-|---|---:|---:|
-| Gouvernement / Administration | 11 | 26,2 % |
-| Télécommunications | 5 | 11,9 % |
-| Santé / Médical | 4 | 9,5 % |
-| Éducation / Universités | 3 | 7,1 % |
-| E-commerce / Distribution | 3 | 7,1 % |
-| Technologie / Ingénierie | 3 | 7,1 % |
-| Pétrole et énergie | 2 | 4,8 % |
-| Secteurs identifiés à occurrence unique | 11 | 26,2 % |
-| **Total** | **42** | **100 %** |
-
+| Secteur | Fiches | Part | Barre |
+|---|---:|---:|---:|
+| Gouvernement / Administration | 11 | 26,2 % | ███████████ |
+| Télécommunications | 5 | 11,9 % | █████ |
+| Santé / Médical | 4 | 9,5 % | ████ |
+| Éducation / Universités | 3 | 7,1 % | ███ |
+| E-commerce / Distribution | 3 | 7,1 % | ███ |
+| Technologie / Ingénierie | 3 | 7,1 % | ███ |
+| Pétrole et énergie | 2 | 4,8 % | ██ |
+| Secteurs identifiés à occurrence unique | 11 | 26,2 % | ███████████ |
+| **Total** | **42** | **100 %** |  |
 ~~~mermaid
 xychart-beta
     title "Répartition sectorielle - juillet 2026"

@@ -98,28 +98,35 @@ The 25 leak and access occurrences include the additional country allocation for
 
 ## 4. Geographic breakdown
 
-| Region | Occurrences | Ransomware | Leaks and access sales |
-|---|---:|---:|---:|
-| North Africa | 24 | 4 | 20 |
-| Southern Africa | 7 | 6 | 1 |
-| West and Central Africa | 10 | 6 | 4 |
-| East Africa | 2 | 2 | 0 |
-| **Total** | **43** | **18** | **25** |
+| Region | Countries included | Occurrences | Ransomware | Leaks and access sales | Distribution |
+|---|---|---:|---:|---:|---|
+| North Africa | Egypt, Tunisia, Morocco, Algeria | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | South Africa, Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
+| West and Central Africa | Nigeria, Côte d’Ivoire, Ghana, Cameroon | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| East Africa | Kenya, South Sudan | **2** | 2 | 0 | 🟧🟧 |
+| **Total** | **12 countries** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
+
+~~~mermaid
+xychart-beta
+    title "Geographic occurrences by region - July 2026"
+    x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
+    y-axis "Occurrences" 0 --> 26
+    bar [24,7,10,2]
+~~~
 
 ## 5. Sector distribution
 
-| Sector | Records | Share |
-|---|---:|---:|
-| Government / Administration | 11 | 26.2% |
-| Telecommunications | 5 | 11.9% |
-| Healthcare / Medical | 4 | 9.5% |
-| Education / Universities | 3 | 7.1% |
-| E-commerce / Retail | 3 | 7.1% |
-| Technology / Engineering | 3 | 7.1% |
-| Oil and Energy | 2 | 4.8% |
-| Single-occurrence sectors (identified) | 11 | 26.2% |
-| **Total** | **42** | **100%** |
-
+| Sector | Records | Share | Chart |
+|---|---:|---:|---:|
+| Government / Administration | 11 | 26.2% | ███████████ |
+| Telecommunications | 5 | 11.9% | █████ |
+| Healthcare / Medical | 4 | 9.5% | ████ |
+| Education / Universities | 3 | 7.1% | ███ |
+| E-commerce / Retail | 3 | 7.1% | ███ |
+| Technology / Engineering | 3 | 7.1% | ███ |
+| Oil and Energy | 2 | 4.8% | ██ |
+| Single-occurrence sectors (identified) | 11 | 26.2% | ███████████ |
+| **Total** | **42** | **100%** |  |
 ~~~mermaid
 xychart-beta
     title "Sector distribution - July 2026"

@@ -131,13 +131,13 @@ xychart-beta
 
 ### Répartition géographique par région
 
-| Région | Pays inclus | Occurrences directes ou attribuées | Allocation multi-pays |
-|---|---|---:|---:|
-| **Afrique du Nord** | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇩🇿 Algérie | **24** | 0 |
-| **Afrique australe** | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana | **7** | 0 |
-| **Afrique de l'Ouest et centrale** | 🇳🇬 Nigeria, 🇨🇮 Côte d'Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroun | **10** | 2 |
-| **Afrique de l'Est** | 🇰🇪 Kenya, 🇸🇸 Soudan du Sud | **2** | 0 |
-| **Total** | **12 pays** | **43** | **2** |
+| Région | Pays inclus | Occurrences | Ransomware | Fuites et ventes d'accès | Répartition |
+|---|---|---:|---:|---:|---|
+| **Afrique du Nord** | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇩🇿 Algérie | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique australe** | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
+| **Afrique de l'Ouest et centrale** | 🇳🇬 Nigeria, 🇨🇮 Côte d'Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroun | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **Afrique de l'Est** | 🇰🇪 Kenya, 🇸🇸 Soudan du Sud | **2** | 2 | 0 | 🟧🟧 |
+| **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
 La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
 
@@ -172,28 +172,27 @@ Les fuites de données couvrent des documents d’identité, des données médic
 
 ## 5. Secteurs les plus exposés
 
-| Secteur | Fiches | Part |
-| :--- | ---: | ---: |
-| Gouvernement / Administration | 11 | 26,2 % |
-| Télécommunications | 5 | 11,9 % |
-| Santé / Médical | 4 | 9,5 % |
-| Éducation / Universités | 3 | 7,1 % |
-| E-commerce / Distribution | 3 | 7,1 % |
-| Technologie / Ingénierie | 3 | 7,1 % |
-| Pétrole et énergie | 2 | 4,8 % |
-| Portefeuille d’investissement / Énergie | 1 | 2,4 % |
-| Finance / Banque | 1 | 2,4 % |
-| Transport / Logistique | 1 | 2,4 % |
-| Immobilier | 1 | 2,4 % |
-| Mines | 1 | 2,4 % |
-| Comptabilité / Audit | 1 | 2,4 % |
-| Voyage / Événementiel | 1 | 2,4 % |
-| Industrie chimique | 1 | 2,4 % |
-| Services de sécurité | 1 | 2,4 % |
-| Jeux / Divertissement | 1 | 2,4 % |
-| Caoutchouc / Agriculture | 1 | 2,4 % |
-| **Total** | **42** | **100 %** |
-
+| Secteur | Fiches | Part | Barre |
+| :--- | ---: | ---: | :--- |
+| Gouvernement / Administration | 11 | 26,2 % | ███████████ |
+| Télécommunications | 5 | 11,9 % | █████ |
+| Santé / Médical | 4 | 9,5 % | ████ |
+| Éducation / Universités | 3 | 7,1 % | ███ |
+| E-commerce / Distribution | 3 | 7,1 % | ███ |
+| Technologie / Ingénierie | 3 | 7,1 % | ███ |
+| Pétrole et énergie | 2 | 4,8 % | ██ |
+| Portefeuille d’investissement / Énergie | 1 | 2,4 % | █ |
+| Finance / Banque | 1 | 2,4 % | █ |
+| Transport / Logistique | 1 | 2,4 % | █ |
+| Immobilier | 1 | 2,4 % | █ |
+| Mines | 1 | 2,4 % | █ |
+| Comptabilité / Audit | 1 | 2,4 % | █ |
+| Voyage / Événementiel | 1 | 2,4 % | █ |
+| Industrie chimique | 1 | 2,4 % | █ |
+| Services de sécurité | 1 | 2,4 % | █ |
+| Jeux / Divertissement | 1 | 2,4 % | █ |
+| Caoutchouc / Agriculture | 1 | 2,4 % | █ |
+| **Total** | **42** | **100 %** |  |
 ~~~mermaid
 xychart-beta
     title "Répartition sectorielle - juillet 2026"

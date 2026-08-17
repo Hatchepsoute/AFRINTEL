@@ -131,13 +131,13 @@ xychart-beta
 
 ### Geographic breakdown by region
 
-| Region | Countries included | Direct or allocated occurrences | Multi-country allocation |
-|---|---|---:|---:|
-| **North Africa** | 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇲🇦 Morocco, 🇩🇿 Algeria | **24** | 0 |
-| **Southern Africa** | 🇿🇦 South Africa, 🇧🇼 Botswana | **7** | 0 |
-| **West and Central Africa** | 🇳🇬 Nigeria, 🇨🇮 Côte d’Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroon | **10** | 2 |
-| **East Africa** | 🇰🇪 Kenya, 🇸🇸 South Sudan | **2** | 0 |
-| **Total** | **12 countries** | **43** | **2** |
+| Region | Countries included | Occurrences | Ransomware | Leaks and access sales | Distribution |
+|---|---|---:|---:|---:|---|
+| **North Africa** | 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇲🇦 Morocco, 🇩🇿 Algeria | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | 🇿🇦 South Africa, 🇧🇼 Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
+| **West and Central Africa** | 🇳🇬 Nigeria, 🇨🇮 Côte d’Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroon | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **East Africa** | 🇰🇪 Kenya, 🇸🇸 South Sudan | **2** | 2 | 0 | 🟧🟧 |
+| **Total** | **12 countries** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
 
 The Nigeria and Côte d’Ivoire identity-document record contributes one occurrence to each country. MTN is allocated to South Africa in this working view, although its national entity is not confirmed. These allocations do not change the global total of 42 unique incidents.
 
@@ -172,28 +172,27 @@ The leak side was more varied: identity documents, medical data, university acco
 
 ## 5. Sectoral impact
 
-| Sector | Records | Share |
-| :--- | ---: | ---: |
-| Government / Administration | 11 | 26.2% |
-| Telecommunications | 5 | 11.9% |
-| Healthcare / Medical | 4 | 9.5% |
-| Education / Universities | 3 | 7.1% |
-| E-commerce / Retail | 3 | 7.1% |
-| Technology / Engineering | 3 | 7.1% |
-| Oil and Energy | 2 | 4.8% |
-| Investment Holding / Energy | 1 | 2.4% |
-| Finance / Banking | 1 | 2.4% |
-| Transport / Logistics | 1 | 2.4% |
-| Real Estate | 1 | 2.4% |
-| Mining | 1 | 2.4% |
-| Accounting / Audit | 1 | 2.4% |
-| Travel / Events | 1 | 2.4% |
-| Chemical Industry | 1 | 2.4% |
-| Security Services | 1 | 2.4% |
-| Gaming / Entertainment | 1 | 2.4% |
-| Rubber / Agriculture | 1 | 2.4% |
-| **Total** | **42** | **100%** |
-
+| Sector | Records | Share | Chart |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 11 | 26.2% | ███████████ |
+| Telecommunications | 5 | 11.9% | █████ |
+| Healthcare / Medical | 4 | 9.5% | ████ |
+| Education / Universities | 3 | 7.1% | ███ |
+| E-commerce / Retail | 3 | 7.1% | ███ |
+| Technology / Engineering | 3 | 7.1% | ███ |
+| Oil and Energy | 2 | 4.8% | ██ |
+| Investment Holding / Energy | 1 | 2.4% | █ |
+| Finance / Banking | 1 | 2.4% | █ |
+| Transport / Logistics | 1 | 2.4% | █ |
+| Real Estate | 1 | 2.4% | █ |
+| Mining | 1 | 2.4% | █ |
+| Accounting / Audit | 1 | 2.4% | █ |
+| Travel / Events | 1 | 2.4% | █ |
+| Chemical Industry | 1 | 2.4% | █ |
+| Security Services | 1 | 2.4% | █ |
+| Gaming / Entertainment | 1 | 2.4% | █ |
+| Rubber / Agriculture | 1 | 2.4% | █ |
+| **Total** | **42** | **100%** |  |
 ~~~mermaid
 xychart-beta
     title "Sector distribution - July 2026"
