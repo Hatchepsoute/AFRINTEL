@@ -1,3 +1,13 @@
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Juillet%202026-lightgrey)
+![Victimes](https://img.shields.io/badge/Victimes-42-critical)
+![Ransomware](https://img.shields.io/badge/Ransomware-18-red)
+![Fuites](https://img.shields.io/badge/Fuites%20de%20données-18-orange)
+![Ventes d'accès](https://img.shields.io/badge/Ventes%20d'accès-6-yellow)
+![Pays](https://img.shields.io/badge/Pays-12-blueviolet)
+![CTI](https://img.shields.io/badge/Type-Rapport%20CTI-purple)
+
 # AFRINTEL - Rapport CTI mensuel
 ## Cyberattaques en Afrique - juillet 2026
 
@@ -59,33 +69,85 @@ pie showData
     "Soudan du Sud" : 1
 ```
 
-### Comparaison ransomware, fuites et ventes d'accès par pays
+~~~mermaid
+xychart-beta
+    title "Occurrences géographiques par pays - juillet 2026"
+    x-axis ["Égypte","Tunisie","Maroc","Afrique du Sud","Nigeria","Algérie","Côte d’Ivoire","Ghana","Botswana","Cameroun","Kenya","Soudan du Sud"]
+    y-axis "Occurrences" 0 --> 8
+    bar [7,7,6,6,4,4,3,2,1,1,1,1]
+~~~
 
-| Pays | Ransomware | Fuites et ventes d'accès |
-|---|---:|---:|
-| Égypte | 2 | 5 |
-| Tunisie | 0 | 7 |
-| Maroc | 2 | 4 |
-| Afrique du Sud | 5 | 1 |
-| Nigeria | 2 | 2 |
-| Algérie | 0 | 4 |
-| Côte d'Ivoire | 2 | 1 |
-| Ghana | 1 | 1 |
-| Cameroun | 1 | 0 |
-| Botswana | 1 | 0 |
-| Kenya | 1 | 0 |
-| Soudan du Sud | 1 | 0 |
-| **Total** | **18** | **25** |
+### Comparaison ransomware et fuites de données par pays
 
-### Ventilation régionale
+| Pays | Ransomware | Fuites de données / ventes d'accès | Total | Répartition |
+|---|---:|---:|---:|---|
+| 🇿🇦 Afrique du Sud | 5 | 1 | 6 | 🟧🟧🟧🟧🟧 🟦 |
+| 🇪🇬 Égypte | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | 2 | 4 | 6 | 🟧🟧 🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇨🇮 Côte d'Ivoire | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇬🇭 Ghana | 1 | 1 | 2 | 🟧 🟦 |
+| 🇨🇲 Cameroun | 1 | 0 | 1 | 🟧 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇸🇸 Soudan du Sud | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisie | 0 | 7 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
+| 🇩🇿 Algérie | 0 | 4 | 4 | 🟦🟦🟦🟦 |
+| **Total** | **18** | **25** | **43** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
-| Région | Occurrences | Ransomware | Fuites et ventes d'accès |
-|---|---:|---:|---:|
-| Afrique du Nord | **24** | 4 | 20 |
-| Afrique australe | **7** | 6 | 1 |
-| Afrique de l'Ouest et centrale | **10** | 6 | 4 |
-| Afrique de l'Est | **2** | 2 | 0 |
-| **Total** | **43** | **18** | **25** |
+Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géographique supplémentaire de la fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
+
+### Ransomware par pays
+
+~~~mermaid
+xychart-beta
+    title "Ransomware par pays - juillet 2026"
+    x-axis ["Afrique du Sud","Égypte","Maroc","Nigeria","Côte d’Ivoire","Ghana","Cameroun","Botswana","Kenya","Soudan du Sud"]
+    y-axis "Ransomware" 0 --> 6
+    bar [5,2,2,2,2,1,1,1,1,1]
+~~~
+
+### Répartition géographique des fuites de données et ventes d'accès
+
+| Rang | Pays | Occurrences | Barre |
+|---:|---|---:|---|
+| 1 | 🇹🇳 Tunisie | **7** | ███████ |
+| 2 | 🇪🇬 Égypte | **5** | █████ |
+| 3 | 🇲🇦 Maroc | **4** | ████ |
+| 3 | 🇩🇿 Algérie | **4** | ████ |
+| 5 | 🇳🇬 Nigeria | **2** | ██ |
+| 6 | 🇿🇦 Afrique du Sud | **1** | █ |
+| 6 | 🇨🇮 Côte d'Ivoire | **1** | █ |
+| 6 | 🇬🇭 Ghana | **1** | █ |
+| **Total** |  | **25** |  |
+
+~~~mermaid
+xychart-beta
+    title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
+    x-axis ["Tunisie","Égypte","Maroc","Algérie","Nigeria","Afrique du Sud","Côte d’Ivoire","Ghana"]
+    y-axis "Occurrences" 0 --> 8
+    bar [7,5,4,4,2,1,1,1]
+~~~
+
+### Répartition géographique par région
+
+| Région | Pays inclus | Occurrences directes ou attribuées | Allocation multi-pays |
+|---|---|---:|---:|
+| **Afrique du Nord** | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇩🇿 Algérie | **24** | 0 |
+| **Afrique australe** | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana | **7** | 0 |
+| **Afrique de l'Ouest et centrale** | 🇳🇬 Nigeria, 🇨🇮 Côte d'Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroun | **10** | 2 |
+| **Afrique de l'Est** | 🇰🇪 Kenya, 🇸🇸 Soudan du Sud | **2** | 0 |
+| **Total** | **12 pays** | **43** | **2** |
+
+La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
+
+~~~mermaid
+xychart-beta
+    title "Occurrences géographiques par région - juillet 2026"
+    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
+    y-axis "Occurrences" 0 --> 26
+    bar [24,7,10,2]
+~~~
 
 ## 4. Analyse détaillée par type d'incident
 
@@ -95,6 +157,14 @@ pie showData
 | 🟦 Fuite de données | 18 | 42,9 % |
 | 🟪 Vente d’accès | 6 | 14,3 % |
 | **Total** | **42** | **100 %** |
+
+~~~mermaid
+pie showData
+    title Répartition des types d'incidents - juillet 2026
+    "Ransomware" : 18
+    "Fuites de données" : 18
+    "Ventes d'accès" : 6
+~~~
 
 Les publications ransomware sont principalement associées à **arcusmedia**, **dragonforce**, **krybit** et **thegentlemen**. Ces occurrences correspondent à des publications ou revendications ; elles ne démontrent pas systématiquement un chiffrement, une exfiltration ou une interruption d’activité.
 
@@ -124,6 +194,14 @@ Les fuites de données couvrent des documents d’identité, des données médic
 | Caoutchouc / Agriculture | 1 | 2,4 % |
 | **Total** | **42** | **100 %** |
 
+~~~mermaid
+xychart-beta
+    title "Répartition sectorielle - juillet 2026"
+    x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
+    y-axis "Fiches" 0 --> 12
+    bar [11,5,4,3,3,3,2,11]
+~~~
+
 Les administrations restent le premier ensemble sectoriel. Les fiches concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
 
 ## 6. Acteurs et sources les plus présents
@@ -137,6 +215,14 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 | thegentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Fuite de données |
 | Autres sources nommées | 27 | Activités diverses |
+
+~~~mermaid
+xychart-beta
+    title "Acteurs et sources les plus présents - juillet 2026"
+    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Autres sources"]
+    y-axis "Fiches" 0 --> 28
+    bar [4,3,2,2,2,2,27]
+~~~
 
 La fréquence d’un nom ne suffit pas à établir une campagne coordonnée. Le corpus mélange groupes ransomware, comptes de publication, courtiers d’accès et republications.
 

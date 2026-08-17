@@ -110,3 +110,12 @@
 
   The full post identifies mpowa.mobi as item "11/25" of an ongoing campaign, describing a proprietary tool ("CredHarvest V6") used to mass-scan and harvest exposed Firebase Realtime Database instances, and states that hundreds of similar databases have already been acquired through the same method. The actor advertises both the sale of this scanning tool and separate paid intrusion/access services on the same forum. This indicates mpowa.mobi is one victim within a broader, systematic campaign targeting misconfigured Firebase deployments, and that comparable exposures likely affect other African organizations using the same backend, independent of any targeting specific to mpowa.mobi.
 
+## Notes (not counted in the monthly victim total)
+
+### 17 August 2026
+#### 🇰🇪 Kenya - Kenya Electricity Transmission Company (KETRACO), repost of a previously documented incident
+
+- **Reference:** originally documented as a distinct incident on 31 December 2025, see `CyberAttackAfrica/2025/12-december/victims.md`.
+- **Observation:** AFRINTEL observed the same leaked sample (identical fields, same organisational-unit path "nl_KETRACO_Newsletter_Unit", and the same shared password-value anomaly across records) republished on the DarkForums forum under the alias Linda2000, approximately eight months after the original RaidForums post attributed to LindaBF.
+- **Assessment:** this is assessed as a repost of the same underlying dataset rather than a new compromise, and is not counted as an additional August 2026 incident. It indicates the data continues to circulate and may still be traded among threat actors. AFRINTEL does not reproduce any username, email address, password value, download link or record from the sample.
+

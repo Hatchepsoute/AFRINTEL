@@ -120,6 +120,14 @@ Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géo
 | Secteurs identifiés à occurrence unique | 11 | 26,2 % |
 | **Total** | **42** | **100 %** |
 
+~~~mermaid
+xychart-beta
+    title "Répartition sectorielle - juillet 2026"
+    x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
+    y-axis "Fiches" 0 --> 12
+    bar [11,5,4,3,3,3,2,11]
+~~~
+
 Le groupe des secteurs unitaires comprend les holdings d'investissement, la finance, le transport, l'immobilier, les mines, la comptabilité, le voyage, l'industrie chimique, la sécurité, les jeux et le caoutchouc ou l'agriculture.
 
 ## 6. Acteurs et sources les plus actifs

@@ -120,6 +120,14 @@ The 25 leak and access occurrences include the additional country allocation for
 | Single-occurrence sectors (identified) | 11 | 26.2% |
 | **Total** | **42** | **100%** |
 
+~~~mermaid
+xychart-beta
+    title "Sector distribution - July 2026"
+    x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
+    y-axis "Records" 0 --> 12
+    bar [11,5,4,3,3,3,2,11]
+~~~
+
 The single-sector group covers investment holding, finance, transport, real estate, mining, accounting, travel, chemical industry, security, gaming and rubber or agriculture records.
 
 ## 6. Most active threat actors and sources

@@ -1,3 +1,13 @@
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Period](https://img.shields.io/badge/Period-July%202026-lightgrey)
+![Victims](https://img.shields.io/badge/Victims-42-critical)
+![Ransomware](https://img.shields.io/badge/Ransomware-18-red)
+![Data Leaks](https://img.shields.io/badge/Data%20Leaks-18-orange)
+![Access Sales](https://img.shields.io/badge/Access%20Sales-6-yellow)
+![Countries](https://img.shields.io/badge/Countries-12-blueviolet)
+![Intel](https://img.shields.io/badge/Type-CTI%20Report-purple)
+
 # AFRINTEL - Monthly CTI report
 ## Cyberattacks in Africa - July 2026
 
@@ -59,33 +69,85 @@ pie showData
     "South Sudan" : 1
 ```
 
+~~~mermaid
+xychart-beta
+    title "Geographic occurrences by country - July 2026"
+    x-axis ["Egypt","Tunisia","Morocco","South Africa","Nigeria","Algeria","Côte d’Ivoire","Ghana","Botswana","Cameroon","Kenya","South Sudan"]
+    y-axis "Occurrences" 0 --> 8
+    bar [7,7,6,6,4,4,3,2,1,1,1,1]
+~~~
+
 ### Ransomware versus leaks and access sales by country
 
-| Country | Ransomware | Leaks and access sales |
-|---|---:|---:|
-| Egypt | 2 | 5 |
-| Tunisia | 0 | 7 |
-| Morocco | 2 | 4 |
-| South Africa | 5 | 1 |
-| Nigeria | 2 | 2 |
-| Algeria | 0 | 4 |
-| Côte d’Ivoire | 2 | 1 |
-| Ghana | 1 | 1 |
-| Cameroon | 1 | 0 |
-| Botswana | 1 | 0 |
-| Kenya | 1 | 0 |
-| South Sudan | 1 | 0 |
-| **Total** | **18** | **25** |
+| Country | Ransomware | Leaks and access sales | Total | Distribution |
+|---|---:|---:|---:|---|
+| 🇿🇦 South Africa | 5 | 1 | 6 | 🟧🟧🟧🟧🟧 🟦 |
+| 🇪🇬 Egypt | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇲🇦 Morocco | 2 | 4 | 6 | 🟧🟧 🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇨🇮 Côte d’Ivoire | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇬🇭 Ghana | 1 | 1 | 2 | 🟧 🟦 |
+| 🇨🇲 Cameroon | 1 | 0 | 1 | 🟧 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇸🇸 South Sudan | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisia | 0 | 7 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
+| 🇩🇿 Algeria | 0 | 4 | 4 | 🟦🟦🟦🟦 |
+| **Total** | **18** | **25** | **43** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
+
+The 25 leak and access-sale occurrences include the additional country allocation for the Nigeria and Côte d’Ivoire identity-document record.
+
+### Ransomware by country
+
+~~~mermaid
+xychart-beta
+    title "Ransomware by country - July 2026"
+    x-axis ["South Africa","Egypt","Morocco","Nigeria","Côte d’Ivoire","Ghana","Cameroon","Botswana","Kenya","South Sudan"]
+    y-axis "Ransomware" 0 --> 6
+    bar [5,2,2,2,2,1,1,1,1,1]
+~~~
+
+### Geographic distribution of data leaks and access sales
+
+| Rank | Country | Occurrences | Chart |
+|---:|---|---:|---|
+| 1 | 🇹🇳 Tunisia | **7** | ███████ |
+| 2 | 🇪🇬 Egypt | **5** | █████ |
+| 3 | 🇲🇦 Morocco | **4** | ████ |
+| 3 | 🇩🇿 Algeria | **4** | ████ |
+| 5 | 🇳🇬 Nigeria | **2** | ██ |
+| 6 | 🇿🇦 South Africa | **1** | █ |
+| 6 | 🇨🇮 Côte d’Ivoire | **1** | █ |
+| 6 | 🇬🇭 Ghana | **1** | █ |
+| **Total** |  | **25** |  |
+
+~~~mermaid
+xychart-beta
+    title "Geographic distribution of data leaks and access sales - July 2026"
+    x-axis ["Tunisia","Egypt","Morocco","Algeria","Nigeria","South Africa","Côte d’Ivoire","Ghana"]
+    y-axis "Occurrences" 0 --> 8
+    bar [7,5,4,4,2,1,1,1]
+~~~
 
 ### Geographic breakdown by region
 
-| Region | Occurrences | Ransomware | Leaks and access sales |
-|---|---:|---:|---:|
-| North Africa | **24** | 4 | 20 |
-| Southern Africa | **7** | 6 | 1 |
-| West and Central Africa | **10** | 6 | 4 |
-| East Africa | **2** | 2 | 0 |
-| **Total** | **43** | **18** | **25** |
+| Region | Countries included | Direct or allocated occurrences | Multi-country allocation |
+|---|---|---:|---:|
+| **North Africa** | 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇲🇦 Morocco, 🇩🇿 Algeria | **24** | 0 |
+| **Southern Africa** | 🇿🇦 South Africa, 🇧🇼 Botswana | **7** | 0 |
+| **West and Central Africa** | 🇳🇬 Nigeria, 🇨🇮 Côte d’Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroon | **10** | 2 |
+| **East Africa** | 🇰🇪 Kenya, 🇸🇸 South Sudan | **2** | 0 |
+| **Total** | **12 countries** | **43** | **2** |
+
+The Nigeria and Côte d’Ivoire identity-document record contributes one occurrence to each country. MTN is allocated to South Africa in this working view, although its national entity is not confirmed. These allocations do not change the global total of 42 unique incidents.
+
+~~~mermaid
+xychart-beta
+    title "Geographic occurrences by region - July 2026"
+    x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
+    y-axis "Occurrences" 0 --> 26
+    bar [24,7,10,2]
+~~~
 
 ## 4. Detailed analysis by incident type
 
@@ -95,6 +157,14 @@ pie showData
 | 🟦 Data leak | 18 | 42.9% |
 | 🟪 Access sale | 6 | 14.3% |
 | **Total** | **42** | **100%** |
+
+~~~mermaid
+pie showData
+    title Incident type breakdown - July 2026
+    "Ransomware" : 18
+    "Data leaks" : 18
+    "Access sales" : 6
+~~~
 
 Ransomware publications were mainly associated with **arcusmedia**, **dragonforce**, **krybit** and **thegentlemen**. These are listings or claims; they do not automatically establish encryption, exfiltration or operational disruption.
 
@@ -124,6 +194,14 @@ The leak side was more varied: identity documents, medical data, university acco
 | Rubber / Agriculture | 1 | 2.4% |
 | **Total** | **42** | **100%** |
 
+~~~mermaid
+xychart-beta
+    title "Sector distribution - July 2026"
+    x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
+    y-axis "Records" 0 --> 12
+    bar [11,5,4,3,3,3,2,11]
+~~~
+
 Government and administration remained the largest sectoral grouping. The records covered public procurement, justice, employment, identity, land administration and public services, creating risks that extend beyond data disclosure into fraud and targeted impersonation.
 
 ## 6. Threat actors and sources
@@ -137,6 +215,14 @@ Government and administration remained the largest sectoral grouping. The record
 | thegentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Data leak |
 | Other named sources | 27 | Mixed activity |
+
+~~~mermaid
+xychart-beta
+    title "Most active actors and sources - July 2026"
+    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Other sources"]
+    y-axis "Records" 0 --> 28
+    bar [4,3,2,2,2,2,27]
+~~~
 
 Frequency alone does not establish a coordinated campaign. The dataset combines ransomware groups, publication accounts, access brokers and reposters.
 
