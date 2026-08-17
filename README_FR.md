@@ -74,7 +74,7 @@ Entre janvier et juin 2026, AFRINTEL a recensé 239 incidents sur le continent :
 | Avril 2026 | [Statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 | Mai 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
 | Juin 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
-| Juillet 2026 | *en cours* | *in progress* |
+| Juillet 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | Août 2026 | *en cours* | *in progress* |
 
 ---
@@ -88,7 +88,7 @@ Entre janvier et juin 2026, AFRINTEL a recensé 239 incidents sur le continent :
 | Mars vs avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | Avril vs mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
-| Juin vs juillet 2026 | *en cours* | *en cours* |
+| Juin vs juillet 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | Rapport S1 2026 | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
@@ -104,7 +104,7 @@ Entre janvier et juin 2026, AFRINTEL a recensé 239 incidents sur le continent :
 | Avril 2026 | [Visual intelligence](visual-intelligence/04-april/README_FR.md) |
 | Mai 2026 | [Visual intelligence](visual-intelligence/05-may/README_FR.md) |
 | Juin 2026 | [Visual intelligence](visual-intelligence/06-june/README_FR.md) |
-| Juillet 2026 | *en cours* |
+| Juillet 2026 | [Visuel LinkedIn](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
 | Août 2026 | *en cours* |
 | S1 2026 | [Visuel statistique](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | S1 2026, carte | [Carte visuelle](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |

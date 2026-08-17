@@ -86,7 +86,7 @@ Each annual report pulls together everything documented that year: country ranki
 | April 2026 | [Statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
 | May 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
 | June 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
-| July 2026 | *in progress* | *in progress* |
+| July 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | August 2026 | *in progress* | *in progress* |
 
 ---
@@ -100,7 +100,7 @@ Each annual report pulls together everything documented that year: country ranki
 | March vs April 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
 | April vs May 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
-| June vs July 2026 | *in progress* | *in progress* |
+| June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | H1 2026 report | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
@@ -116,7 +116,7 @@ Each annual report pulls together everything documented that year: country ranki
 | April 2026 | [Visual intelligence](visual-intelligence/04-april/README.md) |
 | May 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
 | June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
-| July 2026 | *in progress* |
+| July 2026 | [LinkedIn visual](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
 | August 2026 | *in progress* |
 | H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
