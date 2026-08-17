@@ -73,10 +73,12 @@ pie showData
 ```mermaid
 xychart-beta
     title "Geographic occurrences by country - July 2026"
-    x-axis ["Egypt","Tunisia","Morocco","South Africa","Nigeria","Algeria","Côte d’Ivoire","Ghana","Botswana","Cameroon","Kenya","South Sudan"]
+    x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
     bar [7,7,6,6,4,4,3,2,1,1,1,1]
 ```
+
+Legend: EG = Egypt, TN = Tunisia, MA = Morocco, ZA = South Africa, NG = Nigeria, DZ = Algeria, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroon, KE = Kenya, SS = South Sudan
 
 
 ### Ransomware versus leaks and access sales by country
@@ -105,10 +107,12 @@ The 25 leak and access-sale occurrences include the additional country allocatio
 ```mermaid
 xychart-beta
     title "Ransomware by country - July 2026"
-    x-axis ["South Africa","Egypt","Morocco","Nigeria","Côte d’Ivoire","Ghana","Cameroon","Botswana","Kenya","South Sudan"]
+    x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
     bar [5,2,2,2,2,1,1,1,1,1]
 ```
+
+Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d’Ivoire, GH = Ghana, CM = Cameroon, BW = Botswana, KE = Kenya, SS = South Sudan
 
 
 ### Geographic distribution of data leaks and access sales
@@ -129,10 +133,12 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Geographic distribution of data leaks and access sales - July 2026"
-    x-axis ["Tunisia","Egypt","Morocco","Algeria","Nigeria","South Africa","Côte d’Ivoire","Ghana"]
+    x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
     bar [7,5,4,4,2,1,1,1]
 ```
+
+Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA = South Africa, CI = Côte d’Ivoire, GH = Ghana
 
 
 ### Geographic breakdown by region

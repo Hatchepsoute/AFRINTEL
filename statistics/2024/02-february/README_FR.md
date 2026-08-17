@@ -2,15 +2,15 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les 9 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 8 |
+| Total incidents | 9 |
 | Ransomware | 5 |
-| Fuites de données | 3 |
+| Fuites de données | 4 |
 | Pays touchés | 6 |
-| Secteurs | 8 |
+| Secteurs | 9 |
 | Acteurs / sources | 6 |
 
 ## Pays
@@ -19,7 +19,7 @@ Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications r
 |---|---:|
 | 🇿🇦 Afrique du Sud | 2 |
 | 🇨🇮 Côte d'Ivoire | 2 |
-| 🇪🇬 Égypte | 1 |
+| 🇪🇬 Égypte | 2 |
 | 🇹🇳 Tunisie | 1 |
 | 🇪🇹 Éthiopie | 1 |
 | 🇬🇭 Ghana | 1 |
@@ -29,6 +29,7 @@ Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications r
 | Secteur | Incidents |
 |---|---:|
 | Technologies numériques & Télécoms | 1 |
+| Technologies / Services logiciels | 1 |
 | Industrie manufacturière (Métallurgie) | 1 |
 | Santé publique & Recherche médicale | 1 |
 | Gouvernement / Administration publique | 1 |
@@ -41,8 +42,8 @@ Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications r
 
 | Acteur / source | Incidents |
 |---|---:|
+| Tanaka, publication sur un forum clandestin | 3 |
 | lockbit3 | 2 |
-| Tanaka, publication sur un forum clandestin | 2 |
 | medusa | 1 |
 | hunters | 1 |
 | ThreatSec, publication de Tanaka sur un forum clandestin | 1 |
@@ -53,7 +54,7 @@ Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications r
 | Type | Incidents |
 |---|---:|
 | Ransomware | 5 |
-| Data Leak | 3 |
+| Data Leak | 4 |
 
 **AFRINTEL** — TLP:CLEAR
 

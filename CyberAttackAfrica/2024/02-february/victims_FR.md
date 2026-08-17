@@ -4,7 +4,24 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyberattaques en Afrique: Février 2024 : liste des 8 victimes
+# Cyberattaques en Afrique: Février 2024 : liste des 9 victimes
+
+### 1 Février 2024
+
+#### 🇪🇬 Égypte - 8WORX
+- **Date de publication de la source :** 30 juin 2023
+- **Date de découverte AFRINTEL :** 1 février 2024
+- **Acteur / Groupe :** Tanaka, publication sur un forum clandestin
+- **Secteur :** Technologies / Services logiciels
+- **Site web :** [8worx.com](https://8worx.com)
+- **Statut :** Claim - Data Sample Published
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 3
+- **Type d'incident :** Fuite de données
+- **Description victime :** 8WORX est un prestataire de solutions technologiques légalement enregistré dans le Delaware, aux États-Unis, qui déclare concentrer son activité sur l'Égypte et le Moyen-Orient, en développant des applications web et des systèmes pour des clients des secteurs privé et public.
+- **Analyse :** La publication est signée par le compte Tanaka, qui porte un badge de modérateur sur le forum, si bien que l'acteur à l'origine de l'intrusion n'est pas identifié. La publication sur le forum annonce un export SQL de 1,3 Go daté de 2023, comptant environ 4 millions de lignes réparties sur des tables incluant des numéros de téléphone, des journaux d'activité et des comptes sociaux, structurées autour d'un module « Leads » cohérent avec un système de CRM ou de gestion de prospects. L'échantillon visible montre des instructions SQL INSERT à l'apparence authentique, avec des champs détaillés de contact, de suivi d'activité et de compte, et une grande part des enregistrements téléphoniques porte un indicatif pays Égypte (EG), cohérent avec le positionnement régional déclaré de 8WORX. La cohérence structurelle du schéma et la plausibilité des enregistrements échantillonnés soutiennent une évaluation à confiance élevée quant à l'authenticité de l'échantillon, bien qu'AFRINTEL n'ait pas confirmé indépendamment l'intrusion, l'étendue complète de la base sous-jacente, ni l'exhaustivité du volume annoncé de 4 millions de lignes. L'exposition de ce jeu de données combinerait numéros de téléphone, adresses email, activité de prospects et de comptes, et références internes d'utilisateurs pour un très grand nombre d'individus, créant un risque important de phishing ciblé, d'ingénierie sociale et de fraude. AFRINTEL ne reproduit aucun numéro de téléphone, adresse email, nom ni enregistrement interne issu de l'échantillon.
+
+----------------------------
 
 ### 6 Février 2024
 

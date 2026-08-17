@@ -7,7 +7,7 @@
 
 ## 1. Executive summary
 
-This review brings together the 115 records from AFRINTEL's twelve monthly files for 2024, recomputed directly from the monthly `victims.md` files rather than incremented from the previous edition. Claims are counted as they appear in the monthly sources; the same organisation may therefore appear more than once when separate claims are recorded. This edition adds a newly documented claim against the University of Antananarivo (Madagascar, October), and reclassifies two records (DAL Group, Sudan; PPOTTS, South Africa) from Ransomware to Data Leak after finding an explicit `Type d'incident: Fuite de données` field present in the French monthly card but missing from the English one; both language versions now carry the field.
+This review brings together the 116 records from AFRINTEL's twelve monthly files for 2024, recomputed directly from the monthly `victims.md` files rather than incremented from the previous edition. Claims are counted as they appear in the monthly sources; the same organisation may therefore appear more than once when separate claims are recorded. This edition adds a newly documented claim against the University of Antananarivo (Madagascar, October), and reclassifies two records (DAL Group, Sudan; PPOTTS, South Africa) from Ransomware to Data Leak after finding an explicit `Type d'incident: Fuite de données` field present in the French monthly card but missing from the English one; both language versions now carry the field.
 
 🇿🇦 South Africa is the most represented country with 30 records. The busiest month is August, with 15 entries.
 
@@ -20,7 +20,7 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | Month | Records |
 |---|---:|
 | January | 12 |
-| February | 8 |
+| February | 9 |
 | March | 8 |
 | April | 6 |
 | May | 8 |
@@ -31,14 +31,14 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | October | 12 |
 | November | 15 |
 | December | 12 |
-| **Total** | **115** |
+| **Total** | **116** |
 
 ## 4. Distribution by country
 
 | Country | Incidents |
 |---|---:|
 | 🇿🇦 South Africa | 30 |
-| 🇪🇬 Egypt | 12 |
+| 🇪🇬 Egypt | 13 |
 | 🇩🇿 Algeria | 7 |
 | 🇳🇬 Nigeria | 7 |
 | 🇹🇳 Tunisia | 6 |
@@ -216,7 +216,7 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | Type | Incidents |
 |---|---:|
 | Ransomware | 86 |
-| Data Leak | 26 |
+| Data Leak | 27 |
 | Access Sale | 3 |
 
 ## 8. CTI reading and SOC priorities
@@ -227,6 +227,6 @@ For SOC teams, the priorities remain monitoring remote access, protecting backup
 
 ## Conclusion
 
-This 2024 review covers 115 documented records, with the strongest concentration in 🇿🇦 South Africa. Evidence limits and repeated claims should guide interpretation.
+This 2024 review covers 116 documented records, with the strongest concentration in 🇿🇦 South Africa. Evidence limits and repeated claims should guide interpretation.
 
 **AFRINTEL** — TLP:CLEAR

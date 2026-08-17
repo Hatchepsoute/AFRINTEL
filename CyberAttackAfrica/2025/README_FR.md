@@ -1,278 +1,207 @@
-# Rapport CTI annuel global AFRINTEL — 2025
-
-Ce rapport suit la visibilité publique des cyberattaques contre des organisations africaines en 2025. Les chiffres sont recalculés à partir des fiches victimes mensuelles, les revendications comptées telles qu'elles apparaissent dans ces sources, rien de plus.
+# Rapport CTI annuel AFRINTEL - 2025
 
 👉🏾 [Version anglaise](./README.md)
 
-## 1. Vue d’ensemble
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](2025-blue)
 
-**196 fiches** au total : **122 ransomware**, **71 fuites de données**, **3 ventes d'accès**, **0 défacement**, et 0 laissées sans classification d'incident explicite.
+---
+## 1. Résumé exécutif
 
-Ce classement mesure la présence publique dans les sources AFRINTEL, pas l'ampleur réelle de chaque attaque survenue.
+AFRINTEL a recensé **196 fiches** : **122 ransomware**, **71 fuites de données**, **3 ventes d’accès** et **0 défacement.**
 
-## Méthodologie
+## 2. Méthodologie
 
-Les chiffres viennent des fiches victimes annuelles, compilées à partir des fichiers mensuels. Une fiche correspond à une publication ou revendication documentée, pas forcément à une victime unique. Les publications de forums et de sites de fuite restent des revendications tant que rien ne les confirme de manière indépendante.
+Les douze fichiers mensuels sont la source de vérité. Une fiche correspond à une publication ou une revendication documentée. Les publications non confirmées restent présentées comme des revendications.
 
-## 2. Classement général par pays
+## 3. Vue globale
 
-| Pays | Incidents |
-|---|---:|
-| 🇪🇬 Égypte | 33 |
-| 🇲🇦 Maroc | 31 |
-| 🇿🇦 Afrique du Sud | 30 |
-| 🇩🇿 Algérie | 19 |
-| 🇳🇬 Nigeria | 14 |
-| 🇹🇳 Tunisie | 13 |
-| 🇰🇪 Kenya | 10 |
-| 🇲🇷 Mauritanie | 8 |
-| 🇿🇲 Zambie | 4 |
-| 🇬🇭 Ghana | 3 |
-| 🇨🇮 Côte d’Ivoire | 3 |
-| 🇳🇦 Namibie | 3 |
-| 🇹🇿 Tanzanie | 3 |
-| 🇧🇼 Botswana | 2 |
-| 🇨🇩 Congo (RDC) | 2 |
-| 🇲🇺 Maurice | 2 |
-| 🇸🇳 Sénégal | 2 |
-| 🇹🇬 Togo | 1 |
-| 🇺🇬 Ouganda | 2 |
-| 🇿🇼 Zimbabwe | 2 |
-| 🇦🇴 Angola | 1 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇩🇯 Djibouti | 1 |
-| 🇪🇷 Érythrée | 1 |
-| 🇬🇦 Gabon | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇷🇼 Rwanda | 1 |
+| Indicateur | Valeur |
+| :--- | ---: |
+| Fiches | **196** |
+| Ransomware | **122 (62,2%)** |
+| Fuites de données | **71 (36,2%)** |
+| Ventes d’accès | **3 (1,5%)** |
 
-## 3. Classement ransomware par pays
+### Classement par pays
 
-| Pays | Incidents ransomware |
-|---|---:|
-| 🇪🇬 Égypte | 28 |
-| 🇿🇦 Afrique du Sud | 28 |
-| 🇲🇦 Maroc | 12 |
-| 🇳🇬 Nigeria | 9 |
-| 🇰🇪 Kenya | 8 |
-| 🇹🇳 Tunisie | 6 |
-| 🇩🇿 Algérie | 4 |
-| 🇿🇲 Zambie | 4 |
-| 🇳🇦 Namibie | 3 |
-| 🇹🇿 Tanzanie | 3 |
+| Rang | Pays | Fiches | Barre |
+| :--- | ---: | ---: | ---: |
+| 1 | 🇪🇬 Égypte | 33 | █████████████████████████████████ |
+| 2 | 🇲🇦 Maroc | 31 | ███████████████████████████████ |
+| 3 | 🇿🇦 Afrique du Sud | 30 | ██████████████████████████████ |
+| 4 | 🇩🇿 Algérie | 19 | ███████████████████ |
+| 5 | 🇳🇬 Nigeria | 14 | ██████████████ |
+| 6 | 🇹🇳 Tunisie | 13 | █████████████ |
+| 7 | 🇰🇪 Kenya | 10 | ██████████ |
+| 8 | 🇲🇷 Mauritanie | 8 | ████████ |
+| 9 | 🇿🇲 Zambie | 4 | ████ |
+| 10 | 🇬🇭 Ghana | 3 | ███ |
+| 11 | 🇨🇮 Côte d’Ivoire | 3 | ███ |
+| 12 | 🇳🇦 Namibie | 3 | ███ |
+| 13 | 🇹🇿 Tanzanie | 3 | ███ |
+| 14 | 🇧🇼 Botswana | 2 | ██ |
+| 15 | 🇨🇩 RDC | 2 | ██ |
+| 16 | 🇲🇺 Maurice | 2 | ██ |
+| 17 | 🇸🇳 Sénégal | 2 | ██ |
+| 18 | 🇹🇬 Togo | 2 | ██ |
+| 19 | 🇺🇬 Ouganda | 2 | ██ |
+| 20 | 🇿🇼 Zimbabwe | 2 | ██ |
+| 21 | 🇦🇴 Angola | 1 | █ |
+| 22 | 🇧🇫 Burkina Faso | 1 | █ |
+| 23 | 🇨🇲 Cameroun | 1 | █ |
+| 24 | 🇩🇯 Djibouti | 1 | █ |
+| 25 | 🇪🇷 Érythrée | 1 | █ |
+| 26 | 🇬🇦 Gabon | 1 | █ |
+| 27 | 🇲🇬 Madagascar | 1 | █ |
+| 28 | 🇷🇼 Rwanda | 1 | █ |
 
-### Top 10 ransomware
+```mermaid
+xychart-beta
+    title "Top 10 - Tous incidents"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Fiches" 0 --> 34
+    bar [33,31,30,19,14,13,10,8,4,3]
+```
 
-| Pays | Incidents ransomware |
-|---|---:|
-| 🇪🇬 Égypte | 28 |
-| 🇿🇦 Afrique du Sud | 28 |
-| 🇲🇦 Maroc | 12 |
-| 🇳🇬 Nigeria | 9 |
-| 🇰🇪 Kenya | 8 |
-| 🇹🇳 Tunisie | 6 |
-| 🇩🇿 Algérie | 4 |
-| 🇿🇲 Zambie | 4 |
-| 🇳🇦 Namibie | 3 |
-| 🇹🇿 Tanzanie | 3 |
+### Répartition par type d’incident
 
-## 4. Groupes ransomware les plus présents
+| Type | Fiches | Part |
+| :--- | ---: | ---: |
+| Ransomware | 122 | 62,2% |
+| Fuite de données | 71 | 36,2% |
+| Vente d’accès | 3 | 1,5% |
+| **Total** | **196** | **100%** |
 
-| Groupe | Incidents |
-|---|---:|
+```mermaid
+pie showData
+    title Types d’incidents - 2025
+    "Ransomware" : 122
+    "Fuites de données" : 71
+    "Ventes d’accès" : 3
+```
+
+### Comparaison ransomware, fuites et ventes d’accès par pays
+
+| Pays | Ransomware | Fuites | Ventes d’accès | Total | Barre |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| 🇪🇬 Égypte | 28 | 5 | 0 | 33 | █████████████████████████████████ |
+| 🇲🇦 Maroc | 12 | 19 | 0 | 31 | ███████████████████████████████ |
+| 🇿🇦 Afrique du Sud | 28 | 2 | 0 | 30 | ██████████████████████████████ |
+| 🇩🇿 Algérie | 4 | 15 | 0 | 19 | ███████████████████ |
+| 🇳🇬 Nigeria | 9 | 5 | 0 | 14 | ██████████████ |
+| 🇹🇳 Tunisie | 6 | 7 | 0 | 13 | █████████████ |
+| 🇰🇪 Kenya | 8 | 2 | 0 | 10 | ██████████ |
+| 🇲🇷 Mauritanie | 0 | 8 | 0 | 8 | ████████ |
+| 🇿🇲 Zambie | 4 | 0 | 0 | 4 | ████ |
+| 🇬🇭 Ghana | 2 | 1 | 0 | 3 | ███ |
+| 🇨🇮 Côte d’Ivoire | 1 | 2 | 0 | 3 | ███ |
+| 🇳🇦 Namibie | 3 | 0 | 0 | 3 | ███ |
+| 🇹🇿 Tanzanie | 3 | 0 | 0 | 3 | ███ |
+| 🇧🇼 Botswana | 2 | 0 | 0 | 2 | ██ |
+| 🇨🇩 RDC | 1 | 1 | 0 | 2 | ██ |
+| 🇲🇺 Maurice | 2 | 0 | 0 | 2 | ██ |
+| 🇸🇳 Sénégal | 1 | 0 | 1 | 2 | ██ |
+| 🇹🇬 Togo | 0 | 1 | 1 | 2 | ██ |
+| 🇺🇬 Ouganda | 2 | 0 | 0 | 2 | ██ |
+| 🇿🇼 Zimbabwe | 2 | 0 | 0 | 2 | ██ |
+| 🇦🇴 Angola | 0 | 1 | 0 | 1 | █ |
+| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | █ |
+| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 | █ |
+| 🇩🇯 Djibouti | 0 | 1 | 0 | 1 | █ |
+| 🇪🇷 Érythrée | 0 | 1 | 0 | 1 | █ |
+| 🇬🇦 Gabon | 1 | 0 | 0 | 1 | █ |
+| 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | █ |
+| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | █ |
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Barre |
+| :--- | ---: | ---: | ---: | ---: |
+| Afrique du Nord | 96 | 50 | 46 | ██████████ |
+| Afrique australe | 43 | 41 | 2 | ████ |
+| Afrique de l’Ouest et centrale | 38 | 16 | 22 | ████ |
+| Afrique de l’Est | 19 | 15 | 4 | ██ |
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Barre |
+| :--- | ---: | ---: | ---: |
+| Gouvernement / administration | 40 | 20,4% | ██████████ |
+| Finance / banque | 39 | 19,9% | ██████████ |
+| Technologies / informatique | 25 | 12,8% | ██████ |
+| Éducation / universités | 17 | 8,7% | ████ |
+| Santé / médical | 14 | 7,1% | ████ |
+| Industrie / fabrication | 10 | 5,1% | ██ |
+| Transport / logistique | 10 | 5,1% | ██ |
+| Commerce / e-commerce | 8 | 4,1% | ██ |
+| Services professionnels | 7 | 3,6% | ██ |
+| Construction / immobilier | 6 | 3,1% | ██ |
+| Défense / sécurité | 6 | 3,1% | ██ |
+| Énergie / services publics | 4 | 2,0% | █ |
+| Agriculture / agro-industrie | 3 | 1,5% | █ |
+| Juridique / justice | 2 | 1,0% | █ |
+| Mines | 2 | 1,0% | █ |
+| Non précisé | 2 | 1,0% | █ |
+| Société civile / ONG | 1 | 0,5% | █ |
+
+## 4. Analyse détaillée par type d’incident
+
+Les revendications ransomware représentent 122 fiches. Les fuites et ventes d’accès représentent 74 fiches et concernent notamment des données administratives, financières, médicales, éducatives et commerciales.
+
+## 5. Impact sectoriel
+
+Les secteurs gouvernemental, financier, technologique et éducatif concentrent une part importante des fiches.
+
+## 6. Profil des acteurs et évaluation du risque
+
+| Acteur / source | Fiches |
+| :--- | ---: |
 | qilin | 11 |
+| nightspire | 10 |
 | devman | 10 |
 | incransom | 8 |
-| nightspire | 8 |
 | funksec | 7 |
-| killsec | 6 |
-| clop | 4 |
-| ransomhub | 4 |
-| warlock | 4 |
-| GDLockerSec | 3 |
-| arcusmedia | 3 |
-| babuk2 | 3 |
-| dragonforce | 3 |
-| lockbit5 | 3 |
-| lynx | 3 |
-| spacebears | 3 |
-| thegentlemen | 3 |
-| akira | 2 |
-| direwolf | 2 |
-| nova | 2 |
-| obscura | 2 |
-| radar | 2 |
-| ransomhouse | 2 |
-| tengu | 2 |
-| BlackShrantac | 1 |
-| Datacarry | 1 |
-| Wieko | 1 |
-| apt73 | 1 |
-| arkana | 1 |
-| beast | 1 |
-| benzona | 1 |
-| blackshrantac | 1 |
-| brotherhood | 1 |
-| cicada3301 | 1 |
-| crypto24 | 1 |
-| d4rk4rmy | 1 |
-| everest | 1 |
-| flocker | 1 |
-| fog | 1 |
-| gunra | 1 |
-| hunter | 1 |
-| kazu | 1 |
-| medusa | 1 |
-| play | 1 |
-| stormous | 1 |
-| worldleaks | 1 |
-| yurei | 1 |
-
-## 5. Classement des fuites de données par pays
-
-| Pays | Fuites de données |
-|---|---:|
-| 🇲🇦 Maroc | 19 |
-| 🇩🇿 Algérie | 15 |
-| 🇲🇷 Mauritanie | 8 |
-| 🇹🇳 Tunisie | 7 |
-| 🇪🇬 Égypte | 5 |
-| 🇳🇬 Nigeria | 5 |
-| 🇨🇮 Côte d’Ivoire | 2 |
-| 🇰🇪 Kenya | 2 |
-| 🇿🇦 Afrique du Sud | 2 |
-| 🇹🇬 Togo | 1 |
-| 🇦🇴 Angola | 1 |
-| 🇨🇩 Congo (RDC) | 1 |
-| 🇩🇯 Djibouti | 1 |
-| 🇪🇷 Érythrée | 1 |
-| 🇬🇭 Ghana | 1 |
-
-### Top 10 fuites de données
-
-| Pays | Fuites de données |
-|---|---:|
-| 🇲🇦 Maroc | 19 |
-| 🇩🇿 Algérie | 15 |
-| 🇲🇷 Mauritanie | 8 |
-| 🇹🇳 Tunisie | 7 |
-| 🇪🇬 Égypte | 5 |
-| 🇳🇬 Nigeria | 5 |
-| 🇨🇮 Côte d’Ivoire | 2 |
-| 🇰🇪 Kenya | 2 |
-| 🇿🇦 Afrique du Sud | 2 |
-| 🇹🇬 Togo | 1 |
-
-## Répartition sectorielle
-
-Les secteurs sont ici regroupés selon une nomenclature commune. Là où une fiche ne donnait pas de quoi trancher, le secteur est indiqué comme non précisé.
-
-| Secteur normalisé | Incidents |
-|---|---:|
-| Government / Administration | 40 |
-| Finance / Banking | 39 |
-| Technology / IT | 25 |
-| Education / University | 17 |
-| Healthcare / Medical | 14 |
-| Transport / Logistics | 10 |
-| Manufacturing / Industry | 10 |
-| Retail / E-commerce | 8 |
-| Professional / Business Services | 7 |
-| Defense / Security | 6 |
-| Construction / Real Estate | 6 |
-| Energy / Utilities | 4 |
-| Agriculture / Agribusiness | 3 |
-| Mining | 2 |
-| Legal / Justice | 2 |
-| Not specified | 2 |
-| Civil Society / NGO | 1 |
-
-## 6. Acteurs ou sources associés aux fuites
-
-| Acteur / source | Fuites |
-|---|---:|
 | Phantom Atlas | 7 |
+| killsec | 6 |
 | kill9 | 6 |
 | Dark 07x Team | 5 |
-| Inconnu | 3 |
-| Keymous | 3 |
-| B4baYega | 2 |
-| Evil_BYTE_Officiel | 2 |
-| Jabaroot DZ | 2 |
-| KaruHunters | 2 |
-| Non précisé | 2 |
-| mrdump, publication sur un forum cybercriminel (DarkForums) | 2 |
-| nightspire | 2 |
-| 0x0day, publication postée sur le forum cybercriminel DarkForums | 1 |
-| BIGBROTHER | 1 |
-| Chucky_BF | 1 |
-| DBhacker_BF | 1 |
-| EternalRed | 1 |
-| Fire Wire | 1 |
-| Gh1nDar | 1 |
-| GhostCrawl | 1 |
-| GhostVector (compte source) | 1 |
-| Hepd | 1 |
-| KILLUAX | 1 |
-| KickingPigs | 1 |
-| Killer_Bee | 1 |
-| LindaBF, publication sur un forum cybercriminel (RaidForums) | 1 |
-| MdHackersArmy (publication postée par Doxeur23azi sur un forum cybercriminel, DarkForums) | 1 |
-| Mercobyte | 1 |
-| MisterSam | 1 |
-| N1KA | 1 |
-| RL000 | 1 |
-| RainbowDF | 1 |
-| RiseAgainLuigi & B4baYega | 1 |
-| Spirigatito, publication postée sur un forum cybercriminel | 1 |
-| TajineSec / Tajinesec_MA (revendication publiée) | 1 |
-| Tanaka | 1 |
-| anisanas2 | 1 |
-| cache | 1 |
-| camillabf, publication sur un forum cybercriminel (RaidForums) | 1 |
-| mrdump (canal Telegram « Server dump ») | 1 |
-| mrdump (publication sur le canal Telegram « Server dump ») | 1 |
-| oblivion666 | 1 |
-| p4xar | 1 |
-| privilege | 1 |
-| privilege, publication sur un forum cybercriminel | 1 |
-| sanji_shi5 (compte source) | 1 |
+| ransomhub | 4 |
 
-## Visualisations
+| Pays | Niveau |
+| :--- | ---: |
+| 🇪🇬 Égypte | 🔴 Élevé |
+| 🇲🇦 Maroc | 🔴 Élevé |
+| 🇿🇦 Afrique du Sud | 🔴 Élevé |
+| 🇩🇿 Algérie | 🔴 Élevé |
+| 🇳🇬 Nigeria | 🔴 Élevé |
 
-Les graphiques montrent les dix premiers pays ; les tableaux précédents conservent le classement complet.
+## 7. Tendances et lacunes de renseignement
 
-```mermaid
-xychart-beta
-    title "Top 10 pays — tous les incidents"
-    x-axis ["Égypte", "Maroc", "Afrique du Sud", "Algérie", "Nigeria", "Tunisie", "Kenya", "Mauritanie", "Zambie", "Ghana"]
-    y-axis "Incidents" 0 --> 34
-    bar [33, 31, 30, 19, 14, 13, 10, 8, 4, 3]
-```
+Les limites principales sont la confirmation indépendante, la taille réelle des jeux de données et le lien entre revendications répétées.
 
-```mermaid
-xychart-beta
-    title "Top 10 pays — ransomware"
-    x-axis ["Égypte", "Afrique du Sud", "Maroc", "Nigeria", "Kenya", "Tunisie", "Algérie", "Zambie", "Namibie", "Tanzanie"]
-    y-axis "Incidents" 0 --> 29
-    bar [28, 28, 12, 9, 8, 6, 4, 4, 3, 3]
-```
+## 8. Cartographie MITRE ATT&CK contextuelle
 
-```mermaid
-xychart-beta
-    title "Top 10 pays — fuites de données"
-    x-axis ["Maroc", "Algérie", "Mauritanie", "Tunisie", "Nigeria", "Égypte", "Kenya", "Afrique du Sud", "Côte d’Ivoire", "Ghana"]
-    y-axis "Incidents" 0 --> 20
-    bar [19, 15, 8, 7, 5, 5, 2, 2, 2, 1]
-```
+| Phase | Technique | Contexte |
+| :--- | ---: | ---: |
+| Impact | T1486 - Data Encrypted for Impact | Ransomware |
+| Exfiltration | T1567 - Exfiltration Over Web Service | Leaks and extortion |
+| Credential access | T1078 - Valid Accounts | Access claims |
 
-## 7. Lecture CTI
+## 9. Recommandations
 
-Le ransomware domine en volume brut, mais les fuites de données racontent autre chose, le plus souvent un post de forum avec un dump SQL ou un échantillon de document attaché plutôt qu'une inscription sur un site de fuite. Volumes annoncés, authenticité des archives, liens réels entre des revendications répétées : rien de tout ça ne se tranche ici, il faut vérifier fiche par fiche.
+- Vérifier les revendications avec les journaux, EDR, IAM et sauvegardes.
+- Renforcer MFA, segmentation, sauvegardes hors ligne et rotation des secrets.
 
-## 8. Précautions
+## 10. Recommandations SOC et tactiques
 
-Sites de fuite et forums clandestins sont traités comme des sources de revendication, rien de plus. Aucune donnée personnelle brute n'est reproduite dans ce rapport.
+- Corréler EDR, VPN, IAM, DNS, proxy, WAF et journaux applicatifs.
 
-**AFRINTEL** — TLP:CLEAR
+## 11. Recommandations stratégiques
+
+- Maintenir l’inventaire des actifs et tester les plans de réponse et de restauration.
+
+## 12. Conclusion
+
+Ces chiffres décrivent les publications observées par AFRINTEL et servent à prioriser la veille et la défense.
+
+**AFRINTEL** - TLP:CLEAR

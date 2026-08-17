@@ -11,15 +11,15 @@
 
 ### 1. Résumé exécutif
 
-En février 2024, l'Afrique a enregistré **8 fiches d'incident** dans 6 pays : **5 revendications ransomware et 3 revendications de fuite de données**. Par rapport à janvier (3 victimes, toutes en Afrique du Sud), le mois marque une **expansion géographique nette** : l'Égypte, la Tunisie, la Côte d'Ivoire, l'Éthiopie, le Ghana et l'Afrique du Sud sont représentés.
+En février 2024, l'Afrique a enregistré **9 fiches d'incident** dans 6 pays : **5 revendications ransomware et 4 revendications de fuite de données**. Par rapport à janvier (3 victimes, toutes en Afrique du Sud), le mois marque une **expansion géographique nette** : l'Égypte, la Tunisie, la Côte d'Ivoire, l'Éthiopie, le Ghana et l'Afrique du Sud sont représentés.
 
 👉🏾 [Liste des victimes](./victims_FR.md)
 
 **Chiffres clés :**
-- 🔹 **8 fiches d'incident** identifiées
-- 🔹 **6 acteurs/groupes actifs** : Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (2)
-- 🔹 **Pays touchés** : Afrique du Sud (2), Éthiopie (1), Égypte (1), Tunisie (1), Côte d'Ivoire (2), Ghana (1)
-- 🔹 **Secteurs** : Gouvernement/Administration publique, Gouvernement/Éducation, Gouvernement/Services d'emploi, Services numériques/Télécom, Industrie, Santé & Recherche, Biens de consommation, Services publics
+- 🔹 **9 fiches d'incident** identifiées
+- 🔹 **6 acteurs/groupes actifs** : Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (3)
+- 🔹 **Pays touchés** : Afrique du Sud (2), Éthiopie (1), Égypte (2), Tunisie (1), Côte d'Ivoire (2), Ghana (1)
+- 🔹 **Secteurs** : Gouvernement/Administration publique, Gouvernement/Éducation, Gouvernement/Services d'emploi, Services numériques/Télécom, Technologies/Services logiciels, Industrie, Santé & Recherche, Biens de consommation, Services publics
 
 ---
 
@@ -27,6 +27,7 @@ En février 2024, l'Afrique a enregistré **8 fiches d'incident** dans 6 pays : 
 
 | Date | Victime | Pays | Acteur / Groupe | Type |
 |------|---------|------|-------------------|
+| 1 février | 8WORX | Égypte | Tanaka | Fuite de données |
 | 6 février | ArpuPlus | Égypte | Medusa | Ransomware |
 | 10 février | SOPEM Tunisie | Tunisie | Hunters | Ransomware |
 | 13 février | The Aurum Institute | Afrique du Sud | LockBit3 | Ransomware |
@@ -39,6 +40,7 @@ En février 2024, l'Afrique a enregistré **8 fiches d'incident** dans 6 pays : 
 ```mermaid
 timeline
     title Incidents en Afrique - Février 2024
+    1 février : 8WORX (Égypte) - Tanaka
     6 février : ArpuPlus (Égypte) - Medusa
     10 février : SOPEM Tunisie (Tunisie) - Hunters
     13 février : The Aurum Institute (Afrique du Sud) - LockBit3
@@ -59,16 +61,16 @@ timeline
 |------|-----------------|
 | Afrique du Sud | 2 |
 | Éthiopie | 1 |
-| Égypte | 1 |
+| Égypte | 2 |
 | Tunisie | 1 |
 | Côte d'Ivoire | 2 |
 | Ghana | 1 |
 
 ```mermaid
 pie showData
-    title Répartition par pays - Février 2024 (8 fiches)
+    title Répartition par pays - Février 2024 (9 fiches)
     "Afrique du Sud" : 2
-    "Égypte" : 1
+    "Égypte" : 2
     "Tunisie" : 1
     "Côte d'Ivoire" : 2
     "Éthiopie" : 1
@@ -80,6 +82,7 @@ pie showData
 | Secteur | Nombre |
 |---------|--------|
 | Services numériques / Télécom | 1 |
+| Technologies / Services logiciels | 1 |
 | Industrie (Métallurgie) | 1 |
 | Santé & Recherche | 1 |
 | Biens de consommation (Cosmétiques) | 1 |
@@ -91,9 +94,9 @@ pie showData
 ```mermaid
 xychart-beta
     title "Secteurs ciblés - Février 2024"
-    x-axis ["Numérique/Télécom", "Industrie", "Santé", "Biens conso.", "Services publics", "Gouvernement", "Éducation", "Emploi"]
+    x-axis ["Numérique/Télécom", "Technologies", "Industrie", "Santé", "Biens conso.", "Services publics", "Gouvernement", "Éducation", "Emploi"]
     y-axis "Nombre d'attaques" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1]
+    bar [1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
 #### 3.3 Groupes ransomware et acteurs de fuite
@@ -105,7 +108,7 @@ xychart-beta
 | Hunters | 1 |
 | DragonForce | 1 |
 | ThreatSec | 1 |
-| Tanaka | 2 |
+| Tanaka | 3 |
 
 ```mermaid
 gantt
@@ -121,7 +124,7 @@ gantt
     section DragonForce
     DragonForce : 0, 1
     section Tanaka
-    Tanaka : 0, 2
+    Tanaka : 0, 3
 ```
 
 ---
@@ -136,6 +139,7 @@ gantt
 - **Exposition gouvernementale éthiopienne** : une revendication ThreatSec publiée le 24 août 2023 et découverte par AFRINTEL le 24 février 2024 concerne 43 fichiers gouvernementaux liés à des portails de commerce et de certification.
 - **Fuite dans les services publics d'emploi ivoiriens** : la publication de Tanaka annonce un fichier SQL de 3,2 Go associé à agenceemploijeunes.ci, avec environ 2 300 lignes et 296 000 utilisateurs ou adresses email uniques ; ces chiffres restent incohérents et le jeu de données complet n'est pas vérifié.
 - **Fuite dans le secteur éducatif ghanéen** : une publication de Tanaka, initialement publiée le 16 juillet 2023 et découverte par AFRINTEL le 24 février 2024, annonce un export SQL d'environ 41 000 lignes de dossiers d'élèves-enseignants du National Teaching Council du Ghana, couvrant des données d'identité, de contact et académiques dans plusieurs collèges d'éducation.
+- **Fuite d'une plateforme CRM égyptienne** : une publication de Tanaka, initialement publiée le 30 juin 2023 et découverte par AFRINTEL le 1 février 2024, annonce un export SQL de 1,3 Go de 8WORX, un prestataire technologique enregistré dans le Delaware et concentré sur l'Égypte et le Moyen-Orient, avec environ 4 millions de lignes couvrant des données de téléphonie, de journaux d'activité et de prospects/comptes.
 
 ---
 
@@ -143,8 +147,8 @@ gantt
 xychart-beta
     title "Évolution mensuelle des attaques (Jan - Fév 2024)"
     x-axis ["Jan", "Fév"]
-    y-axis "Nombre d'attaques" 0 --> 8
-    bar [3, 8]
+    y-axis "Nombre d'attaques" 0 --> 9
+    bar [3, 9]
 ```
 
 ### 5. Recommandations

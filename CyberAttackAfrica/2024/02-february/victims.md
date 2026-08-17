@@ -4,7 +4,24 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa: February 2024: List of 8 Victims
+# Cyber Attacks in Africa: February 2024: List of 9 Victims
+
+### February 1, 2024
+
+#### 🇪🇬 Egypt - 8WORX
+- **Publication date:** June 30, 2023
+- **Discovery date:** February 1, 2024
+- **Actor / Group:** Tanaka, publication on an underground forum
+- **Sector:** Technology / Software Services
+- **Website:** [8worx.com](https://8worx.com)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim description:** 8WORX is a technology solutions provider legally established in Delaware, USA, that states a business focus on Egypt and the Middle East, developing web applications and systems for private and public sector clients.
+- **Analysis:** The post is published under the Tanaka account, which carries a moderator badge on the forum, so the original intrusion actor is not identified. The forum post advertises a 1.3 GB SQL export dated 2023, with roughly 4 million rows across tables including phone numbers, activity logs and social accounts, structured around a "Leads" module consistent with a CRM or lead-management system. The visible sample shows genuine-looking SQL INSERT statements with detailed contact, activity-tracking and account fields, and a large share of the phone records carry an Egypt (EG) country code, consistent with 8WORX's stated regional focus. The structural consistency of the schema and the plausibility of the sampled records support a high confidence assessment that the sample is authentic, though AFRINTEL has not independently confirmed the intrusion, the full scope of the underlying database, or the completeness of the announced 4-million-row volume. Exposure of this dataset would combine phone numbers, email addresses, lead and account activity, and internal user references for a very large number of individuals, creating a significant risk of targeted phishing, social engineering and fraud. AFRINTEL does not reproduce any phone number, email address, name or internal record from the reviewed sample.
+
+----------------------------
 
 ### February 6, 2024
 

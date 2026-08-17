@@ -11,15 +11,15 @@
 
 ### 1. Executive summary
 
-In February 2024, Africa recorded **8 incident records** across 6 countries: **5 ransomware claims and 3 data leak claims**. Compared to January (3 victims, all South Africa), the month marks a clear **geographic expansion**. Egypt, Tunisia, Ivory Coast, Ethiopia, Ghana and South Africa are all represented.
+In February 2024, Africa recorded **9 incident records** across 6 countries: **5 ransomware claims and 4 data leak claims**. Compared to January (3 victims, all South Africa), the month marks a clear **geographic expansion**. Egypt, Tunisia, Ivory Coast, Ethiopia, Ghana and South Africa are all represented.
 
 👉🏾 [Victims list](./victims.md)
 
 **Key figures:**
-- 🔹 **8 incident records** identified
-- 🔹 **6 active actors/groups**: Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (2)
-- 🔹 **Countries affected**: South Africa (2), Ethiopia (1), Egypt (1), Tunisia (1), Ivory Coast (2), Ghana (1)
-- 🔹 **Sectors**: Government/Public Administration, Government/Education, Government/Employment Services, Digital Services/Telecom, Manufacturing, Healthcare & Research, Consumer Goods, Utilities
+- 🔹 **9 incident records** identified
+- 🔹 **6 active actors/groups**: Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (3)
+- 🔹 **Countries affected**: South Africa (2), Ethiopia (1), Egypt (2), Tunisia (1), Ivory Coast (2), Ghana (1)
+- 🔹 **Sectors**: Government/Public Administration, Government/Education, Government/Employment Services, Digital Services/Telecom, Technology/Software Services, Manufacturing, Healthcare & Research, Consumer Goods, Utilities
 
 ---
 
@@ -27,6 +27,7 @@ In February 2024, Africa recorded **8 incident records** across 6 countries: **5
 
 | Date | Victim | Country | Actor / Group | Type |
 |------|--------|---------|-----------------|------|
+| February 1 | 8WORX | Egypt | Tanaka | Data Leak |
 | February 6 | ArpuPlus | Egypt | Medusa | Ransomware |
 | February 10 | SOPEM Tunisie | Tunisia | Hunters | Ransomware |
 | February 13 | The Aurum Institute | South Africa | LockBit3 | Ransomware |
@@ -39,6 +40,7 @@ In February 2024, Africa recorded **8 incident records** across 6 countries: **5
 ```mermaid
 timeline
     title Incidents in Africa - February 2024
+    February 1 : 8WORX (Egypt) - Tanaka
     February 6 : ArpuPlus (Egypt) - Medusa
     February 10 : SOPEM Tunisie (Tunisia) - Hunters
     February 13 : The Aurum Institute (South Africa) - LockBit3
@@ -59,16 +61,16 @@ timeline
 |---------|-----------------|
 | South Africa | 2 |
 | Ethiopia | 1 |
-| Egypt | 1 |
+| Egypt | 2 |
 | Tunisia | 1 |
 | Ivory Coast | 2 |
 | Ghana | 1 |
 
 ```mermaid
 pie showData
-    title Distribution by country - February 2024 (8 incident records)
+    title Distribution by country - February 2024 (9 incident records)
     "South Africa" : 2
-    "Egypt" : 1
+    "Egypt" : 2
     "Tunisia" : 1
     "Ivory Coast" : 2
     "Ethiopia" : 1
@@ -80,6 +82,7 @@ pie showData
 | Sector | Count |
 |--------|-------|
 | Digital Services / Telecom | 1 |
+| Technology / Software Services | 1 |
 | Manufacturing (Metallurgy) | 1 |
 | Healthcare & Research | 1 |
 | Consumer Goods (Cosmetics) | 1 |
@@ -91,9 +94,9 @@ pie showData
 ```mermaid
 xychart-beta
     title "Targeted Sectors - February 2024"
-    x-axis ["Digital/Telecom", "Manufacturing", "Healthcare", "Consumer Goods", "Utilities", "Government", "Education", "Employment"]
+    x-axis ["Digital/Telecom", "Technology", "Manufacturing", "Healthcare", "Consumer Goods", "Utilities", "Government", "Education", "Employment"]
     y-axis "Number of attacks" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1]
+    bar [1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
 #### 3.3 Ransomware groups and data-leak actors
@@ -105,7 +108,7 @@ xychart-beta
 | Hunters | 1 |
 | DragonForce | 1 |
 | ThreatSec | 1 |
-| Tanaka | 2 |
+| Tanaka | 3 |
 
 ```mermaid
 gantt
@@ -121,7 +124,7 @@ gantt
     section DragonForce
     DragonForce : 0, 1
     section Tanaka
-    Tanaka : 0, 2
+    Tanaka : 0, 3
 ```
 
 ---
@@ -136,6 +139,7 @@ gantt
 - **Ethiopian government exposure**: a ThreatSec claim published on 24 August 2023 and discovered by AFRINTEL on 24 February 2024 concerns 43 government files linked to trade and certification portals.
 - **Ivorian public-employment leak**: the Tanaka publication advertises a 3.2 GB SQL file associated with agenceemploijeunes.ci, with approximately 2,300 rows and 296,000 unique users or email addresses claimed; these figures remain internally inconsistent and the full dataset is unverified.
 - **Ghanaian education-sector leak**: a Tanaka forum post originally published on 16 July 2023 and discovered by AFRINTEL on 24 February 2024 advertises a ~41,000-row SQL export of student-teacher records from Ghana's National Teaching Council, covering identity, contact and academic data across multiple colleges of education.
+- **Egyptian CRM-platform leak**: a Tanaka forum post originally published on 30 June 2023 and discovered by AFRINTEL on 1 February 2024 advertises a 1.3 GB SQL export of 8WORX, a Delaware-registered technology provider focused on Egypt and the Middle East, with roughly 4 million rows spanning phone, activity-log and lead/account data.
 
 ---
 
@@ -143,8 +147,8 @@ gantt
 xychart-beta
     title "Monthly Evolution of Attacks (Jan - Feb 2024)"
     x-axis ["Jan", "Feb"]
-    y-axis "Number of attacks" 0 --> 8
-    bar [3, 8]
+    y-axis "Number of attacks" 0 --> 9
+    bar [3, 9]
 ```
 
 ### 5. Recommendations

@@ -1,6 +1,6 @@
 # Rapport CTI annuel AFRINTEL — 2024
 
-Ce bilan reprend les 115 fiches des douze fichiers mensuels AFRINTEL de 2024. Les revendications sont comptées telles qu'elles apparaissent dans les sources mensuelles ; une même organisation peut donc apparaître plusieurs fois.
+Ce bilan reprend les 116 fiches des douze fichiers mensuels AFRINTEL de 2024. Les revendications sont comptées telles qu'elles apparaissent dans les sources mensuelles ; une même organisation peut donc apparaître plusieurs fois.
 
 👉🏾 [English version](./README.md)
 
@@ -22,7 +22,7 @@ Les tableaux sont calculés directement à partir des fiches victimes mensuelles
 | Décembre | 12 |
 | Octobre | 12 |
 | Juillet | 11 |
-| Février | 8 |
+| Février | 9 |
 | Mars | 8 |
 | Mai | 8 |
 | Avril | 6 |
@@ -34,7 +34,7 @@ Les tableaux sont calculés directement à partir des fiches victimes mensuelles
 | Pays | Incidents |
 |---|---:|
 | 🇿🇦 Afrique du Sud | 30 |
-| 🇪🇬 Égypte | 12 |
+| 🇪🇬 Égypte | 13 |
 | 🇩🇿 Algérie | 7 |
 | 🇳🇬 Nigeria | 7 |
 | 🇹🇳 Tunisie | 6 |
@@ -221,7 +221,7 @@ Les tableaux sont calculés directement à partir des fiches victimes mensuelles
 | Type | Incidents |
 |---|---:|
 | Ransomware | 86 |
-| Fuite de données | 26 |
+| Fuite de données | 27 |
 | Vente d'accès | 3 |
 
 ## 8. Lecture CTI et priorités SOC
@@ -230,6 +230,6 @@ La concentration des fiches sur quelques pays reflète d'abord l'accès aux sour
 
 ## Conclusion
 
-Le bilan 2024 couvre 115 fiches documentées. Les limites de preuve et les éventuelles doubles revendications doivent rester visibles dans toute interprétation.
+Le bilan 2024 couvre 116 fiches documentées. Les limites de preuve et les éventuelles doubles revendications doivent rester visibles dans toute interprétation.
 
 **AFRINTEL** — TLP:CLEAR

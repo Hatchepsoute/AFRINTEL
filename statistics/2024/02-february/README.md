@@ -4,18 +4,18 @@
 
 ## Summary
 
-This statistical sheet is compiled from the 8 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the 9 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 8 |
+| Total incidents | 9 |
 | Ransomware | 5 |
-| Data leaks | 3 |
+| Data leaks | 4 |
 | Access sales | 0 |
 | Defacement | 0 |
 | Unclassified public claims | 0 |
 | Countries | 6 |
-| Sectors | 8 |
+| Sectors | 9 |
 | Actors / sources | 6 |
 
 ## 1. Country
@@ -24,7 +24,7 @@ This statistical sheet is compiled from the 8 cards in the monthly victim file. 
 |---|---:|
 | 🇿🇦 South Africa | 2 |
 | 🇨🇮 Ivory Coast | 2 |
-| 🇪🇬 Egypt | 1 |
+| 🇪🇬 Egypt | 2 |
 | 🇹🇳 Tunisia | 1 |
 | 🇪🇹 Ethiopia | 1 |
 | 🇬🇭 Ghana | 1 |
@@ -34,6 +34,7 @@ This statistical sheet is compiled from the 8 cards in the monthly victim file. 
 | Sector | Incidents |
 |---|---:|
 | Digital Services & Telecom | 1 |
+| Technology / Software Services | 1 |
 | Manufacturing (Metallurgy) | 1 |
 | Healthcare & Research | 1 |
 | Government / Public Administration | 1 |
@@ -46,8 +47,8 @@ This statistical sheet is compiled from the 8 cards in the monthly victim file. 
 
 | Actor / source | Incidents |
 |---|---:|
+| Tanaka, publication on an underground forum | 3 |
 | lockbit3 | 2 |
-| Tanaka, publication on an underground forum | 2 |
 | medusa | 1 |
 | hunters | 1 |
 | ThreatSec, publication by Tanaka on an underground forum | 1 |
@@ -58,7 +59,7 @@ This statistical sheet is compiled from the 8 cards in the monthly victim file. 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 5 |
-| Data Leak | 3 |
+| Data Leak | 4 |
 
 ## CTI reading
 
