@@ -51,6 +51,67 @@ pie
     "Défacement de sites web" : 1
 ```
 
+
+<!-- H1_VISUAL_START -->
+
+### Comparaison ransomware, fuites et défacement par pays
+
+| Pays | Ransomware | Fuites / accès | Défacement | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| Afrique du Sud | 25 | 23 | 0 | 48 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Égypte | 28 | 18 | 0 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Maroc | 10 | 34 | 0 | 44 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Tunisie | 8 | 8 | 0 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Nigeria | 6 | 9 | 0 | 15 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Kenya | 7 | 2 | 0 | 9 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Algérie | 1 | 7 | 0 | 8 | 🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| Sénégal | 3 | 2 | 1 | 6 | 🟧🟧🟧 🟦🟦 🟥 |
+| Tanzanie | 3 | 3 | 0 | 6 | 🟧🟧🟧 🟦🟦🟦 |
+| Ghana | 5 | 0 | 0 | 5 | 🟧🟧🟧🟧🟧 |
+
+### Répartition géographique par région
+
+| Région | Ransomware | Fuites / accès | Défacement | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 48 | 70 | 0 | 118 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | 35 | 26 | 0 | 61 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique de l’Ouest et centrale | 19 | 19 | 2 | 40 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟥🟥 |
+| Afrique de l’Est | 13 | 7 | 0 | 20 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+
+```mermaid
+xychart-beta
+    title "Top 10 pays - S1 2026"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Incidents" 0 --> 50
+    bar [48,46,44,16,15,9,8,6,6,5]
+```
+Légende : les numéros correspondent au classement du tableau ci-dessus.
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Gouvernement / administration | 68 | 28,5% | ██████████ |
+| Autres secteurs explicites | 56 | 23,4% | ████████ |
+| Technologies / informatique | 26 | 10,9% | ████ |
+| Éducation / universités | 19 | 7,9% | ███ |
+| Industrie / fabrication | 19 | 7,9% | ███ |
+| Finance / banque | 17 | 7,1% | ██ |
+| Santé / médical | 15 | 6,3% | ██ |
+| Commerce / e-commerce | 13 | 5,4% | ██ |
+| Pétrole et énergie | 6 | 2,5% | █ |
+
+```mermaid
+xychart-beta
+    title "Top secteurs - S1 2026"
+    x-axis ["1","2","3","4","5","6","7","8","9"]
+    y-axis "Fiches" 0 --> 70
+    bar [68,56,26,19,19,17,15,13,6]
+```
+Légende : les numéros correspondent au classement sectoriel du tableau ci-dessus.
+
+🟧 Ransomware | 🟦 Fuites et ventes d’accès | 🟥 Défacement
+<!-- H1_VISUAL_END -->
 ## 4. Évolution mensuelle
 
 | Mois | Ransomware | Fuites / ventes d’accès | Défacement de sites web | Total | Part mensuelle |

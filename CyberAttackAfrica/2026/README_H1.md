@@ -51,6 +51,67 @@ pie
     "Website defacement" : 1
 ```
 
+
+<!-- H1_VISUAL_START -->
+
+### Ransomware, leaks and defacement by country
+
+| Country | Ransomware | Leaks / access | Defacement | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| South Africa | 25 | 23 | 0 | 48 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Egypt | 28 | 18 | 0 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Morocco | 10 | 34 | 0 | 44 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Tunisia | 8 | 8 | 0 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Nigeria | 6 | 9 | 0 | 15 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Kenya | 7 | 2 | 0 | 9 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Algeria | 1 | 7 | 0 | 8 | 🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| Senegal | 3 | 2 | 1 | 6 | 🟧🟧🟧 🟦🟦 🟥 |
+| Tanzania | 3 | 3 | 0 | 6 | 🟧🟧🟧 🟦🟦🟦 |
+| Ghana | 5 | 0 | 0 | 5 | 🟧🟧🟧🟧🟧 |
+
+### Geographic distribution by region
+
+| Region | Ransomware | Leaks / access | Defacement | Total | Distribution |
+| :--- | ---: | ---: | ---: | ---: | :--- |
+| North Africa | 48 | 70 | 0 | 118 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 35 | 26 | 0 | 61 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| West and Central Africa | 19 | 19 | 2 | 40 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟥🟥 |
+| East Africa | 13 | 7 | 0 | 20 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+
+```mermaid
+xychart-beta
+    title "Top 10 countries - H1 2026"
+    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    y-axis "Incidents" 0 --> 50
+    bar [48,46,44,16,15,9,8,6,6,5]
+```
+Legend: numbers correspond to the ranking in the table above.
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 68 | 28.5% | ██████████ |
+| Other explicit sectors | 56 | 23.4% | ████████ |
+| Technology / IT | 26 | 10.9% | ████ |
+| Education / University | 19 | 7.9% | ███ |
+| Industry / Manufacturing | 19 | 7.9% | ███ |
+| Finance / Banking | 17 | 7.1% | ██ |
+| Healthcare / Medical | 15 | 6.3% | ██ |
+| E-commerce / Retail | 13 | 5.4% | ██ |
+| Oil & Energy | 6 | 2.5% | █ |
+
+```mermaid
+xychart-beta
+    title "Top sectors - H1 2026"
+    x-axis ["1","2","3","4","5","6","7","8","9"]
+    y-axis "Records" 0 --> 70
+    bar [68,56,26,19,19,17,15,13,6]
+```
+Legend: numbers correspond to the sector ranking in the table above.
+
+🟧 Ransomware | 🟦 Leaks and access sales | 🟥 Defacement
+<!-- H1_VISUAL_END -->
 ## 4. Monthly evolution
 
 | Month | Ransomware | Data leaks / access sales | Website defacement | Total | Monthly share |
