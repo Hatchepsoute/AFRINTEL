@@ -82,17 +82,17 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 
 | Label | Records | Bar |
 |---|---:|:---|
-| 1 | 48 | ██████████ |
-| 2 | 46 | ██████████ |
-| 3 | 44 | ██████████ |
-| 4 | 16 | ████ |
-| 5 | 15 | ████ |
-| 6 | 9 | ██ |
-| 7 | 8 | ██ |
-| 8 | 6 | ██ |
-| 9 | 6 | ██ |
-| 10 | 5 | ██ |
-Legend: numbers correspond to the ranking in the table above.
+| South Africa | 48 | ██████████ |
+| Egypt | 46 | ██████████ |
+| Morocco | 44 | █████████ |
+| Tunisia | 16 | ███ |
+| Nigeria | 15 | ███ |
+| Kenya | 9 | ██ |
+| Algeria | 8 | ██ |
+| Senegal | 6 | █ |
+| Tanzania | 6 | █ |
+| Ghana | 5 | █ |
+Legend: names correspond to the ranking in the table above.
 
 ### Sector distribution
 
@@ -112,16 +112,16 @@ Legend: numbers correspond to the ranking in the table above.
 
 | Label | Records | Bar |
 |---|---:|:---|
-| 1 | 68 | ██████████ |
-| 2 | 56 | █████████ |
-| 3 | 26 | ████ |
-| 4 | 19 | ███ |
-| 5 | 19 | ███ |
-| 6 | 17 | ███ |
-| 7 | 15 | ███ |
-| 8 | 13 | ██ |
-| 9 | 6 | █ |
-Legend: numbers correspond to the sector ranking in the table above.
+| Government / Administration | 68 | ██████████ |
+| Other explicit sectors | 56 | ████████ |
+| Technology / IT | 26 | ████ |
+| Education / University | 19 | ███ |
+| Industry / Manufacturing | 19 | ███ |
+| Finance / Banking | 17 | ██ |
+| Healthcare / Medical | 15 | ██ |
+| E-commerce / Retail | 13 | ██ |
+| Oil & Energy | 6 | █ |
+Legend: names correspond to the sector ranking in the table above.
 
 🟧 Ransomware | 🟦 Leaks and access sales | 🟥 Defacement
 <!-- H1_VISUAL_END -->

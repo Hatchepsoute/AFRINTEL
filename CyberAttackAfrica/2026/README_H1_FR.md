@@ -82,17 +82,17 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 
 | Libellé | Incidents | Barre |
 |---|---:|:---|
-| 1 | 48 | ██████████ |
-| 2 | 46 | ██████████ |
-| 3 | 44 | ██████████ |
-| 4 | 16 | ████ |
-| 5 | 15 | ████ |
-| 6 | 9 | ██ |
-| 7 | 8 | ██ |
-| 8 | 6 | ██ |
-| 9 | 6 | ██ |
-| 10 | 5 | ██ |
-Légende : les numéros correspondent au classement du tableau ci-dessus.
+| Afrique du Sud | 48 | ██████████ |
+| Égypte | 46 | ██████████ |
+| Maroc | 44 | █████████ |
+| Tunisie | 16 | ███ |
+| Nigeria | 15 | ███ |
+| Kenya | 9 | ██ |
+| Algérie | 8 | ██ |
+| Sénégal | 6 | █ |
+| Tanzanie | 6 | █ |
+| Ghana | 5 | █ |
+Légende : les noms correspondent au classement du tableau ci-dessus.
 
 ### Répartition sectorielle
 
@@ -112,16 +112,16 @@ Légende : les numéros correspondent au classement du tableau ci-dessus.
 
 | Libellé | Incidents | Barre |
 |---|---:|:---|
-| 1 | 68 | ██████████ |
-| 2 | 56 | █████████ |
-| 3 | 26 | ████ |
-| 4 | 19 | ███ |
-| 5 | 19 | ███ |
-| 6 | 17 | ███ |
-| 7 | 15 | ███ |
-| 8 | 13 | ██ |
-| 9 | 6 | █ |
-Légende : les numéros correspondent au classement sectoriel du tableau ci-dessus.
+| Gouvernement / administration | 68 | ██████████ |
+| Autres secteurs explicites | 56 | ████████ |
+| Technologies / informatique | 26 | ████ |
+| Éducation / universités | 19 | ███ |
+| Industrie / fabrication | 19 | ███ |
+| Finance / banque | 17 | ██ |
+| Santé / médical | 15 | ██ |
+| Commerce / e-commerce | 13 | ██ |
+| Pétrole et énergie | 6 | █ |
+Légende : les noms correspondent au classement sectoriel du tableau ci-dessus.
 
 🟧 Ransomware | 🟦 Fuites et ventes d’accès | 🟥 Défacement
 <!-- H1_VISUAL_END -->
