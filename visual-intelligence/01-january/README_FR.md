@@ -17,7 +17,7 @@ title Incidents par pays
 ```mermaid
 pie
 title Groupes actifs
-"thegentlemen (6)" : 6
+"TheGentlemen (6)" : 6
 "tengu (5)" : 5
 "Autres" : 10
 ```
@@ -27,7 +27,7 @@ title Groupes actifs
 ```mermaid
 flowchart LR
 
-TG[thegentlemen] --> RT[Real Tech]
+TG[TheGentlemen] --> RT[Real Tech]
 TG --> CPF[CPF Financial]
 TG --> RC[Rogers Capital]
 TG --> PAL[Paltrack]
@@ -67,6 +67,6 @@ bar [5,3,3,3,1]
 ## Lecture CTI
 
 - Janvier 2026 marque une forte activité ransomware transfrontalière.
-- thegentlemen et tengu dominent les opérations africaines.
+- TheGentlemen et tengu dominent les opérations africaines.
 - Les infrastructures gouvernementales deviennent des cibles prioritaires.
 - Les fuites de données commencent à émerger comme tendance majeure.

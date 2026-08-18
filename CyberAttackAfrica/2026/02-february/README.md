@@ -14,7 +14,7 @@ February 2026 brought **20 cyber incidents** across **14 African countries**, ev
 
 - **20 ransomware / data extortion incidents (100%)**.
 - **14 countries** affected; **South Africa** (3), **Egypt** (3), **Ghana** (2) and **Nigeria** (2) lead.
-- **11 distinct threat actors**; **thegentlemen** (5 incidents) dominates, followed by **0APT** (3) and **LockBit 5.0** (3).
+- **11 distinct threat actors**; **TheGentlemen** (5 incidents) dominates, followed by **0APT** (3) and **LockBit 5.0** (3).
 - Aviation sector under sustained pressure: BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire all claimed in February.
 - Noteworthy: 0APT, responsible for 3 large-volume claims (BlueSky 3.5 TB, Global Media Alliance 2.5 TB, Vertex Law 850 GB), subsequently disappeared from public leak sites.
 
@@ -86,7 +86,7 @@ pie
 **Most prolific actors:**
 | Actor | Incidents | Countries |
 |-------|:---------:|----------|
-| thegentlemen | 5 | Kenya, Ghana, Egypt, South Africa, Tunisia |
+| TheGentlemen | 5 | Kenya, Ghana, Egypt, South Africa, Tunisia |
 | 0APT | 3 | Somalia, Ghana, Tanzania |
 | LockBit 5.0 | 3 | Mauritius, Egypt, South Africa |
 | incransom | 2 | Nigeria, Ivory Coast |
@@ -101,7 +101,7 @@ pie
 ```mermaid
 pie
  title Most active threat actors (February 2026)
- "thegentlemen (5)" : 5
+ "TheGentlemen (5)" : 5
  "0APT (3)" : 3
  "LockBit 5.0 (3)" : 3
  "incransom (2)" : 2
@@ -125,16 +125,16 @@ pie
 
 | Country | Incidents | Main actors |
 |---------|:---------:|-------------|
-| South Africa | 3 | thegentlemen, vect, LockBit 5.0 |
-| Egypt | 3 | thegentlemen, payload, LockBit 5.0 |
-| Ghana | 2 | 0APT, thegentlemen |
+| South Africa | 3 | TheGentlemen, vect, LockBit 5.0 |
+| Egypt | 3 | TheGentlemen, payload, LockBit 5.0 |
+| Ghana | 2 | 0APT, TheGentlemen |
 | Nigeria | 2 | killsec, incransom |
 | Senegal | 1 | The Green Blood Group (139 TB) |
 | Somalia | 1 | 0APT (3.5 TB) |
 | Tanzania | 1 | 0APT (850 GB) |
-| Kenya | 1 | thegentlemen |
+| Kenya | 1 | TheGentlemen |
 | Mauritius | 1 | LockBit 5.0 |
-| Tunisia | 1 | thegentlemen |
+| Tunisia | 1 | TheGentlemen |
 | Sudan | 1 | apt73/bashe (3.5 GB leaked) |
 | Ivory Coast | 1 | incransom |
 | Morocco | 1 | tengu |
@@ -143,7 +143,7 @@ pie
 **Key observations:**
 - **0APT** came out of nowhere in early February, 3 claims in 5 days, then went quiet on public leak sites for the rest of the month.
 - **Aviation**: 3 airlines claimed (BlueSky Somalia, Nile Air Egypt, Air Côte d'Ivoire), 3 different actors. Reads more like independent opportunism than a coordinated push.
-- **thegentlemen** shows up 5 times this month, across 5 countries.
+- **TheGentlemen** shows up 5 times this month, across 5 countries.
 - **LockBit 5.0** published 3 victims under the 5.x branding.
 
 ## 6. Sectoral impact
@@ -191,7 +191,7 @@ pie
 
 | Actor | Type | Incidents | Primary targets |
 |-------|------|:---------:|-----------------|
-| thegentlemen | Ransomware group | 5 | Cross-sector, 5 countries |
+| TheGentlemen | Ransomware group | 5 | Cross-sector, 5 countries |
 | 0APT | Unknown (disappeared) | 3 | Aviation, media, legal |
 | LockBit 5.0 | Ransomware | 3 | Hospitality, government, automotive |
 | incransom | Ransomware | 2 | Energy, aviation |
@@ -227,7 +227,7 @@ pie
 1. **DAF Senegal could be a record-breaking breach.** 139 TB including biometric data is an extraordinary number to claim. If it holds up, that's a real escalation against West African governments.
 2. **Aviation took a hit.** Three airlines, three countries, three actors, in one month. Looks like independent opportunism rather than anyone running a coordinated campaign against the sector.
 3. **0APT burned bright and went dark.** Three high-volume claims in five days, then nothing more on public leak sites for the rest of the month.
-4. **thegentlemen isn't slowing down.** Five incidents in February on the heels of six in January, a steady pan-African tempo.
+4. **TheGentlemen isn't slowing down.** Five incidents in February on the heels of six in January, a steady pan-African tempo.
 5. **LockBit 5.0 keeps showing up.** Three claims this month, African targeting hasn't let up.
 
 ### Gaps

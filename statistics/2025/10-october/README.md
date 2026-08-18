@@ -66,7 +66,7 @@ This statistical sheet is compiled from the 19 cards in the monthly victim file.
 | brotherhood | 1 |
 | medusa | 1 |
 | obscura | 1 |
-| thegentlemen | 1 |
+| TheGentlemen | 1 |
 | radar | 1 |
 | clop | 1 |
 | blackshrantac | 1 |

@@ -14,7 +14,7 @@ January 2026 brought in **21 cyber incidents** against African targets, claimed 
 
 - **17 ransomware claims (81.0%)**, **2 data leaks (9.5%)**, **1 access sale (4.8%)**, and **1 defacement (4.8%)**.
 - **12 countries** affected; **South Africa** (4 incidents) and **Kenya** (4) are the most targeted, followed by **Egypt** (3).
-- **11 identified threat actors** and **1 unattributed defacement**; **thegentlemen** (6 records) and **tengu** (5) account for 11 records across 7 distinct countries.
+- **11 identified threat actors** and **1 unattributed defacement**; **TheGentlemen** (6 records) and **tengu** (5) account for 11 records across 7 distinct countries.
 - Government, financial services, and transport sectors account for the majority of victims.
 - Critical incidents: coordinated defacement of 7+ Nigerien state websites displaying political messages about the country’s geopolitical situation, PixPay Senegal financial data leak (mobile payment), AOM Aviation Morocco data leak (aviation database), and Bigbrother IAB repeatedly selling access to Togolese government infrastructure.
 
@@ -105,7 +105,7 @@ pie
 **Most prolific actors:**
 | Actor | Type | Incidents | Countries targeted |
 |-------|------|:---------:|-------------------|
-| thegentlemen | Ransomware | 6 | Egypt, Kenya, Mauritius, South Africa |
+| TheGentlemen | Ransomware | 6 | Egypt, Kenya, Mauritius, South Africa |
 | tengu | Ransomware | 5 | Algeria, Egypt, Kenya, Morocco, Tunisia |
 | blackshrantac | Ransomware | 1 | Kenya |
 | vect | Ransomware | 1 | South Africa |
@@ -121,7 +121,7 @@ pie
 ```mermaid
 pie
  title Most active threat actors (January 2026)
- "thegentlemen (6)" : 6
+ "TheGentlemen (6)" : 6
  "tengu (5)" : 5
  "Others - 1 each (10)" : 10
 ```
@@ -143,19 +143,19 @@ pie
 
 | Country | Attacks | Main actors |
 |---------|:-------:|-------------|
-| South Africa | 4 | thegentlemen (3), vect (1) |
-| Kenya | 4 | thegentlemen, devman, blackshrantac, tengu |
-| Egypt | 3 | thegentlemen, direwolf, tengu |
+| South Africa | 4 | TheGentlemen (3), vect (1) |
+| Kenya | 4 | TheGentlemen, devman, blackshrantac, tengu |
+| Egypt | 3 | TheGentlemen, direwolf, tengu |
 | Morocco | 1 | tengu |
 | Mozambique | 1 | qilin |
 | Tanzania | 1 | benzona |
-| Mauritius | 1 | thegentlemen |
+| Mauritius | 1 | TheGentlemen |
 | Algeria | 1 | tengu |
 | Tunisia | 1 | tengu |
 | Togo | 1 | Bigbrother (IAB, access sale) |
 
 **Key observations:**
-- **thegentlemen** and **tengu** together cover 11 of 21 records (52%) across 7 distinct countries. Nothing in the January sources ties the two groups together operationally, though.
+- **TheGentlemen** and **tengu** together cover 11 of 21 records (52%) across 7 distinct countries. Nothing in the January sources ties the two groups together operationally, though.
 - January 20 was the busiest single day, 5 claims in South Africa and Kenya alone: Paltrack, Rola, Witzenberg, CPF, NSSF.
 - **Bigbrother/Togo** looks like a classic IAB pattern: SSH access sold back in September 2025, then a fresh access claim in January. Persistent access like that raises the odds of a bigger operation down the line.
 
@@ -211,7 +211,7 @@ pie
 
 | Actor | Type | Incidents | Primary targets |
 |-------|------|:---------:|-----------------|
-| thegentlemen | Ransomware group | 6 | Egypt, Kenya, Mauritius, South Africa |
+| TheGentlemen | Ransomware group | 6 | Egypt, Kenya, Mauritius, South Africa |
 | tengu | Ransomware group | 5 | Algeria, Egypt, Kenya, Morocco, Tunisia |
 | blackshrantac | Ransomware | 1 | Kenya (public services) |
 | vect | Ransomware | 1 | South Africa (engineering) |
@@ -242,7 +242,7 @@ pie
 
 ### Trends
 
-1. **thegentlemen and tengu dominate the month.** Between them, 52% of January's records, thegentlemen in 4 countries, tengu in 5, seven distinct countries covered once the two are combined.
+1. **TheGentlemen and tengu dominate the month.** Between them, 52% of January's records, TheGentlemen in 4 countries, tengu in 5, seven distinct countries covered once the two are combined.
 2. **Kenya stands out.** All 4 incidents there hit public institutions, water, pension, social security, mining. That reads less like scattered opportunism and more like deliberate targeting of government-adjacent infrastructure.
 3. **Togo keeps coming up.** Bigbrother sold access in September 2025, then claimed new access again in January. Two publications on the same government infrastructure is reason enough to push credential and access review now, not later.
 4. **Niger's government sites went down together.** More than seven state websites defaced with the same political messaging, but the source material doesn't identify what technical dependency the operation actually exploited.
@@ -278,7 +278,7 @@ pie
 
 ### For CTI analysts
 
-- Track **thegentlemen** and **tengu** for new African publications; together they appeared across 7 distinct countries in January.
+- Track **TheGentlemen** and **tengu** for new African publications; together they appeared across 7 distinct countries in January.
 - Monitor **Bigbrother** for new Togolese government access claims and buyer activity.
 - Watch for follow-on operations tied to Niger defacement (possible escalation after reconnaissance).
 - Alert on any PixPay or AOM data appearing on secondary markets.
@@ -310,7 +310,7 @@ pie
 
 ## 13. Conclusion
 
-January closed out with 21 incident records across 12 countries. Ransomware made up 17 of them, and thegentlemen plus tengu alone covered 11 records across 7 countries. The rest of the month, two data publications, one access sale, one coordinated defacement, filled out the picture. South Africa and Kenya led on volume, Egypt close behind. Between them, the activity touched North, West, East and Southern Africa.
+January closed out with 21 incident records across 12 countries. Ransomware made up 17 of them, and TheGentlemen plus tengu alone covered 11 records across 7 countries. The rest of the month, two data publications, one access sale, one coordinated defacement, filled out the picture. South Africa and Kenya led on volume, Egypt close behind. Between them, the activity touched North, West, East and Southern Africa.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

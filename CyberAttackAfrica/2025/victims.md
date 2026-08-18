@@ -1398,7 +1398,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 
 ### 09 September 2025
 #### 🇲🇦 Morocco - Dolidol
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Manufacturing Industry / Bedding / Furniture
 - **Website:** https://www.dolidol.ma
 - **Status:** Claim - Unverified
@@ -1406,12 +1406,12 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 
 ### 09 September 2025
 #### 🇿🇼 Zimbabwe - Proplastics Limited
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Manufacturing Industry (Plastics)
 - **Website:** https://www.proplastics.co.zw
 - **Status:** Claim - Unverified
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
-- **Analysis:** The supplied local evidence set contains 63 files associated with Proplastics, including PDFs, spreadsheets, image files and text files. Filenames indicate business records covering invoices and credit memos, account balances, bills of materials, backorders, deliveries, sales analysis and branch reporting. The files carry dates spanning 2023-2024, while the directory metadata places the collection in September 2025; these timestamps are treated as evidence context, not as a confirmed intrusion or publication date. The material supports the plausibility and potential sensitivity of the September 2025 claim, but does not independently establish the access vector, the complete scope of the dataset or the attribution to thegentlemen. AFRINTEL does not reproduce names, account details, financial values, customer records or document contents.
+- **Analysis:** The supplied local evidence set contains 63 files associated with Proplastics, including PDFs, spreadsheets, image files and text files. Filenames indicate business records covering invoices and credit memos, account balances, bills of materials, backorders, deliveries, sales analysis and branch reporting. The files carry dates spanning 2023-2024, while the directory metadata places the collection in September 2025; these timestamps are treated as evidence context, not as a confirmed intrusion or publication date. The material supports the plausibility and potential sensitivity of the September 2025 claim, but does not independently establish the access vector, the complete scope of the dataset or the attribution to TheGentlemen. AFRINTEL does not reproduce names, account details, financial values, customer records or document contents.
 
 ### 10 September 2025
 #### 🇳🇬 Nigeria - Princeps Credit Systems Limited
@@ -1573,7 +1573,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 
 ### 17 October 2025
 #### 🇲🇬 Madagascar - Madagascar Airlines
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Air transport
 - **Website:** www.madagascarairlines.com
 - **Status:** Claim - Unverified
@@ -1941,7 +1941,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Website:** proplastics.co.zw
 - **Status:** Claim - Unverified
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
-- **Analysis:** AFRINTEL previously recorded a claim against this same company by thegentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
+- **Analysis:** AFRINTEL previously recorded a claim against this same company by TheGentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 29 December 2025
 #### 🇩🇿 Algeria - Oran University 1 Ahmed Ben Bella

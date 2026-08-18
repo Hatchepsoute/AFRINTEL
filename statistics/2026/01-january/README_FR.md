@@ -31,12 +31,12 @@ Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le conti
 
 | Pays | Incidents | Acteurs dominants (Jan 2026) |
 |---|---:|---|
-| 🇿🇦 Afrique du Sud | 4 | `thegentlemen`, `vect` |
-| 🇰🇪 Kenya | 4 | `thegentlemen`, `tengu`, `blackshrantac`, `devman` |
-| 🇪🇬 Égypte | 3 | `thegentlemen`, `tengu`, `direwolf` |
+| 🇿🇦 Afrique du Sud | 4 | `TheGentlemen`, `vect` |
+| 🇰🇪 Kenya | 4 | `TheGentlemen`, `tengu`, `blackshrantac`, `devman` |
+| 🇪🇬 Égypte | 3 | `TheGentlemen`, `tengu`, `direwolf` |
 | 🇲🇦 Maroc | 2 | `tengu`, `skra1a` |
 | 🇩🇿 Algérie | 1 | `tengu` |
-| 🇲🇺 Maurice | 1 | `thegentlemen` |
+| 🇲🇺 Maurice | 1 | `TheGentlemen` |
 | 🇲🇿 Mozambique | 1 | `qilin` |
 | 🇸🇳 Sénégal | 1 | `breach3d` |
 | 🇹🇿 Tanzanie | 1 | `benzona` |
@@ -50,7 +50,7 @@ Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le conti
 
 | Acteur | Incidents | Pays ciblés |
 |---|---:|---|
-| `thegentlemen` | **6** | Égypte, Kenya, Maurice, Afrique du Sud |
+| `TheGentlemen` | **6** | Égypte, Kenya, Maurice, Afrique du Sud |
 | `tengu` | **5** | Algérie, Égypte, Kenya, Maroc, Tunisie |
 | `Bigbrother` | 1 | Togo |
 | `breach3d` | 1 | Sénégal |
@@ -103,7 +103,7 @@ classDef high fill:#ff4d4d,color:#ffffff,stroke:#990000,stroke-width:2px;
 classDef medium fill:#ffa64d,color:#000000,stroke:#cc6600,stroke-width:2px;
 classDef low fill:#ffe6b3,color:#000000,stroke:#cc9900,stroke-width:1px;
 
-TG["thegentlemen (6)"]:::high
+TG["TheGentlemen (6)"]:::high
 TENGU["tengu (5)"]:::high
 
 BIG["Bigbrother (1)"]:::medium
@@ -194,7 +194,7 @@ flowchart LR
   classDef victim fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
 
   %% ===== ACTEURS =====
-  A1["thegentlemen"]:::actor
+  A1["TheGentlemen"]:::actor
   A2["tengu"]:::actor
   A3["Bigbrother"]:::actor
   A4["breach3d"]:::actor
@@ -283,7 +283,7 @@ flowchart LR
 
 ## 🛡️ Recommandations SOC / CTI
 
-1) **Surveiller en priorité les acteurs dominants** : `thegentlemen` & `tengu` (corrélations pays/secteur).  
+1) **Surveiller en priorité les acteurs dominants** : `TheGentlemen` & `tengu` (corrélations pays/secteur).  
 2) **Durcir les portails publics** : WAF, patching, revue CMS, inventaire DNS, réduction surface d’attaque.  
 3) **Détecter l’exfiltration** : seuils volumétriques, egress filtering, anomalies DNS/HTTP, comptes privilégiés.  
 4) **Préparation de crise** : playbooks ransomware + data leak, sauvegardes immuables, exercices tabletop.  

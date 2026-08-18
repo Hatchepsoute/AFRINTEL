@@ -145,7 +145,7 @@ pie
 | XP95             | Ransomware      | 3         | South African government |
 | xNov             | Data breach     | 3         | Moroccan supply chain, South African sports |
 | Qilin            | Ransomware      | 2         | Morocco, Madagascar |
-| The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
+| TheGentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
 
 ```mermaid
@@ -156,7 +156,7 @@ pie
  "XP95 (3)" : 3
  "xNov (3)" : 3
  "Qilin (2)" : 2
- "The Gentlemen (2)" : 2
+ "TheGentlemen (2)" : 2
  "INC Ransom (2)" : 2
 ```
 
@@ -177,11 +177,11 @@ pie
 
 | Country          | Ransomware attacks | Main actors |
 |------------------|--------------------|-------------|
-| South Africa     | 7                  | XP95 (3), LockBit 5.0, Lynx, DragonForce, The Gentlemen, NightSpire, INC Ransom, Coinbase Cartel |
-| Morocco          | 5                  | APT73/BASHE (3), Qilin, The Gentlemen |
+| South Africa     | 7                  | XP95 (3), LockBit 5.0, Lynx, DragonForce, TheGentlemen, NightSpire, INC Ransom, Coinbase Cartel |
+| Morocco          | 5                  | APT73/BASHE (3), Qilin, TheGentlemen |
 | Egypt            | 3                  | Crypto24, PEAR, Payload |
 | Madagascar       | 1                  | Qilin |
-| Tunisia          | 1                  | The Gentlemen |
+| Tunisia          | 1                  | TheGentlemen |
 | Namibia          | 1                  | INC Ransom |
 | Tanzania         | 1                  | Morpheus |
 
@@ -270,7 +270,7 @@ pie
 | XP95             | Ransomware      | 3         | South African government |
 | xNov             | Data breach     | 3         | Moroccan supply chain, South African sports, education |
 | Qilin            | Ransomware      | 2         | Morocco, Madagascar |
-| The Gentlemen    | Ransomware      | 2         | Tunisia, South Africa |
+| TheGentlemen    | Ransomware      | 2         | Tunisia, South Africa |
 | INC Ransom       | Ransomware      | 2         | Namibia, South Africa |
 
 **Emerging actors**: xNov (supply chain focus), XP95 (South African government targeting), zimablue (pan-African e‑commerce), Keymous (West African health ministries), Grubder (Algerian tech sector).

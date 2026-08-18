@@ -179,7 +179,7 @@ pie
     "Ventes d'accès" : 6
 ```
 
-Les publications ransomware sont principalement associées à **arcusmedia**, **dragonforce**, **krybit** et **thegentlemen**. Ces occurrences correspondent à des publications ou revendications ; elles ne démontrent pas systématiquement un chiffrement, une exfiltration ou une interruption d’activité.
+Les publications ransomware sont principalement associées à **arcusmedia**, **dragonforce**, **krybit** et **TheGentlemen**. Ces occurrences correspondent à des publications ou revendications ; elles ne démontrent pas systématiquement un chiffrement, une exfiltration ou une interruption d’activité.
 
 Les fuites de données couvrent des documents d’identité, des données médicales, des comptes universitaires, des dossiers administratifs et des bases commerciales. Les offres d’accès concernent notamment des environnements Fortinet, des services de messagerie et des portails administratifs allégués.
 
@@ -227,7 +227,7 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 | dragonforce | 3 | Ransomware |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Vente d’accès / republication |
-| thegentlemen | 2 | Ransomware |
+| TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Fuite de données |
 | Autres sources nommées | 27 | Activités diverses |
 
@@ -235,7 +235,7 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 ```mermaid
 xychart-beta
     title "Acteurs et sources les plus présents - juillet 2026"
-    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Autres sources"]
+    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","Autres sources"]
     y-axis "Fiches" 0 --> 28
     bar [4,3,2,2,2,2,27]
 ```

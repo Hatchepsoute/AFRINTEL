@@ -250,7 +250,7 @@ Les tableaux sont calculés directement à partir des fiches victimes mensuelles
 | dragonforce | 3 |
 | Keymous | 3 |
 | Inconnu | 3 |
-| thegentlemen | 3 |
+| TheGentlemen | 3 |
 | lockbit5 | 3 |
 | akira | 2 |
 | ransomhouse | 2 |

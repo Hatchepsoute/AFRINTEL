@@ -14,7 +14,7 @@ Janvier 2026 a rapporté **21 incidents cyber** contre des cibles africaines, re
 
 - **17 revendications ransomware (81,0 %)**, **2 fuites de données (9,5 %)**, **1 vente d’accès (4,8 %)** et **1 défacement (4,8 %)**.
 - **12 pays** touchés : **l'Afrique du Sud** (4 incidents) et le **Kenya** (4) sont les plus ciblés, suivis de l'**Égypte** (3).
-- **11 acteurs identifiés** et **1 défacement non attribué** : **thegentlemen** (6 fiches) et **tengu** (5) regroupent 11 fiches dans 7 pays distincts.
+- **11 acteurs identifiés** et **1 défacement non attribué** : **TheGentlemen** (6 fiches) et **tengu** (5) regroupent 11 fiches dans 7 pays distincts.
 - Les secteurs gouvernemental, financier et des transports représentent la majorité des victimes.
 - Incidents critiques : défacement coordonné de 7+ sites de l’État nigérien affichant des messages politiques liés à la situation géopolitique du pays, fuite de données PixPay Sénégal (paiement mobile), fuite de données AOM Aviation Maroc (base de données aviation), et l'acteur IAB Bigbrother vendant de manière répétée des accès à l'infrastructure gouvernementale togolaise.
 
@@ -105,7 +105,7 @@ pie
 **Acteurs les plus prolifiques :**
 | Acteur | Type | Incidents | Pays ciblés |
 |--------|------|:---------:|------------|
-| thegentlemen | Ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
+| TheGentlemen | Ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
 | tengu | Ransomware | 5 | Algérie, Égypte, Kenya, Maroc, Tunisie |
 | blackshrantac | Ransomware | 1 | Kenya |
 | vect | Ransomware | 1 | Afrique du Sud |
@@ -121,7 +121,7 @@ pie
 ```mermaid
 pie
  title Acteurs les plus actifs - janvier 2026
- "thegentlemen (6)" : 6
+ "TheGentlemen (6)" : 6
  "tengu (5)" : 5
  "Autres - 1 chacun (10)" : 10
 ```
@@ -143,19 +143,19 @@ pie
 
 | Pays | Attaques | Acteurs principaux |
 |------|:--------:|-------------------|
-| Afrique du Sud | 4 | thegentlemen (3), vect (1) |
-| Kenya | 4 | thegentlemen, devman, blackshrantac, tengu |
-| Égypte | 3 | thegentlemen, direwolf, tengu |
+| Afrique du Sud | 4 | TheGentlemen (3), vect (1) |
+| Kenya | 4 | TheGentlemen, devman, blackshrantac, tengu |
+| Égypte | 3 | TheGentlemen, direwolf, tengu |
 | Maroc | 1 | tengu |
 | Mozambique | 1 | qilin |
 | Tanzanie | 1 | benzona |
-| Maurice | 1 | thegentlemen |
+| Maurice | 1 | TheGentlemen |
 | Algérie | 1 | tengu |
 | Tunisie | 1 | tengu |
 | Togo | 1 | Bigbrother (IAB, vente d'accès) |
 
 **Observations clés :**
-- **thegentlemen** et **tengu** totalisent à eux deux 11 des 21 fiches (52 %) dans 7 pays distincts. Rien dans les sources de janvier ne relie pourtant les deux groupes entre eux.
+- **TheGentlemen** et **tengu** totalisent à eux deux 11 des 21 fiches (52 %) dans 7 pays distincts. Rien dans les sources de janvier ne relie pourtant les deux groupes entre eux.
 - Le 20 janvier a été la journée la plus chargée, 5 revendications rien qu'en Afrique du Sud et au Kenya : Paltrack, Rola, Witzenberg, CPF, NSSF.
 - **Bigbrother/Togo** ressemble à un cas d'école d'IAB : un accès SSH proposé en septembre 2025, puis un nouvel accès revendiqué en janvier. Un accès qui persiste comme ça augmente le risque qu'une opération plus lourde suive.
 
@@ -211,7 +211,7 @@ pie
 
 | Acteur | Type | Incidents | Cibles principales |
 |--------|------|:---------:|-------------------|
-| thegentlemen | Groupe ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
+| TheGentlemen | Groupe ransomware | 6 | Égypte, Kenya, Maurice, Afrique du Sud |
 | tengu | Groupe ransomware | 5 | Algérie, Égypte, Kenya, Maroc, Tunisie |
 | blackshrantac | Ransomware | 1 | Kenya (services publics) |
 | vect | Ransomware | 1 | Afrique du Sud (ingénierie) |
@@ -242,7 +242,7 @@ pie
 
 ### Tendances
 
-1. **thegentlemen et tengu dominent le mois.** À eux deux, 52 % des fiches de janvier, thegentlemen dans 4 pays, tengu dans 5, sept pays distincts une fois les deux combinés.
+1. **TheGentlemen et tengu dominent le mois.** À eux deux, 52 % des fiches de janvier, TheGentlemen dans 4 pays, tengu dans 5, sept pays distincts une fois les deux combinés.
 2. **Le Kenya se démarque.** Les 4 incidents touchent tous des institutions publiques : eau, retraites, sécurité sociale, mines. Ça ne ressemble pas à de l'opportunisme dispersé, plutôt à un ciblage délibéré des infrastructures liées au gouvernement.
 3. **Le Togo revient sans cesse.** Bigbrother a vendu un accès en septembre 2025, puis en a revendiqué un nouveau en janvier. Deux publications sur la même infrastructure gouvernementale, c'est déjà une raison suffisante pour lancer la revue des accès et des identifiants maintenant, pas plus tard.
 4. **Les sites gouvernementaux nigériens sont tombés ensemble.** Plus de sept sites de l'État défigurés avec le même message politique, mais la source ne dit pas quelle dépendance technique commune l'opération a exploitée.
@@ -278,7 +278,7 @@ pie
 
 ### Pour les analystes CTI
 
-- Suivre les nouvelles publications de **thegentlemen** et **tengu** ; les deux groupes apparaissent ensemble dans 7 pays distincts en janvier.
+- Suivre les nouvelles publications de **TheGentlemen** et **tengu** ; les deux groupes apparaissent ensemble dans 7 pays distincts en janvier.
 - Surveiller **Bigbrother** pour de nouvelles revendications d'accès au gouvernement togolais et l'activité des acheteurs potentiels.
 - Surveiller les opérations de suivi liées au défacement nigérien (possible escalade après reconnaissance).
 - Émettre une alerte si des données PixPay ou AOM apparaissent sur des marchés secondaires.
@@ -310,7 +310,7 @@ pie
 
 ## 13. Conclusion
 
-Janvier se solde par 21 fiches d'incidents dans 12 pays. Le ransomware en représente 17, et thegentlemen plus tengu couvrent à eux seuls 11 fiches dans 7 pays. Le reste du mois, deux publications de données, une vente d'accès, un défacement coordonné, complète le tableau. L'Afrique du Sud et le Kenya arrivent en tête sur le volume, l'Égypte juste derrière. Entre les trois, l'activité a touché l'Afrique du Nord, de l'Ouest, de l'Est et australe.
+Janvier se solde par 21 fiches d'incidents dans 12 pays. Le ransomware en représente 17, et TheGentlemen plus tengu couvrent à eux seuls 11 fiches dans 7 pays. Le reste du mois, deux publications de données, une vente d'accès, un défacement coordonné, complète le tableau. L'Afrique du Sud et le Kenya arrivent en tête sur le volume, l'Égypte juste derrière. Entre les trois, l'activité a touché l'Afrique du Nord, de l'Ouest, de l'Est et australe.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

@@ -55,7 +55,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **XP95** : 3 victimes
 - **xNov** : 3 victimes
 - **Qilin** : 2 victimes
-- **The Gentlemen** : 2 victimes
+- **TheGentlemen** : 2 victimes
 - **INC Ransom** : 2 victimes
 - **LockBit 5.0** : 1 victime
 - **Crypto24** : 1 victime
@@ -241,7 +241,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 
 ### 09 Mars 2026
 #### 🇹🇳 Tunisie - K.PROPHA (Karray Produits Pharmaceutiques)
-- **Groupe ransomware :** The Gentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Santé / Pharmaceutique
 - **Site web :** [kpropha.com](http://kpropha.com)
 - **Statut :** Claim - Unverified
@@ -314,7 +314,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 
 ### 21 Mars 2026
 #### 🇿🇦 Afrique du Sud - Elundini Local Municipality
-- **Groupe ransomware :** The Gentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Administration locale
 - **Site web :** [elundini.gov.za](http://elundini.gov.za)
 - **Statut :** Claim - Unverified

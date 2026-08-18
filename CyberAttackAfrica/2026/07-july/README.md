@@ -180,7 +180,7 @@ pie
     "Access sales" : 6
 ```
 
-Ransomware publications were mainly associated with **arcusmedia**, **dragonforce**, **krybit** and **thegentlemen**. These are listings or claims; they do not automatically establish encryption, exfiltration or operational disruption.
+Ransomware publications were mainly associated with **arcusmedia**, **dragonforce**, **krybit** and **TheGentlemen**. These are listings or claims; they do not automatically establish encryption, exfiltration or operational disruption.
 
 The leak side was more varied: identity documents, medical data, university accounts, government files and commercial databases. The access offers involved alleged Fortinet, webmail and government-portal access.
 
@@ -228,7 +228,7 @@ Government and administration remained the largest sectoral grouping. The record
 | dragonforce | 3 | Ransomware |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Access sale / reposting |
-| thegentlemen | 2 | Ransomware |
+| TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Data leak |
 | Other named sources | 27 | Mixed activity |
 
@@ -236,7 +236,7 @@ Government and administration remained the largest sectoral grouping. The record
 ```mermaid
 xychart-beta
     title "Most active actors and sources - July 2026"
-    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","thegentlemen","Phantom Atlas","Other sources"]
+    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","Other sources"]
     y-axis "Records" 0 --> 28
     bar [4,3,2,2,2,2,27]
 ```

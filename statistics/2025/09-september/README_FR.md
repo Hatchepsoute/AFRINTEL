@@ -57,7 +57,7 @@ Cette fiche reprend les 18 cartes du fichier victimes mensuel. Les publications 
 | Acteur / source | Incidents |
 |---|---:|
 | Non précisé | 2 |
-| thegentlemen | 2 |
+| TheGentlemen | 2 |
 | killsec | 2 |
 | Fire Wire | 1 |
 | obscura | 1 |

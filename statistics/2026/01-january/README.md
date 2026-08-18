@@ -34,12 +34,12 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 | Country | Incidents | Main actors |
 |---|---|---|
-| 🇿🇦 South Africa | 4 | thegentlemen, vect |
-| 🇰🇪 Kenya | 4 | thegentlemen, tengu, blackshrantac, devman |
-| 🇪🇬 Egypt | 3 | thegentlemen, tengu, direwolf |
+| 🇿🇦 South Africa | 4 | TheGentlemen, vect |
+| 🇰🇪 Kenya | 4 | TheGentlemen, tengu, blackshrantac, devman |
+| 🇪🇬 Egypt | 3 | TheGentlemen, tengu, direwolf |
 | 🇲🇦 Morocco | 2 | tengu, skra1a |
 | 🇩🇿 Algeria | 1 | tengu |
-| 🇲🇺 Mauritius | 1 | thegentlemen |
+| 🇲🇺 Mauritius | 1 | TheGentlemen |
 | 🇲🇿 Mozambique | 1 | qilin |
 | 🇸🇳 Senegal | 1 | breach3d |
 | 🇹🇿 Tanzania | 1 | benzona |
@@ -53,7 +53,7 @@ This statistical intelligence report highlights the dynamics of threat actors, g
 
 | Actor | Incidents |
 |---|---|
-| thegentlemen | **6** |
+| TheGentlemen | **6** |
 | tengu | **5** |
 | Bigbrother | 1 |
 | breach3d | 1 |
@@ -97,7 +97,7 @@ classDef high fill:#ff4d4d,color:#ffffff
 classDef medium fill:#ffa64d,color:#000000
 classDef low fill:#ffe6b3,color:#000000
 
-A1["thegentlemen (6)"]:::high
+A1["TheGentlemen (6)"]:::high
 A2["tengu (5)"]:::high
 A3["Bigbrother"]:::medium
 A4["Unknown"]:::medium
@@ -185,7 +185,7 @@ Leak involving aviation‑related operational or database records.
 
 ##  🛡 SOC & CTI recommendations
 
-• Monitor dominant actors **thegentlemen** and **tengu**  
+• Monitor dominant actors **TheGentlemen** and **tengu**  
 • Harden public‑facing government portals (WAF, patching, CMS security)  
 • Monitor abnormal data exfiltration patterns  
 • Prepare ransomware and data‑leak crisis playbooks  

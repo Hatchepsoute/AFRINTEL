@@ -43,13 +43,13 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 | Second-highest month | May, 57 incidents |
 | Lowest-volume month | February, 20 incidents |
 
-```mermaid
-pie
-    title AFRINTEL incident distribution, H1 2026
-    "Ransomware" : 113
-    "Data leaks and access sales" : 125
-    "Website defacement" : 1
-```
+**Visual distribution**
+
+| Incident type | Records | Bar |
+|---|---:|:---|
+| Ransomware | 113 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Data leaks and access sales | 125 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Website defacement | 1 | 🟥 |
 
 
 <!-- H1_VISUAL_START -->
@@ -78,13 +78,20 @@ pie
 | West and Central Africa | 19 | 19 | 2 | 40 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟥🟥 |
 | East Africa | 13 | 7 | 0 | 20 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
 
-```mermaid
-xychart-beta
-    title "Top 10 countries - H1 2026"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Incidents" 0 --> 50
-    bar [48,46,44,16,15,9,8,6,6,5]
-```
+**Bars - Top 10 countries - H1 2026**
+
+| Label | Records | Bar |
+|---|---:|:---|
+| 1 | 48 | ██████████ |
+| 2 | 46 | ██████████ |
+| 3 | 44 | ██████████ |
+| 4 | 16 | ████ |
+| 5 | 15 | ████ |
+| 6 | 9 | ██ |
+| 7 | 8 | ██ |
+| 8 | 6 | ██ |
+| 9 | 6 | ██ |
+| 10 | 5 | ██ |
 Legend: numbers correspond to the ranking in the table above.
 
 ### Sector distribution
@@ -101,13 +108,19 @@ Legend: numbers correspond to the ranking in the table above.
 | E-commerce / Retail | 13 | 5.4% | ██ |
 | Oil & Energy | 6 | 2.5% | █ |
 
-```mermaid
-xychart-beta
-    title "Top sectors - H1 2026"
-    x-axis ["1","2","3","4","5","6","7","8","9"]
-    y-axis "Records" 0 --> 70
-    bar [68,56,26,19,19,17,15,13,6]
-```
+**Bars - Top sectors - H1 2026**
+
+| Label | Records | Bar |
+|---|---:|:---|
+| 1 | 68 | ██████████ |
+| 2 | 56 | █████████ |
+| 3 | 26 | ████ |
+| 4 | 19 | ███ |
+| 5 | 19 | ███ |
+| 6 | 17 | ███ |
+| 7 | 15 | ███ |
+| 8 | 13 | ██ |
+| 9 | 6 | █ |
 Legend: numbers correspond to the sector ranking in the table above.
 
 🟧 Ransomware | 🟦 Leaks and access sales | 🟥 Defacement
@@ -124,31 +137,40 @@ Legend: numbers correspond to the sector ranking in the table above.
 | June | 20 | 20 | 0 | 40 | 16.7% |
 | **H1 2026** | **113** | **125** | **1** | **239** | **100%** |
 
-```mermaid
-xychart-beta
-    title "Monthly cyber incidents in Africa, H1 2026"
-    x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
-    y-axis "Incidents" 0 --> 65
-    bar [21,20,41,60,57,40]
-```
+**Bars - Monthly cyber incidents in Africa, H1 2026**
+
+| Label | Records | Bar |
+|---|---:|:---|
+| Jan | 21 | ████ |
+| Feb | 20 | ████ |
+| Mar | 41 | ███████ |
+| Apr | 60 | ██████████ |
+| May | 57 | ██████████ |
+| Jun | 40 | ███████ |
 
 ### Ransomware and leak evolution
 
-```mermaid
-xychart-beta
-    title "Ransomware activity, H1 2026"
-    x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
-    y-axis "Incidents" 0 --> 45
-    bar [17,20,19,20,17,20]
-```
+**Bars - Ransomware activity, H1 2026**
 
-```mermaid
-xychart-beta
-    title "Data leaks and access sales, H1 2026"
-    x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
-    y-axis "Incidents" 0 --> 45
-    bar [3,0,22,40,40,20]
-```
+| Label | Records | Bar |
+|---|---:|:---|
+| Jan | 17 | █████████ |
+| Feb | 20 | ██████████ |
+| Mar | 19 | ██████████ |
+| Apr | 20 | ██████████ |
+| May | 17 | █████████ |
+| Jun | 20 | ██████████ |
+
+**Bars - Data leaks and access sales, H1 2026**
+
+| Label | Records | Bar |
+|---|---:|:---|
+| Jan | 3 | █ |
+| Feb | 0 |  |
+| Mar | 22 | ██████ |
+| Apr | 40 | ██████████ |
+| May | 40 | ██████████ |
+| Jun | 20 | █████ |
 
 ## 5. Quarter comparison
 
@@ -182,90 +204,90 @@ The second quarter ran **75 incidents ahead of the first**, a 91.5% jump. Ransom
 
 ### Evidence-backed H1 priorities
 
-| Direct country label | Records |
-|---|---:|
-| 🇿🇦 South Africa | 48 |
-| 🇪🇬 Egypt | 46 |
-| 🇲🇦 Morocco | 44 |
-| 🇹🇳 Tunisia | 16 |
-| 🇳🇬 Nigeria | 15 |
-| 🇰🇪 Kenya | 9 |
-| 🇩🇿 Algeria | 8 |
-| 🇹🇿 Tanzania | 6 |
-| 🇸🇳 Senegal | 6 |
-| 🇬🇭 Ghana | 5 |
-| 🇲🇺 Mauritius | 3 |
-| 🇱🇾 Libya | 3 |
-| 🇿🇲 Zambia | 2 |
-| 🇳🇦 Namibia | 2 |
-| 🇨🇮 Ivory Coast | 2 |
-| 🇪🇹 Ethiopia | 2 |
-| 🇧🇼 Botswana | 2 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇺🇬 Uganda | 1 |
-| 🇹🇬 Togo | 1 |
-| 🇸🇩 Sudan | 1 |
-| 🇸🇴 Somalia | 1 |
-| 🇸🇨 Seychelles | 1 |
-| 🇳🇪 Niger | 1 |
-| 🇲🇿 Mozambique | 1 |
-| 🇾🇹 Mayotte | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇬🇳 Guinea | 1 |
-| 🇬🇦 Gabon | 1 |
-| 🇨🇲 Cameroon | 1 |
-| 🇧🇯 Benin | 1 |
+| Direct country label | Records | Bar |
+|---|---:|:---|
+| 🇿🇦 South Africa | 48 | ██████████ |
+| 🇪🇬 Egypt | 46 | ██████████ |
+| 🇲🇦 Morocco | 44 | ██████████ |
+| 🇹🇳 Tunisia | 16 | ████ |
+| 🇳🇬 Nigeria | 15 | ████ |
+| 🇰🇪 Kenya | 9 | ██ |
+| 🇩🇿 Algeria | 8 | ██ |
+| 🇹🇿 Tanzania | 6 | ██ |
+| 🇸🇳 Senegal | 6 | ██ |
+| 🇬🇭 Ghana | 5 | ██ |
+| 🇲🇺 Mauritius | 3 | █ |
+| 🇱🇾 Libya | 3 | █ |
+| 🇿🇲 Zambia | 2 | █ |
+| 🇳🇦 Namibia | 2 | █ |
+| 🇨🇮 Ivory Coast | 2 | █ |
+| 🇪🇹 Ethiopia | 2 | █ |
+| 🇧🇼 Botswana | 2 | █ |
+| 🇿🇼 Zimbabwe | 1 | █ |
+| 🇺🇬 Uganda | 1 | █ |
+| 🇹🇬 Togo | 1 | █ |
+| 🇸🇩 Sudan | 1 | █ |
+| 🇸🇴 Somalia | 1 | █ |
+| 🇸🇨 Seychelles | 1 | █ |
+| 🇳🇪 Niger | 1 | █ |
+| 🇲🇿 Mozambique | 1 | █ |
+| 🇾🇹 Mayotte | 1 | █ |
+| 🇲🇬 Madagascar | 1 | █ |
+| 🇬🇳 Guinea | 1 | █ |
+| 🇬🇦 Gabon | 1 | █ |
+| 🇨🇲 Cameroon | 1 | █ |
+| 🇧🇯 Benin | 1 | █ |
 | **Single-country records** | **233** |
 
 The top three direct country labels account for **137 records (57.3%)**. Six additional records are multi-country, bringing the incident total to 239.
 
-| Normalized sector | Records |
-|---|---:|
-| Government / Administration | 70 |
-| Industry / Automotive / Manufacturing / Construction / Mining | 25 |
-| Finance / Banking | 25 |
-| Education / University / Academic institutions | 19 |
-| Technology / Digital / Business services / Digital identity | 15 |
-| Healthcare / Medical | 12 |
-| Sports / Federations | 12 |
-| E-commerce / Retail | 12 |
-| Food / Beverage / Agriculture | 8 |
-| Transport / Logistics / Aviation | 8 |
-| Oil & Energy | 8 |
-| Telecommunications | 5 |
-| Human Resources / Recruitment | 5 |
-| NGO / Social Welfare | 3 |
-| Hospitality / Events / Tourism | 3 |
-| Media / Audiovisual | 2 |
-| Personal Data Aggregation | 2 |
-| Legal Services | 1 |
-| Real Estate | 1 |
-| Research / Think tank | 1 |
-| Political Organizations / Parties | 1 |
-| Security Services | 1 |
+| Normalized sector | Records | Bar |
+|---|---:|:---|
+| Government / Administration | 70 | ██████████ |
+| Industry / Automotive / Manufacturing / Construction / Mining | 25 | ████ |
+| Finance / Banking | 25 | ████ |
+| Education / University / Academic institutions | 19 | ███ |
+| Technology / Digital / Business services / Digital identity | 15 | ███ |
+| Healthcare / Medical | 12 | ██ |
+| Sports / Federations | 12 | ██ |
+| E-commerce / Retail | 12 | ██ |
+| Food / Beverage / Agriculture | 8 | ██ |
+| Transport / Logistics / Aviation | 8 | ██ |
+| Oil & Energy | 8 | ██ |
+| Telecommunications | 5 | █ |
+| Human Resources / Recruitment | 5 | █ |
+| NGO / Social Welfare | 3 | █ |
+| Hospitality / Events / Tourism | 3 | █ |
+| Media / Audiovisual | 2 | █ |
+| Personal Data Aggregation | 2 | █ |
+| Legal Services | 1 | █ |
+| Real Estate | 1 | █ |
+| Research / Think tank | 1 | █ |
+| Political Organizations / Parties | 1 | █ |
+| Security Services | 1 | █ |
 | **Total** | **239** |
 
 No residual sector category remains in this semester view. Nundun Gopee & Co Ltd is classified under Construction / Real Estate.
 
 #### Most represented normalized actor labels
 
-| Actor or source label | Records |
-|---|---:|
-| anisanas2 | 10 |
-| TheGentlemen | 7 |
-| Databasehooligan | 7 |
-| 404Crew Cyber Team | 7 |
-| CrowStealer | 6 |
-| NightSpire | 6 |
-| LockBit 5 | 5 |
-| Qilin | 4 |
-| DeadLock | 4 |
-| APT73 / Bashe | 4 |
-| XP95 | 3 |
-| xNov | 3 |
-| Keymous | 3 |
+| Actor or group | Records | Bar |
+|---|---:|:---|
+| anisanas2 | 10 | ██████████ |
+| TheGentlemen | 7 | ███████ |
+| Databasehooligan | 7 | ███████ |
+| 404Crew Cyber Team | 7 | ███████ |
+| CrowStealer | 6 | ██████ |
+| NightSpire | 6 | ██████ |
+| LockBit 5 | 5 | █████ |
+| Qilin | 4 | ████ |
+| DeadLock | 4 | ████ |
+| APT73 / Bashe | 4 | ████ |
+| XP95 | 3 | ███ |
+| xNov | 3 | ███ |
+| Keymous | 3 | ███ |
 
-These counts normalize obvious naming variants such as `The Gentlemen` / `TheGentlemen`, `Nightspire` / `NightSpire`, and `LockBit 5.0` / `LockBit 5`. Coalition labels remain separate when the source card names several actors together.
+Actor-name case and version variants are normalized in the counts and charts.
 
 #### Expanded multi-country exposure
 

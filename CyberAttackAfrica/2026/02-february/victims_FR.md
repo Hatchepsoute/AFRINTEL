@@ -55,7 +55,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 
 ### 06 Février 2026
 #### 🇰🇪 Kenya - Wells Fargo
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Banque
 - **Site web :** fargo.co.ke
 - **Statut :** Claim - Unverified
@@ -74,7 +74,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 
 ### 11 Février 2026
 #### 🇬🇭 Ghana - Ghana Bauxite
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Service public
 - **Site web :** ghanabauxite.com
 - **Statut :** Claim - Unverified
@@ -93,7 +93,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 
 ### 13 Février 2026
 #### 🇪🇬 Égypte - Nile Air
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Compagnies aériennes
 - **Site web :** nileair.com
 - **Statut :** Claim - Unverified
@@ -109,7 +109,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 
 ### 15 Février 2026
 #### 🇿🇦 Afrique du Sud - Municipalité d'Intsika Yethu
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Administration locale
 - **Site web :** intsikayethu.gov.za
 - **Statut :** Claim - Unverified
@@ -117,7 +117,7 @@ Février 2026 compte **20 incidents uniques** attribués à des **groupes ransom
 
 ### 15 Février 2026
 #### 🇹🇳 Tunisie - BITS
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Conseil en technologies
 - **Site web :** bits.com.tn
 - **Statut :** Claim - Unverified

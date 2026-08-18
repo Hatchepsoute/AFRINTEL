@@ -1406,7 +1406,7 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 
 ### 09 Septembre 2025
 #### 🇲🇦 Maroc - Dolidol
-- **Groupe ransomware:** thegentlemen
+- **Groupe ransomware:** TheGentlemen
 - **Secteur:** Industrie Manufacturière / Literie / Ameublement.
 - **Site web:** https://www.dolidol.ma
 - **Statut:** Claim - Unverified
@@ -1414,12 +1414,12 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 
 ### 09 Septembre 2025
 #### 🇿🇼 Zimbabwe - Proplastics Limited
-- **Groupe ransomware:** thegentlemen
+- **Groupe ransomware:** TheGentlemen
 - **Secteur:** Industrie manufacturière (Plastiques)
 - **Site web:** https://www.proplastics.co.zw
 - **Statut:** Claim - Unverified
 - **Description victime:** Proplastics Limited est le principal fabricant et fournisseur de systèmes de tuyauterie en plastique (PVC, PEHD) au Zimbabwe.
-- **Analyse :** Le jeu local fourni contient 63 fichiers associés à Proplastics, notamment des PDF, des tableurs, des fichiers image et des fichiers texte. Les noms de fichiers indiquent des documents métier relatifs aux factures et notes de crédit, soldes de comptes, nomenclatures, reliquats de commandes, livraisons, analyses de ventes et rapports par agence. Les fichiers portent des dates couvrant 2023-2024, tandis que les métadonnées du répertoire situent la collecte en septembre 2025 ; ces dates sont considérées comme contexte de preuve et non comme date confirmée d intrusion ou de publication. Le matériel soutient la plausibilité et la sensibilité potentielle de la revendication de septembre 2025, mais ne permet pas d établir indépendamment le vecteur d accès, le périmètre complet des données ni l attribution à thegentlemen. AFRINTEL ne reproduit aucun nom, détail de compte, montant financier, enregistrement client ou contenu documentaire.
+- **Analyse :** Le jeu local fourni contient 63 fichiers associés à Proplastics, notamment des PDF, des tableurs, des fichiers image et des fichiers texte. Les noms de fichiers indiquent des documents métier relatifs aux factures et notes de crédit, soldes de comptes, nomenclatures, reliquats de commandes, livraisons, analyses de ventes et rapports par agence. Les fichiers portent des dates couvrant 2023-2024, tandis que les métadonnées du répertoire situent la collecte en septembre 2025 ; ces dates sont considérées comme contexte de preuve et non comme date confirmée d intrusion ou de publication. Le matériel soutient la plausibilité et la sensibilité potentielle de la revendication de septembre 2025, mais ne permet pas d établir indépendamment le vecteur d accès, le périmètre complet des données ni l attribution à TheGentlemen. AFRINTEL ne reproduit aucun nom, détail de compte, montant financier, enregistrement client ou contenu documentaire.
 
 ### 10 Septembre 2025
 #### 🇳🇬 Nigeria - Princeps Credit Systems Limited
@@ -1583,7 +1583,7 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 
 ### 17 Octobre 2025
 #### 🇲🇬 Madagascar - Madagascar Airlines
-- **Groupe ransomware:** thegentlemen
+- **Groupe ransomware:** TheGentlemen
 - **Secteur:** Transport aérien
 - **Site web:** www.madagascarairlines.com
 - **Statut:** Claim - Unverified
@@ -1956,7 +1956,7 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 - **Site web:** proplastics.co.zw
 - **Statut:** Claim - Unverified
 - **Description victime:** Proplastics Limited est le principal fabricant et fournisseur de systèmes de tuyauterie en plastique (PVC, PEHD) au Zimbabwe.
-- **Analyse :** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par thegentlemen le 9 septembre 2025. Cette seconde revendication, publiée environ trois mois et demi plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
+- **Analyse :** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par TheGentlemen le 9 septembre 2025. Cette seconde revendication, publiée environ trois mois et demi plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
 
 ### 29 Décembre 2025
 #### 🇩🇿 Algérie - Université d'Oran 1 Ahmed Ben Bella

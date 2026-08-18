@@ -83,7 +83,7 @@ Le gouvernement reste le premier secteur sur les deux mois. Juillet est davantag
 | dragonforce | 0 | 3 |
 | krybit | 2 | 2 |
 | BIGBROTHER | 0 | 2 |
-| thegentlemen | 0 | 2 |
+| TheGentlemen | 0 | 2 |
 | Phantom Atlas | 0 | 2 |
 
 Le profil des acteurs change nettement. Juin était dominé par anisanas2 et DeadLock, tandis que juillet est porté par arcusmedia et dragonforce. Krybit est présent dans les deux mois avec deux fiches à chaque période.

@@ -124,7 +124,7 @@
 - **Website:** proplastics.co.zw
 - **Status:** Claim - Unverified
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
-- **Analysis:** AFRINTEL previously recorded a claim against this same company by thegentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
+- **Analysis:** AFRINTEL previously recorded a claim against this same company by TheGentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 29 December 2025
 #### 🇩🇿 Algeria - Oran University 1 Ahmed Ben Bella

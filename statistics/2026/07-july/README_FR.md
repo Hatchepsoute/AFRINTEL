@@ -145,7 +145,7 @@ Le groupe des secteurs unitaires comprend les holdings d'investissement, la fina
 | dragonforce | 3 | Ransomware |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Ventes d'accès et republications |
-| thegentlemen | 2 | Ransomware |
+| TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Fuites de données |
 | Autres sources nommées | 27 | Activités diverses |
 

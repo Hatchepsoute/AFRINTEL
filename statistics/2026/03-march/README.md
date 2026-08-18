@@ -57,7 +57,7 @@ xychart-beta
 | XP95 | 3 |
 | xNov | 3 |
 | Qilin | 2 |
-| The Gentlemen | 2 |
+| TheGentlemen | 2 |
 | INC Ransom | 2 |
 
 ```mermaid
@@ -68,7 +68,7 @@ pie
     "XP95 (3)" : 3
     "xNov (3)" : 3
     "Qilin (2)" : 2
-    "The Gentlemen (2)" : 2
+    "TheGentlemen (2)" : 2
     "INC Ransom (2)" : 2
 ```
 

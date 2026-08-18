@@ -15,7 +15,7 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 
 ## 2. Résumé Exécutif
 * **Nombre total d'attaques recensées :** 18.
-* **Acteurs les plus actifs :** `thegentlemen` (2 attaques), `killsec` (2 attaques) et `privilege` (2 attaques).
+* **Acteurs les plus actifs :** `TheGentlemen` (2 attaques), `killsec` (2 attaques) et `privilege` (2 attaques).
 * **Secteurs les plus ciblés :** Administrations publiques, Finance, Assurances, Industrie, Technologies, Télécommunications et Éducation.
 * **Volumes de données critiques :** * **Direction Générale des Impôts et des Domaines (Sénégal) :** 1 To de données fiscales exfiltrées.
     * **NSIA Assurances (Côte d'Ivoire) :** 2,5 millions d'enregistrements transactionnels mis en vente.
@@ -30,7 +30,7 @@ Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaill
 ### 📊 3.1 Répartition par groupe/acteur
 | Groupe / Acteur | Nombre d'attaques |
 | :--- | :---: |
-| **thegentlemen** | 2 |
+| **TheGentlemen** | 2 |
 | **killsec** | 2 |
 | **privilege** | 2 |
 | **obscura** | 1 |
@@ -178,7 +178,7 @@ Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest e
 | :--- | ---: | :--- |
 | Not specified | 2 | ██████████ |
 | killsec | 2 | ██████████ |
-| thegentlemen | 2 | ██████████ |
+| TheGentlemen | 2 | ██████████ |
 | Fire Wire | 1 | █████ |
 | KILLUAX | 1 | █████ |
 | Tanaka | 1 | █████ |
@@ -189,7 +189,7 @@ Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest e
 <!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe/acteur
 
-#### 4.1 thegentlemen (2 attaques)
+#### 4.1 TheGentlemen (2 attaques)
 * **09/09/2025 : Dolidol (Maroc)** - Secteur Industrie Manufacturière. Revendication et divulgation des données.
 * **09/09/2025 : Proplastics Limited (Zimbabwe)** - Secteur Industrie (Plastiques). Revendication et divulgation des données.
 > **Note CTI :** Le groupe a frappé deux cibles industrielles majeures dans deux zones géographiques distinctes le même jour, démontrant une planification coordonnée.
@@ -237,7 +237,7 @@ Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest e
 ```mermaid
 graph LR
 
-A1[thegentlemen] --> V1[Dolidol]
+A1[TheGentlemen] --> V1[Dolidol]
 V1 --> P1[Maroc]
 
 A1 --> V2[Proplastics Limited]
@@ -293,7 +293,7 @@ class P1,P2,P3,P4,P5,P6,P7,P8,P9 country;
 * **Exfiltration Massive :** Capacité à collecter et exfiltrer des volumes dépassant le téraoctet (DGID) ou des millions de lignes de données (NSIA).
 * **Double Extorsion & Monétisation :** Mise en vente systématique des données sur des forums clandestins pour forcer le paiement (ex: Tanaka).
 * **Ciblage d'Infrastructures d'État :** Recrudescence des attaques contre les organismes de régulation et les ministères financiers.
-* **Agilité Géo-Opérationnelle :** Capacité de certains groupes à mener des attaques simultanées dans différentes régions du continent (ex: thegentlemen).
+* **Agilité Géo-Opérationnelle :** Capacité de certains groupes à mener des attaques simultanées dans différentes régions du continent (ex: TheGentlemen).
 
 ## 6. Recommandations
 1.  **Gouvernance des Données :** Pour les administrations publiques, prioriser le chiffrement des bases de données sensibles et les sauvegardes hors ligne.

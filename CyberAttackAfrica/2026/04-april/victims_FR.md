@@ -233,7 +233,7 @@
 - **Description :** Exploration, production et traitement de gaz naturel dans le delta du Nil et le Sinaï Nord.
 
 #### 🇪🇬 Égypte - ACE Consulting Engineers [Ransomware]
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Conseil en ingénierie
 - **Site web :** [ace-mb.com](https://ace-mb.com)
 - **Statut :** Claim - Unverified
@@ -301,7 +301,7 @@
 
 ### 14 Avril 2026
 #### 🇬🇭 Ghana - International Maritime Hospital [Ransomware]
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Services de santé
 - **Site web :** [imah.gov.gh](https://imah.gov.gh)
 - **Statut :** Claim - Unverified
@@ -370,7 +370,7 @@
 
 ### 19 Avril 2026
 #### 🇿🇦 Afrique du Sud - Sunspray Food [Ransomware]
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Agroalimentaire
 - **Site web :** [sunspray.co.za](https://sunspray.co.za)
 - **Statut :** Claim - Unverified
@@ -523,7 +523,7 @@
 ---
 ### 26 Avril 2026
 #### 🇪🇬 Égypte - EEC Group [Ransomware]
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie manufacturière
 - **Site web :** [eecegypt.com](https://eecegypt.com)
 - **Statut :** Claim - Unverified

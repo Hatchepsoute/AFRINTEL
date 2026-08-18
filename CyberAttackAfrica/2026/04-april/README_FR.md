@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Avril 2026 a rapporté **60 incidents cyber revendiqués publiquement** sur le continent, **20 publications ou revendications ransomware**, **40 fuites de données ou ventes d'accès**. L'activité des courtiers de données a nettement accéléré ce mois-ci : expositions très sensibles (personnel du palais royal, documents d'identité, dossiers médicaux) et ventes d'accès ciblant des gouvernements se sont multipliées. Les groupes ransomware **payload**, **apt73/bashe**, **thegentlemen** et **krybit** ont maintenu la pression, pendant que **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominaient le marché souterrain des fuites.
+Avril 2026 a rapporté **60 incidents cyber revendiqués publiquement** sur le continent, **20 publications ou revendications ransomware**, **40 fuites de données ou ventes d'accès**. L'activité des courtiers de données a nettement accéléré ce mois-ci : expositions très sensibles (personnel du palais royal, documents d'identité, dossiers médicaux) et ventes d'accès ciblant des gouvernements se sont multipliées. Les groupes ransomware **payload**, **apt73/bashe**, **TheGentlemen** et **krybit** ont maintenu la pression, pendant que **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominaient le marché souterrain des fuites.
 
 Principales conclusions :
 - **20 publications ou revendications ransomware (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
@@ -297,10 +297,10 @@ pie
 
 | Rang | Pays | Attaques | Graphique | Acteurs principaux |
 | :---: | :--- | :---: | :--- | :--- |
-| **1** | 🇪🇬 Égypte | **9** | █████████ | payload (4), dragonforce, lockbit5, thegentlemen, apt73/bashe |
-| **2** | 🇿🇦 Afrique du Sud | **3** | ███ | dragonforce, krybit, thegentlemen |
+| **1** | 🇪🇬 Égypte | **9** | █████████ | payload (4), dragonforce, lockbit5, TheGentlemen, apt73/bashe |
+| **2** | 🇿🇦 Afrique du Sud | **3** | ███ | dragonforce, krybit, TheGentlemen |
 | **3** | 🇲🇦 Maroc | **2** | ██ | worldleaks, lockbit5 |
-| **4** | 🇬🇭 Ghana | **2** | ██ | thegentlemen, apt73/bashe |
+| **4** | 🇬🇭 Ghana | **2** | ██ | TheGentlemen, apt73/bashe |
 | **5** | 🇰🇪 Kenya | **1** | █ | apt73/bashe |
 | **6** | 🇧🇼 Botswana | **1** | █ | krybit |
 | **7** | 🇸🇨 Seychelles | **1** | █ | apt73/bashe |

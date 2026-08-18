@@ -20,16 +20,16 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 | Country | Number of Incidents | Main Actors |
 |------|-------------------|---------------------|
-| 🇿🇦 **South Africa** | 3 | `thegentlemen` (1), `lockbit5` (1), `vect` (1) |
-| 🇪🇬 **Egypt** | 3 | `thegentlemen` (1), `lockbit5` (1), `payload` (1) |
+| 🇿🇦 **South Africa** | 3 | `TheGentlemen` (1), `lockbit5` (1), `vect` (1) |
+| 🇪🇬 **Egypt** | 3 | `TheGentlemen` (1), `lockbit5` (1), `payload` (1) |
 | 🇳🇬 **Nigeria** | 2 | `killsec` (1), `incransom` (1) |
-| 🇬🇭 **Ghana** | 2 | `0APT` (1), `thegentlemen` (1) |
+| 🇬🇭 **Ghana** | 2 | `0APT` (1), `TheGentlemen` (1) |
 | 🇸🇳 **Senegal** | 1 | `The Green Blood Group` (1) ⚠️ **139 TB** |
 | 🇸🇴 **Somalia** | 1 | `0APT` (1) |
 | 🇹🇿 **Tanzania** | 1 | `0APT` (1) |
-| 🇰🇪 **Kenya** | 1 | `thegentlemen` (1) |
+| 🇰🇪 **Kenya** | 1 | `TheGentlemen` (1) |
 | 🇲🇺 **Mauritius** | 1 | `lockbit5` (1) |
-| 🇹🇳 **Tunisia** | 1 | `thegentlemen` (1) |
+| 🇹🇳 **Tunisia** | 1 | `TheGentlemen` (1) |
 | 🇸🇩 **Sudan** | 1 | `apt73/bashe` (1) |
 | 🇨🇮 **Ivory Coast** | 1 | `incransom` (1) |
 | 🇲🇦 **Morocco** | 1 | `tengu` (1) |
@@ -41,7 +41,7 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 | Actor | Incidents | Targeted Countries | Total Volume |
 |--------|-----------|-------------|--------------|
-| `thegentlemen` | **5** | Kenya, Ghana, Egypt, South Africa (×2), Tunisia | ~? |
+| `TheGentlemen` | **5** | Kenya, Ghana, Egypt, South Africa (×2), Tunisia | ~? |
 | `0APT` | **3** | Somalia, Ghana, Tanzania | **~7 TB** |
 | `lockbit5` | **3** | Mauritius, Egypt, South Africa | Not aggregated |
 | `incransom` | **2** | Nigeria, Ivory Coast | **~210 GB** |
@@ -59,10 +59,10 @@ This folder contains detailed statistics of ransomware incidents recorded across
 
 | Sector | Incidents | Main Actors |
 |---------|-----------|---------------------|
-| **Government** | 3 | `The Green Blood Group`, `lockbit5`, `thegentlemen` |
-| **Aviation** | 3 | `0APT` (2), `thegentlemen`, `incransom` |
+| **Government** | 3 | `The Green Blood Group`, `lockbit5`, `TheGentlemen` |
+| **Aviation** | 3 | `0APT` (2), `TheGentlemen`, `incransom` |
 | **Energy** | 2 | `incransom`, `vect` |
-| **Banking / Fintech** | 2 | `thegentlemen`, `killsec` |
+| **Banking / Fintech** | 2 | `TheGentlemen`, `killsec` |
 | **Media** | 1 | `0APT` |
 | **Legal** | 1 | `0APT` |
 | **Hospitality** | 1 | `lockbit5` |
@@ -70,8 +70,8 @@ This folder contains detailed statistics of ransomware incidents recorded across
 | **Consulting** | 1 | `apt73/bashe` |
 | **Retail / Commerce** | 1 | `qilin` |
 | **Automotive** | 1 | `lockbit5` |
-| **IT Consulting** | 1 | `thegentlemen` |
-| **Public Services** | 1 | `thegentlemen` |
+| **IT Consulting** | 1 | `TheGentlemen` |
+| **Public Services** | 1 | `TheGentlemen` |
 
 ---
 
@@ -96,7 +96,7 @@ flowchart LR
   %% ===== ACTORS =====
   A1["The Green Blood Group"]:::actor
   A2["0APT"]:::actor
-  A3["thegentlemen"]:::actor
+  A3["TheGentlemen"]:::actor
   A4["lockbit5"]:::actor
   A5["incransom"]:::actor
   A6["payload"]:::actor

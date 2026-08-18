@@ -55,7 +55,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 06 February 2026
 #### 🇰🇪 Kenya - Wells Fargo
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Banking
 - **Website:** fargo.co.ke
 - **Status:** Claim - Unverified
@@ -74,7 +74,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 11 February 2026
 #### 🇬🇭 Ghana - Ghana Bauxite
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Public Service
 - **Website:** ghanabauxite.com
 - **Status:** Claim - Unverified
@@ -93,7 +93,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 13 February 2026
 #### 🇪🇬 Egypt - Nile Air
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Airlines
 - **Website:** nileair.com
 - **Status:** Claim - Unverified
@@ -109,7 +109,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 15 February 2026
 #### 🇿🇦 South Africa - Intsika Yethu Municipality
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Local Government
 - **Website:** intsikayethu.gov.za
 - **Status:** Claim - Unverified
@@ -117,7 +117,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 15 February 2026
 #### 🇹🇳 Tunisia - BITS
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** IT Consulting
 - **Website:** bits.com.tn
 - **Status:** Claim - Unverified

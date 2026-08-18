@@ -24,7 +24,7 @@ classDef unknown fill:#f2f2f2,stroke:#666,stroke-width:2px,stroke-dasharray: 5 5
 A1["Bigbrother"]:::actor
 A2["vect"]:::actor
 A3["blackshrantac"]:::actor
-A4["thegentlemen"]:::actor
+A4["TheGentlemen"]:::actor
 A5["direwolf"]:::actor
 A6["breach3d"]:::actor
 A7["qilin"]:::actor

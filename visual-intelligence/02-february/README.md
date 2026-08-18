@@ -20,7 +20,7 @@ flowchart LR
 classDef actor fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
 classDef country fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
 
-A1["thegentlemen"]:::actor
+A1["TheGentlemen"]:::actor
 A2["tengu"]:::actor
 A3["0APT"]:::actor
 A4["lockbit5"]:::actor

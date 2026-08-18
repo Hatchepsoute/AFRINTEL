@@ -58,7 +58,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 11 January 2026
 #### 🇪🇬 Egypt - Real Tech
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Technology / IT Security
 - **Website:** realtech-eg.com
 - **Status:** Claim - Unverified
@@ -74,7 +74,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 14 January 2026
 #### 🇲🇺 Mauritius - Rogers Capital
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Financial Services & Technology
 - **Website:** rogerscapital.mu
 - **Status:** Claim - Data Sample Published
@@ -124,7 +124,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 20 January 2026
 #### 🇰🇪 Kenya - CPF Financial Services
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Financial Services (Pension Funds)
 - **Website:** cpf.or.ke
 - **Status:** Claim - Unverified
@@ -140,7 +140,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 20 January 2026
 #### 🇿🇦 South Africa - Paltrack
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Logistics Software (Agri-food)
 - **Website:** paltrack.co.za
 - **Status:** Claim - Unverified
@@ -148,7 +148,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 20 January 2026
 #### 🇿🇦 South Africa - Rola Motor Group
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Automotive Distribution
 - **Website:** rola.co.za
 - **Status:** Claim - Unverified
@@ -156,7 +156,7 @@ January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 
 
 ### 20 January 2026
 #### 🇿🇦 South Africa - Witzenberg Municipality
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Public Administration / Local Government
 - **Website:** witzenberg.gov.za
 - **Status:** Claim - Unverified

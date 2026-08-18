@@ -20,7 +20,7 @@ A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting orga
 
 * **Total recorded attacks**: 19
 * **Most active threat actors**: `incransom` (4 attacks), `qilin` (3 attacks), `tengu` (2 attacks).
-    * *Other active groups*: beast, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attack each); 1 additional claim is unattributed, while the second data-leak claim is attributed to EternalRed.
+    * *Other active groups*: beast, brotherhood, medusa, obscura, TheGentlemen, radar, clop, blackshrantac (1 attack each); 1 additional claim is unattributed, while the second data-leak claim is attributed to EternalRed.
 * **Most targeted sectors**: Logistics (3), Finance (3), Education (2).
 * **Most affected countries**: 🇿🇦 South Africa (4), 🇲🇦 Morocco (5), 🇪🇬 Egypt (2).
 * **Notable data exfiltration volumes**: 
@@ -42,7 +42,7 @@ A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting orga
 | **brotherhood** | 1 |
 | **medusa** | 1 |
 | **obscura** | 1 |
-| **thegentlemen** | 1 |
+| **TheGentlemen** | 1 |
 | **radar** | 1 |
 | **clop** | 1 |
 | **blackshrantac** | 1 |
@@ -271,7 +271,7 @@ Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = 
 * **brotherhood** (Oct 10): Momentum Logistics (South Africa, Logistics).
 * **medusa** (Oct 13): LA VOIE EXPRESS (Morocco, Logistics).
 * **obscura** (Oct 13): meamargroup.com (Egypt, Real Estate) – **3rd attack against this company**.
-* **thegentlemen** (Oct 17): Madagascar Airlines (Madagascar, Aviation).
+* **TheGentlemen** (Oct 17): Madagascar Airlines (Madagascar, Aviation).
 * **clop** (Oct 18): University of the Witwatersrand (South Africa, Education).
 * **radar** (Oct 18): TK HOLDINGS GROUP (DRC, Mining).
 * **blackshrantac** (Oct 20): Al Ahly Leasing & Factoring (Egypt, Finance).
@@ -296,7 +296,7 @@ graph LR
     brotherhood -->|Momentum Logistics| SA4["🇿🇦 South Africa"]
     medusa -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Morocco"]
     obscura -->|meamargroup.com| Egypt1["🇪🇬 Egypt"]
-    thegentlemen -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
+    TheGentlemen -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
     radar -->|TK HOLDINGS| DRC["🇨🇩 DRC"]
     clop -->|Wits University| SA5["🇿🇦 South Africa"]
     blackshrantac -->|Al Ahly Leasing| Egypt2["🇪🇬 Egypt"]
@@ -307,7 +307,7 @@ graph LR
     style incransom fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
     style qilin fill:#ffa500,stroke:#333,stroke-width:2px
     style tengu fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    style thegentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
+    style TheGentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
     style Unknown fill:#888,stroke:#333,stroke-width:2px,color:#fff
     
     %% Style des pays (Nodes de destination)

@@ -145,7 +145,7 @@ The single-sector group covers investment holding, finance, transport, real esta
 | dragonforce | 3 | Ransomware |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Access sales and reposts |
-| thegentlemen | 2 | Ransomware |
+| TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Data leaks |
 | Other named sources | 27 | Mixed activity |
 

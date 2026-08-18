@@ -126,7 +126,7 @@
 - **Site web:** proplastics.co.zw
 - **Statut:** Claim - Unverified
 - **Description victime:** Proplastics Limited est le principal fabricant et fournisseur de systèmes de tuyauterie en plastique (PVC, PEHD) au Zimbabwe.
-- **Analyse :** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par thegentlemen le 9 septembre 2025. Cette seconde revendication, publiée environ trois mois et demi plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
+- **Analyse :** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par TheGentlemen le 9 septembre 2025. Cette seconde revendication, publiée environ trois mois et demi plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
 
 ### 29 Décembre 2025
 #### 🇩🇿 Algérie - Université d'Oran 1 Ahmed Ben Bella

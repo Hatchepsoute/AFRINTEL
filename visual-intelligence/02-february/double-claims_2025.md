@@ -13,7 +13,7 @@ subgraph Threat_Actors
 A1[devman]
 A2[qilin]
 A3[incransom]
-A4[thegentlemen]
+A4[TheGentlemen]
 A5[lockbit5]
 end
 
@@ -51,7 +51,7 @@ class C1,C2,C3 country
 
 - **Hopital La Rabta** was claimed by **devman** and later by **qilin**.
 - **Netstar South Africa** was claimed by **devman** and later by **incransom**.
-- **Proplastics Limited** was claimed by **thegentlemen** and later by **lockbit5**.
+- **Proplastics Limited** was claimed by **TheGentlemen** and later by **lockbit5**.
 
 This pattern may indicate:
 - access resale

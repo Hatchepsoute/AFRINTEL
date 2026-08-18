@@ -83,7 +83,7 @@ Government remained the leading sector in both months. July was more visible in 
 | dragonforce | 0 | 3 |
 | krybit | 2 | 2 |
 | BIGBROTHER | 0 | 2 |
-| thegentlemen | 0 | 2 |
+| TheGentlemen | 0 | 2 |
 | Phantom Atlas | 0 | 2 |
 
 The actor profile changed substantially. June was led by anisanas2 and DeadLock, while July was led by arcusmedia and dragonforce. Krybit was present in both months with two records each.

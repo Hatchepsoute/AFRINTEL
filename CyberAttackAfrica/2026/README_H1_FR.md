@@ -43,13 +43,13 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 | Deuxième mois au volume le plus élevé | Mai, 57 incidents |
 | Mois au volume le plus faible | Février, 20 incidents |
 
-```mermaid
-pie
-    title Répartition des incidents AFRINTEL, S1 2026
-    "Ransomware" : 113
-    "Fuites et ventes d'accès" : 125
-    "Défacement de sites web" : 1
-```
+**Répartition visuelle**
+
+| Type d'incident | Fiches | Barre |
+|---|---:|:---|
+| Ransomware | 113 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Fuites et ventes d'accès | 125 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Défacement de sites web | 1 | 🟥 |
 
 
 <!-- H1_VISUAL_START -->
@@ -78,13 +78,20 @@ pie
 | Afrique de l’Ouest et centrale | 19 | 19 | 2 | 40 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟥🟥 |
 | Afrique de l’Est | 13 | 7 | 0 | 20 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
 
-```mermaid
-xychart-beta
-    title "Top 10 pays - S1 2026"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Incidents" 0 --> 50
-    bar [48,46,44,16,15,9,8,6,6,5]
-```
+**Barres - Top 10 pays - S1 2026**
+
+| Libellé | Incidents | Barre |
+|---|---:|:---|
+| 1 | 48 | ██████████ |
+| 2 | 46 | ██████████ |
+| 3 | 44 | ██████████ |
+| 4 | 16 | ████ |
+| 5 | 15 | ████ |
+| 6 | 9 | ██ |
+| 7 | 8 | ██ |
+| 8 | 6 | ██ |
+| 9 | 6 | ██ |
+| 10 | 5 | ██ |
 Légende : les numéros correspondent au classement du tableau ci-dessus.
 
 ### Répartition sectorielle
@@ -101,13 +108,19 @@ Légende : les numéros correspondent au classement du tableau ci-dessus.
 | Commerce / e-commerce | 13 | 5,4% | ██ |
 | Pétrole et énergie | 6 | 2,5% | █ |
 
-```mermaid
-xychart-beta
-    title "Top secteurs - S1 2026"
-    x-axis ["1","2","3","4","5","6","7","8","9"]
-    y-axis "Fiches" 0 --> 70
-    bar [68,56,26,19,19,17,15,13,6]
-```
+**Barres - Top secteurs - S1 2026**
+
+| Libellé | Incidents | Barre |
+|---|---:|:---|
+| 1 | 68 | ██████████ |
+| 2 | 56 | █████████ |
+| 3 | 26 | ████ |
+| 4 | 19 | ███ |
+| 5 | 19 | ███ |
+| 6 | 17 | ███ |
+| 7 | 15 | ███ |
+| 8 | 13 | ██ |
+| 9 | 6 | █ |
 Légende : les numéros correspondent au classement sectoriel du tableau ci-dessus.
 
 🟧 Ransomware | 🟦 Fuites et ventes d’accès | 🟥 Défacement
@@ -124,31 +137,40 @@ Légende : les numéros correspondent au classement sectoriel du tableau ci-dess
 | Juin | 20 | 20 | 0 | 40 | 16,7 % |
 | **S1 2026** | **113** | **125** | **1** | **239** | **100 %** |
 
-```mermaid
-xychart-beta
-    title "Incidents cyber mensuels en Afrique, S1 2026"
-    x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
-    y-axis "Incidents" 0 --> 65
-    bar [21,20,41,60,57,40]
-```
+**Barres - Incidents cyber mensuels en Afrique, S1 2026**
+
+| Libellé | Incidents | Barre |
+|---|---:|:---|
+| Jan | 21 | ████ |
+| Fév | 20 | ████ |
+| Mar | 41 | ███████ |
+| Avr | 60 | ██████████ |
+| Mai | 57 | ██████████ |
+| Juin | 40 | ███████ |
 
 ### Évolution du ransomware et des fuites
 
-```mermaid
-xychart-beta
-    title "Activité ransomware, S1 2026"
-    x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
-    y-axis "Incidents" 0 --> 45
-    bar [17,20,19,20,17,20]
-```
+**Barres - Activité ransomware, S1 2026**
 
-```mermaid
-xychart-beta
-    title "Fuites de données et ventes d'accès, S1 2026"
-    x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
-    y-axis "Incidents" 0 --> 45
-    bar [3,0,22,40,40,20]
-```
+| Libellé | Incidents | Barre |
+|---|---:|:---|
+| Jan | 17 | █████████ |
+| Fév | 20 | ██████████ |
+| Mar | 19 | ██████████ |
+| Avr | 20 | ██████████ |
+| Mai | 17 | █████████ |
+| Juin | 20 | ██████████ |
+
+**Barres - Fuites de données et ventes d'accès, S1 2026**
+
+| Libellé | Incidents | Barre |
+|---|---:|:---|
+| Jan | 3 | █ |
+| Fév | 0 |  |
+| Mar | 22 | ██████ |
+| Avr | 40 | ██████████ |
+| Mai | 40 | ██████████ |
+| Juin | 20 | █████ |
 
 ## 5. Comparaison des trimestres
 
@@ -182,90 +204,90 @@ Le deuxième trimestre devance le premier de **75 incidents**, une hausse de 91,
 
 ### Priorités du S1 fondées sur les données
 
-| Libellé pays direct | Fiches |
-|---|---:|
-| 🇿🇦 Afrique du Sud | 48 |
-| 🇪🇬 Égypte | 46 |
-| 🇲🇦 Maroc | 44 |
-| 🇹🇳 Tunisie | 16 |
-| 🇳🇬 Nigeria | 15 |
-| 🇰🇪 Kenya | 9 |
-| 🇩🇿 Algérie | 8 |
-| 🇹🇿 Tanzanie | 6 |
-| 🇸🇳 Sénégal | 6 |
-| 🇬🇭 Ghana | 5 |
-| 🇲🇺 Maurice | 3 |
-| 🇱🇾 Libye | 3 |
-| 🇿🇲 Zambie | 2 |
-| 🇳🇦 Namibie | 2 |
-| 🇨🇮 Côte d'Ivoire | 2 |
-| 🇪🇹 Éthiopie | 2 |
-| 🇧🇼 Botswana | 2 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇺🇬 Ouganda | 1 |
-| 🇹🇬 Togo | 1 |
-| 🇸🇩 Soudan | 1 |
-| 🇸🇴 Somalie | 1 |
-| 🇸🇨 Seychelles | 1 |
-| 🇳🇪 Niger | 1 |
-| 🇲🇿 Mozambique | 1 |
-| 🇾🇹 Mayotte | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇬🇳 Guinée | 1 |
-| 🇬🇦 Gabon | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇧🇯 Bénin | 1 |
+| Libellé pays direct | Fiches | Barre |
+|---|---:|:---|
+| 🇿🇦 Afrique du Sud | 48 | ██████████ |
+| 🇪🇬 Égypte | 46 | ██████████ |
+| 🇲🇦 Maroc | 44 | ██████████ |
+| 🇹🇳 Tunisie | 16 | ████ |
+| 🇳🇬 Nigeria | 15 | ████ |
+| 🇰🇪 Kenya | 9 | ██ |
+| 🇩🇿 Algérie | 8 | ██ |
+| 🇹🇿 Tanzanie | 6 | ██ |
+| 🇸🇳 Sénégal | 6 | ██ |
+| 🇬🇭 Ghana | 5 | ██ |
+| 🇲🇺 Maurice | 3 | █ |
+| 🇱🇾 Libye | 3 | █ |
+| 🇿🇲 Zambie | 2 | █ |
+| 🇳🇦 Namibie | 2 | █ |
+| 🇨🇮 Côte d'Ivoire | 2 | █ |
+| 🇪🇹 Éthiopie | 2 | █ |
+| 🇧🇼 Botswana | 2 | █ |
+| 🇿🇼 Zimbabwe | 1 | █ |
+| 🇺🇬 Ouganda | 1 | █ |
+| 🇹🇬 Togo | 1 | █ |
+| 🇸🇩 Soudan | 1 | █ |
+| 🇸🇴 Somalie | 1 | █ |
+| 🇸🇨 Seychelles | 1 | █ |
+| 🇳🇪 Niger | 1 | █ |
+| 🇲🇿 Mozambique | 1 | █ |
+| 🇾🇹 Mayotte | 1 | █ |
+| 🇲🇬 Madagascar | 1 | █ |
+| 🇬🇳 Guinée | 1 | █ |
+| 🇬🇦 Gabon | 1 | █ |
+| 🇨🇲 Cameroun | 1 | █ |
+| 🇧🇯 Bénin | 1 | █ |
 | **Fiches mono-pays** | **233** |
 
 Les trois premiers pays directs regroupent **137 fiches (57,3 %)**. Six fiches supplémentaires sont multi-pays, ce qui porte le total à 239.
 
-| Secteur normalisé | Fiches |
-|---|---:|
-| Government / Administration | 70 |
-| Industrie / Automobile / Fabrication / Construction / Mines | 25 |
-| Finance / Banking | 25 |
-| Education / University / Institutions académiques | 19 |
-| Technologie / Numérique / Services aux entreprises / Identité numérique | 15 |
-| Healthcare / Medical | 12 |
-| Sports / Federations | 12 |
-| E-commerce / Retail | 12 |
-| Alimentation / Boissons / Agriculture | 8 |
-| Transport / Logistique / Aviation | 8 |
-| Oil & Energy | 8 |
-| Telecommunications | 5 |
-| Ressources humaines / Recrutement | 5 |
-| ONG / Action sociale | 3 |
-| Hôtellerie / Événementiel / Tourisme | 3 |
-| Médias / Audiovisuel | 2 |
-| Agrégation de données personnelles | 2 |
-| Services juridiques | 1 |
-| Immobilier | 1 |
-| Recherche / Think tank | 1 |
-| Organisations politiques / Partis | 1 |
-| Services de sécurité | 1 |
+| Secteur normalisé | Fiches | Barre |
+|---|---:|:---|
+| Government / Administration | 70 | ██████████ |
+| Industrie / Automobile / Fabrication / Construction / Mines | 25 | ████ |
+| Finance / Banking | 25 | ████ |
+| Education / University / Institutions académiques | 19 | ███ |
+| Technologie / Numérique / Services aux entreprises / Identité numérique | 15 | ███ |
+| Healthcare / Medical | 12 | ██ |
+| Sports / Federations | 12 | ██ |
+| E-commerce / Retail | 12 | ██ |
+| Alimentation / Boissons / Agriculture | 8 | ██ |
+| Transport / Logistique / Aviation | 8 | ██ |
+| Oil & Energy | 8 | ██ |
+| Telecommunications | 5 | █ |
+| Ressources humaines / Recrutement | 5 | █ |
+| ONG / Action sociale | 3 | █ |
+| Hôtellerie / Événementiel / Tourisme | 3 | █ |
+| Médias / Audiovisuel | 2 | █ |
+| Agrégation de données personnelles | 2 | █ |
+| Services juridiques | 1 | █ |
+| Immobilier | 1 | █ |
+| Recherche / Think tank | 1 | █ |
+| Organisations politiques / Partis | 1 | █ |
+| Services de sécurité | 1 | █ |
 | **Total** | **239** |
 
 Aucune catégorie sectorielle résiduelle ne subsiste dans cette vue semestrielle. Nundun Gopee & Co Ltd est classée dans Construction / Immobilier.
 
 #### Libellés d'acteurs normalisés les plus représentés
 
-| Acteur ou source | Fiches |
-|---|---:|
-| anisanas2 | 10 |
-| TheGentlemen | 7 |
-| Databasehooligan | 7 |
-| 404Crew Cyber Team | 7 |
-| CrowStealer | 6 |
-| NightSpire | 6 |
-| LockBit 5 | 5 |
-| Qilin | 4 |
-| DeadLock | 4 |
-| APT73 / Bashe | 4 |
-| XP95 | 3 |
-| xNov | 3 |
-| Keymous | 3 |
+| Acteur ou groupe | Fiches | Barre |
+|---|---:|:---|
+| anisanas2 | 10 | ██████████ |
+| TheGentlemen | 7 | ███████ |
+| Databasehooligan | 7 | ███████ |
+| 404Crew Cyber Team | 7 | ███████ |
+| CrowStealer | 6 | ██████ |
+| NightSpire | 6 | ██████ |
+| LockBit 5 | 5 | █████ |
+| Qilin | 4 | ████ |
+| DeadLock | 4 | ████ |
+| APT73 / Bashe | 4 | ████ |
+| XP95 | 3 | ███ |
+| xNov | 3 | ███ |
+| Keymous | 3 | ███ |
 
-Ces comptes normalisent les variantes évidentes comme `The Gentlemen` / `TheGentlemen`, `Nightspire` / `NightSpire` et `LockBit 5.0` / `LockBit 5`. Les coalitions restent séparées lorsque la fiche source nomme plusieurs acteurs.
+Les variantes de casse et de version des noms d'acteurs sont normalisées dans les comptes et les graphiques.
 
 #### Exposition multi-pays développée
 

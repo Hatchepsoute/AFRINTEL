@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-April 2026 brought in **60 publicly claimed cyber incidents** across Africa, **20 ransomware claims or publications**, **40 data leaks or access sales**. Data-broker activity picked up noticeably this month: highly sensitive database exposures (royal staff, identity documents, medical records) and targeted access sales against government infrastructure both intensified. Ransomware groups **payload**, **apt73/bashe**, **thegentlemen** and **krybit** kept up the pressure, while **Grubder**, **anisanas2**, **dark07x**, **wh6ami** and **Rihana** dominated the data-leak side of the underground market.
+April 2026 brought in **60 publicly claimed cyber incidents** across Africa, **20 ransomware claims or publications**, **40 data leaks or access sales**. Data-broker activity picked up noticeably this month: highly sensitive database exposures (royal staff, identity documents, medical records) and targeted access sales against government infrastructure both intensified. Ransomware groups **payload**, **apt73/bashe**, **TheGentlemen** and **krybit** kept up the pressure, while **Grubder**, **anisanas2**, **dark07x**, **wh6ami** and **Rihana** dominated the data-leak side of the underground market.
 
 Key findings:
 - **20 ransomware claims or publications (33.3%)** and **40 data leaks / access sales (66.7%)**.
@@ -303,10 +303,10 @@ pie
 
 | Rank | Country | Attacks | Chart | Main Threat Actors |
 | :---: | :--- | :---: | :--- | :--- |
-| **1** | 🇪🇬 Egypt | **9** | █████████ | payload (4), dragonforce, lockbit5, thegentlemen, apt73/bashe |
-| **2** | 🇿🇦 South Africa | **3** | ███ | dragonforce, krybit, thegentlemen |
+| **1** | 🇪🇬 Egypt | **9** | █████████ | payload (4), dragonforce, lockbit5, TheGentlemen, apt73/bashe |
+| **2** | 🇿🇦 South Africa | **3** | ███ | dragonforce, krybit, TheGentlemen |
 | **3** | 🇲🇦 Morocco | **2** | ██ | worldleaks, lockbit5 |
-| **4** | 🇬🇭 Ghana | **2** | ██ | thegentlemen, apt73/bashe |
+| **4** | 🇬🇭 Ghana | **2** | ██ | TheGentlemen, apt73/bashe |
 | **5** | 🇰🇪 Kenya | **1** | █ | apt73/bashe |
 | **6** | 🇧🇼 Botswana | **1** | █ | krybit |
 | **7** | 🇸🇨 Seychelles | **1** | █ | apt73/bashe |

@@ -330,7 +330,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 #### 🇪🇬 Égypte - EBNY Development
 
 - **Date de publication initiale :** 06 juillet 2026
-- **Acteur / Groupe :** thegentlemen
+- **Acteur / Groupe :** TheGentlemen
 - **Secteur :** Promotion et développement immobilier
 - **Site web :** [ebny.com.eg](https://ebny.com.eg/)
 - **Statut AFRINTEL :** Claim - Unverified
@@ -344,7 +344,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 
 - **Analyse :**
 
-  Le jeu de données ransomware de juillet 2026 liste EBNY Development comme victime attribuée à thegentlemen. La fiche disponible ne fournit aucun échantillon divulgué, montant de rançon, volume de données, preuve de chiffrement ou confirmation indépendante de la victime. L'exposition revendiquée pourrait concerner des informations relatives aux clients, aux contrats et aux biens immobiliers, et faciliter le phishing, la fraude à l'identité et l'extorsion ciblée contre des acheteurs immobiliers et des partenaires commerciaux.
+  Le jeu de données ransomware de juillet 2026 liste EBNY Development comme victime attribuée à TheGentlemen. La fiche disponible ne fournit aucun échantillon divulgué, montant de rançon, volume de données, preuve de chiffrement ou confirmation indépendante de la victime. L'exposition revendiquée pourrait concerner des informations relatives aux clients, aux contrats et aux biens immobiliers, et faciliter le phishing, la fraude à l'identité et l'extorsion ciblée contre des acheteurs immobiliers et des partenaires commerciaux.
 
 
 
@@ -807,7 +807,7 @@ Le secteur gouvernemental restant particulièrement exposé aux fuites de donné
 #### 🇨🇮 Côte d'Ivoire - Compagnie des Caoutchoucs du Pakidié (CCP)
 
 - **Date de publication initiale :** 23 juillet 2026
-- **Acteur / Groupe :** thegentlemen
+- **Acteur / Groupe :** TheGentlemen
 - **Secteur :** Hévéaculture et transformation du caoutchouc naturel
 - **Site web :** [pakidie.com](https://www.pakidie.com/)
 - **Statut AFRINTEL :** Claim - Unverified
@@ -821,7 +821,7 @@ Le secteur gouvernemental restant particulièrement exposé aux fuites de donné
 
 - **Analyse :**
 
-  Le jeu de données ransomware de juillet 2026 liste Compagnie des Caoutchoucs du Pakidié (CCP) comme victime attribuée à thegentlemen. La fiche disponible ne fournit aucun échantillon divulgué, montant de rançon, volume de données, preuve de chiffrement ou confirmation indépendante de la victime. L'exposition revendiquée pourrait concerner des informations opérationnelles, fournisseurs et commerciales, et faciliter le phishing, l'usurpation de fournisseurs, la fraude aux factures et l'extorsion.
+  Le jeu de données ransomware de juillet 2026 liste Compagnie des Caoutchoucs du Pakidié (CCP) comme victime attribuée à TheGentlemen. La fiche disponible ne fournit aucun échantillon divulgué, montant de rançon, volume de données, preuve de chiffrement ou confirmation indépendante de la victime. L'exposition revendiquée pourrait concerner des informations opérationnelles, fournisseurs et commerciales, et faciliter le phishing, l'usurpation de fournisseurs, la fraude aux factures et l'extorsion.
 
 
 

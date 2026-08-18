@@ -61,7 +61,7 @@
 | Université Mohammed VI Polytechnique (UM6P) | Éducation / Enseignement Supérieur | Mercobyte |
 | Ministère de l’Éducation nationale, du Préscolaire et des Sports | Gouvernement / Administration publique / Éducation | Wieko |
 | New Era Com | Télécoms / Infrastructures / Services IT. | Chucky_BF |
-| Dolidol | Industrie Manufacturière / Literie / Ameublement. | thegentlemen |
+| Dolidol | Industrie Manufacturière / Literie / Ameublement. | TheGentlemen |
 | Fractalite (fractalite.com) | Technologies/ Services Numériques / Développement Logiciel. | killsec |
 | LA VOIE EXPRESS | Logistique | medusa |
 | STAR LÉGUMES | Commerce de gros (Produits alimentaires) | tengu |
@@ -303,7 +303,7 @@
 ### 🇿🇼 Zimbabwe (2 victimes)
 | Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Proplastics Limited | Industrie manufacturière (Plastiques) | thegentlemen |
+| Proplastics Limited | Industrie manufacturière (Plastiques) | TheGentlemen |
 | Proplastics Limited (deuxième cyberattaque) | Industrie manufacturière (Plastiques) | lockbit5 |
 
 ---
@@ -353,7 +353,7 @@
 ### 🇲🇬 Madagascar (1 victimes)
 | Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |
-| Madagascar Airlines | Transport aérien | thegentlemen |
+| Madagascar Airlines | Transport aérien | TheGentlemen |
 
 ---
 

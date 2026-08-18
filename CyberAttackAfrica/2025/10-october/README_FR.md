@@ -15,7 +15,7 @@ Un total de 17 revendications de ransomwares confirmées et 2 revendications de 
 
 * **Nombre total d'attaques recensées** : 19
 * **Acteurs les plus actifs** : `incransom` (4 attaques), `qilin` (3 attaques), `tengu` (2 attaques).
-    * *Autres groupes actifs* : beast, brotherhood, medusa, obscura, thegentlemen, radar, clop, blackshrantac (1 attaque chacun) ; 1 revendication supplémentaire est non attribuée, tandis que la seconde revendication de fuite est attribuée à EternalRed.
+    * *Autres groupes actifs* : beast, brotherhood, medusa, obscura, TheGentlemen, radar, clop, blackshrantac (1 attaque chacun) ; 1 revendication supplémentaire est non attribuée, tandis que la seconde revendication de fuite est attribuée à EternalRed.
 * **Secteurs les plus ciblés** : Logistique (3), Finance (3), Éducation (2).
 * **Pays les plus touchés** : 🇿🇦 Afrique du Sud (4), 🇲🇦 Maroc (5), 🇪🇬 Égypte (2).
 * **Volumes de données exfiltrés notables** : 
@@ -224,7 +224,7 @@ Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest e
 * **brotherhood** (10/10) : Momentum Logistics (Afrique du Sud, logistique).
 * **medusa** (13/10) : LA VOIE EXPRESS (Maroc, logistique).
 * **obscura** (13/10) : meamargroup.com (Égypte, immobilier) – **3ème attaque contre cette entreprise**.
-* **thegentlemen** (17/10) : Madagascar Airlines (Madagascar, aviation).
+* **TheGentlemen** (17/10) : Madagascar Airlines (Madagascar, aviation).
 * **radar** (18/10) : TK HOLDINGS GROUP (RDC, mines/conglomérat).
 * **clop** (18/10) : Université du Witwatersrand (Afrique du Sud, éducation).
 * **blackshrantac** (20/10) : Al Ahly Leasing & Factoring (Égypte, finance).
@@ -256,7 +256,7 @@ graph LR
     brotherhood(brotherhood) -->|Momentum Logistics| SA4["🇿🇦 Afrique du Sud"]
     medusa(medusa) -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Maroc"]
     obscura(obscura) -->|meamargroup.com| Egypt1["🇪🇬 Égypte"]
-    thegentlemen(thegentlemen) -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
+    TheGentlemen(TheGentlemen) -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
     radar(radar) -->|TK HOLDINGS| DRC["🇨🇩 RD Congo"]
     clop(clop) -->|Université du Witwatersrand| SA5["🇿🇦 Afrique du Sud"]
     blackshrantac(blackshrantac) -->|Al Ahly Leasing| Egypt2["🇪🇬 Égypte"]
@@ -267,7 +267,7 @@ graph LR
     style incransom fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
     style qilin fill:#ffa500,stroke:#333,stroke-width:2px
     style tengu fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    style thegentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
+    style TheGentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
     style NonAttribue fill:#888,stroke:#333,stroke-width:2px,color:#fff
     
     %% Style des pays (Nodes de destination)

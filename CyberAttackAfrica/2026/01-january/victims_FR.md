@@ -58,7 +58,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 11 Janvier 2026
 #### 🇪🇬 Égypte - Real Tech
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Technologie / Sécurité Informatique
 - **Site web :** realtech-eg.com
 - **Statut :** Claim - Unverified
@@ -74,7 +74,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 14 Janvier 2026
 #### 🇲🇺 Maurice - Rogers Capital
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Services Financiers et Technologie
 - **Site web :** rogerscapital.mu
 - **Statut :** Claim - Data Sample Published
@@ -124,7 +124,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 20 Janvier 2026
 #### 🇰🇪 Kenya - CPF Financial Services
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Services Financiers (Fonds de pension)
 - **Site web :** cpf.or.ke
 - **Statut :** Claim - Unverified
@@ -140,7 +140,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 20 Janvier 2026
 #### 🇿🇦 Afrique du Sud - Paltrack
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Logiciels Logistiques (Agroalimentaire)
 - **Site web :** paltrack.co.za
 - **Statut :** Claim - Unverified
@@ -148,7 +148,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 20 Janvier 2026
 #### 🇿🇦 Afrique du Sud - Rola Motor Group
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Distribution Automobile
 - **Site web :** rola.co.za
 - **Statut :** Claim - Unverified
@@ -156,7 +156,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 
 ### 20 Janvier 2026
 #### 🇿🇦 Afrique du Sud - Municipalité de Witzenberg
-- **Groupe ransomware :** thegentlemen
+- **Groupe ransomware :** TheGentlemen
 - **Secteur :** Administration Publique / Gouvernement Local
 - **Site web :** witzenberg.gov.za
 - **Statut :** Claim - Unverified

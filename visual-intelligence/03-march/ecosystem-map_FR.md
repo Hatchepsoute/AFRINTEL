@@ -49,7 +49,7 @@ pie
     "xNov (3)" : 3
     "XP95 (3)" : 3
     "Qilin (2)" : 2
-    "The Gentlemen (2)" : 2
+    "TheGentlemen (2)" : 2
     "INC Ransom (2)" : 2
     "LockBit 5.0 (1)" : 1
     "Spirigatito (1)" : 1
@@ -163,7 +163,7 @@ flowchart LR
     class V_Orange_Madagascar victim;
     class C_Madagascar country;
     class S_T_l_communications sector;
-    A_The_Gentlemen["The Gentlemen"] --> V_K_PROPHA__Karray_Produits_Pharmaceutiques["K.PROPHA (Karray Produits Pharmaceutiques)"] --> C_Tunisie["🇹🇳 Tunisie"] --> S_Sant____Pharmaceutique["Santé / Pharmaceutique"]
+    A_The_Gentlemen["TheGentlemen"] --> V_K_PROPHA__Karray_Produits_Pharmaceutiques["K.PROPHA (Karray Produits Pharmaceutiques)"] --> C_Tunisie["🇹🇳 Tunisie"] --> S_Sant____Pharmaceutique["Santé / Pharmaceutique"]
     class A_The_Gentlemen actor;
     class V_K_PROPHA__Karray_Produits_Pharmaceutiques victim;
     class C_Tunisie country;
@@ -208,7 +208,7 @@ flowchart LR
     class V_Minist_re_de_la_Justice victim;
     class C_Maroc country;
     class S_Gouvernement___Justice sector;
-    A_The_Gentlemen["The Gentlemen"] --> V_Elundini_Local_Municipality["Elundini Local Municipality"] --> C_Afrique_du_Sud["🇿🇦 Afrique du Sud"] --> S_Administration_locale["Administration locale"]
+    A_The_Gentlemen["TheGentlemen"] --> V_Elundini_Local_Municipality["Elundini Local Municipality"] --> C_Afrique_du_Sud["🇿🇦 Afrique du Sud"] --> S_Administration_locale["Administration locale"]
     class A_The_Gentlemen actor;
     class V_Elundini_Local_Municipality victim;
     class C_Afrique_du_Sud country;
@@ -337,7 +337,7 @@ flowchart LR
     A_Qilin["Qilin"] --> V_Orange_Madagascar["Orange Madagascar"]
     class A_Qilin actor;
     class V_Orange_Madagascar victim;
-    A_The_Gentlemen["The Gentlemen"] --> V_K_PROPHA__Karray_Produits_Pharmaceutiques["K.PROPHA (Karray Produits Pharmaceutiques)"]
+    A_The_Gentlemen["TheGentlemen"] --> V_K_PROPHA__Karray_Produits_Pharmaceutiques["K.PROPHA (Karray Produits Pharmaceutiques)"]
     class A_The_Gentlemen actor;
     class V_K_PROPHA__Karray_Produits_Pharmaceutiques victim;
     A_APT73___Bashe["APT73 / Bashe"] --> V_HACA__Haute_Autorit__de_la_Communication_Audiovisuelle["HACA (Haute Autorité de la Communication Audiovisuelle)"]
@@ -349,7 +349,7 @@ flowchart LR
     A_INC_Ransom["INC Ransom"] --> V_Namibia_Airports_Company["Namibia Airports Company"]
     class A_INC_Ransom actor;
     class V_Namibia_Airports_Company victim;
-    A_The_Gentlemen["The Gentlemen"] --> V_Elundini_Local_Municipality["Elundini Local Municipality"]
+    A_The_Gentlemen["TheGentlemen"] --> V_Elundini_Local_Municipality["Elundini Local Municipality"]
     class A_The_Gentlemen actor;
     class V_Elundini_Local_Municipality victim;
     A_INC_Ransom["INC Ransom"] --> V_ETFSA["ETFSA"]

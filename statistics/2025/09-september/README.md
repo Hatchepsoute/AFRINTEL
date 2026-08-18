@@ -61,7 +61,7 @@ This statistical sheet is compiled from the 18 cards in the monthly victim file.
 | Actor / source | Incidents |
 |---|---:|
 | Not specified | 2 |
-| thegentlemen | 2 |
+| TheGentlemen | 2 |
 | killsec | 2 |
 | Fire Wire | 1 |
 | obscura | 1 |

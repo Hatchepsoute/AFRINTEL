@@ -61,7 +61,7 @@ Cette fiche reprend les 19 cartes du fichier victimes mensuel. Les publications 
 | brotherhood | 1 |
 | medusa | 1 |
 | obscura | 1 |
-| thegentlemen | 1 |
+| TheGentlemen | 1 |
 | radar | 1 |
 | clop | 1 |
 | blackshrantac | 1 |

@@ -250,7 +250,7 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | dragonforce | 3 |
 | Keymous | 3 |
 | Unknown | 3 |
-| thegentlemen | 3 |
+| TheGentlemen | 3 |
 | lockbit5 | 3 |
 | akira | 2 |
 | ransomhouse | 2 |

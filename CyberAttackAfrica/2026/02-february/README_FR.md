@@ -14,7 +14,7 @@ Février 2026 a rapporté **20 incidents cyber** dans **14 pays africains**, tou
 
 - **20 incidents ransomware / extorsion de données (100 %)**.
 - **14 pays** touchés : l'**Afrique du Sud** (3), l'**Égypte** (3), le **Ghana** (2) et le **Nigeria** (2) en tête.
-- **11 acteurs distincts** : **thegentlemen** (5 incidents) domine, suivi de **0APT** (3) et **LockBit 5.0** (3).
+- **11 acteurs distincts** : **TheGentlemen** (5 incidents) domine, suivi de **0APT** (3) et **LockBit 5.0** (3).
 - Le secteur de l'aviation sous pression soutenue : BlueSky Somalia, Nile Air Égypte, Air Côte d'Ivoire tous revendiqués en février.
 - À noter : 0APT, responsable de 3 revendications à fort volume (BlueSky 3,5 To, Global Media Alliance 2,5 To, Vertex Law 850 Go), a ensuite disparu des sites de fuite publics.
 
@@ -86,7 +86,7 @@ pie
 **Acteurs les plus prolifiques :**
 | Acteur | Incidents | Pays |
 |--------|:---------:|------|
-| thegentlemen | 5 | Kenya, Ghana, Égypte, Afrique du Sud, Tunisie |
+| TheGentlemen | 5 | Kenya, Ghana, Égypte, Afrique du Sud, Tunisie |
 | 0APT | 3 | Somalie, Ghana, Tanzanie |
 | LockBit 5.0 | 3 | Maurice, Égypte, Afrique du Sud |
 | incransom | 2 | Nigeria, Côte d'Ivoire |
@@ -101,7 +101,7 @@ pie
 ```mermaid
 pie
  title Acteurs les plus actifs (février 2026)
- "thegentlemen (5)" : 5
+ "TheGentlemen (5)" : 5
  "0APT (3)" : 3
  "LockBit 5.0 (3)" : 3
  "incransom (2)" : 2
@@ -125,16 +125,16 @@ pie
 
 | Pays | Incidents | Acteurs principaux |
 |------|:---------:|-------------------|
-| Afrique du Sud | 3 | thegentlemen, vect, LockBit 5.0 |
-| Égypte | 3 | thegentlemen, payload, LockBit 5.0 |
-| Ghana | 2 | 0APT, thegentlemen |
+| Afrique du Sud | 3 | TheGentlemen, vect, LockBit 5.0 |
+| Égypte | 3 | TheGentlemen, payload, LockBit 5.0 |
+| Ghana | 2 | 0APT, TheGentlemen |
 | Nigeria | 2 | killsec, incransom |
 | Sénégal | 1 | The Green Blood Group (139 To) |
 | Somalie | 1 | 0APT (3,5 To) |
 | Tanzanie | 1 | 0APT (850 Go) |
-| Kenya | 1 | thegentlemen |
+| Kenya | 1 | TheGentlemen |
 | Maurice | 1 | LockBit 5.0 |
-| Tunisie | 1 | thegentlemen |
+| Tunisie | 1 | TheGentlemen |
 | Soudan | 1 | apt73/bashe (3,5 Go publiés) |
 | Côte d'Ivoire | 1 | incransom |
 | Maroc | 1 | tengu |
@@ -143,7 +143,7 @@ pie
 **Observations clés :**
 - **0APT** est sorti de nulle part début février, 3 revendications en 5 jours, puis silence radio sur les DLS publics pour le reste du mois.
 - **Secteur aérien** : 3 compagnies revendiquées (BlueSky Somalie, Nile Air Égypte, Air Côte d'Ivoire), 3 acteurs différents. Ça ressemble plus à de l'opportunisme indépendant qu'à une campagne coordonnée.
-- **thegentlemen** ne ralentit pas : 5 nouvelles revendications dans 4 pays après janvier.
+- **TheGentlemen** ne ralentit pas : 5 nouvelles revendications dans 4 pays après janvier.
 - **LockBit 5.0** revendique 3 victimes, toujours sous le branding LockBit 5.x.
 
 ## 6. Impact sectoriel
@@ -190,7 +190,7 @@ pie
 
 | Acteur | Type | Incidents | Cibles principales |
 |--------|------|:---------:|-------------------|
-| thegentlemen | Groupe ransomware | 5 | Multi-secteur, 4 pays |
+| TheGentlemen | Groupe ransomware | 5 | Multi-secteur, 4 pays |
 | 0APT | Inconnu (disparu) | 3 | Aviation, médias, juridique |
 | LockBit 5.0 | Ransomware | 3 | Hôtellerie, gouvernement, automobile |
 | incransom | Ransomware | 2 | Énergie, aviation |
@@ -226,7 +226,7 @@ pie
 1. **DAF Sénégal pourrait être une violation record.** 139 To dont des données biométriques, c'est un chiffre extraordinaire à revendiquer. S'il se confirme, c'est une vraie escalade contre les gouvernements ouest-africains.
 2. **L'aviation a pris cher.** Trois compagnies, trois pays, trois acteurs, en un seul mois. Ça ressemble à de l'opportunisme indépendant, pas à une campagne coordonnée contre le secteur.
 3. **0APT a brillé puis disparu.** Trois revendications à fort volume en 5 jours, puis plus rien sur les DLS publics pour le reste du mois. Objectifs atteints, revendications fabriquées, ou acteur existant testant un nouveau pseudonyme, impossible de trancher.
-4. **thegentlemen ne ralentit pas.** Cinq incidents en février après six en janvier, un tempo panafricain qui tient la distance.
+4. **TheGentlemen ne ralentit pas.** Cinq incidents en février après six en janvier, un tempo panafricain qui tient la distance.
 5. **LockBit 5.0 continue d'apparaître.** Trois revendications ce mois-ci, le ciblage africain ne faiblit pas.
 
 ### Lacunes
@@ -290,7 +290,7 @@ pie
 
 ## 13. Conclusion
 
-Ce qui domine février 2026, c'est l'ampleur et la sensibilité de la revendication DAF Sénégal : si les 139 To de données citoyennes et biométriques se confirment, ce serait l'une des violations gouvernementales les plus lourdes de l'histoire cyber africaine. En dehors de ce cas, le mois reste large et varié, 14 pays, 11 acteurs, avec une pression particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. thegentlemen, LockBit 5.0 et 0APT, le temps qu'il a duré, ont tous maintenu un rythme opérationnel soutenu. AFRINTEL continue de surveiller les groupes actifs et mettra à jour ces évaluations à mesure que des éléments de vérification arrivent.
+Ce qui domine février 2026, c'est l'ampleur et la sensibilité de la revendication DAF Sénégal : si les 139 To de données citoyennes et biométriques se confirment, ce serait l'une des violations gouvernementales les plus lourdes de l'histoire cyber africaine. En dehors de ce cas, le mois reste large et varié, 14 pays, 11 acteurs, avec une pression particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. TheGentlemen, LockBit 5.0 et 0APT, le temps qu'il a duré, ont tous maintenu un rythme opérationnel soutenu. AFRINTEL continue de surveiller les groupes actifs et mettra à jour ces évaluations à mesure que des éléments de vérification arrivent.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

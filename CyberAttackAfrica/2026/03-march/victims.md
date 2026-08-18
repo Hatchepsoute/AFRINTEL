@@ -55,7 +55,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **XP95**: 3 victims
 - **xNov**: 3 victims
 - **Qilin**: 2 victims
-- **The Gentlemen**: 2 victims
+- **TheGentlemen**: 2 victims
 - **INC Ransom**: 2 victims
 - **LockBit 5.0**: 1 victim
 - **Crypto24**: 1 victim
@@ -241,7 +241,7 @@ This list records ransomware and data breach incidents targeting African entitie
 
 ### 09 March 2026
 #### 🇹🇳 Tunisia - K.PROPHA (Karray Produits Pharmaceutiques)
-- **Ransomware group:** The Gentlemen
+- **Ransomware group:** TheGentlemen
 - **Sector:** Health / Pharmaceutical
 - **Website:** [kpropha.com](http://kpropha.com)
 - **Status:** Claim - Unverified
@@ -314,7 +314,7 @@ This list records ransomware and data breach incidents targeting African entitie
 
 ### 21 March 2026
 #### 🇿🇦 South Africa - Elundini Local Municipality
-- **Ransomware group:** The Gentlemen
+- **Ransomware group:** TheGentlemen
 - **Sector:** Local government
 - **Website:** [elundini.gov.za](http://elundini.gov.za)
 - **Status:** Claim - Unverified

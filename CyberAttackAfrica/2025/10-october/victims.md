@@ -63,7 +63,7 @@
 
 ### 17 October 2025
 #### 🇲🇬 Madagascar - Madagascar Airlines
-- **Ransomware Group:** thegentlemen
+- **Ransomware Group:** TheGentlemen
 - **Sector:** Air transport
 - **Website:** www.madagascarairlines.com
 - **Status:** Claim - Unverified

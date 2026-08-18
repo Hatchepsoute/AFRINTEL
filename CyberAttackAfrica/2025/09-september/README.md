@@ -15,7 +15,7 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 
 ## 2. Executive summary
 * **Total recorded attacks:** 18.
-* **Most active actors:** `thegentlemen` (2 attacks), `killsec` (2 attacks) and `privilege` (2 attacks).
+* **Most active actors:** `TheGentlemen` (2 attacks), `killsec` (2 attacks) and `privilege` (2 attacks).
 * **Primary targeted sectors:** Public Administration, Finance, Insurance, Manufacturing, Technology, Telecommunications, and Education.
 * **Critical data volumes:**
     * **General Directorate of Taxes and Domains (Senegal):** 1 TB of tax data exfiltrated.
@@ -31,7 +31,7 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 ### 📊 3.1 Breakdown by group/actor
 | Group / Actor | Number of Attacks |
 | :--- | :---: |
-| **thegentlemen** | 2 |
+| **TheGentlemen** | 2 |
 | **killsec** | 2 |
 | **privilege** | 2 |
 | **obscura** | 1 |
@@ -179,7 +179,7 @@ Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = 
 | :--- | ---: | :--- |
 | Not specified | 2 | ██████████ |
 | killsec | 2 | ██████████ |
-| thegentlemen | 2 | ██████████ |
+| TheGentlemen | 2 | ██████████ |
 | Fire Wire | 1 | █████ |
 | KILLUAX | 1 | █████ |
 | Tanaka | 1 | █████ |
@@ -190,7 +190,7 @@ Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = 
 <!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed incidents by group/actor
 
-#### 4.1 thegentlemen (2 attacks)
+#### 4.1 TheGentlemen (2 attacks)
 * **09/09/2025: Dolidol (Morocco)** - Manufacturing / Bedding Industry. Claim & data leak.
 * **09/09/2025: Proplastics Limited (Zimbabwe)** - Manufacturing Industry (Plastics). Claim & data leak.
 > **CTI Note:** The group struck two major industrial targets in distinct geographical zones on the same day, demonstrating coordinated planning.
@@ -238,7 +238,7 @@ Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = 
 ```mermaid
 graph LR
 
-A1[thegentlemen] --> V1[Dolidol]
+A1[TheGentlemen] --> V1[Dolidol]
 V1 --> P1[Maroc]
 
 A1 --> V2[Proplastics Limited]
@@ -293,7 +293,7 @@ class P1,P2,P3,P4,P5,P6,P7,P8,P9 country;
 * **Massive Exfiltration:** Ability to collect and exfiltrate volumes exceeding 1 TB (DGID) or millions of rows of data (NSIA).
 * **Double Extorsion & Monetization:** Systematic sale of data on underground forums to force payment (e.g., Tanaka).
 * **State Infrastructure Targeting:** Increased attacks against regulatory bodies and financial ministries.
-* **Geo-Operational Agility:** Ability of certain groups to conduct simultaneous attacks across different regions of the continent (e.g., thegentlemen).
+* **Geo-Operational Agility:** Ability of certain groups to conduct simultaneous attacks across different regions of the continent (e.g., TheGentlemen).
 
 ## 6. Recommendations
 1.  **Data Governance:** For public administrations, prioritize encryption of sensitive databases and offline backups.

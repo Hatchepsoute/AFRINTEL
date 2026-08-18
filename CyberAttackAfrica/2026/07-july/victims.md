@@ -322,7 +322,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 #### 🇪🇬 Egypt - EBNY Development
 
 - **Initial publication date:** 06 July 2026
-- **Actor / Group:** thegentlemen
+- **Actor / Group:** TheGentlemen
 - **Sector:** Real estate development
 - **Website:** [ebny.com.eg](https://ebny.com.eg/)
 - **AFRINTEL status:** Claim - Unverified
@@ -336,7 +336,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists EBNY Development as a victim attributed to thegentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect client, contract and property-related information and may support phishing, identity fraud and targeted extortion against property buyers and business partners.
+  The July 2026 ransomware dataset lists EBNY Development as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect client, contract and property-related information and may support phishing, identity fraud and targeted extortion against property buyers and business partners.
 
 
 ### July 06, 2026
@@ -777,7 +777,7 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 #### 🇨🇮 Ivory Coast - Compagnie des Caoutchoucs du Pakidié (CCP)
 
 - **Initial publication date:** 23 July 2026
-- **Actor / Group:** thegentlemen
+- **Actor / Group:** TheGentlemen
 - **Sector:** Rubber farming and natural rubber processing
 - **Website:** [pakidie.com](https://www.pakidie.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -791,7 +791,7 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Compagnie des Caoutchoucs du Pakidié (CCP) as a victim attributed to thegentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists Compagnie des Caoutchoucs du Pakidié (CCP) as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
 
 
 ### July 23, 2026

@@ -26,16 +26,16 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 
 | Pays | Nombre d'incidents | Principaux acteurs |
 |------|-------------------|---------------------|
-| 🇿🇦 **Afrique du Sud** | 3 | `thegentlemen` (1), `Lockbit5` (1), `vect` (1) |
-| 🇪🇬 **Égypte** | 3 | `thegentlemen` (1), `lockbit5` (1), `payload` (1) |
+| 🇿🇦 **Afrique du Sud** | 3 | `TheGentlemen` (1), `Lockbit5` (1), `vect` (1) |
+| 🇪🇬 **Égypte** | 3 | `TheGentlemen` (1), `lockbit5` (1), `payload` (1) |
 | 🇳🇬 **Nigeria** | 2 | `killsec` (1), `incransom` (1) |
-| 🇬🇭 **Ghana** | 2 | `0APT` (1), `thegentlemen` (1) |
+| 🇬🇭 **Ghana** | 2 | `0APT` (1), `TheGentlemen` (1) |
 | 🇸🇳 **Sénégal** | 1 | `The Green Blood Group` (1) ⚠️ **139 To** |
 | 🇸🇴 **Somalie** | 1 | `0APT` (1) |
 | 🇹🇿 **Tanzanie** | 1 | `0APT` (1) |
-| 🇰🇪 **Kenya** | 1 | `thegentlemen` (1) |
+| 🇰🇪 **Kenya** | 1 | `TheGentlemen` (1) |
 | 🇲🇺 **Maurice** | 1 | `lockbit5` (1) |
-| 🇹🇳 **Tunisie** | 1 | `thegentlemen` (1) |
+| 🇹🇳 **Tunisie** | 1 | `TheGentlemen` (1) |
 | 🇸🇩 **Soudan** | 1 | `apt73/bashe` (1) |
 | 🇨🇮 **Côte d'Ivoire** | 1 | `incransom` (1) |
 | 🇲🇦 **Maroc** | 1 | `tengu` (1) |
@@ -47,7 +47,7 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 
 | Acteur | Incidents | Pays ciblés | Volume total |
 |--------|-----------|-------------|--------------|
-| `thegentlemen` | **5** | Kenya, Ghana, Égypte, Afrique du Sud (×2), Tunisie | ~? |
+| `TheGentlemen` | **5** | Kenya, Ghana, Égypte, Afrique du Sud (×2), Tunisie | ~? |
 | `0APT` | **3** | Somalie, Ghana, Tanzanie | **~7 To** |
 | `lockbit5` | **3** | Maurice, Égypte, Afrique du Sud | Non agrégé |
 | `incransom` | **2** | Nigeria, Côte d'Ivoire | **~210 Go** |
@@ -65,10 +65,10 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 
 | Secteur | Incidents | Acteurs principaux |
 |---------|-----------|---------------------|
-| **Gouvernement** | 3 | `The Green Blood Group`, `lockbit5`, `thegentlemen` |
-| **Aviation** | 3 | `0APT` (2), `thegentlemen`, `incransom` |
+| **Gouvernement** | 3 | `The Green Blood Group`, `lockbit5`, `TheGentlemen` |
+| **Aviation** | 3 | `0APT` (2), `TheGentlemen`, `incransom` |
 | **Énergie** | 2 | `incransom`, `vect` |
-| **Banque/Fintech** | 2 | `thegentlemen`, `killsec` |
+| **Banque/Fintech** | 2 | `TheGentlemen`, `killsec` |
 | **Média** | 1 | `0APT` |
 | **Juridique** | 1 | `0APT` |
 | **Hôtellerie** | 1 | `lockbit5` |
@@ -76,8 +76,8 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 | **Conseil** | 1 | `apt73/bashe` |
 | **Commerce** | 1 | `qilin` |
 | **Automobile** | 1 | `Lockbit5` |
-| **IT Consulting** | 1 | `thegentlemen` |
-| **Service public** | 1 | `thegentlemen` |
+| **IT Consulting** | 1 | `TheGentlemen` |
+| **Service public** | 1 | `TheGentlemen` |
 
 ---
 ## 🔍 Top 5 des pays les plus ciblés en février 2026
@@ -219,7 +219,7 @@ flowchart LR
   %% ===== ACTEURS =====
   A1["The Green Blood Group"]:::actor
   A2["0APT"]:::actor
-  A3["thegentlemen"]:::actor
+  A3["TheGentlemen"]:::actor
   A4["lockbit5"]:::actor
   A5["incransom"]:::actor
   A6["payload"]:::actor
