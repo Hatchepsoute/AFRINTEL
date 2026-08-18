@@ -132,7 +132,7 @@ pie title Répartition par pays (Juillet 2025)
 | 🇿🇦 Afrique du Sud | 1 | 0 | 1 | 🟧 |
 | 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 6
     "Fuites et accès" : 14

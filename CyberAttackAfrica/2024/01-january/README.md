@@ -78,7 +78,7 @@ timeline
 | Egypt | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - January 2024 (12 victims)
     "South Africa" : 3
     "Kenya" : 1

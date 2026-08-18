@@ -96,7 +96,7 @@ pie title Répartition par pays
 | 🇿🇦 Afrique du Sud | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 8
     "Fuites et accès" : 0

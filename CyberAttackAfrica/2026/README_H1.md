@@ -44,7 +44,7 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 | Lowest-volume month | February, 20 incidents |
 
 ```mermaid
-pie showData
+pie
     title AFRINTEL incident distribution, H1 2026
     "Ransomware" : 113
     "Data leaks and access sales" : 125

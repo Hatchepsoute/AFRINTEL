@@ -74,7 +74,7 @@ Principales conclusions :
 | **-** | 🇪🇬 Égypte / 🇱🇾 Libye (Scans de passeports) | **1** | █ |
 
 ```mermaid
-pie showData
+pie
  title Répartition des victimes par pays - Mai 2026
  "Égypte" : 16
  "Afrique du Sud" : 14
@@ -143,7 +143,7 @@ pie showData
 | **Total (57)** | **17** | **40** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
 
 ```mermaid
-pie showData
+pie
  title Ransomware vs fuites de données - Mai 2026
  "Fuites de données et ventes d'accès" : 40
  "Ransomware" : 17
@@ -184,7 +184,7 @@ pie showData
 | **Total** | **57** | **100 %** | |
 
 ```mermaid
-pie showData
+pie
  title Répartition sectorielle - Mai 2026
  "Government / Administration" : 20
  "Ressources humaines / Recrutement" : 5
@@ -221,7 +221,7 @@ pie showData
 *Légende : 🟧 Ransomware \| 🟦 Fuites de données*
 
 ```mermaid
-pie showData
+pie
  title Acteurs les plus actifs - Mai 2026
  "Databasehooligan (8)" : 8
  "404Crew Cyber Team (5)" : 5

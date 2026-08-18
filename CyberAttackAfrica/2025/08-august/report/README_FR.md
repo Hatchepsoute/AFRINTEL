@@ -79,7 +79,7 @@ timeline
 | Togo | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Août 2025 (13 victimes)
     "Afrique du Sud" : 3
     "Tunisie" : 2

@@ -61,7 +61,7 @@ timeline
 | Burkina Faso | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - April 2024 (6 victims)
     "South Africa" : 2
     "Seychelles" : 1

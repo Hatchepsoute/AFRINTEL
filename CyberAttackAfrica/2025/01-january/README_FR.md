@@ -112,7 +112,7 @@ Une carte des attaques.
 | 🇺🇬 Ouganda | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 16
     "Fuites et accès" : 0

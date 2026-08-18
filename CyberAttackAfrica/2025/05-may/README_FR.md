@@ -116,7 +116,7 @@ pie title Répartition par pays (Mai 2025)
 | 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
 | 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 13
     "Fuites et accès" : 8

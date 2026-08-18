@@ -61,7 +61,7 @@ timeline
 | Burkina Faso | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Avril 2024 (6 victimes)
     "Afrique du Sud" : 2
     "Seychelles" : 1

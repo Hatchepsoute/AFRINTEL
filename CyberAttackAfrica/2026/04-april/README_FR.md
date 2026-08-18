@@ -101,7 +101,7 @@ Principales conclusions :
 
 ### Répartition des victimes par pays
 ```mermaid
-pie showData
+pie
  title Répartition des victimes par pays-Avril 2026
  "Maroc" : 17
  "Égypte" : 11
@@ -167,7 +167,7 @@ pie showData
 **Répartition des ransomwares par pays - Avril 2026**
 
 ```mermaid
-pie showData
+pie
  title Répartition des ransomwares par pays
  "Égypte" : 9
  "Afrique du Sud" : 3
@@ -182,7 +182,7 @@ pie showData
 **Fuites de données par pays - Avril 2026**
 
 ```mermaid
-pie showData
+pie
  title Répartition des fuites de données par pays
  "Maroc" : 15
  "Afrique du Sud" : 5
@@ -228,7 +228,7 @@ pie showData
 | **Total** | **60** | **100 %** | |
 
 ```mermaid
-pie showData
+pie
  title Répartition sectorielle des incidents - Avril 2026
  "Gouvernement / Administration" : 15
  "Éducation / Université" : 8
@@ -262,7 +262,7 @@ pie showData
 *Légende : 🟧 Ransomware \| 🟦 Fuite de Données*
 
 ```mermaid
-pie showData
+pie
  title Acteurs les plus actifs - Avril 2026
  "Grubder (7)" : 7
  "Payload (4)" : 4

@@ -102,7 +102,7 @@ pie title Breakdown by country
 | 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
 | 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 9
     "Leaks and access" : 2

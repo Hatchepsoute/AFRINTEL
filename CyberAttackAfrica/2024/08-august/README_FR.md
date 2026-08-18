@@ -80,7 +80,7 @@ timeline
 | Ghana | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Août 2024 (15 cas)
     "Afrique du Sud" : 6
     "Seychelles" : 2

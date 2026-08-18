@@ -94,7 +94,7 @@ timeline
 | Érythrée | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Juillet 2025 (20 revendications)
     "Tunisie" : 5
     "Maroc" : 4

@@ -138,7 +138,7 @@ graph TD
 | 🇸🇳 Senegal | 1 | 0 | 1 | 🟧 |
 | 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 11
     "Leaks and access" : 7

@@ -120,7 +120,7 @@ pie title Breakdown by country (June 2025)
 | 🇲🇺 Mauritius | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisia | 0 | 1 | 1 |  🟦 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 5
     "Leaks and access" : 16

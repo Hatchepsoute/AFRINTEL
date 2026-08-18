@@ -61,7 +61,7 @@ timeline
 | Senegal          | 1                |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country (May 2024)
     "South Africa" : 2
     "Egypt" : 2
@@ -93,7 +93,7 @@ pie showData
 | ArcusMedia       | 1                |
 
 ```mermaid
-pie showData
+pie
     title Active groups - May 2024
     "LockBit3" : 4
     "RansomHub" : 1

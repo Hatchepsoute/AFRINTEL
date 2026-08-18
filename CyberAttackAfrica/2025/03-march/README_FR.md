@@ -101,7 +101,7 @@ pie title Répartition par pays
 | 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
 | 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 9
     "Fuites et accès" : 2

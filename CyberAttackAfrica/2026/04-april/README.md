@@ -68,7 +68,7 @@ Key findings:
 *Note: The multi-country incident is counted as 1 global victim.*
 
 ```mermaid
-pie showData
+pie
  title Victims distribution by country - April 2026
  "Morocco" : 17
  "Egypt" : 11
@@ -165,7 +165,7 @@ pie showData
 **Ransomware victims by country - April 2026**
 
 ```mermaid
-pie showData
+pie
  title Ransomware victims by country
  "Egypt" : 9
  "South Africa" : 3
@@ -181,7 +181,7 @@ pie showData
 **Data leaks by country - April 2026**
 
 ```mermaid
-pie showData
+pie
  title Data leaks by country
  "Morocco" : 15
  "South Africa" : 5
@@ -231,7 +231,7 @@ pie showData
 **Sector distribution of Incidents - April 2026**
 
 ```mermaid
-pie showData
+pie
  title Sector Distribution of Incidents - April 2026
  "Government / Administration" : 15
  "Education / University" : 8
@@ -268,7 +268,7 @@ pie showData
 
 
 ```mermaid
-pie showData
+pie
  title Most active threat actors - April 2026
  "Grubder (7)" : 7
  "Payload (4)" : 4

@@ -84,7 +84,7 @@ timeline
 | Maroc | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Novembre 2024 (15 victimes)
     "Afrique du Sud" : 2
     "Égypte" : 2

@@ -78,7 +78,7 @@ timeline
 | Tunisie | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Décembre 2024 (12 victimes)
     "Afrique du Sud" : 2
     "Nigeria" : 1

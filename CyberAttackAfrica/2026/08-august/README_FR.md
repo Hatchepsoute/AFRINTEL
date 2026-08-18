@@ -51,7 +51,7 @@ AFRINTEL a recensé **3 incidents** concernant des entités africaines en août 
 | 🇰🇪 Kenya | 1 | ███ 33,3 % |
 | 🇿🇦 Afrique du Sud | 1 | ███ 33,3 % |
 
-```pie showData
+```pie
 title Incidents par pays — août 2026
 "Algérie" : 1
 "Kenya" : 1
@@ -84,7 +84,7 @@ title Incidents par pays — août 2026
 | Gouvernement / Administration | 2 | 66,7 % |
 | Finance / Banque | 1 | 33,3 % |
 
-```pie showData
+```pie
 title Incidents par secteur — août 2026
 "Gouvernement / Administration" : 2
 "Finance / Banque" : 1

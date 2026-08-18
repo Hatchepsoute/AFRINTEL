@@ -79,7 +79,7 @@ timeline
 | Togo | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - August 2025 (13 victims)
     "South Africa" : 3
     "Tunisia" : 2

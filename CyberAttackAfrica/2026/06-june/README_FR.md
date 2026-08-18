@@ -82,7 +82,7 @@ Principales conclusions :
 > Le rapport recense 40 incidents uniques. Le classement géographique totalise 53 occurrences pays, car les offres Convince et Governor sont ventilées dans chaque pays africain explicitement mentionné. Cette ventilation ne modifie pas le total global. La Palestine et le Yémen sont exclus de ce classement, car ils sont hors du périmètre africain.
 
 ```mermaid
-pie showData
+pie
  title Occurrences géographiques - Juin 2026
  "Maroc" : 10
  "Afrique du Sud" : 6
@@ -174,7 +174,7 @@ pie showData
 > Le total analytique reste de 40 incidents uniques, soit 20 ransomwares et 20 fuites de données ou ventes d'accès. Les 33 occurrences pays de la colonne des fuites incluent la ventilation géographique des deux incidents multi-pays.
 
 ```mermaid
-pie showData
+pie
  title Ransomware vs fuites de données - Juin 2026
  "Ransomware" : 20
  "Fuites de données et ventes d'accès" : 20
@@ -220,7 +220,7 @@ pie showData
 | **Total** | **40** | **100 %** | |
 
 ```mermaid
-pie showData
+pie
  title Répartition sectorielle - Juin 2026
  "Government / Administration" : 12
  "Finance / Banking" : 6
@@ -253,7 +253,7 @@ pie showData
 *Légende : 🟧 Ransomware \| 🟦 Fuites de données*
 
 ```mermaid
-pie showData
+pie
  title Acteurs les plus actifs - Juin 2026
  "anisanas2 (7)" : 7
  "DeadLock (4)" : 4

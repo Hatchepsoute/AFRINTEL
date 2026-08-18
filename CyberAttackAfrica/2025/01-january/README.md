@@ -111,7 +111,7 @@ A visual representation of attacks per country.
 | 🇺🇬 Uganda | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 16
     "Leaks and access" : 0

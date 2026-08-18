@@ -53,7 +53,7 @@ Claimed volumes are not treated as established facts. Download links, credential
 | **Total geographic occurrences** | **43** | - |
 
 ```mermaid
-pie showData
+pie
     title Geographic occurrences - July 2026
     "Egypt" : 7
     "Tunisia" : 7
@@ -173,7 +173,7 @@ xychart-beta
 
 
 ```mermaid
-pie showData
+pie
     title Incident type breakdown - July 2026
     "Ransomware" : 18
     "Data leaks" : 18
@@ -211,16 +211,18 @@ The leak side was more varied: identity documents, medical data, university acco
 ```mermaid
 xychart-beta
     title "Sector distribution - July 2026"
-    x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
+    x-axis ["Govt","Tele","Heal","Educ","Ecom","Tech","Ener","Unit"]
     y-axis "Records" 0 --> 12
     bar [11,5,4,3,3,3,2,11]
 ```
+
+Legend: Govt = Government; Tele = Telecommunications; Heal = Healthcare; Educ = Education; Ecom = E-commerce; Tech = Technology; Ener = Oil and Energy; Unit = Single-occurrence sectors
 
 Government and administration remained the largest sectoral grouping. The records covered public procurement, justice, employment, identity, land administration and public services, creating risks that extend beyond data disclosure into fraud and targeted impersonation.
 
 ## 6. Threat actors and sources
 
-| Actor / source | Records | Main activity |
+| Actor / Group | Records | Main activity |
 | :--- | ---: | :--- |
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |

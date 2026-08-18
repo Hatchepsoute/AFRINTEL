@@ -67,7 +67,7 @@ timeline
 | Ghana | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Février 2024 (9 fiches)
     "Afrique du Sud" : 2
     "Égypte" : 2

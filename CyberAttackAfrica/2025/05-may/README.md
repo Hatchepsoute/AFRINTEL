@@ -117,7 +117,7 @@ pie title Breakdown by country (May 2025)
 | 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
 | 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 13
     "Leaks and access" : 8

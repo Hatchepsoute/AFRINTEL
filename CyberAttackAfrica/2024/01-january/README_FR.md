@@ -78,7 +78,7 @@ timeline
 | Égypte | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Janvier 2024 (12 victimes)
     "Afrique du Sud" : 3
     "Kenya" : 1

@@ -84,7 +84,7 @@ timeline
 | Morocco | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - November 2024 (15 victims)
     "South Africa" : 2
     "Egypt" : 2

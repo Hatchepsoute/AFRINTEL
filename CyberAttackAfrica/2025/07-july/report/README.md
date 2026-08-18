@@ -94,7 +94,7 @@ timeline
 | Eritrea | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - July 2025 (20 claims)
     "Tunisia" : 5
     "Morocco" : 4

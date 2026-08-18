@@ -79,7 +79,7 @@ xychart-beta
 | **Total** | **196** | **100%** |
 
 ```mermaid
-pie showData
+pie
     title Types d’incidents - 2025
     "Ransomware" : 122
     "Data leaks" : 71

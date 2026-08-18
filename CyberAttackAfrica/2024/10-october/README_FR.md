@@ -75,7 +75,7 @@ timeline
 | Nigeria | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Octobre 2024 (12 victimes)
     "Afrique du Sud" : 4
     "Algérie" : 2

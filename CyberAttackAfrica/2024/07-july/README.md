@@ -68,7 +68,7 @@ timeline
 | Ethiopia         | 1                |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - July 2024 (11 victims)
     "South Africa" : 3
     "Algeria" : 3

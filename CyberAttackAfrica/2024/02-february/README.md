@@ -67,7 +67,7 @@ timeline
 | Ghana | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - February 2024 (9 incident records)
     "South Africa" : 2
     "Egypt" : 2

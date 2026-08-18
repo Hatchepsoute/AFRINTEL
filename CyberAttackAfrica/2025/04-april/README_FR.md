@@ -114,7 +114,7 @@ pie title Répartition par pays (Avril 2025)
 | 🇸🇳 Sénégal | 0 | 1 | 1 |  🟦 |
 | 🇹🇳 Tunisie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 7
     "Fuites et accès" : 10

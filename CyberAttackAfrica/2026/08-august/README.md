@@ -51,7 +51,7 @@ AFRINTEL recorded **3 incidents** involving African entities in August 2026: **2
 | 🇰🇪 Kenya | 1 | ███ 33.3% |
 | 🇿🇦 South Africa | 1 | ███ 33.3% |
 
-```pie showData
+```pie
 title Incidents by country — August 2026
 "Algeria" : 1
 "Kenya" : 1
@@ -84,7 +84,7 @@ title Incidents by country — August 2026
 | Government / Administration | 2 | 66.7% |
 | Finance / Banking | 1 | 33.3% |
 
-```pie showData
+```pie
 title Incidents by sector — August 2026
 "Government / Administration" : 2
 "Finance / Banking" : 1

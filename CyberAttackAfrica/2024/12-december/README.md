@@ -78,7 +78,7 @@ timeline
 | Tunisia | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - December 2024 (12 victims)
     "South Africa" : 2
     "Nigeria" : 1

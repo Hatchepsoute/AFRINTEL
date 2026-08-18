@@ -73,7 +73,7 @@ Key findings:
 | **-** | 🇪🇬 Egypt / 🇱🇾 Libya (Passport scans) | **1** | █ |
 
 ```mermaid
-pie showData
+pie
  title Victims distribution by country - May 2026
  "Egypt" : 16
  "South Africa" : 14
@@ -142,7 +142,7 @@ pie showData
 | **Total (57)** | **17** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
 ```mermaid
-pie showData
+pie
  title Ransomware vs Data Leaks - May 2026
  "Data leaks and access sales" : 40
  "Ransomware" : 17
@@ -183,7 +183,7 @@ pie showData
 | **Total** | **57** | **100%** | |
 
 ```mermaid
-pie showData
+pie
  title Sector distribution - May 2026
  "Government / Administration" : 20
  "Human Resources / Recruitment" : 5
@@ -220,7 +220,7 @@ pie showData
 *Legend: 🟧 Ransomware \| 🟦 Data Leaks*
 
 ```mermaid
-pie showData
+pie
  title Most active threat actors - May 2026
  "Databasehooligan (8)" : 8
  "404Crew Cyber Team (5)" : 5

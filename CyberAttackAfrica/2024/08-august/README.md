@@ -80,7 +80,7 @@ timeline
 | Ghana | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - August 2024 (15 cases)
     "South Africa" : 6
     "Seychelles" : 2

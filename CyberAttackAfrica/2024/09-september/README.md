@@ -58,7 +58,7 @@ timeline
 | Nigeria | 1 |
 
 ```mermaid
-pie showData
+pie
     title Distribution by country - September 2024 (5 victims)
     "Senegal" : 1
     "Cameroon" : 1

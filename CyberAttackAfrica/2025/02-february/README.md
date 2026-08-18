@@ -86,7 +86,7 @@ pie title Breakdown by country
 | 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 8
     "Leaks and access" : 0

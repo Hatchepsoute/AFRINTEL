@@ -58,7 +58,7 @@ timeline
 | Nigeria | 1 |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Septembre 2024 (5 victimes)
     "Sénégal" : 1
     "Cameroun" : 1

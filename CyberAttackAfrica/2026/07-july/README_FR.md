@@ -53,7 +53,7 @@ Les volumes annoncés par les acteurs ne sont pas repris comme des faits établi
 | **Total géographique** | **43** | - |
 
 ```mermaid
-pie showData
+pie
     title Occurrences géographiques - juillet 2026
     "Égypte" : 7
     "Tunisie" : 7
@@ -172,7 +172,7 @@ xychart-beta
 
 
 ```mermaid
-pie showData
+pie
     title Répartition des types d'incidents - juillet 2026
     "Ransomware" : 18
     "Fuites de données" : 18
@@ -210,16 +210,18 @@ Les fuites de données couvrent des documents d’identité, des données médic
 ```mermaid
 xychart-beta
     title "Répartition sectorielle - juillet 2026"
-    x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
+    x-axis ["Gouv","Tél","Sant","Éduc","Ecom","Tech","Pét","Unit"]
     y-axis "Fiches" 0 --> 12
     bar [11,5,4,3,3,3,2,11]
 ```
+
+Légende : Gouv = Gouvernement ; Tél = Télécommunications ; Sant = Santé ; Éduc = Éducation ; Ecom = E-commerce ; Tech = Technologie ; Pét = Pétrole et énergie ; Unit = Secteurs unitaires
 
 Les administrations restent le premier ensemble sectoriel. Les fiches concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
 
 ## 6. Acteurs et sources les plus présents
 
-| Acteur / source | Fiches | Activité principale |
+| Acteur / Groupe | Fiches | Activité principale |
 | :--- | ---: | :--- |
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |

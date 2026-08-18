@@ -44,7 +44,7 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 | Mois au volume le plus faible | Février, 20 incidents |
 
 ```mermaid
-pie showData
+pie
     title Répartition des incidents AFRINTEL, S1 2026
     "Ransomware" : 113
     "Fuites et ventes d'accès" : 125

@@ -117,7 +117,7 @@ pie title Répartition par pays (Juin 2025)
 | 🇲🇺 Maurice | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisie | 0 | 1 | 1 |  🟦 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 5
     "Fuites et accès" : 16

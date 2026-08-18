@@ -55,7 +55,7 @@ En mai 2024, l’Afrique a enregistré **8 nouvelles victimes** documentées d�
 | Sénégal            | 1                |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays (mai 2024)
     "Afrique du Sud" : 2
     "Égypte" : 2
@@ -87,7 +87,7 @@ pie showData
 | ArcusMedia       | 1                |
 
 ```mermaid
-pie showData
+pie
     title Groupes actifs - Mai 2024
     "LockBit3" : 4
     "RansomHub" : 1

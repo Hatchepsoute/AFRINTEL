@@ -133,7 +133,7 @@ pie title Breakdown by country (November 2025)
 | 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 10
     "Leaks and access" : 4

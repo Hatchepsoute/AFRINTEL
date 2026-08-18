@@ -133,7 +133,7 @@ pie title Répartition par pays (Novembre 2025)
 | 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 10
     "Fuites et accès" : 4

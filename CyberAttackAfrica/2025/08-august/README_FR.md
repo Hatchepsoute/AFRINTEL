@@ -107,7 +107,7 @@ xychart-beta
 | 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
 | 🇺🇬 Ouganda | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 7
     "Fuites et accès" : 6

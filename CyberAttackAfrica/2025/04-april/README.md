@@ -114,7 +114,7 @@ pie title Breakdown by country (April 2025)
 | 🇸🇳 Senegal | 0 | 1 | 1 |  🟦 |
 | 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 7
     "Leaks and access" : 10

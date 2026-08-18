@@ -146,7 +146,7 @@ title Incidents de ransomware par pays (Octobre 2025)
 | 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisie | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Types d’incidents
     "Ransomware" : 17
     "Fuites et accès" : 2

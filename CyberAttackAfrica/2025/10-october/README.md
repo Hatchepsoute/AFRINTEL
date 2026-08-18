@@ -195,7 +195,7 @@ title Ransomware incidents by country (October 2025)
 | 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
 
-```pie showData
+```pie
     title Incident types
     "Ransomware" : 17
     "Leaks and access" : 2

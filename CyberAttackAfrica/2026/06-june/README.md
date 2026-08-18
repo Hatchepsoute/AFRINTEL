@@ -82,7 +82,7 @@ Key findings:
 > The report records 40 unique incidents. The geographic ranking totals 53 country occurrences because the Convince and Governor offers are allocated to every explicitly named African country. This allocation does not change the global total. Palestine and Yemen are excluded because they fall outside the African scope.
 
 ```mermaid
-pie showData
+pie
  title Geographic occurrences by country - June 2026
  "Morocco" : 10
  "South Africa" : 6
@@ -174,7 +174,7 @@ pie showData
 > The analytical total remains 40 unique incidents, comprising 20 ransomware incidents and 20 data leaks or access sales. The 33 leak-related country occurrences include the geographic allocation of the two multi-country incidents.
 
 ```mermaid
-pie showData
+pie
  title Ransomware vs Data Leaks - June 2026
  "Ransomware" : 20
  "Data leaks and access sales" : 20
@@ -214,7 +214,7 @@ pie showData
 | **Total** | **40** | **100%** | |
 
 ```mermaid
-pie showData
+pie
  title Sector distribution - June 2026
  "Government / Administration" : 12
  "Finance / Banking" : 6
@@ -247,7 +247,7 @@ pie showData
 *Legend: 🟧 Ransomware \| 🟦 Data Leaks*
 
 ```mermaid
-pie showData
+pie
  title Most active threat actors - June 2026
  "anisanas2 (7)" : 7
  "DeadLock (4)" : 4

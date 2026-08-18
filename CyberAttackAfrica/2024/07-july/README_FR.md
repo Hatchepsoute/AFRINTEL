@@ -65,7 +65,7 @@ timeline
 | Éthiopie           | 1                |
 
 ```mermaid
-pie showData
+pie
     title Répartition par pays - Juillet 2024 (11 victimes)
     "Afrique du Sud" : 3
     "Algérie" : 3
