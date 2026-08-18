@@ -1,3 +1,8 @@
+# List of African cyberattack victims in July 2026 (42 victims)
+👉🏾 [French version](./victims_FR.md)
+
+## July 2026
+
 ### July 01, 2026
 #### 🇳🇬 Nigeria / 🇨🇮 Côte d’Ivoire - Citizen ID Photo Dataset
 

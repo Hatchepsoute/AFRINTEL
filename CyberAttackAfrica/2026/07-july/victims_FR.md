@@ -1,3 +1,8 @@
+# Liste des victimes africaines de cyberattaques en juillet 2026 (42 victimes)
+👉🏾 [Version anglaise](./victims.md)
+
+## Juillet 2026
+
 ### 01 juillet 2026
 #### 🇳🇬 Nigéria / 🇨🇮 Côte d’Ivoire - Jeu de photos de pièces d’identité
 
