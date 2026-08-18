@@ -1,4 +1,5 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
+![Période](https://img.shields.io/badge/Période-2025-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
@@ -119,6 +120,71 @@ pie title Répartition par pays (Novembre 2025)
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Égypte | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇲🇦 Maroc | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇨🇮 Côte d’Ivoire | 1 | 1 | 2 | 🟧 🟦 |
+| 🇿🇦 Afrique du Sud | 1 | 1 | 2 | 🟧 🟦 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 10
+    "Fuites et accès" : 4
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 8 | 6 | 2 | 🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Afrique australe | 3 | 2 | 1 | 🟧🟧 🟦 |
+| Afrique de l’Ouest et centrale | 3 | 2 | 1 | 🟧🟧 🟦 |
+| Afrique de l’Est | 0 | 0 | 0 |  |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 9
+    bar [8,3,3,0]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Gouvernement / administration | 3 | 21,4% | ██████████ |
+| Technologies / informatique | 3 | 21,4% | ██████████ |
+| Finance / banque | 2 | 14,3% | ███████ |
+| Transport / logistique | 2 | 14,3% | ███████ |
+| Santé / médical | 1 | 7,1% | ███ |
+| Industrie / fabrication | 1 | 7,1% | ███ |
+| Services professionnels | 1 | 7,1% | ███ |
+| Commerce / e-commerce | 1 | 7,1% | ███ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| clop | 3 | ██████████ |
+| nightspire | 3 | ██████████ |
+| RL000 | 1 | ███ |
+| Spirigatito, post published on a cybercriminal forum | 1 | ███ |
+| Unknown | 1 | ███ |
+| anisanas2 | 1 | ███ |
+| benzona | 1 | ███ |
+| qilin | 1 | ███ |
+| spacebears | 1 | ███ |
+| stormous | 1 | ███ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 clop (3 attaques)

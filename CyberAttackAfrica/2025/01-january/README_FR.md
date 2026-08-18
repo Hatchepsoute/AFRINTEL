@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 
 # Rapport CTI : Cyberattaques en Afrique - Janvier 2025
 👉🏾 [**English version available here** ](./README.md)
@@ -97,6 +97,68 @@ Une carte des attaques.
 - 🇺🇬 Uganda   		       █            1
 - 🇿🇲 Zambie      	         █            1
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Égypte | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇳🇬 Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇩🇿 Algérie | 2 | 0 | 2 | 🟧🟧 |
+| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
+| 🇲🇦 Maroc | 2 | 0 | 2 | 🟧🟧 |
+| 🇿🇦 Afrique du Sud | 1 | 0 | 1 | 🟧 |
+| 🇺🇬 Ouganda | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 16
+    "Fuites et accès" : 0
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 8 | 8 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Afrique australe | 2 | 2 | 0 | 🟧🟧 |
+| Afrique de l’Ouest et centrale | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique de l’Est | 3 | 3 | 0 | 🟧🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 9
+    bar [8,2,3,3]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Éducation / universités | 5 | 31,2% | ██████████ |
+| Gouvernement / administration | 3 | 18,8% | ██████ |
+| Santé / médical | 3 | 18,8% | ██████ |
+| Technologies / informatique | 2 | 12,5% | ████ |
+| Énergie / services publics | 1 | 6,2% | ██ |
+| Services professionnels | 1 | 6,2% | ██ |
+| Commerce / e-commerce | 1 | 6,2% | ██ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| funksec | 6 | ██████████ |
+| GDLockerSec | 3 | █████ |
+| babuk2 | 2 | ███ |
+| ransomhub | 2 | ███ |
+| spacebears | 2 | ███ |
+| apt73 | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 FunkSec (6 attaques)

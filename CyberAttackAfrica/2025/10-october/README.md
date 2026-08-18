@@ -1,4 +1,5 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
+![Period](https://img.shields.io/badge/Period-2025-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
@@ -176,6 +177,77 @@ title Ransomware incidents by country (October 2025)
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇲🇦 Morocco | 3 | 2 | 5 | 🟧🟧🟧 🟦🟦 |
+| 🇿🇦 South Africa | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇪🇬 Egypt | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇿 Algeria | 1 | 0 | 1 | 🟧 |
+| 🇨🇩 Congo (DRC) | 1 | 0 | 1 | 🟧 |
+| 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 17
+    "Leaks and access" : 2
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 9 | 7 | 2 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Southern Africa | 4 | 4 | 0 | 🟧🟧🟧🟧 |
+| West and Central Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 10
+    bar [9,4,3,3]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Finance / Banking | 4 | 21.1% | ██████████ |
+| Transport / Logistics | 4 | 21.1% | ██████████ |
+| Agriculture / Agribusiness | 2 | 10.5% | █████ |
+| Education / University | 2 | 10.5% | █████ |
+| Government / Administration | 2 | 10.5% | █████ |
+| Professional / Business Services | 2 | 10.5% | █████ |
+| Energy / Utilities | 1 | 5.3% | ██ |
+| Healthcare / Medical | 1 | 5.3% | ██ |
+| Technology / IT | 1 | 5.3% | ██ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| incransom | 4 | ██████████ |
+| qilin | 3 | ████████ |
+| tengu | 2 | █████ |
+| DBhacker_BF | 1 | ██ |
+| EternalRed | 1 | ██ |
+| beast | 1 | ██ |
+| blackshrantac | 1 | ██ |
+| brotherhood | 1 | ██ |
+| clop | 1 | ██ |
+| medusa | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Attack Details by ransomware group
 
 ### 4.1 incransom (4 attacks)

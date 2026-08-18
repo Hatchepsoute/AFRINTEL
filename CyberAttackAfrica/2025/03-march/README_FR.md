@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 # Rapport CTI : Cyberattaques en Afrique - Mars 2025
 👉🏾 [**English version available here** ](./README.md)
 ## 1. Introduction
@@ -87,6 +87,69 @@ pie title Répartition par pays
     "🇧🇫 Burkina Faso" : 1
     "🇷🇼 Rwanda" : 1
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Égypte | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇳🇬 Nigeria | 1 | 1 | 2 | 🟧 🟦 |
+| 🇿🇦 Afrique du Sud | 2 | 0 | 2 | 🟧🟧 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |
+| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
+| 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 9
+    "Fuites et accès" : 2
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique australe | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 3 | 1 | 2 | 🟧 🟦🟦 |
+| Afrique de l’Est | 2 | 2 | 0 | 🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 4
+    bar [3,3,3,2]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Gouvernement / administration | 3 | 27,3% | ██████████ |
+| Technologies / informatique | 3 | 27,3% | ██████████ |
+| Éducation / universités | 2 | 18,2% | ███████ |
+| Finance / banque | 1 | 9,1% | ███ |
+| Santé / médical | 1 | 9,1% | ███ |
+| Commerce / e-commerce | 1 | 9,1% | ███ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| arcusmedia | 2 | ██████████ |
+| nightspire | 2 | ██████████ |
+| Ghudra | 1 | █████ |
+| MisterSam | 1 | █████ |
+| babuk2 | 1 | █████ |
+| funksec | 1 | █████ |
+| killsec | 1 | █████ |
+| lynx | 1 | █████ |
+| play | 1 | █████ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 arcusmedia (2 attaques)

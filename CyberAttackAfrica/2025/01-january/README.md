@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 # CTI Report: Cyber attacks in Africa - January 2025
 👉🏾 [**French version available here** ](./README_FR.md)
 ## 1. Introduction
@@ -96,6 +96,68 @@ A visual representation of attacks per country.
 - 🇺🇬 Uganda   		       █            1
 - 🇿🇲 Zambia       	       █            1
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇳🇬 Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇩🇿 Algeria | 2 | 0 | 2 | 🟧🟧 |
+| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
+| 🇲🇦 Morocco | 2 | 0 | 2 | 🟧🟧 |
+| 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
+| 🇺🇬 Uganda | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 16
+    "Leaks and access" : 0
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 8 | 8 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Southern Africa | 2 | 2 | 0 | 🟧🟧 |
+| West and Central Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 9
+    bar [8,2,3,3]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Education / University | 5 | 31.2% | ██████████ |
+| Government / Administration | 3 | 18.8% | ██████ |
+| Healthcare / Medical | 3 | 18.8% | ██████ |
+| Technology / IT | 2 | 12.5% | ████ |
+| Energy / Utilities | 1 | 6.2% | ██ |
+| Professional / Business Services | 1 | 6.2% | ██ |
+| Retail / E-commerce | 1 | 6.2% | ██ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| funksec | 6 | ██████████ |
+| GDLockerSec | 3 | █████ |
+| babuk2 | 2 | ███ |
+| ransomhub | 2 | ███ |
+| spacebears | 2 | ███ |
+| apt73 | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed attacks by ransomware group
 ### 4.1 FunkSec (6 attacks)
 - **09/01/2025:** gags.gov.eg (Egypt, administrations) - Claim - Data Sample Published, High confidence: authenticated admin-panel access observed, including a SQL injection payload.

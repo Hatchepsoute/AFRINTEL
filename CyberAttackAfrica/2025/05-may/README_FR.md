@@ -1,4 +1,5 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Période](https://img.shields.io/badge/Période-2025-blue)
 
 # Rapport CTI : Cyberattaques en Afrique - Mai 2025
 👉🏾 [**English version available here**](./README.md)
@@ -100,6 +101,75 @@ pie title Répartition par pays (Mai 2025)
     "🇨🇲 Cameroun" : 1
     "🇹🇬 Togo" : 1
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇿🇦 Afrique du Sud | 9 | 0 | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 🇲🇷 Mauritanie | 0 | 6 | 6 |  🟦🟦🟦🟦🟦🟦 |
+| 🇩🇿 Algérie | 0 | 1 | 1 |  🟦 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇨🇲 Cameroun | 1 | 0 | 1 | 🟧 |
+| 🇪🇬 Égypte | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 13
+    "Fuites et accès" : 8
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 8 | 1 | 7 | 🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | 10 | 10 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 2 | 1 | 1 | 🟧 🟦 |
+| Afrique de l’Est | 1 | 1 | 0 | 🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 11
+    bar [8,10,2,1]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Finance / banque | 8 | 38,1% | ██████████ |
+| Technologies / informatique | 4 | 19,0% | █████ |
+| Santé / médical | 2 | 9,5% | ██ |
+| Éducation / universités | 1 | 4,8% | █ |
+| Énergie / services publics | 1 | 4,8% | █ |
+| Gouvernement / administration | 1 | 4,8% | █ |
+| Industrie / fabrication | 1 | 4,8% | █ |
+| Services professionnels | 1 | 4,8% | █ |
+| Commerce / e-commerce | 1 | 4,8% | █ |
+| Transport / logistique | 1 | 4,8% | █ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| devman | 6 | ██████████ |
+| kill9 | 6 | ██████████ |
+| Datacarry | 1 | ██ |
+| Phantom Atlas | 1 | ██ |
+| arkana | 1 | ██ |
+| cache | 1 | ██ |
+| everest | 1 | ██ |
+| incransom | 1 | ██ |
+| killsec | 1 | ██ |
+| nightspire | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par acteur malveillant
 ### 4.1 devman (6 attaques)
 - **01/05/2025** : iOCO (Afrique du Sud, technologies)

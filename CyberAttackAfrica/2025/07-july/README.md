@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 # CTI Report: Cyber attacks in Africa - July 2025 (20 victims)
 👉🏾 [**French version available here**](./README_FR.md)
 
@@ -114,6 +114,73 @@ pie title Breakdown by country (July 2025)
     "🇪🇷 Eritrea" : 1
 ```
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇹🇳 Tunisia | 0 | 5 | 5 |  🟦🟦🟦🟦🟦 |
+| 🇲🇦 Morocco | 1 | 3 | 4 | 🟧 🟦🟦🟦 |
+| 🇩🇿 Algeria | 0 | 2 | 2 |  🟦🟦 |
+| 🇰🇪 Kenya | 1 | 1 | 2 | 🟧 🟦 |
+| 🇪🇬 Egypt | 1 | 0 | 1 | 🟧 |
+| 🇪🇷 Eritrea | 0 | 1 | 1 |  🟦 |
+| 🇲🇷 Mauritania | 0 | 1 | 1 |  🟦 |
+| 🇳🇦 Namibia | 1 | 0 | 1 | 🟧 |
+| 🇳🇬 Nigeria | 0 | 1 | 1 |  🟦 |
+| 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
+| 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 6
+    "Leaks and access" : 14
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 13 | 2 | 11 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 2 | 2 | 0 | 🟧🟧 |
+| West and Central Africa | 1 | 0 | 1 |  🟦 |
+| East Africa | 4 | 2 | 2 | 🟧🟧 🟦🟦 |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 14
+    bar [13,2,1,4]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 9 | 45.0% | ██████████ |
+| Finance / Banking | 6 | 30.0% | ███████ |
+| Education / University | 2 | 10.0% | ██ |
+| Technology / IT | 2 | 10.0% | ██ |
+| Energy / Utilities | 1 | 5.0% | █ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| Dark 07x Team | 5 | ██████████ |
+| Unknown | 2 | ████ |
+| Evil_BYTE_Officiel | 1 | ██ |
+| Gh1nDar | 1 | ██ |
+| Hepd | 1 | ██ |
+| Keymous | 1 | ██ |
+| Mercobyte | 1 | ██ |
+| Phantom Atlas | 1 | ██ |
+| Wieko | 1 | ██ |
+| d4rk4rmy | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed attacks by group/actor
 ### 4.1 Dark 07x Team (5 attacks)
 - **25/07/2025:** Ministry of Finance (Tunisia, government) – "Full Access" claim.

@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 
 # 🛡️ AFRINTEL | Rapport CTI : Cyberattaques en Afrique
 ## Période : Septembre 2025 (18 victimes recensées)
@@ -119,6 +119,74 @@ graph TD
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇪🇬 Égypte | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
+| 🇲🇦 Maroc | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇿 Algérie | 0 | 1 | 1 |  🟦 |
+| 🇦🇴 Angola | 0 | 1 | 1 |  🟦 |
+| 🇨🇩 RDC | 0 | 1 | 1 |  🟦 |
+| 🇨🇮 Côte d’Ivoire | 0 | 1 | 1 |  🟦 |
+| 🇳🇦 Namibie | 1 | 0 | 1 | 🟧 |
+| 🇸🇳 Sénégal | 1 | 0 | 1 | 🟧 |
+| 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 11
+    "Fuites et accès" : 7
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 6 | 4 | 2 | 🟧🟧🟧🟧 🟦🟦 |
+| Afrique australe | 2 | 2 | 0 | 🟧🟧 |
+| Afrique de l’Ouest et centrale | 8 | 3 | 5 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| Afrique de l’Est | 2 | 2 | 0 | 🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 9
+    bar [6,2,8,2]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Finance / banque | 5 | 27,8% | ██████████ |
+| Gouvernement / administration | 5 | 27,8% | ██████████ |
+| Technologies / informatique | 4 | 22,2% | ████████ |
+| Industrie / fabrication | 2 | 11,1% | ████ |
+| Éducation / universités | 1 | 5,6% | ██ |
+| Services professionnels | 1 | 5,6% | ██ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| Not specified | 2 | ██████████ |
+| killsec | 2 | ██████████ |
+| thegentlemen | 2 | ██████████ |
+| Fire Wire | 1 | █████ |
+| KILLUAX | 1 | █████ |
+| Tanaka | 1 | █████ |
+| arcusmedia | 1 | █████ |
+| blackshrantac | 1 | █████ |
+| obscura | 1 | █████ |
+| privilege | 1 | █████ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe/acteur
 
 #### 4.1 thegentlemen (2 attaques)

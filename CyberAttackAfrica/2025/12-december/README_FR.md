@@ -1,4 +1,5 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
+![Période](https://img.shields.io/badge/Période-2025-blue)
 ![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
 ![Threat](https://img.shields.io/badge/Menace-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
@@ -107,6 +108,76 @@ pie title Répartition par pays (Décembre 2025)
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Égypte | 4 | 1 | 5 | 🟧🟧🟧🟧 🟦 |
+| 🇿🇦 Afrique du Sud | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇹🇳 Tunisie | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇩🇿 Algérie | 0 | 1 | 1 |  🟦 |
+| 🇬🇭 Ghana | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 0 | 1 | 1 |  🟦 |
+| 🇲🇦 Maroc | 0 | 1 | 1 |  🟦 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
+| 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 14
+    "Fuites et accès" : 4
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 10 | 7 | 3 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦 |
+| Afrique australe | 5 | 5 | 0 | 🟧🟧🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 2 | 2 | 0 | 🟧🟧 |
+| Afrique de l’Est | 1 | 0 | 1 |  🟦 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 11
+    bar [10,5,2,1]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Finance / banque | 4 | 22,2% | ██████████ |
+| Gouvernement / administration | 3 | 16,7% | ████████ |
+| Santé / médical | 3 | 16,7% | ████████ |
+| Éducation / universités | 2 | 11,1% | █████ |
+| Technologies / informatique | 2 | 11,1% | █████ |
+| Agriculture / agro-industrie | 1 | 5,6% | ██ |
+| Énergie / services publics | 1 | 5,6% | ██ |
+| Industrie / fabrication | 1 | 5,6% | ██ |
+| Transport / logistique | 1 | 5,6% | ██ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| lockbit5 | 3 | ██████████ |
+| qilin | 3 | ██████████ |
+| dragonforce | 2 | ███████ |
+| nova | 2 | ███████ |
+| GhostVector (source account) | 1 | ███ |
+| KaruHunters | 1 | ███ |
+| LindaBF, post published on a cybercriminal forum (RaidForums) | 1 | ███ |
+| camillabf, post published on a cybercriminal forum (RaidForums) | 1 | ███ |
+| devman | 1 | ███ |
+| direwolf | 1 | ███ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 lockbit5 (3 attaques)

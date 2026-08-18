@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 
 # CTI Report: Cyber attacks in Africa - April 2025
 👉🏾 [**French version available here**](README_FR.md)
@@ -100,6 +100,72 @@ pie title Breakdown by country (April 2025)
     "🇲🇷 Mauritania" : 1
     "🇹🇳 Tunisia" : 1
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Egypt | 4 | 1 | 5 | 🟧🟧🟧🟧 🟦 |
+| 🇲🇦 Morocco | 0 | 4 | 4 |  🟦🟦🟦🟦 |
+| 🇩🇿 Algeria | 0 | 3 | 3 |  🟦🟦🟦 |
+| 🇿🇦 South Africa | 2 | 0 | 2 | 🟧🟧 |
+| 🇲🇷 Mauritania | 0 | 1 | 1 |  🟦 |
+| 🇸🇳 Senegal | 0 | 1 | 1 |  🟦 |
+| 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 7
+    "Leaks and access" : 10
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 14 | 5 | 9 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 2 | 2 | 0 | 🟧🟧 |
+| West and Central Africa | 1 | 0 | 1 |  🟦 |
+| East Africa | 0 | 0 | 0 |  |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 15
+    bar [14,2,1,0]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 6 | 35.3% | ██████████ |
+| Finance / Banking | 4 | 23.5% | ███████ |
+| Technology / IT | 2 | 11.8% | ███ |
+| Agriculture / Agribusiness | 1 | 5.9% | ██ |
+| Education / University | 1 | 5.9% | ██ |
+| Healthcare / Medical | 1 | 5.9% | ██ |
+| Manufacturing / Industry | 1 | 5.9% | ██ |
+| Professional / Business Services | 1 | 5.9% | ██ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| Phantom Atlas | 3 | ██████████ |
+| Jabaroot DZ | 2 | ███████ |
+| devman | 2 | ███████ |
+| B4baYega | 1 | ███ |
+| Killer_Bee | 1 | ███ |
+| cicada3301 | 1 | ███ |
+| crypto24 | 1 | ███ |
+| dragonforce | 1 | ███ |
+| gunra | 1 | ███ |
+| nightspire | 1 | ███ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed attacks by ransomware group
 
 ### 4.1 Jabaroot DZ (2 attacks)

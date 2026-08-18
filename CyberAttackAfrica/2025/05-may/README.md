@@ -1,4 +1,5 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Period](https://img.shields.io/badge/Period-2025-blue)
 
 # CTI Report: Cyber Attacks in Africa - May 2025
 👉🏾 [**French version available here**](./README_FR.md)
@@ -101,6 +102,75 @@ pie title Breakdown by country (May 2025)
     "🇨🇲 Cameroon" : 1
     "🇹🇬 Togo" : 1
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇿🇦 South Africa | 9 | 0 | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 🇲🇷 Mauritania | 0 | 6 | 6 |  🟦🟦🟦🟦🟦🟦 |
+| 🇩🇿 Algeria | 0 | 1 | 1 |  🟦 |
+| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
+| 🇨🇲 Cameroon | 1 | 0 | 1 | 🟧 |
+| 🇪🇬 Egypt | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 13
+    "Leaks and access" : 8
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 8 | 1 | 7 | 🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 10 | 10 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| West and Central Africa | 2 | 1 | 1 | 🟧 🟦 |
+| East Africa | 1 | 1 | 0 | 🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 11
+    bar [8,10,2,1]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Finance / Banking | 8 | 38.1% | ██████████ |
+| Technology / IT | 4 | 19.0% | █████ |
+| Healthcare / Medical | 2 | 9.5% | ██ |
+| Education / University | 1 | 4.8% | █ |
+| Energy / Utilities | 1 | 4.8% | █ |
+| Government / Administration | 1 | 4.8% | █ |
+| Manufacturing / Industry | 1 | 4.8% | █ |
+| Professional / Business Services | 1 | 4.8% | █ |
+| Retail / E-commerce | 1 | 4.8% | █ |
+| Transport / Logistics | 1 | 4.8% | █ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| devman | 6 | ██████████ |
+| kill9 | 6 | ██████████ |
+| Datacarry | 1 | ██ |
+| Phantom Atlas | 1 | ██ |
+| arkana | 1 | ██ |
+| cache | 1 | ██ |
+| everest | 1 | ██ |
+| incransom | 1 | ██ |
+| killsec | 1 | ██ |
+| nightspire | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed Attacks by Threat Actor
 
 ### 4.1 devman (6 attacks)

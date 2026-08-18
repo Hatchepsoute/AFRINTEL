@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 
 # Rapport CTI : Cyberattaques en Afrique - Février 2025
 👉🏾 [**English version available here**](README.md)
@@ -83,6 +83,63 @@ pie title Répartition par pays
     "🇳🇦 Namibie" : 1
 ```
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Égypte | 3 | 0 | 3 | 🟧🟧🟧 |
+| 🇬🇭 Ghana | 1 | 0 | 1 | 🟧 |
+| 🇲🇦 Maroc | 1 | 0 | 1 | 🟧 |
+| 🇳🇦 Namibie | 1 | 0 | 1 | 🟧 |
+| 🇿🇦 Afrique du Sud | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 8
+    "Fuites et accès" : 0
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 4 | 4 | 0 | 🟧🟧🟧🟧 |
+| Afrique australe | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 1 | 1 | 0 | 🟧 |
+| Afrique de l’Est | 0 | 0 | 0 |  |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 5
+    bar [4,3,1,0]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Technologies / informatique | 3 | 37,5% | ██████████ |
+| Finance / banque | 2 | 25,0% | ███████ |
+| Gouvernement / administration | 2 | 25,0% | ███████ |
+| Transport / logistique | 1 | 12,5% | ███ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| killsec | 2 | ██████████ |
+| ransomhub | 2 | ██████████ |
+| akira | 1 | █████ |
+| flocker | 1 | █████ |
+| fog | 1 | █████ |
+| hunter | 1 | █████ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 ransomhub (2 attaques)

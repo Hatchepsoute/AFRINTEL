@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 # Rapport CTI : Cyberattaques en Afrique - Août 2025 (13 victimes)
 👉🏾 [**English version available here**](./README.md)
 
@@ -90,6 +90,72 @@ xychart-beta
     y-axis "Nombre d'attaques" 0 --> 4
     bar [3, 2, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇿🇦 Afrique du Sud | 2 | 1 | 3 | 🟧🟧 🟦 |
+| 🇹🇳 Tunisie | 1 | 1 | 2 | 🟧 🟦 |
+| 🇩🇿 Algérie | 1 | 0 | 1 | 🟧 |
+| 🇪🇬 Égypte | 0 | 1 | 1 |  🟦 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇲🇺 Maurice | 1 | 0 | 1 | 🟧 |
+| 🇲🇦 Maroc | 0 | 1 | 1 |  🟦 |
+| 🇳🇬 Nigeria | 0 | 1 | 1 |  🟦 |
+| 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
+| 🇺🇬 Ouganda | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 7
+    "Fuites et accès" : 6
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 5 | 2 | 3 | 🟧🟧 🟦🟦🟦 |
+| Afrique australe | 4 | 3 | 1 | 🟧🟧🟧 🟦 |
+| Afrique de l’Ouest et centrale | 2 | 0 | 2 |  🟦🟦 |
+| Afrique de l’Est | 2 | 2 | 0 | 🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 6
+    bar [5,4,2,2]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Technologies / informatique | 6 | 46,2% | ██████████ |
+| Finance / banque | 2 | 15,4% | ███ |
+| Gouvernement / administration | 2 | 15,4% | ███ |
+| Transport / logistique | 2 | 15,4% | ███ |
+| Commerce / e-commerce | 1 | 7,7% | ██ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| qilin | 3 | ██████████ |
+| BIGBROTHER | 1 | ███ |
+| Chucky_BF | 1 | ███ |
+| GhostCrawl | 1 | ███ |
+| KaruHunters | 1 | ███ |
+| N1KA | 1 | ███ |
+| RainbowDF | 1 | ███ |
+| akira | 1 | ███ |
+| direwolf | 1 | ███ |
+| incransom | 1 | ███ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe/acteur
 
 ### 4.1 qilin (3 attaques)

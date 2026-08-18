@@ -1009,7 +1009,7 @@ def find_month_dirs(year_path: Path) -> List[str]:
     return [child.name for child in sorted(year_path.iterdir()) if child.is_dir() and re.match(r"^\d{2}-", child.name)]
 
 
-def process_full_year_bundle(repo: Path, year: str, output_root: Optional[Path] = None) -> List[Path]:
+def process_full_year_bundle(repo: Path, year: str, github_base: str, output_root: Optional[Path] = None) -> List[Path]:
     """Merge all monthly STIX bundles for a year into two annual bundles (EN/FR).
 
     Unlike the H1 bundle, this does not synthesize a combined annual report
@@ -1052,6 +1052,40 @@ def process_full_year_bundle(repo: Path, year: str, output_root: Optional[Path] 
         )
         incident_count = sum(obj.get("type") == "incident" for obj in objects)
         report_count = sum(obj.get("type") == "report" for obj in objects)
+
+        annual_path = year_path / ("README.md" if language == "en" else "README_FR.md")
+        if annual_path.exists():
+            annual_source = f"CyberAttackAfrica/{year}/{annual_path.name}"
+            annual_report = {
+                "type": "report",
+                "spec_version": "2.1",
+                "id": stix_id("report", f"{year}:annual:report:{language}"),
+                "created": now_iso(),
+                "modified": now_iso(),
+                "name": f"AFRINTEL annual CTI report - {year}" if language == "en" else f"Rapport CTI annuel AFRINTEL - {year}",
+                "description": clean_report_markdown(annual_path.read_text(encoding="utf-8")),
+                "lang": language,
+                "published": f"{year}-12-31T23:59:59Z",
+                "report_types": ["threat-report"],
+                "labels": ["afrintel", "africa", "annual", f"annual-{year}", language, "annual-report", "cti-report", "statistics-report", "osint"],
+                "created_by_ref": AFRINTEL_ID,
+                "object_marking_refs": [TLP_CLEAR_ID],
+                "external_references": [{"source_name": f"AFRINTEL {annual_path.name}", "url": f"{github_base.rstrip(chr(47))}/{annual_source}"}],
+                "object_refs": [obj["id"] for obj in objects],
+                "x_afrintel_source_path": annual_source,
+                "x_afrintel_report_kind": "annual-cti",
+                "x_afrintel_author_ref": AFRINTEL_AUTHOR_ID,
+                "x_afrintel_comparison_periods": [f"{year}-01-01", f"{year}-12-31"],
+                "x_afrintel_total_incidents": incident_count,
+                "x_afrintel_ransomware_count": sum(obj.get("type") == "incident" and "ransomware" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_data_leak_count": sum(obj.get("type") == "incident" and "data-leak" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_access_sale_count": sum(obj.get("type") == "incident" and "access-sale" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_defacement_count": sum(obj.get("type") == "incident" and "defacement" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_victim_identity_count": victim_count,
+                "x_afrintel_months_covered": month_dirs,
+            }
+            objects.append(annual_report)
+            report_count += 1
 
         bundle = {
             "type": "bundle",
@@ -1101,7 +1135,7 @@ def main() -> int:
             print("[ERROR] --full-year requires --year.", file=sys.stderr)
             return 2
         try:
-            outs = process_full_year_bundle(repo, args.year, output_root)
+            outs = process_full_year_bundle(repo, args.year, args.github_base, output_root)
             for out in outs:
                 print(f"[OK] Generated and validated: {out}")
             print(f"Generated {len(outs)} bundle(s).")

@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 # CTI Report: Cyber attacks in Africa - June 2025
 👉🏾 [**French version available here**](./README_FR.md)
 
@@ -105,6 +105,70 @@ pie title Breakdown by country (June 2025)
     "🇩🇯 Djibouti" : 1
 ```
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇩🇿 Algeria | 0 | 7 | 7 |  🟦🟦🟦🟦🟦🟦🟦 |
+| 🇲🇦 Morocco | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇿🇦 South Africa | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇯 Djibouti | 0 | 1 | 1 |  🟦 |
+| 🇪🇬 Egypt | 0 | 1 | 1 |  🟦 |
+| 🇬🇭 Ghana | 0 | 1 | 1 |  🟦 |
+| 🇲🇺 Mauritius | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisia | 0 | 1 | 1 |  🟦 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 5
+    "Leaks and access" : 16
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 16 | 2 | 14 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Southern Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| West and Central Africa | 1 | 0 | 1 |  🟦 |
+| East Africa | 1 | 0 | 1 |  🟦 |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 17
+    bar [16,3,1,1]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 11 | 52.4% | ██████████ |
+| Finance / Banking | 3 | 14.3% | ███ |
+| Professional / Business Services | 3 | 14.3% | ███ |
+| Technology / IT | 3 | 14.3% | ███ |
+| Retail / E-commerce | 1 | 4.8% | █ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| Keymous | 2 | ██████████ |
+| Phantom Atlas | 2 | ██████████ |
+| mrdump, post published on a cybercriminal forum (DarkForums) | 2 | ██████████ |
+| nightspire | 2 | ██████████ |
+| warlock | 2 | ██████████ |
+| 0x0day, post published on the cybercriminal forum DarkForums | 1 | █████ |
+| B4baYega | 1 | █████ |
+| Evil_BYTE_Officiel | 1 | █████ |
+| KickingPigs | 1 | █████ |
+| MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums) | 1 | █████ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Detailed attacks by group/actor
 
 ### 4.1 NightSpire (2 attacks)

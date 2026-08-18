@@ -1,4 +1,5 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
+![Période](https://img.shields.io/badge/Période-2025-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
@@ -127,6 +128,77 @@ title Incidents de ransomware par pays (Octobre 2025)
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇲🇦 Maroc | 3 | 2 | 5 | 🟧🟧🟧 🟦🟦 |
+| 🇿🇦 Afrique du Sud | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇪🇬 Égypte | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇿 Algérie | 1 | 0 | 1 | 🟧 |
+| 🇨🇩 RDC | 1 | 0 | 1 | 🟧 |
+| 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
+| 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisie | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 17
+    "Fuites et accès" : 2
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 9 | 7 | 2 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Afrique australe | 4 | 4 | 0 | 🟧🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique de l’Est | 3 | 3 | 0 | 🟧🟧🟧 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 10
+    bar [9,4,3,3]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Finance / banque | 4 | 21,1% | ██████████ |
+| Transport / logistique | 4 | 21,1% | ██████████ |
+| Agriculture / agro-industrie | 2 | 10,5% | █████ |
+| Éducation / universités | 2 | 10,5% | █████ |
+| Gouvernement / administration | 2 | 10,5% | █████ |
+| Services professionnels | 2 | 10,5% | █████ |
+| Énergie / services publics | 1 | 5,3% | ██ |
+| Santé / médical | 1 | 5,3% | ██ |
+| Technologies / informatique | 1 | 5,3% | ██ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| incransom | 4 | ██████████ |
+| qilin | 3 | ████████ |
+| tengu | 2 | █████ |
+| DBhacker_BF | 1 | ██ |
+| EternalRed | 1 | ██ |
+| beast | 1 | ██ |
+| blackshrantac | 1 | ██ |
+| brotherhood | 1 | ██ |
+| clop | 1 | ██ |
+| medusa | 1 | ██ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe ransomware
 
 ### 4.1 incransom (4 attaques)

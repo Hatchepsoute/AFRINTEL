@@ -1,4 +1,5 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
+![Period](https://img.shields.io/badge/Period-2025-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
@@ -119,6 +120,71 @@ pie title Breakdown by country (November 2025)
 ```
 ---
 
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Standard global overview
+
+| Country | Ransomware | Leaks / access | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇲🇦 Morocco | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
+| 🇨🇮 Ivory Coast | 1 | 1 | 2 | 🟧 🟦 |
+| 🇿🇦 South Africa | 1 | 1 | 2 | 🟧 🟦 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
+
+```pie showData
+    title Incident types
+    "Ransomware" : 10
+    "Leaks and access" : 4
+```
+
+### Geographic distribution by region
+
+| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| North Africa | 8 | 6 | 2 | 🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| Southern Africa | 3 | 2 | 1 | 🟧🟧 🟦 |
+| West and Central Africa | 3 | 2 | 1 | 🟧🟧 🟦 |
+| East Africa | 0 | 0 | 0 |  |
+
+```mermaid
+xychart-beta
+    title "Occurrences by region"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 9
+    bar [8,3,3,0]
+```
+Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+
+### Sector distribution
+
+| Sector | Records | Share | Activity |
+| :--- | ---: | ---: | :--- |
+| Government / Administration | 3 | 21.4% | ██████████ |
+| Technology / IT | 3 | 21.4% | ██████████ |
+| Finance / Banking | 2 | 14.3% | ███████ |
+| Transport / Logistics | 2 | 14.3% | ███████ |
+| Healthcare / Medical | 1 | 7.1% | ███ |
+| Manufacturing / Industry | 1 | 7.1% | ███ |
+| Professional / Business Services | 1 | 7.1% | ███ |
+| Retail / E-commerce | 1 | 7.1% | ███ |
+
+### Most visible actors
+
+| Actor / Group | Records | Activity |
+| :--- | ---: | :--- |
+| clop | 3 | ██████████ |
+| nightspire | 3 | ██████████ |
+| RL000 | 1 | ███ |
+| Spirigatito, post published on a cybercriminal forum | 1 | ███ |
+| Unknown | 1 | ███ |
+| anisanas2 | 1 | ███ |
+| benzona | 1 | ███ |
+| qilin | 1 | ███ |
+| spacebears | 1 | ███ |
+| stormous | 1 | ███ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Attack details by ransomware group
 ### 4.1 clop (3 attacks)
 * **2025-11-06**: ELSEWEDYELECTRIC.COM (Egypt, Tech/Industry) - Claimed & Leaked.

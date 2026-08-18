@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Période](https://img.shields.io/badge/Période-2025-blue)
 # Rapport CTI : Cyberattaques en Afrique - Juin 2025
 👉🏾 [**English version available here**](./README.md)
 
@@ -102,6 +102,70 @@ pie title Répartition par pays (Juin 2025)
     "🇹🇳 Tunisie" : 1
     "🇩🇯 Djibouti" : 1
 ```
+
+<!-- AFRINTEL_CURRENT_MODEL_START -->
+### 3.4 Vue globale standardisée
+
+| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| 🇩🇿 Algérie | 0 | 7 | 7 |  🟦🟦🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| 🇿🇦 Afrique du Sud | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇯 Djibouti | 0 | 1 | 1 |  🟦 |
+| 🇪🇬 Égypte | 0 | 1 | 1 |  🟦 |
+| 🇬🇭 Ghana | 0 | 1 | 1 |  🟦 |
+| 🇲🇺 Maurice | 1 | 0 | 1 | 🟧 |
+| 🇹🇳 Tunisie | 0 | 1 | 1 |  🟦 |
+
+```pie showData
+    title Types d’incidents
+    "Ransomware" : 5
+    "Fuites et accès" : 16
+```
+
+### Répartition géographique par région
+
+| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| :--- | ---: | ---: | ---: | :--- |
+| Afrique du Nord | 16 | 2 | 14 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Afrique australe | 3 | 3 | 0 | 🟧🟧🟧 |
+| Afrique de l’Ouest et centrale | 1 | 0 | 1 |  🟦 |
+| Afrique de l’Est | 1 | 0 | 1 |  🟦 |
+
+```mermaid
+xychart-beta
+    title "Occurrences par région"
+    x-axis ["1","2","3","4"]
+    y-axis "Occurrences" 0 --> 17
+    bar [16,3,1,1]
+```
+Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+
+### Répartition sectorielle
+
+| Secteur | Fiches | Part | Activité |
+| :--- | ---: | ---: | :--- |
+| Gouvernement / administration | 11 | 52,4% | ██████████ |
+| Finance / banque | 3 | 14,3% | ███ |
+| Services professionnels | 3 | 14,3% | ███ |
+| Technologies / informatique | 3 | 14,3% | ███ |
+| Commerce / e-commerce | 1 | 4,8% | █ |
+
+### Acteurs / groupes les plus présents
+
+| Acteur / Groupe | Fiches | Activité |
+| :--- | ---: | :--- |
+| Keymous | 2 | ██████████ |
+| Phantom Atlas | 2 | ██████████ |
+| mrdump, post published on a cybercriminal forum (DarkForums) | 2 | ██████████ |
+| nightspire | 2 | ██████████ |
+| warlock | 2 | ██████████ |
+| 0x0day, post published on the cybercriminal forum DarkForums | 1 | █████ |
+| B4baYega | 1 | █████ |
+| Evil_BYTE_Officiel | 1 | █████ |
+| KickingPigs | 1 | █████ |
+| MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums) | 1 | █████ |
+<!-- AFRINTEL_CURRENT_MODEL_END -->
 ## 4. Détail des attaques par groupe/acteur
 ### 4.1 NightSpire (2 attaques)
 - **02/06/2025** : ANCFCC (Maroc, gouvernement) – 3,1 Go de données exfiltrées (10 080 certificats fonciers).
