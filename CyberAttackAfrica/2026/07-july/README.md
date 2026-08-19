@@ -361,10 +361,12 @@ No ATT&CK technique is asserted as directly observed from endpoint or network te
 
 | Priority | Detection objective | Telemetry and correlation |
 | :--- | :--- | :--- |
-| T1078 coverage | Detect abnormal use of valid or hijacked accounts | IAM, webmail, VPN and SSO logs; impossible travel, new device, unusual ASN, MFA reset, session-token creation and privileged sign-in outside baseline |
+| T1078 coverage | Detect abnormal use of valid or hijacked accounts | IAM, webmail, VPN and SSO logs; impossible travel *(e.g., Casablanca at 10:00, then Johannesburg at 10:20)*, new device *(first login from an unregistered laptop or phone)*, unusual ASN, MFA reset, session-token creation and privileged sign-in outside baseline |
 | T1213 coverage | Detect unusual repository access and bulk collection | Database audit, application logs, file access and DLP; high-volume queries, full-table reads, bulk exports, archive creation and access outside normal role or schedule |
 | Privileged change | Detect preparation for persistence or lateral access | IAM, Active Directory, Microsoft 365 and EDR; new administrators, role grants, mailbox forwarding, new OAuth consent and unexpected remote sessions |
 | Data exposure response | Contain confirmed or plausible sensitive-data disclosure | Revoke exposed sessions and keys, preserve evidence, determine affected datasets, notify the responsible legal and response teams, and monitor targeted fraud |
+
+These are detection signals, not proof of compromise; VPNs, proxies, mobile networks and legitimate device changes can create false positives.
 
 Maintain separate triage and response playbooks for ransomware listings, data leaks, access sales and reposts. Do not treat a victim listing as proof of encryption.
 

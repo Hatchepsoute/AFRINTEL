@@ -360,10 +360,12 @@ Aucune technique ATT&CK n’est présentée comme directement observée dans une
 
 | Priorité | Objectif de détection | Télémétrie et corrélation |
 | :--- | :--- | :--- |
-| Couverture T1078 | Détecter l’usage anormal de comptes valides ou détournés | Journaux IAM, webmail, VPN et SSO ; voyage impossible, nouvel appareil, ASN inhabituel, réinitialisation MFA, création de jeton de session et connexion privilégiée hors profil |
+| Couverture T1078 | Détecter l’usage anormal de comptes valides ou détournés | Journaux IAM, webmail, VPN et SSO ; voyage impossible *(ex. Casablanca à 10 h 00, puis Johannesburg à 10 h 20)*, nouvel appareil *(première connexion depuis un ordinateur portable ou téléphone non enregistré)*, ASN inhabituel, réinitialisation MFA, création de jeton de session et connexion privilégiée hors profil |
 | Couverture T1213 | Détecter les accès inhabituels aux référentiels et la collecte massive | Audit des bases, journaux applicatifs, accès fichiers et DLP ; requêtes volumineuses, lecture de tables complètes, exports massifs, création d’archives et accès hors rôle ou horaire habituel |
 | Modification privilégiée | Détecter une préparation de persistance ou d’accès latéral | IAM, Active Directory, Microsoft 365 et EDR ; nouvel administrateur, attribution de rôle, transfert de messagerie, nouveau consentement OAuth et session distante inattendue |
 | Réponse à l’exposition | Contenir une divulgation plausible ou confirmée de données sensibles | Révoquer sessions et clés exposées, préserver les preuves, déterminer les jeux affectés, notifier les équipes juridiques et de réponse, surveiller la fraude ciblée |
+
+Ces signaux ne constituent pas une preuve de compromission ; les VPN, proxys, réseaux mobiles et changements légitimes d’appareil peuvent générer des faux positifs.
 
 Maintenir des procédures de triage et de réponse distinctes pour les publications ransomware, les fuites, les ventes d’accès et les republications. Ne pas traiter une publication de victime comme une preuve de chiffrement.
 
