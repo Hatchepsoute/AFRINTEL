@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-July%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-42-critical)
+![Incidents](https://img.shields.io/badge/Incidents-42-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-18-red)
 ![Data Leaks](https://img.shields.io/badge/Data%20Leaks-18-orange)
 ![Access Sales](https://img.shields.io/badge/Access%20Sales-6-yellow)
@@ -14,7 +14,7 @@
 
 ## Methodology note
 
-These statistics are derived from the July 2026 victim cards. Each card is counted once in the global total. One identity-document card concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incident records. The MTN record is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
+These statistics derive from [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), the single source of truth for July 2026. Each card is counted once in the global total. One identity-document card concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incident records. The MTN record is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
 
 Claimed volumes are not treated as confirmed facts. Personal data, credentials and download links are not reproduced.
 
@@ -32,6 +32,9 @@ Claimed volumes are not treated as confirmed facts. Personal data, credentials a
 | Most represented countries | Egypt and Tunisia, 7 each |
 | Main ransomware country | South Africa, 5 |
 | Main leak and access country | Tunisia, 7 |
+| Status profile | 21 unverified; 20 sample published; 1 fully published |
+| Confidence profile | 22 Low; 8 Medium; 9 High; 3 Very High |
+| Impact profile | 12 Level 2; 21 Level 3; 9 Level 4 |
 
 ### Global breakdown
 
@@ -119,23 +122,32 @@ xychart-beta
 | Sector | Records | Share | Chart |
 |---|---:|---:|---:|
 | Government / Administration | 11 | 26.2% | ███████████ |
-| Telecommunications | 5 | 11.9% | █████ |
+| Telecommunications | 4 | 9.5% | ████ |
 | Healthcare / Medical | 4 | 9.5% | ████ |
-| Education / Universities | 3 | 7.1% | ███ |
+| Engineering / Construction | 3 | 7.1% | ███ |
+| Education / University | 3 | 7.1% | ███ |
 | E-commerce / Retail | 3 | 7.1% | ███ |
-| Technology / Engineering | 3 | 7.1% | ███ |
 | Oil and Energy | 2 | 4.8% | ██ |
-| Single-occurrence sectors (identified) | 11 | 26.2% | ███████████ |
+| Investment Holding / Energy | 1 | 2.4% | █ |
+| Finance / Banking | 1 | 2.4% | █ |
+| Transport / Logistics | 1 | 2.4% | █ |
+| Real Estate | 1 | 2.4% | █ |
+| Mining | 1 | 2.4% | █ |
+| Accounting / Audit | 1 | 2.4% | █ |
+| Travel / Events | 1 | 2.4% | █ |
+| Chemical Industry | 1 | 2.4% | █ |
+| Security Services | 1 | 2.4% | █ |
+| Gaming / Entertainment | 1 | 2.4% | █ |
+| Rubber / Agriculture | 1 | 2.4% | █ |
+| Technology / IT | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
 ~~~mermaid
 xychart-beta
-    title "Sector distribution - July 2026"
-    x-axis ["Government","Telecommunications","Healthcare","Education","E-commerce","Technology","Oil and Energy","Single-occurrence sectors"]
+    title "Top represented sectors - July 2026"
+    x-axis ["Government","Telecommunications","Healthcare","Engineering","Education","Retail","Energy"]
     y-axis "Records" 0 --> 12
-    bar [11,5,4,3,3,3,2,11]
+    bar [11,4,4,3,3,3,2]
 ~~~
-
-The single-sector group covers investment holding, finance, transport, real estate, mining, accounting, travel, chemical industry, security, gaming and rubber or agriculture records.
 
 ## 6. Most active threat actors and sources
 
@@ -143,11 +155,14 @@ The single-sector group covers investment holding, finance, transport, real esta
 |---|---:|---|
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |
+| CrowStealer | 2 | Data leaks |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Access sales and reposts |
 | TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Data leaks |
-| Other named sources | 27 | Mixed activity |
+| GreYyM3terr | 2 | Access sales |
+
+Twenty-three other named actors or source accounts occur once each and are excluded from the ranking rather than grouped into a residual category.
 
 ## 7. CTI trend analysis
 

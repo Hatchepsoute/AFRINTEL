@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (4 victimes)
+# Liste des victimes africaines de cyberattaques en août 2026 (6 victimes)
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -110,6 +110,60 @@
 
   La publication complète présente mpowa.mobi comme l'élément « 11/25 » d'une campagne en cours, décrivant un outil propriétaire (« CredHarvest V6 ») utilisé pour scanner et collecter en masse des instances Firebase Realtime Database mal configurées, et affirmant que des centaines de bases similaires ont déjà été récupérées par la même méthode. L'acteur propose à la fois la vente de cet outil de scan et des services d'intrusion/d'accès payants distincts sur le même forum. Cela indique que mpowa.mobi est une victime parmi une campagne plus large et systématique visant des déploiements Firebase mal configurés, et que des expositions comparables touchent vraisemblablement d'autres organisations africaines utilisant le même backend, indépendamment de tout ciblage spécifique à mpowa.mobi.
 
+### 17 août 2026
+#### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
+
+- **Date de publication initiale :** 17 août 2026
+- **Date de détection AFRINTEL :** 18 août 2026
+- **Acteur / Groupe :** exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse
+- **Secteur :** Ressources humaines / Recrutement
+- **Site web :** [snapstartalent.com](https://snapstartalent.com)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  SnapStar Talent est présentée dans la publication observée comme une plateforme kényane de recrutement détenant des profils de candidats, des dossiers de candidature et des enregistrements relatifs aux entreprises clientes.
+
+- **Analyse :**
+
+  **Observed :** AFRINTEL a analysé les deux fichiers d'échantillon fournis avec la publication au lieu de s'appuyer uniquement sur les captures du forum. Le fichier CSV contient 300 dossiers de candidature structurellement valides répartis sur 36 colonnes, sans ligne mal formée ni doublon exact ; le fichier TXT contient 300 blocs détaillés correspondants. Les 300 identifiants de candidature concordent entre les deux fichiers dans le même ordre, et chaque champ scalaire renseigné comparé entre les représentations CSV et TXT est cohérent. L'échantillon couvre 207 profils de candidats distincts et six valeurs d'employeur, avec des horodatages de candidature allant du 13 au 16 août 2026. Les fichiers contiennent des marqueurs internes répétés de l'environnement elevated-talent, tandis que la représentation TXT contient également des libellés SnapStar Talent répétés. Leurs empreintes SHA-256 sont 8b358e7efcebd5002687f6dab193be24cb7535ce77dec411359bf33ffd42a834 (CSV) et 31cfc806bd28aeab2d79dc23c07cff59c31881a120aa481edfd192b09c403741 (TXT).
+
+  Au niveau des profils uniques, les 207 profils contiennent une adresse email, un numéro de téléphone, une date de naissance, une valeur de salaire et une URL de CV. Des numéros nationaux d'identité ne sont présents que pour 11 profils (5,3 %), des URL d'entretien vidéo pour 50 profils (24,2 %) et des photographies de profil pour 41 profils (19,8 %). Des données de référence sont également présentes : 87 profils contiennent le nom d'un référent, 61 son adresse email et 74 son numéro de téléphone. Une date de naissance est objectivement incohérente car elle produit un âge de zéro an. L'échantillon ne confirme donc pas la formulation générale de l'acteur selon laquelle chaque dossier candidat contient un numéro national d'identité ou un entretien vidéo.
+
+  L'export au niveau des candidatures contient 299 URL de CV représentant 209 liens distincts et 78 URL vidéo représentant 57 liens distincts. Tous les liens CV et vidéo observés utilisent Firebase Storage et contiennent des paramètres média avec jeton. AFRINTEL n'a pas interrogé ces URL ni récupéré les documents liés ; leur validité actuelle n'est donc pas établie. Les candidatures répétées appartenant à un même profil sont cohérentes pour l'email, le téléphone, la date de naissance et le numéro national d'identité ; un profil présente une variation de nom et deux profils plusieurs URL de CV, ce qui est compatible avec des mises à jour ordinaires de profil ou de document plutôt qu'avec une incohérence généralisée.
+
+  **Assumption :** La correspondance exacte entre les fichiers CSV et TXT, les relations cohérentes entre candidatures et profils, les marqueurs internes propres à la cible, les horodatages récents et la structure homogène de Firebase Storage permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est un véritable jeu de données de recrutement lié à l'environnement elevated-talent/SnapStar Talent. L'échantillon soutient matériellement la revendication selon laquelle des données d'identité, de contact, d'emploi, de rémunération, de CV, de vidéo et de références tierces ont été exposées ou mises à disposition de l'acteur. Il ne valide pas les volumes annoncés pour le jeu complet. L'échantillon vérifié suffit à créer un risque élevé de fraude au recrutement, de phishing ciblé, d'usurpation, de détournement d'identité et d'atteinte à la vie privée ; les liens de CV et vidéos contenant des jetons créent un risque supplémentaire d'accès aux documents s'ils restent actifs.
+
+  **Unknown :** AFRINTEL n'a pas vérifié indépendamment l'accès Firestore prétendument non authentifié, la méthode d'extraction de l'acteur, les volumes annoncés de 93 462 profils, 83 237 candidatures et 176 795 documents, les 249,1 Go de fichiers, la présence de 83 entreprises clientes dans le jeu complet, ni une éventuelle réponse de SnapStar Talent. Les 300 candidatures les plus récentes constituent un échantillon non aléatoire ; leurs taux de complétude ne peuvent pas être extrapolés à l'ensemble du jeu proposé. L'incident reste donc classé comme une revendication accompagnée d'un échantillon publié, et non comme la confirmation de l'extraction complète de l'environnement de production. AFRINTEL ne reproduit aucun enregistrement personnel, lien de téléchargement, jeton d'URL, instruction de paiement ni coordonnée de l'acteur.
+
+### 18 août 2026
+#### 🇲🇺 Maurice - SpearFin Ltd
+
+- **Date de publication initiale :** 18 août 2026
+- **Date de détection AFRINTEL :** 18 août 2026
+- **Acteur / Groupe :** incransom
+- **Secteur :** Services financiers / Administration de fonds / Services aux entreprises
+- **Site web :** [spearfin.net](https://spearfin.net)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  SpearFin Ltd est présentée dans la publication observée comme un prestataire mauricien de services d'administration de fonds, de services aux entreprises, de conformité et de relations investisseurs. La source revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires ; AFRINTEL n'a pas vérifié ces chiffres indépendamment.
+
+- **Analyse :**
+
+  **Observed :** Les captures fournies montrent une publication attribuée à incransom qui nomme SpearFin Ltd, identifie `spearfin.net` et localise la cible à Maurice. La publication est datée du 18 août 2026 et affirme qu'une fuite est survenue le 26 juin 2026, pour un volume de 416 Go. Elle mentionne des accords de confidentialité, correspondances clients, dossiers KYC, pièces d'identité, certificats, documents d'investissement et d'actionnariat, audits LBC/AML, contrats, formulaires, relevés bancaires, éléments de paie, documents de prêt et registres d'administrateurs. La publication affiche plusieurs miniatures présentées comme des échantillons, comprenant des documents d'identité, d'entreprise, administratifs et financiers, et annonce une publication intégrale à venir. L'évaluation est limitée aux captures fournies ; les documents sous-jacents n'ont pas été consultés ni téléchargés.
+
+  **Assumption :** L'ensemble documentaire visible est globalement cohérent avec les activités attribuées à un administrateur de fonds et prestataire de services aux entreprises, ce qui soutient avec un niveau de confiance moyen le caractère spécifique de la revendication. Si les éléments sont authentiques, la combinaison de dossiers KYC, bancaires, de paie, de gouvernance d'entreprise et d'investissement créerait un risque élevé de fraude à l'identité, de compromission de messagerie professionnelle, de fraude au paiement, de phishing ciblé et d'atteinte à la confidentialité de tiers. Cette évaluation n'authentifie pas chaque miniature et n'établit pas l'exhaustivité de l'archive revendiquée.
+
+  **Unknown :** AFRINTEL n'a pas confirmé indépendamment l'accès non autorisé, l'exfiltration de données, le chiffrement par ransomware, une perturbation opérationnelle, le volume revendiqué de 416 Go, la date alléguée du 26 juin 2026, les chiffres financiers annoncés ni la publication d'une archive complète. Aucun communiqué de la victime ni élément technique indépendant n'a été fourni. La fiche documente donc une publication observée sur un site ransomware avec des échantillons visibles, et non une compromission ou une divulgation intégrale confirmée. AFRINTEL ne reproduit aucun nom de client, document d'identité, détail bancaire ni autre donnée personnelle ou confidentielle visible dans la source.
+
 ## Notes (non comptabilisées dans le total mensuel de victimes)
 
 ### 17 août 2026
@@ -118,4 +172,3 @@
 - **Référence :** initialement documenté comme incident distinct le 31 décembre 2025, voir `CyberAttackAfrica/2025/12-december/victims_FR.md`.
 - **Observation :** AFRINTEL a observé le même échantillon divulgué (mêmes champs, même unité organisationnelle « nl_KETRACO_Newsletter_Unit », et la même anomalie de valeur de mot de passe partagée entre les enregistrements) republié sur le forum DarkForums sous l'alias Linda2000, environ huit mois après la publication initiale sur RaidForums attribuée à LindaBF.
 - **Évaluation :** ce constat est interprété comme une republication du même jeu de données plutôt que comme une nouvelle compromission, et n'est pas comptabilisé comme un incident supplémentaire d'août 2026. Il indique que la donnée continue de circuler et pourrait encore être échangée entre acteurs malveillants. AFRINTEL ne reproduit aucun nom d'utilisateur, adresse email, valeur de mot de passe, lien de téléchargement ni enregistrement de l'échantillon.
-

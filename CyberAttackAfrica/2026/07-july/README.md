@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-July%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-42-critical)
+![Incidents](https://img.shields.io/badge/Incidents-42-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-18-red)
 ![Data Leaks](https://img.shields.io/badge/Data%20Leaks-18-orange)
 ![Access Sales](https://img.shields.io/badge/Access%20Sales-6-yellow)
@@ -15,24 +15,40 @@
 
 ## 1. Executive summary
 
-AFRINTEL recorded **42 incident records** in July 2026, involving **12 African countries**:
+AFRINTEL recorded **42 Africa-related incident records** in July 2026, involving **12 countries**:
 
 - **18 ransomware claims**;
 - **18 data leaks**;
 - **6 access-sale offers**;
 - **0 defacements**.
 
-Egypt and Tunisia led the geographic count with seven occurrences each. Morocco and South Africa followed with six each. The month was split between ransomware visibility, data-leak publications and access brokering; no single actor dominated the dataset.
+Egypt and Tunisia led the geographic count with seven occurrences each, followed by Morocco and South Africa with six. Government and administration accounted for 11 records, the largest sector group. No single actor dominated: arcusmedia led with four ransomware listings and dragonforce followed with three.
 
-The report combines leak-site listings, underground-forum posts and locally reviewed samples. A criminal publication remains a claim unless independent evidence supports it. The strongest records are those supported by structured files, coherent screenshots or visible administrative interfaces.
+Evidence strength varied materially: **21 records were unverified claims**, **20 included a published sample**, and **1 was recorded as fully published**. Nine records reached Impact Level 4. The most substantiated high-impact cases included Nerasolgh, Tayara.tn and Distamed, where AFRINTEL reviewed structured material; the advertised full volumes and intrusion paths were not necessarily established.
+
+The main defensive priorities are privileged and webmail account protection, monitoring of bulk database exports, and rapid handling of identity, health, education and government data exposure. Full incident cards are available in [`victims.md`](./victims.md).
 
 ## 2. Scope and methodology
 
-All figures derive from [`victims.md`](./victims.md), the monthly source of truth. Each card is counted once in the incident total, using AFRINTEL’s detection date.
+All figures derive from [`victims.md`](./victims.md), the single monthly source of truth. The French cards are a translation and are not recounted separately.
+
+- **Geographic scope:** Africa's 54 countries; only victims, operations or affected datasets with an explicit African link are included.
+- **Collection period:** 1 to 31 July 2026, based on the AFRINTEL detection date recorded in each card.
+- **Sources:** ransomware leak sites, cybercriminal-forum posts, public OSINT and locally reviewed screenshots or structured samples.
+- **Inclusion:** one record per documented claim or incident; distinct repeated claims remain separate only when the actor, date or evidence differs.
+- **Classification:** Ransomware, Data Leak, Access Sale and Defacement remain separate types.
 
 The geographic table contains **43 country occurrences rather than 42 incidents**. One identity-photo record concerns both Nigeria and Côte d’Ivoire and is therefore counted in both country views. The MTN record is attributed to South Africa with reservation; the national entity is not independently confirmed.
 
 Claimed volumes are not treated as established facts. Download links, credentials, personal data and secrets are not reproduced in this report.
+
+### Evidence profile
+
+| Dimension | Distribution | Total |
+| :--- | :--- | ---: |
+| Status | 21 Claim - Unverified; 20 Claim - Data Sample Published; 1 Data Fully Published | 42 |
+| Confidence | 22 Low; 8 Medium; 9 High; 3 Very High | 42 |
+| Impact | 12 Level 2; 21 Level 3; 9 Level 4 | 42 |
 
 ## 3. Global overview
 
@@ -53,7 +69,7 @@ Claimed volumes are not treated as established facts. Download links, credential
 | **Total geographic occurrences** | **43** | - |
 
 ```mermaid
-pie
+pie showData
     title Geographic occurrences - July 2026
     "Egypt" : 7
     "Tunisia" : 7
@@ -173,27 +189,44 @@ xychart-beta
 
 
 ```mermaid
-pie
+pie showData
     title Incident type breakdown - July 2026
     "Ransomware" : 18
     "Data leaks" : 18
     "Access sales" : 6
 ```
 
-Ransomware publications were mainly associated with **arcusmedia**, **dragonforce**, **krybit** and **TheGentlemen**. These are listings or claims; they do not automatically establish encryption, exfiltration or operational disruption.
+### 4.1 Ransomware
 
-The leak side was more varied: identity documents, medical data, university accounts, government files and commercial databases. The access offers involved alleged Fortinet, webmail and government-portal access.
+| Indicator | Result |
+| :--- | :--- |
+| Records | 18 |
+| Leading countries | South Africa 5; Egypt, Morocco, Nigeria and Côte d'Ivoire 2 each |
+| Most represented groups | arcusmedia 4; dragonforce 3; krybit 2; TheGentlemen 2 |
+| Evidence limit | Most records are victim listings without independent proof of encryption, exfiltration or disruption |
+
+The ransomware total represents observed victim publications attributed to ransomware groups. The report does not infer encryption or operational impact from a listing alone.
+
+### 4.2 Data leaks and access sales
+
+| Category | Records | Geographic occurrences | Main observations |
+| :--- | ---: | ---: | :--- |
+| Data Leak | 18 | 19 | Identity, medical, education, government and commercial data |
+| Access Sale | 6 | 6 | Webmail, Fortinet and administrative-system access offers |
+| **Combined** | **24** | **25** | One data-leak card covers Nigeria and Côte d'Ivoire |
+
+Tunisia led this combined view with seven occurrences, followed by Egypt with five and Morocco and Algeria with four each. Evidence ranged from unsupported sale posts to structured exports and visible administration interfaces.
 
 ## 5. Sectoral impact
 
 | Sector | Records | Share | Chart |
 | :--- | ---: | ---: | :--- |
 | Government / Administration | 11 | 26.2% | ███████████ |
-| Telecommunications | 5 | 11.9% | █████ |
+| Telecommunications | 4 | 9.5% | ████ |
 | Healthcare / Medical | 4 | 9.5% | ████ |
-| Education / Universities | 3 | 7.1% | ███ |
+| Engineering / Construction | 3 | 7.1% | ███ |
+| Education / University | 3 | 7.1% | ███ |
 | E-commerce / Retail | 3 | 7.1% | ███ |
-| Technology / Engineering | 3 | 7.1% | ███ |
 | Oil and Energy | 2 | 4.8% | ██ |
 | Investment Holding / Energy | 1 | 2.4% | █ |
 | Finance / Banking | 1 | 2.4% | █ |
@@ -206,42 +239,54 @@ The leak side was more varied: identity documents, medical data, university acco
 | Security Services | 1 | 2.4% | █ |
 | Gaming / Entertainment | 1 | 2.4% | █ |
 | Rubber / Agriculture | 1 | 2.4% | █ |
+| Technology / IT | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
 
 ```mermaid
 xychart-beta
-    title "Sector distribution - July 2026"
-    x-axis ["Govt","Tele","Heal","Educ","Ecom","Tech","Ener","Unit"]
+    title "Top represented sectors - July 2026"
+    x-axis ["Govt","Tele","Health","Eng","Educ","Retail","Energy"]
     y-axis "Records" 0 --> 12
-    bar [11,5,4,3,3,3,2,11]
+    bar [11,4,4,3,3,3,2]
 ```
 
-Legend: Govt = Government; Tele = Telecommunications; Heal = Healthcare; Educ = Education; Ecom = E-commerce; Tech = Technology; Ener = Oil and Energy; Unit = Single-occurrence sectors
+Legend: Govt = Government / Administration; Tele = Telecommunications; Eng = Engineering / Construction; Educ = Education / University; Retail = E-commerce / Retail.
 
 Government and administration remained the largest sectoral grouping. The records covered public procurement, justice, employment, identity, land administration and public services, creating risks that extend beyond data disclosure into fraud and targeted impersonation.
 
 ## 6. Threat actors and sources
 
-| Actor / Group | Records | Main activity |
-| :--- | ---: | :--- |
-| arcusmedia | 4 | Ransomware |
-| dragonforce | 3 | Ransomware |
-| krybit | 2 | Ransomware |
-| BIGBROTHER | 2 | Access sale / reposting |
-| TheGentlemen | 2 | Ransomware |
-| Phantom Atlas | 2 | Data leak |
-| Other named sources | 27 | Mixed activity |
+| Actor / Group | Type | Records | Countries and principal targets |
+| :--- | :--- | ---: | :--- |
+| arcusmedia | Ransomware group | 4 | Kenya, Nigeria, South Africa, Morocco; energy, wellness, travel, engineering |
+| dragonforce | Ransomware group | 3 | South Africa, Botswana, Egypt; chemical industry, engineering, entertainment |
+| CrowStealer | Publication actor | 2 | Egypt; university accounts and medical laboratories |
+| krybit | Ransomware group | 2 | Côte d'Ivoire, South Sudan; healthcare and energy |
+| BIGBROTHER | Reposting / access-sale account | 2 | Tunisia; logistics and public administration |
+| TheGentlemen | Ransomware group | 2 | Egypt, Côte d'Ivoire; real estate and agriculture |
+| Phantom Atlas | Publication actor | 2 | Algeria; university and telecommunications data |
+| GreYyM3terr | Access seller | 2 | Tunisia; telecommunications webmail |
 
 
 ```mermaid
 xychart-beta
     title "Most active actors and sources - July 2026"
-    x-axis ["arcusmedia","dragonforce","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","Other sources"]
-    y-axis "Records" 0 --> 28
-    bar [4,3,2,2,2,2,27]
+    x-axis ["arcusmedia","dragonforce","CrowStealer","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","GreYyM3terr"]
+    y-axis "Records" 0 --> 5
+    bar [4,3,2,2,2,2,2,2]
 ```
 
-Frequency alone does not establish a coordinated campaign. The dataset combines ransomware groups, publication accounts, access brokers and reposters.
+Twenty-three other named actors or source accounts appear once each. They are not aggregated into the chart because a residual bar would obscure the comparative ranking. Frequency alone does not establish a coordinated campaign.
+
+### 6.1 Country risk assessment
+
+This is a **relative July exposure assessment**, not a general national cyber-risk score. It combines record volume, evidence strength, impact and sector sensitivity.
+
+| Risk | Countries | Evidence-based rationale |
+| :--- | :--- | :--- |
+| 🔴 High | 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇲🇦 Morocco, 🇿🇦 South Africa, 🇬🇭 Ghana | Five or more records, or a Very High-confidence Level 4 exposure |
+| 🟠 Medium | 🇳🇬 Nigeria, 🇩🇿 Algeria, 🇨🇮 Côte d'Ivoire, 🇸🇸 South Sudan | Multiple records or one material Level 4 case, with material evidence limits |
+| 🟡 Low-Medium | 🇧🇼 Botswana, 🇨🇲 Cameroon, 🇰🇪 Kenya | One low-confidence ransomware listing each |
 
 ### 6.2 Cases requiring follow-up
 
@@ -291,22 +336,18 @@ Zenith Bank Plc was listed in a data-leak claim published on 9 August 2025 by Ka
 - New compromises and reposts can be difficult to separate.
 - Remediation after publication is unknown.
 
-
-
-The main gaps concern victim confirmation, archive authenticity and completeness, actual exposed volumes, the initial access vector, the distinction between original intrusion and redistribution, and any remediation after publication.
-
 Confidence is therefore assessed at card level. This report does not turn a claim into a confirmed incident.
 
 ## 8. MITRE ATT&CK mapping, contextual
 
-| Phase | Technique | Defensive interpretation |
-| :--- | :--- | :--- |
-| Initial access | T1190 - Exploit Public-Facing Application | Relevant to exposed portals and applications; not confirmed for every case. |
-| Initial access | T1078 - Valid Accounts | Relevant to alleged webmail, Fortinet and privileged-account access. |
-| Credential access | T1003 - OS Credential Dumping | Contextual where credentials or hashes are mentioned. |
-| Collection | T1213 - Data from Information Repositories | Relevant to university, public-sector and business repositories. |
-| Exfiltration | T1041 - Exfiltration Over C2 Channel | Defensive hypothesis; not consistently observed. |
-| Impact | T1486 - Data Encrypted for Impact | Use only where encryption is documented. |
+No ATT&CK technique is asserted as directly observed from endpoint or network telemetry. Only two narrow defensive hypotheses are retained from the evidence available.
+
+| Phase | ID | Technique | Associated records | Evidentiary limit |
+| :--- | :--- | :--- | :--- | :--- |
+| Initial Access / Persistence | T1078 | Valid Accounts | TOPNET and Orange Tunisia webmail access sales | Authenticated mailbox interfaces are visible, but the authentication method and credential source are unknown. |
+| Collection | T1213 | Data from Information Repositories | Nerasolgh, University of Chlef, Egyptian Ministry of Agriculture, Distamed | Structured repository content was reviewed; the precise collection commands and intrusion path were not observed. |
+
+`T1190`, `T1003`, `T1041` and `T1486` are not mapped for July because the corpus does not establish exploitation of a public-facing application, credential dumping, a C2 exfiltration channel or ransomware encryption.
 
 ## 9. Recommendations
 
@@ -318,12 +359,14 @@ Confidence is therefore assessed at card level. This report does not turn a clai
 
 ## 10. SOC tactical recommendations
 
-1. Review privileged accounts, Fortinet portals, webmail and public-facing applications.
-2. Enforce MFA and rotate credentials whenever exposure is plausible.
-3. Hunt for bulk exports, new administrator accounts and anomalous authentication.
-4. Segment identity, justice, land, employment and payment systems.
-5. Preserve logs and evidence before destructive remediation.
-6. Maintain separate response playbooks for ransomware, data leaks and access sales.
+| Priority | Detection objective | Telemetry and correlation |
+| :--- | :--- | :--- |
+| T1078 coverage | Detect abnormal use of valid or hijacked accounts | IAM, webmail, VPN and SSO logs; impossible travel, new device, unusual ASN, MFA reset, session-token creation and privileged sign-in outside baseline |
+| T1213 coverage | Detect unusual repository access and bulk collection | Database audit, application logs, file access and DLP; high-volume queries, full-table reads, bulk exports, archive creation and access outside normal role or schedule |
+| Privileged change | Detect preparation for persistence or lateral access | IAM, Active Directory, Microsoft 365 and EDR; new administrators, role grants, mailbox forwarding, new OAuth consent and unexpected remote sessions |
+| Data exposure response | Contain confirmed or plausible sensitive-data disclosure | Revoke exposed sessions and keys, preserve evidence, determine affected datasets, notify the responsible legal and response teams, and monitor targeted fraud |
+
+Maintain separate triage and response playbooks for ransomware listings, data leaks, access sales and reposts. Do not treat a victim listing as proof of encryption.
 
 ## 11. Strategic recommendations
 
@@ -336,6 +379,15 @@ Confidence is therefore assessed at card level. This report does not turn a clai
 ## 12. Conclusion
 
 July 2026 showed a broad but fragmented threat picture. Ransomware remained highly visible, while leaks and access offers exposed identity, healthcare, education, government and payment-related data. Evidence quality varied sharply between records; that distinction should remain visible in operational decision-making.
+
+### Consistency checks
+
+- Incident types: 18 ransomware + 18 data leaks + 6 access sales + 0 defacements = 42.
+- Statuses: 21 unverified claims + 20 sample-published claims + 1 fully published dataset = 42.
+- Confidence: 22 Low + 8 Medium + 9 High + 3 Very High = 42.
+- Impact: 12 Level 2 + 21 Level 3 + 9 Level 4 = 42.
+- Geography: 42 unique records; 43 country occurrences because one record covers Nigeria and Côte d'Ivoire.
+- Sectors: the 19 explicit sector rows sum to 42.
 
 **AFRINTEL - Adama ASSIONGBON, SOC & CTI Consultant**
 [AFRINTEL GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)

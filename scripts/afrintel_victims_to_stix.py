@@ -273,6 +273,9 @@ def normalize_status(status: str, incident_type: str) -> Tuple[str, List[str]]:
 
 def normalize_sector(raw: str) -> Optional[str]:
     value = raw.lower()
+    # "Fund administration" is a financial service, not public administration.
+    if "fund administration" in value or "administration de fonds" in value:
+        return "financial-services"
     mapping = {
         "local government": "government-local", "collectivité": "government-local",
         "municipal": "government-local", "municipality": "government-local",
@@ -433,6 +436,10 @@ def clean_report_markdown(text: str) -> str:
 
 def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
     text = md_path.read_text(encoding="utf-8")
+    # Entries under a level-two Notes section are contextual observations and
+    # are explicitly excluded from monthly victim totals.
+    text = re.split(r"^##\s+Notes\b", text, maxsplit=1, flags=re.I | re.M)[0]
+
     default_incident_type = (
         "ransomware"
         if re.search(r"no standalone data leak or access sale classified separately", text, re.I)

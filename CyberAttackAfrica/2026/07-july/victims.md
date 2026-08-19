@@ -178,6 +178,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 #### 🇨🇮 Ivory Coast - Hôpital Catholique Saint Joseph Moscati
 
 - **Initial publication date:** 01 July 2026
+- **AFRINTEL detection date:** 01 July 2026
 - **Actor / Group:** krybit
 - **Sector:** Healthcare, hospital
 - **Website:** [moscati.org](https://moscati.org/)
@@ -322,6 +323,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 #### 🇪🇬 Egypt - EBNY Development
 
 - **Initial publication date:** 06 July 2026
+- **AFRINTEL detection date:** 06 July 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Real estate development
 - **Website:** [ebny.com.eg](https://ebny.com.eg/)
@@ -343,6 +345,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 #### 🇰🇪 Kenya - East African Gasoil Limited (EAGOL)
 
 - **Initial publication date:** 06 July 2026
+- **AFRINTEL detection date:** 06 July 2026
 - **Actor / Group:** arcusmedia
 - **Sector:** Fuel distribution, oil and gas
 - **Website:** [eastafricangasoil.com](https://www.eastafricangasoil.com/)
@@ -364,6 +367,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 #### 🇲🇦 Morocco - Eurodefi
 
 - **Initial publication date:** 10 July 2026
+- **AFRINTEL detection date:** 10 July 2026
 - **Actor / Group:** qilin
 - **Sector:** Professional services / Accounting and audit
 - **Website:** [eurodefis.com](https://www.eurodefis.com)
@@ -410,11 +414,14 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 ### July 11, 2026
 #### 🇹🇳 Tunisia - TOPNET
 
-- **Actor / Group:** GreYyM3terr, DarkForums
+- **AFRINTEL detection date:** 11 July 2026
+- **Actor / Group:** GreYyM3terr
 - **Sector:** Telecommunications / Internet Service Provider
 - **Website:** [topnet.tn](https://www.topnet.tn)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 3
 
 - **Description:**
 
@@ -436,11 +443,14 @@ No mailbox dump, downloadable archive or complete database is visible. The under
 ### July 11, 2026
 #### 🇹🇳 Tunisia - Orange Tunisia
 
-- **Actor / Group:** GreYyM3terr, underground forum
+- **AFRINTEL detection date:** 11 July 2026
+- **Actor / Group:** GreYyM3terr
 - **Sector:** Telecommunications / Telecom operator
 - **Website:** [orange.tn](https://www.orange.tn)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 3
 
 - **Description:**
 
@@ -463,6 +473,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇲🇦 Morocco - Planet Sport
 
 - **Initial publication date:** 11 July 2026
+- **AFRINTEL detection date:** 11 July 2026
 - **Actor / Group:** Mozvo, post published on a cybercriminal forum
 - **Sector:** E-commerce / Retail / Sporting goods
 - **Website:** [planetsport.ma](https://planetsport.ma)
@@ -490,6 +501,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇬🇭 Ghana - Golden Star Resources
 
 - **Initial publication date:** 11 July 2026
+- **AFRINTEL detection date:** 11 July 2026
 - **Actor / Group:** cmdorganization
 - **Sector:** Gold mining
 - **Website:** [gsr.com](https://www.gsr.com/)
@@ -511,6 +523,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇨🇲 Cameroon - TurboSoft
 
 - **Initial publication date:** 13 July 2026
+- **AFRINTEL detection date:** 13 July 2026
 - **Actor / Group:** spacebears
 - **Sector:** Business software and IT services
 - **Website:** [turbosoft.cm](https://turbosoft.cm/)
@@ -532,6 +545,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇳🇬 Nigeria - i-Fitness Gym & Wellness Centre
 
 - **Initial publication date:** 14 July 2026
+- **AFRINTEL detection date:** 14 July 2026
 - **Actor / Group:** arcusmedia
 - **Sector:** Fitness, health and wellness
 - **Website:** [ifitness.ng](https://ifitness.ng/)
@@ -553,6 +567,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇿🇦 South Africa - BE Travel
 
 - **Initial publication date:** 14 July 2026
+- **AFRINTEL detection date:** 14 July 2026
 - **Actor / Group:** arcusmedia
 - **Sector:** Corporate travel and events management
 - **Website:** [betravel.co.za](https://betravel.co.za/)
@@ -574,6 +589,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇿🇦 South Africa - ISEGEN South Africa (Pty) Ltd
 
 - **Initial publication date:** 15 July 2026
+- **AFRINTEL detection date:** 15 July 2026
 - **Actor / Group:** dragonforce
 - **Sector:** Chemical manufacturing
 - **Website:** [isegen.co.za](https://isegen.co.za/)
@@ -595,6 +611,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇿🇦 South Africa - Fidelity Services Group
 
 - **Initial publication date:** 15 July 2026
+- **AFRINTEL detection date:** 15 July 2026
 - **Actor / Group:** ransomhouse
 - **Sector:** Integrated security and risk services
 - **Website:** [fidelity-services.com](https://fidelity-services.com/)
@@ -616,6 +633,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇧🇼 Botswana - North Atlantic Engineering Consultants
 
 - **Initial publication date:** 16 July 2026
+- **AFRINTEL detection date:** 16 July 2026
 - **Actor / Group:** dragonforce
 - **Sector:** Mechanical and electrical engineering consulting
 - **Website:** [northatlantic.bw](https://www.northatlantic.bw/)
@@ -687,6 +705,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇪🇬 Egypt - Sinai Grand Casino
 
 - **Initial publication date:** 16 July 2026
+- **AFRINTEL detection date:** 16 July 2026
 - **Actor / Group:** dragonforce
 - **Sector:** Casino, gaming and entertainment
 - **Website:** [sinaigrandcasino.com](https://sinaigrandcasino.com/)
@@ -708,6 +727,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇿🇦 South Africa - Reatile Group
 
 - **Initial publication date:** 18 July 2026
+- **AFRINTEL detection date:** 18 July 2026
 - **Actor / Group:** incransom
 - **Sector:** Investment holding, energy and industry
 - **Website:** [reatile.co.za](https://www.reatile.co.za/)
@@ -729,6 +749,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 #### 🇿🇦 South Africa - CKR Consulting Engineers
 
 - **Initial publication date:** 19 July 2026
+- **AFRINTEL detection date:** 19 July 2026
 - **Actor / Group:** payload
 - **Sector:** Multidisciplinary engineering consulting
 - **Website:** [ckr.co.za](https://ckr.co.za/)
@@ -748,11 +769,14 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 ### July 21, 2026
 #### 🇹🇳 Tunisia - Ministry of Justice
+- **AFRINTEL detection date:** 21 July 2026
 - **Actor / Group:** R3V4ULT
 - **Sector:** Government / Justice / Public administration
 - **Website:** justice.gov.tn
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 3
 - **Description:**
 
 The Tunisian Ministry of Justice is the public administration responsible for the judicial sector in Tunisia. Its activities include the administration of courts, correctional facilities and judicial services.
@@ -777,6 +801,7 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 #### 🇨🇮 Ivory Coast - Compagnie des Caoutchoucs du Pakidié (CCP)
 
 - **Initial publication date:** 23 July 2026
+- **AFRINTEL detection date:** 23 July 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Rubber farming and natural rubber processing
 - **Website:** [pakidie.com](https://www.pakidie.com/)
@@ -798,6 +823,7 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 #### 🇸🇸 South Sudan - Nile Petroleum Corporation (NILEPET)
 
 - **Initial publication date:** 23 July 2026
+- **AFRINTEL detection date:** 23 July 2026
 - **Actor / Group:** krybit
 - **Sector:** Oil and gas
 - **Website:** [nilepet.com](https://nilepet.com/)
@@ -821,13 +847,15 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 
 ### July 24, 2026
 #### 🇲🇦 Morocco - Distamed
-- **Incident type:** Data Leak
 
-- **Actor / Group :** anisanas2
+- **AFRINTEL detection date:** 24 July 2026
+- **Actor / Group:** anisanas2
 - **Sector:** Healthcare / Medical equipment
 - **Website:** [distamed.ma](https://distamed.ma)
-- **Actor / Group:** anisanas2
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
 
 - **Description:**
 
@@ -853,11 +881,14 @@ This exposure creates high risks of medical confidentiality breaches, identity t
 ### July 24, 2026
 #### 🇲🇦 Morocco - Moroccan Biometric Passport Portal
 
+- **AFRINTEL detection date:** 24 July 2026
 - **Actor / Group:** Magherbi, post published on a cybercriminal forum
 - **Sector:** Government / Public administration / Identity documents
 - **Website:** [passeport.ma](https://www.passeport.ma)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
 
 - **Description:**
 
@@ -892,6 +923,7 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 #### 🇳🇬 Nigeria - Unidentified federal university (system access)
 
 - **Initial publication date:** July 24, 2026
+- **AFRINTEL detection date:** 24 July 2026
 - **Actor / Group:** nowornever, post published on a cybercriminal forum (RaidForums)
 - **Sector:** Government / Higher education (federal university)
 - **Website:** Not identified with certainty
@@ -918,10 +950,31 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
   2. Audit service and administrator accounts for reuse of personal passwords, and raise awareness among IT staff about storing personal or financial data on professional servers.
 
 
+### July 25, 2026
+#### 🇿🇦 South Africa - MTN (attributed with reservation)
+
+- **Initial publication date:** 25 July 2026
+- **AFRINTEL detection date:** 25 July 2026
+- **Actor / Group:** ki4tane; publication claims association with NullSec Nigeria
+- **Sector:** Telecommunications
+- **Website:** [mtn.com](https://www.mtn.com/)
+- **AFRINTEL status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+
+- **Description:**
+
+  MTN is a telecommunications group operating across several African markets. The supplied evidence does not identify which national MTN entity is allegedly affected.
+
+- **Analysis:**
+
+  A forum post dated 25 July 2026 claims that customer and employee credentials linked to MTN were disclosed. The post refers to customer email/password material, approximately 2,000 employee credentials and downloadable files. AFRINTEL reviewed the evidence directory without reproducing records: client.emails.txt contains 130 lines, while the employee archive contains separate email, credential and password files with 381, 814 and 549 lines respectively. The employee email sample uses the mtn.com domain, confirming an apparent MTN corporate context but not the affected country or subsidiary with certainty. AFRINTEL attributes this record to South Africa with reservation: the actor frames the attack around tensions between South Africa and Nigerian nationals, and one fragment in the domain sample references "MTNGroupsa", which supports this attribution. MTN Group Limited is headquartered in Johannesburg, South Africa, so this fragment plausibly refers to the group's parent entity, whose email and IT infrastructure is often managed centrally; this does not establish that the affected customers or employees belong to the South African subsidiary specifically rather than another national operation. A Nigeria-linked fragment ("clientsupport.ng") also appears in the same sample, and the actor identifies as NullSec Nigeria, so the country attribution is treated as low-confidence and subject to revision. The data, access path and claimed complete volume have not been independently verified. AFRINTEL records one data-leak incident and does not reproduce credentials, passwords, download links or personal data.
 ### July 26, 2026
 #### 🇲🇦 Morocco - Brazer Ingenierie
 
 - **Initial publication date:** 26 July 2026
+- **AFRINTEL detection date:** 26 July 2026
 - **Actor / Group:** arcusmedia
 - **Sector:** Engineering / Telecommunications / Construction
 - **Website:** [brazeringenierie.com](https://www.brazeringenierie.com)
@@ -943,6 +996,7 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 #### 🇹🇳 Tunisia - École Nationale d'Administration (ENA) - concours.ena.tn
 
 - **Initial publication date:** 26 July 2026
+- **AFRINTEL detection date:** 26 July 2026
 - **Actor / Group:** N0ull_0X, post published on a cybercriminal forum
 - **Sector:** Government / Public Administration / Education (Civil Service Entrance Examinations)
 - **Website:** [concours.ena.tn](https://concours.ena.tn) / [www.ena.tn](https://www.ena.tn)
@@ -964,6 +1018,7 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 #### 🇳🇬 Nigeria - Zenith Bank Plc
 
 - **Initial publication date:** 26 July 2026
+- **AFRINTEL detection date:** 26 July 2026
 - **Actor / Group:** ExfilSquad
 - **Sector:** Banking and financial services
 - **Website:** [zenithbank.com](https://www.zenithbank.com/)
@@ -1003,23 +1058,3 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 - **Analysis:**
 
   The supplied screenshots show official-looking ministry documents and a publication attributed to the source account jrintel. The material may expose sensitive administrative information, but AFRINTEL has not independently verified the documents, their provenance or the full dataset. Download links, session identifiers and personal information are not reproduced.
-
-### July 25, 2026
-#### 🇿🇦 South Africa - MTN (attributed with reservation)
-
-- **Initial publication date:** 25 July 2026
-- **Actor / Group:** ki4tane; publication claims association with NullSec Nigeria
-- **Sector:** Telecommunications
-- **Website:** [mtn.com](https://www.mtn.com/)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium
-- **Impact level:** Level 3
-
-- **Description:**
-
-  MTN is a telecommunications group operating across several African markets. The supplied evidence does not identify which national MTN entity is allegedly affected.
-
-- **Analysis:**
-
-  A forum post dated 25 July 2026 claims that customer and employee credentials linked to MTN were disclosed. The post refers to customer email/password material, approximately 2,000 employee credentials and downloadable files. AFRINTEL reviewed the evidence directory without reproducing records: client.emails.txt contains 130 lines, while the employee archive contains separate email, credential and password files with 381, 814 and 549 lines respectively. The employee email sample uses the mtn.com domain, confirming an apparent MTN corporate context but not the affected country or subsidiary with certainty. AFRINTEL attributes this record to South Africa with reservation: the actor frames the attack around tensions between South Africa and Nigerian nationals, and one fragment in the domain sample references "MTNGroupsa", which supports this attribution. MTN Group Limited is headquartered in Johannesburg, South Africa, so this fragment plausibly refers to the group's parent entity, whose email and IT infrastructure is often managed centrally; this does not establish that the affected customers or employees belong to the South African subsidiary specifically rather than another national operation. A Nigeria-linked fragment ("clientsupport.ng") also appears in the same sample, and the actor identifies as NullSec Nigeria, so the country attribution is treated as low-confidence and subject to revision. The data, access path and claimed complete volume have not been independently verified. AFRINTEL records one data-leak incident and does not reproduce credentials, passwords, download links or personal data.

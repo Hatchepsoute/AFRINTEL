@@ -127,7 +127,7 @@ Cette exposition accroît le risque de phishing ciblé, de fraude à l'identité
 - **Secteur :** Gouvernement / Administration publique
 - **Site web :** Non identifié avec certitude
 - **Statut AFRINTEL :** Claim - Unverified
-- **Type d'incident :** Access Sale
+- **Type d'incident :** Vente d’accès
 - **Niveau de confiance :** Faible
 - **Niveau d'impact :** Niveau 3
 
@@ -180,6 +180,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 #### 🇨🇮 Côte d'Ivoire - Hôpital Catholique Saint Joseph Moscati
 
 - **Date de publication initiale :** 01 juillet 2026
+- **Date de détection AFRINTEL :** 01 juillet 2026
 - **Acteur / Groupe :** krybit
 - **Secteur :** Santé, établissement hospitalier
 - **Site web :** [moscati.org](https://moscati.org/)
@@ -208,8 +209,8 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 - **Site web :** results.u-carelabs.com ; marzouk-labs.com ; hassablabsresults.com ; mabaralabs-results.com
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d’incident :** Fuite de données
-- **Niveau de confiance :** Medium
-- **Niveau d’impact :** Level 3
+- **Niveau de confiance :** Moyen
+- **Niveau d’impact :** Niveau 3
 
 - **Description :**
 
@@ -231,7 +232,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 - **Secteur :** Transport / Logistique / Livraison de colis
 - **Site web :** [adex.tn](https://adex.tn)
 - **Statut AFRINTEL :** Claim - Data Sample Published
-- **Type d'incident :** Vente d'accès
+- **Type d'incident :** Vente d’accès
 - **Niveau de confiance :** Élevé
 - **Niveau d'impact :** Niveau 2
 
@@ -258,7 +259,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 - **Secteur :** Gouvernement / Administration publique / Formation professionnelle et emploi
 - **Site web :** [mfpe.gov.tn](https://mfpe.gov.tn)
 - **Statut AFRINTEL :** Claim - Data Sample Published
-- **Type d'incident :** Vente d'accès
+- **Type d'incident :** Vente d’accès
 - **Niveau de confiance :** Moyen
 - **Niveau d'impact :** Niveau 3
 
@@ -330,6 +331,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 #### 🇪🇬 Égypte - EBNY Development
 
 - **Date de publication initiale :** 06 juillet 2026
+- **Date de détection AFRINTEL :** 06 juillet 2026
 - **Acteur / Groupe :** TheGentlemen
 - **Secteur :** Promotion et développement immobilier
 - **Site web :** [ebny.com.eg](https://ebny.com.eg/)
@@ -352,6 +354,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 #### 🇰🇪 Kenya - East African Gasoil Limited (EAGOL)
 
 - **Date de publication initiale :** 06 juillet 2026
+- **Date de détection AFRINTEL :** 06 juillet 2026
 - **Acteur / Groupe :** arcusmedia
 - **Secteur :** Distribution de carburants, pétrole et gaz
 - **Site web :** [eastafricangasoil.com](https://www.eastafricangasoil.com/)
@@ -374,6 +377,7 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 #### 🇲🇦 Maroc - Eurodefi
 
 - **Date de publication initiale :** 10 juillet 2026
+- **Date de détection AFRINTEL :** 10 juillet 2026
 - **Acteur / Groupe :** qilin
 - **Secteur :** Services professionnels / Expertise comptable et audit
 - **Site web :** [eurodefis.com](https://www.eurodefis.com)
@@ -421,12 +425,15 @@ En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, ce
 
 ### 11 juillet 2026
 #### 🇹🇳 Tunisie - TOPNET
-- **Type d’incident :** Vente d’accès
 
-- **Acteur / Groupe:** GreYyM3terr
+- **Date de détection AFRINTEL :** 11 juillet 2026
+- **Acteur / Groupe :** GreYyM3terr
 - **Secteur :** Télécommunications / Fournisseur d'accès Internet
 - **Site web :** [topnet.tn](https://www.topnet.tn)
 - **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Vente d’accès
+- **Niveau de confiance :** Moyen
+- **Niveau d’impact :** Niveau 3
 
 - **Description :**
 
@@ -449,12 +456,15 @@ Aucun dump de messagerie, archive téléchargeable ou base de données complète
 
 ### 11 juillet 2026
 #### 🇹🇳 Tunisie - Orange Tunisie
-- **Type d’incident :** Vente d’accès
 
+- **Date de détection AFRINTEL :** 11 juillet 2026
 - **Acteur / Groupe :** GreYyM3terr
 - **Secteur :** Télécommunications / Opérateur télécom
 - **Site web :** [orange.tn](https://www.orange.tn)
 - **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Vente d’accès
+- **Niveau de confiance :** Moyen
+- **Niveau d’impact :** Niveau 3
 
 - **Description :**
 
@@ -479,6 +489,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇲🇦 Maroc - Planet Sport
 
 - **Date de publication initiale :** 11 juillet 2026
+- **Date de détection AFRINTEL :** 11 juillet 2026
 - **Acteur / Groupe :** Mozvo, publication sur un forum cybercriminel
 - **Secteur :** E-commerce / Commerce de détail / Articles de sport
 - **Site web :** [planetsport.ma](https://planetsport.ma)
@@ -507,6 +518,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇬🇭 Ghana - Golden Star Resources
 
 - **Date de publication initiale :** 11 juillet 2026
+- **Date de détection AFRINTEL :** 11 juillet 2026
 - **Acteur / Groupe :** cmdorganization
 - **Secteur :** Extraction minière, or
 - **Site web :** [gsr.com](https://www.gsr.com/)
@@ -529,6 +541,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇨🇲 Cameroun - TurboSoft
 
 - **Date de publication initiale :** 13 juillet 2026
+- **Date de détection AFRINTEL :** 13 juillet 2026
 - **Acteur / Groupe :** spacebears
 - **Secteur :** Logiciels de gestion et services informatiques
 - **Site web :** [turbosoft.cm](https://turbosoft.cm/)
@@ -551,6 +564,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇳🇬 Nigeria - i-Fitness Gym & Wellness Centre
 
 - **Date de publication initiale :** 14 juillet 2026
+- **Date de détection AFRINTEL :** 14 juillet 2026
 - **Acteur / Groupe :** arcusmedia
 - **Secteur :** Fitness, santé et bien-être
 - **Site web :** [ifitness.ng](https://ifitness.ng/)
@@ -573,6 +587,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇿🇦 Afrique du Sud - BE Travel
 
 - **Date de publication initiale :** 14 juillet 2026
+- **Date de détection AFRINTEL :** 14 juillet 2026
 - **Acteur / Groupe :** arcusmedia
 - **Secteur :** Gestion de voyages d'affaires et d'événements
 - **Site web :** [betravel.co.za](https://betravel.co.za/)
@@ -595,6 +610,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇿🇦 Afrique du Sud - ISEGEN South Africa (Pty) Ltd
 
 - **Date de publication initiale :** 15 juillet 2026
+- **Date de détection AFRINTEL :** 15 juillet 2026
 - **Acteur / Groupe :** dragonforce
 - **Secteur :** Industrie chimique
 - **Site web :** [isegen.co.za](https://isegen.co.za/)
@@ -617,6 +633,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇿🇦 Afrique du Sud - Fidelity Services Group
 
 - **Date de publication initiale :** 15 juillet 2026
+- **Date de détection AFRINTEL :** 15 juillet 2026
 - **Acteur / Groupe :** ransomhouse
 - **Secteur :** Sécurité intégrée et gestion des risques
 - **Site web :** [fidelity-services.com](https://fidelity-services.com/)
@@ -639,6 +656,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇧🇼 Botswana - North Atlantic Engineering Consultants
 
 - **Date de publication initiale :** 16 juillet 2026
+- **Date de détection AFRINTEL :** 16 juillet 2026
 - **Acteur / Groupe :** dragonforce
 - **Secteur :** Conseil en ingénierie mécanique et électrique
 - **Site web :** [northatlantic.bw](https://www.northatlantic.bw/)
@@ -713,6 +731,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇪🇬 Égypte - Sinai Grand Casino
 
 - **Date de publication initiale :** 16 juillet 2026
+- **Date de détection AFRINTEL :** 16 juillet 2026
 - **Acteur / Groupe :** dragonforce
 - **Secteur :** Casino, jeux et divertissement
 - **Site web :** [sinaigrandcasino.com](https://sinaigrandcasino.com/)
@@ -735,6 +754,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇿🇦 Afrique du Sud - Reatile Group
 
 - **Date de publication initiale :** 18 juillet 2026
+- **Date de détection AFRINTEL :** 18 juillet 2026
 - **Acteur / Groupe :** incransom
 - **Secteur :** Holding d'investissement, énergie et industrie
 - **Site web :** [reatile.co.za](https://www.reatile.co.za/)
@@ -757,6 +777,7 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 #### 🇿🇦 Afrique du Sud - CKR Consulting Engineers
 
 - **Date de publication initiale :** 19 juillet 2026
+- **Date de détection AFRINTEL :** 19 juillet 2026
 - **Acteur / Groupe :** payload
 - **Secteur :** Conseil en ingénierie multidisciplinaire
 - **Site web :** [ckr.co.za](https://ckr.co.za/)
@@ -777,11 +798,14 @@ Aucune archive, base de données ou extraction complète de messagerie n'est vis
 
 ### 21 juillet 2026
 #### 🇹🇳 Tunisie - Ministère de la Justice
-- **Type d’incident :** Fuite de données
+- **Date de détection AFRINTEL :** 21 juillet 2026
 - **Acteur / Groupe :** R3V4ULT
 - **Secteur :** Gouvernement / Justice / Administration publique
 - **Site web :** [justice.gov.tn](https://justice.gov.tn)
 - **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d’impact :** Niveau 3
 - **Description :**
 Le ministère tunisien de la Justice est l’administration publique chargée du secteur judiciaire en Tunisie. Ses activités couvrent notamment l’administration des juridictions, des établissements pénitentiaires et des services judiciaires.
 
@@ -807,6 +831,7 @@ Le secteur gouvernemental restant particulièrement exposé aux fuites de donné
 #### 🇨🇮 Côte d'Ivoire - Compagnie des Caoutchoucs du Pakidié (CCP)
 
 - **Date de publication initiale :** 23 juillet 2026
+- **Date de détection AFRINTEL :** 23 juillet 2026
 - **Acteur / Groupe :** TheGentlemen
 - **Secteur :** Hévéaculture et transformation du caoutchouc naturel
 - **Site web :** [pakidie.com](https://www.pakidie.com/)
@@ -829,6 +854,7 @@ Le secteur gouvernemental restant particulièrement exposé aux fuites de donné
 #### 🇸🇸 Soudan du Sud - Nile Petroleum Corporation (NILEPET)
 
 - **Date de publication initiale :** 23 juillet 2026
+- **Date de détection AFRINTEL :** 23 juillet 2026
 - **Acteur / Groupe :** krybit
 - **Secteur :** Pétrole et gaz
 - **Site web :** [nilepet.com](https://nilepet.com/)
@@ -853,13 +879,15 @@ Le secteur gouvernemental restant particulièrement exposé aux fuites de donné
 
 ### 24 juillet 2026
 #### 🇲🇦 Maroc - Distamed
-- **Type d’incident :** Fuite de données
-- **Acteur / Groupe :** anisanas2
 
+- **Date de détection AFRINTEL :** 24 juillet 2026
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Santé / Équipements médicaux
 - **Site web :** [distamed.ma](https://distamed.ma)
 - **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Fuite de données
+- **Niveau de confiance :** Très élevé
+- **Niveau d’impact :** Niveau 4
 
 - **Description :**
 
@@ -886,11 +914,14 @@ Cette exposition présente des risques élevés d’atteinte au secret médical,
 
 ### 24 juillet 2026
 #### 🇲🇦 Maroc - Portail marocain du passeport biométrique
-- **Type d’incident :** Fuite de données
+- **Date de détection AFRINTEL :** 24 juillet 2026
 - **Acteur / Groupe :** Magherbi, publication sur un forum cybercriminel
 - **Secteur :** Gouvernement / Administration publique / Documents d’identité
 - **Site web :** [passeport.ma](https://www.passeport.ma)
 - **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Fuite de données
+- **Niveau de confiance :** Moyen
+- **Niveau d’impact :** Niveau 4
 
 - **Description :**
 
@@ -928,11 +959,12 @@ Pour AFRINTEL, cette publication doit être enregistrée comme **un incident pri
 #### 🇳🇬 Nigeria - Université fédérale non identifiée (accès système)
 
 - **Date de publication initiale :** 24 juillet 2026
+- **Date de détection AFRINTEL :** 24 juillet 2026
 - **Acteur / Groupe :** nowornever, publication sur un forum cybercriminel (RaidForums)
 - **Secteur :** Gouvernement / Enseignement supérieur (université fédérale)
 - **Site web :** Non identifié avec certitude
 - **Statut AFRINTEL :** Claim - Unverified
-- **Type d'incident :** Access Sale
+- **Type d'incident :** Vente d’accès
 - **Niveau de confiance :** Faible
 - **Niveau d'impact :** Niveau 4
 
@@ -955,10 +987,31 @@ Pour AFRINTEL, cette publication doit être enregistrée comme **un incident pri
 
 
 
+### 25 juillet 2026
+#### 🇿🇦 Afrique du Sud - MTN (attribution sous réserve)
+
+- **Date de publication initiale :** 25 juillet 2026
+- **Date de détection AFRINTEL :** 25 juillet 2026
+- **Acteur / Groupe :** ki4tane ; la publication revendique un lien avec NullSec Nigeria
+- **Secteur :** Télécommunications
+- **Site web :** [mtn.com](https://www.mtn.com/)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+  MTN est un groupe de télécommunications présent sur plusieurs marchés africains. Les éléments fournis ne permettent pas d'identifier l'entité nationale MTN concernée.
+
+- **Analyse :**
+
+  Une publication de forum datée du 25 juillet 2026 affirme que des identifiants clients et employés liés à MTN ont été divulgués. Elle mentionne des emails et mots de passe clients, environ 2 000 identifiants d'employés et des fichiers téléchargeables. AFRINTEL a examiné le répertoire de preuves sans reproduire les enregistrements : client.emails.txt contient 130 lignes, tandis que l'archive employé contient des fichiers séparés d'emails, d'identifiants et de mots de passe comprenant respectivement 381, 814 et 549 lignes. L'échantillon d'emails employés utilise le domaine mtn.com, ce qui confirme un contexte apparemment lié à MTN, mais pas le pays ou la filiale concernée avec certitude. AFRINTEL attribue cette fiche à l'Afrique du Sud sous réserve : l'acteur situe son attaque dans le cadre des tensions entre l'Afrique du Sud et des ressortissants nigérians, et un fragment de l'échantillon de domaines mentionne « MTNGroupsa », ce qui appuie cette attribution. MTN Group Limited a son siège social à Johannesburg, en Afrique du Sud ; ce fragment renvoie donc vraisemblablement à l'entité mère du groupe, dont l'infrastructure email et informatique est souvent gérée de façon centralisée, ce qui n'établit pas que les clients ou employés concernés appartiennent spécifiquement à la filiale sud-africaine plutôt qu'à une autre opération nationale. Un fragment lié au Nigeria (« clientsupport.ng ») apparaît également dans le même échantillon, et l'acteur se revendique de NullSec Nigeria, ce qui maintient l'attribution du pays à un niveau de confiance faible et susceptible d'être révisée. Les données, le vecteur d'accès et le volume complet revendiqué n'ont pas été vérifiés indépendamment. AFRINTEL enregistre un seul incident de fuite et ne reproduit aucun identifiant, mot de passe, lien de téléchargement ni donnée personnelle.
 ### 26 juillet 2026
 #### 🇲🇦 Maroc - Brazer Ingenierie
 
 - **Date de publication initiale :** 26 juillet 2026
+- **Date de détection AFRINTEL :** 26 juillet 2026
 - **Acteur / Groupe :** arcusmedia
 - **Secteur :** Ingénierie / Télécommunications / Construction
 - **Site web :** [brazeringenierie.com](https://www.brazeringenierie.com)
@@ -981,6 +1034,7 @@ Pour AFRINTEL, cette publication doit être enregistrée comme **un incident pri
 #### 🇹🇳 Tunisie - École Nationale d'Administration (ENA) - concours.ena.tn
 
 - **Date de publication initiale :** 26 juillet 2026
+- **Date de détection AFRINTEL :** 26 juillet 2026
 - **Acteur / Groupe :** N0ull_0X, post publié sur un forum cybercriminel
 - **Secteur :** Gouvernement / Administration publique / Éducation (concours d'entrée dans la fonction publique)
 - **Site web :** [concours.ena.tn](https://concours.ena.tn) / [www.ena.tn](https://www.ena.tn)
@@ -1003,6 +1057,7 @@ Pour AFRINTEL, cette publication doit être enregistrée comme **un incident pri
 #### 🇳🇬 Nigeria - Zenith Bank Plc
 
 - **Date de publication initiale :** 26 juillet 2026
+- **Date de détection AFRINTEL :** 26 juillet 2026
 - **Acteur / Groupe :** ExfilSquad
 - **Secteur :** Banque et services financiers
 - **Site web :** [zenithbank.com](https://www.zenithbank.com/)
@@ -1042,23 +1097,3 @@ Pour AFRINTEL, cette publication doit être enregistrée comme **un incident pri
 - **Analyse :**
 
   Les captures fournies montrent des documents attribués au ministère et une publication associée au compte source jrintel. Le contenu pourrait exposer des informations administratives sensibles, mais AFRINTEL n'a pas confirmé indépendamment les documents, leur provenance ni l'exhaustivité du jeu de données. Les liens de téléchargement, identifiants de session et données personnelles ne sont pas reproduits.
-
-### 25 juillet 2026
-#### 🇿🇦 Afrique du Sud - MTN (attribution sous réserve)
-
-- **Date de publication initiale :** 25 juillet 2026
-- **Acteur / Groupe :** ki4tane ; la publication revendique un lien avec NullSec Nigeria
-- **Secteur :** Telecommunications
-- **Site web :** [mtn.com](https://www.mtn.com/)
-- **Statut AFRINTEL :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Medium
-- **Niveau d'impact :** Level 3
-
-- **Description :**
-
-  MTN est un groupe de télécommunications présent sur plusieurs marchés africains. Les éléments fournis ne permettent pas d'identifier l'entité nationale MTN concernée.
-
-- **Analyse :**
-
-  Une publication de forum datée du 25 juillet 2026 affirme que des identifiants clients et employés liés à MTN ont été divulgués. Elle mentionne des emails et mots de passe clients, environ 2 000 identifiants d'employés et des fichiers téléchargeables. AFRINTEL a examiné le répertoire de preuves sans reproduire les enregistrements : client.emails.txt contient 130 lignes, tandis que l'archive employé contient des fichiers séparés d'emails, d'identifiants et de mots de passe comprenant respectivement 381, 814 et 549 lignes. L'échantillon d'emails employés utilise le domaine mtn.com, ce qui confirme un contexte apparemment lié à MTN, mais pas le pays ou la filiale concernée avec certitude. AFRINTEL attribue cette fiche à l'Afrique du Sud sous réserve : l'acteur situe son attaque dans le cadre des tensions entre l'Afrique du Sud et des ressortissants nigérians, et un fragment de l'échantillon de domaines mentionne « MTNGroupsa », ce qui appuie cette attribution. MTN Group Limited a son siège social à Johannesburg, en Afrique du Sud ; ce fragment renvoie donc vraisemblablement à l'entité mère du groupe, dont l'infrastructure email et informatique est souvent gérée de façon centralisée, ce qui n'établit pas que les clients ou employés concernés appartiennent spécifiquement à la filiale sud-africaine plutôt qu'à une autre opération nationale. Un fragment lié au Nigeria (« clientsupport.ng ») apparaît également dans le même échantillon, et l'acteur se revendique de NullSec Nigeria, ce qui maintient l'attribution du pays à un niveau de confiance faible et susceptible d'être révisée. Les données, le vecteur d'accès et le volume complet revendiqué n'ont pas été vérifiés indépendamment. AFRINTEL enregistre un seul incident de fuite et ne reproduit aucun identifiant, mot de passe, lien de téléchargement ni donnée personnelle.

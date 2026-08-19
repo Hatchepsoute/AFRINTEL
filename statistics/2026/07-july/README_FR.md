@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
 ![Période](https://img.shields.io/badge/Période-Juillet%202026-lightgrey)
-![Victimes](https://img.shields.io/badge/Victimes-42-critical)
+![Incidents](https://img.shields.io/badge/Incidents-42-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-18-red)
 ![Fuites](https://img.shields.io/badge/Fuites%20de%20données-18-orange)
 ![Ventes d'accès](https://img.shields.io/badge/Ventes%20d'accès-6-yellow)
@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques sont dérivées des fiches victimes de juillet 2026. Chaque fiche est comptée une fois dans le total global. Une fiche relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 fiches. La fiche MTN est attribuée à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
+Ces statistiques sont dérivées de [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), source unique de vérité de juillet 2026. Chaque fiche est comptée une fois dans le total global. Une fiche relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 fiches. La fiche MTN est attribuée à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
 
 Les volumes annoncés ne sont pas traités comme des faits confirmés. Les données personnelles, identifiants et liens de téléchargement ne sont pas reproduits.
 
@@ -32,6 +32,9 @@ Les volumes annoncés ne sont pas traités comme des faits confirmés. Les donn�
 | Pays les plus représentés | Égypte et Tunisie, 7 chacune |
 | Principal pays ransomware | Afrique du Sud, 5 |
 | Principal pays fuites et accès | Tunisie, 7 |
+| Profil des statuts | 21 non vérifiés ; 20 avec échantillon ; 1 entièrement publié |
+| Profil de confiance | 22 Faible ; 8 Moyen ; 9 Élevé ; 3 Très élevé |
+| Profil d’impact | 12 Niveau 2 ; 21 Niveau 3 ; 9 Niveau 4 |
 
 ### Répartition globale
 
@@ -119,23 +122,32 @@ xychart-beta
 | Secteur | Fiches | Part | Barre |
 |---|---:|---:|---:|
 | Gouvernement / Administration | 11 | 26,2 % | ███████████ |
-| Télécommunications | 5 | 11,9 % | █████ |
+| Télécommunications | 4 | 9,5 % | ████ |
 | Santé / Médical | 4 | 9,5 % | ████ |
-| Éducation / Universités | 3 | 7,1 % | ███ |
+| Ingénierie / Construction | 3 | 7,1 % | ███ |
+| Éducation / Université | 3 | 7,1 % | ███ |
 | E-commerce / Distribution | 3 | 7,1 % | ███ |
-| Technologie / Ingénierie | 3 | 7,1 % | ███ |
 | Pétrole et énergie | 2 | 4,8 % | ██ |
-| Secteurs identifiés à occurrence unique | 11 | 26,2 % | ███████████ |
+| Portefeuille d’investissement / Énergie | 1 | 2,4 % | █ |
+| Finance / Banque | 1 | 2,4 % | █ |
+| Transport / Logistique | 1 | 2,4 % | █ |
+| Immobilier | 1 | 2,4 % | █ |
+| Mines | 1 | 2,4 % | █ |
+| Comptabilité / Audit | 1 | 2,4 % | █ |
+| Voyage / Événementiel | 1 | 2,4 % | █ |
+| Industrie chimique | 1 | 2,4 % | █ |
+| Services de sécurité | 1 | 2,4 % | █ |
+| Jeux / Divertissement | 1 | 2,4 % | █ |
+| Caoutchouc / Agriculture | 1 | 2,4 % | █ |
+| Technologie / Informatique | 1 | 2,4 % | █ |
 | **Total** | **42** | **100 %** |  |
 ~~~mermaid
 xychart-beta
-    title "Répartition sectorielle - juillet 2026"
-    x-axis ["Gouvernement","Télécommunications","Santé","Éducation","E-commerce","Technologie","Pétrole et énergie","Secteurs unitaires"]
+    title "Secteurs les plus représentés - juillet 2026"
+    x-axis ["Gouvernement","Télécommunications","Santé","Ingénierie","Éducation","Commerce","Énergie"]
     y-axis "Fiches" 0 --> 12
-    bar [11,5,4,3,3,3,2,11]
+    bar [11,4,4,3,3,3,2]
 ~~~
-
-Le groupe des secteurs unitaires comprend les holdings d'investissement, la finance, le transport, l'immobilier, les mines, la comptabilité, le voyage, l'industrie chimique, la sécurité, les jeux et le caoutchouc ou l'agriculture.
 
 ## 6. Acteurs et sources les plus actifs
 
@@ -143,11 +155,14 @@ Le groupe des secteurs unitaires comprend les holdings d'investissement, la fina
 |---|---:|---|
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |
+| CrowStealer | 2 | Fuites de données |
 | krybit | 2 | Ransomware |
 | BIGBROTHER | 2 | Ventes d'accès et republications |
 | TheGentlemen | 2 | Ransomware |
 | Phantom Atlas | 2 | Fuites de données |
-| Autres sources nommées | 27 | Activités diverses |
+| GreYyM3terr | 2 | Ventes d’accès |
+
+Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chacun et sont exclus du classement au lieu d’être regroupés dans une catégorie résiduelle.
 
 ## 7. Tendances CTI
 
