@@ -61,7 +61,7 @@ pie title Répartition des attaques par acteur (août 2025)
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Attaques par secteur - Août 2025"
     x-axis ["Technology", "Energy", "Finance", "Agribusiness", "Logistics", "Retail", "IoT/Security", "Government"]
     y-axis "Nombre d'attaques" 0 --> 5
@@ -84,7 +84,7 @@ xychart-beta
 | **Total** | **13** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Attaques par pays - Août 2025"
     x-axis ["🇿🇦Afrique Sud", "🇹🇳Tunisie", "🇰🇪Kenya", "🇲🇦Maroc", "🇳🇬Nigeria", "🇩🇿Algérie", "🇺🇬Ouganda", "🇪🇬Égypte", "🇲🇺Maurice", "🇹🇬Togo"]
     y-axis "Nombre d'attaques" 0 --> 4
@@ -128,7 +128,7 @@ La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès so
 | Afrique de l’Est | 2 | 2 | 0 | 🟧🟧 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences par région"
     x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 6

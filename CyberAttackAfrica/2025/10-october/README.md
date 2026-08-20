@@ -216,7 +216,7 @@ The monthly CTI view combines data leaks and access sales as **data exposure**: 
 | East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences by region"
     x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 10

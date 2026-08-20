@@ -106,7 +106,7 @@ pie
 | Logistique | 1 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Secteurs ciblés - Août 2025"
     x-axis ["Banque", "Technologie", "Énergie", "Gouvernement", "Télécom", "Agroalimentaire", "Logistique"]
     y-axis "Nombre d'attaques" 0 to 4
@@ -142,7 +142,7 @@ xychart-beta
 ---
 
 ```mermaid
-xychart-beta
+xychart
     title "Évolution mensuelle des attaques (Jan - Août 2025)"
     x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août"]
     y-axis "Nombre d'attaques" 0 to 20

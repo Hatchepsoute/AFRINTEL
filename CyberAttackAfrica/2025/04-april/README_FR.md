@@ -135,7 +135,7 @@ La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès so
 | Afrique de l’Est | 0 | 0 | 0 |  |
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences par région"
     x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 15

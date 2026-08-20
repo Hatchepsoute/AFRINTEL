@@ -63,7 +63,7 @@ The twelve monthly `victims.md` files are the source of truth and contain 197 di
 | 29 | 🇧🇮 Burundi | 1 | █ |
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 - All incidents"
     x-axis ["EG","MA","ZA","DZ","NG","TN","KE","MR","ZM","GH"]
     y-axis "Records" 0 --> 34
@@ -202,7 +202,7 @@ Legend: 🟧 Ransomware | 🟦 Data leaks | 🟨 Access sales
 | East Africa | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences by region - 2025"
     x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 97
@@ -234,7 +234,7 @@ Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; E
 | Civil Society / NGO | 1 | 0.5% | █ |
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 8 sector distribution - 2025"
     x-axis ["GOV","FIN","TEC","EDU","HEA","MAN","TRA","RET"]
     y-axis "Records" 0 --> 41
@@ -248,7 +248,7 @@ The chart shows the eight largest controlled sectors; the table above is authori
 ### Incident-type charts
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 ransomware - 2025"
     x-axis ["EG","ZA","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
     y-axis "Records" 0 --> 29
@@ -258,7 +258,7 @@ xychart-beta
 Legend: EG = Egypt; ZA = South Africa; MA = Morocco; NG = Nigeria; KE = Kenya; TN = Tunisia; DZ = Algeria; ZM = Zambia; NA = Namibia; TZ = Tanzania
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 leaks and access sales - 2025"
     x-axis ["MA","DZ","MR","TN","EG","NG","CI","KE","ZA","TG"]
     y-axis "Records" 0 --> 20
@@ -303,7 +303,7 @@ Government and administration (**40 records**) and finance and banking (**39**) 
 ### Most visible actors chart
 
 ```mermaid
-xychart-beta
+xychart
     title "Most visible actors - 2025"
     x-axis ["QIL","NSP","DVM","INC","FNK","PAT","KLS","K9","D07","RSH"]
     y-axis "Records" 0 --> 12

@@ -127,7 +127,7 @@ pie
 | Retail / E-commerce | 1 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Targeted Sectors - July 2025"
     x-axis ["Finance/Banking", "Government", "Energy/Mining", "Education", "Construction", "NGO", "Telecom", "E-commerce"]
     y-axis "Number of claims" 0 --> 7
@@ -170,7 +170,7 @@ xychart-beta
 ---
 
 ```mermaid
-xychart-beta
+xychart
     title "Monthly Evolution of Claims (Jan - Jul 2025)"
     x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
     y-axis "Number of claims" 0 --> 22

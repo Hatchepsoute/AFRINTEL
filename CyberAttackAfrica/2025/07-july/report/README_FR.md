@@ -127,7 +127,7 @@ pie
 | Commerce / E-commerce | 1 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Secteurs ciblés - Juillet 2025"
     x-axis ["Finance/Banque", "Gouvernement", "Énergie/Mines", "Éducation", "Construction", "ONG", "Télécom", "E-commerce"]
     y-axis "Nombre de revendications" 0 --> 7
@@ -170,7 +170,7 @@ xychart-beta
 ---
 
 ```mermaid
-xychart-beta
+xychart
     title "Évolution mensuelle des revendications (Jan - Juil 2025)"
     x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil"]
     y-axis "Nombre de revendications" 0 --> 22

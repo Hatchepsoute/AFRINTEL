@@ -63,7 +63,7 @@ Les douze fichiers mensuels `victims.md` sont la source de vérité et contienne
 | 29 | 🇧🇮 Burundi | 1 | █ |
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 - Tous incidents"
     x-axis ["EG","MA","ZA","DZ","NG","TN","KE","MR","ZM","GH"]
     y-axis "Fiches" 0 --> 34
@@ -202,7 +202,7 @@ Légende : 🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d’accès
 | Afrique de l’Est | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences par région - 2025"
     x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 97
@@ -234,7 +234,7 @@ Légende : NA = Afrique du Nord ; SA = Afrique australe ; WC = Afrique de l’Ou
 | Société civile / ONG | 1 | 0,5% | █ |
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 8 des secteurs - 2025"
     x-axis ["GOV","FIN","TEC","EDU","HEA","MAN","TRA","RET"]
     y-axis "Fiches" 0 --> 41
@@ -248,7 +248,7 @@ Le graphique présente les huit secteurs contrôlés les plus représentés ; le
 ### Graphiques par type d’incident
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 ransomware - 2025"
     x-axis ["EG","ZA","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
     y-axis "Fiches" 0 --> 29
@@ -258,7 +258,7 @@ xychart-beta
 Légende : EG = Égypte ; ZA = Afrique du Sud ; MA = Maroc ; NG = Nigeria ; KE = Kenya ; TN = Tunisie ; DZ = Algérie ; ZM = Zambie ; NA = Namibie ; TZ = Tanzanie
 
 ```mermaid
-xychart-beta
+xychart
     title "Top 10 fuites et ventes d’accès - 2025"
     x-axis ["MA","DZ","MR","TN","EG","NG","CI","KE","ZA","TG"]
     y-axis "Fiches" 0 --> 20
@@ -303,7 +303,7 @@ Les secteurs gouvernemental et administratif (**40 fiches**) ainsi que financier
 ### Graphique des acteurs les plus présents
 
 ```mermaid
-xychart-beta
+xychart
     title "Acteurs les plus présents - 2025"
     x-axis ["QIL","NSP","DVM","INC","FNK","PAT","KLS","K9","D07","RSH"]
     y-axis "Fiches" 0 --> 12
