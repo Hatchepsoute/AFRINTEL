@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (8 victims)
+# List of African cyberattack victims in August 2026 (9 victims)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 

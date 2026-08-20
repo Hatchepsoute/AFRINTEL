@@ -10,11 +10,11 @@
 
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **8 incidents** concernant des entités africaines en août 2026 : **3 publications ransomware**, **4 fuites de données** et **1 vente d'accès**. L'Afrique du Sud compte trois incidents, le Kenya deux, et l'Algérie, Maurice et le Nigeria un chacun. Aucun défacement n'est recensé.
+AFRINTEL a recensé **9 incidents** concernant des entités africaines en août 2026 : **3 publications ransomware**, **5 fuites de données** et **1 vente d'accès**. L'Afrique du Sud compte trois incidents, le Kenya deux, l'Algérie deux, et Maurice et le Nigeria un chacun. Aucun défacement n'est recensé.
 
-- **8 incidents** dans **5 pays** et **7 acteurs / sources observés**.
-- **3 ransomware (37,5 %)**, **4 fuites de données (50,0 %)** et **1 vente d'accès (12,5 %)**.
-- Finance / Banque représente **3 incidents (37,5 %)**, Gouvernement / Administration **2 (25,0 %)**, et Ressources humaines / Recrutement, Logistique / Services de courrier et Médias / Édition **1 chacun (12,5 %)**.
+- **9 incidents** dans **5 pays** et **8 acteurs / sources observés**.
+- **3 ransomware (33,3 %)**, **5 fuites de données (55,6 %)** et **1 vente d'accès (12,5 %)**.
+- Finance / Banque représente **3 incidents (33,3 %)**, Gouvernement / Administration **2 (22,2 %)**, et Ressources humaines / Recrutement, Logistique / Services de courrier, Médias / Édition et Commerce en ligne / Marketplace **1 chacun (11,1 %)**.
 - Les observations les plus importantes concernent les données de réinitialisation de comptes et d'identifiants Daily Trust, les échantillons visibles de documents contractuels, d'identité, KYC, d'entreprise et financiers dans la publication ransomware SpearFin, l'exposition alléguée à grande échelle de dossiers de recrutement kényans, ainsi que des CV de jeunes et des entrées de clés API en Afrique du Sud.
 - La vente d'accès visant le ministère du Commerce et la publication concernant la South African Reserve Bank restent des revendications sans confirmation indépendante.
 
@@ -35,11 +35,11 @@ AFRINTEL a recensé **8 incidents** concernant des entités africaines en août 
 
 | Indicateur | Valeur |
 |---|---:|
-| Total des incidents | 8 |
+| Total des incidents | 9 |
 | Pays concernés | 5 |
-| Acteurs / sources observés | 7 |
-| Ransomware | 3 (37,5 %) |
-| Fuites de données | 4 (50,0 %) |
+| Acteurs / sources observés | 8 |
+| Ransomware | 3 (33,3 %) |
+| Fuites de données | 5 (55,6 %) |
 | Ventes d'accès | 1 (12,5 %) |
 | Défacement | 0 (0,0 %) |
 
@@ -47,18 +47,18 @@ AFRINTEL a recensé **8 incidents** concernant des entités africaines en août 
 
 | Pays | Incidents | Répartition |
 |---|---:|---|
-| 🇿🇦 Afrique du Sud | 3 | ██████ 37,5 % |
-| 🇰🇪 Kenya | 2 | ████ 25,0 % |
-| 🇩🇿 Algérie | 1 | ██ 12,5 % |
-| 🇲🇺 Maurice | 1 | ██ 12,5 % |
-| 🇳🇬 Nigeria | 1 | ██ 12,5 % |
+| 🇿🇦 Afrique du Sud | 3 | ██████ 33,3 % |
+| 🇰🇪 Kenya | 2 | ████ 22,2 % |
+| 🇩🇿 Algérie | 2 | ████ 22,2 % |
+| 🇲🇺 Maurice | 1 | ██ 11,1 % |
+| 🇳🇬 Nigeria | 1 | ██ 11,1 % |
 
 ```mermaid
 pie showData
 title Incidents par pays - août 2026
 "Afrique du Sud" : 3
 "Kenya" : 2
-"Algérie" : 1
+"Algérie" : 2
 "Maurice" : 1
 "Nigeria" : 1
 ```
@@ -67,12 +67,12 @@ title Incidents par pays - août 2026
 
 | Pays | Ransomware | Fuite de données | Vente d'accès | Défacement |
 |---|---:|---:|---:|---:|
-| Algérie | 0 | 0 | 1 | 0 |
+| Algérie | 0 | 1 | 1 | 0 |
 | Kenya | 0 | 2 | 0 | 0 |
 | Maurice | 1 | 0 | 0 | 0 |
 | Nigeria | 1 | 0 | 0 | 0 |
 | Afrique du Sud | 1 | 2 | 0 | 0 |
-| **Total** | **3** | **4** | **1** | **0** |
+| **Total** | **3** | **5** | **1** | **0** |
 
 🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d'accès | 🟥 Défacement
 
@@ -82,18 +82,19 @@ title Incidents par pays - août 2026
 |---|---:|
 | Afrique de l'Est | 3 |
 | Afrique australe | 3 |
-| Afrique du Nord | 1 |
+| Afrique du Nord | 2 |
 | Afrique de l'Ouest | 1 |
 
 ### Répartition sectorielle
 
 | Secteur | Incidents | Part |
 |---|---:|---:|
-| Finance / Banque | 3 | 37,5 % |
-| Gouvernement / Administration | 2 | 25,0 % |
-| Ressources humaines / Recrutement | 1 | 12,5 % |
-| Logistique / Services de courrier | 1 | 12,5 % |
-| Médias / Édition | 1 | 12,5 % |
+| Finance / Banque | 3 | 33,3 % |
+| Gouvernement / Administration | 2 | 22,2 % |
+| Ressources humaines / Recrutement | 1 | 11,1 % |
+| Logistique / Services de courrier | 1 | 11,1 % |
+| Médias / Édition | 1 | 11,1 % |
+| Commerce en ligne / Marketplace | 1 | 11,1 % |
 
 ```mermaid
 pie showData
@@ -103,12 +104,14 @@ title Incidents par secteur - août 2026
 "Ressources humaines / Recrutement" : 1
 "Logistique / Services de courrier" : 1
 "Médias / Édition" : 1
+"Commerce en ligne / Marketplace" : 1
 ```
 
 ### Acteurs / sources les plus actifs
 
 | Acteur ou source | Type d'incident | Incidents | Cibles |
 |---|---|---:|---|
+| TelephoneHooliganism | Fuite de données | 1 | Afribaba (Algérie) |
 | exfilar | Fuite de données | 2 | SnapStar Talent ; mpowa.mobi |
 | Florence | Vente d'accès | 1 | Ministère du Commerce (Algérie) |
 | incransom | Ransomware | 1 | SpearFin Ltd |
@@ -125,11 +128,11 @@ Trois publications ransomware distinctes sont recensées. SpearFin Ltd à Mauric
 
 ### 4.2 Fuites de données et ventes d'accès
 
-Quatre fuites de données et une vente d'accès ont été recensées. Les entrées sud-africaines concernent une publication non vérifiée visant la banque centrale et une exposition distincte analysée portant sur des CV de jeunes, des données de géolocalisation, des comptes utilisateurs et des entrées de clés API. Les entrées kényanes concernent des données de financement client associées à une activité PAYGO non identifiée et une revendication proposant un important jeu de données de recrutement comprenant des identités, candidatures, CV et entretiens vidéo. L'entrée algérienne est une vente d'accès VPN annoncée sans confirmation indépendante.
+Cinq fuites de données et une vente d'accès ont été recensées. Le cas Afribaba en Algérie ajoute une fuite accompagnée d’un échantillon CSV, mais l’absence de ligne d’expédition algérienne crée une incohérence d’attribution. Les entrées sud-africaines concernent une publication non vérifiée visant la banque centrale et une exposition distincte analysée portant sur des CV de jeunes, des données de géolocalisation, des comptes utilisateurs et des entrées de clés API. Les entrées kényanes concernent des données de financement client associées à une activité PAYGO non identifiée et une revendication proposant un important jeu de données de recrutement comprenant des identités, candidatures, CV et entretiens vidéo. L'entrée algérienne est une vente d'accès VPN annoncée sans confirmation indépendante.
 
 ## 5. Impact sectoriel
 
-Finance / Banque représente **3 des 8 incidents (37,5 %)**, associés aux dossiers PAYGO kényans, à la revendication visant la banque centrale sud-africaine et à la publication ransomware SpearFin. Gouvernement / Administration représente **2 incidents (25,0 %)**, avec la revendication de vente d'accès en Algérie et l'exposition d'un service jeunesse en Afrique du Sud. Ressources humaines / Recrutement, Logistique / Services de courrier et Médias / Édition représentent chacun **1 incident (12,5 %)**, respectivement la revendication de vente de données concernant SnapStar Talent, l'entrée ransomware The Courier Guy et la publication ransomware Daily Trust.
+Finance / Banque représente **3 des 9 incidents (33,3 %)**, associés aux dossiers PAYGO kényans, à la revendication visant la banque centrale sud-africaine et à la publication ransomware SpearFin. Gouvernement / Administration représente **2 incidents (22,2 %)**, avec la revendication de vente d'accès en Algérie et l'exposition d'un service jeunesse en Afrique du Sud. Ressources humaines / Recrutement, Logistique / Services de courrier, Médias / Édition et Commerce en ligne / Marketplace représentent chacun **1 incident (11,1 %)**, respectivement la revendication de vente de données concernant SnapStar Talent, l'entrée ransomware The Courier Guy, la publication ransomware Daily Trust et la fuite Afribaba accompagnée d'un échantillon CSV incohérent géographiquement.
 
 ## 6. Profil des acteurs
 
@@ -143,7 +146,7 @@ Sept acteurs ou sources de publication distincts sont recensés. exfilar appara�
 | 🇿🇦 Afrique du Sud | 🔴 Élevé | Le mois comprend des dossiers sensibles de jeunes et des entrées de clés API exposés, une revendication medusalocker non vérifiée portant sur 2 018 emails chez The Courier Guy, ainsi qu'une revendication distincte non vérifiée visant la banque centrale. |
 | 🇲🇺 Maurice | 🔴 Élevé | La publication SpearFin affiche un échantillon contractuel détaillé lié à Maurice et des miniatures présentées comme des documents sensibles d'identité, KYC, d'entreprise et financiers ; les fichiers originaux, l'exhaustivité et le volume revendiqué restent non vérifiés. |
 | 🇳🇬 Nigeria | 🔴 Élevé | L'échantillon Daily Trust contient une structure de réinitialisation de comptes propre à la cible avec des centaines de champs de mot de passe renseignés ; la validité actuelle des identifiants, la méthode d'acquisition et le volume revendiqué de 320 Go restent non vérifiés. |
-| 🇩🇿 Algérie | 🟠 Moyen | Un accès VPN gouvernemental a été annoncé, mais la revendication et sa validité restent non vérifiées. |
+| 🇩🇿 Algérie | 🟠 Moyen | Un accès VPN gouvernemental et une fuite Afribaba sont annoncés ; l’accès reste non vérifié et l’échantillon CSV présente une attribution géographique incohérente. |
 
 ## 7. Tendances et lacunes de renseignement
 
@@ -162,9 +165,9 @@ Cette comparaison utilise les données mensuelles relatives aux victimes et inci
 
 | Indicateur | juillet 2026 | août | Évolution observée |
 | :--- | ---: | ---: | ---: |
-| Incidents documentés | 42 | 8 | -34 (-81,0%) |
+| Incidents documentés | 42 | 9 | -33 (-78,6%) |
 | Ransomware / extorsion | 18 | 3 | -15 |
-| Autres fuites, ventes d'accès ou défacements | 24 | 5 | -19 |
+| Autres fuites, ventes d'accès ou défacements | 24 | 6 | -18 |
 
 La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
 
@@ -204,7 +207,7 @@ Maintenir un inventaire des actifs et stockages exposés sur Internet, imposer u
 
 ## 12. Conclusion
 
-Août 2026 comprend **8 incidents recensés** : trois publications ransomware, quatre entrées de fuite de données et une revendication de vente d'accès. Bien que plusieurs publications restent non confirmées, la sensibilité et l'ampleur des données identitaires, d'identifiants, professionnelles, financières et gouvernementales revendiquées justifient une validation défensive immédiate par les organisations potentiellement concernées.
+Août 2026 comprend **9 incidents recensés** : trois publications ransomware, cinq entrées de fuite de données et une revendication de vente d'accès. Bien que plusieurs publications restent non confirmées, la sensibilité et l'ampleur des données identitaires, d'identifiants, professionnelles, financières et gouvernementales revendiquées justifient une validation défensive immédiate par les organisations potentiellement concernées.
 
 - **AFRINTEL**
 [Dépôt GitHub](https://github.com/Hatchepsoute/AFRINTEL)
