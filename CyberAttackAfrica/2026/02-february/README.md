@@ -236,6 +236,19 @@ pie
 - Diesel-Electric South Africa: potential overlap between February and March 2026 LockBit 5.0 claims requires clarification.
 - The Green Blood Group's prior activity and technical capabilities are not documented.
 
+
+### Factual comparison with January 2026
+
+This comparison uses the monthly victim and incident data for [January](../01-january/victims.md) and [February](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | January 2026 | February | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 21 | 20 | -1 (-4.8%) |
+| Ransomware / extortion | 17 | 20 | +3 |
+| Other leaks, access sales or defacement | 4 | 0 | -4 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 9. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Analytical scope |

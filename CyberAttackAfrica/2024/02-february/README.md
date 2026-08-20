@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-February%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — February 2024
+# AFRINTEL CTI Report - February 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -45,7 +45,7 @@ Statistics derive from the **9 incidents** in [victims.md](./victims.md), synchr
 
 ```mermaid
 xychart
-    title "Incidents by country — February 2024"
+    title "Incidents by country - February 2024"
     x-axis ["ZA","CI","EG","GH","TN","ET"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,2,1,1,1]
@@ -53,7 +53,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — February 2024
+    title Incident-type distribution - February 2024
     "Ransomware" : 5
     "Data leaks" : 4
 ```
@@ -113,8 +113,8 @@ The public sector accounts for one third of the corpus. Publications involve gen
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** incidents are almost evenly split between ransomware and leaks.
-- **Observed — high confidence:** three of the four leaks directly concern public bodies.
+- **Observed - high confidence:** incidents are almost evenly split between ransomware and leaks.
+- **Observed - high confidence:** three of the four leaks directly concern public bodies.
 - **Gap:** no public DFIR report was identified in the sources reviewed to qualify the five ransomware cases.
 - **Gap:** the age and representativeness of some samples do not support extrapolation to advertised volumes.
 - **Collection need:** victim confirmation, official notices, and later evidence of republication.
@@ -123,9 +123,9 @@ The public sector accounts for one third of the corpus. Publications involve gen
 
 | Status | Technique | Use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Encryption monitoring for five ransomware claims; technique not confirmed |
-| Preventive | T1567 — Exfiltration Over Web Service | Outbound-data monitoring; channel not observed |
-| Assumption | T1078 — Valid Accounts | Scenario to test in administrative environments; no compromised account confirmed |
+| Preventive | T1486 - Data Encrypted for Impact | Encryption monitoring for five ransomware claims; technique not confirmed |
+| Preventive | T1567 - Exfiltration Over Web Service | Outbound-data monitoring; channel not observed |
+| Assumption | T1078 - Valid Accounts | Scenario to test in administrative environments; no compromised account confirmed |
 
 ## 9. Recommendations
 
@@ -154,5 +154,5 @@ The public sector accounts for one third of the corpus. Publications involve gen
 
 February is more geographically dispersed than January. The weight of the public sector and the coexistence of ransomware and leaks require parallel work on business continuity and data-exposure validation. Public sources do not support stronger conclusions about attacker tradecraft.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

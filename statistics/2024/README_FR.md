@@ -1,4 +1,4 @@
-# Rapport CTI annuel AFRINTEL — 2024
+# Rapport CTI annuel AFRINTEL - 2024
 
 Ce bilan reprend les 116 fiches des douze fichiers mensuels AFRINTEL de 2024. Les revendications sont comptées telles qu'elles apparaissent dans les sources mensuelles ; une même organisation peut donc apparaître plusieurs fois.
 
@@ -232,4 +232,4 @@ La concentration des fiches sur quelques pays reflète d'abord l'accès aux sour
 
 Le bilan 2024 couvre 116 fiches documentées. Les limites de preuve et les éventuelles doubles revendications doivent rester visibles dans toute interprétation.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

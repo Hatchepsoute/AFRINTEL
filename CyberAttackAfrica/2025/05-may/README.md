@@ -4,17 +4,19 @@
 # CTI Report: Cyber Attacks in Africa - May 2025
 👉🏾 [**French version available here**](./README_FR.md)
 
-## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during May 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
-
-## 2. Executive Summary
+## 1. Executive summary
 - **Total number of recorded attacks:** 21
 - **Most active actors:** devman (6 attacks), kill9 (6), killsec (1), nightspire (1), incransom (1), Phantom Atlas (1), arkana (1), everest (1), datacarry (1), worldleaks (1), cache (1).
 - **Most targeted sectors:** Banking / Financial Services (6), Technology (4), Healthcare (2), Finance / Insurance (2), Business Services (1), Industry (1), Transport (1), Government (1), Education (1), Mining (1), Retail (1).
 - **Most affected countries:** South Africa (9), Mauritania (6), Egypt (1), Kenya (1), Botswana (1), Algeria (1), Cameroon (1), Togo (1).
 - **Exfiltrated data volume:** 2.5 TB for NSSF Kenya, 1 GB for Netmaster Togo. The Mauritania banking claim (kill9) published customer and payment-card samples without a stated total volume; other volumes are not specified.
 
-## 3. Key Statistics
+
+## 2. Methodology
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during May 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by threat actor
 | Actor | Number of Attacks |
@@ -33,7 +35,8 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**         | **21**            |
 
 ```mermaid
-pie title Breakdown by threat actor
+pie showData
+    title Breakdown by threat actor
     "devman" : 6
     "kill9" : 6
     "killsec" : 1
@@ -64,7 +67,8 @@ pie title Breakdown by threat actor
 | **Total** | **21** |
 
 ```mermaid
-pie title Breakdown by industry sector- May 2025
+pie showData
+    title Breakdown by industry sector- May 2025
     "Banking" : 6
     "Technology" : 4
     "Healthcare" : 2
@@ -92,7 +96,8 @@ pie title Breakdown by industry sector- May 2025
 | **Total** | **21** |
 
 ```mermaid
-pie title Breakdown by country (May 2025)
+pie showData
+    title Breakdown by country (May 2025)
     "🇿🇦 South Africa" : 9
     "🇲🇷 Mauritania" : 6
     "🇪🇬 Egypt" : 1
@@ -117,7 +122,8 @@ pie title Breakdown by country (May 2025)
 | 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
 | 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 13
     "Data leaks + access sales" : 8
@@ -177,7 +183,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | killsec | 1 | ██ |
 | nightspire | 1 | ██ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Detailed Attacks by Threat Actor
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, May 2025 recorded **21** incidents versus **17** in the preceding month (an increase of **+4**; **+23.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 17 | 21 | +4 (+23.5%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 devman (6 attacks)
 - **01/05/2025:** iOCO (South Africa, technology)
@@ -237,7 +252,8 @@ graph LR
     worldleaks -->|ASCOMA| Cameroon["🇨🇲 Cameroon"]
     cache["cache"] -->|Netmaster| Togo["🇹🇬 Togo"]
 ```
-## 5. Sectoral Analysis
+
+## 5. Sectoral impact
 - **Banking / Financial Services:** 6 attacks, all claimed by kill9 against Mauritanian banks (BAMIS, Banque Mauritanienne pour le Commerce International, BCI, Orabank Mauritanie-SA, BIM Bank, GBM) in a single coordinated post. Bank-specific card samples support four of the six claims with medium confidence; the remaining two are unverified.
 - **Technology:** 4 attacks (iOCO, DovesIT, Netstar, Netmaster). devman dominates, with a data leak affecting a Togolese registrar claimed by the threat actor cache.
 - **Healthcare/Pharmacy:** 2 attacks (Medswana, Mediclinic). killsec and everest target healthcare players in Botswana and South Africa.
@@ -249,7 +265,16 @@ graph LR
 - **Mining:** 1 attack (Anglo American) by arkana, targeting a mining giant.
 - **Retail/Distribution:** 1 attack (FrontierCo) by datacarry.
 
-## 6. Geographic Analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 - **South Africa:** 9 attacks, including 6 by devman. All sectors are represented, with a strong focus on technology and critical infrastructures.
 - **Mauritania:** 6 attacks, all claimed by kill9 in a single post targeting the country's banking sector; the largest single-actor, single-country claim of the month after devman's South Africa campaign.
 - **Egypt:** 1 attack (microfinance) by nightspire.
@@ -260,7 +285,25 @@ graph LR
 
 South Africa remains the most affected country, confirming its position as a regional economic hub and prime target, but Mauritania's banking sector was the target of the month's second-largest claimed campaign.
 
-## 7. Observed TTPs
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 - **Massive exfiltration:** NSSF Kenya (2.5 TB) and Netmaster (1 GB) illustrate the collection of large data volumes.
 - **Coordinated multi-institution targeting:** kill9 claimed six Mauritanian banks in a single post, with payment-card samples used to substantiate four of the six claims.
 - **Targeting critical infrastructures:** air transport (SAA), mining (Anglo American), healthcare (Mediclinic), government (NSSF), banking (Mauritania).
@@ -268,7 +311,8 @@ South Africa remains the most affected country, confirming its position as a reg
 - **Diversity of victims:** large groups (Anglo, SAA, Mediclinic) and SMEs (DovesIT, Pienaar) are equally targeted.
 - **Double extortion / sale model:** claims with published data samples, including a 48-hour sale countdown in the Mauritania case.
 
-## 8. Recommendations
+
+## 9. Recommendations
 - **South Africa:** strengthen cybersecurity across all sectors, especially technology and critical infrastructures.
 - **Mauritanian banking sector:** affected and named institutions should urgently review network segmentation, rotate credentials, and monitor for fraudulent card-present/card-not-present transactions on the BIN ranges referenced in the claim.
 - **Public sector:** organizations like NSSF should implement offline backups and network segmentation.
@@ -276,10 +320,30 @@ South Africa remains the most affected country, confirming its position as a reg
 - **Mining sector:** Anglo American must protect sensitive data and industrial systems.
 - **All sectors:** train employees on phishing detection, multi-factor authentication, and regular audits.
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 May 2025 was marked by two parallel campaigns of equal scale: devman's sustained activity against South Africa and Kenya, including a massive attack on NSSF (2.5 TB), and kill9's coordinated claim against six Mauritanian banks, published as a single sale listing with a 48-hour countdown. The sectoral diversity (technology, healthcare, mining, transport, banking) shows that attackers target both critical infrastructures and service companies. South Africa remains the most affected country by volume, but the Mauritania banking claim illustrates a shift toward coordinated, sector-wide targeting. Regional cooperation and information sharing are more necessary than ever.
 
-## ✍🏿 Author
+
+### Author
 *Adama ASSIONGBON*  
 *SOC & Cyber Threat Intelligence Consultant*  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

@@ -5,17 +5,20 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 # CTI Report: Cyberattacks in Africa - August 2025 (13 Victims)
 👉🏾 [**French version available here**](./README_FR.md)
-## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyberattacks that occurred across Africa during August 2025. The information was collected from OSINT sources and ransomware leak sites and compiled as part of the AFRINTEL project. The goal is to provide a clear overview of threat trends, threat actors, targeted sectors, and associated compromise indicators.
 
-## 2. Executive summary
+## 1. Executive summary
 - **Total number of recorded attacks**: 13
 - **Most active actors**: qilin (3 attacks), unknown (2), akira (1), warlock (1), direwolf (1), incransom (1), RainbowDF (1), Chucky_BF (1), GhostCrawl (1), BIGBROTHER (1).
 - **Most targeted sectors**: Technology (4), Energy (2), Banking/Finance (2), Agri‑food/Industry (1), Logistics (1), Retail (1), IoT/Security (1), Government (1).
 - **Most affected countries**: South Africa (3), Tunisia (2), Kenya (1), Morocco (1), Nigeria (1), Algeria (1), Uganda (1), Egypt (1), Mauritius (1), Togo (1).
 - **Notable data exfiltration volumes**: Zenith Bank (Nigeria) - 1.8 million records; New Era Com (Morocco) - 607 MB SQL dump; Body Graphics (South Africa) - over 6,500 client records; TEAM4 Security (Egypt) - multiple data sets.
 
-## 3. Key Statistics
+
+## 2. Methodology
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyberattacks that occurred across Africa during August 2025. The information was collected from OSINT sources and ransomware leak sites and compiled as part of the AFRINTEL project. The goal is to provide a clear overview of threat trends, threat actors, targeted sectors, and associated compromise indicators.
+
+
+## 3. Global overview
 
 ### 3.1 Distribution by threat actor
 | Actor | Number of attacks |
@@ -33,7 +36,8 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total** | **13** |
 
 ```mermaid
-pie title Attack Distribution by Actor (August 2025)
+pie showData
+    title Attack Distribution by Actor (August 2025)
     "qilin" : 3
     "Unknown" : 2
     "akira" : 1
@@ -107,7 +111,8 @@ xychart
 | 🇹🇬 Togo | 0 | 1 | 1 |  🟦 |
 | 🇺🇬 Uganda | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 7
     "Data leaks + access sales" : 6
@@ -162,7 +167,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | direwolf | 1 | ███ |
 | incransom | 1 | ███ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Attack details by actor
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, August 2025 recorded **13** incidents versus **21** in the preceding month (a decrease of **-8**; **-38.1%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 21 | 13 | -8 (-38.1%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 qilin (3 attacks)
 - **06/08/2025**: KenGen (Kenya, energy) - claim & disclosure.
@@ -215,7 +229,8 @@ graph LR
     GhostCrawl -->|TEAM4| Egypt["🇪🇬 Egypt"]
     BIGBROTHER -->|Govt Infrastructures| Togo["🇹🇬 Togo"]
 ```
-## 5. Sector Analysis
+
+## 5. Sectoral impact
 - **Technology**: 4 attacks (Yasat, New Era Com, SYSPRO, TEAM4 Security).
 - **Energy**: 2 attacks (KenGen, Uganda Electricity).
 - **Banking/Finance**: 2 attacks (Zenith Bank, SWAN Mauritius).
@@ -225,7 +240,16 @@ graph LR
 - **IoT/Security**: 1 attack (Netstar).
 - **Government**: 1 attack (Togo infrastructure).
 
-## 6. Geographic Analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 - **South Africa**: 3 attacks.
 - **Tunisia**: 2 attacks.
 - **Kenya, Morocco, Nigeria, Algeria, Uganda, Egypt, Mauritius, Togo**: 1 attack each.
@@ -259,23 +283,62 @@ timeline
         BIGBROTHER : Govt Infrastructures (🇹🇬 Togo)
 ```
 
-## 7. Observed TTPs
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 - SQL injection leading to database dumps.
 - Data exfiltration and sale on underground forums.
 - Targeting of critical infrastructure.
 - Repeat attacks against previously compromised organizations.
 - Sale of privileged administrative access likely obtained through RDP/VPN compromise.
 
-## 8. Recommendations
+
+## 9. Recommendations
 - Deploy Web Application Firewalls and input validation to prevent SQL injections.
 - Implement network segmentation and continuous monitoring for critical infrastructure.
 - Enforce multi‑factor authentication and encryption for sensitive financial data.
 - Strengthen employee phishing awareness training.
 - Maintain offline backups and apply security patches regularly.
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 August 2025 saw a diverse range of cyberattacks across Africa, with the technology and energy sectors being the most impacted. Multiple threat actors were involved, and the sale of privileged access indicates an evolving threat landscape. Increased regional cooperation and intelligence sharing remain critical to mitigating these threats.
 
-## ✍🏿 Author
+
+### Author
 Adama ASSIONGBON  
 SOC & Cyber Threat Intelligence Consultant

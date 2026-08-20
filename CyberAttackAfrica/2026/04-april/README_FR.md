@@ -387,6 +387,19 @@ pie
 * **L'e-commerce continue de fuiter des données de paiement.** La compromission de **Pick n Pay ASAP / Bottles.com** a exposé des numéros de cartes complets et des logs 3D-Secure, le genre de signal qui pointe vers de vraies failles de conformité PCI-DSS dans la région.
 * **Des messageries entières ont été aspirées, pas juste des fichiers.** L'intégralité de la messagerie officielle de la **CNSS Bénin** a été siphonnée, cartes de pensionnés et certificats de vie inclus.
 
+
+### Comparaison factuelle avec mars 2026
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [mars](../03-march/victims_FR.md) et de [avril](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | mars 2026 | avril | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 41 | 60 | +19 (+46,3%) |
+| Ransomware / extorsion | 19 | 20 | +1 |
+| Autres fuites, ventes d'accès ou défacements | 22 | 40 | +18 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Portée analytique |

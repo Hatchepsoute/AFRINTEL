@@ -1,4 +1,4 @@
-# AFRINTEL CTI statistics — November 2025
+# AFRINTEL CTI statistics - November 2025
 
 👉🏾 [French version](./README_FR.md)
 
@@ -73,5 +73,5 @@ This statistical sheet is compiled from the 14 cards in the monthly victim file.
 
 The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR
 

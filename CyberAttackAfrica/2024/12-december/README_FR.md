@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Décembre%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Décembre 2024
+# Rapport CTI AFRINTEL - Décembre 2024
 
 👉🏾 [English version](./README.md)
 
@@ -49,7 +49,7 @@ Les statistiques dérivent des **12 incidents** de [victims_FR.md](./victims_FR.
 
 ```mermaid
 xychart
-    title "Incidents par pays — décembre 2024"
+    title "Incidents par pays - décembre 2024"
     x-axis ["ZA","DZ","BW","EG","MR","NA","NG","SD","TZ","TN","ZM"]
     y-axis "Incidents" 0 --> 3
     bar [2,1,1,1,1,1,1,1,1,1,1]
@@ -57,7 +57,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — décembre 2024
+    title Répartition par type - décembre 2024
     "Ransomware" : 11
     "Fuite de données" : 1
 ```
@@ -125,9 +125,9 @@ La finance et les télécommunications comptent deux incidents chacune. Les autr
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** 11 des 12 incidents sont classés ransomware ; DAL Group est une fuite de données et reste compté séparément.
-- **Observé — confiance élevée :** quatre cas comportent des éléments publiés ou examinés, avec une profondeur variable.
-- **Observé — confiance élevée :** les ensembles Ekiti et ASJP relient de manière structurée les données observées aux organisations concernées.
+- **Observé - confiance élevée :** 11 des 12 incidents sont classés ransomware ; DAL Group est une fuite de données et reste compté séparément.
+- **Observé - confiance élevée :** quatre cas comportent des éléments publiés ou examinés, avec une profondeur variable.
+- **Observé - confiance élevée :** les ensembles Ekiti et ASJP relient de manière structurée les données observées aux organisations concernées.
 - **Lacune majeure :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour expliquer l’accès initial, la persistance, le mouvement latéral ou l’éventuel chiffrement.
 - **Lacune :** aucun élément public ne confirme une interruption chez les opérateurs télécoms ou la régie de l’eau cités.
 - **Collecte attendue :** suivre les communications des victimes, la disponibilité ultérieure des données et les éventuels recoupements techniques indépendants.
@@ -136,10 +136,10 @@ La finance et les télécommunications comptent deux incidents chacune. Les autr
 
 | Qualification | Technique | Utilisation défensive |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Cas d’usage ransomware ; chiffrement non établi dans le corpus |
-| Préventif | T1490 — Inhibit System Recovery | Détecter la suppression de clichés et l’altération des sauvegardes |
-| Hypothèse — confiance moyenne | T1078 — Valid Accounts | Scénario d’accès à vérifier ; aucune télémétrie publiée |
-| Préventif | T1567 — Exfiltration Over Web Service | Rechercher les transferts sortants anormaux ; canal non observé |
+| Préventif | T1486 - Data Encrypted for Impact | Cas d’usage ransomware ; chiffrement non établi dans le corpus |
+| Préventif | T1490 - Inhibit System Recovery | Détecter la suppression de clichés et l’altération des sauvegardes |
+| Hypothèse - confiance moyenne | T1078 - Valid Accounts | Scénario d’accès à vérifier ; aucune télémétrie publiée |
+| Préventif | T1567 - Exfiltration Over Web Service | Rechercher les transferts sortants anormaux ; canal non observé |
 
 ## 9. Recommandations
 
@@ -168,6 +168,6 @@ La finance et les télécommunications comptent deux incidents chacune. Les autr
 
 Décembre clôt l’année sur un corpus largement ransomware, mais la valeur de renseignement se concentre dans quatre dossiers étayés. La bonne lecture n’est donc pas « douze attaques confirmées » : elle consiste à distinguer les expositions documentées, les publications crédibles mais incomplètes et les revendications dont l’impact reste à vérifier.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

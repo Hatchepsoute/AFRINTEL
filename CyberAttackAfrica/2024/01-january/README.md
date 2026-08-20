@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-January%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — January 2024
+# AFRINTEL CTI Report - January 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -50,7 +50,7 @@ All statistics derive from the **12 incidents** in [victims.md](./victims.md), s
 
 ```mermaid
 xychart
-    title "Incidents by country — January 2024"
+    title "Incidents by country - January 2024"
     x-axis ["ZA","DZ","BF","CM","GH","KE","MA","NG","RW","EG"]
     y-axis "Incidents" 0 --> 4
     bar [3,1,1,1,1,1,1,1,1,1]
@@ -58,7 +58,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — January 2024
+    title Incident-type distribution - January 2024
     "Ransomware" : 3
     "Data leaks" : 8
     "Access sales" : 1
@@ -100,7 +100,7 @@ pie showData
 
 ### 4.1 Ransomware
 
-The three South African organizations — TiAuto Investments, Tiger Wheel & Tyre, and Crowe Southern Africa — were published under the LockBit3 name. No usable public technical evidence in the January corpus establishes initial access, the encrypted scope, or confirmed exfiltration. The established fact is the actor's publication of the organizations.
+The three South African organizations - TiAuto Investments, Tiger Wheel & Tyre, and Crowe Southern Africa - were published under the LockBit3 name. No usable public technical evidence in the January corpus establishes initial access, the encrypted scope, or confirmed exfiltration. The established fact is the actor's publication of the organizations.
 
 ### 4.2 Data leaks and access sale
 
@@ -124,8 +124,8 @@ Retail and e-commerce rank first, partly because several publications concern pl
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** leaks and access sales dominate the corpus, accounting for 9 of 12 incidents.
-- **Observed — high confidence:** all three ransomware claims concern South Africa and are associated with LockBit3.
+- **Observed - high confidence:** leaks and access sales dominate the corpus, accounting for 9 of 12 incidents.
+- **Observed - high confidence:** all three ransomware claims concern South Africa and are associated with LockBit3.
 - **Priority gap:** no public DFIR report was identified in the sources reviewed to establish initial access or confirm the ransomware scope.
 - **Priority gap:** full advertised database volumes cannot be inferred from the observed excerpts alone.
 - **Collection need:** monitor victim statements, regulatory notices, and later publications that may distinguish old data, reposts, and contemporary incidents.
@@ -134,9 +134,9 @@ Retail and e-commerce rank first, partly because several publications concern pl
 
 | Analytical status | Phase | Technique | Application to the corpus |
 |---|---|---|---|
-| Preventive | Impact | T1486 — Data Encrypted for Impact | Relevant monitoring for the three ransomware claims; encryption is not confirmed by public telemetry |
-| Assumption | Initial Access / Persistence | T1078 — Valid Accounts | Plausible scenario for the University of Buea access sale; access validity is unknown |
-| Preventive | Exfiltration | T1567 — Exfiltration Over Web Service | Defensive control relevant to leak cases; no exfiltration channel was observed |
+| Preventive | Impact | T1486 - Data Encrypted for Impact | Relevant monitoring for the three ransomware claims; encryption is not confirmed by public telemetry |
+| Assumption | Initial Access / Persistence | T1078 - Valid Accounts | Plausible scenario for the University of Buea access sale; access validity is unknown |
+| Preventive | Exfiltration | T1567 - Exfiltration Over Web Service | Defensive control relevant to leak cases; no exfiltration channel was observed |
 
 ## 9. Recommendations
 
@@ -167,5 +167,5 @@ Retail and e-commerce rank first, partly because several publications concern pl
 
 January 2024 shows two distinct patterns: ransomware concentrated in South Africa and a much wider circulation of data and access claims. Government-related publications carry the greatest sensitivity, but the available evidence does not turn those claims into confirmed compromises. Priorities are to validate exposure, reduce external access, and preserve an independent restoration capability.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -1,4 +1,4 @@
-# Statistiques CTI AFRINTEL — Août 2024
+# Statistiques CTI AFRINTEL - Août 2024
 
 👉🏾 [English version](./README.md)
 
@@ -64,5 +64,5 @@ Cette fiche reprend les 15 cartes du fichier victimes mensuel. Les publications 
 | Ransomware | 14 |
 | Data Leak | 1 |
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR
 

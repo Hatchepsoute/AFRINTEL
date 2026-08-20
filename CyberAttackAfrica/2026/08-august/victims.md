@@ -102,7 +102,7 @@
 
 - **Analysis:**
 
-  The reviewed source is a post published on 7 August 2026 by the actor exfilar (VIP-tier forum account), titled "mpowa.mobi — 2,585 Youth CVs Exposed via 0day Firebase Scanner". The underlying Firebase Realtime Database export referenced in the post was also obtained independently. The actor states the platform's staging Firebase RTDB (staging.mpowa.mobi) was left publicly readable with no authentication, token or referer check, and that a proprietary scanning tool identified it.
+  The reviewed source is a post published on 7 August 2026 by the actor exfilar (VIP-tier forum account), titled "mpowa.mobi - 2,585 Youth CVs Exposed via 0day Firebase Scanner". The underlying Firebase Realtime Database export referenced in the post was also obtained independently. The actor states the platform's staging Firebase RTDB (staging.mpowa.mobi) was left publicly readable with no authentication, token or referer check, and that a proprietary scanning tool identified it.
 
   Examination of the exported database confirms the figures stated in the post: 2,585 complete CV/resume records, 26,675 service-delivery geolocation points, 11 service-provider directory records, 19 platform user accounts, and 3 API access-key entries. Each CV record includes a personal-information block (full name, phone, email, date of birth, gender, nationality, marital status, disability status, driver's license code, highest qualification), together with qualification, work-experience, language, skills and personal-reference sections; the reference entries additionally expose the name, employer, position and phone number of third parties named as referees. The 19 user records include full name, date of birth and geolocation coordinates for platform staff. The dataset also contains 3 live-looking API access keys with descriptive labels.
 
@@ -264,6 +264,33 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
 -->
+
+### August 20, 2026
+#### 🇩🇿 Algeria - Afribaba (www.afribaba.dz)
+
+- **Initial publication date:** August 20, 2026
+- **AFRINTEL detection date:** August 20, 2026
+- **Actor / Group:** TelephoneHooliganism, post published on a cybercriminal forum
+- **Sector:** E-commerce / Marketplace
+- **Website:** [dz.afribaba.com](https://dz.afribaba.com) (observed regional site); actor-cited domain: www.afribaba.dz
+- **AFRINTEL status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+
+- **Description:**
+
+  Afribaba is a classifieds marketplace for individuals and businesses in Algeria. Public sources consulted describe the regional service under dz.afribaba.com; the actor's post instead cites www.afribaba.dz.
+
+- **Analysis:**
+
+  **Observed:** The August 20, 2026 post attributed to TelephoneHooliganism claims to offer approximately 642,000 verified retail contacts, including phone numbers, order history and support tickets, for a negotiable USD 1,400. It describes three export sections and displays several sample links that AFRINTEL did not follow. The local file supplied is only Order_History_Algeria.csv, 5,123 bytes, with 20 data rows and 32 columns. Its SHA-256 is 6c5ecf4641436931b8dd5036a13300ffb04c38f6d2c275cb4c5172d02bffe196.
+
+  Full analysis of the CSV found 20 structurally readable rows, no duplicate full row, but only two distinct order_id values, with 18 repeated order identifiers. Order dates range from March 2022 to September 2024. Observed order statuses are Completed (9), Pending (4), Processing (4), and Canceled (3); payment statuses are Paid (12), Pending (5), and Refunded (3). All monetary fields use USD; observed amounts total USD 4,453.55, without assuming what this small sample represents commercially.
+
+  **Assumption:** The cited domain, post title, and order-export structure are compatible with a claim involving the Afribaba ecosystem. However, the shipping countries are Brazil (13 rows), Bulgaria (2), Cambodia (2), Cameroon (2), and Brunei (1), with no Algerian shipping row. This conflicts with the “Algeria” label and prevents firm attribution of the extract to the Algerian scope or to Afribaba. The sample may represent a multi-country environment, demonstration data, an attribution error, or an excerpt whose context is incomplete.
+
+  **Unknown:** AFRINTEL did not receive the advertised Customer Contacts or Support Tickets tables, nor the approximately 642,000-contact archive. Sample links were not followed; no phone number, name, address, customer identifier or ticket is reproduced; and no Afribaba confirmation is available. The supplied file cannot confirm the claimed volume, technical origin, data validity, access method, exposure of phone numbers or asking price.
 
 ## Notes (not counted in the monthly victim total)
 

@@ -254,6 +254,19 @@ pie
 - Bigbrother's buyer and the nature of exploited access are unknown.
 - Actual data volumes in leak incidents have not been independently verified.
 
+
+### Factual comparison with December 2025
+
+This comparison uses the monthly victim and incident data for [December](../../2025/12-december/victims.md) and [January](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | December 2025 | January | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 18 | 21 | +3 (+16.7%) |
+| Ransomware / extortion | 14 | 17 | +3 |
+| Other leaks, access sales or defacement | 4 | 4 | +0 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 9. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Analytical scope |

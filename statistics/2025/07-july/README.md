@@ -1,4 +1,4 @@
-# AFRINTEL CTI statistics — July 2025
+# AFRINTEL CTI statistics - July 2025
 
 👉🏾 [French version](./README_FR.md)
 
@@ -93,4 +93,4 @@ This statistical sheet is compiled from the 21 cards in the synchronized monthly
 
 The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

@@ -9,12 +9,7 @@
 
 👉🏾 [**French version available here**](./README_FR.md)
 
-## 1. Introduction
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during November 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
-
----
-
-## 2. Executive summary
+## 1. Executive summary
 November 2025 shows persistent ransomware activity affecting African organizations, with a notable focus on Egypt and Morocco. A total of 10 ransomware claims and 4 data-leak claims, targeting organizations in 6 African countries, were identified.
 
 * **Total recorded attacks**: 14
@@ -26,7 +21,14 @@ November 2025 shows persistent ransomware activity affecting African organizatio
 
 ---
 
-## 3. Key statistics
+
+## 2. Methodology
+This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during November 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+---
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by ransomware group
 | Group / Actor | Number of attacks |
@@ -42,7 +44,8 @@ November 2025 shows persistent ransomware activity affecting African organizatio
 | **Total** | **14** |
 
 ```mermaid
-pie title Ransomware groups activity (Nov 2025)
+pie showData
+    title Ransomware groups activity (Nov 2025)
     "clop" : 3
     "nightspire" : 3
     "spacebears" : 1
@@ -110,7 +113,8 @@ graph LR
 | **Total** | **14** |
 
 ```mermaid
-pie title Breakdown by country (November 2025)
+pie showData
+    title Breakdown by country (November 2025)
     "🇪🇬 Egypt" : 4
     "🇲🇦 Morocco" : 4
     "🇨🇮 Ivory Coast" : 2
@@ -133,7 +137,8 @@ pie title Breakdown by country (November 2025)
 | 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 10
     "Data leaks + access sales" : 4
@@ -191,7 +196,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | spacebears | 1 | ███ |
 | stormous | 1 | ███ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Attack details by ransomware group
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, November 2025 recorded **14** incidents versus **19** in the preceding month (a decrease of **-5**; **-26.3%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 19 | 14 | -5 (-26.3%) |
+
+## 4. Detailed analysis by incident type
 ### 4.1 clop (3 attacks)
 * **2025-11-06**: ELSEWEDYELECTRIC.COM (Egypt, Tech/Industry) - Claimed & Leaked.
 * **2025-11-06**: ZANACO.CO.ZM (Zambia, Banking) - Claimed & Leaked.
@@ -250,7 +264,8 @@ graph LR
 ```
 ---
 
-## 5. Industry analysis
+
+## 5. Sectoral impact
 * **Logistics (2)**: Targeting of strategic platforms (Dovern Import in Morocco and Anka in Ivory Coast), confirming the vulnerability of regional supply chains.
 * **Financial services (2)**: Attacks against a major banking institution (Zanaco in Zambia) and a pension fund manager (Fidelity in Nigeria).
 * **Construction / Industry (2)**: Focus on Egyptian industrial leaders (Elsewedy Electric and Samcrete), prime targets for industrial espionage and extortion.
@@ -259,7 +274,16 @@ graph LR
 
 ---
 
-## 6. Geographical analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 * **🇪🇬 Egypt**: Epicenter of activity this month with **4 victims**. The targeting is exclusively industrial and technological.
 * **🇲🇦 Morocco**: Activity with **4 victims** (Logistics, Retail, a public-sector road-safety agency and an unattributed Technology data-leak claim), affecting major players in the local market.
 * **🇨🇮 Ivory Coast**: Emergence of high-impact attacks (2 victims), notably with the massive user data leak from the Anka platform.
@@ -267,13 +291,32 @@ graph LR
 
 ---
 
-## 7. Observed TTPs (Tactics, Techniques & Procedures)
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 * **Large-scale B2C Data Leaks**: The Anka incident (537,000 users) demonstrates a intent to damage reputation and monetize personal data on cybercrime forums.
 * **Critical Infrastructure Targeting**: The attack on Elsewedy Electric highlights the risks facing the energy sector and industrial systems.
 
 ---
 
-## 8. Recommendations
+
+## 9. Recommendations
 1.  **Logistics & Retail Sectors**: Harden customer database security and increase monitoring of API access and SQL dump attempts.
 2.  **Financial Sector**: Enhance end-to-end encryption and implement proactive monitoring of transactions and account registry access.
 3.  **Health & NGOs**: Protect sensitive data through strict network segmentation to prevent the lateral spread of ransomware.
@@ -283,7 +326,26 @@ graph LR
 
 ---
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 November 2025 shows a diversification of threat actors (7 named groups plus three unattributed data-leak cases, for 14 victims). The concentration of attacks on Egypt and the targeting of massive user data in West Africa indicate an evolution of extortion strategies toward more varied sectors than traditional finance.
 
 ---

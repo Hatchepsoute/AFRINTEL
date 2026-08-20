@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Août%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Août 2024
+# Rapport CTI AFRINTEL - Août 2024
 
 👉🏾 [English version](./README.md)
 
@@ -11,7 +11,7 @@
 
 Août 2024 atteint **15 incidents**, dont **14 revendications ransomware** et **1 fuite de données**. L’Afrique du Sud concentre six publications, loin devant les Seychelles et le Zimbabwe avec deux chacune. DarkVault est l’acteur le plus visible avec trois incidents.
 
-Deux organisations avaient déjà été publiées sous un autre nom d’acteur : Remitano en avril et Lenmed en mai. Ces doubles revendications peuvent correspondre à plusieurs scénarios — partage, revente, réutilisation d’une revendication ou attribution inexacte — mais aucune source publique ne permet de trancher. Eventizer constitue la seule fuite de données du mois avec un échantillon visible.
+Deux organisations avaient déjà été publiées sous un autre nom d’acteur : Remitano en avril et Lenmed en mai. Ces doubles revendications peuvent correspondre à plusieurs scénarios - partage, revente, réutilisation d’une revendication ou attribution inexacte - mais aucune source publique ne permet de trancher. Eventizer constitue la seule fuite de données du mois avec un échantillon visible.
 
 Voir [victims_FR.md](./victims_FR.md).
 
@@ -47,7 +47,7 @@ Les statistiques dérivent des **15 incidents** de [victims_FR.md](./victims_FR.
 
 ```mermaid
 xychart
-    title "Incidents par pays — août 2024"
+    title "Incidents par pays - août 2024"
     x-axis ["ZA","SC","ZW","CI","DJ","GH","KE","TN"]
     y-axis "Incidents" 0 --> 7
     bar [6,2,2,1,1,1,1,1]
@@ -55,7 +55,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — août 2024
+    title Répartition par type - août 2024
     "Ransomware" : 14
     "Fuite de données" : 1
 ```
@@ -119,9 +119,9 @@ La finance et le commerce regroupent plus de la moitié du corpus. Ils présente
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** 14 incidents sur 15 sont des revendications ransomware.
-- **Observé — confiance élevée :** l’Afrique du Sud concentre 40 % du corpus.
-- **Observé — confiance élevée :** Remitano et Lenmed avaient déjà été publiées par d’autres acteurs.
+- **Observé - confiance élevée :** 14 incidents sur 15 sont des revendications ransomware.
+- **Observé - confiance élevée :** l’Afrique du Sud concentre 40 % du corpus.
+- **Observé - confiance élevée :** Remitano et Lenmed avaient déjà été publiées par d’autres acteurs.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour expliquer les doubles revendications.
 - **Lacune :** le volume complet d’Eventizer et la relation entre acteurs restent inconnus.
 - **Collecte attendue :** chronologie des publications, confirmations victimes et comparaison non intrusive des échantillons disponibles.
@@ -130,9 +130,9 @@ La finance et le commerce regroupent plus de la moitié du corpus. Ils présente
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les revendications |
-| Préventif | T1490 — Inhibit System Recovery | Surveillance des sauvegardes |
-| Préventif | T1567 — Exfiltration Over Web Service | Contrôle des transferts ; canal Eventizer non observé |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les revendications |
+| Préventif | T1490 - Inhibit System Recovery | Surveillance des sauvegardes |
+| Préventif | T1567 - Exfiltration Over Web Service | Contrôle des transferts ; canal Eventizer non observé |
 
 ## 9. Recommandations
 
@@ -161,6 +161,6 @@ La finance et le commerce regroupent plus de la moitié du corpus. Ils présente
 
 Août est le mois le plus dense de 2024 à ce stade, mais sa lecture exige de séparer activité visible et compromission confirmée. Les doubles revendications compliquent l’attribution, tandis qu’Eventizer apporte le seul signal directement exploitable sur la nature des données. La priorité est la validation, pas la spéculation sur les relations entre groupes.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

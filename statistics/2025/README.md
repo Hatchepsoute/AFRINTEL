@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-2025-blue)
 
-# AFRINTEL annual statistics — 2025
+# AFRINTEL annual statistics - 2025
 
 👉🏾 [French version](./README_FR.md)
 
@@ -131,4 +131,4 @@ The distribution measures AFRINTEL visibility, not the prevalence of real-world 
 
 The 2025 statistical baseline is internally reconciled at **197 records**: **122 ransomware**, **72 data leaks**, **3 access sales** and **0 defacements**. Country, sector and actor views must be regenerated from the monthly victim source whenever the source cards change.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

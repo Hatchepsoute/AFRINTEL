@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-November%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — November 2024
+# AFRINTEL CTI Report - November 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -49,7 +49,7 @@ All statistics derive from the **15 incidents** in [victims.md](./victims.md), s
 
 ```mermaid
 xychart
-    title "Incidents by country — November 2024"
+    title "Incidents by country - November 2024"
     x-axis ["ZA","BF","EG","NG","CM","ET","KE","MA","NA","SD","TZ"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,2,2,1,1,1,1,1,1,1]
@@ -57,7 +57,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident type distribution — November 2024
+    title Incident type distribution - November 2024
     "Ransomware" : 11
     "Data leaks" : 2
     "Access sales" : 2
@@ -124,9 +124,9 @@ Manufacturing leads the month with three incidents. Finance, public health, prof
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** the dataset spans 11 countries; no country exceeds two incidents.
-- **Observed — high confidence:** ransomware, leaks, and access sales coexist and require distinct response priorities.
-- **Observed — medium confidence:** three incidents include a published sample, which does not automatically validate the full claimed volumes.
+- **Observed - high confidence:** the dataset spans 11 countries; no country exceeds two incidents.
+- **Observed - high confidence:** ransomware, leaks, and access sales coexist and require distinct response priorities.
+- **Observed - medium confidence:** three incidents include a published sample, which does not automatically validate the full claimed volumes.
 - **Major intelligence gap:** no public DFIR report was identified in the consulted sources to establish access vectors, lateral movement, or exfiltration mechanisms.
 - **Gap:** the validity of Sentap’s advertised accesses and the original date of the ACAO data remain unknown.
 - **Collection requirement:** seek institutional confirmation, date reposted data, and monitor any subsequent use of the advertised access.
@@ -135,10 +135,10 @@ Manufacturing leads the month with three incidents. Finance, public health, prof
 
 | Qualification | Technique | Defensive use |
 |---|---|---|
-| Assumption — medium confidence | T1078 — Valid Accounts | Scenario to examine for access sales; not observed in the sources |
-| Preventive | T1486 — Data Encrypted for Impact | Detect high-volume file writes and renames associated with encryption |
-| Preventive | T1490 — Inhibit System Recovery | Alert on shadow-copy deletion and backup modification |
-| Preventive | T1567 — Exfiltration Over Web Service | Monitor unusual outbound transfers; channel not established |
+| Assumption - medium confidence | T1078 - Valid Accounts | Scenario to examine for access sales; not observed in the sources |
+| Preventive | T1486 - Data Encrypted for Impact | Detect high-volume file writes and renames associated with encryption |
+| Preventive | T1490 - Inhibit System Recovery | Alert on shadow-copy deletion and backup modification |
+| Preventive | T1567 - Exfiltration Over Web Service | Monitor unusual outbound transfers; channel not established |
 
 ## 9. Recommendations
 
@@ -167,6 +167,6 @@ Manufacturing leads the month with three incidents. Finance, public health, prof
 
 November has the broadest geographic spread in the 2024 dataset, but it does not represent a single campaign. The incidents differ in both evidence and nature. Operational priority should go to environments where business criticality and the available evidence intersect: public health, taxation, insurance, and manufacturing.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

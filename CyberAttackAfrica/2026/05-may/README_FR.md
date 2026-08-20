@@ -355,6 +355,19 @@ pie
 
 ---
 
+
+### Comparaison factuelle avec avril 2026
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [avril](../04-april/victims_FR.md) et de [mai](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | avril 2026 | mai | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 60 | 57 | -3 (-5,0%) |
+| Ransomware / extorsion | 20 | 17 | -3 |
+| Autres fuites, ventes d'accès ou défacements | 40 | 40 | +0 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 8. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Portée analytique |

@@ -1,4 +1,4 @@
-# Statistiques CTI AFRINTEL — Juillet 2025
+# Statistiques CTI AFRINTEL - Juillet 2025
 
 👉🏾 [English version](./README.md)
 
@@ -86,4 +86,4 @@ Cette fiche reprend les 21 cartes des fichiers mensuels synchronisés `victims_F
 | Vente d’accès | 0 |
 | Défacement | 0 |
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

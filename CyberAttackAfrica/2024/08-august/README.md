@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-August%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — August 2024
+# AFRINTEL CTI Report - August 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -11,7 +11,7 @@
 
 August 2024 reaches **15 incidents**, comprising **14 ransomware claims** and **1 data leak**. South Africa accounts for six publications, well ahead of Seychelles and Zimbabwe with two each. DarkVault is the most visible actor with three incidents.
 
-Two organizations had already been published under different actor names: Remitano in April and Lenmed in May. These double claims may reflect several scenarios — sharing, resale, reuse of a claim, or inaccurate attribution — but no public source resolves the issue. Eventizer is the month's only data leak with a visible sample.
+Two organizations had already been published under different actor names: Remitano in April and Lenmed in May. These double claims may reflect several scenarios - sharing, resale, reuse of a claim, or inaccurate attribution - but no public source resolves the issue. Eventizer is the month's only data leak with a visible sample.
 
 See [victims.md](./victims.md).
 
@@ -47,7 +47,7 @@ Statistics derive from the **15 incidents** in [victims.md](./victims.md), synch
 
 ```mermaid
 xychart
-    title "Incidents by country — August 2024"
+    title "Incidents by country - August 2024"
     x-axis ["ZA","SC","ZW","CI","DJ","GH","KE","TN"]
     y-axis "Incidents" 0 --> 7
     bar [6,2,2,1,1,1,1,1]
@@ -55,7 +55,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — August 2024
+    title Incident-type distribution - August 2024
     "Ransomware" : 14
     "Data leak" : 1
 ```
@@ -119,9 +119,9 @@ Finance and retail account for more than half the corpus. They combine continuit
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** 14 of 15 incidents are ransomware claims.
-- **Observed — high confidence:** South Africa accounts for 40% of the corpus.
-- **Observed — high confidence:** Remitano and Lenmed had previously been published by other actors.
+- **Observed - high confidence:** 14 of 15 incidents are ransomware claims.
+- **Observed - high confidence:** South Africa accounts for 40% of the corpus.
+- **Observed - high confidence:** Remitano and Lenmed had previously been published by other actors.
 - **Gap:** no public DFIR report was identified in the sources reviewed to explain the double claims.
 - **Gap:** the full Eventizer volume and any relationship between actors remain unknown.
 - **Collection need:** publication chronology, victim confirmation, and non-intrusive comparison of available samples.
@@ -130,9 +130,9 @@ Finance and retail account for more than half the corpus. They combine continuit
 
 | Status | Technique | Use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed in the claims |
-| Preventive | T1490 — Inhibit System Recovery | Backup monitoring |
-| Preventive | T1567 — Exfiltration Over Web Service | Transfer controls; Eventizer channel not observed |
+| Preventive | T1486 - Data Encrypted for Impact | Encryption detection; not confirmed in the claims |
+| Preventive | T1490 - Inhibit System Recovery | Backup monitoring |
+| Preventive | T1567 - Exfiltration Over Web Service | Transfer controls; Eventizer channel not observed |
 
 ## 9. Recommendations
 
@@ -161,6 +161,6 @@ Finance and retail account for more than half the corpus. They combine continuit
 
 August is the densest month of 2024 to date, but visible activity must remain separate from confirmed compromise. Double claims complicate attribution, while Eventizer provides the only directly actionable signal on data content. Validation matters more than speculation about relationships between groups.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

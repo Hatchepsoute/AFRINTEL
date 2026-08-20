@@ -102,7 +102,7 @@
 
 - **Analyse :**
 
-  AFRINTEL a examiné une publication du 7 août 2026 par l'acteur exfilar (compte de forum de niveau VIP), intitulée « mpowa.mobi — 2,585 Youth CVs Exposed via 0day Firebase Scanner », et a obtenu de façon indépendante l'export de la base de données Firebase Realtime Database référencée dans la publication. L'acteur affirme que la base RTDB Firebase de préproduction de la plateforme (staging.mpowa.mobi) était librement accessible en lecture, sans authentification, jeton ni vérification de referer, et qu'un outil de scan propriétaire l'a identifiée.
+  AFRINTEL a examiné une publication du 7 août 2026 par l'acteur exfilar (compte de forum de niveau VIP), intitulée « mpowa.mobi - 2,585 Youth CVs Exposed via 0day Firebase Scanner », et a obtenu de façon indépendante l'export de la base de données Firebase Realtime Database référencée dans la publication. L'acteur affirme que la base RTDB Firebase de préproduction de la plateforme (staging.mpowa.mobi) était librement accessible en lecture, sans authentification, jeton ni vérification de referer, et qu'un outil de scan propriétaire l'a identifiée.
 
   L'examen par AFRINTEL de la base exportée confirme les chiffres annoncés dans la publication : 2 585 CV/curriculum vitae complets, 26 675 points de géolocalisation de prestations de services, 11 fiches d'un annuaire de prestataires de services, 19 comptes utilisateurs de la plateforme et 3 entrées de clés d'accès API. Chaque CV comprend un bloc d'informations personnelles (nom complet, téléphone, email, date de naissance, genre, nationalité, statut marital, statut de handicap, code de permis de conduire, plus haut diplôme), ainsi que des sections qualification, expérience professionnelle, langues, compétences et références personnelles ; ces dernières exposent en outre le nom, l'employeur, le poste et le numéro de téléphone de tiers désignés comme référents. Les 19 comptes utilisateurs incluent le nom complet, la date de naissance et les coordonnées géographiques de membres du personnel de la plateforme. Le jeu de données contient également 3 clés d'accès API d'apparence active, accompagnées de libellés descriptifs.
 
@@ -264,6 +264,33 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
 -->
+
+### 20 août 2026
+#### 🇩🇿 Algérie - Afribaba (www.afribaba.dz)
+
+- **Date de publication initiale :** 20 août 2026
+- **Date de détection AFRINTEL :** 20 août 2026
+- **Acteur / Groupe :** TelephoneHooliganism, publication sur un forum cybercriminel
+- **Secteur :** Commerce en ligne / Marketplace
+- **Site web :** [dz.afribaba.com](https://dz.afribaba.com) (site régional observé) ; domaine cité par l'acteur : www.afribaba.dz
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+  Afribaba est une plateforme de petites annonces destinée aux particuliers et aux professionnels en Algérie. Les sources publiques consultées décrivent le service régional sous le domaine dz.afribaba.com ; la publication de l'acteur cite toutefois www.afribaba.dz.
+
+- **Analyse :**
+
+  **Observed :** La publication du 20 août 2026 attribuée à TelephoneHooliganism affirme proposer environ 642 000 contacts de détaillants vérifiés, avec numéros de téléphone, historique de commandes et tickets de support, pour 1 400 USD négociables. Elle décrit trois sections d'export et affiche plusieurs liens d'échantillon que AFRINTEL n'a pas suivis. Le fichier local fourni est uniquement Order_History_Algeria.csv, d'une taille de 5 123 octets, composé de 20 lignes de données et 32 colonnes. Son empreinte SHA-256 est 6c5ecf4641436931b8dd5036a13300ffb04c38f6d2c275cb4c5172d02bffe196.
+
+  L'analyse complète du CSV relève 20 lignes structurellement lisibles, sans ligne complète dupliquée, mais seulement deux valeurs distinctes de order_id, avec 18 répétitions d'identifiant de commande. Les dates de commande couvrent mars 2022 à septembre 2024. Les statuts de commande observés sont Completed (9), Pending (4), Processing (4) et Canceled (3) ; les statuts de paiement sont Paid (12), Pending (5) et Refunded (3). Les champs monétaires sont tous en USD ; les montants observés totalisent 4 453,55 USD avant de considérer la signification commerciale de cet échantillon.
+
+  **Assumption :** Le nom de domaine cité, le titre de la publication et la structure d'un export de commandes sont compatibles avec une revendication visant l'écosystème Afribaba. La présence de pays d'expédition Brazil (13 lignes), Bulgaria (2), Cambodia (2), Cameroon (2) et Brunei (1), sans ligne d'expédition algérienne, constitue toutefois une incohérence avec l'intitulé « Algeria » et empêche de relier fermement cet extrait au périmètre algérien ou à la plateforme Afribaba. L'échantillon peut correspondre à un environnement multi-pays, à des données de démonstration, à une attribution erronée ou à un extrait dont le contexte est incomplet.
+
+  **Unknown :** AFRINTEL n'a pas reçu les tables Customer Contacts ou Support Tickets annoncées, ni l'archive d'environ 642 000 contacts. Les liens d'échantillon n'ont pas été suivis, aucun numéro de téléphone, nom, adresse, identifiant client ou ticket n'est reproduit, et aucune confirmation d'Afribaba n'est disponible. Le fichier fourni ne permet pas de confirmer le volume revendiqué, l'origine technique, la validité des données, la méthode d'accès, l'exposition de numéros de téléphone ou le prix proposé.
 
 ## Notes (non comptabilisées dans le total mensuel de victimes)
 

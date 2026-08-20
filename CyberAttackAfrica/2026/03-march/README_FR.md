@@ -304,6 +304,19 @@ pie
 - L’opération UBA Sénégal a eu lieu fin janvier, a été révélée en mars, puis documentée par le ngCERT le 25 juin 2026 ; le vecteur d’accès initial reste inconnu.
 - La compromission du ministère de la Santé guinéen reste partiellement confirmée (accès corrélé, pas de divulgation complète).
 
+
+### Comparaison factuelle avec février 2026
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [février](../02-february/victims_FR.md) et de [mars](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | février 2026 | mars | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 20 | 41 | +21 (+105,0%) |
+| Ransomware / extorsion | 20 | 19 | -1 |
+| Autres fuites, ventes d'accès ou défacements | 0 | 22 | +22 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Portée analytique |

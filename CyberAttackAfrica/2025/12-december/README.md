@@ -9,12 +9,7 @@
 
 👉🏾 [**French version available here**](./README_FR.md)
 
-## 1. Introduction
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during December 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, and targeted sectors on the continent.
-
----
-
-## 2. Executive summary
+## 1. Executive summary
 December 2025 shows an increase in ransomware activity with 14 ransomware victims plus 4 non-ransomware data-leak claims, identified across 10 African countries. The month is marked by a significant concentration of attacks in Egypt and South Africa, persistent targeting of the healthcare sector, and a new data-leak claim affecting the energy/critical-infrastructure sector in Kenya.
 
 * **Total recorded attacks**: 18
@@ -27,7 +22,14 @@ December 2025 shows an increase in ransomware activity with 14 ransomware victim
 
 ---
 
-## 3. Key statistics
+
+## 2. Methodology
+This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during December 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, and targeted sectors on the continent.
+
+---
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by ransomware group
 | Group / Actor | Number of attacks |
@@ -43,7 +45,8 @@ December 2025 shows an increase in ransomware activity with 14 ransomware victim
 | **Total** | **14** |
 
 ```mermaid
-pie title Ransomware groups activity (Dec 2025)
+pie showData
+    title Ransomware groups activity (Dec 2025)
     "lockbit5" : 3
     "qilin" : 3
     "dragonforce" : 2
@@ -95,7 +98,8 @@ pie title Ransomware groups activity (Dec 2025)
 | **Total** | **18** |
 
 ```mermaid
-pie title Breakdown by country (December 2025)
+pie showData
+    title Breakdown by country (December 2025)
     "Egypt" : 5
     "South Africa" : 3
     "Tunisia" : 3
@@ -126,7 +130,8 @@ pie title Breakdown by country (December 2025)
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 | 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 14
     "Data leaks + access sales" : 4
@@ -185,7 +190,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | devman | 1 | ███ |
 | direwolf | 1 | ███ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Attack details by ransomware group
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, December 2025 recorded **18** incidents versus **14** in the preceding month (an increase of **+4**; **+28.6%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 14 | 18 | +4 (+28.6%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 lockbit5 (3 attacks)
 * **2025-12-07**: **incolease.com** (Egypt, Finance) - Claimed & Leaked.
@@ -255,7 +269,8 @@ graph LR
 ```
 ---
 
-## 5. Industry analysis
+
+## 5. Sectoral impact
 * **Healthcare (4)**: High vulnerability in Tunisia with three major incidents affecting university hospitals and medical associations, plus a data-leak claim affecting a Moroccan pharmacy e-commerce platform.
 * **Public Administration (2)**: Targeting of critical regulatory bodies (NCR in South Africa) and local municipalities (Elundini), impacting public service delivery.
 * **Insurance & Finance (4)**: Continued focus on wealth-rich sectors in Nigeria, Egypt, and Zambia, including health insurance and leasing services.
@@ -265,7 +280,16 @@ graph LR
 
 ---
 
-## 6. Geographical analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 * **🇪🇬 Egypt**: Remains the primary target for the second consecutive month with **5 victims** across ransomware (technology, finance, industrial sectors) and one additional data-leak claim (100 Watt Plast).
 * **🇿🇦 South Africa**: Significant increase with **3 victims** including a major automotive partner (Bosch partner) and a national financial regulator.
 * **🇹🇳 Tunisia**: Emergence as a high-risk zone for healthcare infrastructure with **3 attacks** recorded in December.
@@ -275,7 +299,25 @@ graph LR
 
 ---
 
-## 7. Observed TTPs (Tactics, Techniques & Procedures)
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 
 * **Multi-Staged Extortion**: Groups such as **Lockbit5** and **Qilin** consistently use "Claim & Leak" (Double Extortion) methods to maximize financial and psychological pressure on targets.
 * **Re-victimization & Double Claiming**: 
@@ -284,14 +326,34 @@ graph LR
 * **Focus on Essential Service Infrastructure**: Increased targeting of regulatory bodies (NCR in South Africa) and national health management systems (NHIMA in Zambia) to exfiltrate large volumes of Personally Identifiable Information (PII).
 ---
 
-## 8. Recommendations
+
+## 9. Recommendations
 1.  **Healthcare Sector**: Urgent audit of Internet-facing systems and implementation of offline backups to ensure clinical continuity.
 2.  **Public Sector**: Hardening of administrative portals and financial regulatory systems against credential theft.
 3.  **Industrial & Manufacturing**: Protection of supply chain data, particularly for companies acting as partners for global brands (e.g., Bosch).
 
 ---
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 December 2025 shows a surge in ransomware impact across North and Southern Africa, alongside four independent, non-ransomware data-leak claims spanning education (Algeria), industrial manufacturing (Egypt), healthcare (Morocco) and, for the first time this month, energy/critical infrastructure (Kenya). The diversification of actors (8 named ransomware groups plus four separate claim actors) and the repeated targeting of healthcare institutions indicate that threat actors are prioritizing high-impact targets where downtime is not an option, while the KETRACO claim signals continued interest in African critical-infrastructure operators even when the exposed data is limited in scope.
 
 ---

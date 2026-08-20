@@ -290,6 +290,25 @@ The records below are compiled directly from the AFRINTEL monthly files for 2024
 
 ## February 2024
 
+### February 1, 2024
+
+#### 🇪🇬 Egypt - 8WORX
+- **Publication date:** June 30, 2023
+- **Discovery date:** February 1, 2024
+- **Actor / Group:** Tanaka, publication on an underground forum
+- **Sector:** Technology / Software Services
+- **Website:** [8worx.com](https://8worx.com)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim description:** 8WORX is a technology solutions provider legally established in Delaware, USA, that states a business focus on Egypt and the Middle East, developing web applications and systems for private and public sector clients.
+- **Analysis:** The post is published under the Tanaka account, which carries a moderator badge on the forum, so the original intrusion actor is not identified. The forum post advertises a 1.3 GB SQL export dated 2023, with roughly 4 million rows across tables including phone numbers, activity logs and social accounts, structured around a "Leads" module consistent with a CRM or lead-management system. The visible sample shows genuine-looking SQL INSERT statements with detailed contact, activity-tracking and account fields, and a large share of the phone records carry an Egypt (EG) country code, consistent with 8WORX's stated regional focus. The structural consistency of the schema and the plausibility of the sampled records support a high confidence assessment that the sample is authentic, though AFRINTEL has not independently confirmed the intrusion, the full scope of the underlying database, or the completeness of the announced 4-million-row volume. Exposure of this dataset would combine phone numbers, email addresses, lead and account activity, and internal user references for a very large number of individuals, creating a significant risk of targeted phishing, social engineering and fraud. AFRINTEL does not reproduce any phone number, email address, name or internal record from the reviewed sample.
+
+----------------------------
+
+----------------------------
+
 ### February 6, 2024
 
 #### 🇪🇬 Egypt - ArpuPlus
@@ -298,7 +317,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2024
 - **Website:** [arpuplus.com](https://www.arpuplus.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
-- **Impact level:** Level 3
+- **Impact level:** Level 2
 - **Victim description:** ArpuPlus, founded in 2003 in Cairo as a subsidiary of A15, is a leading digital venture builder and mobile services provider across the MENA region. Operating from 11 regional offices, it delivers value-added systems including video-on-demand, music distribution, telehealth, and enterprise messaging solutions.
 
 ----------------------------
@@ -408,6 +427,27 @@ The records below are compiled directly from the AFRINTEL monthly files for 2024
 ----------------------------
 
 ## March 2024
+
+### March 1, 2024
+
+#### 🇪🇹 Ethiopia - Federal eTrade and eRIS portals
+- **Actor / Group:** ThreatSec
+- **Sector:** Government / Digital public services
+- **Website:** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim Description:** The publication links the Ethiopian Ministry of Trade and Regional Integration's eTrade portal with the Ethiopian Food and Drug Authority's eRIS system. These are two separate federal services combined in a single claim.
+
+- **Analysis:**
+  - **Observed:** the entry is filed under March 1, 2024 at the maintainer's request. The forum publication, relayed by Tanaka and dated August 24, 2023, attributes to ThreatSec a claim of access to both portals and collection of 43 files, including PDFs, images, and government identity documents. One locally provided PDF was examined read-only: 3,023,068 bytes, five scanned pages, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. All five pages contain an Amharic-language administrative and contractual document with official stamps, handwritten signatures, and financial amounts. No raw personal data is reproduced.
+  - **Assumption:** the document characteristics are consistent with an Ethiopian administrative record and increase confidence in the sample's structural plausibility, without establishing its technical provenance.
+  - **Unknown:** the acquisition method, the PDF's direct link to each portal, the existence and content of the other 42 claimed files, and confirmation by the affected authorities remain unverified. Visual review covered all five pages, but complete Amharic OCR could not be validated.
+
+----------------------------
+
+----------------------------
 
 ### March 9, 2024
 
@@ -846,25 +886,25 @@ The records below are compiled directly from the AFRINTEL monthly files for 2024
 - **Victim description:** Maxcess-logistics is a major commercial enterprise operating in the logistics sector, contributing significantly to the regional economic landscape in Tunisia.
 
 ### July 2, 2024
-#### 🇪🇹 Ethiopia - National War College (nwc.ndu.edu)
+#### 🇪🇹 Ethiopia - F.D.R.E Defence War College (cited domain: nwc.ndu.edu)
 
 - **Actor / Group:** TheColorYellow, post published on RaidForums
 - **Sector:** Defense / Military education
 - **Status:** Claim - Data Sample Published
-- **Website:** nwc.ndu.edu (as stated in the post; see reliability note)
+- **Website:** [dwc.edu.et](https://dwc.edu.et/wc/) (organization observed in the samples); actor-cited domain: nwc.ndu.edu
 - **Confidence level:** Medium
 - **Impact level:** Level 4
 - **Incident type:** Data Leak
 - **Discovery date:** July 2, 2024
 
 - **Reliability note:**
-  The post's title and text cite the domain "nwc.ndu.edu", which corresponds to the National War College of the (US) National Defense University. However, the two document samples that carry an institutional letterhead in the post both display the emblem and Amharic-language header of the "F.D.R.E Defence War College" (Federal Democratic Republic of Ethiopia), not a US institution. AFRINTEL cannot resolve this discrepancy from the material reviewed and treats the domain cited by the actor as unverified; the assessment below is based on the Ethiopian letterhead visible in the samples, consistent with the seller's claim that the victim is an Ethiopian military college.
+  TheColorYellow's post presents a victim called the "National War College of Ethiopia" and cites nwc.ndu.edu. That domain corresponds to the National War College of the US National Defense University. However, the five locally provided PNG files display the emblem and Amharic-language header of Ethiopia's "F.D.R.E Defence War College", together with internal documents, a visible inventory of 29 workstations, and a visible table of 17 telephone entries. A domain error in the announcement, a naming confusion, or incorrect technical attribution therefore remains possible. AFRINTEL records the F.D.R.E Defence War College as the organization observed in the samples and retains nwc.ndu.edu as the announced but unverified domain.
 
 - **Description:**
-  The National War College referenced in the post appears, based on the letterhead visible in the samples, to correspond to the FDRE Defence War College, a Federal Democratic Republic of Ethiopia military-education institution.
+  The visible elements correspond to the F.D.R.E Defence War College, an Ethiopian military-education institution. The official link observed for that organization is [dwc.edu.et](https://dwc.edu.et/wc/). nwc.ndu.edu remains only the domain cited in the actor's announcement.
 
 - **CTI analysis:**
-  The actor TheColorYellow claims to hold 747 MB of confidential emails allegedly stolen directly from the institution's Exchange server, exported as PST mailbox files, and offers the data for $500 with escrow. Three document images are shown as samples: an Amharic-language internal document referencing the college's IT department and an internal work-plan/discipline note bearing the FDRE Defence War College emblem; a bilingual (Amharic/English) "Secrecy/Confidentiality Agreement" template on the same letterhead, with blank fields for name, ID number, department and signatures; and a separate Chinese-language notice addressed to international students concerning 2021 fall-semester entry arrangements, whose connection to the claimed Exchange compromise is unclear from the material shown. AFRINTEL did not access the underlying 747 MB dataset and cannot confirm the completeness, authenticity or actual mailbox origin of the claimed export beyond these document images. The presence of an internal confidentiality-agreement template and IT-department correspondence bearing a genuine-looking institutional letterhead is consistent with a defense-education institution's internal document set, but does not by itself confirm an Exchange-server-wide mailbox compromise. If the underlying claim is accurate, exposure of military-college staff and student email communications would carry sovereign-sector sensitivity (personnel data, internal administrative and possibly training-related correspondence). AFRINTEL does not reproduce any name, ID number, email address or document content beyond what is described above.
+  TheColorYellow claims to hold 747 MB of confidential emails allegedly stolen directly from the institution's Exchange server, exported as PST mailbox files, and offers the data for $500 through escrow. The local directory contains five PNG files but no PST, EML, MSG, or Exchange export. The images include institutional documents, a Chinese notice for international students, a visible inventory of 29 workstations, and a visible table of 17 telephone entries. These elements are consistent with internal documents from the F.D.R.E Defence War College and strengthen sample attribution, but do not confirm access to the Exchange server, the existence of 747 MB, or the completeness or origin of the data. Amharic and Chinese OCR was not used to transcribe values; no name, hardware identifier, or telephone number is reproduced.
 
 ### July 5, 2024
 #### 🇿🇦 South Africa - National health laboratory services
@@ -2003,4 +2043,4 @@ The records below are compiled directly from the AFRINTEL monthly files for 2024
 
 ---
 
-*AFRINTEL compilation — source of truth: monthly files.*
+*AFRINTEL compilation - source of truth: monthly files.*

@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Novembre%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Novembre 2024
+# Rapport CTI AFRINTEL - Novembre 2024
 
 👉🏾 [English version](./README.md)
 
@@ -49,7 +49,7 @@ Les statistiques dérivent des **15 incidents** de [victims_FR.md](./victims_FR.
 
 ```mermaid
 xychart
-    title "Incidents par pays — novembre 2024"
+    title "Incidents par pays - novembre 2024"
     x-axis ["ZA","BF","EG","NG","CM","ET","KE","MA","NA","SD","TZ"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,2,2,1,1,1,1,1,1,1]
@@ -57,7 +57,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — novembre 2024
+    title Répartition par type - novembre 2024
     "Ransomware" : 11
     "Fuites de données" : 2
     "Ventes d’accès" : 2
@@ -124,9 +124,9 @@ L’industrie est le premier secteur du mois avec trois incidents. La finance, l
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** le corpus est réparti sur 11 pays ; aucun pays ne dépasse deux incidents.
-- **Observé — confiance élevée :** ransomware, fuites et ventes d’accès coexistent et doivent rester séparés dans les priorités de réponse.
-- **Observé — confiance moyenne :** trois incidents sont associés à un échantillon publié, sans que cela valide automatiquement l’intégralité des volumes revendiqués.
+- **Observé - confiance élevée :** le corpus est réparti sur 11 pays ; aucun pays ne dépasse deux incidents.
+- **Observé - confiance élevée :** ransomware, fuites et ventes d’accès coexistent et doivent rester séparés dans les priorités de réponse.
+- **Observé - confiance moyenne :** trois incidents sont associés à un échantillon publié, sans que cela valide automatiquement l’intégralité des volumes revendiqués.
 - **Lacune majeure :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour établir les vecteurs d’accès, les mouvements latéraux ou les mécanismes d’exfiltration.
 - **Lacune :** la validité des accès proposés par Sentap et la date d’origine des données ACAO restent inconnues.
 - **Collecte attendue :** rechercher des confirmations institutionnelles, dater les données republiées et suivre l’éventuelle réutilisation des accès proposés.
@@ -135,10 +135,10 @@ L’industrie est le premier secteur du mois avec trois incidents. La finance, l
 
 | Qualification | Technique | Utilisation défensive |
 |---|---|---|
-| Hypothèse — confiance moyenne | T1078 — Valid Accounts | Scénario à examiner pour les ventes d’accès ; non observé dans les sources |
-| Préventif | T1486 — Data Encrypted for Impact | Détecter les écritures et renommages massifs associés au chiffrement |
-| Préventif | T1490 — Inhibit System Recovery | Alerter sur la suppression de clichés instantanés et la modification des sauvegardes |
-| Préventif | T1567 — Exfiltration Over Web Service | Surveiller les transferts sortants inhabituels ; canal non établi |
+| Hypothèse - confiance moyenne | T1078 - Valid Accounts | Scénario à examiner pour les ventes d’accès ; non observé dans les sources |
+| Préventif | T1486 - Data Encrypted for Impact | Détecter les écritures et renommages massifs associés au chiffrement |
+| Préventif | T1490 - Inhibit System Recovery | Alerter sur la suppression de clichés instantanés et la modification des sauvegardes |
+| Préventif | T1567 - Exfiltration Over Web Service | Surveiller les transferts sortants inhabituels ; canal non établi |
 
 ## 9. Recommandations
 
@@ -167,6 +167,6 @@ L’industrie est le premier secteur du mois avec trois incidents. La finance, l
 
 Novembre présente la diffusion géographique la plus large du corpus 2024, mais pas une campagne unique. Les incidents n’ont ni le même niveau de preuve ni la même nature. La priorité opérationnelle doit aller aux environnements où la fonction métier et les éléments disponibles se rejoignent : santé publique, fiscalité, assurance et industrie.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

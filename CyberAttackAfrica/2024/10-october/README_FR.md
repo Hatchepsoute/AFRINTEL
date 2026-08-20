@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Octobre%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Octobre 2024
+# Rapport CTI AFRINTEL - Octobre 2024
 
 👉🏾 [English version](./README.md)
 
@@ -46,7 +46,7 @@ Les statistiques dérivent des **12 incidents** de [victims_FR.md](./victims_FR.
 
 ```mermaid
 xychart
-    title "Incidents par pays — octobre 2024"
+    title "Incidents par pays - octobre 2024"
     x-axis ["ZA","DZ","GH","LY","MG","MA","NG","EG"]
     y-axis "Incidents" 0 --> 5
     bar [4,2,1,1,1,1,1,1]
@@ -54,7 +54,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — octobre 2024
+    title Répartition par type - octobre 2024
     "Ransomware" : 8
     "Fuites de données" : 4
 ```
@@ -116,8 +116,8 @@ L’éducation représente un tiers du corpus et combine écoles, universités, 
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** l’éducation représente 4 incidents sur 12.
-- **Observé — confiance élevée :** l’Afrique du Sud concentre toutes les publications industrielles du mois.
+- **Observé - confiance élevée :** l’éducation représente 4 incidents sur 12.
+- **Observé - confiance élevée :** l’Afrique du Sud concentre toutes les publications industrielles du mois.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les cas ransomware.
 - **Lacune :** le contenu University of Antananarivo était inaccessible et ne peut pas être qualifié.
 - **Collecte attendue :** confirmation des établissements, chronologie des republications et état des services VRA et ministère libyen.
@@ -126,9 +126,9 @@ L’éducation représente un tiers du corpus et combine écoles, universités, 
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé |
-| Préventif | T1567 — Exfiltration Over Web Service | Contrôle des transferts ; canaux non observés |
-| Hypothèse | T1078 — Valid Accounts | Risque à examiner pour les environnements éducatifs et publics |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé |
+| Préventif | T1567 - Exfiltration Over Web Service | Contrôle des transferts ; canaux non observés |
+| Hypothèse | T1078 - Valid Accounts | Risque à examiner pour les environnements éducatifs et publics |
 
 ## 9. Recommandations
 
@@ -157,6 +157,6 @@ L’éducation représente un tiers du corpus et combine écoles, universités, 
 
 Octobre associe une concentration éducative réelle à des incidents de portée très différente. Le rapport ne met pas sur le même plan une publication verrouillée, un échantillon visible et une revendication ransomware sans télémétrie. Cette hiérarchie de preuve est indispensable pour prioriser correctement la réponse.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

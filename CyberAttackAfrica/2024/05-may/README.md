@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-May%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — May 2024
+# AFRINTEL CTI Report - May 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -43,7 +43,7 @@ Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR
 
 ```mermaid
 xychart
-    title "Incidents by country — May 2024"
+    title "Incidents by country - May 2024"
     x-axis ["ZA","EG","CI","NA","NG","SN"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — May 2024
+    title Incident-type distribution - May 2024
     "Ransomware" : 8
 ```
 
@@ -107,8 +107,8 @@ Finance ranks first with three incidents, followed by professional services. The
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** the corpus consists entirely of ransomware claims.
-- **Observed — high confidence:** LockBit3 is associated with four of eight incidents.
+- **Observed - high confidence:** the corpus consists entirely of ransomware claims.
+- **Observed - high confidence:** LockBit3 is associated with four of eight incidents.
 - **Gap:** no public DFIR report or usable sample was identified in the sources reviewed.
 - **Gap:** victim operational status and the existence of exfiltration remain unknown.
 - **Collection need:** victim communications, regulatory notices, and leak-site updates.
@@ -117,9 +117,9 @@ Finance ranks first with three incidents, followed by professional services. The
 
 | Status | Technique | Use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Encryption monitoring; no public technical confirmation |
-| Preventive | T1490 — Inhibit System Recovery | Backup and recovery-copy monitoring |
-| Assumption | T1078 — Valid Accounts | Access scenario to test; no compromised account observed |
+| Preventive | T1486 - Data Encrypted for Impact | Encryption monitoring; no public technical confirmation |
+| Preventive | T1490 - Inhibit System Recovery | Backup and recovery-copy monitoring |
+| Assumption | T1078 - Valid Accounts | Access scenario to test; no compromised account observed |
 
 ## 9. Recommendations
 
@@ -148,6 +148,6 @@ Finance ranks first with three incidents, followed by professional services. The
 
 May is homogeneous by incident type but offers limited public technical depth. LockBit3's concentration and the presence of financial organizations justify increased attention without establishing a shared tradecraft. Internal validation and resilience remain the priorities.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

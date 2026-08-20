@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-April%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — April 2024
+# AFRINTEL CTI Report - April 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -43,7 +43,7 @@ Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR
 
 ```mermaid
 xychart
-    title "Incidents by country — April 2024"
+    title "Incidents by country - April 2024"
     x-axis ["ZA","BF","LY","MA","SC"]
     y-axis "Incidents" 0 --> 3
     bar [2,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — April 2024
+    title Incident-type distribution - April 2024
     "Ransomware" : 5
     "Data leak" : 1
 ```
@@ -110,8 +110,8 @@ Sector distribution is fully dispersed, with one incident in each of six sectors
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** five of six incidents are ransomware claims.
-- **Observed — high confidence:** no sector records more than one incident.
+- **Observed - high confidence:** five of six incidents are ransomware claims.
+- **Observed - high confidence:** no sector records more than one incident.
 - **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware cases.
 - **Gap:** the ONEF sample does not validate the full volume or acquisition timeline.
 - **Collection need:** victim confirmation, service status, and later sample publications.
@@ -120,9 +120,9 @@ Sector distribution is fully dispersed, with one incident in each of six sectors
 
 | Status | Technique | Use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed in the five claims |
-| Preventive | T1490 — Inhibit System Recovery | Backup controls; behavior not observed |
-| Preventive | T1567 — Exfiltration Over Web Service | Outbound monitoring; ONEF channel unknown |
+| Preventive | T1486 - Data Encrypted for Impact | Encryption detection; not confirmed in the five claims |
+| Preventive | T1490 - Inhibit System Recovery | Backup controls; behavior not observed |
+| Preventive | T1567 - Exfiltration Over Web Service | Outbound monitoring; ONEF channel unknown |
 
 ## 9. Recommendations
 
@@ -151,6 +151,6 @@ Sector distribution is fully dispersed, with one incident in each of six sectors
 
 April is a low-volume month with considerable sector diversity. The repeated SpaceBears publications and the presence of sensitive organizations warrant monitoring without exceeding the evidence. ONEF remains the most actionable case for validating data exposure.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

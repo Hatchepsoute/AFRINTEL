@@ -8,7 +8,8 @@
 # Rapport CTI : Cyberattaques en Afrique - Octobre 2025 (19 victimes)
 
 👉🏾 [**English version available here**](./README.md)
-## 2. Résumé exécutif
+
+## 1. Résumé exécutif
 Octobre 2025 affiche une activité significative de ransomwares affectant les organisations africaines, avec plusieurs secteurs ciblés, notamment la finance, la logistique, la technologie, l'éducation et l'administration publique. Le mois inclut également deux revendications de fuite de données concernant des établissements marocains de l'enseignement supérieur : IAV Hassan II reste non attribué, tandis qu'enssup.gov.ma est attribué à EternalRed.
 
 Un total de 17 revendications de ransomwares confirmées et 2 revendications de fuite de données, ciblant des organisations opérant dans 11 pays africains, ont été identifiées au cours de cette période.
@@ -25,7 +26,10 @@ Un total de 17 revendications de ransomwares confirmées et 2 revendications de 
 
 ---
 
-## 3. Statistiques clés
+
+## 2. Méthodologie
+
+## 3. Vue d'ensemble
 
 ### 3.1 Répartition par groupe ransomware
 | Groupe / Acteur | Nombre d'attaques |
@@ -112,7 +116,7 @@ graph LR
 | **Total** | **19** |
 
 ```mermaid
-pie
+pie showData
 title Incidents de ransomware par pays (Octobre 2025)
 "🇲🇦 Maroc" : 5
 "🇿🇦 Afrique du Sud" : 4
@@ -146,7 +150,8 @@ title Incidents de ransomware par pays (Octobre 2025)
 | 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisie | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Types d’incidents
     "Ransomware" : 17
     "Fuites de données + ventes d’accès" : 2
@@ -205,84 +210,18 @@ Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ou
 | clop | 1 | ██ |
 | medusa | 1 | ██ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Détail des attaques par groupe ransomware
 
-### 4.1 incransom (4 attaques)
-* **01/10/2025** : Climatron (Afrique du Sud, construction) – Revendication & divulgation.
-* **28/10/2025** : Alios Finance Group (Tanzanie, finance) – **100 Go exfiltrés**.
-* **28/10/2025** : Alios Finance Group (Tunisie, finance) – **100 Go exfiltrés**.
-* **31/10/2025** : TMF Logistics (Algérie, logistique) – **39 Go exfiltrés**.
-> **Remarque** : incransom a ciblé plusieurs entités dans différents secteurs et pays, avec des volumes d'exfiltration importants.
+### Comparaison avec le mois précédent
 
-### 4.2 qilin (3 attaques)
-* **15/10/2025** : Turnkey Africa (Kenya, technologies/fintech) – Revendication & divulgation.
-* **19/10/2025** : SANgel (Gabon, agroalimentaire) – Revendication & divulgation.
-* **24/10/2025** : Henrietta Ezeoke Law Firm (Nigeria, juridique) – Revendication & divulgation.
-> **Remarque** : qilin a fait preuve de polyvalence en attaquant les secteurs technologique, agroalimentaire et juridique.
+À partir des fiches incidents validées comme source de comptage, octobre 2025 compte **19** incidents contre **18** le mois précédent (une hausse de **+1** ; **+5.6%**). Cette comparaison décrit les publications enregistrées par AFRINTEL et ne prouve pas à elle seule une évolution de l'activité des attaquants ni un impact confirmé sur les victimes.
 
-### 4.3 tengu (2 attaques)
-* **23/10/2025** : STAR LÉGUMES (Maroc, commerce de gros) – Revendication & divulgation.
-* **24/10/2025** : Le MULTI LABORATOIRE LC2A (Maroc, pharmaceutique) – Revendication & divulgation.
-> **Remarque** : tengu a concentré ses attaques sur des entreprises marocaines.
+| Indicateur | Mois précédent | Mois en cours | Variation |
+|---|---:|---:|---:|
+| Fiches incidents enregistrées | 18 | 19 | +1 (+5.6%) |
 
-### 4.4 Autres groupes (1 attaque chacun)
-* **beast** (05/10) : The Methodist Church of Southern Africa (Afrique du Sud, religion).
-* **brotherhood** (10/10) : Momentum Logistics (Afrique du Sud, logistique).
-* **medusa** (13/10) : LA VOIE EXPRESS (Maroc, logistique).
-* **obscura** (13/10) : meamargroup.com (Égypte, immobilier) – **3ème attaque contre cette entreprise**.
-* **TheGentlemen** (17/10) : Madagascar Airlines (Madagascar, aviation).
-* **radar** (18/10) : TK HOLDINGS GROUP (RDC, mines/conglomérat).
-* **clop** (18/10) : Université du Witwatersrand (Afrique du Sud, éducation).
-* **blackshrantac** (20/10) : Al Ahly Leasing & Factoring (Égypte, finance).
+## 4. Analyse détaillée par type d'incident
 
-### 4.5 Revendications et attributions des jeux de données marocains (2 attaques)
-* **31/10/2025** : Institut Agronomique et Vétérinaire Hassan II - IAV Hassan II (Maroc, Éducation) – Claim - Data Sample Published. Base de données de candidats structurée, 4 208 enregistrements (CIN, coordonnées, filière).
-* **25/10/2025** : Ministère de l'Enseignement Supérieur, de la Recherche Scientifique et de l'Innovation - enssup.gov.ma (Maroc, Administration publique / Éducation) – Claim - Data Sample Published. Publication attribuée à EternalRed ; extraction nationale d'étudiants, 942 930 enregistrements.
-
-### 4.6 Graphe acteur → victim → pays
-```mermaid
-graph LR
-    %% Relations incransom
-    incransom(incransom) -->|Climatron| SA1["🇿🇦 Afrique du Sud"]
-    incransom -->|Alios Tanzanie| Tanzania["🇹🇿 Tanzanie"]
-    incransom -->|Alios Tunisie| Tunisia["🇹🇳 Tunisie"]
-    incransom -->|TMF| Algeria["🇩🇿 Algérie"]
-
-    %% Relations qilin
-    qilin(qilin) -->|Turnkey Africa| Kenya["🇰🇪 Kenya"]
-    qilin -->|SANgel| Gabon["🇬🇦 Gabon"]
-    qilin -->|Henrietta Ezeoke| Nigeria["🇳🇬 Nigeria"]
-
-    %% Relations tengu
-    tengu(tengu) -->|STAR LÉGUMES| Morocco1["🇲🇦 Maroc"]
-    tengu -->|LC2A| Morocco2["🇲🇦 Maroc"]
-
-    %% Autres acteurs
-    beast(beast) -->|Église Méthodiste| SA2["🇿🇦 Afrique du Sud"]
-    brotherhood(brotherhood) -->|Momentum Logistics| SA4["🇿🇦 Afrique du Sud"]
-    medusa(medusa) -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Maroc"]
-    obscura(obscura) -->|meamargroup.com| Egypt1["🇪🇬 Égypte"]
-    TheGentlemen(TheGentlemen) -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
-    radar(radar) -->|TK HOLDINGS| DRC["🇨🇩 RD Congo"]
-    clop(clop) -->|Université du Witwatersrand| SA5["🇿🇦 Afrique du Sud"]
-    blackshrantac(blackshrantac) -->|Al Ahly Leasing| Egypt2["🇪🇬 Égypte"]
-    NonAttribue(Non attribué) -->|IAV Hassan II| Morocco4["🇲🇦 Maroc"]
-    EternalRed -->|enssup.gov.ma| Morocco5["🇲🇦 Maroc"]
-
-    %% Styles et Couleurs
-    style incransom fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
-    style qilin fill:#ffa500,stroke:#333,stroke-width:2px
-    style tengu fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    style TheGentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
-    style NonAttribue fill:#888,stroke:#333,stroke-width:2px,color:#fff
-    
-    %% Style des pays (Nodes de destination)
-    classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class SA1,SA2,SA4,SA5,Tanzania,Tunisia,Algeria,Kenya,Gabon,Nigeria,Morocco1,Morocco2,Morocco3,Morocco4,Morocco5,Egypt1,Egypt2,Madagascar,DRC country
-```
----
-
-## 5. Analyse sectorielle
+## 5. Impact sectoriel
 * **Logistique (3)** : Ciblé par brotherhood, medusa et incransom. Secteur hautement vulnérable.
 * **Finance (3)** : Grosses exfiltrations (Alios, Al Ahly).
 * **Technologies (1)** : Turnkey Africa (Fintech panafricaine).
@@ -291,7 +230,16 @@ graph LR
 
 ---
 
-## 6. Analyse géographique
+
+## 6. Profil des acteurs
+### 6.1 Profil des acteurs
+
+Les comptages d'acteurs et de sources restent ceux documentés en section 3 et dans les fiches victimes sources. L'attribution est conservée uniquement au niveau étayé par les éléments publics.
+
+### 6.2 Évaluation du risque
+
+Les pays et secteurs présentant plusieurs fiches ou des fonctions publiques, éducatives, sanitaires, financières ou critiques doivent faire l'objet d'une validation prioritaire. Il s'agit d'un signal de priorisation OSINT, et non d'une confirmation de compromission ou d'impact.
+
 * **Maroc** : Pays le plus touché (5), entre logistique/commerce revendiqués et deux fuites de données dans l'enseignement supérieur ; l'une reste non attribuée et l'autre est liée à EternalRed.
 * **Afrique du Sud** : Deuxième position (4). Diversité sectorielle totale.
 * **Égypte** : Focus immobilier et finance (2).
@@ -299,14 +247,33 @@ graph LR
 
 ---
 
-## 7. TTPs observées (Tactics, Techniques & Procedures)
+
+## 7. Tendances et lacunes de renseignement
+### 7.1 Tendances observées
+
+Les répartitions par pays, secteur, acteur et type d'incident présentées ci-dessus constituent les tendances traçables du mois. Elles décrivent le corpus surveillé et n'établissent pas une campagne plus large sans éléments indépendants.
+
+### 7.2 Lacunes de renseignement
+
+Les rapports disponibles ne permettent pas d'établir pour chaque revendication le vecteur d'accès initial, l'exfiltration complète, la confirmation par la victime, la chronologie de remédiation ou l'impact opérationnel. Aucun détail DFIR public n'est inclus dans le corpus consulté pour cette fiche mensuelle ; cette absence est limitée aux sources examinées.
+
+## 8. Cartographie MITRE ATT&CK (contextuelle)
+| Phase | ID technique | Nom | Association à l'incident |
+|---|---|---|---|
+| Collecte | T1005 | Data from Local System | Correspondance contextuelle pour une collecte ou exposition revendiquée ; la méthode n'est pas confirmée. |
+| Collecte | T1213 | Data from Information Repositories | Correspondance contextuelle pour les dossiers ou référentiels décrits publiquement ; la méthode n'est pas confirmée. |
+
+Ces correspondances ATT&CK sont contextuelles et défensives. Elles ne prouvent pas qu'un acteur donné a utilisé la technique.
+
+### Contextual observations
 * **Exfiltration massive** : Focalisation sur le vol de données sensibles (jusqu'à 100 Go) pour maximiser l'extorsion.
 * **Ciblage répété** : Exemple de *meamargroup.com*, illustrant des vulnérabilités persistantes non corrigées.
 * **Fragmentation de l'écosystème** : 12 groupes différents actifs en un seul mois.
 
 ---
 
-## 8. Recommandations
+
+## 9. Recommandations
 1.  **Secteurs Logistique & Finance** : Chiffrement des données au repos, segmentation réseau et surveillance des flux sortants (exfiltration).
 2.  **Secteur Public** : Audits de sécurité réguliers et durcissement des accès (IAM).
 3.  **Éducation & Recherche** : Protection des données personnelles et authentification multi-facteurs (MFA) obligatoire.
@@ -316,7 +283,26 @@ graph LR
 
 ---
 
-## 9. Conclusion
+
+## 10. Recommandations SOC et tactiques
+### Observé
+
+Les sources publiques documentent des revendications, des publications ou du matériel exposé. Elles ne fournissent pas à elles seules une télémétrie prouvant une technique ou une compromission active.
+
+### Hypothèses
+
+L'abus d'identifiants, un stockage exposé, des contrôles d'accès faibles ou des privilèges d'export excessifs peuvent expliquer certaines expositions, mais chaque hypothèse doit être vérifiée par l'organisation concernée.
+
+### Préventif
+
+Surveiller les journaux d'identité, VPN, cloud, bases de données, messagerie et transferts sortants. Imposer une MFA résistante au phishing, le moindre privilège, la segmentation, des sauvegardes testées et la révocation rapide des jetons ou identifiants.
+
+## 11. Recommandations stratégiques
+1. **Risques observés :** prioriser la validation des organisations, secteurs et types de données documentés dans le corpus mensuel.
+2. **Hypothèses :** tester les chemins possibles liés aux identifiants, au stockage cloud et aux exports excessifs sans les présenter comme des faits établis.
+3. **Socle préventif :** maintenir l'inventaire des actifs, la classification des données, les exercices de réponse, les plans de reprise et les procédures coordonnées de sécurité, de droit et de protection des données.
+
+## 12. Conclusion
 Octobre 2025 confirme que l'Afrique est une cible majeure pour le cyber-extorsion. La prédominance du groupe ransomware  INC Ransom (`incransom`) et la récurrence des attaques sur certaines cibles soulignent un besoin urgent de renforcement des capacités de défense et d'une meilleure hygiène informatique à l'échelle continentale.
 
 ---

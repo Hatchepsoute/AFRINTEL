@@ -236,6 +236,19 @@ pie
 - Diesel-Electric Afrique du Sud : chevauchement potentiel entre les revendications de février et mars 2026 à confirmer.
 - Les capacités et activités antérieures de The Green Blood Group ne sont pas documentées.
 
+
+### Comparaison factuelle avec janvier 2026
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [janvier](../01-january/victims_FR.md) et de [février](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | janvier 2026 | février | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 21 | 20 | -1 (-4,8%) |
+| Ransomware / extorsion | 17 | 20 | +3 |
+| Autres fuites, ventes d'accès ou défacements | 4 | 0 | -4 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Portée analytique |

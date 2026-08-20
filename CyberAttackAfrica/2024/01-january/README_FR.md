@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Janvier%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Janvier 2024
+# Rapport CTI AFRINTEL - Janvier 2024
 
 👉🏾 [English version](./README.md)
 
@@ -50,7 +50,7 @@ Les statistiques dérivent des **12 incidents** de [victims_FR.md](./victims_FR.
 
 ```mermaid
 xychart
-    title "Incidents par pays — janvier 2024"
+    title "Incidents par pays - janvier 2024"
     x-axis ["ZA","DZ","BF","CM","GH","KE","MA","NG","RW","EG"]
     y-axis "Incidents" 0 --> 4
     bar [3,1,1,1,1,1,1,1,1,1]
@@ -58,7 +58,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — janvier 2024
+    title Répartition par type - janvier 2024
     "Ransomware" : 3
     "Fuites de données" : 8
     "Ventes d'accès" : 1
@@ -100,7 +100,7 @@ pie showData
 
 ### 4.1 Ransomware
 
-Les trois victimes sud-africaines — TiAuto Investments, Tiger Wheel & Tyre et Crowe Southern Africa — ont été publiées sous le nom de LockBit3. Aucun élément technique public exploitable ne permet, dans le corpus de janvier, d’établir l’accès initial, le périmètre chiffré ou une exfiltration effective. Le fait solide est la publication des organisations par l’acteur.
+Les trois victimes sud-africaines - TiAuto Investments, Tiger Wheel & Tyre et Crowe Southern Africa - ont été publiées sous le nom de LockBit3. Aucun élément technique public exploitable ne permet, dans le corpus de janvier, d’établir l’accès initial, le périmètre chiffré ou une exfiltration effective. Le fait solide est la publication des organisations par l’acteur.
 
 ### 4.2 Fuites de données et vente d’accès
 
@@ -124,8 +124,8 @@ Le commerce et l’e-commerce arrivent en tête, en partie à cause de publicati
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** le corpus est dominé par les fuites et ventes d’accès, qui représentent 9 incidents sur 12.
-- **Observé — confiance élevée :** les trois revendications ransomware sont concentrées en Afrique du Sud et associées à LockBit3.
+- **Observé - confiance élevée :** le corpus est dominé par les fuites et ventes d’accès, qui représentent 9 incidents sur 12.
+- **Observé - confiance élevée :** les trois revendications ransomware sont concentrées en Afrique du Sud et associées à LockBit3.
 - **Lacune prioritaire :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour déterminer l’accès initial ou confirmer l’étendue des incidents ransomware.
 - **Lacune prioritaire :** les volumes complets des bases annoncées ne peuvent pas être déduits des seuls extraits observés.
 - **Besoin de collecte :** rechercher des confirmations des organisations, des notifications réglementaires et de nouvelles publications permettant de distinguer données anciennes, republications et incidents contemporains.
@@ -134,9 +134,9 @@ Le commerce et l’e-commerce arrivent en tête, en partie à cause de publicati
 
 | Statut analytique | Phase | Technique | Application au corpus |
 |---|---|---|---|
-| Préventif | Impact | T1486 — Data Encrypted for Impact | Surveillance pertinente pour les trois revendications ransomware ; chiffrement non confirmé par télémétrie publique |
-| Hypothèse | Initial Access / Persistence | T1078 — Valid Accounts | Scénario plausible pour la vente d’accès à l’University of Buea ; validité de l’accès inconnue |
-| Préventif | Exfiltration | T1567 — Exfiltration Over Web Service | Contrôle défensif adapté aux incidents de fuite ; canal d’exfiltration non observé |
+| Préventif | Impact | T1486 - Data Encrypted for Impact | Surveillance pertinente pour les trois revendications ransomware ; chiffrement non confirmé par télémétrie publique |
+| Hypothèse | Initial Access / Persistence | T1078 - Valid Accounts | Scénario plausible pour la vente d’accès à l’University of Buea ; validité de l’accès inconnue |
+| Préventif | Exfiltration | T1567 - Exfiltration Over Web Service | Contrôle défensif adapté aux incidents de fuite ; canal d’exfiltration non observé |
 
 ## 9. Recommandations
 
@@ -167,5 +167,5 @@ Le commerce et l’e-commerce arrivent en tête, en partie à cause de publicati
 
 Janvier 2024 oppose deux profils distincts : une concentration ransomware limitée à l’Afrique du Sud et une circulation beaucoup plus diffuse de données et d’accès. Les publications administratives sont les plus sensibles, mais les informations disponibles ne permettent pas de transformer ces revendications en compromissions confirmées. La priorité consiste à valider les expositions, réduire les accès externes et conserver une capacité de restauration indépendante.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

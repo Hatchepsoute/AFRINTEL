@@ -6,17 +6,19 @@
 # Rapport CTI : Cyberattaques en Afrique - Juillet 2025 (21 victimes)
 👉🏾 [**English version available here**](./README.md)
 
-## 1. Introduction
-Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de juillet 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
-
-## 2. Résumé exécutif
+## 1. Résumé exécutif
 - **Nombre total d'attaques recensées** : 21
 - **Acteurs les plus actifs** : Dark 07x Team (5 attaques), Inconnu (2), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Gh1nDar (1), Wieko (1), BabayoSysteam (1).
 - **Secteurs les plus ciblés** : Administrations publiques (6), Banque/Finance (4), Éducation/Formation (4), Télécommunications (2), Association professionnelle/Bâtiment (1), Industrie minière (1), Services postaux/financiers (1), Diplomatie/Gouvernement (1), Commerce/E-commerce (1).
 - **Pays les plus touchés** : Tunisie (5), Maroc (4), Algérie (2), Kenya (2), Nigeria (1), Afrique du Sud (1), Tanzanie (1), Égypte (1), Namibie (1), Mauritanie (1), Érythrée (1), Burundi (1).
 - **Volumes de données revendiqués notables** : Rançon de 2,27 M$ demandée pour eehc.gov.eg (Égypte). FNBTP (Maroc) : base de données de 180 lignes / 14 colonnes publiée gratuitement. Ambassade d'Érythrée aux États-Unis : revendication non vérifiée portant sur environ 5 000 enregistrements de citoyens. PesaBay (Burundi) : base de données complète de 1 850 enregistrements publiée. Autres volumes non précisés.
 
-## 3. Statistiques clés
+
+## 2. Méthodologie
+Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de juillet 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
+
+
+## 3. Vue d'ensemble
 
 ### 3.1 Répartition par groupe/acteur
 | Groupe/Acteur | Nombre d'attaques |
@@ -40,7 +42,8 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**     | **21**            |
 
 ```mermaid
-pie title Répartition des attaques par acteur (juillet 2025)
+pie showData
+    title Répartition des attaques par acteur (juillet 2025)
     "Dark 07x Team" : 5
     "Hepd" : 1
     "d4rk4rmy" : 1
@@ -74,7 +77,8 @@ pie title Répartition des attaques par acteur (juillet 2025)
 | **Total** | **21** |
 
 ```mermaid
-pie title Répartition par secteur d'activité (Juillet 2025)
+pie showData
+    title Répartition par secteur d'activité (Juillet 2025)
     "Administrations publiques" : 6
     "Banque / Finance" : 4
     "Éducation / Formation" : 4
@@ -103,7 +107,8 @@ pie title Répartition par secteur d'activité (Juillet 2025)
 | **Total** | **21** |
 
 ```mermaid
-pie title Répartition par pays (Juillet 2025)
+pie showData
+    title Répartition par pays (Juillet 2025)
     "🇹🇳 Tunisie" : 5
     "🇲🇦 Maroc" : 4
     "🇩🇿 Algérie" : 2
@@ -137,7 +142,8 @@ pie title Répartition par pays (Juillet 2025)
 | 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |
 | 🇧🇮 Burundi | 0 | 1 | 1 |  🟦 |
 
-```pie
+```mermaid
+pie showData
     title Types d’incidents
     "Ransomware" : 5
     "Fuites de données + ventes d’accès" : 16
@@ -193,79 +199,18 @@ Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ou
 | Wieko | 1 | ██ |
 | d4rk4rmy | 1 | ██ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Détail des attaques par groupe/acteur
-### 4.1 Dark 07x Team (5 attaques)
-- **25/07/2025 :** Ministère des Finances (Tunisie, gouvernement) - Revendication "Full Access".
-- **25/07/2025 :** Académie des Banques et des Finances (Tunisie, formation) - Compromission interface admin.
-- **25/07/2025 :** BTK Bank (Tunisie, banque) - Compromission de comptes (ATO) et mise en vente.
-- **25/07/2025 :** Banque de Tunisie (Tunisie, banque) - Exfiltration de données financières et identités.
-- **28/07/2025 :** BH Bank (Tunisie, banque) - Compromission majeure et prise de contrôle de comptes (ATO).
 
-**Remarque :** Dark 07x Team a mené une campagne coordonnée contre le secteur financier et gouvernemental tunisien, avec cinq attaques en quelques jours, démontrant une capacité opérationnelle élevée.
+### Comparaison avec le mois précédent
 
-### 4.2 Hepd (1 attaque)
-- **01/07/2025** : Chartered Institute of Bankers of Nigeria (CIBN) (Nigeria, régulation bancaire) – Fuite de données sur l'élite bancaire.
+À partir des fiches incidents validées comme source de comptage, juillet 2025 compte **21** incidents contre **21** le mois précédent (aucune variation de **0** ; **+0.0%**). Cette comparaison décrit les publications enregistrées par AFRINTEL et ne prouve pas à elle seule une évolution de l'activité des attaquants ni un impact confirmé sur les victimes.
 
-### 4.3 d4rk4rmy (1 attaque)
-- **08/07/2025** : MAFATE BUSINESS ENTERPRISE (Afrique du Sud, services miniers) – Revendication & divulgation.
+| Indicateur | Mois précédent | Mois en cours | Variation |
+|---|---:|---:|---:|
+| Fiches incidents enregistrées | 21 | 21 | 0 (+0.0%) |
 
-### 4.4 Evil_BYTE_Officiel (1 attaque)
-- **09/07/2025** : Fédération Nationale du Bâtiment et des Travaux Publics - FNBTP (Maroc, association professionnelle/bâtiment) – Claim - Data Fully Published. Base de données d'adhérents de 180 lignes / 14 colonnes (table `societe`) publiée gratuitement sur un forum underground ; aucun prix ni demande de rançon.
+## 4. Analyse détaillée par type d'incident
 
-### 4.5 nightspire (1 attaque)
-- **13/07/2025** : Twaweza (Tanzanie, ONG éducative) – Revendication & divulgation.
-
-### 4.6 Keymous (1 attaque)
-- **14/07/2025** : IWACLUB (Maroc, télécommunications/distribution) – Fuite de données.
-
-### 4.7 lynx (1 attaque)
-- **15/07/2025** : Adrian Kenya (Kenya, télécommunications/ingénierie) – Revendication & divulgation.
-
-### 4.8 devman (1 attaque)
-- **15/07/2025** : eehc.gov.eg (Égypte, gouvernement) – Rançon de 2,27 M$ demandée.
-
-### 4.9 incransom (1 attaque)
-- **15/07/2025** : Otjiwarongo Municipality (Namibie, gouvernement local) – Revendication & divulgation.
-
-### 4.10 Mercobyte (1 attaque)
-- **18/07/2025** : Université Mohammed VI Polytechnique (Maroc, éducation) – Fuite de données ciblée et opération d'influence.
-
-### 4.11 Wieko (1 attaque)
-- **29/07/2025** : Ministère de l’Éducation nationale, du Préscolaire et des Sports (Maroc, éducation) – revendication de combo list étayée par un échantillon visible ; aucune compromission directe du SI central du ministère n’est établie.
-
-### 4.12 Inconnu (2 attaques)
-- **14/07/2025** : ICT Authority (Kenya, gouvernement/infrastructure numérique) – aucun acteur revendicateur identifié ; l'échantillon CSV fourni contient 1 697 lignes de type annuaire, examiné sans reproduire de données personnelles.
-- **15/07/2025** : Portail QCE - qce.gov.mr (Mauritanie, gouvernement/marchés publics) – aucun acteur revendicateur identifié ; échantillon local de dossiers de qualification de personnel (CV, cartes d'identité nationale, diplômes, contrats de travail notariés) daté à partir des métadonnées des fichiers en l'absence de date de publication.
-
-### 4.13 Gh1nDar (1 attaque)
-- **27/07/2025** : Ambassade d'Érythrée aux États-Unis (Érythrée, diplomatie/gouvernement) – Claim - Unverified. Revendication non vérifiée d'une fuite portant sur environ 5 000 enregistrements de citoyens ; aucun échantillon accessible.
-
-### 4.14 BabayoSysteam (1 attaque)
-- **30/07/2025** : PesaBay (Burundi, commerce électronique) – `Data Fully Published` ; publication d'une base de données complète de 1 850 comptes contenant des données de contact et des statuts de compte. La méthode d'acquisition demeure inconnue.
-
-### 4.15 Graphe acteur → victime → pays
-```mermaid
-graph LR
-    Dark07["Dark 07x Team"] -->|Ministère des Finances| Tunisie1["🇹🇳 Tunisie"]
-    Dark07 -->|Académie des Banques| Tunisie2["🇹🇳 Tunisie"]
-    Dark07 -->|BTK Bank| Tunisie3["🇹🇳 Tunisie"]
-    Dark07 -->|Banque de Tunisie| Tunisie4["🇹🇳 Tunisie"]
-    Dark07 -->|BH Bank| Tunisie5["🇹🇳 Tunisie"]
-    Hepd -->|CIBN| Nigeria["🇳🇬 Nigeria"]
-    d4rk4rmy -->|MAFATE| AfriqueSud["🇿🇦 Afrique du Sud"]
-    EvilByte["Evil_BYTE_Officiel"] -->|FNBTP| Maroc0["🇲🇦 Maroc"]
-    nightspire -->|Twaweza| Tanzanie["🇹🇿 Tanzanie"]
-    Keymous -->|IWACLUB| Maroc1["🇲🇦 Maroc"]
-    lynx -->|Adrian Kenya| Kenya["🇰🇪 Kenya"]
-    devman -->|eehc.gov.eg| Egypte["🇪🇬 Égypte"]
-    incransom -->|Otjiwarongo| Namibie["🇳🇦 Namibie"]
-    Mercobyte -->|UM6P| Maroc2["🇲🇦 Maroc"]
-    Wieko -->|Ministère Éducation| Maroc3["🇲🇦 Maroc"]
-    Inconnu -->|Portail QCE| Mauritanie["🇲🇷 Mauritanie"]
-    Gh1nDar -->|Ambassade d'Érythrée| Erythree["🇪🇷 Érythrée"]
-    BabayoSysteam -->|PesaBay| Burundi["🇧🇮 Burundi"]
-```
-## 5. Analyse sectorielle
+## 5. Impact sectoriel
 - **Banque/Finance** : 4 attaques (CIBN, BTK, Banque de Tunisie, BH Bank). Dark 07x Team a ciblé trois banques tunisiennes et Hepd a visé l'organisme de régulation nigérian, montrant une attention soutenue au secteur financier.
 - **Administrations publiques** : 4 revendications (eehc.gov.eg, Otjiwarongo Municipality, Ministère des Finances tunisien, Portail QCE Mauritanie).
 - **Éducation/Formation** : 4 attaques (Twaweza, ABF, UM6P, Ministère de l’Éducation). La publication de Wieko annonce une combo list multi-établissements et n’établit pas une compromission du SI central du ministère.
@@ -275,7 +220,16 @@ graph LR
 - **Diplomatie/Gouvernement** : 1 revendication non vérifiée (Ambassade d'Érythrée aux États-Unis) par Gh1nDar, concernant la représentation diplomatique d'un État africain à l'étranger.
 - **Commerce/E-commerce** : 1 fuite concernant PesaBay au Burundi, avec publication complète d'une base de données de 1 850 comptes contenant des données de contact d'utilisateurs.
 
-## 6. Analyse géographique
+
+## 6. Profil des acteurs
+### 6.1 Profil des acteurs
+
+Les comptages d'acteurs et de sources restent ceux documentés en section 3 et dans les fiches victimes sources. L'attribution est conservée uniquement au niveau étayé par les éléments publics.
+
+### 6.2 Évaluation du risque
+
+Les pays et secteurs présentant plusieurs fiches ou des fonctions publiques, éducatives, sanitaires, financières ou critiques doivent faire l'objet d'une validation prioritaire. Il s'agit d'un signal de priorisation OSINT, et non d'une confirmation de compromission ou d'impact.
+
 - **Tunisie** : 5 attaques, toutes menées par Dark 07x Team, ciblant le gouvernement et le secteur bancaire. La Tunisie est le pays le plus touché du mois, avec une campagne coordonnée.
 - **Maroc** : 4 revendications (FNBTP, IWACLUB, UM6P, Ministère de l’Éducation) impliquant Evil_BYTE_Officiel, Keymous, Mercobyte et Wieko.
 - **Nigeria** : 1 attaque (CIBN) par Hepd, visant l'organisme de régulation bancaire.
@@ -327,7 +281,25 @@ timeline
         BabayoSysteam : PesaBay (🇧🇮 Burundi)
 ```
         
-## 7. TTPs observées
+
+## 7. Tendances et lacunes de renseignement
+### 7.1 Tendances observées
+
+Les répartitions par pays, secteur, acteur et type d'incident présentées ci-dessus constituent les tendances traçables du mois. Elles décrivent le corpus surveillé et n'établissent pas une campagne plus large sans éléments indépendants.
+
+### 7.2 Lacunes de renseignement
+
+Les rapports disponibles ne permettent pas d'établir pour chaque revendication le vecteur d'accès initial, l'exfiltration complète, la confirmation par la victime, la chronologie de remédiation ou l'impact opérationnel. Aucun détail DFIR public n'est inclus dans le corpus consulté pour cette fiche mensuelle ; cette absence est limitée aux sources examinées.
+
+## 8. Cartographie MITRE ATT&CK (contextuelle)
+| Phase | ID technique | Nom | Association à l'incident |
+|---|---|---|---|
+| Collecte | T1005 | Data from Local System | Correspondance contextuelle pour une collecte ou exposition revendiquée ; la méthode n'est pas confirmée. |
+| Collecte | T1213 | Data from Information Repositories | Correspondance contextuelle pour les dossiers ou référentiels décrits publiquement ; la méthode n'est pas confirmée. |
+
+Ces correspondances ATT&CK sont contextuelles et défensives. Elles ne prouvent pas qu'un acteur donné a utilisé la technique.
+
+### Contextual observations
 - **Campagnes coordonnées** : Dark 07x Team a mené plusieurs attaques simultanées contre des cibles tunisiennes, montrant une planification avancée.
 - **Compromission de comptes (ATO)** : observée sur BTK Bank et BH Bank, avec mise en vente d'accès.
 - **Exfiltration de données sensibles** : données financières, identités, informations sur l'élite bancaire (CIBN).
@@ -338,7 +310,8 @@ timeline
 - **Circulation de jeux de données non attribués** : le cas du Portail QCE (Mauritanie) implique un échantillon de documents de qualification de personnel circulant sans acteur revendicateur ni post de forum identifié.
 - **Exposition de données de comptes e-commerce** : la base PesaBay publiée contient des données de contact et des statuts de compte pouvant faciliter le phishing, le spam et l'usurpation d'identité.
 
-## 8. Recommandations
+
+## 9. Recommandations
 - **Tunisie** : les institutions financières et gouvernementales doivent renforcer leur cybersécurité de manière urgente face à des campagnes coordonnées. Mettre en place une cellule de veille et de réponse aux incidents.
 - **Secteur bancaire** : les banques (CIBN, BTK, BT, BH) doivent revoir leurs protocoles d'authentification et segmenter leurs réseaux pour limiter les compromissions de comptes.
 - **Éducation** : les universités (UM6P), académies (ABF) et ONG éducatives (Twaweza) doivent protéger les données personnelles et former le personnel aux risques.
@@ -346,10 +319,30 @@ timeline
 - **Tous secteurs** : sensibiliser les employés aux risques de phishing, mettre en place l'authentification multi-facteurs et des audits de sécurité réguliers.
 - **Plateformes e-commerce** : limiter les exports de comptes, journaliser les consultations massives et notifier les utilisateurs concernés après validation interne de l'incident.
 
-## 9. Conclusion
+
+## 10. Recommandations SOC et tactiques
+### Observé
+
+Les sources publiques documentent des revendications, des publications ou du matériel exposé. Elles ne fournissent pas à elles seules une télémétrie prouvant une technique ou une compromission active.
+
+### Hypothèses
+
+L'abus d'identifiants, un stockage exposé, des contrôles d'accès faibles ou des privilèges d'export excessifs peuvent expliquer certaines expositions, mais chaque hypothèse doit être vérifiée par l'organisation concernée.
+
+### Préventif
+
+Surveiller les journaux d'identité, VPN, cloud, bases de données, messagerie et transferts sortants. Imposer une MFA résistante au phishing, le moindre privilège, la segmentation, des sauvegardes testées et la révocation rapide des jetons ou identifiants.
+
+## 11. Recommandations stratégiques
+1. **Risques observés :** prioriser la validation des organisations, secteurs et types de données documentés dans le corpus mensuel.
+2. **Hypothèses :** tester les chemins possibles liés aux identifiants, au stockage cloud et aux exports excessifs sans les présenter comme des faits établis.
+3. **Socle préventif :** maintenir l'inventaire des actifs, la classification des données, les exercices de réponse, les plans de reprise et les procédures coordonnées de sécurité, de droit et de protection des données.
+
+## 12. Conclusion
 Juillet 2025 a été marqué par une campagne majeure du groupe **Dark 07x Team** contre la Tunisie, avec cinq attaques visant le gouvernement et le secteur bancaire. La diversité des acteurs et des cibles s'étend également au commerce électronique avec la publication visant PesaBay au Burundi. La demande de rançon de 2,27 M$ en Égypte et les fuites de données sensibles observées dans plusieurs pays soulignent l'urgence d'une coopération régionale renforcée. Le cas de l'Érythrée reste une revendication non vérifiée visant la représentation diplomatique d'un État africain à l'étranger.
 
-## ✍🏿 Auteur
+
+### Auteur
 *Adama ASSIONGBON*  
 *Consultant SOC & Cyber Threat Intelligence*  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

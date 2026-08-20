@@ -8,12 +8,8 @@
 # CTI Report: Cyberattacks in Africa - October 2025 (19 victims)
 
 👉🏾 [**French version available here**](README_FR.md)
-## 1. Introduction
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during October 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
----
-
-## 2. Executive summary
+## 1. Executive summary
 October 2025 shows a significant ransomware activity affecting African organizations, with multiple sectors targeted including finance, logistics, technology, education, and public administration. The month also includes two unattributed data-leak claims affecting Moroccan higher-education institutions.
 
 A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting organizations operating in 11 African countries, were identified during this period.
@@ -30,7 +26,14 @@ A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting orga
 
 ---
 
-## 3. Key statistics
+
+## 2. Methodology
+This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during October 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+---
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by ransomware group
 | Group / Actor | Number of attacks |
@@ -50,7 +53,7 @@ A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting orga
 | **Total** | **19** |
 
 ```mermaid
-pie
+pie showData
 title Ransomware groups activity
 "Incransom" : 4
 "Qilin" : 3
@@ -86,7 +89,8 @@ title Ransomware groups activity
 | **Total** | **19** |
 
 ```mermaid
-pie title Breakdown by industry sector (Oct 2025)
+pie showData
+    title Breakdown by industry sector (Oct 2025)
     "Logistics" : 3
     "Finance" : 3
     "Education" : 2
@@ -161,7 +165,7 @@ graph LR
 | **Total** | **19** |
 
 ```mermaid
-pie
+pie showData
 title Ransomware incidents by country (October 2025)
 "🇲🇦 Morocco" : 5
 "🇿🇦 South Africa" : 4
@@ -195,7 +199,8 @@ title Ransomware incidents by country (October 2025)
 | 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 17
     "Data leaks + access sales" : 2
@@ -254,7 +259,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | clop | 1 | ██ |
 | medusa | 1 | ██ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Attack Details by ransomware group
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, October 2025 recorded **19** incidents versus **18** in the preceding month (an increase of **+1**; **+5.6%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 18 | 19 | +1 (+5.6%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 incransom (4 attacks)
 * **2025-10-01**: Climatron (South Africa, Construction) – Claimed & Leaked.
@@ -322,7 +336,37 @@ graph LR
 ```
 ---
 
-## 5. Strategic observations & TTPs
+
+## 5. Sectoral impact
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 * **Massive data exfiltration**: High focus on sensitive data theft (up to 100 GB) to maximize extortion pressure.
 * **Persistent vulnerabilities**: The repeated targeting of *meamargroup.com* (2nd time) suggests unpatched entry points or poor remediation.
 * **Geographical dispersion**: Threat distribution skewed toward North Africa (9 attacks, including the two unattributed Moroccan education-sector claims) versus Sub-Saharan Africa (10 attacks).
@@ -330,7 +374,8 @@ graph LR
 
 ---
 
-## 6. Recommendations
+
+## 9. Recommendations
 1.  **Logistics & Finance**: Implement data-at-rest encryption and monitor for anomalous outbound traffic (exfiltration).
 2.  **Public Sector**: Conduct regular security audits and enforce strict Multi-Factor Authentication (MFA).
 3.  **Education & Research**: Protect personal student data and research intellectual property through network segmentation.
@@ -344,3 +389,23 @@ graph LR
 **Adama ASSIONGBON** *SOC & Cyber Threat Intelligence Consultant* [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
 **AFRINTEL** - *Open CTI Initiative for Africa*
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion

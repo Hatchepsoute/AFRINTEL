@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Mai%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Mai 2024
+# Rapport CTI AFRINTEL - Mai 2024
 
 👉🏾 [English version](./README.md)
 
@@ -43,7 +43,7 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 
 ```mermaid
 xychart
-    title "Incidents par pays — mai 2024"
+    title "Incidents par pays - mai 2024"
     x-axis ["ZA","EG","CI","NA","NG","SN"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — mai 2024
+    title Répartition par type - mai 2024
     "Ransomware" : 8
 ```
 
@@ -107,8 +107,8 @@ La finance arrive en tête avec trois incidents, devant les services professionn
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** le corpus est exclusivement composé de revendications ransomware.
-- **Observé — confiance élevée :** LockBit3 est associé à quatre incidents sur huit.
+- **Observé - confiance élevée :** le corpus est exclusivement composé de revendications ransomware.
+- **Observé - confiance élevée :** LockBit3 est associé à quatre incidents sur huit.
 - **Lacune :** aucun rapport DFIR public ni échantillon exploitable n’a été identifié dans les sources consultées.
 - **Lacune :** l’état opérationnel des organisations et l’existence d’une exfiltration restent inconnus.
 - **Collecte attendue :** communications victimes, notifications réglementaires et mises à jour des sites de publication.
@@ -117,9 +117,9 @@ La finance arrive en tête avec trois incidents, devant les services professionn
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Surveillance du chiffrement ; aucune confirmation technique publique |
-| Préventif | T1490 — Inhibit System Recovery | Surveillance des sauvegardes et copies de restauration |
-| Hypothèse | T1078 — Valid Accounts | Scénario d’accès à vérifier ; aucun compte compromis observé |
+| Préventif | T1486 - Data Encrypted for Impact | Surveillance du chiffrement ; aucune confirmation technique publique |
+| Préventif | T1490 - Inhibit System Recovery | Surveillance des sauvegardes et copies de restauration |
+| Hypothèse | T1078 - Valid Accounts | Scénario d’accès à vérifier ; aucun compte compromis observé |
 
 ## 9. Recommandations
 
@@ -148,6 +148,6 @@ La finance arrive en tête avec trois incidents, devant les services professionn
 
 Mai montre une forte homogénéité de type, mais une faible profondeur technique publique. La concentration de LockBit3 et la présence d’organisations financières justifient une vigilance renforcée ; elles ne suffisent pas à établir un mode opératoire commun. La priorité reste la validation interne et la résilience.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

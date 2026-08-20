@@ -6,17 +6,19 @@
 # CTI Report: Cyber attacks in Africa - June 2025
 👉🏾 [**French version available here**](./README_FR.md)
 
-## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during June 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the *AFRINTEL* project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
-
-## 2. Executive summary
+## 1. Executive summary
 - **Total number of recorded attacks:** 21
 - **Most active actors:** mrdump (4 attacks), NightSpire (2), Phantom Atlas (2), warlock (2), Keymous (2), B4baYega (1), incransom (1), Lynx (1), TajineSec / Tajinesec_MA (1), RiseAgainLuigi & B4baYega (1), Evil_BYTE_Officiel (1), KickingPigs (1), MdHackersArmy (1).
 - **Most targeted sectors:** Government / Administrations (7), Banking / Finance (2), Business Services (2), Telecommunications (2), Defense (2), Legal Services (1), Retail (1), Conglomerate (1), Sports / Public Administration (1), Diplomatic / Government (1).
 - **Most affected countries:** Morocco (7), Algeria (7), South Africa (2), Mauritius (1), Egypt (1), Tunisia (1), Djibouti (1).
 - **Notable exfiltrated data volumes:** 90 GB (BNA Algeria), 26 GB (Best Profil Morocco), 3.1 GB (ANCFCC Morocco), 237 claimed elements / 26 sample records (Ministry of Social Solidarity, Egypt), 4,289 claimed records / roughly three dozen sample records (FRMF, Morocco). Embassy of Djibouti in Morocco: unverified claim with no data description or volume disclosed.
 
-## 3. Key statistics
+
+## 2. Methodology
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during June 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the *AFRINTEL* project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by group/actor
 | Group/Actor | Number of Attacks |
@@ -37,7 +39,8 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**     | **20**            |
 
 ```mermaid
-pie title Breakdown by group/actor
+pie showData
+    title Breakdown by group/actor
     "mrdump" : 4
     "NightSpire" : 2
     "Phantom Atlas" : 2
@@ -69,7 +72,8 @@ pie title Breakdown by group/actor
 | **Total** | **20** |
 
 ```mermaid
-pie title Breakdown by industry sector/June 2025
+pie showData
+    title Breakdown by industry sector/June 2025
     "Government" : 7
     "Banking" : 2
     "Business Services" : 2
@@ -95,7 +99,8 @@ pie title Breakdown by industry sector/June 2025
 | **Total** | **20** |
 
 ```mermaid
-pie title Breakdown by country (June 2025)
+pie showData
+    title Breakdown by country (June 2025)
     "🇲🇦 Morocco" : 7
     "🇩🇿 Algeria" : 7
     "🇿🇦 South Africa" : 2
@@ -120,7 +125,8 @@ pie title Breakdown by country (June 2025)
 | 🇲🇺 Mauritius | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisia | 0 | 1 | 1 |  🟦 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 5
     "Data leaks + access sales" : 16
@@ -175,7 +181,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | KickingPigs | 1 | █████ |
 | MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums) | 1 | █████ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Detailed attacks by group/actor
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, June 2025 recorded **21** incidents versus **21** in the preceding month (no change of **0**; **+0.0%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 21 | 21 | 0 (+0.0%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 NightSpire (2 attacks)
 - **02/06/2025:** ANCFCC (Morocco, government) - 3.1 GB of data exfiltrated (10,080 land certificates).
@@ -239,7 +254,8 @@ graph LR
     MdHackersArmy -->|Embassy of Djibouti| Djibouti1["🇩🇯 Djibouti"]
 ```
 
-## 5. Sectoral analysis
+
+## 5. Sectoral impact
 - **Government / Administrations:** 4 attacks (ANCFCC, Ingonyama, Ministry of Education, Ministry of Social Solidarity). Actors NightSpire, the duo RiseAgainLuigi/B4baYega and Keymous targeted key institutions, with leaks of sensitive data (land certificates, student records, personal data on government/institutional officials).
 - **Banking / Finance:** 2 attacks (CPA, BNA) by DieNet and Phantom Atlas, two hacktivist groups, with significant volumes (90 GB for BNA).
 - **Business Services:** 2 attacks (MTT EXPERTISES, Best Profil) by incransom and Lynx, the latter publishing 26 GB of HR data.
@@ -250,7 +266,16 @@ graph LR
 - **Sports / Public Administration:** 1 attack (FRMF) by Keymous, exposing samples of federation player and staff registration and licensing records.
 - **Diplomatic / Government:** 1 unverified claim (Embassy of Djibouti in Morocco) credited to MdHackersArmy, involving an African state's diplomatic mission in another African country.
 
-## 6. Geographic analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 - **Morocco:** 7 attacks, affecting various sectors: government (ANCFCC, Ministry of Education), services (MTT, Best Profil), legal services (Bar Association Portal), telecoms (INWI), sports federation (FRMF). Morocco is by far the most targeted country of the month.
 - **Algeria:** 2 attacks targeting the banking sector (CPA, BNA), with very large data volumes.
 - **South Africa:** 2 attacks (Ingonyama, carducci) in land administration and retail.
@@ -290,7 +315,25 @@ timeline
         MdHackersArmy : Embassy of Djibouti (🇩🇯 Djibouti)
 ```
 
-## 7. Observed TTPs
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 - **Massive exfiltration:** significant volumes for BNA (90 GB), Best Profil (26 GB), ANCFCC (3.1 GB).
 
 - **Use of hacktivism:** DieNet and Phantom Atlas claim politically motivated leaks (e.g., "retaliation").
@@ -298,16 +341,37 @@ timeline
 
 - **Diversity of actors:** traditional ransomware (incransom, Lynx, warlock) and hacktivist groups.
 
-## 8. Recommendations
+
+## 9. Recommendations
 - **Morocco:** strengthen security of government infrastructures (ANCFCC, Ministry of Education) and telecom operators (INWI). Implement data leak monitoring.
 - **Algeria:** banks (CPA, BNA) must review their security protocols and segment networks to limit massive exfiltration.
 - **South Africa:** protect land data (Ingonyama) and customer databases (carducci).
 - **All sectors:** train employees on phishing risks, implement multi-factor authentication and offline backups.
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 June 2025 was marked by high activity in Morocco, with attacks targeting government institutions and strategic companies. The presence of hacktivist groups (DieNet, Phantom Atlas) alongside traditional ransomware shows a diversification of threats. Massive data leaks (BNA, Best Profil) and breaches of Nigerian defense underscore the urgency of regional cybersecurity cooperation. A largely undocumented claim targeting the Embassy of Djibouti in Morocco also illustrates that African diplomatic missions abroad remain exposed to opportunistic claims, even absent verifiable data.
 
-## ✍🏿 Author
+
+### Author
 *Adama ASSIONGBON*  
 *SOC & Cyber Threat Intelligence Consultant*  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

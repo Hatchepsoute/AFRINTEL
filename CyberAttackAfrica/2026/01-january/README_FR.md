@@ -254,6 +254,19 @@ pie
 - L'acheteur de l'accès Bigbrother et la nature de l'accès exploité sont inconnus.
 - Les volumes réels de données dans les incidents de fuite n'ont pas été vérifiés de manière indépendante.
 
+
+### Comparaison factuelle avec décembre 2025
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [décembre](../../2025/12-december/victims_FR.md) et de [janvier](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | décembre 2025 | janvier | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 18 | 21 | +3 (+16,7%) |
+| Ransomware / extorsion | 14 | 17 | +3 |
+| Autres fuites, ventes d'accès ou défacements | 4 | 4 | +0 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Portée analytique |

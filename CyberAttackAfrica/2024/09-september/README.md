@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-September%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — September 2024
+# AFRINTEL CTI Report - September 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -43,7 +43,7 @@ Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR
 
 ```mermaid
 xychart
-    title "Incidents by country — September 2024"
+    title "Incidents by country - September 2024"
     x-axis ["CM","MU","NG","SN","TN"]
     y-axis "Incidents" 0 --> 2
     bar [1,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident-type distribution — September 2024
+    title Incident-type distribution - September 2024
     "Ransomware" : 4
     "Data leak" : 1
 ```
@@ -107,8 +107,8 @@ Each sector appears once. Defense carries the highest sensitivity, while telecom
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** five incidents, five countries, and five distinct actors or sources.
-- **Observed — high confidence:** the Nigerian Navy leak is source-dated to 2020.
+- **Observed - high confidence:** five incidents, five countries, and five distinct actors or sources.
+- **Observed - high confidence:** the Nigerian Navy leak is source-dated to 2020.
 - **Gap:** no public DFIR report was identified in the sources reviewed for the four ransomware claims.
 - **Gap:** authenticity, scope, and current circulation of the Nigerian Navy data remain unknown.
 - **Collection need:** renewed observation of the publication, institutional confirmation, and technical indicators.
@@ -117,9 +117,9 @@ Each sector appears once. Defense carries the highest sensitivity, while telecom
 
 | Status | Technique | Use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed |
-| Preventive | T1490 — Inhibit System Recovery | Recovery-mechanism monitoring |
-| Assumption | T1078 — Valid Accounts | Risk linked to advertised credentials; validity unknown |
+| Preventive | T1486 - Data Encrypted for Impact | Encryption detection; not confirmed |
+| Preventive | T1490 - Inhibit System Recovery | Recovery-mechanism monitoring |
+| Assumption | T1078 - Valid Accounts | Risk linked to advertised credentials; validity unknown |
 
 ## 9. Recommendations
 
@@ -148,6 +148,6 @@ Each sector appears once. Defense carries the highest sensitivity, while telecom
 
 September is low-volume and highly dispersed. Its main lesson is not increased threat activity but the persistence of older data in criminal circulation. Response should separate ransomware resilience from durable invalidation of exposed credentials.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

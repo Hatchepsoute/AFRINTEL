@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-December%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — December 2024
+# AFRINTEL CTI Report - December 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -49,7 +49,7 @@ All statistics derive from the **12 incidents** in [victims.md](./victims.md), s
 
 ```mermaid
 xychart
-    title "Incidents by country — December 2024"
+    title "Incidents by country - December 2024"
     x-axis ["ZA","DZ","BW","EG","MR","NA","NG","SD","TZ","TN","ZM"]
     y-axis "Incidents" 0 --> 3
     bar [2,1,1,1,1,1,1,1,1,1,1]
@@ -57,7 +57,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident type distribution — December 2024
+    title Incident type distribution - December 2024
     "Ransomware" : 11
     "Data leak" : 1
 ```
@@ -125,9 +125,9 @@ Finance and telecommunications account for two incidents each. The other sectors
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** 11 of 12 incidents are classified as ransomware; DAL Group is a data leak and remains separately counted.
-- **Observed — high confidence:** four cases contain published or reviewed material, with varying depth.
-- **Observed — high confidence:** the Ekiti and ASJP datasets structurally link the observed data to the organisations concerned.
+- **Observed - high confidence:** 11 of 12 incidents are classified as ransomware; DAL Group is a data leak and remains separately counted.
+- **Observed - high confidence:** four cases contain published or reviewed material, with varying depth.
+- **Observed - high confidence:** the Ekiti and ASJP datasets structurally link the observed data to the organisations concerned.
 - **Major intelligence gap:** no public DFIR report was identified in the consulted sources to explain initial access, persistence, lateral movement, or any encryption activity.
 - **Gap:** no public material confirms disruption at the named telecommunications operators or water utility.
 - **Collection requirement:** monitor victim communications, subsequent data availability, and independent technical corroboration.
@@ -136,10 +136,10 @@ Finance and telecommunications account for two incidents each. The other sectors
 
 | Qualification | Technique | Defensive use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Ransomware use case; encryption not established in the dataset |
-| Preventive | T1490 — Inhibit System Recovery | Detect shadow-copy deletion and backup tampering |
-| Assumption — medium confidence | T1078 — Valid Accounts | Access scenario to verify; no published telemetry |
-| Preventive | T1567 — Exfiltration Over Web Service | Hunt for anomalous outbound transfer; channel not observed |
+| Preventive | T1486 - Data Encrypted for Impact | Ransomware use case; encryption not established in the dataset |
+| Preventive | T1490 - Inhibit System Recovery | Detect shadow-copy deletion and backup tampering |
+| Assumption - medium confidence | T1078 - Valid Accounts | Access scenario to verify; no published telemetry |
+| Preventive | T1567 - Exfiltration Over Web Service | Hunt for anomalous outbound transfer; channel not observed |
 
 ## 9. Recommendations
 
@@ -168,6 +168,6 @@ Finance and telecommunications account for two incidents each. The other sectors
 
 December closes the year with a dataset dominated by ransomware, but its intelligence value is concentrated in four supported cases. The correct reading is therefore not “twelve confirmed attacks”; it is a distinction among documented exposures, credible but incomplete publications, and claims whose impact remains to be verified.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

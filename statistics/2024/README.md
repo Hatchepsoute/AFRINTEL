@@ -1,7 +1,7 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-CTI-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 
-# AFRINTEL annual CTI report — 2024
+# AFRINTEL annual CTI report - 2024
 
 👉🏾 [Version française](./README_FR.md)
 
@@ -229,4 +229,4 @@ For SOC teams, the priorities remain monitoring remote access, protecting backup
 
 This 2024 review covers 116 documented records, with the strongest concentration in 🇿🇦 South Africa. Evidence limits and repeated claims should guide interpretation.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

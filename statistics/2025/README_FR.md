@@ -2,7 +2,7 @@
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
 ![Période](https://img.shields.io/badge/Période-2025-blue)
 
-# Statistiques annuelles AFRINTEL — 2025
+# Statistiques annuelles AFRINTEL - 2025
 
 👉🏾 [English version](./README.md)
 
@@ -131,4 +131,4 @@ La répartition mesure la visibilité AFRINTEL et non la prévalence des comprom
 
 La base statistique 2025 est réconciliée à **197 fiches** : **122 ransomware**, **72 fuites de données**, **3 ventes d’accès** et **0 défacement**. Les vues pays, secteurs et acteurs doivent être régénérées depuis les fiches mensuelles à chaque évolution de la source.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

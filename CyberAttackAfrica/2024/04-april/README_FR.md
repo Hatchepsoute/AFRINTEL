@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Avril%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Avril 2024
+# Rapport CTI AFRINTEL - Avril 2024
 
 👉🏾 [English version](./README.md)
 
@@ -43,7 +43,7 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 
 ```mermaid
 xychart
-    title "Incidents par pays — avril 2024"
+    title "Incidents par pays - avril 2024"
     x-axis ["ZA","BF","LY","MA","SC"]
     y-axis "Incidents" 0 --> 3
     bar [2,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — avril 2024
+    title Répartition par type - avril 2024
     "Ransomware" : 5
     "Fuite de données" : 1
 ```
@@ -110,8 +110,8 @@ La répartition sectorielle est parfaitement dispersée : un incident dans chacu
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** cinq incidents sur six relèvent du ransomware.
-- **Observé — confiance élevée :** aucun secteur ne compte plus d’un incident.
+- **Observé - confiance élevée :** cinq incidents sur six relèvent du ransomware.
+- **Observé - confiance élevée :** aucun secteur ne compte plus d’un incident.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les cas ransomware.
 - **Lacune :** l’échantillon ONEF ne permet pas de valider le volume complet ou la chronologie d’acquisition.
 - **Collecte attendue :** confirmations victimes, état des services et nouvelles publications d’échantillons.
@@ -120,9 +120,9 @@ La répartition sectorielle est parfaitement dispersée : un incident dans chacu
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les cinq revendications |
-| Préventif | T1490 — Inhibit System Recovery | Contrôle des sauvegardes ; comportement non observé |
-| Préventif | T1567 — Exfiltration Over Web Service | Surveillance des flux sortants ; canal ONEF inconnu |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les cinq revendications |
+| Préventif | T1490 - Inhibit System Recovery | Contrôle des sauvegardes ; comportement non observé |
+| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des flux sortants ; canal ONEF inconnu |
 
 ## 9. Recommandations
 
@@ -151,6 +151,6 @@ La répartition sectorielle est parfaitement dispersée : un incident dans chacu
 
 Avril est un mois de faible volume mais de forte diversité sectorielle. La répétition de SpaceBears et la présence d’organisations sensibles méritent un suivi, sans dépasser ce que les sources établissent. L’ONEF demeure le cas le plus exploitable pour la validation d’une exposition de données.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

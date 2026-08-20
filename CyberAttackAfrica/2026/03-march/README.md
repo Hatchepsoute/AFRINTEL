@@ -304,6 +304,19 @@ pie
 - The UBA Senegal operation occurred in late January, was disclosed in March and was subsequently documented by ngCERT on 25 June 2026; the initial-access vector remains unknown.
 - Guinea’s Ministry of Health compromise remains partially confirmed (correlated access, not full disclosure).
 
+
+### Factual comparison with February 2026
+
+This comparison uses the monthly victim and incident data for [February](../02-february/victims.md) and [March](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | February 2026 | March | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 20 | 41 | +21 (+105.0%) |
+| Ransomware / extortion | 20 | 19 | -1 |
+| Other leaks, access sales or defacement | 0 | 22 | +22 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 9. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Analytical scope |

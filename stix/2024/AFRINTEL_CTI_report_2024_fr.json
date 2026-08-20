@@ -4,16 +4,16 @@
   "source": "AFRINTEL OSINT Dataset",
   "classification": "TLP:CLEAR",
   "period_covered": "1er janvier au 31 décembre 2024",
-  "total_incidents": 116,
-  "total_victims": 116,
+  "total_incidents": 117,
+  "total_victims": 117,
   "compatibility_note": "Le champ total_victims est conservé pour compatibilité historique ; il désigne ici le nombre d'incidents publiés et suivis par AFRINTEL, non des compromissions toutes confirmées.",
   "sections": {
     "1. resume_executif": {
-      "content": "AFRINTEL a documenté 116 incidents dans 27 pays africains : 86 revendications ransomware, 27 fuites de données et 3 ventes d'accès. Aucun défacement n'est présent dans le corpus. L'Afrique du Sud concentre 30 incidents, devant l'Égypte avec 13, puis l'Algérie et le Nigeria avec 7 chacun. Ces chiffres mesurent les publications observées, pas l'incidence exhaustive des cyberattaques sur le continent.",
+      "content": "AFRINTEL a documenté 117 incidents dans 27 pays africains : 86 revendications ransomware, 28 fuites de données et 3 ventes d'accès. Aucun défacement n'est présent dans le corpus. L'Afrique du Sud concentre 30 incidents, devant l'Égypte avec 13, puis l'Algérie et le Nigeria avec 7 chacun. Ces chiffres mesurent les publications observées, pas l'incidence exhaustive des cyberattaques sur le continent.",
       "key_findings": [
         "Ransomware : 86 incidents, soit 74,1 % du corpus",
         "Afrique du Sud : 30 incidents, dont 29 ransomware",
-        "Second semestre : 70 incidents, contre 46 au premier",
+        "Second semestre : 70 incidents, contre 47 au premier",
         "Pics mensuels : août et novembre, 15 incidents chacun",
         "Finance / Banque : premier secteur avec 15 incidents"
       ]
@@ -32,15 +32,15 @@
     "3. vue_globale": {
       "incident_type_distribution": {
         "ransomware": 86,
-        "data_leak": 27,
+        "data_leak": 28,
         "access_sale": 3,
         "defacement": 0,
-        "total": 116
+        "total": 117
       },
       "monthly_activity": [
         {"month": "Janvier", "total": 12, "ransomware": 3, "data_leak": 8, "access_sale": 1},
         {"month": "Février", "total": 9, "ransomware": 5, "data_leak": 4, "access_sale": 0},
-        {"month": "Mars", "total": 8, "ransomware": 7, "data_leak": 1, "access_sale": 0},
+        {"month": "Mars", "total": 9, "ransomware": 7, "data_leak": 2, "access_sale": 0},
         {"month": "Avril", "total": 6, "ransomware": 5, "data_leak": 1, "access_sale": 0},
         {"month": "Mai", "total": 8, "ransomware": 8, "data_leak": 0, "access_sale": 0},
         {"month": "Juin", "total": 3, "ransomware": 3, "data_leak": 0, "access_sale": 0},
@@ -64,7 +64,7 @@
         "Kenya": 4,
         "Namibie": 4,
         "Cameroun": 3,
-        "Éthiopie": 3,
+        "Éthiopie": 4,
         "Seychelles": 3,
         "Zimbabwe": 3,
         "Libye": 2,
@@ -94,7 +94,7 @@
         "Industrie / Fabrication": 11,
         "Services professionnels / Entreprises": 11,
         "Technologies / Informatique": 11,
-        "Éducation / Université": 10,
+        "Éducation / Université": 11,
         "Santé / Médical": 9,
         "Commerce / E-commerce": 9,
         "Télécommunications": 5,
@@ -113,7 +113,7 @@
     },
     "4. analyse_par_type": {
       "ransomware": "Le ransomware représente près des trois quarts du corpus et se concentre particulièrement en Afrique australe. La publication d'une victime sur un site de fuite n'établit pas à elle seule le chiffrement, l'exfiltration ou l'interruption des services.",
-      "data_leaks_and_access_sales": "Les 27 fuites et 3 ventes d'accès sont plus réparties géographiquement. Un accès proposé à la vente signale une exposition possible, mais ne confirme ni sa validité actuelle ni son utilisation."
+      "data_leaks_and_access_sales": "Les 28 fuites et 3 ventes d'accès sont plus réparties géographiquement. Un accès proposé à la vente signale une exposition possible, mais ne confirme ni sa validité actuelle ni son utilisation."
     },
     "5. impact_sectoriel": {
       "content": "La finance arrive en tête avec 15 incidents, devant le gouvernement avec 12. L'industrie, les services professionnels et les technologies en comptent 11 chacun. Les priorités portent sur les identités et transactions dans la finance, la continuité des services publics, la segmentation industrielle et le contrôle des accès prestataires."
@@ -140,9 +140,9 @@
     },
     "7. tendances_et_lacunes": {
       "observed": [
-        {"confidence": "Élevée", "finding": "86 incidents sur 116 sont classés ransomware."},
+        {"confidence": "Élevée", "finding": "86 incidents sur 117 sont classés ransomware."},
         {"confidence": "Élevée", "finding": "L'Afrique du Sud représente 25,9 % du corpus annuel."},
-        {"confidence": "Élevée", "finding": "Le second semestre compte 70 incidents, contre 46 au premier."}
+        {"confidence": "Élevée", "finding": "Le second semestre compte 70 incidents, contre 47 au premier."}
       ],
       "assumptions": [
         {"confidence": "Moyenne au niveau général, faible par incident", "finding": "La réutilisation d'identifiants, les courtiers d'accès initial et les services Edge ou VPN exposés constituent des scénarios prioritaires de recherche, non des faits attribués aux victimes du corpus."}
@@ -154,31 +154,39 @@
         "Impact des republications et doubles revendications sur la chronologie."
       ]
     },
-    "8. mitre_attack_contextuel": [
+    "8. analyse_comparative_objective": {
+      "periods": "Janvier-juin versus juillet-décembre",
+      "incidents": {"first_half": 47, "second_half": 70, "absolute_change": 23, "change_percent": 48.9},
+      "ransomware": {"first_half": 31, "second_half": 55, "absolute_change": 24, "change_percent": 77.4},
+      "data_leaks": {"first_half": 15, "second_half": 13, "absolute_change": -2, "change_percent": -13.3},
+      "access_sales": {"first_half": 1, "second_half": 2, "absolute_change": 1, "change_percent": 100.0},
+      "assessment": "Le second semestre compte 23 incidents de plus, différence entièrement portée par le ransomware. Les fuites diminuent légèrement. Cette comparaison décrit le corpus collecté et ne prouve pas une hausse équivalente des compromissions réelles ; l'activité des sources, les republications et les délais de collecte restent des facteurs de visibilité."
+    },
+    "9. mitre_attack_contextuel": [
       {"qualification": "Hypothèse - confiance moyenne", "technique_id": "T1078", "name": "Valid Accounts"},
       {"qualification": "Hypothèse - confiance moyenne", "technique_id": "T1190", "name": "Exploit Public-Facing Application"},
       {"qualification": "Préventif", "technique_id": "T1486", "name": "Data Encrypted for Impact"},
       {"qualification": "Préventif", "technique_id": "T1490", "name": "Inhibit System Recovery"},
       {"qualification": "Préventif", "technique_id": "T1567", "name": "Exfiltration Over Web Service"}
     ],
-    "9. recommandations": [
+    "10. recommandations": [
       "Imposer une MFA résistante au phishing sur les accès sensibles et distants.",
       "Segmenter les environnements IT, industriels, d'administration et de sauvegarde.",
       "Surveiller les exports massifs et encadrer les accès des tiers.",
       "Tester la continuité des services essentiels et la restauration hors ligne.",
       "Évaluer régulièrement l'exposition Internet et fermer les accès distants inutiles."
     ],
-    "10. recommandations_soc": {
+    "11. recommandations_soc": {
       "observed": "Corréler organisations, domaines, dates et acteurs du corpus avec la télémétrie IAM, EDR, VPN, WAF, DNS, proxy et messagerie.",
       "assumption": "Rechercher accès depuis des infrastructures inhabituelles, réutilisation d'identifiants, création de comptes, élévation de privilèges et exports massifs.",
       "preventive": "Détecter dump LSASS, PowerShell obfusqué, suppression de sauvegardes, chiffrement massif et transferts sortants anormaux, notamment via Rclone."
     },
-    "11. recommandations_strategiques": {
+    "12. recommandations_strategiques": {
       "observed": "Prioriser la résilience ransomware en Afrique australe et les risques d'exposition de données en Afrique du Nord et de l'Ouest.",
       "assumption": "Auditer les scénarios d'accès par identité, prestataire et équipement périmétrique sans les présenter comme historiques.",
       "preventive": "Réduire la surface externe, corriger les équipements Edge/VPN, fermer les RDP inutiles et maintenir des sauvegardes immuables, isolées et testées."
     },
-    "12. conclusion": "Le corpus 2024 fournit une base de travail pour transformer des signaux issus du dark web, du darknet et de l'OSINT en priorités défensives. Sa limite principale reste le manque de retours DFIR publics : les faits observés, les hypothèses et les inconnues doivent rester explicitement séparés."
+    "13. conclusion": "Le corpus 2024 fournit une base de travail pour transformer des signaux issus du dark web, du darknet et de l'OSINT en priorités défensives. Sa limite principale reste le manque de retours DFIR publics : les faits observés, les hypothèses et les inconnues doivent rester explicitement séparés."
   },
   "references": [
     "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/README_FR.md",

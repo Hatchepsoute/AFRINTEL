@@ -1,4 +1,4 @@
-# Statistiques CTI AFRINTEL — Septembre 2025
+# Statistiques CTI AFRINTEL - Septembre 2025
 
 👉🏾 [English version](./README.md)
 
@@ -79,5 +79,5 @@ Cette fiche reprend les 18 cartes du fichier victimes mensuel. Les publications 
 | Ransomware | 11 |
 | Data Leak | 7 |
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR
 

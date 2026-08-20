@@ -6,17 +6,20 @@
 
 # Rapport CTI : Cyberattaques en Afrique - Janvier 2025
 👉🏾 [**English version available here** ](./README.md)
-## 1. Introduction
-Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de janvier 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
 
-## 2. Résumé exécutif
+## 1. Résumé exécutif
 - **Nombre total d'attaques recensées** : 16
 - **Groupes ransomware les plus actifs** : funksec (6 attaques), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
 - **Secteurs les plus ciblés** : Éducation (5), Administrations publiques (3), Santé (2), Services aux entreprises (2), Commerce de détail (1), Logistique (1), Marketing (1), Hôtellerie (1).
 - **Pays les plus touchés** : Égypte (4), Nigeria (3), Algérie (2), Maroc (2), Kenya (2), Afrique du Sud (1), Ouganda (1), Zambie (1).
 - **Volume de données exfiltrées** : Au moins 1,5 To pour INTELS Nigeria, 19 Go pour molars.co.ke. Les autres volumes ne sont pas précisés.
 
-## 3. Statistiques clés
+
+## 2. Méthodologie
+Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de janvier 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.
+
+
+## 3. Vue d'ensemble
 
 ### 3.1 Répartition par groupe ransomware
 | Groupe ransomware | Nombre d'attaques |
@@ -30,7 +33,8 @@ Ce rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée 
 | **Total**         | **16**            |
 
 ```mermaid
-pie title Répartition des attaques par groupe
+pie showData
+    title Répartition des attaques par groupe
     "funksec" : 6
     "GDLockerSec" : 3
     "babuk2" : 2
@@ -52,7 +56,8 @@ pie title Répartition des attaques par groupe
 | **Total** | **16** |
 
 ```mermaid
-pie title Répartition par secteur d'activité
+pie showData
+    title Répartition par secteur d'activité
     "Éducation" : 5
     "Administrations publiques" : 3
     "Santé" : 2
@@ -76,7 +81,8 @@ pie title Répartition par secteur d'activité
 | **Total** | **16** |
 
 ```mermaid
-pie title Attaques par pays (Janvier 2025)
+pie showData
+    title Attaques par pays (Janvier 2025)
     "🇪🇬 Égypte" : 4
     "🇳🇬 Nigeria" : 3
     "🇩🇿 Algérie" : 2
@@ -112,7 +118,8 @@ Une carte des attaques.
 | 🇺🇬 Ouganda | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Types d’incidents
     "Ransomware" : 16
     "Fuites de données + ventes d’accès" : 0
@@ -165,47 +172,18 @@ Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ou
 | spacebears | 2 | ███ |
 | apt73 | 1 | ██ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Détail des attaques par groupe ransomware
 
-### 4.1 FunkSec (6 attaques)
-- **09/01/2025** : gags.gov.eg (Égypte, administrations) - Claim - Data Sample Published, confiance élevée : accès authentifié au panneau d'administration observé, incluant un payload d'injection SQL.
-- **11/01/2025** : seocommarrakech.com (Maroc, marketing)
-- **15/01/2025** : mts.gov.eg (Égypte, administrations) - Claim - Data Sample Published, confiance élevée : rapports système internes (permis, trafic portuaire, recouvrement) examinés, datés de manière cohérente avec la revendication.
-- **21/01/2025** : cu-barika.dz (Algérie, éducation)
-- **26/01/2025** : achieverssciencejournal.org (Nigeria, éducation) - Claim - Data Sample Published, confiance élevée.
-- **27/01/2025** : qed.co.ug (Ouganda, services aux entreprises/messagerie) - Claim - Data Sample Published, confiance très élevée : plus de 1,8 million d'enregistrements de contacts observés et compte administrateur « Funksec » auto-créé laissé dans l'application de la victime.
+### Comparaison avec le mois précédent
 
-*Remarque* : funksec a ciblé principalement les administrations et l'éducation, avec une répartition géographique variée. Trois des six revendications (GAGS, MTS, QED) sont désormais corroborées par du matériel examiné plutôt que de reposer uniquement sur la publication du leak site.
+À partir des fiches incidents validées comme source de comptage, janvier 2025 compte **16** incidents contre **12** le mois précédent (une hausse de **+4** ; **+33.3%**). Cette comparaison décrit les publications enregistrées par AFRINTEL et ne prouve pas à elle seule une évolution de l'activité des attaquants ni un impact confirmé sur les victimes.
 
-### 4.2 GDLockerSec (3 attaques)
-- **24/01/2025** : lnrbda.gov.ng (Nigeria, administrations)
-- **24/01/2025** : usmba.ac.ma (Maroc, éducation)
-- **26/01/2025** : fgse.cu.edu.eg (Égypte, éducation)
+| Indicateur | Mois précédent | Mois en cours | Variation |
+|---|---:|---:|---:|
+| Fiches incidents enregistrées | 12 | 16 | +4 (+33.3%) |
 
-*Remarque* : GDLockerSec a frappé des institutions éducatives et gouvernementales, avec des volumes de données apparemment faibles (quelques Mo).
+## 4. Analyse détaillée par type d'incident
 
-### 4.3 Babuk2 (2 attaques)
-- **27/01/2025** : workers.com.zm (Zambie, services RH) - Claim - Data Sample Published, confiance élevée : un export complet de base de données WordPress/WooCommerce/GiveWP a été examiné ; le fichier examiné ne portait aucune marque propre à un acteur, l'attribution à babuk2 est donc conservée mais signalée pour vérification manuelle.
-- **27/01/2025** : zetech.ac.ke (Kenya, éducation)
-
-*Remarque* : babuk2 a ciblé une entreprise de services et une université.
-
-### 4.4 Ransomhub (2 attaques)
-- **06/01/2025** : molars.co.ke (Kenya, santé) - 19 Go exfiltrés
-- **14/01/2025** : INTELS Nigeria (Nigeria, logistique) - 1,5 To exfiltrés
-
-*Remarque* : ransomhub a réalisé deux attaques significatives avec des volumes de données importants, notamment sur une infrastructure critique nigériane.
-
-### 4.5 Space Bears (2 attaques)
-- **14/01/2025** : Sharm Reef Hotel (Égypte, hôtellerie)
-- **21/01/2025** : Inaya Clinique (Algérie, santé)
-
-*Remarque* : spacebears a ciblé le tourisme et la santé.
-
-### 4.6 apt73 (1 attaque)
-- **09/01/2025** : pnp.co.za (Afrique du Sud, commerce de détail) - Pick n Pay, un grand détaillant.
-
-## 5. Analyse sectorielle
+## 5. Impact sectoriel
 - **Éducation** : 5 attaques (universités, écoles, journaux académiques). Les groupes funksec, GDLockerSec et babuk2 sont particulièrement actifs dans ce secteur.
 - **Administrations publiques** : 3 attaques (sites gouvernementaux, agences). funksec et GDLockerSec sont les principaux acteurs.
 - **Santé** : 2 attaques (clinique dentaire, hôpital). Ransomhub et Spacebears.
@@ -215,7 +193,16 @@ Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ou
 - **Marketing** : 1 attaque (agence SEO) par Funksec.
 - **Hôtellerie** : 1 attaque (hôtel) par Spacebears.
 
-## 6. Analyse géographique
+
+## 6. Profil des acteurs
+### 6.1 Profil des acteurs
+
+Les comptages d'acteurs et de sources restent ceux documentés en section 3 et dans les fiches victimes sources. L'attribution est conservée uniquement au niveau étayé par les éléments publics.
+
+### 6.2 Évaluation du risque
+
+Les pays et secteurs présentant plusieurs fiches ou des fonctions publiques, éducatives, sanitaires, financières ou critiques doivent faire l'objet d'une validation prioritaire. Il s'agit d'un signal de priorisation OSINT, et non d'une confirmation de compromission ou d'impact.
+
 - **Égypte** : 4 attaques, principalement des administrations et éducation.
 - **Nigeria** : 3 attaques, dont une critique sur le secteur pétrolier.
 - **Algérie** : 2 attaques (éducation et santé).
@@ -293,23 +280,62 @@ timeline
         babuk2 : Zetech (Kenya)
 ```
 
-## 7. TTPs observées
+
+## 7. Tendances et lacunes de renseignement
+### 7.1 Tendances observées
+
+Les répartitions par pays, secteur, acteur et type d'incident présentées ci-dessus constituent les tendances traçables du mois. Elles décrivent le corpus surveillé et n'établissent pas une campagne plus large sans éléments indépendants.
+
+### 7.2 Lacunes de renseignement
+
+Les rapports disponibles ne permettent pas d'établir pour chaque revendication le vecteur d'accès initial, l'exfiltration complète, la confirmation par la victime, la chronologie de remédiation ou l'impact opérationnel. Aucun détail DFIR public n'est inclus dans le corpus consulté pour cette fiche mensuelle ; cette absence est limitée aux sources examinées.
+
+## 8. Cartographie MITRE ATT&CK (contextuelle)
+| Phase | ID technique | Nom | Association à l'incident |
+|---|---|---|---|
+| Collecte | T1005 | Data from Local System | Correspondance contextuelle pour une collecte ou exposition revendiquée ; la méthode n'est pas confirmée. |
+| Collecte | T1213 | Data from Information Repositories | Correspondance contextuelle pour les dossiers ou référentiels décrits publiquement ; la méthode n'est pas confirmée. |
+
+Ces correspondances ATT&CK sont contextuelles et défensives. Elles ne prouvent pas qu'un acteur donné a utilisé la technique.
+
+### Contextual observations
 D'après les descriptions limitées, on peut noter :
 - **Exfiltration de données** : Les groupes revendiquent des volumes importants (1,5 To pour INTELS, 19 Go pour molars).
 - **Ciblage de secteurs spécifiques** : Les administrations et l'éducation sont privilégiées.
 - **Utilisation de sites de fuite** : Les groupes publient des échantillons de données pour faire pression.
 - **Diversité des groupes** : 6 groupes différents actifs en janvier 2025.
 
-## 8. Recommandations
+
+## 9. Recommandations
 - **Secteur public** : Renforcer la sécurité des sites gouvernementaux et des établissements éducatifs, souvent vulnérables.
 - **Secteur privé** : Les entreprises de logistique et de santé doivent prioriser la protection des données sensibles.
 - **Surveillance des groupes** : Suivre les activités de funksec, GDLockerSec et ransomhub, qui semblent les plus prolifiques.
 - **Sensibilisation** : Former les employés aux risques de phishing et d'ingénierie sociale, vecteurs d'accès initiaux probables.
 
-## 9. Conclusion
+
+## 10. Recommandations SOC et tactiques
+### Observé
+
+Les sources publiques documentent des revendications, des publications ou du matériel exposé. Elles ne fournissent pas à elles seules une télémétrie prouvant une technique ou une compromission active.
+
+### Hypothèses
+
+L'abus d'identifiants, un stockage exposé, des contrôles d'accès faibles ou des privilèges d'export excessifs peuvent expliquer certaines expositions, mais chaque hypothèse doit être vérifiée par l'organisation concernée.
+
+### Préventif
+
+Surveiller les journaux d'identité, VPN, cloud, bases de données, messagerie et transferts sortants. Imposer une MFA résistante au phishing, le moindre privilège, la segmentation, des sauvegardes testées et la révocation rapide des jetons ou identifiants.
+
+## 11. Recommandations stratégiques
+1. **Risques observés :** prioriser la validation des organisations, secteurs et types de données documentés dans le corpus mensuel.
+2. **Hypothèses :** tester les chemins possibles liés aux identifiants, au stockage cloud et aux exports excessifs sans les présenter comme des faits établis.
+3. **Socle préventif :** maintenir l'inventaire des actifs, la classification des données, les exercices de réponse, les plans de reprise et les procédures coordonnées de sécurité, de droit et de protection des données.
+
+## 12. Conclusion
 Janvier 2025 a été marqué par une activité soutenue de plusieurs groupes ransomware en Afrique, avec un focus sur les institutions publiques et éducatives. Le groupe funksec se distingue par sa fréquence, tandis que ransomhub a réalisé l'attaque la plus volumineuse. La diversité des acteurs et des secteurs touchés souligne la nécessité d'une vigilance accrue et d'une coopération régionale en matière de cybersécurité.
 
-## ✍🏿 Auteur
+
+### Auteur
 *Adama ASSIONGBON*  
 *Consultant SOC & Cyber Threat Intelligence*  
 [LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

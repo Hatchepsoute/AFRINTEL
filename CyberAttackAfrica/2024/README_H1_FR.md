@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-H1%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Premier semestre 2024
+# Rapport CTI AFRINTEL - Premier semestre 2024
 
 👉🏾 [English version](./README_H1.md)
 
@@ -42,7 +42,7 @@ Le corpus décrit les publications observées par AFRINTEL, pas l’ensemble des
 
 ```mermaid
 xychart
-    title "Incidents mensuels — H1 2024"
+    title "Incidents mensuels - H1 2024"
     x-axis ["Jan","Fév","Mar","Avr","Mai","Juin"]
     y-axis "Incidents" 0 --> 13
     bar [12,9,8,6,8,3]
@@ -50,7 +50,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — H1 2024
+    title Répartition par type - H1 2024
     "Ransomware" : 31
     "Fuites de données" : 14
     "Vente d’accès" : 1
@@ -120,7 +120,7 @@ pie showData
 | LockBit3 | 13 |
 | Hunters | 4 |
 | RansomHub | 4 |
-| Tanaka — publication sur un forum clandestin | 3 |
+| Tanaka - publication sur un forum clandestin | 3 |
 | ArcusMedia | 2 |
 | SpaceBears | 2 |
 
@@ -149,9 +149,9 @@ Le gouvernement arrive en tête avec sept incidents, devant la finance avec six.
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** le ransomware représente 31 incidents sur 46.
-- **Observé — confiance élevée :** l’Afrique australe ne compte que des publications ransomware dans ce corpus semestriel.
-- **Observé — confiance élevée :** les fuites sont géographiquement plus réparties que les revendications ransomware.
+- **Observé - confiance élevée :** le ransomware représente 31 incidents sur 46.
+- **Observé - confiance élevée :** l’Afrique australe ne compte que des publications ransomware dans ce corpus semestriel.
+- **Observé - confiance élevée :** les fuites sont géographiquement plus réparties que les revendications ransomware.
 - **Lacune majeure :** les sources consultées ne contiennent pas de rapports DFIR publics permettant d’établir les chaînes d’attaque.
 - **Lacune :** l’âge, l’exhaustivité et l’origine de plusieurs jeux de données publiés ne sont pas déterminés.
 - **Collecte attendue :** consolider les confirmations de victimes, les dates de première observation et les liens entre republications.
@@ -160,10 +160,10 @@ Le gouvernement arrive en tête avec sept incidents, devant la finance avec six.
 
 | Qualification | Technique | Utilisation défensive |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Cas d’usage ransomware ; chiffrement non confirmé pour chaque victime |
-| Préventif | T1490 — Inhibit System Recovery | Surveiller l’altération des mécanismes de restauration |
-| Hypothèse — confiance moyenne | T1078 — Valid Accounts | Scénario à examiner pour les accès vendus ou réutilisés |
-| Préventif | T1567 — Exfiltration Over Web Service | Détecter les transferts sortants inhabituels |
+| Préventif | T1486 - Data Encrypted for Impact | Cas d’usage ransomware ; chiffrement non confirmé pour chaque victime |
+| Préventif | T1490 - Inhibit System Recovery | Surveiller l’altération des mécanismes de restauration |
+| Hypothèse - confiance moyenne | T1078 - Valid Accounts | Scénario à examiner pour les accès vendus ou réutilisés |
+| Préventif | T1567 - Exfiltration Over Web Service | Détecter les transferts sortants inhabituels |
 
 ## 9. Recommandations
 
@@ -192,6 +192,6 @@ Le gouvernement arrive en tête avec sept incidents, devant la finance avec six.
 
 Le premier semestre 2024 montre une pression ransomware concentrée et une circulation de données plus diffuse. Il ne mesure pas l’incidence réelle sur le continent. Sa valeur opérationnelle tient à la priorisation : vérifier les publications, rapprocher les indices de la télémétrie interne et adapter la défense au niveau de preuve de chaque cas.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

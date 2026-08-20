@@ -1,4 +1,4 @@
-# AFRINTEL CTI statistics — January 2024
+# AFRINTEL CTI statistics - January 2024
 
 👉🏾 [French version](./README_FR.md)
 
@@ -77,5 +77,5 @@ This statistical sheet is compiled from the 12 cards in the monthly victim file.
 
 The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR
 

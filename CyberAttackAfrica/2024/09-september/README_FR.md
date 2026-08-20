@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Septembre%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Septembre 2024
+# Rapport CTI AFRINTEL - Septembre 2024
 
 👉🏾 [English version](./README.md)
 
@@ -43,7 +43,7 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 
 ```mermaid
 xychart
-    title "Incidents par pays — septembre 2024"
+    title "Incidents par pays - septembre 2024"
     x-axis ["CM","MU","NG","SN","TN"]
     y-axis "Incidents" 0 --> 2
     bar [1,1,1,1,1]
@@ -51,7 +51,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — septembre 2024
+    title Répartition par type - septembre 2024
     "Ransomware" : 4
     "Fuite de données" : 1
 ```
@@ -107,8 +107,8 @@ Chaque secteur apparaît une seule fois. La défense présente la sensibilité l
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** cinq incidents, cinq pays et cinq acteurs ou sources distincts.
-- **Observé — confiance élevée :** la fuite Nigerian Navy est datée de 2020 par la source.
+- **Observé - confiance élevée :** cinq incidents, cinq pays et cinq acteurs ou sources distincts.
+- **Observé - confiance élevée :** la fuite Nigerian Navy est datée de 2020 par la source.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les quatre revendications ransomware.
 - **Lacune :** l’authenticité, la portée et la circulation actuelle des données attribuées à la Nigerian Navy restent inconnues.
 - **Collecte attendue :** nouvelle observation de la publication, confirmation institutionnelle et indicateurs techniques.
@@ -117,9 +117,9 @@ Chaque secteur apparaît une seule fois. La défense présente la sensibilité l
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé |
-| Préventif | T1490 — Inhibit System Recovery | Surveillance des mécanismes de restauration |
-| Hypothèse | T1078 — Valid Accounts | Risque lié aux identifiants revendiqués ; validité inconnue |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé |
+| Préventif | T1490 - Inhibit System Recovery | Surveillance des mécanismes de restauration |
+| Hypothèse | T1078 - Valid Accounts | Risque lié aux identifiants revendiqués ; validité inconnue |
 
 ## 9. Recommandations
 
@@ -148,6 +148,6 @@ Chaque secteur apparaît une seule fois. La défense présente la sensibilité l
 
 Septembre est peu volumineux et très dispersé. Sa principale leçon n’est pas une hausse de menace, mais la persistance possible de données anciennes dans les circuits criminels. La réponse doit distinguer résilience ransomware et invalidation durable des identifiants exposés.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

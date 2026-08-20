@@ -4,7 +4,7 @@
 ![Période](https://img.shields.io/badge/Période-Août%202026-lightgrey)
 ![Type de renseignement](https://img.shields.io/badge/Renseignement-CTI-purple)
 
-# Rapport CTI — Cyberattaques en Afrique (août 2026)
+# Rapport CTI - Cyberattaques en Afrique (août 2026)
 
 👉🏾 [**English version available here**](./README.md)
 
@@ -53,8 +53,9 @@ AFRINTEL a recensé **8 incidents** concernant des entités africaines en août 
 | 🇲🇺 Maurice | 1 | ██ 12,5 % |
 | 🇳🇬 Nigeria | 1 | ██ 12,5 % |
 
-```pie
-title Incidents par pays — août 2026
+```mermaid
+pie showData
+title Incidents par pays - août 2026
 "Afrique du Sud" : 3
 "Kenya" : 2
 "Algérie" : 1
@@ -94,8 +95,9 @@ title Incidents par pays — août 2026
 | Logistique / Services de courrier | 1 | 12,5 % |
 | Médias / Édition | 1 | 12,5 % |
 
-```pie
-title Incidents par secteur — août 2026
+```mermaid
+pie showData
+title Incidents par secteur - août 2026
 "Finance / Banque" : 3
 "Gouvernement / Administration" : 2
 "Ressources humaines / Recrutement" : 1
@@ -153,6 +155,19 @@ Sept acteurs ou sources de publication distincts sont recensés. exfilar appara�
 - exfilar apparaît dans deux publications observées impliquant des données applicatives hébergées dans le cloud ; les éléments disponibles ne prouvent pas une chaîne d'intrusion commune.
 - Les lacunes portent sur l'opérateur PAYGO kényan exact, la validité et les privilèges de l'accès algérien, l'authenticité et l'exhaustivité des éléments SnapStar Talent et SpearFin, la validité actuelle et l'origine des valeurs d'identifiants Daily Trust, l'absence d'échantillon visible pour The Courier Guy, la revendication visant la banque centrale et l'éventuelle persistance d'expositions dans les environnements associés.
 
+
+### Comparaison factuelle avec juillet 2026
+
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [juillet](../07-july/victims_FR.md) et de [août](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+
+| Indicateur | juillet 2026 | août | Évolution observée |
+| :--- | ---: | ---: | ---: |
+| Incidents documentés | 42 | 8 | -34 (-81,0%) |
+| Ransomware / extorsion | 18 | 3 | -15 |
+| Autres fuites, ventes d'accès ou défacements | 24 | 5 | -19 |
+
+La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+
 ## 8. Cartographie MITRE ATT&CK (contextuelle)
 
 | Phase | Technique | Nom | Observation associée |
@@ -191,5 +206,5 @@ Maintenir un inventaire des actifs et stockages exposés sur Internet, imposer u
 
 Août 2026 comprend **8 incidents recensés** : trois publications ransomware, quatre entrées de fuite de données et une revendication de vente d'accès. Bien que plusieurs publications restent non confirmées, la sensibilité et l'ampleur des données identitaires, d'identifiants, professionnelles, financières et gouvernementales revendiquées justifient une validation défensive immédiate par les organisations potentiellement concernées.
 
-— **AFRINTEL**  
+- **AFRINTEL**
 [Dépôt GitHub](https://github.com/Hatchepsoute/AFRINTEL)

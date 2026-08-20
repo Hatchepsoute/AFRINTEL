@@ -6,17 +6,20 @@
 
 # CTI Report: Cyber attacks in Africa - April 2025
 👉🏾 [**French version available here**](README_FR.md)
-## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during April 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
-## 2. Executive Summary
+## 1. Executive summary
 - **Total number of recorded attacks:** 17
 - **Most active actors/sources:** Phantom Atlas (3 attacks), Jabaroot DZ (2), devman (2), dragonforce (1), ransomhouse (1), crypto24 (1), cicada3301 (1), gunra (1), p4xar (1), B4baYega (1), Killer_Bee (1), oblivion666 (1).
 - **Most targeted sectors:** Government / Public administrations (5), Finance / Banking / Insurance (2), Healthcare (2), Agribusiness / Food (2), Defense / National Security (1), Telecommunications (1), Business Services / HR (1), Technology / IT services (1), Education (1).
 - **Most affected countries:** Egypt (4), Morocco (4), Algeria (3), South Africa (2), Senegal (1), Mauritania (1), Tunisia (1).
 - **Exfiltrated data volume:** 27.75 GB for IACC Holdings. Other volumes are not specified.
 
-## 3. Key statistics
+
+## 2. Methodology
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during April 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by actor/source
 | Actor / Group | Number of Attacks |
@@ -36,7 +39,8 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total**         | **16**            |
 
 ```mermaid
-pie title Attack Distribution by Actor/Source (April 2025)
+pie showData
+    title Attack Distribution by Actor/Source (April 2025)
     "Phantom Atlas" : 3
     "Jabaroot DZ" : 2
     "devman" : 2
@@ -66,7 +70,8 @@ pie title Attack Distribution by Actor/Source (April 2025)
 | **Total** | **16** |
 
 ```mermaid
-pie title Breakdown by industry sector
+pie showData
+    title Breakdown by industry sector
     "Public Administration" : 5
     "Finance / Banking / Insurance" : 2
     "Healthcare" : 2
@@ -91,7 +96,8 @@ pie title Breakdown by industry sector
 | **Total** | **16** |
 
 ```mermaid
-pie title Breakdown by country (April 2025)
+pie showData
+    title Breakdown by country (April 2025)
     "🇪🇬 Egypt" : 4
     "🇲🇦 Morocco" : 4
     "🇩🇿 Algeria" : 3
@@ -114,7 +120,8 @@ pie title Breakdown by country (April 2025)
 | 🇸🇳 Senegal | 0 | 1 | 1 |  🟦 |
 | 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 7
     "Data leaks + access sales" : 10
@@ -172,7 +179,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | gunra | 1 | ███ |
 | nightspire | 1 | ███ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Detailed attacks by ransomware group
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, April 2025 recorded **17** incidents versus **11** in the preceding month (an increase of **+6**; **+54.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 11 | 17 | +6 (+54.5%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 Jabaroot DZ (2 attacks)
 - **08/04/2025:** CNSS (Morocco, public administrations)
@@ -233,7 +249,8 @@ graph LR
     KillerBee["Killer_Bee"] -->|BMI / SEDAD| Mauritania["🇲🇷 Mauritania"]
     oblivion666 -->|Senegalese Armed Forces| Senegal["🇸🇳 Senegal"]
 ```
-## 5. Sectoral analysis
+
+## 5. Sectoral impact
 - **Public Administrations:** 4 attacks (CNSS, Ministry of Industry, Ministry of Housing, MGPTT). Groups Jabaroot DZ, B4baYega and Phantom Atlas targeted key institutions in Morocco and Algeria, with sensitive data (beneficiaries, administrative documents).
 - **Agribusiness:** 2 attacks (Premier Meats, Natilait) by devman and cicada3301, targeting food processing companies in South Africa and Tunisia.
 - **Finance/Logistics:** 1 attack (IACC Holdings) by dragonforce, with 27.75 GB exfiltrated.
@@ -272,7 +289,16 @@ timeline
         gunra : Dar Al Teb (🇪🇬 Egypt)
 ```
 
-## 6. Geographic analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 - **Morocco:** 4 attacks (CNSS, Ministry of Industry, Ministry of Housing, ISMAC) - public administration and education. Two claims were posted by Jabaroot DZ on the same day; the ISMAC claim is supported by a substantial SQL sample, and the Ministry of Housing claim remains unverified due to a password-protected archive.
 - **Egypt:** 4 attacks (IACC, IBS, Tawasol, Dar Al Teb) - finance, BPO, IT, healthcare. Egypt remains among the most targeted countries on the continent.
 - **South Africa:** 2 attacks (Cell C, Premier Meats) - telecoms and agribusiness.
@@ -283,7 +309,25 @@ timeline
 
 North Africa (Egypt, Morocco, Algeria, Tunisia) concentrates 10 out of 14 attacks, confirming high pressure on the region.
 
-## 7. Observed TTPs
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 - **Data Exfiltration:** IACC Holdings (27.75 GB), MGPTT (beneficiary lists) and the ISMAC SQL sample illustrate the collection and exposure of sensitive data.
 - **Targeting of Public Institutions:** 4 attacks on government bodies, with potentially political motivations ("retaliation" claim for MGPTT).
 - **Access Sale:** oblivion666 advertised domains and administrator-level access to Senegalese armed forces infrastructure, illustrating the access-broker segment of the ecosystem alongside ransomware and data-leak claims.
@@ -291,17 +335,38 @@ North Africa (Egypt, Morocco, Algeria, Tunisia) concentrates 10 out of 14 attack
 - **Double Extortion:** Claims accompanied by data leaks to pressure victims.
 - **Web Exploitation:** Likely for government websites.
 
-## 8. Recommendations
+
+## 9. Recommendations
 - **Public and Education Sectors:** Strengthen administrative and student portals, enforce MFA for privileged access, restrict database exports, and monitor anomalous SQL dump creation, especially in Morocco and Algeria.
 - **Egypt:** Increase vigilance in finance, BPO, and healthcare sectors, which are heavily targeted.
 - **Agribusiness:** Companies like Premier Meats and Natilait must secure their digital supply chains.
 - **Telecoms:** Operators like Cell C should protect subscriber data.
 - **All Sectors:** Implement multi-factor authentication and offline backups.
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 April 2025 was marked by sustained activity in north Africa, with a high proportion of attacks against public administrations. Groups Jabaroot DZ and devman stand out for their versatility. The diversity of actors (hacktivists, ransomware) underscores the complexity of the threat. Enhanced regional cooperation is needed to counter these cyber attacks.
 
-## ✍🏿 Author
+
+### Author
 *Adama ASSIONGBON*  
 *SOC & Cyber Threat Intelligence Consultant*  
 [LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

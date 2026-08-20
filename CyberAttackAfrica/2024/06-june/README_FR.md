@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Juin%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Juin 2024
+# Rapport CTI AFRINTEL - Juin 2024
 
 👉🏾 [English version](./README.md)
 
@@ -39,7 +39,7 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 
 ```mermaid
 xychart
-    title "Incidents par pays — juin 2024"
+    title "Incidents par pays - juin 2024"
     x-axis ["ZA","CG"]
     y-axis "Incidents" 0 --> 3
     bar [2,1]
@@ -47,7 +47,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — juin 2024
+    title Répartition par type - juin 2024
     "Ransomware" : 3
 ```
 
@@ -99,8 +99,8 @@ Chaque secteur ne compte qu’un incident. Le principal risque analytique serait
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** trois publications ransomware, sans acteur répété.
-- **Observé — confiance moyenne :** le volume est nettement inférieur aux mois précédents, mais cela peut refléter la collecte.
+- **Observé - confiance élevée :** trois publications ransomware, sans acteur répété.
+- **Observé - confiance moyenne :** le volume est nettement inférieur aux mois précédents, mais cela peut refléter la collecte.
 - **Lacune :** aucun rapport DFIR public ou échantillon n’a été identifié dans les sources consultées.
 - **Lacune :** l’activité précise de Burotec.biz reste insuffisamment documentée pour une qualification sectorielle plus fine.
 - **Collecte attendue :** confirmations victimes, état opérationnel et indicateurs techniques.
@@ -109,9 +109,9 @@ Chaque secteur ne compte qu’un incident. Le principal risque analytique serait
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé publiquement |
-| Préventif | T1490 — Inhibit System Recovery | Surveillance de l’intégrité des sauvegardes |
-| Hypothèse | T1078 — Valid Accounts | Scénario à vérifier, sans accès valide observé |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé publiquement |
+| Préventif | T1490 - Inhibit System Recovery | Surveillance de l’intégrité des sauvegardes |
+| Hypothèse | T1078 - Valid Accounts | Scénario à vérifier, sans accès valide observé |
 
 ## 9. Recommandations
 
@@ -139,6 +139,6 @@ Chaque secteur ne compte qu’un incident. Le principal risque analytique serait
 
 Juin ne permet pas de dégager une tendance robuste au-delà de la présence de trois publications ransomware. Sa valeur tient précisément à cette limite : le faible volume rappelle que les statistiques OSINT mesurent aussi la visibilité des sources. La réponse défensive doit rester ciblée sur les organisations concernées.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

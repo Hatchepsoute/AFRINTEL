@@ -290,6 +290,25 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 
 ## Février 2024
 
+### 1 Février 2024
+
+#### 🇪🇬 Égypte - 8WORX
+- **Date de publication de la source :** 30 juin 2023
+- **Date de découverte AFRINTEL :** 1 février 2024
+- **Acteur / Groupe :** Tanaka, publication sur un forum clandestin
+- **Secteur :** Technologies / Services logiciels
+- **Site web :** [8worx.com](https://8worx.com)
+- **Statut :** Claim - Data Sample Published
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 3
+- **Type d'incident :** Fuite de données
+- **Description victime :** 8WORX est un prestataire de solutions technologiques légalement enregistré dans le Delaware, aux États-Unis, qui déclare concentrer son activité sur l'Égypte et le Moyen-Orient, en développant des applications web et des systèmes pour des clients des secteurs privé et public.
+- **Analyse :** La publication est signée par le compte Tanaka, qui porte un badge de modérateur sur le forum, si bien que l'acteur à l'origine de l'intrusion n'est pas identifié. La publication sur le forum annonce un export SQL de 1,3 Go daté de 2023, comptant environ 4 millions de lignes réparties sur des tables incluant des numéros de téléphone, des journaux d'activité et des comptes sociaux, structurées autour d'un module « Leads » cohérent avec un système de CRM ou de gestion de prospects. L'échantillon visible montre des instructions SQL INSERT à l'apparence authentique, avec des champs détaillés de contact, de suivi d'activité et de compte, et une grande part des enregistrements téléphoniques porte un indicatif pays Égypte (EG), cohérent avec le positionnement régional déclaré de 8WORX. La cohérence structurelle du schéma et la plausibilité des enregistrements échantillonnés soutiennent une évaluation à confiance élevée quant à l'authenticité de l'échantillon, bien qu'AFRINTEL n'ait pas confirmé indépendamment l'intrusion, l'étendue complète de la base sous-jacente, ni l'exhaustivité du volume annoncé de 4 millions de lignes. L'exposition de ce jeu de données combinerait numéros de téléphone, adresses email, activité de prospects et de comptes, et références internes d'utilisateurs pour un très grand nombre d'individus, créant un risque important de phishing ciblé, d'ingénierie sociale et de fraude. AFRINTEL ne reproduit aucun numéro de téléphone, adresse email, nom ni enregistrement interne issu de l'échantillon.
+
+----------------------------
+
+----------------------------
+
 ### 6 Février 2024
 
 #### 🇪🇬 Égypte - ArpuPlus
@@ -408,6 +427,27 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 ----------------------------
 
 ## Mars 2024
+
+### 1 Mars 2024
+
+#### 🇪🇹 Éthiopie - Portails fédéraux eTrade et eRIS
+- **Acteur / Groupe :** ThreatSec
+- **Secteur :** Gouvernement / Services publics numériques
+- **Site web :** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
+- **Statut :** Claim - Data Sample Published
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+- **Type d'incident :** Fuite de données
+- **Description victime :** La publication associe le portail eTrade du ministère éthiopien du Commerce et de l'Intégration régionale au système eRIS de l'Ethiopian Food and Drug Authority. Il s'agit de deux services fédéraux distincts réunis dans une même revendication.
+
+- **Analyse :**
+  - **Observé :** la fiche est classée au 1er mars 2024 à la demande du mainteneur. La publication de forum, relayée par Tanaka et datée du 24 août 2023, attribue à ThreatSec une revendication d’accès aux deux portails et de collecte de 43 fichiers, dont des PDF, des images et des documents d'identité gouvernementaux. Un PDF fourni localement a été examiné en lecture seule : 3 023 068 octets, cinq pages scannées, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. Les cinq pages contiennent un document administratif et contractuel en amharique, avec des cachets officiels, des signatures manuscrites et des montants financiers. Aucune donnée personnelle brute n'est reproduite.
+  - **Hypothèse :** les caractéristiques documentaires sont cohérentes avec un document administratif éthiopien et renforcent la plausibilité structurelle de l'échantillon, sans établir sa provenance technique.
+  - **Inconnu :** la méthode d'acquisition, le lien direct du PDF avec chacun des deux portails, l'existence et le contenu des 42 autres fichiers revendiqués, ainsi qu'une confirmation par les organismes concernés restent non vérifiés. L'examen visuel couvre les cinq pages, mais l'OCR complet de l'amharique n'a pas pu être validé.
+
+----------------------------
+
+----------------------------
 
 ### 9 Mars 2024
 
@@ -846,25 +886,25 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 - **Description victime :** Maxcess-logistics est une entreprise commerciale majeure opérant dans le secteur de la logistique, contribuant de manière significative au tissu économique régional en Tunisie.
 
 ### 02 Juillet 2024
-#### 🇪🇹 Éthiopie - National War College (nwc.ndu.edu)
+#### 🇪🇹 Éthiopie - F.D.R.E Defence War College (domaine cité : nwc.ndu.edu)
 
 - **Acteur / Groupe :** TheColorYellow, publication postée sur RaidForums
 - **Secteur :** Défense / Enseignement militaire
 - **Statut :** Claim - Data Sample Published
-- **Site web :** nwc.ndu.edu (tel qu'indiqué dans la publication ; voir note de fiabilité)
+- **Site web :** [dwc.edu.et](https://dwc.edu.et/wc/) (organisation observée dans les échantillons) ; domaine cité par l'acteur : nwc.ndu.edu
 - **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 4
 - **Type d'incident :** Fuite de données
 - **Date de découverte :** 02 juillet 2024
 
 - **Note de fiabilité :**
-  Le titre et le texte de la publication citent le domaine « nwc.ndu.edu », qui correspond au National War College de la National Defense University (États-Unis). Cependant, les deux échantillons de documents portant un en-tête institutionnel dans la publication affichent tous deux l'emblème et l'en-tête en amharique du « F.D.R.E Defence War College » (République Fédérale Démocratique d'Éthiopie), et non une institution américaine. AFRINTEL ne peut résoudre cette incohérence à partir des éléments examinés et considère le domaine cité par l'acteur comme non vérifié ; l'évaluation ci-dessous s'appuie sur l'en-tête éthiopien visible dans les échantillons, cohérent avec l'affirmation du vendeur selon laquelle la victime est un collège militaire éthiopien.
+  La publication de TheColorYellow annonce une victime présentée comme le « National War College of Ethiopia » et cite le domaine nwc.ndu.edu. Ce domaine correspond au National War College de la National Defense University des États-Unis. Toutefois, les cinq fichiers PNG fournis localement présentent l'emblème et l'en-tête en amharique du « F.D.R.E Defence War College » éthiopien, ainsi que des documents internes, un inventaire de 29 postes et un tableau de 17 entrées téléphoniques. Une erreur de domaine dans l'annonce, une confusion de nom ou une attribution technique incorrecte restent donc possibles. AFRINTEL retient comme organisation observée le F.D.R.E Defence War College et conserve nwc.ndu.edu comme domaine annoncé mais non vérifié.
 
 - **Description :**
-  Le National War College mentionné dans la publication correspond, d'après l'en-tête visible dans les échantillons, au FDRE Defence War College, un établissement d'enseignement militaire de la République Fédérale Démocratique d'Éthiopie.
+  Les éléments visibles correspondent au F.D.R.E Defence War College, établissement d’enseignement militaire éthiopien. Le lien officiel observé pour cette organisation est [dwc.edu.et](https://dwc.edu.et/wc/). Le domaine nwc.ndu.edu reste uniquement le domaine cité dans l’annonce de l’acteur.
 
 - **Analyse CTI :**
-  L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Trois images de documents sont présentées en échantillon : un document interne en amharique évoquant le service informatique du collège et une note de plan de travail/discipline interne portant l'emblème du FDRE Defence War College ; un modèle bilingue (amharique/anglais) d'« engagement de confidentialité » sur le même en-tête, avec des champs vierges pour le nom, le numéro d'identité, le service et les signatures ; et un avis distinct en chinois adressé aux étudiants internationaux concernant les modalités d'entrée pour le semestre d'automne 2021, dont le lien avec la compromission Exchange revendiquée n'est pas établi par les éléments montrés. AFRINTEL n'a pas eu accès au jeu de données de 747 Mo sous-jacent et ne peut confirmer ni l'exhaustivité, ni l'authenticité, ni l'origine réelle en boîtes aux lettres de l'export revendiqué au-delà de ces images de documents. La présence d'un modèle d'engagement de confidentialité interne et d'une correspondance du service informatique portant un en-tête institutionnel d'apparence authentique est cohérente avec un ensemble de documents internes d'un établissement d'enseignement militaire, sans pour autant confirmer à elle seule une compromission de l'ensemble du serveur Exchange. Si la revendication sous-jacente est exacte, l'exposition des communications électroniques du personnel et des étudiants du collège militaire présenterait une sensibilité relevant du secteur souverain (données personnelles, correspondance administrative interne et potentiellement liée à la formation). AFRINTEL ne reproduit aucun nom, numéro d'identité, adresse e-mail ni contenu de document au-delà de ce qui est décrit ci-dessus.
+  L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Le répertoire local fourni contient cinq PNG, mais aucun PST, EML, MSG ou export Exchange. Les images comprennent des documents institutionnels, un avis en chinois pour les étudiants internationaux, un inventaire visible de 29 postes et un tableau visible de 17 entrées téléphoniques. Ces éléments sont cohérents avec des documents internes du F.D.R.E Defence War College et renforcent l'attribution de l'échantillon, mais ne confirment ni l'accès au serveur Exchange, ni l'existence des 747 Mo, ni l'exhaustivité ou l'origine des données. L'OCR amharique et chinois n'a pas été utilisé pour transcrire les valeurs ; aucun nom, numéro, identifiant matériel ou numéro de téléphone n'est reproduit.
 
 ### 5 Juillet 2024
 #### 🇿🇦 Afrique du Sud - National health laboratory services (NHLS)
@@ -2003,4 +2043,4 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 
 ---
 
-*Compilation AFRINTEL — source unique : fichiers mensuels.*
+*Compilation AFRINTEL - source unique : fichiers mensuels.*

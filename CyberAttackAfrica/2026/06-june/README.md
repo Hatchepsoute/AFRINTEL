@@ -405,6 +405,19 @@ pie
 
 ---
 
+
+### Factual comparison with May 2026
+
+This comparison uses the monthly victim and incident data for [May](../05-may/victims.md) and [June](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | May 2026 | June | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 57 | 40 | -17 (-29.8%) |
+| Ransomware / extortion | 17 | 20 | +3 |
+| Other leaks, access sales or defacement | 40 | 20 | -20 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 8. MITRE ATT&CK mapping (contextual)
 
 The following techniques are defensive hypotheses derived from the exposed material. They do not establish the intrusion path unless the source explicitly described the collection method.

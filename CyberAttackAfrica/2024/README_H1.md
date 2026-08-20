@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Period-H1%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# AFRINTEL CTI Report — First Half of 2024
+# AFRINTEL CTI Report - First Half of 2024
 
 👉🏾 [Version française](./README_H1_FR.md)
 
@@ -42,7 +42,7 @@ The dataset describes publications observed by AFRINTEL, not all cyberattacks on
 
 ```mermaid
 xychart
-    title "Monthly incidents — H1 2024"
+    title "Monthly incidents - H1 2024"
     x-axis ["Jan","Feb","Mar","Apr","May","Jun"]
     y-axis "Incidents" 0 --> 13
     bar [12,9,8,6,8,3]
@@ -50,7 +50,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Incident type distribution — H1 2024
+    title Incident type distribution - H1 2024
     "Ransomware" : 31
     "Data leaks" : 14
     "Access sale" : 1
@@ -120,7 +120,7 @@ pie showData
 | LockBit3 | 13 |
 | Hunters | 4 |
 | RansomHub | 4 |
-| Tanaka — underground-forum publication | 3 |
+| Tanaka - underground-forum publication | 3 |
 | ArcusMedia | 2 |
 | SpaceBears | 2 |
 
@@ -149,9 +149,9 @@ Government leads with seven incidents, followed by finance with six. Technology,
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed — high confidence:** ransomware accounts for 31 of 46 incidents.
-- **Observed — high confidence:** Southern Africa contains only ransomware publications in this semester’s dataset.
-- **Observed — high confidence:** leaks are geographically more distributed than ransomware claims.
+- **Observed - high confidence:** ransomware accounts for 31 of 46 incidents.
+- **Observed - high confidence:** Southern Africa contains only ransomware publications in this semester’s dataset.
+- **Observed - high confidence:** leaks are geographically more distributed than ransomware claims.
 - **Major intelligence gap:** the consulted sources contain no public DFIR reports establishing attack chains.
 - **Gap:** the age, completeness, and origin of several published datasets remain undetermined.
 - **Collection requirement:** consolidate victim confirmations, first-observed dates, and links among reposts.
@@ -160,10 +160,10 @@ Government leads with seven incidents, followed by finance with six. Technology,
 
 | Qualification | Technique | Defensive use |
 |---|---|---|
-| Preventive | T1486 — Data Encrypted for Impact | Ransomware use case; encryption not confirmed for every victim |
-| Preventive | T1490 — Inhibit System Recovery | Monitor tampering with recovery mechanisms |
-| Assumption — medium confidence | T1078 — Valid Accounts | Scenario to examine for sold or reused access |
-| Preventive | T1567 — Exfiltration Over Web Service | Detect unusual outbound transfers |
+| Preventive | T1486 - Data Encrypted for Impact | Ransomware use case; encryption not confirmed for every victim |
+| Preventive | T1490 - Inhibit System Recovery | Monitor tampering with recovery mechanisms |
+| Assumption - medium confidence | T1078 - Valid Accounts | Scenario to examine for sold or reused access |
+| Preventive | T1567 - Exfiltration Over Web Service | Detect unusual outbound transfers |
 
 ## 9. Recommendations
 
@@ -192,6 +192,6 @@ Government leads with seven incidents, followed by finance with six. Technology,
 
 The first half of 2024 shows concentrated ransomware pressure and more diffuse data circulation. It does not measure the continent’s true incidence. Its operational value lies in prioritisation: verify publications, compare clues against internal telemetry, and adapt defence to the evidence level of each case.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 
 [AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -5,15 +5,8 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 
 # 🛡️ AFRINTEL | CTI Report: Cyberattacks in Africa
-## Period: September 2025 (18 documented victims)
-👉🏾 [**French version available here**](./README_FR.md)
 
----
-
-## 1. Introduction
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks that occurred across Africa in September 2025. The data is compiled from **OSINT** sources and ransomware group leak sites as part of the **AFRINTEL** project. Our objective is to provide clear insights into trends, threat actors, and targeted sectors on the continent.
-
-## 2. Executive summary
+## 1. Executive summary
 * **Total recorded attacks:** 18.
 * **Most active actors:** `TheGentlemen` (2 attacks), `killsec` (2 attacks) and `privilege` (2 attacks).
 * **Primary targeted sectors:** Public Administration, Finance, Insurance, Manufacturing, Technology, Telecommunications, and Education.
@@ -26,7 +19,12 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 
 ---
 
-## 3. Key statistics
+
+## 2. Methodology
+This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks that occurred across Africa in September 2025. The data is compiled from **OSINT** sources and ransomware group leak sites as part of the **AFRINTEL** project. Our objective is to provide clear insights into trends, threat actors, and targeted sectors on the continent.
+
+
+## 3. Global overview
 
 ### 📊 3.1 Breakdown by group/actor
 | Group / Actor | Number of Attacks |
@@ -70,7 +68,8 @@ This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of 
 - Real Estate / Catering              	[██████████] 2
 
 ```mermaid
-pie title Sector distribution - September 2025
+pie showData
+    title Sector distribution - September 2025
     "Public Admin" : 4
     "Finance" : 4
     "Insurance" : 2
@@ -138,7 +137,8 @@ graph TD
 | 🇸🇳 Senegal | 1 | 0 | 1 | 🟧 |
 | 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 11
     "Data leaks + access sales" : 7
@@ -194,7 +194,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | obscura | 1 | █████ |
 | privilege | 1 | █████ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Detailed incidents by group/actor
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, September 2025 recorded **18** incidents versus **13** in the preceding month (an increase of **+5**; **+38.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 13 | 18 | +5 (+38.5%) |
+
+## 4. Detailed analysis by incident type
 
 #### 4.1 TheGentlemen (2 attacks)
 * **09/09/2025: Dolidol (Morocco)** - Manufacturing / Bedding Industry. Claim & data leak.
@@ -295,20 +304,70 @@ class V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14 victim;
 class P1,P2,P3,P4,P5,P6,P7,P8,P9 country;
 ```
 ---
-## 5. Observed TTPs (Tactics, Techniques & Procedures)
+
+## 5. Sectoral impact
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 * **Massive Exfiltration:** Ability to collect and exfiltrate volumes exceeding 1 TB (DGID) or millions of rows of data (NSIA).
 * **Double Extorsion & Monetization:** Systematic sale of data on underground forums to force payment (e.g., Tanaka).
 * **State Infrastructure Targeting:** Increased attacks against regulatory bodies and financial ministries.
 * **Geo-Operational Agility:** Ability of certain groups to conduct simultaneous attacks across different regions of the continent (e.g., TheGentlemen).
 
-## 6. Recommendations
+
+## 9. Recommendations
 1.  **Data Governance:** For public administrations, prioritize encryption of sensitive databases and offline backups.
 2.  **Network Segmentation:** Isolate payroll systems and customer registries from internet-exposed networks.
 3.  **Cyber Hygiene:** Widespread implementation of Multi-Factor Authentication (MFA) and regular audits of third-party access (VPN/ERP).
 
 ---
 
-## 7. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 September 2025 confirms that Africa is a major operational ground for ransomware groups and data-leak actors. The diversity of actors (11 named groups plus one unattributed data-leak case) and the scale of exfiltrations (DGID, NSIA, UMC1) call for increased vigilance and strengthened intelligence sharing (CTI) between the continent's nations.
 
 ---

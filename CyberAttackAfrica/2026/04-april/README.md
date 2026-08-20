@@ -396,6 +396,19 @@ pie
 * **E-commerce kept leaking payment data.** The **Pick n Pay ASAP / Bottles.com** compromise exposed full credit card details and 3D-Secure logs, the kind of thing that points to real gaps in regional PCI-DSS compliance.
 * **Full mailboxes got scraped, not just files.** **CNSS Benin**'s entire official mailbox database was harvested and dumped, pension cards and certificates of life included.
 
+
+### Factual comparison with March 2026
+
+This comparison uses the monthly victim and incident data for [March](../03-march/victims.md) and [April](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | March 2026 | April | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 41 | 60 | +19 (+46.3%) |
+| Ransomware / extortion | 19 | 20 | +1 |
+| Other leaks, access sales or defacement | 22 | 40 | +18 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 9. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Analytical scope |

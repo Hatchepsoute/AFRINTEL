@@ -5,17 +5,20 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
 # CTI report: Cyber attacks in Africa - February 2025
 👉🏾 [**French version available here** ](./README_FR.md)
-## 1. Introduction
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during February 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
-## 2. Executive summary
+## 1. Executive summary
 - **Total number of recorded attacks:** 08
 - **Most active actors:** ransomhub (2 attacks), killsec (2), fog (1), 0x0day (1), flocker (1), akira (1), hunter (1).
 - **Most targeted sectors:** Finance / Banking / Insurance (3), Technology / IT services (1), Public Services (1), Government / Public administrations (1), Telecommunications (1), Retail / Distribution (1), Business services / HR (1).
 - **Most affected countries:** Egypt (3), Ghana (2), Morocco (1), South Africa (1), Zambia (1), Namibia (1).
 - **Exfiltrated data volume:** 444.8 GB for SPEED Co (Egypt), 1.2 GB for the Zambian government portal. Other volumes are not specified.
 
-## 3. Key statistics
+
+## 2. Methodology
+This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during February 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
+
+
+## 3. Global overview
 
 ### 3.1 Breakdown by actor
 | Actor / Group | Number of attacks |
@@ -42,7 +45,8 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | **Total** | **09** |
 
 ```mermaid
-pie title Breakdown by industry sector (Feb 2025)
+pie showData
+    title Breakdown by industry sector (Feb 2025)
     "Finance / Banking / Insurance" : 3
     "Technology / IT" : 1
     "Public Services" : 1
@@ -64,7 +68,8 @@ pie title Breakdown by industry sector (Feb 2025)
 | **Total** | **09** |
 
 ```mermaid
-pie title Breakdown by country
+pie showData
+    title Breakdown by country
     "🇪🇬 Egypt" : 3
     "🇬🇭 Ghana" : 2
     "🇲🇦 Morocco" : 1
@@ -86,7 +91,8 @@ pie title Breakdown by country
 | 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
 
-```pie
+```mermaid
+pie showData
     title Incident types
     "Ransomware" : 8
     "Data leaks + access sales" : 0
@@ -136,7 +142,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 | fog | 1 | █████ |
 | hunter | 1 | █████ |
 <!-- AFRINTEL_CURRENT_MODEL_END -->
-## 4. Detailed attacks by ransomware group
+
+### Month-on-month comparison
+
+Using the validated incident cards as the counting source, February 2025 recorded **8** incidents versus **16** in the preceding month (a decrease of **-8**; **-50.0%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
+
+| Metric | Previous month | Current month | Change |
+|---|---:|---:|---:|
+| Recorded incident cards | 16 | 8 | -8 (-50.0%) |
+
+## 4. Detailed analysis by incident type
 
 ### 4.1 ransomhub (2 attacks)
 - **12/02/2025:** ASK Gras Savoye (Morocco, insurance)
@@ -162,7 +177,8 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 ### 4.6 hunter (1 attack)
 - **22/02/2025:** SPEED Co (Egypt, logistics) - 444.8 GB exfiltrated (285,891 files)
 
-## 5. Sectoral analysis
+
+## 5. Sectoral impact
 - **Business services:** 2 attacks (Xlab Group, Shaghalni). Groups fog and killsec are involved, targeting digital service and HR providers.
 - **Insurance / Insurtech:** 2 attacks (ASK Gras Savoye, Brolly). ransomhub and killsec show interest in the financial sector and startups.
 - **Telecommunications:** 1 attack (Paratus) by akira, targeting a major operator in Namibia.
@@ -170,7 +186,16 @@ Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central 
 - **Public services:** 1 attack (SAWS) by ransomhub, affecting the South African national weather service.
 - **Government:** 1 attack (Zambian portal) by flocker, exposing sensitive citizen data.
 
-## 6. Geographic analysis
+
+## 6. Threat actor profile
+### 6.1 Threat actor profile
+
+Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+
+### 6.2 Risk assessment
+
+Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+
 - **Egypt:** 3 attacks (Xlab Group, SPEED Co, Shaghalni) - varied sectors (IT, logistics, recruitment). Egypt confirms its position as the most targeted country of the month.
 - **South Africa:** 1 attack (SAWS) - national weather service, data potentially used for strategic operations.
 - **Morocco:** 1 attack (ASK Gras Savoye) - insurance sector, sensitive customer data.
@@ -212,7 +237,25 @@ timeline
     section Feb 23
         killsec : Shaghalni (🇪🇬 Egypt)
 ```
-## 7. Observed TTPs
+
+## 7. Key trends and intelligence gaps
+### 7.1 Observed trends
+
+The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+
+### 7.2 Intelligence gaps
+
+The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+
+## 8. MITRE ATT&CK mapping (contextual)
+| Phase | Technique ID | Name | Incident association |
+|---|---|---|---|
+| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
+| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+
+These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+
+### Contextual observations
 Based on the available descriptions, we note:
 - **Massive exfiltration:** SPEED Co (444.8 GB) and Zambian portal (1.2 GB) show a willingness to collect as much data as possible before encryption.
 - **Targeting of critical infrastructures:** logistics (SPEED Co), telecoms (Paratus), public services (SAWS).
@@ -220,17 +263,38 @@ Based on the available descriptions, we note:
 - **Use of leak sites:** groups publish samples to prove their compromises and pressure victims.
 - **Double extortion:** likely in all cases, with disclosure of sensitive data.
 
-## 8. Recommendations
+
+## 9. Recommendations
 - **Egypt:** strengthen cybersecurity in the logistics and digital services sectors, which are highly targeted. Implement proactive threat monitoring.
 - **Insurance sector:** raise awareness among brokers and insurtechs about ransomware risks, and implement isolated backups.
 - **Telecoms:** pan-African operators like Paratus must protect their critical infrastructures and segment their networks.
 - **Governments:** public service portals (Zambia) must be prioritized for security, with multi-factor authentication and regular audits.
 - **All sectors:** train employees to detect phishing, a likely initial access vector.
 
-## 9. Conclusion
+
+## 10. SOC and tactical recommendations
+### Observed
+
+Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+
+### Hypotheses
+
+Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+
+### Preventive
+
+Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+
+## 11. Strategic recommendations
+1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
+2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
+3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+## 12. Conclusion
 February 2025 saw concentrated activity in Egypt, with large-scale attacks (SPEED Co) and sectoral diversification. The groups ransomhub and killsec stand out for their versatility, striking both traditional insurance companies and innovative startups. The diversity of targets (insurance, telecoms, logistics, government) shows that attackers are adapting to local specificities and promising sectors. Increased vigilance is necessary, particularly for critical infrastructures and emerging digital services.
 
-## ✍🏿 Author
+
+### Author
 *Adama ASSIONGBON*  
 *SOC & Cyber Threat Intelligence Consultant*  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

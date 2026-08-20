@@ -83,7 +83,7 @@ Legend: EG = Egypt; MA = Morocco; ZA = South Africa; DZ = Algeria; NG = Nigeria;
 | **Total** | **197** | **100%** |
 
 ```mermaid
-pie
+pie showData
     title Types d’incidents - 2025
     "Ransomware" : 122
     "Data leaks" : 72

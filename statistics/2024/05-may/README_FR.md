@@ -1,4 +1,4 @@
-# Statistiques CTI AFRINTEL — Mai 2024
+# Statistiques CTI AFRINTEL - Mai 2024
 
 👉🏾 [English version](./README.md)
 
@@ -52,5 +52,5 @@ Cette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications r
 |---|---:|
 | Ransomware | 8 |
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR
 

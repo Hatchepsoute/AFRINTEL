@@ -3,11 +3,30 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyberattaques en Afrique - Mars 2024 : liste des 8 victimes
+# Cyberattaques en Afrique - Mars 2024 : liste des 9 victimes
 
 👉🏾 [**English version available here**](./victims.md)
 
 ## Mars 2024
+
+### 1 Mars 2024
+
+#### 🇪🇹 Éthiopie - Portails fédéraux eTrade et eRIS
+- **Acteur / Groupe :** ThreatSec
+- **Secteur :** Gouvernement / Services publics numériques
+- **Site web :** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
+- **Statut :** Claim - Data Sample Published
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+- **Type d'incident :** Fuite de données
+- **Description victime :** La publication associe le portail eTrade du ministère éthiopien du Commerce et de l'Intégration régionale au système eRIS de l'Ethiopian Food and Drug Authority. Il s'agit de deux services fédéraux distincts réunis dans une même revendication.
+
+- **Analyse :**
+  - **Observé :** la fiche est classée au 1er mars 2024 à la demande du mainteneur. La publication de forum, relayée par Tanaka et datée du 24 août 2023, attribue à ThreatSec une revendication d’accès aux deux portails et de collecte de 43 fichiers, dont des PDF, des images et des documents d'identité gouvernementaux. Un PDF fourni localement a été examiné en lecture seule : 3 023 068 octets, cinq pages scannées, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. Les cinq pages contiennent un document administratif et contractuel en amharique, avec des cachets officiels, des signatures manuscrites et des montants financiers. Aucune donnée personnelle brute n'est reproduite.
+  - **Hypothèse :** les caractéristiques documentaires sont cohérentes avec un document administratif éthiopien et renforcent la plausibilité structurelle de l'échantillon, sans établir sa provenance technique.
+  - **Inconnu :** la méthode d'acquisition, le lien direct du PDF avec chacun des deux portails, l'existence et le contenu des 42 autres fichiers revendiqués, ainsi qu'une confirmation par les organismes concernés restent non vérifiés. L'examen visuel couvre les cinq pages, mais l'OCR complet de l'amharique n'a pas pu être validé.
+
+----------------------------
 
 ### 9 Mars 2024
 

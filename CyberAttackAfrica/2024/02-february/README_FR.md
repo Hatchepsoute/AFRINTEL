@@ -3,7 +3,7 @@
 ![Période](https://img.shields.io/badge/Période-Février%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI AFRINTEL — Février 2024
+# Rapport CTI AFRINTEL - Février 2024
 
 👉🏾 [English version](./README.md)
 
@@ -45,7 +45,7 @@ Les statistiques dérivent des **9 incidents** de [victims_FR.md](./victims_FR.m
 
 ```mermaid
 xychart
-    title "Incidents par pays — février 2024"
+    title "Incidents par pays - février 2024"
     x-axis ["ZA","CI","EG","GH","TN","ET"]
     y-axis "Incidents" 0 --> 3
     bar [2,2,2,1,1,1]
@@ -53,7 +53,7 @@ xychart
 
 ```mermaid
 pie showData
-    title Répartition par type — février 2024
+    title Répartition par type - février 2024
     "Ransomware" : 5
     "Fuites de données" : 4
 ```
@@ -113,8 +113,8 @@ Le secteur public représente un tiers du corpus. Les publications touchent l’
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé — confiance élevée :** les incidents sont presque équilibrés entre ransomware et fuites.
-- **Observé — confiance élevée :** trois des quatre fuites concernent directement des organismes publics.
+- **Observé - confiance élevée :** les incidents sont presque équilibrés entre ransomware et fuites.
+- **Observé - confiance élevée :** trois des quatre fuites concernent directement des organismes publics.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour qualifier les cinq cas ransomware.
 - **Lacune :** l’ancienneté et la représentativité de certains échantillons ne permettent pas d’extrapoler les volumes revendiqués.
 - **Collecte attendue :** confirmations des victimes, notifications officielles et nouvelles traces de republication.
@@ -123,9 +123,9 @@ Le secteur public représente un tiers du corpus. Les publications touchent l’
 
 | Statut | Technique | Utilisation |
 |---|---|---|
-| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement pour les cinq revendications ransomware ; technique non confirmée |
-| Préventif | T1567 — Exfiltration Over Web Service | Surveillance des sorties de données ; canal non observé |
-| Hypothèse | T1078 — Valid Accounts | Scénario à examiner pour les environnements administratifs ; aucun compte compromis confirmé |
+| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement pour les cinq revendications ransomware ; technique non confirmée |
+| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des sorties de données ; canal non observé |
+| Hypothèse | T1078 - Valid Accounts | Scénario à examiner pour les environnements administratifs ; aucun compte compromis confirmé |
 
 ## 9. Recommandations
 
@@ -154,5 +154,5 @@ Le secteur public représente un tiers du corpus. Les publications touchent l’
 
 Février présente un paysage plus dispersé que janvier. Le poids du secteur public et la coexistence de ransomware et de fuites imposent deux efforts parallèles : continuité d’activité d’un côté, validation et réduction de l’exposition des données de l’autre. Les sources publiques ne permettent pas d’aller plus loin sur les modes opératoires.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL - TLP:CLEAR**
 [Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

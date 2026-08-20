@@ -4,7 +4,7 @@
 ![Period](https://img.shields.io/badge/Period-August%202026-lightgrey)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
-# CTI Report — Cyberattacks in Africa (August 2026)
+# CTI Report - Cyberattacks in Africa (August 2026)
 
 👉🏾 [**Version française disponible ici**](./README_FR.md)
 
@@ -53,8 +53,9 @@ AFRINTEL recorded **8 incidents** involving African entities in August 2026: **3
 | 🇲🇺 Mauritius | 1 | ██ 12.5% |
 | 🇳🇬 Nigeria | 1 | ██ 12.5% |
 
-```pie
-title Incidents by country — August 2026
+```mermaid
+pie showData
+title Incidents by country - August 2026
 "South Africa" : 3
 "Kenya" : 2
 "Algeria" : 1
@@ -94,8 +95,9 @@ title Incidents by country — August 2026
 | Logistics / Courier Services | 1 | 12.5% |
 | Media / Publishing | 1 | 12.5% |
 
-```pie
-title Incidents by sector — August 2026
+```mermaid
+pie showData
+title Incidents by sector - August 2026
 "Finance / Banking" : 3
 "Government / Administration" : 2
 "Human Resources / Recruitment" : 1
@@ -153,6 +155,19 @@ Seven distinct actors or publication sources are recorded. exfilar appears in tw
 - exfilar appears in two observed publications involving cloud-hosted application data; the available material does not prove a shared intrusion chain.
 - Intelligence gaps include the exact Kenyan PAYGO operator, the validity and privileges of the Algerian access, the authenticity and completeness of the SnapStar Talent and SpearFin material, the current validity and origin of the Daily Trust credential values, the absence of a visible sample for The Courier Guy, the central-bank claim, and whether related production environments remain exposed.
 
+
+### Factual comparison with July 2026
+
+This comparison uses the monthly victim and incident data for [July](../07-july/victims.md) and [August](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+
+| Indicator | July 2026 | August | Observed change |
+| :--- | ---: | ---: | :--- |
+| Documented incidents | 42 | 8 | -34 (-81.0%) |
+| Ransomware / extortion | 18 | 3 | -15 |
+| Other leaks, access sales or defacement | 24 | 5 | -19 |
+
+The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+
 ## 8. MITRE ATT&CK mapping (contextual)
 
 | Phase | Technique | Name | Associated observation |
@@ -191,5 +206,5 @@ Maintain an inventory of internet-exposed assets and data stores, require securi
 
 August 2026 contains **8 recorded incidents**: three ransomware publications, four data-leak entries and one access-sale claim. Although several publications remain unconfirmed, the sensitivity and scale of the claimed identity, credential, employment, financial and government data warrant immediate defensive validation by potentially affected organizations.
 
-— **AFRINTEL**  
+- **AFRINTEL**
 [GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)

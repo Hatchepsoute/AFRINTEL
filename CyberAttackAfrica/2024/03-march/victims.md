@@ -3,11 +3,30 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa - March 2024: List of 8 Victims
+# Cyber Attacks in Africa - March 2024: List of 9 Victims
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
 ## March 2024
+
+### March 1, 2024
+
+#### 🇪🇹 Ethiopia - Federal eTrade and eRIS portals
+- **Actor / Group:** ThreatSec
+- **Sector:** Government / Digital public services
+- **Website:** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+- **Victim Description:** The publication links the Ethiopian Ministry of Trade and Regional Integration's eTrade portal with the Ethiopian Food and Drug Authority's eRIS system. These are two separate federal services combined in a single claim.
+
+- **Analysis:**
+  - **Observed:** the entry is filed under March 1, 2024 at the maintainer's request. The forum publication, relayed by Tanaka and dated August 24, 2023, attributes to ThreatSec a claim of access to both portals and collection of 43 files, including PDFs, images, and government identity documents. One locally provided PDF was examined read-only: 3,023,068 bytes, five scanned pages, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. All five pages contain an Amharic-language administrative and contractual document with official stamps, handwritten signatures, and financial amounts. No raw personal data is reproduced.
+  - **Assumption:** the document characteristics are consistent with an Ethiopian administrative record and increase confidence in the sample's structural plausibility, without establishing its technical provenance.
+  - **Unknown:** the acquisition method, the PDF's direct link to each portal, the existence and content of the other 42 claimed files, and confirmation by the affected authorities remain unverified. Visual review covered all five pages, but complete Amharic OCR could not be validated.
+
+----------------------------
 
 ### March 9, 2024
 
