@@ -1,184 +1,171 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-Janvier%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Janvier%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Janvier 2024 : LockBit3 ouvre l'année contre les entreprises sud-africaines
+# Rapport CTI AFRINTEL — Janvier 2024
 
-👉🏾 [English version available here](./README.md)
+👉🏾 [English version](./README.md)
 
-### 1. Résumé exécutif
+## 1. Résumé exécutif
 
-En janvier 2024, l'Afrique a enregistré **12 victimes** documentées dans ce fichier : **3 victimes de ransomware**, toutes localisées en **Afrique du Sud** et toutes revendiquées par le groupe **LockBit3** ; **8 revendications de fuite de données** réparties entre le **Kenya, l'Algérie, le Burkina Faso, le Maroc, le Rwanda, le Ghana, le Nigeria et l'Égypte** ; et **1 revendication de vente d'accès** au **Cameroun**. Plusieurs entrées de fuite de données concernent des publications dont la date de fuite ou de publication source est antérieure à janvier 2024 ; AFRINTEL les classe dans ce fichier mensuel selon leur date de découverte ou la période de détection demandée, tout en conservant la date de fuite d'origine dans chaque fiche. Le mois est marqué par une concentration des attaques LockBit3 sur le secteur privé sud-africain, distribution automobile et services professionnels, ainsi que par un large éventail de revendications de fuite de données et de vente d'accès distinctes touchant les secteurs de l'éducation, du gouvernement, de la société civile, des médias, du commerce de détail et de la technologie dans neuf autres pays.
+AFRINTEL documente **12 incidents** en janvier 2024 : **3 revendications ransomware**, **8 fuites de données** et **1 vente d’accès**. L’Afrique du Sud concentre les trois publications ransomware, toutes attribuées à LockBit3. Les neuf autres incidents sont répartis entre neuf pays et concernent surtout des bases de données, des informations administratives et des comptes utilisateurs.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
+Le signal le plus sensible du mois vient des publications visant le **Financial Intelligence Centre du Ghana** et plusieurs domaines gouvernementaux rwandais. Les éléments disponibles renforcent la crédibilité de l’existence de données exposées, sans confirmer la méthode d’acquisition ni l’étendue complète des jeux annoncés. La vente d’accès visant l’University of Buea reste, elle, de **faible confiance** : le compte vendeur a ensuite été signalé comme suspect.
 
-**Chiffres clés :**
-- 🔹 **12 victimes** identifiées
-- 🔹 **8 sources** : LockBit3 (3), Tanaka (3), zebi (1), r57 (1), Milad (1), DataHoes (1), X0Frankenstein (1), cnHunter (1)
-- 🔹 **Pays touchés** : Afrique du Sud (3), Kenya (1), Algérie (1), Burkina Faso (1), Maroc (1), Rwanda (1), Ghana (1), Nigeria (1), Cameroun (1), Égypte (1)
-- 🔹 **Secteurs** : Automobile & Retail (2), Éducation / Enseignement supérieur (2), Audit / Conseil Fiscal (1), Gouvernement / Renseignement financier (1), Gouvernement / Administration publique (1), E-commerce / Retail (1), Médias / Audiovisuel (1), Technologie / Communauté en ligne (1), Société civile / Gouvernance / Organisation à but non lucratif (1), Commerce de détail / Électronique (1)
-- 🔹 **Types d'incident** : Ransomware (3), Fuite de données (8), Vente d'accès (1)
-### Vue agrégée mensuelle de l’exposition
+Le détail des incidents est disponible dans [victims_FR.md](./victims_FR.md).
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **9 fiches** (75.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+## 2. Méthodologie
 
+Le rapport couvre les publications découvertes ou classées entre le 1er et le 31 janvier 2024. Les sources comprennent des sites de groupes ransomware, des forums cybercriminels et des éléments OSINT conservés de manière agrégée. Une publication est comptée une fois par organisation ; sa présence dans le corpus ne vaut pas confirmation de compromission. Certaines fuites ont une date d’origine antérieure à janvier, mais sont rattachées à ce mois selon leur date de découverte documentée.
 
----
+Les statistiques dérivent des **12 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
 
-### 2. Chronologie des attaques
+## 3. Vue globale
 
-| Date de découverte | Victime | Pays | Acteur / Groupe | Type | Date de la fuite |
-|---------------------|---------|------|------------------|------|-------------------|
-| 1er janvier 2024 | Kenya News Broadcasting Company (K24) | Kenya | Tanaka | Fuite de données (échantillon SQL) | 2023 |
-| 1er janvier 2024 | Université d'Oran | Algérie | zebi | Fuite de données (republication) | 12 septembre 2023 |
-| 1er janvier 2024 | BIA-Market | Burkina Faso | Tanaka | Fuite de données (échantillon SQL) | 2023 |
-| 1er janvier 2024 | Morocco Forum Site | Maroc | r57 | Fuite de données (revendication) | Publication source du 29 septembre 2023 |
-| 1er janvier 2024 | Gouvernement du Rwanda (plusieurs domaines) | Rwanda | Milad | Fuite de données (revendication) | Publication source du 17 juin 2023 |
-| 2 janvier 2024 | Financial Intelligence Centre (FIC) | Ghana | DataHoes | Fuite de données | 3 décembre 2023 |
-| 3 janvier 2024 | The Citizens' Watch | Nigeria | X0Frankenstein | Fuite de données (revendication) | 2023 |
-| 7 janvier 2024 | University of Buea (UB) | Cameroun | cnHunter | Vente d'accès (revendication non vérifiée) | - |
-| 10 janvier 2024 | TiAuto Investments | Afrique du Sud | LockBit3 | Ransomware | - |
-| 10 janvier 2024 | Tiger Wheel & Tyre | Afrique du Sud | LockBit3 | Ransomware | - |
-| 26 janvier 2024 | Btech.com | Égypte | Tanaka | Fuite de données (échantillon CSV) | 2023 (publication source du 23 février 2023) |
-| 29 janvier 2024 | Crowe Southern Africa | Afrique du Sud | LockBit3 | Ransomware | - |
+| Indicateur | Valeur |
+|---|---:|
+| Incidents documentés | **12** |
+| Pays concernés | **10** |
+| Ransomware | **3** |
+| Fuites de données | **8** |
+| Ventes d’accès | **1** |
+| Défacement | **0** |
 
-```mermaid
-timeline
-    title Attaques recensées dans ce fichier - Janvier 2024
-    1er janvier : K24 (Kenya) - Tanaka
-                  Université d'Oran (Algérie) - zebi
-                  BIA-Market (Burkina Faso) - Tanaka
-                  Morocco Forum Site (Maroc) - r57
-                  Gouvernement du Rwanda (Rwanda) - Milad
-    2 janvier : Financial Intelligence Centre (Ghana) - DataHoes
-    3 janvier : The Citizens' Watch (Nigeria) - X0Frankenstein
-    7 janvier : University of Buea (Cameroun) - cnHunter
-    10 janvier : TiAuto Investments (Afrique du Sud) - LockBit3
-                 Tiger Wheel & Tyre (Afrique du Sud) - LockBit3
-    26 janvier : Btech.com (Égypte) - Tanaka
-    29 janvier : Crowe Southern Africa (Afrique du Sud) - LockBit3
-```
+### Classement par pays
 
----
-
-### 3. Analyse des victimes
-
-#### 3.1 Par pays
-
-| Pays | Nombre d'attaques |
-|------|-----------------|
-| Afrique du Sud | 3 |
-| Kenya | 1 |
-| Algérie | 1 |
-| Burkina Faso | 1 |
-| Maroc | 1 |
-| Rwanda | 1 |
-| Ghana | 1 |
-| Nigeria | 1 |
-| Cameroun | 1 |
-| Égypte | 1 |
+| Pays | Incidents | Ransomware | Fuite | Vente d’accès |
+|---|---:|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 3 | 3 | 0 | 0 |
+| 🇩🇿 Algérie | 1 | 0 | 1 | 0 |
+| 🇧🇫 Burkina Faso | 1 | 0 | 1 | 0 |
+| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 |
+| 🇬🇭 Ghana | 1 | 0 | 1 | 0 |
+| 🇰🇪 Kenya | 1 | 0 | 1 | 0 |
+| 🇲🇦 Maroc | 1 | 0 | 1 | 0 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 0 |
+| 🇷🇼 Rwanda | 1 | 0 | 1 | 0 |
+| 🇪🇬 Égypte | 1 | 0 | 1 | 0 |
+| **Total** | **12** | **3** | **8** | **1** |
 
 ```mermaid
-pie
-    title Répartition par pays - Janvier 2024 (12 victimes)
-    "Afrique du Sud" : 3
-    "Kenya" : 1
-    "Algérie" : 1
-    "Burkina Faso" : 1
-    "Maroc" : 1
-    "Rwanda" : 1
-    "Ghana" : 1
-    "Nigeria" : 1
-    "Cameroun" : 1
-    "Égypte" : 1
+xychart
+    title "Incidents par pays — janvier 2024"
+    x-axis ["ZA","DZ","BF","CM","GH","KE","MA","NG","RW","EG"]
+    y-axis "Incidents" 0 --> 4
+    bar [3,1,1,1,1,1,1,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur | Nombre |
-|---------|--------|
-| Automobile & Retail | 2 |
-| Éducation / Enseignement supérieur | 2 |
-| Audit / Conseil Fiscal | 1 |
-| Gouvernement / Renseignement financier | 1 |
-| Gouvernement / Administration publique | 1 |
-| E-commerce / Retail | 1 |
-| Médias / Audiovisuel | 1 |
-| Technologie / Communauté en ligne | 1 |
-| Société civile / Organisation à but non lucratif | 1 |
-| Commerce de détail / Électronique | 1 |
 
 ```mermaid
-xychart-beta
-    title "Secteurs ciblés - Janvier 2024"
-    x-axis ["Automobile & Retail", "Éducation / Enseignement supérieur", "Audit / Conseil Fiscal", "Gouvernement / Renseignement financier", "Gouvernement / Administration publique", "E-commerce / Retail", "Médias / Audiovisuel", "Technologie / Communauté en ligne", "Société civile / Non-lucratif", "Commerce détail / Électronique"]
-    y-axis "Nombre d'attaques" 0 to 3
-    bar [2, 2, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Répartition par type — janvier 2024
+    "Ransomware" : 3
+    "Fuites de données" : 8
+    "Ventes d'accès" : 1
 ```
 
-#### 3.3 Groupes ransomware
+### Répartition régionale
 
-| Groupe ransomware | Nombre d'attaques |
-|-----------------|-----------------|
-| LockBit3 | 3 |
+| Région | Incidents | Observation |
+|---|---:|---|
+| Afrique australe | 3 | Trois revendications ransomware en Afrique du Sud |
+| Afrique du Nord | 3 | Algérie, Maroc et Égypte |
+| Afrique de l’Ouest | 3 | Burkina Faso, Ghana et Nigeria |
+| Afrique de l’Est | 2 | Kenya et Rwanda |
+| Afrique centrale | 1 | Vente d’accès au Cameroun |
+| **Total** | **12** | |
 
-#### 3.4 Sources de fuite de données et de vente d'accès
+### Répartition sectorielle normalisée
 
-| Source | Nombre de revendications |
-|--------|--------------------------|
-| Tanaka | 3 |
-| zebi | 1 |
-| r57 | 1 |
-| Milad | 1 |
-| DataHoes | 1 |
-| X0Frankenstein | 1 |
-| cnHunter | 1 |
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Commerce / E-commerce | 4 | 33,3 % |
+| Gouvernement / Administration | 2 | 16,7 % |
+| Éducation / Université | 2 | 16,7 % |
+| Médias / Divertissement | 1 | 8,3 % |
+| Technologies / Informatique | 1 | 8,3 % |
+| Société civile / ONG | 1 | 8,3 % |
+| Services professionnels / Entreprises | 1 | 8,3 % |
+| **Total** | **12** | **100 %** |
 
----
+### Acteurs les plus visibles
 
-### 4. Points d'attention
+| Acteur ou source | Incidents | Lecture |
+|---|---:|---|
+| LockBit3 | 3 | Revendications ransomware en Afrique du Sud |
+| Tanaka et publications associées | 3 | Fuites de données attribuées à plusieurs sources |
+| Autres acteurs ou comptes | 6 | Une publication chacun |
 
-- **Monopole de LockBit3 sur les revendications ransomware** : les 3 revendications ransomware de janvier 2024 sont attribuées à LockBit3, confirmant sa position dominante sur le continent africain en début d'année.
-- **Concentration sur l'Afrique du Sud** : les revendications ransomware de janvier 2024 sont toutes localisées en Afrique du Sud, suggérant une prospection ciblée ou une exploitation opportuniste des infrastructures sud-africaines.
-- **Secteur automobile visé** : TiAuto Investments et sa filiale Tiger Wheel & Tyre sont attaquées le même jour (10 janvier), probablement via une infrastructure partagée ou une compromission de la chaîne d'approvisionnement.
-- **Services professionnels** : Crowe Southern Africa (audit, fiscalité) illustre l'intérêt des acteurs malveillants pour les entreprises détenant des données financières sensibles sur de multiples clients.
-- **Revendication algérienne** : l'entrée Université d'Oran, découverte le 1er janvier 2024, correspond à une republication sur un forum cybercriminel, attribuée à l'acteur `zebi`. L'échantillon de données a été initialement divulgué le 12 septembre 2023. Elle n'est pas attribuée à LockBit3 et n'est pas une revendication ransomware ; elle est comptabilisée séparément comme une fuite de données.
-- **Revendication burkinabè** : l’entrée BIA-Market, classée en janvier 2024 comme période de détection demandée, concerne un échantillon SQL publié sur SQL.ticanalyse.org le 23 juin 2023. La source identifie BIA-Market et des filtres liés au Burkina Faso, mais ne confirme pas indépendamment le jeu de données ni la compromission.
-- **Revendication ghanéenne** : l'entrée Financial Intelligence Centre (FIC), découverte le 2 janvier 2024, correspond à une publication du compte de forum `DataHoes` décrivant une extraction de documents internes RH, de paie et financiers, que l'acteur situe au 3 décembre 2023. Ce cas est enregistré comme en cours d'investigation, n'est pas attribué à un groupe ransomware, et est comptabilisé séparément comme une fuite de données visant l'unité nationale de renseignement financier du Ghana.
-- **Revendication marocaine** : l'entrée Morocco Forum Site, découverte le 1er janvier 2024, correspond à une revendication de l'acteur malveillant `r57` sur un forum cybercriminel, annonçant un échantillon issu d'un jeu de données revendiqué de 180 000 enregistrements pour 50 dollars américains. La publication source est antérieure à janvier 2024 (29 septembre 2023) ; la propriété du forum et l'authenticité du jeu de données ne sont pas confirmées de manière indépendante.
-- **Revendication rwandaise** : l'entrée Gouvernement du Rwanda, découverte le 1er janvier 2024, correspond à une revendication de l'acteur malveillant `Milad` couvrant quatre domaines gouvernementaux, dont des organismes liés à la mémoire du génocide et à la réconciliation nationale. Le compte à l'origine de la publication est désormais affiché comme banni. Une incohérence dans l'attribution du CMS (déclaré « Custom » mais structurellement proche de TYPO3) limite la confiance d'AFRINTEL ; la revendication reste non vérifiée au-delà de l'échantillon visible.
-- **Revendication nigériane** : l'entrée The Citizens' Watch, découverte le 3 janvier 2024, correspond à une revendication de l'acteur malveillant `X0Frankenstein` visant la plateforme de suivi des promesses d'une organisation panafricaine de civic-tech à but non lucratif. L'échantillon visible mélange plusieurs structures de table distinctes ; AFRINTEL ne peut pas confirmer indépendamment l'origine de chaque segment.
-- **Revendication camerounaise** : l'entrée University of Buea, découverte le 7 janvier 2024, correspond à une revendication de l'acteur malveillant `cnHunter` d'un accès administrateur à une instance REDCap. Le compte à l'origine de la publication a ensuite été définitivement banni pour suspicion d'arnaque, ce qui réduit fortement la fiabilité ; AFRINTEL classe cette revendication de vente d'accès comme non vérifiée et à faible confiance.
-- **Revendication égyptienne** : l'entrée Btech.com, découverte le 26 janvier 2024, correspond à une revendication de l'acteur `Tanaka` d'un export CSV contenant des enregistrements clients avec noms, adresses et possibles numéros d'identification nationale égyptiens. La cohérence de l'échantillon appuie un niveau de confiance plus élevé, bien que le volume total revendiqué ne soit pas vérifié de manière indépendante.
+## 4. Analyse détaillée par type d’incident
 
----
+### 4.1 Ransomware
 
-```mermaid
-xychart-beta
-    title "Évolution mensuelle des attaques - Début 2024"
-    x-axis ["Jan"]
-    y-axis "Nombre d'attaques" 0 to 12
-    bar [12]
-```
+Les trois victimes sud-africaines — TiAuto Investments, Tiger Wheel & Tyre et Crowe Southern Africa — ont été publiées sous le nom de LockBit3. Aucun élément technique public exploitable ne permet, dans le corpus de janvier, d’établir l’accès initial, le périmètre chiffré ou une exfiltration effective. Le fait solide est la publication des organisations par l’acteur.
 
-### 5. Recommandations
+### 4.2 Fuites de données et vente d’accès
 
-| Domaine | Action recommandée |
-|---------|--------------------|
-| Distribution automobile & retail | Auditer les accès RDP/VPN, imposer le MFA, surveiller les mouvements latéraux. |
-| Services professionnels (audit, fiscal) | Chiffrer les données clients, segmenter les serveurs de fichiers, vérifier les accès tiers. |
-| Toutes organisations | Surveiller les TTPs de LockBit3 : phishing, credential stuffing, exploitation RDP exposé. |
-| E-commerce / retail | BIA-Market et Btech.com devraient vérifier les revendications, examiner les journaux applicatifs et de base de données, faire pivoter les identifiants potentiellement exposés et invalider les sessions ou clés d'activation si la fuite est confirmée. |
-| Éducation / enseignement supérieur | Identifier les établissements et applications potentiellement concernés, vérifier les journaux d'authentification et d'accès, réinitialiser les comptes exposés et rechercher toute réutilisation des jeux de données de l'Université d'Oran et de l'University of Buea dans d'autres publications. |
-| Gouvernement / renseignement financier | Le FIC devrait vérifier si l'extraction décrite provient de ses propres systèmes, examiner les journaux d'accès autour du 3 décembre 2023, et évaluer l'exposition des données bancaires, de paie et RH mentionnées dans la publication. |
-| Gouvernement / administration publique | Les institutions rwandaises concernées devraient vérifier les identifiants d'administration backend revendiqués, faire pivoter tout mot de passe exposé et examiner les journaux d'accès au CMS des domaines concernés. |
-| Société civile / non-profit | The Citizens' Watch devrait vérifier l'export de base de données revendiqué, faire pivoter les identifiants des comptes administrateurs et informer les inscrits dont les données personnelles pourraient être exposées. |
-| Médias / audiovisuel | K24 devrait examiner les comptes administrateurs WordPress et la configuration des extensions, et surveiller le domaine contre toute modification non autorisée. |
-| Technologie / communauté en ligne | L'exploitant de la plateforme de forum marocaine revendiquée, une fois identifié, devrait évaluer l'exposition des identifiants de comptes et alerter les utilisateurs sur les risques de phishing et de réutilisation d'identifiants. |
+Les huit fuites couvrent des données de sites web, des comptes utilisateurs et des environnements administratifs. Les échantillons observés soutiennent l’existence de structures de données plausibles, mais leurs volumes complets restent revendiqués. La publication visant le Financial Intelligence Centre du Ghana présente l’impact potentiel le plus élevé en raison de la nature de l’organisme.
 
----
+La vente d’un accès administrateur à une instance REDCap de l’University of Buea est conservée séparément. L’accès n’a pas été testé et sa validité demeure inconnue.
 
-*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*
+## 5. Impact sectoriel
+
+Le commerce et l’e-commerce arrivent en tête, en partie à cause de publications concernant des plateformes ou distributeurs déjà exposés avant janvier. Les secteurs gouvernemental et éducatif présentent moins d’incidents, mais une sensibilité supérieure : données administratives, informations d’étudiants et accès à des applications institutionnelles. Cette différence justifie de ne pas confondre fréquence et criticité.
+
+## 6. Profil des acteurs et évaluation du risque
+
+| Pays ou périmètre | Niveau | Justification |
+|---|---|---|
+| 🇿🇦 Afrique du Sud | 🔴 Élevé | Concentration de trois revendications ransomware |
+| 🇬🇭 Ghana | 🔴 Élevé | Publication visant un organisme de renseignement financier |
+| 🇷🇼 Rwanda | 🔴 Élevé | Données attribuées à plusieurs domaines gouvernementaux |
+| 🇨🇲 Cameroun | 🟠 Moyen | Vente d’accès non validée et de faible confiance |
+| Autres pays | 🟡 Faible à moyen | Une publication par pays, portée variable |
+
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** le corpus est dominé par les fuites et ventes d’accès, qui représentent 9 incidents sur 12.
+- **Observé — confiance élevée :** les trois revendications ransomware sont concentrées en Afrique du Sud et associées à LockBit3.
+- **Lacune prioritaire :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour déterminer l’accès initial ou confirmer l’étendue des incidents ransomware.
+- **Lacune prioritaire :** les volumes complets des bases annoncées ne peuvent pas être déduits des seuls extraits observés.
+- **Besoin de collecte :** rechercher des confirmations des organisations, des notifications réglementaires et de nouvelles publications permettant de distinguer données anciennes, republications et incidents contemporains.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut analytique | Phase | Technique | Application au corpus |
+|---|---|---|---|
+| Préventif | Impact | T1486 — Data Encrypted for Impact | Surveillance pertinente pour les trois revendications ransomware ; chiffrement non confirmé par télémétrie publique |
+| Hypothèse | Initial Access / Persistence | T1078 — Valid Accounts | Scénario plausible pour la vente d’accès à l’University of Buea ; validité de l’accès inconnue |
+| Préventif | Exfiltration | T1567 — Exfiltration Over Web Service | Contrôle défensif adapté aux incidents de fuite ; canal d’exfiltration non observé |
+
+## 9. Recommandations
+
+- **Administrations :** inventorier les applications exposées, revoir les comptes privilégiés et préparer les procédures de notification.
+- **Établissements d’enseignement :** imposer une MFA résistante au phishing pour les administrateurs et examiner les accès aux applications de recherche.
+- **Commerce et médias :** vérifier les exports de bases, les comptes CMS et les secrets applicatifs.
+- **Organisations ciblées par ransomware :** tester une restauration complète depuis des sauvegardes isolées et immuables.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Rechercher dans les journaux IAM, VPN et applications les comptes liés aux environnements cités dans les publications ; aucune TTP d’intrusion n’est confirmée publiquement. |
+| **Hypothèse** | Examiner les authentifications administratives inhabituelles autour des dates de publication, notamment pour REDCap et les CMS exposés. |
+| **Préventif** | Détecter les créations d’archives volumineuses, les exports SQL inhabituels, les désactivations de sauvegardes et les extensions de fichiers modifiées en masse. |
+| **Préventif** | Corréler EDR, WAF, IAM, DNS et proxy afin d’identifier une exfiltration ou une activité de chiffrement qui ne serait pas visible dans les sources OSINT. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Réduire l’exposition des applications administratives et éducatives citées dans le corpus. |
+| 2 | **Hypothèse** | Traiter la vente d’accès comme un risque d’usage de comptes valides, sans présumer que l’accès fonctionne encore. |
+| 3 | **Préventif** | Généraliser MFA résistante au phishing, rotation des secrets et revue trimestrielle des comptes privilégiés. |
+| 4 | **Préventif** | Maintenir des sauvegardes critiques isolées, immuables et testées par restauration. |
+
+## 12. Conclusion
+
+Janvier 2024 oppose deux profils distincts : une concentration ransomware limitée à l’Afrique du Sud et une circulation beaucoup plus diffuse de données et d’accès. Les publications administratives sont les plus sensibles, mais les informations disponibles ne permettent pas de transformer ces revendications en compromissions confirmées. La priorité consiste à valider les expositions, réduire les accès externes et conserver une capacité de restauration indépendante.
+
+**AFRINTEL — TLP:CLEAR**
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

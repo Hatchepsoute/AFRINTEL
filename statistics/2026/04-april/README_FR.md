@@ -73,7 +73,7 @@ pie
 | **Total** | **60** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Victimes par pays - Avril 2026"
     x-axis ["Maroc","Egypte","Afrique du Sud","Nigeria","Algerie","Tunisie","Kenya","Ghana","Benin","Botswana","Ethiopie","Seychelles","Senegal","Ouganda","Zambie","Multi-pays"]
     y-axis "Incidents" 0 --> 18
@@ -107,7 +107,7 @@ xychart-beta
 ### Ransomware par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomwares par pays - Avril 2026"
     x-axis ["Egypte","Afrique du Sud","Maroc","Ghana","Kenya","Botswana","Seychelles","Zambie"]
     y-axis "Ransomwares" 0 --> 10
@@ -117,7 +117,7 @@ xychart-beta
 ### Fuites de données par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Fuites de donnees par pays - Avril 2026"
     x-axis ["Maroc","Afrique du Sud","Nigeria","Algerie","Tunisie","Egypte","Kenya","Benin","Ethiopie","Senegal","Ouganda","Multi-pays"]
     y-axis "Fuites" 0 --> 16
@@ -139,7 +139,7 @@ xychart-beta
 > Note : l’incident multi-pays impliquant l’Angola, l’Afrique du Sud et le Nigeria est comptabilisé dans les régions concernées pour l’analyse d’exposition régionale. Cette vue régionale représente donc une lecture d’exposition, pas un total dédupliqué strict.
 
 ```mermaid
-xychart-beta
+xychart
     title "Exposition regionale - Avril 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l Ouest","Afrique de l Est"]
     y-axis "Incidents / expositions" 0 --> 40
@@ -169,7 +169,7 @@ xychart-beta
 | **Total** | **60** | **100 %** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Repartition sectorielle - Avril 2026"
     x-axis ["Gouvernement","Education","Industrie","Finance","Sante","Sports","E-commerce","Energie","Technologie","Alimentation","Transport","Telecoms","ONG","Agregation"]
     y-axis "Incidents" 0 --> 16
@@ -197,7 +197,7 @@ xychart-beta
 | Fiches hors classement affiché | 23 | Mixte |
 
 ```mermaid
-xychart-beta
+xychart
     title "Acteurs les plus actifs - Avril 2026"
     x-axis ["Grubder","Payload","APT73 BASHE","TheGentlemen","Krybit","Anisanas2","DragonForce","LockBit5","Rihana","wh6ami","dark07x","NormalLeVrai"]
     y-axis "Incidents" 0 --> 8

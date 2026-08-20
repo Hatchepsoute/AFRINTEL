@@ -162,7 +162,8 @@ Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, 
 |---|---|---:|---:|---:|---|
 | **Afrique du Nord** | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇩🇿 Algérie | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique australe** | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
-| **Afrique de l'Ouest et centrale** | 🇳🇬 Nigeria, 🇨🇮 Côte d'Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroun | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **Afrique de l'Ouest** | 🇳🇬 Nigeria, 🇨🇮 Côte d'Ivoire, 🇬🇭 Ghana | **9** | 5 | 4 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **Afrique centrale** | 🇨🇲 Cameroun | **1** | 1 | 0 | 🟧 |
 | **Afrique de l'Est** | 🇰🇪 Kenya, 🇸🇸 Soudan du Sud | **2** | 2 | 0 | 🟧🟧 |
 | **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
@@ -172,9 +173,9 @@ L'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivo
 ```mermaid
 xychart
     title "Occurrences géographiques par région - juillet 2026"
-    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
+    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
-    bar [24,7,10,2]
+    bar [24,7,9,1,2]
 ```
 
 ## 4. Analyse détaillée par type d'incident

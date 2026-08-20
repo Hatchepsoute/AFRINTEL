@@ -1,184 +1,160 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Leak-red)
-![Month](https://img.shields.io/badge/Month-July%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-July%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - July 2024: Ransomware activity peak in Africa
-👉🏾 [French version available here](./README_FR.md)
+# AFRINTEL CTI Report — July 2024
 
-### 1. Executive summary
+👉🏾 [Version française](./README_FR.md)
 
-In July 2024, Africa recorded **11 documented victims** in this file: **7 ransomware victims**, claimed by six different groups, and **4 data leak claims**. Three of the data leak claims are in **Algeria**, all coming from a single compilation reposted on July 11, 2024 by the account Addka72424 (originally attributed to FriendlyChemist), bundling older samples dated between 2019 and 2023 and associated with Hôpital Chahids Mahmoudi, the University of Tlemcen and the Algeria.com portal. The fourth is a July 2 claim by the actor TheColorYellow against an **Ethiopian military-education institution** (documents reviewed by AFRINTEL bear the FDRE Defence War College letterhead, though the domain cited in the post, nwc.ndu.edu, matches the unrelated US National Defense University). The month saw a **strong rebound** in ransomware activity after the June lull (3 victims), significant geographic and sectoral diversity, and the resurfacing of an old Algerian dataset that has been circulating on cybercriminal forums for several years.
+## 1. Executive summary
 
-**Key figures:**
-- 🔹 **11 victims** identified
-- 🔹 **8 sources**: KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1), Addka72424 (3), TheColorYellow (1)
-- 🔹 **Countries affected**: South Africa (3), Algeria (3), Tunisia (1), Kenya (1), Zimbabwe (1), Egypt (1), Ethiopia (1)
-- 🔹 **Sectors**: Logistics, Healthcare (public lab), Urban road transport, Finance, Urban consulting services, Business services, Heavy industries, Healthcare (private hospital), Education, Media / Web portal, Defense / Military education
-- 🔹 **Incident types**: Ransomware (7), Data Leak (4)
-### Monthly aggregate exposure view
+July 2024 contains **11 incidents**: **7 ransomware claims** and **4 data leaks**. South Africa and Algeria rank first with three incidents each. Algeria's concentration requires caution: all three publications come from a single compilation of older databases being recirculated.
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (36.4% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+The month spans healthcare, education, defense, transport, finance, and mining. The National War College case contains a material inconsistency: the cited domain belongs to a US institution, while visible documents point to an Ethiopian military school. AFRINTEL retains this limitation instead of silently correcting the attribution.
 
+See [victims.md](./victims.md).
 
-👉🏾 [Victims list](./victims.md)
+## 2. Methodology
 
----
+This report covers publications assigned to July 2024. A repost remains a data-circulation incident in the corpus but is not presented as a new intrusion. Confidence reflects the quality of visible evidence, not the age or reputation of the source alone.
 
-### 2. Attack timeline
+Statistics derive from the **11 incidents** in [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-| Date       | Victim                          | Country          | Actor / Group | Type | Leak date |
-|------------|----------------------------------|------------------|------------------|------|-----------|
-| July 1     | Maxcess-logistics                | Tunisia          | KillSec          | Ransomware | - |
-| July 2     | National War College (nwc.ndu.edu) | Ethiopia       | TheColorYellow    | Data Leak | - |
-| July 5     | National health laboratory services | South Africa | Blacksuit        | Ransomware | - |
-| July 11    | Hôpital Chahids Mahmoudi (hcm-dz.com) | Algeria      | Addka72424 (repost, FriendlyChemist) | Data Leak | September 21, 2023 |
-| July 11    | University of Tlemcen (univ-tlemcen.dz) | Algeria   | Addka72424 (repost, FriendlyChemist) | Data Leak | June 27, 2022 |
-| July 11    | Algeria.com (web portal)         | Algeria          | Addka72424 (repost, FriendlyChemist) | Data Leak | September 2019 |
-| July 13    | Kenya urban roads authority      | Kenya            | Hunters           | Ransomware | - |
-| July 17    | Zb financial holdings            | Zimbabwe         | Madliberator      | Ransomware | - |
-| July 17    | Cities network                   | South Africa     | Madliberator      | Ransomware | - |
-| July 17    | Assih                            | Egypt            | LockBit3          | Ransomware | - |
-| July 22    | Sibanye-stillwater               | South Africa     | RansomHouse       | Ransomware | - |
+## 3. Global overview
 
-```mermaid
-timeline
-    title Attacks recorded in this file - July 2024
-    July 1 : Maxcess-logistics (Tunisia) - KillSec
-    July 2 : National War College (Ethiopia) - TheColorYellow
-    July 5 : NHLS (South Africa) - Blacksuit
-    July 11 : Hôpital Chahids Mahmoudi (Algeria) - Addka72424<br>University of Tlemcen (Algeria) - Addka72424<br>Algeria.com (Algeria) - Addka72424
-    July 13 : Kenya Urban Roads Authority - Hunters
-    July 17 : ZB Financial Holdings (Zimbabwe) - Madliberator<br>Cities Network (South Africa) - Madliberator<br>Assih (Egypt) - LockBit3
-    July 22 : Sibanye-Stillwater (South Africa) - RansomHouse
-```
+| Indicator | Value |
+|---|---:|
+| Incidents / Countries | **11 / 7** |
+| Ransomware | **7** |
+| Data leaks | **4** |
+| Access sales / Defacement | **0 / 0** |
 
----
+### Country ranking
 
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country          | Number of attacks |
-|------------------|------------------|
-| South Africa     | 3                |
-| Algeria          | 3                |
-| Tunisia          | 1                |
-| Kenya            | 1                |
-| Zimbabwe         | 1                |
-| Egypt            | 1                |
-| Ethiopia         | 1                |
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇿🇦 South Africa | 3 | 3 | 0 |
+| 🇩🇿 Algeria | 3 | 0 | 3 |
+| 🇰🇪 Kenya | 1 | 1 | 0 |
+| 🇹🇳 Tunisia | 1 | 1 | 0 |
+| 🇿🇼 Zimbabwe | 1 | 1 | 0 |
+| 🇪🇬 Egypt | 1 | 1 | 0 |
+| 🇪🇹 Ethiopia | 1 | 0 | 1 |
+| **Total** | **11** | **7** | **4** |
 
 ```mermaid
-pie
-    title Distribution by country - July 2024 (11 victims)
-    "South Africa" : 3
-    "Algeria" : 3
-    "Tunisia" : 1
-    "Kenya" : 1
-    "Zimbabwe" : 1
-    "Egypt" : 1
-    "Ethiopia" : 1
+xychart
+    title "Incidents by country — July 2024"
+    x-axis ["ZA","DZ","KE","TN","ZW","EG","ET"]
+    y-axis "Incidents" 0 --> 4
+    bar [3,3,1,1,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector                                | Count |
-|----------------------------------------|-------|
-| Logistics                              | 1     |
-| Healthcare (public lab)                | 1     |
-| Rail/road transport authority          | 1     |
-| Financial organizations                | 1     |
-| Urban consulting services              | 1     |
-| Business services / Consulting         | 1     |
-| Heavy industries (mining)              | 1     |
-| Healthcare (private hospital)          | 1     |
-| Education / Higher education           | 1     |
-| Media / Web portal                     | 1     |
-| Defense / Military education           | 1     |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - July 2024"
-    x-axis ["Logistics", "Healthcare (lab)", "Transport", "Finance", "Urban consulting", "Business svc", "Heavy ind.", "Healthcare (hosp.)", "Education", "Media", "Defense"]
-    y-axis "Number of attacks" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Incident-type distribution — July 2024
+    "Ransomware" : 7
+    "Data leaks" : 4
 ```
 
-#### 3.3 Ransomware groups
+### Regional distribution
 
-| Ransomware group | Number of attacks |
-|------------------|------------------|
-| Madliberator     | 2                |
-| KillSec          | 1                |
-| Blacksuit        | 1                |
-| Hunters          | 1                |
-| LockBit3         | 1                |
-| RansomHouse      | 1                |
+| Region | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| North Africa | 5 | 2 | 3 |
+| Southern Africa | 4 | 4 | 0 |
+| East Africa | 2 | 1 | 1 |
+| **Total** | **11** | **7** | **4** |
 
-```mermaid
-gantt
-    title Active Ransomware Groups - July 2024
-    dateFormat X
-    axisFormat %s
-    section Madliberator
-    Madliberator : 0, 2
-    section KillSec
-    KillSec : 0, 1
-    section Blacksuit
-    Blacksuit : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section LockBit3
-    LockBit3 : 0, 1
-    section RansomHouse
-    RansomHouse : 0, 1
-```
+### Normalized sector distribution
 
-#### 3.4 Data leak sources
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Healthcare / Medical | 2 | 18.2% |
+| Professional / Business Services | 2 | 18.2% |
+| Transport / Logistics | 2 | 18.2% |
+| Defense / Security | 1 | 9.1% |
+| Education / University | 1 | 9.1% |
+| Media / Entertainment | 1 | 9.1% |
+| Finance / Banking | 1 | 9.1% |
+| Mining / Extractive Industries | 1 | 9.1% |
+| **Total** | **11** | **100%** |
 
-| Source | Number of claims |
-|--------|-------------------|
-| Addka72424 (repost, originally attributed to FriendlyChemist) | 3 |
-| TheColorYellow (post on RaidForums) | 1 |
+### Most visible actors and sources
 
----
+| Actor or source | Incidents |
+|---|---:|
+| Addka72424, repost attributed to FriendlyChemist | 3 |
+| Mad Liberator | 2 |
+| Six other actors or sources | 1 each |
 
-### 4. Key observations
+## 4. Detailed analysis by incident type
 
-- **Ransomware activity rebound**: 7 ransomware attacks in July vs 3 in June - back to a high level.
-- **Madliberator** appears for the first time and strikes twice on the same day (July 17) in Zimbabwe and South Africa.
-- **Healthcare sector**: South Africa's National Health Laboratory Service (NHLS) is a critical ransomware target.
-- **Government entities**: Kenya Urban Roads Authority and Assih (Egypt) show interest in state infrastructure.
-- **Mining industry**: Sibanye-Stillwater (gold, platinum) is a strategic target.
-- **New group**: RansomHouse - active on the continent.
-- **Reposted Algerian compilation**: the three July 11, 2024 entries (Hôpital Chahids Mahmoudi, University of Tlemcen, Algeria.com) come from a single compilation titled "Algerian Databases Collection", reposted by the account Addka72424 from an original post attributed to FriendlyChemist. These are not new intrusions but the recirculation of samples dated between 2019 and 2023. They are counted separately from ransomware as data leaks, with differentiated confidence levels (medium for the hospital, high for the university, low for Algeria.com) based on the quality of the observed samples.
-- **Ethiopia, domain inconsistency flagged**: the July 2 claim by TheColorYellow cites the domain "nwc.ndu.edu", which in reality belongs to the (US) National Defense University's National War College, but the document samples shown bear the emblem and Amharic-language letterhead of the FDRE Defence War College, an Ethiopian military institution. AFRINTEL records the claim against the Ethiopian institution identifiable from the letterhead and flags the domain cited by the actor as unverified rather than discarding or silently correcting the claim.
+### 4.1 Ransomware
 
----
+The seven publications concern Maxcess Logistics, National Health Laboratory Service, Kenya Urban Roads Authority, ZB Financial Holdings, Cities Network, Assih, and Sibanye-Stillwater. Mad Liberator appears twice on the same day, but public sources do not technically connect the two cases.
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Jul 2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
-    y-axis "Number of attacks" 0 to 12
-    bar [2, 4, 5, 4, 8, 3, 11]
-```
-### 5. Recommendations for July 2024
+### 4.2 Data leaks
 
-| Domain                        | Recommended action |
-|-------------------------------|--------------------|
-| Laboratories & healthcare      | Isolate critical systems, monitor access to sensitive data. |
-| Government administrations    | Strengthen RDP/VPN monitoring, segment networks. |
-| Mining industries             | Offline backups, OT security audits. |
-| Hospitals                     | Verify whether the reposted email logs correspond to a real system, review email gateway access logs, and raise staff awareness of phishing exploiting patient references. |
-| Higher education              | Verify the status of the affected Moodle database, reset exposed accounts starting with administrator accounts, and review the scope of the authentication federation with the other identified universities. |
-| Defense / Military education  | Audit Exchange server access logs and mailbox export activity, restrict administrative-document distribution, and independently verify the institution's public-facing domain records to detect impersonation or metadata confusion in future claims. |
-| All organizations             | Track emerging groups (Madliberator, RansomHouse) and their TTPs, and monitor the reuse of old Algerian datasets circulating on forums. |
+The three Algerian entries are reposts from a compilation advertised as dating from 2019 to 2023. They measure renewed data circulation, not three July intrusions. The Ethiopian case remains attributed to the institution identifiable in the documents, with the cited domain retained as inconsistent and unverified.
 
----
+## 5. Sectoral impact
 
-*Rapport généré à partir des données OSINT AFRINTEL - Diffusion libre (TLP:CLEAR)*  
-*Report generated from AFRINTEL OSINT data - Free distribution (TLP:CLEAR)*
+Healthcare, professional services, and transport each account for two incidents. The greatest sensitivity concerns visible or claimed medical, education, and military data. Mining and transport organizations mainly face continuity risk that cannot be quantified from publications alone.
+
+## 6. Threat actor profile and risk assessment
+
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇩🇿 Algeria | 🔴 High | Three recirculated leaks, including healthcare and education |
+| 🇿🇦 South Africa | 🔴 High | Three ransomware claims |
+| 🇪🇹 Ethiopia | 🔴 High | Visible military documents and inconsistent domain attribution |
+| Other countries | 🟠 Medium | One publication per country |
+
+## 7. Key trends and intelligence gaps
+
+- **Observed — high confidence:** seven ransomware incidents and four data leaks.
+- **Observed — high confidence:** three Algerian leaks originate from one repost rather than established new intrusions.
+- **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware claims.
+- **Gap:** the exact organization and technical domain in the Ethiopian case remain partly contradictory.
+- **Collection need:** provenance of the Algerian compilation, institutional confirmation, and technical indicators for ransomware cases.
+
+## 8. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed in the seven claims |
+| Preventive | T1567 — Exfiltration Over Web Service | Outbound monitoring; leak-acquisition method unknown |
+| Assumption | T1078 — Valid Accounts | Compromise scenario to investigate; no valid credential observed |
+
+## 9. Recommendations
+
+- **Healthcare and education:** identify old datasets, reset exposed accounts, and monitor republication.
+- **Defense:** resolve institutional attribution before public response and protect document systems.
+- **Transport and mining:** segment operational environments and test continuity.
+- **All organizations:** preserve logs and maintain immutable backups.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Search for accounts and applications referenced in samples; no ransomware chain is confirmed. |
+| **Assumption** | Review abnormal authentication, database exports, and archive staging before publication. |
+| **Preventive** | Detect mass encryption, backup inhibition, and high-volume outbound transfers. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Treat data republication and new compromise as separate conditions. |
+| 2 | **Assumption** | Investigate links between simultaneous publications without declaring a common campaign. |
+| 3 | **Preventive** | Strengthen ASM, phishing-resistant MFA, secret management, and isolated backups. |
+
+## 12. Conclusion
+
+July demonstrates why volume and novelty must be separated. Three of four leaks are older data in circulation, while seven ransomware publications provide limited technical depth. Sound assessment depends on provenance, chronology, and explicit attribution limits.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

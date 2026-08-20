@@ -1,133 +1,153 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-Septembre%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Septembre%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Septembre 2024 : Mois calme avec 5 victimes dans 5 pays
+# Rapport CTI AFRINTEL — Septembre 2024
 
-👉🏾 [English version available here](./README.md)
+👉🏾 [English version](./README.md)
 
-### 1. Résumé exécutif
+## 1. Résumé exécutif
 
-Septembre 2024 enregistre **5 incidents** documentés dans 5 pays distincts, le nombre mensuel le plus bas depuis janvier 2024. Chaque attaque implique un groupe ransomware différent, suggérant des campagnes opportunistes indépendantes plutôt qu'une vague coordonnée. L'Afrique de l'Ouest, l'Afrique centrale, l'Afrique du Nord et l'océan Indien apparaissent simultanément pour la première fois dans un même mois.
+Septembre 2024 rassemble **5 incidents** répartis dans cinq pays : **4 revendications ransomware** et **1 fuite de données**. Aucun acteur n’apparaît plus d’une fois. L’Afrique de l’Ouest compte deux incidents ; l’Afrique centrale, l’Afrique du Nord et l’océan Indien en comptent un chacun.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
+La publication visant la Nigerian Navy est le cas le plus sensible, mais elle renvoie à une fuite revendiquée au 8 novembre 2020. Elle doit donc être lue comme une remise en circulation ou une nouvelle observation d’un contenu ancien, et non comme une intrusion survenue en septembre 2024.
 
-**Chiffres clés :**
-- 🔹 **5 victimes** identifiées
-- 🔹 **5 comptes/groupes source** : Hunters (1), SpaceBears (1), ArcusMedia (1), Orca (1), NizaarFarah (1)
-- 🔹 **Pays touchés** : Sénégal (1), Cameroun (1), Maurice (1), Tunisie (1), Nigeria (1)
-- 🔹 **Secteurs** : Technologies, Gouvernement/Sécurité sociale, Télécommunications, Industrie, Défense/Sécurité nationale
+Voir [victims_FR.md](./victims_FR.md).
 
-### Vue agrégée mensuelle de l’exposition
+## 2. Méthodologie
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (20.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+Le rapport couvre les publications classées en septembre 2024. La date de découverte dans AFRINTEL est distinguée de la date de fuite annoncée par la source. Les cinq incidents sont dédupliqués par organisation et la republication ancienne reste explicitement signalée.
 
----
+Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé avec [victims.md](./victims.md).
 
-### 2. Chronologie des attaques
+## 3. Vue globale
 
-| Date | Victime | Pays | Groupe ransomware |
-|------|---------|------|-------------------|
-| 6 septembre | Sesam Informatics | Sénégal | Hunters |
-| 7 septembre | Nigerian Navy (navy.mil.ng) | Nigeria | NizaarFarah (compte source) |
-| 12 septembre | CNPS Cameroun | Cameroun | SpaceBears |
-| 15 septembre | Emtel | Maurice | ArcusMedia |
-| 16 septembre | Excelplast Tunisie | Tunisie | Orca |
+| Indicateur | Valeur |
+|---|---:|
+| Incidents / Pays | **5 / 5** |
+| Ransomware | **4** |
+| Fuites de données | **1** |
+| Ventes d’accès / Défacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Attaques ransomware en Afrique - Septembre 2024
-    6 septembre : Sesam Informatics (Sénégal) - Hunters
-    7 septembre : Nigerian Navy (Nigeria) - NizaarFarah
-    12 septembre : CNPS Cameroun (Cameroun) - SpaceBears
-    15 septembre : Emtel (Maurice) - ArcusMedia
-    16 septembre : Excelplast Tunisie (Tunisie) - Orca
-```
+### Classement par pays
 
----
-
-### 3. Analyse des victimes
-
-#### 3.1 Par pays
-
-| Pays | Nombre d'attaques |
-|------|-----------------|
-| Sénégal | 1 |
-| Cameroun | 1 |
-| Maurice | 1 |
-| Tunisie | 1 |
-| Nigeria | 1 |
+| Pays | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| 🇨🇲 Cameroun | 1 | 1 | 0 |
+| 🇲🇺 Maurice | 1 | 1 | 0 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 |
+| 🇸🇳 Sénégal | 1 | 1 | 0 |
+| 🇹🇳 Tunisie | 1 | 1 | 0 |
+| **Total** | **5** | **4** | **1** |
 
 ```mermaid
-pie
-    title Répartition par pays - Septembre 2024 (5 victimes)
-    "Sénégal" : 1
-    "Cameroun" : 1
-    "Maurice" : 1
-    "Tunisie" : 1
-    "Nigeria" : 1
+xychart
+    title "Incidents par pays — septembre 2024"
+    x-axis ["CM","MU","NG","SN","TN"]
+    y-axis "Incidents" 0 --> 2
+    bar [1,1,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur | Nombre |
-|---------|--------|
-| Technologies | 1 |
-| Gouvernement / Sécurité sociale | 1 |
-| Télécommunications | 1 |
-| Industrie manufacturière (Plasturgie) | 1 |
-| Défense / Sécurité nationale | 1 |
 
 ```mermaid
-xychart-beta
-    title "Secteurs ciblés - Septembre 2024"
-    x-axis ["Technologies", "Gouvernement", "Télécom", "Industrie", "Défense"]
-    y-axis "Nombre d'attaques" 0 to 2
-    bar [1, 1, 1, 1, 1]
+pie showData
+    title Répartition par type — septembre 2024
+    "Ransomware" : 4
+    "Fuite de données" : 1
 ```
 
-#### 3.3 Groupes ransomware
+### Répartition régionale
 
-| Groupe ransomware | Nombre d'attaques |
-|-----------------|-----------------|
-| Hunters | 1 |
-| SpaceBears | 1 |
-| ArcusMedia | 1 |
-| Orca | 1 |
+| Région | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| Afrique de l’Ouest | 2 | 1 | 1 |
+| Afrique centrale | 1 | 1 | 0 |
+| Afrique du Nord | 1 | 1 | 0 |
+| Océan Indien | 1 | 1 | 0 |
+| **Total** | **5** | **4** | **1** |
 
----
+### Répartition sectorielle normalisée
 
-### 4. Points d'attention
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Technologies / Informatique | 1 | 20 % |
+| Gouvernement / Administration | 1 | 20 % |
+| Télécommunications | 1 | 20 % |
+| Industrie / Fabrication | 1 | 20 % |
+| Défense / Sécurité | 1 | 20 % |
+| **Total** | **5** | **100 %** |
 
-- **Forte baisse d'activité** : après le record d'août (15 victimes), septembre retombe à 5, la plus grande baisse mensuelle de l'année. Cela peut refléter une fatigue des campagnes estivales ou une pause tactique des grands groupes.
-- **CNPS Cameroun - sécurité sociale ciblée** : SpaceBears revendique l'organisme national de sécurité sociale du Cameroun, une institution sensible détenant les dossiers d'emploi et de prestations sociales de millions de travailleurs.
-- **Emtel (Maurice)** : la revendication d'ArcusMedia contre le principal opérateur télécom mauricien signale un intérêt croissant pour les fournisseurs de connectivité des îles de l'océan Indien.
-- **Revendication Nigerian Navy** : un compte source (NizaarFarah) publie une capture mentionnant des fichiers confidentiels et des identifiants email attribués à la Nigerian Navy, avec une date de fuite revendiquée au 8 novembre 2020. AFRINTEL n'a ni collecté ni reproduit les fichiers ou identifiants sous-jacents ; la revendication reste non vérifiée.
-- **Diversité géographique** : 5 victimes dans 5 pays différents avec 5 comptes ou groupes source différents, aucun acteur dominant ce mois-ci.
-- **Première apparition d'Orca en Afrique** : le groupe revendique Excelplast Tunisie, marquant sa première revendication documentée sur le continent africain.
+### Acteurs et sources
 
----
+| Acteur ou source | Incidents |
+|---|---:|
+| Arcus Media, Hunters, Orca, SpaceBears, NizaarFarah | 1 chacun |
 
-```mermaid
-xychart-beta
-    title "Évolution mensuelle des attaques (Jan - Sep 2024)"
-    x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août", "Sep"]
-    y-axis "Nombre d'attaques" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 15, 5]
-```
+## 4. Analyse détaillée par type d’incident
 
-### 5. Recommandations
+### 4.1 Ransomware
 
-| Domaine | Action recommandée |
-|---------|--------------------|
-| Gouvernement / Sécurité sociale | Auditer les accès aux bases de données citoyens, imposer le MFA sur tous les portails administratifs, surveiller les exfiltrations massives. |
-| Télécommunications | Durcir les interfaces de gestion, segmenter le réseau cœur du SI, surveiller les compromissions de données abonnés. |
-| Industrie manufacturière | Revoir l'exposition des systèmes sur Internet, renforcer la protection endpoint sur les réseaux de production. |
-| Toutes organisations | Suivre ArcusMedia et Orca comme groupes émergents avec une nouvelle activité africaine. |
+Sesam Informatics, la CNPS Cameroun, Emtel et Excelplast ont été publiés par quatre acteurs distincts. Les secteurs et pays ne forment pas un ensemble suffisamment cohérent pour conclure à une campagne ou à un ciblage commun.
 
----
+### 4.2 Fuite de données
 
-*Rapport produit à partir des données OSINT AFRINTEL . Diffusion libre (TLP:CLEAR)*
+La source associée à la Nigerian Navy affiche des références à des fichiers et identifiants, mais AFRINTEL n’a ni collecté ni reproduit le contenu sous-jacent. La date ancienne réduit la valeur de l’incident pour mesurer une activité nouvelle, sans supprimer le risque de republication de données sensibles.
+
+## 5. Impact sectoriel
+
+Chaque secteur apparaît une seule fois. La défense présente la sensibilité la plus élevée ; les télécommunications et la sécurité sociale ajoutent un enjeu de continuité et de données personnelles. Le volume réduit impose de traiter ces cas individuellement.
+
+## 6. Profil des acteurs et évaluation du risque
+
+| Périmètre | Niveau | Justification |
+|---|---|---|
+| 🇳🇬 Nigeria | 🔴 Élevé | Publication ancienne attribuée à une institution militaire |
+| 🇨🇲 Cameroun / 🇲🇺 Maurice | 🟠 Moyen | Sécurité sociale et télécommunications |
+| 🇸🇳 Sénégal / 🇹🇳 Tunisie | 🟡 Faible à moyen | Une revendication sans échantillon public chacune |
+
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** cinq incidents, cinq pays et cinq acteurs ou sources distincts.
+- **Observé — confiance élevée :** la fuite Nigerian Navy est datée de 2020 par la source.
+- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les quatre revendications ransomware.
+- **Lacune :** l’authenticité, la portée et la circulation actuelle des données attribuées à la Nigerian Navy restent inconnues.
+- **Collecte attendue :** nouvelle observation de la publication, confirmation institutionnelle et indicateurs techniques.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Utilisation |
+|---|---|---|
+| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé |
+| Préventif | T1490 — Inhibit System Recovery | Surveillance des mécanismes de restauration |
+| Hypothèse | T1078 — Valid Accounts | Risque lié aux identifiants revendiqués ; validité inconnue |
+
+## 9. Recommandations
+
+- **Défense :** invalider les comptes exposés si la fuite est confirmée et surveiller les republications.
+- **Télécommunications :** segmenter l’administration et tester la continuité.
+- **Sécurité sociale :** surveiller les accès aux dossiers et préparer la notification.
+- **Toutes les organisations :** préserver les journaux et tester les sauvegardes.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Surveiller les comptes et domaines cités ; aucune TTP d’intrusion n’est confirmée. |
+| **Hypothèse** | Rechercher la réutilisation d’identifiants anciens et les connexions anormales aux services exposés. |
+| **Préventif** | Détecter chiffrement massif, inhibition des sauvegardes, exports et transferts sortants inhabituels. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Traiter la republication Nigerian Navy comme un risque de données anciennes toujours exploitables. |
+| 2 | **Hypothèse** | Vérifier l’exposition des identités sans présumer leur validité actuelle. |
+| 3 | **Préventif** | Déployer MFA résistante au phishing, rotation des mots de passe et sauvegardes immuables. |
+
+## 12. Conclusion
+
+Septembre est peu volumineux et très dispersé. Sa principale leçon n’est pas une hausse de menace, mais la persistance possible de données anciennes dans les circuits criminels. La réponse doit distinguer résilience ransomware et invalidation durable des identifiants exposés.
+
+**AFRINTEL — TLP:CLEAR**
+
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

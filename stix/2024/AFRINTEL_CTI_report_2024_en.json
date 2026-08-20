@@ -1,325 +1,187 @@
 {
-  "title": "Cyber Threat Intelligence (CTI) Report - Ransomware Landscape in Africa 2024",
-  "version": "1.1",
+  "title": "AFRINTEL Annual Cyber Threat Intelligence Report - Africa 2024",
+  "version": "2.0",
   "source": "AFRINTEL OSINT Dataset",
   "classification": "TLP:CLEAR",
   "period_covered": "January 1 to December 31, 2024",
-  "total_victims": 115,
+  "total_incidents": 116,
+  "total_victims": 116,
+  "compatibility_note": "The total_victims field is retained for historical compatibility; it refers here to incidents published and tracked by AFRINTEL, not to compromises that are all confirmed.",
   "sections": {
     "1. executive_summary": {
-      "content": "In 2024, AFRINTEL documented 115 African victims publicly associated with ransomware, data-leak or access-sale activity (86 ransomware claims and 29 non-ransomware claims: 26 data-leak and 3 access-sale). The activity affected 27 countries, with a strong concentration in South Africa (30 victims, 26.1%), followed by Egypt, Algeria, Nigeria and Tunisia. The second half of the year was more active (70 victims, compared with 45 in the first half).",
+      "content": "AFRINTEL documented 116 incidents across 27 African countries: 86 ransomware claims, 27 data leaks, and 3 access sales. No defacement is present in the dataset. South Africa accounts for 30 incidents, followed by Egypt with 13, then Algeria and Nigeria with 7 each. These figures measure observed publications, not the exhaustive incidence of cyberattacks across the continent.",
       "key_findings": [
-        "South Africa: 30 victims (26.1%)",
-        "Financial Services & Insurance: 16 victims (13.9%)",
-        "LockBit3: most active ransomware group with 16 victims (18.6% of ransomware-attributed incidents)",
-        "Southern Africa: 39 victims (33.9%)"
-      ],
-      "monthly_peaks": [
-        "August: 15 victims",
-        "November: 15 victims",
-        "January: 12 victims"
+        "Ransomware: 86 incidents, or 74.1% of the dataset",
+        "South Africa: 30 incidents, including 29 ransomware publications",
+        "Second half: 70 incidents, compared with 46 in the first half",
+        "Monthly peaks: August and November, 15 incidents each",
+        "Finance / Banking: leading sector with 15 incidents"
       ]
     },
     "2. methodology": {
-      "content": "This edition was fully recomputed from the 12 monthly AFRINTEL 2024 victim files (`CyberAttackAfrica/2024/*/victims.md`), the source of truth per project convention, which contain exactly 115 entries. It replaces a previous edition whose headline figure (90 entries) covered only a subset of the monthly records rather than the full annual dataset. Each entry is normalized by country, region, ransomware group or source actor where attributed, month of publication, sector and public domain. An incident is classified as Ransomware when a `Ransomware group` field is present and no explicit `Incident type` overrides it; Data Leak and Access Sale are used when the monthly card carries an explicit `Incident type` value. Sector statistics are grouped into macro-sectors using a documented keyword-based classifier to avoid misleading fragmentation. Country, sector and regional distributions cover all 115 entries; the ransomware-groups table covers only the 86 entries classified as Ransomware.",
+      "content": "The twelve monthly victims.md files are the English source. They are synchronised with victims_FR.md in French. Ransomware, data leak, access sale, and defacement remain separate categories. A claim, a repost, a sample, and an official confirmation do not carry the same evidential weight.",
+      "source_files": "CyberAttackAfrica/2024/*/victims.md",
       "limitations": [
-        "Data covering only public claims and public leak-site visibility.",
-        "Some victim descriptions remain limited when public business context is scarce.",
-        "Attribution based on the actor name associated with the public listing, not forensically confirmed.",
-        "Macro-sector groupings involve a degree of analytical judgment where a victim's activity spans multiple categories."
+        "Visibility bias arising from the public, criminal, and OSINT sources monitored.",
+        "Unclaimed or unpublished incidents may escape collection.",
+        "The frequent absence of public DFIR reporting limits attack-chain analysis.",
+        "Publication dates do not necessarily date initial access or exfiltration.",
+        "Reposts and duplicate claims can distort the perceived timing of activity."
       ]
     },
-    "3. country_distribution": {
-      "data": [
-        {
-          "country": "South Africa",
-          "victims": 30,
-          "share": "26.1%"
-        },
-        {
-          "country": "Egypt",
-          "victims": 12,
-          "share": "10.4%"
-        },
-        {
-          "country": "Algeria",
-          "victims": 7,
-          "share": "6.1%"
-        },
-        {
-          "country": "Nigeria",
-          "victims": 7,
-          "share": "6.1%"
-        },
-        {
-          "country": "Tunisia",
-          "victims": 6,
-          "share": "5.2%"
-        }
+    "3. global_overview": {
+      "incident_type_distribution": {
+        "ransomware": 86,
+        "data_leak": 27,
+        "access_sale": 3,
+        "defacement": 0,
+        "total": 116
+      },
+      "monthly_activity": [
+        {"month": "January", "total": 12, "ransomware": 3, "data_leak": 8, "access_sale": 1},
+        {"month": "February", "total": 9, "ransomware": 5, "data_leak": 4, "access_sale": 0},
+        {"month": "March", "total": 8, "ransomware": 7, "data_leak": 1, "access_sale": 0},
+        {"month": "April", "total": 6, "ransomware": 5, "data_leak": 1, "access_sale": 0},
+        {"month": "May", "total": 8, "ransomware": 8, "data_leak": 0, "access_sale": 0},
+        {"month": "June", "total": 3, "ransomware": 3, "data_leak": 0, "access_sale": 0},
+        {"month": "July", "total": 11, "ransomware": 7, "data_leak": 4, "access_sale": 0},
+        {"month": "August", "total": 15, "ransomware": 14, "data_leak": 1, "access_sale": 0},
+        {"month": "September", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
+        {"month": "October", "total": 12, "ransomware": 8, "data_leak": 4, "access_sale": 0},
+        {"month": "November", "total": 15, "ransomware": 11, "data_leak": 2, "access_sale": 2},
+        {"month": "December", "total": 12, "ransomware": 11, "data_leak": 1, "access_sale": 0}
       ],
-      "analytical_reading": "South Africa alone represents more than a quarter of the 2024 dataset. This is consistent with its large digital economy, dense enterprise ecosystem, mature financial sector and high public visibility of ransomware claims."
+      "country_counts": {
+        "South Africa": 30,
+        "Egypt": 13,
+        "Algeria": 7,
+        "Nigeria": 7,
+        "Tunisia": 6,
+        "Morocco": 5,
+        "Burkina Faso": 4,
+        "Côte d'Ivoire": 4,
+        "Ghana": 4,
+        "Kenya": 4,
+        "Namibia": 4,
+        "Cameroon": 3,
+        "Ethiopia": 3,
+        "Seychelles": 3,
+        "Zimbabwe": 3,
+        "Libya": 2,
+        "Senegal": 2,
+        "Sudan": 2,
+        "Tanzania": 2,
+        "Botswana": 1,
+        "Congo": 1,
+        "Djibouti": 1,
+        "Madagascar": 1,
+        "Mauritania": 1,
+        "Mauritius": 1,
+        "Rwanda": 1,
+        "Zambia": 1
+      },
+      "regional_distribution": [
+        {"region": "Southern Africa", "total": 39, "ransomware": 38, "data_leak": 1, "access_sale": 0},
+        {"region": "North Africa", "total": 34, "ransomware": 22, "data_leak": 12, "access_sale": 0},
+        {"region": "West Africa", "total": 21, "ransomware": 11, "data_leak": 8, "access_sale": 2},
+        {"region": "East Africa", "total": 13, "ransomware": 8, "data_leak": 5, "access_sale": 0},
+        {"region": "Indian Ocean", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
+        {"region": "Central Africa", "total": 4, "ransomware": 3, "data_leak": 0, "access_sale": 1}
+      ],
+      "sector_distribution": {
+        "Finance / Banking": 15,
+        "Government / Administration": 12,
+        "Manufacturing / Industry": 11,
+        "Professional / Business Services": 11,
+        "Technology / IT": 11,
+        "Education / University": 10,
+        "Healthcare / Medical": 9,
+        "Retail / E-commerce": 9,
+        "Telecommunications": 5,
+        "Media / Entertainment": 4,
+        "Agriculture / Agribusiness": 3,
+        "Oil & Energy": 3,
+        "Transport / Logistics": 3,
+        "Defence / Security": 2,
+        "Legal / Justice": 2,
+        "Water / Utilities": 2,
+        "Aviation": 1,
+        "Construction / Real Estate": 1,
+        "Mining / Extractive Industries": 1,
+        "Civil Society / NGO": 1
+      }
     },
-    "4. industry_sector_distribution": {
-      "data": [
-        {
-          "sector": "Financial Services & Insurance",
-          "victims": 16,
-          "share": "13.9%"
-        },
-        {
-          "sector": "Government & Public Sector",
-          "victims": 13,
-          "share": "11.3%"
-        },
-        {
-          "sector": "Retail, Distribution & E-commerce",
-          "victims": 11,
-          "share": "9.6%"
-        },
-        {
-          "sector": "Technology & IT Services",
-          "victims": 11,
-          "share": "9.6%"
-        },
-        {
-          "sector": "Education",
-          "victims": 10,
-          "share": "8.7%"
-        },
-        {
-          "sector": "Manufacturing & Industrial",
-          "victims": 10,
-          "share": "8.7%"
-        },
-        {
-          "sector": "Healthcare & Pharmacy",
-          "victims": 9,
-          "share": "7.8%"
-        },
-        {
-          "sector": "Business Services",
-          "victims": 8,
-          "share": "7.0%"
-        }
-      ],
-      "analytical_reading": "Financial services, insurance, banking and fintech-related entities form the most exposed macro-sector, reflecting the value of financial data and the pressure ransomware actors can apply. Government and public-sector bodies and the retail/e-commerce and technology/IT sectors are also highly represented, the latter creating a potential supply-chain risk."
+    "4. incident_type_analysis": {
+      "ransomware": "Ransomware accounts for nearly three quarters of the dataset and is especially concentrated in Southern Africa. A victim listing on a leak site does not by itself establish encryption, exfiltration, or service disruption.",
+      "data_leaks_and_access_sales": "The 27 leaks and 3 access sales are more geographically distributed. Advertised access signals possible exposure but confirms neither current validity nor use."
     },
-    "5. ransomware_groups_activity": {
-      "data": [
-        {
-          "group": "lockbit3",
-          "victims": 16,
-          "share": "18.6%"
-        },
-        {
-          "group": "ransomhub",
-          "victims": 10,
-          "share": "11.6%"
-        },
-        {
-          "group": "killsec",
-          "victims": 10,
-          "share": "11.6%"
-        },
-        {
-          "group": "hunters",
-          "victims": 8,
-          "share": "9.3%"
-        },
-        {
-          "group": "spacebears",
-          "victims": 5,
-          "share": "5.8%"
-        },
-        {
-          "group": "arcusmedia",
-          "victims": 4,
-          "share": "4.7%"
-        },
-        {
-          "group": "blacksuit",
-          "victims": 3,
-          "share": "3.5%"
-        },
-        {
-          "group": "darkvault",
-          "victims": 3,
-          "share": "3.5%"
-        },
-        {
-          "group": "sarcoma",
-          "victims": 3,
-          "share": "3.5%"
-        }
-      ],
-      "analytical_reading": "LockBit3 remains the most visible ransomware actor in the AFRINTEL 2024 dataset, despite global disruption efforts. RansomHub and KillSec follow as major extortion actors with broad targeting. The long tail of smaller groups confirms the fragmentation of the ransomware/extortion ecosystem. Percentages in this section are computed against the 86 ransomware-attributed entries, not the overall 115-victim dataset."
+    "5. sectoral_impact": {
+      "content": "Finance leads with 15 incidents, followed by government with 12. Manufacturing, professional services, and technology each account for 11. Priorities include identity and transaction protection in finance, public-service continuity, industrial segmentation, and control of supplier access."
     },
-    "6. geostrategic_regional_analysis": {
-      "data": [
-        {
-          "region": "Southern Africa",
-          "victims": 39,
-          "share": "33.9%"
-        },
-        {
-          "region": "North Africa",
-          "victims": 34,
-          "share": "29.6%"
-        },
-        {
-          "region": "West Africa",
-          "victims": 22,
-          "share": "19.1%"
-        },
-        {
-          "region": "East Africa",
-          "victims": 16,
-          "share": "13.9%"
-        },
-        {
-          "region": "Central Africa",
-          "victims": 4,
-          "share": "3.5%"
-        }
-      ],
-      "interpretation": "Southern Africa is the main ransomware/exposure zone in 2024 (driven by South Africa, Namibia, Zimbabwe, Botswana and Zambia). North Africa follows, with Egypt and Algeria as the main drivers. Central Africa remains underrepresented in open-source ransomware visibility."
-    },
-    "7. monthly_timeline_and_trends": {
-      "data": [
-        {
-          "month": "January",
-          "victims": 12
-        },
-        {
-          "month": "February",
-          "victims": 8
-        },
-        {
-          "month": "March",
-          "victims": 8
-        },
-        {
-          "month": "April",
-          "victims": 6
-        },
-        {
-          "month": "May",
-          "victims": 8
-        },
-        {
-          "month": "June",
-          "victims": 3
-        },
-        {
-          "month": "July",
-          "victims": 11
-        },
-        {
-          "month": "August",
-          "victims": 15
-        },
-        {
-          "month": "September",
-          "victims": 5
-        },
-        {
-          "month": "October",
-          "victims": 12
-        },
-        {
-          "month": "November",
-          "victims": 15
-        },
-        {
-          "month": "December",
-          "victims": 12
-        }
-      ],
-      "trend_assessment": "The second half of 2024 shows a clear increase in public ransomware/extortion visibility (70 victims versus 45 in the first half). This pattern suggests that African organizations should strengthen monitoring before holiday periods and month-end/quarter-end business cycles."
-    },
-    "8. soc_and_detection_priorities": {
-      "priorities": [
-        {
-          "phase": "Initial Access",
-          "focus": "VPN/RDP abuse, exposed services, suspicious authentication",
-          "telemetry": "VPN, IAM, Windows Security, EDR, Firewall"
-        },
-        {
-          "phase": "Credential Access",
-          "focus": "LSASS access, credential dumping, unusual admin logons",
-          "telemetry": "EDR, Sysmon, Windows Event Logs"
-        },
-        {
-          "phase": "Discovery",
-          "focus": "Network share enumeration, AD discovery, host inventory commands",
-          "telemetry": "EDR, Sysmon, PowerShell, command-line telemetry"
-        },
-        {
-          "phase": "Lateral Movement",
-          "focus": "Remote service creation, SMB/RDP/WinRM anomalies",
-          "telemetry": "Windows Security, EDR, network flow, firewall"
-        },
-        {
-          "phase": "Collection & Staging",
-          "focus": "Archive creation, large file staging, unusual compression tools",
-          "telemetry": "EDR, file integrity, endpoint telemetry"
-        },
-        {
-          "phase": "Exfiltration",
-          "focus": "Large outbound transfers, unusual cloud uploads, rare destinations",
-          "telemetry": "Proxy, firewall, DNS, CASB, NetFlow"
-        },
-        {
-          "phase": "Impact",
-          "focus": "Ransomware execution, mass file rename/encryption patterns",
-          "telemetry": "EDR, file events, backup platform logs"
-        }
-      ],
-      "mitre_attack_mapping": [
-        {
-          "phase": "Initial Access",
-          "techniques": "T1566 Phishing, T1190 Exploit Public-Facing Application, T1133 External Remote Services"
-        },
-        {
-          "phase": "Credential Access",
-          "techniques": "T1003 OS Credential Dumping, T1555 Credentials from Password Stores"
-        },
-        {
-          "phase": "Discovery",
-          "techniques": "T1087 Account Discovery, T1018 Remote System Discovery, T1083 File and Directory Discovery"
-        },
-        {
-          "phase": "Lateral Movement",
-          "techniques": "T1021 Remote Services, T1570 Lateral Tool Transfer"
-        },
-        {
-          "phase": "Collection",
-          "techniques": "T1560 Archive Collected Data, T1119 Automated Collection"
-        },
-        {
-          "phase": "Exfiltration",
-          "techniques": "T1041 Exfiltration Over C2 Channel, T1567 Exfiltration Over Web Service"
-        },
-        {
-          "phase": "Impact",
-          "techniques": "T1486 Data Encrypted for Impact, T1490 Inhibit System Recovery"
-        }
+    "6. actors_and_risk": {
+      "top_actors": {
+        "lockbit3": 16,
+        "ransomhub": 12,
+        "killsec": 10,
+        "hunters": 8,
+        "spacebears": 5,
+        "arcusmedia": 4,
+        "Tanaka - underground-forum publication": 3,
+        "blacksuit": 3,
+        "Addka72424 - repost attributed to FriendlyChemist": 3,
+        "darkvault": 3
+      },
+      "risk_assessment": [
+        {"scope": "South Africa", "level": "High", "basis": "30 incidents, including 29 ransomware publications"},
+        {"scope": "Egypt", "level": "High", "basis": "13 incidents of mixed nature"},
+        {"scope": "Algeria and Nigeria", "level": "High", "basis": "7 incidents each, including several leaks"},
+        {"scope": "Tunisia and Morocco", "level": "Medium", "basis": "5 to 6 incidents with different profiles"}
       ]
     },
-    "9. strategic_recommendations": [
-      "Backup resilience: Apply the 3-2-1 rule, keep offline/immutable backups.",
-      "Identity security: Enforce MFA on VPN, RDP, cloud admin portals, email and privileged accounts.",
-      "Exposure management: Continuously audit exposed services and vulnerable applications.",
-      "Network segmentation: Separate critical servers, OT/ICS networks, backup infrastructure and admin workstations.",
-      "SOC correlation: Correlate authentication anomalies, endpoint discovery, archive creation and outbound data transfer.",
-      "Incident response: Maintain a ransomware playbook with legal, communications, technical and executive decision paths.",
-      "CTI monitoring: Track actor claims, but avoid overreliance on IoCs; prioritize TTP-based detection and sector exposure.",
-      "Ransom payment: Not recommended. It does not guarantee data recovery or non-disclosure and can fund further criminal activity."
+    "7. trends_and_intelligence_gaps": {
+      "observed": [
+        {"confidence": "High", "finding": "86 of 116 incidents are classified as ransomware."},
+        {"confidence": "High", "finding": "South Africa accounts for 25.9% of the annual dataset."},
+        {"confidence": "High", "finding": "The second half has 70 incidents, compared with 46 in the first half."}
+      ],
+      "assumptions": [
+        {"confidence": "Medium at the general level, low per incident", "finding": "Credential reuse, initial access brokers, and exposed Edge or VPN services are priority research scenarios, not facts attributed to the victims in the dataset."}
+      ],
+      "intelligence_gaps": [
+        "Very limited availability of public African DFIR reports.",
+        "Initial access vectors, dwell time, and exfiltration paths unknown in most cases.",
+        "Age and completeness of several datasets undetermined.",
+        "Effect of reposts and duplicate claims on the timeline."
+      ]
+    },
+    "8. contextual_mitre_attack": [
+      {"qualification": "Assumption - medium confidence", "technique_id": "T1078", "name": "Valid Accounts"},
+      {"qualification": "Assumption - medium confidence", "technique_id": "T1190", "name": "Exploit Public-Facing Application"},
+      {"qualification": "Preventive", "technique_id": "T1486", "name": "Data Encrypted for Impact"},
+      {"qualification": "Preventive", "technique_id": "T1490", "name": "Inhibit System Recovery"},
+      {"qualification": "Preventive", "technique_id": "T1567", "name": "Exfiltration Over Web Service"}
     ],
-    "10. conclusion": "The 2024 AFRINTEL dataset (115 documented records) confirms that ransomware and data-extortion actors are consistently targeting African organizations across public, private and critical sectors. The threat is not limited to a single region or industry. For 2025 and beyond, African SOC teams should prioritize identity hardening, exposed-service reduction, backup resilience, data-exfiltration detection and regional CTI sharing.",
-    "11. sources": [
-      "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/README.md",
-      "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/victims.md"
-    ]
-  }
+    "9. recommendations": [
+      "Require phishing-resistant MFA for sensitive and remote access.",
+      "Segment IT, industrial, administration, and backup environments.",
+      "Monitor bulk exports and govern third-party access.",
+      "Test continuity of essential services and offline recovery.",
+      "Regularly assess Internet exposure and close unnecessary remote access."
+    ],
+    "10. soc_recommendations": {
+      "observed": "Correlate organisations, domains, dates, and actors in the dataset with IAM, EDR, VPN, WAF, DNS, proxy, and mail telemetry.",
+      "assumption": "Hunt for access from unusual infrastructure, credential reuse, account creation, privilege escalation, and bulk exports.",
+      "preventive": "Detect LSASS dumping, obfuscated PowerShell, backup deletion, mass encryption, and abnormal outbound transfers, including through Rclone."
+    },
+    "11. strategic_recommendations": {
+      "observed": "Prioritise ransomware resilience in Southern Africa and data-exposure risk in North and West Africa.",
+      "assumption": "Audit access scenarios involving identities, suppliers, and edge devices without presenting them as historical facts.",
+      "preventive": "Reduce the external surface, patch Edge/VPN appliances, close unnecessary RDP exposure, and maintain immutable, isolated, tested backups."
+    },
+    "12. conclusion": "The 2024 dataset provides a working base to turn dark-web, darknet, and OSINT signals into defensive priorities. Its main limitation is the shortage of public DFIR reporting: observed facts, assumptions, and unknowns must remain explicitly separated."
+  },
+  "references": [
+    "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/README.md",
+    "https://github.com/Hatchepsoute/AFRINTEL/tree/main/CyberAttackAfrica/2024"
+  ]
 }

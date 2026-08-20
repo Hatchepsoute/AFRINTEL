@@ -1,171 +1,158 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-February%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-February%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - February 2024: Geographic expansion across North and West Africa
+# AFRINTEL CTI Report — February 2024
 
-👉🏾 [Version française disponible ici](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-### 1. Executive summary
+## 1. Executive summary
 
-In February 2024, Africa recorded **9 incident records** across 6 countries: **5 ransomware claims and 4 data leak claims**. Compared to January (3 victims, all South Africa), the month marks a clear **geographic expansion**. Egypt, Tunisia, Ivory Coast, Ethiopia, Ghana and South Africa are all represented.
+February 2024 contains **9 documented incidents**: **5 ransomware claims** and **4 data leaks**. Activity spans six countries, without the concentration seen in South Africa the previous month. Egypt and Côte d’Ivoire each record two incidents; North Africa and West Africa each account for three occurrences.
 
-👉🏾 [Victims list](./victims.md)
+The four leaks mainly concern digital services and public bodies. The 8WORX publication provides the month's most structured evidence and carries high confidence in the corpus. The five ransomware publications remain claims: no public telemetry establishes their entry point or operational scope.
 
-**Key figures:**
-- 🔹 **9 incident records** identified
-- 🔹 **6 active actors/groups**: Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (3)
-- 🔹 **Countries affected**: South Africa (2), Ethiopia (1), Egypt (2), Tunisia (1), Ivory Coast (2), Ghana (1)
-- 🔹 **Sectors**: Government/Public Administration, Government/Education, Government/Employment Services, Digital Services/Telecom, Technology/Software Services, Manufacturing, Healthcare & Research, Consumer Goods, Utilities
+See [victims.md](./victims.md) for incident-level data.
 
-### Monthly aggregate exposure view
+## 2. Methodology
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (44.4% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+This report covers publications assigned from February 1 to 29, 2024. Each organization is counted once, while **Ransomware**, **Data Leak**, **Access Sale**, and **Defacement** remain separate categories. Results describe activity visible in the reviewed sources, not every incident that occurred in Africa.
 
----
+Statistics derive from the **9 incidents** in [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-### 2. Attack timeline
+## 3. Global overview
 
-| Date | Victim | Country | Actor / Group | Type |
-|------|--------|---------|-----------------|------|
-| February 1 | 8WORX | Egypt | Tanaka | Data Leak |
-| February 6 | ArpuPlus | Egypt | Medusa | Ransomware |
-| February 10 | SOPEM Tunisie | Tunisia | Hunters | Ransomware |
-| February 13 | The Aurum Institute | South Africa | LockBit3 | Ransomware |
-| February 24 | Regional Trade and Integration Ministries of Ethiopia | Ethiopia | ThreatSec | Data Leak |
-| February 24 | National Teaching Council (tpg.ntc.gov.gh) | Ghana | Tanaka | Data Leak |
-| February 24 | Agence Emploi Jeunes | Ivory Coast | Tanaka | Data Leak |
-| February 27 | Nouvelle Parfumerie Gandour (NPGCI) | Ivory Coast | LockBit3 | Ransomware |
-| February 29 | ERWAT | South Africa | DragonForce | Ransomware |
+| Indicator | Value |
+|---|---:|
+| Incidents | **9** |
+| Countries | **6** |
+| Ransomware | **5** |
+| Data leaks | **4** |
+| Access sales / Defacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Incidents in Africa - February 2024
-    February 1 : 8WORX (Egypt) - Tanaka
-    February 6 : ArpuPlus (Egypt) - Medusa
-    February 10 : SOPEM Tunisie (Tunisia) - Hunters
-    February 13 : The Aurum Institute (South Africa) - LockBit3
-    February 24 : Regional Trade and Integration Ministries (Ethiopia) - ThreatSec
-               National Teaching Council (Ghana) - Tanaka
-               Agence Emploi Jeunes (Ivory Coast) - Tanaka
-    February 27 : NPGCI (Ivory Coast) - LockBit3
-    February 29 : ERWAT (South Africa) - DragonForce
-```
+### Country ranking
 
----
-
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country | Number of attacks |
-|---------|-----------------|
-| South Africa | 2 |
-| Ethiopia | 1 |
-| Egypt | 2 |
-| Tunisia | 1 |
-| Ivory Coast | 2 |
-| Ghana | 1 |
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇿🇦 South Africa | 2 | 2 | 0 |
+| 🇨🇮 Côte d’Ivoire | 2 | 1 | 1 |
+| 🇪🇬 Egypt | 2 | 1 | 1 |
+| 🇬🇭 Ghana | 1 | 0 | 1 |
+| 🇹🇳 Tunisia | 1 | 1 | 0 |
+| 🇪🇹 Ethiopia | 1 | 0 | 1 |
+| **Total** | **9** | **5** | **4** |
 
 ```mermaid
-pie
-    title Distribution by country - February 2024 (9 incident records)
-    "South Africa" : 2
-    "Egypt" : 2
-    "Tunisia" : 1
-    "Ivory Coast" : 2
-    "Ethiopia" : 1
-    "Ghana" : 1
+xychart
+    title "Incidents by country — February 2024"
+    x-axis ["ZA","CI","EG","GH","TN","ET"]
+    y-axis "Incidents" 0 --> 3
+    bar [2,2,2,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector | Count |
-|--------|-------|
-| Digital Services / Telecom | 1 |
-| Technology / Software Services | 1 |
-| Manufacturing (Metallurgy) | 1 |
-| Healthcare & Research | 1 |
-| Consumer Goods (Cosmetics) | 1 |
-| Utilities (Wastewater) | 1 |
-| Government / Public Administration | 1 |
-| Government / Education | 1 |
-| Government / Employment Services | 1 |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - February 2024"
-    x-axis ["Digital/Telecom", "Technology", "Manufacturing", "Healthcare", "Consumer Goods", "Utilities", "Government", "Education", "Employment"]
-    y-axis "Number of attacks" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Incident-type distribution — February 2024
+    "Ransomware" : 5
+    "Data leaks" : 4
 ```
 
-#### 3.3 Ransomware groups and data-leak actors
+### Regional distribution
 
-| Actor / group | Number of incidents |
-|-----------------|-----------------|
+| Region | Incidents | Ransomware | Data leak |
+|---|---:|---:|---:|
+| North Africa | 3 | 2 | 1 |
+| West Africa | 3 | 1 | 2 |
+| Southern Africa | 2 | 2 | 0 |
+| East Africa | 1 | 0 | 1 |
+| **Total** | **9** | **5** | **4** |
+
+### Normalized sector distribution
+
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Government / Administration | 3 | 33.3% |
+| Technology / IT | 2 | 22.2% |
+| Manufacturing / Industry | 2 | 22.2% |
+| Healthcare / Medical | 1 | 11.1% |
+| Water / Utilities | 1 | 11.1% |
+| **Total** | **9** | **100%** |
+
+### Most visible actors
+
+| Actor or source | Incidents |
+|---|---:|
+| Tanaka and associated publications | 3 |
 | LockBit3 | 2 |
-| Medusa | 1 |
-| Hunters | 1 |
-| DragonForce | 1 |
-| ThreatSec | 1 |
-| Tanaka | 3 |
+| DragonForce, Hunters, Medusa, ThreatSec | 1 each |
 
-```mermaid
-gantt
-    title Active Ransomware Groups - February 2024
-    dateFormat X
-    axisFormat %s
-    section LockBit3
-    LockBit3 : 0, 2
-    section Medusa
-    Medusa : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section DragonForce
-    DragonForce : 0, 1
-    section Tanaka
-    Tanaka : 0, 3
-```
+## 4. Detailed analysis by incident type
 
----
+### 4.1 Ransomware
 
-### 4. Key observations
+The five publications concern ArpuPlus, SOPEM Tunisie, The Aurum Institute, NPGCI, and ERWAT. Two affect South Africa; the others extend visible ransomware activity to Egypt, Tunisia, and Côte d’Ivoire. This distribution is a collection fact, not evidence of a coordinated campaign.
 
-- **Geographic expansion**: February 2024 is the first month to see simultaneous attacks across North Africa (Egypt, Tunisia), West Africa (Ivory Coast) and Southern Africa (South Africa).
-- **DragonForce first appearance**: the group claims ERWAT (wastewater utility serving 3.5 million people), a critical infrastructure attack signalling interest in essential services.
-- **Healthcare under fire**: The Aurum Institute, a major HIV/TB research organization, is targeted by LockBit3, sensitive public health data at risk.
-- **West African manufacturing**: NPGCI (FMCG cosmetics, Abidjan) marks LockBit3's first West African victim of the year.
-- **Digital services in North Africa**: ArpuPlus (Egypt) shows emerging interest in MENA telecom and digital value-added service providers.
-- **Ethiopian government exposure**: a ThreatSec claim published on 24 August 2023 and discovered by AFRINTEL on 24 February 2024 concerns 43 government files linked to trade and certification portals.
-- **Ivorian public-employment leak**: the Tanaka publication advertises a 3.2 GB SQL file associated with agenceemploijeunes.ci, with approximately 2,300 rows and 296,000 unique users or email addresses claimed; these figures remain internally inconsistent and the full dataset is unverified.
-- **Ghanaian education-sector leak**: a Tanaka forum post originally published on 16 July 2023 and discovered by AFRINTEL on 24 February 2024 advertises a ~41,000-row SQL export of student-teacher records from Ghana's National Teaching Council, covering identity, contact and academic data across multiple colleges of education.
-- **Egyptian CRM-platform leak**: a Tanaka forum post originally published on 30 June 2023 and discovered by AFRINTEL on 1 February 2024 advertises a 1.3 GB SQL export of 8WORX, a Delaware-registered technology provider focused on Egypt and the Middle East, with roughly 4 million rows spanning phone, activity-log and lead/account data.
+### 4.2 Data leaks
 
----
+The four leaks concern 8WORX, Ethiopian ministries involved in regional trade, Ghana's National Teaching Council, and Côte d’Ivoire's Agence Emploi Jeunes. Samples increase confidence that structured data existed, but do not validate the total volumes or acquisition method.
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Feb 2024)"
-    x-axis ["Jan", "Feb"]
-    y-axis "Number of attacks" 0 --> 9
-    bar [3, 9]
-```
+## 5. Sectoral impact
 
-### 5. Recommendations
+The public sector accounts for one third of the corpus. Publications involve general administration, employment, and teacher-training regulation. The most direct risks are targeted phishing, account impersonation, and administrative-data exposure. In water and healthcare, even an unconfirmed claim warrants checks on essential-service continuity.
 
-| Domain | Recommended action |
-|--------|--------------------|
-| Critical infrastructure (water, energy) | Segment OT/IT networks, enforce offline backups, monitor SCADA access. |
-| Healthcare & research | Encrypt research databases, restrict external access, monitor for data exfiltration. |
-| Digital/Telecom providers | Patch API and platform vulnerabilities, monitor for credential leaks. |
-| Manufacturing | Audit industrial systems exposure, enforce endpoint protection. |
-| Education / Public administration | Restrict access to student-record databases, encrypt personal data at rest, and audit third-party portal access. |
-| All organizations | Track DragonForce and Medusa as emerging groups, review their IOCs. |
+## 6. Threat actor profile and risk assessment
 
----
+| Country | Level | Rationale |
+|---|---|---|
+| 🇪🇬 Egypt | 🔴 High | Two incidents, including a high-confidence leak |
+| 🇨🇮 Côte d’Ivoire | 🔴 High | Ransomware and a leak involving a public body |
+| 🇿🇦 South Africa | 🟠 Medium | Two ransomware claims |
+| 🇬🇭 Ghana | 🟠 Medium | Data publication involving a regulator |
+| 🇹🇳 Tunisia / 🇪🇹 Ethiopia | 🟡 Low to medium | One publication each |
 
-*Report generated from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*
+## 7. Key trends and intelligence gaps
+
+- **Observed — high confidence:** incidents are almost evenly split between ransomware and leaks.
+- **Observed — high confidence:** three of the four leaks directly concern public bodies.
+- **Gap:** no public DFIR report was identified in the sources reviewed to qualify the five ransomware cases.
+- **Gap:** the age and representativeness of some samples do not support extrapolation to advertised volumes.
+- **Collection need:** victim confirmation, official notices, and later evidence of republication.
+
+## 8. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Encryption monitoring for five ransomware claims; technique not confirmed |
+| Preventive | T1567 — Exfiltration Over Web Service | Outbound-data monitoring; channel not observed |
+| Assumption | T1078 — Valid Accounts | Scenario to test in administrative environments; no compromised account confirmed |
+
+## 9. Recommendations
+
+- **Public sector:** review privileged access, data exports, and notification procedures.
+- **Healthcare and water:** isolate critical systems and test continuity plans.
+- **Technology companies:** strengthen MFA, secret management, and administrator-action logging.
+- **All organizations:** maintain immutable backups and a tested restoration capability.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Monitor the applications and domains explicitly cited; no intrusion chain is confirmed. |
+| **Assumption** | Hunt for abnormal administrator logins, bulk exports, and archive creation around publication dates. |
+| **Preventive** | Alert on backup inhibition, mass encryption, high-volume outbound transfers, and unusual remote-administration tooling. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritize protection of public bodies represented in the corpus. |
+| 2 | **Assumption** | Check whether shared credentials or applications connect several publications without presuming a common campaign. |
+| 3 | **Preventive** | Reduce external exposure, require phishing-resistant MFA, and isolate backups. |
+
+## 12. Conclusion
+
+February is more geographically dispersed than January. The weight of the public sector and the coexistence of ransomware and leaks require parallel work on business continuity and data-exposure validation. Public sources do not support stronger conclusions about attacker tradecraft.
+
+**AFRINTEL — TLP:CLEAR**
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -1,267 +1,250 @@
-# AFRINTEL global annual CTI report - 2024
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Period](https://img.shields.io/badge/Period-2024-lightgrey)
+![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-👉🏾 [French version](./README_FR.md)
+# AFRINTEL Annual CTI Report — 2024
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Period](https://img.shields.io/badge/Period-2024-blue)
+👉🏾 [Version française](./README_FR.md)
 
----
 ## 1. Executive summary
 
-AFRINTEL recorded **116 records** in 2024: **86 ransomware claims (74.1%)**, **27 data leaks (23.3%)**, **3 access sales (2.6%)** and **no defacements**.
+AFRINTEL documented **116 incidents across 27 African countries** in 2024: **86 ransomware claims (74.1%)**, **27 data leaks (23.3%)**, and **3 access sales (2.6%)**. No defacement is present in the annual dataset.
 
-The strongest signal of the year was the dominance of ransomware, which accounted for nearly three out of every four records. **South Africa accounted for 30 records**, including **29 ransomware-related records**, well ahead of Egypt (**13**) and Algeria and Nigeria (**7 each**). This concentration should be read as a trend in AFRINTEL’s observed publications, not as a complete measure of all compromises across the continent.
+South Africa accounts for **30 incidents**, 29 of which are ransomware. It stands well ahead of Egypt with 13 incidents, followed by Algeria and Nigeria with seven each. This concentration measures visibility in the sources monitored by AFRINTEL; it is not an exhaustive ranking of cybercrime across the continent.
 
-Data leaks and access sales showed a different profile. They were more widely distributed across Algeria, Burkina Faso, Morocco, Nigeria, Egypt and several other countries. The publications involved administrative, financial, education, healthcare and business environments. Their risk extends beyond system disruption to fraud, targeted phishing, credential reuse and pressure on affected organizations.
+The second half of the year totals **70 incidents**, compared with 46 in the first half. August and November each reach 15 publications. The increase is real within the dataset, but its causes cannot be reduced to greater attack intensity: group activity, source availability, reposts, and collection delays also influence observed volume.
 
-By sector, technology and IT (**18 records**), finance and banking (**15**), education (**12**) and government (**12**) ranked highest. The most visible actors were **lockbit3 (16 records)**, **ransomhub (12)**, **killsec (10)** and **hunters (8)**. Repeated appearances justify closer monitoring, but do not by themselves demonstrate a common campaign or operational attribution.
+The most useful defensive finding is the difference among incident categories. Ransomware is especially concentrated in Southern Africa, while leaks and access sales are distributed more broadly across North, West, and East Africa. The priorities are therefore not interchangeable: continuity and recovery for ransomware; identity, export control, and secondary fraud for exposed data and access.
 
-The central challenge for CTI and SOC teams in 2024 was therefore twofold: reduce the impact of ransomware while treating leaks and access sales as full risk signals and possible entry points. Claim qualification, repost detection and validation of advertised data volumes remain essential before drawing conclusions.
+See [victims.md](./victims.md).
 
 ## 2. Methodology
 
-The twelve monthly files are the source of truth. A record is a documented publication or claim. Unconfirmed publications remain claims.
+This report aggregates the twelve monthly `victims.md` files, synchronised with their French counterparts. Each incident is a publication tracked and classified by AFRINTEL. A claim, a repost, a published sample, and an official confirmation do not carry the same evidential weight; the assessment preserves that distinction.
+
+Sources include ransomware leak sites, criminal forums, messaging channels, and public OSINT. Personal data is neither reproduced nor republished. Volumes announced by actors are treated as facts only when they can be checked; otherwise, they remain attributed claims.
+
+The dataset has a visibility bias: organisations that do not communicate, unclaimed incidents, and compromises handled outside public view may escape collection. No publication therefore does not mean no incident.
 
 ## 3. Global overview
 
 | Indicator | Value |
-| :--- | ---: |
-| Records | **116** |
-| Ransomware | **86 (74,1%)** |
-| Data leaks | **27 (23,3%)** |
-| Access sales | **3 (2,6%)** |
+|---|---:|
+| Incidents / Countries | **116 / 27** |
+| Ransomware | **86 (74.1%)** |
+| Data leaks | **27 (23.3%)** |
+| Access sales | **3 (2.6%)** |
+| Defacement | **0** |
 
-### Country ranking
+### Monthly activity
 
-| Rank | Country | Records | Chart |
-| :--- | ---: | ---: | ---: |
-| 1 | 🇿🇦 South Africa | 30 | ██████████████████████████████ |
-| 2 | 🇪🇬 Egypt | 13 | █████████████ |
-| 3 | 🇩🇿 Algeria | 7 | ███████ |
-| 4 | 🇳🇬 Nigeria | 7 | ███████ |
-| 5 | 🇹🇳 Tunisia | 6 | ██████ |
-| 6 | 🇲🇦 Morocco | 5 | █████ |
-| 7 | 🇧🇫 Burkina Faso | 4 | ████ |
-| 8 | 🇬🇭 Ghana | 4 | ████ |
-| 9 | 🇨🇮 Ivory Coast | 4 | ████ |
-| 10 | 🇰🇪 Kenya | 4 | ████ |
-| 11 | 🇳🇦 Namibia | 4 | ████ |
-| 12 | 🇨🇲 Cameroon | 3 | ███ |
-| 13 | 🇪🇹 Ethiopia | 3 | ███ |
-| 14 | 🇸🇨 Seychelles | 3 | ███ |
-| 15 | 🇿🇼 Zimbabwe | 3 | ███ |
-| 16 | 🇱🇾 Libya | 2 | ██ |
-| 17 | 🇸🇳 Senegal | 2 | ██ |
-| 18 | 🇸🇩 Sudan | 2 | ██ |
-| 19 | 🇹🇿 Tanzania | 2 | ██ |
-| 20 | 🇧🇼 Botswana | 1 | █ |
-| 21 | 🇨🇬 Congo | 1 | █ |
-| 22 | 🇩🇯 Djibouti | 1 | █ |
-| 23 | 🇲🇬 Madagascar | 1 | █ |
-| 24 | 🇲🇷 Mauritania | 1 | █ |
-| 25 | 🇲🇺 Mauritius | 1 | █ |
-| 26 | 🇷🇼 Rwanda | 1 | █ |
-| 27 | 🇿🇲 Zambia | 1 | █ |
+| Month | Total | Ransomware | Leak | Access sale |
+|---|---:|---:|---:|---:|
+| January | 12 | 3 | 8 | 1 |
+| February | 9 | 5 | 4 | 0 |
+| March | 8 | 7 | 1 | 0 |
+| April | 6 | 5 | 1 | 0 |
+| May | 8 | 8 | 0 | 0 |
+| June | 3 | 3 | 0 | 0 |
+| July | 11 | 7 | 4 | 0 |
+| August | 15 | 14 | 1 | 0 |
+| September | 5 | 4 | 1 | 0 |
+| October | 12 | 8 | 4 | 0 |
+| November | 15 | 11 | 2 | 2 |
+| December | 12 | 11 | 1 | 0 |
+| **Total** | **116** | **86** | **27** | **3** |
 
 ```mermaid
-xychart-beta
-    title "Top 10 - All incidents"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Records" 0 --> 31
-    bar [30,13,7,7,6,5,4,4,4,4]
+xychart
+    title "Monthly incidents — 2024"
+    x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+    y-axis "Incidents" 0 --> 16
+    bar [12,9,8,6,8,3,11,15,5,12,15,12]
 ```
 
-### Incident type distribution
-
-| Type | Records | Share |
-| :--- | ---: | ---: |
-| Ransomware | 86 | 74,1% |
-| Data leak | 27 | 23,3% |
-| Access sale | 3 | 2,6% |
-| **Total** | **116** | **100%** |
-
 ```mermaid
-pie
-    title Types d’incidents - 2024
+pie showData
+    title Incident type distribution — 2024
     "Ransomware" : 86
     "Data leaks" : 27
     "Access sales" : 3
 ```
 
-### Ransomware, leaks and access sales by country
+### Country ranking
 
-| Country | Ransomware | Data leaks | Access sales | Total | Barre | Distribution |
-| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
-| 🇿🇦 South Africa | 29 | 1 | 0 | 30 | ██████████████████████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| 🇪🇬 Egypt | 11 | 2 | 0 | 13 | █████████████ | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇩🇿 Algeria | 2 | 5 | 0 | 7 | ███████ | 🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 4 | 3 | 0 | 7 | ███████ | 🟧🟧🟧🟧 🟦🟦🟦 |
-| 🇹🇳 Tunisia | 5 | 1 | 0 | 6 | ██████ | 🟧🟧🟧🟧🟧 🟦 |
-| 🇲🇦 Morocco | 1 | 4 | 0 | 5 | █████ | 🟧 🟦🟦🟦🟦 |
-| 🇧🇫 Burkina Faso | 0 | 2 | 2 | 4 | ████ | 🟦🟦🟦🟦 |
-| 🇬🇭 Ghana | 2 | 2 | 0 | 4 | ████ | 🟧🟧 🟦🟦 |
-| 🇨🇮 Ivory Coast | 3 | 1 | 0 | 4 | ████ | 🟧🟧🟧 🟦 |
-| 🇰🇪 Kenya | 3 | 1 | 0 | 4 | ████ | 🟧🟧🟧 🟦 |
-| 🇳🇦 Namibia | 4 | 0 | 0 | 4 | ████ | 🟧🟧🟧🟧 |
-| 🇨🇲 Cameroon | 2 | 0 | 1 | 3 | ███ | 🟧🟧 🟦 |
-| 🇪🇹 Ethiopia | 1 | 2 | 0 | 3 | ███ | 🟧 🟦🟦 |
-| 🇸🇨 Seychelles | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇿🇼 Zimbabwe | 3 | 0 | 0 | 3 | ███ | 🟧🟧🟧 |
-| 🇱🇾 Libya | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇸🇳 Senegal | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇸🇩 Sudan | 1 | 1 | 0 | 2 | ██ | 🟧 🟦 |
-| 🇹🇿 Tanzania | 2 | 0 | 0 | 2 | ██ | 🟧🟧 |
-| 🇧🇼 Botswana | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇨🇬 Congo | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇩🇯 Djibouti | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇲🇬 Madagascar | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇲🇷 Mauritania | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇲🇺 Mauritius | 1 | 0 | 0 | 1 | █ | 🟧 |
-| 🇷🇼 Rwanda | 0 | 1 | 0 | 1 | █ | 🟦 |
-| 🇿🇲 Zambia | 1 | 0 | 0 | 1 | █ | 🟧 |
-
-### Geographic distribution by region
-
-| Region | Occurrences | Ransomware | Leaks / access | Distribution |
-| :--- | ---: | ---: | ---: | ---: |
-| North Africa | 34 | 22 | 12 | 🟧🟧🟧🟧🟧 🟦🟦🟦 |
-| Southern Africa | 43 | 42 | 1 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| West and Central Africa | 25 | 14 | 11 | 🟧🟧🟧 🟦🟦🟦 |
-| East Africa | 14 | 8 | 6 | 🟧🟧 🟦🟦 |
+| Country | Total | Ransomware | Leak | Access sale | Bar |
+|---|---:|---:|---:|---:|---|
+| 🇿🇦 South Africa | 30 | 29 | 1 | 0 | ██████████████████████████████ |
+| 🇪🇬 Egypt | 13 | 11 | 2 | 0 | █████████████ |
+| 🇩🇿 Algeria | 7 | 2 | 5 | 0 | ███████ |
+| 🇳🇬 Nigeria | 7 | 4 | 3 | 0 | ███████ |
+| 🇹🇳 Tunisia | 6 | 5 | 1 | 0 | ██████ |
+| 🇲🇦 Morocco | 5 | 1 | 4 | 0 | █████ |
+| 🇧🇫 Burkina Faso | 4 | 0 | 2 | 2 | ████ |
+| 🇨🇮 Côte d’Ivoire | 4 | 3 | 1 | 0 | ████ |
+| 🇬🇭 Ghana | 4 | 2 | 2 | 0 | ████ |
+| 🇰🇪 Kenya | 4 | 3 | 1 | 0 | ████ |
+| 🇳🇦 Namibia | 4 | 4 | 0 | 0 | ████ |
+| 🇨🇲 Cameroon | 3 | 2 | 0 | 1 | ███ |
+| 🇪🇹 Ethiopia | 3 | 1 | 2 | 0 | ███ |
+| 🇸🇨 Seychelles | 3 | 3 | 0 | 0 | ███ |
+| 🇿🇼 Zimbabwe | 3 | 3 | 0 | 0 | ███ |
+| 🇱🇾 Libya | 2 | 2 | 0 | 0 | ██ |
+| 🇸🇳 Senegal | 2 | 2 | 0 | 0 | ██ |
+| 🇸🇩 Sudan | 2 | 1 | 1 | 0 | ██ |
+| 🇹🇿 Tanzania | 2 | 2 | 0 | 0 | ██ |
+| 🇧🇼 Botswana | 1 | 1 | 0 | 0 | █ |
+| 🇨🇬 Congo | 1 | 1 | 0 | 0 | █ |
+| 🇩🇯 Djibouti | 1 | 1 | 0 | 0 | █ |
+| 🇲🇬 Madagascar | 1 | 0 | 1 | 0 | █ |
+| 🇲🇷 Mauritania | 1 | 1 | 0 | 0 | █ |
+| 🇲🇺 Mauritius | 1 | 1 | 0 | 0 | █ |
+| 🇷🇼 Rwanda | 1 | 0 | 1 | 0 | █ |
+| 🇿🇲 Zambia | 1 | 1 | 0 | 0 | █ |
+| **Total** | **116** | **86** | **27** | **3** | |
 
 ```mermaid
-xychart-beta
-    title "Occurrences by region - 2024"
-    x-axis ["1","2","3","4"]
-    y-axis "Occurrences" 0 --> 44
-    bar [34,43,25,14]
+xychart
+    title "Leading countries — 2024"
+    x-axis ["ZA","EG","DZ","NG","TN","MA","BF","CI","GH","KE","NA"]
+    y-axis "Incidents" 0 --> 31
+    bar [30,13,7,7,6,5,4,4,4,4,4]
 ```
 
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+### Regional distribution
 
-### Sector distribution
+| Region | Total | Ransomware | Leak | Access sale |
+|---|---:|---:|---:|---:|
+| Southern Africa | 39 | 38 | 1 | 0 |
+| North Africa | 34 | 22 | 12 | 0 |
+| West Africa | 21 | 11 | 8 | 2 |
+| East Africa | 13 | 8 | 5 | 0 |
+| Indian Ocean | 5 | 4 | 1 | 0 |
+| Central Africa | 4 | 3 | 0 | 1 |
+| **Total** | **116** | **86** | **27** | **3** |
 
-| Normalized sector | Records | Share | Chart |
-| :--- | ---: | ---: | ---: |
-| Technology / IT | 18 | 15,5% | ██████████ |
-| Finance / Banking | 15 | 12,9% | ████████ |
-| Education / University | 12 | 10,3% | ███████ |
-| Government / Administration | 12 | 10,3% | ███████ |
-| Retail / E-commerce | 11 | 9,5% | ██████ |
-| Healthcare / Medical | 9 | 7,8% | █████ |
-| Manufacturing / Industry | 9 | 7,8% | █████ |
-| Professional / Business Services | 8 | 6,9% | ████ |
-| Energy / Utilities | 5 | 4,3% | ███ |
-| Agriculture / Agribusiness | 3 | 2,6% | ██ |
-| Construction / Real Estate | 3 | 2,6% | ██ |
-| Media / Entertainment | 3 | 2,6% | ██ |
-| Transport / Logistics | 3 | 2,6% | ██ |
-| Legal / Justice | 2 | 1,7% | █ |
-| Civil Society / NGO | 1 | 0,9% | █ |
-| Defense / Security | 1 | 0,9% | █ |
-| Mining | 1 | 0,9% | █ |
+### Normalised sector distribution
 
-```mermaid
-xychart-beta
-    title "Sector distribution - 2024"
-    x-axis ["1","2","3","4","5","6","7","8"]
-    y-axis "Records" 0 --> 19
-    bar [18,15,12,12,11,9,9,8]
-```
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Finance / Banking | 15 | 12.9% |
+| Government / Administration | 12 | 10.3% |
+| Manufacturing / Industry | 11 | 9.5% |
+| Professional / Business Services | 11 | 9.5% |
+| Technology / IT | 11 | 9.5% |
+| Education / University | 10 | 8.6% |
+| Healthcare / Medical | 9 | 7.8% |
+| Retail / E-commerce | 9 | 7.8% |
+| Telecommunications | 5 | 4.3% |
+| Media / Entertainment | 4 | 3.4% |
+| Agriculture / Agribusiness | 3 | 2.6% |
+| Oil & Energy | 3 | 2.6% |
+| Transport / Logistics | 3 | 2.6% |
+| Defence / Security | 2 | 1.7% |
+| Legal / Justice | 2 | 1.7% |
+| Water / Utilities | 2 | 1.7% |
+| Aviation | 1 | 0.9% |
+| Construction / Real Estate | 1 | 0.9% |
+| Mining / Extractive Industries | 1 | 0.9% |
+| Civil Society / NGO | 1 | 0.9% |
+| **Total** | **116** | **100%** |
 
-Legend: 1 = Technology; 2 = Finance; 3 = Education; 4 = Government; 5 = Retail; 6 = Healthcare; 7 = Manufacturing; 8 = Professional services
+### Most visible actors
 
-### Incident-type charts
-
-```mermaid
-xychart-beta
-    title "Top 10 ransomware - 2024"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Records" 0 --> 30
-    bar [29,11,5,4,4,3,3,3,3,2]
-```
-
-Legend: 1 = South Africa; 2 = Egypt; 3 = Tunisia; 4 = Namibia; 5 = Nigeria; 6 = Ivory Coast; 7 = Kenya; 8 = Seychelles; 9 = Zimbabwe; 10 = Algeria
-
-```mermaid
-xychart-beta
-    title "Top 10 leaks and access sales - 2024"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Records" 0 --> 6
-    bar [5,4,4,3,2,2,2,1,1,1]
-```
-
-Legend: 1 = Algeria; 2 = Burkina Faso; 3 = Morocco; 4 = Nigeria; 5 = Egypt; 6 = Ethiopia; 7 = Ghana; 8 = Cameroon; 9 = Ivory Coast; 10 = Kenya
+| Actor or source label | Incidents | Dataset share |
+|---|---:|---:|
+| LockBit3 | 16 | 13.8% |
+| RansomHub | 12 | 10.3% |
+| KillSec | 10 | 8.6% |
+| Hunters | 8 | 6.9% |
+| SpaceBears | 5 | 4.3% |
+| ArcusMedia | 4 | 3.4% |
+| Tanaka — underground-forum publication | 3 | 2.6% |
+| BlackSuit | 3 | 2.6% |
+| Addka72424 — repost attributed to FriendlyChemist | 3 | 2.6% |
+| DarkVault | 3 | 2.6% |
 
 ## 4. Detailed analysis by incident type
 
-Ransomware claims represent **86 records**, or **74.1%** of the corpus. They were heavily concentrated in South Africa, with **29 ransomware records**, followed by Egypt with **11**. Data leaks and access sales account for **30 records**. They are less geographically concentrated and include administrative, financial, healthcare, education and business data. This difference requires separate controls for encryption resilience and for preventing exfiltration, fraud and access reuse.
+### 4.1 Ransomware
+
+Ransomware accounts for nearly three quarters of the dataset. Concentration is pronounced: South Africa has 29 of the 86 publications, and the four most visible groups total 46 incidents. That visibility does not establish a shared attack chain. Source data mostly documents organisations appearing on leak sites; it rarely contains the logs or analysis needed to confirm encryption, persistence, or lateral movement.
+
+### 4.2 Data leaks and access sales
+
+The 27 leaks and three access sales form a more distributed set. Algeria and Morocco have a majority of leaks, while the three access sales are split between Burkina Faso and Cameroon. Several publications include structured samples; others are compilations or reposts of uncertain age. An access sale signals possible exposure, not a completed compromise.
 
 ## 5. Sectoral impact
 
-Technology and IT (**18 records**), finance and banking (**15**), education (**12**) and government (**12**) were the most represented sectors. This distribution shows that exposure is not limited to public institutions: technology providers, financial organizations and education entities also represent significant attack surfaces. Published or claimed data may combine professional information, personal data, administrative documents and material useful for fraud campaigns.
+Finance leads with 15 incidents, followed by government with 12. Manufacturing, professional services, and technology each account for 11. These volumes require different responses: transaction and identity protection in finance, service continuity in government, industrial segmentation, and control over supplier access. Sector ranking does not replace an organisation-specific sensitivity assessment.
 
 ## 6. Threat actor profile and risk assessment
 
-| Actor / Group | Records | Activity |
-| :--- | ---: | ---: |
-| lockbit3 | 16 | ██████████ |
-| ransomhub | 12 | ████████ |
-| killsec | 10 | ██████ |
-| hunters | 8 | █████ |
-| spacebears | 5 | ███ |
-| arcusmedia | 4 | ██ |
-| Tanaka, publication on an underground forum | 3 | ██ |
-| blacksuit | 3 | ██ |
-| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 | ██ |
-| darkvault | 3 | ██ |
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇿🇦 South Africa | 🔴 High | 30 incidents, including 29 ransomware publications |
+| 🇪🇬 Egypt | 🔴 High | 13 incidents involving public and financial functions |
+| 🇩🇿 Algeria / 🇳🇬 Nigeria | 🔴 High | Seven incidents each, including several data leaks |
+| 🇹🇳 Tunisia / 🇲🇦 Morocco | 🟠 Medium | Five to six incidents, with different ransomware and leak profiles |
+| Other countries | 🟡 Low to medium | Fewer than five incidents; case-by-case assessment required |
 
-| Country | Level |
-| :--- | ---: |
-| 🇿🇦 South Africa | 🔴 High |
-| 🇪🇬 Egypt | 🔴 High |
-| 🇩🇿 Algeria | 🔴 High |
-| 🇳🇬 Nigeria | 🔴 High |
-| 🇹🇳 Tunisia | 🔴 High |
-
-### Most visible actors chart
-
-```mermaid
-xychart-beta
-    title "Most visible actors - 2024"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
-    y-axis "Records" 0 --> 17
-    bar [16,12,10,8,5,4,3,3,3,3]
-```
-
-Legend: 1 = lockbit3; 2 = ransomhub; 3 = killsec; 4 = hunters; 5 = spacebears; 6 = arcusmedia; 7 = Tanaka, publication on an underground forum; 8 = blacksuit; 9 = Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum; 10 = darkvault
+LockBit3, RansomHub, KillSec, and Hunters are the most frequent names. Frequency should direct monitoring, not create a presumption about tools, affiliates, or tradecraft in each incident.
 
 ## 7. Key trends and intelligence gaps
 
-The trends are strong enough to guide defensive priorities, but several limitations remain. The reviewed publications do not always confirm the intrusion, the actual dataset size or the exact compromise date. Double claims and reposts may also inflate the perception of a campaign. CTI teams should therefore link claims to EDR, IAM, VPN, email, proxy and backup telemetry, and compare samples without redistributing personal data.
+- **Observed — high confidence:** 86 of 116 incidents are classified as ransomware.
+- **Observed — high confidence:** South Africa accounts for 25.9% of the annual dataset and 33.7% of ransomware publications.
+- **Observed — high confidence:** the second half has 70 incidents, 24 more than the first half.
+- **Observed — high confidence:** leaks and access sales are proportionally more visible in North and West Africa than in Southern Africa.
+- **Major intelligence gap:** the consulted sources contain very few public African DFIR reports. Initial access vectors, dwell time, exfiltration paths, and operational impact therefore remain unknown in most cases.
+- **Priority assumptions — medium confidence at the general level, low for an individual incident:** credential reuse, initial access brokers, and exploitation of exposed edge services or VPNs. The dataset does not support automatic attribution of these scenarios to the listed victims.
+- **Gap:** reposts, duplicate claims, and old data can distort the perceived timing of activity.
+- **Collection requirement:** strengthen data dating, victim-confirmation tracking, and the search for independent technical corroboration.
 
 ## 8. Contextual MITRE ATT&CK mapping
 
-| Phase | Technique | Context |
-| :--- | ---: | ---: |
-| Impact | T1486 - Data Encrypted for Impact | Ransomware |
-| Exfiltration | T1567 - Exfiltration Over Web Service | Leaks and extortion |
-| Credential access | T1078 - Valid Accounts | Access claims |
+| Qualification | Technique | Defensive use |
+|---|---|---|
+| Assumption — medium confidence | T1078 — Valid Accounts | Initial access or persistence scenario to verify |
+| Assumption — medium confidence | T1190 — Exploit Public-Facing Application | Scenario for edge services; not established in the dataset |
+| Preventive | T1486 — Data Encrypted for Impact | Detect mass encryption; not confirmed for every ransomware publication |
+| Preventive | T1490 — Inhibit System Recovery | Alert on tampering with backups and recovery mechanisms |
+| Preventive | T1567 — Exfiltration Over Web Service | Detect unusual outbound transfers; channel rarely documented |
 
 ## 9. Recommendations
 
-- Validate claims with logs, EDR, IAM and backups.
-- Enforce MFA, segmentation, offline backups and secret rotation.
+- **Government and essential operators:** identify priority services, segment management planes, and test offline continuity procedures.
+- **Finance and telecommunications:** require phishing-resistant MFA, monitor exports, and govern third-party access.
+- **Manufacturing:** separate IT, production, and maintenance; remove shared accounts.
+- **Education and healthcare:** reduce portal exposure, inventory document repositories, and prepare data-subject notification.
+- **All organisations:** regularly assess Internet exposure and close unnecessary remote access.
 
 ## 10. SOC and tactical recommendations
 
-- Correlate EDR, VPN, IAM, DNS, proxy, WAF and application logs.
+| Qualification | Action |
+|---|---|
+| **Observed** | Use organisations, domains, dates, and actors in the dataset to prioritise correlation across IAM, EDR, VPN, WAF, DNS, proxy, and mail telemetry. |
+| **Assumption** | Hunt for access from unusual infrastructure, credential reuse, account creation, privilege escalation, and bulk exports. |
+| **Preventive** | Deploy Sigma or equivalent detections for LSASS dumping, obfuscated PowerShell, backup deletion, and mass encryption. |
+| **Preventive** | Use proxy, DNS, EDR, or Suricata telemetry to monitor unusual outbound transfers and unexpected use of tools such as Rclone. |
 
 ## 11. Strategic recommendations
 
-- Maintain an asset inventory and test response and restoration plans.
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritise ransomware resilience in Southern Africa and data-exposure risk in North and West Africa. |
+| 2 | **Assumption** | Audit access scenarios involving identities, suppliers, and edge devices without presenting them as historical fact. |
+| 3 | **Preventive** | Reduce the external attack surface, close unnecessary RDP exposure, and promptly patch Edge/VPN appliances. |
+| 4 | **Preventive** | Maintain critical backups that are immutable, isolated, and recovery-tested. |
+| 5 | **Preventive** | Following credential exposure, revoke sessions, rotate secrets, and hunt for reuse. |
 
 ## 12. Conclusion
 
-The 2024 record confirms a cyber landscape combining highly visible ransomware pressure with a more distributed circulation of exposed data and access. These figures describe publications observed by AFRINTEL; they support monitoring, technical validation and defensive prioritisation without treating a claim as a confirmed compromise.
+The 2024 dataset shows strong and visible ransomware pressure alongside persistent circulation of data and access with a different geographic profile. Its purpose is not to produce a definitive league table. It provides a working base to verify exposure, prioritise collection, and turn dark-web, darknet, and OSINT signals into measured defensive decisions.
 
-**AFRINTEL** - TLP:CLEAR
+The main limitation remains the shortage of public DFIR reporting. While that gap persists, AFRINTEL must continue to document precisely what was observed, isolate assumptions, and leave unknowns visible.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

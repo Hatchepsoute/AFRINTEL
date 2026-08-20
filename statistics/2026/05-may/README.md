@@ -73,7 +73,7 @@ These 54 incidents have a single identified victim country. The 3 multi-country 
 | **Subtotal (direct)** | **54** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Direct incidents by country - May 2026"
     x-axis ["Egypt","South Africa","Morocco","Tunisia","Nigeria","Algeria","Tanzania","Ethiopia","Ghana","Ivory Coast","Kenya","Senegal"]
     y-axis "Incidents" 0 --> 17
@@ -143,7 +143,7 @@ xychart-beta
 ### Ransomware by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware by country - May 2026"
     x-axis ["Egypt","Nigeria","Tunisia","South Africa","Ghana","Senegal","Ivory Coast"]
     y-axis "Ransomware" 0 --> 8
@@ -153,7 +153,7 @@ xychart-beta
 ### Data leaks by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Data leaks by country (direct) - May 2026"
     x-axis ["South Africa","Egypt","Morocco","Tunisia","Algeria","Tanzania","Ethiopia","Kenya"]
     y-axis "Data leaks" 0 --> 14
@@ -174,7 +174,7 @@ xychart-beta
 > Multi-country incidents are counted once in the global total of 57. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 18 across 4 regions.
 
 ```mermaid
-xychart-beta
+xychart
     title "Direct incidents by region - May 2026"
     x-axis ["North Africa","Southern Africa","West Africa","East Africa"]
     y-axis "Direct incidents" 0 --> 32
@@ -206,7 +206,7 @@ xychart-beta
 | **Total** | **57** | **100%** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Sector distribution - May 2026"
     x-axis ["Government","HR","Industry","E-commerce","Education","Finance","Telecom","Energy","Food","Transport","NGO","Hospitality","Healthcare","Sports","Data aggregation","Business services"]
     y-axis "Incidents" 0 --> 21
@@ -231,7 +231,7 @@ xychart-beta
 | Records outside displayed ranking | 27 | Mixed |
 
 ```mermaid
-xychart-beta
+xychart
     title "Most active threat actors - May 2026"
     x-axis ["Databasehooligan","404Crew CT","TheGentlemen","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","anisanas2","Outside ranking"]
     y-axis "Incidents" 0 --> 30

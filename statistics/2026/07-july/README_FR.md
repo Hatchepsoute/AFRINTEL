@@ -105,16 +105,17 @@ Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géo
 |---|---|---:|---:|---:|---|
 | Afrique du Nord | Égypte, Tunisie, Maroc, Algérie | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Afrique australe | Afrique du Sud, Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l'Ouest et centrale | Nigeria, Côte d'Ivoire, Ghana, Cameroun | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| Afrique de l'Ouest | Nigeria, Côte d'Ivoire, Ghana | **9** | 5 | 4 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| Afrique centrale | Cameroun | **1** | 1 | 0 | 🟧 |
 | Afrique de l'Est | Kenya, Soudan du Sud | **2** | 2 | 0 | 🟧🟧 |
 | **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
 ~~~mermaid
 xychart
     title "Occurrences géographiques par région - juillet 2026"
-    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
+    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
-    bar [24,7,10,2]
+    bar [24,7,9,1,2]
 ~~~
 
 ## 5. Répartition sectorielle
@@ -185,6 +186,6 @@ Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chac
 
 ## 9. Conclusion
 
-Juillet 2026 compte **42 incidents documentés** et **43 occurrences géographiques**. Les ransomware et les fuites de données sont à parts égales, tandis que six offres de vente d'accès ajoutent un risque spécifique lié au courtage d'accès. L'Afrique du Nord concentre les fuites et les accès ; l'Afrique du Sud et l'Afrique de l'Ouest et centrale présentent une pression ransomware plus forte.
+Juillet 2026 compte **42 incidents documentés** et **43 occurrences géographiques**. Les ransomware et les fuites de données sont à parts égales, tandis que six offres de vente d'accès ajoutent un risque spécifique lié au courtage d'accès. L'Afrique du Nord concentre les fuites et les accès ; l'Afrique du Sud et l'Afrique de l'Ouest présentent une pression ransomware plus forte, tandis que l'Afrique centrale compte une occurrence ransomware.
 
 Pour le détail, consulter les données mensuelles relatives aux victimes et incidents dans [CyberAttackAfrica/2026/07-july/victims_FR.md](../../../CyberAttackAfrica/2026/07-july/victims_FR.md).

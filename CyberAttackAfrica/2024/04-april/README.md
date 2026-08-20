@@ -1,159 +1,156 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-April%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-April%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - April 2024: Energy and crypto assets targeted across the continent
+# AFRINTEL CTI Report — April 2024
 
-👉🏾 [Version française disponible ici](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-### 1. Executive summary
+## 1. Executive summary
 
-In April 2024, Africa recorded **6 documented victims**: **5 ransomware claims** across 5 different countries, plus **1 data leak claim** in Burkina Faso. The month is notable for two high-profile ransomware targets: a **major Libyan oil & gas joint venture** (~1 TB exfiltrated) and a **cryptocurrency exchange platform** in the Seychelles. The SpaceBears group appears for the first time with two simultaneous claims, alongside an unrelated data leak claim against a Burkinabe government employment agency.
+April 2024 contains **6 incidents**: **5 ransomware claims** and **1 data leak**. South Africa accounts for two publications, while four other countries appear once each. The corpus spans four regions, including the Indian Ocean through the Remitano publication in Seychelles.
 
-👉🏾 [Victims list](./victims.md)
+SpaceBears is the only actor associated with two organizations. Simultaneous publication is not enough to establish a coordinated campaign. The ONEF leak in Burkina Faso is the month's only incident supported by a data sample in the corpus.
 
-**Key figures:**
-- 🔹 **6 victims** identified
-- 🔹 **5 active sources**: InCransom (1), Hunters (1), SpaceBears (2), RansomHub (1), Pedi (1)
-- 🔹 **Countries affected**: South Africa (2), Seychelles (1), Morocco (1), Libya (1), Burkina Faso (1)
-- 🔹 **Sectors**: Banking/Crypto, Media & Publishing, Manufacturing/Packaging, Technologies, Oil & Gas, Government/Employment and Training
-- 🔹 **Incident types**: Ransomware (5), Data Leak (1)
-### Monthly aggregate exposure view
+See [victims.md](./victims.md).
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (16.7% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+## 2. Methodology
 
+This report covers publications assigned to April 2024. Incidents are deduplicated by organization and separated into AFRINTEL's four categories. Technical findings are limited to visible source evidence; practices commonly associated with a group are not treated as facts of the month.
 
----
+Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-### 2. Attack timeline
+## 3. Global overview
 
-| Date | Victim | Country | Actor / Group | Type |
-|------|--------|---------|----------------|------|
-| April 4 | Remitano (Cryptocurrency Exchange) | Seychelles | InCransom | Ransomware |
-| April 13 | Caxton and CTP Publishers and Printers | South Africa | Hunters | Ransomware |
-| April 23 | ONEF (National Observatory for Employment and Training) | Burkina Faso | Pedi | Data leak (SQL sample) |
-| April 29 | SM Emballage | Morocco | SpaceBears | Ransomware |
-| April 29 | Thinkadam | South Africa | SpaceBears | Ransomware |
-| April 30 | Mellitah Oil & Gas (Eni / NOC JV) | Libya | RansomHub | Ransomware |
+| Indicator | Value |
+|---|---:|
+| Incidents / Countries | **6 / 5** |
+| Ransomware | **5** |
+| Data leaks | **1** |
+| Access sales / Defacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Attacks recorded in this file - April 2024
-    April 4 : Remitano (Seychelles) - InCransom
-    April 13 : Caxton & CTP Publishers (South Africa) - Hunters
-    April 23 : ONEF (Burkina Faso) - Pedi
-    April 29 : SM Emballage (Morocco) - SpaceBears
-               Thinkadam (South Africa) - SpaceBears
-    April 30 : Mellitah Oil & Gas (Libya) - RansomHub
-```
+### Country ranking
 
----
-
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country | Number of attacks |
-|---------|-----------------|
-| South Africa | 2 |
-| Seychelles | 1 |
-| Morocco | 1 |
-| Libya | 1 |
-| Burkina Faso | 1 |
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇿🇦 South Africa | 2 | 2 | 0 |
+| 🇧🇫 Burkina Faso | 1 | 0 | 1 |
+| 🇱🇾 Libya | 1 | 1 | 0 |
+| 🇲🇦 Morocco | 1 | 1 | 0 |
+| 🇸🇨 Seychelles | 1 | 1 | 0 |
+| **Total** | **6** | **5** | **1** |
 
 ```mermaid
-pie
-    title Distribution by country - April 2024 (6 victims)
-    "South Africa" : 2
-    "Seychelles" : 1
-    "Morocco" : 1
-    "Libya" : 1
-    "Burkina Faso" : 1
+xychart
+    title "Incidents by country — April 2024"
+    x-axis ["ZA","BF","LY","MA","SC"]
+    y-axis "Incidents" 0 --> 3
+    bar [2,1,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector | Count |
-|--------|-------|
-| Banking / Crypto assets | 1 |
-| Media & Publishing | 1 |
-| Manufacturing / Industrial Packaging | 1 |
-| Technologies | 1 |
-| Oil & Gas / Energy | 1 |
-| Government / Employment and Training | 1 |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - April 2024"
-    x-axis ["Banking/Crypto", "Media", "Manufacturing", "Technologies", "Oil & Gas", "Government/Employment"]
-    y-axis "Number of attacks" 0 to 2
-    bar [1, 1, 1, 1, 1, 1]
+pie showData
+    title Incident-type distribution — April 2024
+    "Ransomware" : 5
+    "Data leak" : 1
 ```
 
-#### 3.3 Ransomware groups
+### Regional distribution
 
-| Ransomware group | Number of attacks |
-|-----------------|-----------------|
+| Region | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| Southern Africa | 2 | 2 | 0 |
+| North Africa | 2 | 2 | 0 |
+| West Africa | 1 | 0 | 1 |
+| Indian Ocean | 1 | 1 | 0 |
+| **Total** | **6** | **5** | **1** |
+
+### Normalized sector distribution
+
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Finance / Banking | 1 | 16.7% |
+| Media / Entertainment | 1 | 16.7% |
+| Government / Administration | 1 | 16.7% |
+| Manufacturing / Industry | 1 | 16.7% |
+| Technology / IT | 1 | 16.7% |
+| Oil & Energy | 1 | 16.7% |
+| **Total** | **6** | **100%** |
+
+### Most visible actors
+
+| Actor | Incidents |
+|---|---:|
 | SpaceBears | 2 |
-| InCransom | 1 |
-| Hunters | 1 |
-| RansomHub | 1 |
+| Hunters, INC Ransom, Pedi, RansomHub | 1 each |
 
-#### 3.4 Data leak sources
+## 4. Detailed analysis by incident type
 
-| Source | Number of claims |
-|--------|-----------------|
-| Pedi | 1 |
+### 4.1 Ransomware
 
-```mermaid
-gantt
-    title Active Ransomware Groups - April 2024
-    dateFormat X
-    axisFormat %s
-    section SpaceBears
-    SpaceBears : 0, 2
-    section InCransom
-    InCransom : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section RansomHub
-    RansomHub : 0, 1
-```
+The publications concern Remitano, Caxton and CTP, SM Emballage, Thinkadam, and Mellitah Oil & Gas. Finance and energy increase the potential impact, but no public source in the corpus confirms disruption, encryption, or exfiltration.
 
----
+### 4.2 Data leak
 
-### 4. Key observations
+The ONEF publication contains a sample attributed to a Burkinabè employment and training body. Available evidence makes a service-related database plausible without establishing completeness or the date of initial access.
 
-- **High-impact energy sector attack**: Mellitah Oil & Gas (Eni/NOC joint venture in Libya) is claimed by RansomHub with approximately **1 TB of exfiltrated data**, the highest-impact claim of the month, involving a strategic energy asset co-owned by an international major.
-- **Cryptocurrency in the crosshairs**: Remitano (Seychelles-registered P2P crypto exchange) is targeted by InCransom. This same victim will be claimed again in August 2024 by a different group (Meow), an early double-claim pattern.
-- **SpaceBears emergence**: the group strikes twice on April 29 (Morocco and South Africa simultaneously), signalling a coordinated campaign or active prospection phase.
-- **Media targeted**: Caxton and CTP Publishers, one of South Africa's largest print/media groups, highlights ransomware actors' interest in organizations holding large consumer datasets.
-- **Burkina Faso data leak claim**: ONEF (National Observatory for Employment and Training), discovered April 23, 2024, concerns a forum publication by the actor `Pedi` presenting a database associated with onef.gov.bf as a free SQL release. The screenshot shows the structure of a news/publication table but does not establish the dataset's authenticity or initial access method. It is not attributed to a ransomware group and is tracked separately as a data leak claim against a Burkinabe public employment institution.
+## 5. Sectoral impact
 
----
+Sector distribution is fully dispersed, with one incident in each of six sectors. This lack of concentration limits broad sector conclusions. Energy, public employment services, and finance nevertheless warrant higher priority because of their functions.
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Apr 2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr"]
-    y-axis "Number of attacks" 0 to 14
-    bar [12, 5, 8, 6]
-```
+## 6. Threat actor profile and risk assessment
 
-### 5. Recommendations
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇿🇦 South Africa | 🔴 High | Two claims in media and technology |
+| 🇱🇾 Libya | 🔴 High | Publication involving an oil joint venture |
+| 🇧🇫 Burkina Faso | 🟠 Medium | Sample-backed leak involving a public body |
+| 🇲🇦 Morocco / 🇸🇨 Seychelles | 🟡 Low to medium | One claim each |
 
-| Domain | Recommended action |
-|--------|--------------------|
-| Oil & Gas / Energy | Assess vendor access controls, implement data loss prevention (DLP), monitor bulk data transfers. |
-| Crypto / Fintech platforms | Enforce MFA on all admin interfaces, monitor API anomalies, prepare incident response plans. |
-| Media & Publishing | Protect subscriber and advertiser databases, segment editorial systems from business IT. |
-| Manufacturing | Audit internet-facing systems, enforce patch management for industrial platforms. |
-| Government / employment and training | ONEF should verify the claim against application and database logs, confirm whether the referenced SQL export is genuine, and rotate any credentials if exposure is confirmed. |
-| All organizations | Track SpaceBears and RansomHub IOCs, both show increasing African activity. |
+## 7. Key trends and intelligence gaps
 
----
+- **Observed — high confidence:** five of six incidents are ransomware claims.
+- **Observed — high confidence:** no sector records more than one incident.
+- **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware cases.
+- **Gap:** the ONEF sample does not validate the full volume or acquisition timeline.
+- **Collection need:** victim confirmation, service status, and later sample publications.
 
-*Report generated from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*
+## 8. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed in the five claims |
+| Preventive | T1490 — Inhibit System Recovery | Backup controls; behavior not observed |
+| Preventive | T1567 — Exfiltration Over Web Service | Outbound monitoring; ONEF channel unknown |
+
+## 9. Recommendations
+
+- **Energy:** segment industrial and administrative environments and test continuity procedures.
+- **Public sector:** review data exports and access to the ONEF application.
+- **Finance and technology:** strengthen privileged access and secret management.
+- **All published victims:** preserve logs and test restoration.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Monitor the explicitly cited assets; no intrusion TTP is confirmed. |
+| **Assumption** | Hunt for abnormal remote-access and privileged-account use around publication dates. |
+| **Preventive** | Detect mass encryption, backup inhibition, database exports, and high-volume transfers. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritize the energy and public services represented in the corpus. |
+| 2 | **Assumption** | Check for a common denominator between the two SpaceBears publications without declaring a campaign. |
+| 3 | **Preventive** | Reduce external exposure, deploy phishing-resistant MFA, and isolate backups. |
+
+## 12. Conclusion
+
+April is a low-volume month with considerable sector diversity. The repeated SpaceBears publications and the presence of sensitive organizations warrant monitoring without exceeding the evidence. ONEF remains the most actionable case for validating data exposure.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

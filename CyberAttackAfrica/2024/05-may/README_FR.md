@@ -1,121 +1,153 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-May%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Mai%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Mai 2024 : Vague de ransomwares en Afrique
+# Rapport CTI AFRINTEL — Mai 2024
 
-👉🏾 [English version available here](./README.md)
----
+👉🏾 [English version](./README.md)
 
+## 1. Résumé exécutif
 
-### 1. Résumé exécutif
+Les **8 incidents** de mai 2024 sont tous des **revendications ransomware**. L’Afrique du Sud et l’Égypte comptent deux publications chacune ; quatre autres pays apparaissent une fois. L’Afrique de l’Ouest, l’Afrique australe et l’Afrique du Nord enregistrent respectivement trois, trois et deux incidents.
 
-En mai 2024, l’Afrique a enregistré **8 nouvelles victimes** documentées d’attaques par ransomware. Le mois a été marqué par la diversité des groupes actifs et une cible inédite : le **Trésor public de Côte d’Ivoire**.
+LockBit3 représente la moitié du corpus. Les secteurs financier et professionnel sont les plus visibles, mais aucun échantillon exploitable n’est documenté dans les sources du mois. Le rapport mesure donc une activité de publication, pas huit compromissions indépendamment confirmées.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
+Voir [victims_FR.md](./victims_FR.md).
 
-**Chiffres clés :**
-- 🔹 **8 victimes** identifiées
-- 🔹 **5 groupes différents** : LockBit3 (4 attaques), RansomHub (1), Hunters (1), Blacksuit (1), ArcusMedia (1)
-- 🔹 **Pays touchés** : Afrique du Sud (2), Égypte (2), Nigeria (1), Namibie (1), Côte d’Ivoire (1), Sénégal (1)
-- 🔹 **Secteurs** : Finance / Trésor (3), Santé (1), Construction (1), Services aux entreprises (1), Conseil IT (1), Services génériques (1)
+## 2. Méthodologie
 
-### Vue agrégée mensuelle de l’exposition
+Le corpus couvre les publications classées en mai 2024. Une organisation équivaut à un incident, même si plusieurs sources la mentionnent. Les huit cas sont conservés sous le statut public correspondant aux preuves disponibles ; aucune technique d’accès ou d’impact n’est inférée depuis le seul nom du groupe.
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **0 fiches** (0.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé avec [victims.md](./victims.md).
 
----
+## 3. Vue globale
 
-### 2. Chronologie des attaques
+| Indicateur | Valeur |
+|---|---:|
+| Incidents / Pays | **8 / 6** |
+| Ransomware | **8** |
+| Fuite / Vente d’accès / Défacement | **0 / 0 / 0** |
 
-| Date       | Victime                          | Pays             | Groupe ransomware |
-|------------|----------------------------------|------------------|-------------------|
-| 6 mai      | Nestoil                          | Nigeria          | Blacksuit         |
-| 6 mai      | Elarabygroup                     | Égypte           | LockBit3          |
-| 7 mai      | Lenmed                           | Afrique du Sud   | LockBit3          |
-| 7 mai      | Kamo jou trading                 | Afrique du Sud   | RansomHub         |
-| 9 mai      | Eif.na                           | Namibie          | LockBit3          |
-| 13 mai     | Trésor public ivoirien           | Côte d’Ivoire    | Hunters           |
-| 16 mai     | Egyptian sudanese                | Égypte           | ArcusMedia        |
-| 25 mai     | Sysroad                          | Sénégal          | LockBit3          |
+### Classement par pays
 
-
----
-
-### 3. Analyse des victimes
-
-#### 3.1 Par pays
-
-| Pays               | Nombre d’attaques |
-|--------------------|------------------|
-| Afrique du Sud     | 2                |
-| Égypte             | 2                |
-| Nigeria            | 1                |
-| Namibie            | 1                |
-| Côte d’Ivoire      | 1                |
-| Sénégal            | 1                |
+| Pays | Incidents |
+|---|---:|
+| 🇿🇦 Afrique du Sud | 2 |
+| 🇪🇬 Égypte | 2 |
+| 🇨🇮 Côte d’Ivoire | 1 |
+| 🇳🇦 Namibie | 1 |
+| 🇳🇬 Nigeria | 1 |
+| 🇸🇳 Sénégal | 1 |
+| **Total** | **8** |
 
 ```mermaid
-pie
-    title Répartition par pays (mai 2024)
-    "Afrique du Sud" : 2
-    "Égypte" : 2
-    "Nigeria" : 1
-    "Namibie" : 1
-    "Côte d'Ivoire" : 1
-    "Sénégal" : 1
+xychart
+    title "Incidents par pays — mai 2024"
+    x-axis ["ZA","EG","CI","NA","NG","SN"]
+    y-axis "Incidents" 0 --> 3
+    bar [2,2,1,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur                        | Nombre |
-|--------------------------------|--------|
-| Finance / Trésor public        | 3      |
-| Services de santé              | 1      |
-| Construction                   | 1      |
-| Services aux entreprises       | 1      |
-| Conseil en technologies        | 1      |
-| Services génériques            | 1      |
-
-#### 3.3 Groupes ransomware
-
-| Groupe ransomware | Nombre d’attaques |
-|------------------|------------------|
-| LockBit3         | 4                |
-| RansomHub        | 1                |
-| Hunters          | 1                |
-| Blacksuit        | 1                |
-| ArcusMedia       | 1                |
 
 ```mermaid
-pie
-    title Groupes actifs - Mai 2024
-    "LockBit3" : 4
-    "RansomHub" : 1
-    "Hunters" : 1
-    "Blacksuit" : 1
-    "ArcusMedia" : 1
+pie showData
+    title Répartition par type — mai 2024
+    "Ransomware" : 8
 ```
----
 
-### 4. Points d’attention
+### Répartition régionale
 
-- **LockBit3** reste majoritaire (50% des attaques du mois).
-- **Cible gouvernementale** : le Trésor public ivoirien (Hunters) montre l’intérêt des cybercriminels pour les institutions financières étatiques.
-- **Secteur santé** : Lenmed (Afrique du Sud) est la seule cible santé du mois, mais récurrente (déjà touchée en mai et août 2024).
-- **Géographie** : 6 pays distincts, sans concentration excessive.
+| Région | Incidents |
+|---|---:|
+| Afrique de l’Ouest | 3 |
+| Afrique australe | 3 |
+| Afrique du Nord | 2 |
+| **Total** | **8** |
 
----
+### Répartition sectorielle normalisée
 
-### 5. Recommandations pour mai 2024
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Finance / Banque | 3 | 37,5 % |
+| Services professionnels / Entreprises | 2 | 25,0 % |
+| Construction / Immobilier | 1 | 12,5 % |
+| Santé / Médical | 1 | 12,5 % |
+| Technologies / Informatique | 1 | 12,5 % |
+| **Total** | **8** | **100 %** |
 
-| Domaine                        | Action recommandée |
-|--------------------------------|--------------------|
-| Institutions financières       | Renforcer la surveillance des accès privilégiés et la segmentation des réseaux. |
-| Services de santé              | Mettre en place une sauvegarde hors ligne quotidienne. |
-| Entreprises de conseil IT      | Auditer les accès RDP et VPN, activer le MFA. |
+### Acteurs les plus visibles
 
-*Rapport CTI des données OSINT AFRINTEL - Diffusion libre (TLP:CLEAR)*  
+| Acteur | Incidents |
+|---|---:|
+| LockBit3 | 4 |
+| Arcus Media, BlackSuit, Hunters, RansomHub | 1 chacun |
+
+## 4. Analyse détaillée par type d’incident
+
+### 4.1 Ransomware
+
+Les publications concernent Nestoil, Elaraby Group, Lenmed, Kamo Jou Trading, EIF Namibia, le Trésor public de Côte d’Ivoire, Egyptian Sudanese et Sysroad. Les services financiers regroupent trois cas, dont une administration financière. Aucun élément public du corpus n’établit un chiffrement, une interruption ou une exfiltration effective.
+
+### 4.2 Fuites, ventes d’accès et défacement
+
+Aucun incident de ces trois catégories n’est recensé en mai. Cette absence décrit uniquement les sources suivies par AFRINTEL pendant la période.
+
+## 5. Impact sectoriel
+
+La finance arrive en tête avec trois incidents, devant les services professionnels. Le Trésor public ivoirien et Lenmed présentent les enjeux les plus sensibles en raison de leurs fonctions. L’absence d’échantillon empêche toutefois de qualifier les données potentiellement concernées ou l’ampleur réelle des événements.
+
+## 6. Profil des acteurs et évaluation du risque
+
+| Périmètre | Niveau | Justification |
+|---|---|---|
+| 🇿🇦 Afrique du Sud | 🔴 Élevé | Deux publications, dont un réseau de santé |
+| 🇨🇮 Côte d’Ivoire | 🔴 Élevé | Publication visant le Trésor public |
+| 🇪🇬 Égypte | 🟠 Moyen | Deux revendications sans élément technique public |
+| 🇳🇦 Namibie / 🇳🇬 Nigeria / 🇸🇳 Sénégal | 🟡 Faible à moyen | Une revendication chacune |
+
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** le corpus est exclusivement composé de revendications ransomware.
+- **Observé — confiance élevée :** LockBit3 est associé à quatre incidents sur huit.
+- **Lacune :** aucun rapport DFIR public ni échantillon exploitable n’a été identifié dans les sources consultées.
+- **Lacune :** l’état opérationnel des organisations et l’existence d’une exfiltration restent inconnus.
+- **Collecte attendue :** communications victimes, notifications réglementaires et mises à jour des sites de publication.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Utilisation |
+|---|---|---|
+| Préventif | T1486 — Data Encrypted for Impact | Surveillance du chiffrement ; aucune confirmation technique publique |
+| Préventif | T1490 — Inhibit System Recovery | Surveillance des sauvegardes et copies de restauration |
+| Hypothèse | T1078 — Valid Accounts | Scénario d’accès à vérifier ; aucun compte compromis observé |
+
+## 9. Recommandations
+
+- **Finance :** imposer MFA résistante au phishing, revoir les accès distants et contrôler les exports.
+- **Santé :** isoler les applications cliniques et tester les procédures de continuité.
+- **Prestataires IT :** séparer les accès clients et faire tourner les secrets à privilèges.
+- **Toutes les organisations :** maintenir des sauvegardes immuables vérifiées par restauration.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Suivre les huit organisations publiées ; aucune TTP technique n’est confirmée. |
+| **Hypothèse** | Rechercher des accès distants inhabituels et des créations d’archives avant les dates de publication. |
+| **Préventif** | Alerter sur le chiffrement massif, la suppression de sauvegardes et l’usage anormal d’outils d’administration. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Prioriser la finance, la santé et les prestataires technologiques présents dans le corpus. |
+| 2 | **Hypothèse** | Vérifier l’exposition des identités et équipements Edge sans présenter ces vecteurs comme observés. |
+| 3 | **Préventif** | Mettre en œuvre ASM, MFA résistante au phishing et sauvegardes isolées. |
+
+## 12. Conclusion
+
+Mai montre une forte homogénéité de type, mais une faible profondeur technique publique. La concentration de LockBit3 et la présence d’organisations financières justifient une vigilance renforcée ; elles ne suffisent pas à établir un mode opératoire commun. La priorité reste la validation interne et la résilience.
+
+**AFRINTEL — TLP:CLEAR**
+
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

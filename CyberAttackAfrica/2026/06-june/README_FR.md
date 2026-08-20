@@ -186,7 +186,8 @@ pie
 | :--- | :---: | :---: | :---: | :--- |
 | **Afrique du Nord** | **24** (45,3 %) | 8 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Afrique australe** | **11** (20,8 %) | 6 | 5 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| **Afrique de l'Ouest et centrale** | **9** (17,0 %) | 2 | 7 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique de l'Ouest** | **7** (13,2 %) | 2 | 5 | 🟧🟧 🟦🟦🟦🟦🟦 |
+| **Afrique centrale** | **2** (3,8 %) | 1 | 1 | 🟧 🟦 |
 | **Afrique de l'Est** | **7** (13,2 %) | 1 | 6 | 🟧 🟦🟦🟦🟦🟦🟦 |
 | **Océan Indien** | **2** (3,8 %) | 2 | 0 | 🟧🟧 |
 | **Total** | **53** | **20** | **33** | |
@@ -194,7 +195,8 @@ pie
 *Légende : 🟧 Ransomware | 🟦 Fuites de données.
 - Afrique du Nord : Maroc, Égypte, Tunisie, Libye, Algérie. 
 - Afrique australe : Afrique du Sud, Botswana, Zimbabwe, Zambie, Malawi. 
-- Afrique de l'Ouest et centrale : Nigéria, Gabon, Sénégal, Sierra Leone, Angola. 
+- Afrique de l'Ouest : Nigéria, Sénégal, Sierra Leone.
+- Afrique centrale : Gabon, Angola.
 - Afrique de l'Est : Kenya, Tanzanie, Éthiopie. 
 - Océan Indien : Maurice, Mayotte. 
 - L'Angola est classé ici en Afrique centrale.*

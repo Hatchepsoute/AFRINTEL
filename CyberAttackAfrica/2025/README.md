@@ -7,7 +7,7 @@
 ---
 ## 1. Executive summary
 
-AFRINTEL recorded **197 records** in 2025: **122 ransomware claims (61.9%)**, **72 data leaks (36.5%)**, **3 access sales (1.5%)** and **no defacements**. The observed volume was strongly concentrated in North Africa, with **96 records**, followed by Southern Africa (**43**), West and Central Africa (**38**) and East Africa (**20**).
+AFRINTEL recorded **197 records** in 2025: **122 ransomware claims (61.9%)**, **72 data leaks (36.5%)**, **3 access sales (1.5%)** and **no defacements**. The observed volume was strongly concentrated in North Africa, with **96 records**, followed by Southern Africa (**43**), West Africa (**33**), East Africa (**20**) and Central Africa (**5**).
 
 The three most represented countries were **Egypt (33)**, **Morocco (31)** and **South Africa (30)**. This concentration does not necessarily indicate a higher level of compromise in those countries; it reflects the scope of the documented publications and claims collected by AFRINTEL.
 
@@ -198,18 +198,19 @@ Legend: 🟧 Ransomware | 🟦 Data leaks | 🟨 Access sales
 | :--- | ---: | ---: | ---: | ---: |
 | North Africa | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Southern Africa | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| West and Central Africa | 38 | 16 | 22 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| West Africa | 33 | 13 | 20 | 🟧🟧🟧 🟦🟦🟦🟦 |
+| Central Africa | 5 | 3 | 2 | 🟧 🟦 |
 | East Africa | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart
     title "Occurrences by region - 2025"
-    x-axis ["NA","SA","WC","EA"]
+    x-axis ["NA","SA","WA","CA","EA"]
     y-axis "Occurrences" 0 --> 97
-    bar [96,43,38,20]
+    bar [96,43,33,5,20]
 ```
 
-Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
 
 ### Sector distribution
 

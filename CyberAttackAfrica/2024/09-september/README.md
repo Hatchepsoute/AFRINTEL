@@ -1,133 +1,153 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-September%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-September%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - September 2024: Quiet month with 5 victims across 5 countries
+# AFRINTEL CTI Report — September 2024
 
-👉🏾 [Version française disponible ici](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-### 1. Executive summary
+## 1. Executive summary
 
-September 2024 records **5 documented incidents** across 5 distinct countries, the lowest monthly count since January 2024. Each attack involves a different ransomware group, suggesting independent opportunistic campaigns rather than a coordinated wave. West and Central Africa appear for the first time in a single month alongside North Africa and Indian Ocean targets.
+September 2024 contains **5 incidents** across five countries: **4 ransomware claims** and **1 data leak**. No actor appears more than once. West Africa records two incidents; Central Africa, North Africa, and the Indian Ocean record one each.
 
-👉🏾 [Victims list](./victims.md)
+The Nigerian Navy publication is the most sensitive case, but it refers to a leak dated November 8, 2020, by the source. It should therefore be read as recirculation or renewed observation of older content, not as an intrusion that occurred in September 2024.
 
-**Key figures:**
-- 🔹 **5 victims** identified
-- 🔹 **5 source accounts/groups**: Hunters (1), SpaceBears (1), ArcusMedia (1), Orca (1), NizaarFarah (1)
-- 🔹 **Countries affected**: Senegal (1), Cameroon (1), Mauritius (1), Tunisia (1), Nigeria (1)
-- 🔹 **Sectors**: Technologies, Government/Social Security, Telecommunications, Manufacturing, Defense/National Security
+See [victims.md](./victims.md).
 
-### Monthly aggregate exposure view
+## 2. Methodology
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (20.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+This report covers publications assigned to September 2024. AFRINTEL's discovery date is kept separate from the leak date stated by the source. The five incidents are deduplicated by organization and the older republication is explicitly identified.
 
----
+Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-### 2. Attack timeline
+## 3. Global overview
 
-| Date | Victim | Country | Ransomware group |
-|------|--------|---------|-----------------|
-| September 6 | Sesam Informatics | Senegal | Hunters |
-| September 7 | Nigerian Navy (navy.mil.ng) | Nigeria | NizaarFarah (source account) |
-| September 12 | CNPS Cameroun | Cameroon | SpaceBears |
-| September 15 | Emtel | Mauritius | ArcusMedia |
-| September 16 | Excelplast Tunisie | Tunisia | Orca |
+| Indicator | Value |
+|---|---:|
+| Incidents / Countries | **5 / 5** |
+| Ransomware | **4** |
+| Data leaks | **1** |
+| Access sales / Defacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Ransomware Attacks in Africa - September 2024
-    September 6 : Sesam Informatics (Senegal) - Hunters
-    September 7 : Nigerian Navy (Nigeria) - NizaarFarah
-    September 12 : CNPS Cameroun (Cameroon) - SpaceBears
-    September 15 : Emtel (Mauritius) - ArcusMedia
-    September 16 : Excelplast Tunisie (Tunisia) - Orca
-```
+### Country ranking
 
----
-
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country | Number of attacks |
-|---------|-----------------|
-| Senegal | 1 |
-| Cameroon | 1 |
-| Mauritius | 1 |
-| Tunisia | 1 |
-| Nigeria | 1 |
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇨🇲 Cameroon | 1 | 1 | 0 |
+| 🇲🇺 Mauritius | 1 | 1 | 0 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 |
+| 🇸🇳 Senegal | 1 | 1 | 0 |
+| 🇹🇳 Tunisia | 1 | 1 | 0 |
+| **Total** | **5** | **4** | **1** |
 
 ```mermaid
-pie
-    title Distribution by country - September 2024 (5 victims)
-    "Senegal" : 1
-    "Cameroon" : 1
-    "Mauritius" : 1
-    "Tunisia" : 1
-    "Nigeria" : 1
+xychart
+    title "Incidents by country — September 2024"
+    x-axis ["CM","MU","NG","SN","TN"]
+    y-axis "Incidents" 0 --> 2
+    bar [1,1,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector | Count |
-|--------|-------|
-| Technologies | 1 |
-| Government / Social Security | 1 |
-| Telecommunications | 1 |
-| Manufacturing (Plastics) | 1 |
-| Defense / National Security | 1 |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - September 2024"
-    x-axis ["Technologies", "Government", "Telecom", "Manufacturing", "Defense"]
-    y-axis "Number of attacks" 0 to 2
-    bar [1, 1, 1, 1, 1]
+pie showData
+    title Incident-type distribution — September 2024
+    "Ransomware" : 4
+    "Data leak" : 1
 ```
 
-#### 3.3 Ransomware groups
+### Regional distribution
 
-| Ransomware group | Number of attacks |
-|-----------------|-----------------|
-| Hunters | 1 |
-| SpaceBears | 1 |
-| ArcusMedia | 1 |
-| Orca | 1 |
+| Region | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| West Africa | 2 | 1 | 1 |
+| Central Africa | 1 | 1 | 0 |
+| North Africa | 1 | 1 | 0 |
+| Indian Ocean | 1 | 1 | 0 |
+| **Total** | **5** | **4** | **1** |
 
----
+### Normalized sector distribution
 
-### 4. Key observations
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Technology / IT | 1 | 20% |
+| Government / Administration | 1 | 20% |
+| Telecommunications | 1 | 20% |
+| Manufacturing / Industry | 1 | 20% |
+| Defense / Security | 1 | 20% |
+| **Total** | **5** | **100%** |
 
-- **Sharp activity drop**: after August's record of 15 victims, September falls back to 5, the largest single-month decline of the year. This may reflect summer campaign fatigue or a tactical pause by major groups.
-- **CNPS Cameroon, social security targeted**: SpaceBears claims the national social security body of Cameroon, a sensitive institution holding employment and social benefit records for millions of workers.
-- **Emtel (Mauritius)**: ArcusMedia's claim against the leading Mauritian telecom operator signals growing interest in Indian Ocean island connectivity providers.
-- **Nigerian Navy claim**: a source account (NizaarFarah) publishes a screenshot referencing confidential files and email logins allegedly tied to the Nigerian Navy, with a claimed leak date of November 8, 2020. AFRINTEL did not collect or reproduce the underlying files or credentials; the claim remains unverified.
-- **Geographic diversity**: 5 victims in 5 different countries with 5 different source accounts/groups, no dominant actor this month.
-- **Orca first African appearance**: the group claims Excelplast Tunisie, marking its first documented claim on the African continent.
+### Actors and sources
 
----
+| Actor or source | Incidents |
+|---|---:|
+| Arcus Media, Hunters, Orca, SpaceBears, NizaarFarah | 1 each |
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Sep 2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"]
-    y-axis "Number of attacks" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 15, 5]
-```
+## 4. Detailed analysis by incident type
 
-### 5. Recommendations
+### 4.1 Ransomware
 
-| Domain | Recommended action |
-|--------|--------------------|
-| Government / Social security | Audit access to citizen databases, enforce MFA on all administrative portals, monitor for bulk data exfiltration. |
-| Telecommunications | Harden management interfaces, segment core network from IT, monitor for subscriber data compromise. |
-| Manufacturing | Review internet-facing systems exposure, enforce endpoint protection on production networks. |
-| All organizations | Track ArcusMedia and Orca as emerging groups with new African activity. |
+Sesam Informatics, CNPS Cameroon, Emtel, and Excelplast were published by four different actors. Their sectors and countries are not coherent enough to support a shared campaign or targeting conclusion.
 
----
+### 4.2 Data leak
 
-*Report from AFRINTEL OSINT data . Free distribution (TLP:CLEAR)*
+The Nigerian Navy source displays references to files and credentials, but AFRINTEL did not collect or reproduce the underlying content. Its age reduces the case's value as a measure of new activity without removing the risk posed by recirculated sensitive data.
+
+## 5. Sectoral impact
+
+Each sector appears once. Defense carries the highest sensitivity, while telecommunications and social security add continuity and personal-data concerns. The small corpus requires individual handling of each case.
+
+## 6. Threat actor profile and risk assessment
+
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇳🇬 Nigeria | 🔴 High | Older publication attributed to a military institution |
+| 🇨🇲 Cameroon / 🇲🇺 Mauritius | 🟠 Medium | Social security and telecommunications |
+| 🇸🇳 Senegal / 🇹🇳 Tunisia | 🟡 Low to medium | One claim each with no public sample |
+
+## 7. Key trends and intelligence gaps
+
+- **Observed — high confidence:** five incidents, five countries, and five distinct actors or sources.
+- **Observed — high confidence:** the Nigerian Navy leak is source-dated to 2020.
+- **Gap:** no public DFIR report was identified in the sources reviewed for the four ransomware claims.
+- **Gap:** authenticity, scope, and current circulation of the Nigerian Navy data remain unknown.
+- **Collection need:** renewed observation of the publication, institutional confirmation, and technical indicators.
+
+## 8. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed |
+| Preventive | T1490 — Inhibit System Recovery | Recovery-mechanism monitoring |
+| Assumption | T1078 — Valid Accounts | Risk linked to advertised credentials; validity unknown |
+
+## 9. Recommendations
+
+- **Defense:** invalidate exposed accounts if the leak is confirmed and monitor republication.
+- **Telecommunications:** segment administration and test continuity.
+- **Social security:** monitor record access and prepare notification procedures.
+- **All organizations:** preserve logs and test backups.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Monitor cited accounts and domains; no intrusion TTP is confirmed. |
+| **Assumption** | Hunt for reuse of older credentials and abnormal logins to exposed services. |
+| **Preventive** | Detect mass encryption, backup inhibition, exports, and unusual outbound transfers. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Treat Nigerian Navy republication as a risk from potentially reusable older data. |
+| 2 | **Assumption** | Assess identity exposure without assuming current credential validity. |
+| 3 | **Preventive** | Deploy phishing-resistant MFA, password rotation, and immutable backups. |
+
+## 12. Conclusion
+
+September is low-volume and highly dispersed. Its main lesson is not increased threat activity but the persistence of older data in criminal circulation. Response should separate ransomware resilience from durable invalidation of exposed credentials.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

@@ -7,7 +7,7 @@
 ---
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **197 fiches** en 2025 : **122 revendications ransomware (61,9 %)**, **72 fuites de données (36,5 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest et centrale (**38**) et l’Afrique de l’Est (**20**).
+AFRINTEL a recensé **197 fiches** en 2025 : **122 revendications ransomware (61,9 %)**, **72 fuites de données (36,5 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest (**33**), l’Afrique de l’Est (**20**) et l’Afrique centrale (**5**).
 
 Les trois pays les plus représentés sont l’**Égypte (33)**, le **Maroc (31)** et l’**Afrique du Sud (30)**. Cette concentration ne traduit pas nécessairement un niveau de compromission supérieur dans ces pays : elle reflète le périmètre des publications et revendications documentées par AFRINTEL.
 
@@ -198,18 +198,19 @@ Légende : 🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d’accès
 | :--- | ---: | ---: | ---: | ---: |
 | Afrique du Nord | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Afrique australe | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l’Ouest et centrale | 38 | 16 | 22 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
+| Afrique de l’Ouest | 33 | 13 | 20 | 🟧🟧🟧 🟦🟦🟦🟦 |
+| Afrique centrale | 5 | 3 | 2 | 🟧 🟦 |
 | Afrique de l’Est | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart
     title "Occurrences par région - 2025"
-    x-axis ["NA","SA","WC","EA"]
+    x-axis ["NA","SA","AO","AC","AE"]
     y-axis "Occurrences" 0 --> 97
-    bar [96,43,38,20]
+    bar [96,43,33,5,20]
 ```
 
-Légende : NA = Afrique du Nord ; SA = Afrique australe ; WC = Afrique de l’Ouest et centrale ; EA = Afrique de l’Est
+Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ouest ; AC = Afrique centrale ; AE = Afrique de l’Est
 
 ### Répartition sectorielle
 

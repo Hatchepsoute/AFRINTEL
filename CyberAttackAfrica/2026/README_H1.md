@@ -13,9 +13,9 @@ TLP:CLEAR, public distribution
 
 ## 1. Executive summary
 
-AFRINTEL documented **239 Africa-related cyber incidents** during the first half of 2026: **113 ransomware incidents**, **125 data leaks or access sales**, and **1 website defacement**.
+AFRINTEL documented **239 Africa-related cyber incidents** during the first half of 2026: **115 ransomware incidents**, **122 data leaks or access sales**, and **2 website defacements**.
 
-Data leaks and access sales edged out ransomware over the semester, **52.3%** against **47.3%**. Strip out the single defacement and the split barely moves: 47.5% ransomware, 52.5% data leaks or access sales across the remaining 238 incidents.
+Data leaks and access sales edged out ransomware over the semester, **51.0%** against **48.1%**. Excluding the two defacements, ransomware represents 48.5% and data leaks or access sales 51.5% of the remaining 237 incidents.
 
 The real story is how activity accelerated in the second quarter. April and May alone accounted for **117 incidents**, essentially half the semester at **49.0%**. June eased off from both, but ransomware came back to parity with data leaks, 20 incidents each.
 
@@ -26,7 +26,7 @@ The real story is how activity accelerated in the second quarter. April and May 
 - **Single sources of truth:** the six monthly `victims.md` files.
 - **Ransomware:** incidents attributed to a ransomware group, without assuming encryption when no supporting evidence is available.
 - **Data leaks and access sales:** published or sampled datasets, database sales, credential sales and access offers.
-- **Website defacement:** one coordinated January incident affecting Nigerien state websites.
+- **Website defacement:** two incidents, involving Nigerien state websites in January and UBA Senegal in March.
 - **Evidence treatment:** each record retains its AFRINTEL status. Victim listings, accessible samples and full data publications are described according to the material documented in the monthly card.
 
 Source files: [January](./01-january/victims.md), [February](./02-february/victims.md), [March](./03-march/victims.md), [April](./04-april/victims.md), [May](./05-may/victims.md), [June](./06-june/victims.md).
@@ -36,9 +36,9 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 | Indicator | Value |
 |---|---:|
 | Total documented incidents | 239 |
-| Ransomware | 113 |
-| Data leaks / access sales | 125 |
-| Website defacement | 1 |
+| Ransomware | 115 |
+| Data leaks / access sales | 122 |
+| Website defacement | 2 |
 | Highest-volume month | April, 60 incidents |
 | Second-highest month | May, 57 incidents |
 | Lowest-volume month | February, 20 incidents |
@@ -47,9 +47,9 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 
 | Incident type | Records | Bar |
 |---|---:|:---|
-| Ransomware | 113 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
-| Data leaks and access sales | 125 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Website defacement | 1 | 🟥 |
+| Ransomware | 115 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| Data leaks and access sales | 122 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| Website defacement | 2 | 🟥 |
 
 
 <!-- H1_VISUAL_START -->
@@ -69,14 +69,20 @@ Source files: [January](./01-january/victims.md), [February](./02-february/victi
 | Tanzania | 3 | 3 | 0 | 6 | 🟧🟧🟧 🟦🟦🟦 |
 | Ghana | 5 | 0 | 0 | 5 | 🟧🟧🟧🟧🟧 |
 
-### Geographic distribution by region
+### Expanded geographic exposure distribution by region
 
-| Region | Ransomware | Leaks / access | Defacement | Total | Distribution |
-| :--- | ---: | ---: | ---: | ---: | :--- |
-| North Africa | 48 | 70 | 0 | 118 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Southern Africa | 35 | 26 | 0 | 61 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| West and Central Africa | 19 | 19 | 2 | 40 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 🟥🟥 |
-| East Africa | 13 | 7 | 0 | 20 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
+| Region | Ransomware occurrences | Leaks / access occurrences | Defacement occurrences | Total geographic occurrences |
+| :--- | ---: | ---: | ---: | ---: |
+| North Africa | 49 | 75 | 0 | 124 |
+| Southern Africa | 32 | 30 | 0 | 62 |
+| West Africa | 16 | 22 | 2 | 40 |
+| Central Africa | 1 | 2 | 0 | 3 |
+| East Africa | 11 | 15 | 0 | 26 |
+| Indian Ocean | 6 | 0 | 0 | 6 |
+| Pan-African / region unspecified | 0 | 1 | 0 | 1 |
+| **Total** | **115** | **145** | **2** | **262** |
+
+This regional ranking uses **geographic occurrences**, not deduplicated incidents. Six explicitly multi-country incidents expand to 29 country occurrences; one additional pan-African incident has no sufficiently precise regional allocation.
 
 **Bars - Top 10 countries - H1 2026**
 
@@ -131,11 +137,11 @@ Legend: names correspond to the sector ranking in the table above.
 |---|---:|---:|---:|---:|---:|
 | January | 17 | 3 | 1 | 21 | 8.8% |
 | February | 20 | 0 | 0 | 20 | 8.4% |
-| March | 19 | 22 | 0 | 41 | 17.2% |
+| March | 21 | 19 | 1 | 41 | 17.2% |
 | April | 20 | 40 | 0 | 60 | 25.1% |
 | May | 17 | 40 | 0 | 57 | 23.8% |
 | June | 20 | 20 | 0 | 40 | 16.7% |
-| **H1 2026** | **113** | **125** | **1** | **239** | **100%** |
+| **H1 2026** | **115** | **122** | **2** | **239** | **100%** |
 
 **Bars - Monthly cyber incidents in Africa, H1 2026**
 
@@ -156,7 +162,7 @@ Legend: names correspond to the sector ranking in the table above.
 |---|---:|:---|
 | Jan | 17 | █████████ |
 | Feb | 20 | ██████████ |
-| Mar | 19 | ██████████ |
+| Mar | 21 | ██████████ |
 | Apr | 20 | ██████████ |
 | May | 17 | █████████ |
 | Jun | 20 | ██████████ |
@@ -167,7 +173,7 @@ Legend: names correspond to the sector ranking in the table above.
 |---|---:|:---|
 | Jan | 3 | █ |
 | Feb | 0 |  |
-| Mar | 22 | ██████ |
+| Mar | 19 | █████ |
 | Apr | 40 | ██████████ |
 | May | 40 | ██████████ |
 | Jun | 20 | █████ |
@@ -176,11 +182,11 @@ Legend: names correspond to the sector ranking in the table above.
 
 | Period | Ransomware | Data leaks / access sales | Website defacement | Total |
 |---|---:|---:|---:|---:|
-| First quarter, January to March | 56 | 25 | 1 | 82 |
+| First quarter, January to March | 58 | 22 | 2 | 82 |
 | Second quarter, April to June | 57 | 100 | 0 | 157 |
-| **H1 2026** | **113** | **125** | **1** | **239** |
+| **H1 2026** | **115** | **122** | **2** | **239** |
 
-The second quarter ran **75 incidents ahead of the first**, a 91.5% jump. Ransomware barely moved, 56 incidents in Q1 to 57 in Q2. Data leaks and access sales are where the growth actually happened, 25 in Q1 to 100 in Q2, a 300.0% increase.
+The second quarter ran **75 incidents ahead of the first**, a 91.5% jump. Ransomware decreased slightly, from 58 incidents in Q1 to 57 in Q2. Data leaks and access sales drove the growth, rising from 22 in Q1 to 100 in Q2, a 354.5% increase.
 
 ## 6. Key CTI findings
 
@@ -235,11 +241,10 @@ The second quarter ran **75 incidents ahead of the first**, a 91.5% jump. Ransom
 | 🇲🇬 Madagascar | 1 | █ |
 | 🇬🇳 Guinea | 1 | █ |
 | 🇬🇦 Gabon | 1 | █ |
-| 🇨🇲 Cameroon | 1 | █ |
 | 🇧🇯 Benin | 1 | █ |
-| **Single-country records** | **233** |
+| **Single-country records** | **232** |
 
-The top three direct country labels account for **137 records (57.3%)**. Six additional records are multi-country, bringing the incident total to 239.
+The top three direct country labels account for **137 records (57.3%)**. The corpus also contains six incidents with explicit multi-country scope and one pan-African incident without a precise country allocation, bringing the incident total to 239.
 
 | Normalized sector | Records | Bar |
 |---|---:|:---|
@@ -301,7 +306,7 @@ Actor-name case and version variants are normalized in the counts and charts.
 | June | Law-enforcement portal access sale | Egypt, Malawi, Tanzania, Algeria, Kenya, Zambia, Sierra Leone | 7 |
 | **Total** | **6 source cards** | | **29 country exposures** |
 
-The incident total remains **239**. Replacing the six multi-country cards with their 29 explicit African country occurrences produces **262 geographic exposure occurrences**: 233 single-country cards plus 29 expanded occurrences. The expanded view covers **36 distinct African countries**.
+The incident total remains **239**. Replacing the six explicitly multi-country incidents with their 29 African country occurrences produces **262 geographic exposure occurrences**: 232 single-country incidents, 29 expanded occurrences and one pan-African incident without a precise regional allocation. The expanded view covers **34 distinct African countries**.
 
 - Prioritize identity, VPN, email, cloud-storage and privileged-account telemetry.
 - Track victim listings, encryption evidence and data publication as separate fields.
@@ -337,16 +342,16 @@ Going into the second half, AFRINTEL should watch whether June's 50/50 split tur
 
 ## 10. Conclusion
 
-AFRINTEL recorded **239 incidents across H1 2026**: **113 ransomware**, **125 data leaks or access sales**, **1 defacement**. The second quarter carried 157 of those records, 65.7% of the semester's activity. All of the net growth over Q1 came from leaks and access sales, not ransomware.
+AFRINTEL recorded **239 incidents across H1 2026**: **115 ransomware**, **122 data leaks or access sales**, and **2 defacements**. The second quarter carried 157 of those records, 65.7% of the semester's activity. All of the net growth over Q1 came from leaks and access sales, while ransomware decreased slightly.
 
 The defensive priority runs two tracks at once: keep ransomware readiness up while tightening controls against credential exposure, bulk data extraction, cloud-storage exposure and underground data sales.
 
 ### Consistency checks
 
 - Monthly totals: 21 + 20 + 41 + 60 + 57 + 40 = 239.
-- Type totals: 113 + 125 + 1 = 239.
-- Direct geography: 233 single-country records + 6 multi-country records = 239.
-- Expanded geography: 233 single-country occurrences + 29 multi-country occurrences = 262.
+- Type totals: 115 + 122 + 2 = 239.
+- Direct geography: 232 single-country incidents + 6 explicitly multi-country incidents + 1 pan-African incident = 239.
+- Expanded geography: 232 single-country occurrences + 29 multi-country occurrences + 1 pan-African occurrence = 262.
 - Sector totals: all 22 explicit sector rows sum to 239.
 
 ---

@@ -163,7 +163,8 @@ Legend: TN = Tunisia, EG = Egypt, MA = Morocco, DZ = Algeria, NG = Nigeria, ZA =
 |---|---|---:|---:|---:|---|
 | **North Africa** | 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇲🇦 Morocco, 🇩🇿 Algeria | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | **Southern Africa** | 🇿🇦 South Africa, 🇧🇼 Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
-| **West and Central Africa** | 🇳🇬 Nigeria, 🇨🇮 Côte d’Ivoire, 🇬🇭 Ghana, 🇨🇲 Cameroon | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **West Africa** | 🇳🇬 Nigeria, 🇨🇮 Côte d’Ivoire, 🇬🇭 Ghana | **9** | 5 | 4 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| **Central Africa** | 🇨🇲 Cameroon | **1** | 1 | 0 | 🟧 |
 | **East Africa** | 🇰🇪 Kenya, 🇸🇸 South Sudan | **2** | 2 | 0 | 🟧🟧 |
 | **Total** | **12 countries** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
 
@@ -173,9 +174,9 @@ The Nigeria and Côte d’Ivoire identity-document observation contributes one o
 ```mermaid
 xychart
     title "Geographic occurrences by region - July 2026"
-    x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
+    x-axis ["North Africa","Southern Africa","West Africa","Central Africa","East Africa"]
     y-axis "Occurrences" 0 --> 26
-    bar [24,7,10,2]
+    bar [24,7,9,1,2]
 ```
 
 ## 4. Detailed analysis by incident type

@@ -128,17 +128,18 @@ The monthly CTI view combines data leaks and access sales as **data exposure**: 
 | :--- | ---: | ---: | ---: | :--- |
 | North Africa | 8 | 8 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
 | Southern Africa | 2 | 2 | 0 | 🟧🟧 |
-| West and Central Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| West Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| Central Africa | 0 | 0 | 0 |  |
 | East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
 
 ```mermaid
 xychart
     title "Occurrences by region"
-    x-axis ["NA","SA","WC","EA"]
+    x-axis ["NA","SA","WA","CA","EA"]
     y-axis "Occurrences" 0 --> 9
-    bar [8,2,3,3]
+    bar [8,2,3,0,3]
 ```
-Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
 
 ### Sector distribution
 

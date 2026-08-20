@@ -75,7 +75,7 @@ These 38 incidents have a single identified victim country. The 2 multi-country 
 | **Subtotal (direct)** | **38** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Direct incidents by country - June 2026"
     x-axis ["Morocco","South Africa","Nigeria","Egypt","Tunisia","Libya","Gabon","Zimbabwe","Senegal","Botswana","Mauritius","Tanzania","Mayotte","Kenya"]
     y-axis "Incidents" 0 --> 10
@@ -149,7 +149,7 @@ xychart-beta
 ### Ransomware by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware by country - June 2026"
     x-axis ["South Africa","Egypt","Tunisia","Morocco","Nigeria","Libya","Gabon","Zimbabwe","Senegal","Botswana","Mauritius","Mayotte","Kenya"]
     y-axis "Ransomware" 0 --> 5
@@ -159,7 +159,7 @@ xychart-beta
 ### Data leaks by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Data leaks by country (direct) - June 2026"
     x-axis ["Morocco","Nigeria","South Africa","Libya","Egypt","Tunisia","Tanzania"]
     y-axis "Data leaks" 0 --> 9
@@ -174,19 +174,20 @@ xychart-beta
 |---|---|---:|---:|
 | North Africa | 🇲🇦 Morocco, 🇪🇬 Egypt, 🇹🇳 Tunisia, 🇱🇾 Libya | 20 | +3 (Morocco, Egypt via Convince; Egypt via Governor) |
 | Southern Africa | 🇿🇦 South Africa, 🇧🇼 Botswana, 🇿🇼 Zimbabwe | 8 | 0 |
-| West & Central Africa | 🇳🇬 Nigeria, 🇬🇦 Gabon, 🇸🇳 Senegal | 6 | +1 (Nigeria via Convince) |
+| West Africa | 🇳🇬 Nigeria, 🇸🇳 Senegal | 5 | +1 (Nigeria via Convince) |
+| Central Africa | 🇬🇦 Gabon | 1 | 0 |
 | East Africa | 🇰🇪 Kenya, 🇹🇿 Tanzania | 2 | +4 (Kenya, Tanzania via both Convince and Governor) |
 | Indian Ocean | 🇲🇺 Mauritius, 🇾🇹 Mayotte | 2 | 0 |
 | Not otherwise direct victims | 🇪🇹 Ethiopia, 🇦🇴 Angola, 🇿🇲 Zambia, 🇲🇼 Malawi, 🇩🇿 Algeria, 🇸🇱 Sierra Leone | 0 | +7 (see section 2.3) |
 
-> Multi-country incidents are counted once in the global total of 40. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 20 across 5 regions plus 6 countries exposed only via credential sales.
+> Multi-country incidents are counted once in the global total of 40. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 20 across 6 regions, including 6 countries exposed only via credential sales.
 
 ```mermaid
-xychart-beta
+xychart
     title "Direct incidents by region - June 2026"
-    x-axis ["North Africa","Southern Africa","West & Central Africa","East Africa","Indian Ocean"]
+    x-axis ["North Africa","Southern Africa","West Africa","Central Africa","East Africa","Indian Ocean"]
     y-axis "Direct incidents" 0 --> 22
-    bar [20,8,6,2,2]
+    bar [20,8,5,1,2,2]
 ```
 
 ---
@@ -212,7 +213,7 @@ xychart-beta
 | **Total** | **40** | **100%** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Sector distribution - June 2026"
     x-axis ["Government","Finance","Education","E-commerce","Healthcare","Transport","Industry","Political","Mining","Hospitality","Construction","Food","Business tech","Security"]
     y-axis "Incidents" 0 --> 13
@@ -235,7 +236,7 @@ xychart-beta
 | Records outside displayed ranking | 18 | Mixed |
 
 ```mermaid
-xychart-beta
+xychart
     title "Most active threat actors - June 2026"
     x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Outside ranking"]
     y-axis "Incidents" 0 --> 19

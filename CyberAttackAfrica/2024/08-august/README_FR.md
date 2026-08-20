@@ -1,195 +1,166 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-Ao%C3%BBt%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Août%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Août 2024 : Mois record avec 15 cas (14 revendications ransomware et 1 fuite de données) et 2 double-claims
+# Rapport CTI AFRINTEL — Août 2024
 
-👉🏾 [English version available here](./README.md)
+👉🏾 [English version](./README.md)
 
-### 1. Résumé exécutif
+## 1. Résumé exécutif
 
-Août 2024 est le **mois le plus actif de l'année** avec **15 cas** documentés dans 8 pays. Le mois inclut **2 double-claims** par des groupes ransomware distincts (Remitano et Lenmed), chacun préalablement revendiqué par d'autres acteurs. DarkVault mène avec 3 revendications. Neuf groupes distincts sont actifs simultanément.
+Août 2024 atteint **15 incidents**, dont **14 revendications ransomware** et **1 fuite de données**. L’Afrique du Sud concentre six publications, loin devant les Seychelles et le Zimbabwe avec deux chacune. DarkVault est l’acteur le plus visible avec trois incidents.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
+Deux organisations avaient déjà été publiées sous un autre nom d’acteur : Remitano en avril et Lenmed en mai. Ces doubles revendications peuvent correspondre à plusieurs scénarios — partage, revente, réutilisation d’une revendication ou attribution inexacte — mais aucune source publique ne permet de trancher. Eventizer constitue la seule fuite de données du mois avec un échantillon visible.
 
-**Chiffres clés :**
-- 🔹 **15 cas** identifiés (14 revendications ransomware et 1 fuite de données ; dont 2 double-claims)
-- 🔹 **9 groupes actifs** : DarkVault (3), KillSec (2), Meow (2), RansomHub (2), LockBit3 (1), Hunters (1), SpaceBears (1), InCransom (1), BrainCipher (1)
-- 🔹 **Pays touchés** : Afrique du Sud (6), Seychelles (2), Zimbabwe (2), Tunisie (1), Côte d'Ivoire (1), Kenya (1), Djibouti (1), Ghana (1)
-- 🔹 **Secteurs** : Finance, Retail/Distribution, Télécommunications, Santé, Gouvernement, Technologies, Événementiel / Plateformes numériques
+Voir [victims_FR.md](./victims_FR.md).
 
-### Vue agrégée mensuelle de l’exposition
+## 2. Méthodologie
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (6.7% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+Le rapport couvre les publications classées en août 2024. Une organisation est comptée une fois dans le mois, même si elle avait été publiée auparavant. Les doubles revendications sont signalées comme un problème d’attribution, sans déduire un transfert de données ou une coopération entre acteurs.
 
----
+Les statistiques dérivent des **15 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
 
-### 2. Chronologie des attaques
+## 3. Vue globale
 
-| Date | Victime | Pays | Groupe ransomware | Note |
-|------|---------|------|-------------------|------|
-| 1er août | Remitano | Seychelles | Meow | ⚠️ Double-claim (avril 2024 - InCransom) |
-| 11 août | Acdcexpress | Afrique du Sud | LockBit3 | |
-| 13 août | Netone | Zimbabwe | Hunters | |
-| 13 août | Lenmed | Afrique du Sud | DarkVault | ⚠️ Double-claim (mai 2024 - LockBit3) |
-| 13 août | Gpf.za | Afrique du Sud | DarkVault | |
-| 17 août | Wwwconfig (Netconfig) | Afrique du Sud | RansomHub | |
-| 19 août | Eventizer | Tunisie | Bambi | Fuite de données |
-| 21 août | Codival | Côte d'Ivoire | SpaceBears | |
-| 22 août | Don't Waste Group | Afrique du Sud | InCransom | |
-| 22 août | Instadriver.co | Kenya | KillSec | |
-| 24 août | Ingotbrokers | Seychelles | DarkVault | |
-| 26 août | Onedayonly | Afrique du Sud | KillSec | |
-| 28 août | Dpfza.gov.dj | Djibouti | RansomHub | |
-| 28 août | Success Microfinance Bank | Zimbabwe | Meow | |
-| 28 août | Ghanare | Ghana | BrainCipher | |
+| Indicateur | Valeur |
+|---|---:|
+| Incidents / Pays | **15 / 8** |
+| Ransomware | **14** |
+| Fuites de données | **1** |
+| Ventes d’accès / Défacement | **0 / 0** |
+| Doubles revendications identifiées | **2** |
 
-```mermaid
-timeline
-    title Incidents cyber en Afrique - Août 2024
-    1er août : Remitano (Seychelles) - Meow
-    11 août : Acdcexpress (Afrique du Sud) - LockBit3
-    13 août : Netone (Zimbabwe) - Hunters
-              Lenmed (Afrique du Sud) - DarkVault
-              Gpf.za (Afrique du Sud) - DarkVault
-    17 août : Wwwconfig (Afrique du Sud) - RansomHub
-    21 août : Codival (Côte d'Ivoire) - SpaceBears
-    22 août : Don't Waste Group (Afrique du Sud) - InCransom
-              Instadriver.co (Kenya) - KillSec
-    24 août : Ingotbrokers (Seychelles) - DarkVault
-    26 août : Onedayonly (Afrique du Sud) - KillSec
-    28 août : Dpfza.gov.dj (Djibouti) - RansomHub
-              Success Microfinance Bank (Zimbabwe) - Meow
-              Ghanare (Ghana) - BrainCipher
-```
+### Classement par pays
 
----
-
-### 3. Analyse des victimes
-
-#### 3.1 Par pays
-
-| Pays | Nombre d'attaques |
-|------|-----------------|
-| Afrique du Sud | 6 |
-| Seychelles | 2 |
-| Zimbabwe | 2 |
-| Tunisie | 1 |
-| Côte d'Ivoire | 1 |
-| Kenya | 1 |
-| Djibouti | 1 |
-| Ghana | 1 |
+| Pays | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 6 | 6 | 0 |
+| 🇸🇨 Seychelles | 2 | 2 | 0 |
+| 🇿🇼 Zimbabwe | 2 | 2 | 0 |
+| 🇨🇮 Côte d’Ivoire | 1 | 1 | 0 |
+| 🇩🇯 Djibouti | 1 | 1 | 0 |
+| 🇬🇭 Ghana | 1 | 1 | 0 |
+| 🇰🇪 Kenya | 1 | 1 | 0 |
+| 🇹🇳 Tunisie | 1 | 0 | 1 |
+| **Total** | **15** | **14** | **1** |
 
 ```mermaid
-pie
-    title Répartition par pays - Août 2024 (15 cas)
-    "Afrique du Sud" : 6
-    "Seychelles" : 2
-    "Zimbabwe" : 2
-    "Tunisie" : 1
-    "Côte d'Ivoire" : 1
-    "Kenya" : 1
-    "Djibouti" : 1
-    "Ghana" : 1
+xychart
+    title "Incidents par pays — août 2024"
+    x-axis ["ZA","SC","ZW","CI","DJ","GH","KE","TN"]
+    y-axis "Incidents" 0 --> 7
+    bar [6,2,2,1,1,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur | Nombre |
-|---------|--------|
-| Finance / Banque | 3 |
-| Retail / Distribution | 3 |
-| Télécommunications | 2 |
-| Services de santé | 1 |
-| Administration publique | 1 |
-| Technologies | 1 |
-| Services | 1 |
-| Organismes financiers | 1 |
-| E-commerce | 1 |
-| Événementiel / Plateforme numérique | 1 |
 
 ```mermaid
-xychart-beta
-    title "Secteurs ciblés - Août 2024"
-    x-axis ["Finance", "Retail", "Télécom", "Santé", "Gouvernement", "Tech", "Services", "E-commerce", "Événementiel"]
-    y-axis "Nombre d'attaques" 0 to 4
-    bar [3, 3, 2, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Répartition par type — août 2024
+    "Ransomware" : 14
+    "Fuite de données" : 1
 ```
 
-#### 3.3 Groupes ransomware
+### Répartition régionale
 
-| Groupe ransomware | Nombre d'attaques |
-|-----------------|-----------------|
+| Région | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| Afrique australe | 8 | 8 | 0 |
+| Afrique de l’Ouest | 2 | 2 | 0 |
+| Afrique de l’Est | 2 | 2 | 0 |
+| Océan Indien | 2 | 2 | 0 |
+| Afrique du Nord | 1 | 0 | 1 |
+| **Total** | **15** | **14** | **1** |
+
+### Répartition sectorielle normalisée
+
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Finance / Banque | 4 | 26,7 % |
+| Commerce / E-commerce | 4 | 26,7 % |
+| Télécommunications | 2 | 13,3 % |
+| Services professionnels / Entreprises | 2 | 13,3 % |
+| Santé / Médical | 1 | 6,7 % |
+| Gouvernement / Administration | 1 | 6,7 % |
+| Technologies / Informatique | 1 | 6,7 % |
+| **Total** | **15** | **100 %** |
+
+### Acteurs les plus visibles
+
+| Acteur | Incidents |
+|---|---:|
 | DarkVault | 3 |
 | KillSec | 2 |
 | Meow | 2 |
 | RansomHub | 2 |
-| LockBit3 | 1 |
-| Hunters | 1 |
-| SpaceBears | 1 |
-| InCransom | 1 |
-| BrainCipher | 1 |
+| Six autres acteurs ou sources | 1 chacun |
 
-```mermaid
-gantt
-    title Groupes ransomware actifs - Août 2024
-    dateFormat X
-    axisFormat %s
-    section DarkVault
-    DarkVault : 0, 3
-    section KillSec
-    KillSec : 0, 2
-    section Meow
-    Meow : 0, 2
-    section RansomHub
-    RansomHub : 0, 2
-    section LockBit3
-    LockBit3 : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section SpaceBears
-    SpaceBears : 0, 1
-    section InCransom
-    InCransom : 0, 1
-    section BrainCipher
-    BrainCipher : 0, 1
-```
+## 4. Analyse détaillée par type d’incident
 
----
+### 4.1 Ransomware
 
-### 4. Points d'attention
+Les quatorze publications couvrent surtout la finance, le commerce et les télécommunications. La concentration sud-africaine est robuste dans le corpus, mais les publications ne démontrent pas une campagne unique. Remitano et Lenmed doivent être suivies comme doubles revendications dont la relation technique reste inconnue.
 
-- **Mois record** : 15 cas est le nombre mensuel le plus élevé de 2024, représentant presque le double de la moyenne janvier-février.
-- **2 double-claims confirmés** : Remitano (Seychelles, crypto) et Lenmed (Afrique du Sud, santé) ont chacun été revendiqués précédemment par des groupes différents, suggérant une revente de données ou une compromission indépendante des mêmes cibles.
-- **DarkVault en tête** : le groupe revendique 3 victimes sud-africaines en une seule journée (13 août), indiquant une campagne coordonnée.
-- **Première apparition de BrainCipher** en Afrique : le groupe revendique Ghanare (Ghana, tech), marquant son entrée sur le continent.
-- **Gouvernement ciblé à Djibouti** : Dpfza.gov.dj (Djibouti Port Free Zone Authority), infrastructure stratégique pour la logistique est-africaine.
-- **Fuite Eventizer** : un échantillon de champs de contact et de contexte de comptes a été publié, mais le volume revendiqué de 60 000 enregistrements et son exhaustivité restent non vérifiés.
-- **Secteur télécom** : Netone (Zimbabwe, opérateur mobile majeur) et Wwwconfig/Netconfig (Afrique du Sud) reflètent un intérêt soutenu pour les infrastructures de connectivité.
+### 4.2 Fuite de données
 
----
+La publication Eventizer contient des champs de contact et de contexte de compte. Le volume de 60 000 enregistrements est revendiqué ; l’échantillon ne permet pas d’en confirmer l’exhaustivité. Aucune donnée personnelle brute n’est reproduite.
 
-```mermaid
-xychart-beta
-    title "Évolution mensuelle des attaques (Jan - Août 2024)"
-    x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Août"]
-    y-axis "Nombre d'attaques" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 15]
-```
+## 5. Impact sectoriel
 
-### 5. Recommandations
+La finance et le commerce regroupent plus de la moitié du corpus. Ils présentent un risque combiné de continuité, fraude et hameçonnage. Les télécommunications ajoutent un enjeu d’infrastructure, tandis que la publication visant une autorité djiboutienne augmente la sensibilité du volet public.
 
-| Domaine | Action recommandée |
-|---------|--------------------|
-| Santé | Renforcer les contrôles d'accès, surveiller les réinfections (pattern double-claim), préparer un plan de réponse aux incidents. |
-| Finance / Banque | Imposer le MFA, auditer les journaux d'accès aux données, surveiller la revente sur le dark web. |
-| Télécommunications | Segmenter l'infrastructure réseau cœur, durcir les interfaces de gestion/NOC. |
-| Gouvernement | Corriger les systèmes critiques, appliquer le principe du moindre privilège, surveiller les anomalies DNS. |
-| Toutes organisations | Suivre DarkVault, Meow et BrainCipher comme groupes très actifs, analyser leurs TTPs et IOCs. |
+## 6. Profil des acteurs et évaluation du risque
 
----
+| Périmètre | Niveau | Justification |
+|---|---|---|
+| 🇿🇦 Afrique du Sud | 🔴 Élevé | Six revendications dans cinq secteurs |
+| 🇸🇨 Seychelles / 🇿🇼 Zimbabwe | 🔴 Élevé | Deux publications financières ou télécoms chacune |
+| 🇩🇯 Djibouti | 🔴 Élevé | Publication visant une autorité publique |
+| Autres pays | 🟠 Moyen | Une publication chacun |
 
-*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** 14 incidents sur 15 sont des revendications ransomware.
+- **Observé — confiance élevée :** l’Afrique du Sud concentre 40 % du corpus.
+- **Observé — confiance élevée :** Remitano et Lenmed avaient déjà été publiées par d’autres acteurs.
+- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour expliquer les doubles revendications.
+- **Lacune :** le volume complet d’Eventizer et la relation entre acteurs restent inconnus.
+- **Collecte attendue :** chronologie des publications, confirmations victimes et comparaison non intrusive des échantillons disponibles.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Utilisation |
+|---|---|---|
+| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les revendications |
+| Préventif | T1490 — Inhibit System Recovery | Surveillance des sauvegardes |
+| Préventif | T1567 — Exfiltration Over Web Service | Contrôle des transferts ; canal Eventizer non observé |
+
+## 9. Recommandations
+
+- **Finance et commerce :** surveiller fraude, réutilisation d’identifiants et exports inhabituels.
+- **Télécommunications :** séparer les plans d’administration et tester les procédures de continuité.
+- **Secteur public :** renforcer les comptes privilégiés et la journalisation.
+- **Victimes doublement revendiquées :** préserver une chronologie de preuves et comparer les artefacts sans présumer leur origine.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Corréler les dates de publication et les actifs nommés ; aucune chaîne d’intrusion commune n’est établie. |
+| **Hypothèse** | Rechercher des comptes, infrastructures ou archives communes aux doubles revendications. |
+| **Préventif** | Détecter chiffrement massif, suppression de sauvegardes, exports volumineux et transferts sortants anormaux. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Prioriser les organisations sud-africaines et les secteurs finance, commerce et télécoms. |
+| 2 | **Hypothèse** | Étudier partage ou revente comme scénarios non confirmés des doubles revendications. |
+| 3 | **Préventif** | Généraliser ASM, MFA résistante au phishing et sauvegardes immuables isolées. |
+
+## 12. Conclusion
+
+Août est le mois le plus dense de 2024 à ce stade, mais sa lecture exige de séparer activité visible et compromission confirmée. Les doubles revendications compliquent l’attribution, tandis qu’Eventizer apporte le seul signal directement exploitable sur la nature des données. La priorité est la validation, pas la spéculation sur les relations entre groupes.
+
+**AFRINTEL — TLP:CLEAR**
+
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

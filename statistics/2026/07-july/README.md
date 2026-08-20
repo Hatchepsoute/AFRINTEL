@@ -105,16 +105,17 @@ The 25 leak and access occurrences include the additional country allocation for
 |---|---|---:|---:|---:|---|
 | North Africa | Egypt, Tunisia, Morocco, Algeria | **24** | 4 | 20 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Southern Africa | South Africa, Botswana | **7** | 6 | 1 | 🟧🟧🟧🟧🟧🟧 🟦 |
-| West and Central Africa | Nigeria, Côte d’Ivoire, Ghana, Cameroon | **10** | 6 | 4 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| West Africa | Nigeria, Côte d’Ivoire, Ghana | **9** | 5 | 4 | 🟧🟧🟧🟧🟧 🟦🟦🟦🟦 |
+| Central Africa | Cameroon | **1** | 1 | 0 | 🟧 |
 | East Africa | Kenya, South Sudan | **2** | 2 | 0 | 🟧🟧 |
 | **Total** | **12 countries** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
 
 ~~~mermaid
 xychart
     title "Geographic occurrences by region - July 2026"
-    x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
+    x-axis ["North Africa","Southern Africa","West Africa","Central Africa","East Africa"]
     y-axis "Occurrences" 0 --> 26
-    bar [24,7,10,2]
+    bar [24,7,9,1,2]
 ~~~
 
 ## 5. Sector distribution
@@ -185,6 +186,6 @@ Twenty-three other named actors or source accounts occur once each and are exclu
 
 ## 9. Conclusion
 
-July 2026 recorded **42 documented incidents** and **43 geographic occurrences**. Ransomware and data leaks were evenly represented, while six access-sale offers added a separate access-brokerage risk. North Africa concentrated leak and access activity; South Africa and West and Central Africa showed stronger ransomware pressure.
+July 2026 recorded **42 documented incidents** and **43 geographic occurrences**. Ransomware and data leaks were evenly represented, while six access-sale offers added a separate access-brokerage risk. North Africa concentrated leak and access activity; South Africa and West Africa showed stronger ransomware pressure, while Central Africa recorded one ransomware occurrence.
 
 For details, consult the monthly victim and incident data in [CyberAttackAfrica/2026/07-july/victims.md](../../../CyberAttackAfrica/2026/07-july/victims.md).

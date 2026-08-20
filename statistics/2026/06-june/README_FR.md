@@ -75,7 +75,7 @@ Ces 38 incidents ont un seul pays victime identifié. Les 2 incidents multi-pays
 | **Sous-total (direct)** | **38** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Incidents directs par pays - Juin 2026"
     x-axis ["Maroc","Afrique du Sud","Nigéria","Égypte","Tunisie","Libye","Gabon","Zimbabwe","Sénégal","Botswana","Maurice","Tanzanie","Mayotte","Kenya"]
     y-axis "Incidents" 0 --> 10
@@ -149,7 +149,7 @@ xychart-beta
 ### Ransomware par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware par pays - Juin 2026"
     x-axis ["Afrique du Sud","Égypte","Tunisie","Maroc","Nigéria","Libye","Gabon","Zimbabwe","Sénégal","Botswana","Maurice","Mayotte","Kenya"]
     y-axis "Ransomware" 0 --> 5
@@ -159,7 +159,7 @@ xychart-beta
 ### Fuites de données par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Fuites de données par pays (direct) - Juin 2026"
     x-axis ["Maroc","Nigéria","Afrique du Sud","Libye","Égypte","Tunisie","Tanzanie"]
     y-axis "Fuites" 0 --> 9
@@ -174,19 +174,20 @@ xychart-beta
 |---|---|---:|---:|
 | Afrique du Nord | 🇲🇦 Maroc, 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇱🇾 Libye | 20 | +3 (Maroc, Égypte via Convince ; Égypte via Governor) |
 | Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇼 Zimbabwe | 8 | 0 |
-| Afrique de l'Ouest et centrale | 🇳🇬 Nigéria, 🇬🇦 Gabon, 🇸🇳 Sénégal | 6 | +1 (Nigéria via Convince) |
+| Afrique de l'Ouest | 🇳🇬 Nigéria, 🇸🇳 Sénégal | 5 | +1 (Nigéria via Convince) |
+| Afrique centrale | 🇬🇦 Gabon | 1 | 0 |
 | Afrique de l'Est | 🇰🇪 Kenya, 🇹🇿 Tanzanie | 2 | +4 (Kenya, Tanzanie via Convince et Governor) |
 | Océan Indien | 🇲🇺 Maurice, 🇾🇹 Mayotte | 2 | 0 |
 | Sans incident direct | 🇪🇹 Éthiopie, 🇦🇴 Angola, 🇿🇲 Zambie, 🇲🇼 Malawi, 🇩🇿 Algérie, 🇸🇱 Sierra Leone | 0 | +7 (voir section 2.3) |
 
-> Les incidents multi-pays sont comptés une fois dans le total global de 40. La colonne "Exposition multi-pays" montre les contacts pays supplémentaires issus de ces incidents. Total de pays distincts : 20 répartis sur 5 régions, plus 6 pays exposés uniquement via les ventes d'identifiants.
+> Les incidents multi-pays sont comptés une fois dans le total global de 40. La colonne "Exposition multi-pays" montre les contacts pays supplémentaires issus de ces incidents. Total de pays distincts : 20 répartis sur 6 régions, dont 6 pays exposés uniquement via les ventes d'identifiants.
 
 ```mermaid
-xychart-beta
+xychart
     title "Incidents directs par région - Juin 2026"
-    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est","Océan Indien"]
+    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est","Océan Indien"]
     y-axis "Incidents directs" 0 --> 22
-    bar [20,8,6,2,2]
+    bar [20,8,5,1,2,2]
 ```
 
 ---
@@ -212,7 +213,7 @@ xychart-beta
 | **Total** | **40** | **100 %** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Répartition sectorielle - Juin 2026"
     x-axis ["Gouvernement","Finance","Éducation","E-commerce","Santé","Transport","Industrie","Politique","Mines","Hôtellerie","Construction","Alimentation","Services tech","Sécurité"]
     y-axis "Incidents" 0 --> 13
@@ -235,7 +236,7 @@ xychart-beta
 | Fiches hors classement affiché | 18 | Mixte |
 
 ```mermaid
-xychart-beta
+xychart
     title "Acteurs les plus actifs - Juin 2026"
     x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Hors classement"]
     y-axis "Incidents" 0 --> 19

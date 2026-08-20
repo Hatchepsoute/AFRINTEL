@@ -154,17 +154,18 @@ La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès so
 | :--- | ---: | ---: | ---: | :--- |
 | Afrique du Nord | 13 | 1 | 12 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Afrique australe | 2 | 2 | 0 | 🟧🟧 |
-| Afrique de l’Ouest et centrale | 1 | 0 | 1 |  🟦 |
+| Afrique de l’Ouest | 1 | 0 | 1 |  🟦 |
+| Afrique centrale | 0 | 0 | 0 |  |
 | Afrique de l’Est | 5 | 2 | 3 | 🟧🟧 🟦🟦🟦 |
 
 ```mermaid
 xychart
     title "Occurrences par région"
-    x-axis ["NA","SA","WC","EA"]
+    x-axis ["NA","SA","AO","AC","AE"]
     y-axis "Occurrences" 0 --> 14
-    bar [13,2,1,5]
+    bar [13,2,1,0,5]
 ```
-Légende : NA = Afrique du Nord ; SA = Afrique australe ; WC = Afrique de l’Ouest et centrale ; EA = Afrique de l’Est
+Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ouest ; AC = Afrique centrale ; AE = Afrique de l’Est
 
 ### Répartition sectorielle
 

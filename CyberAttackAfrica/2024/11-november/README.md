@@ -1,182 +1,172 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-November%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-November%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - November 2024: 15 victims across 11 countries, the broadest geographic spread of the year
+# AFRINTEL CTI Report — November 2024
 
-👉🏾 [Version française disponible ici](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-### 1. Executive summary
+## 1. Executive summary
 
-November 2024 records **15 documented victims** across 11 countries, tying August for the highest monthly count of the year. South Africa, Egypt, Nigeria and Burkina Faso each sustain 2 claims, and KillSec leads among ransomware groups with 3. The month sees the Egyptian Tax Authority (ETA) targeted, a direct claim against sovereign fiscal infrastructure, and the first appearance of the Fog and Hellcat ransomware groups on the continent. Two Burkina Faso government health-data claims and a reposted claim concerning Morocco's Arab Civil Aviation Organization (ACAO) round out a month marked by public-sector and international-organization targeting.
+November 2024 comprises **15 incidents across 11 countries**: **11 ransomware claims**, **2 data leaks**, and **2 access sales**. No country dominates the dataset: South Africa, Burkina Faso, Egypt, and Nigeria each account for two incidents. East Africa and West Africa record four incidents each.
 
-👉🏾 [Victims list](./victims.md)
+The month is defined less by a single geographic centre than by the range of targets. Publications include a tax authority, two public-health systems, two insurers, and several industrial organisations. Three cases include a published sample in AFRINTEL’s data; the others remain assessed from the actor publication and the material visible at collection time.
 
-**Key figures:**
-- 🔹 **15 victims** identified
-- 🔹 **11 active actors/groups**: KillSec (3), RansomHub (2), Sentap (2), RAWorld (1), Hellcat (1), Akira (1), MoneyMessage (1), LockBit3 (1), Fog (1), SpaceBears (1), Unattributed/Hxp7 repost (1)
-- 🔹 **Countries affected**: South Africa (2), Egypt (2), Nigeria (2), Burkina Faso (2), Tanzania (1), Sudan (1), Kenya (1), Ethiopia (1), Cameroon (1), Namibia (1), Morocco (1)
-- 🔹 **Sectors**: Manufacturing, Education, Agribusiness, Engineering, Government/Finance, Retail, Heavy Industry, Business Services, IT Consulting, Insurance, Aviation/Intergovernmental Organization, Healthcare/Public Health
+See [victims.md](./victims.md).
 
-### Monthly aggregate exposure view
+## 2. Methodology
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **3 records** (20.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+This report covers incidents classified from 1 to 30 November 2024. Collection draws on actor leak sites, criminal forums, and OSINT sources monitored by AFRINTEL. Victim listings, leaks, and access sales are counted separately by nature; an access sale does not prove that the access was used or that data was exfiltrated.
 
----
+All statistics derive from the **15 incidents** in [victims.md](./victims.md), synchronised with [victims_FR.md](./victims_FR.md). No raw personal data is reproduced.
 
-### 2. Attack timeline
+## 3. Global overview
 
-| Date | Victim | Country | Ransomware group |
-|------|--------|---------|-----------------|
-| November 2 | Sumitomo Rubber South Africa | South Africa | KillSec |
-| November 4 | College of Business Education (CBE) | Tanzania | Hellcat |
-| November 4 | Kenana Sugar Company | Sudan | RansomHub |
-| November 12 | Arab Civil Aviation Organization (ACAO) | Morocco | Unattributed (reposted by Hxp7) |
-| November 14 | Environmental Design International | Nigeria | Akira |
-| November 17 | Egyptian Tax Authority (ETA) | Egypt | MoneyMessage |
-| November 24 | EFI Sales | Kenya | KillSec |
-| November 27 | Habesha Cement | Ethiopia | LockBit3 |
-| November 27 | Contrack Facilities Management | Egypt | RAWorld |
-| November 28 | Burkina Faso Public Health System Portal | Burkina Faso | Sentap |
-| November 28 | Government COVID-19 Data Management System | Burkina Faso | Sentap |
-| November 28 | Briatek | Nigeria | KillSec |
-| November 28 | Chanas Assurances S.A. | Cameroon | Fog |
-| November 29 | Namforce Life Insurance | Namibia | SpaceBears |
-| November 29 | PPOTTS | South Africa | RansomHub |
+| Indicator | Value |
+|---|---:|
+| Incidents / Countries | **15 / 11** |
+| Ransomware | **11** |
+| Data leaks | **2** |
+| Access sales / Defacement | **2 / 0** |
 
-```mermaid
-timeline
-    title Ransomware Attacks in Africa - November 2024
-    November 2 : Sumitomo Rubber SA (South Africa) - KillSec
-    November 4 : CBE (Tanzania) - Hellcat
-                 Kenana Sugar Co. (Sudan) - RansomHub
-    November 12 : Arab Civil Aviation Organization (Morocco) - Unattributed/Hxp7
-    November 14 : Environmental Design Intl (Nigeria) - Akira
-    November 17 : Egyptian Tax Authority (Egypt) - MoneyMessage
-    November 24 : EFI Sales (Kenya) - KillSec
-    November 27 : Habesha Cement (Ethiopia) - LockBit3
-                  Contrack FM (Egypt) - RAWorld
-    November 28 : Public Health System Portal (Burkina Faso) - Sentap
-                  COVID-19 Data Management System (Burkina Faso) - Sentap
-                  Briatek (Nigeria) - KillSec
-                  Chanas Assurances (Cameroon) - Fog
-    November 29 : Namforce Life Insurance (Namibia) - SpaceBears
-                  PPOTTS (South Africa) - RansomHub
-```
+### Country ranking
 
----
-
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country | Number of attacks |
-|---------|-----------------|
-| South Africa | 2 |
-| Egypt | 2 |
-| Nigeria | 2 |
-| Burkina Faso | 2 |
-| Tanzania | 1 |
-| Sudan | 1 |
-| Kenya | 1 |
-| Ethiopia | 1 |
-| Cameroon | 1 |
-| Namibia | 1 |
-| Morocco | 1 |
+| Country | Total | Ransomware | Leak | Access sale |
+|---|---:|---:|---:|---:|
+| 🇿🇦 South Africa | 2 | 1 | 1 | 0 |
+| 🇧🇫 Burkina Faso | 2 | 0 | 0 | 2 |
+| 🇪🇬 Egypt | 2 | 2 | 0 | 0 |
+| 🇳🇬 Nigeria | 2 | 2 | 0 | 0 |
+| 🇨🇲 Cameroon | 1 | 1 | 0 | 0 |
+| 🇪🇹 Ethiopia | 1 | 1 | 0 | 0 |
+| 🇰🇪 Kenya | 1 | 1 | 0 | 0 |
+| 🇲🇦 Morocco | 1 | 0 | 1 | 0 |
+| 🇳🇦 Namibia | 1 | 1 | 0 | 0 |
+| 🇸🇩 Sudan | 1 | 1 | 0 | 0 |
+| 🇹🇿 Tanzania | 1 | 1 | 0 | 0 |
+| **Total** | **15** | **11** | **2** | **2** |
 
 ```mermaid
-pie
-    title Distribution by country - November 2024 (15 victims)
-    "South Africa" : 2
-    "Egypt" : 2
-    "Nigeria" : 2
-    "Burkina Faso" : 2
-    "Tanzania" : 1
-    "Sudan" : 1
-    "Kenya" : 1
-    "Ethiopia" : 1
-    "Cameroon" : 1
-    "Namibia" : 1
-    "Morocco" : 1
+xychart
+    title "Incidents by country — November 2024"
+    x-axis ["ZA","BF","EG","NG","CM","ET","KE","MA","NA","SD","TZ"]
+    y-axis "Incidents" 0 --> 3
+    bar [2,2,2,2,1,1,1,1,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector | Count |
-|--------|-------|
-| IT Consulting / Technology | 2 |
-| Insurance | 2 |
-| Healthcare / Public Health | 2 |
-| Manufacturing | 1 |
-| Education | 1 |
-| Agriculture / Agribusiness | 1 |
-| Engineering Consulting | 1 |
-| Government / Tax Administration | 1 |
-| Retail / Distribution | 1 |
-| Heavy Industry | 1 |
-| Business Services | 1 |
-| Aviation / Intergovernmental Organization | 1 |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - November 2024"
-    x-axis ["IT/Tech", "Insurance", "Healthcare", "Manufacturing", "Education", "Agriculture", "Engineering", "Government", "Retail", "Heavy Ind.", "Biz Services", "Aviation"]
-    y-axis "Number of attacks" 0 to 3
-    bar [2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Incident type distribution — November 2024
+    "Ransomware" : 11
+    "Data leaks" : 2
+    "Access sales" : 2
 ```
 
-#### 3.3 Ransomware groups
+### Regional distribution
 
-| Ransomware group | Number of attacks |
-|-----------------|-----------------|
-| KillSec | 3 |
-| RansomHub | 2 |
-| RAWorld | 1 |
-| Hellcat | 1 |
-| Akira | 1 |
-| MoneyMessage | 1 |
-| LockBit3 | 1 |
-| Fog | 1 |
-| SpaceBears | 1 |
+| Region | Total | Ransomware | Leak | Access sale |
+|---|---:|---:|---:|---:|
+| East Africa | 4 | 4 | 0 | 0 |
+| West Africa | 4 | 2 | 0 | 2 |
+| Southern Africa | 3 | 2 | 1 | 0 |
+| North Africa | 3 | 2 | 1 | 0 |
+| Central Africa | 1 | 1 | 0 | 0 |
+| **Total** | **15** | **11** | **2** | **2** |
 
-Note: Sentap (Burkina Faso, 2 access-sale claims) and the unattributed ACAO repost are actor/group claims outside the ransomware taxonomy and are excluded from this table; they are counted in the key figures above.
+### Normalised sector distribution
 
----
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Manufacturing / Industry | 3 | 20.0% |
+| Finance / Banking | 2 | 13.3% |
+| Healthcare / Medical | 2 | 13.3% |
+| Professional / Business Services | 2 | 13.3% |
+| Technology / IT | 2 | 13.3% |
+| Agriculture / Agribusiness | 1 | 6.7% |
+| Aviation | 1 | 6.7% |
+| Education / University | 1 | 6.7% |
+| Government / Administration | 1 | 6.7% |
+| **Total** | **15** | **100%** |
 
-### 4. Key observations
+### Most visible actors
 
-- **Egyptian Tax Authority (ETA)**: MoneyMessage's claim against Egypt's sovereign tax administration represents one of the most sensitive government targets of 2024, a breach could expose tax records, corporate filings, and citizen fiscal data for millions.
-- **KillSec leads with 3 claims**: the group strikes South Africa (manufacturing), Kenya (distribution), and Nigeria (IT consulting) across three weeks  its most active month on the continent.
-- **Hellcat African debut**: the group claims the College of Business Education in Tanzania, its first documented African victim.
-- **Fog first African claim**: Chanas Assurances (Cameroon) marks Fog's debut on the continent  a group known for targeting VPN vulnerabilities.
-- **Insurance sector**: two insurance companies hit in one month (Chanas Assurances, Namforce Life Insurance), holders of large personal and financial policyholder datasets.
-- **Arab Civil Aviation Organization (Morocco)**: a forum repost references an earlier claim against the ACAO database, citing around 800 files but showing no data sample. AFRINTEL could not assess the content or authenticity of the alleged database and records this as an unverified claim.
-- **Burkina Faso public-health claims**: Sentap advertises two related but separately recorded claims, a public-health system portal and a government COVID-19 data-management system said to hold roughly 3.795 million records. No verifiable domain or independent confirmation was available for either claim; AFRINTEL does not reproduce personal records.
-- **Broadest geographic spread of the year**: 11 distinct countries in a single month, spanning West, East, Central, North, and Southern Africa.
+| Actor | Incidents | Predominant activity |
+|---|---:|---|
+| KillSec | 3 | Ransomware |
+| RansomHub | 2 | Ransomware |
+| Sentap | 2 | Access sale |
+| Eight other actors or sources | 1 each | Ransomware or leak |
 
----
+## 4. Detailed analysis by incident type
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Nov 2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov"]
-    y-axis "Number of attacks" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 14, 4, 8, 15]
-```
+### 4.1 Ransomware
 
-### 5. Recommendations
+The 11 ransomware publications are distributed among nine groups. KillSec accounts for three and RansomHub for two. The Sumitomo Rubber South Africa publication includes a sample; the material collected for the Egyptian Tax Authority and Kenana Sugar Company cases does not provide technical evidence confirming the claimed scope.
 
-| Domain | Recommended action |
-|--------|--------------------|
-| Government / Tax authorities | Isolate fiscal databases, enforce privileged access management, monitor for bulk record extraction. |
-| Insurance companies | Encrypt policyholder databases, audit third-party access, implement data loss prevention. |
-| IT Consulting | Enforce zero-trust for client environment access, monitor for credential reuse from prior breaches. |
-| Education | Patch Hellcat-associated vulnerabilities (often phishing + credential theft), harden student data portals. |
-| All organizations | Track Fog's VPN exploitation pattern, audit Fortinet/Cisco VPN configurations urgently. |
+### 4.2 Data leaks and access sales
 
----
+The PPOTTS publication includes a data sample. The ACAO case is a repost of an earlier claim referring to approximately 800 files, with no visible sample at collection time; it should not be interpreted as a newly dated intrusion in November. Sentap separately offered access associated with two Burkinabè public-health systems. One offer included a sample, but neither the current validity nor the use of the advertised access is established.
 
-*Report from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*
+## 5. Sectoral impact
+
+Manufacturing leads the month with three incidents. Finance, public health, professional services, and technology each account for two. Potential impact is highest in tax, healthcare, and insurance environments, where exposure could involve personal or financial information. This sensitivity does not confirm the content claimed by the actors.
+
+## 6. Threat actor profile and risk assessment
+
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇧🇫 Burkina Faso | 🔴 High | Two access sales involving public-health systems |
+| 🇪🇬 Egypt | 🔴 High | Two ransomware claims, including the tax authority |
+| 🇿🇦 South Africa | 🔴 High | One ransomware case with a sample and one leak with a sample |
+| 🇳🇬 Nigeria | 🟠 Medium | Two ransomware claims without public technical evidence |
+| Other countries | 🟠 Medium | One incident per country, with varying evidence depth |
+
+## 7. Key trends and intelligence gaps
+
+- **Observed — high confidence:** the dataset spans 11 countries; no country exceeds two incidents.
+- **Observed — high confidence:** ransomware, leaks, and access sales coexist and require distinct response priorities.
+- **Observed — medium confidence:** three incidents include a published sample, which does not automatically validate the full claimed volumes.
+- **Major intelligence gap:** no public DFIR report was identified in the consulted sources to establish access vectors, lateral movement, or exfiltration mechanisms.
+- **Gap:** the validity of Sentap’s advertised accesses and the original date of the ACAO data remain unknown.
+- **Collection requirement:** seek institutional confirmation, date reposted data, and monitor any subsequent use of the advertised access.
+
+## 8. Contextual MITRE ATT&CK mapping
+
+| Qualification | Technique | Defensive use |
+|---|---|---|
+| Assumption — medium confidence | T1078 — Valid Accounts | Scenario to examine for access sales; not observed in the sources |
+| Preventive | T1486 — Data Encrypted for Impact | Detect high-volume file writes and renames associated with encryption |
+| Preventive | T1490 — Inhibit System Recovery | Alert on shadow-copy deletion and backup modification |
+| Preventive | T1567 — Exfiltration Over Web Service | Monitor unusual outbound transfers; channel not established |
+
+## 9. Recommendations
+
+- **Public health and tax administration:** review privileged accounts, constrain third-party access, and log bulk exports.
+- **Insurance:** control document repositories, encrypt sensitive data, and test notification procedures.
+- **Manufacturing:** segment office, industrial, and contractor environments.
+- **All organisations:** review exposed remote access and require phishing-resistant MFA.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Track the named organisations and domains without treating a criminal publication as confirmation of intrusion. |
+| **Assumption** | Hunt for remote logins from unusual infrastructure, new accounts, and privilege escalation. |
+| **Preventive** | Detect LSASS dumping, obfuscated PowerShell, backup deletion, and abnormal use of transfer tools such as Rclone. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritise the public-health and tax systems present in the dataset. |
+| 2 | **Assumption** | Treat advertised access as potentially valid until internally checked, without concluding that it was exploited. |
+| 3 | **Preventive** | Reduce the external attack surface, close unnecessary RDP exposure, and isolate critical backups. |
+
+## 12. Conclusion
+
+November has the broadest geographic spread in the 2024 dataset, but it does not represent a single campaign. The incidents differ in both evidence and nature. Operational priority should go to environments where business criticality and the available evidence intersect: public health, taxation, insurance, and manufacturing.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

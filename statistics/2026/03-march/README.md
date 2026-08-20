@@ -41,7 +41,7 @@ pie
 | 🇹🇿 Tanzania | 1 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Victims by country"
     x-axis ["ZA","MA","EG","NG","MULTI","DZ","SN","GN","ZM","MG","TN","NA","TZ"]
     y-axis "Victims" 0 --> 15
@@ -124,7 +124,7 @@ pie
 | 🇳🇬 Nigeria | 0 | 2 |
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware vs Breaches"
     x-axis ["South Africa","Morocco","Egypt","Nigeria"]
     y-axis "Incidents" 0 --> 8

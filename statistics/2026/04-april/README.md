@@ -73,7 +73,7 @@ pie
 | **Total** | **60** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Victims by country - April 2026"
     x-axis ["Morocco","Egypt","South Africa","Nigeria","Algeria","Tunisia","Kenya","Ghana","Benin","Botswana","Ethiopia","Seychelles","Senegal","Uganda","Zambia","Multi-country"]
     y-axis "Incidents" 0 --> 18
@@ -107,7 +107,7 @@ xychart-beta
 ### Ransomware by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware by Country - April 2026"
     x-axis ["Egypt","South Africa","Morocco","Ghana","Kenya","Botswana","Seychelles","Zambia"]
     y-axis "Ransomware" 0 --> 10
@@ -117,7 +117,7 @@ xychart-beta
 ### Data leaks by country
 
 ```mermaid
-xychart-beta
+xychart
     title "Data leaks by country - April 2026"
     x-axis ["Morocco","South Africa","Nigeria","Algeria","Tunisia","Egypt","Kenya","Benin","Ethiopia","Senegal","Uganda","Multi-country"]
     y-axis "Data leaks" 0 --> 16
@@ -139,7 +139,7 @@ xychart-beta
 > Note: the multi-country incident involving Angola, South Africa, and Nigeria is counted within affected regions for regional exposure analysis. This view reflects exposure distribution, not a strictly deduplicated total.
 
 ```mermaid
-xychart-beta
+xychart
     title "Regional exposure - April 2026"
     x-axis ["North Africa","Southern Africa","West Africa","East Africa"]
     y-axis "Incidents / exposures" 0 --> 40
@@ -169,7 +169,7 @@ xychart-beta
 | **Total** | **60** | **100%** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Sector distribution - April 2026"
     x-axis ["Government","Education","Industry","Finance","Healthcare","Sports","E-commerce","Energy","Technology","Food","Transport","Telecoms","NGO","Data aggregation"]
     y-axis "Incidents" 0 --> 16
@@ -197,7 +197,7 @@ xychart-beta
 | Records outside displayed ranking | 23 | Mixed |
 
 ```mermaid
-xychart-beta
+xychart
     title "Most active threat actors - April 2026"
     x-axis ["Grubder","Payload","APT73 BASHE","TheGentlemen","Krybit","Anisanas2","DragonForce","LockBit5","Rihana","wh6ami","dark07x","NormalLeVrai"]
     y-axis "Incidents" 0 --> 8

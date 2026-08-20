@@ -1,144 +1,157 @@
-# 📑 CYBER THREAT INTELLIGENCE (CTI) REPORT
-**Scope:** African Continent | **Period:** March 2024  
-**Classification:** TLP:CLEAR  
-**Project:** AFRINTEL (African Threat Intelligence Repository)
-👉🏾 [Version française disponible ici](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Period](https://img.shields.io/badge/Period-March%202024-lightgrey)
+![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-### Monthly aggregate exposure view
+# AFRINTEL CTI Report — March 2024
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (12.5% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+👉🏾 [Version française](./README_FR.md)
 
----
+## 1. Executive summary
 
-## 1. EXECUTIVE SUMMARY
+March 2024 contains **8 documented incidents**: **7 ransomware claims** and **1 data leak**. Egypt ranks first with three publications, followed by South Africa with two. The entire corpus is concentrated in North Africa and Southern Africa.
 
-The month of March 2024 was marked by sustained threat actor activity from ransomware groups targeting critical infrastructure, financial institutions, and major public sector entities across the African continent, alongside one unattributed data leak claim against a higher-education institution. In total, **8 critical incidents** were officially recorded and analyzed within the scope of the AFRINTEL project.
+LockBit3 appears four times and RansomHub twice. This repetition measures publication visibility, not a coordinated campaign. The only data leak concerns ESGC in Morocco; the observed sample increases confidence that a structured database existed but does not confirm the full volume or technical origin of the acquisition.
 
-Cybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia**, **Namibia** and **Morocco**.
+See [victims.md](./victims.md).
 
-### Key Indicators - March 2024
-* **Total Validated Victims:** 8
-* **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack), plus 1 unattributed data leak claim (ESGC.MA, Morocco).
-* **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1), Education / Higher Education (1).
+## 2. Methodology
 
----
+This report covers publications assigned to March 2024. Each of the eight organizations is counted once and statuses describe the available evidence. No technical behavior is treated as observed solely because it is commonly associated with a named ransomware group.
 
-## 2. THREAT ACTOR LANDSCAPE (RANSOMWARE)
+Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-Three organized cybercrime syndicates account for the seven ransomware-attributed attacks this month, alongside one additional unattributed data leak claim tracked separately below:
+## 3. Global overview
 
-1. **LockBit 3.0 (50% of incidents):** Despite suffering international law enforcement disruptions (Operation Cronos) earlier in 2024, the LockBit franchise demonstrates significant resilience across the African continent, striking 4 prominent entities through its active network of affiliates.
-2. **RansomHub (25% of incidents):** This emerging threat group confirms its rapid rise in power, specifically targeting high-visibility energy infrastructure and digital media outlets in Egypt.
-3. **Hunters International (12.5% of incidents):** An opportunistic threat actor exploiting the Hive ransomware codebase, identified this month targeting the North African financial services sector.
-4. **Unattributed data leak claim (12.5% of incidents):** A March 26, 2024 forum post by the account UnknownMember claims a 2021 database sample from the Higher School of Commerce and Management (ESGC.MA) in Morocco. This is a data leak claim rather than a ransomware incident and is not attributed to any of the three groups above.
+| Indicator | Value |
+|---|---:|
+| Incidents | **8** |
+| Countries | **5** |
+| Ransomware | **7** |
+| Data leaks | **1** |
+| Access sales / Defacement | **0 / 0** |
 
----
+### Country ranking
 
-## 3. DETAILED INCIDENT MAPPING (MARCH 2024)
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇪🇬 Egypt | 3 | 3 | 0 |
+| 🇿🇦 South Africa | 2 | 2 | 0 |
+| 🇲🇦 Morocco | 1 | 0 | 1 |
+| 🇳🇦 Namibia | 1 | 1 | 0 |
+| 🇹🇳 Tunisia | 1 | 1 | 0 |
+| **Total** | **8** | **7** | **1** |
 
-### 🗓️ March 19, 2024
-#### 🇪🇬 Egypt - Go4Kora
-* **Incident Identifier:** AFRINTEL-2024-13649
-* **Ransomware Group:** RansomHub
-* **Work Sector:** Sports Media & Audience Entertainment
-* **Website:** [go4kora.tv](https://go4kora.tv)
-* **Attack Status:** Official claim and data exfiltration of subscriber databases.
-* **Description & Context:** Go4Kora is one of the most visited sports news and live football streaming portals in Egypt and the MENA region. The attack targeted the broadcasting infrastructure and subscriber records, impacting platform integrity.
+```mermaid
+xychart
+    title "Incidents by country — March 2024"
+    x-axis ["EG","ZA","MA","NA","TN"]
+    y-axis "Incidents" 0 --> 4
+    bar [3,2,1,1,1]
+```
 
----
+```mermaid
+pie showData
+    title Incident-type distribution — March 2024
+    "Ransomware" : 7
+    "Data leak" : 1
+```
 
-### 🗓️ March 20, 2024
-#### 🇿🇦 South Africa - Government Printing Works (GPW)
-* **Incident Identifier:** AFRINTEL-2024-13658
-* **Ransomware Group:** LockBit 3.0
-* **Work Sector:** Public Administrations & State Security Printing
-* **Website:** [gpw.gov.za](https://www.gpw.gov.za)
-* **Attack Status:** Confirmed claim, threat of leaking sovereign government documentation.
-* **Description & Context:** A strategic South African state-owned entity under the Department of Home Affairs, GPW is responsible for printing secure identity documents, passports, visas, and official government gazettes. This constitutes a major compromise impacting digital sovereignty.
+### Regional distribution
 
----
+| Region | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| North Africa | 5 | 4 | 1 |
+| Southern Africa | 3 | 3 | 0 |
+| **Total** | **8** | **7** | **1** |
 
-### 🗓️ March 25, 2024
-#### 🇹🇳 Tunisia - Arab Tunisian Leasing (ATL Leasing)
-* **Incident Identifier:** AFRINTEL-2024-13740
-* **Ransomware Group:** Hunters International
-* **Work Sector:** Financial Services & Asset Leasing
-* **Website:** [atlleasing.com.tn](https://www.atlleasing.com.tn)
-* **Attack Status:** Claimed on the leak site, exfiltration of corporate financial data.
-* **Description & Context:** Listed on the Tunis Stock Exchange, ATL is a prominent Tunisian financial institution specializing in leasing options for professional equipment and real estate dedicated to SMEs.
+### Normalized sector distribution
 
----
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Finance / Banking | 2 | 25.0% |
+| Government / Administration | 1 | 12.5% |
+| Healthcare / Medical | 1 | 12.5% |
+| Manufacturing / Industry | 1 | 12.5% |
+| Media / Entertainment | 1 | 12.5% |
+| Education / University | 1 | 12.5% |
+| Oil & Energy | 1 | 12.5% |
+| **Total** | **8** | **100%** |
 
-### 🗓️ March 25, 2024
-#### 🇪🇬 Egypt - El Ezaby Pharmacy
-* **Incident Identifier:** AFRINTEL-2024-13743
-* **Ransomware Group:** LockBit 3.0
-* **Work Sector:** Healthcare & Pharmaceutical Retail
-* **Website:** [elezabypharmacy.com](https://www.elezabypharmacy.com)
-* **Attack Status:** Encryption of management systems and claims of compromised customer/supplier records.
-* **Description & Context:** Represents one of the largest pharmaceutical retail networks in Egypt, managing a nationwide network of megastores and a critical supply logistics ecosystem.
+### Most visible actors
 
----
+| Actor | Incidents |
+|---|---:|
+| LockBit3 | 4 |
+| RansomHub | 2 |
+| Hunters | 1 |
+| Unattributed source | 1 |
 
-### 🗓️ March 26, 2024
-#### 🇳🇦 Namibia - Agricultural Bank of Namibia (Agribank)
-* **Incident Identifier:** AFRINTEL-2024-13757
-* **Ransomware Group:** LockBit 3.0
-* **Work Sector:** Banking & Agricultural Finance
-* **Website:** [agribank.com.na](https://www.agribank.com.na)
-* **Attack Status:** Published on the LockBit leak site following failed negotiations.
-* **Description & Context:** A state-owned banking institution crucial to the Namibian economy, exclusively dedicated to financing agricultural expansion, aquaculture, and rural land acquisition.
+## 4. Detailed analysis by incident type
 
----
+### 4.1 Ransomware
 
-### 🗓️ March 26, 2024
-#### 🇲🇦 Morocco - Higher School of Commerce and Management (ESGC.MA)
-* **Incident Identifier:** AFRINTEL-2024-TBD
-* **Actor / Group:** Unattributed, publication by the forum account UnknownMember
-* **Work Sector:** Education / Higher Education
-* **Website:** [esgc.ma](https://esgc.ma)
-* **Attack Status:** Claim with a published data sample; not attributed to a ransomware group.
-* **Description & Context:** ESGC.MA is presented as a Moroccan higher-education institution focused on commerce and management. A forum post dated March 26, 2024 claims a 2021 database of approximately 500 entries, with a displayed sample showing names, email addresses, password hashes, phone numbers and account-creation dates. The complete dataset and the underlying compromise are not independently verified. AFRINTEL does not reproduce personal data or credentials from the sample.
+The seven publications cover public, financial, healthcare, industrial, energy, and media environments. Government Printing Works and PGESCo carry particular operational relevance, but the public corpus independently documents neither disruption, encryption, nor an exfiltrated volume.
 
----
+### 4.2 Data leak
 
-### 🗓️ March 29, 2024
-#### 🇪🇬 Egypt - PGESCo (Power Generation Engineering and Services Company)
-* **Incident Identifier:** AFRINTEL-2024-13908
-* **Ransomware Group:** RansomHub
-* **Work Sector:** Energy, Oil/Gas & Infrastructure Engineering
-* **Website:** [pgesco.com](https://www.pgesco.com)
-* **Attack Status:** Official claim and encryption of engineering network shares.
-* **Description & Context:** A major Egyptian engineering firm with international operations, providing project management, consultancy, and engineering for large-scale power plants and industrial infrastructure across the region.
+The ESGC publication references a 2021 database and approximately 500 entries. A sample was visible; personal data and password-related values are not reproduced. The sample supports plausible exposure without establishing a compromise that occurred in March 2024.
 
----
+## 5. Sectoral impact
 
-### 🗓️ March 31, 2024
-#### 🇿🇦 South Africa - Nampak
-* **Incident Identifier:** AFRINTEL-2024-13957
-* **Ransomware Group:** LockBit 3.0
-* **Work Sector:** Industrial Manufacturing (Packaging Solutions)
-* **Website:** [nampak.com](https://www.nampak.com)
-* **Attack Status:** Leaking of sensitive corporate data.
-* **Description & Context:** The largest packaging manufacturer and exporter on the African continent, headquartered in South Africa and operating numerous production plants across sub-Saharan networks.
+No sector clearly dominates except finance with two incidents. The sector spread increases the range of defensive scenarios but does not demonstrate a shared targeting strategy. Public, healthcare, and energy organizations should focus on operational continuity and control of privileged access.
 
----
+## 6. Threat actor profile and risk assessment
 
-## 4. SOC RECOMMENDATIONS & MITigation STRATEGIES
+| Country | Level | Rationale |
+|---|---|---|
+| 🇪🇬 Egypt | 🔴 High | Three ransomware claims across different sectors |
+| 🇿🇦 South Africa | 🔴 High | Two publications, including a sensitive public entity |
+| 🇲🇦 Morocco | 🟠 Medium | Leak with a sample, global volume unverified |
+| 🇳🇦 Namibia / 🇹🇳 Tunisia | 🟡 Low to medium | One ransomware claim each |
 
-In light of the observed tactics, techniques, and procedures (TTPs) utilized by LockBit 3.0 and RansomHub, the SOC and Threat Intelligence teams recommend the immediate deployment of the following mitigation controls:
+## 7. Key trends and intelligence gaps
 
-1. **Active Identity & Access Monitoring:** Enforce robust Multi-Factor Authentication (MFA) across all remote access vectors (VPNs, jump hosts, cloud portals) and strictly audit accounts with administrative privileges.
-2. **Perimeter Hardening against RansomHub:** As this group frequently leverages compromised legitimate credentials or known unpatched vulnerabilities on edge servers, a comprehensive external asset scan (via Shodan/Censys) is urgently required.
-3. **Strict Network Segmentation:** Isolate industrial control systems (OT/SCADA) or critical production environments (such as manufacturing lines or secure printing networks) from corporate office networks.
-4. **Persistence Detection Engineering:** Monitor for anomalous PowerShell execution patterns and the unauthorized use of dual-use administration utilities (Living-off-the-Land) such as AnyDesk, NetSupport, or Rclone used for data staging and exfiltration.
-5. **Web Application & Credential Hygiene (Education Sector):** For platforms handling student and staff personal data, such as the claim affecting ESGC.MA, enforce strong password hashing (bcrypt/Argon2), rotate credentials on any confirmed exposure, and monitor for redistribution of the claimed dataset across other cybercriminal forums.
+- **Observed — high confidence:** ransomware accounts for 7 of 8 incidents.
+- **Observed — high confidence:** LockBit3 is associated with half the corpus.
+- **Gap:** no public DFIR report was identified in the sources reviewed to confirm ransomware tradecraft.
+- **Gap:** the sources do not establish whether the ESGC database was acquired in 2021 or republished later.
+- **Collection need:** victim timelines, evidence of disruption, technical indicators, and provenance of the ESGC publication.
 
----
+## 8. Contextual MITRE ATT&CK mapping
 
-## 5. ACKNOWLEDGEMENTS & EDITORIAL TEAM
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Detection relevant to ransomware risk; encryption not publicly observed |
+| Preventive | T1490 — Inhibit System Recovery | Backup-integrity control; behavior not observed |
+| Preventive | T1567 — Exfiltration Over Web Service | Outbound-data monitoring; ESGC channel unknown |
 
-**Principal Author:** *Adama ASSIONGBON* *Senior SOC & Cyber Threat Intelligence (CTI) Consultant* Casablanca, Morocco.  
-[LinkedIn Professional Profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
+## 9. Recommendations
 
-**Data Source:** OSINT Registries & Dark Web Leak Site Monitoring - AFRINTEL Project 2024.
+- **Finance and public sector:** strengthen privileged-access controls and crisis procedures.
+- **Healthcare and energy:** segment critical systems and test degraded operating modes.
+- **Education:** reset affected accounts if exposure is confirmed and monitor credential reuse.
+- **All organizations:** test restoration from isolated backups.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Track the published domains and organizations; no intrusion TTP is confirmed by the corpus. |
+| **Assumption** | Hunt for abnormal privileged authentication, database exports, and archive staging before publication dates. |
+| **Preventive** | Alert on mass encryption, shadow-copy or backup deletion, and unusual outbound transfers. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritize the Egyptian and South African environments represented in the corpus. |
+| 2 | **Assumption** | Check for shared exposed accounts or services without attributing an undocumented initial-access method. |
+| 3 | **Preventive** | Reduce external exposure, require phishing-resistant MFA, and isolate backups. |
+
+## 12. Conclusion
+
+March is dominated by ransomware publications, with clear geographic concentration but limited public technical evidence. The ESGC leak provides more detail on data content than the other seven cases, without resolving acquisition timing. Defensive action should remain grounded in internal verification rather than presumed actor TTPs.
+
+**AFRINTEL — TLP:CLEAR**
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

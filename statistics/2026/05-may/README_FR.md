@@ -73,7 +73,7 @@ Ces 54 incidents ont une seule victime identifiée par pays. Les 3 incidents mul
 | **Sous-total (directs)** | **54** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Incidents directs par pays - Mai 2026"
     x-axis ["Égypte","Afrique du Sud","Maroc","Tunisie","Nigéria","Algérie","Tanzanie","Éthiopie","Ghana","Côte d'Ivoire","Kenya","Sénégal"]
     y-axis "Incidents" 0 --> 17
@@ -143,7 +143,7 @@ xychart-beta
 ### Ransomware par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware par pays - Mai 2026"
     x-axis ["Égypte","Nigeria","Tunisie","Afrique du Sud","Ghana","Sénégal","Côte d'Ivoire"]
     y-axis "Ransomware" 0 --> 8
@@ -153,7 +153,7 @@ xychart-beta
 ### Fuites de données par pays
 
 ```mermaid
-xychart-beta
+xychart
     title "Fuites de données par pays (directs) - Mai 2026"
     x-axis ["Afrique du Sud","Égypte","Maroc","Tunisie","Algérie","Tanzanie","Éthiopie","Kenya"]
     y-axis "Fuites de données" 0 --> 14
@@ -174,7 +174,7 @@ xychart-beta
 > Les incidents multi-pays sont comptabilisés une seule fois dans le total global de 57. La colonne "Exposition multi-pays" indique les touches additionnelles par région issues de ces incidents. Total pays distincts : 18 répartis sur 4 régions.
 
 ```mermaid
-xychart-beta
+xychart
     title "Incidents directs par région - Mai 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique de l'Est"]
     y-axis "Incidents directs" 0 --> 32
@@ -206,7 +206,7 @@ xychart-beta
 | **Total** | **57** | **100 %** |
 
 ```mermaid
-xychart-beta
+xychart
     title "Répartition sectorielle - Mai 2026"
     x-axis ["Gouvernement","RH","Industrie","E-commerce","Éducation","Finance","Télécoms","Énergie","Alimentation","Transport","ONG","Hôtellerie","Santé","Sports","Agrégation","Services"]
     y-axis "Incidents" 0 --> 21
@@ -231,7 +231,7 @@ xychart-beta
 | Fiches hors classement affiché | 27 | Mixte |
 
 ```mermaid
-xychart-beta
+xychart
     title "Acteurs les plus actifs - Mai 2026"
     x-axis ["Databasehooligan","404Crew CT","TheGentlemen","NightSpire","INT3X","Keymous","cc5ab","NullSec NG","anisanas2","Hors classement"]
     y-axis "Incidents" 0 --> 30

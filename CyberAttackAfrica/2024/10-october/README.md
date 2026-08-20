@@ -1,192 +1,162 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-October%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-October%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# CTI Report - October 2024: South Africa concentration and energy infrastructure hit in Ghana
+# AFRINTEL CTI Report — October 2024
 
-👉🏾 [Version française disponible ici](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-### 1. Executive summary
+## 1. Executive summary
 
-October 2024 records **12 documented victims** across 8 countries. South Africa is the dominant target with 4 victims. The month features two notable attacks: **Ghana's Volta River Authority** (national electricity producer) claimed by BlackSuit, and **Libya's Ministry of Interior** targeted by KillSec. RansomHub and Sarcoma each strike twice, consolidating their presence on the continent, while Algeria's Ministry of National Education is the subject of a recirculated data-sample claim attributed to Moroccan Empire. An unconfirmed forum listing also surfaced for **Madagascar's University of Antananarivo**, offered by the account RainbowBF on the Breached platform; the underlying content remained paywalled and inaccessible to AFRINTEL.
+October 2024 contains **12 incidents**: **8 ransomware claims** and **4 data leaks**. South Africa ranks first with four publications and Algeria records two. North Africa accounts for five incidents, followed by Southern Africa with four.
 
-👉🏾 [Victims list](./victims.md)
+The corpus combines a notable volume of education incidents with publications affecting energy, government, and industry. National Edging is the best-supported case in AFRINTEL's monthly data, while the University of Antananarivo publication remained inaccessible behind a forum credit system. This evidentiary difference must remain visible.
 
-**Key figures:**
-- 🔹 **12 victims** identified
-- 🔹 **9 active actors/groups**: RansomHub (2), Sarcoma (2), KillSec (2), BlackSuit (1), RAWorld (1), bxxxx1 (1), Tanaka (1), Moroccan Empire (1), RainbowBF (1)
-- 🔹 **Countries affected**: South Africa (4), Algeria (2), Madagascar (1), Ghana (1), Libya (1), Egypt (1), Morocco (1), Nigeria (1)
-- 🔹 **Sectors**: Education (3), IT Consulting, Tech/Mobility, Mining/Industrial (2), Energy, Government (2), Legal, Healthcare
+See [victims.md](./victims.md).
 
-### Monthly aggregate exposure view
+## 2. Methodology
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (33.3% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+This report covers publications assigned to October 2024. Paywalled or locked material is not purchased, and its existence does not increase confidence. Reposts, such as the Algerian Ministry of Education case, are kept separate from a new intrusion.
 
----
+Statistics derive from the **12 incidents** in [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
 
-### 2. Attack timeline
+## 3. Global overview
 
-| Date | Victim | Country | Ransomware group |
-|------|--------|---------|-----------------|
-| October 3 | University of Antananarivo | Madagascar | RainbowBF |
-| October 4 | Enterpriseoutsourcing | South Africa | RansomHub |
-| October 5 | Winwinza | South Africa | RansomHub |
-| October 7 | Yassir | Algeria | KillSec |
-| October 9 | Unidentified Nigerian healthcare facilities provider | Nigeria | Tanaka |
-| October 9 | GMG Mining Supplies | South Africa | Sarcoma |
-| October 9 | National Edging | South Africa | Sarcoma |
-| October 11 | Volta River Authority (VRA) | Ghana | BlackSuit |
-| October 16 | Ministry of Interior (moi.gov.ly) | Libya | KillSec |
-| October 17 | Ministry of National Education (education.gov.dz) | Algeria | Moroccan Empire |
-| October 21 | Al Massira University Residences | Morocco | bxxxx1 |
-| October 25 | Matouk Bassiouny | Egypt | RAWorld |
+| Indicator | Value |
+|---|---:|
+| Incidents / Countries | **12 / 8** |
+| Ransomware | **8** |
+| Data leaks | **4** |
+| Access sales / Defacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Ransomware Attacks in Africa - October 2024
-    October 3 : University of Antananarivo (Madagascar) - RainbowBF
-    October 4 : Enterpriseoutsourcing (South Africa) - RansomHub
-    October 5 : Winwinza (South Africa) - RansomHub
-    October 7 : Yassir (Algeria) - KillSec
-    October 9 : Unidentified Nigerian healthcare facilities provider (Nigeria) - Tanaka
-    October 9 : GMG Mining Supplies (South Africa) - Sarcoma
-                National Edging (South Africa) - Sarcoma
-    October 11 : Volta River Authority (Ghana) - BlackSuit
-    October 16 : Ministry of Interior Libya - KillSec
-    October 17 : Ministry of National Education (Algeria) - Moroccan Empire
-    October 21 : Al Massira University Residences (Morocco) - bxxxx1
-    October 25 : Matouk Bassiouny (Egypt) - RAWorld
-```
+### Country ranking
 
----
-
-### 3. Victim analysis
-
-#### 3.1 By country
-
-| Country | Number of attacks |
-|---------|-----------------|
-| South Africa | 4 |
-| Algeria | 2 |
-| Madagascar | 1 |
-| Ghana | 1 |
-| Libya | 1 |
-| Egypt | 1 |
-| Morocco | 1 |
-| Nigeria | 1 |
+| Country | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| 🇿🇦 South Africa | 4 | 4 | 0 |
+| 🇩🇿 Algeria | 2 | 1 | 1 |
+| 🇬🇭 Ghana | 1 | 1 | 0 |
+| 🇱🇾 Libya | 1 | 1 | 0 |
+| 🇲🇬 Madagascar | 1 | 0 | 1 |
+| 🇲🇦 Morocco | 1 | 0 | 1 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 |
+| 🇪🇬 Egypt | 1 | 1 | 0 |
+| **Total** | **12** | **8** | **4** |
 
 ```mermaid
-pie
-    title Distribution by country - October 2024 (12 victims)
-    "South Africa" : 4
-    "Algeria" : 2
-    "Madagascar" : 1
-    "Ghana" : 1
-    "Libya" : 1
-    "Egypt" : 1
-    "Morocco" : 1
-    "Nigeria" : 1
+xychart
+    title "Incidents by country — October 2024"
+    x-axis ["ZA","DZ","GH","LY","MG","MA","NG","EG"]
+    y-axis "Incidents" 0 --> 5
+    bar [4,2,1,1,1,1,1,1]
 ```
-
-#### 3.2 By sector
-
-| Sector | Count |
-|--------|-------|
-| Education | 3 |
-| IT Consulting | 1 |
-| Mining / Industrial | 2 |
-| Tech / Mobility | 1 |
-| Energy / Electricity | 1 |
-| Government | 2 |
-| Legal Consulting | 1 |
-| Healthcare / Medical | 1 |
 
 ```mermaid
-xychart-beta
-    title "Targeted Sectors - October 2024"
-    x-axis ["Education", "IT Consulting", "Mining/Industrial", "Tech", "Energy", "Government", "Legal", "Healthcare"]
-    y-axis "Number of attacks" 0 to 3
-    bar [3, 1, 2, 1, 1, 2, 1, 1]
+pie showData
+    title Incident-type distribution — October 2024
+    "Ransomware" : 8
+    "Data leaks" : 4
 ```
 
-#### 3.3 Ransomware groups
+### Regional distribution
 
-| Ransomware group | Number of attacks |
-|-----------------|-----------------|
+| Region | Total | Ransomware | Data leak |
+|---|---:|---:|---:|
+| North Africa | 5 | 3 | 2 |
+| Southern Africa | 4 | 4 | 0 |
+| West Africa | 2 | 1 | 1 |
+| Indian Ocean | 1 | 0 | 1 |
+| **Total** | **12** | **8** | **4** |
+
+### Normalized sector distribution
+
+| Sector | Incidents | Share |
+|---|---:|---:|
+| Education / University | 4 | 33.3% |
+| Technology / IT | 2 | 16.7% |
+| Manufacturing / Industry | 2 | 16.7% |
+| Healthcare / Medical | 1 | 8.3% |
+| Oil & Energy | 1 | 8.3% |
+| Government / Administration | 1 | 8.3% |
+| Legal / Justice | 1 | 8.3% |
+| **Total** | **12** | **100%** |
+
+### Most visible actors
+
+| Actor | Incidents |
+|---|---:|
+| KillSec | 2 |
 | RansomHub | 2 |
 | Sarcoma | 2 |
-| KillSec | 2 |
-| BlackSuit | 1 |
-| RAWorld | 1 |
-| bxxxx1 | 1 |
-| Tanaka | 1 |
-| Moroccan Empire | 1 |
-| RainbowBF | 1 |
+| Six other actors or sources | 1 each |
 
-```mermaid
-gantt
-    title Active Ransomware Groups - October 2024
-    dateFormat X
-    axisFormat %s
-    section RansomHub
-    RansomHub : 0, 2
-    section Sarcoma
-    Sarcoma : 0, 2
-    section KillSec
-    KillSec : 0, 2
-    section BlackSuit
-    BlackSuit : 0, 1
-    section RAWorld
-    RAWorld : 0, 1
-    section bxxxx1
-    bxxxx1 : 0, 1
-    section Tanaka
-    Tanaka : 0, 1
-    section Moroccan Empire
-    Moroccan Empire : 0, 1
-    section RainbowBF
-    RainbowBF : 0, 1
-```
+## 4. Detailed analysis by incident type
 
----
+### 4.1 Ransomware
 
-### 4. Key observations
+The eight publications include IT providers, a school, a mobility platform, two industrial suppliers, Volta River Authority, Libya's Ministry of Interior, and a law firm. Their presence in one month does not demonstrate a common attack chain. National Edging has more substantial evidence than the other cases.
 
-- **University of Antananarivo (Madagascar)**: an unconfirmed "database access" listing posted by the account RainbowBF on the Breached forum on October 3. The content was paywalled behind the forum's credit system and inaccessible to AFRINTEL; no sample, scope or authenticity could be assessed, and the claim is retained as unverified.
-- **South Africa remains the leading target**: 4 out of 12 victims are South African, 2 from RansomHub and 2 from Sarcoma in coordinated same-day strikes (October 9). Mining supply chain appears specifically targeted.
-- **Volta River Authority (Ghana)**: BlackSuit claims Ghana's main electricity producer a direct attack on critical national energy infrastructure supplying hydroelectric and thermal power.
-- **Yassir (Algeria)**: KillSec targets one of Africa's fastest-growing super-apps (VTC, delivery, grocery) with operations across Algeria and international markets. Significant user data exposure risk.
-- **Libya Ministry of Interior**: KillSec claims the Libyan government's interior ministry, an extremely sensitive target with potential national security implications.
-- **Law firm targeted (Egypt)**: RAWorld claims Matouk Bassiouny, a top Cairo law firm a high-value target for confidential legal and corporate documents.
-- **Sarcoma emergence**: the group claims two South African victims on the same day (October 9), suggesting active prospection in the country.
-- **Ministry of National Education (Algeria)**: a recirculated claim, originally dated October 6, 2022 and attributed to Moroccan Empire, is reposted by AmeliaBeaumont on October 17 and links to a dump first shared in September 2023. The sample includes plaintext credentials alongside identity and schooling data for an alleged 90,000 students; the total volume was not independently verified.
-- **Student accommodation exposure (Morocco)**: the bxxxx1 publication includes email addresses and claims control-panel access, but the access method and direct administrative compromise are not technically demonstrated.
+### 4.2 Data leaks
 
----
+The four leaks concern the University of Antananarivo, an unidentified healthcare provider in Nigeria, Algeria's Ministry of Education, and Al Massira university residences. The Madagascar case remains low-confidence because the content was inaccessible; the others contain visible samples or indicators of varying scope.
 
-```mermaid
-xychart-beta
-    title "Monthly Evolution of Attacks (Jan - Oct 2024)"
-    x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"]
-    y-axis "Number of attacks" 0 to 16
-    bar [3, 5, 7, 5, 8, 3, 7, 14, 4, 12]
-```
+## 5. Sectoral impact
 
-### 5. Recommendations
+Education accounts for one third of the corpus across schools, universities, student accommodation, and national administration. Risks concern identities, academic records, and institutional accounts. Energy and Libya's interior ministry have high potential impact by function, even without public evidence of disruption.
 
-| Domain | Recommended action |
-|--------|--------------------|
-| Energy / Electricity | Assess BlackSuit TTPs, enforce network segmentation between SCADA and corporate IT, implement backup power control systems. |
-| Mining & Supply chain | Audit supplier access controls, monitor for data staging and exfiltration, review Sarcoma IOCs. |
-| Government | Treat any claims against ministries as critical implement zero-trust access for sensitive systems. |
-| Education / Student accommodation | Enforce MFA for administration panels, review privileged sessions, protect applicant contact data, and prepare phishing notifications. |
-| Higher education | Monitor cybercriminal forums for institutional database listings, even when paywalled, and validate exposure through incident response rather than dismissing unverifiable claims. |
-| Tech platforms / Super-apps | Protect user databases with encryption at rest, enforce data minimization, prepare breach notification procedures. |
-| Legal firms | Restrict access to client files, enforce DLP, treat legal data as high-value target equivalent to financial data. |
+## 6. Threat actor profile and risk assessment
 
----
+| Scope | Level | Rationale |
+|---|---|---|
+| 🇿🇦 South Africa | 🔴 High | Four publications, including two industrial cases |
+| 🇩🇿 Algeria | 🔴 High | Ransomware and an education-ministry leak |
+| 🇬🇭 Ghana / 🇱🇾 Libya | 🔴 High | National energy and interior ministry |
+| Other countries | 🟠 Medium | One leak per country, with varying evidence |
 
-*Report from AFRINTEL OSINT data. Free distribution (TLP:CLEAR)*
+## 7. Key trends and intelligence gaps
+
+- **Observed — high confidence:** education accounts for 4 of 12 incidents.
+- **Observed — high confidence:** South Africa contains all industrial publications for the month.
+- **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware cases.
+- **Gap:** University of Antananarivo content was inaccessible and cannot be qualified.
+- **Collection need:** institution confirmation, repost chronology, and service status for VRA and Libya's interior ministry.
+
+## 8. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Use |
+|---|---|---|
+| Preventive | T1486 — Data Encrypted for Impact | Encryption detection; not confirmed |
+| Preventive | T1567 — Exfiltration Over Web Service | Transfer monitoring; channels not observed |
+| Assumption | T1078 — Valid Accounts | Risk to assess in education and government environments |
+
+## 9. Recommendations
+
+- **Education:** require phishing-resistant MFA and review student, staff, and administrator accounts.
+- **Energy and government:** segment essential systems and test continuity plans.
+- **Industry:** separate IT from production and control third-party access.
+- **Healthcare:** identify the exact organization before notification or public communication.
+
+## 10. SOC and tactical recommendations
+
+| Qualification | Action |
+|---|---|
+| **Observed** | Monitor the cited organizations and domains; evidentiary depth varies significantly. |
+| **Assumption** | Hunt for credential reuse, abnormal remote access, and database exports. |
+| **Preventive** | Detect mass encryption, backup deletion, obfuscated PowerShell, and atypical outbound transfers. |
+
+## 11. Strategic recommendations
+
+| Priority | Qualification | Measure |
+|---:|---|---|
+| 1 | **Observed** | Prioritize education and public services represented in the corpus. |
+| 2 | **Assumption** | Assess identity risks without presenting an access vector as established. |
+| 3 | **Preventive** | Reduce external exposure and isolate critical backups. |
+
+## 12. Conclusion
+
+October combines a real education concentration with incidents supported by very different evidence. The report does not place a locked publication, a visible sample, and a ransomware claim without telemetry on the same footing. This evidence hierarchy is essential for sound prioritization.
+
+**AFRINTEL — TLP:CLEAR**
+
+[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)

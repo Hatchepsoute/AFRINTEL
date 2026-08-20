@@ -1,179 +1,160 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Leak-red)
-![Month](https://img.shields.io/badge/Month-July%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Juillet%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Juillet 2024 : Pic d’activité des ransomwares en Afrique
-👉🏾 [English version available here](./README.md)
-### 1. Résumé exécutif
+# Rapport CTI AFRINTEL — Juillet 2024
 
-En juillet 2024, l'Afrique a enregistré **11 victimes** documentées dans ce fichier : **7 victimes de ransomware**, revendiquées par six groupes différents, et **4 revendications de fuite de données**. Trois de ces revendications concernent l'**Algérie**, toutes issues d'une même compilation republiée le 11 juillet 2024 par le compte Addka72424 (à l'origine attribuée à FriendlyChemist), regroupant des échantillons anciens datés de 2019 à 2023 et associés à l'Hôpital Chahids Mahmoudi, à l'Université de Tlemcen et au portail Algeria.com. La quatrième est une revendication du 2 juillet par l'acteur TheColorYellow visant un **établissement d'enseignement militaire éthiopien** (les documents examinés par AFRINTEL portent l'en-tête du FDRE Defence War College, bien que le domaine cité dans la publication, nwc.ndu.edu, corresponde à la National Defense University américaine, sans lien apparent). Le mois est marqué par une **forte reprise** de l'activité ransomware après le creux de juin (3 victimes), une grande diversité géographique et sectorielle, ainsi que par la réapparition d'un ancien jeu de données algériennes en circulation depuis plusieurs années sur les forums cybercriminels.
+👉🏾 [English version](./README.md)
 
-**Chiffres clés :**
-- 🔹 **11 victimes** identifiées
-- 🔹 **8 sources** : KillSec (1), Blacksuit (1), Hunters (1), Madliberator (2), LockBit3 (1), RansomHouse (1), Addka72424 (3), TheColorYellow (1)
-- 🔹 **Pays touchés** : Afrique du Sud (3), Algérie (3), Tunisie (1), Kenya (1), Zimbabwe (1), Égypte (1), Éthiopie (1)
-- 🔹 **Secteurs** : Logistique, Santé (laboratoire public), Transport routier urbain, Finance, Services de conseil, Services aux entreprises, Industries lourdes, Santé (hôpital privé), Éducation, Médias / Portail web, Défense / Enseignement militaire
-- 🔹 **Types d'incident** : Ransomware (7), Fuite de données (4)
-### Vue agrégée mensuelle de l’exposition
+## 1. Résumé exécutif
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **4 fiches** (36.4% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+Juillet 2024 compte **11 incidents** : **7 revendications ransomware** et **4 fuites de données**. L’Afrique du Sud et l’Algérie arrivent en tête avec trois incidents chacune. La concentration algérienne doit être interprétée avec prudence : trois publications proviennent d’une même compilation de bases anciennes remise en circulation.
 
+Le mois combine des cibles de santé, d’éducation, de défense, de transport, de finance et d’industrie minière. L’incident attribué au National War College présente une incohérence importante : le domaine cité appartient à une institution américaine, tandis que les documents visibles renvoient à un établissement militaire éthiopien. AFRINTEL conserve cette limite au lieu de corriger silencieusement l’attribution.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
----
+Voir [victims_FR.md](./victims_FR.md).
 
-### 2. Chronologie des attaques
+## 2. Méthodologie
 
-| Date       | Victime                          | Pays             | Acteur / Groupe | Type | Date de la fuite |
-|------------|----------------------------------|------------------|------------------|------|-------------------|
-| 1er juillet | Maxcess-logistics                | Tunisie          | KillSec           | Ransomware | - |
-| 2 juillet  | National War College (nwc.ndu.edu) | Éthiopie       | TheColorYellow    | Fuite de données | - |
-| 5 juillet  | National health laboratory services | Afrique du Sud | Blacksuit         | Ransomware | - |
-| 11 juillet | Hôpital Chahids Mahmoudi (hcm-dz.com) | Algérie      | Addka72424 (repost FriendlyChemist) | Fuite de données | 21 septembre 2023 |
-| 11 juillet | Université de Tlemcen (univ-tlemcen.dz) | Algérie   | Addka72424 (repost FriendlyChemist) | Fuite de données | 27 juin 2022 |
-| 11 juillet | Algeria.com (portail web)        | Algérie          | Addka72424 (repost FriendlyChemist) | Fuite de données | Septembre 2019 |
-| 13 juillet | Kenya urban roads authority      | Kenya            | Hunters           | Ransomware | - |
-| 17 juillet | Zb financial holdings            | Zimbabwe         | Madliberator      | Ransomware | - |
-| 17 juillet | Cities network                   | Afrique du Sud   | Madliberator      | Ransomware | - |
-| 17 juillet | Assih                            | Égypte           | LockBit3          | Ransomware | - |
-| 22 juillet | Sibanye-stillwater               | Afrique du Sud   | RansomHouse       | Ransomware | - |
+Le rapport couvre les publications classées en juillet 2024. Une republication reste un incident de circulation de données dans le corpus, mais n’est pas présentée comme une nouvelle intrusion. Les niveaux de confiance reflètent la qualité des éléments visibles et non la seule ancienneté ou notoriété de la source.
 
-```mermaid
-timeline
-    title Attaques recensées dans ce fichier - Juillet 2024
-    1er juillet : Maxcess-logistics (Tunisie) - KillSec
-    2 juillet : National War College (Éthiopie) - TheColorYellow
-    5 juillet : NHLS (Afrique du Sud) - Blacksuit
-    11 juillet : Hôpital Chahids Mahmoudi (Algérie) - Addka72424<br>Université de Tlemcen (Algérie) - Addka72424<br>Algeria.com (Algérie) - Addka72424
-    13 juillet : Kenya Urban Roads Authority - Hunters
-    17 juillet : ZB Financial Holdings (Zimbabwe) - Madliberator<br>Cities Network (Afrique du Sud) - Madliberator<br>Assih (Égypte) - LockBit3
-    22 juillet : Sibanye-Stillwater (Afrique du Sud) - RansomHouse
-```
----
+Les statistiques dérivent des **11 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
 
-### 3. Analyse des victimes
+## 3. Vue globale
 
-#### 3.1 Par pays
+| Indicateur | Valeur |
+|---|---:|
+| Incidents / Pays | **11 / 7** |
+| Ransomware | **7** |
+| Fuites de données | **4** |
+| Ventes d’accès / Défacement | **0 / 0** |
 
-| Pays               | Nombre d’attaques |
-|--------------------|------------------|
-| Afrique du Sud     | 3                |
-| Algérie            | 3                |
-| Tunisie            | 1                |
-| Kenya              | 1                |
-| Zimbabwe           | 1                |
-| Égypte             | 1                |
-| Éthiopie           | 1                |
+### Classement par pays
+
+| Pays | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 3 | 3 | 0 |
+| 🇩🇿 Algérie | 3 | 0 | 3 |
+| 🇰🇪 Kenya | 1 | 1 | 0 |
+| 🇹🇳 Tunisie | 1 | 1 | 0 |
+| 🇿🇼 Zimbabwe | 1 | 1 | 0 |
+| 🇪🇬 Égypte | 1 | 1 | 0 |
+| 🇪🇹 Éthiopie | 1 | 0 | 1 |
+| **Total** | **11** | **7** | **4** |
 
 ```mermaid
-pie
-    title Répartition par pays - Juillet 2024 (11 victimes)
-    "Afrique du Sud" : 3
-    "Algérie" : 3
-    "Tunisie" : 1
-    "Kenya" : 1
-    "Zimbabwe" : 1
-    "Égypte" : 1
-    "Éthiopie" : 1
+xychart
+    title "Incidents par pays — juillet 2024"
+    x-axis ["ZA","DZ","KE","TN","ZW","EG","ET"]
+    y-axis "Incidents" 0 --> 4
+    bar [3,3,1,1,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur                                   | Nombre |
-|--------------------------------------------|--------|
-| Logistique                                 | 1      |
-| Services de santé (laboratoire public)     | 1      |
-| Transport routier urbain                   | 1      |
-| Organismes financiers                      | 1      |
-| Services de conseil urbain                 | 1      |
-| Services aux entreprises / Conseil         | 1      |
-| Industries lourdes (mines)                 | 1      |
-| Santé (hôpital privé)                      | 1      |
-| Éducation / Enseignement supérieur         | 1      |
-| Médias / Portail web                       | 1      |
-| Défense / Enseignement militaire           | 1      |
 
 ```mermaid
-xychart-beta
-    title "Secteurs ciblés - Juillet 2024"
-    x-axis ["Logistique", "Santé (labo)", "Transport", "Finance", "Conseil urbain", "Services entr.", "Ind. lourdes", "Santé (hôpital)", "Éducation", "Médias", "Défense"]
-    y-axis "Nombre d'attaques" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Répartition par type — juillet 2024
+    "Ransomware" : 7
+    "Fuites de données" : 4
 ```
 
-#### 3.3 Groupes ransomware
+### Répartition régionale
 
-| Groupe ransomware | Nombre d’attaques |
-|------------------|------------------|
-| Madliberator     | 2                |
-| KillSec          | 1                |
-| Blacksuit        | 1                |
-| Hunters          | 1                |
-| LockBit3         | 1                |
-| RansomHouse      | 1                |
+| Région | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| Afrique du Nord | 5 | 2 | 3 |
+| Afrique australe | 4 | 4 | 0 |
+| Afrique de l’Est | 2 | 1 | 1 |
+| **Total** | **11** | **7** | **4** |
 
-```mermaid
-gantt
-    title Groupes ransomware actifs - Juillet 2024
-    dateFormat X
-    axisFormat %s
-    section Madliberator
-    Madliberator : 0, 2
-    section KillSec
-    KillSec : 0, 1
-    section Blacksuit
-    Blacksuit : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section LockBit3
-    LockBit3 : 0, 1
-    section RansomHouse
-    RansomHouse : 0, 1
-```
+### Répartition sectorielle normalisée
 
-#### 3.4 Sources de fuite de données
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Santé / Médical | 2 | 18,2 % |
+| Services professionnels / Entreprises | 2 | 18,2 % |
+| Transport / Logistique | 2 | 18,2 % |
+| Défense / Sécurité | 1 | 9,1 % |
+| Éducation / Université | 1 | 9,1 % |
+| Médias / Divertissement | 1 | 9,1 % |
+| Finance / Banque | 1 | 9,1 % |
+| Mines / Industries extractives | 1 | 9,1 % |
+| **Total** | **11** | **100 %** |
 
-| Source | Nombre de revendications |
-|--------|--------------------------|
-| Addka72424 (republication, origine attribuée à FriendlyChemist) | 3 |
-| TheColorYellow (publication sur RaidForums) | 1 |
+### Acteurs et sources les plus visibles
 
----
+| Acteur ou source | Incidents |
+|---|---:|
+| Addka72424, republication attribuée à FriendlyChemist | 3 |
+| Mad Liberator | 2 |
+| Six autres acteurs ou sources | 1 chacun |
 
-### 4. Points d’attention
+## 4. Analyse détaillée par type d’incident
 
-- **Reprise d’activité ransomware** : 7 attaques ransomware en juillet contre 3 en juin - retour à un niveau élevé.
-- **Madliberator** apparaît pour la première fois et frappe deux fois le même jour (17 juillet) au Zimbabwe et en Afrique du Sud.
-- **Secteur santé** : le laboratoire national sud-africain (NHLS) est une cible critique côté ransomware.
-- **Administrations publiques** : le Kenya Urban Roads Authority et Assih (Égypte) montrent l’intérêt pour les infrastructures étatiques.
-- **Industrie minière** : Sibanye-Stillwater (or, platine) est une cible stratégique.
-- **Nouveau groupe** : RansomHouse - actif sur le continent.
-- **Compilation algérienne republiée** : les trois entrées du 11 juillet 2024 (Hôpital Chahids Mahmoudi, Université de Tlemcen, Algeria.com) proviennent d’une seule compilation intitulée « Algerian Databases Collection », republiée par le compte Addka72424 à partir d’un post initial attribué à FriendlyChemist. Il ne s’agit pas de nouvelles intrusions mais de la recirculation d’échantillons datés de 2019 à 2023. Elles sont comptabilisées séparément des ransomwares comme des fuites de données, avec des niveaux de confiance différenciés (moyen pour l’hôpital, élevé pour l’université, faible pour Algeria.com) selon la qualité des échantillons observés.
-- **Éthiopie, incohérence de domaine signalée** : la revendication du 2 juillet par TheColorYellow cite le domaine « nwc.ndu.edu », qui appartient en réalité au National War College de la National Defense University américaine, mais les échantillons de documents montrés portent l'emblème et l'en-tête en amharique du FDRE Defence War College, un établissement militaire éthiopien. AFRINTEL enregistre la revendication contre l'établissement éthiopien identifiable par l'en-tête et signale le domaine cité par l'acteur comme non vérifié, plutôt que de l'écarter ou de le corriger silencieusement.
+### 4.1 Ransomware
 
----
+Les sept publications couvrent Maxcess Logistics, National Health Laboratory Service, Kenya Urban Roads Authority, ZB Financial Holdings, Cities Network, Assih et Sibanye-Stillwater. Mad Liberator apparaît deux fois le même jour, mais les sources publiques ne suffisent pas à relier techniquement les deux cas.
 
-```mermaid
-xychart-beta
-    title "Évolution mensuelle des attaques (janv. à juil. 2024)"
-    x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil"]
-    y-axis "Nombre d'attaques" 0 to 12
-    bar [2, 4, 5, 4, 8, 3, 11]
-```
-### 5. Recommandations pour juillet 2024
+### 4.2 Fuites de données
 
-| Domaine                        | Action recommandée |
-|--------------------------------|--------------------|
-| Laboratoires et santé          | Isoler les systèmes critiques, surveiller les accès aux données sensibles. |
-| Administrations publiques      | Mettre en place une surveillance renforcée des RDP et VPN, segmenter les réseaux. |
-| Industries minières            | Sauvegardes hors ligne, audits de sécurité OT. |
-| Établissements hospitaliers    | Vérifier si les journaux de messagerie republiés correspondent à un système réel, contrôler les accès à la passerelle de messagerie et sensibiliser le personnel médical au phishing exploitant des références de patients. |
-| Enseignement supérieur         | Vérifier l’état de la base Moodle concernée, réinitialiser les comptes exposés en priorité les comptes administrateurs, et contrôler l’étendue de la fédération d’authentification avec les autres universités identifiées. |
-| Défense / Enseignement militaire | Auditer les journaux d'accès au serveur Exchange et l'activité d'export de boîtes aux lettres, restreindre la diffusion des documents administratifs, et vérifier de façon indépendante les enregistrements de domaine de l'établissement pour détecter une usurpation ou une confusion de métadonnées dans de futures revendications. |
-| Toutes organisations           | Suivre les nouveaux groupes (Madliberator, RansomHouse) et leurs modes opératoires, et surveiller la réutilisation d’anciens jeux de données algériens en circulation sur les forums. |
+Les trois entrées algériennes sont des republications d’une compilation annoncée comme datant de 2019 à 2023. Elles mesurent une nouvelle circulation de données, non trois intrusions de juillet. Le cas éthiopien reste attribué à l’institution identifiable dans les documents, avec le domaine source conservé comme incohérent et non vérifié.
 
----
+## 5. Impact sectoriel
 
+La santé, les services professionnels et le transport comptent chacun deux incidents. La sensibilité la plus élevée concerne les données médicales, éducatives et militaires visibles ou revendiquées. Les organisations minières et de transport présentent surtout un risque de continuité, qui ne peut être quantifié depuis les publications seules.
+
+## 6. Profil des acteurs et évaluation du risque
+
+| Périmètre | Niveau | Justification |
+|---|---|---|
+| 🇩🇿 Algérie | 🔴 Élevé | Trois fuites republiées, dont santé et éducation |
+| 🇿🇦 Afrique du Sud | 🔴 Élevé | Trois revendications ransomware |
+| 🇪🇹 Éthiopie | 🔴 Élevé | Documents militaires visibles, attribution de domaine incohérente |
+| Autres pays | 🟠 Moyen | Une publication par pays |
+
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** sept incidents ransomware et quatre fuites.
+- **Observé — confiance élevée :** trois fuites algériennes relèvent d’une même republication et non d’intrusions nouvelles établies.
+- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les revendications ransomware.
+- **Lacune :** l’organisation exacte et le domaine technique du cas éthiopien restent partiellement contradictoires.
+- **Collecte attendue :** origine de la compilation algérienne, confirmation des établissements et indicateurs techniques des cas ransomware.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Utilisation |
+|---|---|---|
+| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les sept revendications |
+| Préventif | T1567 — Exfiltration Over Web Service | Surveillance des sorties ; méthode d’acquisition des fuites inconnue |
+| Hypothèse | T1078 — Valid Accounts | Scénario de compromission à rechercher, sans identifiant valide observé |
+
+## 9. Recommandations
+
+- **Santé et éducation :** identifier les jeux anciens, réinitialiser les comptes exposés et surveiller les republications.
+- **Défense :** vérifier l’attribution institutionnelle avant toute réponse publique et protéger les systèmes documentaires.
+- **Transport et mines :** segmenter les environnements opérationnels et tester la continuité.
+- **Toutes les organisations :** préserver les journaux et maintenir des sauvegardes immuables.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Rechercher les comptes et applications mentionnés dans les échantillons ; aucune chaîne ransomware n’est confirmée. |
+| **Hypothèse** | Examiner les authentifications anormales, exports de bases et archives préparées avant publication. |
+| **Préventif** | Détecter chiffrement massif, inhibition des sauvegardes et transferts sortants volumineux. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Traiter séparément republication de données et nouvelle compromission. |
+| 2 | **Hypothèse** | Étudier un lien entre publications simultanées sans conclure à une campagne commune. |
+| 3 | **Préventif** | Renforcer ASM, MFA résistante au phishing, gestion des secrets et sauvegardes isolées. |
+
+## 12. Conclusion
+
+Juillet illustre la nécessité de distinguer volume et nouveauté. Trois des quatre fuites sont des données anciennes remises en circulation, tandis que les sept publications ransomware offrent peu de profondeur technique. La bonne lecture du mois repose donc sur la provenance, la chronologie et les limites d’attribution.
+
+**AFRINTEL — TLP:CLEAR**
+
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

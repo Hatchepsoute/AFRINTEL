@@ -1,171 +1,158 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Month](https://img.shields.io/badge/Month-F%C3%A9vrier%202024-lightgrey)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-Février%202024-lightgrey)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
 
-# Rapport CTI - Février 2024 : Expansion géographique vers l'Afrique du Nord et de l'Ouest
+# Rapport CTI AFRINTEL — Février 2024
 
-👉🏾 [English version available here](./README.md)
+👉🏾 [English version](./README.md)
 
-### 1. Résumé exécutif
+## 1. Résumé exécutif
 
-En février 2024, l'Afrique a enregistré **9 fiches d'incident** dans 6 pays : **5 revendications ransomware et 4 revendications de fuite de données**. Par rapport à janvier (3 victimes, toutes en Afrique du Sud), le mois marque une **expansion géographique nette** : l'Égypte, la Tunisie, la Côte d'Ivoire, l'Éthiopie, le Ghana et l'Afrique du Sud sont représentés.
+Février 2024 compte **9 incidents documentés** : **5 revendications ransomware** et **4 fuites de données**. L’activité se répartit sur six pays, sans concentration comparable à celle observée en Afrique du Sud le mois précédent. L’Égypte et la Côte d’Ivoire enregistrent chacune deux incidents ; l’Afrique du Nord et l’Afrique de l’Ouest totalisent chacune trois occurrences.
 
-👉🏾 [Liste des victimes](./victims_FR.md)
+Les quatre fuites concernent principalement des services numériques et des organismes publics. La publication visant 8WORX présente les éléments les plus structurés du mois et reçoit un niveau de confiance élevé dans le corpus. Les cinq publications ransomware restent des revendications : aucune télémétrie publique ne permet d’en établir le point d’entrée ou l’étendue opérationnelle.
 
-**Chiffres clés :**
-- 🔹 **9 fiches d'incident** identifiées
-- 🔹 **6 acteurs/groupes actifs** : Medusa (1), Hunters (1), LockBit3 (2), DragonForce (1), ThreatSec (1), Tanaka (3)
-- 🔹 **Pays touchés** : Afrique du Sud (2), Éthiopie (1), Égypte (2), Tunisie (1), Côte d'Ivoire (2), Ghana (1)
-- 🔹 **Secteurs** : Gouvernement/Administration publique, Gouvernement/Éducation, Gouvernement/Services d'emploi, Services numériques/Télécom, Technologies/Services logiciels, Industrie, Santé & Recherche, Biens de consommation, Services publics
+Voir [victims_FR.md](./victims_FR.md) pour les données détaillées.
 
-### Vue agrégée mensuelle de l’exposition
+## 2. Méthodologie
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **4 fiches** (44.4% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+Le rapport couvre les publications classées du 1er au 29 février 2024. Chaque organisation est comptée une fois et les catégories **Ransomware**, **Data Leak**, **Access Sale** et **Defacement** restent séparées. Les résultats décrivent l’activité visible dans les sources consultées, non l’ensemble des incidents survenus en Afrique.
 
----
+Les statistiques dérivent des **9 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
 
-### 2. Chronologie des attaques
+## 3. Vue globale
 
-| Date | Victime | Pays | Acteur / Groupe | Type |
-|------|---------|------|-------------------|
-| 1 février | 8WORX | Égypte | Tanaka | Fuite de données |
-| 6 février | ArpuPlus | Égypte | Medusa | Ransomware |
-| 10 février | SOPEM Tunisie | Tunisie | Hunters | Ransomware |
-| 13 février | The Aurum Institute | Afrique du Sud | LockBit3 | Ransomware |
-| 24 février | Regional Trade and Integration Ministries of Ethiopia | Éthiopie | ThreatSec | Fuite de données |
-| 24 février | National Teaching Council (tpg.ntc.gov.gh) | Ghana | Tanaka | Fuite de données |
-| 24 février | Agence Emploi Jeunes | Côte d'Ivoire | Tanaka | Fuite de données |
-| 27 février | Nouvelle Parfumerie Gandour (NPGCI) | Côte d'Ivoire | LockBit3 | Ransomware |
-| 29 février | ERWAT | Afrique du Sud | DragonForce | Ransomware |
+| Indicateur | Valeur |
+|---|---:|
+| Incidents | **9** |
+| Pays | **6** |
+| Ransomware | **5** |
+| Fuites de données | **4** |
+| Ventes d’accès / Défacement | **0 / 0** |
 
-```mermaid
-timeline
-    title Incidents en Afrique - Février 2024
-    1 février : 8WORX (Égypte) - Tanaka
-    6 février : ArpuPlus (Égypte) - Medusa
-    10 février : SOPEM Tunisie (Tunisie) - Hunters
-    13 février : The Aurum Institute (Afrique du Sud) - LockBit3
-    24 février : Regional Trade and Integration Ministries (Éthiopie) - ThreatSec
-                 National Teaching Council (Ghana) - Tanaka
-                 Agence Emploi Jeunes (Côte d'Ivoire) - Tanaka
-    27 février : NPGCI (Côte d'Ivoire) - LockBit3
-    29 février : ERWAT (Afrique du Sud) - DragonForce
-```
+### Classement par pays
 
----
-
-### 3. Analyse des victimes
-
-#### 3.1 Par pays
-
-| Pays | Nombre d'attaques |
-|------|-----------------|
-| Afrique du Sud | 2 |
-| Éthiopie | 1 |
-| Égypte | 2 |
-| Tunisie | 1 |
-| Côte d'Ivoire | 2 |
-| Ghana | 1 |
+| Pays | Total | Ransomware | Fuite |
+|---|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
+| 🇨🇮 Côte d’Ivoire | 2 | 1 | 1 |
+| 🇪🇬 Égypte | 2 | 1 | 1 |
+| 🇬🇭 Ghana | 1 | 0 | 1 |
+| 🇹🇳 Tunisie | 1 | 1 | 0 |
+| 🇪🇹 Éthiopie | 1 | 0 | 1 |
+| **Total** | **9** | **5** | **4** |
 
 ```mermaid
-pie
-    title Répartition par pays - Février 2024 (9 fiches)
-    "Afrique du Sud" : 2
-    "Égypte" : 2
-    "Tunisie" : 1
-    "Côte d'Ivoire" : 2
-    "Éthiopie" : 1
-    "Ghana" : 1
+xychart
+    title "Incidents par pays — février 2024"
+    x-axis ["ZA","CI","EG","GH","TN","ET"]
+    y-axis "Incidents" 0 --> 3
+    bar [2,2,2,1,1,1]
 ```
-
-#### 3.2 Par secteur
-
-| Secteur | Nombre |
-|---------|--------|
-| Services numériques / Télécom | 1 |
-| Technologies / Services logiciels | 1 |
-| Industrie (Métallurgie) | 1 |
-| Santé & Recherche | 1 |
-| Biens de consommation (Cosmétiques) | 1 |
-| Services publics (Traitement des eaux) | 1 |
-| Gouvernement / Administration publique | 1 |
-| Gouvernement / Éducation | 1 |
-| Gouvernement / Services d'emploi | 1 |
 
 ```mermaid
-xychart-beta
-    title "Secteurs ciblés - Février 2024"
-    x-axis ["Numérique/Télécom", "Technologies", "Industrie", "Santé", "Biens conso.", "Services publics", "Gouvernement", "Éducation", "Emploi"]
-    y-axis "Nombre d'attaques" 0 --> 2
-    bar [1, 1, 1, 1, 1, 1, 1, 1, 1]
+pie showData
+    title Répartition par type — février 2024
+    "Ransomware" : 5
+    "Fuites de données" : 4
 ```
 
-#### 3.3 Groupes ransomware et acteurs de fuite
+### Répartition régionale
 
-| Acteur / groupe | Nombre d'incidents |
-|-----------------|-----------------|
+| Région | Incidents | Ransomware | Fuite |
+|---|---:|---:|---:|
+| Afrique du Nord | 3 | 2 | 1 |
+| Afrique de l’Ouest | 3 | 1 | 2 |
+| Afrique australe | 2 | 2 | 0 |
+| Afrique de l’Est | 1 | 0 | 1 |
+| **Total** | **9** | **5** | **4** |
+
+### Répartition sectorielle normalisée
+
+| Secteur | Incidents | Part |
+|---|---:|---:|
+| Gouvernement / Administration | 3 | 33,3 % |
+| Technologies / Informatique | 2 | 22,2 % |
+| Industrie / Fabrication | 2 | 22,2 % |
+| Santé / Médical | 1 | 11,1 % |
+| Eau / Services publics | 1 | 11,1 % |
+| **Total** | **9** | **100 %** |
+
+### Acteurs les plus visibles
+
+| Acteur ou source | Incidents |
+|---|---:|
+| Tanaka et publications associées | 3 |
 | LockBit3 | 2 |
-| Medusa | 1 |
-| Hunters | 1 |
-| DragonForce | 1 |
-| ThreatSec | 1 |
-| Tanaka | 3 |
+| DragonForce, Hunters, Medusa, ThreatSec | 1 chacun |
 
-```mermaid
-gantt
-    title Groupes ransomware actifs - Février 2024
-    dateFormat X
-    axisFormat %s
-    section LockBit3
-    LockBit3 : 0, 2
-    section Medusa
-    Medusa : 0, 1
-    section Hunters
-    Hunters : 0, 1
-    section DragonForce
-    DragonForce : 0, 1
-    section Tanaka
-    Tanaka : 0, 3
-```
+## 4. Analyse détaillée par type d’incident
 
----
+### 4.1 Ransomware
 
-### 4. Points d'attention
+Les cinq publications concernent ArpuPlus, SOPEM Tunisie, The Aurum Institute, NPGCI et ERWAT. Deux touchent l’Afrique du Sud ; les autres étendent la visibilité ransomware à l’Égypte, la Tunisie et la Côte d’Ivoire. Cette dispersion est un fait de collecte, pas la preuve d’une campagne coordonnée.
 
-- **Expansion géographique** : Février 2024 est le premier mois à voir des attaques simultanées en Afrique du Nord (Égypte, Tunisie), Afrique de l'Ouest (Côte d'Ivoire) et Afrique australe (Afrique du Sud).
-- **Première apparition de DragonForce** : le groupe revendique ERWAT (traitement des eaux usées desservant 3,5 millions de personnes), une attaque d'infrastructure critique signalant un intérêt pour les services essentiels.
-- **Santé sous pression** : The Aurum Institute, organisation majeure de recherche VIH/Tuberculose, est ciblée par LockBit3, des données de santé publique sensibles sont exposées.
-- **Industrie ouest-africaine** : NPGCI (cosmétiques grand public, Abidjan) marque la première victime ouest-africaine de LockBit3 en 2024.
-- **Services numériques en Afrique du Nord** : ArpuPlus (Égypte) illustre un intérêt croissant pour les opérateurs télécom et les fournisseurs de services à valeur ajoutée de la zone MENA.
-- **Exposition gouvernementale éthiopienne** : une revendication ThreatSec publiée le 24 août 2023 et découverte par AFRINTEL le 24 février 2024 concerne 43 fichiers gouvernementaux liés à des portails de commerce et de certification.
-- **Fuite dans les services publics d'emploi ivoiriens** : la publication de Tanaka annonce un fichier SQL de 3,2 Go associé à agenceemploijeunes.ci, avec environ 2 300 lignes et 296 000 utilisateurs ou adresses email uniques ; ces chiffres restent incohérents et le jeu de données complet n'est pas vérifié.
-- **Fuite dans le secteur éducatif ghanéen** : une publication de Tanaka, initialement publiée le 16 juillet 2023 et découverte par AFRINTEL le 24 février 2024, annonce un export SQL d'environ 41 000 lignes de dossiers d'élèves-enseignants du National Teaching Council du Ghana, couvrant des données d'identité, de contact et académiques dans plusieurs collèges d'éducation.
-- **Fuite d'une plateforme CRM égyptienne** : une publication de Tanaka, initialement publiée le 30 juin 2023 et découverte par AFRINTEL le 1 février 2024, annonce un export SQL de 1,3 Go de 8WORX, un prestataire technologique enregistré dans le Delaware et concentré sur l'Égypte et le Moyen-Orient, avec environ 4 millions de lignes couvrant des données de téléphonie, de journaux d'activité et de prospects/comptes.
+### 4.2 Fuites de données
 
----
+Les quatre fuites visent 8WORX, des ministères éthiopiens liés au commerce régional, le National Teaching Council du Ghana et l’Agence Emploi Jeunes de Côte d’Ivoire. Les échantillons renforcent la confiance dans l’existence de données structurées, mais ne valident ni les volumes globaux ni la méthode d’acquisition.
 
-```mermaid
-xychart-beta
-    title "Évolution mensuelle des attaques (Jan - Fév 2024)"
-    x-axis ["Jan", "Fév"]
-    y-axis "Nombre d'attaques" 0 --> 9
-    bar [3, 9]
-```
+## 5. Impact sectoriel
 
-### 5. Recommandations
+Le secteur public représente un tiers du corpus. Les publications touchent l’administration générale, l’emploi et la régulation de la formation des enseignants. Les risques les plus directs sont l’hameçonnage ciblé, l’usurpation de comptes et l’exposition de données administratives. Dans l’eau et la santé, même une revendication non confirmée justifie de vérifier la continuité des services essentiels.
 
-| Domaine | Action recommandée |
-|---------|--------------------|
-| Infrastructures critiques (eau, énergie) | Segmenter les réseaux OT/IT, maintenir des sauvegardes hors ligne, surveiller les accès SCADA. |
-| Santé & Recherche | Chiffrer les bases de données de recherche, restreindre les accès externes, surveiller l'exfiltration. |
-| Fournisseurs numériques/Télécom | Corriger les vulnérabilités d'API, surveiller les fuites de credentials. |
-| Industrie | Auditer l'exposition des systèmes industriels, renforcer la protection endpoint. |
-| Éducation / Administration publique | Restreindre l'accès aux bases de données d'élèves, chiffrer les données personnelles au repos, et auditer les accès des portails tiers. |
-| Toutes organisations | Surveiller DragonForce et Medusa comme groupes émergents, analyser leurs IOCs. |
+## 6. Profil des acteurs et évaluation du risque
 
----
+| Pays | Niveau | Justification |
+|---|---|---|
+| 🇪🇬 Égypte | 🔴 Élevé | Deux incidents, dont une fuite à confiance élevée |
+| 🇨🇮 Côte d’Ivoire | 🔴 Élevé | Ransomware et fuite touchant un organisme public |
+| 🇿🇦 Afrique du Sud | 🟠 Moyen | Deux revendications ransomware |
+| 🇬🇭 Ghana | 🟠 Moyen | Publication de données d’un organisme de régulation |
+| 🇹🇳 Tunisie / 🇪🇹 Éthiopie | 🟡 Faible à moyen | Une publication chacune |
 
-*Rapport généré à partir des données OSINT AFRINTEL. Diffusion libre (TLP:CLEAR)*
+## 7. Tendances et lacunes de renseignement
+
+- **Observé — confiance élevée :** les incidents sont presque équilibrés entre ransomware et fuites.
+- **Observé — confiance élevée :** trois des quatre fuites concernent directement des organismes publics.
+- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour qualifier les cinq cas ransomware.
+- **Lacune :** l’ancienneté et la représentativité de certains échantillons ne permettent pas d’extrapoler les volumes revendiqués.
+- **Collecte attendue :** confirmations des victimes, notifications officielles et nouvelles traces de republication.
+
+## 8. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Utilisation |
+|---|---|---|
+| Préventif | T1486 — Data Encrypted for Impact | Détection du chiffrement pour les cinq revendications ransomware ; technique non confirmée |
+| Préventif | T1567 — Exfiltration Over Web Service | Surveillance des sorties de données ; canal non observé |
+| Hypothèse | T1078 — Valid Accounts | Scénario à examiner pour les environnements administratifs ; aucun compte compromis confirmé |
+
+## 9. Recommandations
+
+- **Secteur public :** revoir les accès privilégiés, les exports de données et les procédures de notification.
+- **Santé et eau :** isoler les systèmes critiques et tester les plans de continuité.
+- **Entreprises technologiques :** renforcer MFA, gestion des secrets et journalisation des actions administratives.
+- **Toutes les organisations :** maintenir des sauvegardes immuables et une capacité de restauration testée.
+
+## 10. Recommandations SOC et tactiques
+
+| Qualification | Action |
+|---|---|
+| **Observé** | Surveiller les applications et domaines explicitement cités ; aucune chaîne d’intrusion n’est confirmée. |
+| **Hypothèse** | Rechercher des connexions administratives anormales, exports massifs et créations d’archives autour des dates de publication. |
+| **Préventif** | Alerter sur l’inhibition des sauvegardes, le chiffrement massif, les transferts sortants volumineux et l’usage inhabituel d’outils d’administration. |
+
+## 11. Recommandations stratégiques
+
+| Priorité | Qualification | Mesure |
+|---:|---|---|
+| 1 | **Observé** | Prioriser la protection des organismes publics présents dans le corpus. |
+| 2 | **Hypothèse** | Vérifier si les mêmes identifiants ou applications relient plusieurs publications, sans présumer une campagne commune. |
+| 3 | **Préventif** | Réduire la surface externe, imposer une MFA résistante au phishing et isoler les sauvegardes. |
+
+## 12. Conclusion
+
+Février présente un paysage plus dispersé que janvier. Le poids du secteur public et la coexistence de ransomware et de fuites imposent deux efforts parallèles : continuité d’activité d’un côté, validation et réduction de l’exposition des données de l’autre. Les sources publiques ne permettent pas d’aller plus loin sur les modes opératoires.
+
+**AFRINTEL — TLP:CLEAR**
+[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
