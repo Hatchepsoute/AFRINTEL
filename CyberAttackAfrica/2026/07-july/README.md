@@ -30,7 +30,7 @@ The main defensive priorities are privileged and webmail account protection, mon
 
 ## 2. Scope and methodology
 
-All figures derive from [`victims.md`](./victims.md), the single monthly source of truth. The French cards are a translation and are not recounted separately.
+All figures in this English version derive from [`victims.md`](./victims.md), the source of truth for the English report. The French version applies the same method using [`victims_FR.md`](./victims_FR.md).
 
 - **Geographic scope:** Africa's 54 countries; only victims, operations or affected datasets with an explicit African link are included.
 - **Collection period:** 1 to 31 July 2026, based on the AFRINTEL detection date recorded in each card.
@@ -327,6 +327,23 @@ Zenith Bank Plc was listed in a data-leak claim published on 9 August 2025 by Ka
 - Planet Sport and Adex illustrate the attribution problems caused by reposting.
 - Evidence quality varies from structured exports to unsupported claims.
 
+### Factual comparison with June 2026
+
+This comparison derives from the English victim records for [June](../06-june/victims.md) and [July](./victims.md). It describes only the publications recorded by AFRINTEL and does not infer a change in the actual number of compromises.
+
+| Indicator | June 2026 | July 2026 | Observed change |
+| :--- | ---: | ---: | :--- |
+| Incident records | 40 | 42 | +2 (+5.0%) |
+| Ransomware | 20 | 18 | -2 |
+| Data leaks | 18 | 18 | Stable |
+| Access sales | 2 | 6 | +4 |
+| Countries represented | 20 | 12 | -8; comparison affected by June's two multi-country offers |
+| Leading country | Morocco, 9 direct records | Egypt and Tunisia, 7 occurrences each | Change at the top |
+| Government / Administration | 12 | 11 | Largest sector in both months |
+| Most visible actor | anisanas2, 7 records | arcusmedia, 4 records | Lower monthly concentration in July |
+
+July's net increase of two records corresponds to four additional access sales, while ransomware fell by two records and data leaks remained stable. Geographic coverage is not directly comparable with the global volume: in June, two multi-country offers generated 15 country exposures; in July, only one record covers two countries.
+
 ### Intelligence gaps
 
 - Victim confirmation is generally unavailable.
@@ -359,6 +376,12 @@ No ATT&CK technique is asserted as directly observed from endpoint or network te
 
 ## 10. SOC tactical recommendations
 
+**Observed:** the corpus contains six access offers, visible authenticated webmail or administrative interfaces, and several published or reviewed structured datasets. No collection command or endpoint/network telemetry documents the intrusion path.
+
+**Hypotheses - medium confidence:** abnormal use of valid accounts and bulk collection from repositories are plausible defensive hypotheses for monitoring. The source of the credentials and the precise collection mechanisms remain unknown.
+
+**Preventive:** the controls below provide detection and response coverage; they do not describe techniques directly observed in every incident.
+
 | Priority | Detection objective | Telemetry and correlation |
 | :--- | :--- | :--- |
 | T1078 coverage | Detect abnormal use of valid or hijacked accounts | IAM, webmail, VPN and SSO logs; impossible travel *(e.g., Casablanca at 10:00, then Johannesburg at 10:20)*, new device *(first login from an unregistered laptop or phone)*, unusual ASN, MFA reset, session-token creation and privileged sign-in outside baseline |
@@ -371,6 +394,12 @@ These are detection signals, not proof of compromise; VPNs, proxies, mobile netw
 Maintain separate triage and response playbooks for ransomware listings, data leaks, access sales and reposts. Do not treat a victim listing as proof of encryption.
 
 ## 11. Strategic recommendations
+
+**Observed:** July contains 42 records, including six access sales and 11 government or administration records. Reposts and repeated claims also complicate attribution in several cases.
+
+**Hypothesis - medium confidence:** the increase from two access sales in June to six in July is compatible with greater visibility of access-broker activity, but does not establish a sustained trend. A role for Edge devices, VPNs or exposed services remains plausible in some cases but is not established by the corpus.
+
+**Preventive:**
 
 - Establish regional information-sharing channels for ransomware and access-broker activity.
 - Require exposed-service and third-party assessments for public and critical organisations.

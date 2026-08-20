@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques sont dérivées de [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), source unique de vérité de juillet 2026. Chaque fiche est comptée une fois dans le total global. Une fiche relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 fiches. La fiche MTN est attribuée à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
+Ces statistiques françaises sont dérivées de [`victims_FR.md`](../../../CyberAttackAfrica/2026/07-july/victims_FR.md), source de vérité de la version française pour juillet 2026. Chaque fiche est comptée une fois dans le total global. Une fiche relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 fiches. La fiche MTN est attribuée à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
 
 Les volumes annoncés ne sont pas traités comme des faits confirmés. Les données personnelles, identifiants et liens de téléchargement ne sont pas reproduits.
 

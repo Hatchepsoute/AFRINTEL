@@ -14,7 +14,7 @@
 
 ## Methodology note
 
-These statistics derive from [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), the single source of truth for July 2026. Each card is counted once in the global total. One identity-document card concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incident records. The MTN record is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
+These English statistics derive from [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), the source of truth for the English version for July 2026. Each card is counted once in the global total. One identity-document card concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incident records. The MTN record is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
 
 Claimed volumes are not treated as confirmed facts. Personal data, credentials and download links are not reproduced.
 

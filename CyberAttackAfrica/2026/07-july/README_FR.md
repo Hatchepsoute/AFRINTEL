@@ -30,7 +30,7 @@ Les priorités défensives sont la protection des comptes privilégiés et des m
 
 ## 2. Périmètre et méthode
 
-Tous les chiffres sont dérivés de [`victims.md`](./victims.md), source unique de vérité du mois. Les fiches françaises constituent une traduction et ne font pas l’objet d’un recomptage séparé.
+Tous les chiffres de cette version française sont dérivés de [`victims_FR.md`](./victims_FR.md), source de vérité du rapport français. La version anglaise applique la même méthode à partir de [`victims.md`](./victims.md).
 
 - **Périmètre géographique :** les 54 pays africains ; seules les victimes, opérations ou données ayant un lien africain explicite sont incluses.
 - **Période de collecte :** du 1er au 31 juillet 2026, selon la date de détection AFRINTEL inscrite dans chaque fiche.
@@ -326,6 +326,23 @@ Zenith Bank Plc a été mentionnée dans une revendication de fuite de données 
 - Planet Sport et Adex illustrent les difficultés d'attribution liées aux republications.
 - La qualité des preuves varie des exports structurés aux simples revendications.
 
+### Comparaison factuelle avec juin 2026
+
+Cette comparaison dérive des fiches françaises de [juin](../06-june/victims_FR.md) et de [juillet](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL, sans conclure à une variation du nombre réel de compromissions.
+
+| Indicateur | Juin 2026 | Juillet 2026 | Évolution observée |
+| :--- | ---: | ---: | :--- |
+| Fiches d'incidents | 40 | 42 | +2 (+5,0 %) |
+| Ransomware | 20 | 18 | -2 |
+| Fuites de données | 18 | 18 | Stable |
+| Ventes d'accès | 2 | 6 | +4 |
+| Pays représentés | 20 | 12 | -8 ; comparaison affectée par les deux offres multi-pays de juin |
+| Premier pays du classement | Maroc, 9 fiches directes | Égypte et Tunisie, 7 occurrences chacune | Changement de tête |
+| Gouvernement / Administration | 12 | 11 | Premier secteur pendant les deux mois |
+| Acteur le plus présent | anisanas2, 7 fiches | arcusmedia, 4 fiches | Concentration mensuelle plus faible en juillet |
+
+La hausse nette de deux fiches en juillet correspond à quatre ventes d'accès supplémentaires, tandis que le ransomware recule de deux fiches et que les fuites restent stables. La couverture géographique n'est pas directement comparable au volume global : en juin, deux offres multi-pays généraient 15 expositions pays ; en juillet, une seule fiche couvre deux pays.
+
 ### Lacunes de renseignement
 
 - La confirmation par les victimes est généralement absente.
@@ -358,6 +375,12 @@ Aucune technique ATT&CK n’est présentée comme directement observée dans une
 
 ## 10. Recommandations tactiques SOC
 
+**Observé :** le corpus contient six offres d'accès, des interfaces webmail ou administratives authentifiées visibles et plusieurs jeux de données structurés publiés ou examinés. Aucune commande de collecte ni télémétrie endpoint ou réseau ne documente le chemin d'intrusion.
+
+**Hypothèses - confiance moyenne :** l'usage anormal de comptes valides et la collecte massive depuis des référentiels constituent des hypothèses défensives plausibles pour guider la surveillance. La provenance des identifiants et les mécanismes précis de collecte restent inconnus.
+
+**Préventif :** les contrôles ci-dessous fournissent une couverture de détection et de réponse ; ils ne décrivent pas des techniques directement observées dans chaque incident.
+
 | Priorité | Objectif de détection | Télémétrie et corrélation |
 | :--- | :--- | :--- |
 | Couverture T1078 | Détecter l’usage anormal de comptes valides ou détournés | Journaux IAM, webmail, VPN et SSO ; voyage impossible *(ex. Casablanca à 10 h 00, puis Johannesburg à 10 h 20)*, nouvel appareil *(première connexion depuis un ordinateur portable ou téléphone non enregistré)*, ASN inhabituel, réinitialisation MFA, création de jeton de session et connexion privilégiée hors profil |
@@ -370,6 +393,12 @@ Ces signaux ne constituent pas une preuve de compromission ; les VPN, proxys, r�
 Maintenir des procédures de triage et de réponse distinctes pour les publications ransomware, les fuites, les ventes d’accès et les republications. Ne pas traiter une publication de victime comme une preuve de chiffrement.
 
 ## 11. Recommandations stratégiques
+
+**Observé :** juillet compte 42 fiches, dont six ventes d'accès et 11 fiches liées au gouvernement ou à l'administration. Des republications et revendications répétées compliquent également l'attribution de certains dossiers.
+
+**Hypothèse - confiance moyenne :** le passage de deux ventes d'accès en juin à six en juillet est compatible avec une visibilité accrue d'activités de courtiers d'accès, sans suffire à démontrer une tendance durable. Le rôle d'équipements Edge, VPN ou services exposés reste plausible dans certains cas, mais n'est pas établi par le corpus.
+
+**Préventif :**
 
 - Mettre en place des canaux régionaux de partage sur les ransomware et les courtiers d'accès.
 - Imposer des évaluations des services exposés et des fournisseurs tiers pour les organisations publiques et critiques.
