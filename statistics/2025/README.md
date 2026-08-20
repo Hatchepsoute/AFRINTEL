@@ -1,21 +1,18 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-CTI-blue)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
+![Period](https://img.shields.io/badge/Period-2025-blue)
 
-# AFRINTEL annual CTI report — 2025
+# AFRINTEL annual statistics — 2025
 
-👉🏾 [Version française](./README_FR.md)
+👉🏾 [French version](./README_FR.md)
 
-## 1. Executive summary
+## 1. Scope and source
 
-This review brings together the 196 records from AFRINTEL’s twelve monthly files for 2025. Claims are counted as they appear in the monthly sources; the same organisation may therefore appear more than once when separate claims are recorded.
+This statistical view is derived from the twelve monthly `victims.md` files and contains **197 records**. A record is a documented publication or claim; it is not necessarily a confirmed intrusion or a unique victim. The source files remain authoritative. Reposts and distinct claims are retained when documented as separate monthly records.
 
-South Africa is the most represented country with 33 records. The busiest month is May, with 21 entries.
+All totals below reconcile to the same 197-record source. Country names use the standard English names and ISO alpha-2 codes in visualisations. Sectors use the controlled annual vocabulary from the CTI report. The two `Not specified` sector records remain unresolved in the source and are not reassigned without evidence.
 
-## 2. Methodology
-
-Figures are calculated from the monthly victim cards without filling missing information. Forum and leak-site publications remain claims unless independent confirmation is available.
-
-## 3. Monthly evolution
+## 2. Monthly evolution
 
 | Month | Records |
 |---|---:|
@@ -25,210 +22,93 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | April | 17 |
 | May | 21 |
 | June | 21 |
-| July | 20 |
+| July | 21 |
 | August | 13 |
 | September | 18 |
 | October | 19 |
 | November | 14 |
 | December | 18 |
-| **Total** | **196** |
+| **Total** | **197** |
 
-## 4. Distribution by country
+## 3. Distribution by country
 
-| Country | Incidents |
-|---|---:|
-| 🇪🇬 Egypt | 33 |
-| 🇲🇦 Morocco | 31 |
-| 🇿🇦 South Africa | 30 |
-| 🇩🇿 Algeria | 19 |
-| 🇳🇬 Nigeria | 14 |
-| 🇹🇳 Tunisia | 13 |
-| 🇰🇪 Kenya | 10 |
-| 🇲🇷 Mauritania | 8 |
-| 🇿🇲 Zambia | 4 |
-| 🇬🇭 Ghana | 3 |
-| 🇳🇦 Namibia | 3 |
-| 🇹🇿 Tanzania | 3 |
-| 🇨🇮 Ivory Coast | 3 |
-| 🇺🇬 Uganda | 2 |
-| 🇧🇼 Botswana | 2 |
-| 🇸🇳 Senegal | 2 |
-| 🇹🇬 Togo | 2 |
-| 🇲🇺 Mauritius | 2 |
-| 🇿🇼 Zimbabwe | 2 |
-| 🇨🇩 Congo (DRC) | 2 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇷🇼 Rwanda | 1 |
-| 🇨🇲 Cameroon | 1 |
-| 🇩🇯 Djibouti | 1 |
-| 🇪🇷 Eritrea | 1 |
-| 🇦🇴 Angola | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇬🇦 Gabon | 1 |
+| Rank | Country | ISO | Records |
+|---:|---|:---:|---:|
+| 1 | Egypt | EG | 33 |
+| 2 | Morocco | MA | 31 |
+| 3 | South Africa | ZA | 30 |
+| 4 | Algeria | DZ | 19 |
+| 5 | Nigeria | NG | 14 |
+| 6 | Tunisia | TN | 13 |
+| 7 | Kenya | KE | 10 |
+| 8 | Mauritania | MR | 8 |
+| 9 | Zambia | ZM | 4 |
+| 10 | Ghana | GH | 3 |
+| 11 | Ivory Coast | CI | 3 |
+| 12 | Namibia | NA | 3 |
+| 13 | Tanzania | TZ | 3 |
+| 14 | Botswana | BW | 2 |
+| 15 | Congo (DRC) | CD | 2 |
+| 16 | Mauritius | MU | 2 |
+| 17 | Senegal | SN | 2 |
+| 18 | Togo | TG | 2 |
+| 19 | Uganda | UG | 2 |
+| 20 | Zimbabwe | ZW | 2 |
+| 21 | Angola | AO | 1 |
+| 22 | Burkina Faso | BF | 1 |
+| 23 | Cameroon | CM | 1 |
+| 24 | Djibouti | DJ | 1 |
+| 25 | Eritrea | ER | 1 |
+| 26 | Gabon | GA | 1 |
+| 27 | Madagascar | MG | 1 |
+| 28 | Rwanda | RW | 1 |
+| 29 | Burundi | BI | 1 |
+| **Total** |  |  | **197** |
 
-## 5. Sectors
+## 4. Sector distribution
 
-| Sector | Incidents |
-|---|---:|
-| Banking / Financial Services | 7 |
-| Finance | 6 |
-| Healthcare | 5 |
-| Banking / Financial Services. | 5 |
-| Logistics | 5 |
-| Insurance / Financial Services | 4 |
-| Education / Higher Education | 3 |
-| Technology Consulting | 3 |
-| Defense / National Security | 3 |
-| Education / Higher Education / Research. | 2 |
-| Telecommunications | 2 |
-| Agribusiness | 2 |
-| Air transport | 2 |
-| Technology / Telematics / IoT Security | 2 |
-| Insurance | 2 |
-| Government / Diplomatic | 2 |
-| Real Estate / Construction / Engineering | 2 |
-| Manufacturing Industry (Plastics) | 2 |
-| Healthcare (Dental) | 1 |
-| Public Administrations / Finance / Public Procurement. | 1 |
-| Retail / Mass Distribution. | 1 |
-| Technology / Digital Marketing / SEO. | 1 |
-| Oil & Gas Logistics / Port Services. | 1 |
-| Hospitality / Tourism. | 1 |
-| Public Administrations | 1 |
-| Public Administrations / Water Resources / Agriculture. | 1 |
-| Education / Scientific Research / Academic Publishing. | 1 |
-| Education / Higher Education / Educational Research. | 1 |
-| Consulting Services / Bulk SMS & Broadcast Messaging | 1 |
-| HR Services / Recruitment | 1 |
-| Business Services / Technology Consulting (IT & Digital Solutions) | 1 |
-| Insurance / Brokerage | 1 |
-| Public Services / Environment (Meteorology) | 1 |
-| Government / Digital Public Services | 1 |
-| Insurance / Insurtech | 1 |
-| Logistics / Distribution | 1 |
-| Services / Recruitment (HR Tech) | 1 |
-| Education / HR Services | 1 |
-| Government / Healthcare Regulation | 1 |
-| Retail (Distribution) | 1 |
-| Education / Private Schooling | 1 |
-| Healthcare / Hospital Sector | 1 |
-| Healthcare / Public Health | 1 |
-| Public administrations (Health) | 1 |
-| Finance / Logistics | 1 |
-| Technology (Telecommunications) | 1 |
-| Business Services / Outsourcing (BPO) | 1 |
-| Public Administrations (Social Security) | 1 |
-| Government / Economy and Industry | 1 |
-| Government / Social Security | 1 |
-| Social / Health Insurance Fund | 1 |
-| Government / Labor Administration | 1 |
-| Finance / Mobile Payment | 1 |
-| Information Technology | 1 |
-| Education / Higher Education / Audiovisual and Cinema | 1 |
-| Government / Housing / Urban Policy | 1 |
-| Financial Services / Investment Banking / Project Finance Advisory | 1 |
-| Agribusiness / Dairy Industry | 1 |
-| Technology / Managed Services (MSP) / Cloud | 1 |
-| Information Technology (IT) / Managed Services (MSP) | 1 |
-| Business Services / Human Resources | 1 |
-| Finance / Association | 1 |
-| Personal Protective Equipment (PPE) / Industry | 1 |
-| Government / Social Services | 1 |
-| Pharmacy / Healthcare | 1 |
-| Education / Higher education | 1 |
-| Mining | 1 |
-| Retail / Distribution (Clothing and footwear) | 1 |
-| Technology / Digital Services (Hosting & Domains) | 1 |
-| Government / Real Estate and Land Registry. | 1 |
-| Legal Services / Professional Association | 1 |
-| Business Services | 1 |
-| Land Administration / Public Sector. | 1 |
-| Human Resources / Recruitment / Temporary Work. | 1 |
-| Telecommunications / National Internet Infrastructure | 1 |
-| Conglomerate / Multi-sectoral | 1 |
-| Retail (Fashion) | 1 |
-| Government / Public Administration / Social Affairs | 1 |
-| Government / Public Administration / Youth and Sports | 1 |
-| Government / Education. | 1 |
-| Government / Customs and Foreign Trade | 1 |
-| Sports / Public Administration | 1 |
-| Telecommunications. | 1 |
-| Government / Transportation | 1 |
-| Financial Services / Professional Regulatory Body. | 1 |
-| Postal Services / Financial Services | 1 |
-| Industrial Supplies / Mining Support Services. | 1 |
-| Construction / Public Works / Professional Organisation | 1 |
-| NGO (Education & Governance) | 1 |
-| Telecommunications / Distribution & Retail. | 1 |
-| Government / Energy and Mining; named third party: chemical industry / building waterproofing | 1 |
-| Government / Digital Infrastructure | 1 |
-| Telecommunications / Energy Infrastructure / ICT. | 1 |
-| Government / Energy (Electricity) | 1 |
-| Public Administrations / Local Government. | 1 |
-| Government / Public Procurement (Enterprise and Personnel Qualification) | 1 |
-| Government / Tax Administration. | 1 |
-| Professional Training / Banking Sector. | 1 |
-| Government / Public Administration / Education | 1 |
-| Technology / Multimedia Distribution | 1 |
-| Energy / Critical Infrastructure (Electricity Generation) | 1 |
-| Telecoms / Infrastructure / IT Services | 1 |
-| Agribusiness / Industry / Logistics | 1 |
-| Technology (Software Publisher) | 1 |
-| Energy (Electricity) | 1 |
-| Retail / E-commerce | 1 |
-| Security Services / Defense / Human Resources | 1 |
-| Government / Critical Infrastructures | 1 |
-| Fintech / Payment Services | 1 |
-| Catering / Food Services / Industrial Catering | 1 |
-| Manufacturing Industry / Bedding / Furniture | 1 |
-| Financial Services | 1 |
-| Government / Public Administration | 1 |
-| Government / Administration | 1 |
-| Public administrations | 1 |
-| Technology / ERP Software Publishing | 1 |
-| Technology / Digital Services / Software Development | 1 |
-| Microfinance / Banking | 1 |
-| Public Administration / Finance / Taxation | 1 |
-| Construction / HVAC | 1 |
-| Religion / Charitable Organization | 1 |
-| Transport / Logistics | 1 |
-| Technology / Fintech (Insurance Solutions) | 1 |
-| Mining / Conglomerate | 1 |
-| Education (University) | 1 |
-| Wholesale Trade (Food Products) | 1 |
-| Pharmaceutical Industry / Laboratory | 1 |
-| Legal Services | 1 |
-| Education / Higher Education / Agronomy and Veterinary Sciences | 1 |
-| Government / Education / Higher Education | 1 |
-| Human Resources / Recruitment | 1 |
-| Technology / Industry | 1 |
-| Financial Services (Banking) | 1 |
-| Retail / Mass retail / E-commerce | 1 |
-| Government / Transportation / Road Safety | 1 |
-| Public administrations / Social Housing | 1 |
-| Financial Services (Pension Management) | 1 |
-| Construction | 1 |
-| Wood and Building Materials Manufacturing | 1 |
-| Real Estate / Investment / Urban Development | 1 |
-| Health / NGO / Humanitarian | 1 |
-| Technology / Digital services (exact business activity not independently confirmed) | 1 |
-| Technology | 1 |
-| Insurance (Health) | 1 |
-| Agribusiness / Beverages (Alcoholic and non-alcoholic) | 1 |
-| Automotive Distribution / Diagnostic Equipment | 1 |
-| Public Administration / Local Government | 1 |
-| Finance / Trade | 1 |
-| Health / Medical Association / Education | 1 |
-| Real Estate Development / Management of Industrial and Leisure Parks | 1 |
-| Public administrations (Financial Regulation) | 1 |
-| Education / University | 1 |
-| Industrial / Electrical and Plastic Products Manufacturing | 1 |
-| Healthcare / Pharmacy e-commerce | 1 |
-| Energy / Electricity Transmission (Critical Infrastructure) | 1 |
+| Normalized sector | Records | Share |
+|---|---:|---:|
+| Government / Administration | 40 | 20.3% |
+| Finance / Banking | 39 | 19.8% |
+| Technology / IT | 25 | 12.7% |
+| Education / University | 17 | 8.6% |
+| Healthcare / Medical | 14 | 7.1% |
+| Manufacturing / Industry | 10 | 5.1% |
+| Transport / Logistics | 10 | 5.1% |
+| Retail / E-commerce | 9 | 4.6% |
+| Professional / Business Services | 7 | 3.6% |
+| Construction / Real Estate | 6 | 3.0% |
+| Defense / Security | 6 | 3.0% |
+| Energy / Utilities | 4 | 2.0% |
+| Agriculture / Agribusiness | 3 | 1.5% |
+| Legal / Justice | 2 | 1.0% |
+| Mining | 2 | 1.0% |
+| Not specified | 2 | 1.0% |
+| Civil Society / NGO | 1 | 0.5% |
+| **Total** | **197** | **100.0%** |
 
-## 6. Actors or publication sources
+## 5. Incident classification
 
-| Actor / source | Incidents |
+| Type | Records | Share |
+|---|---:|---:|
+| Ransomware | 122 | 61.9% |
+| Data Leak | 72 | 36.5% |
+| Access Sale | 3 | 1.5% |
+| Defacement | 0 | 0.0% |
+| **Total** | **197** | **100.0%** |
+
+### Aggregate exposure view
+
+| Aggregate category | Records | Share of corpus |
+|---|---:|---:|
+| Data leaks + access sales | **75** | **38.1%** |
+
+This is a derived analytical view (`72 + 3`), not an additional incident category. Access sales remain separately counted because they do not automatically establish data exfiltration.
+
+## 6. Most visible actors / publication sources
+
+| Actor / source | Records |
 |---|---:|
 | qilin | 11 |
 | nightspire | 10 |
@@ -240,105 +120,15 @@ Figures are calculated from the monthly victim cards without filling missing inf
 | kill9 | 6 |
 | Dark 07x Team | 5 |
 | ransomhub | 4 |
-| warlock | 4 |
-| clop | 4 |
-| spacebears | 3 |
-| GDLockerSec | 3 |
-| babuk2 | 3 |
-| arcusmedia | 3 |
-| lynx | 3 |
-| dragonforce | 3 |
-| Keymous | 3 |
-| Unknown | 3 |
-| TheGentlemen | 3 |
-| lockbit5 | 3 |
-| akira | 2 |
-| ransomhouse | 2 |
-| Jabaroot DZ | 2 |
-| B4baYega | 2 |
-| mrdump, post published on a cybercriminal forum (DarkForums) | 2 |
-| Evil_BYTE_Officiel | 2 |
-| KaruHunters | 2 |
-| direwolf | 2 |
-| Not specified | 2 |
-| obscura | 2 |
-| radar | 2 |
-| blackshrantac | 2 |
-| tengu | 2 |
-| nova | 2 |
-| apt73 | 1 |
-| fog | 1 |
-| flocker | 1 |
-| hunter | 1 |
-| play | 1 |
-| MisterSam | 1 |
-| Ghudra | 1 |
-| oblivion666 | 1 |
-| crypto24 | 1 |
-| Killer_Bee | 1 |
-| p4xar | 1 |
-| cicada3301 | 1 |
-| gunra | 1 |
-| arkana | 1 |
-| everest | 1 |
-| Datacarry | 1 |
-| worldleaks | 1 |
-| cache | 1 |
-| TajineSec / Tajinesec_MA (publication claim) | 1 |
-| 0x0day, post published on the cybercriminal forum DarkForums | 1 |
-| RiseAgainLuigi & B4baYega | 1 |
-| mrdump (Telegram channel "Server dump") | 1 |
-| KickingPigs | 1 |
-| mrdump (publication on the Telegram channel \"Server dump\") | 1 |
-| MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums) | 1 |
-| Hepd | 1 |
-| sanji_shi5 (source account) | 1 |
-| d4rk4rmy | 1 |
-| Mercobyte | 1 |
-| Gh1nDar | 1 |
-| Wieko | 1 |
-| RainbowDF | 1 |
-| Chucky_BF | 1 |
-| N1KA | 1 |
-| GhostCrawl | 1 |
-| BIGBROTHER | 1 |
-| Fire Wire | 1 |
-| Tanaka | 1 |
-| yurei | 1 |
-| privilege, post published on a cybercriminal forum | 1 |
-| privilege | 1 |
-| KILLUAX | 1 |
-| beast | 1 |
-| brotherhood | 1 |
-| medusa | 1 |
-| DBhacker_BF | 1 |
-| EternalRed | 1 |
-| Spirigatito, post published on a cybercriminal forum | 1 |
-| stormous | 1 |
-| anisanas2 | 1 |
-| benzona | 1 |
-| RL000 | 1 |
-| kazu | 1 |
-| GhostVector (source account) | 1 |
-| camillabf, post published on a cybercriminal forum (RaidForums) | 1 |
-| LindaBF, post published on a cybercriminal forum (RaidForums) | 1 |
 
-## 7. Incident classification
+This is a top-10 view. Actor aliases, source accounts and publication annotations are normalized for the ranking; the complete incident-level attribution remains in the monthly victim cards and STIX bundles.
 
-| Type | Incidents |
-|---|---:|
-| Ransomware | 122 |
-| Data Leak | 71 |
-| Access Sale | 3 |
+## 7. Interpretation and SOC priorities
 
-## 8. CTI reading and SOC priorities
-
-Visibility remains concentrated on organisations and publications that are publicly accessible. Differences between claimed volumes and samples actually reviewed should remain documented in each victim card.
-
-For SOC teams, the priorities remain monitoring remote access, protecting backups, controlling privileged accounts and preparing notification procedures when personal data is claimed.
+The distribution measures AFRINTEL visibility, not the prevalence of real-world compromises. Ransomware claims dominate the corpus, while data leaks and access sales form a separate exposure signal. SOC teams should validate claims against IAM, VPN, EDR, backup, DNS, proxy, WAF and application telemetry, and should distinguish a new compromise from a repost or an unverified listing.
 
 ## Conclusion
 
-This 2025 review covers 196 documented records, with the strongest concentration in 🇪🇬 Egypt. Evidence limits and repeated claims should guide interpretation.
+The 2025 statistical baseline is internally reconciled at **197 records**: **122 ransomware**, **72 data leaks**, **3 access sales** and **0 defacements**. Country, sector and actor views must be regenerated from the monthly victim source whenever the source cards change.
 
 **AFRINTEL** — TLP:CLEAR

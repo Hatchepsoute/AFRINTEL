@@ -20,6 +20,10 @@ In May 2024, Africa recorded **8 documented ransomware victims**. The month was 
 - 🔹 **Countries affected**: South Africa (2), Egypt (2), Nigeria (1), Namibia (1), Ivory Coast (1), Senegal (1)
 - 🔹 **Sectors**: Finance / Treasury (3), Healthcare (1), Construction (1), Business Services (1), IT Consulting (1), Generic Services (1)
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **0 records** (0.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

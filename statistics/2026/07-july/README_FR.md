@@ -32,7 +32,7 @@ Les volumes annoncés ne sont pas traités comme des faits confirmés. Les donn�
 | Pays les plus représentés | Égypte et Tunisie, 7 chacune |
 | Principal pays ransomware | Afrique du Sud, 5 |
 | Principal pays fuites et accès | Tunisie, 7 |
-| Profil des statuts | 21 non vérifiés ; 20 avec échantillon ; 1 entièrement publié |
+| Profil des statuts | 21 non vérifiés ; 20 avec échantillon ; 1 publication complète revendiquée (`Data Fully Published`) |
 | Profil de confiance | 22 Faible ; 8 Moyen ; 9 Élevé ; 3 Très élevé |
 | Profil d’impact | 12 Niveau 2 ; 21 Niveau 3 ; 9 Niveau 4 |
 

@@ -3,6 +3,10 @@
 **Classification :** TLP:CLEAR  
 **Projet :** AFRINTEL (African Threat Intelligence Repository)
 👉🏾 [English version available here](./README.md)
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (12.5% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ## 1. RÉSUMÉ EXÉCUTIF

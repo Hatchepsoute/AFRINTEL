@@ -21,6 +21,10 @@ In April 2024, Africa recorded **6 documented victims**: **5 ransomware claims**
 - 🔹 **Countries affected**: South Africa (2), Seychelles (1), Morocco (1), Libya (1), Burkina Faso (1)
 - 🔹 **Sectors**: Banking/Crypto, Media & Publishing, Manufacturing/Packaging, Technologies, Oil & Gas, Government/Employment and Training
 - 🔹 **Incident types**: Ransomware (5), Data Leak (1)
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (16.7% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 
 ---
 

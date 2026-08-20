@@ -94,7 +94,7 @@ xychart-beta
 <!-- AFRINTEL_CURRENT_MODEL_START -->
 ### 3.4 Standard global overview
 
-| Country | Ransomware | Leaks / access | Total | Distribution |
+| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | 🇿🇦 South Africa | 2 | 1 | 3 | 🟧🟧 🟦 |
 | 🇹🇳 Tunisia | 1 | 1 | 2 | 🟧 🟦 |
@@ -110,12 +110,17 @@ xychart-beta
 ```pie
     title Incident types
     "Ransomware" : 7
-    "Leaks and access" : 6
+    "Data leaks + access sales" : 6
 ```
+
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **6 records** (46.2% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | North Africa | 5 | 2 | 3 | 🟧🟧 🟦🟦🟦 |
 | Southern Africa | 4 | 3 | 1 | 🟧🟧🟧 🟦 |
@@ -125,11 +130,11 @@ xychart-beta
 ```mermaid
 xychart-beta
     title "Occurrences by region"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 6
     bar [5,4,2,2]
 ```
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
 
 ### Sector distribution
 

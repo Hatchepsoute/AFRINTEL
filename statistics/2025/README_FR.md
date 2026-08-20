@@ -1,234 +1,114 @@
-# Rapport CTI annuel AFRINTEL — 2025
+![AFRINTEL](https://img.shields.io/badge/AFRINTEL-CTI-blue)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Période](https://img.shields.io/badge/Période-2025-blue)
 
-Ce bilan reprend les 196 fiches des douze fichiers mensuels AFRINTEL de 2025. Les revendications sont comptées telles qu’elles apparaissent dans les sources mensuelles ; une même organisation peut donc apparaître plusieurs fois.
+# Statistiques annuelles AFRINTEL — 2025
 
 👉🏾 [English version](./README.md)
 
-## 1. Résumé exécutif
+## 1. Périmètre et source
 
-L’Afrique du Sud est le pays le plus représenté avec 33 fiches. Les données restent une mesure de visibilité OSINT : elles ne constituent pas un recensement exhaustif des incidents réels.
+Cette vue statistique est dérivée des douze fichiers mensuels `victims.md` et contient **197 fiches**. Une fiche est une publication ou une revendication documentée ; elle ne constitue pas nécessairement une intrusion confirmée ni une victime unique. Les fichiers sources restent autoritatifs. Les republications et revendications distinctes sont conservées lorsqu’elles sont documentées comme des fiches mensuelles séparées.
 
-## 2. Méthode
+Tous les totaux ci-dessous sont réconciliés avec la même base de 197 fiches. Les noms de pays sont normalisés et les graphes utilisent les codes ISO alpha-2. Les secteurs suivent la taxonomie annuelle contrôlée du rapport CTI. Les deux fiches `Non précisé` restent indéterminées dans la source et ne sont pas reclassées sans preuve.
 
-Les tableaux sont calculés directement à partir des fiches victimes mensuelles. Aucune information manquante n’a été complétée ; les publications de forums et de sites de fuite restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+## 2. Évolution mensuelle
 
-## 3. Évolution mensuelle
-
-| Mois | Incidents |
+| Mois | Fiches |
 |---|---:|
+| Janvier | 16 |
+| Février | 8 |
+| Mars | 11 |
+| Avril | 17 |
 | Mai | 21 |
 | Juin | 21 |
-| Juillet | 20 |
-| Octobre | 19 |
-| Septembre | 18 |
-| Décembre | 18 |
-| Avril | 17 |
-| Janvier | 16 |
-| Novembre | 14 |
+| Juillet | 21 |
 | Août | 13 |
-| Mars | 11 |
-| Février | 8 |
+| Septembre | 18 |
+| Octobre | 19 |
+| Novembre | 14 |
+| Décembre | 18 |
+| **Total** | **197** |
 
-## 4. Répartition par pays
+## 3. Répartition par pays
 
-| Pays | Incidents |
-|---|---:|
-| 🇪🇬 Égypte | 33 |
-| 🇲🇦 Maroc | 31 |
-| 🇿🇦 Afrique du Sud | 30 |
-| 🇩🇿 Algérie | 19 |
-| 🇳🇬 Nigeria | 14 |
-| 🇹🇳 Tunisie | 13 |
-| 🇰🇪 Kenya | 10 |
-| 🇲🇷 Mauritanie | 8 |
-| 🇿🇲 Zambie | 4 |
-| 🇬🇭 Ghana | 3 |
-| 🇳🇦 Namibie | 3 |
-| 🇹🇿 Tanzanie | 3 |
-| 🇨🇮 Côte d'Ivoire | 3 |
-| 🇺🇬 Ouganda | 2 |
-| 🇧🇼 Botswana | 2 |
-| 🇸🇳 Sénégal | 2 |
-| 🇹🇬 Togo | 2 |
-| 🇲🇺 Maurice | 2 |
-| 🇿🇼 Zimbabwe | 2 |
-| 🇨🇩 Congo (RDC) | 2 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇷🇼 Rwanda | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇩🇯 Djibouti | 1 |
-| 🇪🇷 Érythrée | 1 |
-| 🇦🇴 Angola | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇬🇦 Gabon | 1 |
+| Rang | Pays | ISO | Fiches |
+|---:|---|:---:|---:|
+| 1 | Égypte | EG | 33 |
+| 2 | Maroc | MA | 31 |
+| 3 | Afrique du Sud | ZA | 30 |
+| 4 | Algérie | DZ | 19 |
+| 5 | Nigeria | NG | 14 |
+| 6 | Tunisie | TN | 13 |
+| 7 | Kenya | KE | 10 |
+| 8 | Mauritanie | MR | 8 |
+| 9 | Zambie | ZM | 4 |
+| 10 | Ghana | GH | 3 |
+| 11 | Côte d’Ivoire | CI | 3 |
+| 12 | Namibie | NA | 3 |
+| 13 | Tanzanie | TZ | 3 |
+| 14 | Botswana | BW | 2 |
+| 15 | RDC | CD | 2 |
+| 16 | Maurice | MU | 2 |
+| 17 | Sénégal | SN | 2 |
+| 18 | Togo | TG | 2 |
+| 19 | Ouganda | UG | 2 |
+| 20 | Zimbabwe | ZW | 2 |
+| 21 | Angola | AO | 1 |
+| 22 | Burkina Faso | BF | 1 |
+| 23 | Cameroun | CM | 1 |
+| 24 | Djibouti | DJ | 1 |
+| 25 | Érythrée | ER | 1 |
+| 26 | Gabon | GA | 1 |
+| 27 | Madagascar | MG | 1 |
+| 28 | Rwanda | RW | 1 |
+| 29 | Burundi | BI | 1 |
+| **Total** |  |  | **197** |
 
-## 5. Secteurs
+## 4. Répartition sectorielle
 
-| Secteur | Incidents |
-|---|---:|
-| Finance | 6 |
-| Banque / Services financiers | 6 |
-| Banque / Services Financiers. | 6 |
-| Santé | 5 |
-| Logistique | 5 |
-| Conseil en technologies | 3 |
-| Administrations publiques | 2 |
-| Éducation / Enseignement Supérieur / Recherche. | 2 |
-| Éducation / Enseignement Supérieur | 2 |
-| Télécommunications | 2 |
-| Agroalimentaire | 2 |
-| Transport aérien | 2 |
-| Éducation / Enseignement supérieur | 2 |
-| Technologie / Télématique / Sécurité IoT | 2 |
-| Défense / Sécurité nationale | 2 |
-| Gouvernement / Diplomatie | 2 |
-| Assurances / Services Financiers. | 2 |
-| Industrie manufacturière (Plastiques) | 2 |
-| Santé (Dentaire) | 1 |
-| Administrations publiques/ Finances / Marchés Publics. | 1 |
-| Commerce de détail/Grande distribution (Retail). | 1 |
-| Technologies / Marketing Digital / SEO. | 1 |
-| Logistique Pétrolière et Gazière / Services Portuaires. | 1 |
-| Hôtellerie / Tourisme. | 1 |
-| Administrations publiques / Ressources en Eau / Agriculture. | 1 |
-| Éducation / Recherche Scientifique / Publication Académique. | 1 |
-| Éducation / Enseignement Supérieur / Recherche Pédagogique. | 1 |
-| Services de Conseil / SMS en masse et messagerie broadcast | 1 |
-| Services RH / Recrutement | 1 |
-| Services aux entreprises / Conseil en technologie (IT & Digital Solutions). | 1 |
-| Assurances / Courtage | 1 |
-| Services publics / Environnement (Météorologie) | 1 |
-| Gouvernement / Services Publics Numériques. | 1 |
-| Assurances/Insurtech | 1 |
-| Logistique/ distribustion | 1 |
-| Services / Recrutement (RH Tech) | 1 |
-| Éducation / Services RH | 1 |
-| Administration publique / Régulation de la santé | 1 |
-| Commerce de détail (Distribution) | 1 |
-| Éducation / Enseignement privé. | 1 |
-| Santé / Secteur Hospitalier | 1 |
-| Santé / Santé publique | 1 |
-| Administrations publiques (Santé) | 1 |
-| Défense / Sécurité Nationale | 1 |
-| Finance / Logistique | 1 |
-| Technologies (Télécommunications) | 1 |
-| Services aux entreprises / Externalisation (BPO) | 1 |
-| Administrations publiques (Sécurité sociale) | 1 |
-| Gouvernement / Économie et Industrie. | 1 |
-| Gouvernement / Sécurité sociale | 1 |
-| Social / Mutuelle de Santé. | 1 |
-| Gouvernement / Administration du travail | 1 |
-| Finance / Paiement mobile | 1 |
-| Technologies de l'Information | 1 |
-| Éducation / Enseignement supérieur / Audiovisuel et cinéma | 1 |
-| Gouvernement / Habitat / Politique de la ville | 1 |
-| Services financiers / Banque d'investissement / Conseil en financement de projets | 1 |
-| Agroalimentaire / Industrie Laitière | 1 |
-| Technologies / Services managés (MSP) / Cloud | 1 |
-| Technologies de l'Information (IT) / Services Managés (MSP) | 1 |
-| Services aux entreprises / Ressources Humaines | 1 |
-| Finance / Association | 1 |
-| Équipements de protection individuelle (EPI) / Industrie | 1 |
-| Gouvernement / Services Sociaux | 1 |
-| Pharmacie / Santé | 1 |
-| Mines | 1 |
-| Retail / Distribution (Vêtements et chaussures). | 1 |
-| Assurance | 1 |
-| Technologie / Services Numériques (Hébergement & Domaines). | 1 |
-| Gouvernement / Immobilier et Foncier. | 1 |
-| Services juridiques / Association professionnelle | 1 |
-| Services aux entreprises | 1 |
-| Administration Foncière / Secteur Public. | 1 |
-| Ressources Humaines / Recrutement / Intérim. | 1 |
-| Télécommunications / Infrastructure Internet nationale | 1 |
-| Assurance / Services financiers | 1 |
-| Conglomérat / multi-sectoriel | 1 |
-| Commerce de détail (Mode) | 1 |
-| Gouvernement / Administration publique / Affaires sociales | 1 |
-| Gouvernement / Administration publique / Jeunesse et sports | 1 |
-| Gouvernement / Éducation. | 1 |
-| Gouvernement / Douanes et commerce extérieur | 1 |
-| Sport / Administration Publique. | 1 |
-| Télécommunications. | 1 |
-| Gouvernement / Transports | 1 |
-| Services Financiers / Organisme de Régulation Professionnelle. | 1 |
-| Services postaux / Services financiers | 1 |
-| Fournitures Industrielles / Services à l'Exploitation Minière. | 1 |
-| Bâtiment / Travaux publics / Organisation professionnelle | 1 |
-| ONG (Éducation & Gouvernance) | 1 |
-| Télécommunications / Distribution & Retail. | 1 |
-| Gouvernement / Énergie et mines ; tiers cité : industrie chimique / étanchéité du bâtiment | 1 |
-| Gouvernement / Infrastructure numérique | 1 |
-| Télécommunications / Infrastructures Énergétiques / TIC. | 1 |
-| Gouvernement / Énergie (Électricité) | 1 |
-| Administrations publique / Gouvernement Local. | 1 |
-| Gouvernement / Marchés publics (Qualification des entreprises et du personnel) | 1 |
-| Gouvernement / Administration Fiscale. | 1 |
-| Formation Professionnelle / Secteur Bancaire. | 1 |
-| Gouvernement / Administration publique / Éducation | 1 |
-| Technologies / Distribution Multimédia. | 1 |
-| Énergie / Infrastructures Critiques (Production d'Électricité). | 1 |
-| Télécoms / Infrastructures / Services IT. | 1 |
-| Agroalimentaire/ Industrie / Logistique | 1 |
-| Technologies (Éditeur de logiciels) | 1 |
-| Énergie (Électricité) | 1 |
-| Commerce de détail / E-commerce. | 1 |
-| Services de Sécurité / Défense / Ressources Humaines. | 1 |
-| Gouvernement / Infrastructures Critiques. | 1 |
-| Fintech / Services de paiement | 1 |
-| Immobilier / Construction / Ingénierie. | 1 |
-| Restauration / Services alimentaires / Traiteur. | 1 |
-| Industrie Manufacturière / Literie / Ameublement. | 1 |
-| Services financiers | 1 |
-| Gouvernement / Administration publique | 1 |
-| Gouvernement / Administration | 1 |
-| Assurances / Services financiers | 1 |
-| Technologies / Édition de logiciels ERP. | 1 |
-| Technologies/ Services Numériques / Développement Logiciel. | 1 |
-| Microfinance / Banque | 1 |
-| Administration Publique / Finances / Fiscalité. | 1 |
-| Construction / CVC | 1 |
-| Religion / Organisation caritative | 1 |
-| Transport / Logistique | 1 |
-| Immobilier / Construction / Ingénierie | 1 |
-| Technologies/ Fintech (Solutions pour l'Assurance). | 1 |
-| Exploitation minière / Conglomérat | 1 |
-| Éducation (Université) | 1 |
-| Commerce de gros (Produits alimentaires) | 1 |
-| Industrie pharmaceutique / Laboratoire | 1 |
-| Services juridiques | 1 |
-| Éducation / Enseignement supérieur / Agronomie et sciences vétérinaires | 1 |
-| Gouvernement / Éducation / Enseignement supérieur | 1 |
-| Ressources humaines / Recrutement | 1 |
-| Technologies / Industrie | 1 |
-| Services financiers (Banque) | 1 |
-| Commerce de détail / Grande distribution / E-commerce. | 1 |
-| Gouvernement / Transport / Sécurité routière | 1 |
-| Administrations publiques/ Logement social. | 1 |
-| Services financiers (Gestion de pension) | 1 |
-| Construction | 1 |
-| Industrie manufacturière du bois et des matériaux de construction. | 1 |
-| Immobilier / Investissement / Développement Urbain. | 1 |
-| Santé / ONG / Humanitaire. | 1 |
-| Technologie / Services numériques (activité exacte non confirmée de manière indépendante) | 1 |
-| Technologies | 1 |
-| Assurances (Santé) | 1 |
-| Agroalimentaire / Boissons (Alcoolisées et non alcoolisées). | 1 |
-| Distribution automobile / Équipement de diagnostic | 1 |
-| Administration Publique / Gouvernement Local. | 1 |
-| Finance / Commerce | 1 |
-| Assurances | 1 |
-| Santé / Association Médicale / Éducation. | 1 |
-| Développement Immobilier / Gestion de Parcs Industriels et de Loisirs. | 1 |
-| Administrations publiques (Régulation financière) | 1 |
-| Éducation / Université | 1 |
-| Industrie / Fabrication de produits électriques et plastiques | 1 |
-| Santé / E-commerce pharmaceutique | 1 |
-| Énergie / Transport d'électricité (Infrastructure critique) | 1 |
+| Secteur normalisé | Fiches | Part |
+|---|---:|---:|
+| Gouvernement / Administration | 40 | 20,3 % |
+| Finance / Banque | 39 | 19,8 % |
+| Technologies / Informatique | 25 | 12,7 % |
+| Éducation / Université | 17 | 8,6 % |
+| Santé / Médical | 14 | 7,1 % |
+| Industrie / Fabrication | 10 | 5,1 % |
+| Transport / Logistique | 10 | 5,1 % |
+| Commerce / E-commerce | 9 | 4,6 % |
+| Services professionnels / aux entreprises | 7 | 3,6 % |
+| Construction / Immobilier | 6 | 3,0 % |
+| Défense / Sécurité | 6 | 3,0 % |
+| Énergie / Services publics | 4 | 2,0 % |
+| Agriculture / Agro-industrie | 3 | 1,5 % |
+| Juridique / Justice | 2 | 1,0 % |
+| Mines | 2 | 1,0 % |
+| Non précisé | 2 | 1,0 % |
+| Société civile / ONG | 1 | 0,5 % |
+| **Total** | **197** | **100,0 %** |
 
-## 6. Acteurs ou sources
+## 5. Classification des incidents
 
-| Acteur / source | Incidents |
+| Type | Fiches | Part |
+|---|---:|---:|
+| Ransomware | 122 | 61,9 % |
+| Fuite de données | 72 | 36,5 % |
+| Vente d’accès | 3 | 1,5 % |
+| Défacement | 0 | 0,0 % |
+| **Total** | **197** | **100,0 %** |
+
+### Vue agrégée de l’exposition
+
+| Catégorie agrégée | Fiches | Part du corpus |
+|---|---:|---:|
+| Fuites de données + ventes d’accès | **75** | **38,1 %** |
+
+Cette vue analytique dérivée (`72 + 3`) ne constitue pas une catégorie supplémentaire. Les ventes d’accès restent comptées séparément, car elles ne prouvent pas automatiquement une exfiltration de données.
+
+## 6. Acteurs / sources les plus visibles
+
+| Acteur / source | Fiches |
 |---|---:|
 | qilin | 11 |
 | nightspire | 10 |
@@ -240,104 +120,15 @@ Les tableaux sont calculés directement à partir des fiches victimes mensuelles
 | kill9 | 6 |
 | Dark 07x Team | 5 |
 | ransomhub | 4 |
-| warlock | 4 |
-| clop | 4 |
-| spacebears | 3 |
-| GDLockerSec | 3 |
-| babuk2 | 3 |
-| arcusmedia | 3 |
-| lynx | 3 |
-| dragonforce | 3 |
-| Keymous | 3 |
-| Inconnu | 3 |
-| TheGentlemen | 3 |
-| lockbit5 | 3 |
-| akira | 2 |
-| ransomhouse | 2 |
-| Jabaroot DZ | 2 |
-| B4baYega | 2 |
-| mrdump, publication sur un forum cybercriminel (DarkForums) | 2 |
-| Evil_BYTE_Officiel | 2 |
-| KaruHunters | 2 |
-| direwolf | 2 |
-| Non précisé | 2 |
-| obscura | 2 |
-| radar | 2 |
-| tengu | 2 |
-| nova | 2 |
-| apt73 | 1 |
-| fog | 1 |
-| flocker | 1 |
-| hunter | 1 |
-| play | 1 |
-| MisterSam | 1 |
-| Ghudra | 1 |
-| oblivion666 | 1 |
-| crypto24 | 1 |
-| Killer_Bee | 1 |
-| p4xar | 1 |
-| cicada3301 | 1 |
-| gunra | 1 |
-| arkana | 1 |
-| everest | 1 |
-| Datacarry | 1 |
-| worldleaks | 1 |
-| cache | 1 |
-| TajineSec / Tajinesec_MA (revendication publiée) | 1 |
-| 0x0day, publication postée sur le forum cybercriminel DarkForums | 1 |
-| RiseAgainLuigi & B4baYega | 1 |
-| mrdump (canal Telegram « Server dump ») | 1 |
-| KickingPigs | 1 |
-| mrdump (publication sur le canal Telegram « Server dump ») | 1 |
-| MdHackersArmy (publication postée par Doxeur23azi sur un forum cybercriminel, DarkForums) | 1 |
-| Hepd | 1 |
-| sanji_shi5 (compte source) | 1 |
-| d4rk4rmy | 1 |
-| Mercobyte | 1 |
-| Gh1nDar | 1 |
-| Wieko | 1 |
-| RainbowDF | 1 |
-| Chucky_BF | 1 |
-| N1KA | 1 |
-| GhostCrawl | 1 |
-| BIGBROTHER | 1 |
-| Fire Wire | 1 |
-| Tanaka | 1 |
-| yurei | 1 |
-| privilege, publication sur un forum cybercriminel | 1 |
-| privilege | 1 |
-| BlackShrantac | 1 |
-| KILLUAX | 1 |
-| beast | 1 |
-| brotherhood | 1 |
-| medusa | 1 |
-| blackshrantac | 1 |
-| DBhacker_BF | 1 |
-| EternalRed | 1 |
-| Spirigatito, publication postée sur un forum cybercriminel | 1 |
-| stormous | 1 |
-| anisanas2 | 1 |
-| benzona | 1 |
-| RL000 | 1 |
-| kazu | 1 |
-| GhostVector (compte source) | 1 |
-| camillabf, publication sur un forum cybercriminel (RaidForums) | 1 |
-| LindaBF, publication sur un forum cybercriminel (RaidForums) | 1 |
 
-## 7. Classification
+Cette vue présente les dix premiers acteurs. Les alias, comptes sources et annotations de publication sont normalisés pour le classement ; l’attribution complète au niveau des fiches reste disponible dans les victimes mensuelles et les bundles STIX.
 
-| Type | Incidents |
-|---|---:|
-| Ransomware | 122 |
-| Data Leak | 71 |
-| Access Sale | 3 |
+## 7. Interprétation et priorités SOC
 
-## 8. Lecture CTI et priorités SOC
-
-La concentration des fiches sur quelques pays reflète d’abord l’accès aux sources publiques. Les équipes SOC doivent conserver une veille des accès distants, protéger les sauvegardes, contrôler les comptes privilégiés et préparer la réponse aux revendications de données.
+La répartition mesure la visibilité AFRINTEL et non la prévalence des compromissions réelles. Les revendications ransomware dominent le corpus, tandis que les fuites et ventes d’accès constituent un signal d’exposition distinct. Les équipes SOC doivent vérifier les revendications avec les journaux IAM, VPN, EDR, sauvegardes, DNS, proxy, WAF et applicatifs, et distinguer une nouvelle compromission d’une republication ou d’une revendication non vérifiée.
 
 ## Conclusion
 
-Le bilan 2025 couvre 196 fiches documentées. Les limites de preuve et les éventuelles doubles revendications doivent rester visibles dans toute interprétation.
+La base statistique 2025 est réconciliée à **197 fiches** : **122 ransomware**, **72 fuites de données**, **3 ventes d’accès** et **0 défacement**. Les vues pays, secteurs et acteurs doivent être régénérées depuis les fiches mensuelles à chaque évolution de la source.
 
 **AFRINTEL** — TLP:CLEAR

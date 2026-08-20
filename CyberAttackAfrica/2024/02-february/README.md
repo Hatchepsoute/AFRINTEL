@@ -21,6 +21,10 @@ In February 2024, Africa recorded **9 incident records** across 6 countries: **5
 - 🔹 **Countries affected**: South Africa (2), Ethiopia (1), Egypt (2), Tunisia (1), Ivory Coast (2), Ghana (1)
 - 🔹 **Sectors**: Government/Public Administration, Government/Education, Government/Employment Services, Digital Services/Telecom, Technology/Software Services, Manufacturing, Healthcare & Research, Consumer Goods, Utilities
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (44.4% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

@@ -24,7 +24,7 @@ AFRINTEL a recensé **42 fiches d’incidents liés à l’Afrique** en juillet 
 
 L’Égypte et la Tunisie arrivent en tête avec sept occurrences géographiques chacune, devant le Maroc et l’Afrique du Sud avec six. Le gouvernement et l’administration constituent le premier ensemble sectoriel avec 11 fiches. Aucun acteur ne domine : arcusmedia totalise quatre publications ransomware et dragonforce trois.
 
-La solidité des preuves varie fortement : **21 fiches relèvent de revendications non vérifiées**, **20 comportent un échantillon publié** et **1 correspond à des données entièrement publiées**. Neuf fiches atteignent le niveau d’impact 4. Les cas à la fois sensibles et les mieux étayés comprennent Nerasolgh, Tayara.tn et Distamed, pour lesquels AFRINTEL a examiné des éléments structurés ; les volumes complets annoncés et les vecteurs d’intrusion ne sont pas nécessairement établis.
+La solidité des preuves varie fortement : **21 fiches relèvent de revendications non vérifiées**, **20 comportent un échantillon publié** et **1 est enregistrée sous le statut `Data Fully Published`, qui décrit une publication complète revendiquée et non une exhaustivité vérifiée**. Neuf fiches atteignent le niveau d’impact 4. Les cas à la fois sensibles et les mieux étayés comprennent Nerasolgh, Tayara.tn et Distamed, pour lesquels AFRINTEL a examiné des éléments structurés ; les volumes complets annoncés et les vecteurs d’intrusion ne sont pas nécessairement établis.
 
 Les priorités défensives sont la protection des comptes privilégiés et des messageries, la détection des exports massifs de bases et la prise en charge rapide des expositions de données d’identité, de santé, d’éducation et d’administration. Les fiches complètes sont disponibles dans [`victims_FR.md`](./victims_FR.md).
 
@@ -289,29 +289,29 @@ Il s’agit d’une **évaluation relative de l’exposition observée en juille
 
 ### 6.2 Dossiers à surveiller
 
-### Ministère égyptien de l’Agriculture
+#### Ministère égyptien de l’Agriculture
 
 Les éléments examinés comprennent des correspondances, contrats, paiements, inspections, inventaires techniques et captures d’application. L’ensemble est cohérent avec une exposition de documents administratifs et opérationnels. Si l’authenticité est confirmée, les risques incluent la fraude foncière, la falsification documentaire et le phishing contextualisé.
 
-### Nerasolgh - Ghana
+#### Nerasolgh - Ghana
 
 Les exports examinés présentent des structures liées aux clients, au personnel, aux paiements USSD, aux transactions et à certains champs bancaires. L’acteur revendique 26 millions d’enregistrements, mais le volume effectivement examiné est beaucoup plus limité. L’écart entre la revendication et l’échantillon demeure une inconnue importante.
 
-### Heliopolis University et HIMS
+#### Heliopolis University et HIMS
 
 Ces deux dossiers doivent rester distincts. L’échantillon d’Heliopolis montre des structures de comptes parents et étudiants. La publication HIMS revendique des données concernant les étudiants, le personnel, la finance et les paiements. Les volumes annoncés n’ont pas été confirmés indépendamment.
 
-### Adex - Tunisie
+#### Adex - Tunisie
 
 La republication attribuée à BIGBROTHER montre une interface administrative dont le nombre d’enregistrements est proche du volume annoncé. Cela rend l’accès allégué plausible, sans établir l’identité de l’intrus initial ni l’étendue des données.
 
 ### 6.3 Revendications multiples et hypothèses
 
-### Planet Sport
+#### Planet Sport
 
 Le domaine `planetsport.ma` avait été listé par LockBit 5 en avril 2026. Une publication gratuite attribuée à Mozvo est apparue en juillet. Une republication, une redistribution par un tiers ou un lien avec un affilié sont possibles, mais aucune de ces hypothèses n’est démontrée. Les deux fiches restent donc séparées et liées par une note analytique.
 
-### Zenith Bank
+#### Zenith Bank
 
 Zenith Bank Plc a été mentionnée dans une revendication de fuite de données publiée le 9 août 2025 par KaruHunters, qui alléguait la mise en vente de plus de 1,8 million de dossiers de clients et d’employés. En juillet 2026, Zenith Bank est réapparue dans une revendication ransomware attribuée à ExfilSquad. Les deux publications sont séparées de près de onze mois et impliquent des acteurs différents. Cette répétition justifie une surveillance renforcée, mais les éléments disponibles ne permettent pas d’établir que les deux publications proviennent de la même compromission.
 
@@ -384,7 +384,7 @@ Juillet 2026 présente une menace fragmentée mais large. Le ransomware reste tr
 ### Contrôles de cohérence
 
 - Types : 18 ransomware + 18 fuites de données + 6 ventes d’accès + 0 défacement = 42.
-- Statuts : 21 revendications non vérifiées + 20 revendications avec échantillon + 1 jeu entièrement publié = 42.
+- Statuts : 21 revendications non vérifiées + 20 revendications avec échantillon + 1 publication complète revendiquée, enregistrée sous `Data Fully Published` = 42.
 - Confiance : 22 Faible + 8 Moyen + 9 Élevé + 3 Très élevé = 42.
 - Impact : 12 Niveau 2 + 21 Niveau 3 + 9 Niveau 4 = 42.
 - Géographie : 42 fiches uniques ; 43 occurrences pays, car une fiche couvre le Nigeria et la Côte d’Ivoire.

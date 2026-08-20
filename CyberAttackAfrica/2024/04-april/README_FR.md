@@ -21,6 +21,10 @@ En avril 2024, l'Afrique a enregistré **6 victimes** documentées : **5 revendi
 - 🔹 **Pays touchés** : Afrique du Sud (2), Seychelles (1), Maroc (1), Libye (1), Burkina Faso (1)
 - 🔹 **Secteurs** : Banque/Crypto, Médias & Édition, Industrie/Emballage, Technologies, Pétrole & Gaz, Gouvernement/Emploi et formation
 - 🔹 **Types d'incident** : Ransomware (5), Fuite de données (1)
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (16.7% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 
 ---
 

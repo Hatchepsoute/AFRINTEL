@@ -13,13 +13,13 @@
 
 ### 1. Résumé exécutif
 
-Juillet 2025 enregistre **20 revendications** documentées dans 11 pays. Le mois est dominé par une **campagne coordonnée de Dark 07x Team contre le secteur bancaire et financier tunisien** : 5 des 20 revendications visent des institutions financières tunisiennes, ciblées entre le 25 et le 28 juillet. Le Maroc est le deuxième pays le plus touché avec quatre revendications distinctes couvrant la construction, la distribution télécom, l'enseignement supérieur et une fuite d'identifiants ministériels. L'Égypte fait face à la demande de rançon la plus élevée du mois (2,27 M$) contre une autorité publique de l'électricité, et un portail gouvernemental mauritanien expose des dossiers de qualification du personnel contenant numéros de carte d'identité et diplômes. AFRINTEL a également examiné et partiellement corroboré une publication accusatoire visant le ministère algérien de l'Énergie, et enregistré une revendication concernant l'ambassade d'Érythrée aux États-Unis.
+Juillet 2025 enregistre **21 revendications** documentées dans 12 pays. Le mois est dominé par une **campagne coordonnée de Dark 07x Team contre le secteur bancaire et financier tunisien** : 5 des 21 revendications concernent des institutions financières tunisiennes, publiées entre le 25 et le 28 juillet. Le Maroc est le deuxième pays le plus visible avec quatre revendications distinctes couvrant la construction, la distribution télécom, l'enseignement supérieur et une fuite d'identifiants ministériels. L'Égypte fait face à la demande de rançon la plus élevée du mois (2,27 M$) contre une autorité publique de l'électricité, et un portail gouvernemental mauritanien expose des dossiers de qualification du personnel contenant numéros de carte d'identité et diplômes. AFRINTEL a également examiné et partiellement corroboré une publication accusatoire visant le ministère algérien de l'Énergie, enregistré une revendication concernant l'ambassade d'Érythrée aux États-Unis et recensé la publication complète d'une base de données de contact visant la place de marché burundaise PesaBay.
 
 **Chiffres clés :**
-- 🔹 **20 revendications** documentées
-- 🔹 **16 acteurs/groupes actifs** : Dark 07x Team (5), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Unknown (2), Mercobyte (1), Gh1nDar (1), Wieko (1)
-- 🔹 **Pays touchés** : Tunisie (5), Maroc (4), Algérie (2), Nigéria (1), Afrique du Sud (1), Tanzanie (1), Kenya (2), Égypte (1), Namibie (1), Mauritanie (1), Érythrée (1)
-- 🔹 **Secteurs** : Finance / Banque / Assurance (6), Gouvernement / Administrations publiques (6), Énergie / Mines (3), Éducation (2), Construction / Immobilier (1), Religion / ONG (1), Télécommunications (1)
+- 🔹 **21 revendications** documentées
+- 🔹 **16 acteurs/groupes actifs** : Dark 07x Team (5), Unknown (2), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Gh1nDar (1), Wieko (1), BabayoSysteam (1)
+- 🔹 **Pays touchés** : Tunisie (5), Maroc (4), Algérie (2), Kenya (2), Nigéria (1), Afrique du Sud (1), Tanzanie (1), Égypte (1), Namibie (1), Mauritanie (1), Érythrée (1), Burundi (1)
+- 🔹 **Secteurs** : Finance / Banque / Assurance (6), Gouvernement / Administrations publiques (6), Énergie / Mines (3), Éducation (2), Construction / Immobilier (1), Religion / ONG (1), Télécommunications (1), Commerce / E-commerce (1)
 
 ---
 
@@ -47,6 +47,7 @@ Juillet 2025 enregistre **20 revendications** documentées dans 11 pays. Le mois
 | 27 juillet | Ambassade d'Érythrée aux États-Unis | Érythrée | Gh1nDar |
 | 28 juillet | BH Bank | Tunisie | Dark 07x Team |
 | 29 juillet | Ministère de l'Éducation nationale, du Préscolaire et des Sports | Maroc | Wieko |
+| 30 juillet | PesaBay | Burundi | BabayoSysteam |
 
 ```mermaid
 timeline
@@ -71,6 +72,7 @@ timeline
     27 juillet : Ambassade d'Érythrée aux États-Unis - Gh1nDar
     28 juillet : BH Bank (Tunisie) - Dark 07x Team
     29 juillet : Ministère de l'Éducation (Maroc) - Wieko
+    30 juillet : PesaBay (Burundi) - BabayoSysteam
 ```
 
 ---
@@ -92,10 +94,11 @@ timeline
 | Namibie | 1 |
 | Mauritanie | 1 |
 | Érythrée | 1 |
+| Burundi | 1 |
 
 ```mermaid
 pie
-    title Répartition par pays - Juillet 2025 (20 revendications)
+    title Répartition par pays - Juillet 2025 (21 revendications)
     "Tunisie" : 5
     "Maroc" : 4
     "Algérie" : 2
@@ -107,6 +110,7 @@ pie
     "Namibie" : 1
     "Mauritanie" : 1
     "Érythrée" : 1
+    "Burundi" : 1
 ```
 
 #### 3.2 Par secteur
@@ -120,13 +124,14 @@ pie
 | Construction / Immobilier | 1 |
 | Religion / ONG | 1 |
 | Télécommunications | 1 |
+| Commerce / E-commerce | 1 |
 
 ```mermaid
 xychart-beta
     title "Secteurs ciblés - Juillet 2025"
-    x-axis ["Finance/Banque", "Gouvernement", "Énergie/Mines", "Éducation", "Construction", "ONG", "Télécom"]
+    x-axis ["Finance/Banque", "Gouvernement", "Énergie/Mines", "Éducation", "Construction", "ONG", "Télécom", "E-commerce"]
     y-axis "Nombre de revendications" 0 --> 7
-    bar [6, 6, 3, 2, 1, 1, 1]
+    bar [6, 6, 3, 2, 1, 1, 1, 1]
 ```
 
 #### 3.3 Groupes actifs
@@ -148,6 +153,7 @@ xychart-beta
 | Mercobyte | 1 | Maroc (université) |
 | Gh1nDar | 1 | Érythrée (ambassade, diplomatique) |
 | Wieko | 1 | Maroc (liste d'identifiants du secteur éducatif) |
+| BabayoSysteam | 1 | Burundi (place de marché PesaBay) |
 
 ---
 
@@ -159,6 +165,7 @@ xychart-beta
 - **Algérie, vérification par AFRINTEL** : une publication de Phantom Atlas accuse le ministère de l'Énergie, des Mines et des Énergies Renouvelables d'avoir accordé une licence d'importation à une entreprise « inconnue » pour des produits chimiques dangereux. L'examen des documents divulgués par AFRINTEL les évalue comme probablement authentiques, mais l'angle accusatoire n'est pas corroboré : l'entreprise citée est un fabricant d'étanchéité dûment enregistré, et l'importation relève d'une procédure de déclaration réglementaire existante. La fuite expose néanmoins un document administratif interne et des données commerciales d'un tiers sans autorisation.
 - **Mauritanie, données personnelles sensibles** : un échantillon local du portail gouvernemental QCE de marchés publics a exposé des dossiers de qualification du personnel (CV, cartes d'identité nationale, diplômes, contrats notariés) pour des employés du secteur privé, sans acteur revendicateur identifié. La combinaison de numéros d'identité nationale, de diplômes et de données d'emploi crée un risque important de fraude à l'identité.
 - **Érythrée, revendication touchant le secteur diplomatique** : une revendication de Gh1nDar allègue une fuite concernant environ 5 000 citoyens liés à l'ambassade d'Érythrée aux États-Unis, incluant des données d'identité et de passeport. Aucun échantillon vérifiable n'était accessible ; AFRINTEL enregistre cette revendication comme non vérifiée, provenant d'un compte source sans historique de fiabilité établi.
+- **Burundi, base de données PesaBay intégralement publiée** : une publication attribuée à BabayoSysteam met à disposition une base présentée comme complète de 1 850 enregistrements PesaBay, contenant des noms, adresses e-mail, numéros de téléphone et statuts de compte. Le cas est classé `Data Fully Published` ; la méthode d'acquisition demeure inconnue.
 
 ---
 
@@ -167,7 +174,7 @@ xychart-beta
     title "Évolution mensuelle des revendications (Jan - Juil 2025)"
     x-axis ["Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil"]
     y-axis "Nombre de revendications" 0 --> 22
-    bar [16, 9, 11, 16, 21, 20, 20]
+    bar [16, 9, 11, 16, 21, 20, 21]
 ```
 
 ### 5. Recommandations
@@ -179,6 +186,7 @@ xychart-beta
 | Plateformes de marchés publics / données personnelles | Restreindre l'accès aux dépôts de documents d'identité et de dossiers de qualification, chiffrer les données au repos, et journaliser tout export. |
 | Éducation | Durcir les portails web publics, surveiller le scraping de données, et se préparer à des scénarios d'opération d'influence. |
 | Missions diplomatiques | Revoir les prestataires tiers (hébergement, CRM) traitant des données de citoyens, et imposer l'authentification multifacteur sur les systèmes consulaires administratifs. |
+| Plateformes e-commerce | Restreindre les exports massifs de comptes, surveiller les lectures inhabituelles en base et préparer la notification des utilisateurs après validation interne. |
 | Toutes organisations | Suivre Dark 07x Team comme groupe très actif contre les infrastructures financières nord-africaines. |
 
 ---

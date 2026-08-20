@@ -20,6 +20,10 @@ In June 2024, Africa recorded **3 documented ransomware victims**. The month saw
 - 🔹 **Sectors**: Agriculture/agribusiness (1), Services (1), Legal services (1)
 
 👉🏾 [Victims list](./victims.md)
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **0 records** (0.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

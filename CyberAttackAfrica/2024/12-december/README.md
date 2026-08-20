@@ -21,6 +21,10 @@ December 2024 closes the year with **12 documented ransomware victims** across 1
 - 🔹 **Countries affected**: South Africa (2), Nigeria (1), Algeria (1), Tanzania (1), Sudan (1), Mauritania (1), Namibia (1), Egypt (1), Zambia (1), Botswana (1), Tunisia (1)
 - 🔹 **Sectors**: Telecommunications (2), Mobile Banking / Fintech (2), Public Administrations, Education / Research, Food & Agribusiness, Water / Public Utilities, Retail, Audit / Consulting, Automotive / Industrial, Maritime
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **0 records** (0.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

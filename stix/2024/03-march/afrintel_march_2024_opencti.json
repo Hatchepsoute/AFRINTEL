@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -43,8 +43,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--0877bd34-b32b-5fca-b3ae-3c5ecf4cee48",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "ransomhub",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -60,12 +60,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         }
       ]
     },
@@ -73,8 +73,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--93f050dd-011c-5ac5-9f5e-8d0a74ee3621",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Go4Kora",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Sports Media & Entertainment.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Médias sportifs & Divertissement.",
@@ -90,12 +90,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -103,8 +103,12 @@
         }
       ],
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Sports Media & Entertainment",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "Go4Kora",
+      "x_afrintel_sector_raw": "Médias sportifs & Divertissement",
+      "x_afrintel_sector_raw_en": "Sports Media & Entertainment",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "transportation"
       ]
@@ -113,8 +117,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--41cb238d-57a4-58ca-ac98-fe7978b2111c",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 01: Go4Kora",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Go4Kora in Egypt on March 9, 2024. The source actor is listed as ransomhub. Status: Claim - Unverified. Sector: Sports Media & Entertainment. Source summary: Go4Kora is a popular sports news and live streaming portal extensively accessed in Egypt and the MENA region for football broadcasting.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Go4Kora en Égypte, à la date du 9 Mars 2024. L'acteur source est indiqué comme ransomhub. Statut : Claim - Unverified. Secteur : Médias sportifs & Divertissement. Résumé de la source : Go4Kora est un portail d'actualités sportives et de streaming en direct largement suivi en Égypte et dans la région MENA pour la diffusion du football.",
       "first_seen": "2024-03-09T00:00:00Z",
@@ -132,12 +136,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -148,17 +152,24 @@
       "x_afrintel_incident_index": 1,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Sports Media & Entertainment",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Médias sportifs & Divertissement",
+      "x_afrintel_sector_raw_en": "Sports Media & Entertainment",
       "x_afrintel_actor": "ransomhub",
-      "x_afrintel_date_display": "March 9, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "ransomhub",
+      "x_afrintel_date_display": "9 Mars 2024",
+      "x_afrintel_date_display_en": "March 9, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 2"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--f66ce071-da10-53c9-a59c-bcf919d97f93",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--41cb238d-57a4-58ca-ac98-fe7978b2111c",
       "target_ref": "threat-actor--0877bd34-b32b-5fca-b3ae-3c5ecf4cee48",
@@ -171,8 +182,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--90870d63-b001-50a9-bb6a-e9ced5d201cf",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--0877bd34-b32b-5fca-b3ae-3c5ecf4cee48",
       "target_ref": "identity--93f050dd-011c-5ac5-9f5e-8d0a74ee3621",
@@ -185,8 +196,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--b7725904-21ed-524d-8cd0-33f7afa78f65",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--41cb238d-57a4-58ca-ac98-fe7978b2111c",
       "target_ref": "identity--93f050dd-011c-5ac5-9f5e-8d0a74ee3621",
@@ -199,8 +210,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "lockbit3",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -216,12 +227,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         }
       ]
     },
@@ -229,8 +240,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--f455a8b6-d346-57e2-a652-3deeae9ab005",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Government Printing Works (GPW)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Government & State Security Printing.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Administrations publiques & Impressions de sécurité d'État.",
@@ -246,12 +257,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -259,8 +270,12 @@
         }
       ],
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Government & State Security Printing",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Government Printing Works (GPW)",
+      "x_afrintel_sector_raw": "Administrations publiques & Impressions de sécurité d'État",
+      "x_afrintel_sector_raw_en": "Government & State Security Printing",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "government"
       ]
@@ -269,8 +284,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--4029ebca-795a-5cfc-9918-fd5a3ea184eb",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 02: Government Printing Works (GPW)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Government Printing Works (GPW) in South Africa on March 11, 2024. The source actor is listed as lockbit3. Status: Claim - Unverified. Sector: Government & State Security Printing. Source summary: The Government Printing Works of South Africa is a state-owned entity under the Department of Home Affairs responsible for secure identity documentation, passports, and official gazettes.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Government Printing Works (GPW) en Afrique du Sud, à la date du 11 Mars 2024. L'acteur source est indiqué comme lockbit3. Statut : Claim - Unverified. Secteur : Administrations publiques & Impressions de sécurité d'État. Résumé de la source : Le Government Printing Works d'Afrique du Sud est une entité publique sous la tutelle du ministère de l'Intérieur, chargée de la production des documents d'identité sécurisés, des passeports et des bulletins officiels.",
       "first_seen": "2024-03-11T00:00:00Z",
@@ -288,12 +303,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -304,17 +319,24 @@
       "x_afrintel_incident_index": 2,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Government & State Security Printing",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Administrations publiques & Impressions de sécurité d'État",
+      "x_afrintel_sector_raw_en": "Government & State Security Printing",
       "x_afrintel_actor": "lockbit3",
-      "x_afrintel_date_display": "March 11, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "lockbit3",
+      "x_afrintel_date_display": "11 Mars 2024",
+      "x_afrintel_date_display_en": "March 11, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--815dab26-4165-5704-b3ec-846b22230ef8",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--4029ebca-795a-5cfc-9918-fd5a3ea184eb",
       "target_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
@@ -327,8 +349,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--b6f080aa-0d1c-51fd-8342-88e92c12f7b1",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
       "target_ref": "identity--f455a8b6-d346-57e2-a652-3deeae9ab005",
@@ -341,8 +363,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--f22dbd53-1397-5563-a642-7b63c169b423",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--4029ebca-795a-5cfc-9918-fd5a3ea184eb",
       "target_ref": "identity--f455a8b6-d346-57e2-a652-3deeae9ab005",
@@ -355,8 +377,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--85ffe8b4-9a47-5028-8e9b-a5048a921bdc",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "hunters",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -372,12 +394,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         }
       ]
     },
@@ -385,16 +407,15 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--6ab97dfd-0596-508f-ac15-f126cebe3421",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "ATL Leasing",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Financial Services & Asset Leasing.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Services financiers & Crédit-bail.",
       "labels": [
         "afrintel",
         "victim",
-        "tunisia",
-        "financial-services"
+        "tunisia"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -402,12 +423,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -415,18 +436,19 @@
         }
       ],
       "x_afrintel_country": "Tunisia",
-      "x_afrintel_sector_raw": "Financial Services & Asset Leasing",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
-      "sectors": [
-        "financial-services"
-      ]
+      "x_afrintel_country_fr": "Tunisie",
+      "x_afrintel_organization_fr": "ATL Leasing",
+      "x_afrintel_sector_raw": "Services financiers & Crédit-bail",
+      "x_afrintel_sector_raw_en": "Financial Services & Asset Leasing",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md"
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--26ca7643-45a7-5f22-bb97-0b259ee24095",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 03: ATL Leasing",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ATL Leasing in Tunisia on March 15, 2024. The source actor is listed as hunters. Status: Claim - Unverified. Sector: Financial Services & Asset Leasing. Source summary: Arab Tunisian Leasing (ATL) is a prominent financial institution listed on the Tunis Stock Exchange, specializing in professional equipment and real estate financing.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ATL Leasing en Tunisie, à la date du 15 Mars 2024. L'acteur source est indiqué comme hunters. Statut : Claim - Unverified. Secteur : Services financiers & Crédit-bail. Résumé de la source : Arab Tunisian Leasing (ATL) est une institution financière de premier plan cotée à la Bourse de Tunis, spécialisée dans le financement par crédit-bail d'équipements professionnels et immobiliers.",
       "first_seen": "2024-03-15T00:00:00Z",
@@ -435,8 +457,7 @@
         "africa",
         "claim-unverified",
         "ransomware",
-        "tunisia",
-        "financial-services"
+        "tunisia"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -444,12 +465,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -460,17 +481,24 @@
       "x_afrintel_incident_index": 3,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Tunisia",
-      "x_afrintel_sector_raw": "Financial Services & Asset Leasing",
+      "x_afrintel_country_fr": "Tunisie",
+      "x_afrintel_sector_raw": "Services financiers & Crédit-bail",
+      "x_afrintel_sector_raw_en": "Financial Services & Asset Leasing",
       "x_afrintel_actor": "hunters",
-      "x_afrintel_date_display": "March 15, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "hunters",
+      "x_afrintel_date_display": "15 Mars 2024",
+      "x_afrintel_date_display_en": "March 15, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--f016fcea-1194-5766-90f1-ae76048701aa",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--26ca7643-45a7-5f22-bb97-0b259ee24095",
       "target_ref": "threat-actor--85ffe8b4-9a47-5028-8e9b-a5048a921bdc",
@@ -483,8 +511,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--9a501707-0ae1-515a-ac47-62446ccd9e47",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--85ffe8b4-9a47-5028-8e9b-a5048a921bdc",
       "target_ref": "identity--6ab97dfd-0596-508f-ac15-f126cebe3421",
@@ -497,8 +525,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--82820892-47f2-52f2-842c-da272eed2cb6",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--26ca7643-45a7-5f22-bb97-0b259ee24095",
       "target_ref": "identity--6ab97dfd-0596-508f-ac15-f126cebe3421",
@@ -511,8 +539,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--c6eca2e9-23a9-5ae5-ae4e-3107085c1725",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "El Ezaby Pharmacy",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Healthcare & Pharmaceutical Retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Santé & Distribution pharmaceutique.",
@@ -528,12 +556,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -541,8 +569,12 @@
         }
       ],
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Healthcare & Pharmaceutical Retail",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "El Ezaby Pharmacy",
+      "x_afrintel_sector_raw": "Santé & Distribution pharmaceutique",
+      "x_afrintel_sector_raw_en": "Healthcare & Pharmaceutical Retail",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "healthcare"
       ]
@@ -551,8 +583,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--75607ec6-cbee-55aa-af5c-c3077a347bff",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 04: El Ezaby Pharmacy",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting El Ezaby Pharmacy in Egypt on March 15, 2024. The source actor is listed as lockbit3. Status: Claim - Unverified. Sector: Healthcare & Pharmaceutical Retail. Source summary: El Ezaby Pharmacy is one of Egypt's largest pharmaceutical retail networks, operating numerous megastores and a robust nation-wide delivery ecosystem.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant El Ezaby Pharmacy en Égypte, à la date du 15 Mars 2024. L'acteur source est indiqué comme lockbit3. Statut : Claim - Unverified. Secteur : Santé & Distribution pharmaceutique. Résumé de la source : Pharmacies El Ezaby représente l'un des plus grands réseaux de distribution pharmaceutique en Égypte, exploitant de nombreuses officines et une logistique de livraison nationale.",
       "first_seen": "2024-03-15T00:00:00Z",
@@ -570,12 +602,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -586,17 +618,24 @@
       "x_afrintel_incident_index": 4,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Healthcare & Pharmaceutical Retail",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Santé & Distribution pharmaceutique",
+      "x_afrintel_sector_raw_en": "Healthcare & Pharmaceutical Retail",
       "x_afrintel_actor": "lockbit3",
-      "x_afrintel_date_display": "March 15, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "lockbit3",
+      "x_afrintel_date_display": "15 Mars 2024",
+      "x_afrintel_date_display_en": "March 15, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--723fd572-e99d-59ee-bef5-6f128f696abd",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--75607ec6-cbee-55aa-af5c-c3077a347bff",
       "target_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
@@ -609,8 +648,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--89e8c76d-e56e-5870-b60c-5af840ee4c3d",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
       "target_ref": "identity--c6eca2e9-23a9-5ae5-ae4e-3107085c1725",
@@ -623,8 +662,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--eed73e62-d60d-52d7-aad0-61768e75491f",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--75607ec6-cbee-55aa-af5c-c3077a347bff",
       "target_ref": "identity--c6eca2e9-23a9-5ae5-ae4e-3107085c1725",
@@ -637,8 +676,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--861ee2c5-f8a5-5449-85de-c03f32927b19",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Agribank Namibia",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Namibia. Sector: Banking & Agricultural Finance.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Namibie. Secteur : Secteur bancaire & Financement agricole.",
@@ -654,12 +693,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -667,8 +706,12 @@
         }
       ],
       "x_afrintel_country": "Namibia",
-      "x_afrintel_sector_raw": "Banking & Agricultural Finance",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Namibie",
+      "x_afrintel_organization_fr": "Agribank Namibia",
+      "x_afrintel_sector_raw": "Secteur bancaire & Financement agricole",
+      "x_afrintel_sector_raw_en": "Banking & Agricultural Finance",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "financial-services"
       ]
@@ -677,8 +720,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--7a70e63b-9d4b-515d-8032-4b8c3e9acc06",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 05: Agribank Namibia",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Agribank Namibia in Namibia on March 16, 2024. The source actor is listed as lockbit3. Status: Claim - Unverified. Sector: Banking & Agricultural Finance. Source summary: The Agricultural Bank of Namibia is a state-owned banking institution specialized in financing agricultural expansion, aquaculture, and rural land ownership.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Agribank Namibia en Namibie, à la date du 16 Mars 2024. L'acteur source est indiqué comme lockbit3. Statut : Claim - Unverified. Secteur : Secteur bancaire & Financement agricole. Résumé de la source : L'Agricultural Bank of Namibia est une institution bancaire étatique spécialisée dans le financement de l'expansion agricole, de l'aquaculture et de l'acquisition de terres rurales.",
       "first_seen": "2024-03-16T00:00:00Z",
@@ -696,12 +739,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -712,17 +755,24 @@
       "x_afrintel_incident_index": 5,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Namibia",
-      "x_afrintel_sector_raw": "Banking & Agricultural Finance",
+      "x_afrintel_country_fr": "Namibie",
+      "x_afrintel_sector_raw": "Secteur bancaire & Financement agricole",
+      "x_afrintel_sector_raw_en": "Banking & Agricultural Finance",
       "x_afrintel_actor": "lockbit3",
-      "x_afrintel_date_display": "March 16, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "lockbit3",
+      "x_afrintel_date_display": "16 Mars 2024",
+      "x_afrintel_date_display_en": "March 16, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--ad319e96-693f-5d3b-b4a2-9940dc68b480",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--7a70e63b-9d4b-515d-8032-4b8c3e9acc06",
       "target_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
@@ -735,8 +785,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--3987746c-38cc-5dd7-8faf-2a29227a64c4",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
       "target_ref": "identity--861ee2c5-f8a5-5449-85de-c03f32927b19",
@@ -749,8 +799,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--04313e11-89e0-5088-9bff-9066ee66de87",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--7a70e63b-9d4b-515d-8032-4b8c3e9acc06",
       "target_ref": "identity--861ee2c5-f8a5-5449-85de-c03f32927b19",
@@ -763,8 +813,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--45369082-930a-5524-bdb1-fc9dec6e85ae",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "PGESCo",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Energy & Infrastructure Engineering.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Énergie & Ingénierie des infrastructures.",
@@ -780,12 +830,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -793,8 +843,12 @@
         }
       ],
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Energy & Infrastructure Engineering",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "PGESCo",
+      "x_afrintel_sector_raw": "Énergie & Ingénierie des infrastructures",
+      "x_afrintel_sector_raw_en": "Energy & Infrastructure Engineering",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "manufacturing"
       ]
@@ -803,8 +857,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--94358cc1-d131-539b-a317-15a0d6043696",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 06: PGESCo",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting PGESCo in Egypt on March 22, 2024. The source actor is listed as ransomhub. Status: Claim - Unverified. Sector: Energy & Infrastructure Engineering. Source summary: Power Generation Engineering and Services Company (PGESCo) is a major Egyptian engineering firm providing consultancy and project management for large-scale power plants and industrial oil facilities.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant PGESCo en Égypte, à la date du 22 Mars 2024. L'acteur source est indiqué comme ransomhub. Statut : Claim - Unverified. Secteur : Énergie & Ingénierie des infrastructures. Résumé de la source : La Power Generation Engineering and Services Company (PGESCo) est une firme d'ingénierie égyptienne majeure fournissant des services de conseil et de gestion de projet pour les centrales électriques et les infrastructures pétrolières.",
       "first_seen": "2024-03-22T00:00:00Z",
@@ -822,12 +876,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -838,17 +892,24 @@
       "x_afrintel_incident_index": 6,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
-      "x_afrintel_sector_raw": "Energy & Infrastructure Engineering",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Énergie & Ingénierie des infrastructures",
+      "x_afrintel_sector_raw_en": "Energy & Infrastructure Engineering",
       "x_afrintel_actor": "ransomhub",
-      "x_afrintel_date_display": "March 22, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "ransomhub",
+      "x_afrintel_date_display": "22 Mars 2024",
+      "x_afrintel_date_display_en": "March 22, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--e1403118-329b-5af4-b1e7-c4d98d182a84",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--94358cc1-d131-539b-a317-15a0d6043696",
       "target_ref": "threat-actor--0877bd34-b32b-5fca-b3ae-3c5ecf4cee48",
@@ -861,8 +922,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--51efc488-fed9-5501-9e27-ed38251e78ae",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--0877bd34-b32b-5fca-b3ae-3c5ecf4cee48",
       "target_ref": "identity--45369082-930a-5524-bdb1-fc9dec6e85ae",
@@ -875,8 +936,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--d279897f-f08b-585d-b19f-edb7c8f2199c",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--94358cc1-d131-539b-a317-15a0d6043696",
       "target_ref": "identity--45369082-930a-5524-bdb1-fc9dec6e85ae",
@@ -889,16 +950,15 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--d05b62b2-1fb5-5de7-9afb-a2066af4e9e2",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Higher School of Commerce and Management (ESGC.MA)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Education / Higher Education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Éducation / Enseignement supérieur.",
       "labels": [
         "afrintel",
         "victim",
-        "morocco",
-        "education"
+        "morocco"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -906,12 +966,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -919,18 +979,19 @@
         }
       ],
       "x_afrintel_country": "Morocco",
-      "x_afrintel_sector_raw": "Education / Higher Education",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
-      "sectors": [
-        "education"
-      ]
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Higher School of Commerce and Management (ESGC.MA)",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur",
+      "x_afrintel_sector_raw_en": "Education / Higher Education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md"
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--95263c8a-a57c-5768-a73b-305af83bfadf",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 07: Higher School of Commerce and Management (ESGC.MA)",
       "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Higher School of Commerce and Management (ESGC.MA) in Morocco on March 26, 2024. No actor attribution is recorded. Status: Claim - Data Sample Published. Sector: Education / Higher Education. Source summary: ESGC.MA is presented as a Moroccan higher-education institution focused on commerce and management.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Higher School of Commerce and Management (ESGC.MA) en Maroc, à la date du 26 Mars 2024. Aucune attribution à un acteur n'est enregistrée. Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement supérieur. Résumé de la source : ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.",
       "first_seen": "2024-03-26T00:00:00Z",
@@ -940,8 +1001,7 @@
         "data-leak",
         "data-sample-published",
         "unattributed",
-        "morocco",
-        "education"
+        "morocco"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -949,12 +1009,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -965,17 +1025,24 @@
       "x_afrintel_incident_index": 7,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Morocco",
-      "x_afrintel_sector_raw": "Education / Higher Education",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur",
+      "x_afrintel_sector_raw_en": "Education / Higher Education",
       "x_afrintel_actor": "Unattributed; publication by UnknownMember",
-      "x_afrintel_date_display": "March 26, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "Non attribué ; publication par UnknownMember",
+      "x_afrintel_date_display": "26 Mars 2024",
+      "x_afrintel_date_display_en": "March 26, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 3"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--aa5daf64-7815-5cfb-8a19-612c716442b1",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--95263c8a-a57c-5768-a73b-305af83bfadf",
       "target_ref": "identity--d05b62b2-1fb5-5de7-9afb-a2066af4e9e2",
@@ -988,8 +1055,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--fb962929-b19f-5c8a-9f54-3a805d8ce778",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Nampak",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Industrial Packaging Manufacturing.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Industrie manufacturière (Emballages industriels).",
@@ -1005,12 +1072,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -1018,8 +1085,12 @@
         }
       ],
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Industrial Packaging Manufacturing",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Nampak",
+      "x_afrintel_sector_raw": "Industrie manufacturière (Emballages industriels)",
+      "x_afrintel_sector_raw_en": "Industrial Packaging Manufacturing",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
       "sectors": [
         "manufacturing"
       ]
@@ -1028,8 +1099,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--0785b218-753b-5b76-a455-ee5607f0908c",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL March 2024 incident 08: Nampak",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Nampak in South Africa on March 27, 2024. The source actor is listed as lockbit3. Status: Claim - Unverified. Sector: Industrial Packaging Manufacturing. Source summary: Nampak is Africa's largest packaging manufacturer, based in South Africa, supplying metallic, plastic, paper, and glass packaging solutions across sub-Saharan networks. ## ✍🏿 Author Adama ASSIONGBON SOC & Cyber Threat Intelligence Consultant LinkedIn profile\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Nampak en Afrique du Sud, à la date du 27 Mars 2024. L'acteur source est indiqué comme lockbit3. Statut : Claim - Unverified. Secteur : Industrie manufacturière (Emballages industriels). Résumé de la source : Nampak est le plus grand fabricant d'emballages du continent africain, basé en Afrique du Sud, fournissant des solutions de conditionnement en métal, plastique, papier et verre. ## ✍🏿 Author Adama ASSIONGBON Consultant SOC & Cyber Threat Intelligence LinkedIn profile",
       "first_seen": "2024-03-27T00:00:00Z",
@@ -1047,12 +1118,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/03-march/victims.md"
         },
         {
           "source_name": "website",
@@ -1063,17 +1134,24 @@
       "x_afrintel_incident_index": 8,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Industrial Packaging Manufacturing",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Industrie manufacturière (Emballages industriels)",
+      "x_afrintel_sector_raw_en": "Industrial Packaging Manufacturing",
       "x_afrintel_actor": "lockbit3",
-      "x_afrintel_date_display": "March 27, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims.md"
+      "x_afrintel_actor_fr": "lockbit3",
+      "x_afrintel_date_display": "27 Mars 2024",
+      "x_afrintel_date_display_en": "March 27, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/03-march/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 2"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--8c73aa2c-4908-5d03-aa3d-2f7c8df258b9",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--0785b218-753b-5b76-a455-ee5607f0908c",
       "target_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
@@ -1086,8 +1164,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--ce49acf2-06ff-5478-b3ff-3e398c5ba437",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--9d3194d8-b455-5325-9d64-2354098ea7fd",
       "target_ref": "identity--fb962929-b19f-5c8a-9f54-3a805d8ce778",
@@ -1100,8 +1178,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--60c02036-16db-5bd0-9cbb-2e8f2fb24ecf",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "relationship_type": "targets",
       "source_ref": "incident--0785b218-753b-5b76-a455-ee5607f0908c",
       "target_ref": "identity--fb962929-b19f-5c8a-9f54-3a805d8ce778",
@@ -1114,10 +1192,10 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--48ebb818-a69e-57d3-a2ec-1aa5d5378002",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL monthly CTI report - March 2024",
-      "description": "# 📑 CYBER THREAT INTELLIGENCE (CTI) REPORT\n**Scope:** African Continent | **Period:** March 2024\n**Classification:** TLP:CLEAR\n**Project:** AFRINTEL (African Threat Intelligence Repository)\n\n---\n\n## 1. EXECUTIVE SUMMARY\n\nThe month of March 2024 was marked by sustained threat actor activity from ransomware groups targeting critical infrastructure, financial institutions, and major public sector entities across the African continent, alongside one unattributed data leak claim against a higher-education institution. In total, **8 critical incidents** were officially recorded and analyzed within the scope of the AFRINTEL project.\n\nCybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia**, **Namibia** and **Morocco**.\n\n### Key Indicators - March 2024\n* **Total Validated Victims:** 8\n* **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack), plus 1 unattributed data leak claim (ESGC.MA, Morocco).\n* **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1), Education / Higher Education (1).\n\n---\n\n## 2. THREAT ACTOR LANDSCAPE (RANSOMWARE)\n\nThree organized cybercrime syndicates account for the seven ransomware-attributed attacks this month, alongside one additional unattributed data leak claim tracked separately below:\n\n1. **LockBit 3.0 (50% of incidents):** Despite suffering international law enforcement disruptions (Operation Cronos) earlier in 2024, the LockBit franchise demonstrates significant resilience across the African continent, striking 4 prominent entities through its active network of affiliates.\n2. **RansomHub (25% of incidents):** This emerging threat group confirms its rapid rise in power, specifically targeting high-visibility energy infrastructure and digital media outlets in Egypt.\n3. **Hunters International (12.5% of incidents):** An opportunistic threat actor exploiting the Hive ransomware codebase, identified this month targeting the North African financial services sector.\n4. **Unattributed data leak claim (12.5% of incidents):** A March 26, 2024 forum post by the account UnknownMember claims a 2021 database sample from the Higher School of Commerce and Management (ESGC.MA) in Morocco. This is a data leak claim rather than a ransomware incident and is not attributed to any of the three groups above.\n\n---\n\n## 3. DETAILED INCIDENT MAPPING (MARCH 2024)\n\n### 🗓️ March 19, 2024\n#### 🇪🇬 Egypt - Go4Kora\n* **Incident Identifier:** AFRINTEL-2024-13649\n* **Ransomware Group:** RansomHub\n* **Work Sector:** Sports Media & Audience Entertainment\n* **Website:** [go4kora.tv](https://go4kora.tv)\n* **Attack Status:** Official claim and data exfiltration of subscriber databases.\n* **Description & Context:** Go4Kora is one of the most visited sports news and live football streaming portals in Egypt and the MENA region. The attack targeted the broadcasting infrastructure and subscriber records, impacting platform integrity.\n\n---\n\n### 🗓️ March 20, 2024\n#### 🇿🇦 South Africa - Government Printing Works (GPW)\n* **Incident Identifier:** AFRINTEL-2024-13658\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Public Administrations & State Security Printing\n* **Website:** [gpw.gov.za](https://www.gpw.gov.za)\n* **Attack Status:** Confirmed claim, threat of leaking sovereign government documentation.\n* **Description & Context:** A strategic South African state-owned entity under the Department of Home Affairs, GPW is responsible for printing secure identity documents, passports, visas, and official government gazettes. This constitutes a major compromise impacting digital sovereignty.\n\n---\n\n### 🗓️ March 25, 2024\n#### 🇹🇳 Tunisia - Arab Tunisian Leasing (ATL Leasing)\n* **Incident Identifier:** AFRINTEL-2024-13740\n* **Ransomware Group:** Hunters International\n* **Work Sector:** Financial Services & Asset Leasing\n* **Website:** [atlleasing.com.tn](https://www.atlleasing.com.tn)\n* **Attack Status:** Claimed on the leak site, exfiltration of corporate financial data.\n* **Description & Context:** Listed on the Tunis Stock Exchange, ATL is a prominent Tunisian financial institution specializing in leasing options for professional equipment and real estate dedicated to SMEs.\n\n---\n\n### 🗓️ March 25, 2024\n#### 🇪🇬 Egypt - El Ezaby Pharmacy\n* **Incident Identifier:** AFRINTEL-2024-13743\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Healthcare & Pharmaceutical Retail\n* **Website:** [elezabypharmacy.com](https://www.elezabypharmacy.com)\n* **Attack Status:** Encryption of management systems and claims of compromised customer/supplier records.\n* **Description & Context:** Represents one of the largest pharmaceutical retail networks in Egypt, managing a nationwide network of megastores and a critical supply logistics ecosystem.\n\n---\n\n### 🗓️ March 26, 2024\n#### 🇳🇦 Namibia - Agricultural Bank of Namibia (Agribank)\n* **Incident Identifier:** AFRINTEL-2024-13757\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Banking & Agricultural Finance\n* **Website:** [agribank.com.na](https://www.agribank.com.na)\n* **Attack Status:** Published on the LockBit leak site following failed negotiations.\n* **Description & Context:** A state-owned banking institution crucial to the Namibian economy, exclusively dedicated to financing agricultural expansion, aquaculture, and rural land acquisition.\n\n---\n\n### 🗓️ March 26, 2024\n#### 🇲🇦 Morocco - Higher School of Commerce and Management (ESGC.MA)\n* **Incident Identifier:** AFRINTEL-2024-TBD\n* **Actor / Group:** Unattributed, publication by the forum account UnknownMember\n* **Work Sector:** Education / Higher Education\n* **Website:** [esgc.ma](https://esgc.ma)\n* **Attack Status:** Claim with a published data sample; not attributed to a ransomware group.\n* **Description & Context:** ESGC.MA is presented as a Moroccan higher-education institution focused on commerce and management. A forum post dated March 26, 2024 claims a 2021 database of approximately 500 entries, with a displayed sample showing names, email addresses, password hashes, phone numbers and account-creation dates. The complete dataset and the underlying compromise are not independently verified. AFRINTEL does not reproduce personal data or credentials from the sample.\n\n---\n\n### 🗓️ March 29, 2024\n#### 🇪🇬 Egypt - PGESCo (Power Generation Engineering and Services Company)\n* **Incident Identifier:** AFRINTEL-2024-13908\n* **Ransomware Group:** RansomHub\n* **Work Sector:** Energy, Oil/Gas & Infrastructure Engineering\n* **Website:** [pgesco.com](https://www.pgesco.com)\n* **Attack Status:** Official claim and encryption of engineering network shares.\n* **Description & Context:** A major Egyptian engineering firm with international operations, providing project management, consultancy, and engineering for large-scale power plants and industrial infrastructure across the region.\n\n---\n\n### 🗓️ March 31, 2024\n#### 🇿🇦 South Africa - Nampak\n* **Incident Identifier:** AFRINTEL-2024-13957\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Industrial Manufacturing (Packaging Solutions)\n* **Website:** [nampak.com](https://www.nampak.com)\n* **Attack Status:** Leaking of sensitive corporate data.\n* **Description & Context:** The largest packaging manufacturer and exporter on the African continent, headquartered in South Africa and operating numerous production plants across sub-Saharan networks.\n\n---\n\n## 4. SOC RECOMMENDATIONS & MITigation STRATEGIES\n\nIn light of the observed tactics, techniques, and procedures (TTPs) utilized by LockBit 3.0 and RansomHub, the SOC and Threat Intelligence teams recommend the immediate deployment of the following mitigation controls:\n\n1. **Active Identity & Access Monitoring:** Enforce robust Multi-Factor Authentication (MFA) across all remote access vectors (VPNs, jump hosts, cloud portals) and strictly audit accounts with administrative privileges.\n2. **Perimeter Hardening against RansomHub:** As this group frequently leverages compromised legitimate credentials or known unpatched vulnerabilities on edge servers, a comprehensive external asset scan (via Shodan/Censys) is urgently required.\n3. **Strict Network Segmentation:** Isolate industrial control systems (OT/SCADA) or critical production environments (such as manufacturing lines or secure printing networks) from corporate office networks.\n4. **Persistence Detection Engineering:** Monitor for anomalous PowerShell execution patterns and the unauthorized use of dual-use administration utilities (Living-off-the-Land) such as AnyDesk, NetSupport, or Rclone used for data staging and exfiltration.\n5. **Web Application & Credential Hygiene (Education Sector):** For platforms handling student and staff personal data, such as the claim affecting ESGC.MA, enforce strong password hashing (bcrypt/Argon2), rotate credentials on any confirmed exposure, and monitor for redistribution of the claimed dataset across other cybercriminal forums.\n\n---\n\n## 5. ACKNOWLEDGEMENTS & EDITORIAL TEAM\n\n**Principal Author:** *Adama ASSIONGBON* *Senior SOC & Cyber Threat Intelligence (CTI) Consultant* Casablanca, Morocco.\n[LinkedIn Professional Profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)\n\n**Data Source:** OSINT Registries & Dark Web Leak Site Monitoring - AFRINTEL Project 2024.",
+      "description": "# 📑 CYBER THREAT INTELLIGENCE (CTI) REPORT\n**Scope:** African Continent | **Period:** March 2024\n**Classification:** TLP:CLEAR\n**Project:** AFRINTEL (African Threat Intelligence Repository)\n\n### Monthly aggregate exposure view\n\nThe monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (12.5% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.\n\n---\n\n## 1. EXECUTIVE SUMMARY\n\nThe month of March 2024 was marked by sustained threat actor activity from ransomware groups targeting critical infrastructure, financial institutions, and major public sector entities across the African continent, alongside one unattributed data leak claim against a higher-education institution. In total, **8 critical incidents** were officially recorded and analyzed within the scope of the AFRINTEL project.\n\nCybercriminals continue to exploit vulnerabilities on exposed network perimeters and exfiltrate massive volumes of corporate data to conduct double-extortion campaigns. The geographical distribution highlights a concentration of attacks in **Egypt** (3 incidents) and **South Africa** (2 incidents), followed by **Tunisia**, **Namibia** and **Morocco**.\n\n### Key Indicators - March 2024\n* **Total Validated Victims:** 8\n* **Identified Threat Actors:** LockBit 3.0 (4 attacks), RansomHub (2 attacks), Hunters International (1 attack), plus 1 unattributed data leak claim (ESGC.MA, Morocco).\n* **Most Targeted Sectors:** Financial & Banking Services (2), Public Administrations & State Infrastructure (1), Healthcare & Pharmaceutical Retail (1), Energy & Utilities (1), Industrial Manufacturing (1), Sports Media (1), Education / Higher Education (1).\n\n---\n\n## 2. THREAT ACTOR LANDSCAPE (RANSOMWARE)\n\nThree organized cybercrime syndicates account for the seven ransomware-attributed attacks this month, alongside one additional unattributed data leak claim tracked separately below:\n\n1. **LockBit 3.0 (50% of incidents):** Despite suffering international law enforcement disruptions (Operation Cronos) earlier in 2024, the LockBit franchise demonstrates significant resilience across the African continent, striking 4 prominent entities through its active network of affiliates.\n2. **RansomHub (25% of incidents):** This emerging threat group confirms its rapid rise in power, specifically targeting high-visibility energy infrastructure and digital media outlets in Egypt.\n3. **Hunters International (12.5% of incidents):** An opportunistic threat actor exploiting the Hive ransomware codebase, identified this month targeting the North African financial services sector.\n4. **Unattributed data leak claim (12.5% of incidents):** A March 26, 2024 forum post by the account UnknownMember claims a 2021 database sample from the Higher School of Commerce and Management (ESGC.MA) in Morocco. This is a data leak claim rather than a ransomware incident and is not attributed to any of the three groups above.\n\n---\n\n## 3. DETAILED INCIDENT MAPPING (MARCH 2024)\n\n### 🗓️ March 19, 2024\n#### 🇪🇬 Egypt - Go4Kora\n* **Incident Identifier:** AFRINTEL-2024-13649\n* **Ransomware Group:** RansomHub\n* **Work Sector:** Sports Media & Audience Entertainment\n* **Website:** [go4kora.tv](https://go4kora.tv)\n* **Attack Status:** Official claim and data exfiltration of subscriber databases.\n* **Description & Context:** Go4Kora is one of the most visited sports news and live football streaming portals in Egypt and the MENA region. The attack targeted the broadcasting infrastructure and subscriber records, impacting platform integrity.\n\n---\n\n### 🗓️ March 20, 2024\n#### 🇿🇦 South Africa - Government Printing Works (GPW)\n* **Incident Identifier:** AFRINTEL-2024-13658\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Public Administrations & State Security Printing\n* **Website:** [gpw.gov.za](https://www.gpw.gov.za)\n* **Attack Status:** Confirmed claim, threat of leaking sovereign government documentation.\n* **Description & Context:** A strategic South African state-owned entity under the Department of Home Affairs, GPW is responsible for printing secure identity documents, passports, visas, and official government gazettes. This constitutes a major compromise impacting digital sovereignty.\n\n---\n\n### 🗓️ March 25, 2024\n#### 🇹🇳 Tunisia - Arab Tunisian Leasing (ATL Leasing)\n* **Incident Identifier:** AFRINTEL-2024-13740\n* **Ransomware Group:** Hunters International\n* **Work Sector:** Financial Services & Asset Leasing\n* **Website:** [atlleasing.com.tn](https://www.atlleasing.com.tn)\n* **Attack Status:** Claimed on the leak site, exfiltration of corporate financial data.\n* **Description & Context:** Listed on the Tunis Stock Exchange, ATL is a prominent Tunisian financial institution specializing in leasing options for professional equipment and real estate dedicated to SMEs.\n\n---\n\n### 🗓️ March 25, 2024\n#### 🇪🇬 Egypt - El Ezaby Pharmacy\n* **Incident Identifier:** AFRINTEL-2024-13743\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Healthcare & Pharmaceutical Retail\n* **Website:** [elezabypharmacy.com](https://www.elezabypharmacy.com)\n* **Attack Status:** Encryption of management systems and claims of compromised customer/supplier records.\n* **Description & Context:** Represents one of the largest pharmaceutical retail networks in Egypt, managing a nationwide network of megastores and a critical supply logistics ecosystem.\n\n---\n\n### 🗓️ March 26, 2024\n#### 🇳🇦 Namibia - Agricultural Bank of Namibia (Agribank)\n* **Incident Identifier:** AFRINTEL-2024-13757\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Banking & Agricultural Finance\n* **Website:** [agribank.com.na](https://www.agribank.com.na)\n* **Attack Status:** Published on the LockBit leak site following failed negotiations.\n* **Description & Context:** A state-owned banking institution crucial to the Namibian economy, exclusively dedicated to financing agricultural expansion, aquaculture, and rural land acquisition.\n\n---\n\n### 🗓️ March 26, 2024\n#### 🇲🇦 Morocco - Higher School of Commerce and Management (ESGC.MA)\n* **Incident Identifier:** AFRINTEL-2024-TBD\n* **Actor / Group:** Unattributed, publication by the forum account UnknownMember\n* **Work Sector:** Education / Higher Education\n* **Website:** [esgc.ma](https://esgc.ma)\n* **Attack Status:** Claim with a published data sample; not attributed to a ransomware group.\n* **Description & Context:** ESGC.MA is presented as a Moroccan higher-education institution focused on commerce and management. A forum post dated March 26, 2024 claims a 2021 database of approximately 500 entries, with a displayed sample showing names, email addresses, password hashes, phone numbers and account-creation dates. The complete dataset and the underlying compromise are not independently verified. AFRINTEL does not reproduce personal data or credentials from the sample.\n\n---\n\n### 🗓️ March 29, 2024\n#### 🇪🇬 Egypt - PGESCo (Power Generation Engineering and Services Company)\n* **Incident Identifier:** AFRINTEL-2024-13908\n* **Ransomware Group:** RansomHub\n* **Work Sector:** Energy, Oil/Gas & Infrastructure Engineering\n* **Website:** [pgesco.com](https://www.pgesco.com)\n* **Attack Status:** Official claim and encryption of engineering network shares.\n* **Description & Context:** A major Egyptian engineering firm with international operations, providing project management, consultancy, and engineering for large-scale power plants and industrial infrastructure across the region.\n\n---\n\n### 🗓️ March 31, 2024\n#### 🇿🇦 South Africa - Nampak\n* **Incident Identifier:** AFRINTEL-2024-13957\n* **Ransomware Group:** LockBit 3.0\n* **Work Sector:** Industrial Manufacturing (Packaging Solutions)\n* **Website:** [nampak.com](https://www.nampak.com)\n* **Attack Status:** Leaking of sensitive corporate data.\n* **Description & Context:** The largest packaging manufacturer and exporter on the African continent, headquartered in South Africa and operating numerous production plants across sub-Saharan networks.\n\n---\n\n## 4. SOC RECOMMENDATIONS & MITigation STRATEGIES\n\nIn light of the observed tactics, techniques, and procedures (TTPs) utilized by LockBit 3.0 and RansomHub, the SOC and Threat Intelligence teams recommend the immediate deployment of the following mitigation controls:\n\n1. **Active Identity & Access Monitoring:** Enforce robust Multi-Factor Authentication (MFA) across all remote access vectors (VPNs, jump hosts, cloud portals) and strictly audit accounts with administrative privileges.\n2. **Perimeter Hardening against RansomHub:** As this group frequently leverages compromised legitimate credentials or known unpatched vulnerabilities on edge servers, a comprehensive external asset scan (via Shodan/Censys) is urgently required.\n3. **Strict Network Segmentation:** Isolate industrial control systems (OT/SCADA) or critical production environments (such as manufacturing lines or secure printing networks) from corporate office networks.\n4. **Persistence Detection Engineering:** Monitor for anomalous PowerShell execution patterns and the unauthorized use of dual-use administration utilities (Living-off-the-Land) such as AnyDesk, NetSupport, or Rclone used for data staging and exfiltration.\n5. **Web Application & Credential Hygiene (Education Sector):** For platforms handling student and staff personal data, such as the claim affecting ESGC.MA, enforce strong password hashing (bcrypt/Argon2), rotate credentials on any confirmed exposure, and monitor for redistribution of the claimed dataset across other cybercriminal forums.\n\n---\n\n## 5. ACKNOWLEDGEMENTS & EDITORIAL TEAM\n\n**Principal Author:** *Adama ASSIONGBON* *Senior SOC & Cyber Threat Intelligence (CTI) Consultant* Casablanca, Morocco.\n[LinkedIn Professional Profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)\n\n**Data Source:** OSINT Registries & Dark Web Leak Site Monitoring - AFRINTEL Project 2024.",
       "lang": "en",
       "published": "2024-03-27T00:00:00Z",
       "report_types": [
@@ -1181,10 +1259,10 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--7842e970-6c51-5c2d-92de-d93b38c90a4a",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Rapport CTI mensuel AFRINTEL - Mars 2024",
-      "description": "# 📑 RAPPORT D'INTELLIGENCE SUR LES MENACES CYBER (CTI)\n**Périmètre :** Continent Africain | **Période :** Mars 2024\n**Classification :** TLP:CLEAR\n**Projet :** AFRINTEL (African Threat Intelligence Repository)\n---\n\n## 1. RÉSUMÉ EXÉCUTIF\n\nLe mois de mars 2024 a été marqué par une activité soutenue des groupes de ransomware ciblant des infrastructures critiques, des institutions financières et des entités publiques majeures sur le continent africain, ainsi qu'une revendication de fuite de données non attribuée visant un établissement d'enseignement supérieur. Au total, **8 incidents critiques** ont été officiellement répertoriés et analysés dans le cadre du projet AFRINTEL.\n\nLes cybercriminels continuent d'exploiter les vulnérabilités des périmètres exposés et d'exfiltrer des volumes massifs de données à des fins de double extorsion. La répartition géographique met en évidence une concentration des attaques en **Égypte** (3 incidents) et en **Afrique du Sud** (2 incidents), suivies par la **Tunisie**, la **Namibie** et le **Maroc**.\n\n### Indicateurs Clés de Mars 2024\n* **Total des Victimes validées :** 8\n* **Acteurs de Menaces Identifiés :** LockBit 3.0 (4 attaques), RansomHub (2 attaques), Hunters International (1 attaque), ainsi qu'une revendication de fuite de données non attribuée (ESGC.MA, Maroc).\n* **Secteurs les plus touchés :** Services Financiers/Bancaires (2), Infrastructures d'État (1), Santé/Pharmaceutique (1), Énergie (1), Industrie (1), Médias (1), Éducation / Enseignement supérieur (1).\n\n---\n\n## 2. PAYSAGE DES ACTEURS DE MENACES (RANSOMWARE)\n\nTrois syndicats du crime organisé se partagent les sept attaques attribuées à un ransomware ce mois-ci, aux côtés d'une revendication de fuite de données non attribuée traitée séparément ci-dessous :\n\n1. **LockBit 3.0 (50% des incidents) :** Malgré les opérations de démantèlement international (Opération Cronos) subies plus tôt en 2024, la franchise LockBit démontre sa résilience sur le continent africain en frappant 4 entités de premier plan grâce à son réseau d'affiliés actifs.\n2. **RansomHub (25% des incidents) :** Ce groupe émergent confirme sa montée en puissance rapide, ciblant spécifiquement des infrastructures de l'énergie et des médias numériques à forte visibilité en Égypte.\n3. **Hunters International (12,5% des incidents) :** Acteur opportuniste exploitant le code source de Hive, identifié ce mois-ci sur le secteur financier nord-africain.\n4. **Revendication de fuite de données non attribuée (12,5% des incidents) :** Une publication de forum du 26 mars 2024, sous le compte UnknownMember, revendique un échantillon d'une base de données de 2021 provenant de la Higher School of Commerce and Management (ESGC.MA) au Maroc. Il s'agit d'une revendication de fuite de données et non d'un incident ransomware ; elle n'est attribuée à aucun des trois groupes ci-dessus.\n\n---\n\n## 3. CARTOGRAPHIE DÉTAILLÉE DES INCIDENTS (MARS 2024)\n\n### 🗓️ 19 Mars 2024\n#### 🇪🇬 Égypte - Go4Kora\n* **Identifiant Incident :** AFRINTEL-2024-13649\n* **Groupe Ransomware :** RansomHub\n* **Secteur d'Activité :** Médias sportifs & Divertissement d'audience\n* **Site Web :** [go4kora.tv](https://go4kora.tv)\n* **Statut de l'Attaque :** Revendication officielle et exfiltration de bases de données.\n* **Description & Contexte :** Go4Kora est l'un des portails d'actualités sportives et de streaming de football les plus consultés en Égypte et dans la région MENA. L'attaque visait l'infrastructure de diffusion et les données des abonnés, impactant l'intégrité de la plateforme.\n\n---\n\n### 🗓️ 20 Mars 2024\n#### 🇿🇦 Afrique du Sud - Government Printing Works (GPW)\n* **Identifiant Incident :** AFRINTEL-2024-13658\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Administrations publiques & Impressions de sécurité d'État\n* **Site Web :** [gpw.gov.za](https://www.gpw.gov.za)\n* **Statut de l'Attaque :** Revendication confirmée, menace de divulgation de documents régaliens.\n* **Description & Contexte :** Entité étatique sud-africaine stratégique sous la tutelle du ministère de l'Intérieur, le GPW est responsable de l'impression des documents d'identité sécurisés, des passeports, des visas et des bulletins officiels du gouvernement. Une compromission majeure touchant la souveraineté numérique.\n\n---\n\n### 🗓️ 25 Mars 2024\n#### 🇹🇳 Tunisie - Arab Tunisian Leasing (ATL Leasing)\n* **Identifiant Incident :** AFRINTEL-2024-13740\n* **Groupe Ransomware :** Hunters International\n* **Secteur d'Activité :** Services financiers & Crédit-bail (Leasing)\n* **Site Web :** [atlleasing.com.tn](https://www.atlleasing.com.tn)\n* **Statut de l'Attaque :** Revendication sur le site de fuite, exfiltration de données financières d'entreprises.\n* **Description & Contexte :** Cotée à la Bourse de Tunis, l'ATL est une institution financière tunisienne de premier plan spécialisée dans le financement par crédit-bail d'équipements professionnels et immobiliers pour les PME.\n\n---\n\n### 🗓️ 25 Mars 2024\n#### 🇪🇬 Égypte - Pharmacies El Ezaby\n* **Identifiant Incident :** AFRINTEL-2024-13743\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Santé publique & Distribution pharmaceutique\n* **Site Web :** [elezabypharmacy.com](https://www.elezabypharmacy.com)\n* **Statut de l'Attaque :** Chiffrement des systèmes de gestion et revendication de données clients/fournisseurs.\n* **Description & Contexte :** Représente l'une des plus grandes chaînes de pharmacies de détail en Égypte, gérant un réseau national de méga-officines et un écosystème de distribution critique.\n\n---\n\n### 🗓️ 26 Mars 2024\n#### 🇳🇦 Namibie - Agricultural Bank of Namibia (Agribank)\n* **Identifiant Incident :** AFRINTEL-2024-13757\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Secteur bancaire & Financement agricole\n* **Site Web :** [agribank.com.na](https://www.agribank.com.na)\n* **Statut de l'Attaque :** Publication sur le site de fuite LockBit après échec des négociations.\n* **Description & Contexte :** Institution bancaire d'État cruciale pour l'économie namibienne, dédiée exclusivement au financement de l'expansion agricole, de l'aquaculture et de l'acquisition de terres rurales.\n\n---\n\n### 🗓️ 26 Mars 2024\n#### 🇲🇦 Maroc - Higher School of Commerce and Management (ESGC.MA)\n* **Identifiant Incident :** AFRINTEL-2024-TBD\n* **Acteur / Groupe :** Non attribué, publication par le compte de forum UnknownMember\n* **Secteur d'Activité :** Éducation / Enseignement supérieur\n* **Site Web :** [esgc.ma](https://esgc.ma)\n* **Statut de l'Attaque :** Revendication avec échantillon de données publié ; non attribuée à un groupe ransomware.\n* **Description & Contexte :** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management. Une publication de forum datée du 26 mars 2024 revendique une base de données de 2021 comptant environ 500 entrées, avec un échantillon affiché montrant des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Le jeu de données complet et la compromission alléguée ne sont pas vérifiés de manière indépendante. AFRINTEL ne reproduit aucune donnée personnelle ni identifiant issu de l'échantillon.\n\n---\n\n### 🗓️ 29 Mars 2024\n#### 🇪🇬 Égypte - PGESCo (Power Generation Engineering and Services Company)\n* **Identifiant Incident :** AFRINTEL-2024-13908\n* **Groupe Ransomware :** RansomHub\n* **Secteur d'Activité :** Énergie, Pétrole/Gaz & Ingénierie des infrastructures\n* **Site Web :** [pgesco.com](https://www.pgesco.com)\n* **Statut de l'Attaque :** Revendication et chiffrement des partages réseau d'ingénierie.\n* **Description & Contexte :** Firme d'ingénierie égyptienne d'envergure internationale, fournissant la gestion de projet et l'ingénierie pour les centrales électriques majeures et les infrastructures industrielles de la région.\n\n---\n\n### 🗓️ 31 Mars 2024\n#### 🇿🇦 Afrique du Sud - Nampak\n* **Identifiant Incident :** AFRINTEL-2024-13957\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Industrie manufacturière (Conditionnement & Emballages industriels)\n* **Site Web :** [nampak.com](https://www.nampak.com)\n* **Statut de l'Attaque :** Divulgation de données corporatives sensibles.\n* **Description & Contexte :** Plus grand fabricant et exportateur d'emballages du continent africain, basé en Afrique du Sud et opérant de nombreuses usines à travers les réseaux sub-sahariens.\n\n---\n\n## 4. RECOMMANDATIONS ET AXES DE MITIGATION (RECOMMANDATIONS SOC)\n\nFace aux modes opératoires observés (LockBit 3.0 et RansomHub), le SOC et l'équipe Threat Intelligence recommandent le déploiement immédiat des mesures suivantes :\n\n1. **Surveillance Active des Identités & Accès :** Renforcer l'authentification multifacteur (MFA) sur tous les accès distants (VPN, serveurs de rebond, portails cloud) et auditer les comptes à privilèges élevés.\n2. **Durcissement face à RansomHub :** Ce groupe exploitant fréquemment des identifiants légitimes compromis ou des vulnérabilités connues non corrigées sur les serveurs Edge, un scan complet des actifs externes (Exposition Shodan/Censys) est requis.\n3. **Segmentation Réseau Strict :** Isoler les environnements industriels (OT/Scada) ou de production critique (ex: chaînes logistiques d'emballages ou d'impressions sécurisées) des réseaux bureautiques standards.\n4. **Analyse de la Persistance :** Surveiller les scripts PowerShell anormaux et l'usage détourné d'outils d'administration légitimes (Living-off-the-Land) tels que AnyDesk, NetSupport ou Rclone.\n5. **Hygiène des Applications Web & des Identifiants (Secteur Éducation) :** Pour les plateformes traitant des données personnelles d'étudiants et de personnel, comme dans le cas revendiqué visant ESGC.MA, imposer un hachage robuste des mots de passe (bcrypt/Argon2), faire pivoter les identifiants en cas d'exposition confirmée et surveiller toute redistribution du jeu de données revendiqué sur d'autres forums cybercriminels.\n\n---\n\n## 5. RECONNAISSANCE ET ÉQUIPE ÉDITORIALE\n\n**Auteur principal :** *Adama ASSIONGBON* *Consultant Senior SOC & Cyber Threat Intelligence (CTI)* Casablanca, Maroc.\n[Profil Professionnel LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)\n\n**Source de Données :** Registre OSINT & Dark Web Monitoring du projet AFRINTEL 2024.",
+      "description": "# 📑 RAPPORT D'INTELLIGENCE SUR LES MENACES CYBER (CTI)\n**Périmètre :** Continent Africain | **Période :** Mars 2024\n**Classification :** TLP:CLEAR\n**Projet :** AFRINTEL (African Threat Intelligence Repository)\n### Vue agrégée mensuelle de l’exposition\n\nLa vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (12.5% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.\n\n---\n\n## 1. RÉSUMÉ EXÉCUTIF\n\nLe mois de mars 2024 a été marqué par une activité soutenue des groupes de ransomware ciblant des infrastructures critiques, des institutions financières et des entités publiques majeures sur le continent africain, ainsi qu'une revendication de fuite de données non attribuée visant un établissement d'enseignement supérieur. Au total, **8 incidents critiques** ont été officiellement répertoriés et analysés dans le cadre du projet AFRINTEL.\n\nLes cybercriminels continuent d'exploiter les vulnérabilités des périmètres exposés et d'exfiltrer des volumes massifs de données à des fins de double extorsion. La répartition géographique met en évidence une concentration des attaques en **Égypte** (3 incidents) et en **Afrique du Sud** (2 incidents), suivies par la **Tunisie**, la **Namibie** et le **Maroc**.\n\n### Indicateurs Clés de Mars 2024\n* **Total des Victimes validées :** 8\n* **Acteurs de Menaces Identifiés :** LockBit 3.0 (4 attaques), RansomHub (2 attaques), Hunters International (1 attaque), ainsi qu'une revendication de fuite de données non attribuée (ESGC.MA, Maroc).\n* **Secteurs les plus touchés :** Services Financiers/Bancaires (2), Infrastructures d'État (1), Santé/Pharmaceutique (1), Énergie (1), Industrie (1), Médias (1), Éducation / Enseignement supérieur (1).\n\n---\n\n## 2. PAYSAGE DES ACTEURS DE MENACES (RANSOMWARE)\n\nTrois syndicats du crime organisé se partagent les sept attaques attribuées à un ransomware ce mois-ci, aux côtés d'une revendication de fuite de données non attribuée traitée séparément ci-dessous :\n\n1. **LockBit 3.0 (50% des incidents) :** Malgré les opérations de démantèlement international (Opération Cronos) subies plus tôt en 2024, la franchise LockBit démontre sa résilience sur le continent africain en frappant 4 entités de premier plan grâce à son réseau d'affiliés actifs.\n2. **RansomHub (25% des incidents) :** Ce groupe émergent confirme sa montée en puissance rapide, ciblant spécifiquement des infrastructures de l'énergie et des médias numériques à forte visibilité en Égypte.\n3. **Hunters International (12,5% des incidents) :** Acteur opportuniste exploitant le code source de Hive, identifié ce mois-ci sur le secteur financier nord-africain.\n4. **Revendication de fuite de données non attribuée (12,5% des incidents) :** Une publication de forum du 26 mars 2024, sous le compte UnknownMember, revendique un échantillon d'une base de données de 2021 provenant de la Higher School of Commerce and Management (ESGC.MA) au Maroc. Il s'agit d'une revendication de fuite de données et non d'un incident ransomware ; elle n'est attribuée à aucun des trois groupes ci-dessus.\n\n---\n\n## 3. CARTOGRAPHIE DÉTAILLÉE DES INCIDENTS (MARS 2024)\n\n### 🗓️ 19 Mars 2024\n#### 🇪🇬 Égypte - Go4Kora\n* **Identifiant Incident :** AFRINTEL-2024-13649\n* **Groupe Ransomware :** RansomHub\n* **Secteur d'Activité :** Médias sportifs & Divertissement d'audience\n* **Site Web :** [go4kora.tv](https://go4kora.tv)\n* **Statut de l'Attaque :** Revendication officielle et exfiltration de bases de données.\n* **Description & Contexte :** Go4Kora est l'un des portails d'actualités sportives et de streaming de football les plus consultés en Égypte et dans la région MENA. L'attaque visait l'infrastructure de diffusion et les données des abonnés, impactant l'intégrité de la plateforme.\n\n---\n\n### 🗓️ 20 Mars 2024\n#### 🇿🇦 Afrique du Sud - Government Printing Works (GPW)\n* **Identifiant Incident :** AFRINTEL-2024-13658\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Administrations publiques & Impressions de sécurité d'État\n* **Site Web :** [gpw.gov.za](https://www.gpw.gov.za)\n* **Statut de l'Attaque :** Revendication confirmée, menace de divulgation de documents régaliens.\n* **Description & Contexte :** Entité étatique sud-africaine stratégique sous la tutelle du ministère de l'Intérieur, le GPW est responsable de l'impression des documents d'identité sécurisés, des passeports, des visas et des bulletins officiels du gouvernement. Une compromission majeure touchant la souveraineté numérique.\n\n---\n\n### 🗓️ 25 Mars 2024\n#### 🇹🇳 Tunisie - Arab Tunisian Leasing (ATL Leasing)\n* **Identifiant Incident :** AFRINTEL-2024-13740\n* **Groupe Ransomware :** Hunters International\n* **Secteur d'Activité :** Services financiers & Crédit-bail (Leasing)\n* **Site Web :** [atlleasing.com.tn](https://www.atlleasing.com.tn)\n* **Statut de l'Attaque :** Revendication sur le site de fuite, exfiltration de données financières d'entreprises.\n* **Description & Contexte :** Cotée à la Bourse de Tunis, l'ATL est une institution financière tunisienne de premier plan spécialisée dans le financement par crédit-bail d'équipements professionnels et immobiliers pour les PME.\n\n---\n\n### 🗓️ 25 Mars 2024\n#### 🇪🇬 Égypte - Pharmacies El Ezaby\n* **Identifiant Incident :** AFRINTEL-2024-13743\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Santé publique & Distribution pharmaceutique\n* **Site Web :** [elezabypharmacy.com](https://www.elezabypharmacy.com)\n* **Statut de l'Attaque :** Chiffrement des systèmes de gestion et revendication de données clients/fournisseurs.\n* **Description & Contexte :** Représente l'une des plus grandes chaînes de pharmacies de détail en Égypte, gérant un réseau national de méga-officines et un écosystème de distribution critique.\n\n---\n\n### 🗓️ 26 Mars 2024\n#### 🇳🇦 Namibie - Agricultural Bank of Namibia (Agribank)\n* **Identifiant Incident :** AFRINTEL-2024-13757\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Secteur bancaire & Financement agricole\n* **Site Web :** [agribank.com.na](https://www.agribank.com.na)\n* **Statut de l'Attaque :** Publication sur le site de fuite LockBit après échec des négociations.\n* **Description & Contexte :** Institution bancaire d'État cruciale pour l'économie namibienne, dédiée exclusivement au financement de l'expansion agricole, de l'aquaculture et de l'acquisition de terres rurales.\n\n---\n\n### 🗓️ 26 Mars 2024\n#### 🇲🇦 Maroc - Higher School of Commerce and Management (ESGC.MA)\n* **Identifiant Incident :** AFRINTEL-2024-TBD\n* **Acteur / Groupe :** Non attribué, publication par le compte de forum UnknownMember\n* **Secteur d'Activité :** Éducation / Enseignement supérieur\n* **Site Web :** [esgc.ma](https://esgc.ma)\n* **Statut de l'Attaque :** Revendication avec échantillon de données publié ; non attribuée à un groupe ransomware.\n* **Description & Contexte :** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management. Une publication de forum datée du 26 mars 2024 revendique une base de données de 2021 comptant environ 500 entrées, avec un échantillon affiché montrant des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Le jeu de données complet et la compromission alléguée ne sont pas vérifiés de manière indépendante. AFRINTEL ne reproduit aucune donnée personnelle ni identifiant issu de l'échantillon.\n\n---\n\n### 🗓️ 29 Mars 2024\n#### 🇪🇬 Égypte - PGESCo (Power Generation Engineering and Services Company)\n* **Identifiant Incident :** AFRINTEL-2024-13908\n* **Groupe Ransomware :** RansomHub\n* **Secteur d'Activité :** Énergie, Pétrole/Gaz & Ingénierie des infrastructures\n* **Site Web :** [pgesco.com](https://www.pgesco.com)\n* **Statut de l'Attaque :** Revendication et chiffrement des partages réseau d'ingénierie.\n* **Description & Contexte :** Firme d'ingénierie égyptienne d'envergure internationale, fournissant la gestion de projet et l'ingénierie pour les centrales électriques majeures et les infrastructures industrielles de la région.\n\n---\n\n### 🗓️ 31 Mars 2024\n#### 🇿🇦 Afrique du Sud - Nampak\n* **Identifiant Incident :** AFRINTEL-2024-13957\n* **Groupe Ransomware :** LockBit 3.0\n* **Secteur d'Activité :** Industrie manufacturière (Conditionnement & Emballages industriels)\n* **Site Web :** [nampak.com](https://www.nampak.com)\n* **Statut de l'Attaque :** Divulgation de données corporatives sensibles.\n* **Description & Contexte :** Plus grand fabricant et exportateur d'emballages du continent africain, basé en Afrique du Sud et opérant de nombreuses usines à travers les réseaux sub-sahariens.\n\n---\n\n## 4. RECOMMANDATIONS ET AXES DE MITIGATION (RECOMMANDATIONS SOC)\n\nFace aux modes opératoires observés (LockBit 3.0 et RansomHub), le SOC et l'équipe Threat Intelligence recommandent le déploiement immédiat des mesures suivantes :\n\n1. **Surveillance Active des Identités & Accès :** Renforcer l'authentification multifacteur (MFA) sur tous les accès distants (VPN, serveurs de rebond, portails cloud) et auditer les comptes à privilèges élevés.\n2. **Durcissement face à RansomHub :** Ce groupe exploitant fréquemment des identifiants légitimes compromis ou des vulnérabilités connues non corrigées sur les serveurs Edge, un scan complet des actifs externes (Exposition Shodan/Censys) est requis.\n3. **Segmentation Réseau Strict :** Isoler les environnements industriels (OT/Scada) ou de production critique (ex: chaînes logistiques d'emballages ou d'impressions sécurisées) des réseaux bureautiques standards.\n4. **Analyse de la Persistance :** Surveiller les scripts PowerShell anormaux et l'usage détourné d'outils d'administration légitimes (Living-off-the-Land) tels que AnyDesk, NetSupport ou Rclone.\n5. **Hygiène des Applications Web & des Identifiants (Secteur Éducation) :** Pour les plateformes traitant des données personnelles d'étudiants et de personnel, comme dans le cas revendiqué visant ESGC.MA, imposer un hachage robuste des mots de passe (bcrypt/Argon2), faire pivoter les identifiants en cas d'exposition confirmée et surveiller toute redistribution du jeu de données revendiqué sur d'autres forums cybercriminels.\n\n---\n\n## 5. RECONNAISSANCE ET ÉQUIPE ÉDITORIALE\n\n**Auteur principal :** *Adama ASSIONGBON* *Consultant Senior SOC & Cyber Threat Intelligence (CTI)* Casablanca, Maroc.\n[Profil Professionnel LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)\n\n**Source de Données :** Registre OSINT & Dark Web Monitoring du projet AFRINTEL 2024.",
       "lang": "fr",
       "published": "2024-03-27T00:00:00Z",
       "report_types": [
@@ -1248,8 +1326,8 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--5377d242-8aa0-5b65-8f32-9de53f5e275d",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "AFRINTEL monthly statistics - March 2024",
       "description": "# AFRINTEL CTI statistics - March 2024\n\n## Summary\n\nThis statistical sheet is compiled from the 8 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 8 |\n| Ransomware | 7 |\n| Data leaks | 1 |\n| Access sales | 0 |\n| Defacement | 0 |\n| Unclassified public claims | 0 |\n| Countries | 5 |\n| Sectors | 8 |\n| Actors / sources | 4 |\n\n## 1. Country\n\n| Country | Incidents |\n|---|---:|\n| 🇪🇬 Egypt | 3 |\n| 🇿🇦 South Africa | 2 |\n| 🇹🇳 Tunisia | 1 |\n| 🇳🇦 Namibia | 1 |\n| 🇲🇦 Morocco | 1 |\n\n## 2. Sector\n\n| Sector | Incidents |\n|---|---:|\n| Sports Media & Entertainment | 1 |\n| Government & State Security Printing | 1 |\n| Financial Services & Asset Leasing | 1 |\n| Healthcare & Pharmaceutical Retail | 1 |\n| Banking & Agricultural Finance | 1 |\n| Energy & Infrastructure Engineering | 1 |\n| Education / Higher Education | 1 |\n| Industrial Packaging Manufacturing | 1 |\n\n## 3. Actor / source\n\n| Actor / source | Incidents |\n|---|---:|\n| lockbit3 | 4 |\n| ransomhub | 2 |\n| hunters | 1 |\n| Unattributed; publication by UnknownMember | 1 |\n\n## 4. Type\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 7 |\n| Data Leak | 1 |\n\n## CTI reading\n\nThe monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "en",
@@ -1315,8 +1393,8 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--9e8db9a5-f456-5920-ada4-3177e0d01dc3",
-      "created": "2026-08-18T00:31:51Z",
-      "modified": "2026-08-18T00:31:51Z",
+      "created": "2026-08-20T06:12:12Z",
+      "modified": "2026-08-20T06:12:12Z",
       "name": "Statistiques mensuelles AFRINTEL - Mars 2024",
       "description": "# Statistiques CTI AFRINTEL - Mars 2024\n\nCette fiche reprend les 8 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.\n\n| Indicateur | Valeur |\n|---|---:|\n| Total incidents | 8 |\n| Ransomware | 7 |\n| Fuites de données | 1 |\n| Pays touchés | 5 |\n| Secteurs | 8 |\n| Acteurs / sources | 4 |\n\n## Pays\n\n| Pays | Incidents |\n|---|---:|\n| 🇪🇬 Égypte | 3 |\n| 🇿🇦 Afrique du Sud | 2 |\n| 🇹🇳 Tunisie | 1 |\n| 🇳🇦 Namibie | 1 |\n| 🇲🇦 Maroc | 1 |\n\n## Secteurs\n\n| Secteur | Incidents |\n|---|---:|\n| Médias sportifs & Divertissement | 1 |\n| Administrations publiques & Impressions de sécurité d'État | 1 |\n| Services financiers & Crédit-bail | 1 |\n| Santé & Distribution pharmaceutique | 1 |\n| Secteur bancaire & Financement agricole | 1 |\n| Énergie & Ingénierie des infrastructures | 1 |\n| Education / Enseignement superieur | 1 |\n| Industrie manufacturière (Emballages industriels) | 1 |\n\n## Acteurs / sources\n\n| Acteur / source | Incidents |\n|---|---:|\n| lockbit3 | 4 |\n| ransomhub | 2 |\n| hunters | 1 |\n| Non attribue ; publication par UnknownMember | 1 |\n\n## Types\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 7 |\n| Data Leak | 1 |\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "fr",

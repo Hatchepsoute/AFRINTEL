@@ -7,7 +7,7 @@
 ---
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **196 fiches** en 2025 : **122 revendications ransomware (62,2 %)**, **71 fuites de données (36,2 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest et centrale (**38**) et l’Afrique de l’Est (**19**).
+AFRINTEL a recensé **197 fiches** en 2025 : **122 revendications ransomware (61,9 %)**, **72 fuites de données (36,5 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest et centrale (**38**) et l’Afrique de l’Est (**20**).
 
 Les trois pays les plus représentés sont l’**Égypte (33)**, le **Maroc (31)** et l’**Afrique du Sud (30)**. Cette concentration ne traduit pas nécessairement un niveau de compromission supérieur dans ces pays : elle reflète le périmètre des publications et revendications documentées par AFRINTEL.
 
@@ -17,15 +17,15 @@ Le principal enjeu CTI reste la qualification des revendications : confirmer l�
 
 ## 2. Méthodologie
 
-Les douze fichiers mensuels sont la source de vérité. Une fiche correspond à une publication ou une revendication documentée. Les publications non confirmées restent présentées comme des revendications.
+Les douze fichiers mensuels `victims.md` sont la source de vérité et contiennent 197 fiches distinctes pour 2025. Une fiche correspond à une publication ou une revendication documentée, pas nécessairement à une intrusion confirmée ni à une victime unique. Les republications et revendications distinctes sont conservées lorsque la source mensuelle les traite comme des fiches séparées ; cette limite est rappelée dans l’interprétation. Les comptages sont dérivés des fichiers sources sans extrapolation. Les graphes utilisent les codes ISO alpha-2 et les tableaux les noms normalisés des pays. Les secteurs sont regroupés dans une taxonomie annuelle contrôlée ; une activité réellement indéterminée reste signalée explicitement. Ransomware, fuites de données, ventes d’accès et défacements sont comptés séparément. Les publications de forums et de sites de fuite restent des revendications sans confirmation indépendante.
 
 ## 3. Vue globale
 
 | Indicateur | Valeur |
 | :--- | ---: |
-| Fiches | **196** |
-| Ransomware | **122 (62,2%)** |
-| Fuites de données | **71 (36,2%)** |
+| Fiches | **197** |
+| Ransomware | **122 (61,9%)** |
+| Fuites de données | **72 (36,5%)** |
 | Ventes d’accès | **3 (1,5%)** |
 
 ### Classement par pays
@@ -60,31 +60,103 @@ Les douze fichiers mensuels sont la source de vérité. Une fiche correspond à 
 | 26 | 🇬🇦 Gabon | 1 | █ |
 | 27 | 🇲🇬 Madagascar | 1 | █ |
 | 28 | 🇷🇼 Rwanda | 1 | █ |
+| 29 | 🇧🇮 Burundi | 1 | █ |
 
 ```mermaid
 xychart-beta
     title "Top 10 - Tous incidents"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["EG","MA","ZA","DZ","NG","TN","KE","MR","ZM","GH"]
     y-axis "Fiches" 0 --> 34
     bar [33,31,30,19,14,13,10,8,4,3]
 ```
+
+Légende : EG = Égypte ; MA = Maroc ; ZA = Afrique du Sud ; DZ = Algérie ; NG = Nigeria ; TN = Tunisie ; KE = Kenya ; MR = Mauritanie ; ZM = Zambie ; GH = Ghana
 
 ### Répartition par type d’incident
 
 | Type | Fiches | Part |
 | :--- | ---: | ---: |
-| Ransomware | 122 | 62,2% |
-| Fuite de données | 71 | 36,2% |
+| Ransomware | 122 | 61,9% |
+| Fuite de données | 72 | 36,5% |
 | Vente d’accès | 3 | 1,5% |
-| **Total** | **196** | **100%** |
+| Défacement | 0 | 0,0% |
+| **Total** | **197** | **100%** |
 
 ```mermaid
 pie
     title Types d’incidents - 2025
     "Ransomware" : 122
-    "Fuites de données" : 71
+    "Fuites de données" : 72
     "Ventes d’accès" : 3
 ```
+
+### Vue agrégée de l’exposition des données
+
+Les fuites de données et les ventes d’accès sont regroupées ici pour une vue orientée exposition : **72 fuites de données + 3 ventes d’accès = 75 fiches**. Les compteurs détaillés restent séparés, car une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
+| Catégorie agrégée | Fiches | Part du corpus |
+| :--- | ---: | ---: |
+| Fuites de données + ventes d’accès | **75** | **38,1 %** |
+
+Cette vue agrégée est dérivée et ne doit pas être ajoutée une seconde fois au total de 197 fiches.
+
+### Classement des pays — ransomware
+
+| Rang | Pays | ISO | Fiches | Barre couleur |
+|---:|---|:---:|---:|---|
+| 1 | Égypte | EG | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 2 | Afrique du Sud | ZA | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 3 | Maroc | MA | 12 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 4 | Nigeria | NG | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 5 | Kenya | KE | 8 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 6 | Tunisie | TN | 6 | 🟧🟧🟧🟧🟧🟧 |
+| 7 | Algérie | DZ | 4 | 🟧🟧🟧🟧 |
+| 8 | Zambie | ZM | 4 | 🟧🟧🟧🟧 |
+| 9 | Namibie | NA | 3 | 🟧🟧🟧 |
+| 10 | Tanzanie | TZ | 3 | 🟧🟧🟧 |
+| 11 | Botswana | BW | 2 | 🟧🟧 |
+| 12 | Ghana | GH | 2 | 🟧🟧 |
+| 13 | Maurice | MU | 2 | 🟧🟧 |
+| 14 | Ouganda | UG | 2 | 🟧🟧 |
+| 15 | Zimbabwe | ZW | 2 | 🟧🟧 |
+| 16 | Cameroun | CM | 1 | 🟧 |
+| 17 | RDC | CD | 1 | 🟧 |
+| 18 | Côte d’Ivoire | CI | 1 | 🟧 |
+| 19 | Gabon | GA | 1 | 🟧 |
+| 20 | Madagascar | MG | 1 | 🟧 |
+| 21 | Rwanda | RW | 1 | 🟧 |
+| 22 | Sénégal | SN | 1 | 🟧 |
+
+### Classement des pays — fuites de données
+
+| Rang | Pays | ISO | Fiches | Barre couleur |
+|---:|---|:---:|---:|---|
+| 1 | Maroc | MA | 19 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 2 | Algérie | DZ | 15 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 3 | Mauritanie | MR | 8 | 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 4 | Tunisie | TN | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
+| 5 | Égypte | EG | 5 | 🟦🟦🟦🟦🟦 |
+| 6 | Nigeria | NG | 5 | 🟦🟦🟦🟦🟦 |
+| 7 | Côte d’Ivoire | CI | 2 | 🟦🟦 |
+| 8 | Kenya | KE | 2 | 🟦🟦 |
+| 9 | Afrique du Sud | ZA | 2 | 🟦🟦 |
+| 10 | Angola | AO | 1 | 🟦 |
+| 11 | RDC | CD | 1 | 🟦 |
+| 12 | Djibouti | DJ | 1 | 🟦 |
+| 13 | Érythrée | ER | 1 | 🟦 |
+| 14 | Ghana | GH | 1 | 🟦 |
+| 15 | Togo | TG | 1 | 🟦 |
+| 16 | Burundi | BI | 1 | 🟦 |
+
+### Classement des pays — ventes d’accès
+
+| Rang | Pays | ISO | Fiches | Barre couleur |
+|---:|---|:---:|---:|---|
+| 1 | Burkina Faso | BF | 1 | 🟨 |
+| 2 | Sénégal | SN | 1 | 🟨 |
+| 3 | Togo | TG | 1 | 🟨 |
+
+Légende : 🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d’accès
 
 ### Comparaison ransomware, fuites et ventes d’accès par pays
 
@@ -118,6 +190,7 @@ pie
 | 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
 | 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
 | 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
+| 🇧🇮 Burundi | 0 | 1 | 1 | 🟦 |
 
 ### Répartition géographique par région
 
@@ -126,33 +199,33 @@ pie
 | Afrique du Nord | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Afrique australe | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
 | Afrique de l’Ouest et centrale | 38 | 16 | 22 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| Afrique de l’Est | 19 | 15 | 4 | 🟧🟧🟧 🟦 |
+| Afrique de l’Est | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart-beta
     title "Occurrences par région - 2025"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 97
-    bar [96,43,38,19]
+    bar [96,43,38,20]
 ```
 
-Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+Légende : NA = Afrique du Nord ; SA = Afrique australe ; WC = Afrique de l’Ouest et centrale ; EA = Afrique de l’Est
 
 ### Répartition sectorielle
 
 | Secteur | Fiches | Part | Barre |
 | :--- | ---: | ---: | ---: |
-| Gouvernement / administration | 40 | 20,4% | ██████████ |
-| Finance / banque | 39 | 19,9% | ██████████ |
-| Technologies / informatique | 25 | 12,8% | ██████ |
-| Éducation / universités | 17 | 8,7% | ████ |
+| Gouvernement / administration | 40 | 20,3% | ██████████ |
+| Finance / banque | 39 | 19,8% | ██████████ |
+| Technologies / informatique | 25 | 12,7% | ██████ |
+| Éducation / universités | 17 | 8,6% | ████ |
 | Santé / médical | 14 | 7,1% | ████ |
 | Industrie / fabrication | 10 | 5,1% | ██ |
 | Transport / logistique | 10 | 5,1% | ██ |
-| Commerce / e-commerce | 8 | 4,1% | ██ |
+| Commerce / e-commerce | 9 | 4,6% | ██ |
 | Services professionnels | 7 | 3,6% | ██ |
-| Construction / immobilier | 6 | 3,1% | ██ |
-| Défense / sécurité | 6 | 3,1% | ██ |
+| Construction / immobilier | 6 | 3,0% | ██ |
+| Défense / sécurité | 6 | 3,0% | ██ |
 | Énergie / services publics | 4 | 2,0% | █ |
 | Agriculture / agro-industrie | 3 | 1,5% | █ |
 | Juridique / justice | 2 | 1,0% | █ |
@@ -162,41 +235,43 @@ Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest e
 
 ```mermaid
 xychart-beta
-    title "Répartition sectorielle - 2025"
-    x-axis ["1","2","3","4","5","6","7","8"]
+    title "Top 8 des secteurs - 2025"
+    x-axis ["GOV","FIN","TEC","EDU","HEA","MAN","TRA","RET"]
     y-axis "Fiches" 0 --> 41
-    bar [40,39,25,17,14,10,10,8]
+    bar [40,39,25,17,14,10,10,9]
 ```
 
-Légende : 1 = Technologies; 2 = Finance; 3 = Éducation; 4 = Gouvernement; 5 = Commerce; 6 = Santé; 7 = Industrie; 8 = Services professionnels
+Légende : GOV = Gouvernement / administration ; FIN = Finance / banque ; TEC = Technologies / informatique ; EDU = Éducation / universités ; HEA = Santé / médical ; MAN = Industrie / fabrication ; TRA = Transport / logistique ; RET = Commerce / e-commerce
+
+Le graphique présente les huit secteurs contrôlés les plus représentés ; le tableau ci-dessus fait foi pour la répartition complète des 197 fiches.
 
 ### Graphiques par type d’incident
 
 ```mermaid
 xychart-beta
     title "Top 10 ransomware - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["EG","ZA","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
     y-axis "Fiches" 0 --> 29
     bar [28,28,12,9,8,6,4,4,3,3]
 ```
 
-Légende: 1 = Égypte; 2 = Afrique du Sud; 3 = Maroc; 4 = Nigeria; 5 = Kenya; 6 = Tunisie; 7 = Algérie; 8 = Zambie; 9 = Namibie; 10 = Tanzanie
+Légende : EG = Égypte ; ZA = Afrique du Sud ; MA = Maroc ; NG = Nigeria ; KE = Kenya ; TN = Tunisie ; DZ = Algérie ; ZM = Zambie ; NA = Namibie ; TZ = Tanzanie
 
 ```mermaid
 xychart-beta
     title "Top 10 fuites et ventes d’accès - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["MA","DZ","MR","TN","EG","NG","CI","KE","ZA","TG"]
     y-axis "Fiches" 0 --> 20
     bar [19,15,8,7,5,5,2,2,2,2]
 ```
 
-Légende: 1 = Maroc; 2 = Algérie; 3 = Mauritanie; 4 = Tunisie; 5 = Égypte; 6 = Nigeria; 7 = Côte d’Ivoire; 8 = Kenya; 9 = Afrique du Sud; 10 = Togo
+Légende : MA = Maroc ; DZ = Algérie ; MR = Mauritanie ; TN = Tunisie ; EG = Égypte ; NG = Nigeria ; CI = Côte d’Ivoire ; KE = Kenya ; ZA = Afrique du Sud ; TG = Togo
 
 ## 4. Analyse détaillée par type d’incident
 
-Les revendications ransomware représentent **122 fiches**, soit **62,2 %** du corpus. Elles dominent particulièrement en Afrique australe (**41 fiches**) et restent majoritaires en Afrique du Nord (**50**), tandis que les fuites et ventes d’accès atteignent respectivement **46** et **22** fiches dans ces deux régions.
+Les revendications ransomware représentent **122 fiches**, soit **61,9 %** du corpus. Elles dominent particulièrement en Afrique australe (**41 fiches**) et restent majoritaires en Afrique du Nord (**50**), tandis que les fuites et ventes d’accès atteignent respectivement **46** et **22** fiches dans ces deux régions.
 
-Les fuites de données et ventes d’accès représentent **74 fiches**. Le Maroc arrive en tête avec **19 fiches**, suivi de l’Algérie (**15**), de la Mauritanie (**8**) et de la Tunisie (**7**). Les données revendiquées concernent notamment des environnements administratifs, financiers, médicaux, éducatifs et commerciaux. Cette répartition montre que la fuite de données ne constitue pas seulement une conséquence du ransomware : elle apparaît aussi comme un risque autonome, associé à l’exposition de bases, à la revente d’accès ou à la republication d’échantillons.
+Les fuites de données et ventes d’accès représentent **75 fiches**. Le Maroc arrive en tête avec **19 fiches**, suivi de l’Algérie (**15**), de la Mauritanie (**8**) et de la Tunisie (**7**). Les données revendiquées concernent notamment des environnements administratifs, financiers, médicaux, éducatifs et commerciaux. Cette répartition montre que la fuite de données ne constitue pas seulement une conséquence du ransomware : elle apparaît aussi comme un risque autonome, associé à l’exposition de bases, à la revente d’accès ou à la republication d’échantillons.
 
 ## 5. Impact sectoriel
 
@@ -217,25 +292,25 @@ Les secteurs gouvernemental et administratif (**40 fiches**) ainsi que financier
 | Dark 07x Team | 5 | █████ |
 | ransomhub | 4 | ████ |
 
-| Pays | Niveau |
-| :--- | ---: |
-| 🇪🇬 Égypte | 🔴 Élevé |
-| 🇲🇦 Maroc | 🔴 Élevé |
-| 🇿🇦 Afrique du Sud | 🔴 Élevé |
-| 🇩🇿 Algérie | 🔴 Élevé |
-| 🇳🇬 Nigeria | 🔴 Élevé |
+| Pays | Niveau | Justification |
+| :--- | :--- | :--- |
+| 🇪🇬 Égypte | 🔴 Élevé | Plus forte visibilité ransomware et plus grand volume national de fiches. |
+| 🇲🇦 Maroc | 🔴 Élevé | Plus grand volume de fuites et deuxième volume global. |
+| 🇿🇦 Afrique du Sud | 🔴 Élevé | Volume ransomware élevé et revendications sensibles dans les secteurs public et financier. |
+| 🇩🇿 Algérie | 🔴 Élevé | Volume élevé de fuites et publications répétées concernant des administrations. |
+| 🇳🇬 Nigeria | 🔴 Élevé | Activité combinée ransomware et fuites visant des organisations publiques et privées. |
 
 ### Graphique des acteurs les plus présents
 
 ```mermaid
 xychart-beta
     title "Acteurs les plus présents - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["QIL","NSP","DVM","INC","FNK","PAT","KLS","K9","D07","RSH"]
     y-axis "Fiches" 0 --> 12
     bar [11,10,10,8,7,7,6,6,5,4]
 ```
 
-Légende: 1 = qilin; 2 = nightspire; 3 = devman; 4 = incransom; 5 = funksec; 6 = Phantom Atlas; 7 = killsec; 8 = kill9; 9 = Dark 07x Team; 10 = ransomhub
+Légende : QIL = qilin ; NSP = nightspire ; DVM = devman ; INC = incransom ; FNK = funksec ; PAT = Phantom Atlas ; KLS = killsec ; K9 = kill9 ; D07 = Dark 07x Team ; RSH = ransomhub
 
 ## 7. Tendances et lacunes de renseignement
 
@@ -243,27 +318,31 @@ L’année 2025 met en évidence trois lacunes de renseignement. Premièrement, 
 
 ## 8. Cartographie MITRE ATT&CK contextuelle
 
-| Phase | Technique | Contexte |
-| :--- | ---: | ---: |
-| Impact | T1486 - Data Encrypted for Impact | Ransomware |
-| Exfiltration | T1567 - Exfiltration Over Web Service | Leaks and extortion |
-| Credential access | T1078 - Valid Accounts | Access claims |
+| Phase | Technique | Contexte défensif | Niveau de preuve |
+| :--- | ---: | --- | --- |
+| Impact | T1486 - Data Encrypted for Impact | Rechercher les comportements de chiffrement et l’impact sur la restauration lorsqu’une revendication est corroborée. | Non établi par la publication seule |
+| Exfiltration | T1567 - Exfiltration Over Web Service | Examiner les sorties vers des services web et les transferts d’archives dans les cas validés. | Hypothèse contextuelle |
+| Accès aux identifiants | T1078 - Valid Accounts | Vérifier les accès annoncés avec les journaux IAM, VPN et d’authentification. | Une revendication ne prouve pas l’utilisation d’un compte valide |
 
 ## 9. Recommandations
 
-- Vérifier les revendications avec les journaux, EDR, IAM et sauvegardes.
-- Renforcer MFA, segmentation, sauvegardes hors ligne et rotation des secrets.
+- Vérifier les revendications avec les journaux, EDR, IAM, sauvegardes et l’organisation concernée avant de les traiter comme des incidents confirmés.
+- Imposer une MFA résistante au phishing, revoir les accès privilégiés, segmenter les réseaux, maintenir des sauvegardes hors ligne et faire tourner les secrets.
+- Équipes cloud et applicatives : supprimer les lectures publiques, revoir l’exposition des stockages et bases, et surveiller les exports massifs.
+- Administrations et organisations financières : surveiller les VPN, comptes privilégiés, accès distants et transferts sortants inhabituels.
+- Éducation, santé et technologies : appliquer la minimisation des données, des durées de conservation et des procédures de notification.
 
 ## 10. Recommandations SOC et tactiques
 
-- Corréler EDR, VPN, IAM, DNS, proxy, WAF et journaux applicatifs.
+- Corréler EDR, VPN, IAM, DNS, proxy, WAF et journaux applicatifs ; alerter sur les déplacements impossibles, nouveaux appareils MFA, lectures massives, créations d’archives et sorties inhabituelles.
+- Suivre les identifiants et accès exposés dans une file dédiée, puis les valider ou les révoquer par des canaux internes de confiance.
 
 ## 11. Recommandations stratégiques
 
-- Maintenir l’inventaire des actifs et tester les plans de réponse et de restauration.
+- Maintenir un inventaire des actifs et données exposés sur Internet, tester les plans de réponse et de restauration, et définir les responsabilités pour la validation, la protection des données et l’escalade exécutive.
 
 ## 12. Conclusion
 
-L’année 2025 confirme une pression cyber diversifiée : le ransomware reste majoritaire, mais les fuites de données et les ventes d’accès élargissent la surface de risque vers les administrations, les banques, les technologies et l’éducation. Les chiffres décrivent les publications observées par AFRINTEL ; ils doivent guider la veille, la validation technique et la réduction du risque, sans transformer une revendication en compromission confirmée.
+L’année 2025 indique une pression cyber diversifiée : le ransomware reste majoritaire, mais les fuites de données et les ventes d’accès élargissent la surface de risque vers les administrations, les banques, les technologies et l’éducation. Les chiffres décrivent les publications observées par AFRINTEL ; ils doivent guider la veille, la validation technique et la réduction du risque, sans transformer une revendication en compromission confirmée.
 
 **AFRINTEL** - TLP:CLEAR

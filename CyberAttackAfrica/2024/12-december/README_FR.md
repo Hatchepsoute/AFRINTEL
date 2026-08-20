@@ -21,6 +21,10 @@ Décembre 2024 clôture l'année avec **12 victimes** documentées d'attaques pa
 - 🔹 **Pays touchés** : Afrique du Sud (2), Nigeria (1), Algérie (1), Tanzanie (1), Soudan (1), Mauritanie (1), Namibie (1), Égypte (1), Zambie (1), Botswana (1), Tunisie (1)
 - 🔹 **Secteurs** : Télécommunications (2), Banque mobile / Fintech (2), Administrations publiques, Éducation / Recherche, Agroalimentaire, Eau / Services publics, Distribution, Audit / Conseil, Automobile / Industrie, Maritime
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **0 fiches** (0.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

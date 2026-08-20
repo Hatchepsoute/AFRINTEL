@@ -40,7 +40,7 @@
 
 - **Reliability note:**
 
-V0idix advertised the publication of more than 700 MB of data attributed to the Egyptian Ministry of Agriculture and Land Reclamation. The analysed files confirm the disclosure of a coherent collection of internal administrative documents, mainly associated with the General Authority for Rehabilitation Projects and Agricultural Development. The complete advertised volume and archive completeness have not been independently verified.
+V0idix advertised the publication of more than 700 MB of data attributed to the Egyptian Ministry of Agriculture and Land Reclamation. The reviewed files establish that the provided corpus contains a coherent collection of internal administrative documents mainly associated with the General Authority for Rehabilitation Projects and Agricultural Development. This finding does not independently establish the acquisition method, the completeness of the advertised archive or official victim confirmation.
 
 - **Description:**
 
@@ -55,11 +55,11 @@ The archives also expose information relating to beneficiaries, agricultural ass
 Precise geospatial data was also disclosed. Two documents provide the boundaries and geographic coordinates of plots covering **953 feddans** and **3,836 feddans**, enabling the affected land to be located and its perimeter reconstructed.
 
 The technical material includes a named organisational chart covering network, technical support, GIS, statistics, archiving and documentation teams. An equipment inventory lists **389 computers, 87 scanners and 214 printers**, representing **690 devices**, together with their models and departmental distribution.
-A submitted screenshot also shows a government application used to process state-owned land recovery requests. The interface displays **30,456 requests** and includes fields relating to the applicant, national identity number, public authority, location, land area and case status.
+The data visible in a government application interface used to process state-owned land recovery requests shows **30,456 requests** and fields relating to the applicant, national identity number, public authority, location, land area and case status.
 
 A software manual found in the corpus contains initial accounts associated with several privilege levels. Their current use by the ministry has not been demonstrated, but they may create additional exposure if default credentials or configurations were retained.
 
-The leak may support targeted phishing against government employees and agricultural associations, identity fraud, land-related fraud, document forgery and manipulation of administrative procedures. Organisational charts, technical inventories and application screenshots also provide useful intelligence for reconnaissance and targeted attacks against internal systems.
+The material may support targeted phishing against government employees and agricultural associations, identity fraud, land-related fraud, document forgery and manipulation of administrative procedures. Organisational charts, technical inventories and visible application details also provide useful intelligence for reconnaissance and targeted attacks against internal systems.
 
 - **Recommendations:**
 
@@ -112,7 +112,7 @@ The leak may support targeted phishing against government employees and agricult
 
 - **Analysis:**
 
-  A forum post dated 02 February 2026 advertises a database allegedly associated with HIMS University, with a claimed total of 28,124 records and student/staff personal data, financial records and payment-gateway information. The publication lists CSV files covering student accounts, payment records, privilege mappings, balances, bank-related transaction logs, staff details and system metadata. The actor also claims exposure of plaintext credentials and payment-gateway API material; these claims were not independently verified from the supplied screenshot.
+  A forum post dated 02 February 2026 advertises a database allegedly associated with HIMS University, with a claimed total of 28,124 records and student/staff personal data, financial records and payment-gateway information. The publication lists CSV files covering student accounts, payment records, privilege mappings, balances, bank-related transaction logs, staff details and system metadata. The actor also claims exposure of plaintext credentials and payment-gateway API material; these claims were not independently verified from the visible material supplied.
 
   The file counts displayed in the source add up to 28,004 records, which is 120 fewer than the advertised total of 28,124. This discrepancy, together with the absence of a reviewed archive, prevents confirmation of the complete volume and scope. If genuine, the combination of student and staff PII, account credentials, financial information and payment-system material could create significant risks of phishing, account takeover, payment fraud and further unauthorized access. AFRINTEL does not reproduce any personal data, credential, API key, national identifier or financial record from the sample.
 
@@ -171,7 +171,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
   AFRINTEL's review of three referenced database exports confirms the schema and country markers described by the actor: a 293,232-row customer table (`iwms_new.customers`) containing full name, primary and secondary phone numbers, postal/street address, Ghana Post GPS digital address, GPS coordinates, gender, a bank-details field and bcrypt password hashes; a 2,604-row staff/agent user table (`iwms_new.users`) containing name, email, phone number, role (administrator, waste-collection agent, subscriber), bcrypt password hash, API access token and session token; and a 1,357,156-row USSD mobile-money transaction log recording customer ID, customer name, payment amount, MSISDN, mobile network operator, transaction status and timestamps, consistently tied to Ghanaian (+233) phone numbers. The combined roughly 1.65 million rows reviewed are structurally consistent with the actor's claim but substantially smaller than the 26 million records advertised, indicating the full advertised dump likely includes additional tables not present in the material reviewed.
 
-  The exposure of customer bank details and password hashes alongside administrator API and session tokens creates a risk of account takeover, fraudulent redirection of bill payments, credential-stuffing against reused passwords, and further compromise of the platform's administrative backend if the tokens remain valid. The exact structural and geographic match between the reviewed files and the actor's claim, combined with the scale and sensitivity of the confirmed sample, supports a very high confidence assessment. AFRINTEL does not reproduce any customer name, phone number, address, password hash, bank detail, transaction record or credential from the reviewed material.
+  The exposure of customer bank details and password hashes alongside administrator API and session tokens creates a risk of account takeover, fraudulent redirection of bill payments, credential-stuffing against reused passwords, and further compromise of the platform's administrative backend if the tokens remain valid. The exact structural and geographic match between the reviewed files and the actor's claim, combined with the scale and sensitivity of the reviewed material, supports a very high confidence assessment of the sample's attribution. It does not validate the advertised 26-million-record volume, the acquisition method or official victim confirmation. AFRINTEL does not reproduce any customer name, phone number, address, password hash, bank detail, transaction record or credential from the reviewed material.
 
 
 ### July 01, 2026
@@ -179,7 +179,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Initial publication date:** 01 July 2026
 - **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** krybit
+- **Ransomware group:** krybit
 - **Sector:** Healthcare, hospital
 - **Website:** [moscati.org](https://moscati.org/)
 - **AFRINTEL status:** Claim - Unverified
@@ -193,8 +193,22 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Hôpital Catholique Saint Joseph Moscati as a victim attributed to krybit. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect patient and administrative health-related information and may support phishing, identity fraud and targeted extortion against a non-profit healthcare provider.
+  The July 2026 ransomware dataset lists Hôpital Catholique Saint Joseph Moscati as a victim attributed to krybit. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect patient and administrative health-related information and may support phishing, identity fraud and targeted extortion against a non-profit healthcare provider.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-01
+listing_last_observed_at: 2026-07-01
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-01
+-->
 
 ### July 01, 2026
 #### 🇪🇬 Egypt - Egyptian Medical Laboratories (multi-organisation claim)
@@ -240,9 +254,9 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
   AFRINTEL reviewed a forum post published on 20 June 2026 by the actor BIGBROTHER, titled "{REPOST} [Tunisia] Data Leak from Adex.tn" and tagged as a sale listing, describing "15k personal Data from shipping and transporting company of Tunisia 'Adex.tn'" and linking to an externally hosted proof image, with a Session messenger identifier provided for direct contact. The post is explicitly marked as a repost, indicating the material originates from an earlier, unidentified source rather than an intrusion claimed first-hand by BIGBROTHER.
 
-  The proof image reviewed by AFRINTEL shows live administrative access to Adex's order-management back office, listing individual shipment records (order number, date and time, client name, origin and destination agency, order and package counts, delivery status) across multiple Tunisian agencies (Sfax, Siliana, Ben Arous, Tunis, Nabeul, Sousse, among others). The interface displays a pagination count of 15,301 total records, matching the "15k" figure advertised in the post. No exported data file, database dump or downloadable archive was observed; the evidence consists of a single administrative-panel screenshot rather than an extracted dataset.
+  Analysis of the data visible in the provided material identified an Adex order-management interface listing individual shipment records across multiple Tunisian agencies, including Sfax, Siliana, Ben Arous, Tunis, Nabeul and Sousse. The interface displays a pagination count of 15,301 records, consistent with the advertised "15k" figure. No exported data file, database dump or downloadable archive was available; analysis was limited to the visible administrative interface rather than an extracted source dataset.
 
-  The exact match between the claimed record count and the total shown in the live admin interface supports a high confidence assessment that the access is genuine, although the scope of personal data fields actually accessible beyond client names and shipment metadata could not be independently confirmed from the reviewed material. Unauthorized administrative access to a logistics back office of this kind could expose customer contact details, delivery addresses and shipment patterns, and could support fraud, parcel interception or social engineering against Adex customers and partner agencies. AFRINTEL does not reproduce any client name, order reference or account detail from the reviewed material.
+  The match between the claimed record count and the visible total supports a high-confidence assessment that the published material plausibly depicts administrative access. It does not independently establish the original intruder, whether the access remained active or the scope of fields available beyond client names and shipment metadata. If genuine, access to a logistics back office of this kind could expose customer contact details, delivery addresses and shipment patterns and support fraud, parcel interception or social engineering. AFRINTEL does not reproduce any client name, order reference or account detail from the reviewed material.
 
 
 ### July 02, 2026
@@ -266,9 +280,9 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
   AFRINTEL reviewed a forum post published on 20 June 2026 by the actor BIGBROTHER, one minute before the same actor's repost concerning Adex.tn and using an identical Session contact identifier, titled "{REPOST} [Tunisia] Data Leak from mfpe.gov.tn" and tagged as a sale listing, describing "4,000 personal Data from Ministry of Vocational Training and Employment of Tunisia 'mfpe.gov.tn'" and linking to an externally hosted proof image. As with the related Adex.tn post, this listing is explicitly marked as a repost of material from an earlier, unidentified source.
 
-  The proof image reviewed by AFRINTEL shows live administrative access to an Arabic-language request-management interface of the ministry, listing individual citizen requests with full name, national ID/passport number, date of birth, governorate (wilaya), phone number, request number, submission date, processing status and field of specialty. Unlike the related Adex.tn screenshot, no total record count is visible in the captured interface, so the "4,000" figure advertised in the post could not be independently corroborated against the reviewed material.
+  Analysis of the visible data identified an Arabic-language ministry request-management interface listing individual citizen requests with full name, national ID/passport number, date of birth, governorate, phone number, request number, submission date, processing status and field of specialty. No total record count is visible, so the advertised "4,000" figure could not be independently corroborated from the provided material.
 
-  The structure and content of the panel are consistent with a genuine government case-management system, and the combination of national identity numbers, dates of birth and phone numbers for named citizens interacting with a ministry constitutes sensitive administrative personal data. Unauthorized access of this kind could support identity fraud, impersonation in administrative procedures, and targeted phishing against applicants and ministry staff. In the absence of a verifiable record count or an independently reviewed data export, AFRINTEL assesses this claim with medium confidence. AFRINTEL does not reproduce any citizen name, national ID/passport number, date of birth, phone number or request detail from the reviewed material.
+  The structure and content are consistent with a plausible government case-management interface, but the visible material does not independently establish the access method, its current validity or the original intruder. The combination of national identity numbers, dates of birth and phone numbers for named citizens interacting with a ministry constitutes sensitive administrative personal data. If genuine, such access could support identity fraud, impersonation in administrative procedures and targeted phishing. In the absence of a verifiable record count or an independently reviewed data export, AFRINTEL assesses this claim with medium confidence and does not reproduce any citizen name, national ID/passport number, date of birth, phone number or request detail.
 
 
 ### July 02, 2026
@@ -316,7 +330,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  A cybercriminal-forum post attributed to B4baYega, originally published on 26 January 2026 and re-reviewed by AFRINTEL on 02 July 2026, advertises the alleged compromise of the portal's database and offers the material for USD 300. The actor claims approximately 35,000 records, 25,000 documents and a compressed RAR archive of about 16 GB, with structured data in CSV format and documents including PDF and DOCX files. The screenshot shows no database structure, column names or document contents. Although the post refers to text and photographic samples, no usable sample is directly visible in the submitted material; authenticity, origin, age, actual document count and archive completeness therefore remain unverified. Given the portal's role, the claimed material could support identification of public buyers, suppliers, procurement procedures and government commercial relationships, as well as targeted phishing, procurement fraud, supplier impersonation and social engineering. The screenshot establishes the existence and stated characteristics of a sales offer, but does not independently demonstrate compromise of the portal or possession of the complete database.
+  A cybercriminal-forum post attributed to B4baYega, originally published on 26 January 2026 and re-reviewed by AFRINTEL on 02 July 2026, advertises the alleged compromise of the portal's database and offers the material for USD 300. The actor claims approximately 35,000 records, 25,000 documents and a compressed RAR archive of about 16 GB, with structured data in CSV format and documents including PDF and DOCX files. The provided material shows no database structure, column names or document contents. Although the post refers to text and photographic samples, no usable sample is directly visible; authenticity, origin, age, actual document count and archive completeness therefore remain unverified. Given the portal's role, the claimed material could support identification of public buyers, suppliers, procurement procedures and government commercial relationships, as well as targeted phishing, procurement fraud, supplier impersonation and social engineering. The visible material establishes the existence and stated characteristics of a sales offer, but does not independently demonstrate compromise of the portal or possession of the complete database.
 
 
 ### July 06, 2026
@@ -324,7 +338,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Initial publication date:** 06 July 2026
 - **AFRINTEL detection date:** 06 July 2026
-- **Actor / Group:** TheGentlemen
+- **Ransomware group:** TheGentlemen
 - **Sector:** Real estate development
 - **Website:** [ebny.com.eg](https://ebny.com.eg/)
 - **AFRINTEL status:** Claim - Unverified
@@ -338,15 +352,29 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists EBNY Development as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect client, contract and property-related information and may support phishing, identity fraud and targeted extortion against property buyers and business partners.
+  The July 2026 ransomware dataset lists EBNY Development as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect client, contract and property-related information and may support phishing, identity fraud and targeted extortion against property buyers and business partners.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-06
+listing_last_observed_at: 2026-07-06
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-06
+-->
 
 ### July 06, 2026
 #### 🇰🇪 Kenya - East African Gasoil Limited (EAGOL)
 
 - **Initial publication date:** 06 July 2026
 - **AFRINTEL detection date:** 06 July 2026
-- **Actor / Group:** arcusmedia
+- **Ransomware group:** arcusmedia
 - **Sector:** Fuel distribution, oil and gas
 - **Website:** [eastafricangasoil.com](https://www.eastafricangasoil.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -360,15 +388,29 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists East African Gasoil Limited (EAGOL) as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and customer information related to fuel distribution and may support phishing, supply-chain disruption, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists East African Gasoil Limited (EAGOL) as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and customer information related to fuel distribution and may support phishing, supply-chain disruption, invoice fraud and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-06
+listing_last_observed_at: 2026-07-06
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-06
+-->
 
 ### July 10, 2026
 #### 🇲🇦 Morocco - Eurodefi
 
 - **Initial publication date:** 10 July 2026
 - **AFRINTEL detection date:** 10 July 2026
-- **Actor / Group:** qilin
+- **Ransomware group:** qilin
 - **Sector:** Professional services / Accounting and audit
 - **Website:** [eurodefis.com](https://www.eurodefis.com)
 - **AFRINTEL status:** Claim - Unverified
@@ -382,8 +424,22 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Eurodefi as a victim attributed to qilin. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect financial, accounting and client-related information and may support phishing, invoice fraud, supplier impersonation and targeted extortion.
+  The July 2026 ransomware dataset lists Eurodefi as a victim attributed to qilin. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect financial, accounting and client-related information and may support phishing, invoice fraud, supplier impersonation and targeted extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-10
+listing_last_observed_at: 2026-07-10
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-10
+-->
 
 ### July 10, 2026
 #### 🇩🇿 Algeria - Hassiba Ben Bouali University of Chlef (univ-chlef.dz)
@@ -404,11 +460,11 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 - **Analysis:**
 
-  Phantom Atlas published, on April 10, 2026, a claim of access to the university server's phpMyAdmin interface, addressed directly to the institution's director and framed as exposing "internal governance failures" rather than a mere technical exploit. The post's own text refers to access obtained and maintained since November 8, 2025. The post claims full access to administration panels and student databases, while explicitly stating it does not intend to leak student data. A follow-up message, posted after the site was taken down for maintenance, confirms this extended access and threatens further disclosures.
+  Phantom Atlas published, on April 10, 2026, a claim of access to the university server's phpMyAdmin interface, addressed directly to the institution's director and framed as exposing "internal governance failures" rather than a mere technical exploit. The post's own text refers to access obtained and maintained since November 8, 2025. The post claims full access to administration panels and student databases, while explicitly stating it does not intend to leak student data. A follow-up message, posted after the site was taken down for maintenance, reiterates the claimed extended access and threatens further disclosures.
 
-  AFRINTEL reviewed screenshots of two distinct databases accessible via phpMyAdmin on univ-chlef.dz. The first corresponds to a CMS-type website database (table prefix `refx_`, including post, comment, user and SEO metadata tables), totaling 15 tables for approximately 152.5 MiB. The second corresponds to a staff administrative-management database (19 tables, including `ats`, `att_travail`, `fiche_paie`, `personne`, `grade`, `print_badge`), totaling approximately 13,630 rows for 1.7 MiB. An excerpt of the `ats` table, visible in a code editor, displays named staff records including first and last name (in French and Arabic), gender, professional grade, date and place of birth, a photo reference, an appointment date, a faculty assignment code, and a password stored as a hash (40-character hexadecimal format).
+  Analysis of the visible data identified two distinct databases presented through phpMyAdmin on univ-chlef.dz. The first corresponds to a CMS-type website database (table prefix `refx_`, including post, comment, user and SEO metadata tables), totaling 15 tables for approximately 152.5 MiB. The second corresponds to a staff administrative-management database (19 tables, including `ats`, `att_travail`, `fiche_paie`, `personne`, `grade`, `print_badge`), totaling approximately 13,630 rows for 1.7 MiB. A visible excerpt of the `ats` table displays named staff records including first and last name in French and Arabic, gender, professional grade, date and place of birth, a photo reference, an appointment date, a faculty assignment code and a password stored as a 40-character hexadecimal hash.
 
-  The consistency of the screenshots (a real phpMyAdmin interface, table and field names plausible for a university HR management system, the site being taken down for maintenance shortly after the post) supports a high confidence level regarding authentic access to the university's databases. Exposure of named staff data, including dates of birth and hashed passwords, creates a risk of identity theft, account compromise in case of password reuse, and targeted phishing against university staff. AFRINTEL does not reproduce any name, date of birth, place of birth, photo reference or hash value from the reviewed screenshots.
+  The consistency of the visible interface, table names and fields, together with the site's maintenance shortly after the post, supports a high-confidence assessment that the published material plausibly depicts a university database environment. It does not independently establish how access was obtained, whether it remained active or whether all claimed databases were accessible. The visible staff data, including dates of birth and hashed passwords, creates a risk of identity theft, account compromise in case of password reuse, and targeted phishing against university staff. Analysis was limited to the visible material because the original database exports were not available; AFRINTEL does not reproduce any name, date of birth, place of birth, photo reference or hash value.
 
 
 ### July 11, 2026
@@ -431,9 +487,9 @@ TOPNET is a Tunisian Internet Service Provider. A post published on an undergrou
 
 The post identifies `@topnet.tn` as one of two Tunisian email domains to which the actor claims to have access. No price, number of compromised accounts, access method or validity period is provided.
 
-The screenshot used as proof shows a TOPNET Webmail interface with an inbox containing **273 messages**. Visible elements correspond to professional communications involving team schedules, attendance records, human resources, a salary transfer, meal vouchers, training activities and B2C customer retention campaigns.
+The data visible in the provided material depicts a TOPNET Webmail interface with an inbox containing **273 messages**. Visible elements correspond to professional communications involving team schedules, attendance records, human resources, a salary transfer, meal vouchers, training activities and B2C customer retention campaigns.
 
-The observed evidence indicates access to at least one mailbox associated with the TOPNET environment. It does not demonstrate a domain-wide compromise of `topnet.tn` or establish how many accounts are accessible.
+The visible material supports the existence of at least one mailbox interface presented as associated with TOPNET. It does not independently establish that the actor controlled the mailbox, demonstrate a domain-wide compromise of `topnet.tn` or establish how many accounts were accessible.
 
 Access to a professional mailbox has significant operational value for a threat actor. It can provide internal information, employee relationships and business processes that may support spear phishing, impersonation, conversation hijacking and business email fraud.
 
@@ -460,13 +516,13 @@ Orange Tunisia is a Tunisian telecommunications operator. In the same post publi
 
 The actor identifies `@orange.tn` as the second domain included in the offer. No asking price, affected account identifier, number of accessible mailboxes, compromise method or access validity period is disclosed.
 
-The supporting screenshot shows an Orange-branded webmail interface containing professional communications. Visible message subjects relate to debt recovery activities, international cooperation projects, administrative procedures, technical requests, agreements and quotations.
+The provided material depicts an Orange-branded webmail interface containing professional communications. Visible message subjects relate to debt recovery activities, international cooperation projects, administrative procedures, technical requests, agreements and quotations.
 
 The exact address of the authenticated mailbox is not visible. The observed evidence therefore provides visual support for access to a webmail environment presented as related to Orange, but does not establish the overall scope of compromise affecting the `orange.tn` domain.
 
 Access to a professional mailbox could allow a threat actor to map trusted relationships, identify partners and correspondents, understand ongoing business activities and prepare highly contextualised phishing campaigns. Existing email conversations may also facilitate impersonation and business email fraud.
 
-No mailbox archive, database dump or complete email extraction is visible. The actor is primarily selling **webmail access**, with the screenshots serving as proof of the access being offered.
+No mailbox archive, database dump or complete email extraction is visible. The actor is primarily selling **webmail access**, with the visible interface used to support the offer.
 ---
 
 ### July 11, 2026
@@ -502,7 +558,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Initial publication date:** 11 July 2026
 - **AFRINTEL detection date:** 11 July 2026
-- **Actor / Group:** cmdorganization
+- **Ransomware group:** cmdorganization
 - **Sector:** Gold mining
 - **Website:** [gsr.com](https://www.gsr.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -516,15 +572,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Golden Star Resources as a victim attributed to cmdorganization. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, financial and state-related mining-sector information and may support espionage, supply-chain disruption, phishing and targeted extortion against a strategic mineral-resource asset.
+  The July 2026 ransomware dataset lists Golden Star Resources as a victim attributed to cmdorganization. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, financial and state-related mining-sector information and may support espionage, supply-chain disruption, phishing and targeted extortion against a strategic mineral-resource asset.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-11
+listing_last_observed_at: 2026-07-11
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-11
+-->
 
 ### July 13, 2026
 #### 🇨🇲 Cameroon - TurboSoft
 
 - **Initial publication date:** 13 July 2026
 - **AFRINTEL detection date:** 13 July 2026
-- **Actor / Group:** spacebears
+- **Ransomware group:** spacebears
 - **Sector:** Business software and IT services
 - **Website:** [turbosoft.cm](https://turbosoft.cm/)
 - **AFRINTEL status:** Claim - Unverified
@@ -538,15 +608,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists TurboSoft as a victim attributed to spacebears. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect client organisations' payroll, accounting and banking-related data hosted or processed through TurboSoft's software and may support supply-chain phishing, financial fraud and extortion against TurboSoft's business clients.
+  The July 2026 ransomware dataset lists TurboSoft as a victim attributed to spacebears. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect client organisations' payroll, accounting and banking-related data hosted or processed through TurboSoft's software and may support supply-chain phishing, financial fraud and extortion against TurboSoft's business clients.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-13
+listing_last_observed_at: 2026-07-13
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-13
+-->
 
 ### July 14, 2026
 #### 🇳🇬 Nigeria - i-Fitness Gym & Wellness Centre
 
 - **Initial publication date:** 14 July 2026
 - **AFRINTEL detection date:** 14 July 2026
-- **Actor / Group:** arcusmedia
+- **Ransomware group:** arcusmedia
 - **Sector:** Fitness, health and wellness
 - **Website:** [ifitness.ng](https://ifitness.ng/)
 - **AFRINTEL status:** Claim - Unverified
@@ -560,15 +644,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists i-Fitness Gym & Wellness Centre as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect member and payment-related information and may support phishing, payment fraud and targeted extortion.
+  The July 2026 ransomware dataset lists i-Fitness Gym & Wellness Centre as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect member and payment-related information and may support phishing, payment fraud and targeted extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-14
+listing_last_observed_at: 2026-07-14
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-14
+-->
 
 ### July 14, 2026
 #### 🇿🇦 South Africa - BE Travel
 
 - **Initial publication date:** 14 July 2026
 - **AFRINTEL detection date:** 14 July 2026
-- **Actor / Group:** arcusmedia
+- **Ransomware group:** arcusmedia
 - **Sector:** Corporate travel and events management
 - **Website:** [betravel.co.za](https://betravel.co.za/)
 - **AFRINTEL status:** Claim - Unverified
@@ -582,15 +680,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists BE Travel as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect traveller, booking and corporate-client information and may support phishing, identity fraud and targeted extortion against corporate clients and travellers.
+  The July 2026 ransomware dataset lists BE Travel as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect traveller, booking and corporate-client information and may support phishing, identity fraud and targeted extortion against corporate clients and travellers.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-14
+listing_last_observed_at: 2026-07-14
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-14
+-->
 
 ### July 15, 2026
 #### 🇿🇦 South Africa - ISEGEN South Africa (Pty) Ltd
 
 - **Initial publication date:** 15 July 2026
 - **AFRINTEL detection date:** 15 July 2026
-- **Actor / Group:** dragonforce
+- **Ransomware group:** dragonforce
 - **Sector:** Chemical manufacturing
 - **Website:** [isegen.co.za](https://isegen.co.za/)
 - **AFRINTEL status:** Claim - Unverified
@@ -604,15 +716,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists ISEGEN South Africa (Pty) Ltd as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists ISEGEN South Africa (Pty) Ltd as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-15
+listing_last_observed_at: 2026-07-15
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-15
+-->
 
 ### July 15, 2026
 #### 🇿🇦 South Africa - Fidelity Services Group
 
 - **Initial publication date:** 15 July 2026
 - **AFRINTEL detection date:** 15 July 2026
-- **Actor / Group:** ransomhouse
+- **Ransomware group:** ransomhouse
 - **Sector:** Integrated security and risk services
 - **Website:** [fidelity-services.com](https://fidelity-services.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -626,15 +752,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Fidelity Services Group as a victim attributed to ransomhouse. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect client, site-security and cash-management operational information and may support phishing, physical-security reconnaissance, targeted extortion and fraud against corporate and residential customers.
+  The July 2026 ransomware dataset lists Fidelity Services Group as a victim attributed to ransomhouse. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect client, site-security and cash-management operational information and may support phishing, physical-security reconnaissance, targeted extortion and fraud against corporate and residential customers.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-15
+listing_last_observed_at: 2026-07-15
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-15
+-->
 
 ### July 16, 2026
 #### 🇧🇼 Botswana - North Atlantic Engineering Consultants
 
 - **Initial publication date:** 16 July 2026
 - **AFRINTEL detection date:** 16 July 2026
-- **Actor / Group:** dragonforce
+- **Ransomware group:** dragonforce
 - **Sector:** Mechanical and electrical engineering consulting
 - **Website:** [northatlantic.bw](https://www.northatlantic.bw/)
 - **AFRINTEL status:** Claim - Unverified
@@ -648,8 +788,22 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists North Atlantic Engineering Consultants as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect project, client and technical design information and may support phishing, client impersonation, competitive intelligence gathering and extortion.
+  The July 2026 ransomware dataset lists North Atlantic Engineering Consultants as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect project, client and technical design information and may support phishing, client impersonation, competitive intelligence gathering and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-16
+listing_last_observed_at: 2026-07-16
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-16
+-->
 
 ### July 16, 2026
 #### 🇩🇿 Algeria - ATS (Algérie Télécom Satellite)
@@ -706,7 +860,7 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Initial publication date:** 16 July 2026
 - **AFRINTEL detection date:** 16 July 2026
-- **Actor / Group:** dragonforce
+- **Ransomware group:** dragonforce
 - **Sector:** Casino, gaming and entertainment
 - **Website:** [sinaigrandcasino.com](https://sinaigrandcasino.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -720,15 +874,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Sinai Grand Casino as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect customer and payment-related information and may support phishing, payment fraud and targeted extortion.
+  The July 2026 ransomware dataset lists Sinai Grand Casino as a victim attributed to dragonforce. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect customer and payment-related information and may support phishing, payment fraud and targeted extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-16
+listing_last_observed_at: 2026-07-16
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-16
+-->
 
 ### July 18, 2026
 #### 🇿🇦 South Africa - Reatile Group
 
 - **Initial publication date:** 18 July 2026
 - **AFRINTEL detection date:** 18 July 2026
-- **Actor / Group:** incransom
+- **Ransomware group:** incransom
 - **Sector:** Investment holding, energy and industry
 - **Website:** [reatile.co.za](https://www.reatile.co.za/)
 - **AFRINTEL status:** Claim - Unverified
@@ -742,15 +910,29 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Reatile Group as a victim attributed to incransom. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect corporate, financial and investment-related information and may support phishing, business email compromise, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists Reatile Group as a victim attributed to incransom. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect corporate, financial and investment-related information and may support phishing, business email compromise, invoice fraud and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-18
+listing_last_observed_at: 2026-07-18
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-18
+-->
 
 ### July 19, 2026
 #### 🇿🇦 South Africa - CKR Consulting Engineers
 
 - **Initial publication date:** 19 July 2026
 - **AFRINTEL detection date:** 19 July 2026
-- **Actor / Group:** payload
+- **Ransomware group:** payload
 - **Sector:** Multidisciplinary engineering consulting
 - **Website:** [ckr.co.za](https://ckr.co.za/)
 - **AFRINTEL status:** Claim - Unverified
@@ -764,8 +946,22 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists CKR Consulting Engineers as a victim attributed to payload. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect project, client and technical design information and may support phishing, client impersonation, competitive intelligence gathering and extortion.
+  The July 2026 ransomware dataset lists CKR Consulting Engineers as a victim attributed to payload. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect project, client and technical design information and may support phishing, client impersonation, competitive intelligence gathering and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-19
+listing_last_observed_at: 2026-07-19
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-19
+-->
 
 ### July 21, 2026
 #### 🇹🇳 Tunisia - Ministry of Justice
@@ -802,7 +998,7 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 
 - **Initial publication date:** 23 July 2026
 - **AFRINTEL detection date:** 23 July 2026
-- **Actor / Group:** TheGentlemen
+- **Ransomware group:** TheGentlemen
 - **Sector:** Rubber farming and natural rubber processing
 - **Website:** [pakidie.com](https://www.pakidie.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -816,15 +1012,29 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Compagnie des Caoutchoucs du Pakidié (CCP) as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists Compagnie des Caoutchoucs du Pakidié (CCP) as a victim attributed to TheGentlemen. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect operational, supplier and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-23
+listing_last_observed_at: 2026-07-23
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-23
+-->
 
 ### July 23, 2026
 #### 🇸🇸 South Sudan - Nile Petroleum Corporation (NILEPET)
 
 - **Initial publication date:** 23 July 2026
 - **AFRINTEL detection date:** 23 July 2026
-- **Actor / Group:** krybit
+- **Ransomware group:** krybit
 - **Sector:** Oil and gas
 - **Website:** [nilepet.com](https://nilepet.com/)
 - **AFRINTEL status:** Claim - Data Sample Published
@@ -838,12 +1048,26 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Nile Petroleum Corporation (NILEPET) as a victim attributed to krybit. AFRINTEL reviewed a local corpus of 71 files associated with the domain, including 34 PDFs, 25 DOCX documents, one XLSX workbook, nine TXT files and supporting image files.
+  The July 2026 ransomware dataset lists Nile Petroleum Corporation (NILEPET) as a victim attributed to krybit. AFRINTEL reviewed a local corpus of 71 files associated with the domain, including 34 PDFs, 25 DOCX documents, one XLSX workbook, 9 TXT files and supporting image files.
 
   The corpus contains fuel-ordering and fuel-receipt procedures, station asset and equipment management, workforce and agent-management documents, sales and reporting procedures, financial and cash-management material, contracts and partnerships, governance, risk-management and technical-support procedures. It also includes accounting and operational reports covering fuel inventories, receivables, payables, bank reconciliations, assets and customer prepayments, with most dated material referring to 2022 and 2023 and some later references. The available files therefore provide a structured sample of operational, financial, workforce and supply-chain documentation associated with NILEPET.
 
-  The local corpus supports the existence of a substantial disclosed document set, but it does not independently establish the intrusion method, complete archive size, ransomware encryption or victim confirmation. AFRINTEL does not reproduce names, account details, financial figures, credentials or other raw sensitive content.
+  The local corpus supports the existence of a substantial disclosed document set, but it does not independently establish the intrusion method, complete archive size, ransomware encryption or victim confirmation. No disclosure deadline was stated in the available record. AFRINTEL does not reproduce names, account details, financial figures, credentials or other raw sensitive content.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-23
+listing_last_observed_at: 2026-07-23
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: release-reviewed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-23
+-->
 
 ### July 24, 2026
 #### 🇲🇦 Morocco - Distamed
@@ -869,7 +1093,7 @@ The reviewed files contain **8,823 patient rows**, including 8,776 distinct rows
 
 The observed documents also include medical reports containing pathologies, examination results and clinical conclusions. Some entries refer to Moroccan public and military hospitals.
 
-The consistency between the administrative, medical and financial data confirms a significant exposure. However, the claim that the complete archive dates back to 2013 is not demonstrated by the reviewed material, whose observed dates mainly cover **2018 to 2026**.
+The consistency between the administrative, medical and financial data supports the assessment that the reviewed material contains a significant exposure. It does not independently establish the acquisition method, archive completeness or official victim confirmation. The claim that the complete archive dates back to 2013 is not demonstrated by the reviewed material, whose observed dates mainly cover **2018 to 2026**.
 
 This exposure creates high risks of medical confidentiality breaches, identity theft, document fraud, invoice fraud and targeted phishing against patients, doctors and partner institutions.
 
@@ -913,9 +1137,9 @@ The displayed records contain administrative order references, identities in Lat
 
 The exposed data creates a high risk of identity theft, document fraud, targeted phishing and social engineering. Combining national identity numbers, dates of birth, addresses and contact details allows threat actors to build detailed profiles of the affected individuals.
 
-The sample confirms that the actor possesses personal data, but its exact origin cannot be conclusively attributed to `passeport.ma` or to any of the four additional platforms named in the post. No separate sample or technical evidence is provided for each domain.
+The visible sample supports the assessment that the publication contains personal data, but it does not by itself establish the actor's control of the complete source datasets. Its exact origin cannot be conclusively attributed to `passeport.ma` or to any of the four additional platforms named in the post. No separate sample or technical evidence is provided for each domain.
 
-No total file size, record count, price or download link is visible. The screenshot shows a disclosure threat associated with a deadline, but it does not confirm that the complete databases of all five platforms were extracted.
+No total file size, record count, price or download link is visible. The provided material contains a disclosure threat associated with a deadline, but it does not establish that the complete databases of all five platforms were extracted.
 
 For AFRINTEL, the publication should be recorded as **one primary incident targeting `passeport.ma`**, with the four additional domains listed as further claimed platforms. Separate incidents should not be created without distinct evidence for each platform.
 
@@ -938,7 +1162,7 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Analysis:**
 
-  The actor nowornever, whose account had just been created (July 2026, a single post published, no reputation), claims to have obtained, while exploring .ng domains, SYSTEM-level access to a domain-joined Windows Server 2019 (IIS) machine, with full access to every file on the machine and to a PostgreSQL database described as more than 200 tables deep. The actor also claims SYSTEM-level RDP access, a mapped internal subnet, enumeration of the Active Directory domain and the possibility of lateral movement, as well as access to a Microsoft 365 tenant with Azure AD authentication and full user enumeration. Finally, the actor claims superadmin rights working across multiple target servers, with a confirmed portal-style dashboard.
+  The actor nowornever, whose account had just been created (July 2026, a single post published, no reputation), claims to have obtained, while exploring .ng domains, SYSTEM-level access to a domain-joined Windows Server 2019 (IIS) machine, with full access to every file on the machine and to a PostgreSQL database described as more than 200 tables deep. The actor also claims SYSTEM-level RDP access, a mapped internal subnet, enumeration of the Active Directory domain and the possibility of lateral movement, as well as access to a Microsoft 365 tenant with Azure AD authentication and full user enumeration. Finally, the actor claims superadmin rights across multiple target servers and refers to a portal-style dashboard, without providing visible technical evidence.
 
   The actor also claims to have found, on the same server, personal material attributed to an employee (likely an IT staff member): more than 160 saved passwords, accounts on several cryptocurrency and fintech platforms, and banking details and a payment method linked to a personal email address stored on the server.
 
@@ -969,13 +1193,13 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Analysis:**
 
-  A forum post dated 25 July 2026 claims that customer and employee credentials linked to MTN were disclosed. The post refers to customer email/password material, approximately 2,000 employee credentials and downloadable files. AFRINTEL reviewed the evidence directory without reproducing records: client.emails.txt contains 130 lines, while the employee archive contains separate email, credential and password files with 381, 814 and 549 lines respectively. The employee email sample uses the mtn.com domain, confirming an apparent MTN corporate context but not the affected country or subsidiary with certainty. AFRINTEL attributes this record to South Africa with reservation: the actor frames the attack around tensions between South Africa and Nigerian nationals, and one fragment in the domain sample references "MTNGroupsa", which supports this attribution. MTN Group Limited is headquartered in Johannesburg, South Africa, so this fragment plausibly refers to the group's parent entity, whose email and IT infrastructure is often managed centrally; this does not establish that the affected customers or employees belong to the South African subsidiary specifically rather than another national operation. A Nigeria-linked fragment ("clientsupport.ng") also appears in the same sample, and the actor identifies as NullSec Nigeria, so the country attribution is treated as low-confidence and subject to revision. The data, access path and claimed complete volume have not been independently verified. AFRINTEL records one data-leak incident and does not reproduce credentials, passwords, download links or personal data.
+  A forum post dated 25 July 2026 claims that customer and employee credentials linked to MTN were disclosed. The post refers to customer email/password material, approximately 2,000 employee credentials and downloadable files. AFRINTEL reviewed the evidence directory without reproducing records: client.emails.txt contains 130 lines, while the employee archive contains separate email, credential and password files with 381, 814 and 549 lines respectively. The employee email sample uses the mtn.com domain, supporting an apparent MTN corporate context but not the affected country or subsidiary with certainty. AFRINTEL attributes this record to South Africa with reservation: the actor frames the attack around tensions between South Africa and Nigerian nationals, and one fragment in the domain sample references "MTNGroupsa", which supports this attribution. MTN Group Limited is headquartered in Johannesburg, South Africa, so this fragment plausibly refers to the group's parent entity, whose email and IT infrastructure is often managed centrally; this does not establish that the affected customers or employees belong to the South African subsidiary specifically rather than another national operation. A Nigeria-linked fragment ("clientsupport.ng") also appears in the same sample, and the actor identifies as NullSec Nigeria, so the country attribution is treated as low-confidence and subject to revision. The data, access path and claimed complete volume have not been independently verified. AFRINTEL records one data-leak incident and does not reproduce credentials, passwords, download links or personal data.
 ### July 26, 2026
 #### 🇲🇦 Morocco - Brazer Ingenierie
 
 - **Initial publication date:** 26 July 2026
 - **AFRINTEL detection date:** 26 July 2026
-- **Actor / Group:** arcusmedia
+- **Ransomware group:** arcusmedia
 - **Sector:** Engineering / Telecommunications / Construction
 - **Website:** [brazeringenierie.com](https://www.brazeringenierie.com)
 - **AFRINTEL status:** Claim - Unverified
@@ -989,8 +1213,22 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Brazer Ingenierie as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect project, supplier, operational and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
+  The July 2026 ransomware dataset lists Brazer Ingenierie as a victim attributed to arcusmedia. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect project, supplier, operational and commercial information and may support phishing, supplier impersonation, invoice fraud and extortion.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-26
+listing_last_observed_at: 2026-07-26
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-26
+-->
 
 ### July 26, 2026
 #### 🇹🇳 Tunisia - École Nationale d'Administration (ENA) - concours.ena.tn
@@ -1019,7 +1257,7 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Initial publication date:** 26 July 2026
 - **AFRINTEL detection date:** 26 July 2026
-- **Actor / Group:** ExfilSquad
+- **Ransomware group:** ExfilSquad
 - **Sector:** Banking and financial services
 - **Website:** [zenithbank.com](https://www.zenithbank.com/)
 - **AFRINTEL status:** Claim - Unverified
@@ -1033,10 +1271,24 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Analysis:**
 
-  The July 2026 ransomware dataset lists Zenith Bank Plc as a victim attributed to ExfilSquad. The available record does not provide a disclosed sample, ransom amount, data volume, encryption evidence or independent victim confirmation. The claimed exposure could affect customer banking, payment and account information and may support phishing, account takeover, payment fraud and targeted extortion.
+  The July 2026 ransomware dataset lists Zenith Bank Plc as a victim attributed to ExfilSquad. The available record does not provide a disclosed sample, ransom amount, data volume, displayed disclosure deadline, encryption evidence or independent victim confirmation. The claimed exposure could affect customer banking, payment and account information and may support phishing, account takeover, payment fraud and targeted extortion.
 
 **Correlation assessment:** Zenith Bank Plc and zenithbank.com were previously listed on 9 August 2025 by KaruHunters in an unverified claim alleging the sale of more than 1.8 million customer and employee records. The 2025 claim and the July 2026 ransomware claim are separated by nearly eleven months and are attributed to different actors. AFRINTEL found no matching sample, archive fingerprint, data schema, shared infrastructure, explicit cross-reference or independent victim confirmation connecting them. The strongest current assessment is a related-victim / possible double-claim relationship, not a confirmed single compromise. The July record remains a separate Claim - Unverified ransomware entry.
 
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-07-26
+listing_last_observed_at: 2026-07-26
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-07-26
+-->
 
 ### July 31, 2026
 #### 🇩🇿 Algeria - Ministry of Finance
@@ -1057,4 +1309,4 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 
 - **Analysis:**
 
-  The supplied screenshots show official-looking ministry documents and a publication attributed to the source account jrintel. The material may expose sensitive administrative information, but AFRINTEL has not independently verified the documents, their provenance or the full dataset. Download links, session identifiers and personal information are not reproduced.
+  The provided material contains official-looking ministry documents and a publication attributed to the source account jrintel. It may expose sensitive administrative information, but AFRINTEL has not independently verified the documents, their provenance or the full dataset. Download links, session identifiers and personal information are not reproduced.

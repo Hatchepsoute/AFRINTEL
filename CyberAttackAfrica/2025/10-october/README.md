@@ -181,7 +181,7 @@ title Ransomware incidents by country (October 2025)
 <!-- AFRINTEL_CURRENT_MODEL_START -->
 ### 3.4 Standard global overview
 
-| Country | Ransomware | Leaks / access | Total | Distribution |
+| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | 🇲🇦 Morocco | 3 | 2 | 5 | 🟧🟧🟧 🟦🟦 |
 | 🇿🇦 South Africa | 4 | 0 | 4 | 🟧🟧🟧🟧 |
@@ -198,12 +198,17 @@ title Ransomware incidents by country (October 2025)
 ```pie
     title Incident types
     "Ransomware" : 17
-    "Leaks and access" : 2
+    "Data leaks + access sales" : 2
 ```
+
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **2 records** (10.5% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | North Africa | 9 | 7 | 2 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
 | Southern Africa | 4 | 4 | 0 | 🟧🟧🟧🟧 |
@@ -213,11 +218,11 @@ title Ransomware incidents by country (October 2025)
 ```mermaid
 xychart-beta
     title "Occurrences by region"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 10
     bar [9,4,3,3]
 ```
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
 
 ### Sector distribution
 

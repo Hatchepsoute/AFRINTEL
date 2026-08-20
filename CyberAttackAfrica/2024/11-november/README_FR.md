@@ -21,6 +21,10 @@ Novembre 2024 enregistre **15 victimes** documentées dans 11 pays, à égalité
 - 🔹 **Pays touchés** : Afrique du Sud (2), Égypte (2), Nigeria (2), Burkina Faso (2), Tanzanie (1), Soudan (1), Kenya (1), Éthiopie (1), Cameroun (1), Namibie (1), Maroc (1)
 - 🔹 **Secteurs** : Industrie, Éducation, Agroalimentaire, Ingénierie, Gouvernement/Finance, Distribution, Industrie lourde, Services, IT, Assurance, Aviation/Organisation intergouvernementale, Santé publique
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **3 fiches** (20.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

@@ -21,6 +21,10 @@ November 2024 records **15 documented victims** across 11 countries, tying Augus
 - 🔹 **Countries affected**: South Africa (2), Egypt (2), Nigeria (2), Burkina Faso (2), Tanzania (1), Sudan (1), Kenya (1), Ethiopia (1), Cameroon (1), Namibia (1), Morocco (1)
 - 🔹 **Sectors**: Manufacturing, Education, Agribusiness, Engineering, Government/Finance, Retail, Heavy Industry, Business Services, IT Consulting, Insurance, Aviation/Intergovernmental Organization, Healthcare/Public Health
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **3 records** (20.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

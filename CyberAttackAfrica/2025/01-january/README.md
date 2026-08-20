@@ -100,7 +100,7 @@ A visual representation of attacks per country.
 <!-- AFRINTEL_CURRENT_MODEL_START -->
 ### 3.4 Standard global overview
 
-| Country | Ransomware | Leaks / access | Total | Distribution |
+| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
 | 🇳🇬 Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
@@ -114,12 +114,17 @@ A visual representation of attacks per country.
 ```pie
     title Incident types
     "Ransomware" : 16
-    "Leaks and access" : 0
+    "Data leaks + access sales" : 0
 ```
+
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **0 records** (0.0% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | North Africa | 8 | 8 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
 | Southern Africa | 2 | 2 | 0 | 🟧🟧 |
@@ -129,11 +134,11 @@ A visual representation of attacks per country.
 ```mermaid
 xychart-beta
     title "Occurrences by region"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 9
     bar [8,2,3,3]
 ```
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
 
 ### Sector distribution
 

@@ -21,6 +21,10 @@ In January 2024, Africa recorded **12 documented victims**: **3 ransomware victi
 - 🔹 **Countries affected**: South Africa (3), Kenya (1), Algeria (1), Burkina Faso (1), Morocco (1), Rwanda (1), Ghana (1), Nigeria (1), Cameroon (1), Egypt (1)
 - 🔹 **Sectors**: Automotive & Retail (2), Education / Higher Education (2), Audit / Tax & Advisory (1), Government / Financial Intelligence (1), Government / Public Administration (1), E-commerce / Retail (1), Media / Broadcasting (1), Technology / Online Community (1), Civil Society / Governance / Non-profit (1), Retail / Electronics (1)
 - 🔹 **Incident types**: Ransomware (3), Data Leak (8), Access Sale (1)
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **9 records** (75.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 
 ---
 

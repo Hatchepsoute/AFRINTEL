@@ -23,6 +23,10 @@ En mai 2024, l’Afrique a enregistré **8 nouvelles victimes** documentées d�
 - 🔹 **Pays touchés** : Afrique du Sud (2), Égypte (2), Nigeria (1), Namibie (1), Côte d’Ivoire (1), Sénégal (1)
 - 🔹 **Secteurs** : Finance / Trésor (3), Santé (1), Construction (1), Services aux entreprises (1), Conseil IT (1), Services génériques (1)
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **0 fiches** (0.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

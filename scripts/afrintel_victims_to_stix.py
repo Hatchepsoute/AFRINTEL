@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AFRINTEL victims.md -> STIX 2.1 bundles for OpenCTI
+AFRINTEL synchronized victims_FR.md / victims.md -> STIX 2.1 bundles for OpenCTI
 
 Usage:
   python3 scripts/afrintel_victims_to_stix.py --repo .
@@ -14,11 +14,13 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 import uuid
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
+from urllib.parse import urlsplit
 
 AFRINTEL_ID = "identity--d3497218-f905-57e1-a219-a8700a85eb4a"
 TLP_CLEAR_ID = "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -44,6 +46,10 @@ MONTH_NAMES_FR = {
 DATE_RE = re.compile(r"^###\s+(.+?)\s*$", re.M)
 ENTRY_RE = re.compile(r"^####\s+(.+?)\s*$", re.M)
 FIELD_RE = re.compile(r"^\s*[-*]\s+\*\*(.+?)\*\*\s*:?\s*(.*?)\s*$")
+RANSOMWARE_LIFECYCLE_RE = re.compile(
+    r"<!--\s*afrintel:ransomware-lifecycle\s*(.*?)\s*-->",
+    re.I | re.S,
+)
 STIX_ID_RE = re.compile(r"^[a-z0-9-]+--[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$")
 STIX_INDUSTRY_SECTORS = {
     "agriculture", "aerospace", "automotive", "chemical", "commercial",
@@ -54,6 +60,30 @@ STIX_INDUSTRY_SECTORS = {
     "insurance", "manufacturing", "mining", "non-profit", "pharmaceuticals",
     "retail", "technology", "telecommunications", "transportation", "utilities",
 }
+RANSOMWARE_LIFECYCLE_STIX_FIELDS = {
+    "listing_status": "x_afrintel_ransomware_listing_status",
+    "listing_first_observed_at": "x_afrintel_listing_first_observed_at",
+    "listing_last_observed_at": "x_afrintel_listing_last_observed_at",
+    "sample_status": "x_afrintel_sample_status",
+    "deadline_at": "x_afrintel_deadline_at",
+    "deadline_status": "x_afrintel_deadline_status",
+    "disclosure_status": "x_afrintel_disclosure_status",
+    "victim_confirmation": "x_afrintel_victim_confirmation",
+    "negotiation_status": "x_afrintel_negotiation_status",
+    "ransom_payment_status": "x_afrintel_ransom_payment_status",
+    "resale_status": "x_afrintel_resale_status",
+    "last_checked_at": "x_afrintel_last_checked_at",
+}
+RANSOMWARE_LIFECYCLE_VALUES = {
+    "listing_status": {"observed", "removed", "not-observed", "unknown"},
+    "sample_status": {"none-observed", "preview-visible", "sample-available", "sample-reviewed", "unknown"},
+    "deadline_status": {"active", "expired", "not-stated", "unknown"},
+    "disclosure_status": {"not-observed", "partial", "full-claimed", "release-reviewed", "unknown"},
+    "victim_confirmation": {"none-observed", "acknowledged", "confirmed", "unknown"},
+    "negotiation_status": {"unknown", "publicly-reported", "confirmed"},
+    "ransom_payment_status": {"unknown", "publicly-reported", "confirmed"},
+    "resale_status": {"unknown", "actor-claimed", "independently-observed", "confirmed"},
+}
 
 
 @dataclass(frozen=True)
@@ -62,15 +92,19 @@ class VictimRecord:
     date_display: str
     date_iso: str
     country: str
+    country_codes: Tuple[str, ...]
     organization: str
     domain: str
     sector: str
     actor: str
     status: str
     incident_type: str
+    confidence_level: str
+    impact_level: str
     description: str
     reference_url: str
     source_path: str
+    ransomware_lifecycle: Dict[str, str]
 
 
 @dataclass(frozen=True)
@@ -101,6 +135,14 @@ def slugify(value: str) -> str:
 
 def strip_flags(value: str) -> str:
     return re.sub(r"[\U0001F1E6-\U0001F1FF]{2}\s*", "", value).strip()
+
+
+def extract_country_codes(value: str) -> Tuple[str, ...]:
+    """Return ISO-like alpha-2 codes encoded by flag emoji in a card header."""
+    codes: List[str] = []
+    for flag in re.findall(r"[\U0001F1E6-\U0001F1FF]{2}", value):
+        codes.append("".join(chr(ord(char) - 0x1F1E6 + ord("A")) for char in flag))
+    return tuple(codes)
 
 
 def clean_inline(value: str) -> str:
@@ -138,6 +180,63 @@ def extract_url(value: str) -> str:
     if "." in first and not re.search(r"\s", first):
         return first if re.match(r"^https?://", first, re.I) else "https://" + first
     return ""
+
+
+def normalize_domain_identity(value: str) -> str:
+    """Normalize a parsed website URL for bilingual equality checks."""
+    if not value:
+        return ""
+    parsed = urlsplit(value if "://" in value else f"https://{value}")
+    host = (parsed.hostname or "").lower().rstrip(".")
+    if host.startswith("www."):
+        host = host[4:]
+    path = parsed.path.rstrip("/")
+    return host + path
+
+
+def normalize_confidence_level(value: str) -> str:
+    text = clean_inline(value).lower()
+    text = text.replace("é", "e").replace("è", "e").replace("ê", "e")
+    if not text:
+        return ""
+    if "very high" in text or "tres eleve" in text or "tres haute" in text:
+        return "Very High"
+    if "medium" in text or "moyen" in text or "modere" in text:
+        return "Medium"
+    if "high" in text or "eleve" in text or "haute" in text:
+        return "High"
+    if "low" in text or "faible" in text:
+        return "Low"
+    return clean_inline(value)
+
+
+def normalize_impact_level(value: str) -> str:
+    text = clean_inline(value)
+    if not text:
+        return ""
+    match = re.search(r"(?:level|niveau)\s*([1-4])", text, re.I)
+    return f"Level {match.group(1)}" if match else text
+
+
+def extract_confidence_level(block: str, fields: Dict[str, str]) -> str:
+    direct = normalize_confidence_level(first_matching(fields, ["confidence level", "niveau de confiance"]))
+    if direct in {"Low", "Medium", "High", "Very High"}:
+        return direct
+    match = re.search(
+        r"(?:confidence level|niveau de confiance)\s*:\s*"
+        r"(very high|high|medium|low|tr[eè]s [ée]lev[ée]e?|[ée]lev[ée]e?|moyen(?:ne)?|faible)",
+        block,
+        re.I,
+    )
+    return normalize_confidence_level(match.group(1)) if match else ""
+
+
+def extract_impact_level(block: str, fields: Dict[str, str]) -> str:
+    direct = normalize_impact_level(first_matching(fields, ["impact level", "niveau d'impact", "niveau d’impact"]))
+    if re.fullmatch(r"Level [1-4]", direct):
+        return direct
+    match = re.search(r"(?:impact level|niveau d['’]impact)\s*:\s*(?:level|niveau)\s*([1-4])", block, re.I)
+    return f"Level {match.group(1)}" if match else ""
 
 
 def parse_date_to_iso(date_text: str) -> str:
@@ -209,6 +308,28 @@ def first_matching(fields: Dict[str, str], needles: Iterable[str]) -> str:
         if any(needle in key for needle in needles):
             return value
     return ""
+
+
+def parse_ransomware_lifecycle(block: str) -> Dict[str, str]:
+    match = RANSOMWARE_LIFECYCLE_RE.search(block)
+    if not match:
+        return {}
+
+    lifecycle: Dict[str, str] = {}
+    for raw_line in match.group(1).splitlines():
+        line = raw_line.strip()
+        if not line or ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        key = key.strip().lower()
+        value = value.strip()
+        if key not in RANSOMWARE_LIFECYCLE_STIX_FIELDS:
+            continue
+        allowed = RANSOMWARE_LIFECYCLE_VALUES.get(key)
+        if value and allowed and value not in allowed:
+            raise ValueError(f"Invalid ransomware lifecycle value for {key}: {value}")
+        lifecycle[key] = value
+    return lifecycle
 
 
 def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
@@ -330,8 +451,93 @@ def is_unattributed(actor: str, status: str = "") -> bool:
     value = f"{actor} {status}".lower()
     return any(term in value for term in (
         "unclaimed", "unattributed", "unknown", "not specified", "non précisé",
-        "non revendiqué", "non revendique", "acteur inconnu",
+        "non revendiqué", "non revendique", "non attribué", "non attribue",
+        "acteur inconnu", "inconnu",
     ))
+
+
+def normalize_text_identity(value: str) -> str:
+    text = unicodedata.normalize("NFKD", clean_inline(value))
+    text = text.encode("ascii", "ignore").decode("ascii").lower()
+    return re.sub(r"[^a-z0-9]+", " ", text).strip()
+
+
+def actor_identity_key(actor: str, status: str = "") -> str:
+    """Return a language-neutral comparison key for the primary source actor."""
+    if is_unattributed(actor, status):
+        return "unattributed"
+    primary = re.split(r"[,;(]", clean_inline(actor), maxsplit=1)[0]
+    return normalize_text_identity(primary)
+
+
+def country_identity_key(record: VictimRecord) -> Tuple[str, ...]:
+    if record.country_codes:
+        return record.country_codes
+    aliases = {
+        "afrique multi pays": "africa multi country",
+        "afrique du sud": "south africa",
+        "algerie": "algeria",
+        "cote d ivoire": "ivory coast",
+        "egypte": "egypt",
+        "maroc": "morocco",
+        "maurice": "mauritius",
+        "senegal": "senegal",
+        "soudan": "sudan",
+        "tanzanie": "tanzania",
+        "tunisie": "tunisia",
+    }
+    countries = [part.strip() for part in re.split(r"\s*/\s*", record.country)]
+    return tuple(aliases.get(normalize_text_identity(country), normalize_text_identity(country)) for country in countries)
+
+
+def validate_bilingual_records(
+    records_fr: List[VictimRecord],
+    records_en: List[VictimRecord],
+    context: str,
+) -> None:
+    """Block STIX generation when structured FR/EN incident data diverges."""
+    if len(records_fr) != len(records_en):
+        raise ValueError(
+            f"Bilingual victim count mismatch for {context}: "
+            f"{len(records_fr)} FR != {len(records_en)} EN"
+        )
+
+    mismatches: List[str] = []
+    for rec_fr, rec_en in zip(records_fr, records_en):
+        checks = {
+            "date": (rec_fr.date_iso, rec_en.date_iso),
+            "country": (country_identity_key(rec_fr), country_identity_key(rec_en)),
+            "actor": (
+                actor_identity_key(rec_fr.actor, rec_fr.status),
+                actor_identity_key(rec_en.actor, rec_en.status),
+            ),
+            "status": (
+                normalize_status(rec_fr.status, rec_fr.incident_type)[0],
+                normalize_status(rec_en.status, rec_en.incident_type)[0],
+            ),
+            "incident type": (rec_fr.incident_type, rec_en.incident_type),
+            "domain": (
+                normalize_domain_identity(rec_fr.domain),
+                normalize_domain_identity(rec_en.domain),
+            ),
+            "reference": (rec_fr.reference_url, rec_en.reference_url),
+            "confidence": (rec_fr.confidence_level, rec_en.confidence_level),
+            "impact": (rec_fr.impact_level, rec_en.impact_level),
+            "ransomware lifecycle": (
+                rec_fr.ransomware_lifecycle,
+                rec_en.ransomware_lifecycle,
+            ),
+        }
+        for field, (fr_value, en_value) in checks.items():
+            if fr_value != en_value:
+                mismatches.append(
+                    f"card {rec_fr.index} {field}: FR={fr_value!r} EN={en_value!r}"
+                )
+
+    if mismatches:
+        preview = "; ".join(mismatches[:10])
+        extra = f"; plus {len(mismatches) - 10} additional mismatch(es)" if len(mismatches) > 10 else ""
+        raise ValueError(f"Bilingual parity check failed for {context}: {preview}{extra}")
 
 
 def incident_label_fr(incident_type: str) -> str:
@@ -341,6 +547,17 @@ def incident_label_fr(incident_type: str) -> str:
         "access-sale": "vente d'accès",
         "defacement": "défacement",
     }.get(incident_type, incident_type)
+
+
+def french_country_location(country: str) -> str:
+    """Return the idiomatic French location phrase for known country labels."""
+    return {
+        "Afrique du Sud": "en Afrique du Sud",
+        "Algérie": "en Algérie",
+        "Kenya": "au Kenya",
+        "Maurice": "à Maurice",
+        "Nigeria": "au Nigeria",
+    }.get(country, f"en {country}")
 
 
 def normalize_dashes(value: str) -> str:
@@ -368,16 +585,17 @@ def safe_description(rec: VictimRecord) -> str:
 
 def safe_description_fr(rec: VictimRecord, incident_type: Optional[str] = None) -> str:
     incident_label = incident_label_fr(incident_type or rec.incident_type)
+    location = french_country_location(rec.country)
     if is_unattributed(rec.actor, rec.status):
         base = (
             f"AFRINTEL a recensé un {incident_label} observé concernant {rec.organization} "
-            f"en {rec.country}, à la date du {rec.date_display}. Aucune attribution à un acteur n'est enregistrée. "
+            f"{location}, à la date du {rec.date_display}. Aucune attribution à un acteur n'est enregistrée. "
             f"Statut : {rec.status}. Secteur : {rec.sector}."
         )
     else:
         base = (
             f"AFRINTEL a recensé une revendication publique de type {incident_label} concernant {rec.organization} "
-            f"en {rec.country}, à la date du {rec.date_display}. L'acteur source est indiqué comme {rec.actor}. "
+            f"{location}, à la date du {rec.date_display}. L'acteur source est indiqué comme {rec.actor}. "
             f"Statut : {rec.status}. Secteur : {rec.sector}."
         )
     if rec.description:
@@ -401,7 +619,7 @@ def bilingual_victim_description(rec_en: VictimRecord, rec_fr: Optional[VictimRe
     if rec_fr is None:
         return normalize_dashes(english)
     french = (
-        f"Entité victime ou jeu de données affecté recensé par AFRINTEL en {rec_fr.country}. "
+        f"Entité victime ou jeu de données affecté recensé par AFRINTEL {french_country_location(rec_fr.country)}. "
         f"Secteur : {rec_fr.sector}."
     )
     return normalize_dashes(f"## English\n\n{english}\n\n## Français\n\n{french}")
@@ -464,13 +682,19 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
             entry_start = entry_match.end()
             entry_end = entry_matches[entry_index + 1].start() if entry_index + 1 < len(entry_matches) else len(date_block)
             entry_block = date_block[entry_start:entry_end]
-            fields = parse_fields(entry_block)
+            ransomware_lifecycle = parse_ransomware_lifecycle(entry_block)
+            fields = parse_fields(RANSOMWARE_LIFECYCLE_RE.sub("", entry_block))
 
             country, organization = split_country_org(header)
+            country_codes = extract_country_codes(header)
             actor = first_matching(fields, ["ransomware group", "actor", "threat actor", "groupe ransomware", "acteur"])
             sector = first_matching(fields, ["sector", "secteur"])
             status = first_matching(fields, ["status", "statut"])
-            website = first_matching(fields, ["website", "websites", "observed websites", "site web"])
+            website = first_matching(fields, [
+                "website", "websites", "web site", "observed websites", "site web", "sites web",
+            ])
+            confidence_level = extract_confidence_level(entry_block, fields)
+            impact_level = extract_impact_level(entry_block, fields)
             description = first_matching(fields, ["description", "victim description", "leak description", "analysis", "sample analysis"])
             reference = first_matching(fields, ["reference", "référence"])
 
@@ -478,21 +702,29 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
             sector = sector or "Unknown"
             status = status or "Claim - Unverified"
             incident_type = classify_incident(fields, status, default_incident_type)
+            if ransomware_lifecycle and incident_type != "ransomware":
+                raise ValueError(
+                    f"Ransomware lifecycle metadata found on non-ransomware record: {header}"
+                )
 
             records.append(VictimRecord(
                 index=len(records) + 1,
                 date_display=date_display,
                 date_iso=date_iso,
                 country=country,
+                country_codes=country_codes,
                 organization=organization,
                 domain=extract_url(website),
                 sector=clean_inline(sector),
                 actor=actor,
                 status=clean_inline(status),
                 incident_type=incident_type,
+                confidence_level=confidence_level,
+                impact_level=impact_level,
                 description=description,
                 reference_url=extract_url(reference),
                 source_path=str(md_path.relative_to(repo)),
+                ransomware_lifecycle=ransomware_lifecycle,
             ))
 
     return records
@@ -530,20 +762,20 @@ def base_objects(created: str) -> List[dict]:
 
 
 def build_month_bundle(
-    records: List[VictimRecord],
     records_fr: List[VictimRecord],
+    records_en: List[VictimRecord],
     year: str,
     month_dir: str,
     github_base: str,
     report_documents: List[ReportDocument],
 ) -> dict:
-    if not records:
+    if not records_fr:
         raise ValueError("No victim records to convert")
 
     created = now_iso()
-    source_url = f"{github_base.rstrip('/')}/CyberAttackAfrica/{year}/{month_dir}/victims.md"
+    source_url_en = f"{github_base.rstrip('/')}/CyberAttackAfrica/{year}/{month_dir}/victims.md"
     source_url_fr = f"{github_base.rstrip('/')}/CyberAttackAfrica/{year}/{month_dir}/victims_FR.md"
-    source_ref = {"source_name": "AFRINTEL victims.md", "url": source_url}
+    source_ref_en = {"source_name": "AFRINTEL victims.md", "url": source_url_en}
     source_ref_fr = {"source_name": "AFRINTEL victims_FR.md", "url": source_url_fr}
 
     objects: List[dict] = base_objects(created)
@@ -551,16 +783,16 @@ def build_month_bundle(
     victim_ids: List[str] = []
     incident_ids: List[str] = []
     relationship_ids: List[str] = []
-    records_fr_by_index = {rec.index: rec for rec in records_fr}
+    records_en_by_index = {rec.index: rec for rec in records_en}
 
-    for rec in records:
-        rec_fr = records_fr_by_index.get(rec.index)
-        sector_ov = normalize_sector(rec.sector)
-        unattributed = is_unattributed(rec.actor, rec.status)
-        actor_key = rec.actor.lower()
+    for rec_fr in records_fr:
+        rec_en = records_en_by_index[rec_fr.index]
+        sector_ov = normalize_sector(rec_fr.sector)
+        unattributed = is_unattributed(rec_fr.actor, rec_fr.status)
+        actor_key = rec_en.actor.lower()
         actor_id = actor_ids.get(actor_key) if not unattributed else None
         if not unattributed and not actor_id:
-            actor_id = stix_id("threat-actor", f"{year}:{month_dir}:actor:{rec.actor}")
+            actor_id = stix_id("threat-actor", f"{year}:{month_dir}:actor:{rec_en.actor}")
             actor_ids[actor_key] = actor_id
             objects.append({
                 "type": "threat-actor",
@@ -568,21 +800,24 @@ def build_month_bundle(
                 "id": actor_id,
                 "created": created,
                 "modified": created,
-                "name": rec.actor,
+                "name": rec_en.actor,
                 "description": f"Threat actor, ransomware group, or source referenced by AFRINTEL for {month_dir} {year}. Claims are unverified unless stated otherwise.",
                 "labels": ["afrintel", "africa", "claim-unverified", slugify(year), slugify(month_dir)],
                 "created_by_ref": AFRINTEL_ID,
                 "object_marking_refs": [TLP_CLEAR_ID],
-                "external_references": [source_ref, source_ref_fr],
+                "external_references": [source_ref_fr, source_ref_en],
             })
 
-        victim_id = stix_id("identity", f"{year}:{month_dir}:victim:{rec.index}:{rec.country}:{rec.organization}")
+        victim_id = stix_id(
+            "identity",
+            f"{year}:{month_dir}:victim:{rec_en.index}:{rec_en.country}:{rec_en.organization}",
+        )
         victim_ids.append(victim_id)
-        victim_refs = [source_ref, source_ref_fr]
-        if rec.domain:
-            victim_refs.append({"source_name": "website", "url": rec.domain})
-        if rec.reference_url:
-            victim_refs.append({"source_name": "incident source", "url": rec.reference_url})
+        victim_refs = [source_ref_fr, source_ref_en]
+        if rec_fr.domain:
+            victim_refs.append({"source_name": "website", "url": rec_fr.domain})
+        if rec_fr.reference_url:
+            victim_refs.append({"source_name": "incident source", "url": rec_fr.reference_url})
 
         victim_object = {
             "type": "identity",
@@ -590,54 +825,79 @@ def build_month_bundle(
             "id": victim_id,
             "created": created,
             "modified": created,
-            "name": rec.organization,
-            "identity_class": "organization" if "/" not in rec.country else "group",
-            "description": bilingual_victim_description(rec, rec_fr),
-            "labels": ["afrintel", "victim", slugify(rec.country)] + ([sector_ov] if sector_ov else []),
+            "name": rec_en.organization,
+            "identity_class": "organization" if "/" not in rec_fr.country else "group",
+            "description": bilingual_victim_description(rec_en, rec_fr),
+            "labels": ["afrintel", "victim", slugify(rec_en.country)] + ([sector_ov] if sector_ov else []),
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
             "external_references": victim_refs,
-            "x_afrintel_country": rec.country,
-            "x_afrintel_sector_raw": rec.sector,
-            "x_afrintel_source_path": rec.source_path,
+            "x_afrintel_country": rec_en.country,
+            "x_afrintel_country_fr": rec_fr.country,
+            "x_afrintel_organization_fr": rec_fr.organization,
+            "x_afrintel_sector_raw": rec_fr.sector,
+            "x_afrintel_sector_raw_en": rec_en.sector,
+            "x_afrintel_source_path": rec_fr.source_path,
+            "x_afrintel_source_path_en": rec_en.source_path,
         }
         if sector_ov:
             victim_object["sectors"] = [sector_ov]
         objects.append(victim_object)
 
-        normalized_status, labels = normalize_status(rec.status, rec.incident_type)
+        normalized_status, labels = normalize_status(rec_fr.status, rec_fr.incident_type)
         if unattributed and "unattributed" not in labels:
             labels.append("unattributed")
-        incident_id = stix_id("incident", f"{year}:{month_dir}:incident:{rec.index}:{rec.date_iso}:{rec.country}:{rec.organization}")
+        incident_id = stix_id(
+            "incident",
+            f"{year}:{month_dir}:incident:{rec_en.index}:{rec_fr.date_iso}:{rec_en.country}:{rec_en.organization}",
+        )
         incident_ids.append(incident_id)
-        incident_refs = [source_ref, source_ref_fr]
-        if rec.domain:
-            incident_refs.append({"source_name": "website", "url": rec.domain})
-        if rec.reference_url:
-            incident_refs.append({"source_name": "incident source", "url": rec.reference_url})
+        incident_refs = [source_ref_fr, source_ref_en]
+        if rec_fr.domain:
+            incident_refs.append({"source_name": "website", "url": rec_fr.domain})
+        if rec_fr.reference_url:
+            incident_refs.append({"source_name": "incident source", "url": rec_fr.reference_url})
 
-        objects.append({
+        incident_object = {
             "type": "incident",
             "spec_version": "2.1",
             "id": incident_id,
             "created": created,
             "modified": created,
-            "name": f"AFRINTEL {month_dir.split(chr(45), 1)[1].title() if chr(45) in month_dir else month_dir.title()} {year} incident {rec.index:02d}: {rec.organization}",
-            "description": bilingual_incident_description(rec, rec_fr),
-            "first_seen": f"{rec.date_iso}T00:00:00Z",
-            "labels": list(dict.fromkeys(labels + [slugify(rec.country)] + ([sector_ov] if sector_ov else []))),
+            "name": f"AFRINTEL {month_dir.split(chr(45), 1)[1].title() if chr(45) in month_dir else month_dir.title()} {year} incident {rec_en.index:02d}: {rec_en.organization}",
+            "description": bilingual_incident_description(rec_en, rec_fr),
+            "first_seen": f"{rec_fr.date_iso}T00:00:00Z",
+            "labels": list(dict.fromkeys(labels + [slugify(rec_en.country)] + ([sector_ov] if sector_ov else []))),
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
             "external_references": incident_refs,
-            "x_opencti_incident_type": rec.incident_type,
-            "x_afrintel_incident_index": rec.index,
+            "x_opencti_incident_type": rec_fr.incident_type,
+            "x_afrintel_incident_index": rec_fr.index,
             "x_afrintel_status": normalized_status,
-            "x_afrintel_country": rec.country,
-            "x_afrintel_sector_raw": rec.sector,
-            "x_afrintel_actor": rec.actor,
-            "x_afrintel_date_display": rec.date_display,
-            "x_afrintel_source_path": rec.source_path,
-        })
+            "x_afrintel_country": rec_en.country,
+            "x_afrintel_country_fr": rec_fr.country,
+            "x_afrintel_sector_raw": rec_fr.sector,
+            "x_afrintel_sector_raw_en": rec_en.sector,
+            "x_afrintel_actor": rec_en.actor,
+            "x_afrintel_actor_fr": rec_fr.actor,
+            "x_afrintel_date_display": rec_fr.date_display,
+            "x_afrintel_date_display_en": rec_en.date_display,
+            "x_afrintel_source_path": rec_fr.source_path,
+            "x_afrintel_source_path_en": rec_en.source_path,
+        }
+        if rec_fr.confidence_level:
+            incident_object["x_afrintel_confidence_level"] = rec_fr.confidence_level
+        if rec_fr.impact_level:
+            incident_object["x_afrintel_impact_level"] = rec_fr.impact_level
+        for lifecycle_key, lifecycle_value in rec_fr.ransomware_lifecycle.items():
+            if lifecycle_value:
+                incident_object[RANSOMWARE_LIFECYCLE_STIX_FIELDS[lifecycle_key]] = lifecycle_value
+        if rec_fr.ransomware_lifecycle.get("disclosure_status") == "release-reviewed":
+            incident_object["labels"] = list(dict.fromkeys([
+                *incident_object["labels"],
+                "data-release-reviewed",
+            ]))
+        objects.append(incident_object)
 
         relationships = [("incident-targets", "targets", incident_id, victim_id)]
         if actor_id:
@@ -646,7 +906,7 @@ def build_month_bundle(
                 ("actor-targets", "targets", actor_id, victim_id),
             ]
         for suffix, relationship_type, source_ref_id, target_ref_id in relationships:
-            rel_id = stix_id("relationship", f"{year}:{month_dir}:{rec.index}:{suffix}")
+            rel_id = stix_id("relationship", f"{year}:{month_dir}:{rec_fr.index}:{suffix}")
             relationship_ids.append(rel_id)
             objects.append({
                 "type": "relationship",
@@ -661,10 +921,10 @@ def build_month_bundle(
                 "object_marking_refs": [TLP_CLEAR_ID],
             })
 
-    ransomware_count = sum(1 for rec in records if rec.incident_type == "ransomware")
-    leak_count = sum(1 for rec in records if rec.incident_type == "data-leak")
-    access_sale_count = sum(1 for rec in records if rec.incident_type == "access-sale")
-    defacement_count = sum(1 for rec in records if rec.incident_type == "defacement")
+    ransomware_count = sum(1 for rec in records_fr if rec.incident_type == "ransomware")
+    leak_count = sum(1 for rec in records_fr if rec.incident_type == "data-leak")
+    access_sale_count = sum(1 for rec in records_fr if rec.incident_type == "access-sale")
+    defacement_count = sum(1 for rec in records_fr if rec.incident_type == "defacement")
     month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     report_refs = list(actor_ids.values()) + victim_ids + incident_ids
 
@@ -684,7 +944,7 @@ def build_month_bundle(
             "name": document.name,
             "description": document.content,
             "lang": document.language,
-            "published": f"{max(rec.date_iso for rec in records)}T00:00:00Z",
+            "published": f"{max(rec.date_iso for rec in records_fr)}T00:00:00Z",
             "report_types": ["threat-report"],
             "labels": [
                 "afrintel", "africa", document.language, f"{month_name}-{year}",
@@ -700,7 +960,7 @@ def build_month_bundle(
             "x_afrintel_source_path": document.source_path,
             "x_afrintel_report_kind": document.kind,
             "x_afrintel_author_ref": AFRINTEL_AUTHOR_ID,
-            "x_afrintel_total_incidents": len(records),
+            "x_afrintel_total_incidents": len(records_fr),
             "x_afrintel_ransomware_count": ransomware_count,
             "x_afrintel_data_leak_count": leak_count,
             "x_afrintel_access_sale_count": access_sale_count,
@@ -714,8 +974,8 @@ def build_month_bundle(
     bundle = {"type": "bundle", "id": stix_id("bundle", f"{year}:{month_dir}:bundle"), "objects": objects}
     validate_bundle(
         bundle,
-        expected_victims=len(records),
-        expected_incidents=len(records),
+        expected_victims=len(records_fr),
+        expected_incidents=len(records_fr),
         expected_reports=len(report_documents),
     )
     return bundle
@@ -785,6 +1045,12 @@ def reports_root(repo: Path) -> Path:
     raise FileNotFoundError(f"Neither CyberAttackAfrica nor reports directory found under {repo}")
 
 
+def require_bilingual_file_pair(en_path: Path, fr_path: Path, label: str) -> None:
+    if en_path.exists() != fr_path.exists():
+        missing = fr_path if en_path.exists() else en_path
+        raise FileNotFoundError(f"Missing bilingual counterpart for {label}: {missing}")
+
+
 def process_month(repo: Path, year: str, month_dir: str, github_base: str, output_root: Optional[Path] = None) -> Path:
     root = reports_root(repo)
     month_path = root / year / month_dir
@@ -795,18 +1061,11 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
     if not victims_fr_md.exists():
         raise FileNotFoundError(f"victims_FR.md not found: {victims_fr_md}")
 
-    records = parse_month_victims(victims_md, repo)
     records_fr = parse_month_victims(victims_fr_md, repo)
-    if not records:
-        raise ValueError(f"No victim records parsed from {victims_md}")
-    if len(records_fr) != len(records):
-        raise ValueError(f"Bilingual victim count mismatch: {len(records)} EN != {len(records_fr)} FR")
-    for rec_en, rec_fr in zip(records, records_fr):
-        if rec_en.date_iso != rec_fr.date_iso:
-            raise ValueError(
-                f"Bilingual victim date mismatch at incident {rec_en.index}: "
-                f"{rec_en.date_iso} != {rec_fr.date_iso}"
-            )
+    records_en = parse_month_victims(victims_md, repo)
+    if not records_fr:
+        raise ValueError(f"No victim records parsed from canonical source {victims_fr_md}")
+    validate_bilingual_records(records_fr, records_en, f"{year}/{month_dir}")
 
     month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     month_name_fr = MONTH_NAMES_FR.get(month_name, month_name.title())
@@ -816,6 +1075,11 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
         "en": f"AFRINTEL monthly CTI report - {month_name.title()} {year}",
         "fr": f"Rapport CTI mensuel AFRINTEL - {month_name_fr} {year}",
     }
+    require_bilingual_file_pair(
+        month_path / "README.md",
+        month_path / "README_FR.md",
+        f"monthly report {year}/{month_dir}",
+    )
     for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
         report_path = month_path / filename
         if report_path.exists():
@@ -833,6 +1097,11 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
         "en": f"AFRINTEL monthly statistics - {month_name.title()} {year}",
         "fr": f"Statistiques mensuelles AFRINTEL - {month_name_fr} {year}",
     }
+    require_bilingual_file_pair(
+        statistics_path / "README.md",
+        statistics_path / "README_FR.md",
+        f"monthly statistics {year}/{month_dir}",
+    )
     for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
         document_path = statistics_path / filename
         if document_path.exists():
@@ -864,6 +1133,11 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
                     f"et {month_name_fr} {year}"
                 ),
             }
+            require_bilingual_file_pair(
+                comparison_path / "README.md",
+                comparison_path / "README_FR.md",
+                f"monthly comparison {year}/{comparison_dir}",
+            )
             for language, filename in (("en", "README.md"), ("fr", "README_FR.md")):
                 document_path = comparison_path / filename
                 if document_path.exists():
@@ -877,7 +1151,7 @@ def process_month(repo: Path, year: str, month_dir: str, github_base: str, outpu
                         comparison_periods=(previous_month_dir, month_dir),
                     ))
 
-    bundle = build_month_bundle(records, records_fr, year, month_dir, github_base, report_documents)
+    bundle = build_month_bundle(records_fr, records_en, year, month_dir, github_base, report_documents)
     out_root = output_root or (repo / "stix" / year / month_dir)
     out_root.mkdir(parents=True, exist_ok=True)
     month_slug = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
@@ -1047,6 +1321,12 @@ def process_full_year_bundle(repo: Path, year: str, github_base: str, output_roo
     out_root.mkdir(parents=True, exist_ok=True)
     outputs: List[Path] = []
 
+    require_bilingual_file_pair(
+        year_path / "README.md",
+        year_path / "README_FR.md",
+        f"annual report {year}",
+    )
+
     for language, suffix in (("en", "EN"), ("fr", "FR")):
         objects = [
             obj for obj in objects_by_id.values()
@@ -1109,7 +1389,12 @@ def process_full_year_bundle(repo: Path, year: str, github_base: str, output_roo
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Generate AFRINTEL OpenCTI STIX bundles from victims.md files.")
+    parser = argparse.ArgumentParser(
+        description=(
+            "Generate AFRINTEL OpenCTI STIX bundles from synchronized "
+            "French-first victims_FR.md and victims.md files."
+        )
+    )
     parser.add_argument("--repo", required=True, help="Path to AFRINTEL repository root")
     parser.add_argument("--year", help="Specific year, e.g. 2026")
     parser.add_argument("--month", help="Specific month folder, e.g. 05-may")

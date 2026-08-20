@@ -3,18 +3,18 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
-# CTI Report: Cyber attacks in Africa - July 2025 (20 victims)
+# CTI Report: Cyber attacks in Africa - July 2025 (21 victims)
 👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Introduction
 This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during July 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
 ## 2. Executive summary
-- **Total number of recorded attacks:** 20
-- **Most active actors:** Dark 07x Team (5 attacks), Hepd (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Wieko (1), sanji_shi5 (1), Unknown (2), jrintel (1), Gh1nDar (1).
-- **Most targeted sectors:** Public Administrations (6), Banking/Finance (4), Education/Training (4), Telecommunications (2), Business Association/Construction (1), Mining (1), Postal / Financial Services (1), Diplomatic / Government (1).
-- **Most affected countries:** Tunisia (5), Morocco (4), Algeria (3), Nigeria (1), South Africa (1), Tanzania (1), Kenya (1), Egypt (1), Namibia (1), Mauritania (1), Eritrea (1).
-- **Notable exfiltrated data volumes:** Ransom demand of $2.27M for eehc.gov.eg (Egypt). FNBTP (Morocco): 180-row / 14-column company database published for free. Embassy of Eritrea in the United States: unverified claim of approximately 5,000 citizen records. Other volumes not specified.
+- **Total number of recorded attacks:** 21
+- **Most active actors:** Dark 07x Team (5 attacks), Unknown (2), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Gh1nDar (1), Wieko (1), BabayoSysteam (1).
+- **Most targeted sectors:** Public Administrations (6), Banking/Finance (4), Education/Training (4), Telecommunications (2), Business Association/Construction (1), Mining (1), Postal / Financial Services (1), Diplomatic / Government (1), Retail/E-commerce (1).
+- **Most affected countries:** Tunisia (5), Morocco (4), Algeria (2), Kenya (2), Nigeria (1), South Africa (1), Tanzania (1), Egypt (1), Namibia (1), Mauritania (1), Eritrea (1), Burundi (1).
+- **Notable claimed data volumes:** Ransom demand of $2.27M for eehc.gov.eg (Egypt). FNBTP (Morocco): 180-row / 14-column company database published for free. Embassy of Eritrea in the United States: unverified claim of approximately 5,000 citizen records. PesaBay (Burundi): complete database of 1,850 records published. Other volumes not specified.
 
 ## 3. Key statistics
 
@@ -35,9 +35,9 @@ This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cybe
 | Wieko | 1 |
 | sanji_shi5 | 1 |
 | Unknown | 2 |
-| jrintel | 1 |
 | Gh1nDar | 1 |
-| **Total** | **20** |
+| BabayoSysteam | 1 |
+| **Total** | **21** |
 
 ```mermaid
 pie title Attack distribution by actor (July 2025)
@@ -55,8 +55,8 @@ pie title Attack distribution by actor (July 2025)
     "Wieko" : 1
     "sanji_shi5" : 1
     "Unknown" : 2
-    "jrintel" : 1
     "Gh1nDar" : 1
+    "BabayoSysteam" : 1
 ```
 
 ### 3.2 Breakdown by sector
@@ -70,7 +70,8 @@ pie title Attack distribution by actor (July 2025)
 | Mining | 1 |
 | Postal / Financial Services | 1 |
 | Diplomatic / Government | 1 |
-| **Total** | **20** |
+| Retail / E-commerce | 1 |
+| **Total** | **21** |
 
 ```mermaid
 pie title Breakdown by industry sector (July 2025)
@@ -82,6 +83,7 @@ pie title Breakdown by industry sector (July 2025)
     "Mining Industry" : 1
     "Postal / Financial Services" : 1
     "Diplomatic / Government" : 1
+    "Retail / E-commerce" : 1
 ```
 ### 3.3 Breakdown by country
 | Country | Number of attacks |
@@ -97,7 +99,8 @@ pie title Breakdown by industry sector (July 2025)
 | 🇳🇦 Namibia | 1 |
 | 🇲🇷 Mauritania | 1 |
 | 🇪🇷 Eritrea | 1 |
-| **Total** | **20** |
+| 🇧🇮 Burundi | 1 |
+| **Total** | **21** |
 
 ```mermaid
 pie title Breakdown by country (July 2025)
@@ -112,16 +115,17 @@ pie title Breakdown by country (July 2025)
     "🇳🇦 Namibia" : 1
     "🇲🇷 Mauritania" : 1
     "🇪🇷 Eritrea" : 1
+    "🇧🇮 Burundi" : 1
 ```
 
 
 <!-- AFRINTEL_CURRENT_MODEL_START -->
 ### 3.4 Standard global overview
 
-| Country | Ransomware | Leaks / access | Total | Distribution |
+| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | 🇹🇳 Tunisia | 0 | 5 | 5 |  🟦🟦🟦🟦🟦 |
-| 🇲🇦 Morocco | 1 | 3 | 4 | 🟧 🟦🟦🟦 |
+| 🇲🇦 Morocco | 0 | 4 | 4 |  🟦🟦🟦🟦 |
 | 🇩🇿 Algeria | 0 | 2 | 2 |  🟦🟦 |
 | 🇰🇪 Kenya | 1 | 1 | 2 | 🟧 🟦 |
 | 🇪🇬 Egypt | 1 | 0 | 1 | 🟧 |
@@ -131,40 +135,47 @@ pie title Breakdown by country (July 2025)
 | 🇳🇬 Nigeria | 0 | 1 | 1 |  🟦 |
 | 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
 | 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
+| 🇧🇮 Burundi | 0 | 1 | 1 |  🟦 |
 
 ```pie
     title Incident types
-    "Ransomware" : 6
-    "Leaks and access" : 14
+    "Ransomware" : 5
+    "Data leaks + access sales" : 16
 ```
+
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **16 records** (76.2% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+
 
 ### Geographic distribution by region
 
-| Region | Occurrences | Ransomware | Leaks / access | Distribution |
+| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
-| North Africa | 13 | 2 | 11 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| North Africa | 13 | 1 | 12 | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Southern Africa | 2 | 2 | 0 | 🟧🟧 |
 | West and Central Africa | 1 | 0 | 1 |  🟦 |
-| East Africa | 4 | 2 | 2 | 🟧🟧 🟦🟦 |
+| East Africa | 5 | 2 | 3 | 🟧🟧 🟦🟦🟦 |
 
 ```mermaid
 xychart-beta
     title "Occurrences by region"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 14
-    bar [13,2,1,4]
+    bar [13,2,1,5]
 ```
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
 
 ### Sector distribution
 
 | Sector | Records | Share | Activity |
 | :--- | ---: | ---: | :--- |
-| Government / Administration | 9 | 45.0% | ██████████ |
-| Finance / Banking | 6 | 30.0% | ███████ |
-| Education / University | 2 | 10.0% | ██ |
-| Technology / IT | 2 | 10.0% | ██ |
-| Energy / Utilities | 1 | 5.0% | █ |
+| Government / Administration | 9 | 42.9% | ██████████ |
+| Finance / Banking | 6 | 28.6% | ███████ |
+| Education / University | 2 | 9.5% | ██ |
+| Technology / IT | 2 | 9.5% | ██ |
+| Retail / E-commerce | 1 | 4.8% | █ |
+| Energy / Utilities | 1 | 4.8% | █ |
 
 ### Most visible actors
 
@@ -227,7 +238,10 @@ Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = 
 ### 4.13 Gh1nDar (1 attack)
 - **27/07/2025:** Embassy of Eritrea in the United States (Eritrea, diplomatic/government) – Claim - Unverified. Unverified claim of a leak affecting approximately 5,000 citizen records; no sample was accessible.
 
-### 4.14 Graph: Actor → victim → country
+### 4.14 BabayoSysteam (1 attack)
+- **30/07/2025:** PesaBay (Burundi, e-commerce) – `Data Fully Published`; publication of a complete database of 1,850 accounts containing contact data and account statuses. The acquisition method remains unknown.
+
+### 4.15 Graph: Actor → victim → country
 ```mermaid
 graph LR
     Dark07["Dark 07x Team"] -->|Ministry of Finance| Tunisia1["🇹🇳 Tunisia"]
@@ -248,6 +262,7 @@ graph LR
     Unknown -->|QCE Portal| Mauritania["🇲🇷 Mauritania"]
     Unknown -->|ICT Authority| Kenya2["🇰🇪 Kenya"]
     Gh1nDar -->|Embassy of Eritrea| Eritrea["🇪🇷 Eritrea"]
+    BabayoSysteam -->|PesaBay| Burundi["🇧🇮 Burundi"]
 ```
 
 ## 5. Sectoral analysis
@@ -258,6 +273,7 @@ graph LR
 - **Business Association/Construction:** 1 attack (FNBTP) by Evil_BYTE_Officiel, exposing a 180-row company membership database published for free.
 - **Mining:** 1 attack (MAFATE) by d4rk4rmy in South Africa.
 - **Diplomatic/Government:** 1 unverified claim (Embassy of Eritrea in the United States) by Gh1nDar, involving an African state's diplomatic mission abroad.
+- **Retail/E-commerce:** 1 leak affecting PesaBay in Burundi, with full publication of a 1,850-account database containing user contact data.
 
 ## 6. Geographic analysis
 - **Tunisia:** 5 attacks, all by Dark 07x Team, targeting the government and banking sector. Tunisia is the most affected country of the month, with a coordinated campaign.
@@ -265,13 +281,14 @@ graph LR
 - **Nigeria:** 1 attack (CIBN) by Hepd, targeting the banking regulatory body.
 - **South Africa:** 1 attack (MAFATE) by d4rk4rmy in the mining sector.
 - **Tanzania:** 1 attack (Twaweza) by nightspire, hitting an educational NGO.
-- **Kenya:** 1 attack (Adrian Kenya) by lynx in telecoms.
+- **Kenya:** 2 records (ICT Authority and Adrian Kenya), involving public digital infrastructure and a telecom/engineering provider.
 - **Egypt:** 1 attack (eehc.gov.eg) by devman, with a high ransom demand.
 - **Namibia:** 1 attack (Otjiwarongo Municipality) by incransom, targeting a local administration.
 - **Mauritania:** 1 unattributed claim (QCE Portal), a public-sector personnel/enterprise qualification platform, with a locally reviewed sample of CVs, national ID cards, diplomas and notarized employment contracts.
 - **Eritrea:** 1 unverified claim (Embassy of Eritrea in the United States) by Gh1nDar, targeting an Eritrean diplomatic mission rather than a domestic entity.
+- **Burundi:** 1 leak affecting the PesaBay marketplace, attributed to the BabayoSysteam account, with full publication of a 1,850-record database.
 
-North Africa (Tunisia, Morocco, Egypt) concentrates 10 out of 17 claims, confirming pressure on this region. Tunisia is particularly hit by a massive campaign.
+North Africa (Tunisia, Morocco, Algeria, Egypt and Mauritania) accounts for 13 of the 21 records. East Africa reaches 5 records following the addition of the Burundian case.
 ### 6.1 Attack timeline
 ```mermaid
 timeline
@@ -305,6 +322,8 @@ timeline
         Dark 07x Team : BH Bank (🇹🇳 Tunisia)
     section 29 July
         Wieko : Ministry of Education (🇲🇦 Morocco)
+    section 30 July
+        BabayoSysteam : PesaBay (🇧🇮 Burundi)
 ```
 ## 7. Observed TTPs
 - **Coordinated campaigns:** Dark 07x Team conducted multiple simultaneous attacks against Tunisian targets, showing advanced planning.
@@ -315,6 +334,7 @@ timeline
 - **Hacktivism:** Dark 07x Team appears to have multiple motivations (financial and political).
 - **Free publication / reputation-building disclosure:** Evil_BYTE_Officiel published the FNBTP company database for free rather than selling it, consistent with a reputation-building rather than purely financial motive.
 - **Unattributed dataset circulation:** the QCE Portal (Mauritania) case involved a sample of personnel qualification documents circulating without an identified claiming actor or forum post.
+- **E-commerce account-data exposure:** the published PesaBay database contains contact details and account statuses that may facilitate phishing, spam and impersonation.
 
 ## 8. Recommendations
 - **Tunisia:** financial and government institutions must urgently strengthen their cybersecurity in the face of coordinated campaigns. Establish a monitoring and incident response cell.
@@ -322,9 +342,10 @@ timeline
 - **Education:** universities (UM6P), academies (ABF) and educational NGOs (Twaweza) must protect personal data and train staff on risks.
 - **Public administrations:** strengthen security of government websites and portals (eehc.gov.eg, Otjiwarongo, QCE Portal Mauritania), enforce strict access controls on platforms handling national ID documents, and implement offline backups.
 - **All sectors:** train employees on phishing risks, implement multi-factor authentication and regular security audits.
+- **E-commerce platforms:** restrict account exports, log bulk access and notify affected users after internal incident validation.
 
 ## 9. Conclusion
-July 2025 was marked by a major campaign by the **Dark 07x Team** against Tunisia, with five attacks targeting the government and banking sector. The diversity of actors (traditional ransomware, hacktivists) and targets (banks, administrations, education, telecoms, and one diplomatic mission) shows a multifaceted threat. The $2.27M ransom demand in Egypt and sensitive data leaks in Nigeria and Tunisia underscore the urgency of strengthened regional cybersecurity cooperation. The Eritrea case remains an unverified claim targeting an African state's diplomatic representation abroad.
+July 2025 was marked by a major campaign by the **Dark 07x Team** against Tunisia, with five attacks targeting the government and banking sector. The diversity of actors and targets also extends to e-commerce through the publication affecting PesaBay in Burundi. The $2.27M ransom demand in Egypt and sensitive data leaks observed across several countries underscore the urgency of strengthened regional cybersecurity cooperation. The Eritrea case remains an unverified claim targeting an African state's diplomatic representation abroad.
 
 ## ✍🏿 Author
 *Adama ASSIONGBON*  

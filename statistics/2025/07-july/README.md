@@ -4,19 +4,19 @@
 
 ## Summary
 
-This statistical sheet is compiled from the 20 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the 21 cards in the synchronized monthly `victims_FR.md` and `victims.md` files. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 20 |
-| Ransomware | 6 |
-| Data leaks | 14 |
+| Total incidents | 21 |
+| Ransomware | 5 |
+| Data leaks | 16 |
 | Access sales | 0 |
 | Defacement | 0 |
 | Unclassified public claims | 0 |
-| Countries | 11 |
-| Sectors | 18 |
-| Actors / sources | 15 |
+| Countries | 12 |
+| Sectors | 19 |
+| Actors / sources | 16 |
 
 ## 1. Country
 
@@ -33,6 +33,7 @@ This statistical sheet is compiled from the 20 cards in the monthly victim file.
 | 🇳🇦 Namibia | 1 |
 | 🇲🇷 Mauritania | 1 |
 | 🇪🇷 Eritrea | 1 |
+| 🇧🇮 Burundi | 1 |
 
 ## 2. Sector
 
@@ -56,6 +57,7 @@ This statistical sheet is compiled from the 20 cards in the monthly victim file.
 | Professional Training / Banking Sector. | 1 |
 | Government / Diplomatic | 1 |
 | Government / Public Administration / Education | 1 |
+| Retail / E-commerce | 1 |
 
 ## 3. Actor / source
 
@@ -76,17 +78,19 @@ This statistical sheet is compiled from the 20 cards in the monthly victim file.
 | Mercobyte | 1 |
 | Gh1nDar | 1 |
 | Wieko | 1 |
+| BabayoSysteam | 1 |
 
 ## 4. Type
 
 | Type | Incidents |
 |---|---:|
-| Data Leak | 14 |
-| Ransomware | 6 |
+| Data Leak | 16 |
+| Ransomware | 5 |
+| Access Sale | 0 |
+| Defacement | 0 |
 
 ## CTI reading
 
 The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
 
 **AFRINTEL** — TLP:CLEAR
-

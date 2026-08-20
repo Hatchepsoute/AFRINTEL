@@ -18,6 +18,10 @@ In July 2024, Africa recorded **11 documented victims** in this file: **7 ransom
 - 🔹 **Countries affected**: South Africa (3), Algeria (3), Tunisia (1), Kenya (1), Zimbabwe (1), Egypt (1), Ethiopia (1)
 - 🔹 **Sectors**: Logistics, Healthcare (public lab), Urban road transport, Finance, Urban consulting services, Business services, Heavy industries, Healthcare (private hospital), Education, Media / Web portal, Defense / Military education
 - 🔹 **Incident types**: Ransomware (7), Data Leak (4)
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (36.4% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 
 👉🏾 [Victims list](./victims.md)
 

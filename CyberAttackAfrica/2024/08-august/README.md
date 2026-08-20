@@ -21,6 +21,10 @@ August 2024 is the **most active month of the year** with **15 documented cases*
 - 🔹 **Countries affected**: South Africa (6), Seychelles (2), Zimbabwe (2), Tunisia (1), Ivory Coast (1), Kenya (1), Djibouti (1), Ghana (1)
 - 🔹 **Sectors**: Finance, Retail/Distribution, Telecommunications, Healthcare, Government, Technologies, Events / Digital platforms
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (6.7% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

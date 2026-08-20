@@ -21,6 +21,10 @@ October 2024 records **12 documented victims** across 8 countries. South Africa 
 - 🔹 **Countries affected**: South Africa (4), Algeria (2), Madagascar (1), Ghana (1), Libya (1), Egypt (1), Morocco (1), Nigeria (1)
 - 🔹 **Sectors**: Education (3), IT Consulting, Tech/Mobility, Mining/Industrial (2), Energy, Government (2), Legal, Healthcare
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (33.3% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

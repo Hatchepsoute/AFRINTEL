@@ -1215,6 +1215,23 @@ Les fiches ci-dessous sont compilées à partir des fichiers mensuels AFRINTEL d
 - **Note de double revendication :**
   AFRINTEL a recensé séparément, le 18 juin 2025, une revendication concernant la plateforme Massar du ministère. Les acteurs et les jeux de données annoncés diffèrent, et les éléments disponibles ne permettent pas d’établir que les deux publications proviennent de la même compromission.
 
+### 30 Juillet 2025
+#### 🇧🇮 Burundi - PesaBay
+
+- **Type d'incident :** Fuite de données
+- **Acteur / Groupe :** BabayoSysteam
+- **Secteur :** Commerce / E-commerce
+- **Statut :** Data Fully Published
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 2
+- **Site web :** [pesabay.bi](https://pesabay.bi)
+
+- **Description :**
+  PesaBay est une place de marché électronique burundaise exploitée par AFRIREGISTER S.A. Elle permet à des vendeurs de publier des produits et à des utilisateurs d'acheter ou de prendre contact avec les commerçants présents sur la plateforme.
+
+- **Analyse :**
+  Une publication attribuée au compte BabayoSysteam, datée du 30 juillet 2025, met à disposition une base de données PesaBay présentée comme complète et contenant 1 850 enregistrements. Les champs publiés comprennent le prénom, le nom, l'adresse e-mail, le numéro de téléphone et le statut du compte. La présence de nombreux numéros utilisant l'indicatif burundais `+257`, combinée à l'identité visuelle de PesaBay et à la structure cohérente des enregistrements, étaye avec une confiance moyenne l'attribution du jeu de données à la plateforme. AFRINTEL classe donc le cas `Data Fully Published`. Cette qualification décrit la publication du jeu annoncé comme complet ; elle ne confirme pas indépendamment la méthode d'acquisition, l'intrusion initiale, l'unicité des lignes ni la couverture de l'ensemble de la base de production de PesaBay. Les données de contact publiées présentent un risque de phishing ciblé, de fraude, de spam et d'usurpation d'identité numérique, correspondant à un impact de niveau 2. Aucun nom, e-mail, numéro de téléphone ni autre donnée personnelle brute n'est reproduit.
+
 ---
 [Rapport de Juillet 2025](./report/README_FR.md)
 ---

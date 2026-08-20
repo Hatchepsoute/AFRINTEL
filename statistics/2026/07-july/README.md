@@ -32,7 +32,7 @@ Claimed volumes are not treated as confirmed facts. Personal data, credentials a
 | Most represented countries | Egypt and Tunisia, 7 each |
 | Main ransomware country | South Africa, 5 |
 | Main leak and access country | Tunisia, 7 |
-| Status profile | 21 unverified; 20 sample published; 1 fully published |
+| Status profile | 21 unverified; 20 sample published; 1 complete publication claimed (`Data Fully Published`) |
 | Confidence profile | 22 Low; 8 Medium; 9 High; 3 Very High |
 | Impact profile | 12 Level 2; 21 Level 3; 9 Level 4 |
 

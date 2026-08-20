@@ -21,6 +21,10 @@ Octobre 2024 enregistre **12 victimes** documentées dans 8 pays. L'Afrique du S
 - 🔹 **Pays touchés** : Afrique du Sud (4), Algérie (2), Madagascar (1), Ghana (1), Libye (1), Égypte (1), Maroc (1), Nigeria (1)
 - 🔹 **Secteurs** : Éducation (3), Conseil IT, Tech/Mobilité, Mines/Industrie (2), Énergie, Gouvernement (2), Juridique, Santé
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **4 fiches** (33.3% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

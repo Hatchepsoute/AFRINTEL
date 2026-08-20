@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -43,8 +43,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--e32d36d5-4d31-53d4-b42f-f9dd5798ea4d",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "NullSec Nigeria (alias \"voss\", forum account NullsecNg), post published on the DarkForums cybercriminal forum",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -60,12 +60,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ]
     },
@@ -73,16 +73,15 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--ac666a10-88ed-5f2b-ac5d-2c9a9050a9c1",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "South African Reserve Bank (SARB)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Government / Central Banking / Financial Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Gouvernement / Banque centrale / Services financiers.",
       "labels": [
         "afrintel",
         "victim",
-        "south-africa",
-        "government"
+        "south-africa"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -90,27 +89,28 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Government / Central Banking / Financial Services",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
-      "sectors": [
-        "government"
-      ]
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "South African Reserve Bank (SARB)",
+      "x_afrintel_sector_raw": "Gouvernement / Banque centrale / Services financiers",
+      "x_afrintel_sector_raw_en": "Government / Central Banking / Financial Services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md"
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--6dc8badb-10e9-5379-bf0a-057b714c913e",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL August 2026 incident 01: South African Reserve Bank (SARB)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting South African Reserve Bank (SARB) in South Africa on 01 August 2026. The source actor is listed as NullSec Nigeria (alias \"voss\", forum account NullsecNg), post published on the DarkForums cybercriminal forum. Status: Claim - Unverified. Sector: Government / Central Banking / Financial Services. Source summary: The South African Reserve Bank (SARB) is South Africa's central bank, responsible for monetary policy, currency issuance and the stability of the national financial system.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant South African Reserve Bank (SARB) en Afrique du Sud, à la date du 01 août 2026. L'acteur source est indiqué comme NullSec Nigeria (alias « voss », compte de forum NullsecNg), publication sur le forum cybercriminel DarkForums. Statut : Claim - Unverified. Secteur : Gouvernement / Banque centrale / Services financiers. Résumé de la source : La South African Reserve Bank (SARB) est la banque centrale d'Afrique du Sud, responsable de la politique monétaire, de l'émission de la monnaie et de la stabilité du système financier national.",
       "first_seen": "2026-08-01T00:00:00Z",
@@ -119,8 +119,7 @@
         "africa",
         "claim-unverified",
         "data-leak",
-        "south-africa",
-        "government"
+        "south-africa"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -128,29 +127,36 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_opencti_incident_type": "data-leak",
       "x_afrintel_incident_index": 1,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Government / Central Banking / Financial Services",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Gouvernement / Banque centrale / Services financiers",
+      "x_afrintel_sector_raw_en": "Government / Central Banking / Financial Services",
       "x_afrintel_actor": "NullSec Nigeria (alias \"voss\", forum account NullsecNg), post published on the DarkForums cybercriminal forum",
-      "x_afrintel_date_display": "01 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "NullSec Nigeria (alias « voss », compte de forum NullsecNg), publication sur le forum cybercriminel DarkForums",
+      "x_afrintel_date_display": "01 août 2026",
+      "x_afrintel_date_display_en": "01 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 4"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--35e9500e-73a3-593c-93a8-3383eb7b691a",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--6dc8badb-10e9-5379-bf0a-057b714c913e",
       "target_ref": "threat-actor--e32d36d5-4d31-53d4-b42f-f9dd5798ea4d",
@@ -163,8 +169,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--6d6e40e8-5bc5-5365-af38-4bd906396ede",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--e32d36d5-4d31-53d4-b42f-f9dd5798ea4d",
       "target_ref": "identity--ac666a10-88ed-5f2b-ac5d-2c9a9050a9c1",
@@ -177,8 +183,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--1658bb14-775c-5a6f-88f5-f0fc57c75609",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "incident--6dc8badb-10e9-5379-bf0a-057b714c913e",
       "target_ref": "identity--ac666a10-88ed-5f2b-ac5d-2c9a9050a9c1",
@@ -191,8 +197,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "Florence, post published on a cybercriminal forum",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -208,12 +214,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ]
     },
@@ -221,8 +227,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--e1659e0c-ac5a-54ad-a7fb-d4319efee819",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "Ministry of Commerce",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Government / Public administration / Commerce.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Gouvernement / Administration publique / Commerce.",
@@ -238,17 +244,21 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_afrintel_country": "Algeria",
-      "x_afrintel_sector_raw": "Government / Public administration / Commerce",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_country_fr": "Algérie",
+      "x_afrintel_organization_fr": "Ministère du Commerce",
+      "x_afrintel_sector_raw": "Gouvernement / Administration publique / Commerce",
+      "x_afrintel_sector_raw_en": "Government / Public administration / Commerce",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
       "sectors": [
         "government"
       ]
@@ -257,8 +267,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--6692e749-c361-5130-b316-3f810b4b1b0f",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL August 2026 incident 02: Ministry of Commerce",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed access sale affecting Ministry of Commerce in Algeria on 05 August 2026. The source actor is listed as Florence, post published on a cybercriminal forum. Status: Claim - Unverified. Sector: Government / Public administration / Commerce. Source summary: The Algerian Ministry of Commerce is the public administration responsible for national commerce policy, market regulation and related administrative services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type vente d'accès concernant Ministère du Commerce en Algérie, à la date du 05 août 2026. L'acteur source est indiqué comme Florence, publication sur un forum cybercriminel. Statut : Claim - Unverified. Secteur : Gouvernement / Administration publique / Commerce. Résumé de la source : Le ministère algérien du Commerce est l’administration publique chargée de la politique commerciale nationale, de la régulation des marchés et des services administratifs associés.",
       "first_seen": "2026-08-05T00:00:00Z",
@@ -276,29 +286,36 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_opencti_incident_type": "access-sale",
       "x_afrintel_incident_index": 2,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Algeria",
-      "x_afrintel_sector_raw": "Government / Public administration / Commerce",
+      "x_afrintel_country_fr": "Algérie",
+      "x_afrintel_sector_raw": "Gouvernement / Administration publique / Commerce",
+      "x_afrintel_sector_raw_en": "Government / Public administration / Commerce",
       "x_afrintel_actor": "Florence, post published on a cybercriminal forum",
-      "x_afrintel_date_display": "05 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "Florence, publication sur un forum cybercriminel",
+      "x_afrintel_date_display": "05 août 2026",
+      "x_afrintel_date_display_en": "05 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 4"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--0bc3c544-e59b-5418-9198-edcd5bbe18e1",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--6692e749-c361-5130-b316-3f810b4b1b0f",
       "target_ref": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
@@ -311,8 +328,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--57b21e2e-16e6-5818-a4c0-86f7d60cfb3a",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
       "target_ref": "identity--e1659e0c-ac5a-54ad-a7fb-d4319efee819",
@@ -325,8 +342,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--d59be69c-69c1-5202-a452-95f5ddcd4bd0",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "incident--6692e749-c361-5130-b316-3f810b4b1b0f",
       "target_ref": "identity--e1659e0c-ac5a-54ad-a7fb-d4319efee819",
@@ -339,8 +356,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -356,12 +373,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ]
     },
@@ -369,11 +386,11 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--4fd9e8c4-5c17-5f45-8534-511a17a71c11",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "Unidentified PAYGO device financing platform (Angaza-based)",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Kenya. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Kenya. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail.",
       "labels": [
         "afrintel",
         "victim",
@@ -386,17 +403,21 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_afrintel_country": "Kenya",
-      "x_afrintel_sector_raw": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_organization_fr": "Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza)",
+      "x_afrintel_sector_raw": "Services financiers / Financement d'appareils PAYGO / Commerce de détail",
+      "x_afrintel_sector_raw_en": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
       "sectors": [
         "financial-services"
       ]
@@ -405,10 +426,10 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--87184b5e-7c83-58dd-8436-af8837d4c4a6",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL August 2026 incident 03: Unidentified PAYGO device financing platform (Angaza-based)",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Unidentified PAYGO device financing platform (Angaza-based) in Kenya on 08 August 2026. The source actor is listed as OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket. Status: Data Fully Published. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail. Source summary: The reviewed material describes Kenyan operations of an unidentified pay-as-you-go (PAYGO) consumer device financing platform built on the Angaza SaaS system, used to sell branded smartphones (Tecno Spark and Tecno Pop models observed) on installment plans through local field agents. The same archive reportedly contains data for parallel operations in at least a dozen additional markets across Africa and Asia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza) en Kenya, à la date du 08 août 2026. L'acteur source est indiqué comme OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement. Statut : Data Fully Published. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail. Résumé de la source : Les éléments examinés décrivent les opérations kényanes d'une plateforme non identifiée de financement d'appareils en paiement échelonné (PAYGO), construite sur le système SaaS Angaza, utilisée pour vendre des smartphones de marque (modèles Tecno Spark et Tecno Pop observés) à crédit via des agents de terrain locaux. La même archive contiendrait des données pour des opérations parallèles dans au moins une douzaine de marchés supplémentaires en Afrique et en Asie.",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Unidentified PAYGO device financing platform (Angaza-based) in Kenya on 08 August 2026. The source actor is listed as OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket. Status: Data Fully Published. Sector: Financial Services / Consumer Device Financing (PAYGO) / Retail. Source summary: The reviewed material describes Kenyan operations of an unidentified pay-as-you-go (PAYGO) consumer device financing platform built on the Angaza SaaS system, used to sell branded smartphones (Tecno Spark and Tecno Pop models observed) on installment plans through local field agents. The same archive reportedly contains data for parallel operations in at least a dozen additional markets across Africa and Asia.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza) au Kenya, à la date du 08 août 2026. L'acteur source est indiqué comme OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement. Statut : Data Fully Published. Secteur : Services financiers / Financement d'appareils PAYGO / Commerce de détail. Résumé de la source : Les éléments examinés décrivent les opérations kényanes d'une plateforme non identifiée de financement d'appareils en paiement échelonné (PAYGO), construite sur le système SaaS Angaza, utilisée pour vendre des smartphones de marque (modèles Tecno Spark et Tecno Pop observés) à crédit via des agents de terrain locaux. La même archive contiendrait des données pour des opérations parallèles dans au moins une douzaine de marchés supplémentaires en Afrique et en Asie.",
       "first_seen": "2026-08-08T00:00:00Z",
       "labels": [
         "afrintel",
@@ -424,29 +445,36 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_opencti_incident_type": "data-leak",
       "x_afrintel_incident_index": 3,
       "x_afrintel_status": "Data Fully Published",
       "x_afrintel_country": "Kenya",
-      "x_afrintel_sector_raw": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_sector_raw": "Services financiers / Financement d'appareils PAYGO / Commerce de détail",
+      "x_afrintel_sector_raw_en": "Financial Services / Consumer Device Financing (PAYGO) / Retail",
       "x_afrintel_actor": "OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket",
-      "x_afrintel_date_display": "08 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement",
+      "x_afrintel_date_display": "08 août 2026",
+      "x_afrintel_date_display_en": "08 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--0403bedf-2653-535f-aa64-ed4b6366aa78",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--87184b5e-7c83-58dd-8436-af8837d4c4a6",
       "target_ref": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
@@ -459,8 +487,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--6e9a0650-b8f4-5ab1-b98b-ea2d02494b6e",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
       "target_ref": "identity--4fd9e8c4-5c17-5f45-8534-511a17a71c11",
@@ -473,8 +501,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--8e60494b-451f-51ba-ad30-86433660434c",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "incident--87184b5e-7c83-58dd-8436-af8837d4c4a6",
       "target_ref": "identity--4fd9e8c4-5c17-5f45-8534-511a17a71c11",
@@ -487,8 +515,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -504,12 +532,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ]
     },
@@ -517,16 +545,15 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--0b77cd16-b7fe-53a4-a304-57b6064f56e1",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "mpowa.mobi (Youth Services Platform)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Youth Development / Employment Services (Government-adjacent).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Développement de la jeunesse / Services à l'emploi (proche du gouvernement).",
       "labels": [
         "afrintel",
         "victim",
-        "south-africa",
-        "government"
+        "south-africa"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -534,27 +561,28 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Youth Development / Employment Services (Government-adjacent)",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
-      "sectors": [
-        "government"
-      ]
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "mpowa.mobi (Plateforme de services jeunesse)",
+      "x_afrintel_sector_raw": "Développement de la jeunesse / Services à l'emploi (proche du gouvernement)",
+      "x_afrintel_sector_raw_en": "Youth Development / Employment Services (Government-adjacent)",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md"
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--a29cf222-a2b3-5c0a-b6c1-9b3400c06dc1",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL August 2026 incident 04: mpowa.mobi (Youth Services Platform)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting mpowa.mobi (Youth Services Platform) in South Africa on 08 August 2026. The source actor is listed as exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool. Status: Data Fully Published. Sector: Youth Development / Employment Services (Government-adjacent). Source summary: mpowa.mobi is a South African government-adjacent youth development and employment platform connecting young jobseekers with opportunities and support services, reportedly developed as part of a Code for South Africa-linked initiative.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant mpowa.mobi (Plateforme de services jeunesse) en Afrique du Sud, à la date du 08 août 2026. L'acteur source est indiqué comme exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse. Statut : Data Fully Published. Secteur : Développement de la jeunesse / Services à l'emploi (proche du gouvernement). Résumé de la source : mpowa.mobi est une plateforme sud-africaine de développement de la jeunesse et d'aide à l'emploi, proche des dispositifs publics, mettant en relation de jeunes demandeurs d'emploi avec des opportunités et des services d'accompagnement, développée dans le cadre d'une initiative liée à Code for South Africa.",
       "first_seen": "2026-08-08T00:00:00Z",
@@ -563,8 +591,7 @@
         "africa",
         "data-leak",
         "data-fully-published",
-        "south-africa",
-        "government"
+        "south-africa"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -572,29 +599,36 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ],
       "x_opencti_incident_type": "data-leak",
       "x_afrintel_incident_index": 4,
       "x_afrintel_status": "Data Fully Published",
       "x_afrintel_country": "South Africa",
-      "x_afrintel_sector_raw": "Youth Development / Employment Services (Government-adjacent)",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Développement de la jeunesse / Services à l'emploi (proche du gouvernement)",
+      "x_afrintel_sector_raw_en": "Youth Development / Employment Services (Government-adjacent)",
       "x_afrintel_actor": "exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool",
-      "x_afrintel_date_display": "08 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse",
+      "x_afrintel_date_display": "08 août 2026",
+      "x_afrintel_date_display_en": "08 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 4"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--3b76ad5b-f8d2-5e87-b4cd-f211379d52df",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--a29cf222-a2b3-5c0a-b6c1-9b3400c06dc1",
       "target_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
@@ -607,8 +641,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--a25dd6ae-9605-5f17-aa2b-fe88dd173e0a",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
       "target_ref": "identity--0b77cd16-b7fe-53a4-a304-57b6064f56e1",
@@ -621,8 +655,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--b385aa03-69ce-5c81-b97a-ab0d5d23dcf3",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "incident--a29cf222-a2b3-5c0a-b6c1-9b3400c06dc1",
       "target_ref": "identity--0b77cd16-b7fe-53a4-a304-57b6064f56e1",
@@ -632,14 +666,360 @@
       ]
     },
     {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--1218c9b3-d2de-5a0f-87e6-5bd01cc4e427",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "Panzer",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "08-august"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        }
+      ]
+    },
+    {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--b82cdf96-98f5-5e6c-8778-a7cfa822818a",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "identity--78d82875-f928-5505-b382-c63e03876607",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "Daily Trust",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Media / Publishing / Broadcasting.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Nigeria. Secteur : Médias / Édition / Audiovisuel.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "nigeria"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://dailytrust.com"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigeria",
+      "x_afrintel_organization_fr": "Daily Trust",
+      "x_afrintel_sector_raw": "Médias / Édition / Audiovisuel",
+      "x_afrintel_sector_raw_en": "Media / Publishing / Broadcasting",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--822d8f62-06c2-50e9-9dee-aeff0c2e9d97",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "AFRINTEL August 2026 incident 05: Daily Trust",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Daily Trust in Nigeria on 08 August 2026. The source actor is listed as Panzer. Status: Claim - Data Sample Published. Sector: Media / Publishing / Broadcasting. Source summary: Daily Trust is a Nigerian news and publishing organisation operated by Media Trust Limited. Its services include print and online journalism, Trust TV and Trust Radio.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Daily Trust au Nigeria, à la date du 08 août 2026. L'acteur source est indiqué comme Panzer. Statut : Claim - Data Sample Published. Secteur : Médias / Édition / Audiovisuel. Résumé de la source : Daily Trust est une organisation nigériane d'information et d'édition exploitée par Media Trust Limited. Ses services comprennent le journalisme imprimé et en ligne, Trust TV et Trust Radio.",
+      "first_seen": "2026-08-08T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "nigeria"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://dailytrust.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 5,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigeria",
+      "x_afrintel_sector_raw": "Médias / Édition / Audiovisuel",
+      "x_afrintel_sector_raw_en": "Media / Publishing / Broadcasting",
+      "x_afrintel_actor": "Panzer",
+      "x_afrintel_actor_fr": "Panzer",
+      "x_afrintel_date_display": "08 août 2026",
+      "x_afrintel_date_display_en": "08 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-08-08T19:21:01",
+      "x_afrintel_listing_last_observed_at": "2026-08-11T01:56:25+01:00",
+      "x_afrintel_sample_status": "sample-reviewed",
+      "x_afrintel_deadline_status": "active",
+      "x_afrintel_disclosure_status": "not-observed",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-08-20T01:35:32+01:00"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1851350b-ecaa-5ee5-b996-c91426eaf142",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--822d8f62-06c2-50e9-9dee-aeff0c2e9d97",
+      "target_ref": "threat-actor--1218c9b3-d2de-5a0f-87e6-5bd01cc4e427",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--13e3b555-7568-56d4-acae-68b7be8e1431",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--1218c9b3-d2de-5a0f-87e6-5bd01cc4e427",
+      "target_ref": "identity--78d82875-f928-5505-b382-c63e03876607",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f78d0014-29f8-567c-9191-bf12a7104af3",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--822d8f62-06c2-50e9-9dee-aeff0c2e9d97",
+      "target_ref": "identity--78d82875-f928-5505-b382-c63e03876607",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--e3e81626-9b54-5340-8fcc-debb9c8be39d",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "medusalocker",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "08-august"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--23ec828b-b360-5dd7-85f1-461041f07d06",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "The Courier Guy",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Logistics / Courier Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Logistique / Services de courrier.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://thecourierguy.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "The Courier Guy",
+      "x_afrintel_sector_raw": "Logistique / Services de courrier",
+      "x_afrintel_sector_raw_en": "Logistics / Courier Services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--c21aade7-c67f-5b70-ad0e-98b23cb71b61",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "AFRINTEL August 2026 incident 06: The Courier Guy",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting The Courier Guy in South Africa on 16 August 2026. The source actor is listed as medusalocker. Status: Claim - Unverified. Sector: Logistics / Courier Services. Source summary: The Courier Guy is a South African courier and logistics organisation. An observed source record attributes a ransomware-related entry concerning thecourierguy.co.za to medusalocker.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant The Courier Guy en Afrique du Sud, à la date du 16 août 2026. L'acteur source est indiqué comme medusalocker. Statut : Claim - Unverified. Secteur : Logistique / Services de courrier. Résumé de la source : The Courier Guy est une organisation sud-africaine de courrier et de logistique. Un enregistrement source observé attribue à medusalocker une entrée liée à un ransomware concernant thecourierguy.co.za.",
+      "first_seen": "2026-08-16T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "ransomware",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://thecourierguy.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Logistique / Services de courrier",
+      "x_afrintel_sector_raw_en": "Logistics / Courier Services",
+      "x_afrintel_actor": "medusalocker",
+      "x_afrintel_actor_fr": "medusalocker",
+      "x_afrintel_date_display": "16 août 2026",
+      "x_afrintel_date_display_en": "16 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 2",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-08-16T15:19:49",
+      "x_afrintel_listing_last_observed_at": "2026-08-19T05:35:53+01:00",
+      "x_afrintel_sample_status": "none-observed",
+      "x_afrintel_deadline_status": "not-stated",
+      "x_afrintel_disclosure_status": "not-observed",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-08-19T05:35:53+01:00"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--373a994f-cc7e-5960-b41e-a98417b755c9",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--c21aade7-c67f-5b70-ad0e-98b23cb71b61",
+      "target_ref": "threat-actor--e3e81626-9b54-5340-8fcc-debb9c8be39d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--852b1c37-f801-5f20-b58c-0fec60d736d3",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--e3e81626-9b54-5340-8fcc-debb9c8be39d",
+      "target_ref": "identity--23ec828b-b360-5dd7-85f1-461041f07d06",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--12f2a812-df0b-58ef-b9e3-7605a4f10a37",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--c21aade7-c67f-5b70-ad0e-98b23cb71b61",
+      "target_ref": "identity--23ec828b-b360-5dd7-85f1-461041f07d06",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f115d499-2d38-58d9-9594-f7f97ebbb907",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "SnapStar Talent (snapstartalent.com)",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Human Resources / Recruitment.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Kenya. Secteur : Ressources humaines / Recrutement.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Human Resources / Recruitment.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Kenya. Secteur : Ressources humaines / Recrutement.",
       "labels": [
         "afrintel",
         "victim",
@@ -652,12 +1032,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         },
         {
           "source_name": "website",
@@ -665,8 +1045,12 @@
         }
       ],
       "x_afrintel_country": "Kenya",
-      "x_afrintel_sector_raw": "Human Resources / Recruitment",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_organization_fr": "SnapStar Talent (snapstartalent.com)",
+      "x_afrintel_sector_raw": "Ressources humaines / Recrutement",
+      "x_afrintel_sector_raw_en": "Human Resources / Recruitment",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
       "sectors": [
         "commercial"
       ]
@@ -674,11 +1058,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--91be85c6-05b1-5c8c-b680-099885371c68",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
-      "name": "AFRINTEL August 2026 incident 05: SnapStar Talent (snapstartalent.com)",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting SnapStar Talent (snapstartalent.com) in Kenya on 17 August 2026. The source actor is listed as exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool. Status: Claim - Data Sample Published. Sector: Human Resources / Recruitment. Source summary: SnapStar Talent is presented in the observed publication as a Kenyan recruitment platform holding candidate profiles, job applications and employer-tenant records.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant SnapStar Talent (snapstartalent.com) en Kenya, à la date du 17 août 2026. L'acteur source est indiqué comme exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse. Statut : Claim - Data Sample Published. Secteur : Ressources humaines / Recrutement. Résumé de la source : SnapStar Talent est présentée dans la publication observée comme une plateforme kényane de recrutement détenant des profils de candidats, des dossiers de candidature et des enregistrements relatifs aux entreprises clientes.",
+      "id": "incident--c8858b39-db53-565e-8f8e-2920cb2c62f7",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "AFRINTEL August 2026 incident 07: SnapStar Talent (snapstartalent.com)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting SnapStar Talent (snapstartalent.com) in Kenya on 17 August 2026. The source actor is listed as exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool. Status: Claim - Data Sample Published. Sector: Human Resources / Recruitment. Source summary: SnapStar Talent is presented in the observed publication as a Kenyan recruitment platform holding candidate profiles, job applications and employer-tenant records.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant SnapStar Talent (snapstartalent.com) au Kenya, à la date du 17 août 2026. L'acteur source est indiqué comme exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse. Statut : Claim - Data Sample Published. Secteur : Ressources humaines / Recrutement. Résumé de la source : SnapStar Talent est présentée dans la publication observée comme une plateforme kényane de recrutement détenant des profils de candidats, des dossiers de candidature et des enregistrements relatifs aux entreprises clientes.",
       "first_seen": "2026-08-17T00:00:00Z",
       "labels": [
         "afrintel",
@@ -694,12 +1078,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         },
         {
           "source_name": "website",
@@ -707,22 +1091,29 @@
         }
       ],
       "x_opencti_incident_type": "data-leak",
-      "x_afrintel_incident_index": 5,
+      "x_afrintel_incident_index": 7,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Kenya",
-      "x_afrintel_sector_raw": "Human Resources / Recruitment",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_sector_raw": "Ressources humaines / Recrutement",
+      "x_afrintel_sector_raw_en": "Human Resources / Recruitment",
       "x_afrintel_actor": "exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool",
-      "x_afrintel_date_display": "17 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse",
+      "x_afrintel_date_display": "17 août 2026",
+      "x_afrintel_date_display_en": "17 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--1851350b-ecaa-5ee5-b996-c91426eaf142",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--04dc55dc-2b51-5305-8625-28a023b12863",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--91be85c6-05b1-5c8c-b680-099885371c68",
+      "source_ref": "incident--c8858b39-db53-565e-8f8e-2920cb2c62f7",
       "target_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -732,12 +1123,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--13e3b555-7568-56d4-acae-68b7be8e1431",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--97a58181-8d01-5691-b624-123d7ae877e3",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
-      "target_ref": "identity--b82cdf96-98f5-5e6c-8778-a7cfa822818a",
+      "target_ref": "identity--f115d499-2d38-58d9-9594-f7f97ebbb907",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -746,12 +1137,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--f78d0014-29f8-567c-9191-bf12a7104af3",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--87f6d5ab-d732-5648-8940-71f4ebfd2dd9",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
-      "source_ref": "incident--91be85c6-05b1-5c8c-b680-099885371c68",
-      "target_ref": "identity--b82cdf96-98f5-5e6c-8778-a7cfa822818a",
+      "source_ref": "incident--c8858b39-db53-565e-8f8e-2920cb2c62f7",
+      "target_ref": "identity--f115d499-2d38-58d9-9594-f7f97ebbb907",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -761,8 +1152,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--e42868a7-86a6-59b8-8db2-01b023c20468",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "incransom",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 08-august 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -778,24 +1169,24 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         }
       ]
     },
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--2a8b7da5-ebd7-5ef3-bc0a-26c4e4420365",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "identity--20a12314-36d5-5065-84d1-0181667fe363",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "SpearFin Ltd",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mauritius. Sector: Financial Services / Fund Administration / Corporate Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maurice. Secteur : Services financiers / Administration de fonds / Services aux entreprises.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mauritius. Sector: Financial Services / Fund Administration / Corporate Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL à Maurice. Secteur : Services financiers / Administration de fonds / Services aux entreprises.",
       "labels": [
         "afrintel",
         "victim",
@@ -808,12 +1199,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         },
         {
           "source_name": "website",
@@ -821,8 +1212,12 @@
         }
       ],
       "x_afrintel_country": "Mauritius",
-      "x_afrintel_sector_raw": "Financial Services / Fund Administration / Corporate Services",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_country_fr": "Maurice",
+      "x_afrintel_organization_fr": "SpearFin Ltd",
+      "x_afrintel_sector_raw": "Services financiers / Administration de fonds / Services aux entreprises",
+      "x_afrintel_sector_raw_en": "Financial Services / Fund Administration / Corporate Services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
       "sectors": [
         "financial-services"
       ]
@@ -830,11 +1225,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--45e4417f-fe73-5c55-a1a7-a381bc00d06f",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
-      "name": "AFRINTEL August 2026 incident 06: SpearFin Ltd",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting SpearFin Ltd in Mauritius on 18 August 2026. The source actor is listed as incransom. Status: Claim - Data Sample Published. Sector: Financial Services / Fund Administration / Corporate Services. Source summary: SpearFin Ltd is presented in the observed publication as a Mauritius-based provider of fund-administration, corporate, compliance and investor-relations services. The source also claims USD 10 billion in assets under administration and USD 30 million in revenue; those figures have not been independently verified.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant SpearFin Ltd en Maurice, à la date du 18 août 2026. L'acteur source est indiqué comme incransom. Statut : Claim - Data Sample Published. Secteur : Services financiers / Administration de fonds / Services aux entreprises. Résumé de la source : SpearFin Ltd est présentée dans la publication observée comme un prestataire mauricien de services d'administration de fonds, de services aux entreprises, de conformité et de relations investisseurs. La source revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires ; AFRINTEL n'a pas vérifié ces chiffres indépendamment.",
+      "id": "incident--2b5011a6-1545-5406-ac77-3ebd3ff79bae",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
+      "name": "AFRINTEL August 2026 incident 08: SpearFin Ltd",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting SpearFin Ltd in Mauritius on 18 August 2026. The source actor is listed as incransom. Status: Claim - Data Sample Published. Sector: Financial Services / Fund Administration / Corporate Services. Source summary: SpearFin Ltd is presented in the observed publication as a Mauritius-based provider of fund-administration, corporate, compliance and investor-relations services. The source also claims USD 10 billion in assets under administration and USD 30 million in revenue; those figures have not been independently verified.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant SpearFin Ltd à Maurice, à la date du 18 août 2026. L'acteur source est indiqué comme incransom. Statut : Claim - Data Sample Published. Secteur : Services financiers / Administration de fonds / Services aux entreprises. Résumé de la source : SpearFin Ltd est présentée dans la publication observée comme un prestataire mauricien de services d'administration de fonds, de services aux entreprises, de conformité et de relations investisseurs. La source revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires ; AFRINTEL n'a pas vérifié ces chiffres indépendamment.",
       "first_seen": "2026-08-18T00:00:00Z",
       "labels": [
         "afrintel",
@@ -850,12 +1245,12 @@
       ],
       "external_references": [
         {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
-        },
-        {
           "source_name": "AFRINTEL victims_FR.md",
           "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/08-august/victims.md"
         },
         {
           "source_name": "website",
@@ -863,22 +1258,40 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 6,
+      "x_afrintel_incident_index": 8,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Mauritius",
-      "x_afrintel_sector_raw": "Financial Services / Fund Administration / Corporate Services",
+      "x_afrintel_country_fr": "Maurice",
+      "x_afrintel_sector_raw": "Services financiers / Administration de fonds / Services aux entreprises",
+      "x_afrintel_sector_raw_en": "Financial Services / Fund Administration / Corporate Services",
       "x_afrintel_actor": "incransom",
-      "x_afrintel_date_display": "18 August 2026",
-      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims.md"
+      "x_afrintel_actor_fr": "incransom",
+      "x_afrintel_date_display": "18 août 2026",
+      "x_afrintel_date_display_en": "18 August 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/08-august/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-08-18T09:35:00",
+      "x_afrintel_listing_last_observed_at": "2026-08-18T21:15:30+01:00",
+      "x_afrintel_sample_status": "preview-visible",
+      "x_afrintel_deadline_status": "not-stated",
+      "x_afrintel_disclosure_status": "not-observed",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-08-19T06:02:04+01:00"
     },
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--373a994f-cc7e-5960-b41e-a98417b755c9",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--1137d344-48f9-5ca9-ac37-422f573d0698",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--45e4417f-fe73-5c55-a1a7-a381bc00d06f",
+      "source_ref": "incident--2b5011a6-1545-5406-ac77-3ebd3ff79bae",
       "target_ref": "threat-actor--e42868a7-86a6-59b8-8db2-01b023c20468",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -888,12 +1301,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--852b1c37-f801-5f20-b58c-0fec60d736d3",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--d8e7b3d6-2098-5dbc-83fb-37f6604964a4",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--e42868a7-86a6-59b8-8db2-01b023c20468",
-      "target_ref": "identity--2a8b7da5-ebd7-5ef3-bc0a-26c4e4420365",
+      "target_ref": "identity--20a12314-36d5-5065-84d1-0181667fe363",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -902,12 +1315,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--12f2a812-df0b-58ef-b9e3-7605a4f10a37",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "id": "relationship--0f435b9d-9b51-5a85-bef3-5ca84027ca41",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "relationship_type": "targets",
-      "source_ref": "incident--45e4417f-fe73-5c55-a1a7-a381bc00d06f",
-      "target_ref": "identity--2a8b7da5-ebd7-5ef3-bc0a-26c4e4420365",
+      "source_ref": "incident--2b5011a6-1545-5406-ac77-3ebd3ff79bae",
+      "target_ref": "identity--20a12314-36d5-5065-84d1-0181667fe363",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -917,10 +1330,10 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--e5132519-c7bf-5b0e-b7c8-f19ae59b73b1",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "AFRINTEL monthly CTI report - August 2026",
-      "description": "# CTI Report - Cyberattacks in Africa (August 2026)\n\n## 1. Executive summary\n\nAFRINTEL recorded **6 incidents** involving African entities in August 2026: **1 ransomware publication**, **4 data leaks** and **1 access sale**. Kenya and South Africa each account for two incidents; Algeria and Mauritius account for one each. No defacement was recorded.\n\n- **6 incidents** across **4 countries** and **5 observed actors / sources**.\n- **1 Ransomware (16.7%)**, **4 Data Leaks (66.7%)** and **1 Access Sale (16.7%)**.\n- Finance / Banking accounts for **3 incidents (50.0%)**, Government / Administration for **2 (33.3%)**, and Human Resources / Recruitment for **1 (16.7%)**.\n- The most consequential observations concern visible identity, KYC, corporate and financial document samples in the SpearFin ransomware publication, the alleged large-scale exposure of Kenyan recruitment records, and exposed youth CVs and API-key entries in South Africa.\n- The Ministry of Commerce access sale and the South African Reserve Bank data-leak publication remain claims without independent confirmation.\n\n### Victim list\n\n## 2. Methodology\n\n- **Scope:** 54 African countries.\n- **Period:** 1-31 August 2026, based on AFRINTEL detection/publication records in `victims.md`.\n- **Sources:** OSINT, underground forums and publicly exposed cloud/database material described in the source file.\n- **Inclusion:** African victim, operation or data exposure with an identifiable country and organization/context.\n- **Typology:** Ransomware, Data Leak, Access Sale and Defacement. A publication is not treated as confirmation unless the available evidence supports that assessment.\n- `victims.md` is the single source of truth for all counts in this report.\n\n## 3. Global overview\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 6 |\n| Countries affected | 4 |\n| Observed actors / sources | 5 |\n| Ransomware | 1 (16.7%) |\n| Data Leaks | 4 (66.7%) |\n| Access Sales | 1 (16.7%) |\n| Defacement | 0 (0.0%) |\n\n### Country ranking\n\n| Country | Incidents | Distribution |\n|---|---:|---|\n| 🇰🇪 Kenya | 2 | ███ 33.3% |\n| 🇿🇦 South Africa | 2 | ███ 33.3% |\n| 🇩🇿 Algeria | 1 | ██ 16.7% |\n| 🇲🇺 Mauritius | 1 | ██ 16.7% |\n\n```pie\ntitle Incidents by country - August 2026\n\"Kenya\" : 2\n\"South Africa\" : 2\n\"Algeria\" : 1\n\"Mauritius\" : 1\n```\n\n### Incident type by country\n\n| Country | Ransomware | Data Leak | Access Sale | Defacement |\n|---|---:|---:|---:|---:|\n| Algeria | 0 | 0 | 1 | 0 |\n| Kenya | 0 | 2 | 0 | 0 |\n| Mauritius | 1 | 0 | 0 | 0 |\n| South Africa | 0 | 2 | 0 | 0 |\n| **Total** | **1** | **4** | **1** | **0** |\n\n🟧 Ransomware | 🟦 Data Leaks | 🟨 Access Sales | 🟥 Defacement\n\n### Regional distribution\n\n| Region | Incidents |\n|---|---:|\n| East Africa | 3 |\n| Southern Africa | 2 |\n| North Africa | 1 |\n\n### Sector distribution\n\n| Sector | Incidents | Share |\n|---|---:|---:|\n| Finance / Banking | 3 | 50.0% |\n| Government / Administration | 2 | 33.3% |\n| Human Resources / Recruitment | 1 | 16.7% |\n\n```pie\ntitle Incidents by sector - August 2026\n\"Finance / Banking\" : 3\n\"Government / Administration\" : 2\n\"Human Resources / Recruitment\" : 1\n```\n\n### Most prolific actors / sources\n\n| Actor or source | Incident type | Incidents | Targets |\n|---|---|---:|---|\n| exfilar | Data Leak | 2 | SnapStar Talent; mpowa.mobi |\n| Florence | Access Sale | 1 | Ministry of Commerce (Algeria) |\n| incransom | Ransomware | 1 | SpearFin Ltd |\n| NullSec Nigeria | Data Leak | 1 | South African Reserve Bank |\n| OriginalCrazyOldFart | Data Leak | 1 | Unidentified Kenyan PAYGO platform |\n\n## 4. Detailed analysis by incident type\n\n### 4.1 Ransomware\n\nOne ransomware publication was recorded. SpearFin Ltd was listed by incransom with a claimed 416 GB archive and a claimed leak date of 26 June 2026. The supplied screenshots display document thumbnails presented as samples and indicate that full publication was still forthcoming. The underlying files were not reviewed, and the available material does not establish encryption, operational disruption, the claimed volume or independent victim confirmation.\n\n### 4.2 Data leaks and access sales\n\nFour data leaks and one access sale were recorded. The South African entries concern an unverified publication naming the central bank and a separately reviewed exposure involving youth CVs, geolocation records, user accounts and API-key entries. The Kenyan entries concern customer-financing data associated with an unidentified PAYGO operation and a claim offering a large recruitment dataset with identity, application, CV and video-interview records. The Algerian entry is an advertised VPN access sale without independent confirmation.\n\n## 5. Sectoral impact\n\nFinance / Banking represents **3 of 6 incidents (50.0%)**, associated with the Kenyan PAYGO records, the South African central-bank claim and the SpearFin ransomware publication. Government / Administration represents **2 incidents (33.3%)**, covering the Algerian access-sale claim and the South African youth-services exposure. Human Resources / Recruitment represents **1 incident (16.7%)**, the SnapStar Talent data-sale claim.\n\n## 6. Threat actor profile\n\nFive distinct actors or publication sources are recorded. exfilar appears in two data-leak entries across Kenya and South Africa involving allegedly exposed cloud-hosted application data. incransom accounts for the single ransomware publication. These observations do not establish a common intrusion chain or broader campaign relationship.\n\n### 6.1 Risk assessment\n\n| Country | Risk | Rationale |\n|---|---|---|\n| 🇰🇪 Kenya | 🔴 High | Two records involve sensitive financing data and an alleged large-scale recruitment dataset containing identity, CV and video-interview material. |\n| 🇿🇦 South Africa | 🔴 High | The month includes exposed youth records and API-key entries, plus a separate unverified claim naming the central bank. |\n| 🇲🇺 Mauritius | 🔴 High | The SpearFin publication displays samples presented as sensitive identity, KYC, corporate and financial documents; authenticity, completeness and the claimed volume remain unconfirmed. |\n| 🇩🇿 Algeria | 🟠 Medium | Government VPN access was advertised, but the claim and access validity remain unverified. |\n\n## 7. Key trends and intelligence gaps\n\n- Misconfigured cloud databases and storage services remain a material exposure path.\n- Recruitment data combines identity, employment, compensation and recorded-image material, increasing fraud, impersonation and privacy risks.\n- The SpearFin publication illustrates third-party concentration risk in fund administration: one alleged archive may contain records concerning multiple managed entities and investors.\n- exfilar appears in two observed publications involving cloud-hosted application data; the available material does not prove a shared intrusion chain.\n- Intelligence gaps include the exact Kenyan PAYGO operator, the validity and privileges of the Algerian access, the authenticity and completeness of the SnapStar Talent and SpearFin material, the central-bank claim, and whether related production environments remain exposed.\n\n## 8. MITRE ATT&CK mapping (contextual)\n\n| Phase | Technique | Name | Associated observation |\n|---|---|---|---|\n| Initial Access | T1078 | Valid Accounts | Advertised VPN access in the Algerian claim; validity not independently confirmed. |\n| Collection | T1530 | Data from Cloud Storage | Cloud-hosted files are described in the Kenyan PAYGO record and the SnapStar Talent claim. |\n| Collection | T1213.006 | Databases | Customer, application and candidate records were reportedly accessible in database repositories. |\n\nThese are contextual defensive mappings, not proof of the actors' complete intrusion chains. No ATT&CK technique is assigned to the SpearFin entry because the screenshots do not establish the initial-access, collection, exfiltration or encryption method.\n\n## 9. Recommendations\n\n- Government and public-sector organizations: enforce phishing-resistant MFA for VPN, review privileged access and monitor impossible-travel or anomalous VPN activity.\n- Cloud and application teams: deny public reads by default, continuously test Firestore/Firebase/database rules and rotate exposed API keys immediately.\n- Financial and PAYGO operators: minimize exported customer fields, encrypt backups, monitor public object storage and prepare customer-notification procedures.\n- Fund administrators and corporate-service providers: isolate KYC repositories, enforce least privilege, review third-party access and prepare coordinated notification procedures for affected managed entities.\n- Recruitment and HR platforms: segregate identity documents and recorded interviews, shorten signed-URL lifetimes, restrict bulk exports and implement privacy-focused retention controls.\n\n## 10. SOC and tactical recommendations\n\n- Alert on new VPN logins from unusual geographies, new devices or dormant accounts.\n- Monitor cloud audit logs for anonymous reads, bulk exports, unusual enumeration and access to staging or production databases.\n- Detect API-key use from new IP ranges, unexpected user agents or services outside approved workloads.\n- Hunt for bulk access to candidate, customer, CV, photograph and video-interview records, including unusually high signed-URL generation or download volumes.\n- Monitor KYC, document-management and file-share telemetry for unusual bulk reads, archive creation and large outbound transfers, without treating those signals alone as proof of ransomware activity.\n\n## 11. Strategic recommendations\n\nMaintain an inventory of internet-exposed assets and data stores, require security review of staging and production environments, and establish recurring external-exposure assessments for government-adjacent, financial, fund-administration and recruitment platforms. Treat exposed personal, financial and employment data as an incident requiring coordinated legal, privacy and customer- or candidate-protection review.\n\n## 12. Conclusion\n\nAugust 2026 contains **6 recorded incidents**: one ransomware publication, four data-leak entries and one access-sale claim. Although several publications remain unconfirmed, the sensitivity and scale of the claimed identity, employment, financial and government data warrant immediate defensive validation by potentially affected organizations.\n\n- **AFRINTEL**\n[GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)",
+      "description": "# CTI Report - Cyberattacks in Africa (August 2026)\n\n## 1. Executive summary\n\nAFRINTEL recorded **8 incidents** involving African entities in August 2026: **3 ransomware publications**, **4 data leaks** and **1 access sale**. South Africa accounts for three incidents, Kenya for two, and Algeria, Mauritius and Nigeria for one each. No defacement was recorded.\n\n- **8 incidents** across **5 countries** and **7 observed actors / sources**.\n- **3 Ransomware (37.5%)**, **4 Data Leaks (50.0%)** and **1 Access Sale (12.5%)**.\n- Finance / Banking accounts for **3 incidents (37.5%)**, Government / Administration for **2 (25.0%)**, and Human Resources / Recruitment, Logistics / Courier Services and Media / Publishing for **1 each (12.5%)**.\n- The most consequential observations concern Daily Trust account-reset and credential material, the visible contractual, identity, KYC, corporate and financial document samples in the SpearFin ransomware publication, the alleged large-scale exposure of Kenyan recruitment records, and exposed youth CVs and API-key entries in South Africa.\n- The Ministry of Commerce access sale and the South African Reserve Bank data-leak publication remain claims without independent confirmation.\n\n### Victim list\n\n## 2. Methodology\n\n- **Scope:** 54 African countries.\n- **Period:** 1-31 August 2026, based on AFRINTEL detection/publication records in `victims.md`.\n- **Sources:** ransomware data-leak sites, OSINT, underground forums, supplied samples and publicly exposed cloud/database material described in the source file.\n- **Inclusion:** African victim, operation or data exposure with an identifiable country and organization/context.\n- **Typology:** Ransomware, Data Leak, Access Sale and Defacement. A publication is not treated as confirmation unless the available evidence supports that assessment.\n- `victims.md` is the single source of truth for all counts in this report.\n\n## 3. Global overview\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 8 |\n| Countries affected | 5 |\n| Observed actors / sources | 7 |\n| Ransomware | 3 (37.5%) |\n| Data Leaks | 4 (50.0%) |\n| Access Sales | 1 (12.5%) |\n| Defacement | 0 (0.0%) |\n\n### Country ranking\n\n| Country | Incidents | Distribution |\n|---|---:|---|\n| 🇿🇦 South Africa | 3 | ██████ 37.5% |\n| 🇰🇪 Kenya | 2 | ████ 25.0% |\n| 🇩🇿 Algeria | 1 | ██ 12.5% |\n| 🇲🇺 Mauritius | 1 | ██ 12.5% |\n| 🇳🇬 Nigeria | 1 | ██ 12.5% |\n\n```pie\ntitle Incidents by country - August 2026\n\"South Africa\" : 3\n\"Kenya\" : 2\n\"Algeria\" : 1\n\"Mauritius\" : 1\n\"Nigeria\" : 1\n```\n\n### Incident type by country\n\n| Country | Ransomware | Data Leak | Access Sale | Defacement |\n|---|---:|---:|---:|---:|\n| Algeria | 0 | 0 | 1 | 0 |\n| Kenya | 0 | 2 | 0 | 0 |\n| Mauritius | 1 | 0 | 0 | 0 |\n| Nigeria | 1 | 0 | 0 | 0 |\n| South Africa | 1 | 2 | 0 | 0 |\n| **Total** | **3** | **4** | **1** | **0** |\n\n🟧 Ransomware | 🟦 Data Leaks | 🟨 Access Sales | 🟥 Defacement\n\n### Regional distribution\n\n| Region | Incidents |\n|---|---:|\n| East Africa | 3 |\n| Southern Africa | 3 |\n| North Africa | 1 |\n| West Africa | 1 |\n\n### Sector distribution\n\n| Sector | Incidents | Share |\n|---|---:|---:|\n| Finance / Banking | 3 | 37.5% |\n| Government / Administration | 2 | 25.0% |\n| Human Resources / Recruitment | 1 | 12.5% |\n| Logistics / Courier Services | 1 | 12.5% |\n| Media / Publishing | 1 | 12.5% |\n\n```pie\ntitle Incidents by sector - August 2026\n\"Finance / Banking\" : 3\n\"Government / Administration\" : 2\n\"Human Resources / Recruitment\" : 1\n\"Logistics / Courier Services\" : 1\n\"Media / Publishing\" : 1\n```\n\n### Most prolific actors / sources\n\n| Actor or source | Incident type | Incidents | Targets |\n|---|---|---:|---|\n| exfilar | Data Leak | 2 | SnapStar Talent; mpowa.mobi |\n| Florence | Access Sale | 1 | Ministry of Commerce (Algeria) |\n| incransom | Ransomware | 1 | SpearFin Ltd |\n| medusalocker | Ransomware | 1 | The Courier Guy |\n| NullSec Nigeria | Data Leak | 1 | South African Reserve Bank |\n| OriginalCrazyOldFart | Data Leak | 1 | Unidentified Kenyan PAYGO platform |\n| Panzer | Ransomware | 1 | Daily Trust |\n\n## 4. Detailed analysis by incident type\n\n### 4.1 Ransomware\n\nThree separate ransomware publications were recorded. SpearFin Ltd in Mauritius was listed by incransom with a claimed 416 GB archive and a claimed leak date of 26 June 2026. The supplied screenshots display identity, KYC, corporate, administrative and financial document thumbnails presented as samples. One enlarged contractual sample is dated in June 2026, contains a Mauritius registered-office reference, a seven-figure USD capital commitment and fund-related fee and performance clauses. This visual analysis supports a medium-confidence assessment that part of the material is target-specific, but the original files were unavailable and full publication was still announced as forthcoming. Daily Trust in Nigeria was listed by Panzer with a claimed 320 GB volume and an active countdown. AFRINTEL's read-only review of the supplied workbook found 443 primary account-reset records, 438 populated password fields and 444 distinct target-domain addresses across both sheets. This provides high confidence that the sample is target-specific, but it does not establish that the values remain valid, validate the claimed volume or prove how the material was obtained. The Courier Guy in South Africa is a distinct medusalocker entry claiming 2,018 extracted emails while listing published data as “N/D”; no sample, deadline, ransom price or data release is visible. No observed evidence links the three victims or actor publications. None of the cases establishes encryption, operational disruption, complete exfiltration or independent victim confirmation.\n\n### 4.2 Data leaks and access sales\n\nFour data leaks and one access sale were recorded. The South African entries concern an unverified publication naming the central bank and a separately reviewed exposure involving youth CVs, geolocation records, user accounts and API-key entries. The Kenyan entries concern customer-financing data associated with an unidentified PAYGO operation and a claim offering a large recruitment dataset with identity, application, CV and video-interview records. The Algerian entry is an advertised VPN access sale without independent confirmation.\n\n## 5. Sectoral impact\n\nFinance / Banking represents **3 of 8 incidents (37.5%)**, associated with the Kenyan PAYGO records, the South African central-bank claim and the SpearFin ransomware publication. Government / Administration represents **2 incidents (25.0%)**, covering the Algerian access-sale claim and the South African youth-services exposure. Human Resources / Recruitment, Logistics / Courier Services and Media / Publishing each represent **1 incident (12.5%)**, respectively the SnapStar Talent data-sale claim, The Courier Guy ransomware entry and the Daily Trust ransomware publication.\n\n## 6. Threat actor profile\n\nSeven distinct actors or publication sources are recorded. exfilar appears in two data-leak entries across Kenya and South Africa involving allegedly exposed cloud-hosted application data. incransom is associated with the SpearFin publication in Mauritius, Panzer with Daily Trust in Nigeria and medusalocker with The Courier Guy in South Africa. No available evidence links those ransomware cases, their victims or their actor publications. These observations do not establish a common intrusion chain or broader campaign relationship.\n\n### 6.1 Risk assessment\n\n| Country | Risk | Rationale |\n|---|---|---|\n| 🇰🇪 Kenya | 🔴 High | Two records involve sensitive financing data and an alleged large-scale recruitment dataset containing identity, CV and video-interview material. |\n| 🇿🇦 South Africa | 🔴 High | The month includes exposed youth records and API-key entries, an unverified medusalocker claim concerning 2,018 emails at The Courier Guy, and a separate unverified claim naming the central bank. |\n| 🇲🇺 Mauritius | 🔴 High | The SpearFin publication displays a detailed Mauritius-linked contractual sample and thumbnails presented as sensitive identity, KYC, corporate and financial documents; the original files, completeness and claimed volume remain unverified. |\n| 🇳🇬 Nigeria | 🔴 High | The Daily Trust sample contains a target-specific account-reset structure with hundreds of populated password fields; current credential validity, acquisition method and the claimed 320 GB volume remain unverified. |\n| 🇩🇿 Algeria | 🟠 Medium | Government VPN access was advertised, but the claim and access validity remain unverified. |\n\n## 7. Key trends and intelligence gaps\n\n- Misconfigured cloud databases and storage services remain a material exposure path.\n- Recruitment data combines identity, employment, compensation and recorded-image material, increasing fraud, impersonation and privacy risks.\n- The SpearFin publication illustrates third-party concentration risk in fund administration: one alleged archive may contain records concerning multiple managed entities and investors.\n- The visible SpearFin contractual sample contains fund-administration, capital-commitment and fee-structure markers, but screenshot-only review cannot authenticate the underlying file or establish acquisition.\n- The Daily Trust workbook illustrates the risk created by storing account-reset records and password values in spreadsheets; structural authenticity does not establish that the credentials remain current.\n- exfilar appears in two observed publications involving cloud-hosted application data; the available material does not prove a shared intrusion chain.\n- Intelligence gaps include the exact Kenyan PAYGO operator, the validity and privileges of the Algerian access, the authenticity and completeness of the SnapStar Talent and SpearFin material, the current validity and origin of the Daily Trust credential values, the absence of a visible sample for The Courier Guy, the central-bank claim, and whether related production environments remain exposed.\n\n## 8. MITRE ATT&CK mapping (contextual)\n\n| Phase | Technique | Name | Associated observation |\n|---|---|---|---|\n| Initial Access | T1078 | Valid Accounts | Advertised VPN access in the Algerian claim; validity not independently confirmed. |\n| Collection | T1530 | Data from Cloud Storage | Cloud-hosted files are described in the Kenyan PAYGO record and the SnapStar Talent claim. |\n| Collection | T1213.006 | Databases | Customer, application and candidate records were reportedly accessible in database repositories. |\n\nThese are contextual defensive mappings, not proof of the actors' complete intrusion chains. No ATT&CK technique is assigned to the SpearFin, Daily Trust or The Courier Guy entries because the available material does not establish the initial-access, collection, exfiltration or encryption method.\n\n## 9. Recommendations\n\n- Government and public-sector organizations: enforce phishing-resistant MFA for VPN, review privileged access and monitor impossible-travel or anomalous VPN activity.\n- Cloud and application teams: deny public reads by default, continuously test Firestore/Firebase/database rules and rotate exposed API keys immediately.\n- Financial and PAYGO operators: minimize exported customer fields, encrypt backups, monitor public object storage and prepare customer-notification procedures.\n- Fund administrators and corporate-service providers: isolate KYC repositories, enforce least privilege, review third-party access and prepare coordinated notification procedures for affected managed entities.\n- Logistics and courier operators: restrict bulk exports of contact directories, enforce phishing-resistant MFA for email and identity systems, and require out-of-band verification for sensitive requests following public exposure claims.\n- Media and publishing organizations: prohibit spreadsheet-based password distribution, force-reset exposed accounts, revoke active sessions, enforce phishing-resistant MFA and protect editorial systems and source communications through segmentation and least privilege.\n- Recruitment and HR platforms: segregate identity documents and recorded interviews, shorten signed-URL lifetimes, restrict bulk exports and implement privacy-focused retention controls.\n\n## 10. SOC and tactical recommendations\n\n- Alert on new VPN logins from unusual geographies, new devices or dormant accounts.\n- Monitor cloud audit logs for anonymous reads, bulk exports, unusual enumeration and access to staging or production databases.\n- Detect API-key use from new IP ranges, unexpected user agents or services outside approved workloads.\n- Hunt for bulk access to candidate, customer, CV, photograph and video-interview records, including unusually high signed-URL generation or download volumes.\n- Monitor KYC, document-management and file-share telemetry for unusual bulk reads, archive creation and large outbound transfers, without treating those signals alone as proof of ransomware activity.\n- Monitor unusual directory exports, mailbox enumeration, forwarding-rule creation and phishing campaigns impersonating courier or logistics personnel.\n- For accounts represented in exposed credential material, revoke sessions and tokens, reset credentials through a trusted channel, review identity-provider and mailbox logs, and investigate anomalous password resets, MFA changes and forwarding rules.\n\n## 11. Strategic recommendations\n\nMaintain an inventory of internet-exposed assets and data stores, require security review of staging and production environments, and establish recurring external-exposure assessments for government-adjacent, financial, fund-administration, recruitment, logistics and media platforms. Treat exposed personal, financial, employment and credential data as an incident requiring coordinated security, legal, privacy and affected-user protection review.\n\n## 12. Conclusion\n\nAugust 2026 contains **8 recorded incidents**: three ransomware publications, four data-leak entries and one access-sale claim. Although several publications remain unconfirmed, the sensitivity and scale of the claimed identity, credential, employment, financial and government data warrant immediate defensive validation by potentially affected organizations.\n\n- **AFRINTEL**\n[GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)",
       "lang": "en",
       "published": "2026-08-18T00:00:00Z",
       "report_types": [
@@ -954,38 +1367,44 @@
         "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
         "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
         "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
+        "threat-actor--1218c9b3-d2de-5a0f-87e6-5bd01cc4e427",
+        "threat-actor--e3e81626-9b54-5340-8fcc-debb9c8be39d",
         "threat-actor--e42868a7-86a6-59b8-8db2-01b023c20468",
         "identity--ac666a10-88ed-5f2b-ac5d-2c9a9050a9c1",
         "identity--e1659e0c-ac5a-54ad-a7fb-d4319efee819",
         "identity--4fd9e8c4-5c17-5f45-8534-511a17a71c11",
         "identity--0b77cd16-b7fe-53a4-a304-57b6064f56e1",
-        "identity--b82cdf96-98f5-5e6c-8778-a7cfa822818a",
-        "identity--2a8b7da5-ebd7-5ef3-bc0a-26c4e4420365",
+        "identity--78d82875-f928-5505-b382-c63e03876607",
+        "identity--23ec828b-b360-5dd7-85f1-461041f07d06",
+        "identity--f115d499-2d38-58d9-9594-f7f97ebbb907",
+        "identity--20a12314-36d5-5065-84d1-0181667fe363",
         "incident--6dc8badb-10e9-5379-bf0a-057b714c913e",
         "incident--6692e749-c361-5130-b316-3f810b4b1b0f",
         "incident--87184b5e-7c83-58dd-8436-af8837d4c4a6",
         "incident--a29cf222-a2b3-5c0a-b6c1-9b3400c06dc1",
-        "incident--91be85c6-05b1-5c8c-b680-099885371c68",
-        "incident--45e4417f-fe73-5c55-a1a7-a381bc00d06f"
+        "incident--822d8f62-06c2-50e9-9dee-aeff0c2e9d97",
+        "incident--c21aade7-c67f-5b70-ad0e-98b23cb71b61",
+        "incident--c8858b39-db53-565e-8f8e-2920cb2c62f7",
+        "incident--2b5011a6-1545-5406-ac77-3ebd3ff79bae"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/README.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 6,
-      "x_afrintel_ransomware_count": 1,
+      "x_afrintel_total_incidents": 8,
+      "x_afrintel_ransomware_count": 3,
       "x_afrintel_data_leak_count": 4,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 6
+      "x_afrintel_victim_identity_count": 8
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--2462b8aa-41e4-5779-9af0-109d37caa0d3",
-      "created": "2026-08-18T21:35:58Z",
-      "modified": "2026-08-18T21:35:58Z",
+      "created": "2026-08-20T06:12:19Z",
+      "modified": "2026-08-20T06:12:19Z",
       "name": "Rapport CTI mensuel AFRINTEL - Août 2026",
-      "description": "# Rapport CTI - Cyberattaques en Afrique (août 2026)\n\n## 1. Résumé exécutif\n\nAFRINTEL a recensé **6 incidents** concernant des entités africaines en août 2026 : **1 publication ransomware**, **4 fuites de données** et **1 vente d'accès**. Le Kenya et l'Afrique du Sud comptent chacun deux incidents ; l'Algérie et Maurice en comptent un chacun. Aucun défacement n'est recensé.\n\n- **6 incidents** dans **4 pays** et **5 acteurs / sources observés**.\n- **1 ransomware (16,7 %)**, **4 fuites de données (66,7 %)** et **1 vente d'accès (16,7 %)**.\n- Finance / Banque représente **3 incidents (50,0 %)**, Gouvernement / Administration **2 (33,3 %)** et Ressources humaines / Recrutement **1 (16,7 %)**.\n- Les observations les plus importantes concernent les échantillons visibles de documents d'identité, KYC, d'entreprise et financiers dans la publication ransomware SpearFin, l'exposition alléguée à grande échelle de dossiers de recrutement kényans, ainsi que des CV de jeunes et des entrées de clés API en Afrique du Sud.\n- La vente d'accès visant le ministère du Commerce et la publication concernant la South African Reserve Bank restent des revendications sans confirmation indépendante.\n\n### Liste des victimes\n\n## 2. Méthodologie\n\n- **Périmètre :** 54 pays africains.\n- **Période :** 1er-31 août 2026, selon les dates de détection/publication du fichier `victims.md`.\n- **Sources :** OSINT, forums clandestins et éléments de stockage cloud/base de données exposés décrits dans le fichier source.\n- **Inclusion :** victime, activité ou exposition liée à l'Afrique avec pays et organisation/contexte identifiables.\n- **Typologie :** Ransomware, Fuite de données, Vente d'accès et Défacement. Une publication n'est pas traitée comme une confirmation sans éléments suffisants.\n- `victims.md` est la source unique de vérité pour tous les comptages de ce rapport.\n\n## 3. Vue d'ensemble\n\n| Indicateur | Valeur |\n|---|---:|\n| Total des incidents | 6 |\n| Pays concernés | 4 |\n| Acteurs / sources observés | 5 |\n| Ransomware | 1 (16,7 %) |\n| Fuites de données | 4 (66,7 %) |\n| Ventes d'accès | 1 (16,7 %) |\n| Défacement | 0 (0,0 %) |\n\n### Classement par pays\n\n| Pays | Incidents | Répartition |\n|---|---:|---|\n| 🇰🇪 Kenya | 2 | ███ 33,3 % |\n| 🇿🇦 Afrique du Sud | 2 | ███ 33,3 % |\n| 🇩🇿 Algérie | 1 | ██ 16,7 % |\n| 🇲🇺 Maurice | 1 | ██ 16,7 % |\n\n```pie\ntitle Incidents par pays - août 2026\n\"Kenya\" : 2\n\"Afrique du Sud\" : 2\n\"Algérie\" : 1\n\"Maurice\" : 1\n```\n\n### Type d'incident par pays\n\n| Pays | Ransomware | Fuite de données | Vente d'accès | Défacement |\n|---|---:|---:|---:|---:|\n| Algérie | 0 | 0 | 1 | 0 |\n| Kenya | 0 | 2 | 0 | 0 |\n| Maurice | 1 | 0 | 0 | 0 |\n| Afrique du Sud | 0 | 2 | 0 | 0 |\n| **Total** | **1** | **4** | **1** | **0** |\n\n🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d'accès | 🟥 Défacement\n\n### Répartition régionale\n\n| Région | Incidents |\n|---|---:|\n| Afrique de l'Est | 3 |\n| Afrique australe | 2 |\n| Afrique du Nord | 1 |\n\n### Répartition sectorielle\n\n| Secteur | Incidents | Part |\n|---|---:|---:|\n| Finance / Banque | 3 | 50,0 % |\n| Gouvernement / Administration | 2 | 33,3 % |\n| Ressources humaines / Recrutement | 1 | 16,7 % |\n\n```pie\ntitle Incidents par secteur - août 2026\n\"Finance / Banque\" : 3\n\"Gouvernement / Administration\" : 2\n\"Ressources humaines / Recrutement\" : 1\n```\n\n### Acteurs / sources les plus actifs\n\n| Acteur ou source | Type d'incident | Incidents | Cibles |\n|---|---|---:|---|\n| exfilar | Fuite de données | 2 | SnapStar Talent ; mpowa.mobi |\n| Florence | Vente d'accès | 1 | Ministère du Commerce (Algérie) |\n| incransom | Ransomware | 1 | SpearFin Ltd |\n| NullSec Nigeria | Fuite de données | 1 | South African Reserve Bank |\n| OriginalCrazyOldFart | Fuite de données | 1 | Plateforme PAYGO kényane non identifiée |\n\n## 4. Analyse détaillée par type d'incident\n\n### 4.1 Ransomware\n\nUne publication ransomware est recensée. SpearFin Ltd a été publiée par incransom avec une archive revendiquée de 416 Go et une date de fuite alléguée au 26 juin 2026. Les captures fournies affichent des miniatures présentées comme des échantillons et indiquent que la publication intégrale était encore annoncée comme à venir. AFRINTEL n'a pas examiné les fichiers sous-jacents et ne dispose d'aucun élément établissant un chiffrement, une perturbation opérationnelle, le volume annoncé ou une confirmation indépendante de la victime.\n\n### 4.2 Fuites de données et ventes d'accès\n\nQuatre fuites de données et une vente d'accès ont été recensées. Les entrées sud-africaines concernent une publication non vérifiée visant la banque centrale et une exposition distincte analysée portant sur des CV de jeunes, des données de géolocalisation, des comptes utilisateurs et des entrées de clés API. Les entrées kényanes concernent des données de financement client associées à une activité PAYGO non identifiée et une revendication proposant un important jeu de données de recrutement comprenant des identités, candidatures, CV et entretiens vidéo. L'entrée algérienne est une vente d'accès VPN annoncée sans confirmation indépendante.\n\n## 5. Impact sectoriel\n\nFinance / Banque représente **3 des 6 incidents (50,0 %)**, associés aux dossiers PAYGO kényans, à la revendication visant la banque centrale sud-africaine et à la publication ransomware SpearFin. Gouvernement / Administration représente **2 incidents (33,3 %)**, avec la revendication de vente d'accès en Algérie et l'exposition d'un service jeunesse en Afrique du Sud. Ressources humaines / Recrutement représente **1 incident (16,7 %)**, la revendication de vente de données concernant SnapStar Talent.\n\n## 6. Profil des acteurs\n\nCinq acteurs ou sources de publication distincts sont recensés. exfilar apparaît dans deux entrées de fuite de données au Kenya et en Afrique du Sud impliquant des données applicatives prétendument exposées dans le cloud. incransom est associé à l'unique publication ransomware. Ces observations ne permettent pas d'établir une chaîne d'intrusion commune ni une relation de campagne plus large.\n\n### 6.1 Évaluation du risque\n\n| Pays | Risque | Justification |\n|---|---|---|\n| 🇰🇪 Kenya | 🔴 Élevé | Deux entrées concernent des données sensibles de financement et un important jeu de données de recrutement allégué comprenant des identités, CV et entretiens vidéo. |\n| 🇿🇦 Afrique du Sud | 🔴 Élevé | Le mois comprend des dossiers sensibles de jeunes et des entrées de clés API exposés, ainsi qu'une revendication distincte non vérifiée visant la banque centrale. |\n| 🇲🇺 Maurice | 🔴 Élevé | La publication SpearFin affiche des échantillons présentés comme des documents sensibles d'identité, KYC, d'entreprise et financiers ; l'authenticité, l'exhaustivité et le volume revendiqué restent non confirmés. |\n| 🇩🇿 Algérie | 🟠 Moyen | Un accès VPN gouvernemental a été annoncé, mais la revendication et sa validité restent non vérifiées. |\n\n## 7. Tendances et lacunes de renseignement\n\n- Les bases de données et services de stockage cloud mal configurés restent une voie d'exposition importante.\n- Les données de recrutement combinent identité, emploi, rémunération et images enregistrées, ce qui accroît les risques de fraude, d'usurpation et d'atteinte à la vie privée.\n- La publication SpearFin illustre le risque de concentration chez les administrateurs de fonds : une seule archive alléguée peut contenir des dossiers concernant plusieurs entités gérées et investisseurs.\n- exfilar apparaît dans deux publications observées impliquant des données applicatives hébergées dans le cloud ; les éléments disponibles ne prouvent pas une chaîne d'intrusion commune.\n- Les lacunes portent sur l'opérateur PAYGO kényan exact, la validité et les privilèges de l'accès algérien, l'authenticité et l'exhaustivité des éléments SnapStar Talent et SpearFin, la revendication visant la banque centrale et l'éventuelle persistance d'expositions dans les environnements associés.\n\n## 8. Cartographie MITRE ATT&CK (contextuelle)\n\n| Phase | Technique | Nom | Observation associée |\n|---|---|---|---|\n| Accès initial | T1078 | Valid Accounts | Accès VPN annoncé dans le cas algérien ; validité non confirmée indépendamment. |\n| Collecte | T1530 | Data from Cloud Storage | Des fichiers cloud sont décrits dans le dossier PAYGO kényan et la revendication SnapStar Talent. |\n| Collecte | T1213.006 | Databases | Des dossiers clients, applicatifs et candidats auraient été accessibles dans des bases de données. |\n\nCes correspondances sont défensives et contextuelles ; elles ne prouvent pas la chaîne complète d'intrusion des acteurs. Aucune technique ATT&CK n'est attribuée à SpearFin, car les captures n'établissent ni la méthode d'accès initial, ni la collecte, ni l'exfiltration, ni le chiffrement.\n\n## 9. Recommandations\n\n- Administrations : imposer une MFA résistante au phishing pour les VPN, revoir les accès privilégiés et surveiller les connexions VPN anormales.\n- Équipes cloud et applicatives : interdire les lectures publiques par défaut, tester continuellement les règles Firestore/Firebase/base de données et faire tourner immédiatement les clés API exposées.\n- Opérateurs financiers et PAYGO : limiter les champs exportés, chiffrer les sauvegardes, surveiller le stockage objet public et préparer les procédures d'information des clients.\n- Administrateurs de fonds et prestataires de services aux entreprises : isoler les référentiels KYC, appliquer le moindre privilège, revoir les accès tiers et préparer des procédures coordonnées de notification aux entités gérées concernées.\n- Plateformes RH et de recrutement : séparer les documents d'identité et entretiens enregistrés, raccourcir la durée des URL signées, restreindre les exports massifs et appliquer des durées de conservation respectueuses de la vie privée.\n\n## 10. Recommandations SOC et tactiques\n\n- Déclencher des alertes sur les connexions VPN depuis une géographie inhabituelle, un nouvel appareil ou un compte dormant.\n- Surveiller les journaux cloud pour les lectures anonymes, exports massifs, énumérations et accès aux bases de préproduction ou de production.\n- Détecter l'utilisation de clés API depuis de nouvelles plages IP, des user-agents inattendus ou des services non autorisés.\n- Rechercher les accès massifs aux dossiers candidats et clients, CV, photographies et entretiens vidéo, notamment la génération inhabituelle d'URL signées ou des volumes anormaux de téléchargement.\n- Surveiller les référentiels KYC, la gestion documentaire et les partages de fichiers pour détecter des lectures massives, créations d'archives et transferts sortants inhabituels, sans considérer ces seuls signaux comme une preuve d'activité ransomware.\n\n## 11. Recommandations stratégiques\n\nMaintenir un inventaire des actifs et stockages exposés sur Internet, imposer une revue de sécurité des environnements de préproduction et de production, et organiser des évaluations externes récurrentes pour les plateformes publiques, financières, d'administration de fonds et de recrutement. Traiter l'exposition de données personnelles, financières et professionnelles comme un incident nécessitant une revue coordonnée juridique, vie privée et protection des clients ou candidats.\n\n## 12. Conclusion\n\nAoût 2026 comprend **6 incidents recensés** : une publication ransomware, quatre entrées de fuite de données et une revendication de vente d'accès. Bien que plusieurs publications restent non confirmées, la sensibilité et l'ampleur des données identitaires, professionnelles, financières et gouvernementales revendiquées justifient une validation défensive immédiate par les organisations potentiellement concernées.\n\n- **AFRINTEL**\n[Dépôt GitHub](https://github.com/Hatchepsoute/AFRINTEL)",
+      "description": "# Rapport CTI - Cyberattaques en Afrique (août 2026)\n\n## 1. Résumé exécutif\n\nAFRINTEL a recensé **8 incidents** concernant des entités africaines en août 2026 : **3 publications ransomware**, **4 fuites de données** et **1 vente d'accès**. L'Afrique du Sud compte trois incidents, le Kenya deux, et l'Algérie, Maurice et le Nigeria un chacun. Aucun défacement n'est recensé.\n\n- **8 incidents** dans **5 pays** et **7 acteurs / sources observés**.\n- **3 ransomware (37,5 %)**, **4 fuites de données (50,0 %)** et **1 vente d'accès (12,5 %)**.\n- Finance / Banque représente **3 incidents (37,5 %)**, Gouvernement / Administration **2 (25,0 %)**, et Ressources humaines / Recrutement, Logistique / Services de courrier et Médias / Édition **1 chacun (12,5 %)**.\n- Les observations les plus importantes concernent les données de réinitialisation de comptes et d'identifiants Daily Trust, les échantillons visibles de documents contractuels, d'identité, KYC, d'entreprise et financiers dans la publication ransomware SpearFin, l'exposition alléguée à grande échelle de dossiers de recrutement kényans, ainsi que des CV de jeunes et des entrées de clés API en Afrique du Sud.\n- La vente d'accès visant le ministère du Commerce et la publication concernant la South African Reserve Bank restent des revendications sans confirmation indépendante.\n\n### Liste des victimes\n\n## 2. Méthodologie\n\n- **Périmètre :** 54 pays africains.\n- **Période :** 1er-31 août 2026, selon les dates de détection/publication du fichier `victims.md`.\n- **Sources :** sites de fuite ransomware, OSINT, forums clandestins, échantillons fournis et éléments de stockage cloud/base de données exposés décrits dans le fichier source.\n- **Inclusion :** victime, activité ou exposition liée à l'Afrique avec pays et organisation/contexte identifiables.\n- **Typologie :** Ransomware, Fuite de données, Vente d'accès et Défacement. Une publication n'est pas traitée comme une confirmation sans éléments suffisants.\n- `victims.md` est la source unique de vérité pour tous les comptages de ce rapport.\n\n## 3. Vue d'ensemble\n\n| Indicateur | Valeur |\n|---|---:|\n| Total des incidents | 8 |\n| Pays concernés | 5 |\n| Acteurs / sources observés | 7 |\n| Ransomware | 3 (37,5 %) |\n| Fuites de données | 4 (50,0 %) |\n| Ventes d'accès | 1 (12,5 %) |\n| Défacement | 0 (0,0 %) |\n\n### Classement par pays\n\n| Pays | Incidents | Répartition |\n|---|---:|---|\n| 🇿🇦 Afrique du Sud | 3 | ██████ 37,5 % |\n| 🇰🇪 Kenya | 2 | ████ 25,0 % |\n| 🇩🇿 Algérie | 1 | ██ 12,5 % |\n| 🇲🇺 Maurice | 1 | ██ 12,5 % |\n| 🇳🇬 Nigeria | 1 | ██ 12,5 % |\n\n```pie\ntitle Incidents par pays - août 2026\n\"Afrique du Sud\" : 3\n\"Kenya\" : 2\n\"Algérie\" : 1\n\"Maurice\" : 1\n\"Nigeria\" : 1\n```\n\n### Type d'incident par pays\n\n| Pays | Ransomware | Fuite de données | Vente d'accès | Défacement |\n|---|---:|---:|---:|---:|\n| Algérie | 0 | 0 | 1 | 0 |\n| Kenya | 0 | 2 | 0 | 0 |\n| Maurice | 1 | 0 | 0 | 0 |\n| Nigeria | 1 | 0 | 0 | 0 |\n| Afrique du Sud | 1 | 2 | 0 | 0 |\n| **Total** | **3** | **4** | **1** | **0** |\n\n🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d'accès | 🟥 Défacement\n\n### Répartition régionale\n\n| Région | Incidents |\n|---|---:|\n| Afrique de l'Est | 3 |\n| Afrique australe | 3 |\n| Afrique du Nord | 1 |\n| Afrique de l'Ouest | 1 |\n\n### Répartition sectorielle\n\n| Secteur | Incidents | Part |\n|---|---:|---:|\n| Finance / Banque | 3 | 37,5 % |\n| Gouvernement / Administration | 2 | 25,0 % |\n| Ressources humaines / Recrutement | 1 | 12,5 % |\n| Logistique / Services de courrier | 1 | 12,5 % |\n| Médias / Édition | 1 | 12,5 % |\n\n```pie\ntitle Incidents par secteur - août 2026\n\"Finance / Banque\" : 3\n\"Gouvernement / Administration\" : 2\n\"Ressources humaines / Recrutement\" : 1\n\"Logistique / Services de courrier\" : 1\n\"Médias / Édition\" : 1\n```\n\n### Acteurs / sources les plus actifs\n\n| Acteur ou source | Type d'incident | Incidents | Cibles |\n|---|---|---:|---|\n| exfilar | Fuite de données | 2 | SnapStar Talent ; mpowa.mobi |\n| Florence | Vente d'accès | 1 | Ministère du Commerce (Algérie) |\n| incransom | Ransomware | 1 | SpearFin Ltd |\n| medusalocker | Ransomware | 1 | The Courier Guy |\n| NullSec Nigeria | Fuite de données | 1 | South African Reserve Bank |\n| OriginalCrazyOldFart | Fuite de données | 1 | Plateforme PAYGO kényane non identifiée |\n| Panzer | Ransomware | 1 | Daily Trust |\n\n## 4. Analyse détaillée par type d'incident\n\n### 4.1 Ransomware\n\nTrois publications ransomware distinctes sont recensées. SpearFin Ltd à Maurice a été publiée par incransom avec une archive revendiquée de 416 Go et une date de fuite alléguée au 26 juin 2026. Les captures fournies affichent des miniatures de documents d'identité, KYC, d'entreprise, administratifs et financiers présentées comme des échantillons. Un échantillon contractuel agrandi est daté de juin 2026, contient une référence à un siège social à Maurice, un engagement de capital en USD à sept chiffres et des clauses relatives aux frais et à la performance d'un fonds. Cette analyse visuelle soutient avec un niveau de confiance moyen le caractère spécifique d'une partie des éléments, mais les fichiers originaux n'étaient pas disponibles et la publication intégrale restait annoncée comme à venir. Daily Trust au Nigeria a été publiée par Panzer avec un volume revendiqué de 320 Go et un compte à rebours actif. L'examen en lecture seule du classeur fourni par AFRINTEL a relevé 443 enregistrements principaux de réinitialisation de comptes, 438 champs de mot de passe renseignés et 444 adresses distinctes du domaine cible sur les deux feuilles. Ces éléments permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est propre à la cible, sans établir que les valeurs restent valides, valider le volume revendiqué ni prouver la méthode d'acquisition. The Courier Guy en Afrique du Sud constitue une entrée medusalocker distincte revendiquant 2 018 emails extraits tout en indiquant « N/D » pour les données publiées ; aucun échantillon, échéance, prix de rançon ni téléchargement de données n'est visible. Aucun élément observé ne relie les trois victimes ou publications d'acteurs. Aucun des cas n'établit un chiffrement, une perturbation opérationnelle, une exfiltration complète ou une confirmation indépendante de la victime.\n\n### 4.2 Fuites de données et ventes d'accès\n\nQuatre fuites de données et une vente d'accès ont été recensées. Les entrées sud-africaines concernent une publication non vérifiée visant la banque centrale et une exposition distincte analysée portant sur des CV de jeunes, des données de géolocalisation, des comptes utilisateurs et des entrées de clés API. Les entrées kényanes concernent des données de financement client associées à une activité PAYGO non identifiée et une revendication proposant un important jeu de données de recrutement comprenant des identités, candidatures, CV et entretiens vidéo. L'entrée algérienne est une vente d'accès VPN annoncée sans confirmation indépendante.\n\n## 5. Impact sectoriel\n\nFinance / Banque représente **3 des 8 incidents (37,5 %)**, associés aux dossiers PAYGO kényans, à la revendication visant la banque centrale sud-africaine et à la publication ransomware SpearFin. Gouvernement / Administration représente **2 incidents (25,0 %)**, avec la revendication de vente d'accès en Algérie et l'exposition d'un service jeunesse en Afrique du Sud. Ressources humaines / Recrutement, Logistique / Services de courrier et Médias / Édition représentent chacun **1 incident (12,5 %)**, respectivement la revendication de vente de données concernant SnapStar Talent, l'entrée ransomware The Courier Guy et la publication ransomware Daily Trust.\n\n## 6. Profil des acteurs\n\nSept acteurs ou sources de publication distincts sont recensés. exfilar apparaît dans deux entrées de fuite de données au Kenya et en Afrique du Sud impliquant des données applicatives prétendument exposées dans le cloud. incransom est associé à la publication SpearFin à Maurice, Panzer à Daily Trust au Nigeria et medusalocker à The Courier Guy en Afrique du Sud. Aucun élément disponible ne relie ces cas ransomware, leurs victimes ou les publications de leurs acteurs. Ces observations ne permettent pas d'établir une chaîne d'intrusion commune ni une relation de campagne plus large.\n\n### 6.1 Évaluation du risque\n\n| Pays | Risque | Justification |\n|---|---|---|\n| 🇰🇪 Kenya | 🔴 Élevé | Deux entrées concernent des données sensibles de financement et un important jeu de données de recrutement allégué comprenant des identités, CV et entretiens vidéo. |\n| 🇿🇦 Afrique du Sud | 🔴 Élevé | Le mois comprend des dossiers sensibles de jeunes et des entrées de clés API exposés, une revendication medusalocker non vérifiée portant sur 2 018 emails chez The Courier Guy, ainsi qu'une revendication distincte non vérifiée visant la banque centrale. |\n| 🇲🇺 Maurice | 🔴 Élevé | La publication SpearFin affiche un échantillon contractuel détaillé lié à Maurice et des miniatures présentées comme des documents sensibles d'identité, KYC, d'entreprise et financiers ; les fichiers originaux, l'exhaustivité et le volume revendiqué restent non vérifiés. |\n| 🇳🇬 Nigeria | 🔴 Élevé | L'échantillon Daily Trust contient une structure de réinitialisation de comptes propre à la cible avec des centaines de champs de mot de passe renseignés ; la validité actuelle des identifiants, la méthode d'acquisition et le volume revendiqué de 320 Go restent non vérifiés. |\n| 🇩🇿 Algérie | 🟠 Moyen | Un accès VPN gouvernemental a été annoncé, mais la revendication et sa validité restent non vérifiées. |\n\n## 7. Tendances et lacunes de renseignement\n\n- Les bases de données et services de stockage cloud mal configurés restent une voie d'exposition importante.\n- Les données de recrutement combinent identité, emploi, rémunération et images enregistrées, ce qui accroît les risques de fraude, d'usurpation et d'atteinte à la vie privée.\n- La publication SpearFin illustre le risque de concentration chez les administrateurs de fonds : une seule archive alléguée peut contenir des dossiers concernant plusieurs entités gérées et investisseurs.\n- L'échantillon contractuel SpearFin visible contient des marqueurs d'administration de fonds, d'engagement de capital et de structure de frais, mais une analyse limitée aux captures ne peut authentifier le fichier sous-jacent ni établir sa méthode d'acquisition.\n- Le classeur Daily Trust illustre le risque créé par le stockage d'enregistrements de réinitialisation de comptes et de mots de passe dans des feuilles de calcul ; son authenticité structurelle n'établit pas que les identifiants restent actuels.\n- exfilar apparaît dans deux publications observées impliquant des données applicatives hébergées dans le cloud ; les éléments disponibles ne prouvent pas une chaîne d'intrusion commune.\n- Les lacunes portent sur l'opérateur PAYGO kényan exact, la validité et les privilèges de l'accès algérien, l'authenticité et l'exhaustivité des éléments SnapStar Talent et SpearFin, la validité actuelle et l'origine des valeurs d'identifiants Daily Trust, l'absence d'échantillon visible pour The Courier Guy, la revendication visant la banque centrale et l'éventuelle persistance d'expositions dans les environnements associés.\n\n## 8. Cartographie MITRE ATT&CK (contextuelle)\n\n| Phase | Technique | Nom | Observation associée |\n|---|---|---|---|\n| Accès initial | T1078 | Valid Accounts | Accès VPN annoncé dans le cas algérien ; validité non confirmée indépendamment. |\n| Collecte | T1530 | Data from Cloud Storage | Des fichiers cloud sont décrits dans le dossier PAYGO kényan et la revendication SnapStar Talent. |\n| Collecte | T1213.006 | Databases | Des dossiers clients, applicatifs et candidats auraient été accessibles dans des bases de données. |\n\nCes correspondances sont défensives et contextuelles ; elles ne prouvent pas la chaîne complète d'intrusion des acteurs. Aucune technique ATT&CK n'est attribuée à SpearFin, Daily Trust ou The Courier Guy, car les éléments disponibles n'établissent ni la méthode d'accès initial, ni la collecte, ni l'exfiltration, ni le chiffrement.\n\n## 9. Recommandations\n\n- Administrations : imposer une MFA résistante au phishing pour les VPN, revoir les accès privilégiés et surveiller les connexions VPN anormales.\n- Équipes cloud et applicatives : interdire les lectures publiques par défaut, tester continuellement les règles Firestore/Firebase/base de données et faire tourner immédiatement les clés API exposées.\n- Opérateurs financiers et PAYGO : limiter les champs exportés, chiffrer les sauvegardes, surveiller le stockage objet public et préparer les procédures d'information des clients.\n- Administrateurs de fonds et prestataires de services aux entreprises : isoler les référentiels KYC, appliquer le moindre privilège, revoir les accès tiers et préparer des procédures coordonnées de notification aux entités gérées concernées.\n- Opérateurs logistiques et de courrier : restreindre les exports massifs d'annuaires de contacts, imposer une MFA résistante au phishing pour les systèmes de messagerie et d'identité, et vérifier hors bande toute demande sensible après une revendication publique d'exposition.\n- Organisations de médias et d'édition : interdire la distribution de mots de passe par feuille de calcul, réinitialiser de force les comptes exposés, révoquer les sessions actives, imposer une MFA résistante au phishing et protéger les systèmes éditoriaux et les communications avec les sources par la segmentation et le moindre privilège.\n- Plateformes RH et de recrutement : séparer les documents d'identité et entretiens enregistrés, raccourcir la durée des URL signées, restreindre les exports massifs et appliquer des durées de conservation respectueuses de la vie privée.\n\n## 10. Recommandations SOC et tactiques\n\n- Déclencher des alertes sur les connexions VPN depuis une géographie inhabituelle, un nouvel appareil ou un compte dormant.\n- Surveiller les journaux cloud pour les lectures anonymes, exports massifs, énumérations et accès aux bases de préproduction ou de production.\n- Détecter l'utilisation de clés API depuis de nouvelles plages IP, des user-agents inattendus ou des services non autorisés.\n- Rechercher les accès massifs aux dossiers candidats et clients, CV, photographies et entretiens vidéo, notamment la génération inhabituelle d'URL signées ou des volumes anormaux de téléchargement.\n- Surveiller les référentiels KYC, la gestion documentaire et les partages de fichiers pour détecter des lectures massives, créations d'archives et transferts sortants inhabituels, sans considérer ces seuls signaux comme une preuve d'activité ransomware.\n- Surveiller les exports inhabituels d'annuaires, l'énumération de boîtes aux lettres, la création de règles de transfert et les campagnes de phishing usurpant du personnel logistique ou de courrier.\n- Pour les comptes représentés dans des éléments d'identifiants exposés, révoquer les sessions et jetons, réinitialiser les identifiants par un canal de confiance, examiner les journaux du fournisseur d'identité et des boîtes aux lettres, et rechercher les réinitialisations de mot de passe, changements de MFA et règles de transfert anormaux.\n\n## 11. Recommandations stratégiques\n\nMaintenir un inventaire des actifs et stockages exposés sur Internet, imposer une revue de sécurité des environnements de préproduction et de production, et organiser des évaluations externes récurrentes pour les plateformes publiques, financières, d'administration de fonds, de recrutement, de logistique et de médias. Traiter l'exposition de données personnelles, financières, professionnelles et d'identifiants comme un incident nécessitant une revue coordonnée de sécurité, juridique, vie privée et protection des personnes concernées.\n\n## 12. Conclusion\n\nAoût 2026 comprend **8 incidents recensés** : trois publications ransomware, quatre entrées de fuite de données et une revendication de vente d'accès. Bien que plusieurs publications restent non confirmées, la sensibilité et l'ampleur des données identitaires, d'identifiants, professionnelles, financières et gouvernementales revendiquées justifient une validation défensive immédiate par les organisations potentiellement concernées.\n\n- **AFRINTEL**\n[Dépôt GitHub](https://github.com/Hatchepsoute/AFRINTEL)",
       "lang": "fr",
       "published": "2026-08-18T00:00:00Z",
       "report_types": [
@@ -1019,29 +1438,35 @@
         "threat-actor--999a3454-6f43-5701-af28-3992eeee5acd",
         "threat-actor--3bdc74fb-b3e7-5504-98eb-21c960e38c43",
         "threat-actor--8ae4dce1-d24f-5e0b-9b0e-f22975d38f1f",
+        "threat-actor--1218c9b3-d2de-5a0f-87e6-5bd01cc4e427",
+        "threat-actor--e3e81626-9b54-5340-8fcc-debb9c8be39d",
         "threat-actor--e42868a7-86a6-59b8-8db2-01b023c20468",
         "identity--ac666a10-88ed-5f2b-ac5d-2c9a9050a9c1",
         "identity--e1659e0c-ac5a-54ad-a7fb-d4319efee819",
         "identity--4fd9e8c4-5c17-5f45-8534-511a17a71c11",
         "identity--0b77cd16-b7fe-53a4-a304-57b6064f56e1",
-        "identity--b82cdf96-98f5-5e6c-8778-a7cfa822818a",
-        "identity--2a8b7da5-ebd7-5ef3-bc0a-26c4e4420365",
+        "identity--78d82875-f928-5505-b382-c63e03876607",
+        "identity--23ec828b-b360-5dd7-85f1-461041f07d06",
+        "identity--f115d499-2d38-58d9-9594-f7f97ebbb907",
+        "identity--20a12314-36d5-5065-84d1-0181667fe363",
         "incident--6dc8badb-10e9-5379-bf0a-057b714c913e",
         "incident--6692e749-c361-5130-b316-3f810b4b1b0f",
         "incident--87184b5e-7c83-58dd-8436-af8837d4c4a6",
         "incident--a29cf222-a2b3-5c0a-b6c1-9b3400c06dc1",
-        "incident--91be85c6-05b1-5c8c-b680-099885371c68",
-        "incident--45e4417f-fe73-5c55-a1a7-a381bc00d06f"
+        "incident--822d8f62-06c2-50e9-9dee-aeff0c2e9d97",
+        "incident--c21aade7-c67f-5b70-ad0e-98b23cb71b61",
+        "incident--c8858b39-db53-565e-8f8e-2920cb2c62f7",
+        "incident--2b5011a6-1545-5406-ac77-3ebd3ff79bae"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2026/08-august/README_FR.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 6,
-      "x_afrintel_ransomware_count": 1,
+      "x_afrintel_total_incidents": 8,
+      "x_afrintel_ransomware_count": 3,
       "x_afrintel_data_leak_count": 4,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 6
+      "x_afrintel_victim_identity_count": 8
     }
   ]
 }

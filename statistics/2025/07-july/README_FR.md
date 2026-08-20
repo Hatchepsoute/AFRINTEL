@@ -2,16 +2,18 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les 21 cartes des fichiers mensuels synchronisés `victims_FR.md` et `victims.md`. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 20 |
-| Ransomware | 6 |
-| Fuites de données | 14 |
-| Pays touchés | 11 |
-| Secteurs | 18 |
-| Acteurs / sources | 15 |
+| Total incidents | 21 |
+| Ransomware | 5 |
+| Fuites de données | 16 |
+| Ventes d’accès | 0 |
+| Défacement | 0 |
+| Pays touchés | 12 |
+| Secteurs | 19 |
+| Acteurs / sources | 16 |
 
 ## Pays
 
@@ -28,6 +30,7 @@ Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications 
 | 🇳🇦 Namibie | 1 |
 | 🇲🇷 Mauritanie | 1 |
 | 🇪🇷 Érythrée | 1 |
+| 🇧🇮 Burundi | 1 |
 
 ## Secteurs
 
@@ -51,6 +54,7 @@ Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications 
 | Formation Professionnelle / Secteur Bancaire. | 1 |
 | Gouvernement / Diplomatie | 1 |
 | Gouvernement / Administration publique / Éducation | 1 |
+| Commerce / E-commerce | 1 |
 
 ## Acteurs / sources
 
@@ -71,13 +75,15 @@ Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications 
 | Mercobyte | 1 |
 | Gh1nDar | 1 |
 | Wieko | 1 |
+| BabayoSysteam | 1 |
 
 ## Types
 
 | Type | Incidents |
 |---|---:|
-| Data Leak | 14 |
-| Ransomware | 6 |
+| Fuite de données | 16 |
+| Ransomware | 5 |
+| Vente d’accès | 0 |
+| Défacement | 0 |
 
 **AFRINTEL** — TLP:CLEAR
-

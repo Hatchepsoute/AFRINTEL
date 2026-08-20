@@ -21,6 +21,10 @@ Août 2024 est le **mois le plus actif de l'année** avec **15 cas** documentés
 - 🔹 **Pays touchés** : Afrique du Sud (6), Seychelles (2), Zimbabwe (2), Tunisie (1), Côte d'Ivoire (1), Kenya (1), Djibouti (1), Ghana (1)
 - 🔹 **Secteurs** : Finance, Retail/Distribution, Télécommunications, Santé, Gouvernement, Technologies, Événementiel / Plateformes numériques
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (6.7% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

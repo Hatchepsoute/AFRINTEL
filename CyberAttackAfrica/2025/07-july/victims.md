@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in July 2025 (20 victims)
+# List of African cyberattack victims in July 2025 (21 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## July 2025
@@ -108,7 +108,7 @@
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** Adrian Group (Adrian Kenya) is a Kenyan leader in technological engineering.
-- **Analysis:** AFRINTEL reviewed a small local sample of four documents associated with this claim: a vendor invoice for telecom site installation work (antennas, feeder cable and RRU installation) issued to Adrian Kenya, a Kenya Revenue Authority (KRA) VAT payment slip for Adrian Group Limited covering January to March 2025, a fuel-supplier credit note addressed to Adrian Kenya Limited with vehicle, banking and payment-advice details, and an internal email thread between Adrian Kenya and Adrian Group staff (adriankenya.com and adriangroup.tech domains) discussing a telecom site rollout at a warehouse location. The documents are internally consistent, referencing matching company names, domains and project context, and include full personal identifiers, banking details and a tax PIN, none of which AFRINTEL reproduces here. The sample indicates exposure of financial, tax-compliance, vendor and internal-communication records, but its scope is limited to four documents and does not establish the total volume or extent of the underlying compromise. AFRINTEL does not independently confirm the intrusion.
+- **Analysis:** AFRINTEL reviewed a local sample of four documents associated with this claim: a vendor invoice for telecom site installation work, a Kenya Revenue Authority (KRA) VAT payment slip, a fuel-supplier credit note and an internal email thread concerning a telecom site rollout. The documents are internally consistent, reference matching Adrian Kenya/Adrian Group names, domains and project context, and contain financial, tax-compliance, vendor and internal-communication records. AFRINTEL does not reproduce the personal identifiers, banking details or tax PIN visible in the sample. This assessment is limited to the four documents reviewed; AFRINTEL did not consult any subsequent disclosure or additional files published by the group.
 
 ### 15 July 2025
 #### 🇪🇬 Egypt - Egyptian Electricity Holding Company (EEHC, eehc.gov.eg)
@@ -231,6 +231,23 @@
 
 - **Double-claim note:**
   AFRINTEL separately recorded a June 18, 2025 claim involving the ministry’s Massar platform. The actors and advertised datasets differ, and available evidence does not establish that both publications derive from the same compromise.
+
+### 30 July 2025
+#### 🇧🇮 Burundi - PesaBay
+
+- **Incident type:** Data Leak
+- **Actor / Group:** BabayoSysteam
+- **Sector:** Retail / E-commerce
+- **Status:** Data Fully Published
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Website:** [pesabay.bi](https://pesabay.bi)
+
+- **Description:**
+  PesaBay is a Burundian online marketplace operated by AFRIREGISTER S.A. It enables sellers to list products and users to buy from or contact merchants using the platform.
+
+- **Analysis:**
+  A post attributed to the BabayoSysteam account, dated July 30, 2025, makes available a PesaBay database presented as complete and containing 1,850 records. The published fields include first name, last name, email address, phone number and account status. The presence of numerous phone numbers using Burundi's `+257` country code, combined with PesaBay branding and a coherent record structure, supports a medium-confidence attribution of the dataset to the platform. AFRINTEL therefore classifies the case as `Data Fully Published`. This classification describes publication of the dataset advertised as complete; it does not independently confirm the acquisition method, the initial intrusion, row uniqueness, or coverage of PesaBay's entire production database. The published contact data creates risks of targeted phishing, fraud, spam and digital impersonation, corresponding to a Level 2 impact. No name, email address, phone number or other raw personal data is reproduced.
 
 ---
 [July 2025 Report](./report/README.md)

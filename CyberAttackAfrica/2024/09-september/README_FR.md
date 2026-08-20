@@ -21,6 +21,10 @@ Septembre 2024 enregistre **5 incidents** documentés dans 5 pays distincts, le 
 - 🔹 **Pays touchés** : Sénégal (1), Cameroun (1), Maurice (1), Tunisie (1), Nigeria (1)
 - 🔹 **Secteurs** : Technologies, Gouvernement/Sécurité sociale, Télécommunications, Industrie, Défense/Sécurité nationale
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **1 fiches** (20.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

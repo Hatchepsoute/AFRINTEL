@@ -13,13 +13,13 @@
 
 ### 1. Executive summary
 
-July 2025 records **20 documented claims** across 11 countries. The month is dominated by a **coordinated campaign by Dark 07x Team against Tunisia's banking and financial sector**: 5 of the 20 claims are Tunisian financial institutions, targeted between July 25 and July 28. Morocco is the second most-targeted country with four separate claims spanning construction, telecom distribution, higher education and a ministry credential leak. Egypt faces the month's highest ransom demand ($2.27M) against a public electricity authority, and a Mauritanian government portal exposes personnel-qualification dossiers containing national ID numbers and diplomas. AFRINTEL also reviewed and partly corroborated an accusatory leak targeting Algeria's Ministry of Energy, and recorded a claim affecting the Eritrean embassy in the United States.
+July 2025 records **21 documented claims** across 12 countries. The month is dominated by a **coordinated campaign by Dark 07x Team against Tunisia's banking and financial sector**: 5 of the 21 claims concern Tunisian financial institutions, published between July 25 and July 28. Morocco is the second most-visible country with four separate claims spanning construction, telecom distribution, higher education and a ministry credential leak. Egypt faces the month's highest ransom demand ($2.27M) against a public electricity authority, and a Mauritanian government portal exposes personnel-qualification dossiers containing national ID numbers and diplomas. AFRINTEL also reviewed and partly corroborated an accusatory leak targeting Algeria's Ministry of Energy, recorded a claim affecting the Eritrean embassy in the United States, and documented the full publication of a contact database affecting Burundi's PesaBay marketplace.
 
 **Key figures:**
-- 🔹 **20 claims** documented
-- 🔹 **16 active actors/groups**: Dark 07x Team (5), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Unknown (2), Mercobyte (1), Gh1nDar (1), Wieko (1)
-- 🔹 **Countries affected**: Tunisia (5), Morocco (4), Algeria (2), Nigeria (1), South Africa (1), Tanzania (1), Kenya (2), Egypt (1), Namibia (1), Mauritania (1), Eritrea (1)
-- 🔹 **Sectors**: Finance / Banking / Insurance (6), Government / Public administrations (6), Energy / Mining (3), Education (2), Construction / Real estate (1), Religion / NGO (1), Telecommunications (1)
+- 🔹 **21 claims** documented
+- 🔹 **16 active actors/groups**: Dark 07x Team (5), Unknown (2), Hepd (1), sanji_shi5 (1), d4rk4rmy (1), Evil_BYTE_Officiel (1), nightspire (1), Keymous (1), Phantom Atlas (1), lynx (1), devman (1), incransom (1), Mercobyte (1), Gh1nDar (1), Wieko (1), BabayoSysteam (1)
+- 🔹 **Countries affected**: Tunisia (5), Morocco (4), Algeria (2), Kenya (2), Nigeria (1), South Africa (1), Tanzania (1), Egypt (1), Namibia (1), Mauritania (1), Eritrea (1), Burundi (1)
+- 🔹 **Sectors**: Finance / Banking / Insurance (6), Government / Public administrations (6), Energy / Mining (3), Education (2), Construction / Real estate (1), Religion / NGO (1), Telecommunications (1), Retail / E-commerce (1)
 
 ---
 
@@ -47,6 +47,7 @@ July 2025 records **20 documented claims** across 11 countries. The month is dom
 | July 27 | Embassy of Eritrea in the United States | Eritrea | Gh1nDar |
 | July 28 | BH Bank | Tunisia | Dark 07x Team |
 | July 29 | Ministry of National Education, Preschool and Sports | Morocco | Wieko |
+| July 30 | PesaBay | Burundi | BabayoSysteam |
 
 ```mermaid
 timeline
@@ -71,6 +72,7 @@ timeline
     July 27 : Embassy of Eritrea in the US - Gh1nDar
     July 28 : BH Bank (Tunisia) - Dark 07x Team
     July 29 : Ministry of Education (Morocco) - Wieko
+    July 30 : PesaBay (Burundi) - BabayoSysteam
 ```
 
 ---
@@ -92,10 +94,11 @@ timeline
 | Namibia | 1 |
 | Mauritania | 1 |
 | Eritrea | 1 |
+| Burundi | 1 |
 
 ```mermaid
 pie
-    title Distribution by country - July 2025 (20 claims)
+    title Distribution by country - July 2025 (21 claims)
     "Tunisia" : 5
     "Morocco" : 4
     "Algeria" : 2
@@ -107,6 +110,7 @@ pie
     "Namibia" : 1
     "Mauritania" : 1
     "Eritrea" : 1
+    "Burundi" : 1
 ```
 
 #### 3.2 By sector
@@ -120,13 +124,14 @@ pie
 | Construction / Real estate | 1 |
 | Religion / NGO | 1 |
 | Telecommunications | 1 |
+| Retail / E-commerce | 1 |
 
 ```mermaid
 xychart-beta
     title "Targeted Sectors - July 2025"
-    x-axis ["Finance/Banking", "Government", "Energy/Mining", "Education", "Construction", "NGO", "Telecom"]
+    x-axis ["Finance/Banking", "Government", "Energy/Mining", "Education", "Construction", "NGO", "Telecom", "E-commerce"]
     y-axis "Number of claims" 0 --> 7
-    bar [6, 6, 3, 2, 1, 1, 1]
+    bar [6, 6, 3, 2, 1, 1, 1, 1]
 ```
 
 #### 3.3 Active groups
@@ -148,6 +153,7 @@ xychart-beta
 | Mercobyte | 1 | Morocco (university) |
 | Gh1nDar | 1 | Eritrea (embassy, diplomatic) |
 | Wieko | 1 | Morocco (education credential list) |
+| BabayoSysteam | 1 | Burundi (PesaBay e-commerce marketplace) |
 
 ---
 
@@ -159,6 +165,7 @@ xychart-beta
 - **Algeria, investigative verification**: a Phantom Atlas post accused the Ministry of Energy, Mines and Renewable Energies of granting an import licence to an "unknown" company for hazardous chemicals. AFRINTEL's review of the leaked documents assessed them as probably authentic, but found the accusatory framing unsupported: the named company is a registered waterproofing manufacturer and the import falls within an existing regulatory declaration process. The leak nonetheless exposes an internal administrative document and third-party commercial data without authorization.
 - **Mauritania, sensitive personnel data**: a local sample from the QCE government procurement portal exposed personnel-qualification dossiers (CVs, national ID cards, diplomas, notarized contracts) for private-sector employees, with no claiming actor identified. The combination of national ID numbers, diplomas and employment records creates a significant identity-fraud risk.
 - **Eritrea, diplomatic-sector claim**: a claim by Gh1nDar alleges a leak affecting roughly 5,000 citizens linked to the Eritrean embassy in the United States, including identity and passport data. No verifiable sample was accessible; AFRINTEL records this as an unverified claim from a source account with no established reliability history.
+- **Burundi, PesaBay database fully published**: a post attributed to BabayoSysteam makes available a PesaBay database presented as complete with 1,850 records, containing names, email addresses, phone numbers and account statuses. The case is classified as `Data Fully Published`; the acquisition method remains unknown.
 
 ---
 
@@ -167,7 +174,7 @@ xychart-beta
     title "Monthly Evolution of Claims (Jan - Jul 2025)"
     x-axis ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"]
     y-axis "Number of claims" 0 --> 22
-    bar [16, 9, 11, 16, 21, 20, 20]
+    bar [16, 9, 11, 16, 21, 20, 21]
 ```
 
 ### 5. Recommendations
@@ -179,6 +186,7 @@ xychart-beta
 | Public procurement / personnel data platforms | Restrict access to identity-document and qualification-dossier repositories, encrypt data at rest, and log all export activity. |
 | Education | Harden public-facing web portals, monitor for data scraping, and prepare for influence-operation scenarios. |
 | Diplomatic missions | Review third-party hosting and CRM providers handling citizen data, and enforce MFA on administrative consular systems. |
+| E-commerce platforms | Restrict bulk account exports, monitor unusual database reads and prepare user notification after internal validation. |
 | All organizations | Track Dark 07x Team as a highly active group against North African financial infrastructure. |
 
 ---

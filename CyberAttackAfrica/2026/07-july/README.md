@@ -24,7 +24,7 @@ AFRINTEL recorded **42 Africa-related incident records** in July 2026, involving
 
 Egypt and Tunisia led the geographic count with seven occurrences each, followed by Morocco and South Africa with six. Government and administration accounted for 11 records, the largest sector group. No single actor dominated: arcusmedia led with four ransomware listings and dragonforce followed with three.
 
-Evidence strength varied materially: **21 records were unverified claims**, **20 included a published sample**, and **1 was recorded as fully published**. Nine records reached Impact Level 4. The most substantiated high-impact cases included Nerasolgh, Tayara.tn and Distamed, where AFRINTEL reviewed structured material; the advertised full volumes and intrusion paths were not necessarily established.
+Evidence strength varied materially: **21 records were unverified claims**, **20 included a published sample**, and **1 was recorded under `Data Fully Published`, denoting a complete-publication claim rather than verified exhaustiveness**. Nine records reached Impact Level 4. The most substantiated high-impact cases included Nerasolgh, Tayara.tn and Distamed, where AFRINTEL reviewed structured material; the advertised full volumes and intrusion paths were not necessarily established.
 
 The main defensive priorities are privileged and webmail account protection, monitoring of bulk database exports, and rapid handling of identity, health, education and government data exposure. Full incident cards are available in [`victims.md`](./victims.md).
 
@@ -290,29 +290,29 @@ This is a **relative July exposure assessment**, not a general national cyber-ri
 
 ### 6.2 Cases requiring follow-up
 
-### Egyptian Ministry of Agriculture
+#### Egyptian Ministry of Agriculture
 
 The reviewed material included correspondence, contracts, payments, inspection records, technical inventories and application screenshots. The set was coherent with administrative and operational documentation. If authentic, it could support land-related fraud, document forgery and highly contextual phishing.
 
-### Nerasolgh - Ghana
+#### Nerasolgh - Ghana
 
 The reviewed exports showed customer, staff, USSD-payment, transaction and banking-related structures. The actor claimed 26 million records, while the material available for review was considerably smaller. The gap between the claim and the sample remains unresolved.
 
-### Heliopolis University and HIMS
+#### Heliopolis University and HIMS
 
 These records should remain separate. Heliopolis’s sample showed parent and student-account structures. HIMS claimed student, staff, financial and payment data. Neither advertised volume was independently confirmed.
 
-### Adex - Tunisia
+#### Adex - Tunisia
 
 The BIGBROTHER repost showed an administration interface with a record count close to the advertised “15k”. This makes the claimed access plausible, but does not establish the original intruder or the complete scope of the data.
 
 ### 6.3 Repeated claims and unresolved links
 
-### Planet Sport
+#### Planet Sport
 
 The `planetsport.ma` domain was listed by LockBit 5 in April 2026. A free July publication attributed to Mozvo appeared on the same target. Reposting, third-party redistribution or an affiliate relationship are all possible, but none is demonstrated. The records remain separate and linked by an analytical note.
 
-### Zenith Bank
+#### Zenith Bank
 
 Zenith Bank Plc was listed in a data-leak claim published on 9 August 2025 by KaruHunters, alleging the sale of more than 1.8 million customer and employee records. In July 2026, Zenith Bank appeared again in a separate ransomware claim attributed to ExfilSquad. The two publications are separated by nearly eleven months and involve different actors. This recurrence justifies enhanced monitoring, but the available evidence does not establish that both publications result from the same compromise.
 
@@ -385,7 +385,7 @@ July 2026 showed a broad but fragmented threat picture. Ransomware remained high
 ### Consistency checks
 
 - Incident types: 18 ransomware + 18 data leaks + 6 access sales + 0 defacements = 42.
-- Statuses: 21 unverified claims + 20 sample-published claims + 1 fully published dataset = 42.
+- Statuses: 21 unverified claims + 20 sample-published claims + 1 complete-publication claim recorded under `Data Fully Published` = 42.
 - Confidence: 22 Low + 8 Medium + 9 High + 3 Very High = 42.
 - Impact: 12 Level 2 + 21 Level 3 + 9 Level 4 = 42.
 - Geography: 42 unique records; 43 country occurrences because one record covers Nigeria and Côte d'Ivoire.

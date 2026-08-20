@@ -322,6 +322,13 @@
 
 ---
 
+### 🇧🇮 Burundi (1 victime)
+| Victime | Secteur | Acteur / groupe |
+| :--- | :--- | :--- |
+| PesaBay | Commerce / E-commerce | BabayoSysteam |
+
+---
+
 ### 🇨🇲 Cameroun (1 victimes)
 | Victime | Secteur | Acteur / groupe |
 | :--- | :--- | :--- |

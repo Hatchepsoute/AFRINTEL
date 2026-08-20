@@ -10,12 +10,12 @@
 
 ## 1. Executive summary
 
-AFRINTEL recorded **6 incidents** involving African entities in August 2026: **1 ransomware publication**, **4 data leaks** and **1 access sale**. Kenya and South Africa each account for two incidents; Algeria and Mauritius account for one each. No defacement was recorded.
+AFRINTEL recorded **8 incidents** involving African entities in August 2026: **3 ransomware publications**, **4 data leaks** and **1 access sale**. South Africa accounts for three incidents, Kenya for two, and Algeria, Mauritius and Nigeria for one each. No defacement was recorded.
 
-- **6 incidents** across **4 countries** and **5 observed actors / sources**.
-- **1 Ransomware (16.7%)**, **4 Data Leaks (66.7%)** and **1 Access Sale (16.7%)**.
-- Finance / Banking accounts for **3 incidents (50.0%)**, Government / Administration for **2 (33.3%)**, and Human Resources / Recruitment for **1 (16.7%)**.
-- The most consequential observations concern visible identity, KYC, corporate and financial document samples in the SpearFin ransomware publication, the alleged large-scale exposure of Kenyan recruitment records, and exposed youth CVs and API-key entries in South Africa.
+- **8 incidents** across **5 countries** and **7 observed actors / sources**.
+- **3 Ransomware (37.5%)**, **4 Data Leaks (50.0%)** and **1 Access Sale (12.5%)**.
+- Finance / Banking accounts for **3 incidents (37.5%)**, Government / Administration for **2 (25.0%)**, and Human Resources / Recruitment, Logistics / Courier Services and Media / Publishing for **1 each (12.5%)**.
+- The most consequential observations concern Daily Trust account-reset and credential material, the visible contractual, identity, KYC, corporate and financial document samples in the SpearFin ransomware publication, the alleged large-scale exposure of Kenyan recruitment records, and exposed youth CVs and API-key entries in South Africa.
 - The Ministry of Commerce access sale and the South African Reserve Bank data-leak publication remain claims without independent confirmation.
 
 ### Victim list
@@ -26,7 +26,7 @@ AFRINTEL recorded **6 incidents** involving African entities in August 2026: **1
 
 - **Scope:** 54 African countries.
 - **Period:** 1–31 August 2026, based on AFRINTEL detection/publication records in `victims.md`.
-- **Sources:** OSINT, underground forums and publicly exposed cloud/database material described in the source file.
+- **Sources:** ransomware data-leak sites, OSINT, underground forums, supplied samples and publicly exposed cloud/database material described in the source file.
 - **Inclusion:** African victim, operation or data exposure with an identifiable country and organization/context.
 - **Typology:** Ransomware, Data Leak, Access Sale and Defacement. A publication is not treated as confirmation unless the available evidence supports that assessment.
 - `victims.md` is the single source of truth for all counts in this report.
@@ -35,29 +35,31 @@ AFRINTEL recorded **6 incidents** involving African entities in August 2026: **1
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 6 |
-| Countries affected | 4 |
-| Observed actors / sources | 5 |
-| Ransomware | 1 (16.7%) |
-| Data Leaks | 4 (66.7%) |
-| Access Sales | 1 (16.7%) |
+| Total incidents | 8 |
+| Countries affected | 5 |
+| Observed actors / sources | 7 |
+| Ransomware | 3 (37.5%) |
+| Data Leaks | 4 (50.0%) |
+| Access Sales | 1 (12.5%) |
 | Defacement | 0 (0.0%) |
 
 ### Country ranking
 
 | Country | Incidents | Distribution |
 |---|---:|---|
-| 🇰🇪 Kenya | 2 | ███ 33.3% |
-| 🇿🇦 South Africa | 2 | ███ 33.3% |
-| 🇩🇿 Algeria | 1 | ██ 16.7% |
-| 🇲🇺 Mauritius | 1 | ██ 16.7% |
+| 🇿🇦 South Africa | 3 | ██████ 37.5% |
+| 🇰🇪 Kenya | 2 | ████ 25.0% |
+| 🇩🇿 Algeria | 1 | ██ 12.5% |
+| 🇲🇺 Mauritius | 1 | ██ 12.5% |
+| 🇳🇬 Nigeria | 1 | ██ 12.5% |
 
 ```pie
 title Incidents by country — August 2026
+"South Africa" : 3
 "Kenya" : 2
-"South Africa" : 2
 "Algeria" : 1
 "Mauritius" : 1
+"Nigeria" : 1
 ```
 
 ### Incident type by country
@@ -67,8 +69,9 @@ title Incidents by country — August 2026
 | Algeria | 0 | 0 | 1 | 0 |
 | Kenya | 0 | 2 | 0 | 0 |
 | Mauritius | 1 | 0 | 0 | 0 |
-| South Africa | 0 | 2 | 0 | 0 |
-| **Total** | **1** | **4** | **1** | **0** |
+| Nigeria | 1 | 0 | 0 | 0 |
+| South Africa | 1 | 2 | 0 | 0 |
+| **Total** | **3** | **4** | **1** | **0** |
 
 🟧 Ransomware | 🟦 Data Leaks | 🟨 Access Sales | 🟥 Defacement
 
@@ -77,22 +80,27 @@ title Incidents by country — August 2026
 | Region | Incidents |
 |---|---:|
 | East Africa | 3 |
-| Southern Africa | 2 |
+| Southern Africa | 3 |
 | North Africa | 1 |
+| West Africa | 1 |
 
 ### Sector distribution
 
 | Sector | Incidents | Share |
 |---|---:|---:|
-| Finance / Banking | 3 | 50.0% |
-| Government / Administration | 2 | 33.3% |
-| Human Resources / Recruitment | 1 | 16.7% |
+| Finance / Banking | 3 | 37.5% |
+| Government / Administration | 2 | 25.0% |
+| Human Resources / Recruitment | 1 | 12.5% |
+| Logistics / Courier Services | 1 | 12.5% |
+| Media / Publishing | 1 | 12.5% |
 
 ```pie
 title Incidents by sector — August 2026
 "Finance / Banking" : 3
 "Government / Administration" : 2
 "Human Resources / Recruitment" : 1
+"Logistics / Courier Services" : 1
+"Media / Publishing" : 1
 ```
 
 ### Most prolific actors / sources
@@ -102,14 +110,16 @@ title Incidents by sector — August 2026
 | exfilar | Data Leak | 2 | SnapStar Talent; mpowa.mobi |
 | Florence | Access Sale | 1 | Ministry of Commerce (Algeria) |
 | incransom | Ransomware | 1 | SpearFin Ltd |
+| medusalocker | Ransomware | 1 | The Courier Guy |
 | NullSec Nigeria | Data Leak | 1 | South African Reserve Bank |
 | OriginalCrazyOldFart | Data Leak | 1 | Unidentified Kenyan PAYGO platform |
+| Panzer | Ransomware | 1 | Daily Trust |
 
 ## 4. Detailed analysis by incident type
 
 ### 4.1 Ransomware
 
-One ransomware publication was recorded. SpearFin Ltd was listed by incransom with a claimed 416 GB archive and a claimed leak date of 26 June 2026. The supplied screenshots display document thumbnails presented as samples and indicate that full publication was still forthcoming. The underlying files were not reviewed, and the available material does not establish encryption, operational disruption, the claimed volume or independent victim confirmation.
+Three separate ransomware publications were recorded. SpearFin Ltd in Mauritius was listed by incransom with a claimed 416 GB archive and a claimed leak date of 26 June 2026. The supplied screenshots display identity, KYC, corporate, administrative and financial document thumbnails presented as samples. One enlarged contractual sample is dated in June 2026, contains a Mauritius registered-office reference, a seven-figure USD capital commitment and fund-related fee and performance clauses. This visual analysis supports a medium-confidence assessment that part of the material is target-specific, but the original files were unavailable and full publication was still announced as forthcoming. Daily Trust in Nigeria was listed by Panzer with a claimed 320 GB volume and an active countdown. AFRINTEL's read-only review of the supplied workbook found 443 primary account-reset records, 438 populated password fields and 444 distinct target-domain addresses across both sheets. This provides high confidence that the sample is target-specific, but it does not establish that the values remain valid, validate the claimed volume or prove how the material was obtained. The Courier Guy in South Africa is a distinct medusalocker entry claiming 2,018 extracted emails while listing published data as “N/D”; no sample, deadline, ransom price or data release is visible. No observed evidence links the three victims or actor publications. None of the cases establishes encryption, operational disruption, complete exfiltration or independent victim confirmation.
 
 ### 4.2 Data leaks and access sales
 
@@ -117,19 +127,20 @@ Four data leaks and one access sale were recorded. The South African entries con
 
 ## 5. Sectoral impact
 
-Finance / Banking represents **3 of 6 incidents (50.0%)**, associated with the Kenyan PAYGO records, the South African central-bank claim and the SpearFin ransomware publication. Government / Administration represents **2 incidents (33.3%)**, covering the Algerian access-sale claim and the South African youth-services exposure. Human Resources / Recruitment represents **1 incident (16.7%)**, the SnapStar Talent data-sale claim.
+Finance / Banking represents **3 of 8 incidents (37.5%)**, associated with the Kenyan PAYGO records, the South African central-bank claim and the SpearFin ransomware publication. Government / Administration represents **2 incidents (25.0%)**, covering the Algerian access-sale claim and the South African youth-services exposure. Human Resources / Recruitment, Logistics / Courier Services and Media / Publishing each represent **1 incident (12.5%)**, respectively the SnapStar Talent data-sale claim, The Courier Guy ransomware entry and the Daily Trust ransomware publication.
 
 ## 6. Threat actor profile
 
-Five distinct actors or publication sources are recorded. exfilar appears in two data-leak entries across Kenya and South Africa involving allegedly exposed cloud-hosted application data. incransom accounts for the single ransomware publication. These observations do not establish a common intrusion chain or broader campaign relationship.
+Seven distinct actors or publication sources are recorded. exfilar appears in two data-leak entries across Kenya and South Africa involving allegedly exposed cloud-hosted application data. incransom is associated with the SpearFin publication in Mauritius, Panzer with Daily Trust in Nigeria and medusalocker with The Courier Guy in South Africa. No available evidence links those ransomware cases, their victims or their actor publications. These observations do not establish a common intrusion chain or broader campaign relationship.
 
 ### 6.1 Risk assessment
 
 | Country | Risk | Rationale |
 |---|---|---|
 | 🇰🇪 Kenya | 🔴 High | Two records involve sensitive financing data and an alleged large-scale recruitment dataset containing identity, CV and video-interview material. |
-| 🇿🇦 South Africa | 🔴 High | The month includes exposed youth records and API-key entries, plus a separate unverified claim naming the central bank. |
-| 🇲🇺 Mauritius | 🔴 High | The SpearFin publication displays samples presented as sensitive identity, KYC, corporate and financial documents; authenticity, completeness and the claimed volume remain unconfirmed. |
+| 🇿🇦 South Africa | 🔴 High | The month includes exposed youth records and API-key entries, an unverified medusalocker claim concerning 2,018 emails at The Courier Guy, and a separate unverified claim naming the central bank. |
+| 🇲🇺 Mauritius | 🔴 High | The SpearFin publication displays a detailed Mauritius-linked contractual sample and thumbnails presented as sensitive identity, KYC, corporate and financial documents; the original files, completeness and claimed volume remain unverified. |
+| 🇳🇬 Nigeria | 🔴 High | The Daily Trust sample contains a target-specific account-reset structure with hundreds of populated password fields; current credential validity, acquisition method and the claimed 320 GB volume remain unverified. |
 | 🇩🇿 Algeria | 🟠 Medium | Government VPN access was advertised, but the claim and access validity remain unverified. |
 
 ## 7. Key trends and intelligence gaps
@@ -137,8 +148,10 @@ Five distinct actors or publication sources are recorded. exfilar appears in two
 - Misconfigured cloud databases and storage services remain a material exposure path.
 - Recruitment data combines identity, employment, compensation and recorded-image material, increasing fraud, impersonation and privacy risks.
 - The SpearFin publication illustrates third-party concentration risk in fund administration: one alleged archive may contain records concerning multiple managed entities and investors.
+- The visible SpearFin contractual sample contains fund-administration, capital-commitment and fee-structure markers, but screenshot-only review cannot authenticate the underlying file or establish acquisition.
+- The Daily Trust workbook illustrates the risk created by storing account-reset records and password values in spreadsheets; structural authenticity does not establish that the credentials remain current.
 - exfilar appears in two observed publications involving cloud-hosted application data; the available material does not prove a shared intrusion chain.
-- Intelligence gaps include the exact Kenyan PAYGO operator, the validity and privileges of the Algerian access, the authenticity and completeness of the SnapStar Talent and SpearFin material, the central-bank claim, and whether related production environments remain exposed.
+- Intelligence gaps include the exact Kenyan PAYGO operator, the validity and privileges of the Algerian access, the authenticity and completeness of the SnapStar Talent and SpearFin material, the current validity and origin of the Daily Trust credential values, the absence of a visible sample for The Courier Guy, the central-bank claim, and whether related production environments remain exposed.
 
 ## 8. MITRE ATT&CK mapping (contextual)
 
@@ -148,7 +161,7 @@ Five distinct actors or publication sources are recorded. exfilar appears in two
 | Collection | T1530 | Data from Cloud Storage | Cloud-hosted files are described in the Kenyan PAYGO record and the SnapStar Talent claim. |
 | Collection | T1213.006 | Databases | Customer, application and candidate records were reportedly accessible in database repositories. |
 
-These are contextual defensive mappings, not proof of the actors' complete intrusion chains. No ATT&CK technique is assigned to the SpearFin entry because the screenshots do not establish the initial-access, collection, exfiltration or encryption method.
+These are contextual defensive mappings, not proof of the actors' complete intrusion chains. No ATT&CK technique is assigned to the SpearFin, Daily Trust or The Courier Guy entries because the available material does not establish the initial-access, collection, exfiltration or encryption method.
 
 ## 9. Recommendations
 
@@ -156,6 +169,8 @@ These are contextual defensive mappings, not proof of the actors' complete intru
 - Cloud and application teams: deny public reads by default, continuously test Firestore/Firebase/database rules and rotate exposed API keys immediately.
 - Financial and PAYGO operators: minimize exported customer fields, encrypt backups, monitor public object storage and prepare customer-notification procedures.
 - Fund administrators and corporate-service providers: isolate KYC repositories, enforce least privilege, review third-party access and prepare coordinated notification procedures for affected managed entities.
+- Logistics and courier operators: restrict bulk exports of contact directories, enforce phishing-resistant MFA for email and identity systems, and require out-of-band verification for sensitive requests following public exposure claims.
+- Media and publishing organizations: prohibit spreadsheet-based password distribution, force-reset exposed accounts, revoke active sessions, enforce phishing-resistant MFA and protect editorial systems and source communications through segmentation and least privilege.
 - Recruitment and HR platforms: segregate identity documents and recorded interviews, shorten signed-URL lifetimes, restrict bulk exports and implement privacy-focused retention controls.
 
 ## 10. SOC and tactical recommendations
@@ -165,14 +180,16 @@ These are contextual defensive mappings, not proof of the actors' complete intru
 - Detect API-key use from new IP ranges, unexpected user agents or services outside approved workloads.
 - Hunt for bulk access to candidate, customer, CV, photograph and video-interview records, including unusually high signed-URL generation or download volumes.
 - Monitor KYC, document-management and file-share telemetry for unusual bulk reads, archive creation and large outbound transfers, without treating those signals alone as proof of ransomware activity.
+- Monitor unusual directory exports, mailbox enumeration, forwarding-rule creation and phishing campaigns impersonating courier or logistics personnel.
+- For accounts represented in exposed credential material, revoke sessions and tokens, reset credentials through a trusted channel, review identity-provider and mailbox logs, and investigate anomalous password resets, MFA changes and forwarding rules.
 
 ## 11. Strategic recommendations
 
-Maintain an inventory of internet-exposed assets and data stores, require security review of staging and production environments, and establish recurring external-exposure assessments for government-adjacent, financial, fund-administration and recruitment platforms. Treat exposed personal, financial and employment data as an incident requiring coordinated legal, privacy and customer- or candidate-protection review.
+Maintain an inventory of internet-exposed assets and data stores, require security review of staging and production environments, and establish recurring external-exposure assessments for government-adjacent, financial, fund-administration, recruitment, logistics and media platforms. Treat exposed personal, financial, employment and credential data as an incident requiring coordinated security, legal, privacy and affected-user protection review.
 
 ## 12. Conclusion
 
-August 2026 contains **6 recorded incidents**: one ransomware publication, four data-leak entries and one access-sale claim. Although several publications remain unconfirmed, the sensitivity and scale of the claimed identity, employment, financial and government data warrant immediate defensive validation by potentially affected organizations.
+August 2026 contains **8 recorded incidents**: three ransomware publications, four data-leak entries and one access-sale claim. Although several publications remain unconfirmed, the sensitivity and scale of the claimed identity, credential, employment, financial and government data warrant immediate defensive validation by potentially affected organizations.
 
 — **AFRINTEL**  
 [GitHub repository](https://github.com/Hatchepsoute/AFRINTEL)

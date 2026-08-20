@@ -18,6 +18,10 @@ En juin 2024, l’Afrique a enregistré **3 victimes** documentées d’attaques
 - 🔹 **Pays touchés** : Afrique du Sud (2), Congo (1)
 - 🔹 **Secteurs** : Agriculture/agrobusiness (1), Services (1), Services juridiques / Avocats (1)
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **0 fiches** (0.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

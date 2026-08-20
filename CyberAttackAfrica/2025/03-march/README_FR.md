@@ -91,7 +91,7 @@ pie title Répartition par pays
 <!-- AFRINTEL_CURRENT_MODEL_START -->
 ### 3.4 Vue globale standardisée
 
-| Pays | Ransomware | Fuites / accès | Total | Distribution |
+| Pays | Ransomware | Exposition des données (fuites + accès) | Total | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | 🇪🇬 Égypte | 3 | 0 | 3 | 🟧🟧🟧 |
 | 🇳🇬 Nigeria | 1 | 1 | 2 | 🟧 🟦 |
@@ -104,12 +104,17 @@ pie title Répartition par pays
 ```pie
     title Types d’incidents
     "Ransomware" : 9
-    "Fuites et accès" : 2
+    "Fuites de données + ventes d’accès" : 2
 ```
+
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **2 fiches** (18,2% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 
 ### Répartition géographique par région
 
-| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
+| Région | Occurrences | Ransomware | Exposition des données (fuites + accès) | Distribution |
 | :--- | ---: | ---: | ---: | :--- |
 | Afrique du Nord | 3 | 3 | 0 | 🟧🟧🟧 |
 | Afrique australe | 3 | 3 | 0 | 🟧🟧🟧 |
@@ -119,11 +124,11 @@ pie title Répartition par pays
 ```mermaid
 xychart-beta
     title "Occurrences par région"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 4
     bar [3,3,3,2]
 ```
-Légende : 1 = Afrique du Nord; 2 = Afrique australe; 3 = Afrique de l’Ouest et centrale; 4 = Afrique de l’Est
+Légende : NA = Afrique du Nord ; SA = Afrique australe ; WC = Afrique de l’Ouest et centrale ; EA = Afrique de l’Est
 
 ### Répartition sectorielle
 

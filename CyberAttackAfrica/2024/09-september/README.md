@@ -21,6 +21,10 @@ September 2024 records **5 documented incidents** across 5 distinct countries, t
 - 🔹 **Countries affected**: Senegal (1), Cameroon (1), Mauritius (1), Tunisia (1), Nigeria (1)
 - 🔹 **Sectors**: Technologies, Government/Social Security, Telecommunications, Manufacturing, Defense/National Security
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (20.0% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ### 2. Attack timeline

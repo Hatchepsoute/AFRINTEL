@@ -4,6 +4,10 @@
 **Project:** AFRINTEL (African Threat Intelligence Repository)
 👉🏾 [Version française disponible ici](./README_FR.md)
 
+### Monthly aggregate exposure view
+
+The monthly CTI view combines data leaks and access sales as **data exposure**: **1 records** (12.5% of the monthly corpus). Source cards remain authoritative; an access sale does not by itself prove data exfiltration.
+
 ---
 
 ## 1. EXECUTIVE SUMMARY

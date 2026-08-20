@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (6 victims)
+# List of African cyberattack victims in August 2026 (8 victims)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
@@ -110,6 +110,90 @@
 
   The full post identifies mpowa.mobi as item "11/25" of an ongoing campaign, describing a proprietary tool ("CredHarvest V6") used to mass-scan and harvest exposed Firebase Realtime Database instances, and states that hundreds of similar databases have already been acquired through the same method. The actor advertises both the sale of this scanning tool and separate paid intrusion/access services on the same forum. This indicates mpowa.mobi is one victim within a broader, systematic campaign targeting misconfigured Firebase deployments, and that comparable exposures likely affect other African organizations using the same backend, independent of any targeting specific to mpowa.mobi.
 
+### 08 August 2026
+#### 🇳🇬 Nigeria - Daily Trust
+
+- **Initial publication date:** 08 August 2026
+- **Source detection date:** 08 August 2026, 19:21:01 (timezone not shown)
+- **AFRINTEL detection date:** 11 August 2026
+- **Actor / Group:** Panzer
+- **Sector:** Media / Publishing / Broadcasting
+- **Website:** [dailytrust.com](https://dailytrust.com)
+- **AFRINTEL status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence level:** High
+- **Impact level:** Level 4
+
+- **Description:**
+
+  Daily Trust is a Nigerian news and publishing organisation operated by Media Trust Limited. Its services include print and online journalism, Trust TV and Trust Radio.
+
+- **Analysis:**
+
+  **Observed:** An observed source record identifies Daily Trust, the Panzer criminal group, Nigeria and `dailytrust.com`, with a detection timestamp of 8 August 2026 at 19:21:01 and published data marked “N/D”. A separate Panzer listing dated 8 August claims 320 GB, offers a downloadable sample and displayed an active countdown with 17 days, 11 hours, 3 minutes and 44 seconds remaining when captured on 11 August. The exact deadline and timezone are not stated in the supplied material.
+
+  AFRINTEL examined the complete supplied `sample.xlsx` workbook in read-only mode. The 44,996-byte file has SHA-256 `83516d93de48d2e53465071a418e50dd4b678baedef05277ab93ebb6f0034fa6` and contains two worksheets. The primary sheet contains 443 non-empty records under the fields Name, Email Address, New Password, Comments and Status. All 443 email-address cells use the victim's domain and are unique; 438 rows contain a value in the New Password field. The secondary sheet contains 19 target-domain address entries, 18 of which overlap the primary sheet, yielding 444 distinct target-domain addresses across the address fields. Neither sheet contains formulas or duplicate full rows. The workbook also contains 461 external HTTP hyperlinks pointing to the victim's domain; AFRINTEL did not follow them. An embedded `jsaProject.bin` component was identified but not executed. No name, email address, password value, comment, status value or hyperlink target from the sample is reproduced.
+
+  **Assumption:** The structured account-reset schema, exclusive use of the victim's domain in the address fields, consistent cross-sheet relationships and target-domain hyperlinks provide high confidence that the sample is associated with Daily Trust. If the password values remain valid, the material could enable account takeover, business email compromise, impersonation, targeted phishing and access to confidential editorial, source or business communications. This assessment concerns the sample's structural authenticity and attribution; it does not confirm how Panzer obtained it.
+
+  **Unknown:** AFRINTEL has not established whether the password values are current, temporary, previously used or already revoked, nor whether the workbook represents all Daily Trust accounts. The sample contains no reliable record-level date range and does not validate the claimed 320 GB volume. The initial-access method, extraction method, any encryption or operational disruption, the exact disclosure deadline, full-data publication, victim confirmation, negotiation, ransom payment and resale status remain unknown. The observed listing and coherent sample therefore do not constitute official confirmation of a ransomware intrusion or complete exfiltration.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-08T19:21:01
+listing_last_observed_at: 2026-08-11T01:56:25+01:00
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: active
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-20T01:35:32+01:00
+-->
+
+### 16 August 2026
+#### 🇿🇦 South Africa - The Courier Guy
+
+- **Initial publication date:** Not specified
+- **Source detection date:** 16 August 2026, 15:19:49 (timezone not shown)
+- **AFRINTEL detection date:** 19 August 2026
+- **Actor / Group:** medusalocker
+- **Sector:** Logistics / Courier Services
+- **Website:** [thecourierguy.co.za](https://thecourierguy.co.za)
+- **AFRINTEL status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Confidence level:** Low
+- **Impact level:** Level 2
+
+- **Description:**
+
+  The Courier Guy is a South African courier and logistics organisation. An observed source record attributes a ransomware-related entry concerning `thecourierguy.co.za` to medusalocker.
+
+- **Analysis:**
+
+  **Observed:** The supplied source record names “Thecourierguy”, identifies the criminal group as medusalocker, locates the target in South Africa and gives `thecourierguy.co.za` as the target domain. It displays a detection timestamp of 16 August 2026 at 15:19:49, without a visible timezone, lists published data as “N/D”, and claims that 2,018 emails were extracted. The record does not display a sample, publication deadline, ransom price or downloadable release.
+
+  **Assumption:** The matching organisation name and domain support the assessment that the publication is target-specific. If the claim is accurate, a list of corporate or customer email addresses could facilitate phishing, business email compromise, credential attacks and impersonation. The screenshot alone does not establish that medusalocker obtained those addresses.
+
+  **Unknown:** No visible sample corroborates the figure of 2,018 emails or establishes the nature, ownership, uniqueness or current validity of any alleged records. The publication date, initial-access and acquisition methods, encryption or operational disruption, victim confirmation, negotiation, ransom payment, disclosure and resale status remain unknown. This entry is separate from the incransom publication concerning SpearFin Ltd in Mauritius.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-16T15:19:49
+listing_last_observed_at: 2026-08-19T05:35:53+01:00
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-19T05:35:53+01:00
+-->
+
 ### 17 August 2026
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
@@ -158,11 +242,28 @@
 
 - **Analysis:**
 
-  **Observed:** The supplied screenshots show a publication attributed to incransom that names SpearFin Ltd, identifies `spearfin.net` and locates the target in Mauritius. The post is dated 18 August 2026 and claims that a leak occurred on 26 June 2026, with 416 GB of data obtained. It lists non-disclosure agreements, client correspondence, KYC material, identity documents, certificates, investment and shareholder records, AML audit material, agreements, application forms, bank statements, payroll, loan documents and registers of directors. The publication displays multiple document thumbnails presented as samples, including identity, corporate, administrative and financial material, and states that full publication is forthcoming. The assessment is limited to the supplied screenshots; the underlying documents were not accessed or downloaded.
+  **Observed:** The supplied screenshots show a publication attributed to incransom that names SpearFin Ltd, identifies `spearfin.net` and locates the target in Mauritius. The post is timestamped 18 August 2026 at 09:35, without a visible timezone, and claims that a leak occurred on 26 June 2026, with 416 GB of data obtained. It lists non-disclosure agreements, client correspondence, KYC material, identity documents, certificates, investment and shareholder records, AML audit material, agreements, application forms, bank statements, payroll, loan documents and registers of directors. It also claims USD 10 billion in assets under administration and USD 30 million in revenue. These figures have not been independently verified.
 
-  **Assumption:** The visible document set is broadly consistent with the activities attributed to a fund-administration and corporate-services provider, which supports a medium-confidence assessment that the claim is target-specific. If authentic, the combination of KYC, banking, payroll, corporate-governance and investment records would create a high risk of identity fraud, business email compromise, payment fraud, targeted phishing and compromise of third-party confidentiality. This assessment does not authenticate every thumbnail or establish the completeness of the claimed archive.
+  The publication displays multiple document thumbnails presented as samples, including identity, corporate, administrative and financial material. One enlarged sample is a seven-section contributor confirmation/acknowledgment annex dated in June 2026. The visible text contains a Mauritius registered-office reference, a seven-figure USD capital commitment, and clauses covering unit class, management fees, operating expenses, hurdle rate and performance fees; a corporate seal is partly visible. These structural elements are consistent with fund-administration and investment documentation. Names, addresses, exact financial amounts, identity documents and other confidential values visible in the samples are not reproduced. The publication states that full disclosure is forthcoming. Analysis is limited to the data visible in the provided sample; the original source files were not available, accessed or downloaded.
 
-  **Unknown:** No independent evidence confirms unauthorised access, data exfiltration, ransomware encryption, operational disruption, the claimed 416 GB volume, the alleged 26 June 2026 leak date, the stated financial figures, or publication of a complete archive. No victim statement or independent technical evidence was supplied. The record therefore documents an observed ransomware-site publication with visible samples, not a confirmed compromise or confirmed full disclosure. Client names, identity documents, banking details and other personal or confidential data visible in the source are not reproduced.
+  **Assumption:** The combination of target-specific publication details, a Mauritius-linked contractual sample, coherent investment-fund terminology, recent contractual dates and multiple document categories supports a medium-confidence assessment that at least part of the visible material is associated with the services attributed to SpearFin. If authentic, the combination of KYC, identity, banking, payroll, corporate-governance and investment records would create a high risk of identity fraud, business email compromise, payment fraud, targeted phishing and compromise of client and investor confidentiality. This assessment does not authenticate each thumbnail, signature or seal and does not establish how the material was obtained.
+
+  **Unknown:** Because the original files are unavailable, AFRINTEL could not examine metadata, signatures, seals, document completeness, duplicate rates, internal consistency across the full sample set or possible manipulation. No independent evidence confirms unauthorised access, data exfiltration, ransomware encryption, operational disruption, the claimed 416 GB volume, the alleged 26 June 2026 leak date, the stated financial figures or publication of a complete archive. No victim statement or independent technical evidence was supplied. The record therefore documents an observed incransom publication with visible samples concerning a distinct Mauritian victim, not a confirmed compromise or confirmed full disclosure.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-18T09:35:00
+listing_last_observed_at: 2026-08-18T21:15:30+01:00
+sample_status: preview-visible
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-19T06:02:04+01:00
+-->
 
 ## Notes (not counted in the monthly victim total)
 

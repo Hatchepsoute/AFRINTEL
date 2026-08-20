@@ -3,7 +3,7 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Juillet 2025 (20 victimes)
+# Liste des victimes africaines de cyberattaques en Juillet 2025 (21 victimes)
 👉🏾 [**English version available here**](./victims.md)
 ## Juillet 2025
 
@@ -107,7 +107,7 @@
 - **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 3
 - **Description victime:** Adrian Group (Adrian Kenya) est un leader kényan de l'ingénierie technologique.
-- **Analyse :** AFRINTEL a examiné un petit échantillon local de quatre documents associés à cette revendication : une facture d'un prestataire pour des travaux d'installation de site télécom (antennes, câbles de liaison et installation RRU) adressée à Adrian Kenya, un avis de paiement de TVA de la Kenya Revenue Authority (KRA) pour Adrian Group Limited couvrant janvier à mars 2025, une note de crédit d'un fournisseur de carburant adressée à Adrian Kenya Limited comportant des informations de véhicules, bancaires et de règlement, ainsi qu'un fil d'emails internes entre des collaborateurs d'Adrian Kenya et d'Adrian Group (domaines adriankenya.com et adriangroup.tech) évoquant le déploiement d'un site télécom au niveau d'un entrepôt. Les documents sont cohérents entre eux, référencent les mêmes noms d'entreprise, domaines et contexte de projet, et contiennent des identifiants personnels complets, des coordonnées bancaires et un numéro fiscal, qu'AFRINTEL ne reproduit pas ici. L'échantillon indique une exposition de documents financiers, fiscaux, fournisseurs et de correspondance interne, mais sa portée se limite à quatre documents et ne permet pas d'établir le volume total ni l'étendue de la compromission sous-jacente. AFRINTEL ne confirme pas l'intrusion de façon indépendante.
+- **Analyse :** AFRINTEL a examiné un échantillon local de quatre documents associés à cette revendication : une facture d'installation de site télécom, un avis de paiement de TVA de la KRA, une note de crédit d'un fournisseur de carburant et un fil d'emails internes concernant le déploiement d'un site télécom. Les documents sont cohérents entre eux, référencent les mêmes noms, domaines et contexte de projet Adrian Kenya/Adrian Group, et présentent des données financières, fiscales, fournisseurs et de correspondance interne. AFRINTEL ne reproduit pas les identifiants personnels, coordonnées bancaires ni le numéro fiscal visibles dans l'échantillon. Cette analyse est limitée aux quatre documents examinés ; AFRINTEL n'a pas consulté de divulgation ultérieure ni de fichiers supplémentaires publiés par le groupe.
 
 ### 15 Juillet 2025
 #### 🇪🇬 Égypte - Egyptian Electricity Holding Company (EEHC, eehc.gov.eg)
@@ -231,6 +231,23 @@
 - **Note de double revendication :**
   AFRINTEL a recensé séparément, le 18 juin 2025, une revendication concernant la plateforme Massar du ministère. Les acteurs et les jeux de données annoncés diffèrent, et les éléments disponibles ne permettent pas d’établir que les deux publications proviennent de la même compromission.
 
+### 30 Juillet 2025
+#### 🇧🇮 Burundi - PesaBay
+
+- **Type d'incident :** Fuite de données
+- **Acteur / Groupe :** BabayoSysteam
+- **Secteur :** Commerce / E-commerce
+- **Statut :** Data Fully Published
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 2
+- **Site web :** [pesabay.bi](https://pesabay.bi)
+
+- **Description :**
+  PesaBay est une place de marché électronique burundaise exploitée par AFRIREGISTER S.A. Elle permet à des vendeurs de publier des produits et à des utilisateurs d'acheter ou de prendre contact avec les commerçants présents sur la plateforme.
+
+- **Analyse :**
+  Une publication attribuée au compte BabayoSysteam, datée du 30 juillet 2025, met à disposition une base de données PesaBay présentée comme complète et contenant 1 850 enregistrements. Les champs publiés comprennent le prénom, le nom, l'adresse e-mail, le numéro de téléphone et le statut du compte. La présence de nombreux numéros utilisant l'indicatif burundais `+257`, combinée à l'identité visuelle de PesaBay et à la structure cohérente des enregistrements, étaye avec une confiance moyenne l'attribution du jeu de données à la plateforme. AFRINTEL classe donc le cas `Data Fully Published`. Cette qualification décrit la publication du jeu annoncé comme complet ; elle ne confirme pas indépendamment la méthode d'acquisition, l'intrusion initiale, l'unicité des lignes ni la couverture de l'ensemble de la base de production de PesaBay. Les données de contact publiées présentent un risque de phishing ciblé, de fraude, de spam et d'usurpation d'identité numérique, correspondant à un impact de niveau 2. Aucun nom, e-mail, numéro de téléphone ni autre donnée personnelle brute n'est reproduit.
+
 ---
 [Rapport de Juillet 2025](./report/README_FR.md)
 ---
@@ -241,4 +258,3 @@
 
 ---
 *AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*
-

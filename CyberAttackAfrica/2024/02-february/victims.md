@@ -31,7 +31,7 @@
 - **Website:** [arpuplus.com](https://www.arpuplus.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
-- **Impact level:** Level 3
+- **Impact level:** Level 2
 - **Victim description:** ArpuPlus, founded in 2003 in Cairo as a subsidiary of A15, is a leading digital venture builder and mobile services provider across the MENA region. Operating from 11 regional offices, it delivers value-added systems including video-on-demand, music distribution, telehealth, and enterprise messaging solutions.
 
 ----------------------------

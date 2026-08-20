@@ -1212,6 +1212,23 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Double-claim note:**
   AFRINTEL separately recorded a June 18, 2025 claim involving the ministry’s Massar platform. The actors and advertised datasets differ, and available evidence does not establish that both publications derive from the same compromise.
 
+### 30 July 2025
+#### 🇧🇮 Burundi - PesaBay
+
+- **Incident type:** Data Leak
+- **Actor / Group:** BabayoSysteam
+- **Sector:** Retail / E-commerce
+- **Status:** Data Fully Published
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Website:** [pesabay.bi](https://pesabay.bi)
+
+- **Description:**
+  PesaBay is a Burundian online marketplace operated by AFRIREGISTER S.A. It enables sellers to list products and users to buy from or contact merchants using the platform.
+
+- **Analysis:**
+  A post attributed to the BabayoSysteam account, dated July 30, 2025, makes available a PesaBay database presented as complete and containing 1,850 records. The published fields include first name, last name, email address, phone number and account status. The presence of numerous phone numbers using Burundi's `+257` country code, combined with PesaBay branding and a coherent record structure, supports a medium-confidence attribution of the dataset to the platform. AFRINTEL therefore classifies the case as `Data Fully Published`. This classification describes publication of the dataset advertised as complete; it does not independently confirm the acquisition method, the initial intrusion, row uniqueness, or coverage of PesaBay's entire production database. The published contact data creates risks of targeted phishing, fraud, spam and digital impersonation, corresponding to a Level 2 impact. No name, email address, phone number or other raw personal data is reproduced.
+
 ---
 [July 2025 Report](./report/README.md)
 ---

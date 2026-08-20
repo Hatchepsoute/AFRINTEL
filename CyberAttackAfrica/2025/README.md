@@ -7,7 +7,7 @@
 ---
 ## 1. Executive summary
 
-AFRINTEL recorded **196 records** in 2025: **122 ransomware claims (62.2%)**, **71 data leaks (36.2%)**, **3 access sales (1.5%)** and **no defacements**. The observed volume was strongly concentrated in North Africa, with **96 records**, followed by Southern Africa (**43**), West and Central Africa (**38**) and East Africa (**19**).
+AFRINTEL recorded **197 records** in 2025: **122 ransomware claims (61.9%)**, **72 data leaks (36.5%)**, **3 access sales (1.5%)** and **no defacements**. The observed volume was strongly concentrated in North Africa, with **96 records**, followed by Southern Africa (**43**), West and Central Africa (**38**) and East Africa (**20**).
 
 The three most represented countries were **Egypt (33)**, **Morocco (31)** and **South Africa (30)**. This concentration does not necessarily indicate a higher level of compromise in those countries; it reflects the scope of the documented publications and claims collected by AFRINTEL.
 
@@ -17,16 +17,16 @@ The main CTI challenge remains claim qualification: confirming the intrusion, di
 
 ## 2. Methodology
 
-The twelve monthly files are the source of truth. A record is a documented publication or claim. Unconfirmed publications remain claims.
+The twelve monthly `victims.md` files are the source of truth and contain 197 distinct records for 2025. A record is a documented publication or claim, not necessarily a confirmed intrusion or a unique victim. Reposts and separate claims are retained when the monthly source treats them as distinct records; this limitation is stated in the interpretation. Counts are derived from the source files without extrapolation. Countries use ISO alpha-2 codes in charts, while the tables retain standard country names. Sector labels are mapped to one controlled annual vocabulary; missing or genuinely undetermined activity remains explicitly marked. Ransomware, data leaks, access sales and defacements are counted separately. Forum and leak-site publications remain claims unless independently confirmed.
 
 ## 3. Global overview
 
 | Indicator | Value |
 | :--- | ---: |
-| Records | **196** |
-| Ransomware | **122 (62,2%)** |
-| Data leaks | **71 (36,2%)** |
-| Access sales | **3 (1,5%)** |
+| Records | **197** |
+| Ransomware | **122 (61.9%)** |
+| Data leaks | **72 (36.5%)** |
+| Access sales | **3 (1.5%)** |
 
 ### Country ranking
 
@@ -60,31 +60,103 @@ The twelve monthly files are the source of truth. A record is a documented publi
 | 26 | 🇬🇦 Gabon | 1 | █ |
 | 27 | 🇲🇬 Madagascar | 1 | █ |
 | 28 | 🇷🇼 Rwanda | 1 | █ |
+| 29 | 🇧🇮 Burundi | 1 | █ |
 
 ```mermaid
 xychart-beta
     title "Top 10 - All incidents"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["EG","MA","ZA","DZ","NG","TN","KE","MR","ZM","GH"]
     y-axis "Records" 0 --> 34
     bar [33,31,30,19,14,13,10,8,4,3]
 ```
+
+Legend: EG = Egypt; MA = Morocco; ZA = South Africa; DZ = Algeria; NG = Nigeria; TN = Tunisia; KE = Kenya; MR = Mauritania; ZM = Zambia; GH = Ghana
 
 ### Incident type distribution
 
 | Type | Records | Share |
 | :--- | ---: | ---: |
-| Ransomware | 122 | 62,2% |
-| Data leak | 71 | 36,2% |
-| Access sale | 3 | 1,5% |
-| **Total** | **196** | **100%** |
+| Ransomware | 122 | 61.9% |
+| Data leak | 72 | 36.5% |
+| Access sale | 3 | 1.5% |
+| Defacement | 0 | 0,0% |
+| **Total** | **197** | **100%** |
 
 ```mermaid
 pie
     title Types d’incidents - 2025
     "Ransomware" : 122
-    "Data leaks" : 71
+    "Data leaks" : 72
     "Access sales" : 3
 ```
+
+### Aggregate data-exposure view
+
+Data leaks and access sales are combined here for an exposure-oriented view: **72 data leaks + 3 access sales = 75 records**. The detailed counters above remain separate because an access sale does not by itself prove that data were exfiltrated.
+
+| Aggregate category | Records | Share of corpus |
+| :--- | ---: | ---: |
+| Data leaks + access sales | **75** | **38.1%** |
+
+This aggregate is a derived view and must not be added to the 197-record total a second time.
+
+### Ransomware country ranking
+
+| Rank | Country | ISO | Records | Colour bar |
+|---:|---|:---:|---:|---|
+| 1 | Egypt | EG | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 2 | South Africa | ZA | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 3 | Morocco | MA | 12 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 4 | Nigeria | NG | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 5 | Kenya | KE | 8 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
+| 6 | Tunisia | TN | 6 | 🟧🟧🟧🟧🟧🟧 |
+| 7 | Algeria | DZ | 4 | 🟧🟧🟧🟧 |
+| 8 | Zambia | ZM | 4 | 🟧🟧🟧🟧 |
+| 9 | Namibia | NA | 3 | 🟧🟧🟧 |
+| 10 | Tanzania | TZ | 3 | 🟧🟧🟧 |
+| 11 | Botswana | BW | 2 | 🟧🟧 |
+| 12 | Ghana | GH | 2 | 🟧🟧 |
+| 13 | Mauritius | MU | 2 | 🟧🟧 |
+| 14 | Uganda | UG | 2 | 🟧🟧 |
+| 15 | Zimbabwe | ZW | 2 | 🟧🟧 |
+| 16 | Cameroon | CM | 1 | 🟧 |
+| 17 | Congo (DRC) | CD | 1 | 🟧 |
+| 18 | Ivory Coast | CI | 1 | 🟧 |
+| 19 | Gabon | GA | 1 | 🟧 |
+| 20 | Madagascar | MG | 1 | 🟧 |
+| 21 | Rwanda | RW | 1 | 🟧 |
+| 22 | Senegal | SN | 1 | 🟧 |
+
+### Data-leak country ranking
+
+| Rank | Country | ISO | Records | Colour bar |
+|---:|---|:---:|---:|---|
+| 1 | Morocco | MA | 19 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 2 | Algeria | DZ | 15 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 3 | Mauritania | MR | 8 | 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 4 | Tunisia | TN | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
+| 5 | Egypt | EG | 5 | 🟦🟦🟦🟦🟦 |
+| 6 | Nigeria | NG | 5 | 🟦🟦🟦🟦🟦 |
+| 7 | Ivory Coast | CI | 2 | 🟦🟦 |
+| 8 | Kenya | KE | 2 | 🟦🟦 |
+| 9 | South Africa | ZA | 2 | 🟦🟦 |
+| 10 | Angola | AO | 1 | 🟦 |
+| 11 | Congo (DRC) | CD | 1 | 🟦 |
+| 12 | Djibouti | DJ | 1 | 🟦 |
+| 13 | Eritrea | ER | 1 | 🟦 |
+| 14 | Ghana | GH | 1 | 🟦 |
+| 15 | Togo | TG | 1 | 🟦 |
+| 16 | Burundi | BI | 1 | 🟦 |
+
+### Access-sale country ranking
+
+| Rank | Country | ISO | Records | Colour bar |
+|---:|---|:---:|---:|---|
+| 1 | Burkina Faso | BF | 1 | 🟨 |
+| 2 | Senegal | SN | 1 | 🟨 |
+| 3 | Togo | TG | 1 | 🟨 |
+
+Legend: 🟧 Ransomware | 🟦 Data leaks | 🟨 Access sales
 
 ### Ransomware, leaks and access sales by country
 
@@ -118,6 +190,7 @@ pie
 | 🇬🇦 Gabon | 1 | 0 | 0 | 1 | █ | 🟧 |
 | 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | █ | 🟧 |
 | 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | █ | 🟧 |
+| 🇧🇮 Burundi | 0 | 1 | 0 | 1 | █ | 🟦 |
 
 ### Geographic distribution by region
 
@@ -126,77 +199,79 @@ pie
 | North Africa | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
 | Southern Africa | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
 | West and Central Africa | 38 | 16 | 22 | 🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| East Africa | 19 | 15 | 4 | 🟧🟧🟧 🟦 |
+| East Africa | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
 
 ```mermaid
 xychart-beta
     title "Occurrences by region - 2025"
-    x-axis ["1","2","3","4"]
+    x-axis ["NA","SA","WC","EA"]
     y-axis "Occurrences" 0 --> 97
-    bar [96,43,38,19]
+    bar [96,43,38,20]
 ```
 
-Legend: 1 = North Africa; 2 = Southern Africa; 3 = West and Central Africa; 4 = East Africa
+Legend: NA = North Africa; SA = Southern Africa; WC = West and Central Africa; EA = East Africa
 
 ### Sector distribution
 
 | Normalized sector | Records | Share | Chart |
 | :--- | ---: | ---: | ---: |
-| Government / Administration | 40 | 20,4% | ██████████ |
-| Finance / Banking | 39 | 19,9% | ██████████ |
-| Technology / IT | 25 | 12,8% | ██████ |
-| Education / University | 17 | 8,7% | ████ |
-| Healthcare / Medical | 14 | 7,1% | ████ |
-| Manufacturing / Industry | 10 | 5,1% | ██ |
-| Transport / Logistics | 10 | 5,1% | ██ |
-| Retail / E-commerce | 8 | 4,1% | ██ |
-| Professional / Business Services | 7 | 3,6% | ██ |
-| Construction / Real Estate | 6 | 3,1% | ██ |
-| Defense / Security | 6 | 3,1% | ██ |
-| Energy / Utilities | 4 | 2,0% | █ |
-| Agriculture / Agribusiness | 3 | 1,5% | █ |
-| Legal / Justice | 2 | 1,0% | █ |
-| Mining | 2 | 1,0% | █ |
-| Not specified | 2 | 1,0% | █ |
-| Civil Society / NGO | 1 | 0,5% | █ |
+| Government / Administration | 40 | 20.3% | ██████████ |
+| Finance / Banking | 39 | 19.8% | ██████████ |
+| Technology / IT | 25 | 12.7% | ██████ |
+| Education / University | 17 | 8.6% | ████ |
+| Healthcare / Medical | 14 | 7.1% | ████ |
+| Manufacturing / Industry | 10 | 5.1% | ██ |
+| Transport / Logistics | 10 | 5.1% | ██ |
+| Retail / E-commerce | 9 | 4.6% | ██ |
+| Professional / Business Services | 7 | 3.6% | ██ |
+| Construction / Real Estate | 6 | 3.0% | ██ |
+| Defense / Security | 6 | 3.0% | ██ |
+| Energy / Utilities | 4 | 2.0% | █ |
+| Agriculture / Agribusiness | 3 | 1.5% | █ |
+| Legal / Justice | 2 | 1.0% | █ |
+| Mining | 2 | 1.0% | █ |
+| Not specified | 2 | 1.0% | █ |
+| Civil Society / NGO | 1 | 0.5% | █ |
 
 ```mermaid
 xychart-beta
-    title "Sector distribution - 2025"
-    x-axis ["1","2","3","4","5","6","7","8"]
+    title "Top 8 sector distribution - 2025"
+    x-axis ["GOV","FIN","TEC","EDU","HEA","MAN","TRA","RET"]
     y-axis "Records" 0 --> 41
-    bar [40,39,25,17,14,10,10,8]
+    bar [40,39,25,17,14,10,10,9]
 ```
 
-Legend: 1 = Technology; 2 = Finance; 3 = Education; 4 = Government; 5 = Retail; 6 = Healthcare; 7 = Manufacturing; 8 = Professional services
+Legend: GOV = Government / Administration; FIN = Finance / Banking; TEC = Technology / IT; EDU = Education / University; HEA = Healthcare / Medical; MAN = Manufacturing / Industry; TRA = Transport / Logistics; RET = Retail / E-commerce
+
+The chart shows the eight largest controlled sectors; the table above is authoritative for the complete 197-record distribution.
 
 ### Incident-type charts
 
 ```mermaid
 xychart-beta
     title "Top 10 ransomware - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["EG","ZA","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
     y-axis "Records" 0 --> 29
     bar [28,28,12,9,8,6,4,4,3,3]
 ```
 
-Legend: 1 = Egypt; 2 = South Africa; 3 = Morocco; 4 = Nigeria; 5 = Kenya; 6 = Tunisia; 7 = Algeria; 8 = Zambia; 9 = Namibia; 10 = Tanzania
+Legend: EG = Egypt; ZA = South Africa; MA = Morocco; NG = Nigeria; KE = Kenya; TN = Tunisia; DZ = Algeria; ZM = Zambia; NA = Namibia; TZ = Tanzania
 
 ```mermaid
 xychart-beta
     title "Top 10 leaks and access sales - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["MA","DZ","MR","TN","EG","NG","CI","KE","ZA","TG"]
     y-axis "Records" 0 --> 20
     bar [19,15,8,7,5,5,2,2,2,2]
 ```
 
-Legend: 1 = Morocco; 2 = Algeria; 3 = Mauritania; 4 = Tunisia; 5 = Egypt; 6 = Nigeria; 7 = Ivory Coast; 8 = Kenya; 9 = South Africa; 10 = Togo
+Legend: MA = Morocco; DZ = Algeria; MR = Mauritania; TN = Tunisia; EG = Egypt; NG = Nigeria; CI = Ivory Coast; KE = Kenya; ZA = South Africa; TG = Togo
 
 ## 4. Detailed analysis by incident type
 
-Ransomware claims account for **122 records**, or **62.2%** of the corpus. They were particularly dominant in Southern Africa (**41 records**) and remained the majority in North Africa (**50**), while leaks and access sales reached **46** and **22** records respectively in those two regions.
+Ransomware claims account for **122 records**, or **61.9%** of the corpus. They were particularly dominant in Southern Africa (**41 records**) and remained the majority in North Africa (**50**), while leaks and access sales reached **46** and **22** records respectively in those two regions.
 
-Data leaks and access sales account for **74 records**. Morocco leads with **19 records**, followed by Algeria (**15**), Mauritania (**8**) and Tunisia (**7**). The claimed data involved administrative, financial, healthcare, education and business environments. This distribution shows that data leakage is not only a consequence of ransomware: it also appears as an independent risk involving exposed databases, access sales or reposted samples.
+Data leaks and access sales account for **75 records**. Morocco leads with **19 records**, followed by Algeria (**15**), Mauritania (**8**) and Tunisia (**7**). The claimed data involved administrative, financial, healthcare, education and business environments. This distribution shows that data leakage is not only a consequence of ransomware: it also appears as an independent risk involving exposed databases, access sales or reposted samples.
 
 ## 5. Sectoral impact
 
@@ -217,25 +292,25 @@ Government and administration (**40 records**) and finance and banking (**39**) 
 | Dark 07x Team | 5 | █████ |
 | ransomhub | 4 | ████ |
 
-| Country | Level |
-| :--- | ---: |
-| 🇪🇬 Egypt | 🔴 High |
-| 🇲🇦 Morocco | 🔴 High |
-| 🇿🇦 South Africa | 🔴 High |
-| 🇩🇿 Algeria | 🔴 High |
-| 🇳🇬 Nigeria | 🔴 High |
+| Country | Level | Rationale |
+| :--- | :--- | :--- |
+| 🇪🇬 Egypt | 🔴 High | Highest ransomware visibility and the largest national record count. |
+| 🇲🇦 Morocco | 🔴 High | Highest data-leak volume and second-largest overall record count. |
+| 🇿🇦 South Africa | 🔴 High | High ransomware volume and significant public-sector and financial exposure claims. |
+| 🇩🇿 Algeria | 🔴 High | High data-leak volume and repeated government-related publications. |
+| 🇳🇬 Nigeria | 🔴 High | Combined ransomware and data-leak activity across public and private-sector targets. |
 
 ### Most visible actors chart
 
 ```mermaid
 xychart-beta
     title "Most visible actors - 2025"
-    x-axis ["1","2","3","4","5","6","7","8","9","10"]
+    x-axis ["QIL","NSP","DVM","INC","FNK","PAT","KLS","K9","D07","RSH"]
     y-axis "Records" 0 --> 12
     bar [11,10,10,8,7,7,6,6,5,4]
 ```
 
-Legend: 1 = qilin; 2 = nightspire; 3 = devman; 4 = incransom; 5 = funksec; 6 = Phantom Atlas; 7 = killsec; 8 = kill9; 9 = Dark 07x Team; 10 = ransomhub
+Legend: QIL = qilin; NSP = nightspire; DVM = devman; INC = incransom; FNK = funksec; PAT = Phantom Atlas; KLS = killsec; K9 = kill9; D07 = Dark 07x Team; RSH = ransomhub
 
 ## 7. Key trends and intelligence gaps
 
@@ -243,27 +318,31 @@ The 2025 record highlights three intelligence gaps. First, a published claim doe
 
 ## 8. Contextual MITRE ATT&CK mapping
 
-| Phase | Technique | Context |
-| :--- | ---: | ---: |
-| Impact | T1486 - Data Encrypted for Impact | Ransomware |
-| Exfiltration | T1567 - Exfiltration Over Web Service | Leaks and extortion |
-| Credential access | T1078 - Valid Accounts | Access claims |
+| Phase | Technique | Defensive context | Evidence status |
+| :--- | ---: | --- | --- |
+| Impact | T1486 - Data Encrypted for Impact | Hunt for encryption behavior and recovery impact when a claim is independently corroborated. | Not established by publication alone |
+| Exfiltration | T1567 - Exfiltration Over Web Service | Review web-service egress and archive transfers associated with validated exposure cases. | Contextual candidate only |
+| Credential access | T1078 - Valid Accounts | Validate advertised access against IAM, VPN and authentication telemetry. | Claim does not prove valid use |
 
 ## 9. Recommendations
 
-- Validate claims with logs, EDR, IAM and backups.
-- Enforce MFA, segmentation, offline backups and secret rotation.
+- Validate claims with logs, EDR, IAM, backups and the affected organisation before treating them as confirmed incidents.
+- Enforce phishing-resistant MFA, privileged-access review, network segmentation, offline backups and secret rotation.
+- Cloud and application teams: remove public reads, review storage and database exposure, and monitor bulk exports.
+- Government and financial organisations: monitor VPN, privileged accounts, remote administration and unusual outbound transfers.
+- Education, healthcare and technology providers: apply data minimisation, retention controls and incident-notification procedures.
 
 ## 10. SOC and tactical recommendations
 
-- Correlate EDR, VPN, IAM, DNS, proxy, WAF and application logs.
+- Correlate EDR, VPN, IAM, DNS, proxy, WAF and application logs; alert on impossible travel, new MFA devices, bulk reads, archive creation and unusual egress.
+- Track exposed credentials and access claims in a dedicated case queue, then validate or revoke them through trusted internal channels.
 
 ## 11. Strategic recommendations
 
-- Maintain an asset inventory and test response and restoration plans.
+- Maintain an internet-facing asset and data inventory, test response and restoration plans, and define ownership for claim validation, privacy review and executive escalation.
 
 ## 12. Conclusion
 
-The 2025 record confirms a diverse cyber pressure: ransomware remained dominant, while data leaks and access sales expanded the risk surface across government, banking, technology and education. These figures describe publications observed by AFRINTEL; they should guide monitoring, technical validation and risk reduction without treating a claim as a confirmed compromise.
+The 2025 record indicates diverse cyber pressure: ransomware remained dominant, while data leaks and access sales expanded the risk surface across government, banking, technology and education. These figures describe publications observed by AFRINTEL; they should guide monitoring, technical validation and risk reduction without treating a claim as a confirmed compromise.
 
 **AFRINTEL** - TLP:CLEAR

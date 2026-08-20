@@ -21,6 +21,10 @@ En janvier 2024, l'Afrique a enregistré **12 victimes** documentées dans ce fi
 - 🔹 **Pays touchés** : Afrique du Sud (3), Kenya (1), Algérie (1), Burkina Faso (1), Maroc (1), Rwanda (1), Ghana (1), Nigeria (1), Cameroun (1), Égypte (1)
 - 🔹 **Secteurs** : Automobile & Retail (2), Éducation / Enseignement supérieur (2), Audit / Conseil Fiscal (1), Gouvernement / Renseignement financier (1), Gouvernement / Administration publique (1), E-commerce / Retail (1), Médias / Audiovisuel (1), Technologie / Communauté en ligne (1), Société civile / Gouvernance / Organisation à but non lucratif (1), Commerce de détail / Électronique (1)
 - 🔹 **Types d'incident** : Ransomware (3), Fuite de données (8), Vente d'accès (1)
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **9 fiches** (75.0% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 
 ---
 

@@ -21,6 +21,10 @@ En février 2024, l'Afrique a enregistré **9 fiches d'incident** dans 6 pays : 
 - 🔹 **Pays touchés** : Afrique du Sud (2), Éthiopie (1), Égypte (2), Tunisie (1), Côte d'Ivoire (2), Ghana (1)
 - 🔹 **Secteurs** : Gouvernement/Administration publique, Gouvernement/Éducation, Gouvernement/Services d'emploi, Services numériques/Télécom, Technologies/Services logiciels, Industrie, Santé & Recherche, Biens de consommation, Services publics
 
+### Vue agrégée mensuelle de l’exposition
+
+La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **4 fiches** (44.4% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+
 ---
 
 ### 2. Chronologie des attaques

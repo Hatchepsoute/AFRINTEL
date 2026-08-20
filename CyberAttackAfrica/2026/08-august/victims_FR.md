@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (6 victimes)
+# Liste des victimes africaines de cyberattaques en août 2026 (8 victimes)
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -110,6 +110,90 @@
 
   La publication complète présente mpowa.mobi comme l'élément « 11/25 » d'une campagne en cours, décrivant un outil propriétaire (« CredHarvest V6 ») utilisé pour scanner et collecter en masse des instances Firebase Realtime Database mal configurées, et affirmant que des centaines de bases similaires ont déjà été récupérées par la même méthode. L'acteur propose à la fois la vente de cet outil de scan et des services d'intrusion/d'accès payants distincts sur le même forum. Cela indique que mpowa.mobi est une victime parmi une campagne plus large et systématique visant des déploiements Firebase mal configurés, et que des expositions comparables touchent vraisemblablement d'autres organisations africaines utilisant le même backend, indépendamment de tout ciblage spécifique à mpowa.mobi.
 
+### 08 août 2026
+#### 🇳🇬 Nigeria - Daily Trust
+
+- **Date de publication initiale :** 08 août 2026
+- **Date de détection de la source :** 08 août 2026, 19:21:01 (fuseau horaire non indiqué)
+- **Date de détection AFRINTEL :** 11 août 2026
+- **Acteur / Groupe :** Panzer
+- **Secteur :** Médias / Édition / Audiovisuel
+- **Site web :** [dailytrust.com](https://dailytrust.com)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  Daily Trust est une organisation nigériane d'information et d'édition exploitée par Media Trust Limited. Ses services comprennent le journalisme imprimé et en ligne, Trust TV et Trust Radio.
+
+- **Analyse :**
+
+  **Observed :** Un enregistrement de source observé identifie Daily Trust, le groupe criminel Panzer, le Nigeria et `dailytrust.com`, avec un horodatage de détection au 8 août 2026 à 19:21:01 et des données publiées indiquées « N/D ». Une publication Panzer distincte datée du 8 août revendique 320 Go, propose un échantillon téléchargeable et affichait un compte à rebours actif de 17 jours, 11 heures, 3 minutes et 44 secondes lors de la capture du 11 août. L'échéance exacte et le fuseau horaire ne sont pas indiqués dans les éléments fournis.
+
+  AFRINTEL a examiné l'intégralité du classeur `sample.xlsx` fourni en lecture seule. Ce fichier de 44 996 octets a pour empreinte SHA-256 `83516d93de48d2e53465071a418e50dd4b678baedef05277ab93ebb6f0034fa6` et contient deux feuilles. La feuille principale comporte 443 enregistrements non vides sous les champs Name, Email Address, New Password, Comments et Status. Les 443 cellules d'adresse email utilisent le domaine de la victime et sont uniques ; 438 lignes contiennent une valeur dans le champ New Password. La seconde feuille contient 19 entrées d'adresse du domaine cible, dont 18 recoupent la feuille principale, soit 444 adresses distinctes du domaine cible dans les champs d'adresse. Aucune des deux feuilles ne contient de formule ni de ligne complète dupliquée. Le classeur contient également 461 hyperliens HTTP externes pointant vers le domaine de la victime ; AFRINTEL ne les a pas suivis. Un composant `jsaProject.bin` incorporé a été identifié mais n'a pas été exécuté. Aucun nom, adresse email, mot de passe, commentaire, valeur de statut ou cible d'hyperlien de l'échantillon n'est reproduit.
+
+  **Assumption :** Le schéma structuré de réinitialisation de comptes, l'utilisation exclusive du domaine de la victime dans les champs d'adresse, les relations cohérentes entre les feuilles et les hyperliens vers le domaine cible permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est associé à Daily Trust. Si les mots de passe restent valides, ces éléments pourraient permettre des prises de contrôle de comptes, des compromissions de messagerie professionnelle, des usurpations, du phishing ciblé et l'accès à des communications éditoriales, de sources ou commerciales confidentielles. Cette évaluation porte sur l'authenticité structurelle et l'attribution de l'échantillon ; elle ne confirme pas la manière dont Panzer l'a obtenu.
+
+  **Unknown :** AFRINTEL n'a pas établi si les mots de passe sont actuels, temporaires, anciennement utilisés ou déjà révoqués, ni si le classeur représente l'ensemble des comptes de Daily Trust. L'échantillon ne contient pas de plage temporelle fiable au niveau des enregistrements et ne valide pas le volume revendiqué de 320 Go. La méthode d'accès initial, la méthode d'extraction, un éventuel chiffrement ou impact opérationnel, l'échéance exacte de divulgation, la publication intégrale des données, la confirmation par la victime, la négociation, le paiement de rançon et la revente restent inconnus. La publication observée et l'échantillon cohérent ne constituent donc ni une confirmation officielle d'une intrusion ransomware ni une preuve d'exfiltration complète.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-08T19:21:01
+listing_last_observed_at: 2026-08-11T01:56:25+01:00
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: active
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-20T01:35:32+01:00
+-->
+
+### 16 août 2026
+#### 🇿🇦 Afrique du Sud - The Courier Guy
+
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 16 août 2026 à 15:19:49 (fuseau horaire non affiché)
+- **Date de détection AFRINTEL :** 19 août 2026
+- **Acteur / Groupe :** medusalocker
+- **Secteur :** Logistique / Services de courrier
+- **Site web :** [thecourierguy.co.za](https://thecourierguy.co.za)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d’incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d’impact :** Niveau 2
+
+- **Description :**
+
+  The Courier Guy est une organisation sud-africaine de courrier et de logistique. Un enregistrement source observé attribue à medusalocker une entrée liée à un ransomware concernant `thecourierguy.co.za`.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni nomme « Thecourierguy », identifie le groupe criminel comme medusalocker, situe la cible en Afrique du Sud et indique `thecourierguy.co.za` comme domaine ciblé. Il affiche une détection le 16 août 2026 à 15:19:49, sans fuseau horaire visible, mentionne « N/D » pour les données publiées et revendique l'extraction de 2 018 emails. Cet enregistrement n'affiche ni échantillon, ni échéance de publication, ni prix de rançon, ni téléchargement de données.
+
+  **Assumption :** La concordance entre le nom de l'organisation et son domaine soutient l'évaluation selon laquelle la publication vise spécifiquement cette cible. Si la revendication est exacte, une liste d'adresses email professionnelles ou de clients pourrait faciliter le phishing, la compromission de messagerie professionnelle, les attaques contre les identifiants et l'usurpation. La capture seule n'établit pas que medusalocker a obtenu ces adresses.
+
+  **Unknown :** Aucun échantillon visible ne corrobore le chiffre de 2 018 emails ni n'établit la nature, la propriété, l'unicité ou la validité actuelle des enregistrements allégués. La date de publication, les méthodes d'accès initial et d'acquisition, le chiffrement ou la perturbation opérationnelle, la confirmation de la victime, la négociation, le paiement de rançon, la divulgation et la revente restent inconnus. Cette entrée est distincte de la publication incransom concernant SpearFin Ltd à Maurice.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-16T15:19:49
+listing_last_observed_at: 2026-08-19T05:35:53+01:00
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-19T05:35:53+01:00
+-->
+
 ### 17 août 2026
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
@@ -158,11 +242,28 @@
 
 - **Analyse :**
 
-  **Observed :** Les captures fournies montrent une publication attribuée à incransom qui nomme SpearFin Ltd, identifie `spearfin.net` et localise la cible à Maurice. La publication est datée du 18 août 2026 et affirme qu'une fuite est survenue le 26 juin 2026, pour un volume de 416 Go. Elle mentionne des accords de confidentialité, correspondances clients, dossiers KYC, pièces d'identité, certificats, documents d'investissement et d'actionnariat, audits LBC/AML, contrats, formulaires, relevés bancaires, éléments de paie, documents de prêt et registres d'administrateurs. La publication affiche plusieurs miniatures présentées comme des échantillons, comprenant des documents d'identité, d'entreprise, administratifs et financiers, et annonce une publication intégrale à venir. L'évaluation est limitée aux captures fournies ; les documents sous-jacents n'ont pas été consultés ni téléchargés.
+  **Observed :** Les captures fournies montrent une publication attribuée à incransom qui nomme SpearFin Ltd, identifie `spearfin.net` et localise la cible à Maurice. La publication est horodatée au 18 août 2026 à 09:35, sans fuseau horaire visible, et affirme qu'une fuite est survenue le 26 juin 2026, pour un volume de 416 Go. Elle mentionne des accords de confidentialité, correspondances clients, dossiers KYC, pièces d'identité, certificats, documents d'investissement et d'actionnariat, audits LBC/AML, contrats, formulaires, relevés bancaires, éléments de paie, documents de prêt et registres d'administrateurs. Elle revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires. AFRINTEL n'a pas vérifié ces chiffres indépendamment.
 
-  **Assumption :** L'ensemble documentaire visible est globalement cohérent avec les activités attribuées à un administrateur de fonds et prestataire de services aux entreprises, ce qui soutient avec un niveau de confiance moyen le caractère spécifique de la revendication. Si les éléments sont authentiques, la combinaison de dossiers KYC, bancaires, de paie, de gouvernance d'entreprise et d'investissement créerait un risque élevé de fraude à l'identité, de compromission de messagerie professionnelle, de fraude au paiement, de phishing ciblé et d'atteinte à la confidentialité de tiers. Cette évaluation n'authentifie pas chaque miniature et n'établit pas l'exhaustivité de l'archive revendiquée.
+  La publication affiche plusieurs miniatures présentées comme des échantillons, comprenant des documents d'identité, d'entreprise, administratifs et financiers. Un échantillon agrandi est une annexe de confirmation/reconnaissance d'un contributeur structurée en sept sections et datée de juin 2026. Le texte visible contient une référence à un siège social à Maurice, un engagement de capital en USD à sept chiffres et des clauses relatives à la catégorie d'unités, aux frais de gestion, aux dépenses opérationnelles, au taux de rendement minimal et aux commissions de performance ; un sceau d'entreprise est partiellement visible. Ces éléments structurels sont cohérents avec des documents d'administration de fonds et d'investissement. Les noms, adresses, montants financiers exacts, pièces d'identité et autres valeurs confidentielles visibles ne sont pas reproduits. La publication annonce une divulgation intégrale à venir. Analyse limitée aux données visibles dans l'échantillon fourni ; les fichiers sources originaux n'étaient pas disponibles, n'ont pas été consultés ni téléchargés.
 
-  **Unknown :** AFRINTEL n'a pas confirmé indépendamment l'accès non autorisé, l'exfiltration de données, le chiffrement par ransomware, une perturbation opérationnelle, le volume revendiqué de 416 Go, la date alléguée du 26 juin 2026, les chiffres financiers annoncés ni la publication d'une archive complète. Aucun communiqué de la victime ni élément technique indépendant n'a été fourni. La fiche documente donc une publication observée sur un site ransomware avec des échantillons visibles, et non une compromission ou une divulgation intégrale confirmée. AFRINTEL ne reproduit aucun nom de client, document d'identité, détail bancaire ni autre donnée personnelle ou confidentielle visible dans la source.
+  **Assumption :** La combinaison des détails de publication propres à la cible, d'un échantillon contractuel lié à Maurice, d'une terminologie cohérente avec les fonds d'investissement, de dates contractuelles récentes et de plusieurs catégories de documents soutient avec un niveau de confiance moyen l'évaluation selon laquelle une partie au moins des éléments visibles est associée aux services attribués à SpearFin. S'ils sont authentiques, les dossiers KYC, d'identité, bancaires, de paie, de gouvernance d'entreprise et d'investissement créeraient un risque élevé de fraude à l'identité, de compromission de messagerie professionnelle, de fraude au paiement, de phishing ciblé et d'atteinte à la confidentialité des clients et investisseurs. Cette évaluation n'authentifie pas chaque miniature, signature ou sceau et n'établit pas la méthode d'acquisition.
+
+  **Unknown :** En l'absence des fichiers originaux, AFRINTEL n'a pas pu examiner les métadonnées, signatures, sceaux, l'intégrité des documents, les doublons, la cohérence interne de l'ensemble des échantillons ni une éventuelle manipulation. AFRINTEL n'a pas confirmé indépendamment l'accès non autorisé, l'exfiltration de données, le chiffrement par ransomware, une perturbation opérationnelle, le volume revendiqué de 416 Go, la date alléguée du 26 juin 2026, les chiffres financiers annoncés ni la publication d'une archive complète. Aucun communiqué de la victime ni élément technique indépendant n'a été fourni. La fiche documente donc une publication incransom observée avec des échantillons visibles concernant une victime mauricienne distincte, et non une compromission ou une divulgation intégrale confirmée.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-18T09:35:00
+listing_last_observed_at: 2026-08-18T21:15:30+01:00
+sample_status: preview-visible
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-19T06:02:04+01:00
+-->
 
 ## Notes (non comptabilisées dans le total mensuel de victimes)
 
