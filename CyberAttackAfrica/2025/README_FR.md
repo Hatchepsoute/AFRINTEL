@@ -100,7 +100,7 @@ Les fuites de données et les ventes d’accès sont regroupées ici pour une vu
 
 Cette vue agrégée est dérivée et ne doit pas être ajoutée une seconde fois au total de 197 fiches.
 
-### Classement des pays — ransomware
+### Classement des pays par ransomware
 
 | Rang | Pays | ISO | Fiches | Barre couleur |
 |---:|---|:---:|---:|---|
@@ -127,7 +127,7 @@ Cette vue agrégée est dérivée et ne doit pas être ajoutée une seconde fois
 | 21 | Rwanda | RW | 1 | 🟧 |
 | 22 | Sénégal | SN | 1 | 🟧 |
 
-### Classement des pays — fuites de données
+### Classement des pays par fuites de données
 
 | Rang | Pays | ISO | Fiches | Barre couleur |
 |---:|---|:---:|---:|---|
@@ -148,7 +148,7 @@ Cette vue agrégée est dérivée et ne doit pas être ajoutée une seconde fois
 | 15 | Togo | TG | 1 | 🟦 |
 | 16 | Burundi | BI | 1 | 🟦 |
 
-### Classement des pays — ventes d’accès
+### Classement des pays par ventes d’accès
 
 | Rang | Pays | ISO | Fiches | Barre couleur |
 |---:|---|:---:|---:|---|

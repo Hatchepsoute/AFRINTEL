@@ -14,7 +14,7 @@
 
 ## Methodology note
 
-These English statistics derive from [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), the source of truth for the English version for July 2026. Each card is counted once in the global total. One identity-document card concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incident records. The MTN record is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
+These English statistics derive from [`victims.md`](../../../CyberAttackAfrica/2026/07-july/victims.md), the source of truth for the English version for July 2026. Each documented incident is counted once in the global total. One identity-document observation concerns both Nigeria and Côte d’Ivoire, so the geographic view contains 43 occurrences for 42 incidents. The MTN case is allocated to South Africa for the working geographic view, although the national entity is not confirmed.
 
 Claimed volumes are not treated as confirmed facts. Personal data, credentials and download links are not reproduced.
 
@@ -72,7 +72,7 @@ pie showData
 | **Total** | **43** |
 
 ~~~mermaid
-xychart-beta
+xychart
     title "Geographic occurrences by country - July 2026"
     x-axis ["Egypt","Tunisia","Morocco","South Africa","Nigeria","Algeria","Côte d’Ivoire","Ghana","Botswana","Cameroon","Kenya","South Sudan"]
     y-axis "Occurrences" 0 --> 8
@@ -97,7 +97,7 @@ xychart-beta
 | South Sudan | 1 | 0 | 1 |
 | **Total** | **18** | **25** | **43** |
 
-The 25 leak and access occurrences include the additional country allocation for the Nigeria and Côte d’Ivoire identity-document card.
+The 25 leak and access occurrences include the additional country allocation for the Nigeria and Côte d’Ivoire identity-document observation.
 
 ## 4. Geographic breakdown
 
@@ -110,7 +110,7 @@ The 25 leak and access occurrences include the additional country allocation for
 | **Total** | **12 countries** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
 
 ~~~mermaid
-xychart-beta
+xychart
     title "Geographic occurrences by region - July 2026"
     x-axis ["North Africa","Southern Africa","West and Central Africa","East Africa"]
     y-axis "Occurrences" 0 --> 26
@@ -119,7 +119,7 @@ xychart-beta
 
 ## 5. Sector distribution
 
-| Sector | Records | Share | Chart |
+| Sector | Incidents | Share | Chart |
 |---|---:|---:|---:|
 | Government / Administration | 11 | 26.2% | ███████████ |
 | Telecommunications | 4 | 9.5% | ████ |
@@ -142,16 +142,16 @@ xychart-beta
 | Technology / IT | 1 | 2.4% | █ |
 | **Total** | **42** | **100%** |  |
 ~~~mermaid
-xychart-beta
+xychart
     title "Top represented sectors - July 2026"
     x-axis ["Government","Telecommunications","Healthcare","Engineering","Education","Retail","Energy"]
-    y-axis "Records" 0 --> 12
+    y-axis "Incidents" 0 --> 12
     bar [11,4,4,3,3,3,2]
 ~~~
 
 ## 6. Most active threat actors and sources
 
-| Actor or source | Records | Main activity |
+| Actor or source | Incidents | Main activity |
 |---|---:|---|
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |
@@ -166,9 +166,9 @@ Twenty-three other named actors or source accounts occur once each and are exclu
 
 ## 7. CTI trend analysis
 
-- Ransomware and data leaks each represent 18 records.
+- Ransomware and data leaks each represent 18 documented incidents.
 - Six access offers concern public, telecom or administrative environments.
-- Identity and passport-related material appears in several records.
+- Identity and passport-related material appears in several incidents.
 - Government and administration remain the largest sector group.
 - Planet Sport and Adex illustrate the difficulty of separating new compromises from reposts.
 - Evidence quality ranges from structured exports to unsupported claims.
@@ -185,6 +185,6 @@ Twenty-three other named actors or source accounts occur once each and are exclu
 
 ## 9. Conclusion
 
-July 2026 recorded **42 incident records** and **43 geographic occurrences**. Ransomware and data leaks were evenly represented, while six access-sale offers added a separate access-brokerage risk. North Africa concentrated leak and access activity; South Africa and West and Central Africa showed stronger ransomware pressure.
+July 2026 recorded **42 documented incidents** and **43 geographic occurrences**. Ransomware and data leaks were evenly represented, while six access-sale offers added a separate access-brokerage risk. North Africa concentrated leak and access activity; South Africa and West and Central Africa showed stronger ransomware pressure.
 
-For details, consult the monthly victim cards in [CyberAttackAfrica/2026/07-july/victims.md](../../../CyberAttackAfrica/2026/07-july/victims.md).
+For details, consult the monthly victim and incident data in [CyberAttackAfrica/2026/07-july/victims.md](../../../CyberAttackAfrica/2026/07-july/victims.md).

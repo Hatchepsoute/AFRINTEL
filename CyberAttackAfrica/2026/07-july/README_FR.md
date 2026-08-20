@@ -11,34 +11,34 @@
 # AFRINTEL - Rapport CTI mensuel
 ## Cyberattaques en Afrique - juillet 2026
 
-👉🏾 [Version anglaise](./README.md) · [Fiches victimes](./victims_FR.md)
+👉🏾 [Version anglaise](./README.md) · [Victimes et incidents documentés](./victims_FR.md)
 
 ## 1. Synthèse exécutive
 
-AFRINTEL a recensé **42 fiches d’incidents liés à l’Afrique** en juillet 2026, concernant **12 pays** :
+AFRINTEL a recensé **42 incidents liés à l’Afrique** en juillet 2026, concernant **12 pays** :
 
 - **18 revendications ransomware** ;
 - **18 fuites de données** ;
 - **6 offres de vente d’accès** ;
 - **0 défacement**.
 
-L’Égypte et la Tunisie arrivent en tête avec sept occurrences géographiques chacune, devant le Maroc et l’Afrique du Sud avec six. Le gouvernement et l’administration constituent le premier ensemble sectoriel avec 11 fiches. Aucun acteur ne domine : arcusmedia totalise quatre publications ransomware et dragonforce trois.
+L’Égypte et la Tunisie arrivent en tête avec sept occurrences géographiques chacune, devant le Maroc et l’Afrique du Sud avec six. Le gouvernement et l’administration constituent le premier ensemble sectoriel avec 11 incidents documentés. Aucun acteur ne domine : arcusmedia totalise quatre publications ransomware et dragonforce trois.
 
-La solidité des preuves varie fortement : **21 fiches relèvent de revendications non vérifiées**, **20 comportent un échantillon publié** et **1 est enregistrée sous le statut `Data Fully Published`, qui décrit une publication complète revendiquée et non une exhaustivité vérifiée**. Neuf fiches atteignent le niveau d’impact 4. Les cas à la fois sensibles et les mieux étayés comprennent Nerasolgh, Tayara.tn et Distamed, pour lesquels AFRINTEL a examiné des éléments structurés ; les volumes complets annoncés et les vecteurs d’intrusion ne sont pas nécessairement établis.
+La solidité des preuves varie fortement : **21 observations relèvent de revendications non vérifiées**, **20 comportent un échantillon publié** et **1 incident est enregistré sous le statut `Data Fully Published`, qui décrit une publication complète revendiquée et non une exhaustivité vérifiée**. Neuf incidents atteignent le niveau d’impact 4. Les cas à la fois sensibles et les mieux étayés comprennent Nerasolgh, Tayara.tn et Distamed, pour lesquels AFRINTEL a examiné des éléments structurés ; les volumes complets annoncés et les vecteurs d’intrusion ne sont pas nécessairement établis.
 
-Les priorités défensives sont la protection des comptes privilégiés et des messageries, la détection des exports massifs de bases et la prise en charge rapide des expositions de données d’identité, de santé, d’éducation et d’administration. Les fiches complètes sont disponibles dans [`victims_FR.md`](./victims_FR.md).
+Les priorités défensives sont la protection des comptes privilégiés et des messageries, la détection des exports massifs de bases et la prise en charge rapide des expositions de données d’identité, de santé, d’éducation et d’administration. Les données détaillées sur les victimes et incidents sont disponibles dans [`victims_FR.md`](./victims_FR.md).
 
 ## 2. Périmètre et méthode
 
 Tous les chiffres de cette version française sont dérivés de [`victims_FR.md`](./victims_FR.md), source de vérité du rapport français. La version anglaise applique la même méthode à partir de [`victims.md`](./victims.md).
 
 - **Périmètre géographique :** les 54 pays africains ; seules les victimes, opérations ou données ayant un lien africain explicite sont incluses.
-- **Période de collecte :** du 1er au 31 juillet 2026, selon la date de détection AFRINTEL inscrite dans chaque fiche.
+- **Période de collecte :** du 1er au 31 juillet 2026, selon la date de détection AFRINTEL inscrite pour chaque incident.
 - **Sources :** sites de fuite ransomware, forums cybercriminels, OSINT public, captures et échantillons structurés examinés localement.
-- **Inclusion :** une fiche par revendication ou incident documenté ; les revendications répétées restent distinctes uniquement si l’acteur, la date ou les preuves diffèrent.
+- **Inclusion :** une observation par revendication ou incident documenté ; les revendications répétées restent distinctes uniquement si l’acteur, la date ou les preuves diffèrent.
 - **Classification :** Ransomware, Data Leak, Access Sale et Defacement restent des types distincts.
 
-La ventilation géographique totalise **43 occurrences** au lieu de 42 : une fiche concernant des photographies de pièces d’identité associe le Nigeria et la Côte d’Ivoire et est donc comptée dans les deux pays. La fiche MTN est attribuée à l'Afrique du Sud sous réserve ; l'entité nationale n'est pas confirmée de manière indépendante.
+La ventilation géographique totalise **43 occurrences** au lieu de 42 : une observation concernant des photographies de pièces d’identité associe le Nigeria et la Côte d’Ivoire et est donc comptée dans les deux pays. Le cas MTN est attribué à l'Afrique du Sud sous réserve ; l'entité nationale n'est pas confirmée de manière indépendante.
 
 Les volumes annoncés par les acteurs ne sont pas repris comme des faits établis. Les liens de téléchargement, les identifiants, les données personnelles et les secrets ne sont pas reproduits dans ce rapport.
 
@@ -87,7 +87,7 @@ pie showData
 
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
@@ -115,13 +115,13 @@ Légende : EG = Égypte, TN = Tunisie, MA = Maroc, ZA = Afrique du Sud, NG = Nig
 | 🇩🇿 Algérie | 0 | 4 | 4 | 🟦🟦🟦🟦 |
 | **Total** | **18** | **25** | **43** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
-Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géographique supplémentaire de la fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
+Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géographique supplémentaire de l'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
 
 ### Ransomware par pays
 
 
 ```mermaid
-xychart-beta
+xychart
     title "Ransomware par pays - juillet 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
@@ -147,7 +147,7 @@ Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Cô
 
 
 ```mermaid
-xychart-beta
+xychart
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
@@ -166,11 +166,11 @@ Légende : TN = Tunisie, EG = Égypte, MA = Maroc, DZ = Algérie, NG = Nigeria, 
 | **Afrique de l'Est** | 🇰🇪 Kenya, 🇸🇸 Soudan du Sud | **2** | 2 | 0 | 🟧🟧 |
 | **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
-La fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
+L'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivoire ajoute une occurrence dans chacun de ces deux pays. MTN est attribué à l'Afrique du Sud dans cette vue de travail, mais son entité nationale n'est pas confirmée. Ces allocations ne modifient pas le total global de 42 incidents uniques.
 
 
 ```mermaid
-xychart-beta
+xychart
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
@@ -179,7 +179,7 @@ xychart-beta
 
 ## 4. Analyse détaillée par type d'incident
 
-| Type | Fiches | Part |
+| Type | Incidents | Part |
 | :--- | ---: | ---: |
 | 🟧 Ransomware | 18 | 42,9 % |
 | 🟦 Fuite de données | 18 | 42,9 % |
@@ -199,26 +199,26 @@ pie showData
 
 | Indicateur | Résultat |
 | :--- | :--- |
-| Fiches | 18 |
+| Incidents | 18 |
 | Principaux pays | Afrique du Sud 5 ; Égypte, Maroc, Nigeria et Côte d'Ivoire 2 chacun |
 | Groupes les plus représentés | arcusmedia 4 ; dragonforce 3 ; krybit 2 ; TheGentlemen 2 |
-| Limite des preuves | La plupart des fiches sont des publications de victimes sans preuve indépendante de chiffrement, d’exfiltration ou d’interruption |
+| Limite des preuves | La plupart des incidents recensés sont des publications de victimes sans preuve indépendante de chiffrement, d’exfiltration ou d’interruption |
 
 Le total ransomware représente des publications de victimes observées et attribuées à des groupes ransomware. Le rapport ne déduit ni chiffrement ni impact opérationnel de la seule présence d’une victime sur un site de groupe.
 
 ### 4.2 Fuites de données et ventes d’accès
 
-| Catégorie | Fiches | Occurrences géographiques | Principales observations |
+| Catégorie | Incidents | Occurrences géographiques | Principales observations |
 | :--- | ---: | ---: | :--- |
 | Fuite de données | 18 | 19 | Données d’identité, médicales, éducatives, administratives et commerciales |
 | Vente d’accès | 6 | 6 | Offres concernant des messageries, Fortinet et des systèmes administratifs |
-| **Ensemble** | **24** | **25** | Une fiche de fuite couvre le Nigeria et la Côte d’Ivoire |
+| **Ensemble** | **24** | **25** | Un incident de fuite couvre le Nigeria et la Côte d’Ivoire |
 
 La Tunisie domine cette vue avec sept occurrences, devant l’Égypte avec cinq, puis le Maroc et l’Algérie avec quatre chacun. Les preuves vont de simples annonces de vente à des exports structurés et des interfaces administratives visibles.
 
 ## 5. Secteurs les plus exposés
 
-| Secteur | Fiches | Part | Barre |
+| Secteur | Incidents | Part | Barre |
 | :--- | ---: | ---: | :--- |
 | Gouvernement / Administration | 11 | 26,2 % | ███████████ |
 | Télécommunications | 4 | 9,5 % | ████ |
@@ -242,20 +242,20 @@ La Tunisie domine cette vue avec sept occurrences, devant l’Égypte avec cinq,
 | **Total** | **42** | **100 %** |  |
 
 ```mermaid
-xychart-beta
+xychart
     title "Secteurs les plus représentés - juillet 2026"
     x-axis ["Gouv","Tél","Sant","Ing","Éduc","Commerce","Énergie"]
-    y-axis "Fiches" 0 --> 12
+    y-axis "Incidents" 0 --> 12
     bar [11,4,4,3,3,3,2]
 ```
 
 Légende : Gouv = Gouvernement / Administration ; Tél = Télécommunications ; Ing = Ingénierie / Construction ; Éduc = Éducation / Université ; Commerce = E-commerce / Distribution.
 
-Les administrations restent le premier ensemble sectoriel. Les fiches concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
+Les administrations restent le premier ensemble sectoriel. Les incidents concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
 
 ## 6. Acteurs et sources les plus présents
 
-| Acteur / Groupe | Type | Fiches | Pays et principales cibles |
+| Acteur / Groupe | Type | Incidents | Pays et principales cibles |
 | :--- | :--- | ---: | :--- |
 | arcusmedia | Groupe ransomware | 4 | Kenya, Nigeria, Afrique du Sud, Maroc ; énergie, bien-être, voyage, ingénierie |
 | dragonforce | Groupe ransomware | 3 | Afrique du Sud, Botswana, Égypte ; chimie, ingénierie, divertissement |
@@ -268,10 +268,10 @@ Les administrations restent le premier ensemble sectoriel. Les fiches concernent
 
 
 ```mermaid
-xychart-beta
+xychart
     title "Acteurs et sources les plus présents - juillet 2026"
     x-axis ["arcusmedia","dragonforce","CrowStealer","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","GreYyM3terr"]
-    y-axis "Fiches" 0 --> 5
+    y-axis "Incidents" 0 --> 5
     bar [4,3,2,2,2,2,2,2]
 ```
 
@@ -281,10 +281,10 @@ Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chac
 
 Il s’agit d’une **évaluation relative de l’exposition observée en juillet**, et non d’une notation générale du risque cyber national. Elle combine le volume, la solidité des preuves, l’impact et la sensibilité sectorielle.
 
-| Risque | Pays | Justification fondée sur les fiches |
+| Risque | Pays | Justification fondée sur les incidents documentés |
 | :--- | :--- | :--- |
-| 🔴 Élevé | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇿🇦 Afrique du Sud, 🇬🇭 Ghana | Au moins cinq fiches, ou une exposition Niveau 4 à confiance Très élevée |
-| 🟠 Moyen | 🇳🇬 Nigeria, 🇩🇿 Algérie, 🇨🇮 Côte d'Ivoire, 🇸🇸 Soudan du Sud | Plusieurs fiches ou un cas Niveau 4 significatif, avec des limites de preuve importantes |
+| 🔴 Élevé | 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇲🇦 Maroc, 🇿🇦 Afrique du Sud, 🇬🇭 Ghana | Au moins cinq incidents documentés, ou une exposition Niveau 4 à confiance Très élevée |
+| 🟠 Moyen | 🇳🇬 Nigeria, 🇩🇿 Algérie, 🇨🇮 Côte d'Ivoire, 🇸🇸 Soudan du Sud | Plusieurs incidents documentés ou un cas Niveau 4 significatif, avec des limites de preuve importantes |
 | 🟡 Faible à moyen | 🇧🇼 Botswana, 🇨🇲 Cameroun, 🇰🇪 Kenya | Une publication ransomware à faible confiance par pays |
 
 ### 6.2 Dossiers à surveiller
@@ -309,7 +309,7 @@ La republication attribuée à BIGBROTHER montre une interface administrative do
 
 #### Planet Sport
 
-Le domaine `planetsport.ma` avait été listé par LockBit 5 en avril 2026. Une publication gratuite attribuée à Mozvo est apparue en juillet. Une republication, une redistribution par un tiers ou un lien avec un affilié sont possibles, mais aucune de ces hypothèses n’est démontrée. Les deux fiches restent donc séparées et liées par une note analytique.
+Le domaine `planetsport.ma` avait été listé par LockBit 5 en avril 2026. Une publication gratuite attribuée à Mozvo est apparue en juillet. Une republication, une redistribution par un tiers ou un lien avec un affilié sont possibles, mais aucune de ces hypothèses n’est démontrée. Les deux observations restent donc séparées et liées par une note analytique.
 
 #### Zenith Bank
 
@@ -319,29 +319,29 @@ Zenith Bank Plc a été mentionnée dans une revendication de fuite de données 
 
 ### Tendances
 
-- Les ransomware et les fuites de données représentent chacun 18 fiches.
+- Les ransomware et les fuites de données représentent chacun 18 incidents documentés.
 - Six offres concernent des environnements publics, télécoms ou administratifs.
-- Des documents d'identité et des éléments liés aux passeports apparaissent dans plusieurs fiches.
+- Des documents d'identité et des éléments liés aux passeports apparaissent dans plusieurs incidents.
 - Le gouvernement et l'administration restent le principal groupe sectoriel.
 - Planet Sport et Adex illustrent les difficultés d'attribution liées aux republications.
 - La qualité des preuves varie des exports structurés aux simples revendications.
 
 ### Comparaison factuelle avec juin 2026
 
-Cette comparaison dérive des fiches françaises de [juin](../06-june/victims_FR.md) et de [juillet](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL, sans conclure à une variation du nombre réel de compromissions.
+Cette comparaison repose sur les données mensuelles relatives aux victimes et incidents de [juin](../06-june/victims_FR.md) et de [juillet](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL, sans conclure à une variation du nombre réel de compromissions.
 
 | Indicateur | Juin 2026 | Juillet 2026 | Évolution observée |
 | :--- | ---: | ---: | :--- |
-| Fiches d'incidents | 40 | 42 | +2 (+5,0 %) |
+| Incidents documentés | 40 | 42 | +2 (+5,0 %) |
 | Ransomware | 20 | 18 | -2 |
 | Fuites de données | 18 | 18 | Stable |
 | Ventes d'accès | 2 | 6 | +4 |
 | Pays représentés | 20 | 12 | -8 ; comparaison affectée par les deux offres multi-pays de juin |
-| Premier pays du classement | Maroc, 9 fiches directes | Égypte et Tunisie, 7 occurrences chacune | Changement de tête |
+| Premier pays du classement | Maroc, 9 incidents directs | Égypte et Tunisie, 7 occurrences chacune | Changement de tête |
 | Gouvernement / Administration | 12 | 11 | Premier secteur pendant les deux mois |
-| Acteur le plus présent | anisanas2, 7 fiches | arcusmedia, 4 fiches | Concentration mensuelle plus faible en juillet |
+| Acteur le plus présent | anisanas2, 7 incidents | arcusmedia, 4 incidents | Concentration mensuelle plus faible en juillet |
 
-La hausse nette de deux fiches en juillet correspond à quatre ventes d'accès supplémentaires, tandis que le ransomware recule de deux fiches et que les fuites restent stables. La couverture géographique n'est pas directement comparable au volume global : en juin, deux offres multi-pays généraient 15 expositions pays ; en juillet, une seule fiche couvre deux pays.
+La hausse nette de deux incidents documentés en juillet correspond à quatre ventes d'accès supplémentaires, tandis que le ransomware recule de deux incidents et que les fuites restent stables. La couverture géographique n'est pas directement comparable au volume global : en juin, deux offres multi-pays généraient 15 expositions pays ; en juillet, une seule observation couvre deux pays.
 
 ### Lacunes de renseignement
 
@@ -352,13 +352,13 @@ La hausse nette de deux fiches en juillet correspond à quatre ventes d'accès s
 - Une nouvelle compromission et une republication sont parfois difficiles à distinguer.
 - La remédiation après publication reste inconnue.
 
-Les niveaux de confiance sont donc évalués fiche par fiche. Le rapport ne transforme pas une revendication en incident confirmé.
+Les niveaux de confiance sont donc évalués incident par incident. Le rapport ne transforme pas une revendication en incident confirmé.
 
 ## 8. Correspondances MITRE ATT&CK contextuelles
 
 Aucune technique ATT&CK n’est présentée comme directement observée dans une télémétrie endpoint ou réseau. Seules deux hypothèses défensives, étroites et explicitement limitées, sont conservées.
 
-| Phase | ID | Technique | Fiches associées | Limite des preuves |
+| Phase | ID | Technique | Incidents associés | Limite des preuves |
 | :--- | :--- | :--- | :--- | :--- |
 | Accès initial / Persistance | T1078 | Valid Accounts | Ventes d’accès webmail TOPNET et Orange Tunisie | Des interfaces de messagerie authentifiées sont visibles, mais le mode d’authentification et l’origine des identifiants restent inconnus. |
 | Collecte | T1213 | Data from Information Repositories | Nerasolgh, Université de Chlef, ministère égyptien de l’Agriculture, Distamed | Des contenus structurés issus de référentiels ont été examinés ; les commandes de collecte et le chemin d’intrusion n’ont pas été observés. |
@@ -394,7 +394,7 @@ Maintenir des procédures de triage et de réponse distinctes pour les publicati
 
 ## 11. Recommandations stratégiques
 
-**Observé :** juillet compte 42 fiches, dont six ventes d'accès et 11 fiches liées au gouvernement ou à l'administration. Des republications et revendications répétées compliquent également l'attribution de certains dossiers.
+**Observé :** juillet compte 42 incidents documentés, dont six ventes d'accès et 11 liés au gouvernement ou à l'administration. Des republications et revendications répétées compliquent également l'attribution de certains dossiers.
 
 **Hypothèse - confiance moyenne :** le passage de deux ventes d'accès en juin à six en juillet est compatible avec une visibilité accrue d'activités de courtiers d'accès, sans suffire à démontrer une tendance durable. Le rôle d'équipements Edge, VPN ou services exposés reste plausible dans certains cas, mais n'est pas établi par le corpus.
 
@@ -408,7 +408,7 @@ Maintenir des procédures de triage et de réponse distinctes pour les publicati
 
 ## 12. Conclusion
 
-Juillet 2026 présente une menace fragmentée mais large. Le ransomware reste très visible, tandis que les fuites et les ventes d’accès exposent des données d’identité, de santé, d’éducation, d’administration et de paiement. La qualité des preuves varie fortement d’une fiche à l’autre ; cette différence doit rester visible dans toute décision opérationnelle.
+Juillet 2026 présente une menace fragmentée mais large. Le ransomware reste très visible, tandis que les fuites et les ventes d’accès exposent des données d’identité, de santé, d’éducation, d’administration et de paiement. La qualité des preuves varie fortement d’un incident documenté à l’autre ; cette différence doit rester visible dans toute décision opérationnelle.
 
 ### Contrôles de cohérence
 
@@ -416,7 +416,7 @@ Juillet 2026 présente une menace fragmentée mais large. Le ransomware reste tr
 - Statuts : 21 revendications non vérifiées + 20 revendications avec échantillon + 1 publication complète revendiquée, enregistrée sous `Data Fully Published` = 42.
 - Confiance : 22 Faible + 8 Moyen + 9 Élevé + 3 Très élevé = 42.
 - Impact : 12 Niveau 2 + 21 Niveau 3 + 9 Niveau 4 = 42.
-- Géographie : 42 fiches uniques ; 43 occurrences pays, car une fiche couvre le Nigeria et la Côte d’Ivoire.
+- Géographie : 42 incidents uniques ; 43 occurrences pays, car une observation couvre le Nigeria et la Côte d’Ivoire.
 - Secteurs : les 19 lignes sectorielles explicites totalisent 42.
 
 **AFRINTEL - Adama ASSIONGBON, Consultant SOC & CTI**

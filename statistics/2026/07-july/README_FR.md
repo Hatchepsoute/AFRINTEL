@@ -14,7 +14,7 @@
 
 ## Note méthodologique
 
-Ces statistiques françaises sont dérivées de [`victims_FR.md`](../../../CyberAttackAfrica/2026/07-july/victims_FR.md), source de vérité de la version française pour juillet 2026. Chaque fiche est comptée une fois dans le total global. Une fiche relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 fiches. La fiche MTN est attribuée à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
+Ces statistiques françaises sont dérivées de [`victims_FR.md`](../../../CyberAttackAfrica/2026/07-july/victims_FR.md), source de vérité de la version française pour juillet 2026. Chaque incident documenté est compté une fois dans le total global. Une observation relative à des documents d'identité concerne à la fois le Nigeria et la Côte d'Ivoire ; la vue géographique compte donc 43 occurrences pour 42 incidents. Le cas MTN est attribué à l'Afrique du Sud dans la vue de travail, mais l'entité nationale n'est pas confirmée.
 
 Les volumes annoncés ne sont pas traités comme des faits confirmés. Les données personnelles, identifiants et liens de téléchargement ne sont pas reproduits.
 
@@ -22,7 +22,7 @@ Les volumes annoncés ne sont pas traités comme des faits confirmés. Les donn�
 
 | Indicateur | Valeur |
 |---|---:|
-| Fiches d'incidents | **42** |
+| Incidents documentés | **42** |
 | Ransomware | **18** |
 | Fuites de données | **18** |
 | Ventes d'accès | **6** |
@@ -72,7 +72,7 @@ pie showData
 | **Total** | **43** |
 
 ~~~mermaid
-xychart-beta
+xychart
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["Égypte","Tunisie","Maroc","Afrique du Sud","Nigeria","Algérie","Côte d’Ivoire","Ghana","Botswana","Cameroun","Kenya","Soudan du Sud"]
     y-axis "Occurrences" 0 --> 8
@@ -97,7 +97,7 @@ xychart-beta
 | Soudan du Sud | 1 | 0 | 1 |
 | **Total** | **18** | **25** | **43** |
 
-Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géographique supplémentaire de la fiche relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
+Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géographique supplémentaire de l'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
 
 ## 4. Ventilation régionale
 
@@ -110,7 +110,7 @@ Les 25 occurrences de fuites et de ventes d'accès comprennent l'allocation géo
 | **Total** | **12 pays** | **43** | **18** | **25** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
 
 ~~~mermaid
-xychart-beta
+xychart
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest et centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
@@ -119,7 +119,7 @@ xychart-beta
 
 ## 5. Répartition sectorielle
 
-| Secteur | Fiches | Part | Barre |
+| Secteur | Incidents | Part | Barre |
 |---|---:|---:|---:|
 | Gouvernement / Administration | 11 | 26,2 % | ███████████ |
 | Télécommunications | 4 | 9,5 % | ████ |
@@ -142,16 +142,16 @@ xychart-beta
 | Technologie / Informatique | 1 | 2,4 % | █ |
 | **Total** | **42** | **100 %** |  |
 ~~~mermaid
-xychart-beta
+xychart
     title "Secteurs les plus représentés - juillet 2026"
     x-axis ["Gouvernement","Télécommunications","Santé","Ingénierie","Éducation","Commerce","Énergie"]
-    y-axis "Fiches" 0 --> 12
+    y-axis "Incidents" 0 --> 12
     bar [11,4,4,3,3,3,2]
 ~~~
 
 ## 6. Acteurs et sources les plus actifs
 
-| Acteur ou source | Fiches | Activité principale |
+| Acteur ou source | Incidents | Activité principale |
 |---|---:|---|
 | arcusmedia | 4 | Ransomware |
 | dragonforce | 3 | Ransomware |
@@ -166,9 +166,9 @@ Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chac
 
 ## 7. Tendances CTI
 
-- Les ransomware et les fuites de données représentent chacun 18 fiches.
+- Les ransomware et les fuites de données représentent chacun 18 incidents documentés.
 - Six offres concernent des environnements publics, télécoms ou administratifs.
-- Des documents d'identité et des éléments liés aux passeports apparaissent dans plusieurs fiches.
+- Des documents d'identité et des éléments liés aux passeports apparaissent dans plusieurs incidents.
 - Le gouvernement et l'administration restent le principal groupe sectoriel.
 - Planet Sport et Adex illustrent la difficulté de distinguer une nouvelle compromission d'une republication.
 - La qualité des preuves varie des exports structurés aux simples revendications.
@@ -185,6 +185,6 @@ Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chac
 
 ## 9. Conclusion
 
-Juillet 2026 compte **42 fiches d'incidents** et **43 occurrences géographiques**. Les ransomware et les fuites de données sont à parts égales, tandis que six offres de vente d'accès ajoutent un risque spécifique lié au courtage d'accès. L'Afrique du Nord concentre les fuites et les accès ; l'Afrique du Sud et l'Afrique de l'Ouest et centrale présentent une pression ransomware plus forte.
+Juillet 2026 compte **42 incidents documentés** et **43 occurrences géographiques**. Les ransomware et les fuites de données sont à parts égales, tandis que six offres de vente d'accès ajoutent un risque spécifique lié au courtage d'accès. L'Afrique du Nord concentre les fuites et les accès ; l'Afrique du Sud et l'Afrique de l'Ouest et centrale présentent une pression ransomware plus forte.
 
-Pour le détail, consulter les fiches mensuelles dans [CyberAttackAfrica/2026/07-july/victims_FR.md](../../../CyberAttackAfrica/2026/07-july/victims_FR.md).
+Pour le détail, consulter les données mensuelles relatives aux victimes et incidents dans [CyberAttackAfrica/2026/07-july/victims_FR.md](../../../CyberAttackAfrica/2026/07-july/victims_FR.md).
