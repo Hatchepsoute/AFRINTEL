@@ -1,11 +1,11 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-S1%201026-lightgrey)
+![Période](https://img.shields.io/badge/Période-S1%202026-lightgrey)
 ![Incidents](https://img.shields.io/badge/Incidents-294-critical)
 
 # Rapport AFRINTEL sur les cybermenaces du premier semestre
 
-## Janvier à juin 2016
+## Janvier à juin 2026
 
 👉🏾 [English version](./README_H1.md)
 
@@ -15,14 +15,14 @@ TLP:CLEAR, diffusion publique
 
 AFRINTEL a documenté **294 incidents cyber liés à l'Afrique** durant le premier semestre 2026 : **115 incidents ransomware**, **125 fuites de données ou ventes d'accès**, **52 revendications DDoS** et **2 défacements de sites web**.
 
-Les fuites et ventes d'accès devancent légèrement le ransomware sur l'ensemble du semestre, les catégories sont réparties entre 115 ransomware, 125 fuites ou ventes d'accès et 43 revendications DDoS. En retirant les deux défacements, le ransomware représente 48,5 % et les fuites ou ventes d'accès 51,5 % des 281 enregistrements restants.
+Sur l'ensemble des 294 fiches, les **fuites / ventes d'accès représentent 42,5 %**, le **ransomware 39,1 %**, les **revendications DDoS 17,7 %** et les **défacements 0,7 %**. Si l'on compare uniquement ransomware et fuites / ventes d'accès, les fuites devancent le ransomware, **52,1 % contre 47,9 %**.
 
-Ce qui compte vraiment, c'est l'accélération au deuxième trimestre. Avril et mai à eux seuls totalisent **161 incidents**, quasiment la moitié du semestre à **49,0 %**. Juin retombe par rapport aux deux, mais le ransomware revient à la parité avec les fuites, 20 incidents dans chaque catégorie.
+Ce qui compte surtout, c'est l'accélération au deuxième trimestre. Avril et mai à eux seuls totalisent **172 incidents**, soit **58,5 %** du semestre. Juin retombe par rapport aux deux mois précédents, mais le ransomware revient à la parité avec les fuites, avec 20 incidents dans chaque catégorie.
 
 ## 2. Méthodologie et périmètre
 
 - **Périmètre géographique :** victimes, institutions, opérations ou données liées à l'Afrique.
-- **Période :** du 1er janvier au 30 juin 2016.
+- **Période :** du 1er janvier au 30 juin 2026.
 - **Sources uniques de vérité :** les six fichiers mensuels `victims.md`.
 - **Ransomware :** incident attribué à un groupe ransomware, sans présumer un chiffrement lorsque les éléments disponibles ne le démontrent pas.
 - **Fuites et ventes d'accès :** données ou échantillons publiés, ventes de bases, ventes d'identifiants et offres d'accès.
@@ -38,10 +38,10 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 | Total des incidents documentés | 294 |
 | Ransomware | 115 |
 | Fuites de données / ventes d'accès | 125 |
-| Revendications DDoS | 52 | 🟪🟪🟪🟪 |
+| Revendications DDoS | 52 |
 | Défacement de sites web | 2 |
 | Mois au volume le plus élevé | Mai, 103 incidents |
-| Deuxième mois au volume le plus élevé | Mai, 103 incidents |
+| Deuxième mois au volume le plus élevé | Avril, 69 incidents |
 | Mois au volume le plus faible | Février, 20 incidents |
 
 **Répartition visuelle**
@@ -56,33 +56,33 @@ Fichiers sources : [janvier](./01-january/victims.md), [février](./02-february/
 
 <!-- H1_VISUAL_START -->
 
-### Comparaison ransomware, fuites et défacement par pays
+### Comparaison ransomware, fuites, DDoS et défacement par pays
 
 | Pays | Ransomware | Fuites / accès | DDoS | Défacement | Total | Distribution |
-| :--- | ---: | ---: | ---: | ---: | :--- |
-| Afrique du Sud | 25 | 23 | 0 | 48 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Égypte | 28 | 18 | 0 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Maroc | 10 | 35 | 52 | 0 | 88 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Tunisie | 8 | 8 | 0 | 16 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Nigeria | 6 | 9 | 0 | 15 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Kenya | 7 | 2 | 0 | 9 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| Algérie | 1 | 7 | 0 | 8 | 🟧 🟦🟦🟦🟦🟦🟦🟦 |
-| Sénégal | 3 | 2 | 1 | 6 | 🟧🟧🟧 🟦🟦 🟥 |
-| Tanzanie | 3 | 3 | 0 | 6 | 🟧🟧🟧 🟦🟦🟦 |
-| Ghana | 5 | 0 | 0 | 5 | 🟧🟧🟧🟧🟧 |
+| :--- | ---: | ---: | ---: | ---: | ---: | :--- |
+| Maroc | 10 | 36 | 43 | 0 | **89** | 🟧×10 🟦×36 🟪×43 |
+| Égypte | 28 | 19 | 8 | 0 | **55** | 🟧×28 🟦×19 🟪×8 |
+| Afrique du Sud | 25 | 23 | 0 | 0 | **48** | 🟧×25 🟦×23 |
+| Tunisie | 8 | 8 | 0 | 0 | **16** | 🟧×8 🟦×8 |
+| Nigeria | 6 | 9 | 0 | 0 | **15** | 🟧×6 🟦×9 |
+| Kenya | 7 | 2 | 0 | 0 | **9** | 🟧×7 🟦×2 |
+| Algérie | 1 | 7 | 0 | 0 | **8** | 🟧×1 🟦×7 |
+| Sénégal | 3 | 2 | 0 | 1 | **6** | 🟧×3 🟦×2 🟥×1 |
+| Tanzanie | 3 | 3 | 0 | 0 | **6** | 🟧×3 🟦×3 |
+| Ghana | 5 | 0 | 0 | 0 | **5** | 🟧×5 |
 
 ### Répartition développée des expositions géographiques par région
 
 | Région | Occurrences ransomware | Occurrences fuites / accès | Occurrences DDoS | Occurrences de défacement | Total des occurrences géographiques |
-| :--- | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 49 | 76 | 52 | 0 | 168 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| Afrique du Nord | 49 | 78 | 52 | 0 | 179 |
 | Afrique australe | 32 | 30 | 0 | 0 | 62 |
-| Afrique de l’Ouest | 16 | 22 | 2 | 40 |
+| Afrique de l’Ouest | 16 | 22 | 0 | 2 | 40 |
 | Afrique centrale | 1 | 2 | 0 | 0 | 3 |
-| Afrique de l’Est | 11 | 15 | 0 | 26 |
+| Afrique de l’Est | 11 | 15 | 0 | 0 | 26 |
 | Océan Indien | 6 | 0 | 0 | 0 | 6 |
 | Panafricain / région non précisée | 0 | 1 | 0 | 0 | 1 |
-| **Total** | **115** | **146** | **52** | **2** | **317** |
+| **Total** | **115** | **148** | **52** | **2** | **317** |
 
 Ce classement régional utilise les **occurrences géographiques**, et non les incidents dédupliqués. Six incidents explicitement multi-pays produisent 29 occurrences pays ; un incident panafricain supplémentaire ne dispose pas d’une attribution régionale suffisamment précise.
 
@@ -90,9 +90,9 @@ Ce classement régional utilise les **occurrences géographiques**, et non les i
 
 | Libellé | Incidents | Barre |
 |---|---:|:---|
-| Afrique du Sud | 48 | ██████████ |
-| Égypte | 46 | ██████████ |
 | Maroc | 89 | ██████████████████ |
+| Égypte | 55 | ███████████ |
+| Afrique du Sud | 48 | ██████████ |
 | Tunisie | 16 | ███ |
 | Nigeria | 15 | ███ |
 | Kenya | 9 | ██ |
@@ -100,49 +100,49 @@ Ce classement régional utilise les **occurrences géographiques**, et non les i
 | Sénégal | 6 | █ |
 | Tanzanie | 6 | █ |
 | Ghana | 5 | █ |
-Légende : les noms correspondent au classement du tableau ci-dessus.
 
 ### Répartition sectorielle
 
+Cette vue sectorielle couvre **239 fiches normalisées**. Elle ne doit pas être interprétée comme une décomposition des 294 incidents du semestre.
+
 | Secteur | Fiches | Part | Activité |
 | :--- | ---: | ---: | :--- |
-| Gouvernement / administration | 68 | 28,5% | ██████████ |
-| Autres secteurs explicites | 56 | 23,4% | ████████ |
-| Technologies / informatique | 26 | 10,9% | ████ |
-| Éducation / universités | 19 | 7,9% | ███ |
-| Industrie / fabrication | 19 | 7,9% | ███ |
-| Finance / banque | 17 | 7,1% | ██ |
-| Santé / médical | 15 | 6,3% | ██ |
-| Commerce / e-commerce | 13 | 5,4% | ██ |
-| Pétrole et énergie | 6 | 2,5% | █ |
+| Gouvernement / administration | 70 | 29,3 % | ██████████ |
+| Industrie / automobile / fabrication / construction / mines | 25 | 10,5 % | ████ |
+| Finance / banque | 25 | 10,5 % | ████ |
+| Éducation / universités / institutions académiques | 19 | 7,9 % | ███ |
+| Technologie / numérique / services aux entreprises / identité numérique | 15 | 6,3 % | ███ |
+| Santé / médical | 12 | 5,0 % | ██ |
+| Sports / fédérations | 12 | 5,0 % | ██ |
+| E-commerce / commerce de détail | 12 | 5,0 % | ██ |
+| Autres secteurs normalisés | 49 | 20,5 % | ███████ |
+| **Total des fiches normalisées** | **239** | **100 %** | |
 
 **Barres - Top secteurs - S1 2026**
 
 | Libellé | Incidents | Barre |
 |---|---:|:---|
-| Gouvernement / administration | 68 | ██████████ |
-| Autres secteurs explicites | 56 | ████████ |
-| Technologies / informatique | 26 | ████ |
-| Éducation / universités | 19 | ███ |
-| Industrie / fabrication | 19 | ███ |
-| Finance / banque | 17 | ██ |
-| Santé / médical | 15 | ██ |
-| Commerce / e-commerce | 13 | ██ |
-| Pétrole et énergie | 6 | █ |
-Légende : les noms correspondent au classement sectoriel du tableau ci-dessus.
+| Gouvernement / administration | 70 | ██████████ |
+| Industrie / automobile / fabrication / construction / mines | 25 | ████ |
+| Finance / banque | 25 | ████ |
+| Éducation / universités / institutions académiques | 19 | ███ |
+| Technologie / numérique / services aux entreprises / identité numérique | 15 | ███ |
+| Santé / médical | 12 | ██ |
+| Sports / fédérations | 12 | ██ |
+| E-commerce / commerce de détail | 12 | ██ |
 
-🟧 Ransomware | 🟦 Fuites et ventes d’accès | 🟥 Défacement
+🟧 Ransomware | 🟦 Fuites et ventes d’accès | 🟪 DDoS | 🟥 Défacement
 <!-- H1_VISUAL_END -->
 ## 4. Évolution mensuelle
 
 | Mois | Ransomware | Fuites / ventes d’accès | DDoS | Défacement de sites web | Total | Part mensuelle |
-|---|---:|---:|---:|---:|---:|
-| Janvier | 17 | 3 | 0 | 1 | 21 | 8,8 % |
-| Février | 20 | 0 | 0 | 0 | 20 | 8,4 % |
-| Mars | 21 | 19 | 0 | 1 | 41 | 17,2 % |
-| Avril | 20 | 40 | 9 | 0 | 69 | 23,6 % |
-| Mai | 17 | 43 | 43 | 0 | 103 | 34,6 % |
-| Juin | 20 | 20 | 0 | 0 | 40 | 13,7 % |
+|---|---:|---:|---:|---:|---:|---:|
+| Janvier | 17 | 3 | 0 | 1 | 21 | 7,1 % |
+| Février | 20 | 0 | 0 | 0 | 20 | 6,8 % |
+| Mars | 21 | 19 | 0 | 1 | 41 | 13,9 % |
+| Avril | 20 | 40 | 9 | 0 | 69 | 23,5 % |
+| Mai | 17 | 43 | 43 | 0 | 103 | 35,0 % |
+| Juin | 20 | 20 | 0 | 0 | 40 | 13,6 % |
 | **S1 2026** | **115** | **125** | **52** | **2** | **294** | **100 %** |
 
 **Barres - Incidents cyber mensuels en Afrique, S1 2026**
@@ -182,22 +182,22 @@ Légende : les noms correspondent au classement sectoriel du tableau ci-dessus.
 
 ## 5. Comparaison des trimestres
 
-| Période | Ransomware | Fuites / ventes d’accès | Défacement de sites web | Total |
-|---|---:|---:|---:|---:|
-| premier trimestre, janvier à mars | 58 | 22 | 2 | 82 |
-| deuxième trimestre, avril à juin | 57 | 100 | 0 | 157 |
+| Période | Ransomware | Fuites / ventes d’accès | DDoS | Défacement de sites web | Total |
+|---|---:|---:|---:|---:|---:|
+| Premier trimestre, janvier à mars | 58 | 22 | 0 | 2 | 82 |
+| Deuxième trimestre, avril à juin | 57 | 103 | 52 | 0 | 212 |
 | **S1 2026** | **115** | **125** | **52** | **2** | **294** |
 
-Le deuxième trimestre devance le premier de **128 incidents**, une hausse de 156,1 %. Le ransomware recule légèrement, de 58 incidents au T1 à 57 au T2. La croissance vient des fuites et ventes d'accès, qui passent de 22 à 103 incidents, avec 52 revendications DDoS supplémentaires, soit **+354,5 %**.
+Le deuxième trimestre devance le premier de **130 incidents**, soit une **hausse de 158,5 %** par rapport au T1. Le ransomware recule légèrement, de 58 incidents au T1 à 57 au T2. Les fuites et ventes d’accès passent de 22 à 103 incidents (**+368,2 %**), tandis que **52 revendications DDoS** sont enregistrées au T2 après aucune au T1.
 
 ## 6. Principaux constats CTI
 
-1. **Le ransomware s'est maintenu plutôt qu'accéléré.** Son volume mensuel n'a jamais quitté la fourchette 17-20.
-2. **Les fuites ont porté le deuxième trimestre.** Avril et mai à eux seuls, 83 fuites ou ventes d’accès et 52 revendications DDoS, contre 25 pour tout le premier trimestre.
-3. **Juin a déplacé l'équilibre sans revenir aux conditions du T1.** Le volume total a baissé après le pic avril-mai, mais le ransomware est remonté à la moitié des incidents du mois.
-4. **Le semestre est resté géographiquement concentré.** Afrique du Sud, Égypte et Maroc réunissent à eux trois 139 des 294 fiches, 48,4 %.
-5. **Gouvernement et administration dominent tous les autres secteurs.** 70 fiches, 29,3 %, avec Industrie/Automobile/Fabrication/Construction/Mines et Finance/Banque à égalité derrière à 25 chacun.
-6. **Un nom qui revient d'un mois à l'autre ne prouve pas une intrusion commune.** Une activité associée au même compte source sur plusieurs mois est enregistrée comme une continuité de publication tant que les fiches n'établissent pas de vecteur d'accès partagé.
+1. **Le ransomware s’est maintenu plutôt qu’accéléré.** Son volume mensuel reste compris entre 17 et 21 incidents.
+2. **Les fuites ont porté le deuxième trimestre.** Avril et mai totalisent à eux seuls 83 fuites ou ventes d’accès, contre 22 sur l’ensemble du premier trimestre ; ces deux mois concentrent également les 52 revendications DDoS du S1.
+3. **Juin a déplacé l’équilibre sans revenir aux conditions du T1.** Le volume total a baissé après le pic avril-mai, mais le ransomware est revenu à la moitié des incidents du mois.
+4. **Le semestre est fortement concentré géographiquement.** Le Maroc, l’Égypte et l’Afrique du Sud représentent **192 des 294 fiches (65,3 %)** lorsque tous les types d’incidents sont pris en compte.
+5. **Gouvernement et administration dominent la vue sectorielle normalisée.** Ils représentent 70 des 239 fiches sectorielles normalisées (29,3 %), devant Industrie/Automobile/Fabrication/Construction/Mines et Finance/Banque, à 25 fiches chacune.
+6. **Un nom qui revient d’un mois à l’autre ne prouve pas une intrusion commune.** Une activité associée au même compte source sur plusieurs mois est enregistrée comme une continuité de publication tant que les fiches n’établissent pas de vecteur d’accès partagé.
 
 ## 7. Limites du renseignement
 
@@ -214,9 +214,9 @@ Le deuxième trimestre devance le premier de **128 incidents**, une hausse de 15
 
 | Libellé pays direct | Fiches | Barre |
 |---|---:|:---|
+| 🇲🇦 Maroc | 89 | ██████████████████ |
+| 🇪🇬 Égypte | 55 | ███████████ |
 | 🇿🇦 Afrique du Sud | 48 | ██████████ |
-| 🇪🇬 Égypte | 46 | ██████████ |
-| 🇲🇦 Maroc | 52 | ██████████ |
 | 🇹🇳 Tunisie | 16 | ████ |
 | 🇳🇬 Nigeria | 15 | ████ |
 | 🇰🇪 Kenya | 9 | ██ |
@@ -231,10 +231,10 @@ Le deuxième trimestre devance le premier de **128 incidents**, une hausse de 15
 | 🇨🇮 Côte d'Ivoire | 2 | █ |
 | 🇪🇹 Éthiopie | 2 | █ |
 | 🇧🇼 Botswana | 2 | █ |
+| 🇸🇩 Soudan | 2 | █ |
 | 🇿🇼 Zimbabwe | 1 | █ |
 | 🇺🇬 Ouganda | 1 | █ |
 | 🇹🇬 Togo | 1 | █ |
-| 🇸🇩 Soudan | 1 | █ |
 | 🇸🇴 Somalie | 1 | █ |
 | 🇸🇨 Seychelles | 1 | █ |
 | 🇳🇪 Niger | 1 | █ |
@@ -244,9 +244,9 @@ Le deuxième trimestre devance le premier de **128 incidents**, une hausse de 15
 | 🇬🇳 Guinée | 1 | █ |
 | 🇬🇦 Gabon | 1 | █ |
 | 🇧🇯 Bénin | 1 | █ |
-| **Fiches mono-pays** | **232** |
+| **Fiches mono-pays** | **287** | |
 
-Les trois premiers pays directs regroupent **139 fiches (47,3 %)**. Le corpus contient aussi six incidents explicitement multi-pays et un incident panafricain sans attribution nationale précise, ce qui porte le total à 294.
+Les trois premiers pays directs regroupent **192 fiches (65,3 %)**. Le corpus contient aussi six incidents explicitement multi-pays et un incident panafricain sans attribution nationale précise, ce qui porte le total à 294.
 
 | Secteur normalisé | Fiches | Barre |
 |---|---:|:---|
@@ -272,9 +272,9 @@ Les trois premiers pays directs regroupent **139 fiches (47,3 %)**. Le corpus co
 | Recherche / Think tank | 1 | █ |
 | Organisations politiques / Partis | 1 | █ |
 | Services de sécurité | 1 | █ |
-| **Total** | **294** |
+| **Total des fiches normalisées** | **239** | |
 
-Aucune catégorie sectorielle résiduelle ne subsiste dans cette vue semestrielle. Nundun Gopee & Co Ltd est classée dans Construction / Immobilier.
+Cette vue sectorielle normalisée couvre **239 fiches** et ne constitue pas une décomposition complète des 294 incidents. Nundun Gopee & Co Ltd est classée dans Construction / Immobilier.
 
 #### Libellés d'acteurs normalisés les plus représentés
 
@@ -308,7 +308,7 @@ Les variantes de casse et de version des noms d'acteurs sont normalisées dans l
 | Juin | Vente d'accès aux portails des forces de l'ordre | Égypte, Malawi, Tanzanie, Algérie, Kenya, Zambie, Sierra Leone | 7 |
 | **Total** | **6 fiches sources** | | **29 expositions pays** |
 
-Le total des incidents est **294**. Le remplacement des six incidents explicitement multi-pays par leurs 29 occurrences africaines produit **306 occurrences d'exposition géographique** : 285 incidents mono-pays, 29 occurrences développées et un incident panafricain sans attribution régionale précise. La vue développée couvre **34 pays africains distincts**.
+Le total des incidents est **294**. Le remplacement des six incidents explicitement multi-pays par leurs 29 occurrences africaines produit **317 occurrences d’exposition géographique** : **287 incidents mono-pays**, **29 occurrences pays développées** et **1 incident panafricain** sans attribution régionale précise. La vue développée couvre **34 pays africains distincts**.
 
 - Prioriser la télémétrie liée aux identités, VPN, messageries, stockages cloud et comptes privilégiés.
 - Suivre séparément les publications de victimes, les éléments de chiffrement et la publication de données.
@@ -344,7 +344,7 @@ Pour le second semestre, AFRINTEL devra surveiller si la répartition 50/50 de j
 
 ## 10. Conclusion
 
-AFRINTEL a recensé **294 incidents sur l’ensemble du S1 2026** : **115 ransomware**, **125 fuites ou ventes d’accès**, **52 revendications DDoS** et **2 défacements**. Le deuxième trimestre porte 212 de ces fiches, 65,7 % de l'activité semestrielle. Toute la croissance nette par rapport au T1 vient des fuites et ventes d'accès, tandis que le ransomware recule légèrement.
+AFRINTEL a recensé **294 incidents sur l’ensemble du S1 2026** : **115 ransomware**, **125 fuites ou ventes d’accès**, **52 revendications DDoS** et **2 défacements**. Le deuxième trimestre porte **212 fiches (72,1 %)** de l’activité semestrielle. La hausse du T2 est portée par les fuites / ventes d’accès et les revendications DDoS, partiellement compensées par le léger recul du ransomware et l’absence de défacement au T2.
 
 La priorité défensive tient sur deux fronts à la fois : maintenir la préparation au ransomware tout en resserrant les contrôles contre l'exposition d'identifiants, l'extraction massive de données, l'exposition du stockage cloud et les ventes clandestines de données.
 
@@ -352,9 +352,10 @@ La priorité défensive tient sur deux fronts à la fois : maintenir la prépara
 
 - Totaux mensuels : 21 + 20 + 41 + 69 + 103 + 40 = 294.
 - Totaux par type : 115 + 125 + 52 + 2 = 294.
-- Géographie directe : 285 incidents mono-pays  + 6 incidents explicitement multi-pays + 1 incident panafricain = 294.
-- Géographie développée : 281 occurrences mono-pays + 29 occurrences multi-pays + 1 occurrence panafricaine = 317.
-- Totaux sectoriels : les 22 lignes sectorielles explicites totalisent 283.
+- Géographie directe : 287 incidents mono-pays + 6 incidents explicitement multi-pays + 1 incident panafricain = 294.
+- Géographie développée : 287 incidents mono-pays + 29 occurrences pays développées + 1 occurrence panafricaine = 317.
+- Totaux régionaux : 115 occurrences ransomware + 148 occurrences fuites / accès + 52 DDoS + 2 défacements = 317.
+- Vue sectorielle normalisée : les 22 lignes sectorielles explicites totalisent 239 fiches.
 
 ---
 
