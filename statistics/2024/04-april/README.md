@@ -8,21 +8,22 @@ This statistical sheet is compiled from the 6 cards in the monthly victim file. 
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 6 |
+| Total incidents | 7 |
 | Ransomware | 5 |
-| Data leaks | 1 |
+| Data leaks | 2 |
 | Access sales | 0 |
 | Defacement | 0 |
 | Unclassified public claims | 0 |
 | Countries | 5 |
-| Sectors | 6 |
-| Actors / sources | 5 |
+| Sectors | 7 |
+| Actors / sources | 6 |
 
 ## 1. Country
 
 | Country | Incidents |
 |---|---:|
 | 🇿🇦 South Africa | 2 |
+| 🇪🇬 Egypt | 1 |
 | 🇸🇨 Seychelles | 1 |
 | 🇧🇫 Burkina Faso | 1 |
 | 🇲🇦 Morocco | 1 |
@@ -48,13 +49,14 @@ This statistical sheet is compiled from the 6 cards in the monthly victim file. 
 | hunters | 1 |
 | Pedi | 1 |
 | ransomhub | 1 |
+| EgyptLeaks | 1 |
 
 ## 4. Type
 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 5 |
-| Data Leak | 1 |
+| Data Leak | 2 |
 
 ## CTI reading
 

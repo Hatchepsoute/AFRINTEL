@@ -337,6 +337,8 @@ def classify_incident(fields: Dict[str, str], status: str, default_incident_type
     if explicit_type:
         if "ransomware" in explicit_type:
             return "ransomware"
+        if "ddos" in explicit_type or "denial of service" in explicit_type:
+            return "ddos"
         if "defacement" in explicit_type or "défacement" in explicit_type:
             return "defacement"
         if "access" in explicit_type or "accès" in explicit_type:
@@ -348,6 +350,8 @@ def classify_incident(fields: Dict[str, str], status: str, default_incident_type
     status_text = status.lower()
     if "defacement" in status_text or "défacement" in status_text or "defacement" in joined_text or "défacement" in joined_text:
         return "defacement"
+    if "ddos" in status_text or "ddos" in joined_text or "denial of service" in joined_text:
+        return "ddos"
     if "ransomware" in status_text or "ransomware" in " ".join(fields.keys()).lower():
         return "ransomware"
     if "access" in status_text or "accès" in status_text or "credential" in status_text or "identifiant" in status_text:
@@ -546,6 +550,7 @@ def incident_label_fr(incident_type: str) -> str:
         "data-leak": "fuite de données",
         "access-sale": "vente d'accès",
         "defacement": "défacement",
+        "ddos": "DDoS",
     }.get(incident_type, incident_type)
 
 

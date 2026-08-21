@@ -853,3 +853,141 @@
 
 - **Note CTI :**
   L’acteur affirme disposer d’un accès étendu à l’infrastructure du football régional algérien. Toutefois, l’étendue exacte de la compromission et l’authenticité complète des accès revendiqués ne peuvent pas être confirmées indépendamment à ce stade.
+
+
+### Observations rétrospectives Keymous+ - avril 2026
+
+### 11 avril 2026
+#### 🇸🇩 Soudan - Site de la Rapid Support Force
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [rapidsupportforce.com](https://rapidsupportforce.com)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 11 avril 2026
+#### 🇪🇬 Égypte - Orange Egypt
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Télécommunications
+- **Type d incident :** DDoS
+- **Site web :** [orange.eg](https://orange.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 11 avril 2026
+#### 🇪🇬 Égypte - Telecom Egypt
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Télécommunications
+- **Type d incident :** DDoS
+- **Site web :** Non précisé
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Portail du gouvernement égyptien
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [egypt.gov.eg](https://egypt.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Ministère des Finances
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [mof.gov.eg](https://mof.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Ministère de la Justice
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [jp.gov.eg](https://jp.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Ministère du Commerce et de l Industrie
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [mti.gov.eg](https://mti.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Ministère du Pétrole et des Ressources minérales
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [petroleum.gov.eg](https://petroleum.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+#### 🇪🇬 Égypte - Service d Information de l État égyptien
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [sis.gov.eg](https://sis.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.

@@ -6,12 +6,13 @@
 
 | Indicator | April | May | Change |
 |---|---:|---:|---:|
-| Total incidents | 60 | 57 | -3 (-5.0%) |
+| Total incidents | 69 | 103 | +34 (+49.3%) |
 | Ransomware | 20 | 17 | -3 (-15.0%) |
-| Data leaks and access sales | 40 | 40 | 0 (0.0%) |
+| Data leaks and access sales | 40 | 43 | +3 (+7.5%) |
+| DDoS claims | 9 | 43 | +34 |
 | Distinct countries after expanding multi-country records | 16 | 18 | +2 |
 
-Overall volume dipped slightly. Data leaks and access sales held flat, ransomware is where the drop came from, 20 down to 17.
+Overall volume rose sharply after the retrospective DDoS collection. Data leaks and access sales increased from 40 to 43, while ransomware fell from 20 to 17.
 
 ## Country evolution
 
@@ -19,7 +20,7 @@ Overall volume dipped slightly. Data leaks and access sales held flat, ransomwar
 |---|---:|---:|---:|
 | 🇪🇬 Egypt | 11 | 16 | +5 |
 | 🇿🇦 South Africa | 8 | 14 | +6 |
-| 🇲🇦 Morocco | 17 | 7 | -10 |
+| 🇲🇦 Morocco | 17 | 51 | +34 |
 | 🇹🇳 Tunisia | 4 | 5 | +1 |
 | 🇳🇬 Nigeria | 4 | 3 | -1 |
 | 🇩🇿 Algeria | 4 | 2 | -2 |
@@ -30,7 +31,7 @@ Overall volume dipped slightly. Data leaks and access sales held flat, ransomwar
 | 🇪🇹 Ethiopia | 1 | 1 | 0 |
 | Multi-country records | 1 | 3 | +2 |
 
-Direct country labels cover 59 April records plus one multi-country record, and 54 May records plus three multi-country records.
+Direct country labels cover 59 April records plus one multi-country record, and 98 May records plus three multi-country records.
 
 ## Sector evolution
 
@@ -45,7 +46,7 @@ Direct country labels cover 59 April records plus one multi-country record, and 
 | Human resources / Recruitment | 0 | 5 | +5 |
 | Telecommunications | 1 | 3 | +2 |
 
-Government/Administration took 20 of May's 57 records on its own. Human resources and recruitment went from zero in April to 5 in May.
+Government/Administration took 49 of May's 103 records on its own. Human resources and recruitment went from zero in April to 5 in May.
 
 ## Actor evolution
 
@@ -64,6 +65,6 @@ The monthly total held close, but where the activity landed changed. Egypt and S
 
 ## Conclusion
 
-May closed at 57 incidents against April's 60. Ransomware accounted for the drop; leaks and access sales stayed exactly flat.
+May closed at 103 incidents against April's 69. Ransomware accounted for the drop; leaks and access sales stayed exactly flat.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

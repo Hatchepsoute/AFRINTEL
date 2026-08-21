@@ -4,12 +4,12 @@
   "source": "AFRINTEL OSINT Dataset",
   "classification": "TLP:CLEAR",
   "period_covered": "January 1 to December 31, 2024",
-  "total_incidents": 117,
-  "total_victims": 117,
+  "total_incidents": 118,
+  "total_victims": 118,
   "compatibility_note": "The total_victims field is retained for historical compatibility; it refers here to incidents published and tracked by AFRINTEL, not to compromises that are all confirmed.",
   "sections": {
     "1. executive_summary": {
-      "content": "AFRINTEL documented 117 incidents across 27 African countries: 86 ransomware claims, 28 data leaks, and 3 access sales. No defacement is present in the dataset. South Africa accounts for 30 incidents, followed by Egypt with 13, then Algeria and Nigeria with 7 each. These figures measure observed publications, not the exhaustive incidence of cyberattacks across the continent.",
+      "content": "AFRINTEL documented 118 incidents across 27 African countries: 86 ransomware claims, 29 data leaks, and 3 access sales. No defacement is present in the dataset. South Africa accounts for 30 incidents, followed by Egypt with 13, then Algeria and Nigeria with 7 each. These figures measure observed publications, not the exhaustive incidence of cyberattacks across the continent.",
       "key_findings": [
         "Ransomware: 86 incidents, or 74.1% of the dataset",
         "South Africa: 30 incidents, including 29 ransomware publications",
@@ -32,16 +32,16 @@
     "3. global_overview": {
       "incident_type_distribution": {
         "ransomware": 86,
-        "data_leak": 28,
+        "data_leak": 29,
         "access_sale": 3,
         "defacement": 0,
-        "total": 117
+        "total": 118
       },
       "monthly_activity": [
         {"month": "January", "total": 12, "ransomware": 3, "data_leak": 8, "access_sale": 1},
         {"month": "February", "total": 9, "ransomware": 5, "data_leak": 4, "access_sale": 0},
         {"month": "March", "total": 9, "ransomware": 7, "data_leak": 2, "access_sale": 0},
-        {"month": "April", "total": 6, "ransomware": 5, "data_leak": 1, "access_sale": 0},
+        {"month": "April", "total": 7, "ransomware": 5, "data_leak": 2, "access_sale": 0},
         {"month": "May", "total": 8, "ransomware": 8, "data_leak": 0, "access_sale": 0},
         {"month": "June", "total": 3, "ransomware": 3, "data_leak": 0, "access_sale": 0},
         {"month": "July", "total": 11, "ransomware": 7, "data_leak": 4, "access_sale": 0},
@@ -53,7 +53,7 @@
       ],
       "country_counts": {
         "South Africa": 30,
-        "Egypt": 13,
+        "Egypt": 14,
         "Algeria": 7,
         "Nigeria": 7,
         "Tunisia": 6,
@@ -82,7 +82,7 @@
       },
       "regional_distribution": [
         {"region": "Southern Africa", "total": 39, "ransomware": 38, "data_leak": 1, "access_sale": 0},
-        {"region": "North Africa", "total": 34, "ransomware": 22, "data_leak": 12, "access_sale": 0},
+        {"region": "North Africa", "total": 35, "ransomware": 22, "data_leak": 13, "access_sale": 0},
         {"region": "West Africa", "total": 21, "ransomware": 11, "data_leak": 8, "access_sale": 2},
         {"region": "East Africa", "total": 14, "ransomware": 8, "data_leak": 6, "access_sale": 0},
         {"region": "Indian Ocean", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
@@ -95,7 +95,7 @@
         "Professional / Business Services": 11,
         "Technology / IT": 11,
         "Education / University": 11,
-        "Healthcare / Medical": 9,
+        "Healthcare / Medical": 10,
         "Retail / E-commerce": 9,
         "Telecommunications": 5,
         "Media / Entertainment": 4,
@@ -140,9 +140,9 @@
     },
     "7. trends_and_intelligence_gaps": {
       "observed": [
-        {"confidence": "High", "finding": "86 of 117 incidents are classified as ransomware."},
+        {"confidence": "High", "finding": "86 of 118 incidents are classified as ransomware."},
         {"confidence": "High", "finding": "South Africa accounts for 25.9% of the annual dataset."},
-        {"confidence": "High", "finding": "The second half has 70 incidents, compared with 47 in the first half."}
+        {"confidence": "High", "finding": "The second half has 70 incidents, compared with 48 in the first half."}
       ],
       "assumptions": [
         {"confidence": "Medium at the general level, low per incident", "finding": "Credential reuse, initial access brokers, and exposed Edge or VPN services are priority research scenarios, not facts attributed to the victims in the dataset."}
@@ -156,9 +156,9 @@
     },
     "8. objective_comparative_analysis": {
       "periods": "January-June versus July-December",
-      "incidents": {"first_half": 47, "second_half": 70, "absolute_change": 23, "change_percent": 48.9},
+      "incidents": {"first_half": 48, "second_half": 70, "absolute_change": 22, "change_percent": 45.8},
       "ransomware": {"first_half": 31, "second_half": 55, "absolute_change": 24, "change_percent": 77.4},
-      "data_leaks": {"first_half": 15, "second_half": 13, "absolute_change": -2, "change_percent": -13.3},
+      "data_leaks": {"first_half": 16, "second_half": 13, "absolute_change": -3, "change_percent": -18.8},
       "access_sales": {"first_half": 1, "second_half": 2, "absolute_change": 1, "change_percent": 100.0},
       "assessment": "The second half contains 23 more incidents, entirely driven by ransomware. Leaks decline slightly. This comparison describes the collected corpus and does not prove an equivalent increase in real compromises; source activity, reposts, and collection delays remain visibility factors."
     },

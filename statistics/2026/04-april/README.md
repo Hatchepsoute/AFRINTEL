@@ -16,7 +16,7 @@
 
 These statistics cover publications observed within the AFRINTEL monitoring scope for April 2026. Each record retains the status documented in its victim card.
 
-The multi-country incident involving `Angola / South Africa / Nigeria` is counted as **1 incident** in the global total of 60. For regional exposure analysis, it is also mapped to each affected geographic region.
+The multi-country incident involving `Angola / South Africa / Nigeria` is counted as **1 incident** in the global total of 69. For regional exposure analysis, it is also mapped to each affected geographic region.
 
 ---
 
@@ -24,7 +24,7 @@ The multi-country incident involving `Angola / South Africa / Nigeria` is counte
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 60 |
+| Total incidents | 69 |
 | Ransomware attacks | 20 |
 | Data leaks / access sales | 40 |
 | Countries affected | 16 |
@@ -38,8 +38,9 @@ The multi-country incident involving `Angola / South Africa / Nigeria` is counte
 | Incident type | Count | Percentage |
 |---|---:|---:|
 | Ransomware | 20 | 33.3% |
-| Data leaks / access sales | 40 | 66.7% |
-| **Total** | **60** | **100%** |
+| Data leaks / access sales | 40 | 58.0% |
+| DDoS claims | 9 | 13.0% |
+| **Total** | **69** | **100%** |
 
 ```mermaid
 pie
@@ -70,7 +71,7 @@ pie
 | 🇺🇬 Uganda | 1 |
 | 🇿🇲 Zambia | 1 |
 | 🌍 Multi-country Africa | 1 |
-| **Total** | **60** |
+| **Total** | **69** |
 
 ```mermaid
 xychart
@@ -102,7 +103,7 @@ xychart
 | 🇺🇬 Uganda | 0 | 1 | 1 |
 | 🇿🇲 Zambia | 1 | 0 | 1 |
 | 🌍 Multi-country Africa | 0 | 1 | 1 |
-| **Total** | **20** | **40** | **60** |
+| **Total** | **20** | **40** | **9** | **69** |
 
 ### Ransomware by country
 
@@ -166,7 +167,7 @@ xychart
 | Telecommunications | 1 | 1.7% |
 | NGO / Social Welfare | 1 | 1.7% |
 | Personal Data Aggregation | 1 | 1.7% |
-| **Total** | **60** | **100%** |
+| **Total** | **69** | **100%** |
 
 ```mermaid
 xychart

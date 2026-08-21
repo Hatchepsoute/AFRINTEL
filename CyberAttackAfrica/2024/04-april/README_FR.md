@@ -9,9 +9,9 @@
 
 ## 1. Résumé exécutif
 
-Avril 2024 compte **6 incidents** : **5 revendications ransomware** et **1 fuite de données**. L’Afrique du Sud représente deux publications ; quatre autres pays apparaissent une fois chacun. Le corpus traverse quatre régions, dont l’océan Indien avec la publication visant Remitano aux Seychelles.
+Avril 2024 compte **7 incidents** : **5 revendications ransomware** et **2 fuites de données**. L’Afrique du Sud représente deux publications ; cinq autres pays apparaissent une fois chacun. Le corpus traverse quatre régions, dont l’océan Indien avec la publication visant Remitano aux Seychelles.
 
-SpaceBears est le seul acteur associé à deux organisations. Cette simultanéité ne suffit pas à conclure à une campagne coordonnée. La fuite visant l’ONEF au Burkina Faso est le seul incident du mois accompagné d’un échantillon de données dans le corpus.
+SpaceBears est le seul acteur associé à deux organisations. Cette simultanéité ne suffit pas à conclure à une campagne coordonnée. Les fuites visant l’ONEF au Burkina Faso et Vezeeta Pharmacy en Égypte sont accompagnées d’éléments d’échantillon dans le corpus.
 
 Voir [victims_FR.md](./victims_FR.md).
 
@@ -25,9 +25,9 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents / Pays | **6 / 5** |
+| Incidents / Pays | **7 / 6** |
 | Ransomware | **5** |
-| Fuites de données | **1** |
+| Fuites de données | **2** |
 | Ventes d’accès / Défacement | **0 / 0** |
 
 ### Classement par pays
@@ -36,24 +36,25 @@ Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé ave
 |---|---:|---:|---:|
 | 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
 | 🇧🇫 Burkina Faso | 1 | 0 | 1 |
+| 🇪🇬 Égypte | 1 | 0 | 1 |
 | 🇱🇾 Libye | 1 | 1 | 0 |
 | 🇲🇦 Maroc | 1 | 1 | 0 |
 | 🇸🇨 Seychelles | 1 | 1 | 0 |
-| **Total** | **6** | **5** | **1** |
+| **Total** | **7** | **5** | **2** |
 
 ```mermaid
 xychart
     title "Incidents par pays - avril 2024"
-    x-axis ["ZA","BF","LY","MA","SC"]
+    x-axis ["ZA","BF","EG","LY","MA","SC"]
     y-axis "Incidents" 0 --> 3
-    bar [2,1,1,1,1]
+    bar [2,1,1,1,1,1]
 ```
 
 ```mermaid
 pie showData
     title Répartition par type - avril 2024
     "Ransomware" : 5
-    "Fuite de données" : 1
+    "Fuite de données" : 2
 ```
 
 ### Répartition régionale
@@ -61,29 +62,30 @@ pie showData
 | Région | Total | Ransomware | Fuite |
 |---|---:|---:|---:|
 | Afrique australe | 2 | 2 | 0 |
-| Afrique du Nord | 2 | 2 | 0 |
+| Afrique du Nord | 3 | 2 | 1 |
 | Afrique de l’Ouest | 1 | 0 | 1 |
 | Océan Indien | 1 | 1 | 0 |
-| **Total** | **6** | **5** | **1** |
+| **Total** | **7** | **5** | **2** |
 
 ### Répartition sectorielle normalisée
 
 | Secteur | Incidents | Part |
 |---|---:|---:|
-| Finance / Banque | 1 | 16,7 % |
-| Médias / Divertissement | 1 | 16,7 % |
-| Gouvernement / Administration | 1 | 16,7 % |
-| Industrie / Fabrication | 1 | 16,7 % |
-| Technologies / Informatique | 1 | 16,7 % |
-| Pétrole / Énergie | 1 | 16,7 % |
-| **Total** | **6** | **100 %** |
+| Finance / Banque | 1 | 14,3 % |
+| Médias / Divertissement | 1 | 14,3 % |
+| Gouvernement / Administration | 1 | 14,3 % |
+| Industrie / Fabrication | 1 | 14,3 % |
+| Technologies / Informatique | 1 | 14,3 % |
+| Pétrole / Énergie | 1 | 14,3 % |
+| Santé / Pharmacie en ligne | 1 | 14,3 % |
+| **Total** | **7** | **100 %** |
 
 ### Acteurs les plus visibles
 
 | Acteur | Incidents |
 |---|---:|
 | SpaceBears | 2 |
-| Hunters, INC Ransom, Pedi, RansomHub | 1 chacun |
+| Hunters, INC Ransom, Pedi, RansomHub, EgyptLeaks | 1 chacun |
 
 ## 4. Analyse détaillée par type d’incident
 
@@ -93,11 +95,11 @@ Les publications concernent Remitano, Caxton and CTP, SM Emballage, Thinkadam et
 
 ### 4.2 Fuite de données
 
-La publication ONEF présente un échantillon attribué à un organisme burkinabè chargé de l’emploi et de la formation. Les éléments disponibles rendent plausible l’existence d’une base liée au service, sans permettre de vérifier son exhaustivité ni la date de l’accès initial.
+La publication ONEF présente un échantillon associé à un organisme burkinabè chargé de l’emploi et de la formation. La publication Vezeeta Pharmacy présente séparément un extrait de commandes attribué à une plateforme égyptienne de pharmacie en ligne. Dans les deux cas, les éléments disponibles ne permettent pas de vérifier l’exhaustivité ni la date de l’accès initial.
 
 ## 5. Impact sectoriel
 
-La répartition sectorielle est parfaitement dispersée : un incident dans chacun des six secteurs. Cette absence de concentration réduit la valeur d’une conclusion sectorielle générale. En revanche, l’énergie, les services publics de l’emploi et la finance doivent être traités avec une priorité supérieure en raison de leurs fonctions.
+La répartition sectorielle est parfaitement dispersée : un incident dans chacun des sept secteurs. Cette absence de concentration réduit la valeur d’une conclusion sectorielle générale. En revanche, l’énergie, les services publics de l’emploi et la finance doivent être traités avec une priorité supérieure en raison de leurs fonctions.
 
 ## 6. Profil des acteurs et évaluation du risque
 
@@ -110,7 +112,7 @@ La répartition sectorielle est parfaitement dispersée : un incident dans chacu
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé - confiance élevée :** cinq incidents sur six relèvent du ransomware.
+- **Observé - confiance élevée :** cinq incidents sur sept relèvent du ransomware.
 - **Observé - confiance élevée :** aucun secteur ne compte plus d’un incident.
 - **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les cas ransomware.
 - **Lacune :** l’échantillon ONEF ne permet pas de valider le volume complet ou la chronologie d’acquisition.

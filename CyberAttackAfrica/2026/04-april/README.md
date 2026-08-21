@@ -10,11 +10,11 @@
 
 ## 1. Executive summary
 
-April 2026 brought in **60 publicly claimed cyber incidents** across Africa, **20 ransomware claims or publications**, **40 data leaks or access sales**. Data-broker activity picked up noticeably this month: highly sensitive database exposures (royal staff, identity documents, medical records) and targeted access sales against government infrastructure both intensified. Ransomware groups **payload**, **apt73/bashe**, **TheGentlemen** and **krybit** kept up the pressure, while **Grubder**, **anisanas2**, **dark07x**, **wh6ami** and **Rihana** dominated the data-leak side of the underground market.
+April 2026 brought in **69 publicly claimed cyber incidents** across Africa, **20 ransomware claims or publications**, **40 data leaks or access sales**. Data-broker activity picked up noticeably this month: highly sensitive database exposures (royal staff, identity documents, medical records) and targeted access sales against government infrastructure both intensified. Ransomware groups **payload**, **apt73/bashe**, **TheGentlemen** and **krybit** kept up the pressure, while **Grubder**, **anisanas2**, **dark07x**, **wh6ami** and **Rihana** dominated the data-leak side of the underground market.
 
 Key findings:
 - **20 ransomware claims or publications (33.3%)** and **40 data leaks / access sales (66.7%)**.
-- **16 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 60% of victims.
+- **16 countries** affected; **Morocco** (17 incidents), **Egypt** (11), **South Africa** (8) account for 52.2% of victims.
 - **30+ distinct threat actors**; prolific data brokers **Grubder** (7 victims) and **anisanas2** (3 victims) lead.
 - Government, education, and healthcare remain prime targets (combined 45%).
 - Massive breaches: Royal Palace staff DB (3,300 records with CNIE), Pick n Pay ASAP/Bottles.com (full payment cards, GPS), Kenya Airports Authority (claimed 2 TB), CNSS Benin mailbox leak (7.1 GB).
@@ -37,11 +37,12 @@ Key findings:
 
 | Indicator                  | Value |
 |----------------------------|-------|
-| Total victims              | 60    |
+| Total victims              | 69    |
 | Countries affected         | 16    |
 | Distinct actors            | 30+   |
-| Ransomware incidents       | 20 (33.3%) |
-| Data leaks / access sales  | 40 (66.7%) |
+| Ransomware incidents       | 20 (29.0%) |
+| Data leaks / access sales  | 40 (58.0%) |
+| DDoS claims | 9 (13.0%) |
 
 ### Country ranking
 
@@ -139,7 +140,7 @@ pie
 | 🇺🇬 Uganda | **0** | **1** | 🟦 |
 | 🇿🇲 Zambia | **1** | **0** | 🟧 |
 | 🌍 Multi-country Africa | **0** | **1** | 🟦 |
-| **Total (60)** | **20** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+| **Total (69)** | **20** | **40** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
 
 ### 📊 Summary of targeted sectors by country
 
@@ -210,7 +211,7 @@ pie
 
 *Legend: 🟧 Ransomware | 🟦 Data Leaks*
 
-*Note: The regionalized total reaches 62 because the multi-country incident (Angola / Nigeria / South Africa), counted as a single incident in the global total of 60, was geographically distributed across regions to reflect its actual territorial impact.*
+*Note: The regionalized total reaches 62 because the multi-country incident (Angola / Nigeria / South Africa), counted as a single incident in the global total of 69, was geographically distributed across regions to reflect its actual territorial impact.*
 
 ### 📊 Cyberattacks Breakdown by Activity Sector
 
@@ -225,7 +226,7 @@ pie
 | **Oil & Energy** | **3** | 5.0 % | ███ |
 | **Telecommunications** | **1** | 1.7 % | █ |
 | **Detailed sectors from victim cards** | **18** | 30.0 % | ██████████████████ |
-| **Total** | **60** | **100 %** | |
+| **Total** | **69** | **100 %** | |
 
 
 **Sector distribution of Incidents - April 2026**
@@ -290,8 +291,8 @@ pie
 
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
-- **Concentration:** Morocco (17), Egypt (11) and South Africa (8) between them account for 36 of the month's 60 incidents, 60%.
-- **Threat mix:** 20 ransomware claims or publications, 40 data leaks or access sales, across 16 countries.
+- **Concentration:** Morocco (17), Egypt (19) and South Africa (8) between them account for 36 of the month's 69 incidents, 60%.
+- **Threat mix:** 20 ransomware claims or publications, 40 data leaks or access sales, across 17 countries.
 - **Actor activity:** Grubder led on the data-leak side with 7 victims. Payload, APT73/BASHE and TheGentlemen each claimed 4 ransomware victims.
 - **High-impact exposures:** Royal Palace staff data in Morocco, Pick n Pay ASAP/Bottles.com in South Africa, the Kenya Airports Authority, CNSS Benin, all notable claims this month.
 

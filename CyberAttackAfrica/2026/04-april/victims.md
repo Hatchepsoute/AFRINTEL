@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat%20Landscape](https://img.shields.io/badge/Threat%20Landscape-Ransomware%20%26%20Data%20Leaks-red)
 ![Period](https://img.shields.io/badge/Period-April%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-60-critical)
+![Victims](https://img.shields.io/badge/Victims-69-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
 ![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-40-orange)
 ![Countries](https://img.shields.io/badge/Countries%20Affected-16-blueviolet)
@@ -12,7 +12,7 @@
 # African Victims - April 2026
 
 ## Summary
-- **Total victims** : 60
+- **Total victims** : 69
 - **Ransomware attacks** : 20
 - **Data leaks (non‑ransomware)** : 40
 
@@ -852,3 +852,141 @@
 - **CTI Note :**
   The threat actor claims to possess broad access to Algeria’s regional football infrastructure. However, the full scope of the compromise and the authenticity of all claimed accesses cannot be independently verified at this stage.
   
+
+
+### Keymous+ retrospective observations - April 2026
+
+### April 11, 2026
+#### 🇸🇩 Sudan - Rapid Support Force website
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [rapidsupportforce.com](https://rapidsupportforce.com)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 11, 2026
+#### 🇪🇬 Egypt - Orange Egypt
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Telecommunications
+- **Incident type :** DDoS
+- **Website :** [orange.eg](https://orange.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 11, 2026
+#### 🇪🇬 Egypt - Telecom Egypt
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Telecommunications
+- **Incident type :** DDoS
+- **Website :** Not specified
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Government of Egypt portal
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [egypt.gov.eg](https://egypt.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Ministry of Finance
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [mof.gov.eg](https://mof.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Ministry of Justice
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [jp.gov.eg](https://jp.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Ministry of Trade and Industry
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [mti.gov.eg](https://mti.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Ministry of Petroleum and Mineral Resources
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [petroleum.gov.eg](https://petroleum.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.
+
+### April 12, 2026
+#### 🇪🇬 Egypt - Egyptian State Information Service
+
+- **Threat Actor / Group :** Keymous+
+- **Sector :** Government / Administration
+- **Incident type :** DDoS
+- **Website :** [sis.gov.eg](https://sis.gov.eg)
+- **Status :** Claim - Unverified
+
+- **Description :**
+  Keymous+ published an availability claim presenting the target website or service as unavailable.
+
+- **Analysis :**
+  Observed: an actor-side Check-Host or equivalent availability result was posted on 11 or 12 April 2026. Unknown: traffic source, DDoS method, duration, independent service impact and victim confirmation. The observation does not independently prove a successful DDoS.

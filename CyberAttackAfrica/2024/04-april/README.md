@@ -9,9 +9,9 @@
 
 ## 1. Executive summary
 
-April 2024 contains **6 incidents**: **5 ransomware claims** and **1 data leak**. South Africa accounts for two publications, while four other countries appear once each. The corpus spans four regions, including the Indian Ocean through the Remitano publication in Seychelles.
+April 2024 contains **7 incidents**: **5 ransomware claims** and **2 data leaks**. South Africa accounts for two publications, while five other countries appear once each. The corpus spans four regions, including the Indian Ocean through the Remitano publication in Seychelles.
 
-SpaceBears is the only actor associated with two organizations. Simultaneous publication is not enough to establish a coordinated campaign. The ONEF leak in Burkina Faso is the month's only incident supported by a data sample in the corpus.
+SpaceBears is the only actor associated with two organizations. Simultaneous publication is not enough to establish a coordinated campaign. The ONEF leak in Burkina Faso and the Vezeeta Pharmacy leak in Egypt are the month's sample-backed incidents in the corpus.
 
 See [victims.md](./victims.md).
 
@@ -25,9 +25,9 @@ Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR
 
 | Indicator | Value |
 |---|---:|
-| Incidents / Countries | **6 / 5** |
+| Incidents / Countries | **7 / 6** |
 | Ransomware | **5** |
-| Data leaks | **1** |
+| Data leaks | **2** |
 | Access sales / Defacement | **0 / 0** |
 
 ### Country ranking
@@ -36,24 +36,25 @@ Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR
 |---|---:|---:|---:|
 | 🇿🇦 South Africa | 2 | 2 | 0 |
 | 🇧🇫 Burkina Faso | 1 | 0 | 1 |
+| 🇪🇬 Egypt | 1 | 0 | 1 |
 | 🇱🇾 Libya | 1 | 1 | 0 |
 | 🇲🇦 Morocco | 1 | 1 | 0 |
 | 🇸🇨 Seychelles | 1 | 1 | 0 |
-| **Total** | **6** | **5** | **1** |
+| **Total** | **7** | **5** | **2** |
 
 ```mermaid
 xychart
     title "Incidents by country - April 2024"
-    x-axis ["ZA","BF","LY","MA","SC"]
+    x-axis ["ZA","BF","EG","LY","MA","SC"]
     y-axis "Incidents" 0 --> 3
-    bar [2,1,1,1,1]
+    bar [2,1,1,1,1,1]
 ```
 
 ```mermaid
 pie showData
     title Incident-type distribution - April 2024
     "Ransomware" : 5
-    "Data leak" : 1
+    "Data leak" : 2
 ```
 
 ### Regional distribution
@@ -61,29 +62,30 @@ pie showData
 | Region | Total | Ransomware | Data leak |
 |---|---:|---:|---:|
 | Southern Africa | 2 | 2 | 0 |
-| North Africa | 2 | 2 | 0 |
+| North Africa | 3 | 2 | 1 |
 | West Africa | 1 | 0 | 1 |
 | Indian Ocean | 1 | 1 | 0 |
-| **Total** | **6** | **5** | **1** |
+| **Total** | **7** | **5** | **2** |
 
 ### Normalized sector distribution
 
 | Sector | Incidents | Share |
 |---|---:|---:|
-| Finance / Banking | 1 | 16.7% |
-| Media / Entertainment | 1 | 16.7% |
-| Government / Administration | 1 | 16.7% |
-| Manufacturing / Industry | 1 | 16.7% |
-| Technology / IT | 1 | 16.7% |
-| Oil & Energy | 1 | 16.7% |
-| **Total** | **6** | **100%** |
+| Finance / Banking | 1 | 14.3% |
+| Media / Entertainment | 1 | 14.3% |
+| Government / Administration | 1 | 14.3% |
+| Manufacturing / Industry | 1 | 14.3% |
+| Technology / IT | 1 | 14.3% |
+| Oil & Energy | 1 | 14.3% |
+| Healthcare / Online Pharmacy | 1 | 14.3% |
+| **Total** | **7** | **100%** |
 
 ### Most visible actors
 
 | Actor | Incidents |
 |---|---:|
 | SpaceBears | 2 |
-| Hunters, INC Ransom, Pedi, RansomHub | 1 each |
+| Hunters, INC Ransom, Pedi, RansomHub, EgyptLeaks | 1 each |
 
 ## 4. Detailed analysis by incident type
 
@@ -93,11 +95,11 @@ The publications concern Remitano, Caxton and CTP, SM Emballage, Thinkadam, and 
 
 ### 4.2 Data leak
 
-The ONEF publication contains a sample attributed to a Burkinabè employment and training body. Available evidence makes a service-related database plausible without establishing completeness or the date of initial access.
+The ONEF publication contains a sample associated with a Burkinabè employment and training body. The Vezeeta Pharmacy publication separately presents an order extract attributed to an Egyptian online-pharmacy platform. In both cases, available evidence does not establish completeness or the date of initial access.
 
 ## 5. Sectoral impact
 
-Sector distribution is fully dispersed, with one incident in each of six sectors. This lack of concentration limits broad sector conclusions. Energy, public employment services, and finance nevertheless warrant higher priority because of their functions.
+Sector distribution is fully dispersed, with one incident in each of seven sectors. This lack of concentration limits broad sector conclusions. Energy, public employment services, and finance nevertheless warrant higher priority because of their functions.
 
 ## 6. Threat actor profile and risk assessment
 
@@ -110,7 +112,7 @@ Sector distribution is fully dispersed, with one incident in each of six sectors
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed - high confidence:** five of six incidents are ransomware claims.
+- **Observed - high confidence:** five of seven incidents are ransomware claims.
 - **Observed - high confidence:** no sector records more than one incident.
 - **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware cases.
 - **Gap:** the ONEF sample does not validate the full volume or acquisition timeline.
@@ -149,7 +151,7 @@ Sector distribution is fully dispersed, with one incident in each of six sectors
 
 ## 12. Conclusion
 
-April is a low-volume month with considerable sector diversity. The repeated SpaceBears publications and the presence of sensitive organizations warrant monitoring without exceeding the evidence. ONEF remains the most actionable case for validating data exposure.
+April is a low-volume month with considerable sector diversity. The repeated SpaceBears publications and the presence of sensitive organizations warrant monitoring without exceeding the evidence. ONEF and Vezeeta remain the most actionable cases for validating data exposure.
 
 **AFRINTEL - TLP:CLEAR**
 

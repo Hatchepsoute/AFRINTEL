@@ -2,22 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 6 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les 7 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 6 |
+| Total incidents | 7 |
 | Ransomware | 5 |
-| Fuites de données | 1 |
-| Pays touchés | 5 |
-| Secteurs | 6 |
-| Acteurs / sources | 5 |
+| Fuites de données | 2 |
+| Pays touchés | 6 |
+| Secteurs | 7 |
+| Acteurs / sources | 6 |
 
 ## Pays
 
 | Pays | Incidents |
 |---|---:|
 | 🇿🇦 Afrique du Sud | 2 |
+| 🇪🇬 Égypte | 1 |
 | 🇸🇨 Seychelles | 1 |
 | 🇧🇫 Burkina Faso | 1 |
 | 🇲🇦 Maroc | 1 |
@@ -32,6 +33,7 @@ Cette fiche reprend les 6 cartes du fichier victimes mensuel. Les publications r
 | Gouvernement / Emploi et formation | 1 |
 | Industrie manufacturière / Emballages industriels | 1 |
 | Technologies de l'information / Téléphonie | 1 |
+| Santé / Pharmacie en ligne | 1 |
 | Énergie / Pétrole & Gaz | 1 |
 
 ## Acteurs / sources
@@ -43,13 +45,14 @@ Cette fiche reprend les 6 cartes du fichier victimes mensuel. Les publications r
 | hunters | 1 |
 | Pedi | 1 |
 | ransomhub | 1 |
+| EgyptLeaks | 1 |
 
 ## Types
 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 5 |
-| Data Leak | 1 |
+| Data Leak | 2 |
 
 **AFRINTEL** - TLP:CLEAR
 

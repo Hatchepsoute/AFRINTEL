@@ -6,9 +6,10 @@
 
 | Indicator | May | June | Change |
 |---|---:|---:|---:|
-| Total incidents | 57 | 40 | -17 (-29.8%) |
+| Total incidents | 103 | 40 | -63 (-61.2%) |
 | Ransomware | 17 | 20 | +3 (+17.6%) |
-| Data leaks and access sales | 40 | 20 | -20 (-50.0%) |
+| Data leaks and access sales | 43 | 20 | -23 (-53.5%) |
+| DDoS claims | 43 | 0 | -43 |
 | Distinct countries after expanding multi-country records | 18 | 20 | +2 |
 
 June's drop came entirely from data leaks and access sales. Ransomware actually went the other way, 17 up to 20.
@@ -17,7 +18,7 @@ June's drop came entirely from data leaks and access sales. Ransomware actually 
 
 | Direct country label | May | June | Change |
 |---|---:|---:|---:|
-| 🇲🇦 Morocco | 7 | 9 | +2 |
+| 🇲🇦 Morocco | 51 | 9 | -42 |
 | 🇿🇦 South Africa | 14 | 6 | -8 |
 | 🇪🇬 Egypt | 16 | 4 | -12 |
 | 🇳🇬 Nigeria | 3 | 4 | +1 |
@@ -29,13 +30,13 @@ June's drop came entirely from data leaks and access sales. Ransomware actually 
 | 🇸🇳 Senegal | 1 | 1 | 0 |
 | Multi-country records | 3 | 2 | -1 |
 
-Direct country labels cover 54 May records plus three multi-country records, and 38 June records plus two multi-country records.
+Direct country labels cover 54 May records plus three multi-country records, and 98 May records plus three multi-country records, and 38 June records plus two multi-country records.
 
 ## Sector evolution
 
 | Sector | May | June | Change |
 |---|---:|---:|---:|
-| Government / Administration | 20 | 12 | -8 |
+| Government / Administration | 49 | 12 | -8 |
 | Finance / Banking | 3 | 6 | +3 |
 | Education / University | 3 | 4 | +1 |
 | E-commerce / Retail | 4 | 4 | 0 |
@@ -65,6 +66,6 @@ June had fewer records overall but actually wider geographic coverage once multi
 
 ## Conclusion
 
-June closed at 40 incidents against May's 57. Leaks and access sales dropped by 20 records; ransomware gained three.
+June closed at 40 incidents against May's 103. Leaks and access sales dropped by 21 records; ransomware gained three.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

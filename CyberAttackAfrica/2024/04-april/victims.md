@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 
-# Cyber Attacks in Africa - April 2024: List of 6 Victims
+# Cyber Attacks in Africa - April 2024: List of 7 Victims
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## 📅 April 2024
@@ -52,6 +52,31 @@
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this hunters listing, and confirm whether offline or immutable backups are available.
   2. Monitor for any subsequent publication of data samples associated with this claim, and prepare data protection and incident-response procedures in case evidence of compromise emerges.
+
+### April 19, 2024
+#### 🇪🇬 Egypt - Vezeeta Pharmacy (vezeeta.com)
+
+- **Initial publication date:** April 19, 2024
+- **AFRINTEL detection date:** August 21, 2026
+- **Actor / Group:** EgyptLeaks, post published on a cybercriminal forum
+- **Sector:** Healthcare / Online Pharmacy
+- **Website:** [vezeeta.com](https://www.vezeeta.com)
+- **Status:** Claim - Data Sample Published
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Incident type:** Data Leak
+
+- **Description:**
+
+  Vezeeta is an Egyptian healthcare-booking and online-pharmacy platform. The post specifically targets Vezeeta Pharmacy and advertises order data.
+
+- **Analysis:**
+
+  **Observed:** A post attributed to EgyptLeaks, dated April 19, 2024, offers approximately 133,000 Vezeeta Pharmacy order records covering 2021, 2022 and 2023. The displayed sample contains order fields for contact, zone, order status, payment, branch, products and delivery addresses. Personal values visible in the sample are not reproduced by AFRINTEL.
+
+  **Assumption:** The match between the Vezeeta Pharmacy name, vezeeta.com domain, branch names and order-export structure is compatible with a customer-data exposure in Egypt. If authentic, the data could enable targeted phishing, delivery fraud, impersonation of staff or pharmacies and indirect exposure of health information inferred from ordered products.
+
+  **Unknown:** AFRINTEL did not receive the complete archive or independently verify the claimed 133,000 orders, acquisition method, completeness, current validity of contact data, presence of protected medical data or any Vezeeta confirmation. The assessment is limited to the visible screenshot and excerpt; no name, phone number, address, person-linked product or order identifier is reproduced.
 
 ### 23 April 2024
 #### 🇧🇫 Burkina Faso - ONEF (National Observatory for Employment and Training)

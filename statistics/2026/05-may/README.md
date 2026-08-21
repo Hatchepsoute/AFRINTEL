@@ -1,9 +1,9 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-May%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-57-critical)
+![Victims](https://img.shields.io/badge/Victims-103-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-17-red)
-![Data Leaks](https://img.shields.io/badge/Data%20Leaks-40-orange)
+![Data Leaks](https://img.shields.io/badge/Data%20Leaks-43-orange)
 ![Countries](https://img.shields.io/badge/Countries%20Affected-18-blueviolet)
 ![Intel](https://img.shields.io/badge/Type-CTI%20Statistics-purple)
 
@@ -16,7 +16,7 @@
 
 These statistics cover publications observed within the AFRINTEL monitoring scope for May 2026. Each record retains the status documented in its victim card.
 
-The three multi-country incidents (Resume Docs, DHIS2, Passport Scans) are counted as **1 incident each** in the global total of 57. In the victim files, each entry lists the specific countries affected rather than a generic "Multi-country" label, to allow per-country identification. In the geographic exposure table (section 2.2), each affected country is listed individually. The sum of country exposures therefore exceeds 57 incidents.
+The three multi-country incidents (Resume Docs, DHIS2, Passport Scans) are counted as **1 incident each** in the global total of 103. In the victim files, each entry lists the specific countries affected rather than a generic "Multi-country" label, to allow per-country identification. In the geographic exposure table (section 2.2), each affected country is listed individually. The sum of country exposures therefore exceeds 103 incidents.
 
 ---
 
@@ -24,9 +24,9 @@ The three multi-country incidents (Resume Docs, DHIS2, Passport Scans) are count
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 57 |
+| Total incidents | 103 |
 | Ransomware listings or disclosures | 17 |
-| Data leaks / access sales | 40 |
+| Data leaks / access sales | 43 |
 | Countries affected | 18 (12 direct + 6 via multi-country incidents) |
 | Distinct named sources or actors | 31 |
 | Most affected country | Egypt |
@@ -37,15 +37,17 @@ The three multi-country incidents (Resume Docs, DHIS2, Passport Scans) are count
 
 | Incident type | Count | Percentage |
 |---|---:|---:|
-| Ransomware | 17 | 29.8% |
-| Data leaks / access sales | 40 | 70.2% |
-| **Total** | **57** | **100%** |
+| Ransomware | 17 | 16.8% |
+| Data leaks / access sales | 43 | 40.6% |
+| DDoS claims | 43 | 42.6% |
+| **Total** | **103** | **100%** |
 
 ```mermaid
 pie showData
     title Global incident breakdown - May 2026
     "Ransomware" : 17
-    "Data leaks and access sales" : 40
+    "Data leaks and access sales" : 43
+    "DDoS claims" : 43
 ```
 
 ---
@@ -58,9 +60,9 @@ These 54 incidents have a single identified victim country. The 3 multi-country 
 
 | Country | Incidents |
 |---|---:|
-| 🇪🇬 Egypt | 16 |
+| 🇪🇬 Egypt | 17 |
 | 🇿🇦 South Africa | 14 |
-| 🇲🇦 Morocco | 7 |
+| 🇲🇦 Morocco | 52 |
 | 🇹🇳 Tunisia | 5 |
 | 🇳🇬 Nigeria | 3 |
 | 🇩🇿 Algeria | 2 |
@@ -70,19 +72,19 @@ These 54 incidents have a single identified victim country. The 3 multi-country 
 | 🇨🇮 Ivory Coast | 1 |
 | 🇰🇪 Kenya | 1 |
 | 🇸🇳 Senegal | 1 |
-| **Subtotal (direct)** | **54** |
+| **Subtotal (direct)** | **100** |
 
 ```mermaid
 xychart
     title "Direct incidents by country - May 2026"
     x-axis ["Egypt","South Africa","Morocco","Tunisia","Nigeria","Algeria","Tanzania","Ethiopia","Ghana","Ivory Coast","Kenya","Senegal"]
     y-axis "Incidents" 0 --> 17
-    bar [16,14,7,5,3,2,2,1,1,1,1,1]
+    bar [17,14,51,5,3,2,2,1,1,1,1,1]
 ```
 
 ### 2.2 Geographic exposure from multi-country incidents
 
-3 incidents affected multiple countries simultaneously. Each is counted once in the global total of 57 but exposes several countries.
+3 incidents affected multiple countries simultaneously. Each is counted once in the global total of 103 but exposes several countries.
 
 | Incident | Actor | Countries affected |
 |---|---|---|
@@ -92,21 +94,21 @@ xychart
 
 ### 2.3 Total geographic exposure (all 18 countries)
 
-> The "Multi-country exposure" column counts how many times a country appears in a multi-country incident. Column sums exceed 57 because multi-country incidents touch several countries simultaneously.
+> The "Multi-country exposure" column counts how many times a country appears in a multi-country incident. Column sums exceed 103 because multi-country incidents touch several countries simultaneously.
 
 | Country | Direct incidents | Multi-country exposure | Total exposure |
 |---|---:|---:|---:|
-| 🇪🇬 Egypt | 16 | 1 (Passport Scans) | 17 |
+| 🇪🇬 Egypt | 17 | 1 (Passport Scans) | 18 |
 | 🇿🇦 South Africa | 14 | 0 | 14 |
-| 🇲🇦 Morocco | 7 | 0 | 7 |
+| 🇲🇦 Morocco | 52 | 0 | 52 |
 | 🇹🇳 Tunisia | 5 | 0 | 5 |
 | 🇳🇬 Nigeria | 3 | 2 (Resume docs, DHIS2) | 5 |
 | 🇩🇿 Algeria | 2 | 0 | 2 |
 | 🇹🇿 Tanzania | 2 | 0 | 2 |
-| 🇬🇭 Ghana | 1 | 0 | 1 |
-| 🇨🇮 Ivory Coast | 1 | 0 | 1 |
+| 🇬🇭 Ghana | 1 | 0 | 0 |
+| 🇨🇮 Ivory Coast | 1 | 0 | 0 |
 | 🇰🇪 Kenya | 1 | 1 (Resume docs) | 2 |
-| 🇸🇳 Senegal | 1 | 0 | 1 |
+| 🇸🇳 Senegal | 1 | 0 | 0 |
 | 🇪🇹 Ethiopia | 1 | 1 (Resume docs) | 2 |
 | 🇿🇼 Zimbabwe | 0 | 1 (Resume docs) | 1 |
 | 🇲🇿 Mozambique | 0 | 1 (DHIS2) | 1 |
@@ -114,31 +116,31 @@ xychart
 | 🇹🇬 Togo | 0 | 1 (DHIS2) | 1 |
 | 🇸🇱 Sierra Leone | 0 | 1 (DHIS2) | 1 |
 | 🇱🇾 Libya | 0 | 1 (Passport Scans) | 1 |
-| **Total** | **54 direct incidents** | **11 country exposures** | **18 distinct countries** |
+| **Total** | **100 direct incidents** | **11 country exposures** | **18 distinct countries** |
 
 ---
 
 ## 3. Ransomware vs data leaks by country
 
-| Country | Ransomware | Data Leaks / Access Sales | Total |
+| Country | Ransomware | Data Leaks / Access Sales | DDoS | Total |
 |---|---:|---:|---:|
-| 🇪🇬 Egypt | 7 | 9 | 16 |
-| 🇿🇦 South Africa | 2 | 12 | 14 |
-| 🇲🇦 Morocco | 0 | 7 | 7 |
-| 🇹🇳 Tunisia | 2 | 3 | 5 |
-| 🇳🇬 Nigeria | 3 | 0 | 3 |
-| 🇩🇿 Algeria | 0 | 2 | 2 |
-| 🇹🇿 Tanzania | 0 | 2 | 2 |
-| 🇪🇹 Ethiopia | 0 | 1 | 1 |
-| 🇬🇭 Ghana | 1 | 0 | 1 |
-| 🇨🇮 Ivory Coast | 1 | 0 | 1 |
-| 🇰🇪 Kenya | 0 | 1 | 1 |
-| 🇸🇳 Senegal | 1 | 0 | 1 |
-| **Subtotal (direct)** | **17** | **37** | **54** |
-| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | 0 | 1 | 1 |
-| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | 0 | 1 | 1 |
-| 🇪🇬🇱🇾 Passport Scans | 0 | 1 | 1 |
-| **Total** | **17** | **40** | **57** |
+| 🇪🇬 Egypt | 7 | 10 | 0 | 17 |
+| 🇿🇦 South Africa | 2 | 12 | 0 | 14 |
+| 🇲🇦 Morocco | 0 | 9 | 43 | 52 |
+| 🇹🇳 Tunisia | 2 | 3 | 0 | 5 |
+| 🇳🇬 Nigeria | 3 | 0 | 0 |
+| 🇩🇿 Algeria | 0 | 2 | 0 |
+| 🇹🇿 Tanzania | 0 | 2 | 0 |
+| 🇪🇹 Ethiopia | 0 | 1 | 0 |
+| 🇬🇭 Ghana | 1 | 0 | 0 |
+| 🇨🇮 Ivory Coast | 1 | 0 | 0 |
+| 🇰🇪 Kenya | 0 | 1 | 0 |
+| 🇸🇳 Senegal | 1 | 0 | 0 |
+| **Subtotal (direct)** | **17** | **40** | **43** | **101** |
+| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | 0 | 1 | 0 | 1 |
+| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | 0 | 1 | 0 | 1 |
+| 🇪🇬🇱🇾 Passport Scans | 0 | 1 | 0 | 1 |
+| **Total** | **17** | **43** | **43** | **103** |
 
 ### Ransomware by country
 
@@ -166,22 +168,26 @@ xychart
 
 | Region | Countries included | Direct incidents | Multi-country exposure |
 |---|---|---:|---:|
-| North Africa | 🇪🇬 Egypt, 🇲🇦 Morocco, 🇹🇳 Tunisia, 🇩🇿 Algeria, 🇱🇾 Libya | 30 | +2 (Egypt via Passport Scans, Libya via Passport Scans) |
+| North Africa | 🇪🇬 Egypt, 🇲🇦 Morocco, 🇹🇳 Tunisia, 🇩🇿 Algeria, 🇱🇾 Libya | 76 | +2 (Egypt via Passport Scans, Libya via Passport Scans) |
 | Southern Africa | 🇿🇦 South Africa, 🇿🇼 Zimbabwe, 🇲🇿 Mozambique | 14 | +2 (Zimbabwe via Resume docs, Mozambique via DHIS2) |
 | West Africa | 🇳🇬 Nigeria, 🇬🇭 Ghana, 🇨🇮 Ivory Coast, 🇸🇳 Senegal, 🇱🇷 Liberia, 🇹🇬 Togo, 🇸🇱 Sierra Leone | 6 | +5 (Nigeria x2 via Resume docs + DHIS2, Liberia, Togo, Sierra Leone via DHIS2) |
 | East Africa | 🇹🇿 Tanzania, 🇰🇪 Kenya, 🇪🇹 Ethiopia | 4 | +2 (Kenya via Resume docs, Ethiopia via Resume docs) |
 
-> Multi-country incidents are counted once in the global total of 57. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 18 across 4 regions.
+> Multi-country incidents are counted once in the global total of 103. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 18 across 4 regions.
 
 ```mermaid
 xychart
     title "Direct incidents by region - May 2026"
     x-axis ["North Africa","Southern Africa","West Africa","East Africa"]
     y-axis "Direct incidents" 0 --> 32
-    bar [30,14,6,4]
+    bar [76,14,6,4]
 ```
 
 ---
+
+### 4.3 DDoS claims (43 incidents)
+
+The retrospective Keymous+ collection adds 43 Moroccan target-date observations between 9 and 28 May 2026. Each target in a dated availability publication counts as one incident; duplicate captures of the same target in the same window are deduplicated. Check-Host and Cloudflare results document apparent unavailability, but do not independently prove traffic origin, DDoS method or successful impact.
 
 ## 5. Sector distribution
 
@@ -203,14 +209,14 @@ xychart
 | Sports / Federations | 1 | 1.75% |
 | Personal Data Aggregation | 1 | 1.75% |
 | Business Services | 1 | 1.75% |
-| **Total** | **57** | **100%** |
+| **Total** | **103** | **100%** |
 
 ```mermaid
 xychart
     title "Sector distribution - May 2026"
     x-axis ["Government","HR","Industry","E-commerce","Education","Finance","Telecom","Energy","Food","Transport","NGO","Hospitality","Healthcare","Sports","Data aggregation","Business services"]
-    y-axis "Incidents" 0 --> 21
-    bar [20,5,5,4,3,3,3,2,2,2,2,2,1,1,1,1]
+    y-axis "Incidents" 0 --> 52
+    bar [49,5,5,4,3,8,3,2,2,7,2,2,1,1,1,1,5]
 ```
 
 ---
@@ -285,6 +291,6 @@ The DHIS2 offer referenced five African countries, Mozambique, Liberia, Nigeria,
 
 ## 9. Conclusion
 
-May 2026 recorded **57 publicly reported or claimed incidents** concerning **18 African countries** when direct and multi-country exposure is combined, compared with 60 incidents in April (-3; -5.0%). Ransomware records decreased from 20 to 17 (-15.0%), while data leaks and access sales stayed flat at 40 (0.0%). Egypt and South Africa accounted for 52.6% of direct incidents. Repeated education-related claims, OpSouthAfrica publications and dataset sale offers associated with Databasehooligan were the main observed patterns.
+May 2026 recorded **103 publicly reported or claimed incidents** concerning **18 African countries** when direct and multi-country exposure is combined, compared with 69 incidents in April (+34; +49.3%). Ransomware records decreased from 20 to 17 (-15.0%), while data leaks and access sales increased to 43 (+4.9%). Egypt and South Africa accounted for 31 direct records of direct incidents. Repeated education-related claims, OpSouthAfrica publications and dataset sale offers associated with Databasehooligan were the main observed patterns.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

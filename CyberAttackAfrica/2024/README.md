@@ -9,9 +9,9 @@
 
 ## 1. Executive summary
 
-AFRINTEL documented **117 incidents across 27 African countries** in 2024: **86 ransomware claims (73.5%)**, **28 data leaks (23.9%)**, and **3 access sales (2.6%)**. No defacement is present in the annual dataset.
+AFRINTEL documented **118 incidents across 27 African countries** in 2024: **86 ransomware claims (72.9%)**, **29 data leaks (24.6%)**, and **3 access sales (2.5%)**. No defacement is present in the annual dataset.
 
-South Africa accounts for **30 incidents**, 29 of which are ransomware. It stands well ahead of Egypt with 13 incidents, followed by Algeria and Nigeria with seven each. This concentration measures visibility in the sources monitored by AFRINTEL; it is not an exhaustive ranking of cybercrime across the continent.
+South Africa accounts for **30 incidents**, 29 of which are ransomware. It stands well ahead of Egypt with 14 incidents, followed by Algeria and Nigeria with seven each. This concentration measures visibility in the sources monitored by AFRINTEL; it is not an exhaustive ranking of cybercrime across the continent.
 
 The second half of the year totals **70 incidents**, compared with 47 in the first half. August and November each reach 15 publications. The increase is real within the dataset, but its causes cannot be reduced to greater attack intensity: group activity, source availability, reposts, and collection delays also influence observed volume.
 
@@ -31,9 +31,9 @@ The dataset has a visibility bias: organisations that do not communicate, unclai
 
 | Indicator | Value |
 |---|---:|
-| Incidents / Countries | **117 / 27** |
+| Incidents / Countries | **118 / 27** |
 | Ransomware | **86 (74.1%)** |
-| Data leaks | **28 (23.9%)** |
+| Data leaks | **29 (24.6%)** |
 | Access sales | **3 (2.6%)** |
 | Defacement | **0** |
 
@@ -44,7 +44,7 @@ The dataset has a visibility bias: organisations that do not communicate, unclai
 | January | 12 | 3 | 8 | 1 |
 | February | 9 | 5 | 4 | 0 |
 | March | 9 | 7 | 2 | 0 |
-| April | 6 | 5 | 1 | 0 |
+| April | 7 | 5 | 2 | 0 |
 | May | 8 | 8 | 0 | 0 |
 | June | 3 | 3 | 0 | 0 |
 | July | 11 | 7 | 4 | 0 |
@@ -53,7 +53,7 @@ The dataset has a visibility bias: organisations that do not communicate, unclai
 | October | 12 | 8 | 4 | 0 |
 | November | 15 | 11 | 2 | 2 |
 | December | 12 | 11 | 1 | 0 |
-| **Total** | **117** | **86** | **28** | **3** |
+| **Total** | **118** | **86** | **29** | **3** |
 
 ```mermaid
 xychart
@@ -67,7 +67,7 @@ xychart
 pie showData
     title Incident type distribution - 2024
     "Ransomware" : 86
-    "Data leaks" : 28
+    "Data leaks" : 29
     "Access sales" : 3
 ```
 
@@ -76,7 +76,7 @@ pie showData
 | Country | Total | Ransomware | Leak | Access sale | Bar |
 |---|---:|---:|---:|---:|---|
 | 🇿🇦 South Africa | 30 | 29 | 1 | 0 | ██████████████████████████████ |
-| 🇪🇬 Egypt | 13 | 11 | 2 | 0 | █████████████ |
+| 🇪🇬 Egypt | 14 | 11 | 3 | 0 | █████████████ |
 | 🇩🇿 Algeria | 7 | 2 | 5 | 0 | ███████ |
 | 🇳🇬 Nigeria | 7 | 4 | 3 | 0 | ███████ |
 | 🇹🇳 Tunisia | 6 | 5 | 1 | 0 | ██████ |
@@ -102,7 +102,7 @@ pie showData
 | 🇲🇺 Mauritius | 1 | 1 | 0 | 0 | █ |
 | 🇷🇼 Rwanda | 1 | 0 | 1 | 0 | █ |
 | 🇿🇲 Zambia | 1 | 1 | 0 | 0 | █ |
-| **Total** | **117** | **86** | **28** | **3** | |
+| **Total** | **118** | **86** | **29** | **3** | |
 
 ```mermaid
 xychart
@@ -117,12 +117,12 @@ xychart
 | Region | Total | Ransomware | Leak | Access sale |
 |---|---:|---:|---:|---:|
 | Southern Africa | 39 | 38 | 1 | 0 |
-| North Africa | 34 | 22 | 12 | 0 |
+| North Africa | 35 | 22 | 13 | 0 |
 | West Africa | 21 | 11 | 8 | 2 |
 | East Africa | 14 | 8 | 6 | 0 |
 | Indian Ocean | 5 | 4 | 1 | 0 |
 | Central Africa | 4 | 3 | 0 | 1 |
-| **Total** | **117** | **86** | **28** | **3** |
+| **Total** | **118** | **86** | **29** | **3** |
 
 ### Normalised sector distribution
 
@@ -134,7 +134,7 @@ xychart
 | Professional / Business Services | 11 | 9.5% |
 | Technology / IT | 11 | 9.5% |
 | Education / University | 11 | 9.4% |
-| Healthcare / Medical | 9 | 7.8% |
+| Healthcare / Medical | 10 | 8.5% |
 | Retail / E-commerce | 9 | 7.8% |
 | Telecommunications | 5 | 4.3% |
 | Media / Entertainment | 4 | 3.4% |
@@ -148,7 +148,7 @@ xychart
 | Construction / Real Estate | 1 | 0.9% |
 | Mining / Extractive Industries | 1 | 0.9% |
 | Civil Society / NGO | 1 | 0.9% |
-| **Total** | **117** | **100%** |
+| **Total** | **118** | **100%** |
 
 ### Most visible actors
 
@@ -173,7 +173,7 @@ Ransomware accounts for **73.5%** of the dataset. Concentration is pronounced: S
 
 ### 4.2 Data leaks and access sales
 
-The 28 leaks and three access sales form a more distributed set. Algeria and Morocco have a majority of leaks, while the three access sales are split between Burkina Faso and Cameroon. Several publications include structured samples; others are compilations or reposts of uncertain age. An access sale signals possible exposure, not a completed compromise.
+The 29 leaks and three access sales form a more distributed set. Algeria and Morocco have a majority of leaks, while the three access sales are split between Burkina Faso and Cameroon. Several publications include structured samples; others are compilations or reposts of uncertain age. An access sale signals possible exposure, not a completed compromise.
 
 ## 5. Sectoral impact
 
@@ -184,7 +184,7 @@ Finance leads with 15 incidents, followed by government with 12. Manufacturing, 
 | Scope | Level | Rationale |
 |---|---|---|
 | 🇿🇦 South Africa | 🔴 High | 30 incidents, including 29 ransomware publications |
-| 🇪🇬 Egypt | 🔴 High | 13 incidents involving public and financial functions |
+| 🇪🇬 Egypt | 🔴 High | 14 incidents involving public and financial functions |
 | 🇩🇿 Algeria / 🇳🇬 Nigeria | 🔴 High | Seven incidents each, including several data leaks |
 | 🇹🇳 Tunisia / 🇲🇦 Morocco | 🟠 Medium | Five to six incidents, with different ransomware and leak profiles |
 | Other countries | 🟡 Low to medium | Fewer than five incidents; case-by-case assessment required |
@@ -193,9 +193,9 @@ LockBit3, RansomHub, KillSec, and Hunters are the most frequent names. Frequency
 
 ## 7. Key trends and intelligence gaps
 
-- **Observed - high confidence:** 86 of 117 incidents are classified as ransomware.
+- **Observed - high confidence:** 86 of 118 incidents are classified as ransomware.
 - **Observed - high confidence:** South Africa accounts for 25.6% of the annual dataset and 33.7% of ransomware publications.
-- **Observed - high confidence:** the second half has 70 incidents, 23 more than the first half.
+- **Observed - high confidence:** the second half has 70 incidents, 22 more than the first half.
 - **Observed - high confidence:** leaks and access sales are proportionally more visible in North and West Africa than in Southern Africa.
 - **Major intelligence gap:** the consulted sources contain very few public African DFIR reports. Initial access vectors, dwell time, exfiltration paths, and operational impact therefore remain unknown in most cases.
 - **Priority assumptions - medium confidence at the general level, low for an individual incident:** credential reuse, initial access brokers, and exploitation of exposed edge services or VPNs. The dataset does not support automatic attribution of these scenarios to the listed victims.
@@ -206,18 +206,18 @@ LockBit3, RansomHub, KillSec, and Hunters are the most frequent names. Frequency
 
 | Indicator | January-June | July-December | Absolute change | Change |
 |---|---:|---:|---:|---:|
-| Incidents | 47 | 70 | +23 | +48.9% |
+| Incidents | 48 | 70 | +22 | +45.8% |
 | Ransomware | 31 | 55 | +24 | +77.4% |
-| Data leaks | 15 | 13 | -2 | -13.3% |
+| Data leaks | 16 | 13 | -3 | -18.8% |
 | Access sales | 1 | 2 | +1 | +100.0% |
 | Defacement | 0 | 0 | 0 | Stable |
-| Monthly average | 7.8 | 11.7 | +3.9 | +48.9% |
+| Monthly average | 8.0 | 11.7 | +3.7 | +45.8% |
 
-The second half contains 23 more incidents than the first. This difference is entirely explained by the increase in ransomware: 55 publications in the second half versus 31 in the first. Leaks remain close in volume (13 versus 15), while access sales rise from one to two. August and November each reach 15 publications, while June records only three.
+The second half contains 22 more incidents than the first. This difference is entirely explained by the increase in ransomware: 55 publications in the second half versus 31 in the first. Leaks remain close in volume (13 versus 16), while access sales rise from one to two. August and November each reach 15 publications, while June records only three.
 
 This comparison describes the collected corpus, not a direct measure of the real frequency of intrusions. Changes may reflect actor activity, source visibility, reposts, collection delays, or classification differences. The half-year increase is therefore a robust signal within AFRINTEL’s data, but its causal attribution and operational impact remain unknown without independent confirmations and DFIR reports.
 
-**Comparative conclusion:** the first half is more mixed, with a higher relative share of leaks (31.9% versus 18.6% in the second half), while the second half is clearly dominated by ransomware claims (78.6% versus 66.0%). Defensive priorities should therefore combine ransomware resilience and recovery with identity, export-control, and exposed-data controls.
+**Comparative conclusion:** the first half is more mixed, with a higher relative share of leaks (33.3% versus 18.6% in the second half), while the second half is clearly dominated by ransomware claims (78.6% versus 64.6%). Defensive priorities should therefore combine ransomware resilience and recovery with identity, export-control, and exposed-data controls.
 
 ## 9. Contextual MITRE ATT&CK mapping
 

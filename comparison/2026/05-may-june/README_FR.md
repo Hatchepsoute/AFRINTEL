@@ -6,9 +6,10 @@
 
 | Indicateur | Mai | Juin | Évolution |
 |---|---:|---:|---:|
-| Total des incidents | 57 | 40 | -17 (-29,8 %) |
+| Total des incidents | 103 | 40 | -63 (-61,2 %) |
 | Ransomware | 17 | 20 | +3 (+17,6 %) |
-| Fuites de données et ventes d'accès | 40 | 20 | -20 (-50,0 %) |
+| Fuites de données et ventes d'accès | 43 | 20 | -23 (-53,5 %) |
+| Revendications DDoS | 43 | 0 | -43 |
 | Pays distincts après éclatement des fiches multi-pays | 18 | 20 | +2 |
 
 La baisse de juin vient entièrement des fuites de données et ventes d'accès. Le ransomware, lui, va dans l'autre sens, de 17 à 20 fiches.
@@ -17,7 +18,7 @@ La baisse de juin vient entièrement des fuites de données et ventes d'accès. 
 
 | Libellé pays direct | Mai | Juin | Évolution |
 |---|---:|---:|---:|
-| 🇲🇦 Maroc | 7 | 9 | +2 |
+| 🇲🇦 Maroc | 51 | 9 | -42 |
 | 🇿🇦 Afrique du Sud | 14 | 6 | -8 |
 | 🇪🇬 Égypte | 16 | 4 | -12 |
 | 🇳🇬 Nigeria | 3 | 4 | +1 |
@@ -29,13 +30,13 @@ La baisse de juin vient entièrement des fuites de données et ventes d'accès. 
 | 🇸🇳 Sénégal | 1 | 1 | 0 |
 | Fiches multi-pays | 3 | 2 | -1 |
 
-Les libellés pays directs couvrent 54 fiches en mai, plus trois fiches multi-pays, et 38 fiches en juin, plus deux fiches multi-pays.
+Les libellés pays directs couvrent 54 fiches en mai, plus trois fiches multi-pays, et 98 fiches en mai, plus trois fiches multi-pays, et 38 fiches en juin, plus deux fiches multi-pays.
 
 ## Évolution par secteur
 
 | Secteur | Mai | Juin | Évolution |
 |---|---:|---:|---:|
-| Government / Administration | 20 | 12 | -8 |
+| Government / Administration | 49 | 12 | -8 |
 | Finance / Banking | 3 | 6 | +3 |
 | Education / University | 3 | 4 | +1 |
 | E-commerce / Retail | 4 | 4 | 0 |
@@ -65,6 +66,6 @@ Juin compte moins de fiches au total, mais couvre en fait davantage de pays une 
 
 ## Conclusion
 
-Juin se solde par 40 incidents contre 57 en mai. Les fuites et ventes d'accès reculent de 20 fiches ; le ransomware en gagne trois.
+Juin se solde par 40 incidents contre 103 en mai. Les fuites et ventes d'accès reculent de 21 fiches ; le ransomware en gagne trois.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

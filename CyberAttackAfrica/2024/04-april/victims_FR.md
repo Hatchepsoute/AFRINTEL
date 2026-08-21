@@ -2,7 +2,7 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 
-# Cyberattaques en Afrique - Avril 2024 : Liste de 6 victimes
+# Cyberattaques en Afrique - Avril 2024 : Liste de 7 victimes
 👉🏾 [**English version available here**](./victims.md)
 
 ## 📅 Avril 2024
@@ -52,6 +52,31 @@
 - **Recommandations :**
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par hunters, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+
+### 19 Avril 2024
+#### 🇪🇬 Égypte - Vezeeta Pharmacy (vezeeta.com)
+
+- **Date de publication initiale :** 19 avril 2024
+- **Date de détection AFRINTEL :** 21 août 2026
+- **Acteur / Groupe :** EgyptLeaks, publication sur un forum cybercriminel
+- **Secteur :** Santé / Pharmacie en ligne
+- **Site web :** [vezeeta.com](https://www.vezeeta.com)
+- **Statut :** Claim - Data Sample Published
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+- **Type d'incident :** Fuite de données
+
+- **Description :**
+
+  Vezeeta est une plateforme égyptienne de réservation de soins et de services de pharmacie en ligne. La publication vise spécifiquement Vezeeta Pharmacy et annonce des données de commandes.
+
+- **Analyse :**
+
+  **Observed :** Une publication attribuée à EgyptLeaks, datée du 19 avril 2024, propose à la vente environ 133 000 enregistrements de commandes de Vezeeta Pharmacy couvrant 2021, 2022 et 2023. La publication affiche un échantillon de lignes de commandes comprenant des champs de contact, de zone, de statut de commande, de paiement, de branche, de produits et d'adresses de livraison. Les valeurs personnelles visibles dans l'échantillon n'ont pas été reprises dans AFRINTEL.
+
+  **Assumption :** La concordance entre le nom de Vezeeta Pharmacy, le domaine vezeeta.com, les noms de branches et la structure d'un export de commandes est compatible avec une exposition de données clients en Égypte. Si les données sont authentiques, elles pourraient faciliter le phishing ciblé, la fraude à la livraison, l'usurpation de personnel ou de pharmacies et l'exposition d'informations de santé indirectement déduites des produits commandés.
+
+  **Unknown :** AFRINTEL n'a pas reçu l'archive complète ni confirmé les 133 000 commandes, la méthode d'acquisition, l'exhaustivité, la validité actuelle des coordonnées, la présence de données médicales protégées ou une confirmation de Vezeeta. L'analyse repose sur la capture et l'extrait visibles ; aucun nom, téléphone, adresse, produit associé à une personne ou identifiant de commande n'est reproduit.
 
 ### 23 Avril 2024
 #### 🇧🇫 Burkina Faso - ONEF (Observatoire national de l’emploi et de la formation)

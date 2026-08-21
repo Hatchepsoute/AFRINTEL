@@ -9,9 +9,9 @@
 
 ## 1. Résumé exécutif
 
-AFRINTEL a documenté **117 incidents dans 27 pays africains** en 2024 : **86 revendications ransomware (73,5 %)**, **28 fuites de données (23,9 %)** et **3 ventes d’accès (2,6 %)**. Aucun défacement n’est présent dans le corpus annuel.
+AFRINTEL a documenté **118 incidents dans 27 pays africains** en 2024 : **86 revendications ransomware (72,9 %)**, **29 fuites de données (24,6 %)** et **3 ventes d’accès (2,5 %)**. Aucun défacement n’est présent dans le corpus annuel.
 
-L’Afrique du Sud concentre **30 incidents**, dont 29 ransomware. Elle devance nettement l’Égypte avec 13 incidents, puis l’Algérie et le Nigeria avec sept chacun. Cette concentration mesure la visibilité dans les sources suivies par AFRINTEL ; elle ne constitue pas un classement exhaustif de la cybercriminalité sur le continent.
+L’Afrique du Sud concentre **30 incidents**, dont 29 ransomware. Elle devance nettement l’Égypte avec 14 incidents, puis l’Algérie et le Nigeria avec sept chacun. Cette concentration mesure la visibilité dans les sources suivies par AFRINTEL ; elle ne constitue pas un classement exhaustif de la cybercriminalité sur le continent.
 
 Le second semestre totalise **70 incidents**, contre 47 au premier. Août et novembre atteignent chacun 15 publications. Cette hausse est réelle dans le corpus, mais ses causes ne peuvent pas être réduites à une intensification des attaques : activité des groupes, ouverture ou fermeture des sources, republications et délais de collecte influencent également le volume observé.
 
@@ -31,9 +31,9 @@ Ce corpus présente un biais de visibilité : les organisations qui ne communiqu
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents / Pays | **117 / 27** |
+| Incidents / Pays | **118 / 27** |
 | Ransomware | **86 (74,1 %)** |
-| Fuites de données | **28 (23,9 %)** |
+| Fuites de données | **29 (24,6 %)** |
 | Ventes d’accès | **3 (2,6 %)** |
 | Défacement | **0** |
 
@@ -44,7 +44,7 @@ Ce corpus présente un biais de visibilité : les organisations qui ne communiqu
 | Janvier | 12 | 3 | 8 | 1 |
 | Février | 9 | 5 | 4 | 0 |
 | Mars | 9 | 7 | 2 | 0 |
-| Avril | 6 | 5 | 1 | 0 |
+| Avril | 7 | 5 | 2 | 0 |
 | Mai | 8 | 8 | 0 | 0 |
 | Juin | 3 | 3 | 0 | 0 |
 | Juillet | 11 | 7 | 4 | 0 |
@@ -53,7 +53,7 @@ Ce corpus présente un biais de visibilité : les organisations qui ne communiqu
 | Octobre | 12 | 8 | 4 | 0 |
 | Novembre | 15 | 11 | 2 | 2 |
 | Décembre | 12 | 11 | 1 | 0 |
-| **Total** | **117** | **86** | **28** | **3** |
+| **Total** | **118** | **86** | **29** | **3** |
 
 ```mermaid
 xychart
@@ -67,7 +67,7 @@ xychart
 pie showData
     title Répartition par type - 2024
     "Ransomware" : 86
-    "Fuites de données" : 28
+    "Fuites de données" : 29
     "Ventes d’accès" : 3
 ```
 
@@ -76,7 +76,7 @@ pie showData
 | Pays | Total | Ransomware | Fuite | Vente d’accès | Barre |
 |---|---:|---:|---:|---:|---|
 | 🇿🇦 Afrique du Sud | 30 | 29 | 1 | 0 | ██████████████████████████████ |
-| 🇪🇬 Égypte | 13 | 11 | 2 | 0 | █████████████ |
+| 🇪🇬 Égypte | 14 | 11 | 3 | 0 | █████████████ |
 | 🇩🇿 Algérie | 7 | 2 | 5 | 0 | ███████ |
 | 🇳🇬 Nigeria | 7 | 4 | 3 | 0 | ███████ |
 | 🇹🇳 Tunisie | 6 | 5 | 1 | 0 | ██████ |
@@ -102,7 +102,7 @@ pie showData
 | 🇲🇺 Maurice | 1 | 1 | 0 | 0 | █ |
 | 🇷🇼 Rwanda | 1 | 0 | 1 | 0 | █ |
 | 🇿🇲 Zambie | 1 | 1 | 0 | 0 | █ |
-| **Total** | **117** | **86** | **28** | **3** | |
+| **Total** | **118** | **86** | **29** | **3** | |
 
 ```mermaid
 xychart
@@ -117,12 +117,12 @@ xychart
 | Région | Total | Ransomware | Fuite | Vente d’accès |
 |---|---:|---:|---:|---:|
 | Afrique australe | 39 | 38 | 1 | 0 |
-| Afrique du Nord | 34 | 22 | 12 | 0 |
+| Afrique du Nord | 35 | 22 | 13 | 0 |
 | Afrique de l’Ouest | 21 | 11 | 8 | 2 |
 | Afrique de l’Est | 14 | 8 | 6 | 0 |
 | Océan Indien | 5 | 4 | 1 | 0 |
 | Afrique centrale | 4 | 3 | 0 | 1 |
-| **Total** | **117** | **86** | **28** | **3** |
+| **Total** | **118** | **86** | **29** | **3** |
 
 ### Répartition sectorielle normalisée
 
@@ -134,7 +134,7 @@ xychart
 | Services professionnels / Entreprises | 11 | 9,5 % |
 | Technologies / Informatique | 11 | 9,5 % |
 | Éducation / Université | 11 | 9,4 % |
-| Santé / Médical | 9 | 7,8 % |
+| Santé / Médical | 10 | 8,5 % |
 | Commerce / E-commerce | 9 | 7,8 % |
 | Télécommunications | 5 | 4,3 % |
 | Médias / Divertissement | 4 | 3,4 % |
@@ -148,7 +148,7 @@ xychart
 | Construction / Immobilier | 1 | 0,9 % |
 | Mines / Industries extractives | 1 | 0,9 % |
 | Société civile / ONG | 1 | 0,9 % |
-| **Total** | **117** | **100 %** |
+| **Total** | **118** | **100 %** |
 
 ### Acteurs les plus visibles
 
@@ -173,7 +173,7 @@ Le ransomware représente **73,5 %** du corpus. La concentration est forte : l�
 
 ### 4.2 Fuites de données et ventes d’accès
 
-Les 28 fuites et trois ventes d’accès forment un ensemble plus diffus. L’Algérie et le Maroc présentent une majorité de fuites, tandis que les trois ventes d’accès se répartissent entre le Burkina Faso et le Cameroun. Plusieurs publications comportent des échantillons structurés ; d’autres sont des compilations ou republications dont l’ancienneté demeure incertaine. Une vente d’accès signale une exposition possible, pas une compromission consommée.
+Les 29 fuites et trois ventes d’accès forment un ensemble plus diffus. L’Algérie et le Maroc présentent une majorité de fuites, tandis que les trois ventes d’accès se répartissent entre le Burkina Faso et le Cameroun. Plusieurs publications comportent des échantillons structurés ; d’autres sont des compilations ou republications dont l’ancienneté demeure incertaine. Une vente d’accès signale une exposition possible, pas une compromission consommée.
 
 ## 5. Impact sectoriel
 
@@ -184,7 +184,7 @@ La finance arrive en tête avec 15 incidents, devant le gouvernement avec 12. L�
 | Périmètre | Niveau | Justification |
 |---|---|---|
 | 🇿🇦 Afrique du Sud | 🔴 Élevé | 30 incidents, dont 29 ransomware |
-| 🇪🇬 Égypte | 🔴 Élevé | 13 incidents et exposition de fonctions publiques et financières |
+| 🇪🇬 Égypte | 🔴 Élevé | 14 incidents et exposition de fonctions publiques et financières |
 | 🇩🇿 Algérie / 🇳🇬 Nigeria | 🔴 Élevé | Sept incidents chacun, avec plusieurs fuites de données |
 | 🇹🇳 Tunisie / 🇲🇦 Maroc | 🟠 Moyen | Cinq à six incidents, profils ransomware et fuite différents |
 | Autres pays | 🟡 Faible à moyen | Moins de cinq incidents ; appréciation au cas par cas |
@@ -193,9 +193,9 @@ LockBit3, RansomHub, KillSec et Hunters sont les noms les plus fréquents. Cette
 
 ## 7. Tendances et lacunes de renseignement
 
-- **Observé - confiance élevée :** 86 incidents sur 117 sont classés ransomware.
+- **Observé - confiance élevée :** 86 incidents sur 118 sont classés ransomware.
 - **Observé - confiance élevée :** l’Afrique du Sud concentre 25,6 % du corpus annuel et 33,7 % des publications ransomware.
-- **Observé - confiance élevée :** le second semestre compte 70 incidents, soit 23 de plus que le premier.
+- **Observé - confiance élevée :** le second semestre compte 70 incidents, soit 22 de plus que le premier.
 - **Observé - confiance élevée :** les fuites et ventes d’accès sont proportionnellement plus présentes en Afrique du Nord et de l’Ouest qu’en Afrique australe.
 - **Lacune majeure :** les sources consultées contiennent très peu de rapports DFIR publics africains. Les vecteurs d’accès, durées de présence, chemins d’exfiltration et impacts opérationnels restent donc inconnus dans la majorité des cas.
 - **Hypothèses privilégiées - confiance moyenne au niveau général, faible pour un incident individuel :** réutilisation d’identifiants, recours à des courtiers d’accès initial et exploitation de services périmétriques ou VPN exposés. Le corpus ne permet pas de les attribuer automatiquement aux victimes recensées.
@@ -206,18 +206,18 @@ LockBit3, RansomHub, KillSec et Hunters sont les noms les plus fréquents. Cette
 
 | Indicateur | Janvier-juin | Juillet-décembre | Écart absolu | Évolution |
 |---|---:|---:|---:|---:|
-| Incidents | 47 | 70 | +23 | +48,9 % |
+| Incidents | 48 | 70 | +22 | +45,8 % |
 | Ransomware | 31 | 55 | +24 | +77,4 % |
-| Fuites de données | 15 | 13 | -2 | -13,3 % |
+| Fuites de données | 16 | 13 | -3 | -18,8 % |
 | Ventes d’accès | 1 | 2 | +1 | +100,0 % |
 | Défacement | 0 | 0 | 0 | Stable |
-| Moyenne mensuelle | 7,8 | 11,7 | +3,9 | +48,9 % |
+| Moyenne mensuelle | 8,0 | 11,7 | +3,7 | +45,8 % |
 
-Le second semestre compte 23 incidents de plus que le premier. Cette différence provient entièrement de l’augmentation du ransomware : 55 publications au second semestre contre 31 au premier. Les fuites restent proches en volume (13 contre 15), tandis que les ventes d’accès passent de une à deux. Août et novembre atteignent chacun 15 publications, alors que juin n’en compte que trois.
+Le second semestre compte 22 incidents de plus que le premier. Cette différence provient entièrement de l’augmentation du ransomware : 55 publications au second semestre contre 31 au premier. Les fuites restent proches en volume (13 contre 16), tandis que les ventes d’accès passent de une à deux. Août et novembre atteignent chacun 15 publications, alors que juin n’en compte que trois.
 
 Cette comparaison décrit le corpus collecté, et non une mesure directe de la fréquence réelle des intrusions. Les variations peuvent refléter l’activité des acteurs, la visibilité des sources, les republications, les délais de collecte ou des différences de qualification. La hausse semestrielle est donc un signal robuste dans les données AFRINTEL, mais son attribution causale et son impact opérationnel restent inconnus sans confirmations indépendantes et rapports DFIR.
 
-**Conclusion comparative :** le premier semestre est plus mixte, avec une part relative de fuites plus élevée (31,9 % contre 18,6 % au second semestre), tandis que le second semestre est nettement dominé par les revendications ransomware (78,6 % contre 66,0 %). Les priorités défensives doivent donc combiner résilience et restauration contre le ransomware avec contrôle des identités, des exports et des données exposées.
+**Conclusion comparative :** le premier semestre est plus mixte, avec une part relative de fuites plus élevée (33,3 % contre 18,6 % au second semestre), tandis que le second semestre est nettement dominé par les revendications ransomware (78,6 % contre 64,6 %). Les priorités défensives doivent donc combiner résilience et restauration contre le ransomware avec contrôle des identités, des exports et des données exposées.
 
 ## 9. Cartographie MITRE ATT&CK contextuelle
 

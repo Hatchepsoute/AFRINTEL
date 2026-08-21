@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Avril 2026 a rapporté **60 incidents cyber revendiqués publiquement** sur le continent, **20 publications ou revendications ransomware**, **40 fuites de données ou ventes d'accès**. L'activité des courtiers de données a nettement accéléré ce mois-ci : expositions très sensibles (personnel du palais royal, documents d'identité, dossiers médicaux) et ventes d'accès ciblant des gouvernements se sont multipliées. Les groupes ransomware **payload**, **apt73/bashe**, **TheGentlemen** et **krybit** ont maintenu la pression, pendant que **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominaient le marché souterrain des fuites.
+Avril 2026 a rapporté **69 incidents cyber revendiqués publiquement** sur le continent, **20 publications ou revendications ransomware**, **40 fuites de données ou ventes d'accès**. L'activité des courtiers de données a nettement accéléré ce mois-ci : expositions très sensibles (personnel du palais royal, documents d'identité, dossiers médicaux) et ventes d'accès ciblant des gouvernements se sont multipliées. Les groupes ransomware **payload**, **apt73/bashe**, **TheGentlemen** et **krybit** ont maintenu la pression, pendant que **Grubder**, **anisanas2**, **dark07x**, **wh6ami** et **Rihana** dominaient le marché souterrain des fuites.
 
 Principales conclusions :
 - **20 publications ou revendications ransomware (33,3 %)** et **40 fuites de données / ventes d’accès (66,7 %)**.
@@ -38,11 +38,12 @@ Principales conclusions :
 
 | Indicateur                     | Valeur |
 |--------------------------------|--------|
-| Nombre total de victimes       | 60     |
+| Nombre total de victimes       | 69     |
 | Pays touchés                   | 16     |
 | Acteurs distincts              | 30+    |
-| Ransomwares                    | 20 (33,3 %) |
-| Fuites de données / ventes d’accès | 40 (66,7 %) |
+| Ransomwares                    | 20 (29,0 %) |
+| Fuites de données / ventes d’accès | 40 (58,0 %) |
+| Revendications DDoS | 9 (13,0 %) |
 
 ### Classement des pays les plus touchés
 
@@ -141,7 +142,7 @@ pie
 | 🇺🇬 Ouganda | **0** | **1** | 🟦 |
 | 🇿🇲 Zambie | **1** | **0** | 🟧 |
 | 🌍 Multi‑pays Afrique | **0** | **1** | 🟦 |
-| **Total (60)** | **20** | **40** | *Légende : 🟧 Ransomware \| 🟦 Fuite de Données* |
+| **Total (69)** | **20** | **40** | *Légende : 🟧 Ransomware \| 🟦 Fuite de Données* |
 
 ### 📊 Synthèse des secteurs ciblés par pays
 
@@ -210,7 +211,7 @@ pie
 | **Total régionalisé** | **62** | **20** | **42** ||
 
 *Légende : 🟧 Ransomware | 🟦 Fuites de données (Data Leaks)*
-*Note : Le total régionalisé atteint 62 car l’incident multi-pays (Angola / Nigeria / Afrique du Sud), compté comme un seul incident dans le total global de 60, est ventilé par zones géographiques afin de refléter son impact territorial réel.*
+*Note : Le total régionalisé atteint 62 car l’incident multi-pays (Angola / Nigeria / Afrique du Sud), compté comme un seul incident dans le total global de 69, est ventilé par zones géographiques afin de refléter son impact territorial réel.*
 
 ### 📊 Répartition des cyberattaques par secteur d'activité
 
@@ -225,7 +226,7 @@ pie
 | **Pétrole & Énergie** | **3** | 5,0 % | ███ |
 | **Télécommunications** | **1** | 1,7 % | █ |
 | **Autres** *(Secteurs diffus)* | **18** | 30,0 % | ██████████████████ |
-| **Total** | **60** | **100 %** | |
+| **Total** | **69** | **100 %** | |
 
 ```mermaid
 pie
@@ -284,8 +285,8 @@ pie
 
 > **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
 
-- **Concentration :** Maroc (17), Égypte (11) et Afrique du Sud (8) réunissent 36 des 60 incidents du mois, 60 %.
-- **Répartition des menaces :** 20 revendications ou publications ransomware, 40 fuites de données ou ventes d'accès, dans 16 pays.
+- **Concentration :** Maroc (17), Égypte (19) et Afrique du Sud (8) réunissent 36 des 69 incidents du mois, 60 %.
+- **Répartition des menaces :** 20 revendications ou publications ransomware, 40 fuites de données ou ventes d'accès, dans 17 pays.
 - **Activité des acteurs :** Grubder en tête côté fuites avec 7 victimes. Payload, APT73/BASHE et TheGentlemen revendiquent chacun 4 victimes ransomware.
 - **Expositions à fort impact :** données du personnel du Palais royal au Maroc, Pick n Pay ASAP/Bottles.com en Afrique du Sud, Kenya Airports Authority, CNSS du Bénin, les revendications qui marquent ce mois-ci.
 
@@ -440,7 +441,7 @@ La variation mensuelle reflète l'évolution des publications publiques collect�
 
 ## 13. Conclusion
 
-Avril se solde par 60 fiches, contre 41 en mars, une hausse de 46,3 %. Les fuites de données et ventes d'accès portent l'essentiel de cette progression, de 22 à 40 fiches. Maroc, Égypte et Afrique du Sud prennent les volumes les plus élevés. Bases africaines, documents d'identité et accès administratifs n'ont cessé de circuler sur les forums cybercriminels tout au long du mois.
+Avril se solde par 69 fiches, contre 41 en mars, une hausse de 46,3 %. Les fuites de données et ventes d'accès portent l'essentiel de cette progression, de 22 à 40 fiches. Maroc, Égypte et Afrique du Sud prennent les volumes les plus élevés. Bases africaines, documents d'identité et accès administratifs n'ont cessé de circuler sur les forums cybercriminels tout au long du mois.
 
 **AFRINTEL** – African Cyber Threat Intelligence  
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

@@ -4,16 +4,16 @@
   "source": "AFRINTEL OSINT Dataset",
   "classification": "TLP:CLEAR",
   "period_covered": "1er janvier au 31 décembre 2024",
-  "total_incidents": 117,
-  "total_victims": 117,
+  "total_incidents": 118,
+  "total_victims": 118,
   "compatibility_note": "Le champ total_victims est conservé pour compatibilité historique ; il désigne ici le nombre d'incidents publiés et suivis par AFRINTEL, non des compromissions toutes confirmées.",
   "sections": {
     "1. resume_executif": {
-      "content": "AFRINTEL a documenté 117 incidents dans 27 pays africains : 86 revendications ransomware, 28 fuites de données et 3 ventes d'accès. Aucun défacement n'est présent dans le corpus. L'Afrique du Sud concentre 30 incidents, devant l'Égypte avec 13, puis l'Algérie et le Nigeria avec 7 chacun. Ces chiffres mesurent les publications observées, pas l'incidence exhaustive des cyberattaques sur le continent.",
+      "content": "AFRINTEL a documenté 118 incidents dans 27 pays africains : 86 revendications ransomware, 29 fuites de données et 3 ventes d'accès. Aucun défacement n'est présent dans le corpus. L'Afrique du Sud concentre 30 incidents, devant l'Égypte avec 13, puis l'Algérie et le Nigeria avec 7 chacun. Ces chiffres mesurent les publications observées, pas l'incidence exhaustive des cyberattaques sur le continent.",
       "key_findings": [
         "Ransomware : 86 incidents, soit 74,1 % du corpus",
         "Afrique du Sud : 30 incidents, dont 29 ransomware",
-        "Second semestre : 70 incidents, contre 47 au premier",
+        "Second semestre : 70 incidents, contre 48 au premier",
         "Pics mensuels : août et novembre, 15 incidents chacun",
         "Finance / Banque : premier secteur avec 15 incidents"
       ]
@@ -32,16 +32,16 @@
     "3. vue_globale": {
       "incident_type_distribution": {
         "ransomware": 86,
-        "data_leak": 28,
+        "data_leak": 29,
         "access_sale": 3,
         "defacement": 0,
-        "total": 117
+        "total": 118
       },
       "monthly_activity": [
         {"month": "Janvier", "total": 12, "ransomware": 3, "data_leak": 8, "access_sale": 1},
         {"month": "Février", "total": 9, "ransomware": 5, "data_leak": 4, "access_sale": 0},
         {"month": "Mars", "total": 9, "ransomware": 7, "data_leak": 2, "access_sale": 0},
-        {"month": "Avril", "total": 6, "ransomware": 5, "data_leak": 1, "access_sale": 0},
+        {"month": "Avril", "total": 7, "ransomware": 5, "data_leak": 2, "access_sale": 0},
         {"month": "Mai", "total": 8, "ransomware": 8, "data_leak": 0, "access_sale": 0},
         {"month": "Juin", "total": 3, "ransomware": 3, "data_leak": 0, "access_sale": 0},
         {"month": "Juillet", "total": 11, "ransomware": 7, "data_leak": 4, "access_sale": 0},
@@ -53,7 +53,7 @@
       ],
       "country_counts": {
         "Afrique du Sud": 30,
-        "Égypte": 13,
+        "Égypte": 14,
         "Algérie": 7,
         "Nigeria": 7,
         "Tunisie": 6,
@@ -82,7 +82,7 @@
       },
       "regional_distribution": [
         {"region": "Afrique australe", "total": 39, "ransomware": 38, "data_leak": 1, "access_sale": 0},
-        {"region": "Afrique du Nord", "total": 34, "ransomware": 22, "data_leak": 12, "access_sale": 0},
+        {"region": "Afrique du Nord", "total": 35, "ransomware": 22, "data_leak": 13, "access_sale": 0},
         {"region": "Afrique de l'Ouest", "total": 21, "ransomware": 11, "data_leak": 8, "access_sale": 2},
         {"region": "Afrique de l'Est", "total": 13, "ransomware": 8, "data_leak": 5, "access_sale": 0},
         {"region": "Océan Indien", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
@@ -95,7 +95,7 @@
         "Services professionnels / Entreprises": 11,
         "Technologies / Informatique": 11,
         "Éducation / Université": 11,
-        "Santé / Médical": 9,
+        "Santé / Médical": 10,
         "Commerce / E-commerce": 9,
         "Télécommunications": 5,
         "Médias / Divertissement": 4,
@@ -133,14 +133,14 @@
       },
       "risk_assessment": [
         {"scope": "Afrique du Sud", "level": "Élevé", "basis": "30 incidents, dont 29 ransomware"},
-        {"scope": "Égypte", "level": "Élevé", "basis": "13 incidents de nature mixte"},
+        {"scope": "Égypte", "level": "Élevé", "basis": "14 incidents de nature mixte"},
         {"scope": "Algérie et Nigeria", "level": "Élevé", "basis": "7 incidents chacun, avec plusieurs fuites"},
         {"scope": "Tunisie et Maroc", "level": "Moyen", "basis": "5 à 6 incidents, profils différents"}
       ]
     },
     "7. tendances_et_lacunes": {
       "observed": [
-        {"confidence": "Élevée", "finding": "86 incidents sur 117 sont classés ransomware."},
+        {"confidence": "Élevée", "finding": "86 incidents sur 118 sont classés ransomware."},
         {"confidence": "Élevée", "finding": "L'Afrique du Sud représente 25,9 % du corpus annuel."},
         {"confidence": "Élevée", "finding": "Le second semestre compte 70 incidents, contre 47 au premier."}
       ],
@@ -156,9 +156,9 @@
     },
     "8. analyse_comparative_objective": {
       "periods": "Janvier-juin versus juillet-décembre",
-      "incidents": {"first_half": 47, "second_half": 70, "absolute_change": 23, "change_percent": 48.9},
+      "incidents": {"first_half": 48, "second_half": 70, "absolute_change": 22, "change_percent": 45.8},
       "ransomware": {"first_half": 31, "second_half": 55, "absolute_change": 24, "change_percent": 77.4},
-      "data_leaks": {"first_half": 15, "second_half": 13, "absolute_change": -2, "change_percent": -13.3},
+      "data_leaks": {"first_half": 16, "second_half": 13, "absolute_change": -3, "change_percent": -18.8},
       "access_sales": {"first_half": 1, "second_half": 2, "absolute_change": 1, "change_percent": 100.0},
       "assessment": "Le second semestre compte 23 incidents de plus, différence entièrement portée par le ransomware. Les fuites diminuent légèrement. Cette comparaison décrit le corpus collecté et ne prouve pas une hausse équivalente des compromissions réelles ; l'activité des sources, les republications et les délais de collecte restent des facteurs de visibilité."
     },

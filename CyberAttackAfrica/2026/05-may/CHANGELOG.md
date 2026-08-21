@@ -1,5 +1,14 @@
 # CHANGELOG - Mai 2026
 
+## [1.4.0] - 2026-08-21
+
+### Ajout rétrospectif DDoS
+- Ajout de 43 incidents DDoS revendiqués ou observations d indisponibilité visant des cibles marocaines entre le 9 et le 28 mai 2026.
+- Ajout d une revendication distincte de fuite de données concernant une liste de candidats du ministère des Affaires étrangères, annoncée comme 8 440 lignes.
+- Total mai révisé : 57 -> 103 incidents, dont 17 ransomware, 43 fuites/ventes d accès et 43 DDoS.
+- Les versions EN/FR, statistiques et bundles STIX ont été synchronisés.
+
+
 ## [1.3.0] - 2026-07-29
 
 ### Corrections de classification

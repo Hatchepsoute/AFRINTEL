@@ -6,12 +6,13 @@
 
 | Indicateur | Avril | Mai | Évolution |
 |---|---:|---:|---:|
-| Total des incidents | 60 | 57 | -3 (-5,0 %) |
+| Total des incidents | 69 | 103 | +34 (+49,3 %) |
 | Ransomware | 20 | 17 | -3 (-15,0 %) |
-| Fuites de données et ventes d'accès | 40 | 40 | 0 (0,0 %) |
+| Fuites de données et ventes d'accès | 40 | 43 | +3 (+7,5 %) |
+| Revendications DDoS | 9 | 43 | +34 |
 | Pays distincts après éclatement des fiches multi-pays | 16 | 18 | +2 |
 
-Le volume global baisse légèrement. Les fuites de données et ventes d'accès restent stables, c'est le ransomware qui recule, de 20 à 17.
+Le volume global augmente fortement après l'intégration rétrospective des DDoS. Les fuites et ventes d'accès passent de 40 à 43, tandis que le ransomware recule de 20 à 17.
 
 ## Évolution par pays
 
@@ -19,7 +20,7 @@ Le volume global baisse légèrement. Les fuites de données et ventes d'accès 
 |---|---:|---:|---:|
 | 🇪🇬 Égypte | 11 | 16 | +5 |
 | 🇿🇦 Afrique du Sud | 8 | 14 | +6 |
-| 🇲🇦 Maroc | 17 | 7 | -10 |
+| 🇲🇦 Maroc | 17 | 51 | +34 |
 | 🇹🇳 Tunisie | 4 | 5 | +1 |
 | 🇳🇬 Nigeria | 4 | 3 | -1 |
 | 🇩🇿 Algérie | 4 | 2 | -2 |
@@ -30,7 +31,7 @@ Le volume global baisse légèrement. Les fuites de données et ventes d'accès 
 | 🇪🇹 Éthiopie | 1 | 1 | 0 |
 | Fiches multi-pays | 1 | 3 | +2 |
 
-Les libellés pays directs couvrent 59 fiches en avril, plus une fiche multi-pays, et 54 fiches en mai, plus trois fiches multi-pays.
+Les libellés pays directs couvrent 59 fiches en avril, plus une fiche multi-pays, et 98 fiches en mai, plus trois fiches multi-pays.
 
 ## Évolution par secteur
 
@@ -45,7 +46,7 @@ Les libellés pays directs couvrent 59 fiches en avril, plus une fiche multi-pay
 | Human resources / Recruitment | 0 | 5 | +5 |
 | Telecommunications | 1 | 3 | +2 |
 
-Government / Administration prend à lui seul 20 des 57 fiches de mai. Human resources / Recruitment passe de zéro en avril à 5 en mai.
+Government / Administration prend à lui seul 49 des 103 fiches de mai. Human resources / Recruitment passe de zéro en avril à 5 en mai.
 
 ## Évolution des acteurs
 
@@ -64,6 +65,6 @@ Le total mensuel reste proche, mais la répartition change. L'Égypte et l'Afriq
 
 ## Conclusion
 
-Mai se solde par 57 incidents contre 60 en avril. Le ransomware explique la baisse ; les fuites et ventes d'accès sont restées exactement stables.
+Mai se solde par 103 incidents contre 69 en avril. Le ransomware explique la baisse ; les fuites et ventes d'accès sont restées exactement stables.
 
 *AFRINTEL, Open African CTI Monitoring Initiative*

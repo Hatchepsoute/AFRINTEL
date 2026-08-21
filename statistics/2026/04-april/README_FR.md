@@ -16,7 +16,7 @@
 
 Ces statistiques couvrent les publications observées dans le périmètre AFRINTEL pour avril 2026. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
-L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé comme **1 incident** dans le total global de 60. Pour l’analyse régionale, il est également projeté dans les zones géographiques concernées afin de refléter l’exposition régionale réelle.
+L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé comme **1 incident** dans le total global de 69. Pour l’analyse régionale, il est également projeté dans les zones géographiques concernées afin de refléter l’exposition régionale réelle.
 
 ---
 
@@ -24,7 +24,7 @@ L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé co
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 60 |
+| Total incidents | 69 |
 | Attaques ransomware | 20 |
 | Fuites de données / ventes d’accès | 40 |
 | Pays touchés | 16 |
@@ -38,8 +38,9 @@ L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé co
 | Type d’incident | Nombre | Pourcentage |
 |---|---:|---:|
 | Ransomware | 20 | 33,3 % |
-| Fuites de données / ventes d’accès | 40 | 66,7 % |
-| **Total** | **60** | **100 %** |
+| Fuites de données / ventes d’accès | 40 | 58,0 % |
+| Revendications DDoS | 9 | 13,0 % |
+| **Total** | **69** | **100 %** |
 
 ```mermaid
 pie
@@ -70,7 +71,7 @@ pie
 | 🇺🇬 Ouganda | 1 |
 | 🇿🇲 Zambie | 1 |
 | 🌍 Multi-pays Afrique | 1 |
-| **Total** | **60** |
+| **Total** | **69** |
 
 ```mermaid
 xychart
@@ -102,7 +103,7 @@ xychart
 | 🇺🇬 Ouganda | 0 | 1 | 1 |
 | 🇿🇲 Zambie | 1 | 0 | 1 |
 | 🌍 Multi-pays Afrique | 0 | 1 | 1 |
-| **Total** | **20** | **40** | **60** |
+| **Total** | **20** | **40** | **9** | **69** |
 
 ### Ransomware par pays
 
@@ -166,7 +167,7 @@ xychart
 | Télécommunications | 1 | 1,7 % |
 | ONG / Action sociale | 1 | 1,7 % |
 | Agrégation de données personnelles | 1 | 1,7 % |
-| **Total** | **60** | **100 %** |
+| **Total** | **69** | **100 %** |
 
 ```mermaid
 xychart
