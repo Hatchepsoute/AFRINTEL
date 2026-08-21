@@ -13,8 +13,8 @@
 Mai 2026 a rapporté **103 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **43 fuites de données ou ventes d'accès** et **43 revendications DDoS**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
 
 Principales conclusions :
-- **17 ransomwares (16,8 %)** et **43 fuites de données / ventes d'accès (40,6 %) et 43 revendications DDoS (42,6 %)**.
-- **12 pays** touchés, plus 3 incidents multi-pays ; **l'Égypte** (16 incidents), **l'Afrique du Sud** (14), **le Maroc** (51) et **la Tunisie** (5) concentrent 73,7 % des victimes.
+- **17 ransomwares (16,5 %)**, **43 fuites de données / ventes d'accès (41,7 %)** et **43 revendications DDoS (41,7 %)**.
+- **12 pays** sont directement touchés, auxquels s’ajoutent **6 pays supplémentaires** exposés via **3 incidents multi-pays** ; **le Maroc** (52 incidents), **l’Égypte** (17), **l’Afrique du Sud** (14) et **la Tunisie** (5) concentrent **88 des 100 fiches mono-pays (88,0 %)**, soit **85,4 % des 103 fiches**.
 - Des revendications attribuées à **TheGentlemen** concernent quatre pays en un mois (Égypte, Tunisie, Ghana, Côte d'Ivoire) ; **NightSpire** a revendiqué trois cibles égyptiennes.
 - **Databasehooligan** est associé à 8 publications de vente en Tunisie, Afrique du Sud, Égypte et Algérie.
 - Les revendications concernant l’éducation égyptienne mentionnent quatre entités ou jeux de données ; les volumes complets ne sont pas confirmés indépendamment.
@@ -49,40 +49,42 @@ Principales conclusions :
 | Total victimes | 103 |
 | Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
 | Acteurs ou sources nommés distincts | 31 |
-| Incidents ransomware | 17 (16,8 %) |
-| Fuites de données / ventes d'accès | 43 (40,6 %) |
-| Revendications DDoS | 43 (42,6 %) |
+| Incidents ransomware | 17 (16,5 %) |
+| Fuites de données / ventes d'accès | 43 (41,7 %) |
+| Revendications DDoS | 43 (41,7 %) |
 
 ### Classement des pays les plus touchés
 
 **Tous incidents confondus (103) :**
 
-| Rang | Pays | Incidents | Graphique |
+| Rang | Pays / périmètre de la fiche | Incidents | Graphique |
 | :---: | :--- | :---: | :--- |
-| **1** | 🇪🇬 Égypte | **16** | ████████████████ |
-| **2** | 🇿🇦 Afrique du Sud | **14** | ██████████████ |
-| **3** | 🇲🇦 Maroc | **51** | ███████ |
-| **4** | 🇹🇳 Tunisie | **5** | █████ |
-| **5** | 🇳🇬 Nigeria | **3** | ███ |
-| **6** | 🇩🇿 Algérie | **2** | ██ |
-| **7** | 🇹🇿 Tanzanie | **2** | ██ |
+| **1** | 🇲🇦 Maroc | **52** | ██████████████████████████ |
+| **2** | 🇪🇬 Égypte | **17** | █████████ |
+| **3** | 🇿🇦 Afrique du Sud | **14** | ███████ |
+| **4** | 🇹🇳 Tunisie | **5** | ███ |
+| **5** | 🇳🇬 Nigeria | **3** | ██ |
+| **6** | 🇩🇿 Algérie | **2** | █ |
+| **7** | 🇹🇿 Tanzanie | **2** | █ |
 | **8** | 🇪🇹 Éthiopie | **1** | █ |
 | **9** | 🇬🇭 Ghana | **1** | █ |
 | **10** | 🇨🇮 Côte d'Ivoire | **1** | █ |
 | **11** | 🇰🇪 Kenya | **1** | █ |
 | **12** | 🇸🇳 Sénégal | **1** | █ |
-| **-** | 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigéria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
-| **-** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigéria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
-| **-** | 🇪🇬 Égypte / 🇱🇾 Libye (Scans de passeports) | **1** | █ |
+| **–** | 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
+| **–** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
+| **–** | 🇪🇬 Égypte / 🇱🇾 Libye (Scans de passeports) | **1** | █ |
+
+> Les 12 premières lignes représentent **100 fiches mono-pays**. Les 3 dernières correspondent à des incidents multi-pays comptés une fois chacun, portant le total global à **103**.
 
 ```mermaid
-pie
- title Répartition des victimes par pays - Mai 2026
+pie showData
+ title Répartition des fiches par pays - Mai 2026
+ "Maroc" : 52
  "Égypte" : 17
  "Afrique du Sud" : 14
- "Maroc" : 51
  "Tunisie" : 5
- "Nigéria" : 3
+ "Nigeria" : 3
  "Algérie" : 2
  "Tanzanie" : 2
  "Éthiopie" : 1
@@ -112,8 +114,8 @@ pie
 | Rang | Pays | Incidents | Graphique |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇿🇦 Afrique du Sud | **12** | ████████████ |
-| **2** | 🇪🇬 Égypte | **9** | █████████ |
-| **3** | 🇲🇦 Maroc | **8** | ███████ |
+| **2** | 🇪🇬 Égypte | **10** | ██████████ |
+| **3** | 🇲🇦 Maroc | **9** | █████████ |
 | **4** | 🇹🇳 Tunisie | **3** | ███ |
 | **5** | 🇩🇿 Algérie | **2** | ██ |
 | **6** | 🇹🇿 Tanzanie | **2** | ██ |
@@ -125,28 +127,30 @@ pie
 
 ### Comparaison ransomware vs. fuites par pays
 
-| Pays | Ransomware | Fuites | Répartition côte-à-côte |
-| :--- | :---: | :---: | :--- |
-| 🇪🇬 Égypte | **7** | **9** | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 Afrique du Sud | **2** | **12** | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇲🇦 Maroc | **0** | **8** | 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇹🇳 Tunisie | **2** | **3** | 🟧🟧 🟦🟦🟦 |
-| 🇳🇬 Nigeria | **3** | **0** | 🟧🟧🟧 |
-| 🇩🇿 Algérie | **0** | **2** | 🟦🟦 |
-| 🇹🇿 Tanzanie | **0** | **2** | 🟦🟦 |
-| 🇪🇹 Éthiopie | **0** | **1** | 🟦 |
-| 🇬🇭 Ghana | **1** | **0** | 🟧 |
-| 🇨🇮 Côte d'Ivoire | **1** | **0** | 🟧 |
-| 🇰🇪 Kenya | **0** | **1** | 🟦 |
-| 🇸🇳 Sénégal | **1** | **0** | 🟧 |
-| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | 🟦 |
-| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | 🟦 |
-| 🇪🇬🇱🇾 Scans de passeports | **0** | **1** | 🟦 |
-| **Total (103)** | **17** | **43** | *Légende : 🟧 Ransomware \| 🟦 Fuites de données* |
+> Ce tableau couvre uniquement les **60 fiches hors DDoS** : 17 ransomwares et 43 fuites de données / ventes d’accès. Les DDoS sont présentés séparément ci-dessous.
+
+| Pays / périmètre de la fiche | Ransomware | Fuites / ventes d’accès | Total hors DDoS |
+| :--- | ---: | ---: | ---: |
+| 🇪🇬 Égypte | **7** | **10** | **17** |
+| 🇿🇦 Afrique du Sud | **2** | **12** | **14** |
+| 🇲🇦 Maroc | **0** | **9** | **9** |
+| 🇹🇳 Tunisie | **2** | **3** | **5** |
+| 🇳🇬 Nigeria | **3** | **0** | **3** |
+| 🇩🇿 Algérie | **0** | **2** | **2** |
+| 🇹🇿 Tanzanie | **0** | **2** | **2** |
+| 🇪🇹 Éthiopie | **0** | **1** | **1** |
+| 🇬🇭 Ghana | **1** | **0** | **1** |
+| 🇨🇮 Côte d'Ivoire | **1** | **0** | **1** |
+| 🇰🇪 Kenya | **0** | **1** | **1** |
+| 🇸🇳 Sénégal | **1** | **0** | **1** |
+| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | **1** |
+| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | **1** |
+| 🇪🇬🇱🇾 Scans de passeports | **0** | **1** | **1** |
+| **Total** | **17** | **43** | **60** |
 
 ```mermaid
-pie
- title Ransomware vs fuites de données - Mai 2026
+pie showData
+ title Ransomware vs fuites de données / ventes d'accès - Mai 2026
  "Fuites de données et ventes d'accès" : 43
  "Ransomware" : 17
 ```
@@ -155,98 +159,100 @@ pie
 
 | Pays | Incidents DDoS |
 |---|---:|
-| Maroc | 43 |
+| 🇲🇦 Maroc | **43** |
 | **Total** | **43** |
+
+Les 43 fiches DDoS correspondent à des observations rétrospectives Keymous+ visant des cibles marocaines. Les tests de disponibilité documentés ne permettent pas, à eux seuls, d’établir l’origine du trafic, la technique DDoS, la durée ni l’impact effectif.
 
 ### Répartition géographique par région
 
-| Région | Total incidents | Ransomware | Fuites | Répartition côte-à-côte |
-| :--- | :---: | :---: | :---: | :--- |
-| **Afrique du Nord** | **74** (73,3 %) | 9 | 21 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Afrique australe** | **14** (24,6 %) | 2 | 12 | 🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Afrique de l'Ouest** | **6** (10,5 %) | 6 | 0 | 🟧🟧🟧🟧🟧🟧 |
-| **Afrique de l'Est** | **4** (7,0 %) | 0 | 4 | 🟦🟦🟦🟦 |
-| 🇰🇪🇪🇹🇳🇬🇿🇼🇲🇿🇱🇷🇹🇬🇸🇱🇱🇾 Multi-pays (3 incidents) | **3** (5,3 %) | 0 | 3 | 🟦🟦🟦 |
+> Les valeurs régionales utilisent les **103 fiches dédupliquées**. Les trois incidents multi-pays restent séparés et ne sont pas développés dans chaque pays concerné.
 
-*Légende : 🟧 Ransomware | 🟦 Fuites de données*
+| Région / périmètre | Total fiches | Ransomware | Fuites / accès | DDoS | Part des 103 |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **Afrique du Nord** | **76** | 9 | 24 | 43 | **73,8 %** |
+| **Afrique australe** | **14** | 2 | 12 | 0 | **13,6 %** |
+| **Afrique de l'Ouest** | **6** | 6 | 0 | 0 | **5,8 %** |
+| **Afrique de l'Est** | **4** | 0 | 4 | 0 | **3,9 %** |
+| **Fiches multi-pays** | **3** | 0 | 3 | 0 | **2,9 %** |
+| **Total** | **103** | **17** | **43** | **43** | **100 %** |
 
 ### Répartition sectorielle
 
-| Secteur d'activité | Incidents | Part (%) | Graphique |
-| :--- | :---: | :---: | :--- |
-| **Government / Administration** | **49** | 48.51% % | ████████████████████ |
-| **Ressources humaines / Recrutement** | **5** | 8,77 % | █████ |
-| **Industrie / Automobile / Fabrication** | **5** | 8,77 % | █████ |
-| **E-commerce / Retail** | **4** | 3.96% % | ████ |
-| **Education / University** | **3** | 2.97% % | ███ |
-| **Finance / Banking** | **8** | 7.92% % | ███ |
-| **Telecommunications** | **3** | 2.97% % | ███ |
-| **Oil & Energy** | **2** | 1.98% % | ██ |
-| **Alimentation / Boissons / Restauration** | **2** | 3,51 % | ██ |
-| **Transport / Logistique** | **2** | 3,51 % | ██ |
-| **ONG / Action sociale** | **2** | 3,51 % | ██ |
-| **Hôtellerie / Événementiel** | **2** | 3,51 % | ██ |
-| **Healthcare / Medical** | **1** | 0.99% % | █ |
-| **Sports / Federations** | **1** | 0.99% % | █ |
-| **Agrégation de données personnelles** | **1** | 1,75 % | █ |
-| **Services aux entreprises** | **1** | 0,99 % |
-| **Technologies / Hébergement** | **6** | 4,95 % | █ |
-| **Total** | **103** | **100 %** | |
+Les fiches sources utilisent également les libellés `Government / Diplomacy` et `Government / Civil Aviation`. Ils sont normalisés ci-dessous dans **Gouvernement / Administration**, soit 51 fiches au total.
+
+| Secteur d'activité | Incidents | Part |
+| :--- | ---: | ---: |
+| **Gouvernement / Administration** | **51** | **49,5 %** |
+| **Finance / Banque** | **8** | **7,8 %** |
+| **Transport / Logistique** | **7** | **6,8 %** |
+| **Ressources humaines / Recrutement** | **5** | **4,9 %** |
+| **Industrie / Automobile / Fabrication** | **5** | **4,9 %** |
+| **Technologies / Hébergement** | **5** | **4,9 %** |
+| **E-commerce / Retail** | **4** | **3,9 %** |
+| **Éducation / Université** | **3** | **2,9 %** |
+| **Télécommunications** | **3** | **2,9 %** |
+| **Pétrole & Énergie** | **2** | **1,9 %** |
+| **Alimentation / Boissons / Restauration** | **2** | **1,9 %** |
+| **ONG / Action sociale** | **2** | **1,9 %** |
+| **Hôtellerie / Événementiel** | **2** | **1,9 %** |
+| **Santé / Médical** | **1** | **1,0 %** |
+| **Sports / Fédérations** | **1** | **1,0 %** |
+| **Agrégation de données personnelles** | **1** | **1,0 %** |
+| **Services aux entreprises** | **1** | **1,0 %** |
+| **Total** | **103** | **100 %** |
 
 ```mermaid
-pie
+pie showData
  title Répartition sectorielle - Mai 2026
- "Government / Administration" : 49
+ "Gouvernement / Administration" : 51
+ "Finance / Banque" : 8
+ "Transport / Logistique" : 7
  "Ressources humaines / Recrutement" : 5
  "Industrie / Automobile / Fabrication" : 5
+ "Technologies / Hébergement" : 5
  "E-commerce / Retail" : 4
- "Education / University" : 3
- "Finance / Banking" : 8
- "Telecommunications" : 3
- "Oil & Energy" : 2
+ "Éducation / Université" : 3
+ "Télécommunications" : 3
+ "Pétrole & Énergie" : 2
  "Alimentation / Boissons / Restauration" : 2
- "Transport / Logistique" : 7
  "ONG / Action sociale" : 2
  "Hôtellerie / Événementiel" : 2
- "Healthcare / Medical" : 1
- "Sports / Federations" : 1
+ "Santé / Médical" : 1
+ "Sports / Fédérations" : 1
  "Agrégation de données personnelles" : 1
  "Services aux entreprises" : 1
- "Technologies / Hébergement" : 6
 ```
 
 ### Acteurs de menaces les plus actifs
 
-| Acteur / Groupe | Incidents | Activité principale | Graphique |
-| :--- | :---: | :--- | :--- |
-| **Databasehooligan** | **8** | Fuites / ventes de données | 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **404Crew Cyber Team** | **5** | Fuites de données (coalitions) | 🟦🟦🟦🟦🟦 |
-| **TheGentlemen** | **4** | Ransomware | 🟧🟧🟧🟧 |
-| **NightSpire** | **3** | Ransomware | 🟧🟧🟧 |
-| **INT3X** | **2** | Fuites de données | 🟦🟦 |
-| **Keymous** | **2** | Ventes d'accès / fuites | 🟦🟦 |
-| **cc5ab** | **2** | Fuites de données | 🟦🟦 |
-| **NullSec Nigeria** | **2** | Fuites (coalitions) | 🟦🟦 |
-| **anisanas2** | **2** | Fuites / ventes de données (Maroc) | 🟦🟦 |
+> Pour éviter de mélanger deux corpus de nature différente, ce classement porte sur les **60 fiches ransomware et fuites/ventes d’accès**. Les 43 fiches DDoS attribuées à Keymous+ sont traitées séparément en section 4.3.
 
-*Légende : 🟧 Ransomware \| 🟦 Fuites de données*
+| Acteur / Groupe | Incidents | Activité principale |
+| :--- | ---: | :--- |
+| **Databasehooligan** | **8** | Fuites / ventes de données |
+| **404Crew Cyber Team** | **5** | Fuites / activité de coalition |
+| **TheGentlemen** | **4** | Ransomware |
+| **NightSpire** | **3** | Ransomware |
+| **INT3X** | **2** | Fuites de données |
+| **Keymous** | **2** | Fuites / ventes d’accès |
+| **cc5ab** | **2** | Fuites de données |
+| **NullSec Nigeria** | **2** | Fuites / activité de coalition |
+| **anisanas2** | **2** | Fuites / ventes de données |
 
 ```mermaid
-pie
- title Acteurs les plus actifs - Mai 2026
- "Databasehooligan (8)" : 8
- "404Crew Cyber Team (5)" : 5
- "TheGentlemen (4)" : 4
- "NightSpire (3)" : 3
- "INT3X (2)" : 2
- "Keymous (2)" : 2
- "cc5ab (2)" : 2
- "NullSec Nigeria (2)" : 2
- "anisanas2 (2)" : 2
- "Fiches hors classement affiché (27)" : 27
+pie showData
+ title Acteurs sélectionnés - fiches hors DDoS - Mai 2026
+ "Databasehooligan" : 8
+ "404Crew Cyber Team" : 5
+ "TheGentlemen" : 4
+ "NightSpire" : 3
+ "INT3X" : 2
+ "Keymous" : 2
+ "cc5ab" : 2
+ "NullSec Nigeria" : 2
+ "anisanas2" : 2
 ```
-
----
 
 ### Synthèse géographique
 
@@ -300,35 +306,39 @@ La collecte rétrospective de publications Keymous+ ajoute 43 observations maroc
 
 ## 5. Impact sectoriel
 
-| Secteur d'activité | Incidents | Part (%) | Impact visuel |
-| :--- | :---: | :---: | :--- |
-| **Government / Administration** | **49** | 48.51% % | ████████████████████ |
-| **Ressources humaines / Recrutement** | **5** | 8,77 % | █████ |
-| **Industrie / Automobile / Fabrication** | **5** | 8,77 % | █████ |
-| **E-commerce / Retail** | **4** | 3.96% % | ████ |
-| **Education / University** | **3** | 2.97% % | ███ |
-| **Finance / Banking** | **8** | 7.92% % | ███ |
-| **Telecommunications** | **3** | 2.97% % | ███ |
-| **Oil & Energy** | **2** | 1.98% % | ██ |
-| **Alimentation / Boissons / Restauration** | **2** | 3,51 % | ██ |
-| **Transport / Logistique** | **2** | 3,51 % | ██ |
-| **ONG / Action sociale** | **2** | 3,51 % | ██ |
-| **Hôtellerie / Événementiel** | **2** | 3,51 % | ██ |
-| **Healthcare / Medical** | **1** | 0.99% % | █ |
-| **Sports / Federations** | **1** | 0.99% % | █ |
-| **Agrégation de données personnelles** | **1** | 1,75 % | █ |
-| **Services aux entreprises** | **1** | 0,99 % |
-| **Technologies / Hébergement** | **6** | 4,95 % | █ |
-| **Total** | **103** | **100 %** | |
+| Secteur d'activité | Incidents | Part |
+| :--- | ---: | ---: |
+| **Gouvernement / Administration** | **51** | **49,5 %** |
+| **Finance / Banque** | **8** | **7,8 %** |
+| **Transport / Logistique** | **7** | **6,8 %** |
+| **Ressources humaines / Recrutement** | **5** | **4,9 %** |
+| **Industrie / Automobile / Fabrication** | **5** | **4,9 %** |
+| **Technologies / Hébergement** | **5** | **4,9 %** |
+| **E-commerce / Retail** | **4** | **3,9 %** |
+| **Éducation / Université** | **3** | **2,9 %** |
+| **Télécommunications** | **3** | **2,9 %** |
+| **Pétrole & Énergie** | **2** | **1,9 %** |
+| **Alimentation / Boissons / Restauration** | **2** | **1,9 %** |
+| **ONG / Action sociale** | **2** | **1,9 %** |
+| **Hôtellerie / Événementiel** | **2** | **1,9 %** |
+| **Santé / Médical** | **1** | **1,0 %** |
+| **Sports / Fédérations** | **1** | **1,0 %** |
+| **Agrégation de données personnelles** | **1** | **1,0 %** |
+| **Services aux entreprises** | **1** | **1,0 %** |
+| **Total** | **103** | **100 %** |
 
 **Observations clés :**
-- Government / Administration compte 20 incidents. L’ancienne catégorie résiduelle a été entièrement reclassée dans huit secteurs explicites, principalement Ressources humaines / Recrutement et Industrie / Automobile / Fabrication avec 5 incidents chacun.
-- Education / University compte 3 incidents. Les jeux de données mixtes gouvernement et éducation sont classés selon leur secteur principal, Government / Administration.
-- Les fichiers analysés du Trésor public et l'offre concernant la messagerie de la police tanzanienne sont des cas publics à forte sensibilité, sans établir le chemin complet de l'intrusion.
+- Gouvernement / Administration représente **51 des 103 fiches (49,5 %)**, notamment sous l’effet du corpus DDoS marocain rétrospectif et des revendications visant le secteur public.
+- Finance / Banque compte 8 fiches et Transport / Logistique 7.
+- Éducation / Université compte 3 fiches classées sous ce secteur principal ; les jeux mixtes gouvernement/éducation conservent le secteur principal indiqué dans la fiche victime.
+- Les fichiers analysés du Trésor public et l’offre concernant la messagerie de la police tanzanienne sont des cas publics à forte sensibilité, sans établir le chemin complet de l’intrusion.
 
 ---
 
 ## 6. Profil des acteurs de menaces
+
+> Le tableau ci-dessous se concentre sur les ransomwares et les fuites/ventes d’accès ; les 43 revendications DDoS attribuées à Keymous+ sont traitées séparément plus haut.
+
 
 | Acteur | Type | Incidents | Cibles principales |
 | :--- | :--- | :---: | :--- |
@@ -374,15 +384,16 @@ La collecte rétrospective de publications Keymous+ ajoute 43 observations maroc
 
 ### Comparaison factuelle avec avril 2026
 
-Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [avril](../04-april/victims_FR.md) et de [mai](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [avril](../04-april/victims_FR.md) et de [mai](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions.
 
-| Indicateur | avril 2026 | mai | Évolution observée |
-| :--- | ---: | ---: | ---: |
-| Incidents documentés | 69 | 103 | +34 (+49,3%) |
-| Ransomware / extorsion | 20 | 17 | -3 |
-| Autres fuites, ventes d'accès ou défacements | 40 | 84 | +43 |
+| Indicateur | Avril 2026 | Mai 2026 | Évolution observée |
+| :--- | ---: | ---: | :--- |
+| Incidents documentés | 69 | 103 | **+34 (+49,3 %)** |
+| Ransomware | 20 | 17 | **-3 (-15,0 %)** |
+| Fuites de données / ventes d’accès | 40 | 43 | **+3 (+7,5 %)** |
+| Revendications DDoS | 9 | 43 | **+34 (+377,8 %)** |
 
-La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+La variation mensuelle reflète l’évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, de la collecte rétrospective, des règles de comptage multi-pays, des republications ou de la couverture de veille, et ne doit pas être interprétée comme une évolution confirmée du nombre réel de compromissions.
 
 ## 8. Cartographie MITRE ATT&CK (contextuelle)
 
@@ -425,7 +436,7 @@ La variation mensuelle reflète l'évolution des publications publiques collect�
 
 ## 12. Conclusion
 
-Mai se solde par 103 incidents signalés ou revendiqués publiquement, au-dessus des 69 d'avril, une hausse de 49,3 %. Les fiches ransomware passent de 20 à 17, tandis que les fuites de données et ventes d'accès passent à 43. L'Égypte et l'Afrique du Sud représentent à elles deux 31,0 % des incidents directs. Ce qui marque le mois : les revendications répétées dans l'éducation égyptienne, les publications sous la bannière OpSouthAfrica, et les ventes de Databasehooligan qui se sont étendues à quatre pays.
+Mai se solde par **103 incidents signalés ou revendiqués publiquement**, contre 69 en avril (**+49,3 %**) : **17 ransomwares**, **43 fuites de données / ventes d’accès** et **43 revendications DDoS**. Le Maroc concentre **52 fiches**, devant l’Égypte (17), l’Afrique du Sud (14) et la Tunisie (5). Ces quatre pays représentent **88 des 100 fiches mono-pays**. Le mois est marqué par les revendications répétées dans l’éducation égyptienne, les publications sous la bannière OpSouthAfrica, les ventes de Databasehooligan dans quatre pays et un important corpus rétrospectif de revendications DDoS visant le Maroc.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
