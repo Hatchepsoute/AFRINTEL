@@ -266,7 +266,7 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 -->
 
 ### August 20, 2026
-#### 🇩🇿 Algeria - Afribaba (www.afribaba.dz)
+#### 🇩🇿 Algeria - Afribaba (dz.afribaba.com)
 
 - **Initial publication date:** August 20, 2026
 - **AFRINTEL detection date:** August 20, 2026
