@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Operational%20Fraud-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
@@ -8,7 +8,7 @@
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Scope and methodology
-This list records ransomware and data breach incidents targeting African entities during March 2026. Data is extracted and normalized from monitoring exports of leak sites (DLS) and complementary OSINT sources.
+This list records ransomware claims/publications, data leaks/system intrusions and one operational-fraud incident affecting African entities and disclosed or identified in March 2026. Data is extracted and normalized from monitoring exports of leak sites (DLS) and complementary OSINT sources.
 
 **Quality controls applied:**
 - **Integrity:** Each line of the source dataset is kept as a distinct incident.
@@ -19,11 +19,12 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Victims recorded:** 41
 - **Countries affected:** 12 (plus 1 multi-country incident)
 - **Actors observed:** 26 attributed actors; 1 incident without public attribution
-- **Most affected countries:** South Africa (13), Morocco (8), Egypt (9)
+- **Most affected countries:** South Africa (13), Egypt (9), Morocco (8)
 
 ### Incident typology
 - **Ransomware claims or publications:** 19 incidents (46.3%)
-- **Data breaches / system intrusions:** 22 incidents (53.7%)
+- **Data leaks / system intrusions:** 21 incidents (51.2%)
+- **Operational fraud:** 1 incident (2.4%) - UBA Senegal; outside AFRINTEL's four standard structured incident types
 
 ### Notable incidents
 
@@ -77,22 +78,23 @@ This list records ransomware and data breach incidents targeting African entitie
 - **zimablue (Loozap)**: 1 victim
 - **Keymous (Guinea Health)**: 1 victim
 
-### Ransomware vs Data Breaches by country
-| Country               | Ransomware | Data Breach |
-|-----------------------|------------|-------------|
-| 🇿🇦 South Africa       | 7          | 6           |
-| 🇲🇦 Morocco            | 5          | 3           |
-| 🇪🇬 Egypt              | 3          | 6           |
-| 🇳🇬 Nigeria            | 0          | 2           |
-| 🌍 Multi-country       | 0          | 1           |
-| 🇩🇿 Algeria            | 0          | 1           |
-| 🇸🇳 Senegal            | 0          | 1           |
-| 🇬🇳 Guinea             | 0          | 1           |
-| 🇿🇲 Zambia             | 0          | 1           |
-| 🇲🇬 Madagascar         | 1          | 0           |
-| 🇹🇳 Tunisia            | 1          | 0           |
-| 🇳🇦 Namibia            | 1          | 0           |
-| 🇹🇿 Tanzania           | 1          | 0           |
+### Incident type by country
+| Country | Ransomware | Data leak / intrusion | Operational fraud | Total |
+|---|---:|---:|---:|---:|
+| 🇿🇦 South Africa | 7 | 6 | 0 | **13** |
+| 🇪🇬 Egypt | 3 | 6 | 0 | **9** |
+| 🇲🇦 Morocco | 5 | 3 | 0 | **8** |
+| 🇳🇬 Nigeria | 0 | 2 | 0 | **2** |
+| 🌍 Multi-country | 0 | 1 | 0 | **1** |
+| 🇩🇿 Algeria | 0 | 1 | 0 | **1** |
+| 🇸🇳 Senegal | 0 | 0 | 1 | **1** |
+| 🇬🇳 Guinea | 0 | 1 | 0 | **1** |
+| 🇿🇲 Zambia | 0 | 1 | 0 | **1** |
+| 🇲🇬 Madagascar | 1 | 0 | 0 | **1** |
+| 🇹🇳 Tunisia | 1 | 0 | 0 | **1** |
+| 🇳🇦 Namibia | 1 | 0 | 0 | **1** |
+| 🇹🇿 Tanzania | 1 | 0 | 0 | **1** |
+| **Total** | **19** | **21** | **1** | **41** |
 
 ## March 2026
 
@@ -386,6 +388,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Sector:** Government / National Statistics
 - **Website:** [statssa.gov.za](https://www.statssa.gov.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim description:** Stats SA is the national statistical agency of South Africa. XP95 exfiltrated 154 GB of data (453,362 files). The breach potentially compromises sensitive socio-economic data, census records, employment information, inflation data, and national administrative records. A $100,000 ransom has been demanded, with a public sale deadline set for April 20, 2026.
 
 #### 🇿🇦 South Africa - Gauteng City Region Academy (GCRA)
@@ -393,6 +396,7 @@ This list records ransomware and data breach incidents targeting African entitie
 - **Sector:** Education / Training (Provincial Government)
 - **Website:** [gcra.gauteng.gov.za](https://gcra.gauteng.gov.za)
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Victim description:** The GCRA is the agency responsible for skills development in the Gauteng province. The exfiltration of 147 GB of data potentially compromises student records (bursaries, registrations, PII), training program data, and the academy's administrative documents. XP95 has set a ransom deadline before the public sale of the files.
 
 ### 30 March 2026

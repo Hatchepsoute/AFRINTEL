@@ -2,7 +2,7 @@
 
 ## Monthly snapshot
 
-June 2026 includes **40 unique incidents**: **20 ransomware incidents** and **20 data leaks or access sales**. The records directly or indirectly concern **20 African countries**, including exposure through two multi-country access-sale listings.
+June 2026 includes **40 unique incidents**: **20 ransomware incidents**, **18 data leaks** and **2 access sales**. The records directly or indirectly concern **20 African countries**, including exposure through two multi-country access-sale listings.
 
 ### Notable incidents
 
@@ -493,7 +493,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 
 
-#### 🇹🇳 Tunisia – Examens.tn
+#### 🇹🇳 Tunisia - Examens.tn
 
 - **Actor / Group:** AshleyWood2022
 - **Sector:** Education / University

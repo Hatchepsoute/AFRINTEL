@@ -9,14 +9,14 @@
 
 ## Résumé du mois
 
-Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de données**, **1 vente d’accès** et **1 défacement coordonné**, répartis dans **12 pays africains**.
+Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de données**, **1 vente d'accès** et **1 défacement coordonné**, répartis dans **12 pays africains**.
 
 ### Incidents marquants
 
 - **Niger :** défacement coordonné de plus de sept sites de l’État nigérien affichant des messages politiques sur la situation géopolitique du pays.
 - **Sénégal :** publication d’une base de données financières attribuée à PixPay.
 - **Maroc :** publication d’une base de données aéronautiques attribuée à AOM Aviation Group.
-- **Togo :** vente revendiquée d’accès à des infrastructures gouvernementales par Bigbrother.
+- **Togo :** vente revendiquée d'accès à des infrastructures gouvernementales par Bigbrother.
 
 > Les fiches ci-dessous documentent des revendications ou publications observées. AFRINTEL ne confirme pas une compromission sans élément indépendant.
 
@@ -36,7 +36,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Acteur / Groupe :** Non revendiqué
 - **Secteur :** Administration publique
 - **Sites web :** erp.ansi.ne, startups.ansi.ne, stagiaires.ansi.ne, magel.gouv.ne, urbanisme.gouv.ne, promotionfemme.gouv.ne, industrie.gouv.ne
-- **Type d.incident :** Défacement
+- **Type d'incident :** Défacement
 - **Statut :** Under Investigation
 - **Description victime :** Plusieurs plateformes officielles du gouvernement nigérien touchées par une attaque coordonnée affichant un message à caractère politique.
 

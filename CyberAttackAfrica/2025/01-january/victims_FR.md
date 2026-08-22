@@ -3,8 +3,15 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Janvier 2025 (16 victimes)
+# Liste des victimes africaines de cyberattaques en Janvier 2025 (17 victimes)
 [**English version available here**](./victims.md)
+
+## Résumé du mois
+
+Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **8 pays africains**.
+
+> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, la version anglaise `victims.md` est synchronisée avec les mêmes faits, classifications et valeurs structurées.
+
 ## Janvier 2025
 
 ### 06 Janvier 2025
@@ -13,6 +20,7 @@
 - **Secteur:** Santé (Dentaire)
 - **Site web:** https://molars.co.ke
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d’impact:** Level 3
 - **Analyse:** AFRINTEL a examiné le classeur fourni et huit fichiers de preuve supplémentaires. Le classeur contient des éléments de structure salariale et des feuilles distinctes pour les médecins, la comptabilité, les ressources humaines, les opérations et plusieurs fonctions de support. Les preuves comprennent également une capture de paiement bancaire et des documents cohérents avec l’administration du personnel ou de la paie. L’échantillon soutient une exposition potentielle des rémunérations, des structures départementales, des opérations internes et d’informations liées au traitement financier. Le volume revendiqué de 19 Go, le vecteur d’accès et l’exhaustivité des données restent non vérifiés. AFRINTEL ne reproduit aucun nom, salaire, coordonnée bancaire ni autre donnée personnelle.
@@ -24,6 +32,7 @@
 - **Secteur:** Administrations publiques/ Finances / Marchés Publics.
 - **Site web:** gags.gov.eg
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 3
 - **Description victime:** La GAGS est l'autorité régulatrice des services gouvernementaux en Égypte. Elle supervise les procédures d'appel d'offres, la gestion des stocks de l'État et l'aliénation des biens publics.
@@ -35,6 +44,7 @@
 - **Secteur:** Commerce de détail/Grande distribution (Retail).
 - **Site web:** pnp.co.za
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** **Pick n Pay Group Ltd** est le deuxième plus grand détaillant de produits alimentaires en Afrique du Sud.
 
 ### 11 Janvier 2025
@@ -43,6 +53,7 @@
 - **Secteur:** Technologies / Marketing Digital / SEO.
 - **Site web:** seocommarrakech.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** EOCOM est une agence marocaine fournissant des services de SEO (Search Engine Optimization), de gestion de campagnes publicitaires (SEA) et de développement web pour des entreprises locales et internationales.
 
 ### 14 Janvier 2025
@@ -51,6 +62,7 @@
 - **Secteur:** Logistique Pétrolière et Gazière / Services Portuaires.
 - **Site web:** intelservices.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Intels est un pilier de l'économie nigériane, gérant 90 % des activités de soutien à l'exploration pétrolière offshore. Le groupe affirme avoir exfiltré environ 1,5 To de données sensibles ; AFRINTEL a consulté cette revendication sur le site de l'acteur mais n'a pas collecté ni analysé les données sous-jacentes.
 
 ### 14 Janvier 2025
@@ -59,6 +71,7 @@
 - **Secteur:** Hôtellerie / Tourisme.
 - **Site web:** sharmreefhotel.com / sharmelsheikh.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Le Sharm Reef Hotel est un complexe hôtelier 4 étoiles situé sur le plateau d'Om El Seid à Charm el-Cheikh en Egypte.
 
 ### 15 Janvier 2025
@@ -67,17 +80,32 @@
 - **Secteur:** Administrations publiques
 - **Site web:** mts.gov.eg
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 3
 - **Description victime:** Misr Technology Services (MTS) est l'entité gouvernementale égyptienne responsable du développement et de la gestion de la plateforme nationale de facilitation du commerce, notamment le système Nafeza.
 - **Analyse:** AFRINTEL a examiné un ensemble local de captures d'écran et de documents PDF générés par les systèmes internes du secteur du Transport Maritime et de la Logistique, notamment l'Egyptian Maritime Data Bank, cohérents avec la revendication du cybercriminel funksec. Le matériel examiné inclut une demande individuelle de permis nommant un demandeur, une agence maritime affiliée et une date de dépôt ; un rapport comparatif de trafic portuaire listant des statistiques d'escales par port pour 2023 et 2024 ; une liste de projets et opportunités d'investissement portuaire ; ainsi que des rapports détaillés de recouvrement sectoriel couvrant plusieurs périodes entre janvier et avril 2024, listant des noms de clients, types d'opérations, numéros de référence et montants encaissés via le canal point de vente du secteur. Deux des documents examinés portent un horodatage d'impression système daté du 14 et du 15 janvier 2025, cohérent avec la date de publication de la revendication. La présence de rapports générés en interne, datés et nommant des demandeurs et clients, combinée à l'en-tête propre de la plateforme et aux métadonnées d'impression, soutient une évaluation à confiance élevée d'un accès réel aux systèmes de reporting internes de MTS. Compte tenu du rôle de MTS dans la gestion de la plateforme nationale égyptienne de facilitation du commerce, notamment le système Nafeza, cet incident présente un risque pour le personnel des agences maritimes, les données financières clients et la confidentialité des opérations nationales de facilitation du commerce. AFRINTEL ne reproduit aucun nom de demandeur, nom de client, donnée financière ni référence documentaire issue du matériel examiné.
+---
 
+### 16 Janvier 2025
+#### 🇿🇦 Afrique du Sud - North-West University (NWU)
+- **Acteur / Groupe:** SevenZeroDay404
+- **Secteur:** Éducation / Université
+- **Site web:** [nwu.ac.za](https://www.nwu.ac.za/)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** North-West University (NWU) est une université sud-africaine d'enseignement supérieur. Le domaine `nwu.ac.za` et l'identité visuelle utilisés dans la publication de l'acteur correspondent à cette université, qui est explicitement présentée comme la victime de la revendication.
+- **Analyse:** Le 16 janvier 2025, SevenZeroDay404 a publié sur un forum underground une entrée intitulée **« 29K NWU Student Database »**, accompagnée du logo de North-West University et d'un ensemble de données présenté comme une base d'étudiants. L'acteur revendique environ **29 000 enregistrements**. Le fichier fourni contient des noms, des résultats académiques sous forme de GPA, des cursus universitaires et des années d'études. L'examen du contenu identifie **2 893 occurrences de valeurs de GPA structurées**, sans permettre de les assimiler automatiquement à 2 893 étudiants distincts. Le volume de 29 000 enregistrements annoncé ne peut donc pas être validé à partir de cet échantillon. L'attribution du jeu de données à `nwu.ac.za` reste incertaine : aucun marqueur explicite tel que le domaine `nwu.ac.za`, une référence à l'Afrique du Sud ou à un campus de North-West University n'a été identifié dans les données fournies. La nomenclature de plusieurs formations et l'utilisation d'un système de notation sur 4.00 présentent également des similitudes avec une autre université utilisant l'acronyme NWU. Ces éléments ne permettent pas de réattribuer la revendication, mais empêchent de confirmer que l'échantillon provient effectivement des systèmes de North-West University en Afrique du Sud. Les éléments disponibles établissent donc **North-West University en Afrique du Sud comme victime revendiquée par SevenZeroDay404**, sans confirmer indépendamment l'origine du jeu de données, l'exhaustivité des 29 000 enregistrements annoncés ni une compromission effective des systèmes de l'université. Si les données sont authentiques, leur exposition pourrait faciliter des campagnes de phishing ciblé et des tentatives d'usurpation d'identité visant des étudiants ou anciens étudiants.
+---
 ### 21 Janvier 2025
 #### 🇩🇿 Algérie - Centre Universitaire de Barika (cu-barika.dz)
 - **Groupe ransomware:** funksec
 - **Secteur:** Éducation / Enseignement Supérieur / Recherche.
 - **Site web:** cu-barika.dz
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Le Centre Universitaire de Barika (Ahmed Ben Abderrezak El Hamouda) est un pôle d'enseignement supérieur situé dans la wilaya de Batna, proposant des formations en sciences technologiques, droit, et sciences humaines.
 
 ### 21 Janvier 2025
@@ -86,6 +114,7 @@
 - **Secteur:** Santé
 - **Site web:** inayaclinic.org
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** La Clinique Inaya est une structure médicale pluridisciplinaire en Algérie, réputée pour ses pôles d'excellence en cardiologie, chirurgie cardiovasculaire et gynécologie-obstétrique.
 
 ### 24 Janvier 2025
@@ -94,6 +123,7 @@
 - **Secteur:** Administrations publiques / Ressources en Eau / Agriculture.
 - **Site web:** lnrbda.gov.ng
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** Very High
 - **Niveau d'impact:** Level 4
 - **Description victime:** La LNRBDA est une agence stratégique sous la tutelle du ministère fédéral des Ressources en Eau du Nigeria. Elle gère des projets de barrages, d'irrigation, d'approvisionnement en eau potable et de développement rural.
@@ -105,6 +135,7 @@
 - **Secteur:** Éducation / Enseignement Supérieur / Recherche.
 - **Site web:** usmba.ac.ma
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 2
 - **Description victime:** L'USMBA est une université multidisciplinaire comprenant de nombreux établissements (Facultés de Médecine, des Sciences, des Lettres, ENCG, ENSA, etc.).
@@ -116,6 +147,7 @@
 - **Secteur:** Éducation / Recherche Scientifique / Publication Académique.
 - **Site web:** achieverssciencejournal.org
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 2
 - **Description victime:** L'AJSR est une revue multidisciplinaire à comité de lecture qui publie des travaux de recherche originaux dans les domaines des sciences appliquées, de l'ingénierie et des technologies.
@@ -127,6 +159,7 @@
 - **Secteur:** Éducation / Enseignement Supérieur / Recherche Pédagogique.
 - **Site web:** fgse.cu.edu.eg
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** La FGSE (Faculty of Graduate Studies for Education) est l'une des institutions de recherche les plus anciennes et les plus respectées d'Égypte.
 
 ### 27 Janvier 2025
@@ -135,6 +168,7 @@
 - **Secteur:** Services de Conseil / SMS en masse et messagerie broadcast
 - **Site web:** qed.co.ug
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** Very High
 - **Niveau d'impact:** Level 4
 - **Description victime:** QED est un cabinet leader en Ouganda spécialisé dans le "Monitoring, Evaluation and Learning" (MEL). Il accompagne des projets financés par des organisations internationales dans les secteurs de la santé, de l'éducation et de la gouvernance, et exploite une plateforme de SMS en masse et de messagerie broadcast utilisée pour des campagnes auprès de bénéficiaires pour le compte de clients.
@@ -146,6 +180,7 @@
 - **Secteur:** Services RH / Recrutement 
 - **Site web:** workers.com.zm
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 3
 - **Description victime:** Entreprise zambienne de services de recrutement et de travail temporaire.
@@ -157,4 +192,5 @@
 - **Secteur:** Éducation / Enseignement Supérieur
 - **Site web:** zetech.ac.ke
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Zetech University est une institution d'enseignement supérieur de premier plan au Kenya.

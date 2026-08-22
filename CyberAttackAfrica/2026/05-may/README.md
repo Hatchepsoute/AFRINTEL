@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Breach-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale%20%7C%20DDoS-red)
 ![Period](https://img.shields.io/badge/Period-May%202026-lightgrey)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
@@ -10,10 +10,10 @@
 
 ## 1. Executive summary
 
-May 2026 brought in **103 publicly reported or claimed cyber incidents** across Africa, **17 ransomware listings or disclosures**, **43 data leaks or access sales** and **43 DDoS claims**. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
+May 2026 brought in **103 publicly reported or claimed cyber incidents** across Africa, **17 ransomware listings or disclosures**, **41 data leaks, 2 access sales** and **43 DDoS claims**. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
 
 Key findings:
-- **17 ransomware listings or disclosures (16.5%)**, **43 data leaks / access sales (41.7%)** and **43 DDoS claims (41.7%)**.
+- **17 ransomware listings or disclosures (16.5%)**, **41 data leaks (39.8%), 2 access sales (1.9%)** and **43 DDoS claims (41.7%)**.
 - **12 countries** are directly affected, with 6 additional countries exposed through 3 multi-country incidents; **Morocco** (52 incidents), **Egypt** (17), **South Africa** (14), and **Tunisia** (5) account for **88 of the 100 direct records (88.0%)**, or **85.4% of all 103 records**.
 - Claims attributed to **TheGentlemen** concerned organizations in four countries in one month (Egypt, Tunisia, Ghana, Ivory Coast); **NightSpire** claimed three Egyptian targets.
 - **Databasehooligan** was associated with the highest number of dataset sale offers, with 8 organizations across Tunisia, South Africa, Egypt, and Algeria.
@@ -26,6 +26,23 @@ Key findings:
 👉🏾 [View full victim list](./victims.md)
 
 ---
+
+
+### 1.1 Month-over-month comparison
+
+> Comparison based on validated AFRINTEL monthly corpora. A change in documented records does not, by itself, prove a change in the real number of compromises.
+
+| Indicator | April 2026 | May 2026 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 69 | 103 | **+34 (+49.3%)** |
+| Ransomware | 20 | 17 | **-3 (-15.0%)** |
+| Data Leak | 39 | 41 | **+2 (+5.1%)** |
+| Access Sale | 1 | 2 | **+1 (+100.0%)** |
+| DDoS | 9 | 43 | **+34 (+377.8%)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+> Reading rule: when the previous month is `0` and the current month is greater than `0`, the change is marked `new` instead of using an artificial percentage. Categories that are absent remain displayed as `0`.
 
 ## 2. Methodology
 
@@ -49,7 +66,8 @@ Key findings:
 | Countries affected | 18 (12 direct + 6 via multi-country incidents) |
 | Distinct actors | 31 named sources or actors |
 | Ransomware incidents | 17 (16.5%) |
-| Data leaks / access sales | 43 (41.7%) |
+| Data leaks | 41 (39.8%) |
+| Access sales | 2 (1.9%) |
 | DDoS claims | 43 (41.7%) |
 
 ### Country ranking
@@ -70,9 +88,9 @@ Key findings:
 | **10** | 🇨🇮 Ivory Coast | **1** | █ |
 | **11** | 🇰🇪 Kenya | **1** | █ |
 | **12** | 🇸🇳 Senegal | **1** | █ |
-| **–** | 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
-| **–** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
-| **–** | 🇪🇬 Egypt / 🇱🇾 Libya (Passport scans) | **1** | █ |
+| **-** | 🇰🇪 Kenya / 🇪🇹 Ethiopia / 🇳🇬 Nigeria / 🇿🇼 Zimbabwe (Resume docs) | **1** | █ |
+| **-** | 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigeria / 🇹🇬 Togo / 🇸🇱 Sierra Leone (DHIS2) | **1** | █ |
+| **-** | 🇪🇬 Egypt / 🇱🇾 Libya (Passport scans) | **1** | █ |
 
 > The first 12 rows represent **100 single-country records**. The final 3 rows are multi-country incidents counted once each, bringing the global total to **103**.
 
@@ -96,6 +114,17 @@ pie showData
  "Passport scans (EG/LY)" : 1
 ```
 
+```mermaid
+xychart-beta
+ title "Incident records by country or scope - May 2026"
+ x-axis ["MA", "EG", "ZA", "TN", "NG", "DZ", "TZ", "ET", "GH", "CI", "KE", "SN", "MULTI"]
+ y-axis "Records" 0 --> 55
+ bar [52, 17, 14, 5, 3, 2, 2, 1, 1, 1, 1, 1, 3]
+```
+
+**Country code legend:** `MA` = Morocco | `EG` = Egypt | `ZA` = South Africa | `TN` = Tunisia | `NG` = Nigeria | `DZ` = Algeria | `TZ` = Tanzania | `ET` = Ethiopia | `GH` = Ghana | `CI` = Ivory Coast | `KE` = Kenya | `SN` = Senegal | `MULTI` = 3 multi-country records
+
+
 ### Ransomware distribution (Total: 17)
 
 | Rank | Country | Incidents | Chart |
@@ -108,58 +137,96 @@ pie showData
 | **6** | 🇸🇳 Senegal | **1** | █ |
 | **7** | 🇨🇮 Ivory Coast | **1** | █ |
 
-### Data leaks / access sales distribution (Total: 43)
+### Data Leak distribution (Total: 41)
 
-| Rank | Country | Incidents | Chart |
-| :---: | :--- | :---: | :--- |
-| **1** | 🇿🇦 South Africa | **12** | ████████████ |
-| **2** | 🇪🇬 Egypt | **10** | █████████ |
-| **3** | 🇲🇦 Morocco | **9** | ███████ |
-| **4** | 🇹🇳 Tunisia | **3** | ███ |
-| **5** | 🇩🇿 Algeria | **2** | ██ |
-| **6** | 🇹🇿 Tanzania | **2** | ██ |
-| **7** | 🇪🇹 Ethiopia | **1** | █ |
-| **8** | 🇰🇪 Kenya | **1** | █ |
-| **-** | 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** | █ |
-| **-** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | █ |
-| **-** | 🇪🇬🇱🇾 Passport scans | **1** | █ |
+| Country / record scope | Incidents |
+|---|---:|
+| 🇿🇦 South Africa | **12** |
+| 🇪🇬 Egypt | **10** |
+| 🇲🇦 Morocco | **8** |
+| 🇹🇳 Tunisia | **3** |
+| 🇩🇿 Algeria | **2** |
+| 🇹🇿 Tanzania | **2** |
+| 🇪🇹 Ethiopia | **1** |
+| 🇰🇪 Kenya | **1** |
+| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **1** |
+| 🇪🇬🇱🇾 Passport scans | **1** |
+| **Total** | **41** |
 
-### Ransomware vs. data leaks comparison by country
+### Access Sale distribution (Total: 2)
 
-> This table covers the **60 non-DDoS records** only: 17 ransomware records and 43 data leaks/access sales. DDoS is shown separately below.
+| Country / record scope | Incidents |
+|---|---:|
+| 🇲🇦 Morocco - Spacex.ma | **1** |
+| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** |
+| **Total** | **2** |
 
-| Country / record scope | Ransomware | Data leaks / access sales | Total non-DDoS |
-| :--- | ---: | ---: | ---: |
-| 🇪🇬 Egypt | **7** | **10** | **17** |
-| 🇿🇦 South Africa | **2** | **12** | **14** |
-| 🇲🇦 Morocco | **0** | **9** | **9** |
-| 🇹🇳 Tunisia | **2** | **3** | **5** |
-| 🇳🇬 Nigeria | **3** | **0** | **3** |
-| 🇩🇿 Algeria | **0** | **2** | **2** |
-| 🇹🇿 Tanzania | **0** | **2** | **2** |
-| 🇪🇹 Ethiopia | **0** | **1** | **1** |
-| 🇬🇭 Ghana | **1** | **0** | **1** |
-| 🇨🇮 Ivory Coast | **1** | **0** | **1** |
-| 🇰🇪 Kenya | **0** | **1** | **1** |
-| 🇸🇳 Senegal | **1** | **0** | **1** |
-| 🇰🇪🇪🇹🇳🇬🇿🇼 Resume docs | **0** | **1** | **1** |
-| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **0** | **1** | **1** |
-| 🇪🇬🇱🇾 Passport scans | **0** | **1** | **1** |
-| **Total** | **17** | **43** | **60** |
+### Ransomware vs Data Leak / Access Sale comparison by country
+
+This visual comparison covers the **60 non-DDoS records**: **17 ransomware records** and **43 Data Leak / Access Sale records**. The blue series combines **41 Data Leak incidents and 2 Access Sales** for visual comparison only. Their structured counters remain separate elsewhere in the report.
+
+The **43 DDoS claims are excluded from this comparison** and displayed separately below.
+
+**Visual legend:** 🟧 Ransomware | 🟦 Data Leak / Access Sale | 🟥 DDoS
+
+| Code | Country / scope | Ransomware | Bar | Data Leak / Access Sale | Bar |
+|---|---|---:|---|---:|---|
+| `MA` | Morocco | **0** | - | **9** | 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| `EG` | Egypt | **7** | 🟧🟧🟧🟧🟧🟧🟧 | **10** | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| `ZA` | South Africa | **2** | 🟧🟧 | **12** | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| `TN` | Tunisia | **2** | 🟧🟧 | **3** | 🟦🟦🟦 |
+| `NG` | Nigeria | **3** | 🟧🟧🟧 | **0** | - |
+| `DZ` | Algeria | **0** | - | **2** | 🟦🟦 |
+| `TZ` | Tanzania | **0** | - | **2** | 🟦🟦 |
+| `ET` | Ethiopia | **0** | - | **1** | 🟦 |
+| `GH` | Ghana | **1** | 🟧 | **0** | - |
+| `CI` | Ivory Coast | **1** | 🟧 | **0** | - |
+| `KE` | Kenya | **0** | - | **1** | 🟦 |
+| `SN` | Senegal | **1** | 🟧 | **0** | - |
+| `MULTI` | Multi-country records | **0** | - | **3** | 🟦🟦🟦 |
+|  | **Compared total** | **17** |  | **43** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Data Leak / Access Sale by country - May 2026"
+    x-axis ["MA", "EG", "ZA", "TN", "NG", "DZ", "TZ", "ET", "GH", "CI", "KE", "SN", "MULTI"]
+    y-axis "Incidents" 0 --> 13
+    bar [0, 7, 2, 2, 3, 0, 0, 0, 1, 1, 0, 1, 0]
+    bar [9, 10, 12, 3, 0, 2, 2, 1, 0, 0, 1, 0, 3]
+```
+
+**Series legend:** first bar series = 🟧 Ransomware | second bar series = 🟦 Data Leak / Access Sale.
+
+**Country legend:** `MA` = Morocco | `EG` = Egypt | `ZA` = South Africa | `TN` = Tunisia | `NG` = Nigeria | `DZ` = Algeria | `TZ` = Tanzania | `ET` = Ethiopia | `GH` = Ghana | `CI` = Ivory Coast | `KE` = Kenya | `SN` = Senegal | `MULTI` = 3 multi-country records.
 
 ```mermaid
 pie showData
- title Ransomware vs data leaks/access sales - May 2026
- "Data leaks and access sales" : 43
+ title Incident type distribution - May 2026
  "Ransomware" : 17
+ "Data Leak" : 41
+ "Access Sale" : 2
+ "DDoS" : 43
 ```
+
+**Color convention used in comparative views:** 🟧 Ransomware | 🟦 Data Leak / Access Sale | 🟥 DDoS.
+
 
 ### DDoS distribution
 
-| Country | DDoS incidents |
-|---|---:|
-| 🇲🇦 Morocco | **43** |
-| **Total** | **43** |
+| Code | Country | DDoS | Bar |
+|---|---|---:|---|
+| `MA` | Morocco | **43** | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 |
+|  | **Total** | **43** | |
+
+```mermaid
+xychart-beta
+    title "DDoS claims by country - May 2026"
+    x-axis ["MA"]
+    y-axis "DDoS claims" 0 --> 45
+    bar [43]
+```
+
+**DDoS legend:** 🟥 DDoS | `MA` = Morocco.
 
 The 43 DDoS entries are retrospective Keymous+ target-date observations involving Moroccan targets. They remain actor-side availability claims: the documented checks do not independently establish traffic origin, technique, duration, or successful impact.
 
@@ -202,26 +269,14 @@ The source cards use two additional government labels (`Government / Diplomacy` 
 | **Total** | **103** | **100%** |
 
 ```mermaid
-pie showData
- title Sector distribution - May 2026
- "Government / Administration" : 51
- "Finance / Banking" : 8
- "Transport / Logistics" : 7
- "Human Resources / Recruitment" : 5
- "Industry / Automotive / Manufacturing" : 5
- "Technology / Hosting" : 5
- "E-commerce / Retail" : 4
- "Education / University" : 3
- "Telecommunications" : 3
- "Oil & Energy" : 2
- "Food / Beverage / Restaurants" : 2
- "NGO / Social Welfare" : 2
- "Hospitality / Events" : 2
- "Healthcare / Medical" : 1
- "Sports / Federations" : 1
- "Personal Data Aggregation" : 1
- "Business Services" : 1
+xychart-beta
+ title "Incident records by normalized sector - May 2026"
+ x-axis ["GOV", "FIN", "TRA", "HUM", "IND", "TEC", "ECO", "EDU", "TEL", "OIL", "FOO", "NGO", "HOS", "HEA", "SPO", "PER", "BUS"]
+ y-axis "Records" 0 --> 55
+ bar [51, 8, 7, 5, 5, 5, 4, 3, 3, 2, 2, 2, 2, 1, 1, 1, 1]
 ```
+
+**Sector code legend:** `GOV` = Government / Administration | `FIN` = Finance / Banking | `TRA` = Transport / Logistics | `HUM` = Human Resources / Recruitment | `IND` = Industry / Automotive / Manufacturing | `TEC` = Technology / Hosting | `ECO` = E-commerce / Retail | `EDU` = Education / University | `TEL` = Telecommunications | `OIL` = Oil & Energy | `FOO` = Food / Beverage / Restaurants | `NGO` = NGO / Social Welfare | `HOS` = Hospitality / Events | `HEA` = Healthcare / Medical | `SPO` = Sports / Federations | `PER` = Personal Data Aggregation | `BUS` = Business Services
 
 ### Most prolific threat actors and groups
 
@@ -258,7 +313,7 @@ pie showData
 > **For details of each incident, see [`victims.md`](./victims.md).**
 
 - **Concentration:** Egypt (17), South Africa (14), Morocco (52) and Tunisia (5) account for 88 of 103 incidents, or 85.4% of the month.
-- **Threat mix:** 17 ransomware claims or publications, 43 data leaks or access sales and 43 DDoS claims were recorded. The incidents concern 18 African countries: 12 directly and 6 additional countries through multi-country exposure.
+- **Threat mix:** 17 ransomware claims or publications, 41 data leaks, 2 access sales and 43 DDoS claims were recorded. The incidents concern 18 African countries: 12 directly and 6 additional countries through multi-country exposure.
 - **Campaign activity:** Egyptian education entities faced several large claims, while OpSouthAfrica targeted public institutions and Databasehooligan appeared across four countries.
 - **High-impact exposures:** notable cases involved Tanzanian police webmail accounts and the AuditTeam claim concerning the Trésor Public du Sénégal.
 
@@ -280,7 +335,7 @@ pie showData
 
 **Observations:** NightSpire put out three Egyptian victim listings this month. TheGentlemen spread widest geographically, claims in four countries. Stormous claimed the Consumer Goods Council of South Africa (CGCSA), which had been miscounted as a non-ransomware data leak, now reclassified as a ransomware listing. For the Trésor Public du Sénégal, the analysed files back the data-exposure claim, but they don't independently confirm ransomware deployment, encryption or the full intrusion sequence.
 
-### 4.2 Data leaks & access sales (43 incidents)
+### 4.2 Data leaks and access sales - structured split: 41 Data Leak + 2 Access Sale
 
 | Rank | Country | Incidents | Main actors |
 | :---: | :--- | :---: | :--- |
@@ -361,6 +416,19 @@ The retrospective Keymous+ collection adds 43 Moroccan target-date observations 
 - **Kampuchean** (Tanzania Police webmail)
 - **JBT2026** (Watiqa.ma Morocco civil registry)
 
+
+```mermaid
+xychart-beta
+ title "Repeated actor or group labels - May 2026"
+ x-axis ["KEY+", "DAT", "404", "THE", "NIG", "INT", "KEY", "N404", "NPH", "ANI", "CC5"]
+ y-axis "Records" 0 --> 50
+ bar [46, 8, 5, 4, 3, 2, 2, 2, 2, 2, 2]
+```
+
+**Actor/group code legend:** `KEY+` = Keymous+ | `DAT` = Databasehooligan | `404` = 404Crew Cyber Team | `THE` = TheGentlemen | `NIG` = NightSpire | `INT` = INT3X | `KEY` = Keymous | `N404` = NullSec Nigeria x 404Crew Cyber Team x Infernalis | `NPH` = NullSec Nigeria x NullSec Philippines | `ANI` = anisanas2 | `CC5` = cc5ab
+
+> Provenance annotations are normalized for this chart. Coalition labels remain distinct, and Keymous is not merged with Keymous+.
+
 ### 6.1 Risk assessment
 
 | Country | Risk level |
@@ -389,6 +457,17 @@ The retrospective Keymous+ collection adds 43 Moroccan target-date observations 
 ---
 
 
+
+```mermaid
+xychart-beta
+ title "Documented incidents - March to May 2026"
+ x-axis ["MAR", "APR", "MAY"]
+ y-axis "Incidents" 0 --> 110
+ bar [41, 69, 103]
+```
+
+**Time legend:** `MAR` = March 2026 | `APR` = April 2026 | `MAY` = May 2026.
+
 ### Factual comparison with April 2026
 
 This comparison uses the monthly victim and incident data for [April](../04-april/victims.md) and [May](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises.
@@ -397,7 +476,7 @@ This comparison uses the monthly victim and incident data for [April](../04-apri
 | :--- | ---: | ---: | :--- |
 | Documented incidents | 69 | 103 | **+34 (+49.3%)** |
 | Ransomware | 20 | 17 | **-3 (-15.0%)** |
-| Data leaks / access sales | 40 | 43 | **+3 (+7.5%)** |
+| Data leaks + access sales | 40 | **43 (41 + 2)** | **+3 (+7.5%)** |
 | DDoS claims | 9 | 43 | **+34 (+377.8%)** |
 
 The month-on-month variation reflects changes in AFRINTEL's collected public record. It may depend on publication timing, retrospective collection, multi-country counting rules, reposts or monitoring coverage, and should not be read as a confirmed change in the true number of compromises.
@@ -443,7 +522,11 @@ The month-on-month variation reflects changes in AFRINTEL's collected public rec
 
 ## 12. Conclusion
 
-May closed at **103 publicly reported or claimed incidents**, up from 69 in April (**+49.3%**): **17 ransomware records**, **43 data leaks/access sales**, and **43 DDoS claims**. Morocco accounted for **52 records**, followed by Egypt (17), South Africa (14), and Tunisia (5). Those four countries represent **88 of the 100 single-country records**. The month is marked by repeated education-sector claims in Egypt, OpSouthAfrica publications, Databasehooligan dataset sales across four countries, and a large retrospective corpus of Moroccan DDoS claims.
+May closed at **103 publicly reported or claimed incidents**, up from 69 in April (**+49.3%**): **17 ransomware records, 41 data leaks, 2 access sales and 43 DDoS claims**.
+
+Morocco accounted for **52 records**, followed by Egypt (17), South Africa (14) and Tunisia (5). Together, these four countries represent **85.4% of the complete May corpus**.
+
+The month shows a threat landscape extending beyond ransomware, combining availability attacks, data publication, credential exposure and access brokerage. For AFRINTEL, keeping incident type, actor claim, available evidence and confidence level separate remains essential for reproducible monthly analysis.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)

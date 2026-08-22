@@ -3,8 +3,15 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in January 2025 (16 victims)
+# List of African cyberattack victims in January 2025 (17 victims)
 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **8 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, the English `victims.md` version is synchronized with the same facts, classifications and structured values.
+
 ## January 2025
 
 ### 06 January 2025
@@ -13,6 +20,7 @@
 - **Sector:** Healthcare (Dental)
 - **Website:** https://molars.co.ke
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Analysis:** AFRINTEL reviewed the supplied workbook and eight additional evidence files. The workbook contains salary-structure material and separate sheets for doctors, accounts, HR, operations, dental officers, credit control, ICT, medical engineers, dental technicians, customer care, nurses, support staff, technical staff, procurement, graphics and marketing. The evidence also includes a bank-payment screenshot and documents consistent with payroll or staff administration. This supports a published sample assessment and indicates potential exposure of employee compensation, departmental structures, internal operations and financial-processing information. The claimed 19 GB volume remains unverified, as does the initial access vector and the completeness of the dataset. AFRINTEL does not reproduce employee names, salaries, bank details or other personal data.
@@ -24,6 +32,7 @@
 - **Sector:** Public Administrations / Finance / Public Procurement.
 - **Website:** gags.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** GAGS is the regulatory authority for government services in Egypt. It oversees tender procedures, state inventory management, and disposal of public assets.
@@ -35,6 +44,7 @@
 - **Sector:** Retail / Mass Distribution.
 - **Website:** pnp.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** **Pick n Pay Group Ltd** is the second largest food retailer in South Africa.
 
 ### 11 January 2025
@@ -43,6 +53,7 @@
 - **Sector:** Technology / Digital Marketing / SEO.
 - **Website:** seocommarrakech.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SEOCOM is a Moroccan agency providing SEO (Search Engine Optimization), advertising campaign management (SEA), and web development services for local and international companies.
 
 ### 14 January 2025
@@ -51,6 +62,7 @@
 - **Sector:** Oil & Gas Logistics / Port Services.
 - **Website:** intelservices.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Intels is a pillar of the Nigerian economy, managing 90% of offshore oil exploration support activities. The group claims to have exfiltrated approximately 1.5 TB of sensitive data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 
 ### 14 January 2025
@@ -59,7 +71,10 @@
 - **Sector:** Hospitality / Tourism.
 - **Website:** sharmreefhotel.com / sharmelsheikh.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Sharm Reef Hotel is a 4-star resort located on the Um El Sid plateau in Sharm El Sheikh, Egypt.
+---
+
 
 ### 15 January 2025
 #### 🇪🇬 Egypt - Misr Technology Services (MTS / mts.gov.eg)
@@ -67,17 +82,31 @@
 - **Sector:** Public Administrations
 - **Website:** mts.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** Misr Technology Services (MTS) is the Egyptian government entity responsible for developing and managing the national trade facilitation platform, including the Nafeza system.
 - **Analysis:** AFRINTEL reviewed a local set of screenshots and system-generated PDF captures consistent with the claim made by the threat actor funksec, produced by internal systems of the Maritime Transport and Logistics Sector, including the Egyptian Maritime Data Bank. The reviewed material includes an individual permit-application record naming an applicant, an affiliated shipping agency and a submission date; a port-traffic comparison report listing vessel-call statistics by port for 2023 and 2024; a list of port investment projects and opportunities; and detailed sector payment-collection reports covering several date ranges between January and April 2024, listing client names, transaction types, reference numbers and payment amounts collected through the sector's point-of-sale channel. Two of the reviewed documents carry a system print timestamp of 14 and 15 January 2025, consistent with the claim's publication date. The presence of internally generated, dated reports bearing named applicants and clients, combined with the platform's own letterhead and print metadata, supports a high confidence assessment of genuine access to MTS's internal reporting systems. Given MTS's role in managing Egypt's national trade-facilitation platform, including the Nafeza system, this incident presents a risk to shipping-agency personnel, client financial records and the confidentiality of national trade-facilitation operations. AFRINTEL does not reproduce any applicant name, client name, financial figure or document reference from the reviewed material.
-
+---
+### 16 January 2025
+#### 🇿🇦 South Africa - North-West University (NWU)
+- **Actor / Group:** SevenZeroDay404
+- **Sector:** Education / University
+- **Website:** [nwu.ac.za](https://www.nwu.ac.za/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** North-West University (NWU) is a South African higher education institution. The `nwu.ac.za` domain and the visual identity used in the actor's publication correspond to this university, which is explicitly presented as the victim in the claim.
+- **Analysis:** On 16 January 2025, SevenZeroDay404 published an entry titled **"29K NWU Student Database"** on an underground forum, accompanied by the North-West University logo and a dataset presented as a student database. The actor claims approximately **29,000 records**. The provided file contains names, academic results expressed as GPA values, university programmes and study years. Examination of the content identified **2,893 occurrences of structured GPA values**, which cannot automatically be treated as 2,893 distinct students. The claimed volume of 29,000 records therefore cannot be validated from this sample. Attribution of the dataset to `nwu.ac.za` remains uncertain: no explicit marker such as the `nwu.ac.za` domain, a reference to South Africa or a North-West University campus was identified in the provided data. The naming of several academic programmes and the use of a 4.00 grading system also show similarities with another university using the NWU acronym. These elements are not sufficient to reattribute the claim, but they prevent confirmation that the sample actually originates from North-West University's systems in South Africa. The available evidence therefore establishes **North-West University in South Africa as the victim claimed by SevenZeroDay404**, without independently confirming the origin of the dataset, the completeness of the claimed 29,000 records or an actual compromise of the university's systems. If authentic, the exposed data could facilitate targeted phishing and identity impersonation attempts against students or former students.
+---
 ### 21 January 2025
 #### 🇩🇿 Algeria - Barika University Center (cu-barika.dz)
 - **Ransomware Group:** funksec
 - **Sector:** Education / Higher Education / Research.
 - **Website:** cu-barika.dz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Barika University Center (Ahmed Ben Abderrezak El Hamouda) is a higher education hub located in the wilaya of Batna, offering programs in technological sciences, law, and humanities.
 
 ### 21 January 2025
@@ -86,6 +115,7 @@
 - **Sector:** Healthcare
 - **Website:** inayaclinic.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Inaya Clinic is a multidisciplinary medical facility in Algeria, renowned for its centers of excellence in cardiology, cardiovascular surgery, and obstetrics-gynecology.
 
 ### 24 January 2025
@@ -94,6 +124,7 @@
 - **Sector:** Public Administrations / Water Resources / Agriculture.
 - **Website:** lnrbda.gov.ng
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** LNRBDA is a strategic agency under the supervision of the Nigerian Federal Ministry of Water Resources. It manages dam projects, irrigation, drinking water supply, and rural development.
@@ -105,6 +136,7 @@
 - **Sector:** Education / Higher Education / Research.
 - **Website:** usmba.ac.ma
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** USMBA is a multidisciplinary university comprising numerous institutions (Faculties of Medicine, Science, Letters, ENCG, ENSA, etc.).
@@ -116,6 +148,7 @@
 - **Sector:** Education / Scientific Research / Academic Publishing.
 - **Website:** achieverssciencejournal.org
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** AJSR is a multidisciplinary peer-reviewed journal that publishes original research in the fields of applied sciences, engineering, and technology.
@@ -127,6 +160,7 @@
 - **Sector:** Education / Higher Education / Educational Research.
 - **Website:** fgse.cu.edu.eg
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The FGSE (Faculty of Graduate Studies for Education) is one of the oldest and most respected research institutions in Egypt.
 
 ### 27 January 2025
@@ -135,6 +169,7 @@
 - **Sector:** Consulting Services / Bulk SMS & Broadcast Messaging
 - **Website:** qed.co.ug
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** QED is a leading Ugandan firm specializing in Monitoring, Evaluation and Learning (MEL). It supports projects funded by international organizations in the health, education, and governance sectors, and operates a bulk-SMS and broadcast messaging platform used for stakeholder outreach on behalf of client organizations.
@@ -146,6 +181,7 @@
 - **Sector:** HR Services / Recruitment
 - **Website:** workers.com.zm
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** Zambian recruitment and temporary work services company.
@@ -157,4 +193,5 @@
 - **Sector:** Education / Higher Education
 - **Website:** zetech.ac.ke
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Zetech University is a leading higher education institution in Kenya.

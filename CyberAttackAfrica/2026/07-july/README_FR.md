@@ -28,9 +28,26 @@ La solidité des preuves varie fortement : **21 observations relèvent de revend
 
 Les priorités défensives sont la protection des comptes privilégiés et des messageries, la détection des exports massifs de bases et la prise en charge rapide des expositions de données d’identité, de santé, d’éducation et d’administration. Les données détaillées sur les victimes et incidents sont disponibles dans [`victims_FR.md`](./victims_FR.md).
 
+
+### 1.1 Comparaison avec le mois précédent
+
+> Comparaison fondée sur les corpus mensuels AFRINTEL validés. Une variation du nombre de fiches documentées ne prouve pas, à elle seule, une variation du nombre réel de compromissions.
+
+| Indicateur | Juin 2026 | Juillet 2026 | Évolution observée |
+|---|---:|---:|---:|
+| Total incidents | 40 | 42 | **+2 (+5,0 %)** |
+| Ransomware | 20 | 18 | **-2 (-10,0 %)** |
+| Data Leak | 18 | 18 | **0 (+0,0 %)** |
+| Access Sale | 2 | 6 | **+4 (+200,0 %)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+> Règle de lecture : si la valeur du mois précédent est `0` et celle du mois courant est supérieure à `0`, l'évolution est indiquée comme `nouveau` plutôt qu'avec un pourcentage artificiel. Les catégories absentes restent affichées à `0`.
+
 ## 2. Périmètre et méthode
 
-Tous les chiffres de cette version française sont dérivés de [`victims_FR.md`](./victims_FR.md), source de vérité du rapport français. La version anglaise applique la même méthode à partir de [`victims.md`](./victims.md).
+Tous les chiffres sont calculés une seule fois à partir du couple bilingue validé [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md). Après synchronisation, ce couple constitue la source de vérité des deux versions ; les statistiques ne sont pas recalculées séparément par langue.
 
 - **Périmètre géographique :** les 54 pays africains ; seules les victimes, opérations ou données ayant un lien africain explicite sont incluses.
 - **Période de collecte :** du 1er au 31 juillet 2026, selon la date de détection AFRINTEL inscrite pour chaque incident.
@@ -87,7 +104,7 @@ pie showData
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Occurrences géographiques par pays - juillet 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
@@ -97,31 +114,48 @@ xychart
 Légende : EG = Égypte, TN = Tunisie, MA = Maroc, ZA = Afrique du Sud, NG = Nigeria, DZ = Algérie, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroun, KE = Kenya, SS = Soudan du Sud
 
 
-### Comparaison ransomware et fuites de données par pays
+### Comparaison Ransomware et Fuite de données / Vente d'accès par pays
 
-| Pays | Ransomware | Fuites de données / ventes d'accès | Total | Répartition |
-|---|---:|---:|---:|---|
-| 🇿🇦 Afrique du Sud | 5 | 1 | 6 | 🟧🟧🟧🟧🟧 🟦 |
-| 🇪🇬 Égypte | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇲🇦 Maroc | 2 | 4 | 6 | 🟧🟧 🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
-| 🇨🇮 Côte d'Ivoire | 2 | 1 | 3 | 🟧🟧 🟦 |
-| 🇬🇭 Ghana | 1 | 1 | 2 | 🟧 🟦 |
-| 🇨🇲 Cameroun | 1 | 0 | 1 | 🟧 |
-| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
-| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
-| 🇸🇸 Soudan du Sud | 1 | 0 | 1 | 🟧 |
-| 🇹🇳 Tunisie | 0 | 7 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇩🇿 Algérie | 0 | 4 | 4 | 🟦🟦🟦🟦 |
-| **Total** | **18** | **25** | **43** | *🟧 Ransomware \| 🟦 Fuites et ventes d'accès* |
+Cette comparaison géographique contient **43 occurrences pays** : **18 occurrences ransomware** et **25 occurrences Fuite de données / Vente d'accès**. Le total bleu est supérieur aux **24 incidents uniques Data Leak / Access Sale** car une fiche Data Leak concerne à la fois le Nigeria et la Côte d'Ivoire et est comptée une fois dans chacun de ces deux pays.
 
-Les 25 occurrences de fuites et de ventes d'accès incluent l'allocation géographique supplémentaire de l'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivoire.
+**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès
+
+| Code | Pays | Ransomware | Barre | Fuite / vente d'accès | Barre |
+|---|---|---:|---|---:|---|
+| `ZA` | Afrique du Sud | **5** | 🟧🟧🟧🟧🟧 | **1** | 🟦 |
+| `EG` | Égypte | **2** | 🟧🟧 | **5** | 🟦🟦🟦🟦🟦 |
+| `MA` | Maroc | **2** | 🟧🟧 | **4** | 🟦🟦🟦🟦 |
+| `NG` | Nigeria | **2** | 🟧🟧 | **2** | 🟦🟦 |
+| `CI` | Côte d'Ivoire | **2** | 🟧🟧 | **1** | 🟦 |
+| `GH` | Ghana | **1** | 🟧 | **1** | 🟦 |
+| `CM` | Cameroun | **1** | 🟧 | **0** | - |
+| `BW` | Botswana | **1** | 🟧 | **0** | - |
+| `KE` | Kenya | **1** | 🟧 | **0** | - |
+| `SS` | Soudan du Sud | **1** | 🟧 | **0** | - |
+| `TN` | Tunisie | **0** | - | **7** | 🟦🟦🟦🟦🟦🟦🟦 |
+| `DZ` | Algérie | **0** | - | **4** | 🟦🟦🟦🟦 |
+|  | **Total géographique** | **18** |  | **25** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Fuite de données / Vente d'accès par pays - Juillet 2026"
+    x-axis ["ZA", "EG", "MA", "NG", "CI", "GH", "CM", "BW", "KE", "SS", "TN", "DZ"]
+    y-axis "Occurrences" 0 --> 8
+    bar [5, 2, 2, 2, 2, 1, 1, 1, 1, 1, 0, 0]
+    bar [1, 5, 4, 2, 1, 1, 0, 0, 0, 0, 7, 4]
+```
+
+**Légende des séries :** première série = 🟧 Ransomware | deuxième série = 🟦 Fuite de données / Vente d'accès.
+
+**Légende pays :** `ZA` = Afrique du Sud | `EG` = Égypte | `MA` = Maroc | `NG` = Nigeria | `CI` = Côte d'Ivoire | `GH` = Ghana | `CM` = Cameroun | `BW` = Botswana | `KE` = Kenya | `SS` = Soudan du Sud | `TN` = Tunisie | `DZ` = Algérie
+
+> Le total analytique reste de **42 incidents uniques** : 18 Ransomware, 18 Data Leak et 6 Access Sale. Le total géographique est de 43 car la fiche relative aux documents d'identité Nigeria / Côte d'Ivoire contribue une occurrence dans chacun des deux pays.
 
 ### Ransomware par pays
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Ransomware par pays - juillet 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
@@ -147,7 +181,7 @@ Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CI = Cô
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Répartition géographique des fuites et ventes d'accès - juillet 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
@@ -171,7 +205,7 @@ L'observation relative aux documents d'identité du Nigeria et de la Côte d'Ivo
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Occurrences géographiques par région - juillet 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est"]
     y-axis "Occurrences" 0 --> 26
@@ -195,6 +229,8 @@ pie showData
     "Fuites de données" : 18
     "Ventes d'accès" : 6
 ```
+
+**Convention couleur :** 🟧 Ransomware | 🟦 Fuite de données | 🟪 Vente d'accès.
 
 ### 4.1 Ransomware
 
@@ -243,14 +279,14 @@ La Tunisie domine cette vue avec sept occurrences, devant l’Égypte avec cinq,
 | **Total** | **42** | **100 %** |  |
 
 ```mermaid
-xychart
-    title "Secteurs les plus représentés - juillet 2026"
-    x-axis ["Gouv","Tél","Sant","Ing","Éduc","Commerce","Énergie"]
+xychart-beta
+    title "Incidents par secteur normalisé - Juillet 2026"
+    x-axis ["GOV", "TEL", "HEA", "ENG", "EDU", "ECO", "OIL", "INV", "FIN", "TRA", "REA", "MIN", "ACC", "TRV", "CHE", "SEC", "GAM", "RUB", "TEC"]
     y-axis "Incidents" 0 --> 12
-    bar [11,4,4,3,3,3,2]
+    bar [11, 4, 4, 3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
-Légende : Gouv = Gouvernement / Administration ; Tél = Télécommunications ; Ing = Ingénierie / Construction ; Éduc = Éducation / Université ; Commerce = E-commerce / Distribution.
+**Légende codes secteurs :** `GOV` = Gouvernement / Administration | `TEL` = Télécommunications | `HEA` = Santé / Médical | `ENG` = Ingénierie / Construction | `EDU` = Éducation / Université | `ECO` = E-commerce / Retail | `OIL` = Pétrole / Énergie | `INV` = Holding d'investissement / Énergie | `FIN` = Finance / Banque | `TRA` = Transport / Logistique | `REA` = Immobilier | `MIN` = Mines | `ACC` = Comptabilité / Audit | `TRV` = Voyage / Événementiel | `CHE` = Industrie chimique | `SEC` = Services de sécurité | `GAM` = Jeux / Divertissement | `RUB` = Caoutchouc / Agriculture | `TEC` = Technologie / IT
 
 Les administrations restent le premier ensemble sectoriel. Les incidents concernent notamment des systèmes liés aux marchés publics, à la justice, à l’emploi, à l’identité, au foncier et aux services publics. Cette concentration augmente le risque de fraude documentaire, d’usurpation et d’ingénierie sociale ciblée.
 
@@ -269,12 +305,14 @@ Les administrations restent le premier ensemble sectoriel. Les incidents concern
 
 
 ```mermaid
-xychart
-    title "Acteurs et sources les plus présents - juillet 2026"
-    x-axis ["arcusmedia","dragonforce","CrowStealer","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","GreYyM3terr"]
+xychart-beta
+    title "Libellés acteurs ou groupes les plus représentés - Juillet 2026"
+    x-axis ["ARC", "DRA", "CRO", "KRY", "BIG", "THE", "PHA", "GRE"]
     y-axis "Incidents" 0 --> 5
-    bar [4,3,2,2,2,2,2,2]
+    bar [4, 3, 2, 2, 2, 2, 2, 2]
 ```
+
+**Légende codes acteurs/groupes :** `ARC` = arcusmedia | `DRA` = dragonforce | `CRO` = CrowStealer | `KRY` = krybit | `BIG` = BIGBROTHER | `THE` = TheGentlemen | `PHA` = Phantom Atlas | `GRE` = GreYyM3terr
 
 Vingt-trois autres acteurs ou comptes sources nommés apparaissent une fois chacun. Ils ne sont pas agrégés dans le graphique, car une barre résiduelle masquerait le classement comparatif. La fréquence d’un nom ne suffit pas à établir une campagne coordonnée.
 
@@ -343,6 +381,16 @@ Cette comparaison repose sur les données mensuelles relatives aux victimes et i
 | Acteur le plus présent | anisanas2, 7 incidents | arcusmedia, 4 incidents | Concentration mensuelle plus faible en juillet |
 
 La hausse nette de deux incidents documentés en juillet correspond à quatre ventes d'accès supplémentaires, tandis que le ransomware recule de deux incidents et que les fuites restent stables. La couverture géographique n'est pas directement comparable au volume global : en juin, deux offres multi-pays généraient 15 expositions pays ; en juillet, une seule observation couvre deux pays.
+
+```mermaid
+xychart-beta
+    title "Incidents documentés - Juin vs Juillet 2026"
+    x-axis ["JUN", "JUL"]
+    y-axis "Incidents" 0 --> 45
+    bar [40, 42]
+```
+
+**Légende temporelle :** `JUN` = Juin 2026 | `JUL` = Juillet 2026.
 
 ### Lacunes de renseignement
 

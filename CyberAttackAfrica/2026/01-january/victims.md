@@ -9,7 +9,7 @@
 
 ## Monthly snapshot
 
-January 2026 includes **22 unique incidents**: **17 ransomware incidents**, **3 data leaks**, **1 access sale**, and **1 coordinated defacement** across **12 African countries**.
+January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 data leaks**, **1 access sale**, and **1 coordinated defacement** across **12 African countries**.
 
 ### Notable incidents
 

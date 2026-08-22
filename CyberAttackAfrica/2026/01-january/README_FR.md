@@ -12,7 +12,7 @@
 
 Janvier 2026 a rapporté **21 incidents cyber** contre des cibles africaines, revendiqués ou détectés dans le mois. Le ransomware a mené la danse, avec deux groupes actifs au-delà des frontières, aux côtés de deux fuites de données, une vente d'accès et un défacement gouvernemental coordonné. Points clés :
 
-- **17 revendications ransomware (81,0 %)**, **2 fuites de données (9,5 %)**, **1 vente d’accès (4,8 %)** et **1 défacement (4,8 %)**.
+- **17 revendications ransomware (81,0 %)**, **2 fuites de données (9,5 %)**, **1 vente d'accès (4,8 %)** et **1 défacement (4,8 %)**.
 - **12 pays** touchés : **l'Afrique du Sud** (4 incidents) et le **Kenya** (4) sont les plus ciblés, suivis de l'**Égypte** (3).
 - **11 acteurs identifiés** et **1 défacement non attribué** : **TheGentlemen** (6 fiches) et **tengu** (5) regroupent 11 fiches dans 7 pays distincts.
 - Les secteurs gouvernemental, financier et des transports représentent la majorité des victimes.
@@ -33,6 +33,8 @@ Janvier 2026 a rapporté **21 incidents cyber** contre des cibles africaines, re
   - *Fuite de données / intrusion* : exfiltration non chiffrée, base de données vendue ou publiée.
   - *Vente d'accès* : vente d'identifiants compromis ou d'accès à des systèmes par un Initial Access Broker (IAB).
   - *Défacement* : modification visuelle de sites web, souvent à des fins politiques ou idéologiques.
+
+Toutes les statistiques de ce rapport sont calculées une seule fois à partir du couple bilingue validé [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md). Après synchronisation, ce couple constitue la source de vérité des deux versions ; les chiffres ne sont pas recalculés séparément par langue.
 
 ## 3. Vue d'ensemble
 
@@ -77,6 +79,17 @@ pie
  "Tunisie (1)" : 1
 ```
 
+```mermaid
+xychart-beta
+    title "Fiches incidents par pays - Janvier 2026"
+    x-axis ["ZA", "KE", "EG", "MA", "TG", "NE", "SN", "MZ", "TZ", "MU", "DZ", "TN"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 4, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Légende codes pays :** `ZA` = Afrique du Sud | `KE` = Kenya | `EG` = Égypte | `MA` = Maroc | `TG` = Togo | `NE` = Niger | `SN` = Sénégal | `MZ` = Mozambique | `TZ` = Tanzanie | `MU` = Maurice | `DZ` = Algérie | `TN` = Tunisie
+
+
 **Type d'incident par pays :**
 | Pays | Ransomware | Fuite de données | Vente d'accès | Défacement |
 |------|:----------:|:----------------:|:-------------:|:----------:|
@@ -94,13 +107,51 @@ pie
 | Tunisie | 1 | 0 | 0 | 0 |
 
 ```mermaid
-pie
- title Repartition par type d incident - janvier 2026
- "Ransomware (17)" : 17
- "Fuite de donnees (2)" : 2
- "Vente d acces (1)" : 1
- "Defacement (1)" : 1
+pie showData
+    title Répartition par type d'incident - Janvier 2026
+    "Ransomware" : 17
+    "Fuite de données" : 2
+    "Vente d'accès" : 1
+    "Défacement" : 1
 ```
+
+**Convention couleur :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès | 🟨 Défacement.
+
+### Comparaison Ransomware et Fuite de données / Vente d'accès par pays
+
+Cette comparaison couvre **20 des 21 incidents de janvier** : **17 ransomware** et **3 incidents Fuite de données / Vente d'accès**. L'événement du Niger est exclu car il est classé séparément en **Défacement**.
+
+**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès | 🟨 Défacement
+
+| Code | Pays | Ransomware | Barre | Fuite / vente d'accès | Barre |
+|---|---|---:|---|---:|---|
+| `ZA` | Afrique du Sud | **4** | 🟧🟧🟧🟧 | **0** | - |
+| `KE` | Kenya | **4** | 🟧🟧🟧🟧 | **0** | - |
+| `EG` | Égypte | **3** | 🟧🟧🟧 | **0** | - |
+| `MA` | Maroc | **1** | 🟧 | **1** | 🟦 |
+| `TG` | Togo | **0** | - | **1** | 🟦 |
+| `SN` | Sénégal | **0** | - | **1** | 🟦 |
+| `MZ` | Mozambique | **1** | 🟧 | **0** | - |
+| `TZ` | Tanzanie | **1** | 🟧 | **0** | - |
+| `MU` | Maurice | **1** | 🟧 | **0** | - |
+| `DZ` | Algérie | **1** | 🟧 | **0** | - |
+| `TN` | Tunisie | **1** | 🟧 | **0** | - |
+|  | **Total comparé** | **17** |  | **3** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Fuite de données / Vente d'accès par pays - Janvier 2026"
+    x-axis ["ZA", "KE", "EG", "MA", "TG", "SN", "MZ", "TZ", "MU", "DZ", "TN"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 4, 3, 1, 0, 0, 1, 1, 1, 1, 1]
+    bar [0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
+```
+
+**Légende des séries :** première série = 🟧 Ransomware | deuxième série = 🟦 Fuite de données / Vente d'accès.
+
+**Légende pays :** `ZA` = Afrique du Sud | `KE` = Kenya | `EG` = Égypte | `MA` = Maroc | `TG` = Togo | `NE` = Niger | `SN` = Sénégal | `MZ` = Mozambique | `TZ` = Tanzanie | `MU` = Maurice | `DZ` = Algérie | `TN` = Tunisie
+
+> 🟨 `NE` = Niger : **1 incident de Défacement**, présenté séparément et exclu du comparatif des 20 incidents.
 
 **Acteurs les plus prolifiques :**
 | Acteur | Type | Incidents | Pays ciblés |
@@ -119,12 +170,14 @@ pie
 | Non revendiqué | Défacement | 1 | Niger |
 
 ```mermaid
-pie
- title Acteurs les plus actifs - janvier 2026
- "TheGentlemen (6)" : 6
- "tengu (5)" : 5
- "Autres - 1 chacun (10)" : 10
+xychart-beta
+    title "Libellés acteurs ou groupes - Janvier 2026"
+    x-axis ["THE", "TEN", "BLA", "VEC", "QIL", "DEV", "DIR", "BEN", "SKR", "BRE", "BIG", "UNC"]
+    y-axis "Incidents" 0 --> 7
+    bar [6, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
+
+**Légende codes acteurs/groupes :** `THE` = TheGentlemen | `TEN` = tengu | `BLA` = blackshrantac | `VEC` = vect | `QIL` = qilin | `DEV` = devman | `DIR` = direwolf | `BEN` = benzona | `SKR` = skra1a | `BRE` = breach3d | `BIG` = Bigbrother | `UNC` = Non revendiqué / Unclaimed
 
 ## 4. Synthèse géographique
 
@@ -139,10 +192,10 @@ pie
 
 ## 5. Analyse détaillée par type d'incident
 
-### 5.1 Ransomware et ventes d'accès (18 revendications)
+### 5.1 Ransomware - 17 incidents
 
-| Pays | Attaques | Acteurs principaux |
-|------|:--------:|-------------------|
+| Pays | Incidents | Acteurs / Groupes principaux |
+|---|---:|---|
 | Afrique du Sud | 4 | TheGentlemen (3), vect (1) |
 | Kenya | 4 | TheGentlemen, devman, blackshrantac, tengu |
 | Égypte | 3 | TheGentlemen, direwolf, tengu |
@@ -152,25 +205,30 @@ pie
 | Maurice | 1 | TheGentlemen |
 | Algérie | 1 | tengu |
 | Tunisie | 1 | tengu |
-| Togo | 1 | Bigbrother (IAB, vente d'accès) |
+| **Total** | **17** | |
 
-**Observations clés :**
-- **TheGentlemen** et **tengu** totalisent à eux deux 11 des 21 fiches (52 %) dans 7 pays distincts. Rien dans les sources de janvier ne relie pourtant les deux groupes entre eux.
-- Le 20 janvier a été la journée la plus chargée, 5 revendications rien qu'en Afrique du Sud et au Kenya : Paltrack, Rola, Witzenberg, CPF, NSSF.
-- **Bigbrother/Togo** ressemble à un cas d'école d'IAB : un accès SSH proposé en septembre 2025, puis un nouvel accès revendiqué en janvier. Un accès qui persiste comme ça augmente le risque qu'une opération plus lourde suive.
+### 5.2 Data Leak - 2 incidents
 
-### 5.2 Fuites de données (2 incidents)
+| Victime | Pays | Acteur / Groupe |
+|---|---|---|
+| PixPay | Sénégal | breach3d |
+| AOM Aviation Group | Maroc | skra1a |
 
-| Victime | Acteur | Secteur | Données exposées |
-|---------|--------|---------|-----------------|
-| PixPay (Sénégal) | breach3d | FinTech / Paiement mobile | Base de données financières |
-| AOM Aviation Group (Maroc) | skra1a | Transport aérien / Aviation civile | Base de données aviation |
+### 5.3 Access Sale - 1 incident
 
-### 5.3 Défacement (1 incident)
+| Victime | Pays | Acteur / Groupe |
+|---|---|---|
+| Gouvernement du Togo | Togo | Bigbrother |
 
-| Victime | Acteur | Secteur | Portée |
-|---------|--------|---------|--------|
-| Sites gouvernementaux nigériens (7+) | Non revendiqué | Administration publique | Coordonné, à motivation politique |
+La fiche décrit une vente d'accès proposée. Le rapport ne confirme pas indépendamment que l'accès annoncé était encore valide.
+
+### 5.4 Défacement - 1 incident
+
+| Victime | Pays | Acteur / Groupe |
+|---|---|---|
+| Sites gouvernementaux nigériens (7+) | Niger | Non revendiqué |
+
+Les éléments source justifient la classification en défacement coordonné. Ils ne permettent pas d'établir la dépendance technique ou le vecteur d'accès initial utilisé sur l'ensemble des sites.
 
 ## 6. Impact sectoriel
 
@@ -188,19 +246,14 @@ pie
 | Aviation | 1 | 4,8 % |
 
 ```mermaid
-pie
- title Repartition sectorielle - janvier 2026
- "Gouvernement (4)" : 4
- "Finance (4)" : 4
- "Transport (3)" : 3
- "Industrie (3)" : 3
- "Technologie (2)" : 2
- "Sante (1)" : 1
- "Mines (1)" : 1
- "Agroalimentaire (1)" : 1
- "Tourisme (1)" : 1
- "Aviation (1)" : 1
+xychart-beta
+    title "Incidents par secteur normalisé - Janvier 2026"
+    x-axis ["GOV", "FIN", "TRA", "IND", "TEC", "HEA", "MIN", "FOO", "TOU", "AVI"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 4, 3, 3, 2, 1, 1, 1, 1, 1]
 ```
+
+**Légende codes secteurs :** `GOV` = Gouvernement / Administration publique | `FIN` = Services financiers / FinTech | `TRA` = Transport / Logistique | `IND` = Industrie / Ingénierie | `TEC` = Technologie / Informatique | `HEA` = Santé | `MIN` = Mines | `FOO` = Agroalimentaire | `TOU` = Tourisme | `AVI` = Aviation
 
 **Enseignements :**
 - Gouvernement et services financiers sont à égalité en tête, 4 incidents chacun, deux secteurs qui restent attractifs mois après mois.
@@ -257,15 +310,28 @@ pie
 
 ### Comparaison factuelle avec décembre 2025
 
-Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [décembre](../../2025/12-december/victims_FR.md) et de [janvier](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+Le résumé source de décembre disponible dans ce rapport ne permet de comparer que trois valeurs : **18 incidents documentés**, dont **14 ransomware / extorsion** et **4 incidents résiduels hors ransomware**. Le détail de cette catégorie résiduelle entre Data Leak, Access Sale et Défacement n'est pas fourni pour décembre ; il n'est donc pas inventé ici.
 
-| Indicateur | décembre 2025 | janvier | Évolution observée |
-| :--- | ---: | ---: | ---: |
-| Incidents documentés | 18 | 21 | +3 (+16,7%) |
-| Ransomware / extorsion | 14 | 17 | +3 |
-| Autres fuites, ventes d'accès ou défacements | 4 | 4 | +0 |
+| Indicateur | Décembre 2025 | Janvier 2026 | Évolution observée |
+|---|---:|---:|---:|
+| Incidents documentés | 18 | 21 | **+3 (+16,7 %)** |
+| Ransomware / extorsion | 14 | 17 | **+3 (+21,4 %)** |
+| Autres fuites / ventes d'accès / défacements | 4 | 4 | **0 (0,0 %)** |
 
-La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+```mermaid
+xychart-beta
+    title "Incidents documentés - Décembre 2025 vs Janvier 2026"
+    x-axis ["DEC", "JAN"]
+    y-axis "Incidents" 0 --> 22
+    bar [18, 21]
+    bar [14, 17]
+    bar [4, 4]
+```
+
+**Légende des séries :** première série = total incidents | deuxième série = ransomware / extorsion | troisième série = incidents résiduels hors ransomware.  
+**Légende temporelle :** `DEC` = Décembre 2025 | `JAN` = Janvier 2026.
+
+La variation mensuelle décrit le corpus public documenté par AFRINTEL. Elle peut dépendre du calendrier de publication, des republications, de la couverture de veille ou des règles de comptage et ne doit pas être interprétée comme une variation confirmée du nombre réel de compromissions.
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
@@ -273,7 +339,7 @@ La variation mensuelle reflète l'évolution des publications publiques collect�
 | :--- | :--- | :--- |
 | Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
 | Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
-| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
+| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d'accès ou d’identifiants, sans confirmer leur utilisation |
 | Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
 | Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
 
@@ -323,7 +389,11 @@ La variation mensuelle reflète l'évolution des publications publiques collect�
 
 ## 13. Conclusion
 
-Janvier se solde par 21 fiches d'incidents dans 12 pays. Le ransomware en représente 17, et TheGentlemen plus tengu couvrent à eux seuls 11 fiches dans 7 pays. Le reste du mois, deux publications de données, une vente d'accès, un défacement coordonné, complète le tableau. L'Afrique du Sud et le Kenya arrivent en tête sur le volume, l'Égypte juste derrière. Entre les trois, l'activité a touché l'Afrique du Nord, de l'Ouest, de l'Est et australe.
+Janvier 2026 se clôture avec **21 incidents documentés ou revendiqués dans 12 pays africains** : **17 Ransomware, 2 Data Leak, 1 Access Sale et 1 Défacement**.
 
-**AFRINTEL** - Cyber Threat Intelligence africaine
+L'Afrique du Sud et le Kenya comptent quatre incidents chacun, devant l'Égypte avec trois. TheGentlemen et tengu représentent **11 des 21 fiches**, tandis que la partie hors ransomware comprend deux publications de données, une vente d'accès annoncée et un défacement gouvernemental coordonné.
+
+Par rapport à décembre 2025, le total documenté passe de **18 à 21 (+16,7 %)**, tandis que le ransomware / extorsion passe de **14 à 17**. La source de décembre ne fournit pas le détail des quatre incidents résiduels hors ransomware ; aucune comparaison plus fine n'est donc affirmée.
+
+**AFRINTEL** - Cyber Threat Intelligence africaine  
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

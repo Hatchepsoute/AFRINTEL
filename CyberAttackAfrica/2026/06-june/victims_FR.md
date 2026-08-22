@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Juin 2026 compte **40 incidents uniques** : **20 ransomwares** et **20 fuites de données ou ventes d’accès**. Les fiches concernent directement ou indirectement **20 pays africains**, notamment par l’intermédiaire de deux offres multi-pays de vente d’accès.
+Juin 2026 compte **40 incidents uniques** : **20 ransomwares**, **18 fuites de données** et **2 ventes d'accès**. Les fiches concernent directement ou indirectement **20 pays africains**, notamment par l’intermédiaire de deux offres multi-pays de vente d’accès.
 
 ### Incidents marquants
 
@@ -493,7 +493,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 
 
-#### 🇹🇳 Tunisie – Examens.tn
+#### 🇹🇳 Tunisie - Examens.tn
 
 - **Acteur / Groupe :** AshleyWood2022
 - **Secteur :** Education / University

@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **43 fuites de données ou ventes d’accès** et **43 revendications DDoS**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **41 fuites de données**, **2 ventes d'accès** et **43 revendications DDoS**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
 
 ### Incidents marquants
 
@@ -41,14 +41,10 @@ Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **43 fuites de d
   Toutes les entrées sont présentées comme **actives et validées** (*Valid/Active*). Le vendeur affirme que les données sont fraîches et opérationnelles. Le prix demandé est de **350 $**, avec possibilité de recourir à un séquestre (*escrow*).
 
 - **Analyse :**
-- **Analyse :**
-  L’échantillon contient des informations personnelles détaillées, mais le lien africain repose sur l’attribution géographique du vendeur alors que le champ pays observé affiche `FR`.
+  Les données revendiquées combinent noms, adresses physiques, numéros de téléphone et villes de résidence. Si l'attribution du jeu de données est correcte, cette combinaison pourrait faciliter des campagnes de phishing ciblé, de vishing, de smishing, de fraude et d'usurpation d'identité.
 
-  **Observed :** enregistrements structurés avec coordonnées et adresses ; le champ pays de l’échantillon affiche `FR`.
+  La publication affirme que les enregistrements sont actifs et validés. AFRINTEL ne confirme pas indépendamment cette affirmation, ni la fraîcheur, l'exhaustivité ou l'origine du jeu de données.
 
-  **Assumption :** certains enregistrements pourraient concerner des ressortissants ou résidents du Kenya, de l’Éthiopie, du Nigéria et du Zimbabwe, selon la publication du vendeur.
-
-  **Unknown :** nationalité, résidence, source de collecte et appartenance éventuelle à un jeu de données plus large.
 ---
 ### 04 Mai 2026
 #### 🇩🇿 Algérie - Ministère de l’Industrie Pharmaceutique [Fuite de données]
@@ -154,7 +150,6 @@ Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **43 fuites de d
   - identifiants clients (*customerId*) et d’abonnement (*subscriptionId*)
   - dates de création et de mise à jour des comptes
   - un champ `country` (dans l’échantillon, la valeur `FR` est systématiquement affichée, ce qui suggère que les données pourraient concerner des ressortissants africains résidant en France, ou bien une valeur par défaut dans la base)
-- **Analyse :**
 - **Analyse :**
   L’échantillon contient des informations personnelles détaillées, mais le lien africain repose sur l’attribution géographique du vendeur alors que le champ pays observé affiche `FR`.
 
@@ -554,7 +549,6 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Description :**
   Un cybercriminel propose à la vente la base de données complète des webmails de la police tanzanienne, correspondant au domaine `tpf.go.tz`. L'ensemble contient plus de **10 000 comptes email policiers complets**, avec les mots de passe en clair (déhashed) ainsi que leurs hashs. Le prix demandé est de **550 $**, avec possibilité de négociation et d'utilisation d'un séquestre (*escrow*).
 - **Analyse :**
-- **Analyse :**
   Si les identifiants proposés étaient valides au moment de l’observation, ils pourraient faciliter l’usurpation, le phishing et des tentatives d’accès non autorisé. AFRINTEL n’a pas testé les identifiants. Leur validité, leur origine, leur réutilisation et leur état de remédiation restent inconnus.
 ---
 #### 🇲🇦 Maroc - RADEM Meknès [Fuite de données massive - Infrastructure critique]
@@ -805,7 +799,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Mayelia Automotive est une entreprise ivoirienne spécialisée dans les services liés à l'automobile, incluant le contrôle technique et la gestion de données véhicules. L'organisation a été ciblée par le gang de ransomware TheGentlemen, qui a officiellement revendiqué l'intrusion en publiant des données exfiltrées sur son site de fuite (leak site).
 
 #### 🇳🇬 Nigeria - XL Africa Group
--  **Groupe ransomware:** 0day Syndicate
+- **Groupe ransomware :** 0day Syndicate
 - **Secteur :** Services aux entreprises
 - **Site web :**[xlafricagroup.com](https://www.xlafricagroup.com)
 - **Statut :** Claim - Unverified

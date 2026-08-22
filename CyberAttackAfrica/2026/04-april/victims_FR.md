@@ -1,20 +1,25 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Paysage%20des%20menaces](https://img.shields.io/badge/Menaces-Ransomware%20%26%20Fuites%20de%20données-red)
 ![Période](https://img.shields.io/badge/Période-Avril%202026-lightgrey)
-![Victimes](https://img.shields.io/badge/Victimes-60-critical)
-![Ransomwares](https://img.shields.io/badge/Ransomwares-20-red)
-![Fuites%20de%20données](https://img.shields.io/badge/Fuites%20de%20données-40-orange)
-![Pays%20touchés](https://img.shields.io/badge/Pays%20touchés-16-blueviolet)
-![Acteurs](https://img.shields.io/badge/Acteurs%20de%20menace-30%2B-darkred)
-![Type%20de%20renseignement](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
-![Statut](https://img.shields.io/badge/Statut-Veille%20OSINT-success)
+![Victimes](https://img.shields.io/badge/Victimes-69-critical)
+![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
+![Fuites](https://img.shields.io/badge/Fuites-39-orange)
+![Ventes%20d'accès](https://img.shields.io/badge/Ventes%20d'accès-1-yellow)
+![DDoS](https://img.shields.io/badge/DDoS-9-blue)
+![Pays](https://img.shields.io/badge/Pays%20directs-16-blueviolet)
+![Acteurs](https://img.shields.io/badge/Libellés%20acteurs-37-darkred)
+![Type%20d'Intel](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 # Victimes africaines - Avril 2026
 
 ## Récapitulatif
-- **Total victimes** : 60
-- **Attaques par ransomware** : 20
-- **Fuites de données (hors ransomware)** : 40
+- **Total victimes :** 69
+- **Ransomware :** 20
+- **Fuites de données :** 39
+- **Ventes d'accès :** 1
+- **Revendications DDoS :** 9
+- **Pays directement étiquetés :** 16
+- **Pays dans la vue géographique développée :** 17
+- **Libellés source distincts d'acteurs/groupes :** 37
 
 ### Incidents marquants
 
@@ -173,7 +178,7 @@
 
 ---
 ### 05 Avril 2026
-#### 🇸🇳 Sénégal - Direction Générale de la Comptabilité Publique et du Trésor (DGCPT) [Accès gouvernementaux revendiqués]
+#### 🇸🇳 Sénégal - Direction Générale de la Comptabilité Publique et du Trésor (DGCPT) [Vente d'accès]
 
 - **Acteur / Groupe :** w00l_ysh1
 - **Secteur :** Gouvernement / Finances publiques
@@ -413,7 +418,7 @@
 
 ### 21 Avril 2026
 #### 🇲🇦 Maroc - LNM6 (Laboratoire National Mohammed VI) [Fuite de données]
-- **Acteur / Groupe :** Anisanas2 
+- **Acteur / Groupe :** anisanas2 
 - **Secteur :** Santé / Laboratoire médical
 - **Site web :** N/A
 - **Statut :** Claim - Data Sample Published

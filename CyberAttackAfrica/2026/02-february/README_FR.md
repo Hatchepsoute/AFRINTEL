@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Breach-red)
+![Threat Type](https://img.shields.io/badge/Menace-Ransomware-red)
 ![Period](https://img.shields.io/badge/Period-February%202026-lightgrey)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
@@ -24,6 +24,22 @@ Février 2026 a rapporté **20 incidents cyber** dans **14 pays africains**, tou
 
 👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 
+### 1.1 Comparaison avec le mois précédent
+
+> Comparaison fondée sur les corpus mensuels AFRINTEL validés. Une variation du nombre de fiches documentées ne prouve pas, à elle seule, une variation du nombre réel de compromissions.
+
+| Indicateur | Janvier 2026 | Février 2026 | Évolution observée |
+|---|---:|---:|---:|
+| Total incidents | 21 | 20 | **-1 (-4,8 %)** |
+| Ransomware | 17 | 20 | **+3 (+17,6 %)** |
+| Data Leak | 2 | 0 | **-2 (-100,0 %)** |
+| Access Sale | 1 | 0 | **-1 (-100,0 %)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 1 | 0 | **-1 (-100,0 %)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+> Règle de lecture : si la valeur du mois précédent est `0` et celle du mois courant est supérieure à `0`, l'évolution est indiquée comme `nouveau` plutôt qu'avec un pourcentage artificiel. Les catégories absentes restent affichées à `0`.
+
 ## 2. Méthodologie
 
 - **Périmètre** : 54 pays africains.
@@ -31,6 +47,8 @@ Février 2026 a rapporté **20 incidents cyber** dans **14 pays africains**, tou
 - **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground.
 - **Inclusion** : Incidents revendiqués ou attribués publiquement, avec victime, pays et secteur identifiés.
 - **Typologie** : tous les incidents du mois sont attribués à des groupes ransomware ou d’extorsion de données. Le chiffrement, l’interruption opérationnelle et le vecteur d’accès initial ne sont pas présumés lorsque la source documente uniquement une victime publiée ou une revendication d’exfiltration. Aucune activité autonome de courtier en données n’a été identifiée.
+
+Tous les chiffres de ce rapport sont calculés une seule fois à partir du couple bilingue validé [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md). La version française est contrôlée en premier, puis la version anglaise est synchronisée et vérifiée en parité.
 
 ## 3. Vue d'ensemble
 
@@ -76,12 +94,67 @@ pie
  "Namibie (1)" : 1
 ```
 
-**Top 3 des plus grandes fuites revendiquées :**
+```mermaid
+xychart-beta
+    title "Fiches incidents par pays - Février 2026"
+    x-axis ["ZA", "EG", "GH", "NG", "SN", "SO", "TZ", "KE", "MU", "TN", "SD", "CI", "MA", "NA"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Légende codes pays :** `ZA` = Afrique du Sud | `EG` = Égypte | `GH` = Ghana | `NG` = Nigeria | `SN` = Sénégal | `SO` = Somalie | `TZ` = Tanzanie | `KE` = Kenya | `MU` = Maurice | `TN` = Tunisie | `SD` = Soudan | `CI` = Côte d'Ivoire | `MA` = Maroc | `NA` = Namibie
+
+
+### Comparaison Ransomware et Fuite de données / Vente d'accès par pays
+
+Les **20 incidents de février** sont classés **Ransomware** dans la taxonomie mensuelle structurée. Aucune Data Leak ni Access Sale autonome n'est classée séparément ce mois-ci.
+
+**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès
+
+| Code | Pays | Ransomware | Fuite / vente d'accès | Répartition |
+|---|---|---:|---:|---|
+| `ZA` | Afrique du Sud | **3** | **0** | 🟧🟧🟧 |
+| `EG` | Égypte | **3** | **0** | 🟧🟧🟧 |
+| `GH` | Ghana | **2** | **0** | 🟧🟧 |
+| `NG` | Nigeria | **2** | **0** | 🟧🟧 |
+| `SN` | Sénégal | **1** | **0** | 🟧 |
+| `SO` | Somalie | **1** | **0** | 🟧 |
+| `TZ` | Tanzanie | **1** | **0** | 🟧 |
+| `KE` | Kenya | **1** | **0** | 🟧 |
+| `MU` | Maurice | **1** | **0** | 🟧 |
+| `TN` | Tunisie | **1** | **0** | 🟧 |
+| `SD` | Soudan | **1** | **0** | 🟧 |
+| `CI` | Côte d'Ivoire | **1** | **0** | 🟧 |
+| `MA` | Maroc | **1** | **0** | 🟧 |
+| `NA` | Namibie | **1** | **0** | 🟧 |
+|  | **Total** | **20** | **0** | 🟧 Ransomware |
+
+```mermaid
+xychart-beta
+    title "Ransomware par pays - Février 2026"
+    x-axis ["ZA", "EG", "GH", "NG", "SN", "SO", "TZ", "KE", "MU", "TN", "SD", "CI", "MA", "NA"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Légende pays :** `ZA` = Afrique du Sud | `EG` = Égypte | `GH` = Ghana | `NG` = Nigeria | `SN` = Sénégal | `SO` = Somalie | `TZ` = Tanzanie | `KE` = Kenya | `MU` = Maurice | `TN` = Tunisie | `SD` = Soudan | `CI` = Côte d'Ivoire | `MA` = Maroc | `NA` = Namibie
+
+> La série bleue vaut zéro sur l'ensemble du mois et n'est donc pas tracée comme une seconde série entièrement nulle.
+
+**Top 3 des plus grands volumes revendiqués :**
 | Rang | Victime | Acteur | Volume |
 |:---:|---------|--------|-------:|
 | 1 | 🇸🇳 DAF SÉNÉGAL | The Green Blood Group | 139 To |
 | 2 | 🇸🇴 BlueSky Aviation (Somalie) | 0APT | 3,5 To |
 | 3 | 🇬🇭 Global Media Alliance (Ghana) | 0APT | 2,5 To |
+
+```mermaid
+pie showData
+    title Répartition par type d'incident - Février 2026
+    "Ransomware" : 20
+```
+
+**Convention couleur :** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
 
 **Acteurs les plus prolifiques :**
 | Acteur | Incidents | Pays |
@@ -99,14 +172,14 @@ pie
 | The Green Blood Group | 1 | Sénégal |
 
 ```mermaid
-pie
- title Acteurs les plus actifs (février 2026)
- "TheGentlemen (5)" : 5
- "0APT (3)" : 3
- "LockBit 5.0 (3)" : 3
- "incransom (2)" : 2
- "Autres - 1 chacun (7)" : 7
+xychart-beta
+    title "Libellés acteurs ou groupes - Février 2026"
+    x-axis ["THE", "0AP", "LOC", "INC", "VEC", "TEN", "PAY", "APT", "QIL", "KIL", "GRE"]
+    y-axis "Incidents" 0 --> 6
+    bar [5, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1]
 ```
+
+**Légende codes acteurs/groupes :** `THE` = TheGentlemen | `0AP` = 0APT | `LOC` = LockBit 5.0 | `INC` = incransom | `VEC` = vect | `TEN` = tengu | `PAY` = payload | `APT` = apt73/bashe | `QIL` = qilin | `KIL` = killsec | `GRE` = The Green Blood Group
 
 ## 4. Synthèse géographique
 
@@ -121,7 +194,7 @@ pie
 
 ## 5. Analyse détaillée par type d'incident
 
-### 5.1 Ransomware et extorsion de données (20 incidents)
+### 5.1 Ransomware - 20 incidents
 
 | Pays | Incidents | Acteurs principaux |
 |------|:---------:|-------------------|
@@ -143,18 +216,18 @@ pie
 **Observations clés :**
 - **0APT** est sorti de nulle part début février, 3 revendications en 5 jours, puis silence radio sur les DLS publics pour le reste du mois.
 - **Secteur aérien** : 3 compagnies revendiquées (BlueSky Somalie, Nile Air Égypte, Air Côte d'Ivoire), 3 acteurs différents. Ça ressemble plus à de l'opportunisme indépendant qu'à une campagne coordonnée.
-- **TheGentlemen** ne ralentit pas : 5 nouvelles revendications dans 4 pays après janvier.
+- **TheGentlemen** apparaît dans 5 incidents répartis dans 5 pays en février.
 - **LockBit 5.0** revendique 3 victimes, toujours sous le branding LockBit 5.x.
 
 ## 6. Impact sectoriel
 
 | Secteur | Incidents | Pourcentage |
-|---------|:---------:|:-----------:|
+|---|---:|---:|
 | Gouvernement / Administration | 3 | 15,0 % |
-| Airlines / Aviation | 3 | 15,0 % |
+| Compagnies aériennes / Aviation | 3 | 15,0 % |
 | Énergie | 2 | 10,0 % |
 | Finance / Banque / FinTech | 2 | 10,0 % |
-| Mines / Extraction | 2 | 10,0 % |
+| Mines / Extraction | 1 | 5,0 % |
 | Juridique | 1 | 5,0 % |
 | Médias | 1 | 5,0 % |
 | Hôtellerie | 1 | 5,0 % |
@@ -163,26 +236,21 @@ pie
 | Agriculture | 1 | 5,0 % |
 | Commerce de détail | 1 | 5,0 % |
 | Comptabilité | 1 | 5,0 % |
+| Automobile | 1 | 5,0 % |
+| **Total** | **20** | **100 %** |
 
 ```mermaid
-pie
- title Répartition sectorielle (février 2026)
- "Gouvernement (3)" : 3
- "Aviation (3)" : 3
- "Énergie (2)" : 2
- "Finance (2)" : 2
- "Mines (2)" : 2
- "Juridique (1)" : 1
- "Médias (1)" : 1
- "Hôtellerie (1)" : 1
- "Conseil IT (1)" : 1
- "Immobilier (1)" : 1
- "Agriculture (1)" : 1
- "Commerce (2)" : 2
+xychart-beta
+    title "Incidents par secteur normalisé - Février 2026"
+    x-axis ["GOV", "AVI", "ENE", "FIN", "MIN", "LEG", "MED", "HOS", "ITC", "REA", "AGR", "RET", "ACC", "AUT"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
+**Légende codes secteurs :** `GOV` = Gouvernement / Administration | `AVI` = Compagnies aériennes / Aviation | `ENE` = Énergie | `FIN` = Finance / Banque / FinTech | `MIN` = Mines / Extraction | `LEG` = Juridique | `MED` = Médias | `HOS` = Hôtellerie | `ITC` = Conseil IT | `REA` = Immobilier | `AGR` = Agriculture | `RET` = Commerce de détail | `ACC` = Comptabilité | `AUT` = Automobile
+
 **Enseignements :**
-- Gouvernement, aviation et énergie forment ensemble un cluster infrastructures critiques, 8 incidents, 40 % du mois.
+- Gouvernement, aviation et énergie représentent ensemble **8 incidents sur 20 (40,0 %)**. Il s'agit d'une concentration sectorielle dans le corpus documenté, pas d'une preuve que chaque cas a affecté des opérations critiques.
 - Trois compagnies aériennes en un mois, du jamais-vu dans les archives AFRINTEL.
 - DAF Sénégal, données gouvernementales et biométriques réunies, coche les cases du niveau d'impact 4 si la revendication se confirme.
 
@@ -239,15 +307,23 @@ pie
 
 ### Comparaison factuelle avec janvier 2026
 
-Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [janvier](../01-january/victims_FR.md) et de [février](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+Le tableau standardisé placé en haut de ce rapport constitue la référence numérique de la comparaison mensuelle.
 
-| Indicateur | janvier 2026 | février | Évolution observée |
-| :--- | ---: | ---: | ---: |
-| Incidents documentés | 21 | 20 | -1 (-4,8%) |
-| Ransomware / extorsion | 17 | 20 | +3 |
-| Autres fuites, ventes d'accès ou défacements | 4 | 0 | -4 |
+Février contient **20 incidents documentés contre 21 en janvier (-4,8 %)**. Le Ransomware passe de **17 à 20 (+17,6 %)**, tandis que les trois autres types présents en janvier disparaissent du corpus structuré de février : Data Leak 2 -> 0, Access Sale 1 -> 0 et Defacement 1 -> 0.
 
-La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+```mermaid
+xychart-beta
+    title "Incidents documentés - Janvier vs Février 2026"
+    x-axis ["JAN", "FEB"]
+    y-axis "Incidents" 0 --> 22
+    bar [21, 20]
+    bar [17, 20]
+```
+
+**Légende des séries :** première série = total incidents | deuxième série = Ransomware.  
+**Légende temporelle :** `JAN` = Janvier 2026 | `FEB` = Février 2026.
+
+Cette évolution décrit le corpus public documenté par AFRINTEL et ne doit pas être interprétée automatiquement comme une variation du nombre réel d'attaques.
 
 ## 9. Cartographie MITRE ATT&CK (contextuelle)
 
@@ -303,7 +379,11 @@ La variation mensuelle reflète l'évolution des publications publiques collect�
 
 ## 13. Conclusion
 
-Ce qui domine février 2026, c'est l'ampleur et la sensibilité de la revendication DAF Sénégal : si les 139 To de données citoyennes et biométriques se confirment, ce serait l'une des violations gouvernementales les plus lourdes de l'histoire cyber africaine. En dehors de ce cas, le mois reste large et varié, 14 pays, 11 acteurs, avec une pression particulière sur l'aviation, l'énergie et les entités gouvernementales critiques. TheGentlemen, LockBit 5.0 et 0APT, le temps qu'il a duré, ont tous maintenu un rythme opérationnel soutenu. AFRINTEL continue de surveiller les groupes actifs et mettra à jour ces évaluations à mesure que des éléments de vérification arrivent.
+Février 2026 se clôture avec **20 incidents Ransomware documentés dans 14 pays africains**. L'Afrique du Sud et l'Égypte comptent trois incidents chacune, tandis que le Ghana et le Nigeria en comptent deux chacun.
 
-**AFRINTEL** - Cyber Threat Intelligence africaine
+TheGentlemen arrive en tête avec cinq fiches, devant 0APT et LockBit 5.0 avec trois chacune. Plusieurs cas comprennent des échantillons publiés ou des données divulguées, mais les volumes revendiqués comme les **139 To attribués à DAF Sénégal** restent des affirmations d'acteur tant qu'ils ne peuvent pas être mesurés indépendamment à partir des éléments disponibles.
+
+Par rapport à janvier, le total documenté diminue légèrement de **21 à 20**, tandis que le Ransomware passe de **17 à 20** et que le corpus structuré de février ne contient aucune Data Leak, Access Sale, DDoS, Defacement ni Operational Fraud autonome.
+
+**AFRINTEL** - Cyber Threat Intelligence africaine  
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

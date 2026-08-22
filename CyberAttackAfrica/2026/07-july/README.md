@@ -28,9 +28,26 @@ Evidence strength varied materially: **21 observations were unverified claims**,
 
 The main defensive priorities are privileged and webmail account protection, monitoring of bulk database exports, and rapid handling of identity, health, education and government data exposure. Detailed victim and incident data are available in [`victims.md`](./victims.md).
 
+
+### 1.1 Month-over-month comparison
+
+> Comparison based on validated AFRINTEL monthly corpora. A change in documented records does not, by itself, prove a change in the real number of compromises.
+
+| Indicator | June 2026 | July 2026 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 40 | 42 | **+2 (+5.0%)** |
+| Ransomware | 20 | 18 | **-2 (-10.0%)** |
+| Data Leak | 18 | 18 | **0 (+0.0%)** |
+| Access Sale | 2 | 6 | **+4 (+200.0%)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+> Reading rule: when the previous month is `0` and the current month is greater than `0`, the change is marked `new` instead of using an artificial percentage. Categories that are absent remain displayed as `0`.
+
 ## 2. Scope and methodology
 
-All figures in this English version derive from [`victims.md`](./victims.md), the source of truth for the English report. The French version applies the same method using [`victims_FR.md`](./victims_FR.md).
+All figures are calculated once from the validated bilingual pair [`victims.md`](./victims.md) / [`victims_FR.md`](./victims_FR.md). After synchronization, this pair is the source of truth for both language versions; statistics are not recomputed independently by language.
 
 - **Geographic scope:** Africa's 54 countries; only victims, operations or affected datasets with an explicit African link are included.
 - **Collection period:** 1 to 31 July 2026, based on the AFRINTEL detection date recorded for each incident.
@@ -87,7 +104,7 @@ pie showData
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Geographic occurrences by country - July 2026"
     x-axis ["EG","TN","MA","ZA","NG","DZ","CI","GH","BW","CM","KE","SS"]
     y-axis "Occurrences" 0 --> 8
@@ -97,31 +114,48 @@ xychart
 Legend: EG = Egypt, TN = Tunisia, MA = Morocco, ZA = South Africa, NG = Nigeria, DZ = Algeria, CI = Côte d’Ivoire, GH = Ghana, BW = Botswana, CM = Cameroon, KE = Kenya, SS = South Sudan
 
 
-### Ransomware versus leaks and access sales by country
+### Ransomware versus Data Leak / Access Sale by country
 
-| Country | Ransomware | Leaks and access sales | Total | Distribution |
-|---|---:|---:|---:|---|
-| 🇿🇦 South Africa | 5 | 1 | 6 | 🟧🟧🟧🟧🟧 🟦 |
-| 🇪🇬 Egypt | 2 | 5 | 7 | 🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇲🇦 Morocco | 2 | 4 | 6 | 🟧🟧 🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
-| 🇨🇮 Côte d’Ivoire | 2 | 1 | 3 | 🟧🟧 🟦 |
-| 🇬🇭 Ghana | 1 | 1 | 2 | 🟧 🟦 |
-| 🇨🇲 Cameroon | 1 | 0 | 1 | 🟧 |
-| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
-| 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
-| 🇸🇸 South Sudan | 1 | 0 | 1 | 🟧 |
-| 🇹🇳 Tunisia | 0 | 7 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇩🇿 Algeria | 0 | 4 | 4 | 🟦🟦🟦🟦 |
-| **Total** | **18** | **25** | **43** | *🟧 Ransomware \| 🟦 Leaks and access sales* |
+This geographic comparison contains **43 country occurrences**: **18 ransomware occurrences** and **25 Data Leak / Access Sale occurrences**. The blue total is higher than the **24 unique Data Leak / Access Sale incidents** because one Data Leak record concerns both Nigeria and Côte d'Ivoire and is counted once in each country view.
 
-The 25 leak and access-sale occurrences include the additional country allocation for the Nigeria and Côte d’Ivoire identity-document observation.
+**Visual legend:** 🟧 Ransomware | 🟦 Data Leak / Access Sale
+
+| Code | Country | Ransomware | Bar | Data Leak / Access Sale | Bar |
+|---|---|---:|---|---:|---|
+| `ZA` | South Africa | **5** | 🟧🟧🟧🟧🟧 | **1** | 🟦 |
+| `EG` | Egypt | **2** | 🟧🟧 | **5** | 🟦🟦🟦🟦🟦 |
+| `MA` | Morocco | **2** | 🟧🟧 | **4** | 🟦🟦🟦🟦 |
+| `NG` | Nigeria | **2** | 🟧🟧 | **2** | 🟦🟦 |
+| `CI` | Côte d'Ivoire | **2** | 🟧🟧 | **1** | 🟦 |
+| `GH` | Ghana | **1** | 🟧 | **1** | 🟦 |
+| `CM` | Cameroon | **1** | 🟧 | **0** | - |
+| `BW` | Botswana | **1** | 🟧 | **0** | - |
+| `KE` | Kenya | **1** | 🟧 | **0** | - |
+| `SS` | South Sudan | **1** | 🟧 | **0** | - |
+| `TN` | Tunisia | **0** | - | **7** | 🟦🟦🟦🟦🟦🟦🟦 |
+| `DZ` | Algeria | **0** | - | **4** | 🟦🟦🟦🟦 |
+|  | **Geographic total** | **18** |  | **25** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware vs Data Leak / Access Sale by country - July 2026"
+    x-axis ["ZA", "EG", "MA", "NG", "CI", "GH", "CM", "BW", "KE", "SS", "TN", "DZ"]
+    y-axis "Occurrences" 0 --> 8
+    bar [5, 2, 2, 2, 2, 1, 1, 1, 1, 1, 0, 0]
+    bar [1, 5, 4, 2, 1, 1, 0, 0, 0, 0, 7, 4]
+```
+
+**Series legend:** first bar series = 🟧 Ransomware | second bar series = 🟦 Data Leak / Access Sale.
+
+**Country legend:** `ZA` = South Africa | `EG` = Egypt | `MA` = Morocco | `NG` = Nigeria | `CI` = Côte d'Ivoire | `GH` = Ghana | `CM` = Cameroon | `BW` = Botswana | `KE` = Kenya | `SS` = South Sudan | `TN` = Tunisia | `DZ` = Algeria
+
+> The analytical total remains **42 unique incidents**: 18 Ransomware, 18 Data Leak and 6 Access Sale. The geographic total is 43 because the Nigeria / Côte d'Ivoire identity-photo observation contributes one occurrence to each country.
 
 ### Ransomware by country
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Ransomware by country - July 2026"
     x-axis ["ZA","EG","MA","NG","CI","GH","CM","BW","KE","SS"]
     y-axis "Ransomware" 0 --> 6
@@ -147,7 +181,7 @@ Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CI = Côte d�
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Geographic distribution of data leaks and access sales - July 2026"
     x-axis ["TN","EG","MA","DZ","NG","ZA","CI","GH"]
     y-axis "Occurrences" 0 --> 8
@@ -172,7 +206,7 @@ The Nigeria and Côte d’Ivoire identity-document observation contributes one o
 
 
 ```mermaid
-xychart
+xychart-beta
     title "Geographic occurrences by region - July 2026"
     x-axis ["North Africa","Southern Africa","West Africa","Central Africa","East Africa"]
     y-axis "Occurrences" 0 --> 26
@@ -196,6 +230,8 @@ pie showData
     "Data leaks" : 18
     "Access sales" : 6
 ```
+
+**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale.
 
 ### 4.1 Ransomware
 
@@ -244,14 +280,14 @@ Tunisia led this combined view with seven occurrences, followed by Egypt with fi
 | **Total** | **42** | **100%** |  |
 
 ```mermaid
-xychart
-    title "Top represented sectors - July 2026"
-    x-axis ["Govt","Tele","Health","Eng","Educ","Retail","Energy"]
+xychart-beta
+    title "Incidents by normalized sector - July 2026"
+    x-axis ["GOV", "TEL", "HEA", "ENG", "EDU", "ECO", "OIL", "INV", "FIN", "TRA", "REA", "MIN", "ACC", "TRV", "CHE", "SEC", "GAM", "RUB", "TEC"]
     y-axis "Incidents" 0 --> 12
-    bar [11,4,4,3,3,3,2]
+    bar [11, 4, 4, 3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 ```
 
-Legend: Govt = Government / Administration; Tele = Telecommunications; Eng = Engineering / Construction; Educ = Education / University; Retail = E-commerce / Retail.
+**Sector code legend:** `GOV` = Government / Administration | `TEL` = Telecommunications | `HEA` = Healthcare / Medical | `ENG` = Engineering / Construction | `EDU` = Education / University | `ECO` = E-commerce / Retail | `OIL` = Oil and Energy | `INV` = Investment Holding / Energy | `FIN` = Finance / Banking | `TRA` = Transport / Logistics | `REA` = Real Estate | `MIN` = Mining | `ACC` = Accounting / Audit | `TRV` = Travel / Events | `CHE` = Chemical Industry | `SEC` = Security Services | `GAM` = Gaming / Entertainment | `RUB` = Rubber / Agriculture | `TEC` = Technology / IT
 
 Government and administration remained the largest sectoral grouping. The incidents involved public procurement, justice, employment, identity, land administration and public services, creating risks that extend beyond data disclosure into fraud and targeted impersonation.
 
@@ -270,12 +306,14 @@ Government and administration remained the largest sectoral grouping. The incide
 
 
 ```mermaid
-xychart
-    title "Most active actors and sources - July 2026"
-    x-axis ["arcusmedia","dragonforce","CrowStealer","krybit","BIGBROTHER","TheGentlemen","Phantom Atlas","GreYyM3terr"]
+xychart-beta
+    title "Most represented actor or group labels - July 2026"
+    x-axis ["ARC", "DRA", "CRO", "KRY", "BIG", "THE", "PHA", "GRE"]
     y-axis "Incidents" 0 --> 5
-    bar [4,3,2,2,2,2,2,2]
+    bar [4, 3, 2, 2, 2, 2, 2, 2]
 ```
+
+**Actor/group code legend:** `ARC` = arcusmedia | `DRA` = dragonforce | `CRO` = CrowStealer | `KRY` = krybit | `BIG` = BIGBROTHER | `THE` = TheGentlemen | `PHA` = Phantom Atlas | `GRE` = GreYyM3terr
 
 Twenty-three other named actors or source accounts appear once each. They are not aggregated into the chart because a residual bar would obscure the comparative ranking. Frequency alone does not establish a coordinated campaign.
 
@@ -344,6 +382,16 @@ This comparison uses the monthly victim and incident data for [June](../06-june/
 | Most visible actor | anisanas2, 7 incidents | arcusmedia, 4 incidents | Lower monthly concentration in July |
 
 July's net increase of two documented incidents corresponds to four additional access sales, while ransomware fell by two incidents and data leaks remained stable. Geographic coverage is not directly comparable with the global volume: in June, two multi-country offers generated 15 country exposures; in July, only one observation covers two countries.
+
+```mermaid
+xychart-beta
+    title "Documented incidents - June vs July 2026"
+    x-axis ["JUN", "JUL"]
+    y-axis "Incidents" 0 --> 45
+    bar [40, 42]
+```
+
+**Time legend:** `JUN` = June 2026 | `JUL` = July 2026.
 
 ### Intelligence gaps
 

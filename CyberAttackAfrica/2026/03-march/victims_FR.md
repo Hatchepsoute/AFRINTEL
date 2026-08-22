@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
-![Threat Type](https://img.shields.io/badge/Menace-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%7C%20Fuite%20%7C%20Fraude-red)
 ![Data Source](https://img.shields.io/badge/Source%20des%20données-RQL%20export-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
@@ -8,7 +8,7 @@
 👉🏾 [**English version available here**](./victims.md)
 
 ## Portée et méthodologie
-Cette liste recense les incidents de ransomware et fuites de données ciblant des entités africaines pour le mois de mars 2026. Les données sont extraites et normalisées à partir des exports de surveillance des sites de fuite (DLS) et de sources OSINT complémentaires.
+Cette liste recense les revendications/publications ransomware, les fuites de données ou intrusions système et un incident de fraude opérationnelle affectant des entités africaines et divulgués ou identifiés en mars 2026. Les données sont extraites et normalisées à partir des exports de surveillance des sites de fuite (DLS) et de sources OSINT complémentaires.
 
 **Points de contrôle appliqués :**
 - **Intégrité :** Chaque ligne du dataset source est conservée comme un incident distinct.
@@ -19,11 +19,12 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Victimes recensées :** 41
 - **Pays touchés :** 12 (plus 1 incident multi-pays)
 - **Acteurs observés :** 26 acteurs attribués ; 1 incident sans attribution publique
-- **Pays les plus touchés :** Afrique du Sud (13), Maroc (8), Égypte (9)
+- **Pays les plus touchés :** Afrique du Sud (13), Égypte (9), Maroc (8)
 
 ### Typologie des incidents
 - **Revendications ou publications ransomware :** 19 incidents (46,3 %)
-- **Fuites de données / intrusions système :** 22 incidents (53,7 %)
+- **Fuites de données / intrusions système :** 21 incidents (51,2 %)
+- **Fraude opérationnelle :** 1 incident (2,4 %) - UBA Sénégal ; hors des quatre types structurés standards d’AFRINTEL
 
 ### Incidents marquants
 
@@ -77,22 +78,23 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **zimablue (Loozap)** : 1 victime
 - **Keymous (Santé Guinée)** : 1 victime
 
-### Comparaison ransomware vs fuites par pays
-| Pays                  | Ransomware | Fuites de données |
-|-----------------------|------------|-------------------|
-| 🇿🇦 Afrique du Sud     | 7          | 6                 |
-| 🇲🇦 Maroc              | 5          | 3                 |
-| 🇪🇬 Égypte             | 3          | 6                 |
-| 🇳🇬 Nigeria            | 0          | 2                 |
-| 🌍 Multi-pays          | 0          | 1                 |
-| 🇩🇿 Algérie            | 0          | 1                 |
-| 🇸🇳 Sénégal            | 0          | 1                 |
-| 🇬🇳 Guinée             | 0          | 1                 |
-| 🇿🇲 Zambie             | 0          | 1                 |
-| 🇲🇬 Madagascar         | 1          | 0                 |
-| 🇹🇳 Tunisie            | 1          | 0                 |
-| 🇳🇦 Namibie            | 1          | 0                 |
-| 🇹🇿 Tanzanie           | 1          | 0                 |
+### Type d’incident par pays
+| Pays | Ransomware | Fuite / intrusion | Fraude opérationnelle | Total |
+|---|---:|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 7 | 6 | 0 | **13** |
+| 🇪🇬 Égypte | 3 | 6 | 0 | **9** |
+| 🇲🇦 Maroc | 5 | 3 | 0 | **8** |
+| 🇳🇬 Nigeria | 0 | 2 | 0 | **2** |
+| 🌍 Multi-pays | 0 | 1 | 0 | **1** |
+| 🇩🇿 Algérie | 0 | 1 | 0 | **1** |
+| 🇸🇳 Sénégal | 0 | 0 | 1 | **1** |
+| 🇬🇳 Guinée | 0 | 1 | 0 | **1** |
+| 🇿🇲 Zambie | 0 | 1 | 0 | **1** |
+| 🇲🇬 Madagascar | 1 | 0 | 0 | **1** |
+| 🇹🇳 Tunisie | 1 | 0 | 0 | **1** |
+| 🇳🇦 Namibie | 1 | 0 | 0 | **1** |
+| 🇹🇿 Tanzanie | 1 | 0 | 0 | **1** |
+| **Total** | **19** | **21** | **1** | **41** |
 
 ## Mars 2026
 
@@ -386,6 +388,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Secteur :** Gouvernement / Statistiques Nationales
 - **Site web :** [statssa.gov.za](https://www.statssa.gov.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :** Stats SA est l'agence nationale de statistique de l'Afrique du Sud. XP95 a exfiltré 154 Go de données (453 362 fichiers). La brèche compromet potentiellement des données socio-économiques sensibles, des recensements, des informations sur l'emploi, l'inflation et des registres administratifs nationaux. Une rançon de 100 000 $ a été exigée avant une mise en vente publique prévue pour le 20 avril 2026.
 
 #### 🇿🇦 Afrique du Sud - Gauteng City Region Academy (GCRA)
@@ -393,6 +396,7 @@ Cette liste recense les incidents de ransomware et fuites de données ciblant de
 - **Secteur :** Éducation / Formation (Gouvernement provincial)
 - **Site web :** [gcra.gauteng.gov.za](https://gcra.gauteng.gov.za)
 - **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
 - **Description victime :** La GCRA est l'agence responsable du développement des compétences pour la province de Gauteng. L'exfiltration de 147 Go de données compromet potentiellement les dossiers des étudiants (bourses, inscriptions, PII), les données des programmes de formation et les documents administratifs de l'académie. XP95 a fixé une date limite pour le paiement de la rançon avant la mise en vente publique des fichiers.
 
 ### 30 Mars 2026

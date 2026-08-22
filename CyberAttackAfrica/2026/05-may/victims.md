@@ -2,7 +2,7 @@
 
 ## Monthly snapshot
 
-May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **43 data leaks or access sales** and **43 DDoS claims**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
+May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **41 data leaks**, **2 access sales** and **43 DDoS claims**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
 
 ### Notable incidents
 
@@ -152,7 +152,6 @@ May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **43 da
   - customer IDs and subscription IDs
   - account creation and update timestamps
   - a `country` field (in the sample, `FR` is systematically displayed, suggesting the data may concern African nationals residing in France, or this may be a default value in the database)
-- **Analysis:**
 - **Analysis:**
   The sample contains detailed personal information, but its African scope relies on the seller’s country attribution while the observed country field displays `FR`.
 
@@ -555,7 +554,6 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Description:**
   A cybercriminal is offering for sale the complete webmail database of the Tanzanian police, corresponding to the `tpf.go.tz` domain. The dataset contains over **10,000 full police email accounts**, including plaintext (dehashed) passwords and their hashes. The asking price is **$550**, with negotiation and escrow options available.
 
-- **Analysis:**
 - **Analysis:**
   If the advertised credentials were valid at the time of observation, they could support impersonation, phishing and unauthorized access attempts. AFRINTEL did not test the credentials. Their validity, origin, reuse and remediation status remain unknown.
 ---

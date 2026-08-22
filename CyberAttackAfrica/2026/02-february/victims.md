@@ -9,7 +9,7 @@
 
 ## Monthly snapshot
 
-February 2026 includes **20 unique incidents** attributed to **ransomware or data-extortion groups** and **no standalone data leak or access sale classified separately**, across **14 African countries**.
+February 2026 includes **20 unique incidents**: **20 Ransomware**, **0 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **14 African countries**.
 
 ### Notable incidents
 
@@ -28,6 +28,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Aviation
 - **Website:** bluesky-air.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Somali aviation company providing air transport services.
 
 ### 05 February 2026
@@ -35,6 +36,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Ransomware Group:** The Green Blood Group
 - **Sector:** Government
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Senegalese government administration. Major data breach involving citizen databases and biometric records.
 
 ### 05 February 2026
@@ -43,6 +45,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Media
 - **Website:** gmaworld.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Integrated media and communications company based in Ghana.
 
 ### 06 February 2026
@@ -51,6 +54,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Legal
 - **Website:** vertexlaw.co.tz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Law firm providing legal services in Tanzania.
 
 ### 06 February 2026
@@ -59,6 +63,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Banking
 - **Website:** fargo.co.ke
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Security and logistics provider, also involved in banking/financial services in Kenya.
 
 ### 09 February 2026
@@ -67,6 +72,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Fintech
 - **Website:** getly.app
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian financial technology application.
 
 - **Analysis:**
@@ -78,6 +84,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Public Service
 - **Website:** ghanabauxite.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Ghanaian enterprise involved in the bauxite mining and production sector.
 
 ### 12 February 2026
@@ -86,6 +93,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Energy
 - **Website:** midwesternog.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian upstream oil and gas company.
 
 - **Analysis:**
@@ -97,14 +105,16 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Airlines
 - **Website:** nileair.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Private Egyptian airline based at Cairo International Airport.
 
 ### 14 February 2026
 #### 🇲🇺 Mauritius - Sands Suites
-- **Ransomware Group:** lockbit5
+- **Ransomware Group:** LockBit 5.0.0
 - **Sector:** Hospitality
 - **Website:** sands.mu
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Luxury resort located in Mauritius.
 
 ### 15 February 2026
@@ -113,6 +123,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Local Government
 - **Website:** intsikayethu.gov.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Local municipality in the Eastern Cape province of South Africa.
 
 ### 15 February 2026
@@ -121,6 +132,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** IT Consulting
 - **Website:** bits.com.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Tunisian IT services and consulting firm.
 
 ### 17 February 2026
@@ -129,6 +141,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Real Estate
 - **Website:** sodic.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** One of Egypt's leading real estate development companies.
 
 ### 18 February 2026
@@ -137,6 +150,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Agriculture / Agribusiness
 - **Website:** amtaar.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** A major agricultural investment and consulting firm operating in Sudan, managing 6,000 hectares of irrigated land and serving as a key player in national food security..
 
 ### 19 February 2026
@@ -145,6 +159,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Airlines
 - **Website:** aircotedivoire.com
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Victim Description:** National airline of Ivory Coast.
 
 - **Analysis:**
@@ -156,6 +171,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Accounting
 - **Website:** shora.ma
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Moroccan accounting and financial advisory firm.
 
 - **Analysis:**
@@ -163,10 +179,11 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 
 ### 20 February 2026
 #### 🇪🇬 Egypt - moa.gov.eg (Ministry of Agriculture)
-- **Ransomware Group:** lockbit5
+- **Ransomware Group:** LockBit 5.0.0
 - **Sector:** Government
 - **Website:** moa.gov.eg
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian Ministry of Agriculture and Land Reclamation.
 
 ### 22 February 2026
@@ -175,6 +192,7 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Retail
 - **Website:** cymot.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Namibian supplier of spares, tools, and equipment.
 
 ### 24 February 2026
@@ -183,12 +201,14 @@ February 2026 includes **20 unique incidents** attributed to **ransomware or dat
 - **Sector:** Energy
 - **Website:** enertec.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** South African energy solutions and battery distribution company.
 
 ### 27 February 2026
 #### 🇿🇦 South Africa - Diesel-Electric
-- **Ransomware Group:** Lockbit5
+- **Ransomware Group:** LockBit 5.0.0
 - **Sector:** Automotive
 - **Website:** diesel-electric.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Major distributor in South Africa specialized in automotive components.

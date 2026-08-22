@@ -1,382 +1,293 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Leak-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
-# CTI Report: Cyber attacks in Africa - January 2025
-👉🏾 [**French version available here** ](./README_FR.md)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-January%202025-lightgrey)
+
+# CTI Report - Cyberattacks in Africa - January 2025
+
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Executive summary
-- **Total number of recorded attacks:** 16
-- **Most active ransomware groups:** funksec (6 attacks), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1).
-- **Most targeted sectors:** Education (5), Public Administrations (3), Healthcare (2), Business Services (2), Retail (1), Logistics (1), Marketing (1), Hospitality (1).
-- **Most affected countries:** Egypt (4), Nigeria (3), Algeria (2), Morocco (2), Kenya (2), South Africa (1), Uganda (1), Zambia (1).
-- **Exfiltrated data volume:** At least 1.5 TB for INTELS Nigeria, 19 GB for molars.co.ke. Other volumes are not specified.
 
+January 2025 contains **17 documented incidents across 8 African countries**. The corpus includes **16 Ransomware** and **1 Data Leak**, with the new Data Leak record concerning **North-West University (NWU)** in South Africa. A publication attributed to SevenZeroDay404 advertises approximately 29,000 student records, but analysis of the sample does not establish that the dataset originated from NWU systems or validate the claimed overall volume.
+
+- **17 incidents**: 16 Ransomware, 1 Data Leak.
+- **8 countries**: Egypt (4), Nigeria (3), South Africa (2), Algeria (2), Morocco (2), Kenya (2), Uganda (1), Zambia (1).
+- **7 documented actor/group labels**: funksec (6), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1), SevenZeroDay404 (1).
+- **Most represented sector**: Education / University with 6 incidents.
+- **Notable claimed volumes**: approximately 1.5 TB for INTELS Nigeria, 19 GB for Molars Dental and 29,000 records for NWU. These claims remain distinct from quantities actually observed.
+
+### 📋 Victim list
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+> The comparison covers publications documented by AFRINTEL. The supplied December 2024 report supports a total of 12 incidents, but does not provide a comparable structured breakdown across the six AFRINTEL incident types.
+
+| Indicator | December 2024 | January 2025 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 12 | 17 | **+5 (+41.7%)** |
+| Ransomware | N/A | 16 | **N/A** |
+| Data Leak | N/A | 1 | **N/A** |
+| Access Sale | N/A | 0 | **N/A** |
+| DDoS | N/A | 0 | **N/A** |
+| Defacement | N/A | 0 | **N/A** |
+| Operational Fraud | N/A | 0 | **N/A** |
+
+> Previous-month categories are not reconstructed by inference. The total rises from 12 to 17, or **+5 (+41.7%)**.
 
 ## 2. Methodology
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during January 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
+- **Scope**: 54 African countries.
+- **Period**: 1-31 January 2025, using the publication or detection date recorded in the incident cards.
+- **Sources**: OSINT, leak sites, underground forums, actor publications and supplied samples when available.
+- **Source of truth**: the validated bilingual pair [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), with editorial review performed first in French.
+- **Qualification**: an actor claim, a published sample and independent confirmation are treated as distinct evidence levels.
+- **Counting**: each incident card counts once in the monthly total.
 
 ## 3. Global overview
 
-### 3.1 Breakdown by ransomware group
-| Ransomware Group | Number of Attacks |
-|-------------------|-------------------|
-| funksec           | 6                 |
-| GDLockerSec       | 3                 |
-| babuk2            | 2                 |
-| ransomhub         | 2                 |
-| spacebears        | 2                 |
-| apt73             | 1                 |
-| **Total**         | **16**            |
-```mermaid
-pie showData
-    title Breakdown by ransomware groups
-    "funksec" : 6
-    "GDLockerSec" : 3
-    "babuk2" : 2
-    "ransomhub" : 2
-    "spacebears" : 2
-    "apt73" : 1
-```
-### 3.2 Breakdown by sector
-| Sector | Number of attacks |
-|---------|-------------------|
-| Education | 5 |
-| Public Administrations | 3 |
-| Healthcare | 2 |
-| Business Services | 2 |
-| Retail | 1 |
-| Logistics | 1 |
-| Digital Marketing | 1 |
-| Hospitality | 1 |
-| **Total** | **16** |
+### 3.1 Incident-type distribution
+
+| Incident type | Count | Share |
+|---|---:|---:|
+| Ransomware | 16 | 94.1% |
+| Data Leak | 1 | 5.9% |
+| Access Sale | 0 | 0.0% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **17** | **100%** |
 
 ```mermaid
 pie showData
-    title Breakdown by industry sector
-    "Education" : 5
-    "Public Administrations" : 3
-    "Healthcare" : 2
-    "Business Services" : 2
-    "Retail" : 1
-    "Logistics" : 1
-    "Digital Marketing" : 1
-    "Hospitality" : 1
-```
-
-### 3.3 Breakdown by Country
-| Country | Number of attacks |
-|------|-------------------|
-| 🇪🇬 Egypt | 4 |
-| 🇳🇬 Nigeria | 3 |
-| 🇩🇿 Algeria | 2 |
-| 🇲🇦 Morocco | 2 |
-| 🇰🇪 Kenya | 2 |
-| 🇿🇦 South Africa | 1 |
-| 🇺🇬 Uganda | 1 |
-| 🇿🇲 Zambia | 1 |
-| **Total** | **16** |
-```mermaid
-pie showData
-    title Attacks by country (January 2025)
-    "🇪🇬 Egypt" : 4
-    "🇳🇬 Nigeria" : 3
-    "🇩🇿 Algeria" : 2
-    "🇲🇦 Morocco" : 2
-    "🇰🇪 Kenya" : 2
-    "🇿🇦 South Africa" : 1
-    "🇺🇬 Uganda" : 1
-    "🇿🇲 Zambia" : 1
-```
-### 3.4 CTI map of Africa
-A visual representation of attacks per country.
-
-- 🇪🇬 Egypt          	       ████   4
-- 🇳🇬 Nigeria             	     ███      3
-- 🇲🇦 Morocco      	    ██         2
-- 🇰🇪 Kenya              	     ██         2
-- 🇩🇿Algeria         	       ██         2
-- 🇿🇦 South Africa 	    █            1
-- 🇺🇬 Uganda   		       █            1
-- 🇿🇲 Zambia       	       █            1
-
-
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Standard global overview
-
-| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
-| 🇳🇬 Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇩🇿 Algeria | 2 | 0 | 2 | 🟧🟧 |
-| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
-| 🇲🇦 Morocco | 2 | 0 | 2 | 🟧🟧 |
-| 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
-| 🇺🇬 Uganda | 1 | 0 | 1 | 🟧 |
-| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
-
-```mermaid
-pie showData
-    title Incident types
+    title Incident types - January 2025
     "Ransomware" : 16
-    "Data leaks + access sales" : 0
+    "Data Leak" : 1
 ```
 
-### Monthly aggregate exposure view
+**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **0 records** (0.0% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+### 3.2 Country distribution
 
-
-### Geographic distribution by region
-
-| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| North Africa | 8 | 8 | 0 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
-| Southern Africa | 2 | 2 | 0 | 🟧🟧 |
-| West Africa | 3 | 3 | 0 | 🟧🟧🟧 |
-| Central Africa | 0 | 0 | 0 |  |
-| East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
+| Country | Ransomware | Data Leak | Total | Distribution |
+|---|---:|---:|---:|---|
+| Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
+| South Africa | 1 | 1 | 2 | 🟧🟦 |
+| Algeria | 2 | 0 | 2 | 🟧🟧 |
+| Morocco | 2 | 0 | 2 | 🟧🟧 |
+| Kenya | 2 | 0 | 2 | 🟧🟧 |
+| Uganda | 1 | 0 | 1 | 🟧 |
+| Zambia | 1 | 0 | 1 | 🟧 |
+| **Total** | **16** | **1** | **17** | |
 
 ```mermaid
-xychart
-    title "Occurrences by region"
-    x-axis ["NA","SA","WA","CA","EA"]
-    y-axis "Occurrences" 0 --> 9
-    bar [8,2,3,0,3]
+xychart-beta
+    title "Incidents by country - January 2025"
+    x-axis ["EG", "NG", "ZA", "DZ", "MA", "KE", "UG", "ZM"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 3, 2, 2, 2, 2, 1, 1]
 ```
-Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
 
-### Sector distribution
+**Legend:** `EG` = Egypt | `NG` = Nigeria | `ZA` = South Africa | `DZ` = Algeria | `MA` = Morocco | `KE` = Kenya | `UG` = Uganda | `ZM` = Zambia
 
-| Sector | Records | Share | Activity |
-| :--- | ---: | ---: | :--- |
-| Education / University | 5 | 31.2% | ██████████ |
-| Government / Administration | 3 | 18.8% | ██████ |
-| Healthcare / Medical | 3 | 18.8% | ██████ |
-| Technology / IT | 2 | 12.5% | ████ |
-| Energy / Utilities | 1 | 6.2% | ██ |
-| Professional / Business Services | 1 | 6.2% | ██ |
-| Retail / E-commerce | 1 | 6.2% | ██ |
+### 3.3 Ransomware versus Data Leak by country
 
-### Most visible actors
+```mermaid
+xychart-beta
+    title "Ransomware vs Data Leak by country - January 2025"
+    x-axis ["EG", "NG", "ZA", "DZ", "MA", "KE", "UG", "ZM"]
+    y-axis "Incidents" 0 --> 5
+    bar [4, 3, 1, 2, 2, 2, 1, 1]
+    bar [0, 0, 1, 0, 0, 0, 0, 0]
+```
 
-| Actor / Group | Records | Activity |
-| :--- | ---: | :--- |
+**Series legend:** first series = 🟧 Ransomware | second series = 🟦 Data Leak.  
+**Countries:** `EG` = Egypt | `NG` = Nigeria | `ZA` = South Africa | `DZ` = Algeria | `MA` = Morocco | `KE` = Kenya | `UG` = Uganda | `ZM` = Zambia
+
+### 3.4 Geographic distribution by region
+
+| Region | Incidents | Share |
+|---|---:|---:|
+| North Africa | 8 | 47.1% |
+| Southern Africa | 3 | 17.6% |
+| West Africa | 3 | 17.6% |
+| Central Africa | 0 | 0.0% |
+| East Africa | 3 | 17.6% |
+| **Total** | **17** | **100%** |
+
+```mermaid
+xychart-beta
+    title "Incidents by region - January 2025"
+    x-axis ["NA", "SA", "WA", "CA", "EA"]
+    y-axis "Incidents" 0 --> 9
+    bar [8, 3, 3, 0, 3]
+```
+
+**Legend:** `NA` = North Africa | `SA` = Southern Africa | `WA` = West Africa | `CA` = Central Africa | `EA` = East Africa
+
+### 3.5 Sector distribution
+
+| Sector | Incidents | Share | Activity |
+|---|---:|---:|---|
+| Education / University | 6 | 35.3% | ██████████ |
+| Government / Administration | 3 | 17.6% | █████ |
+| Healthcare / Medical | 2 | 11.8% | ███ |
+| Technology / IT | 2 | 11.8% | ███ |
+| Energy / Utilities | 1 | 5.9% | ██ |
+| Professional / Business Services | 1 | 5.9% | ██ |
+| Retail / E-commerce | 1 | 5.9% | ██ |
+| Hospitality / Tourism | 1 | 5.9% | ██ |
+| **Total** | **17** | **100%** | |
+
+```mermaid
+xychart-beta
+    title "Incidents by sector - January 2025"
+    x-axis ["EDU", "GOV", "HEA", "TEC", "ENE", "PRO", "RET", "HOS"]
+    y-axis "Incidents" 0 --> 7
+    bar [6, 3, 2, 2, 1, 1, 1, 1]
+```
+
+**Legend:** `EDU` = Education / University | `GOV` = Government / Administration | `HEA` = Healthcare / Medical | `TEC` = Technology / IT | `ENE` = Energy / Utilities | `PRO` = Professional / Business Services | `RET` = Retail / E-commerce | `HOS` = Hospitality / Tourism
+
+### 3.6 Documented actors / groups
+
+| Actor / Group | Incidents | Activity |
+|---|---:|---|
 | funksec | 6 | ██████████ |
 | GDLockerSec | 3 | █████ |
 | babuk2 | 2 | ███ |
 | ransomhub | 2 | ███ |
 | spacebears | 2 | ███ |
 | apt73 | 1 | ██ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| SevenZeroDay404 | 1 | ██ |
+| **Total** | **17** | |
 
-### Month-on-month comparison
+```mermaid
+xychart-beta
+    title "Documented actors or groups - January 2025"
+    x-axis ["FUN", "GDL", "BAB", "RAN", "SPA", "APT", "SEV"]
+    y-axis "Incidents" 0 --> 7
+    bar [6, 3, 2, 2, 2, 1, 1]
+```
 
-Using the validated incident cards as the counting source, January 2025 recorded **16** incidents versus **12** in the preceding month (an increase of **+4**; **+33.3%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
-
-| Metric | Previous month | Current month | Change |
-|---|---:|---:|---:|
-| Recorded incident cards | 12 | 16 | +4 (+33.3%) |
+**Legend:** `FUN` = funksec | `GDL` = GDLockerSec | `BAB` = babuk2 | `RAN` = ransomhub | `SPA` = spacebears | `APT` = apt73 | `SEV` = SevenZeroDay404
 
 ## 4. Detailed analysis by incident type
-### 4.1 FunkSec (6 attacks)
-- **09/01/2025:** gags.gov.eg (Egypt, administrations) - Claim - Data Sample Published, High confidence: authenticated admin-panel access observed, including a SQL injection payload.
-- **11/01/2025:** seocommarrakech.com (Morocco, marketing)
-- **15/01/2025:** mts.gov.eg (Egypt, administrations) - Claim - Data Sample Published, High confidence: internal system reports (permits, port traffic, payment collection) reviewed, dated consistently with the claim.
-- **21/01/2025:** cu-barika.dz (Algeria, education)
-- **26/01/2025:** achieverssciencejournal.org (Nigeria, education) - Claim - Data Sample Published, High confidence.
-- **27/01/2025:** qed.co.ug (Uganda, business services/messaging) - Claim - Data Sample Published, Very High confidence: 1.8M+ contact records observed and a self-created "Funksec" admin account left inside the victim's application.
 
-*Note:* funksec primarily targeted administrations and education, with a varied geographic distribution. Three of the six claims (GAGS, MTS, QED) are now corroborated by reviewed material rather than resting on the leak-site post alone.
+### 4.1 Ransomware - 16 incidents
 
-### 4.2 GDLockerSec (3 attacks)
-- **24/01/2025:** lnrbda.gov.ng (Nigeria, administrations)
-- **24/01/2025:** usmba.ac.ma (Morocco, education)
-- **26/01/2025:** fgse.cu.edu.eg (Egypt, education)
+The 16 Ransomware records involve six groups or labels: funksec (6), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2) and apt73 (1). The Ransomware classification describes the publication or extortion context recorded in the victim cards and does not imply that encryption occurred in every case.
 
-*Note:* GDLockerSec struck educational and governmental institutions, with seemingly small data volumes (a few MB).
+Several records contain reviewed material beyond a simple listing: GAGS, MTS, LNRBDA, USMBA, Achievers Journal, QED, Workers and Molars include samples or technical evidence described in the victim cards. Evidence levels remain incident-specific.
 
-### 4.3 Babuk2 (2 attacks)
-- **27/01/2025:** workers.com.zm (Zambia, HR services) - Claim - Data Sample Published, High confidence: a full WordPress/WooCommerce/GiveWP database export was reviewed; the reviewed file carried no actor-specific branding, so attribution to babuk2 is retained but flagged for manual verification.
-- **27/01/2025:** zetech.ac.ke (Kenya, education)
+### 4.2 Data Leak - 1 incident
 
-*Note:* Babuk2 targeted a service company and a university.
-
-### 4.4 Ransomhub (2 attacks)
-- **06/01/2025:** molars.co.ke (Kenya, healthcare) - 19 GB exfiltrated
-- **14/01/2025:** INTELS Nigeria (Nigeria, logistics) - 1.5 TB exfiltrated
-
-*Note:* Ransomhub carried out two significant attacks with large data volumes, notably on a Nigerian critical infrastructure.
-
-### 4.5 spacebears (2 attacks)
-- **14/01/2025:** Sharm Reef Hotel (Egypt, hospitality)
-- **21/01/2025:** Inaya Clinique (Algeria, healthcare)
-
-*Note:* Space Bears targeted tourism and healthcare.
-
-### 4.6 apt73 (1 attack)
-- **09/01/2025:** pnp.co.za (South Africa, retail) - Pick n Pay, a major retailer.
-
+**🇿🇦 North-West University (NWU)** is the only January record classified as Data Leak. SevenZeroDay404 presents a database titled **"29K NWU Student Database"** with a sample containing names, GPA values, academic programmes and study years. Review identifies 2,893 occurrences of structured GPA values, but no explicit marker directly linking the data to `nwu.ac.za` was identified in the sample. NWU is therefore the claimed victim, while the dataset origin and the 29,000-record volume remain independently unconfirmed.
 
 ## 5. Sectoral impact
-- **Education:** 5 attacks (universities, schools, academic journals). Groups funksec, GDLockerSec, and babuk2 are particularly active in this sector.
-- **Public administrations:** 3 attacks (government websites, agencies). funksec and GDLockerSec are the main actors.
-- **Healthcare:** 2 attacks (dental clinic, hospital). Ransomhub and Spacebears.
-- **Business Services:** 2 attacks (consulting firm in Uganda and HR services in Zambia). funksec and babuk2.
-- **Retail:** 1 attack (Pick n Pay) by apt73.
-- **Logistics:** 1 major attack (INTELS Nigeria) by Ransomhub.
-- **Marketing:** 1 attack (SEO agency) by Funksec.
-- **Hospitality:** 1 attack (hotel) by Spacebears.
 
+**Education / University** becomes the most represented sector with **6 of 17 incidents (35.3%)** after the addition of NWU. **Government / Administration** follows with 3 incidents. Healthcare and Technology each account for 2 incidents.
+
+This concentration describes the January 2025 AFRINTEL corpus and is not sufficient to establish a coordinated campaign against the education sector.
 
 ## 6. Threat actor profile
-### 6.1 Threat actor profile
 
-Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+### 6.1 Profile
+
+funksec remains the most visible label with **6 records**, followed by GDLockerSec with 3. SevenZeroDay404 appears once, associated with the NWU Data Leak publication.
+
+Publication frequency does not demonstrate actor coordination or superior technical capability.
 
 ### 6.2 Risk assessment
 
-Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+| Country | Risk signal in the corpus |
+|---|---|
+| Egypt | 4 incidents, including multiple public-sector and education organizations |
+| Nigeria | 3 incidents, including a federal agency and oil-sector services |
+| South Africa | 2 incidents across retail and higher education |
+| Uganda | 1 incident, but with large-scale contact exposure and administrator access described in the QED card |
+| Algeria, Morocco, Kenya | 2 incidents each across education, healthcare or technology |
+| Zambia | 1 incident with a structured backend database described in the Workers card |
 
-- **Egypt:** 4 attacks, mainly administrations and education.
-- **Nigeria:** 3 attacks, including a critical one on the oil sector.
-- **Algeria:** 2 attacks (education and healthcare).
-- **Morocco:** 2 attacks (marketing and education).
-- **Kenya:** 2 attacks (healthcare and education).
-- **South Africa:** 1 attack on a major retailer.
-- **Uganda:** 1 attack (consulting).
-- **Zambia:** 1 attack (HR services).
-
-East and North Africa are the most affected, with a notable presence in West Africa (Nigeria).
-### 6.1. Actor → victim → country graph
-```mermaid
-graph LR
-    %% Group: FunkSec
-    FunkSec["FunkSec"] -->|"gags.gov.eg / mts.gov.eg"| EG["🇪🇬 Egypt"]
-    FunkSec -->|"seocommarrakech.com"| MA["🇲🇦 Morocco"]
-    FunkSec -->|"cu-barika.dz"| DZ["🇩🇿 Algeria"]
-    FunkSec -->|"achieverssciencejournal.org"| NG["🇳🇬 Nigeria"]
-    FunkSec -->|"qed.co.ug"| UG["🇺🇬 Uganda"]
-
-    %% Group: GDLockerSec
-    GDLockerSec["GDLockerSec"] -->|"lnrbda.gov.ng"| NG
-    GDLockerSec -->|"usmba.ac.ma"| MA
-    GDLockerSec -->|"fgse.cu.edu.eg"| EG
-
-    %% Group: RansomHub
-    RansomHub["RansomHub"] -->|"Molars Dental"| KE["🇰🇪 Kenya"]
-    RansomHub -->|"INTELS"| NG
-
-    %% Group: SpaceBears
-    SpaceBears["SpaceBears"] -->|"Sharm Reef Hotel"| EG
-    SpaceBears -->|"Clinique Inaya"| DZ
-
-    %% Group: Babuk2
-    Babuk2["Babuk2"] -->|"workers.com.zm"| ZM["🇿🇲 Zambia"]
-    Babuk2 -->|"Zetech University"| KE
-
-    %% Group: APT73
-    APT73["APT73"] -->|"Pick n Pay"| ZA["🇿🇦 South Africa"]
-
-    %% Group: Lynx (New addition from your recent analysis)
-    Lynx["Lynx"] -->|"Lion of Africa Insurance"| ZA
-
-    %% Styling for better visibility
-    style FunkSec fill:#1a1a1a,stroke:#333,color:#fff
-    style Lynx fill:#b30000,stroke:#333,color:#fff
-    style RansomHub fill:#b30000,stroke:#333,color:#fff
-```
-### 6.2. Attack timeline
-```mermaid
-timeline
-    title AFRINTEL January 2025 - Attack Timeline
-    section 06 Jan
-        ransomhub : Molars Dental (🇰🇪 Kenya)
-    section 09 Jan
-        funksec : GAGS (🇪🇬 Egypt)
-        apt73 : Pick n Pay (🇿🇦 South Africa)
-    section 11 Jan
-        funksec : SEOCOM (🇲🇦 Morocco)
-    section 14 Jan
-        ransomhub : INTELS (🇳🇬 Nigeria)
-        spacebears : Sharm Reef (🇪🇬 Egypt)
-    section 15 Jan
-        funksec : MTS (🇪🇬 Egypt)
-    section 21 Jan
-        funksec : CU Barika (🇩🇿 Algeria)
-        spacebears : Inaya (🇩🇿 Algeria)
-    section 24 Jan
-        GDLockerSec : LNRBDA (🇳🇬Nigeria)
-        GDLockerSec : USMBA (🇲🇦 Morocco)
-    section 26 Jan
-        funksec : Achievers Journal (Nigeria)
-        GDLockerSec : FGSE (🇪🇬Egypt)
-    section 27 Jan
-        funksec : QED (🇺🇬 Uganda)
-        babuk2 : Workers (🇿🇲 Zambia)
-        babuk2 : Zetech (🇰🇪 Kenya)
-```
+This table supports validation and monitoring priorities. It is not a measure of nationwide compromise.
 
 ## 7. Key trends and intelligence gaps
+
 ### 7.1 Observed trends
 
-The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+1. **Education leads the corpus**: 6 of 17 records concern education, universities or research.
+2. **Funksec remains the most frequent label**: 6 records, or 35.3% of the corpus.
+3. **Incident-type diversification**: the NWU addition introduces the first Data Leak record into January, which is no longer an all-ransomware corpus.
+4. **Geographic concentration**: Egypt, Nigeria, South Africa, Algeria, Morocco and Kenya account for 15 of 17 records.
 
 ### 7.2 Intelligence gaps
 
-The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+- The technical origin of the sample attributed to NWU is not confirmed by a direct marker in the reviewed data.
+- Actor-claimed volumes cannot always be verified from the available samples.
+- Initial access vectors and operational impact remain unknown for several cases.
+- A structured incident-type breakdown for December 2024 is not available in the supplied files, preventing a reliable category-level comparison.
 
-## 8. MITRE ATT&CK mapping (contextual)
-| Phase | Technique ID | Name | Incident association |
-|---|---|---|---|
-| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
-| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+### 7.3 Monthly evolution
 
-These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+```mermaid
+xychart-beta
+    title "Documented incidents - December 2024 vs January 2025"
+    x-axis ["DEC", "JAN"]
+    y-axis "Incidents" 0 --> 18
+    bar [12, 17]
+```
 
-### Contextual observations
-Based on the limited descriptions, we note:
-- **Data Exfiltration:** Groups claim significant volumes (1.5 TB for INTELS, 19 GB for molars).
-- **Targeting Specific Sectors:** Administrations and education are prioritized.
-- **Use of Leak Sites:** Groups publish data samples to apply pressure.
-- **Diversity of Groups:** 6 different groups active in January 2025.
+**Legend:** `DEC` = December 2024 | `JAN` = January 2025.
 
+The documented total increases from **12 to 17**, or **+5 (+41.7%)**. This describes AFRINTEL's monitored public corpus and does not by itself establish an equivalent rise in the real number of compromises.
+
+## 8. MITRE ATT&CK mapping - contextual
+
+| Phase | Technique | Analytical scope |
+|---|---|---|
+| Initial access | T1190 - Exploit Public-Facing Application | Relevant to the GAGS case where an SQL injection pattern is visible; the full exploitation chain is not established. |
+| Collection | T1005 - Data from Local System | Defensive context for cases containing internal exports or data; does not prove each actor's collection method. |
+| Collection | T1213 - Data from Information Repositories | Relevant where reviewed material corresponds to structured databases or repositories. |
+
+> These techniques are used as defensive mappings. No ATT&CK mapping is assigned to the NWU case because the available material does not establish the access or collection method.
 
 ## 9. Recommendations
-- **Public sector:** Strengthen security for government websites and educational institutions, which are often vulnerable.
-- **Private sector:** Logistics and healthcare companies must prioritize the protection of sensitive data.
-- **Group monitoring:** Track activities of funksec, GDLockerSec, and ransomhub, which appear most prolific.
-- **Awareness:** Train employees on phishing and social engineering risks, likely initial access vectors.
 
+- **Education and research**: require phishing-resistant MFA for administrative accounts, segment student and research systems, control bulk exports and monitor privileged accounts.
+- **Public administrations**: strengthen exposed-application security, code review and administrative-access logging.
+- **Organizations processing personal data**: apply data minimization, encryption, access governance and monitoring for large exports.
+- **CTI validation**: keep actor-claimed volumes, actually reviewed data and independent confirmations as separate evidence dimensions.
 
 ## 10. SOC and tactical recommendations
+
 ### Observed
 
-Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+The cards document data publications, structured exports, visible administrator access and, for GAGS, an SQL injection pattern in reviewed material.
 
-### Hypotheses
+### Assumptions
 
-Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+The initial vector remains unknown for several incidents. Do not automatically attribute these cases to phishing, vulnerability exploitation or credential theft without incident-specific evidence.
 
 ### Preventive
 
-Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+Monitor administrative authentication, account creation, database exports, large outbound transfers, unusual access to student systems, public-facing applications and messaging platforms. Maintain MFA, least privilege, segmentation, tested backups and rapid revocation of suspicious access.
 
 ## 11. Strategic recommendations
-1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
-2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
-3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+1. Prioritize resilience in the education sector, which accounts for more than one-third of the month's records.
+2. Strengthen regional information sharing between universities, CERTs and public administrations.
+3. Record evidence levels systematically to distinguish actor publication, reviewed sample and victim confirmation.
+4. Keep AFRINTEL statistics tied to the observed corpus rather than presenting them as an exhaustive measure of real cyber activity in Africa.
 
 ## 12. Conclusion
-January 2025 was marked by sustained activity from several ransomware groups in Africa, with a focus on public and educational institutions. The group funksec stands out for its frequency, while ransomhub carried out the largest attack. The diversity of actors and affected sectors underscores the need for increased vigilance and regional cooperation in cybersecurity.
 
+January 2025 now contains **17 documented incidents** across **8 countries**, split into **16 Ransomware** and **1 Data Leak**. The addition of North-West University raises South Africa to **2 incidents** and Education / University to **6 incidents**.
 
-### Author
-*Adama ASSIONGBON*  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+funksec remains the most frequent label with 6 records. The new NWU publication is attributed to SevenZeroDay404, but the supplied sample does not independently establish that it originated from the university's systems or validate the claimed 29,000 records.
 
----
-*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+**AFRINTEL** - Open African CTI Monitoring Initiative

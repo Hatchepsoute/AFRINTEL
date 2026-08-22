@@ -1,371 +1,404 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
-![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%26%20Data%20Breach-red)
-![Period](https://img.shields.io/badge/Période-Mars%202026-lightgrey)
-![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
+![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
+![Menaces](https://img.shields.io/badge/Menaces-Ransomware%20%7C%20Fuite%20%7C%20Fraude-red)
+![Période](https://img.shields.io/badge/Période-Mars%202026-lightgrey)
+![Type d'Intel](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
 # Rapport CTI - Cyberattaques en Afrique (Mars 2026)
+
 👉🏾 [**English version available here**](./README.md)
+
 ## 1. Synthèse exécutive
 
-Mars 2026 a rapporté **41 incidents cyber** contre des cibles africaines, revendiqués ou détectés dans le mois. Le continent a continué de faire face au même double front que tout au long de l'année : **revendications ou publications ransomware** d'un côté, **fuites de données et intrusions système** de l'autre. Une publication ransomware, à elle seule, ne prouve ni chiffrement ni interruption d'activité. Principales conclusions :
+Mars 2026 totalise **41 incidents** divulgués, revendiqués ou identifiés par AFRINTEL : **19 revendications/publications ransomware (46,3 %)**, **21 fuites de données ou intrusions système (51,2 %)** et **1 incident de fraude opérationnelle (2,4 %)**.
 
-- **19 attaques de ransomware (46,3 %)** et **22 fuites de données / intrusions (53,7 %)**.
-- **13 pays touchés** ; **Afrique du Sud** (13 incidents), **Maroc** (8) et **Égypte** (9) représentent 73 % des victimes.
-- **26 acteurs attribués et 1 incident sans attribution publique** ; **CrowStealer** (5 incidents), **APT73/BASHE** (4) et **XP95** (3) sont les plus actifs.
-- **Secteurs gouvernemental et éducatif** : 39 % des victimes, montrant un ciblage stratégique des institutions publiques.
-- Fuites massives : ministère de la Santé égyptien (3,8 M d’enregistrements), province de Gauteng (3,8 To), Remita Nigeria (3 To), Stats SA (154 Go). Au Maroc, plusieurs fuites majeures ont touché des institutions gouvernementales, dont le Ministère de la Justice (300 Go de dossiers judiciaires).
-- Incident majeur actualisé : **UBA Sénégal** - l’avis ngCERT ngCERT-2026-060005 fait état de 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; le ngCERT les présente comme supérieures à 2 millions USD. L’opération a eu lieu fin janvier et a été révélée en mars.
-- Menaces émergentes : **Loozap (Multi-pays)** - 34 000 comptes utilisateurs divulgués (mots de passe en SHA1), affectant des utilisateurs dans plusieurs pays africains ; **Ministère de la Santé de Guinée** - compromission suspectée des tableaux de bord DHIS2 par l’acteur Keymous.
+**L’Afrique du Sud (13), l’Égypte (9) et le Maroc (8) concentrent 30 des 41 fiches, soit 73,2 %.** Le mois montre également une menace plus diversifiée qu’en février : les expositions de données et compromissions système dépassent légèrement l’activité ransomware.
 
-### 📋 Liste des victimes
+Plusieurs dossiers à fort impact concernent des environnements gouvernementaux, éducatifs, sanitaires et financiers. On retrouve notamment la revendication de **3,8 millions d’enregistrements** attribuée au ministère égyptien de la Santé, **3,8 To** attribués au Gouvernement provincial du Gauteng, **3 To** attribués à Remita et **300 Go** attribués au ministère marocain de la Justice. Ces chiffres restent soumis aux éléments et limites documentés dans chaque fiche victime.
+
+UBA Sénégal est représenté dans ce rapport selon la nouvelle catégorie AFRINTEL **Fraude opérationnelle**. Sa fiche historique actuelle décrit l’événement comme une fraude opérationnelle hors de l’ancienne taxonomie à quatre types ; le présent rapport applique la nouvelle taxonomie à six types sans modifier les faits sous-jacents.
+
+### Liste des victimes
 
 👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 
+---
+
+
+### 1.1 Comparaison avec le mois précédent
+
+> Comparaison fondée sur les corpus mensuels AFRINTEL validés. Une variation du nombre de fiches documentées ne prouve pas, à elle seule, une variation du nombre réel de compromissions.
+
+| Indicateur | Février 2026 | Mars 2026 | Évolution observée |
+|---|---:|---:|---:|
+| Total incidents | 20 | 41 | **+21 (+105,0 %)** |
+| Ransomware | 20 | 19 | **-1 (-5,0 %)** |
+| Data Leak | 0 | 21 | **+21 (nouveau)** |
+| Access Sale | 0 | 0 | **0 (stable)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 1 | **+1 (nouveau)** |
+
+> Règle de lecture : si la valeur du mois précédent est `0` et celle du mois courant est supérieure à `0`, l'évolution est indiquée comme `nouveau` plutôt qu'avec un pourcentage artificiel. Les catégories absentes restent affichées à `0`.
+
 ## 2. Méthodologie
 
-- **Périmètre** : 54 pays africains.
-- **Période** : 1er - 31 mars 2026 (incidents révélés ou revendiqués durant ce mois ; les attaques peuvent être antérieures).
-- **Sources** : Dark web, DLS (sites de fuite), OSINT, canaux Telegram, forums underground, rapports médiatiques.
-- **Inclusion** : incidents publiquement revendiqués ou attribués avec victime, pays et secteur identifiés.
-- **Typologie** :
-  - *Ransomware* : publication d’une victime ou revendication par un groupe ransomware. Le chiffrement n’est pas présumé sans élément probant.
-  - *Fuite de données / intrusion* : exfiltration non chiffrée, base de données vendue ou publiée, ou compromission système menant à une fraude financière.
-
-## 3. Vue d’ensemble
-
-| Indicateur                     | Valeur |
-|--------------------------------|--------|
-| Nombre total de victimes       | 41     |
-| Pays touchés                   | 12 (plus 1 incident multi-pays) |
-| Acteurs attribués              | 26     |
-| Incidents de ransomware        | 19 (46,3 %) |
-| Fuites de données / intrusions | 22 (53,7 %) |
-
-**Pays les plus ciblés :**
-- 🇿🇦 Afrique du Sud : 13 victimes
-- 🇲🇦 Maroc : 8 victimes
-- 🇪🇬 Égypte : 9 victimes
-- 🇳🇬 Nigeria : 2 victimes
-- 🌍 Multi-pays (Afrique) : 1 victime
-- 🇩🇿 Algérie : 1 victime
-- 🇸🇳 Sénégal : 1 victime
-- 🇬🇳 Guinée : 1 victime
-- 🇿🇲 Zambie : 1 victime
-- 🇲🇬 Madagascar : 1 victime
-- 🇹🇳 Tunisie : 1 victime
-- 🇳🇦 Namibie : 1 victime
-- 🇹🇿 Tanzanie : 1 victime
-
-```mermaid
-pie
- title Nombre de victimes / pays (mars 2026)
- "Afrique du Sud (13)" : 13
- "Maroc (8)" : 8
- "Égypte (9)" : 9
- "Nigeria (2)" : 2
- "Multi-pays (1)" : 1
- "Algérie (1)" : 1
- "Sénégal (1)" : 1
- "Guinée (1)" : 1
- "Zambie (1)" : 1
- "Madagascar (1)" : 1
- "Tunisie (1)" : 1
- "Namibie (1)" : 1
- "Tanzanie (1)" : 1
-```
-
-**Comparaison ransomware vs fuites de données par pays :**
-| Pays                  | Ransomware | Fuites de données |
-|-----------------------|------------|-------------------|
-| Afrique du Sud        | 7          | 6                 |
-| Maroc                 | 5          | 3                 |
-| Égypte                | 3          | 6                 |
-| Nigeria               | 0          | 2                 |
-| Multi-pays            | 0          | 1                 |
-| Algérie               | 0          | 1                 |
-| Sénégal               | 0          | 1                 |
-| Guinée                | 0          | 1                 |
-| Zambie                | 0          | 1                 |
-| Madagascar            | 1          | 0                 |
-| Tunisie               | 1          | 0                 |
-| Namibie               | 1          | 0                 |
-| Tanzanie              | 1          | 0                 |
-
-```mermaid
-pie
- title Attaques ransomware par pays
- "Afrique du Sud (7)" : 7
- "Maroc (5)" : 5
- "Égypte (3)" : 3
- "Madagascar (1)" : 1
- "Tunisie (1)" : 1
- "Namibie (1)" : 1
- "Tanzanie (1)" : 1
-```
-```mermaid
-pie
- title Fuites de données par pays
- "Afrique du Sud (6)" : 6
- "Égypte (6)" : 6
- "Maroc (3)" : 3
- "Nigeria (2)" : 2
- "Multi-pays (1)" : 1
- "Algérie (1)" : 1
- "Sénégal (1)" : 1
- "Guinée (1)" : 1
- "Zambie (1)" : 1
-```
-
-**Répartition sectorielle :**
-| Secteur                    | Incidents | Pourcentage |
-|----------------------------|-----------|-------------|
-| Gouvernement / Admin       | 9         | 22,0 %      |
-| Éducation / Université     | 7         | 17,1 %      |
-| Santé                      | 4         | 9,8 %       |
-| Assurance                  | 3         | 7,3 %       |
-| Télécommunications         | 3         | 7,3 %       |
-| Ingénierie/Construction    | 3         | 7,3 %       |
-| Finance / Banque           | 2         | 4,9 %       |
-| IT/Consulting              | 2         | 4,9 %       |
-| Fintech                    | 1         | 2,4 %       |
-| E-commerce / Petites annonces | 1      | 2,4 %       |
-| Immobilier / Petites annonces | 1      | 2,4 %       |
-| Sport / Loisirs            | 1         | 2,4 %       |
-| Aviation                   | 1         | 2,4 %       |
-| Gestion de patrimoine      | 1         | 2,4 %       |
-| Recherche / Think tank    | 1         | 2,4 %       |
-| Alimentation / Boissons   | 1         | 2,4 %       |
-
-```mermaid
-pie
- title Répartition sectorielle (mars 2026)
- "Gouvernement (9)" : 9
- "Éducation (7)" : 7
- "Santé (4)" : 4
- "Assurance (3)" : 3
- "Télécoms (3)" : 3
- "Ingénierie/Construction (3)" : 3
- "Finance/Banque (2)" : 2
- "IT/Consulting (2)" : 2
- "Fintech (1)" : 1
- "E-commerce/Annonces (1)" : 1
- "Immobilier/Annonces (1)" : 1
- "Sport/Loisirs (1)" : 1
- "Aviation (1)" : 1
- "Gestion de patrimoine (1)" : 1
- "Recherche (1)" : 1
- "Alimentation / Boissons (1)" : 1
-```
-
-**Acteurs les plus prolifiques :**
-| Acteur           | Type           | Incidents | Cibles principales |
-|------------------|----------------|-----------|---------------------|
-| CrowStealer      | Courtier de données | 5    | Gouvernement et éducation égyptiens |
-| APT73/BASHE      | Ransomware     | 4         | Institutions d’État marocaines |
-| XP95             | Ransomware     | 3         | Gouvernement sud-africain |
-| xNov             | Fuite de données | 3       | Supply chain marocaine, sport sud-africain, éducation |
-| Qilin            | Ransomware     | 2         | Maroc, Madagascar |
-| TheGentlemen    | Ransomware     | 2         | Tunisie, Afrique du Sud |
-| INC Ransom       | Ransomware     | 2         | Namibie, Afrique du Sud |
-
-## 4. Synthèse géographique
-
-> **Pour le détail de chaque incident, voir [`victims_FR.md`](./victims_FR.md).**
-
-- **Concentration :** Afrique du Sud (13), Maroc (8) et Égypte (8) réunissent 29 des 41 incidents du mois, 70,7 %.
-- **Répartition des menaces :** 19 revendications ou publications ransomware, 22 fuites de données ou intrusions système, réparties dans 14 pays.
-- **Exposition du secteur public :** administrations et établissements éducatifs restent très présents, avec des revendications qui touchent des institutions en Égypte, au Maroc, en Afrique du Sud, au Sénégal et en Guinée.
-- **Cas à fort impact :** la fraude signalée sur UBA Sénégal, plus des revendications volumétriques contre le ministère égyptien de la Santé, le gouvernement provincial du Gauteng, Remita et le ministère marocain de la Justice.
+- **Périmètre :** organisations africaines et jeux de données multi-pays africains.
+- **Période :** 1er-31 mars 2026 ; certains incidents sont antérieurs mais ont été identifiés ou révélés durant le mois.
+- **Sources :** DLS/sites de fuite, forums underground, OSINT, avis publics et éléments examinés dans les fiches victimes.
+- **Règle de comptage :** une fiche victime = un incident global. Loozap reste une seule fiche multi-pays.
+- **Taxonomie :** `Ransomware`, `Data Leak`, `Access Sale`, `DDoS`, `Defacement`, `Operational Fraud`. Trois catégories seulement sont présentes en mars.
+- **Ransomware :** une publication ou revendication ne permet pas de conclure automatiquement à un chiffrement.
+- **Discipline de preuve :** volumes, accès et attributions revendiqués ne sont pas transformés en faits confirmés sans éléments suffisants.
+- **Normalisation sectorielle :** chaque fiche est comptée une seule fois dans un secteur principal.
 
 ---
 
-## 5. Analyse détaillée par type d’incident
+## 3. Vue d’ensemble
 
-### 5.1 Ransomware (19 incidents)
+| Indicateur | Mars 2026 |
+|---|---:|
+| Total incidents | **41** |
+| Fiches rattachées directement à un pays | **40** |
+| Fiches multi-pays | **1** |
+| Pays directs | **12** |
+| Acteurs / Groupes attribués | **26** |
+| Incidents non attribués | **1** |
+| Ransomware | **19 (46,3 %)** |
+| Fuites / intrusions | **21 (51,2 %)** |
+| Fraude opérationnelle | **1 (2,4 %)** |
 
-| Pays             | Attaques ransomware | Acteurs principaux |
-|------------------|---------------------|---------------------|
-| Afrique du Sud   | 7                   | XP95 (3), LockBit 5.0, Lynx, DragonForce, TheGentlemen, NightSpire, INC Ransom, Coinbase Cartel |
-| Maroc            | 5                   | APT73/BASHE (3), Qilin, TheGentlemen |
-| Égypte           | 3                   | Crypto24, PEAR, Payload |
-| Madagascar       | 1                   | Qilin |
-| Tunisie          | 1                   | TheGentlemen |
-| Namibie          | 1                   | INC Ransom |
-| Tanzanie         | 1                   | Morpheus |
-
-**Observations clés** :
-- **XP95** est devenu une menace majeure en Afrique du Sud ce mois-ci : gouvernement de Gauteng (3,8 To), Stats SA (154 Go), GCRA (147 Go). Ici, les données sont vendues, pas seulement chiffrées.
-- **APT73/BASHE** s'en est pris à des institutions stratégiques marocaines, HACA, Maroc Telecom, 2M TV, IRES, un schéma qui évoque plus une motivation géopolitique qu'un simple opportunisme.
-- Les assurances ont aussi pris cher en Afrique du Sud : Lion of Africa, The Unlimited.
+### 3.1 Répartition par type d’incident
 
 ```mermaid
-pie
- title les acteurs les plus actifs
- "CrowStealer (5)" : 5
- "APT73/BASHE (4)" : 4
- "XP95 (3)" : 3
- "xNov (3)" : 3
- "Qilin (2)" : 2
- "TheGentlemen (2)" : 2
- "INC Ransom (2)" : 2
+pie showData
+    title Types d'incident - Mars 2026
+    "Ransomware" : 19
+    "Fuite / Intrusion" : 21
+    "Fraude opérationnelle" : 1
 ```
 
-### 5.2 Fuites de données / intrusions système (22 incidents)
-
-| Pays             | Fuites/Intrusions | Acteurs principaux |
-|------------------|-------------------|---------------------|
-| Égypte           | 6                 | CrowStealer (5), Al-Sheikh |
-| Afrique du Sud   | 6                 | xNov (2), TelephoneHooliganism, Blackwinter99, XP95|
-| Maroc            | 3                 | xNov (2), anisanas2 |
-| Nigeria          | 2                 | AshleyWood2022, Bytetobreach |
-| Multi-pays       | 1                 | zimablue |
-| Algérie          | 1                 | Grubder |
-| Sénégal          | 1                 | Non attribué |
-| Guinée           | 1                 | Keymous |
-| Zambie           | 1                 | Spirigatito |
-
-**Observations clés** :
-- **CrowStealer** domine les fuites égyptiennes, avec entre autres une base médicale de 3,8 millions de patients (ministère de la Santé) vendue 2 500 $.
-- **xNov** a mis en circulation des dossiers étudiants (ONOUSC, 3 631 entrées), les données de la supply chain de L'Oréal Maroc (296 pharmacies, 361 000 ventes, secrets OAuth2), et une base équestre d'Eventing South Africa.
-- **UBA Sénégal** (révélé en mars, mais l'opération remonte à fin janvier) : selon [l'avis ngCERT ngCERT-2026-060005](https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions), le cash-out a impliqué 3 421 transactions GAB. Les pertes, d'abord chiffrées à 1,143 milliard de FCFA, sont désormais estimées par le ngCERT à plus de 2 millions USD. Un accès privilégié à l'infrastructure d'autorisation des cartes semble probable, mais la manière dont il a été obtenu, la séquence technique exacte et une éventuelle implication interne restent tous inconnus.
-- **Loozap (multi-pays)**, 34 000 comptes divulgués avec mots de passe en SHA1, adresses IP et données personnelles, touchant des utilisateurs en Égypte, au Kenya, au Ghana, en Éthiopie, au Nigeria et au Mozambique.
-- **Ministère de la Santé de Guinée**, compromission suspectée des tableaux de bord DHIS2 par Keymous, exposant des outils de surveillance sanitaire ainsi que des emails et dossiers du personnel.
-- Deux grosses fuites nigérianes : Remita (3 To, dont des documents KYC et des clés HSM gouvernementales) et l'université Ahmadu Bello (11 000+ dossiers).
-
-## 6. Impact sectoriel
-
-| Secteur                  | Incidents | Pourcentage |
-|--------------------------|-----------|-------------|
-| Gouvernement / Admin     | 9         | 22,0 %      |
-| Éducation / Université   | 7         | 17,1 %      |
-| Santé                    | 4         | 9,8 %       |
-| Assurance                | 3         | 7,3 %       |
-| Télécommunications       | 3         | 7,3 %       |
-| Ingénierie/Construction  | 3         | 7,3 %       |
-| Finance / Banque         | 2         | 4,9 %       |
-| IT/Consulting            | 2         | 4,9 %       |
-| Fintech                  | 1         | 2,4 %       |
-| E-commerce / Annonces    | 1         | 2,4 %       |
-| Immobilier / Annonces    | 1         | 2,4 %       |
-| Sport / Loisirs          | 1         | 2,4 %       |
-| Aviation               | 1         | 2,4 %       |
-| Gestion de patrimoine  | 1         | 2,4 %       |
-| Recherche / Think tank| 1         | 2,4 %       |
-| Alimentation / Boissons| 1        | 2,4 %       |
-
-**Enseignements** :
-- Le secteur public, gouvernement plus éducation, représente **39 %** des incidents du mois.
-- Les données de santé restent une cible de choix : fuite du ministère de la Santé égyptien (3,8 M d'enregistrements), fuites d'assurances sud-africaines, compromission du ministère de la Santé guinéen, même tendance à chaque fois.
-- Les télécoms, Orange Madagascar, Maroc Telecom, continuent de ressortir comme cibles stratégiques.
-- UBA Sénégal mérite d'être isolé comme un risque à part : **fraude financière directe visant les contrôles d'autorisation des paiements**, loin du scénario ransomware classique.
-- Les plateformes de e‑commerce (Loozap) sont de plus en plus ciblées pour le vol d’identifiants.
-
-## 7. Profil des acteurs
-
-| Acteur           | Type           | Incidents | Cibles principales |
-|------------------|----------------|-----------|---------------------|
-| CrowStealer      | Courtier de données | 5    | Gouvernement et éducation égyptiens |
-| APT73/BASHE      | Ransomware     | 4         | Institutions d’État marocaines |
-| XP95             | Ransomware     | 3         | Gouvernement sud-africain |
-| xNov             | Fuite de données | 3       | Supply chain marocaine, sport sud-africain, éducation |
-| Qilin            | Ransomware     | 2         | Maroc, Madagascar |
-| TheGentlemen    | Ransomware     | 2         | Tunisie, Afrique du Sud |
-| INC Ransom       | Ransomware     | 2         | Namibie, Afrique du Sud |
-
-**Acteurs émergents** : xNov (ciblage supply chain), XP95 (gouvernement sud-africain), zimablue (e‑commerce camerounais), Keymous (ministères de la santé ouest-africains), Grubder (secteur tech algérien).
-
-### 7.1 Niveau de risque
-
-| Pays | Risque |
-|------|--------|
-| Afrique du Sud | 🔴 Critique |
-| Maroc | 🔴 Élevé |
-| Égypte | 🔴 Élevé |
-| Nigeria | 🟠 Moyen-Élevé |
-| Sénégal | 🟠 Moyen (post-UBA) |
-| Multi-pays (Loozap) | 🟠 Moyen (émergent) |
-| Guinée | 🟠 Moyen |
-| Autres pays | 🟠 Moyen |
-
-## 8. Tendances clés et lacunes de renseignement
-
-### Tendances
-1. **Le ransomware glisse vers l'extorsion de données.** XP95 et d'autres vendent maintenant ce qu'ils exfiltrent au lieu de se contenter de chiffrer.
-2. **La supply chain devient un point d'entrée.** Smarteez, prestataire de L'Oréal Maroc, rappelle que les sous-traitants digitaux sont un maillon faible.
-3. **Les fuites de données de santé prennent de l'ampleur.** Le ministère de la Santé égyptien, 3,8 M d'enregistrements, pointe de vraies failles dans la sécurité des systèmes publics.
-4. **Certaines opérations semblent géopolitiques.** APT73/BASHE s'est concentré spécifiquement sur les médias et télécoms d'État marocains.
-5. **UBA Sénégal, un autre genre de menace.** Fraude financière directe visant l'autorisation des paiements, cash-out coordonné à grande échelle. Les éléments publics ne disent ni comment l'accès a été obtenu ni quel contrôle SOC a lâché.
-6. **Les identifiants e-commerce sont visés.** Loozap, multi-pays, 34 000 comptes, hashage SHA1 faible, plusieurs pays africains touchés d'un coup.
-
-### Lacunes
-- De nombreuses attaques restent non détectées ou non déclarées ; cette liste ne couvre que les incidents publics.
-- Les volumes de données annoncés peuvent être gonflés.
-- L’opération UBA Sénégal a eu lieu fin janvier, a été révélée en mars, puis documentée par le ngCERT le 25 juin 2026 ; le vecteur d’accès initial reste inconnu.
-- La compromission du ministère de la Santé guinéen reste partiellement confirmée (accès corrélé, pas de divulgation complète).
+**Convention couleur utilisée dans le rapport :** 🟧 Ransomware | 🟦 Fuite de données / intrusion | 🟩 Fraude opérationnelle.
 
 
-### Comparaison factuelle avec février 2026
 
-Cette comparaison utilise les données mensuelles relatives aux victimes et incidents de [février](../02-february/victims_FR.md) et de [mars](./victims_FR.md). Elle décrit uniquement les publications recensées par AFRINTEL et ne conclut pas à une variation du nombre réel de compromissions. La catégorie résiduelle regroupe les fuites de données, ventes d'accès et défacements lorsque le rapport source ne les sépare pas.
+### 3.2 Classement par pays
 
-| Indicateur | février 2026 | mars | Évolution observée |
-| :--- | ---: | ---: | ---: |
-| Incidents documentés | 20 | 41 | +21 (+105,0%) |
-| Ransomware / extorsion | 20 | 19 | -1 |
-| Autres fuites, ventes d'accès ou défacements | 0 | 22 | +22 |
+| Code | Pays / portée | Ransomware | Fuite / intrusion | Fraude opérationnelle | Total |
+|---|---|---:|---:|---:|---:|
+| `ZA` | Afrique du Sud | 7 | 6 | 0 | **13** |
+| `EG` | Égypte | 3 | 6 | 0 | **9** |
+| `MA` | Maroc | 5 | 3 | 0 | **8** |
+| `NG` | Nigeria | 0 | 2 | 0 | **2** |
+| `DZ` | Algérie | 0 | 1 | 0 | **1** |
+| `SN` | Sénégal | 0 | 0 | 1 | **1** |
+| `GN` | Guinée | 0 | 1 | 0 | **1** |
+| `ZM` | Zambie | 0 | 1 | 0 | **1** |
+| `MG` | Madagascar | 1 | 0 | 0 | **1** |
+| `TN` | Tunisie | 1 | 0 | 0 | **1** |
+| `NA` | Namibie | 1 | 0 | 0 | **1** |
+| `TZ` | Tanzanie | 1 | 0 | 0 | **1** |
+| `MULTI` | Multi-pays | 0 | 1 | 0 | **1** |
+|  | **Total** | **19** | **21** | **1** | **41** |
 
-La variation mensuelle reflète l'évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, des règles de comptage multi-pays, des republications ou de la couverture de collecte, et ne doit pas être interprétée comme une évolution confirmée de l'activité des attaquants.
+```text
+- `ZA` Afrique du Sud       █████████████ **13**
+- `EG` Égypte               █████████ **9**
+- `MA` Maroc                ████████ **8**
+- `NG` Nigeria              ██ **2**
+- `DZ` Algérie              █ **1**
+- `SN` Sénégal              █ **1**
+- `GN` Guinée               █ **1**
+- `ZM` Zambie               █ **1**
+- `MG` Madagascar           █ **1**
+- `TN` Tunisie              █ **1**
+- `NA` Namibie              █ **1**
+- `TZ` Tanzanie             █ **1**
+- `MULTI` Multi-pays           █ **1**
+```
 
-## 9. Cartographie MITRE ATT&CK (contextuelle)
+```mermaid
+xychart-beta
+    title "Incidents par pays / portée - Mars 2026"
+    x-axis ["ZA", "EG", "MA", "NG", "DZ", "SN", "GN", "ZM", "MG", "TN", "NA", "TZ", "MULTI"]
+    y-axis "Incidents" 0 --> 15
+    bar [13, 9, 8, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
 
-| Phase | Technique | Portée analytique |
-| :--- | :--- | :--- |
-| Accès initial | T1566 - Phishing | Hypothèse de détection défensive, non observée à partir des seules revendications |
-| Accès initial | T1190 - Exploit Public-Facing Application | Hypothèse de détection défensive, non observée à partir des seules revendications |
-| Accès par comptes | T1078 - Valid Accounts | Pertinent pour les ventes d’accès ou d’identifiants, sans confirmer leur utilisation |
-| Collecte | T1005 - Data from Local System | Hypothèse contextuelle lorsque des données internes sont publiées, le mécanisme de collecte restant inconnu |
-| Impact | T1486 - Data Encrypted for Impact | Pertinent pour la préparation ransomware, sans confirmer un chiffrement pour chaque fiche |
+**Légende pays :** `ZA` = Afrique du Sud | `EG` = Égypte | `MA` = Maroc | `NG` = Nigeria | `DZ` = Algérie | `SN` = Sénégal | `GN` = Guinée | `ZM` = Zambie | `MG` = Madagascar | `TN` = Tunisie | `NA` = Namibie | `TZ` = Tanzanie | `MULTI` = Multi-pays
 
-> Ces techniques constituent des hypothèses défensives. Une revendication, une vente de données ou une publication sur un site de fuite ne suffit pas à les considérer comme observées.
+### 3.3 Comparaison Ransomware vs Fuite / intrusion par pays
 
-## 10. Recommandations
+Cette comparaison couvre **40 des 41 incidents de mars** : **19 ransomware** et **21 fuites de données / intrusions**. Le cas UBA Sénégal est exclu de cette comparaison à deux catégories car il est classé séparément en **Fraude opérationnelle**.
 
-### Pour les gouvernements et entreprises africains
-- **Sécurité des bases de données** : chiffrement des données sensibles, contrôles d’accès, audits réguliers.
-- **Gestion des risques tiers** : auditer les prestataires de services digitaux, imposer des clauses de cybersécurité.
-- **Réponse aux incidents** : sauvegardes hors ligne, exercices de simulation, protocoles de communication.
-- **Formation des utilisateurs** : sensibilisation au phishing (vecteur initial principal).
-- **Supervision en temps réel** : déployer ou renforcer un SOC 24/7 ; mettre en place une détection d’anomalies transactionnelles (particulièrement pour les banques).
-- **Mécanismes antifraude** : plafonds de retrait dynamiques, blocage automatique en cas de schéma anormal, analyse comportementale.
-- **Sécurité des mots de passe** : imposer un hashage fort (bcrypt, Argon2) au lieu de SHA1 ; activer la MFA pour tous les comptes utilisateurs.
+**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / intrusion | 🟩 Fraude opérationnelle
 
-### Pour les analystes CTI
-- Surveiller **XP95**, **xNov**, **zimablue**, **Keymous** pour de nouvelles campagnes.
-- Cartographier les expositions de la supply chain (notamment marketing digital et logistique).
-- Prioriser la surveillance des secteurs gouvernemental, éducatif et de la santé en Afrique du Nord, Ouest et Australe.
-- Surveiller les **intrusions financières non ransomware** - UBA Sénégal justifie une surveillance élargie des opérations de cash-out visant les institutions financières africaines.
+| Code | Pays / portée | Ransomware | Barre | Fuite / intrusion | Barre |
+|---|---|---:|---|---:|---|
+| `ZA` | Afrique du Sud | **7** | 🟧🟧🟧🟧🟧🟧🟧 | **6** | 🟦🟦🟦🟦🟦🟦 |
+| `EG` | Égypte | **3** | 🟧🟧🟧 | **6** | 🟦🟦🟦🟦🟦🟦 |
+| `MA` | Maroc | **5** | 🟧🟧🟧🟧🟧 | **3** | 🟦🟦🟦 |
+| `NG` | Nigeria | **0** | - | **2** | 🟦🟦 |
+| `DZ` | Algérie | **0** | - | **1** | 🟦 |
+| `GN` | Guinée | **0** | - | **1** | 🟦 |
+| `ZM` | Zambie | **0** | - | **1** | 🟦 |
+| `MG` | Madagascar | **1** | 🟧 | **0** | - |
+| `TN` | Tunisie | **1** | 🟧 | **0** | - |
+| `NA` | Namibie | **1** | 🟧 | **0** | - |
+| `TZ` | Tanzanie | **1** | 🟧 | **0** | - |
+| `MULTI` | Multi-pays | **0** | - | **1** | 🟦 |
+|  | **Total comparé** | **19** |  | **21** |  |
 
-## 11. Recommandations SOC tactiques
+```mermaid
+xychart-beta
+    title "Ransomware vs Fuite / intrusion par pays - Mars 2026"
+    x-axis ["ZA", "EG", "MA", "NG", "DZ", "GN", "ZM", "MG", "TN", "NA", "TZ", "MULTI"]
+    y-axis "Incidents" 0 --> 8
+    bar [7, 3, 5, 0, 0, 0, 0, 1, 1, 1, 1, 0]
+    bar [6, 6, 3, 2, 1, 1, 1, 0, 0, 0, 0, 1]
+```
 
-- Détection exfiltration (T1041)  
-- Surveillance comptes privilégiés  
-- Analyse trafic sortant  
-- Monitoring API / OAuth  
-- Pour les banques : détection en temps réel des anomalies de retraits GAB (vélocité, localisation, pics de montants)
+**Légende des séries :** première série de barres = 🟧 Ransomware | deuxième série de barres = 🟦 Fuite de données / intrusion.
 
-## 12. Recommandations stratégiques
+**Légende pays :** `ZA` = Afrique du Sud | `EG` = Égypte | `MA` = Maroc | `NG` = Nigeria | `DZ` = Algérie | `GN` = Guinée | `ZM` = Zambie | `MG` = Madagascar | `TN` = Tunisie | `NA` = Namibie | `TZ` = Tanzanie | `MULTI` = Multi-pays.
 
-- Activer MFA  
-- Segmenter le réseau (séparer réseau GAB du cœur bancaire)  
-- Auditer les prestataires  
-- Maintenir des sauvegardes offline  
-- Effectuer des exercices de crise incluant des simulations red-team  
-- **Cadre réglementaire** : les banques centrales devraient imposer des standards minimaux de SOC et de détection de fraude
+> 🟩 `SN` = Sénégal : **1 incident de fraude opérationnelle**, présenté séparément et non inclus dans le comparatif des 40 incidents.
 
-## 13. Conclusion
+### 3.4 Répartition régionale
 
-Mars confirme que **l'Afrique est devenue une cible de choix pour une cybercriminalité industrialisée**. Groupes ransomware, courtiers de données, attaques supply chain, fraude financière directe (UBA Sénégal) et vol d'identifiants e-commerce (Loozap), tout ça converge en un seul mois pour créer un environnement vraiment à haut risque. L'Afrique du Sud, le Maroc et l'Égypte encaissent toujours le plus gros, mais **l'Afrique de l'Ouest émerge comme un nouveau point chaud**, Sénégal et Guinée tous les deux, avec en plus une fuite d'identifiants qui a touché plusieurs marchés e-commerce africains d'un coup. Les ministères de la santé continuent d'être visés, en Égypte comme en Guinée ce mois-ci. Institutions financières et plateformes e-commerce doivent avancer vite sur la supervision en temps réel, les contrôles antifraude et la sécurité des mots de passe. AFRINTEL continue de suivre ces évolutions.
 
-**AFRINTEL** - Cyber Threat Intelligence africaine  
-[GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+| Région | Incidents | Part |
+|---|---:|---:|
+| Afrique du Nord | 19 | 46,3 % |
+| Afrique australe | 15 | 36,6 % |
+| Afrique de l’Ouest | 4 | 9,8 % |
+| Afrique de l’Est | 1 | 2,4 % |
+| Océan Indien | 1 | 2,4 % |
+| Multi-pays | 1 | 2,4 % |
+| **Total** | **41** | **100 %** |
+
+La vue régionale conserve la fiche Loozap dans une catégorie multi-pays distincte afin de ne pas dupliquer le même incident dans plusieurs régions.
+
+---
+
+## 4. Analyse détaillée par type d’incident
+
+### 4.1 Ransomware - 19 incidents
+
+| Pays | Incidents | Acteurs / Groupes principaux |
+|---|---:|---|
+| 🇿🇦 Afrique du Sud | **7** | LockBit 5.0, Lynx, DragonForce, TheGentlemen, NightSpire, INC Ransom, Coinbase Cartel |
+| 🇲🇦 Maroc | **5** | APT73/BASHE (4), Qilin |
+| 🇪🇬 Égypte | **3** | Crypto24, PEAR, Payload |
+| 🇲🇬 Madagascar | **1** | Qilin |
+| 🇹🇳 Tunisie | **1** | TheGentlemen |
+| 🇳🇦 Namibie | **1** | INC Ransom |
+| 🇹🇿 Tanzanie | **1** | Morpheus |
+| **Total** | **19** | |
+
+APT73/BASHE représente quatre publications marocaines : **HACA, Maroc Telecom, 2M TV et IRES**. L’Afrique du Sud présente la plus grande diversité de groupes ransomware du mois. Ces compteurs décrivent des publications/revendications observées et ne signifient pas qu’un chiffrement a été confirmé pour chaque victime.
+
+### 4.2 Fuites de données / intrusions système - 21 incidents
+
+| Pays / portée | Incidents | Acteurs / Groupes principaux |
+|---|---:|---|
+| 🇿🇦 Afrique du Sud | **6** | XP95 (3), xNov, TelephoneHooliganism, Blackwinter99 |
+| 🇪🇬 Égypte | **6** | CrowStealer (5), Al-Sheikh |
+| 🇲🇦 Maroc | **3** | xNov (2), anisanas2 |
+| 🇳🇬 Nigeria | **2** | AshleyWood2022, Bytetobreach |
+| 🌍 Multi-pays | **1** | zimablue |
+| 🇩🇿 Algérie | **1** | Grubder |
+| 🇬🇳 Guinée | **1** | Keymous |
+| 🇿🇲 Zambie | **1** | Spirigatito |
+| **Total** | **21** | |
+
+XP95 est associé à trois dossiers sud-africains d’exfiltration/extorsion : **Gouvernement provincial du Gauteng, Stats SA et GCRA**. CrowStealer représente cinq publications de données égyptiennes. Loozap reste une seule fiche globale malgré l’exposition multi-pays décrite dans son échantillon.
+
+### 4.3 Fraude opérationnelle - 1 incident
+
+| Victime | Pays | Attribution | Classification |
+|---|---|---|---|
+| United Bank for Africa (UBA Sénégal) | 🇸🇳 Sénégal | Non attribué | **Fraude opérationnelle** |
+
+La fiche source décrit une opération de cash-out cyber impliquant **3 421 transactions GAB**. Un accès privilégié à l’infrastructure d’autorisation des cartes est considéré comme probable dans l’avis de référence, tandis que le vecteur initial et la séquence technique exacte restent inconnus.
+
+---
+
+## 5. Impact sectoriel
+
+| Code | Secteur normalisé | Incidents | Part |
+|---|---|---:|---:|
+| `GOV` | Gouvernement / Administration publique | 7 | 17,1 % |
+| `EDU` | Éducation / Formation | 7 | 17,1 % |
+| `ENG` | Ingénierie / Construction | 4 | 9,8 % |
+| `TEC` | Technologie / IT / Conseil / BPO | 4 | 9,8 % |
+| `HEA` | Santé / Pharmaceutique | 3 | 7,3 % |
+| `INS` | Assurance | 2 | 4,9 % |
+| `TEL` | Télécommunications | 2 | 4,9 % |
+| `FINA` | Finance / Banque / Gestion de patrimoine | 2 | 4,9 % |
+| `FINT` | Fintech / Services de paiement | 1 | 2,4 % |
+| `ECO` | E-commerce / Petites annonces | 1 | 2,4 % |
+| `REA` | Immobilier / Petites annonces | 1 | 2,4 % |
+| `SPO` | Sport / Loisirs | 1 | 2,4 % |
+| `AIR` | Transport aérien | 1 | 2,4 % |
+| `MED` | Médias / Audiovisuel | 1 | 2,4 % |
+| `DIG` | Marketing digital / Services supply chain | 1 | 2,4 % |
+| `RES` | Recherche / Think tank | 1 | 2,4 % |
+| `FOO` | Agroalimentaire / Boissons | 1 | 2,4 % |
+| `AUT` | Automobile | 1 | 2,4 % |
+|  | **Total** | **41** | **100 %** |
+
+```mermaid
+xychart-beta
+    title "Incidents par secteur normalisé - Mars 2026"
+    x-axis ["GOV", "EDU", "ENG", "TEC", "HEA", "INS", "TEL", "FINA", "FINT", "ECO", "REA", "SPO", "AIR", "MED", "DIG", "RES", "FOO", "AUT"]
+    y-axis "Incidents" 0 --> 8
+    bar [7, 7, 4, 4, 3, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Légende secteurs :** `GOV` = Gouvernement / Administration publique | `EDU` = Éducation / Formation | `ENG` = Ingénierie / Construction | `TEC` = Technologie / IT / Conseil / BPO | `HEA` = Santé / Pharmaceutique | `INS` = Assurance | `TEL` = Télécommunications | `FINA` = Finance / Banque / Gestion de patrimoine | `FINT` = Fintech / Services de paiement | `ECO` = E-commerce / Petites annonces | `REA` = Immobilier / Petites annonces | `SPO` = Sport / Loisirs | `AIR` = Transport aérien | `MED` = Médias / Audiovisuel | `DIG` = Marketing digital / Services supply chain | `RES` = Recherche / Think tank | `FOO` = Agroalimentaire / Boissons | `AUT` = Automobile
+
+Le gouvernement/administration publique et l’éducation/formation comptent chacun **7 incidents (17,1 %)**, soit **14 sur 41 (34,1 %) au total**.
+
+---
+
+## 6. Profil des acteurs / groupes
+
+| Code | Acteur / Groupe | Incidents | Activité dominante |
+|---|---|---:|---|
+| `CRO` | CrowStealer | **5** | Fuites de données |
+| `APT` | APT73/BASHE | **4** | Ransomware |
+| `XP9` | XP95 | **3** | Exfiltration / extorsion |
+| `XNO` | xNov | **3** | Fuites de données |
+| `QIL` | Qilin | **2** | Ransomware |
+| `THE` | TheGentlemen | **2** | Ransomware |
+| `INC` | INC Ransom | **2** | Ransomware |
+
+```mermaid
+xychart-beta
+    title "Top 7 acteurs / groupes attribués - Mars 2026"
+    x-axis ["CRO", "APT", "XP9", "XNO", "QIL", "THE", "INC"]
+    y-axis "Incidents" 0 --> 6
+    bar [5, 4, 3, 3, 2, 2, 2]
+```
+
+**Légende acteurs :** `CRO` = CrowStealer | `APT` = APT73/BASHE | `XP9` = XP95 | `XNO` = xNov | `QIL` = Qilin | `THE` = TheGentlemen | `INC` = INC Ransom
+
+Le graphique représente explicitement un **Top 7**. Les **19 autres acteurs attribués apparaissent chacun une seule fois**, tandis qu’UBA Sénégal reste non attribué.
+
+### 6.1 Évaluation mensuelle de l’exposition par pays
+
+Il s’agit d’un **indicateur mensuel fondé sur le volume**, et non d’une notation générale du risque cyber national :
+
+- 🔴 **Élevé :** 8 incidents ou plus en mars
+- 🟠 **Moyen :** 2 à 7 incidents
+- 🟡 **Faible à moyen :** 1 incident
+
+| Pays | Incidents en mars | Niveau d’exposition |
+|---|---:|---|
+| 🇿🇦 Afrique du Sud | 13 | 🔴 Élevé |
+| 🇪🇬 Égypte | 9 | 🔴 Élevé |
+| 🇲🇦 Maroc | 8 | 🔴 Élevé |
+| 🇳🇬 Nigeria | 2 | 🟠 Moyen |
+| 🇩🇿 Algérie | 1 | 🟡 Faible à moyen |
+| 🇸🇳 Sénégal | 1 | 🟡 Faible à moyen |
+| 🇬🇳 Guinée | 1 | 🟡 Faible à moyen |
+| 🇿🇲 Zambie | 1 | 🟡 Faible à moyen |
+| 🇲🇬 Madagascar | 1 | 🟡 Faible à moyen |
+| 🇹🇳 Tunisie | 1 | 🟡 Faible à moyen |
+| 🇳🇦 Namibie | 1 | 🟡 Faible à moyen |
+| 🇹🇿 Tanzanie | 1 | 🟡 Faible à moyen |
+
+---
+
+## 7. Tendances clés & lacunes de renseignement
+
+**Tendances directement supportées par le corpus de mars**
+
+- Mars passe de **20 incidents en février à 41**, soit **+21 fiches (+105,0 %)**.
+- Les fuites/intrusions représentent **51,2 %** de mars, légèrement devant le ransomware à **46,3 %**.
+- L’Afrique du Sud, l’Égypte et le Maroc concentrent **73,2 %** des fiches du mois.
+- Gouvernement/administration publique et éducation/formation représentent ensemble **34,1 %** de la distribution sectorielle normalisée.
+- L’écosystème d’acteurs reste fragmenté : le Top 7 représente **21 incidents**, tandis que 19 autres acteurs attribués n’apparaissent qu’une fois.
+
+```mermaid
+xychart-beta
+    title "Incidents documentés - Février vs Mars 2026"
+    x-axis ["FEB", "MAR"]
+    y-axis "Incidents" 0 --> 45
+    bar [20, 41]
+```
+
+**Légende temporelle :** `FEB` = Février 2026 | `MAR` = Mars 2026.
+
+**Lacunes prioritaires**
+
+- Les vecteurs d’accès initial restent inconnus pour plusieurs dossiers à fort impact.
+- Les volumes globaux revendiqués ne peuvent pas toujours être validés indépendamment à partir des échantillons accessibles.
+- Les sources disponibles comportent peu de rapports DFIR publics ou de confirmations techniques détaillées côté victime pour de nombreux incidents fondés sur des revendications.
+- Les fiches ransomware historiques ne disposent pas toutes de métadonnées complètes de cycle de publication ; négociation, paiement, revente et état final de divulgation doivent donc rester inconnus lorsqu’ils ne sont pas documentés séparément.
+
+---
+
+## 8. Cartographie MITRE ATT&CK - contextuelle
+
+Seules les techniques soutenues par des éléments précis du corpus de mars ou directement pertinentes pour interpréter un dossier documenté sont retenues.
+
+| Technique | Nom | Contexte de mars | Évaluation |
+|---|---|---|---|
+| **T1657** | Financial Theft | Cash-out UBA Sénégal | Impact financier documenté ; séquence d’intrusion exacte inconnue |
+| **T1552.001** | Unsecured Credentials: Credentials In Files | Éléments source/configuration Remita | Des identifiants API/cloud/base de données codés en dur sont décrits dans le matériel technique examiné |
+| **T1530** | Data from Cloud Storage Object | Exposition de stockage cloud Remita | Un accès à un bucket lié aux documents KYC est décrit dans les éléments examinés |
+| **T1078** | Valid Accounts | Identifiants administratifs UNISA | Pertinence défensive ; l’exposition est documentée, leur utilisation par l’acteur n’est pas confirmée indépendamment |
+
+Aucune technique de chiffrement n’est marquée comme observée au seul motif qu’une victime apparaît sur un leak site ransomware.
+
+---
+
+## 9. Recommandations
+
+| Type d’organisation | Actions prioritaires |
+|---|---|
+| Gouvernement / administration | MFA sur comptes privilégiés, revue des privilèges, surveillance des exports de bases, sauvegardes hors ligne testées |
+| Éducation | Sécuriser helpdesk et portails admin, MFA, revue des identifiants exposés, segmentation systèmes étudiants/administratifs |
+| Finance / fintech | Surveiller les modifications de contrôles transactionnels privilégiés, accès cloud/IAM, gestion des secrets, détection de fraude |
+| Télécom / IT / BPO | Sécuriser CRM/support, rotation des secrets exposés, surveillance des accès messagerie/admin, revue des tiers |
+| Toutes organisations | Conserver les preuves IR, centraliser les journaux, maintenir les chronologies et surveiller l’exfiltration autant que le chiffrement |
+
+---
+
+## 10. Recommandations SOC & tactiques
+
+| Qualification | Action défensive | Télémétrie utile |
+|---|---|---|
+| **Observé** | Détecter les exports anormalement volumineux et transferts sortants soutenus | Logs DB, EDR, proxy, firewall, cloud |
+| **Observé** | Alerter sur les accès à des stockages cloud sensibles et dépôts KYC | Logs cloud, IAM, logs d’accès stockage objet |
+| **Observé** | Détecter l’exposition ou l’utilisation de secrets applicatifs/cloud codés en dur | Secret scanning, CI/CD, IAM, cloud audit |
+| **Hypothèse** | Rechercher des authentifications privilégiées anormales autour des incidents dont l’accès initial reste inconnu | VPN, SSO, IAM, authentification Windows/Linux, PAM |
+| **Préventif** | Imposer MFA, moindre privilège et suivi des sessions privilégiées | IAM, PAM, IdP |
+| **Préventif** | Séparer l’infrastructure de sauvegarde et tester les restaurations | Backup, EDR, inventaire actifs |
+
+Les contrôles préventifs ne sont pas présentés comme preuve que le comportement adversaire correspondant a été observé.
+
+---
+
+## 11. Recommandations stratégiques
+
+1. **Traiter l’exfiltration de données comme un scénario d’incident à part entière**, et pas seulement comme une conséquence secondaire du ransomware.
+2. **Normaliser la taxonomie et le statut de preuve** entre CTI, SOC et reporting exécutif.
+3. **Améliorer la traçabilité DFIR et les retours techniques côté victime**, lorsque le cadre légal et opérationnel le permet, afin de comparer les revendications aux chronologies et impacts confirmés.
+4. **Prioriser la gouvernance des identités, secrets et stockages cloud** dans les secteurs manipulant des données financières, gouvernementales, éducatives et de santé.
+5. **Maintenir la cohérence bilingue et arithmétique** entre fiches victimes, rapports mensuels, statistiques et exports STIX/OpenCTI.
+
+---
+
+## 12. Conclusion
+
+Mars 2026 confirme une **hausse nette de l’activité cyber documentée en Afrique**, avec **41 incidents**, contre 20 en février. Le mois se distingue aussi par une menace plus diversifiée : **19 ransomware, 21 fuites ou intrusions et 1 fraude opérationnelle**.
+
+**L’Afrique du Sud, l’Égypte et le Maroc concentrent 73,2 % des incidents**, tandis que les cas observés montrent que la menace dépasse désormais le seul chiffrement : exfiltration de données, compromission de systèmes, exposition de secrets et fraude cyber prennent une place importante.
+
+Pour AFRINTEL, cela renforce la nécessité de distinguer **la revendication de l’acteur, les preuves disponibles, le niveau de confiance et le type réel d’incident** afin de maintenir une lecture fiable de la menace à l’échelle mensuelle et semestrielle.
+
+**AFRINTEL** - African Cyber Threat Intelligence  
+Dépôt : https://github.com/Hatchepsoute/AFRINTEL

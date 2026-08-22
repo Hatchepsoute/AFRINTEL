@@ -1,20 +1,25 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat%20Landscape](https://img.shields.io/badge/Threat%20Landscape-Ransomware%20%26%20Data%20Leaks-red)
 ![Period](https://img.shields.io/badge/Period-April%202026-lightgrey)
 ![Victims](https://img.shields.io/badge/Victims-69-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
-![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-40-orange)
-![Countries](https://img.shields.io/badge/Countries%20Affected-16-blueviolet)
-![Threat%20Actors](https://img.shields.io/badge/Threat%20Actors-30%2B-darkred)
+![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-39-orange)
+![Access%20Sales](https://img.shields.io/badge/Access%20Sales-1-yellow)
+![DDoS](https://img.shields.io/badge/DDoS-9-blue)
+![Countries](https://img.shields.io/badge/Direct%20Countries-16-blueviolet)
+![Actor%20Labels](https://img.shields.io/badge/Actor%20Labels-37-darkred)
 ![Intel%20Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
-![Status](https://img.shields.io/badge/Status-OSINT%20Monitoring-success)
 # African Victims - April 2026
 
 ## Summary
-- **Total victims** : 69
-- **Ransomware attacks** : 20
-- **Data leaks (non‑ransomware)** : 40
+- **Total victims:** 69
+- **Ransomware:** 20
+- **Data leaks:** 39
+- **Access sales:** 1
+- **DDoS claims:** 9
+- **Direct country labels:** 16
+- **Countries in expanded geographic view:** 17
+- **Distinct actor/group source labels:** 37
 
 ### Notable incidents
 
@@ -174,7 +179,7 @@
 ---
   
 ### April 05, 2026
-#### 🇸🇳 Senegal - Directorate General of Public Accounting and Treasury (DGCPT) [Claimed Government Access]
+#### 🇸🇳 Senegal - Directorate General of Public Accounting and Treasury (DGCPT) [Access Sale]
 
 - **Threat Actor / Group :** w00l_ysh1
 - **Sector :** Government / Public Finance

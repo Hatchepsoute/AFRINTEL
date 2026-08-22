@@ -1,6 +1,6 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Breach-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
 ![Period](https://img.shields.io/badge/Period-June%202026-lightgrey)
 ![Intel Type](https://img.shields.io/badge/Intel%20Type-CTI-purple)
 
@@ -10,23 +10,40 @@
 
 ## 1. Executive summary
 
-June 2026 brought in **40 publicly reported or claimed cyber incidents** across Africa, **20 ransomware listings or disclosures (50%)**, **20 data leaks or access sales (50%)**. That's a real shift from May, when ransomware made up just 28.1% of the 57 incidents recorded in the [May victim dataset](../05-may/victims.md). The month also brought a high-sensitivity fintech biometric exposure claim, plaintext credentials published for a national army's webmail domain, and a three-month run of publications from the same actor cluster against Moroccan organizations.
+June 2026 contains **40 publicly reported or claimed cyber incidents** across Africa: **20 ransomware listings or disclosures (50.0%)**, **18 data leaks (45.0%)** and **2 access sales (5.0%)**.
+
+Compared with the validated May corpus of **103 incidents**, June contains **63 fewer documented records (-61.2%)**. The ransomware count itself moves from **17 to 20 (+17.6%)**, while its share rises from **16.5% to 50.0%** because the June corpus is much smaller and contains no DDoS records. This change in share should not be interpreted by itself as evidence of a structural shift in attacker behaviour.
 
 Key findings:
-- **20 ransomware listings or disclosures (50%)** and **20 data leaks / access sales (50%)**, an even split and a higher ransomware share than in May.
-- **14 countries** directly affected, plus **6 additional countries** exposed only through two multi-country credential-sale schemes (Ethiopia, Angola, Zambia, Malawi, Algeria, Sierra Leone), for **20 African countries** touched overall.
-- **Morocco (9 direct incidents)** is the most represented country of the month. Seven publications are attributed to **anisanas2** across education, logistics, mining, e-commerce and automotive. The same cluster also appeared in AFRINTEL records for April and May 2026; whether the underlying events form one coordinated operation remains unknown.
-- **Jeroid.co (Nigeria), source actor burti:** the actor claimed a dataset covering 312,433 users, 110,282 BVN, 64,300 NIN and 70,956 biometric face-verification photos, offered for $2,000. The analysed material suggests that KYC data was accessible through an unauthenticated S3 bucket; AFRINTEL does not confirm the full claimed volume or the initial access vector.
-- **Nigerian Army (army.mil.ng):** published material reportedly included plaintext webmail credentials for more than 20 military accounts and credentials associated with a satellite imagery portal. If valid at the time of observation, the material presented a high national-security risk.
-- **BRELA (Tanzania):** the actor claimed 10.2 million records covering 8 million people, the largest claimed dataset volume recorded this month. The complete scope was not independently confirmed.
-- **Two Libyan ministries** were the subject of consecutive publications attributed to EvaN47 on June 29 and 30. This temporal pattern warrants monitoring but does not by itself establish a coordinated campaign.
-
+- **40 unique incidents**: 20 Ransomware, 18 Data Leak and 2 Access Sale.
+- **14 countries** are directly affected, plus **6 additional African countries** exposed through two multi-country Access Sale records, for **20 African countries** represented overall.
+- **Morocco has 9 direct incidents**, the highest direct-country count in June. Seven data-leak publications are associated with **anisanas2**.
+- **Jeroid.co (Nigeria)** is associated with a claim involving KYC and biometric material. The reviewed material suggests access to KYC data through an unauthenticated S3 bucket, but the complete claimed volume and initial access vector are not independently confirmed.
+- Material attributed to the **Nigerian Army** reportedly included plaintext webmail credentials for more than 20 military accounts and credentials associated with a satellite-imagery portal.
+- **BRELA (Tanzania)** is associated with a claim of 10.2 million records covering approximately 8 million people. The complete scope is not independently confirmed.
+- **Two Libyan ministries** were published on consecutive days under the EvaN47 source label. The timing and attribution support continued monitoring but do not establish a coordinated campaign.
 
 ### Victim list
 
 👉🏾 [View full victim list](./victims.md)
-
 ---
+
+
+### 1.1 Month-over-month comparison
+
+> Comparison based on validated AFRINTEL monthly corpora. A change in documented records does not, by itself, prove a change in the real number of compromises.
+
+| Indicator | May 2026 | June 2026 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 103 | 40 | **-63 (-61.2%)** |
+| Ransomware | 17 | 20 | **+3 (+17.6%)** |
+| Data Leak | 41 | 18 | **-23 (-56.1%)** |
+| Access Sale | 2 | 2 | **0 (+0.0%)** |
+| DDoS | 43 | 0 | **-43 (-100.0%)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+> Reading rule: when the previous month is `0` and the current month is greater than `0`, the change is marked `new` instead of using an artificial percentage. Categories that are absent remain displayed as `0`.
 
 ## 2. Methodology
 
@@ -36,7 +53,8 @@ Key findings:
 - **Inclusion**: Incidents first identified and assessed by AFRINTEL during June 2026. The original claim or attack date may be earlier and is retained in the victim card when known.
 - **Typology**:
   - *Ransomware*: claim or disclosure attributed to a ransomware group. Encryption is not assumed unless supporting evidence is available.
-  - *Data leak / access sale*: exfiltration without encryption, database sold/published, or access/credential sale.
+  - *Data Leak*: published or sold data outside a ransomware classification.
+  - *Access Sale*: advertised access or credential sale to compromised systems.
 
 
 ---
@@ -50,7 +68,20 @@ Key findings:
 | Country occurrences | 53 (38 direct + 15 exposures from 2 multi-country incidents) |
 | Distinct actors | 25 |
 | Ransomware incidents | 20 (50.0%) |
-| Data leaks / access sales | 20 (50.0%) |
+| Data leaks | 18 (45.0%) |
+| Access sales | 2 (5.0%) |
+
+### Incident type distribution
+
+```mermaid
+pie showData
+    title Incident types - June 2026
+    "Ransomware" : 20
+    "Data Leak" : 18
+    "Access Sale" : 2
+```
+
+**Visual convention:** 🟧 Ransomware | 🟦 Data Leak / Access Sale.
 
 ### Country ranking
 
@@ -106,6 +137,17 @@ pie
  "Sierra Leone" : 1
 ```
 
+```mermaid
+xychart-beta
+    title "Expanded geographic occurrences - June 2026"
+    x-axis ["MA", "ZA", "EG", "NG", "TN", "LY", "TZ", "KE", "ZM", "GA", "ZW", "SN", "BW", "MU", "YT", "ET", "AO", "MW", "DZ", "SL"]
+    y-axis "Occurrences" 0 --> 11
+    bar [10, 6, 6, 5, 4, 3, 3, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Country code legend:** `MA` = Morocco | `ZA` = South Africa | `EG` = Egypt | `NG` = Nigeria | `TN` = Tunisia | `LY` = Libya | `TZ` = Tanzania | `KE` = Kenya | `ZM` = Zambia | `GA` = Gabon | `ZW` = Zimbabwe | `SN` = Senegal | `BW` = Botswana | `MU` = Mauritius | `YT` = Mayotte | `ET` = Ethiopia | `AO` = Angola | `MW` = Malawi | `DZ` = Algeria | `SL` = Sierra Leone
+
+
 ### Ransomware distribution (Total: 20)
 
 | Rank | Country | Incidents | Chart |
@@ -145,40 +187,47 @@ pie
 | **9** | 🇩🇿 Algeria | **1** | █ |
 | **9** | 🇸🇱 Sierra Leone | **1** | █ |
 
-### Ransomware vs. data leaks comparison by country
+### Ransomware vs Data Leak / Access Sale by country and scope
 
-| Country | Ransomware | Data leaks | Side-by-side distribution |
-| :--- | :---: | :---: | :--- |
-| 🇲🇦 Morocco | **1** | **9** | 🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 South Africa | **4** | **2** | 🟧🟧🟧🟧 🟦🟦 |
-| 🇪🇬 Egypt | **3** | **3** | 🟧🟧🟧 🟦🟦🟦 |
-| 🇳🇬 Nigeria | **1** | **4** | 🟧 🟦🟦🟦🟦 |
-| 🇹🇳 Tunisia | **3** | **1** | 🟧🟧🟧 🟦 |
-| 🇱🇾 Libya | **1** | **2** | 🟧 🟦🟦 |
-| 🇹🇿 Tanzania | **0** | **3** | 🟦🟦🟦 |
-| 🇰🇪 Kenya | **1** | **2** | 🟧 🟦🟦 |
-| 🇿🇲 Zambia | **0** | **2** | 🟦🟦 |
-| 🇬🇦 Gabon | **1** | **0** | 🟧 |
-| 🇿🇼 Zimbabwe | **1** | **0** | 🟧 |
-| 🇸🇳 Senegal | **1** | **0** | 🟧 |
-| 🇧🇼 Botswana | **1** | **0** | 🟧 |
-| 🇲🇺 Mauritius | **1** | **0** | 🟧 |
-| 🇾🇹 Mayotte | **1** | **0** | 🟧 |
-| 🇪🇹 Ethiopia | **0** | **1** | 🟦 |
-| 🇦🇴 Angola | **0** | **1** | 🟦 |
-| 🇲🇼 Malawi | **0** | **1** | 🟦 |
-| 🇩🇿 Algeria | **0** | **1** | 🟦 |
-| 🇸🇱 Sierra Leone | **0** | **1** | 🟦 |
-| **Country occurrences (53)** | **20** | **33** | *Legend: 🟧 Ransomware \| 🟦 Data Leaks* |
+This comparison uses the **40 unique incidents**, not the expanded 53 geographic occurrences. It compares **20 ransomware incidents** with **20 Data Leak / Access Sale incidents**. The blue series contains **18 Data Leak records and 2 Access Sale records**.
 
-> The analytical total remains 40 unique incidents, comprising 20 ransomware incidents and 20 data leaks or access sales. The 33 leak-related country occurrences include the geographic allocation of the two multi-country incidents.
+The two Access Sale records are represented under `MULTI` because both concern multiple countries.
+
+**Visual legend:** 🟧 Ransomware | 🟦 Data Leak / Access Sale
+
+| Code | Country / scope | Ransomware | Bar | Data Leak / Access Sale | Bar |
+|---|---|---:|---|---:|---|
+| `MA` | Morocco | **1** | 🟧 | **8** | 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| `ZA` | South Africa | **4** | 🟧🟧🟧🟧 | **2** | 🟦🟦 |
+| `EG` | Egypt | **3** | 🟧🟧🟧 | **1** | 🟦 |
+| `NG` | Nigeria | **1** | 🟧 | **3** | 🟦🟦🟦 |
+| `TN` | Tunisia | **3** | 🟧🟧🟧 | **1** | 🟦 |
+| `LY` | Libya | **1** | 🟧 | **2** | 🟦🟦 |
+| `TZ` | Tanzania | **0** | - | **1** | 🟦 |
+| `KE` | Kenya | **1** | 🟧 | **0** | - |
+| `GA` | Gabon | **1** | 🟧 | **0** | - |
+| `ZW` | Zimbabwe | **1** | 🟧 | **0** | - |
+| `SN` | Senegal | **1** | 🟧 | **0** | - |
+| `BW` | Botswana | **1** | 🟧 | **0** | - |
+| `MU` | Mauritius | **1** | 🟧 | **0** | - |
+| `YT` | Mayotte | **1** | 🟧 | **0** | - |
+| `MULTI` | Multi-country records | **0** | - | **2** | 🟦🟦 |
+|  | **Compared total** | **20** |  | **20** |  |
 
 ```mermaid
-pie
- title Ransomware vs Data Leaks - June 2026
- "Ransomware" : 20
- "Data leaks and access sales" : 20
+xychart-beta
+    title "Ransomware vs Data Leak / Access Sale - June 2026"
+    x-axis ["MA", "ZA", "EG", "NG", "TN", "LY", "TZ", "KE", "GA", "ZW", "SN", "BW", "MU", "YT", "MULTI"]
+    y-axis "Incidents" 0 --> 9
+    bar [1, 4, 3, 1, 3, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0]
+    bar [8, 2, 1, 3, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 2]
 ```
+
+**Series legend:** first bar series = 🟧 Ransomware | second bar series = 🟦 Data Leak / Access Sale.
+
+**Country legend:** `MA` = Morocco | `ZA` = South Africa | `EG` = Egypt | `NG` = Nigeria | `TN` = Tunisia | `LY` = Libya | `TZ` = Tanzania | `KE` = Kenya | `GA` = Gabon | `ZW` = Zimbabwe | `SN` = Senegal | `BW` = Botswana | `MU` = Mauritius | `YT` = Mayotte | `MULTI` = Multi-country records
+
+> The expanded geographic view remains 53 country occurrences because the two multi-country Access Sale records are allocated to every explicitly named African country. This does not change the analytical total of 40 unique incidents.
 
 ### Geographic breakdown by region
 
@@ -232,6 +281,17 @@ pie
  "Business Services / Technology" : 1
  "Security Services" : 1
 ```
+
+
+```mermaid
+xychart-beta
+    title "Incidents by normalized sector - June 2026"
+    x-axis ["GOV", "FIN", "ECO", "EDU", "HEA", "IND", "TRA", "BUS", "CON", "FOO", "HOS", "MIN", "POL", "SEC"]
+    y-axis "Incidents" 0 --> 13
+    bar [12, 6, 4, 4, 3, 2, 2, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Sector code legend:** `GOV` = Government / Administration | `FIN` = Finance / Banking | `ECO` = E-commerce / Retail | `EDU` = Education / University | `HEA` = Healthcare / Medical | `IND` = Industry / Automotive / Manufacturing | `TRA` = Transport / Logistics | `BUS` = Business Services / Technology | `CON` = Construction / Real Estate | `FOO` = Food / Beverage | `HOS` = Hospitality / Tourism | `MIN` = Mining / Extractive Industries | `POL` = Political Organizations / Parties | `SEC` = Security Services
 
 ### Most prolific threat actors and groups
 
@@ -297,7 +357,7 @@ pie
 
 **Observations:** ransomware's share of monthly incidents doubled compared to May, 28% to 50%. **DeadLock** spread widest geographically, four countries across the continent (Gabon, Nigeria, Mayotte, Kenya), and stuck to a consistent pattern: claim, threaten disclosure, and in Mayotte's case, actually follow through. **LockBit 5** published three victim listings across three countries in a single week, on June 18, none of which had an accessible sample during AFRINTEL's collection. The two exceptions where data actually got published: **Mayotte's Municipality of Ouangani**, where DeadLock delivered a 138 MB dump of payroll and civil-registry data, and the **ANC**, where Black X published 2.3 million membership records outright.
 
-### 4.2 Data leaks & access sales (20 unique incidents, 33 country occurrences)
+### 4.2 Data leaks and access sales - 18 Data Leak + 2 Access Sale
 
 | Rank | Country | Occurrences | Main actors |
 | :---: | :--- | :---: | :--- |
@@ -370,6 +430,19 @@ pie
 - **Convince** and **Governor**: two separate actors running parallel law-enforcement impersonation businesses; possibly connected, both first appeared in AFRINTEL records in May-June 2026.
 - **mosad** (SANDF classified document leak): single appearance, high-sensitivity military source.
 
+
+```mermaid
+xychart-beta
+    title "Repeated actor or group source labels - June 2026"
+    x-axis ["ANI", "DEA", "LOC", "NIG", "404", "KRY", "EVA"]
+    y-axis "Records" 0 --> 8
+    bar [7, 4, 3, 2, 2, 2, 2]
+```
+
+**Actor/group code legend:** `ANI` = anisanas2 | `DEA` = DeadLock | `LOC` = LockBit 5 | `NIG` = Nightspire | `404` = 404Crew Cyber Team | `KRY` = Krybit | `EVA` = EvaN47
+
+> The chart shows source labels appearing at least twice. Provenance tags are removed for counting only.
+
 ### 6.1 Risk assessment
 
 | Country | Risk level |
@@ -389,7 +462,7 @@ pie
 
 ### Trends
 
-1. **Ransomware regained ground.** The 50/50 split is a jump from May's 28.1/71.9. One month doesn't prove a lasting shift in actor behaviour, but DeadLock and LockBit 5's geographic spread is worth watching.
+1. **Ransomware represents 50.0% of June, compared with 16.5% in May.** The absolute ransomware count rises only from 17 to 20. The larger share mainly reflects the smaller June corpus and the absence of DDoS records, so it should not be treated by itself as evidence of a lasting actor shift.
 2. **Morocco keeps coming up.** Publications tied to anisanas2 span April, May and June. The continuity is real; whether it's one standing operation is still just a hypothesis.
 3. **A fintech exposure looks genuinely serious.** The Jeroid.co material points to a real cloud-storage control failure involving KYC data. Full volume and initial access vector are both still unconfirmed.
 4. **Military credential hygiene is a live concern.** Both the Nigerian Army credential publication and the SANDF document publication show sensitive material getting out. How the compromises happened and where the document-lifecycle controls failed remain unknown.
@@ -408,15 +481,27 @@ pie
 
 ### Factual comparison with May 2026
 
-This comparison uses the monthly victim and incident data for [May](../05-may/victims.md) and [June](./victims.md). It describes AFRINTEL's documented publications only and does not infer a change in the actual number of compromises. The residual category groups data leaks, access sales and defacement where the source report does not separate them.
+This comparison uses the validated May corpus of **103 incidents** and the June corpus of **40 incidents**. It describes AFRINTEL's documented public record and does not infer a change in the true number of compromises.
 
-| Indicator | May 2026 | June | Observed change |
+| Indicator | May 2026 | June 2026 | Observed change |
 | :--- | ---: | ---: | :--- |
-| Documented incidents | 57 | 40 | -17 (-29.8%) |
-| Ransomware / extortion | 17 | 20 | +3 |
-| Other leaks, access sales or defacement | 40 | 20 | -20 |
+| Documented incidents | 103 | 40 | **-63 (-61.2%)** |
+| Ransomware | 17 | 20 | **+3 (+17.6%)** |
+| Data Leak | 41 | 18 | **-23 (-56.1%)** |
+| Access Sale | 2 | 2 | **0 (0.0%)** |
+| DDoS claims | 43 | 0 | **-43 (-100.0%)** |
 
-The month-on-month variation is a change in the public record collected by AFRINTEL. It may reflect publication timing, multi-country counting rules, reposts or collection coverage, and should not be read as a confirmed change in attacker activity.
+The May total includes a large retrospective DDoS corpus. The month-on-month variation may also reflect publication timing, monitoring coverage and multi-country counting rules. It should not be read as a confirmed change in the true number of compromises.
+
+```mermaid
+xychart-beta
+    title "Documented incidents - March to June 2026"
+    x-axis ["MAR", "APR", "MAY", "JUN"]
+    y-axis "Incidents" 0 --> 110
+    bar [41, 69, 103, 40]
+```
+
+**Time legend:** `MAR` = March | `APR` = April | `MAY` = May | `JUN` = June 2026.
 
 ## 8. MITRE ATT&CK mapping (contextual)
 
@@ -471,7 +556,11 @@ The following techniques are defensive hypotheses derived from the exposed mater
 
 ## 12. Conclusion
 
-June closed at 40 incidents, down from 57 in the [May victim dataset](../05-may/victims.md), a drop of 17 records, 29.8%. Ransomware listings and disclosures rose from 16 to 20, while data leaks and access sales fell sharply, 41 to 20. Morocco took 9 of the 38 direct incident records, with two more multi-country. anisanas2's publications kept going for a third straight month. The Jeroid.co fintech publication and the Nigerian Army credential leak stand out as the most sensitive cases this month.
+June 2026 closes with **40 documented or claimed incidents**: **20 ransomware records, 18 data leaks and 2 access sales**.
+
+The corpus is substantially smaller than May's **103 incidents**, but ransomware itself moves from 17 to 20 records. **Morocco leads the direct-country count with 9 incidents**, while the two multi-country Access Sale records expand the geographic view to 20 African countries and 53 country occurrences.
+
+The month also contains several high-sensitivity cases involving biometric KYC data, military credentials and government records. These cases reinforce the need to keep **actor claims, observed evidence, incident classification and confidence level separate** in AFRINTEL reporting.
 
 **AFRINTEL** - African Cyber Threat Intelligence
 🔗 [GitHub AFRINTEL Repository](https://github.com/Hatchepsoute/AFRINTEL)
