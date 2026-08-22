@@ -5,21 +5,29 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # List of African cyberattack victims in March 2025 (11 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **7 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## March 2025
 
 ### 02 March 2025
 #### 🇧🇼 Botswana - IT-IQ Botswana
 - **Ransomware Group:** play
 - **Sector:** Technology Consulting
-- **Website:** www.itiq.co.bw
+- **Website:** [www.itiq.co.bw](https://www.itiq.co.bw/)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** IT-IQ Botswana is one of the leading providers of IT solutions and certified training (Microsoft, Cisco, VMware) in Botswana.
 
 ### 02 March 2025
 #### 🇳🇬 Nigeria - Workforce Group
 - **Ransomware Group:** killsec
 - **Sector:** Education / HR Services
-- **Website:** workforcegroup.com
+- **Website:** [workforcegroup.com](https://workforcegroup.com/)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** High
@@ -31,16 +39,18 @@
 #### 🇿🇦 South Africa - LINKGROUP
 - **Ransomware Group:** arcusmedia
 - **Sector:** Technology Consulting
-- **Website:** linkgroup.co.za
+- **Website:** [linkgroup.co.za](https://linkgroup.co.za/)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** LINKGROUP is a South African IT consulting and telecom services company.
 
 ### 03 March 2025
 #### 🇹🇿 Tanzania - synaptic.co.tz
 - **Ransomware Group:** arcusmedia
 - **Sector:** Technology Consulting
-- **Website:** synaptic.co.tz
+- **Website:** [synaptic.co.tz](https://synaptic.co.tz/)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Tanzanian IT consulting company.
 
 ### 05 March 2025
@@ -57,7 +67,7 @@
 #### 🇿🇦 South Africa - ACDC Express
 - **Ransomware Group:** lynx
 - **Sector:** Retail (Distribution)
-- **Website:** acdcdynamics.co.za
+- **Website:** [acdcdynamics.co.za](https://acdcdynamics.co.za/)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
@@ -69,30 +79,22 @@
 #### 🇪🇬 Egypt - ISEE (International School of Elite Education)
 - **Ransomware Group:** funksec
 - **Sector:** Education / Private Schooling
-- **Website:** isee-eg.com
+- **Website:** [isee-eg.com](https://isee-eg.com/)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The International School of Elite Education (ISEE) is a prestigious private school located in Cairo.
 
 ### 25 March 2025
 #### 🇪🇬 Egypt - MISR AL MAHABA HOSPITAL
 - **Ransomware Group:** nightspire
 - **Sector:** Healthcare / Hospital Sector
-- **Website:** misralmahaba.com
+- **Website:** [misralmahaba.com](https://misralmahaba.com/)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** Misr Al Mahaba Hospital is a significant private healthcare center in Cairo.
 - **Analysis:** The NightSpire leak-site listing for Misr Al Mahaba Hospital, published 24 March 2025, states a countdown/deadline of 27 March 2025 and a claimed volume of 100 GB. A local sample of documents consistent with the claim includes an Egyptian national health-insurance card and a national ID card (each showing a patient photograph and partially visible identifiers), two hospital external-referral forms addressed to the General Authority for Health Insurance bearing the hospital's stamp, and an itemized hospital billing statement for a cardiac-catheterization/CCU admission listing diagnosis-related line items, individual medications administered and total charges, stamped with the hospital's accounts department seal. The documents are internally consistent with Misr Al Mahaba Hospital's branding and billing format. The sample indicates exposure of patient-identifying documents and detailed clinical/billing records, creating a material risk of medical-identity theft, insurance fraud and targeted phishing against affected patients. No patient names, national ID numbers, health-insurance numbers, diagnoses or billing figures are reproduced.
-
-### 30 March 2025
-#### 🇪🇬 Egypt - INI Investments
-- **Ransomware Group:** nightspire
-- **Sector:** Finance
-- **Website:** iniholdings.com
-- **Status:** Claim - Unverified
-- **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
-- **Double-claim note:** The same actor, domain (iniholdings.com) and victim name appear again in April 2025 with a published sample and a different organizational description. AFRINTEL retains both monthly records pending confirmation of whether the April publication updates the March claim or represents a separate claim.
 
 ### 26 March 2025
 #### 🇧🇫 Burkina Faso - Government COVID-19/Vaccination Dashboard
@@ -106,11 +108,21 @@
 - **Description:** A forum post advertises administrator access to a Burkina Faso government COVID-19 and vaccination dashboard for a claimed price of $300.
 - **Analysis:** The publication displays COVID-19 case metrics, testing figures and vaccination totals, and offers administrator access for sale. The domain, access validity, provenance and relationship to the Sentap claims from November 2024 are unknown. This is recorded as an unverified access-sale claim; no credentials or personal data are reproduced.
 
+### 30 March 2025
+#### 🇪🇬 Egypt - INI Investments
+- **Ransomware Group:** nightspire
+- **Sector:** Finance
+- **Website:** [iniholdings.com](https://iniholdings.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
+- **Double-claim note:** The same actor, domain (iniholdings.com) and victim name appear again in April 2025 with a published sample and a different organizational description. AFRINTEL retains both monthly records pending confirmation of whether the April publication updates the March claim or represents a separate claim.
+
 ### 31 March 2025
 #### 🇷🇼 Rwanda - moh.gov.rw
 - **Ransomware Group:** babuk2
 - **Sector:** Public administrations (Health)
-- **Website:** moh.gov.rw
+- **Website:** [moh.gov.rw](https://www.moh.gov.rw/)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Very High

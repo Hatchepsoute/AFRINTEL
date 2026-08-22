@@ -1,342 +1,296 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
-# CTI Report: Cyber attacks in Africa - March 2025
-👉🏾 [**French version available here** ](./README_FR.md)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-March%202025-lightgrey)
+
+# CTI Report - Cyberattacks in Africa - March 2025
+
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Executive summary
-- **Total number of recorded attacks:** 11
-- **Most active actors:** arcusmedia (2 attacks), nightspire (2), play (1), killsec (1), MisterSam (1), lynx (1), funksec (1), Ghudra (1), babuk2 (1).
-- **Most targeted sectors:** Technology / IT services (3), Education (2), Healthcare (2), Government / Public administrations (2), Retail / Distribution (1), Finance / Banking / Insurance (1).
-- **Most affected countries:** Egypt (3), South Africa (2), Nigeria (2), Botswana (1), Tanzania (1), Burkina Faso (1), Rwanda (1).
-- **Exfiltrated data volume:** 400 GB for INI Investments (Egypt). Other volumes are not specified.
 
+March 2025 contains **11 documented incidents across 7 African countries**: **9 Ransomware, 1 Data Leak and 1 Access Sale**.
+
+- **Egypt** leads with 3 incidents.
+- **South Africa** and **Nigeria** record 2 incidents each.
+- **arcusmedia** and **nightspire** are the two most visible labels with 2 records each.
+- **Government / Administration** and **Technology / IT** each account for 3 incidents.
+- **INI Investments** is associated with a claim of 400 GB.
+- **MRTB Nigeria** is classified as Data Leak, while the Burkina Faso COVID-19/vaccination dashboard is classified as Access Sale.
+
+### 📋 Victim list
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+> Comparison based on validated AFRINTEL bilingual corpora. A change in documented records does not, by itself, prove a change in the real number of compromises.
+
+| Indicator | February 2025 | March 2025 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 8 | 11 | **+3 (+37.5%)** |
+| Ransomware | 8 | 9 | **+1 (+12.5%)** |
+| Data Leak | 0 | 1 | **+1 (new)** |
+| Access Sale | 0 | 1 | **+1 (new)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
 
 ## 2. Methodology
-This Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during March 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
+- **Scope**: 54 African countries.
+- **Period**: 1-31 March 2025.
+- **Sources**: OSINT, leak sites, underground forums, actor publications and samples when available.
+- **Source of truth**: validated bilingual pair [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), with French editorial review before English synchronization.
+- **Counting**: one card equals one unique monthly incident.
+- **Qualification**: claim, published sample, access sale and independent confirmation remain separate evidence dimensions.
 
 ## 3. Global overview
 
-### 3.1 Breakdown by actor
-| Actor / Group | Number of Attacks |
-|-------------------|-------------------|
-| arcusmedia        | 2                 |
-| nightspire        | 2                 |
-| play              | 1                 |
-| killsec           | 1                 |
-| MisterSam         | 1                 |
-| lynx              | 1                 |
-| funksec           | 1                 |
-| Ghudra *(access sale, non-ransomware)* | 1 |
-| babuk2            | 1                 |
-| **Total**         | **11**            |
+### 3.1 Incident-type distribution
+
+| Incident type | Count | Share |
+|---|---:|---:|
+| Ransomware | 9 | 81.8% |
+| Data Leak | 1 | 9.1% |
+| Access Sale | 1 | 9.1% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **11** | **100%** |
 
 ```mermaid
 pie showData
-    title Attacks by actor
-    "arcusmedia" : 2
-    "nightspire" : 2
-    "play" : 1
-    "killsec" : 1
-    "MisterSam" : 1
-    "lynx" : 1
-    "funksec" : 1
-    "Ghudra" : 1
-    "babuk2" : 1
-```
-
-### 3.2 Breakdown by sector
-| Sector | Number of Attacks |
-|---------|-------------------|
-| Technology / IT services | 3 |
-| Education | 2 |
-| Healthcare | 2 |
-| Government / Public administrations | 2 |
-| Retail / Distribution | 1 |
-| Finance / Banking / Insurance | 1 |
-| **Total** | **11** |
-
-```mermaid
-pie showData
-    title Breakdown by industry sector
-    "Tech / IT services" : 3
-    "Education" : 2
-    "Healthcare" : 2
-    "Public Administration" : 2
-    "Retail" : 1
-    "Finance" : 1
-```
-
-### 3.3 Breakdown by country
-| Country | Number of attacks |
-|------|-------------------|
-| 🇪🇬 Egypt | 3 |
-| 🇿🇦 South Africa | 2 |
-| 🇳🇬 Nigeria | 2 |
-| 🇧🇼 Botswana | 1 |
-| 🇹🇿 Tanzania | 1 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇷🇼 Rwanda | 1 |
-| **Total** | **11** |
-
-```mermaid
-pie showData
-    title Breakdown by country
-    "🇪🇬 Egypt" : 3
-    "🇿🇦 South Africa" : 2
-    "🇳🇬 Nigeria" : 2
-    "🇧🇼 Botswana" : 1
-    "🇹🇿 Tanzania" : 1
-    "🇧🇫 Burkina Faso" : 1
-    "🇷🇼 Rwanda" : 1
-```
-
-
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Standard global overview
-
-| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇪🇬 Egypt | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇳🇬 Nigeria | 1 | 1 | 2 | 🟧 🟦 |
-| 🇿🇦 South Africa | 2 | 0 | 2 | 🟧🟧 |
-| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |
-| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |
-| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
-| 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
-
-```mermaid
-pie showData
-    title Incident types
+    title Incident types - March 2025
     "Ransomware" : 9
-    "Data leaks + access sales" : 2
+    "Data Leak" : 1
+    "Access Sale" : 1
 ```
 
-### Monthly aggregate exposure view
+**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **2 records** (18.2% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+### 3.2 Country distribution
 
-
-### Geographic distribution by region
-
-| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| North Africa | 3 | 3 | 0 | 🟧🟧🟧 |
-| Southern Africa | 3 | 3 | 0 | 🟧🟧🟧 |
-| West Africa | 3 | 1 | 2 | 🟧 🟦🟦 |
-| Central Africa | 0 | 0 | 0 |  |
-| East Africa | 2 | 2 | 0 | 🟧🟧 |
+| Country | Ransomware | Data Leak | Access Sale | Total | Distribution |
+|---|---:|---:|---:|---:|---|
+| 🇪🇬 Egypt | 3 | 0 | 0 | 3 | 🟧🟧🟧 |
+| 🇿🇦 South Africa | 2 | 0 | 0 | 2 | 🟧🟧 |
+| 🇳🇬 Nigeria | 1 | 1 | 0 | 2 | 🟧🟦 |
+| 🇧🇼 Botswana | 1 | 0 | 0 | 1 | 🟧 |
+| 🇹🇿 Tanzania | 1 | 0 | 0 | 1 | 🟧 |
+| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | 🟪 |
+| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | 🟧 |
+| **Total** | **9** | **1** | **1** | **11** | |
 
 ```mermaid
-xychart
-    title "Occurrences by region"
-    x-axis ["NA","SA","WA","CA","EA"]
-    y-axis "Occurrences" 0 --> 4
-    bar [3,3,3,0,2]
+xychart-beta
+    title "Incidents by country - March 2025"
+    x-axis ["EG", "ZA", "NG", "BW", "TZ", "BF", "RW"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 2, 2, 1, 1, 1, 1]
 ```
-Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
 
-### Sector distribution
+**Legend:** `EG` = Egypt | `ZA` = South Africa | `NG` = Nigeria | `BW` = Botswana | `TZ` = Tanzania | `BF` = Burkina Faso | `RW` = Rwanda
 
-| Sector | Records | Share | Activity |
-| :--- | ---: | ---: | :--- |
+### 3.3 Comparison by type and country
+
+```mermaid
+xychart-beta
+    title "Ransomware by country - March 2025"
+    x-axis ["EG", "ZA", "NG", "BW", "TZ", "BF", "RW"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 2, 1, 1, 1, 0, 1]
+```
+
+**Additional reading:** 🟦 Data Leak = Nigeria 1 | 🟪 Access Sale = Burkina Faso 1.  
+**Countries:** `EG` = Egypt | `ZA` = South Africa | `NG` = Nigeria | `BW` = Botswana | `TZ` = Tanzania | `BF` = Burkina Faso | `RW` = Rwanda
+
+### 3.4 Geographic distribution by region
+
+| Region | Incidents | Share |
+|---|---:|---:|
+| North Africa | 3 | 27.3% |
+| Southern Africa | 3 | 27.3% |
+| West Africa | 3 | 27.3% |
+| Central Africa | 0 | 0.0% |
+| East Africa | 2 | 18.2% |
+| **Total** | **11** | **100%** |
+
+```mermaid
+xychart-beta
+    title "Incidents by region - March 2025"
+    x-axis ["NAF", "SAF", "WAF", "CAF", "EAF"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 3, 3, 0, 2]
+```
+
+**Legend:** `NAF` = North Africa | `SAF` = Southern Africa | `WAF` = West Africa | `CAF` = Central Africa | `EAF` = East Africa
+
+### 3.5 Sector distribution
+
+| Normalized sector | Incidents | Share | Activity |
+|---|---:|---:|---|
 | Government / Administration | 3 | 27.3% | ██████████ |
 | Technology / IT | 3 | 27.3% | ██████████ |
 | Education / University | 2 | 18.2% | ███████ |
 | Finance / Banking | 1 | 9.1% | ███ |
 | Healthcare / Medical | 1 | 9.1% | ███ |
-| Retail / E-commerce | 1 | 9.1% | ███ |
+| Retail / Distribution | 1 | 9.1% | ███ |
+| **Total** | **11** | **100%** | |
 
-### Most visible actors
+```mermaid
+xychart-beta
+    title "Incidents by sector - March 2025"
+    x-axis ["GOV", "TEC", "EDU", "FIN", "HEA", "RET"]
+    y-axis "Incidents" 0 --> 4
+    bar [3, 3, 2, 1, 1, 1]
+```
 
-| Actor / Group | Records | Activity |
-| :--- | ---: | :--- |
+**Legend:** `GOV` = Government / Administration | `TEC` = Technology / IT | `EDU` = Education / University | `FIN` = Finance / Banking | `HEA` = Healthcare / Medical | `RET` = Retail / Distribution
+
+### 3.6 Actors / groups
+
+| Actor / Group | Incidents | Activity |
+|---|---:|---|
 | arcusmedia | 2 | ██████████ |
 | nightspire | 2 | ██████████ |
-| Ghudra | 1 | █████ |
-| MisterSam | 1 | █████ |
-| babuk2 | 1 | █████ |
-| funksec | 1 | █████ |
-| killsec | 1 | █████ |
-| lynx | 1 | █████ |
 | play | 1 | █████ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| killsec | 1 | █████ |
+| MisterSam | 1 | █████ |
+| lynx | 1 | █████ |
+| funksec | 1 | █████ |
+| Ghudra | 1 | █████ |
+| babuk2 | 1 | █████ |
+| **Total** | **11** | |
 
-### Month-on-month comparison
+```mermaid
+xychart-beta
+    title "Documented actors or groups - March 2025"
+    x-axis ["ARC", "NIG", "PLA", "KIL", "MIS", "LYN", "FUN", "GHU", "BAB"]
+    y-axis "Incidents" 0 --> 3
+    bar [2, 2, 1, 1, 1, 1, 1, 1, 1]
+```
 
-Using the validated incident cards as the counting source, March 2025 recorded **11** incidents versus **8** in the preceding month (an increase of **+3**; **+37.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
-
-| Metric | Previous month | Current month | Change |
-|---|---:|---:|---:|
-| Recorded incident cards | 8 | 11 | +3 (+37.5%) |
+**Legend:** `ARC` = arcusmedia | `NIG` = nightspire | `PLA` = play | `KIL` = killsec | `MIS` = MisterSam | `LYN` = lynx | `FUN` = funksec | `GHU` = Ghudra | `BAB` = babuk2
 
 ## 4. Detailed analysis by incident type
 
-### 4.1 Arcusmedia (2 attacks)
-- **03/03/2025:** LINKGROUP (South Africa, technology consulting)
-- **03/03/2025:** synaptic.co.tz (Tanzania, technology consulting)
+### 4.1 Ransomware - 9 incidents
 
-*Note:* arcusmedia targeted two IT consulting companies on the same day, in South Africa and Tanzania.
+The nine Ransomware records are distributed across arcusmedia (2), nightspire (2), play (1), killsec (1), lynx (1), funksec (1) and babuk2 (1).
 
-### 4.2 nightspire (2 attacks)
-- **25/03/2025:** MISR AL MAHABA HOSPITAL (Egypt, healthcare)
-- **30/03/2025:** INI Investments (Egypt, finance) – 400 GB exfiltrated
+Several incidents contain reviewed material beyond a simple listing. Workforce Group includes HR data and documents linked to Nigeria's banking ecosystem. ACDC Express has a Lynx publication referencing Encrypted, Proof and AD Dump. Misr Al Mahaba Hospital includes medical and billing documents consistent with the victim. Rwanda's Ministry of Health has the strongest evidence level of the month, with an active web shell, phpMyAdmin access and authentication data described in the sample.
 
-*Note:* nightspire struck two Egyptian entities, a private hospital and a financial holding, with a significant data volume.
+### 4.2 Data Leak - 1 incident
 
-### 4.3 play (1 attack)
-- **02/03/2025:** IT-IQ Botswana (Botswana, technology consulting)
+**Medical Rehabilitation Therapists Board of Nigeria (MRTB)** is classified as Data Leak. A forum publication claims that CMS backups contain database access and other credentials. The hidden content, domain and a verifiable sample are not available in the supplied material, so the status remains **Claim - Unverified**.
 
-### 4.4 killsec (1 attack)
-- **02/03/2025:** Workforce Group (Nigeria, education/HR)
+### 4.3 Access Sale - 1 incident
 
-### 4.5 lynx (1 attack)
-- **07/03/2025:** ACDC Express (South Africa, retail)
-
-### 4.6 funksec (1 attack)
-- **11/03/2025:** ISEE (Egypt, education)
-
-### 4.7 babuk2 (1 attack)
-- **31/03/2025:** moh.gov.rw (Rwanda, public administration – health)
-
+**Burkina Faso - Government COVID-19/vaccination dashboard** is classified as Access Sale. Ghudra advertises administrator access for **$300**. The domain, access validity, provenance and any relationship with earlier claims remain unknown.
 
 ## 5. Sectoral impact
-- **Technology Consulting:** 3 attacks (IT-IQ Botswana, LINKGROUP, synaptic.co.tz). Groups play and arcusmedia are the main actors, targeting IT service providers in three different countries.
-- **Education:** 2 attacks (Workforce Group, ISEE). killsec and funksec targeted an educational services company and a private school.
-- **Healthcare:** 1 attack (MISR AL MAHABA HOSPITAL) by nightspire, affecting a private hospital in Cairo.
-- **Retail:** 1 attack (ACDC Express) by lynx, targeting a major distributor in South Africa.
-- **Finance:** 1 attack (INI Investments) by nightspire, with massive exfiltration of 400 GB.
-- **Public Administrations:** 1 attack (Rwandan Ministry of Health) by babuk2.
 
+**Government / Administration** and **Technology / IT** each account for **3 of 11 incidents (27.3%)**. **Education / University** accounts for 2. Finance, Healthcare and Retail / Distribution account for one incident each.
+
+This normalization avoids residual categories and reflects the primary activity of documented organizations.
 
 ## 6. Threat actor profile
-### 6.1 Threat actor profile
 
-Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+### 6.1 Profile
+
+arcusmedia and nightspire are the two most frequent labels with 2 incidents each. The other seven labels appear once.
 
 ### 6.2 Risk assessment
 
-Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
-
-- **Egypt:** 3 attacks (ISEE, MISR AL MAHABA HOSPITAL, INI Investments) - education, healthcare, and finance. Egypt remains the most targeted country of the month.
-- **South Africa:** 2 attacks (LINKGROUP, ACDC Express) - technology and retail.
-- **Botswana:** 1 attack (IT-IQ Botswana) - technology.
-- **Nigeria:** 1 attack (Workforce Group) - education/HR.
-- **Tanzania:** 1 attack (synaptic.co.tz) - technology.
-- **Rwanda:** 1 attack (Ministry of Health) - public administration.
-
-### 6.1. Threat actor → victim → country graph
-```mermaid
-graph LR
-    %% Groups & Victims
-    Play["Play"] -->|"IT-IQ Botswana"| BW["🇧🇼 Botswana"]
-    Killsec["Killsec"] -->|"Workforce Group"| NG["🇳🇬 Nigeria"]
-    
-    ArcusMedia["ArcusMedia"] -->|"LINKGROUP"| ZA["🇿🇦 South Africa"]
-    ArcusMedia -->|"synaptic.co.tz"| TZ["🇹🇿 Tanzania"]
-    
-    Lynx["Lynx"] -->|"ACDC Express"| ZA
-    
-    FunkSec["FunkSec"] -->|"ISEE"| EG["🇪🇬 Egypt"]
-    
-    Nightspire["Nightspire"] -->|"MISR AL MAHABA HOSPITAL"| EG
-    Nightspire -->|"INI Investments"| EG
-    
-    Babuk2["Babuk2"] -->|"moh.gov.rw"| RW["🇷🇼 Rwanda"]
-
-    %% Visual Styles
-    style Lynx fill:#b30000,stroke:#333,color:#fff
-    style Nightspire fill:#1a1a1a,stroke:#333,color:#fff
-    style Play fill:#1a1a1a,stroke:#333,color:#fff
-```
-North Africa (Egypt) and Southern Africa (South Africa, Botswana) concentrate the majority of attacks, with a presence in East Africa (Tanzania, Rwanda) and West Africa (Nigeria).
-
-### 6.2. Cyberattack timeline
-```mermaid
-timeline
-    title AFRINTEL March 2025 - Attack timeline
-
-    section 02 Mar
-        play : IT-IQ Botswana (🇧🇼 Botswana)
-        killsec : Workforce Group (🇳🇬 Nigeria)
-    section 03 Mar
-        arcusmedia : LINKGROUP (🇿🇦 South Africa)
-        arcusmedia : synaptic.co.tz (🇹🇿 Tanzania)
-    section 07 Mar
-        lynx : ACDC Express (🇿🇦 South Africa)
-    section 11 Mar
-        funksec : ISEE (🇪🇬 Egypt)
-    section 25 Mar
-        nightspire : MISR AL MAHABA HOSPITAL (🇪🇬 Egypt)
-    section 30 Mar
-        nightspire : INI Investments (🇪🇬 Egypt)
-    section 31 Mar
-        babuk2 : moh.gov.rw (🇷🇼 Rwanda)
-```
+| Country | Risk signal in the corpus |
+|---|---|
+| Egypt | 3 incidents across education, healthcare and finance |
+| Nigeria | 2 incidents, including ransomware with HR/banking data and a claimed data leak against a health regulator |
+| South Africa | 2 incidents across IT services and distribution |
+| Rwanda | 1 incident with active web shell, database access and authentication data observed |
+| Burkina Faso | 1 claimed administrator-access sale |
+| Botswana | 1 technology-consulting incident |
+| Tanzania | 1 technology-consulting incident |
 
 ## 7. Key trends and intelligence gaps
+
 ### 7.1 Observed trends
 
-The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+1. **Monthly corpus increase**: 8 incidents in February versus 11 in March.
+2. **Incident-type diversification**: March adds 1 Data Leak and 1 Access Sale, while February contained only Ransomware.
+3. **Sector concentration**: Government / Administration and Technology / IT together account for 6 of 11 records.
+4. **Egypt leads**: 3 incidents.
+5. **Uneven evidence depth**: cases range from unverified claims to deep backend access observed in the Rwanda case.
 
 ### 7.2 Intelligence gaps
 
-The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+- The domain and credentials associated with the MRTB claim are not visible in the supplied material.
+- The real validity of the Burkina Faso access sale is not confirmed.
+- Initial access remains unknown for several ransomware incidents.
+- Claimed volumes, including 400 GB for INI Investments and 800 GB for ACDC Express, remain actor claims when a complete dataset has not been measured.
 
-## 8. MITRE ATT&CK mapping (contextual)
-| Phase | Technique ID | Name | Incident association |
-|---|---|---|---|
-| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
-| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+### 7.3 Monthly evolution
 
-These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+```mermaid
+xychart-beta
+    title "Documented incidents - February vs March 2025"
+    x-axis ["FEB", "MAR"]
+    y-axis "Incidents" 0 --> 12
+    bar [8, 11]
+    bar [8, 9]
+```
 
-### Contextual observations
-Based on the available descriptions, we note:
-- **Massive exfiltration:** INI Investments (400 GB) demonstrates the capacity to collect large volumes of sensitive data.
-- **Targeting of strategic sectors:** finance, healthcare, public administrations.
-- **Geographic diversity:** attacks cover six countries, showing an expansion of ransomware groups across the continent.
-- **Double extortion likely:** claims accompanied by threats of disclosure.
-- **Targeting of IT providers:** 3 attacks on technology consulting companies, potentially used as a springboard to their clients.
+**Legend:** first series = total incidents | second series = Ransomware.  
+`FEB` = February 2025 | `MAR` = March 2025.
 
+The total increases from **8 to 11 (+37.5%)**. Ransomware increases from **8 to 9 (+12.5%)**. Data Leak and Access Sale each rise from 0 to 1 and are therefore marked as new incident types in the monthly corpus.
+
+## 8. MITRE ATT&CK mapping - contextual
+
+| Phase | Technique | Analytical scope |
+|---|---|---|
+| Initial access | T1190 - Exploit Public-Facing Application | Relevant as a defensive hypothesis where exposed web applications are involved, but not confirmed across the full corpus. |
+| Persistence / Execution | T1505.003 - Web Shell | Directly relevant to Rwanda's Ministry of Health case, where an active PHP web shell is observed. |
+| Collection | T1005 - Data from Local System | Context for local files, exports and artifacts observed. |
+| Collection | T1213 - Data from Information Repositories | Relevant to structured databases and repositories reviewed in several cases. |
+
+> The mappings are contextual. Only T1505.003 is directly supported by an explicit technical artifact in the monthly corpus.
 
 ## 9. Recommendations
-- **Egypt:** strengthen cybersecurity in the finance and healthcare sectors, particularly targeted by nightspire.
-- **IT consulting companies:** implement strict network segmentation and enhanced monitoring, as they are prime targets.
-- **Education sector:** raise awareness among private and public institutions about ransomware risks.
-- **Public administrations:** the Rwandan Ministry of Health must review its security protocols and backups.
-- **All sectors:** train employees to detect phishing and implement multi-factor authentication.
 
+- **Public sector**: strengthen exposed-application security, administrator-account monitoring and portal integrity.
+- **IT providers**: segment client environments, strengthen MFA and PAM, and monitor exports and remote access.
+- **Healthcare**: protect patient databases, professional identities and HR systems with enhanced logging.
+- **HR / Banking**: restrict employee-data exports, encrypt sensitive data and monitor access to BVN and onboarding records.
 
 ## 10. SOC and tactical recommendations
+
 ### Observed
 
-Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
+The corpus includes claims, documentary samples, claimed administrator access and, for Rwanda, technical evidence of deep backend access.
 
-### Hypotheses
+### Assumptions
 
-Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
+Initial vectors and complete exfiltration paths remain unknown for several cases. Generic assumptions about phishing or credential theft should not be presented as established facts.
 
 ### Preventive
 
-Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
+Monitor administrator access, web shells, database connections, account creation, large exports, unusual authentication and outbound transfers. Maintain MFA, segmentation, EDR, tested backups, secret rotation and rapid response to suspicious access.
 
 ## 11. Strategic recommendations
-1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
-2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
-3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
+
+1. Prioritize security across public administrations, IT providers and healthcare systems.
+2. Preserve incident-level evidence grading to avoid turning actor claims into established facts.
+3. Keep Data Leak, Access Sale and Ransomware separate in statistics.
+4. Strengthen regional information sharing between CERTs, ministries, universities and private operators.
 
 ## 12. Conclusion
-March 2025 was marked by sustained activity of ransomware groups in Africa, with geographic and sectoral diversification. Egypt remains the most affected country, notably by nightspire which carried out the largest attack of the month (INI Investments, 400 GB). The technology consulting sector is particularly targeted, with 3 attacks. The presence of groups like play, arcusmedia, and babuk2 across several countries demonstrates a professionalization and expansion of threats on the continent.
 
+March 2025 contains **11 incidents across 7 countries**, split into **9 Ransomware, 1 Data Leak and 1 Access Sale**. The total increases by **37.5%** compared with February.
 
-### Author
-*Adama ASSIONGBON*  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+Egypt remains the most represented country with 3 records. Workforce Group, Misr Al Mahaba Hospital and Rwanda's Ministry of Health also show how evidence depth varies significantly from one incident to another, supporting incident-specific CTI qualification.
 
----
-*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+**AFRINTEL** - Open African CTI Monitoring Initiative
