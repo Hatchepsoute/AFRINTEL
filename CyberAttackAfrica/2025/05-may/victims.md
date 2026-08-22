@@ -6,6 +6,12 @@
 # List of African Cyberattack Victims in May 2025 (21 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
+## Monthly snapshot
+
+May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **8 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## May 2025
 
 ### 01 May 2025
@@ -14,6 +20,7 @@
 - **Sector:** Technology / Managed Services (MSP) / Cloud
 - **Website:** https://www.eoh.co.za / ioco.tech
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** EOH is one of South Africa's largest technology service and consulting providers, offering digital transformation and infrastructure solutions. The Devman group used a generic description ("South African IT firm") on its leak site, a common tactic to maintain pressure during negotiation phases.
 
 ### 01 May 2025
@@ -22,6 +29,7 @@
 - **Sector:** Information Technology (IT) / Managed Services (MSP)
 - **Website:** https://dovesit.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** DovesIT is a South African Managed Service Provider (MSP). The company offers backup solutions, cloud hosting, network maintenance, and cybersecurity for small and medium-sized enterprises (SMEs) in South Africa.
 
 ### 01 May 2025
@@ -30,6 +38,7 @@
 - **Sector:** Business Services / Human Resources
 - **Website:** Not identified with sufficient confidence
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** This is a human resources firm or service provider based in South Africa, managing contractual, payroll, and personal data of numerous employees on behalf of third parties (HR outsourcing).
 
 ### 05 May 2025
@@ -50,6 +59,7 @@
 - **Sector:** Personal Protective Equipment (PPE) / Industry
 - **Website:** pienaarbrothers.co.za
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** South African leader in the supply and distribution of Personal Protective Equipment (PPE) and safety solutions for the mining, industrial, and manufacturing sectors.
@@ -117,11 +127,12 @@
 - **Analysis:** AFRINTEL reviewed the same DarkForums post published on 15 May 2025 by the actor kill9 ("Mauritanian Banks Data Leak"), which names General Bank of Mauritania among six Mauritanian financial institutions claimed to be compromised. Unlike four of the other named banks, the post does not include a payment-card sample or other data specifically attributed to GBM; the unattributed customer records shown in the post (name, negative account balance, partially masked client ID and password) could not be linked to this or any specific institution. In the absence of bank-specific evidence, AFRINTEL assesses this claim with low confidence, pending independent verification.
 
 ### 16 May 2025
-#### 🇿🇦 South Africa - south african airways (SAA)
+#### 🇿🇦 South Africa - South African Airways (SAA)
 - **Ransomware Group:** incransom
 - **Sector:** Air transport
 - **Website:** www.flysaa.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** South African Airways (SAA) is the national airline and the largest in South Africa, operating domestic and international flights.
@@ -133,6 +144,7 @@
 - **Sector:** Government / Social Services
 - **Website:** www.nssf.go.ke
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** National Social Security Fund of Kenya, the statutory body managing mandatory pension and social-security contributions for Kenyan workers. The actor demands $4.5 million USD.
@@ -144,6 +156,7 @@
 - **Sector:** Pharmacy / Healthcare
 - **Website:** medswana.co.bw
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence Level:** Medium
 - **Impact Level:** Level 3
 - **Victim Description:** Medswana (Pty) Ltd is one of Botswana's leading pharmaceutical distributors.
@@ -164,15 +177,17 @@
 - **Ransomware Group:** arkana
 - **Sector:** Mining
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Website:** angloamerican.com
 - **Victim Description:** Anglo American plc is a multinational mining company based in Johannesburg and London. It is the world's largest producer of platinum and diamonds, with operations in over 40 countries. It also mines copper, nickel, iron ore, and coal.
 
 ### 23 May 2025
-#### 🇿🇦 South Africa - netstar
+#### 🇿🇦 South Africa - Netstar
 - **Ransomware Group:** devman
 - **Sector:** Technology / Telematics / IoT Security
 - **Website:** netstar.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Netstar, a subsidiary of the Altron group, is the pioneer of the stolen vehicle recovery (SVR) industry in South Africa.
 
 ### 26 May 2025
@@ -205,6 +220,7 @@
 - **Sector:** Insurance
 - **Website:** ascoma.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** ASCOMA Cameroon is the Cameroonian branch of the Ascoma group, the leading independent insurance brokerage network in sub-Saharan Africa.
