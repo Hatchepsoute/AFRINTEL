@@ -5,6 +5,13 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # List of African cyberattack victims in April 2025 (17 victims)
 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+April 2025 includes **17 unique incidents**: **7 Ransomware**, **9 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **7 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## April 2025
 
 ### 04 April 2025
@@ -23,7 +30,8 @@
 - **Sector:** Finance / Logistics
 - **Website:** www.iacc.holdings
 - **Status:** Claim - Unverified
-- **Victim Description:** Egyptian private investment holding company focused on maritime transport and logistics. 27.75 GB of data exfiltrated.
+- **Incident type:** Ransomware
+- **Victim Description:** Egyptian private investment holding company focused on maritime transport and logistics. The actor claims the exfiltration of 27.75 GB of data; this volume is not independently verified in the available material.
 
 ### 07 April 2025
 #### 🇿🇦 South Africa - Cell C
@@ -31,6 +39,7 @@
 - **Sector:** Technology (Telecommunications)
 - **Website:** cellc.co.za
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Analysis:** AFRINTEL reviewed 20 screenshots from the RansomHouse publication. The evidence covers Cell C customer and employee information, passport material, call records, SMS data, international voice activity, customer contracts, franchise records, confidential NDAs, internal documents and a revenue summary. This breadth is consistent with a material telecommunications data exposure. Potential impacts include subscriber privacy loss, targeted phishing and fraud, employee targeting, exposure of call and messaging metadata, commercial espionage and operational reconnaissance. The screenshots do not independently establish the initial access vector, dataset completeness, affected subscriber count or operational impact. AFRINTEL does not reproduce personal records, passport details, phone numbers, contracts or download links.
@@ -42,6 +51,7 @@
 - **Sector:** Business Services / Outsourcing (BPO)
 - **Website:** ibsns.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** International Business Service (IBS) is one of the largest outsourcing service providers in Egypt. The company specializes in human resources management, mass recruitment, payroll outsourcing, and maintenance/logistics services for large companies and multinationals operating in Egypt.
 
 ### 08 April 2025
@@ -130,6 +140,7 @@
 - **Sector:** Information Technology
 - **Website:** tawasol-it.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** A technology solutions integrator based in Cairo that installs security and network infrastructure systems for businesses and smart buildings.
 
 ### 13 April 2025
@@ -174,6 +185,7 @@
 - **Sector:** Agribusiness
 - **Website:** premiermeats.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Premier Meats is a South African company specializing in the processing and distribution of quality meats.
 
 ### 22 April 2025
@@ -182,6 +194,7 @@
 - **Sector:** Agribusiness / Dairy Industry
 - **Website:** natilait.com.tn
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Natilait is a major player in the Tunisian agrifood sector, specializing in the production and marketing of milk (UHT), yogurt, and derived products.
 - **Analysis:** The 12 supplied JPG/PNG images include at least one structured internal product and stock table with item codes, dairy-product descriptions, quantities and inventory or stock fields; the other images appear related to operational business records, although several are not sufficiently legible for reliable extraction. The material is consistent with a data sample from Natilait manufacturing or distribution operations and could support competitive intelligence, document fraud or supply-chain targeting. The intrusion vector, the complete dataset scope and whether the images were produced by cicada3301 are not independently established. No product records or commercial values are reproduced.
 
@@ -191,6 +204,7 @@
 - **Sector:** Healthcare
 - **Website:** daralteb.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** Dar Al Teb is one of Egypt's most renowned medical centers, specializing in reproductive medicine, in vitro fertilization (IVF), and women's health.
