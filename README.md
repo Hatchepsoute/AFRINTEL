@@ -1,6 +1,6 @@
 ![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
-![Focus](https://img.shields.io/badge/Focus-Ransomware%20%26%20Data%20Leaks-red)
+![Focus](https://img.shields.io/badge/Focus-Cyber%20Incidents%20%26%20Threat%20Activity-red)
 ![Dark Web](https://img.shields.io/badge/Data%20Source-Dark%20Web%20%2F%20OSINT-black)
 ![Project](https://img.shields.io/badge/Project-AFRINTEL-black)
 ![License](https://img.shields.io/badge/License-MIT-blue)
@@ -15,7 +15,7 @@
 
 ---
 
-**AFRINTEL** is an open-source CTI project that tracks cyberattacks against African organizations: ransomware, data leaks, access sales and underground marketplace activity across all 54 countries on the continent, built from dark web sources, leak sites and OSINT.
+**AFRINTEL** is an open-source Cyber Threat Intelligence project focused on cyber incidents affecting African organizations across all 54 countries on the continent. The project documents ransomware, data leaks, access sales, DDoS, defacement, operational fraud and other relevant threat activity observed through dark web sources, leak sites, underground forums and OSINT. Incident type, status, confidence and impact are kept separate so that a criminal claim is not silently treated as a confirmed compromise.
 
 | Countries monitored | Threat actors tracked | Period covered | Formats |
 | :---: | :---: | :---: | :---: |
@@ -36,7 +36,7 @@ July 2026 brought in 42 incident records: 18 ransomware claims, 18 data leaks, 6
 
 ### First-half 2026 cyber threat report
 
-Between January and June 2026, AFRINTEL logged 239 incidents across the continent: 113 ransomware, 125 data leaks or access-sale offers, 1 defacement. Activity nearly doubled quarter over quarter, 82 incidents in Q1 against 157 in Q2. Ransomware barely moved, 56 to 57, while leaks and access sales jumped from 25 to 100.
+Between January and June 2026, AFRINTEL documented **294 deduplicated incidents**: **113 ransomware**, **121 data leaks**, **6 access-sale records**, **52 DDoS claims**, **1 defacement** and **1 operational-fraud incident**. Q1 accounts for **82 incidents**, compared with **212 in Q2**. Ransomware is nearly stable between quarters (56 to 57), while the sharp increase in Q2 is driven mainly by data exposure/access activity and DDoS reporting. Six multi-country records expand the semester to **317 geographic occurrences**.
 
 📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
 
@@ -52,12 +52,14 @@ Between January and June 2026, AFRINTEL logged 239 incidents across the continen
 
 ## Annual CTI reports
 
-Each annual report pulls together everything documented that year: country rankings, the ransomware/leak split, the actors that came up most often, and the CTI read on what it means. French and English carry the same numbers.
+Each annual report pulls together the validated monthly corpus for the year: incident-type distribution, country and regional exposure, sector patterns, actor visibility, evidence maturity and the CTI assessment. French and English are kept structurally aligned.
 
-| Year | FR | EN |
-| :--- | :--- | :--- |
-| 2024 | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| Year | Documented records | FR | EN |
+| :--- | ---: | :--- | :--- |
+| 2024 | **128** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2025 | **197** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+
+**2024 corrected baseline:** 128 documented cyber records across 28 countries. Of these, **127 belong to the six-type AFRINTEL core taxonomy**: 91 Ransomware, 31 Data Leak, 3 Access Sale, 1 Defacement and 1 Operational Fraud. **GTBank is retained separately as one victim-confirmed attempted attack** because the evidence does not support forcing it into a successful core incident category.
 
 ---
 
@@ -101,6 +103,7 @@ Each annual report pulls together everything documented that year: country ranki
 | April vs May 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 | June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
+| H1 2024 report | [FR](CyberAttackAfrica/2024/README_H1_FR.md) | [EN](CyberAttackAfrica/2024/README_H1.md) |
 | H1 2026 report | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 
@@ -137,7 +140,15 @@ Each annual report pulls together everything documented that year: country ranki
 | August 2026 | *in progress* |
 | H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
-Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. The H1 bundle folds in all 239 January-through-June incidents plus 36 bilingual reports, keeping the original monthly STIX IDs so OpenCTI can still correlate everything. MITRE ATT&CK context lives in the report descriptions themselves.
+Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. H1 bundles preserve the original monthly STIX IDs so OpenCTI can correlate records across reporting periods. When a monthly or half-year corpus is corrected, the corresponding aggregate STIX bundle should be regenerated before it is treated as an exact mirror of the Markdown source of truth. MITRE ATT&CK context lives in the report descriptions themselves.
+
+---
+
+## Data quality principles
+
+AFRINTEL separates **incident type**, **status**, **confidence** and **impact**. A ransomware leak-site listing remains a claim unless stronger evidence is available. Published samples, victim confirmations, government confirmations and later corroboration are preserved as different evidence states.
+
+Historical reposts are dated separately from the underlying claimed leak when that distinction is known. Multi-country records are counted once in deduplicated totals but may generate more than one geographic occurrence. When an event does not fit the six core incident types without distortion, AFRINTEL records the exception explicitly rather than inventing a classification.
 
 ---
 

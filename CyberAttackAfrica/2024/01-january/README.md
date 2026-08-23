@@ -1,171 +1,194 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-January%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # AFRINTEL CTI Report - January 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL documents **12 incidents** in January 2024: **3 ransomware claims**, **8 data leaks**, and **1 access sale**. South Africa accounts for all three ransomware publications, each attributed to LockBit3. The remaining nine incidents span nine countries and primarily involve databases, administrative information, and user accounts.
+AFRINTEL documents **14 incident records** in January 2024: **5 Ransomware**, **8 Data Leak** and **1 Access Sale**, across **10 African countries**. No DDoS, Defacement or Operational Fraud record is present in the validated January corpus.
 
-The month's most sensitive signals are the publications concerning Ghana's **Financial Intelligence Centre** and several Rwandan government domains. Available evidence increases confidence that exposed data existed, but it does not confirm the acquisition method or the full scope of the advertised datasets. The University of Buea access sale remains a **low-confidence** claim because the seller's account was subsequently flagged as suspicious.
+South Africa records **4 incidents**, including the victim-confirmed ITAC ransomware event. Cameroon now records **2 incidents**, including the University of Buea Access Sale and the victim-confirmed Eneo cyberattack. Eneo is mapped provisionally to the Ransomware taxonomy because secondary CTI sources use that classification, while the victim-facing reporting reviewed does not independently confirm ransomware deployment.
 
-Incident-level detail is available in [victims.md](./victims.md).
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+> A validated AFRINTEL monthly corpus for **December 2023 is not available in the repository used for this update**. December values and month-over-month changes therefore remain `N/A`.
+
+| Indicator | December 2023 | January 2024 | Change |
+|---|---:|---:|---:|
+| Total incidents | N/A | **14** | N/A |
+| Ransomware | N/A | **5** | N/A |
+| Data Leak | N/A | **8** | N/A |
+| Access Sale | N/A | **1** | N/A |
+| DDoS | N/A | **0** | N/A |
+| Defacement | N/A | **0** | N/A |
+| Operational Fraud | N/A | **0** | N/A |
 
 ## 2. Methodology
 
-This report covers publications discovered or assigned between January 1 and 31, 2024. Sources include ransomware leak sites, cybercriminal forums, and OSINT material retained in aggregate form. Each organization is counted once; inclusion does not amount to confirmation of compromise. Some leaks predate January and are assigned to this month based on their documented discovery date.
-
-All statistics derive from the **12 incidents** in [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
+- **Period:** 1-31 January 2024.
+- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
+- **Counting:** one harmonized card equals one documented incident record.
+- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Retrospective corrections:** incidents discovered during the 23 August 2026 historical audit are placed in their real 2024 incident month and retain a separate AFRINTEL correction date.
+- **Evidence qualification:** victim confirmation, threat-actor claim, published sample and technical confirmation remain distinct.
+- **Eneo caveat:** the cyberattack and disruption are victim-confirmed; its Ransomware type is a provisional controlled-taxonomy mapping based on secondary CTI classification, not victim-confirmed malware evidence.
 
 ## 3. Global overview
 
-| Indicator | Value |
-|---|---:|
-| Documented incidents | **12** |
-| Countries affected | **10** |
-| Ransomware | **3** |
-| Data leaks | **8** |
-| Access sales | **1** |
-| Defacement | **0** |
+### 3.1 Incident-type distribution
 
-### Country ranking
-
-| Country | Incidents | Ransomware | Data leak | Access sale |
-|---|---:|---:|---:|---:|
-| 🇿🇦 South Africa | 3 | 3 | 0 | 0 |
-| 🇩🇿 Algeria | 1 | 0 | 1 | 0 |
-| 🇧🇫 Burkina Faso | 1 | 0 | 1 | 0 |
-| 🇨🇲 Cameroon | 1 | 0 | 0 | 1 |
-| 🇬🇭 Ghana | 1 | 0 | 1 | 0 |
-| 🇰🇪 Kenya | 1 | 0 | 1 | 0 |
-| 🇲🇦 Morocco | 1 | 0 | 1 | 0 |
-| 🇳🇬 Nigeria | 1 | 0 | 1 | 0 |
-| 🇷🇼 Rwanda | 1 | 0 | 1 | 0 |
-| 🇪🇬 Egypt | 1 | 0 | 1 | 0 |
-| **Total** | **12** | **3** | **8** | **1** |
-
-```mermaid
-xychart
-    title "Incidents by country - January 2024"
-    x-axis ["ZA","DZ","BF","CM","GH","KE","MA","NG","RW","EG"]
-    y-axis "Incidents" 0 --> 4
-    bar [3,1,1,1,1,1,1,1,1,1]
-```
+| Incident type | Records | Share |
+|---|---:|---:|
+| Ransomware | **5** | **35.7%** |
+| Data Leak | **8** | **57.1%** |
+| Access Sale | **1** | **7.1%** |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **14** | **100%** |
 
 ```mermaid
 pie showData
-    title Incident-type distribution - January 2024
-    "Ransomware" : 3
-    "Data leaks" : 8
-    "Access sales" : 1
+    title Incident types - January 2024
+    "Ransomware" : 5
+    "Data Leak" : 8
+    "Access Sale" : 1
 ```
 
-### Regional distribution
+### 3.2 Country distribution
 
-| Region | Incidents | Observation |
-|---|---:|---|
-| Southern Africa | 3 | Three ransomware claims in South Africa |
-| North Africa | 3 | Algeria, Morocco, and Egypt |
-| West Africa | 3 | Burkina Faso, Ghana, and Nigeria |
-| East Africa | 2 | Kenya and Rwanda |
-| Central Africa | 1 | Access sale in Cameroon |
-| **Total** | **12** | |
+| Country | Ransomware | Data Leak | Access Sale | Total |
+|---|---:|---:|---:|---:|
+| 🇿🇦 South Africa | 4 | 0 | 0 | **4** |
+| 🇨🇲 Cameroon | 1 | 0 | 1 | **2** |
+| 🇩🇿 Algeria | 0 | 1 | 0 | 1 |
+| 🇧🇫 Burkina Faso | 0 | 1 | 0 | 1 |
+| 🇬🇭 Ghana | 0 | 1 | 0 | 1 |
+| 🇰🇪 Kenya | 0 | 1 | 0 | 1 |
+| 🇲🇦 Morocco | 0 | 1 | 0 | 1 |
+| 🇳🇬 Nigeria | 0 | 1 | 0 | 1 |
+| 🇷🇼 Rwanda | 0 | 1 | 0 | 1 |
+| 🇪🇬 Egypt | 0 | 1 | 0 | 1 |
+| **Total** | **5** | **8** | **1** | **14** |
 
-### Normalized sector distribution
+### 3.3 Regional distribution
 
-| Sector | Incidents | Share |
-|---|---:|---:|
-| Retail / E-commerce | 4 | 33.3% |
-| Government / Administration | 2 | 16.7% |
-| Education / University | 2 | 16.7% |
-| Media / Entertainment | 1 | 8.3% |
-| Technology / IT | 1 | 8.3% |
-| Civil Society / NGO | 1 | 8.3% |
-| Professional / Business Services | 1 | 8.3% |
-| **Total** | **12** | **100%** |
+| Region | Ransomware | Data Leak | Access Sale | Total |
+|---|---:|---:|---:|---:|
+| Southern Africa | 4 | 0 | 0 | **4** |
+| North Africa | 0 | 3 | 0 | **3** |
+| West Africa | 0 | 3 | 0 | **3** |
+| East Africa | 0 | 2 | 0 | **2** |
+| Central Africa | 1 | 0 | 1 | **2** |
+| **Total** | **5** | **8** | **1** | **14** |
 
-### Most visible actors
+### 3.4 Harmonized sector distribution
 
-| Actor or source | Incidents | Assessment |
-|---|---:|---|
-| LockBit3 | 3 | Ransomware claims in South Africa |
-| Tanaka and associated publications | 3 | Data leaks attributed across several sources |
-| Other actors or accounts | 6 | One publication each |
+| Sector | Records |
+|---|---:|
+| Retail / E-commerce | 4 |
+| Government / Administration | 3 |
+| Education / University | 2 |
+| Media / Entertainment | 1 |
+| Technology / IT | 1 |
+| Civil Society / NGO | 1 |
+| Professional / Business Services | 1 |
+| Energy / Utilities | 1 |
+| **Total** | **14** |
 
-## 4. Detailed analysis by incident type
+### 3.5 Actors / groups
 
-### 4.1 Ransomware
+| Actor / Group | Records |
+|---|---:|
+| lockbit3 | 3 |
+| Tanaka | 3 |
+| Unknown | 2 |
+| zebi | 1 |
+| r57 | 1 |
+| Milad | 1 |
+| DataHoes | 1 |
+| X0Frankenstein | 1 |
+| cnHunter | 1 |
+| **Total** | **14** |
 
-The three South African organizations - TiAuto Investments, Tiger Wheel & Tyre, and Crowe Southern Africa - were published under the LockBit3 name. No usable public technical evidence in the January corpus establishes initial access, the encrypted scope, or confirmed exfiltration. The established fact is the actor's publication of the organizations.
+```mermaid
+flowchart LR
+    LB["lockbit3 - 3"] --> ZA["South Africa"]
+    TAN["Tanaka - 3"] --> KE["Kenya"]
+    TAN --> BF["Burkina Faso"]
+    TAN --> EG["Egypt"]
+    UNK["Unknown - 2"] --> ITAC["South Africa - ITAC"]
+    UNK --> ENEO["Cameroon - Eneo"]
+```
 
-### 4.2 Data leaks and access sale
+## 4. Detailed analysis
 
-The eight leaks cover website data, user accounts, and administrative environments. Observed samples support the existence of plausible data structures, but full volumes remain actor claims. The Financial Intelligence Centre publication carries the highest potential impact because of the institution's role.
+### 4.1 Ransomware - 5 records
 
-The advertised administrator access to a University of Buea REDCap instance is kept separate. The access was not tested and its validity remains unknown.
+The original January corpus contained three `lockbit3` claims in South Africa. The historical correction adds two records:
 
-## 5. Sectoral impact
+- **ITAC, South Africa:** victim-confirmed Ransomware on 2 January. File encryption, loss of system access and ransom demand are confirmed by ITAC. Possible personal-data access/exfiltration remains qualified as possible.
+- **Eneo Cameroon:** victim-confirmed cyberattack and operational disruption beginning 29 January. Ransomware is retained only as a provisional AFRINTEL taxonomy mapping because the reviewed victim-facing reporting does not independently confirm ransomware deployment.
 
-Retail and e-commerce rank first, partly because several publications concern platforms or distributors exposed before January. Government and education account for fewer incidents but higher sensitivity through administrative information, student data, and institutional application access. Frequency and criticality therefore need to be assessed separately.
+### 4.2 Data Leak - 8 records
 
-## 6. Threat actor profile and risk assessment
+The eight Data Leak records remain unchanged from the previously harmonized January corpus.
 
-| Country or scope | Level | Rationale |
+### 4.3 Access Sale - 1 record
+
+The University of Buea record remains the single Access Sale and retains a low-confidence, unverified status.
+
+## 5. Key findings and intelligence gaps
+
+- Data Leak remains the largest category with **8 of 14 records (57.1%)**.
+- South Africa increases from 3 to **4 records** after adding ITAC.
+- Cameroon increases from 1 to **2 records** after adding Eneo.
+- January Ransomware rises from 3 to **5 records**, but one of the two added records, Eneo, carries an explicit taxonomy caveat.
+- Retrospective discoveries are assigned to their real incident month while preserving the later AFRINTEL correction date.
+
+## 6. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Application |
 |---|---|---|
-| 🇿🇦 South Africa | 🔴 High | Concentration of three ransomware claims |
-| 🇬🇭 Ghana | 🔴 High | Publication concerning a financial-intelligence body |
-| 🇷🇼 Rwanda | 🔴 High | Data attributed to several government domains |
-| 🇨🇲 Cameroon | 🟠 Medium | Unvalidated, low-confidence access sale |
-| Other countries | 🟡 Low to medium | One publication per country, with varying scope |
+| Observed / ITAC | T1486 - Data Encrypted for Impact | ITAC confirms file encryption during the ransomware event. |
+| Preventive / other Ransomware claims | T1486 - Data Encrypted for Impact | Relevant monitoring where encryption is not technically confirmed. |
+| Assumption | T1078 - Valid Accounts | Relevant to the University of Buea Access Sale; access validity is unknown. |
+| Contextual | T1213 - Data from Information Repositories | Relevant to structured database and CMS samples in Data Leak records. |
 
-## 7. Key trends and intelligence gaps
+## 7. Recommendations
 
-- **Observed - high confidence:** leaks and access sales dominate the corpus, accounting for 9 of 12 incidents.
-- **Observed - high confidence:** all three ransomware claims concern South Africa and are associated with LockBit3.
-- **Priority gap:** no public DFIR report was identified in the sources reviewed to establish initial access or confirm the ransomware scope.
-- **Priority gap:** full advertised database volumes cannot be inferred from the observed excerpts alone.
-- **Collection need:** monitor victim statements, regulatory notices, and later publications that may distinguish old data, reposts, and contemporary incidents.
+- Keep victim-confirmed facts separate from secondary ransomware classifications.
+- Preserve incident date, initial publication date and retrospective AFRINTEL correction date as separate fields.
+- Prioritize resilience and segmentation reviews for critical infrastructure operators such as electricity utilities.
+- Validate potential personal-data exfiltration independently before converting a ransomware record into an additional Data Leak record.
+- Maintain lifecycle and deduplication checks when later publications refer to the same underlying event.
 
-## 8. Contextual MITRE ATT&CK mapping
+## 8. Timeline
 
-| Analytical status | Phase | Technique | Application to the corpus |
-|---|---|---|---|
-| Preventive | Impact | T1486 - Data Encrypted for Impact | Relevant monitoring for the three ransomware claims; encryption is not confirmed by public telemetry |
-| Assumption | Initial Access / Persistence | T1078 - Valid Accounts | Plausible scenario for the University of Buea access sale; access validity is unknown |
-| Preventive | Exfiltration | T1567 - Exfiltration Over Web Service | Defensive control relevant to leak cases; no exfiltration channel was observed |
+```mermaid
+timeline
+    title AFRINTEL - January 2024
+    01 January : K24
+               : University of Oran
+               : BIA-Market
+               : Morocco Forum Site
+               : Government of Rwanda
+    02 January : Financial Intelligence Centre
+               : ITAC
+    03 January : The Citizens' Watch
+    07 January : University of Buea
+    10 January : TiAuto Investments
+               : Tiger Wheel & Tyre
+    26 January : Btech.com
+    29 January : Crowe Southern Africa
+               : Eneo Cameroon
+```
 
-## 9. Recommendations
+## 9. Conclusion
 
-- **Government bodies:** inventory exposed applications, review privileged accounts, and prepare notification procedures.
-- **Education organizations:** deploy phishing-resistant MFA for administrators and review access to research applications.
-- **Retail and media organizations:** review database exports, CMS accounts, and application secrets.
-- **Ransomware-listed organizations:** perform a full restoration test from isolated, immutable backups.
+January 2024 now contains **14 documented incident records across 10 African countries**, comprising **5 Ransomware, 8 Data Leak and 1 Access Sale**.
 
-## 10. SOC and tactical recommendations
+The retrospective correction adds ITAC and Eneo Cameroon while preserving the distinction between confirmed incident effects and uncertain technical classification.
 
-| Qualification | Action |
-|---|---|
-| **Observed** | Search IAM, VPN, and application logs for accounts tied to the published environments; no intrusion TTP is publicly confirmed. |
-| **Assumption** | Review unusual administrative authentication around publication dates, particularly for REDCap and exposed CMS platforms. |
-| **Preventive** | Detect large archive creation, unusual SQL exports, backup inhibition, and mass file-extension changes. |
-| **Preventive** | Correlate EDR, WAF, IAM, DNS, and proxy data to identify exfiltration or encryption activity not visible through OSINT. |
-
-## 11. Strategic recommendations
-
-| Priority | Qualification | Measure |
-|---:|---|---|
-| 1 | **Observed** | Reduce exposure of the government and education applications cited in the corpus. |
-| 2 | **Assumption** | Treat the access sale as a valid-account risk without assuming the advertised access still works. |
-| 3 | **Preventive** | Standardize phishing-resistant MFA, secret rotation, and quarterly privileged-account reviews. |
-| 4 | **Preventive** | Maintain isolated, immutable critical backups and test them through restoration exercises. |
-
-## 12. Conclusion
-
-January 2024 shows two distinct patterns: ransomware concentrated in South Africa and a much wider circulation of data and access claims. Government-related publications carry the greatest sensitivity, but the available evidence does not turn those claims into confirmed compromises. Priorities are to validate exposure, reduce external access, and preserve an independent restoration capability.
-
-**AFRINTEL - TLP:CLEAR**
-[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR

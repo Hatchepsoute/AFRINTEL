@@ -1,17 +1,22 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Cyber Attacks in Africa: January 2024: List of 12 Victims
+# List of African cyberattack victims in January 2024 (14 victims)
+👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+January 2024 contains **14 documented incident records**: **5 Ransomware**, **8 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **10 African countries**.
 
 ### January 1, 2024
 
 #### 🇰🇪 Kenya - Kenya News Broadcasting Company (K24)
 
 - **Actor / Group:** Tanaka
-- **Sector:** Media / Broadcasting
+- **Sector:** Media / Entertainment
 - **Status:** Claim - Data Sample Published
 - **Website:** [24tv.co.ke](https://24tv.co.ke)
 - **Confidence level:** Medium
@@ -27,7 +32,7 @@
 - **Description:**
   Kenya News Broadcasting Company operates the K24 news broadcasting platform in Kenya. The publication presents a database claim associated with the K24 WordPress site.
 
-- **CTI analysis:**
+- **Analysis:**
   The visible sample references the WordPress wp_options table and website configuration or content-management fields, including cookie-banner settings, category and menu configuration, custom CSS and related site options. The screenshot does not establish whether personal data, credentials or complete user records were included in the claimed SQL file. AFRINTEL does not reproduce any database values from the sample.
 
 - **Recommendations:**
@@ -40,8 +45,8 @@
 
 #### 🇩🇿 Algeria - University of Oran
 
-- **Actor / Group:** zebi, repost published on a cybercriminal forum
-- **Sector:** Education / Higher education
+- **Actor / Group:** zebi
+- **Sector:** Education / University
 - **Status:** Claim - Data Sample Published
 - **Website:** Not identified with sufficient confidence
 - **Confidence level:** Medium
@@ -56,7 +61,7 @@
 - **Description:**
   The threat actor `zebi` reposted a database presented as originating from a university in Oran, Algeria. A sample is directly visible in the forum post, while additional downloadable content is locked behind the forum's access mechanism.
 
-- **CTI analysis:**
+- **Analysis:**
   The visible sample follows a database structure containing the fields `numero`, `nom`, `prenom`, `datenaiss`, `teleph`, `sexe`, `email`, `mot_passe` and `nationalite`.
 
   The records therefore expose personal and account-related information, including identities, dates of birth, telephone numbers, email addresses, gender and nationality. Values under the `mot_passe` field appear to resemble cryptographic hashes rather than immediately readable passwords; however, the algorithm and security of those values cannot be established from the screenshot alone.
@@ -74,8 +79,8 @@
 
 #### 🇧🇫 Burkina Faso - BIA-Market
 
-- **Actor / Group:** Tanaka, SQL.ticanalyse.org forum publication
-- **Sector:** E-commerce / Retail
+- **Actor / Group:** Tanaka
+- **Sector:** Retail / E-commerce
 - **Status:** Claim - Data Sample Published
 - **Website:** [bia-market.com](https://www.bia-market.com)
 - **Confidence level:** Medium
@@ -91,7 +96,7 @@
 - **Description:**
   BIA-Market is an e-commerce platform operating in Burkina Faso. The publication presents a 4.5 GB SQL file containing approximately 5,000 rows and shows records from the site's database structure. AFRINTEL records this case in January 2024 as the detection period requested for this incident.
 
-- **CTI analysis:**
+- **Analysis:**
   The visible sample references the vb_users table and fields including login, email, user URL, registration date, activation key, status and display name. The sample indicates exposure of account and platform metadata, but no raw credentials or personal records are reproduced here. The screenshot does not prove the authenticity or completeness of the dataset, nor does it confirm how or when BIA-Market was accessed.
 
 - **Recommendations:**
@@ -107,7 +112,7 @@
 #### 🇲🇦 Morocco - Morocco Forum Site
 
 - **Actor / Group:** r57
-- **Sector:** Technology / Online Community
+- **Sector:** Technology / IT
 - **Status:** Claim - Data Sample Published
 - **Website:** Not specified
 - **Confidence level:** Medium
@@ -122,15 +127,15 @@
 - **Description:**
   Morocco Forum Site is presented in the source as an online forum or community platform associated with Moroccan users. The exact legal entity and domain are not identified in the publication.
 
-- **CTI analysis:**
+- **Analysis:**
   The visible sample suggests exposure of user-account data and authentication-related fields. If authentic, the dataset could support targeted phishing, account takeover attempts, credential-stuffing or password-reset abuse. The advertised volume and price remain actor claims. Because the source publication predates the requested January 2024 placement, AFRINTEL records the source date separately and does not treat January as the incident or publication date.
 
 ### January 1, 2024
 
 #### 🇷🇼 Rwanda - Government of Rwanda (multiple domains)
 
-- **Actor / Group:** Milad, post published on a cybercriminal forum (account subsequently shown as banned)
-- **Sector:** Government / Public Administration
+- **Actor / Group:** Milad
+- **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
 - **Website:** [cheno.gov.rw](https://cheno.gov.rw), [cnlg.gov.rw](https://cnlg.gov.rw), [nurc.gov.rw](https://nurc.gov.rw), [yego.gov.rw](https://yego.gov.rw)
 - **Confidence level:** Medium
@@ -145,15 +150,15 @@
 - **Description:**
   The claim references four Rwandan government web domains. Based on their naming, cnlg.gov.rw corresponds to the National Commission for the Fight against Genocide (Commission Nationale de Lutte contre le Génocide, CNLG) and nurc.gov.rw corresponds to the National Unity and Reconciliation Commission (NURC); the specific institutions behind cheno.gov.rw and yego.gov.rw are not identified in the source and are not assumed here. The visible sample's Kinyarwanda-language content, including genocide-remembrance and commemorative references, is consistent with, but does not independently confirm, an association with one of these bodies.
 
-- **CTI analysis:**
+- **Analysis:**
   The post claims a single 329 MB SQL "full backup" spanning four separate government domains, an unusually broad scope for one export that is not independently corroborated beyond the visible sample. The sample itself displays a coherent backend-administration table (`be_users`) with realistic usernames, hashed credentials in recognised formats, and CMS session metadata, consistent with a genuine database export; however, the poster labels the CMS as "Custom" while the table structure and field names visible in the sample are characteristic of the TYPO3 content-management system, an inconsistency AFRINTEL cannot resolve from the available material. If genuine, compromise of backend administrative credentials across national government and reconciliation-related institutions could enable unauthorised content manipulation, further lateral access to internal systems, and reputational or trust impact on state institutions tied to Rwanda's genocide-memory and national-unity mandate. AFRINTEL treats this as a claim with a published data sample; the authenticity, current validity of the credentials, and the scope of the leak beyond the reviewed table are not independently verified.
 
 ### January 2, 2024
 
 #### 🇬🇭 Ghana - Financial Intelligence Centre (FIC)
 
-- **Actor / Group:** DataHoes, post published on a cybercriminal forum
-- **Sector:** Government / Financial Intelligence / Anti-Money Laundering
+- **Actor / Group:** DataHoes
+- **Sector:** Government / Administration
 - **Status:** Data Fully Published
 - **Website:** [fic.gov.gh](https://fic.gov.gh)
 - **Confidence level:** High
@@ -168,7 +173,7 @@
 - **Description:**
   The Financial Intelligence Centre (FIC) is Ghana's national agency responsible for receiving and analysing suspicious transaction reports and other information relevant to money laundering, terrorist financing and proliferation financing, and for disseminating actionable intelligence to competent authorities.
 
-- **CTI analysis:**
+- **Analysis:**
   The actor states the data was extracted on December 3, 2023, and describes an archive of 2.0 GiB across 6,025 files and 663 sub-folders, with a full directory listing published separately. The sampled directory tree shows folders labelled "FIC HR DOCS" and "Finance_Scans", containing internal governance and HR material (an accounting manual, an audit manual, a board charter, conditions-of-service and human-resource policy documents, staff-numbers records) and multi-year scanned finance correspondence (bank statement requests, payment authorisations, foreign-exchange requests, monthly payroll notices). One filename explicitly references FIC's response to a GIABA/ICRG nomination process, which is consistent with FIC's known anti-money-laundering mandate and supports the authenticity of the dataset. Several filenames in the sample also reference individually named staff members' academic certificates and payroll documents.
 
   Given the sensitivity of a national financial-intelligence unit's internal HR, payroll, banking and governance records, exposure of this material could facilitate targeted social engineering or phishing against FIC staff, disclosure of internal banking arrangements, and reputational or operational impact on a body central to Ghana's anti-money-laundering and counter-terrorist-financing framework. AFRINTEL did not access the referenced archive or the linked directory-tree file, and does not reproduce any staff name, financial figure or document content beyond the folder and file names visible in the reviewed forum post.
@@ -179,12 +184,32 @@
 
 ----------------------------
 
+### January 2, 2024
+
+#### 🇿🇦 South Africa - International Trade Administration Commission of South Africa (ITAC)
+- **Incident date:** January 2, 2024
+- **Initial publication date:** April 15, 2024
+- **AFRINTEL correction date:** August 23, 2026
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** [itac.org.za](https://itac.org.za/)
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Evidence note:** ITAC officially confirmed a ransomware attack. Possible access to and exfiltration of personal information is reported by the victim but remains qualified as possible rather than confirmed.
+- **Victim Description:** ITAC is South Africa's statutory trade-administration body and processes information relating to employees, service providers, importers, exporters and other stakeholders.
+- **Analysis:** ITAC states that it suffered a ransomware attack on January 2, 2024. Malicious actors encrypted files, locked users out of systems and demanded a ransom. ITAC shut down affected servers, restored backups and initiated forensic work. The official notification also states that the attacker may have accessed and possibly extracted personal information held on ITAC servers. The exact actor, initial access vector, ransom amount and confirmed exfiltration scope were not publicly established in the reviewed source. The ransomware event is therefore victim-confirmed, while data exfiltration remains possible rather than confirmed.
+- **Public source:** [ITAC official notification](https://itac.org.za/notification-of-a-personal-information-security-compromise/)
+
+----------------------------
+
 ### January 3, 2024
 
 #### 🇳🇬 Nigeria - The Citizens' Watch
 
-- **Actor / Group:** X0Frankenstein, post published on a cybercriminal forum
-- **Sector:** Civil Society / Governance / Non-profit
+- **Actor / Group:** X0Frankenstein
+- **Sector:** Civil Society / NGO
 - **Status:** Claim - Data Sample Published
 - **Website:** [thecitizenswatch.com](https://thecitizenswatch.com/)
 - **Confidence level:** High
@@ -199,7 +224,7 @@
 - **Description:**
   The Citizens' Watch (thecitizenswatch.com) is presented as a promise-tracking platform enabling citizens, civil society, journalists, scholars and policy analysts to track government officials' campaign commitments. It is described as an initiative of The Reformers Initiative for Development in Africa ("Reformers of Africa"), a pan-African civic-tech non-profit stated to operate across multiple African countries including Nigeria, South Sudan, Namibia, the Democratic Republic of the Congo, Tunisia, Comoros and South Africa. The organization's precise country of registration or headquarters is not stated in the source; the visible sample shows a strong concentration of Nigerian contact details (Lagos, Ekiti, Oyo, Ogun, Kogi, Anambra), which AFRINTEL uses to place this entry under Nigeria while noting the organization's pan-African scope.
 
-- **CTI analysis:**
+- **Analysis:**
   The visible excerpt mixes several distinct table structures rather than a single coherent schema, consistent with either a genuinely compromised multi-table database export or an assembled paste; AFRINTEL cannot independently confirm the origin of each table segment. Where legible, the sample includes user records with names, email addresses, phone numbers, a bcrypt-format password hash, uploaded CV file references, dates of birth and account-status fields, alongside event/training registration entries and an apparently unrelated geographic reference table. If authentic, exposure of this data could expose citizen and event-registrant personal data (names, contact details, CV documents) to phishing, social-engineering and account-takeover risk, and any exposed password hash could be subject to offline cracking if the hashing scheme is weak or reused elsewhere. AFRINTEL classifies this as a data-sample-published claim given the volume and structure of visible records, while noting that the domain's ownership of each table segment and the full scope of the underlying database are not independently verified.
 
 ----------------------------
@@ -208,8 +233,8 @@
 
 #### 🇨🇲 Cameroon - University of Buea (UB)
 
-- **Actor / Group:** cnHunter, post published on a cybercriminal forum
-- **Sector:** Education / Higher Education / Research
+- **Actor / Group:** cnHunter
+- **Sector:** Education / University
 - **Status:** Claim - Unverified
 - **Website:** [ubuea.cm](https://ubuea.cm)
 - **Confidence level:** Low
@@ -223,7 +248,7 @@
 - **Description:**
   The University of Buea (UB) is a public university in Cameroon's South-West Region, offering programmes across faculties including science, health sciences, engineering, arts, law, and social and management sciences. REDCap instances deployed by universities are typically used to manage academic, survey and clinical or research data.
 
-- **CTI analysis:**
+- **Analysis:**
   The post asserts administrative access to a REDCap data-collection instance associated with the university's domain and is later marked "Unlocked" in an edit, but provides no visible data sample, no independently verifiable evidence and no listed price. Combined with the subsequent permanent ban of the posting account for suspected scamming, AFRINTEL treats this as a low-confidence, unverified claim. If genuine, unauthorised administrative access to a REDCap instance could expose research, survey or academic records tied to students, staff or study participants; neither the access nor any underlying dataset is confirmed.
 
 ----------------------------
@@ -231,40 +256,42 @@
 ### January 10, 2024
 
 #### 🇿🇦 South Africa - TiAuto Investments
-- **Ransomware group:** lockbit3
-- **Sector:** Automotive & Retail
+- **Ransomware Group:** lockbit3
+- **Sector:** Retail / E-commerce
 - **Website:** [tiautoinvestments.co.za](https://www.tiautoinvestments.co.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 2
-- **Victim description:** TiAuto Investments is a prominent South African holding company specialized in the retail and wholesale distribution of wheels, tires, and automotive accessories. Founded in 2006 and headquartered in Midrand, it controls leading continental brands like Tiger Wheel & Tyre and Tyres & More.
+- **Victim Description:** TiAuto Investments is a prominent South African holding company specialized in the retail and wholesale distribution of wheels, tires, and automotive accessories. Founded in 2006 and headquartered in Midrand, it controls leading continental brands like Tiger Wheel & Tyre and Tyres & More.
 
 ----------------------------
 
 ### January 10, 2024
 
 #### 🇿🇦 South Africa - Tiger Wheel & Tyre
-- **Ransomware group:** lockbit3
-- **Sector:** Automotive & Fitment Services
+- **Ransomware Group:** lockbit3
+- **Sector:** Retail / E-commerce
 - **Website:** [twt.co.za](https://twt.co.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 2
-- **Victim description:** Tiger Wheel & Tyre is a flagship subsidiary of TiAuto Investments, boasting over 50 years of operation and managing more than 100 fitment centers across South Africa and Southern Africa. It specializes in wheel alignment, balancing, and premium tire retail services.
+- **Victim Description:** Tiger Wheel & Tyre is a flagship subsidiary of TiAuto Investments, boasting over 50 years of operation and managing more than 100 fitment centers across South Africa and Southern Africa. It specializes in wheel alignment, balancing, and premium tire retail services.
 
 ----------------------------
 
 ### January 26, 2024
 
 #### 🇪🇬 Egypt - Btech.com
-- **Actor / Group:** Tanaka, post published on a cybercriminal forum (RaidForums)
-- **Sector:** Retail / Electronics
+- **Actor / Group:** Tanaka
+- **Sector:** Retail / E-commerce
 - **Website:** [btech.com](https://www.btech.com)
 - **Status:** Claim - Data Sample Published
-- **Confidence level:** Medium
+- **Confidence level:** High
 - **Impact level:** Level 2
 - **Incident type:** Data Leak
-- **Victim description:** Btech.com is an Egyptian retail chain selling electronics and home appliances.
+- **Victim Description:** Btech.com is an Egyptian retail chain selling electronics and home appliances.
 - **Analysis:** The actor Tanaka, a forum moderator, published a claim on January 26, 2024 concerning Btech.com, described as a 20 MB CSV export dated February 23, 2023 and totaling 203,265 rows. The advertised field header includes: ID, Name, Email, Phone, ZIP, Country, State/Province, Customer Since, Billing Address, Shipping Address, Date of Birth, Gender, Street Address, City, Company.
 
   The sample shown in the post displays real customer records with names, email addresses, detailed postal addresses in Arabic, dates of birth (mostly unpopulated) and gender. Several sample rows also contain additional values beyond the 15 fields advertised in the header, matching the 14-digit format of Egyptian national identity numbers, along with a name and phone number distinct from the primary account holder, suggesting a richer underlying data structure than described in the post's public header.
@@ -274,13 +301,34 @@
 ### January 29, 2024
 
 #### 🇿🇦 South Africa - Crowe Southern Africa
-- **Ransomware group:** lockbit3
-- **Sector:** Audit, Tax & Advisory
+- **Ransomware Group:** lockbit3
+- **Sector:** Professional / Business Services
 - **Website:** [crowe.com/za](https://www.crowe.com/za)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 2
-- **Victim description:** Crowe Southern Africa is a premier professional services firm and an independent member of the global Crowe Global network. With established offices in Johannesburg, Cape Town, and Stellenbosch, it delivers high-quality audit, tax, forensic accounting, and corporate financial advisory.
+- **Victim Description:** Crowe Southern Africa is a premier professional services firm and an independent member of the global Crowe Global network. With established offices in Johannesburg, Cape Town, and Stellenbosch, it delivers high-quality audit, tax, forensic accounting, and corporate financial advisory.
+
+----------------------------
+
+### January 29, 2024
+
+#### 🇨🇲 Cameroon - Eneo Cameroon
+- **Incident date:** January 29, 2024
+- **Initial publication date:** February 2, 2024
+- **AFRINTEL correction date:** August 23, 2026
+- **Actor / Group:** Unknown
+- **Sector:** Energy / Utilities
+- **Website:** [eneocameroon.cm](https://eneocameroon.cm/)
+- **Status:** Victim Confirmed - Ransomware Classification Unverified
+- **Incident type:** Ransomware
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Taxonomy note:** The cyberattack and operational disruption are victim-confirmed. `Ransomware` is retained as a provisional AFRINTEL taxonomy mapping because secondary CTI sources classify the incident as ransomware; victim-facing reporting reviewed here does not independently confirm ransomware deployment.
+- **Victim Description:** Eneo Cameroon is the country's principal electricity utility and operates customer billing and prepaid/postpaid electricity services.
+- **Analysis:** Eneo confirmed that a cyberattack beginning on January 29, 2024 significantly disrupted its computer systems. Some applications were disabled as a security precaution, and prepaid/postpaid customer operations were affected, including difficulties buying electricity units. Public reporting and later African cybercrime assessments corroborate the attack. Some CTI sources classify the event as ransomware, but the reviewed victim-facing reporting does not provide enough technical detail to independently confirm ransomware deployment. The confirmed facts are therefore the cyberattack and material operational disruption; ransomware remains a qualified secondary assessment.
+- **Public sources:** [ITWeb Africa](https://itweb.africa/article/cameroons-power-utility-suffers-a-cyber-attack/8OKdWqDXArbqbznQ) | [OBS-CC](https://obs-cc.org/incident/eneo-cameroon/)
 
 ----------------------------
 

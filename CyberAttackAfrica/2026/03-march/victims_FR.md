@@ -330,16 +330,45 @@ Cette liste recense les revendications/publications ransomware, les fuites de do
 - **Statut :** Claim - Unverified
 - **Description victime :** Cabinet de conseil en ingénierie basé en Afrique du Sud.
 
-### 24 Mars 2026
+### 24 mars 2026
 #### 🇸🇳 Sénégal - United Bank for Africa (UBA Sénégal)
+
+- **Date de l'incident :** 30-31 janvier 2026
+- **Date de publication initiale :** 24 mars 2026
+- **Date de détection AFRINTEL :** 24 mars 2026
 - **Acteur / Groupe :** Non attribué
 - **Secteur :** Finance / Banque
 - **Site web :** [ubasenegal.com](https://www.ubasenegal.com)
-- **Date de l’attaque :** 30-31 janvier 2026 (révélée le 24 mars 2026)
-- **Statut :** Under Investigation
-- **Référence :** https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions
-- **Note de taxonomie :** Cet incident ne correspond à aucun des quatre types d'incident AFRINTEL (Ransomware, Fuite de données, Vente d'accès, Défacement). Il s'agit d'une fraude opérationnelle confirmée via un accès privilégié compromis à l'infrastructure d'autorisation de cartes, pas d'une revendication sur site de fuite, d'une publication de données ou d'une vente d'accès annoncée. Aucun type d'incident n'est attribué ; cette fiche est exclue des compteurs structurés Ransomware/Fuite de données/Vente d'accès/Défacement.
-- **Description victime :** Selon le ngCERT, une opération de cash-out cyber visant UBA Sénégal a impliqué 3 421 transactions GAB. Les pertes avaient été précédemment rapportées à 1,143 milliard de FCFA ; l’avis du ngCERT les présente comme supérieures à 2 millions USD. Le ngCERT estime qu’un accès privilégié à l’infrastructure d’autorisation des cartes aurait permis la modification de contrôles transactionnels et la coordination des retraits. Le vecteur d’accès initial, la séquence technique exacte et une éventuelle implication interne restent inconnus. Le phishing, les faiblesses de la chaîne d’approvisionnement, l’accès interne et les malwares ATM sont présentés par le ngCERT comme des scénarios possibles pour cette classe d’attaque, et non comme des faits confirmés pour UBA Sénégal.
+- **Statut AFRINTEL :** Authority Confirmed - Technical Investigation Ongoing
+- **Type d'incident :** Fraude opérationnelle / Cyber-enabled ATM Cash-Out
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  UBA Sénégal a été touchée par une opération coordonnée de retraits frauduleux aux distributeurs automatiques, facilitée par des moyens cyber, menée entre le 30 et le 31 janvier 2026.
+
+- **Analyse :**
+
+  Selon l'avis ngCERT `ngCERT-2026-060005`, l'opération a impliqué 3 421 transactions de retrait aux distributeurs automatiques et causé des pertes supérieures à 2 millions de dollars américains.
+  Des informations antérieures estimaient les pertes à environ 1,143 milliard de FCFA.
+
+  Le ngCERT estime qu'un accès privilégié à l'infrastructure d'autorisation des cartes a probablement permis aux attaquants de manipuler les contrôles transactionnels et de coordonner les retraits frauduleux.
+
+  L'existence et l'impact financier de l'opération frauduleuse sont donc corroborés par une source CERT nationale. Toutefois, le vecteur d'accès initial, la séquence technique exacte, l'identité de l'acteur de menace
+  et une éventuelle implication interne restent non confirmés.
+
+  Le phishing, la compromission de la chaîne d'approvisionnement, l'accès par un initié et les malwares visant les distributeurs automatiques sont des scénarios possibles évoqués par le ngCERT pour cette catégorie
+  d'attaque et ne doivent pas être présentés comme des techniques confirmées utilisées contre UBA Sénégal.
+
+- **Note de correction AFRINTEL :**
+
+  L'incident s'est produit les 30-31 janvier 2026, mais a été identifié et documenté par AFRINTEL le 24 mars 2026. Il reste rattaché au corpus du mois  de mars conformément à la méthodologie AFRINTEL fondée sur la date de détection AFRINTEL.
+Le précédent statut `Under Investigation` devrait être précisé, car la  fraude opérationnelle elle-même est corroborée. Ce qui reste en cours d'investigation concerne le chemin technique de l'intrusion et l'attribution à un acteur de menace.
+
+- **Note taxonomique :**
+  `Operational Fraud` est conservé comme une catégorie d'incident AFRINTEL non standard.
+  L'incident reste exclu des compteurs `Ransomware`, `Data Leak`, `Access Sale` et `Defacement`.
 
 ### 26 Mars 2026
 #### 🇿🇦 Afrique du Sud - ETFSA

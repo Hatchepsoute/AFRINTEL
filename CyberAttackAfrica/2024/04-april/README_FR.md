@@ -1,158 +1,184 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Avril%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # Rapport CTI AFRINTEL - Avril 2024
 
 👉🏾 [English version](./README.md)
 
 ## 1. Résumé exécutif
 
-Avril 2024 compte **7 incidents** : **5 revendications ransomware** et **2 fuites de données**. L’Afrique du Sud représente deux publications ; cinq autres pays apparaissent une fois chacun. Le corpus traverse quatre régions, dont l’océan Indien avec la publication visant Remitano aux Seychelles.
+AFRINTEL documente **7 fiches incident** en avril 2024 : **5 Ransomware** et **2 Data Leak**, dans **6 pays africains**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans le corpus validé d'avril.
 
-SpaceBears est le seul acteur associé à deux organisations. Cette simultanéité ne suffit pas à conclure à une campagne coordonnée. Les fuites visant l’ONEF au Burkina Faso et Vezeeta Pharmacy en Égypte sont accompagnées d’éléments d’échantillon dans le corpus.
+L'Afrique du Sud représente deux fiches. Le Burkina Faso, l'Égypte, la Libye, le Maroc et les Seychelles en comptent une chacun. Les sept incidents appartiennent à sept secteurs contrôlés différents, ce qui ne permet pas d'établir une concentration sectorielle mesurable sur le mois.
 
-Voir [victims_FR.md](./victims_FR.md).
+`spacebears` est le seul acteur associé à deux organisations. Les deux Data Leak, ONEF au Burkina Faso et Vezeeta Pharmacy en Égypte, disposent d'éléments d'échantillon visibles. Pour les cinq Ransomware, le corpus permet d'établir l'existence des publications des groupes, mais ne confirme pas indépendamment le chiffrement, la perturbation opérationnelle ou l'exfiltration.
+
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Mars 2024 | Avril 2024 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 9 | **7** | **-2 (-22,2 %)** |
+| Ransomware | 7 | **5** | **-2 (-28,6 %)** |
+| Data Leak | 2 | **2** | **0 (stable)** |
+| Access Sale | 0 | **0** | Stable |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **0** | Stable |
+| Operational Fraud | 0 | **0** | Stable |
+
+Avril compte **22,2 % d'incidents en moins** que mars. La baisse provient entièrement des Ransomware, qui passent de 7 à 5. Les Data Leak restent stables à 2 fiches.
 
 ## 2. Méthodologie
 
-Le rapport couvre les publications classées en avril 2024. Les incidents sont dédupliqués par organisation et ventilés selon les quatre catégories AFRINTEL. Les constats techniques sont limités aux éléments visibles dans les sources ; les pratiques généralement attribuées aux groupes ne sont pas traitées comme des faits du mois.
-
-Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé avec [victims.md](./victims.md).
+- **Période :** 1er au 30 avril 2024.
+- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
+- **Comptage :** une fiche harmonisée correspond à un incident documenté.
+- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Registre de corrections rétrospectives :** aucun des 10 incidents manquants identifiés en 2024 ne concerne avril ; aucune fiche supplémentaire n'est donc injectée dans ce mois.
+- Les constats techniques sont limités aux éléments visibles dans les sources. Les comportements généralement associés à un groupe ransomware ne sont pas considérés comme observés sans preuve dans la fiche.
+- Les volumes revendiqués et les impacts potentiels restent distincts des éléments directement examinés.
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---:|
-| Incidents / Pays | **7 / 6** |
-| Ransomware | **5** |
-| Fuites de données | **2** |
-| Ventes d’accès / Défacement | **0 / 0** |
+### 3.1 Répartition par type d'incident
 
-### Classement par pays
-
-| Pays | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
-| 🇧🇫 Burkina Faso | 1 | 0 | 1 |
-| 🇪🇬 Égypte | 1 | 0 | 1 |
-| 🇱🇾 Libye | 1 | 1 | 0 |
-| 🇲🇦 Maroc | 1 | 1 | 0 |
-| 🇸🇨 Seychelles | 1 | 1 | 0 |
-| **Total** | **7** | **5** | **2** |
-
-```mermaid
-xychart
-    title "Incidents par pays - avril 2024"
-    x-axis ["ZA","BF","EG","LY","MA","SC"]
-    y-axis "Incidents" 0 --> 3
-    bar [2,1,1,1,1,1]
-```
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **5** | **71,4 %** |
+| Data Leak | **2** | **28,6 %** |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **7** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par type - avril 2024
+    title Types d'incident - Avril 2024
     "Ransomware" : 5
-    "Fuite de données" : 2
+    "Data Leak" : 2
 ```
 
-### Répartition régionale
+### 3.2 Répartition par pays
 
-| Région | Total | Ransomware | Fuite |
+| Pays | Ransomware | Data Leak | Total |
 |---|---:|---:|---:|
-| Afrique australe | 2 | 2 | 0 |
-| Afrique du Nord | 3 | 2 | 1 |
-| Afrique de l’Ouest | 1 | 0 | 1 |
-| Océan Indien | 1 | 1 | 0 |
-| **Total** | **7** | **5** | **2** |
+| 🇿🇦 Afrique du Sud | 2 | 0 | **2** |
+| 🇧🇫 Burkina Faso | 0 | 1 | 1 |
+| 🇪🇬 Égypte | 0 | 1 | 1 |
+| 🇱🇾 Libye | 1 | 0 | 1 |
+| 🇲🇦 Maroc | 1 | 0 | 1 |
+| 🇸🇨 Seychelles | 1 | 0 | 1 |
+| **Total** | **5** | **2** | **7** |
 
-### Répartition sectorielle normalisée
+### 3.3 Répartition régionale
 
-| Secteur | Incidents | Part |
+| Région | Ransomware | Data Leak | Total |
+|---|---:|---:|---:|
+| Afrique du Nord | 2 | 1 | **3** |
+| Afrique australe | 2 | 0 | **2** |
+| Afrique de l'Ouest | 0 | 1 | **1** |
+| Océan Indien | 1 | 0 | **1** |
+| **Total** | **5** | **2** | **7** |
+
+### 3.4 Répartition sectorielle harmonisée
+
+| Secteur | Fiches | Part |
 |---|---:|---:|
-| Finance / Banque | 1 | 14,3 % |
-| Médias / Divertissement | 1 | 14,3 % |
-| Gouvernement / Administration | 1 | 14,3 % |
-| Industrie / Fabrication | 1 | 14,3 % |
-| Technologies / Informatique | 1 | 14,3 % |
-| Pétrole / Énergie | 1 | 14,3 % |
-| Santé / Pharmacie en ligne | 1 | 14,3 % |
+| Finance / Banking | 1 | 14,3 % |
+| Media / Entertainment | 1 | 14,3 % |
+| Government / Administration | 1 | 14,3 % |
+| Manufacturing / Industry | 1 | 14,3 % |
+| Technology / IT | 1 | 14,3 % |
+| Energy / Utilities | 1 | 14,3 % |
+| Healthcare / Medical | 1 | 14,3 % |
 | **Total** | **7** | **100 %** |
 
-### Acteurs les plus visibles
+### 3.5 Acteurs / groupes
 
-| Acteur | Incidents |
+| Acteur / Groupe | Fiches |
 |---|---:|
-| SpaceBears | 2 |
-| Hunters, INC Ransom, Pedi, RansomHub, EgyptLeaks | 1 chacun |
+| spacebears | **2** |
+| incransom | 1 |
+| hunters | 1 |
+| Pedi | 1 |
+| ransomhub | 1 |
+| EgyptLeaks | 1 |
+| **Total** | **7** |
 
-## 4. Analyse détaillée par type d’incident
+```mermaid
+flowchart LR
+    SB["spacebears - 2"] --> MA["Maroc - SM Emballage"]
+    SB --> ZA1["Afrique du Sud - Thinkadam"]
+    INC["incransom"] --> SC["Seychelles - Remitano"]
+    HUN["hunters"] --> ZA2["Afrique du Sud - Caxton and CTP"]
+    PED["Pedi"] --> BF["Burkina Faso - ONEF"]
+    RH["ransomhub"] --> LY["Libye - Mellitah Oil & Gas"]
+    EL["EgyptLeaks"] --> EG["Égypte - Vezeeta Pharmacy"]
+```
 
-### 4.1 Ransomware
+## 4. Analyse détaillée
 
-Les publications concernent Remitano, Caxton and CTP, SM Emballage, Thinkadam et Mellitah Oil & Gas. Les secteurs financier et énergétique augmentent l’impact potentiel, mais aucune source publique du corpus ne confirme une interruption, un chiffrement ou une exfiltration.
+### 4.1 Ransomware - 5 fiches
 
-### 4.2 Fuite de données
+Les cinq fiches Ransomware concernent **Remitano**, **Caxton and CTP Publishers and Printers**, **SM Emballage**, **Thinkadam** et **Mellitah Oil & Gas**.
 
-La publication ONEF présente un échantillon associé à un organisme burkinabè chargé de l’emploi et de la formation. La publication Vezeeta Pharmacy présente séparément un extrait de commandes attribué à une plateforme égyptienne de pharmacie en ligne. Dans les deux cas, les éléments disponibles ne permettent pas de vérifier l’exhaustivité ni la date de l’accès initial.
+Les cinq restent `Claim - Unverified`. Les fiches indiquent qu'aucun fichier divulgué, extrait de base ou capture liée aux listings n'était accessible au moment de la collecte. Le corpus permet donc d'établir que les organisations ont été publiées par les groupes indiqués, mais ne permet pas de confirmer indépendamment l'intrusion, le chiffrement, l'indisponibilité, le volume exfiltré ou l'exhaustivité d'un éventuel jeu de données.
 
-## 5. Impact sectoriel
+`spacebears` apparaît deux fois, contre SM Emballage et Thinkadam. Il s'agit d'un motif de publication observé, insuffisant pour établir une campagne coordonnée ou un vecteur d'accès initial commun.
 
-La répartition sectorielle est parfaitement dispersée : un incident dans chacun des sept secteurs. Cette absence de concentration réduit la valeur d’une conclusion sectorielle générale. En revanche, l’énergie, les services publics de l’emploi et la finance doivent être traités avec une priorité supérieure en raison de leurs fonctions.
+### 4.2 Data Leak - 2 fiches
 
-## 6. Profil des acteurs et évaluation du risque
+La fiche **ONEF** repose sur une publication de forum présentant une base associée à `onef.gov.bf` et montrant la structure d'une table applicative `actualite`. La capture ne permet pas d'établir l'authenticité, l'exhaustivité ou la méthode d'accès initiale.
 
-| Périmètre | Niveau | Justification |
+La fiche **Vezeeta Pharmacy** repose sur une publication attribuée à EgyptLeaks annonçant environ **133 000 commandes** couvrant 2021-2023. L'échantillon visible contient des champs liés aux contacts, zones, statuts de commande, paiements, branches, produits et adresses de livraison. AFRINTEL n'a pas reçu l'archive complète et ne valide donc ni le total annoncé de 133 000 enregistrements, ni la méthode d'acquisition, ni l'exhaustivité ou la validité actuelle des données.
+
+## 5. Principaux constats et lacunes
+
+- Les Ransomware restent dominants avec **5 fiches sur 7 (71,4 %)**.
+- Le volume total d'avril est inférieur à mars, mais les Data Leak restent stables à deux.
+- Aucun secteur n'apparaît plus d'une fois, ce qui empêche de conclure à un secteur dominant en avril.
+- ONEF et Vezeeta apportent davantage de matière documentaire directe que les cinq listings Ransomware grâce aux échantillons visibles.
+- Aucun élément DFIR public dans le corpus d'avril ne permet d'établir les chaînes d'intrusion techniques des cinq Ransomware.
+- Le volume revendiqué pour Vezeeta et l'authenticité/exhaustivité de la base ONEF restent des lacunes de collecte.
+
+## 6. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Application |
 |---|---|---|
-| 🇿🇦 Afrique du Sud | 🔴 Élevé | Deux revendications dans les médias et la technologie |
-| 🇱🇾 Libye | 🔴 Élevé | Publication visant une coentreprise pétrolière |
-| 🇧🇫 Burkina Faso | 🟠 Moyen | Fuite avec échantillon visant un organisme public |
-| 🇲🇦 Maroc / 🇸🇨 Seychelles | 🟡 Faible à moyen | Une revendication chacune |
+| Préventif | T1486 - Data Encrypted for Impact | Pertinent pour la surveillance Ransomware ; le chiffrement n'est pas confirmé dans les cinq revendications d'avril. |
+| Préventif | T1490 - Inhibit System Recovery | Contrôle utile pour les sauvegardes ; comportement non observé dans les preuves d'avril. |
+| Contextuel | T1213 - Data from Information Repositories | Pertinent pour les expositions de bases/référentiels représentées par ONEF et Vezeeta. |
+| Préventif | T1567 - Exfiltration Over Web Service | Contexte de surveillance des flux sortants ; canaux d'exfiltration non établis. |
 
-## 7. Tendances et lacunes de renseignement
+## 7. Recommandations
 
-- **Observé - confiance élevée :** cinq incidents sur sept relèvent du ransomware.
-- **Observé - confiance élevée :** aucun secteur ne compte plus d’un incident.
-- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les cas ransomware.
-- **Lacune :** l’échantillon ONEF ne permet pas de valider le volume complet ou la chronologie d’acquisition.
-- **Collecte attendue :** confirmations victimes, état des services et nouvelles publications d’échantillons.
+- Préserver et corréler les journaux autour des dates de publication avant d'élever le niveau de confiance d'une revendication Ransomware.
+- Pour l'énergie et la finance, prioriser la continuité, les contrôles d'accès privilégiés et les sauvegardes isolées.
+- Pour ONEF et Vezeeta, vérifier l'historique des accès backend, les exports anormaux et l'étendue réelle des données concernées avant de considérer les volumes annoncés comme confirmés.
+- Surveiller les publications ultérieures des acteurs susceptibles d'ajouter des échantillons ou de modifier le niveau de preuve.
+- Maintenir des champs distincts pour revendication d'acteur, confirmation victime, publication d'échantillon et validation technique.
 
-## 8. Cartographie MITRE ATT&CK contextuelle
+## 8. Chronologie
 
-| Statut | Technique | Utilisation |
-|---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les cinq revendications |
-| Préventif | T1490 - Inhibit System Recovery | Contrôle des sauvegardes ; comportement non observé |
-| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des flux sortants ; canal ONEF inconnu |
+```mermaid
+timeline
+    title AFRINTEL - Avril 2024
+    04 Avril : incransom - Remitano
+    13 Avril : hunters - Caxton and CTP
+    19 Avril : EgyptLeaks - Vezeeta Pharmacy
+    23 Avril : Pedi - ONEF
+    29 Avril : spacebears - SM Emballage
+             : spacebears - Thinkadam
+    30 Avril : ransomhub - Mellitah Oil & Gas
+```
 
-## 9. Recommandations
+## 9. Conclusion
 
-- **Énergie :** segmenter les environnements industriels et administratifs, puis tester les procédures de continuité.
-- **Secteur public :** revoir les exports de données et les accès à l’application ONEF.
-- **Finance et technologie :** renforcer les accès privilégiés et la gestion des secrets.
-- **Toutes les victimes publiées :** préserver les journaux et tester les restaurations.
+Avril 2024 se clôt sur **7 fiches incident documentées dans 6 pays africains**, réparties entre **5 Ransomware et 2 Data Leak**. Par rapport à mars, le corpus mensuel baisse de **22,2 %**, passant de 9 à 7 incidents. Cette diminution est entièrement portée par les Ransomware, qui passent de 7 à 5, tandis que les Data Leak restent stables à 2.
 
-## 10. Recommandations SOC et tactiques
+Le mois ne fait apparaître aucune concentration sectorielle défendable : chacune des sept fiches appartient à un secteur harmonisé différent. La dispersion géographique est également forte, seule l'Afrique du Sud apparaissant plus d'une fois. `spacebears` est le seul acteur visible sur deux organisations, mais les éléments disponibles ne permettent ni de qualifier ces deux publications de campagne coordonnée, ni d'en déduire un vecteur d'intrusion commun.
 
-| Qualification | Action |
-|---|---|
-| **Observé** | Surveiller les actifs explicitement cités ; aucune TTP d’intrusion n’est confirmée. |
-| **Hypothèse** | Rechercher un usage anormal des accès distants et des comptes privilégiés autour des dates de publication. |
-| **Préventif** | Détecter le chiffrement massif, l’inhibition des sauvegardes, les exports de bases et les transferts volumineux. |
+La qualité de preuve varie également fortement selon le type d'incident. Les cinq entrées Ransomware restent des revendications non vérifiées, sans artefact technique accessible permettant de confirmer un chiffrement, une perturbation ou une exfiltration. À l'inverse, ONEF et Vezeeta disposent d'échantillons visibles et fournissent donc une base plus concrète pour évaluer une exposition de données, tout en laissant ouvertes des questions importantes sur l'authenticité, l'exhaustivité, la méthode d'acquisition et le volume réellement affecté.
 
-## 11. Recommandations stratégiques
+Pour la veille CTI, l'enjeu après avril est donc moins d'extrapoler les modes opératoires supposés des groupes que de **suivre le cycle de vie des preuves** : confirmation par la victime, nouvelles publications d'échantillons, indicateurs techniques, perturbation de service, nombre confirmé de personnes ou d'enregistrements affectés et éventuelle republication du même matériel. Cette discipline permet de conserver des statistiques AFRINTEL utiles historiquement sans transformer des revendications cybercriminelles en compromissions confirmées.
 
-| Priorité | Qualification | Mesure |
-|---:|---|---|
-| 1 | **Observé** | Donner la priorité aux services énergétiques et publics cités. |
-| 2 | **Hypothèse** | Vérifier un éventuel dénominateur commun entre les deux publications SpaceBears sans conclure à une campagne. |
-| 3 | **Préventif** | Réduire la surface externe, déployer MFA résistante au phishing et isoler les sauvegardes. |
-
-## 12. Conclusion
-
-Avril est un mois de faible volume mais de forte diversité sectorielle. La répétition de SpaceBears et la présence d’organisations sensibles méritent un suivi, sans dépasser ce que les sources établissent. L’ONEF demeure le cas le plus exploitable pour la validation d’une exposition de données.
-
-**AFRINTEL - TLP:CLEAR**
-
-[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR

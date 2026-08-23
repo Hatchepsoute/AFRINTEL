@@ -1,173 +1,231 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Décembre%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # Rapport CTI AFRINTEL - Décembre 2024
 
 👉🏾 [English version](./README.md)
 
 ## 1. Résumé exécutif
 
-Décembre 2024 compte **12 incidents dans 11 pays** : **11 revendications ransomware** et **1 fuite de données**. L’Afrique du Sud est le seul pays à enregistrer deux incidents. L’Afrique australe concentre cinq publications, devant l’Afrique du Nord avec quatre.
+Le corpus AFRINTEL corrigé de décembre 2024 contient **14 fiches incident documentées dans 12 pays africains** : **11 Ransomware**, **2 Data Leak** et **1 Defacement**. Aucun Access Sale, DDoS ou Operational Fraud n'est présent.
 
-La quantité ne résume toutefois pas le mois. Quatre dossiers comportent des échantillons examinés ou publiés : DAL Group au Soudan, le gouvernement de l’État d’Ekiti au Nigeria, Baker Tilly Morrison Murray en Afrique du Sud et l’ASJP en Algérie. Les éléments associés à Ekiti et à l’ASJP apportent une profondeur de preuve nettement supérieure aux simples publications de sites de fuite. À l’inverse, aucune donnée technique publique ne permet d’établir les modalités d’accès ou l’impact opérationnel des revendications visant Cell C, Telecom Namibia ou Water Utilities Corporation.
+Deux corrections rétrospectives sont ajoutées. La **Micro and Small Enterprises Authority (MSEA)** au Kenya est enregistrée comme `Data Leak` avec une confiance `High` et le statut `Corroborated - No Direct Victim Confirmation Located`. Le **National Bureau of Statistics (NBS)** au Nigeria est enregistré comme `Defacement` avec le statut `Victim Confirmed`, une confiance `Very High` et une perturbation de service de plusieurs semaines documentée.
 
-Voir [victims_FR.md](./victims_FR.md).
+Le Nigeria compte désormais deux incidents et rejoint l'Afrique du Sud, seul autre pays à deux fiches. Le Kenya devient le douzième pays représenté en décembre.
+
+Quatre dossiers d'origine restent particulièrement riches en preuves : DAL Group, gouvernement de l'État d'Ekiti, Baker Tilly Morrison Murray et ASJP. Les deux ajouts rétrospectifs introduisent deux profils de preuve différents : forte corroboration externe pour MSEA et confirmation directe de la victime pour NBS.
+
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Novembre 2024 | Décembre 2024 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 16 | **14** | **-2 (-12,5 %)** |
+| Ransomware | 12 | **11** | **-1 (-8,3 %)** |
+| Data Leak | 2 | **2** | Stable |
+| Access Sale | 2 | **0** | **-2 (-100,0 %)** |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **1** | **+1 (nouveau)** |
+| Operational Fraud | 0 | **0** | Stable |
+
+Décembre est légèrement moins volumineux que novembre corrigé, mais la diversité des preuves augmente : le corpus combine publications ransomware, deux Data Leak de maturité différente et un Defacement directement confirmé par la victime.
 
 ## 2. Méthodologie
 
-Le rapport couvre les incidents classés du 1er au 31 décembre 2024. Les publications d’acteurs sont rapprochées, lorsque cela est possible, des échantillons disponibles dans le corpus AFRINTEL. L’authenticité structurelle d’un échantillon, son attribution à une organisation et la méthode d’acquisition restent trois questions distinctes.
-
-Les statistiques dérivent des **12 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md). Les résultats issus des échantillons sont agrégés ; aucune donnée personnelle brute n’est reproduite.
+- **Période :** 1er au 31 décembre 2024.
+- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
+- **Comptage :** une fiche harmonisée correspond à un incident documenté.
+- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Corrections rétrospectives :** MSEA et NBS sont les deux derniers incidents manquants du registre de correction 2024.
+- **Règle MSEA :** les références autoritatives ultérieures renforcent matériellement l'évaluation de violation, mais aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources rétrospectives examiné ; le statut reste donc corroboré plutôt que confirmé par la victime.
+- **Règle NBS :** la compromission et le défacement du site sont confirmés ; aucun vol des bases backend n'est déduit.
+- Authenticité de l'échantillon, attribution à la victime, mécanismes de l'incident et périmètre complet restent des questions analytiques séparées.
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---:|
-| Incidents / Pays | **12 / 11** |
-| Ransomware | **11** |
-| Fuites de données | **1** |
-| Ventes d’accès / Défacement | **0 / 0** |
+### 3.1 Répartition par type d'incident
 
-### Classement par pays
-
-| Pays | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
-| 🇩🇿 Algérie | 1 | 1 | 0 |
-| 🇧🇼 Botswana | 1 | 1 | 0 |
-| 🇪🇬 Égypte | 1 | 1 | 0 |
-| 🇲🇷 Mauritanie | 1 | 1 | 0 |
-| 🇳🇦 Namibie | 1 | 1 | 0 |
-| 🇳🇬 Nigeria | 1 | 1 | 0 |
-| 🇸🇩 Soudan | 1 | 0 | 1 |
-| 🇹🇿 Tanzanie | 1 | 1 | 0 |
-| 🇹🇳 Tunisie | 1 | 1 | 0 |
-| 🇿🇲 Zambie | 1 | 1 | 0 |
-| **Total** | **12** | **11** | **1** |
-
-```mermaid
-xychart
-    title "Incidents par pays - décembre 2024"
-    x-axis ["ZA","DZ","BW","EG","MR","NA","NG","SD","TZ","TN","ZM"]
-    y-axis "Incidents" 0 --> 3
-    bar [2,1,1,1,1,1,1,1,1,1,1]
-```
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **11** | **78,6 %** |
+| Data Leak | **2** | **14,3 %** |
+| Defacement | **1** | **7,1 %** |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **14** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par type - décembre 2024
+    title Types d'incident - Décembre 2024
     "Ransomware" : 11
-    "Fuite de données" : 1
+    "Data Leak" : 2
+    "Defacement" : 1
 ```
 
-### Répartition régionale
+### 3.2 Répartition par pays
 
-| Région | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| Afrique australe | 5 | 5 | 0 |
-| Afrique du Nord | 4 | 4 | 0 |
-| Afrique de l’Est | 2 | 1 | 1 |
-| Afrique de l’Ouest | 1 | 1 | 0 |
-| **Total** | **12** | **11** | **1** |
+| Pays | Ransomware | Data Leak | Defacement | Total |
+|---|---:|---:|---:|---:|
+| 🇿🇦 Afrique du Sud | 2 | 0 | 0 | **2** |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | **2** |
+| 🇩🇿 Algérie | 1 | 0 | 0 | 1 |
+| 🇧🇼 Botswana | 1 | 0 | 0 | 1 |
+| 🇪🇬 Égypte | 1 | 0 | 0 | 1 |
+| 🇰🇪 Kenya | 0 | 1 | 0 | 1 |
+| 🇲🇷 Mauritanie | 1 | 0 | 0 | 1 |
+| 🇳🇦 Namibie | 1 | 0 | 0 | 1 |
+| 🇸🇩 Soudan | 0 | 1 | 0 | 1 |
+| 🇹🇿 Tanzanie | 1 | 0 | 0 | 1 |
+| 🇹🇳 Tunisie | 1 | 0 | 0 | 1 |
+| 🇿🇲 Zambie | 1 | 0 | 0 | 1 |
+| **Total** | **11** | **2** | **1** | **14** |
 
-### Répartition sectorielle normalisée
+### 3.3 Répartition régionale
 
-| Secteur | Incidents | Part |
+| Région | Ransomware | Data Leak | Defacement | Total |
+|---|---:|---:|---:|---:|
+| Afrique australe | 5 | 0 | 0 | **5** |
+| Afrique du Nord | 4 | 0 | 0 | **4** |
+| Afrique de l'Est | 1 | 2 | 0 | **3** |
+| Afrique de l'Ouest | 1 | 0 | 1 | **2** |
+| **Total** | **11** | **2** | **1** | **14** |
+
+### 3.4 Répartition sectorielle harmonisée
+
+| Secteur | Fiches | Part |
 |---|---:|---:|
-| Finance / Banque | 2 | 16,7 % |
-| Télécommunications | 2 | 16,7 % |
-| Agriculture / Agro-industrie | 1 | 8,3 % |
-| Eau / Services essentiels | 1 | 8,3 % |
-| Éducation / Université | 1 | 8,3 % |
-| Gouvernement / Administration | 1 | 8,3 % |
-| Industrie / Fabrication | 1 | 8,3 % |
-| Services professionnels / Entreprises | 1 | 8,3 % |
-| Commerce / E-commerce | 1 | 8,3 % |
-| Transport / Logistique | 1 | 8,3 % |
-| **Total** | **12** | **100 %** |
+| Government / Administration | **3** | **21,4 %** |
+| Finance / Banking | 2 | 14,3 % |
+| Telecommunications | 2 | 14,3 % |
+| Agriculture / Agribusiness | 1 | 7,1 % |
+| Retail / E-commerce | 1 | 7,1 % |
+| Water / Utilities | 1 | 7,1 % |
+| Manufacturing / Industry | 1 | 7,1 % |
+| Professional / Business Services | 1 | 7,1 % |
+| Education / University | 1 | 7,1 % |
+| Transport / Logistics | 1 | 7,1 % |
+| **Total** | **14** | **100 %** |
 
-### Acteurs les plus visibles
+### 3.5 Acteurs / groupes
 
-| Acteur | Incidents | Nature |
-|---|---:|---|
-| FunkSec | 2 | Ransomware |
-| KillSec | 2 | Ransomware |
-| RansomHub | 2 | Ransomware et fuite |
-| Six autres groupes | 1 chacun | Ransomware |
+| Acteur / Groupe | Fiches |
+|---|---:|
+| ransomhub | 2 |
+| killsec | 2 |
+| funksec | 2 |
+| Unknown | 2 |
+| apt73/bashe | 1 |
+| hunters | 1 |
+| moneymessage | 1 |
+| sarcoma | 1 |
+| ransomhouse | 1 |
+| arcusmedia | 1 |
+| **Total** | **14** |
 
-## 4. Analyse détaillée par type d’incident
+Les deux fiches `Unknown` sont MSEA et NBS. Aucun acteur d'intrusion confirmé n'est établi pour MSEA dans le jeu de sources examiné. NBS a confirmé la compromission du site, mais aucun attaquant nommé n'est établi.
 
-### 4.1 Ransomware
+```mermaid
+flowchart LR
+    FUN["funksec - 2"] --> EKI["Nigeria - gouvernement de l'État d'Ekiti"]
+    FUN --> ASJP["Algérie - ASJP"]
+    KIL["killsec - 2"] --> TUM["Zambie - Tumeny Payments"]
+    KIL --> WUC["Botswana - Water Utilities Corporation"]
+    RH["ransomhub - 2"] --> DAL["Soudan - DAL Group, Data Leak"]
+    RH --> SET["Tunisie - Groupe SETCAR"]
+    UNK["Unknown - 2"] --> MSEA["Kenya - MSEA, Data Leak"]
+    UNK --> NBS["Nigeria - NBS, Defacement"]
+```
 
-Onze victimes sont publiées par huit groupes ransomware. FunkSec, KillSec et RansomHub apparaissent chacun deux fois. Les cas Ekiti et ASJP disposent des éléments les plus solides : les archives examinées sont cohérentes avec les organisations citées et contiennent des ensembles structurés de documents ou de comptes. Cette observation étaye l’exposition des données, sans établir le vecteur initial ni confirmer une interruption des services.
+## 4. Analyse détaillée
 
-Les publications visant Cell C, Telecom Namibia, Water Utilities Corporation, Bankily ou Tumeny Payments concernent des fonctions importantes, mais leur criticité métier ne doit pas être confondue avec un incident technique confirmé.
+### 4.1 Ransomware - 11 fiches
 
-### 4.2 Fuite de données
+Les onze dossiers ransomware restent les publications d'origine de décembre. Pour la majorité, les mécanismes techniques ne sont pas indépendamment établis.
 
-DAL Group constitue l’unique fuite de données classée du mois. Douze captures examinées présentent notamment des documents financiers, bancaires, contractuels et d’identité liés au conglomérat. L’ensemble est plus cohérent avec une exposition documentaire étendue qu’avec un document isolé. Le volume complet, le nombre de personnes concernées et la méthode d’acquisition restent inconnus.
+Le **gouvernement de l'État d'Ekiti** et **ASJP** disposent des éléments techniques locaux les plus solides. L'archive Ekiti contient un important dépôt documentaire du site et des dossiers liés à l'identité qui soutiennent fortement une exposition réelle associée au portail de l'État. ASJP comprend du matériel côté serveur, plus de 1 700 dossiers utilisateurs et une liste distincte de 499 enregistrements nom/email cohérente avec la plateforme. Les deux cas disposent d'une confiance `Very High` sur l'exposition.
 
-## 5. Impact sectoriel
+Ces échantillons établissent toutefois plus fortement la compromission des données que les mécanismes ransomware. Aucun des deux ne démontre indépendamment le chiffrement, l'interruption de service ou le vecteur d'accès initial.
 
-La finance et les télécommunications comptent deux incidents chacune. Les autres secteurs sont dispersés, mais plusieurs remplissent une fonction essentielle : eau, administration publique, recherche académique et paiements. Pour Ekiti, ASJP, DAL Group et Baker Tilly, les risques découlent de la nature des documents observés. Pour les autres cas, l’analyse d’impact reste prospective.
+**Baker Tilly Morrison Murray** dispose d'un échantillon plus limité comportant des documents d'identité, contractuels et liés à l'emploi, ce qui soutient une confiance `Medium` sur un échantillon publié associé à la revendication ransomware.
 
-## 6. Profil des acteurs et évaluation du risque
+Les autres listings ransomware nécessitent des confirmations victimes ou des éléments techniques publics avant de considérer comme établis un chiffrement, une perturbation opérationnelle ou l'étendue d'une exfiltration.
 
-| Périmètre | Niveau | Justification |
-|---|---|---|
-| 🇳🇬 Nigeria / 🇩🇿 Algérie | 🔴 Élevé | Échantillons structurés liés à une administration et à une plateforme académique nationale |
-| 🇸🇩 Soudan | 🔴 Élevé | Documents financiers et d’identité observés dans l’échantillon DAL Group |
-| 🇿🇦 Afrique du Sud | 🔴 Élevé | Deux incidents, dont un échantillon documentaire chez Baker Tilly |
-| 🇧🇼 Botswana / 🇳🇦 Namibie | 🟠 Moyen | Opérateurs essentiels cités, sans impact opérationnel établi |
-| Autres pays | 🟠 Moyen | Une revendication par pays, principalement sans preuve technique publique |
+### 4.2 Data Leak - 2 fiches
 
-## 7. Tendances et lacunes de renseignement
+**DAL Group** reste un Data Leak étayé par échantillon. Douze captures examinées comprennent du matériel financier, bancaire, contractuel, lié aux comptes clients et à l'identité. L'ensemble soutient une exposition documentaire large, mais le volume complet, le nombre de personnes concernées et la méthode d'acquisition restent inconnus.
 
-- **Observé - confiance élevée :** 11 des 12 incidents sont classés ransomware ; DAL Group est une fuite de données et reste compté séparément.
-- **Observé - confiance élevée :** quatre cas comportent des éléments publiés ou examinés, avec une profondeur variable.
-- **Observé - confiance élevée :** les ensembles Ekiti et ASJP relient de manière structurée les données observées aux organisations concernées.
-- **Lacune majeure :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour expliquer l’accès initial, la persistance, le mouvement latéral ou l’éventuel chiffrement.
-- **Lacune :** aucun élément public ne confirme une interruption chez les opérateurs télécoms ou la régie de l’eau cités.
-- **Collecte attendue :** suivre les communications des victimes, la disponibilité ultérieure des données et les éventuels recoupements techniques indépendants.
+**MSEA** constitue l'ajout rétrospectif Data Leak. Des publications ont décrit des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des données d'enregistrement d'entreprises proposés à la vente. Des références ultérieures dans l'Africa Cyberthreat Assessment d'INTERPOL et chez ENACT renforcent l'évaluation de violation. Toutefois, le jeu de sources rétrospectives examiné ne contient aucune notification directe de MSEA. AFRINTEL conserve donc une confiance `High` avec un statut corroboré et non `Victim Confirmed`. Le prix revendiqué de 100 000 USD reste un élément secondaire.
 
-## 8. Cartographie MITRE ATT&CK contextuelle
+### 4.3 Defacement - NBS
+
+Le **18 décembre 2024**, le National Bureau of Statistics du Nigeria a confirmé que son site avait été piraté et a demandé au public d'ignorer les informations publiées jusqu'au rétablissement. Des publications indépendantes ont documenté un message `Page hacked`.
+
+Le site est resté indisponible pendant plusieurs semaines avant sa restauration en janvier 2025. Ces éléments soutiennent `Victim Confirmed`, une confiance `Very High` et un impact `Level 3` pour un Defacement avec perturbation significative du service.
+
+Aucun élément public examiné n'établit un vol des bases statistiques backend ni l'identité d'un attaquant. AFRINTEL ne classe donc pas l'événement en Data Leak et ne déduit aucune exfiltration du seul défacement.
+
+## 5. Principaux constats et lacunes
+
+- Le corpus corrigé de décembre passe de **12 à 14 fiches** après l'ajout de MSEA et NBS.
+- Le registre de correction annuel est désormais entièrement appliqué : **10 corrections sur 10 intégrées**.
+- Government / Administration devient le premier secteur de décembre avec **3 fiches**.
+- L'Afrique du Sud et le Nigeria comptent chacun **2 incidents**.
+- Ekiti et ASJP fournissent des preuves très fortes par échantillons de compromission de données, sans démontrer indépendamment le chiffrement ransomware.
+- MSEA est fortement corroboré mais non directement confirmé par la victime dans le jeu de sources examiné.
+- NBS est confirmé par la victime comme compromission/défacement du site, sans vol confirmé des données backend.
+- Les Ransomware restent dominants numériquement, mais les preuves les plus fortes du mois couvrent plusieurs formes d'incident.
+
+## 6. Cartographie MITRE ATT&CK contextuelle
 
 | Qualification | Technique | Utilisation défensive |
 |---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Cas d’usage ransomware ; chiffrement non établi dans le corpus |
-| Préventif | T1490 - Inhibit System Recovery | Détecter la suppression de clichés et l’altération des sauvegardes |
-| Hypothèse - confiance moyenne | T1078 - Valid Accounts | Scénario d’accès à vérifier ; aucune télémétrie publiée |
-| Préventif | T1567 - Exfiltration Over Web Service | Rechercher les transferts sortants anormaux ; canal non observé |
+| Préventif | T1486 - Data Encrypted for Impact | Pertinent pour la surveillance ransomware ; chiffrement non établi indépendamment pour les listings de décembre. |
+| Contextuel | T1213 - Data from Information Repositories | Pertinent pour les dépôts documentaires et comptes observés dans les échantillons Ekiti, ASJP et DAL Group. |
+| Préventif | T1567 - Exfiltration Over Web Service | Surveiller les transferts sortants inhabituels ; les canaux d'acquisition et d'exfiltration restent non établis. |
+| Non attribué | Accès initial NBS | Le défacement est confirmé, mais le mécanisme technique d'accès n'est pas établi. |
 
-## 9. Recommandations
+## 7. Recommandations
 
-- **Télécommunications et eau :** séparer les fonctions d’administration, de facturation et d’exploitation ; tester les procédures de continuité.
-- **Administration et recherche :** inventorier les dépôts documentaires, réduire leur exposition et imposer une MFA résistante au phishing.
-- **Finance et conseil :** surveiller les exports, limiter les accès tiers et préparer la réponse aux fraudes secondaires.
-- **Toutes organisations :** vérifier les sauvegardes hors ligne et restaurer un service prioritaire lors d’un exercice contrôlé.
+- Les administrations doivent surveiller les modifications de sites, protéger les comptes CMS et registrar avec une MFA résistante au phishing et conserver les logs web/applicatifs.
+- MSEA doit être traité comme un dossier prioritaire de validation car la corroboration est forte même si aucune confirmation directe n'a été retrouvée dans les sources d'audit examinées.
+- Pour les incidents comparables à NBS, séparer pendant l'investigation l'intégrité du site, la disponibilité du service et la confidentialité des données backend.
+- Pour Ekiti et ASJP, prioriser la protection des identités, la revue des comptes et la surveillance du phishing à partir des données réellement observées, sans extrapoler les mécanismes ransomware.
+- Pour les télécommunications, paiements et services d'eau, valider continuité, accès privilégiés et capacité de restauration depuis des sauvegardes isolées autour des dates de revendication.
 
-## 10. Recommandations SOC et tactiques
+## 8. Chronologie
 
-| Qualification | Action |
-|---|---|
-| **Observé** | Rechercher en interne les marqueurs propres aux documents et comptes concernés, sans exposer les données personnelles. |
-| **Hypothèse** | Examiner authentifications distantes atypiques, comptes de service détournés et accès privilégiés hors horaires. |
-| **Préventif** | Détecter dump LSASS, PowerShell obfusqué, suppression de sauvegardes, chiffrement massif et transferts Rclone inhabituels. |
+```mermaid
+timeline
+    title AFRINTEL - Décembre 2024
+    03 Décembre : ransomhub - DAL Group, Data Leak
+               : Unknown - MSEA, publication Data Leak corroborée
+    09 Décembre : apt73/bashe - Bankily
+    10 Décembre : hunters - Telecom Namibia
+    13 Décembre : moneymessage - Kazyon
+    15 Décembre : killsec - Tumeny Payments
+    16 Décembre : funksec - gouvernement de l'État d'Ekiti
+    18 Décembre : Unknown - NBS, Defacement confirmé
+    20 Décembre : killsec - Water Utilities Corporation
+    21 Décembre : ransomhub - Groupe SETCAR
+    24 Décembre : sarcoma - Baker Tilly Morrison Murray
+               : funksec - ASJP
+    28 Décembre : ransomhouse - Cell C
+    29 Décembre : arcusmedia - WOSAC
+```
 
-## 11. Recommandations stratégiques
+## 9. Conclusion
 
-| Priorité | Qualification | Mesure |
-|---:|---|---|
-| 1 | **Observé** | Traiter les expositions Ekiti, ASJP, DAL Group et Baker Tilly selon la sensibilité des données observées. |
-| 2 | **Hypothèse** | Vérifier les scénarios d’accès par identité ou service exposé sans les présenter comme établis. |
-| 3 | **Préventif** | Réduire la surface externe, fermer les RDP inutiles et rendre les sauvegardes critiques immuables et isolées. |
+Décembre 2024 clôt la séquence mensuelle corrigée avec **14 fiches incident documentées dans 12 pays africains** : **11 Ransomware, 2 Data Leak et 1 Defacement**. Par rapport à novembre corrigé, le corpus passe de 16 à 14 fiches, soit une baisse de **12,5 %**. Les Ransomware reculent légèrement de 12 à 11, les Data Leak restent stables à deux, les Access Sale disparaissent du corpus mensuel et le Defacement apparaît avec le dossier NBS confirmé.
 
-## 12. Conclusion
+Les deux corrections rétrospectives améliorent fortement la valeur de renseignement du mois parce qu'elles ajoutent des états de preuve différents des simples revendications criminelles. MSEA ne repose pas uniquement sur une publication de forum : des références autoritatives ultérieures renforcent l'évaluation selon laquelle une violation s'est produite. Pourtant, l'absence de notification directe de MSEA dans les sources d'audit examinées empêche AFRINTEL de passer le dossier en `Victim Confirmed`. Cette distinction entre forte corroboration et confirmation institutionnelle directe doit être conservée. Les catégories d'employés, de correspondance, de données financières et d'enregistrement d'entreprises peuvent être maintenues comme exposition rapportée, mais le prix revendiqué et la cause technique ne doivent pas être présentés comme indépendamment établis.
 
-Décembre clôt l’année sur un corpus largement ransomware, mais la valeur de renseignement se concentre dans quatre dossiers étayés. La bonne lecture n’est donc pas « douze attaques confirmées » : elle consiste à distinguer les expositions documentées, les publications crédibles mais incomplètes et les revendications dont l’impact reste à vérifier.
+NBS représente une catégorie de preuve différente et plus claire. L'institution elle-même a confirmé que son site avait été piraté, des publications indépendantes ont documenté un message de défacement et l'indisponibilité prolongée démontre un impact réel sur le service. En revanche, aucune preuve ne permet d'établir un vol du backend statistique. La conclusion la plus solide reste donc un **Defacement confirmé avec perturbation de service**, et non un Data Leak. Cela évite de transformer automatiquement un impact d'intégrité et de disponibilité en atteinte à la confidentialité.
 
-**AFRINTEL - TLP:CLEAR**
+Le corpus d'origine de décembre contenait déjà plusieurs expositions fortement étayées. Le gouvernement de l'État d'Ekiti et ASJP fournissent des éléments `Very High` reliant des données internes structurées aux organisations concernées. DAL Group et Baker Tilly ajoutent d'autres signaux d'exposition basés sur des échantillons. Ces cas montrent que la valeur principale du mois ne réside pas uniquement dans le nombre d'étiquettes ransomware, mais dans la profondeur et la nature des éléments disponibles. Une publication associée à un ransomware peut prouver de manière convaincante une compromission de données sans démontrer indépendamment le chiffrement, tandis qu'un piratage de site confirmé peut affecter l'intégrité et la disponibilité sans démontrer une exfiltration.
 
-[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+La lecture sectorielle corrigée évolue également. **Government / Administration devient le premier secteur avec trois fiches**, représentant Ekiti, MSEA et NBS. Cette concentration mérite une attention particulière, mais les trois incidents ne sont pas techniquement équivalents : Ekiti est associé à une revendication ransomware avec exposition fortement étayée, MSEA est un Data Leak corroboré et NBS un Defacement confirmé. Les transformer en un seul schéma homogène d'attaque contre l'administration dépasserait ce que les preuves permettent d'affirmer.
+
+La lecture CTI la plus défendable de décembre est donc celle d'un mois combinant **visibilité ransomware persistante, plusieurs expositions de données fortement étayées, une violation du secteur public kenyan fortement corroborée et un défacement de site nigérian directement confirmé**. La baisse par rapport à novembre ne doit pas être assimilée à une baisse proportionnelle du risque cyber continental. Décembre démontre au contraire pourquoi la valeur d'AFRINTEL dépend de la séparation constante entre type d'incident, statut, confiance, impact, chronologie et provenance des preuves.
+
+Avec MSEA et NBS intégrés, le registre de corrections rétrospectives est désormais **entièrement appliqué : 10 cas sur 10**. La prochaine étape analytique du corpus 2024 doit être le recalcul complet des totaux annuels, pays, secteurs, acteurs, régions et de la comparaison 2024-2025 à partir des mois corrigés, et non à partir de l'ancien total annuel de 118.
+
+**AFRINTEL** - TLP:CLEAR

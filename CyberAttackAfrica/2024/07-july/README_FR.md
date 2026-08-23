@@ -1,176 +1,202 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Juillet%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # Rapport CTI AFRINTEL - Juillet 2024
 
 👉🏾 [English version](./README.md)
 
 ## 1. Résumé exécutif
 
-Juillet 2024 compte **11 incidents** : **7 revendications ransomware** et **4 fuites de données**. L’Afrique du Sud et l’Algérie arrivent en tête avec trois incidents chacune. La concentration algérienne doit être interprétée avec prudence : trois publications proviennent d’une même compilation de bases anciennes remise en circulation.
+Juillet 2024 contient **11 fiches incident documentées** : **7 Ransomware** et **4 Data Leak**, dans **7 pays africains**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans le corpus validé de juillet.
 
-Le mois combine des cibles de santé, d’éducation, de défense, de transport, de finance et d’industrie minière. L’incident attribué au National War College présente une incohérence importante : le domaine cité appartient à une institution américaine, tandis que les cinq PNG fournis renvoient au F.D.R.E Defence War College éthiopien. Une erreur de domaine, une confusion de nom ou une attribution technique incorrecte restent possibles ; AFRINTEL distingue donc l’organisation observée du domaine annoncé par l’acteur.
+L'Afrique du Sud et l'Algérie comptent chacune trois fiches. La concentration algérienne nécessite une qualification importante : les trois Data Leak algériens proviennent d'une republication de juillet d'une compilation plus ancienne contenant des jeux de données datés de 2019, 2022 et 2023. Ils sont comptés comme incidents de circulation de données dans le corpus mensuel et non comme trois nouvelles intrusions établies en juillet.
 
-Voir [victims_FR.md](./victims_FR.md).
+Le dossier éthiopien du F.D.R.E Defence War College exige également de la prudence. L'échantillon visible est cohérent avec des documents internes d'un établissement d'enseignement militaire éthiopien, tandis que le domaine annoncé par le vendeur, `nwc.ndu.edu`, appartient à la National Defense University américaine. AFRINTEL sépare donc l'organisation visible dans l'échantillon du domaine cité par l'acteur mais non vérifié.
+
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Juin 2024 | Juillet 2024 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 3 | **11** | **+8 (+266,7 %)** |
+| Ransomware | 3 | **7** | **+4 (+133,3 %)** |
+| Data Leak | 0 | **4** | **+4 (nouveau dans le corpus)** |
+| Access Sale | 0 | **0** | Stable |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **0** | Stable |
+| Operational Fraud | 0 | **0** | Stable |
+
+Le corpus de juillet est **3,7 fois plus important que celui de juin**, mais cela ne signifie pas que les compromissions confirmées ont été multipliées dans la même proportion. Trois des quatre Data Leak sont des jeux de données anciens remis en circulation en juillet, tandis que les sept Ransomware restent des revendications de publication sans élément DFIR public dans le corpus fourni.
 
 ## 2. Méthodologie
 
-Le rapport couvre les publications classées en juillet 2024. Une republication reste un incident de circulation de données dans le corpus, mais n’est pas présentée comme une nouvelle intrusion. Les niveaux de confiance reflètent la qualité des éléments visibles et non la seule ancienneté ou notoriété de la source.
-
-Les statistiques dérivent des **11 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
+- **Période :** 1er au 31 juillet 2024.
+- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
+- **Comptage :** une fiche harmonisée correspond à un incident documenté.
+- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Registre de corrections rétrospectives :** aucun des 10 incidents manquants identifiés en 2024 ne concerne juillet.
+- **Republications :** une republication reste un incident de circulation de données dans le corpus mensuel, mais n'est pas présentée comme une nouvelle intrusion.
+- **Séparation acteur/source :** les comptes de republication ne sont pas considérés comme acteurs d'intrusion sans preuve permettant cette attribution.
+- Le niveau de confiance reflète la qualité des éléments visibles et non la réputation de l'acteur ou le volume annoncé.
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---:|
-| Incidents / Pays | **11 / 7** |
-| Ransomware | **7** |
-| Fuites de données | **4** |
-| Ventes d’accès / Défacement | **0 / 0** |
+### 3.1 Répartition par type d'incident
 
-### Classement par pays
-
-| Pays | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 3 | 3 | 0 |
-| 🇩🇿 Algérie | 3 | 0 | 3 |
-| 🇰🇪 Kenya | 1 | 1 | 0 |
-| 🇹🇳 Tunisie | 1 | 1 | 0 |
-| 🇿🇼 Zimbabwe | 1 | 1 | 0 |
-| 🇪🇬 Égypte | 1 | 1 | 0 |
-| 🇪🇹 Éthiopie | 1 | 0 | 1 |
-| **Total** | **11** | **7** | **4** |
-
-```mermaid
-xychart
-    title "Incidents par pays - juillet 2024"
-    x-axis ["ZA","DZ","KE","TN","ZW","EG","ET"]
-    y-axis "Incidents" 0 --> 4
-    bar [3,3,1,1,1,1,1]
-```
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **7** | **63,6 %** |
+| Data Leak | **4** | **36,4 %** |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **11** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par type - juillet 2024
+    title Types d'incident - Juillet 2024
     "Ransomware" : 7
-    "Fuites de données" : 4
+    "Data Leak" : 4
 ```
 
-### Répartition régionale
+### 3.2 Répartition par pays
 
-| Région | Total | Ransomware | Fuite |
+| Pays | Ransomware | Data Leak | Total |
 |---|---:|---:|---:|
-| Afrique du Nord | 5 | 2 | 3 |
-| Afrique australe | 4 | 4 | 0 |
-| Afrique de l’Est | 2 | 1 | 1 |
-| **Total** | **11** | **7** | **4** |
+| 🇿🇦 Afrique du Sud | 3 | 0 | **3** |
+| 🇩🇿 Algérie | 0 | 3 | **3** |
+| 🇰🇪 Kenya | 1 | 0 | 1 |
+| 🇹🇳 Tunisie | 1 | 0 | 1 |
+| 🇿🇼 Zimbabwe | 1 | 0 | 1 |
+| 🇪🇬 Égypte | 1 | 0 | 1 |
+| 🇪🇹 Éthiopie | 0 | 1 | 1 |
+| **Total** | **7** | **4** | **11** |
 
-### Répartition sectorielle normalisée
+### 3.3 Répartition régionale
 
-| Secteur | Incidents | Part |
+| Région | Ransomware | Data Leak | Total |
+|---|---:|---:|---:|
+| Afrique du Nord | 2 | 3 | **5** |
+| Afrique australe | 4 | 0 | **4** |
+| Afrique de l'Est | 1 | 1 | **2** |
+| **Total** | **7** | **4** | **11** |
+
+### 3.4 Répartition sectorielle harmonisée
+
+| Secteur | Fiches | Part |
 |---|---:|---:|
-| Santé / Médical | 2 | 18,2 % |
-| Services professionnels / Entreprises | 2 | 18,2 % |
-| Transport / Logistique | 2 | 18,2 % |
-| Défense / Sécurité | 1 | 9,1 % |
-| Éducation / Université | 1 | 9,1 % |
-| Médias / Divertissement | 1 | 9,1 % |
-| Finance / Banque | 1 | 9,1 % |
-| Mines / Industries extractives | 1 | 9,1 % |
+| Healthcare / Medical | 2 | 18,2 % |
+| Professional / Business Services | 2 | 18,2 % |
+| Transport / Logistics | 2 | 18,2 % |
+| Defense / Security | 1 | 9,1 % |
+| Education / University | 1 | 9,1 % |
+| Media / Entertainment | 1 | 9,1 % |
+| Finance / Banking | 1 | 9,1 % |
+| Mining / Extractive Industries | 1 | 9,1 % |
 | **Total** | **11** | **100 %** |
 
-### Acteurs et sources les plus visibles
+### 3.5 Acteurs / groupes
 
-| Acteur ou source | Incidents |
+| Acteur / Groupe | Fiches |
 |---|---:|
-| Addka72424, republication attribuée à FriendlyChemist | 3 |
-| Mad Liberator | 2 |
-| Six autres acteurs ou sources | 1 chacun |
+| Unknown | **3** |
+| madliberator | **2** |
+| killsec | 1 |
+| TheColorYellow | 1 |
+| blacksuit | 1 |
+| hunters | 1 |
+| lockbit3 | 1 |
+| ransomhouse | 1 |
+| **Total** | **11** |
 
-## 4. Analyse comparative : juin-juillet 2024
+> Les trois fiches `Unknown` correspondent aux jeux de données algériens republiés. `Addka72424` et `FriendlyChemist` restent documentés comme contexte de source, et non comme acteurs d'intrusion confirmés.
 
-| Indicateur | Juin 2024 | Juillet 2024 | Écart absolu | Évolution |
-|---|---:|---:|---:|---:|
-| Incidents | 3 | 11 | +8 | +266,7 % |
-| Ransomware | 3 | 7 | +4 | +133,3 % |
-| Fuites de données | 0 | 4 | +4 | Passage de 0 à 4 |
-| Pays concernés | 2 | 7 | +5 | +250,0 % |
-| Ventes d’accès / Défacement | 0 / 0 | 0 / 0 | 0 / 0 | Stable |
+```mermaid
+flowchart LR
+    MAD["madliberator - 2"] --> ZB["Zimbabwe - ZB Financial Holdings"]
+    MAD --> CT["Afrique du Sud - Cities Network"]
+    UNK["Unknown - 3"] --> HCM["Algérie - Hôpital Chahids Mahmoudi"]
+    UNK --> TLE["Algérie - Université de Tlemcen"]
+    UNK --> ALG["Algeria.com"]
+    TYC["TheColorYellow"] --> DWC["Éthiopie - Defence War College"]
+```
 
-Juillet présente un volume **3,7 fois supérieur** à celui de juin. L’augmentation est composée de quatre revendications ransomware supplémentaires et de quatre fuites qui n’étaient pas présentes dans le corpus de juin. Elle ne doit pas être interprétée comme une multiplication équivalente des compromissions réelles : les statistiques mesurent les publications collectées, et juillet comprend notamment trois republications algériennes issues d’une compilation ancienne ainsi qu’un échantillon éthiopien partiel.
+## 4. Analyse détaillée
 
-La couverture géographique s’élargit de deux à sept pays. L’Afrique du Sud reste présente dans les deux mois, mais la concentration de juin (2 incidents sur 3) devient plus diffuse en juillet, où l’Afrique du Sud et l’Algérie comptent trois incidents chacune. Le nombre de pays et la diversité des catégories augmentent donc davantage que la profondeur technique disponible.
+### 4.1 Ransomware - 7 fiches
 
-**Lecture objective :** le signal le plus robuste est une hausse de visibilité du ransomware et l’apparition de fuites dans le corpus de juillet. La cause exacte de cette variation, la part d’incidents réellement nouveaux et l’impact opérationnel restent inconnus sans confirmations victimes, chronologies et données DFIR.
+Les sept fiches Ransomware concernent **Maxcess Logistics**, **National Health Laboratory Service**, **Kenya Urban Roads Authority**, **ZB Financial Holdings**, **South African Cities Network**, **Assih** et **Sibanye-Stillwater**.
 
-## 5. Analyse détaillée par type d’incident
+Les sept restent `Claim - Unverified` avec un niveau de confiance faible dans les fiches fournies. Aucun échantillon technique accessible ni rapport DFIR public dans le corpus fourni ne permet d'établir un chiffrement, une perturbation opérationnelle ou une exfiltration pour ces sept dossiers.
 
-### 4.1 Ransomware
+`madliberator` apparaît deux fois le 17 juillet, contre ZB Financial Holdings et South African Cities Network. La date de publication commune et l'acteur constituent des faits observables, mais aucun élément technique du corpus fourni ne relie les deux incidents par un vecteur d'accès initial, une infrastructure ou une campagne commune.
 
-Les sept publications couvrent Maxcess Logistics, National Health Laboratory Service, Kenya Urban Roads Authority, ZB Financial Holdings, Cities Network, Assih et Sibanye-Stillwater. Mad Liberator apparaît deux fois le même jour, mais les sources publiques ne suffisent pas à relier techniquement les deux cas.
+### 4.2 Data Leak - 4 fiches
 
-### 4.2 Fuites de données
+Trois fiches Data Leak correspondent à des jeux de données algériens remis en circulation le 11 juillet dans une "Algerian Databases Collection" :
 
-Les trois entrées algériennes sont des republications d’une compilation annoncée comme datant de 2019 à 2023. Elles mesurent une nouvelle circulation de données, non trois intrusions de juillet. Le cas éthiopien est rattaché aux documents observés du F.D.R.E Defence War College. Le domaine nwc.ndu.edu est conservé comme domaine annoncé mais non vérifié ; le répertoire local contient cinq PNG, sans export PST ou boîte Exchange.
+- **Hôpital Chahids Mahmoudi :** fichier source daté du 21 septembre 2023, avec un échantillon de journaux de filtrage de messagerie. Des métadonnées sensibles liées à la santé sont visibles, mais l'accès aux boîtes de messagerie complètes n'est pas établi.
+- **Université de Tlemcen :** fichier source daté du 27 juin 2022. L'échantillon contient une table Moodle `mdl_user` structurellement cohérente et soutient un niveau `High` quant à l'authenticité du jeu de données.
+- **Algeria.com :** fichier source daté de septembre 2019. Les données sont anciennes, le domaine correspond à un portail générique et aucun champ de mot de passe clairement identifiable n'est établi, ce qui justifie une confiance et une pertinence opérationnelle actuelles plus faibles.
 
-## 6. Impact sectoriel
+Ces trois fiches mesurent une remise en circulation d'anciens éléments en juillet 2024 et non trois nouvelles intrusions établies.
 
-La santé, les services professionnels et le transport comptent chacun deux incidents. La sensibilité la plus élevée concerne les données médicales, éducatives et militaires visibles ou revendiquées. Les organisations minières et de transport présentent surtout un risque de continuité, qui ne peut être quantifié depuis les publications seules.
+Le quatrième Data Leak concerne le **F.D.R.E Defence War College** en Éthiopie. Cinq fichiers PNG visibles renforcent le lien avec l'établissement éthiopien, mais le domaine `nwc.ndu.edu` cité par l'acteur est incohérent avec cette organisation. Aucun fichier PST, EML, MSG ou export Exchange n'est présent dans le matériel fourni ; les 747 Mo de courriels Exchange revendiqués ne peuvent donc pas être confirmés.
 
-## 7. Profil des acteurs et évaluation du risque
+## 5. Principaux constats et lacunes
 
-| Périmètre | Niveau | Justification |
+- Juillet passe de 3 à **11 fiches**, mais nouveauté et volume de publication doivent être distingués.
+- Les Ransomware représentent **7 fiches sur 11 (63,6 %)**, toutes non vérifiées dans le corpus fourni.
+- Trois des quatre Data Leak correspondent à des jeux de données algériens plus anciens remis en circulation en juillet.
+- L'Afrique du Sud et l'Algérie comptent chacune trois fiches, mais avec des profils de preuve très différents : revendications ransomware en Afrique du Sud et circulation de données anciennes en Algérie.
+- L'échantillon de l'Université de Tlemcen présente les indicateurs d'authenticité les plus solides parmi les republications algériennes.
+- L'échantillon du Defence War College soutient l'organisation observée, mais pas le domaine cité par l'acteur ni le volume Exchange revendiqué.
+- Les sept dossiers ransomware nécessitent encore des confirmations victimes, indicateurs techniques et éléments sur l'impact opérationnel.
+
+## 6. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Application |
 |---|---|---|
-| 🇩🇿 Algérie | 🔴 Élevé | Trois fuites republiées, dont santé et éducation |
-| 🇿🇦 Afrique du Sud | 🔴 Élevé | Trois revendications ransomware |
-| 🇪🇹 Éthiopie | 🔴 Élevé | Documents militaires visibles, attribution de domaine incohérente |
-| Autres pays | 🟠 Moyen | Une publication par pays |
+| Préventif | T1486 - Data Encrypted for Impact | Surveillance ransomware pertinente ; chiffrement non confirmé dans les sept revendications de juillet. |
+| Contextuel | T1213 - Data from Information Repositories | Pertinent pour Moodle et les autres référentiels structurés exposés dans les Data Leak. |
+| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des flux sortants ; canal d'acquisition/exfiltration non établi. |
+| Hypothèse | T1078 - Valid Accounts | Scénario possible à examiner en interne, non fait observé dans les éléments fournis. |
 
-## 8. Tendances et lacunes de renseignement
+## 7. Recommandations
 
-- **Observé - confiance élevée :** sept incidents ransomware et quatre fuites.
-- **Observé - confiance élevée :** trois fuites algériennes relèvent d’une même republication et non d’intrusions nouvelles établies.
-- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les revendications ransomware.
-- **Lacune :** l’organisation observée est identifiable dans les documents, mais le domaine cité dans l’annonce reste contradictoire ; la provenance du prétendu volume Exchange de 747 Mo n’est pas démontrée.
-- **Collecte attendue :** origine de la compilation algérienne, confirmation des établissements et indicateurs techniques des cas ransomware.
+- Traiter les republications de données anciennes et les nouvelles compromissions comme deux conditions analytiques distinctes.
+- Pour les dossiers algériens, déterminer si les comptes exposés sont encore actifs et surveiller la réutilisation d'identifiants sans supposer une intrusion actuelle.
+- Pour le cas militaire éthiopien, résoudre l'incohérence de domaine avant toute attribution externe ou escalade.
+- Pour les organisations listées par des groupes ransomware, préserver les journaux d'authentification, endpoints, accès distants et sauvegardes autour des dates de publication.
+- Surveiller les futures mises à jour des acteurs, notifications victimes et publications d'échantillons susceptibles de modifier le niveau de preuve.
 
-## 9. Cartographie MITRE ATT&CK contextuelle
+## 8. Chronologie
 
-| Statut | Technique | Utilisation |
-|---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé dans les sept revendications |
-| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des sorties ; méthode d’acquisition des fuites inconnue |
-| Hypothèse | T1078 - Valid Accounts | Scénario de compromission à rechercher, sans identifiant valide observé |
+```mermaid
+timeline
+    title AFRINTEL - Juillet 2024
+    01 Juillet : killsec - Maxcess Logistics
+    02 Juillet : TheColorYellow - F.D.R.E Defence War College
+    05 Juillet : blacksuit - NHLS
+    11 Juillet : Unknown - Hôpital Chahids Mahmoudi, republication
+               : Unknown - Université de Tlemcen, republication
+               : Unknown - Algeria.com, republication
+    13 Juillet : hunters - KURA
+    17 Juillet : madliberator - ZB Financial Holdings
+               : madliberator - Cities Network
+               : lockbit3 - Assih
+    22 Juillet : ransomhouse - Sibanye-Stillwater
+```
 
-## 10. Recommandations
+## 9. Conclusion
 
-- **Santé et éducation :** identifier les jeux anciens, réinitialiser les comptes exposés et surveiller les republications.
-- **Défense :** vérifier l’attribution institutionnelle avant toute réponse publique et protéger les systèmes documentaires.
-- **Transport et mines :** segmenter les environnements opérationnels et tester la continuité.
-- **Toutes les organisations :** préserver les journaux et maintenir des sauvegardes immuables.
+Juillet 2024 se clôt sur **11 fiches incident documentées dans 7 pays africains**, réparties entre **7 publications Ransomware et 4 Data Leak**. Par rapport à juin, le corpus passe de 3 à 11 fiches, soit une hausse de **266,7 %**. Les publications Ransomware passent de 3 à 7 et les Data Leak réapparaissent avec quatre fiches.
 
-## 11. Recommandations SOC et tactiques
+Cette hausse est réelle au niveau de la collecte AFRINTEL, mais elle ne doit pas être interprétée comme une augmentation équivalente des compromissions confirmées. Trois des quatre Data Leak sont des republications de jeux de données algériens dont les dates sous-jacentes remontent à 2019, 2022 et 2023. Leur apparition en juillet traduit une nouvelle circulation et un risque renouvelé d'exposition, mais ne constitue pas une preuve que les trois organisations ont été compromises à nouveau pendant juillet 2024. Cette distinction modifie fortement la lecture de la concentration apparente de l'Algérie.
 
-| Qualification | Action |
-|---|---|
-| **Observé** | Rechercher les comptes et applications mentionnés dans les échantillons ; aucune chaîne ransomware n’est confirmée. |
-| **Hypothèse** | Examiner les authentifications anormales, exports de bases et archives préparées avant publication. |
-| **Préventif** | Détecter chiffrement massif, inhibition des sauvegardes et transferts sortants volumineux. |
+Le mois illustre également l'importance de la provenance. Le dossier du F.D.R.E Defence War College contient des documents visibles cohérents avec l'établissement éthiopien, mais le domaine cité par le vendeur appartient à une autre institution située aux États-Unis. Les fichiers fournis renforcent donc l'attribution de l'échantillon à l'organisation éthiopienne, sans permettre de confirmer l'origine Exchange annoncée ni le volume de 747 Mo. Conserver cette contradiction est analytiquement plus solide que de forcer l'annonce de l'acteur et les preuves observées dans un récit unique non étayé.
 
-## 12. Recommandations stratégiques
+La visibilité ransomware est plus importante qu'en juin, mais les sept fiches restent des revendications non vérifiées à faible confiance dans le corpus fourni. Les deux publications `madliberator` du même jour méritent un suivi, mais aucun élément technique n'établit un chemin d'intrusion commun ou une campagne coordonnée. Les éléments disponibles soutiennent donc une conclusion sur une plus forte **visibilité des publications**, et non sur une vague coordonnée de compromissions ransomware démontrée.
 
-| Priorité | Qualification | Mesure |
-|---:|---|---|
-| 1 | **Observé** | Traiter séparément republication de données et nouvelle compromission. |
-| 2 | **Hypothèse** | Étudier un lien entre publications simultanées sans conclure à une campagne commune. |
-| 3 | **Préventif** | Renforcer ASM, MFA résistante au phishing, gestion des secrets et sauvegardes isolées. |
+Pour AFRINTEL, juillet montre que **volume, nouveauté, provenance et maturité des preuves doivent être analysés ensemble**. La lecture la plus défendable n'est pas simplement que juillet a été "plus attaqué" que juin. AFRINTEL a surtout observé un corpus beaucoup plus volumineux et plus diversifié, en partie alimenté par des données historiques remises en circulation, parallèlement à sept revendications ransomware dont l'impact technique reste largement non confirmé. Le suivi doit donc se concentrer sur les confirmations victimes, les nouveaux échantillons, les notifications réglementaires et les indicateurs techniques permettant de distinguer exposition persistante de données et nouvelles compromissions réelles.
 
-## 13. Conclusion
-
-Juillet illustre la nécessité de distinguer volume et nouveauté. Trois des quatre fuites sont des données anciennes remises en circulation, tandis que les sept publications ransomware offrent peu de profondeur technique. La bonne lecture du mois repose donc sur la provenance, la chronologie et les limites d’attribution.
-
-**AFRINTEL - TLP:CLEAR**
-
-[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR

@@ -7,11 +7,15 @@
 
 ## 📅 June 2024
 
-### June 4, 2024
+## Monthly snapshot
+
+June 2024 contains **3 documented incident records**: **3 Ransomware**, **0 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **2 African countries**.
+
+### 4 June 2024
 
 #### 🇿🇦 South Africa - Botselo
-- **Ransomware group:** arcusmedia
-- **Sector:** Agriculture and agribusiness
+- **Ransomware Group:** arcusmedia
+- **Sector:** Agriculture / Agribusiness
 - **Website:** [botselo.com](https://www.botselo.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -19,25 +23,25 @@
 - **Incident type:** Ransomware
 
 - **Reliability note:**
-  Botselo is listed on the arcusmedia ransomware leak site. AFRINTEL did not observe an accessible data sample, screenshot or extract associated with this listing at the time of collection, and the claim has not been independently confirmed by the organization.
+  Botselo appears on the arcusmedia leak site. AFRINTEL observed no accessible sample, screenshot or data extract associated with the publication at collection time, and the claim was not independently confirmed by the organization.
 
 - **Description:**
-  Botselo is a major commercial enterprise operating in the agriculture and agribusiness sector, contributing significantly to the regional economic landscape in South Africa.
+  Botselo is a South African organization classified under Agriculture / Agribusiness in the AFRINTEL corpus.
 
-- **CTI analysis:**
-  AFRINTEL recorded Botselo (South Africa) as a claimed ransomware victim published by arcusmedia. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Agriculture and agribusiness sector, a compromise of this type would typically expose supplier, customer or operational information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Botselo (South Africa) as a victim claimed by the ransomware group arcusmedia. No leaked file, database extract or screenshot was accessible for analysis, so the potential scope, volume and sensitivity of any affected data cannot be assessed. Without an accessible sample, AFRINTEL cannot determine which data categories may have been involved or whether any operational disruption actually occurred. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset on the basis of this publication alone.
 
 - **Recommendations:**
-  1. Review external attack surface, remote-access services and backup integrity following this arcusmedia listing, and confirm whether offline or immutable backups are available.
-  2. Monitor for any subsequent publication of data samples associated with this claim, and prepare operational-data protection and incident-response procedures in case evidence of compromise emerges.
+  1. Review the external attack surface, remote-access services and backup integrity following the arcusmedia publication, and verify the availability of offline or immutable backups.
+  2. Monitor for any later publication of data samples associated with the claim and prepare incident-response procedures if evidence of compromise emerges.
 
 ----------------------------
 
-### June 6, 2024
+### 6 June 2024
 
 #### 🇨🇬 Congo - Burotec.biz
-- **Ransomware group:** eldorado
-- **Sector:** Services
+- **Ransomware Group:** eldorado
+- **Sector:** Professional / Business Services
 - **Website:** [burotec.biz](https://www.burotec.biz)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -45,25 +49,25 @@
 - **Incident type:** Ransomware
 
 - **Reliability note:**
-  Burotec.biz is listed on the eldorado ransomware leak site. AFRINTEL did not observe an accessible data sample, screenshot or extract associated with this listing at the time of collection, and the claim has not been independently confirmed by the organization.
+  Burotec.biz appears on the eldorado leak site. AFRINTEL observed no accessible sample, screenshot or data extract associated with the publication at collection time, and the claim was not independently confirmed by the organization.
 
 - **Description:**
-  Burotec.biz is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in Congo.
+  Burotec.biz is an organization based in Congo. The monthly sources do not document its activity more precisely, so AFRINTEL retains the harmonized sector Professional / Business Services.
 
-- **CTI analysis:**
-  AFRINTEL recorded Burotec.biz (Congo) as a claimed ransomware victim published by eldorado. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Services sector, a compromise of this type would typically expose employee, customer or operational information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Burotec.biz (Congo) as a victim claimed by the ransomware group eldorado. No leaked file, database extract or screenshot was accessible for analysis, so the potential scope, volume and sensitivity of any affected data cannot be assessed. Without an accessible sample, AFRINTEL cannot determine which data categories may have been involved or whether any operational disruption actually occurred. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset on the basis of this publication alone.
 
 - **Recommendations:**
-  1. Review external attack surface, remote-access services and backup integrity following this eldorado listing, and confirm whether offline or immutable backups are available.
-  2. Monitor for any subsequent publication of data samples associated with this claim, and prepare data protection and incident-response procedures in case evidence of compromise emerges.
+  1. Review the external attack surface, remote-access services and backup integrity following the eldorado publication, and verify the availability of offline or immutable backups.
+  2. Monitor for any later publication of data samples associated with the claim and prepare incident-response procedures if evidence of compromise emerges.
 
 ----------------------------
 
-### June 23, 2024
+### 23 June 2024
 
-#### 🇿🇦 South Africa - Www.glynmarais
-- **Ransomware group:** cactus
-- **Sector:** Attorney
+#### 🇿🇦 South Africa - Glyn Marais
+- **Ransomware Group:** cactus
+- **Sector:** Legal / Justice
 - **Website:** [glynmarais.co.za](https://www.glynmarais.co.za)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -71,14 +75,16 @@
 - **Incident type:** Ransomware
 
 - **Reliability note:**
-  Www.glynmarais is listed on the cactus ransomware leak site. AFRINTEL did not observe an accessible data sample, screenshot or extract associated with this listing at the time of collection, and the claim has not been independently confirmed by the organization.
+  Glyn Marais appears on the cactus leak site. AFRINTEL observed no accessible sample, screenshot or data extract associated with the publication at collection time, and the claim was not independently confirmed by the organization.
 
 - **Description:**
-  Www.glynmarais is a major commercial enterprise operating in the attorney sector, contributing significantly to the regional economic landscape in South Africa.
+  Glyn Marais is a South African organization classified under Legal / Justice in the AFRINTEL corpus.
 
-- **CTI analysis:**
-  AFRINTEL recorded Www.glynmarais (South Africa) as a claimed ransomware victim published by cactus. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Attorney sector, a compromise of this type would typically expose client and case-related information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Glyn Marais (South Africa) as a victim claimed by the ransomware group cactus. No leaked file, database extract or screenshot was accessible for analysis, so the potential scope, volume and sensitivity of any affected data cannot be assessed. Without an accessible sample, AFRINTEL cannot determine which data categories may have been involved or whether any operational disruption actually occurred. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset on the basis of this publication alone.
 
 - **Recommendations:**
-  1. Review external attack surface, remote-access services and backup integrity following this cactus listing, and confirm whether offline or immutable backups are available.
-  2. Monitor for any subsequent publication of data samples associated with this claim, and prepare client-data confidentiality and incident-response procedures in case evidence of compromise emerges.
+  1. Review the external attack surface, remote-access services and backup integrity following the cactus publication, and verify the availability of offline or immutable backups.
+  2. Monitor for any later publication of data samples associated with the claim and prepare incident-response procedures if evidence of compromise emerges.
+
+----------------------------

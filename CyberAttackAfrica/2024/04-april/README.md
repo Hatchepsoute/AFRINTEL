@@ -1,158 +1,184 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-April%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # AFRINTEL CTI Report - April 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-April 2024 contains **7 incidents**: **5 ransomware claims** and **2 data leaks**. South Africa accounts for two publications, while five other countries appear once each. The corpus spans four regions, including the Indian Ocean through the Remitano publication in Seychelles.
+AFRINTEL documents **7 incident records** in April 2024: **5 Ransomware** and **2 Data Leak**, across **6 African countries**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the validated April corpus.
 
-SpaceBears is the only actor associated with two organizations. Simultaneous publication is not enough to establish a coordinated campaign. The ONEF leak in Burkina Faso and the Vezeeta Pharmacy leak in Egypt are the month's sample-backed incidents in the corpus.
+South Africa accounts for two records. Burkina Faso, Egypt, Libya, Morocco and Seychelles each account for one. The seven incidents are distributed across seven different controlled sectors, so the month does not show a measurable sector concentration.
 
-See [victims.md](./victims.md).
+`spacebears` is the only actor associated with two organizations. The two Data Leak records, ONEF in Burkina Faso and Vezeeta Pharmacy in Egypt, include visible sample material. For the five Ransomware records, the available corpus supports the existence of the actor publications but does not independently confirm encryption, operational disruption or exfiltration.
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+| Indicator | March 2024 | April 2024 | Change |
+|---|---:|---:|---:|
+| Total incidents | 9 | **7** | **-2 (-22.2%)** |
+| Ransomware | 7 | **5** | **-2 (-28.6%)** |
+| Data Leak | 2 | **2** | **0 (stable)** |
+| Access Sale | 0 | **0** | Stable |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **0** | Stable |
+| Operational Fraud | 0 | **0** | Stable |
+
+April records **22.2% fewer incidents** than March. The decrease is entirely attributable to Ransomware, which falls from 7 to 5. Data Leak remains stable at 2 records.
 
 ## 2. Methodology
 
-This report covers publications assigned to April 2024. Incidents are deduplicated by organization and separated into AFRINTEL's four categories. Technical findings are limited to visible source evidence; practices commonly associated with a group are not treated as facts of the month.
-
-Statistics derive from [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).
+- **Period:** 1-30 April 2024.
+- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
+- **Counting:** one harmonized card equals one documented incident record.
+- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Retrospective correction registry:** none of the 10 identified missing 2024 incidents belongs to April, so no additional record is injected into this month.
+- Technical findings are limited to visible source evidence. Behaviors commonly associated with a ransomware group are not treated as observed facts unless the card contains supporting evidence.
+- Claimed record volumes and potential impacts remain distinct from directly reviewed evidence.
 
 ## 3. Global overview
 
-| Indicator | Value |
-|---|---:|
-| Incidents / Countries | **7 / 6** |
-| Ransomware | **5** |
-| Data leaks | **2** |
-| Access sales / Defacement | **0 / 0** |
+### 3.1 Incident-type distribution
 
-### Country ranking
-
-| Country | Total | Ransomware | Data leak |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 2 | 2 | 0 |
-| 🇧🇫 Burkina Faso | 1 | 0 | 1 |
-| 🇪🇬 Egypt | 1 | 0 | 1 |
-| 🇱🇾 Libya | 1 | 1 | 0 |
-| 🇲🇦 Morocco | 1 | 1 | 0 |
-| 🇸🇨 Seychelles | 1 | 1 | 0 |
-| **Total** | **7** | **5** | **2** |
-
-```mermaid
-xychart
-    title "Incidents by country - April 2024"
-    x-axis ["ZA","BF","EG","LY","MA","SC"]
-    y-axis "Incidents" 0 --> 3
-    bar [2,1,1,1,1,1]
-```
+| Incident type | Records | Share |
+|---|---:|---:|
+| Ransomware | **5** | **71.4%** |
+| Data Leak | **2** | **28.6%** |
+| Access Sale | 0 | 0.0% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **7** | **100%** |
 
 ```mermaid
 pie showData
-    title Incident-type distribution - April 2024
+    title Incident types - April 2024
     "Ransomware" : 5
-    "Data leak" : 2
+    "Data Leak" : 2
 ```
 
-### Regional distribution
+### 3.2 Country distribution
 
-| Region | Total | Ransomware | Data leak |
+| Country | Ransomware | Data Leak | Total |
 |---|---:|---:|---:|
-| Southern Africa | 2 | 2 | 0 |
-| North Africa | 3 | 2 | 1 |
-| West Africa | 1 | 0 | 1 |
-| Indian Ocean | 1 | 1 | 0 |
-| **Total** | **7** | **5** | **2** |
+| 🇿🇦 South Africa | 2 | 0 | **2** |
+| 🇧🇫 Burkina Faso | 0 | 1 | 1 |
+| 🇪🇬 Egypt | 0 | 1 | 1 |
+| 🇱🇾 Libya | 1 | 0 | 1 |
+| 🇲🇦 Morocco | 1 | 0 | 1 |
+| 🇸🇨 Seychelles | 1 | 0 | 1 |
+| **Total** | **5** | **2** | **7** |
 
-### Normalized sector distribution
+### 3.3 Regional distribution
 
-| Sector | Incidents | Share |
+| Region | Ransomware | Data Leak | Total |
+|---|---:|---:|---:|
+| North Africa | 2 | 1 | **3** |
+| Southern Africa | 2 | 0 | **2** |
+| West Africa | 0 | 1 | **1** |
+| Indian Ocean | 1 | 0 | **1** |
+| **Total** | **5** | **2** | **7** |
+
+### 3.4 Harmonized sector distribution
+
+| Sector | Records | Share |
 |---|---:|---:|
 | Finance / Banking | 1 | 14.3% |
 | Media / Entertainment | 1 | 14.3% |
 | Government / Administration | 1 | 14.3% |
 | Manufacturing / Industry | 1 | 14.3% |
 | Technology / IT | 1 | 14.3% |
-| Oil & Energy | 1 | 14.3% |
-| Healthcare / Online Pharmacy | 1 | 14.3% |
+| Energy / Utilities | 1 | 14.3% |
+| Healthcare / Medical | 1 | 14.3% |
 | **Total** | **7** | **100%** |
 
-### Most visible actors
+### 3.5 Actors / groups
 
-| Actor | Incidents |
+| Actor / Group | Records |
 |---|---:|
-| SpaceBears | 2 |
-| Hunters, INC Ransom, Pedi, RansomHub, EgyptLeaks | 1 each |
+| spacebears | **2** |
+| incransom | 1 |
+| hunters | 1 |
+| Pedi | 1 |
+| ransomhub | 1 |
+| EgyptLeaks | 1 |
+| **Total** | **7** |
 
-## 4. Detailed analysis by incident type
+```mermaid
+flowchart LR
+    SB["spacebears - 2"] --> MA["Morocco - SM Emballage"]
+    SB --> ZA1["South Africa - Thinkadam"]
+    INC["incransom"] --> SC["Seychelles - Remitano"]
+    HUN["hunters"] --> ZA2["South Africa - Caxton and CTP"]
+    PED["Pedi"] --> BF["Burkina Faso - ONEF"]
+    RH["ransomhub"] --> LY["Libya - Mellitah Oil & Gas"]
+    EL["EgyptLeaks"] --> EG["Egypt - Vezeeta Pharmacy"]
+```
 
-### 4.1 Ransomware
+## 4. Detailed analysis
 
-The publications concern Remitano, Caxton and CTP, SM Emballage, Thinkadam, and Mellitah Oil & Gas. Finance and energy increase the potential impact, but no public source in the corpus confirms disruption, encryption, or exfiltration.
+### 4.1 Ransomware - 5 records
 
-### 4.2 Data leak
+The five Ransomware records concern **Remitano**, **Caxton and CTP Publishers and Printers**, **SM Emballage**, **Thinkadam** and **Mellitah Oil & Gas**.
 
-The ONEF publication contains a sample associated with a Burkinabè employment and training body. The Vezeeta Pharmacy publication separately presents an order extract attributed to an Egyptian online-pharmacy platform. In both cases, available evidence does not establish completeness or the date of initial access.
+All five are `Claim - Unverified`. The victim cards state that no accessible leaked file, database extract or screenshot was observed for these listings at collection time. The corpus therefore supports the fact that the organizations were published by the named ransomware groups, but does not independently establish intrusion, encryption, disruption, exfiltration volume or dataset completeness.
 
-## 5. Sectoral impact
+`spacebears` appears twice, against SM Emballage and Thinkadam. This repetition is an observed publication pattern only and is insufficient to establish a coordinated campaign or shared initial-access vector.
 
-Sector distribution is fully dispersed, with one incident in each of seven sectors. This lack of concentration limits broad sector conclusions. Energy, public employment services, and finance nevertheless warrant higher priority because of their functions.
+### 4.2 Data Leak - 2 records
 
-## 6. Threat actor profile and risk assessment
+The **ONEF** record is based on a forum publication presenting a database associated with `onef.gov.bf` and showing the structure of an `actualite` application table. The screenshot does not establish authenticity, completeness or initial access method.
 
-| Scope | Level | Rationale |
+The **Vezeeta Pharmacy** record is based on a publication attributed to EgyptLeaks advertising approximately **133,000 order records** covering 2021-2023. A visible sample contains fields related to contact, zone, order status, payment, branch, products and delivery addresses. AFRINTEL did not receive the complete archive and therefore does not validate the claimed 133,000-record total, acquisition method, completeness or current validity of the data.
+
+## 5. Key findings and intelligence gaps
+
+- Ransomware remains the dominant incident type with **5 of 7 records (71.4%)**.
+- April's total volume is lower than March, but Data Leak remains unchanged at two records.
+- No sector appears more than once, preventing a defensible conclusion about a dominant sector in April.
+- ONEF and Vezeeta provide more direct documentary value than the five Ransomware listings because sample material is visible.
+- No public DFIR evidence in the reviewed April corpus establishes the technical intrusion chains of the five Ransomware records.
+- The claimed Vezeeta volume and the authenticity/completeness of the ONEF database remain unresolved collection gaps.
+
+## 6. Contextual MITRE ATT&CK mapping
+
+| Status | Technique | Application |
 |---|---|---|
-| 🇿🇦 South Africa | 🔴 High | Two claims in media and technology |
-| 🇱🇾 Libya | 🔴 High | Publication involving an oil joint venture |
-| 🇧🇫 Burkina Faso | 🟠 Medium | Sample-backed leak involving a public body |
-| 🇲🇦 Morocco / 🇸🇨 Seychelles | 🟡 Low to medium | One claim each |
+| Preventive | T1486 - Data Encrypted for Impact | Relevant to ransomware monitoring; encryption is not confirmed in the five April claims. |
+| Preventive | T1490 - Inhibit System Recovery | Relevant backup-protection control; behavior not observed in the April evidence. |
+| Contextual | T1213 - Data from Information Repositories | Relevant to database/repository exposure represented by ONEF and Vezeeta. |
+| Preventive | T1567 - Exfiltration Over Web Service | Outbound-data monitoring context; exfiltration channels are not established. |
 
-## 7. Key trends and intelligence gaps
+## 7. Recommendations
 
-- **Observed - high confidence:** five of seven incidents are ransomware claims.
-- **Observed - high confidence:** no sector records more than one incident.
-- **Gap:** no public DFIR report was identified in the sources reviewed for the ransomware cases.
-- **Gap:** the ONEF sample does not validate the full volume or acquisition timeline.
-- **Collection need:** victim confirmation, service status, and later sample publications.
+- Preserve and correlate logs around the publication dates before raising confidence in ransomware claims.
+- For energy and financial environments, prioritize continuity, privileged-access controls and isolated backups.
+- For ONEF and Vezeeta, validate backend access history, abnormal exports and affected-record scope before treating advertised volumes as confirmed.
+- Monitor for later actor publications that may add samples or change evidence status.
+- Maintain separate fields for actor claim, victim confirmation, sample publication and technical validation.
 
-## 8. Contextual MITRE ATT&CK mapping
+## 8. Timeline
 
-| Status | Technique | Use |
-|---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Encryption detection; not confirmed in the five claims |
-| Preventive | T1490 - Inhibit System Recovery | Backup controls; behavior not observed |
-| Preventive | T1567 - Exfiltration Over Web Service | Outbound monitoring; ONEF channel unknown |
+```mermaid
+timeline
+    title AFRINTEL - April 2024
+    04 April : incransom - Remitano
+    13 April : hunters - Caxton and CTP
+    19 April : EgyptLeaks - Vezeeta Pharmacy
+    23 April : Pedi - ONEF
+    29 April : spacebears - SM Emballage
+             : spacebears - Thinkadam
+    30 April : ransomhub - Mellitah Oil & Gas
+```
 
-## 9. Recommendations
+## 9. Conclusion
 
-- **Energy:** segment industrial and administrative environments and test continuity procedures.
-- **Public sector:** review data exports and access to the ONEF application.
-- **Finance and technology:** strengthen privileged access and secret management.
-- **All published victims:** preserve logs and test restoration.
+April 2024 closes with **7 documented incident records across 6 African countries**, consisting of **5 Ransomware claims and 2 Data Leak records**. Compared with March, the monthly corpus decreases by **22.2%**, from 9 to 7 incidents. This reduction is driven by Ransomware, which falls from 7 to 5, while Data Leak remains stable at 2.
 
-## 10. SOC and tactical recommendations
+The month does not reveal a defensible sector concentration: each of the seven records belongs to a different harmonized sector. The geographic picture is similarly dispersed, with only South Africa appearing more than once. `spacebears` is the only actor represented twice, but the available evidence does not support interpreting those two publications as a coordinated campaign or as proof of a shared intrusion method.
 
-| Qualification | Action |
-|---|---|
-| **Observed** | Monitor the explicitly cited assets; no intrusion TTP is confirmed. |
-| **Assumption** | Hunt for abnormal remote-access and privileged-account use around publication dates. |
-| **Preventive** | Detect mass encryption, backup inhibition, database exports, and high-volume transfers. |
+The quality of evidence also differs significantly by incident type. The five Ransomware entries remain unverified actor claims without accessible technical artifacts confirming encryption, disruption or exfiltration. By contrast, ONEF and Vezeeta include visible data samples and therefore offer a stronger basis for exposure assessment, while still leaving important uncertainties regarding authenticity, completeness, acquisition method and total affected volume.
 
-## 11. Strategic recommendations
+For CTI monitoring, the priority after April is therefore not to infer additional technical detail from actor reputation, but to **follow the evidence lifecycle**: victim confirmation, later sample publication, technical indicators, service disruption, confirmed affected-record counts and possible republication of the same material. This distinction is necessary to keep AFRINTEL's historical statistics useful without turning cybercriminal claims into confirmed compromises.
 
-| Priority | Qualification | Measure |
-|---:|---|---|
-| 1 | **Observed** | Prioritize the energy and public services represented in the corpus. |
-| 2 | **Assumption** | Check for a common denominator between the two SpaceBears publications without declaring a campaign. |
-| 3 | **Preventive** | Reduce external exposure, deploy phishing-resistant MFA, and isolate backups. |
-
-## 12. Conclusion
-
-April is a low-volume month with considerable sector diversity. The repeated SpaceBears publications and the presence of sensitive organizations warrant monitoring without exceeding the evidence. ONEF and Vezeeta remain the most actionable cases for validating data exposure.
-
-**AFRINTEL - TLP:CLEAR**
-
-[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR

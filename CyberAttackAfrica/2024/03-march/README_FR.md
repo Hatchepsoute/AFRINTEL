@@ -1,164 +1,181 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Mars%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # Rapport CTI AFRINTEL - Mars 2024
 
 👉🏾 [English version](./README.md)
 
 ## 1. Résumé exécutif
 
-Mars 2024 réunit **9 incidents documentés** : **7 revendications ransomware** et **2 fuites de données**. L’Égypte arrive en tête avec trois publications, devant l’Afrique du Sud avec deux. L’ajout de l’Éthiopie étend le corpus à l’Afrique de l’Est, aux côtés de l’Afrique du Nord et de l’Afrique australe.
+AFRINTEL documente **9 fiches incident** en mars 2024 : **7 Ransomware** et **2 Data Leak**, dans **6 pays africains**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans le corpus validé de mars.
 
-LockBit3 apparaît quatre fois et RansomHub deux fois. Cette répétition mesure la visibilité des publications, pas une campagne coordonnée. Les deux fuites de données concernent l’ESGC au Maroc et une publication attribuée à ThreatSec visant les portails fédéraux éthiopiens eTrade et eRIS. Dans le cas éthiopien, l’examen visuel des cinq pages du PDF fourni soutient la plausibilité structurelle de l’échantillon, mais ne confirme ni sa provenance depuis les portails ni les 43 fichiers revendiqués.
+L'Égypte arrive en tête avec trois incidents, devant l'Afrique du Sud avec deux. `lockbit3` apparaît quatre fois et `ransomhub` deux fois. Cette répétition mesure la visibilité des publications et ne démontre pas une campagne coordonnée.
 
-Voir [victims_FR.md](./victims_FR.md).
+Les deux Data Leak concernent ESGC au Maroc et une publication ThreatSec visant les portails fédéraux éthiopiens eTrade et eRIS. Dans le cas éthiopien, l'examen du PDF fourni de cinq pages soutient la plausibilité structurelle de l'échantillon, mais ne confirme ni sa provenance depuis les portails ni l'existence des 43 fichiers revendiqués.
+
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Février 2024 | Mars 2024 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 12 | **9** | **-3 (-25,0 %)** |
+| Ransomware | 7 | **7** | **0 (stable)** |
+| Data Leak | 5 | **2** | **-3 (-60,0 %)** |
+| Access Sale | 0 | **0** | Stable |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **0** | Stable |
+| Operational Fraud | 0 | **0** | Stable |
+
+Le février corrigé modifie l'interprétation mensuelle. Mars baisse de **25,0 %** en volume total, mais le nombre de Ransomware reste stable à 7. La baisse provient entièrement des Data Leak, qui passent de 5 à 2.
 
 ## 2. Méthodologie
 
-Le rapport couvre les neuf incidents classés en mars 2024. Chaque publication est comptée une fois et les statuts décrivent le niveau de preuve disponible. La fiche éthiopienne est classée au 1er mars à la demande du mainteneur, tandis que sa publication source est datée du 24 août 2023. Aucun comportement technique n’est considéré comme observé sur la seule base de la réputation d’un acteur.
-
-Les statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé avec [victims.md](./victims.md).
+- **Période :** 1er au 31 mars 2024.
+- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
+- **Comptage :** une fiche harmonisée correspond à un incident documenté.
+- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Registre de corrections rétrospectives :** aucun des 10 incidents manquants identifiés en 2024 ne concerne mars ; aucune fiche supplémentaire n'est donc injectée dans ce mois.
+- La fiche éthiopienne est affectée au 1er mars selon la chronologie AFRINTEL maintenue, tandis que la publication source est datée du 24 août 2023.
+- Aucun comportement technique n'est considéré comme observé sur la seule base de la réputation d'un acteur.
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---:|
-| Incidents | **9** |
-| Pays | **6** |
-| Ransomware | **7** |
-| Fuites de données | **2** |
-| Ventes d’accès / Défacement | **0 / 0** |
+### 3.1 Répartition par type d'incident
 
-### Classement par pays
-
-| Pays | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| 🇪🇬 Égypte | 3 | 3 | 0 |
-| 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
-| 🇪🇹 Éthiopie | 1 | 0 | 1 |
-| 🇲🇦 Maroc | 1 | 0 | 1 |
-| 🇳🇦 Namibie | 1 | 1 | 0 |
-| 🇹🇳 Tunisie | 1 | 1 | 0 |
-| **Total** | **9** | **7** | **2** |
-
-```mermaid
-xychart
-    title "Incidents par pays - mars 2024"
-    x-axis ["EG","ZA","ET","MA","NA","TN"]
-    y-axis "Incidents" 0 --> 4
-    bar [3,2,1,1,1,1]
-```
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **7** | **77,8 %** |
+| Data Leak | **2** | **22,2 %** |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **9** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par type - mars 2024
+    title Types d'incident - Mars 2024
     "Ransomware" : 7
-    "Fuite de données" : 2
+    "Data Leak" : 2
 ```
 
-### Répartition régionale
+### 3.2 Répartition par pays
 
-| Région | Total | Ransomware | Fuite |
+| Pays | Ransomware | Data Leak | Total |
 |---|---:|---:|---:|
-| Afrique du Nord | 5 | 4 | 1 |
-| Afrique australe | 3 | 3 | 0 |
-| Afrique de l’Est | 1 | 0 | 1 |
-| **Total** | **9** | **7** | **2** |
+| 🇪🇬 Égypte | 3 | 0 | **3** |
+| 🇿🇦 Afrique du Sud | 2 | 0 | **2** |
+| 🇪🇹 Éthiopie | 0 | 1 | 1 |
+| 🇲🇦 Maroc | 0 | 1 | 1 |
+| 🇳🇦 Namibie | 1 | 0 | 1 |
+| 🇹🇳 Tunisie | 1 | 0 | 1 |
+| **Total** | **7** | **2** | **9** |
 
-### Répartition sectorielle normalisée
+### 3.3 Répartition régionale
 
-| Secteur | Incidents | Part |
-|---|---:|---:|
-| Finance / Banque | 2 | 22,2 % |
-| Gouvernement / Administration | 2 | 22,2 % |
-| Santé / Médical | 1 | 11,1 % |
-| Industrie / Fabrication | 1 | 11,1 % |
-| Médias / Divertissement | 1 | 11,1 % |
-| Éducation / Université | 1 | 11,1 % |
-| Pétrole / Énergie | 1 | 11,1 % |
-| **Total** | **9** | **100 %** |
+| Région | Ransomware | Data Leak | Total |
+|---|---:|---:|---:|
+| Afrique du Nord | 4 | 1 | **5** |
+| Afrique australe | 3 | 0 | **3** |
+| Afrique de l'Est | 0 | 1 | **1** |
+| Afrique de l'Ouest | 0 | 0 | 0 |
+| Afrique centrale | 0 | 0 | 0 |
+| **Total** | **7** | **2** | **9** |
 
-Les parts affichées sont arrondies à un dixième ; les comptes bruts totalisent 9.
+### 3.4 Répartition sectorielle harmonisée
 
-### Acteurs les plus visibles
-
-| Acteur | Incidents |
+| Secteur | Fiches |
 |---|---:|
-| LockBit3 | 4 |
-| RansomHub | 2 |
-| Hunters | 1 |
+| Finance / Banking | 2 |
+| Government / Administration | 2 |
+| Media / Entertainment | 1 |
+| Healthcare / Medical | 1 |
+| Energy / Utilities | 1 |
+| Education / University | 1 |
+| Manufacturing / Industry | 1 |
+| **Total** | **9** |
+
+### 3.5 Acteurs / groupes
+
+| Acteur / Groupe | Fiches |
+|---|---:|
+| lockbit3 | **4** |
+| ransomhub | **2** |
 | ThreatSec | 1 |
-| Source non attribuée | 1 |
+| hunters | 1 |
+| Unknown | 1 |
+| **Total** | **9** |
 
-## 4. Analyse détaillée par type d’incident
+```mermaid
+flowchart LR
+    LB["lockbit3 - 4"] --> ZA1["Afrique du Sud - GPW"]
+    LB --> EG1["Égypte - El Ezaby Pharmacy"]
+    LB --> NA["Namibie - Agribank"]
+    LB --> ZA2["Afrique du Sud - Nampak"]
+    RH["ransomhub - 2"] --> EG2["Égypte - Go4Kora"]
+    RH --> EG3["Égypte - PGESCo"]
+    TH["ThreatSec"] --> ET["Éthiopie - eTrade/eRIS"]
+    HU["hunters"] --> TN["Tunisie - ATL Leasing"]
+    UNK["Unknown"] --> MA["Maroc - ESGC"]
+```
 
-### 4.1 Ransomware
+## 4. Analyse détaillée
 
-Les sept publications couvrent des environnements publics, financiers, médicaux, industriels, énergétiques et médiatiques. Government Printing Works et PGESCo présentent une importance opérationnelle particulière, mais le corpus public ne documente ni indisponibilité, ni chiffrement, ni volume exfiltré de manière indépendante.
+### 4.1 Ransomware - 7 fiches
 
-### 4.2 Fuite de données
+Les sept fiches Ransomware couvrent les secteurs public, financier, médical, industriel, énergétique et médiatique.
 
-La publication ESGC mentionne une base de 2021 et environ 500 entrées. Un extrait était visible ; les données personnelles et valeurs de mots de passe ne sont pas reproduites. La publication attribuée à ThreatSec affirme pour sa part avoir collecté 43 fichiers depuis eTrade et eRIS. Le seul PDF fourni et examiné comporte cinq pages scannées d’un document administratif et contractuel en amharique, avec cachets, signatures et montants financiers. Cette cohérence documentaire ne confirme ni l’accès aux deux portails, ni l’existence des 42 autres fichiers, ni la méthode d’acquisition.
+Government Printing Works et PGESCo présentent une importance opérationnelle particulière, mais le corpus source ne permet pas d'établir indépendamment une perturbation, un chiffrement ou un volume exfiltré pour ces revendications.
 
-## 5. Impact sectoriel
+### 4.2 Data Leak - 2 fiches
 
-La finance et le secteur gouvernemental comptent chacun deux incidents. La dispersion sectorielle augmente le nombre de scénarios défensifs à couvrir, mais elle ne démontre pas une stratégie de ciblage commune. Les établissements publics, médicaux et énergétiques doivent surtout vérifier la continuité opérationnelle, la maîtrise des accès privilégiés et la protection des documents administratifs.
+La publication ESGC mentionne une base de 2021 et environ 500 entrées. Un échantillon était visible, mais le jeu complet et la compromission alléguée n'ont pas été vérifiés indépendamment.
 
-## 6. Profil des acteurs et évaluation du risque
+La publication ThreatSec concernant l'Éthiopie revendique 43 fichiers provenant d'eTrade et eRIS. Le PDF examiné localement comporte cinq pages scannées d'un document administratif et contractuel en amharique, avec cachets, signatures et montants financiers. Ces éléments soutiennent la plausibilité documentaire, mais pas la provenance directe depuis les portails, l'existence des 42 autres fichiers ni la méthode d'acquisition.
 
-| Pays | Niveau | Justification |
+## 5. Principaux constats et lacunes
+
+- Les Ransomware représentent **7 fiches sur 9 (77,8 %)**.
+- `lockbit3` est associé à **4 fiches sur 9**.
+- Par rapport au février corrigé, le volume Ransomware est stable tandis que les Data Leak baissent de **60,0 %**.
+- Les deux Data Leak comportent des échantillons, sans permettre de confirmer l'ensemble des volumes revendiqués.
+- Aucun élément DFIR public du corpus examiné ne confirme une chaîne d'intrusion ransomware commune.
+
+## 6. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Application |
 |---|---|---|
-| 🇪🇬 Égypte | 🔴 Élevé | Trois revendications ransomware dans des secteurs différents |
-| 🇿🇦 Afrique du Sud | 🔴 Élevé | Deux publications, dont une entité publique sensible |
-| 🇪🇹 Éthiopie | 🟠 Moyen | Publication concernant deux portails fédéraux et PDF de cinq pages examiné ; provenance non confirmée |
-| 🇲🇦 Maroc | 🟠 Moyen | Fuite avec échantillon, volume global non vérifié |
-| 🇳🇦 Namibie / 🇹🇳 Tunisie | 🟡 Faible à moyen | Une revendication ransomware chacune |
+| Préventif | T1486 - Data Encrypted for Impact | Pertinent pour le risque Ransomware ; chiffrement non observé publiquement dans les revendications de mars. |
+| Préventif | T1490 - Inhibit System Recovery | Contrôle de l'intégrité des sauvegardes ; comportement non observé dans le corpus. |
+| Contextuel | T1213 - Data from Information Repositories | Pertinent pour les expositions de bases et référentiels structurés des Data Leak. |
+| Préventif | T1567 - Exfiltration Over Web Service | Contexte de surveillance des sorties ; canaux d'acquisition et d'exfiltration inconnus. |
 
-## 7. Tendances et lacunes de renseignement
+## 7. Recommandations
 
-- **Observé, confiance élevée :** le ransomware représente 7 incidents sur 9.
-- **Observé, confiance élevée :** LockBit3 est associé à quatre incidents sur neuf.
-- **Observé, confiance moyenne :** les deux fuites comportent un échantillon publié ; seul le PDF éthiopien fourni a pu être examiné dans son intégralité visuelle.
-- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour confirmer les modes opératoires des cas ransomware.
-- **Lacune :** les sources ne permettent pas de déterminer si la base ESGC a été acquise en 2021 ou republiée ultérieurement, ni de relier directement le PDF éthiopien à eTrade ou eRIS.
-- **Collecte attendue :** chronologies victimes, preuves d’indisponibilité, indicateurs techniques, origine de la publication ESGC et éléments reliant les fichiers revendiqués aux deux portails éthiopiens.
+- Les organismes financiers et publics doivent renforcer les contrôles d'accès privilégiés et les procédures de crise.
+- Les secteurs santé et énergie doivent segmenter les systèmes critiques et tester les modes dégradés.
+- Les établissements éducatifs doivent réinitialiser les comptes affectés si l'exposition est confirmée et surveiller la réutilisation d'identifiants.
+- Toutes les organisations doivent tester la restauration depuis des sauvegardes isolées.
+- Conserver séparément les dates de publication source et les dates d'affectation AFRINTEL.
 
-## 8. Cartographie MITRE ATT&CK contextuelle
+## 8. Chronologie
 
-| Statut | Technique | Utilisation |
-|---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Détection adaptée au risque ransomware ; chiffrement non observé publiquement |
-| Préventif | T1490 - Inhibit System Recovery | Contrôle de l’intégrité des sauvegardes ; comportement non observé |
-| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des sorties de données ; canaux d’acquisition et d’exfiltration inconnus pour les deux fuites |
+```mermaid
+timeline
+    title AFRINTEL - Mars 2024
+    01 Mars : ThreatSec - eTrade/eRIS Éthiopie
+    09 Mars : ransomhub - Go4Kora
+    11 Mars : lockbit3 - Government Printing Works
+    15 Mars : hunters - ATL Leasing
+            : lockbit3 - El Ezaby Pharmacy
+    16 Mars : lockbit3 - Agribank Namibia
+    22 Mars : ransomhub - PGESCo
+    26 Mars : Unknown - ESGC
+    27 Mars : lockbit3 - Nampak
+```
 
-## 9. Recommandations
+## 9. Conclusion
 
-- **Finance et secteur public :** renforcer les contrôles d’accès privilégiés et les procédures de crise.
-- **Santé et énergie :** segmenter les systèmes critiques et tester les modes dégradés.
-- **Éducation :** réinitialiser les comptes concernés si l’exposition est confirmée et surveiller les réutilisations d’identifiants.
-- **Toutes les organisations :** tester la restauration depuis des sauvegardes isolées.
+Mars 2024 contient **9 fiches incident documentées dans 6 pays africains**, réparties entre **7 Ransomware et 2 Data Leak**.
 
-## 10. Recommandations SOC et tactiques
+Par rapport au février corrigé, le volume total baisse de **25,0 %**. Les Ransomware restent stables à 7 fiches, tandis que les Data Leak passent de 5 à 2.
 
-| Qualification | Action |
-|---|---|
-| **Observé** | Suivre les domaines et organisations publiés ; aucune TTP d’intrusion n’est confirmée par le corpus. |
-| **Hypothèse** | Rechercher authentifications privilégiées anormales, exports de bases et préparation d’archives avant les dates de publication. |
-| **Préventif** | Alerter sur le chiffrement massif, la suppression de copies de sauvegarde et les transferts sortants inhabituels. |
-
-## 11. Recommandations stratégiques
-
-| Priorité | Qualification | Mesure |
-|---:|---|---|
-| 1 | **Observé** | Prioriser les environnements égyptiens et sud-africains, ainsi que les portails fédéraux éthiopiens représentés dans le corpus. |
-| 2 | **Hypothèse** | Examiner l’existence de comptes ou services exposés communs sans attribuer un accès initial non documenté. |
-| 3 | **Préventif** | Réduire la surface externe, imposer MFA résistante au phishing et isoler les sauvegardes. |
-
-## 12. Conclusion
-
-Mars reste dominé par les publications ransomware, avec une concentration géographique nette mais peu de preuves techniques publiques. Les deux fuites apportent davantage de matière documentaire : un extrait ESGC et un PDF éthiopien examiné sur cinq pages. Elles ne résolvent toutefois ni la chronologie complète, ni la provenance technique, ni les volumes globaux revendiqués. La posture recommandée reste fondée sur la vérification interne, non sur l’attribution présumée de TTP.
-
-**AFRINTEL - TLP:CLEAR**
-[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR

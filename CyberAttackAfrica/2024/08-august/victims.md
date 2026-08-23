@@ -1,17 +1,27 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Attempted%20Attack-red)
 
-# Cyber Attacks in Africa - August 2024: List of 15 Victims
+# Cyber Attacks in Africa - August 2024: 16 Documented Records
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## 📅 August 2024
 
+## Monthly snapshot
+
+August 2024 contains **16 documented cyber records across 9 African countries**.
+
+- **15 records fall inside the six-type AFRINTEL incident taxonomy:** 14 Ransomware + 1 Data Leak.
+- **1 additional victim-confirmed attempted attack is tracked separately:** GTBank, Nigeria.
+- No Access Sale, DDoS, Defacement or Operational Fraud record is present in the core August taxonomy.
+
+The GTBank record is deliberately not forced into an unsupported category.
+
 ### August 1, 2024
 
 #### 🇸🇨 Seychelles - Remitano
-- **Ransomware group:** meow
-- **Sector:** Finance
+- **Ransomware Group:** meow
+- **Sector:** Finance / Banking
 - **Website:** [remitano.com](https://www.remitano.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -24,8 +34,8 @@
 - **Description:**
   Remitano is a major commercial enterprise operating in the finance sector, contributing significantly to the regional economic landscape in Seychelles.
 
-- **CTI analysis:**
-  AFRINTEL recorded Remitano (Seychelles) as a claimed ransomware victim published by meow. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Finance sector, a compromise of this type would typically expose customer account, payment or financial information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Remitano (Seychelles) as a claimed ransomware victim published by meow. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this meow listing, and confirm whether offline or immutable backups are available.
@@ -36,8 +46,8 @@
 ### August 11, 2024
 
 #### 🇿🇦 South Africa - Acdcexpress
-- **Ransomware group:** lockbit3
-- **Sector:** Retail (distribution)
+- **Ransomware Group:** lockbit3
+- **Sector:** Retail / E-commerce
 - **Website:** [acdcexpress.com](https://www.acdcexpress.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -50,8 +60,8 @@
 - **Description:**
   Acdcexpress is a major commercial enterprise operating in the retail (distribution) sector, contributing significantly to the regional economic landscape in South Africa.
 
-- **CTI analysis:**
-  AFRINTEL recorded Acdcexpress (South Africa) as a claimed ransomware victim published by lockbit3. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Retail (distribution) sector, a compromise of this type would typically expose customer and transaction information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Acdcexpress (South Africa) as a claimed ransomware victim published by lockbit3. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this lockbit3 listing, and confirm whether offline or immutable backups are available.
@@ -62,7 +72,7 @@
 ### August 13, 2024
 
 #### 🇿🇼 Zimbabwe - Netone
-- **Ransomware group:** hunters
+- **Ransomware Group:** hunters
 - **Sector:** Telecommunications
 - **Website:** [netone.co.zw](https://www.netone.co.zw)
 - **Status:** Claim - Unverified
@@ -76,8 +86,8 @@
 - **Description:**
   Netone is a leading mobile network operator providing telecommunications infrastructure, voice, broadband data, and digital services.
 
-- **CTI analysis:**
-  AFRINTEL recorded Netone (Zimbabwe) as a claimed ransomware victim published by hunters. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Telecommunications sector, a compromise of this type would typically expose subscriber, billing or network-configuration information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Netone (Zimbabwe) as a claimed ransomware victim published by hunters. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this hunters listing, and confirm whether offline or immutable backups are available.
@@ -88,8 +98,8 @@
 ### August 13, 2024
 
 #### 🇿🇦 South Africa - Lenmed
-- **Ransomware group:** darkvault
-- **Sector:** Healthcare services
+- **Ransomware Group:** darkvault
+- **Sector:** Healthcare / Medical
 - **Website:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -105,8 +115,8 @@
 - **Description:**
   Lenmed is a major commercial enterprise operating in the healthcare services sector, contributing significantly to the regional economic landscape in South Africa.
 
-- **CTI analysis:**
-  AFRINTEL recorded Lenmed (South Africa) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Healthcare services sector, a compromise of this type would typically expose patient, staff or health-related administrative information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Lenmed (South Africa) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this darkvault listing, and confirm whether offline or immutable backups are available.
@@ -117,8 +127,8 @@
 ### August 13, 2024
 
 #### 🇿🇦 South Africa - Gpf.za
-- **Ransomware group:** darkvault
-- **Sector:** Finance
+- **Ransomware Group:** darkvault
+- **Sector:** Finance / Banking
 - **Website:** [gpf.org.za](https://www.gpf.org.za)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -131,8 +141,8 @@
 - **Description:**
   Gpf.za is a major commercial enterprise operating in the finance sector, contributing significantly to the regional economic landscape in South Africa.
 
-- **CTI analysis:**
-  AFRINTEL recorded Gpf.za (South Africa) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Finance sector, a compromise of this type would typically expose customer account, payment or financial information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Gpf.za (South Africa) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this darkvault listing, and confirm whether offline or immutable backups are available.
@@ -140,10 +150,31 @@
 
 ----------------------------
 
+### August 14, 2024
+
+#### 🇳🇬 Nigeria - Guaranty Trust Bank (GTBank)
+- **Incident date:** 14 August 2024
+- **Initial publication date:** 15 August 2024
+- **AFRINTEL correction date:** 23 August 2026
+- **Actor / Group:** Unknown
+- **Sector:** Finance / Banking
+- **Website:** [gtbank.com](https://www.gtbank.com/)
+- **Status:** Victim Confirmed - Attempted Attack
+- **Incident type:** Attempted Attack (taxonomy exception)
+- **Confidence level:** High
+- **Impact level:** Level 2
+- **Taxonomy note:** This record is tracked separately from AFRINTEL's six core incident types. The available evidence does not support classifying the event as Ransomware, Data Leak, Access Sale, DDoS, Defacement or Operational Fraud.
+- **Evidence note:** GTBank confirmed an isolated attempt to compromise its website domain. The bank stated that the attempt was unsuccessful, the website was not cloned and no customer-data compromise occurred.
+- **Victim Description:** GTBank is a Nigerian commercial bank providing retail, corporate and digital banking services.
+- **Analysis:** GTBank confirmed an isolated attempt to compromise its website domain on 14 August 2024. The event coincided with temporary website disruption and public speculation that the site had been cloned. According to the bank, the attempt failed, the website was not cloned and customer information was not stored on the website; no customer-data compromise was therefore confirmed. AFRINTEL records the event because the attempted domain compromise and availability impact were acknowledged by the victim, but does not convert it into a successful breach or assign an unsupported six-type category. The confirmed impact is limited to website/domain availability and incident response; the technical access method and actor remain unknown.
+- **Public source:** [Punch - GTBank statement](https://punchng.com/gtb-confirms-attempt-to-hack-banks-website/)
+
+----------------------------
+
 ### August 17, 2024
 
 #### 🇿🇦 South Africa - Wwwconfig
-- **Ransomware group:** ransomhub
+- **Ransomware Group:** ransomhub
 - **Sector:** Telecommunications
 - **Website:** [netconfig.co.za](https://www.netconfig.co.za)
 - **Status:** Claim - Unverified
@@ -157,8 +188,8 @@
 - **Description:**
   Wwwconfig is a leading mobile network operator providing telecommunications infrastructure, voice, broadband data, and digital services.
 
-- **CTI analysis:**
-  AFRINTEL recorded Wwwconfig (South Africa) as a claimed ransomware victim published by ransomhub. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Telecommunications sector, a compromise of this type would typically expose subscriber, billing or network-configuration information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Wwwconfig (South Africa) as a claimed ransomware victim published by ransomhub. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this ransomhub listing, and confirm whether offline or immutable backups are available.
@@ -169,14 +200,15 @@
 ### August 19, 2024
 
 #### 🇹🇳 Tunisia - Eventizer
-- **Actor / Group:** Bambi, post published on a cybercriminal forum
-- **Sector:** Events / Digital platform / Business services
+- **Actor / Group:** Bambi
+- **Source context:** Publication on a cybercriminal forum
+- **Sector:** Professional / Business Services
 - **Website:** [eventizer.io](https://www.eventizer.io)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
 - **Confidence level:** Medium
 - **Impact level:** Level 3
-- **Victim description:** Eventizer is a Tunisian event-management agency and digital platform that centralises event registration, payments, access control, accommodation and dashboards.
+- **Victim Description:** Eventizer is a Tunisian event-management agency and digital platform that centralises event registration, payments, access control, accommodation and dashboards.
 - **Analysis:** The publication attributed to Bambi advertises approximately 60,000 records associated with Eventizer and presents a sample structured with user identifiers, names, email addresses, telephone numbers, countries and login-role information. The post title claims coverage involving Tunisia and Nigeria, while the visible sample contains records tagged with several countries. The sample demonstrates exposure of contact and account-context data, but the total volume, completeness, provenance and direct technical connection to Eventizer have not been independently verified. The exposed fields could support targeted phishing, impersonation, account-enumeration and social-engineering campaigns. Raw personal records and contact details are not reproduced.
 
 ----------------------------
@@ -184,8 +216,8 @@
 ### August 21, 2024
 
 #### 🇨🇮 Ivory Coast - Codival
-- **Ransomware group:** spacebears
-- **Sector:** Retail (distribution)
+- **Ransomware Group:** spacebears
+- **Sector:** Retail / E-commerce
 - **Website:** [codival.ci](https://www.codival.ci)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -198,8 +230,8 @@
 - **Description:**
   Codival is a major commercial enterprise operating in the retail (distribution) sector, contributing significantly to the regional economic landscape in Ivory Coast.
 
-- **CTI analysis:**
-  AFRINTEL recorded Codival (Ivory Coast) as a claimed ransomware victim published by spacebears. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Retail (distribution) sector, a compromise of this type would typically expose customer and transaction information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Codival (Ivory Coast) as a claimed ransomware victim published by spacebears. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this spacebears listing, and confirm whether offline or immutable backups are available.
@@ -210,9 +242,9 @@
 ### August 22, 2024
 
 #### 🇿🇦 South Africa - Don’t waste group
-- **Ransomware group:** incransom
-- **Sector:** Services
-- **Website:** [don’t waste group.com](https://www.don’t waste group.com)
+- **Ransomware Group:** incransom
+- **Sector:** Professional / Business Services
+- **Website:** Not validated from the supplied source
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
 - **Impact level:** Level 2
@@ -224,8 +256,8 @@
 - **Description:**
   Don’t waste group is a major commercial enterprise operating in the services sector, contributing significantly to the regional economic landscape in South Africa.
 
-- **CTI analysis:**
-  AFRINTEL recorded Don’t waste group (South Africa) as a claimed ransomware victim published by incransom. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Services sector, a compromise of this type would typically expose employee, customer or operational information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Don’t waste group (South Africa) as a claimed ransomware victim published by incransom. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this incransom listing, and confirm whether offline or immutable backups are available.
@@ -236,8 +268,8 @@
 ### August 22, 2024
 
 #### 🇰🇪 Kenya - Instadriver.co
-- **Ransomware group:** killsec
-- **Sector:** Retail (distribution)
+- **Ransomware Group:** killsec
+- **Sector:** Retail / E-commerce
 - **Website:** [instadriver.co](https://www.instadriver.co)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -250,8 +282,8 @@
 - **Description:**
   Instadriver.co is a major commercial enterprise operating in the retail (distribution) sector, contributing significantly to the regional economic landscape in Kenya.
 
-- **CTI analysis:**
-  AFRINTEL recorded Instadriver.co (Kenya) as a claimed ransomware victim published by killsec. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Retail (distribution) sector, a compromise of this type would typically expose customer and transaction information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Instadriver.co (Kenya) as a claimed ransomware victim published by killsec. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this killsec listing, and confirm whether offline or immutable backups are available.
@@ -262,8 +294,8 @@
 ### August 24, 2024
 
 #### 🇸🇨 Seychelles - Ingotbrokers
-- **Ransomware group:** darkvault
-- **Sector:** Financial organizations
+- **Ransomware Group:** darkvault
+- **Sector:** Finance / Banking
 - **Website:** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -276,8 +308,8 @@
 - **Description:**
   Ingotbrokers is a major commercial enterprise operating in the financial organizations sector, contributing significantly to the regional economic landscape in Seychelles.
 
-- **CTI analysis:**
-  AFRINTEL recorded Ingotbrokers (Seychelles) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Financial organizations sector, a compromise of this type would typically expose customer account, payment or financial information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Ingotbrokers (Seychelles) as a claimed ransomware victim published by darkvault. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this darkvault listing, and confirm whether offline or immutable backups are available.
@@ -288,8 +320,8 @@
 ### August 26, 2024
 
 #### 🇿🇦 South Africa - Onedayonly
-- **Ransomware group:** killsec
-- **Sector:** Shops
+- **Ransomware Group:** killsec
+- **Sector:** Retail / E-commerce
 - **Website:** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -302,8 +334,8 @@
 - **Description:**
   Onedayonly is a major commercial enterprise operating in the shops sector, contributing significantly to the regional economic landscape in South Africa.
 
-- **CTI analysis:**
-  AFRINTEL recorded Onedayonly (South Africa) as a claimed ransomware victim published by killsec. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Shops sector, a compromise of this type would typically expose customer and transaction information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Onedayonly (South Africa) as a claimed ransomware victim published by killsec. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this killsec listing, and confirm whether offline or immutable backups are available.
@@ -314,8 +346,8 @@
 ### August 28, 2024
 
 #### 🇩🇯 Djibouti - Dpfza.gov.dj
-- **Ransomware group:** ransomhub
-- **Sector:** Government and administrations
+- **Ransomware Group:** ransomhub
+- **Sector:** Government / Administration
 - **Website:** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -328,8 +360,8 @@
 - **Description:**
   Dpfza.gov.dj is a vital state-owned public institution or regulatory authority executing administrative services and citizen management operations.
 
-- **CTI analysis:**
-  AFRINTEL recorded Dpfza.gov.dj (Djibouti) as a claimed ransomware victim published by ransomhub. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Government and administrations sector, a compromise of this type would typically expose citizen records or internal administrative information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Dpfza.gov.dj (Djibouti) as a claimed ransomware victim published by ransomhub. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this ransomhub listing, and confirm whether offline or immutable backups are available.
@@ -340,9 +372,9 @@
 ### August 28, 2024
 
 #### 🇿🇼 Zimbabwe - Success microfinance bank
-- **Ransomware group:** meow
-- **Sector:** Banking institutions
-- **Website:** [success microfinance bank.com](https://www.success microfinance bank.com)
+- **Ransomware Group:** meow
+- **Sector:** Finance / Banking
+- **Website:** Not validated from the supplied source
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
 - **Impact level:** Level 3
@@ -354,8 +386,8 @@
 - **Description:**
   Success microfinance bank is a major commercial enterprise operating in the banking institutions sector, contributing significantly to the regional economic landscape in Zimbabwe.
 
-- **CTI analysis:**
-  AFRINTEL recorded Success microfinance bank (Zimbabwe) as a claimed ransomware victim published by meow. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Banking institutions sector, a compromise of this type would typically expose customer account, payment or financial information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Success microfinance bank (Zimbabwe) as a claimed ransomware victim published by meow. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this meow listing, and confirm whether offline or immutable backups are available.
@@ -366,8 +398,8 @@
 ### August 28, 2024
 
 #### 🇬🇭 Ghana - Ghanare
-- **Ransomware group:** BrainCipher
-- **Sector:** Technologies
+- **Ransomware Group:** BrainCipher
+- **Sector:** Technology / IT
 - **Website:** [ghanare.com](https://www.ghanare.com)
 - **Status:** Claim - Unverified
 - **Confidence level:** Low
@@ -380,8 +412,8 @@
 - **Description:**
   Ghanare is a major commercial enterprise operating in the technologies sector, contributing significantly to the regional economic landscape in Ghana.
 
-- **CTI analysis:**
-  AFRINTEL recorded Ghanare (Ghana) as a claimed ransomware victim published by BrainCipher. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. Given the organization's activity in the Technologies sector, a compromise of this type would typically expose customer, partner or internal technical information, with associated risks of phishing, fraud or business disruption. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
+- **Analysis:**
+  AFRINTEL recorded Ghanare (Ghana) as a claimed ransomware victim published by BrainCipher. No leaked file, database extract or screenshot was accessible for review, so the scope, volume and sensitivity of any exposed data cannot be assessed. AFRINTEL does not confirm intrusion, data exfiltration or the existence of a complete dataset based on this listing alone.
 
 - **Recommendations:**
   1. Review external attack surface, remote-access services and backup integrity following this BrainCipher listing, and confirm whether offline or immutable backups are available.

@@ -332,14 +332,36 @@ This list records ransomware claims/publications, data leaks/system intrusions a
 
 ### 24 March 2026
 #### 🇸🇳 Senegal - United Bank for Africa (UBA Senegal)
+
+- **Incident date:** 30-31 January 2026
+- **Initial publication date:** 24 March 2026
+- **AFRINTEL detection date:** 24 March 2026
 - **Actor / Group:** Unattributed
 - **Sector:** Finance / Banking
 - **Website:** [ubasenegal.com](https://www.ubasenegal.com)
-- **Date of attack:** 30-31 January 2026 (disclosed on 24 March 2026)
-- **Status:** Under Investigation
-- **Reference:** https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions
-- **Taxonomy note:** This incident does not fit AFRINTEL's four incident types (Ransomware, Data Leak, Access Sale, Defacement). It describes a confirmed operational fraud via compromised privileged access to card-authorization infrastructure, not a leak-site claim, a data publication or an advertised access sale. No Incident type is assigned; this entry is excluded from the structured Ransomware/Data Leak/Access Sale/Defacement counters.
-- **Victim description:** According to ngCERT, a cyber-enabled ATM cash-out operation affecting UBA Senegal involved 3,421 ATM transactions. Losses were previously reported at 1.143 billion FCFA; the ngCERT advisory describes them as exceeding USD 2 million. The advisory assesses that privileged access to card-authorization infrastructure likely enabled manipulation of transaction controls and coordinated withdrawals. The initial-access vector, exact technical sequence and any insider involvement remain unknown. Phishing, supply-chain weaknesses, insider access and ATM malware are presented by ngCERT as possible scenarios for this attack class, not as confirmed findings for UBA Senegal.
+- **AFRINTEL status:** Authority Confirmed - Technical Investigation Ongoing
+- **Incident type:** Operational Fraud / Cyber-enabled ATM Cash-Out
+- **Confidence level:** High
+- **Impact level:** Level 4
+
+- **Description:**
+
+  UBA Senegal was affected by a coordinated cyber-enabled ATM cash-out operation conducted between 30 and 31 January 2026.
+
+- **Analysis:**
+
+  According to ngCERT advisory ngCERT-2026-060005, the operation involved 3,421 ATM withdrawal transactions and caused losses exceeding USD 2 million. Earlier reporting placed the losses at approximately 1.143 billion FCFA.  ngCERT assesses that privileged access to card-authorization infrastructure likely enabled the attackers to manipulate transaction controls and coordinate fraudulent withdrawals.
+
+  The occurrence and financial impact of the fraudulent operation are therefore corroborated by a national CERT source. However, the initial access vector, the exact technical sequence, the identity of the threat actor and any possible insider involvement remain unconfirmed.
+
+  Phishing, supply-chain compromise, insider access and ATM malware are possible scenarios discussed by ngCERT for this attack class and must not be presented as confirmed techniques used against UBA Senegal.
+
+- **AFRINTEL correction note:**
+  The incident occurred on 30-31 January 2026 but was identified/documented by AFRINTEL on 24 March 2026. It remains part of the March corpus according to the AFRINTEL detection-date methodology.
+  The previous status "Under Investigation" should be refined because the operational fraud itself is corroborated. What remains under investigation is the technical intrusion path and threat-actor attribution.
+
+- **Taxonomy note:**
+  Operational Fraud is retained as a non-standard AFRINTEL incident category. The incident remains excluded from Ransomware, Data Leak, Access Sale and  Defacement counters.
 
 ### 26 March 2026
 #### 🇿🇦 South Africa - ETFSA

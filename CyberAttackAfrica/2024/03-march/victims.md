@@ -1,6 +1,6 @@
 [! [AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
 # Cyber Attacks in Africa - March 2024: List of 9 Victims
@@ -9,11 +9,15 @@
 
 ## March 2024
 
+## Monthly snapshot
+
+March 2024 contains **9 documented incident records**: **7 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **6 African countries**.
+
 ### March 1, 2024
 
 #### 🇪🇹 Ethiopia - Federal eTrade and eRIS portals
 - **Actor / Group:** ThreatSec
-- **Sector:** Government / Digital public services
+- **Sector:** Government / Administration
 - **Website:** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
 - **Status:** Claim - Data Sample Published
 - **Confidence level:** Medium
@@ -31,10 +35,11 @@
 ### March 9, 2024
 
 #### 🇪🇬 Egypt - Go4Kora
-- **Ransomware group:** ransomhub
-- **Sector:** Sports Media & Entertainment
+- **Ransomware Group:** ransomhub
+- **Sector:** Media / Entertainment
 - **Website:** [go4kora.tv](https://go4kora.tv)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 2
 - **Victim Description:** Go4Kora is a popular sports news and live streaming portal extensively accessed in Egypt and the MENA region for football broadcasting.
@@ -44,10 +49,11 @@
 ### March 11, 2024
 
 #### 🇿🇦 South Africa - Government Printing Works (GPW)
-- **Ransomware group:** lockbit3
-- **Sector:** Government & State Security Printing
+- **Ransomware Group:** lockbit3
+- **Sector:** Government / Administration
 - **Website:** [gpw.gov.za](https://www.gpw.gov.za)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 3
 - **Victim Description:** The Government Printing Works of South Africa is a state-owned entity under the Department of Home Affairs responsible for secure identity documentation, passports, and official gazettes.
@@ -57,10 +63,11 @@
 ### March 15, 2024
 
 #### 🇹🇳 Tunisia - ATL Leasing
-- **Ransomware group:** hunters
-- **Sector:** Financial Services & Asset Leasing
+- **Ransomware Group:** hunters
+- **Sector:** Finance / Banking
 - **Website:** [atlleasing.com.tn](https://www.atlleasing.com.tn)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 3
 - **Victim Description:** Arab Tunisian Leasing (ATL) is a prominent financial institution listed on the Tunis Stock Exchange, specializing in professional equipment and real estate financing.
@@ -70,10 +77,11 @@
 ### March 15, 2024
 
 #### 🇪🇬 Egypt - El Ezaby Pharmacy
-- **Ransomware group:** lockbit3
-- **Sector:** Healthcare & Pharmaceutical Retail
+- **Ransomware Group:** lockbit3
+- **Sector:** Healthcare / Medical
 - **Website:** [elezabypharmacy.com](https://www.elezabypharmacy.com)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 3
 - **Victim Description:** El Ezaby Pharmacy is one of Egypt's largest pharmaceutical retail networks, operating numerous megastores and a robust nation-wide delivery ecosystem.
@@ -83,10 +91,11 @@
 ### March 16, 2024
 
 #### 🇳🇦 Namibia - Agribank Namibia
-- **Ransomware group:** lockbit3
-- **Sector:** Banking & Agricultural Finance
+- **Ransomware Group:** lockbit3
+- **Sector:** Finance / Banking
 - **Website:** [agribank.com.na](https://www.agribank.com.na)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 3
 - **Victim Description:** The Agricultural Bank of Namibia is a state-owned banking institution specialized in financing agricultural expansion, aquaculture, and rural land ownership.
@@ -96,10 +105,11 @@
 ### March 22, 2024
 
 #### 🇪🇬 Egypt - PGESCo
-- **Ransomware group:** ransomhub
-- **Sector:** Energy & Infrastructure Engineering
+- **Ransomware Group:** ransomhub
+- **Sector:** Energy / Utilities
 - **Website:** [pgesco.com](https://www.pgesco.com)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 3
 - **Victim Description:** Power Generation Engineering and Services Company (PGESCo) is a major Egyptian engineering firm providing consultancy and project management for large-scale power plants and industrial oil facilities.
@@ -109,8 +119,8 @@
 ### March 26, 2024
 
 #### 🇲🇦 Morocco - Higher School of Commerce and Management (ESGC.MA)
-- **Actor / Group:** Unattributed; publication by UnknownMember
-- **Sector:** Education / Higher Education
+- **Actor / Group:** Unknown
+- **Sector:** Education / University
 - **Website:** [esgc.ma](https://esgc.ma)
 - **Status:** Claim - Data Sample Published
 - **Confidence level:** Medium
@@ -125,10 +135,11 @@
 ### March 27, 2024
 
 #### 🇿🇦 South Africa - Nampak
-- **Ransomware group:** lockbit3
-- **Sector:** Industrial Packaging Manufacturing
+- **Ransomware Group:** lockbit3
+- **Sector:** Manufacturing / Industry
 - **Website:** [nampak.com](https://www.nampak.com)
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Low
 - **Impact level:** Level 2
 - **Victim Description:** Nampak is Africa's largest packaging manufacturer, based in South Africa, supplying metallic, plastic, paper, and glass packaging solutions across sub-Saharan networks.

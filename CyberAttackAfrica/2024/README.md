@@ -1,267 +1,370 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-2024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
-# AFRINTEL Annual CTI Report - 2024
+# AFRINTEL Annual CTI Report - 2024 - Corrected Edition
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL documented **118 incidents across 27 African countries** in 2024: **86 ransomware claims (72.9%)**, **29 data leaks (24.6%)**, and **3 access sales (2.5%)**. No defacement is present in the annual dataset.
+The corrected AFRINTEL 2024 corpus contains **128 documented cyber records across 28 African countries**.
 
-South Africa accounts for **30 incidents**, 29 of which are ransomware. It stands well ahead of Egypt with 14 incidents, followed by Algeria and Nigeria with seven each. This concentration measures visibility in the sources monitored by AFRINTEL; it is not an exhaustive ranking of cybercrime across the continent.
+Of these, **127 fall inside the six-type AFRINTEL core taxonomy**: **91 Ransomware**, **31 Data Leak**, **3 Access Sale**, **1 Defacement** and **1 Operational Fraud**. A further record, **GTBank in Nigeria**, is retained separately as a victim-confirmed **Attempted Attack** because the evidence does not support assigning it to a core incident type.
 
-The second half of the year totals **70 incidents**, compared with 47 in the first half. August and November each reach 15 publications. The increase is real within the dataset, but its causes cannot be reduced to greater attack intensity: group activity, source availability, reposts, and collection delays also influence observed volume.
+The annual correction increases the README total from 118 to 128 records and incorporates all 10 validated retrospective cases. South Africa remains the most represented country with **35 records**, followed by Egypt with 14 and Nigeria with 9. The corrected annual corpus now covers **28 countries**, with Malawi added through the retrospective passport-system incident.
 
-The most useful defensive finding is the difference among incident categories. Ransomware is especially concentrated in Southern Africa, while leaks and access sales are distributed more broadly across North, West, and East Africa. The priorities are therefore not interchangeable: continuity and recovery for ransomware; identity, export control, and secondary fraud for exposed data and access.
+The annual source files supplied for reconciliation were internally inconsistent: the uploaded README stated 118 incidents, while the uploaded annual victim file stated 115 records. This corrected edition therefore rebuilds the annual statistics and annual victim corpus directly from the twelve harmonized monthly source files rather than patching either stale annual aggregate.
 
-See [victims.md](./victims.md).
+The year remains ransomware-dominant, but evidential maturity varies sharply. **85 of 128 records remain `Claim - Unverified`**, while other records range from published samples to direct victim or government confirmation. Raw publication counts therefore must not be interpreted as 128 equally confirmed compromises.
 
-## 2. Methodology
+👉🏾 [View the corrected annual victim corpus](./victims.md)
 
-This report aggregates the twelve monthly `victims.md` files, synchronised with their French counterparts. Each incident is a publication tracked and classified by AFRINTEL. A claim, a repost, a published sample, and an official confirmation do not carry the same evidential weight; the assessment preserves that distinction.
+## 2. Annual correction impact
 
-Sources include ransomware leak sites, criminal forums, messaging channels, and public OSINT. Personal data is neither reproduced nor republished. Volumes announced by actors are treated as facts only when they can be checked; otherwise, they remain attributed claims.
+| Indicator | Uploaded annual README | Corrected 2024 | Difference |
+|---|---:|---:|---:|
+| Documented cyber records | 118 | **128** | **+10 (+8.5%)** |
+| Countries | 27 | **28** | **+1 (+3.7%)** |
+| Ransomware | 86 | **91** | **+5 (+5.8%)** |
+| Data Leak | 29 | **31** | **+2 (+6.9%)** |
+| Access Sale | 3 | **3** | Stable |
+| Defacement | 0 | **1** | New |
+| Operational Fraud | 0 | **1** | New |
+| Attempted Attack - tracked separately | 0 | **1** | New |
 
-The dataset has a visibility bias: organisations that do not communicate, unclaimed incidents, and compromises handled outside public view may escape collection. No publication therefore does not mean no incident.
+The ten additions are ITAC, Eneo Cameroon, GPAA/GEPF, CIPC, Malawi Passport Issuance System, DPWI, GTBank, SABS, MSEA and NBS. Their contribution is **5 Ransomware + 2 Data Leak + 1 Defacement + 1 Operational Fraud + 1 Attempted Attack tracked separately**.
 
-## 3. Global overview
+## 3. Methodology
 
-| Indicator | Value |
+- **Source of truth:** twelve harmonized monthly `victims.md` / `victims_FR.md` pairs.
+- **Counting:** one monthly victim card equals one documented cyber record.
+- **Core taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Taxonomy exception:** GTBank is kept outside the six-type taxonomy because the bank confirmed an unsuccessful website-domain compromise attempt, not a successful breach matching a core category.
+- **Evidence hierarchy:** claim, sample publication, full publication, corroboration, victim confirmation and government confirmation remain distinct.
+- **Reposts:** historical or recirculated data is not silently converted into a newly dated intrusion.
+- **Country and sector statistics:** recomputed from the corrected monthly cards.
+- **Regional scheme:** the six-region convention used in the 2024 annual report is retained, including a separate Indian Ocean category.
+- **Limits:** the corpus measures AFRINTEL visibility, not the full incidence of cyber compromise across Africa.
+
+## 4. Global overview
+
+| Indicator | Corrected value |
 |---|---:|
-| Incidents / Countries | **118 / 27** |
-| Ransomware | **86 (74.1%)** |
-| Data leaks | **29 (24.6%)** |
-| Access sales | **3 (2.6%)** |
-| Defacement | **0** |
-
-### Monthly activity
-
-| Month | Total | Ransomware | Leak | Access sale |
-|---|---:|---:|---:|---:|
-| January | 12 | 3 | 8 | 1 |
-| February | 9 | 5 | 4 | 0 |
-| March | 9 | 7 | 2 | 0 |
-| April | 7 | 5 | 2 | 0 |
-| May | 8 | 8 | 0 | 0 |
-| June | 3 | 3 | 0 | 0 |
-| July | 11 | 7 | 4 | 0 |
-| August | 15 | 14 | 1 | 0 |
-| September | 5 | 4 | 1 | 0 |
-| October | 12 | 8 | 4 | 0 |
-| November | 15 | 11 | 2 | 2 |
-| December | 12 | 11 | 1 | 0 |
-| **Total** | **118** | **86** | **29** | **3** |
-
-```mermaid
-xychart
-    title "Monthly incidents - 2024"
-    x-axis ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-    y-axis "Incidents" 0 --> 16
-    bar [12,9,8,6,8,3,11,15,5,12,15,12]
-```
+| Documented cyber records | **128** |
+| Core six-type incidents | **127** |
+| Countries | **28** |
+| Ransomware | **91 (71.1% of all records)** |
+| Data Leak | **31 (24.2%)** |
+| Access Sale | **3 (2.3%)** |
+| Defacement | **1 (0.8%)** |
+| Operational Fraud | **1 (0.8%)** |
+| Attempted Attack - tracked separately | **1 (0.8%)** |
+| Peak months | **August and November - 16 each** |
+| Lowest month | **June - 3** |
 
 ```mermaid
 pie showData
-    title Incident type distribution - 2024
-    "Ransomware" : 86
-    "Data leaks" : 29
-    "Access sales" : 3
+    title Documented cyber records - AFRINTEL 2024 corrected
+    "Ransomware" : 91
+    "Data Leak" : 31
+    "Access Sale" : 3
+    "Defacement" : 1
+    "Operational Fraud" : 1
+    "Attempted Attack" : 1
 ```
 
-### Country ranking
+### 4.1 Corrected monthly activity
 
-| Country | Total | Ransomware | Leak | Access sale | Bar |
-|---|---:|---:|---:|---:|---|
-| 🇿🇦 South Africa | 30 | 29 | 1 | 0 | ██████████████████████████████ |
-| 🇪🇬 Egypt | 14 | 11 | 3 | 0 | █████████████ |
-| 🇩🇿 Algeria | 7 | 2 | 5 | 0 | ███████ |
-| 🇳🇬 Nigeria | 7 | 4 | 3 | 0 | ███████ |
-| 🇹🇳 Tunisia | 6 | 5 | 1 | 0 | ██████ |
-| 🇲🇦 Morocco | 5 | 1 | 4 | 0 | █████ |
-| 🇧🇫 Burkina Faso | 4 | 0 | 2 | 2 | ████ |
-| 🇨🇮 Côte d’Ivoire | 4 | 3 | 1 | 0 | ████ |
-| 🇬🇭 Ghana | 4 | 2 | 2 | 0 | ████ |
-| 🇰🇪 Kenya | 4 | 3 | 1 | 0 | ████ |
-| 🇳🇦 Namibia | 4 | 4 | 0 | 0 | ████ |
-| 🇨🇲 Cameroon | 3 | 2 | 0 | 1 | ███ |
-| 🇪🇹 Ethiopia | 4 | 1 | 3 | 0 | ████ |
-| 🇸🇨 Seychelles | 3 | 3 | 0 | 0 | ███ |
-| 🇿🇼 Zimbabwe | 3 | 3 | 0 | 0 | ███ |
-| 🇱🇾 Libya | 2 | 2 | 0 | 0 | ██ |
-| 🇸🇳 Senegal | 2 | 2 | 0 | 0 | ██ |
-| 🇸🇩 Sudan | 2 | 1 | 1 | 0 | ██ |
-| 🇹🇿 Tanzania | 2 | 2 | 0 | 0 | ██ |
-| 🇧🇼 Botswana | 1 | 1 | 0 | 0 | █ |
-| 🇨🇬 Congo | 1 | 1 | 0 | 0 | █ |
-| 🇩🇯 Djibouti | 1 | 1 | 0 | 0 | █ |
-| 🇲🇬 Madagascar | 1 | 0 | 1 | 0 | █ |
-| 🇲🇷 Mauritania | 1 | 1 | 0 | 0 | █ |
-| 🇲🇺 Mauritius | 1 | 1 | 0 | 0 | █ |
-| 🇷🇼 Rwanda | 1 | 0 | 1 | 0 | █ |
-| 🇿🇲 Zambia | 1 | 1 | 0 | 0 | █ |
-| **Total** | **118** | **86** | **29** | **3** | |
+| Month | Total | Ransomware | Data Leak | Access Sale | Defacement | Operational Fraud | Attempted Attack |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| January | 14 | 5 | 8 | 1 | 0 | 0 | 0 |
+| February | 12 | 7 | 5 | 0 | 0 | 0 | 0 |
+| March | 9 | 7 | 2 | 0 | 0 | 0 | 0 |
+| April | 7 | 5 | 2 | 0 | 0 | 0 | 0 |
+| May | 9 | 8 | 0 | 0 | 0 | 1 | 0 |
+| June | 3 | 3 | 0 | 0 | 0 | 0 | 0 |
+| July | 11 | 7 | 4 | 0 | 0 | 0 | 0 |
+| August | 16 | 14 | 1 | 0 | 0 | 0 | 1 |
+| September | 5 | 4 | 1 | 0 | 0 | 0 | 0 |
+| October | 12 | 8 | 4 | 0 | 0 | 0 | 0 |
+| November | 16 | 12 | 2 | 2 | 0 | 0 | 0 |
+| December | 14 | 11 | 2 | 0 | 1 | 0 | 0 |
+| **Total** | **128** | **91** | **31** | **3** | **1** | **1** | **1** |
+
+**Monthly volume**
+
+| Month | Records | Visual |
+|---|---:|:---|
+| January | 14 | ██████████████ |
+| February | 12 | ████████████ |
+| March | 9 | █████████ |
+| April | 7 | ███████ |
+| May | 9 | █████████ |
+| June | 3 | ███ |
+| July | 11 | ███████████ |
+| August | 16 | ████████████████ |
+| September | 5 | █████ |
+| October | 12 | ████████████ |
+| November | 16 | ████████████████ |
+| December | 14 | ██████████████ |
+
+## 5. Geographic distribution
+
+### 5.1 Country ranking
+
+| Country | Total | Ransomware | Data Leak | Access Sale | Defacement | Operational Fraud | Attempted Attack |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| 🇿🇦 South Africa | 35 | 32 | 2 | 0 | 0 | 1 | 0 |
+| 🇪🇬 Egypt | 14 | 11 | 3 | 0 | 0 | 0 | 0 |
+| 🇳🇬 Nigeria | 9 | 4 | 3 | 0 | 1 | 0 | 1 |
+| 🇩🇿 Algeria | 7 | 2 | 5 | 0 | 0 | 0 | 0 |
+| 🇹🇳 Tunisia | 6 | 5 | 1 | 0 | 0 | 0 | 0 |
+| 🇰🇪 Kenya | 5 | 3 | 2 | 0 | 0 | 0 | 0 |
+| 🇲🇦 Morocco | 5 | 1 | 4 | 0 | 0 | 0 | 0 |
+| 🇧🇫 Burkina Faso | 4 | 0 | 2 | 2 | 0 | 0 | 0 |
+| 🇨🇲 Cameroon | 4 | 3 | 0 | 1 | 0 | 0 | 0 |
+| 🇪🇹 Ethiopia | 4 | 1 | 3 | 0 | 0 | 0 | 0 |
+| 🇬🇭 Ghana | 4 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 🇨🇮 Ivory Coast | 4 | 3 | 1 | 0 | 0 | 0 | 0 |
+| 🇳🇦 Namibia | 4 | 4 | 0 | 0 | 0 | 0 | 0 |
+| 🇸🇨 Seychelles | 3 | 3 | 0 | 0 | 0 | 0 | 0 |
+| 🇿🇼 Zimbabwe | 3 | 3 | 0 | 0 | 0 | 0 | 0 |
+| 🇱🇾 Libya | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
+| 🇸🇳 Senegal | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
+| 🇸🇩 Sudan | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 🇹🇿 Tanzania | 2 | 2 | 0 | 0 | 0 | 0 | 0 |
+| 🇧🇼 Botswana | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇨🇬 Congo | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇩🇯 Djibouti | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇲🇬 Madagascar | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 🇲🇼 Malawi | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇲🇷 Mauritania | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇲🇺 Mauritius | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| 🇷🇼 Rwanda | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| 🇿🇲 Zambia | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **128** | **91** | **31** | **3** | **1** | **1** | **1** |
+
+South Africa accounts for **35 records (27.3%)** and **32 ransomware records**, but its corrected annual profile also includes two Data Leak records and one Operational Fraud case. Egypt remains second with 14 records. Nigeria rises to 9 after the GTBank and NBS corrections and now spans Ransomware, Data Leak, Defacement and the separate Attempted Attack category.
+
+### 5.2 Regional distribution
+
+| Region | Total | Ransomware | Data Leak | Access Sale | Defacement | Operational Fraud | Attempted Attack |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Southern Africa | 45 | 42 | 2 | 0 | 0 | 1 | 0 |
+| North Africa | 35 | 22 | 13 | 0 | 0 | 0 | 0 |
+| West Africa | 23 | 11 | 8 | 2 | 1 | 0 | 1 |
+| East Africa | 15 | 8 | 7 | 0 | 0 | 0 | 0 |
+| Indian Ocean | 5 | 4 | 1 | 0 | 0 | 0 | 0 |
+| Central Africa | 5 | 4 | 0 | 1 | 0 | 0 | 0 |
+| **Total** | **128** | **91** | **31** | **3** | **1** | **1** | **1** |
+
+Southern Africa remains the largest regional block with **45 records**, including 42 Ransomware. North Africa follows with 35. West Africa records 23 and is the only region containing both Access Sale, the GTBank Attempted Attack and the NBS Defacement in this annual scheme.
+
+## 6. Sector distribution
+
+| Sector | Records | Share |
+|---|---:|---:|
+| Government / Administration | 21 | 16.4% |
+| Finance / Banking | 16 | 12.5% |
+| Manufacturing / Industry | 11 | 8.6% |
+| Professional / Business Services | 11 | 8.6% |
+| Technology / IT | 11 | 8.6% |
+| Education / University | 10 | 7.8% |
+| Healthcare / Medical | 10 | 7.8% |
+| Retail / E-commerce | 9 | 7.0% |
+| Telecommunications | 5 | 3.9% |
+| Energy / Utilities | 4 | 3.1% |
+| Media / Entertainment | 4 | 3.1% |
+| Agriculture / Agribusiness | 3 | 2.3% |
+| Transport / Logistics | 3 | 2.3% |
+| Defense / Security | 2 | 1.6% |
+| Legal / Justice | 2 | 1.6% |
+| Water / Utilities | 2 | 1.6% |
+| Aviation | 1 | 0.8% |
+| Civil Society / NGO | 1 | 0.8% |
+| Construction / Real Estate | 1 | 0.8% |
+| Mining / Extractive Industries | 1 | 0.8% |
+| **Total** | **128** | **100%** |
+
+**Government / Administration** is the leading harmonized sector with **21 records (16.4%)**, followed by Finance / Banking with 16. Technology / IT, Manufacturing / Industry and Professional / Business Services each record 11.
+
+The government total spans multiple incident types and evidence states. It therefore signals broad public-sector visibility, not one homogeneous technical campaign.
+
+## 7. Actors and groups
+
+### 7.1 Most visible structured labels
+
+| Actor / Group | Records | Share |
+|---|---:|---:|
+| lockbit3 | 17 | 13.3% |
+| Unknown | 16 | 12.5% |
+| ransomhub | 12 | 9.4% |
+| killsec | 10 | 7.8% |
+| hunters | 8 | 6.2% |
+| Tanaka | 6 | 4.7% |
+| spacebears | 5 | 3.9% |
+| arcusmedia | 4 | 3.1% |
+| blacksuit | 3 | 2.3% |
+| darkvault | 3 | 2.3% |
+| sarcoma | 3 | 2.3% |
+| funksec | 2 | 1.6% |
+| incransom | 2 | 1.6% |
+| madliberator | 2 | 1.6% |
+| meow | 2 | 1.6% |
+
+`lockbit3` is the most visible structured actor/group label with **17 records**. `Unknown` is second with 16, reflecting cases where the source or victim evidence supports an incident but not a defensible intrusion attribution. `ransomhub`, `killsec` and `hunters` follow.
+
+These figures should be interpreted as structured labels in the harmonized cards, not as proof of shared infrastructure, affiliates or intrusion chains across every record carrying the same name.
 
 ```mermaid
-xychart
-    title "Leading countries - 2024"
-    x-axis ["ZA","EG","DZ","NG","TN","MA","BF","CI","GH","KE","NA"]
-    y-axis "Incidents" 0 --> 31
-    bar [30,13,7,7,6,5,4,4,4,4,4]
+flowchart LR
+    LB["lockbit3 - 17"] --> R["Ransomware visibility"]
+    UN["Unknown - 16"] --> E["Confirmed / claimed events without reliable actor attribution"]
+    RH["ransomhub - 12"] --> M["Mixed ransomware and publication labels"]
+    KS["killsec - 10"] --> R
+    HU["hunters - 8"] --> R
+    TA["Tanaka - 6"] --> D["Data Leak publication labels"]
 ```
 
-### Regional distribution
+## 8. Evidence maturity
 
-| Region | Total | Ransomware | Leak | Access sale |
-|---|---:|---:|---:|---:|
-| Southern Africa | 39 | 38 | 1 | 0 |
-| North Africa | 35 | 22 | 13 | 0 |
-| West Africa | 21 | 11 | 8 | 2 |
-| East Africa | 14 | 8 | 6 | 0 |
-| Indian Ocean | 5 | 4 | 1 | 0 |
-| Central Africa | 4 | 3 | 0 | 1 |
-| **Total** | **118** | **86** | **29** | **3** |
+The corrected annual corpus is not equivalent to 128 confirmed compromises.
 
-### Normalised sector distribution
-
-| Sector | Incidents | Share |
+| Evidence/status group | Records | Share |
 |---|---:|---:|
-| Finance / Banking | 15 | 12.9% |
-| Government / Administration | 12 | 10.3% |
-| Manufacturing / Industry | 11 | 9.5% |
-| Professional / Business Services | 11 | 9.5% |
-| Technology / IT | 11 | 9.5% |
-| Education / University | 11 | 9.4% |
-| Healthcare / Medical | 10 | 8.5% |
-| Retail / E-commerce | 9 | 7.8% |
-| Telecommunications | 5 | 4.3% |
-| Media / Entertainment | 4 | 3.4% |
-| Agriculture / Agribusiness | 3 | 2.6% |
-| Oil & Energy | 3 | 2.6% |
-| Transport / Logistics | 3 | 2.6% |
-| Defence / Security | 2 | 1.7% |
-| Legal / Justice | 2 | 1.7% |
-| Water / Utilities | 2 | 1.7% |
-| Aviation | 1 | 0.9% |
-| Construction / Real Estate | 1 | 0.9% |
-| Mining / Extractive Industries | 1 | 0.9% |
-| Civil Society / NGO | 1 | 0.9% |
-| **Total** | **118** | **100%** |
+| Claim - Unverified | **85** | **66.4%** |
+| Claim - Data Sample Published | **32** | **25.0%** |
+| Data Fully Published | **1** | **0.8%** |
+| Victim/government confirmed or corroborated statuses | **10** | **7.8%** |
+| **Total** | **128** | **100%** |
 
-### Most visible actors
+Confidence levels:
 
-| Actor or source label | Incidents | Dataset share |
+| Confidence | Records | Share |
 |---|---:|---:|
-| LockBit3 | 16 | 13.7% |
-| RansomHub | 12 | 10.3% |
-| KillSec | 10 | 8.5% |
-| Hunters | 8 | 6.8% |
-| SpaceBears | 5 | 4.3% |
-| ArcusMedia | 4 | 3.4% |
-| Tanaka - underground-forum publication | 3 | 2.6% |
-| BlackSuit | 3 | 2.6% |
-| Addka72424 - repost attributed to FriendlyChemist | 3 | 2.6% |
-| DarkVault | 3 | 2.6% |
+| Low | **86** | **67.2%** |
+| Medium | **21** | **16.4%** |
+| High | **11** | **8.6%** |
+| Very High | **10** | **7.8%** |
+| **Total** | **128** | **100%** |
 
-## 4. Detailed analysis by incident type
+The 10 retrospective corrections increase annual completeness while also improving the number of records supported by victim, government or later authoritative corroboration. They do not eliminate uncertainty: Eneo and Malawi preserve ransomware-classification caveats, MSEA remains corroborated without direct victim confirmation, and GTBank remains an unsuccessful attempted attack.
 
-### 4.1 Ransomware
+## 9. H1 vs H2 comparison
 
-Ransomware accounts for **73.5%** of the dataset. Concentration is pronounced: South Africa has 29 of the 86 publications, and the four most visible groups total 46 incidents. That visibility does not establish a shared attack chain. Source data mostly documents organisations appearing on leak sites; it rarely contains the logs or analysis needed to confirm encryption, persistence, or lateral movement.
-
-### 4.2 Data leaks and access sales
-
-The 29 leaks and three access sales form a more distributed set. Algeria and Morocco have a majority of leaks, while the three access sales are split between Burkina Faso and Cameroon. Several publications include structured samples; others are compilations or reposts of uncertain age. An access sale signals possible exposure, not a completed compromise.
-
-## 5. Sectoral impact
-
-Finance leads with 15 incidents, followed by government with 12. Manufacturing, professional services, and technology each account for 11. These volumes require different responses: transaction and identity protection in finance, service continuity in government, industrial segmentation, and control over supplier access. Sector ranking does not replace an organisation-specific sensitivity assessment.
-
-## 6. Threat actor profile and risk assessment
-
-| Scope | Level | Rationale |
-|---|---|---|
-| 🇿🇦 South Africa | 🔴 High | 30 incidents, including 29 ransomware publications |
-| 🇪🇬 Egypt | 🔴 High | 14 incidents involving public and financial functions |
-| 🇩🇿 Algeria / 🇳🇬 Nigeria | 🔴 High | Seven incidents each, including several data leaks |
-| 🇹🇳 Tunisia / 🇲🇦 Morocco | 🟠 Medium | Five to six incidents, with different ransomware and leak profiles |
-| Other countries | 🟡 Low to medium | Fewer than five incidents; case-by-case assessment required |
-
-LockBit3, RansomHub, KillSec, and Hunters are the most frequent names. Frequency should direct monitoring, not create a presumption about tools, affiliates, or tradecraft in each incident.
-
-## 7. Key trends and intelligence gaps
-
-- **Observed - high confidence:** 86 of 118 incidents are classified as ransomware.
-- **Observed - high confidence:** South Africa accounts for 25.6% of the annual dataset and 33.7% of ransomware publications.
-- **Observed - high confidence:** the second half has 70 incidents, 22 more than the first half.
-- **Observed - high confidence:** leaks and access sales are proportionally more visible in North and West Africa than in Southern Africa.
-- **Major intelligence gap:** the consulted sources contain very few public African DFIR reports. Initial access vectors, dwell time, exfiltration paths, and operational impact therefore remain unknown in most cases.
-- **Priority assumptions - medium confidence at the general level, low for an individual incident:** credential reuse, initial access brokers, and exploitation of exposed edge services or VPNs. The dataset does not support automatic attribution of these scenarios to the listed victims.
-- **Gap:** reposts, duplicate claims, and old data can distort the perceived timing of activity.
-- **Collection requirement:** strengthen data dating, victim-confirmation tracking, and the search for independent technical corroboration.
-
-## 8. Objective comparative analysis: first and second half
-
-| Indicator | January-June | July-December | Absolute change | Change |
+| Indicator | H1 2024 | H2 2024 | Absolute change | Change |
 |---|---:|---:|---:|---:|
-| Incidents | 48 | 70 | +22 | +45.8% |
-| Ransomware | 31 | 55 | +24 | +77.4% |
-| Data leaks | 16 | 13 | -3 | -18.8% |
-| Access sales | 1 | 2 | +1 | +100.0% |
-| Defacement | 0 | 0 | 0 | Stable |
-| Monthly average | 8.0 | 11.7 | +3.7 | +45.8% |
+| Documented cyber records | 54 | **74** | +20 | **+37.0%** |
+| Core six-type incidents | 54 | **73** | +19 | **+35.2%** |
+| Ransomware | 35 | **56** | +21 | **+60.0%** |
+| Data Leak | 17 | **14** | -3 | **-17.6%** |
+| Access Sale | 1 | **2** | +1 | **+100.0%** |
+| Defacement | 0 | **1** | +1 | New |
+| Operational Fraud | 1 | **0** | -1 | **-100.0%** |
+| Attempted Attack - tracked separately | 0 | **1** | +1 | New |
+| Monthly average - all records | 9.0 | **12.3** | +3.3 | **+37.0%** |
 
-The second half contains 22 more incidents than the first. This difference is entirely explained by the increase in ransomware: 55 publications in the second half versus 31 in the first. Leaks remain close in volume (13 versus 16), while access sales rise from one to two. August and November each reach 15 publications, while June records only three.
+The second half is larger because ransomware publication visibility rises sharply, from 35 to 56 records. Data Leak moves in the opposite direction, from 17 to 14. The H2 increase therefore should not be described as a uniform rise across all cyber incident types.
 
-This comparison describes the collected corpus, not a direct measure of the real frequency of intrusions. Changes may reflect actor activity, source visibility, reposts, collection delays, or classification differences. The half-year increase is therefore a robust signal within AFRINTEL’s data, but its causal attribution and operational impact remain unknown without independent confirmations and DFIR reports.
+## 10. Retrospective corrections integrated
 
-**Comparative conclusion:** the first half is more mixed, with a higher relative share of leaks (33.3% versus 18.6% in the second half), while the second half is clearly dominated by ransomware claims (78.6% versus 64.6%). Defensive priorities should therefore combine ransomware resilience and recovery with identity, export-control, and exposed-data controls.
+| Month | Victim | Classification | Evidence position |
+|---|---|---|---|
+| January | ITAC - South Africa | Ransomware | Victim Confirmed |
+| January | Eneo Cameroon | Ransomware | Victim Confirmed; ransomware classification unverified |
+| February | GPAA / GEPF - South Africa | Ransomware | Victim Confirmed + Threat Actor Claim |
+| February | CIPC - South Africa | Data Leak | Victim Confirmed; secondary defacement/extortion effects retained |
+| February | Malawi Passport System | Ransomware | Government Confirmed; technical details contested |
+| May | DPWI - South Africa | Operational Fraud | Government Confirmed - Forensic Investigation |
+| August | GTBank - Nigeria | Attempted Attack | Victim Confirmed; unsuccessful attempt, tracked outside core taxonomy |
+| November | SABS - South Africa | Ransomware | Government Confirmed; encryption and major disruption |
+| December | MSEA - Kenya | Data Leak | Corroborated; no direct victim confirmation located |
+| December | NBS - Nigeria | Defacement | Victim Confirmed; no confirmed backend dataset theft |
 
-## 9. Contextual MITRE ATT&CK mapping
+## 11. Detailed CTI interpretation
+
+### 11.1 Ransomware
+
+Ransomware accounts for **91 of 128 documented records (71.1%)** and remains the dominant annual category. South Africa alone records 32 ransomware entries, while `lockbit3` is the most visible ransomware label.
+
+However, the evidence spectrum ranges from leak-site claims to government-confirmed operational incidents. SABS confirms real system encryption and prolonged disruption, while many other ransomware records remain low-confidence listings without public DFIR evidence. Ransomware visibility and confirmed ransomware impact therefore cannot be treated as the same metric.
+
+### 11.2 Data Leak
+
+The corrected year contains **31 Data Leak records**. Their maturity varies from visible samples to full publication and later corroboration. Several July records also involve recirculated historical datasets, demonstrating that discovery/publication date does not necessarily equal compromise date.
+
+The Data Leak corpus supports risk analysis around identity exposure, phishing, fraud and secondary exploitation, but record counts do not establish a common acquisition method.
+
+### 11.3 Access Sale
+
+Three Access Sale records remain: one Cameroon case and two Burkina Faso public-health offers. An advertised access does not establish that the access was still valid, purchased or used. The two Burkina Faso records remain separate because the supplied evidence does not establish that they concern the same underlying system.
+
+### 11.4 Operational Fraud
+
+DPWI remains the only Operational Fraud record. It captures a government-confirmed cyber-enabled financial theft investigation without inventing ransomware or malware where the technical mechanism was unresolved.
+
+### 11.5 Defacement
+
+NBS introduces Defacement into the corrected annual taxonomy. The website hack and service disruption were confirmed, but backend statistical-data theft was not. This makes it a useful example of separating integrity/availability impact from confidentiality impact.
+
+### 11.6 Attempted Attack tracked separately
+
+GTBank is intentionally excluded from the six-type core taxonomy. The bank confirmed an unsuccessful attempt to compromise its website domain and stated that customer data was not compromised. Counting it as a successful breach would reduce rather than improve the accuracy of the annual corpus.
+
+## 12. Contextual MITRE ATT&CK mapping
 
 | Qualification | Technique | Defensive use |
 |---|---|---|
-| Assumption - medium confidence | T1078 - Valid Accounts | Initial access or persistence scenario to verify |
-| Assumption - medium confidence | T1190 - Exploit Public-Facing Application | Scenario for edge services; not established in the dataset |
-| Preventive | T1486 - Data Encrypted for Impact | Detect mass encryption; not confirmed for every ransomware publication |
-| Preventive | T1490 - Inhibit System Recovery | Alert on tampering with backups and recovery mechanisms |
-| Preventive | T1567 - Exfiltration Over Web Service | Detect unusual outbound transfers; channel rarely documented |
+| Observed in specific confirmed case | T1486 - Data Encrypted for Impact | System encryption is officially confirmed for SABS; not for every ransomware record. |
+| Preventive | T1490 - Inhibit System Recovery | Monitor tampering with recovery mechanisms around ransomware incidents. |
+| Conditional | T1078 - Valid Accounts | Investigate identity abuse where access or account exposure is supported; do not generalize it to all records. |
+| Contextual | T1213 - Data from Information Repositories | Relevant to structured database and document-repository exposures. |
+| Preventive | T1567 - Exfiltration Over Web Service | Monitor unusual outbound transfer; exfiltration channel is usually not established. |
 
-## 10. Recommendations
+## 13. Strategic and SOC recommendations
 
-- **Government and essential operators:** identify priority services, segment management planes, and test offline continuity procedures.
-- **Finance and telecommunications:** require phishing-resistant MFA, monitor exports, and govern third-party access.
-- **Manufacturing:** separate IT, production, and maintenance; remove shared accounts.
-- **Education and healthcare:** reduce portal exposure, inventory document repositories, and prepare data-subject notification.
-- **All organisations:** regularly assess Internet exposure and close unnecessary remote access.
+- Preserve a strict distinction between criminal publication, data sample, victim confirmation, government confirmation and later corroboration.
+- Prioritize ransomware resilience in Southern Africa while avoiding the assumption that every listing corresponds to confirmed encryption.
+- For Government / Administration, combine identity hardening, web integrity monitoring, fraud controls and continuity planning because the annual sector exposure spans several incident types.
+- For Finance / Banking, prioritize phishing-resistant MFA, transaction-fraud detection, privileged-access review and monitoring of exposed account material.
+- For historical or recirculated datasets, preserve original leak dates and verify credential validity before treating resurfacing as a new intrusion.
+- For Access Sale records, validate access internally before concluding that a compromise was consumed or exploited.
+- Keep victim and government confirmation tracking as a primary enrichment workflow for 2025 comparisons.
 
-## 11. SOC and tactical recommendations
+## 14. Annual timeline
 
-| Qualification | Action |
-|---|---|
-| **Observed** | Use organisations, domains, dates, and actors in the dataset to prioritise correlation across IAM, EDR, VPN, WAF, DNS, proxy, and mail telemetry. |
-| **Assumption** | Hunt for access from unusual infrastructure, credential reuse, account creation, privilege escalation, and bulk exports. |
-| **Preventive** | Deploy Sigma or equivalent detections for LSASS dumping, obfuscated PowerShell, backup deletion, and mass encryption. |
-| **Preventive** | Use proxy, DNS, EDR, or Suricata telemetry to monitor unusual outbound transfers and unexpected use of tools such as Rclone. |
+```mermaid
+timeline
+    title AFRINTEL - Corrected monthly volume 2024
+    January : 14 records
+    February : 12 records
+    March : 9 records
+    April : 7 records
+    May : 9 records
+    June : 3 records
+    July : 11 records
+    August : 16 records
+    September : 5 records
+    October : 12 records
+    November : 16 records
+    December : 14 records
+```
 
-## 12. Strategic recommendations
+## 15. Conclusion
 
-| Priority | Qualification | Measure |
-|---:|---|---|
-| 1 | **Observed** | Prioritise ransomware resilience in Southern Africa and data-exposure risk in North and West Africa. |
-| 2 | **Assumption** | Audit access scenarios involving identities, suppliers, and edge devices without presenting them as historical fact. |
-| 3 | **Preventive** | Reduce the external attack surface, close unnecessary RDP exposure, and promptly patch Edge/VPN appliances. |
-| 4 | **Preventive** | Maintain critical backups that are immutable, isolated, and recovery-tested. |
-| 5 | **Preventive** | Following credential exposure, revoke sessions, rotate secrets, and hunt for reuse. |
+The corrected AFRINTEL 2024 corpus contains **128 documented cyber records across 28 African countries**, replacing the stale annual aggregate of 118 records and the inconsistent 115-record annual victim compilation. This correction is not a cosmetic adjustment. It changes annual volume, taxonomy, geography, sector exposure, evidence maturity and the balance between the first and second halves of the year.
 
-## 13. Conclusion
+Ransomware remains the dominant category with **91 records**, but the corrected year is analytically broader than a ransomware-only narrative. The addition of CIPC and MSEA increases Data Leak to 31, DPWI introduces Operational Fraud, NBS introduces Defacement, and GTBank is retained as an unsuccessful Attempted Attack outside the core six-type taxonomy. These distinctions preserve incident reality more accurately than forcing every cyber event into a breach or malware category.
 
-The 2024 dataset shows strong and visible ransomware pressure alongside persistent circulation of data and access with a different geographic profile. Its purpose is not to produce a definitive league table. It provides a working base to verify exposure, prioritise collection, and turn dark-web, darknet, and OSINT signals into measured defensive decisions.
+The geographic concentration remains pronounced. South Africa accounts for **35 records, or 27.3% of the annual corpus**, including 32 Ransomware, two Data Leak and one Operational Fraud. Egypt remains second with 14, while Nigeria rises to nine and now presents four distinct analytical profiles: Ransomware, Data Leak, Defacement and an attempted website-domain compromise. This diversity shows why country totals alone are insufficient for defensive prioritization.
 
-The main limitation remains the shortage of public DFIR reporting. While that gap persists, AFRINTEL must continue to document precisely what was observed, isolate assumptions, and leave unknowns visible.
+The corrected sector picture places **Government / Administration first with 21 records**, followed by Finance / Banking with 16. The public-sector concentration is real within the AFRINTEL corpus, but it spans ransomware publications, data exposures, operational fraud and confirmed website compromise. It therefore does not support a single technical campaign hypothesis. Its defensive implication is broader: public institutions need simultaneous maturity in identity, web security, continuity, data protection and fraud detection.
 
-**AFRINTEL - TLP:CLEAR**
+The strongest annual conclusion concerns **evidence maturity**. Two thirds of the records remain `Claim - Unverified`. A further quarter have a published sample, while only a smaller subset is supported by victim confirmation, government confirmation, full publication or later authoritative corroboration. The 2024 corpus therefore measures **documented cyber visibility with graded evidence**, not 128 equally confirmed intrusions. This distinction must remain visible in every downstream statistic.
 
-[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)
+The retrospective corrections demonstrate the practical value of this model. SABS adds a government-confirmed ransomware event with actual encryption and operational disruption. NBS adds a confirmed defacement without evidence of backend data theft. MSEA adds a strongly corroborated breach without direct victim notification in the reviewed source set. GTBank adds a confirmed but unsuccessful attempted attack. Eneo and Malawi retain technical classification caveats instead of presenting contested ransomware mechanics as fact. Each correction improves completeness precisely because it preserves what remains unknown.
+
+The H1/H2 comparison also becomes clearer. The second half contains **74 documented records versus 54 in H1**, a rise of 37.0%, driven mainly by Ransomware increasing from 35 to 56. Data Leak falls from 17 to 14. The annual trajectory therefore reflects changing composition as well as changing volume. It should not be translated into a claim that successful cyber intrusions across Africa rose by 37%.
+
+The most defensible reading of AFRINTEL 2024 is consequently that the year shows **high ransomware publication visibility, strong South African concentration, sustained circulation of exposed data, growing public-sector visibility and highly uneven evidence maturity**. The operational value of the corrected annual dataset lies in separating those dimensions instead of collapsing them into a single attack count.
+
+This corrected 2024 edition is now the appropriate baseline for a rigorous **2024 vs 2025 comparison**. Any year-on-year analysis should use the **128-record corrected corpus**, while preserving the GTBank taxonomy exception and explicitly remapping regional or sector conventions before claiming strict comparative deltas.
+
+**AFRINTEL** - TLP:CLEAR

@@ -1,158 +1,192 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Février%202024-lightgrey)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
 # Rapport CTI AFRINTEL - Février 2024
 
 👉🏾 [English version](./README.md)
 
 ## 1. Résumé exécutif
 
-Février 2024 compte **9 incidents documentés** : **5 revendications ransomware** et **4 fuites de données**. L’activité se répartit sur six pays, sans concentration comparable à celle observée en Afrique du Sud le mois précédent. L’Égypte et la Côte d’Ivoire enregistrent chacune deux incidents ; l’Afrique du Nord et l’Afrique de l’Ouest totalisent chacune trois occurrences.
+AFRINTEL documente désormais **12 fiches incident** en février 2024 : **7 Ransomware** et **5 Data Leak**, dans **7 pays africains**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans le corpus corrigé de février.
 
-Les quatre fuites concernent principalement des services numériques et des organismes publics. La publication visant 8WORX présente les éléments les plus structurés du mois et reçoit un niveau de confiance élevé dans le corpus. Les cinq publications ransomware restent des revendications : aucune télémétrie publique ne permet d’en établir le point d’entrée ou l’étendue opérationnelle.
+Cette correction rétrospective ajoute trois dossiers précédemment absents : **GPAA/GEPF**, **CIPC** et le **système de délivrance des passeports du Malawi**. GPAA/GEPF correspond à un ransomware et une compromission de données personnelles confirmés par la victime. CIPC est enregistré principalement comme Data Leak, avec extorsion et défacement comme effets secondaires. Le Malawi est classé provisoirement en Ransomware car le gouvernement a déclaré une violation de cybersécurité et une demande de rançon, alors que la cause technique exacte reste contestée.
 
-Voir [victims_FR.md](./victims_FR.md) pour les données détaillées.
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Janvier 2024 | Février 2024 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 14 | **12** | **-2 (-14,3 %)** |
+| Ransomware | 5 | **7** | **+2 (+40,0 %)** |
+| Data Leak | 8 | **5** | **-3 (-37,5 %)** |
+| Access Sale | 1 | **0** | **-1 (-100,0 %)** |
+| DDoS | 0 | **0** | Stable |
+| Defacement | 0 | **0** | Stable |
+| Operational Fraud | 0 | **0** | Stable |
+
+Le comparatif corrigé est sensiblement différent de l'ancien calcul 12 -> 9. Février reste inférieur à janvier en volume total, mais seulement de **14,3 %**, tandis que les Ransomware passent de 5 à 7.
 
 ## 2. Méthodologie
 
-Le rapport couvre les publications classées du 1er au 29 février 2024. Chaque organisation est comptée une fois et les catégories **Ransomware**, **Data Leak**, **Access Sale** et **Defacement** restent séparées. Les résultats décrivent l’activité visible dans les sources consultées, non l’ensemble des incidents survenus en Afrique.
-
-Les statistiques dérivent des **9 incidents** de [victims_FR.md](./victims_FR.md), synchronisés avec [victims.md](./victims.md).
+- **Période :** 1er au 29 février 2024.
+- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
+- **Comptage :** une fiche harmonisée correspond à un incident documenté.
+- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Corrections rétrospectives :** les incidents identifiés pendant l'audit historique du 23 août 2026 sont replacés dans leur mois réel de 2024 et conservent une date de correction AFRINTEL distincte.
+- **GPAA/GEPF :** type principal Ransomware ; la compromission confirmée de données personnelles reste un effet du même incident, pas un second incident.
+- **CIPC :** type principal Data Leak ; l'extorsion et le défacement sont conservés comme effets secondaires.
+- **Système de passeports du Malawi :** mapping Ransomware provisoire ; la violation et la perturbation sont confirmées par le gouvernement, mais le déploiement technique exact d'un ransomware reste contesté.
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---:|
-| Incidents | **9** |
-| Pays | **6** |
-| Ransomware | **5** |
-| Fuites de données | **4** |
-| Ventes d’accès / Défacement | **0 / 0** |
+### 3.1 Répartition par type d'incident
 
-### Classement par pays
-
-| Pays | Total | Ransomware | Fuite |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 2 | 2 | 0 |
-| 🇨🇮 Côte d’Ivoire | 2 | 1 | 1 |
-| 🇪🇬 Égypte | 2 | 1 | 1 |
-| 🇬🇭 Ghana | 1 | 0 | 1 |
-| 🇹🇳 Tunisie | 1 | 1 | 0 |
-| 🇪🇹 Éthiopie | 1 | 0 | 1 |
-| **Total** | **9** | **5** | **4** |
-
-```mermaid
-xychart
-    title "Incidents par pays - février 2024"
-    x-axis ["ZA","CI","EG","GH","TN","ET"]
-    y-axis "Incidents" 0 --> 3
-    bar [2,2,2,1,1,1]
-```
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **7** | **58,3 %** |
+| Data Leak | **5** | **41,7 %** |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **12** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par type - février 2024
-    "Ransomware" : 5
-    "Fuites de données" : 4
+    title Types d'incident - Février 2024
+    "Ransomware" : 7
+    "Data Leak" : 5
 ```
 
-### Répartition régionale
+### 3.2 Répartition par pays
 
-| Région | Incidents | Ransomware | Fuite |
+| Pays | Ransomware | Data Leak | Total |
 |---|---:|---:|---:|
-| Afrique du Nord | 3 | 2 | 1 |
-| Afrique de l’Ouest | 3 | 1 | 2 |
-| Afrique australe | 2 | 2 | 0 |
-| Afrique de l’Est | 1 | 0 | 1 |
-| **Total** | **9** | **5** | **4** |
+| 🇿🇦 Afrique du Sud | 3 | 1 | **4** |
+| 🇪🇬 Égypte | 1 | 1 | 2 |
+| 🇨🇮 Côte d'Ivoire | 1 | 1 | 2 |
+| 🇬🇭 Ghana | 0 | 1 | 1 |
+| 🇹🇳 Tunisie | 1 | 0 | 1 |
+| 🇪🇹 Éthiopie | 0 | 1 | 1 |
+| 🇲🇼 Malawi | 1 | 0 | 1 |
+| **Total** | **7** | **5** | **12** |
 
-### Répartition sectorielle normalisée
+### 3.3 Répartition régionale
 
-| Secteur | Incidents | Part |
-|---|---:|---:|
-| Gouvernement / Administration | 3 | 33,3 % |
-| Technologies / Informatique | 2 | 22,2 % |
-| Industrie / Fabrication | 2 | 22,2 % |
-| Santé / Médical | 1 | 11,1 % |
-| Eau / Services publics | 1 | 11,1 % |
-| **Total** | **9** | **100 %** |
+| Région | Ransomware | Data Leak | Total |
+|---|---:|---:|---:|
+| Afrique australe | 4 | 1 | **5** |
+| Afrique du Nord | 2 | 1 | **3** |
+| Afrique de l'Ouest | 1 | 2 | **3** |
+| Afrique de l'Est | 0 | 1 | **1** |
+| Afrique centrale | 0 | 0 | **0** |
+| **Total** | **7** | **5** | **12** |
 
-### Acteurs les plus visibles
+### 3.4 Répartition sectorielle harmonisée
 
-| Acteur ou source | Incidents |
+| Secteur | Fiches |
 |---|---:|
-| Tanaka et publications associées | 3 |
-| LockBit3 | 2 |
-| DragonForce, Hunters, Medusa, ThreatSec | 1 chacun |
+| Government / Administration | **6** |
+| Technology / IT | 2 |
+| Manufacturing / Industry | 2 |
+| Healthcare / Medical | 1 |
+| Water / Utilities | 1 |
+| **Total** | **12** |
 
-## 4. Analyse détaillée par type d’incident
+### 3.5 Acteurs / groupes
 
-### 4.1 Ransomware
+| Acteur / Groupe | Fiches |
+|---|---:|
+| lockbit3 | **3** |
+| Tanaka | **3** |
+| Unknown | **2** |
+| medusa | 1 |
+| hunters | 1 |
+| ThreatSec | 1 |
+| dragonforce | 1 |
 
-Les cinq publications concernent ArpuPlus, SOPEM Tunisie, The Aurum Institute, NPGCI et ERWAT. Deux touchent l’Afrique du Sud ; les autres étendent la visibilité ransomware à l’Égypte, la Tunisie et la Côte d’Ivoire. Cette dispersion est un fait de collecte, pas la preuve d’une campagne coordonnée.
+> `Unknown` désigne les dossiers non attribués. Le Malawi et la CIPC restent non attribués.
 
-### 4.2 Fuites de données
+```mermaid
+flowchart LR
+    LB["lockbit3 - 3"] --> ZA1["Afrique du Sud - Aurum Institute"]
+    LB --> CI["Côte d'Ivoire - NPGCI"]
+    LB --> ZA2["Afrique du Sud - GPAA/GEPF"]
+    TAN["Tanaka - 3"] --> EG["Égypte - 8WORX"]
+    TAN --> GH["Ghana - NTC"]
+    TAN --> CI2["Côte d'Ivoire - Agence Emploi Jeunes"]
+    UNK["Unknown"] --> CIPC["Afrique du Sud - CIPC"]
+    UNK --> MW["Malawi - Passport System"]
+```
 
-Les quatre fuites visent 8WORX, des ministères éthiopiens liés au commerce régional, le National Teaching Council du Ghana et l’Agence Emploi Jeunes de Côte d’Ivoire. Les échantillons renforcent la confiance dans l’existence de données structurées, mais ne valident ni les volumes globaux ni la méthode d’acquisition.
+## 4. Analyse détaillée
 
-## 5. Impact sectoriel
+### 4.1 Ransomware - 7 fiches
 
-Le secteur public représente un tiers du corpus. Les publications touchent l’administration générale, l’emploi et la régulation de la formation des enseignants. Les risques les plus directs sont l’hameçonnage ciblé, l’usurpation de comptes et l’exposition de données administratives. Dans l’eau et la santé, même une revendication non confirmée justifie de vérifier la continuité des services essentiels.
+Le corpus corrigé de février contient sept fiches Ransomware.
 
-## 6. Profil des acteurs et évaluation du risque
+L'ajout rétrospectif le plus significatif est **GPAA/GEPF**, où l'événement ransomware et l'accès à environ **168 000 dossiers de personnes** sont confirmés par la victime. Le dossier supplémentaire du système de passeports du Malawi conserve une réserve explicite : le gouvernement confirme une violation de cybersécurité et une demande de rançon, mais le déploiement technique d'un ransomware reste contesté.
 
-| Pays | Niveau | Justification |
+### 4.2 Data Leak - 5 fiches
+
+Le corpus Data Leak corrigé ajoute **CIPC** aux quatre dossiers déjà documentés. CIPC a officiellement signalé un accès non autorisé et l'exposition d'informations personnelles. Les menaces d'extorsion et le défacement du portail e-Services sont conservés comme effets secondaires et ne créent pas de fiches supplémentaires.
+
+### 4.3 Qualification des preuves
+
+Le corpus corrigé distingue explicitement :
+- les faits confirmés par les victimes ;
+- les revendications des acteurs ;
+- les effets secondaires ;
+- les mappings de taxonomie provisoires ;
+- les volumes revendiqués et les volumes confirmés.
+
+## 5. Principaux constats et lacunes
+
+- Février passe de **9 à 12 fiches** après correction rétrospective.
+- L'Afrique du Sud devient le pays le plus représenté avec **4 fiches**.
+- Government / Administration devient le secteur dominant avec **6 fiches sur 12**.
+- Les Ransomware représentent **58,3 %** du corpus corrigé.
+- GPAA/GEPF augmente fortement l'impact confirmé du mois avec environ 168 000 dossiers concernés.
+- Le Malawi reste analytiquement sensible : la perturbation et la déclaration gouvernementale de violation sont confirmées, tandis que la cause technique reste disputée.
+
+## 6. Cartographie MITRE ATT&CK contextuelle
+
+| Statut | Technique | Application |
 |---|---|---|
-| 🇪🇬 Égypte | 🔴 Élevé | Deux incidents, dont une fuite à confiance élevée |
-| 🇨🇮 Côte d’Ivoire | 🔴 Élevé | Ransomware et fuite touchant un organisme public |
-| 🇿🇦 Afrique du Sud | 🟠 Moyen | Deux revendications ransomware |
-| 🇬🇭 Ghana | 🟠 Moyen | Publication de données d’un organisme de régulation |
-| 🇹🇳 Tunisie / 🇪🇹 Éthiopie | 🟡 Faible à moyen | Une publication chacune |
+| Observé / contexte ransomware confirmé | T1486 - Data Encrypted for Impact | Directement pertinent pour les cas ransomware confirmés comme GPAA/GEPF ; ne doit pas être étendu automatiquement à toutes les revendications. |
+| Contextuel | T1005 - Data from Local System | Pertinent pour les fichiers locaux et données structurées exposés. |
+| Contextuel | T1213 - Data from Information Repositories | Pertinent pour les bases et référentiels administratifs exposés. |
+| Préventif | T1567 - Exfiltration Over Web Service | Contexte défensif lorsque le canal d'exfiltration n'est pas établi publiquement. |
 
-## 7. Tendances et lacunes de renseignement
+## 7. Recommandations
 
-- **Observé - confiance élevée :** les incidents sont presque équilibrés entre ransomware et fuites.
-- **Observé - confiance élevée :** trois des quatre fuites concernent directement des organismes publics.
-- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour qualifier les cinq cas ransomware.
-- **Lacune :** l’ancienneté et la représentativité de certains échantillons ne permettent pas d’extrapoler les volumes revendiqués.
-- **Collecte attendue :** confirmations des victimes, notifications officielles et nouvelles traces de republication.
+- Séparer l'impact confirmé GPAA/GEPF des revendications plus larges de publication de LockBit.
+- Conserver CIPC comme un seul incident multi-effets, et non comme des incidents Data Leak et Defacement séparés.
+- Maintenir la réserve technique sur le Malawi et ne pas renforcer la qualification ransomware sans preuve technique primaire.
+- Prioriser la protection des comptes privilégiés du secteur public, la protection de l'identité et la surveillance des exports de bases.
+- Conserver séparément date de l'incident, date de publication et date de correction AFRINTEL.
 
-## 8. Cartographie MITRE ATT&CK contextuelle
+## 8. Chronologie
 
-| Statut | Technique | Utilisation |
-|---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement pour les cinq revendications ransomware ; technique non confirmée |
-| Préventif | T1567 - Exfiltration Over Web Service | Surveillance des sorties de données ; canal non observé |
-| Hypothèse | T1078 - Valid Accounts | Scénario à examiner pour les environnements administratifs ; aucun compte compromis confirmé |
+```mermaid
+timeline
+    title AFRINTEL - Février 2024
+    01 Février : 8WORX
+    06 Février : ArpuPlus
+    10 Février : SOPEM Tunisie
+    13 Février : The Aurum Institute
+    16 Février : GPAA / GEPF
+    Février : Malawi Passport System - date exacte non résolue
+    23 Février : CIPC
+    24 Février : Portails commerciaux éthiopiens
+                : NTC Ghana
+                : Agence Emploi Jeunes
+    27 Février : NPGCI
+    29 Février : ERWAT
+```
 
-## 9. Recommandations
+## 9. Conclusion
 
-- **Secteur public :** revoir les accès privilégiés, les exports de données et les procédures de notification.
-- **Santé et eau :** isoler les systèmes critiques et tester les plans de continuité.
-- **Entreprises technologiques :** renforcer MFA, gestion des secrets et journalisation des actions administratives.
-- **Toutes les organisations :** maintenir des sauvegardes immuables et une capacité de restauration testée.
+Février 2024 contient désormais **12 fiches incident documentées dans 7 pays africains**, réparties entre **7 Ransomware et 5 Data Leak**.
 
-## 10. Recommandations SOC et tactiques
+Par rapport au janvier corrigé à 14 incidents, février baisse de **14,3 %**, tandis que les Ransomware progressent de **40,0 %** et les Data Leak reculent de **37,5 %**.
 
-| Qualification | Action |
-|---|---|
-| **Observé** | Surveiller les applications et domaines explicitement cités ; aucune chaîne d’intrusion n’est confirmée. |
-| **Hypothèse** | Rechercher des connexions administratives anormales, exports massifs et créations d’archives autour des dates de publication. |
-| **Préventif** | Alerter sur l’inhibition des sauvegardes, le chiffrement massif, les transferts sortants volumineux et l’usage inhabituel d’outils d’administration. |
-
-## 11. Recommandations stratégiques
-
-| Priorité | Qualification | Mesure |
-|---:|---|---|
-| 1 | **Observé** | Prioriser la protection des organismes publics présents dans le corpus. |
-| 2 | **Hypothèse** | Vérifier si les mêmes identifiants ou applications relient plusieurs publications, sans présumer une campagne commune. |
-| 3 | **Préventif** | Réduire la surface externe, imposer une MFA résistante au phishing et isoler les sauvegardes. |
-
-## 12. Conclusion
-
-Février présente un paysage plus dispersé que janvier. Le poids du secteur public et la coexistence de ransomware et de fuites imposent deux efforts parallèles : continuité d’activité d’un côté, validation et réduction de l’exposition des données de l’autre. Les sources publiques ne permettent pas d’aller plus loin sur les modes opératoires.
-
-**AFRINTEL - TLP:CLEAR**
-[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+**AFRINTEL** - TLP:CLEAR
