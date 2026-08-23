@@ -13,7 +13,6 @@
 
 October 2025 contains **18 unique incidents across 11 African countries**: **16 Ransomware** and **2 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud is recorded.
 
-The source file contained 19 cards. The 13 October `meamargroup.com` publication is linked to the same evidence set as the 5 September MeamarGroup incident and is therefore not counted as a new incident in the harmonized statistics.
 
 - **Morocco**: 5 incidents, including 3 Ransomware and 2 Data Leak.
 - **South Africa**: 4 Ransomware incidents.
@@ -169,7 +168,6 @@ The 16 Ransomware records concern Climatron, The Methodist Church of Southern Af
 
 The strongest reviewed evidence sets include LA VOIE EXPRESS, TK HOLDINGS GROUP, WITS, STAR LÉGUMES, LC2A and TMF Logistics.
 
-The 13 October MeamarGroup publication is retained as lifecycle information but is not counted here because the reviewed material corresponds to the same underlying evidence set already associated with the September incident.
 
 ### 4.2 Data Leak - 2 incidents
 
@@ -201,7 +199,6 @@ The previous README displayed two `Unknown` entries even though the two Moroccan
 - Data Leak: **7 -> 2**, -71.4%.
 - Morocco: 5 incidents, the leading country.
 - incransom: 4 records, the leading actor.
-- MeamarGroup deduplication reduces the October statistical total from 19 source cards to 18 unique incidents.
 
 Alios volumes of 100 GB per country and the TMF Logistics 39 GB figure remain actor claims. The WITS torrent was not downloaded or analyzed. Completeness and exact source of the IAV and enssup.gov.ma datasets remain independently unconfirmed.
 
@@ -230,7 +227,6 @@ timeline
                : EternalRed - Morocco Ministry of Higher Education
 ```
 
-> Uncounted lifecycle follow-up: obscura / MeamarGroup publication on 13 October, linked to the same underlying incident already documented in September.
 
 ## 9. Contextual MITRE ATT&CK mapping
 
@@ -238,7 +234,6 @@ timeline
 |---|---|---|
 | Collection | T1005 - Data from Local System | Observed files, exports, internal documents and archives. |
 | Collection | T1213 - Data from Information Repositories | Structured databases and exports, notably IAV and enssup.gov.ma. |
-| Impact | T1486 - Data Encrypted for Impact | Relevant context for MeamarGroup material containing `.obscura` encrypted copies, without counting the October relisting as a new incident. |
 
 > These mappings are contextual and do not prove that every actor used each listed technique.
 
@@ -254,6 +249,6 @@ timeline
 
 October 2025 contains **18 unique incidents across 11 countries**, split into **16 Ransomware and 2 Data Leak**. Monthly volume is stable compared with September, but the incident mix shifts strongly toward Ransomware.
 
-Morocco leads with 5 incidents. incransom is the most visible group with 4 records. Deduplicating MeamarGroup and restoring the correct attribution of the two Moroccan Data Leak records removes the main inconsistencies from the previous report.
+Morocco leads with 5 incidents. incransom is the most visible group with 4 records. The corrected attribution of the two Moroccan Data Leak records resolves the main remaining inconsistencies in the previous report.
 
 **AFRINTEL** - Open African CTI Monitoring Initiative

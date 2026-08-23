@@ -2,11 +2,35 @@
 
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-The records below are compiled directly from the AFRINTEL monthly files for 2025. Publication dates, discovery dates and uncertainty levels are retained whenever present in the source.
+The records below are consolidated from the AFRINTEL monthly files for 2025. Structured fields are harmonized for annual parity, while publication dates, discovery dates, analytical caveats and uncertainty levels are retained whenever present in the source.
+
+## Consolidation status
+
+| Metric | Value |
+|---|---:|
+| Monthly source records | **197** |
+| Annual incident records | **197** |
+| Annual taxonomy | **121 Ransomware + 73 Data Leak + 3 Access Sale** |
+
+| Month | Monthly source records | Annual unique count |
+|---|---:|---:|
+| January | 17 | 17 |
+| February | 8 | 8 |
+| March | 11 | 11 |
+| April | 17 | 17 |
+| May | 21 | 21 |
+| June | 21 | 21 |
+| July | 21 | 21 |
+| August | 13 | 13 |
+| September | 18 | 18 |
+| October | 18 | 18 |
+| November | 14 | 14 |
+| December | 18 | 18 |
+| **Total** | **197** | **197** |
 
 ## January 2025
 
@@ -16,6 +40,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Healthcare (Dental)
 - **Website:** https://molars.co.ke
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Analysis:** AFRINTEL reviewed the supplied workbook and eight additional evidence files. The workbook contains salary-structure material and separate sheets for doctors, accounts, HR, operations, dental officers, credit control, ICT, medical engineers, dental technicians, customer care, nurses, support staff, technical staff, procurement, graphics and marketing. The evidence also includes a bank-payment screenshot and documents consistent with payroll or staff administration. This supports a published sample assessment and indicates potential exposure of employee compensation, departmental structures, internal operations and financial-processing information. The claimed 19 GB volume remains unverified, as does the initial access vector and the completeness of the dataset. AFRINTEL does not reproduce employee names, salaries, bank details or other personal data.
@@ -27,6 +52,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Administrations / Finance / Public Procurement.
 - **Website:** gags.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** GAGS is the regulatory authority for government services in Egypt. It oversees tender procedures, state inventory management, and disposal of public assets.
@@ -38,6 +64,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Retail / Mass Distribution.
 - **Website:** pnp.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** **Pick n Pay Group Ltd** is the second largest food retailer in South Africa.
 
 ### 11 January 2025
@@ -46,6 +73,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Digital Marketing / SEO.
 - **Website:** seocommarrakech.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SEOCOM is a Moroccan agency providing SEO (Search Engine Optimization), advertising campaign management (SEA), and web development services for local and international companies.
 
 ### 14 January 2025
@@ -54,6 +82,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Oil & Gas Logistics / Port Services.
 - **Website:** intelservices.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Intels is a pillar of the Nigerian economy, managing 90% of offshore oil exploration support activities. The group claims to have exfiltrated approximately 1.5 TB of sensitive data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 
 ### 14 January 2025
@@ -62,6 +91,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Hospitality / Tourism.
 - **Website:** sharmreefhotel.com / sharmelsheikh.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Sharm Reef Hotel is a 4-star resort located on the Um El Sid plateau in Sharm El Sheikh, Egypt.
 
 ### 15 January 2025
@@ -70,10 +100,23 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Administrations
 - **Website:** mts.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** Misr Technology Services (MTS) is the Egyptian government entity responsible for developing and managing the national trade facilitation platform, including the Nafeza system.
 - **Analysis:** AFRINTEL reviewed a local set of screenshots and system-generated PDF captures consistent with the claim made by the threat actor funksec, produced by internal systems of the Maritime Transport and Logistics Sector, including the Egyptian Maritime Data Bank. The reviewed material includes an individual permit-application record naming an applicant, an affiliated shipping agency and a submission date; a port-traffic comparison report listing vessel-call statistics by port for 2023 and 2024; a list of port investment projects and opportunities; and detailed sector payment-collection reports covering several date ranges between January and April 2024, listing client names, transaction types, reference numbers and payment amounts collected through the sector's point-of-sale channel. Two of the reviewed documents carry a system print timestamp of 14 and 15 January 2025, consistent with the claim's publication date. The presence of internally generated, dated reports bearing named applicants and clients, combined with the platform's own letterhead and print metadata, supports a high confidence assessment of genuine access to MTS's internal reporting systems. Given MTS's role in managing Egypt's national trade-facilitation platform, including the Nafeza system, this incident presents a risk to shipping-agency personnel, client financial records and the confidentiality of national trade-facilitation operations. AFRINTEL does not reproduce any applicant name, client name, financial figure or document reference from the reviewed material.
+
+### 16 January 2025
+#### 🇿🇦 South Africa - North-West University (NWU)
+- **Actor / Group:** SevenZeroDay404
+- **Sector:** Education / University
+- **Website:** [nwu.ac.za](https://www.nwu.ac.za/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** North-West University (NWU) is a South African higher education institution. The `nwu.ac.za` domain and the visual identity used in the actor's publication correspond to this university, which is explicitly presented as the victim in the claim.
+- **Analysis:** On 16 January 2025, SevenZeroDay404 published an entry titled **"29K NWU Student Database"** on an underground forum, accompanied by the North-West University logo and a dataset presented as a student database. The actor claims approximately **29,000 records**. The provided file contains names, academic results expressed as GPA values, university programmes and study years. Examination of the content identified **2,893 occurrences of structured GPA values**, which cannot automatically be treated as 2,893 distinct students. The claimed volume of 29,000 records therefore cannot be validated from this sample. Attribution of the dataset to `nwu.ac.za` remains uncertain: no explicit marker such as the `nwu.ac.za` domain, a reference to South Africa or a North-West University campus was identified in the provided data. The naming of several academic programmes and the use of a 4.00 grading system also show similarities with another university using the NWU acronym. These elements are not sufficient to reattribute the claim, but they prevent confirmation that the sample actually originates from North-West University's systems in South Africa. The available evidence therefore establishes **North-West University in South Africa as the victim claimed by SevenZeroDay404**, without independently confirming the origin of the dataset, the completeness of the claimed 29,000 records or an actual compromise of the university's systems. If authentic, the exposed data could facilitate targeted phishing and identity impersonation attempts against students or former students.
 
 ### 21 January 2025
 #### 🇩🇿 Algeria - Barika University Center (cu-barika.dz)
@@ -81,6 +124,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Higher Education / Research.
 - **Website:** cu-barika.dz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Barika University Center (Ahmed Ben Abderrezak El Hamouda) is a higher education hub located in the wilaya of Batna, offering programs in technological sciences, law, and humanities.
 
 ### 21 January 2025
@@ -89,6 +133,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Healthcare
 - **Website:** inayaclinic.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Inaya Clinic is a multidisciplinary medical facility in Algeria, renowned for its centers of excellence in cardiology, cardiovascular surgery, and obstetrics-gynecology.
 
 ### 24 January 2025
@@ -97,6 +142,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Administrations / Water Resources / Agriculture.
 - **Website:** lnrbda.gov.ng
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** LNRBDA is a strategic agency under the supervision of the Nigerian Federal Ministry of Water Resources. It manages dam projects, irrigation, drinking water supply, and rural development.
@@ -108,6 +154,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Higher Education / Research.
 - **Website:** usmba.ac.ma
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** USMBA is a multidisciplinary university comprising numerous institutions (Faculties of Medicine, Science, Letters, ENCG, ENSA, etc.).
@@ -119,6 +166,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Scientific Research / Academic Publishing.
 - **Website:** achieverssciencejournal.org
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** AJSR is a multidisciplinary peer-reviewed journal that publishes original research in the fields of applied sciences, engineering, and technology.
@@ -130,6 +178,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Higher Education / Educational Research.
 - **Website:** fgse.cu.edu.eg
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The FGSE (Faculty of Graduate Studies for Education) is one of the oldest and most respected research institutions in Egypt.
 
 ### 27 January 2025
@@ -138,6 +187,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Consulting Services / Bulk SMS & Broadcast Messaging
 - **Website:** qed.co.ug
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** QED is a leading Ugandan firm specializing in Monitoring, Evaluation and Learning (MEL). It supports projects funded by international organizations in the health, education, and governance sectors, and operates a bulk-SMS and broadcast messaging platform used for stakeholder outreach on behalf of client organizations.
@@ -149,6 +199,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** HR Services / Recruitment
 - **Website:** workers.com.zm
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** Zambian recruitment and temporary work services company.
@@ -160,6 +211,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Higher Education
 - **Website:** zetech.ac.ke
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Zetech University is a leading higher education institution in Kenya.
 
 ## February 2025
@@ -170,6 +222,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Business Services / Technology Consulting (IT & Digital Solutions)
 - **Website:** https://xlab-group.com/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Xlab Group is an Egyptian company specializing in digital marketing solutions, software development, brand strategy consulting, and digital transformation for Middle Eastern companies.
 
 ### 12 February 2025
@@ -178,6 +231,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance / Brokerage
 - **Website:** askgs.ma
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** ASK Gras Savoye is one of the leading insurance brokers in Morocco.
 
 ### 12 February 2025
@@ -186,6 +240,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Services / Environment (Meteorology)
 - **Website:** weathersa.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The South African Weather Service (SAWS) is South Africa's national meteorological service, providing weather forecasts and warnings.
 
 ### 19 February 2025
@@ -194,6 +249,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Government / Digital Public Services
 - **Website:** http://services.gov.zm/
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** The services.gov.zm portal is the central platform of the Zambian government (Smart Zambia Institute). It brings together over 322 online services, ranging from visa and permit applications to tax and administrative services for citizens and businesses.
 - **Analysis:** AFRINTEL opened and inspected (without reproducing) a large set of files attributed to the claim, corresponding to a full profile export from a Windows host named GSB, harvested under the Administrator account by a collection tool whose output is consistently labelled "_throne_" across three distinct, timestamped collection runs spanning roughly 13 hours (evening of 10 February to mid-morning of 11 February 2025), indicating repeated or persistent tool execution rather than a single pass. The material is packaged into 44 archive parts of 1.7-52 MB each (consistent with exfiltration chunked to a size-capped channel) and totals roughly 1.6 GB. Verified contents include: Chrome and Firefox browser artifacts (autofill databases, session stores, site-security state, the Firefox NSS key database, and a 45 MB browser disk-cache container found on inspection to hold cached Microsoft 365/SharePoint/OneDrive/Akamai CDN HTTP traffic); Windows DPAPI protection blobs and certificate/private-key material tied to the Administrator's Windows security identifier; an RDP connection file whose target field, on inspection, resolves to an internal (RFC1918) address; a Firefox history database whose limited browsing activity, on inspection, includes a second distinct internal address; an empty, unused dial-up/VPN phonebook file; and Visual Studio 2017 project backups. One recovered SQL file contains a query against the `ASPStateTempSessions` table together with an internal support note referencing a system named "ZIGS", indicating an ASP.NET application backed by Microsoft SQL Server and consistent with genuine administrative access to the portal's operating environment rather than a superficial claim; a separate file is the well-known public Ola Hallengren SQL Server maintenance script, confirming SQL Server as the database engine. The set also includes an Office 365 tenant user list: on inspection, all 89 listed accounts are licensed (Microsoft 365 E3), 85 under the domain dotgovsolutions.net, 3 under the tenant's default onmicrosoft.com domain, and 1 under an unrelated external domain (a guest/foreign account within the same tenant) - indicating the portal's Microsoft 365 tenant is operated by a third-party IT services provider, with at least one additional external party granted access. A 10-byte password file was present but not opened by AFRINTEL. No Chrome or Firefox saved-password database was found in the reviewed set. The scale, internal consistency, multiple collection runs, and presence of DPAPI/certificate material, internal-network addresses and RDP artifacts support a high confidence assessment of a genuine administrator-level endpoint compromise, independent of the ransomware group's public claim; this differs materially from the actor's framing as a straightforward "1.2 GB data leak", since the reviewed material is predominantly system, credential-adjacent and internal-network artifacts rather than citizen records. AFRINTEL does not reproduce any credentials, certificates, session data, account names, IP addresses or file content from the reviewed sample.
 
@@ -203,6 +259,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance / Insurtech
 - **Website:** brolly.africa
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Brolly is a Ghanaian insurtech startup offering flexible and affordable car insurance solutions (pay-as-you-go model). It allows drivers to spread their insurance payments weekly or monthly via a digital platform.
 - **Analysis:** AFRINTEL reviewed the provided KillSec proof without reproducing personal data. The directory contains 4 CSV policy exports with 183 data rows in total, 77 PDF documents and approximately 10.4 MB of material. The CSV structure is consistent with Brolly's vehicle-insurance operations and includes policy/customer fields, coverage type, insurer and vehicle attributes, policy dates, premiums and registration-related fields. The PDFs comprise 50 car-insurance instalment agreements, 25 loan agreements and 2 motor-insurance policy schedules. File names indicate policy-export periods covering August to October 2024, while the documents include agreements generated during October-November 2024; these are evidence dates, not a confirmed intrusion or publication date. The sample contains personal, contact, insurance and vehicle-related information with potential risks of targeted phishing, identity fraud, insurance fraud and social engineering. The observed material supports a medium-to-high confidence assessment that the sample is thematically and structurally consistent with Brolly data, but AFRINTEL has not independently confirmed the intrusion, the full scope of access or the completeness of the dataset. The group KillSec is the claimed actor; no independent attribution beyond the observed ransomware publication is established. AFRINTEL does not reproduce names, phone numbers, registration numbers, chassis numbers, policy identifiers or other raw personal data.
 
@@ -212,6 +269,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Telecommunications
 - **Website:** www.paratus.africa
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Pan-African telecommunications operator, investing in network infrastructure across Africa.
 
 ### 22 February 2025
@@ -220,6 +278,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Logistics / Distribution
 - **Website:** speed-com.eg
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SPEED Co (Speed Ahmed Hassan) is one of the largest logistics and distribution service providers in Egypt. The company manages storage and transportation of Fast-Moving Consumer Goods (FMCG) for major multinationals and local brands, relying on a vast fleet of vehicles and automated distribution centers. The group claims to have extracted a volume of 444.8 GB of data, comprising 285,891 files; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 
 ### 23 February 2025
@@ -242,6 +301,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology Consulting
 - **Website:** www.itiq.co.bw
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** IT-IQ Botswana is one of the leading providers of IT solutions and certified training (Microsoft, Cisco, VMware) in Botswana.
 
 ### 02 March 2025
@@ -262,6 +322,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology Consulting
 - **Website:** linkgroup.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** LINKGROUP is a South African IT consulting and telecom services company.
 
 ### 03 March 2025
@@ -270,6 +331,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology Consulting
 - **Website:** synaptic.co.tz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Tanzanian IT consulting company.
 
 ### 05 March 2025
@@ -300,6 +362,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education / Private Schooling
 - **Website:** isee-eg.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The International School of Elite Education (ISEE) is a prestigious private school located in Cairo.
 
 ### 25 March 2025
@@ -320,6 +383,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance
 - **Website:** iniholdings.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 - **Double-claim note:** The March and April records are retained separately because the source dates and evidence differ. They involve the same actor, domain and victim name, but AFRINTEL cannot determine from the available material whether the April publication is an update of the March claim or a separate claim. No merger is made pending confirmation.
 ### 26 March 2025
@@ -364,6 +428,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance / Logistics
 - **Website:** www.iacc.holdings
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian private investment holding company focused on maritime transport and logistics. 27.75 GB of data exfiltrated.
 
 ### 07 April 2025
@@ -372,6 +437,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology (Telecommunications)
 - **Website:** cellc.co.za
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Analysis:** AFRINTEL reviewed 20 screenshots from the RansomHouse publication. The evidence covers Cell C customer and employee information, passport material, call records, SMS data, international voice activity, customer contracts, franchise records, confidential NDAs, internal documents and a revenue summary. This breadth is consistent with a material telecommunications data exposure. Potential impacts include subscriber privacy loss, targeted phishing and fraud, employee targeting, exposure of call and messaging metadata, commercial espionage and operational reconnaissance. The screenshots do not independently establish the initial access vector, dataset completeness, affected subscriber count or operational impact. AFRINTEL does not reproduce personal records, passport details, phone numbers, contracts or download links.
@@ -383,6 +449,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Business Services / Outsourcing (BPO)
 - **Website:** ibsns.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** International Business Service (IBS) is one of the largest outsourcing service providers in Egypt. The company specializes in human resources management, mass recruitment, payroll outsourcing, and maintenance/logistics services for large companies and multinationals operating in Egypt.
 
 ### 08 April 2025
@@ -471,6 +538,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Information Technology
 - **Website:** tawasol-it.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** A technology solutions integrator based in Cairo that installs security and network infrastructure systems for businesses and smart buildings.
 
 ### 13 April 2025
@@ -515,6 +583,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Agribusiness
 - **Website:** premiermeats.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Premier Meats is a South African company specializing in the processing and distribution of quality meats.
 
 ### 22 April 2025
@@ -523,6 +592,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Agribusiness / Dairy Industry
 - **Website:** natilait.com.tn
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Natilait is a major player in the Tunisian agrifood sector, specializing in the production and marketing of milk (UHT), yogurt, and derived products.
 - **Analysis:** The 12 supplied JPG/PNG images include at least one structured internal product and stock table with item codes, dairy-product descriptions, quantities and inventory or stock fields; the other images appear related to operational business records, although several are not sufficiently legible for reliable extraction. The material is consistent with a data sample from Natilait manufacturing or distribution operations and could support competitive intelligence, document fraud or supply-chain targeting. The intrusion vector, the complete dataset scope and whether the images were produced by cicada3301 are not independently established. No product records or commercial values are reproduced.
 
@@ -532,6 +602,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Healthcare
 - **Website:** daralteb.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** Dar Al Teb is one of Egypt's most renowned medical centers, specializing in reproductive medicine, in vitro fertilization (IVF), and women's health.
@@ -545,6 +616,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Managed Services (MSP) / Cloud
 - **Website:** https://www.eoh.co.za / ioco.tech
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** EOH is one of South Africa's largest technology service and consulting providers, offering digital transformation and infrastructure solutions. The Devman group used a generic description ("South African IT firm") on its leak site, a common tactic to maintain pressure during negotiation phases.
 
 ### 01 May 2025
@@ -553,6 +625,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Information Technology (IT) / Managed Services (MSP)
 - **Website:** https://dovesit.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** DovesIT is a South African Managed Service Provider (MSP). The company offers backup solutions, cloud hosting, network maintenance, and cybersecurity for small and medium-sized enterprises (SMEs) in South Africa.
 
 ### 01 May 2025
@@ -561,6 +634,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Business Services / Human Resources
 - **Website:** Not identified with sufficient confidence
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** This is a human resources firm or service provider based in South Africa, managing contractual, payroll, and personal data of numerous employees on behalf of third parties (HR outsourcing).
 
 ### 05 May 2025
@@ -581,6 +655,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Personal Protective Equipment (PPE) / Industry
 - **Website:** pienaarbrothers.co.za
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** South African leader in the supply and distribution of Personal Protective Equipment (PPE) and safety solutions for the mining, industrial, and manufacturing sectors.
@@ -653,6 +728,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Air transport
 - **Website:** www.flysaa.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** South African Airways (SAA) is the national airline and the largest in South Africa, operating domestic and international flights.
@@ -664,6 +740,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Government / Social Services
 - **Website:** www.nssf.go.ke
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** National Social Security Fund of Kenya, the statutory body managing mandatory pension and social-security contributions for Kenyan workers. The actor demands $4.5 million USD.
@@ -675,6 +752,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Pharmacy / Healthcare
 - **Website:** medswana.co.bw
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence Level:** Medium
 - **Impact Level:** Level 3
 - **Victim Description:** Medswana (Pty) Ltd is one of Botswana's leading pharmaceutical distributors.
@@ -695,6 +773,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Ransomware Group:** arkana
 - **Sector:** Mining
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Website:** angloamerican.com
 - **Victim Description:** Anglo American plc is a multinational mining company based in Johannesburg and London. It is the world's largest producer of platinum and diamonds, with operations in over 40 countries. It also mines copper, nickel, iron ore, and coal.
 
@@ -704,6 +783,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Telematics / IoT Security
 - **Website:** netstar.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Netstar, a subsidiary of the Altron group, is the pioneer of the stolen vehicle recovery (SVR) industry in South Africa.
 
 ### 26 May 2025
@@ -736,6 +816,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance
 - **Website:** ascoma.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** ASCOMA Cameroon is the Cameroonian branch of the Ascoma group, the leading independent insurance brokerage network in sub-Saharan Africa.
@@ -779,6 +860,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Business Services
 - **Website:** https://mttexpertises.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** MTT Expertises is a multidisciplinary engineering and expertise firm based in Casablanca (with offices in Agadir and Tangier).
@@ -790,6 +872,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Land Administration / Public Sector.
 - **Website:** ingonyamatrust.org.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Ingonyama Trust Board (ITB) is a South African administrative authority responsible for managing approximately 2.8 million hectares of communal land in KwaZulu-Natal province.
 
 ### 06 June 2025
@@ -798,13 +881,14 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Human Resources / Recruitment / Temporary Work.
 - **Website:** https://bestprofil.ma
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Victim Description:** Best Profil is one of the leaders in recruitment and temporary work in Morocco. The Lynx group describes this as a total exfiltration of 26 GB, now freely accessible on its leak site after ransom negotiations reportedly failed.
 - **Analysis:** AFRINTEL reviewed a local sample of the leaked material, consisting of internal administrative and operational documents referencing "PEGASE" (an internal system/tool), staff attendance and payroll-tracking spreadsheets, invoice-verification and billing-detail files, and a client-complaint record for an industrial site. The presence of internal system manuals, payroll and timekeeping data and site-level administrative correspondence is consistent with a genuine internal-systems compromise rather than a superficial claim. The exposure of staff attendance, payroll and billing records creates a risk of payroll fraud, business-email compromise and social engineering against Best Profil's staff and corporate clients. AFRINTEL does not reproduce any employee names, client names or financial figures from the reviewed sample.
 
 ### 08 June 2025
 #### 🇩🇿 Algeria - Crédit Populaire d'Algérie (cpa-bank.dz)
 - **Incident type:** Data Leak
-- **Actor / Group:** TajineSec / Tajinesec_MA (publication claim)
+- **Actor / Group:** TajineSec / Tajinesec_MA
 - **Sector:** Banking / Financial Services.
 - **Website:** https://cpa-bank.dz
 - **Status:** Claim - Unverified
@@ -828,7 +912,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 09 June 2025
 #### 🇬🇭 Ghana - Priority Insurance Company Limited
 - **Incident type:** Data Leak
-- **Actor / Group:** 0x0day, post published on the cybercriminal forum DarkForums
+- **Actor / Group:** 0x0day
 - **Sector:** Insurance / Financial Services
 - **Website:** priorityinsuranceghana.net
 - **Status:** Claim - Data Sample Published
@@ -841,6 +925,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Conglomerate / Multi-sectoral
 - **Website:** https://www.currimjee.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** One of the oldest and most important conglomerates in Mauritius, operating in telecommunications (Emtel), energy, real estate, tourism, and financial services.
 
 ### 11 June 2025
@@ -859,6 +944,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Retail (Fashion)
 - **Website:** http://carducci.co.za/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Carducci is a South African fashion brand based in Cape Town, founded in 1978. It specializes in elegant menswear, including suits, casual wear, and accessories. The brand is renowned for its craftsmanship and refined fabrics. Carducci is part of the Seardel group.
 
 ### 14 June 2025
@@ -878,7 +964,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 14 June 2025
 #### 🇩🇿 Algeria - Ministry of Youth and Sports (MJS) / Directorates of Youth and Sports (DJS)
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump, post published on a cybercriminal forum (DarkForums)
+- **Actor / Group:** mrdump
 - **Sector:** Government / Public Administration / Youth and Sports
 - **Website:** [mjs.gov.dz](https://www.mjs.gov.dz)
 - **Status:** Data Fully Published
@@ -896,7 +982,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 18 June 2025
 #### 🇩🇿 Algeria - Ministry of National Defense (MDN)
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump, post published on a cybercriminal forum (DarkForums)
+- **Actor / Group:** mrdump
 - **Sector:** Defense / National Security
 - **Website:** Not specified (internal file, no institutional domain visible)
 - **Status:** Claim - Unverified
@@ -919,7 +1005,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 19 June 2025
 #### 🇩🇿 Algeria - General Directorate of Customs (DGD) / Export and Import Control Service
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump (Telegram channel "Server dump")
+- **Actor / Group:** mrdump
 - **Sector:** Government / Customs and Foreign Trade
 - **Website:** [douane.gov.dz](https://www.douane.gov.dz)
 - **Status:** Claim - Unverified
@@ -964,7 +1050,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 20 June 2025
 #### 🇹🇳 Tunisia - Ministry of National Defense / Armed Forces
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump (publication on the Telegram channel \"Server dump\")
+- **Actor / Group:** mrdump
 - **Sector:** Defense / National Security
 - **Website:** Not specified
 - **Status:** Claim - Data Sample Published
@@ -975,7 +1061,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 #### 🇩🇯 Djibouti - Embassy of Djibouti in Morocco
 - **Incident type:** Data Leak
 
-- **Actor / Group:** MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums)
+- **Actor / Group:** MdHackersArmy
 - **Sector:** Government / Diplomatic
 - **Status:** Claim - Unverified
 - **Website:** Not specified
@@ -1000,7 +1086,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 03 July 2025
 #### 🇩🇿 Algeria - Algeria Post / ECCP
 - **Incident type:** Data Leak
-- **Actor / Group:** sanji_shi5 (source account)
+- **Actor / Group:** sanji_shi5
 - **Sector:** Postal Services / Financial Services
 - **Website:** [poste.dz](https://www.poste.dz)
 - **Source publication date:** 3 July 2025
@@ -1014,6 +1100,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Industrial Supplies / Mining Support Services.
 - **Website:** https://mafate.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Mafate Business Enterprise is an industrial service provider established in Middelburg (Mpumalanga), at the heart of the South African mining region.
 
 ### 09 July 2025
@@ -1042,6 +1129,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** NGO (Education & Governance)
 - **Website:** https://twaweza.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Twaweza East Africa is a leading pan-African organization, based in Tanzania (with offices in Kenya and Uganda).
 
 ### 14 July 2025
@@ -1096,6 +1184,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Government / Energy (Electricity)
 - **Website:** https://eehc.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** The Egyptian Electricity Holding Company (EEHC) is the state holding company overseeing electricity generation, transmission and distribution across Egypt, including its regional distribution subsidiaries. The actor demands $2,270,000 USD.
@@ -1107,6 +1196,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Administrations / Local Government.
 - **Website:** www.otjimun.org.na
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** The municipality of Otjiwarongo is the local government body for the city of Otjiwarongo, capital of the Otjozondjupa region in Namibia.
@@ -1284,6 +1374,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Agribusiness / Industry / Logistics
 - **Website:** www.cevital.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Leader in the agrifood industry in Algeria, active in electronics, steel, glass, and distribution.
 
 ### 17 August 2025
@@ -1292,6 +1383,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology (Software Publisher)
 - **Website:** syspro.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SYSPRO is a South African ERP (Enterprise Resource Planning) software publisher, providing integrated management solutions for manufacturing and distribution companies.
 
 ### 18 August 2025
@@ -1300,6 +1392,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Energy (Electricity)
 - **Website:** https://www.uetcl.go.ug / www.uetcl.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Ugandan public company responsible for electricity transmission.
 
 ### 11 August 2025
@@ -1319,6 +1412,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Logistics
 - **Website:** ifc-tunisie.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Tunisian company providing maritime, air, and land transport services, as well as logistics management and customs formalities for importing and exporting companies.
 
 ### 20 August 2025
@@ -1327,6 +1421,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Telematics / IoT Security
 - **Website:** www.netstar.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Netstar, a subsidiary of the Altron group, is the pioneer of the stolen vehicle recovery (SVR) industry in South Africa.
 - **Analysis:** AFRINTEL previously recorded a claim against this same company by devman on 23 May 2025. This second claim, published roughly three months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
@@ -1346,6 +1441,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance / Financial Services
 - **Website:** www.swan.mu / swanforlife.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SWAN (Swan General Ltd and Swan Life Ltd) is the market leader in insurance and financial services in Mauritius.
 
 ### 25 August 2025
@@ -1391,10 +1487,11 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Real Estate / Construction / Engineering
 - **Website:** https://meamargroup.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** MeamarGroup (including Meamar Real Estate Development and Meamar Construction) is a major player in the Egyptian construction sector for over 25 years. Based in Cairo (New Cairo), the group manages over 400 projects ranging from luxury residential complexes to industrial and medical facilities (like the Biogeneric Pharma factory).
-- **Analysis:** AFRINTEL reviewed a local server-side filesystem archive (491 files and directories, all owned by the www-data web-server account) consistent with this claim. Directory-level timestamps for this collection cluster around 05 September 2025, matching this entry's claim date, while the bulk of the underlying files carry an earlier timestamp of 27 August 2025, suggesting an initial data-staging event ahead of the public claim. See the fuller analysis under the 13 October 2025 entry ("meamargroup.com (third attack)"), which documents the same archive in detail, including internal accounting ledgers, a large sales call-center/prospect-contact archive, employee CVs, and file copies bearing the ".obscura" ransomware encryption extension. AFRINTEL treats these as related records of the same underlying compromise rather than independent incidents. AFRINTEL does not reproduce any client name, contact number, employee name or financial figure from the reviewed material.
+- **Analysis:** AFRINTEL reviewed a local server-side filesystem archive (491 files and directories, all owned by the www-data web-server account) consistent with this claim. Directory-level timestamps for this collection cluster around 05 September 2025, matching this entry's claim date, while the bulk of the underlying files carry an earlier timestamp of 27 August 2025, suggesting an initial data-staging event ahead of the public claim. The reviewed content includes multi-year internal accounting workbooks, an extensive sales call-center/prospect-contact archive, employee CVs and internal design/CAD material for real-estate projects. A nested archive contains original files alongside copies bearing the `.obscura` ransomware encryption extension, directly supporting a file-encryption stage rather than an exfiltration claim alone. A short text file consistent with a Tor negotiation-portal countdown was also present. The combination of web-server ownership, internally consistent timestamps and actor-encrypted file copies supports a very high confidence assessment of a genuine compromise of MeamarGroup's internal file environment. AFRINTEL does not reproduce any client name, contact number, employee name or financial figure from the reviewed material.
 
 ### 06 September 2025
 #### 🇨🇮 Ivory Coast - NSIA Assurances
@@ -1411,6 +1508,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Catering / Food Services / Industrial Catering
 - **Website:** https://www.thepromisenig.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Promise is a leading Quick Service Restaurant (QSR) chain and industrial catering service in Nigeria, particularly established in Port Harcourt and the Niger Delta region.
 
 ### 09 September 2025
@@ -1419,6 +1517,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Manufacturing Industry / Bedding / Furniture
 - **Website:** https://www.dolidol.ma
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Dolidol (a subsidiary of the Palmeraie Industries et Services group) is the undisputed leader in bedding and polyurethane foam in Morocco.
 
 ### 09 September 2025
@@ -1427,6 +1526,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Manufacturing Industry (Plastics)
 - **Website:** https://www.proplastics.co.zw
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 - **Analysis:** The supplied local evidence set contains 63 files associated with Proplastics, including PDFs, spreadsheets, image files and text files. Filenames indicate business records covering invoices and credit memos, account balances, bills of materials, backorders, deliveries, sales analysis and branch reporting. The files carry dates spanning 2023-2024, while the directory metadata places the collection in September 2025; these timestamps are treated as evidence context, not as a confirmed intrusion or publication date. The material supports the plausibility and potential sensitivity of the September 2025 claim, but does not independently establish the access vector, the complete scope of the dataset or the attribution to TheGentlemen. AFRINTEL does not reproduce names, account details, financial values, customer records or document contents.
 
@@ -1436,6 +1536,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance
 - **Website:** https://princepsfinance.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Financial institution based in Lagos, specializing in consumer credit and SME financing.
 
 ### 11 September 2025
@@ -1454,7 +1555,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 11 September 2025
 #### 🇦🇴 Angola - Angola Government Employees Database (pape.gov.ao)
 - **Incident type:** Data Leak
-- **Actor / Group:** privilege, post published on a cybercriminal forum
+- **Actor / Group:** privilege
 - **Sector:** Government / Public Administration
 - **Website:** [pape.gov.ao](https://pape.gov.ao)
 - **Status:** Claim - Data Sample Published
@@ -1476,6 +1577,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public administrations
 - **Website:** https://www.orpp.go.ke
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Kenyan state body responsible for the registration, regulation, and supervision of political party funding.
 
 ### 16 September 2025
@@ -1484,6 +1586,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance / Financial Services
 - **Website:** https://jubileelife.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Major player in life insurance and fund management in Kenya, a subsidiary of Jubilee Holdings Limited.
 
 ### 17 September 2025
@@ -1492,6 +1595,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / ERP Software Publishing
 - **Website:** https://www.accflex.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
 
 ### 22 September 2025
@@ -1500,6 +1604,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Digital Services / Software Development
 - **Website:** https://fractalite.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Fractalite is a Moroccan digital consulting and engineering agency, specializing in software development and digital support for businesses.
 
 ### 24 September 2025
@@ -1517,10 +1622,11 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 
 ### 29 September 2025
 #### 🇸🇳 Senegal - Direction Générale des Impôts et des Domaines (DGID)
-- **Ransomware Group:** blackshrantac
+- **Ransomware Group:** BlackShrantac
 - **Sector:** Public Administration / Finance / Taxation
 - **Website:** https://www.impots.gouv.sn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The **DGID** is the central agency of Senegal's Ministry of Finance and Budget, responsible for tax collection, national domain management, and the land registry (cadastre). The ransomware group claims to have leaked 1 terabyte (1 TB) of sensitive data, including structured tax databases, land registries and taxpayer banking information; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 
 ### 30 September 2025
@@ -1540,6 +1646,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Construction / HVAC
 - **Website:** https://climatron.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Climatron (Pty) Ltd is a company specializing in industrial and commercial air conditioning solutions, based in Johannesburg.
 
 ### 05 October 2025
@@ -1548,6 +1655,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Religion / Charitable Organization
 - **Website:** www.methodist.org.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Methodist Church of Southern Africa (MCSA) is one of the most influential Christian denominations in the region. It operates not only in South Africa but also in Botswana, Lesotho, Namibia, Eswatini, and Mozambique.
 
 ### 10 October 2025
@@ -1556,6 +1664,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Transport / Logistics
 - **Website:** www.momentumlogistics.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Momentum Logistics is a South African logistics provider based in Johannesburg.
 
 ### 13 October 2025
@@ -1564,21 +1673,12 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Logistics
 - **Website:** https://lavoieexpress.ma / https://lavoieexpress.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 - **Analysis:** AFRINTEL reviewed a local sample of multi-sheet spreadsheet exports consistent with the claim made by the threat actor medusa, each watermarked with the group's Tor leak-site address. The reviewed material includes a general accounting ledger (bank and journal entries dated 2020-2021), warehouse and logistics workbooks covering goods reception, dispatch, stock-preparation and internal-transfer movements for major appliance brands (referencing BSH/Bosch-Siemens product lines) tied to named internal staff handling the operations, and a client accounts-receivable ageing report listing several dozen named corporate clients across multiple Moroccan cities (Casablanca, Agadir, Tanger, Marrakech, Fès, Settat and others), including well-known national and multinational accounts (among them Procter & Gamble-affiliated entities, Savola Maroc, Centrale Laitière, Ciment du Maroc, BSH Electroménager and Ecolab), together with named client contacts, phone numbers, outstanding balances, payment terms and collections/dispute status. The internal consistency of the data across accounting, warehouse and commercial modules, the presence of real, identifiable Moroccan and multinational client accounts, and the multi-year date range (2020-2023) spanning multiple branches support a very high confidence assessment of a genuine, broad compromise of La Voie Express's internal ERP and accounting systems. Given the scale of the exposed accounts-receivable and banking-ledger data and its extension into the client base of a major national logistics provider, this incident creates a material risk of invoice fraud, business email compromise and targeted social engineering against La Voie Express and its corporate clients, beyond the company's own operational exposure. AFRINTEL does not reproduce any client name, contact name, phone number, financial figure or staff identifier from the reviewed material.
 
-### 13 October 2025
-#### 🇪🇬 Egypt - meamargroup.com (third attack)
-- **Ransomware Group:** obscura
-- **Sector:** Real Estate / Construction / Engineering
-- **Website:** https://meamargroup.com
-- **Status:** Claim - Data Sample Published
-- **Confidence level:** Very High
-- **Impact level:** Level 3
-- **Victim Description:** Egyptian company specializing in real estate development.
-- **Analysis:** AFRINTEL reviewed a local server-side filesystem archive (491 files and directories, all owned by the www-data web-server account) consistent with the claim made by the threat actor obscura. File timestamps cluster into two groups: the bulk of the material (484 entries) dated 27 August 2025, and a smaller set of directory entries dated 05 September 2025, matching the group's first public claim date against this victim. The reviewed content includes multi-year internal accounting workbooks (yearly ledgers spanning 2015-2024, a "main data 2024" financial file, project cost-comparison sheets), an extensive sales call-center archive of roughly 249 dated spreadsheets covering missed-call and prospect-contact logs from September 2024 to July 2025, at least 21 employee CVs and resumes, and internal design, brochure and CAD material for named real-estate developments (including the Clove Mall and Prime Mall projects). A nested archive within the collection contains a mix of original files alongside copies bearing the ".obscura" ransomware encryption extension (for example, multiple yearly ledger workbooks and IT-department files), directly evidencing the file-encryption stage of the attack rather than an exfiltration claim alone. A short text file consistent with a Tor negotiation-portal countdown ("240 hours. Not available yet!") was also present. The combination of web-server file ownership, internally consistent multi-year timestamps, and the presence of actor-encrypted file copies supports a very high confidence assessment of a genuine, broad compromise of MeamarGroup's internal file server. Given the scale of the exposed financial ledgers, sales-prospect contact data and employee personal information, this incident creates a risk of invoice fraud, targeted phishing against prospective clients and employees, and competitive exposure of internal project and pricing data. AFRINTEL does not reproduce any client name, contact number, employee name or financial figure from the reviewed material.
 
 ### 15 October 2025
 #### 🇰🇪 Kenya - Turnkey Africa
@@ -1586,6 +1686,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology / Fintech (Insurance Solutions)
 - **Website:** https://turnkeyafrica.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Turnkey Africa is a pan-African technology leader. The company develops and provides software management solutions (Core Insurance Systems) for insurance and reinsurance companies in over 10 African countries.
 
 ### 17 October 2025
@@ -1594,6 +1695,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Air transport
 - **Website:** www.madagascarairlines.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Madagascar Airlines is the national airline of the Republic of Madagascar.
 
 ### 18 October 2025
@@ -1602,6 +1704,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Mining / Conglomerate
 - **Website:** https://congomineralservices.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Congolese holding with activities in timber, logistics, and mineral exploration.
 
 - **Confidence level:** Medium
@@ -1614,6 +1717,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Education (University)
 - **Website:** https://www.wits.ac.za
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** The University of the Witwatersrand, located in Johannesburg, is one of Africa's most prestigious research institutions.
@@ -1625,14 +1729,16 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Agribusiness
 - **Website:** https://sangel-gabon.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Gabonese food production and distribution company based in Libreville, specializing in frozen products.
 
 ### 20 October 2025
 #### 🇪🇬 Egypt - Al Ahly Leasing & Factoring Company
-- **Ransomware Group:** blackshrantac
+- **Ransomware Group:** BlackShrantac
 - **Sector:** Finance
 - **Website:** alahlyleasing.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian financial institution specializing in leasing and factoring, a subsidiary of the National Bank of Egypt.
 
 ### 23 October 2025
@@ -1641,6 +1747,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Wholesale Trade (Food Products)
 - **Website:** https://starlegumes.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** Moroccan wholesaler of fruits, vegetables, spices, and dried seeds based in Casablanca.
@@ -1652,6 +1759,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Pharmaceutical Industry / Laboratory
 - **Website:** https://multi-laboratoire-lc2a.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** Moroccan laboratory offering a platform for configuring analytical projects for businesses.
@@ -1663,6 +1771,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Legal Services
 - **Website:** https://houstonwrongfuldeathlawyers.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian law firm.
 
 ### 28 October 2025
@@ -1671,6 +1780,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance
 - **Website:** https://aliosfinance.co.tz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tanzania, offering specialized financing solutions. 100 GB of data exfiltrated.
 
 ### 28 October 2025
@@ -1679,6 +1789,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance
 - **Website:** https://aliosfinance.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tunisia, specializing in financing for businesses and individuals. During this intrusion, 100 GB of data were exfiltrated by the incransom group.
 
 ### 31 October 2025
@@ -1687,6 +1798,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Logistics
 - **Website:** https://tmf-logistics.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** TMF Logistics is an Algerian company specializing in transport and logistics solutions. During this attack, the incransom group claimed the exfiltration of 39 GB of sensitive company data.
 - **Analysis:** Internal financial and operational documents reviewed by AFRINTEL corroborate the incransom claim. A November 2024 revenue-by-client spreadsheet lists roughly thirty corporate clients served by TMF Logistics, including major food, beverage and pharmaceutical companies operating in Algeria (e.g. Danone Algérie, Institut Pasteur d'Algérie, GlaxoSmithKline Algérie, Fromagerie Bel Algérie), alongside refrigerated and general freight service categories (frigo, bâché and flatbed trailers). A separate detailed billing export covers invoice-level transport operations across numerous Algerian wilayas (including Béjaïa, Bouira, Batna, Constantine, Djelfa, Ghardaïa, Ouargla and Tindouf), indicating a national delivery network. A delivery discharge document confirms the company's official identity: SPA TMF Logistics, based in the Taharacht industrial zone, Akbou (Béjaïa wilaya), with its registered contact details and business registration references. The combination of a national client portfolio, route network data and business registration details creates a supply-chain risk (client impersonation, invoice fraud, competitive intelligence) extending beyond TMF Logistics' own operational exposure.
 
@@ -1717,6 +1829,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Logistics
 - **Website:** https://dovern-import.com/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Import company based in Morocco, specializing in the distribution of fine wines, spirits, and prestige champagnes.
 
 ### 04 November 2025
@@ -1730,7 +1843,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Analysis:** AFRINTEL reviewed two identical files from the provided evidence set (DB.txt and HoJmS, matching by SHA-256), containing a five-record applicant export. The schema includes applicant identifiers, national identity numbers, names, addresses, phone numbers, email fields, dates of birth, nationality, employment history, current occupation, salary expectations and remuneration-related fields, alongside a password field. The sample is structurally consistent with a recruitment or staffing database and contains highly sensitive personal and employment information. The files are dated 4 November 2025 in the evidence directory; this is treated as the discovery/evidence date, not as a confirmed publication or intrusion date. The available material does not identify a threat actor, forum, access method or complete dataset volume. AFRINTEL records the case as a data-leak claim with a published sample and does not reproduce names, identity numbers, contact details, passwords or other raw personal data.
 ### 05 November 2025
 #### 🇨🇮 Ivory Coast - Anka (Anka.africa)
-- **Actor / Group:** Spirigatito, post published on a cybercriminal forum
+- **Actor / Group:** Spirigatito
 - **Sector:** Logistics
 - **Website:** https://www.anka.africa/
 - **Status:** Claim - Data Sample Published
@@ -1745,7 +1858,8 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Ransomware Group:** clop
 - **Sector:** Technology / Industry
 - **Website:** www.elsewedyelectric.com
-- **Status:** Claim - Data Sample Published
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 2
 - **Victim Description:** Major Egyptian manufacturer of cables, electrical systems, and engineering products.
@@ -1756,7 +1870,8 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Ransomware Group:** clop
 - **Sector:** Financial Services (Banking)
 - **Website:** www.zanaco.co.zm
-- **Status:** Claim - Data Sample Published
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** Zambia National Commercial Bank, one of Zambia's leading commercial banks.
@@ -1768,6 +1883,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Retail / Mass retail / E-commerce
 - **Website:** www.marjane.ma
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** Groupe Marjane is the largest Moroccan mass retail group, operating hypermarkets and supermarkets.
@@ -1789,6 +1905,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public administrations / Social Housing
 - **Website:** ecdhs.gov.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Eastern Cape Department of Human Settlements in South Africa is the provincial body responsible for housing policy, urban planning, and access to property for vulnerable populations in South Africa.
 
 ### 09 November 2025
@@ -1797,6 +1914,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Financial Services (Pension Management)
 - **Website:** fidelitypensionmanagers.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian pension fund manager.
 
 ### 11 November 2025
@@ -1805,6 +1923,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Construction
 - **Website:** www.samcrete.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Samcrete Holding is a fully integrated engineering, contracting, development, manufacturing, and investment company established in 1963.
 
 ### 25 November 2025
@@ -1813,6 +1932,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Wood and Building Materials Manufacturing
 - **Website:** lamaica.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** LAMAICA is one of the leaders in the Egyptian market in the production of melamine faced panels, high-pressure laminates (HPL), edge bands, and furniture components.
 
 ### 26 November 2025
@@ -1821,6 +1941,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Real Estate / Investment / Urban Development
 - **Website:** arabia-holding.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian holding company with interests in various sectors, including real estate and management.
 
 ### 26 November 2025
@@ -1829,6 +1950,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Health / NGO / Humanitarian
 - **Website:** sevci.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Santé Espoir Vie Côte d'Ivoire (SEV-CI) is a leading Ivorian non-governmental organization. It works to improve the health of populations, with a particular focus on the fight against HIV/AIDS, tuberculosis, and the strengthening of community health systems.
 
 ### 30 November 2025
@@ -1848,6 +1970,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Technology
 - **Website:** 3s-software.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian technology service provider specializing in software development.
 
 ### 05 December 2025
@@ -1856,6 +1979,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance (Health)
 - **Website:** https://nhima.co.zm/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Zambian authority managing the national health insurance scheme.
 
 ### 06 December 2025
@@ -1864,6 +1988,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Agribusiness / Beverages (Alcoholic and non-alcoholic)
 - **Website:** www.kasapreko.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Kasapreko is one of the largest beverage manufacturers in Ghana and a major exporter throughout the ECOWAS region.
 
 ### 06 December 2025
@@ -1872,6 +1997,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Automotive Distribution / Diagnostic Equipment
 - **Website:** diesel-electric.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Diesel-Electric is one of South Africa's largest distributors specializing in automotive components, diesel injection systems, and diagnostic equipment (a major Bosch partner).
 
 ### 07 December 2025
@@ -1880,6 +2006,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance
 - **Website:** www.incolease.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian leasing company.
 
 ### 07 December 2025
@@ -1888,6 +2015,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Public Administration / Local Government
 - **Website:** elundini.gov.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Elundini Local Municipality is a key administrative authority located in the Joe Gqabi District (Eastern Cape), encompassing the towns of Maclear, Ugie, and Mount Fletcher.
 
 ### 08 December 2025
@@ -1896,6 +2024,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Finance / Trade
 - **Website:** arkanonline.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian conglomerate, Arkan Group, active in industry, agriculture, and wholesale trade.
 
 ### 11 December 2025
@@ -1904,6 +2033,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Insurance
 - **Website:** leadwayhealth.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Leadway Assurance is the largest private insurance company in Nigeria.
 
 ### 12 December 2025
@@ -1912,6 +2042,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Healthcare
 - **Website:** www.chularabta.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 
 ### 15 December 2025
@@ -1920,6 +2051,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Health / Medical Association / Education
 - **Website:** strtn.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Tunisian Society of Radiology (STR) is the reference organization for radiologists in Tunisia.
 
 ### 22 December 2025
@@ -1928,6 +2060,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Sector:** Real Estate Development / Management of Industrial and Leisure Parks
 - **Website:** polarisparks.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Polaris Parks is one of Egypt's leading private industrial park developers.
 
 ### 24 December 2025
@@ -1943,27 +2076,29 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 - **Analysis:** AFRINTEL reviewed a local sample of documents associated with this claim. The material includes approximately 25 individually named consumer case files consistent with debt-review/debt-counselling matters handled by the NCR, roughly 20 emails referencing named individuals together with partial identifiers resembling South African ID-number date-of-birth prefixes, and an internal enforcement memo dated 24 June 2022 from the NCR's Manager: Complaints Department to the Acting Manager: Investigations and Enforcement, opening an investigation into an entity referred to as "Debt Accord Solutions" for allegedly operating as an unregistered debt counsellor. The sample also includes an internal administrator spreadsheet tracking case-related email volumes on a near-daily to monthly basis from August 2020 through December 2024, NCR-branded logo files, regulatory forms (including a Form 29 and a written-consent document under Regulation 50(5)), a mandate document and a bank-details record. The documents are internally consistent with the NCR's branding, organisational structure (named managers and departments) and regulatory casework format. The sample indicates exposure of consumer debt-review case files, internal investigation and enforcement records, and multi-year operational tracking data, creating a material risk of identity fraud and targeted phishing against named consumers and NCR staff, as well as potential interference with ongoing regulatory investigations. AFRINTEL does not reproduce any consumer name, identifier, case file content, staff name or investigation detail from the reviewed material.
 
 ### 26 December 2025
-#### 🇹🇳 Tunisia - Hopital La Rabta (second cyberattack)
+#### 🇹🇳 Tunisia - Hopital La Rabta (second ransomware claim)
 - **Ransomware Group:** qilin
 - **Sector:** Healthcare
 - **Website:** www.chularabta.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 - **Analysis:** AFRINTEL previously recorded a claim against this same hospital by devman on 12 December 2025. This second claim, published two weeks later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 26 December 2025
-#### 🇿🇼 Zimbabwe - Proplastics Limited (second cyberattack)
+#### 🇿🇼 Zimbabwe - Proplastics Limited (second ransomware claim)
 - **Ransomware Group:** lockbit5
 - **Sector:** Manufacturing Industry (Plastics)
 - **Website:** proplastics.co.zw
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 - **Analysis:** AFRINTEL previously recorded a claim against this same company by TheGentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 29 December 2025
 #### 🇩🇿 Algeria - Oran University 1 Ahmed Ben Bella
 - **Incident type:** Data Leak
-- **Actor / Group:** GhostVector (source account)
+- **Actor / Group:** GhostVector
 - **Sector:** Education / University
 - **Website:** Not specified
 - **Source publication date:** 29 December 2025
@@ -1974,7 +2109,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 29 December 2025
 #### 🇪🇬 Egypt - 100 Watt Plast (100wattplast.com)
 - **Incident type:** Data Leak
-- **Actor / Group:** camillabf, post published on a cybercriminal forum (RaidForums)
+- **Actor / Group:** camillabf
 - **Sector:** Industrial / Electrical and Plastic Products Manufacturing
 - **Website:** [100wattplast.com](https://100wattplast.com)
 - **Status:** Claim - Data Sample Published
@@ -1995,7 +2130,7 @@ The records below are compiled directly from the AFRINTEL monthly files for 2025
 ### 31 December 2025
 #### 🇰🇪 Kenya - Kenya Electricity Transmission Company (KETRACO)
 - **Incident type:** Data Leak
-- **Actor / Group:** LindaBF, post published on a cybercriminal forum (RaidForums)
+- **Actor / Group:** LindaBF
 - **Sector:** Energy / Electricity Transmission (Critical Infrastructure)
 - **Website:** [ketraco.co.ke](https://ketraco.co.ke)
 - **Status:** Claim - Data Sample Published

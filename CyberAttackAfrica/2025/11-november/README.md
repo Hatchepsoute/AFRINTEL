@@ -32,7 +32,7 @@ November 2025 contains **14 documented incidents across 6 African countries**: *
 
 ### 1.1 Month-over-month comparison
 
-> The comparison uses the harmonized October 2025 total of **18 unique incidents**, after deduplication of the MeamarGroup lifecycle follow-up.
+> The comparison uses the corrected October 2025 corpus of **18 incidents**. The October MeamarGroup entry has been removed from the October dataset because it reproduced the same underlying Obscura incident already documented in September.
 
 | Indicator | October 2025 | November 2025 | Observed change |
 |---|---:|---:|---:|
@@ -242,6 +242,6 @@ timeline
 
 November 2025 contains **14 incidents across 6 countries**, split into **10 Ransomware and 4 Data Leak**.
 
-The volume falls by 22.2% compared with the 18 unique incidents in harmonized October. Egypt and Morocco lead with 4 incidents each. clop and nightspire are the most visible actors with 3 records each. The recalculation mainly corrects the number of unattributed actors: **1, not 3**.
+The volume falls by 22.2% compared with the corrected October corpus of 18 incidents. Egypt and Morocco lead with 4 incidents each. clop and nightspire are the most visible actors with 3 records each. The recalculation mainly corrects the number of unattributed actors: **1, not 3**.
 
 **AFRINTEL** - Open African CTI Monitoring Initiative

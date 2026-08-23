@@ -12,7 +12,6 @@ Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak*
 
 > `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
 
-> **Note de cycle de vie :** la publication `meamargroup.com` du 13 octobre n'est pas comptée comme un nouvel incident, car l'archive examinée correspond au même ensemble de preuves déjà associé à l'incident MeamarGroup du 5 septembre 2025. Elle est traitée comme une continuation/republication du cycle de vie.
 
 ## Octobre 2025
 ### 01 Octobre 2025
