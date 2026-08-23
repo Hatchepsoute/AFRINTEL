@@ -1,411 +1,259 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Period](https://img.shields.io/badge/Period-2025-blue)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-October%202025-lightgrey)
 
-# CTI Report: Cyberattacks in Africa - October 2025 (19 victims)
+# CTI Report - Cyberattacks in Africa - October 2025
 
-👉🏾 [**French version available here**](README_FR.md)
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Executive summary
-October 2025 shows a significant ransomware activity affecting African organizations, with multiple sectors targeted including finance, logistics, technology, education, and public administration. The month also includes two unattributed data-leak claims affecting Moroccan higher-education institutions.
 
-A total of 17 confirmed ransomware claims and 2 data-leak claims, targeting organizations operating in 11 African countries, were identified during this period.
+October 2025 contains **18 unique incidents across 11 African countries**: **16 Ransomware** and **2 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud is recorded.
 
-* **Total recorded attacks**: 19
-* **Most active threat actors**: `incransom` (4 attacks), `qilin` (3 attacks), `tengu` (2 attacks).
-    * *Other active groups*: beast, brotherhood, medusa, obscura, TheGentlemen, radar, clop, blackshrantac (1 attack each); 1 additional claim is unattributed, while the second data-leak claim is attributed to EternalRed.
-* **Most targeted sectors**: Logistics (3), Finance (3), Education (2).
-* **Most affected countries**: 🇿🇦 South Africa (4), 🇲🇦 Morocco (5), 🇪🇬 Egypt (2).
-* **Notable data exfiltration volumes**: 
-    * **Alios Finance Group** (Tanzania & Tunisia): 100 GB each.
-    * **TMF Logistics** (Algeria): 39 GB.
-    * **Ministry of Higher Education (enssup.gov.ma)** (Morocco): nationwide student extract of 942,930 records.
+The source file contained 19 cards. The 13 October `meamargroup.com` publication is linked to the same evidence set as the 5 September MeamarGroup incident and is therefore not counted as a new incident in the harmonized statistics.
 
----
+- **Morocco**: 5 incidents, including 3 Ransomware and 2 Data Leak.
+- **South Africa**: 4 Ransomware incidents.
+- The other nine countries each record 1 incident.
+- **incransom** is the most visible group with 4 records, followed by **qilin** with 3 and **tengu** with 2.
+- The two Moroccan Data Leak records are attributed to **DBhacker_BF** and **EternalRed**; no `Unknown` actor is required.
+- **LA VOIE EXPRESS**: accounting, logistics and commercial samples consistent with a broad compromise.
+- **WITS**: Data Fully Published status based on the presence of a torrent magnet-link section, without AFRINTEL downloading the dataset.
+- **TMF Logistics**: financial and operational documents consistent with the claim; 39 GB remains an actor-claimed volume.
+- **IAV Hassan II**: 4,208 applicant records in the reviewed database.
+- **Moroccan Ministry of Higher Education**: 942,930-line file matching the advertised volume; metadata indicates an extraction compiled around December 2022.
+- **Alios Finance Group**: 100 GB claimed for each Tanzania and Tunisia operation.
 
+### 📋 Victim list
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+| Indicator | September 2025 | October 2025 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 18 | 18 | **0 (stable)** |
+| Ransomware | 11 | 16 | **+5 (+45.5%)** |
+| Data Leak | 7 | 2 | **-5 (-71.4%)** |
+| Access Sale | 0 | 0 | **0 (stable)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
 
 ## 2. Methodology
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during October 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
----
-
+- **Scope**: 54 African countries.
+- **Period**: 1-31 October 2025.
+- **Sources**: OSINT, leak sites, underground forums, actor publications and available samples.
+- **Source of truth**: validated `victims_FR.md` / `victims.md` pair.
+- **Deduplication**: a republication or relisting of the same evidence set is not counted as a new compromise without evidence supporting a distinct incident.
+- **Taxonomy**: Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Qualification**: claim, sample, full publication and technical confirmation remain distinct.
 
 ## 3. Global overview
 
-### 3.1 Breakdown by ransomware group
-| Group / Actor | Number of attacks |
-| :--- | :---: |
-| **incransom** | 4 |
-| **qilin** | 3 |
-| **tengu** | 2 |
-| **beast** | 1 |
-| **brotherhood** | 1 |
-| **medusa** | 1 |
-| **obscura** | 1 |
-| **TheGentlemen** | 1 |
-| **radar** | 1 |
-| **clop** | 1 |
-| **blackshrantac** | 1 |
-| **Unknown** | 2 |
-| **Total** | **19** |
+### 3.1 Incident-type distribution
+
+| Incident type | Count | Share |
+|---|---:|---:|
+| Ransomware | 16 | 88.9% |
+| Data Leak | 2 | 11.1% |
+| Access Sale | 0 | 0.0% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **18** | **100%** |
 
 ```mermaid
 pie showData
-title Ransomware groups activity
-"Incransom" : 4
-"Qilin" : 3
-"Tengu" : 2
-"Medusa" : 1
-"Beast" : 1
-"Brotherhood" : 1
-"TheGentlemen" : 1
-"Radar" : 1
-"Clop" : 1
-"BlackShrantac" : 1
-"Obscura" : 1
-"Unknown" : 2
+    title Incident types - October 2025
+    "Ransomware" : 16
+    "Data Leak" : 2
 ```
 
-### 3.2 Breakdown by industry sector
-| Sector | Number of Attacks |
-| :--- | :---: |
-| 🚚 Logistics | 3 |
-| 💰 Finance | 3 |
-| 🎓 Education | 2 |
-| 💻 Technology | 1 |
-| 🏗️ Construction | 1 |
-| ⛪ Religion | 1 |
-| 🏠 Real Estate | 1 |
-| ✈️ Aviation | 1 |
-| ⛏️ Mining | 1 |
-| 🏛️ Public Administration | 1 |
-| 🌾 Agribusiness | 1 |
-| 📦 Wholesale Trade | 1 |
-| 🧪 Pharmaceutical | 1 |
-| ⚖️ Legal | 1 |
-| **Total** | **19** |
+### 3.2 Country distribution
 
-```mermaid
-pie showData
-    title Breakdown by industry sector (Oct 2025)
-    "Logistics" : 3
-    "Finance" : 3
-    "Education" : 2
-    "Technology" : 1
-    "Construction" : 1
-    "Religion" : 1
-    "Real Estate" : 1
-    "Aviation" : 1
-    "Mining" : 1
-    "Public Administration" : 1
-    "Agribusiness" : 1
-    "Wholesale" : 1
-    "Pharmaceutical" : 1
-    "Legal" : 1
-```
-
-```mermaid
-graph LR
-    subgraph "Secteurs les plus ciblés (3 attaques)"
-    L[🚚 Logistics]
-    F[💰 Finance]
-    end
-
-    subgraph "Autres secteurs (1 attaque chacun)"
-    T[💻 Technology]
-    C[🏗️ Construction]
-    R[⛪ Religion]
-    A[🏛️ Public Administration]
-    RE[🏠 Real Estate]
-    AV[✈️ Aviation]
-    M[⛏️ Mining]
-    E[🎓 Education]
-    AG[🌾 Agribusiness]
-    W[📦 Wholesale Trade]
-    P[🧪 Pharmaceutical]
-    J[⚖️ Legal]
-    end
-
-    L --- Total((Total: 19))
-    F --- Total
-    T --- Total
-    C --- Total
-    R --- Total
-    A --- Total
-    RE --- Total
-    AV --- Total
-    M --- Total
-    E --- Total
-    AG --- Total
-    W --- Total
-    P --- Total
-    J --- Total
-
-    style Total fill:#f96,stroke:#333,stroke-width:2px
-    style L fill:#dfd
-    style F fill:#dfd
-```
-### 3.3 Breakdown by country
-| Country | Number of attacks |
-| :--- | :---: |
-| 🇿🇦 South Africa |4 |
-| 🇲🇦 Morocco | 5 |
-| 🇪🇬 Egypt | 2 |
-| 🇰🇪 Kenya | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇨🇩 DRC | 1 |
-| 🇬🇦 Gabon | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇹🇿 Tanzania | 1 |
-| 🇹🇳 Tunisia | 1 |
-| 🇩🇿 Algeria | 1 |
-| **Total** | **19** |
-
-```mermaid
-pie showData
-title Ransomware incidents by country (October 2025)
-"🇲🇦 Morocco" : 5
-"🇿🇦 South Africa" : 4
-"🇪🇬 Egypt" : 2
-"🇲🇬 Madagascar" : 1
-"🇰🇪 Kenya" : 1
-"🇨🇩 DR Congo" : 1
-"🇬🇦 Gabon" : 1
-"🇳🇬 Nigeria" : 1
-"🇹🇿 Tanzania" : 1
-"🇹🇳 Tunisia" : 1
-"🇩🇿 Algeria" : 1
-```
----
-
-
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Standard global overview
-
-| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇲🇦 Morocco | 3 | 2 | 5 | 🟧🟧🟧 🟦🟦 |
+| Country | Ransomware | Data Leak | Total | Distribution |
+|---|---:|---:|---:|---|
+| 🇲🇦 Morocco | 3 | 2 | 5 | 🟧🟧🟧🟦🟦 |
 | 🇿🇦 South Africa | 4 | 0 | 4 | 🟧🟧🟧🟧 |
-| 🇪🇬 Egypt | 2 | 0 | 2 | 🟧🟧 |
+| 🇪🇬 Egypt | 1 | 0 | 1 | 🟧 |
 | 🇩🇿 Algeria | 1 | 0 | 1 | 🟧 |
-| 🇨🇩 Congo (DRC) | 1 | 0 | 1 | 🟧 |
+| 🇨🇩 DRC | 1 | 0 | 1 | 🟧 |
 | 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
 | 🇰🇪 Kenya | 1 | 0 | 1 | 🟧 |
 | 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
 | 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
 | 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
 | 🇹🇳 Tunisia | 1 | 0 | 1 | 🟧 |
+| **Total** | **16** | **2** | **18** | |
 
-```mermaid
-pie showData
-    title Incident types
-    "Ransomware" : 17
-    "Data leaks + access sales" : 2
-```
+### 3.3 Regional distribution
 
-### Monthly aggregate exposure view
+| Region | Incidents | Share | Activity |
+|---|---:|---:|---|
+| North Africa | 8 | 44.4% | ██████████ |
+| Southern Africa | 4 | 22.2% | █████ |
+| East Africa | 3 | 16.7% | ████ |
+| Central Africa | 2 | 11.1% | ██ |
+| West Africa | 1 | 5.6% | █ |
+| **Total** | **18** | **100%** | |
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **2 records** (10.5% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+### 3.4 Harmonized sector distribution
 
+| Sector | Incidents | Share | Activity |
+|---|---:|---:|---|
+| Transport / Logistics / Aviation | 4 | 22.2% | ██████████ |
+| Finance / Banking | 3 | 16.7% | ████████ |
+| Education / University | 2 | 11.1% | █████ |
+| Construction / HVAC | 1 | 5.6% | ██ |
+| Religion / Charitable Organization | 1 | 5.6% | ██ |
+| Technology / Fintech | 1 | 5.6% | ██ |
+| Mining / Conglomerate | 1 | 5.6% | ██ |
+| Agribusiness | 1 | 5.6% | ██ |
+| Wholesale Trade / Food Products | 1 | 5.6% | ██ |
+| Pharmaceutical / Laboratory | 1 | 5.6% | ██ |
+| Legal Services | 1 | 5.6% | ██ |
+| Government / Higher Education | 1 | 5.6% | ██ |
+| **Total** | **18** | **100%** | |
 
-### Geographic distribution by region
+### 3.5 Actors / groups
 
-| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| North Africa | 9 | 7 | 2 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| Southern Africa | 4 | 4 | 0 | 🟧🟧🟧🟧 |
-| West Africa | 1 | 1 | 0 | 🟧 |
-| Central Africa | 2 | 2 | 0 | 🟧🟧 |
-| East Africa | 3 | 3 | 0 | 🟧🟧🟧 |
-
-```mermaid
-xychart
-    title "Occurrences by region"
-    x-axis ["NA","SA","WA","CA","EA"]
-    y-axis "Occurrences" 0 --> 10
-    bar [9,4,1,2,3]
-```
-Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
-
-### Sector distribution
-
-| Sector | Records | Share | Activity |
-| :--- | ---: | ---: | :--- |
-| Finance / Banking | 4 | 21.1% | ██████████ |
-| Transport / Logistics | 4 | 21.1% | ██████████ |
-| Agriculture / Agribusiness | 2 | 10.5% | █████ |
-| Education / University | 2 | 10.5% | █████ |
-| Government / Administration | 2 | 10.5% | █████ |
-| Professional / Business Services | 2 | 10.5% | █████ |
-| Energy / Utilities | 1 | 5.3% | ██ |
-| Healthcare / Medical | 1 | 5.3% | ██ |
-| Technology / IT | 1 | 5.3% | ██ |
-
-### Most visible actors
-
-| Actor / Group | Records | Activity |
-| :--- | ---: | :--- |
+| Actor / Group | Incidents | Activity |
+|---|---:|---|
 | incransom | 4 | ██████████ |
 | qilin | 3 | ████████ |
 | tengu | 2 | █████ |
+| beast | 1 | ██ |
+| brotherhood | 1 | ██ |
+| medusa | 1 | ██ |
+| TheGentlemen | 1 | ██ |
+| radar | 1 | ██ |
+| clop | 1 | ██ |
+| BlackShrantac | 1 | ██ |
 | DBhacker_BF | 1 | ██ |
 | EternalRed | 1 | ██ |
-| beast | 1 | ██ |
-| blackshrantac | 1 | ██ |
-| brotherhood | 1 | ██ |
-| clop | 1 | ██ |
-| medusa | 1 | ██ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| **Total** | **18** | |
 
-### Month-on-month comparison
+### 3.6 Actor -> country mapping
 
-Using the validated incident cards as the counting source, October 2025 recorded **19** incidents versus **18** in the preceding month (an increase of **+1**; **+5.6%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
-
-| Metric | Previous month | Current month | Change |
-|---|---:|---:|---:|
-| Recorded incident cards | 18 | 19 | +1 (+5.6%) |
-
-## 4. Detailed analysis by incident type
-
-### 4.1 incransom (4 attacks)
-* **2025-10-01**: Climatron (South Africa, Construction) – Claimed & Leaked.
-* **2025-10-28**: Alios Finance Group (Tanzania, Finance) – **100 GB exfiltrated**.
-* **2025-10-28**: Alios Finance Group (Tunisia, Finance) – **100 GB exfiltrated**.
-* **2025-10-31**: TMF Logistics (Algeria, Logistics) – **39 GB exfiltrated**.
-> **Note**: incransom targeted multiple entities across different sectors and countries with high data volumes.
-
-### 4.2 qilin (3 attacks)
-* **2025-10-15**: Turnkey Africa (Kenya, Tech/Fintech) – Claimed & Leaked.
-* **2025-10-19**: SANgel (Gabon, Agribusiness) – Claimed & Leaked.
-* **2025-10-24**: Henrietta Ezeoke Law Firm (Nigeria, Legal) – Claimed & Leaked.
-
-### 4.3 tengu (2 attacks)
-* **2025-10-23**: STAR LÉGUMES (Morocco, Wholesale) – Claimed & Leaked.
-* **2025-10-24**: Le MULTI LABORATOIRE LC2A (Morocco, Pharmaceutical) – Claimed & Leaked.
-
-### 4.4 Other Groups (1 attack each)
-* **beast** (Oct 05): The Methodist Church of Southern Africa (South Africa, Religion).
-* **brotherhood** (Oct 10): Momentum Logistics (South Africa, Logistics).
-* **medusa** (Oct 13): LA VOIE EXPRESS (Morocco, Logistics).
-* **obscura** (Oct 13): meamargroup.com (Egypt, Real Estate) – **3rd attack against this company**.
-* **TheGentlemen** (Oct 17): Madagascar Airlines (Madagascar, Aviation).
-* **clop** (Oct 18): University of the Witwatersrand (South Africa, Education).
-* **radar** (Oct 18): TK HOLDINGS GROUP (DRC, Mining).
-* **blackshrantac** (Oct 20): Al Ahly Leasing & Factoring (Egypt, Finance).
-
-### 4.5 Moroccan higher-education data claims (2 attacks)
-* **2025-10-31**: Institut Agronomique et Vétérinaire Hassan II - IAV Hassan II (Morocco, Education) – Claim - Data Sample Published. Structured applicant database, 4,208 records (CIN, contact details, academic track); actor attribution remains unknown.
-* **2025-10-25**: Ministry of Higher Education, Scientific Research and Innovation - enssup.gov.ma (Morocco, Public Administration / Education) – Claim - Data Sample Published. EternalRed publication; nationwide student extract, 942,930 records.
-
-### 4.6 Actor → Victim → Country Graph
 ```mermaid
-graph LR
-    incransom -->|Climatron| SA1["🇿🇦 South Africa"]
-    incransom -->|Alios Tanzania| Tanzania["🇹🇿 Tanzania"]
-    incransom -->|Alios Tunisia| Tunisia["🇹🇳 Tunisia"]
-    incransom -->|TMF| Algeria["🇩🇿 Algeria"]
-    qilin -->|Turnkey Africa| Kenya["🇰🇪 Kenya"]
-    qilin -->|SANgel| Gabon["🇬🇦 Gabon"]
-    qilin -->|Henrietta Ezeoke| Nigeria["🇳🇬 Nigeria"]
-    tengu -->|STAR LÉGUMES| Morocco1["🇲🇦 Morocco"]
-    tengu -->|LC2A| Morocco2["🇲🇦 Morocco"]
-    beast -->|Methodist Church| SA2["🇿🇦 South Africa"]
-    brotherhood -->|Momentum Logistics| SA4["🇿🇦 South Africa"]
-    medusa -->|LA VOIE EXPRESS| Morocco3["🇲🇦 Morocco"]
-    obscura -->|meamargroup.com| Egypt1["🇪🇬 Egypt"]
-    TheGentlemen -->|Madagascar Airlines| Madagascar["🇲🇬 Madagascar"]
-    radar -->|TK HOLDINGS| DRC["🇨🇩 DRC"]
-    clop -->|Wits University| SA5["🇿🇦 South Africa"]
-    blackshrantac -->|Al Ahly Leasing| Egypt2["🇪🇬 Egypt"]
-    Unknown -->|IAV Hassan II| Morocco4["🇲🇦 Morocco"]
-    EternalRed -->|enssup.gov.ma| Morocco5["🇲🇦 Morocco"]
-
-    %% Styles et Couleurs
-    style incransom fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
-    style qilin fill:#ffa500,stroke:#333,stroke-width:2px
-    style tengu fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    style TheGentlemen fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
-    style Unknown fill:#888,stroke:#333,stroke-width:2px,color:#fff
-    
-    %% Style des pays (Nodes de destination)
-    classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class SA1,SA2,SA4,SA5,Tanzania,Tunisia,Algeria,Kenya,Gabon,Nigeria,Morocco1,Morocco2,Morocco3,Morocco4,Morocco5,Egypt1,Egypt2,Madagascar,DRC country
+flowchart LR
+    INC["incransom - 4"] --> ZA["🇿🇦 South Africa"]
+    INC --> TZ["🇹🇿 Tanzania"]
+    INC --> TN["🇹🇳 Tunisia"]
+    INC --> DZ["🇩🇿 Algeria"]
+    QIL["qilin - 3"] --> KE["🇰🇪 Kenya"]
+    QIL --> GA["🇬🇦 Gabon"]
+    QIL --> NG["🇳🇬 Nigeria"]
+    TEN["tengu - 2"] --> MA["🇲🇦 Morocco"]
+    BEA["beast"] --> ZA
+    BRO["brotherhood"] --> ZA
+    MED["medusa"] --> MA
+    TGE["TheGentlemen"] --> MG["🇲🇬 Madagascar"]
+    RAD["radar"] --> CD["🇨🇩 DRC"]
+    CLO["clop"] --> ZA
+    BLA["BlackShrantac"] --> EG["🇪🇬 Egypt"]
+    DBH["DBhacker_BF"] --> MA
+    ETR["EternalRed"] --> MA
 ```
----
 
+## 4. Detailed analysis
+
+### 4.1 Ransomware - 16 incidents
+
+The 16 Ransomware records concern Climatron, The Methodist Church of Southern Africa, Momentum Logistics, LA VOIE EXPRESS, Turnkey Africa, Madagascar Airlines, TK HOLDINGS GROUP, WITS, SANgel, Al Ahly Leasing & Factoring, STAR LÉGUMES, Le MULTI LABORATOIRE LC2A, Henrietta Ezeoke Law Firm, Alios Finance Group in Tanzania, Alios Finance Group in Tunisia and TMF Logistics.
+
+The strongest reviewed evidence sets include LA VOIE EXPRESS, TK HOLDINGS GROUP, WITS, STAR LÉGUMES, LC2A and TMF Logistics.
+
+The 13 October MeamarGroup publication is retained as lifecycle information but is not counted here because the reviewed material corresponds to the same underlying evidence set already associated with the September incident.
+
+### 4.2 Data Leak - 2 incidents
+
+Both Data Leak records concern Morocco:
+
+- **IAV Hassan II**, attributed to DBhacker_BF, with 4,208 applicant records containing identity, contact and academic fields.
+- **Ministry of Higher Education, Scientific Research and Innovation**, attributed to EternalRed, with a 942,930-line file covering a nationwide student dataset.
+
+### 4.3 Access Sale - 0 incidents
+
+No October 2025 card is classified as Access Sale.
 
 ## 5. Sectoral impact
 
+The grouping remains close to the source-card sectors.
+
+**Transport / Logistics / Aviation** is the leading category with **4 incidents**. **Finance / Banking** follows with 3. **Education / University** accounts for 2. All other categories account for 1 incident each.
+
 ## 6. Threat actor profile
-### 6.1 Threat actor profile
 
-Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+**incransom** accounts for 4 records, **qilin** for 3 and **tengu** for 2. The other nine actors appear once each.
 
-### 6.2 Risk assessment
+The previous README displayed two `Unknown` entries even though the two Moroccan Data Leak records are explicitly attributed to **DBhacker_BF** and **EternalRed** in the victim cards.
 
-Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+## 7. Trends and intelligence gaps
 
+- Unique total: **18 -> 18**, stable.
+- Ransomware: **11 -> 16**, +45.5%.
+- Data Leak: **7 -> 2**, -71.4%.
+- Morocco: 5 incidents, the leading country.
+- incransom: 4 records, the leading actor.
+- MeamarGroup deduplication reduces the October statistical total from 19 source cards to 18 unique incidents.
 
-## 7. Key trends and intelligence gaps
-### 7.1 Observed trends
+Alios volumes of 100 GB per country and the TMF Logistics 39 GB figure remain actor claims. The WITS torrent was not downloaded or analyzed. Completeness and exact source of the IAV and enssup.gov.ma datasets remain independently unconfirmed.
 
-The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+## 8. Timeline
 
-### 7.2 Intelligence gaps
+```mermaid
+timeline
+    title AFRINTEL - October 2025
+    01 October : incransom - Climatron
+    05 October : beast - Methodist Church
+    10 October : brotherhood - Momentum Logistics
+    13 October : medusa - LA VOIE EXPRESS
+    15 October : qilin - Turnkey Africa
+    17 October : TheGentlemen - Madagascar Airlines
+    18 October : radar - TK HOLDINGS GROUP
+               : clop - WITS
+    19 October : qilin - SANgel
+    20 October : BlackShrantac - Al Ahly Leasing
+    23 October : tengu - STAR LÉGUMES
+    24 October : tengu - LC2A
+               : qilin - Henrietta Ezeoke Law Firm
+    28 October : incransom - Alios Finance Tanzania
+               : incransom - Alios Finance Tunisia
+    31 October : incransom - TMF Logistics
+               : DBhacker_BF - IAV Hassan II
+               : EternalRed - Morocco Ministry of Higher Education
+```
 
-The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+> Uncounted lifecycle follow-up: obscura / MeamarGroup publication on 13 October, linked to the same underlying incident already documented in September.
 
-## 8. MITRE ATT&CK mapping (contextual)
-| Phase | Technique ID | Name | Incident association |
-|---|---|---|---|
-| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
-| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+## 9. Contextual MITRE ATT&CK mapping
 
-These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+| Phase | Technique | Scope |
+|---|---|---|
+| Collection | T1005 - Data from Local System | Observed files, exports, internal documents and archives. |
+| Collection | T1213 - Data from Information Repositories | Structured databases and exports, notably IAV and enssup.gov.ma. |
+| Impact | T1486 - Data Encrypted for Impact | Relevant context for MeamarGroup material containing `.obscura` encrypted copies, without counting the October relisting as a new incident. |
 
-### Contextual observations
-* **Massive data exfiltration**: High focus on sensitive data theft (up to 100 GB) to maximize extortion pressure.
-* **Persistent vulnerabilities**: The repeated targeting of *meamargroup.com* (2nd time) suggests unpatched entry points or poor remediation.
-* **Geographical dispersion**: Threat distribution skewed toward North Africa (9 attacks, including the two unattributed Moroccan education-sector claims) versus Sub-Saharan Africa (10 attacks).
-* **Attribution of Moroccan higher-education datasets**: Two Moroccan higher-education data leaks were recorded: IAV Hassan II remains unattributed, while enssup.gov.ma is attributed to EternalRed, unlike the rest of the month's ransomware-driven claims.
+> These mappings are contextual and do not prove that every actor used each listed technique.
 
----
+## 10. Recommendations
 
+- Strengthen MFA, PAM, EDR, segmentation and privileged-account monitoring.
+- Monitor bulk exports, ERP access, student databases, backups and outbound transfers.
+- For logistics, protect billing systems, client portfolios and supply-chain data.
+- For higher education, restrict national and local student-data exports and log access.
+- For finance, strengthen controls around customer repositories, contractual documents and sensitive exchanges.
 
-## 9. Recommendations
-1.  **Logistics & Finance**: Implement data-at-rest encryption and monitor for anomalous outbound traffic (exfiltration).
-2.  **Public Sector**: Conduct regular security audits and enforce strict Multi-Factor Authentication (MFA).
-3.  **Education & Research**: Protect personal student data and research intellectual property through network segmentation.
-4.  **General: Regularly test Incident Response plans:**
-    * **BCP (Business Continuity Plan)**: To ensure the maintenance of critical business operations during an active cyberattack.
-    * **DRP (Disaster Recovery Plan)**: To guarantee the rapid restoration of IT infrastructure and data following the incident.
+## 11. Conclusion
 
----
+October 2025 contains **18 unique incidents across 11 countries**, split into **16 Ransomware and 2 Data Leak**. Monthly volume is stable compared with September, but the incident mix shifts strongly toward Ransomware.
 
-### ✍🏿 Author
-**Adama ASSIONGBON** *SOC & Cyber Threat Intelligence Consultant* [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+Morocco leads with 5 incidents. incransom is the most visible group with 4 records. Deduplicating MeamarGroup and restoring the correct attribution of the two Moroccan Data Leak records removes the main inconsistencies from the previous report.
 
-**AFRINTEL** - *Open CTI Initiative for Africa*
-
-## 10. SOC and tactical recommendations
-### Observed
-
-Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
-
-### Hypotheses
-
-Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
-
-### Preventive
-
-Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
-
-## 11. Strategic recommendations
-1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
-2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
-3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
-
-## 12. Conclusion
+**AFRINTEL** - Open African CTI Monitoring Initiative

@@ -2,348 +2,414 @@
 
 👉🏾 [Version anglaise](./README.md)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Période-2025-blue)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Période-2025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
----
 ## 1. Résumé exécutif
 
-AFRINTEL a recensé **197 fiches** en 2025 : **122 revendications ransomware (61,9 %)**, **72 fuites de données (36,5 %)**, **3 ventes d’accès (1,5 %)** et **aucun défacement**. Le volume observé est fortement concentré en Afrique du Nord, avec **96 fiches**, devant l’Afrique australe (**43**), l’Afrique de l’Ouest (**33**), l’Afrique de l’Est (**20**) et l’Afrique centrale (**5**).
+AFRINTEL a documenté **197 fiches incident de janvier à décembre 2025** : **121 Ransomware (61,4 %)**, **73 Data Leak (37,1 %)** et **3 Access Sale (1,5 %)**. Aucun DDoS, Defacement ou Operational Fraud n'apparaît dans le corpus mensuel validé.
 
-Les trois pays les plus représentés sont l’**Égypte (33)**, le **Maroc (31)** et l’**Afrique du Sud (30)**. Cette concentration ne traduit pas nécessairement un niveau de compromission supérieur dans ces pays : elle reflète le périmètre des publications et revendications documentées par AFRINTEL.
+Le total annuel reste à 197, mais sa composition change après harmonisation mensuelle. La fiche North-West University de janvier est désormais intégrée en Data Leak, tandis que la republication MeamarGroup d'octobre est exclue du comptage annuel des incidents uniques, car la source harmonisée la relie au même incident sous-jacent déjà documenté en septembre.
 
-L’année se distingue par le poids du ransomware, mais aussi par une exposition importante des données issues des administrations, des établissements financiers et des organisations technologiques. Le gouvernement et l’administration (**40 fiches**) ainsi que la finance et la banque (**39**) constituent les deux secteurs les plus représentés, soit près de **40 %** du corpus. Les acteurs les plus visibles sont **qilin (11 fiches)**, **nightspire (10)** et **devman (10)**, sans que cette fréquence suffise à établir une campagne commune ou une attribution opérationnelle.
+Les pays les plus représentés sont l'**Égypte (32)**, le **Maroc (31)** et l'**Afrique du Sud (31)**. Les principaux labels d'acteurs sont **qilin (11)**, **nightspire (10)** et **devman (10)**. Gouvernement / Administration (**40**) et Finance / Banque (**39**) restent les deux premiers secteurs annuels.
 
-Le principal enjeu CTI reste la qualification des revendications : confirmer l’intrusion, distinguer une nouvelle compromission d’une republication et mesurer la taille réelle des données annoncées. Les ventes d’accès et les fuites doivent donc être suivies comme des signaux de risque distincts du ransomware, tout en recherchant les liens possibles entre accès exposés, exfiltration et extorsion.
+Ces chiffres décrivent le corpus AFRINTEL observé et ne transforment pas une revendication criminelle en compromission confirmée.
 
-## 2. Méthodologie
+## 2. Corrections par rapport à l'ancienne version annuelle
 
-Les douze fichiers mensuels `victims.md` sont la source de vérité et contiennent 197 fiches distinctes pour 2025. Une fiche correspond à une publication ou une revendication documentée, pas nécessairement à une intrusion confirmée ni à une victime unique. Les republications et revendications distinctes sont conservées lorsque la source mensuelle les traite comme des fiches séparées ; cette limite est rappelée dans l’interprétation. Les comptages sont dérivés des fichiers sources sans extrapolation. Les graphes utilisent les codes ISO alpha-2 et les tableaux les noms normalisés des pays. Les secteurs sont regroupés dans une taxonomie annuelle contrôlée ; une activité réellement indéterminée reste signalée explicitement. Ransomware, fuites de données, ventes d’accès et défacements sont comptés séparément. Les publications de forums et de sites de fuite restent des revendications sans confirmation indépendante.
+| Indicateur | Ancienne valeur | Valeur harmonisée |
+|---|---:|---:|
+| Total des fiches | 197 | **197** |
+| Ransomware | 122 | **121** |
+| Data Leak | 72 | **73** |
+| Access Sale | 3 | **3** |
+| Égypte | 33 | **32** |
+| Afrique du Sud | 30 | **31** |
+| Afrique du Nord | 96 | **95** |
+| Afrique australe | 43 | **44** |
+| Éducation / Université | 17 | **18** |
+| Construction / Immobilier | 6 | **5** |
 
-## 3. Vue globale
+L'ajout de NWU en janvier ajoute une fiche Data Leak. La déduplication de MeamarGroup en octobre retire une fiche Ransomware. Les deux corrections se compensent sur le total annuel mais modifient les répartitions détaillées.
 
-| Indicateur | Valeur |
-| :--- | ---: |
-| Fiches | **197** |
-| Ransomware | **122 (61,9%)** |
-| Fuites de données | **72 (36,5%)** |
-| Ventes d’accès | **3 (1,5%)** |
+## 3. Méthodologie
 
-### Classement par pays
+- Période strictement limitée au **1er janvier au 31 décembre 2025**.
+- Source de vérité : les douze fichiers victimes mensuels harmonisés de 2025.
+- Une fiche mensuelle harmonisée correspond à une fiche annuelle.
+- Une republication n'est retirée que lorsque la source harmonisée la relie explicitement au même incident sous-jacent avec suffisamment de confiance.
+- Taxonomie : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- Revendication, échantillon, publication complète et corroboration indépendante restent des niveaux de preuve distincts.
+- La taxonomie sectorielle annuelle contrôlée du rapport précédent est conservée, avec uniquement les corrections soutenues par les sources harmonisées.
 
-| Rang | Pays | Fiches | Barre |
-| :--- | ---: | ---: | ---: |
-| 1 | 🇪🇬 Égypte | 33 | █████████████████████████████████ |
-| 2 | 🇲🇦 Maroc | 31 | ███████████████████████████████ |
-| 3 | 🇿🇦 Afrique du Sud | 30 | ██████████████████████████████ |
-| 4 | 🇩🇿 Algérie | 19 | ███████████████████ |
-| 5 | 🇳🇬 Nigeria | 14 | ██████████████ |
-| 6 | 🇹🇳 Tunisie | 13 | █████████████ |
-| 7 | 🇰🇪 Kenya | 10 | ██████████ |
-| 8 | 🇲🇷 Mauritanie | 8 | ████████ |
-| 9 | 🇿🇲 Zambie | 4 | ████ |
-| 10 | 🇬🇭 Ghana | 3 | ███ |
-| 11 | 🇨🇮 Côte d’Ivoire | 3 | ███ |
-| 12 | 🇳🇦 Namibie | 3 | ███ |
-| 13 | 🇹🇿 Tanzanie | 3 | ███ |
-| 14 | 🇧🇼 Botswana | 2 | ██ |
-| 15 | 🇨🇩 RDC | 2 | ██ |
-| 16 | 🇲🇺 Maurice | 2 | ██ |
-| 17 | 🇸🇳 Sénégal | 2 | ██ |
-| 18 | 🇹🇬 Togo | 2 | ██ |
-| 19 | 🇺🇬 Ouganda | 2 | ██ |
-| 20 | 🇿🇼 Zimbabwe | 2 | ██ |
-| 21 | 🇦🇴 Angola | 1 | █ |
-| 22 | 🇧🇫 Burkina Faso | 1 | █ |
-| 23 | 🇨🇲 Cameroun | 1 | █ |
-| 24 | 🇩🇯 Djibouti | 1 | █ |
-| 25 | 🇪🇷 Érythrée | 1 | █ |
-| 26 | 🇬🇦 Gabon | 1 | █ |
-| 27 | 🇲🇬 Madagascar | 1 | █ |
-| 28 | 🇷🇼 Rwanda | 1 | █ |
-| 29 | 🇧🇮 Burundi | 1 | █ |
+## 4. Comparaison annuelle 2024 vs 2025
+
+Cette comparaison utilise les **comptages tabulaires du rapport annuel AFRINTEL 2024** et les **197 fiches harmonisées de 2025**.
+
+> **Point méthodologique 2024 :** le rapport 2024 contient quelques incohérences de présentation entre son texte, ses tableaux et certains anciens graphiques. Pour cette comparaison, les valeurs de référence sont les comptages des tableaux annuels et mensuels : **118 incidents, 86 Ransomware, 29 Data Leak et 3 Access Sale**. Le H1 2024 est recalculé à **48** à partir des six lignes mensuelles, et non 47 comme indiqué dans une phrase du résumé.
+
+### 4.1 Évolution globale
+
+| Indicateur | 2024 | 2025 | Évolution |
+|---|---:|---:|---:|
+| Total incidents | 118 | 197 | **+79 (+66,9 %)** |
+| Pays couverts | 27 | 29 | **+2 (+7,4 %)** |
+| Ransomware | 86 | 121 | **+35 (+40,7 %)** |
+| Data Leak | 29 | 73 | **+44 (+151,7 %)** |
+| Access Sale | 3 | 3 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+
+Le corpus documenté augmente de **79 fiches**, soit **+66,9 %** entre les deux années.
 
 ```mermaid
-xychart
-    title "Top 10 - Tous incidents"
-    x-axis ["EG","MA","ZA","DZ","NG","TN","KE","MR","ZM","GH"]
-    y-axis "Fiches" 0 --> 34
-    bar [33,31,30,19,14,13,10,8,4,3]
+xychart-beta
+    title "Incidents AFRINTEL - 2024 vs 2025"
+    x-axis ["2024","2025"]
+    y-axis "Fiches incident" 0 --> 210
+    bar [118,197]
 ```
 
-Légende : EG = Égypte ; MA = Maroc ; ZA = Afrique du Sud ; DZ = Algérie ; NG = Nigeria ; TN = Tunisie ; KE = Kenya ; MR = Mauritanie ; ZM = Zambie ; GH = Ghana
+### 4.2 Évolution de la structure des incidents
 
-### Répartition par type d’incident
+| Type | Part 2024 | Part 2025 | Évolution de part |
+|---|---:|---:|---:|
+| Ransomware | 72,9 % | 61,4 % | **-11,5 points** |
+| Data Leak | 24,6 % | 37,1 % | **+12,5 points** |
+| Access Sale | 2,5 % | 1,5 % | **-1,0 point** |
 
-| Type | Fiches | Part |
-| :--- | ---: | ---: |
-| Ransomware | 122 | 61,9% |
-| Fuite de données | 72 | 36,5% |
-| Vente d’accès | 3 | 1,5% |
-| Défacement | 0 | 0,0% |
-| **Total** | **197** | **100%** |
+![Comparaison des types d'incident 2024-2025](./assets/comparison_2024_2025_incident_types.png)
+
+Le Ransomware reste la première catégorie en volume, passant de **86 à 121 fiches**. Toutefois, sa part relative diminue de **72,9 % à 61,4 %** car les Data Leak progressent beaucoup plus rapidement.
+
+Les Data Leak passent de **29 à 73**, soit **+151,7 %**. Leur poids dans le corpus annuel progresse de **24,6 % à 37,1 %**. C'est le changement structurel le plus important entre les deux années.
+
+Les Access Sale restent à **3 fiches**. Leur poids relatif baisse mécaniquement de 2,5 % à 1,5 % du fait de l'augmentation du volume total.
+
+### 4.3 Premier semestre et second semestre
+
+| Période | 2024 | 2025 | Évolution |
+|---|---:|---:|---:|
+| H1 | 48 | 95 | **+47 (+97,9 %)** |
+| H2 | 70 | 102 | **+32 (+45,7 %)** |
+| Année | 118 | 197 | **+79 (+66,9 %)** |
+
+L'augmentation est particulièrement marquée au premier semestre : le H1 2025 compte presque deux fois plus de fiches que le H1 2024. Le H2 progresse également, mais plus modérément.
+
+Le pic mensuel de 2024 est de **15 fiches**, atteint en août et novembre. En 2025, le maximum mensuel atteint **21 fiches**, en mai, juin et juillet.
+
+### 4.4 Évolution des principaux pays
+
+| Pays | 2024 | 2025 | Évolution |
+|---|---:|---:|---:|
+| Afrique du Sud | 30 | 31 | **+1 (+3,3 %)** |
+| Égypte | 14 | 32 | **+18 (+128,6 %)** |
+| Maroc | 5 | 31 | **+26 (+520,0 %)** |
+| Algérie | 7 | 19 | **+12 (+171,4 %)** |
+| Nigeria | 7 | 14 | **+7 (+100,0 %)** |
+| Tunisie | 6 | 13 | **+7 (+116,7 %)** |
+
+L'évolution n'est pas uniforme. **L'Afrique du Sud reste presque stable en volume total, de 30 à 31 fiches**, alors que l'Égypte, le Maroc, l'Algérie, le Nigeria et la Tunisie progressent nettement dans le corpus observé.
+
+Le changement le plus marqué concerne le **Maroc**, qui passe de **5 à 31 fiches**. Cette évolution est surtout portée par les Data Leak en 2025. L'Égypte passe de 14 à 32 fiches et l'Algérie de 7 à 19.
+
+### 4.5 Lecture CTI
+
+Trois constats se dégagent du comparatif :
+
+1. **Le volume AFRINTEL augmente fortement**, mais cette hausse mesure d'abord l'évolution du corpus observé. Elle ne permet pas, à elle seule, de conclure à une augmentation identique du nombre réel de compromissions en Afrique.
+2. **La structure se diversifie** : le Ransomware reste dominant, mais les Data Leak prennent beaucoup plus de poids en 2025.
+3. **Les dynamiques nationales divergent** : l'Afrique du Sud reste fortement orientée Ransomware, tandis que le Maroc et l'Algérie présentent une montée importante des Data Leak.
+
+La comparaison sectorielle détaillée n'est pas présentée comme une variation stricte, car la normalisation des catégories sectorielles n'est pas identique entre les deux rapports annuels. Les chiffres sectoriels restent disponibles séparément dans chaque rapport.
+
+## 5. Évolution mensuelle
+
+| Mois | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Operational Fraud |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Janvier | 17 | 16 | 1 | 0 | 0 | 0 | 0 |
+| Février | 8 | 8 | 0 | 0 | 0 | 0 | 0 |
+| Mars | 11 | 9 | 1 | 1 | 0 | 0 | 0 |
+| Avril | 17 | 7 | 9 | 1 | 0 | 0 | 0 |
+| Mai | 21 | 13 | 8 | 0 | 0 | 0 | 0 |
+| Juin | 21 | 5 | 16 | 0 | 0 | 0 | 0 |
+| Juillet | 21 | 5 | 16 | 0 | 0 | 0 | 0 |
+| Août | 13 | 7 | 5 | 1 | 0 | 0 | 0 |
+| Septembre | 18 | 11 | 7 | 0 | 0 | 0 | 0 |
+| Octobre | 18 | 16 | 2 | 0 | 0 | 0 | 0 |
+| Novembre | 14 | 10 | 4 | 0 | 0 | 0 | 0 |
+| Décembre | 18 | 14 | 4 | 0 | 0 | 0 | 0 |
+| **2025** | **197** | **121** | **73** | **3** | **0** | **0** | **0** |
+
+Le H1 compte **95 fiches** et le H2 **102 fiches**. Le second semestre compte donc 7 fiches de plus que le premier.
+
+```mermaid
+timeline
+    title AFRINTEL - Fiches mensuelles en 2025
+    Janvier : 17
+    Février : 8
+    Mars : 11
+    Avril : 17
+    Mai : 21
+    Juin : 21
+    Juillet : 21
+    Août : 13
+    Septembre : 18
+    Octobre : 18
+    Novembre : 14
+    Décembre : 18
+```
+
+## 6. Répartition par type d'incident
+
+| Type d'incident | Fiches | Part |
+|---|---:|---:|
+| Ransomware | **121** | **61,4 %** |
+| Data Leak | **73** | **37,1 %** |
+| Access Sale | **3** | **1,5 %** |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **197** | **100 %** |
 
 ```mermaid
 pie showData
-    title Types d’incidents - 2025
-    "Ransomware" : 122
-    "Fuites de données" : 72
-    "Ventes d’accès" : 3
+    title Types d'incident - 2025
+    "Ransomware" : 121
+    "Data Leak" : 73
+    "Access Sale" : 3
 ```
 
-### Vue agrégée de l’exposition des données
+## 7. Répartition par pays
 
-Les fuites de données et les ventes d’accès sont regroupées ici pour une vue orientée exposition : **72 fuites de données + 3 ventes d’accès = 75 fiches**. Les compteurs détaillés restent séparés, car une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+| Pays | Ransomware | Data Leak | Access Sale | Total | Distribution |
+|---|---:|---:|---:|---:|---|
+| 🇪🇬 Égypte | 27 | 5 | 0 | 32 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟦🟦🟦🟦🟦 |
+| 🇲🇦 Maroc | 12 | 19 | 0 | 31 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇦 Afrique du Sud | 28 | 3 | 0 | 31 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟦🟦🟦 |
+| 🇩🇿 Algérie | 4 | 15 | 0 | 19 | 🟧🟧🟧🟧🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇳🇬 Nigeria | 9 | 5 | 0 | 14 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟦🟦🟦🟦🟦 |
+| 🇹🇳 Tunisie | 6 | 7 | 0 | 13 | 🟧🟧🟧🟧🟧🟧🟦🟦🟦🟦🟦🟦🟦 |
+| 🇰🇪 Kenya | 8 | 2 | 0 | 10 | 🟧🟧🟧🟧🟧🟧🟧🟧🟦🟦 |
+| 🇲🇷 Mauritanie | 0 | 8 | 0 | 8 | 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| 🇿🇲 Zambie | 4 | 0 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇬🇭 Ghana | 2 | 1 | 0 | 3 | 🟧🟧🟦 |
+| 🇨🇮 Côte d'Ivoire | 1 | 2 | 0 | 3 | 🟧🟦🟦 |
+| 🇳🇦 Namibie | 3 | 0 | 0 | 3 | 🟧🟧🟧 |
+| 🇹🇿 Tanzanie | 3 | 0 | 0 | 3 | 🟧🟧🟧 |
+| 🇧🇼 Botswana | 2 | 0 | 0 | 2 | 🟧🟧 |
+| 🇨🇩 RDC | 1 | 1 | 0 | 2 | 🟧🟦 |
+| 🇲🇺 Maurice | 2 | 0 | 0 | 2 | 🟧🟧 |
+| 🇸🇳 Sénégal | 1 | 0 | 1 | 2 | 🟧🟪 |
+| 🇹🇬 Togo | 0 | 1 | 1 | 2 | 🟦🟪 |
+| 🇺🇬 Ouganda | 2 | 0 | 0 | 2 | 🟧🟧 |
+| 🇿🇼 Zimbabwe | 2 | 0 | 0 | 2 | 🟧🟧 |
+| 🇦🇴 Angola | 0 | 1 | 0 | 1 | 🟦 |
+| 🇧🇫 Burkina Faso | 0 | 0 | 1 | 1 | 🟪 |
+| 🇧🇮 Burundi | 0 | 1 | 0 | 1 | 🟦 |
+| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 | 🟧 |
+| 🇩🇯 Djibouti | 0 | 1 | 0 | 1 | 🟦 |
+| 🇪🇷 Érythrée | 0 | 1 | 0 | 1 | 🟦 |
+| 🇬🇦 Gabon | 1 | 0 | 0 | 1 | 🟧 |
+| 🇲🇬 Madagascar | 1 | 0 | 0 | 1 | 🟧 |
+| 🇷🇼 Rwanda | 1 | 0 | 0 | 1 | 🟧 |
+| **Total** | **121** | **73** | **3** | **197** | |
 
-| Catégorie agrégée | Fiches | Part du corpus |
-| :--- | ---: | ---: |
-| Fuites de données + ventes d’accès | **75** | **38,1 %** |
+Principaux constats : l'Égypte compte 32 fiches, le Maroc 31 et l'Afrique du Sud 31. L'Afrique du Sud possède le plus grand nombre de Ransomware avec 28, tandis que le Maroc possède le plus grand nombre de Data Leak avec 19.
 
-Cette vue agrégée est dérivée et ne doit pas être ajoutée une seconde fois au total de 197 fiches.
+## 8. Répartition régionale
 
-### Classement des pays par ransomware
+| Région | Ransomware | Data Leak | Access Sale | Total | Part |
+|---|---:|---:|---:|---:|---:|
+| Afrique du Nord | 49 | 46 | 0 | 95 | 48,2 % |
+| Afrique australe | 41 | 3 | 0 | 44 | 22,3 % |
+| Afrique de l'Ouest | 13 | 17 | 3 | 33 | 16,8 % |
+| Afrique de l'Est | 15 | 5 | 0 | 20 | 10,2 % |
+| Afrique centrale | 3 | 2 | 0 | 5 | 2,5 % |
+| **Total** | **121** | **73** | **3** | **197** | **100 %** |
 
-| Rang | Pays | ISO | Fiches | Barre couleur |
-|---:|---|:---:|---:|---|
-| 1 | Égypte | EG | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
-| 2 | Afrique du Sud | ZA | 28 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
-| 3 | Maroc | MA | 12 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
-| 4 | Nigeria | NG | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 |
-| 5 | Kenya | KE | 8 | 🟧🟧🟧🟧🟧🟧🟧🟧 |
-| 6 | Tunisie | TN | 6 | 🟧🟧🟧🟧🟧🟧 |
-| 7 | Algérie | DZ | 4 | 🟧🟧🟧🟧 |
-| 8 | Zambie | ZM | 4 | 🟧🟧🟧🟧 |
-| 9 | Namibie | NA | 3 | 🟧🟧🟧 |
-| 10 | Tanzanie | TZ | 3 | 🟧🟧🟧 |
-| 11 | Botswana | BW | 2 | 🟧🟧 |
-| 12 | Ghana | GH | 2 | 🟧🟧 |
-| 13 | Maurice | MU | 2 | 🟧🟧 |
-| 14 | Ouganda | UG | 2 | 🟧🟧 |
-| 15 | Zimbabwe | ZW | 2 | 🟧🟧 |
-| 16 | Cameroun | CM | 1 | 🟧 |
-| 17 | RDC | CD | 1 | 🟧 |
-| 18 | Côte d’Ivoire | CI | 1 | 🟧 |
-| 19 | Gabon | GA | 1 | 🟧 |
-| 20 | Madagascar | MG | 1 | 🟧 |
-| 21 | Rwanda | RW | 1 | 🟧 |
-| 22 | Sénégal | SN | 1 | 🟧 |
+L'Afrique du Nord représente **95 fiches (48,2 %)**, suivie de l'Afrique australe avec 44, de l'Afrique de l'Ouest avec 33, de l'Afrique de l'Est avec 20 et de l'Afrique centrale avec 5.
 
-### Classement des pays par fuites de données
+## 9. Répartition sectorielle harmonisée
 
-| Rang | Pays | ISO | Fiches | Barre couleur |
-|---:|---|:---:|---:|---|
-| 1 | Maroc | MA | 19 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 2 | Algérie | DZ | 15 | 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 3 | Mauritanie | MR | 8 | 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 4 | Tunisie | TN | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
-| 5 | Égypte | EG | 5 | 🟦🟦🟦🟦🟦 |
-| 6 | Nigeria | NG | 5 | 🟦🟦🟦🟦🟦 |
-| 7 | Côte d’Ivoire | CI | 2 | 🟦🟦 |
-| 8 | Kenya | KE | 2 | 🟦🟦 |
-| 9 | Afrique du Sud | ZA | 2 | 🟦🟦 |
-| 10 | Angola | AO | 1 | 🟦 |
-| 11 | RDC | CD | 1 | 🟦 |
-| 12 | Djibouti | DJ | 1 | 🟦 |
-| 13 | Érythrée | ER | 1 | 🟦 |
-| 14 | Ghana | GH | 1 | 🟦 |
-| 15 | Togo | TG | 1 | 🟦 |
-| 16 | Burundi | BI | 1 | 🟦 |
+| Secteur annuel contrôlé | Fiches | Part | Activité |
+|---|---:|---:|---|
+| Gouvernement / Administration | 40 | 20,3 % | ████████████ |
+| Finance / Banque | 39 | 19,8 % | ████████████ |
+| Technologie / IT | 25 | 12,7 % | ████████ |
+| Éducation / Université | 18 | 9,1 % | █████ |
+| Santé / Médical | 14 | 7,1 % | ████ |
+| Industrie / Fabrication | 10 | 5,1 % | ███ |
+| Transport / Logistique | 10 | 5,1 % | ███ |
+| Commerce / E-commerce | 9 | 4,6 % | ███ |
+| Services professionnels / Business | 7 | 3,6 % | ██ |
+| Défense / Sécurité | 6 | 3,0 % | ██ |
+| Construction / Immobilier | 5 | 2,5 % | ██ |
+| Énergie / Services publics | 4 | 2,0 % | █ |
+| Agriculture / Agro-industrie | 3 | 1,5 % | █ |
+| Juridique / Justice | 2 | 1,0 % | █ |
+| Mines | 2 | 1,0 % | █ |
+| Non précisé | 2 | 1,0 % | █ |
+| Société civile / ONG | 1 | 0,5 % | █ |
+| **Total** | **197** | **100 %** | |
 
-### Classement des pays par ventes d’accès
+NWU fait passer Éducation / Université de 17 à 18. La suppression du doublon MeamarGroup d'octobre fait passer Construction / Immobilier de 6 à 5.
 
-| Rang | Pays | ISO | Fiches | Barre couleur |
-|---:|---|:---:|---:|---|
-| 1 | Burkina Faso | BF | 1 | 🟨 |
-| 2 | Sénégal | SN | 1 | 🟨 |
-| 3 | Togo | TG | 1 | 🟨 |
+## 10. Profil des acteurs / groupes
 
-Légende : 🟧 Ransomware | 🟦 Fuites de données | 🟨 Ventes d’accès
-
-### Comparaison ransomware, fuites et ventes d’accès par pays
-
-| Pays | Ransomware | Fuites / accès | Total | Distribution |
-| :--- | ---: | ---: | ---: | ---: |
-| 🇪🇬 Égypte | 28 | 5 | 33 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇲🇦 Maroc | 12 | 19 | 31 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 Afrique du Sud | 28 | 2 | 30 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇩🇿 Algérie | 4 | 15 | 19 | 🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇳🇬 Nigeria | 9 | 5 | 14 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦 |
-| 🇹🇳 Tunisie | 6 | 7 | 13 | 🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇰🇪 Kenya | 8 | 2 | 10 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| 🇲🇷 Mauritanie | 0 | 8 | 8 |  🟦🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇲 Zambie | 4 | 0 | 4 | 🟧🟧🟧🟧 |
-| 🇬🇭 Ghana | 2 | 1 | 3 | 🟧🟧 🟦 |
-| 🇨🇮 Côte d’Ivoire | 1 | 2 | 3 | 🟧 🟦🟦 |
-| 🇳🇦 Namibie | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇹🇿 Tanzanie | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇧🇼 Botswana | 2 | 0 | 2 | 🟧🟧 |
-| 🇨🇩 RDC | 1 | 1 | 2 | 🟧 🟦 |
-| 🇲🇺 Maurice | 2 | 0 | 2 | 🟧🟧 |
-| 🇸🇳 Sénégal | 1 | 1 | 2 | 🟧 🟦 |
-| 🇹🇬 Togo | 0 | 2 | 2 |  🟦🟦 |
-| 🇺🇬 Ouganda | 2 | 0 | 2 | 🟧🟧 |
-| 🇿🇼 Zimbabwe | 2 | 0 | 2 | 🟧🟧 |
-| 🇦🇴 Angola | 0 | 1 | 1 |  🟦 |
-| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |
-| 🇨🇲 Cameroun | 1 | 0 | 1 | 🟧 |
-| 🇩🇯 Djibouti | 0 | 1 | 1 |  🟦 |
-| 🇪🇷 Érythrée | 0 | 1 | 1 |  🟦 |
-| 🇬🇦 Gabon | 1 | 0 | 1 | 🟧 |
-| 🇲🇬 Madagascar | 1 | 0 | 1 | 🟧 |
-| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |
-| 🇧🇮 Burundi | 0 | 1 | 1 | 🟦 |
-
-### Répartition géographique par région
-
-| Région | Occurrences | Ransomware | Fuites / accès | Distribution |
-| :--- | ---: | ---: | ---: | ---: |
-| Afrique du Nord | 96 | 50 | 46 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦 |
-| Afrique australe | 43 | 41 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧 🟦 |
-| Afrique de l’Ouest | 33 | 13 | 20 | 🟧🟧🟧 🟦🟦🟦🟦 |
-| Afrique centrale | 5 | 3 | 2 | 🟧 🟦 |
-| Afrique de l’Est | 20 | 15 | 5 | 🟧🟧🟧 🟦 |
-
-```mermaid
-xychart
-    title "Occurrences par région - 2025"
-    x-axis ["NA","SA","AO","AC","AE"]
-    y-axis "Occurrences" 0 --> 97
-    bar [96,43,33,5,20]
-```
-
-Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ouest ; AC = Afrique centrale ; AE = Afrique de l’Est
-
-### Répartition sectorielle
-
-| Secteur | Fiches | Part | Barre |
-| :--- | ---: | ---: | ---: |
-| Gouvernement / administration | 40 | 20,3% | ██████████ |
-| Finance / banque | 39 | 19,8% | ██████████ |
-| Technologies / informatique | 25 | 12,7% | ██████ |
-| Éducation / universités | 17 | 8,6% | ████ |
-| Santé / médical | 14 | 7,1% | ████ |
-| Industrie / fabrication | 10 | 5,1% | ██ |
-| Transport / logistique | 10 | 5,1% | ██ |
-| Commerce / e-commerce | 9 | 4,6% | ██ |
-| Services professionnels | 7 | 3,6% | ██ |
-| Construction / immobilier | 6 | 3,0% | ██ |
-| Défense / sécurité | 6 | 3,0% | ██ |
-| Énergie / services publics | 4 | 2,0% | █ |
-| Agriculture / agro-industrie | 3 | 1,5% | █ |
-| Juridique / justice | 2 | 1,0% | █ |
-| Mines | 2 | 1,0% | █ |
-| Non précisé | 2 | 1,0% | █ |
-| Société civile / ONG | 1 | 0,5% | █ |
-
-```mermaid
-xychart
-    title "Top 8 des secteurs - 2025"
-    x-axis ["GOV","FIN","TEC","EDU","HEA","MAN","TRA","RET"]
-    y-axis "Fiches" 0 --> 41
-    bar [40,39,25,17,14,10,10,9]
-```
-
-Légende : GOV = Gouvernement / administration ; FIN = Finance / banque ; TEC = Technologies / informatique ; EDU = Éducation / universités ; HEA = Santé / médical ; MAN = Industrie / fabrication ; TRA = Transport / logistique ; RET = Commerce / e-commerce
-
-Le graphique présente les huit secteurs contrôlés les plus représentés ; le tableau ci-dessus fait foi pour la répartition complète des 197 fiches.
-
-### Graphiques par type d’incident
-
-```mermaid
-xychart
-    title "Top 10 ransomware - 2025"
-    x-axis ["EG","ZA","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
-    y-axis "Fiches" 0 --> 29
-    bar [28,28,12,9,8,6,4,4,3,3]
-```
-
-Légende : EG = Égypte ; ZA = Afrique du Sud ; MA = Maroc ; NG = Nigeria ; KE = Kenya ; TN = Tunisie ; DZ = Algérie ; ZM = Zambie ; NA = Namibie ; TZ = Tanzanie
-
-```mermaid
-xychart
-    title "Top 10 fuites et ventes d’accès - 2025"
-    x-axis ["MA","DZ","MR","TN","EG","NG","CI","KE","ZA","TG"]
-    y-axis "Fiches" 0 --> 20
-    bar [19,15,8,7,5,5,2,2,2,2]
-```
-
-Légende : MA = Maroc ; DZ = Algérie ; MR = Mauritanie ; TN = Tunisie ; EG = Égypte ; NG = Nigeria ; CI = Côte d’Ivoire ; KE = Kenya ; ZA = Afrique du Sud ; TG = Togo
-
-## 4. Analyse détaillée par type d’incident
-
-Les revendications ransomware représentent **122 fiches**, soit **61,9 %** du corpus. Elles dominent particulièrement en Afrique australe (**41 fiches**) et restent majoritaires en Afrique du Nord (**50**), tandis que les fuites et ventes d’accès atteignent respectivement **46** et **22** fiches dans ces deux régions.
-
-Les fuites de données et ventes d’accès représentent **75 fiches**. Le Maroc arrive en tête avec **19 fiches**, suivi de l’Algérie (**15**), de la Mauritanie (**8**) et de la Tunisie (**7**). Les données revendiquées concernent notamment des environnements administratifs, financiers, médicaux, éducatifs et commerciaux. Cette répartition montre que la fuite de données ne constitue pas seulement une conséquence du ransomware : elle apparaît aussi comme un risque autonome, associé à l’exposition de bases, à la revente d’accès ou à la republication d’échantillons.
-
-## 5. Impact sectoriel
-
-Les secteurs gouvernemental et administratif (**40 fiches**) ainsi que financier et bancaire (**39**) arrivent en tête, devant les technologies et l’informatique (**25**) et l’éducation (**17**). À eux seuls, les secteurs gouvernemental et financier représentent près de **40 %** du corpus. Cette concentration élargit la priorité de défense aux systèmes publics, aux services financiers, aux prestataires technologiques et aux établissements éducatifs, avec des risques distincts selon la nature des données exposées.
-
-## 6. Profil des acteurs et évaluation du risque
+Tous les labels Acteur / Groupe ayant au moins quatre fiches annuelles sont affichés afin de ne pas exclure des valeurs ex aequo.
 
 | Acteur / Groupe | Fiches | Activité |
-| :--- | ---: | ---: |
-| qilin | 11 | ██████████ |
-| nightspire | 10 | █████████ |
-| devman | 10 | █████████ |
-| incransom | 8 | ███████ |
-| funksec | 7 | ██████ |
-| Phantom Atlas | 7 | ██████ |
-| killsec | 6 | █████ |
-| kill9 | 6 | █████ |
+|---|---:|---|
+| qilin | 11 | ████████████ |
+| nightspire | 10 | ███████████ |
+| devman | 10 | ███████████ |
+| incransom | 8 | █████████ |
+| funksec | 7 | ████████ |
+| Phantom Atlas | 7 | ████████ |
+| killsec | 6 | ███████ |
+| kill9 | 6 | ███████ |
 | Dark 07x Team | 5 | █████ |
 | ransomhub | 4 | ████ |
+| warlock | 4 | ████ |
+| mrdump | 4 | ████ |
+| clop | 4 | ████ |
 
-| Pays | Niveau | Justification |
-| :--- | :--- | :--- |
-| 🇪🇬 Égypte | 🔴 Élevé | Plus forte visibilité ransomware et plus grand volume national de fiches. |
-| 🇲🇦 Maroc | 🔴 Élevé | Plus grand volume de fuites et deuxième volume global. |
-| 🇿🇦 Afrique du Sud | 🔴 Élevé | Volume ransomware élevé et revendications sensibles dans les secteurs public et financier. |
-| 🇩🇿 Algérie | 🔴 Élevé | Volume élevé de fuites et publications répétées concernant des administrations. |
-| 🇳🇬 Nigeria | 🔴 Élevé | Activité combinée ransomware et fuites visant des organisations publiques et privées. |
+La fiche NWU de janvier ajoute SevenZeroDay404 avec une occurrence. La suppression du doublon MeamarGroup d'octobre laisse obscura à une occurrence annuelle. Le classement des principaux acteurs ne change pas.
 
-### Graphique des acteurs les plus présents
+## 11. Analyse CTI annuelle
+
+### 10.1 Ransomware
+
+Le Ransomware reste majoritaire avec **121 fiches**. L'Afrique du Sud en compte 28, l'Égypte 27, le Maroc 12, le Nigeria 9 et le Kenya 8. Une présence sur un leak site n'est pas considérée comme une preuve de chiffrement sans élément technique complémentaire.
+
+### 10.2 Data Leak
+
+AFRINTEL recense **73 Data Leak**. Le Maroc arrive en tête avec 19, devant l'Algérie avec 15, la Mauritanie avec 8, la Tunisie avec 7, puis l'Égypte et le Nigeria avec 5 chacun.
+
+### 10.3 Access Sale
+
+Les **3 Access Sale** concernent le Burkina Faso, le Sénégal et le Togo. Une vente d'accès revendiquée reste distincte d'un Data Leak, car l'accès proposé ne prouve pas à lui seul une exfiltration.
+
+## 12. Principaux enseignements CTI
+
+- Le Ransomware reste le premier type, tandis que les Data Leak représentent plus d'un tiers du corpus.
+- L'Afrique du Nord concentre près de la moitié des fiches annuelles.
+- Le Maroc et l'Algérie présentent un profil fortement orienté Data Leak ; l'Afrique du Sud est très majoritairement Ransomware.
+- Les administrations et les organisations financières restent les secteurs contrôlés les plus représentés.
+- Le suivi du cycle de vie est essentiel : republication, revente ou nouvelle revendication par un second groupe ne signifie pas automatiquement nouvelle compromission.
+- Les volumes annoncés dépassent fréquemment les éléments qu'AFRINTEL a pu valider directement.
+- La visibilité d'un acteur reflète une fréquence de publication, pas une attribution technique ni une campagne unique.
+
+## 13. Top des pays les plus exposés par type d'incident
+
+Cette section isole les deux catégories dominantes du corpus annuel afin de distinguer les profils nationaux. Les chiffres proviennent exclusivement des **197 fiches incident harmonisées de 2025**.
+
+### 12.1 Top 10 Ransomware
+
+| Rang | Pays | Fiches Ransomware |
+|---:|---|---:|
+| 1 | Afrique du Sud | **28** |
+| 2 | Égypte | **27** |
+| 3 | Maroc | **12** |
+| 4 | Nigeria | **9** |
+| 5 | Kenya | **8** |
+| 6 | Tunisie | **6** |
+| 7 | Algérie | **4** |
+| 8 | Zambie | **4** |
+| 9 | Namibie | **3** |
+| 10 | Tanzanie | **3** |
+
+Les dix pays de ce classement concentrent **104 des 121 fiches Ransomware**, soit **86,0 %** du corpus Ransomware annuel.
+
+#### Graphique statique
+
+![Top 10 Ransomware 2025](./assets/top10_ransomware_2025.png)
+
+#### Version Mermaid xychart
 
 ```mermaid
-xychart
-    title "Acteurs les plus présents - 2025"
-    x-axis ["QIL","NSP","DVM","INC","FNK","PAT","KLS","K9","D07","RSH"]
-    y-axis "Fiches" 0 --> 12
-    bar [11,10,10,8,7,7,6,6,5,4]
+xychart-beta
+    title "Top 10 Ransomware - Afrique - 2025"
+    x-axis ["ZA","EG","MA","NG","KE","TN","DZ","ZM","NA","TZ"]
+    y-axis "Fiches Ransomware" 0 --> 30
+    bar [28,27,12,9,8,6,4,4,3,3]
 ```
 
-Légende : QIL = qilin ; NSP = nightspire ; DVM = devman ; INC = incransom ; FNK = funksec ; PAT = Phantom Atlas ; KLS = killsec ; K9 = kill9 ; D07 = Dark 07x Team ; RSH = ransomhub
+**Légende :** ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, KE = Kenya, TN = Tunisie, DZ = Algérie, ZM = Zambie, NA = Namibie, TZ = Tanzanie.
 
-## 7. Tendances et lacunes de renseignement
+### 12.2 Top Data Leak
 
-L’année 2025 met en évidence trois lacunes de renseignement. Premièrement, la revendication publiée ne permet pas toujours de confirmer l’intrusion ni le volume réel des données. Deuxièmement, une même organisation peut apparaître dans des publications distinctes, sans qu’il soit possible de conclure immédiatement à une nouvelle compromission, une mise à jour ou une republication. Enfin, les ventes d’accès et les fuites doivent être corrélées avec les journaux IAM, VPN, EDR, messagerie, proxy et WAF afin de déterminer si elles correspondent à un risque actif ou à une exposition ancienne.
+| Rang | Pays | Fiches Data Leak |
+|---:|---|---:|
+| 1 | Maroc | **19** |
+| 2 | Algérie | **15** |
+| 3 | Mauritanie | **8** |
+| 4 | Tunisie | **7** |
+| 5 | Égypte | **5** |
+| 5 | Nigeria | **5** |
+| 7 | Afrique du Sud | **3** |
+| 8 | Côte d'Ivoire | **2** |
+| 8 | Kenya | **2** |
+| 10 | **7 pays ex aequo** | **1 chacun** |
 
-## 8. Cartographie MITRE ATT&CK contextuelle
+Le **rang 10 est ex aequo**. Les sept pays concernés sont : Angola, RDC, Djibouti, Érythrée, Ghana, Togo, Burundi. Ils comptent chacun **1 Data Leak**. Aucun pays n'est sélectionné arbitrairement parmi eux.
 
-| Phase | Technique | Contexte défensif | Niveau de preuve |
-| :--- | ---: | --- | --- |
-| Impact | T1486 - Data Encrypted for Impact | Rechercher les comportements de chiffrement et l’impact sur la restauration lorsqu’une revendication est corroborée. | Non établi par la publication seule |
-| Exfiltration | T1567 - Exfiltration Over Web Service | Examiner les sorties vers des services web et les transferts d’archives dans les cas validés. | Hypothèse contextuelle |
-| Accès aux identifiants | T1078 - Valid Accounts | Vérifier les accès annoncés avec les journaux IAM, VPN et d’authentification. | Une revendication ne prouve pas l’utilisation d’un compte valide |
+#### Graphique statique
 
-## 9. Recommandations
+![Top Data Leak 2025](./assets/top10_data_leak_2025.png)
 
-- Vérifier les revendications avec les journaux, EDR, IAM, sauvegardes et l’organisation concernée avant de les traiter comme des incidents confirmés.
-- Imposer une MFA résistante au phishing, revoir les accès privilégiés, segmenter les réseaux, maintenir des sauvegardes hors ligne et faire tourner les secrets.
-- Équipes cloud et applicatives : supprimer les lectures publiques, revoir l’exposition des stockages et bases, et surveiller les exports massifs.
-- Administrations et organisations financières : surveiller les VPN, comptes privilégiés, accès distants et transferts sortants inhabituels.
-- Éducation, santé et technologies : appliquer la minimisation des données, des durées de conservation et des procédures de notification.
+#### Version Mermaid xychart
 
-## 10. Recommandations SOC et tactiques
+```mermaid
+xychart-beta
+    title "Top Data Leak - Afrique - 2025"
+    x-axis ["MA","DZ","MR","TN","EG","NG","ZA","CI","KE","R10"]
+    y-axis "Fiches Data Leak" 0 --> 20
+    bar [19,15,8,7,5,5,3,2,2,1]
+```
 
-- Corréler EDR, VPN, IAM, DNS, proxy, WAF et journaux applicatifs ; alerter sur les déplacements impossibles, nouveaux appareils MFA, lectures massives, créations d’archives et sorties inhabituelles.
-- Suivre les identifiants et accès exposés dans une file dédiée, puis les valider ou les révoquer par des canaux internes de confiance.
+**Légende :** MA = Maroc, DZ = Algérie, MR = Mauritanie, TN = Tunisie, EG = Égypte, NG = Nigeria, ZA = Afrique du Sud, CI = Côte d'Ivoire, KE = Kenya, R10 = sept pays ex aequo au rang 10.
 
-## 11. Recommandations stratégiques
+### 12.3 Constat analytique
 
-- Maintenir un inventaire des actifs et données exposés sur Internet, tester les plans de réponse et de restauration, et définir les responsabilités pour la validation, la protection des données et l’escalade exécutive.
+Le classement fait apparaître **deux profils de menace nettement différents**.
 
-## 12. Conclusion
+**L'Afrique du Sud et l'Égypte concentrent les revendications Ransomware**. Elles totalisent **55 des 121 fiches Ransomware**, soit **45,5 %** du corpus annuel de cette catégorie. L'Afrique du Sud compte 28 fiches Ransomware sur 31 incidents annuels, tandis que l'Égypte en compte 27 sur 32.
 
-L’année 2025 indique une pression cyber diversifiée : le ransomware reste majoritaire, mais les fuites de données et les ventes d’accès élargissent la surface de risque vers les administrations, les banques, les technologies et l’éducation. Les chiffres décrivent les publications observées par AFRINTEL ; ils doivent guider la veille, la validation technique et la réduction du risque, sans transformer une revendication en compromission confirmée.
+La dynamique **Data Leak** est différente. **Le Maroc et l'Algérie totalisent 34 des 73 Data Leak**, soit **46,6 %** du corpus annuel de cette catégorie. Le Maroc compte **19 Data Leak contre 12 Ransomware**, alors que l'Afrique du Sud présente le profil inverse avec **28 Ransomware contre 3 Data Leak**.
+
+Un classement global des cyberattaques par pays masquerait donc une partie importante de la réalité opérationnelle. L'analyse AFRINTEL doit conserver une lecture par type d'incident afin de distinguer les pays davantage exposés aux campagnes d'extorsion de ceux où les publications de données dominent.
+
+### 12.4 Maintenance rapide des graphiques
+
+Les blocs Mermaid X/Y reprennent directement les valeurs des tableaux et peuvent être modifiés immédiatement lorsqu'une nouvelle fiche 2025 est ajoutée ou requalifiée. Les PNG servent de version statique pour les exports, présentations ou plateformes qui ne rendent pas Mermaid.
+
+## 14. Perspectives et points de surveillance pour 2026
+
+Cette section est une **projection qualitative fondée uniquement sur les tendances observées en 2025**. Elle ne contient aucune statistique réelle de 2026 et ne constitue pas une prévision chiffrée.
+
+La baseline 2025 conduit à surveiller en priorité :
+
+- la persistance d'une forte activité Ransomware visant l'Afrique du Sud et l'Égypte ;
+- le maintien d'une forte exposition aux Data Leak au Maroc et en Algérie ;
+- l'évolution des secteurs Gouvernement / Administration et Finance / Banque, qui occupent les premières places du corpus sectoriel annuel ;
+- l'apparition de nouveaux Access Sale et la transformation éventuelle d'un accès vendu en fuite de données ou en extorsion ;
+- les victimes revendiquées successivement par plusieurs groupes, afin de distinguer nouvelle intrusion, republication, revente et réexploitation de données plus anciennes ;
+- l'évolution trimestrielle du rapport Ransomware / Data Leak par pays.
+
+Le corpus annuel 2025 constitue ainsi la **baseline AFRINTEL** pour comparer les observations futures. Toute comparaison avec 2026 devra conserver la même taxonomie, la même logique de déduplication et la même séparation entre revendication, échantillon, publication complète et confirmation technique.
+
+## 15. Recommandations
+
+- Valider les revendications avec SIEM, EDR, IAM, VPN, WAF, cloud, journaux applicatifs et sauvegardes.
+- Imposer MFA résistante au phishing, PAM, segmentation, rotation des secrets et sauvegardes immuables.
+- Détecter les lectures massives de bases, exports volumineux, créations d'archives et transferts sortants inhabituels.
+- Prioriser la supervision des comptes privilégiés et le contrôle des exports sensibles dans les environnements publics et financiers.
+- Conserver les métadonnées de cycle de vie : première revendication, échantillon, publication complète, republication et revente d'accès.
+
+## 16. Conclusion
+
+Le corpus annuel AFRINTEL harmonisé contient **197 fiches incident couvrant janvier à décembre 2025** : **121 Ransomware, 73 Data Leak et 3 Access Sale**.
+
+Le total reste identique à l'ancien rapport, mais la composition détaillée est corrigée par l'intégration de NWU en janvier et la déduplication de MeamarGroup en octobre. Par rapport aux 118 fiches documentées en 2024, le corpus 2025 progresse de 66,9 %, avec une hausse particulièrement marquée des Data Leak. L'Égypte arrive en tête avec 32 fiches, tandis que le Maroc et l'Afrique du Sud en comptent 31 chacun. Le corpus 2025 constitue désormais la baseline annuelle AFRINTEL pour mesurer les évolutions futures par type d'incident, pays, secteur et acteur.
 
 **AFRINTEL** - TLP:CLEAR

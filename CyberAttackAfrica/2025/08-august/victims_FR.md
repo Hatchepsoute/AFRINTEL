@@ -5,18 +5,24 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # Liste des victimes africaines de cyberattaques en Août 2025 (13 victimes)
 👉🏾 [**English version available here**](./victims.md)
+
+## Résumé du mois
+
+Août 2025 compte **13 incidents uniques** : **7 Ransomware**, **5 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **10 pays africains**.
+
+> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+
 ## Août 2025
 
 ### 06 Août 2025
 #### 🇹🇳 Tunisie - Yasat (yasat.tn)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** RainbowDF
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** RainbowDF
 - **Secteur:** Technologies / Distribution Multimédia.
 - **Site web:** yasat.tn
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Plateforme tunisienne de vente en gros de services multimédia et d'abonnements numériques, servant de fournisseur à de nombreux propriétaires de magasins et revendeurs locaux.
 - **Analyse:** AFRINTEL a examiné les données structurées correspondant à la revendication de l'acteur, issues d'exports de la base de données de production de la plateforme d'abonnements IPTV/satellite en gros de Yasat, incluant des produits sous la marque beIN Sports et des offres IPTV génériques avec des champs de liens de flux M3U. Les tables examinées comprennent 52 733 lignes de facturation (produits, quantités, prix, remises, taxes, montants payés/dus), 46 522 enregistrements de ventes générales incluant numéros de mobile, adresses email et liens de flux IPTV (M3U) des clients, 8 623 enregistrements de ventes spécifiques beIN avec des champs de contact client similaires, 211 profils clients (nom, prénom, société, adresse, téléphone, genre, date de naissance) et une table de 22 comptes utilisateurs contenant un champ mot de passe. L'ensemble des données indique des dizaines de milliers d'enregistrements clients et transactionnels exposés, créant un risque significatif de fraude aux abonnements, de réutilisation d'identifiants et de phishing ciblé contre la base de revendeurs et de clients de Yasat. AFRINTEL ne reproduit aucun nom de client, coordonnée, lien de flux ni identifiant issus de l'échantillon examiné.
-
 
 ### 06 Août 2025
 #### 🇰🇪 Kenya - KenGen
@@ -24,16 +30,16 @@
 - **Secteur:** Énergie / Infrastructures Critiques (Production d'Électricité).
 - **Site web:** www.kengen.co.ke
 - **Statut:** Claim - Data Sample Published
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
 - **Description victime:** Kenya Electricity Generating Company PLC (KenGen) est le principal producteur d'électricité du Kenya, fournissant environ 70 % de l'énergie consommée dans le pays.
-- **Analyse :** AFRINTEL a examiné un ensemble de documents locaux associés à cette revendication. L'échantillon comprend des documents internes de gestion contractuelle de KenGen relatifs à un projet de construction d'un centre de formation géothermique (une note de l'équipe de mise en œuvre du contrat, un bon de commande officiel et une lettre de garantie bancaire de bonne exécution émise par une banque commerciale), un budget CAPEX détaillé pour la division Geothermal Development, un registre financier de type paie, un tableau d'effectifs du département Geothermal Development listant identifiants employés, noms, genre, intitulés de poste et niveaux de grade, une déclaration de confidentialité d'appel d'offres signée liée à un marché informatique interne, un courrier officiel du ministère kényan de l'Énergie et du Pétrole adressé aux directeurs généraux de KenGen et d'autres entités du secteur énergétique national concernant un cadre de renforcement des ressources humaines et de recherche-développement, ainsi qu'un plan technique d'un local auxiliaire/tableau électrique d'une installation. Les documents présentent un en-tête, des cachets, des signatures et des numéros de contrat cohérents et croisés entre des fichiers de structure indépendante, ce qui renforce la confiance quant à une origine interne aux systèmes de KenGen. L'ensemble combine des données personnelles d'employés, des documents financiers et de passation de marchés internes, de la documentation technique et des correspondances avec des institutions du secteur énergétique national, indiquant une exposition touchant plusieurs systèmes internes plutôt qu'une seule application. AFRINTEL ne reproduit aucun nom d'employé, identifiant, signature ni valeur monétaire issus de l'échantillon, et ne confirme pas l'intrusion de façon indépendante.
+- **Analyse:** AFRINTEL a examiné un ensemble de documents locaux associés à cette revendication. L'échantillon comprend des documents internes de gestion contractuelle de KenGen relatifs à un projet de construction d'un centre de formation géothermique (une note de l'équipe de mise en œuvre du contrat, un bon de commande officiel et une lettre de garantie bancaire de bonne exécution émise par une banque commerciale), un budget CAPEX détaillé pour la division Geothermal Development, un registre financier de type paie, un tableau d'effectifs du département Geothermal Development listant identifiants employés, noms, genre, intitulés de poste et niveaux de grade, une déclaration de confidentialité d'appel d'offres signée liée à un marché informatique interne, un courrier officiel du ministère kényan de l'Énergie et du Pétrole adressé aux directeurs généraux de KenGen et d'autres entités du secteur énergétique national concernant un cadre de renforcement des ressources humaines et de recherche-développement, ainsi qu'un plan technique d'un local auxiliaire/tableau électrique d'une installation. Les documents présentent un en-tête, des cachets, des signatures et des numéros de contrat cohérents et croisés entre des fichiers de structure indépendante, ce qui renforce la confiance quant à une origine interne aux systèmes de KenGen. L'ensemble combine des données personnelles d'employés, des documents financiers et de passation de marchés internes, de la documentation technique et des correspondances avec des institutions du secteur énergétique national, indiquant une exposition touchant plusieurs systèmes internes plutôt qu'une seule application. AFRINTEL ne reproduit aucun nom d'employé, identifiant, signature ni valeur monétaire issus de l'échantillon, et ne confirme pas l'intrusion de façon indépendante.
 
 ### 06 Août 2025
 #### 🇲🇦 Maroc - New Era Com
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Chucky_BF
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Chucky_BF
 - **Secteur:** Télécoms / Infrastructures / Services IT.
 - **Site web:** neweracom.ma
 - **Statut:** Data Fully Published
@@ -41,15 +47,26 @@
 
 ### 09 Août 2025
 #### 🇳🇬 Nigeria - Zenith Bank Plc
-- **Acteur / Groupe :** KaruHunters
+- **Acteur / Groupe:** KaruHunters
 - **Secteur:** Banque / Services Financiers.
 - **Site web:** zenithbank.com
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Medium
-- **Niveau d'impact :** Level 3
-- **Description victime :** L'une des plus grandes institutions financières du Nigeria et d'Afrique anglophone, cotée à la Bourse du Nigeria et à celle de Londres. L'acteur revendique l'exfiltration et la mise en vente de plus de 1,8 million de dossiers clients, ainsi que des données d'employés. AFRINTEL a examiné un échantillon CSV local de 18 lignes et huit colonnes couvrant un index, un code, un identifiant, un nom, un montant, une adresse, un téléphone et une adresse email. Aucune valeur brute n'est reproduite.
-- **Note de corrélation :** La même organisation et le même domaine ont été listés de nouveau le 26 juillet 2026 par ExfilSquad dans une revendication ransomware. Cela établit une corrélation d’identité et de temporalité, mais pas une connexion confirmée entre les deux événements. L’entrée de 2025 concerne une mise en vente alléguée de 1,8 million de dossiers avec un échantillon de 18 lignes examiné ; l’entrée de 2026 ne fournit ni échantillon, ni volume, ni preuve de chiffrement, ni confirmation de la victime. Aucun archivage correspondant, schéma de données, infrastructure partagée ou lien explicite ne relie les deux revendications. AFRINTEL les suit donc comme des entrées liées / revendications possiblement distinctes, avec une relation non résolue.
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** L'une des plus grandes institutions financières du Nigeria et d'Afrique anglophone, cotée à la Bourse du Nigeria et à celle de Londres. L'acteur revendique l'exfiltration et la mise en vente de plus de 1,8 million de dossiers clients, ainsi que des données d'employés. AFRINTEL a examiné un échantillon CSV local de 18 lignes et huit colonnes couvrant un index, un code, un identifiant, un nom, un montant, une adresse, un téléphone et une adresse email. Aucune valeur brute n'est reproduite.
+- **Note de corrélation:** La même organisation et le même domaine ont été listés de nouveau le 26 juillet 2026 par ExfilSquad dans une revendication ransomware. Cela établit une corrélation d’identité et de temporalité, mais pas une connexion confirmée entre les deux événements. L’entrée de 2025 concerne une mise en vente alléguée de 1,8 million de dossiers avec un échantillon de 18 lignes examiné ; l’entrée de 2026 ne fournit ni échantillon, ni volume, ni preuve de chiffrement, ni confirmation de la victime. Aucun archivage correspondant, schéma de données, infrastructure partagée ou lien explicite ne relie les deux revendications. AFRINTEL les suit donc comme des entrées liées / revendications possiblement distinctes, avec une relation non résolue.
+
+### 11 Août 2025
+#### 🇿🇦 Afrique du Sud - Body Graphics Tattoo Supply
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** N1KA
+- **Secteur:** Commerce de détail / E-commerce.
+- **Site web:** bodygraphicstattoosupply.co.za
+- **Date de publication de la source:** 11 août 2025
+- **Statut:** Data Fully Published
+- **Description victime:** Détaillant en ligne majeur basé à Johannesburg, spécialisé dans la fourniture de matériel de tatouage professionnel et de produits de soin en Afrique du Sud.
+- **Analyse:** AFRINTEL a examiné deux fichiers d'export structurés référencés dans une publication observée sur DarkForums, totalisant 6 501 enregistrements, soit un volume cohérent avec celui revendiqué par l'acteur. Le jeu de données correspond à un export de clients et d'administrateurs WordPress/WooCommerce, incluant identifiants de connexion, adresses email, mots de passe hachés (format phpass), adresses postales, numéros de téléphone, adresses IP, chaînes d'user-agent et jetons de session. La cohérence structurelle entre le volume revendiqué et les fichiers examinés, ainsi que la correspondance des champs avec la plateforme e-commerce de la victime, justifie un niveau de confiance élevé, et la publication identifie le compte source N1KA. AFRINTEL ne reproduit aucun nom de client, coordonnée, adresse ni identifiant issu de l'échantillon examiné.
 
 ### 13 Août 2025
 #### 🇩🇿 Algérie - Cevital
@@ -57,8 +74,8 @@
 - **Secteur:** Agroalimentaire/ Industrie / Logistique
 - **Site web:** www.cevital.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Leader de l'industrie agroalimentaire en Algérie, actif dans l'électronique, l'acier, le verre et la distribution.
-
 
 ### 17 Août 2025
 #### 🇿🇦 Afrique du Sud - SYSPRO
@@ -66,6 +83,7 @@
 - **Secteur:** Technologies (Éditeur de logiciels)
 - **Site web:** syspro.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** SYSPRO est un éditeur de logiciels ERP (Enterprise Resource Planning) sud-africain, fournissant des solutions de gestion intégrées pour les entreprises de fabrication et de distribution.
 
 ### 18 Août 2025
@@ -74,19 +92,8 @@
 - **Secteur:** Énergie (Électricité)
 - **Site web:** https://www.uetcl.go.ug / www.uetcl.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Société publique ougandaise responsable du transport de l'électricité.
-
-
-### 11 Août 2025
-#### 🇿🇦 Afrique du Sud - Body Graphics Tattoo Supply
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** N1KA
-- **Secteur:** Commerce de détail / E-commerce.
-- **Site web:** bodygraphicstattoosupply.co.za
-- **Date de publication de la source :** 11 août 2025
-- **Statut:** Data Fully Published
-- **Description victime:** Détaillant en ligne majeur basé à Johannesburg, spécialisé dans la fourniture de matériel de tatouage professionnel et de produits de soin en Afrique du Sud.
-- **Analyse:** AFRINTEL a examiné deux fichiers d'export structurés référencés dans une publication observée sur DarkForums, totalisant 6 501 enregistrements, soit un volume cohérent avec celui revendiqué par l'acteur. Le jeu de données correspond à un export de clients et d'administrateurs WordPress/WooCommerce, incluant identifiants de connexion, adresses email, mots de passe hachés (format phpass), adresses postales, numéros de téléphone, adresses IP, chaînes d'user-agent et jetons de session. La cohérence structurelle entre le volume revendiqué et les fichiers examinés, ainsi que la correspondance des champs avec la plateforme e-commerce de la victime, justifie un niveau de confiance élevé, et la publication identifie le compte source N1KA. AFRINTEL ne reproduit aucun nom de client, coordonnée, adresse ni identifiant issu de l'échantillon examiné.
 
 ### 18 Août 2025
 #### 🇹🇳 Tunisie - International Freight & Commerce
@@ -94,8 +101,8 @@
 - **Secteur:** Logistique
 - **Site web:** ifc-tunisie.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Entreprise tunisienne qui assure des services de transport maritime, aérien et terrestre, ainsi que la gestion logistique et les formalités douanières pour des entreprises importatrices et exportatrices.
-
 
 ### 20 Août 2025
 #### 🇿🇦 Afrique du Sud - Netstar South Africa (deuxième attaque)
@@ -103,13 +110,14 @@
 - **Secteur:** Technologie / Télématique / Sécurité IoT
 - **Site web:** www.netstar.co.za
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Netstar, une filiale du groupe Altron, est le pionnier de l'industrie du suivi et de la récupération de véhicules volés (SVR) en Afrique du Sud.
-- **Analyse :** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par devman le 23 mai 2025. Cette seconde revendication, publiée environ trois mois plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
+- **Analyse:** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par devman le 23 mai 2025. Cette seconde revendication, publiée environ trois mois plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
 
 ### 23 Août 2025
 #### 🇪🇬 Égypte - TEAM4 Security
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** GhostCrawl
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** GhostCrawl
 - **Secteur:** Services de Sécurité / Défense / Ressources Humaines.
 - **Site web:** team4security.com 
 - **Statut:** Claim - Data Sample Published
@@ -122,17 +130,19 @@
 - **Secteur:** Assurances / Services Financiers.
 - **Site web:** www.swan.mu / swanforlife.com
 - **Statut:** Claim - Unverified
-- **Description victime:** WAN (Swan General Ltd et Swan Life Ltd) est le leader du marché des assurances et des services financiers à l'Île Maurice.
+- **Type d'incident:** Ransomware
+- **Description victime:** SWAN (Swan General Ltd et Swan Life Ltd) est le leader du marché des assurances et des services financiers à l'Île Maurice.
 
 ### 25 Août 2025
 #### 🇹🇬 Togo - Infrastructures Gouvernementales
-- **Type d'incident:** Vente d’accès
-- **Acteur / Groupe :** BIGBROTHER
+- **Type d'incident:** Access Sale
+- **Acteur / Groupe:** BIGBROTHER
 - **Secteur:** Gouvernement / Infrastructures Critiques.
 - **Site web:** gouv.tg
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Portail officiel et infrastructures numériques de la République Togolaise, hébergeant les services administratifs et les données étatiques.
 - **Analyse:** Des éléments corroborent la revendication de l'acteur, incluant le post DarkForums lui-même ainsi que plusieurs éléments montrant un accès administratif actif à plusieurs plateformes numériques gouvernementales togolaises : le système de gestion de l'état civil et de l'identité DSNIC (justice.xflow.gouv.tg), une plateforme de partage de fichiers et de collaboration de type Nextcloud (cloud.numerique.gouv.tg) avec des dossiers partagés et des fichiers de configuration, une instance de collecte de données KoboToolbox (kf.form.gouv.tg) hébergeant plusieurs dizaines d'enquêtes et formulaires gouvernementaux actifs, ainsi qu'un système de reporting statistique de l'éducation (stateduc.planifeducation.gouv.tg). Les éléments montrent un accès administratif réel à des tableaux de bord actifs, et non un simple échantillon public, ce qui est cohérent avec la description de l'offre par l'acteur comme une vulnérabilité 0day donnant un accès privilégié. Cette étendue d'accès à des systèmes et sous-domaines distincts sous le domaine gouv.tg justifie un niveau de confiance élevé quant à une compromission active et non corrigée affectant plusieurs services numériques gouvernementaux, indépendamment du prix en Monero avancé par l'acteur, qu'AFRINTEL ne peut vérifier. AFRINTEL ne reproduit aucun identifiant, valeur de configuration, donnée citoyenne ni détail de session issu des éléments examinés.
+
 ---
 [Rapport d'Août 2025](./report/README_FR.md)
 ---
@@ -140,4 +150,3 @@
 *Adama ASSIONGBON*  
 *Consultant SOC & Cyber Threat Intelligence*  
 [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-

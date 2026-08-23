@@ -5,12 +5,19 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # Liste des victimes africaines de cyberattaques en Juin 2025 (21 victimes)
 👉🏾 [**English version available here**](./victims.md)
+
+## Résumé du mois
+
+Juin 2025 compte **21 incidents uniques** : **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **8 pays africains**.
+
+> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+
 ## Juin 2025
 
 ### 02 Juin 2025
 #### 🇲🇦 Maroc - ANCFCC (Agence Nationale de la Conservation Foncière)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** nightspire
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** nightspire
 - **Secteur:** Gouvernement / Immobilier et Foncier.
 - **Site web:** https://www.ancfcc.gov.ma/
 - **Statut:** Claim - Data Sample Published
@@ -19,13 +26,13 @@
 
 ### 02 Juin 2025
 #### 🇲🇦 Maroc - Portail de l'Ordre des Avocats (avocatsmaroc.com / mossaada.ma)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** B4baYega
-- **Secteur :** Services juridiques / Association professionnelle
-- **Site web :** avocatsmaroc.com / mossaada.ma
-- **Statut :** Claim - Data Sample Published
-- **Description victime :** avocatsmaroc.com est un portail marocain de la profession juridique appuyant les avocats dans la gestion de leurs dossiers et procédures d'exécution ; mossaada.ma est une plateforme d'aide juridictionnelle associée.
-- **Analyse :** AFRINTEL a examiné du code source applicatif et des sauvegardes de base de données SQL référençant les domaines bureau.avocatsmaroc.com et app2.mossaada.ma, diffusés par l'acteur B4baYega aux côtés d'une archive protégée par mot de passe. Les fichiers source PHP de l'application utilisent des noms de fonctions et de champs translittérés de l'arabe correspondant à une terminologie de gestion de dossiers judiciaires et de procédures d'exécution (par ex. « Tanfid »/exécution, « Khazina »/trésorerie ou caisse, « Tabligh »/notification, « Diligence », « Tribunal »), ainsi que des fonctions de recherche de clients, de modification de dossiers clients et de suivi de diligences, et plusieurs fichiers de sauvegarde SQL datés. Cela indique la compromission d'une application de gestion de dossiers juridiques utilisée par ou pour des avocats marocains, plutôt qu'un simple site vitrine. AFRINTEL n'a pas extrait ni examiné le contenu ligne par ligne des sauvegardes SQL et ne reproduit aucun nom de client, référence de dossier ni autre donnée personnelle issus de l'échantillon examiné. L'ampleur et le volume réels des enregistrements contenus dans les sauvegardes n'ont pas pu être confirmés de manière indépendante.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** B4baYega
+- **Secteur:** Services juridiques / Association professionnelle
+- **Site web:** avocatsmaroc.com / mossaada.ma
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** avocatsmaroc.com est un portail marocain de la profession juridique appuyant les avocats dans la gestion de leurs dossiers et procédures d'exécution ; mossaada.ma est une plateforme d'aide juridictionnelle associée.
+- **Analyse:** AFRINTEL a examiné du code source applicatif et des sauvegardes de base de données SQL référençant les domaines bureau.avocatsmaroc.com et app2.mossaada.ma, diffusés par l'acteur B4baYega aux côtés d'une archive protégée par mot de passe. Les fichiers source PHP de l'application utilisent des noms de fonctions et de champs translittérés de l'arabe correspondant à une terminologie de gestion de dossiers judiciaires et de procédures d'exécution (par ex. « Tanfid »/exécution, « Khazina »/trésorerie ou caisse, « Tabligh »/notification, « Diligence », « Tribunal »), ainsi que des fonctions de recherche de clients, de modification de dossiers clients et de suivi de diligences, et plusieurs fichiers de sauvegarde SQL datés. Cela indique la compromission d'une application de gestion de dossiers juridiques utilisée par ou pour des avocats marocains, plutôt qu'un simple site vitrine. AFRINTEL n'a pas extrait ni examiné le contenu ligne par ligne des sauvegardes SQL et ne reproduit aucun nom de client, référence de dossier ni autre donnée personnelle issus de l'échantillon examiné. L'ampleur et le volume réels des enregistrements contenus dans les sauvegardes n'ont pas pu être confirmés de manière indépendante.
 
 ### 06 Juin 2025
 #### 🇲🇦 Maroc - MTT EXPERTISES
@@ -33,6 +40,7 @@
 - **Secteur:** Services aux entreprises
 - **Site web:** https://mttexpertises.com
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** Medium
 - **Niveau d'impact:** Level 3
 - **Description victime:** MTT Expertises est un cabinet d'ingénierie et d'expertise multidisciplinaire basé à Casablanca (avec des bureaux à Agadir et Tanger).
@@ -44,6 +52,7 @@
 - **Secteur:** Administration Foncière / Secteur Public.
 - **Site web:** ingonyamatrust.org.za
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** L'Ingonyama Trust Board (ITB) est une autorité administrative sud-africaine chargée de gérer environ 2,8 millions d'hectares de terres communales dans la province du KwaZulu-Natal.
 
 ### 06 Juin 2025
@@ -52,28 +61,29 @@
 - **Secteur:** Ressources Humaines / Recrutement / Intérim.
 - **Site web:** https://bestprofil.ma
 - **Statut:** Data Fully Published
+- **Type d'incident:** Ransomware
 - **Description victime:** Best Profil est l'un des leaders du recrutement et de l'intérim au Maroc. Le groupe Lynx décrit cet incident comme une exfiltration totale de 26 Go, désormais en libre accès sur son site de fuite après l'échec, selon ses affirmations, des négociations de rançon.
 - **Analyse:** AFRINTEL a examiné un échantillon local des données divulguées, composé de documents administratifs et opérationnels internes référençant « PEGASE » (un système/outil interne), de tableurs de suivi de présence et de paie du personnel, de fichiers de vérification de factures et de détail de facturation, ainsi que d'un dossier de réclamation client pour un site industriel. La présence de manuels de systèmes internes, de données de paie et de pointage, ainsi que de correspondance administrative au niveau des sites, est cohérente avec une compromission réelle des systèmes internes plutôt qu'une simple revendication superficielle. L'exposition des données de présence, de paie et de facturation du personnel crée un risque de fraude à la paie, de compromission de messagerie professionnelle (BEC) et d'ingénierie sociale contre le personnel et les clients corporate de Best Profil. AFRINTEL ne reproduit aucun nom d'employé, nom de client ni montant financier issus de l'échantillon examiné.
 
 ### 08 Juin 2025
 #### 🇩🇿 Algérie - Crédit Populaire d’Algérie (cpa-bank.dz)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** TajineSec / Tajinesec_MA (revendication publiée)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** TajineSec / Tajinesec_MA
 - **Secteur:** Banque / Services Financiers.
 - **Site web:** https://cpa-bank.dz
 - **Statut:** Claim - Unverified
-- **Description victime :** Crédit Populaire d'Algérie (CPA) est l'une des principales banques publiques du pays. TajineSec affirme avoir exfiltré plus de 30 Go, comprenant des documents d'identité, des informations sur les employés et les clients, des données de comptes bancaires et de transferts d'argent, ainsi que des documents administratifs internes. Un échantillon de 500 Mo est annoncé, mais il n'est pas visible dans la preuve fournie.
-- **Analyse :** La publication documente une revendication publique attribuée à TajineSec / Tajinesec_MA et décrit des données bancaires et d'identité potentiellement très sensibles. La compromission, le volume annoncé, l'attribution marocaine alléguée et la publication de l'échantillon annoncé ne sont pas vérifiés indépendamment. Le statut reste donc **Claim - Unverified**.
+- **Description victime:** Crédit Populaire d'Algérie (CPA) est l'une des principales banques publiques du pays. TajineSec affirme avoir exfiltré plus de 30 Go, comprenant des documents d'identité, des informations sur les employés et les clients, des données de comptes bancaires et de transferts d'argent, ainsi que des documents administratifs internes. Un échantillon de 500 Mo est annoncé, mais il n'est pas visible dans la preuve fournie.
+- **Analyse:** La publication documente une revendication publique attribuée à TajineSec / Tajinesec_MA et décrit des données bancaires et d'identité potentiellement très sensibles. La compromission, le volume annoncé, l'attribution marocaine alléguée et la publication de l'échantillon annoncé ne sont pas vérifiés indépendamment. Le statut reste donc **Claim - Unverified**.
 
 ### 09 Juin 2025
 #### 🇩🇿 Algérie - Algérie Télécom (algerietelecom.dz)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Phantom Atlas
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Phantom Atlas
 - **Secteur:** Télécommunications / Infrastructure Internet nationale
 - **Site web:** [algerietelecom.dz](https://www.algerietelecom.dz)
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Algérie Télécom est l'opérateur historique et principal fournisseur d'accès Internet fixe et de téléphonie fixe en Algérie, exploitant l'infrastructure réseau nationale reliant les points d'accès régionaux aux serveurs de contenu internationaux.
-- **Analyse :** Phantom Atlas revendique un accès complet à la cartographie interne du réseau internet d'Algérie Télécom pour les wilayas de Tizi Ouzou, Boumerdes et Bouira, affirmant détenir des informations détaillées sur l'infrastructure critique reliant les points d'accès (BNG) aux serveurs de contenu mondiaux (FNA, GGC), ainsi que les routeurs cœur de réseau, les anneaux de distribution de contenu et la consommation de données par commune.
+- **Analyse:** Phantom Atlas revendique un accès complet à la cartographie interne du réseau internet d'Algérie Télécom pour les wilayas de Tizi Ouzou, Boumerdes et Bouira, affirmant détenir des informations détaillées sur l'infrastructure critique reliant les points d'accès (BNG) aux serveurs de contenu mondiaux (FNA, GGC), ainsi que les routeurs cœur de réseau, les anneaux de distribution de contenu et la consommation de données par commune.
 
   Les éléments examinés montrent des interfaces d'un outil de supervision réseau de type « Network Weathermap », affichant plusieurs cartes topologiques distinctes : un schéma du projet BNG Tizi-Ouzou avec des routeurs identifiés (PE-01, PE-02, ASBR-01, ASBR-02) et des liens de peering vers Google (GGC) et Facebook (FNA) avec charges de trafic en Gbit/s ; un schéma de la boucle métropolitaine régionale nommant des dizaines de sites et communes des wilayas concernées ; et un tableau de consommation de bande passante détaillé par commune pour Tizi Ouzou, Boumerdes et Bouira. Un second message précise que l'accès a été maintenu depuis au moins le 28 mai 2025 (mention d'une coupure de connexion lors d'un test à cette date) et affirme détenir des données allant au-delà de simples cartes.
 
@@ -81,13 +91,13 @@
 
 ### 09 Juin 2025
 #### 🇬🇭 Ghana - Priority Insurance Company Limited
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** 0x0day, publication postée sur le forum cybercriminel DarkForums
-- **Secteur :** Assurance / Services financiers
-- **Site web :** priorityinsuranceghana.net
-- **Statut :** Claim - Data Sample Published
-- **Description victime :** Priority Insurance Company Limited est une compagnie d'assurance non-vie ghanéenne basée à Accra, agréée par la National Insurance Commission (NIC), qui exploite un réseau de plus de 30 agences à travers le pays, notamment à Accra, Kumasi, Tema, Cape Coast et Ho.
-- **Analyse :** AFRINTEL a identifié la publication d'origine, intitulée « GHANA Inusrance database », publiée sur le forum cybercriminel DarkForums par le compte 0x0day le 9 juin 2025, ce qui remplace un enregistrement précédent en cours d'investigation, provisoirement placé en février 2025 sur la seule base d'une date de modification de fichier, sans publication source retrouvée. La publication affiche un échantillon JSON cohérent avec un export interne de gestion de polices d'assurance, avec des champs incluant un identifiant client, un numéro de police, un identifiant et un nom d'agence (Tema), un type de client, un nom complet, une adresse email, un numéro de téléphone, des adresses numérique/postale/de résidence, un numéro d'identification fiscale, un identifiant et un nom d'entreprise (explicitement « Priority Insurance Company Limited »), ainsi qu'un champ d'identification nationale. Cela correspond à la structure et au réseau d'agences (Accra, Kumasi, Tema, Cape Coast, Ho, Bolga) du fichier de base de données clients précédemment examiné par AFRINTEL, qui contenait 349 288 enregistrements dont environ 159 000 avec une adresse email et environ 159 000 avec un numéro d'identification nationale. La combinaison d'un compte source confirmé, d'une date de publication explicite et d'un échantillon correspondant au jeu de données précédemment examiné permet de faire passer le niveau de confiance d'en cours d'investigation à une revendication datée et attribuée. Compte tenu du volume d'enregistrements et de la combinaison de numéros d'identification nationale, de dates de naissance, de professions, de coordonnées et d'association à des polices d'assurance, l'exposition de ce jeu de données créerait un risque significatif d'usurpation d'identité, de fraude à l'assurance et de phishing ciblé visant les assurés. AFRINTEL ne reproduit aucun nom de client, numéro de téléphone, adresse, numéro d'identification nationale ni date de naissance issu des éléments examinés.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** 0x0day
+- **Secteur:** Assurance / Services financiers
+- **Site web:** priorityinsuranceghana.net
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** Priority Insurance Company Limited est une compagnie d'assurance non-vie ghanéenne basée à Accra, agréée par la National Insurance Commission (NIC), qui exploite un réseau de plus de 30 agences à travers le pays, notamment à Accra, Kumasi, Tema, Cape Coast et Ho.
+- **Analyse:** AFRINTEL a identifié la publication d'origine, intitulée « GHANA Inusrance database », publiée sur le forum cybercriminel DarkForums par le compte 0x0day le 9 juin 2025, ce qui remplace un enregistrement précédent en cours d'investigation, provisoirement placé en février 2025 sur la seule base d'une date de modification de fichier, sans publication source retrouvée. La publication affiche un échantillon JSON cohérent avec un export interne de gestion de polices d'assurance, avec des champs incluant un identifiant client, un numéro de police, un identifiant et un nom d'agence (Tema), un type de client, un nom complet, une adresse email, un numéro de téléphone, des adresses numérique/postale/de résidence, un numéro d'identification fiscale, un identifiant et un nom d'entreprise (explicitement « Priority Insurance Company Limited »), ainsi qu'un champ d'identification nationale. Cela correspond à la structure et au réseau d'agences (Accra, Kumasi, Tema, Cape Coast, Ho, Bolga) du fichier de base de données clients précédemment examiné par AFRINTEL, qui contenait 349 288 enregistrements dont environ 159 000 avec une adresse email et environ 159 000 avec un numéro d'identification nationale. La combinaison d'un compte source confirmé, d'une date de publication explicite et d'un échantillon correspondant au jeu de données précédemment examiné permet de faire passer le niveau de confiance d'en cours d'investigation à une revendication datée et attribuée. Compte tenu du volume d'enregistrements et de la combinaison de numéros d'identification nationale, de dates de naissance, de professions, de coordonnées et d'association à des polices d'assurance, l'exposition de ce jeu de données créerait un risque significatif d'usurpation d'identité, de fraude à l'assurance et de phishing ciblé visant les assurés. AFRINTEL ne reproduit aucun nom de client, numéro de téléphone, adresse, numéro d'identification nationale ni date de naissance issu des éléments examinés.
 
 ### 11 Juin 2025
 #### 🇲🇺 Maurice - Currimjee Jeewanjee & Co
@@ -95,30 +105,32 @@
 - **Secteur:** Conglomérat / multi-sectoriel
 - **Site web:** https://www.currimjee.com
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** L'un des plus anciens et importants conglomérats de l'île Maurice, opérant dans les télécoms (Emtel), l'énergie, l'immobilier, le tourisme et les services financiers.
 
 ### 11 Juin 2025
 #### 🇩🇿 Algérie - Banque Nationale d’Algérie (bna.dz)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Phantom Atlas
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Phantom Atlas
 - **Secteur:** Banque / Services Financiers.
 - **Site web:** https://bna.dz / https://ebanking.bna.dz
 - **Statut:** Claim - Unverified
 - **Description victime:** La Banque Nationale d'Algérie (BNA) est la première banque commerciale de l'État algérien. L'acteur revendique une exfiltration massive de 90 Go avec une publication partielle de 7 Go ; AFRINTEL a consulté cette revendication sur le site de l'acteur mais n'a pas collecté ni analysé les données sous-jacentes.
-- **Analyse :** Un message Phantom Atlas antérieur, publié le 10 juin 2025 sur la chaîne Telegram de l'acteur, précise cette revendication : le groupe affirme détenir plus de 90 Go de documents couvrant la période 2016-2025, avec une diffusion annoncée en plusieurs temps (« nous commencerons par ceux de 2016 »), l'archive étant protégée par le mot de passe `phantomatlas`. Le lien de téléchargement mentionné sur DarkForums n'est plus accessible au moment de la rédaction de cette fiche ; AFRINTEL n'a donc pas pu collecter ni examiner l'archive revendiquée, et ne peut confirmer ni l'exhaustivité ni l'authenticité du contenu annoncé.
+- **Analyse:** Un message Phantom Atlas antérieur, publié le 10 juin 2025 sur la chaîne Telegram de l'acteur, précise cette revendication : le groupe affirme détenir plus de 90 Go de documents couvrant la période 2016-2025, avec une diffusion annoncée en plusieurs temps (« nous commencerons par ceux de 2016 »), l'archive étant protégée par le mot de passe `phantomatlas`. Le lien de téléchargement mentionné sur DarkForums n'est plus accessible au moment de la rédaction de cette fiche ; AFRINTEL n'a donc pas pu collecter ni examiner l'archive revendiquée, et ne peut confirmer ni l'exhaustivité ni l'authenticité du contenu annoncé.
 
 ### 11 Juin 2025
-#### 🇿🇦 Afrique du Sud - carducci
+#### 🇿🇦 Afrique du Sud - Carducci
 - **Groupe ransomware:** warlock
 - **Secteur:** Commerce de détail (Mode)
 - **Site web:** http://carducci.co.za/
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Carducci est une marque de mode sud-africaine basée au Cap, fondée en 1978. Elle est spécialisée dans les vêtements pour hommes élégants, notamment les costumes, les tenues décontractées et les accessoires. La marque est réputée pour son savoir-faire et ses tissus raffinés. Carducci fait partie du groupe Seardel
 
 ### 14 Juin 2025
 #### 🇪🇬 Égypte - Ministère de la Solidarité sociale
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Keymous
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Keymous
 - **Secteur:** Gouvernement / Administration publique / Affaires sociales
 - **Site web:** [moss.gov.eg](https://www.moss.gov.eg)
 - **Statut:** Claim - Data Sample Published
@@ -131,8 +143,8 @@
 
 ### 14 Juin 2025
 #### 🇩🇿 Algérie - Ministère de la Jeunesse et des Sports (MJS) / Directions de la Jeunesse et des Sports (DJS)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** mrdump, publication sur un forum cybercriminel (DarkForums)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** mrdump
 - **Secteur:** Gouvernement / Administration publique / Jeunesse et sports
 - **Site web:** [mjs.gov.dz](https://www.mjs.gov.dz)
 - **Statut:** Data Fully Published
@@ -149,8 +161,8 @@
 
 ### 18 Juin 2025
 #### 🇩🇿 Algérie - Ministère de la Défense Nationale (MDN)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** mrdump, publication sur un forum cybercriminel (DarkForums)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** mrdump
 - **Secteur:** Défense / Sécurité nationale
 - **Site web:** Non précisé (fichier interne, aucun domaine institutionnel visible)
 - **Statut:** Claim - Unverified
@@ -163,8 +175,8 @@
 
 ### 18 Juin 2025
 #### 🇲🇦 Maroc - Ministère de l'Éducation Nationale (men.gov.ma / massar.men.gov.ma)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** RiseAgainLuigi & B4baYega
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** RiseAgainLuigi & B4baYega
 - **Secteur:** Gouvernement / Éducation.
 - **Site web:** https://men.gov.ma / massar.men.gov.ma
 - **Statut:** Claim - Unverified
@@ -172,8 +184,8 @@
 
 ### 19 Juin 2025
 #### 🇩🇿 Algérie - Direction Générale des Douanes (DGD) / Service de contrôle des exportations et importations
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** mrdump (canal Telegram « Server dump »)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** mrdump
 - **Secteur:** Gouvernement / Douanes et commerce extérieur
 - **Site web:** [douane.gov.dz](https://www.douane.gov.dz)
 - **Statut:** Claim - Unverified
@@ -188,8 +200,8 @@
 
 ### 19 Juin 2025
 #### 🇲🇦 Maroc - Fédération Royale Marocaine de Football (FRMF)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Keymous
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Keymous
 - **Secteur:** Sport / Administration Publique.
 - **Site web:** https://frmf.ma/
 - **Statut:** Claim - Data Sample Published
@@ -198,46 +210,46 @@
 
 ### 20 Juin 2025
 #### 🇲🇦 Maroc - INWI (inwi.ma)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Evil_BYTE_Officiel
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Evil_BYTE_Officiel
 - **Secteur:** Télécommunications.
 - **Site web:** https://inwi.ma
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** INWI est l'un des trois principaux opérateurs de télécommunications au Maroc, fournissant des services de téléphonie mobile, fixe et d'internet (ADSL/Fibre). L'acteur a publié un échantillon de données sensibles incluant des PII (nom, CIN), des données de contact et des hashs de mots de passe (bcrypt).
 
-### 26 Juin 2025
-#### 🇩🇿 Algérie - Ministère des Transports
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** KickingPigs
-- **Secteur:** Gouvernement / Transports
-- **Site web:** Non précisé
-- **Statut:** Claim - Data Sample Published
-- **Description victime:** Le ministère algérien des Transports est l'administration publique chargée de la politique nationale des transports et des services administratifs associés.
-- **Analyse:** Une publication sur un forum, datée du 26 juin 2025 et attribuée à KickingPigs, présente une fuite supposée du ministère algérien des Transports. Le post énumère des données d'immatriculation et d'administration des transports, notamment des noms, numéros d'identification nationale, noms des parents, numéros d'immatriculation d'entreprises, informations sur les véhicules et leurs immatriculations, documents de permis de conduire et fichiers Excel internes. L'échantillon visible contient des enregistrements structurés de véhicules et des champs de données personnelles sensibles ; AFRINTEL ne reproduit aucun enregistrement ni identifiant. L'authenticité, l'exhaustivité et l'origine technique du jeu de données n'ont pas pu être confirmées indépendamment.
-
 ### 20 Juin 2025
 #### 🇹🇳 Tunisie - Ministère de la Défense Nationale / Forces armées
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** mrdump (publication sur le canal Telegram « Server dump »)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** mrdump
 - **Secteur:** Défense / Sécurité nationale
 - **Site web:** Non précisé
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Le Ministère tunisien de la Défense Nationale est l'administration gouvernementale chargée de la défense nationale et des forces armées.
 - **Analyse:** Une publication datée du 20 juin 2025, attribuée à mrdump, revendique un accès réussi à plusieurs systèmes du Ministère tunisien de la Défense Nationale, plus précisément à sa division des forces armées. La publication affirme qu'un dépôt souterrain d'armes aurait été découvert au mont Chaâmbi, dans le gouvernorat de Kasserine, et fait référence à des images thermiques, des plans d'ingénierie et des informations relatives aux armes et munitions entreposées. Une archive ZIP associée a été transmise à AFRINTEL ; un examen structurel sans lecture du contenu a identifié 10 éléments (six images PNG, un classeur XLSX, un PDF et une image JPG), pour environ 6,2 Mo compressés et 6,3 Mo décompressés. AFRINTEL n'a pas ouvert ni reproduit les fichiers, le matériel étant présenté comme militaire et potentiellement sensible sur le plan opérationnel. La structure de l'archive ne permet pas d'établir indépendamment l'authenticité, la provenance, la classification ou l'exhaustivité du matériel ; l'accès revendiqué reste non vérifié.
 
+### 26 Juin 2025
+#### 🇩🇿 Algérie - Ministère des Transports
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** KickingPigs
+- **Secteur:** Gouvernement / Transports
+- **Site web:** Non précisé
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** Le ministère algérien des Transports est l'administration publique chargée de la politique nationale des transports et des services administratifs associés.
+- **Analyse:** Une publication sur un forum, datée du 26 juin 2025 et attribuée à KickingPigs, présente une fuite supposée du ministère algérien des Transports. Le post énumère des données d'immatriculation et d'administration des transports, notamment des noms, numéros d'identification nationale, noms des parents, numéros d'immatriculation d'entreprises, informations sur les véhicules et leurs immatriculations, documents de permis de conduire et fichiers Excel internes. L'échantillon visible contient des enregistrements structurés de véhicules et des champs de données personnelles sensibles ; AFRINTEL ne reproduit aucun enregistrement ni identifiant. L'authenticité, l'exhaustivité et l'origine technique du jeu de données n'ont pas pu être confirmées indépendamment.
+
 ### 29 Juin 2025
 #### 🇩🇯 Djibouti - Ambassade de Djibouti au Maroc
-- **Type d'incident:** Fuite de données
+- **Type d'incident:** Data Leak
 
-- **Acteur / Groupe :** MdHackersArmy (publication postée par Doxeur23azi sur un forum cybercriminel, DarkForums)
-- **Secteur :** Gouvernement / Diplomatie
-- **Statut :** Claim - Unverified
-- **Site web :** Non précisé
+- **Acteur / Groupe:** MdHackersArmy
+- **Secteur:** Gouvernement / Diplomatie
+- **Statut:** Claim - Unverified
+- **Site web:** Non précisé
 
 - **Description :**
   L'ambassade de Djibouti au Maroc est la représentation diplomatique de Djibouti accréditée auprès du Royaume du Maroc.
 
-- **Analyse :**
+- **Analyse:**
   Une publication intitulée « Leak db of the Embassy of Djibouti in Morocco » a été publiée le 29 juin 2025 sur le forum cybercriminel DarkForums par le compte Doxeur23azi, qui attribue la revendication à MdHackersArmy. La publication se limite à un lien de téléchargement externe et ne décrit ni le type de données, ni la structure des champs, ni le volume d'enregistrements, ni la sensibilité de la base de données annoncée ; aucun échantillon n'est visible. AFRINTEL n'a pas accédé au lien externe. Les données concernées, la population affectée et l'origine technique de la revendication restent inconnues à ce stade.
 ## ✍🏿 Auteur
 *Adama ASSIONGBON*  

@@ -3,9 +3,18 @@
 ![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in October 2025 (19 victims)
+# List of African cyberattack victims in October 2025 (18 unique incidents)
 
 👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **11 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
+> **Lifecycle note:** the 13 October `meamargroup.com` publication is not counted as a new incident because the reviewed archive is the same underlying evidence set already associated with the 5 September 2025 MeamarGroup incident. It is treated as a lifecycle continuation/republication.
+
 ## October 2025
 ### 01 October 2025
 #### 🇿🇦 South Africa - Climatron (Pty) Ltd
@@ -13,6 +22,7 @@
 - **Sector:** Construction / HVAC
 - **Website:** https://climatron.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Climatron (Pty) Ltd is a company specializing in industrial and commercial air conditioning solutions, based in Johannesburg.
 
 ### 05 October 2025
@@ -21,6 +31,7 @@
 - **Sector:** Religion / Charitable Organization
 - **Website:** www.methodist.org.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Methodist Church of Southern Africa (MCSA) is one of the most influential Christian denominations in the region. It operates not only in South Africa but also in Botswana, Lesotho, Namibia, Eswatini, and Mozambique.
 
 ### 10 October 2025
@@ -29,6 +40,7 @@
 - **Sector:** Transport / Logistics
 - **Website:** www.momentumlogistics.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Momentum Logistics is a South African logistics provider based in Johannesburg.
 
 ### 13 October 2025
@@ -37,28 +49,20 @@
 - **Sector:** Logistics
 - **Website:** https://lavoieexpress.ma / https://lavoieexpress.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 - **Analysis:** AFRINTEL reviewed a local sample of multi-sheet spreadsheet exports consistent with the claim made by the threat actor medusa, each watermarked with the group's Tor leak-site address. The reviewed material includes a general accounting ledger (bank and journal entries dated 2020-2021), warehouse and logistics workbooks covering goods reception, dispatch, stock-preparation and internal-transfer movements for major appliance brands (referencing BSH/Bosch-Siemens product lines) tied to named internal staff handling the operations, and a client accounts-receivable ageing report listing several dozen named corporate clients across multiple Moroccan cities (Casablanca, Agadir, Tanger, Marrakech, Fès, Settat and others), including well-known national and multinational accounts (among them Procter & Gamble-affiliated entities, Savola Maroc, Centrale Laitière, Ciment du Maroc, BSH Electroménager and Ecolab), together with named client contacts, phone numbers, outstanding balances, payment terms and collections/dispute status. The internal consistency of the data across accounting, warehouse and commercial modules, the presence of real, identifiable Moroccan and multinational client accounts, and the multi-year date range (2020-2023) spanning multiple branches support a very high confidence assessment of a genuine, broad compromise of La Voie Express's internal ERP and accounting systems. Given the scale of the exposed accounts-receivable and banking-ledger data and its extension into the client base of a major national logistics provider, this incident creates a material risk of invoice fraud, business email compromise and targeted social engineering against La Voie Express and its corporate clients, beyond the company's own operational exposure. AFRINTEL does not reproduce any client name, contact name, phone number, financial figure or staff identifier from the reviewed material.
 
 ### 13 October 2025
-#### 🇪🇬 Egypt - meamargroup.com (third attack)
-- **Ransomware Group:** obscura
-- **Sector:** Real Estate / Construction / Engineering
-- **Website:** https://meamargroup.com
-- **Status:** Claim - Data Sample Published
-- **Confidence level:** Very High
-- **Impact level:** Level 3
-- **Victim Description:** Egyptian company specializing in real estate development.
-- **Analysis:** AFRINTEL reviewed a local server-side filesystem archive (491 files and directories, all owned by the www-data web-server account) consistent with the claim made by the threat actor obscura. File timestamps cluster into two groups: the bulk of the material (484 entries) dated 27 August 2025, and a smaller set of directory entries dated 05 September 2025, matching the group's first public claim date against this victim. The reviewed content includes multi-year internal accounting workbooks (yearly ledgers spanning 2015-2024, a "main data 2024" financial file, project cost-comparison sheets), an extensive sales call-center archive of roughly 249 dated spreadsheets covering missed-call and prospect-contact logs from September 2024 to July 2025, at least 21 employee CVs and resumes, and internal design, brochure and CAD material for named real-estate developments (including the Clove Mall and Prime Mall projects). A nested archive within the collection contains a mix of original files alongside copies bearing the ".obscura" ransomware encryption extension (for example, multiple yearly ledger workbooks and IT-department files), directly evidencing the file-encryption stage of the attack rather than an exfiltration claim alone. A short text file consistent with a Tor negotiation-portal countdown ("240 hours. Not available yet!") was also present. The combination of web-server file ownership, internally consistent multi-year timestamps, and the presence of actor-encrypted file copies supports a very high confidence assessment of a genuine, broad compromise of MeamarGroup's internal file server. Given the scale of the exposed financial ledgers, sales-prospect contact data and employee personal information, this incident creates a risk of invoice fraud, targeted phishing against prospective clients and employees, and competitive exposure of internal project and pricing data. AFRINTEL does not reproduce any client name, contact number, employee name or financial figure from the reviewed material.
-
 ### 15 October 2025
 #### 🇰🇪 Kenya - Turnkey Africa
 - **Ransomware Group:** qilin
 - **Sector:** Technology / Fintech (Insurance Solutions)
 - **Website:** https://turnkeyafrica.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Turnkey Africa is a pan-African technology leader. The company develops and provides software management solutions (Core Insurance Systems) for insurance and reinsurance companies in over 10 African countries.
 
 ### 17 October 2025
@@ -67,6 +71,7 @@
 - **Sector:** Air transport
 - **Website:** www.madagascarairlines.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Madagascar Airlines is the national airline of the Republic of Madagascar.
 
 ### 18 October 2025
@@ -75,6 +80,7 @@
 - **Sector:** Mining / Conglomerate
 - **Website:** https://congomineralservices.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** Congolese holding with activities in timber, logistics, and mineral exploration.
 
 - **Confidence level:** Medium
@@ -88,6 +94,7 @@
 - **Sector:** Education (University)
 - **Website:** https://www.wits.ac.za
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim Description:** The University of the Witwatersrand, located in Johannesburg, is one of Africa's most prestigious research institutions.
@@ -99,14 +106,16 @@
 - **Sector:** Agribusiness
 - **Website:** https://sangel-gabon.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Gabonese food production and distribution company based in Libreville, specializing in frozen products.
 
 ### 20 October 2025
 #### 🇪🇬 Egypt - Al Ahly Leasing & Factoring Company
-- **Ransomware Group:** blackshrantac
+- **Ransomware Group:** BlackShrantac
 - **Sector:** Finance
 - **Website:** alahlyleasing.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian financial institution specializing in leasing and factoring, a subsidiary of the National Bank of Egypt.
 
 ### 23 October 2025
@@ -115,6 +124,7 @@
 - **Sector:** Wholesale Trade (Food Products)
 - **Website:** https://starlegumes.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** Moroccan wholesaler of fruits, vegetables, spices, and dried seeds based in Casablanca.
@@ -126,6 +136,7 @@
 - **Sector:** Pharmaceutical Industry / Laboratory
 - **Website:** https://multi-laboratoire-lc2a.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 2
 - **Victim Description:** Moroccan laboratory offering a platform for configuring analytical projects for businesses.
@@ -137,6 +148,7 @@
 - **Sector:** Legal Services
 - **Website:** https://houstonwrongfuldeathlawyers.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian law firm.
 
 ### 28 October 2025
@@ -145,6 +157,7 @@
 - **Sector:** Finance
 - **Website:** https://aliosfinance.co.tz
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tanzania, offering specialized financing solutions. 100 GB of data exfiltrated.
 
 ### 28 October 2025
@@ -153,6 +166,7 @@
 - **Sector:** Finance
 - **Website:** https://aliosfinance.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tunisia, specializing in financing for businesses and individuals. During this intrusion, 100 GB of data were exfiltrated by the incransom group.
 
 ### 31 October 2025
@@ -161,6 +175,7 @@
 - **Sector:** Logistics
 - **Website:** https://tmf-logistics.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Victim Description:** TMF Logistics is an Algerian company specializing in transport and logistics solutions. During this attack, the incransom group claimed the exfiltration of 39 GB of sensitive company data.
 - **Analysis:** Internal financial and operational documents reviewed by AFRINTEL corroborate the incransom claim. A November 2024 revenue-by-client spreadsheet lists roughly thirty corporate clients served by TMF Logistics, including major food, beverage and pharmaceutical companies operating in Algeria (e.g. Danone Algérie, Institut Pasteur d'Algérie, GlaxoSmithKline Algérie, Fromagerie Bel Algérie), alongside refrigerated and general freight service categories (frigo, bâché and flatbed trailers). A separate detailed billing export covers invoice-level transport operations across numerous Algerian wilayas (including Béjaïa, Bouira, Batna, Constantine, Djelfa, Ghardaïa, Ouargla and Tindouf), indicating a national delivery network. A delivery discharge document confirms the company's official identity: SPA TMF Logistics, based in the Taharacht industrial zone, Akbou (Béjaïa wilaya), with its registered contact details and business registration references. The combination of a national client portfolio, route network data and business registration details creates a supply-chain risk (client impersonation, invoice fraud, competitive intelligence) extending beyond TMF Logistics' own operational exposure.
 

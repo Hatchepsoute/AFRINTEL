@@ -22,6 +22,22 @@ January 2026 brought in **21 cyber incidents** against African targets, claimed 
 
 👉🏾 [View full victim list](./victims.md)
 
+### 1.1 Month-over-month comparison
+
+> Comparison uses the harmonized December 2025 AFRINTEL corpus and the validated January 2026 victim files. It describes documented incident records and does not by itself establish a change in the real number of compromises.
+
+| Indicator | December 2025 | January 2026 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 18 | 21 | **+3 (+16.7%)** |
+| Ransomware | 14 | 17 | **+3 (+21.4%)** |
+| Data Leak | 4 | 2 | **-2 (-50.0%)** |
+| Access Sale | 0 | 1 | **+1 (new)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 1 | **+1 (new)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
+
+The overall documented volume increases by **16.7%**. Ransomware rises from 14 to 17 records and its share increases from **77.8% to 81.0%**. Data Leak decreases from 4 to 2 records. January also introduces one Access Sale and one Defacement, categories not recorded in the harmonized December corpus.
+
 ## 2. Methodology
 
 - **Scope**: 54 African countries.
@@ -308,30 +324,6 @@ xychart-beta
 - Actual data volumes in leak incidents have not been independently verified.
 
 
-### Factual comparison with December 2025
-
-The December source summary available in this report supports only three comparable figures: **18 documented incidents**, including **14 ransomware/extortion records** and **4 residual non-ransomware records**. It does not separate December's residual category into Data Leak, Access Sale and Defacement, so those categories are not invented here.
-
-| Indicator | December 2025 | January 2026 | Observed change |
-|---|---:|---:|---:|
-| Documented incidents | 18 | 21 | **+3 (+16.7%)** |
-| Ransomware / extortion | 14 | 17 | **+3 (+21.4%)** |
-| Other leaks / access sales / defacement | 4 | 4 | **0 (0.0%)** |
-
-```mermaid
-xychart-beta
-    title "Documented incidents - December 2025 vs January 2026"
-    x-axis ["DEC", "JAN"]
-    y-axis "Incidents" 0 --> 22
-    bar [18, 21]
-    bar [14, 17]
-    bar [4, 4]
-```
-
-**Series legend:** first series = total incidents | second series = ransomware / extortion | third series = residual non-ransomware records.  
-**Time legend:** `DEC` = December 2025 | `JAN` = January 2026.
-
-The month-on-month variation reflects AFRINTEL's documented public record. It may be influenced by publication timing, reposts, collection coverage or counting rules, and should not be read as a confirmed change in the real number of compromises.
 
 ## 9. MITRE ATT&CK mapping (contextual)
 
@@ -393,7 +385,7 @@ January 2026 closes with **21 documented or claimed incidents across 12 African 
 
 South Africa and Kenya record four incidents each, followed by Egypt with three. TheGentlemen and tengu account for **11 of the 21 records**, while the non-ransomware portion of the month includes two data publications, one advertised access sale and one coordinated government defacement.
 
-Compared with December 2025, the documented total rises from **18 to 21 (+16.7%)**, while ransomware / extortion rises from **14 to 17**. The December source does not provide a category-level breakdown of its four residual non-ransomware records, so no finer comparison is asserted.
+Compared with the harmonized December 2025 corpus, the documented total rises from **18 to 21 (+16.7%)**. Ransomware increases from **14 to 17 (+21.4%)**, Data Leak decreases from **4 to 2 (-50.0%)**, while January records **1 Access Sale** and **1 Defacement**, compared with none in December.
 
 **AFRINTEL** - African Cyber Threat Intelligence  
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

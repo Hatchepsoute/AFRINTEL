@@ -5,6 +5,13 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # List of African cyberattack victims in September 2025 (18 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+September 2025 includes **18 unique incidents**: **11 Ransomware**, **7 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **11 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## September 2025
 
 ### 02 September 2025
@@ -36,6 +43,7 @@
 - **Sector:** Real Estate / Construction / Engineering
 - **Website:** https://meamargroup.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** MeamarGroup (including Meamar Real Estate Development and Meamar Construction) is a major player in the Egyptian construction sector for over 25 years. Based in Cairo (New Cairo), the group manages over 400 projects ranging from luxury residential complexes to industrial and medical facilities (like the Biogeneric Pharma factory).
@@ -56,6 +64,7 @@
 - **Sector:** Catering / Food Services / Industrial Catering
 - **Website:** https://www.thepromisenig.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Promise is a leading Quick Service Restaurant (QSR) chain and industrial catering service in Nigeria, particularly established in Port Harcourt and the Niger Delta region.
 
 ### 09 September 2025
@@ -64,6 +73,7 @@
 - **Sector:** Manufacturing Industry / Bedding / Furniture
 - **Website:** https://www.dolidol.ma
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Dolidol (a subsidiary of the Palmeraie Industries et Services group) is the undisputed leader in bedding and polyurethane foam in Morocco.
 
 ### 09 September 2025
@@ -72,6 +82,7 @@
 - **Sector:** Manufacturing Industry (Plastics)
 - **Website:** https://www.proplastics.co.zw
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 - **Analysis:** The supplied local evidence set contains 63 files associated with Proplastics, including PDFs, spreadsheets, image files and text files. Filenames indicate business records covering invoices and credit memos, account balances, bills of materials, backorders, deliveries, sales analysis and branch reporting. The files carry dates spanning 2023-2024, while the directory metadata places the collection in September 2025; these timestamps are treated as evidence context, not as a confirmed intrusion or publication date. The material supports the plausibility and potential sensitivity of the September 2025 claim, but does not independently establish the access vector, the complete scope of the dataset or the attribution to TheGentlemen. AFRINTEL does not reproduce names, account details, financial values, customer records or document contents.
 
@@ -81,6 +92,7 @@
 - **Sector:** Finance
 - **Website:** https://princepsfinance.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Financial institution based in Lagos, specializing in consumer credit and SME financing.
 
 ### 11 September 2025
@@ -99,7 +111,7 @@
 ### 11 September 2025
 #### 🇦🇴 Angola - Angola Government Employees Database (pape.gov.ao)
 - **Incident type:** Data Leak
-- **Actor / Group:** privilege, post published on a cybercriminal forum
+- **Actor / Group:** privilege
 - **Sector:** Government / Public Administration
 - **Website:** [pape.gov.ao](https://pape.gov.ao)
 - **Status:** Claim - Data Sample Published
@@ -121,6 +133,7 @@
 - **Sector:** Public administrations
 - **Website:** https://www.orpp.go.ke
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Kenyan state body responsible for the registration, regulation, and supervision of political party funding.
 
 ### 16 September 2025
@@ -129,6 +142,7 @@
 - **Sector:** Insurance / Financial Services
 - **Website:** https://jubileelife.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Major player in life insurance and fund management in Kenya, a subsidiary of Jubilee Holdings Limited.
 
 ### 17 September 2025
@@ -137,6 +151,7 @@
 - **Sector:** Technology / ERP Software Publishing
 - **Website:** https://www.accflex.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
 
 ### 22 September 2025
@@ -145,6 +160,7 @@
 - **Sector:** Technology / Digital Services / Software Development
 - **Website:** https://fractalite.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Fractalite is a Moroccan digital consulting and engineering agency, specializing in software development and digital support for businesses.
 
 ### 24 September 2025
@@ -162,10 +178,11 @@
 
 ### 29 September 2025
 #### 🇸🇳 Senegal - Direction Générale des Impôts et des Domaines (DGID)
-- **Ransomware Group:** blackshrantac
+- **Ransomware Group:** BlackShrantac
 - **Sector:** Public Administration / Finance / Taxation
 - **Website:** https://www.impots.gouv.sn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The **DGID** is the central agency of Senegal's Ministry of Finance and Budget, responsible for tax collection, national domain management, and the land registry (cadastre). The ransomware group claims to have leaked 1 terabyte (1 TB) of sensitive data, including structured tax databases, land registries and taxpayer banking information; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
 
 ### 30 September 2025

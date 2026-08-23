@@ -1,381 +1,240 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple) ![Period](https://img.shields.io/badge/Period-2025-blue)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-September%202025-lightgrey)
 
-# 🛡️ AFRINTEL | CTI Report: Cyberattacks in Africa
+# CTI Report - Cyberattacks in Africa - September 2025
+
+👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Executive summary
-* **Total recorded attacks:** 18.
-* **Most active actors:** `TheGentlemen` (2 attacks), `killsec` (2 attacks) and `privilege` (2 attacks).
-* **Primary targeted sectors:** Public Administration, Finance, Insurance, Manufacturing, Technology, Telecommunications, and Education.
-* **Critical data volumes:**
-    * **General Directorate of Taxes and Domains (Senegal):** 1 TB of tax data exfiltrated.
-    * **NSIA Assurances (Ivory Coast):** 2.5 million transactional records put up for sale.
-    * **Université des Frères Mentouri Constantine 1 (Algeria):** over 10 GB of academic and personal data claimed exfiltrated.
-    * **MobileSub (Nigeria):** SQL dump with 42 tables covering payment, KYC, transaction and user-account modules.
-    * **Kolomoni Microfinance Bank (Nigeria):** 37,825-row account-holder CSV containing financial, contact, demographic and login metadata.
 
----
+September 2025 contains **18 documented incidents across 11 African countries**: **11 Ransomware** and **7 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud is recorded.
 
+- **Nigeria**: 4 incidents, including 2 Ransomware and 2 Data Leak.
+- **Egypt**: 3 incidents, including 2 Ransomware and 1 Data Leak.
+- **Morocco** and **Kenya**: 2 Ransomware each.
+- **TheGentlemen, killsec, privilege and Not specified** each account for 2 records.
+- **Finance / Banking / Insurance** is the leading harmonized sector with 6 incidents.
+- UMC1: more than 10 GB claimed, not fully collected by AFRINTEL.
+- MobileSub: local SQL dump of about 14.3 MB, 42 tables and 306 INSERT blocks.
+- NSIA Assurances: more than 2.5 million records claimed, without collection of the full dataset.
+- Epia Financial Services: 73 files totaling about 79.8 MB, including pension-fund data and email.
+- Kolomoni Microfinance Bank: CSV with 37,825 rows and 12 columns.
+- Senegal DGID: 1 TB claimed, without collection or validation of the underlying dataset.
+
+### 📋 Victim list
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+| Indicator | August 2025 | September 2025 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 13 | 18 | **+5 (+38.5%)** |
+| Ransomware | 7 | 11 | **+4 (+57.1%)** |
+| Data Leak | 5 | 7 | **+2 (+40.0%)** |
+| Access Sale | 1 | 0 | **-1 (-100.0%)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
 
 ## 2. Methodology
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks that occurred across Africa in September 2025. The data is compiled from **OSINT** sources and ransomware group leak sites as part of the **AFRINTEL** project. Our objective is to provide clear insights into trends, threat actors, and targeted sectors on the continent.
 
+- **Scope**: 54 African countries.
+- **Period**: 1-30 September 2025.
+- **Sources**: OSINT, leak sites, underground forums, actor publications and available samples.
+- **Source of truth**: validated `victims_FR.md` / `victims.md` pair.
+- **Counting**: one card equals one unique incident.
+- **Taxonomy**: Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Qualification**: actor claims, samples, full publication and technical confirmation remain distinct.
 
 ## 3. Global overview
 
-### 📊 3.1 Breakdown by group/actor
-| Group / Actor | Number of Attacks |
-| :--- | :---: |
-| **TheGentlemen** | 2 |
-| **killsec** | 2 |
-| **privilege** | 2 |
-| **obscura** | 1 |
-| **Tanaka** | 1 |
-| **yurei** | 1 |
-| **radar** | 1 |
-| **qilin** | 1 |
-| **warlock** | 1 |
-| **arcusmedia** | 1 |
-| **blackshrantac** | 1 |
-| **KILLUAX** | 1 |
-| **Fire Wire** | 1 |
-| **Not specified** | 2 |
+### 3.1 Incident-type distribution
 
-
-### 🏗️ 3.2 Breakdown by industry sector
-| Sector | Number of Attacks |
-| :--- | :---: |
-| Public Administration | 4 |
-| Finance | 4 |
-| Insurance | 2 |
-| Manufacturing | 2 |
-| Technology | 2 |
-| Real Estate / Construction | 1 |
-| Catering / Food Services | 1 |
-| Telecommunications | 1 |
-| Education | 1 |
-
-#### 3.2.1 Top Targeted sectors visualization
-- Finance/Insurance   	[████████████████████] 4
-- Public Admin        	[████████████████████] 4
-- Manufacturing       	[██████████] 2
-- Technology          	[██████████] 2
-- Telecommunications  	[█████] 1
-- Education           	[█████] 1
-- Real Estate / Catering              	[██████████] 2
+| Incident type | Count | Share |
+|---|---:|---:|
+| Ransomware | 11 | 61.1% |
+| Data Leak | 7 | 38.9% |
+| Access Sale | 0 | 0.0% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **18** | **100%** |
 
 ```mermaid
 pie showData
-    title Sector distribution - September 2025
-    "Public Admin" : 4
-    "Finance" : 4
-    "Insurance" : 2
-    "Manufacturing" : 2
-    "Technology" : 2
-    "Real Estate" : 1
-    "Catering" : 1
-    "Telecommunications" : 1
-    "Education" : 1
-```
-
-### 🌍 3.3 Geographical distribution
-| Country | Number of Attacks |
-| :--- | :---: |
-| 🇪🇬 Egypt | 3 |
-| 🇲🇦 Morocco | 2 |
-| 🇳🇬 Nigeria | 4 |
-| 🇰🇪 Kenya | 2 |
-| 🇩🇿 Algeria | 1 |
-| 🇨🇮 Ivory Coast | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇳🇦 Namibia | 1 |
-| 🇦🇴 Angola | 1 |
-| 🇨🇩 Congo (DRC) | 1 |
-| 🇸🇳 Senegal | 1 |
-| **Total** | **18** |
-
-```mermaid
-graph TD
-    subgraph "Attack distribution by country (September 2025)"
-    EG[🇪🇬 Égypte: 3] --- Total((Total: 18))
-    MA[🇲🇦 Maroc: 2] --- Total
-    NG[🇳🇬 Nigeria: 4] --- Total
-    KE[🇰🇪 Kenya: 2] --- Total
-    DZ[🇩🇿 Algérie: 1] --- Total
-    CI[🇨🇮 Côte d'Ivoire: 1] --- Total
-    ZW[🇿🇼 Zimbabwe: 1] --- Total
-    NA[🇳🇦 Namibie: 1] --- Total
-    AO[🇦🇴 Angola: 1] --- Total
-    CD[🇨🇩 RD Congo: 1] --- Total
-    SN[🇸🇳 Sénégal: 1] --- Total
-    end
-
-    style Total fill:#f96,stroke:#333,stroke-width:4px
-    style SN fill:#ff9999,stroke:#333
-    style CI fill:#ff9999,stroke:#333
-```
----
-
-
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Standard global overview
-
-| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
-| 🇪🇬 Egypt | 2 | 1 | 3 | 🟧🟧 🟦 |
-| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
-| 🇲🇦 Morocco | 2 | 0 | 2 | 🟧🟧 |
-| 🇩🇿 Algeria | 0 | 1 | 1 |  🟦 |
-| 🇦🇴 Angola | 0 | 1 | 1 |  🟦 |
-| 🇨🇩 Congo (DRC) | 0 | 1 | 1 |  🟦 |
-| 🇨🇮 Ivory Coast | 0 | 1 | 1 |  🟦 |
-| 🇳🇦 Namibia | 1 | 0 | 1 | 🟧 |
-| 🇸🇳 Senegal | 1 | 0 | 1 | 🟧 |
-| 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
-
-```mermaid
-pie showData
-    title Incident types
+    title Incident types - September 2025
     "Ransomware" : 11
-    "Data leaks + access sales" : 7
+    "Data Leak" : 7
 ```
 
-### Monthly aggregate exposure view
+### 3.2 Country distribution
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **7 records** (38.9% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+| Country | Ransomware | Data Leak | Total | Distribution |
+|---|---:|---:|---:|---|
+| 🇳🇬 Nigeria | 2 | 2 | 4 | 🟧🟧🟦🟦 |
+| 🇪🇬 Egypt | 2 | 1 | 3 | 🟧🟧🟦 |
+| 🇲🇦 Morocco | 2 | 0 | 2 | 🟧🟧 |
+| 🇰🇪 Kenya | 2 | 0 | 2 | 🟧🟧 |
+| 🇩🇿 Algeria | 0 | 1 | 1 | 🟦 |
+| 🇨🇮 Ivory Coast | 0 | 1 | 1 | 🟦 |
+| 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
+| 🇳🇦 Namibia | 1 | 0 | 1 | 🟧 |
+| 🇦🇴 Angola | 0 | 1 | 1 | 🟦 |
+| 🇨🇩 DRC | 0 | 1 | 1 | 🟦 |
+| 🇸🇳 Senegal | 1 | 0 | 1 | 🟧 |
+| **Total** | **11** | **7** | **18** | |
 
+### 3.3 Regional distribution
 
-### Geographic distribution by region
+| Region | Incidents | Share | Activity |
+|---|---:|---:|---|
+| North Africa | 6 | 33.3% | ██████████ |
+| West Africa | 6 | 33.3% | ██████████ |
+| Southern Africa | 2 | 11.1% | ███ |
+| Central Africa | 2 | 11.1% | ███ |
+| East Africa | 2 | 11.1% | ███ |
+| **Total** | **18** | **100%** | |
 
-| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| North Africa | 6 | 4 | 2 | 🟧🟧🟧🟧 🟦🟦 |
-| Southern Africa | 2 | 2 | 0 | 🟧🟧 |
-| West Africa | 6 | 3 | 3 | 🟧🟧🟧 🟦🟦🟦 |
-| Central Africa | 2 | 0 | 2 | 🟦🟦 |
-| East Africa | 2 | 2 | 0 | 🟧🟧 |
+### 3.4 Harmonized sector distribution
 
-```mermaid
-xychart
-    title "Occurrences by region"
-    x-axis ["NA","SA","WA","CA","EA"]
-    y-axis "Occurrences" 0 --> 9
-    bar [6,2,6,2,2]
-```
-Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
+| Sector | Incidents | Share | Activity |
+|---|---:|---:|---|
+| Finance / Banking / Insurance | 6 | 33.3% | ██████████ |
+| Government / Administration | 4 | 22.2% | ███████ |
+| Technology / IT / Telecommunications | 3 | 16.7% | █████ |
+| Manufacturing / Industry | 2 | 11.1% | ███ |
+| Education / Higher Education | 1 | 5.6% | ██ |
+| Real Estate / Construction / Engineering | 1 | 5.6% | ██ |
+| Food Services / Catering | 1 | 5.6% | ██ |
+| **Total** | **18** | **100%** | |
 
-### Sector distribution
+### 3.5 Actors / groups
 
-| Sector | Records | Share | Activity |
-| :--- | ---: | ---: | :--- |
-| Finance / Banking | 5 | 27.8% | ██████████ |
-| Government / Administration | 5 | 27.8% | ██████████ |
-| Technology / IT | 4 | 22.2% | ████████ |
-| Manufacturing / Industry | 2 | 11.1% | ████ |
-| Education / University | 1 | 5.6% | ██ |
-| Professional / Business Services | 1 | 5.6% | ██ |
-
-### Most visible actors
-
-| Actor / Group | Records | Activity |
-| :--- | ---: | :--- |
+| Actor / Group | Incidents | Activity |
+|---|---:|---|
 | Not specified | 2 | ██████████ |
+| privilege | 2 | ██████████ |
 | killsec | 2 | ██████████ |
 | TheGentlemen | 2 | ██████████ |
+| arcusmedia | 1 | █████ |
+| BlackShrantac | 1 | █████ |
 | Fire Wire | 1 | █████ |
 | KILLUAX | 1 | █████ |
-| Tanaka | 1 | █████ |
-| arcusmedia | 1 | █████ |
-| blackshrantac | 1 | █████ |
 | obscura | 1 | █████ |
-| privilege | 1 | █████ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| qilin | 1 | █████ |
+| radar | 1 | █████ |
+| Tanaka | 1 | █████ |
+| warlock | 1 | █████ |
+| yurei | 1 | █████ |
+| **Total** | **18** | |
 
-### Month-on-month comparison
-
-Using the validated incident cards as the counting source, September 2025 recorded **18** incidents versus **13** in the preceding month (an increase of **+5**; **+38.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
-
-| Metric | Previous month | Current month | Change |
-|---|---:|---:|---:|
-| Recorded incident cards | 13 | 18 | +5 (+38.5%) |
-
-## 4. Detailed analysis by incident type
-
-#### 4.1 TheGentlemen (2 attacks)
-* **09/09/2025: Dolidol (Morocco)** - Manufacturing / Bedding Industry. Claim & data leak.
-* **09/09/2025: Proplastics Limited (Zimbabwe)** - Manufacturing Industry (Plastics). Claim & data leak.
-> **CTI Note:** The group struck two major industrial targets in distinct geographical zones on the same day, demonstrating coordinated planning.
-
-#### 4.2 killsec (2 attacks)
-* **10/09/2025: Princeps Credit Systems Limited (Nigeria)** - Finance sector. Claim & data leak.
-* **22/09/2025: Fractalite (Morocco)** - Technology / Digital Services. Claim & data leak.
-
-#### 4.3 obscura (1 attack)
-* **05/09/2025: MeamarGroup (Egypt)** - Real Estate / Construction. Claim & data leak.
-
-#### 4.4 Tanaka (1 attack)
-* **06/09/2025: NSIA Assurances (Ivory Coast)** - Insurance / Finance sector. Massive leak of **2.5 million transactional records** put up for sale.
-
-#### 4.5 yurei (1 attack)
-* **08/09/2025: The Promise Nigeria (Nigeria)** - Catering / Food Services. Claim & data leak.
-
-#### 4.6 radar (1 attack)
-* **11/09/2025: Epia Financial Services (Namibia)** - Financial Services. Claim & data leak.
-
-#### 4.7 qilin (1 attack)
-* **14/09/2025: Office of the Registrar of Political Parties (Kenya)** - Public Administration. Claim & data leak.
-
-#### 4.8 warlock (1 attack)
-* **16/09/2025: Jubilee Life Insurance (Kenya)** - Insurance / Finance. Claim & data leak.
-
-#### 4.9 arcusmedia (1 attack)
-* **17/09/2025: Accflex ERP (Egypt)** - Technology / ERP Software Publishing. Claim & data leak.
-
-#### 4.10 BlackShrantac (1 attack)
-* **29/09/2025: Direction Générale des Impôts et des Domaines (Senegal)** - Tax Administration. Massive exfiltration of **1 TB of sensitive data** (tax databases, land registries, banking info).
-
-#### 4.11 Unknown (1 attack)
-* **30/09/2025: Telecom Egypt / TE Data (Egypt)** - Telecommunications. Claim - Data Sample Published. Small sample (36 records) of RADIUS-style subscriber session/accounting data (usernames, NAS IP, MAC address, assigned IP, session times), no claiming actor identified.
-
-#### 4.12 Fire Wire (1 attack)
-* **02/09/2025: Université des Frères Mentouri Constantine 1 (Algeria)** - Education / Higher Education. Claim - Data Sample Published. Over 10 GB claimed exfiltrated: Master 2 exam schedules, 200+ detailed student records (identity + grades), a vehicle-compliance contact directory and a conference-contact template.
-
-#### 4.13 Not specified (2 attacks)
-* **04/09/2025: MobileSub (Nigeria)** - Fintech / Payment Services. Claim - Data Sample Published; SQL dump with 42 tables.
-* **24/09/2025: Kolomoni Microfinance Bank (Nigeria)** - Microfinance / Banking. Claim - Data Sample Published; 37,825-row CSV.
-
-### 4.14 Actor → victim → country
+### 3.6 Actor -> country mapping
 
 ```mermaid
-graph LR
-
-A1[TheGentlemen] --> V1[Dolidol]
-V1 --> P1[Maroc]
-
-A1 --> V2[Proplastics Limited]
-V2 --> P2[Zimbabwe]
-
-A2[killsec] --> V3[Princeps Credit Systems]
-V3 --> P3[Nigeria]
-
-A2 --> V4[Fractalite]
-V4 --> P1
-
-A3[obscura] --> V5[MeamarGroup]
-V5 --> P4[Égypte]
-
-A4[Tanaka] --> V6[NSIA Assurances]
-V6 --> P5[Côte d'Ivoire]
-
-A5[yurei] --> V7[The Promise Nigeria]
-V7 --> P3
-
-A6[radar] --> V8[Epia Financial Services]
-V8 --> P6[Namibie]
-
-A7[qilin] --> V9[Office of the Registrar of Political Parties]
-V9 --> P7[Kenya]
-
-A8[warlock] --> V10[Jubilee Life Insurance]
-V10 --> P7
-
-A9[arcusmedia] --> V11[Accflex ERP]
-V11 --> P4
-
-A10[BlackShrantac] --> V12[DGID Sénégal]
-V12 --> P8[Sénégal]
-
-A11[Unknown] --> V13[Telecom Egypt / TE Data]
-V13 --> P4
-
-A12[Fire Wire] --> V14[Université Mentouri Constantine 1]
-V14 --> P9[Algérie]
-
-classDef actor fill:#8b0000,color:#fff,stroke:#5c0000,stroke-width:1px;
-classDef victim fill:#0b5394,color:#fff,stroke:#073763,stroke-width:1px;
-classDef country fill:#38761d,color:#fff,stroke:#274e13,stroke-width:1px;
-
-class A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12 actor;
-class V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,V14 victim;
-class P1,P2,P3,P4,P5,P6,P7,P8,P9 country;
+flowchart LR
+    TGE["TheGentlemen - 2"] --> MA["🇲🇦 Morocco"]
+    TGE --> ZW["🇿🇼 Zimbabwe"]
+    KIL["killsec - 2"] --> NG["🇳🇬 Nigeria"]
+    KIL --> MA
+    PRI["privilege - 2"] --> AO["🇦🇴 Angola"]
+    PRI --> CD["🇨🇩 DRC"]
+    NSP["Not specified - 2"] --> NG
+    OBS["obscura"] --> EG["🇪🇬 Egypt"]
+    TAN["Tanaka"] --> CI["🇨🇮 Ivory Coast"]
+    YUR["yurei"] --> NG
+    RAD["radar"] --> NA["🇳🇦 Namibia"]
+    QIL["qilin"] --> KE["🇰🇪 Kenya"]
+    WAR["warlock"] --> KE
+    ARC["arcusmedia"] --> EG
+    BLA["BlackShrantac"] --> SN["🇸🇳 Senegal"]
+    FIR["Fire Wire"] --> DZ["🇩🇿 Algeria"]
+    KUA["KILLUAX"] --> EG
 ```
----
+
+## 4. Detailed analysis
+
+### 4.1 Ransomware - 11 incidents
+
+The Ransomware records are MeamarGroup, The Promise Nigeria, Dolidol, Proplastics Limited, Princeps Credit Systems Limited, Epia Financial Services, Office of the Registrar of Political Parties, Jubilee Life Insurance, Accflex ERP, Fractalite and Senegal DGID.
+
+The most substantial reviewed evidence includes a 491-file/directory MeamarGroup server archive, 63 local Proplastics files and a 73-file Epia set totaling about 79.8 MB.
+
+### 4.2 Data Leak - 7 incidents
+
+The Data Leak records concern UMC1, MobileSub, NSIA Assurances, the Angola government-employee database, FRAP DRC, Kolomoni Microfinance Bank and Telecom Egypt.
+
+Claimed volumes remain separate from observed evidence. UMC1 claims more than 10 GB, NSIA more than 2.5 million records, FRAP describes 1,136 accounts, Kolomoni contains 37,825 rows and Telecom Egypt has only a 36-record reviewed sample.
+
+### 4.3 Access Sale - 0 incidents
+
+No September 2025 card is classified as Access Sale.
 
 ## 5. Sectoral impact
 
+**Finance / Banking / Insurance** accounts for **6 of 18 incidents (33.3%)**. **Government / Administration** accounts for 4, **Technology / IT / Telecommunications** 3 and **Manufacturing / Industry** 2. Education, real estate/construction and food services each account for 1.
+
 ## 6. Threat actor profile
-### 6.1 Threat actor profile
 
-Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+TheGentlemen, killsec, privilege and Not specified each account for 2 records. `privilege` was normalized as the actor name for both Angola and FRAP. `Not specified` covers MobileSub and Kolomoni, where no actor is provided.
 
-### 6.2 Risk assessment
+## 7. Trends and intelligence gaps
 
-Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+- Total: **13 -> 18**, +38.5%.
+- Ransomware: **7 -> 11**, +57.1%.
+- Data Leak: **5 -> 7**, +40.0%.
+- Access Sale: **1 -> 0**.
+- Nigeria leads with 4 incidents.
+- North Africa and West Africa each account for 6 incidents.
 
+Initial-access vectors remain unknown for most records. The 10 GB UMC1, 2.5 million NSIA and 1 TB DGID figures are unvalidated actor claims. The full FRAP file hosted externally was not validated by AFRINTEL.
 
-## 7. Key trends and intelligence gaps
-### 7.1 Observed trends
+## 8. Timeline
 
-The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+```mermaid
+timeline
+    title AFRINTEL - September 2025
+    02 September : Fire Wire - UMC1
+    04 September : Not specified - MobileSub
+    05 September : obscura - MeamarGroup
+    06 September : Tanaka - NSIA Assurances
+    08 September : yurei - The Promise Nigeria
+    09 September : TheGentlemen - Dolidol
+                 : TheGentlemen - Proplastics
+    10 September : killsec - Princeps Credit Systems
+    11 September : radar - Epia Financial Services
+                 : privilege - Angola government employees database
+    12 September : privilege - FRAP DRC
+    14 September : qilin - ORPP Kenya
+    16 September : warlock - Jubilee Life Insurance
+    17 September : arcusmedia - Accflex ERP
+    22 September : killsec - Fractalite
+    24 September : Not specified - Kolomoni
+    29 September : BlackShrantac - Senegal DGID
+    30 September : KILLUAX - Telecom Egypt
+```
 
-### 7.2 Intelligence gaps
+## 9. Contextual MITRE ATT&CK mapping
 
-The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+| Phase | Technique | Scope |
+|---|---|---|
+| Collection | T1005 - Data from Local System | Observed or described files, exports and archives. |
+| Collection | T1213 - Data from Information Repositories | Structured MobileSub, Angola, FRAP, Kolomoni and Telecom Egypt datasets. |
+| Email | T1114 - Email Collection | Relevant context for Epia, where exfiltrated email material was reviewed. |
 
-## 8. MITRE ATT&CK mapping (contextual)
-| Phase | Technique ID | Name | Incident association |
-|---|---|---|---|
-| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
-| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+## 10. Recommendations
 
-These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+- Strengthen phishing-resistant MFA, PAM, segmentation and export logging.
+- Monitor privileged accounts, database access, outbound transfers and archive creation.
+- Protect ERP systems, business applications, backups and service accounts.
+- For finance and public-sector environments, prioritize bulk-export and sensitive-data access detection.
 
-### Contextual observations
-* **Massive Exfiltration:** Ability to collect and exfiltrate volumes exceeding 1 TB (DGID) or millions of rows of data (NSIA).
-* **Double Extorsion & Monetization:** Systematic sale of data on underground forums to force payment (e.g., Tanaka).
-* **State Infrastructure Targeting:** Increased attacks against regulatory bodies and financial ministries.
-* **Geo-Operational Agility:** Ability of certain groups to conduct simultaneous attacks across different regions of the continent (e.g., TheGentlemen).
+## 11. Conclusion
 
+September 2025 contains **18 incidents across 11 countries**, split into **11 Ransomware and 7 Data Leak**. Nigeria is the most represented country with 4 incidents. Finance / Banking / Insurance is the leading harmonized sector with 6 incidents.
 
-## 9. Recommendations
-1.  **Data Governance:** For public administrations, prioritize encryption of sensitive databases and offline backups.
-2.  **Network Segmentation:** Isolate payroll systems and customer registries from internet-exposed networks.
-3.  **Cyber Hygiene:** Widespread implementation of Multi-Factor Authentication (MFA) and regular audits of third-party access (VPN/ERP).
-
----
-
-
-## 10. SOC and tactical recommendations
-### Observed
-
-Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
-
-### Hypotheses
-
-Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
-
-### Preventive
-
-Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
-
-## 11. Strategic recommendations
-1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
-2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
-3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
-
-## 12. Conclusion
-September 2025 confirms that Africa is a major operational ground for ransomware groups and data-leak actors. The diversity of actors (11 named groups plus one unattributed data-leak case) and the scale of exfiltrations (DGID, NSIA, UMC1) call for increased vigilance and strengthened intelligence sharing (CTI) between the continent's nations.
-
----
-
-### ✍🏿 Author
-**Adama ASSIONGBON**
-*SOC & Cyber Threat Intelligence Consultant*
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon/)
-
----
-*Open initiative for CTI monitoring in Africa - AFRINTEL*
+**AFRINTEL** - Open African CTI Monitoring Initiative

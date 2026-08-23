@@ -1,295 +1,274 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Période](https://img.shields.io/badge/Période-2025-blue)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
-![Threat](https://img.shields.io/badge/Menace-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel](https://img.shields.io/badge/Intel-CTI-purple)
+![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%7C%20Data%20Leak-red)
+![Data Source](https://img.shields.io/badge/Source%20des%20données-OSINT-darkgreen)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Période](https://img.shields.io/badge/Période-Décembre%202025-lightgrey)
 
-# Rapport CTI : Cyberattaques en Afrique - Décembre 2025 (18 victimes)
+# Rapport CTI - Cyberattaques en Afrique - Décembre 2025
 
 👉🏾 [**English version available here**](./README.md)
 
-## 1. Résumé exécutif
-Décembre 2025 marque une hausse de l'activité des ransomwares avec 14 victimes ransomware et 4 revendications de fuite de données non liées au ransomware, recensées dans 10 pays africains. Le mois est caractérisé par une concentration d'attaques en Égypte et en Afrique du Sud, un ciblage persistant du secteur de la santé, et une nouvelle revendication touchant le secteur de l'énergie/des infrastructures critiques au Kenya.
+## 1. Synthèse exécutive
 
-* **Nombre total d'attaques recensées** : 18
-* **Acteurs les plus actifs** : `lockbit5` (3 attaques), `qilin` (3 attaques).
-    * *Autres groupes ransomware actifs* : dragonforce (2), nova (2), kazu, ransomhouse, devman, direwolf (1 chacun).
-    * *Revendications de fuite de données hors ransomware* : GhostVector, camillabf, KaruHunters, LindaBF (1 revendication chacun, non rattachée à un groupe ransomware nommé).
-* **Secteurs les plus ciblés** : Santé (4), Finance/Leasing (2), Assurances (2), Administrations publiques (2), Industrie manufacturière (2).
-* **Pays les plus touchés** : 🇪🇬 Égypte (5), 🇿🇦 Afrique du Sud (3), 🇹🇳 Tunisie (3), 🇲🇦 Maroc (1), 🇰🇪 Kenya (1).
-* **Incident notable** : Double cyberattaque sur l'**Hôpital La Rabta** (Tunisie) par deux groupes différents (devman et qilin) en l'espace de deux semaines.
+Décembre 2025 compte **18 fiches incident dans 10 pays africains** : **14 Ransomware** et **4 Data Leak**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est enregistré.
 
----
+Les 18 fiches correspondent à **17 organisations distinctes sur le mois**, car l'Hôpital La Rabta fait l'objet de deux revendications ransomware, par devman le 12 décembre puis par qilin le 26 décembre. Les éléments disponibles ne permettent pas d'établir si la seconde revendication correspond à une nouvelle intrusion ou à une republication/revente ; elle reste donc comptée comme fiche incident distincte avec cette réserve.
 
+- **Égypte** : 5 fiches, dont 4 Ransomware et 1 Data Leak.
+- **Afrique du Sud** : 3 Ransomware.
+- **Tunisie** : 3 Ransomware, dont deux revendications visant La Rabta.
+- **lockbit5** et **qilin** sont les acteurs les plus visibles avec 3 fiches chacun.
+- **dragonforce** et **nova** comptent 2 fiches chacun.
+- Les acteurs des quatre Data Leak sont **GhostVector, camillabf, KaruHunters et LindaBF**.
+- **NCR Afrique du Sud** : échantillon local cohérent avec des dossiers de consommateurs, des éléments d'enquête et des données opérationnelles pluriannuelles ; confiance High et impact Level 4.
+- **Université d'Oran 1** : environ 58 000 enregistrements sont revendiqués, avec échantillon structuré publié.
+- **100 Watt Plast** : 180 000 enregistrements sont revendiqués ; une vingtaine de lignes complètes sont visibles dans l'échantillon.
+- **Pharmacie.ma** : deux sauvegardes SQL complètes ont été examinées, couvrant jusqu'à environ 27 900 comptes professionnels.
+- **KETRACO** : l'échantillon ressemble à un annuaire/newsletter plutôt qu'à un système opérationnel critique ; une valeur de mot de passe répétée abaisse la confiance à Medium.
+- **Elsewedy Electric** et **ZANACO** restent des revendications observées sur le site de Clop ; aucune donnée sous-jacente n'a été examinée, leur statut est donc conservé comme `Claim - Unverified`.
+
+### 📋 Liste des victimes
+
+👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+
+### 1.1 Comparaison avec le mois précédent
+
+| Indicateur | Novembre 2025 | Décembre 2025 | Évolution observée |
+|---|---:|---:|---:|
+| Total incidents | 14 | 18 | **+4 (+28,6 %)** |
+| Ransomware | 10 | 14 | **+4 (+40,0 %)** |
+| Data Leak | 4 | 4 | **0 (stable)** |
+| Access Sale | 0 | 0 | **0 (stable)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
 
 ## 2. Méthodologie
-Ce rapport de **Cyber Threat Intelligence (CTI)** présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de décembre 2025. Les informations sont issues de sources **OSINT** et de sites de fuites de groupes ransomware, compilées dans le cadre du projet **AFRINTEL**. L'objectif est de fournir une vision claire des tendances et des acteurs menaçants sur le continent.
 
----
-
+- **Périmètre** : 54 pays africains.
+- **Période** : 1er au 31 décembre 2025.
+- **Sources** : OSINT, leak sites, forums underground, publications d'acteurs et échantillons disponibles.
+- **Source de vérité** : couple validé `victims_FR.md` / `victims.md`.
+- **Comptage** : une fiche correspond à un enregistrement d'incident ou de revendication distincte dans le corpus.
+- **Répétitions** : lorsqu'une même organisation est revendiquée à nouveau mais que la relation avec l'incident précédent reste indéterminée, la nouvelle fiche est conservée avec un indicateur de cycle de vie. Un doublon n'est supprimé que lorsque les éléments permettent de relier les publications au même incident sous-jacent avec suffisamment de confiance.
+- **Taxonomie** : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Qualification** : revendication, échantillon, publication complète et confirmation technique restent distincts.
+- **Visualisation** : tableaux, barres textuelles, diagrammes Mermaid simples et chronologie.
 
 ## 3. Vue d'ensemble
 
-### 3.1 Répartition par groupe ransomware
-| Groupe / Acteur | Nombre d'attaques |
-| :--- | :---: |
-| **lockbit5** | 3 |
-| **qilin** | 3 |
-| **dragonforce** | 2 |
-| **nova** | 2 |
-| **kazu** | 1 |
-| **ransomhouse** | 1 |
-| **devman** | 1 |
-| **direwolf** | 1 |
-| **Total** | **14** |
-```mermaid
-pie showData
-    title Activité des groupes de ransomware (Déc 2025)
-    "lockbit5" : 3
-    "qilin" : 3
-    "dragonforce" : 2
-    "nova" : 2
-    "kazu" : 1
-    "ransomhouse" : 1
-    "devman" : 1
-    "direwolf" : 1
-```
+### 3.1 Répartition par type d'incident
 
-### 3.1b Revendications de fuite de données hors ransomware
-| Acteur | Victime | Pays |
-| :--- | :--- | :---: |
-| **GhostVector** | Oran University 1 Ahmed Ben Bella | 🇩🇿 Algérie |
-| **camillabf** | 100 Watt Plast | 🇪🇬 Égypte |
-| **KaruHunters** | Pharmacie.ma | 🇲🇦 Maroc |
-| **LindaBF** | KETRACO | 🇰🇪 Kenya |
-| **Total** | | **4** |
-
-### 3.2 Répartition par secteur d'activité
-| Secteur | Nombre d'attaques |
-| :--- | :---: |
-| 🏥 Santé | 4 |
-| 💰 Finance / Leasing | 2 |
-| 🛡️ Assurances | 2 |
-| 🏛️ Administration publique | 2 |
-| 🏭 Industrie manufacturière | 2 |
-| 💻 Technologies | 1 |
-| 🚚 Logistique / Automobile | 1 |
-| 🏗️ Immobilier / Industrie | 1 |
-| 🌾 Agroalimentaire | 1 |
-| 🎓 Éducation | 1 |
-| ⚡ Énergie | 1 |
-| **Total** | **18** |
-
-### 3.3 Répartition par pays
-| Pays | Nombre d'attaques |
-| :--- | :---: |
-| 🇪🇬 Égypte | 5 |
-| 🇿🇦 Afrique du Sud | 3 |
-| 🇹🇳 Tunisie | 3 |
-| 🇳🇬 Nigeria | 1 |
-| 🇬🇭 Ghana | 1 |
-| 🇿🇲 Zambie | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇲🇦 Maroc | 1 |
-| 🇩🇿 Algérie | 1 |
-| 🇰🇪 Kenya | 1 |
-| **Total** | **18** |
+| Type d'incident | Nombre | Part |
+|---|---:|---:|
+| Ransomware | 14 | 77,8 % |
+| Data Leak | 4 | 22,2 % |
+| Access Sale | 0 | 0,0 % |
+| DDoS | 0 | 0,0 % |
+| Defacement | 0 | 0,0 % |
+| Operational Fraud | 0 | 0,0 % |
+| **Total** | **18** | **100 %** |
 
 ```mermaid
 pie showData
-    title Répartition par pays (Décembre 2025)
-    "Égypte" : 5
-    "Afrique du Sud" : 3
-    "Tunisie" : 3
-    "Nigeria" : 1
-    "Ghana" : 1
-    "Zambie" : 1
-    "Zimbabwe" : 1
-    "Maroc" : 1
-    "Algérie" : 1
-    "Kenya" : 1
+    title Types d'incident - Décembre 2025
+    "Ransomware" : 14
+    "Data Leak" : 4
 ```
----
 
+**Convention couleur :** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
 
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Vue globale standardisée
+### 3.2 Répartition par pays
 
-| Pays | Ransomware | Exposition des données (fuites + accès) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇪🇬 Égypte | 4 | 1 | 5 | 🟧🟧🟧🟧 🟦 |
+| Pays | Ransomware | Data Leak | Total | Distribution |
+|---|---:|---:|---:|---|
+| 🇪🇬 Égypte | 4 | 1 | 5 | 🟧🟧🟧🟧🟦 |
 | 🇿🇦 Afrique du Sud | 3 | 0 | 3 | 🟧🟧🟧 |
 | 🇹🇳 Tunisie | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇩🇿 Algérie | 0 | 1 | 1 |  🟦 |
+| 🇩🇿 Algérie | 0 | 1 | 1 | 🟦 |
 | 🇬🇭 Ghana | 1 | 0 | 1 | 🟧 |
-| 🇰🇪 Kenya | 0 | 1 | 1 |  🟦 |
-| 🇲🇦 Maroc | 0 | 1 | 1 |  🟦 |
+| 🇰🇪 Kenya | 0 | 1 | 1 | 🟦 |
+| 🇲🇦 Maroc | 0 | 1 | 1 | 🟦 |
 | 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
 | 🇿🇲 Zambie | 1 | 0 | 1 | 🟧 |
 | 🇿🇼 Zimbabwe | 1 | 0 | 1 | 🟧 |
+| **Total** | **14** | **4** | **18** | |
 
-```mermaid
-pie showData
-    title Types d’incidents
-    "Ransomware" : 14
-    "Fuites de données + ventes d’accès" : 4
-```
+### 3.3 Répartition géographique par région
 
-### Vue agrégée mensuelle de l’exposition
+| Région | Incidents | Part | Activité |
+|---|---:|---:|---|
+| Afrique du Nord | 10 | 55,6 % | ██████████ |
+| Afrique australe | 5 | 27,8 % | █████ |
+| Afrique de l'Ouest | 2 | 11,1 % | ██ |
+| Afrique de l'Est | 1 | 5,6 % | █ |
+| Afrique centrale | 0 | 0,0 % |  |
+| **Total** | **18** | **100 %** | |
 
-La vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **4 fiches** (22,2% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.
+### 3.4 Répartition sectorielle harmonisée
 
+| Secteur harmonisé | Incidents | Part | Activité |
+|---|---:|---:|---|
+| Santé / Médical | 4 | 22,2 % | ██████████ |
+| Finance / Banque / Assurance | 4 | 22,2 % | ██████████ |
+| Gouvernement / Administration | 2 | 11,1 % | █████ |
+| Industrie / Fabrication | 2 | 11,1 % | █████ |
+| Technologie / IT | 1 | 5,6 % | ██ |
+| Agriculture / Agro-industrie | 1 | 5,6 % | ██ |
+| Transport / Automobile / Distribution | 1 | 5,6 % | ██ |
+| Immobilier / Développement industriel | 1 | 5,6 % | ██ |
+| Éducation / Université | 1 | 5,6 % | ██ |
+| Énergie / Services publics | 1 | 5,6 % | ██ |
+| **Total** | **18** | **100 %** | |
 
-### Répartition géographique par région
+### 3.5 Acteurs / groupes
 
-| Région | Occurrences | Ransomware | Exposition des données (fuites + accès) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| Afrique du Nord | 10 | 7 | 3 | 🟧🟧🟧🟧🟧🟧🟧 🟦🟦🟦 |
-| Afrique australe | 5 | 5 | 0 | 🟧🟧🟧🟧🟧 |
-| Afrique de l’Ouest | 2 | 2 | 0 | 🟧🟧 |
-| Afrique centrale | 0 | 0 | 0 |  |
-| Afrique de l’Est | 1 | 0 | 1 |  🟦 |
-
-```mermaid
-xychart
-    title "Occurrences par région"
-    x-axis ["NA","SA","AO","AC","AE"]
-    y-axis "Occurrences" 0 --> 11
-    bar [10,5,2,0,1]
-```
-Légende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ouest ; AC = Afrique centrale ; AE = Afrique de l’Est
-
-### Répartition sectorielle
-
-| Secteur | Fiches | Part | Activité |
-| :--- | ---: | ---: | :--- |
-| Finance / banque | 4 | 22,2% | ██████████ |
-| Gouvernement / administration | 3 | 16,7% | ████████ |
-| Santé / médical | 3 | 16,7% | ████████ |
-| Éducation / universités | 2 | 11,1% | █████ |
-| Technologies / informatique | 2 | 11,1% | █████ |
-| Agriculture / agro-industrie | 1 | 5,6% | ██ |
-| Énergie / services publics | 1 | 5,6% | ██ |
-| Industrie / fabrication | 1 | 5,6% | ██ |
-| Transport / logistique | 1 | 5,6% | ██ |
-
-### Acteurs / groupes les plus présents
-
-| Acteur / Groupe | Fiches | Activité |
-| :--- | ---: | :--- |
+| Acteur / Groupe | Incidents | Activité |
+|---|---:|---|
 | lockbit5 | 3 | ██████████ |
 | qilin | 3 | ██████████ |
 | dragonforce | 2 | ███████ |
 | nova | 2 | ███████ |
-| GhostVector (source account) | 1 | ███ |
-| KaruHunters | 1 | ███ |
-| LindaBF, post published on a cybercriminal forum (RaidForums) | 1 | ███ |
-| camillabf, post published on a cybercriminal forum (RaidForums) | 1 | ███ |
+| kazu | 1 | ███ |
+| ransomhouse | 1 | ███ |
 | devman | 1 | ███ |
 | direwolf | 1 | ███ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| GhostVector | 1 | ███ |
+| camillabf | 1 | ███ |
+| KaruHunters | 1 | ███ |
+| LindaBF | 1 | ███ |
+| **Total** | **18** | |
 
-### Comparaison avec le mois précédent
+### 3.6 Cartographie acteurs -> pays
 
-À partir des fiches incidents validées comme source de comptage, décembre 2025 compte **18** incidents contre **14** le mois précédent (une hausse de **+4** ; **+28.6%**). Cette comparaison décrit les publications enregistrées par AFRINTEL et ne prouve pas à elle seule une évolution de l'activité des attaquants ni un impact confirmé sur les victimes.
-
-| Indicateur | Mois précédent | Mois en cours | Variation |
-|---|---:|---:|---:|
-| Fiches incidents enregistrées | 14 | 18 | +4 (+28.6%) |
+```mermaid
+flowchart LR
+    LOC["lockbit5 - 3"] --> EG["🇪🇬 Égypte"]
+    LOC --> ZA["🇿🇦 Afrique du Sud"]
+    LOC --> ZW["🇿🇼 Zimbabwe"]
+    QIL["qilin - 3"] --> GH["🇬🇭 Ghana"]
+    QIL --> ZA
+    QIL --> TN["🇹🇳 Tunisie"]
+    DRA["dragonforce - 2"] --> EG
+    DRA --> ZA
+    NOV["nova - 2"] --> ZM["🇿🇲 Zambie"]
+    NOV --> TN
+    KAZ["kazu"] --> NG["🇳🇬 Nigeria"]
+    RHO["ransomhouse"] --> EG
+    DEV["devman"] --> TN
+    DIR["direwolf"] --> EG
+    GHO["GhostVector"] --> DZ["🇩🇿 Algérie"]
+    CAM["camillabf"] --> EG
+    KAR["KaruHunters"] --> MA["🇲🇦 Maroc"]
+    LIN["LindaBF"] --> KE["🇰🇪 Kenya"]
+```
 
 ## 4. Analyse détaillée par type d'incident
 
+### 4.1 Ransomware - 14 fiches
+
+Les 14 fiches Ransomware concernent 3S Software, NHIMA, Kasapreko, Diesel Electric, Incolease, Elundini Local Municipality, Arkan, Leadway Assurance / Health, Hôpital La Rabta par devman, Société Tunisienne de Radiologie, Polaris Parks, National Credit Regulator, Hôpital La Rabta par qilin et Proplastics Limited.
+
+Les cas avec le plus d'éléments analytiques sont notamment :
+
+- **National Credit Regulator** : échantillon documentaire local comprenant dossiers de réexamen de dette, correspondances, documents d'enquête et suivi opérationnel pluriannuel.
+- **La Rabta** : deux revendications par deux groupes en deux semaines. Le corpus ne permet pas de trancher entre nouvelle intrusion et republication/revente.
+- **Proplastics** : nouvelle revendication par lockbit5 après une revendication TheGentlemen en septembre. Le caractère distinct de la compromission n'est pas confirmé.
+
+### 4.2 Data Leak - 4 fiches
+
+- **Université d'Oran 1 Ahmed Ben Bella**, Algérie, acteur GhostVector : environ 58 000 enregistrements revendiqués, avec un échantillon structuré.
+- **100 Watt Plast**, Égypte, acteur camillabf : 180 000 lignes revendiquées ; une vingtaine de lignes complètes sont visibles dans la preuve.
+- **Pharmacie.ma**, Maroc, acteur KaruHunters : deux sauvegardes SQL complètes examinées et jusqu'à environ 27 900 comptes enregistrés selon la structure observée.
+- **KETRACO**, Kenya, acteur LindaBF : export de type annuaire/newsletter ; l'anomalie d'une valeur de mot de passe répétée impose une confiance Medium.
+
+### 4.3 Access Sale - 0 incident
+
+Aucune fiche de décembre 2025 n'est classée Access Sale.
+
 ## 5. Impact sectoriel
-* **Santé (4)** : Forte vulnérabilité en Tunisie avec trois incidents majeurs touchant des CHU et des associations médicales, ainsi qu'une revendication de fuite de données touchant une plateforme marocaine de e-commerce pharmaceutique.
-* **Administration Publique (2)** : Ciblage d'organismes de régulation critiques (NCR en Afrique du Sud) et de municipalités locales (Elundini).
-* **Assurance & Finance (4)** : Focus continu sur les secteurs à forte valeur ajoutée au Nigeria, en Égypte et en Zambie.
-* **Industrie manufacturière (2)** : Attaque ransomware contre un fabricant zimbabwéen de plastiques, ainsi qu'une revendication distincte de fuite de données contre un fabricant égyptien de produits électriques et plastiques (100 Watt Plast).
-* **Éducation (1)** : Une revendication de fuite de données contre une université publique algérienne (Oran University 1), annonçant un jeu de données daté de 2023 d'environ 58 000 enregistrements d'étudiants/personnel.
-* **Énergie (1)** : Une nouvelle revendication de fuite de données contre l'opérateur national kényan de transport d'électricité (KETRACO), premier cas lié aux infrastructures critiques/énergie recensé ce mois-ci.
 
----
+**Santé / Médical** et **Finance / Banque / Assurance** sont les deux premières catégories harmonisées avec **4 fiches chacune**.
 
+**Gouvernement / Administration** et **Industrie / Fabrication** comptent 2 fiches chacune.
+
+Technologie / IT, Agriculture / Agro-industrie, Transport / Automobile / Distribution, Immobilier / Développement industriel, Éducation / Université et Énergie / Services publics comptent 1 fiche chacune.
 
 ## 6. Profil des acteurs
-### 6.1 Profil des acteurs
 
-Les comptages d'acteurs et de sources restent ceux documentés en section 3 et dans les fiches victimes sources. L'attribution est conservée uniquement au niveau étayé par les éléments publics.
+**lockbit5** et **qilin** dominent avec **3 fiches chacun**, devant **dragonforce** et **nova** avec 2.
 
-### 6.2 Évaluation du risque
-
-Les pays et secteurs présentant plusieurs fiches ou des fonctions publiques, éducatives, sanitaires, financières ou critiques doivent faire l'objet d'une validation prioritaire. Il s'agit d'un signal de priorisation OSINT, et non d'une confirmation de compromission ou d'impact.
-
-* **🇪🇬 Égypte** : Reste la cible principale pour le deuxième mois consécutif avec **5 victimes**, entre attaques ransomware (technologie, finance, industrie) et une revendication de fuite de données supplémentaire (100 Watt Plast).
-* **🇿🇦 Afrique du Sud** : Hausse significative avec **3 victimes**, incluant un régulateur financier national.
-* **🇹🇳 Tunisie** : Émergence comme zone à risque pour les infrastructures de santé avec **3 attaques** en décembre.
-* **🇲🇦 Maroc** : Une revendication de fuite de données (Pharmacie.ma, acteur KaruHunters), ajoutant une dimension santé distincte de l'activité ransomware du mois.
-* **🇩🇿 Algérie** : Une revendication de fuite de données contre une université publique (Oran University 1, acteur GhostVector).
-* **🇰🇪 Kenya** : Une nouvelle revendication de fuite de données contre l'opérateur national de transport d'électricité (KETRACO, acteur LindaBF) ; l'échantillon présente des incohérences internes (une valeur de mot de passe répétée) qui ramènent le niveau de confiance à moyen.
-
----
-
+Les acteurs des Data Leak ont été normalisés en `GhostVector`, `camillabf`, `KaruHunters` et `LindaBF`. Les mentions telles que `source account` ou `publication sur un forum cybercriminel` restent du contexte analytique et ne font plus partie du champ `Acteur / Groupe`.
 
 ## 7. Tendances et lacunes de renseignement
+
 ### 7.1 Tendances observées
 
-Les répartitions par pays, secteur, acteur et type d'incident présentées ci-dessus constituent les tendances traçables du mois. Elles décrivent le corpus surveillé et n'établissent pas une campagne plus large sans éléments indépendants.
+1. **Hausse du volume** : 14 fiches en novembre contre 18 en décembre, soit +28,6 %.
+2. **Hausse du Ransomware** : 10 -> 14, soit +40,0 %.
+3. **Data Leak stable** : 4 -> 4.
+4. **Égypte en tête** : 5 fiches.
+5. **Afrique du Nord** : 10 fiches sur 18.
+6. **Santé et finance** : 4 fiches chacune.
+7. **Répétitions d'organisations** : La Rabta apparaît deux fois dans le mois et Proplastics réapparaît après septembre.
 
 ### 7.2 Lacunes de renseignement
 
-Les rapports disponibles ne permettent pas d'établir pour chaque revendication le vecteur d'accès initial, l'exfiltration complète, la confirmation par la victime, la chronologie de remédiation ou l'impact opérationnel. Aucun détail DFIR public n'est inclus dans le corpus consulté pour cette fiche mensuelle ; cette absence est limitée aux sources examinées.
+- La seconde revendication La Rabta peut représenter une intrusion distincte ou une republication/revente.
+- La revendication Proplastics de décembre peut être indépendante de celle de septembre ou liée à une republication/revente.
+- Les données sous-jacentes aux revendications Clop Elsewedy Electric et ZANACO n'ont pas été examinées.
+- Les 58 000 enregistrements Oran University et 180 000 lignes 100 Watt Plast restent des volumes revendiqués non vérifiés intégralement.
+- KETRACO ne permet pas de conclure à une compromission de l'infrastructure électrique opérationnelle.
 
-## 8. Cartographie MITRE ATT&CK (contextuelle)
-| Phase | ID technique | Nom | Association à l'incident |
-|---|---|---|---|
-| Collecte | T1005 | Data from Local System | Correspondance contextuelle pour une collecte ou exposition revendiquée ; la méthode n'est pas confirmée. |
-| Collecte | T1213 | Data from Information Repositories | Correspondance contextuelle pour les dossiers ou référentiels décrits publiquement ; la méthode n'est pas confirmée. |
+## 8. Chronologie synthétique
 
-Ces correspondances ATT&CK sont contextuelles et défensives. Elles ne prouvent pas qu'un acteur donné a utilisé la technique.
+```mermaid
+timeline
+    title AFRINTEL - Décembre 2025
+    05 Décembre : dragonforce - 3S Software
+                : nova - NHIMA
+    06 Décembre : qilin - Kasapreko
+                : qilin - Diesel Electric
+    07 Décembre : lockbit5 - Incolease
+                : lockbit5 - Elundini
+    08 Décembre : ransomhouse - Arkan
+    11 Décembre : kazu - Leadway Assurance
+    12 Décembre : devman - Hôpital La Rabta
+    15 Décembre : nova - Société Tunisienne de Radiologie
+    22 Décembre : direwolf - Polaris Parks
+    24 Décembre : dragonforce - NCR
+    26 Décembre : qilin - Hôpital La Rabta, seconde revendication
+                : lockbit5 - Proplastics, nouvelle revendication
+    29 Décembre : GhostVector - Université d'Oran 1
+                : camillabf - 100 Watt Plast
+    31 Décembre : KaruHunters - Pharmacie.ma
+                : LindaBF - KETRACO
+```
 
-### Contextual observations
+## 9. Cartographie MITRE ATT&CK contextuelle
 
-* **Extorsion à étapes multiples** : Les groupes comme **Lockbit5** et **Qilin** maintiennent la méthode "Revendication & Divulgation" (Double Extorsion) pour maximiser la pression psychologique et financière sur les victimes.
-* **Phénomène de Re-victimisation (double revendication)** : 
-    * Le cas de l'**Hôpital La Rabta** (Tunisie) est critique : ciblé par le groupe **devman** le 12/12, puis par **qilin** le 26/12. Cela démontre que plusieurs acteurs peuvent exploiter les mêmes vulnérabilités non corrigées ou se revendre des accès via des *Initial Access Brokers* (IABs).
-    * **Proplastics Limited** (Zimbabwe) a également subi une seconde attaque par **lockbit5**, illustrant la persistance des acteurs tant que les vecteurs d'entrée initiaux ne sont pas totalement neutralisés.
-* **Ciblage des infrastructures de services essentiels** : On observe un focus marqué sur les organismes de régulation (NCR en Afrique du Sud) et les systèmes de gestion de santé (NHIMA en Zambie), visant l'exfiltration massive de données personnelles (PII).
+| Phase | Technique | Portée analytique |
+|---|---|---|
+| Collecte | T1005 - Data from Local System | Pertinent pour les documents et fichiers locaux examinés, notamment NCR. |
+| Collecte | T1213 - Data from Information Repositories | Pertinent pour les bases structurées Oran University, 100 Watt Plast, Pharmacie.ma et KETRACO. |
 
----
+> Les mappings sont contextuels et défensifs. Ils ne constituent pas une preuve que chaque acteur a utilisé les techniques indiquées.
 
+## 10. Recommandations
 
-## 9. Recommandations
-1.  **Secteur de la santé** : Audit urgent des systèmes exposés et mise en place de sauvegardes hors-ligne.
-2.  **Secteur public** : Durcissement des portails administratifs et des systèmes de régulation financière.
-3.  **Industrie** : Protection des données de la chaîne d'approvisionnement, particulièrement pour les partenaires de marques mondiales.
+- **Santé** : renforcer MFA, segmentation, sauvegardes immuables, EDR et surveillance des accès aux données patients et professionnelles.
+- **Finance / Assurance** : surveiller les exports, dossiers clients, comptes privilégiés et transferts inhabituels.
+- **Administration publique** : protéger les dossiers citoyens et réglementaires, appliquer PAM et journaliser les consultations sensibles.
+- **Énergie / Infrastructure critique** : séparer strictement les services newsletter/annuaire des systèmes opérationnels et vérifier tout indice de mouvement latéral.
+- **SOC / CTI** : distinguer `nouvelle revendication`, `nouvelle intrusion confirmée`, `republication` et `revente d'accès` afin d'éviter les doubles comptages non justifiés.
 
----
+## 11. Conclusion
 
+Décembre 2025 compte **18 fiches incident dans 10 pays**, réparties entre **14 Ransomware et 4 Data Leak**.
 
-## 10. Recommandations SOC et tactiques
-### Observé
+Le volume augmente de 28,6 % par rapport à novembre. L'Égypte concentre 5 fiches. lockbit5 et qilin sont les acteurs les plus visibles avec 3 fiches chacun.
 
-Les sources publiques documentent des revendications, des publications ou du matériel exposé. Elles ne fournissent pas à elles seules une télémétrie prouvant une technique ou une compromission active.
+La distinction entre fiche incident et organisation distincte reste importante : les 18 fiches concernent 17 organisations sur le mois en raison des deux revendications visant La Rabta. Les cas La Rabta et Proplastics sont conservés avec une réserve explicite sur leur caractère potentiellement répétitif.
 
-### Hypothèses
-
-L'abus d'identifiants, un stockage exposé, des contrôles d'accès faibles ou des privilèges d'export excessifs peuvent expliquer certaines expositions, mais chaque hypothèse doit être vérifiée par l'organisation concernée.
-
-### Préventif
-
-Surveiller les journaux d'identité, VPN, cloud, bases de données, messagerie et transferts sortants. Imposer une MFA résistante au phishing, le moindre privilège, la segmentation, des sauvegardes testées et la révocation rapide des jetons ou identifiants.
-
-## 11. Recommandations stratégiques
-1. **Risques observés :** prioriser la validation des organisations, secteurs et types de données documentés dans le corpus mensuel.
-2. **Hypothèses :** tester les chemins possibles liés aux identifiants, au stockage cloud et aux exports excessifs sans les présenter comme des faits établis.
-3. **Socle préventif :** maintenir l'inventaire des actifs, la classification des données, les exercices de réponse, les plans de reprise et les procédures coordonnées de sécurité, de droit et de protection des données.
-
-## 12. Conclusion
-Décembre 2025 témoigne d'une intensification de l'impact des ransomwares en Afrique du Nord et australe, aux côtés de quatre revendications indépendantes de fuite de données hors ransomware couvrant l'éducation (Algérie), l'industrie manufacturière (Égypte), la santé (Maroc) et, pour la première fois ce mois-ci, l'énergie/les infrastructures critiques (Kenya). La diversification des acteurs (8 groupes ransomware nommés et quatre acteurs distincts de revendication) et la répétition des attaques contre des institutions de santé indiquent que les attaquants privilégient des cibles où l'arrêt d'activité est critique, tandis que la revendication KETRACO confirme un intérêt persistant pour les opérateurs africains d'infrastructures critiques, même lorsque les données exposées restent limitées.
-
----
-
-### ✍🏿 Auteur
-**Adama ASSIONGBON** *Consultant SOC & Cyber Threat Intelligence*
-
-**AFRINTEL** - *Initiative ouverte de veille CTI sur l’Afrique*
+**AFRINTEL** - Initiative ouverte de veille CTI sur l'Afrique

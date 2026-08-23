@@ -1,356 +1,247 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Period](https://img.shields.io/badge/Period-2025-blue)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat](https://img.shields.io/badge/Threat-Ransomware-red)
+![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel](https://img.shields.io/badge/Intel-CTI-purple)
+![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+![Period](https://img.shields.io/badge/Period-November%202025-lightgrey)
 
-# CTI Report: Cyberattacks in Africa - November 2025 (14 victims)
+# CTI Report - Cyberattacks in Africa - November 2025
 
 👉🏾 [**French version available here**](./README_FR.md)
 
 ## 1. Executive summary
-November 2025 shows persistent ransomware activity affecting African organizations, with a notable focus on Egypt and Morocco. A total of 10 ransomware claims and 4 data-leak claims, targeting organizations in 6 African countries, were identified.
 
-* **Total recorded attacks**: 14
-* **Most active threat actors**: `clop` (3 attacks), `nightspire` (3 attacks).
-    * *Other active groups*: spacebears, sprigatito, stormous, qilin, benzona (1 attack each); 3 additional claims are unattributed.
-* **Most targeted sectors**: Logistics (2), Financial Services (2), Construction/Industry (2), Technology (2), Public Administration (2).
-* **Most affected countries**: 🇪🇬 Egypt (4), 🇲🇦 Morocco (4), 🇨🇮 Ivory Coast (2), 🇿🇦 South Africa (2).
-* **Notable data leak**: **Anka** (Ivory Coast) with a 12.1 GB database affecting over 537,000 users.
+November 2025 contains **14 documented incidents across 6 African countries**: **10 Ransomware** and **4 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud is recorded.
 
----
+- **Egypt**: 4 Ransomware incidents.
+- **Morocco**: 4 incidents, including 2 Ransomware and 2 Data Leak.
+- **Ivory Coast** and **South Africa**: 2 incidents each, with 1 Ransomware and 1 Data Leak.
+- **Zambia** and **Nigeria**: 1 Ransomware each.
+- **clop** and **nightspire** are the most visible actors with 3 records each.
+- The corpus contains only one unidentified actor: **Wannabees**. Anka is attributed to **Spirigatito**, NARSA to **anisanas2** and Joutech to **RL000**.
+- **Anka**: 537,877 users and 12.1 GB are claimed; AFRINTEL reviewed fewer than 30 sample records.
+- **Marjane**: a Fortinet SSL-VPN session and internal SSH access are visible in the evidence; AFRINTEL could not collect the later full publication.
+- **NARSA**: vehicle-registration export consistent with a claimed dataset of approximately 150,000 rows.
+- **Wannabees**: five-record applicant export containing sensitive personal and employment data.
+- **Joutech**: 1,350-contact export, with no password or financial data observed.
+- **Elsewedy Electric** and **ZANACO** are linked to Clop publications with matching company profiles, without review of underlying exfiltrated files.
 
+### 📋 Victim list
+
+👉🏾 [View the full victim list](./victims.md)
+
+### 1.1 Month-over-month comparison
+
+> The comparison uses the harmonized October 2025 total of **18 unique incidents**, after deduplication of the MeamarGroup lifecycle follow-up.
+
+| Indicator | October 2025 | November 2025 | Observed change |
+|---|---:|---:|---:|
+| Total incidents | 18 | 14 | **-4 (-22.2%)** |
+| Ransomware | 16 | 10 | **-6 (-37.5%)** |
+| Data Leak | 2 | 4 | **+2 (+100.0%)** |
+| Access Sale | 0 | 0 | **0 (stable)** |
+| DDoS | 0 | 0 | **0 (stable)** |
+| Defacement | 0 | 0 | **0 (stable)** |
+| Operational Fraud | 0 | 0 | **0 (stable)** |
 
 ## 2. Methodology
-This **Cyber Threat Intelligence (CTI)** report provides a detailed analysis of cyberattacks recorded across Africa during November 2025. Data is gathered from **OSINT** sources and ransomware group leak sites, compiled under the **AFRINTEL** project. The goal is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.
 
----
-
+- **Scope**: 54 African countries.
+- **Period**: 1-30 November 2025.
+- **Sources**: OSINT, leak sites, underground forums, actor publications and available samples.
+- **Source of truth**: validated `victims_FR.md` / `victims.md` pair.
+- **Counting**: one card equals one unique incident.
+- **Taxonomy**: Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
+- **Qualification**: claim, sample, full publication and technical confirmation remain distinct.
+- **Visualization**: tables, text bars, simple Mermaid diagrams and a timeline.
 
 ## 3. Global overview
 
-### 3.1 Breakdown by ransomware group
-| Group / Actor | Number of attacks |
-| :--- | :---: |
-| **clop** | 3 |
-| **nightspire** | 3 |
-| **spacebears** | 1 |
-| **sprigatito** | 1 |
-| **stormous** | 1 |
-| **qilin** | 1 |
-| **benzona** | 1 |
-| **Unknown** | 3 |
-| **Total** | **14** |
+### 3.1 Incident-type distribution
+
+| Incident type | Count | Share |
+|---|---:|---:|
+| Ransomware | 10 | 71.4% |
+| Data Leak | 4 | 28.6% |
+| Access Sale | 0 | 0.0% |
+| DDoS | 0 | 0.0% |
+| Defacement | 0 | 0.0% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **14** | **100%** |
 
 ```mermaid
 pie showData
-    title Ransomware groups activity (Nov 2025)
-    "clop" : 3
-    "nightspire" : 3
-    "spacebears" : 1
-    "sprigatito" : 1
-    "stormous" : 1
-    "qilin" : 1
-    "benzona" : 1
-    "Unknown" : 3
-```
-### 3.2 Breakdown by industry sector
-| Sector | Number of Attacks |
-| :--- | :---: |
-| 🚚 Logistics | 2 |
-| 💰 Financial Services | 2 |
-| 🏗️ Construction / Industry | 2 |
-| 💻 Technology | 2 |
-| 🏛️ Public Administration | 2 |
-| 🛒 Retail / E-commerce | 1 |
-| 🏠 Real Estate / Investment | 1 |
-| 🏥 Health / NGO | 1 |
-| 👥 Human Resources / Recruitment | 1 |
-| **Total** | **14** |
-
-```mermaid
-graph LR
-    subgraph "Top Targeted Sectors"
-    L[🚚 Logistics]
-    F[💰 Financial Services]
-    I[🏗️ Construction / Industry]
-    end
-
-    subgraph "Other Sectors"
-    T[💻 Technology]
-    R[🛒 Retail]
-    A[🏛️ Public Admin]
-    RE[🏠 Real Estate]
-    H[🏥 Health / NGO]
-    HR[👥 Human Resources / Recruitment]
-    end
-
-    L --- Total((Total: 14))
-    F --- Total
-    I --- Total
-    T --- Total
-    R --- Total
-    A --- Total
-    RE --- Total
-    H --- Total
-    HR --- Total
-
-    style Total fill:#f96,stroke:#333,stroke-width:2px
-    style L fill:#dfd
-    style F fill:#dfd
-    style I fill:#dfd
-```
-### 3.3 Breakdown by country
-| Country | Number of Attacks |
-| :--- | :---: |
-| 🇪🇬 Egypt | 4 |
-| 🇲🇦 Morocco | 4 |
-| 🇨🇮 Ivory Coast | 2 |
-| 🇿🇦 South Africa | 2 |
-| 🇿🇲 Zambia | 1 |
-| 🇳🇬 Nigeria | 1 |
-| **Total** | **14** |
-
-```mermaid
-pie showData
-    title Breakdown by country (November 2025)
-    "🇪🇬 Egypt" : 4
-    "🇲🇦 Morocco" : 4
-    "🇨🇮 Ivory Coast" : 2
-    "🇿🇦 South Africa" : 2
-    "🇿🇲 Zambia" : 1
-    "🇳🇬 Nigeria" : 1
-```
----
-
-
-<!-- AFRINTEL_CURRENT_MODEL_START -->
-### 3.4 Standard global overview
-
-| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
-| 🇲🇦 Morocco | 2 | 2 | 4 | 🟧🟧 🟦🟦 |
-| 🇨🇮 Ivory Coast | 1 | 1 | 2 | 🟧 🟦 |
-| 🇿🇦 South Africa | 1 | 1 | 2 | 🟧 🟦 |
-| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
-| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
-
-```mermaid
-pie showData
-    title Incident types
+    title Incident types - November 2025
     "Ransomware" : 10
-    "Data leaks + access sales" : 4
+    "Data Leak" : 4
 ```
 
-### Monthly aggregate exposure view
+### 3.2 Country distribution
 
-The monthly CTI view combines data leaks and access sales as **data exposure**: **4 records** (28.6% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.
+| Country | Ransomware | Data Leak | Total | Distribution |
+|---|---:|---:|---:|---|
+| 🇪🇬 Egypt | 4 | 0 | 4 | 🟧🟧🟧🟧 |
+| 🇲🇦 Morocco | 2 | 2 | 4 | 🟧🟧🟦🟦 |
+| 🇨🇮 Ivory Coast | 1 | 1 | 2 | 🟧🟦 |
+| 🇿🇦 South Africa | 1 | 1 | 2 | 🟧🟦 |
+| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
+| 🇳🇬 Nigeria | 1 | 0 | 1 | 🟧 |
+| **Total** | **10** | **4** | **14** | |
 
+### 3.3 Regional distribution
 
-### Geographic distribution by region
+| Region | Incidents | Share | Activity |
+|---|---:|---:|---|
+| North Africa | 8 | 57.1% | ██████████ |
+| Southern Africa | 3 | 21.4% | ████ |
+| West Africa | 3 | 21.4% | ████ |
+| Central Africa | 0 | 0.0% |  |
+| East Africa | 0 | 0.0% |  |
+| **Total** | **14** | **100%** | |
 
-| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |
-| :--- | ---: | ---: | ---: | :--- |
-| North Africa | 8 | 6 | 2 | 🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| Southern Africa | 3 | 2 | 1 | 🟧🟧 🟦 |
-| West Africa | 3 | 2 | 1 | 🟧🟧 🟦 |
-| Central Africa | 0 | 0 | 0 |  |
-| East Africa | 0 | 0 | 0 |  |
+### 3.4 Harmonized sector distribution
 
-```mermaid
-xychart
-    title "Occurrences by region"
-    x-axis ["NA","SA","WA","CA","EA"]
-    y-axis "Occurrences" 0 --> 9
-    bar [8,3,3,0,0]
-```
-Legend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa
+| Sector | Incidents | Share | Activity |
+|---|---:|---:|---|
+| Transport / Logistics | 2 | 14.3% | ██████████ |
+| Finance / Banking | 2 | 14.3% | ██████████ |
+| Government / Administration | 2 | 14.3% | ██████████ |
+| Manufacturing / Industry | 2 | 14.3% | ██████████ |
+| Technology / Digital Services | 1 | 7.1% | █████ |
+| Human Resources / Recruitment | 1 | 7.1% | █████ |
+| Retail / E-commerce | 1 | 7.1% | █████ |
+| Construction / Engineering | 1 | 7.1% | █████ |
+| Real Estate / Investment | 1 | 7.1% | █████ |
+| Healthcare / NGO | 1 | 7.1% | █████ |
+| **Total** | **14** | **100%** | |
 
-### Sector distribution
+### 3.5 Actors / groups
 
-| Sector | Records | Share | Activity |
-| :--- | ---: | ---: | :--- |
-| Government / Administration | 3 | 21.4% | ██████████ |
-| Technology / IT | 3 | 21.4% | ██████████ |
-| Finance / Banking | 2 | 14.3% | ███████ |
-| Transport / Logistics | 2 | 14.3% | ███████ |
-| Healthcare / Medical | 1 | 7.1% | ███ |
-| Manufacturing / Industry | 1 | 7.1% | ███ |
-| Professional / Business Services | 1 | 7.1% | ███ |
-| Retail / E-commerce | 1 | 7.1% | ███ |
-
-### Most visible actors
-
-| Actor / Group | Records | Activity |
-| :--- | ---: | :--- |
+| Actor / Group | Incidents | Activity |
+|---|---:|---|
 | clop | 3 | ██████████ |
 | nightspire | 3 | ██████████ |
-| RL000 | 1 | ███ |
-| Spirigatito, post published on a cybercriminal forum | 1 | ███ |
-| Unknown | 1 | ███ |
-| anisanas2 | 1 | ███ |
-| benzona | 1 | ███ |
-| qilin | 1 | ███ |
 | spacebears | 1 | ███ |
+| Unknown | 1 | ███ |
+| Spirigatito | 1 | ███ |
 | stormous | 1 | ███ |
-<!-- AFRINTEL_CURRENT_MODEL_END -->
+| anisanas2 | 1 | ███ |
+| qilin | 1 | ███ |
+| benzona | 1 | ███ |
+| RL000 | 1 | ███ |
+| **Total** | **14** | |
 
-### Month-on-month comparison
+### 3.6 Actor -> country mapping
 
-Using the validated incident cards as the counting source, November 2025 recorded **14** incidents versus **19** in the preceding month (a decrease of **-5**; **-26.3%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.
-
-| Metric | Previous month | Current month | Change |
-|---|---:|---:|---:|
-| Recorded incident cards | 19 | 14 | -5 (-26.3%) |
-
-## 4. Detailed analysis by incident type
-### 4.1 clop (3 attacks)
-* **2025-11-06**: ELSEWEDYELECTRIC.COM (Egypt, Tech/Industry) - Claimed & Leaked.
-* **2025-11-06**: ZANACO.CO.ZM (Zambia, Banking) - Claimed & Leaked.
-* **2025-11-11**: Samcrete Holding (Egypt, Construction) - Claimed & Leaked.
-
-### 4.2 nightspire (3 attacks)
-* **2025-11-09**: Eastern Cape Dept. of Human Settlements (South Africa, Public Admin) - Claimed & Leaked.
-* **2025-11-09**: Fidelity Pension Managers (Nigeria, Finance) - Claimed & Leaked.
-* **2025-11-25**: LAMAICA (Egypt, Manufacturing) - Claimed & Leaked.
-
-### 4.3 Other groups (1 attack each)
-* **spacebears** (Nov 04): DOVERN Import (Morocco, Logistics) - Claimed & Threat.
-* **sprigatito** (Nov 05): Anka (Ivory Coast, Logistics) - 12.1 GB data leak.
-* **stormous** (Nov 06): Marjane (Morocco, Retail) - Claimed & Leaked.
-* **qilin** (Nov 26): Arabia Holding (Egypt, Real Estate) - Claimed & Leaked.
-* **benzona** (Nov 26): SEV-CI (Ivory Coast, Health/NGO) - Claimed & Leaked.
-
-### 4.4 Unattributed claims (3 attacks)
-* **2025-11-08**: NARSA - Agence Nationale de la Sécurité Routière (Morocco, Public Administration / Transportation) - Claim - Data Sample Published. Vehicle-registration CSV export (~150,000 rows claimed) with owner, vehicle and registration-centre fields.
-* **2025-11-30**: Joutech (Morocco, Technology) - Claim - Data Sample Published. Newsletter/contact export of 1,350 records; exact business activity not independently confirmed.
-* **2025-11-04**: Wannabees (South Africa, Human Resources / Recruitment) - Claim - Data Sample Published. Five-record applicant export reviewed; actor not identified.
-
-### 4.5 Actor → victim → country graph
 ```mermaid
-graph LR
-    %% clop Relations (Red)
-    clop(clop) -->|Elsewedy Electric| Egypt1["🇪🇬 Egypt"]
-    clop -->|Zanaco| Zambia["🇿🇲 Zambia"]
-    clop -->|Samcrete| Egypt2["🇪🇬 Egypt"]
-
-    %% nightspire Relations (Orange)
-    nightspire(nightspire) -->|Human Settlements| SA1["🇿🇦 South Africa"]
-    nightspire -->|Fidelity Pension| Nigeria["🇳🇬 Nigeria"]
-    nightspire -->|LAMAICA| Egypt3["🇪🇬 Egypt"]
-
-    %% Other Actors
-    spacebears(spacebears) -->|DOVERN Import| Morocco1["🇲🇦 Morocco"]
-    sprigatito(sprigatito) -->|Anka| CI1["🇨🇮 Ivory Coast"]
-    stormous(stormous) -->|Marjane| Morocco2["🇲🇦 Morocco"]
-    qilin(qilin) -->|Arabia Holding| Egypt4["🇪🇬 Egypt"]
-    benzona(benzona) -->|SEV-CI| CI2["🇨🇮 Ivory Coast"]
-    Unknown(Unknown) -->|Joutech| Morocco3["🇲🇦 Morocco"]
-    Unknown -->|NARSA| Morocco4["🇲🇦 Morocco"]
-    Unknown -->|Wannabees| SA2["🇿🇦 South Africa"]
-
-    %% Styles and Colors
-    style clop fill:#ff4d4d,stroke:#333,stroke-width:2px,color:#fff
-    style nightspire fill:#ffa500,stroke:#333,stroke-width:2px
-    style sprigatito fill:#9932cc,stroke:#333,stroke-width:2px,color:#fff
-    style stormous fill:#1e90ff,stroke:#333,stroke-width:2px,color:#fff
-    style Unknown fill:#888,stroke:#333,stroke-width:2px,color:#fff
-    
-    %% Country Styles
-    classDef country fill:#f9f9f9,stroke:#666,stroke-dasharray: 5 5
-    class Egypt1,Egypt2,Egypt3,Egypt4,Zambia,SA1,SA2,Nigeria,Morocco1,Morocco2,Morocco3,Morocco4,CI1,CI2 country
+flowchart LR
+    CLO["clop - 3"] --> EG["🇪🇬 Egypt - 2"]
+    CLO --> ZM["🇿🇲 Zambia - 1"]
+    NIG["nightspire - 3"] --> EG
+    NIG --> ZA["🇿🇦 South Africa - 1"]
+    NIG --> NG["🇳🇬 Nigeria - 1"]
+    SPA["spacebears"] --> MA["🇲🇦 Morocco"]
+    UNK["Unknown"] --> ZA
+    SPI["Spirigatito"] --> CI["🇨🇮 Ivory Coast"]
+    STO["stormous"] --> MA
+    ANI["anisanas2"] --> MA
+    QIL["qilin"] --> EG
+    BEN["benzona"] --> CI
+    RL0["RL000"] --> MA
 ```
----
 
+## 4. Detailed analysis
+
+### 4.1 Ransomware - 10 incidents
+
+The 10 Ransomware records concern DOVERN Import, Elsewedy Electric, ZANACO, Marjane, Eastern Cape Department of Human Settlements, Fidelity Pension Managers, Samcrete Holding, LAMAICA, Arabia Holding and SEV-CI.
+
+The most documented cases include:
+
+- **Elsewedy Electric**: Clop claim page matching the company's public profile; no underlying exfiltrated file was reviewed.
+- **ZANACO**: Clop page consistent with the bank's public profile; no underlying dataset was collected.
+- **Marjane**: internal-access evidence through a Fortinet SSL-VPN session and an SSH access point; later full publication not collected.
+- The other cases remain primarily unverified claims in the available cards.
+
+### 4.2 Data Leak - 4 incidents
+
+- **Wannabees**, South Africa: `Unknown` actor, five-record applicant sample.
+- **Anka**, Ivory Coast: `Spirigatito`, structured sample consistent with the publication; 537,877 users and 12.1 GB remain actor-claimed.
+- **NARSA**, Morocco: `anisanas2`, vehicle-registration export, approximately 150,000 rows claimed.
+- **Joutech**, Morocco: `RL000`, 1,350-contact export.
+
+### 4.3 Access Sale - 0 incidents
+
+No November 2025 card is classified as Access Sale.
 
 ## 5. Sectoral impact
-* **Logistics (2)**: Targeting of strategic platforms (Dovern Import in Morocco and Anka in Ivory Coast), confirming the vulnerability of regional supply chains.
-* **Financial services (2)**: Attacks against a major banking institution (Zanaco in Zambia) and a pension fund manager (Fidelity in Nigeria).
-* **Construction / Industry (2)**: Focus on Egyptian industrial leaders (Elsewedy Electric and Samcrete), prime targets for industrial espionage and extortion.
-* **Public administration (2)**: Notable incidents in South Africa (Eastern Cape) and Morocco (NARSA vehicle-registration data), a reminder that citizen services remain a preferred target.
-* **Human Resources / Recruitment (1)**: Wannabees shows the exposure risk of recruitment databases containing identity, employment and remuneration data.
 
----
+The leading harmonized groups are **Transport / Logistics**, **Finance / Banking**, **Government / Administration** and **Manufacturing / Industry**, with 2 incidents each.
 
+All other categories contain one record: Technology / Digital Services, Human Resources / Recruitment, Retail / E-commerce, Construction / Engineering, Real Estate / Investment and Healthcare / NGO.
 
 ## 6. Threat actor profile
-### 6.1 Threat actor profile
 
-Actor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.
+**clop** and **nightspire** lead with **3 records each**.
 
-### 6.2 Risk assessment
+The other structured values each account for one record: spacebears, Unknown, Spirigatito, stormous, anisanas2, qilin, benzona and RL000.
 
-Countries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.
+The previous README described three unattributed claims. Review of the victim cards shows that only Wannabees remains genuinely unattributed. The other three Data Leak records are attributed to Spirigatito, anisanas2 and RL000.
 
-* **🇪🇬 Egypt**: Epicenter of activity this month with **4 victims**. The targeting is exclusively industrial and technological.
-* **🇲🇦 Morocco**: Activity with **4 victims** (Logistics, Retail, a public-sector road-safety agency and an unattributed Technology data-leak claim), affecting major players in the local market.
-* **🇨🇮 Ivory Coast**: Emergence of high-impact attacks (2 victims), notably with the massive user data leak from the Anka platform.
-* **Global Distribution**: **North Africa (8 attacks)** vs **Sub-Saharan Africa (6 attacks)**. The threat is particularly concentrated on the continent's economic powerhouses (Egypt, Morocco, South Africa, Nigeria).
+## 7. Trends and intelligence gaps
 
----
+- Total: **18 -> 14**, down **22.2%**.
+- Ransomware: **16 -> 10**, down **37.5%**.
+- Data Leak: **2 -> 4**, up **100.0%**.
+- Egypt and Morocco each record 4 incidents.
+- North Africa accounts for 8 of 14 incidents.
+- clop and nightspire each account for 3 records.
 
+Initial-access vectors remain unknown for most incidents. The claimed 537,877 users and 12.1 GB for Anka are not fully validated. Marjane's complete publication was not collected. The Clop cases for Elsewedy Electric and ZANACO were not reviewed beyond the claim pages.
 
-## 7. Key trends and intelligence gaps
-### 7.1 Observed trends
+## 8. Timeline
 
-The country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.
+```mermaid
+timeline
+    title AFRINTEL - November 2025
+    04 November : spacebears - DOVERN Import
+                : Unknown - Wannabees
+    05 November : Spirigatito - Anka
+    06 November : clop - Elsewedy Electric
+                : clop - ZANACO
+                : stormous - Marjane
+    08 November : anisanas2 - NARSA
+    09 November : nightspire - ECDHS
+                : nightspire - Fidelity Pension Managers
+    11 November : clop - Samcrete Holding
+    25 November : nightspire - LAMAICA
+    26 November : qilin - Arabia Holding
+                : benzona - SEV-CI
+    30 November : RL000 - Joutech
+```
 
-### 7.2 Intelligence gaps
+## 9. Contextual MITRE ATT&CK mapping
 
-The available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.
+| Phase | Technique | Scope |
+|---|---|---|
+| Valid accounts | T1078 - Valid Accounts | Relevant context for the internal SSL-VPN access observed in the Marjane case. |
+| Collection | T1005 - Data from Local System | Relevant to reviewed local files and exports. |
+| Collection | T1213 - Data from Information Repositories | Relevant to the structured Wannabees, Anka, NARSA and Joutech datasets. |
 
-## 8. MITRE ATT&CK mapping (contextual)
-| Phase | Technique ID | Name | Incident association |
-|---|---|---|---|
-| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |
-| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |
+> These mappings are contextual and do not prove that every actor used each listed technique.
 
-These ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.
+## 10. Recommendations
 
-### Contextual observations
-* **Large-scale B2C Data Leaks**: The Anka incident (537,000 users) demonstrates a intent to damage reputation and monetize personal data on cybercrime forums.
-* **Critical Infrastructure Targeting**: The attack on Elsewedy Electric highlights the risks facing the energy sector and industrial systems.
+- **Finance / Banking**: phishing-resistant MFA, privileged-account monitoring, export controls and anomalous-access detection.
+- **Public sector**: PAM, segmentation, logging of administrative database queries and exports.
+- **Retail / E-commerce**: monitor VPN, SSH, administrator accounts, store systems and outbound flows.
+- **HR / Recruitment**: minimize retained data, encrypt identity information and monitor applicant-data exports.
+- **SOC / CTI**: consistently separate claimed volume, observed sample, full publication and independent confirmation.
 
----
+## 11. Conclusion
 
+November 2025 contains **14 incidents across 6 countries**, split into **10 Ransomware and 4 Data Leak**.
 
-## 9. Recommendations
-1.  **Logistics & Retail Sectors**: Harden customer database security and increase monitoring of API access and SQL dump attempts.
-2.  **Financial Sector**: Enhance end-to-end encryption and implement proactive monitoring of transactions and account registry access.
-3.  **Health & NGOs**: Protect sensitive data through strict network segmentation to prevent the lateral spread of ransomware.
-4.  **General: Regularly test Incident Response plans:**
-    * **BCP (Business Continuity Plan)**: To ensure the maintenance of critical business operations during an active cyberattack.
-    * **DRP (Disaster Recovery Plan)**: To guarantee the rapid and secure restoration of IT infrastructure and data following the incident.
+The volume falls by 22.2% compared with the 18 unique incidents in harmonized October. Egypt and Morocco lead with 4 incidents each. clop and nightspire are the most visible actors with 3 records each. The recalculation mainly corrects the number of unattributed actors: **1, not 3**.
 
----
-
-
-## 10. SOC and tactical recommendations
-### Observed
-
-Public records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.
-
-### Hypotheses
-
-Credential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.
-
-### Preventive
-
-Monitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.
-
-## 11. Strategic recommendations
-1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.
-2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.
-3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.
-
-## 12. Conclusion
-November 2025 shows a diversification of threat actors (7 named groups plus three unattributed data-leak cases, for 14 victims). The concentration of attacks on Egypt and the targeting of massive user data in West Africa indicate an evolution of extortion strategies toward more varied sectors than traditional finance.
-
----
-
-### ✍🏿 Author
-**Adama ASSIONGBON** *SOC & Cyber Threat Intelligence Consultant* [LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
-**AFRINTEL** - *Open CTI Initiative for Africa*
+**AFRINTEL** - Open African CTI Monitoring Initiative

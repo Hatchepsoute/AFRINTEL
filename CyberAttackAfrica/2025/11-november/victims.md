@@ -7,6 +7,12 @@
 # List of African cyberattack victims in November 2025 (14 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
+## Monthly snapshot
+
+November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **6 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## November 2025
 
 ### 04 November 2025
@@ -15,6 +21,7 @@
 - **Sector:** Logistics
 - **Website:** https://dovern-import.com/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Import company based in Morocco, specializing in the distribution of fine wines, spirits, and prestige champagnes.
 
 ### 04 November 2025
@@ -28,7 +35,7 @@
 - **Analysis:** AFRINTEL reviewed two identical files from the provided evidence set (DB.txt and HoJmS, matching by SHA-256), containing a five-record applicant export. The schema includes applicant identifiers, national identity numbers, names, addresses, phone numbers, email fields, dates of birth, nationality, employment history, current occupation, salary expectations and remuneration-related fields, alongside a password field. The sample is structurally consistent with a recruitment or staffing database and contains highly sensitive personal and employment information. The files are dated 4 November 2025 in the evidence directory; this is treated as the discovery/evidence date, not as a confirmed publication or intrusion date. The available material does not identify a threat actor, forum, access method or complete dataset volume. AFRINTEL records the case as a data-leak claim with a published sample and does not reproduce names, identity numbers, contact details, passwords or other raw personal data.
 ### 05 November 2025
 #### 🇨🇮 Ivory Coast - Anka (Anka.africa)
-- **Actor / Group:** Spirigatito, post published on a cybercriminal forum
+- **Actor / Group:** Spirigatito
 - **Sector:** Logistics
 - **Website:** https://www.anka.africa/
 - **Status:** Claim - Data Sample Published
@@ -44,6 +51,7 @@
 - **Sector:** Technology / Industry
 - **Website:** www.elsewedyelectric.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 2
 - **Victim Description:** Major Egyptian manufacturer of cables, electrical systems, and engineering products.
@@ -55,6 +63,7 @@
 - **Sector:** Financial Services (Banking)
 - **Website:** www.zanaco.co.zm
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** Zambia National Commercial Bank, one of Zambia's leading commercial banks.
@@ -66,6 +75,7 @@
 - **Sector:** Retail / Mass retail / E-commerce
 - **Website:** www.marjane.ma
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** Groupe Marjane is the largest Moroccan mass retail group, operating hypermarkets and supermarkets.
@@ -87,6 +97,7 @@
 - **Sector:** Public administrations / Social Housing
 - **Website:** ecdhs.gov.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Eastern Cape Department of Human Settlements in South Africa is the provincial body responsible for housing policy, urban planning, and access to property for vulnerable populations in South Africa.
 
 ### 09 November 2025
@@ -95,6 +106,7 @@
 - **Sector:** Financial Services (Pension Management)
 - **Website:** fidelitypensionmanagers.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Nigerian pension fund manager.
 
 ### 11 November 2025
@@ -103,6 +115,7 @@
 - **Sector:** Construction
 - **Website:** www.samcrete.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Samcrete Holding is a fully integrated engineering, contracting, development, manufacturing, and investment company established in 1963.
 
 ### 25 November 2025
@@ -111,6 +124,7 @@
 - **Sector:** Wood and Building Materials Manufacturing
 - **Website:** lamaica.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** LAMAICA is one of the leaders in the Egyptian market in the production of melamine faced panels, high-pressure laminates (HPL), edge bands, and furniture components.
 
 ### 26 November 2025
@@ -119,6 +133,7 @@
 - **Sector:** Real Estate / Investment / Urban Development
 - **Website:** arabia-holding.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian holding company with interests in various sectors, including real estate and management.
 
 ### 26 November 2025
@@ -127,6 +142,7 @@
 - **Sector:** Health / NGO / Humanitarian
 - **Website:** sevci.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Santé Espoir Vie Côte d'Ivoire (SEV-CI) is a leading Ivorian non-governmental organization. It works to improve the health of populations, with a particular focus on the fight against HIV/AIDS, tuberculosis, and the strengthening of community health systems.
 
 ### 30 November 2025
@@ -137,4 +153,3 @@
 - **Website:** joutech.ma
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Joutech is a Moroccan company operating the joutech.ma domain. The reviewed file is a newsletter/contact-list export of 1,350 records, containing title, first name, last name, email address, company field, sales/marketing flags and registration date. No passwords or financial data were observed in the reviewed sample. The exposure could support targeted phishing and spam campaigns against the listed contacts; the completeness and origin of the file have not been independently confirmed.
-

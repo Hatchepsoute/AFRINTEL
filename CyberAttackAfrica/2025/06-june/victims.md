@@ -6,6 +6,12 @@
 # List of African cyberattack victims in June 2025 (21 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
+## Monthly snapshot
+
+June 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **8 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## June 2025
 
 ### 02 June 2025
@@ -34,6 +40,7 @@
 - **Sector:** Business Services
 - **Website:** https://mttexpertises.com
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** MTT Expertises is a multidisciplinary engineering and expertise firm based in Casablanca (with offices in Agadir and Tangier).
@@ -45,6 +52,7 @@
 - **Sector:** Land Administration / Public Sector.
 - **Website:** ingonyamatrust.org.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Ingonyama Trust Board (ITB) is a South African administrative authority responsible for managing approximately 2.8 million hectares of communal land in KwaZulu-Natal province.
 
 ### 06 June 2025
@@ -53,13 +61,14 @@
 - **Sector:** Human Resources / Recruitment / Temporary Work.
 - **Website:** https://bestprofil.ma
 - **Status:** Data Fully Published
+- **Incident type:** Ransomware
 - **Victim Description:** Best Profil is one of the leaders in recruitment and temporary work in Morocco. The Lynx group describes this as a total exfiltration of 26 GB, now freely accessible on its leak site after ransom negotiations reportedly failed.
 - **Analysis:** AFRINTEL reviewed a local sample of the leaked material, consisting of internal administrative and operational documents referencing "PEGASE" (an internal system/tool), staff attendance and payroll-tracking spreadsheets, invoice-verification and billing-detail files, and a client-complaint record for an industrial site. The presence of internal system manuals, payroll and timekeeping data and site-level administrative correspondence is consistent with a genuine internal-systems compromise rather than a superficial claim. The exposure of staff attendance, payroll and billing records creates a risk of payroll fraud, business-email compromise and social engineering against Best Profil's staff and corporate clients. AFRINTEL does not reproduce any employee names, client names or financial figures from the reviewed sample.
 
 ### 08 June 2025
 #### 🇩🇿 Algeria - Crédit Populaire d'Algérie (cpa-bank.dz)
 - **Incident type:** Data Leak
-- **Actor / Group:** TajineSec / Tajinesec_MA (publication claim)
+- **Actor / Group:** TajineSec / Tajinesec_MA
 - **Sector:** Banking / Financial Services.
 - **Website:** https://cpa-bank.dz
 - **Status:** Claim - Unverified
@@ -83,7 +92,7 @@
 ### 09 June 2025
 #### 🇬🇭 Ghana - Priority Insurance Company Limited
 - **Incident type:** Data Leak
-- **Actor / Group:** 0x0day, post published on the cybercriminal forum DarkForums
+- **Actor / Group:** 0x0day
 - **Sector:** Insurance / Financial Services
 - **Website:** priorityinsuranceghana.net
 - **Status:** Claim - Data Sample Published
@@ -96,6 +105,7 @@
 - **Sector:** Conglomerate / Multi-sectoral
 - **Website:** https://www.currimjee.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** One of the oldest and most important conglomerates in Mauritius, operating in telecommunications (Emtel), energy, real estate, tourism, and financial services.
 
 ### 11 June 2025
@@ -109,11 +119,12 @@
 - **Analysis:** An earlier Phantom Atlas message, posted on June 10, 2025 on the actor's Telegram channel, provides further detail on this claim: the group states it holds more than 90 GB of documents covering the 2016-2025 period, with a staged release plan ("we will start with 2016 ones"), the archive being protected by the password `phantomatlas`. The download link mentioned on DarkForums is no longer accessible at the time of writing this entry; AFRINTEL was therefore unable to collect or review the claimed archive, and cannot confirm either the completeness or the authenticity of the announced content.
 
 ### 11 June 2025
-#### 🇿🇦 South Africa - carducci
+#### 🇿🇦 South Africa - Carducci
 - **Ransomware Group:** warlock
 - **Sector:** Retail (Fashion)
 - **Website:** http://carducci.co.za/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Carducci is a South African fashion brand based in Cape Town, founded in 1978. It specializes in elegant menswear, including suits, casual wear, and accessories. The brand is renowned for its craftsmanship and refined fabrics. Carducci is part of the Seardel group.
 
 ### 14 June 2025
@@ -133,7 +144,7 @@
 ### 14 June 2025
 #### 🇩🇿 Algeria - Ministry of Youth and Sports (MJS) / Directorates of Youth and Sports (DJS)
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump, post published on a cybercriminal forum (DarkForums)
+- **Actor / Group:** mrdump
 - **Sector:** Government / Public Administration / Youth and Sports
 - **Website:** [mjs.gov.dz](https://www.mjs.gov.dz)
 - **Status:** Data Fully Published
@@ -151,7 +162,7 @@
 ### 18 June 2025
 #### 🇩🇿 Algeria - Ministry of National Defense (MDN)
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump, post published on a cybercriminal forum (DarkForums)
+- **Actor / Group:** mrdump
 - **Sector:** Defense / National Security
 - **Website:** Not specified (internal file, no institutional domain visible)
 - **Status:** Claim - Unverified
@@ -174,7 +185,7 @@
 ### 19 June 2025
 #### 🇩🇿 Algeria - General Directorate of Customs (DGD) / Export and Import Control Service
 - **Incident type:** Data Leak
-- **Actor / Group:** mrdump (Telegram channel "Server dump")
+- **Actor / Group:** mrdump
 - **Sector:** Government / Customs and Foreign Trade
 - **Website:** [douane.gov.dz](https://www.douane.gov.dz)
 - **Status:** Claim - Unverified
@@ -206,6 +217,16 @@
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** INWI is one of the three main telecommunications operators in Morocco, providing mobile, fixed-line, and internet services (ADSL/Fiber). The actor published a sample of sensitive data including PII (name, national ID), contact information and password hashes (bcrypt).
 
+### 20 June 2025
+#### 🇹🇳 Tunisia - Ministry of National Defense / Armed Forces
+- **Incident type:** Data Leak
+- **Actor / Group:** mrdump
+- **Sector:** Defense / National Security
+- **Website:** Not specified
+- **Status:** Claim - Data Sample Published
+- **Victim Description:** The Tunisian Ministry of National Defense is the government administration responsible for national defense and the armed forces.
+- **Analysis:** A publication dated 20 June 2025, attributed to mrdump, claims successful access to several systems belonging to Tunisia's Ministry of National Defense, specifically its Armed Forces division. The publication alleges that an underground weapons depot was discovered at Mount Chaambi in Kasserine Governorate and refers to thermal imagery, engineering plans and information concerning stored weapons and ammunition. An associated ZIP archive was provided to AFRINTEL; a non-content structural review identified 10 archive members (six PNG images, one XLSX workbook, one PDF and one JPG), approximately 6.2 MB compressed and 6.3 MB uncompressed. AFRINTEL did not open or reproduce the files because the material is presented as military and potentially operationally sensitive. The archive structure does not independently establish the authenticity, provenance, classification or completeness of the material, and the claimed access remains unverified.
+
 ### 26 June 2025
 #### 🇩🇿 Algeria - Ministry of Transportation
 - **Incident type:** Data Leak
@@ -216,21 +237,11 @@
 - **Victim Description:** Algeria's Ministry of Transportation is the public administration responsible for national transportation policy and related administrative services.
 - **Analysis:** A forum publication dated 26 June 2025, attributed to KickingPigs, presents an alleged leak from the Algerian Ministry of Transportation. The post lists vehicle-registration and transport-administration records, including names, national identification numbers, parent names, company registration numbers, vehicle and registration details, driving-licence documents and internal Excel files. The visible sample contains structured vehicle records and sensitive personal-data fields; AFRINTEL does not reproduce the records or identifiers. The authenticity, completeness and technical origin of the dataset could not be independently confirmed.
 
-### 20 June 2025
-#### 🇹🇳 Tunisia - Ministry of National Defense / Armed Forces
-- **Incident type:** Data Leak
-- **Actor / Group:** mrdump (publication on the Telegram channel \"Server dump\")
-- **Sector:** Defense / National Security
-- **Website:** Not specified
-- **Status:** Claim - Data Sample Published
-- **Victim Description:** The Tunisian Ministry of National Defense is the government administration responsible for national defense and the armed forces.
-- **Analysis:** A publication dated 20 June 2025, attributed to mrdump, claims successful access to several systems belonging to Tunisia's Ministry of National Defense, specifically its Armed Forces division. The publication alleges that an underground weapons depot was discovered at Mount Chaambi in Kasserine Governorate and refers to thermal imagery, engineering plans and information concerning stored weapons and ammunition. An associated ZIP archive was provided to AFRINTEL; a non-content structural review identified 10 archive members (six PNG images, one XLSX workbook, one PDF and one JPG), approximately 6.2 MB compressed and 6.3 MB uncompressed. AFRINTEL did not open or reproduce the files because the material is presented as military and potentially operationally sensitive. The archive structure does not independently establish the authenticity, provenance, classification or completeness of the material, and the claimed access remains unverified.
-
 ### 29 June 2025
 #### 🇩🇯 Djibouti - Embassy of Djibouti in Morocco
 - **Incident type:** Data Leak
 
-- **Actor / Group:** MdHackersArmy (post published by Doxeur23azi on a cybercriminal forum, DarkForums)
+- **Actor / Group:** MdHackersArmy
 - **Sector:** Government / Diplomatic
 - **Status:** Claim - Unverified
 - **Website:** Not specified

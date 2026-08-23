@@ -5,12 +5,19 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # Liste des victimes africaines de cyberattaques en Juillet 2025 (21 victimes)
 👉🏾 [**English version available here**](./victims.md)
+
+## Résumé du mois
+
+Juillet 2025 compte **21 incidents uniques** : **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **12 pays africains**.
+
+> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+
 ## Juillet 2025
 
 ### 01 Juillet 2025
 #### 🇳🇬 Nigeria - Chartered Institute of Bankers of Nigeria (CIBN)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Hepd
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Hepd
 - **Secteur:** Services Financiers / Organisme de Régulation Professionnelle.
 - **Site web:** https://cibng.org
 - **Statut:** Claim - Data Sample Published
@@ -18,14 +25,14 @@
 
 ### 03 Juillet 2025
 #### 🇩🇿 Algérie - Algérie Poste / ECCP
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** sanji_shi5 (compte source)
-- **Secteur :** Services postaux / Services financiers
-- **Site web :** [poste.dz](https://www.poste.dz)
-- **Date de publication de la source :** 3 juillet 2025
-- **Statut :** Claim - Data Sample Published
-- **Description victime :** Algérie Poste exploite le service ECCP, qui permet aux utilisateurs algériens de consulter le solde de leur compte postal et d'effectuer des achats en ligne. Le post de forum fourni affiche un échantillon présenté sous forme d'identifiants de comptes et de valeurs ressemblant à des mots de passe associés à ECCP/Algérie Poste. Aucun identifiant n'est reproduit ni validé, et le jeu de données sous-jacent n'a pas été collecté.
-- **Analyse :** L'échantillon observé suggère une exposition potentielle de données d'accès à un service postal et financier public. Si elles étaient valides, ces données pourraient permettre une prise de contrôle de comptes, des fraudes et des campagnes de phishing ciblées. Le post identifie sanji_shi5 comme compte source, ce qui ne confirme pas indépendamment la compromission, la provenance du jeu de données ni la validité des valeurs affichées.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** sanji_shi5
+- **Secteur:** Services postaux / Services financiers
+- **Site web:** [poste.dz](https://www.poste.dz)
+- **Date de publication de la source:** 3 juillet 2025
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** Algérie Poste exploite le service ECCP, qui permet aux utilisateurs algériens de consulter le solde de leur compte postal et d'effectuer des achats en ligne. Le post de forum fourni affiche un échantillon présenté sous forme d'identifiants de comptes et de valeurs ressemblant à des mots de passe associés à ECCP/Algérie Poste. Aucun identifiant n'est reproduit ni validé, et le jeu de données sous-jacent n'a pas été collecté.
+- **Analyse:** L'échantillon observé suggère une exposition potentielle de données d'accès à un service postal et financier public. Si elles étaient valides, ces données pourraient permettre une prise de contrôle de comptes, des fraudes et des campagnes de phishing ciblées. Le post identifie sanji_shi5 comme compte source, ce qui ne confirme pas indépendamment la compromission, la provenance du jeu de données ni la validité des valeurs affichées.
 
 ### 08 Juillet 2025
 #### 🇿🇦 Afrique du Sud - MAFATE BUSINESS ENTERPRISE
@@ -33,17 +40,18 @@
 - **Secteur:** Fournitures Industrielles / Services à l'Exploitation Minière.
 - **Site web:** https://mafate.co.za
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Mafate Business Enterprise est un fournisseur de services industriels établi à Middelburg (Mpumalanga), au cœur de la région minière sud-africaine.
 
 ### 09 Juillet 2025
 #### 🇲🇦 Maroc - Fédération Nationale du Bâtiment et des Travaux Publics (FNBTP)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Evil_BYTE_Officiel
-- **Secteur :** Bâtiment / Travaux publics / Organisation professionnelle
-- **Site web :** [fnbtp.ma](https://www.fnbtp.ma)
-- **Statut :** Data Fully Published
-- **Description victime :** La Fédération Nationale du Bâtiment et des Travaux Publics (FNBTP) est une organisation professionnelle représentant les entreprises marocaines du secteur du bâtiment et des travaux publics. Le 9 juillet 2025, l'acteur Evil_BYTE_Officiel a publié sur un forum underground une base de données attribuée à la FNBTP, en indiquant la mettre gratuitement à disposition.
-- **Analyse :** La publication expose une table nommée `societe` contenant des informations relatives à des entreprises du secteur du BTP. Les champs annoncés dans la publication sont : `Id`, `nb_national`, `nb_regional`, `ENTREPRISE`, `secteur`, `adher`, `MONTANT_COTISATION`, `Responsable`, `Adress`, `Téléphone`, `Fax`, `GSM`, `VILLE` et `E-MAIL`.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Evil_BYTE_Officiel
+- **Secteur:** Bâtiment / Travaux publics / Organisation professionnelle
+- **Site web:** [fnbtp.ma](https://www.fnbtp.ma)
+- **Statut:** Data Fully Published
+- **Description victime:** La Fédération Nationale du Bâtiment et des Travaux Publics (FNBTP) est une organisation professionnelle représentant les entreprises marocaines du secteur du bâtiment et des travaux publics. Le 9 juillet 2025, l'acteur Evil_BYTE_Officiel a publié sur un forum underground une base de données attribuée à la FNBTP, en indiquant la mettre gratuitement à disposition.
+- **Analyse:** La publication expose une table nommée `societe` contenant des informations relatives à des entreprises du secteur du BTP. Les champs annoncés dans la publication sont : `Id`, `nb_national`, `nb_regional`, `ENTREPRISE`, `secteur`, `adher`, `MONTANT_COTISATION`, `Responsable`, `Adress`, `Téléphone`, `Fax`, `GSM`, `VILLE` et `E-MAIL`.
 
   Le fichier CSV analysé par AFRINTEL contient 180 lignes et 14 colonnes. Les données observées comprennent des noms d'entreprises, des références internes, des informations d'adhésion, des noms de responsables, des adresses, des numéros de téléphone, fax et mobiles, des villes et des adresses électroniques professionnelles.
 
@@ -61,12 +69,13 @@
 - **Secteur:** ONG (Éducation & Gouvernance)
 - **Site web:** https://twaweza.org
 - **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
 - **Description victime:** Twaweza East Africa est une organisation panafricaine de premier plan, basée en Tanzanie (avec des bureaux au Kenya et en Ouganda).
 
 ### 14 Juillet 2025
 #### 🇲🇦 Maroc - IWACLUB (iwaclub.ma)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Keymous
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Keymous
 - **Secteur:** Télécommunications / Distribution & Retail.
 - **Site web:** https://iwaclub.ma
 - **Statut:** Claim - Unverified
@@ -74,13 +83,13 @@
 
 ### 14 Juillet 2025
 #### 🇩🇿 Algérie - Ministère de l'Énergie, des Mines et des Énergies Renouvelables / SARL SOPRETA
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Phantom Atlas
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Phantom Atlas
 - **Secteur:** Gouvernement / Énergie et mines ; tiers cité : industrie chimique / étanchéité du bâtiment
 - **Site web:** Non précisé pour le ministère ; SOPRETA n'a pas de site officiel identifié
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Le Ministère de l'Énergie, des Mines et des Énergies Renouvelables est l'autorité algérienne délivrant les autorisations d'acquisition de matières et produits chimiques dangereux. SARL SOPRETA (Société des Produits d'Étanchéité Algériens), basée à Ain El Arbaa, wilaya d'Ain Témouchent, est une entreprise citée nommément dans le document divulgué.
-- **Analyse :** Phantom Atlas a publié le 14 juillet 2025 une accusation visant le ministre Mohamed Arkab, affirmant que le ministère aurait délivré, en mars 2025, une autorisation d'importation de plus de 10 tonnes de substances chimiques dangereuses à une société qualifiée de « pratiquement inconnue, n'apparaissant dans aucun registre industriel connu », en l'absence de tout contrôle ou de rapport environnemental transparent, insinuant une opération aux objectifs troubles.
+- **Analyse:** Phantom Atlas a publié le 14 juillet 2025 une accusation visant le ministre Mohamed Arkab, affirmant que le ministère aurait délivré, en mars 2025, une autorisation d'importation de plus de 10 tonnes de substances chimiques dangereuses à une société qualifiée de « pratiquement inconnue, n'apparaissant dans aucun registre industriel connu », en l'absence de tout contrôle ou de rapport environnemental transparent, insinuant une opération aux objectifs troubles.
 
   AFRINTEL a examiné les documents joints à la publication : l'autorisation n°1000 du 06 mars 2025 délivrée par le ministère à SARL SOPRETA, la liste annexée des matières autorisées (acide chlorhydrique anhydre, nonylphénol éthoxylé sous les désignations commerciales Indulin W-5 et Indulin AA-83, jusqu'à 10 et 8 tonnes respectivement), ainsi qu'une facture proforma de la société belge MBM International SA (Bruxelles) adressée à SOPRETA pour 6 531,60 kg d'Indulin W5 et 2 517,30 kg d'Indulin AA-83, pour un total de 43 257,54 €, avec livraison au port d'Oran. Les trois documents sont cohérents entre eux (même numéro d'autorisation, même adresse d'entreprise, mêmes désignations commerciales de produits).
 
@@ -90,24 +99,24 @@
 
 ### 14 Juillet 2025
 #### 🇰🇪 Kenya - ICT Authority (icta.go.ke)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Inconnu
-- **Secteur :** Gouvernement / Infrastructure numérique
-- **Site web :** [icta.go.ke](http://icta.go.ke)
-- **Statut :** Claim - Data Sample Published
-- **Description victime :** L'ICT Authority du Kenya est une institution publique chargée de coordonner et de soutenir les infrastructures et services gouvernementaux liés aux technologies de l'information et de la communication.
-- **Analyse :** AFRINTEL a examiné l'export CSV fourni sans reproduire de données personnelles. Le fichier contient 1 697 lignes de données et des champs relatifs au nom affiché, au téléphone, à l'adresse email, à l'identifiant, au contact mobile, au nom, à des champs d'adresse, aux références utilisateurs et aux liens web. La structure est cohérente avec un export d'annuaire organisationnel contenant des contacts de l'ICT Authority, du secteur public kényan et de prestataires technologiques associés. Les métadonnées du fichier situent la preuve au 14 juillet 2025 ; cette date est traitée comme date de preuve/découverte et non comme une date confirmée de publication ou d'intrusion. Le matériel disponible n'identifie ni l'acteur, ni le forum, ni la méthode d'accès, ni l'étendue complète du jeu de données. L'exposition de coordonnées professionnelles et d'informations organisationnelles peut faciliter le phishing ciblé, l'usurpation et l'ingénierie sociale contre des acteurs publics et technologiques kényans. AFRINTEL classe donc le cas comme une revendication de fuite avec échantillon publié et ne reproduit aucun nom, numéro de téléphone, email, identifiant ni adresse.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Gouvernement / Infrastructure numérique
+- **Site web:** [icta.go.ke](http://icta.go.ke)
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** L'ICT Authority du Kenya est une institution publique chargée de coordonner et de soutenir les infrastructures et services gouvernementaux liés aux technologies de l'information et de la communication.
+- **Analyse:** AFRINTEL a examiné l'export CSV fourni sans reproduire de données personnelles. Le fichier contient 1 697 lignes de données et des champs relatifs au nom affiché, au téléphone, à l'adresse email, à l'identifiant, au contact mobile, au nom, à des champs d'adresse, aux références utilisateurs et aux liens web. La structure est cohérente avec un export d'annuaire organisationnel contenant des contacts de l'ICT Authority, du secteur public kényan et de prestataires technologiques associés. Les métadonnées du fichier situent la preuve au 14 juillet 2025 ; cette date est traitée comme date de preuve/découverte et non comme une date confirmée de publication ou d'intrusion. Le matériel disponible n'identifie ni l'acteur, ni le forum, ni la méthode d'accès, ni l'étendue complète du jeu de données. L'exposition de coordonnées professionnelles et d'informations organisationnelles peut faciliter le phishing ciblé, l'usurpation et l'ingénierie sociale contre des acteurs publics et technologiques kényans. AFRINTEL classe donc le cas comme une revendication de fuite avec échantillon publié et ne reproduit aucun nom, numéro de téléphone, email, identifiant ni adresse.
 ### 15 Juillet 2025
 #### 🇰🇪 Kenya - Adrian Kenya
 - **Groupe ransomware:** lynx
 - **Secteur:** Télécommunications / Infrastructures Énergétiques / TIC.
-- **Site web:** adrian.co.ke / www.adriankenya.com
+- **Site web:** [adrian.co.ke](https://adrian.co.ke) / [adriankenya.com](https://www.adriankenya.com)
 - **Statut:** Claim - Data Sample Published
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Medium
-- **Niveau d'impact :** Level 3
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
 - **Description victime:** Adrian Group (Adrian Kenya) est un leader kényan de l'ingénierie technologique.
-- **Analyse :** AFRINTEL a examiné un échantillon local de quatre documents associés à cette revendication : une facture d'installation de site télécom, un avis de paiement de TVA de la KRA, une note de crédit d'un fournisseur de carburant et un fil d'emails internes concernant le déploiement d'un site télécom. Les documents sont cohérents entre eux, référencent les mêmes noms, domaines et contexte de projet Adrian Kenya/Adrian Group, et présentent des données financières, fiscales, fournisseurs et de correspondance interne. AFRINTEL ne reproduit pas les identifiants personnels, coordonnées bancaires ni le numéro fiscal visibles dans l'échantillon. Cette analyse est limitée aux quatre documents examinés ; AFRINTEL n'a pas consulté de divulgation ultérieure ni de fichiers supplémentaires publiés par le groupe.
+- **Analyse:** AFRINTEL a examiné un échantillon local de quatre documents associés à cette revendication : une facture d'installation de site télécom, un avis de paiement de TVA de la KRA, une note de crédit d'un fournisseur de carburant et un fil d'emails internes concernant le déploiement d'un site télécom. Les documents sont cohérents entre eux, référencent les mêmes noms, domaines et contexte de projet Adrian Kenya/Adrian Group, et présentent des données financières, fiscales, fournisseurs et de correspondance interne. AFRINTEL ne reproduit pas les identifiants personnels, coordonnées bancaires ni le numéro fiscal visibles dans l'échantillon. Cette analyse est limitée aux quatre documents examinés ; AFRINTEL n'a pas consulté de divulgation ultérieure ni de fichiers supplémentaires publiés par le groupe.
 
 ### 15 Juillet 2025
 #### 🇪🇬 Égypte - Egyptian Electricity Holding Company (EEHC, eehc.gov.eg)
@@ -115,6 +124,7 @@
 - **Secteur:** Gouvernement / Énergie (Électricité)
 - **Site web:** https://eehc.gov.eg
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 4
 - **Description victime:** L'Egyptian Electricity Holding Company (EEHC) est la société holding publique supervisant la production, le transport et la distribution d'électricité en Égypte, y compris ses filiales de distribution régionales. L'acteur exige 2 270 000 USD.
@@ -126,6 +136,7 @@
 - **Secteur:** Administrations publique / Gouvernement Local.
 - **Site web:** https://www.otjimun.org.na
 - **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
 - **Niveau de confiance:** Very High
 - **Niveau d'impact:** Level 3
 - **Description victime:** La municipalité d'Otjiwarongo est l'organe de gouvernement local de la ville d'Otjiwarongo, chef-lieu de la région d'Otjozondjupa en Namibie.
@@ -133,18 +144,18 @@
 
 ### 15 Juillet 2025
 #### 🇲🇷 Mauritanie - Portail QCE (qce.gov.mr)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Inconnu
-- **Secteur :** Gouvernement / Marchés publics (Qualification des entreprises et du personnel)
-- **Site web :** qce.gov.mr
-- **Statut :** Claim - Data Sample Published
-- **Description victime :** qce.gov.mr est une plateforme en ligne du gouvernement mauritanien utilisée pour héberger et traiter des dossiers de qualification de personnel et d'entreprises, cohérente avec une vérification des entreprises contractantes et de leur personnel technique dans le cadre de marchés publics ; sa mission institutionnelle précise n'a pas pu être confirmée de manière indépendante à partir de l'échantillon examiné.
-- **Analyse :** AFRINTEL a examiné un échantillon local de fichiers cohérents avec des dossiers de qualification de personnel soumis via la plateforme, comprenant des curriculum vitae, des cartes d'identité nationale (CIN), des diplômes, des actes notariés de dépôt de contrats de travail et d'autres pièces justificatives pour des personnes employées par plusieurs entreprises privées mauritaniennes distinctes (notamment dans les secteurs de la construction, du forage et des services techniques). Les documents affichent des en-têtes officiels authentiques, des cachets de notaire et des champs de données personnelles structurés (nom complet, numéro national d'identification, date et lieu de naissance, employeur, poste, signature, photographie), cohérents avec un véritable dépôt de dossiers de qualification/marchés publics plutôt qu'un contenu fabriqué. Aucun acteur revendicateur, lieu de publication ni post de forum n'a pu être identifié pour ce jeu de données ; l'échantillon a été daté à partir des métadonnées des fichiers locaux (mi-juillet 2025) en l'absence de date de publication explicite. La combinaison de numéros d'identification nationale, de diplômes et de dossiers d'emploi pour de nombreuses personnes privées crée un risque significatif de fraude à l'identité, de falsification de documents et d'ingénierie sociale ciblée contre les candidats concernés et leurs employeurs. AFRINTEL ne reproduit aucun nom, numéro d'identification nationale, date de naissance, coordonnée d'employeur ni signature issus de l'échantillon examiné.
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Gouvernement / Marchés publics (Qualification des entreprises et du personnel)
+- **Site web:** [qce.gov.mr](https://qce.gov.mr)
+- **Statut:** Claim - Data Sample Published
+- **Description victime:** qce.gov.mr est une plateforme en ligne du gouvernement mauritanien utilisée pour héberger et traiter des dossiers de qualification de personnel et d'entreprises, cohérente avec une vérification des entreprises contractantes et de leur personnel technique dans le cadre de marchés publics ; sa mission institutionnelle précise n'a pas pu être confirmée de manière indépendante à partir de l'échantillon examiné.
+- **Analyse:** AFRINTEL a examiné un échantillon local de fichiers cohérents avec des dossiers de qualification de personnel soumis via la plateforme, comprenant des curriculum vitae, des cartes d'identité nationale (CIN), des diplômes, des actes notariés de dépôt de contrats de travail et d'autres pièces justificatives pour des personnes employées par plusieurs entreprises privées mauritaniennes distinctes (notamment dans les secteurs de la construction, du forage et des services techniques). Les documents affichent des en-têtes officiels authentiques, des cachets de notaire et des champs de données personnelles structurés (nom complet, numéro national d'identification, date et lieu de naissance, employeur, poste, signature, photographie), cohérents avec un véritable dépôt de dossiers de qualification/marchés publics plutôt qu'un contenu fabriqué. Aucun acteur revendicateur, lieu de publication ni post de forum n'a pu être identifié pour ce jeu de données ; l'échantillon a été daté à partir des métadonnées des fichiers locaux (mi-juillet 2025) en l'absence de date de publication explicite. La combinaison de numéros d'identification nationale, de diplômes et de dossiers d'emploi pour de nombreuses personnes privées crée un risque significatif de fraude à l'identité, de falsification de documents et d'ingénierie sociale ciblée contre les candidats concernés et leurs employeurs. AFRINTEL ne reproduit aucun nom, numéro d'identification nationale, date de naissance, coordonnée d'employeur ni signature issus de l'échantillon examiné.
 
 ### 18 Juillet 2025
 #### 🇲🇦 Maroc - Université Mohammed VI Polytechnique (UM6P)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Mercobyte
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Mercobyte
 - **Secteur:** Éducation / Enseignement Supérieur
 - **Site web:** https://um6p.ma
 - **Statut:** Claim - Unverified
@@ -152,8 +163,8 @@
 
 ### 25 Juillet 2025
 #### 🇹🇳 Tunisie - Ministère des Finances (finances.gov.tn)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Dark 07x Team
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Dark 07x Team
 - **Secteur:** Gouvernement / Administration Fiscale.
 - **Site web:** https://finances.gov.tn
 - **Statut:** Claim - Unverified
@@ -162,8 +173,8 @@
 
 ### 25 Juillet 2025
 #### 🇹🇳 Tunisie - Académie des Banques et des Finances (abf.tn)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Dark 07x Team
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Dark 07x Team
 - **Secteur:** Formation Professionnelle / Secteur Bancaire.
 - **Site web:** https://abf.tn
 - **Statut:** Claim - Data Sample Published
@@ -172,8 +183,8 @@
 
 ### 25 Juillet 2025
 #### 🇹🇳 Tunisie - BTK Bank
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Dark 07x Team
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Dark 07x Team
 - **Secteur:** Banque / Services Financiers.
 - **Site web:** https://btknet.com
 - **Statut:** Claim - Data Sample Published
@@ -182,33 +193,33 @@
 
 ### 25 Juillet 2025
 #### 🇹🇳 Tunisie - Banque de Tunisie (bt.com.tn)
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Dark 07x Team
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Dark 07x Team
 - **Secteur:** Banque / Services Financiers.
-- **Site web:** bt.com.tn
+- **Site web:** [bt.com.tn](https://bt.com.tn)
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Banque de Tunisie (BT) est l'une des plus anciennes et des plus importantes banques privées du pays
 - **Analyse:** Le matériel montre un tableau de bord client authentifié et actif sur bt.com.tn, affichant plusieurs soldes de comptes, un module de taux de change, un aperçu de portefeuille de titres et un graphique d'historique de transactions, confirmant un accès réel au niveau du compte plutôt qu'une simple revendication. Aucun numéro de compte ni solde n'est reproduit à partir de l'échantillon examiné.
 
 ### 27 Juillet 2025
 #### 🇪🇷 Érythrée - Ambassade d'Érythrée aux États-Unis
-- **Type d'incident:** Fuite de données
+- **Type d'incident:** Data Leak
 
-- **Acteur / Groupe :** Gh1nDar
-- **Secteur :** Gouvernement / Diplomatie
-- **Statut :** Claim - Unverified
-- **Site web :** [us.eriembassy.org](https://us.eriembassy.org)
+- **Acteur / Groupe:** Gh1nDar
+- **Secteur:** Gouvernement / Diplomatie
+- **Statut:** Claim - Unverified
+- **Site web:** [us.eriembassy.org](https://us.eriembassy.org)
 
-- **Description :**
+- **Description:**
   L'ambassade d'Érythrée aux États-Unis est la représentation diplomatique officielle de l'État érythréen sur le territoire américain.
 
-- **Analyse :**
+- **Analyse:**
   Un cybercriminel utilisant le pseudonyme Gh1nDar affirme, dans une publication sur BreachForums datée du 27 juillet 2025, avoir mis en ligne une fuite de données concernant environ 5 000 citoyens liés à l'ambassade d'Érythrée aux États-Unis. Les données prétendument exposées incluraient numéro de carte d'identité, nom complet, nom de la mère, numéro de passeport, adresse e-mail, numéro de téléphone, date de naissance, religion et profession actuelle. Aucun échantillon vérifiable n'était accessible dans la source collectée. Le compte à l'origine de la publication est récent et ne dispose d'aucun historique de fiabilité. À ce stade, AFRINTEL ne confirme pas l'intrusion ni l'authenticité des données.
 
 ### 28 Juillet 2025
 #### 🇹🇳 Tunisie - BH Bank
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Dark 07x Team
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Dark 07x Team
 - **Secteur:** Banque / Services Financiers.
 - **Site web:** https://bhbank.tn/
 - **Statut:** Claim - Data Sample Published
@@ -216,16 +227,16 @@
 - **Analyse:** La publication de l'acteur, publiée sous le pseudonyme Jokeir07x dans le cadre de la collaboration « Dark Hell 07X » avec Dr. SHell 08x (également responsable de la revendication BTK Bank), affirme que le groupe a pris le contrôle total de l'infrastructure du site, vidé et analysé toutes les bases de données, et confirmé la compromission des points d'accès back-end et front-end ; la publication annonce séparément une liste de 200 comptes « Yankee » mis en vente pour 100 USDT. Le matériel associé montre des sessions bancaires en ligne authentifiées et actives pour au moins deux comptes clients distincts, dont un compte professionnel « BH Capital Plus », avec soldes visibles, ainsi qu'un historique de transactions de carte bancaire incluant un retrait. Aucun numéro de compte, numéro de carte, identité de client ni solde n'est reproduit à partir de l'échantillon examiné.
 ### 29 Juillet 2025
 #### 🇲🇦 Maroc - Ministère de l’Éducation nationale, du Préscolaire et des Sports
-- **Type d'incident:** Fuite de données
-- **Acteur / Groupe :** Wieko
-- **Secteur :** Gouvernement / Administration publique / Éducation
-- **Site web :** [men.gov.ma](https://men.gov.ma)
-- **Statut :** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** Wieko
+- **Secteur:** Gouvernement / Administration publique / Éducation
+- **Site web:** [men.gov.ma](https://men.gov.ma)
+- **Statut:** Claim - Data Sample Published
 
-- **Description :**
+- **Description:**
   Le Ministère de l’Éducation nationale, du Préscolaire et des Sports est l’administration publique marocaine chargée de la politique gouvernementale relative à l’enseignement préscolaire, primaire et secondaire ainsi qu’au sport scolaire. Son portail institutionnel officiel utilise le domaine `men.gov.ma`.
 
-- **Analyse :**
+- **Analyse:**
   Une publication attribuée à Wieko sur un forum cybercriminel annonce un fichier texte contenant 223 501 lignes au format `mail:pass`. L’échantillon visible comprend des comptes associés à plusieurs domaines marocains de l’enseignement, notamment des universités et des établissements de formation. Les identifiants individuels ne sont pas reproduits. Une section de téléchargement est visible mais masquée par le forum, ce qui empêche de vérifier le fichier annoncé, son intégrité, l’unicité des lignes ou la validité de tous les couples d’identifiants. Le contenu ressemble davantage à une liste combinée d’identifiants qu’à un export structuré d’une base ministérielle. La présence de comptes issus de plusieurs établissements ne démontre pas une compromission directe du système d’information central du ministère ; l’origine des identifiants, la méthode de collecte et le lien technique avec l’administration centrale restent inconnus. Ces combinaisons peuvent faciliter le credential stuffing, la prise de contrôle de comptes, l’accès non autorisé aux plateformes pédagogiques, le phishing ciblé et l’usurpation d’identité numérique, notamment en cas de réutilisation des mots de passe. Aucun prix, groupe ransomware, volume en octets, délai ou demande d’extorsion n’est mentionné.
 
 - **Note de double revendication :**
@@ -234,18 +245,18 @@
 ### 30 Juillet 2025
 #### 🇧🇮 Burundi - PesaBay
 
-- **Type d'incident :** Fuite de données
-- **Acteur / Groupe :** BabayoSysteam
-- **Secteur :** Commerce / E-commerce
-- **Statut :** Data Fully Published
-- **Niveau de confiance :** Medium
-- **Niveau d'impact :** Level 2
-- **Site web :** [pesabay.bi](https://pesabay.bi)
+- **Type d'incident:** Data Leak
+- **Acteur / Groupe:** BabayoSysteam
+- **Secteur:** Commerce / E-commerce
+- **Statut:** Data Fully Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 2
+- **Site web:** [pesabay.bi](https://pesabay.bi)
 
-- **Description :**
+- **Description:**
   PesaBay est une place de marché électronique burundaise exploitée par AFRIREGISTER S.A. Elle permet à des vendeurs de publier des produits et à des utilisateurs d'acheter ou de prendre contact avec les commerçants présents sur la plateforme.
 
-- **Analyse :**
+- **Analyse:**
   Une publication attribuée au compte BabayoSysteam, datée du 30 juillet 2025, met à disposition une base de données PesaBay présentée comme complète et contenant 1 850 enregistrements. Les champs publiés comprennent le prénom, le nom, l'adresse e-mail, le numéro de téléphone et le statut du compte. La présence de nombreux numéros utilisant l'indicatif burundais `+257`, combinée à l'identité visuelle de PesaBay et à la structure cohérente des enregistrements, étaye avec une confiance moyenne l'attribution du jeu de données à la plateforme. AFRINTEL classe donc le cas `Data Fully Published`. Cette qualification décrit la publication du jeu annoncé comme complet ; elle ne confirme pas indépendamment la méthode d'acquisition, l'intrusion initiale, l'unicité des lignes ni la couverture de l'ensemble de la base de production de PesaBay. Les données de contact publiées présentent un risque de phishing ciblé, de fraude, de spam et d'usurpation d'identité numérique, correspondant à un impact de niveau 2. Aucun nom, e-mail, numéro de téléphone ni autre donnée personnelle brute n'est reproduit.
 
 ---

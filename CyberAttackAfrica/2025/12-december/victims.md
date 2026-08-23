@@ -4,8 +4,17 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in December 2025 (18 victims)
+# List of African cyberattack incidents in December 2025 (18 records)
 👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+December 2025 includes **18 incident records**: **14 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **10 African countries**.
+
+The 18 records concern **17 distinct organisations within December**, because Hopital La Rabta appears in two ransomware claims by different groups. The second La Rabta claim and the December Proplastics claim are retained as separate incident records because the available evidence does not establish that they are simple duplicates. Their cards explicitly preserve the alternative hypothesis of republication or resale.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## December 2025
 
 ### 05 December 2025
@@ -14,6 +23,7 @@
 - **Sector:** Technology
 - **Website:** 3s-software.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian technology service provider specializing in software development.
 
 ### 05 December 2025
@@ -22,6 +32,7 @@
 - **Sector:** Insurance (Health)
 - **Website:** https://nhima.co.zm/
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Zambian authority managing the national health insurance scheme.
 
 ### 06 December 2025
@@ -30,6 +41,7 @@
 - **Sector:** Agribusiness / Beverages (Alcoholic and non-alcoholic)
 - **Website:** www.kasapreko.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Kasapreko is one of the largest beverage manufacturers in Ghana and a major exporter throughout the ECOWAS region.
 
 ### 06 December 2025
@@ -38,6 +50,7 @@
 - **Sector:** Automotive Distribution / Diagnostic Equipment
 - **Website:** diesel-electric.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Diesel-Electric is one of South Africa's largest distributors specializing in automotive components, diesel injection systems, and diagnostic equipment (a major Bosch partner).
 
 ### 07 December 2025
@@ -46,6 +59,7 @@
 - **Sector:** Finance
 - **Website:** www.incolease.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian leasing company.
 
 ### 07 December 2025
@@ -54,6 +68,7 @@
 - **Sector:** Public Administration / Local Government
 - **Website:** elundini.gov.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Elundini Local Municipality is a key administrative authority located in the Joe Gqabi District (Eastern Cape), encompassing the towns of Maclear, Ugie, and Mount Fletcher.
 
 ### 08 December 2025
@@ -62,6 +77,7 @@
 - **Sector:** Finance / Trade
 - **Website:** arkanonline.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Egyptian conglomerate, Arkan Group, active in industry, agriculture, and wholesale trade.
 
 ### 11 December 2025
@@ -70,6 +86,7 @@
 - **Sector:** Insurance
 - **Website:** leadwayhealth.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Leadway Assurance is the largest private insurance company in Nigeria.
 
 ### 12 December 2025
@@ -78,6 +95,7 @@
 - **Sector:** Healthcare
 - **Website:** www.chularabta.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 
 ### 15 December 2025
@@ -86,6 +104,7 @@
 - **Sector:** Health / Medical Association / Education
 - **Website:** strtn.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** The Tunisian Society of Radiology (STR) is the reference organization for radiologists in Tunisia.
 
 ### 22 December 2025
@@ -94,6 +113,7 @@
 - **Sector:** Real Estate Development / Management of Industrial and Leisure Parks
 - **Website:** polarisparks.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Polaris Parks is one of Egypt's leading private industrial park developers.
 
 ### 24 December 2025
@@ -109,27 +129,29 @@
 - **Analysis:** AFRINTEL reviewed a local sample of documents associated with this claim. The material includes approximately 25 individually named consumer case files consistent with debt-review/debt-counselling matters handled by the NCR, roughly 20 emails referencing named individuals together with partial identifiers resembling South African ID-number date-of-birth prefixes, and an internal enforcement memo dated 24 June 2022 from the NCR's Manager: Complaints Department to the Acting Manager: Investigations and Enforcement, opening an investigation into an entity referred to as "Debt Accord Solutions" for allegedly operating as an unregistered debt counsellor. The sample also includes an internal administrator spreadsheet tracking case-related email volumes on a near-daily to monthly basis from August 2020 through December 2024, NCR-branded logo files, regulatory forms (including a Form 29 and a written-consent document under Regulation 50(5)), a mandate document and a bank-details record. The documents are internally consistent with the NCR's branding, organisational structure (named managers and departments) and regulatory casework format. The sample indicates exposure of consumer debt-review case files, internal investigation and enforcement records, and multi-year operational tracking data, creating a material risk of identity fraud and targeted phishing against named consumers and NCR staff, as well as potential interference with ongoing regulatory investigations. AFRINTEL does not reproduce any consumer name, identifier, case file content, staff name or investigation detail from the reviewed material.
 
 ### 26 December 2025
-#### 🇹🇳 Tunisia - Hopital La Rabta (second cyberattack)
+#### 🇹🇳 Tunisia - Hopital La Rabta (second ransomware claim)
 - **Ransomware Group:** qilin
 - **Sector:** Healthcare
 - **Website:** www.chularabta.tn
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 - **Analysis:** AFRINTEL previously recorded a claim against this same hospital by devman on 12 December 2025. This second claim, published two weeks later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 26 December 2025
-#### 🇿🇼 Zimbabwe - Proplastics Limited (second cyberattack)
+#### 🇿🇼 Zimbabwe - Proplastics Limited (second ransomware claim)
 - **Ransomware Group:** lockbit5
 - **Sector:** Manufacturing Industry (Plastics)
 - **Website:** proplastics.co.zw
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 - **Analysis:** AFRINTEL previously recorded a claim against this same company by TheGentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
 ### 29 December 2025
 #### 🇩🇿 Algeria - Oran University 1 Ahmed Ben Bella
 - **Incident type:** Data Leak
-- **Actor / Group:** GhostVector (source account)
+- **Actor / Group:** GhostVector
 - **Sector:** Education / University
 - **Website:** Not specified
 - **Source publication date:** 29 December 2025
@@ -140,7 +162,7 @@
 ### 29 December 2025
 #### 🇪🇬 Egypt - 100 Watt Plast (100wattplast.com)
 - **Incident type:** Data Leak
-- **Actor / Group:** camillabf, post published on a cybercriminal forum (RaidForums)
+- **Actor / Group:** camillabf
 - **Sector:** Industrial / Electrical and Plastic Products Manufacturing
 - **Website:** [100wattplast.com](https://100wattplast.com)
 - **Status:** Claim - Data Sample Published
@@ -161,7 +183,7 @@
 ### 31 December 2025
 #### 🇰🇪 Kenya - Kenya Electricity Transmission Company (KETRACO)
 - **Incident type:** Data Leak
-- **Actor / Group:** LindaBF, post published on a cybercriminal forum (RaidForums)
+- **Actor / Group:** LindaBF
 - **Sector:** Energy / Electricity Transmission (Critical Infrastructure)
 - **Website:** [ketraco.co.ke](https://ketraco.co.ke)
 - **Status:** Claim - Data Sample Published

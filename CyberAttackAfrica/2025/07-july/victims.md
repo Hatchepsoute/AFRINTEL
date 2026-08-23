@@ -6,6 +6,12 @@
 # List of African cyberattack victims in July 2025 (21 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
 
+## Monthly snapshot
+
+July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **12 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## July 2025
 
 ### 01 July 2025
@@ -20,7 +26,7 @@
 ### 03 July 2025
 #### 🇩🇿 Algeria - Algeria Post / ECCP
 - **Incident type:** Data Leak
-- **Actor / Group:** sanji_shi5 (source account)
+- **Actor / Group:** sanji_shi5
 - **Sector:** Postal Services / Financial Services
 - **Website:** [poste.dz](https://www.poste.dz)
 - **Source publication date:** 3 July 2025
@@ -34,6 +40,7 @@
 - **Sector:** Industrial Supplies / Mining Support Services.
 - **Website:** https://mafate.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Mafate Business Enterprise is an industrial service provider established in Middelburg (Mpumalanga), at the heart of the South African mining region.
 
 ### 09 July 2025
@@ -62,6 +69,7 @@
 - **Sector:** NGO (Education & Governance)
 - **Website:** https://twaweza.org
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Twaweza East Africa is a leading pan-African organization, based in Tanzania (with offices in Kenya and Uganda).
 
 ### 14 July 2025
@@ -102,7 +110,7 @@
 #### 🇰🇪 Kenya - Adrian Kenya
 - **Ransomware Group:** lynx
 - **Sector:** Telecommunications / Energy Infrastructure / ICT.
-- **Website:** https://adrian.co.ke / www.adriankenya.com
+- **Website:** [adrian.co.ke](https://adrian.co.ke) / [adriankenya.com](https://www.adriankenya.com)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
@@ -116,6 +124,7 @@
 - **Sector:** Government / Energy (Electricity)
 - **Website:** https://eehc.gov.eg
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim Description:** The Egyptian Electricity Holding Company (EEHC) is the state holding company overseeing electricity generation, transmission and distribution across Egypt, including its regional distribution subsidiaries. The actor demands $2,270,000 USD.
@@ -127,6 +136,7 @@
 - **Sector:** Public Administrations / Local Government.
 - **Website:** www.otjimun.org.na
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 3
 - **Victim Description:** The municipality of Otjiwarongo is the local government body for the city of Otjiwarongo, capital of the Otjozondjupa region in Namibia.
@@ -137,7 +147,7 @@
 - **Incident type:** Data Leak
 - **Actor / Group:** Unknown
 - **Sector:** Government / Public Procurement (Enterprise and Personnel Qualification)
-- **Website:** qce.gov.mr
+- **Website:** [qce.gov.mr](https://qce.gov.mr)
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** qce.gov.mr is a Mauritanian government online platform used to host and process personnel and enterprise qualification dossiers, consistent with contractor/technical-staff vetting for public works and procurement processes; its precise institutional mandate could not be independently confirmed from the reviewed sample.
 - **Analysis:** AFRINTEL reviewed a local sample of files consistent with personnel qualification dossiers submitted through the platform, including curricula vitae, national identity cards (CIN), academic diplomas, notarized employment-contract deposits and related supporting documents for individuals employed by several distinct Mauritanian private companies (including construction, drilling and technical-services firms). The documents display genuine official letterheads, notary seals and structured personal-data fields (full name, national identification number, date and place of birth, employer, position, signature, photograph), consistent with a real qualification/procurement dossier repository rather than fabricated content. No claiming actor, publication venue or forum post could be identified for this dataset; the sample was dated from local file metadata (mid-July 2025) in the absence of an explicit publication date. The combination of national ID numbers, diplomas and employment records for numerous private individuals creates a significant risk of identity fraud, document forgery and targeted social engineering against affected candidates and their employers. AFRINTEL does not reproduce any individual's name, national identification number, date of birth, employer contact details or signature from the reviewed sample.
@@ -186,7 +196,7 @@
 - **Incident type:** Data Leak
 - **Actor / Group:** Dark 07x Team
 - **Sector:** Banking / Financial Services.
-- **Website:** https://bt.com.tn
+- **Website:** [bt.com.tn](https://bt.com.tn)
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Banque de Tunisie (BT) is one of the oldest and largest private banks in the country.
 - **Analysis:** Material shows a live, authenticated customer online-banking dashboard on bt.com.tn with multiple account balances, a foreign-exchange rate module, a securities/portfolio overview and a transaction-history chart, confirming genuine account-level access rather than a simple claim. No account numbers or balances are reproduced from the reviewed sample.

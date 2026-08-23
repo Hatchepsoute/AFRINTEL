@@ -5,6 +5,13 @@
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 # List of African cyberattack victims in August 2025 (13 victims)
 👉🏾 [**French version available here**](./victims_FR.md)
+
+## Monthly snapshot
+
+August 2025 includes **13 unique incidents**: **7 Ransomware**, **5 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **10 African countries**.
+
+> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+
 ## August 2025
 
 ### 06 August 2025
@@ -50,30 +57,6 @@
 - **Victim Description:** One of the largest financial institutions in Nigeria and Anglophone Africa, listed on the Nigerian and London Stock Exchanges. The actor claims exfiltration and sale of over 1.8 million customer records, together with employee data. AFRINTEL reviewed a local CSV sample containing 18 data rows and eight columns covering index, code, identifier, name, amount, address, telephone and email fields. No raw values are reproduced.
 - **Correlation note:** The same organization and domain were listed again on 26 July 2026 by ExfilSquad in a ransomware claim. This establishes an identity and temporal correlation, not a confirmed connection between the two events. The 2025 record concerns an alleged sale of 1.8 million records with a reviewed 18-row sample; the 2026 record provides no sample, volume, encryption evidence or victim confirmation. No matching archive, data schema, shared infrastructure or explicit reference links the claims. AFRINTEL therefore tracks them as related records / possible separate claims, with the relationship unresolved.
 
-### 13 August 2025
-#### 🇩🇿 Algeria - Cevital
-- **Ransomware Group:** akira
-- **Sector:** Agribusiness / Industry / Logistics
-- **Website:** www.cevital.com
-- **Status:** Claim - Unverified
-- **Victim Description:** Leader in the agrifood industry in Algeria, active in electronics, steel, glass, and distribution.
-
-### 17 August 2025
-#### 🇿🇦 South Africa - SYSPRO
-- **Ransomware Group:** warlock
-- **Sector:** Technology (Software Publisher)
-- **Website:** syspro.com
-- **Status:** Claim - Unverified
-- **Victim Description:** SYSPRO is a South African ERP (Enterprise Resource Planning) software publisher, providing integrated management solutions for manufacturing and distribution companies.
-
-### 18 August 2025
-#### 🇺🇬 Uganda - Uganda Electricity Transmission Company Limited
-- **Ransomware Group:** qilin
-- **Sector:** Energy (Electricity)
-- **Website:** https://www.uetcl.go.ug / www.uetcl.com
-- **Status:** Claim - Unverified
-- **Victim Description:** Ugandan public company responsible for electricity transmission.
-
 ### 11 August 2025
 #### 🇿🇦 South Africa - Body Graphics Tattoo Supply
 - **Incident type:** Data Leak
@@ -85,12 +68,40 @@
 - **Victim Description:** Major online retailer based in Johannesburg, specializing in the supply of professional tattoo equipment and aftercare products in South Africa.
 - **Analysis:** AFRINTEL reviewed two structured export files referenced in a post observed on DarkForums, together totaling 6,501 records, matching the volume claimed by the actor. The dataset corresponds to a WordPress/WooCommerce customer and administrator export, including login names, email addresses, hashed passwords (phpass format), physical addresses, phone numbers, IP addresses, browser user-agent strings and session tokens. The structural consistency between the claimed volume and the reviewed files, together with fields matching the victim's e-commerce platform, supports a high confidence assessment, and the publication identifies the source account as N1KA. AFRINTEL does not reproduce any customer names, contact details, addresses or credentials from the reviewed sample.
 
+### 13 August 2025
+#### 🇩🇿 Algeria - Cevital
+- **Ransomware Group:** akira
+- **Sector:** Agribusiness / Industry / Logistics
+- **Website:** www.cevital.com
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Victim Description:** Leader in the agrifood industry in Algeria, active in electronics, steel, glass, and distribution.
+
+### 17 August 2025
+#### 🇿🇦 South Africa - SYSPRO
+- **Ransomware Group:** warlock
+- **Sector:** Technology (Software Publisher)
+- **Website:** syspro.com
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Victim Description:** SYSPRO is a South African ERP (Enterprise Resource Planning) software publisher, providing integrated management solutions for manufacturing and distribution companies.
+
+### 18 August 2025
+#### 🇺🇬 Uganda - Uganda Electricity Transmission Company Limited
+- **Ransomware Group:** qilin
+- **Sector:** Energy (Electricity)
+- **Website:** https://www.uetcl.go.ug / www.uetcl.com
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Victim Description:** Ugandan public company responsible for electricity transmission.
+
 ### 18 August 2025
 #### 🇹🇳 Tunisia - International Freight & Commerce
 - **Ransomware Group:** direwolf
 - **Sector:** Logistics
 - **Website:** ifc-tunisie.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Tunisian company providing maritime, air, and land transport services, as well as logistics management and customs formalities for importing and exporting companies.
 
 ### 20 August 2025
@@ -99,6 +110,7 @@
 - **Sector:** Technology / Telematics / IoT Security
 - **Website:** www.netstar.co.za
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** Netstar, a subsidiary of the Altron group, is the pioneer of the stolen vehicle recovery (SVR) industry in South Africa.
 - **Analysis:** AFRINTEL previously recorded a claim against this same company by devman on 23 May 2025. This second claim, published roughly three months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
 
@@ -118,6 +130,7 @@
 - **Sector:** Insurance / Financial Services
 - **Website:** www.swan.mu / swanforlife.com
 - **Status:** Claim - Unverified
+- **Incident type:** Ransomware
 - **Victim Description:** SWAN (Swan General Ltd and Swan Life Ltd) is the market leader in insurance and financial services in Mauritius.
 
 ### 25 August 2025
@@ -129,6 +142,7 @@
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Official portal and digital infrastructures of the Togolese Republic, hosting administrative services and state data.
 - **Analysis:** Material corroborates the actor's claim, including the DarkForums listing itself and several elements showing active administrative access across multiple Togolese government digital platforms: the DSNIC identity and civil-status management system (justice.xflow.gouv.tg), a Nextcloud-based government file-sharing and collaboration platform (cloud.numerique.gouv.tg) with shared folders and configuration files, a KoboToolbox data-collection instance (kf.form.gouv.tg) hosting dozens of active government surveys and forms, and an education-statistics reporting system (stateduc.planifeducation.gouv.tg). The material shows genuine administrative-level access to live dashboards rather than a public-facing sample, consistent with the actor's description of the offer as a "0day vulnerability" granting privileged access. This breadth of access across distinct systems and subdomains under the gouv.tg domain supports a high confidence assessment of an active, unremediated compromise affecting multiple government digital services, independent of the actor's Monero-based pricing claim, which AFRINTEL cannot verify. AFRINTEL does not reproduce any credentials, configuration values, citizen data or session details from the reviewed material.
+
 ---
 [August 2025 report](./report/README.md)
 
