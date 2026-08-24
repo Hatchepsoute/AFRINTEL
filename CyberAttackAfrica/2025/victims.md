@@ -1,36 +1,8 @@
-# AFRINTEL victim records 2025
+# AFRINTEL - African victims - 2025
 
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+**224 documented cyber incidents under AFRINTEL.**
 
-The records below are consolidated from the AFRINTEL monthly files for 2025. Structured fields are harmonized for annual parity, while publication dates, discovery dates, analytical caveats and uncertainty levels are retained whenever present in the source.
-
-## Consolidation status
-
-| Metric | Value |
-|---|---:|
-| Monthly source records | **197** |
-| Annual incident records | **197** |
-| Annual taxonomy | **121 Ransomware + 73 Data Leak + 3 Access Sale** |
-
-| Month | Monthly source records | Annual unique count |
-|---|---:|---:|
-| January | 17 | 17 |
-| February | 8 | 8 |
-| March | 11 | 11 |
-| April | 17 | 17 |
-| May | 21 | 21 |
-| June | 21 | 21 |
-| July | 21 | 21 |
-| August | 13 | 13 |
-| September | 18 | 18 |
-| October | 18 | 18 |
-| November | 14 | 14 |
-| December | 18 | 18 |
-| **Total** | **197** | **197** |
+> **Reading dates:** `Incident date` indicates when the event occurred or was detected according to available evidence. `Initial publication date` indicates when it was first publicly disclosed, claimed or communicated. The two dates may fall in different months.
 
 ## January 2025
 
@@ -214,6 +186,40 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Incident type:** Ransomware
 - **Victim Description:** Zetech University is a leading higher education institution in Kenya.
 
+### 31 January 2025 - reported date
+#### Kenya - Business Registration Service (BRS)
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://brs.go.ke/
+- **Incident date:** Night of 31 January 2025 - reported date, publicly described as believed/probable
+- **Initial publication date:** 2 February 2025
+- **Status:** Government Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** Kenya's Business Registration Service administers the national register of companies and businesses, including records relating to companies, directors, shareholders and beneficial owners.
+- **Analysis:** On 2 February 2025, the Business Registration Service (BRS) said it had opened an investigation after reports of a potential breach affecting the companies registry. Public reporting at that stage placed the attack on the night of 31 January 2025 but described that timing as believed rather than technically established. On 6 February, Kenya's Ministry of Information, Communications and the Digital Economy confirmed that a data breach had occurred and that unauthorized publication of information had been removed. BRS systems and databases were then reported as secured. The access vector, actor and complete scope of affected data remain publicly undetermined.
+- **Source type:** Government statements reported by public media
+- **Public sources:** [The Star - BRS statement](https://www.the-star.co.ke/news/realtime/2025-02-02-business-registration-service-assures-of-data-security-amid-alleged-breach) | [The Star - ICT Ministry update](https://www.the-star.co.ke/news/2025-02-06-kabogo-weve-addressed-data-breach-at-business-registration-service)
+
+---
+
+### 31 January 2025
+#### Kenya - Kenya Broadcasting Corporation (KBC)
+- **Actor / Group:** Unknown
+- **Sector:** Media / Entertainment
+- **Website:** https://www.kbc.co.ke/
+- **Incident date:** 31 January 2025 - date reported by Pulse Kenya; KBC confirmed the account compromise
+- **Initial publication date:** 1 February 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X account / cryptocurrency scam
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Source type:** Victim Confirmation + Public Media
+- **Analysis:** Pulse Kenya reported on 1 February 2025 that attackers had taken control of KBC's official X account on Friday, 31 January. KBC confirmed that the `KBCChannel1` account had been compromised and said it was working to restore access. The account had been renamed "DeepSeek AI" and was used to distribute cryptocurrency-scam content. The public disclosure date is therefore 1 February, while the incident is placed on 31 January based on the reported chronology. The available evidence does not establish a broader compromise of KBC's information systems or the technical identity of the actor.
+- **Sources:** [Pulse Kenya - KBC confirms X account compromise](https://www.pulse.co.ke/story/kbcs-x-account-hacked-and-name-changed-to-deepseek-ai-2025020111532480629)
+
 ## February 2025
 
 ### 03 February 2025
@@ -224,6 +230,38 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Xlab Group is an Egyptian company specializing in digital marketing solutions, software development, brand strategy consulting, and digital transformation for Middle Eastern companies.
+
+### 06 February 2025
+#### Kenya - K24 TV
+- **Actor / Group:** Unknown
+- **Sector:** Media / Entertainment
+- **Website:** https://k24.digital/
+- **Incident date:** Around 6 February 2025 - date reported by public media
+- **Initial publication date:** 6 February 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X account / cryptocurrency fraud
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Source type:** Victim Confirmation + Public Media
+- **Analysis:** K24 TV's X account was hijacked, transformed into a Beyoncé fan page and used for fraudulent cryptocurrency posts. No reliable technical attribution was established.
+- **Sources:** [Source](https://www.standardmedia.co.ke/amp/business/newsbeat-tech/article/2001511149/concern-as-k24-x-account-hacked-turned-into-beyonce-fan-page-days-after-kbc-breach)
+
+### 09 February 2025
+#### Kenya - Directorate of Criminal Investigations (DCI)
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://www.dci.go.ke/
+- **Incident date:** 9 February 2025 - incident acknowledged by DCI in its statement that day
+- **Initial publication date:** 9 February 2025 - DCI statement; cited media article published 10 February 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X / Facebook accounts
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Source type:** Victim Statement + Public Media
+- **Analysis:** DCI warned that its official X and Facebook accounts had been compromised and used to distribute fraudulent cryptocurrency content. The event is limited to the confirmed social-media assets unless broader compromise evidence emerges.
+- **Sources:** [Nairobi Leo - DCI statement of 9 February reported on 10 February](https://nairobileo.co.ke/news/article/19211/dci-cautions-kenyans-after-being-hacked-on-x-and-facebook)
 
 ### 12 February 2025
 #### 🇲🇦 Morocco - ASK Gras Savoye (askgs.ma)
@@ -293,6 +331,8 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** Shaghalni is one of the leading recruitment platforms in Egypt, specializing in connecting job seekers (notably technical and blue-collar profiles) with companies.
 - **Analysis:** The KillSec leak-site listing for Shaghalni offers the data for sale at €5,000, accompanied by a local sample of documents referenced by the listing. The leak-site description matches Shaghalni's publicly known profile as a free Egyptian online job-search platform connecting candidates with employers. The reviewed sample includes an employer-accounts CSV export listing companies registered on the platform (company name, phone number, registration date, country, sector, company size, website and profile text), predominantly Egyptian businesses, and a set of company verification documents uploaded by employers, including Egyptian national ID cards, Egyptian Tax Authority correspondence and registration certificates, an Egyptian Ministry of Tourism company license, and a Saudi Arabia Ministry of Commerce and Investment company registration certificate, indicating the platform's employer base extends beyond Egypt. The documents are internally consistent with Shaghalni's stated activity as an employer-facing recruitment platform. AFRINTEL does not reproduce any national ID numbers, company registration numbers, tax references, phone numbers or names from the reviewed sample. The reviewed material pertains to employer/company accounts and their verification documents; it does not establish whether job-seeker/candidate personal data was also part of the claimed dataset.
 
+---
+
 ## March 2025
 
 ### 02 March 2025
@@ -356,6 +396,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** ACDC Dynamics is a major South African manufacturer, importer, and distributor of electrical components, tools, and safety equipment.
 - **Analysis:** The Lynx leak-site listing for ACDC Express (ACDC Dynamics) categorizes the publication as Encrypted, Proof and AD Dump, and describes a single disclosure titled "Data" covering HR, financial data, contracts and confidential material, with a claimed volume of 800 GB. The listing states a publication date of 7 March 2025 and cites an estimated victim income figure of $123,000,000, a metric self-reported by the actor and not independently verified. The victim description on the leak site matches ACDC Dynamics' publicly known profile (founded 1984, electrical and electronics distributor headquartered in Edenvale, Johannesburg, with branches in Germiston, Cape Town, Pinetown and Riverhorse). The underlying file contents referenced by the "Proof" and "AD Dump" categories were not reviewed and are not reproduced.
 
+### 07 March 2025
+#### South Africa - Pam Golding Properties
+- **Actor / Group:** Unknown
+- **Sector:** Construction / Real Estate
+- **Website:** https://www.pamgolding.co.za/
+- **Incident date:** 7 March 2025 - date confirmed in the company's statement
+- **Initial publication date:** 11 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Victim Description:** Pam Golding Properties is a major South African real-estate group with a large portfolio of clients and properties.
+- **Analysis:** Pam Golding stated that on 7 March 2025 an unknown third party gained unauthorized access to its customer-relationship-management system through a user account and viewed some customer personal information. The company stated that banking details, financial information, business information and other documents were not compromised. The access was contained and notifications were made. The available statement supports successful unauthorized access and personal-data exposure, but does not establish how the user account was obtained or identify the actor.
+- **Source type:** Victim Statement
+- **Public sources:** [Pam Golding media statement](https://propertyflash.co.za/2025/03/11/media-statement-issued-by-pam-golding-properties-re-a-cyber-incident/)
+
 ### 11 March 2025
 #### 🇪🇬 Egypt - ISEE (International School of Elite Education)
 - **Ransomware Group:** funksec
@@ -364,6 +420,54 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** The International School of Elite Education (ISEE) is a prestigious private school located in Cairo.
+
+### 15 March 2025
+#### South Africa - Parliament of South Africa
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://www.parliament.gov.za/
+- **Incident date:** 15 March 2025 - date Parliament identified and publicly disclosed the breach; exact compromise start not stated
+- **Initial publication date:** 15 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised YouTube / streaming service
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Source type:** Official Victim Statement
+- **Analysis:** A YouTube/streaming resource connected to Parliament's official channels was compromised and unauthorized content was uploaded. The incident affected a streaming service and does not establish compromise of Parliament's entire information system.
+- **Sources:** [Parliament of South Africa - official statement](https://www.parliament.gov.za/press-releases/hacking-incident-parliaments-social-media)
+
+### 16 March 2025
+#### South Africa - Astral Foods Limited
+- **Actor / Group:** Unknown
+- **Sector:** Agriculture / Agribusiness
+- **Website:** https://www.astralfoods.com/
+- **Incident date:** 16 March 2025 - date confirmed by Astral Foods
+- **Initial publication date:** 24 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Subtype:** Operational disruption - technical vector undisclosed
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Official Company Disclosure
+- **Analysis:** Astral Foods disclosed a cybersecurity incident on 16 March 2025 that disrupted poultry processing and customer deliveries and had an estimated profit impact of about R20 million. The company explicitly stated that no confidential or sensitive stakeholder information was compromised. AFRINTEL preserves the confirmed operational cyber incident without relabelling it as Data Leak or Ransomware.
+- **Sources:** [Astral Foods - official SENS announcement](https://www.astralfoods.com/assets/Documents/News/SENS/2025/25.03.24%20Announcement%20-%20Voluntary%20trading%20update.VF.pdf)
+
+### 17 March 2025
+#### Ghana - Office of the President - John Dramani Mahama X account
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://x.com/JDMahama
+- **Incident date:** 17 March 2025 - date the Cyber Security Authority received the report; exact compromise start not established
+- **Initial publication date:** 18 March 2025
+- **Status:** Authority Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X account / cryptocurrency scam
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** National Cyber Authority + Public Media
+- **Analysis:** Ghana's Cyber Security Authority confirmed that the President's X account was compromised and used to promote a fraudulent cryptocurrency project called "Solana Africa". The account was restored. The evidence does not establish compromise of Jubilee House networks or other government systems.
+- **Sources:** [Ghana News Agency - CSA statement on restoration of the President's X account](https://gna.org.gh/2025/03/president-mahamas-x-account-restored/)
 
 ### 25 March 2025
 #### 🇪🇬 Egypt - MISR AL MAHABA HOSPITAL
@@ -377,15 +481,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** Misr Al Mahaba Hospital is a significant private healthcare center in Cairo.
 - **Analysis:** The NightSpire leak-site listing for Misr Al Mahaba Hospital, published 24 March 2025, states a countdown/deadline of 27 March 2025 and a claimed volume of 100 GB. A local sample of documents consistent with the claim includes an Egyptian national health-insurance card and a national ID card (each showing a patient photograph and partially visible identifiers), two hospital external-referral forms addressed to the General Authority for Health Insurance bearing the hospital's stamp, and an itemized hospital billing statement for a cardiac-catheterization/CCU admission listing diagnosis-related line items, individual medications administered and total charges, stamped with the hospital's accounts department seal. The documents are internally consistent with Misr Al Mahaba Hospital's branding and billing format. The sample indicates exposure of patient-identifying documents and detailed clinical/billing records, creating a material risk of medical-identity theft, insurance fraud and targeted phishing against affected patients. No patient names, national ID numbers, health-insurance numbers, diagnoses or billing figures are reproduced.
 
-### 30 March 2025
-#### 🇪🇬 Egypt - INI Investments
-- **Ransomware Group:** nightspire
-- **Sector:** Finance
-- **Website:** iniholdings.com
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
-- **Double-claim note:** The March and April records are retained separately because the source dates and evidence differ. They involve the same actor, domain and victim name, but AFRINTEL cannot determine from the available material whether the April publication is an update of the March claim or a separate claim. No merger is made pending confirmation.
 ### 26 March 2025
 #### 🇧🇫 Burkina Faso - Government COVID-19/Vaccination Dashboard
 - **Actor / Group:** Ghudra
@@ -398,6 +493,16 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Description:** A forum post advertises administrator access to a Burkina Faso government COVID-19 and vaccination dashboard for a claimed price of $300.
 - **Analysis:** The publication displays COVID-19 case metrics, testing figures and vaccination totals, and offers administrator access for sale. The domain, access validity, provenance and relationship to the Sentap claims from November 2024 are unknown. This is recorded as an unverified access-sale claim; no credentials or personal data are reproduced.
 
+### 30 March 2025
+#### 🇪🇬 Egypt - INI Investments
+- **Ransomware Group:** nightspire
+- **Sector:** Finance
+- **Website:** iniholdings.com
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
+- **Double-claim note:** The March and April records are retained separately because the source dates and evidence differ. They involve the same actor, domain and victim name, but AFRINTEL cannot determine from the available material whether the April publication is an update of the March claim or a separate claim. No merger is made pending confirmation.
+
 ### 31 March 2025
 #### 🇷🇼 Rwanda - moh.gov.rw
 - **Ransomware Group:** babuk2
@@ -409,6 +514,8 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Impact level:** Level 4
 - **Victim Description:** Ministry of Health of Rwanda.
 - **Analysis:** A set of material and a raw text sample are directly associated with this claim. The most significant evidence is an active PHP web shell deployed on a Linux server hostnamed "covid-mass-testing", running PHP 7.4 as the www-data user with safe mode disabled and a working directory under /var/www; the shell exposes file-manager, console, SQL, PHP-execution and brute-force modules, indicating full remote code-execution capability rather than a passive data claim. A phpMyAdmin database-administration panel lists 23 tables with approximate row counts, including tables consistent with applicants (~110,500 rows), session data (~155,400 rows), clinicians (~29,500 rows), HR data (~9,400 rows), documents (~9,700 rows) and password/authentication records (~4,800 rows), indicating direct database-level access to a health-sector applicant/workforce-management system rather than the ministry's public website alone. Additional material, from what appears to be the same or a related applicant-management portal, shows dashboard statistics of 112,102 total applicants, 7,917 vacant positions, 4,165 employed applicants and 107,937 applicants on a waiting list, consistent with the table row counts observed in the database panel. A raw local text sample of approximately 25 user records from what is labelled a "Student" role is also examined, each containing a sequential ID, an email address and an MD5-format password hash. The combination of an active, fully-featured web shell, direct database administrative access with table-level row counts, and a raw credential-bearing user-record sample supports a very high confidence assessment of a genuine, deep compromise extending beyond a simple website claim to backend systems processing health-sector job applications, clinician records and authentication data for well over 100,000 individuals. Given the scale of exposure and the sensitivity of clinician, HR and authentication data within Rwanda's health sector, the potential impact includes large-scale credential-stuffing and account-takeover risk, targeted phishing against health-sector applicants and staff, and broader compromise of health-workforce management processes. No email address, password hash, individual applicant record or other personal data is reproduced from the reviewed material.
+
+---
 
 ## April 2025
 
@@ -485,6 +592,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 
   The consistency of the format across the sample, the diversity of agencies and payment centers represented, and the presence of plausible stamps and signatures support a high confidence level regarding authentic access to CNAS systems or archives. The observed volume (214 documents), however, remains far below the 860,200 claimed and does not confirm the total announced scale of the leak. Exposure of these certificates could facilitate identity theft, social-benefit fraud and targeted phishing against insured members and their dependents. AFRINTEL does not reproduce any name, date of birth, address, registration number or other personal data from the reviewed documents.
 
+### 08 April 2025
+#### 🇲🇦 Morocco - Maroc Telecom
+- **Incident date:** Unknown - the listing does not state when the access was obtained
+- **Initial publication date:** 8 April 2025
+- **Actor / Group:** yn0x1
+- **Sector:** Telecommunications
+- **Website:** https://www.iam.ma/
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Subtype:** SMS Sending Service / Account Access
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** Maroc Telecom is the Moroccan telecommunications operator also known as Itissalat Al-Maghrib (IAM).
+- **Analysis:** On 8 April 2025, the actor using the handle `yn0x1` published an underground-forum listing titled “For Sale: Maroc Telecom SMS Sender - 2492 Credits Available”. The listing offered a “Maroc Telecom SMS Sender” with 2,492 credits available and displayed Maroc Telecom branding. The actor also provided a Telegram contact for parties seeking to negotiate or purchase the access. During a later check, that contact was no longer functional. The observed material confirms the existence of the listing and the access-sale claim, but it does not establish whether the access involved an end-user account, reseller account, SMS-sending interface, SMS gateway, API or internal Maroc Telecom infrastructure. The actual functionality and origin of the advertised access remain unconfirmed.
+- **Observed sales contact:** Telegram - `chatfordealme_bot` - unavailable during a later check.
+
 ### 09 April 2025
 #### 🇩🇿 Algeria - MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
 - **Incident type:** Data Leak
@@ -509,6 +632,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Victim Description:** The supplied publication states that Phantom Atlas accessed sensitive files from Algeria's Ministry of Labor. No ministry-specific sample is provided; this target is therefore recorded separately from MGPTT without independent confirmation of the compromise.
 - **Analysis:** The claim appears in the same Phantom Atlas publication as the MGPTT claim and may reflect one operation affecting multiple Algerian public institutions. No ministry-specific dataset was collected or reproduced.
+
+### 12 April 2025
+#### Morocco - Moroccan government portals (coordinated campaign)
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** Multiple Moroccan government portals
+- **Incident date:** 12 April 2025 - reported campaign date
+- **Initial publication date:** 12 April 2025
+- **Status:** Incident Corroborated - Attribution Unconfirmed
+- **Incident type:** DDoS
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** The incident affected multiple Moroccan government web portals during a coordinated service-disruption campaign.
+- **Analysis:** Multiple Moroccan government websites became unavailable during a coordinated DDoS campaign, and public reporting indicates that at least one ministry acknowledged targeting of its institutional website. Attribution to alleged pro-Algerian actors was not officially confirmed. AFRINTEL therefore records the availability impact while keeping actor attribution unknown.
+- **Source type:** Public OSINT + Government Acknowledgment
+- **Public sources:** [CSIDB incident record](https://www.csidb.net/csidb/incidents/834788ad-dc34-4335-88a4-fa62e2fb0136/)
 
 ### 13 April 2025
 #### 🇲🇷 Mauritania - BMI / SEDAD Mobile Wallet
@@ -577,6 +716,7 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** INI Investments is an Egyptian investment banking and project-finance advisory firm based in Cairo, involved in feasibility studies, financial structuring and closures for industrial and infrastructure projects.
 - **Analysis:** AFRINTEL reviewed a local sample of documents consistent with the claim made by the threat actor nightspire, including internal financial feasibility models (multi-year IRR projections ranging from 39% to 58%, capital-structure and financing-source breakdowns) for a UPVC pipe-manufacturing project, a competitor market study comparing production volumes and market share of several named Egyptian UPVC manufacturers, a project-pipeline tracker titled "Pipe line projects for Allweiler Farid Hassanein Pumps co" listing multiple client deals with project values in EGP, USD and EUR, status and bidding dates (referencing clients and projects in Egypt, Russia and Saudi Arabia), a legal study and meeting minutes, a land-assessment report for a named company's UPVC project site, and a document referencing an order extension for Hassan Allam, a major Egyptian construction and engineering group. The file metadata places the evidence between 15 and 17 April 2025; this is treated as an evidence/discovery date, not a confirmed publication date. The internal consistency of the financial models, the naming of real Egyptian industrial counterparts (Allweiler Farid Hassanein Pumps, Hassan Allam) and the coherence between the feasibility study, market study and legal documentation support a high confidence assessment of a genuine compromise of INI Investments' internal project files. The exposed material consists of confidential deal, financing and market-intelligence data rather than personal or consumer records, creating a risk of competitive intelligence exposure, business email compromise and targeted social engineering against INI Investments and its industrial clients and counterparties. AFRINTEL does not reproduce any client name, project value, financial figure or document reference from the reviewed material.
 - **Double-claim note:** The March and April records are retained separately because the source dates and evidence differ. They involve the same actor, domain and victim name, but AFRINTEL cannot determine from the available material whether the April publication is an update of the March claim or a separate claim. No merger is made pending confirmation.
+
 ### 20 April 2025
 #### 🇿🇦 South Africa - Premier Meats South Africa
 - **Ransomware Group:** devman
@@ -607,6 +747,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Impact level:** Level 4
 - **Victim Description:** Dar Al Teb is one of Egypt's most renowned medical centers, specializing in reproductive medicine, in vitro fertilization (IVF), and women's health.
 - **Analysis:** The gunra ransomware group claims the compromise of Dar Al Teb (daralteb.com) and displays data samples on its leak-site page. The samples show patient/cycle tracking tables including husband name, wife name, file number, age, two phone numbers, and IVF-specific clinical fields (fresh/frozen semen status, expected oocyte/embryo counts, referring andrologist, referring doctor, and embryology outcome codes). A broader local set includes seven monthly workbooks (December 2022, then March through August 2023) totaling approximately 2,300 rows of patient/cycle records, plus two shorter additional workbooks and an Access database (not opened). The reviewed technical material includes a WLAN profile export containing a cleartext pre-shared key, associated network commands referencing an internal file share, a PowerShell script for deploying an Active Directory forest named "DarAlteb.local", and a preconfigured RDP connection file targeting an internal host with clipboard and smart-card redirection enabled. The combination of individually identifiable clinical data samples, a multi-year patient dataset and internal network/remote-access configuration material supports a high confidence assessment of a genuine, extensive compromise extending beyond a simple leak-site claim. The nature of the observed data, both individually identifiable reproductive-health information covering several thousand patients and internal infrastructure access material, supports a Level 4 impact rating. AFRINTEL does not reproduce any patient name, phone number, file number, Wi-Fi key, IP address or other personal data or secret from the reviewed material.
+
+### April 2025 - exact compromise date not publicly disclosed
+#### Ghana - MTN Group / MTN Ghana
+- **Actor / Group:** Unknown
+- **Sector:** Telecommunications
+- **Website:** https://www.mtn.com/
+- **Incident date:** April 2025 - exact date of unauthorized access not publicly disclosed
+- **Initial publication date:** 24 April 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** MTN Group is one of Africa's largest mobile operators. Ghana was one of the affected markets publicly identified after the incident.
+- **Analysis:** MTN Group confirmed on 24 April 2025 that a cybersecurity incident resulted in unauthorized access to personal information of some customers in certain markets. The group stated that core network, billing and financial-services infrastructure remained secure and operational. MTN Ghana later indicated that initial estimates suggested data relating to about 5,700 Ghanaian customers may have been affected. AFRINTEL records Ghana as a confirmed affected market and does not infer that every MTN African market was affected.
+- **Source type:** Victim Statement + Public Reporting
+- **Public sources:** [MTN Group incident notice](https://www.mtn.com/mtn-cybersecurity-incident-but-critical-infrastructure-secure/) | [MTN Ghana reporting](https://gna.org.gh/2025/04/mtn-group-confirms-cybersecurity-incident-affecting-some-customers/)
 
 ## May 2025
 
@@ -660,7 +816,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Impact level:** Level 3
 - **Victim Description:** South African leader in the supply and distribution of Personal Protective Equipment (PPE) and safety solutions for the mining, industrial, and manufacturing sectors.
 - **Analysis:** Material dated 9-10 May 2025 is consistent with an active intrusion against Pienaar Bros' infrastructure. A server-side archive utility compresses an approximately 2.75 GB, 3,274-file archive of catalogue and pricing data (including branded PPE-glove pricelists) for upload to a cloud storage service, alongside a separately completed upload of a contracts archive. Command-line evidence shows a compromised backup-related service account being used to browse a Windows domain listing multiple named servers and workstations, and a server backup share containing a ransom-note file dated 10 May 2025. A company delivery/route sheet bearing the letterhead of a regional Pienaar Bros trading entity lists third-party business customer accounts, invoice numbers and delivery addresses. The combination of an exfiltration in progress, domain lateral-movement evidence and a ransom note deployed on internal infrastructure supports a high confidence assessment of a genuine compromise. No exposed service-account credential, business customer name, address, invoice number or other individual record is reproduced.
-
 
 ### 15 May 2025
 #### 🇲🇷 Mauritania - Banque Al-Wava Mauritanienne Islamique (BAMIS)
@@ -734,6 +889,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** South African Airways (SAA) is the national airline and the largest in South Africa, operating domestic and international flights.
 - **Analysis:** AFRINTEL reviewed a local sample of documents consistent with the claim made by the threat actor incransom, consisting of internal records from SAA Technical, the airline's aircraft maintenance, repair and overhaul (MRO) division. The material includes EASA/SACAA Part-145 regulatory documents (Maintenance Organisation Exposition, capability list, list of certifying and support staff), a Certificate of Authority for a certifying aircraft mechanic bearing a name, photo, employee and approval number and a multi-country licence scope, commercial quotations and financial records (credit authorisation sheets, debtor codes, cost analyses, component reconciliation exports referencing the AMOS maintenance-management system), and a lease agreement between Dube TradePort Corporation and Air Chefs SOC Limited, an SAA subsidiary. The documents reference multiple third-party MRO customers, including Comair, Air Namibia, Yemenia and the state defence-procurement entity Armscor. The presence of internally consistent, multi-year operational, regulatory and financial records naming specific SAA Technical systems and subsidiaries supports a high confidence assessment of a genuine internal compromise. The exposure of certifying-staff identity and licensing data, together with regulatory approval documentation and third-party client and defence-related commercial records, creates a risk of targeted phishing, aviation-safety oversight disruption and client/supply-chain impact extending beyond SAA itself. AFRINTEL does not reproduce any employee name, photograph, licence number or client financial detail from the reviewed sample.
 
+### 17 May 2025
+#### 🇿🇦 South Africa - vOffice.co.za
+- **Incident date:** 17 May 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 17 May 2025
+- **Actor / Group:** Unknown
+- **Sector:** Technology / IT
+- **Website:** voffice.co.za
+- **Status:** Reported - Secondary CTI
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** The source describes voffice.co.za as the official website of a South African technology company.
+- **Analysis:** CyHawk Africa reported on 17 May 2025 that the official `voffice.co.za` website had been defaced by an unknown threat actor. The source does not provide technical attribution, an access vector, outage duration or victim confirmation. AFRINTEL therefore records the event as a Defacement reported by a secondary CTI source, with medium confidence and without inferring a broader information-system compromise.
+- **Source type:** Public CTI Source
+- **Public sources:** [CyHawk Africa - Unknown Threat Actor Defaces South African Tech Site](https://cyhawk-africa.com/defacement/unknown-threat-actor-defaces-south-african-tech-site-voffice-co-za-breach-signals-web-vulnerabilities/)
+
 ### 19 May 2025
 #### 🇰🇪 Kenya - NSSF (National Social Security Fund) KENYA
 - **Ransomware Group:** devman
@@ -745,6 +916,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Impact level:** Level 4
 - **Victim Description:** National Social Security Fund of Kenya, the statutory body managing mandatory pension and social-security contributions for Kenyan workers. The actor demands $4.5 million USD.
 - **Analysis:** Material dated 15-18 May 2025 is consistent with genuine administrative-level access to NSSF's internal Windows environment. The material includes a ransom-note text file opened on a compromised desktop, stating that the "DevMan Cybersecurity Collective" compromised NSSF's systems at 9 PM UTC on 17 May 2025, encrypted critical systems and files, destroyed cloud and network-based backups, and exfiltrated sensitive data including employee personal records, client financial information and pension details; the note references Kenya's Data Protection Act, 2019 and threatens regulatory fines and client lawsuits. Separate material shows Windows Server Manager sessions for at least two domain-joined production servers (a mail/web-facing host and a large-capacity document-management host, both joined to an NSSF domain), dated 15 and 16 May 2025, and a file-explorer view listing drives consistent with an Exchange mail database and virtualization infrastructure, dated 17 May 2025. Additional reviewed material consists of dozens of scanned physical pension-benefit payment forms bearing the NSSF Board of Trustees letterhead, member and employer reference numbers, and payment amounts. The combination of a detailed ransom note matching the actor's typical playbook, evidence of genuine domain-level server access across multiple production systems, and scanned archival pension records supports a very high confidence assessment of a large-scale compromise affecting critical national social-security infrastructure. The full claimed volume of 2.5 TB and the $4.5 million ransom demand are not independently verified beyond what is stated in the actor's own material; no employee or member name, account or reference number, credential, or other individual record is reproduced.
+
+### 19 May 2025
+#### Ivory Coast - igp.ci
+- **Actor / Group:** Team 1722 (claim)
+- **Sector:** Not specified
+- **Website:** https://igp.ci/
+- **Incident date:** 19 May 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 19 May 2025
+- **Status:** Claim - Secondary OSINT Evidence
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** The affected asset is the Ivorian domain igp.ci. The exact organizational scope was not established in the reviewed material.
+- **Analysis:** A secondary CTI report states that the igp.ci website was defaced with propaganda content and Telegram references attributed to Team 1722. No official confirmation was identified in the supplied audit. AFRINTEL therefore records the event with medium confidence and keeps Team 1722 as a claim rather than a technical attribution.
+- **Source type:** Secondary CTI
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/defacement/hacktivist-group-deface-one-website-in-cote-divoire/)
 
 ### 20 May 2025
 #### 🇧🇼 Botswana - Medswana
@@ -767,6 +954,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Victim Description:** Setif 1 University - Ferhat Abbas is an Algerian public higher-education institution.
 - **Analysis:** The actor Phantom Atlas claims an intrusion into the university's website and announces the upcoming publication of files described as important, for a claimed volume of 3.5 GB. No sample or technical evidence accompanies the post; AFRINTEL did not collect or analyze any underlying data and therefore cannot confirm the compromise.
+
+### 20 May 2025
+#### Tanzania - Tanzania Police Force / Tanzania Revenue Authority official social-media accounts
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** Official X and YouTube accounts
+- **Incident date:** 19-20 May 2025 - reported window for compromise of the official accounts
+- **Initial publication date:** 20 May 2025
+- **Status:** Government / Institution Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised official social-media accounts / disinformation
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Institutional Confirmation + Public Media
+- **Analysis:** The Tanzania Police Force confirmed that its official X account had been hacked and used to spread false information. The Tanzania Revenue Authority's YouTube channel was also reported and publicly acknowledged as compromised. AFRINTEL keeps the scope to the confirmed public accounts and does not infer compromise of central national cyber infrastructure.
+- **Sources:** [The Citizen - Police X account compromise](https://www.thecitizen.co.tz/tanzania/news/national/police-launch-hunt-after-official-x-account-hacked-warns-public-against-sharing-fake-news-5049060) | [The Citizen - Police and TRA account compromises](https://www.thecitizen.co.tz/tanzania/news/national/hackers-target-tanzanian-government-institutions-spread-falsehoods-5049088)
 
 ### 21 May 2025
 #### 🇿🇦 South Africa - Anglo American plc
@@ -810,6 +1013,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** FrontierCo is a major player in South African distribution. The company holds exclusive distribution licenses and sales rights for several renowned international brands (clothing, footwear, and accessories) through a wide network of physical stores and e-commerce platforms.
 - **Analysis:** AFRINTEL reviewed structured customer-data exports and network-reconnaissance evidence associated with this claim. Six CSV files, matching a Microsoft Dynamics 365 Business Central "Customer" table schema (fields including company/contact name, address, city, phone, mobile phone, email, VAT registration number, credit limit, payment terms and related commercial metadata), together total approximately 120,000 customer records. A separate file consistent with a further database export (roughly 99 MB uncompressed) was also present but not opened by AFRINTEL. A network-reconnaissance log shows an SMB enumeration sweep against 256 internal targets on an internal /24 range, in which a Windows "Administrator" credential (not reproduced) is shown successfully authenticating against more than a dozen servers, including hosts named consistently with a SQL database server, two backup/Veeam servers, an HR-related server, a UAT server and multiple Hyper-V hosts, alongside failed attempts against other hosts. This indicates domain-wide administrative access achieved through credential reuse rather than a single-system compromise. The combination of a large, structurally consistent customer-database export and demonstrated domain-wide lateral movement with a working administrator credential supports a very high confidence assessment of a genuine, extensive compromise of FrontierCo's IT environment. Given the scale of exposed customer records (contact details, VAT numbers, commercial terms) combined with confirmed domain administrator-level access spanning database, backup and HR-related infrastructure, the potential impact includes large-scale business-customer fraud, targeted phishing and further compromise of backup and financial systems. AFRINTEL does not reproduce any customer name, contact detail, VAT number, credential hash or IP-to-hostname mapping from the reviewed material.
 
+### 27 May 2025
+#### South Africa - Eastern Platinum Limited (Eastplats)
+- **Actor / Group:** Unknown
+- **Sector:** Mining
+- **Website:** https://www.eastplats.com/
+- **Incident date:** 27 May 2025 - detection date confirmed by Eastplats
+- **Initial publication date:** 16 June 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Victim Description:** Eastern Platinum Limited owns and operates platinum-group-metal and chrome assets in South Africa.
+- **Analysis:** Eastplats announced that it detected a cybersecurity incident on 27 May 2025 affecting internal IT systems. The company confirmed that some files relating to its internal affairs had been disclosed without authorization by third parties on a restricted part of the Internet. Business operations continued. No attacker or initial-access vector was publicly identified. AFRINTEL records the confirmed internal-system compromise and unauthorized file disclosure without inferring ransomware.
+- **Source type:** Victim / Regulatory Disclosure
+- **Public sources:** [Eastplats - official cybersecurity incident release](https://www.eastplats.com/investors/news-releases/2025/eastern-platinum-limited-announces-cybersecurity-incident/) | [JSE SENS filing](https://senspdf.jse.co.za/documents/SENS_20250617_S506288.pdf)
+
 ### 31 May 2025
 #### 🇨🇲 Cameroon - ASCOMA Cameroon
 - **Ransomware Group:** worldleaks
@@ -831,6 +1050,24 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Data Fully Published
 - **Victim Description:** Netmaster is a leading digital service provider in Togo. It acts as the registrar for the national .tg domain and provides web hosting, professional email, and SSL certificate solutions to many Togolese companies and institutions.
 - **Analysis:** AFRINTEL reviewed the DarkForums listing and the referenced database export, which corresponds to a full WHMCS billing and hosting-management database, including client, billing, invoicing, hosting, domain, support-ticket, administrator and payment-gateway tables. Alongside the database, a companion file lists EPP transfer codes for several hundred `.tg` domains, consistent with Netmaster's role as registrar for Togo's national domain; exposure of these codes creates a risk of unauthorized domain transfers affecting Togolese businesses and institutions relying on Netmaster, in addition to the billing and support data covering Netmaster's own customer base. The reviewed export's structure and scale are consistent with the claim made by the threat actor cache of a full database leak. AFRINTEL does not reproduce any client records, invoices, credentials or EPP codes from the reviewed material.
+
+---
+
+### May 2025 - exact attempt date not publicly disclosed
+#### Nigeria - PremiumTrust Bank
+- **Actor / Group:** Criminal syndicate - identities not attributed
+- **Sector:** Finance / Banking
+- **Website:** https://premiumtrustbank.com/
+- **Incident date:** April-May 2025 - period cited by the EFCC; exact attempt date not publicly disclosed
+- **Initial publication date:** 21 May 2025 - EFCC/public reporting; victim statement followed on 22 May
+- **Status:** Attempted - Blocked
+- **Incident type:** System Intrusion
+- **Subtype:** Attempted unauthorized database / infrastructure access
+- **Confidence level:** Very High
+- **Impact level:** Level 2
+- **Source type:** Victim Statement + Law-Enforcement Follow-up
+- **Analysis:** PremiumTrust Bank stated that an attempt to gain unauthorized access to its database and infrastructure was detected and neutralized. The matter was referred to law enforcement and suspects were arrested and prosecuted. The bank stated that customer data was not compromised. AFRINTEL therefore tracks this as a confirmed attempted attack, not as a successful breach or Data Leak.
+- **Sources:** [Source](https://www.thisdaylive.com/2025/05/22/premiumtrust-bank-reassures-customers-our-security-architecture-remains-resilient-2/)
 
 ## June 2025
 
@@ -1037,16 +1274,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** INWI is one of the three main telecommunications operators in Morocco, providing mobile, fixed-line, and internet services (ADSL/Fiber). The actor published a sample of sensitive data including PII (name, national ID), contact information and password hashes (bcrypt).
 
-### 26 June 2025
-#### 🇩🇿 Algeria - Ministry of Transportation
-- **Incident type:** Data Leak
-- **Actor / Group:** KickingPigs
-- **Sector:** Government / Transportation
-- **Website:** Not specified
-- **Status:** Claim - Data Sample Published
-- **Victim Description:** Algeria's Ministry of Transportation is the public administration responsible for national transportation policy and related administrative services.
-- **Analysis:** A forum publication dated 26 June 2025, attributed to KickingPigs, presents an alleged leak from the Algerian Ministry of Transportation. The post lists vehicle-registration and transport-administration records, including names, national identification numbers, parent names, company registration numbers, vehicle and registration details, driving-licence documents and internal Excel files. The visible sample contains structured vehicle records and sensitive personal-data fields; AFRINTEL does not reproduce the records or identifiers. The authenticity, completeness and technical origin of the dataset could not be independently confirmed.
-
 ### 20 June 2025
 #### 🇹🇳 Tunisia - Ministry of National Defense / Armed Forces
 - **Incident type:** Data Leak
@@ -1056,6 +1283,16 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** The Tunisian Ministry of National Defense is the government administration responsible for national defense and the armed forces.
 - **Analysis:** A publication dated 20 June 2025, attributed to mrdump, claims successful access to several systems belonging to Tunisia's Ministry of National Defense, specifically its Armed Forces division. The publication alleges that an underground weapons depot was discovered at Mount Chaambi in Kasserine Governorate and refers to thermal imagery, engineering plans and information concerning stored weapons and ammunition. An associated ZIP archive was provided to AFRINTEL; a non-content structural review identified 10 archive members (six PNG images, one XLSX workbook, one PDF and one JPG), approximately 6.2 MB compressed and 6.3 MB uncompressed. AFRINTEL did not open or reproduce the files because the material is presented as military and potentially operationally sensitive. The archive structure does not independently establish the authenticity, provenance, classification or completeness of the material, and the claimed access remains unverified.
+
+### 26 June 2025
+#### 🇩🇿 Algeria - Ministry of Transportation
+- **Incident type:** Data Leak
+- **Actor / Group:** KickingPigs
+- **Sector:** Government / Transportation
+- **Website:** Not specified
+- **Status:** Claim - Data Sample Published
+- **Victim Description:** Algeria's Ministry of Transportation is the public administration responsible for national transportation policy and related administrative services.
+- **Analysis:** A forum publication dated 26 June 2025, attributed to KickingPigs, presents an alleged leak from the Algerian Ministry of Transportation. The post lists vehicle-registration and transport-administration records, including names, national identification numbers, parent names, company registration numbers, vehicle and registration details, driving-licence documents and internal Excel files. The visible sample contains structured vehicle records and sensitive personal-data fields; AFRINTEL does not reproduce the records or identifiers. The authenticity, completeness and technical origin of the dataset could not be independently confirmed.
 
 ### 29 June 2025
 #### 🇩🇯 Djibouti - Embassy of Djibouti in Morocco
@@ -1123,6 +1360,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 
   The data is published for free by the actor. No asking price or ransom demand is visible. The forum publication directly exposes database records and the analysed file confirms the presence of structured data. The incident therefore involves actual data publication rather than a claim without supporting material. AFRINTEL does not reproduce any company names, contact names or contact details from the reviewed sample.
 
+### 10 July 2025
+#### Tunisia - University network / Centre Al-Khwarizmi
+- **Actor / Group:** Unknown
+- **Sector:** Education / University
+- **Website:** University network / Centre Al-Khwarizmi
+- **Incident date:** No later than 10 July 2025 - exact start date not publicly disclosed
+- **Initial publication date:** 10 July 2025
+- **Status:** Attempted - Outcome Unknown
+- **Incident type:** System Intrusion
+- **Subtype:** Attempted attack against university-network infrastructure
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Source type:** Institutional Statement + Public Media
+- **Analysis:** The Centre Al-Khwarizmi and Tunisian authorities reported an attempted cyberattack targeting university-network infrastructure and data. The available source does not confirm a successful data leak. AFRINTEL therefore tracks the attempt separately from the six successful/core incident types.
+- **Sources:** [Source](https://www.tunisienumerique.com/cyberattaque-ciblant-les-universites-tunisiennes-mesures-durgence-et-renforcement-de-la-securite/)
+
 ### 13 July 2025
 #### 🇹🇿 Tanzania - Twaweza
 - **Ransomware Group:** nightspire
@@ -1166,6 +1419,7 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Kenya's ICT Authority is a public-sector technology institution responsible for coordinating and supporting government information and communication technology infrastructure and services.
 - **Analysis:** AFRINTEL reviewed the supplied CSV export without reproducing personal data. The file contains 1,697 data rows and fields for display name, phone, email, identifier, mobile contact, name, address-related fields, user references and website links. The structure is consistent with an organisational contact or directory export containing ICT Authority personnel, public-sector contacts and associated technology-service records. The file metadata places the evidence on 14 July 2025; this is treated as an evidence/discovery date, not a confirmed publication or intrusion date. The available material does not identify the threat actor, publication venue, access method or complete dataset scope. The exposed contact and organisational information could support targeted phishing, impersonation and social engineering against Kenyan public-sector and technology stakeholders. AFRINTEL records this as a data-leak claim with a published sample and does not reproduce names, phone numbers, email addresses, identifiers or addresses.
+
 ### 15 July 2025
 #### 🇰🇪 Kenya - Adrian Kenya
 - **Ransomware Group:** lynx
@@ -1220,6 +1474,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Website:** https://um6p.ma
 - **Status:** Claim - Unverified
 - **Victim Description:** An excellence institution (University) based in Benguerir, a strategic hub for research, innovation, and executive training in Morocco. The actor claims a targeted data leak and influence operation, publishing student ID photos accompanied by a political message; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
+
+### 22 July 2025
+#### South Africa - National Treasury - Infrastructure Reporting Model (IRM) website
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://www.treasury.gov.za/
+- **Incident date:** 22 July 2025 - malware detection date stated by National Treasury
+- **Initial publication date:** 23 July 2025
+- **Status:** Government Confirmed
+- **Incident type:** Malware
+- **Subtype:** Malware intrusion on public-facing reporting system
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Government Statement
+- **Analysis:** South Africa's National Treasury identified malware on the Infrastructure Reporting Model website and isolated the affected servers. Other Treasury systems continued operating normally and no data exfiltration was confirmed. AFRINTEL preserves the confirmed malware intrusion as a supplementary observation because Malware is not one of the six core incident types.
+- **Sources:** [South African National Treasury - official statement](https://www.treasury.gov.za/comm_media/press/2025/2020072301%20Media%20Statement%20-%20Malware%20Intrusion%20on%20National%20Treasury%E2%80%99s%20Infrastructure%20Reporting%20Model%20Website%20.pdf)
 
 ### 25 July 2025
 #### 🇹🇳 Tunisia - Ministry of Finance (finances.gov.tn)
@@ -1285,6 +1555,7 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Historic and systemic banking institution in Tunisia (Banque de l'Habitat), a pillar of real estate financing and the national economy.
 - **Analysis:** The actor's forum post, published under the handle Jokeir07x as part of the "Dark Hell 07X" collaboration with Dr. SHell 08x (also behind the BTK Bank claim), states that the group gained full control of the website's infrastructure, emptied and analysed all databases, and confirmed compromise of both back-end and front-end access points; the post separately advertises a list of 200 "Yankee" accounts for sale for 100 USDT. Accompanying material shows live, authenticated online-banking sessions for at least two distinct customer accounts, including a corporate "BH Capital Plus" account, with visible balances, plus a bank-card transaction history including a withdrawal record. No account numbers, card numbers, customer identities or balances are reproduced from the reviewed sample.
+
 ### 29 July 2025
 #### 🇲🇦 Morocco - Ministry of National Education, Preschool and Sports
 - **Incident type:** Data Leak
@@ -1323,6 +1594,40 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 [July 2025 Report](./report/README.md)
 ---
 
+### 31 July 2025
+#### Tunisia - Le Groupement Pharmaceutique (LGP)
+- **Actor / Group:** Jokeir 07x / Dr Shell 08x (claim)
+- **Sector:** Healthcare / Medical
+- **Website:** Not independently confirmed
+- **Incident date:** 31 July 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 31 July 2025
+- **Status:** Claim - Secondary Evidence / Screenshots
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** Le Groupement Pharmaceutique was identified in a secondary CTI report concerning alleged exposure of internal-portal access.
+- **Analysis:** Credentials and screenshots allegedly providing access to an internal portal were published, potentially exposing commercial information, references, prices, margins and suppliers. No victim confirmation was identified in the supplied audit. AFRINTEL records the case with medium confidence and does not reproduce credentials or sensitive values.
+- **Source type:** Secondary CTI
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/compromised-credentials/tunisian-pharmaceutical-group-breached-internal-portal-access-shared-publicly/)
+
+### July 2025 - exact incident date not publicly disclosed
+#### Seychelles - Seychelles Commercial Bank
+- **Actor / Group:** Unknown
+- **Sector:** Finance / Banking
+- **Website:** Seychelles Commercial Bank
+- **Incident date:** July 2025 - exact incident date not publicly disclosed
+- **Initial publication date:** 29 July 2025
+- **Status:** Bank + Central Bank Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** Seychelles Commercial Bank is a banking institution serving customers in Seychelles.
+- **Analysis:** The bank reported that it had identified and contained a cyber incident in which some personal information of Internet-banking customers was exposed. No customer funds were reported compromised. Because the public notice did not provide a precise incident date, AFRINTEL places the event in July without inventing a specific compromise day.
+- **Source type:** Bank / Central Bank Confirmation via Public Reporting
+- **Public sources:** [Security Affairs](https://securityaffairs.com/180513/data-breach/seychelles-commercial-bank-reported-cybersecurity-incident.html)
+
+---
+
 ## August 2025
 
 ### 06 August 2025
@@ -1356,6 +1661,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Data Fully Published
 - **Victim Description:** Moroccan company specializing in telecom engineering, network infrastructure installation, and ERP/CRM solutions. The actor published a 607 MB SQL dump containing over 476,000 records.
 
+### 08 August 2025
+#### Egypt - Multiple government and institutional portals
+- **Actor / Group:** Hider_Nex / Keymous Plus (claim)
+- **Sector:** Government / Administration
+- **Website:** Multiple Egyptian government and institutional portals
+- **Incident date:** 8 August 2025 - reported DDoS campaign date
+- **Initial publication date:** 8 August 2025
+- **Status:** Claim - OSINT Availability Evidence
+- **Incident type:** DDoS
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** The reported campaign targeted multiple Egyptian government and institutional web services.
+- **Analysis:** A DDoS campaign was claimed against several Egyptian government and institutional services, with service unavailability reported. The attribution remains self-claimed and independent validation for every target was not available in the supplied audit. AFRINTEL records the campaign as one incident with explicit caveats.
+- **Source type:** Secondary CTI + Availability Evidence
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/ddos/multiple-egyptian-government-and-institutional-websites-allegedly-attacked-by-hacktivist-group/)
+
 ### 09 August 2025
 #### 🇳🇬 Nigeria - Zenith Bank Plc
 - **Actor / Group:** KaruHunters
@@ -1366,7 +1687,17 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** One of the largest financial institutions in Nigeria and Anglophone Africa, listed on the Nigerian and London Stock Exchanges. The actor claims exfiltration and sale of over 1.8 million customer records, together with employee data. AFRINTEL reviewed a local CSV sample containing 18 data rows and eight columns covering index, code, identifier, name, amount, address, telephone and email fields. No raw values are reproduced.
-- **Correlation note:** The same organization and domain were listed again on 26 July 2026 by ExfilSquad in a ransomware claim. This establishes an identity and temporal correlation, not a confirmed connection between the two events. The 2025 record concerns an alleged sale of 1.8 million records with a reviewed 18-row sample; the 2026 record provides no sample, volume, encryption evidence or victim confirmation. No matching archive, data schema, shared infrastructure or explicit reference links the claims. AFRINTEL therefore tracks them as related records / possible separate claims, with the relationship unresolved.
+
+### 11 August 2025
+#### 🇿🇦 South Africa - Body Graphics Tattoo Supply
+- **Incident type:** Data Leak
+- **Actor / Group:** N1KA
+- **Sector:** Retail / E-commerce
+- **Website:** bodygraphicstattoosupply.co.za
+- **Source publication date:** 11 August 2025
+- **Status:** Data Fully Published
+- **Victim Description:** Major online retailer based in Johannesburg, specializing in the supply of professional tattoo equipment and aftercare products in South Africa.
+- **Analysis:** AFRINTEL reviewed two structured export files referenced in a post observed on DarkForums, together totaling 6,501 records, matching the volume claimed by the actor. The dataset corresponds to a WordPress/WooCommerce customer and administrator export, including login names, email addresses, hashed passwords (phpass format), physical addresses, phone numbers, IP addresses, browser user-agent strings and session tokens. The structural consistency between the claimed volume and the reviewed files, together with fields matching the victim's e-commerce platform, supports a high confidence assessment, and the publication identifies the source account as N1KA. AFRINTEL does not reproduce any customer names, contact details, addresses or credentials from the reviewed sample.
 
 ### 13 August 2025
 #### 🇩🇿 Algeria - Cevital
@@ -1394,17 +1725,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Ugandan public company responsible for electricity transmission.
-
-### 11 August 2025
-#### 🇿🇦 South Africa - Body Graphics Tattoo Supply
-- **Incident type:** Data Leak
-- **Actor / Group:** N1KA
-- **Sector:** Retail / E-commerce
-- **Website:** bodygraphicstattoosupply.co.za
-- **Source publication date:** 11 August 2025
-- **Status:** Data Fully Published
-- **Victim Description:** Major online retailer based in Johannesburg, specializing in the supply of professional tattoo equipment and aftercare products in South Africa.
-- **Analysis:** AFRINTEL reviewed two structured export files referenced in a post observed on DarkForums, together totaling 6,501 records, matching the volume claimed by the actor. The dataset corresponds to a WordPress/WooCommerce customer and administrator export, including login names, email addresses, hashed passwords (phpass format), physical addresses, phone numbers, IP addresses, browser user-agent strings and session tokens. The structural consistency between the claimed volume and the reviewed files, together with fields matching the victim's e-commerce platform, supports a high confidence assessment, and the publication identifies the source account as N1KA. AFRINTEL does not reproduce any customer names, contact details, addresses or credentials from the reviewed sample.
 
 ### 18 August 2025
 #### 🇹🇳 Tunisia - International Freight & Commerce
@@ -1456,6 +1776,38 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 ---
 [August 2025 report](./report/README.md)
 
+### 27 August 2025
+#### Morocco - Multiple Moroccan websites (OurSec campaign)
+- **Actor / Group:** OurSec (claim)
+- **Sector:** Not specified
+- **Website:** Multiple Moroccan websites
+- **Incident date:** 27 August 2025 - reported campaign date; secondary publication on 31 August
+- **Initial publication date:** 31 August 2025
+- **Status:** Claim - OSINT Corroborated
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** The reported campaign involved multiple Moroccan websites allegedly defaced in a coordinated hacktivist action.
+- **Analysis:** OurSec claimed the defacement of multiple Moroccan websites. Defacement messages/images and archive references were reported, but the supplied audit recommends validating each affected domain and timestamp independently. AFRINTEL therefore records the campaign with medium confidence and retains the actor as a claim.
+- **Source type:** Secondary CTI + Archive References
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/ddos/oursec-claims-responsibility-for-moroccan-website-defacements/)
+
+### 30 August 2025
+#### Egypt - cg.eg; gags.gov.eg; kayani.gov.eg; shmft.gov.eg
+- **Actor / Group:** BIGBROTHER (claimed seller)
+- **Sector:** Government / Administration
+- **Website:** cg.eg / gags.gov.eg / kayani.gov.eg / shmft.gov.eg
+- **Incident date:** 30 August 2025 - reported date of the access-sale publication
+- **Initial publication date:** 30 August 2025
+- **Status:** Claim - Marketplace Listing / Screenshots
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** Unauthorized access to four Egyptian government-related domains was advertised for sale.
+- **Analysis:** An actor advertised unauthorized access to four government-related domains for sale, with screenshots referenced in the secondary report. The validity of the access was not independently confirmed. The record is not merged with the separate January ransomware record concerning gags.gov.eg because the evidence describes a distinct access-sale publication at a different time.
+- **Source type:** Secondary CTI + Marketplace Screenshots
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/initial-access/alleged-sale-of-access-to-four-egyptian-government-sites/)
+
 ## September 2025
 
 ### 02 September 2025
@@ -1466,6 +1818,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Website:** university-dz.net
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Université des Frères Mentouri Constantine 1 (UMC1) is a major Algerian public university. The claiming actor states an exfiltration of over 10 GB, a volume AFRINTEL did not collect or analyze. The reviewed files, exfiltrated via what appears to be a shared academic web platform (university-dz.net), include Master 2 semester 1 (January 2025) exam schedules with dates, modules, rooms and departments; a set of over 200 detailed student records (full name, university enrollment number, TD group and per-subject grades, including exclusion/pass status annotations) from L1 students (2015-2016 cohort); a vehicle compliance directory with phone numbers and emails; and a conference template listing contacts and affiliations for a 2024 academic event (NCME). The combination of academic records, personal contact details and administrative documents creates a significant risk of identity fraud, targeted phishing and vishing against students, staff and affiliated contacts. The claiming actor identifies itself as "Fire Wire".
+
+### 03 September 2025
+#### Morocco - Government portals + Maroc Telecom (campaign)
+- **Actor / Group:** Keymous (claim)
+- **Sector:** Government / Administration
+- **Website:** Multiple government portals / Maroc Telecom
+- **Incident date:** 3 September 2025 - reported campaign date; secondary publication on 10 September
+- **Initial publication date:** 10 September 2025
+- **Status:** Claim - OSINT Availability Evidence
+- **Incident type:** DDoS
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** The reported campaign affected Moroccan government portals and telecommunications services, including references to Maroc Telecom.
+- **Analysis:** Multiple Moroccan government portals and telecommunications services were reportedly disrupted during a claimed DDoS campaign, including HTTP 522-525 errors and timeouts. Attribution is self-claimed and the exact target scope remains incompletely validated. AFRINTEL records one campaign incident with medium confidence.
+- **Source type:** Secondary CTI + Availability Evidence
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/ddos/multiple-government-websites-reportedly-disrupted-in-retaliatory-cyber-campaign/)
 
 ### 04 September 2025
 #### 🇳🇬 Nigeria - MobileSub
@@ -1551,7 +1919,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** Financial institution based in Windhoek, offering wealth management, investment advice, and brokerage services in Namibia.
 - **Analysis:** Exfiltrated mailbox material attributed to the claim (email correspondence sent to and from EPIA's reception and administration mailboxes with Bank Windhoek/Capricorn Group, First National Bank of Namibia and NamPost regarding client account verifications) is examined, together with the structure of a representative sample of pension fund administration files at the field/column level, without opening or extracting individual member-level rows. The reviewed material corresponds to EPIA's role as administrator for the Namibia Building Workers Pension Fund (NBWPF) and other corporate clients. Membership data workbooks (e.g. a January 2025 extract) contain multiple sheets of several thousand member records each (Actives, Deferred, Unclaimed, Exits) sharing a consistent field schema: member number, surname, first name, other names, company reference, date of birth, national ID number, passport number, contributor status, member status, employer name, gender, employment and fund-membership dates, monthly and annual salary, fund credit amount and date, last contribution date, exit date and payment details. A separate actuarial data extract covers the period September 2022 to April 2024 with a comparable schema and scale. Additional files inspected structurally include multi-year admin and income-allocation reports (aggregate financial transaction summaries per period) and signed client authorization forms, the most recent dated June 2025. AFRINTEL did not open every file in the set; the consistent file-naming pattern and email correspondence indicate the same categories of records recur across the full 2022-2025 period. The combination of national identification numbers, dates of birth, salary and pension fund-credit data for several thousand individuals, together with employer and banking correspondence, represents a high-impact exposure. The breadth, continuity through mid-2025 and organisational specificity of the reviewed material support a high confidence assessment of mailbox and file compromise, independent of the ransomware group's public claim. The local evidence set contains 73 files totaling approximately 79.8 MB, including spreadsheets, reports, presentations, a DOCX employer file and image files. The January 2025 membership workbook contains a summary sheet and member-state worksheets (Actives, Deferred, Unclaimed and Exits), with worksheet dimensions reaching 8,652 summary rows and up to 35 columns; the reviewed field structure includes member, employer, identity, employment, salary, pension-credit, contribution, exit and payment fields. The actuarial extract contains 8,168 rows and 167 columns for a period extending from September 2022 to April 2024. Material timestamped 11 September 2025 is consistent with the September discovery context. No member names, identification numbers, account details, signatures, salary figures or correspondence content are reproduced from the reviewed sample.
 
-
 ### 11 September 2025
 #### 🇦🇴 Angola - Angola Government Employees Database (pape.gov.ao)
 - **Incident type:** Data Leak
@@ -1561,6 +1928,7 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** The source presents pape.gov.ao as an Angolan government-related platform and claims to offer employee records from different sectors and administrative areas.
 - **Analysis:** The publication dated 11 September 2025 claims a database of 245 Angolan government employees and lists fields for employee identifiers, names, dates of birth, administrative area and function. The local TXT file supplied for review contains 244 non-empty comma-separated lines, including one header and approximately 243 data rows, with six fields per row. This supports the existence of a structured employee-data sample but does not independently confirm the advertised total, the exact government body, the dataset's authenticity or its completeness. AFRINTEL does not reproduce any names, identifiers, dates of birth or other personal data from the file.
+
 ### 12 September 2025
 #### 🇨🇩 Congo (DRC) - Public Administration Reform Fund (FRAP)
 - **Incident type:** Data Leak
@@ -1679,7 +2047,6 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 - **Analysis:** AFRINTEL reviewed a local sample of multi-sheet spreadsheet exports consistent with the claim made by the threat actor medusa, each watermarked with the group's Tor leak-site address. The reviewed material includes a general accounting ledger (bank and journal entries dated 2020-2021), warehouse and logistics workbooks covering goods reception, dispatch, stock-preparation and internal-transfer movements for major appliance brands (referencing BSH/Bosch-Siemens product lines) tied to named internal staff handling the operations, and a client accounts-receivable ageing report listing several dozen named corporate clients across multiple Moroccan cities (Casablanca, Agadir, Tanger, Marrakech, Fès, Settat and others), including well-known national and multinational accounts (among them Procter & Gamble-affiliated entities, Savola Maroc, Centrale Laitière, Ciment du Maroc, BSH Electroménager and Ecolab), together with named client contacts, phone numbers, outstanding balances, payment terms and collections/dispute status. The internal consistency of the data across accounting, warehouse and commercial modules, the presence of real, identifiable Moroccan and multinational client accounts, and the multi-year date range (2020-2023) spanning multiple branches support a very high confidence assessment of a genuine, broad compromise of La Voie Express's internal ERP and accounting systems. Given the scale of the exposed accounts-receivable and banking-ledger data and its extension into the client base of a major national logistics provider, this incident creates a material risk of invoice fraud, business email compromise and targeted social engineering against La Voie Express and its corporate clients, beyond the company's own operational exposure. AFRINTEL does not reproduce any client name, contact name, phone number, financial figure or staff identifier from the reviewed material.
 
-
 ### 15 October 2025
 #### 🇰🇪 Kenya - Turnkey Africa
 - **Ransomware Group:** qilin
@@ -1741,6 +2108,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Incident type:** Ransomware
 - **Victim Description:** Egyptian financial institution specializing in leasing and factoring, a subsidiary of the National Bank of Egypt.
 
+### 20 October 2025
+#### South Africa - Companies and Intellectual Property Commission (CIPC) eServices
+- **Actor / Group:** fuckoverflow (claimed seller)
+- **Sector:** Government / Administration
+- **Website:** https://www.cipc.co.za/
+- **Incident date:** 20 October 2025 - reported date of the access-sale publication
+- **Initial publication date:** 20 October 2025
+- **Status:** Claim - Unverified Marketplace Listing
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** The Companies and Intellectual Property Commission operates South Africa's corporate-registration and intellectual-property services.
+- **Analysis:** An actor advertised allegedly compromised CIPC eServices accounts for sale, potentially enabling record modification and data collection. CIPC did not confirm the validity of the allegedly compromised accounts in the supplied audit. AFRINTEL records the marketplace claim with medium confidence and does not treat successful access as independently confirmed.
+- **Source type:** Secondary CTI + Marketplace Claim
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/compromised-credentials/threat-actor-advertises-alleged-compromised-cipc-eservices-accounts-on-a-dark-web-forum/)
+
 ### 23 October 2025
 #### 🇲🇦 Morocco - STAR LÉGUMES
 - **Ransomware Group:** tengu
@@ -1792,6 +2175,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tunisia, specializing in financing for businesses and individuals. During this intrusion, 100 GB of data were exfiltrated by the incransom group.
 
+### 28 October 2025
+#### 🇰🇪 Kenya - M-TIBA / CarePay
+- **Incident date:** October 2025 - exact compromise date not established in the selected public sources
+- **Initial publication date:** 28 October 2025
+- **Actor / Group:** Kazu (claim)
+- **Sector:** Healthcare / Health Technology
+- **Website:** https://www.mtiba.com/
+- **Status:** Corroborated - Data Sample Independently Reviewed + Regulator Investigation
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** M-TIBA is a health-technology platform operated by CarePay in Kenya and used to support healthcare services, programmes and payments.
+- **Analysis:** On 28 October 2025, TechCabal reported a claim by the Kazu group involving unauthorized access to M-TIBA servers. Kazu claimed more than 17 million files and about 2.15 TB of data, but AFRINTEL does not treat those aggregate volumes as independently confirmed. TechCabal states that it reviewed a 2 GB sample containing data attributed to about 114,000 people, including identities, national identification numbers, dates of birth, phone contacts and, in some cases, medical diagnoses and billing information. On 29 October 2025, Kenya's Office of the Data Protection Commissioner (ODPC) announced an investigation to establish the nature and scope of the possible breach. CarePay had not confirmed the leak in the initial article and requested material to support its own investigation. AFRINTEL therefore records a Data Leak based on the independently reviewed sample and regulator investigation, while retaining Kazu's overall volume claims as unverified.
+- **Source type:** Independent Media Sample Review + Regulator Investigation
+- **Public sources:** [TechCabal - Safaricom-backed M-Tiba hit by massive data breach exposing patient records](https://techcabal.com/2025/10/28/safaricom-backed-m-tiba-hacked-exposing-4-8-patient-records/) | [The Star - ODPC probes possible M-Tiba data breach](https://www.the-star.co.ke/news/2025-10-29-odpc-probes-possible-m-tiba-data-breach)
+
 ### 31 October 2025
 #### 🇩🇿 Algeria - TMF Logistics
 - **Ransomware Group:** incransom
@@ -1841,6 +2240,7 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Wannabees appears to be a South African recruitment and temporary-employment platform, based on the structure and content of the reviewed applicant database.
 - **Analysis:** AFRINTEL reviewed two identical files from the provided evidence set (DB.txt and HoJmS, matching by SHA-256), containing a five-record applicant export. The schema includes applicant identifiers, national identity numbers, names, addresses, phone numbers, email fields, dates of birth, nationality, employment history, current occupation, salary expectations and remuneration-related fields, alongside a password field. The sample is structurally consistent with a recruitment or staffing database and contains highly sensitive personal and employment information. The files are dated 4 November 2025 in the evidence directory; this is treated as the discovery/evidence date, not as a confirmed publication or intrusion date. The available material does not identify a threat actor, forum, access method or complete dataset volume. AFRINTEL records the case as a data-leak claim with a published sample and does not reproduce names, identity numbers, contact details, passwords or other raw personal data.
+
 ### 05 November 2025
 #### 🇨🇮 Ivory Coast - Anka (Anka.africa)
 - **Actor / Group:** Spirigatito
@@ -1925,6 +2325,22 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Samcrete Holding is a fully integrated engineering, contracting, development, manufacturing, and investment company established in 1963.
+
+### 17 November 2025
+#### Kenya - Multiple Government of Kenya websites
+- **Actor / Group:** PCP@Kenya (preliminary government attribution)
+- **Sector:** Government / Administration
+- **Website:** Multiple government domains
+- **Incident date:** 17 November 2025 - incident date publicly confirmed by Kenyan authorities
+- **Initial publication date:** 17 November 2025
+- **Status:** Government Confirmed + Preliminary Actor Attribution
+- **Incident type:** Defacement
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** The incident affected multiple Kenyan government websites across ministries, State House and public agencies.
+- **Analysis:** Kenyan officials confirmed that on 17 November 2025 a cybersecurity incident made several government websites temporarily unavailable, and contemporary reporting documented defacement messages on multiple ministries and agencies. Initial investigations pointed to a group presenting itself as PCP@Kenya. AFRINTEL records one coordinated multi-agency Defacement incident, keeps PCP@Kenya as preliminary attribution, and does not infer data theft.
+- **Source type:** Government Confirmation + Public Media
+- **Public sources:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
 
 ### 25 November 2025
 #### 🇪🇬 Egypt - LAMAICA, Egypt
@@ -2140,3 +2556,4 @@ The records below are consolidated from the AFRINTEL monthly files for 2025. Str
 ---
 
 *AFRINTEL compilation - source of truth: monthly files.*
+

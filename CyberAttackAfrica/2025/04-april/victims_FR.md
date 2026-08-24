@@ -1,18 +1,17 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Avril 2025 (17 victimes)
-[**English version available here**](./victims.md)
 
-## Résumé du mois
+# Victimes africaines - Avril 2025
 
-Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **7 pays africains**.
+👉🏾 [**English version available here**](./victims.md)
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+## Synthèse mensuelle
+
+**20 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 7, Data Leak 10, Access Sale 2, DDoS 1.
+
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Avril 2025
+
 ### 04 Avril 2025
 #### 🇸🇳 Sénégal - Forces Armées Sénégalaises (armee.sn)
 - **Type d'incident:** Access Sale
@@ -30,7 +29,7 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Site web:** www.iacc.holdings
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
-- **Description victime:** Holding d'investissement privé égyptien axé sur le transport maritime et la logistique. L'acteur revendique l'exfiltration de 27,75 Go de données ; ce volume n'est pas vérifié indépendamment dans les éléments disponibles.
+- **Description victime:** Holding d'investissement privé égyptien axé sur le transport maritime et la logistique. 27,75 Go de données exfiltrées.
 
 ### 07 Avril 2025
 #### 🇿🇦 Afrique du Sud - Cell C
@@ -40,12 +39,12 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Statut:** Claim - Data Sample Published
 - **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
-- **Niveau d’impact:** Level 4
+- **Niveau d'impact:** Level 4
 - **Description victime:** Opérateur de télécommunications sud-africain, l'un des principaux fournisseurs de services mobiles dans le pays.
 - **Analyse:** AFRINTEL a examiné 20 captures de la publication de RansomHouse. Elles couvrent des données Cell C relatives aux clients et employés, des passeports, des appels, des SMS, l'activité vocale internationale, des contrats, des franchises, des accords de confidentialité, des documents internes et un résumé des revenus. Cette diversité est cohérente avec une exposition importante de données télécoms. Les impacts potentiels comprennent l'atteinte à la vie privée des abonnés, le phishing et la fraude, le ciblage des employés, l'exposition des métadonnées d'appels et de messages, l'espionnage commercial et la reconnaissance opérationnelle. Les captures ne confirment pas le vecteur d'accès initial, l'exhaustivité du jeu de données, le nombre d'abonnés touchés ni l'impact opérationnel. AFRINTEL ne reproduit aucune donnée personnelle, aucun détail de passeport, numéro de téléphone, contrat ni lien de téléchargement.
 
 ### 08 Avril 2025
-#### 🇪🇬 Égypte - International Business Service
+#### 🇪🇬 Égypte - International Busines Service
 - **Groupe ransomware:** crypto24
 - **Secteur:** Services aux entreprises / Externalisation (BPO)
 - **Site web:** ibsns.com
@@ -86,6 +85,22 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 
   La cohérence du format sur l'ensemble de l'échantillon, la diversité des agences et centres payeurs représentés, ainsi que la présence de cachets et signatures plausibles, soutiennent un niveau de confiance élevé quant à l'authenticité d'un accès aux systèmes ou archives de la CNAS. Le volume observé (214 documents) reste toutefois très inférieur aux 860 200 revendiqués et ne permet pas de confirmer l'ampleur totale annoncée de la fuite. L'exposition de ces attestations pourrait faciliter l'usurpation d'identité, la fraude aux prestations sociales et le phishing ciblé contre les assurés et leurs ayants droit. AFRINTEL ne reproduit aucun nom, date de naissance, adresse, numéro d'immatriculation ni autre donnée personnelle issus des documents examinés.
 
+### 08 Avril 2025
+#### 🇲🇦 Maroc - Maroc Telecom
+- **Date de l'incident:** Inconnue - la date d'obtention de l'accès n'est pas indiquée dans l'annonce
+- **Date de publication initiale:** 8 avril 2025
+- **Acteur / Groupe:** yn0x1
+- **Secteur:** Telecommunications
+- **Site web:** https://www.iam.ma/
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Access Sale
+- **Sous-type:** SMS Sending Service / Account Access
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Maroc Telecom est l'opérateur de télécommunications marocain également connu sous le nom Itissalat Al-Maghrib (IAM).
+- **Analyse:** Le 8 avril 2025, l'acteur utilisant le pseudonyme `yn0x1` a publié sur un forum underground une annonce intitulée « For Sale: Maroc Telecom SMS Sender - 2492 Credits Available ». L'annonce propose à la vente un « Maroc Telecom SMS Sender » disposant de 2 492 crédits et affiche l'identité visuelle de Maroc Telecom. L'acteur a également indiqué un contact Telegram pour les personnes souhaitant négocier ou acheter l'accès. Lors d'une vérification ultérieure, ce contact n'était plus fonctionnel. Les éléments observés confirment l'existence de l'annonce et de la revendication de vente, mais ils ne permettent pas de déterminer si l'accès concernait un compte utilisateur, un compte revendeur, une interface d'envoi SMS, une passerelle SMS, une API ou une infrastructure interne de Maroc Telecom. La fonctionnalité réelle et l'origine de l'accès vendu restent non confirmées.
+- **Contact de vente observé:** Telegram - `chatfordealme_bot` - indisponible lors d'une vérification ultérieure.
+
 ### 09 Avril 2025
 #### 🇩🇿 Algérie - MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
 - **Type d'incident:** Data Leak
@@ -106,10 +121,26 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Acteur / Groupe:** Phantom Atlas
 - **Secteur:** Gouvernement / Administration du travail
 - **Site web:** Non précisé
-- **Date de publication de la source:** 9 avril 2025
+- **Date de publication de la source :** 9 avril 2025
 - **Statut:** Claim - Unverified
 - **Description victime:** La publication fournie affirme que Phantom Atlas a accédé à des fichiers sensibles du Ministère algérien du Travail. Aucun échantillon spécifique au ministère n'est fourni ; cette cible est donc enregistrée séparément de la MGPTT sans confirmation indépendante de la compromission.
 - **Analyse:** La revendication figure dans la même publication Phantom Atlas que celle concernant la MGPTT et peut correspondre à une même opération visant plusieurs institutions publiques algériennes. Aucun jeu de données spécifique au ministère n'a été collecté ni reproduit.
+
+### 12 Avril 2025
+#### Maroc - Moroccan government portals (coordinated campaign)
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** Multiple Moroccan government portals
+- **Date de l'incident:** 12 avril 2025 - date rapportée pour la campagne
+- **Date de publication initiale:** 12 avril 2025
+- **Statut:** Incident Corroborated - Attribution Unconfirmed
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** L'incident a affecté plusieurs portails web gouvernementaux marocains lors d'une campagne coordonnée de perturbation de services.
+- **Analyse:** Plusieurs sites gouvernementaux marocains sont devenus indisponibles durant une campagne DDoS coordonnée et les informations publiques indiquent qu'au moins un ministère a reconnu le ciblage de son site institutionnel. L'attribution à des acteurs présentés comme pro-algériens n'a pas été officiellement confirmée. AFRINTEL enregistre donc l'impact sur la disponibilité tout en conservant l'attribution comme inconnue.
+- **Type de source:** Public OSINT + Government Acknowledgment
+- **Sources publiques:** [CSIDB incident record](https://www.csidb.net/csidb/incidents/834788ad-dc34-4335-88a4-fa62e2fb0136/)
 
 ### 13 Avril 2025
 #### 🇲🇷 Mauritanie - BMI / SEDAD Mobile Wallet
@@ -120,16 +151,16 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Niveau de confiance:** Medium
 - **Niveau d'impact:** Level 3
 - **Type d'incident:** Data Leak
-- **Date de publication de la source:** 13 avril 2025
-- **Dates observées dans l'échantillon:** 6 avril 2025
+- **Date de publication de la source :** 13 avril 2025
+- **Dates observées dans l'échantillon :** 6 avril 2025
 
-- **Description:**
+- **Description :**
   La publication affirme exposer une base associée à SEDAD, le service de banque digitale et de portefeuille mobile de BMI en Mauritanie. L'acteur revendique plus de 90 000 enregistrements liés à des réclamations de portefeuille et à des actions administratives.
 
 - **Analyse:**
   L'échantillon visible est un enregistrement JSON structuré provenant d'un workflow de réclamations clients. Il contient des champs d'identité client, un numéro d'identification nationale, un numéro de téléphone, l'attribution à un utilisateur interne, des horodatages de création et de modification, un statut de traitement et un type de réclamation lié à l'activation. AFRINTEL ne reproduit aucune valeur personnelle visible dans l'échantillon. L'échantillon confirme la présence apparente de données structurées sensibles, mais le volume revendiqué, l'exhaustivité, l'origine et la compromission ne sont pas confirmés indépendamment. Le site officiel de BMI identifie SEDAD comme son service de banque digitale et de portefeuille électronique.
 
-- **Recommandations:**
+- **Recommandations :**
   1. Vérifier la revendication dans les journaux applicatifs, de base de données, d'API et d'administration de SEDAD, préserver les éléments de preuve et déterminer si des données d'identité et de téléphone ont été consultées.
   2. Faire pivoter les identifiants ou jetons administratifs exposés si nécessaire, examiner les actions privilégiées, imposer le MFA, surveiller les prises de contrôle de comptes et le phishing, puis notifier les utilisateurs et autorités compétentes si l'exposition est confirmée.
 
@@ -150,7 +181,7 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Site web:** [ismac.ma](https://ismac.ma)
 - **Statut:** Claim - Data Sample Published
 
-- **Description:**
+- **Description :**
   L’Institut Supérieur des Métiers de l’Audiovisuel et du Cinéma (ISMAC) est un établissement public marocain d’enseignement supérieur basé à Rabat. Il forme des professionnels du cinéma, de l’audiovisuel, de la réalisation, de la production, de l’image et du son, sous la tutelle du ministère marocain de la Jeunesse, de la Culture et de la Communication.
 
 - **Analyse:**
@@ -178,6 +209,7 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Description victime:** INI Investments est une société égyptienne de banque d'investissement et de conseil en financement de projets, basée au Caire, intervenant dans les études de faisabilité, le montage financier et la clôture de financements pour des projets industriels et d'infrastructure.
 - **Analyse:** AFRINTEL a examiné un échantillon local de documents cohérents avec la revendication du cybercriminel nightspire, incluant des modèles financiers internes de faisabilité (projections de TRI pluriannuelles allant de 39 % à 58 %, structure du capital et sources de financement) pour un projet de fabrication de tuyaux UPVC, une étude de marché concurrentielle comparant les volumes de production et parts de marché de plusieurs fabricants égyptiens d'UPVC nommés, un tableau de suivi de portefeuille de projets intitulé « Pipe line projects for Allweiler Farid Hassanein Pumps co » listant plusieurs contrats clients avec valeurs de projet en EGP, USD et EUR, statut et dates de soumission (référençant des clients et projets en Égypte, en Russie et en Arabie saoudite), une étude juridique et un procès-verbal de réunion, un rapport d'évaluation foncière pour le site du projet UPVC d'une société nommée, ainsi qu'un document référençant une extension de commande pour Hassan Allam, un grand groupe égyptien de construction et d'ingénierie. Les métadonnées des fichiers situent la preuve entre le 15 et le 17 avril 2025 ; cette date est traitée comme une date de preuve/découverte et non comme une date de publication confirmée. La cohérence interne des modèles financiers, la mention de contreparties industrielles égyptiennes réelles (Allweiler Farid Hassanein Pumps, Hassan Allam) et la cohérence entre l'étude de faisabilité, l'étude de marché et la documentation juridique soutiennent une évaluation à confiance élevée d'une compromission réelle des fichiers de projets internes d'INI Investments. Le matériel exposé consiste en des données confidentielles de transactions, de financement et de renseignement de marché plutôt qu'en des enregistrements personnels ou de consommateurs, créant un risque d'exposition de renseignement concurrentiel, de compromission de messagerie professionnelle et d'ingénierie sociale ciblée visant INI Investments ainsi que ses clients et contreparties industriels. AFRINTEL ne reproduit aucun nom de client, valeur de projet, montant financier ni référence de document issu du matériel examiné.
 - **Note de double revendication :** Les fiches de mars et d’avril sont conservées séparément, car les dates et les éléments de preuve diffèrent. Elles concernent le même acteur, le même domaine et le même nom de victime, mais AFRINTEL ne peut pas déterminer avec les éléments disponibles si la publication d’avril actualise la revendication de mars ou correspond à une revendication distincte. Aucune fusion n’est effectuée dans l’attente d’une confirmation.
+
 ### 20 Avril 2025
 #### 🇿🇦 Afrique du Sud - Premier Meats South Africa
 - **Groupe ransomware:** devman
@@ -209,3 +241,18 @@ Avril 2025 compte **17 incidents uniques** : **7 Ransomware**, **9 Data Leak**, 
 - **Description victime:** Dar Al Teb est l'un des centres médicaux les plus renommés d'Égypte, spécialisé dans la médecine de la reproduction, la fécondation in vitro (FIV) et la santé de la femme.
 - **Analyse:** Le groupe ransomware gunra revendique la compromission de Dar Al Teb (daralteb.com) et affiche des échantillons de données sur sa page de fuite. Les échantillons montrent des tableaux de suivi de patients/cycles comportant nom du mari, nom de l'épouse, numéro de dossier, âge, deux numéros de téléphone, ainsi que des champs cliniques spécifiques à la fécondation in vitro (statut du sperme frais/congelé, nombre d'ovocytes/embryons attendus, andrologue référent, médecin traitant, et codes de résultat embryologique). Un jeu local plus large comprend sept classeurs mensuels (décembre 2022, puis mars à août 2023) totalisant environ 2 300 lignes de dossiers patients/cycles, ainsi que deux classeurs supplémentaires plus courts et une base de données Access (non ouverte). Le matériel technique examiné inclut un export de profil Wi-Fi contenant une clé pré-partagée en clair, des commandes réseau associées faisant référence à un partage de fichiers interne, un script PowerShell de déploiement d'une forêt Active Directory nommée « DarAlteb.local », ainsi qu'un fichier de connexion RDP préconfiguré vers un hôte interne avec redirection de presse-papiers et de lecteurs de cartes à puce activée. La combinaison d'échantillons de données cliniques nommément identifiables, d'un jeu de données patients pluriannuel et de matériel de configuration réseau et d'accès distant interne soutient une évaluation à confiance élevée d'une compromission réelle et étendue dépassant une simple revendication de site de fuite. La nature des données observées, à la fois des informations de santé reproductive nommément identifiables portant sur plusieurs milliers de patients et des éléments d'accès à l'infrastructure interne, justifie un niveau d'impact de niveau 4. AFRINTEL ne reproduit aucun nom de patient, numéro de téléphone, numéro de dossier, clé Wi-Fi, adresse IP ni autre donnée personnelle ou secret issu du matériel examiné.
 
+### Avril 2025 - date exacte de compromission non communiquée publiquement
+#### Ghana - MTN Group / MTN Ghana
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Telecommunications
+- **Site web:** https://www.mtn.com/
+- **Date de l'incident:** Avril 2025 - date exacte de l'accès non autorisé non communiquée publiquement
+- **Date de publication initiale:** 24 avril 2025
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** MTN Group est l'un des plus grands opérateurs mobiles d'Afrique. Le Ghana fait partie des marchés affectés publiquement identifiés après l'incident.
+- **Analyse:** MTN Group a confirmé le 24 avril 2025 qu'un incident de cybersécurité avait entraîné un accès non autorisé à des informations personnelles de certains clients sur certains marchés. Le groupe a indiqué que le coeur de réseau, la facturation et l'infrastructure de services financiers étaient restés sécurisés et opérationnels. MTN Ghana a ensuite indiqué que les premières estimations suggéraient que les données d'environ 5 700 clients ghanéens pouvaient avoir été affectées. AFRINTEL enregistre le Ghana comme marché affecté confirmé et ne déduit pas que tous les marchés africains de MTN ont été touchés.
+- **Type de source:** Victim Statement + Public Reporting
+- **Sources publiques:** [MTN Group incident notice](https://www.mtn.com/mtn-cybersecurity-incident-but-critical-infrastructure-secure/) | [MTN Ghana reporting](https://gna.org.gh/2025/04/mtn-group-confirms-cybersecurity-incident-affecting-some-customers/)

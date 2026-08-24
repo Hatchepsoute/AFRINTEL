@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Juin 2025 (21 victimes)
+
+# Victimes africaines - Juin 2025
+
 👉🏾 [**English version available here**](./victims.md)
 
-## Résumé du mois
+## Synthèse mensuelle
 
-Juin 2025 compte **21 incidents uniques** : **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **8 pays africains**.
+**21 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 5, Data Leak 16.
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Juin 2025
 
@@ -119,7 +117,7 @@ Juin 2025 compte **21 incidents uniques** : **5 Ransomware**, **16 Data Leak**, 
 - **Analyse:** Un message Phantom Atlas antérieur, publié le 10 juin 2025 sur la chaîne Telegram de l'acteur, précise cette revendication : le groupe affirme détenir plus de 90 Go de documents couvrant la période 2016-2025, avec une diffusion annoncée en plusieurs temps (« nous commencerons par ceux de 2016 »), l'archive étant protégée par le mot de passe `phantomatlas`. Le lien de téléchargement mentionné sur DarkForums n'est plus accessible au moment de la rédaction de cette fiche ; AFRINTEL n'a donc pas pu collecter ni examiner l'archive revendiquée, et ne peut confirmer ni l'exhaustivité ni l'authenticité du contenu annoncé.
 
 ### 11 Juin 2025
-#### 🇿🇦 Afrique du Sud - Carducci
+#### 🇿🇦 Afrique du Sud - carducci
 - **Groupe ransomware:** warlock
 - **Secteur:** Commerce de détail (Mode)
 - **Site web:** http://carducci.co.za/
@@ -251,10 +249,3 @@ Juin 2025 compte **21 incidents uniques** : **5 Ransomware**, **16 Data Leak**, 
 
 - **Analyse:**
   Une publication intitulée « Leak db of the Embassy of Djibouti in Morocco » a été publiée le 29 juin 2025 sur le forum cybercriminel DarkForums par le compte Doxeur23azi, qui attribue la revendication à MdHackersArmy. La publication se limite à un lien de téléchargement externe et ne décrit ni le type de données, ni la structure des champs, ni le volume d'enregistrements, ni la sensibilité de la base de données annoncée ; aucun échantillon n'est visible. AFRINTEL n'a pas accédé au lien externe. Les données concernées, la population affectée et l'origine technique de la revendication restent inconnues à ce stade.
-## ✍🏿 Auteur
-*Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
-
----
-*AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*

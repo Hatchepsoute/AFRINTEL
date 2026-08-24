@@ -1,19 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack incidents in December 2025 (18 records)
+# African victims - December 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-December 2025 includes **18 incident records**: **14 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **10 African countries**.
+**18 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 14, Data Leak 4.
 
-The 18 records concern **17 distinct organisations within December**, because Hopital La Rabta appears in two ransomware claims by different groups. The second La Rabta claim and the December Proplastics claim are retained as separate incident records because the available evidence does not establish that they are simple duplicates. Their cards explicitly preserve the alternative hypothesis of republication or resale.
-
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## December 2025
 
@@ -189,3 +184,7 @@ The 18 records concern **17 distinct organisations within December**, because Ho
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** The Kenya Electricity Transmission Company (KETRACO) is a Kenyan state corporation responsible for developing, operating and maintaining the country's high-voltage electricity transmission grid.
 - **Analysis:** The actor LindaBF published a post on December 31, 2025 titled "ketraco.co.ke database Kenya", with the download link restricted to forum members who reply to the thread. The visible sample shows a structured user-directory export (fields USER_ID, USER_NAME, USER_PASSWORD, USER_FIRSTNAME, USER_LASTNAME, USER_EMAIL, USER_LASTLOGIN, USER_FLAGS, USER_OU, USER_DATECREATED) tied to an organisational-unit path labelled "nl_KETRACO_Newsletter_Unit", consistent with a newsletter-subscriber or directory-service account list rather than core operational systems. Real-looking Kenyan names, email addresses and account-creation timestamps are visible, but numerous rows in the sample share an identical password value, which is inconsistent with independently generated per-user hashes and may indicate a shared default value, a placeholder, or a partially fabricated sample; this anomaly lowers AFRINTEL's confidence in the sample to a medium level. Given KETRACO's role in national power-transmission infrastructure, any confirmed compromise, even one limited to a newsletter or directory service, would be of concern for a critical-infrastructure operator and could indicate a broader foothold. AFRINTEL does not reproduce any username, email address, password value or record from the sample and has not accessed the linked download.
+
+---
+
+*AFRINTEL compilation - source of truth: monthly files.*

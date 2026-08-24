@@ -1,20 +1,17 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in October 2025 (18 unique incidents)
+
+# African victims - October 2025
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **11 African countries**.
+**20 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 16, Data Leak 3, Access Sale 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
-
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## October 2025
+
 ### 01 October 2025
 #### 🇿🇦 South Africa - Climatron (Pty) Ltd
 - **Ransomware Group:** incransom
@@ -54,7 +51,6 @@ October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak*
 - **Victim Description:** Moroccan logistics company based in Casablanca, offering courier, transport, and warehousing services.
 - **Analysis:** AFRINTEL reviewed a local sample of multi-sheet spreadsheet exports consistent with the claim made by the threat actor medusa, each watermarked with the group's Tor leak-site address. The reviewed material includes a general accounting ledger (bank and journal entries dated 2020-2021), warehouse and logistics workbooks covering goods reception, dispatch, stock-preparation and internal-transfer movements for major appliance brands (referencing BSH/Bosch-Siemens product lines) tied to named internal staff handling the operations, and a client accounts-receivable ageing report listing several dozen named corporate clients across multiple Moroccan cities (Casablanca, Agadir, Tanger, Marrakech, Fès, Settat and others), including well-known national and multinational accounts (among them Procter & Gamble-affiliated entities, Savola Maroc, Centrale Laitière, Ciment du Maroc, BSH Electroménager and Ecolab), together with named client contacts, phone numbers, outstanding balances, payment terms and collections/dispute status. The internal consistency of the data across accounting, warehouse and commercial modules, the presence of real, identifiable Moroccan and multinational client accounts, and the multi-year date range (2020-2023) spanning multiple branches support a very high confidence assessment of a genuine, broad compromise of La Voie Express's internal ERP and accounting systems. Given the scale of the exposed accounts-receivable and banking-ledger data and its extension into the client base of a major national logistics provider, this incident creates a material risk of invoice fraud, business email compromise and targeted social engineering against La Voie Express and its corporate clients, beyond the company's own operational exposure. AFRINTEL does not reproduce any client name, contact name, phone number, financial figure or staff identifier from the reviewed material.
 
-### 13 October 2025
 ### 15 October 2025
 #### 🇰🇪 Kenya - Turnkey Africa
 - **Ransomware Group:** qilin
@@ -86,7 +82,6 @@ October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak*
 - **Impact level:** Level 4
 - **Analysis:** AFRINTEL reviewed the analyst-provided CTI workbook and 32 screenshots associated with the radar publication. The evidence set contains seven document categories: DRC customs and legal texts, public-procurement and governance material, TK Holdings salary and recruitment policies, a geological report from Congo Mineral Services concerning the Mikuba Mining copper exploration project, and an environmental-control decree. The workbook classifies the salary policy and the Mikuba geological report as critical sensitivity. The geological material references drilling campaigns and copper grades, creating a plausible industrial-espionage and strategic-resource risk. The HR policies expose internal salary, bonus, leave, recruitment and confidentiality procedures, creating risks of employee targeting, insider abuse and reputational harm. The legal and regulatory documents could support document fraud, corruption or manipulation of compliance and import processes if their authenticity and currency were established. The evidence confirms that sensitive-looking documents were displayed in the collection, but it does not independently confirm the intrusion path, the completeness of the published dataset, the authenticity of every document, or operational impact. AFRINTEL does not reproduce document contents, personal names, signatures or other sensitive material.
 
-
 ### 18 October 2025
 #### 🇿🇦 South Africa - University of the Witwatersrand (WITS)
 - **Ransomware Group:** clop
@@ -116,6 +111,22 @@ October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak*
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Egyptian financial institution specializing in leasing and factoring, a subsidiary of the National Bank of Egypt.
+
+### 20 October 2025
+#### South Africa - Companies and Intellectual Property Commission (CIPC) eServices
+- **Actor / Group:** fuckoverflow (claimed seller)
+- **Sector:** Government / Administration
+- **Website:** https://www.cipc.co.za/
+- **Incident date:** 20 October 2025 - reported date of the access-sale publication
+- **Initial publication date:** 20 October 2025
+- **Status:** Claim - Unverified Marketplace Listing
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** The Companies and Intellectual Property Commission operates South Africa's corporate-registration and intellectual-property services.
+- **Analysis:** An actor advertised allegedly compromised CIPC eServices accounts for sale, potentially enabling record modification and data collection. CIPC did not confirm the validity of the allegedly compromised accounts in the supplied audit. AFRINTEL records the marketplace claim with medium confidence and does not treat successful access as independently confirmed.
+- **Source type:** Secondary CTI + Marketplace Claim
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/compromised-credentials/threat-actor-advertises-alleged-compromised-cipc-eservices-accounts-on-a-dark-web-forum/)
 
 ### 23 October 2025
 #### 🇲🇦 Morocco - STAR LÉGUMES
@@ -167,6 +178,22 @@ October 2025 includes **18 unique incidents**: **16 Ransomware**, **2 Data Leak*
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Pan-African financial operator present in Tunisia, specializing in financing for businesses and individuals. During this intrusion, 100 GB of data were exfiltrated by the incransom group.
+
+### 28 October 2025
+#### 🇰🇪 Kenya - M-TIBA / CarePay
+- **Incident date:** October 2025 - exact compromise date not established in the selected public sources
+- **Initial publication date:** 28 October 2025
+- **Actor / Group:** Kazu (claim)
+- **Sector:** Healthcare / Health Technology
+- **Website:** https://www.mtiba.com/
+- **Status:** Corroborated - Data Sample Independently Reviewed + Regulator Investigation
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** M-TIBA is a health-technology platform operated by CarePay in Kenya and used to support healthcare services, programmes and payments.
+- **Analysis:** On 28 October 2025, TechCabal reported a claim by the Kazu group involving unauthorized access to M-TIBA servers. Kazu claimed more than 17 million files and about 2.15 TB of data, but AFRINTEL does not treat those aggregate volumes as independently confirmed. TechCabal states that it reviewed a 2 GB sample containing data attributed to about 114,000 people, including identities, national identification numbers, dates of birth, phone contacts and, in some cases, medical diagnoses and billing information. On 29 October 2025, Kenya's Office of the Data Protection Commissioner (ODPC) announced an investigation to establish the nature and scope of the possible breach. CarePay had not confirmed the leak in the initial article and requested material to support its own investigation. AFRINTEL therefore records a Data Leak based on the independently reviewed sample and regulator investigation, while retaining Kazu's overall volume claims as unverified.
+- **Source type:** Independent Media Sample Review + Regulator Investigation
+- **Public sources:** [TechCabal - Safaricom-backed M-Tiba hit by massive data breach exposing patient records](https://techcabal.com/2025/10/28/safaricom-backed-m-tiba-hacked-exposing-4-8-patient-records/) | [The Star - ODPC probes possible M-Tiba data breach](https://www.the-star.co.ke/news/2025-10-29-odpc-probes-possible-m-tiba-data-breach)
 
 ### 31 October 2025
 #### 🇩🇿 Algeria - TMF Logistics

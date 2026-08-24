@@ -1,66 +1,77 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
-![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%7C%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Source%20des%20données-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-![Période](https://img.shields.io/badge/Période-Juin%202025-lightgrey)
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Juin 2025
 
-# Rapport CTI - Cyberattaques en Afrique - Juin 2025
+👉🏾 [English version](./README.md)
 
-👉🏾 [**English version available here**](./README.md)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-June%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
 ## 1. Synthèse exécutive
 
-Juin 2025 compte **21 incidents documentés dans 8 pays africains** : **5 Ransomware** et **16 Data Leak**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est enregistré.
+En Juin 2025, AFRINTEL documente **21 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
 
-- **Maroc** : 7 incidents, dont 2 Ransomware et 5 Data Leak.
-- **Algérie** : 7 incidents, tous classés Data Leak.
-- **Afrique du Sud** : 2 Ransomware.
-- **Ghana** : 1 Data Leak, absent de plusieurs tableaux de l'ancien rapport.
-- **mrdump** est l'acteur le plus présent avec 4 fiches.
-- **nightspire, Phantom Atlas, warlock et Keymous** comptent 2 fiches chacun.
-- **Gouvernement / Administration** représente 11 incidents après normalisation sectorielle.
-- Les éléments notables incluent les archives ANCFCC, les données de Priority Insurance Ghana, les cartographies réseau d'Algérie Télécom, les données du ministère égyptien de la Solidarité sociale, la base FRMF et plusieurs publications visant des administrations algériennes.
+Le paysage est dominé par **Data Leak avec 16 fiches (76,2 %)**, suivi de **Ransomware avec 5 (23,8 %)**.
 
-### 📋 Liste des victimes
+La concentration géographique est marquée : **Maroc (7)**, **Algérie (7)**, **Afrique du Sud (2)** représentent ensemble **16 fiches, soit 76,2 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
-👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (9)**, **Services professionnels / Business (3)**, **Finance / Banque (3)**. Les labels d'acteurs les plus fréquents sont `mrdump` (4), `nightspire` (2), `Phantom Atlas` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
+
+La maturité des preuves reste variable : **19 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+
+Par rapport à Mai, le volume mensuel **diminue de 5 fiches**. Les variations les plus visibles concernent Ransomware 13->5 (-8), Data Leak 9->16 (+7), Defacement 2->0 (-2).
+
+> **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
 ### 1.1 Comparaison avec le mois précédent
 
-> Comparaison fondée sur les corpus mensuels AFRINTEL validés. Une variation du nombre de fiches documentées ne prouve pas, à elle seule, une variation du nombre réel de compromissions.
-
-| Indicateur | Mai 2025 | Juin 2025 | Évolution observée |
+| Indicateur | Mai 2025 | Juin 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 21 | 21 | **0 (+0,0 %)** |
+| Total incidents | 26 | 21 | **-5 (-19,2 %)** |
 | Ransomware | 13 | 5 | **-8 (-61,5 %)** |
-| Data Leak | 8 | 16 | **+8 (+100,0 %)** |
-| Access Sale | 0 | 0 | **0 (stable)** |
-| DDoS | 0 | 0 | **0 (stable)** |
-| Defacement | 0 | 0 | **0 (stable)** |
-| Operational Fraud | 0 | 0 | **0 (stable)** |
+| Data Leak | 9 | 16 | **+7 (+77,8 %)** |
+| Access Sale | 0 | 0 | **Stable** |
+| DDoS | 0 | 0 | **Stable** |
+| Defacement | 2 | 0 | **-2 (-100,0 %)** |
+| Account Takeover | 1 | 0 | **-1 (-100,0 %)** |
+| System Intrusion | 1 | 0 | **-1 (-100,0 %)** |
+| Malware | 0 | 0 | **Stable** |
+| Operational Fraud | 0 | 0 | **Stable** |
+
+
+
 
 ## 2. Méthodologie
 
-- **Périmètre** : 54 pays africains.
-- **Période** : 1er au 30 juin 2025.
-- **Sources** : OSINT, leak sites, forums underground, canaux d'acteurs et échantillons disponibles.
-- **Source de vérité** : couple validé [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), avec contrôle éditorial en français avant synchronisation anglaise.
-- **Comptage** : une fiche correspond à un incident unique.
-- **Qualification** : revendication, échantillon, publication complète et confirmation technique restent des niveaux distincts.
-- **Visualisation** : tableaux, barres textuelles, diagrammes Mermaid simples et chronologie.
+- **Périmètre :** 54 pays africains ; période de référence : Juin 2025.
+- **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
+- **Classification :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud.
+- **Comptage :** une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques.
+- **Chronologie :** `Date de l'incident` et `Date de publication initiale` sont séparées. Une publication ultérieure ne déplace pas artificiellement un incident vers un autre mois lorsque la chronologie est suffisamment établie.
+- **Dates incertaines :** lorsqu'un jour exact n'est pas connu, le mois ou la fenêtre soutenue par les preuves est conservé.
+- **Sources :** les liens publics sont conservés pour les incidents complémentaires identifiés par recherche OSINT/web ; ils ne sont pas imposés rétroactivement aux observations historiques ou Dark Web directes.
+- **Preuve :** type d'incident, statut, confiance, impact et provenance restent des dimensions distinctes.
+- **Secteurs :** normalisation calculée une seule fois à partir du corpus structuré, puis utilisée à l'identique en FR et EN.
+- **Limite :** les fréquences reflètent la visibilité AFRINTEL et non l'ensemble des compromissions réelles sur le continent.
 
-## 3. Vue d'ensemble
+## 3. Vue d'ensemble et types d'incident
 
-### 3.1 Répartition par type d'incident
+| Indicateur | Valeur |
+|---|---:|
+| Incidents documentés | **21** |
+| Pays représentés | **8** |
+| Régions représentées | **5** |
+| Premier pays | **Maroc (7)** |
+| Premier secteur | **Gouvernement / Administration (9)** |
+| Premier label acteur | **mrdump (4)** |
 
-| Type d'incident | Nombre | Part |
+| Type d'incident | Fiches | Part |
 |---|---:|---:|
 | Ransomware | 5 | 23,8 % |
 | Data Leak | 16 | 76,2 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
+| Account Takeover | 0 | 0,0 % |
+| System Intrusion | 0 | 0,0 % |
+| Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
 | **Total** | **21** | **100 %** |
 
@@ -71,217 +82,178 @@ pie showData
     "Data Leak" : 16
 ```
 
-**Convention couleur :** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
+## 4. Répartition géographique
 
-### 3.2 Répartition par pays
+| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Maroc | **7** | 2 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | **7** | 0 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Afrique du Sud | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ghana | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maurice | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Égypte | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisie | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Djibouti | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **21** | **5** | **16** | **0** | **0** | **0** | **0** | **0** | **0** |
 
-| Pays | Ransomware | Data Leak | Total | Distribution |
-|---|---:|---:|---:|---|
-| 🇲🇦 Maroc | 2 | 5 | 7 | 🟧🟧🟦🟦🟦🟦🟦 |
-| 🇩🇿 Algérie | 0 | 7 | 7 | 🟦🟦🟦🟦🟦🟦🟦 |
-| 🇿🇦 Afrique du Sud | 2 | 0 | 2 | 🟧🟧 |
-| 🇲🇺 Maurice | 1 | 0 | 1 | 🟧 |
-| 🇪🇬 Égypte | 0 | 1 | 1 | 🟦 |
-| 🇬🇭 Ghana | 0 | 1 | 1 | 🟦 |
-| 🇹🇳 Tunisie | 0 | 1 | 1 | 🟦 |
-| 🇩🇯 Djibouti | 0 | 1 | 1 | 🟦 |
-| **Total** | **5** | **16** | **21** | |
+> `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
-### 3.3 Répartition géographique par région
+## 5. Répartition régionale
 
-| Région | Incidents | Part | Activité |
+| Région | Fiches | Part |
+|---|---:|---:|
+| Afrique du Nord | 16 | 76,2 % |
+| Afrique australe | 2 | 9,5 % |
+| Afrique de l'Ouest | 1 | 4,8 % |
+| Océan Indien | 1 | 4,8 % |
+| Afrique de l'Est | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
+
+La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**.
+
+## 6. Impact sectoriel
+
+| Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
-| Afrique du Nord | 16 | 76,2 % | ██████████ |
-| Afrique australe | 3 | 14,3 % | ██ |
-| Afrique de l'Ouest | 1 | 4,8 % | █ |
-| Afrique de l'Est | 1 | 4,8 % | █ |
-| Afrique centrale | 0 | 0,0 % |  |
-| **Total** | **21** | **100 %** | |
-
-### 3.4 Répartition sectorielle
-
-| Secteur normalisé | Incidents | Part | Activité |
-|---|---:|---:|---|
-| Gouvernement / Administration | 11 | 52,4 % | ██████████ |
+| Gouvernement / Administration | 9 | 42,9 % | █████████ |
+| Services professionnels / Business | 3 | 14,3 % | ███ |
 | Finance / Banque | 3 | 14,3 % | ███ |
-| Services professionnels / RH / Juridique | 3 | 14,3 % | ███ |
 | Télécommunications | 2 | 9,5 % | ██ |
-| Conglomérat / Multi-sectoriel | 1 | 4,8 % | █ |
-| Commerce / Distribution | 1 | 4,8 % | █ |
+| Défense / Sécurité | 2 | 9,5 % | ██ |
+| Non précisé | 1 | 4,8 % | █ |
+| Commerce / E-commerce | 1 | 4,8 % | █ |
 | **Total** | **21** | **100 %** | |
 
-### 3.5 Acteurs / groupes
+## 7. Acteurs / groupes
 
-| Acteur / Groupe | Incidents | Activité |
+`Unknown` correspond à une absence d'attribution, pas à un acteur.
+
+| Acteur / Groupe | Fiches | Activité |
 |---|---:|---|
-| mrdump | 4 | ██████████ |
-| nightspire | 2 | █████ |
-| Phantom Atlas | 2 | █████ |
-| warlock | 2 | █████ |
-| Keymous | 2 | █████ |
-| B4baYega | 1 | ██ |
-| incransom | 1 | ██ |
-| lynx | 1 | ██ |
-| TajineSec / Tajinesec_MA | 1 | ██ |
-| 0x0day | 1 | ██ |
-| RiseAgainLuigi & B4baYega | 1 | ██ |
-| Evil_BYTE_Officiel | 1 | ██ |
-| KickingPigs | 1 | ██ |
-| MdHackersArmy | 1 | ██ |
-| **Total** | **21** | |
+| mrdump | 4 | ████ |
+| nightspire | 2 | ██ |
+| Phantom Atlas | 2 | ██ |
+| warlock | 2 | ██ |
+| Keymous | 2 | ██ |
+| B4baYega | 1 | █ |
+| incransom | 1 | █ |
+| lynx | 1 | █ |
+| TajineSec / Tajinesec_MA | 1 | █ |
+| 0x0day | 1 | █ |
+| RiseAgainLuigi & B4baYega | 1 | █ |
+| Evil_BYTE_Officiel | 1 | █ |
+| KickingPigs | 1 | █ |
+| MdHackersArmy | 1 | █ |
 
-### 3.6 Cartographie acteurs -> pays
+## 8. Maturité des preuves
 
-```mermaid
-flowchart LR
-    MRD["mrdump - 4"] --> DZ["🇩🇿 Algérie - 3"]
-    MRD --> TN["🇹🇳 Tunisie - 1"]
-    NIG["nightspire - 2"] --> MA["🇲🇦 Maroc - 1"]
-    NIG --> ZA["🇿🇦 Afrique du Sud - 1"]
-    PHA["Phantom Atlas - 2"] --> DZ
-    WAR["warlock - 2"] --> MU["🇲🇺 Maurice - 1"]
-    WAR --> ZA
-    KEY["Keymous - 2"] --> EG["🇪🇬 Égypte - 1"]
-    KEY --> MA
-    B4B["B4baYega - 1"] --> MA
-    INC["incransom - 1"] --> MA
-    LYN["lynx - 1"] --> MA
-    TAJ["TajineSec - 1"] --> DZ
-    OXD["0x0day - 1"] --> GH["🇬🇭 Ghana - 1"]
-    RAB["RiseAgainLuigi & B4baYega - 1"] --> MA
-    EVB["Evil_BYTE_Officiel - 1"] --> MA
-    KIC["KickingPigs - 1"] --> DZ
-    MDH["MdHackersArmy - 1"] --> DJ["🇩🇯 Djibouti - 1"]
-```
+| Maturité de preuve | Fiches | Part |
+|---|---:|---:|
+| Claim - Unverified | 9 | 42,9 % |
+| Claim - Data Sample Published | 10 | 47,6 % |
+| Data Fully Published | 2 | 9,5 % |
+| **Total** | **21** | **100 %** |
 
-## 4. Analyse détaillée par type d'incident
+Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
-### 4.1 Ransomware - 5 incidents
-
-Les cinq fiches Ransomware concernent **MTT EXPERTISES**, **Ingonyama Trust Board**, **Best Profil**, **Currimjee Jeewanjee & Co** et **Carducci**.
-
-MTT EXPERTISES et Best Profil disposent d'éléments documentaires analysés. Best Profil est classé **Data Fully Published** et comprend des documents internes liés aux RH, à la paie, à la facturation et à un outil interne. Ingonyama, Currimjee et Carducci restent principalement documentés par la revendication observée.
-
-### 4.2 Data Leak - 16 incidents
-
-Les 16 Data Leak constituent la majorité du mois.
-
-Les dossiers les plus significatifs incluent :
-
-- **ANCFCC** : publication initiale NightSpire puis matériel complémentaire examiné ; la publication ultérieure n'est pas comptée comme incident distinct.
-- **Algérie Télécom** : cartographies et interfaces de supervision réseau cohérentes avec un accès interne.
-- **Priority Insurance Ghana** : base précédemment examinée de 349 288 enregistrements, désormais rattachée à une publication source datée du 9 juin.
-- **Ministère égyptien de la Solidarité sociale** : 237 éléments revendiqués et échantillon CSV de 26 enregistrements.
-- **FRMF** : plus de 4 289 enregistrements revendiqués, avec échantillons FIFA Connect / CAF Pro et tableurs cohérents.
-- **BNA Algérie** : 90 Go revendiqués, sans archive collectée ou vérifiée par AFRINTEL.
-- **CPA Algérie** : plus de 30 Go revendiqués, avec échantillon annoncé mais non visible dans les éléments fournis.
-- **Ambassade de Djibouti au Maroc** : revendication non vérifiée, sans description ni volume de données.
-
-## 5. Impact sectoriel
-
-**Gouvernement / Administration** concentre **11 incidents sur 21 (52,4 %)**. Cette catégorie normalisée inclut administrations foncières, ministères, douanes, défense, sport public et représentation diplomatique.
-
-**Finance / Banque** compte 3 incidents : CPA, BNA et Priority Insurance. **Services professionnels / RH / Juridique** en compte 3 : Portail des Avocats, MTT EXPERTISES et Best Profil. Les **Télécommunications** comptent 2 incidents : Algérie Télécom et INWI.
-
-## 6. Profil des acteurs
-
-**mrdump** est le label le plus visible avec **4 fiches**. **nightspire, Phantom Atlas, warlock et Keymous** comptent chacun **2 fiches**. Les neuf autres labels apparaissent une fois.
-
-Les champs `Acteur / Groupe` ont été normalisés pour conserver uniquement le nom de l'acteur. Les mentions de forum, canal Telegram ou auteur du post restent du contexte analytique et ne sont plus intégrées dans le nom de l'acteur.
-
-## 7. Tendances et lacunes de renseignement
-
-### 7.1 Tendances observées
-
-1. **Volume mensuel stable** : 21 incidents en mai et 21 en juin.
-2. **Basculement vers les Data Leak** : 8 en mai contre 16 en juin.
-3. **Recul du Ransomware** : 13 en mai contre 5 en juin.
-4. **Concentration nord-africaine** : 16 des 21 incidents.
-5. **Forte exposition du secteur public** : 11 incidents Gouvernement / Administration.
-6. **Maroc et Algérie en tête** : 7 incidents chacun.
-7. **Ghana réintégré** : Priority Insurance porte le nombre de pays à 8.
-
-### 7.2 Lacunes de renseignement
-
-- Plusieurs volumes restent des revendications d'acteurs non mesurées indépendamment.
-- Les archives BNA annoncées ne sont plus accessibles dans les éléments examinés.
-- Le volume CPA et l'échantillon de 500 Mo annoncé ne sont pas confirmés.
-- Le cas Ambassade de Djibouti reste sans échantillon ni description de données.
-- Les vecteurs d'accès initiaux restent inconnus pour la majorité des incidents.
-
-### 7.3 Évolution mensuelle
-
-| Type | Mai 2025 | Juin 2025 | Évolution |
-|---|---:|---:|---:|
-| Total | 21 | 21 | **0 (stable)** |
-| Ransomware | 13 | 5 | **-8 (-61,5 %)** |
-| Data Leak | 8 | 16 | **+8 (+100,0 %)** |
-| Access Sale | 0 | 0 | **0 (stable)** |
-
-## 8. Chronologie synthétique
+## 9. Chronologie
 
 ```mermaid
 timeline
     title AFRINTEL - Juin 2025
-    02 Juin : nightspire - ANCFCC
-            : B4baYega - Portail de l'Ordre des Avocats
-    06 Juin : incransom - MTT EXPERTISES
-            : nightspire - Ingonyama Trust Board
-            : lynx - Best Profil
-    08 Juin : TajineSec - Crédit Populaire d'Algérie
-    09 Juin : Phantom Atlas - Algérie Télécom
-            : 0x0day - Priority Insurance Ghana
-    11 Juin : warlock - Currimjee
-            : Phantom Atlas - BNA
-            : warlock - Carducci
-    14 Juin : Keymous - Ministère de la Solidarité sociale
-            : mrdump - Ministère de la Jeunesse et des Sports Algérie
-    18 Juin : mrdump - Ministère de la Défense Algérie
-            : RiseAgainLuigi & B4baYega - Ministère de l'Éducation Maroc
-    19 Juin : mrdump - Douanes Algérie
-            : Keymous - FRMF
-    20 Juin : Evil_BYTE_Officiel - INWI
-            : mrdump - Ministère de la Défense Tunisie
-    26 Juin : KickingPigs - Ministère des Transports Algérie
-    29 Juin : MdHackersArmy - Ambassade de Djibouti au Maroc
+    02 Juin 2025 : ANCFCC (Agence Nationale de la Conservation Foncière)
+    02 Juin 2025 : Portail de l'Ordre des Avocats (avocatsmaroc.com / mossaada.ma)
+    06 Juin 2025 : MTT EXPERTISES
+    06 Juin 2025 : Ingonyama Trust Board
+    06 Juin 2025 : Best Profil (bestprofil.ma)
+    08 Juin 2025 : Crédit Populaire d’Algérie (cpa-bank.dz)
+    09 Juin 2025 : Algérie Télécom (algerietelecom.dz)
+    09 Juin 2025 : Priority Insurance Company Limited
+    11 Juin 2025 : Currimjee Jeewanjee & Co
+    11 Juin 2025 : Banque Nationale d’Algérie (bna.dz)
+    11 Juin 2025 : carducci
+    14 Juin 2025 : Ministère de la Solidarité sociale
+    14 Juin 2025 : Ministère de la Jeunesse et des Sports (MJS) / Directions de la Jeunesse et des Sports (DJS)
+    18 Juin 2025 : Ministère de la Défense Nationale (MDN)
+    18 Juin 2025 : Ministère de l'Éducation Nationale (men.gov.ma / massar.men.gov.ma)
+    19 Juin 2025 : Direction Générale des Douanes (DGD) / Service de contrôle des exportations et importations
+    19 Juin 2025 : Fédération Royale Marocaine de Football (FRMF)
+    20 Juin 2025 : INWI (inwi.ma)
+    20 Juin 2025 : Ministère de la Défense Nationale / Forces armées
+    26 Juin 2025 : Ministère des Transports
+    29 Juin 2025 : Ambassade de Djibouti au Maroc
 ```
 
-## 9. Cartographie MITRE ATT&CK contextuelle
+## 10. Analyse CTI mensuelle
 
-| Phase | Technique | Portée analytique |
-|---|---|---|
-| Collecte | T1005 - Data from Local System | Pertinent pour les fichiers, documents et archives décrits ou examinés. |
-| Collecte | T1213 - Data from Information Repositories | Pertinent pour les bases, référentiels administratifs et exports structurés. |
-| Découverte réseau | T1016 - System Network Configuration Discovery | Contexte défensif pertinent pour l'exposition de cartographies et informations réseau d'Algérie Télécom ; la méthode d'obtention n'est pas confirmée. |
+### Ransomware
 
-> Les mappings sont contextuels. Ils ne doivent pas être interprétés comme une preuve que chaque acteur a utilisé ces techniques.
+**5 fiches** sont classées Ransomware. Principaux pays : Maroc (2), Afrique du Sud (2), Maurice (1). Une publication sur un leak site ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.
 
-## 10. Recommandations
+### Data Leak
 
-- **Secteur public** : renforcer MFA, PAM, journalisation des exports et supervision des applications exposées.
-- **Banque / Assurance** : surveiller les exports clients, protéger les données d'identité et contrôler les accès administratifs.
-- **Télécommunications** : protéger les systèmes de supervision, limiter l'accès aux cartographies réseau et surveiller les accès inhabituels.
-- **RH / Juridique** : restreindre les sauvegardes SQL, données de paie et documents clients aux comptes strictement nécessaires.
-- **Défense / Diplomatie** : renforcer la classification documentaire, la segmentation et la surveillance des transferts.
+**16 fiches** sont classées Data Leak. Principaux pays : Algérie (7), Maroc (5), Ghana (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
-## 11. Recommandations SOC et tactiques
+## 11. Incidents notables
 
-### Observé
+| Pays | Organisation | Type | Statut | Impact | Confiance |
+|---|---|---|---|---|---|
+| Maroc | MTT EXPERTISES | Ransomware | Claim - Data Sample Published | Level 3 | Medium |
+| Maroc | ANCFCC (Agence Nationale de la Conservation Foncière) | Data Leak | Claim - Data Sample Published | N/A | N/A |
+| Maroc | Portail de l'Ordre des Avocats (avocatsmaroc.com / mossaada.ma) | Data Leak | Claim - Data Sample Published | N/A | N/A |
+| Afrique du Sud | Ingonyama Trust Board | Ransomware | Claim - Unverified | N/A | N/A |
+| Maroc | Best Profil (bestprofil.ma) | Ransomware | Data Fully Published | N/A | N/A |
 
-Le corpus contient des exports structurés, documents internes, cartes réseau, données d'identité, informations financières, publications de bases et plusieurs revendications sans échantillon.
+> Ce tableau met en avant jusqu'à cinq fiches selon le niveau d'impact, la confirmation et la confiance structurés. Il ne constitue pas un classement absolu de gravité.
 
-### Hypothèses
+## 12. Principaux enseignements et lacunes de renseignement
 
-Les vecteurs initiaux, mécanismes de persistance et chemins complets d'exfiltration ne sont pas établis pour la majorité des incidents.
+- **Concentration géographique :** Maroc représente 7 fiches (33,3 %), devant Algérie (7) et Afrique du Sud (2).
+- **Structure de menace :** Data Leak est le premier type avec 16 fiches, suivi de Ransomware (5).
+- **Secteurs :** Gouvernement / Administration (9) et Services professionnels / Business (3) concentrent la plus forte visibilité.
+- **Acteurs :** les labels les plus fréquents sont mrdump (4), nightspire (2) et Phantom Atlas (2).
+- **Preuve :** 19 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
 
-### Préventif
+### Intelligence gaps
 
-Surveiller les exports massifs, sauvegardes SQL, accès aux portails administratifs, comptes privilégiés, téléchargements inhabituels, accès aux systèmes de supervision réseau et transferts sortants volumineux. Maintenir MFA, PAM, EDR, segmentation, sauvegardes immuables et rotation des secrets exposés.
+- vecteur d'accès initial souvent non public ;
+- date technique exacte de compromission parfois inconnue ;
+- volumes revendiqués rarement vérifiables intégralement ;
+- attribution technique souvent limitée au pseudonyme ou label de publication ;
+- informations publiques sur remédiation, cause racine et conclusions DFIR encore limitées.
 
-## 12. Conclusion
+Ces lacunes doivent guider la collecte sans être remplacées par des hypothèses.
 
-Juin 2025 compte **21 incidents dans 8 pays**, répartis entre **5 Ransomware et 16 Data Leak**. Le total reste identique à mai, mais la structure du corpus change fortement : le Ransomware recule de 61,5 % tandis que les Data Leak doublent.
+## 13. Recommandations
 
-Le Maroc et l'Algérie concentrent chacun 7 incidents. Le Ghana est désormais correctement intégré grâce à la fiche Priority Insurance Company Limited. mrdump est l'acteur le plus présent avec 4 fiches.
+### Organisations
 
-**AFRINTEL** - Initiative ouverte de veille CTI sur l'Afrique
+- imposer MFA résistante au phishing sur les comptes privilégiés, VPN, messagerie, réseaux sociaux et consoles d'administration ;
+- appliquer PAM, moindre privilège, segmentation et rotation des secrets ;
+- maintenir des sauvegardes immuables et tester la restauration ;
+- renforcer les applications publiques, API et interfaces administratives ;
+- formaliser réponse à incident et notification des violations de données.
+
+### SOC et détection
+
+- surveiller les authentifications anormales, changements MFA, créations de comptes privilégiés et élévations de rôles ;
+- détecter lectures massives de bases, exports inhabituels, créations d'archives et transferts sortants volumineux ;
+- corréler EDR, IAM, VPN, WAF, proxy, DNS, cloud et journaux applicatifs ;
+- distinguer DDoS, intrusion interne, compromission de compte et fuite de données pour éviter les conclusions non étayées.
+
+### CTI
+
+- conserver séparément date d'incident, publication initiale, première observation, échantillon, divulgation et confirmation ;
+- suivre republications et reventes sans les compter automatiquement comme nouvelles compromissions ;
+- maintenir la hiérarchie de preuve entre claim, corroboration et confirmation ;
+- valider la parité FR/EN avant toute génération de statistiques.
+
+## 14. Conclusion
+
+Le mois de **Juin 2025** compte **21 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
+
+Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
+
+👉🏾 [Voir les victimes du mois](./victims_FR.md)
+
+**AFRINTEL** - TLP:CLEAR

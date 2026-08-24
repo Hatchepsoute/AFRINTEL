@@ -1,283 +1,240 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-![Period](https://img.shields.io/badge/Period-February%202025-lightgrey)
+# AFRINTEL CTI Report - Cyber Threats in Africa - February 2025
 
-# CTI Report - Cyberattacks in Africa - February 2025
+👉🏾 [Version française](./README_FR.md)
 
-👉🏾 [**French version available here**](./README_FR.md)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-February%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
 ## 1. Executive summary
 
-February 2025 contains **8 documented incidents across 6 African countries**. All eight records are classified as **Ransomware** in the structured AFRINTEL taxonomy. No standalone Data Leak, Access Sale, DDoS, Defacement or Operational Fraud is recorded this month.
+In February 2025, AFRINTEL documents **10 cyber incidents** affecting organizations and digital services across **7 African countries**.
 
-- **8 incidents**: 8 Ransomware.
-- **6 countries**: Egypt (3), Morocco (1), South Africa (1), Zambia (1), Ghana (1), Namibia (1).
-- **6 actors / groups**: ransomhub (2), killsec (2), fog (1), flocker (1), akira (1), hunter (1).
-- **Leading normalized sectors**: Insurance / Insurtech (2) and Government / Administration (2).
-- **Notable volume information**: SPEED Co is associated with a claim of 444.8 GB and 285,891 files; the reviewed material for the Zambian government portal totals approximately 1.6 GB across 44 archive parts, while the actor describes it as a 1.2 GB leak.
+The landscape is dominated by **Ransomware with 8 records (80.0%)**, followed by **Account Takeover with 2 (20.0%)**.
 
-### 📋 Victim list
+Geographic concentration is significant: **Egypt (3)**, **Kenya (2)**, **Morocco (1)** together account for **6 records, or 60.0% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
-👉🏾 [View the full victim list](./victims.md)
+At sector level, the most represented categories are **Government / Administration (2)**, **Finance / Banking (2)**, **Technology / IT (1)**. The most frequent actor labels are `Unknown` (2), `ransomhub` (2), `killsec` (2). `Unknown`, when present, denotes missing attribution rather than a threat actor.
+
+Evidence maturity remains variable: **8 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
+
+Compared with January, monthly volume **decreases by 9 records**. The most visible changes are Ransomware 16->8 (-8), Data Leak 2->0 (-2), Account Takeover 1->2 (+1).
+
+> **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
 ### 1.1 Month-over-month comparison
 
-> Comparison based on the validated bilingual January and February 2025 corpora. The change describes AFRINTEL's documented corpus and does not by itself prove an equivalent change in the real number of compromises.
-
-| Indicator | January 2025 | February 2025 | Observed change |
+| Indicator | January 2025 | February 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 17 | 8 | **-9 (-52.9%)** |
+| Total incidents | 19 | 10 | **-9 (-47.4%)** |
 | Ransomware | 16 | 8 | **-8 (-50.0%)** |
-| Data Leak | 1 | 0 | **-1 (-100.0%)** |
-| Access Sale | 0 | 0 | **0 (stable)** |
-| DDoS | 0 | 0 | **0 (stable)** |
-| Defacement | 0 | 0 | **0 (stable)** |
-| Operational Fraud | 0 | 0 | **0 (stable)** |
+| Data Leak | 2 | 0 | **-2 (-100.0%)** |
+| Access Sale | 0 | 0 | **Stable** |
+| DDoS | 0 | 0 | **Stable** |
+| Defacement | 0 | 0 | **Stable** |
+| Account Takeover | 1 | 2 | **+1 (+100.0%)** |
+| System Intrusion | 0 | 0 | **Stable** |
+| Malware | 0 | 0 | **Stable** |
+| Operational Fraud | 0 | 0 | **Stable** |
+
+
+
 
 ## 2. Methodology
 
-- **Scope**: 54 African countries.
-- **Period**: 1-28 February 2025.
-- **Sources**: OSINT, leak sites, actor publications, forums and supplied samples when available.
-- **Source of truth**: validated bilingual pair [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), with editorial review performed first in French.
-- **Qualification**: claims, published samples and independent confirmation are kept separate.
-- **Counting**: one victim card equals one unique monthly incident.
+- **Scope:** 54 African countries; reference period: February 2025.
+- **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
+- **Classification:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware, and Operational Fraud.
+- **Counting:** one canonical record equals one documented cyber incident; cases under investigation remain outside statistics.
+- **Timeline:** `Incident date` and `Initial publication date` remain separate. A later disclosure does not artificially move an incident into another month when chronology is sufficiently supported.
+- **Uncertain dates:** when no exact day is known, the evidence-supported month or time window is retained.
+- **Sources:** public links are retained for supplementary incidents found through OSINT/web research; they are not retroactively imposed on historical or direct Dark Web observations.
+- **Evidence:** incident type, status, confidence, impact, and provenance remain separate dimensions.
+- **Sectors:** normalization is calculated once from the structured corpus and used identically in FR and EN.
+- **Limitation:** frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.
 
-## 3. Global overview
+## 3. Overview and incident types
 
-### 3.1 Incident-type distribution
+| Indicator | Value |
+|---|---:|
+| Documented incidents | **10** |
+| Countries represented | **7** |
+| Regions represented | **4** |
+| Leading country | **Egypt (3)** |
+| Leading sector | **Government / Administration (2)** |
+| Leading actor label | **Unknown (2)** |
 
-| Incident type | Count | Share |
+| Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 8 | 100.0% |
+| Ransomware | 8 | 80.0% |
 | Data Leak | 0 | 0.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 2 | 20.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **8** | **100%** |
+| **Total** | **10** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - February 2025
     "Ransomware" : 8
+    "Account Takeover" : 2
 ```
 
-**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
+## 4. Geographic distribution
 
-### 3.2 Country distribution
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Egypt | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kenya | **2** | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
+| Morocco | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| South Africa | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zambia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ghana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **10** | **8** | **0** | **0** | **0** | **0** | **2** | **0** | **0** |
 
-| Country | Ransomware | Data Leak / Access Sale | Total | Distribution |
-|---|---:|---:|---:|---|
-| 🇪🇬 Egypt | 3 | 0 | 3 | 🟧🟧🟧 |
-| 🇲🇦 Morocco | 1 | 0 | 1 | 🟧 |
-| 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
-| 🇿🇲 Zambia | 1 | 0 | 1 | 🟧 |
-| 🇬🇭 Ghana | 1 | 0 | 1 | 🟧 |
-| 🇳🇦 Namibia | 1 | 0 | 1 | 🟧 |
-| **Total** | **8** | **0** | **8** | |
+> `Operational Fraud = 0` this month; the column is omitted for readability.
 
-```mermaid
-xychart-beta
-    title "Incidents by country - February 2025"
-    x-axis ["EG", "MA", "ZA", "ZM", "GH", "NA"]
-    y-axis "Incidents" 0 --> 4
-    bar [3, 1, 1, 1, 1, 1]
-```
+## 5. Regional distribution
 
-**Legend:** `EG` = Egypt | `MA` = Morocco | `ZA` = South Africa | `ZM` = Zambia | `GH` = Ghana | `NA` = Namibia
-
-### 3.3 Ransomware versus Data Leak / Access Sale by country
-
-All eight records are classified as Ransomware. The Data Leak / Access Sale series is zero for every country.
-
-```mermaid
-xychart-beta
-    title "Ransomware by country - February 2025"
-    x-axis ["EG", "MA", "ZA", "ZM", "GH", "NA"]
-    y-axis "Incidents" 0 --> 4
-    bar [3, 1, 1, 1, 1, 1]
-```
-
-**Legend:** 🟧 Ransomware | 🟦 Data Leak / Access Sale = 0 across the month.  
-**Countries:** `EG` = Egypt | `MA` = Morocco | `ZA` = South Africa | `ZM` = Zambia | `GH` = Ghana | `NA` = Namibia
-
-### 3.4 Geographic distribution by region
-
-| Region | Incidents | Share |
+| Region | Records | Share |
 |---|---:|---:|
-| North Africa | 4 | 50.0% |
-| Southern Africa | 3 | 37.5% |
-| West Africa | 1 | 12.5% |
-| Central Africa | 0 | 0.0% |
-| East Africa | 0 | 0.0% |
-| **Total** | **8** | **100%** |
+| North Africa | 4 | 40.0% |
+| Southern Africa | 3 | 30.0% |
+| East Africa | 2 | 20.0% |
+| West Africa | 1 | 10.0% |
+| **Total** | **10** | **100%** |
 
-```mermaid
-xychart-beta
-    title "Incidents by region - February 2025"
-    x-axis ["NAF", "SAF", "WAF", "CAF", "EAF"]
-    y-axis "Incidents" 0 --> 5
-    bar [4, 3, 1, 0, 0]
-```
+The leading region is **North Africa with 4 records (40.0%)**.
 
-**Legend:** `NAF` = North Africa | `SAF` = Southern Africa | `WAF` = West Africa | `CAF` = Central Africa | `EAF` = East Africa
+## 6. Sector impact
 
-### 3.5 Sector distribution
-
-| Normalized sector | Incidents | Share | Activity |
+| Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| Insurance / Insurtech | 2 | 25.0% | ███████ |
-| Government / Administration | 2 | 25.0% | ███████ |
-| Technology / IT | 1 | 12.5% | ███ |
-| Telecommunications | 1 | 12.5% | ███ |
-| Transport / Logistics | 1 | 12.5% | ███ |
-| Professional / HR Services | 1 | 12.5% | ███ |
-| **Total** | **8** | **100%** | |
+| Government / Administration | 2 | 20.0% | ██ |
+| Finance / Banking | 2 | 20.0% | ██ |
+| Technology / IT | 1 | 10.0% | █ |
+| Media / Entertainment | 1 | 10.0% | █ |
+| Not specified | 1 | 10.0% | █ |
+| Telecommunications | 1 | 10.0% | █ |
+| Transport / Logistics | 1 | 10.0% | █ |
+| Professional / Business Services | 1 | 10.0% | █ |
+| **Total** | **10** | **100%** | |
 
-```mermaid
-xychart-beta
-    title "Incidents by sector - February 2025"
-    x-axis ["INS", "GOV", "TEC", "TEL", "TRA", "PRO"]
-    y-axis "Incidents" 0 --> 3
-    bar [2, 2, 1, 1, 1, 1]
-```
+## 7. Actors / groups
 
-**Legend:** `INS` = Insurance / Insurtech | `GOV` = Government / Administration | `TEC` = Technology / IT | `TEL` = Telecommunications | `TRA` = Transport / Logistics | `PRO` = Professional / HR Services
+`Unknown` denotes missing attribution, not a threat actor.
 
-### 3.6 Actors / groups
-
-| Actor / Group | Incidents | Activity |
+| Actor / Group | Records | Activity |
 |---|---:|---|
-| ransomhub | 2 | ██████████ |
-| killsec | 2 | ██████████ |
-| fog | 1 | █████ |
-| flocker | 1 | █████ |
-| akira | 1 | █████ |
-| hunter | 1 | █████ |
-| **Total** | **8** | |
+| Unknown | 2 | ██ |
+| ransomhub | 2 | ██ |
+| killsec | 2 | ██ |
+| fog | 1 | █ |
+| flocker | 1 | █ |
+| akira | 1 | █ |
+| hunter | 1 | █ |
+
+## 8. Evidence maturity
+
+| Evidence maturity | Records | Share |
+|---|---:|---:|
+| Claim - Unverified | 5 | 50.0% |
+| Claim - Data Sample Published | 3 | 30.0% |
+| Victim/Government/Authority Confirmed | 2 | 20.0% |
+| **Total** | **10** | **100%** |
+
+Evidence statuses describe the available validation level; they do not change the technical incident type.
+
+## 9. Timeline
 
 ```mermaid
-xychart-beta
-    title "Documented actors or groups - February 2025"
-    x-axis ["RAN", "KIL", "FOG", "FLO", "AKI", "HUN"]
-    y-axis "Incidents" 0 --> 3
-    bar [2, 2, 1, 1, 1, 1]
+timeline
+    title AFRINTEL - February 2025
+    03 February 2025 : Xlab Group
+    06 February 2025 : K24 TV
+    09 February 2025 : Directorate of Criminal Investigations (DCI)
+    12 February 2025 : ASK Gras Savoye (askgs.ma)
+    12 February 2025 : South African Weather Service (SAWS)
+    19 February 2025 : Government Services Portal (services.gov.zm)
+    19 February 2025 : Brolly
+    21 February 2025 : Paratus
+    22 February 2025 : SPEED Co
+    23 February 2025 : Shaghalni
 ```
 
-**Legend:** `RAN` = ransomhub | `KIL` = killsec | `FOG` = fog | `FLO` = flocker | `AKI` = akira | `HUN` = hunter
+## 10. Monthly CTI analysis
 
-## 4. Detailed analysis by incident type
+### Ransomware
 
-### 4.1 Ransomware - 8 incidents
+**8 records** are classified as Ransomware. Leading countries: Egypt (3), Morocco (1), South Africa (1). A leak-site listing does not itself prove encryption or complete exfiltration.
 
-All eight records are classified as Ransomware: ransomhub and killsec account for two incidents each; fog, flocker, akira and hunter appear once each.
+### Account Takeover
 
-Three cases contain detailed sample analysis in the victim files: the Zambian Government Services Portal, Brolly in Ghana and Shaghalni in Egypt. These analyses add information on the nature of the observed data or artifacts without automatically confirming the full scope claimed by the actors.
+**2 Account Takeover records** are documented. Distribution: Kenya (2). This category keeps institutional-account compromise distinct.
 
-## 5. Sectoral impact
+## 11. Notable incidents
 
-**Insurance / Insurtech** and **Government / Administration** each account for **2 of 8 incidents (25.0%)**. Technology / IT, Telecommunications, Transport / Logistics and Professional / HR Services each account for one incident.
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Kenya | Directorate of Criminal Investigations (DCI) | Account Takeover | Victim Confirmed | Level 4 | Very High |
+| Kenya | K24 TV | Account Takeover | Victim Confirmed | Level 3 | High |
+| Egypt | Shaghalni | Ransomware | Claim - Data Sample Published | Level 3 | High |
+| Egypt | Xlab Group | Ransomware | Claim - Unverified | N/A | N/A |
+| Morocco | ASK Gras Savoye (askgs.ma) | Ransomware | Claim - Unverified | N/A | N/A |
 
-This normalized distribution is derived from the organizations' primary activities as described in the victim cards and is used for report statistics.
+> This table highlights up to five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.
 
-## 6. Threat actor profile
+## 12. Key findings and intelligence gaps
 
-### 6.1 Profile
+- **Geographic concentration:** Egypt accounts for 3 records (30.0%), followed by Kenya (2) and Morocco (1).
+- **Threat structure:** Ransomware is the leading type with 8 records, followed by Account Takeover (2).
+- **Sectors:** Government / Administration (2) and Finance / Banking (2) have the highest visibility.
+- **Actors:** the most frequent labels are Unknown (2), ransomhub (2), and killsec (2).
+- **Evidence:** 8 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
 
-ransomhub and killsec are the most visible labels with two records each. The other four actors or groups appear once.
+### Intelligence gaps
 
-Publication frequency describes only the observed monthly corpus. It is not a direct measure of technical capability or coordination.
+- initial-access vector often not public;
+- exact technical compromise date sometimes unknown;
+- claimed volumes rarely fully verifiable;
+- technical attribution often limited to a publication handle or label;
+- public remediation, root-cause, and DFIR conclusions remain limited.
 
-### 6.2 Risk assessment
+These gaps should guide collection rather than be replaced with assumptions.
 
-| Country | Risk signal in the corpus |
-|---|---|
-| Egypt | 3 incidents across digital services, logistics and recruitment |
-| Zambia | 1 government incident with system artifacts and administrator-level access described in the reviewed sample |
-| South Africa | 1 incident targeting the national weather service |
-| Morocco | 1 insurance brokerage incident |
-| Ghana | 1 insurtech incident with policy, contract and personal data in the reviewed sample |
-| Namibia | 1 telecommunications incident involving a pan-African operator |
+## 13. Recommendations
 
-## 7. Key trends and intelligence gaps
+### Organizations
 
-### 7.1 Observed trends
+- enforce phishing-resistant MFA on privileged accounts, VPN, email, social media, and administration consoles;
+- apply PAM, least privilege, segmentation, and secret rotation;
+- maintain immutable backups and test restoration;
+- strengthen public applications, APIs, and administration interfaces;
+- formalize incident response and data-breach notification.
 
-1. **Egypt leads**: 3 of 8 incidents.
-2. **Ransomware-only structured taxonomy**: 8 of 8 records.
-3. **Two more frequent labels**: ransomhub and killsec with 2 records each.
-4. **Sector diversity**: no normalized sector exceeds 25% of the corpus.
+### SOC and detection
 
-### 7.2 Intelligence gaps
+- monitor abnormal authentication, MFA changes, privileged-account creation, and role elevation;
+- detect mass database reads, unusual exports, archive creation, and large outbound transfers;
+- correlate EDR, IAM, VPN, WAF, proxy, DNS, cloud, and application logs;
+- distinguish DDoS, internal intrusion, account compromise, and data exposure to avoid unsupported conclusions.
 
-- Initial access remains unknown for several incidents.
-- Actor-claimed volumes cannot always be reconciled with the volume actually reviewed.
-- A published sample does not, by itself, confirm dataset completeness or operational impact.
-- Records without a reviewed sample remain limited to the observed publication or claim.
+### CTI
 
-### 7.3 Monthly evolution
+- keep incident date, initial publication, first observation, sample, disclosure, and confirmation separate;
+- track republication and resale without automatically counting them as new compromise;
+- preserve the evidence hierarchy between claim, corroboration, and confirmation;
+- validate FR/EN parity before generating statistics.
 
-```mermaid
-xychart-beta
-    title "Documented incidents - January vs February 2025"
-    x-axis ["JAN", "FEB"]
-    y-axis "Incidents" 0 --> 18
-    bar [17, 8]
-    bar [16, 8]
-```
+## 14. Conclusion
 
-**Legend:** first series = total incidents | second series = Ransomware.  
-`JAN` = January 2025 | `FEB` = February 2025.
+**February 2025** contains **10 documented cyber incidents** across **7 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
 
-The total decreases from **17 to 8**, or **-9 (-52.9%)**. Ransomware decreases from **16 to 8**, or **-8 (-50.0%)**. The single January Data Leak drops from 1 to 0.
+The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.
 
-## 8. MITRE ATT&CK mapping - contextual
+👉🏾 [See monthly victims](./victims.md)
 
-| Phase | Technique | Analytical scope |
-|---|---|---|
-| Access / Movement | T1021.001 - Remote Desktop Protocol | An RDP artifact is present in the reviewed Zambian portal material; its presence does not prove RDP was the initial-access vector. |
-| Credential data | T1555.003 - Credentials from Web Browsers | Browser artifacts in the Zambian case justify defensive monitoring of browser credential stores; no saved-password database was found in the reviewed set. |
-| Collection | T1005 - Data from Local System | Defensive context for local exports, documents and artifacts reviewed across several cases. |
-| Collection | T1213 - Data from Information Repositories | Relevant to the structured Brolly and Shaghalni data; the collection method is not confirmed. |
-
-> These mappings are contextual and defensive. They do not prove that each actor used the listed techniques.
-
-## 9. Recommendations
-
-- **Insurance / Insurtech**: strengthen access control over policy data, KYC material and customer exports.
-- **Government**: monitor administrator accounts, RDP artifacts, certificates, DPAPI material and data movement from privileged endpoints.
-- **Telecommunications**: segment networks, protect administrative identities and control remote access.
-- **HR and digital platforms**: restrict exports, audit access to verification documents and log administrative operations.
-
-## 10. SOC and tactical recommendations
-
-### Observed
-
-The corpus contains ransomware publications and, for some incidents, reviewed structured samples or system artifacts. The Zambian portal case notably includes material associated with a Windows administrator endpoint, RDP, DPAPI, certificates, browser artifacts and SQL Server.
-
-### Assumptions
-
-Initial access, persistence and complete exfiltration paths are not established across the full corpus.
-
-### Preventive
-
-Monitor administrative authentication, account creation, RDP sessions, data exports, access to certificates and secret stores, and unusual outbound transfers. Maintain MFA, least privilege, segmentation, EDR, tested backups and emergency access-revocation procedures.
-
-## 11. Strategic recommendations
-
-1. Prioritize privileged-identity security and systems holding personal or contractual data.
-2. Improve technical evidence collection to distinguish ransomware publication, actual access and operational impact.
-3. Strengthen cooperation between CERTs, public administrations and the insurance, telecommunications and digital-services sectors.
-4. Keep AFRINTEL statistics tied to the observed corpus rather than presenting them as an exhaustive measure of real cyber activity.
-
-## 12. Conclusion
-
-February 2025 contains **8 documented Ransomware incidents across 6 African countries**. Egypt accounts for 3 records, while ransomhub and killsec are the two most frequent labels with 2 incidents each.
-
-Compared with the harmonized January corpus, the total decreases from **17 to 8 (-52.9%)**. This decrease concerns publications recorded by AFRINTEL and does not by itself establish an equivalent reduction in real cyber activity across Africa.
-
-**AFRINTEL** - Open African CTI Monitoring Initiative
+**AFRINTEL** - TLP:CLEAR

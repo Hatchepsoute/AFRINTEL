@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Janvier 2025 (17 victimes)
-[**English version available here**](./victims.md)
 
-## Résumé du mois
+# Victimes africaines - Janvier 2025
 
-Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **8 pays africains**.
+👉🏾 [**English version available here**](./victims.md)
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, la version anglaise `victims.md` est synchronisée avec les mêmes faits, classifications et valeurs structurées.
+## Synthèse mensuelle
+
+**19 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 16, Data Leak 2, Account Takeover 1.
+
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Janvier 2025
 
@@ -22,7 +20,7 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Statut:** Claim - Data Sample Published
 - **Type d'incident:** Ransomware
 - **Niveau de confiance:** High
-- **Niveau d’impact:** Level 3
+- **Niveau d'impact:** Level 3
 - **Analyse:** AFRINTEL a examiné le classeur fourni et huit fichiers de preuve supplémentaires. Le classeur contient des éléments de structure salariale et des feuilles distinctes pour les médecins, la comptabilité, les ressources humaines, les opérations et plusieurs fonctions de support. Les preuves comprennent également une capture de paiement bancaire et des documents cohérents avec l’administration du personnel ou de la paie. L’échantillon soutient une exposition potentielle des rémunérations, des structures départementales, des opérations internes et d’informations liées au traitement financier. Le volume revendiqué de 19 Go, le vecteur d’accès et l’exhaustivité des données restent non vérifiés. AFRINTEL ne reproduit aucun nom, salaire, coordonnée bancaire ni autre donnée personnelle.
 - **Description victime:** Molars est un réseau de cliniques dentaires de premier plan basé à Nairobi, fournissant des soins spécialisés allant de l'orthodontie à la chirurgie dentaire pour une clientèle locale et internationale. L'acteur revendique l'exfiltration de 19 Go de données ; AFRINTEL a consulté cette revendication sur le site de l'acteur mais n'a pas collecté ni analysé les données sous-jacentes.
 
@@ -85,7 +83,6 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Niveau d'impact:** Level 3
 - **Description victime:** Misr Technology Services (MTS) est l'entité gouvernementale égyptienne responsable du développement et de la gestion de la plateforme nationale de facilitation du commerce, notamment le système Nafeza.
 - **Analyse:** AFRINTEL a examiné un ensemble local de captures d'écran et de documents PDF générés par les systèmes internes du secteur du Transport Maritime et de la Logistique, notamment l'Egyptian Maritime Data Bank, cohérents avec la revendication du cybercriminel funksec. Le matériel examiné inclut une demande individuelle de permis nommant un demandeur, une agence maritime affiliée et une date de dépôt ; un rapport comparatif de trafic portuaire listant des statistiques d'escales par port pour 2023 et 2024 ; une liste de projets et opportunités d'investissement portuaire ; ainsi que des rapports détaillés de recouvrement sectoriel couvrant plusieurs périodes entre janvier et avril 2024, listant des noms de clients, types d'opérations, numéros de référence et montants encaissés via le canal point de vente du secteur. Deux des documents examinés portent un horodatage d'impression système daté du 14 et du 15 janvier 2025, cohérent avec la date de publication de la revendication. La présence de rapports générés en interne, datés et nommant des demandeurs et clients, combinée à l'en-tête propre de la plateforme et aux métadonnées d'impression, soutient une évaluation à confiance élevée d'un accès réel aux systèmes de reporting internes de MTS. Compte tenu du rôle de MTS dans la gestion de la plateforme nationale égyptienne de facilitation du commerce, notamment le système Nafeza, cet incident présente un risque pour le personnel des agences maritimes, les données financières clients et la confidentialité des opérations nationales de facilitation du commerce. AFRINTEL ne reproduit aucun nom de demandeur, nom de client, donnée financière ni référence documentaire issue du matériel examiné.
----
 
 ### 16 Janvier 2025
 #### 🇿🇦 Afrique du Sud - North-West University (NWU)
@@ -98,7 +95,7 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Niveau d'impact:** Level 3
 - **Description victime:** North-West University (NWU) est une université sud-africaine d'enseignement supérieur. Le domaine `nwu.ac.za` et l'identité visuelle utilisés dans la publication de l'acteur correspondent à cette université, qui est explicitement présentée comme la victime de la revendication.
 - **Analyse:** Le 16 janvier 2025, SevenZeroDay404 a publié sur un forum underground une entrée intitulée **« 29K NWU Student Database »**, accompagnée du logo de North-West University et d'un ensemble de données présenté comme une base d'étudiants. L'acteur revendique environ **29 000 enregistrements**. Le fichier fourni contient des noms, des résultats académiques sous forme de GPA, des cursus universitaires et des années d'études. L'examen du contenu identifie **2 893 occurrences de valeurs de GPA structurées**, sans permettre de les assimiler automatiquement à 2 893 étudiants distincts. Le volume de 29 000 enregistrements annoncé ne peut donc pas être validé à partir de cet échantillon. L'attribution du jeu de données à `nwu.ac.za` reste incertaine : aucun marqueur explicite tel que le domaine `nwu.ac.za`, une référence à l'Afrique du Sud ou à un campus de North-West University n'a été identifié dans les données fournies. La nomenclature de plusieurs formations et l'utilisation d'un système de notation sur 4.00 présentent également des similitudes avec une autre université utilisant l'acronyme NWU. Ces éléments ne permettent pas de réattribuer la revendication, mais empêchent de confirmer que l'échantillon provient effectivement des systèmes de North-West University en Afrique du Sud. Les éléments disponibles établissent donc **North-West University en Afrique du Sud comme victime revendiquée par SevenZeroDay404**, sans confirmer indépendamment l'origine du jeu de données, l'exhaustivité des 29 000 enregistrements annoncés ni une compromission effective des systèmes de l'université. Si les données sont authentiques, leur exposition pourrait faciliter des campagnes de phishing ciblé et des tentatives d'usurpation d'identité visant des étudiants ou anciens étudiants.
----
+
 ### 21 Janvier 2025
 #### 🇩🇿 Algérie - Centre Universitaire de Barika (cu-barika.dz)
 - **Groupe ransomware:** funksec
@@ -127,7 +124,7 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Niveau de confiance:** Very High
 - **Niveau d'impact:** Level 4
 - **Description victime:** La LNRBDA est une agence stratégique sous la tutelle du ministère fédéral des Ressources en Eau du Nigeria. Elle gère des projets de barrages, d'irrigation, d'approvisionnement en eau potable et de développement rural.
-- **Analyse :** AFRINTEL a examiné un échantillon local de fichiers cohérents avec la revendication du cybercriminel GDLockerSec, comprenant des exports bruts de base de données du backend applicatif de l'agence ainsi qu'un fichier de base de données de sessions. Les tables examinées incluent une table d'informations candidats (66 enregistrements) avec nom complet, date de naissance, zone d'administration locale (LGA), téléphone, email, nom/email/téléphone/adresse d'un répondant/référent, adresse de contact, institution et un champ libre « motif de candidature », cohérent avec un formulaire de candidature à un programme d'insertion professionnelle pour diplômés ; une table utilisateurs stockant des emails accompagnés de mots de passe en clair ; une table d'utilisateurs administratifs contenant des identifiants de compte de niveau administrateur (« AD ») hachés ; ainsi qu'une table de validation associant des codes à usage unique à des numéros de téléphone. Une table d'actualités distincte contient du contenu public courant et n'est pas sensible. La combinaison d'un export structuré multi-tables réellement issu du backend applicatif, d'une base de données de sessions associée, et de la présence de mots de passe utilisateurs en clair et d'identifiants administrateur, soutient une évaluation à très haute confiance d'une compromission réelle et profonde des systèmes de l'agence, plutôt qu'une simple revendication. Compte tenu du statut du LNRBDA en tant qu'agence fédérale nigériane, l'exposition d'identifiants en clair, de comptes administrateur, de données personnelles de candidats et de codes à usage unique liés à des numéros de téléphone crée un risque sévère de prise de contrôle de comptes, de compromission latérale supplémentaire des systèmes gouvernementaux, ainsi que de fraude à l'identité ou de phishing ciblé visant les candidats et leurs référents. AFRINTEL ne reproduit aucun nom, date de naissance, adresse, numéro de téléphone, email, mot de passe ni code issu de l'échantillon examiné.
+- **Analyse:** AFRINTEL a examiné un échantillon local de fichiers cohérents avec la revendication du cybercriminel GDLockerSec, comprenant des exports bruts de base de données du backend applicatif de l'agence ainsi qu'un fichier de base de données de sessions. Les tables examinées incluent une table d'informations candidats (66 enregistrements) avec nom complet, date de naissance, zone d'administration locale (LGA), téléphone, email, nom/email/téléphone/adresse d'un répondant/référent, adresse de contact, institution et un champ libre « motif de candidature », cohérent avec un formulaire de candidature à un programme d'insertion professionnelle pour diplômés ; une table utilisateurs stockant des emails accompagnés de mots de passe en clair ; une table d'utilisateurs administratifs contenant des identifiants de compte de niveau administrateur (« AD ») hachés ; ainsi qu'une table de validation associant des codes à usage unique à des numéros de téléphone. Une table d'actualités distincte contient du contenu public courant et n'est pas sensible. La combinaison d'un export structuré multi-tables réellement issu du backend applicatif, d'une base de données de sessions associée, et de la présence de mots de passe utilisateurs en clair et d'identifiants administrateur, soutient une évaluation à très haute confiance d'une compromission réelle et profonde des systèmes de l'agence, plutôt qu'une simple revendication. Compte tenu du statut du LNRBDA en tant qu'agence fédérale nigériane, l'exposition d'identifiants en clair, de comptes administrateur, de données personnelles de candidats et de codes à usage unique liés à des numéros de téléphone crée un risque sévère de prise de contrôle de comptes, de compromission latérale supplémentaire des systèmes gouvernementaux, ainsi que de fraude à l'identité ou de phishing ciblé visant les candidats et leurs référents. AFRINTEL ne reproduit aucun nom, date de naissance, adresse, numéro de téléphone, email, mot de passe ni code issu de l'échantillon examiné.
 
 ### 24 Janvier 2025
 #### 🇲🇦 Maroc - Université Sidi Mohamed Ben Abdellah (www.usmba.ac.ma)
@@ -139,10 +136,10 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 2
 - **Description victime:** L'USMBA est une université multidisciplinaire comprenant de nombreux établissements (Facultés de Médecine, des Sciences, des Lettres, ENCG, ENSA, etc.).
-- **Analyse :** AFRINTEL a examiné un échantillon local de matériel cohérent avec la revendication du cybercriminel GDLockerSec, constitué de captures affichant une base de données interne structurée des laboratoires et équipes de recherche, restituée via l'outil de visualisation CSV propre à l'acteur. Les enregistrements examinés listent des unités et départements de recherche cohérents avec l'École Normale Supérieure de Fès, rattachée à l'USMBA, ainsi que leurs thématiques de recherche déclarées et projets en cours (couvrant des domaines tels que la chimie de la matière condensée, l'écologie fonctionnelle, le génie mécanique, l'intelligence artificielle et les réseaux de neurones, le traitement automatique du langage, l'entreposage de données et le traitement d'images). Des personnes nommément associées à chaque unité de recherche figurent dans les données sous-jacentes mais ont été caviardées dans le matériel examiné par AFRINTEL. La cohérence entre les unités de recherche listées, leurs thématiques et la structure académique connue de l'USMBA soutient une évaluation à confiance élevée selon laquelle le matériel reflète une base de données interne réelle d'administration de la recherche plutôt qu'un échantillon fabriqué. Le jeu de données exposé concerne principalement l'organisation institutionnelle de la recherche et son personnel plutôt que des dossiers étudiants ou financiers, créant un risque modéré de phishing ciblé et d'usurpation d'identité visant des chercheurs et directeurs de laboratoire nommément identifiés. AFRINTEL ne reproduit aucun nom, identifiant de laboratoire ni détail de projet de recherche au-delà de ce qui est nécessaire pour caractériser la nature de l'exposition.
+- **Analyse:** AFRINTEL a examiné un échantillon local de matériel cohérent avec la revendication du cybercriminel GDLockerSec, constitué de captures affichant une base de données interne structurée des laboratoires et équipes de recherche, restituée via l'outil de visualisation CSV propre à l'acteur. Les enregistrements examinés listent des unités et départements de recherche cohérents avec l'École Normale Supérieure de Fès, rattachée à l'USMBA, ainsi que leurs thématiques de recherche déclarées et projets en cours (couvrant des domaines tels que la chimie de la matière condensée, l'écologie fonctionnelle, le génie mécanique, l'intelligence artificielle et les réseaux de neurones, le traitement automatique du langage, l'entreposage de données et le traitement d'images). Des personnes nommément associées à chaque unité de recherche figurent dans les données sous-jacentes mais ont été caviardées dans le matériel examiné par AFRINTEL. La cohérence entre les unités de recherche listées, leurs thématiques et la structure académique connue de l'USMBA soutient une évaluation à confiance élevée selon laquelle le matériel reflète une base de données interne réelle d'administration de la recherche plutôt qu'un échantillon fabriqué. Le jeu de données exposé concerne principalement l'organisation institutionnelle de la recherche et son personnel plutôt que des dossiers étudiants ou financiers, créant un risque modéré de phishing ciblé et d'usurpation d'identité visant des chercheurs et directeurs de laboratoire nommément identifiés. AFRINTEL ne reproduit aucun nom, identifiant de laboratoire ni détail de projet de recherche au-delà de ce qui est nécessaire pour caractériser la nature de l'exposition.
 
 ### 26 Janvier 2025
-#### 🇳🇬 Nigeria - Achievers Journal of Scientific Research 
+#### 🇳🇬 Nigeria - Achievers Journal of Scientific Research
 - **Groupe ransomware:** funksec
 - **Secteur:** Éducation / Recherche Scientifique / Publication Académique.
 - **Site web:** achieverssciencejournal.org
@@ -177,7 +174,7 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 ### 27 Janvier 2025
 #### 🇿🇲 Zambie - Workers (workers.com.zm)
 - **Groupe ransomware:** babuk2
-- **Secteur:** Services RH / Recrutement 
+- **Secteur:** Services RH / Recrutement
 - **Site web:** workers.com.zm
 - **Statut:** Claim - Data Sample Published
 - **Type d'incident:** Ransomware
@@ -194,3 +191,37 @@ Janvier 2025 compte **17 incidents uniques** : **16 Ransomware**, **1 Data Leak*
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Description victime:** Zetech University est une institution d'enseignement supérieur de premier plan au Kenya.
+
+### 31 Janvier 2025 - date rapportée
+#### Kenya - Business Registration Service (BRS)
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** https://brs.go.ke/
+- **Date de l'incident:** Nuit du 31 janvier 2025 - date rapportée, présentée publiquement comme probable
+- **Date de publication initiale:** 2 février 2025
+- **Statut:** Government Confirmed
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** Le Business Registration Service du Kenya administre le registre national des sociétés et entreprises, comprenant notamment des informations sur les sociétés, administrateurs, actionnaires et bénéficiaires effectifs.
+- **Analyse:** Le 2 février 2025, le Business Registration Service (BRS) a indiqué avoir ouvert une enquête après des signalements de violation potentielle affectant le registre des sociétés. Les informations publiques situaient alors l'attaque dans la nuit du 31 janvier 2025, en la présentant comme une date probable plutôt que comme une date techniquement établie. Le 6 février, le ministère kényan de l'Information, des Communications et de l'Économie numérique a confirmé qu'une violation de données avait eu lieu et qu'une publication non autorisée d'informations avait été supprimée. Les systèmes et bases de données du BRS ont ensuite été annoncés comme sécurisés. Le vecteur d'accès, l'acteur et le périmètre complet des données affectées ne sont pas publiquement établis.
+- **Type de source:** Déclarations gouvernementales rapportées par des médias publics
+- **Sources publiques:** [The Star - BRS statement](https://www.the-star.co.ke/news/realtime/2025-02-02-business-registration-service-assures-of-data-security-amid-alleged-breach) | [The Star - ICT Ministry update](https://www.the-star.co.ke/news/2025-02-06-kabogo-weve-addressed-data-breach-at-business-registration-service)
+
+---
+
+### 31 Janvier 2025
+#### Kenya - Kenya Broadcasting Corporation (KBC)
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Media / Entertainment
+- **Site web:** https://www.kbc.co.ke/
+- **Date de l'incident:** 31 janvier 2025 - date rapportée par Pulse Kenya; la compromission du compte a été confirmée par KBC
+- **Date de publication initiale:** 1 février 2025
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Account Takeover
+- **Sous-type:** Compromised X account / cryptocurrency scam
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 3
+- **Type de source:** Victim Confirmation + Public Media
+- **Analyse:** Pulse Kenya a rapporté le 1er février 2025 que des attaquants avaient pris le contrôle du compte X officiel de KBC le vendredi 31 janvier. KBC a confirmé que le compte `KBCChannel1` avait été compromis et travaillait à en restaurer l'accès. Le compte avait été renommé "DeepSeek AI" et utilisé pour diffuser du contenu lié à des arnaques aux cryptomonnaies. La date de publication publique est donc le 1er février, tandis que l'incident est classé au 31 janvier sur la base de la chronologie rapportée. Les éléments disponibles n'établissent ni une compromission plus large du système d'information de KBC ni l'identité technique de l'acteur.
+- **Sources:** [Pulse Kenya - KBC confirme la compromission de son compte X](https://www.pulse.co.ke/story/kbcs-x-account-hacked-and-name-changed-to-deepseek-ai-2025020111532480629)

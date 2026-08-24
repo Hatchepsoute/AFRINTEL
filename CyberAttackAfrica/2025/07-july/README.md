@@ -1,308 +1,285 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-![Period](https://img.shields.io/badge/Period-July%202025-lightgrey)
+# AFRINTEL CTI Report - Cyber Threats in Africa - July 2025
 
-# CTI Report - Cyberattacks in Africa - July 2025
+👉🏾 [Version française](./README_FR.md)
 
-👉🏾 [**French version available here**](./README_FR.md)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-July%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
 ## 1. Executive summary
 
-July 2025 contains **21 documented incidents across 12 African countries**: **5 Ransomware** and **16 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud is recorded as the primary incident type.
+In July 2025, AFRINTEL documents **25 cyber incidents** affecting organizations and digital services across **13 African countries**.
 
-- **Tunisia**: 5 Data Leak records, all attributed to Dark 07x Team.
-- **Morocco**: 4 Data Leak records.
-- **Algeria**: 2 Data Leak records.
-- **Kenya**: 2 incidents, including 1 Ransomware and 1 Data Leak.
-- **Dark 07x Team** is the most visible label with 5 records.
-- Two records have no identified actor: ICT Authority in Kenya and QCE in Mauritania.
-- Significant technical material is available for CIBN, FNBTP, ICT Authority, Adrian Kenya, EEHC, Otjiwarongo Municipality, QCE, the Tunisian banks and PesaBay.
-- EEHC carries an actor-claimed ransom demand of **$2.27 million**.
-- FNBTP has a reviewed CSV containing **180 rows and 14 columns**.
-- The Embassy of Eritrea in the United States is associated with an unverified claim affecting approximately **5,000 citizens**.
-- PesaBay is classified as **Data Fully Published**, with a database advertised as containing **1,850 records**.
+The landscape is dominated by **Data Leak with 18 records (72.0%)**, followed by **Ransomware with 5 (20.0%)**. Other observed types are System Intrusion 1, Malware 1.
 
-### 📋 Victim list
+Geographic concentration is significant: **Tunisia (7)**, **Morocco (4)**, **Algeria (2)** together account for **13 records, or 52.0% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
-👉🏾 [View the full victim list](./victims.md)
+At sector level, the most represented categories are **Government / Administration (9)**, **Finance / Banking (7)**, **Education / University (3)**. The most frequent actor labels are `Unknown` (5), `Dark 07x Team` (5), `Hepd` (1). `Unknown`, when present, denotes missing attribution rather than a threat actor.
+
+Evidence maturity remains variable: **19 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
+
+Compared with June, monthly volume **increases by 4 records**. The most visible changes are Data Leak 16->18 (+2), System Intrusion 0->1 (+1), Malware 0->1 (+1).
+
+> **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
 ### 1.1 Month-over-month comparison
 
-> Comparison based on validated AFRINTEL monthly corpora. Stable record counts do not mean that real attacker activity or victim impact remained unchanged.
-
-| Indicator | June 2025 | July 2025 | Observed change |
+| Indicator | June 2025 | July 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 21 | 21 | **0 (+0.0%)** |
-| Ransomware | 5 | 5 | **0 (+0.0%)** |
-| Data Leak | 16 | 16 | **0 (+0.0%)** |
-| Access Sale | 0 | 0 | **0 (stable)** |
-| DDoS | 0 | 0 | **0 (stable)** |
-| Defacement | 0 | 0 | **0 (stable)** |
-| Operational Fraud | 0 | 0 | **0 (stable)** |
+| Total incidents | 21 | 25 | **+4 (+19.0%)** |
+| Ransomware | 5 | 5 | **Stable** |
+| Data Leak | 16 | 18 | **+2 (+12.5%)** |
+| Access Sale | 0 | 0 | **Stable** |
+| DDoS | 0 | 0 | **Stable** |
+| Defacement | 0 | 0 | **Stable** |
+| Account Takeover | 0 | 0 | **Stable** |
+| System Intrusion | 0 | 1 | **+1 (new)** |
+| Malware | 0 | 1 | **+1 (new)** |
+| Operational Fraud | 0 | 0 | **Stable** |
+
+
+
 
 ## 2. Methodology
 
-- **Scope**: 54 African countries.
-- **Period**: 1-31 July 2025.
-- **Sources**: OSINT, leak sites, underground forums, actor publications and available samples.
-- **Source of truth**: validated bilingual pair [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), with French editorial review before English synchronization.
-- **Counting**: one card equals one unique incident.
-- **Taxonomy**: Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Qualification**: claim, sample, full publication and technical confirmation remain distinct evidence levels.
-- **Visualization**: tables, text bars, simple Mermaid diagrams and a timeline.
+- **Scope:** 54 African countries; reference period: July 2025.
+- **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
+- **Classification:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware, and Operational Fraud.
+- **Counting:** one canonical record equals one documented cyber incident; cases under investigation remain outside statistics.
+- **Timeline:** `Incident date` and `Initial publication date` remain separate. A later disclosure does not artificially move an incident into another month when chronology is sufficiently supported.
+- **Uncertain dates:** when no exact day is known, the evidence-supported month or time window is retained.
+- **Sources:** public links are retained for supplementary incidents found through OSINT/web research; they are not retroactively imposed on historical or direct Dark Web observations.
+- **Evidence:** incident type, status, confidence, impact, and provenance remain separate dimensions.
+- **Sectors:** normalization is calculated once from the structured corpus and used identically in FR and EN.
+- **Limitation:** frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.
 
-## 3. Global overview
+## 3. Overview and incident types
 
-### 3.1 Incident-type distribution
+| Indicator | Value |
+|---|---:|
+| Documented incidents | **25** |
+| Countries represented | **13** |
+| Regions represented | **5** |
+| Leading country | **Tunisia (7)** |
+| Leading sector | **Government / Administration (9)** |
+| Leading actor label | **Unknown (5)** |
 
-| Incident type | Count | Share |
+| Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 5 | 23.8% |
-| Data Leak | 16 | 76.2% |
+| Ransomware | 5 | 20.0% |
+| Data Leak | 18 | 72.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 1 | 4.0% |
+| Malware | 1 | 4.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **21** | **100%** |
+| **Total** | **25** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - July 2025
     "Ransomware" : 5
-    "Data Leak" : 16
+    "Data Leak" : 18
+    "System Intrusion" : 1
+    "Malware" : 1
 ```
 
-**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
+## 4. Geographic distribution
 
-### 3.2 Country distribution
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Tunisia | **7** | 0 | 6 | 0 | 0 | 0 | 0 | 1 | 0 |
+| Morocco | **4** | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | **2** | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| South Africa | **2** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| Kenya | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tanzania | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Egypt | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mauritania | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Eritrea | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Burundi | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Seychelles | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **25** | **5** | **18** | **0** | **0** | **0** | **0** | **1** | **1** |
 
-| Country | Ransomware | Data Leak | Total | Distribution |
-|---|---:|---:|---:|---|
-| 🇹🇳 Tunisia | 0 | 5 | 5 | 🟦🟦🟦🟦🟦 |
-| 🇲🇦 Morocco | 0 | 4 | 4 | 🟦🟦🟦🟦 |
-| 🇩🇿 Algeria | 0 | 2 | 2 | 🟦🟦 |
-| 🇰🇪 Kenya | 1 | 1 | 2 | 🟧🟦 |
-| 🇪🇬 Egypt | 1 | 0 | 1 | 🟧 |
-| 🇪🇷 Eritrea | 0 | 1 | 1 | 🟦 |
-| 🇲🇷 Mauritania | 0 | 1 | 1 | 🟦 |
-| 🇳🇦 Namibia | 1 | 0 | 1 | 🟧 |
-| 🇳🇬 Nigeria | 0 | 1 | 1 | 🟦 |
-| 🇿🇦 South Africa | 1 | 0 | 1 | 🟧 |
-| 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |
-| 🇧🇮 Burundi | 0 | 1 | 1 | 🟦 |
-| **Total** | **5** | **16** | **21** | |
+> `Operational Fraud = 0` this month; the column is omitted for readability.
 
-### 3.3 Geographic distribution by region
+## 5. Regional distribution
 
-| Region | Incidents | Share | Activity |
+| Region | Records | Share |
+|---|---:|---:|
+| North Africa | 14 | 56.0% |
+| East Africa | 5 | 20.0% |
+| Southern Africa | 3 | 12.0% |
+| West Africa | 2 | 8.0% |
+| Indian Ocean | 1 | 4.0% |
+| **Total** | **25** | **100%** |
+
+The leading region is **North Africa with 14 records (56.0%)**.
+
+## 6. Sector impact
+
+| Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| North Africa | 13 | 61.9% | ██████████ |
-| East Africa | 5 | 23.8% | ████ |
-| Southern Africa | 2 | 9.5% | ██ |
-| West Africa | 1 | 4.8% | █ |
-| Central Africa | 0 | 0.0% |  |
-| **Total** | **21** | **100%** | |
+| Government / Administration | 9 | 36.0% | █████████ |
+| Finance / Banking | 7 | 28.0% | ███████ |
+| Education / University | 3 | 12.0% | ███ |
+| Telecommunications | 2 | 8.0% | ██ |
+| Mining | 1 | 4.0% | █ |
+| Construction / Real Estate | 1 | 4.0% | █ |
+| Retail / E-commerce | 1 | 4.0% | █ |
+| Healthcare / Medical | 1 | 4.0% | █ |
+| **Total** | **25** | **100%** | |
 
-### 3.4 Harmonized sector distribution
+## 7. Actors / groups
 
-| Harmonized sector | Incidents | Share | Activity |
-|---|---:|---:|---|
-| Government / Administration | 8 | 38.1% | ██████████ |
-| Finance / Banking | 6 | 28.6% | ████████ |
-| Education / University / Training | 2 | 9.5% | ██ |
-| Telecommunications / ICT | 2 | 9.5% | ██ |
-| Construction / Professional Organisation | 1 | 4.8% | █ |
-| Mining / Industrial Services | 1 | 4.8% | █ |
-| Retail / E-commerce | 1 | 4.8% | █ |
-| **Total** | **21** | **100%** | |
+`Unknown` denotes missing attribution, not a threat actor.
 
-### 3.5 Actors / groups
-
-| Actor / Group | Incidents | Activity |
+| Actor / Group | Records | Activity |
 |---|---:|---|
-| Dark 07x Team | 5 | ██████████ |
-| Unknown | 2 | ████ |
-| BabayoSysteam | 1 | ██ |
-| d4rk4rmy | 1 | ██ |
-| Evil_BYTE_Officiel | 1 | ██ |
-| Gh1nDar | 1 | ██ |
-| Hepd | 1 | ██ |
-| Keymous | 1 | ██ |
-| lynx | 1 | ██ |
-| Mercobyte | 1 | ██ |
-| nightspire | 1 | ██ |
-| Phantom Atlas | 1 | ██ |
-| sanji_shi5 | 1 | ██ |
-| devman | 1 | ██ |
-| incransom | 1 | ██ |
-| Wieko | 1 | ██ |
-| **Total** | **21** | |
+| Unknown | 5 | █████ |
+| Dark 07x Team | 5 | █████ |
+| Hepd | 1 | █ |
+| sanji_shi5 | 1 | █ |
+| d4rk4rmy | 1 | █ |
+| Evil_BYTE_Officiel | 1 | █ |
+| nightspire | 1 | █ |
+| Keymous | 1 | █ |
+| Phantom Atlas | 1 | █ |
+| lynx | 1 | █ |
+| devman | 1 | █ |
+| incransom | 1 | █ |
+| Mercobyte | 1 | █ |
+| Gh1nDar | 1 | █ |
+| Wieko | 1 | █ |
+| BabayoSysteam | 1 | █ |
+| Jokeir 07x / Dr Shell 08x (claim) | 1 | █ |
 
-### 3.6 Actor -> country mapping
+## 8. Evidence maturity
 
-```mermaid
-flowchart LR
-    D07["Dark 07x Team - 5"] --> TN["🇹🇳 Tunisia - 5"]
-    UNK["Unknown - 2"] --> KE["🇰🇪 Kenya - 1"]
-    UNK --> MR["🇲🇷 Mauritania - 1"]
-    HEP["Hepd - 1"] --> NG["🇳🇬 Nigeria - 1"]
-    SAN["sanji_shi5 - 1"] --> DZ["🇩🇿 Algeria - 1"]
-    D4R["d4rk4rmy - 1"] --> ZA["🇿🇦 South Africa - 1"]
-    EBO["Evil_BYTE_Officiel - 1"] --> MA["🇲🇦 Morocco - 1"]
-    NIG["nightspire - 1"] --> TZ["🇹🇿 Tanzania - 1"]
-    KEY["Keymous - 1"] --> MA
-    PHA["Phantom Atlas - 1"] --> DZ
-    LYN["lynx - 1"] --> KE
-    DEV["devman - 1"] --> EG["🇪🇬 Egypt - 1"]
-    INC["incransom - 1"] --> NA["🇳🇦 Namibia - 1"]
-    MER["Mercobyte - 1"] --> MA
-    GHI["Gh1nDar - 1"] --> ER["🇪🇷 Eritrea - 1"]
-    WIE["Wieko - 1"] --> MA
-    BAB["BabayoSysteam - 1"] --> BI["🇧🇮 Burundi - 1"]
-```
+| Evidence maturity | Records | Share |
+|---|---:|---:|
+| Claim - Unverified | 6 | 24.0% |
+| Claim - Data Sample Published | 13 | 52.0% |
+| Data Fully Published | 2 | 8.0% |
+| Victim/Government/Authority Confirmed | 2 | 8.0% |
+| Corroborated / Secondary evidence | 1 | 4.0% |
+| Attempted | 1 | 4.0% |
+| **Total** | **25** | **100%** |
 
-## 4. Detailed analysis by incident type
+Evidence statuses describe the available validation level; they do not change the technical incident type.
 
-### 4.1 Ransomware - 5 incidents
-
-The five Ransomware records concern:
-
-- **MAFATE BUSINESS ENTERPRISE** in South Africa, claimed by d4rk4rmy.
-- **Twaweza** in Tanzania, claimed by nightspire.
-- **Adrian Kenya** in Kenya, claimed by lynx, with four reviewed documents.
-- **Egyptian Electricity Holding Company (EEHC)** in Egypt, claimed by devman, with a reviewed internal-share listing covering approximately 8,000 folders and more than 50,000 file entries; the displayed ransom demand is $2.27 million.
-- **Otjiwarongo Municipality** in Namibia, claimed by incransom, with a municipal payroll sample consistent with real HR and banking-data access.
-
-### 4.2 Data Leak - 16 incidents
-
-The 16 Data Leak records account for **76.2%** of the monthly corpus.
-
-Significant cases include:
-
-- **CIBN Nigeria**: structured archive of 472 files and approximately 18 MB covering multiple categories of member, staff and system data.
-- **Algeria Post / ECCP**: sample of claimed account-access data that was not validated.
-- **FNBTP Morocco**: freely published database with 180 rows and 14 columns in the reviewed CSV.
-- **Algerian Ministry of Energy / SOPRETA**: a likely authentic administrative document, while the actor's accusatory framing is not corroborated by the analysis.
-- **ICT Authority Kenya**: 1,697-row CSV export with no identified actor.
-- **QCE Mauritania**: qualification dossiers containing CVs, national IDs, diplomas and contracts, with no identified actor.
-- **UM6P Morocco**: targeted data-leak and influence-operation claim without collection of the underlying dataset.
-- **Dark 07x Team in Tunisia**: five records involving the Ministry of Finance, Academy of Banks and Finance, BTK Bank, Banque de Tunisie and BH Bank. Several samples show authenticated administrative or banking sessions. Some publications also contain sale offers, but the cards remain classified as Data Leak because direct data exposure and access are documented.
-- **Embassy of Eritrea in the United States**: unverified claim affecting approximately 5,000 citizens.
-- **Moroccan Ministry of Education**: claimed 223,501-line combo list; the material does not establish direct compromise of the ministry's central systems.
-- **PesaBay Burundi**: database advertised as complete with 1,850 accounts.
-
-## 5. Sectoral impact
-
-**Government / Administration** is the leading harmonized category with **8 of 21 incidents (38.1%)**.
-
-**Finance / Banking** accounts for **6 incidents (28.6%)**, including CIBN, Algeria Post/ECCP, the Academy of Banks and Finance and the three Tunisian banks BTK, Banque de Tunisie and BH Bank.
-
-**Education / University / Training** and **Telecommunications / ICT** account for 2 incidents each. Construction / Professional Organisation, Mining / Industrial Services and Retail / E-commerce each account for 1.
-
-## 6. Threat actor profile
-
-**Dark 07x Team** dominates the month with **5 records**, all in Tunisia. **Unknown** appears on 2 records: ICT Authority and QCE. The other fourteen labels appear once.
-
-The `Actor / Group` field was normalized: `sanji_shi5 (source account)` becomes `sanji_shi5`, while the two unattributed cases use the structured value `Unknown` in both languages.
-
-## 7. Key trends and intelligence gaps
-
-### 7.1 Observed trends
-
-1. **Stable volume**: 21 incidents in both June and July.
-2. **Identical type mix**: 5 Ransomware and 16 Data Leak in both months.
-3. **Tunisia leads**: 5 incidents, all linked to a Dark 07x Team campaign.
-4. **Morocco**: 4 Data Leak records.
-5. **Strong Data Leak majority**: 76.2% of the corpus.
-6. **North Africa highly represented**: 13 of 21 incidents.
-7. **Uneven evidence depth**: unverified claims, structured samples, authenticated sessions and full publications coexist in the same corpus.
-
-### 7.2 Intelligence gaps
-
-- Initial-access vectors remain unknown for most incidents.
-- Several volumes or victim counts remain actor claims.
-- The exact origin of Algeria Post / ECCP credentials is not established.
-- ICT Authority and QCE have no identified actor.
-- The Moroccan Ministry of Education case is based on a multi-institution combo list and does not demonstrate compromise of the ministry's central systems.
-- The Eritrean Embassy claim has no verifiable sample in the collected material.
-
-### 7.3 Monthly evolution
-
-| Type | June 2025 | July 2025 | Change |
-|---|---:|---:|---:|
-| Total | 21 | 21 | **0 (stable)** |
-| Ransomware | 5 | 5 | **0 (stable)** |
-| Data Leak | 16 | 16 | **0 (stable)** |
-| Access Sale | 0 | 0 | **0 (stable)** |
-
-## 8. Summary timeline
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - July 2025
-    01 July : Hepd - CIBN Nigeria
-    03 July : sanji_shi5 - Algeria Post / ECCP
-    08 July : d4rk4rmy - MAFATE
-    09 July : Evil_BYTE_Officiel - FNBTP
-    13 July : nightspire - Twaweza
-    14 July : Keymous - IWACLUB
-            : Phantom Atlas - Algerian Ministry of Energy / SOPRETA
-            : Unknown - ICT Authority Kenya
-    15 July : lynx - Adrian Kenya
-            : devman - EEHC
-            : incransom - Otjiwarongo Municipality
-            : Unknown - QCE Mauritania
-    18 July : Mercobyte - UM6P
-    25 July : Dark 07x Team - Tunisia Ministry of Finance
-            : Dark 07x Team - Academy of Banks and Finance
-            : Dark 07x Team - BTK Bank
-            : Dark 07x Team - Banque de Tunisie
-    27 July : Gh1nDar - Embassy of Eritrea in the United States
-    28 July : Dark 07x Team - BH Bank
-    29 July : Wieko - Morocco Ministry of Education
-    30 July : BabayoSysteam - PesaBay
+    01 July 2025 : Chartered Institute of Bankers of Nigeria (CIBN)
+    03 July 2025 : Algeria Post / ECCP
+    08 July 2025 : MAFATE BUSINESS ENTERPRISE
+    09 July 2025 : Fédération Nationale du Bâtiment et des Travaux Publics (FNBTP)
+    10 July 2025 : University network / Centre Al-Khwarizmi
+    13 July 2025 : Twaweza
+    14 July 2025 : IWACLUB (iwaclub.ma)
+    14 July 2025 : Ministry of Energy, Mines and Renewable Energies / SARL SOPRETA
+    14 July 2025 : ICT Authority (icta.go.ke)
+    15 July 2025 : Adrian Kenya
+    15 July 2025 : Egyptian Electricity Holding Company (EEHC, eehc.gov.eg)
+    15 July 2025 : Otjiwarongo Municipality
+    15 July 2025 : QCE Portal (qce.gov.mr)
+    18 July 2025 : Mohammed VI Polytechnic University (UM6P)
+    22 July 2025 : National Treasury - Infrastructure Reporting Model (IRM) website
+    25 July 2025 : Ministry of Finance (finances.gov.tn)
+    25 July 2025 : Academy of Banks and Finance (abf.tn)
+    25 July 2025 : BTK Bank
+    25 July 2025 : Banque de Tunisie (bt.com.tn)
+    27 July 2025 : Embassy of Eritrea in the United States
+    28 July 2025 : BH Bank
+    29 July 2025 : Ministry of National Education, Preschool and Sports
+    30 July 2025 : PesaBay
+    31 July 2025 : Le Groupement Pharmaceutique (LGP)
+    July 2025 - exact incident date not publicly disclosed : Seychelles Commercial Bank
 ```
 
-## 9. MITRE ATT&CK mapping - contextual
+## 10. Monthly CTI analysis
 
-| Phase | Technique | Analytical scope |
-|---|---|---|
-| Valid accounts | T1078 - Valid Accounts | Relevant to authenticated administrative or banking sessions observed in several Tunisian cases. |
-| Collection | T1005 - Data from Local System | Relevant to reviewed documents, exports and internal directories. |
-| Collection | T1213 - Data from Information Repositories | Relevant to CIBN, FNBTP, ICT Authority, QCE and PesaBay databases. |
-| Discovery | T1083 - File and Directory Discovery | Relevant context for the EEHC share inventory, without direct evidence of the command or tooling used by the actor. |
+### Ransomware
 
-> These mappings are contextual and do not prove that every actor used the listed techniques.
+**5 records** are classified as Ransomware. Leading countries: South Africa (1), Tanzania (1), Kenya (1). A leak-site listing does not itself prove encryption or complete exfiltration.
 
-## 10. Recommendations
+### Data Leak
 
-- **Banking / Finance**: phishing-resistant MFA, session monitoring, anomalous-login detection, transfer protection and export controls.
-- **Public sector**: PAM, segmentation, administrative-access logging and database-export monitoring.
-- **Education**: identity controls, combo-list detection and source validation before attributing credentials to a central compromise.
-- **Telecommunications / ICT**: protect partner portals, administrator accounts and project data.
-- **E-commerce**: restrict customer exports, encrypt sensitive data and monitor production-database access.
+**18 records** are classified as Data Leak. Leading countries: Tunisia (6), Morocco (4), Algeria (2). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
-## 11. SOC and tactical recommendations
+### System Intrusion
 
-### Observed
+**1 System Intrusion records** are documented. Distribution: Tunisia (1). The type is used where system access or attempted access is established without enough evidence for a more specific category.
 
-The corpus includes claims, published databases, structured exports, authenticated administrative or banking sessions, internal documents and file inventories.
+### Malware
 
-### Assumptions
+**1 Malware incident(s)** are documented. Distribution: South Africa (1). The type is used only where malicious software is explicitly identified.
 
-Initial vectors, persistence mechanisms and complete exfiltration paths are not established for most cases.
+## 11. Notable incidents
 
-### Preventive
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Seychelles | Seychelles Commercial Bank | Data Leak | Bank + Central Bank Confirmed | Level 4 | Very High |
+| Tunisia | University network / Centre Al-Khwarizmi | System Intrusion | Attempted - Outcome Unknown | Level 4 | High |
+| Egypt | Egyptian Electricity Holding Company (EEHC, eehc.gov.eg) | Ransomware | Claim - Data Sample Published | Level 4 | High |
+| Tunisia | Le Groupement Pharmaceutique (LGP) | Data Leak | Claim - Secondary Evidence / Screenshots | Level 4 | Medium |
+| South Africa | National Treasury - Infrastructure Reporting Model (IRM) website | Malware | Government Confirmed | Level 3 | Very High |
 
-Monitor privileged authentication, anomalous logins, large exports, database access, archive creation, unusual banking sessions and outbound transfers. Maintain MFA, PAM, EDR, segmentation, immutable backups and rapid session/secret revocation procedures.
+> This table highlights up to five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.
 
-## 12. Conclusion
+## 12. Key findings and intelligence gaps
 
-July 2025 contains **21 incidents across 12 countries**, split into **5 Ransomware and 16 Data Leak**. The volume and incident-type distribution are identical to June, but evidence depth varies significantly between cases.
+- **Geographic concentration:** Tunisia accounts for 7 records (28.0%), followed by Morocco (4) and Algeria (2).
+- **Threat structure:** Data Leak is the leading type with 18 records, followed by Ransomware (5).
+- **Sectors:** Government / Administration (9) and Finance / Banking (7) have the highest visibility.
+- **Actors:** the most frequent labels are Unknown (5), Dark 07x Team (5), and Hepd (1).
+- **Evidence:** 19 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
 
-Tunisia accounts for 5 incidents linked to Dark 07x Team, while Morocco records 4. The Tunisian banking cases, EEHC, Otjiwarongo, ICT Authority, QCE, FNBTP and PesaBay illustrate the distinction between a simple claim, authenticated access, reviewed sample and full publication.
+### Intelligence gaps
 
-**AFRINTEL** - Open African CTI Monitoring Initiative
+- initial-access vector often not public;
+- exact technical compromise date sometimes unknown;
+- claimed volumes rarely fully verifiable;
+- technical attribution often limited to a publication handle or label;
+- public remediation, root-cause, and DFIR conclusions remain limited.
+
+These gaps should guide collection rather than be replaced with assumptions.
+
+## 13. Recommendations
+
+### Organizations
+
+- enforce phishing-resistant MFA on privileged accounts, VPN, email, social media, and administration consoles;
+- apply PAM, least privilege, segmentation, and secret rotation;
+- maintain immutable backups and test restoration;
+- strengthen public applications, APIs, and administration interfaces;
+- formalize incident response and data-breach notification.
+
+### SOC and detection
+
+- monitor abnormal authentication, MFA changes, privileged-account creation, and role elevation;
+- detect mass database reads, unusual exports, archive creation, and large outbound transfers;
+- correlate EDR, IAM, VPN, WAF, proxy, DNS, cloud, and application logs;
+- distinguish DDoS, internal intrusion, account compromise, and data exposure to avoid unsupported conclusions.
+
+### CTI
+
+- keep incident date, initial publication, first observation, sample, disclosure, and confirmation separate;
+- track republication and resale without automatically counting them as new compromise;
+- preserve the evidence hierarchy between claim, corroboration, and confirmation;
+- validate FR/EN parity before generating statistics.
+
+## 14. Conclusion
+
+**July 2025** contains **25 documented cyber incidents** across **13 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
+
+The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.
+
+👉🏾 [See monthly victims](./victims.md)
+
+**AFRINTEL** - TLP:CLEAR

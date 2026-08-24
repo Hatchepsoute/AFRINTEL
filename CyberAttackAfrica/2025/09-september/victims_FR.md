@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Septembre 2025 (18 victimes)
+
+# Victimes africaines - Septembre 2025
+
 👉🏾 [**English version available here**](./victims.md)
 
-## Résumé du mois
+## Synthèse mensuelle
 
-Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **11 pays africains**.
+**19 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 11, Data Leak 7, DDoS 1.
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Septembre 2025
 
@@ -23,19 +21,35 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** L'Université des Frères Mentouri Constantine 1 (UMC1) est une grande université publique algérienne. L'acteur revendicateur affirme une exfiltration de plus de 10 Go, un volume qu'AFRINTEL n'a pas collecté ni analysé. Les fichiers examinés, exfiltrés via ce qui semble être une plateforme web académique partagée (university-dz.net), comprennent les plannings d'examens du Master 2 semestre 1 (janvier 2025) avec dates, modules, salles et départements ; un ensemble de plus de 200 dossiers étudiants détaillés (nom complet, numéro d'inscription universitaire, groupe TD et notes par matière, avec annotations de statut telles qu'exclusion/admission) d'étudiants de L1 (promotion 2015-2016) ; un annuaire de conformité véhicules avec numéros de téléphone et emails ; et un modèle de conférence listant des contacts et affiliations pour un événement académique 2024 (NCME). La combinaison de dossiers académiques, de coordonnées personnelles et de documents administratifs crée un risque significatif de fraude à l'identité, de phishing ciblé et de vishing contre les étudiants, le personnel et les contacts affiliés. L'acteur revendicateur s'identifie sous le nom « Fire Wire ».
 
+### 03 Septembre 2025
+#### Maroc - Government portals + Maroc Telecom (campaign)
+- **Acteur / Groupe:** Keymous (claim)
+- **Secteur:** Government / Administration
+- **Site web:** Multiple government portals / Maroc Telecom
+- **Date de l'incident:** 3 septembre 2025 - date rapportée pour la campagne; publication secondaire le 10 septembre
+- **Date de publication initiale:** 10 septembre 2025
+- **Statut:** Claim - OSINT Availability Evidence
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Description victime:** La campagne signalée a affecté des portails gouvernementaux marocains et des services de télécommunications, avec des références à Maroc Telecom.
+- **Analyse:** Plusieurs portails gouvernementaux marocains et services de télécommunications auraient subi des perturbations lors d'une campagne DDoS revendiquée, avec notamment des erreurs HTTP 522-525 et des délais d'attente. L'attribution est auto-revendiquée et le périmètre exact des cibles reste incomplètement validé. AFRINTEL enregistre un seul incident de campagne avec une confiance moyenne.
+- **Type de source:** Secondary CTI + Availability Evidence
+- **Sources publiques:** [CyHawk Africa](https://cyhawk-africa.com/ddos/multiple-government-websites-reportedly-disrupted-in-retaliatory-cyber-campaign/)
+
 ### 04 Septembre 2025
 #### 🇳🇬 Nigeria - MobileSub
 - **Acteur / Groupe:** Not specified
 - **Secteur:** Fintech / Services de paiement
 - **Site web:** [mobilesub.com.ng](https://mobilesub.com.ng)
-- **Date du fichier source:** 4 septembre 2025
+- **Date du fichier source :** 4 septembre 2025
 - **Statut:** Claim - Data Sample Published
 - **Type d'incident:** Data Leak
 - **Niveau de confiance:** Medium
 - **Niveau d'impact:** Level 3
 - **Description victime:** MobileSub est une plateforme nigériane de services numériques fournissant des fonctions d'achat de crédit mobile, de données, d'électricité, de télévision par câble, de paris et de paiement associées.
 - **Analyse:** AFRINTEL a examiné un dump SQL local d'environ 14,3 Mo contenant 42 tables et 306 blocs INSERT. Le schéma comprend des comptes utilisateurs, la KYC, des clés API, l'historique des transactions, les transferts, l'airtime, les données mobiles, l'électricité, les inscriptions aux examens, les paris, la télévision par câble et d'autres modules de paiement, ainsi que des tables de sauvegarde d'utilisateurs. L'horodatage du fichier source est le 4 septembre 2025 ; il est traité comme un horodatage de découverte/source AFRINTEL, et non comme la date prouvée de la compromission initiale. Le jeu de données peut exposer des informations d'identité, de contact, de KYC, de transaction et d'authentification. Aucune valeur personnelle, clé API ou identifiant n'est reproduit. L'authenticité, l'exhaustivité et le contexte de publication restent non vérifiés.
-- **Note d'analyse source:** Le dump contient des catégories de tables sensibles aux identifiants et aux secrets ; AFRINTEL n'a tenté aucune authentification, aucun accès ni récupération de secret.
+- **Note d'analyse source :** Le dump contient des catégories de tables sensibles aux identifiants et aux secrets ; AFRINTEL n'a tenté aucune authentification, aucun accès ni récupération de secret.
 
 ### 05 Septembre 2025
 #### 🇪🇬 Égypte - MeamarGroup
@@ -47,7 +61,7 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Niveau de confiance:** Very High
 - **Niveau d'impact:** Level 3
 - **Description victime:** MeamarGroup (incluant Meamar Real Estate Development et Meamar Construction) est un acteur majeur du secteur de la construction en Égypte depuis plus de 25 ans. Basé au Caire (New Cairo), le groupe gère plus de 400 projets allant des complexes résidentiels de luxe aux installations industrielles et médicales (comme l'usine Biogeneric Pharma).
-- **Analyse:** AFRINTEL a examiné une archive locale côté serveur (491 fichiers et dossiers, tous appartenant au compte du serveur web www-data) cohérente avec cette revendication. Les horodatages de dossiers de cette collecte se regroupent autour du 05 septembre 2025, correspondant à la date de revendication de cette fiche, tandis que la majorité des fichiers sous-jacents porte un horodatage antérieur du 27 août 2025, suggérant une étape initiale de préparation des données avant la revendication publique. Voir l'analyse complète sous la fiche du 13 octobre 2025 (« meamargroup.com (troisième attaque) »), qui documente en détail la même archive, incluant des grands livres comptables internes, une importante archive de centre d'appels commercial/contacts prospects, des CV d'employés, et des copies de fichiers portant l'extension de chiffrement ransomware « .obscura ». AFRINTEL considère ces éléments comme des enregistrements liés à la même compromission sous-jacente plutôt que comme des incidents indépendants. AFRINTEL ne reproduit aucun nom de client, numéro de contact, nom d'employé ni montant financier issu du matériel examiné.
+- **Analyse:** AFRINTEL a examiné une archive locale côté serveur (491 fichiers et dossiers, tous appartenant au compte du serveur web www-data) cohérente avec cette revendication. Les horodatages de dossiers de cette collecte se regroupent autour du 05 septembre 2025, correspondant à la date de revendication de cette fiche, tandis que la majorité des fichiers sous-jacents porte un horodatage antérieur du 27 août 2025, suggérant une étape initiale de préparation des données avant la revendication publique. Le contenu examiné comprend des classeurs comptables internes pluriannuels, une importante archive de centre d'appels commercial/contacts prospects, des CV d'employés ainsi que du matériel interne de conception et de plans CAO pour des projets immobiliers. Une archive imbriquée contient des fichiers originaux ainsi que des copies portant l'extension de chiffrement `.obscura`, ce qui soutient directement l'existence d'une étape de chiffrement et non une simple revendication d'exfiltration. Un court fichier texte cohérent avec un compte à rebours de portail de négociation Tor était également présent. La combinaison de la propriété des fichiers par le serveur web, d'horodatages cohérents et de copies chiffrées par l'acteur soutient une évaluation à très haute confiance d'une compromission réelle de l'environnement de fichiers interne de MeamarGroup. AFRINTEL ne reproduit aucun nom de client, numéro de contact, nom d'employé ni montant financier issu du matériel examiné.
 
 ### 06 Septembre 2025
 #### 🇨🇮 Côte d'Ivoire - NSIA Assurances
@@ -107,7 +121,6 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Description victime:** Institution financière basée à Windhoek, offrant des services de gestion de patrimoine, de conseil en investissement et de courtage en Namibie.
 - **Analyse:** Des éléments de messagerie exfiltrés rattachés à la revendication (correspondance envoyée depuis et vers les boîtes de réception et d'administration d'EPIA avec Bank Windhoek/Capricorn Group, First National Bank of Namibia et NamPost, relative à des vérifications de comptes clients) sont examinés, ainsi que la structure d'un échantillon représentatif de fichiers d'administration de fonds de pension au niveau des champs/colonnes, sans ouvrir ni extraire de ligne individuelle d'adhérent. Les éléments examinés correspondent au rôle d'EPIA en tant qu'administrateur du Namibia Building Workers Pension Fund (NBWPF) et d'autres clients institutionnels. Les classeurs de données d'adhérents (par exemple un extrait de janvier 2025) contiennent plusieurs feuilles de plusieurs milliers d'enregistrements chacune (Actives, Deferred, Unclaimed, Exits) partageant un schéma de champs cohérent : numéro de membre, nom, prénom, autres prénoms, référence entreprise, date de naissance, numéro d'identité nationale, numéro de passeport, statut cotisant, statut du membre, nom de l'employeur, genre, dates d'emploi et d'adhésion au fonds, salaire mensuel et annuel, montant et date du solde du fonds (fund credit), date de dernière cotisation, date de sortie et détails de paiement. Un extrait de données actuarielles distinct couvre la période de septembre 2022 à avril 2024 avec un schéma et une ampleur comparables. D'autres fichiers inspectés structurellement incluent des rapports d'administration et d'allocation de revenus pluriannuels (résumés agrégés de transactions financières par période) et des formulaires d'autorisation client signés, le plus récent daté de juin 2025. AFRINTEL n'a pas ouvert chaque fichier de l'ensemble ; la cohérence des noms de fichiers et la correspondance par e-mail indiquent que les mêmes catégories d'enregistrements se répètent sur toute la période 2022-2025. La combinaison de numéros d'identification nationale, de dates de naissance, de données salariales et de solde de fonds de pension pour plusieurs milliers d'individus, avec la correspondance employeur et bancaire, représente une exposition à fort impact. L'étendue, la continuité jusqu'à mi-2025 et la spécificité organisationnelle des éléments examinés soutiennent un niveau de confiance élevé quant à la compromission de la messagerie et des fichiers, indépendamment de la revendication publique du groupe ransomware. L'ensemble local contient 73 fichiers pour environ 79,8 Mo, comprenant des tableurs, des rapports, des présentations, un fichier DOCX d'employeur et des fichiers image. Le classeur d'adhérents de janvier 2025 contient une feuille de synthèse et des feuilles d'état des membres (Actives, Deferred, Unclaimed et Exits), avec une feuille de synthèse allant jusqu'à 8 652 lignes et des feuilles allant jusqu'à 35 colonnes ; la structure examinée comprend des champs relatifs aux membres, employeurs, identités, emplois, salaires, crédits de pension, cotisations, sorties et paiements. L'extrait actuariel contient 8 168 lignes et 167 colonnes pour une période allant de septembre 2022 à avril 2024. Les éléments horodatés du 11 septembre 2025 sont cohérents avec le contexte de découverte de septembre. Aucun nom d'adhérent, numéro d'identification, coordonnée bancaire, signature, montant de salaire ni contenu de correspondance n'est reproduit à partir de l'échantillon examiné.
 
-
 ### 11 Septembre 2025
 #### 🇦🇴 Angola - Base de données des employés du gouvernement angolais (pape.gov.ao)
 - **Type d'incident:** Data Leak
@@ -117,6 +130,7 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** La source présente pape.gov.ao comme une plateforme liée au gouvernement angolais et affirme proposer des dossiers d'employés de différents secteurs et domaines administratifs.
 - **Analyse:** La publication du 11 septembre 2025 revendique une base de données de 245 employés du gouvernement angolais et énumère des champs relatifs aux identifiants d'employés, noms, dates de naissance, zones administratives et fonctions. Le fichier TXT local fourni pour examen contient 244 lignes non vides séparées par des virgules, dont une ligne d'en-tête et environ 243 lignes de données, avec six champs par ligne. Cela confirme l'existence d'un échantillon structuré de données d'employés, mais ne permet pas de confirmer indépendamment le total annoncé, l'organisme gouvernemental exact, l'authenticité ou l'exhaustivité du jeu de données. AFRINTEL ne reproduit aucun nom, identifiant, date de naissance ni autre donnée personnelle issue du fichier.
+
 ### 12 Septembre 2025
 #### 🇨🇩 Congo (RDC) - Fonds pour la Réforme de l'Administration Publique (FRAP)
 - **Type d'incident:** Data Leak
@@ -161,15 +175,14 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Site web:** https://fractalite.com
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
-- **Description victime:** Fractalite est une agence de conseil et d'ingénierie numérique marocaine, spécialisée dans le développement de solutions logicielles et l'accompagnement digital des entreprises. 
-
+- **Description victime:** Fractalite est une agence de conseil et d'ingénierie numérique marocaine, spécialisée dans le développement de solutions logicielles et l'accompagnement digital des entreprises.
 
 ### 24 Septembre 2025
 #### 🇳🇬 Nigeria - Kolomoni Microfinance Bank
 - **Acteur / Groupe:** Not specified
 - **Secteur:** Microfinance / Banque
 - **Site web:** [kolomonimfb.com](https://kolomonimfb.com)
-- **Date de l'archive source:** 24 septembre 2025
+- **Date de l'archive source :** 24 septembre 2025
 - **Statut:** Claim - Data Sample Published
 - **Type d'incident:** Data Leak
 - **Niveau de confiance:** Medium
@@ -194,8 +207,3 @@ Septembre 2025 compte **18 incidents uniques** : **11 Ransomware**, **7 Data Lea
 - **Site web:** te.eg
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Telecom Egypt exploite le service d'accès internet TE Data. L'échantillon examiné contient des enregistrements de type comptabilité RADIUS (identifiants abonnés au format tedata.net.eg, adresses IP de NAS, adresses MAC, adresses IP attribuées, horodatages de début/fin de session et type de connexion). Seul un nombre restreint d'enregistrements (36) était disponible pour analyse, ce qui limite l'évaluation de l'ampleur totale ; l'exposition pourrait néanmoins faciliter l'identification d'abonnés et la reconnaissance réseau.
-
-## ✍🏿 Auteur
-*Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)

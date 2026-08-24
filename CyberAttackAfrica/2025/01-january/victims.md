@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in January 2025 (17 victims)
-[**French version available here**](./victims_FR.md)
+
+# African victims - January 2025
+
+👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **8 African countries**.
+**19 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 16, Data Leak 2, Account Takeover 1.
 
-> `victims_FR.md` is the editorial control file. After validation, the English `victims.md` version is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## January 2025
 
@@ -73,8 +71,6 @@ January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak*
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Sharm Reef Hotel is a 4-star resort located on the Um El Sid plateau in Sharm El Sheikh, Egypt.
----
-
 
 ### 15 January 2025
 #### 🇪🇬 Egypt - Misr Technology Services (MTS / mts.gov.eg)
@@ -87,7 +83,7 @@ January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak*
 - **Impact level:** Level 3
 - **Victim Description:** Misr Technology Services (MTS) is the Egyptian government entity responsible for developing and managing the national trade facilitation platform, including the Nafeza system.
 - **Analysis:** AFRINTEL reviewed a local set of screenshots and system-generated PDF captures consistent with the claim made by the threat actor funksec, produced by internal systems of the Maritime Transport and Logistics Sector, including the Egyptian Maritime Data Bank. The reviewed material includes an individual permit-application record naming an applicant, an affiliated shipping agency and a submission date; a port-traffic comparison report listing vessel-call statistics by port for 2023 and 2024; a list of port investment projects and opportunities; and detailed sector payment-collection reports covering several date ranges between January and April 2024, listing client names, transaction types, reference numbers and payment amounts collected through the sector's point-of-sale channel. Two of the reviewed documents carry a system print timestamp of 14 and 15 January 2025, consistent with the claim's publication date. The presence of internally generated, dated reports bearing named applicants and clients, combined with the platform's own letterhead and print metadata, supports a high confidence assessment of genuine access to MTS's internal reporting systems. Given MTS's role in managing Egypt's national trade-facilitation platform, including the Nafeza system, this incident presents a risk to shipping-agency personnel, client financial records and the confidentiality of national trade-facilitation operations. AFRINTEL does not reproduce any applicant name, client name, financial figure or document reference from the reviewed material.
----
+
 ### 16 January 2025
 #### 🇿🇦 South Africa - North-West University (NWU)
 - **Actor / Group:** SevenZeroDay404
@@ -99,7 +95,7 @@ January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak*
 - **Impact level:** Level 3
 - **Victim Description:** North-West University (NWU) is a South African higher education institution. The `nwu.ac.za` domain and the visual identity used in the actor's publication correspond to this university, which is explicitly presented as the victim in the claim.
 - **Analysis:** On 16 January 2025, SevenZeroDay404 published an entry titled **"29K NWU Student Database"** on an underground forum, accompanied by the North-West University logo and a dataset presented as a student database. The actor claims approximately **29,000 records**. The provided file contains names, academic results expressed as GPA values, university programmes and study years. Examination of the content identified **2,893 occurrences of structured GPA values**, which cannot automatically be treated as 2,893 distinct students. The claimed volume of 29,000 records therefore cannot be validated from this sample. Attribution of the dataset to `nwu.ac.za` remains uncertain: no explicit marker such as the `nwu.ac.za` domain, a reference to South Africa or a North-West University campus was identified in the provided data. The naming of several academic programmes and the use of a 4.00 grading system also show similarities with another university using the NWU acronym. These elements are not sufficient to reattribute the claim, but they prevent confirmation that the sample actually originates from North-West University's systems in South Africa. The available evidence therefore establishes **North-West University in South Africa as the victim claimed by SevenZeroDay404**, without independently confirming the origin of the dataset, the completeness of the claimed 29,000 records or an actual compromise of the university's systems. If authentic, the exposed data could facilitate targeted phishing and identity impersonation attempts against students or former students.
----
+
 ### 21 January 2025
 #### 🇩🇿 Algeria - Barika University Center (cu-barika.dz)
 - **Ransomware Group:** funksec
@@ -195,3 +191,37 @@ January 2025 includes **17 unique incidents**: **16 Ransomware**, **1 Data Leak*
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Zetech University is a leading higher education institution in Kenya.
+
+### 31 January 2025 - reported date
+#### Kenya - Business Registration Service (BRS)
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://brs.go.ke/
+- **Incident date:** Night of 31 January 2025 - reported date, publicly described as believed/probable
+- **Initial publication date:** 2 February 2025
+- **Status:** Government Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** Kenya's Business Registration Service administers the national register of companies and businesses, including records relating to companies, directors, shareholders and beneficial owners.
+- **Analysis:** On 2 February 2025, the Business Registration Service (BRS) said it had opened an investigation after reports of a potential breach affecting the companies registry. Public reporting at that stage placed the attack on the night of 31 January 2025 but described that timing as believed rather than technically established. On 6 February, Kenya's Ministry of Information, Communications and the Digital Economy confirmed that a data breach had occurred and that unauthorized publication of information had been removed. BRS systems and databases were then reported as secured. The access vector, actor and complete scope of affected data remain publicly undetermined.
+- **Source type:** Government statements reported by public media
+- **Public sources:** [The Star - BRS statement](https://www.the-star.co.ke/news/realtime/2025-02-02-business-registration-service-assures-of-data-security-amid-alleged-breach) | [The Star - ICT Ministry update](https://www.the-star.co.ke/news/2025-02-06-kabogo-weve-addressed-data-breach-at-business-registration-service)
+
+---
+
+### 31 January 2025
+#### Kenya - Kenya Broadcasting Corporation (KBC)
+- **Actor / Group:** Unknown
+- **Sector:** Media / Entertainment
+- **Website:** https://www.kbc.co.ke/
+- **Incident date:** 31 January 2025 - date reported by Pulse Kenya; KBC confirmed the account compromise
+- **Initial publication date:** 1 February 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X account / cryptocurrency scam
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Source type:** Victim Confirmation + Public Media
+- **Analysis:** Pulse Kenya reported on 1 February 2025 that attackers had taken control of KBC's official X account on Friday, 31 January. KBC confirmed that the `KBCChannel1` account had been compromised and said it was working to restore access. The account had been renamed "DeepSeek AI" and was used to distribute cryptocurrency-scam content. The public disclosure date is therefore 1 February, while the incident is placed on 31 January based on the reported chronology. The available evidence does not establish a broader compromise of KBC's information systems or the technical identity of the actor.
+- **Sources:** [Pulse Kenya - KBC confirms X account compromise](https://www.pulse.co.ke/story/kbcs-x-account-hacked-and-name-changed-to-deepseek-ai-2025020111532480629)

@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African Cyberattack Victims in May 2025 (21 victims)
+
+# African victims - May 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **8 African countries**.
+**26 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 13, Data Leak 9, Defacement 2, Account Takeover 1, System Intrusion 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## May 2025
 
@@ -64,7 +62,6 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Impact level:** Level 3
 - **Victim Description:** South African leader in the supply and distribution of Personal Protective Equipment (PPE) and safety solutions for the mining, industrial, and manufacturing sectors.
 - **Analysis:** Material dated 9-10 May 2025 is consistent with an active intrusion against Pienaar Bros' infrastructure. A server-side archive utility compresses an approximately 2.75 GB, 3,274-file archive of catalogue and pricing data (including branded PPE-glove pricelists) for upload to a cloud storage service, alongside a separately completed upload of a contracts archive. Command-line evidence shows a compromised backup-related service account being used to browse a Windows domain listing multiple named servers and workstations, and a server backup share containing a ransom-note file dated 10 May 2025. A company delivery/route sheet bearing the letterhead of a regional Pienaar Bros trading entity lists third-party business customer accounts, invoice numbers and delivery addresses. The combination of an exfiltration in progress, domain lateral-movement evidence and a ransom note deployed on internal infrastructure supports a high confidence assessment of a genuine compromise. No exposed service-account credential, business customer name, address, invoice number or other individual record is reproduced.
-
 
 ### 15 May 2025
 #### 🇲🇷 Mauritania - Banque Al-Wava Mauritanienne Islamique (BAMIS)
@@ -127,7 +124,7 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Analysis:** AFRINTEL reviewed the same DarkForums post published on 15 May 2025 by the actor kill9 ("Mauritanian Banks Data Leak"), which names General Bank of Mauritania among six Mauritanian financial institutions claimed to be compromised. Unlike four of the other named banks, the post does not include a payment-card sample or other data specifically attributed to GBM; the unattributed customer records shown in the post (name, negative account balance, partially masked client ID and password) could not be linked to this or any specific institution. In the absence of bank-specific evidence, AFRINTEL assesses this claim with low confidence, pending independent verification.
 
 ### 16 May 2025
-#### 🇿🇦 South Africa - South African Airways (SAA)
+#### 🇿🇦 South Africa - south african airways (SAA)
 - **Ransomware Group:** incransom
 - **Sector:** Air transport
 - **Website:** www.flysaa.com
@@ -137,6 +134,22 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Impact level:** Level 3
 - **Victim Description:** South African Airways (SAA) is the national airline and the largest in South Africa, operating domestic and international flights.
 - **Analysis:** AFRINTEL reviewed a local sample of documents consistent with the claim made by the threat actor incransom, consisting of internal records from SAA Technical, the airline's aircraft maintenance, repair and overhaul (MRO) division. The material includes EASA/SACAA Part-145 regulatory documents (Maintenance Organisation Exposition, capability list, list of certifying and support staff), a Certificate of Authority for a certifying aircraft mechanic bearing a name, photo, employee and approval number and a multi-country licence scope, commercial quotations and financial records (credit authorisation sheets, debtor codes, cost analyses, component reconciliation exports referencing the AMOS maintenance-management system), and a lease agreement between Dube TradePort Corporation and Air Chefs SOC Limited, an SAA subsidiary. The documents reference multiple third-party MRO customers, including Comair, Air Namibia, Yemenia and the state defence-procurement entity Armscor. The presence of internally consistent, multi-year operational, regulatory and financial records naming specific SAA Technical systems and subsidiaries supports a high confidence assessment of a genuine internal compromise. The exposure of certifying-staff identity and licensing data, together with regulatory approval documentation and third-party client and defence-related commercial records, creates a risk of targeted phishing, aviation-safety oversight disruption and client/supply-chain impact extending beyond SAA itself. AFRINTEL does not reproduce any employee name, photograph, licence number or client financial detail from the reviewed sample.
+
+### 17 May 2025
+#### 🇿🇦 South Africa - vOffice.co.za
+- **Incident date:** 17 May 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 17 May 2025
+- **Actor / Group:** Unknown
+- **Sector:** Technology / IT
+- **Website:** voffice.co.za
+- **Status:** Reported - Secondary CTI
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** The source describes voffice.co.za as the official website of a South African technology company.
+- **Analysis:** CyHawk Africa reported on 17 May 2025 that the official `voffice.co.za` website had been defaced by an unknown threat actor. The source does not provide technical attribution, an access vector, outage duration or victim confirmation. AFRINTEL therefore records the event as a Defacement reported by a secondary CTI source, with medium confidence and without inferring a broader information-system compromise.
+- **Source type:** Public CTI Source
+- **Public sources:** [CyHawk Africa - Unknown Threat Actor Defaces South African Tech Site](https://cyhawk-africa.com/defacement/unknown-threat-actor-defaces-south-african-tech-site-voffice-co-za-breach-signals-web-vulnerabilities/)
 
 ### 19 May 2025
 #### 🇰🇪 Kenya - NSSF (National Social Security Fund) KENYA
@@ -149,6 +162,22 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Impact level:** Level 4
 - **Victim Description:** National Social Security Fund of Kenya, the statutory body managing mandatory pension and social-security contributions for Kenyan workers. The actor demands $4.5 million USD.
 - **Analysis:** Material dated 15-18 May 2025 is consistent with genuine administrative-level access to NSSF's internal Windows environment. The material includes a ransom-note text file opened on a compromised desktop, stating that the "DevMan Cybersecurity Collective" compromised NSSF's systems at 9 PM UTC on 17 May 2025, encrypted critical systems and files, destroyed cloud and network-based backups, and exfiltrated sensitive data including employee personal records, client financial information and pension details; the note references Kenya's Data Protection Act, 2019 and threatens regulatory fines and client lawsuits. Separate material shows Windows Server Manager sessions for at least two domain-joined production servers (a mail/web-facing host and a large-capacity document-management host, both joined to an NSSF domain), dated 15 and 16 May 2025, and a file-explorer view listing drives consistent with an Exchange mail database and virtualization infrastructure, dated 17 May 2025. Additional reviewed material consists of dozens of scanned physical pension-benefit payment forms bearing the NSSF Board of Trustees letterhead, member and employer reference numbers, and payment amounts. The combination of a detailed ransom note matching the actor's typical playbook, evidence of genuine domain-level server access across multiple production systems, and scanned archival pension records supports a very high confidence assessment of a large-scale compromise affecting critical national social-security infrastructure. The full claimed volume of 2.5 TB and the $4.5 million ransom demand are not independently verified beyond what is stated in the actor's own material; no employee or member name, account or reference number, credential, or other individual record is reproduced.
+
+### 19 May 2025
+#### Ivory Coast - igp.ci
+- **Actor / Group:** Team 1722 (claim)
+- **Sector:** Not specified
+- **Website:** https://igp.ci/
+- **Incident date:** 19 May 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 19 May 2025
+- **Status:** Claim - Secondary OSINT Evidence
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** The affected asset is the Ivorian domain igp.ci. The exact organizational scope was not established in the reviewed material.
+- **Analysis:** A secondary CTI report states that the igp.ci website was defaced with propaganda content and Telegram references attributed to Team 1722. No official confirmation was identified in the supplied audit. AFRINTEL therefore records the event with medium confidence and keeps Team 1722 as a claim rather than a technical attribution.
+- **Source type:** Secondary CTI
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/defacement/hacktivist-group-deface-one-website-in-cote-divoire/)
 
 ### 20 May 2025
 #### 🇧🇼 Botswana - Medswana
@@ -172,6 +201,22 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Victim Description:** Setif 1 University - Ferhat Abbas is an Algerian public higher-education institution.
 - **Analysis:** The actor Phantom Atlas claims an intrusion into the university's website and announces the upcoming publication of files described as important, for a claimed volume of 3.5 GB. No sample or technical evidence accompanies the post; AFRINTEL did not collect or analyze any underlying data and therefore cannot confirm the compromise.
 
+### 20 May 2025
+#### Tanzania - Tanzania Police Force / Tanzania Revenue Authority official social-media accounts
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** Official X and YouTube accounts
+- **Incident date:** 19-20 May 2025 - reported window for compromise of the official accounts
+- **Initial publication date:** 20 May 2025
+- **Status:** Government / Institution Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised official social-media accounts / disinformation
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Institutional Confirmation + Public Media
+- **Analysis:** The Tanzania Police Force confirmed that its official X account had been hacked and used to spread false information. The Tanzania Revenue Authority's YouTube channel was also reported and publicly acknowledged as compromised. AFRINTEL keeps the scope to the confirmed public accounts and does not infer compromise of central national cyber infrastructure.
+- **Sources:** [The Citizen - Police X account compromise](https://www.thecitizen.co.tz/tanzania/news/national/police-launch-hunt-after-official-x-account-hacked-warns-public-against-sharing-fake-news-5049060) | [The Citizen - Police and TRA account compromises](https://www.thecitizen.co.tz/tanzania/news/national/hackers-target-tanzanian-government-institutions-spread-falsehoods-5049088)
+
 ### 21 May 2025
 #### 🇿🇦 South Africa - Anglo American plc
 - **Ransomware Group:** arkana
@@ -182,7 +227,7 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Victim Description:** Anglo American plc is a multinational mining company based in Johannesburg and London. It is the world's largest producer of platinum and diamonds, with operations in over 40 countries. It also mines copper, nickel, iron ore, and coal.
 
 ### 23 May 2025
-#### 🇿🇦 South Africa - Netstar
+#### 🇿🇦 South Africa - netstar
 - **Ransomware Group:** devman
 - **Sector:** Technology / Telematics / IoT Security
 - **Website:** netstar.co.za
@@ -214,6 +259,22 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Victim Description:** FrontierCo is a major player in South African distribution. The company holds exclusive distribution licenses and sales rights for several renowned international brands (clothing, footwear, and accessories) through a wide network of physical stores and e-commerce platforms.
 - **Analysis:** AFRINTEL reviewed structured customer-data exports and network-reconnaissance evidence associated with this claim. Six CSV files, matching a Microsoft Dynamics 365 Business Central "Customer" table schema (fields including company/contact name, address, city, phone, mobile phone, email, VAT registration number, credit limit, payment terms and related commercial metadata), together total approximately 120,000 customer records. A separate file consistent with a further database export (roughly 99 MB uncompressed) was also present but not opened by AFRINTEL. A network-reconnaissance log shows an SMB enumeration sweep against 256 internal targets on an internal /24 range, in which a Windows "Administrator" credential (not reproduced) is shown successfully authenticating against more than a dozen servers, including hosts named consistently with a SQL database server, two backup/Veeam servers, an HR-related server, a UAT server and multiple Hyper-V hosts, alongside failed attempts against other hosts. This indicates domain-wide administrative access achieved through credential reuse rather than a single-system compromise. The combination of a large, structurally consistent customer-database export and demonstrated domain-wide lateral movement with a working administrator credential supports a very high confidence assessment of a genuine, extensive compromise of FrontierCo's IT environment. Given the scale of exposed customer records (contact details, VAT numbers, commercial terms) combined with confirmed domain administrator-level access spanning database, backup and HR-related infrastructure, the potential impact includes large-scale business-customer fraud, targeted phishing and further compromise of backup and financial systems. AFRINTEL does not reproduce any customer name, contact detail, VAT number, credential hash or IP-to-hostname mapping from the reviewed material.
 
+### 27 May 2025
+#### South Africa - Eastern Platinum Limited (Eastplats)
+- **Actor / Group:** Unknown
+- **Sector:** Mining
+- **Website:** https://www.eastplats.com/
+- **Incident date:** 27 May 2025 - detection date confirmed by Eastplats
+- **Initial publication date:** 16 June 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Victim Description:** Eastern Platinum Limited owns and operates platinum-group-metal and chrome assets in South Africa.
+- **Analysis:** Eastplats announced that it detected a cybersecurity incident on 27 May 2025 affecting internal IT systems. The company confirmed that some files relating to its internal affairs had been disclosed without authorization by third parties on a restricted part of the Internet. Business operations continued. No attacker or initial-access vector was publicly identified. AFRINTEL records the confirmed internal-system compromise and unauthorized file disclosure without inferring ransomware.
+- **Source type:** Victim / Regulatory Disclosure
+- **Public sources:** [Eastplats - official cybersecurity incident release](https://www.eastplats.com/investors/news-releases/2025/eastern-platinum-limited-announces-cybersecurity-incident/) | [JSE SENS filing](https://senspdf.jse.co.za/documents/SENS_20250617_S506288.pdf)
+
 ### 31 May 2025
 #### 🇨🇲 Cameroon - ASCOMA Cameroon
 - **Ransomware Group:** worldleaks
@@ -235,3 +296,21 @@ May 2025 includes **21 unique incidents**: **13 Ransomware**, **8 Data Leak**, *
 - **Status:** Data Fully Published
 - **Victim Description:** Netmaster is a leading digital service provider in Togo. It acts as the registrar for the national .tg domain and provides web hosting, professional email, and SSL certificate solutions to many Togolese companies and institutions.
 - **Analysis:** AFRINTEL reviewed the DarkForums listing and the referenced database export, which corresponds to a full WHMCS billing and hosting-management database, including client, billing, invoicing, hosting, domain, support-ticket, administrator and payment-gateway tables. Alongside the database, a companion file lists EPP transfer codes for several hundred `.tg` domains, consistent with Netmaster's role as registrar for Togo's national domain; exposure of these codes creates a risk of unauthorized domain transfers affecting Togolese businesses and institutions relying on Netmaster, in addition to the billing and support data covering Netmaster's own customer base. The reviewed export's structure and scale are consistent with the claim made by the threat actor cache of a full database leak. AFRINTEL does not reproduce any client records, invoices, credentials or EPP codes from the reviewed material.
+
+---
+
+### May 2025 - exact attempt date not publicly disclosed
+#### Nigeria - PremiumTrust Bank
+- **Actor / Group:** Criminal syndicate - identities not attributed
+- **Sector:** Finance / Banking
+- **Website:** https://premiumtrustbank.com/
+- **Incident date:** April-May 2025 - period cited by the EFCC; exact attempt date not publicly disclosed
+- **Initial publication date:** 21 May 2025 - EFCC/public reporting; victim statement followed on 22 May
+- **Status:** Attempted - Blocked
+- **Incident type:** System Intrusion
+- **Subtype:** Attempted unauthorized database / infrastructure access
+- **Confidence level:** Very High
+- **Impact level:** Level 2
+- **Source type:** Victim Statement + Law-Enforcement Follow-up
+- **Analysis:** PremiumTrust Bank stated that an attempt to gain unauthorized access to its database and infrastructure was detected and neutralized. The matter was referred to law enforcement and suspects were arrested and prosecuted. The bank stated that customer data was not compromised. AFRINTEL therefore tracks this as a confirmed attempted attack, not as a successful breach or Data Leak.
+- **Sources:** [Source](https://www.thisdaylive.com/2025/05/22/premiumtrust-bank-reassures-customers-our-security-architecture-remains-resilient-2/)

@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in July 2025 (21 victims)
+
+# African victims - July 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **12 African countries**.
+**25 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 5, Data Leak 18, System Intrusion 1, Malware 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## July 2025
 
@@ -63,6 +61,22 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 
   The data is published for free by the actor. No asking price or ransom demand is visible. The forum publication directly exposes database records and the analysed file confirms the presence of structured data. The incident therefore involves actual data publication rather than a claim without supporting material. AFRINTEL does not reproduce any company names, contact names or contact details from the reviewed sample.
 
+### 10 July 2025
+#### Tunisia - University network / Centre Al-Khwarizmi
+- **Actor / Group:** Unknown
+- **Sector:** Education / University
+- **Website:** University network / Centre Al-Khwarizmi
+- **Incident date:** No later than 10 July 2025 - exact start date not publicly disclosed
+- **Initial publication date:** 10 July 2025
+- **Status:** Attempted - Outcome Unknown
+- **Incident type:** System Intrusion
+- **Subtype:** Attempted attack against university-network infrastructure
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Source type:** Institutional Statement + Public Media
+- **Analysis:** The Centre Al-Khwarizmi and Tunisian authorities reported an attempted cyberattack targeting university-network infrastructure and data. The available source does not confirm a successful data leak. AFRINTEL therefore tracks the attempt separately from the six successful/core incident types.
+- **Sources:** [Source](https://www.tunisienumerique.com/cyberattaque-ciblant-les-universites-tunisiennes-mesures-durgence-et-renforcement-de-la-securite/)
+
 ### 13 July 2025
 #### 🇹🇿 Tanzania - Twaweza
 - **Ransomware Group:** nightspire
@@ -106,17 +120,18 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Kenya's ICT Authority is a public-sector technology institution responsible for coordinating and supporting government information and communication technology infrastructure and services.
 - **Analysis:** AFRINTEL reviewed the supplied CSV export without reproducing personal data. The file contains 1,697 data rows and fields for display name, phone, email, identifier, mobile contact, name, address-related fields, user references and website links. The structure is consistent with an organisational contact or directory export containing ICT Authority personnel, public-sector contacts and associated technology-service records. The file metadata places the evidence on 14 July 2025; this is treated as an evidence/discovery date, not a confirmed publication or intrusion date. The available material does not identify the threat actor, publication venue, access method or complete dataset scope. The exposed contact and organisational information could support targeted phishing, impersonation and social engineering against Kenyan public-sector and technology stakeholders. AFRINTEL records this as a data-leak claim with a published sample and does not reproduce names, phone numbers, email addresses, identifiers or addresses.
+
 ### 15 July 2025
 #### 🇰🇪 Kenya - Adrian Kenya
 - **Ransomware Group:** lynx
 - **Sector:** Telecommunications / Energy Infrastructure / ICT.
-- **Website:** [adrian.co.ke](https://adrian.co.ke) / [adriankenya.com](https://www.adriankenya.com)
+- **Website:** https://adrian.co.ke / www.adriankenya.com
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** Adrian Group (Adrian Kenya) is a Kenyan leader in technological engineering.
-- **Analysis:** AFRINTEL reviewed a local sample of four documents associated with this claim: a vendor invoice for telecom site installation work, a Kenya Revenue Authority (KRA) VAT payment slip, a fuel-supplier credit note and an internal email thread concerning a telecom site rollout. The documents are internally consistent, reference matching Adrian Kenya/Adrian Group names, domains and project context, and contain financial, tax-compliance, vendor and internal-communication records. AFRINTEL does not reproduce the personal identifiers, banking details or tax PIN visible in the sample. This assessment is limited to the four documents reviewed; AFRINTEL did not consult any subsequent disclosure or additional files published by the group.
+- **Analysis:** AFRINTEL reviewed a small local sample of four documents associated with this claim: a vendor invoice for telecom site installation work (antennas, feeder cable and RRU installation) issued to Adrian Kenya, a Kenya Revenue Authority (KRA) VAT payment slip for Adrian Group Limited covering January to March 2025, a fuel-supplier credit note addressed to Adrian Kenya Limited with vehicle, banking and payment-advice details, and an internal email thread between Adrian Kenya and Adrian Group staff (adriankenya.com and adriangroup.tech domains) discussing a telecom site rollout at a warehouse location. The documents are internally consistent, referencing matching company names, domains and project context, and include full personal identifiers, banking details and a tax PIN, none of which AFRINTEL reproduces here. The sample indicates exposure of financial, tax-compliance, vendor and internal-communication records, but its scope is limited to four documents and does not establish the total volume or extent of the underlying compromise. AFRINTEL does not independently confirm the intrusion.
 
 ### 15 July 2025
 #### 🇪🇬 Egypt - Egyptian Electricity Holding Company (EEHC, eehc.gov.eg)
@@ -147,7 +162,7 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 - **Incident type:** Data Leak
 - **Actor / Group:** Unknown
 - **Sector:** Government / Public Procurement (Enterprise and Personnel Qualification)
-- **Website:** [qce.gov.mr](https://qce.gov.mr)
+- **Website:** qce.gov.mr
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** qce.gov.mr is a Mauritanian government online platform used to host and process personnel and enterprise qualification dossiers, consistent with contractor/technical-staff vetting for public works and procurement processes; its precise institutional mandate could not be independently confirmed from the reviewed sample.
 - **Analysis:** AFRINTEL reviewed a local sample of files consistent with personnel qualification dossiers submitted through the platform, including curricula vitae, national identity cards (CIN), academic diplomas, notarized employment-contract deposits and related supporting documents for individuals employed by several distinct Mauritanian private companies (including construction, drilling and technical-services firms). The documents display genuine official letterheads, notary seals and structured personal-data fields (full name, national identification number, date and place of birth, employer, position, signature, photograph), consistent with a real qualification/procurement dossier repository rather than fabricated content. No claiming actor, publication venue or forum post could be identified for this dataset; the sample was dated from local file metadata (mid-July 2025) in the absence of an explicit publication date. The combination of national ID numbers, diplomas and employment records for numerous private individuals creates a significant risk of identity fraud, document forgery and targeted social engineering against affected candidates and their employers. AFRINTEL does not reproduce any individual's name, national identification number, date of birth, employer contact details or signature from the reviewed sample.
@@ -160,6 +175,22 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 - **Website:** https://um6p.ma
 - **Status:** Claim - Unverified
 - **Victim Description:** An excellence institution (University) based in Benguerir, a strategic hub for research, innovation, and executive training in Morocco. The actor claims a targeted data leak and influence operation, publishing student ID photos accompanied by a political message; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
+
+### 22 July 2025
+#### South Africa - National Treasury - Infrastructure Reporting Model (IRM) website
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://www.treasury.gov.za/
+- **Incident date:** 22 July 2025 - malware detection date stated by National Treasury
+- **Initial publication date:** 23 July 2025
+- **Status:** Government Confirmed
+- **Incident type:** Malware
+- **Subtype:** Malware intrusion on public-facing reporting system
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Government Statement
+- **Analysis:** South Africa's National Treasury identified malware on the Infrastructure Reporting Model website and isolated the affected servers. Other Treasury systems continued operating normally and no data exfiltration was confirmed. AFRINTEL preserves the confirmed malware intrusion as a supplementary observation because Malware is not one of the six core incident types.
+- **Sources:** [South African National Treasury - official statement](https://www.treasury.gov.za/comm_media/press/2025/2020072301%20Media%20Statement%20-%20Malware%20Intrusion%20on%20National%20Treasury%E2%80%99s%20Infrastructure%20Reporting%20Model%20Website%20.pdf)
 
 ### 25 July 2025
 #### 🇹🇳 Tunisia - Ministry of Finance (finances.gov.tn)
@@ -196,7 +227,7 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 - **Incident type:** Data Leak
 - **Actor / Group:** Dark 07x Team
 - **Sector:** Banking / Financial Services.
-- **Website:** [bt.com.tn](https://bt.com.tn)
+- **Website:** https://bt.com.tn
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Banque de Tunisie (BT) is one of the oldest and largest private banks in the country.
 - **Analysis:** Material shows a live, authenticated customer online-banking dashboard on bt.com.tn with multiple account balances, a foreign-exchange rate module, a securities/portfolio overview and a transaction-history chart, confirming genuine account-level access rather than a simple claim. No account numbers or balances are reproduced from the reviewed sample.
@@ -225,6 +256,7 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Historic and systemic banking institution in Tunisia (Banque de l'Habitat), a pillar of real estate financing and the national economy.
 - **Analysis:** The actor's forum post, published under the handle Jokeir07x as part of the "Dark Hell 07X" collaboration with Dr. SHell 08x (also behind the BTK Bank claim), states that the group gained full control of the website's infrastructure, emptied and analysed all databases, and confirmed compromise of both back-end and front-end access points; the post separately advertises a list of 200 "Yankee" accounts for sale for 100 USDT. Accompanying material shows live, authenticated online-banking sessions for at least two distinct customer accounts, including a corporate "BH Capital Plus" account, with visible balances, plus a bank-card transaction history including a withdrawal record. No account numbers, card numbers, customer identities or balances are reproduced from the reviewed sample.
+
 ### 29 July 2025
 #### 🇲🇦 Morocco - Ministry of National Education, Preschool and Sports
 - **Incident type:** Data Leak
@@ -262,9 +294,37 @@ July 2025 includes **21 unique incidents**: **5 Ransomware**, **16 Data Leak**, 
 ---
 [July 2025 Report](./report/README.md)
 ---
-## ✍🏿 Author
-*Adama ASSIONGBON*  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
 
-*AFRINTEL - Open CTI Monitoring Initiative on Africa*
+### 31 July 2025
+#### Tunisia - Le Groupement Pharmaceutique (LGP)
+- **Actor / Group:** Jokeir 07x / Dr Shell 08x (claim)
+- **Sector:** Healthcare / Medical
+- **Website:** Not independently confirmed
+- **Incident date:** 31 July 2025 - date reported by the secondary CTI source
+- **Initial publication date:** 31 July 2025
+- **Status:** Claim - Secondary Evidence / Screenshots
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** Le Groupement Pharmaceutique was identified in a secondary CTI report concerning alleged exposure of internal-portal access.
+- **Analysis:** Credentials and screenshots allegedly providing access to an internal portal were published, potentially exposing commercial information, references, prices, margins and suppliers. No victim confirmation was identified in the supplied audit. AFRINTEL records the case with medium confidence and does not reproduce credentials or sensitive values.
+- **Source type:** Secondary CTI
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/compromised-credentials/tunisian-pharmaceutical-group-breached-internal-portal-access-shared-publicly/)
+
+### July 2025 - exact incident date not publicly disclosed
+#### Seychelles - Seychelles Commercial Bank
+- **Actor / Group:** Unknown
+- **Sector:** Finance / Banking
+- **Website:** Seychelles Commercial Bank
+- **Incident date:** July 2025 - exact incident date not publicly disclosed
+- **Initial publication date:** 29 July 2025
+- **Status:** Bank + Central Bank Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** Seychelles Commercial Bank is a banking institution serving customers in Seychelles.
+- **Analysis:** The bank reported that it had identified and contained a cyber incident in which some personal information of Internet-banking customers was exposed. No customer funds were reported compromised. Because the public notice did not provide a precise incident date, AFRINTEL places the event in July without inventing a specific compromise day.
+- **Source type:** Bank / Central Bank Confirmation via Public Reporting
+- **Public sources:** [Security Affairs](https://securityaffairs.com/180513/data-breach/seychelles-commercial-bank-reported-cybersecurity-incident.html)
+
+---

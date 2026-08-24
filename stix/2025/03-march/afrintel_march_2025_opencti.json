@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -43,8 +43,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--6db5e2a5-4b39-549c-83b0-42fae33b7e7a",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "play",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -73,8 +73,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--eeaba772-2c00-59f3-9c53-bd2ba55b4d6f",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "IT-IQ Botswana",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Botswana. Sector: Technology Consulting.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Botswana. Secteur : Conseil en technologies.",
@@ -113,8 +113,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 01: IT-IQ Botswana",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting IT-IQ Botswana in Botswana on 02 March 2025. The source actor is listed as play. Status: Claim - Unverified. Sector: Technology Consulting. Source summary: IT-IQ Botswana is one of the leading providers of IT solutions and certified training (Microsoft, Cisco, VMware) in Botswana.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant IT-IQ Botswana en Botswana, à la date du 02 Mars 2025. L'acteur source est indiqué comme play. Statut : Claim - Unverified. Secteur : Conseil en technologies. Résumé de la source : IT-IQ Botswana est l'un des principaux fournisseurs de solutions informatiques et de formations certifiées (Microsoft, Cisco, VMware) au Botswana.",
       "first_seen": "2025-03-02T00:00:00Z",
@@ -161,8 +161,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--9e01f301-ce23-5833-b9ee-20e2b4d856b9",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
       "target_ref": "threat-actor--6db5e2a5-4b39-549c-83b0-42fae33b7e7a",
@@ -175,8 +175,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--224c58a9-a8ee-51a9-8472-12e899d35be9",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--6db5e2a5-4b39-549c-83b0-42fae33b7e7a",
       "target_ref": "identity--eeaba772-2c00-59f3-9c53-bd2ba55b4d6f",
@@ -189,8 +189,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--df14d674-7fa5-5d0e-8036-815f4824fef1",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
       "target_ref": "identity--eeaba772-2c00-59f3-9c53-bd2ba55b4d6f",
@@ -203,8 +203,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--65bab459-9e91-54e5-a8e9-1f109c4ace33",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "killsec",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -233,8 +233,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--35ba03d8-f570-5c05-b043-f058bb8f9fce",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "Workforce Group",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Education / HR Services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Nigeria. Secteur : Éducation / Services RH.",
@@ -273,8 +273,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 02: Workforce Group",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Workforce Group in Nigeria on 02 March 2025. The source actor is listed as killsec. Status: Claim - Data Sample Published. Sector: Education / HR Services. Source summary: Nigerian educational services and human resources management company.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Workforce Group au Nigeria, à la date du 02 Mars 2025. L'acteur source est indiqué comme killsec. Statut : Claim - Data Sample Published. Secteur : Éducation / Services RH. Résumé de la source : Entreprise nigériane de services éducatifs et de gestion des ressources humaines.",
       "first_seen": "2025-03-02T00:00:00Z",
@@ -323,8 +323,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--8e977266-d204-5781-a4af-67d02945d0be",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
       "target_ref": "threat-actor--65bab459-9e91-54e5-a8e9-1f109c4ace33",
@@ -337,8 +337,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--3d0a7663-3b40-5af8-960b-a5b542d832fc",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--65bab459-9e91-54e5-a8e9-1f109c4ace33",
       "target_ref": "identity--35ba03d8-f570-5c05-b043-f058bb8f9fce",
@@ -351,8 +351,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--4a5a63d0-5bfd-547a-9471-dc9c4ebd2904",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
       "target_ref": "identity--35ba03d8-f570-5c05-b043-f058bb8f9fce",
@@ -365,8 +365,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--3aedb6e9-12ea-5261-8575-285df8c038da",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "arcusmedia",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -395,8 +395,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--53e2487c-81b7-56b5-932c-18fcd7cc0f0c",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "LINKGROUP",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Technology Consulting.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Conseil en technologies.",
@@ -435,8 +435,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 03: LINKGROUP",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting LINKGROUP in South Africa on 03 March 2025. The source actor is listed as arcusmedia. Status: Claim - Unverified. Sector: Technology Consulting. Source summary: LINKGROUP is a South African IT consulting and telecom services company.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant LINKGROUP en Afrique du Sud, à la date du 03 Mars 2025. L'acteur source est indiqué comme arcusmedia. Statut : Claim - Unverified. Secteur : Conseil en technologies. Résumé de la source : LINKGROUP est une société sud-africaine de conseil en informatique et de services télécoms.",
       "first_seen": "2025-03-03T00:00:00Z",
@@ -483,8 +483,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--37adad6b-2260-57b2-a188-9221ec883bed",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
       "target_ref": "threat-actor--3aedb6e9-12ea-5261-8575-285df8c038da",
@@ -497,8 +497,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--a2ea418e-93a0-5002-9854-eb88253f2d06",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--3aedb6e9-12ea-5261-8575-285df8c038da",
       "target_ref": "identity--53e2487c-81b7-56b5-932c-18fcd7cc0f0c",
@@ -511,8 +511,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--bb3f1002-f015-54c2-8e4b-e679a3b8882f",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
       "target_ref": "identity--53e2487c-81b7-56b5-932c-18fcd7cc0f0c",
@@ -525,8 +525,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "synaptic.co.tz",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tanzania. Sector: Technology Consulting.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tanzanie. Secteur : Conseil en technologies.",
@@ -565,8 +565,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 04: synaptic.co.tz",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting synaptic.co.tz in Tanzania on 03 March 2025. The source actor is listed as arcusmedia. Status: Claim - Unverified. Sector: Technology Consulting. Source summary: Tanzanian IT consulting company.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant synaptic.co.tz en Tanzanie, à la date du 03 Mars 2025. L'acteur source est indiqué comme arcusmedia. Statut : Claim - Unverified. Secteur : Conseil en technologies. Résumé de la source : Société tanzanienne de conseil en informatique.",
       "first_seen": "2025-03-03T00:00:00Z",
@@ -613,8 +613,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--4ba85218-c4d7-5947-b9b3-c8e032a5b4e8",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
       "target_ref": "threat-actor--3aedb6e9-12ea-5261-8575-285df8c038da",
@@ -627,8 +627,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--dbfa079a-2664-5e62-b6a4-7cb972e5ffc0",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--3aedb6e9-12ea-5261-8575-285df8c038da",
       "target_ref": "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
@@ -641,8 +641,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--292fa9ab-34be-5114-b362-ae6cdef4d548",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
       "target_ref": "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
@@ -655,8 +655,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--743b3837-e993-50f2-a520-7e69644fe29f",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "MisterSam",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -685,8 +685,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "Medical Rehabilitation Therapists Board (MRTB)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Government / Healthcare Regulation.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Nigeria. Secteur : Administration publique / Régulation de la santé.",
@@ -725,8 +725,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 05: Medical Rehabilitation Therapists Board (MRTB)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Medical Rehabilitation Therapists Board (MRTB) in Nigeria on 05 March 2025. The source actor is listed as MisterSam. Status: Claim - Unverified. Sector: Government / Healthcare Regulation. Source summary: The Medical Rehabilitation Therapists Board of Nigeria (MRTB) is a Nigerian public regulatory body for medical rehabilitation professions.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Medical Rehabilitation Therapists Board (MRTB) au Nigeria, à la date du 05 Mars 2025. L'acteur source est indiqué comme MisterSam. Statut : Claim - Unverified. Secteur : Administration publique / Régulation de la santé. Résumé de la source : Le Medical Rehabilitation Therapists Board of Nigeria (MRTB) est un organisme public nigérian de régulation des professions de la réadaptation médicale.",
       "first_seen": "2025-03-05T00:00:00Z",
@@ -770,8 +770,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--80d76ef0-af33-5bdf-8344-9e71e5366c0f",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
       "target_ref": "threat-actor--743b3837-e993-50f2-a520-7e69644fe29f",
@@ -784,8 +784,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--cabb0483-40b2-55b0-a6ba-cdec45340359",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--743b3837-e993-50f2-a520-7e69644fe29f",
       "target_ref": "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
@@ -798,8 +798,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--a45051a0-8cdc-55db-864e-f474a1de99dc",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
       "target_ref": "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
@@ -812,8 +812,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--226e0fb0-0c60-54eb-8003-ffa4e0af9ee7",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "lynx",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -842,8 +842,8 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "ACDC Express",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Retail (Distribution).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Commerce de détail (Distribution).",
@@ -886,8 +886,8 @@
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL March 2025 incident 06: ACDC Express",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ACDC Express in South Africa on 07 March 2025. The source actor is listed as lynx. Status: Claim - Data Sample Published. Sector: Retail (Distribution). Source summary: ACDC Dynamics is a major South African manufacturer, importer, and distributor of electrical components, tools, and safety equipment.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ACDC Express en Afrique du Sud, à la date du 07 Mars 2025. L'acteur source est indiqué comme lynx. Statut : Claim - Data Sample Published. Secteur : Commerce de détail (Distribution). Résumé de la source : ACDC Dynamics est un important fabricant, importateur et distributeur sud-africain de composants électriques, d'outils et d'équipements de sécurité.",
       "first_seen": "2025-03-07T00:00:00Z",
@@ -937,8 +937,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--8c205c93-8f48-5659-8313-f876e6e85454",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
       "target_ref": "threat-actor--226e0fb0-0c60-54eb-8003-ffa4e0af9ee7",
@@ -951,8 +951,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--11f16882-e8d8-56a3-b971-91c8e8260e80",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--226e0fb0-0c60-54eb-8003-ffa4e0af9ee7",
       "target_ref": "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
@@ -965,8 +965,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--50afbde0-094d-59c6-9966-996e3e56e01f",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
       "target_ref": "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
@@ -976,11 +976,121 @@
       ]
     },
     {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Pam Golding Properties",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Construction / Real Estate.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Construction / Real Estate.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "commercial"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.pamgolding.co.za/"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Pam Golding Properties",
+      "x_afrintel_sector_raw": "Construction / Real Estate",
+      "x_afrintel_sector_raw_en": "Construction / Real Estate",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "sectors": [
+        "commercial"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 07: Pam Golding Properties",
+      "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Pam Golding Properties in South Africa on 07 March 2025. No actor attribution is recorded. Status: Victim Confirmed. Sector: Construction / Real Estate. Source summary: Pam Golding Properties is a major South African real-estate group with a large portfolio of clients and properties.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Pam Golding Properties en Afrique du Sud, à la date du 07 Mars 2025. Aucune attribution à un acteur n'est enregistrée. Statut : Victim Confirmed. Secteur : Construction / Real Estate. Résumé de la source : Pam Golding Properties est un important groupe immobilier sud-africain disposant d'un vaste portefeuille de clients et de biens.",
+      "first_seen": "2025-03-07T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "incident-confirmed",
+        "unattributed",
+        "south-africa",
+        "commercial"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.pamgolding.co.za/"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 7,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Construction / Real Estate",
+      "x_afrintel_sector_raw_en": "Construction / Real Estate",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "07 Mars 2025",
+      "x_afrintel_date_display_en": "07 March 2025",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--927e2bd5-2d1e-5067-b9ed-fe9b01c44776",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+      "target_ref": "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--a6007fa0-86bb-5bdb-9ea9-68e6447aa47b",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "funksec",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -1008,9 +1118,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "ISEE (International School of Elite Education)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Education / Private Schooling.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Éducation / Enseignement privé..",
@@ -1048,10 +1158,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "AFRINTEL March 2025 incident 07: ISEE (International School of Elite Education)",
+      "id": "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 08: ISEE (International School of Elite Education)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ISEE (International School of Elite Education) in Egypt on 11 March 2025. The source actor is listed as funksec. Status: Claim - Unverified. Sector: Education / Private Schooling. Source summary: The International School of Elite Education (ISEE) is a prestigious private school located in Cairo.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ISEE (International School of Elite Education) en Égypte, à la date du 11 Mars 2025. L'acteur source est indiqué comme funksec. Statut : Claim - Unverified. Secteur : Éducation / Enseignement privé.. Résumé de la source : International School of Elite Education (ISEE) est un établissement scolaire privé prestigieux situé au Caire.",
       "first_seen": "2025-03-11T00:00:00Z",
       "labels": [
@@ -1080,7 +1190,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 7,
+      "x_afrintel_incident_index": 8,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
       "x_afrintel_country_fr": "Égypte",
@@ -1096,11 +1206,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--9bf8979b-2aa9-550b-88a7-a22c7893a682",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--d03afce5-0ff7-5b91-a84d-cd365f6a47c1",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
+      "source_ref": "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
       "target_ref": "threat-actor--a6007fa0-86bb-5bdb-9ea9-68e6447aa47b",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -1110,12 +1220,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--ff1dd249-7df8-524f-88e8-becaea3530d7",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--a0900305-a3fe-552d-bbcf-4f0c559777b0",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--a6007fa0-86bb-5bdb-9ea9-68e6447aa47b",
-      "target_ref": "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
+      "target_ref": "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1124,12 +1234,342 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--927e2bd5-2d1e-5067-b9ed-fe9b01c44776",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--abcb034b-d474-58dd-b8d0-7cf7cf36e558",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
-      "source_ref": "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-      "target_ref": "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
+      "source_ref": "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+      "target_ref": "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Parliament of South Africa",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Government / Administration.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Government / Administration.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.parliament.gov.za/"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Parliament of South Africa",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 09: Parliament of South Africa",
+      "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Parliament of South Africa in South Africa on 15 March 2025. No actor attribution is recorded. Status: Victim Confirmed. Sector: Government / Administration. Source summary: A YouTube/streaming resource connected to Parliament's official channels was compromised and unauthorized content was uploaded. The incident affected a streaming service and does not establish compromise of Parliament's entire information system.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Parliament of South Africa en Afrique du Sud, à la date du 15 Mars 2025. Aucune attribution à un acteur n'est enregistrée. Statut : Victim Confirmed. Secteur : Government / Administration.",
+      "first_seen": "2025-03-15T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "incident-confirmed",
+        "unattributed",
+        "south-africa",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.parliament.gov.za/"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 9,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "15 Mars 2025",
+      "x_afrintel_date_display_en": "15 March 2025",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9fb4e460-2d15-5e72-b3fd-b8d522638643",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+      "target_ref": "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Astral Foods Limited",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Agriculture / Agribusiness.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Agriculture / Agribusiness.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "agriculture"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.astralfoods.com/"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Astral Foods Limited",
+      "x_afrintel_sector_raw": "Agriculture / Agribusiness",
+      "x_afrintel_sector_raw_en": "Agriculture / Agribusiness",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "sectors": [
+        "agriculture"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 10: Astral Foods Limited",
+      "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Astral Foods Limited in South Africa on 16 March 2025. No actor attribution is recorded. Status: Victim Confirmed. Sector: Agriculture / Agribusiness. Source summary: Astral Foods disclosed a cybersecurity incident on 16 March 2025 that disrupted poultry processing and customer deliveries and had an estimated profit impact of about R20 million. The company explicitly stated that no confidential or sensitive stakeholder information was compromised. AFRINTEL preserves the confirmed operational cyber incident without relabelling it as Data Leak or Ransomware.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Astral Foods Limited en Afrique du Sud, à la date du 16 Mars 2025. Aucune attribution à un acteur n'est enregistrée. Statut : Victim Confirmed. Secteur : Agriculture / Agribusiness.",
+      "first_seen": "2025-03-16T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "incident-confirmed",
+        "unattributed",
+        "south-africa",
+        "agriculture"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.astralfoods.com/"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 10,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Agriculture / Agribusiness",
+      "x_afrintel_sector_raw_en": "Agriculture / Agribusiness",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "16 Mars 2025",
+      "x_afrintel_date_display_en": "16 March 2025",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--03ecea7d-5de1-5665-956e-ada5fb5fac45",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+      "target_ref": "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Office of the President - John Dramani Mahama X account",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Ghana. Sector: Government / Administration.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Ghana. Secteur : Government / Administration.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "ghana",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://x.com/JDMahama"
+        }
+      ],
+      "x_afrintel_country": "Ghana",
+      "x_afrintel_country_fr": "Ghana",
+      "x_afrintel_organization_fr": "Office of the President - John Dramani Mahama X account",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 11: Office of the President - John Dramani Mahama X account",
+      "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Office of the President - John Dramani Mahama X account in Ghana on 17 March 2025. No actor attribution is recorded. Status: Authority Confirmed. Sector: Government / Administration. Source summary: Ghana's Cyber Security Authority confirmed that the President's X account was compromised and used to promote a fraudulent cryptocurrency project called \"Solana Africa\". The account was restored. The evidence does not establish compromise of Jubilee House networks or other government systems.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Office of the President - John Dramani Mahama X account en Ghana, à la date du 17 Mars 2025. Aucune attribution à un acteur n'est enregistrée. Statut : Authority Confirmed. Secteur : Government / Administration.",
+      "first_seen": "2025-03-17T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "incident-confirmed",
+        "unattributed",
+        "ghana",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://x.com/JDMahama"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 11,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "Ghana",
+      "x_afrintel_country_fr": "Ghana",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "17 Mars 2025",
+      "x_afrintel_date_display_en": "17 March 2025",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f37c56d7-d42d-547f-a03c-4ab13f341498",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+      "target_ref": "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1139,8 +1579,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--157333a2-7556-54b6-993d-b7cb687aa153",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "nightspire",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -1168,9 +1608,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "MISR AL MAHABA HOSPITAL",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Healthcare / Hospital Sector.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Santé / Secteur Hospitalier.",
@@ -1212,10 +1652,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "AFRINTEL March 2025 incident 08: MISR AL MAHABA HOSPITAL",
+      "id": "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 12: MISR AL MAHABA HOSPITAL",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting MISR AL MAHABA HOSPITAL in Egypt on 25 March 2025. The source actor is listed as nightspire. Status: Claim - Data Sample Published. Sector: Healthcare / Hospital Sector. Source summary: Misr Al Mahaba Hospital is a significant private healthcare center in Cairo.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant MISR AL MAHABA HOSPITAL en Égypte, à la date du 25 Mars 2025. L'acteur source est indiqué comme nightspire. Statut : Claim - Data Sample Published. Secteur : Santé / Secteur Hospitalier. Résumé de la source : L'hôpital Misr Al Mahaba est un centre de soins privé important au Caire.",
       "first_seen": "2025-03-25T00:00:00Z",
       "labels": [
@@ -1245,7 +1685,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 8,
+      "x_afrintel_incident_index": 12,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Egypt",
       "x_afrintel_country_fr": "Égypte",
@@ -1263,11 +1703,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--d03afce5-0ff7-5b91-a84d-cd365f6a47c1",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--2f0fc1f6-31da-5f61-bbcd-a8dc5efc7eae",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
+      "source_ref": "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
       "target_ref": "threat-actor--157333a2-7556-54b6-993d-b7cb687aa153",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -1277,12 +1717,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--a0900305-a3fe-552d-bbcf-4f0c559777b0",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--e2c051c0-ae00-5ac8-b297-81c05e14c2ea",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--157333a2-7556-54b6-993d-b7cb687aa153",
-      "target_ref": "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
+      "target_ref": "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1291,12 +1731,171 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--abcb034b-d474-58dd-b8d0-7cf7cf36e558",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--726ce636-95e6-5992-a9eb-a721db148168",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
-      "source_ref": "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-      "target_ref": "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
+      "source_ref": "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+      "target_ref": "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Ghudra",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2025",
+        "03-march"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "Government COVID-19/Vaccination Dashboard",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Burkina Faso. Sector: Healthcare / Public Health.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Burkina Faso. Secteur : Santé / Santé publique.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "burkina-faso",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Burkina Faso",
+      "x_afrintel_country_fr": "Burkina Faso",
+      "x_afrintel_organization_fr": "Tableau de bord gouvernemental COVID-19/vaccination",
+      "x_afrintel_sector_raw": "Santé / Santé publique",
+      "x_afrintel_sector_raw_en": "Healthcare / Public Health",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 13: Government COVID-19/Vaccination Dashboard",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed access sale affecting Government COVID-19/Vaccination Dashboard in Burkina Faso on 26 March 2025. The source actor is listed as Ghudra. Status: Claim - Unverified. Sector: Healthcare / Public Health. Source summary: A forum post advertises administrator access to a Burkina Faso government COVID-19 and vaccination dashboard for a claimed price of $300.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type vente d'accès concernant Tableau de bord gouvernemental COVID-19/vaccination en Burkina Faso, à la date du 26 Mars 2025. L'acteur source est indiqué comme Ghudra. Statut : Claim - Unverified. Secteur : Santé / Santé publique. Résumé de la source : Une publication propose un accès administrateur à un tableau de bord gouvernemental burkinabè de suivi de la COVID-19 et de la vaccination, pour un prix revendiqué de 300 $.",
+      "first_seen": "2025-03-26T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "access-sale",
+        "burkina-faso",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "access-sale",
+      "x_afrintel_incident_index": 13,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Burkina Faso",
+      "x_afrintel_country_fr": "Burkina Faso",
+      "x_afrintel_sector_raw": "Santé / Santé publique",
+      "x_afrintel_sector_raw_en": "Healthcare / Public Health",
+      "x_afrintel_actor": "Ghudra",
+      "x_afrintel_actor_fr": "Ghudra",
+      "x_afrintel_date_display": "26 Mars 2025",
+      "x_afrintel_date_display_en": "26 March 2025",
+      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9fe09fc4-2e72-5bea-a904-3bb4d0a41292",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+      "target_ref": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--131dc728-c159-5837-915e-f98f7b676756",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
+      "target_ref": "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--660ae3a4-8abb-58f5-afff-d725d011740e",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+      "target_ref": "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1305,9 +1904,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "INI Investments",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Finance.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Finance.",
@@ -1349,10 +1948,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "AFRINTEL March 2025 incident 09: INI Investments",
+      "id": "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 14: INI Investments",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting INI Investments in Egypt on 30 March 2025. The source actor is listed as nightspire. Status: Claim - Unverified. Sector: Finance. Source summary: INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant INI Investments en Égypte, à la date du 30 Mars 2025. L'acteur source est indiqué comme nightspire. Statut : Claim - Unverified. Secteur : Finance. Résumé de la source : INI Investments est une société de portefeuille (holding) égyptienne diversifiée. Elle investit dans des secteurs stratégiques tels que l'immobilier, l'énergie, la technologie et les services financiers. L'acteur revendique l'exfiltration de 400 Go de données ; AFRINTEL a consulté cette revendication sur le site de l'acteur mais n'a pas collecté ni analysé les données sous-jacentes.",
       "first_seen": "2025-03-30T00:00:00Z",
       "labels": [
@@ -1382,7 +1981,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 9,
+      "x_afrintel_incident_index": 14,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Egypt",
       "x_afrintel_country_fr": "Égypte",
@@ -1398,11 +1997,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--ee2de895-81fe-5d56-a38a-6cfba8b228ea",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--492f46dd-fd47-5bdd-be0d-c5bc271d2941",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
+      "source_ref": "incident--2340b404-5972-5734-9496-cdaafbe9e930",
       "target_ref": "threat-actor--157333a2-7556-54b6-993d-b7cb687aa153",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -1412,12 +2011,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--b6f0b329-46a5-5da7-8d49-17210b95e544",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--96d6b29e-db1f-59fe-acc4-44d45df31ff4",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--157333a2-7556-54b6-993d-b7cb687aa153",
-      "target_ref": "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
+      "target_ref": "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1426,171 +2025,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--9fb4e460-2d15-5e72-b3fd-b8d522638643",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--171fa8d8-c5c8-535a-9d85-c61e8cac9617",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
-      "source_ref": "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-      "target_ref": "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "threat-actor",
-      "spec_version": "2.1",
-      "id": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "Ghudra",
-      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
-      "labels": [
-        "afrintel",
-        "africa",
-        "claim-unverified",
-        "2025",
-        "03-march"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
-        }
-      ]
-    },
-    {
-      "type": "identity",
-      "spec_version": "2.1",
-      "id": "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "Government COVID-19/Vaccination Dashboard",
-      "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Burkina Faso. Sector: Healthcare / Public Health.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Burkina Faso. Secteur : Santé / Santé publique.",
-      "labels": [
-        "afrintel",
-        "victim",
-        "burkina-faso",
-        "healthcare"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
-        }
-      ],
-      "x_afrintel_country": "Burkina Faso",
-      "x_afrintel_country_fr": "Burkina Faso",
-      "x_afrintel_organization_fr": "Tableau de bord gouvernemental COVID-19/vaccination",
-      "x_afrintel_sector_raw": "Santé / Santé publique",
-      "x_afrintel_sector_raw_en": "Healthcare / Public Health",
-      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
-      "sectors": [
-        "healthcare"
-      ]
-    },
-    {
-      "type": "incident",
-      "spec_version": "2.1",
-      "id": "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "AFRINTEL March 2025 incident 10: Government COVID-19/Vaccination Dashboard",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed access sale affecting Government COVID-19/Vaccination Dashboard in Burkina Faso on 26 March 2025. The source actor is listed as Ghudra. Status: Claim - Unverified. Sector: Healthcare / Public Health. Source summary: A forum post advertises administrator access to a Burkina Faso government COVID-19 and vaccination dashboard for a claimed price of $300.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type vente d'accès concernant Tableau de bord gouvernemental COVID-19/vaccination en Burkina Faso, à la date du 26 Mars 2025. L'acteur source est indiqué comme Ghudra. Statut : Claim - Unverified. Secteur : Santé / Santé publique. Résumé de la source : Une publication propose un accès administrateur à un tableau de bord gouvernemental burkinabè de suivi de la COVID-19 et de la vaccination, pour un prix revendiqué de 300 $.",
-      "first_seen": "2025-03-26T00:00:00Z",
-      "labels": [
-        "afrintel",
-        "africa",
-        "claim-unverified",
-        "access-sale",
-        "burkina-faso",
-        "healthcare"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2025/03-march/victims.md"
-        }
-      ],
-      "x_opencti_incident_type": "access-sale",
-      "x_afrintel_incident_index": 10,
-      "x_afrintel_status": "Claim - Unverified",
-      "x_afrintel_country": "Burkina Faso",
-      "x_afrintel_country_fr": "Burkina Faso",
-      "x_afrintel_sector_raw": "Santé / Santé publique",
-      "x_afrintel_sector_raw_en": "Healthcare / Public Health",
-      "x_afrintel_actor": "Ghudra",
-      "x_afrintel_actor_fr": "Ghudra",
-      "x_afrintel_date_display": "26 Mars 2025",
-      "x_afrintel_date_display_en": "26 March 2025",
-      "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2025/03-march/victims.md",
-      "x_afrintel_confidence_level": "Medium",
-      "x_afrintel_impact_level": "Level 3"
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--206d1d8f-499e-5d14-ba88-ad99ccacd076",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "relationship_type": "attributed-to",
-      "source_ref": "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-      "target_ref": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--09faf673-719f-5b14-a640-3a538c42c4e4",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "relationship_type": "targets",
-      "source_ref": "threat-actor--d8f363a5-135a-5eb2-abda-9750b2f386cf",
-      "target_ref": "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--03ecea7d-5de1-5665-956e-ada5fb5fac45",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "relationship_type": "targets",
-      "source_ref": "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-      "target_ref": "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
+      "source_ref": "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+      "target_ref": "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1600,8 +2040,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--fd55f0e5-3928-5302-854e-9c58d4cac44d",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "babuk2",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 03-march 2025. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -1629,9 +2069,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--06b07de2-0813-5ea9-895e-c59076394144",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "moh.gov.rw",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Rwanda. Sector: Public administrations (Health).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Rwanda. Secteur : Administrations publiques (Santé).",
@@ -1673,10 +2113,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--43f57086-06d1-5ca9-af93-15d5478b7252",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
-      "name": "AFRINTEL March 2025 incident 11: moh.gov.rw",
+      "id": "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
+      "name": "AFRINTEL March 2025 incident 15: moh.gov.rw",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting moh.gov.rw in Rwanda on 31 March 2025. The source actor is listed as babuk2. Status: Claim - Data Sample Published. Sector: Public administrations (Health). Source summary: Ministry of Health of Rwanda.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant moh.gov.rw en Rwanda, à la date du 31 Mars 2025. L'acteur source est indiqué comme babuk2. Statut : Claim - Data Sample Published. Secteur : Administrations publiques (Santé). Résumé de la source : Ministère de la Santé du Rwanda.",
       "first_seen": "2025-03-31T00:00:00Z",
       "labels": [
@@ -1706,7 +2146,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 11,
+      "x_afrintel_incident_index": 15,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Rwanda",
       "x_afrintel_country_fr": "Rwanda",
@@ -1724,11 +2164,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--557e8bb1-35e5-526d-bdb7-e80c32181a5d",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--3701173d-4354-5251-8bff-5839363be0a5",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--43f57086-06d1-5ca9-af93-15d5478b7252",
+      "source_ref": "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7",
       "target_ref": "threat-actor--fd55f0e5-3928-5302-854e-9c58d4cac44d",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -1738,12 +2178,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--6b1911e4-4d98-59d8-998b-7d68dfc05c33",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--ca816d06-55ab-557c-ad83-eeb53a1593aa",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--fd55f0e5-3928-5302-854e-9c58d4cac44d",
-      "target_ref": "identity--06b07de2-0813-5ea9-895e-c59076394144",
+      "target_ref": "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1752,12 +2192,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--f37c56d7-d42d-547f-a03c-4ab13f341498",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "id": "relationship--615d7afe-c8be-517e-a683-780b0308649a",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "relationship_type": "targets",
-      "source_ref": "incident--43f57086-06d1-5ca9-af93-15d5478b7252",
-      "target_ref": "identity--06b07de2-0813-5ea9-895e-c59076394144",
+      "source_ref": "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7",
+      "target_ref": "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -1767,10 +2207,10 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--235faad4-d6ec-57b5-95f0-95e1e1c90d24",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL monthly CTI report - March 2025",
-      "description": "# CTI Report: Cyber attacks in Africa - March 2025\n\n## 1. Executive summary\n- **Total number of recorded attacks:** 11\n- **Most active actors:** arcusmedia (2 attacks), nightspire (2), play (1), killsec (1), MisterSam (1), lynx (1), funksec (1), Ghudra (1), babuk2 (1).\n- **Most targeted sectors:** Technology / IT services (3), Education (2), Healthcare (2), Government / Public administrations (2), Retail / Distribution (1), Finance / Banking / Insurance (1).\n- **Most affected countries:** Egypt (3), South Africa (2), Nigeria (2), Botswana (1), Tanzania (1), Burkina Faso (1), Rwanda (1).\n- **Exfiltrated data volume:** 400 GB for INI Investments (Egypt). Other volumes are not specified.\n\n## 2. Methodology\nThis Cyber Threat Intelligence (CTI) report provides a detailed analysis of cyber attacks that occurred in Africa during March 2025. The information is derived from OSINT sources and ransomware group leak sites, compiled as part of the AFRINTEL project. The objective is to provide a clear overview of trends, threat actors, targeted sectors, and associated indicators of compromise.\n\n## 3. Global overview\n\n### 3.1 Breakdown by actor\n| Actor / Group | Number of Attacks |\n|-------------------|-------------------|\n| arcusmedia        | 2                 |\n| nightspire        | 2                 |\n| play              | 1                 |\n| killsec           | 1                 |\n| MisterSam         | 1                 |\n| lynx              | 1                 |\n| funksec           | 1                 |\n| Ghudra *(access sale, non-ransomware)* | 1 |\n| babuk2            | 1                 |\n| **Total**         | **11**            |\n\n### 3.2 Breakdown by sector\n| Sector | Number of Attacks |\n|---------|-------------------|\n| Technology / IT services | 3 |\n| Education | 2 |\n| Healthcare | 2 |\n| Government / Public administrations | 2 |\n| Retail / Distribution | 1 |\n| Finance / Banking / Insurance | 1 |\n| **Total** | **11** |\n\n### 3.3 Breakdown by country\n| Country | Number of attacks |\n|------|-------------------|\n| 🇪🇬 Egypt | 3 |\n| 🇿🇦 South Africa | 2 |\n| 🇳🇬 Nigeria | 2 |\n| 🇧🇼 Botswana | 1 |\n| 🇹🇿 Tanzania | 1 |\n| 🇧🇫 Burkina Faso | 1 |\n| 🇷🇼 Rwanda | 1 |\n| **Total** | **11** |\n\n<!-- AFRINTEL_CURRENT_MODEL_START -->\n### 3.4 Standard global overview\n\n| Country | Ransomware | Data exposure (leaks + access) | Total | Distribution |\n| :--- | ---: | ---: | ---: | :--- |\n| 🇪🇬 Egypt | 3 | 0 | 3 | 🟧🟧🟧 |\n| 🇳🇬 Nigeria | 1 | 1 | 2 | 🟧 🟦 |\n| 🇿🇦 South Africa | 2 | 0 | 2 | 🟧🟧 |\n| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |\n| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |\n| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |\n| 🇹🇿 Tanzania | 1 | 0 | 1 | 🟧 |\n\n### Monthly aggregate exposure view\n\nThe monthly CTI view combines data leaks and access sales as **data exposure**: **2 records** (18.2% of the monthly corpus). The underlying source cards remain authoritative, and an access sale does not by itself prove data exfiltration.\n\n### Geographic distribution by region\n\n| Region | Occurrences | Ransomware | Data exposure (leaks + access) | Distribution |\n| :--- | ---: | ---: | ---: | :--- |\n| North Africa | 3 | 3 | 0 | 🟧🟧🟧 |\n| Southern Africa | 3 | 3 | 0 | 🟧🟧🟧 |\n| West Africa | 3 | 1 | 2 | 🟧 🟦🟦 |\n| Central Africa | 0 | 0 | 0 |  |\n| East Africa | 2 | 2 | 0 | 🟧🟧 |\n\nLegend: NA = North Africa; SA = Southern Africa; WA = West Africa; CA = Central Africa; EA = East Africa\n\n### Sector distribution\n\n| Sector | Records | Share | Activity |\n| :--- | ---: | ---: | :--- |\n| Government / Administration | 3 | 27.3% | ██████████ |\n| Technology / IT | 3 | 27.3% | ██████████ |\n| Education / University | 2 | 18.2% | ███████ |\n| Finance / Banking | 1 | 9.1% | ███ |\n| Healthcare / Medical | 1 | 9.1% | ███ |\n| Retail / E-commerce | 1 | 9.1% | ███ |\n\n### Most visible actors\n\n| Actor / Group | Records | Activity |\n| :--- | ---: | :--- |\n| arcusmedia | 2 | ██████████ |\n| nightspire | 2 | ██████████ |\n| Ghudra | 1 | █████ |\n| MisterSam | 1 | █████ |\n| babuk2 | 1 | █████ |\n| funksec | 1 | █████ |\n| killsec | 1 | █████ |\n| lynx | 1 | █████ |\n| play | 1 | █████ |\n<!-- AFRINTEL_CURRENT_MODEL_END -->\n\n### Month-on-month comparison\n\nUsing the validated incident cards as the counting source, March 2025 recorded **11** incidents versus **8** in the preceding month (an increase of **+3**; **+37.5%**). This comparison describes recorded publications in AFRINTEL and does not by itself establish changes in attacker activity or confirmed victim impact.\n\n| Metric | Previous month | Current month | Change |\n|---|---:|---:|---:|\n| Recorded incident cards | 8 | 11 | +3 (+37.5%) |\n\n## 4. Detailed analysis by incident type\n\n### 4.1 Arcusmedia (2 attacks)\n- **03/03/2025:** LINKGROUP (South Africa, technology consulting)\n- **03/03/2025:** synaptic.co.tz (Tanzania, technology consulting)\n\n*Note:* arcusmedia targeted two IT consulting companies on the same day, in South Africa and Tanzania.\n\n### 4.2 nightspire (2 attacks)\n- **25/03/2025:** MISR AL MAHABA HOSPITAL (Egypt, healthcare)\n- **30/03/2025:** INI Investments (Egypt, finance) - 400 GB exfiltrated\n\n*Note:* nightspire struck two Egyptian entities, a private hospital and a financial holding, with a significant data volume.\n\n### 4.3 play (1 attack)\n- **02/03/2025:** IT-IQ Botswana (Botswana, technology consulting)\n\n### 4.4 killsec (1 attack)\n- **02/03/2025:** Workforce Group (Nigeria, education/HR)\n\n### 4.5 lynx (1 attack)\n- **07/03/2025:** ACDC Express (South Africa, retail)\n\n### 4.6 funksec (1 attack)\n- **11/03/2025:** ISEE (Egypt, education)\n\n### 4.7 babuk2 (1 attack)\n- **31/03/2025:** moh.gov.rw (Rwanda, public administration - health)\n\n## 5. Sectoral impact\n- **Technology Consulting:** 3 attacks (IT-IQ Botswana, LINKGROUP, synaptic.co.tz). Groups play and arcusmedia are the main actors, targeting IT service providers in three different countries.\n- **Education:** 2 attacks (Workforce Group, ISEE). killsec and funksec targeted an educational services company and a private school.\n- **Healthcare:** 1 attack (MISR AL MAHABA HOSPITAL) by nightspire, affecting a private hospital in Cairo.\n- **Retail:** 1 attack (ACDC Express) by lynx, targeting a major distributor in South Africa.\n- **Finance:** 1 attack (INI Investments) by nightspire, with massive exfiltration of 400 GB.\n- **Public Administrations:** 1 attack (Rwandan Ministry of Health) by babuk2.\n\n## 6. Threat actor profile\n### 6.1 Threat actor profile\n\nActor and source counts remain those documented in section 3 and in the source victim cards. Attribution is retained only at the level supported by the public record.\n\n### 6.2 Risk assessment\n\nCountries and sectors with repeated records or sensitive public, education, health, financial or critical-service functions should receive priority validation. This is an OSINT prioritization signal, not confirmation of compromise or impact.\n\n- **Egypt:** 3 attacks (ISEE, MISR AL MAHABA HOSPITAL, INI Investments) - education, healthcare, and finance. Egypt remains the most targeted country of the month.\n- **South Africa:** 2 attacks (LINKGROUP, ACDC Express) - technology and retail.\n- **Botswana:** 1 attack (IT-IQ Botswana) - technology.\n- **Nigeria:** 1 attack (Workforce Group) - education/HR.\n- **Tanzania:** 1 attack (synaptic.co.tz) - technology.\n- **Rwanda:** 1 attack (Ministry of Health) - public administration.\n\n### 6.1. Threat actor → victim → country graph\nNorth Africa (Egypt) and Southern Africa (South Africa, Botswana) concentrate the majority of attacks, with a presence in East Africa (Tanzania, Rwanda) and West Africa (Nigeria).\n\n### 6.2. Cyberattack timeline\n\n## 7. Key trends and intelligence gaps\n### 7.1 Observed trends\n\nThe country, sector, actor and incident-type distributions above are the traceable trends for this month. They describe the monitored corpus and do not establish a broader campaign without independent evidence.\n\n### 7.2 Intelligence gaps\n\nThe available reports do not establish the initial access vector, complete exfiltration, victim confirmation, remediation timeline or operational impact for every claim. No public DFIR detail is included in the consulted corpus for this monthly record; this absence is limited to the sources reviewed.\n\n## 8. MITRE ATT&CK mapping (contextual)\n| Phase | Technique ID | Name | Incident association |\n|---|---|---|---|\n| Collection | T1005 | Data from Local System | Contextual mapping for publicly claimed collection or exposure; the method is not confirmed. |\n| Collection | T1213 | Data from Information Repositories | Contextual mapping for publicly described records or repositories; the method is not confirmed. |\n\nThese ATT&CK mappings are contextual and defensive. They do not prove that a named actor used the technique.\n\n### Contextual observations\nBased on the available descriptions, we note:\n- **Massive exfiltration:** INI Investments (400 GB) demonstrates the capacity to collect large volumes of sensitive data.\n- **Targeting of strategic sectors:** finance, healthcare, public administrations.\n- **Geographic diversity:** attacks cover six countries, showing an expansion of ransomware groups across the continent.\n- **Double extortion likely:** claims accompanied by threats of disclosure.\n- **Targeting of IT providers:** 3 attacks on technology consulting companies, potentially used as a springboard to their clients.\n\n## 9. Recommendations\n- **Egypt:** strengthen cybersecurity in the finance and healthcare sectors, particularly targeted by nightspire.\n- **IT consulting companies:** implement strict network segmentation and enhanced monitoring, as they are prime targets.\n- **Education sector:** raise awareness among private and public institutions about ransomware risks.\n- **Public administrations:** the Rwandan Ministry of Health must review its security protocols and backups.\n- **All sectors:** train employees to detect phishing and implement multi-factor authentication.\n\n## 10. SOC and tactical recommendations\n### Observed\n\nPublic records document claims, publications or exposed material. They do not by themselves provide telemetry proving a technique or an active compromise.\n\n### Hypotheses\n\nCredential abuse, exposed storage, weak access controls or excessive export privileges may explain some exposures, but each hypothesis requires validation by the affected organization.\n\n### Preventive\n\nMonitor identity, VPN, cloud, database, email and outbound-transfer telemetry. Enforce phishing-resistant MFA, least privilege, network segmentation, tested backups and rapid token or credential revocation.\n\n## 11. Strategic recommendations\n1. **Observed risks:** prioritize validation of the organizations, sectors and data types documented in the monthly corpus.\n2. **Hypotheses:** test possible credential, cloud-storage and excessive-export paths without treating them as established facts.\n3. **Preventive baseline:** maintain asset inventories, data classification, incident-response exercises, recovery plans and coordinated legal and privacy procedures.\n\n## 12. Conclusion\nMarch 2025 was marked by sustained activity of ransomware groups in Africa, with geographic and sectoral diversification. Egypt remains the most affected country, notably by nightspire which carried out the largest attack of the month (INI Investments, 400 GB). The technology consulting sector is particularly targeted, with 3 attacks. The presence of groups like play, arcusmedia, and babuk2 across several countries demonstrates a professionalization and expansion of threats on the continent.\n\n### Author\n*Adama ASSIONGBON*\n*SOC & Cyber Threat Intelligence Consultant*\n[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)\n\n---\n*AFRINTEL - Open CTI Monitoring Initiative on Africa*",
+      "description": "# AFRINTEL CTI Report - Cyber Threats in Africa - March 2025\n\n## 1. Executive summary\n\nIn March 2025, AFRINTEL documents **15 cyber incidents** affecting organizations and digital services across **8 African countries**.\n\nThe landscape is dominated by **Ransomware with 9 records (60.0%)**, followed by **Data Leak with 2 (13.3%)**. Other observed types are Account Takeover 2, System Intrusion 1, Access Sale 1.\n\nGeographic concentration is significant: **South Africa (5)**, **Egypt (3)**, **Nigeria (2)** together account for **10 records, or 66.7% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.\n\nAt sector level, the most represented categories are **Government / Administration (4)**, **Technology / IT (3)**, **Education / University (2)**. The most frequent actor labels are `Unknown` (4), `arcusmedia` (2), `nightspire` (2). `Unknown`, when present, denotes missing attribution rather than a threat actor.\n\nEvidence maturity remains variable: **11 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.\n\nCompared with February, monthly volume **increases by 5 records**. The most visible changes are Data Leak 0->2 (+2), System Intrusion 0->1 (+1), Ransomware 8->9 (+1).\n\n> **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.\n\n### 1.1 Month-over-month comparison\n\n| Indicator | February 2025 | March 2025 | Change |\n|---|---:|---:|---:|\n| Total incidents | 10 | 15 | **+5 (+50.0%)** |\n| Ransomware | 8 | 9 | **+1 (+12.5%)** |\n| Data Leak | 0 | 2 | **+2 (new)** |\n| Access Sale | 0 | 1 | **+1 (new)** |\n| DDoS | 0 | 0 | **Stable** |\n| Defacement | 0 | 0 | **Stable** |\n| Account Takeover | 2 | 2 | **Stable** |\n| System Intrusion | 0 | 1 | **+1 (new)** |\n| Malware | 0 | 0 | **Stable** |\n| Operational Fraud | 0 | 0 | **Stable** |\n\n## 2. Methodology\n\n- **Scope:** 54 African countries; reference period: March 2025.\n- **Source of truth:** validated `victims_FR.md` / `victims.md` pair.\n- **Classification:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware, and Operational Fraud.\n- **Counting:** one canonical record equals one documented cyber incident; cases under investigation remain outside statistics.\n- **Timeline:** `Incident date` and `Initial publication date` remain separate. A later disclosure does not artificially move an incident into another month when chronology is sufficiently supported.\n- **Uncertain dates:** when no exact day is known, the evidence-supported month or time window is retained.\n- **Sources:** public links are retained for supplementary incidents found through OSINT/web research; they are not retroactively imposed on historical or direct Dark Web observations.\n- **Evidence:** incident type, status, confidence, impact, and provenance remain separate dimensions.\n- **Sectors:** normalization is calculated once from the structured corpus and used identically in FR and EN.\n- **Limitation:** frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.\n\n## 3. Overview and incident types\n\n| Indicator | Value |\n|---|---:|\n| Documented incidents | **15** |\n| Countries represented | **8** |\n| Regions represented | **4** |\n| Leading country | **South Africa (5)** |\n| Leading sector | **Government / Administration (4)** |\n| Leading actor label | **Unknown (4)** |\n\n| Incident type | Records | Share |\n|---|---:|---:|\n| Ransomware | 9 | 60.0% |\n| Data Leak | 2 | 13.3% |\n| Access Sale | 1 | 6.7% |\n| DDoS | 0 | 0.0% |\n| Defacement | 0 | 0.0% |\n| Account Takeover | 2 | 13.3% |\n| System Intrusion | 1 | 6.7% |\n| Malware | 0 | 0.0% |\n| Operational Fraud | 0 | 0.0% |\n| **Total** | **15** | **100%** |\n\n## 4. Geographic distribution\n\n| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| South Africa | **5** | 2 | 1 | 0 | 0 | 0 | 1 | 1 | 0 |\n| Egypt | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Nigeria | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Botswana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Tanzania | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Ghana | **1** | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |\n| Burkina Faso | **1** | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |\n| Rwanda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| **Total** | **15** | **9** | **2** | **1** | **0** | **0** | **2** | **1** | **0** |\n\n> `Operational Fraud = 0` this month; the column is omitted for readability.\n\n## 5. Regional distribution\n\n| Region | Records | Share |\n|---|---:|---:|\n| Southern Africa | 6 | 40.0% |\n| West Africa | 4 | 26.7% |\n| North Africa | 3 | 20.0% |\n| East Africa | 2 | 13.3% |\n| **Total** | **15** | **100%** |\n\nThe leading region is **Southern Africa with 6 records (40.0%)**.\n\n## 6. Sector impact\n\n| Sector | Records | Share | Activity |\n|---|---:|---:|---|\n| Government / Administration | 4 | 26.7% | ████ |\n| Technology / IT | 3 | 20.0% | ███ |\n| Education / University | 2 | 13.3% | ██ |\n| Healthcare / Medical | 2 | 13.3% | ██ |\n| Retail / E-commerce | 1 | 6.7% | █ |\n| Construction / Real Estate | 1 | 6.7% | █ |\n| Agriculture / Agribusiness | 1 | 6.7% | █ |\n| Finance / Banking | 1 | 6.7% | █ |\n| **Total** | **15** | **100%** | |\n\n## 7. Actors / groups\n\n`Unknown` denotes missing attribution, not a threat actor.\n\n| Actor / Group | Records | Activity |\n|---|---:|---|\n| Unknown | 4 | ████ |\n| arcusmedia | 2 | ██ |\n| nightspire | 2 | ██ |\n| play | 1 | █ |\n| killsec | 1 | █ |\n| MisterSam | 1 | █ |\n| lynx | 1 | █ |\n| funksec | 1 | █ |\n| Ghudra | 1 | █ |\n| babuk2 | 1 | █ |\n\n## 8. Evidence maturity\n\n| Evidence maturity | Records | Share |\n|---|---:|---:|\n| Claim - Unverified | 7 | 46.7% |\n| Claim - Data Sample Published | 4 | 26.7% |\n| Victim/Government/Authority Confirmed | 4 | 26.7% |\n| **Total** | **15** | **100%** |\n\nEvidence statuses describe the available validation level; they do not change the technical incident type.\n\n## 9. Timeline\n\n## 10. Monthly CTI analysis\n\n### Ransomware\n\n**9 records** are classified as Ransomware. Leading countries: Egypt (3), South Africa (2), Botswana (1). A leak-site listing does not itself prove encryption or complete exfiltration.\n\n### Data Leak\n\n**2 records** are classified as Data Leak. Leading countries: Nigeria (1), South Africa (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.\n\n### Access Sale\n\n**1 record(s)** fall under Access Sale. Distribution: Burkina Faso (1). An access offer does not automatically prove exfiltration or compromise of the entire internal environment.\n\n### Account Takeover\n\n**2 Account Takeover records** are documented. Distribution: South Africa (1), Ghana (1). This category keeps institutional-account compromise distinct.\n\n### System Intrusion\n\n**1 System Intrusion records** are documented. Distribution: South Africa (1). The type is used where system access or attempted access is established without enough evidence for a more specific category.\n\n## 11. Notable incidents\n\n| Country | Organization | Type | Status | Impact | Confidence |\n|---|---|---|---|---|---|\n| South Africa | Parliament of South Africa | Account Takeover | Victim Confirmed | Level 4 | Very High |\n| Rwanda | moh.gov.rw | Ransomware | Claim - Data Sample Published | Level 4 | Very High |\n| Nigeria | Workforce Group | Ransomware | Claim - Data Sample Published | Level 4 | High |\n| South Africa | Pam Golding Properties | Data Leak | Victim Confirmed | Level 3 | Very High |\n| South Africa | Astral Foods Limited | System Intrusion | Victim Confirmed | Level 3 | Very High |\n\n> This table highlights up to five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.\n\n## 12. Key findings and intelligence gaps\n\n- **Geographic concentration:** South Africa accounts for 5 records (33.3%), followed by Egypt (3) and Nigeria (2).\n- **Threat structure:** Ransomware is the leading type with 9 records, followed by Data Leak (2).\n- **Sectors:** Government / Administration (4) and Technology / IT (3) have the highest visibility.\n- **Actors:** the most frequent labels are Unknown (4), arcusmedia (2), and nightspire (2).\n- **Evidence:** 11 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.\n\n### Intelligence gaps\n\n- initial-access vector often not public;\n- exact technical compromise date sometimes unknown;\n- claimed volumes rarely fully verifiable;\n- technical attribution often limited to a publication handle or label;\n- public remediation, root-cause, and DFIR conclusions remain limited.\n\nThese gaps should guide collection rather than be replaced with assumptions.\n\n## 13. Recommendations\n\n### Organizations\n\n- enforce phishing-resistant MFA on privileged accounts, VPN, email, social media, and administration consoles;\n- apply PAM, least privilege, segmentation, and secret rotation;\n- maintain immutable backups and test restoration;\n- strengthen public applications, APIs, and administration interfaces;\n- formalize incident response and data-breach notification.\n\n### SOC and detection\n\n- monitor abnormal authentication, MFA changes, privileged-account creation, and role elevation;\n- detect mass database reads, unusual exports, archive creation, and large outbound transfers;\n- correlate EDR, IAM, VPN, WAF, proxy, DNS, cloud, and application logs;\n- distinguish DDoS, internal intrusion, account compromise, and data exposure to avoid unsupported conclusions.\n\n### CTI\n\n- keep incident date, initial publication, first observation, sample, disclosure, and confirmation separate;\n- track republication and resale without automatically counting them as new compromise;\n- preserve the evidence hierarchy between claim, corroboration, and confirmation;\n- validate FR/EN parity before generating statistics.\n\n## 14. Conclusion\n\n**March 2025** contains **15 documented cyber incidents** across **8 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.\n\nThe report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "en",
       "published": "2025-03-31T00:00:00Z",
       "report_types": [
@@ -1815,41 +2255,49 @@
         "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
         "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
         "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
-        "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
-        "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
-        "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-        "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-        "identity--06b07de2-0813-5ea9-895e-c59076394144",
+        "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+        "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+        "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+        "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+        "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
+        "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+        "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+        "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
+        "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
         "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
         "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
         "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
         "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
         "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
         "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
-        "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-        "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-        "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-        "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-        "incident--43f57086-06d1-5ca9-af93-15d5478b7252"
+        "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+        "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+        "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+        "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+        "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+        "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+        "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+        "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+        "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/README.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 11,
+      "x_afrintel_total_incidents": 15,
       "x_afrintel_ransomware_count": 9,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_data_leak_count": 5,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 11
+      "x_afrintel_victim_identity_count": 15
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--de16c770-f86a-55a6-ba05-9303f6d0fab7",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "Rapport CTI mensuel AFRINTEL - Mars 2025",
-      "description": "# Rapport CTI : Cyberattaques en Afrique - Mars 2025\n\n## 1. Résumé exécutif\n- **Nombre total d'attaques recensées** : 11\n- **Acteurs les plus actifs** : arcusmedia (2 attaques), nightspire (2), play (1), killsec (1), MisterSam (1), lynx (1), funksec (1), Ghudra (1), babuk2 (1).\n- **Secteurs les plus ciblés** : Technologie / Services IT (3), Éducation (2), Santé (2), Gouvernement / Administrations publiques (2), Commerce de détail (1), Finance / Banque / Assurance (1).\n- **Pays les plus touchés** : Égypte (3), Afrique du Sud (2), Nigeria (2), Botswana (1), Tanzanie (1), Burkina Faso (1), Rwanda (1).\n- **Volume de données exfiltrées** : 400 Go pour INI Investments (Égypte). Les autres volumes ne sont pas précisés.\n\n## 2. Méthodologie\nCe rapport de Cyber Threat Intelligence (CTI) présente une analyse détaillée des cyberattaques survenues en Afrique durant le mois de mars 2025. Les informations sont issues de sources OSINT et de sites de fuites de groupes ransomware, compilées dans le cadre du projet AFRINTEL. L'objectif est de fournir une vision claire des tendances, des acteurs menaçants, des secteurs ciblés et des indicateurs de compromission associés.\n\n## 3. Vue d'ensemble\n\n### 3.1 Répartition par acteur\n| Acteur / Groupe | Nombre d'attaques |\n|-------------------|-------------------|\n| arcusmedia        | 2                 |\n| nightspire        | 2                 |\n| play              | 1                 |\n| killsec           | 1                 |\n| MisterSam         | 1                 |\n| lynx              | 1                 |\n| funksec           | 1                 |\n| Ghudra *(vente d'accès, non-ransomware)* | 1 |\n| babuk2            | 1                 |\n| **Total**         | **11**            |\n\n### 3.2 Répartition par secteur d'activité\n| Secteur | Nombre d'attaques |\n|---------|-------------------|\n| Technologie / Services IT | 3 |\n| Éducation | 2 |\n| Santé | 2 |\n| Gouvernement / Administrations publiques | 2 |\n| Commerce de détail | 1 |\n| Finance / Banque / Assurance | 1 |\n| **Total** | **11** |\n\n### 3.3 Répartition par pays\n| Pays | Nombre d'attaques |\n|------|-------------------|\n| 🇪🇬 Égypte | 3 |\n| 🇿🇦 Afrique du Sud | 2 |\n| 🇳🇬 Nigeria | 2 |\n| 🇧🇼  Botswana | 1 |\n| 🇹🇿  Tanzanie | 1 |\n| 🇧🇫 Burkina Faso | 1 |\n| 🇷🇼 Rwanda | 1 |\n| **Total** | **11** |\n\n<!-- AFRINTEL_CURRENT_MODEL_START -->\n### 3.4 Vue globale standardisée\n\n| Pays | Ransomware | Exposition des données (fuites + accès) | Total | Distribution |\n| :--- | ---: | ---: | ---: | :--- |\n| 🇪🇬 Égypte | 3 | 0 | 3 | 🟧🟧🟧 |\n| 🇳🇬 Nigeria | 1 | 1 | 2 | 🟧 🟦 |\n| 🇿🇦 Afrique du Sud | 2 | 0 | 2 | 🟧🟧 |\n| 🇧🇼 Botswana | 1 | 0 | 1 | 🟧 |\n| 🇧🇫 Burkina Faso | 0 | 1 | 1 |  🟦 |\n| 🇷🇼 Rwanda | 1 | 0 | 1 | 🟧 |\n| 🇹🇿 Tanzanie | 1 | 0 | 1 | 🟧 |\n\n### Vue agrégée mensuelle de l’exposition\n\nLa vue CTI mensuelle regroupe les fuites de données et les ventes d’accès sous **exposition des données** : **2 fiches** (18,2% du corpus mensuel). Les fiches sources restent la référence ; une vente d’accès ne prouve pas à elle seule l’exfiltration de données.\n\n### Répartition géographique par région\n\n| Région | Occurrences | Ransomware | Exposition des données (fuites + accès) | Distribution |\n| :--- | ---: | ---: | ---: | :--- |\n| Afrique du Nord | 3 | 3 | 0 | 🟧🟧🟧 |\n| Afrique australe | 3 | 3 | 0 | 🟧🟧🟧 |\n| Afrique de l’Ouest | 3 | 1 | 2 | 🟧 🟦🟦 |\n| Afrique centrale | 0 | 0 | 0 |  |\n| Afrique de l’Est | 2 | 2 | 0 | 🟧🟧 |\n\nLégende : NA = Afrique du Nord ; SA = Afrique australe ; AO = Afrique de l’Ouest ; AC = Afrique centrale ; AE = Afrique de l’Est\n\n### Répartition sectorielle\n\n| Secteur | Fiches | Part | Activité |\n| :--- | ---: | ---: | :--- |\n| Gouvernement / administration | 3 | 27,3% | ██████████ |\n| Technologies / informatique | 3 | 27,3% | ██████████ |\n| Éducation / universités | 2 | 18,2% | ███████ |\n| Finance / banque | 1 | 9,1% | ███ |\n| Santé / médical | 1 | 9,1% | ███ |\n| Commerce / e-commerce | 1 | 9,1% | ███ |\n\n### Acteurs / groupes les plus présents\n\n| Acteur / Groupe | Fiches | Activité |\n| :--- | ---: | :--- |\n| arcusmedia | 2 | ██████████ |\n| nightspire | 2 | ██████████ |\n| Ghudra | 1 | █████ |\n| MisterSam | 1 | █████ |\n| babuk2 | 1 | █████ |\n| funksec | 1 | █████ |\n| killsec | 1 | █████ |\n| lynx | 1 | █████ |\n| play | 1 | █████ |\n<!-- AFRINTEL_CURRENT_MODEL_END -->\n\n### Comparaison avec le mois précédent\n\nÀ partir des fiches incidents validées comme source de comptage, mars 2025 compte **11** incidents contre **8** le mois précédent (une hausse de **+3** ; **+37.5%**). Cette comparaison décrit les publications enregistrées par AFRINTEL et ne prouve pas à elle seule une évolution de l'activité des attaquants ni un impact confirmé sur les victimes.\n\n| Indicateur | Mois précédent | Mois en cours | Variation |\n|---|---:|---:|---:|\n| Fiches incidents enregistrées | 8 | 11 | +3 (+37.5%) |\n\n## 4. Analyse détaillée par type d'incident\n\n## 5. Impact sectoriel\n- **Conseil en technologies** : 3 attaques (IT-IQ Botswana, LINKGROUP, synaptic.co.tz). Les groupes play et arcusmedia sont les principaux acteurs, ciblant des prestataires de services IT dans trois pays différents.\n- **Éducation** : 2 attaques (Workforce Group, ISEE). killsec et funksec ont visé une entreprise de services éducatifs et une école privée.\n- **Santé** : 1 attaque (MISR AL MAHABA HOSPITAL) par nightspire, touchant un hôpital privé au Caire.\n- **Commerce de détail** : 1 attaque (ACDC Express) par lynx, visant un distributeur majeur en Afrique du Sud.\n- **Finance** : 1 attaque (INI Investments) par nightspire, avec exfiltration massive de 400 Go.\n- **Administrations publiques** : 1 attaque (Ministère de la Santé du Rwanda) par babuk2.\n\n## 6. Profil des acteurs\n### 6.1 Profil des acteurs\n\nLes comptages d'acteurs et de sources restent ceux documentés en section 3 et dans les fiches victimes sources. L'attribution est conservée uniquement au niveau étayé par les éléments publics.\n\n### 6.2 Évaluation du risque\n\nLes pays et secteurs présentant plusieurs fiches ou des fonctions publiques, éducatives, sanitaires, financières ou critiques doivent faire l'objet d'une validation prioritaire. Il s'agit d'un signal de priorisation OSINT, et non d'une confirmation de compromission ou d'impact.\n\n- **Égypte** : 3 attaques (ISEE, MISR AL MAHABA HOSPITAL, INI Investments) - éducation, santé et finance. L'Égypte reste le pays le plus ciblé du mois.\n- **Afrique du Sud** : 2 attaques (LINKGROUP, ACDC Express) - technologies et commerce de détail.\n- **Botswana** : 1 attaque (IT-IQ Botswana) - technologies.\n- **Nigeria** : 1 attaque (Workforce Group) - éducation/RH.\n- **Tanzanie** : 1 attaque (synaptic.co.tz) - technologies.\n- **Rwanda** : 1 attaque (Ministère de la Santé) - administration publique.\n### 6.1. Graphe acteur → victime → pays\nL'Afrique du Nord (Égypte) et l'Afrique australe (Afrique du Sud, Botswana) concentrent la majorité des attaques, avec une présence en Afrique de l'Est (Tanzanie, Rwanda) et de l'Ouest (Nigeria).\n\n### 6.2. Timeline des attaques\n\n## 7. Tendances et lacunes de renseignement\n### 7.1 Tendances observées\n\nLes répartitions par pays, secteur, acteur et type d'incident présentées ci-dessus constituent les tendances traçables du mois. Elles décrivent le corpus surveillé et n'établissent pas une campagne plus large sans éléments indépendants.\n\n### 7.2 Lacunes de renseignement\n\nLes rapports disponibles ne permettent pas d'établir pour chaque revendication le vecteur d'accès initial, l'exfiltration complète, la confirmation par la victime, la chronologie de remédiation ou l'impact opérationnel. Aucun détail DFIR public n'est inclus dans le corpus consulté pour cette fiche mensuelle ; cette absence est limitée aux sources examinées.\n\n## 8. Cartographie MITRE ATT&CK (contextuelle)\n| Phase | ID technique | Nom | Association à l'incident |\n|---|---|---|---|\n| Collecte | T1005 | Data from Local System | Correspondance contextuelle pour une collecte ou exposition revendiquée ; la méthode n'est pas confirmée. |\n| Collecte | T1213 | Data from Information Repositories | Correspondance contextuelle pour les dossiers ou référentiels décrits publiquement ; la méthode n'est pas confirmée. |\n\nCes correspondances ATT&CK sont contextuelles et défensives. Elles ne prouvent pas qu'un acteur donné a utilisé la technique.\n\n### Contextual observations\nD'après les descriptions disponibles, on note :\n- **Exfiltration massive** : INI Investments (400 Go) démontre une capacité à collecter de grands volumes de données sensibles.\n- **Ciblage de secteurs stratégiques** : finance, santé, administrations publiques.\n- **Diversité géographique** : les attaques couvrent six pays, montrant une expansion des groupes ransomware sur le continent.\n- **Double extorsion probable** : revendications accompagnées de menaces de divulgation.\n- **Ciblage des prestataires IT** : 3 attaques sur des sociétés de conseil en technologies, potentiellement utilisées comme tremplin vers leurs clients.\n\n## 9. Recommandations\n- **Égypte** : renforcer la cybersécurité dans les secteurs de la finance et de la santé, particulièrement ciblés par nightspire.\n- **Sociétés de conseil IT** : mettre en place une segmentation réseau stricte et une surveillance renforcée, car elles sont des cibles privilégiées.\n- **Secteur éducatif** : sensibiliser les établissements privés et publics aux risques de ransomware.\n- **Administrations publiques** : le ministère rwandais de la Santé doit revoir ses protocoles de sécurité et ses sauvegardes.\n- **Tous secteurs** : former les employés à la détection des phishing et mettre en œuvre l'authentification multi-facteurs.\n\n## 10. Recommandations SOC et tactiques\n### Observé\n\nLes sources publiques documentent des revendications, des publications ou du matériel exposé. Elles ne fournissent pas à elles seules une télémétrie prouvant une technique ou une compromission active.\n\n### Hypothèses\n\nL'abus d'identifiants, un stockage exposé, des contrôles d'accès faibles ou des privilèges d'export excessifs peuvent expliquer certaines expositions, mais chaque hypothèse doit être vérifiée par l'organisation concernée.\n\n### Préventif\n\nSurveiller les journaux d'identité, VPN, cloud, bases de données, messagerie et transferts sortants. Imposer une MFA résistante au phishing, le moindre privilège, la segmentation, des sauvegardes testées et la révocation rapide des jetons ou identifiants.\n\n## 11. Recommandations stratégiques\n1. **Risques observés :** prioriser la validation des organisations, secteurs et types de données documentés dans le corpus mensuel.\n2. **Hypothèses :** tester les chemins possibles liés aux identifiants, au stockage cloud et aux exports excessifs sans les présenter comme des faits établis.\n3. **Socle préventif :** maintenir l'inventaire des actifs, la classification des données, les exercices de réponse, les plans de reprise et les procédures coordonnées de sécurité, de droit et de protection des données.\n\n## 12. Conclusion\nMars 2025 a été marqué par une activité soutenue des groupes ransomware en Afrique, avec une diversification géographique et sectorielle. L'Égypte reste le pays le plus touché, notamment par nightspire qui a réalisé l'attaque la plus volumineuse du mois (INI Investments, 400 Go). Le secteur du conseil en technologies est particulièrement visé, avec 3 attaques. La présence de groupes comme play, arcusmedia ou babuk2 sur plusieurs pays montre une professionnalisation et une expansion des menaces sur le continent.\n\n### Auteur\n*Adama ASSIONGBON*\n*Consultant SOC & Cyber Threat Intelligence*\n[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)\n\n---\n*AFRINTEL - Initiative ouverte de veille CTI sur l’Afrique*",
+      "description": "# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Mars 2025\n\n## 1. Synthèse exécutive\n\nEn Mars 2025, AFRINTEL documente **15 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.\n\nLe paysage est dominé par **Ransomware avec 9 fiches (60,0 %)**, suivi de **Data Leak avec 2 (13,3 %)**. Les autres types observés sont Account Takeover 2, System Intrusion 1, Access Sale 1.\n\nLa concentration géographique est marquée : **Afrique du Sud (5)**, **Égypte (3)**, **Nigeria (2)** représentent ensemble **10 fiches, soit 66,7 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.\n\nSur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (4)**, **Technologie / IT (3)**, **Éducation / Université (2)**. Les labels d'acteurs les plus fréquents sont `Unknown` (4), `arcusmedia` (2), `nightspire` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.\n\nLa maturité des preuves reste variable : **11 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.\n\nPar rapport à Février, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent Data Leak 0->2 (+2), System Intrusion 0->1 (+1), Ransomware 8->9 (+1).\n\n> **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.\n\n### 1.1 Comparaison avec le mois précédent\n\n| Indicateur | Février 2025 | Mars 2025 | Évolution |\n|---|---:|---:|---:|\n| Total incidents | 10 | 15 | **+5 (+50,0 %)** |\n| Ransomware | 8 | 9 | **+1 (+12,5 %)** |\n| Data Leak | 0 | 2 | **+2 (nouveau)** |\n| Access Sale | 0 | 1 | **+1 (nouveau)** |\n| DDoS | 0 | 0 | **Stable** |\n| Defacement | 0 | 0 | **Stable** |\n| Account Takeover | 2 | 2 | **Stable** |\n| System Intrusion | 0 | 1 | **+1 (nouveau)** |\n| Malware | 0 | 0 | **Stable** |\n| Operational Fraud | 0 | 0 | **Stable** |\n\n## 2. Méthodologie\n\n- **Périmètre :** 54 pays africains ; période de référence : Mars 2025.\n- **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.\n- **Classification :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud.\n- **Comptage :** une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques.\n- **Chronologie :** `Date de l'incident` et `Date de publication initiale` sont séparées. Une publication ultérieure ne déplace pas artificiellement un incident vers un autre mois lorsque la chronologie est suffisamment établie.\n- **Dates incertaines :** lorsqu'un jour exact n'est pas connu, le mois ou la fenêtre soutenue par les preuves est conservé.\n- **Sources :** les liens publics sont conservés pour les incidents complémentaires identifiés par recherche OSINT/web ; ils ne sont pas imposés rétroactivement aux observations historiques ou Dark Web directes.\n- **Preuve :** type d'incident, statut, confiance, impact et provenance restent des dimensions distinctes.\n- **Secteurs :** normalisation calculée une seule fois à partir du corpus structuré, puis utilisée à l'identique en FR et EN.\n- **Limite :** les fréquences reflètent la visibilité AFRINTEL et non l'ensemble des compromissions réelles sur le continent.\n\n## 3. Vue d'ensemble et types d'incident\n\n| Indicateur | Valeur |\n|---|---:|\n| Incidents documentés | **15** |\n| Pays représentés | **8** |\n| Régions représentées | **4** |\n| Premier pays | **Afrique du Sud (5)** |\n| Premier secteur | **Gouvernement / Administration (4)** |\n| Premier label acteur | **Unknown (4)** |\n\n| Type d'incident | Fiches | Part |\n|---|---:|---:|\n| Ransomware | 9 | 60,0 % |\n| Data Leak | 2 | 13,3 % |\n| Access Sale | 1 | 6,7 % |\n| DDoS | 0 | 0,0 % |\n| Defacement | 0 | 0,0 % |\n| Account Takeover | 2 | 13,3 % |\n| System Intrusion | 1 | 6,7 % |\n| Malware | 0 | 0,0 % |\n| Operational Fraud | 0 | 0,0 % |\n| **Total** | **15** | **100 %** |\n\n## 4. Répartition géographique\n\n| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| Afrique du Sud | **5** | 2 | 1 | 0 | 0 | 0 | 1 | 1 | 0 |\n| Égypte | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Nigeria | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Botswana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Tanzanie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Ghana | **1** | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |\n| Burkina Faso | **1** | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |\n| Rwanda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| **Total** | **15** | **9** | **2** | **1** | **0** | **0** | **2** | **1** | **0** |\n\n> `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.\n\n## 5. Répartition régionale\n\n| Région | Fiches | Part |\n|---|---:|---:|\n| Afrique australe | 6 | 40,0 % |\n| Afrique de l'Ouest | 4 | 26,7 % |\n| Afrique du Nord | 3 | 20,0 % |\n| Afrique de l'Est | 2 | 13,3 % |\n| **Total** | **15** | **100 %** |\n\nLa région la plus représentée est **Afrique australe avec 6 fiches (40,0 %)**.\n\n## 6. Impact sectoriel\n\n| Secteur | Fiches | Part | Activité |\n|---|---:|---:|---|\n| Gouvernement / Administration | 4 | 26,7 % | ████ |\n| Technologie / IT | 3 | 20,0 % | ███ |\n| Éducation / Université | 2 | 13,3 % | ██ |\n| Santé / Médical | 2 | 13,3 % | ██ |\n| Commerce / E-commerce | 1 | 6,7 % | █ |\n| Construction / Immobilier | 1 | 6,7 % | █ |\n| Agriculture / Agro-industrie | 1 | 6,7 % | █ |\n| Finance / Banque | 1 | 6,7 % | █ |\n| **Total** | **15** | **100 %** | |\n\n## 7. Acteurs / groupes\n\n`Unknown` correspond à une absence d'attribution, pas à un acteur.\n\n| Acteur / Groupe | Fiches | Activité |\n|---|---:|---|\n| Unknown | 4 | ████ |\n| arcusmedia | 2 | ██ |\n| nightspire | 2 | ██ |\n| play | 1 | █ |\n| killsec | 1 | █ |\n| MisterSam | 1 | █ |\n| lynx | 1 | █ |\n| funksec | 1 | █ |\n| Ghudra | 1 | █ |\n| babuk2 | 1 | █ |\n\n## 8. Maturité des preuves\n\n| Maturité de preuve | Fiches | Part |\n|---|---:|---:|\n| Claim - Unverified | 7 | 46,7 % |\n| Claim - Data Sample Published | 4 | 26,7 % |\n| Confirmation victime / gouvernement / autorité | 4 | 26,7 % |\n| **Total** | **15** | **100 %** |\n\nLes statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.\n\n## 9. Chronologie\n\n## 10. Analyse CTI mensuelle\n\n### Ransomware\n\n**9 fiches** sont classées Ransomware. Principaux pays : Égypte (3), Afrique du Sud (2), Botswana (1). Une publication sur un leak site ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.\n\n### Data Leak\n\n**2 fiches** sont classées Data Leak. Principaux pays : Nigeria (1), Afrique du Sud (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.\n\n### Access Sale\n\n**1 fiche(s)** relèvent d'Access Sale. Répartition : Burkina Faso (1). Une offre d'accès ne prouve pas automatiquement une exfiltration ou une compromission de l'ensemble de l'infrastructure.\n\n### Account Takeover\n\n**2 Account Takeover** sont documentés. Répartition : Afrique du Sud (1), Ghana (1). Cette catégorie conserve séparément les compromissions de comptes institutionnels.\n\n### System Intrusion\n\n**1 System Intrusion** sont documentées. Répartition : Afrique du Sud (1). Ce type est utilisé lorsqu'un accès ou une tentative d'accès système est établi sans preuve suffisante pour une catégorie plus spécifique.\n\n## 11. Incidents notables\n\n| Pays | Organisation | Type | Statut | Impact | Confiance |\n|---|---|---|---|---|---|\n| Afrique du Sud | Parliament of South Africa | Account Takeover | Victim Confirmed | Level 4 | Very High |\n| Rwanda | moh.gov.rw | Ransomware | Claim - Data Sample Published | Level 4 | Very High |\n| Nigeria | Workforce Group | Ransomware | Claim - Data Sample Published | Level 4 | High |\n| Afrique du Sud | Pam Golding Properties | Data Leak | Victim Confirmed | Level 3 | Very High |\n| Afrique du Sud | Astral Foods Limited | System Intrusion | Victim Confirmed | Level 3 | Very High |\n\n> Ce tableau met en avant jusqu'à cinq fiches selon le niveau d'impact, la confirmation et la confiance structurés. Il ne constitue pas un classement absolu de gravité.\n\n## 12. Principaux enseignements et lacunes de renseignement\n\n- **Concentration géographique :** Afrique du Sud représente 5 fiches (33,3 %), devant Égypte (3) et Nigeria (2).\n- **Structure de menace :** Ransomware est le premier type avec 9 fiches, suivi de Data Leak (2).\n- **Secteurs :** Gouvernement / Administration (4) et Technologie / IT (3) concentrent la plus forte visibilité.\n- **Acteurs :** les labels les plus fréquents sont Unknown (4), arcusmedia (2) et nightspire (2).\n- **Preuve :** 11 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.\n\n### Intelligence gaps\n\n- vecteur d'accès initial souvent non public ;\n- date technique exacte de compromission parfois inconnue ;\n- volumes revendiqués rarement vérifiables intégralement ;\n- attribution technique souvent limitée au pseudonyme ou label de publication ;\n- informations publiques sur remédiation, cause racine et conclusions DFIR encore limitées.\n\nCes lacunes doivent guider la collecte sans être remplacées par des hypothèses.\n\n## 13. Recommandations\n\n### Organisations\n\n- imposer MFA résistante au phishing sur les comptes privilégiés, VPN, messagerie, réseaux sociaux et consoles d'administration ;\n- appliquer PAM, moindre privilège, segmentation et rotation des secrets ;\n- maintenir des sauvegardes immuables et tester la restauration ;\n- renforcer les applications publiques, API et interfaces administratives ;\n- formaliser réponse à incident et notification des violations de données.\n\n### SOC et détection\n\n- surveiller les authentifications anormales, changements MFA, créations de comptes privilégiés et élévations de rôles ;\n- détecter lectures massives de bases, exports inhabituels, créations d'archives et transferts sortants volumineux ;\n- corréler EDR, IAM, VPN, WAF, proxy, DNS, cloud et journaux applicatifs ;\n- distinguer DDoS, intrusion interne, compromission de compte et fuite de données pour éviter les conclusions non étayées.\n\n### CTI\n\n- conserver séparément date d'incident, publication initiale, première observation, échantillon, divulgation et confirmation ;\n- suivre republications et reventes sans les compter automatiquement comme nouvelles compromissions ;\n- maintenir la hiérarchie de preuve entre claim, corroboration et confirmation ;\n- valider la parité FR/EN avant toute génération de statistiques.\n\n## 14. Conclusion\n\nLe mois de **Mars 2025** compte **15 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.\n\nLe rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "fr",
       "published": "2025-03-31T00:00:00Z",
       "report_types": [
@@ -1894,39 +2342,47 @@
         "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
         "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
         "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
-        "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
-        "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
-        "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-        "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-        "identity--06b07de2-0813-5ea9-895e-c59076394144",
+        "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+        "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+        "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+        "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+        "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
+        "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+        "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+        "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
+        "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
         "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
         "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
         "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
         "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
         "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
         "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
-        "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-        "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-        "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-        "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-        "incident--43f57086-06d1-5ca9-af93-15d5478b7252"
+        "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+        "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+        "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+        "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+        "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+        "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+        "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+        "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+        "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2025/03-march/README_FR.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 11,
+      "x_afrintel_total_incidents": 15,
       "x_afrintel_ransomware_count": 9,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_data_leak_count": 5,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 11
+      "x_afrintel_victim_identity_count": 15
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--3102e22f-ab29-580c-8a18-1ab1f01658f6",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "AFRINTEL monthly statistics - March 2025",
       "description": "# AFRINTEL CTI statistics - March 2025\n\n## Summary\n\nThis statistical sheet is compiled from the 11 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 11 |\n| Ransomware | 9 |\n| Data leaks | 1 |\n| Access sales | 1 |\n| Defacement | 0 |\n| Unclassified public claims | 0 |\n| Countries | 7 |\n| Sectors | 9 |\n| Actors / sources | 9 |\n\n## 1. Country\n\n| Country | Incidents |\n|---|---:|\n| 🇪🇬 Egypt | 3 |\n| 🇳🇬 Nigeria | 2 |\n| 🇿🇦 South Africa | 2 |\n| 🇧🇼 Botswana | 1 |\n| 🇹🇿 Tanzania | 1 |\n| 🇧🇫 Burkina Faso | 1 |\n| 🇷🇼 Rwanda | 1 |\n\n## 2. Sector\n\n| Sector | Incidents |\n|---|---:|\n| Technology Consulting | 3 |\n| Education / HR Services | 1 |\n| Government / Healthcare Regulation | 1 |\n| Retail (Distribution) | 1 |\n| Education / Private Schooling | 1 |\n| Healthcare / Hospital Sector | 1 |\n| Finance | 1 |\n| Healthcare / Public Health | 1 |\n| Public administrations (Health) | 1 |\n\n## 3. Actor / source\n\n| Actor / source | Incidents |\n|---|---:|\n| arcusmedia | 2 |\n| nightspire | 2 |\n| play | 1 |\n| killsec | 1 |\n| MisterSam | 1 |\n| lynx | 1 |\n| funksec | 1 |\n| Ghudra | 1 |\n| babuk2 | 1 |\n\n## 4. Type\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 9 |\n| Data Leak | 1 |\n| Access Sale | 1 |\n\n## CTI reading\n\nThe monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "en",
@@ -1973,39 +2429,47 @@
         "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
         "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
         "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
-        "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
-        "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
-        "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-        "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-        "identity--06b07de2-0813-5ea9-895e-c59076394144",
+        "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+        "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+        "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+        "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+        "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
+        "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+        "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+        "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
+        "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
         "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
         "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
         "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
         "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
         "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
         "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
-        "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-        "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-        "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-        "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-        "incident--43f57086-06d1-5ca9-af93-15d5478b7252"
+        "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+        "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+        "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+        "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+        "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+        "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+        "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+        "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+        "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7"
       ],
       "x_afrintel_source_path": "statistics/2025/03-march/README.md",
       "x_afrintel_report_kind": "monthly-statistics",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 11,
+      "x_afrintel_total_incidents": 15,
       "x_afrintel_ransomware_count": 9,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_data_leak_count": 5,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 11
+      "x_afrintel_victim_identity_count": 15
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--813a4f6b-3370-5aea-ba26-9866d3920ad1",
-      "created": "2026-08-20T19:28:00Z",
-      "modified": "2026-08-20T19:28:00Z",
+      "created": "2026-08-24T13:06:52Z",
+      "modified": "2026-08-24T13:06:52Z",
       "name": "Statistiques mensuelles AFRINTEL - Mars 2025",
       "description": "# Statistiques CTI AFRINTEL - Mars 2025\n\nCette fiche reprend les 11 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.\n\n| Indicateur | Valeur |\n|---|---:|\n| Total incidents | 11 |\n| Ransomware | 9 |\n| Fuites de données | 2 |\n| Pays touchés | 7 |\n| Secteurs | 9 |\n| Acteurs / sources | 9 |\n\n## Pays\n\n| Pays | Incidents |\n|---|---:|\n| 🇪🇬 Égypte | 3 |\n| 🇳🇬 Nigeria | 2 |\n| 🇿🇦 Afrique du Sud | 2 |\n| 🇧🇼 Botswana | 1 |\n| 🇹🇿 Tanzanie | 1 |\n| 🇧🇫 Burkina Faso | 1 |\n| 🇷🇼 Rwanda | 1 |\n\n## Secteurs\n\n| Secteur | Incidents |\n|---|---:|\n| Conseil en technologies | 3 |\n| Éducation / Services RH | 1 |\n| Administration publique / Régulation de la santé | 1 |\n| Commerce de détail (Distribution) | 1 |\n| Éducation / Enseignement privé. | 1 |\n| Santé / Secteur Hospitalier | 1 |\n| Finance | 1 |\n| Santé / Santé publique | 1 |\n| Administrations publiques (Santé) | 1 |\n\n## Acteurs / sources\n\n| Acteur / source | Incidents |\n|---|---:|\n| arcusmedia | 2 |\n| nightspire | 2 |\n| play | 1 |\n| killsec | 1 |\n| MisterSam | 1 |\n| lynx | 1 |\n| funksec | 1 |\n| Ghudra | 1 |\n| babuk2 | 1 |\n\n## Types\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 9 |\n| Data Leak | 2 |\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "fr",
@@ -2052,32 +2516,40 @@
         "identity--6685d4e7-7503-5392-b33a-e06088fd4728",
         "identity--def1407b-db82-5825-b1fe-43e4b9fa732a",
         "identity--2fe4fd0a-7f40-5326-ac3f-5c863bb54caf",
-        "identity--457f3b3c-93d0-5745-bca2-8c452967efa1",
-        "identity--ec411f36-ae22-5c35-98bc-cc8423969df8",
-        "identity--4a47eaf7-3765-5a96-96e0-81692e134be1",
-        "identity--5ecca1d4-bc5e-5f16-937d-5bbcc02d2191",
-        "identity--06b07de2-0813-5ea9-895e-c59076394144",
+        "identity--8dc66c58-ca01-51fa-b41e-c503c4a7ec3d",
+        "identity--6fe7a51c-6a10-560b-b64b-e29b3ed007f7",
+        "identity--9fa0b37b-6dde-5779-8ba7-ad392edfd293",
+        "identity--df59aca8-882e-5868-8bea-e80bddfe1717",
+        "identity--16844f3f-9e8c-541a-90f0-f44e68f47325",
+        "identity--8df8aeb1-7106-51dd-a2c9-a2d3220c262f",
+        "identity--c738e973-bd74-59af-9189-f0b1ddd22322",
+        "identity--d41177db-e4f9-592d-9eb4-cd38fdccd6b4",
+        "identity--e7b3901c-cce0-5b13-bb7e-ea69b5fdfe89",
         "incident--764c9e68-21c7-518c-b90d-b8df599bca89",
         "incident--48aa4133-ff7d-5642-97e9-b47c8a903d53",
         "incident--ba7c970e-d79a-5c66-ae9e-cb3920878aea",
         "incident--6b5d1ab4-e437-55a7-ac64-0b44b389fa40",
         "incident--8a5ccaa4-b3b1-5e56-b8a3-4446f04f51e3",
         "incident--ecf5014a-b850-524b-b8e5-a3c645c41f95",
-        "incident--7c50d479-27ef-5e94-9c7d-ef6ccfba11c2",
-        "incident--b413a410-b148-5a08-9ab0-ede59e20127c",
-        "incident--54b0a9bc-2518-5170-bd04-f874a6c4dc97",
-        "incident--ea2d85de-7a5b-5b5b-835c-f3b0a66a0b75",
-        "incident--43f57086-06d1-5ca9-af93-15d5478b7252"
+        "incident--8c757d00-7581-50cf-9496-51badaa4bf32",
+        "incident--9b84a72e-fd97-556b-84cc-a953fdaf12d1",
+        "incident--cb448cbb-fdb8-5304-8992-8379bfd8af3b",
+        "incident--26436200-e671-5d68-9e43-9e9f346260c6",
+        "incident--2ad3ec3c-372c-5600-bb86-c9c65ec8b701",
+        "incident--121b9b21-cb82-5392-a065-3c9b7b25ec34",
+        "incident--aa33952e-0532-5097-adc1-f8f7bf298647",
+        "incident--2340b404-5972-5734-9496-cdaafbe9e930",
+        "incident--711367d0-1a12-5f12-a3d1-d140113ff7c7"
       ],
       "x_afrintel_source_path": "statistics/2025/03-march/README_FR.md",
       "x_afrintel_report_kind": "monthly-statistics",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 11,
+      "x_afrintel_total_incidents": 15,
       "x_afrintel_ransomware_count": 9,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_data_leak_count": 5,
       "x_afrintel_access_sale_count": 1,
       "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 11
+      "x_afrintel_victim_identity_count": 15
     }
   ]
 }

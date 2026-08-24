@@ -1,17 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in November 2025 (14 victims)
+# African victims - November 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **6 African countries**.
+**15 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 10, Data Leak 4, Defacement 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## November 2025
 
@@ -33,6 +30,7 @@ November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Wannabees appears to be a South African recruitment and temporary-employment platform, based on the structure and content of the reviewed applicant database.
 - **Analysis:** AFRINTEL reviewed two identical files from the provided evidence set (DB.txt and HoJmS, matching by SHA-256), containing a five-record applicant export. The schema includes applicant identifiers, national identity numbers, names, addresses, phone numbers, email fields, dates of birth, nationality, employment history, current occupation, salary expectations and remuneration-related fields, alongside a password field. The sample is structurally consistent with a recruitment or staffing database and contains highly sensitive personal and employment information. The files are dated 4 November 2025 in the evidence directory; this is treated as the discovery/evidence date, not as a confirmed publication or intrusion date. The available material does not identify a threat actor, forum, access method or complete dataset volume. AFRINTEL records the case as a data-leak claim with a published sample and does not reproduce names, identity numbers, contact details, passwords or other raw personal data.
+
 ### 05 November 2025
 #### 🇨🇮 Ivory Coast - Anka (Anka.africa)
 - **Actor / Group:** Spirigatito
@@ -50,7 +48,7 @@ November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak
 - **Ransomware Group:** clop
 - **Sector:** Technology / Industry
 - **Website:** www.elsewedyelectric.com
-- **Status:** Claim - Data Sample Published
+- **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 2
@@ -62,7 +60,7 @@ November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak
 - **Ransomware Group:** clop
 - **Sector:** Financial Services (Banking)
 - **Website:** www.zanaco.co.zm
-- **Status:** Claim - Data Sample Published
+- **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
 - **Impact level:** Level 3
@@ -117,6 +115,22 @@ November 2025 includes **14 unique incidents**: **10 Ransomware**, **4 Data Leak
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Samcrete Holding is a fully integrated engineering, contracting, development, manufacturing, and investment company established in 1963.
+
+### 17 November 2025
+#### Kenya - Multiple Government of Kenya websites
+- **Actor / Group:** PCP@Kenya (preliminary government attribution)
+- **Sector:** Government / Administration
+- **Website:** Multiple government domains
+- **Incident date:** 17 November 2025 - incident date publicly confirmed by Kenyan authorities
+- **Initial publication date:** 17 November 2025
+- **Status:** Government Confirmed + Preliminary Actor Attribution
+- **Incident type:** Defacement
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Victim Description:** The incident affected multiple Kenyan government websites across ministries, State House and public agencies.
+- **Analysis:** Kenyan officials confirmed that on 17 November 2025 a cybersecurity incident made several government websites temporarily unavailable, and contemporary reporting documented defacement messages on multiple ministries and agencies. Initial investigations pointed to a group presenting itself as PCP@Kenya. AFRINTEL records one coordinated multi-agency Defacement incident, keeps PCP@Kenya as preliminary attribution, and does not infer data theft.
+- **Source type:** Government Confirmation + Public Media
+- **Public sources:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
 
 ### 25 November 2025
 #### 🇪🇬 Egypt - LAMAICA, Egypt

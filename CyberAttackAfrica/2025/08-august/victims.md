@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in August 2025 (13 victims)
+
+# African victims - August 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-August 2025 includes **13 unique incidents**: **7 Ransomware**, **5 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **10 African countries**.
+**16 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 7, Data Leak 5, Access Sale 2, DDoS 1, Defacement 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## August 2025
 
@@ -45,6 +43,22 @@ August 2025 includes **13 unique incidents**: **7 Ransomware**, **5 Data Leak**,
 - **Status:** Data Fully Published
 - **Victim Description:** Moroccan company specializing in telecom engineering, network infrastructure installation, and ERP/CRM solutions. The actor published a 607 MB SQL dump containing over 476,000 records.
 
+### 08 August 2025
+#### Egypt - Multiple government and institutional portals
+- **Actor / Group:** Hider_Nex / Keymous Plus (claim)
+- **Sector:** Government / Administration
+- **Website:** Multiple Egyptian government and institutional portals
+- **Incident date:** 8 August 2025 - reported DDoS campaign date
+- **Initial publication date:** 8 August 2025
+- **Status:** Claim - OSINT Availability Evidence
+- **Incident type:** DDoS
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** The reported campaign targeted multiple Egyptian government and institutional web services.
+- **Analysis:** A DDoS campaign was claimed against several Egyptian government and institutional services, with service unavailability reported. The attribution remains self-claimed and independent validation for every target was not available in the supplied audit. AFRINTEL records the campaign as one incident with explicit caveats.
+- **Source type:** Secondary CTI + Availability Evidence
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/ddos/multiple-egyptian-government-and-institutional-websites-allegedly-attacked-by-hacktivist-group/)
+
 ### 09 August 2025
 #### 🇳🇬 Nigeria - Zenith Bank Plc
 - **Actor / Group:** KaruHunters
@@ -55,7 +69,6 @@ August 2025 includes **13 unique incidents**: **7 Ransomware**, **5 Data Leak**,
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 - **Victim Description:** One of the largest financial institutions in Nigeria and Anglophone Africa, listed on the Nigerian and London Stock Exchanges. The actor claims exfiltration and sale of over 1.8 million customer records, together with employee data. AFRINTEL reviewed a local CSV sample containing 18 data rows and eight columns covering index, code, identifier, name, amount, address, telephone and email fields. No raw values are reproduced.
-- **Correlation note:** The same organization and domain were listed again on 26 July 2026 by ExfilSquad in a ransomware claim. This establishes an identity and temporal correlation, not a confirmed connection between the two events. The 2025 record concerns an alleged sale of 1.8 million records with a reviewed 18-row sample; the 2026 record provides no sample, volume, encryption evidence or victim confirmation. No matching archive, data schema, shared infrastructure or explicit reference links the claims. AFRINTEL therefore tracks them as related records / possible separate claims, with the relationship unresolved.
 
 ### 11 August 2025
 #### 🇿🇦 South Africa - Body Graphics Tattoo Supply
@@ -142,15 +155,37 @@ August 2025 includes **13 unique incidents**: **7 Ransomware**, **5 Data Leak**,
 - **Status:** Claim - Data Sample Published
 - **Victim Description:** Official portal and digital infrastructures of the Togolese Republic, hosting administrative services and state data.
 - **Analysis:** Material corroborates the actor's claim, including the DarkForums listing itself and several elements showing active administrative access across multiple Togolese government digital platforms: the DSNIC identity and civil-status management system (justice.xflow.gouv.tg), a Nextcloud-based government file-sharing and collaboration platform (cloud.numerique.gouv.tg) with shared folders and configuration files, a KoboToolbox data-collection instance (kf.form.gouv.tg) hosting dozens of active government surveys and forms, and an education-statistics reporting system (stateduc.planifeducation.gouv.tg). The material shows genuine administrative-level access to live dashboards rather than a public-facing sample, consistent with the actor's description of the offer as a "0day vulnerability" granting privileged access. This breadth of access across distinct systems and subdomains under the gouv.tg domain supports a high confidence assessment of an active, unremediated compromise affecting multiple government digital services, independent of the actor's Monero-based pricing claim, which AFRINTEL cannot verify. AFRINTEL does not reproduce any credentials, configuration values, citizen data or session details from the reviewed material.
-
 ---
 [August 2025 report](./report/README.md)
 
-## ✍🏿 Author
-*Adama ASSIONGBON*  
-*SOC & Cyber Threat Intelligence Consultant*  
-[LinkedIn Profile](https://www.linkedin.com/in/adama-assiongbon-9029893a/)
+### 27 August 2025
+#### Morocco - Multiple Moroccan websites (OurSec campaign)
+- **Actor / Group:** OurSec (claim)
+- **Sector:** Not specified
+- **Website:** Multiple Moroccan websites
+- **Incident date:** 27 August 2025 - reported campaign date; secondary publication on 31 August
+- **Initial publication date:** 31 August 2025
+- **Status:** Claim - OSINT Corroborated
+- **Incident type:** Defacement
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** The reported campaign involved multiple Moroccan websites allegedly defaced in a coordinated hacktivist action.
+- **Analysis:** OurSec claimed the defacement of multiple Moroccan websites. Defacement messages/images and archive references were reported, but the supplied audit recommends validating each affected domain and timestamp independently. AFRINTEL therefore records the campaign with medium confidence and retains the actor as a claim.
+- **Source type:** Secondary CTI + Archive References
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/ddos/oursec-claims-responsibility-for-moroccan-website-defacements/)
 
----
-*AFRINTEL - Open CTI Monitoring Initiative on Africa*
----
+### 30 August 2025
+#### Egypt - cg.eg; gags.gov.eg; kayani.gov.eg; shmft.gov.eg
+- **Actor / Group:** BIGBROTHER (claimed seller)
+- **Sector:** Government / Administration
+- **Website:** cg.eg / gags.gov.eg / kayani.gov.eg / shmft.gov.eg
+- **Incident date:** 30 August 2025 - reported date of the access-sale publication
+- **Initial publication date:** 30 August 2025
+- **Status:** Claim - Marketplace Listing / Screenshots
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim Description:** Unauthorized access to four Egyptian government-related domains was advertised for sale.
+- **Analysis:** An actor advertised unauthorized access to four government-related domains for sale, with screenshots referenced in the secondary report. The validity of the access was not independently confirmed. The record is not merged with the separate January ransomware record concerning gags.gov.eg because the evidence describes a distinct access-sale publication at a different time.
+- **Source type:** Secondary CTI + Marketplace Screenshots
+- **Public sources:** [CyHawk Africa](https://cyhawk-africa.com/initial-access/alleged-sale-of-access-to-four-egyptian-government-sites/)

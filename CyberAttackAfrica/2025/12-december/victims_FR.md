@@ -1,18 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des incidents cyber africains en Décembre 2025 (18 fiches)
+
+# Victimes africaines - Décembre 2025
+
 👉🏾 [**English version available here**](./victims.md)
 
-## Résumé du mois
+## Synthèse mensuelle
 
-Décembre 2025 compte **18 fiches incident** : **14 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **10 pays africains**.
+**18 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 14, Data Leak 4.
 
-Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôpital La Rabta apparaît dans deux revendications ransomware portées par des groupes différents. La seconde revendication La Rabta et la revendication Proplastics de décembre sont conservées comme fiches incident distinctes car les éléments disponibles ne permettent pas d'établir qu'il s'agit de simples doublons. Les fiches conservent explicitement l'hypothèse alternative d'une republication ou revente.
-
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Décembre 2025
 
@@ -24,7 +20,6 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Description victime:** Prestataire de services technologiques égyptien spécialisé dans le développement de logiciels.
-
 
 ### 05 Décembre 2025
 #### 🇿🇲 Zambie - National Health Insurance Management Authority
@@ -45,7 +40,7 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Description victime:** Kasapreko est l'un des plus grands fabricants de boissons au Ghana et un acteur majeur à l'exportation dans toute la région CEDEAO.
 
 ### 06 Décembre 2025
-#### 🇿🇦 Afrique du Sud - Diesel Electric 
+#### 🇿🇦 Afrique du Sud - Diesel Electric
 - **Groupe ransomware:** qilin
 - **Secteur:** Distribution automobile / Équipement de diagnostic
 - **Site web:** diesel-electric.co.za
@@ -80,7 +75,6 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Type d'incident:** Ransomware
 - **Description victime:** Conglomérat égyptien, Arkan Group, actif dans l'industrie, l'agriculture et le commerce de gros.
 
-
 ### 11 Décembre 2025
 #### 🇳🇬 Nigeria - Leadway Assurance / Leadway Health
 - **Groupe ransomware:** kazu
@@ -98,7 +92,6 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Description victime:** L'Hôpital La Rabta est l'un des plus grands pôles hospitaliers de Tunisie.
-
 
 ### 15 Décembre 2025
 #### 🇹🇳 Tunisie - Société Tunisienne de Radiologie (strtn.org)
@@ -119,7 +112,7 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Description victime:** Polaris Parks est l'un des principaux développeurs de parcs industriels privés en Égypte.
 
 ### 24 Décembre 2025
-#### 🇿🇦 Afrique du Sud - National Credit Regulator (NCR) 
+#### 🇿🇦 Afrique du Sud - National Credit Regulator (NCR)
 - **Groupe ransomware:** dragonforce
 - **Secteur:** Administrations publiques (Régulation financière)
 - **Site web:** www.ncr.org.za
@@ -156,7 +149,7 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Acteur / Groupe:** GhostVector
 - **Secteur:** Éducation / Université
 - **Site web:** Non précisé
-- **Date de publication de la source:** 29 décembre 2025
+- **Date de publication de la source :** 29 décembre 2025
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** L'Université d'Oran 1 Ahmed Ben Bella est un établissement public d'enseignement supérieur situé à Oran, en Algérie. Le post fourni annonce une base datée de 2023 comprenant environ 58 000 enregistrements et des champs incluant les noms, dates de naissance, numéros de téléphone, genre, adresses e-mail, hachages de mots de passe et nationalité.
 - **Analyse:** Le post affiche un échantillon structuré associé à l'université et identifie GhostVector comme compte source. Si elles étaient valides, ces données pourraient permettre des fraudes à l'identité, du phishing et des attaques ciblant les comptes d'étudiants ou de personnel. Aucun enregistrement personnel, identifiant, hachage ou coordonnée n'est reproduit ; la revendication et la provenance du jeu de données n'ont pas été confirmées indépendamment.
@@ -191,3 +184,7 @@ Les 18 fiches concernent **17 organisations distinctes sur le mois**, car l'Hôp
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** La Kenya Electricity Transmission Company (KETRACO) est une entreprise publique kényane chargée du développement, de l'exploitation et de la maintenance du réseau national de transport d'électricité haute tension.
 - **Analyse:** L'acteur LindaBF a publié le 31 décembre 2025 un post intitulé « ketraco.co.ke database Kenya », le lien de téléchargement étant réservé aux membres du forum ayant répondu au fil de discussion. L'échantillon visible montre un export structuré d'un annuaire d'utilisateurs (champs USER_ID, USER_NAME, USER_PASSWORD, USER_FIRSTNAME, USER_LASTNAME, USER_EMAIL, USER_LASTLOGIN, USER_FLAGS, USER_OU, USER_DATECREATED) associé à une unité organisationnelle nommée « nl_KETRACO_Newsletter_Unit », cohérent avec une liste de comptes d'abonnés à une newsletter ou d'un service d'annuaire plutôt qu'avec des systèmes opérationnels critiques. Des noms, adresses email et horodatages de création de compte kényans d'apparence réaliste sont visibles, mais de nombreuses lignes de l'échantillon partagent une valeur de mot de passe identique, ce qui est incohérent avec des empreintes générées individuellement par utilisateur et pourrait indiquer une valeur par défaut partagée, un espace réservé, ou un échantillon partiellement fabriqué ; cette anomalie ramène le niveau de confiance d'AFRINTEL à un niveau moyen. Compte tenu du rôle de KETRACO dans l'infrastructure nationale de transport d'électricité, toute compromission confirmée, même limitée à un service de newsletter ou d'annuaire, serait préoccupante pour un opérateur d'infrastructure critique et pourrait indiquer un point d'accès plus large. AFRINTEL ne reproduit aucun nom d'utilisateur, adresse email, valeur de mot de passe ni enregistrement de l'échantillon, et n'a pas accédé au lien de téléchargement.
+
+---
+
+*Compilation AFRINTEL - source unique : fichiers mensuels.*

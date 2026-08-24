@@ -1,19 +1,17 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Octobre 2025 (18 incidents uniques)
+
+# Victimes africaines - Octobre 2025
+
 👉🏾 [**English version available here**](./victims.md)
 
-## Résumé du mois
+## Synthèse mensuelle
 
-Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **11 pays africains**.
+**20 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 16, Data Leak 3, Access Sale 1.
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
-
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Octobre 2025
+
 ### 01 Octobre 2025
 #### 🇿🇦 Afrique du Sud - Climatron (Pty) Ltd
 - **Groupe ransomware:** incransom
@@ -53,7 +51,6 @@ Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak*
 - **Description victime:** Société marocaine de logistique basée à Casablanca, offrant des services de messagerie, transport et entreposage.
 - **Analyse:** AFRINTEL a examiné un échantillon local d'exports de tableurs multi-feuilles cohérents avec la revendication du cybercriminel medusa, chacun filigrané avec l'adresse du site de fuite Tor du groupe. Le matériel examiné comprend un grand livre comptable (écritures bancaires et journal datées de 2020-2021), des classeurs d'entrepôt et de logistique couvrant les mouvements de réception, d'expédition, de mise en stock préparé et de transfert interne de marchandises pour de grandes marques d'électroménager (référençant des gammes de produits BSH/Bosch-Siemens) rattachés à du personnel interne nommément identifié gérant ces opérations, ainsi qu'un rapport de balance âgée des comptes clients listant plusieurs dizaines de clients corporate nommés dans plusieurs villes marocaines (Casablanca, Agadir, Tanger, Marrakech, Fès, Settat et autres), incluant des comptes nationaux et multinationaux reconnus (parmi lesquels des entités affiliées à Procter & Gamble, Savola Maroc, Centrale Laitière, Ciment du Maroc, BSH Electroménager et Ecolab), avec les contacts clients nommés, numéros de téléphone, soldes impayés, conditions de paiement et statut de recouvrement/contentieux. La cohérence interne des données entre les modules comptable, entrepôt et commercial, la présence de comptes clients marocains et multinationaux réels et identifiables, ainsi que la période couverte sur plusieurs années (2020-2023) et plusieurs agences, soutiennent une évaluation à très haute confiance d'une compromission réelle et étendue des systèmes ERP et comptables internes de La Voie Express. Compte tenu de l'ampleur des données de comptes clients et du grand livre bancaire exposées, et de leur extension à la clientèle d'un opérateur logistique national majeur, cet incident crée un risque important de fraude à la facture, de compromission de messagerie professionnelle et d'ingénierie sociale ciblée visant La Voie Express et ses clients corporate, au-delà de la seule exposition opérationnelle de l'entreprise. AFRINTEL ne reproduit aucun nom de client, nom de contact, numéro de téléphone, montant financier ni identifiant de personnel issu du matériel examiné.
 
-### 13 Octobre 2025
 ### 15 Octobre 2025
 #### 🇰🇪 Kenya - Turnkey Africa
 - **Groupe ransomware:** qilin
@@ -114,6 +111,22 @@ Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak*
 - **Type d'incident:** Ransomware
 - **Description victime:** Institution financière égyptienne spécialisée dans le crédit-bail et l'affacturage, filiale de la Banque Nationale d'Égypte.
 
+### 20 Octobre 2025
+#### Afrique du Sud - Companies and Intellectual Property Commission (CIPC) eServices
+- **Acteur / Groupe:** fuckoverflow (claimed seller)
+- **Secteur:** Government / Administration
+- **Site web:** https://www.cipc.co.za/
+- **Date de l'incident:** 20 octobre 2025 - date de la publication de vente d'accès rapportée
+- **Date de publication initiale:** 20 octobre 2025
+- **Statut:** Claim - Unverified Marketplace Listing
+- **Type d'incident:** Access Sale
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Description victime:** La Companies and Intellectual Property Commission gère les services sud-africains d'enregistrement des sociétés et de propriété intellectuelle.
+- **Analyse:** Un acteur a annoncé la vente de comptes CIPC eServices prétendument compromis, permettant potentiellement la modification de dossiers et la collecte de données. CIPC n'a pas confirmé la validité de ces comptes dans l'audit fourni. AFRINTEL enregistre la revendication de marketplace avec une confiance moyenne et ne traite pas l'accès réussi comme indépendamment confirmé.
+- **Type de source:** Secondary CTI + Marketplace Claim
+- **Sources publiques:** [CyHawk Africa](https://cyhawk-africa.com/compromised-credentials/threat-actor-advertises-alleged-compromised-cipc-eservices-accounts-on-a-dark-web-forum/)
+
 ### 23 Octobre 2025
 #### 🇲🇦 Maroc - STAR LÉGUMES
 - **Groupe ransomware:** tengu
@@ -165,6 +178,21 @@ Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak*
 - **Type d'incident:** Ransomware
 - **Description victime:** Opérateur financier panafricain présent en Tunisie, spécialisé dans le financement des entreprises et des particuliers. Lors de cette intrusion, 100 Go de données ont été exfiltrés par le groupe incransom.
 
+### 28 Octobre 2025
+#### 🇰🇪 Kenya - M-TIBA / CarePay
+- **Date de l'incident:** Octobre 2025 - date exacte de compromission non établie dans les sources publiques retenues
+- **Date de publication initiale:** 28 octobre 2025
+- **Acteur / Groupe:** Kazu (revendication)
+- **Secteur:** Healthcare / Health Technology
+- **Site web:** https://www.mtiba.com/
+- **Statut:** Corroborated - Data Sample Independently Reviewed + Regulator Investigation
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** M-TIBA est une plateforme de technologies de santé opérée par CarePay au Kenya, utilisée pour la gestion de services, programmes et paiements liés à la santé.
+- **Analyse:** Le 28 octobre 2025, TechCabal a rapporté une revendication du groupe Kazu concernant un accès non autorisé aux serveurs de M-TIBA. Kazu revendiquait plus de 17 millions de fichiers et environ 2,15 To de données, mais ces volumes globaux ne sont pas considérés comme indépendamment confirmés par AFRINTEL. TechCabal indique avoir examiné un échantillon de 2 Go contenant des données attribuées à environ 114 000 personnes, notamment des identités, numéros nationaux, dates de naissance, coordonnées téléphoniques et, dans certains cas, des informations médicales et de facturation. Le 29 octobre 2025, l'Office of the Data Protection Commissioner (ODPC) du Kenya a annoncé l'ouverture d'une enquête afin d'établir la nature et l'étendue de la violation possible. CarePay n'avait pas confirmé la fuite dans le premier article et avait demandé des éléments afin de conduire sa propre investigation. AFRINTEL retient donc le Data Leak sur la base de l'échantillon examiné indépendamment et de l'enquête réglementaire, tout en conservant comme revendiqués les volumes globaux annoncés par Kazu.
+- **Type de source:** Independent Media Sample Review + Regulator Investigation
+- **Sources publiques:** [TechCabal - Safaricom-backed M-Tiba hit by massive data breach exposing patient records](https://techcabal.com/2025/10/28/safaricom-backed-m-tiba-hacked-exposing-4-8-patient-records/) | [The Star - ODPC probes possible M-Tiba data breach](https://www.the-star.co.ke/news/2025-10-29-odpc-probes-possible-m-tiba-data-breach)
 
 ### 31 Octobre 2025
 #### 🇩🇿 Algérie - TMF Logistics
@@ -191,6 +219,6 @@ Octobre 2025 compte **18 incidents uniques** : **16 Ransomware**, **2 Data Leak*
 - **Acteur / Groupe:** EternalRed
 - **Secteur:** Gouvernement / Éducation / Enseignement supérieur
 - **Site web:** enssup.gov.ma
-- **Date de publication de la source:** 25 octobre 2025
+- **Date de publication de la source :** 25 octobre 2025
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** enssup.gov.ma est le Ministère marocain de l'Enseignement Supérieur, de la Recherche Scientifique et de l'Innovation. Le fichier texte fourni contient exactement 942 930 lignes, ce qui correspond au volume annoncé ; il s'agit d'une extraction nationale d'étudiants couvrant 942 930 enregistrements, avec des champs incluant le numéro de carte d'identité nationale (CIN), l'identifiant national étudiant (code Massar), le nom complet en arabe et en français, le genre, la date de naissance, la nationalité, le code et le nom de l'établissement, la filière et le niveau d'étude. Les métadonnées internes du fichier indiquent que l'extraction a été initialement compilée vers décembre 2022, bien qu'AFRINTEL l'ait examinée dans le cadre d'une collecte de données de 2025. L'ampleur et la structure du jeu de données indiquent une exposition nationale significative de dossiers d'étudiants de l'enseignement supérieur, créant des risques de fraude à l'identité et de phishing ciblé contre les étudiants et les établissements ; l'exhaustivité et la source exacte de l'extraction n'ont pas été confirmées de manière indépendante.

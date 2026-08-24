@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# Liste des victimes africaines de cyberattaques en Novembre 2025 (14 victimes)
+
+# Victimes africaines - Novembre 2025
+
 👉🏾 [**English version available here**](./victims.md)
 
-## Résumé du mois
+## Synthèse mensuelle
 
-Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **6 pays africains**.
+**15 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 10, Data Leak 4, Defacement 1.
 
-> `victims_FR.md` est le fichier éditorial de contrôle. Après validation, `victims.md` est synchronisé avec les mêmes faits, classifications et valeurs structurées.
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Novembre 2025
 
@@ -32,6 +30,7 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Statut:** Claim - Data Sample Published
 - **Description victime:** Wannabees semble être une plateforme sud-africaine de recrutement et d'emploi temporaire, d'après la structure et le contenu de la base de candidats examinée.
 - **Analyse:** AFRINTEL a examiné deux fichiers identiques dans l'ensemble de preuves fourni (DB.txt et HoJmS, avec une correspondance SHA-256), contenant un export de cinq dossiers de candidats. Le schéma comprend des identifiants de candidats, des numéros d'identité nationale, des noms, adresses, numéros de téléphone, champs d'adresse email, dates de naissance, nationalité, historique d'emploi, profession actuelle, prétentions salariales et champs relatifs à la rémunération, ainsi qu'un champ de mot de passe. L'échantillon est structurellement cohérent avec une base de recrutement ou de gestion de personnel et contient des informations personnelles et professionnelles hautement sensibles. Les fichiers sont datés du 4 novembre 2025 dans le répertoire de preuve ; cette date est traitée comme date de découverte/de preuve et non comme une date confirmée de publication ou d'intrusion. Le matériel disponible n'identifie ni acteur, ni forum, ni méthode d'accès, ni volume complet du jeu de données. AFRINTEL classe donc le cas comme une revendication de fuite avec échantillon publié et ne reproduit aucun nom, numéro d'identité, contact, mot de passe ni autre donnée personnelle brute.
+
 ### 05 Novembre 2025
 #### 🇨🇮 Côte d'Ivoire - Anka (Anka.africa)
 - **Acteur / Groupe:** Spirigatito
@@ -49,7 +48,7 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Groupe ransomware:** clop
 - **Secteur:** Technologies / Industrie
 - **Site web:** www.elsewedyelectric.com
-- **Statut:** Claim - Data Sample Published
+- **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Niveau de confiance:** Medium
 - **Niveau d'impact:** Level 2
@@ -61,7 +60,7 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Groupe ransomware:** clop
 - **Secteur:** Services financiers (Banque)
 - **Site web:** www.zanaco.co.zm
-- **Statut:** Claim - Data Sample Published
+- **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Niveau de confiance:** Medium
 - **Niveau d'impact:** Level 3
@@ -90,7 +89,6 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Description victime:** La NARSA est l'agence nationale marocaine chargée de la sécurité routière, de l'immatriculation des véhicules et du contrôle technique.
 - **Analyse:** AFRINTEL a examiné un export CSV structuré correspondant à un ensemble d'enregistrements d'immatriculation de véhicules, avec des champs incluant le nom complet du propriétaire, l'adresse, le numéro de carte d'identité nationale (CIN), la marque du véhicule, la catégorie, le type, le numéro de châssis, la cylindrée, les dates du centre d'immatriculation et de mise en circulation, le prix d'achat et le numéro de plaque d'immatriculation. La taille de l'échantillon et la structure des champs sont cohérentes avec le jeu de données revendiqué d'environ 150 000 lignes, bien qu'AFRINTEL n'ait pas pu confirmer de manière indépendante l'identité de l'acteur revendicateur ni l'ampleur totale exacte à partir du matériel examiné. La combinaison de numéros de CIN, d'adresses personnelles et de données d'identification de véhicules crée un risque de fraude à l'identité, de fraude liée aux véhicules (y compris de faux documents d'immatriculation) et de risques pour la sécurité physique liés à l'exposition d'adresses. AFRINTEL ne reproduit aucun nom de propriétaire, adresse, numéro de CIN ni numéro de plaque issus de l'échantillon examiné.
 
-
 ### 09 Novembre 2025
 #### 🇿🇦 Afrique du Sud - Eastern Cape Department of Human Settlements (ECDHS)
 - **Groupe ransomware:** nightspire
@@ -98,7 +96,7 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Site web:** ecdhs.gov.za
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
-- **Description victime:** Le Département des Établissements Humains du Cap Oriental sud-africain est l'organe provincial chargé de la politique du logement, de l'aménagement urbain et de l'accès à la propriété pour les populations vulnérables en Afrique du Sud. 
+- **Description victime:** Le Département des Établissements Humains du Cap Oriental sud-africain est l'organe provincial chargé de la politique du logement, de l'aménagement urbain et de l'accès à la propriété pour les populations vulnérables en Afrique du Sud.
 
 ### 09 Novembre 2025
 #### 🇳🇬 Nigeria - Fidelity Pension Managers, Nigeria
@@ -109,7 +107,6 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Type d'incident:** Ransomware
 - **Description victime:** Gestionnaire de fonds de pension nigérian.
 
-
 ### 11 Novembre 2025
 #### 🇪🇬 Égypte - Samcrete Holding
 - **Groupe ransomware:** clop
@@ -119,8 +116,24 @@ Novembre 2025 compte **14 incidents uniques** : **10 Ransomware**, **4 Data Leak
 - **Type d'incident:** Ransomware
 - **Description victime:** Samcrete Holding est une société entièrement intégrée d'ingénierie, de sous-traitance, de développement, de fabrication et d'investissement créée en 1963.
 
+### 17 Novembre 2025
+#### Kenya - Multiple Government of Kenya websites
+- **Acteur / Groupe:** PCP@Kenya (preliminary government attribution)
+- **Secteur:** Government / Administration
+- **Site web:** Multiple government domains
+- **Date de l'incident:** 17 novembre 2025 - date de l'incident confirmée publiquement par les autorités kényanes
+- **Date de publication initiale:** 17 novembre 2025
+- **Statut:** Government Confirmed + Preliminary Actor Attribution
+- **Type d'incident:** Defacement
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** L'incident a affecté plusieurs sites du gouvernement kényan couvrant des ministères, State House et des agences publiques.
+- **Analyse:** Les autorités kényanes ont confirmé que le 17 novembre 2025 un incident de cybersécurité avait rendu temporairement indisponibles plusieurs sites gouvernementaux, tandis que les informations contemporaines documentaient des messages de défacement sur plusieurs ministères et agences. Les premières investigations pointaient vers un groupe se présentant sous le nom PCP@Kenya. AFRINTEL enregistre un seul incident de Defacement coordonné multi-organismes, conserve PCP@Kenya comme attribution préliminaire et ne déduit pas de vol de données.
+- **Type de source:** Government Confirmation + Public Media
+- **Sources publiques:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
+
 ### 25 Novembre 2025
-#### 🇪🇬 Égypte - LAMAICA, Egypt 
+#### 🇪🇬 Égypte - LAMAICA, Egypt
 - **Groupe ransomware:** nightspire
 - **Secteur:** Industrie manufacturière du bois et des matériaux de construction.
 - **Site web:** lamaica.com

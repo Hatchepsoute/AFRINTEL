@@ -1,295 +1,275 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-![Period](https://img.shields.io/badge/Period-August%202025-lightgrey)
+# AFRINTEL CTI Report - Cyber Threats in Africa - August 2025
 
-# CTI Report - Cyberattacks in Africa - August 2025
+👉🏾 [Version française](./README_FR.md)
 
-👉🏾 [**French version available here**](./README_FR.md)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-August%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
 ## 1. Executive summary
 
-August 2025 contains **13 documented incidents across 10 African countries**: **7 Ransomware**, **5 Data Leak** and **1 Access Sale**. No DDoS, Defacement or Operational Fraud is recorded.
+In August 2025, AFRINTEL documents **16 cyber incidents** affecting organizations and digital services across **10 African countries**.
 
-- **South Africa**: 3 incidents, including 2 Ransomware and 1 Data Leak.
-- **Tunisia**: 2 incidents, including 1 Ransomware and 1 Data Leak.
-- The other eight countries each record 1 incident.
-- **qilin** is the most visible group with 3 claims: KenGen, Uganda Electricity Transmission Company Limited and SWAN Mauritius.
-- Contrary to the previous README, no incident is classified under an `Unknown` actor: Zenith Bank is attributed to **KaruHunters** and Body Graphics to **N1KA**.
-- **Yasat** includes tens of thousands of customer and transaction records in reviewed exports.
-- **New Era Com** is classified Data Fully Published with a claimed **607 MB** SQL dump containing more than **476,000 records**.
-- **Zenith Bank** is associated with a claim of more than **1.8 million records**, with a reviewed local sample of 18 rows.
-- **Body Graphics Tattoo Supply** is classified Data Fully Published with **6,501 records** across two structured exports.
-- **Togo - Government Infrastructures** is the month's only **Access Sale**, with material showing active administrative access to multiple government platforms.
+The landscape is dominated by **Ransomware with 7 records (43.8%)**, followed by **Data Leak with 5 (31.2%)**. Other observed types are Access Sale 2, DDoS 1, Defacement 1.
 
-### 📋 Victim list
+Geographic concentration is significant: **Egypt (3)**, **South Africa (3)**, **Tunisia (2)** together account for **8 records, or 50.0% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
-👉🏾 [View the full victim list](./victims.md)
+At sector level, the most represented categories are **Technology / IT (3)**, **Government / Administration (3)**, **Energy / Utilities (2)**. The most frequent actor labels are `qilin` (3), `RainbowDF` (1), `Chucky_BF` (1). `Unknown`, when present, denotes missing attribution rather than a threat actor.
+
+Evidence maturity remains variable: **11 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
+
+Compared with July, monthly volume **decreases by 9 records**. The most visible changes are Data Leak 18->5 (-13), Ransomware 5->7 (+2), Access Sale 0->2 (+2).
+
+> **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
 ### 1.1 Month-over-month comparison
 
-> Comparison based on validated AFRINTEL monthly corpora. A change in documented records does not, by itself, prove an equivalent change in the real number of compromises.
-
-| Indicator | July 2025 | August 2025 | Observed change |
+| Indicator | July 2025 | August 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 21 | 13 | **-8 (-38.1%)** |
+| Total incidents | 25 | 16 | **-9 (-36.0%)** |
 | Ransomware | 5 | 7 | **+2 (+40.0%)** |
-| Data Leak | 16 | 5 | **-11 (-68.8%)** |
-| Access Sale | 0 | 1 | **+1 (new)** |
-| DDoS | 0 | 0 | **0 (stable)** |
-| Defacement | 0 | 0 | **0 (stable)** |
-| Operational Fraud | 0 | 0 | **0 (stable)** |
+| Data Leak | 18 | 5 | **-13 (-72.2%)** |
+| Access Sale | 0 | 2 | **+2 (new)** |
+| DDoS | 0 | 1 | **+1 (new)** |
+| Defacement | 0 | 1 | **+1 (new)** |
+| Account Takeover | 0 | 0 | **Stable** |
+| System Intrusion | 1 | 0 | **-1 (-100.0%)** |
+| Malware | 1 | 0 | **-1 (-100.0%)** |
+| Operational Fraud | 0 | 0 | **Stable** |
+
+
+
 
 ## 2. Methodology
 
-- **Scope**: 54 African countries.
-- **Period**: 1-31 August 2025.
-- **Sources**: OSINT, leak sites, underground forums, actor publications and available samples.
-- **Source of truth**: validated bilingual pair [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), with French editorial review before English synchronization.
-- **Counting**: one card equals one unique incident.
-- **Taxonomy**: Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Qualification**: claim, sample, full publication and technical confirmation remain distinct evidence levels.
-- **Visualization**: tables, text bars, simple Mermaid diagrams and a timeline.
+- **Scope:** 54 African countries; reference period: August 2025.
+- **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
+- **Classification:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware, and Operational Fraud.
+- **Counting:** one canonical record equals one documented cyber incident; cases under investigation remain outside statistics.
+- **Timeline:** `Incident date` and `Initial publication date` remain separate. A later disclosure does not artificially move an incident into another month when chronology is sufficiently supported.
+- **Uncertain dates:** when no exact day is known, the evidence-supported month or time window is retained.
+- **Sources:** public links are retained for supplementary incidents found through OSINT/web research; they are not retroactively imposed on historical or direct Dark Web observations.
+- **Evidence:** incident type, status, confidence, impact, and provenance remain separate dimensions.
+- **Sectors:** normalization is calculated once from the structured corpus and used identically in FR and EN.
+- **Limitation:** frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.
 
-## 3. Global overview
+## 3. Overview and incident types
 
-### 3.1 Incident-type distribution
+| Indicator | Value |
+|---|---:|
+| Documented incidents | **16** |
+| Countries represented | **10** |
+| Regions represented | **5** |
+| Leading country | **Egypt (3)** |
+| Leading sector | **Technology / IT (3)** |
+| Leading actor label | **qilin (3)** |
 
-| Incident type | Count | Share |
+| Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 7 | 53.8% |
-| Data Leak | 5 | 38.5% |
-| Access Sale | 1 | 7.7% |
-| DDoS | 0 | 0.0% |
-| Defacement | 0 | 0.0% |
+| Ransomware | 7 | 43.8% |
+| Data Leak | 5 | 31.2% |
+| Access Sale | 2 | 12.5% |
+| DDoS | 1 | 6.2% |
+| Defacement | 1 | 6.2% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **13** | **100%** |
+| **Total** | **16** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - August 2025
     "Ransomware" : 7
     "Data Leak" : 5
-    "Access Sale" : 1
+    "Access Sale" : 2
+    "DDoS" : 1
+    "Defacement" : 1
 ```
 
-**Color convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
+## 4. Geographic distribution
 
-### 3.2 Country distribution
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Egypt | **3** | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| South Africa | **3** | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | **2** | 0 | 1 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Kenya | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Uganda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mauritius | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Togo | **1** | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **16** | **7** | **5** | **2** | **1** | **1** | **0** | **0** | **0** |
 
-| Country | Ransomware | Data Leak | Access Sale | Total | Distribution |
-|---|---:|---:|---:|---:|---|
-| 🇿🇦 South Africa | 2 | 1 | 0 | 3 | 🟧🟧🟦 |
-| 🇹🇳 Tunisia | 1 | 1 | 0 | 2 | 🟧🟦 |
-| 🇰🇪 Kenya | 1 | 0 | 0 | 1 | 🟧 |
-| 🇲🇦 Morocco | 0 | 1 | 0 | 1 | 🟦 |
-| 🇳🇬 Nigeria | 0 | 1 | 0 | 1 | 🟦 |
-| 🇩🇿 Algeria | 1 | 0 | 0 | 1 | 🟧 |
-| 🇺🇬 Uganda | 1 | 0 | 0 | 1 | 🟧 |
-| 🇪🇬 Egypt | 0 | 1 | 0 | 1 | 🟦 |
-| 🇲🇺 Mauritius | 1 | 0 | 0 | 1 | 🟧 |
-| 🇹🇬 Togo | 0 | 0 | 1 | 1 | 🟪 |
-| **Total** | **7** | **5** | **1** | **13** | |
+> `Operational Fraud = 0` this month; the column is omitted for readability.
 
-### 3.3 Geographic distribution by region
+## 5. Regional distribution
 
-| Region | Incidents | Share | Activity |
+| Region | Records | Share |
+|---|---:|---:|
+| North Africa | 8 | 50.0% |
+| Southern Africa | 3 | 18.8% |
+| East Africa | 2 | 12.5% |
+| West Africa | 2 | 12.5% |
+| Indian Ocean | 1 | 6.2% |
+| **Total** | **16** | **100%** |
+
+The leading region is **North Africa with 8 records (50.0%)**.
+
+## 6. Sector impact
+
+| Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| North Africa | 5 | 38.5% | ██████████ |
-| Southern Africa | 4 | 30.8% | ████████ |
-| East Africa | 2 | 15.4% | ████ |
-| West Africa | 2 | 15.4% | ████ |
-| Central Africa | 0 | 0.0% |  |
-| **Total** | **13** | **100%** | |
+| Technology / IT | 3 | 18.8% | ███ |
+| Government / Administration | 3 | 18.8% | ███ |
+| Energy / Utilities | 2 | 12.5% | ██ |
+| Finance / Banking | 2 | 12.5% | ██ |
+| Telecommunications | 1 | 6.2% | █ |
+| Retail / E-commerce | 1 | 6.2% | █ |
+| Manufacturing / Industry | 1 | 6.2% | █ |
+| Transport / Logistics | 1 | 6.2% | █ |
+| Professional / Business Services | 1 | 6.2% | █ |
+| Not specified | 1 | 6.2% | █ |
+| **Total** | **16** | **100%** | |
 
-### 3.4 Harmonized sector distribution
+## 7. Actors / groups
 
-| Harmonized sector | Incidents | Share | Activity |
-|---|---:|---:|---|
-| Technology / IT / Telecommunications | 4 | 30.8% | ██████████ |
-| Energy / Critical Infrastructure | 2 | 15.4% | █████ |
-| Finance / Banking / Insurance | 2 | 15.4% | █████ |
-| Agribusiness / Industry | 1 | 7.7% | ██ |
-| Transport / Logistics | 1 | 7.7% | ██ |
-| Retail / E-commerce | 1 | 7.7% | ██ |
-| Security / Defense Services | 1 | 7.7% | ██ |
-| Government / Critical Infrastructure | 1 | 7.7% | ██ |
-| **Total** | **13** | **100%** | |
+`Unknown` denotes missing attribution, not a threat actor.
 
-### 3.5 Actors / groups
-
-| Actor / Group | Incidents | Activity |
+| Actor / Group | Records | Activity |
 |---|---:|---|
-| qilin | 3 | ██████████ |
-| akira | 1 | ███ |
-| BIGBROTHER | 1 | ███ |
-| Chucky_BF | 1 | ███ |
-| direwolf | 1 | ███ |
-| GhostCrawl | 1 | ███ |
-| incransom | 1 | ███ |
-| KaruHunters | 1 | ███ |
-| N1KA | 1 | ███ |
-| RainbowDF | 1 | ███ |
-| warlock | 1 | ███ |
-| **Total** | **13** | |
+| qilin | 3 | ███ |
+| RainbowDF | 1 | █ |
+| Chucky_BF | 1 | █ |
+| Hider_Nex / Keymous Plus (claim) | 1 | █ |
+| KaruHunters | 1 | █ |
+| N1KA | 1 | █ |
+| akira | 1 | █ |
+| warlock | 1 | █ |
+| direwolf | 1 | █ |
+| incransom | 1 | █ |
+| GhostCrawl | 1 | █ |
+| BIGBROTHER | 1 | █ |
+| OurSec (claim) | 1 | █ |
+| BIGBROTHER (claimed seller) | 1 | █ |
 
-### 3.6 Actor -> country mapping
+## 8. Evidence maturity
 
-```mermaid
-flowchart LR
-    QIL["qilin - 3"] --> KE["🇰🇪 Kenya - 1"]
-    QIL --> UG["🇺🇬 Uganda - 1"]
-    QIL --> MU["🇲🇺 Mauritius - 1"]
-    RAI["RainbowDF - 1"] --> TN["🇹🇳 Tunisia - 1"]
-    CHU["Chucky_BF - 1"] --> MA["🇲🇦 Morocco - 1"]
-    KAR["KaruHunters - 1"] --> NG["🇳🇬 Nigeria - 1"]
-    AKI["akira - 1"] --> DZ["🇩🇿 Algeria - 1"]
-    WAR["warlock - 1"] --> ZA["🇿🇦 South Africa - 1"]
-    N1K["N1KA - 1"] --> ZA
-    DIR["direwolf - 1"] --> TN
-    INC["incransom - 1"] --> ZA
-    GHO["GhostCrawl - 1"] --> EG["🇪🇬 Egypt - 1"]
-    BIG["BIGBROTHER - 1"] --> TG["🇹🇬 Togo - 1"]
-```
+| Evidence maturity | Records | Share |
+|---|---:|---:|
+| Claim - Unverified | 6 | 37.5% |
+| Claim - Data Sample Published | 5 | 31.2% |
+| Data Fully Published | 2 | 12.5% |
+| Corroborated / Secondary evidence | 3 | 18.8% |
+| **Total** | **16** | **100%** |
 
-## 4. Detailed analysis by incident type
+Evidence statuses describe the available validation level; they do not change the technical incident type.
 
-### 4.1 Ransomware - 7 incidents
-
-The seven Ransomware records concern:
-
-- **KenGen** in Kenya, claimed by qilin, with coherent internal documents covering contracts, CAPEX, human resources, procurement and technical documentation.
-- **Cevital** in Algeria, claimed by akira.
-- **SYSPRO** in South Africa, claimed by warlock.
-- **Uganda Electricity Transmission Company Limited** in Uganda, claimed by qilin.
-- **International Freight & Commerce** in Tunisia, claimed by direwolf.
-- **Netstar South Africa** in South Africa, claimed by incransom. AFRINTEL had already recorded a separate claim by devman in May 2025.
-- **SWAN Mauritius** in Mauritius, claimed by qilin.
-
-### 4.2 Data Leak - 5 incidents
-
-The five Data Leak records are:
-
-- **Yasat** in Tunisia: multiple structured exports covering sales, invoicing, customer profiles and user accounts.
-- **New Era Com** in Morocco: full publication of a claimed 607 MB SQL dump containing more than 476,000 records.
-- **Zenith Bank Plc** in Nigeria: more than 1.8 million records claimed; AFRINTEL reviewed a local 18-row, 8-column sample.
-- **Body Graphics Tattoo Supply** in South Africa: two WordPress/WooCommerce exports totaling 6,501 records, classified Data Fully Published.
-- **TEAM4 Security** in Egypt: mailbox batches, internal documents and HR/payroll data. The card uses 23 August as the detection date, while the reviewed forum-thread timestamps run from 29 to 31 August.
-
-### 4.3 Access Sale - 1 incident
-
-**Togo Government Infrastructures** is the month's only Access Sale. The reviewed material shows active administrative access to multiple public digital platforms under `gouv.tg`, including identity, collaboration, data-collection and education-reporting systems.
-
-AFRINTEL classifies the incident as Access Sale because the offer concerns privileged access. This classification does not by itself establish complete exfiltration of data hosted on those systems.
-
-## 5. Sectoral impact
-
-**Technology / IT / Telecommunications** is the leading harmonized category with **4 of 13 incidents (30.8%)**: Yasat, New Era Com, SYSPRO and Netstar.
-
-**Energy / Critical Infrastructure** accounts for 2 incidents: KenGen and Uganda Electricity Transmission Company Limited.
-
-**Finance / Banking / Insurance** accounts for 2 incidents: Zenith Bank and SWAN Mauritius.
-
-Cevital, International Freight & Commerce, Body Graphics, TEAM4 Security and Togo Government Infrastructures each belong to a distinct sector category.
-
-## 6. Threat actor profile
-
-**qilin** leads with **3 records**. The other ten identified actors appear once each.
-
-The previous README treated Zenith Bank and Body Graphics as unattributed. The structured victim cards identify **KaruHunters** and **N1KA** respectively, and these values are restored in the actor statistics.
-
-## 7. Key trends and intelligence gaps
-
-### 7.1 Observed trends
-
-1. **Monthly volume decline**: 21 incidents in July versus 13 in August.
-2. **Ransomware increases**: 5 incidents in July versus 7 in August.
-3. **Data Leak declines**: 16 in July versus 5 in August.
-4. **Access Sale appears**: 0 in July, 1 in August.
-5. **South Africa leads**: 3 incidents.
-6. **qilin dominates the month** with 3 claims.
-7. **Sensitive energy exposure**: two East African electricity operators are claimed by qilin.
-8. **Evidence depth varies**: claim-only cases, structured samples, full publications and observed administrative access coexist.
-
-### 7.2 Intelligence gaps
-
-- Initial-access vectors remain unknown for most incidents.
-- Several Ransomware claims do not have samples in the supplied cards.
-- The 1.8 million Zenith Bank figure remains actor-claimed; only an 18-row sample was reviewed.
-- The relationship between the May and August 2025 Netstar claims remains unresolved.
-- The exact technical origin of access to Togo government infrastructures is not established.
-- The TEAM4 card date should be interpreted as AFRINTEL's detection date, while observed publications are dated 29-31 August.
-
-### 7.3 Monthly evolution
-
-| Type | July 2025 | August 2025 | Change |
-|---|---:|---:|---:|
-| Total | 21 | 13 | **-8 (-38.1%)** |
-| Ransomware | 5 | 7 | **+2 (+40.0%)** |
-| Data Leak | 16 | 5 | **-11 (-68.8%)** |
-| Access Sale | 0 | 1 | **+1 (new)** |
-
-## 8. Summary timeline
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - August 2025
-    06 August : RainbowDF - Yasat
-              : qilin - KenGen
-              : Chucky_BF - New Era Com
-    09 August : KaruHunters - Zenith Bank
-    11 August : N1KA - Body Graphics Tattoo Supply
-    13 August : akira - Cevital
-    17 August : warlock - SYSPRO
-    18 August : qilin - Uganda Electricity Transmission Company
-              : direwolf - International Freight & Commerce
-    20 August : incransom - Netstar South Africa
-    23 August : GhostCrawl - TEAM4 Security
-    25 August : qilin - SWAN Mauritius
-              : BIGBROTHER - Togo Government Infrastructures
+    06 August 2025 : Yasat (yasat.tn)
+    06 August 2025 : KenGen
+    06 August 2025 : New Era Com
+    08 August 2025 : Multiple government and institutional portals
+    09 August 2025 : Zenith Bank Plc
+    11 August 2025 : Body Graphics Tattoo Supply
+    13 August 2025 : Cevital
+    17 August 2025 : SYSPRO
+    18 August 2025 : Uganda Electricity Transmission Company Limited
+    18 August 2025 : International Freight & Commerce
+    20 August 2025 : Netstar South Africa (second attack)
+    23 August 2025 : TEAM4 Security
+    25 August 2025 : SWAN Mauritius
+    25 August 2025 : Government Infrastructures
+    27 August 2025 : Multiple Moroccan websites (OurSec campaign)
+    30 August 2025 : cg.eg; gags.gov.eg; kayani.gov.eg; shmft.gov.eg
 ```
 
-> For TEAM4 Security, 23 August is the detection date retained in the card. The reviewed thread publications are timestamped from 29 to 31 August 2025.
+## 10. Monthly CTI analysis
 
-## 9. MITRE ATT&CK mapping - contextual
+### Ransomware
 
-| Phase | Technique | Analytical scope |
-|---|---|---|
-| Valid accounts | T1078 - Valid Accounts | Relevant context where active administrative access is observed, notably in the Togo case. |
-| Collection | T1005 - Data from Local System | Relevant to observed documents, exports and internal files. |
-| Collection | T1213 - Data from Information Repositories | Relevant to structured Yasat, New Era Com, Zenith Bank and Body Graphics databases. |
-| Email collection | T1114 - Email Collection | Relevant to TEAM4 Security, where an exfiltrated administrative/support mailbox is described in the reviewed batches. |
+**7 records** are classified as Ransomware. Leading countries: South Africa (2), Kenya (1), Algeria (1). A leak-site listing does not itself prove encryption or complete exfiltration.
 
-> These mappings are contextual and do not prove that every actor used the listed techniques.
+### Data Leak
 
-## 10. Recommendations
+**5 records** are classified as Data Leak. Leading countries: Tunisia (1), Morocco (1), Nigeria (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
-- **Energy / Critical Infrastructure**: segmentation, PAM, EDR, administrative-access monitoring and protection of technical repositories.
-- **Finance / Insurance**: phishing-resistant MFA, customer-export controls, anomalous-access detection and transfer monitoring.
-- **Technology / IT**: harden exposed applications, protect backups and restrict service accounts.
-- **E-commerce**: secure WordPress/WooCommerce administrator accounts, invalidate exposed sessions and monitor exports.
-- **Public sector**: control privileged access, segment platforms, log administrative actions and rapidly revoke compromised access.
+### Access Sale
 
-## 11. SOC and tactical recommendations
+**2 record(s)** fall under Access Sale. Distribution: Togo (1), Egypt (1). An access offer does not automatically prove exfiltration or compromise of the entire internal environment.
 
-### Observed
+### DDoS
 
-The corpus contains SQL dumps, structured exports, internal documents, HR data, mailboxes, Ransomware claims and administrative access to public systems.
+**1 DDoS campaign(s)** are documented. Distribution: Egypt (1). Counts refer to campaigns, not necessarily every individual targeted domain.
 
-### Assumptions
+### Defacement
 
-Initial vectors, persistence mechanisms and complete exfiltration paths are not established for most incidents.
+**1 Defacement records** are documented. Distribution: Morocco (1). Defacement is not reclassified as Data Leak without separate evidence.
 
-### Preventive
+## 11. Notable incidents
 
-Monitor privileged authentication, bulk exports, backup access, abnormal database queries, outbound transfers, archive creation and anomalous activity on collaboration platforms. Maintain MFA, PAM, EDR, segmentation, immutable backups and secret rotation.
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Kenya | KenGen | Ransomware | Claim - Data Sample Published | Level 4 | High |
+| Egypt | Multiple government and institutional portals | DDoS | Claim - OSINT Availability Evidence | Level 4 | Medium |
+| Egypt | cg.eg; gags.gov.eg; kayani.gov.eg; shmft.gov.eg | Access Sale | Claim - Marketplace Listing / Screenshots | Level 4 | Medium |
+| Morocco | Multiple Moroccan websites (OurSec campaign) | Defacement | Claim - OSINT Corroborated | Level 3 | Medium |
+| Nigeria | Zenith Bank Plc | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
 
-## 12. Conclusion
+> This table highlights up to five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.
 
-August 2025 contains **13 incidents across 10 countries**, split into **7 Ransomware, 5 Data Leak and 1 Access Sale**.
+## 12. Key findings and intelligence gaps
 
-The total declines by 38.1% compared with July, while the share of Ransomware rises. South Africa is the most represented country with 3 incidents and qilin is the most visible group with 3 claims. Correcting the Zenith Bank and Body Graphics actor fields removes the two `Unknown` entries from the previous report.
+- **Geographic concentration:** Egypt accounts for 3 records (18.8%), followed by South Africa (3) and Tunisia (2).
+- **Threat structure:** Ransomware is the leading type with 7 records, followed by Data Leak (5).
+- **Sectors:** Technology / IT (3) and Government / Administration (3) have the highest visibility.
+- **Actors:** the most frequent labels are qilin (3), RainbowDF (1), and Chucky_BF (1).
+- **Evidence:** 11 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
 
-**AFRINTEL** - Open African CTI Monitoring Initiative
+### Intelligence gaps
+
+- initial-access vector often not public;
+- exact technical compromise date sometimes unknown;
+- claimed volumes rarely fully verifiable;
+- technical attribution often limited to a publication handle or label;
+- public remediation, root-cause, and DFIR conclusions remain limited.
+
+These gaps should guide collection rather than be replaced with assumptions.
+
+## 13. Recommendations
+
+### Organizations
+
+- enforce phishing-resistant MFA on privileged accounts, VPN, email, social media, and administration consoles;
+- apply PAM, least privilege, segmentation, and secret rotation;
+- maintain immutable backups and test restoration;
+- strengthen public applications, APIs, and administration interfaces;
+- formalize incident response and data-breach notification.
+
+### SOC and detection
+
+- monitor abnormal authentication, MFA changes, privileged-account creation, and role elevation;
+- detect mass database reads, unusual exports, archive creation, and large outbound transfers;
+- correlate EDR, IAM, VPN, WAF, proxy, DNS, cloud, and application logs;
+- distinguish DDoS, internal intrusion, account compromise, and data exposure to avoid unsupported conclusions.
+
+### CTI
+
+- keep incident date, initial publication, first observation, sample, disclosure, and confirmation separate;
+- track republication and resale without automatically counting them as new compromise;
+- preserve the evidence hierarchy between claim, corroboration, and confirmation;
+- validate FR/EN parity before generating statistics.
+
+## 14. Conclusion
+
+**August 2025** contains **16 documented cyber incidents** across **10 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
+
+The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.
+
+👉🏾 [See monthly victims](./victims.md)
+
+**AFRINTEL** - TLP:CLEAR

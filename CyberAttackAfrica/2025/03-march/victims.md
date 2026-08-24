@@ -1,16 +1,14 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-# List of African cyberattack victims in March 2025 (11 victims)
+
+# African victims - March 2025
+
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## Monthly snapshot
 
-March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, **1 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **7 African countries**.
+**15 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 9, Data Leak 2, Access Sale 1, Account Takeover 2, System Intrusion 1.
 
-> `victims_FR.md` is the editorial control file. After validation, `victims.md` is synchronized with the same facts, classifications and structured values.
+> Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
 ## March 2025
 
@@ -18,7 +16,7 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇧🇼 Botswana - IT-IQ Botswana
 - **Ransomware Group:** play
 - **Sector:** Technology Consulting
-- **Website:** [www.itiq.co.bw](https://www.itiq.co.bw/)
+- **Website:** www.itiq.co.bw
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** IT-IQ Botswana is one of the leading providers of IT solutions and certified training (Microsoft, Cisco, VMware) in Botswana.
@@ -27,7 +25,7 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇳🇬 Nigeria - Workforce Group
 - **Ransomware Group:** killsec
 - **Sector:** Education / HR Services
-- **Website:** [workforcegroup.com](https://workforcegroup.com/)
+- **Website:** workforcegroup.com
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** High
@@ -39,7 +37,7 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇿🇦 South Africa - LINKGROUP
 - **Ransomware Group:** arcusmedia
 - **Sector:** Technology Consulting
-- **Website:** [linkgroup.co.za](https://linkgroup.co.za/)
+- **Website:** linkgroup.co.za
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** LINKGROUP is a South African IT consulting and telecom services company.
@@ -48,7 +46,7 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇹🇿 Tanzania - synaptic.co.tz
 - **Ransomware Group:** arcusmedia
 - **Sector:** Technology Consulting
-- **Website:** [synaptic.co.tz](https://synaptic.co.tz/)
+- **Website:** synaptic.co.tz
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Tanzanian IT consulting company.
@@ -67,7 +65,7 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇿🇦 South Africa - ACDC Express
 - **Ransomware Group:** lynx
 - **Sector:** Retail (Distribution)
-- **Website:** [acdcdynamics.co.za](https://acdcdynamics.co.za/)
+- **Website:** acdcdynamics.co.za
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Medium
@@ -75,20 +73,84 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 - **Victim Description:** ACDC Dynamics is a major South African manufacturer, importer, and distributor of electrical components, tools, and safety equipment.
 - **Analysis:** The Lynx leak-site listing for ACDC Express (ACDC Dynamics) categorizes the publication as Encrypted, Proof and AD Dump, and describes a single disclosure titled "Data" covering HR, financial data, contracts and confidential material, with a claimed volume of 800 GB. The listing states a publication date of 7 March 2025 and cites an estimated victim income figure of $123,000,000, a metric self-reported by the actor and not independently verified. The victim description on the leak site matches ACDC Dynamics' publicly known profile (founded 1984, electrical and electronics distributor headquartered in Edenvale, Johannesburg, with branches in Germiston, Cape Town, Pinetown and Riverhorse). The underlying file contents referenced by the "Proof" and "AD Dump" categories were not reviewed and are not reproduced.
 
+### 07 March 2025
+#### South Africa - Pam Golding Properties
+- **Actor / Group:** Unknown
+- **Sector:** Construction / Real Estate
+- **Website:** https://www.pamgolding.co.za/
+- **Incident date:** 7 March 2025 - date confirmed in the company's statement
+- **Initial publication date:** 11 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Victim Description:** Pam Golding Properties is a major South African real-estate group with a large portfolio of clients and properties.
+- **Analysis:** Pam Golding stated that on 7 March 2025 an unknown third party gained unauthorized access to its customer-relationship-management system through a user account and viewed some customer personal information. The company stated that banking details, financial information, business information and other documents were not compromised. The access was contained and notifications were made. The available statement supports successful unauthorized access and personal-data exposure, but does not establish how the user account was obtained or identify the actor.
+- **Source type:** Victim Statement
+- **Public sources:** [Pam Golding media statement](https://propertyflash.co.za/2025/03/11/media-statement-issued-by-pam-golding-properties-re-a-cyber-incident/)
+
 ### 11 March 2025
 #### 🇪🇬 Egypt - ISEE (International School of Elite Education)
 - **Ransomware Group:** funksec
 - **Sector:** Education / Private Schooling
-- **Website:** [isee-eg.com](https://isee-eg.com/)
+- **Website:** isee-eg.com
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** The International School of Elite Education (ISEE) is a prestigious private school located in Cairo.
+
+### 15 March 2025
+#### South Africa - Parliament of South Africa
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://www.parliament.gov.za/
+- **Incident date:** 15 March 2025 - date Parliament identified and publicly disclosed the breach; exact compromise start not stated
+- **Initial publication date:** 15 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised YouTube / streaming service
+- **Confidence level:** Very High
+- **Impact level:** Level 4
+- **Source type:** Official Victim Statement
+- **Analysis:** A YouTube/streaming resource connected to Parliament's official channels was compromised and unauthorized content was uploaded. The incident affected a streaming service and does not establish compromise of Parliament's entire information system.
+- **Sources:** [Parliament of South Africa - official statement](https://www.parliament.gov.za/press-releases/hacking-incident-parliaments-social-media)
+
+### 16 March 2025
+#### South Africa - Astral Foods Limited
+- **Actor / Group:** Unknown
+- **Sector:** Agriculture / Agribusiness
+- **Website:** https://www.astralfoods.com/
+- **Incident date:** 16 March 2025 - date confirmed by Astral Foods
+- **Initial publication date:** 24 March 2025
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Subtype:** Operational disruption - technical vector undisclosed
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** Official Company Disclosure
+- **Analysis:** Astral Foods disclosed a cybersecurity incident on 16 March 2025 that disrupted poultry processing and customer deliveries and had an estimated profit impact of about R20 million. The company explicitly stated that no confidential or sensitive stakeholder information was compromised. AFRINTEL preserves the confirmed operational cyber incident without relabelling it as Data Leak or Ransomware.
+- **Sources:** [Astral Foods - official SENS announcement](https://www.astralfoods.com/assets/Documents/News/SENS/2025/25.03.24%20Announcement%20-%20Voluntary%20trading%20update.VF.pdf)
+
+### 17 March 2025
+#### Ghana - Office of the President - John Dramani Mahama X account
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** https://x.com/JDMahama
+- **Incident date:** 17 March 2025 - date the Cyber Security Authority received the report; exact compromise start not established
+- **Initial publication date:** 18 March 2025
+- **Status:** Authority Confirmed
+- **Incident type:** Account Takeover
+- **Subtype:** Compromised X account / cryptocurrency scam
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Source type:** National Cyber Authority + Public Media
+- **Analysis:** Ghana's Cyber Security Authority confirmed that the President's X account was compromised and used to promote a fraudulent cryptocurrency project called "Solana Africa". The account was restored. The evidence does not establish compromise of Jubilee House networks or other government systems.
+- **Sources:** [Ghana News Agency - CSA statement on restoration of the President's X account](https://gna.org.gh/2025/03/president-mahamas-x-account-restored/)
 
 ### 25 March 2025
 #### 🇪🇬 Egypt - MISR AL MAHABA HOSPITAL
 - **Ransomware Group:** nightspire
 - **Sector:** Healthcare / Hospital Sector
-- **Website:** [misralmahaba.com](https://misralmahaba.com/)
+- **Website:** misralmahaba.com
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** High
@@ -112,20 +174,22 @@ March 2025 includes **11 unique incidents**: **9 Ransomware**, **1 Data Leak**, 
 #### 🇪🇬 Egypt - INI Investments
 - **Ransomware Group:** nightspire
 - **Sector:** Finance
-- **Website:** [iniholdings.com](https://iniholdings.com/)
+- **Website:** iniholdings.com
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** INI Investments is a diversified Egyptian holding company. It invests in strategic sectors such as real estate, energy, technology, and financial services. The actor claims to have exfiltrated 400 GB of data; AFRINTEL observed the claim on the actor's site but did not collect or analyze the underlying data.
-- **Double-claim note:** The same actor, domain (iniholdings.com) and victim name appear again in April 2025 with a published sample and a different organizational description. AFRINTEL retains both monthly records pending confirmation of whether the April publication updates the March claim or represents a separate claim.
+- **Double-claim note:** The March and April records are retained separately because the source dates and evidence differ. They involve the same actor, domain and victim name, but AFRINTEL cannot determine from the available material whether the April publication is an update of the March claim or a separate claim. No merger is made pending confirmation.
 
 ### 31 March 2025
 #### 🇷🇼 Rwanda - moh.gov.rw
 - **Ransomware Group:** babuk2
 - **Sector:** Public administrations (Health)
-- **Website:** [moh.gov.rw](https://www.moh.gov.rw/)
+- **Website:** moh.gov.rw
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
 - **Confidence level:** Very High
 - **Impact level:** Level 4
 - **Victim Description:** Ministry of Health of Rwanda.
 - **Analysis:** A set of material and a raw text sample are directly associated with this claim. The most significant evidence is an active PHP web shell deployed on a Linux server hostnamed "covid-mass-testing", running PHP 7.4 as the www-data user with safe mode disabled and a working directory under /var/www; the shell exposes file-manager, console, SQL, PHP-execution and brute-force modules, indicating full remote code-execution capability rather than a passive data claim. A phpMyAdmin database-administration panel lists 23 tables with approximate row counts, including tables consistent with applicants (~110,500 rows), session data (~155,400 rows), clinicians (~29,500 rows), HR data (~9,400 rows), documents (~9,700 rows) and password/authentication records (~4,800 rows), indicating direct database-level access to a health-sector applicant/workforce-management system rather than the ministry's public website alone. Additional material, from what appears to be the same or a related applicant-management portal, shows dashboard statistics of 112,102 total applicants, 7,917 vacant positions, 4,165 employed applicants and 107,937 applicants on a waiting list, consistent with the table row counts observed in the database panel. A raw local text sample of approximately 25 user records from what is labelled a "Student" role is also examined, each containing a sequential ID, an email address and an MD5-format password hash. The combination of an active, fully-featured web shell, direct database administrative access with table-level row counts, and a raw credential-bearing user-record sample supports a very high confidence assessment of a genuine, deep compromise extending beyond a simple website claim to backend systems processing health-sector job applications, clinician records and authentication data for well over 100,000 individuals. Given the scale of exposure and the sensitivity of clinician, HR and authentication data within Rwanda's health sector, the potential impact includes large-scale credential-stuffing and account-takeover risk, targeted phishing against health-sector applicants and staff, and broader compromise of health-workforce management processes. No email address, password hash, individual applicant record or other personal data is reproduced from the reviewed material.
+
+---

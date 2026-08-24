@@ -1,293 +1,257 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Menace-Ransomware%20%26%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Source%20des%20données-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
-![Période](https://img.shields.io/badge/Période-Janvier%202025-lightgrey)
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Janvier 2025
 
-# Rapport CTI - Cyberattaques en Afrique - Janvier 2025
+👉🏾 [English version](./README.md)
 
-👉🏾 [**English version available here**](./README.md)
+![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-January%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
 ## 1. Synthèse exécutive
 
-Janvier 2025 compte **17 incidents documentés dans 8 pays africains**. Le corpus comprend **16 Ransomware** et **1 Data Leak**, la nouvelle fiche Data Leak concernant **North-West University (NWU)** en Afrique du Sud. La publication attribuée à SevenZeroDay404 annonce environ 29 000 enregistrements étudiants, mais l'analyse de l'échantillon ne permet pas de confirmer son origine dans les systèmes de NWU ni le volume global revendiqué.
+En Janvier 2025, AFRINTEL documente **19 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
 
-- **17 incidents** : 16 Ransomware, 1 Data Leak.
-- **8 pays** : Égypte (4), Nigeria (3), Afrique du Sud (2), Algérie (2), Maroc (2), Kenya (2), Ouganda (1), Zambie (1).
-- **7 acteurs / groupes documentés** : funksec (6), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2), apt73 (1), SevenZeroDay404 (1).
-- **Secteur le plus représenté** : Éducation / Université avec 6 incidents.
-- **Volumes revendiqués notables** : environ 1,5 To pour INTELS Nigeria, 19 Go pour Molars Dental et 29 000 enregistrements pour NWU. Ces chiffres restent distingués des volumes effectivement observés.
+Le paysage est dominé par **Ransomware avec 16 fiches (84,2 %)**, suivi de **Data Leak avec 2 (10,5 %)**. Les autres types observés sont Account Takeover 1.
 
-### 📋 Liste des victimes
+La concentration géographique est marquée : **Kenya (4)**, **Égypte (4)**, **Nigeria (3)** représentent ensemble **11 fiches, soit 57,9 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
-👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
+Sur le plan sectoriel, les catégories les plus représentées sont **Éducation / Université (6)**, **Gouvernement / Administration (4)**, **Santé / Médical (2)**. Les labels d'acteurs les plus fréquents sont `funksec` (6), `GDLockerSec` (3), `ransomhub` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
+
+La maturité des preuves reste variable : **17 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+
+Par rapport à décembre 2024 corrigé, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent Ransomware 11->16 (+5), Defacement 1->0 (-1).
+
+> **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
 ### 1.1 Comparaison avec le mois précédent
 
-> La comparaison porte sur les publications documentées par AFRINTEL. Le rapport fourni pour décembre 2024 permet d'établir un total de 12 incidents, mais ne fournit pas une ventilation structurée comparable pour les six types AFRINTEL.
-
-| Indicateur | Décembre 2024 | Janvier 2025 | Évolution observée |
+| Indicateur | Décembre 2024 corrigé | Janvier 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 12 | 17 | **+5 (+41,7 %)** |
-| Ransomware | N/A | 16 | **N/A** |
-| Data Leak | N/A | 1 | **N/A** |
-| Access Sale | N/A | 0 | **N/A** |
-| DDoS | N/A | 0 | **N/A** |
-| Defacement | N/A | 0 | **N/A** |
-| Operational Fraud | N/A | 0 | **N/A** |
+| Total incidents | 14 | 19 | **+5 (+35,7 %)** |
+| Ransomware | 11 | 16 | **+5 (+45,5 %)** |
+| Data Leak | 2 | 2 | **Stable** |
+| Access Sale | 0 | 0 | **Stable** |
+| DDoS | 0 | 0 | **Stable** |
+| Defacement | 1 | 0 | **-1 (-100,0 %)** |
+| Account Takeover | N/A | 1 | **N/A** |
+| System Intrusion | N/A | 0 | **N/A** |
+| Malware | N/A | 0 | **N/A** |
+| Operational Fraud | 0 | 0 | **Stable** |
 
-> Les catégories du mois précédent ne sont pas reconstruites par déduction. Le total passe de 12 à 17, soit **+5 (+41,7 %)**.
+ > **Limite de comparaison :** Account Takeover, System Intrusion et Malware sont `N/A` pour décembre 2024 car le corpus 2024 n'a pas encore été rétro-classifié intégralement selon la classification actuelle.
+
 
 ## 2. Méthodologie
 
-- **Périmètre** : 54 pays africains.
-- **Période** : 1er au 31 janvier 2025, selon la date de publication ou de détection utilisée dans les fiches.
-- **Sources** : OSINT, sites de fuite, forums underground, publications d'acteurs et échantillons fournis lorsqu'ils sont disponibles.
-- **Source de vérité** : le couple bilingue validé [`victims_FR.md`](./victims_FR.md) / [`victims.md`](./victims.md), avec contrôle éditorial d'abord dans la version française.
-- **Qualification** : une revendication, un échantillon publié et une confirmation indépendante sont traités comme des niveaux de preuve distincts.
-- **Comptage** : chaque fiche incident compte une fois dans le total mensuel.
+- **Périmètre :** 54 pays africains ; période de référence : Janvier 2025.
+- **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
+- **Classification :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud.
+- **Comptage :** une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques.
+- **Chronologie :** `Date de l'incident` et `Date de publication initiale` sont séparées. Une publication ultérieure ne déplace pas artificiellement un incident vers un autre mois lorsque la chronologie est suffisamment établie.
+- **Dates incertaines :** lorsqu'un jour exact n'est pas connu, le mois ou la fenêtre soutenue par les preuves est conservé.
+- **Sources :** les liens publics sont conservés pour les incidents complémentaires identifiés par recherche OSINT/web ; ils ne sont pas imposés rétroactivement aux observations historiques ou Dark Web directes.
+- **Preuve :** type d'incident, statut, confiance, impact et provenance restent des dimensions distinctes.
+- **Secteurs :** normalisation calculée une seule fois à partir du corpus structuré, puis utilisée à l'identique en FR et EN.
+- **Limite :** les fréquences reflètent la visibilité AFRINTEL et non l'ensemble des compromissions réelles sur le continent.
 
-## 3. Vue d'ensemble
+## 3. Vue d'ensemble et types d'incident
 
-### 3.1 Répartition par type d'incident
+| Indicateur | Valeur |
+|---|---:|
+| Incidents documentés | **19** |
+| Pays représentés | **8** |
+| Régions représentées | **4** |
+| Premier pays | **Kenya (4)** |
+| Premier secteur | **Éducation / Université (6)** |
+| Premier label acteur | **funksec (6)** |
 
-| Type d'incident | Nombre | Part |
+| Type d'incident | Fiches | Part |
 |---|---:|---:|
-| Ransomware | 16 | 94,1 % |
-| Data Leak | 1 | 5,9 % |
+| Ransomware | 16 | 84,2 % |
+| Data Leak | 2 | 10,5 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
+| Account Takeover | 1 | 5,3 % |
+| System Intrusion | 0 | 0,0 % |
+| Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **17** | **100 %** |
+| **Total** | **19** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Janvier 2025
     "Ransomware" : 16
-    "Data Leak" : 1
+    "Data Leak" : 2
+    "Account Takeover" : 1
 ```
 
-**Convention couleur :** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale | 🟥 DDoS | 🟨 Defacement | 🟩 Operational Fraud.
+## 4. Répartition géographique
 
-### 3.2 Répartition par pays
+| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| Kenya | **4** | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Égypte | **4** | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Afrique du Sud | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maroc | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ouganda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **19** | **16** | **2** | **0** | **0** | **0** | **1** | **0** | **0** |
 
-| Pays | Ransomware | Data Leak | Total | Distribution |
-|---|---:|---:|---:|---|
-| Égypte | 4 | 0 | 4 | 🟧🟧🟧🟧 |
-| Nigeria | 3 | 0 | 3 | 🟧🟧🟧 |
-| Afrique du Sud | 1 | 1 | 2 | 🟧🟦 |
-| Algérie | 2 | 0 | 2 | 🟧🟧 |
-| Maroc | 2 | 0 | 2 | 🟧🟧 |
-| Kenya | 2 | 0 | 2 | 🟧🟧 |
-| Ouganda | 1 | 0 | 1 | 🟧 |
-| Zambie | 1 | 0 | 1 | 🟧 |
-| **Total** | **16** | **1** | **17** | |
+> `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
-```mermaid
-xychart-beta
-    title "Incidents par pays - Janvier 2025"
-    x-axis ["EG", "NG", "ZA", "DZ", "MA", "KE", "UG", "ZM"]
-    y-axis "Incidents" 0 --> 5
-    bar [4, 3, 2, 2, 2, 2, 1, 1]
-```
+## 5. Répartition régionale
 
-**Légende :** `EG` = Égypte | `NG` = Nigeria | `ZA` = Afrique du Sud | `DZ` = Algérie | `MA` = Maroc | `KE` = Kenya | `UG` = Ouganda | `ZM` = Zambie
-
-### 3.3 Comparaison Ransomware et Data Leak par pays
-
-```mermaid
-xychart-beta
-    title "Ransomware vs Data Leak par pays - Janvier 2025"
-    x-axis ["EG", "NG", "ZA", "DZ", "MA", "KE", "UG", "ZM"]
-    y-axis "Incidents" 0 --> 5
-    bar [4, 3, 1, 2, 2, 2, 1, 1]
-    bar [0, 0, 1, 0, 0, 0, 0, 0]
-```
-
-**Légende des séries :** première série = 🟧 Ransomware | deuxième série = 🟦 Data Leak.  
-**Pays :** `EG` = Égypte | `NG` = Nigeria | `ZA` = Afrique du Sud | `DZ` = Algérie | `MA` = Maroc | `KE` = Kenya | `UG` = Ouganda | `ZM` = Zambie
-
-### 3.4 Répartition géographique par région
-
-| Région | Incidents | Part |
+| Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 8 | 47,1 % |
-| Afrique australe | 3 | 17,6 % |
-| Afrique de l'Ouest | 3 | 17,6 % |
-| Afrique centrale | 0 | 0,0 % |
-| Afrique de l'Est | 3 | 17,6 % |
-| **Total** | **17** | **100 %** |
+| Afrique du Nord | 8 | 42,1 % |
+| Afrique de l'Est | 5 | 26,3 % |
+| Afrique australe | 3 | 15,8 % |
+| Afrique de l'Ouest | 3 | 15,8 % |
+| **Total** | **19** | **100 %** |
 
-```mermaid
-xychart-beta
-    title "Incidents par région - Janvier 2025"
-    x-axis ["NA", "SA", "WA", "CA", "EA"]
-    y-axis "Incidents" 0 --> 9
-    bar [8, 3, 3, 0, 3]
-```
+La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
 
-**Légende :** `NA` = Afrique du Nord | `SA` = Afrique australe | `WA` = Afrique de l'Ouest | `CA` = Afrique centrale | `EA` = Afrique de l'Est
+## 6. Impact sectoriel
 
-### 3.5 Répartition sectorielle
-
-| Secteur | Incidents | Part | Activité |
+| Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
-| Éducation / Université | 6 | 35,3 % | ██████████ |
-| Gouvernement / Administration | 3 | 17,6 % | █████ |
-| Santé / Médical | 2 | 11,8 % | ███ |
-| Technologie / Informatique | 2 | 11,8 % | ███ |
-| Énergie / Services publics | 1 | 5,9 % | ██ |
-| Services professionnels | 1 | 5,9 % | ██ |
-| Commerce / E-commerce | 1 | 5,9 % | ██ |
-| Hôtellerie / Tourisme | 1 | 5,9 % | ██ |
-| **Total** | **17** | **100 %** | |
+| Éducation / Université | 6 | 31,6 % | ██████ |
+| Gouvernement / Administration | 4 | 21,1 % | ████ |
+| Santé / Médical | 2 | 10,5 % | ██ |
+| Médias / Divertissement | 2 | 10,5 % | ██ |
+| Commerce / E-commerce | 1 | 5,3 % | █ |
+| Technologie / IT | 1 | 5,3 % | █ |
+| Transport / Logistique | 1 | 5,3 % | █ |
+| Hôtellerie / Tourisme | 1 | 5,3 % | █ |
+| Services professionnels / Business | 1 | 5,3 % | █ |
+| **Total** | **19** | **100 %** | |
 
-```mermaid
-xychart-beta
-    title "Incidents par secteur - Janvier 2025"
-    x-axis ["EDU", "GOV", "HEA", "TEC", "ENE", "PRO", "RET", "HOS"]
-    y-axis "Incidents" 0 --> 7
-    bar [6, 3, 2, 2, 1, 1, 1, 1]
-```
+## 7. Acteurs / groupes
 
-**Légende :** `EDU` = Éducation / Université | `GOV` = Gouvernement / Administration | `HEA` = Santé / Médical | `TEC` = Technologie / Informatique | `ENE` = Énergie / Services publics | `PRO` = Services professionnels | `RET` = Commerce / E-commerce | `HOS` = Hôtellerie / Tourisme
+`Unknown` correspond à une absence d'attribution, pas à un acteur.
 
-### 3.6 Acteurs / groupes documentés
-
-| Acteur / Groupe | Incidents | Activité |
+| Acteur / Groupe | Fiches | Activité |
 |---|---:|---|
-| funksec | 6 | ██████████ |
-| GDLockerSec | 3 | █████ |
-| babuk2 | 2 | ███ |
-| ransomhub | 2 | ███ |
-| spacebears | 2 | ███ |
-| apt73 | 1 | ██ |
-| SevenZeroDay404 | 1 | ██ |
-| **Total** | **17** | |
+| funksec | 6 | ██████ |
+| GDLockerSec | 3 | ███ |
+| ransomhub | 2 | ██ |
+| spacebears | 2 | ██ |
+| babuk2 | 2 | ██ |
+| Unknown | 2 | ██ |
+| apt73 | 1 | █ |
+| SevenZeroDay404 | 1 | █ |
+
+## 8. Maturité des preuves
+
+| Maturité de preuve | Fiches | Part |
+|---|---:|---:|
+| Claim - Unverified | 8 | 42,1 % |
+| Claim - Data Sample Published | 9 | 47,4 % |
+| Confirmation victime / gouvernement / autorité | 2 | 10,5 % |
+| **Total** | **19** | **100 %** |
+
+Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
+
+## 9. Chronologie
 
 ```mermaid
-xychart-beta
-    title "Acteurs ou groupes documentés - Janvier 2025"
-    x-axis ["FUN", "GDL", "BAB", "RAN", "SPA", "APT", "SEV"]
-    y-axis "Incidents" 0 --> 7
-    bar [6, 3, 2, 2, 2, 1, 1]
+timeline
+    title AFRINTEL - Janvier 2025
+    06 Janvier 2025 : Molars Dental Practice
+    09 Janvier 2025 : General Authority for Government Services
+    09 Janvier 2025 : Pick n Pay (pnp.co.za)
+    11 Janvier 2025 : SEOCOM Marrakech (seocommarrakech.com)
+    14 Janvier 2025 : INTELS Nigeria Limited (intelservice.com)
+    14 Janvier 2025 : Sharm Reef Hotel
+    15 Janvier 2025 : Misr Technology Services (MTS / mts.gov.eg)
+    16 Janvier 2025 : North-West University (NWU)
+    21 Janvier 2025 : Centre Universitaire de Barika (cu-barika.dz)
+    21 Janvier 2025 : Clinique Inaya (inayaclinic.org)
+    24 Janvier 2025 : Lower Niger River Basin Development Authority (LNRBDA)
+    24 Janvier 2025 : Université Sidi Mohamed Ben Abdellah (www.usmba.ac.ma)
+    26 Janvier 2025 : Achievers Journal of Scientific Research
+    26 Janvier 2025 : FGSE, Université du Caire (fgse.cu.edu.eg)
+    27 Janvier 2025 : QED (qed.co.ug)
+    27 Janvier 2025 : Workers (workers.com.zm)
+    27 Janvier 2025 : Zetech University (zetech.ac.ke)
+    31 Janvier 2025 - date rapportée : Business Registration Service (BRS)
+    31 Janvier 2025 : Kenya Broadcasting Corporation (KBC)
 ```
 
-**Légende :** `FUN` = funksec | `GDL` = GDLockerSec | `BAB` = babuk2 | `RAN` = ransomhub | `SPA` = spacebears | `APT` = apt73 | `SEV` = SevenZeroDay404
+## 10. Analyse CTI mensuelle
 
-## 4. Analyse détaillée par type d'incident
+### Ransomware
 
-### 4.1 Ransomware - 16 incidents
+**16 fiches** sont classées Ransomware. Principaux pays : Égypte (4), Nigeria (3), Kenya (2). Une publication sur un leak site ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.
 
-Les 16 fiches Ransomware concernent six groupes ou labels : funksec (6), GDLockerSec (3), babuk2 (2), ransomhub (2), spacebears (2) et apt73 (1). Le classement Ransomware décrit le contexte de publication ou d'extorsion enregistré dans les fiches ; il ne présume pas que chaque cas a entraîné un chiffrement.
+### Data Leak
 
-Plusieurs fiches disposent d'éléments examinés plus riches que la simple publication : GAGS, MTS, LNRBDA, USMBA, Achievers Journal, QED, Workers et Molars contiennent des échantillons ou éléments techniques décrits dans les fiches. Les niveaux de preuve restent spécifiques à chaque incident.
+**2 fiches** sont classées Data Leak. Principaux pays : Afrique du Sud (1), Kenya (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
-### 4.2 Data Leak - 1 incident
+### Account Takeover
 
-**🇿🇦 North-West University (NWU)** est la seule fiche classée Data Leak en janvier. SevenZeroDay404 présente une base intitulée **« 29K NWU Student Database »** avec un échantillon contenant notamment des noms, GPA, cursus et années d'études. L'examen identifie 2 893 occurrences de GPA structurées, mais aucun marqueur explicite reliant directement les données à `nwu.ac.za` n'a été identifié dans l'échantillon. La victime revendiquée est donc NWU, tandis que l'origine du jeu de données et le volume de 29 000 enregistrements restent non confirmés indépendamment.
+**1 Account Takeover** sont documentés. Répartition : Kenya (1). Cette catégorie conserve séparément les compromissions de comptes institutionnels.
 
-## 5. Impact sectoriel
+## 11. Incidents notables
 
-L'**Éducation / Université** devient le secteur le plus représenté avec **6 incidents sur 17 (35,3 %)**, après l'ajout de NWU. Le **Gouvernement / Administration** suit avec 3 incidents. La santé et les technologies comptent 2 incidents chacune.
+| Pays | Organisation | Type | Statut | Impact | Confiance |
+|---|---|---|---|---|---|
+| Kenya | Business Registration Service (BRS) | Data Leak | Government Confirmed | Level 4 | Very High |
+| Nigeria | Lower Niger River Basin Development Authority (LNRBDA) | Ransomware | Claim - Data Sample Published | Level 4 | Very High |
+| Ouganda | QED (qed.co.ug) | Ransomware | Claim - Data Sample Published | Level 4 | Very High |
+| Kenya | Kenya Broadcasting Corporation (KBC) | Account Takeover | Victim Confirmed | Level 3 | High |
+| Kenya | Molars Dental Practice | Ransomware | Claim - Data Sample Published | Level 3 | High |
 
-La concentration sectorielle décrit le corpus AFRINTEL de janvier 2025. Elle ne suffit pas à établir une campagne coordonnée contre le secteur éducatif.
+> Ce tableau met en avant jusqu'à cinq fiches selon le niveau d'impact, la confirmation et la confiance structurés. Il ne constitue pas un classement absolu de gravité.
 
-## 6. Profil des acteurs de menace
+## 12. Principaux enseignements et lacunes de renseignement
 
-### 6.1 Profil
+- **Concentration géographique :** Kenya représente 4 fiches (21,1 %), devant Égypte (4) et Nigeria (3).
+- **Structure de menace :** Ransomware est le premier type avec 16 fiches, suivi de Data Leak (2).
+- **Secteurs :** Éducation / Université (6) et Gouvernement / Administration (4) concentrent la plus forte visibilité.
+- **Acteurs :** les labels les plus fréquents sont funksec (6), GDLockerSec (3) et ransomhub (2).
+- **Preuve :** 17 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
 
-funksec reste le label le plus présent avec **6 fiches**, devant GDLockerSec avec 3. SevenZeroDay404 apparaît avec une seule fiche, la publication Data Leak attribuée à NWU.
+### Intelligence gaps
 
-La fréquence de publication ne démontre pas une coordination entre acteurs ni un niveau technique supérieur.
+- vecteur d'accès initial souvent non public ;
+- date technique exacte de compromission parfois inconnue ;
+- volumes revendiqués rarement vérifiables intégralement ;
+- attribution technique souvent limitée au pseudonyme ou label de publication ;
+- informations publiques sur remédiation, cause racine et conclusions DFIR encore limitées.
 
-### 6.2 Évaluation du risque
+Ces lacunes doivent guider la collecte sans être remplacées par des hypothèses.
 
-| Pays | Signal de risque dans le corpus |
-|---|---|
-| Égypte | 4 incidents, dont plusieurs organisations publiques et éducatives |
-| Nigeria | 3 incidents, dont une agence fédérale et des services liés au secteur pétrolier |
-| Afrique du Sud | 2 incidents, commerce de détail et enseignement supérieur |
-| Ouganda | 1 incident, mais avec exposition à grande échelle de contacts et accès administrateur décrit dans la fiche QED |
-| Algérie, Maroc, Kenya | 2 incidents chacun dans des secteurs éducatifs, santé ou technologiques |
-| Zambie | 1 incident avec base backend structurée décrite dans la fiche Workers |
+## 13. Recommandations
 
-Ce classement sert à prioriser la validation et la surveillance. Il ne constitue pas une mesure de compromission nationale.
+### Organisations
 
-## 7. Tendances et lacunes de renseignement
+- imposer MFA résistante au phishing sur les comptes privilégiés, VPN, messagerie, réseaux sociaux et consoles d'administration ;
+- appliquer PAM, moindre privilège, segmentation et rotation des secrets ;
+- maintenir des sauvegardes immuables et tester la restauration ;
+- renforcer les applications publiques, API et interfaces administratives ;
+- formaliser réponse à incident et notification des violations de données.
 
-### 7.1 Tendances observées
+### SOC et détection
 
-1. **Éducation en tête** : 6 des 17 fiches concernent l'enseignement, l'université ou la recherche.
-2. **Funksec reste le label le plus fréquent** : 6 fiches, soit 35,3 % du corpus.
-3. **Diversification du type d'incident** : l'ajout de NWU introduit une première fiche Data Leak dans le corpus de janvier, qui n'est plus composé exclusivement de ransomware.
-4. **Concentration géographique** : Égypte, Nigeria, Afrique du Sud, Algérie, Maroc et Kenya regroupent 15 des 17 fiches.
+- surveiller les authentifications anormales, changements MFA, créations de comptes privilégiés et élévations de rôles ;
+- détecter lectures massives de bases, exports inhabituels, créations d'archives et transferts sortants volumineux ;
+- corréler EDR, IAM, VPN, WAF, proxy, DNS, cloud et journaux applicatifs ;
+- distinguer DDoS, intrusion interne, compromission de compte et fuite de données pour éviter les conclusions non étayées.
 
-### 7.2 Lacunes de renseignement
+### CTI
 
-- L'origine technique de l'échantillon attribué à NWU n'est pas confirmée par un marqueur direct dans les données examinées.
-- Les volumes revendiqués par les acteurs ne sont pas tous vérifiables à partir des échantillons disponibles.
-- Le vecteur d'accès initial et l'impact opérationnel restent inconnus pour plusieurs cas.
-- Le détail par type d'incident de décembre 2024 n'est pas disponible dans les fichiers fournis, ce qui empêche une comparaison catégorielle fiable.
+- conserver séparément date d'incident, publication initiale, première observation, échantillon, divulgation et confirmation ;
+- suivre republications et reventes sans les compter automatiquement comme nouvelles compromissions ;
+- maintenir la hiérarchie de preuve entre claim, corroboration et confirmation ;
+- valider la parité FR/EN avant toute génération de statistiques.
 
-### 7.3 Évolution mensuelle
+## 14. Conclusion
 
-```mermaid
-xychart-beta
-    title "Incidents documentés - Décembre 2024 vs Janvier 2025"
-    x-axis ["DEC", "JAN"]
-    y-axis "Incidents" 0 --> 18
-    bar [12, 17]
-```
+Le mois de **Janvier 2025** compte **19 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
 
-**Légende :** `DEC` = Décembre 2024 | `JAN` = Janvier 2025.
+Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
 
-Le total documenté augmente de **12 à 17**, soit **+5 (+41,7 %)**. Cette évolution concerne le corpus public suivi par AFRINTEL et ne démontre pas à elle seule une hausse équivalente du nombre réel de compromissions.
+👉🏾 [Voir les victimes du mois](./victims_FR.md)
 
-## 8. Cartographie MITRE ATT&CK contextuelle
-
-| Phase | Technique | Portée analytique |
-|---|---|---|
-| Accès initial | T1190 - Exploit Public-Facing Application | Pertinent pour le cas GAGS où un motif d'injection SQL est visible ; le détail complet de l'exploitation n'est pas établi. |
-| Collecte | T1005 - Data from Local System | Contexte défensif pour plusieurs cas avec exports ou données internes ; ne prouve pas la méthode de collecte de chaque acteur. |
-| Collecte | T1213 - Data from Information Repositories | Pertinent lorsque les éléments examinés correspondent à des bases ou référentiels structurés. |
-
-> Les techniques sont utilisées comme cartographie défensive. Aucun mapping n'est ajouté au cas NWU en l'absence d'élément technique permettant d'établir la méthode d'accès ou de collecte.
-
-## 9. Recommandations
-
-- **Éducation et recherche** : MFA résistante au phishing pour les comptes administratifs, segmentation des systèmes étudiants et de recherche, contrôle des exports massifs et surveillance des comptes à privilèges.
-- **Administrations publiques** : renforcer la sécurité des applications exposées, les revues de code et la journalisation des accès administrateurs.
-- **Organisations manipulant des données personnelles** : appliquer la minimisation, le chiffrement, la gestion des accès et une surveillance des extractions volumineuses.
-- **Validation CTI** : conserver séparément les volumes revendiqués, les données réellement examinées et les confirmations indépendantes.
-
-## 10. Recommandations SOC et tactiques
-
-### Observé
-
-Les fiches documentent notamment des publications de données, des exports structurés, des accès administrateurs visibles et, pour GAGS, un motif d'injection SQL dans le matériel examiné.
-
-### Hypothèses
-
-Le vecteur initial de plusieurs incidents reste inconnu. Ne pas attribuer automatiquement ces cas au phishing, à l'exploitation d'une vulnérabilité ou à un vol d'identifiants sans preuve spécifique.
-
-### Préventif
-
-Surveiller les authentifications administratives, créations de comptes, exports de bases, transferts sortants volumineux, accès anormaux aux systèmes étudiants, applications publiques et plateformes de messagerie. Maintenir MFA, moindre privilège, segmentation, sauvegardes testées et révocation rapide des accès suspects.
-
-## 11. Recommandations stratégiques
-
-1. Prioriser la résilience du secteur éducatif, qui concentre plus d'un tiers des fiches du mois.
-2. Renforcer les mécanismes régionaux de partage d'information entre universités, CERT et administrations.
-3. Documenter systématiquement les niveaux de preuve afin de distinguer publication d'acteur, échantillon examiné et confirmation par la victime.
-4. Conserver les statistiques AFRINTEL liées au corpus observé sans les présenter comme une mesure exhaustive de l'activité cyber réelle en Afrique.
-
-## 12. Conclusion
-
-Janvier 2025 compte désormais **17 incidents documentés** dans **8 pays**, répartis entre **16 Ransomware** et **1 Data Leak**. L'ajout de North-West University porte l'Afrique du Sud à **2 incidents** et le secteur Éducation / Université à **6 incidents**.
-
-funksec reste le label le plus fréquent avec 6 fiches. La nouvelle publication NWU est attribuée à SevenZeroDay404, mais l'échantillon fourni ne permet pas de confirmer indépendamment son origine dans les systèmes de l'université ni les 29 000 enregistrements annoncés.
-
-**AFRINTEL** - Initiative ouverte de veille CTI sur l'Afrique
+**AFRINTEL** - TLP:CLEAR
