@@ -489,14 +489,6 @@ Priorités de surveillance :
 - surveiller l'apparition de nouveaux comptes privilégiés, changements de rôles et accès depuis des localisations inhabituelles ;
 - distinguer les indisponibilités DDoS des signes d'intrusion interne afin d'éviter les conclusions erronées.
 
-### 16.3 CTI
-
-- conserver séparément première observation, publication, échantillon, échéance, divulgation, confirmation et dernière vérification ;
-- suivre la revente et la republication sans les convertir automatiquement en nouvelle compromission ;
-- conserver la date réelle de l'incident ou la meilleure fenêtre connue, sans remplacer cette date par une redécouverte AFRINTEL ultérieure ;
-- publier les sources OSINT utiles pour les ajouts rétrospectifs, sans imposer d'URL aux observations Dark Web directes ;
-- maintenir la parité FR/EN avant toute génération de statistiques.
-
 ## 17. Conclusion
 
 AFRINTEL documente **224 cyberincidents en Afrique en 2025**, répartis dans **30 pays** et neuf catégories taxonomie AFRINTEL. Le Ransomware reste dominant avec 121 fiches, mais les 80 Data Leak et l'intégration de catégories telles que Account Takeover, System Intrusion et Malware montrent que le paysage observé ne peut plus être décrit correctement avec l'ancienne taxonomie à six types.

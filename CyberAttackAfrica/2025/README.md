@@ -489,14 +489,6 @@ Priorities include:
 - monitor creation of privileged accounts, role changes, and access from unusual locations;
 - distinguish DDoS availability events from internal intrusion indicators to avoid unsupported conclusions.
 
-### 16.3 CTI
-
-- keep first observation, publication, sample, deadline, disclosure, confirmation, and last check as separate lifecycle elements;
-- track resale and republication without automatically converting them into a new compromise;
-- preserve the actual incident date or best-known time window rather than replacing it with a later AFRINTEL rediscovery date;
-- publish useful OSINT sources for retrospective additions without forcing URLs onto direct Dark Web observations;
-- maintain FR/EN parity before generating any statistics.
-
 ## 17. Conclusion
 
 AFRINTEL documents **224 cyber incidents in Africa in 2025**, across **30 countries** and nine AFRINTEL taxonomy categories. Ransomware remains dominant with 121 records, but 80 Data Leak records and dedicated categories such as Account Takeover, System Intrusion, and Malware show why the observed landscape can no longer be represented accurately by the old six-type taxonomy.
