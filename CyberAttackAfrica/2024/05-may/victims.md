@@ -1,20 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Operational%20Fraud-red)
+# AFRINTEL Cyber Incidents - May 2024 - canonical corpus (9 records)
 
-# Cyber Attacks in Africa - May 2024: List of 9 Victims
-👉🏾 [**Version française disponible ici**](./victims_FR.md)
+👉🏾 [Version française](./victims_FR.md)
 
-## 📅 May 2024
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## Monthly snapshot
-
-May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **1 Operational Fraud**, across **6 African countries**.
 
 ### May 6, 2024
 
 #### 🇳🇬 Nigeria - Nestoil
-- **Ransomware Group:** blacksuit
+- **Actor / Group:** blacksuit
 - **Sector:** Construction / Real Estate
 - **Website:** [nestoilgroup.com](https://www.nestoilgroup.com)
 - **Status:** Claim - Unverified
@@ -28,7 +22,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 6, 2024
 
 #### 🇪🇬 Egypt - Elarabygroup
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Professional / Business Services
 - **Website:** [elarabygroup.com](https://www.elarabygroup.com)
 - **Status:** Claim - Unverified
@@ -42,7 +36,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 7, 2024
 
 #### 🇿🇦 South Africa - Lenmed
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Healthcare / Medical
 - **Website:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Status:** Claim - Unverified
@@ -56,7 +50,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 7, 2024
 
 #### 🇿🇦 South Africa - Kamo jou trading
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Finance / Banking
 - **Website:** [kamojou.co.za](https://www.kamojou.co.za)
 - **Status:** Claim - Unverified
@@ -70,7 +64,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 9, 2024
 
 #### 🇳🇦 Namibia - Eif.na
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Finance / Banking
 - **Website:** [eif.org.na](https://www.eif.org.na)
 - **Status:** Claim - Unverified
@@ -84,7 +78,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 13, 2024
 
 #### 🇨🇮 Ivory Coast - Treasury of cote d'ivoire
-- **Ransomware Group:** hunters
+- **Actor / Group:** hunters
 - **Sector:** Finance / Banking
 - **Website:** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Status:** Claim - Unverified
@@ -98,7 +92,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 16, 2024
 
 #### 🇪🇬 Egypt - Egyptian sudanese
-- **Ransomware Group:** arcusmedia
+- **Actor / Group:** arcusmedia
 - **Sector:** Professional / Business Services
 - **Website:** Not validated from the provided source
 - **Status:** Claim - Unverified
@@ -112,7 +106,7 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 ### May 25, 2024
 
 #### 🇸🇳 Senegal - Sysroad
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Technology / IT
 - **Website:** [sysroad.com](https://www.sysroad.com)
 - **Status:** Claim - Unverified
@@ -142,7 +136,3 @@ May 2024 contains **9 documented incident records**: **8 Ransomware**, **0 Data 
 - **Public source:** [SAnews - DPWI investigates theft](https://www.sanews.gov.za/south-africa/dpwi-investigates-theft-r300-million)
 
 ----------------------------
-
-## ✍🏿 Author
-*Adama ASSIONGBON*
-*SOC & Cyber Threat Intelligence Consultant*

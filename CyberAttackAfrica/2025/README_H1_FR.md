@@ -36,23 +36,22 @@ La maturité des preuves demeure hétérogène. AFRINTEL distingue les revendica
 
 ## 3. Comparaison S1 2024 corrigé vs S1 2025
 
-Le corpus corrigé de S1 2024 contient **54 fiches**, contre **111** sur S1 2025.
+Le corpus final corrigé du S1 2024 contient **45 incidents canoniques**, contre **111** au S1 2025. La baseline 2024 a fait l'objet d'un contrôle chronologique et d'une reclassification selon les **mêmes neuf types d'incident** que 2025 ; les catégories ci-dessous sont donc directement comparables et les valeurs nulles valides ne sont plus présentées en `N/A`.
 
-| Indicateur | 2024 corrigé | 2025 | Évolution |
+| Indicateur | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 54 | 111 | **+57 (+105,6 %)** |
-| Ransomware | 35 | 58 | **+23 (+65,7 %)** |
-| Data Leak | 17 | 39 | **+22 (+129,4 %)** |
+| Total incidents | 45 | 111 | **+66 (+146,7 %)** |
+| Ransomware | 34 | 58 | **+24 (+70,6 %)** |
+| Data Leak | 4 | 39 | **+35 (+875,0 %)** |
 | Access Sale | 1 | 3 | **+2 (+200,0 %)** |
-| DDoS | 0 | 1 | **+1 (nouveau)** |
-| Defacement | 0 | 2 | **+2 (nouveau)** |
+| DDoS | 2 | 1 | **-1 (-50,0 %)** |
+| Defacement | 0 | 2 | **+2 (nouvellement observé)** |
+| Account Takeover | 0 | 6 | **+6 (nouvellement observé)** |
+| System Intrusion | 3 | 2 | **-1 (-33,3 %)** |
+| Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 1 | 0 | **-1 (-100,0 %)** |
-| Account Takeover | N/A | 6 | **N/A** |
-| System Intrusion | N/A | 2 | **N/A** |
-| Malware | N/A | 0 | **N/A** |
 
-`Account Takeover`, `System Intrusion` et `Malware` restent `N/A` côté 2024 tant que le corpus 2024 n'a pas été rétro-classifié intégralement selon la taxonomie actuelle.
-
+Le corpus documenté du S1 passe de **45 à 111 incidents**, soit **+66 (+146,7 %)**. Les écarts absolus les plus importants concernent les Data Leak (**+35**) et le Ransomware (**+24**). Ces chiffres décrivent l'évolution du corpus observable AFRINTEL et ne doivent pas être interprétés comme une hausse équivalente du nombre réel de compromissions réussies.
 
 ## 4. Évolution mensuelle
 
@@ -79,7 +78,7 @@ Le corpus corrigé de S1 2024 contient **54 fiches**, contre **111** sur S1 2025
 
 ```mermaid
 timeline
-    title Activite mensuelle - S1 2025
+    title Activité mensuelle - S1 2025
     Janvier : 19
     Février : 10
     Mars : 15
@@ -242,7 +241,7 @@ Le semestre compte **3 Access Sale**. Répartition principale : Burkina Faso (1)
 
 ### DDoS - 1
 
-Le semestre documente **1 campagne(s) DDoS**. Répartition : Maroc (1). Le comptage porte sur les campagnes documentées, pas nécessairement sur chaque domaine individuel ciblé.
+Le semestre documente **1 campagne DDoS**. Répartition : Maroc (1). Le comptage porte sur les campagnes documentées, pas nécessairement sur chaque domaine individuel ciblé.
 
 ### Defacement - 2
 
@@ -255,6 +254,10 @@ Le semestre documente **6 Account Takeover**. Répartition : Kenya (3), Afrique 
 ### System Intrusion - 2
 
 Le semestre compte **2 System Intrusion**. Répartition : Afrique du Sud (1), Nigeria (1). Ce type est retenu lorsque l'accès ou la tentative d'accès système est établi sans preuve suffisante pour une catégorie plus spécifique.
+
+### Malware - 0
+
+Aucun incident n'est classé `Malware` sur ce semestre. Cette valeur nulle reflète le corpus canonique AFRINTEL du S1 2025 et ne signifie pas une absence d'activité malware en Afrique.
 
 ### Operational Fraud - 0
 

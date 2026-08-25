@@ -1,25 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Cyberincidents AFRINTEL - Novembre 2024 - corpus canonique (15 fiches)
 
-# Cyberattaques en Afrique: Novembre 2024 : Liste de 16 victimes
+👉🏾 [English version](./victims.md)
 
-👉🏾 [**English version available here**](./victims.md)
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Novembre 2024
-
-## Synthèse mensuelle
-
-Novembre 2024 contient **16 fiches incident documentées** : **12 Ransomware**, **2 Data Leak**, **2 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **11 pays africains**.
-
-La correction rétrospective ajoute **SABS**, un incident ransomware confirmé par des sources gouvernementales avec chiffrement des systèmes et perturbation opérationnelle majeure. Les sources officielles divergent d'un jour sur la date ; AFRINTEL conserve donc **20-21 novembre 2024**.
 
 ### 2 Novembre 2024
 
 #### 🇿🇦 Afrique du Sud - Sumitomo Rubber South Africa
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [srigroup.co.za](https://www.srigroup.co.za)
 - **Statut:** Claim - Data Sample Published
@@ -32,10 +21,11 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ----------------------------
 
 - **Qualification de la preuve:** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
+
 ### 4 Novembre 2024
 
 #### 🇹🇿 Tanzanie - College of Business Education (CBE)
-- **Groupe ransomware:** hellcat
+- **Acteur / Groupe:** hellcat
 - **Secteur:** Education / University
 - **Site web:** [cbe.ac.tz](https://www.cbe.ac.tz)
 - **Statut:** Claim - Unverified
@@ -49,7 +39,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 4 Novembre 2024
 
 #### 🇸🇩 Soudan - Kenana Sugar Company
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [kenanasugarcompany.com](https://www.kenanasugarcompany.com)
 - **Statut:** Claim - Unverified
@@ -60,26 +50,10 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 
 ----------------------------
 
-### 12 Novembre 2024
-
-#### 🇲🇦 Maroc - Arab Civil Aviation Organization (ACAO)
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** Republication par Hxp7 ; le post de novembre référence une revendication antérieure.
-- **Secteur:** Aviation
-- **Site web:** [acao.org.ma](https://acao.org.ma)
-- **Statut:** Claim - Unverified
-- **Niveau de confiance:** Low
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** L'Arab Civil Aviation Organization (ACAO) est une organisation intergouvernementale basée à Rabat, au Maroc, chargée de coordonner les politiques de sécurité et de régulation de l'aviation civile entre les États arabes.
-- **Analyse:** Une publication de forum datée du 12 novembre 2024 republie une revendication antérieure selon laquelle la base de données de l'ACAO (acao.org.ma) aurait été compromise, mentionnant environ 800 fichiers décrits comme des colonnes de base de données et un lien de téléchargement externe. Aucun extrait ni échantillon de données n'était directement visible dans la publication observée, ce qui empêche d'évaluer le contenu, l'authenticité et l'étendue de la base de données revendiquée. AFRINTEL n'accède pas au lien fourni et ne le reproduit pas. Cette entrée est enregistrée comme une revendication non vérifiée, dans l'attente d'une confirmation indépendante.
-
-----------------------------
-
 ### 14 Novembre 2024
 
 #### 🇳🇬 Nigeria - Environmental Design International
-- **Groupe ransomware:** akira
+- **Acteur / Groupe:** akira
 - **Secteur:** Professional / Business Services
 - **Site web:** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
 - **Statut:** Claim - Unverified
@@ -93,7 +67,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 17 Novembre 2024
 
 #### 🇪🇬 Égypte - Egyptian Tax Authority (ETA)
-- **Groupe ransomware:** moneymessage
+- **Acteur / Groupe:** moneymessage
 - **Secteur:** Government / Administration
 - **Site web:** [eta.gov.eg](https://www.eta.gov.eg)
 - **Statut:** Claim - Unverified
@@ -128,7 +102,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 24 Novembre 2024
 
 #### 🇰🇪 Kenya - EFI Sales
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [efisales.co.ke](https://www.efisales.co.ke)
 - **Statut:** Claim - Unverified
@@ -142,7 +116,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 27 Novembre 2024
 
 #### 🇪🇹 Éthiopie - Habesha Cement
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [habeshacement.com](https://www.habeshacement.com)
 - **Statut:** Claim - Unverified
@@ -156,7 +130,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 27 Novembre 2024
 
 #### 🇪🇬 Égypte - Contrack Facilities Management
-- **Groupe ransomware:** raworld
+- **Acteur / Groupe:** raworld
 - **Secteur:** Professional / Business Services
 - **Site web:** [contrackfm.com](https://www.contrackfm.com)
 - **Statut:** Claim - Unverified
@@ -200,7 +174,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 28 Novembre 2024
 
 #### 🇳🇬 Nigeria - Briatek
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Technology / IT
 - **Site web:** [briatek.com.ng](https://www.briatek.com.ng)
 - **Statut:** Claim - Unverified
@@ -214,7 +188,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 28 Novembre 2024
 
 #### 🇨🇲 Cameroun - Chanas Assurances S.A.
-- **Groupe ransomware:** fog
+- **Acteur / Groupe:** fog
 - **Secteur:** Finance / Banking
 - **Site web:** [chanasassurances.com](https://www.chanasassurances.com)
 - **Statut:** Claim - Unverified
@@ -228,7 +202,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 29 Novembre 2024
 
 #### 🇳🇦 Namibie - Namforce Life Insurance
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Finance / Banking
 - **Site web:** [namforce.com.na](https://www.namforce.com.na)
 - **Statut:** Claim - Unverified
@@ -242,7 +216,7 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 ### 29 Novembre 2024
 
 #### 🇿🇦 Afrique du Sud - PPOTTS
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Technology / IT
 - **Site web:** [ppotts.com](https://www.ppotts.com)
 - **Statut:** Claim - Data Sample Published
@@ -253,8 +227,3 @@ La correction rétrospective ajoute **SABS**, un incident ransomware confirmé p
 - **Description victime:** PPOTTS est une entreprise technologique sud-africaine opérant dans les logiciels, services numériques ou solutions technologiques d'entreprise.
 
 ----------------------------
-
-## ✍🏿 Auteur
-*Adama ASSIONGBON*
-*Consultant SOC & Cyber Threat Intelligence*
-[Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)

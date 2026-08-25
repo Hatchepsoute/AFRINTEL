@@ -1,186 +1,314 @@
-# AFRINTEL CTI Report - September 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - September 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-September 2024 contains **5 documented incident records across 5 African countries**: **4 Ransomware** and **1 Data Leak**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the validated September corpus.
+In September 2024, AFRINTEL retains **6 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (5, 83.3%)** followed by **System Intrusion (1, 16.7%)**. Leading countries are **Senegal (1)**, **Cameroon (1)**, **Mauritius (1)**. Leading sectors are **Government / Administration (2)**, **Technology / IT (1)**, **Telecommunications (1)**. Most frequent actor/group labels are `Unknown` (2), `hunters` (1), `spacebears` (1). `Unknown` means missing attribution, not an actor.
 
-The month is highly dispersed. Cameroon, Mauritius, Nigeria, Senegal and Tunisia each account for one record, and no ransomware actor appears more than once. Each of the five harmonized sectors also appears once.
-
-The Nigerian Navy publication is the most sensitive record by subject matter, but the source itself dates the claimed leak to **8 November 2020**. AFRINTEL therefore treats the September 2024 appearance as renewed observation or recirculation of older material, not as evidence of a new September intrusion. The four ransomware records remain unverified claims without public DFIR evidence in the supplied corpus.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | August 2024 | September 2024 | Change |
-|---|---:|---:|---:|
-| Total documented cyber records | 16 | **5** | **-11 (-68.8%)** |
-| Core six-type incidents | 15 | **5** | **-10 (-66.7%)** |
-| Ransomware | 14 | **4** | **-10 (-71.4%)** |
-| Data Leak | 1 | **1** | **0 (stable)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
-| Attempted Attack - tracked separately | 1 | **0** | **-1 (-100.0%)** |
+|---|---|---|---|
+| Total | 16 | 6 | -10 (-62.5%) |
+| Ransomware | 14 | 5 | -9 (-64.3%) |
+| Data Leak | 1 | 0 | -1 (-100.0%) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 1 | 1 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-September is markedly smaller than the corrected August corpus. Ransomware publication visibility falls from 14 to 4, while Data Leak remains at one record. The comparison must be read with the August GTBank exception in mind: August contained 16 documented cyber records but only 15 within the six-type taxonomy.
+### 1.2 Comparative analysis
+
+Monthly volume **decreases by 10 incident(s)**. Structural changes are: Ransomware 14->5 (-9), Data Leak 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-30 September 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective correction registry:** none of the 10 identified missing 2024 incidents belongs to September, so no additional record is injected into this month.
-- **Data recirculation:** the Nigerian Navy entry is counted as a September publication/data-circulation record while preserving its source-claimed 2020 leak date.
-- **Actor/source separation:** `NizaarFarah` is retained as source context, not as a confirmed intrusion actor.
-- Technical behavior is not treated as observed solely because it is commonly associated with a named ransomware group.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **4** | **80.0%** |
-| Data Leak | **1** | **20.0%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 5 | 83.3% |
+| Data Leak | 0 | 0.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 1 | 16.7% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **5** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - September 2024
-    "Ransomware" : 4
-    "Data Leak" : 1
+    "Ransomware" : 5
+    "System Intrusion" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇨🇲 Cameroon | 1 | 0 | 1 |
-| 🇲🇺 Mauritius | 1 | 0 | 1 |
-| 🇳🇬 Nigeria | 0 | 1 | 1 |
-| 🇸🇳 Senegal | 1 | 0 | 1 |
-| 🇹🇳 Tunisia | 1 | 0 | 1 |
-| **Total** | **4** | **1** | **5** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Senegal | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cameroon | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mauritius | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Angola | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mozambique | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| West Africa | 1 | 1 | **2** |
-| Central Africa | 1 | 0 | 1 |
-| North Africa | 1 | 0 | 1 |
-| Indian Ocean | 1 | 0 | 1 |
-| **Total** | **4** | **1** | **5** |
+| Region | Records | Share |
+|---|---|---|
+| Southern Africa | 2 | 33.3% |
+| West Africa | 1 | 16.7% |
+| Central Africa | 1 | 16.7% |
+| Indian Ocean | 1 | 16.7% |
+| North Africa | 1 | 16.7% |
 
-### 3.4 Harmonized sector distribution
+## 6. Sector distribution
 
 | Sector | Records | Share |
-|---|---:|---:|
-| Technology / IT | 1 | 20.0% |
-| Government / Administration | 1 | 20.0% |
-| Telecommunications | 1 | 20.0% |
-| Manufacturing / Industry | 1 | 20.0% |
-| Defense / Security | 1 | 20.0% |
-| **Total** | **5** | **100%** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| hunters | 1 |
-| spacebears | 1 |
-| arcusmedia | 1 |
-| orca | 1 |
-| Unknown | 1 |
-| **Total** | **5** |
-
-> `Unknown` corresponds to the Nigerian Navy Data Leak. `NizaarFarah` is documented separately as the source account visible in the publication and is not treated as a confirmed intrusion actor.
-
-```mermaid
-flowchart LR
-    HU["hunters"] --> SES["Senegal - Sesam Informatics"]
-    SP["spacebears"] --> CNP["Cameroon - CNPS"]
-    AR["arcusmedia"] --> EMT["Mauritius - Emtel"]
-    OR["orca"] --> EXC["Tunisia - Excelplast"]
-    UNK["Unknown"] --> NAV["Nigeria - Nigerian Navy, older data recirculation"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 4 records
-
-The four ransomware records concern **Sesam Informatics**, **CNPS Cameroun**, **Emtel** and **Excelplast Tunisie**.
-
-All four retain `Claim - Unverified` and `Low` confidence. The supplied September corpus does not contain a public DFIR report, accessible data sample or independent victim confirmation for these ransomware publications. AFRINTEL therefore does not infer encryption, exfiltration, operational disruption, initial access or a shared campaign.
-
-The four records cover four countries, four sectors and four different ransomware actors. That dispersion provides no defensible basis for identifying a dominant ransomware group, preferred sector or common intrusion chain in September.
-
-### 4.2 Data Leak - Nigerian Navy
-
-The Nigerian Navy record differs from the ransomware claims because a screenshot shows references to documents, equipment and advertised account-related material. The publication claims **1,200 email logins**, approximately **300 files** and a **228.4 MB archive**.
-
-Those figures remain source claims. AFRINTEL did not collect or reproduce the underlying files or credentials, so authenticity, completeness and present-day credential validity are not established.
-
-Most importantly, the source states a leak date of **8 November 2020**. The September 2024 entry therefore measures renewed criminal circulation or renewed observation of older material rather than a newly established September intrusion.
-
-## 5. Key findings and intelligence gaps
-
-- September contains **5 records across 5 countries**, making the monthly corpus geographically dispersed.
-- Ransomware accounts for **4 of 5 records (80.0%)**, but all four are unverified claims.
-- No ransomware actor appears more than once.
-- No harmonized sector appears more than once.
-- The Nigerian Navy case is the only record with visible sample material, but its underlying leak is source-dated to 2020.
-- The validity of the advertised Nigerian Navy account material, the completeness of the archive and the current circulation status remain unresolved.
-- Public victim confirmation and DFIR evidence remain key collection gaps for the four ransomware claims.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Relevant to ransomware monitoring; encryption is not confirmed in the four September claims. |
-| Preventive | T1490 - Inhibit System Recovery | Relevant backup-resilience control; behavior is not observed in the supplied corpus. |
-| Contextual / conditional | T1078 - Valid Accounts | Relevant only if advertised Nigerian Navy credentials are valid; validity is not established. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to the risks associated with recirculated document repositories, without asserting the original access method. |
+| Government / Administration | 2 | 33.3% |
+| Technology / IT | 1 | 16.7% |
+| Telecommunications | 1 | 16.7% |
+| Aviation | 1 | 16.7% |
+| Manufacturing / Industry | 1 | 16.7% |
 
-## 7. Recommendations
+## 7. Actors / groups
 
-- Treat recirculated historical data separately from newly established compromise activity.
-- For the Nigerian Navy case, verify whether referenced accounts remain active and invalidate affected credentials if institutional validation confirms exposure.
-- For the four ransomware claims, preserve authentication, endpoint, remote-access and backup telemetry around the publication dates.
-- Monitor later victim statements, leak-site samples and technical reporting before raising confidence.
-- Avoid inferring a common campaign from a five-record corpus in which every actor and sector appears only once.
+| Actor / Group | Records | Share |
+|---|---|---|
+| Unknown | 2 | 33.3% |
+| hunters | 1 | 16.7% |
+| spacebears | 1 | 16.7% |
+| arcusmedia | 1 | 16.7% |
+| orca | 1 | 16.7% |
 
-## 8. Timeline
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 4 | 66.7% |
+| Confirmed | 2 | 33.3% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 4 | 66.7% |
+| Very High | 2 | 33.3% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - September 2024
-    06 September : hunters - Sesam Informatics
-    07 September : Unknown - Nigerian Navy, older data recirculation
-    12 September : spacebears - CNPS Cameroun
-    15 September : arcusmedia - Emtel
-    16 September : orca - Excelplast Tunisie
+    6 Septembre 2024 : Sesam Informatics
+- **Acteur / Groupe -** hunters
+- **Secteur -** Technology / IT
+- **Site web -** [sesam-informatics.com](https -//www.sesam-informatics.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Sesam Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.
+- **Note de fiabilité -** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse -** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+----------------------------
+    12 Septembre 2024 : CNPS Cameroun
+- **Acteur / Groupe -** spacebears
+- **Secteur -** Government / Administration
+- **Site web -** [cnps.cm](https -//www.cnps.cm)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.
+- **Note de fiabilité -** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse -** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+----------------------------
+    15 Septembre 2024 : Emtel
+- **Acteur / Groupe -** arcusmedia
+- **Secteur -** Telecommunications
+- **Site web -** [emtel.com](https -//www.emtel.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, des services voix, des données haut débit et des services numériques.
+- **Note de fiabilité -** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse -** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+----------------------------
+    15 Septembre 2024 : TAAG - Linhas Aéreas de Angola
+- **Date de l'incident -** 15 Septembre 2024
+- **Date de publication initiale / source retenue -** 16 septembre 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Aviation
+- **Site web -** [taag.com](https -//www.taag.com/)
+- **Statut -** Authority Confirmed
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Analyse -** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.
+- **Sources publiques -** [Agência de Protecção de Dados](https -//apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https -//www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https -//pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)
+
+----------------------------
+    16 Septembre 2024 : Excelplast Tunisie
+- **Acteur / Groupe -** orca
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [excelplastunisie.com](https -//www.excelplastunisie.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Excelplast Tunisie est une entreprise manufacturière tunisienne spécialisée dans la production de plastique, la transformation des matières premières et l'emballage.
+- **Note de fiabilité -** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse -** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+----------------------------
+    28 Septembre 2024 : Comissão Nacional de Eleições (CNE)
+- **Date de l'incident -** 28 Septembre 2024
+- **Date de publication initiale / source retenue -** 30 septembre 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [cne.org.mz](https -//www.cne.org.mz/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 3
+- **Analyse -** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.
+- **Sources publiques -** [Club of Mozambique](https -//clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https -//www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-September 2024 closes with **5 documented incident records across 5 African countries**, comprising **4 Ransomware claims and 1 Data Leak**. Compared with the corrected August corpus, total documented cyber records fall from 16 to 5, a decrease of **68.8%**. Looking strictly at the six-type AFRINTEL taxonomy, the comparison is 15 to 5, or **-66.7%**. Ransomware publication visibility falls from 14 to 4, while Data Leak remains stable at one record.
+### Ransomware - 5
 
-This sharp reduction should not be interpreted as evidence that cyber risk across Africa fell by the same proportion. August was an unusually dense publication month, while September contains only five highly dispersed records. The September corpus covers five different countries, five sectors and five actor/source positions, which makes broad conclusions about coordinated targeting or a common campaign unsupported.
+**5 record(s) (83.3%).** Leading countries: Senegal (1), Cameroon (1), Mauritius (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-The month's most sensitive publication, Nigerian Navy, also illustrates why chronology matters. The source itself dates the claimed leak to November 2020. Its presence in September 2024 therefore demonstrates the **persistence and recirculation of older potentially sensitive material**, not a newly demonstrated September compromise. The visible screenshot provides more documentary context than the ransomware claims, but it still does not establish the authenticity of every advertised file, the current validity of the claimed email logins or the completeness of the 228.4 MB archive.
+### System Intrusion - 1
 
-The four ransomware records provide the opposite profile: they are current September publications but have limited evidence maturity. Each remains an unverified claim, and the supplied corpus provides no public DFIR evidence establishing encryption, exfiltration, operational disruption or a common intrusion chain. No ransomware actor repeats, so the data does not support identifying a dominant group for the month.
+**1 record(s) (16.7%).** Leading countries: Mozambique (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-The defensible CTI reading is therefore that September combines **lower publication volume, weak evidence maturity for current ransomware claims, and continued exposure risk from older data recirculation**. AFRINTEL should continue to distinguish publication date, claimed leak date, victim confirmation and technical validation. This separation prevents historical data resurfacing in criminal channels from being misread as a new breach while preserving its ongoing relevance for credential exposure, intelligence monitoring and defensive response.
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Angola | TAAG - Linhas Aéreas de Angola
+- **Date de l'incident:** 15 Septembre 2024
+- **Date de publication initiale / source retenue:** 16 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Aviation
+- **Site web:** [taag.com](https://www.taag.com/)
+- **Statut:** Authority Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.
+- **Sources publiques:** [Agência de Protecção de Dados](https://apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https://www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https://pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)
+
+---------------------------- | Ransomware | Authority Confirmed | Level 4 | Very High |
+| Mozambique | Comissão Nacional de Eleições (CNE)
+- **Date de l'incident:** 28 Septembre 2024
+- **Date de publication initiale / source retenue:** 30 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [cne.org.mz](https://www.cne.org.mz/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.
+- **Sources publiques:** [Club of Mozambique](https://clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https://www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+---------------------------- | System Intrusion | Victim Confirmed | Level 3 | Very High |
+| Cameroon | CNPS Cameroun
+- **Acteur / Groupe:** spacebears
+- **Secteur:** Government / Administration
+- **Site web:** [cnps.cm](https://www.cnps.cm)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.
+- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Mauritius | Emtel
+- **Acteur / Groupe:** arcusmedia
+- **Secteur:** Telecommunications
+- **Site web:** [emtel.com](https://www.emtel.com)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, des services voix, des données haut débit et des services numériques.
+- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Senegal | Sesam Informatics
+- **Acteur / Groupe:** hunters
+- **Secteur:** Technology / IT
+- **Site web:** [sesam-informatics.com](https://www.sesam-informatics.com)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 2
+- **Description victime:** Sesam Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.
+- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.
+- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 2 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+September 2024 contains **6 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

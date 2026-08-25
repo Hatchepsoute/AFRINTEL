@@ -1,202 +1,403 @@
-# AFRINTEL CTI Report - July 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - July 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-July 2024 contains **11 documented incident records**: **7 Ransomware** and **4 Data Leak**, across **7 African countries**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the validated July corpus.
+In July 2024, AFRINTEL retains **10 canonical cyber incidents across 8 countries**. The month is led by **Ransomware (7, 70.0%)** followed by **Data Leak (2, 20.0%)**. Leading countries are **South Africa (3)**, **Tunisia (1)**, **Ethiopia (1)**. Leading sectors are **Professional / Business Services (3)**, **Transport / Logistics (2)**, **Defense / Security (1)**. Most frequent actor/group labels are `madliberator` (2), `killsec` (1), `TheColorYellow` (1). `Unknown` means missing attribution, not an actor.
 
-South Africa and Algeria each account for three records. Algeria's concentration requires an important qualification: all three Algerian Data Leak entries come from a July repost of an older compilation containing datasets dated 2019, 2022 and 2023. They are counted as data-circulation incidents in the monthly corpus, not as three newly established July intrusions.
-
-The Ethiopian F.D.R.E Defence War College case also requires caution. The visible sample is consistent with internal Ethiopian military-education documents, while the domain announced by the seller, `nwc.ndu.edu`, belongs to the US National Defense University. AFRINTEL therefore separates the organization visible in the sample from the actor-cited but unverified domain.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | June 2024 | July 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 3 | **11** | **+8 (+266.7%)** |
-| Ransomware | 3 | **7** | **+4 (+133.3%)** |
-| Data Leak | 0 | **4** | **+4 (new in corpus)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 3 | 10 | +7 (+233.3%) |
+| Ransomware | 3 | 7 | +4 (+133.3%) |
+| Data Leak | 0 | 2 | +2 (new) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 0 | 1 | +1 (new) |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-July's corpus is **3.7 times the size of June's**, but this does not mean confirmed compromises multiplied by the same factor. Three of the four Data Leak records are older datasets recirculated in July, while the seven Ransomware records remain publication claims without public DFIR evidence in the supplied corpus.
+### 1.2 Comparative analysis
+
+Monthly volume **increases by 7 incident(s)**. Structural changes are: Ransomware 3->7 (+4), Data Leak 0->2 (+2), System Intrusion 0->1 (+1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-31 July 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective correction registry:** none of the 10 identified missing 2024 incidents belongs to July.
-- **Reposts:** a repost remains a data-circulation incident in the monthly corpus, but is not represented as a new intrusion.
-- **Actor/source separation:** reposting accounts are not treated as intrusion actors unless evidence supports that attribution.
-- Confidence reflects visible evidence quality, not actor reputation or publication volume.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **7** | **63.6%** |
-| Data Leak | **4** | **36.4%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 7 | 70.0% |
+| Data Leak | 2 | 20.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 1 | 10.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **11** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - July 2024
     "Ransomware" : 7
-    "Data Leak" : 4
+    "Data Leak" : 2
+    "System Intrusion" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 3 | 0 | **3** |
-| 🇩🇿 Algeria | 0 | 3 | **3** |
-| 🇰🇪 Kenya | 1 | 0 | 1 |
-| 🇹🇳 Tunisia | 1 | 0 | 1 |
-| 🇿🇼 Zimbabwe | 1 | 0 | 1 |
-| 🇪🇬 Egypt | 1 | 0 | 1 |
-| 🇪🇹 Ethiopia | 0 | 1 | 1 |
-| **Total** | **7** | **4** | **11** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| South Africa | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ethiopia | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Kenya | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zimbabwe | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Egypt | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| North Africa | 2 | 3 | **5** |
-| Southern Africa | 4 | 0 | **4** |
-| East Africa | 1 | 1 | **2** |
-| **Total** | **7** | **4** | **11** |
+| Region | Records | Share |
+|---|---|---|
+| North Africa | 4 | 40.0% |
+| Southern Africa | 4 | 40.0% |
+| East Africa | 2 | 20.0% |
 
-### 3.4 Harmonized sector distribution
+## 6. Sector distribution
 
 | Sector | Records | Share |
-|---|---:|---:|
-| Healthcare / Medical | 2 | 18.2% |
-| Professional / Business Services | 2 | 18.2% |
-| Transport / Logistics | 2 | 18.2% |
-| Defense / Security | 1 | 9.1% |
-| Education / University | 1 | 9.1% |
-| Media / Entertainment | 1 | 9.1% |
-| Finance / Banking | 1 | 9.1% |
-| Mining / Extractive Industries | 1 | 9.1% |
-| **Total** | **11** | **100%** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| Unknown | **3** |
-| madliberator | **2** |
-| killsec | 1 |
-| TheColorYellow | 1 |
-| blacksuit | 1 |
-| hunters | 1 |
-| lockbit3 | 1 |
-| ransomhouse | 1 |
-| **Total** | **11** |
-
-> The three `Unknown` records are the Algerian reposted datasets. `Addka72424` and `FriendlyChemist` remain documented as source context, not as confirmed intrusion actors.
-
-```mermaid
-flowchart LR
-    MAD["madliberator - 2"] --> ZB["Zimbabwe - ZB Financial Holdings"]
-    MAD --> CT["South Africa - Cities Network"]
-    UNK["Unknown - 3"] --> HCM["Algeria - Hôpital Chahids Mahmoudi"]
-    UNK --> TLE["Algeria - University of Tlemcen"]
-    UNK --> ALG["Algeria.com"]
-    TYC["TheColorYellow"] --> DWC["Ethiopia - Defence War College"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 7 records
-
-The seven Ransomware records concern **Maxcess Logistics**, **National Health Laboratory Service**, **Kenya Urban Roads Authority**, **ZB Financial Holdings**, **South African Cities Network**, **Assih** and **Sibanye-Stillwater**.
-
-All seven remain `Claim - Unverified` with low confidence in the supplied victim cards. No accessible technical sample or public DFIR report in the supplied corpus establishes encryption, operational disruption or exfiltration for these seven cases.
-
-`madliberator` appears twice on 17 July, against ZB Financial Holdings and South African Cities Network. The shared publication date and actor are observable facts, but there is no technical evidence in the supplied corpus linking the two incidents through a common initial-access vector, infrastructure or campaign.
-
-### 4.2 Data Leak - 4 records
-
-Three Data Leak entries are Algerian datasets recirculated on 11 July as part of an "Algerian Databases Collection":
-
-- **Hôpital Chahids Mahmoudi:** source file dated 21 September 2023, with an email-filtering log sample. Sensitive health-related metadata is visible, but access to complete mailboxes is not established.
-- **University of Tlemcen:** source file dated 27 June 2022. The sample contains a structurally coherent Moodle `mdl_user` table and supports `High` confidence in the dataset's authenticity.
-- **Algeria.com:** source file dated September 2019. The data is old, the domain is a generic portal, and no clearly identifiable password field is established, supporting a lower confidence and current relevance assessment.
-
-These three records measure renewed circulation of older material in July 2024, not three newly established intrusions.
-
-The fourth Data Leak concerns **F.D.R.E Defence War College** in Ethiopia. Five visible PNG files support the link to the Ethiopian institution, but the actor-cited domain `nwc.ndu.edu` is inconsistent with that organization. No PST, EML, MSG or Exchange export is present in the supplied material, so the claimed 747 MB of Exchange email cannot be confirmed.
-
-## 5. Key findings and intelligence gaps
-
-- July rises from 3 to **11 records**, but novelty and publication volume must be separated.
-- Ransomware accounts for **7 of 11 records (63.6%)**, all unverified in the supplied corpus.
-- Three of four Data Leak records are older Algerian datasets recirculated in July.
-- South Africa and Algeria each account for three records, but their evidence profiles are very different: ransomware claims in South Africa versus older data circulation in Algeria.
-- The University of Tlemcen sample has the strongest authenticity indicators among the Algerian republications.
-- The Ethiopian Defence War College sample supports the observed organization but not the actor-cited domain or the claimed Exchange volume.
-- The seven ransomware cases still require victim confirmation, technical indicators and operational-impact evidence.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Relevant ransomware monitoring; encryption is not confirmed in the seven July claims. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to Moodle and other structured repository exposure in the Data Leak cases. |
-| Preventive | T1567 - Exfiltration Over Web Service | Relevant outbound monitoring; acquisition/exfiltration channel is not established. |
-| Assumption | T1078 - Valid Accounts | Possible scenario to investigate internally, not an observed fact in the supplied evidence. |
+| Professional / Business Services | 3 | 30.0% |
+| Transport / Logistics | 2 | 20.0% |
+| Defense / Security | 1 | 10.0% |
+| Healthcare / Medical | 1 | 10.0% |
+| Finance / Banking | 1 | 10.0% |
+| Mining / Extractive Industries | 1 | 10.0% |
+| Aviation | 1 | 10.0% |
 
-## 7. Recommendations
+## 7. Actors / groups
 
-- Treat older-data republication and new compromise as separate analytical conditions.
-- For the Algerian records, identify whether exposed accounts are still active and monitor credential reuse without assuming a current intrusion.
-- For the Ethiopian military-education case, resolve the domain discrepancy before external attribution or escalation.
-- For ransomware-listed organizations, preserve authentication, endpoint, remote-access and backup telemetry around publication dates.
-- Monitor later actor updates, victim notices and sample releases that could change evidence status.
+| Actor / Group | Records | Share |
+|---|---|---|
+| madliberator | 2 | 20.0% |
+| killsec | 1 | 10.0% |
+| TheColorYellow | 1 | 10.0% |
+| blacksuit | 1 | 10.0% |
+| Unknown | 1 | 10.0% |
+| hunters | 1 | 10.0% |
+| lockbit3 | 1 | 10.0% |
+| ransomhouse | 1 | 10.0% |
+| vjvjvj | 1 | 10.0% |
 
-## 8. Timeline
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 7 | 70.0% |
+| Claim - Data Sample Published | 1 | 10.0% |
+| Confirmed | 1 | 10.0% |
+| Corroborated | 1 | 10.0% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 7 | 70.0% |
+| High | 2 | 20.0% |
+| Medium | 1 | 10.0% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - July 2024
-    01 July : killsec - Maxcess Logistics
-    02 July : TheColorYellow - F.D.R.E Defence War College
-    05 July : blacksuit - NHLS
-    11 July : Unknown - Hôpital Chahids Mahmoudi repost
-            : Unknown - University of Tlemcen repost
-            : Unknown - Algeria.com repost
-    13 July : hunters - KURA
-    17 July : madliberator - ZB Financial Holdings
-            : madliberator - Cities Network
-            : lockbit3 - Assih
-    22 July : ransomhouse - Sibanye-Stillwater
+    01 Juillet 2024 : Maxcess-logistics
+- **Acteur / Groupe -** killsec
+- **Secteur -** Transport / Logistics
+- **Site web -** [maxcess-logistics.com](https -//www.maxcess-logistics.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Maxcess-logistics est une organisation basée en Tunisie, classée dans Transport / Logistics dans le corpus AFRINTEL.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    02 Juillet 2024 : F.D.R.E Defence War College (domaine cité  - nwc.ndu.edu)
+
+- **Acteur / Groupe -** TheColorYellow
+- **Contexte source -** Publication de vente de données sur RaidForums
+- **Secteur -** Defense / Security
+- **Statut -** Claim - Data Sample Published
+- **Site web -** [dwc.edu.et](https -//dwc.edu.et/wc/) (organisation observée dans les échantillons) ; domaine cité par l'acteur  - nwc.ndu.edu
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 4
+- **Type d'incident -** Data Leak
+- **Date de découverte -** 02 juillet 2024
+
+- **Note de fiabilité -**
+  La publication de TheColorYellow annonce une victime présentée comme le « National War College of Ethiopia » et cite le domaine nwc.ndu.edu. Ce domaine correspond au National War College de la National Defense University des États-Unis. Toutefois, les cinq fichiers PNG fournis localement présentent l'emblème et l'en-tête en amharique du « F.D.R.E Defence War College » éthiopien, ainsi que des documents internes, un inventaire de 29 postes et un tableau de 17 entrées téléphoniques. Une erreur de domaine dans l'annonce, une confusion de nom ou une attribution technique incorrecte restent donc possibles. AFRINTEL retient comme organisation observée le F.D.R.E Defence War College et conserve nwc.ndu.edu comme domaine annoncé mais non vérifié.
+
+- **Description -**
+  Les éléments visibles correspondent au F.D.R.E Defence War College, établissement d’enseignement militaire éthiopien. Le lien officiel observé pour cette organisation est [dwc.edu.et](https -//dwc.edu.et/wc/). Le domaine nwc.ndu.edu reste uniquement le domaine cité dans l’annonce de l’acteur.
+
+- **Analyse -**
+  L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Le répertoire local fourni contient cinq PNG, mais aucun PST, EML, MSG ou export Exchange. Les images comprennent des documents institutionnels, un avis en chinois pour les étudiants internationaux, un inventaire visible de 29 postes et un tableau visible de 17 entrées téléphoniques. Ces éléments sont cohérents avec des documents internes du F.D.R.E Defence War College et renforcent l'attribution de l'échantillon, mais ne confirment ni l'accès au serveur Exchange, ni l'existence des 747 Mo, ni l'exhaustivité ou l'origine des données. L'OCR amharique et chinois n'a pas été utilisé pour transcrire les valeurs ; aucun nom, numéro, identifiant matériel ou numéro de téléphone n'est reproduit.
+    5 Juillet 2024 : National health laboratory services (NHLS)
+- **Acteur / Groupe -** blacksuit
+- **Secteur -** Healthcare / Medical
+- **Site web -** [nhls.ac.za](https -//www.nhls.ac.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Le National Health Laboratory Service (NHLS) est une organisation sud-africaine de services de laboratoires publics, classée dans Healthcare / Medical.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    10 Juillet 2024 : EmploiPartner
+- **Date de l'incident -** 10 Juillet 2024
+- **Date de publication initiale / source retenue -** 14 juillet 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Date du mercredi 10 juillet supportée par les sources de l'audit.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Professional / Business Services
+- **Site web -** [emploipartner.com](https -//www.emploipartner.com/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 3
+- **Analyse -** EmploiPartner a indiqué avoir détecté et maîtrisé une intrusion non autorisée, lancé une enquête et renforcé sa plateforme. Les sources publiques utilisées dans l'audit ne suffisent pas à confirmer une exfiltration de données, un ransomware, un DDoS ou une vente d'accès. AFRINTEL retient `System Intrusion`.
+- **Sources publiques -** [Le Jeune Indépendant](https -//www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https -//www.emploipartner.com/)
+
+----------------------------
+    13 Juillet 2024 : Kenya urban roads authority (KURA)
+- **Acteur / Groupe -** hunters
+- **Secteur -** Transport / Logistics
+- **Site web -** [kura.go.ke](https -//www.kura.go.ke)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** La Kenya Urban Roads Authority (KURA) est une autorité publique kenyane chargée des infrastructures routières urbaines, classée dans Transport / Logistics.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    17 Juillet 2024 : Zb financial holdings
+- **Acteur / Groupe -** madliberator
+- **Secteur -** Finance / Banking
+- **Site web -** [zb.co.zw](https -//www.zb.co.zw)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** ZB Financial Holdings est une organisation financière zimbabwéenne classée dans Finance / Banking.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    17 Juillet 2024 : Cities network
+- **Acteur / Groupe -** madliberator
+- **Secteur -** Professional / Business Services
+- **Site web -** [sacities.net](https -//www.sacities.net)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** South African Cities Network est classé dans Professional / Business Services dans le corpus AFRINTEL.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    17 Juillet 2024 : Assih
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Professional / Business Services
+- **Site web -** [assih.com](https -//www.assih.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Assih est une organisation basée en Égypte, classée dans Professional / Business Services dans le corpus AFRINTEL.
+
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    22 Juillet 2024 : Sibanye-stillwater
+- **Acteur / Groupe -** ransomhouse
+- **Secteur -** Mining / Extractive Industries
+- **Site web -** [sibanyestillwater.com](https -//www.sibanyestillwater.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Sibanye-Stillwater est une organisation minière basée en Afrique du Sud, classée dans Mining / Extractive Industries.
+
+---
+
+- **Note de fiabilité -**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
+    26 Juillet 2024 : Arab Civil Aviation Organization (ACAO)
+- **Date de compromission -** Inconnue - au plus tard le 26 juillet 2024
+- **Date de publication initiale observée -** 26 juillet 2024
+- **Date de republication observée -** 12 novembre 2024
+- **Publication ultérieure observée -** 24 décembre 2024
+- **Acteur / Groupe -** vjvjvj
+- **Affiliation revendiquée -** The Night Hunters - selon le post observé
+- **Secteur -** Aviation
+- **Site web -** [acao.org.ma](https -//acao.org.ma)
+- **Statut -** Corroborated
+- **Type d'incident -** Data Leak
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 4
+- **Description victime -** L'Arab Civil Aviation Organization (ACAO) est une organisation intergouvernementale basée à Rabat, au Maroc, active dans la coordination de l'aviation civile entre États arabes.
+- **Analyse -** AFRINTEL dispose désormais d'une chronologie plus complète. Une publication du 26 juillet 2024 annonce une base ACAO et fournit un échantillon ainsi qu'une archive annoncée. Une publication du 12 novembre 2024 est explicitement marquée `[REPOST]`, ce qui indique qu'elle ne constitue pas une nouvelle compromission. Une autre publication du 24 décembre 2024 revendique à nouveau une compromission et affiche un échantillon de données associé à ACAO. Les éléments visibles dans les captures et le fichier structuré examiné sont cohérents avec des données liées à l'écosystème ACAO et de l'aviation civile, notamment des informations de contact, fonctions et éléments professionnels. AFRINTEL ne reproduit aucune donnée personnelle brute. Ces éléments corroborent l'existence d'une exposition de données, mais ne permettent pas d'établir la date technique exacte de l'accès initial ni de prouver que la publication de décembre correspond à une seconde intrusion indépendante.
+- **Qualification de la preuve -** `Corroborated`. Plusieurs publications distinctes se recoupent et des échantillons cohérents avec ACAO sont visibles. Il n'existe toutefois pas de confirmation publique de la victime ou d'une autorité identifiée dans les éléments examinés.
+- **Source / provenance -** Publications underground observées et analysées par AFRINTEL ; captures conservées. Aucune URL opérationnelle du forum ou de téléchargement n'est publiée.
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-July 2024 closes with **11 documented incident records across 7 African countries**, consisting of **7 Ransomware publications and 4 Data Leak records**. Compared with June, the corpus increases from 3 to 11 records, a rise of **266.7%**. Ransomware publications increase from 3 to 7 and Data Leak reappears with four records.
+### Ransomware - 7
 
-That increase is real at the level of the AFRINTEL collection, but it must not be read as an equivalent increase in confirmed compromises. Three of the four Data Leak entries are republications of Algerian datasets whose underlying dates are 2019, 2022 and 2023. Their appearance in July reflects renewed circulation and renewed exposure risk, not evidence that the three organizations were newly breached during July 2024. This distinction materially changes how the country's apparent concentration should be interpreted.
+**7 record(s) (70.0%).** Leading countries: South Africa (3), Tunisia (1), Kenya (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-The month also illustrates the importance of provenance. The F.D.R.E Defence War College case contains visible documents consistent with the Ethiopian institution, but the domain cited by the seller belongs to a different institution in the United States. The supplied files strengthen sample attribution to the Ethiopian organization, while failing to substantiate the announced Exchange origin or 747 MB volume. Preserving that contradiction is analytically stronger than forcing the actor's announcement and the observed evidence into a single unsupported narrative.
+### Data Leak - 2
 
-Ransomware visibility is broader than in June, yet the seven ransomware cards remain low-confidence, unverified claims in the supplied corpus. The simultaneous `madliberator` publications against two organizations are noteworthy for monitoring, but no technical evidence establishes a common intrusion path or campaign. The available evidence therefore supports a statement about greater **publication visibility**, not about a proven coordinated surge in ransomware compromises.
+**2 record(s) (20.0%).** Leading countries: Ethiopia (1), Morocco (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-For AFRINTEL, July demonstrates that **volume, novelty, provenance and evidence maturity must be evaluated together**. The most defensible reading is not simply that July was "more attacked" than June. Rather, AFRINTEL observed a much larger and more diverse publication corpus, partly driven by recirculated historical data, alongside seven ransomware claims whose technical impact remains largely unverified. Continued monitoring should focus on victim confirmations, later samples, regulatory disclosures and technical indicators capable of separating persistent data exposure from genuinely new compromise activity.
+### System Intrusion - 1
+
+**1 record(s) (10.0%).** Leading countries: Algeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Morocco | Arab Civil Aviation Organization (ACAO)
+- **Date de compromission:** Inconnue - au plus tard le 26 juillet 2024
+- **Date de publication initiale observée:** 26 juillet 2024
+- **Date de republication observée:** 12 novembre 2024
+- **Publication ultérieure observée:** 24 décembre 2024
+- **Acteur / Groupe:** vjvjvj
+- **Affiliation revendiquée:** The Night Hunters - selon le post observé
+- **Secteur:** Aviation
+- **Site web:** [acao.org.ma](https://acao.org.ma)
+- **Statut:** Corroborated
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** L'Arab Civil Aviation Organization (ACAO) est une organisation intergouvernementale basée à Rabat, au Maroc, active dans la coordination de l'aviation civile entre États arabes.
+- **Analyse:** AFRINTEL dispose désormais d'une chronologie plus complète. Une publication du 26 juillet 2024 annonce une base ACAO et fournit un échantillon ainsi qu'une archive annoncée. Une publication du 12 novembre 2024 est explicitement marquée `[REPOST]`, ce qui indique qu'elle ne constitue pas une nouvelle compromission. Une autre publication du 24 décembre 2024 revendique à nouveau une compromission et affiche un échantillon de données associé à ACAO. Les éléments visibles dans les captures et le fichier structuré examiné sont cohérents avec des données liées à l'écosystème ACAO et de l'aviation civile, notamment des informations de contact, fonctions et éléments professionnels. AFRINTEL ne reproduit aucune donnée personnelle brute. Ces éléments corroborent l'existence d'une exposition de données, mais ne permettent pas d'établir la date technique exacte de l'accès initial ni de prouver que la publication de décembre correspond à une seconde intrusion indépendante.
+- **Qualification de la preuve:** `Corroborated`. Plusieurs publications distinctes se recoupent et des échantillons cohérents avec ACAO sont visibles. Il n'existe toutefois pas de confirmation publique de la victime ou d'une autorité identifiée dans les éléments examinés.
+- **Source / provenance:** Publications underground observées et analysées par AFRINTEL ; captures conservées. Aucune URL opérationnelle du forum ou de téléchargement n'est publiée.
+
+---------------------------- | Data Leak | Corroborated | Level 4 | High |
+| Ethiopia | F.D.R.E Defence War College (domaine cité : nwc.ndu.edu)
+
+- **Acteur / Groupe:** TheColorYellow
+- **Contexte source:** Publication de vente de données sur RaidForums
+- **Secteur:** Defense / Security
+- **Statut:** Claim - Data Sample Published
+- **Site web:** [dwc.edu.et](https://dwc.edu.et/wc/) (organisation observée dans les échantillons) ; domaine cité par l'acteur : nwc.ndu.edu
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Type d'incident:** Data Leak
+- **Date de découverte:** 02 juillet 2024
+
+- **Note de fiabilité:**
+  La publication de TheColorYellow annonce une victime présentée comme le « National War College of Ethiopia » et cite le domaine nwc.ndu.edu. Ce domaine correspond au National War College de la National Defense University des États-Unis. Toutefois, les cinq fichiers PNG fournis localement présentent l'emblème et l'en-tête en amharique du « F.D.R.E Defence War College » éthiopien, ainsi que des documents internes, un inventaire de 29 postes et un tableau de 17 entrées téléphoniques. Une erreur de domaine dans l'annonce, une confusion de nom ou une attribution technique incorrecte restent donc possibles. AFRINTEL retient comme organisation observée le F.D.R.E Defence War College et conserve nwc.ndu.edu comme domaine annoncé mais non vérifié.
+
+- **Description:**
+  Les éléments visibles correspondent au F.D.R.E Defence War College, établissement d’enseignement militaire éthiopien. Le lien officiel observé pour cette organisation est [dwc.edu.et](https://dwc.edu.et/wc/). Le domaine nwc.ndu.edu reste uniquement le domaine cité dans l’annonce de l’acteur.
+
+- **Analyse:**
+  L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Le répertoire local fourni contient cinq PNG, mais aucun PST, EML, MSG ou export Exchange. Les images comprennent des documents institutionnels, un avis en chinois pour les étudiants internationaux, un inventaire visible de 29 postes et un tableau visible de 17 entrées téléphoniques. Ces éléments sont cohérents avec des documents internes du F.D.R.E Defence War College et renforcent l'attribution de l'échantillon, mais ne confirment ni l'accès au serveur Exchange, ni l'existence des 747 Mo, ni l'exhaustivité ou l'origine des données. L'OCR amharique et chinois n'a pas été utilisé pour transcrire les valeurs ; aucun nom, numéro, identifiant matériel ou numéro de téléphone n'est reproduit. | Data Leak | Claim - Data Sample Published | Level 4 | Medium |
+| Algeria | EmploiPartner
+- **Date de l'incident:** 10 Juillet 2024
+- **Date de publication initiale / source retenue:** 14 juillet 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date du mercredi 10 juillet supportée par les sources de l'audit.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Professional / Business Services
+- **Site web:** [emploipartner.com](https://www.emploipartner.com/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 3
+- **Analyse:** EmploiPartner a indiqué avoir détecté et maîtrisé une intrusion non autorisée, lancé une enquête et renforcé sa plateforme. Les sources publiques utilisées dans l'audit ne suffisent pas à confirmer une exfiltration de données, un ransomware, un DDoS ou une vente d'accès. AFRINTEL retient `System Intrusion`.
+- **Sources publiques:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
+
+---------------------------- | System Intrusion | Victim Confirmed | Level 3 | High |
+| South Africa | National health laboratory services (NHLS)
+- **Acteur / Groupe:** blacksuit
+- **Secteur:** Healthcare / Medical
+- **Site web:** [nhls.ac.za](https://www.nhls.ac.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Le National Health Laboratory Service (NHLS) est une organisation sud-africaine de services de laboratoires publics, classée dans Healthcare / Medical.
+
+
+- **Note de fiabilité:**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication. | Ransomware | Claim - Unverified | Level 3 | Low |
+| Zimbabwe | Zb financial holdings
+- **Acteur / Groupe:** madliberator
+- **Secteur:** Finance / Banking
+- **Site web:** [zb.co.zw](https://www.zb.co.zw)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** ZB Financial Holdings est une organisation financière zimbabwéenne classée dans Finance / Banking.
+
+
+- **Note de fiabilité:**
+  La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication. | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+**ACAO correction:** the ACAO record is attached to July based on an initial observed publication dated 26 July 2024. The 12 November repost and 24 December later publication are not counted as separate new attacks.
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+July 2024 contains **10 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

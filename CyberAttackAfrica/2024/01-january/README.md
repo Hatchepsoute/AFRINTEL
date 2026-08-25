@@ -1,194 +1,344 @@
-# AFRINTEL CTI Report - January 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - January 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL documents **14 incident records** in January 2024: **5 Ransomware**, **8 Data Leak** and **1 Access Sale**, across **10 African countries**. No DDoS, Defacement or Operational Fraud record is present in the validated January corpus.
+In January 2024, AFRINTEL retains **7 canonical cyber incidents across 3 countries**. The month is led by **Ransomware (4, 57.1%)** followed by **System Intrusion (2, 28.6%)**. Leading countries are **South Africa (4)**, **Cameroon (2)**, **Angola (1)**. Leading sectors are **Retail / E-commerce (2)**, **Government / Administration (1)**, **Finance / Banking (1)**. Most frequent actor/group labels are `Unknown` (3), `lockbit3` (3), `cnHunter` (1). `Unknown` means missing attribution, not an actor.
 
-South Africa records **4 incidents**, including the victim-confirmed ITAC ransomware event. Cameroon now records **2 incidents**, including the University of Buea Access Sale and the victim-confirmed Eneo cyberattack. Eneo is mapped provisionally to the Ransomware taxonomy because secondary CTI sources use that classification, while the victim-facing reporting reviewed does not independently confirm ransomware deployment.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
-
-> A validated AFRINTEL monthly corpus for **December 2023 is not available in the repository used for this update**. December values and month-over-month changes therefore remain `N/A`.
+### 1.1 Month-over-month study
 
 | Indicator | December 2023 | January 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | N/A | **14** | N/A |
-| Ransomware | N/A | **5** | N/A |
-| Data Leak | N/A | **8** | N/A |
-| Access Sale | N/A | **1** | N/A |
-| DDoS | N/A | **0** | N/A |
-| Defacement | N/A | **0** | N/A |
-| Operational Fraud | N/A | **0** | N/A |
+|---|---|---|---|
+| Total | N/A | 7 | N/A |
+| Ransomware | N/A | 4 | N/A |
+| Data Leak | N/A | 0 | N/A |
+| Access Sale | N/A | 1 | N/A |
+| DDoS | N/A | 0 | N/A |
+| Defacement | N/A | 0 | N/A |
+| Account Takeover | N/A | 0 | N/A |
+| System Intrusion | N/A | 2 | N/A |
+| Malware | N/A | 0 | N/A |
+| Operational Fraud | N/A | 0 | N/A |
+
+### 1.2 Comparative analysis
+
+Comparison with December 2023 is not calculated because the 2023 corpus has not been re-audited under the taxonomy and chronology rules used here. A percentage would create false precision.
 
 ## 2. Methodology
 
-- **Period:** 1-31 January 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective corrections:** incidents discovered during the 23 August 2026 historical audit are placed in their real 2024 incident month and retain a separate AFRINTEL correction date.
-- **Evidence qualification:** victim confirmation, threat-actor claim, published sample and technical confirmation remain distinct.
-- **Eneo caveat:** the cyberattack and disruption are victim-confirmed; its Ransomware type is a provisional controlled-taxonomy mapping based on secondary CTI classification, not victim-confirmed malware evidence.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **5** | **35.7%** |
-| Data Leak | **8** | **57.1%** |
-| Access Sale | **1** | **7.1%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 4 | 57.1% |
+| Data Leak | 0 | 0.0% |
+| Access Sale | 1 | 14.3% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 2 | 28.6% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **14** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - January 2024
-    "Ransomware" : 5
-    "Data Leak" : 8
+    "Ransomware" : 4
     "Access Sale" : 1
+    "System Intrusion" : 2
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Access Sale | Total |
-|---|---:|---:|---:|---:|
-| 🇿🇦 South Africa | 4 | 0 | 0 | **4** |
-| 🇨🇲 Cameroon | 1 | 0 | 1 | **2** |
-| 🇩🇿 Algeria | 0 | 1 | 0 | 1 |
-| 🇧🇫 Burkina Faso | 0 | 1 | 0 | 1 |
-| 🇬🇭 Ghana | 0 | 1 | 0 | 1 |
-| 🇰🇪 Kenya | 0 | 1 | 0 | 1 |
-| 🇲🇦 Morocco | 0 | 1 | 0 | 1 |
-| 🇳🇬 Nigeria | 0 | 1 | 0 | 1 |
-| 🇷🇼 Rwanda | 0 | 1 | 0 | 1 |
-| 🇪🇬 Egypt | 0 | 1 | 0 | 1 |
-| **Total** | **5** | **8** | **1** | **14** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| South Africa | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cameroon | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Angola | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Access Sale | Total |
-|---|---:|---:|---:|---:|
-| Southern Africa | 4 | 0 | 0 | **4** |
-| North Africa | 0 | 3 | 0 | **3** |
-| West Africa | 0 | 3 | 0 | **3** |
-| East Africa | 0 | 2 | 0 | **2** |
-| Central Africa | 1 | 0 | 1 | **2** |
-| **Total** | **5** | **8** | **1** | **14** |
-
-### 3.4 Harmonized sector distribution
-
-| Sector | Records |
-|---|---:|
-| Retail / E-commerce | 4 |
-| Government / Administration | 3 |
-| Education / University | 2 |
-| Media / Entertainment | 1 |
-| Technology / IT | 1 |
-| Civil Society / NGO | 1 |
-| Professional / Business Services | 1 |
-| Energy / Utilities | 1 |
-| **Total** | **14** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| lockbit3 | 3 |
-| Tanaka | 3 |
-| Unknown | 2 |
-| zebi | 1 |
-| r57 | 1 |
-| Milad | 1 |
-| DataHoes | 1 |
-| X0Frankenstein | 1 |
-| cnHunter | 1 |
-| **Total** | **14** |
-
-```mermaid
-flowchart LR
-    LB["lockbit3 - 3"] --> ZA["South Africa"]
-    TAN["Tanaka - 3"] --> KE["Kenya"]
-    TAN --> BF["Burkina Faso"]
-    TAN --> EG["Egypt"]
-    UNK["Unknown - 2"] --> ITAC["South Africa - ITAC"]
-    UNK --> ENEO["Cameroon - Eneo"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 5 records
-
-The original January corpus contained three `lockbit3` claims in South Africa. The historical correction adds two records:
-
-- **ITAC, South Africa:** victim-confirmed Ransomware on 2 January. File encryption, loss of system access and ransom demand are confirmed by ITAC. Possible personal-data access/exfiltration remains qualified as possible.
-- **Eneo Cameroon:** victim-confirmed cyberattack and operational disruption beginning 29 January. Ransomware is retained only as a provisional AFRINTEL taxonomy mapping because the reviewed victim-facing reporting does not independently confirm ransomware deployment.
-
-### 4.2 Data Leak - 8 records
-
-The eight Data Leak records remain unchanged from the previously harmonized January corpus.
-
-### 4.3 Access Sale - 1 record
-
-The University of Buea record remains the single Access Sale and retains a low-confidence, unverified status.
-
-## 5. Key findings and intelligence gaps
-
-- Data Leak remains the largest category with **8 of 14 records (57.1%)**.
-- South Africa increases from 3 to **4 records** after adding ITAC.
-- Cameroon increases from 1 to **2 records** after adding Eneo.
-- January Ransomware rises from 3 to **5 records**, but one of the two added records, Eneo, carries an explicit taxonomy caveat.
-- Retrospective discoveries are assigned to their real incident month while preserving the later AFRINTEL correction date.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
+| Region | Records | Share |
 |---|---|---|
-| Observed / ITAC | T1486 - Data Encrypted for Impact | ITAC confirms file encryption during the ransomware event. |
-| Preventive / other Ransomware claims | T1486 - Data Encrypted for Impact | Relevant monitoring where encryption is not technically confirmed. |
-| Assumption | T1078 - Valid Accounts | Relevant to the University of Buea Access Sale; access validity is unknown. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to structured database and CMS samples in Data Leak records. |
+| Southern Africa | 5 | 71.4% |
+| Central Africa | 2 | 28.6% |
 
-## 7. Recommendations
+## 6. Sector distribution
 
-- Keep victim-confirmed facts separate from secondary ransomware classifications.
-- Preserve incident date, initial publication date and retrospective AFRINTEL correction date as separate fields.
-- Prioritize resilience and segmentation reviews for critical infrastructure operators such as electricity utilities.
-- Validate potential personal-data exfiltration independently before converting a ransomware record into an additional Data Leak record.
-- Maintain lifecycle and deduplication checks when later publications refer to the same underlying event.
+| Sector | Records | Share |
+|---|---|---|
+| Retail / E-commerce | 2 | 28.6% |
+| Government / Administration | 1 | 14.3% |
+| Finance / Banking | 1 | 14.3% |
+| Education / University | 1 | 14.3% |
+| Professional / Business Services | 1 | 14.3% |
+| Energy / Utilities | 1 | 14.3% |
 
-## 8. Timeline
+## 7. Actors / groups
+
+| Actor / Group | Records | Share |
+|---|---|---|
+| Unknown | 3 | 42.9% |
+| lockbit3 | 3 | 42.9% |
+| cnHunter | 1 | 14.3% |
+
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 4 | 57.1% |
+| Confirmed | 3 | 42.9% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 4 | 57.1% |
+| Very High | 2 | 28.6% |
+| High | 1 | 14.3% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - January 2024
-    01 January : K24
-               : University of Oran
-               : BIA-Market
-               : Morocco Forum Site
-               : Government of Rwanda
-    02 January : Financial Intelligence Centre
-               : ITAC
-    03 January : The Citizens' Watch
-    07 January : University of Buea
-    10 January : TiAuto Investments
-               : Tiger Wheel & Tyre
-    26 January : Btech.com
-    29 January : Crowe Southern Africa
-               : Eneo Cameroon
+    2 Janvier 2024 : International Trade Administration Commission of South Africa (ITAC)
+- **Date de l'incident -** 2 janvier 2024
+- **Date de publication initiale -** 15 avril 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [itac.org.za](https -//itac.org.za/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Note de preuve -** L'ITAC a officiellement confirmé une attaque ransomware. L'accès potentiel à des informations personnelles et leur éventuelle exfiltration sont mentionnés par la victime, mais restent qualifiés de possibles et non confirmés.
+- **Description victime -** L'ITAC est l'autorité sud-africaine chargée de l'administration du commerce international et traite des informations concernant les employés, prestataires, importateurs, exportateurs et autres parties prenantes.
+- **Analyse -** L'ITAC indique avoir subi une attaque ransomware le 2 janvier 2024. Des acteurs malveillants ont chiffré des fichiers, empêché les utilisateurs d'accéder aux systèmes et exigé une rançon. L'ITAC a arrêté les serveurs affectés, restauré des sauvegardes et lancé des travaux forensiques. La notification officielle précise également que l'attaquant a pu accéder à des informations personnelles présentes sur les serveurs et éventuellement les extraire. L'acteur, le vecteur d'accès initial, le montant de la rançon et l'étendue exacte d'une éventuelle exfiltration n'ont pas été établis publiquement dans la source examinée. L'événement ransomware est donc confirmé par la victime, tandis que l'exfiltration reste possible et non confirmée.
+- **Source publique -** [Notification officielle ITAC](https -//itac.org.za/notification-of-a-personal-information-security-compromise/)
+
+----------------------------
+    6 Janvier 2024 : Banco Nacional de Angola (BNA)
+- **Date de l'incident -** 6 Janvier 2024
+- **Date de publication initiale / source retenue -** 17 janvier 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Date exacte de l'attaque confirmée par les sources de l'audit.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Finance / Banking
+- **Site web -** [bna.ao](https -//www.bna.ao/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 2
+- **Analyse -** La BNA a déclaré avoir subi une cyberattaque le 6 janvier 2024. L'incident a été contenu sans impact significatif annoncé sur l'infrastructure ou les données ; les accès aux infrastructures technologiques ont été contrôlés pendant la réponse. Les sources disponibles ne permettent pas d'établir un ransomware, un DDoS, une fuite de données ou une vente d'accès. AFRINTEL retient donc `System Intrusion` sans extrapoler le mécanisme d'accès.
+- **Sources publiques -** [Recorded Future News](https -//therecord.media/angola-national-bank-cyberattack-mitigated) | [VerAngola](https -//www.verangola.net/va/en/012024/BankingInsurance/38523/National-Bank-of-Angola-targeted-by-computer-attack.htm) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+    7 Janvier 2024 : University of Buea (UB)
+
+- **Acteur / Groupe -** cnHunter
+- **Secteur -** Education / University
+- **Statut -** Claim - Unverified
+- **Site web -** [ubuea.cm](https -//ubuea.cm)
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Access Sale
+- **Date de découverte -** 7 janvier 2024
+
+- **Note de fiabilité -**
+  Une publication de forum intitulée « [Admin Access] ubuea.cm », publiée le 7 janvier 2024 et modifiée le même jour, revendique un accès de niveau administrateur à une instance REDCap hébergée sur redcap.ubuea.cm, en référençant un chemin de gestionnaire d'importation/upload et un fichier externe hébergé sur un service de partage de fichiers présenté comme « preuve ». AFRINTEL n'a pas accédé au fichier de preuve référencé ni au système ciblé revendiqué. Le compte à l'origine de la publication, cnHunter, a ensuite été définitivement banni du forum pour suspicion d'arnaque, ce qui réduit fortement la fiabilité de la revendication.
+
+- **Description -**
+  L'University of Buea (UB) est une université publique située dans la région du Sud-Ouest du Cameroun, proposant des formations dans plusieurs facultés dont les sciences, les sciences de la santé, l'ingénierie, les lettres, le droit et les sciences sociales et de gestion. Les instances REDCap déployées par les universités sont généralement utilisées pour gérer des données académiques, d'enquête ou de recherche clinique.
+
+- **Analyse -**
+  La publication revendique un accès administrateur à une instance REDCap associée au domaine de l'université, marquée ultérieurement comme « Unlocked » dans une modification, mais ne fournit aucun échantillon de données visible, aucune preuve indépendamment vérifiable ni prix indiqué. Combiné au bannissement définitif ultérieur du compte pour suspicion d'arnaque, AFRINTEL traite cette publication comme une revendication non vérifiée à faible niveau de confiance. Si elle était authentique, un accès administrateur non autorisé à une instance REDCap pourrait exposer des données académiques, d'enquête ou de recherche liées à des étudiants, membres du personnel ou participants à des études ; ni l'accès ni un éventuel jeu de données sous-jacent ne sont confirmés.
+
+----------------------------
+    10 Janvier 2024 : TiAuto Investments
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Retail / E-commerce
+- **Site web -** [tiautoinvestments.co.za](https -//www.tiautoinvestments.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** TiAuto Investments est un groupe de premier plan en Afrique du Sud spécialisé dans le commerce de gros et de détail de jantes, de pneus et de produits automobiles. Fondé en 2006 et basé à Midrand, il détient des marques phares du continent telles que Tiger Wheel & Tyre et Tyres & More.
+
+----------------------------
+    10 Janvier 2024 : Tiger Wheel & Tyre
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Retail / E-commerce
+- **Site web -** [twt.co.za](https -//twt.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Tiger Wheel & Tyre est une filiale majeure du groupe TiAuto Investments, forte de plus de 50 ans d'existence et exploitant plus de 100 centres de services à travers l'Afrique du Sud et l'Afrique australe. Elle est spécialisée dans les services de géométrie, d'équilibrage et la vente de pneumatiques toutes catégories.
+
+----------------------------
+    29 Janvier 2024 : Crowe Southern Africa
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Professional / Business Services
+- **Site web -** [crowe.com/za](https -//www.crowe.com/za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Crowe Southern Africa est un cabinet de services professionnels de premier plan et membre indépendant du réseau mondial Crowe Global. Établi de longue date avec des bureaux à Johannesburg, Cape Town et Stellenbosch, il fournit des services d'audit, de fiscalité, de juricomptabilité (forensics) et de conseil financier.
+
+----------------------------
+    29 Janvier 2024 : Eneo Cameroon
+- **Date de l'incident -** 29 janvier 2024
+- **Date de publication initiale -** 2 février 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Energy / Utilities
+- **Site web -** [eneocameroon.cm](https -//eneocameroon.cm/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 4
+- **Note de taxonomie -** La cyberattaque et la perturbation opérationnelle sont confirmées. Les déclarations de la victime examinées ne permettent pas de confirmer indépendamment un déploiement ransomware ; cette qualification reste secondaire.
+- **Description victime -** Eneo Cameroon est le principal opérateur électrique du pays et exploite notamment les services de facturation ainsi que les services d'électricité prépayés et postpayés.
+- **Analyse -** Eneo a confirmé qu'une cyberattaque débutée le 29 janvier 2024 avait fortement perturbé ses systèmes informatiques. Certaines applications ont été désactivées par précaution et les opérations prépayées/postpayées ont été affectées, notamment l'achat d'unités d'électricité. Les informations publiques et des évaluations africaines ultérieures corroborent l'attaque. Certaines sources CTI classent l'événement comme ransomware, mais les déclarations de la victime examinées ne fournissent pas suffisamment d'éléments techniques pour confirmer indépendamment le déploiement d'un ransomware. Les faits confirmés sont donc la cyberattaque et la perturbation opérationnelle importante ; le ransomware reste une qualification secondaire.
+- **Sources publiques -** [ITWeb Africa](https -//itweb.africa/article/cameroons-power-utility-suffers-a-cyber-attack/8OKdWqDXArbqbznQ) | [OBS-CC](https -//obs-cc.org/incident/eneo-cameroon/)
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-January 2024 now contains **14 documented incident records across 10 African countries**, comprising **5 Ransomware, 8 Data Leak and 1 Access Sale**.
+### Ransomware - 4
 
-The retrospective correction adds ITAC and Eneo Cameroon while preserving the distinction between confirmed incident effects and uncertain technical classification.
+**4 record(s) (57.1%).** Leading countries: South Africa (4). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### System Intrusion - 2
+
+**2 record(s) (28.6%).** Leading countries: Angola (1), Cameroon (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### Access Sale - 1
+
+**1 record(s) (14.3%).** Leading countries: Cameroon (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| South Africa | International Trade Administration Commission of South Africa (ITAC)
+- **Date de l'incident:** 2 janvier 2024
+- **Date de publication initiale:** 15 avril 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [itac.org.za](https://itac.org.za/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Note de preuve:** L'ITAC a officiellement confirmé une attaque ransomware. L'accès potentiel à des informations personnelles et leur éventuelle exfiltration sont mentionnés par la victime, mais restent qualifiés de possibles et non confirmés.
+- **Description victime:** L'ITAC est l'autorité sud-africaine chargée de l'administration du commerce international et traite des informations concernant les employés, prestataires, importateurs, exportateurs et autres parties prenantes.
+- **Analyse:** L'ITAC indique avoir subi une attaque ransomware le 2 janvier 2024. Des acteurs malveillants ont chiffré des fichiers, empêché les utilisateurs d'accéder aux systèmes et exigé une rançon. L'ITAC a arrêté les serveurs affectés, restauré des sauvegardes et lancé des travaux forensiques. La notification officielle précise également que l'attaquant a pu accéder à des informations personnelles présentes sur les serveurs et éventuellement les extraire. L'acteur, le vecteur d'accès initial, le montant de la rançon et l'étendue exacte d'une éventuelle exfiltration n'ont pas été établis publiquement dans la source examinée. L'événement ransomware est donc confirmé par la victime, tandis que l'exfiltration reste possible et non confirmée.
+- **Source publique:** [Notification officielle ITAC](https://itac.org.za/notification-of-a-personal-information-security-compromise/)
+
+---------------------------- | Ransomware | Victim Confirmed | Level 4 | Very High |
+| Cameroon | Eneo Cameroon
+- **Date de l'incident:** 29 janvier 2024
+- **Date de publication initiale:** 2 février 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Energy / Utilities
+- **Site web:** [eneocameroon.cm](https://eneocameroon.cm/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Note de taxonomie:** La cyberattaque et la perturbation opérationnelle sont confirmées. Les déclarations de la victime examinées ne permettent pas de confirmer indépendamment un déploiement ransomware ; cette qualification reste secondaire.
+- **Description victime:** Eneo Cameroon est le principal opérateur électrique du pays et exploite notamment les services de facturation ainsi que les services d'électricité prépayés et postpayés.
+- **Analyse:** Eneo a confirmé qu'une cyberattaque débutée le 29 janvier 2024 avait fortement perturbé ses systèmes informatiques. Certaines applications ont été désactivées par précaution et les opérations prépayées/postpayées ont été affectées, notamment l'achat d'unités d'électricité. Les informations publiques et des évaluations africaines ultérieures corroborent l'attaque. Certaines sources CTI classent l'événement comme ransomware, mais les déclarations de la victime examinées ne fournissent pas suffisamment d'éléments techniques pour confirmer indépendamment le déploiement d'un ransomware. Les faits confirmés sont donc la cyberattaque et la perturbation opérationnelle importante ; le ransomware reste une qualification secondaire.
+- **Sources publiques:** [ITWeb Africa](https://itweb.africa/article/cameroons-power-utility-suffers-a-cyber-attack/8OKdWqDXArbqbznQ) | [OBS-CC](https://obs-cc.org/incident/eneo-cameroon/)
+
+---------------------------- | System Intrusion | Victim Confirmed | Level 4 | High |
+| Cameroon | University of Buea (UB)
+
+- **Acteur / Groupe:** cnHunter
+- **Secteur:** Education / University
+- **Statut:** Claim - Unverified
+- **Site web:** [ubuea.cm](https://ubuea.cm)
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Access Sale
+- **Date de découverte:** 7 janvier 2024
+
+- **Note de fiabilité:**
+  Une publication de forum intitulée « [Admin Access] ubuea.cm », publiée le 7 janvier 2024 et modifiée le même jour, revendique un accès de niveau administrateur à une instance REDCap hébergée sur redcap.ubuea.cm, en référençant un chemin de gestionnaire d'importation/upload et un fichier externe hébergé sur un service de partage de fichiers présenté comme « preuve ». AFRINTEL n'a pas accédé au fichier de preuve référencé ni au système ciblé revendiqué. Le compte à l'origine de la publication, cnHunter, a ensuite été définitivement banni du forum pour suspicion d'arnaque, ce qui réduit fortement la fiabilité de la revendication.
+
+- **Description:**
+  L'University of Buea (UB) est une université publique située dans la région du Sud-Ouest du Cameroun, proposant des formations dans plusieurs facultés dont les sciences, les sciences de la santé, l'ingénierie, les lettres, le droit et les sciences sociales et de gestion. Les instances REDCap déployées par les universités sont généralement utilisées pour gérer des données académiques, d'enquête ou de recherche clinique.
+
+- **Analyse:**
+  La publication revendique un accès administrateur à une instance REDCap associée au domaine de l'université, marquée ultérieurement comme « Unlocked » dans une modification, mais ne fournit aucun échantillon de données visible, aucune preuve indépendamment vérifiable ni prix indiqué. Combiné au bannissement définitif ultérieur du compte pour suspicion d'arnaque, AFRINTEL traite cette publication comme une revendication non vérifiée à faible niveau de confiance. Si elle était authentique, un accès administrateur non autorisé à une instance REDCap pourrait exposer des données académiques, d'enquête ou de recherche liées à des étudiants, membres du personnel ou participants à des études ; ni l'accès ni un éventuel jeu de données sous-jacent ne sont confirmés.
+
+---------------------------- | Access Sale | Claim - Unverified | Level 3 | Low |
+| Angola | Banco Nacional de Angola (BNA)
+- **Date de l'incident:** 6 Janvier 2024
+- **Date de publication initiale / source retenue:** 17 janvier 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date exacte de l'attaque confirmée par les sources de l'audit.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Finance / Banking
+- **Site web:** [bna.ao](https://www.bna.ao/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 2
+- **Analyse:** La BNA a déclaré avoir subi une cyberattaque le 6 janvier 2024. L'incident a été contenu sans impact significatif annoncé sur l'infrastructure ou les données ; les accès aux infrastructures technologiques ont été contrôlés pendant la réponse. Les sources disponibles ne permettent pas d'établir un ransomware, un DDoS, une fuite de données ou une vente d'accès. AFRINTEL retient donc `System Intrusion` sans extrapoler le mécanisme d'accès.
+- **Sources publiques:** [Recorded Future News](https://therecord.media/angola-national-bank-cyberattack-mitigated) | [VerAngola](https://www.verangola.net/va/en/012024/BankingInsurance/38523/National-Bank-of-Angola-targeted-by-computer-attack.htm) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+---------------------------- | System Intrusion | Victim Confirmed | Level 2 | Very High |
+| South Africa | TiAuto Investments
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Retail / E-commerce
+- **Site web:** [tiautoinvestments.co.za](https://www.tiautoinvestments.co.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 2
+- **Description victime:** TiAuto Investments est un groupe de premier plan en Afrique du Sud spécialisé dans le commerce de gros et de détail de jantes, de pneus et de produits automobiles. Fondé en 2006 et basé à Midrand, il détient des marques phares du continent telles que Tiger Wheel & Tyre et Tyres & More.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 2 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+January 2024 contains **7 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

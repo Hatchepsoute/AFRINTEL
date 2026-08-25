@@ -16,27 +16,26 @@ Sur le plan sectoriel, les catégories les plus représentées sont **Éducation
 
 La maturité des preuves reste variable : **17 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à décembre 2024 corrigé, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent Ransomware 11->16 (+5), Defacement 1->0 (-1).
+Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel **augmente de 3 fiches, passant de 16 à 19 (+18,8 %)**. Le Ransomware progresse de 11 à 16 (+5), tandis que Data Leak passe de 3 à 2, Access Sale de 1 à 0 et Defacement de 1 à 0. Account Takeover apparaît avec 1 fiche en janvier.
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
 ### 1.1 Comparaison avec le mois précédent
 
-| Indicateur | Décembre 2024 corrigé | Janvier 2025 | Évolution |
+| Indicateur | Décembre 2024 final corrigé | Janvier 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 14 | 19 | **+5 (+35,7 %)** |
+| Total incidents | 16 | 19 | **+3 (+18,8 %)** |
 | Ransomware | 11 | 16 | **+5 (+45,5 %)** |
-| Data Leak | 2 | 2 | **Stable** |
-| Access Sale | 0 | 0 | **Stable** |
+| Data Leak | 3 | 2 | **-1 (-33,3 %)** |
+| Access Sale | 1 | 0 | **-1 (-100,0 %)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100,0 %)** |
-| Account Takeover | N/A | 1 | **N/A** |
-| System Intrusion | N/A | 0 | **N/A** |
-| Malware | N/A | 0 | **N/A** |
+| Account Takeover | 0 | 1 | **+1 (nouveau)** |
+| System Intrusion | 0 | 0 | **Stable** |
+| Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
 
- > **Limite de comparaison :** Account Takeover, System Intrusion et Malware sont `N/A` pour décembre 2024 car le corpus 2024 n'a pas encore été rétro-classifié intégralement selon la classification actuelle.
-
+> **Base de comparaison :** décembre 2024 utilise la baseline AFRINTEL finale après contrôle chronologique, reclassement et intégration des cas 2024 validés. Les neuf types d'incident sont donc directement comparables avec janvier 2025.
 
 ## 2. Méthodologie
 

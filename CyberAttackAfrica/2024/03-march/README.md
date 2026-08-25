@@ -1,181 +1,328 @@
-# AFRINTEL CTI Report - March 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - March 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL documents **9 incident records** in March 2024: **7 Ransomware** and **2 Data Leak**, across **6 African countries**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the validated March corpus.
+In March 2024, AFRINTEL retains **9 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (8, 88.9%)** followed by **Data Leak (1, 11.1%)**. Leading countries are **Egypt (3)**, **South Africa (2)**, **Tunisia (1)**. Leading sectors are **Government / Administration (2)**, **Finance / Banking (2)**, **Media / Entertainment (1)**. Most frequent actor/group labels are `lockbit3` (4), `ransomhub` (2), `Unknown` (2). `Unknown` means missing attribution, not an actor.
 
-Egypt ranks first with three incidents, followed by South Africa with two. `lockbit3` appears four times and `ransomhub` twice. This measures publication visibility, not a coordinated campaign.
-
-The two Data Leak records concern ESGC in Morocco and a ThreatSec publication targeting Ethiopia's federal eTrade and eRIS portals. In the Ethiopian case, review of the provided five-page PDF supports the sample's structural plausibility but does not confirm provenance from the portals or the existence of all 43 claimed files.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | February 2024 | March 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 12 | **9** | **-3 (-25.0%)** |
-| Ransomware | 7 | **7** | **0 (stable)** |
-| Data Leak | 5 | **2** | **-3 (-60.0%)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 8 | 9 | +1 (+12.5%) |
+| Ransomware | 6 | 8 | +2 (+33.3%) |
+| Data Leak | 1 | 1 | Stable |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 1 | 0 | -1 (-100.0%) |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-The corrected February baseline changes the month-over-month interpretation. March is **25.0% lower in total volume**, but the number of Ransomware records remains unchanged at 7. The decline comes entirely from Data Leak, which falls from 5 to 2.
+### 1.2 Comparative analysis
+
+Monthly volume **increases by 1 incident(s)**. Structural changes are: Ransomware 6->8 (+2), System Intrusion 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-31 March 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective correction registry:** none of the 10 identified missing 2024 incidents belongs to March, so no additional incident is injected into this month.
-- The Ethiopia entry is assigned to March 1 according to the maintained AFRINTEL chronology, while its source publication is dated August 24, 2023.
-- Technical behavior is not treated as observed solely because it is commonly associated with a named actor.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **7** | **77.8%** |
-| Data Leak | **2** | **22.2%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 8 | 88.9% |
+| Data Leak | 1 | 11.1% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **9** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - March 2024
-    "Ransomware" : 7
-    "Data Leak" : 2
+    "Ransomware" : 8
+    "Data Leak" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇪🇬 Egypt | 3 | 0 | **3** |
-| 🇿🇦 South Africa | 2 | 0 | **2** |
-| 🇪🇹 Ethiopia | 0 | 1 | 1 |
-| 🇲🇦 Morocco | 0 | 1 | 1 |
-| 🇳🇦 Namibia | 1 | 0 | 1 |
-| 🇹🇳 Tunisia | 1 | 0 | 1 |
-| **Total** | **7** | **2** | **9** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Egypt | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| South Africa | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cabo Verde | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| North Africa | 4 | 1 | **5** |
-| Southern Africa | 3 | 0 | **3** |
-| East Africa | 0 | 1 | **1** |
-| West Africa | 0 | 0 | 0 |
-| Central Africa | 0 | 0 | 0 |
-| **Total** | **7** | **2** | **9** |
-
-### 3.4 Harmonized sector distribution
-
-| Sector | Records |
-|---|---:|
-| Finance / Banking | 2 |
-| Government / Administration | 2 |
-| Media / Entertainment | 1 |
-| Healthcare / Medical | 1 |
-| Energy / Utilities | 1 |
-| Education / University | 1 |
-| Manufacturing / Industry | 1 |
-| **Total** | **9** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| lockbit3 | **4** |
-| ransomhub | **2** |
-| ThreatSec | 1 |
-| hunters | 1 |
-| Unknown | 1 |
-| **Total** | **9** |
-
-```mermaid
-flowchart LR
-    LB["lockbit3 - 4"] --> ZA1["South Africa - GPW"]
-    LB --> EG1["Egypt - El Ezaby Pharmacy"]
-    LB --> NA["Namibia - Agribank"]
-    LB --> ZA2["South Africa - Nampak"]
-    RH["ransomhub - 2"] --> EG2["Egypt - Go4Kora"]
-    RH --> EG3["Egypt - PGESCo"]
-    TH["ThreatSec"] --> ET["Ethiopia - eTrade/eRIS"]
-    HU["hunters"] --> TN["Tunisia - ATL Leasing"]
-    UNK["Unknown"] --> MA["Morocco - ESGC"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 7 records
-
-The seven Ransomware records cover government, finance, healthcare, manufacturing, energy and media environments.
-
-Government Printing Works and PGESCo have particular operational relevance, but the source corpus does not independently establish disruption, encryption or an exfiltrated volume for those claims.
-
-### 4.2 Data Leak - 2 records
-
-The ESGC publication references a 2021 database and approximately 500 entries. A sample was visible, but the complete dataset and alleged compromise were not independently verified.
-
-The ThreatSec publication concerning Ethiopia claims collection of 43 files from eTrade and eRIS. The locally reviewed PDF contains five scanned pages of an Amharic-language administrative and contractual document with stamps, signatures and financial amounts. This supports documentary plausibility, but not direct provenance from the portals, the existence of the other 42 files or the acquisition method.
-
-## 5. Key findings and intelligence gaps
-
-- Ransomware accounts for **7 of 9 records (77.8%)**.
-- `lockbit3` is associated with **4 of 9 records**.
-- Compared with corrected February, Ransomware volume is stable while Data Leak drops by **60.0%**.
-- The two Data Leak records provide samples, but neither establishes the full advertised scope.
-- No public DFIR evidence in the reviewed corpus confirms a common ransomware intrusion chain.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
+| Region | Records | Share |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Relevant to Ransomware risk; encryption not publicly observed for the March claims. |
-| Preventive | T1490 - Inhibit System Recovery | Backup-integrity control; behavior not observed in the corpus. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to structured repository/database exposure in Data Leak cases. |
-| Preventive | T1567 - Exfiltration Over Web Service | Outbound-data monitoring context; acquisition and exfiltration channels remain unknown. |
+| North Africa | 5 | 55.6% |
+| Southern Africa | 3 | 33.3% |
+| West Africa | 1 | 11.1% |
 
-## 7. Recommendations
+## 6. Sector distribution
 
-- Finance and public-sector organizations should strengthen privileged-access controls and crisis procedures.
-- Healthcare and energy organizations should segment critical systems and test degraded operating modes.
-- Education organizations should reset affected accounts if exposure is confirmed and monitor credential reuse.
-- All organizations should test restoration from isolated backups.
-- Preserve source-publication dates separately from AFRINTEL assignment dates.
+| Sector | Records | Share |
+|---|---|---|
+| Government / Administration | 2 | 22.2% |
+| Finance / Banking | 2 | 22.2% |
+| Media / Entertainment | 1 | 11.1% |
+| Healthcare / Medical | 1 | 11.1% |
+| Energy / Utilities | 1 | 11.1% |
+| Education / University | 1 | 11.1% |
+| Manufacturing / Industry | 1 | 11.1% |
 
-## 8. Timeline
+## 7. Actors / groups
+
+| Actor / Group | Records | Share |
+|---|---|---|
+| lockbit3 | 4 | 44.4% |
+| ransomhub | 2 | 22.2% |
+| Unknown | 2 | 22.2% |
+| hunters | 1 | 11.1% |
+
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 7 | 77.8% |
+| Confirmed | 1 | 11.1% |
+| Claim - Data Sample Published | 1 | 11.1% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 7 | 77.8% |
+| Very High | 1 | 11.1% |
+| Medium | 1 | 11.1% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - March 2024
-    01 March : ThreatSec - Ethiopia eTrade/eRIS
-    09 March : ransomhub - Go4Kora
-    11 March : lockbit3 - Government Printing Works
-    15 March : hunters - ATL Leasing
-             : lockbit3 - El Ezaby Pharmacy
-    16 March : lockbit3 - Agribank Namibia
-    22 March : ransomhub - PGESCo
-    26 March : Unknown - ESGC
-    27 March : lockbit3 - Nampak
+    9 Mars 2024 : Go4Kora
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Media / Entertainment
+- **Site web -** [go4kora.tv](https -//go4kora.tv)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Go4Kora est un portail d'actualités sportives et de streaming en direct largement suivi en Égypte et dans la région MENA pour la diffusion du football.
+
+----------------------------
+    11 Mars 2024 : Government Printing Works (GPW)
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Government / Administration
+- **Site web -** [gpw.gov.za](https -//www.gpw.gov.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Le Government Printing Works d'Afrique du Sud est une entité publique sous la tutelle du ministère de l'Intérieur, chargée de la production des documents d'identité sécurisés, des passeports et des bulletins officiels.
+
+----------------------------
+    15 Mars 2024 : ATL Leasing
+- **Acteur / Groupe -** hunters
+- **Secteur -** Finance / Banking
+- **Site web -** [atlleasing.com.tn](https -//www.atlleasing.com.tn)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Arab Tunisian Leasing (ATL) est une institution financière de premier plan cotée à la Bourse de Tunis, spécialisée dans le financement par crédit-bail d'équipements professionnels et immobiliers.
+
+----------------------------
+    15 Mars 2024 : El Ezaby Pharmacy
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Healthcare / Medical
+- **Site web -** [elezabypharmacy.com](https -//www.elezabypharmacy.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Pharmacies El Ezaby représente l'un des plus grands réseaux de distribution pharmaceutique en Égypte, exploitant de nombreuses officines et une logistique de livraison nationale.
+
+----------------------------
+    15 Mars 2024 - date rapportée : Assembleia Nacional de Cabo Verde
+- **Date de l'incident -** 15 Mars 2024 - date rapportée
+- **Date de publication initiale / source retenue -** 22 mars 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Début rapporté le vendredi 15 mars ; la publication de référence est du 22 mars.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [parlamento.cv](https -//www.parlamento.cv/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Analyse -** Le responsable de la communication et de la sécurité de l'information du Parlement a confirmé un ransomware ayant chiffré plusieurs serveurs dans un segment du réseau. Le fonctionnement parlementaire a été perturbé et certains serveurs ont dû être récupérés. Les sources examinées ne suffisent pas à établir une exfiltration de données ; elle n'est donc pas déduite.
+- **Sources publiques -** [RTC Cabo Verde](https -//www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+    16 Mars 2024 : Agribank Namibia
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Finance / Banking
+- **Site web -** [agribank.com.na](https -//www.agribank.com.na)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** L'Agricultural Bank of Namibia est une institution bancaire étatique spécialisée dans le financement de l'expansion agricole, de l'aquaculture et de l'acquisition de terres rurales.
+
+----------------------------
+    22 Mars 2024 : PGESCo
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Energy / Utilities
+- **Site web -** [pgesco.com](https -//www.pgesco.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** La Power Generation Engineering and Services Company (PGESCo) est une firme d'ingénierie égyptienne majeure fournissant des services de conseil et de gestion de projet pour les centrales électriques et les infrastructures pétrolières.
+
+----------------------------
+    26 Mars 2024 : Higher School of Commerce and Management (ESGC.MA)
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Education / University
+- **Site web -** [esgc.ma](https -//esgc.ma)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+- **Description victime -** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.
+
+- **Analyse -** La publication de forum du 26 mars 2024 affirme qu'une base de 2021 contenait environ 500 entrées avec des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Un échantillon était affiché, mais le jeu de données complet et la compromission alléguée n'ont pas été vérifiés indépendamment. Les données personnelles et identifiants de l'échantillon ne sont pas reproduits ici.
+
+----------------------------
+    27 Mars 2024 : Nampak
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [nampak.com](https -//www.nampak.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Nampak est le plus grand fabricant d'emballages du continent africain, basé en Afrique du Sud, fournissant des solutions de conditionnement en métal, plastique, papier et verre.
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-March 2024 contains **9 documented incident records across 6 African countries**, comprising **7 Ransomware and 2 Data Leak**.
+### Ransomware - 8
 
-Compared with corrected February, total volume decreases by **25.0%**. Ransomware remains stable at 7 records, while Data Leak falls from 5 to 2.
+**8 record(s) (88.9%).** Leading countries: Egypt (3), South Africa (2), Tunisia (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### Data Leak - 1
+
+**1 record(s) (11.1%).** Leading countries: Morocco (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Cabo Verde | Assembleia Nacional de Cabo Verde
+- **Date de l'incident:** 15 Mars 2024 - date rapportée
+- **Date de publication initiale / source retenue:** 22 mars 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Début rapporté le vendredi 15 mars ; la publication de référence est du 22 mars.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [parlamento.cv](https://www.parlamento.cv/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** Le responsable de la communication et de la sécurité de l'information du Parlement a confirmé un ransomware ayant chiffré plusieurs serveurs dans un segment du réseau. Le fonctionnement parlementaire a été perturbé et certains serveurs ont dû être récupérés. Les sources examinées ne suffisent pas à établir une exfiltration de données ; elle n'est donc pas déduite.
+- **Sources publiques:** [RTC Cabo Verde](https://www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+---------------------------- | Ransomware | Victim Confirmed | Level 4 | Very High |
+| Morocco | Higher School of Commerce and Management (ESGC.MA)
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Education / University
+- **Site web:** [esgc.ma](https://esgc.ma)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+- **Description victime:** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.
+
+- **Analyse:** La publication de forum du 26 mars 2024 affirme qu'une base de 2021 contenait environ 500 entrées avec des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Un échantillon était affiché, mais le jeu de données complet et la compromission alléguée n'ont pas été vérifiés indépendamment. Les données personnelles et identifiants de l'échantillon ne sont pas reproduits ici.
+
+---------------------------- | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| South Africa | Government Printing Works (GPW)
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Government / Administration
+- **Site web:** [gpw.gov.za](https://www.gpw.gov.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Le Government Printing Works d'Afrique du Sud est une entité publique sous la tutelle du ministère de l'Intérieur, chargée de la production des documents d'identité sécurisés, des passeports et des bulletins officiels.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Tunisia | ATL Leasing
+- **Acteur / Groupe:** hunters
+- **Secteur:** Finance / Banking
+- **Site web:** [atlleasing.com.tn](https://www.atlleasing.com.tn)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Arab Tunisian Leasing (ATL) est une institution financière de premier plan cotée à la Bourse de Tunis, spécialisée dans le financement par crédit-bail d'équipements professionnels et immobiliers.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Egypt | El Ezaby Pharmacy
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Healthcare / Medical
+- **Site web:** [elezabypharmacy.com](https://www.elezabypharmacy.com)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Pharmacies El Ezaby représente l'un des plus grands réseaux de distribution pharmaceutique en Égypte, exploitant de nombreuses officines et une logistique de livraison nationale.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+March 2024 contains **9 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

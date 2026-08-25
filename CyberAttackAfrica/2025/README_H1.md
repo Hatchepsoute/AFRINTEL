@@ -14,7 +14,7 @@ Geographic concentration is significant: **South Africa (23)**, **Egypt (17)**, 
 
 At sector level, **Government / Administration (27)**, **Finance / Banking (19)**, and **Technology / IT (12)** are most represented. The top two sectors account for **46 records, or 41.4%**.
 
-Activity varies across the semester: **Mai is the highest-volume month with 26 incidents**, while **Février records 10**.
+Activity varies across the semester: **May is the highest-volume month with 26 incidents**, while **February records 10**.
 
 Evidence maturity remains heterogeneous. AFRINTEL distinguishes unverified claims, sample-backed publications, claimed full publications, independent corroboration, and victim or authority confirmation. **A criminal claim, attribution, or advertised volume is not treated as confirmed without sufficient supporting evidence.**
 
@@ -36,23 +36,22 @@ Evidence maturity remains heterogeneous. AFRINTEL distinguishes unverified claim
 
 ## 3. Corrected H1 2024 vs H1 2025 comparison
 
-The corrected H1 2024 corpus contains **54 records**, compared with **111** in H1 2025.
+The final corrected H1 2024 corpus contains **45 canonical incidents**, compared with **111** in H1 2025. The 2024 baseline has undergone chronology review and reclassification under the **same nine incident types** used for 2025, so the categories below are directly comparable and valid zero values are no longer shown as `N/A`.
 
-| Indicator | Corrected 2024 | 2025 | Change |
+| Indicator | Final corrected 2024 | 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 54 | 111 | **+57 (+105.6%)** |
-| Ransomware | 35 | 58 | **+23 (+65.7%)** |
-| Data Leak | 17 | 39 | **+22 (+129.4%)** |
+| Total incidents | 45 | 111 | **+66 (+146.7%)** |
+| Ransomware | 34 | 58 | **+24 (+70.6%)** |
+| Data Leak | 4 | 39 | **+35 (+875.0%)** |
 | Access Sale | 1 | 3 | **+2 (+200.0%)** |
-| DDoS | 0 | 1 | **+1 (new)** |
-| Defacement | 0 | 2 | **+2 (new)** |
+| DDoS | 2 | 1 | **-1 (-50.0%)** |
+| Defacement | 0 | 2 | **+2 (newly observed)** |
+| Account Takeover | 0 | 6 | **+6 (newly observed)** |
+| System Intrusion | 3 | 2 | **-1 (-33.3%)** |
+| Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 1 | 0 | **-1 (-100.0%)** |
-| Account Takeover | N/A | 6 | **N/A** |
-| System Intrusion | N/A | 2 | **N/A** |
-| Malware | N/A | 0 | **N/A** |
 
-`Account Takeover`, `System Intrusion`, and `Malware` remain `N/A` for 2024 until the 2024 corpus is fully retro-classified under the current taxonomy.
-
+The documented H1 corpus increases from **45 to 111 incidents**, an increase of **66 (+146.7%)**. The largest absolute differences are Data Leak (**+35**) and Ransomware (**+24**). These figures describe the evolution of the AFRINTEL observable corpus and should not be interpreted as an equivalent increase in successful real-world compromises.
 
 ## 4. Monthly evolution
 
@@ -79,7 +78,7 @@ The corrected H1 2024 corpus contains **54 records**, compared with **111** in H
 
 ```mermaid
 timeline
-    title Monthly activity - S1 2025
+    title Monthly activity - H1 2025
     January : 19
     February : 10
     March : 15
@@ -242,7 +241,7 @@ The semester contains **3 Access Sale records**. Main distribution: Burkina Faso
 
 ### DDoS - 1
 
-The semester documents **1 DDoS campaign(s)**. Distribution: Morocco (1). Counts refer to documented campaigns, not necessarily every individual targeted domain.
+The semester documents **1 DDoS campaign**. Distribution: Morocco (1). Counts refer to documented campaigns, not necessarily every individual targeted domain.
 
 ### Defacement - 2
 
@@ -255,6 +254,10 @@ The semester documents **6 Account Takeover records**. Distribution: Kenya (3), 
 ### System Intrusion - 2
 
 The semester contains **2 System Intrusion records**. Distribution: South Africa (1), Nigeria (1). It is used when system access or attempted access is established without enough evidence for a more specific category.
+
+### Malware - 0
+
+No incident is classified as `Malware` during this semester. This zero value reflects the canonical AFRINTEL corpus for H1 2025 and does not imply an absence of malware activity across Africa.
 
 ### Operational Fraud - 0
 

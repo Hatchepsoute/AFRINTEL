@@ -1,20 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware-red)
+# Cyberincidents AFRINTEL - Juin 2024 - corpus canonique (3 fiches)
 
-# Cyberattaques en Afrique - Juin 2024 : Liste de 3 victimes
-👉🏾 [**English version available here**](./victims.md)
+👉🏾 [English version](./victims.md)
 
-## 📅 Juin 2024
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Synthèse mensuelle
-
-Juin 2024 contient **3 fiches incident documentées** : **3 Ransomware**, **0 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **2 pays africains**.
 
 ### 4 Juin 2024
 
 #### 🇿🇦 Afrique du Sud - Botselo
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [botselo.com](https://www.botselo.com)
 - **Statut:** Claim - Unverified
@@ -40,7 +34,7 @@ Juin 2024 contient **3 fiches incident documentées** : **3 Ransomware**, **0 Da
 ### 6 Juin 2024
 
 #### 🇨🇬 Congo - Burotec.biz
-- **Groupe ransomware:** eldorado
+- **Acteur / Groupe:** eldorado
 - **Secteur:** Professional / Business Services
 - **Site web:** [burotec.biz](https://www.burotec.biz)
 - **Statut:** Claim - Unverified
@@ -66,7 +60,7 @@ Juin 2024 contient **3 fiches incident documentées** : **3 Ransomware**, **0 Da
 ### 23 Juin 2024
 
 #### 🇿🇦 Afrique du Sud - Glyn Marais
-- **Groupe ransomware:** cactus
+- **Acteur / Groupe:** cactus
 - **Secteur:** Legal / Justice
 - **Site web:** [glynmarais.co.za](https://www.glynmarais.co.za)
 - **Statut:** Claim - Unverified

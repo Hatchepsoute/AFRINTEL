@@ -35,6 +35,47 @@
 
   The available material does not independently confirm the alleged intrusion, the track record of the "NullSec Nigeria" persona, the authenticity of the linked files, or any connection between this claim and SARB's actual infrastructure. Given the claimed data categories and SARB's role as South Africa's central bank and a systemically important financial institution, a confirmed compromise would carry a high potential impact; at this stage, however, the claim rests on unverified forum assertions and unvalidated download links. The download links and other technical indicators from the post are not reproduced.
 
+
+#### 🇪🇬 Egypt - Egyptian Football Association (EFA)
+
+* **Initial publication date:** 26 July 2026 at 18:20 (timezone not shown)
+
+* **AFRINTEL detection date:** 01 August 2026
+
+* **Actor / Group:** Revesky, post published on a cybercriminal forum
+
+* **Sector:** Sports / Federations
+
+* **Website:** [efa.com.eg](https://www.efa.com.eg)
+
+* **Status:** Claim - Data Sample Published
+
+* **Incident type:** Data Leak
+
+* **Confidence level:** High
+
+* **Impact level:** Level 4
+
+* **Description:**
+  The Egyptian Football Association (EFA) is Egypt's national governing body responsible for the administration and organisation of football. It is affiliated with FIFA and the Confederation of African Football (CAF).
+
+* **Analysis:**
+  **Observed:** On 26 July 2026, the actor using the alias Revesky published a post claiming to have released "all the databases" belonging to the Egyptian Football Association. The publication claims a total dataset of approximately **9.6 GB** concerning around **350,000 players**.
+
+  A collection of documents representing approximately **1.3 GB** was effectively disclosed by the actor. The reviewed material includes structured databases as well as administrative documents associated with players.
+
+  AFRINTEL examined three CSV files originating from the available material. `data.csv` and `simple_famous_player.csv` contain the same set of **82 records across 31 columns**, while `simple_normal_player.csv` contains **802 records across 45 columns**. After removing the duplicated 82-record extract, the reviewed data therefore represents **884 rows from two distinct data extracts**.
+
+  Observed fields include player identity information, national identification numbers, dates and places of birth, nationality, family information, teams, transfers, contracts, sporting seasons and various administrative information. Within the 802-record extract, **798 records contain a 14-digit numeric national identification number**.
+
+  The documentary sample also contains several categories of files directly associated with EFA administrative processes, including EFA-branded player registration forms, copies of identification documents, birth certificates, professional player contracts, insurance certificates and educational documents. Some forms also contain photographs, signatures and fingerprint marks. These elements corroborate several of the data categories announced by Revesky.
+  **Assumption:** The consistency between the structured databases, administrative documents and EFA branding supports a **high-confidence** assessment that the reviewed material originates from data associated with the federation. This assessment concerns the structural authenticity and attribution of the samples; it does not confirm how Revesky obtained them.
+
+  **Unknown:** AFRINTEL has not validated the entire claimed **9.6 GB** volume or the figure of approximately **350,000 players**. The corpus effectively identified represents approximately **1.3 GB**, which is insufficient to confirm that all of the databases claimed by the actor were actually made public. The presence of military forms within the complete dataset was also not verified in the reviewed documents. The initial-access vector, extraction method, compromise timeline and any official confirmation by the EFA remain unknown.
+
+  The observed information includes identity data, official documents, contractual information and records that may concern young players or minors, creating a significant risk of document fraud, identity theft, targeted phishing, social engineering and misuse of personal information. AFRINTEL does not reproduce any identity, national identification number, address, signature, photograph or other personal data contained in the reviewed material.
+
+
 ### 05 August 2026
 #### 🇩🇿 Algeria - Ministry of Commerce
 
@@ -292,11 +333,77 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 
   **Unknown:** AFRINTEL did not receive the advertised Customer Contacts or Support Tickets tables, nor the approximately 642,000-contact archive. Sample links were not followed; no phone number, name, address, customer identifier or ticket is reproduced; and no Afribaba confirmation is available. The supplied file cannot confirm the claimed volume, technical origin, data validity, access method, exposure of phone numbers or asking price.
 
-## Notes (not counted in the monthly victim total)
+### August 22, 2026
+#### 🇲🇦 Morocco - RAMED (Régime d’Assistance Médicale)
 
-### 17 August 2026
-#### 🇰🇪 Kenya - Kenya Electricity Transmission Company (KETRACO), repost of a previously documented incident
+- **Actor / Group:** JBT2026
+- **Sector:** Government / Administration
+- **Status:** Claim - Data Sample Published
+- **Website:** Not specified in the provided material
 
-- **Reference:** originally documented as a distinct incident on 31 December 2025, see `CyberAttackAfrica/2025/12-december/victims.md`.
-- **Observation:** The same leaked sample (identical fields, same organisational-unit path "nl_KETRACO_Newsletter_Unit", and the same shared password-value anomaly across records) was observed republished on the DarkForums forum under the alias Linda2000, approximately eight months after the original RaidForums post attributed to LindaBF.
-- **Assessment:** this is assessed as a repost of the same underlying dataset rather than a new compromise, and is not counted as an additional August 2026 incident. It indicates the data continues to circulate and may still be traded among threat actors. No username, email address, password value, download link or record from the sample is reproduced.
+- **Description:**
+  RAMED, the Medical Assistance Scheme, is Morocco's former public program designed to facilitate access to healthcare for low-income and vulnerable populations. The observed publication concerns a database presented as being associated with beneficiaries of this scheme.
+
+- **Analysis:**
+  On August 22, 2026, actor JBT2026 published on an underground forum data presented as originating from the RAMED system. The actor claims to possess more than **17 million entries** and states that approximately **1 million entries** have been released, with the stated intention of publishing the entire database later.
+
+  Analysis of the main provided file identified **1,098,685 records** across **17 columns**, with a size of approximately **183.1 MB**. The data includes administrative identifiers, first and last names in Latin and Arabic characters, sex, dates of birth, CIN national identity numbers when available, and geographic and administrative information.
+
+  Additional material strengthens the consistency of the publication. Four supplementary CSV files contain **10 records**, all of which were found identically in the main dataset. Seven passport-style portrait photographs were also provided; each corresponds, through its filename, to an individual present in the structured data.
+
+  These elements now establish the presence of **identification photographs associated with some records in the analyzed sample**. They strengthen the consistency of the actor's claim regarding the existence of photographs, but do not establish that all of the more than 17 million claimed records include an image.
+
+  Of the **1,098,685 records**, **666,103** contain a value in the CIN field, while **432,582**, approximately **39.4%**, do not. Full-format dates of birth are available for **842,259 records**, while **256,426** contain partial values.
+
+  The combination of structured identity data, CIN numbers and identification photographs significantly increases the potential risk of **identity theft, document fraud, targeted phishing and correlation with other compromised datasets**.
+
+  The structure of the data, its bilingual content, Moroccan administrative references and the correspondence between some records and the photographs strengthen the consistency of the sample with data concerning beneficiaries in Morocco.
+
+  **Evidence limitations:** the analyzed material does not confirm the exact originating technical system, initial access vector, extraction method, actual possession of the more than 17 million claimed entries, or any official confirmation of the incident by a Moroccan institution. The presence of photographs is established only for the provided material and must not be extrapolated to the entire claimed database.
+---
+### August 24, 2026
+
+#### 🇲🇦 Morocco - General Directorate of National Security (DGSN) / General Directorate for Territorial Surveillance (DGST)
+
+* **Initial publication date:** August 24, 2026
+
+* **AFRINTEL detection date:** August 24, 2026
+
+* **Actor / Group:** JabaR00t, publication relayed by the JBT2026 account on a cybercriminal forum
+
+* **Sector:** Government / Administration / Security and Intelligence
+
+* **Website:** [dgsn.gov.ma](https://dgsn.gov.ma) / `dgst.gov.ma` (domain associated with the DGST, public institutional portal not confirmed)
+
+* **AFRINTEL status:** Data Fully Published
+
+* **Incident type:** Data Leak
+
+* **Confidence level:** High
+
+* **Impact level:** Level 4
+
+* **Description:**
+
+  The General Directorate of National Security (DGSN) is Morocco's national police force. The General Directorate for Territorial Surveillance (DGST) is the Moroccan service responsible for domestic intelligence and territorial security. Both institutions have strategic roles within Morocco's national security apparatus.
+
+* **Analysis:**
+
+  **Observed:** On August 24, 2026, a publication relayed by the JBT2026 account and attributed to JabaR00t presented, under the `#OP_CEUTA` label, a database described as containing approximately **70,000 personnel associated with the DGSN and DGST**. The actor presents this database as having been fully published while also claiming that the released data represents only part of a larger dataset allegedly exfiltrated.
+
+  Analysis of the provided files identifies **70,381 records** in the main dataset. The observed data includes identity information, PPR numbers, CIN/CNI national identity numbers, dates of birth and recruitment years.
+
+  Three additional files contain respectively **8,789**, **1,456** and **21 records**. They include information relating to ranks and RIB bank account details. Several overlaps exist between these datasets; their volumes should therefore not be added to the 70,381 records in the main dataset as if they represented independent populations.
+
+  The correspondence between the **70,381 records** actually observed and the public claim of a database containing approximately 70,000 individuals is an important consistency indicator. The different files also show mutually compatible structures and administrative data consistent with the Moroccan context.
+
+  **Assumption:** The structural consistency of the corpus, the administrative information observed and the overlaps between several files support a **High confidence** assessment that the published data is associated with personnel within the DGSN/DGST ecosystem. This assessment concerns the attribution and consistency of the examined data; it does not confirm the method used by JabaR00t to obtain it.
+
+  The `Data Fully Published` status applies to the database of approximately 70,000 records that the actor presents as having been released in full. It does not mean that all other data JabaR00t claims to have exfiltrated has been made public or verified.
+
+  The combination of identity information, administrative identifiers, professional information, ranks and banking details represents a **critical impact level**. It may facilitate identity theft, financial fraud, spear-phishing, targeted social engineering and personnel mapping. In the context of police and intelligence organizations, the exposure also creates operational security, personnel profiling and counterintelligence concerns.
+
+  **Unknown:** The available evidence does not establish the initial access vector, the affected source systems, the extraction method, the exact date on which the data was acquired or the overall scope of the information the actor claims to have obtained. The analyzed files alone also do not establish that each of the 70,381 records represents an active intelligence officer, nor do they determine the exact distribution of records between the DGSN and DGST.
+
+  No independent public confirmation from the DGSN or DGST regarding the entirety of the claimed compromise is established by the analyzed material. AFRINTEL does not reproduce any names, PPR numbers, CIN/CNI numbers, RIB bank details, dates of birth or other personal data contained in the examined files.
+

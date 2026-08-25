@@ -1,193 +1,341 @@
-# AFRINTEL CTI Report - February 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - February 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL now documents **12 incident records** in February 2024: **7 Ransomware** and **5 Data Leak**, across **7 African countries**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the corrected February corpus.
+In February 2024, AFRINTEL retains **8 canonical cyber incidents across 5 countries**. The month is led by **Ransomware (6, 75.0%)** followed by **Data Leak (1, 12.5%)**. Leading countries are **South Africa (4)**, **Egypt (1)**, **Tunisia (1)**. Leading sectors are **Government / Administration (3)**, **Manufacturing / Industry (2)**, **Technology / IT (1)**. Most frequent actor/group labels are `lockbit3` (3), `Unknown` (2), `medusa` (1). `Unknown` means missing attribution, not an actor.
 
-This retrospective update adds three previously missing records: **GPAA/GEPF**, **CIPC** and the **Malawi passport-issuance system**. GPAA/GEPF is a victim-confirmed ransomware and personal-data compromise. CIPC is recorded primarily as Data Leak with extortion and defacement as secondary effects. Malawi is mapped provisionally to Ransomware because the government reported a cybersecurity breach and ransom demand, while the exact technical root cause remains contested.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | January 2024 | February 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 14 | **12** | **-2 (-14.3%)** |
-| Ransomware | 5 | **7** | **+2 (+40.0%)** |
-| Data Leak | 8 | **5** | **-3 (-37.5%)** |
-| Access Sale | 1 | **0** | **-1 (-100.0%)** |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 7 | 8 | +1 (+14.3%) |
+| Ransomware | 4 | 6 | +2 (+50.0%) |
+| Data Leak | 0 | 1 | +1 (new) |
+| Access Sale | 1 | 0 | -1 (-100.0%) |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 2 | 1 | -1 (-50.0%) |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-The corrected comparison is materially different from the earlier 12-to-9 comparison. February remains lower in total volume than January, but only by **14.3%**, while Ransomware increases from 5 to 7.
+### 1.2 Comparative analysis
+
+Monthly volume **increases by 1 incident(s)**. Structural changes are: Ransomware 4->6 (+2), Data Leak 0->1 (+1), System Intrusion 2->1 (-1), Access Sale 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-29 February 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective corrections:** incidents identified during the 23 August 2026 historical audit are assigned to their real 2024 incident month and retain a separate AFRINTEL correction date.
-- **GPAA/GEPF:** primary type Ransomware; confirmed personal-data compromise remains an effect of the same incident, not a second incident.
-- **CIPC:** primary type Data Leak; extortion and defacement are secondary effects.
-- **Malawi passport system:** provisional Ransomware mapping; breach and disruption are government-confirmed, while exact technical ransomware deployment remains contested.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **7** | **58.3%** |
-| Data Leak | **5** | **41.7%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 6 | 75.0% |
+| Data Leak | 1 | 12.5% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 1 | 12.5% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **12** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - February 2024
-    "Ransomware" : 7
-    "Data Leak" : 5
+    "Ransomware" : 6
+    "Data Leak" : 1
+    "System Intrusion" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 3 | 1 | **4** |
-| 🇪🇬 Egypt | 1 | 1 | 2 |
-| 🇨🇮 Côte d'Ivoire | 1 | 1 | 2 |
-| 🇬🇭 Ghana | 0 | 1 | 1 |
-| 🇹🇳 Tunisia | 1 | 0 | 1 |
-| 🇪🇹 Ethiopia | 0 | 1 | 1 |
-| 🇲🇼 Malawi | 1 | 0 | 1 |
-| **Total** | **7** | **5** | **12** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| South Africa | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Egypt | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ivory Coast | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Malawi | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| Southern Africa | 4 | 1 | **5** |
-| North Africa | 2 | 1 | **3** |
-| West Africa | 1 | 2 | **3** |
-| East Africa | 0 | 1 | **1** |
-| Central Africa | 0 | 0 | **0** |
-| **Total** | **7** | **5** | **12** |
-
-### 3.4 Harmonized sector distribution
-
-| Sector | Records |
-|---|---:|
-| Government / Administration | **6** |
-| Technology / IT | 2 |
-| Manufacturing / Industry | 2 |
-| Healthcare / Medical | 1 |
-| Water / Utilities | 1 |
-| **Total** | **12** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| lockbit3 | **3** |
-| Tanaka | **3** |
-| Unknown | **3** |
-| medusa | 1 |
-| hunters | 1 |
-| ThreatSec | 1 |
-| dragonforce | 1 |
-
-> Actor totals can exceed the number of unique actor labels but not the incident count; `Unknown` represents unattributed records.
-
-```mermaid
-flowchart LR
-    LB["lockbit3 - 3"] --> ZA1["South Africa - Aurum Institute"]
-    LB --> CI["Côte d'Ivoire - NPGCI"]
-    LB --> ZA2["South Africa - GPAA/GEPF"]
-    TAN["Tanaka - 3"] --> EG["Egypt - 8WORX"]
-    TAN --> GH["Ghana - NTC"]
-    TAN --> CI2["Côte d'Ivoire - Agence Emploi Jeunes"]
-    UNK["Unknown - 3"] --> CIPC["South Africa - CIPC"]
-    UNK --> MW["Malawi - Passport System"]
-    UNK --> ENO["South Africa - CIPC/other unattributed context"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 7 records
-
-The corrected February corpus contains seven Ransomware records.
-
-The most significant retrospective addition is **GPAA/GEPF**, where the ransomware event and access to approximately **168,000 data-subject records** are victim-confirmed. The additional Malawi passport-system record carries an explicit qualification: the government confirmed a cybersecurity breach and ransom demand, but technical ransomware deployment remains contested.
-
-### 4.2 Data Leak - 5 records
-
-The corrected Data Leak corpus adds **CIPC** to the four previously documented cases. CIPC officially reported unauthorized access and exposure of personal information. Extortion threats and e-Services defacement are preserved as secondary effects instead of creating additional incident records.
-
-### 4.3 Evidence qualification
-
-The corrected February dataset deliberately separates:
-- victim-confirmed facts;
-- threat-actor attribution;
-- secondary effects;
-- provisional taxonomy mappings;
-- claimed volumes versus confirmed affected records.
-
-## 5. Key findings and intelligence gaps
-
-- February rises from the previously documented **9 records to 12** after retrospective correction.
-- South Africa becomes the most represented country with **4 records**.
-- Government / Administration becomes the dominant sector with **6 of 12 records**.
-- Ransomware represents **58.3%** of the corrected corpus.
-- GPAA/GEPF materially increases the month's confirmed impact through the approximately 168,000 affected data-subject records.
-- Malawi remains analytically sensitive because the disruption and government breach declaration are confirmed while the technical root cause remains disputed.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
+| Region | Records | Share |
 |---|---|---|
-| Observed / confirmed ransomware context | T1486 - Data Encrypted for Impact | Directly relevant to victim-confirmed ransomware cases such as GPAA/GEPF; not automatically extended to every claim. |
-| Contextual | T1005 - Data from Local System | Relevant to locally exposed files and structured data. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to database and administrative repository exposures. |
-| Preventive | T1567 - Exfiltration Over Web Service | Defensive monitoring context where an exfiltration channel is not publicly established. |
+| Southern Africa | 5 | 62.5% |
+| North Africa | 2 | 25.0% |
+| West Africa | 1 | 12.5% |
 
-## 7. Recommendations
+## 6. Sector distribution
 
-- Treat GPAA/GEPF confirmed impact separately from broader LockBit publication claims.
-- Keep CIPC as one multi-effect incident, not separate Data Leak and Defacement incidents.
-- Preserve the Malawi technical-dispute note and avoid upgrading the ransomware classification without primary technical evidence.
-- Prioritize public-sector privileged access, identity protection and database-export monitoring.
-- Maintain separate incident, publication and AFRINTEL correction dates for retrospective additions.
+| Sector | Records | Share |
+|---|---|---|
+| Government / Administration | 3 | 37.5% |
+| Manufacturing / Industry | 2 | 25.0% |
+| Technology / IT | 1 | 12.5% |
+| Healthcare / Medical | 1 | 12.5% |
+| Water / Utilities | 1 | 12.5% |
 
-## 8. Timeline
+## 7. Actors / groups
+
+| Actor / Group | Records | Share |
+|---|---|---|
+| lockbit3 | 3 | 37.5% |
+| Unknown | 2 | 25.0% |
+| medusa | 1 | 12.5% |
+| hunters | 1 | 12.5% |
+| dragonforce | 1 | 12.5% |
+
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 5 | 62.5% |
+| Confirmed | 3 | 37.5% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 5 | 62.5% |
+| Very High | 2 | 25.0% |
+| High | 1 | 12.5% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - February 2024
-    01 February : 8WORX
-    06 February : ArpuPlus
-    10 February : SOPEM Tunisie
-    13 February : The Aurum Institute
-    16 February : GPAA / GEPF
-    February : Malawi Passport System - exact date unresolved
-    23 February : CIPC
-    24 February : Ethiopia trade portals
-                : Ghana NTC
-                : Agence Emploi Jeunes
-    27 February : NPGCI
-    29 February : ERWAT
+    6 Février 2024 : ArpuPlus
+- **Acteur / Groupe -** medusa
+- **Secteur -** Technology / IT
+- **Site web -** [arpuplus.com](https -//www.arpuplus.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** ArpuPlus, fondée en 2003 au Caire en tant que filiale du groupe A15, est un constructeur de projets numériques (*venture builder*) et un fournisseur de services mobiles de premier plan dans la région MENA. Présente via 11 bureaux, elle fournit des plateformes de vidéo à la demande, de distribution musicale, de télésanté et de communication d'entreprise.
+
+----------------------------
+    10 Février 2024 : SOPEM Tunisie
+- **Acteur / Groupe -** hunters
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [sopem.com.tn](https -//www.sopem.com.tn)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** SOPEM Tunisie (Société Tunisienne de Profilage de Métaux) est une entreprise manufacturière spécialisée dans le profilage et la transformation industrielle des métaux. Basée en Tunisie, elle fournit des composants industriels et des structures métalliques pour les secteurs du bâtiment et de l'ingénierie.
+
+----------------------------
+    13 Février 2024 : The Aurum Institute
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Healthcare / Medical
+- **Site web -** [auruminstitute.org](https -//www.auruminstitute.org)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** The Aurum Institute est une organisation africaine d'utilité publique de premier plan fondée en 1998 et basée à Johannesburg. Axée sur la recherche médicale et la santé publique, l'organisation génère des données scientifiques et déploie des programmes sanitaires mondiaux d'envergure, notamment contre le VIH et la tuberculose.
+
+----------------------------
+    16 Février 2024 : Government Pensions Administration Agency (GPAA) / Government Employees Pension Fund (GEPF)
+- **Date de l'incident -** 16 février 2024
+- **Date de publication initiale -** 12 mars 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Government / Administration
+- **Site web -** [gepf.co.za](https -//www.gepf.co.za/)
+- **Statut -** Victim Confirmed + Threat Actor Claim
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Note de preuve -** L'événement ransomware et la compromission de données personnelles sont confirmés par la victime. Les affirmations de l'acteur sur l'exhaustivité ou une portée supplémentaire des données publiées restent séparées des faits confirmés.
+- **Description victime -** La GPAA administre les prestations de retraite pour le compte du GEPF, l'un des plus importants fonds de pension d'Afrique, au service des fonctionnaires, retraités et bénéficiaires.
+- **Analyse -** La GPAA a subi une cyberattaque le 16 février 2024. Le GEPF a ensuite confirmé que des criminels avaient lancé un ransomware contre les systèmes de la GPAA et qu'environ **168 000 dossiers de personnes** avaient été consultés. Les catégories de données confirmées incluent des informations d'identité, de pension, d'emploi, de salaire, d'état civil, bancaires et fiscales. LockBit a publié des données et revendiqué l'attaque. L'événement ransomware et la compromission de données sont confirmés par la victime ; AFRINTEL conserve l'impact confirmé de 168 000 dossiers séparément de toute revendication plus large de l'acteur.
+- **Sources publiques -** [Notification officielle GEPF](https -//www.gepf.co.za/notice/notification-of-security-compromise-as-per-section-22-of-the-protection-of-personal-information-act-4-of-2013-popia/2/) | [Communiqué GEPF](https -//www.gepf.co.za/government-pensions-administration-agency-gpaa-data-breach/)
+
+----------------------------
+    23 Février 2024 : Companies and Intellectual Property Commission (CIPC)
+- **Date de l'incident -** 23 février 2024
+- **Date de publication initiale -** 29 février 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [cipc.co.za](https -//www.cipc.co.za/)
+- **Statut -** Victim Confirmed - Multi-effect Incident
+- **Type d'incident -** Data Leak
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Note de taxonomie -** `Data Leak` est retenu comme type AFRINTEL principal car l'accès non autorisé à des informations personnelles et leur exposition sont étayés par des sources officielles. Le comportement d'extorsion et le défacement du site sont conservés comme effets secondaires ; le déploiement d'un malware ransomware n'est pas établi.
+- **Description victime -** La CIPC est l'autorité sud-africaine chargée des sociétés et de la propriété intellectuelle et conserve des dossiers relatifs aux entreprises, clients et employés.
+- **Analyse -** Les rapports officiels de la CIPC indiquent qu'une violation de données a été détectée le 23 février 2024 et impliquait un accès non autorisé à ses systèmes. Des informations personnelles de clients et d'employés ont été illégalement consultées et exposées. Le rapport annuel de la CIPC précise également que les intrus ont menacé de chiffrer et de publier les données contre rançon, défiguré le site e-Services et envoyé des courriels malveillants à des employés. Les systèmes ont été isolés puis restaurés et les autorités policières et réglementaires ont été notifiées. L'attaquant reste non attribué publiquement. AFRINTEL enregistre donc `Data Leak` comme type contrôlé principal et conserve l'extorsion et le défacement comme effets secondaires.
+- **Sources publiques -** [Notification POPIA CIPC](https -//www.cipc.co.za/?p=20614) | [Rapport Q4 CIPC](https -//www.cipc.co.za/wp-content/uploads/2026/04/CIPC_2023-24_Q4-Report-Narrative_vf_20240430.pdf) | [Rapport annuel CIPC](https -//www.cipc.co.za/wp-content/uploads/2025/01/CIPC-Annual-Report-2023-2024.pdf)
+
+----------------------------
+    27 Février 2024 : Nouvelle Parfumerie Gandour (NPGCI)
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [npgandour.com](https -//npgandour.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** La Nouvelle Parfumerie Gandour (NPGCI) est une entreprise industrielle cosmétique leader en Afrique de l'Ouest, basée dans la zone industrielle de Yopougon à Abidjan, en Côte d'Ivoire. Fondée sur des principes de fabrication rigoureux, elle produit une vaste gamme de produits corporels, capillaires, bucco-dentaires et de parfumerie.
+
+----------------------------
+    29 Février 2024 : ERWAT (Ekurhuleni Water Care Company)
+- **Acteur / Groupe -** dragonforce
+- **Secteur -** Water / Utilities
+- **Site web -** [erwat.co.za](https -//erwat.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** ERWAT (Ekurhuleni Water Care Company) est une entreprise publique sud-africaine de premier plan créée en 1992, spécialisée dans l'assainissement et le traitement des eaux usées industrielles et domestiques. Elle assure la gestion des infrastructures d'épuration pour des milliers d'industries et plus de 3,5 millions d'habitants.
+
+----------------------------
+    Février 2024 - date exacte de l'incident non établie publiquement : Department of Immigration and Citizenship Services - Passport Issuance System
+- **Date de l'incident -** Février 2024 - date exacte non établie publiquement
+- **Date de publication initiale -** 21 février 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [immigration.gov.mw](https -//www.immigration.gov.mw/)
+- **Statut -** Government Confirmed
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 4
+- **Note de taxonomie -** La violation cyber et la perturbation du service sont confirmées. La demande de rançon a été déclarée publiquement, mais la cause technique exacte et le déploiement d'un ransomware restent contestés ou non résolus ; `System Intrusion` est retenu comme type principal.
+- **Description victime -** Le Department of Immigration and Citizenship Services du Malawi exploite l'infrastructure nationale de délivrance des passeports.
+- **Analyse -** Le président du Malawi a publiquement décrit l'indisponibilité du système de passeports comme une grave violation de cybersécurité et déclaré que des attaquants exigeaient une rançon. Le Department of Immigration a ensuite confirmé que les services de passeports avaient été perturbés par une violation de cybersécurité et que les données démographiques perdues avaient été récupérées. Toutefois, des organisations de la société civile et des déclarations de fournisseurs ont contesté certains aspects du récit technique gouvernemental et suggéré que des problèmes de licence ou de gestion du système avaient également pu contribuer à la panne. AFRINTEL enregistre donc la perturbation du service et la déclaration officielle de violation comme confirmées tout en maintenant la cause technique exacte et le déploiement d'un ransomware comme contestés.
+- **Sources publiques -** [Communiqué du gouvernement du Malawi](https -//www.malawi.gov.mw/index.php/resources/documents/press-releases?download=145%3Aofficial-passport-press-release-from-the-department-of-immigration-and-citizenship-services) | [Malawi Broadcasting Corporation](https -//mbc.mw/?p=10487) | [Contexte VOA](https -//www.voanews.com/a/some-question-malawi-president-s-claim-that-cyberattack-caused-passport-problems-/7498879.html)
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-February 2024 now contains **12 documented incident records across 7 African countries**, comprising **7 Ransomware and 5 Data Leak**.
+### Ransomware - 6
 
-Compared with the corrected January baseline of 14 incidents, February decreases by **14.3%**, while Ransomware increases by **40.0%** and Data Leak decreases by **37.5%**.
+**6 record(s) (75.0%).** Leading countries: South Africa (3), Egypt (1), Tunisia (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### Data Leak - 1
+
+**1 record(s) (12.5%).** Leading countries: South Africa (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### System Intrusion - 1
+
+**1 record(s) (12.5%).** Leading countries: Malawi (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| South Africa | Government Pensions Administration Agency (GPAA) / Government Employees Pension Fund (GEPF)
+- **Date de l'incident:** 16 février 2024
+- **Date de publication initiale:** 12 mars 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Government / Administration
+- **Site web:** [gepf.co.za](https://www.gepf.co.za/)
+- **Statut:** Victim Confirmed + Threat Actor Claim
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Note de preuve:** L'événement ransomware et la compromission de données personnelles sont confirmés par la victime. Les affirmations de l'acteur sur l'exhaustivité ou une portée supplémentaire des données publiées restent séparées des faits confirmés.
+- **Description victime:** La GPAA administre les prestations de retraite pour le compte du GEPF, l'un des plus importants fonds de pension d'Afrique, au service des fonctionnaires, retraités et bénéficiaires.
+- **Analyse:** La GPAA a subi une cyberattaque le 16 février 2024. Le GEPF a ensuite confirmé que des criminels avaient lancé un ransomware contre les systèmes de la GPAA et qu'environ **168 000 dossiers de personnes** avaient été consultés. Les catégories de données confirmées incluent des informations d'identité, de pension, d'emploi, de salaire, d'état civil, bancaires et fiscales. LockBit a publié des données et revendiqué l'attaque. L'événement ransomware et la compromission de données sont confirmés par la victime ; AFRINTEL conserve l'impact confirmé de 168 000 dossiers séparément de toute revendication plus large de l'acteur.
+- **Sources publiques:** [Notification officielle GEPF](https://www.gepf.co.za/notice/notification-of-security-compromise-as-per-section-22-of-the-protection-of-personal-information-act-4-of-2013-popia/2/) | [Communiqué GEPF](https://www.gepf.co.za/government-pensions-administration-agency-gpaa-data-breach/)
+
+---------------------------- | Ransomware | Victim Confirmed + Threat Actor Claim | Level 4 | Very High |
+| South Africa | Companies and Intellectual Property Commission (CIPC)
+- **Date de l'incident:** 23 février 2024
+- **Date de publication initiale:** 29 février 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [cipc.co.za](https://www.cipc.co.za/)
+- **Statut:** Victim Confirmed - Multi-effect Incident
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Note de taxonomie:** `Data Leak` est retenu comme type AFRINTEL principal car l'accès non autorisé à des informations personnelles et leur exposition sont étayés par des sources officielles. Le comportement d'extorsion et le défacement du site sont conservés comme effets secondaires ; le déploiement d'un malware ransomware n'est pas établi.
+- **Description victime:** La CIPC est l'autorité sud-africaine chargée des sociétés et de la propriété intellectuelle et conserve des dossiers relatifs aux entreprises, clients et employés.
+- **Analyse:** Les rapports officiels de la CIPC indiquent qu'une violation de données a été détectée le 23 février 2024 et impliquait un accès non autorisé à ses systèmes. Des informations personnelles de clients et d'employés ont été illégalement consultées et exposées. Le rapport annuel de la CIPC précise également que les intrus ont menacé de chiffrer et de publier les données contre rançon, défiguré le site e-Services et envoyé des courriels malveillants à des employés. Les systèmes ont été isolés puis restaurés et les autorités policières et réglementaires ont été notifiées. L'attaquant reste non attribué publiquement. AFRINTEL enregistre donc `Data Leak` comme type contrôlé principal et conserve l'extorsion et le défacement comme effets secondaires.
+- **Sources publiques:** [Notification POPIA CIPC](https://www.cipc.co.za/?p=20614) | [Rapport Q4 CIPC](https://www.cipc.co.za/wp-content/uploads/2026/04/CIPC_2023-24_Q4-Report-Narrative_vf_20240430.pdf) | [Rapport annuel CIPC](https://www.cipc.co.za/wp-content/uploads/2025/01/CIPC-Annual-Report-2023-2024.pdf)
+
+---------------------------- | Data Leak | Victim Confirmed - Multi-effect Incident | Level 4 | Very High |
+| Malawi | Department of Immigration and Citizenship Services - Passport Issuance System
+- **Date de l'incident:** Février 2024 - date exacte non établie publiquement
+- **Date de publication initiale:** 21 février 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [immigration.gov.mw](https://www.immigration.gov.mw/)
+- **Statut:** Government Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Note de taxonomie:** La violation cyber et la perturbation du service sont confirmées. La demande de rançon a été déclarée publiquement, mais la cause technique exacte et le déploiement d'un ransomware restent contestés ou non résolus ; `System Intrusion` est retenu comme type principal.
+- **Description victime:** Le Department of Immigration and Citizenship Services du Malawi exploite l'infrastructure nationale de délivrance des passeports.
+- **Analyse:** Le président du Malawi a publiquement décrit l'indisponibilité du système de passeports comme une grave violation de cybersécurité et déclaré que des attaquants exigeaient une rançon. Le Department of Immigration a ensuite confirmé que les services de passeports avaient été perturbés par une violation de cybersécurité et que les données démographiques perdues avaient été récupérées. Toutefois, des organisations de la société civile et des déclarations de fournisseurs ont contesté certains aspects du récit technique gouvernemental et suggéré que des problèmes de licence ou de gestion du système avaient également pu contribuer à la panne. AFRINTEL enregistre donc la perturbation du service et la déclaration officielle de violation comme confirmées tout en maintenant la cause technique exacte et le déploiement d'un ransomware comme contestés.
+- **Sources publiques:** [Communiqué du gouvernement du Malawi](https://www.malawi.gov.mw/index.php/resources/documents/press-releases?download=145%3Aofficial-passport-press-release-from-the-department-of-immigration-and-citizenship-services) | [Malawi Broadcasting Corporation](https://mbc.mw/?p=10487) | [Contexte VOA](https://www.voanews.com/a/some-question-malawi-president-s-claim-that-cyberattack-caused-passport-problems-/7498879.html)
+
+---------------------------- | System Intrusion | Government Confirmed | Level 4 | High |
+| South Africa | The Aurum Institute
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Healthcare / Medical
+- **Site web:** [auruminstitute.org](https://www.auruminstitute.org)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** The Aurum Institute est une organisation africaine d'utilité publique de premier plan fondée en 1998 et basée à Johannesburg. Axée sur la recherche médicale et la santé publique, l'organisation génère des données scientifiques et déploie des programmes sanitaires mondiaux d'envergure, notamment contre le VIH et la tuberculose.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| South Africa | ERWAT (Ekurhuleni Water Care Company)
+- **Acteur / Groupe:** dragonforce
+- **Secteur:** Water / Utilities
+- **Site web:** [erwat.co.za](https://erwat.co.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** ERWAT (Ekurhuleni Water Care Company) est une entreprise publique sud-africaine de premier plan créée en 1992, spécialisée dans l'assainissement et le traitement des eaux usées industrielles et domestiques. Elle assure la gestion des infrastructures d'épuration pour des milliers d'industries et plus de 3,5 millions d'habitants.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+February 2024 contains **8 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

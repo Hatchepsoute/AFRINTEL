@@ -1,198 +1,4 @@
-# Fiches victimes AFRINTEL 2024 - corpus annuel corrigé
-
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-2024-lightgrey)
-![Fiches](https://img.shields.io/badge/Fiches-128-critical)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-brightgreen)
-
-👉🏾 [English version](./victims.md)
-
-Ce fichier annuel est reconstruit directement à partir des douze fichiers victimes mensuels AFRINTEL harmonisés. Il contient **128 fiches cyber documentées dans 28 pays africains**. Parmi elles, **127 relèvent de la taxonomie AFRINTEL principale à six types** : 91 Ransomware, 31 Data Leak, 3 Access Sale, 1 Defacement et 1 Operational Fraud. **GTBank est conservé séparément comme une tentative d'attaque confirmée par la victime**, car les preuves ne permettent pas de le forcer dans une catégorie principale non étayée.
-
-Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées. Les dates de publication, dates d'incident revendiquées, dates de correction et réserves de preuve sont conservées dans les fiches individuelles lorsqu'elles sont disponibles.
-
-
-## Janvier 2024
-
-
-### 1 Janvier 2024
-
-#### 🇰🇪 Kenya - Kenya News Broadcasting Company (K24)
-
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Media / Entertainment
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [24tv.co.ke](https://24tv.co.ke)
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 2
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 2023 (date exacte non précisée)
-- **Date de découverte:** Janvier 2024 (jour exact non précisé ; classement mensuel fixé au 1er janvier)
-- **Date de publication de la source:** 19 juin 2023
-
-- **Note de fiabilité:**
-  La capture identifie une revendication concernant la base K24 attribuée à Tanaka, le domaine 24tv.co.ke, un fichier SQL annoncé de 28 Mo et environ 56 000 lignes. Le fichier local fourni pour examen n'est pas un SQL lisible : il contient 30,1 Mo d'octets 0xFF, sans lignes ni en-tête SQL exploitable. La date exacte de la compromission et toute confirmation indépendante restent inconnues.
-
-- **Description:**
-  Kenya News Broadcasting Company exploite la plateforme d'information K24 au Kenya. La publication présente une revendication de base de données associée au site WordPress de K24.
-
-- **Analyse:**
-  L'échantillon visible référence la table WordPress wp_options et des champs de configuration ou de gestion de contenu, notamment les paramètres de bannière de cookies, les catégories et menus, le CSS personnalisé et d'autres options du site. La capture ne permet pas d'établir si des données personnelles, identifiants ou enregistrements utilisateurs complets figuraient dans le fichier SQL revendiqué. AFRINTEL ne reproduit aucune valeur de base de données issue de l'échantillon.
-
-- **Recommandations:**
-  1. Vérifier la revendication dans les journaux WordPress, de base de données, de serveur web et d'administration, examiner la table wp_options et les comptes administrateurs actifs, puis faire pivoter les identifiants si une exposition est confirmée.
-  2. Auditer les extensions et thèmes, restreindre les exports de base, imposer le MFA aux comptes privilégiés et surveiller le domaine K24 contre le défacement, le phishing ou les modifications non autorisées.
-
-----------------------------
-
-
-### 1 Janvier 2024
-
-#### 🇩🇿 Algérie - Université d'Oran
-
-- **Acteur / Groupe:** zebi
-- **Secteur:** Education / University
-- **Statut:** Claim - Data Sample Published
-- **Site web:** Not identified with sufficient confidence
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 2
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 12 septembre 2023
-- **Date de découverte:** 1er janvier 2024
-
-- **Note de fiabilité:**
-  La publication est explicitement présentée comme un « repost ». Elle contient un échantillon de données attribué à une « University of Oran », mais ne précise pas l'établissement exact, la date de la compromission initiale, le volume total de la base ou la méthode d'accès utilisée. La publication d'origine n'est pas fournie.
-
-- **Description:**
-  L'acteur malveillant `zebi` a republié une base de données présentée comme provenant d'une université d'Oran en Algérie. Un échantillon est directement visible dans la publication et un téléchargement supplémentaire est proposé via un contenu verrouillé sur le forum.
-
-- **Analyse:**
-  L'échantillon présente une structure de base de données contenant les champs `numero`, `nom`, `prenom`, `datenaiss`, `teleph`, `sexe`, `email`, `mot_passe` et `nationalite`.
-
-  Les enregistrements visibles exposent ainsi des données personnelles et de compte, notamment des identités, dates de naissance, numéros de téléphone, adresses électroniques, sexe et nationalité. Le champ `mot_passe` contient des chaînes ressemblant à des empreintes cryptographiques plutôt qu'à des mots de passe directement lisibles ; l'algorithme utilisé et leur sécurité ne peuvent toutefois pas être confirmés à partir de la capture.
-
-  La présence de plusieurs enregistrements cohérents renforce la crédibilité de la possession d'un jeu de données par l'acteur. En revanche, la capture ne permet pas de confirmer l'origine technique des données, le nombre total de personnes concernées ou l'attribution précise à une université spécifique d'Oran.
-
-  Les données divulguées peuvent faciliter le phishing ciblé, l'usurpation d'identité, la constitution de profils sur les étudiants ou utilisateurs concernés et des tentatives de réutilisation d'identifiants sur d'autres services.
-
-- **Recommandations:**
-  1. Identifier l'établissement et l'application potentiellement concernés, puis vérifier les journaux d'authentification et procéder à la réinitialisation des comptes exposés si la fuite est confirmée.
-  2. Rechercher toute réutilisation des données dans d'autres publications et sensibiliser les utilisateurs concernés aux risques de phishing et de compromission de comptes.
-
-----------------------------
-
-
-### 1 Janvier 2024
-
-#### 🇧🇫 Burkina Faso - BIA-Market
-
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Retail / E-commerce
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [bia-market.com](https://www.bia-market.com)
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 2
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 2023 (date exacte non précisée)
-- **Date de découverte:** Janvier 2024 (jour exact non précisé ; classement mensuel fixé au 1er janvier)
-- **Date de publication de la source:** 23 juin 2023
-
-- **Note de fiabilité:**
-  La capture examinée identifie bia-market.com, un filtre de pays correspondant au Burkina Faso (BF-60) et un échantillon SQL. La source indique une date en 2023 et précise que la publication a été mise en ligne le 23 juin 2023. La date exacte de la compromission, le jour de détection, l'application concernée et toute confirmation indépendante restent inconnus.
-
-- **Description:**
-  BIA-Market est une plateforme e-commerce opérant au Burkina Faso. La publication présente un fichier SQL de 4,5 Go contenant environ 5 000 lignes et montre des enregistrements issus de la structure de base de données du site. AFRINTEL classe ce cas en janvier 2024 comme période de détection demandée pour cet incident.
-
-- **Analyse:**
-  L'échantillon visible référence la table vb_users et des champs tels que l'identifiant de connexion, l'adresse électronique, l'URL utilisateur, la date d'inscription, la clé d'activation, le statut et le nom d'affichage. L'échantillon suggère une exposition de métadonnées de comptes et de plateforme, mais aucune donnée brute d'identification ou donnée personnelle n'est reproduite ici. La capture ne prouve ni l'authenticité ni l'exhaustivité du jeu de données et ne confirme pas comment ou quand BIA-Market aurait été accédé.
-
-- **Recommandations:**
-  1. Vérifier la revendication dans les journaux applicatifs, de base de données et de serveur web, faire pivoter les identifiants potentiellement exposés et invalider les sessions ou clés d'activation actives si le jeu de données est confirmé.
-  2. Examiner les comptes clients et administrateurs, imposer le MFA lorsqu'il est disponible, surveiller la réutilisation de mots de passe et les campagnes de phishing, et préserver les éléments nécessaires à l'enquête.
-
-----------------------------
-
-
-### 1 Janvier 2024
-
-#### 🇲🇦 Maroc - Morocco Forum Site
-
-- **Acteur / Groupe:** r57
-- **Secteur:** Technology / IT
-- **Statut:** Claim - Data Sample Published
-- **Site web:** Not specified
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Date de découverte:** Janvier 2024 (classement mensuel demandé)
-- **Date de publication de la source:** 29 septembre 2023
-
-- **Note de fiabilité:**
-  Une publication de forum cybercriminel intitulée « Morocco Forum Site » annonce un jeu de données revendiqué de 180 000 enregistrements et affiche un prix de 50 dollars américains. L'échantillon visible contient des comptes avec des noms d'utilisateur, adresses électroniques, valeurs liées aux mots de passe et champs d'adresses IP. AFRINTEL ne reproduit aucun enregistrement brut, identifiant, empreinte, adresse IP ni information d'accès. La capture ne permet pas d'établir la propriété du forum, l'authenticité du jeu de données, la population exacte concernée ou la date de la compromission sous-jacente.
-
-- **Description:**
-  Morocco Forum Site est présenté par la source comme un forum ou une plateforme communautaire en ligne associée à des utilisateurs marocains. L'entité juridique exacte et le domaine ne sont pas identifiés dans la publication.
-
-- **Analyse:**
-  L'échantillon visible suggère une exposition de données de comptes utilisateurs et de champs liés à l'authentification. S'il était authentique, le jeu de données pourrait faciliter le phishing ciblé, les tentatives de prise de contrôle de comptes, le credential stuffing ou l'abus de procédures de réinitialisation. Le volume et le prix annoncés restent des revendications de l'acteur. La publication source étant antérieure au classement demandé en janvier 2024, AFRINTEL conserve séparément la date de publication et ne considère pas janvier comme la date de l'incident ou de la publication.
-
-
-### 1 Janvier 2024
-
-#### 🇷🇼 Rwanda - Gouvernement du Rwanda (plusieurs domaines)
-
-- **Acteur / Groupe:** Milad
-- **Secteur:** Government / Administration
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [cheno.gov.rw](https://cheno.gov.rw), [cnlg.gov.rw](https://cnlg.gov.rw), [nurc.gov.rw](https://nurc.gov.rw), [yego.gov.rw](https://yego.gov.rw)
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 4
-- **Type d'incident:** Data Leak
-- **Date de découverte:** Janvier 2024 (classement mensuel demandé)
-- **Date de publication de la source:** 17 juin 2023
-
-- **Note de fiabilité:**
-  Une publication de forum intitulée « Government Rwanda Database [ Full Backup ] », publiée le 17 juin 2023 par le compte Milad, revendique une sauvegarde SQL combinée de 329 Mo couvrant quatre domaines gouvernementaux rwandais (cheno.gov.rw, cnlg.gov.rw, nurc.gov.rw, yego.gov.rw), indiquant uniquement « 2023 » comme date de fuite et classant les données comme sensibilité « Normal » selon la propre classification de l'auteur. Le compte à l'origine de la publication est actuellement affiché comme banni sur le forum ; le motif du bannissement n'est pas visible dans la publication examinée. L'échantillon affiché montre un export SQL brut d'une table de comptes administrateurs `be_users` contenant des noms d'utilisateur backend, des empreintes de mot de passe (formats phpass et MD5) et de nombreuses données de session/configuration du CMS, ainsi que des contenus en kinyarwanda cohérents avec une communication du secteur public rwandais. AFRINTEL ne reproduit aucun nom d'utilisateur, empreinte de mot de passe, jeton de session ni autre valeur liée aux identifiants présents dans l'échantillon.
-
-- **Description:**
-  La revendication cite quatre domaines web gouvernementaux rwandais. D'après leur nom, cnlg.gov.rw correspond à la Commission Nationale de Lutte contre le Génocide (CNLG) et nurc.gov.rw correspond à la Commission Nationale pour l'Unité et la Réconciliation (NURC) ; les institutions précises derrière cheno.gov.rw et yego.gov.rw ne sont pas identifiées dans la source et ne sont pas présumées ici. Le contenu en kinyarwanda visible dans l'échantillon, incluant des références de commémoration liées au génocide, est cohérent avec, sans confirmer de manière indépendante, un lien avec l'un de ces organismes.
-
-- **Analyse:**
-  La publication revendique une seule sauvegarde SQL « complète » de 329 Mo couvrant quatre domaines gouvernementaux distincts, une portée inhabituellement large pour un export unique et non corroborée indépendamment au-delà de l'échantillon visible. L'échantillon lui-même affiche une table d'administration backend cohérente (`be_users`) avec des noms d'utilisateur réalistes, des identifiants hachés dans des formats reconnus et des métadonnées de session CMS, ce qui est cohérent avec un export de base de données authentique ; cependant, l'auteur qualifie le CMS de « Custom » alors que la structure de table et les noms de champs visibles dans l'échantillon sont caractéristiques du système de gestion de contenu TYPO3, une incohérence qu'AFRINTEL ne peut pas résoudre à partir des éléments disponibles. Si elle était authentique, la compromission d'identifiants administrateurs backend touchant des institutions gouvernementales nationales et liées à la réconciliation pourrait permettre une manipulation non autorisée de contenu, un accès latéral supplémentaire à des systèmes internes, ainsi qu'un impact réputationnel ou de confiance sur des institutions étatiques liées au mandat rwandais de mémoire du génocide et d'unité nationale. AFRINTEL traite cette publication comme une revendication avec échantillon de données publié ; l'authenticité, la validité actuelle des identifiants et l'étendue de la fuite au-delà de la table examinée ne sont pas vérifiées de manière indépendante.
-
-
-### 2 Janvier 2024
-
-#### 🇬🇭 Ghana - Financial Intelligence Centre (FIC)
-
-- **Acteur / Groupe:** DataHoes
-- **Secteur:** Government / Administration
-- **Statut:** Data Fully Published
-- **Site web:** [fic.gov.gh](https://fic.gov.gh)
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 4
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 3 décembre 2023
-- **Date de découverte:** 2 janvier 2024
-
-- **Note de fiabilité:**
-  La publication est attribuée au compte de forum « DataHoes » (depuis banni) et indique une date d'extraction, une taille d'archive, un nombre de fichiers et de dossiers, ainsi qu'un lien vers une liste complète de l'arborescence hébergée sur un service tiers de partage de fichiers. AFRINTEL a examiné la publication et l'échantillon d'arborescence, mais n'a pas téléchargé ni ouvert l'archive référencée ni le fichier de liste complète.
-
-- **Description:**
-  Le Financial Intelligence Centre (FIC) est l'agence nationale ghanéenne chargée de recevoir et d'analyser les déclarations de transactions suspectes et autres informations liées au blanchiment de capitaux, au financement du terrorisme et au financement de la prolifération, et de diffuser des renseignements exploitables aux autorités compétentes.
-
-- **Analyse:**
-  L'acteur indique que les données ont été extraites le 3 décembre 2023, et décrit une archive de 2,0 Gio répartie sur 6 025 fichiers et 663 sous-dossiers, avec une liste complète de l'arborescence publiée séparément. L'échantillon d'arborescence montre des dossiers intitulés « FIC HR DOCS » et « Finance_Scans », contenant des documents internes de gouvernance et de ressources humaines (manuel comptable, manuel d'audit, charte du conseil d'administration, documents relatifs aux conditions de service et aux politiques RH, fichiers d'effectifs) ainsi que des correspondances financières scannées sur plusieurs années (demandes de relevés bancaires, autorisations de paiement, demandes de change, avis de paie mensuels). Un nom de fichier fait explicitement référence à la réponse du FIC à une procédure de nomination GIABA/ICRG, ce qui est cohérent avec le mandat connu du FIC en matière de lutte anti-blanchiment et appuie l'authenticité du jeu de données. Plusieurs noms de fichiers de l'échantillon font également référence à des certificats académiques et documents de paie de membres du personnel nommément identifiés.
-
-  Compte tenu de la sensibilité des documents internes RH, de paie, bancaires et de gouvernance d'une unité nationale de renseignement financier, l'exposition de ce matériel pourrait faciliter l'ingénierie sociale ou le phishing ciblé visant le personnel du FIC, la divulgation de dispositifs bancaires internes, ainsi qu'un impact réputationnel ou opérationnel sur un organisme central du dispositif ghanéen de lutte anti-blanchiment et de financement du terrorisme. AFRINTEL n'a pas accédé à l'archive référencée ni au fichier de liste d'arborescence, et ne reproduit aucun nom de membre du personnel, chiffre financier ou contenu de document au-delà des noms de dossiers et de fichiers visibles dans la publication examinée.
-
-- **Recommandations:**
-  1. Le FIC devrait vérifier si l'extraction décrite provient effectivement de ses propres systèmes, examiner les journaux d'accès antérieurs et autour du 3 décembre 2023, et évaluer l'exposition des données bancaires, de paie et RH mentionnées dans la publication.
-  2. Faire pivoter tout identifiant ou référence de correspondance bancaire nommé dans les documents exposés, et surveiller toute réutilisation ultérieure de l'arborescence divulguée dans des campagnes de phishing visant le personnel du FIC ou des institutions partenaires.
-
-----------------------------
-
+# Cyberincidents AFRINTEL - 2024 - corpus canonique (119 fiches)
 
 ### 2 Janvier 2024
 
@@ -214,32 +20,24 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 6 Janvier 2024
 
-### 3 Janvier 2024
-
-#### 🇳🇬 Nigeria - The Citizens' Watch
-
-- **Acteur / Groupe:** X0Frankenstein
-- **Secteur:** Civil Society / NGO
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [thecitizenswatch.com](https://thecitizenswatch.com/)
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Date de découverte:** 3 janvier 2024
-- **Date de fuite revendiquée:** 2023 (année uniquement, aucune date précise fournie par la source)
-
-- **Note de fiabilité:**
-  Une publication de forum intitulée « SQL Database The Citizens Watch », publiée le 3 janvier 2024 par le compte X0Frankenstein, revendique une fuite de base de données SQL associée à thecitizenswatch.com, décrivant plus de 56 000 lignes et indiquant uniquement « 2023 » comme date de fuite. La publication affiche des extraits SQL bruts couvrant plusieurs structures de table distinctes, notamment des comptes utilisateur/administrateur avec des empreintes de mot de passe au format bcrypt, des enregistrements d'inscription à des événements et formations, des candidatures/CV, ainsi qu'une table de référence géographique apparemment sans lien direct, incluse dans le même extrait. AFRINTEL ne reproduit aucun nom, adresse électronique, numéro de téléphone, empreinte de mot de passe, chemin de fichier téléversé ni autre donnée personnelle visible dans l'échantillon.
-
-- **Description:**
-  The Citizens' Watch (thecitizenswatch.com) est présenté comme une plateforme de suivi des promesses permettant aux citoyens, à la société civile, aux journalistes, chercheurs et analystes de politiques publiques de suivre les engagements de campagne des responsables gouvernementaux. Elle est décrite comme une initiative de The Reformers Initiative for Development in Africa (« Reformers of Africa »), une organisation panafricaine de civic-tech à but non lucratif, présentée comme active dans plusieurs pays africains dont le Nigeria, le Soudan du Sud, la Namibie, la République démocratique du Congo, la Tunisie, les Comores et l'Afrique du Sud. Le pays précis d'enregistrement ou le siège de l'organisation n'est pas indiqué dans la source ; l'échantillon visible montre une forte concentration de coordonnées nigérianes (Lagos, Ekiti, Oyo, Ogun, Kogi, Anambra), ce qui conduit AFRINTEL à classer cette entrée sous le Nigeria, tout en signalant la portée panafricaine de l'organisation.
-
-- **Analyse:**
-  L'extrait visible mélange plusieurs structures de table distinctes plutôt qu'un schéma cohérent unique, ce qui est cohérent soit avec un export multi-tables réellement compromis, soit avec un extrait assemblé ; AFRINTEL ne peut pas confirmer indépendamment l'origine de chaque segment de table. Lorsqu'ils sont lisibles, les enregistrements de l'échantillon comprennent des comptes utilisateur avec noms, adresses électroniques, numéros de téléphone, une empreinte de mot de passe au format bcrypt, des références de fichiers CV téléversés, des dates de naissance et des champs de statut de compte, ainsi que des inscriptions à des événements/formations et une table géographique apparemment sans lien. Si elle est authentique, l'exposition de ces données pourrait exposer les données personnelles de citoyens et d'inscrits à des événements (noms, coordonnées, documents CV) à des risques de phishing, d'ingénierie sociale et de prise de contrôle de compte, et toute empreinte de mot de passe exposée pourrait faire l'objet d'un cassage hors ligne si le schéma de hachage est faible ou réutilisé ailleurs. AFRINTEL classe cette publication comme une revendication avec échantillon de données publié, compte tenu du volume et de la structure des enregistrements visibles, tout en précisant que la propriété de chaque segment de table et l'étendue complète de la base de données sous-jacente ne sont pas vérifiées de manière indépendante.
+#### 🇦🇴 Angola - Banco Nacional de Angola (BNA)
+- **Date de l'incident:** 6 Janvier 2024
+- **Date de publication initiale / source retenue:** 17 janvier 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date exacte de l'attaque confirmée par les sources de l'audit.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Finance / Banking
+- **Site web:** [bna.ao](https://www.bna.ao/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 2
+- **Analyse:** La BNA a déclaré avoir subi une cyberattaque le 6 janvier 2024. L'incident a été contenu sans impact significatif annoncé sur l'infrastructure ou les données ; les accès aux infrastructures technologiques ont été contrôlés pendant la réponse. Les sources disponibles ne permettent pas d'établir un ransomware, un DDoS, une fuite de données ou une vente d'accès. AFRINTEL retient donc `System Intrusion` sans extrapoler le mécanisme d'accès.
+- **Sources publiques:** [Recorded Future News](https://therecord.media/angola-national-bank-cyberattack-mitigated) | [VerAngola](https://www.verangola.net/va/en/012024/BankingInsurance/38523/National-Bank-of-Angola-targeted-by-computer-attack.htm) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
 ----------------------------
-
 
 ### 7 Janvier 2024
 
@@ -265,11 +63,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 10 Janvier 2024
 
 #### 🇿🇦 Afrique du Sud - TiAuto Investments
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Retail / E-commerce
 - **Site web:** [tiautoinvestments.co.za](https://www.tiautoinvestments.co.za)
 - **Statut:** Claim - Unverified
@@ -280,11 +77,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 10 Janvier 2024
 
 #### 🇿🇦 Afrique du Sud - Tiger Wheel & Tyre
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Retail / E-commerce
 - **Site web:** [twt.co.za](https://twt.co.za)
 - **Statut:** Claim - Unverified
@@ -295,29 +91,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-### 26 Janvier 2024
-
-#### 🇪🇬 Égypte - Btech.com
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Retail / E-commerce
-- **Site web:** [btech.com](https://www.btech.com)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 2
-- **Type d'incident:** Data Leak
-- **Description victime:** Btech.com est une chaîne égyptienne de vente au détail d'appareils électroniques et électroménagers.
-- **Analyse:** L'acteur Tanaka, modérateur du forum, a publié le 26 janvier 2024 une revendication concernant Btech.com, décrite comme un export CSV de 20 Mo daté du 23 février 2023 et totalisant 203 265 lignes. L'en-tête de champs annoncé comprend : ID, Name, Email, Phone, ZIP, Country, State/Province, Customer Since, Billing Address, Shipping Address, Date of Birth, Gender, Street Address, City, Company.
-
-  L'échantillon affiché dans le post montre des enregistrements clients réels avec noms, adresses email, adresses postales détaillées en arabe, dates de naissance (majoritairement non renseignées) et genre. Plusieurs lignes de l'échantillon contiennent en outre des valeurs supplémentaires au-delà des 15 champs annoncés dans l'en-tête, correspondant à des numéros à 14 chiffres au format des numéros d'identification nationale égyptiens, ainsi qu'à un nom et un numéro de téléphone distincts de ceux du titulaire principal du compte, suggérant une structure de données plus riche que celle décrite dans l'en-tête public du post.
-
-  La cohérence du format CSV, le volume annoncé et la présence d'enregistrements clients plausibles avec adresses détaillées appuient un niveau de confiance élevé quant à l'authenticité de cette fuite, bien que le volume total de 203 265 lignes n'ait pas pu être vérifié indépendamment au-delà de l'échantillon observé. La présence possible de numéros d'identification nationale non documentés dans l'en-tête constitue un facteur aggravant, cette donnée étant particulièrement sensible en Égypte. L'exposition de ces données pourrait faciliter l'usurpation d'identité, la fraude et le phishing ciblé contre les clients de l'enseigne. AFRINTEL ne reproduit aucun nom, adresse email, adresse postale, date de naissance ni numéro d'identification issus de l'échantillon examiné.
-
-
 ### 29 Janvier 2024
 
 #### 🇿🇦 Afrique du Sud - Crowe Southern Africa
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Professional / Business Services
 - **Site web:** [crowe.com/za](https://www.crowe.com/za)
 - **Statut:** Claim - Unverified
@@ -328,7 +105,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 29 Janvier 2024
 
 #### 🇨🇲 Cameroun - Eneo Cameroon
@@ -338,43 +114,21 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Acteur / Groupe:** Unknown
 - **Secteur:** Energy / Utilities
 - **Site web:** [eneocameroon.cm](https://eneocameroon.cm/)
-- **Statut:** Victim Confirmed - Ransomware Classification Unverified
-- **Type d'incident:** Ransomware
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 4
-- **Note de taxonomie:** La cyberattaque et la perturbation opérationnelle sont confirmées par la victime. `Ransomware` est conservé comme classement AFRINTEL provisoire car des sources CTI secondaires qualifient l'incident de ransomware ; les déclarations de la victime examinées ne permettent pas de confirmer indépendamment le déploiement d'un ransomware.
+- **Note de taxonomie:** La cyberattaque et la perturbation opérationnelle sont confirmées. Les déclarations de la victime examinées ne permettent pas de confirmer indépendamment un déploiement ransomware ; cette qualification reste secondaire.
 - **Description victime:** Eneo Cameroon est le principal opérateur électrique du pays et exploite notamment les services de facturation ainsi que les services d'électricité prépayés et postpayés.
 - **Analyse:** Eneo a confirmé qu'une cyberattaque débutée le 29 janvier 2024 avait fortement perturbé ses systèmes informatiques. Certaines applications ont été désactivées par précaution et les opérations prépayées/postpayées ont été affectées, notamment l'achat d'unités d'électricité. Les informations publiques et des évaluations africaines ultérieures corroborent l'attaque. Certaines sources CTI classent l'événement comme ransomware, mais les déclarations de la victime examinées ne fournissent pas suffisamment d'éléments techniques pour confirmer indépendamment le déploiement d'un ransomware. Les faits confirmés sont donc la cyberattaque et la perturbation opérationnelle importante ; le ransomware reste une qualification secondaire.
 - **Sources publiques:** [ITWeb Africa](https://itweb.africa/article/cameroons-power-utility-suffers-a-cyber-attack/8OKdWqDXArbqbznQ) | [OBS-CC](https://obs-cc.org/incident/eneo-cameroon/)
 
 ----------------------------
 
-
-## Février 2024
-
-
-### 1 Février 2024
-
-#### 🇪🇬 Égypte - 8WORX
-- **Date de publication de la source:** 30 juin 2023
-- **Date de découverte AFRINTEL:** 1 février 2024
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Technology / IT
-- **Site web:** [8worx.com](https://8worx.com)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** 8WORX est un prestataire de solutions technologiques légalement enregistré dans le Delaware, aux États-Unis, qui déclare concentrer son activité sur l'Égypte et le Moyen-Orient, en développant des applications web et des systèmes pour des clients des secteurs privé et public.
-- **Analyse:** La publication est signée par le compte Tanaka, qui porte un badge de modérateur sur le forum, si bien que l'acteur à l'origine de l'intrusion n'est pas identifié. La publication sur le forum annonce un export SQL de 1,3 Go daté de 2023, comptant environ 4 millions de lignes réparties sur des tables incluant des numéros de téléphone, des journaux d'activité et des comptes sociaux, structurées autour d'un module « Leads » cohérent avec un système de CRM ou de gestion de prospects. L'échantillon visible montre des instructions SQL INSERT à l'apparence authentique, avec des champs détaillés de contact, de suivi d'activité et de compte, et une grande part des enregistrements téléphoniques porte un indicatif pays Égypte (EG), cohérent avec le positionnement régional déclaré de 8WORX. La cohérence structurelle du schéma et la plausibilité des enregistrements échantillonnés soutiennent une évaluation à confiance élevée quant à l'authenticité de l'échantillon, bien qu'AFRINTEL n'ait pas confirmé indépendamment l'intrusion, l'étendue complète de la base sous-jacente, ni l'exhaustivité du volume annoncé de 4 millions de lignes. L'exposition de ce jeu de données combinerait numéros de téléphone, adresses email, activité de prospects et de comptes, et références internes d'utilisateurs pour un très grand nombre d'individus, créant un risque important de phishing ciblé, d'ingénierie sociale et de fraude. AFRINTEL ne reproduit aucun numéro de téléphone, adresse email, nom ni enregistrement interne issu de l'échantillon.
-
-----------------------------
-
-
 ### 6 Février 2024
 
 #### 🇪🇬 Égypte - ArpuPlus
-- **Groupe ransomware:** medusa
+- **Acteur / Groupe:** medusa
 - **Secteur:** Technology / IT
 - **Site web:** [arpuplus.com](https://www.arpuplus.com)
 - **Statut:** Claim - Unverified
@@ -385,11 +139,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 10 Février 2024
 
 #### 🇹🇳 Tunisie - SOPEM Tunisie
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [sopem.com.tn](https://www.sopem.com.tn)
 - **Statut:** Claim - Unverified
@@ -400,11 +153,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Février 2024
 
 #### 🇿🇦 Afrique du Sud - The Aurum Institute
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Healthcare / Medical
 - **Site web:** [auruminstitute.org](https://www.auruminstitute.org)
 - **Statut:** Claim - Unverified
@@ -415,14 +167,13 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 16 Février 2024
 
 #### 🇿🇦 Afrique du Sud - Government Pensions Administration Agency (GPAA) / Government Employees Pension Fund (GEPF)
 - **Date de l'incident:** 16 février 2024
 - **Date de publication initiale:** 12 mars 2024
 - **Date de correction AFRINTEL:** 23 août 2026
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Government / Administration
 - **Site web:** [gepf.co.za](https://www.gepf.co.za/)
 - **Statut:** Victim Confirmed + Threat Actor Claim
@@ -435,7 +186,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Sources publiques:** [Notification officielle GEPF](https://www.gepf.co.za/notice/notification-of-security-compromise-as-per-section-22-of-the-protection-of-personal-information-act-4-of-2013-popia/2/) | [Communiqué GEPF](https://www.gepf.co.za/government-pensions-administration-agency-gpaa-data-breach/)
 
 ----------------------------
-
 
 ### 23 Février 2024
 
@@ -457,87 +207,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-### Février 2024 - date exacte de l'incident non établie publiquement
-
-#### 🇲🇼 Malawi - Department of Immigration and Citizenship Services - Passport Issuance System
-- **Date de l'incident:** Février 2024 - date exacte non établie publiquement
-- **Date de publication initiale:** 21 février 2024
-- **Date de correction AFRINTEL:** 23 août 2026
-- **Acteur / Groupe:** Unknown
-- **Secteur:** Government / Administration
-- **Site web:** [immigration.gov.mw](https://www.immigration.gov.mw/)
-- **Statut:** Government Confirmed - Technical Details Contested
-- **Type d'incident:** Ransomware
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 4
-- **Note de taxonomie:** `Ransomware` est un mapping AFRINTEL principal provisoire car le gouvernement a publiquement décrit une violation de cybersécurité accompagnée d'une demande de rançon. La cause racine exacte, l'identité de l'attaquant et le déploiement technique d'un ransomware restent contestés ou non résolus.
-- **Description victime:** Le Department of Immigration and Citizenship Services du Malawi exploite l'infrastructure nationale de délivrance des passeports.
-- **Analyse:** Le président du Malawi a publiquement décrit l'indisponibilité du système de passeports comme une grave violation de cybersécurité et déclaré que des attaquants exigeaient une rançon. Le Department of Immigration a ensuite confirmé que les services de passeports avaient été perturbés par une violation de cybersécurité et que les données démographiques perdues avaient été récupérées. Toutefois, des organisations de la société civile et des déclarations de fournisseurs ont contesté certains aspects du récit technique gouvernemental et suggéré que des problèmes de licence ou de gestion du système avaient également pu contribuer à la panne. AFRINTEL enregistre donc la perturbation du service et la déclaration officielle de violation comme confirmées tout en maintenant la cause technique exacte et le déploiement d'un ransomware comme contestés.
-- **Sources publiques:** [Communiqué du gouvernement du Malawi](https://www.malawi.gov.mw/index.php/resources/documents/press-releases?download=145%3Aofficial-passport-press-release-from-the-department-of-immigration-and-citizenship-services) | [Malawi Broadcasting Corporation](https://mbc.mw/?p=10487) | [Contexte VOA](https://www.voanews.com/a/some-question-malawi-president-s-claim-that-cyberattack-caused-passport-problems-/7498879.html)
-
-----------------------------
-
-
-### 24 Février 2024
-
-#### 🇪🇹 Éthiopie - Regional Trade and Integration Ministries of Ethiopia
-- **Date de publication de la source:** 24 août 2023
-- **Date de découverte AFRINTEL:** 24 février 2024
-- **Acteur / Groupe:** ThreatSec
-- **Secteur:** Government / Administration
-- **Sites web:** [etrade.gov.et](https://etrade.gov.et) and [eris.efda.gov.et](https://eris.efda.gov.et)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** Les portails gouvernementaux éthiopiens mentionnés dans la publication soutiennent le commerce régional, l’intégration, l’enregistrement des importateurs/exportateurs et les processus de certification associés.
-- **Analyse:** La publication affirme que ThreatSec a compromis les deux portails gouvernementaux éthiopiens et collecté 43 fichiers, notamment des documents gouvernementaux, des PDF et des images contenant des identifiants administratifs. La capture confirme l’existence de la publication et le périmètre annoncé, mais AFRINTEL n’a pas vérifié indépendamment la compromission, l’origine des fichiers, ni l’exhaustivité et l’authenticité de l’archive. Les impacts possibles comprennent l’exposition de documents officiels, le phishing ciblé, la fraude à l’identité et l’utilisation abusive d’informations d’enregistrement commercial. Les identifiants visibles dans la source ne sont pas reproduits.
-
-----------------------------
-
-
-### 24 Février 2024
-
-#### 🇬🇭 Ghana - National Teaching Council (tpg.ntc.gov.gh)
-- **Date de publication de la source:** 16 juillet 2023
-- **Date de découverte AFRINTEL:** 24 février 2024
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Government / Administration
-- **Site web:** [tpg.ntc.gov.gh](https://tpg.ntc.gov.gh/)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** Le National Teaching Council (NTC) du Ghana est l'organisme statutaire chargé de délivrer les licences et de réguler la profession enseignante. Le portail tpg.ntc.gov.gh soutient son processus de « Teaching Practice Guidelines » destiné aux élèves-enseignants inscrits dans les collèges d'éducation du pays.
-- **Analyse:** La publication du forum, attribuée au compte modérateur Tanaka, annonce un export SQL de la table `students`, daté de données 2019 et annoncé à environ 41 000 lignes. L'échantillon visible montre des instructions `INSERT INTO` d'apparence authentique avec un large ensemble de champs (identifiant étudiant, statut, noms, numéro d'index, sexe, téléphone, programme, niveau, date de naissance, nationalité, statut matrimonial, lieu de résidence, ville d'origine, adresse de contact, région, email, totaux de crédits et de moyenne, collège et promotion, classe, statut de handicap, statut d'examen, établissement précédent, dates de certificat et champs d'inscription associés), renseigné avec des enregistrements individuels d'élèves-enseignants répartis sur plusieurs collèges d'éducation. La cohérence structurelle de l'ensemble de champs et la plausibilité des codes de collèges et des valeurs enregistrées soutiennent un niveau de confiance élevé quant à l'authenticité de l'échantillon, bien qu'AFRINTEL n'ait pas confirmé indépendamment l'intrusion, le périmètre complet de la base sous-jacente, ni l'exhaustivité du volume annoncé de 41 000 lignes. L'exposition de ce jeu de données combinerait noms complets, coordonnées, origine nationale, statut matrimonial, adresse du domicile et dossiers académiques pour un grand nombre d'élèves-enseignants, créant un risque significatif de fraude à l'identité, de phishing ciblé et d'usurpation d'identité. AFRINTEL ne reproduit aucun nom d'étudiant, adresse email, numéro de téléphone, adresse ni dossier académique issu de l'échantillon examiné.
-
-
-### 24 Février 2024
-
-#### 🇨🇮 Côte d'Ivoire - Agence Emploi Jeunes
-- **Date de publication de la source:** 21 juillet 2023
-- **Date de découverte AFRINTEL:** 24 février 2024
-- **Acteur / Groupe:** Tanaka
-- **Secteur:** Government / Administration
-- **Site web:** [agenceemploijeunes.ci](https://agenceemploijeunes.ci)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** L'Agence Emploi Jeunes est un service public ivoirien consacré à l'accompagnement des jeunes vers l'emploi et les opportunités professionnelles.
-- **Analyse:** La publication sur le forum annonce un fichier SQL de 3,2 Go associé à agenceemploijeunes.ci, avec environ 2 300 lignes et 296 000 utilisateurs ou adresses email uniques. Le schéma visible comprend des champs liés aux candidats, aux comptes utilisateurs, à l'identité, aux coordonnées, à la formation, à l'emploi et au placement, tandis que la capture montre des instructions SQL INSERT contenant des enregistrements personnels. Les chiffres annoncés sont incohérents entre eux et le jeu de données complet n'a pas été vérifié indépendamment ; AFRINTEL classe donc cette publication comme un échantillon de données à confiance moyenne, et non comme une compromission confirmée. Si les données sont authentiques, elles pourraient faciliter la fraude à l'identité, le phishing ciblé, l'ingénierie sociale liée à l'emploi et l'exploitation d'informations sur les demandeurs d'emploi. AFRINTEL ne reproduit aucun nom, adresse email, numéro de téléphone, mot de passe ni autre donnée personnelle issue de l'échantillon.
-
-----------------------------
-
-
-----------------------------
-
-
 ### 27 Février 2024
 
 #### 🇨🇮 Côte d'Ivoire - Nouvelle Parfumerie Gandour (NPGCI)
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [npgandour.com](https://npgandour.com)
 - **Statut:** Claim - Unverified
@@ -548,11 +221,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 29 Février 2024
 
 #### 🇿🇦 Afrique du Sud - ERWAT (Ekurhuleni Water Care Company)
-- **Groupe ransomware:** dragonforce
+- **Acteur / Groupe:** dragonforce
 - **Secteur:** Water / Utilities
 - **Site web:** [erwat.co.za](https://erwat.co.za)
 - **Statut:** Claim - Unverified
@@ -563,34 +235,30 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### Février 2024 - date exacte de l'incident non établie publiquement
 
-## Mars 2024
-
-
-### 1 Mars 2024
-
-#### 🇪🇹 Éthiopie - Portails fédéraux eTrade et eRIS
-- **Acteur / Groupe:** ThreatSec
+#### 🇲🇼 Malawi - Department of Immigration and Citizenship Services - Passport Issuance System
+- **Date de l'incident:** Février 2024 - date exacte non établie publiquement
+- **Date de publication initiale:** 21 février 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
 - **Secteur:** Government / Administration
-- **Site web:** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** La publication associe le portail eTrade du ministère éthiopien du Commerce et de l'Intégration régionale au système eRIS de l'Ethiopian Food and Drug Authority. Il s'agit de deux services fédéraux distincts réunis dans une même revendication.
-
-- **Analyse:**
-  - **Observé :** la fiche est classée au 1er mars 2024 à la demande du mainteneur. La publication de forum, relayée par Tanaka et datée du 24 août 2023, attribue à ThreatSec une revendication d’accès aux deux portails et de collecte de 43 fichiers, dont des PDF, des images et des documents d'identité gouvernementaux. Un PDF fourni localement a été examiné en lecture seule : 3 023 068 octets, cinq pages scannées, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. Les cinq pages contiennent un document administratif et contractuel en amharique, avec des cachets officiels, des signatures manuscrites et des montants financiers. Aucune donnée personnelle brute n'est reproduite.
-  - **Hypothèse :** les caractéristiques documentaires sont cohérentes avec un document administratif éthiopien et renforcent la plausibilité structurelle de l'échantillon, sans établir sa provenance technique.
-  - **Inconnu :** la méthode d'acquisition, le lien direct du PDF avec chacun des deux portails, l'existence et le contenu des 42 autres fichiers revendiqués, ainsi qu'une confirmation par les organismes concernés restent non vérifiés. L'examen visuel couvre les cinq pages, mais l'OCR complet de l'amharique n'a pas pu être validé.
+- **Site web:** [immigration.gov.mw](https://www.immigration.gov.mw/)
+- **Statut:** Government Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Note de taxonomie:** La violation cyber et la perturbation du service sont confirmées. La demande de rançon a été déclarée publiquement, mais la cause technique exacte et le déploiement d'un ransomware restent contestés ou non résolus ; `System Intrusion` est retenu comme type principal.
+- **Description victime:** Le Department of Immigration and Citizenship Services du Malawi exploite l'infrastructure nationale de délivrance des passeports.
+- **Analyse:** Le président du Malawi a publiquement décrit l'indisponibilité du système de passeports comme une grave violation de cybersécurité et déclaré que des attaquants exigeaient une rançon. Le Department of Immigration a ensuite confirmé que les services de passeports avaient été perturbés par une violation de cybersécurité et que les données démographiques perdues avaient été récupérées. Toutefois, des organisations de la société civile et des déclarations de fournisseurs ont contesté certains aspects du récit technique gouvernemental et suggéré que des problèmes de licence ou de gestion du système avaient également pu contribuer à la panne. AFRINTEL enregistre donc la perturbation du service et la déclaration officielle de violation comme confirmées tout en maintenant la cause technique exacte et le déploiement d'un ransomware comme contestés.
+- **Sources publiques:** [Communiqué du gouvernement du Malawi](https://www.malawi.gov.mw/index.php/resources/documents/press-releases?download=145%3Aofficial-passport-press-release-from-the-department-of-immigration-and-citizenship-services) | [Malawi Broadcasting Corporation](https://mbc.mw/?p=10487) | [Contexte VOA](https://www.voanews.com/a/some-question-malawi-president-s-claim-that-cyberattack-caused-passport-problems-/7498879.html)
 
 ----------------------------
-
 
 ### 9 Mars 2024
 
 #### 🇪🇬 Égypte - Go4Kora
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Media / Entertainment
 - **Site web:** [go4kora.tv](https://go4kora.tv)
 - **Statut:** Claim - Unverified
@@ -601,11 +269,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 11 Mars 2024
 
 #### 🇿🇦 Afrique du Sud - Government Printing Works (GPW)
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Government / Administration
 - **Site web:** [gpw.gov.za](https://www.gpw.gov.za)
 - **Statut:** Claim - Unverified
@@ -616,11 +283,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 15 Mars 2024
 
 #### 🇹🇳 Tunisie - ATL Leasing
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Finance / Banking
 - **Site web:** [atlleasing.com.tn](https://www.atlleasing.com.tn)
 - **Statut:** Claim - Unverified
@@ -631,11 +297,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 15 Mars 2024
 
 #### 🇪🇬 Égypte - El Ezaby Pharmacy
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Healthcare / Medical
 - **Site web:** [elezabypharmacy.com](https://www.elezabypharmacy.com)
 - **Statut:** Claim - Unverified
@@ -646,11 +311,29 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 15 Mars 2024 - date rapportée
+
+#### 🇨🇻 Cabo Verde - Assembleia Nacional de Cabo Verde
+- **Date de l'incident:** 15 Mars 2024 - date rapportée
+- **Date de publication initiale / source retenue:** 22 mars 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Début rapporté le vendredi 15 mars ; la publication de référence est du 22 mars.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [parlamento.cv](https://www.parlamento.cv/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** Le responsable de la communication et de la sécurité de l'information du Parlement a confirmé un ransomware ayant chiffré plusieurs serveurs dans un segment du réseau. Le fonctionnement parlementaire a été perturbé et certains serveurs ont dû être récupérés. Les sources examinées ne suffisent pas à établir une exfiltration de données ; elle n'est donc pas déduite.
+- **Sources publiques:** [RTC Cabo Verde](https://www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
 
 ### 16 Mars 2024
 
 #### 🇳🇦 Namibie - Agribank Namibia
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Finance / Banking
 - **Site web:** [agribank.com.na](https://www.agribank.com.na)
 - **Statut:** Claim - Unverified
@@ -661,11 +344,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 22 Mars 2024
 
 #### 🇪🇬 Égypte - PGESCo
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Energy / Utilities
 - **Site web:** [pgesco.com](https://www.pgesco.com)
 - **Statut:** Claim - Unverified
@@ -675,7 +357,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description victime:** La Power Generation Engineering and Services Company (PGESCo) est une firme d'ingénierie égyptienne majeure fournissant des services de conseil et de gestion de projet pour les centrales électriques et les infrastructures pétrolières.
 
 ----------------------------
-
 
 ### 26 Mars 2024
 
@@ -693,11 +374,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 27 Mars 2024
 
 #### 🇿🇦 Afrique du Sud - Nampak
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [nampak.com](https://www.nampak.com)
 - **Statut:** Claim - Unverified
@@ -708,14 +388,47 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 1-3 Avril 2024
 
-## Avril 2024
+#### 🇱🇾 Libye - Central Bank of Libya (CBL)
+- **Date de l'incident:** 1-3 Avril 2024
+- **Date de publication initiale / source retenue:** 8 avril 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Campagne couvrant les événements des 1er et 3 avril.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Finance / Banking
+- **Site web:** [cbl.gov.ly](https://cbl.gov.ly/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Le 1er avril, la plateforme de réservation de devises a subi une attaque DDoS affectant l'accès. Le 3 avril, le site officiel a subi une attaque du même type. AFRINTEL compte cette séquence comme une seule campagne DDoS et non comme un incident distinct par service ou domaine.
+- **Sources publiques:** [Libya Observer](https://libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
+----------------------------
+
+### 1-2 Avril 2024
+
+#### 🇿🇦 Afrique du Sud - Moneyweb
+- **Date de l'incident:** 1-2 Avril 2024
+- **Date de publication initiale / source retenue:** 3 avril 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Deux vagues documentées les 1er et 2 avril, comptées comme une seule campagne.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Media / Entertainment
+- **Site web:** [moneyweb.co.za](https://www.moneyweb.co.za/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Moneyweb a documenté une première attaque DDoS d'environ 12 heures le 1er avril, suivie d'une seconde de plus de 8 heures le 2 avril. La victime a estimé environ 1,015 milliard de requêtes et a reçu un message d'extorsion. AFRINTEL conserve l'extorsion comme contexte et `DDoS` comme type principal unique.
+- **Sources publiques:** [Moneyweb](https://www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
 
 ### 04 Avril 2024
-
 #### 🇸🇨 Seychelles - Remitano (Cryptocurrency Exchange)
-- **Groupe ransomware:** incransom
+- **Acteur / Groupe:** incransom
 - **Secteur:** Finance / Banking
 - **Site web:** N/A (Mobile App & Exchange Platform)
 - **Statut:** Claim - Unverified
@@ -736,11 +449,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par incransom, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
 
-
 ### 13 Avril 2024
-
 #### 🇿🇦 Afrique du Sud - Caxton and CTP Publishers and Printers
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Media / Entertainment
 - **Site web:** https://www.caxton.co.za
 - **Statut:** Claim - Unverified
@@ -761,9 +472,7 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par hunters, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
 
-
 ### 19 Avril 2024
-
 #### 🇪🇬 Égypte - Vezeeta Pharmacy (vezeeta.com)
 
 - **Date de publication initiale:** 19 avril 2024
@@ -788,9 +497,7 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
   **Unknown :** AFRINTEL n'a pas reçu l'archive complète ni confirmé les 133 000 commandes, la méthode d'acquisition, l'exhaustivité, la validité actuelle des coordonnées, la présence de données médicales protégées ou une confirmation de Vezeeta. L'analyse repose sur la capture et l'extrait visibles ; aucun nom, téléphone, adresse, produit associé à une personne ou identifiant de commande n'est reproduit.
 
-
 ### 23 Avril 2024
-
 #### 🇧🇫 Burkina Faso - ONEF (Observatoire national de l’emploi et de la formation)
 - **Acteur / Groupe:** Pedi
 - **Secteur:** Government / Administration
@@ -802,11 +509,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description:** L’Observatoire national de l’emploi et de la formation (ONEF) est une institution publique burkinabè consacrée aux informations sur l’emploi et la formation professionnelle.
 - **Analyse:** Une publication sur un forum présente une base associée à onef.gov.bf comme une diffusion SQL gratuite et montre la structure d’une table applicative nommée `actualite`, avec des champs liés aux actualités et aux métadonnées de publication. La capture ne permet pas d’établir l’authenticité, l’exhaustivité ou la méthode d’accès initiale. AFRINTEL enregistre cette publication comme une revendication accompagnée d’un échantillon et ne reproduit aucune valeur de la base.
 
-
 ### 29 Avril 2024
-
 #### 🇲🇦 Maroc - SM EMBALLAGE
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Manufacturing / Industry
 - **Site web:** https://smemballage.com/
 - **Statut:** Claim - Unverified
@@ -827,11 +532,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par spacebears, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données opérationnelles et de réponse à incident en cas d'éléments de compromission avérés.
 
-
 ### 29 Avril 2024
-
 #### 🇿🇦 Afrique du Sud - Thinkadam
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Technology / IT
 - **Site web:** https://www.thinkadam.co/
 - **Statut:** Claim - Unverified
@@ -852,11 +555,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par spacebears, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur technologique en cas d'éléments de compromission avérés.
 
-
 ### 30 Avril 2024
-
 #### 🇱🇾 Libye - Mellitah Oil & Gas (Eni / NOC Joint Venture)
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Energy / Utilities
 - **Site web:** N/A
 - **Statut:** Claim - Unverified
@@ -877,14 +578,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
   1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par ransomhub, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
   2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
 
-
-## Mai 2024
-
-
 ### 6 Mai 2024
 
 #### 🇳🇬 Nigeria - Nestoil
-- **Groupe ransomware:** blacksuit
+- **Acteur / Groupe:** blacksuit
 - **Secteur:** Construction / Real Estate
 - **Site web:** [nestoilgroup.com](https://www.nestoilgroup.com)
 - **Statut:** Claim - Unverified
@@ -895,11 +592,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 6 Mai 2024
 
 #### 🇪🇬 Égypte - Elarabygroup
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Professional / Business Services
 - **Site web:** [elarabygroup.com](https://www.elarabygroup.com)
 - **Statut:** Claim - Unverified
@@ -910,11 +606,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 7 Mai 2024
 
 #### 🇿🇦 Afrique du Sud - Lenmed
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Healthcare / Medical
 - **Site web:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut:** Claim - Unverified
@@ -925,11 +620,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 7 Mai 2024
 
 #### 🇿🇦 Afrique du Sud - Kamo jou trading
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Finance / Banking
 - **Site web:** [kamojou.co.za](https://www.kamojou.co.za)
 - **Statut:** Claim - Unverified
@@ -940,11 +634,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 9 Mai 2024
 
 #### 🇳🇦 Namibie - Eif.na
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Finance / Banking
 - **Site web:** [eif.org.na](https://www.eif.org.na)
 - **Statut:** Claim - Unverified
@@ -955,11 +648,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Mai 2024
 
 #### 🇨🇮 Côte d'Ivoire - Treasury of cote d'ivoire
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Finance / Banking
 - **Site web:** [tresor.gouv.ci](https://www.tresor.gouv.ci)
 - **Statut:** Claim - Unverified
@@ -970,11 +662,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 16 Mai 2024
 
 #### 🇪🇬 Égypte - Egyptian sudanese
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Professional / Business Services
 - **Site web:** Not validated from the provided source
 - **Statut:** Claim - Unverified
@@ -985,11 +676,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 25 Mai 2024
 
 #### 🇸🇳 Sénégal - Sysroad
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Technology / IT
 - **Site web:** [sysroad.com](https://www.sysroad.com)
 - **Statut:** Claim - Unverified
@@ -999,7 +689,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description victime:** Sysroad est une entreprise commerciale majeure opérant dans le secteur des information technologies consulting, contribuant de manière significative au tissu économique régional en Senegal.
 
 ----------------------------
-
 
 ### Mai 2024 - date exacte de l'incident non divulguée publiquement
 
@@ -1021,14 +710,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-## Juin 2024
-
-
 ### 4 Juin 2024
 
 #### 🇿🇦 Afrique du Sud - Botselo
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [botselo.com](https://www.botselo.com)
 - **Statut:** Claim - Unverified
@@ -1051,11 +736,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 6 Juin 2024
 
 #### 🇨🇬 Congo - Burotec.biz
-- **Groupe ransomware:** eldorado
+- **Acteur / Groupe:** eldorado
 - **Secteur:** Professional / Business Services
 - **Site web:** [burotec.biz](https://www.burotec.biz)
 - **Statut:** Claim - Unverified
@@ -1078,11 +762,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 23 Juin 2024
 
 #### 🇿🇦 Afrique du Sud - Glyn Marais
-- **Groupe ransomware:** cactus
+- **Acteur / Groupe:** cactus
 - **Secteur:** Legal / Justice
 - **Site web:** [glynmarais.co.za](https://www.glynmarais.co.za)
 - **Statut:** Claim - Unverified
@@ -1105,14 +788,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-## Juillet 2024
-
-
 ### 01 Juillet 2024
-
 #### 🇹🇳 Tunisie - Maxcess-logistics
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Transport / Logistics
 - **Site web:** [maxcess-logistics.com](https://www.maxcess-logistics.com)
 - **Statut:** Claim - Unverified
@@ -1125,9 +803,7 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
-
 ### 02 Juillet 2024
-
 #### 🇪🇹 Éthiopie - F.D.R.E Defence War College (domaine cité : nwc.ndu.edu)
 
 - **Acteur / Groupe:** TheColorYellow
@@ -1149,11 +825,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Analyse:**
   L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Le répertoire local fourni contient cinq PNG, mais aucun PST, EML, MSG ou export Exchange. Les images comprennent des documents institutionnels, un avis en chinois pour les étudiants internationaux, un inventaire visible de 29 postes et un tableau visible de 17 entrées téléphoniques. Ces éléments sont cohérents avec des documents internes du F.D.R.E Defence War College et renforcent l'attribution de l'échantillon, mais ne confirment ni l'accès au serveur Exchange, ni l'existence des 747 Mo, ni l'exhaustivité ou l'origine des données. L'OCR amharique et chinois n'a pas été utilisé pour transcrire les valeurs ; aucun nom, numéro, identifiant matériel ou numéro de téléphone n'est reproduit.
 
-
 ### 5 Juillet 2024
-
 #### 🇿🇦 Afrique du Sud - National health laboratory services (NHLS)
-- **Groupe ransomware:** blacksuit
+- **Acteur / Groupe:** blacksuit
 - **Secteur:** Healthcare / Medical
 - **Site web:** [nhls.ac.za](https://www.nhls.ac.za)
 - **Statut:** Claim - Unverified
@@ -1166,98 +840,28 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
+### 10 Juillet 2024
 
-### 11 Juillet 2024
-
-#### 🇩🇿 Algérie - Hôpital Chahids Mahmoudi (hcm-dz.com)
-
+#### 🇩🇿 Algérie - EmploiPartner
+- **Date de l'incident:** 10 Juillet 2024
+- **Date de publication initiale / source retenue:** 14 juillet 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date du mercredi 10 juillet supportée par les sources de l'audit.
 - **Acteur / Groupe:** Unknown
-- **Contexte source:** Republication par Addka72424 de matériel attribué à FriendlyChemist
-- **Secteur:** Healthcare / Medical
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [hcm-dz.com](https://hcm-dz.com)
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 21 septembre 2023
-- **Date de découverte:** 11 juillet 2024
-
-- **Note de fiabilité:**
-  Le post est explicitement présenté comme une republication ("REPOST") d'une compilation intitulée « Algerian Databases Collection », elle-même republiée d'un post initial attribué au compte FriendlyChemist. La date et le contenu du post d'origine ne sont pas fournis, et la méthode de collecte ou d'accès initial n'est pas précisée.
-
-- **Description:**
-  L'Hôpital Chahids Mahmoudi est un établissement hospitalier algérien basé à Tizi Ouzou, spécialisé notamment en oncologie et médecine nucléaire, avec une extension à Alger et une clinique ouverte à Constantine en 2024. Il exploite le domaine hcm-dz.com pour ses communications professionnelles.
-
-- **Analyse:**
-  Le fichier associé à hcm-dz.com dans la compilation republiée le 11 juillet 2024 est daté du 21 septembre 2023 et présenté comme concernant environ 1 900 utilisateurs. L'échantillon examiné par AFRINTEL correspond à des journaux de filtrage de messagerie (type passerelle anti-spam), et non à un export de dossiers médicaux ou de boîtes de messagerie complètes.
-
-  Les lignes visibles indiquent, pour chaque message, l'expéditeur, le destinataire, l'adresse IP source, l'objet, la taille, un score de filtrage, la direction (entrant, sortant ou interne) et un identifiant de message. Plusieurs objets de messages font référence à des noms de patients et à des types d'examens médicaux (résultats de laboratoire, imagerie, cardiologie), ce qui indique un usage professionnel de la messagerie hospitalière pour la transmission de résultats, sans que le contenu des messages ne soit lui-même visible dans l'échantillon.
-
-  La cohérence du format des journaux et le volume de lignes observé appuient un niveau de confiance moyen quant à l'origine de ces journaux. AFRINTEL n'a toutefois pas pu confirmer un accès effectif aux boîtes de messagerie elles-mêmes, ni l'exhaustivité d'une éventuelle compromission au-delà des lignes republiées. La présence d'objets de messages faisant référence à des patients nommés constitue une exposition de métadonnées de santé sensibles, pouvant faciliter le phishing ciblé, l'usurpation de personnel médical ou administratif, et la reconstitution partielle de parcours de soins. AFRINTEL ne reproduit aucun nom de patient, adresse email, adresse IP ni objet de message issu de l'échantillon examiné.
-
-
-### 11 Juillet 2024
-
-#### 🇩🇿 Algérie - Université de Tlemcen (univ-tlemcen.dz)
-
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** Republication par Addka72424 de matériel attribué à FriendlyChemist
-- **Secteur:** Education / University
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [univ-tlemcen.dz](https://www.univ-tlemcen.dz)
+- **Secteur:** Professional / Business Services
+- **Site web:** [emploipartner.com](https://www.emploipartner.com/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** 27 juin 2022
-- **Date de découverte:** 11 juillet 2024
+- **Analyse:** EmploiPartner a indiqué avoir détecté et maîtrisé une intrusion non autorisée, lancé une enquête et renforcé sa plateforme. Les sources publiques utilisées dans l'audit ne suffisent pas à confirmer une exfiltration de données, un ransomware, un DDoS ou une vente d'accès. AFRINTEL retient `System Intrusion`.
+- **Sources publiques:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
-- **Note de fiabilité:**
-  Comme pour les autres fichiers de la même compilation, l'origine exacte, la méthode d'accès initiale et la date du premier post par FriendlyChemist ne sont pas précisées. L'échantillon montre en revanche une structure de table applicative complète et des enregistrements individuels cohérents.
-
-- **Description:**
-  L'Université de Tlemcen (Abou Bekr Belkaïd) est un établissement public algérien d'enseignement supérieur. Elle exploite une plateforme d'apprentissage en ligne Moodle accessible via le domaine univ-tlemcen.dz.
-
-- **Analyse:**
-  Le fichier associé à univ-tlemcen.dz dans la compilation republiée le 11 juillet 2024 est daté du 27 juin 2022 et présenté comme concernant environ 80 000 utilisateurs. L'échantillon examiné par AFRINTEL montre la structure de la table `mdl_user`, propre au système de gestion de l'apprentissage Moodle, ainsi qu'un extrait d'enregistrements utilisateurs réels.
-
-  Les champs structurels comprennent notamment l'identifiant, le nom d'utilisateur, le mot de passe haché, le prénom, le nom, l'adresse email, l'établissement, le département, le pays, la langue et les dates de création et de dernière connexion. Les enregistrements visibles incluent un compte administrateur associé au domaine univ-tlemcen.dz, ainsi que des comptes rattachés à des adresses email d'autres établissements universitaires algériens, ce qui suggère une fédération d'authentification partagée entre plusieurs universités via ce système Moodle plutôt qu'un périmètre limité à Tlemcen seule. Les mots de passe sont hachés selon des formats hétérogènes, dont un format bcrypt pour certains comptes récents et des formats plus anciens et plus faibles pour d'autres comptes, sans que leur robustesse effective ne puisse être confirmée par AFRINTEL.
-
-  La cohérence de la structure de table Moodle avec les enregistrements observés, combinée à la présence d'un compte administrateur nommément identifiable, justifie un niveau de confiance élevé quant à l'authenticité de cette base. Une compromission de cette ampleur pourrait faciliter la prise de contrôle de comptes étudiants et enseignants, l'usurpation d'identité académique, et un accès en cascade vers d'autres établissements algériens partageant potentiellement la même fédération d'authentification. AFRINTEL ne reproduit aucun identifiant, mot de passe haché, email ni enregistrement individuel issu de l'échantillon examiné.
-
-
-### 11 Juillet 2024
-
-#### 🇩🇿 Algérie - Algeria.com (portail web)
-
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** Republication par Addka72424 de matériel attribué à FriendlyChemist
-- **Secteur:** Media / Entertainment
-- **Statut:** Claim - Data Sample Published
-- **Site web:** [algeria.com](https://www.algeria.com)
-- **Niveau de confiance:** Low
-- **Niveau d'impact:** Level 2
-- **Type d'incident:** Data Leak
-- **Date de la fuite:** Septembre 2019
-- **Date de découverte:** 11 juillet 2024
-
-- **Note de fiabilité:**
-  Les données de ce fichier sont nettement plus anciennes (2019) que les autres éléments de la compilation. Le domaine algeria.com est un portail générique consacré à l'Algérie et non un domaine national .dz ; l'origine exacte de la fuite et la période durant laquelle le service de comptes utilisateurs associé a été actif ne sont pas précisées.
-
-- **Description:**
-  Algeria.com est un portail web consacré à l'Algérie (tourisme, actualités et style de vie), qui a proposé par le passé des comptes utilisateurs et des adresses email sous son propre domaine à une partie de ses visiteurs.
-
-- **Analyse:**
-  Le fichier associé à algeria.com dans la compilation republiée le 11 juillet 2024 est daté de septembre 2019 et présenté comme concernant environ 3 600 comptes utilisateurs. L'échantillon examiné par AFRINTEL comprend les champs identifiant utilisateur, nom d'utilisateur, adresse IP, adresse email, un jeton et un second champ qualifié de « secret ».
-
-  Les valeurs observées dans les champs jeton et secret ne correspondent à aucun format de hachage cryptographique standard clairement identifiable par AFRINTEL, et pourraient correspondre à un ancien mécanisme propriétaire du portail plutôt qu'à un mot de passe directement exploitable. L'ancienneté des données et le caractère générique du domaine, distinct des domaines institutionnels algériens .dz, limitent la pertinence opérationnelle actuelle de cette exposition, bien que les adresses email et noms d'utilisateurs associés puissent encore être réutilisés ailleurs par les personnes concernées.
-
-  Compte tenu de l'ancienneté des données, du volume limité et de l'absence de champ de mot de passe clairement identifiable, AFRINTEL évalue cette revendication avec un niveau de confiance faible et un impact limité. AFRINTEL ne reproduit aucun identifiant, adresse email, adresse IP ni valeur de jeton issu de l'échantillon examiné.
-
+----------------------------
 
 ### 13 Juillet 2024
-
 #### 🇰🇪 Kenya - Kenya urban roads authority (KURA)
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Transport / Logistics
 - **Site web:** [kura.go.ke](https://www.kura.go.ke)
 - **Statut:** Claim - Unverified
@@ -1270,11 +874,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
-
 ### 17 Juillet 2024
-
 #### 🇿🇼 Zimbabwe - Zb financial holdings
-- **Groupe ransomware:** madliberator
+- **Acteur / Groupe:** madliberator
 - **Secteur:** Finance / Banking
 - **Site web:** [zb.co.zw](https://www.zb.co.zw)
 - **Statut:** Claim - Unverified
@@ -1287,11 +889,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
-
 ### 17 Juillet 2024
-
 #### 🇿🇦 Afrique du Sud - Cities network
-- **Groupe ransomware:** madliberator
+- **Acteur / Groupe:** madliberator
 - **Secteur:** Professional / Business Services
 - **Site web:** [sacities.net](https://www.sacities.net)
 - **Statut:** Claim - Unverified
@@ -1304,11 +904,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
-
 ### 17 Juillet 2024
-
 #### 🇪🇬 Égypte - Assih
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Professional / Business Services
 - **Site web:** [assih.com](https://www.assih.com)
 - **Statut:** Claim - Unverified
@@ -1321,11 +919,9 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
-
 ### 22 Juillet 2024
-
 #### 🇿🇦 Afrique du Sud - Sibanye-stillwater
-- **Groupe ransomware:** ransomhouse
+- **Acteur / Groupe:** ransomhouse
 - **Secteur:** Mining / Extractive Industries
 - **Site web:** [sibanyestillwater.com](https://www.sibanyestillwater.com)
 - **Statut:** Claim - Unverified
@@ -1339,14 +935,32 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:**
   La fiche documente une publication sur un leak site ransomware, sans échantillon technique ni confirmation indépendante de la victime dans le matériel fourni. AFRINTEL ne confirme donc ni l'intrusion, ni le chiffrement, ni l'exfiltration sur la seule base de cette publication.
 
+### 26 Juillet 2024
 
-## Août 2024
+#### 🇲🇦 Maroc - Arab Civil Aviation Organization (ACAO)
+- **Date de compromission:** Inconnue - au plus tard le 26 juillet 2024
+- **Date de publication initiale observée:** 26 juillet 2024
+- **Date de republication observée:** 12 novembre 2024
+- **Publication ultérieure observée:** 24 décembre 2024
+- **Acteur / Groupe:** vjvjvj
+- **Affiliation revendiquée:** The Night Hunters - selon le post observé
+- **Secteur:** Aviation
+- **Site web:** [acao.org.ma](https://acao.org.ma)
+- **Statut:** Corroborated
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** L'Arab Civil Aviation Organization (ACAO) est une organisation intergouvernementale basée à Rabat, au Maroc, active dans la coordination de l'aviation civile entre États arabes.
+- **Analyse:** AFRINTEL dispose désormais d'une chronologie plus complète. Une publication du 26 juillet 2024 annonce une base ACAO et fournit un échantillon ainsi qu'une archive annoncée. Une publication du 12 novembre 2024 est explicitement marquée `[REPOST]`, ce qui indique qu'elle ne constitue pas une nouvelle compromission. Une autre publication du 24 décembre 2024 revendique à nouveau une compromission et affiche un échantillon de données associé à ACAO. Les éléments visibles dans les captures et le fichier structuré examiné sont cohérents avec des données liées à l'écosystème ACAO et de l'aviation civile, notamment des informations de contact, fonctions et éléments professionnels. AFRINTEL ne reproduit aucune donnée personnelle brute. Ces éléments corroborent l'existence d'une exposition de données, mais ne permettent pas d'établir la date technique exacte de l'accès initial ni de prouver que la publication de décembre correspond à une seconde intrusion indépendante.
+- **Qualification de la preuve:** `Corroborated`. Plusieurs publications distinctes se recoupent et des échantillons cohérents avec ACAO sont visibles. Il n'existe toutefois pas de confirmation publique de la victime ou d'une autorité identifiée dans les éléments examinés.
+- **Source / provenance:** Publications underground observées et analysées par AFRINTEL ; captures conservées. Aucune URL opérationnelle du forum ou de téléchargement n'est publiée.
 
+----------------------------
 
 ### 01 Août 2024
 
 #### 🇸🇨 Seychelles - Remitano
-- **Groupe ransomware:** meow
+- **Acteur / Groupe:** meow
 - **Secteur:** Finance / Banking
 - **Site web:** [remitano.com](https://www.remitano.com)
 - **Statut:** Claim - Unverified
@@ -1369,11 +983,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 11 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Acdcexpress
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Retail / E-commerce
 - **Site web:** [acdcexpress.com](https://www.acdcexpress.com)
 - **Statut:** Claim - Unverified
@@ -1396,11 +1009,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Août 2024
 
 #### 🇿🇼 Zimbabwe - Netone
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Telecommunications
 - **Site web:** [netone.co.zw](https://www.netone.co.zw)
 - **Statut:** Claim - Unverified
@@ -1423,11 +1035,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Lenmed
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Healthcare / Medical
 - **Site web:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut:** Claim - Unverified
@@ -1453,11 +1064,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Gpf.za
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Finance / Banking
 - **Site web:** [gpf.org.za](https://www.gpf.org.za)
 - **Statut:** Claim - Unverified
@@ -1480,7 +1090,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 14 Août 2024
 
 #### 🇳🇬 Nigeria - Guaranty Trust Bank (GTBank)
@@ -1490,11 +1099,11 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Acteur / Groupe:** Unknown
 - **Secteur:** Finance / Banking
 - **Site web:** [gtbank.com](https://www.gtbank.com/)
-- **Statut:** Victim Confirmed - Attempted Attack
-- **Type d'incident:** Attempted Attack (taxonomy exception)
+- **Statut:** Attempted - Blocked
+- **Type d'incident:** System Intrusion
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 2
-- **Note de taxonomie:** Cette fiche est suivie séparément des six types d'incident principaux d'AFRINTEL. Les éléments disponibles ne permettent pas de la classer comme Ransomware, Data Leak, Access Sale, DDoS, Defacement ou Operational Fraud.
+- **Note de taxonomie:** `Attempted Attack` n'est pas un type AFRINTEL. La tentative isolée de compromission du domaine est classée `System Intrusion` avec le statut `Attempted - Blocked`; aucune compromission de données clients n'a été confirmée.
 - **Note de preuve:** GTBank a confirmé une tentative isolée de compromission de son domaine web. La banque a déclaré que la tentative avait échoué, que le site n'avait pas été cloné et qu'aucune compromission de données clients n'avait eu lieu.
 - **Description victime:** GTBank est une banque commerciale nigériane fournissant des services bancaires aux particuliers, aux entreprises et des services numériques.
 - **Analyse:** GTBank a confirmé une tentative isolée de compromission de son domaine web le 14 août 2024. L'événement a coïncidé avec une indisponibilité temporaire du site et des spéculations publiques selon lesquelles celui-ci aurait été cloné. Selon la banque, la tentative a échoué, le site n'a pas été cloné et les informations clients n'étaient pas stockées sur le site ; aucune compromission de données clients n'a donc été confirmée. AFRINTEL conserve la fiche car la tentative de compromission du domaine et l'impact de disponibilité ont été reconnus par la victime, mais ne transforme pas l'événement en violation réussie et ne lui attribue pas une catégorie des six types sans preuve. L'impact confirmé reste limité à la disponibilité du site/domaine et à la réponse à incident ; la méthode technique d'accès et l'acteur restent inconnus.
@@ -1502,11 +1111,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 17 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Wwwconfig
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Telecommunications
 - **Site web:** [netconfig.co.za](https://www.netconfig.co.za)
 - **Statut:** Claim - Unverified
@@ -1529,7 +1137,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 19 Août 2024
 
 #### 🇹🇳 Tunisie - Eventizer
@@ -1546,11 +1153,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 21 Août 2024
 
 #### 🇨🇮 Côte d'Ivoire - Codival
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Retail / E-commerce
 - **Site web:** [codival.ci](https://www.codival.ci)
 - **Statut:** Claim - Unverified
@@ -1573,11 +1179,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 22 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Don’t waste group
-- **Groupe ransomware:** incransom
+- **Acteur / Groupe:** incransom
 - **Secteur:** Professional / Business Services
 - **Site web:** Not validated from the supplied source
 - **Statut:** Claim - Unverified
@@ -1600,11 +1205,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 22 Août 2024
 
 #### 🇰🇪 Kenya - Instadriver.co
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Retail / E-commerce
 - **Site web:** [instadriver.co](https://www.instadriver.co)
 - **Statut:** Claim - Unverified
@@ -1627,11 +1231,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 24 Août 2024
 
 #### 🇸🇨 Seychelles - Ingotbrokers
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Finance / Banking
 - **Site web:** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Statut:** Claim - Unverified
@@ -1654,11 +1257,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 26 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Onedayonly
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Retail / E-commerce
 - **Site web:** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Statut:** Claim - Unverified
@@ -1681,11 +1283,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Août 2024
 
 #### 🇩🇯 Djibouti - Dpfza.gov.dj
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Government / Administration
 - **Site web:** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Statut:** Claim - Unverified
@@ -1708,11 +1309,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Août 2024
 
 #### 🇿🇼 Zimbabwe - Success microfinance bank
-- **Groupe ransomware:** meow
+- **Acteur / Groupe:** meow
 - **Secteur:** Finance / Banking
 - **Site web:** Not validated from the supplied source
 - **Statut:** Claim - Unverified
@@ -1735,11 +1335,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Août 2024
 
 #### 🇬🇭 Ghana - Ghanare
-- **Groupe ransomware:** BrainCipher
+- **Acteur / Groupe:** BrainCipher
 - **Secteur:** Technology / IT
 - **Site web:** [ghanare.com](https://www.ghanare.com)
 - **Statut:** Claim - Unverified
@@ -1762,14 +1361,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-## Septembre 2024
-
-
 ### 6 Septembre 2024
 
 #### 🇸🇳 Sénégal - Sesam Informatics
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Technology / IT
 - **Site web:** [sesam-informatics.com](https://www.sesam-informatics.com)
 - **Statut:** Claim - Unverified
@@ -1782,31 +1377,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-### 7 Septembre 2024
-
-#### 🇳🇬 Nigeria - Nigerian Navy (navy.mil.ng)
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** NizaarFarah est le compte source affiché dans la publication du 7 septembre ; cela n'établit ni l'attribution de l'intrusion ni l'identité du compte au-delà de la publication observée.
-- **Secteur:** Defense / Security
-- **Site web:** https://navy.mil.ng
-- **Date de publication de la source:** 7 septembre 2024
-- **Date de fuite revendiquée:** 8 novembre 2020
-- **Statut:** Claim - Data Sample Published
-- **Type d'incident:** Data Leak
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 4
-- **Description victime:** La Nigerian Navy est la branche navale des forces armées nigérianes.
-- **Note de preuve:** La capture fournie revendique des centaines de fichiers confidentiels et 1 200 identifiants e-mail, avec environ 300 fichiers et une archive annoncée à 228,4 Mo. Elle montre des échantillons de documents et d'équipements, mais AFRINTEL n'a pas collecté ni reproduit les fichiers ou identifiants sous-jacents.
-- **Analyse:** La source date explicitement la fuite revendiquée du **8 novembre 2020**. AFRINTEL traite donc son apparition en septembre 2024 comme une nouvelle observation ou une remise en circulation d'un matériel ancien, et non comme la preuve d'une nouvelle compromission en septembre 2024. La capture soutient l'existence d'une publication montrant des échantillons de documents et d'équipements, mais ne permet pas d'établir l'authenticité, l'exhaustivité, la validité actuelle ou la provenance complète du matériel annoncé. Les 1 200 identifiants e-mail, environ 300 fichiers et 228,4 Mo restent des volumes revendiqués par la source.
-
-----------------------------
-
-
 ### 12 Septembre 2024
 
 #### 🇨🇲 Cameroun - CNPS Cameroun
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Government / Administration
 - **Site web:** [cnps.cm](https://www.cnps.cm)
 - **Statut:** Claim - Unverified
@@ -1819,11 +1393,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 15 Septembre 2024
 
 #### 🇲🇺 Maurice - Emtel
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Telecommunications
 - **Site web:** [emtel.com](https://www.emtel.com)
 - **Statut:** Claim - Unverified
@@ -1836,11 +1409,29 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 15 Septembre 2024
+
+#### 🇦🇴 Angola - TAAG - Linhas Aéreas de Angola
+- **Date de l'incident:** 15 Septembre 2024
+- **Date de publication initiale / source retenue:** 16 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Aviation
+- **Site web:** [taag.com](https://www.taag.com/)
+- **Statut:** Authority Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.
+- **Sources publiques:** [Agência de Protecção de Dados](https://apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https://www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https://pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)
+
+----------------------------
 
 ### 16 Septembre 2024
 
 #### 🇹🇳 Tunisie - Excelplast Tunisie
-- **Groupe ransomware:** orca
+- **Acteur / Groupe:** orca
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [excelplastunisie.com](https://www.excelplastunisie.com)
 - **Statut:** Claim - Unverified
@@ -1853,14 +1444,30 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 28 Septembre 2024
 
-## Octobre 2024
+#### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)
+- **Date de l'incident:** 28 Septembre 2024
+- **Date de publication initiale / source retenue:** 30 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [cne.org.mz](https://www.cne.org.mz/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.
+- **Sources publiques:** [Club of Mozambique](https://clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https://www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
+----------------------------
 
 ### 3 Octobre 2024
 
 #### 🇲🇬 Madagascar - Université d'Antananarivo (univ-antananarivo.mg)
-- **Type d'incident:** Data Leak
+- **Type d'incident:** System Intrusion
+- **Note de taxonomie:** La publication observée revendique un accès à une base de données, mais le contenu est verrouillé et aucun échantillon n'était accessible. `System Intrusion` est retenu comme claim d'accès non autorisé ; aucune fuite de données n'est confirmée.
 - **Acteur / Groupe:** Unknown
 - **Contexte source:** RainbowBF est le compte du forum affiché comme ayant publié la revendication d'accès à une base verrouillée.
 - **Secteur:** Education / University
@@ -1873,11 +1480,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 4 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - Enterpriseoutsourcing
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Technology / IT
 - **Site web:** [enterpriseoutsourcing.com](https://www.enterpriseoutsourcing.com)
 - **Statut:** Claim - Unverified
@@ -1890,11 +1496,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 
-
 ### 5 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - Winwinza
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Education / University
 - **Site web:** [winwinza.com](https://www.winwinza.com)
 - **Statut:** Claim - Unverified
@@ -1907,11 +1512,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 
-
 ### 7 Octobre 2024
 
 #### 🇩🇿 Algérie - Yassir
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Technology / IT
 - **Site web:** [yassir.com](https://www.yassir.com)
 - **Statut:** Claim - Unverified
@@ -1923,7 +1527,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
-
 
 ### 9 Octobre 2024
 
@@ -1939,11 +1542,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description victime:** La source décrit un prestataire nigérian non identifié opérant plusieurs établissements de santé. Le nom de l’organisation et les établissements concernés n’ont pas pu être établis à partir des éléments disponibles.
 - **Analyse :** Une publication du forum attribuée à Tanaka et datée du 9 octobre 2024 affirme qu’environ 130 000 dossiers de patients provenant de plusieurs établissements de santé nigérians ont été divulgués par l’acteur grep/cn. Le classeur local fourni pour analyse contient 84 lignes de données, et non 129 825 ou 130 000 lignes ; le volume annoncé ne peut donc pas être confirmé indépendamment à partir du fichier disponible. Le classeur contient des champs relatifs à des patients, notamment des noms, identifiants, numéros de téléphone, âge, dates de naissance, sexe, statut matrimonial et identifiants liés aux établissements ; les enregistrements bruts n’ont pas été reproduits. Les éléments soutiennent une revendication d’exposition de données de santé à fort impact potentiel, mais le prestataire exact, le périmètre des établissements, le mode d’obtention, l’exhaustivité et le volume total restent inconnus.
 
-
 ### 9 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - GMG Mining Supplies
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [gmgminingsupplies.com](https://www.gmgminingsupplies.com)
 - **Statut:** Claim - Unverified
@@ -1956,11 +1558,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 
-
 ### 9 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - National Edging
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [nationaledging.com](https://www.nationaledging.com)
 - **Statut:** Claim - Data Sample Published
@@ -1975,11 +1576,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 - **Qualification de la preuve:** L'échantillon examiné soutient fortement une compromission de données internes associée à National Edging. Il n'établit pas indépendamment un chiffrement ransomware, la méthode d'accès initiale ni le volume complet d'exfiltration.
 
-
 ### 11 Octobre 2024
 
 #### 🇬🇭 Ghana - Volta River Authority (VRA)
-- **Groupe ransomware:** blacksuit
+- **Acteur / Groupe:** blacksuit
 - **Secteur:** Energy / Utilities
 - **Site web:** [vra.com](https://www.vra.com)
 - **Statut:** Claim - Unverified
@@ -1992,11 +1592,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 
-
 ### 16 Octobre 2024
 
 #### 🇱🇾 Libye - Ministère de l'Intérieur (moi.gov.ly)
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Government / Administration
 - **Site web:** [moi.gov.ly](https://www.moi.gov.ly)
 - **Statut:** Claim - Unverified
@@ -2008,28 +1607,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
-
-
-### 17 Octobre 2024
-
-#### 🇩🇿 Algérie - Ministère de l'Éducation Nationale (education.gov.dz)
-- **Acteur / Groupe:** Moroccan Empire
-- **Contexte source:** Republication par AmeliaBeaumont sur un forum cybercriminel ; le post examiné référence un dump plus ancien.
-- **Secteur:** Education / University
-- **Site web:** [education.gov.dz](https://www.education.gov.dz)
-- **Date de la fuite initiale revendiquée:** 06 octobre 2022
-- **Date de publication du post examiné:** 17 octobre 2024 (le post inclut directement le lien vers le dump d'origine, initialement partagé le 18 septembre 2023)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** Le Ministère de l'Éducation Nationale est l'administration algérienne chargée du système éducatif public. La publication revendique le vol d'une base de données contenant les informations d'environ 90 000 élèves, incluant des comptes administrateurs et des identifiants de connexion.
-- **Analyse :** Le compte AmeliaBeaumont a publié le 17 octobre 2024 une revendication décrivant une intrusion attribuée à l'acteur « Moroccan Empire » et datée du 6 octobre 2022. Le lien de téléchargement d'origine (une adresse .onion sur un forum de fuite) n'étant plus fonctionnel, le post inclut directement un lien vers le dump, initialement partagé le 18 septembre 2023, qui affiche un échantillon SQL/CSV avec un schéma de champs incluant notamment : numéro d'acte de naissance, type de contrat, établissement, commune, nom, prénom (en français et en arabe), date de naissance, lieu de naissance, numéro d'assurance, numéro de téléphone, diplôme, spécialité, identifiants de compte (`compte`, `cle`), adresse email et un champ de mot de passe en clair. Au moins deux enregistrements complets sont visibles dans l'échantillon, comportant des noms, dates de naissance, numéros de téléphone, une adresse email et un mot de passe en texte brut associés à des personnes identifiées.
-
-  La présence d'un schéma cohérent avec un système de gestion scolaire administratif, incluant des données d'identité, de scolarité et des identifiants de connexion en clair, soutient un niveau de confiance élevé quant à l'authenticité d'un accès à une base de données du ministère ou d'un établissement qui lui est rattaché. Le volume total de 90 000 élèves revendiqué n'a pas pu être vérifié indépendamment au-delà de l'échantillon observé. Le fait que le même dump reste partagé et référencé plus de deux ans après la fuite initialement revendiquée indique une recirculation prolongée de ce jeu de données. L'exposition de mots de passe en clair, combinée aux données d'identité et de scolarité, présente un risque élevé de prise de contrôle de comptes, d'usurpation d'identité et de phishing ciblé contre les élèves, leurs familles et le personnel administratif. AFRINTEL ne reproduit aucun nom, date de naissance, numéro de téléphone, adresse email, mot de passe ni autre donnée personnelle issus de l'échantillon examiné.
-
-----------------------------
-
 
 ### 21 Octobre 2024
 
@@ -2050,11 +1627,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 25 Octobre 2024
 
 #### 🇪🇬 Égypte - Matouk Bassiouny
-- **Groupe ransomware:** raworld
+- **Acteur / Groupe:** raworld
 - **Secteur:** Legal / Justice
 - **Site web:** [matoukbassiouny.com](https://www.matoukbassiouny.com)
 - **Statut:** Claim - Unverified
@@ -2067,14 +1643,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 
-
-## Novembre 2024
-
-
 ### 2 Novembre 2024
 
 #### 🇿🇦 Afrique du Sud - Sumitomo Rubber South Africa
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [srigroup.co.za](https://www.srigroup.co.za)
 - **Statut:** Claim - Data Sample Published
@@ -2088,11 +1660,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Qualification de la preuve:** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
 
-
 ### 4 Novembre 2024
 
 #### 🇹🇿 Tanzanie - College of Business Education (CBE)
-- **Groupe ransomware:** hellcat
+- **Acteur / Groupe:** hellcat
 - **Secteur:** Education / University
 - **Site web:** [cbe.ac.tz](https://www.cbe.ac.tz)
 - **Statut:** Claim - Unverified
@@ -2103,11 +1674,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 4 Novembre 2024
 
 #### 🇸🇩 Soudan - Kenana Sugar Company
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [kenanasugarcompany.com](https://www.kenanasugarcompany.com)
 - **Statut:** Claim - Unverified
@@ -2118,28 +1688,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-### 12 Novembre 2024
-
-#### 🇲🇦 Maroc - Arab Civil Aviation Organization (ACAO)
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** Republication par Hxp7 ; le post de novembre référence une revendication antérieure.
-- **Secteur:** Aviation
-- **Site web:** [acao.org.ma](https://acao.org.ma)
-- **Statut:** Claim - Unverified
-- **Niveau de confiance:** Low
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** L'Arab Civil Aviation Organization (ACAO) est une organisation intergouvernementale basée à Rabat, au Maroc, chargée de coordonner les politiques de sécurité et de régulation de l'aviation civile entre les États arabes.
-- **Analyse:** Une publication de forum datée du 12 novembre 2024 republie une revendication antérieure selon laquelle la base de données de l'ACAO (acao.org.ma) aurait été compromise, mentionnant environ 800 fichiers décrits comme des colonnes de base de données et un lien de téléchargement externe. Aucun extrait ni échantillon de données n'était directement visible dans la publication observée, ce qui empêche d'évaluer le contenu, l'authenticité et l'étendue de la base de données revendiquée. AFRINTEL n'accède pas au lien fourni et ne le reproduit pas. Cette entrée est enregistrée comme une revendication non vérifiée, dans l'attente d'une confirmation indépendante.
-
-----------------------------
-
-
 ### 14 Novembre 2024
 
 #### 🇳🇬 Nigeria - Environmental Design International
-- **Groupe ransomware:** akira
+- **Acteur / Groupe:** akira
 - **Secteur:** Professional / Business Services
 - **Site web:** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
 - **Statut:** Claim - Unverified
@@ -2150,11 +1702,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 17 Novembre 2024
 
 #### 🇪🇬 Égypte - Egyptian Tax Authority (ETA)
-- **Groupe ransomware:** moneymessage
+- **Acteur / Groupe:** moneymessage
 - **Secteur:** Government / Administration
 - **Site web:** [eta.gov.eg](https://www.eta.gov.eg)
 - **Statut:** Claim - Unverified
@@ -2164,7 +1715,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description victime:** L'Egyptian Tax Authority (ETA) est l'administration fiscale publique égyptienne chargée de la collecte des impôts, de la conformité, des services aux contribuables et de la gestion fiscale.
 
 ----------------------------
-
 
 ### 20-21 Novembre 2024 - les sources officielles divergent d'un jour
 
@@ -2187,11 +1737,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 24 Novembre 2024
 
 #### 🇰🇪 Kenya - EFI Sales
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [efisales.co.ke](https://www.efisales.co.ke)
 - **Statut:** Claim - Unverified
@@ -2202,11 +1751,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 27 Novembre 2024
 
 #### 🇪🇹 Éthiopie - Habesha Cement
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [habeshacement.com](https://www.habeshacement.com)
 - **Statut:** Claim - Unverified
@@ -2217,11 +1765,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 27 Novembre 2024
 
 #### 🇪🇬 Égypte - Contrack Facilities Management
-- **Groupe ransomware:** raworld
+- **Acteur / Groupe:** raworld
 - **Secteur:** Professional / Business Services
 - **Site web:** [contrackfm.com](https://www.contrackfm.com)
 - **Statut:** Claim - Unverified
@@ -2231,7 +1778,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 - **Description victime:** Contrack Facilities Management est une société égyptienne de facility management fournissant des services de maintenance, d'exploitation et de support pour les bâtiments et sites d'entreprise.
 
 ----------------------------
-
 
 ### 28 Novembre 2024
 
@@ -2248,7 +1794,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Novembre 2024
 
 #### 🇧🇫 Burkina Faso - Système gouvernemental de gestion des données COVID-19
@@ -2264,11 +1809,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Novembre 2024
 
 #### 🇳🇬 Nigeria - Briatek
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Technology / IT
 - **Site web:** [briatek.com.ng](https://www.briatek.com.ng)
 - **Statut:** Claim - Unverified
@@ -2279,11 +1823,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 28 Novembre 2024
 
 #### 🇨🇲 Cameroun - Chanas Assurances S.A.
-- **Groupe ransomware:** fog
+- **Acteur / Groupe:** fog
 - **Secteur:** Finance / Banking
 - **Site web:** [chanasassurances.com](https://www.chanasassurances.com)
 - **Statut:** Claim - Unverified
@@ -2294,11 +1837,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 29 Novembre 2024
 
 #### 🇳🇦 Namibie - Namforce Life Insurance
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Finance / Banking
 - **Site web:** [namforce.com.na](https://www.namforce.com.na)
 - **Statut:** Claim - Unverified
@@ -2309,11 +1851,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 29 Novembre 2024
 
 #### 🇿🇦 Afrique du Sud - PPOTTS
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Technology / IT
 - **Site web:** [ppotts.com](https://www.ppotts.com)
 - **Statut:** Claim - Data Sample Published
@@ -2325,14 +1866,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-## Décembre 2024
-
-
 ### 3 Décembre 2024
 
 #### 🇸🇩 Soudan - DAL Group
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [dalgroup.com](https://www.dalgroup.com)
 - **Statut:** Claim - Data Sample Published
@@ -2344,32 +1881,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
-### Décembre 2024 - date exacte de l'incident non établie publiquement
-
-#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
-- **Date de l'incident:** Décembre 2024 - date exacte non établie publiquement
-- **Date de publication initiale:** 3 décembre 2024
-- **Date de correction AFRINTEL:** 23 août 2026
-- **Acteur / Groupe:** Unknown
-- **Secteur:** Government / Administration
-- **Site web:** [msea.go.ke](https://msea.go.ke/)
-- **Statut:** Corroborated - No Direct Victim Confirmation Located
-- **Type d'incident:** Data Leak
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 4
-- **Description victime:** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
-- **Analyse:** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
-- **Qualification de la preuve:** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
-- **Sources publiques:** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
-
-----------------------------
-
-
 ### 9 Décembre 2024
 
 #### 🇲🇷 Mauritanie - Bankily
-- **Groupe ransomware:** apt73/bashe
+- **Acteur / Groupe:** apt73/bashe
 - **Secteur:** Finance / Banking
 - **Site web:** [bankily.mr](https://www.bankily.mr)
 - **Statut:** Claim - Unverified
@@ -2380,11 +1895,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 10 Décembre 2024
 
 #### 🇳🇦 Namibie - Telecom Namibia
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Telecommunications
 - **Site web:** [telecom.na](https://www.telecom.na)
 - **Statut:** Claim - Unverified
@@ -2395,11 +1909,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 13 Décembre 2024
 
 #### 🇪🇬 Égypte - Kazyon
-- **Groupe ransomware:** moneymessage
+- **Acteur / Groupe:** moneymessage
 - **Secteur:** Retail / E-commerce
 - **Site web:** [kazyon.com](https://www.kazyon.com)
 - **Statut:** Claim - Unverified
@@ -2410,11 +1923,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 15 Décembre 2024
 
 #### 🇿🇲 Zambie - Tumeny Payments Limited
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Finance / Banking
 - **Site web:** [tumenypay.com](https://www.tumenypay.com)
 - **Statut:** Claim - Unverified
@@ -2425,11 +1937,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 16 Décembre 2024
 
 #### 🇳🇬 Nigeria - Gouvernement de l'État d'Ekiti
-- **Groupe ransomware:** funksec
+- **Acteur / Groupe:** FunkSec
 - **Secteur:** Government / Administration
 - **Site web:** [ekitistate.gov.ng](https://ekitistate.gov.ng)
 - **Statut:** Claim - Data Sample Published
@@ -2442,7 +1953,6 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 ----------------------------
 
 - **Qualification de la preuve:** L'archive examinée soutient fortement une exposition réelle de données associée au gouvernement de l'État d'Ekiti. Elle n'établit pas indépendamment un chiffrement ransomware, le vecteur d'accès initial ni une perturbation opérationnelle.
-
 
 ### 18 Décembre 2024
 
@@ -2464,11 +1974,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 20 Décembre 2024
 
 #### 🇧🇼 Botswana - Water Utilities Corporation (WUC)
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Water / Utilities
 - **Site web:** [wuc.bw](https://www.wuc.bw)
 - **Statut:** Claim - Unverified
@@ -2479,11 +1988,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 21 Décembre 2024
 
 #### 🇹🇳 Tunisie - Groupe SETCAR
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [groupe-setcar.com.tn](https://www.groupe-setcar.com.tn)
 - **Statut:** Claim - Unverified
@@ -2494,11 +2002,29 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### 23 Décembre 2024 - première observation rapportée
+
+#### 🇪🇬 Égypte - EgyptAir
+- **Date de l'incident:** 23 Décembre 2024 - première observation rapportée
+- **Date de publication initiale / source retenue:** 26 décembre 2024 - date d'indexation de la source d'audit
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Le 23 décembre correspond à la première observation rapportée ; la date d'obtention de l'accès n'est pas établie publiquement.
+- **Acteur / Groupe:** FunkSec
+- **Secteur:** Aviation
+- **Site web:** [egyptair.com](https://www.egyptair.com/)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Access Sale
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Analyse:** FunkSec a listé EgyptAir fin décembre 2024 avec une offre de vente d'accès. Plusieurs trackers documentent la revendication, mais aucune confirmation publique de la victime n'a été identifiée dans l'audit. Le périmètre, la validité de l'accès, sa persistance, une exploitation ultérieure et une éventuelle exfiltration restent non confirmés. AFRINTEL retient `Access Sale` et ne convertit pas la revendication en ransomware ou Data Leak.
+- **Sources publiques:** [Digital Checkmark](https://digitalchk.com/ransomware-group/funksec/) | [BreachSense](https://www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https://phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+
+----------------------------
 
 ### 24 Décembre 2024
 
 #### 🇿🇦 Afrique du Sud - Baker Tilly Morrison Murray
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Professional / Business Services
 - **Site web:** [bakertillymm.co.za](https://www.bakertillymm.co.za)
 - **Statut:** Claim - Data Sample Published
@@ -2510,11 +2036,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 24 Décembre 2024
 
 #### 🇩🇿 Algérie - ASJP (Algerian Scientific Journal Platform)
-- **Groupe ransomware:** funksec
+- **Acteur / Groupe:** FunkSec
 - **Secteur:** Education / University
 - **Site web:** [asjp.cerist.dz](https://asjp.cerist.dz)
 - **Statut:** Claim - Data Sample Published
@@ -2528,11 +2053,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 - **Qualification de la preuve:** Le matériel côté serveur examiné soutient fortement une compromission au niveau du système de fichiers associée à ASJP. Il n'établit pas indépendamment un chiffrement ransomware, une interruption de service ni le mécanisme d'accès initial.
 
-
 ### 28 Décembre 2024
 
 #### 🇿🇦 Afrique du Sud - Cell C
-- **Groupe ransomware:** ransomhouse
+- **Acteur / Groupe:** ransomhouse
 - **Secteur:** Telecommunications
 - **Site web:** [cellc.co.za](https://www.cellc.co.za)
 - **Statut:** Claim - Unverified
@@ -2543,11 +2067,10 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
-
 ### 29 Décembre 2024
 
 #### 🇹🇿 Tanzanie - WOSAC
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Transport / Logistics
 - **Site web:** [wosac.co.tz](https://www.wosac.co.tz)
 - **Statut:** Claim - Unverified
@@ -2558,7 +2081,41 @@ Les 10 corrections rétrospectives 2024 validées sont entièrement intégrées.
 
 ----------------------------
 
+### Décembre 2024 - date exacte de l'incident non établie publiquement
 
-## Auteur
-*Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence*
+#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
+- **Date de l'incident:** Décembre 2024 - date exacte non établie publiquement
+- **Date de publication initiale:** 3 décembre 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [msea.go.ke](https://msea.go.ke/)
+- **Statut:** Corroborated - No Direct Victim Confirmation Located
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
+- **Analyse:** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
+- **Qualification de la preuve:** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
+- **Sources publiques:** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
+
+----------------------------
+
+### 30 Décembre 2024
+
+#### 🇪🇬 Égypte - Misr Pharmacies
+- **Date de compromission:** Inconnue
+- **Date de publication initiale observée:** 30 décembre 2024 à 20:03 - selon la capture conservée
+- **Acteur / Groupe:** Satanic
+- **Secteur:** Healthcare / Medical
+- **Site web:** [misrpharmacies.com](https://misrpharmacies.com/)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Description victime:** Misr Pharmacies est une enseigne pharmaceutique égyptienne disposant de services de pharmacie et de commande en ligne.
+- **Analyse:** Une publication underground du 30 décembre 2024 attribuée à `Satanic` annonce explicitement une base `Misr Pharmacies Misr Online Database - Leaked, Download!`. Le post décrit des ensembles de données associés aux commandes et aux prescriptions électroniques, avec des champs liés aux clients, contacts, facturation, livraison, statut de commande et informations de prescription. Des liens de téléchargement étaient affichés au moment de la publication. Les fichiers ne sont plus disponibles au moment de la présente réévaluation, de sorte qu'AFRINTEL ne peut pas vérifier indépendamment leur authenticité, leur volume, leur contenu réel ou leur provenance technique. AFRINTEL ne reproduit aucune donnée personnelle issue de la publication.
+- **Qualification de la preuve:** Le type `Data Leak` est retenu car la revendication porte explicitement sur une base divulguée et proposée au téléchargement. Le statut reste `Claim - Unverified` car les données annoncées ne sont plus disponibles pour une validation indépendante par AFRINTEL.
+- **Source / provenance:** Publication underground originale attribuée à Satanic, observée le 30 décembre 2024 ; capture conservée par AFRINTEL. Aucun lien de téléchargement n'est reproduit.
+
+----------------------------

@@ -1,41 +1,14 @@
-[! [AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Cyberincidents AFRINTEL - Mars 2024 - corpus canonique (9 fiches)
 
-# Cyberattaques en Afrique - Mars 2024 : liste des 9 victimes
+👉🏾 [English version](./victims.md)
 
-👉🏾 [**English version available here**](./victims.md)
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Mars 2024
-
-## Synthèse mensuelle
-
-Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **6 pays africains**.
-
-### 1 Mars 2024
-
-#### 🇪🇹 Éthiopie - Portails fédéraux eTrade et eRIS
-- **Acteur / Groupe:** ThreatSec
-- **Secteur:** Government / Administration
-- **Site web:** [etrade.gov.et](https://etrade.gov.et) ; [eris.efda.gov.et](https://eris.efda.gov.et)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** La publication associe le portail eTrade du ministère éthiopien du Commerce et de l'Intégration régionale au système eRIS de l'Ethiopian Food and Drug Authority. Il s'agit de deux services fédéraux distincts réunis dans une même revendication.
-
-- **Analyse:**
-  - **Observé :** la fiche est classée au 1er mars 2024 à la demande du mainteneur. La publication de forum, relayée par Tanaka et datée du 24 août 2023, attribue à ThreatSec une revendication d’accès aux deux portails et de collecte de 43 fichiers, dont des PDF, des images et des documents d'identité gouvernementaux. Un PDF fourni localement a été examiné en lecture seule : 3 023 068 octets, cinq pages scannées, SHA-256 `5184bdfc94dfd42e4d78da290ea3860ac074360c684a715354e0447241bfc642`. Les cinq pages contiennent un document administratif et contractuel en amharique, avec des cachets officiels, des signatures manuscrites et des montants financiers. Aucune donnée personnelle brute n'est reproduite.
-  - **Hypothèse :** les caractéristiques documentaires sont cohérentes avec un document administratif éthiopien et renforcent la plausibilité structurelle de l'échantillon, sans établir sa provenance technique.
-  - **Inconnu :** la méthode d'acquisition, le lien direct du PDF avec chacun des deux portails, l'existence et le contenu des 42 autres fichiers revendiqués, ainsi qu'une confirmation par les organismes concernés restent non vérifiés. L'examen visuel couvre les cinq pages, mais l'OCR complet de l'amharique n'a pas pu être validé.
-
-----------------------------
 
 ### 9 Mars 2024
 
 #### 🇪🇬 Égypte - Go4Kora
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Media / Entertainment
 - **Site web:** [go4kora.tv](https://go4kora.tv)
 - **Statut:** Claim - Unverified
@@ -49,7 +22,7 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 ### 11 Mars 2024
 
 #### 🇿🇦 Afrique du Sud - Government Printing Works (GPW)
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Government / Administration
 - **Site web:** [gpw.gov.za](https://www.gpw.gov.za)
 - **Statut:** Claim - Unverified
@@ -63,7 +36,7 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 ### 15 Mars 2024
 
 #### 🇹🇳 Tunisie - ATL Leasing
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Finance / Banking
 - **Site web:** [atlleasing.com.tn](https://www.atlleasing.com.tn)
 - **Statut:** Claim - Unverified
@@ -77,7 +50,7 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 ### 15 Mars 2024
 
 #### 🇪🇬 Égypte - El Ezaby Pharmacy
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Healthcare / Medical
 - **Site web:** [elezabypharmacy.com](https://www.elezabypharmacy.com)
 - **Statut:** Claim - Unverified
@@ -88,10 +61,29 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 
 ----------------------------
 
+### 15 Mars 2024 - date rapportée
+
+#### 🇨🇻 Cabo Verde - Assembleia Nacional de Cabo Verde
+- **Date de l'incident:** 15 Mars 2024 - date rapportée
+- **Date de publication initiale / source retenue:** 22 mars 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Début rapporté le vendredi 15 mars ; la publication de référence est du 22 mars.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [parlamento.cv](https://www.parlamento.cv/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** Le responsable de la communication et de la sécurité de l'information du Parlement a confirmé un ransomware ayant chiffré plusieurs serveurs dans un segment du réseau. Le fonctionnement parlementaire a été perturbé et certains serveurs ont dû être récupérés. Les sources examinées ne suffisent pas à établir une exfiltration de données ; elle n'est donc pas déduite.
+- **Sources publiques:** [RTC Cabo Verde](https://www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+
 ### 16 Mars 2024
 
 #### 🇳🇦 Namibie - Agribank Namibia
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Finance / Banking
 - **Site web:** [agribank.com.na](https://www.agribank.com.na)
 - **Statut:** Claim - Unverified
@@ -105,7 +97,7 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 ### 22 Mars 2024
 
 #### 🇪🇬 Égypte - PGESCo
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Energy / Utilities
 - **Site web:** [pgesco.com](https://www.pgesco.com)
 - **Statut:** Claim - Unverified
@@ -135,7 +127,7 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 ### 27 Mars 2024
 
 #### 🇿🇦 Afrique du Sud - Nampak
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [nampak.com](https://www.nampak.com)
 - **Statut:** Claim - Unverified
@@ -145,8 +137,3 @@ Mars 2024 contient **9 fiches incident documentées** : **7 Ransomware**, **2 Da
 - **Description victime:** Nampak est le plus grand fabricant d'emballages du continent africain, basé en Afrique du Sud, fournissant des solutions de conditionnement en métal, plastique, papier et verre.
 
 ----------------------------
-
-## ✍🏿 Author
-*Adama ASSIONGBON*
-*Consultant SOC & Cyber Threat Intelligence*
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)

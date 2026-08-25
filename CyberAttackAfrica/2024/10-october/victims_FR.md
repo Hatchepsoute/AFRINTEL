@@ -1,25 +1,15 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Cyberincidents AFRINTEL - Octobre 2024 - corpus canonique (11 fiches)
 
-# Cyberattaques en Afrique: Octobre 2024 : Liste de 12 victimes
+👉🏾 [English version](./victims.md)
 
-👉🏾 [**English version available here**](./victims.md)
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Octobre 2024
-
-## Synthèse mensuelle
-
-Octobre 2024 contient **12 fiches incident documentées** : **8 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **8 pays africains**.
-
-La maturité des preuves varie fortement : National Edging dispose d'un échantillon local de documents internes examiné ; trois Data Leak présentent des échantillons visibles de profondeur variable ; la revendication University of Antananarivo est restée verrouillée et inaccessible ; sept autres listings ransomware restent des revendications non vérifiées.
 
 ### 3 Octobre 2024
 
 #### 🇲🇬 Madagascar - Université d'Antananarivo (univ-antananarivo.mg)
-- **Type d'incident:** Data Leak
+- **Type d'incident:** System Intrusion
+- **Note de taxonomie:** La publication observée revendique un accès à une base de données, mais le contenu est verrouillé et aucun échantillon n'était accessible. `System Intrusion` est retenu comme claim d'accès non autorisé ; aucune fuite de données n'est confirmée.
 - **Acteur / Groupe:** Unknown
 - **Contexte source:** RainbowBF est le compte du forum affiché comme ayant publié la revendication d'accès à une base verrouillée.
 - **Secteur:** Education / University
@@ -35,7 +25,7 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ### 4 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - Enterpriseoutsourcing
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Technology / IT
 - **Site web:** [enterpriseoutsourcing.com](https://www.enterpriseoutsourcing.com)
 - **Statut:** Claim - Unverified
@@ -47,10 +37,11 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+
 ### 5 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - Winwinza
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Education / University
 - **Site web:** [winwinza.com](https://www.winwinza.com)
 - **Statut:** Claim - Unverified
@@ -62,10 +53,11 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+
 ### 7 Octobre 2024
 
 #### 🇩🇿 Algérie - Yassir
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Technology / IT
 - **Site web:** [yassir.com](https://www.yassir.com)
 - **Statut:** Claim - Unverified
@@ -77,6 +69,7 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+
 ### 9 Octobre 2024
 
 #### 🇳🇬 Nigeria - Prestataire non identifié d’établissements de santé
@@ -94,7 +87,7 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ### 9 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - GMG Mining Supplies
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [gmgminingsupplies.com](https://www.gmgminingsupplies.com)
 - **Statut:** Claim - Unverified
@@ -106,10 +99,11 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+
 ### 9 Octobre 2024
 
 #### 🇿🇦 Afrique du Sud - National Edging
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [nationaledging.com](https://www.nationaledging.com)
 - **Statut:** Claim - Data Sample Published
@@ -123,10 +117,11 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 - **Qualification de la preuve:** L'échantillon examiné soutient fortement une compromission de données internes associée à National Edging. Il n'établit pas indépendamment un chiffrement ransomware, la méthode d'accès initiale ni le volume complet d'exfiltration.
+
 ### 11 Octobre 2024
 
 #### 🇬🇭 Ghana - Volta River Authority (VRA)
-- **Groupe ransomware:** blacksuit
+- **Acteur / Groupe:** blacksuit
 - **Secteur:** Energy / Utilities
 - **Site web:** [vra.com](https://www.vra.com)
 - **Statut:** Claim - Unverified
@@ -138,10 +133,11 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+
 ### 16 Octobre 2024
 
 #### 🇱🇾 Libye - Ministère de l'Intérieur (moi.gov.ly)
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Government / Administration
 - **Site web:** [moi.gov.ly](https://www.moi.gov.ly)
 - **Statut:** Claim - Unverified
@@ -153,25 +149,6 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
-### 17 Octobre 2024
-
-#### 🇩🇿 Algérie - Ministère de l'Éducation Nationale (education.gov.dz)
-- **Acteur / Groupe:** Moroccan Empire
-- **Contexte source:** Republication par AmeliaBeaumont sur un forum cybercriminel ; le post examiné référence un dump plus ancien.
-- **Secteur:** Education / University
-- **Site web:** [education.gov.dz](https://www.education.gov.dz)
-- **Date de la fuite initiale revendiquée:** 06 octobre 2022
-- **Date de publication du post examiné:** 17 octobre 2024 (le post inclut directement le lien vers le dump d'origine, initialement partagé le 18 septembre 2023)
-- **Statut:** Claim - Data Sample Published
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 3
-- **Type d'incident:** Data Leak
-- **Description victime:** Le Ministère de l'Éducation Nationale est l'administration algérienne chargée du système éducatif public. La publication revendique le vol d'une base de données contenant les informations d'environ 90 000 élèves, incluant des comptes administrateurs et des identifiants de connexion.
-- **Analyse :** Le compte AmeliaBeaumont a publié le 17 octobre 2024 une revendication décrivant une intrusion attribuée à l'acteur « Moroccan Empire » et datée du 6 octobre 2022. Le lien de téléchargement d'origine (une adresse .onion sur un forum de fuite) n'étant plus fonctionnel, le post inclut directement un lien vers le dump, initialement partagé le 18 septembre 2023, qui affiche un échantillon SQL/CSV avec un schéma de champs incluant notamment : numéro d'acte de naissance, type de contrat, établissement, commune, nom, prénom (en français et en arabe), date de naissance, lieu de naissance, numéro d'assurance, numéro de téléphone, diplôme, spécialité, identifiants de compte (`compte`, `cle`), adresse email et un champ de mot de passe en clair. Au moins deux enregistrements complets sont visibles dans l'échantillon, comportant des noms, dates de naissance, numéros de téléphone, une adresse email et un mot de passe en texte brut associés à des personnes identifiées.
-
-  La présence d'un schéma cohérent avec un système de gestion scolaire administratif, incluant des données d'identité, de scolarité et des identifiants de connexion en clair, soutient un niveau de confiance élevé quant à l'authenticité d'un accès à une base de données du ministère ou d'un établissement qui lui est rattaché. Le volume total de 90 000 élèves revendiqué n'a pas pu être vérifié indépendamment au-delà de l'échantillon observé. Le fait que le même dump reste partagé et référencé plus de deux ans après la fuite initialement revendiquée indique une recirculation prolongée de ce jeu de données. L'exposition de mots de passe en clair, combinée aux données d'identité et de scolarité, présente un risque élevé de prise de contrôle de comptes, d'usurpation d'identité et de phishing ciblé contre les élèves, leurs familles et le personnel administratif. AFRINTEL ne reproduit aucun nom, date de naissance, numéro de téléphone, adresse email, mot de passe ni autre donnée personnelle issus de l'échantillon examiné.
-
-----------------------------
 
 ### 21 Octobre 2024
 
@@ -195,7 +172,7 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ### 25 Octobre 2024
 
 #### 🇪🇬 Égypte - Matouk Bassiouny
-- **Groupe ransomware:** raworld
+- **Acteur / Groupe:** raworld
 - **Secteur:** Legal / Justice
 - **Site web:** [matoukbassiouny.com](https://www.matoukbassiouny.com)
 - **Statut:** Claim - Unverified
@@ -207,7 +184,3 @@ La maturité des preuves varie fortement : National Edging dispose d'un échanti
 ----------------------------
 
 - **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
-## ✍🏿 Auteur
-*Adama ASSIONGBON*
-*Consultant SOC & Cyber Threat Intelligence*
-[Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)

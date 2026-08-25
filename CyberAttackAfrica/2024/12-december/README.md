@@ -1,231 +1,472 @@
-# AFRINTEL CTI Report - December 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - December 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-The corrected December 2024 AFRINTEL corpus contains **14 documented incident records across 12 African countries**: **11 Ransomware**, **2 Data Leak** and **1 Defacement**. No Access Sale, DDoS or Operational Fraud record is present.
+In December 2024, AFRINTEL retains **16 canonical cyber incidents across 12 countries**. The month is led by **Ransomware (11, 68.8%)** followed by **Data Leak (3, 18.8%)**. Leading countries are **Egypt (3)**, **Nigeria (2)**, **South Africa (2)**. Leading sectors are **Government / Administration (3)**, **Finance / Banking (2)**, **Telecommunications (2)**. Most frequent actor/group labels are `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` means missing attribution, not an actor.
 
-Two retrospective corrections are added. **Micro and Small Enterprises Authority (MSEA)** in Kenya is recorded as a `Data Leak` with `High` confidence and a `Corroborated - No Direct Victim Confirmation Located` status. **National Bureau of Statistics (NBS)** in Nigeria is recorded as a `Defacement` with `Victim Confirmed`, `Very High` confidence and documented multi-week service disruption.
-
-Nigeria now records two incidents, joining South Africa as the only country with two records. Kenya becomes the twelfth country represented in December.
-
-Four original cases remain particularly evidence-rich: DAL Group, Ekiti State Government, Baker Tilly Morrison Murray and ASJP. The two retrospective additions add two different evidence profiles: strong external corroboration for MSEA and direct victim confirmation for NBS.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | November 2024 | December 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 16 | **14** | **-2 (-12.5%)** |
-| Ransomware | 12 | **11** | **-1 (-8.3%)** |
-| Data Leak | 2 | **2** | Stable |
-| Access Sale | 2 | **0** | **-2 (-100.0%)** |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **1** | **+1 (new)** |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 15 | 16 | +1 (+6.7%) |
+| Ransomware | 12 | 11 | -1 (-8.3%) |
+| Data Leak | 1 | 3 | +2 (+200.0%) |
+| Access Sale | 2 | 1 | -1 (-50.0%) |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 1 | +1 (new) |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 0 | 0 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-December is slightly smaller than corrected November, but its evidence mix broadens: the corpus includes ransomware publications, two Data Leak records with different evidence maturity, and one victim-confirmed Defacement.
+### 1.2 Comparative analysis
+
+Monthly volume **increases by 1 incident(s)**. Structural changes are: Data Leak 1->3 (+2), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-31 December 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective corrections:** MSEA and NBS are the two final missing incidents from the 2024 correction registry.
-- **MSEA rule:** later authoritative references materially strengthen the breach assessment, but no direct MSEA notification was located in the reviewed retrospective source set; status therefore remains corroborated rather than victim-confirmed.
-- **NBS rule:** website compromise and defacement are confirmed; no backend dataset theft is inferred.
-- A sample's authenticity, victim attribution, incident mechanics and full scope remain separate analytical questions.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **11** | **78.6%** |
-| Data Leak | **2** | **14.3%** |
-| Defacement | **1** | **7.1%** |
-| Access Sale | 0 | 0.0% |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 11 | 68.8% |
+| Data Leak | 3 | 18.8% |
+| Access Sale | 1 | 6.2% |
 | DDoS | 0 | 0.0% |
+| Defacement | 1 | 6.2% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **14** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - December 2024
     "Ransomware" : 11
-    "Data Leak" : 2
+    "Data Leak" : 3
+    "Access Sale" : 1
     "Defacement" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Defacement | Total |
-|---|---:|---:|---:|---:|
-| 🇿🇦 South Africa | 2 | 0 | 0 | **2** |
-| 🇳🇬 Nigeria | 1 | 0 | 1 | **2** |
-| 🇩🇿 Algeria | 1 | 0 | 0 | 1 |
-| 🇧🇼 Botswana | 1 | 0 | 0 | 1 |
-| 🇪🇬 Egypt | 1 | 0 | 0 | 1 |
-| 🇰🇪 Kenya | 0 | 1 | 0 | 1 |
-| 🇲🇷 Mauritania | 1 | 0 | 0 | 1 |
-| 🇳🇦 Namibia | 1 | 0 | 0 | 1 |
-| 🇸🇩 Sudan | 0 | 1 | 0 | 1 |
-| 🇹🇿 Tanzania | 1 | 0 | 0 | 1 |
-| 🇹🇳 Tunisia | 1 | 0 | 0 | 1 |
-| 🇿🇲 Zambia | 1 | 0 | 0 | 1 |
-| **Total** | **11** | **2** | **1** | **14** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Egypt | 3 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| South Africa | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Sudan | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Mauritania | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zambia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Botswana | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tanzania | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kenya | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Defacement | Total |
-|---|---:|---:|---:|---:|
-| Southern Africa | 5 | 0 | 0 | **5** |
-| North Africa | 4 | 0 | 0 | **4** |
-| East Africa | 1 | 2 | 0 | **3** |
-| West Africa | 1 | 0 | 1 | **2** |
-| **Total** | **11** | **2** | **1** | **14** |
+| Region | Records | Share |
+|---|---|---|
+| North Africa | 6 | 37.5% |
+| Southern Africa | 5 | 31.2% |
+| East Africa | 3 | 18.8% |
+| West Africa | 2 | 12.5% |
 
-### 3.4 Harmonized sector distribution
+## 6. Sector distribution
 
 | Sector | Records | Share |
-|---|---:|---:|
-| Government / Administration | **3** | **21.4%** |
-| Finance / Banking | 2 | 14.3% |
-| Telecommunications | 2 | 14.3% |
-| Agriculture / Agribusiness | 1 | 7.1% |
-| Retail / E-commerce | 1 | 7.1% |
-| Water / Utilities | 1 | 7.1% |
-| Manufacturing / Industry | 1 | 7.1% |
-| Professional / Business Services | 1 | 7.1% |
-| Education / University | 1 | 7.1% |
-| Transport / Logistics | 1 | 7.1% |
-| **Total** | **14** | **100%** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| ransomhub | 2 |
-| killsec | 2 |
-| funksec | 2 |
-| Unknown | 2 |
-| apt73/bashe | 1 |
-| hunters | 1 |
-| moneymessage | 1 |
-| sarcoma | 1 |
-| ransomhouse | 1 |
-| arcusmedia | 1 |
-| **Total** | **14** |
-
-The two `Unknown` records are MSEA and NBS. MSEA has no confirmed intrusion actor in the reviewed source set. NBS confirmed the website compromise, but no named attacker is established.
-
-```mermaid
-flowchart LR
-    FUN["funksec - 2"] --> EKI["Nigeria - Ekiti State Government"]
-    FUN --> ASJP["Algeria - ASJP"]
-    KIL["killsec - 2"] --> TUM["Zambia - Tumeny Payments"]
-    KIL --> WUC["Botswana - Water Utilities Corporation"]
-    RH["ransomhub - 2"] --> DAL["Sudan - DAL Group, Data Leak"]
-    RH --> SET["Tunisia - Groupe SETCAR"]
-    UNK["Unknown - 2"] --> MSEA["Kenya - MSEA, Data Leak"]
-    UNK --> NBS["Nigeria - NBS, Defacement"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 11 records
-
-The eleven ransomware records are the same original December publications. Most remain claims whose technical mechanics are not independently established.
-
-**Ekiti State Government** and **ASJP** contain the strongest locally reviewed technical material. The Ekiti archive includes a large website document repository and identity-related records that strongly support genuine exposure associated with the state portal. ASJP includes server-side filesystem material, more than 1,700 user folders and a separate 499-record name/email list consistent with the platform. Both are `Very High` confidence exposure assessments.
-
-However, those samples establish data compromise more strongly than ransomware mechanics. Neither sample independently proves encryption, service interruption or the initial-access vector.
-
-**Baker Tilly Morrison Murray** has a smaller sample containing identity, contract and employment-related documents, supporting `Medium` confidence in a published data sample associated with the ransomware claim.
-
-The remaining ransomware listings require victim confirmation or public technical evidence before operational disruption, encryption or exfiltration scope can be treated as established.
-
-### 4.2 Data Leak - 2 records
-
-**DAL Group** remains a sample-backed Data Leak. Twelve reviewed screenshots include financial, banking, contractual, customer-account and identity-related material linked to the conglomerate. The material supports broad document exposure, but the full volume, affected-person count and acquisition method remain unknown.
-
-**MSEA** is the retrospective Data Leak addition. Public reporting described employee records, government correspondence, financial statements and business-registration material offered for sale. Later references by INTERPOL's Africa Cyberthreat Assessment and ENACT strengthen the breach assessment. However, the reviewed retrospective source set contains no direct MSEA victim notification. AFRINTEL therefore records `High` confidence and a corroborated status instead of `Victim Confirmed`. The claimed USD 100,000 price remains secondary reporting.
-
-### 4.3 Defacement - NBS
-
-On **18 December 2024**, Nigeria's National Bureau of Statistics confirmed that its website had been hacked and advised the public to disregard information posted there until recovery. Independent reporting documented a `Page hacked` message.
-
-The site remained unavailable for several weeks before restoration in January 2025. This supports `Victim Confirmed`, `Very High` confidence and `Level 3` impact for a Defacement with meaningful service disruption.
-
-No reviewed public evidence establishes theft of backend statistical datasets or a named attacker. AFRINTEL therefore does not classify the event as Data Leak and does not infer exfiltration from the defacement.
-
-## 5. Key findings and intelligence gaps
-
-- Corrected December rises from **12 to 14 records** after adding MSEA and NBS.
-- The annual correction registry is now fully applied: **10 of 10 retrospective records integrated**.
-- Government / Administration becomes the leading December sector with **3 records**.
-- South Africa and Nigeria each record **2 incidents**.
-- Ekiti and ASJP provide very strong sample-based evidence of data compromise, but not independent proof of ransomware encryption.
-- MSEA is strongly corroborated but not directly victim-confirmed in the reviewed source set.
-- NBS is victim-confirmed as a website compromise/defacement, without confirmed backend data theft.
-- Ransomware remains numerically dominant, but the strongest December evidence spans ransomware-associated exposure, a corroborated Data Leak and a confirmed Defacement.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Qualification | Technique | Defensive use |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Relevant to ransomware monitoring; encryption is not independently established for the December ransomware listings. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to document and account repositories observed in Ekiti, ASJP and DAL Group samples. |
-| Preventive | T1567 - Exfiltration Over Web Service | Monitor unusual outbound transfers; acquisition and exfiltration channels remain unestablished. |
-| Not asserted | NBS initial access | Defacement is confirmed, but the technical access mechanism is not established. |
+| Government / Administration | 3 | 18.8% |
+| Finance / Banking | 2 | 12.5% |
+| Telecommunications | 2 | 12.5% |
+| Agriculture / Agribusiness | 1 | 6.2% |
+| Retail / E-commerce | 1 | 6.2% |
+| Water / Utilities | 1 | 6.2% |
+| Manufacturing / Industry | 1 | 6.2% |
+| Aviation | 1 | 6.2% |
+| Professional / Business Services | 1 | 6.2% |
+| Education / University | 1 | 6.2% |
+| Transport / Logistics | 1 | 6.2% |
+| Healthcare / Medical | 1 | 6.2% |
 
-## 7. Recommendations
+## 7. Actors / groups
 
-- Government organizations should monitor administrative website changes, protect CMS and registrar accounts with phishing-resistant MFA and preserve web/application logs.
-- MSEA should be treated as a high-priority validation case because corroboration is strong even though direct victim confirmation was not located in the reviewed audit sources.
-- For NBS-like incidents, separate website integrity, service availability and backend data confidentiality during investigation.
-- For Ekiti and ASJP, prioritize identity protection, account review and phishing monitoring based on the observed data, while avoiding unsupported ransomware-mechanism conclusions.
-- For telecommunications, payments and water utilities, validate continuity, privileged access and isolated backup recovery around claim dates.
+| Actor / Group | Records | Share |
+|---|---|---|
+| FunkSec | 3 | 18.8% |
+| ransomhub | 2 | 12.5% |
+| killsec | 2 | 12.5% |
+| Unknown | 2 | 12.5% |
+| apt73/bashe | 1 | 6.2% |
+| hunters | 1 | 6.2% |
+| moneymessage | 1 | 6.2% |
+| sarcoma | 1 | 6.2% |
+| ransomhouse | 1 | 6.2% |
+| arcusmedia | 1 | 6.2% |
+| Satanic | 1 | 6.2% |
 
-## 8. Timeline
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 10 | 62.5% |
+| Claim - Data Sample Published | 4 | 25.0% |
+| Confirmed | 1 | 6.2% |
+| Corroborated | 1 | 6.2% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 8 | 50.0% |
+| Medium | 4 | 25.0% |
+| Very High | 3 | 18.8% |
+| High | 1 | 6.2% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - December 2024
-    03 December : ransomhub - DAL Group, Data Leak
-                : Unknown - MSEA, corroborated Data Leak publication
-    09 December : apt73/bashe - Bankily
-    10 December : hunters - Telecom Namibia
-    13 December : moneymessage - Kazyon
-    15 December : killsec - Tumeny Payments
-    16 December : funksec - Ekiti State Government
-    18 December : Unknown - NBS, confirmed Defacement
-    20 December : killsec - Water Utilities Corporation
-    21 December : ransomhub - Groupe SETCAR
-    24 December : sarcoma - Baker Tilly Morrison Murray
-                : funksec - ASJP
-    28 December : ransomhouse - Cell C
-    29 December : arcusmedia - WOSAC
+    3 Décembre 2024 : DAL Group
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Agriculture / Agribusiness
+- **Site web -** [dalgroup.com](https -//www.dalgroup.com)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 4
+- **Type d'incident -** Data Leak
+- **Analyse -** AFRINTEL a examiné douze captures d’écran issues de l’ensemble de preuves de RansomHub. Le matériel comprend des clauses financières, des éléments de comptes bancaires et de transactions, des documents liés à des passeports, des dossiers de comptes clients et des documents internes de DAL Group. Les éléments visibles suggèrent une exposition touchant les opérations financières, les documents d’identité et l’administration de l’entreprise, plutôt qu’un fichier isolé. Les impacts possibles comprennent la fraude financière, l’usurpation d’identité, le phishing ciblé, l’imitation de fournisseurs ou de clients et l’espionnage commercial visant un grand conglomérat soudanais. Les captures ne permettent pas de confirmer le vecteur d’accès initial, l’exhaustivité du jeu de données, le nombre exact de personnes concernées ni une interruption opérationnelle. AFRINTEL ne reproduit aucune donnée personnelle, coordonnée bancaire, détail de passeport ni lien de téléchargement.
+- **Description victime -** DAL Group est le plus grand conglomérat privé du Soudan, opérant dans les secteurs agroalimentaire, industriel, agricole, de la distribution et des boissons.
+
+----------------------------
+    9 Décembre 2024 : Bankily
+- **Acteur / Groupe -** apt73/bashe
+- **Secteur -** Finance / Banking
+- **Site web -** [bankily.mr](https -//www.bankily.mr)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Bankily est une plateforme de mobile banking mauritanienne exploitée par la Banque Populaire de Mauritanie (BPM), fournissant des services financiers numériques et de paiement mobile.
+
+----------------------------
+    10 Décembre 2024 : Telecom Namibia
+- **Acteur / Groupe -** hunters
+- **Secteur -** Telecommunications
+- **Site web -** [telecom.na](https -//www.telecom.na)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Telecom Namibia est l'opérateur national historique de télécommunications fournissant des services de voix, de haut débit, de connectivité de données et d'infrastructure en Namibie.
+
+----------------------------
+    13 Décembre 2024 : Kazyon
+- **Acteur / Groupe -** moneymessage
+- **Secteur -** Retail / E-commerce
+- **Site web -** [kazyon.com](https -//www.kazyon.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Kazyon est une grande chaîne égyptienne de supermarchés hard-discount proposant des produits alimentaires, ménagers et de consommation via un large réseau de magasins.
+
+----------------------------
+    15 Décembre 2024 : Tumeny Payments Limited
+- **Acteur / Groupe -** killsec
+- **Secteur -** Finance / Banking
+- **Site web -** [tumenypay.com](https -//www.tumenypay.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Tumeny Payments Limited est une fintech zambienne fournissant des services de paiement numérique, transfert d'argent et infrastructures de paiement.
+
+----------------------------
+    16 Décembre 2024 : Gouvernement de l'État d'Ekiti
+- **Acteur / Groupe -** FunkSec
+- **Secteur -** Government / Administration
+- **Site web -** [ekitistate.gov.ng](https -//ekitistate.gov.ng)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Description victime -** Le gouvernement de l'État d'Ekiti est l'administration exécutive de cet État du sud-ouest du Nigeria. Son portail officiel héberge des informations sur les ministères, agences et services publics, y compris des contenus liés au recrutement, à destination des résidents et des agents de l'État.
+- **Analyse -** AFRINTEL a examiné une archive locale cohérente avec la revendication du cybercriminel funksec, comprenant un avis de fuite référençant ekitistate.gov.ng et décrivant une base de données de plus de 300 Mo, ainsi qu'une bibliothèque documentaire du site de plus de 17 000 fichiers image individuels (environ 530 Mo) collectée depuis le dépôt de fichiers du portail. L'échantillon examiné inclut des documents d'identification personnelle (scans de type passeport), des curriculum vitae comportant des champs de données personnelles tels que date de naissance, adresse, numéro de téléphone, email et religion, ainsi qu'un tableau de présélection de candidats de la Police Service Commission listant des candidats retenus par nom, zone d'administration locale, village et sexe pour une campagne de recrutement de 2019. Le volume et la structure du matériel examiné, des schémas de nommage de fichiers systématiquement rattachés à des personnes nommées, et la présence d'un modèle de document officiel du gouvernement d'État, soutiennent une évaluation à très haute confiance d'une exposition de données réelle plutôt qu'une simple revendication. Compte tenu du rôle de l'État d'Ekiti en tant qu'administration publique infranationale et de la présence de documents d'identité de citoyens et d'agents publics, cet incident présente un risque significatif d'usurpation d'identité, de phishing ciblé et d'imposture. AFRINTEL ne reproduit aucun nom, numéro de passeport, coordonnée ni autre identifiant personnel issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve -** L'archive examinée soutient fortement une exposition réelle de données associée au gouvernement de l'État d'Ekiti. Elle n'établit pas indépendamment un chiffrement ransomware, le vecteur d'accès initial ni une perturbation opérationnelle.
+    18 Décembre 2024 : National Bureau of Statistics (NBS)
+- **Date de l'incident -** 18 décembre 2024
+- **Date de publication initiale -** 18 décembre 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [nigerianstat.gov.ng](https -//www.nigerianstat.gov.ng/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** Defacement
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 3
+- **Description victime -** Le National Bureau of Statistics du Nigeria est l'autorité statistique nationale et exploite un important référentiel public de statistiques économiques, démographiques et sociales.
+- **Analyse -** Le 18 décembre 2024, le NBS a confirmé via son compte officiel sur les réseaux sociaux que son site web avait été piraté et a demandé au public d'ignorer les informations publiées jusqu'au rétablissement du service. Des publications indépendantes ont documenté un message `Page hacked`. Le site est resté indisponible pendant plusieurs semaines avant sa restauration en janvier 2025, perturbant matériellement l'accès public aux statistiques nationales. Aucun élément public dans les sources examinées n'établit un vol des bases de données backend, l'identité d'un attaquant ou une exfiltration confirmée. AFRINTEL classe donc la fiche en `Defacement`, la perturbation de service étant conservée comme conséquence opérationnelle et non comme type d'incident séparé.
+- **Qualification de la preuve -** La compromission du site et le défacement sont confirmés par la victime ; la perturbation de service est documentée. Le vol de données backend et l'attribution de l'attaquant restent non confirmés.
+- **Sources publiques -** TheCable et BusinessDay, documentés dans le dataset de correction rétrospective.
+
+----------------------------
+    20 Décembre 2024 : Water Utilities Corporation (WUC)
+- **Acteur / Groupe -** killsec
+- **Secteur -** Water / Utilities
+- **Site web -** [wuc.bw](https -//www.wuc.bw)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Water Utilities Corporation (WUC) est l'entreprise publique botswanaise chargée de l'approvisionnement, de la distribution et de la gestion des services d'eau.
+
+----------------------------
+    21 Décembre 2024 : Groupe SETCAR
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [groupe-setcar.com.tn](https -//www.groupe-setcar.com.tn)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Le Groupe SETCAR est un groupe industriel tunisien spécialisé dans les bus, autocars, véhicules industriels, activités automobiles et solutions de transport associées.
+
+----------------------------
+    23 Décembre 2024 - première observation rapportée : EgyptAir
+- **Date de l'incident -** 23 Décembre 2024 - première observation rapportée
+- **Date de publication initiale / source retenue -** 26 décembre 2024 - date d'indexation de la source d'audit
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Le 23 décembre correspond à la première observation rapportée ; la date d'obtention de l'accès n'est pas établie publiquement.
+- **Acteur / Groupe -** FunkSec
+- **Secteur -** Aviation
+- **Site web -** [egyptair.com](https -//www.egyptair.com/)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Access Sale
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 4
+- **Analyse -** FunkSec a listé EgyptAir fin décembre 2024 avec une offre de vente d'accès. Plusieurs trackers documentent la revendication, mais aucune confirmation publique de la victime n'a été identifiée dans l'audit. Le périmètre, la validité de l'accès, sa persistance, une exploitation ultérieure et une éventuelle exfiltration restent non confirmés. AFRINTEL retient `Access Sale` et ne convertit pas la revendication en ransomware ou Data Leak.
+- **Sources publiques -** [Digital Checkmark](https -//digitalchk.com/ransomware-group/funksec/) | [BreachSense](https -//www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https -//phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+
+----------------------------
+    24 Décembre 2024 : Baker Tilly Morrison Murray
+- **Acteur / Groupe -** sarcoma
+- **Secteur -** Professional / Business Services
+- **Site web -** [bakertillymm.co.za](https -//www.bakertillymm.co.za)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Description victime -** Baker Tilly Morrison Murray est un cabinet sud-africain de services professionnels fournissant des services de comptabilité, audit, fiscalité et conseil.
+- **Analyse -** AFRINTEL a examiné des captures conservées dans le répertoire de preuves `bakertillymm.co.za` et y a observé des documents d’identité sud-africains, dont un passeport, ainsi que des documents contractuels et liés à l’emploi. L’échantillon est cohérent avec le type de dossiers sensibles susceptibles d’être traités par un cabinet de comptabilité et de conseil, mais il ne permet pas d’établir l’étendue totale de la divulgation alléguée ni le nombre complet de personnes concernées. L’association de documents d’identité et de pièces contractuelles crée un risque de fraude à l’identité, d’ingénierie sociale ciblée, d’usurpation d’employés et de fraude secondaire visant des clients ou des partenaires. Le matériel examiné justifie une évaluation à confiance moyenne selon laquelle un échantillon de données a été publié dans le cadre de la revendication de Sarcoma ; AFRINTEL ne reproduit aucun nom, numéro de document, date de naissance, adresse ni autre donnée personnelle issue des captures.
+
+----------------------------
+    24 Décembre 2024 : ASJP (Algerian Scientific Journal Platform)
+- **Acteur / Groupe -** FunkSec
+- **Secteur -** Education / University
+- **Site web -** [asjp.cerist.dz](https -//asjp.cerist.dz)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Description victime -** L'ASJP (Algerian Scientific Journal Platform) est une plateforme nationale de publication électronique développée et exploitée par le CERIST (Centre de Recherche sur l'Information Scientifique et Technique), un organisme de recherche public algérien. Elle indexe et héberge le texte intégral de plus de 700 revues scientifiques algériennes couvrant toutes les disciplines académiques.
+- **Analyse -** AFRINTEL a examiné une archive locale cohérente avec la revendication du cybercriminel funksec, comprenant une sauvegarde du système de fichiers côté serveur (archive tar, propriété des fichiers attribuée au compte du serveur web www-data) de l'arborescence des avatars utilisateurs de la plateforme, contenant plus de 1 700 dossiers utilisateurs individuels avec des photos de profil liées aux comptes, datées entre 2017 et 2024, ainsi qu'une liste structurée distincte de 499 enregistrements nom/email. Les dossiers utilisateurs sont majoritairement rattachés à des domaines email d'universités algériennes (dont univ-biskra.dz, univ-tlemcen.dz, univ-batna.dz, univ-tiaret.dz, univ-guelma.dz, univ-alger2.dz, univ-alger3.dz, univ-constantine2.dz, univ-constantine3.dz, univ-msila.dz, univ-mosta.dz, lagh-univ.dz et edu.univ-oran1.dz, entre autres), cohérent avec le rôle de l'ASJP en tant que plateforme nationale algérienne de publication de revues académiques, aux côtés d'une part plus réduite de contributeurs académiques internationaux soumettant à des revues hébergées en Algérie. La présence d'une sauvegarde côté serveur authentique, avec une propriété de fichiers du serveur web et des horodatages cohérents sur plusieurs années, corroborée par un export nom/email distinct, soutient une évaluation à très haute confiance d'une compromission réelle au niveau du système de fichiers plutôt qu'une simple revendication. Compte tenu du rôle de l'ASJP en tant qu'infrastructure nationale de publication scientifique exploitée par un organisme d'État (CERIST), de l'ampleur de la base d'utilisateurs exposée et de la nature de l'accès au niveau du système de fichiers, cet incident présente un risque systémique pour l'écosystème algérien de publication académique, incluant du phishing à grande échelle, la prise de contrôle de comptes et l'usurpation d'identité de chercheurs et de personnel de revues. AFRINTEL ne reproduit aucun nom, adresse email ni identifiant de compte utilisateur issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve -** Le matériel côté serveur examiné soutient fortement une compromission au niveau du système de fichiers associée à ASJP. Il n'établit pas indépendamment un chiffrement ransomware, une interruption de service ni le mécanisme d'accès initial.
+    28 Décembre 2024 : Cell C
+- **Acteur / Groupe -** ransomhouse
+- **Secteur -** Telecommunications
+- **Site web -** [cellc.co.za](https -//www.cellc.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Cell C est un opérateur mobile sud-africain fournissant des services de voix, données, messagerie et télécommunications mobiles.
+
+----------------------------
+    29 Décembre 2024 : WOSAC
+- **Acteur / Groupe -** arcusmedia
+- **Secteur -** Transport / Logistics
+- **Site web -** [wosac.co.tz](https -//www.wosac.co.tz)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** WOSAC est une entreprise tanzanienne de transport maritime et d'agence maritime fournissant des services de fret, shipping et logistique associée.
+
+----------------------------
+    Décembre 2024 - date exacte de l'incident non établie publiquement : Micro and Small Enterprises Authority (MSEA)
+- **Date de l'incident -** Décembre 2024 - date exacte non établie publiquement
+- **Date de publication initiale -** 3 décembre 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [msea.go.ke](https -//msea.go.ke/)
+- **Statut -** Corroborated - No Direct Victim Confirmation Located
+- **Type d'incident -** Data Leak
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 4
+- **Description victime -** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
+- **Analyse -** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
+- **Qualification de la preuve -** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
+- **Sources publiques -** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
+
+----------------------------
+    30 Décembre 2024 : Misr Pharmacies
+- **Date de compromission -** Inconnue
+- **Date de publication initiale observée -** 30 décembre 2024 à 20 -03 - selon la capture conservée
+- **Acteur / Groupe -** Satanic
+- **Secteur -** Healthcare / Medical
+- **Site web -** [misrpharmacies.com](https -//misrpharmacies.com/)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Data Leak
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 4
+- **Description victime -** Misr Pharmacies est une enseigne pharmaceutique égyptienne disposant de services de pharmacie et de commande en ligne.
+- **Analyse -** Une publication underground du 30 décembre 2024 attribuée à `Satanic` annonce explicitement une base `Misr Pharmacies Misr Online Database - Leaked, Download!`. Le post décrit des ensembles de données associés aux commandes et aux prescriptions électroniques, avec des champs liés aux clients, contacts, facturation, livraison, statut de commande et informations de prescription. Des liens de téléchargement étaient affichés au moment de la publication. Les fichiers ne sont plus disponibles au moment de la présente réévaluation, de sorte qu'AFRINTEL ne peut pas vérifier indépendamment leur authenticité, leur volume, leur contenu réel ou leur provenance technique. AFRINTEL ne reproduit aucune donnée personnelle issue de la publication.
+- **Qualification de la preuve -** Le type `Data Leak` est retenu car la revendication porte explicitement sur une base divulguée et proposée au téléchargement. Le statut reste `Claim - Unverified` car les données annoncées ne sont plus disponibles pour une validation indépendante par AFRINTEL.
+- **Source / provenance -** Publication underground originale attribuée à Satanic, observée le 30 décembre 2024 ; capture conservée par AFRINTEL. Aucun lien de téléchargement n'est reproduit.
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-December 2024 closes the corrected monthly sequence with **14 documented incident records across 12 African countries**: **11 Ransomware, 2 Data Leak and 1 Defacement**. Compared with corrected November, the corpus falls from 16 to 14 records, a decrease of **12.5%**. Ransomware falls slightly from 12 to 11, Data Leak remains stable at two, Access Sale disappears from the monthly corpus and Defacement appears with the confirmed NBS incident.
+### Ransomware - 11
 
-The two retrospective corrections materially improve the intelligence value of the month because they add evidence states that differ from ordinary criminal claims. MSEA is not merely a forum listing: later authoritative references strengthen the assessment that a breach occurred. Yet the absence of a direct MSEA notification in the reviewed audit sources prevents AFRINTEL from upgrading the case to `Victim Confirmed`. This is an important distinction between strong corroboration and direct institutional confirmation. The reported employee, correspondence, financial and business-registration categories can be retained as reported exposure, but neither the claimed sale price nor a technical root cause should be presented as independently established.
+**11 record(s) (68.8%).** Leading countries: South Africa (2), Mauritania (1), Namibia (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-NBS represents a different and clearer evidential category. The institution itself confirmed that its website had been hacked, independent reporting documented a defacement message, and the prolonged outage demonstrates real service impact. At the same time, the evidence does not establish theft of the statistical backend. The strongest conclusion is therefore a confirmed **Defacement with service disruption**, not a Data Leak. This prevents availability and integrity impact from being automatically converted into a confidentiality breach.
+### Data Leak - 3
 
-The original December corpus already contained several strongly evidenced exposures. Ekiti State Government and ASJP provide `Very High` confidence material linking structured internal data to the named organizations. DAL Group and Baker Tilly provide additional sample-backed exposure signals. These cases demonstrate that the month's most valuable intelligence is not simply the number of ransomware labels, but the depth and nature of the available evidence. A ransomware-branded publication may contain convincing proof of data compromise without independently proving encryption, and a confirmed website hack may affect integrity and availability without proving exfiltration.
+**3 record(s) (18.8%).** Leading countries: Sudan (1), Kenya (1), Egypt (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-The corrected sector picture also changes. **Government / Administration becomes the largest sector with three records**, reflecting Ekiti, MSEA and NBS. This concentration deserves attention, but the three events are not technically equivalent: Ekiti is ransomware-associated with strong exposure evidence, MSEA is a corroborated Data Leak, and NBS is a confirmed Defacement. Treating them as one homogeneous government attack pattern would overstate what the data supports.
+### Defacement - 1
 
-The most defensible CTI reading of December is therefore that the month combines **persistent ransomware visibility, multiple strongly supported data exposures, a corroborated Kenyan public-sector breach and a directly confirmed Nigerian website defacement**. The decrease from November should not be interpreted as a proportional fall in continental cyber risk. Instead, December demonstrates why AFRINTEL's value depends on maintaining separate dimensions for incident type, status, confidence, impact, chronology and evidence provenance.
+**1 record(s) (6.2%).** Leading countries: Nigeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-With MSEA and NBS integrated, the retrospective correction registry is now **fully applied at 10 of 10 cases**. The next analytical step for the 2024 corpus should be to recompute the full-year totals, country distribution, sectors, actors, regions and 2024-to-2025 comparison from the corrected monthly records rather than relying on the original annual total of 118.
+### Access Sale - 1
+
+**1 record(s) (6.2%).** Leading countries: Egypt (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Kenya | Micro and Small Enterprises Authority (MSEA)
+- **Date de l'incident:** Décembre 2024 - date exacte non établie publiquement
+- **Date de publication initiale:** 3 décembre 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [msea.go.ke](https://msea.go.ke/)
+- **Statut:** Corroborated - No Direct Victim Confirmation Located
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
+- **Analyse:** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
+- **Qualification de la preuve:** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
+- **Sources publiques:** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
+
+---------------------------- | Data Leak | Corroborated - No Direct Victim Confirmation Located | Level 4 | High |
+| Nigeria | Gouvernement de l'État d'Ekiti
+- **Acteur / Groupe:** FunkSec
+- **Secteur:** Government / Administration
+- **Site web:** [ekitistate.gov.ng](https://ekitistate.gov.ng)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** Le gouvernement de l'État d'Ekiti est l'administration exécutive de cet État du sud-ouest du Nigeria. Son portail officiel héberge des informations sur les ministères, agences et services publics, y compris des contenus liés au recrutement, à destination des résidents et des agents de l'État.
+- **Analyse:** AFRINTEL a examiné une archive locale cohérente avec la revendication du cybercriminel funksec, comprenant un avis de fuite référençant ekitistate.gov.ng et décrivant une base de données de plus de 300 Mo, ainsi qu'une bibliothèque documentaire du site de plus de 17 000 fichiers image individuels (environ 530 Mo) collectée depuis le dépôt de fichiers du portail. L'échantillon examiné inclut des documents d'identification personnelle (scans de type passeport), des curriculum vitae comportant des champs de données personnelles tels que date de naissance, adresse, numéro de téléphone, email et religion, ainsi qu'un tableau de présélection de candidats de la Police Service Commission listant des candidats retenus par nom, zone d'administration locale, village et sexe pour une campagne de recrutement de 2019. Le volume et la structure du matériel examiné, des schémas de nommage de fichiers systématiquement rattachés à des personnes nommées, et la présence d'un modèle de document officiel du gouvernement d'État, soutiennent une évaluation à très haute confiance d'une exposition de données réelle plutôt qu'une simple revendication. Compte tenu du rôle de l'État d'Ekiti en tant qu'administration publique infranationale et de la présence de documents d'identité de citoyens et d'agents publics, cet incident présente un risque significatif d'usurpation d'identité, de phishing ciblé et d'imposture. AFRINTEL ne reproduit aucun nom, numéro de passeport, coordonnée ni autre identifiant personnel issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve:** L'archive examinée soutient fortement une exposition réelle de données associée au gouvernement de l'État d'Ekiti. Elle n'établit pas indépendamment un chiffrement ransomware, le vecteur d'accès initial ni une perturbation opérationnelle. | Ransomware | Claim - Data Sample Published | Level 4 | Very High |
+| Algeria | ASJP (Algerian Scientific Journal Platform)
+- **Acteur / Groupe:** FunkSec
+- **Secteur:** Education / University
+- **Site web:** [asjp.cerist.dz](https://asjp.cerist.dz)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** L'ASJP (Algerian Scientific Journal Platform) est une plateforme nationale de publication électronique développée et exploitée par le CERIST (Centre de Recherche sur l'Information Scientifique et Technique), un organisme de recherche public algérien. Elle indexe et héberge le texte intégral de plus de 700 revues scientifiques algériennes couvrant toutes les disciplines académiques.
+- **Analyse:** AFRINTEL a examiné une archive locale cohérente avec la revendication du cybercriminel funksec, comprenant une sauvegarde du système de fichiers côté serveur (archive tar, propriété des fichiers attribuée au compte du serveur web www-data) de l'arborescence des avatars utilisateurs de la plateforme, contenant plus de 1 700 dossiers utilisateurs individuels avec des photos de profil liées aux comptes, datées entre 2017 et 2024, ainsi qu'une liste structurée distincte de 499 enregistrements nom/email. Les dossiers utilisateurs sont majoritairement rattachés à des domaines email d'universités algériennes (dont univ-biskra.dz, univ-tlemcen.dz, univ-batna.dz, univ-tiaret.dz, univ-guelma.dz, univ-alger2.dz, univ-alger3.dz, univ-constantine2.dz, univ-constantine3.dz, univ-msila.dz, univ-mosta.dz, lagh-univ.dz et edu.univ-oran1.dz, entre autres), cohérent avec le rôle de l'ASJP en tant que plateforme nationale algérienne de publication de revues académiques, aux côtés d'une part plus réduite de contributeurs académiques internationaux soumettant à des revues hébergées en Algérie. La présence d'une sauvegarde côté serveur authentique, avec une propriété de fichiers du serveur web et des horodatages cohérents sur plusieurs années, corroborée par un export nom/email distinct, soutient une évaluation à très haute confiance d'une compromission réelle au niveau du système de fichiers plutôt qu'une simple revendication. Compte tenu du rôle de l'ASJP en tant qu'infrastructure nationale de publication scientifique exploitée par un organisme d'État (CERIST), de l'ampleur de la base d'utilisateurs exposée et de la nature de l'accès au niveau du système de fichiers, cet incident présente un risque systémique pour l'écosystème algérien de publication académique, incluant du phishing à grande échelle, la prise de contrôle de comptes et l'usurpation d'identité de chercheurs et de personnel de revues. AFRINTEL ne reproduit aucun nom, adresse email ni identifiant de compte utilisateur issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve:** Le matériel côté serveur examiné soutient fortement une compromission au niveau du système de fichiers associée à ASJP. Il n'établit pas indépendamment un chiffrement ransomware, une interruption de service ni le mécanisme d'accès initial. | Ransomware | Claim - Data Sample Published | Level 4 | Very High |
+| Sudan | DAL Group
+- **Acteur / Groupe:** ransomhub
+- **Secteur:** Agriculture / Agribusiness
+- **Site web:** [dalgroup.com](https://www.dalgroup.com)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Type d'incident:** Data Leak
+- **Analyse:** AFRINTEL a examiné douze captures d’écran issues de l’ensemble de preuves de RansomHub. Le matériel comprend des clauses financières, des éléments de comptes bancaires et de transactions, des documents liés à des passeports, des dossiers de comptes clients et des documents internes de DAL Group. Les éléments visibles suggèrent une exposition touchant les opérations financières, les documents d’identité et l’administration de l’entreprise, plutôt qu’un fichier isolé. Les impacts possibles comprennent la fraude financière, l’usurpation d’identité, le phishing ciblé, l’imitation de fournisseurs ou de clients et l’espionnage commercial visant un grand conglomérat soudanais. Les captures ne permettent pas de confirmer le vecteur d’accès initial, l’exhaustivité du jeu de données, le nombre exact de personnes concernées ni une interruption opérationnelle. AFRINTEL ne reproduit aucune donnée personnelle, coordonnée bancaire, détail de passeport ni lien de téléchargement.
+- **Description victime:** DAL Group est le plus grand conglomérat privé du Soudan, opérant dans les secteurs agroalimentaire, industriel, agricole, de la distribution et des boissons.
+
+---------------------------- | Data Leak | Claim - Data Sample Published | Level 4 | Medium |
+| Egypt | EgyptAir
+- **Date de l'incident:** 23 Décembre 2024 - première observation rapportée
+- **Date de publication initiale / source retenue:** 26 décembre 2024 - date d'indexation de la source d'audit
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Le 23 décembre correspond à la première observation rapportée ; la date d'obtention de l'accès n'est pas établie publiquement.
+- **Acteur / Groupe:** FunkSec
+- **Secteur:** Aviation
+- **Site web:** [egyptair.com](https://www.egyptair.com/)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Access Sale
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Analyse:** FunkSec a listé EgyptAir fin décembre 2024 avec une offre de vente d'accès. Plusieurs trackers documentent la revendication, mais aucune confirmation publique de la victime n'a été identifiée dans l'audit. Le périmètre, la validité de l'accès, sa persistance, une exploitation ultérieure et une éventuelle exfiltration restent non confirmés. AFRINTEL retient `Access Sale` et ne convertit pas la revendication en ransomware ou Data Leak.
+- **Sources publiques:** [Digital Checkmark](https://digitalchk.com/ransomware-group/funksec/) | [BreachSense](https://www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https://phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+
+---------------------------- | Access Sale | Claim - Unverified | Level 4 | Medium |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+**December corrections:** Misr Pharmacies is added as `Data Leak / Claim - Unverified` based on the original 30 December post. The advertised data is no longer available for independent validation. The 24 December ACAO publication is not counted as a second attack because there is no evidence proving a distinct new extraction from the incident already documented in July.
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+December 2024 contains **16 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

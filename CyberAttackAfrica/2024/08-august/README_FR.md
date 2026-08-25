@@ -1,232 +1,643 @@
-# Rapport CTI AFRINTEL - Août 2024
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Août 2024
 
 👉🏾 [English version](./README.md)
 
-## 1. Résumé exécutif
+## 1. Synthèse exécutive
 
-AFRINTEL documente **16 fiches cyber dans 9 pays africains** en août 2024.
+En Août 2024, AFRINTEL retient **16 cyberincidents canoniques dans 9 pays**. Le mois est dominé par **Ransomware (14, 87,5 %)** puis **System Intrusion (1, 6,2 %)**. Les pays les plus représentés sont **Afrique du Sud (6)**, **Seychelles (2)**, **Zimbabwe (2)**. Les secteurs les plus visibles sont **Finance / Banque (5)**, **Commerce / E-commerce (4)**, **Télécommunications (2)**. Les labels acteur/groupe les plus fréquents sont `darkvault` (3), `meow` (2), `ransomhub` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
 
-Parmi elles, **15 relèvent de la taxonomie AFRINTEL à six types** : **14 Ransomware** et **1 Data Leak**. Une seizième fiche, **GTBank au Nigeria**, correspond à une **tentative de compromission de domaine web confirmée par la victime** et suivie séparément, car les éléments disponibles ne permettent pas de la classer comme Ransomware, Data Leak, Access Sale, DDoS, Defacement ou Operational Fraud.
+La maturité de preuve est répartie entre **Claim - Unverified: 14**, **Attempted: 1**, **Claim - Data Sample Published: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
-L'Afrique du Sud concentre six fiches ransomware. Les Seychelles et le Zimbabwe en comptent deux chacun. Avec l'ajout de GTBank, le Nigeria entre dans la couverture géographique d'août comme neuvième pays. `darkvault` est l'acteur ransomware le plus visible avec trois publications.
-
-Deux organisations étaient déjà apparues plus tôt en 2024 sous d'autres noms de groupes ransomware : **Remitano** en avril et **Lenmed** en mai. Les éléments disponibles ne permettent pas d'établir si les publications ultérieures correspondent à une nouvelle compromission, une réutilisation, une revente, un partage de matériel ou une attribution erronée. **Eventizer** reste le seul Data Leak d'août disposant d'un échantillon visible.
-
-👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
-
-### 1.1 Comparaison avec le mois précédent
+### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Juillet 2024 | Août 2024 | Évolution |
-|---|---:|---:|---:|
-| Total fiches cyber documentées | 11 | **16** | **+5 (+45,5 %)** |
-| Incidents de la taxonomie à six types | 11 | **15** | **+4 (+36,4 %)** |
-| Ransomware | 7 | **14** | **+7 (+100,0 %)** |
-| Data Leak | 4 | **1** | **-3 (-75,0 %)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
-| Attempted Attack - suivi séparé | 0 | **1** | Nouveau |
+|---|---|---|---|
+| Total | 10 | 16 | +6 (+60,0 %) |
+| Ransomware | 7 | 14 | +7 (+100,0 %) |
+| Data Leak | 2 | 1 | -1 (-50,0 %) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 1 | 1 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-Août montre une forte hausse de la visibilité ransomware, de 7 à 14 fiches. Les Data Leak passent de 4 à 1, car juillet comprenait notamment trois jeux de données algériens anciens remis en circulation. La tentative GTBank est présentée séparément et ne modifie pas la taxonomie à six types.
+### 1.2 Analyse comparative
+
+Le volume mensuel **augmente de 6 incident(s)**. Les variations structurantes sont : Ransomware 7->14 (+7), Data Leak 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
-- **Période :** 1er au 31 août 2024.
-- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
-- **Comptage :** chaque fiche représente un événement cyber documenté.
-- **Taxonomie principale :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Exception de taxonomie :** GTBank est conservé car il fait partie des incidents rétrospectifs validés comme manquants, mais n'est pas forcé dans une catégorie non étayée.
-- **Doubles revendications :** une organisation publiée sous différents acteurs est suivie comme revendications distinctes lorsque les preuves ne permettent pas d'établir qu'il s'agit de la même publication ou du même compromis sous-jacent.
-- Le volume de revendications n'est pas assimilé à un volume de compromissions confirmées.
+- Un incident canonique correspond à un événement retenu dans le millésime 2024.
+- Les découvertes/republications historiques sont conservées séparément et ne gonflent pas les statistiques 2024.
+- La date d'incident ou la meilleure fenêtre soutenue prime ; la date de découverte AFRINTEL reste distincte.
+- Les 9 types AFRINTEL sont utilisés ; une tentative est représentée par le statut, jamais par un type `Attempted Attack`.
+- Un DDoS coordonné est compté par campagne.
+- Type, statut, confiance, impact, attribution et source restent distincts.
 
-## 3. Vue globale
+## 3. Répartition par type d'incident
 
-### 3.1 Répartition des fiches
-
-| Classification | Fiches | Part |
-|---|---:|---:|
-| Ransomware | **14** | **87,5 %** |
-| Data Leak | **1** | **6,3 %** |
-| Attempted Attack - exception de taxonomie | **1** | **6,3 %** |
+| Type | Fiches | Part |
+|---|---|---|
+| Ransomware | 14 | 87,5 % |
+| Data Leak | 1 | 6,2 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
+| Account Takeover | 0 | 0,0 % |
+| System Intrusion | 1 | 6,2 % |
+| Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total fiches documentées** | **16** | **100 %** |
 
 ```mermaid
 pie showData
-    title Fiches cyber documentées - Août 2024
+    title Types d'incident - Août 2024
     "Ransomware" : 14
     "Data Leak" : 1
-    "Attempted Attack" : 1
+    "System Intrusion" : 1
 ```
 
-### 3.2 Répartition par pays
+## 4. Pays x type
 
-| Pays | Ransomware | Data Leak | Attempted Attack | Total |
-|---|---:|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 6 | 0 | 0 | **6** |
-| 🇸🇨 Seychelles | 2 | 0 | 0 | **2** |
-| 🇿🇼 Zimbabwe | 2 | 0 | 0 | **2** |
-| 🇨🇮 Côte d'Ivoire | 1 | 0 | 0 | 1 |
-| 🇩🇯 Djibouti | 1 | 0 | 0 | 1 |
-| 🇬🇭 Ghana | 1 | 0 | 0 | 1 |
-| 🇰🇪 Kenya | 1 | 0 | 0 | 1 |
-| 🇹🇳 Tunisie | 0 | 1 | 0 | 1 |
-| 🇳🇬 Nigeria | 0 | 0 | 1 | 1 |
-| **Total** | **14** | **1** | **1** | **16** |
+| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Afrique du Sud | 6 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Seychelles | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Zimbabwe | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Tunisie | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Côte d'Ivoire | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kenya | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Djibouti | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ghana | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Répartition régionale
+## 5. Répartition régionale
 
-| Région | Ransomware | Data Leak | Attempted Attack | Total |
-|---|---:|---:|---:|---:|
-| Afrique australe | 8 | 0 | 0 | **8** |
-| Afrique de l'Ouest | 2 | 0 | 1 | **3** |
-| Afrique de l'Est | 2 | 0 | 0 | **2** |
-| Océan Indien | 2 | 0 | 0 | **2** |
-| Afrique du Nord | 0 | 1 | 0 | **1** |
-| **Total** | **14** | **1** | **1** | **16** |
+| Région | Fiches | Part |
+|---|---|---|
+| Afrique australe | 8 | 50,0 % |
+| Afrique de l'Ouest | 3 | 18,8 % |
+| Océan Indien | 2 | 12,5 % |
+| Afrique de l'Est | 2 | 12,5 % |
+| Afrique du Nord | 1 | 6,2 % |
 
-### 3.4 Répartition sectorielle harmonisée
+## 6. Répartition sectorielle
 
 | Secteur | Fiches | Part |
-|---|---:|---:|
-| Finance / Banking | **5** | **31,3 %** |
-| Retail / E-commerce | **4** | **25,0 %** |
-| Telecommunications | 2 | 12,5 % |
-| Professional / Business Services | 2 | 12,5 % |
-| Healthcare / Medical | 1 | 6,3 % |
-| Government / Administration | 1 | 6,3 % |
-| Technology / IT | 1 | 6,3 % |
-| **Total** | **16** | **100 %** |
-
-### 3.5 Acteurs / groupes
-
-| Acteur / Groupe | Fiches |
-|---|---:|
-| darkvault | **3** |
-| meow | 2 |
-| ransomhub | 2 |
-| killsec | 2 |
-| hunters | 1 |
-| lockbit3 | 1 |
-| Bambi | 1 |
-| spacebears | 1 |
-| incransom | 1 |
-| BrainCipher | 1 |
-| Unknown | 1 |
-| **Total** | **16** |
-
-`Unknown` correspond à la tentative GTBank confirmée par la victime. Aucune attribution d'attaquant n'est établie.
-
-```mermaid
-flowchart LR
-    DV["darkvault - 3"] --> LEN["Afrique du Sud - Lenmed"]
-    DV --> GPF["Afrique du Sud - GPF"]
-    DV --> ING["Seychelles - Ingotbrokers"]
-    KIL["killsec - 2"] --> INS["Kenya - Instadriver"]
-    KIL --> ODO["Afrique du Sud - OneDayOnly"]
-    ME["meow - 2"] --> REM["Seychelles - Remitano"]
-    ME --> SMB["Zimbabwe - Success Microfinance Bank"]
-    RH["ransomhub - 2"] --> NET["Afrique du Sud - Netconfig/Wwwconfig"]
-    RH --> DJ["Djibouti - DPFZA"]
-    UNK["Unknown"] --> GT["Nigeria - tentative GTBank"]
-```
-
-## 4. Analyse détaillée
-
-### 4.1 Ransomware - 14 fiches
-
-Les quatorze publications ransomware couvrent l'Afrique du Sud, les Seychelles, le Zimbabwe, la Côte d'Ivoire, Djibouti, le Ghana et le Kenya.
-
-Les quatorze restent `Claim - Unverified` dans le corpus victimes fourni. Aucun échantillon technique accessible ni élément DFIR public dans ces fiches ne permet d'établir une chaîne d'intrusion commune, un chiffrement confirmé ou l'étendue d'une exfiltration.
-
-`darkvault` est l'acteur le plus visible avec trois publications. `killsec`, `meow` et `ransomhub` apparaissent deux fois chacun. Ces volumes mesurent la visibilité et ne démontrent pas une coordination de campagne.
-
-Deux fiches nécessitent un suivi de cycle de vie :
-
-- **Remitano** avait déjà été revendiqué en avril par `incransom` et réapparaît en août sous `meow`.
-- **Lenmed** avait déjà été revendiqué en mai par `lockbit3` et réapparaît en août sous `darkvault`.
-
-Les éléments fournis ne permettent pas de déterminer si les revendications ultérieures correspondent à des compromissions séparées, à la réutilisation d'une ancienne revendication, à une revente de données ou à une autre relation.
-
-### 4.2 Data Leak - Eventizer
-
-Eventizer constitue l'unique fiche Data Leak d'août. L'échantillon visible comporte des champs de contact et de contexte de comptes. L'acteur annonce environ **60 000 enregistrements**, mais l'échantillon ne permet pas d'établir le volume total, l'exhaustivité, la provenance ou le rattachement technique direct à Eventizer.
-
-AFRINTEL maintient donc un niveau `Medium` et ne reproduit aucun enregistrement personnel brut.
-
-### 4.3 GTBank - tentative d'attaque confirmée par la victime
-
-GTBank a confirmé une tentative isolée de compromission de son domaine web le **14 août 2024**. L'événement a coïncidé avec une indisponibilité temporaire du site.
-
-La banque a déclaré que la tentative avait échoué, que le site n'avait pas été cloné et que les informations clients n'étaient pas stockées sur le site. Les éléments disponibles ne permettent donc **pas** de classer le dossier comme Data Leak, Ransomware, DDoS, Defacement, Access Sale ou Operational Fraud confirmé.
-
-AFRINTEL conserve la fiche comme tentative d'attaque confirmée, hors de la taxonomie principale à six types. L'acteur et la méthode technique d'accès restent inconnus.
-
-## 5. Principaux constats et lacunes
-
-- Août contient **16 fiches cyber documentées**, dont **15 relèvent de la taxonomie à six types**.
-- La visibilité des publications Ransomware double, passant de 7 en juillet à **14 en août**.
-- L'Afrique du Sud représente **6 fiches**, soit 37,5 % du corpus complet d'août.
-- Finance / Banking est le premier secteur harmonisé avec **5 fiches**, en incluant GTBank.
-- Remitano et Lenmed nécessitent un suivi de cycle de vie car chacun avait déjà été publié par un autre acteur ransomware.
-- Eventizer fournit le seul échantillon visible de Data Leak du mois.
-- GTBank repose sur une confirmation victime plus solide que les listings ransomware, mais l'événement confirmé correspond à une tentative échouée et non à une compromission réussie.
-- Les éléments DFIR publics restent insuffisants pour résoudre les doubles revendications ransomware ou établir une chaîne d'attaque commune.
-
-## 6. Cartographie MITRE ATT&CK contextuelle
-
-| Statut | Technique | Application |
 |---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Pertinent pour la détection ransomware ; chiffrement non confirmé pour les quatorze revendications. |
-| Préventif | T1490 - Inhibit System Recovery | Surveillance de la résilience des sauvegardes ; comportement non établi dans les éléments d'août fournis. |
-| Contextuel | T1213 - Data from Information Repositories | Pertinent pour l'exposition structurée de contacts et de contexte de comptes observée chez Eventizer. |
-| Non cartographié | Chemin d'accès GTBank | Aucune technique ATT&CK n'est attribuée car le mécanisme technique de la tentative de compromission du domaine n'est pas établi. |
+| Finance / Banque | 5 | 31,2 % |
+| Commerce / E-commerce | 4 | 25,0 % |
+| Télécommunications | 2 | 12,5 % |
+| Services professionnels / Business | 2 | 12,5 % |
+| Santé / Médical | 1 | 6,2 % |
+| Gouvernement / Administration | 1 | 6,2 % |
+| Technologie / IT | 1 | 6,2 % |
 
-## 7. Recommandations
+## 7. Acteurs / groupes
 
-- Conserver séparément compromission réussie, revendication criminelle et tentative d'attaque échouée.
-- Pour les victimes doublement revendiquées, préserver une chronologie des publications et des preuves et comparer les futurs échantillons sans présumer d'un partage de données ou d'une seconde intrusion.
-- Les secteurs finance et commerce doivent prioriser les accès privilégiés, la surveillance de fraude, les exports anormaux et la protection des identités.
-- Les propriétaires de domaines doivent imposer une MFA résistante au phishing chez les registrars, utiliser des mécanismes de verrouillage adaptés, contrôler strictement les changements DNS et alerter sur toute modification non autorisée.
-- Surveiller les futures déclarations victimes, rapports techniques et échantillons susceptibles de modifier le niveau de confiance ou le statut de cycle de vie des fiches d'août.
+| Acteur / Groupe | Fiches | Part |
+|---|---|---|
+| darkvault | 3 | 18,8 % |
+| meow | 2 | 12,5 % |
+| ransomhub | 2 | 12,5 % |
+| killsec | 2 | 12,5 % |
+| lockbit3 | 1 | 6,2 % |
+| hunters | 1 | 6,2 % |
+| Unknown | 1 | 6,2 % |
+| Bambi | 1 | 6,2 % |
+| spacebears | 1 | 6,2 % |
+| incransom | 1 | 6,2 % |
+| BrainCipher | 1 | 6,2 % |
 
-## 8. Chronologie
+## 8. Maturité des preuves
+
+| Position de preuve | Fiches | Part |
+|---|---|---|
+| Claim - Unverified | 14 | 87,5 % |
+| Attempted | 1 | 6,2 % |
+| Claim - Data Sample Published | 1 | 6,2 % |
+
+### Confiance
+
+| Confiance | Fiches | Part |
+|---|---|---|
+| Low | 14 | 87,5 % |
+| High | 1 | 6,2 % |
+| Medium | 1 | 6,2 % |
+
+## 9. Chronologie
 
 ```mermaid
 timeline
     title AFRINTEL - Août 2024
-    01 Août : meow - Remitano
-    11 Août : lockbit3 - Acdcexpress
-    13 Août : hunters - Netone
-            : darkvault - Lenmed
-            : darkvault - GPF
-    14 Août : Unknown - tentative de compromission du domaine GTBank
-    17 Août : ransomhub - Netconfig/Wwwconfig
-    19 Août : Bambi - Eventizer
-    21 Août : spacebears - Codival
-    22 Août : incransom - Don't Waste Group
-            : killsec - Instadriver
-    24 Août : darkvault - Ingotbrokers
-    26 Août : killsec - OneDayOnly
-    28 Août : ransomhub - DPFZA
-            : meow - Success Microfinance Bank
-            : BrainCipher - Ghanare
+    01 Août 2024 : Remitano
+- **Acteur / Groupe -** meow
+- **Secteur -** Finance / Banking
+- **Site web -** [remitano.com](https -//www.remitano.com)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Remitano figure sur le site de fuite du groupe meow. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Remitano est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Seychelles.
+
+- **Analyse -**
+  AFRINTEL a recensé Remitano (Seychelles) comme victime revendiquée par le groupe ransomware meow. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par meow, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+----------------------------
+    11 Août 2024 : Acdcexpress
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Retail / E-commerce
+- **Site web -** [acdcexpress.com](https -//www.acdcexpress.com)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Acdcexpress figure sur le site de fuite du groupe lockbit3. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Acdcexpress est une entreprise commerciale majeure opérant dans le secteur des retail (distribution), contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse -**
+  AFRINTEL a recensé Acdcexpress (Afrique du Sud) comme victime revendiquée par le groupe ransomware lockbit3. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par lockbit3, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur du commerce en cas d'éléments de compromission avérés.
+
+----------------------------
+    13 Août 2024 : Netone
+- **Acteur / Groupe -** hunters
+- **Secteur -** Telecommunications
+- **Site web -** [netone.co.zw](https -//www.netone.co.zw)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Netone figure sur le site de fuite du groupe hunters. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Netone est un opérateur de réseau mobile de premier plan fournissant des infrastructures de télécommunications, des services de téléphonie et des données haut débit.
+
+- **Analyse -**
+  AFRINTEL a recensé Netone (Zimbabwe) comme victime revendiquée par le groupe ransomware hunters. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par hunters, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+
+----------------------------
+    13 Août 2024 : Lenmed
+- **Acteur / Groupe -** darkvault
+- **Secteur -** Healthcare / Medical
+- **Site web -** [lenmed.co.za](https -//www.lenmed.co.za)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Lenmed figure sur le site de fuite du groupe darkvault. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Note de double revendication -**
+  Lenmed (lenmed.co.za) avait déjà été enregistrée comme revendiquée par lockbit3 le 7 mai 2024 (Claim - Unverified). L'acteur et la date diffèrent, et aucun élément n'indique une republication du même matériel ou une revente du même jeu de données. AFRINTEL enregistre cette publication de darkvault comme une revendication indépendante, en l'état des éléments disponibles.
+
+- **Description -**
+  Lenmed est une entreprise commerciale majeure opérant dans le secteur des healthcare services, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse -**
+  AFRINTEL a recensé Lenmed (Afrique du Sud) comme victime revendiquée par le groupe ransomware darkvault. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par darkvault, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données patients et de réponse à incident adaptées au secteur de la santé en cas d'éléments de compromission avérés.
+
+----------------------------
+    13 Août 2024 : Gpf.za
+- **Acteur / Groupe -** darkvault
+- **Secteur -** Finance / Banking
+- **Site web -** [gpf.org.za](https -//www.gpf.org.za)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Gpf.za figure sur le site de fuite du groupe darkvault. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Gpf.za est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse -**
+  AFRINTEL a recensé Gpf.za (Afrique du Sud) comme victime revendiquée par le groupe ransomware darkvault. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par darkvault, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+----------------------------
+    14 Août 2024 : Guaranty Trust Bank (GTBank)
+- **Date de l'incident -** 14 août 2024
+- **Date de publication initiale -** 15 août 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Finance / Banking
+- **Site web -** [gtbank.com](https -//www.gtbank.com/)
+- **Statut -** Attempted - Blocked
+- **Type d'incident -** System Intrusion
+- **Niveau de confiance -** High
+- **Niveau d'impact -** Level 2
+- **Note de taxonomie -** `Attempted Attack` n'est pas un type AFRINTEL. La tentative isolée de compromission du domaine est classée `System Intrusion` avec le statut `Attempted - Blocked`; aucune compromission de données clients n'a été confirmée.
+- **Note de preuve -** GTBank a confirmé une tentative isolée de compromission de son domaine web. La banque a déclaré que la tentative avait échoué, que le site n'avait pas été cloné et qu'aucune compromission de données clients n'avait eu lieu.
+- **Description victime -** GTBank est une banque commerciale nigériane fournissant des services bancaires aux particuliers, aux entreprises et des services numériques.
+- **Analyse -** GTBank a confirmé une tentative isolée de compromission de son domaine web le 14 août 2024. L'événement a coïncidé avec une indisponibilité temporaire du site et des spéculations publiques selon lesquelles celui-ci aurait été cloné. Selon la banque, la tentative a échoué, le site n'a pas été cloné et les informations clients n'étaient pas stockées sur le site ; aucune compromission de données clients n'a donc été confirmée. AFRINTEL conserve la fiche car la tentative de compromission du domaine et l'impact de disponibilité ont été reconnus par la victime, mais ne transforme pas l'événement en violation réussie et ne lui attribue pas une catégorie des six types sans preuve. L'impact confirmé reste limité à la disponibilité du site/domaine et à la réponse à incident ; la méthode technique d'accès et l'acteur restent inconnus.
+- **Source publique -** [Punch - déclaration GTBank](https -//punchng.com/gtb-confirms-attempt-to-hack-banks-website/)
+
+----------------------------
+    17 Août 2024 : Wwwconfig
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Telecommunications
+- **Site web -** [netconfig.co.za](https -//www.netconfig.co.za)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Wwwconfig figure sur le site de fuite du groupe ransomhub. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Wwwconfig est un opérateur de réseau mobile de premier plan fournissant des infrastructures de télécommunications, des services de téléphonie et des données haut débit.
+
+- **Analyse -**
+  AFRINTEL a recensé Wwwconfig (Afrique du Sud) comme victime revendiquée par le groupe ransomware ransomhub. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par ransomhub, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+
+----------------------------
+    19 Août 2024 : Eventizer
+- **Acteur / Groupe -** Bambi
+- **Contexte source -** Publication sur un forum cybercriminel
+- **Secteur -** Professional / Business Services
+- **Site web -** [eventizer.io](https -//www.eventizer.io)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Data Leak
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Description victime -** Eventizer est une agence événementielle tunisienne et une plateforme numérique centralisant les inscriptions, paiements, contrôles d’accès, hébergements et tableaux de bord liés aux événements.
+- **Analyse -** La publication attribuée à Bambi annonce environ 60 000 enregistrements associés à Eventizer et présente un échantillon structuré avec des identifiants utilisateurs, noms, adresses électroniques, numéros de téléphone, pays et informations de rôle de connexion. Le titre de la publication revendique une couverture de la Tunisie et du Nigeria, tandis que l’échantillon visible contient des enregistrements associés à plusieurs pays. L’échantillon démontre l’exposition de données de contact et de contexte de comptes, mais le volume total, l’exhaustivité, la provenance et le rattachement technique direct à Eventizer n’ont pas été vérifiés indépendamment. Les champs exposés pourraient faciliter le phishing ciblé, l’usurpation, l’énumération de comptes et l’ingénierie sociale. Les enregistrements et coordonnées bruts ne sont pas reproduits.
+
+----------------------------
+    21 Août 2024 : Codival
+- **Acteur / Groupe -** spacebears
+- **Secteur -** Retail / E-commerce
+- **Site web -** [codival.ci](https -//www.codival.ci)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Codival figure sur le site de fuite du groupe spacebears. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Codival est une entreprise commerciale majeure opérant dans le secteur des retail (distribution), contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
+
+- **Analyse -**
+  AFRINTEL a recensé Codival (Côte d'Ivoire) comme victime revendiquée par le groupe ransomware spacebears. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par spacebears, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur du commerce en cas d'éléments de compromission avérés.
+
+----------------------------
+    22 Août 2024 : Don’t waste group
+- **Acteur / Groupe -** incransom
+- **Secteur -** Professional / Business Services
+- **Site web -** Not validated from the supplied source
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Don’t waste group figure sur le site de fuite du groupe incransom. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Don’t waste group est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse -**
+  AFRINTEL a recensé Don’t waste group (Afrique du Sud) comme victime revendiquée par le groupe ransomware incransom. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par incransom, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+
+----------------------------
+    22 Août 2024 : Instadriver.co
+- **Acteur / Groupe -** killsec
+- **Secteur -** Retail / E-commerce
+- **Site web -** [instadriver.co](https -//www.instadriver.co)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Instadriver.co figure sur le site de fuite du groupe killsec. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Instadriver.co est une entreprise commerciale majeure opérant dans le secteur des retail (distribution), contribuant de manière significative au tissu économique régional en Kenya.
+
+- **Analyse -**
+  AFRINTEL a recensé Instadriver.co (Kenya) comme victime revendiquée par le groupe ransomware killsec. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par killsec, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur du commerce en cas d'éléments de compromission avérés.
+
+----------------------------
+    24 Août 2024 : Ingotbrokers
+- **Acteur / Groupe -** darkvault
+- **Secteur -** Finance / Banking
+- **Site web -** [ingotbrokers.com](https -//www.ingotbrokers.com)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Ingotbrokers figure sur le site de fuite du groupe darkvault. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Ingotbrokers est une entreprise commerciale majeure opérant dans le secteur des financial organizations, contribuant de manière significative au tissu économique régional en Seychelles.
+
+- **Analyse -**
+  AFRINTEL a recensé Ingotbrokers (Seychelles) comme victime revendiquée par le groupe ransomware darkvault. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par darkvault, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+----------------------------
+    26 Août 2024 : Onedayonly
+- **Acteur / Groupe -** killsec
+- **Secteur -** Retail / E-commerce
+- **Site web -** [onedayonly.co.za](https -//www.onedayonly.co.za)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Onedayonly figure sur le site de fuite du groupe killsec. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Onedayonly est une entreprise commerciale majeure opérant dans le secteur des shops, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse -**
+  AFRINTEL a recensé Onedayonly (Afrique du Sud) comme victime revendiquée par le groupe ransomware killsec. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par killsec, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur du commerce en cas d'éléments de compromission avérés.
+
+----------------------------
+    28 Août 2024 : Dpfza.gov.dj
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Government / Administration
+- **Site web -** [dpfza.gov.dj](https -//www.dpfza.gov.dj)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Dpfza.gov.dj figure sur le site de fuite du groupe ransomhub. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Dpfza.gov.dj est une institution publique ou une autorité de régulation étatique essentielle, chargée des services administratifs et de la gestion publique.
+
+- **Analyse -**
+  AFRINTEL a recensé Dpfza.gov.dj (Djibouti) comme victime revendiquée par le groupe ransomware ransomhub. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par ransomhub, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données citoyennes et de réponse à incident adaptées au secteur public en cas d'éléments de compromission avérés.
+
+----------------------------
+    28 Août 2024 : Success microfinance bank
+- **Acteur / Groupe -** meow
+- **Secteur -** Finance / Banking
+- **Site web -** Not validated from the supplied source
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Success microfinance bank figure sur le site de fuite du groupe meow. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Success microfinance bank est une entreprise commerciale majeure opérant dans le secteur des banking institutions, contribuant de manière significative au tissu économique régional en Zimbabwe.
+
+- **Analyse -**
+  AFRINTEL a recensé Success microfinance bank (Zimbabwe) comme victime revendiquée par le groupe ransomware meow. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par meow, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+----------------------------
+    28 Août 2024 : Ghanare
+- **Acteur / Groupe -** BrainCipher
+- **Secteur -** Technology / IT
+- **Site web -** [ghanare.com](https -//www.ghanare.com)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Ghanare figure sur le site de fuite du groupe BrainCipher. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Ghanare est une entreprise commerciale majeure opérant dans le secteur des technologies, contribuant de manière significative au tissu économique régional en Ghana.
+
+- **Analyse -**
+  AFRINTEL a recensé Ghanare (Ghana) comme victime revendiquée par le groupe ransomware BrainCipher. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par BrainCipher, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur technologique en cas d'éléments de compromission avérés.
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. Analyse CTI par type
 
-Août 2024 constitue le corpus mensuel AFRINTEL le plus volumineux observé jusqu'ici dans la séquence corrigée de janvier à août, avec **16 fiches cyber documentées dans 9 pays africains**. Quinze de ces fiches relèvent de la taxonomie AFRINTEL à six types, avec **14 Ransomware et 1 Data Leak**, tandis que GTBank est conservé séparément comme **tentative d'attaque confirmée par la victime**.
+### Ransomware - 14
 
-Par rapport à juillet, le nombre total de fiches documentées passe de 11 à 16, soit une hausse de **45,5 %**. La principale évolution numérique concerne les Ransomware, qui doublent de 7 à 14 publications. Les Data Leak passent de 4 à 1, notamment parce que le total de juillet comprenait trois jeux de données algériens plus anciens remis en circulation durant ce mois. La comparaison mensuelle reflète donc autant une évolution de la composition de la collecte qu'une évolution du volume brut.
+**14 fiche(s) (87,5 %).** Principaux pays : Afrique du Sud (6), Seychelles (2), Zimbabwe (2). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-La concentration ransomware est importante mais la maturité des preuves reste faible. Quatorze organisations apparaissent sur des leak sites, alors que les fiches fournies ne contiennent pas d'éléments DFIR publics établissant une chaîne d'intrusion commune, un chiffrement confirmé ou l'étendue d'une exfiltration. DarkVault est l'acteur le plus visible avec trois publications, mais la fréquence d'un acteur ne suffit pas à démontrer une campagne coordonnée. Les revendications répétées concernant Remitano et Lenmed compliquent encore l'attribution : sans artefacts techniques comparables ni chronologies confirmées par les victimes, réutilisation, revente, seconde intrusion ou attribution erronée restent des hypothèses et non des conclusions.
+### System Intrusion - 1
 
-Eventizer fournit le seul échantillon de données visible dans la taxonomie principale du mois. Les champs structurés de contact et de contexte de comptes constituent un signal d'exposition concret, mais le volume revendiqué de 60 000 enregistrements et la provenance complète restent non vérifiés. GTBank présente un profil de preuve inverse : la victime elle-même confirme un événement cyber et une perturbation temporaire du site, tout en précisant que la tentative a échoué et qu'aucune donnée client n'a été compromise. Présenter ce dossier comme une violation réussie serait donc moins exact que de le conserver comme tentative d'attaque distincte.
+**1 fiche(s) (6,2 %).** Principaux pays : Nigeria (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-Août renforce ainsi un principe central d'AFRINTEL : **volume de publications, réussite de l'incident, attribution et maturité des preuves sont des dimensions différentes**. La conclusion défendable est qu'août connaît une forte hausse de la visibilité ransomware, un Data Leak avec échantillon et une tentative de compromission de domaine confirmée mais échouée. Le suivi doit prioriser les confirmations victimes, les résultats DFIR, les nouveaux échantillons et la corrélation de cycle de vie, en particulier pour les organisations revendiquées par plusieurs acteurs ransomware.
+### Data Leak - 1
+
+**1 fiche(s) (6,2 %).** Principaux pays : Tunisie (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+
+## 11. Incidents prioritaires pour revue
+
+| Pays | Organisation | Type | Statut | Impact | Confiance |
+|---|---|---|---|---|---|
+| Tunisie | Eventizer
+- **Acteur / Groupe:** Bambi
+- **Contexte source:** Publication sur un forum cybercriminel
+- **Secteur:** Professional / Business Services
+- **Site web:** [eventizer.io](https://www.eventizer.io)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Eventizer est une agence événementielle tunisienne et une plateforme numérique centralisant les inscriptions, paiements, contrôles d’accès, hébergements et tableaux de bord liés aux événements.
+- **Analyse:** La publication attribuée à Bambi annonce environ 60 000 enregistrements associés à Eventizer et présente un échantillon structuré avec des identifiants utilisateurs, noms, adresses électroniques, numéros de téléphone, pays et informations de rôle de connexion. Le titre de la publication revendique une couverture de la Tunisie et du Nigeria, tandis que l’échantillon visible contient des enregistrements associés à plusieurs pays. L’échantillon démontre l’exposition de données de contact et de contexte de comptes, mais le volume total, l’exhaustivité, la provenance et le rattachement technique direct à Eventizer n’ont pas été vérifiés indépendamment. Les champs exposés pourraient faciliter le phishing ciblé, l’usurpation, l’énumération de comptes et l’ingénierie sociale. Les enregistrements et coordonnées bruts ne sont pas reproduits.
+
+---------------------------- | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Seychelles | Remitano
+- **Acteur / Groupe:** meow
+- **Secteur:** Finance / Banking
+- **Site web:** [remitano.com](https://www.remitano.com)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Ransomware
+
+- **Note de fiabilité:**
+  Remitano figure sur le site de fuite du groupe meow. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description:**
+  Remitano est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Seychelles.
+
+- **Analyse:**
+  AFRINTEL a recensé Remitano (Seychelles) comme victime revendiquée par le groupe ransomware meow. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations:**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par meow, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Zimbabwe | Netone
+- **Acteur / Groupe:** hunters
+- **Secteur:** Telecommunications
+- **Site web:** [netone.co.zw](https://www.netone.co.zw)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Ransomware
+
+- **Note de fiabilité:**
+  Netone figure sur le site de fuite du groupe hunters. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description:**
+  Netone est un opérateur de réseau mobile de premier plan fournissant des infrastructures de télécommunications, des services de téléphonie et des données haut débit.
+
+- **Analyse:**
+  AFRINTEL a recensé Netone (Zimbabwe) comme victime revendiquée par le groupe ransomware hunters. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations:**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par hunters, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Afrique du Sud | Lenmed
+- **Acteur / Groupe:** darkvault
+- **Secteur:** Healthcare / Medical
+- **Site web:** [lenmed.co.za](https://www.lenmed.co.za)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Ransomware
+
+- **Note de fiabilité:**
+  Lenmed figure sur le site de fuite du groupe darkvault. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Note de double revendication:**
+  Lenmed (lenmed.co.za) avait déjà été enregistrée comme revendiquée par lockbit3 le 7 mai 2024 (Claim - Unverified). L'acteur et la date diffèrent, et aucun élément n'indique une republication du même matériel ou une revente du même jeu de données. AFRINTEL enregistre cette publication de darkvault comme une revendication indépendante, en l'état des éléments disponibles.
+
+- **Description:**
+  Lenmed est une entreprise commerciale majeure opérant dans le secteur des healthcare services, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse:**
+  AFRINTEL a recensé Lenmed (Afrique du Sud) comme victime revendiquée par le groupe ransomware darkvault. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations:**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par darkvault, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données patients et de réponse à incident adaptées au secteur de la santé en cas d'éléments de compromission avérés.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Afrique du Sud | Gpf.za
+- **Acteur / Groupe:** darkvault
+- **Secteur:** Finance / Banking
+- **Site web:** [gpf.org.za](https://www.gpf.org.za)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Ransomware
+
+- **Note de fiabilité:**
+  Gpf.za figure sur le site de fuite du groupe darkvault. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description:**
+  Gpf.za est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en South Africa.
+
+- **Analyse:**
+  AFRINTEL a recensé Gpf.za (Afrique du Sud) comme victime revendiquée par le groupe ransomware darkvault. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations:**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par darkvault, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Sélection structurée selon impact, statut et confiance ; ce n'est pas un classement absolu de gravité.
+
+## 12. Intelligence gaps et corrections
+
+- vecteur d'accès initial souvent inconnu ;
+- date technique de compromission parfois différente de la date de publication ;
+- volumes revendiqués rarement vérifiables intégralement ;
+- attribution technique souvent limitée au compte de publication ;
+- republications historiques suivies séparément.
+
+## 13. Recommandations
+
+- MFA résistante au phishing, PAM et moindre privilège ;
+- segmentation, sauvegardes immuables et tests de restauration ;
+- centralisation EDR/IAM/VPN/WAF/DNS/cloud/applications ;
+- détection des exports massifs, archives inhabituelles et transferts sortants ;
+- conservation séparée des dates d'incident, publication initiale, repost et découverte AFRINTEL.
+
+## 14. Conclusion
+
+Août 2024 contient **16 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+
+👉🏾 [Victimes canoniques](./victims_FR.md)
 
 **AFRINTEL** - TLP:CLEAR

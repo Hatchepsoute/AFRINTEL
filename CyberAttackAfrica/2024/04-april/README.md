@@ -1,184 +1,425 @@
-# AFRINTEL CTI Report - April 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - April 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL documents **7 incident records** in April 2024: **5 Ransomware** and **2 Data Leak**, across **6 African countries**. No Access Sale, DDoS, Defacement or Operational Fraud record is present in the validated April corpus.
+In April 2024, AFRINTEL retains **9 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (5, 55.6%)** followed by **DDoS (2, 22.2%)**. Leading countries are **South Africa (3)**, **Libya (2)**, **Seychelles (1)**. Leading sectors are **Finance / Banking (2)**, **Media / Entertainment (2)**, **Healthcare / Medical (1)**. Most frequent actor/group labels are `Unknown` (2), `spacebears` (2), `incransom` (1). `Unknown` means missing attribution, not an actor.
 
-South Africa accounts for two records. Burkina Faso, Egypt, Libya, Morocco and Seychelles each account for one. The seven incidents are distributed across seven different controlled sectors, so the month does not show a measurable sector concentration.
-
-`spacebears` is the only actor associated with two organizations. The two Data Leak records, ONEF in Burkina Faso and Vezeeta Pharmacy in Egypt, include visible sample material. For the five Ransomware records, the available corpus supports the existence of the actor publications but does not independently confirm encryption, operational disruption or exfiltration.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | March 2024 | April 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 9 | **7** | **-2 (-22.2%)** |
-| Ransomware | 7 | **5** | **-2 (-28.6%)** |
-| Data Leak | 2 | **2** | **0 (stable)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 9 | 9 | Stable |
+| Ransomware | 8 | 5 | -3 (-37.5%) |
+| Data Leak | 1 | 2 | +1 (+100.0%) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 2 | +2 (new) |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 0 | 0 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-April records **22.2% fewer incidents** than March. The decrease is entirely attributable to Ransomware, which falls from 7 to 5. Data Leak remains stable at 2 records.
+### 1.2 Comparative analysis
+
+Monthly volume **remains stable by 0 incident(s)**. Structural changes are: Ransomware 8->5 (-3), DDoS 0->2 (+2), Data Leak 1->2 (+1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-30 April 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective correction registry:** none of the 10 identified missing 2024 incidents belongs to April, so no additional record is injected into this month.
-- Technical findings are limited to visible source evidence. Behaviors commonly associated with a ransomware group are not treated as observed facts unless the card contains supporting evidence.
-- Claimed record volumes and potential impacts remain distinct from directly reviewed evidence.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **5** | **71.4%** |
-| Data Leak | **2** | **28.6%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 5 | 55.6% |
+| Data Leak | 2 | 22.2% |
 | Access Sale | 0 | 0.0% |
-| DDoS | 0 | 0.0% |
+| DDoS | 2 | 22.2% |
 | Defacement | 0 | 0.0% |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **7** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - April 2024
     "Ransomware" : 5
     "Data Leak" : 2
+    "DDoS" : 2
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 2 | 0 | **2** |
-| 🇧🇫 Burkina Faso | 0 | 1 | 1 |
-| 🇪🇬 Egypt | 0 | 1 | 1 |
-| 🇱🇾 Libya | 1 | 0 | 1 |
-| 🇲🇦 Morocco | 1 | 0 | 1 |
-| 🇸🇨 Seychelles | 1 | 0 | 1 |
-| **Total** | **5** | **2** | **7** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| South Africa | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Libya | 2 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Seychelles | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Egypt | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Burkina Faso | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| North Africa | 2 | 1 | **3** |
-| Southern Africa | 2 | 0 | **2** |
-| West Africa | 0 | 1 | **1** |
-| Indian Ocean | 1 | 0 | **1** |
-| **Total** | **5** | **2** | **7** |
+| Region | Records | Share |
+|---|---|---|
+| North Africa | 4 | 44.4% |
+| Southern Africa | 3 | 33.3% |
+| Indian Ocean | 1 | 11.1% |
+| West Africa | 1 | 11.1% |
 
-### 3.4 Harmonized sector distribution
+## 6. Sector distribution
 
 | Sector | Records | Share |
-|---|---:|---:|
-| Finance / Banking | 1 | 14.3% |
-| Media / Entertainment | 1 | 14.3% |
-| Government / Administration | 1 | 14.3% |
-| Manufacturing / Industry | 1 | 14.3% |
-| Technology / IT | 1 | 14.3% |
-| Energy / Utilities | 1 | 14.3% |
-| Healthcare / Medical | 1 | 14.3% |
-| **Total** | **7** | **100%** |
-
-### 3.5 Actors / groups
-
-| Actor / Group | Records |
-|---|---:|
-| spacebears | **2** |
-| incransom | 1 |
-| hunters | 1 |
-| Pedi | 1 |
-| ransomhub | 1 |
-| EgyptLeaks | 1 |
-| **Total** | **7** |
-
-```mermaid
-flowchart LR
-    SB["spacebears - 2"] --> MA["Morocco - SM Emballage"]
-    SB --> ZA1["South Africa - Thinkadam"]
-    INC["incransom"] --> SC["Seychelles - Remitano"]
-    HUN["hunters"] --> ZA2["South Africa - Caxton and CTP"]
-    PED["Pedi"] --> BF["Burkina Faso - ONEF"]
-    RH["ransomhub"] --> LY["Libya - Mellitah Oil & Gas"]
-    EL["EgyptLeaks"] --> EG["Egypt - Vezeeta Pharmacy"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 5 records
-
-The five Ransomware records concern **Remitano**, **Caxton and CTP Publishers and Printers**, **SM Emballage**, **Thinkadam** and **Mellitah Oil & Gas**.
-
-All five are `Claim - Unverified`. The victim cards state that no accessible leaked file, database extract or screenshot was observed for these listings at collection time. The corpus therefore supports the fact that the organizations were published by the named ransomware groups, but does not independently establish intrusion, encryption, disruption, exfiltration volume or dataset completeness.
-
-`spacebears` appears twice, against SM Emballage and Thinkadam. This repetition is an observed publication pattern only and is insufficient to establish a coordinated campaign or shared initial-access vector.
-
-### 4.2 Data Leak - 2 records
-
-The **ONEF** record is based on a forum publication presenting a database associated with `onef.gov.bf` and showing the structure of an `actualite` application table. The screenshot does not establish authenticity, completeness or initial access method.
-
-The **Vezeeta Pharmacy** record is based on a publication attributed to EgyptLeaks advertising approximately **133,000 order records** covering 2021-2023. A visible sample contains fields related to contact, zone, order status, payment, branch, products and delivery addresses. AFRINTEL did not receive the complete archive and therefore does not validate the claimed 133,000-record total, acquisition method, completeness or current validity of the data.
-
-## 5. Key findings and intelligence gaps
-
-- Ransomware remains the dominant incident type with **5 of 7 records (71.4%)**.
-- April's total volume is lower than March, but Data Leak remains unchanged at two records.
-- No sector appears more than once, preventing a defensible conclusion about a dominant sector in April.
-- ONEF and Vezeeta provide more direct documentary value than the five Ransomware listings because sample material is visible.
-- No public DFIR evidence in the reviewed April corpus establishes the technical intrusion chains of the five Ransomware records.
-- The claimed Vezeeta volume and the authenticity/completeness of the ONEF database remain unresolved collection gaps.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Relevant to ransomware monitoring; encryption is not confirmed in the five April claims. |
-| Preventive | T1490 - Inhibit System Recovery | Relevant backup-protection control; behavior not observed in the April evidence. |
-| Contextual | T1213 - Data from Information Repositories | Relevant to database/repository exposure represented by ONEF and Vezeeta. |
-| Preventive | T1567 - Exfiltration Over Web Service | Outbound-data monitoring context; exfiltration channels are not established. |
+| Finance / Banking | 2 | 22.2% |
+| Media / Entertainment | 2 | 22.2% |
+| Healthcare / Medical | 1 | 11.1% |
+| Government / Administration | 1 | 11.1% |
+| Manufacturing / Industry | 1 | 11.1% |
+| Technology / IT | 1 | 11.1% |
+| Energy / Utilities | 1 | 11.1% |
 
-## 7. Recommendations
+## 7. Actors / groups
 
-- Preserve and correlate logs around the publication dates before raising confidence in ransomware claims.
-- For energy and financial environments, prioritize continuity, privileged-access controls and isolated backups.
-- For ONEF and Vezeeta, validate backend access history, abnormal exports and affected-record scope before treating advertised volumes as confirmed.
-- Monitor for later actor publications that may add samples or change evidence status.
-- Maintain separate fields for actor claim, victim confirmation, sample publication and technical validation.
+| Actor / Group | Records | Share |
+|---|---|---|
+| Unknown | 2 | 22.2% |
+| spacebears | 2 | 22.2% |
+| incransom | 1 | 11.1% |
+| hunters | 1 | 11.1% |
+| EgyptLeaks | 1 | 11.1% |
+| Pedi | 1 | 11.1% |
+| ransomhub | 1 | 11.1% |
 
-## 8. Timeline
+## 8. Evidence maturity
+
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 5 | 55.6% |
+| Confirmed | 2 | 22.2% |
+| Claim - Data Sample Published | 2 | 22.2% |
+
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 5 | 55.6% |
+| Very High | 2 | 22.2% |
+| Medium | 2 | 22.2% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - April 2024
-    04 April : incransom - Remitano
-    13 April : hunters - Caxton and CTP
-    19 April : EgyptLeaks - Vezeeta Pharmacy
-    23 April : Pedi - ONEF
-    29 April : spacebears - SM Emballage
-             : spacebears - Thinkadam
-    30 April : ransomhub - Mellitah Oil & Gas
+    1-3 Avril 2024 : Central Bank of Libya (CBL)
+- **Date de l'incident -** 1-3 Avril 2024
+- **Date de publication initiale / source retenue -** 8 avril 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Campagne couvrant les événements des 1er et 3 avril.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Finance / Banking
+- **Site web -** [cbl.gov.ly](https -//cbl.gov.ly/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** DDoS
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 3
+- **Analyse -** Le 1er avril, la plateforme de réservation de devises a subi une attaque DDoS affectant l'accès. Le 3 avril, le site officiel a subi une attaque du même type. AFRINTEL compte cette séquence comme une seule campagne DDoS et non comme un incident distinct par service ou domaine.
+- **Sources publiques -** [Libya Observer](https -//libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+    1-2 Avril 2024 : Moneyweb
+- **Date de l'incident -** 1-2 Avril 2024
+- **Date de publication initiale / source retenue -** 3 avril 2024
+- **Date de découverte AFRINTEL -** 23 août 2026 - audit rétrospectif
+- **Précision chronologique -** Deux vagues documentées les 1er et 2 avril, comptées comme une seule campagne.
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Media / Entertainment
+- **Site web -** [moneyweb.co.za](https -//www.moneyweb.co.za/)
+- **Statut -** Victim Confirmed
+- **Type d'incident -** DDoS
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 3
+- **Analyse -** Moneyweb a documenté une première attaque DDoS d'environ 12 heures le 1er avril, suivie d'une seconde de plus de 8 heures le 2 avril. La victime a estimé environ 1,015 milliard de requêtes et a reçu un message d'extorsion. AFRINTEL conserve l'extorsion comme contexte et `DDoS` comme type principal unique.
+- **Sources publiques -** [Moneyweb](https -//www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+    04 Avril 2024 : Remitano (Cryptocurrency Exchange)
+- **Acteur / Groupe -** incransom
+- **Secteur -** Finance / Banking
+- **Site web -** N/A (Mobile App & Exchange Platform)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Remitano (Cryptocurrency Exchange) figure sur le site de fuite du groupe incransom. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Remitano est une plateforme internationale d'échange de crypto-monnaies en pair-à-pair (P2P) sécurisée par séquestre, permettant l'achat, la vente et le stockage d'actifs numériques avec des devises fiduciaires.
+
+- **Analyse -**
+  AFRINTEL a recensé Remitano (Cryptocurrency Exchange) (Seychelles) comme victime revendiquée par le groupe ransomware incransom. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Institutions bancaires et financières / Crypto-actifs, une compromission de ce type exposerait généralement des données de comptes clients, de paiement ou financières, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par incransom, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés.
+    13 Avril 2024 : Caxton and CTP Publishers and Printers
+- **Acteur / Groupe -** hunters
+- **Secteur -** Media / Entertainment
+- **Site web -** https -//www.caxton.co.za
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Caxton and CTP Publishers and Printers figure sur le site de fuite du groupe hunters. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Caxton & CTP est l'un des plus grands éditeurs et imprimeurs de journaux, de magazines et d'emballages commerciaux en Afrique du Sud.
+
+- **Analyse -**
+  AFRINTEL a recensé Caxton and CTP Publishers and Printers (Afrique du Sud) comme victime revendiquée par le groupe ransomware hunters. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Médias, édition et audiovisuel, une compromission de ce type exposerait généralement des données employés, clients ou opérationnelles, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par hunters, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
+    19 Avril 2024 : Vezeeta Pharmacy (vezeeta.com)
+
+- **Date de publication initiale -** 19 avril 2024
+- **Date de détection AFRINTEL -** 21 août 2026
+- **Acteur / Groupe -** EgyptLeaks
+- **Secteur -** Healthcare / Medical
+- **Site web -** [vezeeta.com](https -//www.vezeeta.com)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+
+- **Description -**
+
+  Vezeeta est une plateforme égyptienne de réservation de soins et de services de pharmacie en ligne. La publication vise spécifiquement Vezeeta Pharmacy et annonce des données de commandes.
+
+- **Analyse -**
+
+  **Observed  -** Une publication attribuée à EgyptLeaks, datée du 19 avril 2024, propose à la vente environ 133 000 enregistrements de commandes de Vezeeta Pharmacy couvrant 2021, 2022 et 2023. La publication affiche un échantillon de lignes de commandes comprenant des champs de contact, de zone, de statut de commande, de paiement, de branche, de produits et d'adresses de livraison. Les valeurs personnelles visibles dans l'échantillon n'ont pas été reprises dans AFRINTEL.
+
+  **Assumption  -** La concordance entre le nom de Vezeeta Pharmacy, le domaine vezeeta.com, les noms de branches et la structure d'un export de commandes est compatible avec une exposition de données clients en Égypte. Si les données sont authentiques, elles pourraient faciliter le phishing ciblé, la fraude à la livraison, l'usurpation de personnel ou de pharmacies et l'exposition d'informations de santé indirectement déduites des produits commandés.
+
+  **Unknown  -** AFRINTEL n'a pas reçu l'archive complète ni confirmé les 133 000 commandes, la méthode d'acquisition, l'exhaustivité, la validité actuelle des coordonnées, la présence de données médicales protégées ou une confirmation de Vezeeta. L'analyse repose sur la capture et l'extrait visibles ; aucun nom, téléphone, adresse, produit associé à une personne ou identifiant de commande n'est reproduit.
+    23 Avril 2024 : ONEF (Observatoire national de l’emploi et de la formation)
+- **Acteur / Groupe -** Pedi
+- **Secteur -** Government / Administration
+- **Site web -** [onef.gov.bf](https -//onef.gov.bf)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+- **Description -** L’Observatoire national de l’emploi et de la formation (ONEF) est une institution publique burkinabè consacrée aux informations sur l’emploi et la formation professionnelle.
+- **Analyse -** Une publication sur un forum présente une base associée à onef.gov.bf comme une diffusion SQL gratuite et montre la structure d’une table applicative nommée `actualite`, avec des champs liés aux actualités et aux métadonnées de publication. La capture ne permet pas d’établir l’authenticité, l’exhaustivité ou la méthode d’accès initiale. AFRINTEL enregistre cette publication comme une revendication accompagnée d’un échantillon et ne reproduit aucune valeur de la base.
+    29 Avril 2024 : SM EMBALLAGE
+- **Acteur / Groupe -** spacebears
+- **Secteur -** Manufacturing / Industry
+- **Site web -** https -//smemballage.com/
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  SM EMBALLAGE figure sur le site de fuite du groupe spacebears. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  SM Emballage est une entreprise marocaine spécialisée dans la conception et la fabrication d'emballages personnalisés et de solutions de protection pour le secteur agroalimentaire et industriel.
+
+- **Analyse -**
+  AFRINTEL a recensé SM EMBALLAGE (Maroc) comme victime revendiquée par le groupe ransomware spacebears. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Industrie manufacturière / Emballages industriels, une compromission de ce type exposerait généralement des données fournisseurs, clients ou opérationnelles, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par spacebears, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données opérationnelles et de réponse à incident en cas d'éléments de compromission avérés.
+    29 Avril 2024 : Thinkadam
+- **Acteur / Groupe -** spacebears
+- **Secteur -** Technology / IT
+- **Site web -** https -//www.thinkadam.co/
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Thinkadam figure sur le site de fuite du groupe spacebears. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Thinkadam fournit des solutions technologiques avancées de verrouillage d'appareils à destination de l'industrie du crédit sur smartphones, visant à réduire les défauts de paiement.
+
+- **Analyse -**
+  AFRINTEL a recensé Thinkadam (Afrique du Sud) comme victime revendiquée par le groupe ransomware spacebears. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Technologies de l'information / Téléphonie, une compromission de ce type exposerait généralement des données clients, partenaires ou techniques internes, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par spacebears, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de réponse à incident adaptées au secteur technologique en cas d'éléments de compromission avérés.
+    30 Avril 2024 : Mellitah Oil & Gas (Eni / NOC Joint Venture)
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Energy / Utilities
+- **Site web -** N/A
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Ransomware
+
+- **Note de fiabilité -**
+  Mellitah Oil & Gas (Eni / NOC Joint Venture) figure sur le site de fuite du groupe ransomhub. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description -**
+  Mellitah Oil & Gas est un consortium d'exploration et d'exploitation énergétique majeur en Libye, opéré conjointement par la National Oil Corporation (NOC) et la major italienne Eni.
+
+- **Analyse -**
+  AFRINTEL a recensé Mellitah Oil & Gas (Eni / NOC Joint Venture) (Libye) comme victime revendiquée par le groupe ransomware ransomhub. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Énergie / Pétrole & Gaz, une compromission de ce type exposerait généralement des données employés, clients ou opérationnelles, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations -**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par ransomhub, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données et de réponse à incident en cas d'éléments de compromission avérés.
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-April 2024 closes with **7 documented incident records across 6 African countries**, consisting of **5 Ransomware claims and 2 Data Leak records**. Compared with March, the monthly corpus decreases by **22.2%**, from 9 to 7 incidents. This reduction is driven by Ransomware, which falls from 7 to 5, while Data Leak remains stable at 2.
+### Ransomware - 5
 
-The month does not reveal a defensible sector concentration: each of the seven records belongs to a different harmonized sector. The geographic picture is similarly dispersed, with only South Africa appearing more than once. `spacebears` is the only actor represented twice, but the available evidence does not support interpreting those two publications as a coordinated campaign or as proof of a shared intrusion method.
+**5 record(s) (55.6%).** Leading countries: South Africa (2), Seychelles (1), Morocco (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-The quality of evidence also differs significantly by incident type. The five Ransomware entries remain unverified actor claims without accessible technical artifacts confirming encryption, disruption or exfiltration. By contrast, ONEF and Vezeeta include visible data samples and therefore offer a stronger basis for exposure assessment, while still leaving important uncertainties regarding authenticity, completeness, acquisition method and total affected volume.
+### DDoS - 2
 
-For CTI monitoring, the priority after April is therefore not to infer additional technical detail from actor reputation, but to **follow the evidence lifecycle**: victim confirmation, later sample publication, technical indicators, service disruption, confirmed affected-record counts and possible republication of the same material. This distinction is necessary to keep AFRINTEL's historical statistics useful without turning cybercriminal claims into confirmed compromises.
+**2 record(s) (22.2%).** Leading countries: Libya (1), South Africa (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### Data Leak - 2
+
+**2 record(s) (22.2%).** Leading countries: Egypt (1), Burkina Faso (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| Libya | Central Bank of Libya (CBL)
+- **Date de l'incident:** 1-3 Avril 2024
+- **Date de publication initiale / source retenue:** 8 avril 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Campagne couvrant les événements des 1er et 3 avril.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Finance / Banking
+- **Site web:** [cbl.gov.ly](https://cbl.gov.ly/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Le 1er avril, la plateforme de réservation de devises a subi une attaque DDoS affectant l'accès. Le 3 avril, le site officiel a subi une attaque du même type. AFRINTEL compte cette séquence comme une seule campagne DDoS et non comme un incident distinct par service ou domaine.
+- **Sources publiques:** [Libya Observer](https://libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+---------------------------- | DDoS | Victim Confirmed | Level 3 | Very High |
+| South Africa | Moneyweb
+- **Date de l'incident:** 1-2 Avril 2024
+- **Date de publication initiale / source retenue:** 3 avril 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Deux vagues documentées les 1er et 2 avril, comptées comme une seule campagne.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Media / Entertainment
+- **Site web:** [moneyweb.co.za](https://www.moneyweb.co.za/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** DDoS
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Moneyweb a documenté une première attaque DDoS d'environ 12 heures le 1er avril, suivie d'une seconde de plus de 8 heures le 2 avril. La victime a estimé environ 1,015 milliard de requêtes et a reçu un message d'extorsion. AFRINTEL conserve l'extorsion comme contexte et `DDoS` comme type principal unique.
+- **Sources publiques:** [Moneyweb](https://www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+---------------------------- | DDoS | Victim Confirmed | Level 3 | Very High |
+| Egypt | Vezeeta Pharmacy (vezeeta.com)
+
+- **Date de publication initiale:** 19 avril 2024
+- **Date de détection AFRINTEL:** 21 août 2026
+- **Acteur / Groupe:** EgyptLeaks
+- **Secteur:** Healthcare / Medical
+- **Site web:** [vezeeta.com](https://www.vezeeta.com)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+
+- **Description:**
+
+  Vezeeta est une plateforme égyptienne de réservation de soins et de services de pharmacie en ligne. La publication vise spécifiquement Vezeeta Pharmacy et annonce des données de commandes.
+
+- **Analyse:**
+
+  **Observed :** Une publication attribuée à EgyptLeaks, datée du 19 avril 2024, propose à la vente environ 133 000 enregistrements de commandes de Vezeeta Pharmacy couvrant 2021, 2022 et 2023. La publication affiche un échantillon de lignes de commandes comprenant des champs de contact, de zone, de statut de commande, de paiement, de branche, de produits et d'adresses de livraison. Les valeurs personnelles visibles dans l'échantillon n'ont pas été reprises dans AFRINTEL.
+
+  **Assumption :** La concordance entre le nom de Vezeeta Pharmacy, le domaine vezeeta.com, les noms de branches et la structure d'un export de commandes est compatible avec une exposition de données clients en Égypte. Si les données sont authentiques, elles pourraient faciliter le phishing ciblé, la fraude à la livraison, l'usurpation de personnel ou de pharmacies et l'exposition d'informations de santé indirectement déduites des produits commandés.
+
+  **Unknown :** AFRINTEL n'a pas reçu l'archive complète ni confirmé les 133 000 commandes, la méthode d'acquisition, l'exhaustivité, la validité actuelle des coordonnées, la présence de données médicales protégées ou une confirmation de Vezeeta. L'analyse repose sur la capture et l'extrait visibles ; aucun nom, téléphone, adresse, produit associé à une personne ou identifiant de commande n'est reproduit. | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Burkina Faso | ONEF (Observatoire national de l’emploi et de la formation)
+- **Acteur / Groupe:** Pedi
+- **Secteur:** Government / Administration
+- **Site web:** [onef.gov.bf](https://onef.gov.bf)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+- **Description:** L’Observatoire national de l’emploi et de la formation (ONEF) est une institution publique burkinabè consacrée aux informations sur l’emploi et la formation professionnelle.
+- **Analyse:** Une publication sur un forum présente une base associée à onef.gov.bf comme une diffusion SQL gratuite et montre la structure d’une table applicative nommée `actualite`, avec des champs liés aux actualités et aux métadonnées de publication. La capture ne permet pas d’établir l’authenticité, l’exhaustivité ou la méthode d’accès initiale. AFRINTEL enregistre cette publication comme une revendication accompagnée d’un échantillon et ne reproduit aucune valeur de la base. | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Seychelles | Remitano (Cryptocurrency Exchange)
+- **Acteur / Groupe:** incransom
+- **Secteur:** Finance / Banking
+- **Site web:** N/A (Mobile App & Exchange Platform)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Ransomware
+
+- **Note de fiabilité:**
+  Remitano (Cryptocurrency Exchange) figure sur le site de fuite du groupe incransom. AFRINTEL n'a observé aucun échantillon, capture ou extrait de données accessible associé à cette publication au moment de la collecte, et la revendication n'a pas été confirmée de manière indépendante par l'organisation.
+
+- **Description:**
+  Remitano est une plateforme internationale d'échange de crypto-monnaies en pair-à-pair (P2P) sécurisée par séquestre, permettant l'achat, la vente et le stockage d'actifs numériques avec des devises fiduciaires.
+
+- **Analyse:**
+  AFRINTEL a recensé Remitano (Cryptocurrency Exchange) (Seychelles) comme victime revendiquée par le groupe ransomware incransom. Aucun fichier divulgué, extrait de base de données ou capture d'écran n'était accessible pour analyse, ce qui ne permet pas d'évaluer l'ampleur, le volume ni la sensibilité des données éventuellement exposées. Compte tenu de l'activité de l'organisation dans le secteur Institutions bancaires et financières / Crypto-actifs, une compromission de ce type exposerait généralement des données de comptes clients, de paiement ou financières, avec des risques associés de phishing, de fraude ou de perturbation de l'activité. AFRINTEL ne confirme ni l'intrusion, ni l'exfiltration de données, ni l'existence d'un jeu de données complet sur la seule base de cette publication.
+
+- **Recommandations:**
+  1. Examiner la surface d'attaque externe, les services d'accès distant et l'intégrité des sauvegardes à la suite de cette publication par incransom, et vérifier la disponibilité de sauvegardes hors ligne ou immuables.
+  2. Surveiller toute publication ultérieure d'échantillons de données liés à cette revendication et préparer des procédures de protection des données clients et de paiement et de réponse à incident adaptées au secteur financier en cas d'éléments de compromission avérés. | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+April 2024 contains **9 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

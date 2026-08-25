@@ -1,25 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Defacement-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Cyberincidents AFRINTEL - Décembre 2024 - corpus canonique (16 fiches)
 
-# Cyberattaques en Afrique: Décembre 2024 : Liste de 14 victimes
+👉🏾 [English version](./victims.md)
 
-👉🏾 [**English version available here**](./victims.md)
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Décembre 2024
-
-## Synthèse mensuelle
-
-Le corpus corrigé de décembre 2024 contient **14 fiches incident documentées** : **11 Ransomware**, **2 Data Leak**, **1 Defacement**, **0 Access Sale**, **0 DDoS** et **0 Operational Fraud**, dans **12 pays africains**.
-
-Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corroboré à haute confiance sans confirmation directe de la victime dans le jeu de sources examiné, et **NBS (Nigeria)**, classé Defacement confirmé par la victime avec perturbation de service documentée et sans vol confirmé des données backend.
 
 ### 3 Décembre 2024
 
 #### 🇸🇩 Soudan - DAL Group
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Agriculture / Agribusiness
 - **Site web:** [dalgroup.com](https://www.dalgroup.com)
 - **Statut:** Claim - Data Sample Published
@@ -31,30 +20,10 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 
 ----------------------------
 
-### Décembre 2024 - date exacte de l'incident non établie publiquement
-
-#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
-- **Date de l'incident:** Décembre 2024 - date exacte non établie publiquement
-- **Date de publication initiale:** 3 décembre 2024
-- **Date de correction AFRINTEL:** 23 août 2026
-- **Acteur / Groupe:** Unknown
-- **Secteur:** Government / Administration
-- **Site web:** [msea.go.ke](https://msea.go.ke/)
-- **Statut:** Corroborated - No Direct Victim Confirmation Located
-- **Type d'incident:** Data Leak
-- **Niveau de confiance:** High
-- **Niveau d'impact:** Level 4
-- **Description victime:** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
-- **Analyse:** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
-- **Qualification de la preuve:** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
-- **Sources publiques:** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
-
-----------------------------
-
 ### 9 Décembre 2024
 
 #### 🇲🇷 Mauritanie - Bankily
-- **Groupe ransomware:** apt73/bashe
+- **Acteur / Groupe:** apt73/bashe
 - **Secteur:** Finance / Banking
 - **Site web:** [bankily.mr](https://www.bankily.mr)
 - **Statut:** Claim - Unverified
@@ -68,7 +37,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 10 Décembre 2024
 
 #### 🇳🇦 Namibie - Telecom Namibia
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Telecommunications
 - **Site web:** [telecom.na](https://www.telecom.na)
 - **Statut:** Claim - Unverified
@@ -82,7 +51,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 13 Décembre 2024
 
 #### 🇪🇬 Égypte - Kazyon
-- **Groupe ransomware:** moneymessage
+- **Acteur / Groupe:** moneymessage
 - **Secteur:** Retail / E-commerce
 - **Site web:** [kazyon.com](https://www.kazyon.com)
 - **Statut:** Claim - Unverified
@@ -96,7 +65,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 15 Décembre 2024
 
 #### 🇿🇲 Zambie - Tumeny Payments Limited
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Finance / Banking
 - **Site web:** [tumenypay.com](https://www.tumenypay.com)
 - **Statut:** Claim - Unverified
@@ -110,7 +79,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 16 Décembre 2024
 
 #### 🇳🇬 Nigeria - Gouvernement de l'État d'Ekiti
-- **Groupe ransomware:** funksec
+- **Acteur / Groupe:** FunkSec
 - **Secteur:** Government / Administration
 - **Site web:** [ekitistate.gov.ng](https://ekitistate.gov.ng)
 - **Statut:** Claim - Data Sample Published
@@ -123,6 +92,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ----------------------------
 
 - **Qualification de la preuve:** L'archive examinée soutient fortement une exposition réelle de données associée au gouvernement de l'État d'Ekiti. Elle n'établit pas indépendamment un chiffrement ransomware, le vecteur d'accès initial ni une perturbation opérationnelle.
+
 ### 18 Décembre 2024
 
 #### 🇳🇬 Nigeria - National Bureau of Statistics (NBS)
@@ -146,7 +116,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 20 Décembre 2024
 
 #### 🇧🇼 Botswana - Water Utilities Corporation (WUC)
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Water / Utilities
 - **Site web:** [wuc.bw](https://www.wuc.bw)
 - **Statut:** Claim - Unverified
@@ -160,7 +130,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 21 Décembre 2024
 
 #### 🇹🇳 Tunisie - Groupe SETCAR
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [groupe-setcar.com.tn](https://www.groupe-setcar.com.tn)
 - **Statut:** Claim - Unverified
@@ -171,10 +141,29 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 
 ----------------------------
 
+### 23 Décembre 2024 - première observation rapportée
+
+#### 🇪🇬 Égypte - EgyptAir
+- **Date de l'incident:** 23 Décembre 2024 - première observation rapportée
+- **Date de publication initiale / source retenue:** 26 décembre 2024 - date d'indexation de la source d'audit
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Le 23 décembre correspond à la première observation rapportée ; la date d'obtention de l'accès n'est pas établie publiquement.
+- **Acteur / Groupe:** FunkSec
+- **Secteur:** Aviation
+- **Site web:** [egyptair.com](https://www.egyptair.com/)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Access Sale
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Analyse:** FunkSec a listé EgyptAir fin décembre 2024 avec une offre de vente d'accès. Plusieurs trackers documentent la revendication, mais aucune confirmation publique de la victime n'a été identifiée dans l'audit. Le périmètre, la validité de l'accès, sa persistance, une exploitation ultérieure et une éventuelle exfiltration restent non confirmés. AFRINTEL retient `Access Sale` et ne convertit pas la revendication en ransomware ou Data Leak.
+- **Sources publiques:** [Digital Checkmark](https://digitalchk.com/ransomware-group/funksec/) | [BreachSense](https://www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https://phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+
+----------------------------
+
 ### 24 Décembre 2024
 
 #### 🇿🇦 Afrique du Sud - Baker Tilly Morrison Murray
-- **Groupe ransomware:** sarcoma
+- **Acteur / Groupe:** sarcoma
 - **Secteur:** Professional / Business Services
 - **Site web:** [bakertillymm.co.za](https://www.bakertillymm.co.za)
 - **Statut:** Claim - Data Sample Published
@@ -189,7 +178,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 24 Décembre 2024
 
 #### 🇩🇿 Algérie - ASJP (Algerian Scientific Journal Platform)
-- **Groupe ransomware:** funksec
+- **Acteur / Groupe:** FunkSec
 - **Secteur:** Education / University
 - **Site web:** [asjp.cerist.dz](https://asjp.cerist.dz)
 - **Statut:** Claim - Data Sample Published
@@ -202,10 +191,11 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ----------------------------
 
 - **Qualification de la preuve:** Le matériel côté serveur examiné soutient fortement une compromission au niveau du système de fichiers associée à ASJP. Il n'établit pas indépendamment un chiffrement ransomware, une interruption de service ni le mécanisme d'accès initial.
+
 ### 28 Décembre 2024
 
 #### 🇿🇦 Afrique du Sud - Cell C
-- **Groupe ransomware:** ransomhouse
+- **Acteur / Groupe:** ransomhouse
 - **Secteur:** Telecommunications
 - **Site web:** [cellc.co.za](https://www.cellc.co.za)
 - **Statut:** Claim - Unverified
@@ -219,7 +209,7 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 ### 29 Décembre 2024
 
 #### 🇹🇿 Tanzanie - WOSAC
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Transport / Logistics
 - **Site web:** [wosac.co.tz](https://www.wosac.co.tz)
 - **Statut:** Claim - Unverified
@@ -230,7 +220,40 @@ Les deux ajouts rétrospectifs sont **MSEA (Kenya)**, classé Data Leak corrobor
 
 ----------------------------
 
-## ✍🏿 Auteur
-*Adama ASSIONGBON*
-*Consultant SOC & Cyber Threat Intelligence*
-[Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
+### Décembre 2024 - date exacte de l'incident non établie publiquement
+
+#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
+- **Date de l'incident:** Décembre 2024 - date exacte non établie publiquement
+- **Date de publication initiale:** 3 décembre 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [msea.go.ke](https://msea.go.ke/)
+- **Statut:** Corroborated - No Direct Victim Confirmation Located
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 4
+- **Description victime:** MSEA est une autorité publique kenyane chargée de soutenir et de réguler le secteur des micro et petites entreprises.
+- **Analyse:** Des publications de début décembre 2024 ont indiqué que MSEA avait été piratée et que des informations gouvernementales et organisationnelles étaient proposées à la vente sur des forums underground. Les catégories rapportées comprenaient notamment des dossiers d'employés, de la correspondance gouvernementale, des états financiers et des informations d'enregistrement d'entreprises. L'incident a ensuite été référencé dans l'Africa Cyberthreat Assessment d'INTERPOL ainsi que par ENACT, ce qui renforce matériellement l'évaluation selon laquelle une violation a bien eu lieu. Toutefois, aucune notification directe de MSEA n'a été retrouvée dans le jeu de sources utilisé pour l'audit rétrospectif. AFRINTEL classe donc le dossier en `Data Leak` avec une confiance `High` et un statut corroboré, et non `Victim Confirmed`. Le prix de vente revendiqué de 100 000 USD et les affirmations sur la cause technique restent des éléments de sources secondaires et ne sont pas présentés comme des faits établis.
+- **Qualification de la preuve:** La violation est fortement corroborée, mais aucune confirmation directe de la victime n'a été retrouvée dans le jeu de sources examiné. Les catégories de données restent des expositions rapportées et non des constatations validées fichier par fichier.
+- **Sources publiques:** Techpoint Africa ; Africa Cyberthreat Assessment d'INTERPOL ; références ENACT documentées dans le dataset de correction rétrospective.
+
+----------------------------
+### 30 Décembre 2024
+
+#### 🇪🇬 Égypte - Misr Pharmacies
+- **Date de compromission:** Inconnue
+- **Date de publication initiale observée:** 30 décembre 2024 à 20:03 - selon la capture conservée
+- **Acteur / Groupe:** Satanic
+- **Secteur:** Healthcare / Medical
+- **Site web:** [misrpharmacies.com](https://misrpharmacies.com/)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Description victime:** Misr Pharmacies est une enseigne pharmaceutique égyptienne disposant de services de pharmacie et de commande en ligne.
+- **Analyse:** Une publication underground du 30 décembre 2024 attribuée à `Satanic` annonce explicitement une base `Misr Pharmacies Misr Online Database - Leaked, Download!`. Le post décrit des ensembles de données associés aux commandes et aux prescriptions électroniques, avec des champs liés aux clients, contacts, facturation, livraison, statut de commande et informations de prescription. Des liens de téléchargement étaient affichés au moment de la publication. Les fichiers ne sont plus disponibles au moment de la présente réévaluation, de sorte qu'AFRINTEL ne peut pas vérifier indépendamment leur authenticité, leur volume, leur contenu réel ou leur provenance technique. AFRINTEL ne reproduit aucune donnée personnelle issue de la publication.
+- **Qualification de la preuve:** Le type `Data Leak` est retenu car la revendication porte explicitement sur une base divulguée et proposée au téléchargement. Le statut reste `Claim - Unverified` car les données annoncées ne sont plus disponibles pour une validation indépendante par AFRINTEL.
+- **Source / provenance:** Publication underground originale attribuée à Satanic, observée le 30 décembre 2024 ; capture conservée par AFRINTEL. Aucun lien de téléchargement n'est reproduit.
+
+----------------------------

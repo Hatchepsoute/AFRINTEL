@@ -1,19 +1,51 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
+# AFRINTEL Cyber Incidents - April 2024 - canonical corpus (9 records)
 
-# Cyber Attacks in Africa - April 2024: List of 7 Victims
-👉🏾 [**French version available here**](./victims_FR.md)
+👉🏾 [Version française](./victims_FR.md)
 
-## 📅 April 2024
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## Monthly snapshot
 
-April 2024 contains **7 documented incident records**: **5 Ransomware**, **2 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **6 African countries**.
+### April 1-3, 2024
+
+#### 🇱🇾 Libya - Central Bank of Libya (CBL)
+- **Incident date:** April 1-3, 2024
+- **Initial publication / retained source date:** April 8, 2024
+- **AFRINTEL discovery date:** August 23, 2026 - retrospective audit
+- **Timeline precision:** Campaign covering the April 1 and April 3 events.
+- **Actor / Group:** Unknown
+- **Sector:** Finance / Banking
+- **Website:** [cbl.gov.ly](https://cbl.gov.ly/)
+- **Status:** Victim Confirmed
+- **Incident type:** DDoS
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Analysis:** On April 1, the foreign-currency booking platform suffered a DDoS attack affecting access. On April 3, the official website was targeted by the same attack type. AFRINTEL counts this sequence as one DDoS campaign rather than a separate incident for each service or domain.
+- **Public sources:** [Libya Observer](https://libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
+
+### April 1-2, 2024
+
+#### 🇿🇦 South Africa - Moneyweb
+- **Incident date:** April 1-2, 2024
+- **Initial publication / retained source date:** April 3, 2024
+- **AFRINTEL discovery date:** August 23, 2026 - retrospective audit
+- **Timeline precision:** Two documented waves on April 1 and 2, counted as one campaign.
+- **Actor / Group:** Unknown
+- **Sector:** Media / Entertainment
+- **Website:** [moneyweb.co.za](https://www.moneyweb.co.za/)
+- **Status:** Victim Confirmed
+- **Incident type:** DDoS
+- **Confidence level:** Very High
+- **Impact level:** Level 3
+- **Analysis:** Moneyweb documented an initial DDoS attack lasting about 12 hours on April 1, followed by a second wave lasting more than 8 hours on April 2. The victim estimated about 1.015 billion requests and received an extortion message. AFRINTEL retains extortion as context and `DDoS` as the single primary incident type.
+- **Public sources:** [Moneyweb](https://www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------
 
 ### 04 April 2024
 #### 🇸🇨 Seychelles - Remitano (Cryptocurrency Exchange)
-- **Ransomware Group:** incransom
+- **Actor / Group:** incransom
 - **Sector:** Finance / Banking
 - **Website:** N/A (Mobile App & Exchange Platform)
 - **Status:** Claim - Unverified
@@ -36,7 +68,7 @@ April 2024 contains **7 documented incident records**: **5 Ransomware**, **2 Dat
 
 ### 13 April 2024
 #### 🇿🇦 South Africa - Caxton and CTP Publishers and Printers
-- **Ransomware Group:** hunters
+- **Actor / Group:** hunters
 - **Sector:** Media / Entertainment
 - **Website:** https://www.caxton.co.za
 - **Status:** Claim - Unverified
@@ -96,7 +128,7 @@ April 2024 contains **7 documented incident records**: **5 Ransomware**, **2 Dat
 
 ### 29 April 2024
 #### 🇲🇦 Morocco - SM EMBALLAGE
-- **Ransomware Group:** spacebears
+- **Actor / Group:** spacebears
 - **Sector:** Manufacturing / Industry
 - **Website:** https://smemballage.com/
 - **Status:** Claim - Unverified
@@ -119,7 +151,7 @@ April 2024 contains **7 documented incident records**: **5 Ransomware**, **2 Dat
 
 ### 29 April 2024
 #### 🇿🇦 South Africa - Thinkadam
-- **Ransomware Group:** spacebears
+- **Actor / Group:** spacebears
 - **Sector:** Technology / IT
 - **Website:** https://www.thinkadam.co/
 - **Status:** Claim - Unverified
@@ -142,7 +174,7 @@ April 2024 contains **7 documented incident records**: **5 Ransomware**, **2 Dat
 
 ### 30 April 2024
 #### 🇱🇾 Libya - Mellitah Oil & Gas (Eni / NOC Joint Venture)
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Energy / Utilities
 - **Website:** N/A
 - **Status:** Claim - Unverified

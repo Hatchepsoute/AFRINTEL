@@ -63,61 +63,63 @@ Two cases remain under investigation and are **excluded from the 224 canonical i
 
 ## 4. Corrected 2024 vs 2025 annual comparison
 
-The current corrected AFRINTEL 2024 annual report contains **128 records across 28 countries**. It still primarily uses the former six-type taxonomy and tracks one `Attempted Attack` separately. The comparison therefore does not falsely treat 2025's new v2 categories as 2024 zeros.
+The final AFRINTEL 2024 baseline contains **119 canonical incidents across 30 African countries**. The 2024 corpus has now undergone chronology review and reclassification under the **same nine incident types** used for 2025. Categories are therefore directly comparable across both years, including valid zero values for 2024.
+
+This harmonization improves comparability, but the changes below still describe **AFRINTEL corpus visibility** rather than an exhaustive measurement of real-world compromise trends across the continent.
 
 ### 4.1 Global evolution
 
-| Indicator | Corrected 2024 | 2025 | Change |
+| Indicator | Final corrected 2024 | 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 128 | 224 | **+96 (+75.0%)** |
-| Countries covered | 28 | 30 | **+2 (+7.1%)** |
+| Total incidents | 119 | 224 | **+105 (+88.2%)** |
+| Countries covered | 30 | 30 | **Stable** |
 | Ransomware | 91 | 121 | **+30 (+33.0%)** |
-| Data Leak | 31 | 80 | **+49 (+158.1%)** |
-| Access Sale | 3 | 6 | **+3 (+100.0%)** |
-| DDoS | 0 | 3 | **+3 (new)** |
+| Data Leak | 13 | 80 | **+67 (+515.4%)** |
+| Access Sale | 4 | 6 | **+2 (+50.0%)** |
+| DDoS | 2 | 3 | **+1 (+50.0%)** |
 | Defacement | 1 | 4 | **+3 (+300.0%)** |
+| Account Takeover | 0 | 6 | **+6 (newly observed)** |
+| System Intrusion | 7 | 3 | **-4 (-57.1%)** |
+| Malware | 0 | 1 | **+1 (newly observed)** |
 | Operational Fraud | 1 | 0 | **-1 (-100.0%)** |
-| Account Takeover | N/A | 6 | **N/A** |
-| System Intrusion | N/A | 3 | **N/A** |
-| Malware | N/A | 1 | **N/A** |
 
-The documented annual corpus grows from **128 to 224 records**, an increase of **96 (+75.0%)**. Data Leak grows from 31 to 80, while Ransomware rises from 91 to 121.
+The documented annual corpus increases from **119 to 224 incidents**, or **+105 (+88.2%)**. Ransomware rises from 91 to 121 records, while Data Leak increases from 13 to 80. The Data Leak difference is especially large in the corpus, but it requires caution: the 2024 chronology cleanup removed several historical republications that had previously inflated that category.
 
-`Account Takeover`, `System Intrusion`, and `Malware` are shown as `N/A` for 2024 because the 2024 corpus has not yet been comprehensively retro-classified under AFRINTEL taxonomy.
+`Account Takeover`, `System Intrusion`, and `Malware` can now be compared directly because 2024 has been aligned to the same nine-type classification.
 
 ### 4.2 H1 and H2
 
-| Period | Corrected 2024 | 2025 | Change |
+| Period | Final corrected 2024 | 2025 | Change |
 |---|---:|---:|---:|
-| H1 | 54 | 111 | **+57 (+105.6%)** |
+| H1 | 45 | 111 | **+66 (+146.7%)** |
 | H2 | 74 | 113 | **+39 (+52.7%)** |
-| Year | 128 | 224 | **+96 (+75.0%)** |
+| Year | 119 | 224 | **+105 (+88.2%)** |
 
-Growth is especially visible in the first half: **54 records in H1 2024 versus 111 in H1 2025**. H2 grows from 74 to 113.
+The difference is strongest in the first half: **45 incidents in H1 2024 versus 111 in H1 2025**. H2 increases from 74 to 113. These differences measure documented volume across the two harmonized corpora; they do not by themselves demonstrate an equivalent increase in successful real-world compromises.
 
 ### 4.3 Evolution of leading countries
 
 | Country | 2024 | 2025 | Change |
 |---|---:|---:|---:|
-| South Africa | 35 | 38 | **+3 (+8.6%)** |
+| South Africa | 36 | 38 | **+2 (+5.6%)** |
 | Egypt | 14 | 34 | **+20 (+142.9%)** |
-| Morocco | 5 | 35 | **+30 (+600.0%)** |
-| Algeria | 7 | 19 | **+12 (+171.4%)** |
-| Kenya | 5 | 16 | **+11 (+220.0%)** |
-| Nigeria | 9 | 15 | **+6 (+66.7%)** |
+| Morocco | 4 | 35 | **+31 (+775.0%)** |
+| Algeria | 3 | 19 | **+16 (+533.3%)** |
+| Kenya | 4 | 16 | **+12 (+300.0%)** |
+| Nigeria | 7 | 15 | **+8 (+114.3%)** |
 | Tunisia | 6 | 15 | **+9 (+150.0%)** |
 
-Morocco shows the largest increase in the compared corpus, from 5 to 35 records. Kenya rises from 5 to 16, Egypt from 14 to 34, and Algeria from 7 to 19. These changes describe AFRINTEL corpus visibility and are not direct national compromise-rate measurements.
+Morocco shows the largest absolute increase in the compared corpus, with **+31 records**, followed by Egypt (+20) and Algeria (+16). South Africa remains comparatively stable in overall volume, from 36 to 38. These differences reflect AFRINTEL visibility, the nature of monitored publications, and available coverage; they should not be interpreted as national compromise rates.
 
 ### 4.4 CTI interpretation
 
 Three developments stand out:
 
-1. **The corpus diversifies.** In 2024 counts were heavily concentrated in Ransomware and Data Leak. In 2025, 23 records belong to other additional incident types.
-2. **Data Leak grows strongly.** It rises from 31 to 80 records across the corrected annual corpora.
-3. **Geographic profiles diverge.** South Africa remains highly Ransomware-oriented, while Morocco and Algeria show a stronger Data Leak component.
+1. **The corpus diversifies.** In 2024, **15 of 119 incidents** fall outside Ransomware and Data Leak; in 2025, the figure is **23 of 224**. Account Takeover in particular becomes visible with six records in 2025.
+2. **Data Leak becomes much more prominent in the 2025 corpus.** It rises from **13 to 80 records**. This difference combines changes in observable threat activity and coverage; it must not be interpreted as a 515.4% increase in actual African data breaches.
+3. **National profiles diverge.** South Africa remains strongly Ransomware-oriented, while Morocco and Algeria show a substantial Data Leak component in 2025.
 
-Cross-year comparisons should remain methodologically cautious until 2024 is fully retro-classified under the same AFRINTEL taxonomy.
+The 2024-2025 comparison is now **aligned to the same taxonomy and chronology rule**. Methodological caution is still required because visibility, evidence availability, and OSINT/Dark Web coverage can differ between years.
 
 ## 5. Monthly evolution
 
@@ -493,7 +495,7 @@ Priorities include:
 
 AFRINTEL documents **224 cyber incidents in Africa in 2025**, across **30 countries** and nine AFRINTEL taxonomy categories. Ransomware remains dominant with 121 records, but 80 Data Leak records and dedicated categories such as Account Takeover, System Intrusion, and Malware show why the observed landscape can no longer be represented accurately by the old six-type taxonomy.
 
-Compared with the corrected 2024 corpus, documented volume rises by **75.0%**. This should be interpreted as evolution in observable corpus coverage, not as an exhaustive measurement of a 75% increase in real-world compromises across the continent.
+Compared with the final 2024 baseline (**119 incidents**), documented volume in 2025 rises by **88.2%** to 224 incidents. This should be interpreted as evolution in observable corpus coverage, not as an exhaustive measurement of an 88.2% increase in real-world compromises across the continent.
 
 The 2025 report therefore becomes a richer baseline, preserving monthly, geographic, regional, sectoral, actor, incident-type, and evidence-level granularity while keeping a strict separation between observed facts, claims, corroboration, and unknowns.
 

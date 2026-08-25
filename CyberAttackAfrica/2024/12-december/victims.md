@@ -1,25 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Defacement-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# AFRINTEL Cyber Incidents - December 2024 - canonical corpus (16 records)
 
-# Cyber Attacks in Africa: December 2024: List of 14 Victims
+👉🏾 [Version française](./victims_FR.md)
 
-👉🏾 [**Version française disponible ici**](./victims_FR.md)
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## December 2024
-
-## Monthly snapshot
-
-The corrected December 2024 corpus contains **14 documented incident records**: **11 Ransomware**, **2 Data Leak**, **1 Defacement**, **0 Access Sale**, **0 DDoS** and **0 Operational Fraud**, across **12 African countries**.
-
-The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confidence corroborated Data Leak without direct victim confirmation in the reviewed source set, and **NBS (Nigeria)**, recorded as a victim-confirmed Defacement with documented service disruption and no confirmed backend data theft.
 
 ### December 3, 2024
 
 #### 🇸🇩 Sudan - DAL Group
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Agriculture / Agribusiness
 - **Website:** [dalgroup.com](https://www.dalgroup.com)
 - **Status:** Claim - Data Sample Published
@@ -31,30 +20,10 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 
 ----------------------------
 
-### December 2024 - exact incident date not publicly established
-
-#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
-- **Incident date:** December 2024 - exact date not publicly established
-- **Initial publication date:** 3 December 2024
-- **AFRINTEL correction date:** 23 August 2026
-- **Actor / Group:** Unknown
-- **Sector:** Government / Administration
-- **Website:** [msea.go.ke](https://msea.go.ke/)
-- **Status:** Corroborated - No Direct Victim Confirmation Located
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 4
-- **Victim Description:** MSEA is a Kenyan public authority responsible for supporting and regulating the micro and small enterprise sector.
-- **Analysis:** Public reporting in early December 2024 stated that MSEA had been hacked and that government and organisational information was offered for sale on underground forums. Reported exposed material included employee records, government correspondence, financial statements and business-registration information. The incident was later referenced by INTERPOL's Africa Cyberthreat Assessment and by ENACT, which materially strengthens the assessment that a breach occurred. However, no direct MSEA victim notification was located in the source set used for the retrospective audit. AFRINTEL therefore records the case as a `Data Leak` with `High` confidence and a corroborated status, not as `Victim Confirmed`. The claimed USD 100,000 sale price and technical root-cause statements remain secondary reporting and are not treated as established facts.
-- **Evidence qualification:** The breach is strongly corroborated, but direct victim confirmation was not located in the reviewed source set. Reported data categories are retained as reported exposure, not as independently validated file-by-file findings.
-- **Public sources:** Techpoint Africa; INTERPOL Africa Cyberthreat Assessment; ENACT references documented in the retrospective correction dataset.
-
-----------------------------
-
 ### December 9, 2024
 
 #### 🇲🇷 Mauritania - Bankily
-- **Ransomware Group:** apt73/bashe
+- **Actor / Group:** apt73/bashe
 - **Sector:** Finance / Banking
 - **Website:** [bankily.mr](https://www.bankily.mr)
 - **Status:** Claim - Unverified
@@ -68,7 +37,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 10, 2024
 
 #### 🇳🇦 Namibia - Telecom Namibia
-- **Ransomware Group:** hunters
+- **Actor / Group:** hunters
 - **Sector:** Telecommunications
 - **Website:** [telecom.na](https://www.telecom.na)
 - **Status:** Claim - Unverified
@@ -82,7 +51,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 13, 2024
 
 #### 🇪🇬 Egypt - Kazyon
-- **Ransomware Group:** moneymessage
+- **Actor / Group:** moneymessage
 - **Sector:** Retail / E-commerce
 - **Website:** [kazyon.com](https://www.kazyon.com)
 - **Status:** Claim - Unverified
@@ -96,7 +65,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 15, 2024
 
 #### 🇿🇲 Zambia - Tumeny Payments Limited
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Finance / Banking
 - **Website:** [tumenypay.com](https://www.tumenypay.com)
 - **Status:** Claim - Unverified
@@ -110,7 +79,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 16, 2024
 
 #### 🇳🇬 Nigeria - Ekiti State Government
-- **Ransomware Group:** funksec
+- **Actor / Group:** FunkSec
 - **Sector:** Government / Administration
 - **Website:** [ekitistate.gov.ng](https://ekitistate.gov.ng)
 - **Status:** Claim - Data Sample Published
@@ -123,6 +92,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ----------------------------
 
 - **Evidence qualification:** The reviewed archive strongly supports genuine data exposure associated with the Ekiti State Government. It does not independently establish ransomware encryption, the initial-access vector or operational disruption.
+
 ### December 18, 2024
 
 #### 🇳🇬 Nigeria - National Bureau of Statistics (NBS)
@@ -146,7 +116,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 20, 2024
 
 #### 🇧🇼 Botswana - Water Utilities Corporation (WUC)
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Water / Utilities
 - **Website:** [wuc.bw](https://www.wuc.bw)
 - **Status:** Claim - Unverified
@@ -160,7 +130,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 21, 2024
 
 #### 🇹🇳 Tunisia - Groupe SETCAR
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Manufacturing / Industry
 - **Website:** [groupe-setcar.com.tn](https://www.groupe-setcar.com.tn)
 - **Status:** Claim - Unverified
@@ -171,10 +141,29 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 
 ----------------------------
 
+### December 23, 2024 - reported first observation
+
+#### 🇪🇬 Egypt - EgyptAir
+- **Incident date:** December 23, 2024 - reported first observation
+- **Initial publication / retained source date:** December 26, 2024 - audit-source indexing date
+- **AFRINTEL discovery date:** August 23, 2026 - retrospective audit
+- **Timeline precision:** December 23 is the reported first-observation date; the access-acquisition date is not publicly established.
+- **Actor / Group:** FunkSec
+- **Sector:** Aviation
+- **Website:** [egyptair.com](https://www.egyptair.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Analysis:** FunkSec listed EgyptAir in late December 2024 with an access-sale offer. Several trackers document the claim, but the audit found no public victim confirmation. Scope, access validity, persistence, subsequent exploitation, and any exfiltration remain unconfirmed. AFRINTEL retains `Access Sale` and does not convert the claim into ransomware or Data Leak.
+- **Public sources:** [Digital Checkmark](https://digitalchk.com/ransomware-group/funksec/) | [BreachSense](https://www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https://phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+
+----------------------------
+
 ### December 24, 2024
 
 #### 🇿🇦 South Africa - Baker Tilly Morrison Murray
-- **Ransomware Group:** sarcoma
+- **Actor / Group:** sarcoma
 - **Sector:** Professional / Business Services
 - **Website:** [bakertillymm.co.za](https://www.bakertillymm.co.za)
 - **Status:** Claim - Data Sample Published
@@ -189,7 +178,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 24, 2024
 
 #### 🇩🇿 Algeria - ASJP (Algerian Scientific Journal Platform)
-- **Ransomware Group:** funksec
+- **Actor / Group:** FunkSec
 - **Sector:** Education / University
 - **Website:** [asjp.cerist.dz](https://asjp.cerist.dz)
 - **Status:** Claim - Data Sample Published
@@ -202,10 +191,11 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ----------------------------
 
 - **Evidence qualification:** The reviewed server-side material strongly supports file-system-level compromise associated with ASJP. It does not independently establish ransomware encryption, service interruption or the original access mechanism.
+
 ### December 28, 2024
 
 #### 🇿🇦 South Africa - Cell C
-- **Ransomware Group:** ransomhouse
+- **Actor / Group:** ransomhouse
 - **Sector:** Telecommunications
 - **Website:** [cellc.co.za](https://www.cellc.co.za)
 - **Status:** Claim - Unverified
@@ -219,7 +209,7 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 ### December 29, 2024
 
 #### 🇹🇿 Tanzania - WOSAC
-- **Ransomware Group:** arcusmedia
+- **Actor / Group:** arcusmedia
 - **Sector:** Transport / Logistics
 - **Website:** [wosac.co.tz](https://www.wosac.co.tz)
 - **Status:** Claim - Unverified
@@ -230,7 +220,40 @@ The two retrospective additions are **MSEA (Kenya)**, recorded as a high-confide
 
 ----------------------------
 
-## ✍🏿 Author
-*Adama ASSIONGBON*
-*SOC & Cyber Threat Intelligence Consultant*
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
+### December 2024 - exact incident date not publicly established
+
+#### 🇰🇪 Kenya - Micro and Small Enterprises Authority (MSEA)
+- **Incident date:** December 2024 - exact date not publicly established
+- **Initial publication date:** 3 December 2024
+- **AFRINTEL correction date:** 23 August 2026
+- **Actor / Group:** Unknown
+- **Sector:** Government / Administration
+- **Website:** [msea.go.ke](https://msea.go.ke/)
+- **Status:** Corroborated - No Direct Victim Confirmation Located
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** MSEA is a Kenyan public authority responsible for supporting and regulating the micro and small enterprise sector.
+- **Analysis:** Public reporting in early December 2024 stated that MSEA had been hacked and that government and organisational information was offered for sale on underground forums. Reported exposed material included employee records, government correspondence, financial statements and business-registration information. The incident was later referenced by INTERPOL's Africa Cyberthreat Assessment and by ENACT, which materially strengthens the assessment that a breach occurred. However, no direct MSEA victim notification was located in the source set used for the retrospective audit. AFRINTEL therefore records the case as a `Data Leak` with `High` confidence and a corroborated status, not as `Victim Confirmed`. The claimed USD 100,000 sale price and technical root-cause statements remain secondary reporting and are not treated as established facts.
+- **Evidence qualification:** The breach is strongly corroborated, but direct victim confirmation was not located in the reviewed source set. Reported data categories are retained as reported exposure, not as independently validated file-by-file findings.
+- **Public sources:** Techpoint Africa; INTERPOL Africa Cyberthreat Assessment; ENACT references documented in the retrospective correction dataset.
+
+----------------------------
+### 30 December 2024
+
+#### 🇪🇬 Egypt - Misr Pharmacies
+- **Compromise date:** Unknown
+- **Initial observed publication date:** 30 December 2024 at 20:03 - according to the preserved screenshot
+- **Actor / Group:** Satanic
+- **Sector:** Healthcare / Medical
+- **Website:** [misrpharmacies.com](https://misrpharmacies.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Victim description:** Misr Pharmacies is an Egyptian pharmacy chain providing pharmacy and online-ordering services.
+- **Analysis:** An underground publication dated 30 December 2024 and attributed to `Satanic` explicitly announced a `Misr Pharmacies Misr Online Database - Leaked, Download!`. The post described datasets associated with orders and electronic prescriptions, including fields related to customers, contact details, billing, shipping, order status, and prescription information. Download links were displayed at the time of publication. The files are no longer available during the present reassessment, so AFRINTEL cannot independently verify their authenticity, volume, actual content, or technical provenance. AFRINTEL does not reproduce personal data from the publication.
+- **Evidence qualification:** `Data Leak` is used because the claim explicitly concerns a leaked database offered for download. Status remains `Claim - Unverified` because the advertised data is no longer available for independent AFRINTEL validation.
+- **Source / provenance:** Original underground publication attributed to Satanic, observed on 30 December 2024; screenshot preserved by AFRINTEL. No download link is reproduced.
+
+----------------------------

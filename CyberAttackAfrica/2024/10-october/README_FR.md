@@ -1,210 +1,389 @@
-# Rapport CTI AFRINTEL - Octobre 2024
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Octobre 2024
 
 👉🏾 [English version](./README.md)
 
-## 1. Résumé exécutif
+## 1. Synthèse exécutive
 
-Octobre 2024 contient **12 fiches incident documentées dans 8 pays africains** : **8 Ransomware** et **4 Data Leak**. Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans le corpus validé d'octobre.
+En Octobre 2024, AFRINTEL retient **11 cyberincidents canoniques dans 8 pays**. Le mois est dominé par **Ransomware (8, 72,7 %)** puis **Data Leak (2, 18,2 %)**. Les pays les plus représentés sont **Afrique du Sud (4)**, **Madagascar (1)**, **Algérie (1)**. Les secteurs les plus visibles sont **Éducation / Université (3)**, **Technologie / IT (2)**, **Industrie / Fabrication (2)**. Les labels acteur/groupe les plus fréquents sont `ransomhub` (2), `killsec` (2), `sarcoma` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
 
-L'Afrique du Sud compte quatre incidents, l'Algérie deux, et six autres pays une fiche chacun. L'Afrique du Nord représente cinq fiches et l'Afrique australe quatre. Education / University est le secteur harmonisé le plus représenté avec **4 fiches sur 12 (33,3 %)**.
+La maturité de preuve est répartie entre **Claim - Unverified: 8**, **Claim - Data Sample Published: 3**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
-Le mois se distingue moins par un acteur unique dominant que par une forte variation de la qualité des preuves. Sept entrées ransomware restent des revendications non vérifiées à faible confiance. National Edging, également listé comme ransomware, dispose d'un échantillon local examiné qui soutient fortement une compromission interne. Parmi les Data Leak, le cas santé nigérian, le Ministère algérien de l'Éducation Nationale et Al Massira disposent d'échantillons visibles, tandis que le contenu University of Antananarivo est resté inaccessible derrière le système de crédits du forum.
-
-👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
-
-### 1.1 Comparaison avec le mois précédent
+### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Septembre 2024 | Octobre 2024 | Évolution |
-|---|---:|---:|---:|
-| Total incidents | 5 | **12** | **+7 (+140,0 %)** |
-| Ransomware | 4 | **8** | **+4 (+100,0 %)** |
-| Data Leak | 1 | **4** | **+3 (+300,0 %)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 6 | 11 | +5 (+83,3 %) |
+| Ransomware | 5 | 8 | +3 (+60,0 %) |
+| Data Leak | 0 | 2 | +2 (nouveau) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 1 | 1 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-Le corpus observé d'octobre représente **2,4 fois celui de septembre**. La visibilité ransomware double et les Data Leak passent de un à quatre. Cette progression concerne le corpus documenté par AFRINTEL et ne prouve pas que le nombre réel de compromissions réussies en Afrique a progressé dans les mêmes proportions.
+### 1.2 Analyse comparative
+
+Le volume mensuel **augmente de 5 incident(s)**. Les variations structurantes sont : Ransomware 5->8 (+3), Data Leak 0->2 (+2). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
-- **Période :** 1er au 31 octobre 2024.
-- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
-- **Comptage :** une fiche harmonisée correspond à un incident documenté.
-- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Registre de corrections rétrospectives :** aucun des 10 incidents manquants identifiés en 2024 ne concerne octobre.
-- **Contenu verrouillé :** AFRINTEL n'achète ni ne débloque les contenus payants de forums ; un contenu inaccessible n'augmente pas le niveau de confiance.
-- **Séparation acteur/source :** les comptes de publication et de republication sont distingués des acteurs d'intrusion lorsque la source elle-même sépare ces rôles.
-- **Republications :** la fiche du Ministère algérien de l'Éducation Nationale conserve la date de fuite revendiquée en 2022 et la chronologie des republications ultérieures au lieu de traiter octobre 2024 comme une nouvelle date d'intrusion.
+- Un incident canonique correspond à un événement retenu dans le millésime 2024.
+- Les découvertes/republications historiques sont conservées séparément et ne gonflent pas les statistiques 2024.
+- La date d'incident ou la meilleure fenêtre soutenue prime ; la date de découverte AFRINTEL reste distincte.
+- Les 9 types AFRINTEL sont utilisés ; une tentative est représentée par le statut, jamais par un type `Attempted Attack`.
+- Un DDoS coordonné est compté par campagne.
+- Type, statut, confiance, impact, attribution et source restent distincts.
 
-## 3. Vue globale
+## 3. Répartition par type d'incident
 
-### 3.1 Répartition par type d'incident
-
-| Type d'incident | Fiches | Part |
-|---|---:|---:|
-| Ransomware | **8** | **66,7 %** |
-| Data Leak | **4** | **33,3 %** |
+| Type | Fiches | Part |
+|---|---|---|
+| Ransomware | 8 | 72,7 % |
+| Data Leak | 2 | 18,2 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
+| Account Takeover | 0 | 0,0 % |
+| System Intrusion | 1 | 9,1 % |
+| Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **12** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Octobre 2024
     "Ransomware" : 8
-    "Data Leak" : 4
+    "Data Leak" : 2
+    "System Intrusion" : 1
 ```
 
-### 3.2 Répartition par pays
+## 4. Pays x type
 
-| Pays | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 4 | 0 | **4** |
-| 🇩🇿 Algérie | 1 | 1 | **2** |
-| 🇬🇭 Ghana | 1 | 0 | 1 |
-| 🇱🇾 Libye | 1 | 0 | 1 |
-| 🇲🇬 Madagascar | 0 | 1 | 1 |
-| 🇲🇦 Maroc | 0 | 1 | 1 |
-| 🇳🇬 Nigeria | 0 | 1 | 1 |
-| 🇪🇬 Égypte | 1 | 0 | 1 |
-| **Total** | **8** | **4** | **12** |
+| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Afrique du Sud | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Madagascar | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Algérie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ghana | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Libye | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maroc | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Égypte | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Répartition régionale
+## 5. Répartition régionale
 
-| Région | Ransomware | Data Leak | Total |
-|---|---:|---:|---:|
-| Afrique du Nord | 3 | 2 | **5** |
-| Afrique australe | 4 | 0 | **4** |
-| Afrique de l'Ouest | 1 | 1 | **2** |
-| Océan Indien | 0 | 1 | **1** |
-| **Total** | **8** | **4** | **12** |
+| Région | Fiches | Part |
+|---|---|---|
+| Afrique australe | 4 | 36,4 % |
+| Afrique du Nord | 4 | 36,4 % |
+| Afrique de l'Ouest | 2 | 18,2 % |
+| Océan Indien | 1 | 9,1 % |
 
-### 3.4 Répartition sectorielle harmonisée
+## 6. Répartition sectorielle
 
 | Secteur | Fiches | Part |
-|---|---:|---:|
-| Education / University | **4** | **33,3 %** |
-| Technology / IT | 2 | 16,7 % |
-| Manufacturing / Industry | 2 | 16,7 % |
-| Healthcare / Medical | 1 | 8,3 % |
-| Energy / Utilities | 1 | 8,3 % |
-| Government / Administration | 1 | 8,3 % |
-| Legal / Justice | 1 | 8,3 % |
-| **Total** | **12** | **100 %** |
-
-### 3.5 Acteurs / groupes
-
-| Acteur / Groupe | Fiches |
-|---|---:|
-| ransomhub | **2** |
-| killsec | **2** |
-| sarcoma | **2** |
-| Unknown | 1 |
-| grep/cn | 1 |
-| blacksuit | 1 |
-| Moroccan Empire | 1 |
-| bxxxx1 | 1 |
-| raworld | 1 |
-| **Total** | **12** |
-
-> `Unknown` correspond à l'Université d'Antananarivo. `RainbowBF` est conservé comme contexte de source car les éléments fournis l'identifient comme le compte du forum ayant publié la revendication verrouillée. Pour le dossier santé nigérian, `Tanaka` reste le compte de publication tandis que le post attribue la fuite à `grep/cn`.
-
-```mermaid
-flowchart LR
-    RH["ransomhub - 2"] --> EO["Afrique du Sud - Enterpriseoutsourcing"]
-    RH --> WW["Afrique du Sud - Winwinza"]
-    KS["killsec - 2"] --> YA["Algérie - Yassir"]
-    KS --> LY["Libye - Ministère de l'Intérieur"]
-    SA["sarcoma - 2"] --> GMG["Afrique du Sud - GMG Mining Supplies"]
-    SA --> NE["Afrique du Sud - National Edging"]
-    UNK["Unknown"] --> UA["Madagascar - Université d'Antananarivo"]
-    GRC["grep/cn"] --> NG["Nigeria - prestataire santé non identifié"]
-```
-
-## 4. Analyse détaillée
-
-### 4.1 Ransomware - 8 fiches
-
-Les fiches ransomware concernent **Enterpriseoutsourcing**, **Winwinza**, **Yassir**, **GMG Mining Supplies**, **National Edging**, **Volta River Authority**, le **Ministère libyen de l'Intérieur** et **Matouk Bassiouny**.
-
-Sept conservent le statut `Claim - Unverified` avec un niveau de confiance `Low`. Le corpus fourni ne contient aucun élément DFIR public permettant de confirmer pour ces sept dossiers un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration ou une chaîne d'attaque commune.
-
-**National Edging** constitue l'exception en matière de maturité de preuve. AFRINTEL a examiné un échantillon local comprenant plusieurs documents d'identité complets, du matériel contractuel signé, de la documentation de voyage d'entreprise et des dossiers logistiques directement rattachés au domaine et à l'identité de l'organisation. Ces éléments soutiennent un niveau `Very High` quant à l'existence d'une compromission interne réelle. Ils n'établissent cependant pas, à eux seuls, le chiffrement ransomware, l'accès initial ou le volume complet d'exfiltration.
-
-La présence de deux publications `ransomhub`, deux `killsec` et deux `sarcoma` est observable, mais le matériel disponible ne démontre ni infrastructure partagée, ni vecteur d'accès commun, ni campagne coordonnée.
-
-### 4.2 Data Leak - 4 fiches
-
-**Université d'Antananarivo :** la publication du forum était visible, mais le contenu sous-jacent relatif à l'accès à la base est resté verrouillé derrière le système de crédits. Aucun export de base ni échantillon d'enregistrements n'a été examiné ; la revendication reste donc non vérifiée à faible confiance.
-
-**Prestataire de santé nigérian non identifié :** la publication annonce environ **130 000 dossiers patients**, alors que le classeur local fourni contient **84 lignes de données**. L'échantillon soutient une revendication d'exposition de données de santé, mais ne permet pas d'établir le volume annoncé, l'identité du prestataire, l'ensemble des établissements concernés, la méthode d'acquisition ou l'exhaustivité.
-
-**Ministère algérien de l'Éducation Nationale :** le post d'octobre republie du matériel attribué à `Moroccan Empire` et lié à une fuite revendiquée au **6 octobre 2022**, le dump étant également référencé comme partagé en septembre 2023. La structure SQL/CSV visible contient des champs d'identité, de scolarité et de comptes. L'analyse source soutient explicitement un niveau `High` concernant l'authenticité d'un accès à une base du ministère ou d'un établissement affilié, tandis que le total revendiqué d'environ **90 000 élèves** reste non vérifié au-delà de l'échantillon observé.
-
-**Résidences universitaires Al Massira :** l'échantillon visible contient des adresses e-mail associées à des demandes ou recherches de logement. Aucun mot de passe, numéro d'identité, numéro de téléphone, document étudiant ou donnée financière n'est visible. L'acteur affirme un accès au panneau de contrôle, mais la capture ne permet pas d'établir la méthode technique ni un nombre total d'enregistrements.
-
-## 5. Principaux constats et lacunes
-
-- Octobre passe de **5 à 12 fiches**, mais croissance des publications et croissance des compromissions confirmées doivent rester distinctes.
-- Education / University représente **4 fiches sur 12 (33,3 %)**, la concentration sectorielle la plus nette du mois.
-- L'Afrique du Sud compte **4 publications ransomware**, dont National Edging, dossier de compromission le mieux étayé du mois.
-- Sept des huit dossiers ransomware restent des revendications à faible confiance.
-- Trois Data Leak comportent des échantillons visibles ; Antananarivo reste inaccessible et à faible confiance.
-- Le jeu de données santé nigérian ne confirme localement que 84 lignes examinées, et non les quelque 130 000 annoncées.
-- Le dataset algérien de l'éducation correspond à une recirculation prolongée associée par la source à une fuite plus ancienne de 2022.
-- Les éléments DFIR publics restent insuffisants pour établir un mode opératoire ransomware commun au mois.
-
-## 6. Cartographie MITRE ATT&CK contextuelle
-
-| Statut | Technique | Application |
 |---|---|---|
-| Préventif | T1486 - Data Encrypted for Impact | Pertinent pour la surveillance ransomware ; chiffrement non confirmé pour les listings d'octobre. |
-| Contextuel | T1213 - Data from Information Repositories | Pertinent pour les jeux de données structurés éducation et santé visibles dans les Data Leak. |
-| Préventif | T1567 - Exfiltration Over Web Service | Pertinent pour la surveillance des sorties ; canaux d'exfiltration non établis dans les preuves fournies. |
-| Conditionnel | T1078 - Valid Accounts | Pertinent pour les éléments de comptes exposés ou revendiqués, sans être présenté comme mécanisme d'accès initial sans preuve technique. |
+| Éducation / Université | 3 | 27,3 % |
+| Technologie / IT | 2 | 18,2 % |
+| Industrie / Fabrication | 2 | 18,2 % |
+| Santé / Médical | 1 | 9,1 % |
+| Énergie / Services publics | 1 | 9,1 % |
+| Gouvernement / Administration | 1 | 9,1 % |
+| Juridique / Justice | 1 | 9,1 % |
 
-## 7. Recommandations
+## 7. Acteurs / groupes
 
-- Prioriser les contrôles d'identité du secteur éducatif, la MFA résistante au phishing et la revue des comptes administrateurs, personnels et étudiants.
-- Pour National Edging, traiter l'exposition documentaire interne comme indicateur de compromission à haute confiance tout en la séparant des mécanismes ransomware non confirmés.
-- Pour le cas santé nigérian, identifier le prestataire exact et les établissements touchés avant toute communication de périmètre.
-- Pour les anciens dumps éducatifs, vérifier si les identifiants exposés sont encore actifs et surveiller la recirculation sans la présenter comme une nouvelle intrusion.
-- Pour les secteurs énergie, administration et industrie, préserver les journaux d'authentification, endpoints, accès distants et sauvegardes autour des dates de revendication.
+| Acteur / Groupe | Fiches | Part |
+|---|---|---|
+| ransomhub | 2 | 18,2 % |
+| killsec | 2 | 18,2 % |
+| sarcoma | 2 | 18,2 % |
+| Unknown | 1 | 9,1 % |
+| grep/cn | 1 | 9,1 % |
+| blacksuit | 1 | 9,1 % |
+| bxxxx1 | 1 | 9,1 % |
+| raworld | 1 | 9,1 % |
 
-## 8. Chronologie
+## 8. Maturité des preuves
+
+| Position de preuve | Fiches | Part |
+|---|---|---|
+| Claim - Unverified | 8 | 72,7 % |
+| Claim - Data Sample Published | 3 | 27,3 % |
+
+### Confiance
+
+| Confiance | Fiches | Part |
+|---|---|---|
+| Low | 8 | 72,7 % |
+| Medium | 2 | 18,2 % |
+| Very High | 1 | 9,1 % |
+
+## 9. Chronologie
 
 ```mermaid
 timeline
     title AFRINTEL - Octobre 2024
-    03 Octobre : Unknown - Université d'Antananarivo
-    04 Octobre : ransomhub - Enterpriseoutsourcing
-    05 Octobre : ransomhub - Winwinza
-    07 Octobre : killsec - Yassir
-    09 Octobre : grep/cn - prestataire santé nigérian
-               : sarcoma - GMG Mining Supplies
-               : sarcoma - National Edging
-    11 Octobre : blacksuit - Volta River Authority
-    16 Octobre : killsec - Ministère libyen de l'Intérieur
-    17 Octobre : Moroccan Empire - recirculation du dump éducation Algérie
-    21 Octobre : bxxxx1 - Résidences universitaires Al Massira
-    25 Octobre : raworld - Matouk Bassiouny
+    3 Octobre 2024 : Université d'Antananarivo (univ-antananarivo.mg)
+- **Type d'incident -** System Intrusion
+- **Note de taxonomie -** La publication observée revendique un accès à une base de données, mais le contenu est verrouillé et aucun échantillon n'était accessible. `System Intrusion` est retenu comme claim d'accès non autorisé ; aucune fuite de données n'est confirmée.
+- **Acteur / Groupe -** Unknown
+- **Contexte source -** RainbowBF est le compte du forum affiché comme ayant publié la revendication d'accès à une base verrouillée.
+- **Secteur -** Education / University
+- **Site web -** [univ-antananarivo.mg](https -//www.univ-antananarivo.mg)
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** L'Université d'Antananarivo est la plus ancienne et la plus grande université publique de Madagascar, regroupant plusieurs facultés et instituts d'enseignement supérieur dans la région de la capitale.
+- **Analyse  -** AFRINTEL a examiné une publication sur la plateforme Breached, postée par le compte RainbowBF le 3 octobre 2024, intitulée « Madagascar univ-antananarivo.mg Database Access » et classée sous la catégorie de contenu « Breached » de la plateforme. Le contenu sous-jacent est verrouillé derrière le système de crédits internes du forum et n'a pas été débloqué par AFRINTEL ; aucun export de base de données, capture d'écran d'enregistrements ni autre échantillon vérifiable n'était accessible lors de la collecte. AFRINTEL traite ceci comme une revendication non confirmée d'accès à une base de données et ne confirme ni l'existence, ni le périmètre, ni l'authenticité d'une quelconque donnée sous-jacente. Les catégories de données potentiellement concernées et l'impact ne peuvent actuellement pas être évalués car le contenu sous-jacent n'était pas accessible. AFRINTEL ne reproduit aucun contenu de la publication au-delà de son titre et de ses métadonnées.
+
+----------------------------
+    4 Octobre 2024 : Enterpriseoutsourcing
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Technology / IT
+- **Site web -** [enterpriseoutsourcing.com](https -//www.enterpriseoutsourcing.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Enterpriseoutsourcing est une organisation sud-africaine opérant dans le secteur du conseil en technologies de l'information.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    5 Octobre 2024 : Winwinza
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Education / University
+- **Site web -** [winwinza.com](https -//www.winwinza.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Winwinza est une organisation sud-africaine opérant dans le secteur de l'éducation.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    7 Octobre 2024 : Yassir
+- **Acteur / Groupe -** killsec
+- **Secteur -** Technology / IT
+- **Site web -** [yassir.com](https -//www.yassir.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Yassir est une super-app algérienne fournissant des services de VTC, livraison, courses et services numériques en Algérie et sur des marchés régionaux.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    9 Octobre 2024 : Prestataire non identifié d’établissements de santé
+- **Acteur / Groupe -** grep/cn
+- **Contexte source -** La publication du 9 octobre a été postée par Tanaka et attribue la fuite à grep/cn.
+- **Secteur -** Healthcare / Medical
+- **Site web -** Non identifié
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+- **Description victime -** La source décrit un prestataire nigérian non identifié opérant plusieurs établissements de santé. Le nom de l’organisation et les établissements concernés n’ont pas pu être établis à partir des éléments disponibles.
+- **Analyse  -** Une publication du forum attribuée à Tanaka et datée du 9 octobre 2024 affirme qu’environ 130 000 dossiers de patients provenant de plusieurs établissements de santé nigérians ont été divulgués par l’acteur grep/cn. Le classeur local fourni pour analyse contient 84 lignes de données, et non 129 825 ou 130 000 lignes ; le volume annoncé ne peut donc pas être confirmé indépendamment à partir du fichier disponible. Le classeur contient des champs relatifs à des patients, notamment des noms, identifiants, numéros de téléphone, âge, dates de naissance, sexe, statut matrimonial et identifiants liés aux établissements ; les enregistrements bruts n’ont pas été reproduits. Les éléments soutiennent une revendication d’exposition de données de santé à fort impact potentiel, mais le prestataire exact, le périmètre des établissements, le mode d’obtention, l’exhaustivité et le volume total restent inconnus.
+    9 Octobre 2024 : GMG Mining Supplies
+- **Acteur / Groupe -** sarcoma
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [gmgminingsupplies.com](https -//www.gmgminingsupplies.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** GMG Mining Machines and Supplies est une entreprise sud-africaine spécialisée dans la fourniture, reconstruction et location d'équipements miniers, machines mobiles sans rail, pièces et services associés.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    9 Octobre 2024 : National Edging
+- **Acteur / Groupe -** sarcoma
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [nationaledging.com](https -//www.nationaledging.com)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 3
+- **Description victime -** National Edging est une entreprise sud-africaine spécialisée dans la fourniture de chants, adhésifs, matériaux de finition et composants industriels pour les secteurs du meuble, de la cuisine et de l'agencement.
+- **Analyse  -** AFRINTEL a examiné un échantillon local de documents cohérents avec la revendication du cybercriminel sarcoma, comprenant des scans complets de passeports d'au moins trois personnes (deux ressortissants sud-africains et un ressortissant indien titulaire d'un permis de résidence aux Émirats arabes unis), un contrat signé avec Freitan Group of Companies (Pty) Ltd portant la signature d'un directeur financier, un formulaire de réservation de voyage d'entreprise référençant l'entité juridique National Converting Agencies (Pty) Ltd, une adresse email au domaine nationaledging.co.za ainsi qu'un passeport et un numéro d'identité sud-africains, et un bon de livraison documentant un envoi de produits de chant et de colle entre succursales de l'entreprise (Gauteng) avec une collecte ultérieure référencée au Zimbabwe. La référence directe au domaine nationaledging.co.za, associée à une identité d'entreprise cohérente (National Converting Agencies/National Edging), à du matériel contractuel signé et à plusieurs documents d'identité complets, soutient une évaluation à très haute confiance d'une compromission interne réelle. L'exposition de données complètes de passeport et d'identité nationale pour plusieurs personnes, ainsi que de contrats signés et de dossiers logistiques s'étendant à une chaîne d'approvisionnement transfrontalière (Zimbabwe), crée un risque important de fraude à l'identité, de falsification de documents et d'ingénierie sociale ciblée contre les employés, partenaires commerciaux et voyageurs associés à l'entreprise. AFRINTEL ne reproduit aucun nom, numéro de passeport, numéro d'identité, date de naissance ni coordonnée issus de l'échantillon examiné.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+- **Qualification de la preuve -** L'échantillon examiné soutient fortement une compromission de données internes associée à National Edging. Il n'établit pas indépendamment un chiffrement ransomware, la méthode d'accès initiale ni le volume complet d'exfiltration.
+    11 Octobre 2024 : Volta River Authority (VRA)
+- **Acteur / Groupe -** blacksuit
+- **Secteur -** Energy / Utilities
+- **Site web -** [vra.com](https -//www.vra.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** La Volta River Authority (VRA) est le principal producteur public d'électricité du Ghana, responsable de centrales hydroélectriques, thermiques et d'infrastructures énergétiques stratégiques du pays.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    16 Octobre 2024 : Ministère de l'Intérieur (moi.gov.ly)
+- **Acteur / Groupe -** killsec
+- **Secteur -** Government / Administration
+- **Site web -** [moi.gov.ly](https -//www.moi.gov.ly)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Le Ministère de l'Intérieur libyen est l'institution gouvernementale chargée de la sécurité intérieure, des forces de police et de la gestion des affaires administratives sécuritaires du pays.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+    21 Octobre 2024 : Résidences universitaires Al Massira
+- **Acteur / Groupe -** bxxxx1
+- **Secteur -** Education / University
+- **Site web -** [ruam.ma](https -//ruam.ma)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+
+- **Description  -**
+  Les Résidences universitaires Al Massira proposent des logements destinés aux étudiants à Kénitra. Le réseau comprend notamment les résidences Al Massira 1, Al Massira 2 et Al Massira 3, situées à proximité des établissements universitaires de la ville.
+
+- **Analyse  -**
+  Une publication attribuée à bxxxx1 sur un forum cybercriminel présente des adresses électroniques associées à des personnes ayant recherché ou demandé un hébergement auprès des Résidences universitaires Al Massira. L’acteur affirme avoir obtenu les données après s’être connecté au panneau de contrôle de `ruam.ma`, ce qui suggère la compromission possible d’un compte d’administration ou d’une interface de gestion ; la capture ne contient toutefois aucune preuve technique permettant d’identifier la méthode d’accès. L’échantillon visible contient uniquement des adresses électroniques, principalement issues de services de messagerie publics, avec quelques domaines universitaires, administratifs ou professionnels. Aucun mot de passe, numéro d’identité, numéro de téléphone, document étudiant ou renseignement financier n’est visible. La publication indique une extraction en octobre 2024 et comporte un lien vers un fichier texte ainsi qu’un mot de passe d’archive ou d’accès, qu’AFRINTEL ne reproduit pas. Aucun nombre total d’adresses, volume de fichier, prix ou délai n’est indiqué, et la capture ne permet pas d’établir si la liste visible est complète. Les adresses peuvent alimenter des campagnes de phishing imitant les services de logement étudiant, de fausses notifications d’admission ou de paiement et des listes de cibles pour le password spraying. Aucun mot de passe n’étant visible, une prise de contrôle directe de compte ne peut pas être déduite de l’échantillon.
+
+----------------------------
+    25 Octobre 2024 : Matouk Bassiouny
+- **Acteur / Groupe -** raworld
+- **Secteur -** Legal / Justice
+- **Site web -** [matoukbassiouny.com](https -//www.matoukbassiouny.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Matouk Bassiouny est un important cabinet d'avocats égyptien basé au Caire, reconnu pour le droit des affaires, l'arbitrage, le contentieux et le conseil juridique.
+
+----------------------------
+
+- **Note de fiabilité -** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
 ```
 
-## 9. Conclusion
+## 10. Analyse CTI par type
 
-Octobre 2024 se clôt sur **12 fiches incident documentées dans 8 pays africains**, réparties entre **8 Ransomware et 4 Data Leak**. Par rapport à septembre, le corpus AFRINTEL passe de 5 à 12 fiches, soit une hausse de **140,0 %**. Les publications Ransomware doublent de 4 à 8, tandis que les Data Leak passent de 1 à 4.
+### Ransomware - 8
 
-Cette progression est importante au niveau de la collecte, mais les preuves du mois ne permettent pas de l'interpréter comme une hausse de 140 % des compromissions cyber réussies en Afrique. Octobre combine des dossiers disposant de niveaux de preuve très différents : sept revendications ransomware à faible confiance, une organisation listée par un groupe ransomware avec un échantillon interne particulièrement convaincant, trois Data Leak accompagnés d'éléments visibles et une revendication d'accès à une base dont le contenu n'a pas pu être examiné.
+**8 fiche(s) (72,7 %).** Principaux pays : Afrique du Sud (4), Algérie (1), Ghana (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-L'éducation constitue la caractéristique structurelle la plus nette du mois avec **un tiers du corpus**. Pourtant, même dans ce secteur, les profils de preuve diffèrent fortement. L'Université d'Antananarivo reste une revendication inaccessible ; Winwinza est une publication ransomware non vérifiée ; Al Massira ne montre que des adresses e-mail dans l'échantillon visible ; et le cas du Ministère algérien de l'Éducation Nationale concerne un jeu de données plus ancien dont la recirculation se poursuit en 2024. Présenter ces quatre dossiers comme quatre "nouvelles violations" équivalentes supprimerait des différences essentielles de chronologie et de maturité de preuve.
+### Data Leak - 2
 
-National Edging représente le signal de compromission le plus solide d'octobre. Les documents examinés rattachent avec un niveau `Very High` des éléments internes d'identité, contractuels, de voyage et de logistique à l'organisation. Cela soutient l'existence d'une compromission interne réelle, mais pas toutes les composantes de la narration ransomware associée : le chiffrement, l'accès initial et le volume complet d'exfiltration restent non établis. Cette distinction est essentielle pour séparer le niveau de confiance dans la compromission de l'étiquette du groupe malveillant.
+**2 fiche(s) (18,2 %).** Principaux pays : Nigeria (1), Maroc (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-Le dossier santé nigérian fournit un autre exemple de contrôle rigoureux du périmètre. Une publication annonce environ 130 000 dossiers patients, alors que le classeur examiné localement ne comporte que 84 lignes. AFRINTEL peut donc documenter les catégories de champs et l'exposition représentée par l'échantillon sans transformer le volume annoncé en chiffre confirmé.
+### System Intrusion - 1
 
-L'évaluation CTI la plus défendable est qu'octobre reflète **une visibilité de publication plus forte, une concentration réelle autour de l'éducation et une maturité de preuve particulièrement hétérogène**. Le suivi doit prioriser les confirmations victimes, l'identification du prestataire de santé nigérian, la surveillance continue du dataset éducatif algérien ancien et la validation technique des revendications ransomware. Maintenir cette hiérarchie de preuve évite de placer au même niveau publications verrouillées, échantillons visibles, recirculation historique et indicateurs de compromission fortement étayés.
+**1 fiche(s) (9,1 %).** Principaux pays : Madagascar (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+
+## 11. Incidents prioritaires pour revue
+
+| Pays | Organisation | Type | Statut | Impact | Confiance |
+|---|---|---|---|---|---|
+| Afrique du Sud | National Edging
+- **Acteur / Groupe:** sarcoma
+- **Secteur:** Manufacturing / Industry
+- **Site web:** [nationaledging.com](https://www.nationaledging.com)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Description victime:** National Edging est une entreprise sud-africaine spécialisée dans la fourniture de chants, adhésifs, matériaux de finition et composants industriels pour les secteurs du meuble, de la cuisine et de l'agencement.
+- **Analyse :** AFRINTEL a examiné un échantillon local de documents cohérents avec la revendication du cybercriminel sarcoma, comprenant des scans complets de passeports d'au moins trois personnes (deux ressortissants sud-africains et un ressortissant indien titulaire d'un permis de résidence aux Émirats arabes unis), un contrat signé avec Freitan Group of Companies (Pty) Ltd portant la signature d'un directeur financier, un formulaire de réservation de voyage d'entreprise référençant l'entité juridique National Converting Agencies (Pty) Ltd, une adresse email au domaine nationaledging.co.za ainsi qu'un passeport et un numéro d'identité sud-africains, et un bon de livraison documentant un envoi de produits de chant et de colle entre succursales de l'entreprise (Gauteng) avec une collecte ultérieure référencée au Zimbabwe. La référence directe au domaine nationaledging.co.za, associée à une identité d'entreprise cohérente (National Converting Agencies/National Edging), à du matériel contractuel signé et à plusieurs documents d'identité complets, soutient une évaluation à très haute confiance d'une compromission interne réelle. L'exposition de données complètes de passeport et d'identité nationale pour plusieurs personnes, ainsi que de contrats signés et de dossiers logistiques s'étendant à une chaîne d'approvisionnement transfrontalière (Zimbabwe), crée un risque important de fraude à l'identité, de falsification de documents et d'ingénierie sociale ciblée contre les employés, partenaires commerciaux et voyageurs associés à l'entreprise. AFRINTEL ne reproduit aucun nom, numéro de passeport, numéro d'identité, date de naissance ni coordonnée issus de l'échantillon examiné.
+
+----------------------------
+
+- **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle.
+- **Qualification de la preuve:** L'échantillon examiné soutient fortement une compromission de données internes associée à National Edging. Il n'établit pas indépendamment un chiffrement ransomware, la méthode d'accès initiale ni le volume complet d'exfiltration. | Ransomware | Claim - Data Sample Published | Level 3 | Very High |
+| Nigeria | Prestataire non identifié d’établissements de santé
+- **Acteur / Groupe:** grep/cn
+- **Contexte source:** La publication du 9 octobre a été postée par Tanaka et attribue la fuite à grep/cn.
+- **Secteur:** Healthcare / Medical
+- **Site web:** Non identifié
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+- **Description victime:** La source décrit un prestataire nigérian non identifié opérant plusieurs établissements de santé. Le nom de l’organisation et les établissements concernés n’ont pas pu être établis à partir des éléments disponibles.
+- **Analyse :** Une publication du forum attribuée à Tanaka et datée du 9 octobre 2024 affirme qu’environ 130 000 dossiers de patients provenant de plusieurs établissements de santé nigérians ont été divulgués par l’acteur grep/cn. Le classeur local fourni pour analyse contient 84 lignes de données, et non 129 825 ou 130 000 lignes ; le volume annoncé ne peut donc pas être confirmé indépendamment à partir du fichier disponible. Le classeur contient des champs relatifs à des patients, notamment des noms, identifiants, numéros de téléphone, âge, dates de naissance, sexe, statut matrimonial et identifiants liés aux établissements ; les enregistrements bruts n’ont pas été reproduits. Les éléments soutiennent une revendication d’exposition de données de santé à fort impact potentiel, mais le prestataire exact, le périmètre des établissements, le mode d’obtention, l’exhaustivité et le volume total restent inconnus. | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Maroc | Résidences universitaires Al Massira
+- **Acteur / Groupe:** bxxxx1
+- **Secteur:** Education / University
+- **Site web:** [ruam.ma](https://ruam.ma)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+
+- **Description :**
+  Les Résidences universitaires Al Massira proposent des logements destinés aux étudiants à Kénitra. Le réseau comprend notamment les résidences Al Massira 1, Al Massira 2 et Al Massira 3, situées à proximité des établissements universitaires de la ville.
+
+- **Analyse :**
+  Une publication attribuée à bxxxx1 sur un forum cybercriminel présente des adresses électroniques associées à des personnes ayant recherché ou demandé un hébergement auprès des Résidences universitaires Al Massira. L’acteur affirme avoir obtenu les données après s’être connecté au panneau de contrôle de `ruam.ma`, ce qui suggère la compromission possible d’un compte d’administration ou d’une interface de gestion ; la capture ne contient toutefois aucune preuve technique permettant d’identifier la méthode d’accès. L’échantillon visible contient uniquement des adresses électroniques, principalement issues de services de messagerie publics, avec quelques domaines universitaires, administratifs ou professionnels. Aucun mot de passe, numéro d’identité, numéro de téléphone, document étudiant ou renseignement financier n’est visible. La publication indique une extraction en octobre 2024 et comporte un lien vers un fichier texte ainsi qu’un mot de passe d’archive ou d’accès, qu’AFRINTEL ne reproduit pas. Aucun nombre total d’adresses, volume de fichier, prix ou délai n’est indiqué, et la capture ne permet pas d’établir si la liste visible est complète. Les adresses peuvent alimenter des campagnes de phishing imitant les services de logement étudiant, de fausses notifications d’admission ou de paiement et des listes de cibles pour le password spraying. Aucun mot de passe n’étant visible, une prise de contrôle directe de compte ne peut pas être déduite de l’échantillon.
+
+---------------------------- | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Madagascar | Université d'Antananarivo (univ-antananarivo.mg)
+- **Type d'incident:** System Intrusion
+- **Note de taxonomie:** La publication observée revendique un accès à une base de données, mais le contenu est verrouillé et aucun échantillon n'était accessible. `System Intrusion` est retenu comme claim d'accès non autorisé ; aucune fuite de données n'est confirmée.
+- **Acteur / Groupe:** Unknown
+- **Contexte source:** RainbowBF est le compte du forum affiché comme ayant publié la revendication d'accès à une base verrouillée.
+- **Secteur:** Education / University
+- **Site web:** [univ-antananarivo.mg](https://www.univ-antananarivo.mg)
+- **Statut:** Claim - Unverified
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** L'Université d'Antananarivo est la plus ancienne et la plus grande université publique de Madagascar, regroupant plusieurs facultés et instituts d'enseignement supérieur dans la région de la capitale.
+- **Analyse :** AFRINTEL a examiné une publication sur la plateforme Breached, postée par le compte RainbowBF le 3 octobre 2024, intitulée « Madagascar univ-antananarivo.mg Database Access » et classée sous la catégorie de contenu « Breached » de la plateforme. Le contenu sous-jacent est verrouillé derrière le système de crédits internes du forum et n'a pas été débloqué par AFRINTEL ; aucun export de base de données, capture d'écran d'enregistrements ni autre échantillon vérifiable n'était accessible lors de la collecte. AFRINTEL traite ceci comme une revendication non confirmée d'accès à une base de données et ne confirme ni l'existence, ni le périmètre, ni l'authenticité d'une quelconque donnée sous-jacente. Les catégories de données potentiellement concernées et l'impact ne peuvent actuellement pas être évalués car le contenu sous-jacent n'était pas accessible. AFRINTEL ne reproduit aucun contenu de la publication au-delà de son titre et de ses métadonnées.
+
+---------------------------- | System Intrusion | Claim - Unverified | Level 3 | Low |
+| Afrique du Sud | Winwinza
+- **Acteur / Groupe:** ransomhub
+- **Secteur:** Education / University
+- **Site web:** [winwinza.com](https://www.winwinza.com)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Winwinza est une organisation sud-africaine opérant dans le secteur de l'éducation.
+
+----------------------------
+
+- **Note de fiabilité:** La fiche documente une publication ransomware, mais le matériel fourni ne contient ni échantillon technique ni rapport DFIR public permettant de confirmer le chiffrement, l'exfiltration ou une perturbation opérationnelle. | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Sélection structurée selon impact, statut et confiance ; ce n'est pas un classement absolu de gravité.
+
+## 12. Intelligence gaps et corrections
+
+- vecteur d'accès initial souvent inconnu ;
+- date technique de compromission parfois différente de la date de publication ;
+- volumes revendiqués rarement vérifiables intégralement ;
+- attribution technique souvent limitée au compte de publication ;
+- republications historiques suivies séparément.
+
+## 13. Recommandations
+
+- MFA résistante au phishing, PAM et moindre privilège ;
+- segmentation, sauvegardes immuables et tests de restauration ;
+- centralisation EDR/IAM/VPN/WAF/DNS/cloud/applications ;
+- détection des exports massifs, archives inhabituelles et transferts sortants ;
+- conservation séparée des dates d'incident, publication initiale, repost et découverte AFRINTEL.
+
+## 14. Conclusion
+
+Octobre 2024 contient **11 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+
+👉🏾 [Victimes canoniques](./victims_FR.md)
 
 **AFRINTEL** - TLP:CLEAR

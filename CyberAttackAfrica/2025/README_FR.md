@@ -63,61 +63,63 @@ Deux dossiers restent en investigation et sont **exclus des 224 incidents canoni
 
 ## 4. Comparaison annuelle 2024 corrigé vs 2025
 
-Le rapport annuel AFRINTEL 2024 actuellement corrigé contient **128 fiches dans 28 pays**. Il utilise encore principalement l'ancienne taxonomie à six types et conserve une `Attempted Attack` séparée. La comparaison ci-dessous ne transforme donc pas artificiellement les nouvelles catégories complémentaires de 2025 en zéros pour 2024.
+La baseline AFRINTEL finale de 2024 contient **119 incidents canoniques dans 30 pays africains**. Le corpus 2024 a désormais été contrôlé chronologiquement et reclassé selon les **mêmes neuf types d'incident** que 2025. Les catégories sont donc directement comparables d'une année à l'autre, y compris lorsque la valeur 2024 est nulle.
+
+Cette harmonisation améliore la comparaison, mais les évolutions ci-dessous décrivent toujours la **visibilité du corpus AFRINTEL** et ne constituent pas une mesure exhaustive de l'évolution réelle des compromissions sur le continent.
 
 ### 4.1 Évolution globale
 
-| Indicateur | 2024 corrigé | 2025 | Évolution |
+| Indicateur | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 128 | 224 | **+96 (+75,0 %)** |
-| Pays couverts | 28 | 30 | **+2 (+7,1 %)** |
+| Total incidents | 119 | 224 | **+105 (+88,2 %)** |
+| Pays couverts | 30 | 30 | **Stable** |
 | Ransomware | 91 | 121 | **+30 (+33,0 %)** |
-| Data Leak | 31 | 80 | **+49 (+158,1 %)** |
-| Access Sale | 3 | 6 | **+3 (+100,0 %)** |
-| DDoS | 0 | 3 | **+3 (nouveau)** |
+| Data Leak | 13 | 80 | **+67 (+515,4 %)** |
+| Access Sale | 4 | 6 | **+2 (+50,0 %)** |
+| DDoS | 2 | 3 | **+1 (+50,0 %)** |
 | Defacement | 1 | 4 | **+3 (+300,0 %)** |
+| Account Takeover | 0 | 6 | **+6 (nouvellement observé)** |
+| System Intrusion | 7 | 3 | **-4 (-57,1 %)** |
+| Malware | 0 | 1 | **+1 (nouvellement observé)** |
 | Operational Fraud | 1 | 0 | **-1 (-100,0 %)** |
-| Account Takeover | N/A | 6 | **N/A** |
-| System Intrusion | N/A | 3 | **N/A** |
-| Malware | N/A | 1 | **N/A** |
 
-Le corpus annuel documenté passe de **128 à 224 fiches**, soit **+96 (+75,0 %)**. Les Data Leak augmentent de 31 à 80 fiches, tandis que le Ransomware passe de 91 à 121.
+Le corpus annuel documenté passe de **119 à 224 incidents**, soit **+105 (+88,2 %)**. Le Ransomware progresse de 91 à 121 fiches, tandis que les Data Leak passent de 13 à 80. Cette dernière variation est particulièrement forte dans le corpus, mais elle doit être lue avec prudence : le nettoyage chronologique de 2024 a retiré plusieurs republications historiques qui gonflaient auparavant la catégorie Data Leak.
 
-`Account Takeover`, `System Intrusion` et `Malware` sont indiqués `N/A` pour 2024, car le corpus 2024 n'a pas encore été rétro-classifié intégralement sous taxonomie AFRINTEL.
+La comparaison de `Account Takeover`, `System Intrusion` et `Malware` est désormais possible directement, puisque 2024 est aligné sur la même classification à neuf types.
 
 ### 4.2 Premier semestre et second semestre
 
-| Période | 2024 corrigé | 2025 | Évolution |
+| Période | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
-| H1 | 54 | 111 | **+57 (+105,6 %)** |
+| H1 | 45 | 111 | **+66 (+146,7 %)** |
 | H2 | 74 | 113 | **+39 (+52,7 %)** |
-| Année | 128 | 224 | **+96 (+75,0 %)** |
+| Année | 119 | 224 | **+105 (+88,2 %)** |
 
-La hausse du corpus est surtout marquée au premier semestre : **54 fiches en H1 2024 contre 111 en H1 2025**. Le H2 passe de 74 à 113.
+L'écart est surtout visible au premier semestre : **45 incidents au H1 2024 contre 111 au H1 2025**. Le H2 passe de 74 à 113. Ces écarts mesurent le volume documenté dans les deux corpus harmonisés ; ils ne démontrent pas à eux seuls une progression équivalente du nombre réel de compromissions réussies.
 
 ### 4.3 Évolution des principaux pays
 
 | Pays | 2024 | 2025 | Évolution |
 |---|---:|---:|---:|
-| Afrique du Sud | 35 | 38 | **+3 (+8,6 %)** |
+| Afrique du Sud | 36 | 38 | **+2 (+5,6 %)** |
 | Égypte | 14 | 34 | **+20 (+142,9 %)** |
-| Maroc | 5 | 35 | **+30 (+600,0 %)** |
-| Algérie | 7 | 19 | **+12 (+171,4 %)** |
-| Kenya | 5 | 16 | **+11 (+220,0 %)** |
-| Nigeria | 9 | 15 | **+6 (+66,7 %)** |
+| Maroc | 4 | 35 | **+31 (+775,0 %)** |
+| Algérie | 3 | 19 | **+16 (+533,3 %)** |
+| Kenya | 4 | 16 | **+12 (+300,0 %)** |
+| Nigeria | 7 | 15 | **+8 (+114,3 %)** |
 | Tunisie | 6 | 15 | **+9 (+150,0 %)** |
 
-Le Maroc présente la plus forte progression dans le corpus comparé, de 5 à 35 fiches. Le Kenya passe de 5 à 16, l'Égypte de 14 à 34 et l'Algérie de 7 à 19. Cette évolution décrit la visibilité du corpus AFRINTEL et ne constitue pas une mesure directe du taux réel de compromission national.
+Le Maroc présente la plus forte progression absolue dans le corpus comparé, avec **+31 fiches**, devant l'Égypte (+20) et l'Algérie (+16). L'Afrique du Sud reste relativement stable en volume global, de 36 à 38. Ces écarts reflètent la visibilité AFRINTEL, la nature des publications suivies et la couverture disponible ; ils ne doivent pas être assimilés à des taux nationaux de compromission.
 
 ### 4.4 Lecture CTI de la comparaison
 
 Trois évolutions sont particulièrement visibles :
 
-1. **Le corpus se diversifie.** En 2024, les comptages étaient très largement concentrés sur le Ransomware et les Data Leak. En 2025, 23 fiches appartiennent à d'autres types complémentaires.
-2. **Les Data Leak progressent fortement.** Ils passent de 31 à 80 fiches dans les corpus annuels corrigés.
-3. **La géographie change.** L'Afrique du Sud reste très exposée au Ransomware, tandis que le Maroc et l'Algérie présentent une forte composante Data Leak.
+1. **Le corpus se diversifie.** En 2024, **15 des 119 incidents** appartiennent à des types autres que Ransomware et Data Leak ; en 2025, ils sont **23 sur 224**. Les Account Takeover deviennent notamment visibles avec six dossiers en 2025.
+2. **Les Data Leak prennent une place beaucoup plus importante dans le corpus 2025.** Ils passent de **13 à 80 fiches**. Cette différence combine évolution de la menace observable et différences de couverture ; elle ne doit pas être interprétée comme une hausse de 515,4 % des fuites réelles en Afrique.
+3. **Les profils nationaux divergent.** L'Afrique du Sud reste très orientée Ransomware, alors que le Maroc et l'Algérie présentent en 2025 une forte composante Data Leak.
 
-La comparaison doit rester méthodologiquement prudente tant que 2024 n'est pas intégralement rétro-classifié sous la même taxonomie AFRINTEL.
+La comparaison 2024-2025 est désormais **alignée sur la même taxonomie et la même règle de chronologie**. La prudence méthodologique reste néanmoins nécessaire pour tenir compte des différences de visibilité, de disponibilité des preuves et de couverture OSINT/Dark Web entre les deux années.
 
 ## 5. Évolution mensuelle
 
@@ -493,7 +495,7 @@ Priorités de surveillance :
 
 AFRINTEL documente **224 cyberincidents en Afrique en 2025**, répartis dans **30 pays** et neuf catégories taxonomie AFRINTEL. Le Ransomware reste dominant avec 121 fiches, mais les 80 Data Leak et l'intégration de catégories telles que Account Takeover, System Intrusion et Malware montrent que le paysage observé ne peut plus être décrit correctement avec l'ancienne taxonomie à six types.
 
-Par rapport au corpus corrigé de 2024, le volume documenté augmente de **75,0 %**. Cette progression doit être interprétée comme une évolution du corpus observable et de sa couverture, non comme une mesure exhaustive de la hausse réelle des compromissions sur le continent.
+Par rapport à la baseline finale de 2024 (**119 incidents**), le volume documenté en 2025 augmente de **88,2 %**, pour atteindre 224 incidents. Cette progression doit être interprétée comme une évolution du corpus observable et de sa couverture, non comme une mesure exhaustive d'une hausse de 88,2 % des compromissions réelles sur le continent.
 
 Le rapport 2025 devient ainsi une baseline plus riche : elle conserve la granularité mensuelle, géographique, régionale, sectorielle, par acteur, par type et par niveau de preuve tout en maintenant une séparation stricte entre faits observés, revendications, corroborations et inconnues.
 

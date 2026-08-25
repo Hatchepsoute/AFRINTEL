@@ -1,21 +1,13 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
+# AFRINTEL Cyber Incidents - July 2024 - canonical corpus (10 records)
 
-# Cyber Attacks in Africa - July 2024: List of 11 Victims
-👉🏾 [**French version available here**](./victims_FR.md)
+👉🏾 [Version française](./victims_FR.md)
 
-## 📅 July 2024
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## Monthly snapshot
-
-July 2024 contains **11 documented incident records**: **7 Ransomware**, **4 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **7 African countries**.
-
-Three of the four Data Leak records are July republications of older Algerian datasets and must not be interpreted as three new July compromises.
 
 ### July 1, 2024
 #### 🇹🇳 Tunisia - Maxcess-logistics
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Transport / Logistics
 - **Website:** [maxcess-logistics.com](https://www.maxcess-logistics.com)
 - **Status:** Claim - Unverified
@@ -27,6 +19,7 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
+
 ### July 2, 2024
 #### 🇪🇹 Ethiopia - F.D.R.E Defence War College (cited domain: nwc.ndu.edu)
 
@@ -51,7 +44,7 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 ### July 5, 2024
 #### 🇿🇦 South Africa - National health laboratory services
-- **Ransomware Group:** blacksuit
+- **Actor / Group:** blacksuit
 - **Sector:** Healthcare / Medical
 - **Website:** [nhls.ac.za](https://www.nhls.ac.za)
 - **Status:** Claim - Unverified
@@ -63,90 +56,29 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
-### July 11, 2024
-#### 🇩🇿 Algeria - Hôpital Chahids Mahmoudi (hcm-dz.com)
 
+### July 10, 2024
+
+#### 🇩🇿 Algeria - EmploiPartner
+- **Incident date:** July 10, 2024
+- **Initial publication / retained source date:** July 14, 2024
+- **AFRINTEL discovery date:** August 23, 2026 - retrospective audit
+- **Timeline precision:** Wednesday, July 10 date supported by the audit sources.
 - **Actor / Group:** Unknown
-- **Source context:** Repost by Addka72424 of material attributed to FriendlyChemist
-- **Sector:** Healthcare / Medical
-- **Status:** Claim - Data Sample Published
-- **Website:** [hcm-dz.com](https://hcm-dz.com)
-- **Confidence level:** Medium
-- **Impact level:** Level 3
-- **Incident type:** Data Leak
-- **Leak date:** September 21, 2023
-- **Discovery date:** July 11, 2024
-
-- **Reliability note:**
-  The post is explicitly presented as a repost ("REPOST") of a compilation titled "Algerian Databases Collection", itself reposted from an original post attributed to the account FriendlyChemist. The date and content of the original post are not provided, and the initial collection or access method is not specified.
-
-- **Description:**
-  Hôpital Chahids Mahmoudi is an Algerian hospital based in Tizi Ouzou, specialized in oncology and nuclear medicine, with an extension in Algiers and a clinic opened in Constantine in 2024. It operates the hcm-dz.com domain for its professional communications.
-
-- **Analysis:**
-  The file associated with hcm-dz.com in the compilation reposted on July 11, 2024 is dated September 21, 2023 and presented as covering approximately 1,900 users. The sample reviewed by AFRINTEL corresponds to email filtering logs (an anti-spam gateway type), not an export of medical records or full mailboxes.
-
-  The visible lines indicate, for each message, the sender, recipient, source IP address, subject, size, a filtering score, direction (inbound, outbound or internal) and a message identifier. Several message subjects reference patient names and types of medical examinations (lab results, imaging, cardiology), indicating professional use of the hospital's email system to transmit results, without the message content itself being visible in the sample.
-
-  The consistency of the log format and the observed volume of lines support a medium confidence level regarding the origin of these logs. AFRINTEL could not, however, confirm effective access to the mailboxes themselves, nor the completeness of any compromise beyond the reposted log lines. The presence of message subjects referencing named patients constitutes exposure of sensitive health-related metadata, which could facilitate targeted phishing, impersonation of medical or administrative staff, and partial reconstruction of care pathways. AFRINTEL does not reproduce any patient name, email address, IP address or message subject from the reviewed sample.
-
-### July 11, 2024
-#### 🇩🇿 Algeria - University of Tlemcen (univ-tlemcen.dz)
-
-- **Actor / Group:** Unknown
-- **Source context:** Repost by Addka72424 of material attributed to FriendlyChemist
-- **Sector:** Education / University
-- **Status:** Claim - Data Sample Published
-- **Website:** [univ-tlemcen.dz](https://www.univ-tlemcen.dz)
+- **Sector:** Professional / Business Services
+- **Website:** [emploipartner.com](https://www.emploipartner.com/)
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
 - **Confidence level:** High
 - **Impact level:** Level 3
-- **Incident type:** Data Leak
-- **Leak date:** June 27, 2022
-- **Discovery date:** July 11, 2024
+- **Analysis:** EmploiPartner said it detected and contained unauthorized access, opened an investigation, and strengthened its platform. Public sources used in the audit are insufficient to confirm data exfiltration, ransomware, DDoS, or an access sale. AFRINTEL retains `System Intrusion`.
+- **Public sources:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
-- **Reliability note:**
-  As with the other files in the same compilation, the exact origin, initial access method and the date of FriendlyChemist's original post are not specified. The sample, however, shows a complete application table structure and consistent individual records.
-
-- **Description:**
-  The University of Tlemcen (Abou Bekr Belkaïd) is an Algerian public higher-education institution. It operates a Moodle e-learning platform accessible via the univ-tlemcen.dz domain.
-
-- **Analysis:**
-  The file associated with univ-tlemcen.dz in the compilation reposted on July 11, 2024 is dated June 27, 2022 and presented as covering approximately 80,000 users. The sample reviewed by AFRINTEL shows the structure of the `mdl_user` table, specific to the Moodle learning management system, along with an excerpt of real user records.
-
-  The structural fields include the user ID, username, hashed password, first name, last name, email address, institution, department, country, language, and account creation/last-login dates. The visible records include an administrator account associated with the univ-tlemcen.dz domain, as well as accounts linked to email addresses from other Algerian universities, suggesting a shared authentication federation across several universities via this Moodle system rather than a scope limited to Tlemcen alone. Passwords are hashed using heterogeneous formats, including bcrypt for some recent accounts and older, weaker formats for others, without AFRINTEL being able to confirm their actual strength.
-
-  The consistency of the Moodle table structure with the observed records, combined with the presence of an identifiable administrator account, supports a high confidence level regarding the authenticity of this dataset. A compromise of this scale could facilitate takeover of student and staff accounts, academic identity impersonation, and cascading access to other Algerian institutions potentially sharing the same authentication federation. AFRINTEL does not reproduce any credential, hashed password, email address or individual record from the reviewed sample.
-
-### July 11, 2024
-#### 🇩🇿 Algeria - Algeria.com (web portal)
-
-- **Actor / Group:** Unknown
-- **Source context:** Repost by Addka72424 of material attributed to FriendlyChemist
-- **Sector:** Media / Entertainment
-- **Status:** Claim - Data Sample Published
-- **Website:** [algeria.com](https://www.algeria.com)
-- **Confidence level:** Low
-- **Impact level:** Level 2
-- **Incident type:** Data Leak
-- **Leak date:** September 2019
-- **Discovery date:** July 11, 2024
-
-- **Reliability note:**
-  The data in this file is notably older (2019) than the other elements of the compilation. The domain algeria.com is a generic portal dedicated to Algeria rather than a national .dz domain; the exact origin of the leak and the period during which the associated user-account service was active are not specified.
-
-- **Description:**
-  Algeria.com is a web portal dedicated to Algeria (travel, news and lifestyle), which in the past offered user accounts and email addresses under its own domain to some of its visitors.
-
-- **Analysis:**
-  The file associated with algeria.com in the compilation reposted on July 11, 2024 is dated September 2019 and presented as covering approximately 3,600 user accounts. The sample reviewed by AFRINTEL includes the fields user ID, username, IP address, email address, a token, and a second field labeled "secret".
-
-  The values observed in the token and secret fields do not match any standard cryptographic hash format clearly identifiable by AFRINTEL, and could correspond to an old proprietary mechanism of the portal rather than a directly exploitable password. The age of the data and the generic nature of the domain, distinct from Algerian institutional .dz domains, limit the current operational relevance of this exposure, although the associated email addresses and usernames could still be reused elsewhere by the individuals concerned.
-
-  Given the age of the data, the limited volume and the absence of a clearly identifiable password field, AFRINTEL assesses this claim with a low confidence level and limited impact. AFRINTEL does not reproduce any identifier, email address, IP address or token value from the reviewed sample.
+----------------------------
 
 ### July 13, 2024
 #### 🇰🇪 Kenya - Kenya urban roads authority
-- **Ransomware Group:** hunters
+- **Actor / Group:** hunters
 - **Sector:** Transport / Logistics
 - **Website:** [kura.go.ke](https://www.kura.go.ke)
 - **Status:** Claim - Unverified
@@ -158,9 +90,10 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
+
 ### July 17, 2024
 #### 🇿🇼 Zimbabwe - Zb financial holdings
-- **Ransomware Group:** madliberator
+- **Actor / Group:** madliberator
 - **Sector:** Finance / Banking
 - **Website:** [zb.co.zw](https://www.zb.co.zw)
 - **Status:** Claim - Unverified
@@ -172,9 +105,10 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
+
 ### July 17, 2024
 #### 🇿🇦 South Africa - Cities network
-- **Ransomware Group:** madliberator
+- **Actor / Group:** madliberator
 - **Sector:** Professional / Business Services
 - **Website:** [sacities.net](https://www.sacities.net)
 - **Status:** Claim - Unverified
@@ -186,9 +120,10 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
+
 ### July 17, 2024
 #### 🇪🇬 Egypt - Assih
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Professional / Business Services
 - **Website:** [assih.com](https://www.assih.com)
 - **Status:** Claim - Unverified
@@ -200,9 +135,10 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
+
 ### July 22, 2024
 #### 🇿🇦 South Africa - Sibanye-stillwater
-- **Ransomware Group:** ransomhouse
+- **Actor / Group:** ransomhouse
 - **Sector:** Mining / Extractive Industries
 - **Website:** [sibanyestillwater.com](https://www.sibanyestillwater.com)
 - **Status:** Claim - Unverified
@@ -215,5 +151,24 @@ Three of the four Data Leak records are July republications of older Algerian da
 
 - **Reliability note:**
   The card documents a ransomware leak-site publication without a technical sample or independent victim confirmation in the supplied material. AFRINTEL therefore does not confirm intrusion, encryption or exfiltration on the basis of this publication alone.
-## ✍🏿 Author
-*Adama ASSIONGBON* *Senior SOC & Cyber Threat Intelligence (CTI) Consultant*
+### 26 July 2024
+
+#### 🇲🇦 Morocco - Arab Civil Aviation Organization (ACAO)
+- **Compromise date:** Unknown - no later than 26 July 2024
+- **Initial observed publication date:** 26 July 2024
+- **Observed repost date:** 12 November 2024
+- **Later observed publication:** 24 December 2024
+- **Actor / Group:** vjvjvj
+- **Claimed affiliation:** The Night Hunters - according to the observed post
+- **Sector:** Aviation
+- **Website:** [acao.org.ma](https://acao.org.ma)
+- **Status:** Corroborated
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim description:** The Arab Civil Aviation Organization (ACAO) is an intergovernmental organization based in Rabat, Morocco, involved in coordinating civil aviation among Arab states.
+- **Analysis:** AFRINTEL now has a more complete chronology. A 26 July 2024 publication announced an ACAO database and included a sample and an advertised archive. A 12 November 2024 publication is explicitly marked `[REPOST]`, so it is not counted as a new compromise. A further 24 December 2024 publication again claimed a breach and displayed an ACAO-related sample. Material visible in the screenshots and structured file reviewed is consistent with data linked to ACAO and the civil-aviation ecosystem, including contact, role, and professional information. AFRINTEL does not reproduce raw personal data. These elements corroborate data exposure, but do not establish the exact technical date of initial access or prove that the December publication represents a second independent intrusion.
+- **Evidence qualification:** `Corroborated`. Multiple distinct publications overlap and samples consistent with ACAO are visible. No public victim or authority confirmation was identified in the material reviewed.
+- **Source / provenance:** Underground publications observed and analyzed by AFRINTEL; screenshots preserved. No operational forum or download URL is published.
+
+----------------------------

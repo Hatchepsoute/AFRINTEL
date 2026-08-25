@@ -1,25 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Access%20Sale-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# AFRINTEL Cyber Incidents - November 2024 - canonical corpus (15 records)
 
-# Cyber Attacks in Africa: November 2024: List of 16 Victims
+👉🏾 [Version française](./victims_FR.md)
 
-👉🏾 [**Version française disponible ici**](./victims_FR.md)
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## November 2024
-
-## Monthly snapshot
-
-November 2024 contains **16 documented incident records**: **12 Ransomware**, **2 Data Leak**, **2 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, across **11 African countries**.
-
-The retrospective correction adds **SABS**, a government-confirmed ransomware incident with confirmed system encryption and major operational disruption. The official record differs by one day on the incident date, so AFRINTEL preserves **20-21 November 2024**.
 
 ### November 2, 2024
 
 #### 🇿🇦 South Africa - Sumitomo Rubber South Africa
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Manufacturing / Industry
 - **Website:** [srigroup.co.za](https://www.srigroup.co.za)
 - **Status:** Claim - Data Sample Published
@@ -32,10 +21,11 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ----------------------------
 
 - **Evidence qualification:** The reviewed archive strongly supports a genuine large-scale internal-data compromise associated with Sumitomo Rubber South Africa. It does not independently establish the initial-access vector, ransomware encryption behavior or the full scope of any separate exfiltration beyond the reviewed archive.
+
 ### November 4, 2024
 
 #### 🇹🇿 Tanzania - College of Business Education (CBE)
-- **Ransomware Group:** hellcat
+- **Actor / Group:** hellcat
 - **Sector:** Education / University
 - **Website:** [cbe.ac.tz](https://www.cbe.ac.tz)
 - **Status:** Claim - Unverified
@@ -49,7 +39,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 4, 2024
 
 #### 🇸🇩 Sudan - Kenana Sugar Company
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Agriculture / Agribusiness
 - **Website:** [kenanasugarcompany.com](https://www.kenanasugarcompany.com)
 - **Status:** Claim - Unverified
@@ -60,26 +50,10 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 
 ----------------------------
 
-### November 12, 2024
-
-#### 🇲🇦 Morocco - Arab Civil Aviation Organization (ACAO)
-- **Actor / Group:** Unknown
-- **Source context:** Reposted by Hxp7; the November post references an earlier claim.
-- **Sector:** Aviation
-- **Website:** [acao.org.ma](https://acao.org.ma)
-- **Status:** Claim - Unverified
-- **Confidence level:** Low
-- **Impact level:** Level 3
-- **Incident type:** Data Leak
-- **Victim Description:** The Arab Civil Aviation Organization (ACAO) is an intergovernmental body headquartered in Rabat, Morocco, that coordinates civil aviation policy, safety and regulatory cooperation among Arab states.
-- **Analysis:** A forum post dated November 12, 2024 reposts an earlier claim that the ACAO database (acao.org.ma) was compromised, referencing approximately 800 files described as database columns and an external download link. No data extract or sample was directly visible in the observed post, so the content, authenticity and scope of the alleged database cannot be assessed. AFRINTEL does not access or reproduce the linked file. This entry is recorded as an unverified claim pending independent confirmation.
-
-----------------------------
-
 ### November 14, 2024
 
 #### 🇳🇬 Nigeria - Environmental Design International
-- **Ransomware Group:** akira
+- **Actor / Group:** akira
 - **Sector:** Professional / Business Services
 - **Website:** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
 - **Status:** Claim - Unverified
@@ -93,7 +67,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 17, 2024
 
 #### 🇪🇬 Egypt - Egyptian Tax Authority (ETA)
-- **Ransomware Group:** moneymessage
+- **Actor / Group:** moneymessage
 - **Sector:** Government / Administration
 - **Website:** [eta.gov.eg](https://www.eta.gov.eg)
 - **Status:** Claim - Unverified
@@ -128,7 +102,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 24, 2024
 
 #### 🇰🇪 Kenya - EFI Sales
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Manufacturing / Industry
 - **Website:** [efisales.co.ke](https://www.efisales.co.ke)
 - **Status:** Claim - Unverified
@@ -142,7 +116,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 27, 2024
 
 #### 🇪🇹 Ethiopia - Habesha Cement
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Manufacturing / Industry
 - **Website:** [habeshacement.com](https://www.habeshacement.com)
 - **Status:** Claim - Unverified
@@ -156,7 +130,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 27, 2024
 
 #### 🇪🇬 Egypt - Contrack Facilities Management
-- **Ransomware Group:** raworld
+- **Actor / Group:** raworld
 - **Sector:** Professional / Business Services
 - **Website:** [contrackfm.com](https://www.contrackfm.com)
 - **Status:** Claim - Unverified
@@ -200,7 +174,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 28, 2024
 
 #### 🇳🇬 Nigeria - Briatek
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Technology / IT
 - **Website:** [briatek.com.ng](https://www.briatek.com.ng)
 - **Status:** Claim - Unverified
@@ -214,7 +188,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 28, 2024
 
 #### 🇨🇲 Cameroon - Chanas Assurances S.A.
-- **Ransomware Group:** fog
+- **Actor / Group:** fog
 - **Sector:** Finance / Banking
 - **Website:** [chanasassurances.com](https://www.chanasassurances.com)
 - **Status:** Claim - Unverified
@@ -228,7 +202,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 29, 2024
 
 #### 🇳🇦 Namibia - Namforce Life Insurance
-- **Ransomware Group:** spacebears
+- **Actor / Group:** spacebears
 - **Sector:** Finance / Banking
 - **Website:** [namforce.com.na](https://www.namforce.com.na)
 - **Status:** Claim - Unverified
@@ -242,7 +216,7 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 ### November 29, 2024
 
 #### 🇿🇦 South Africa - PPOTTS
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Technology / IT
 - **Website:** [ppotts.com](https://www.ppotts.com)
 - **Status:** Claim - Data Sample Published
@@ -253,8 +227,3 @@ The retrospective correction adds **SABS**, a government-confirmed ransomware in
 - **Victim Description:** PPOTTS is a South African technology company operating in software, digital services, or enterprise technology solutions.
 
 ----------------------------
-
-## ✍🏿 Author
-*Adama ASSIONGBON*
-*SOC & Cyber Threat Intelligence Consultant*
-[LinkedIn profile](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)

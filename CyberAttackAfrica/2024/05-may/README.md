@@ -1,54 +1,52 @@
-# AFRINTEL CTI Report - May 2024
+# AFRINTEL CTI Report - Cyber Threats in Africa - May 2024
 
 👉🏾 [Version française](./README_FR.md)
 
 ## 1. Executive summary
 
-AFRINTEL now documents **9 incident records** in May 2024: **8 Ransomware** and **1 Operational Fraud**, across **6 African countries**. No Data Leak, Access Sale, DDoS or Defacement record is present in the corrected May corpus.
+In May 2024, AFRINTEL retains **9 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (8, 88.9%)** followed by **Operational Fraud (1, 11.1%)**. Leading countries are **South Africa (3)**, **Egypt (2)**, **Nigeria (1)**. Leading sectors are **Finance / Banking (3)**, **Professional / Business Services (2)**, **Construction / Real Estate (1)**. Most frequent actor/group labels are `lockbit3` (4), `blacksuit` (1), `ransomhub` (1). `Unknown` means missing attribution, not an actor.
 
-The retrospective correction adds the **Department of Public Works and Infrastructure (DPWI)** in South Africa. The government-confirmed May event involved cyber-enabled financial theft resulting in a further **R24 million** being stolen and triggered a multi-agency forensic investigation. The exact technical intrusion path and attacker identity remain unresolved, so the event is classified as `Operational Fraud` rather than forced into Ransomware or Data Leak.
-
-Among the eight Ransomware records, `lockbit3` accounts for four publications. Finance / Banking is the most represented sector with three records. The source corpus does not provide usable technical samples for those eight Ransomware claims, so publication activity must remain separate from independently confirmed compromise.
-
-👉🏾 [View the full victim list](./victims.md)
-
-### 1.1 Month-over-month comparison
+### 1.1 Month-over-month study
 
 | Indicator | April 2024 | May 2024 | Change |
-|---|---:|---:|---:|
-| Total incidents | 7 | **9** | **+2 (+28.6%)** |
-| Ransomware | 5 | **8** | **+3 (+60.0%)** |
-| Data Leak | 2 | **0** | **-2 (-100.0%)** |
-| Access Sale | 0 | **0** | Stable |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **1** | **New category observed** |
+|---|---|---|---|
+| Total | 9 | 9 | Stable |
+| Ransomware | 5 | 8 | +3 (+60.0%) |
+| Data Leak | 2 | 0 | -2 (-100.0%) |
+| Access Sale | 0 | 0 | Stable |
+| DDoS | 2 | 0 | -2 (-100.0%) |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 0 | 0 | Stable |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 1 | +1 (new) |
 
-May reverses the decline observed in April. Total volume increases by **28.6%**, driven by three additional Ransomware records compared with April and the addition of one confirmed Operational Fraud case. Data Leak falls from two records to zero.
+### 1.2 Comparative analysis
+
+Monthly volume **remains stable by 0 incident(s)**. Structural changes are: Ransomware 5->8 (+3), Data Leak 2->0 (-2), DDoS 2->0 (-2), Operational Fraud 0->1 (+1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
-- **Period:** 1-31 May 2024.
-- **Source of truth:** harmonized `victims_FR.md` / `victims.md`.
-- **Counting:** one harmonized card equals one documented incident record.
-- **Taxonomy:** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Retrospective correction:** DPWI is one of the 10 missing 2024 incidents identified during the 23 August 2026 historical audit and is assigned to May according to the government's incident chronology.
-- **DPWI classification:** Operational Fraud is used because cyber-enabled financial theft and system compromise are confirmed, while ransomware, standalone data leakage and the technical intrusion path are not established.
-- Ransomware claims remain claims unless victim confirmation or technical evidence supports a higher evidence status.
+- One canonical incident equals one event retained in the 2024 year.
+- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.
+- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.
+- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
+- Coordinated DDoS is counted by campaign.
+- Type, status, confidence, impact, attribution, and source remain separate.
 
-## 3. Global overview
+## 3. Incident-type distribution
 
-### 3.1 Incident-type distribution
-
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | **8** | **88.9%** |
-| Operational Fraud | **1** | **11.1%** |
+| Type | Records | Share |
+|---|---|---|
+| Ransomware | 8 | 88.9% |
 | Data Leak | 0 | 0.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
-| **Total** | **9** | **100%** |
+| Account Takeover | 0 | 0.0% |
+| System Intrusion | 0 | 0.0% |
+| Malware | 0 | 0.0% |
+| Operational Fraud | 1 | 11.1% |
 
 ```mermaid
 pie showData
@@ -57,131 +55,271 @@ pie showData
     "Operational Fraud" : 1
 ```
 
-### 3.2 Country distribution
+## 4. Country x type
 
-| Country | Ransomware | Operational Fraud | Total |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 2 | 1 | **3** |
-| 🇪🇬 Egypt | 2 | 0 | **2** |
-| 🇨🇮 Côte d'Ivoire | 1 | 0 | 1 |
-| 🇳🇦 Namibia | 1 | 0 | 1 |
-| 🇳🇬 Nigeria | 1 | 0 | 1 |
-| 🇸🇳 Senegal | 1 | 0 | 1 |
-| **Total** | **8** | **1** | **9** |
+| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| South Africa | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 |
+| Egypt | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ivory Coast | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Senegal | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Regional distribution
+## 5. Regional distribution
 
-| Region | Ransomware | Operational Fraud | Total |
-|---|---:|---:|---:|
-| Southern Africa | 3 | 1 | **4** |
-| West Africa | 3 | 0 | **3** |
-| North Africa | 2 | 0 | **2** |
-| **Total** | **8** | **1** | **9** |
+| Region | Records | Share |
+|---|---|---|
+| Southern Africa | 4 | 44.4% |
+| West Africa | 3 | 33.3% |
+| North Africa | 2 | 22.2% |
 
-### 3.4 Harmonized sector distribution
+## 6. Sector distribution
 
 | Sector | Records | Share |
-|---|---:|---:|
+|---|---|---|
 | Finance / Banking | 3 | 33.3% |
 | Professional / Business Services | 2 | 22.2% |
 | Construction / Real Estate | 1 | 11.1% |
 | Healthcare / Medical | 1 | 11.1% |
 | Technology / IT | 1 | 11.1% |
 | Government / Administration | 1 | 11.1% |
-| **Total** | **9** | **100%** |
 
-### 3.5 Actors / groups
+## 7. Actors / groups
 
-| Actor / Group | Records |
-|---|---:|
-| lockbit3 | **4** |
-| blacksuit | 1 |
-| ransomhub | 1 |
-| hunters | 1 |
-| arcusmedia | 1 |
-| Unknown | 1 |
-| **Total** | **9** |
-
-```mermaid
-flowchart LR
-    LB["lockbit3 - 4"] --> EG1["Egypt - Elarabygroup"]
-    LB --> ZA1["South Africa - Lenmed"]
-    LB --> NA["Namibia - EIF"]
-    LB --> SN["Senegal - Sysroad"]
-    BS["blacksuit"] --> NG["Nigeria - Nestoil"]
-    RH["ransomhub"] --> ZA2["South Africa - Kamo Jou Trading"]
-    HU["hunters"] --> CI["Côte d'Ivoire - Treasury"]
-    AM["arcusmedia"] --> EG2["Egypt - Egyptian Sudanese"]
-    UNK["Unknown"] --> DPWI["South Africa - DPWI"]
-```
-
-## 4. Detailed analysis
-
-### 4.1 Ransomware - 8 records
-
-The eight Ransomware records concern **Nestoil**, **Elarabygroup**, **Lenmed**, **Kamo Jou Trading**, **EIF Namibia**, the **Côte d'Ivoire Treasury**, **Egyptian Sudanese** and **Sysroad**.
-
-All eight retain `Claim - Unverified`. The source cards do not provide a usable data sample, DFIR report or victim confirmation establishing encryption, operational disruption or exfiltration. `lockbit3` represents four of the eight publications, but this concentration alone does not establish shared tradecraft, a common initial-access vector or a coordinated campaign.
-
-### 4.2 Operational Fraud - DPWI
-
-DPWI is the only `Operational Fraud` record in May. Unlike the eight Ransomware entries, the existence and financial impact of this event are government-confirmed.
-
-The South African government reported that cybercriminal activity had siphoned substantial funds over a prolonged period and that the latest May incident caused a further **R24 million** loss. The incident triggered a forensic investigation involving the Hawks, SAPS, State Security Agency and cybersecurity specialists. Possible insider collusion was raised as an investigative hypothesis.
-
-The public record does not establish the exact system entry point, payment-control weakness or attacker identity. These unknowns are preserved rather than replaced with an assumed malware family or ATT&CK technique.
-
-## 5. Key findings and intelligence gaps
-
-- The corrected May corpus rises from **8 to 9 records** after adding DPWI.
-- Ransomware dominates numerically with **8 of 9 records (88.9%)**, but those eight are unverified publications rather than eight confirmed compromises.
-- DPWI is the strongest evidence-backed event of the month because both the cyber-enabled financial theft and financial loss are confirmed by government reporting.
-- South Africa becomes the most represented country with **3 records**.
-- Finance / Banking remains the largest sector with **3 records**, while DPWI adds Government / Administration to the sector distribution.
-- No usable public sample or DFIR evidence is available in the source corpus for the eight Ransomware records.
-- DPWI's initial access, attacker identity and exact control failure remain open intelligence requirements.
-
-## 6. Contextual MITRE ATT&CK mapping
-
-| Status | Technique | Application |
+| Actor / Group | Records | Share |
 |---|---|---|
-| Preventive | T1486 - Data Encrypted for Impact | Defensive monitoring for Ransomware claims; encryption is not publicly confirmed in the eight cases. |
-| Preventive | T1490 - Inhibit System Recovery | Relevant resilience control; behavior is not observed in the source corpus. |
-| Assumption | T1078 - Valid Accounts | Possible access scenario to investigate internally, not an observed May fact. |
-| Not mapped | DPWI technical intrusion path | No ATT&CK technique is asserted because the public evidence does not establish the mechanism used to enable the theft. |
+| lockbit3 | 4 | 44.4% |
+| blacksuit | 1 | 11.1% |
+| ransomhub | 1 | 11.1% |
+| hunters | 1 | 11.1% |
+| arcusmedia | 1 | 11.1% |
+| Unknown | 1 | 11.1% |
 
-## 7. Recommendations
+## 8. Evidence maturity
 
-- Separate leak-site publication activity from confirmed operational incidents in executive reporting.
-- For finance and government environments, reinforce payment authorization, segregation of duties, privileged-access review and fraud-monitoring controls.
-- For DPWI-like cases, correlate payment events with IAM, endpoint, email, ERP and administrative logs before attributing a technical access path.
-- For the eight Ransomware claims, preserve logs and monitor for later victim statements, samples or leak-site updates before raising confidence.
-- Maintain immutable backups and tested restoration procedures without assuming that every ransomware listing proves encryption.
+| Evidence position | Records | Share |
+|---|---|---|
+| Claim - Unverified | 8 | 88.9% |
+| Confirmed | 1 | 11.1% |
 
-## 8. Timeline
+### Confidence
+
+| Confidence | Records | Share |
+|---|---|---|
+| Low | 8 | 88.9% |
+| Very High | 1 | 11.1% |
+
+## 9. Timeline
 
 ```mermaid
 timeline
     title AFRINTEL - May 2024
-    06 May : blacksuit - Nestoil
-           : lockbit3 - Elarabygroup
-    07 May : lockbit3 - Lenmed
-           : ransomhub - Kamo Jou Trading
-    09 May : lockbit3 - EIF Namibia
-    13 May : hunters - Côte d'Ivoire Treasury
-    16 May : arcusmedia - Egyptian Sudanese
-    25 May : lockbit3 - Sysroad
-    May : Unknown - DPWI - exact incident date undisclosed
+    6 Mai 2024 : Nestoil
+- **Acteur / Groupe -** blacksuit
+- **Secteur -** Construction / Real Estate
+- **Site web -** [nestoilgroup.com](https -//www.nestoilgroup.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Nestoil est une entreprise commerciale majeure opérant dans le secteur des construction, contribuant de manière significative au tissu économique régional en Nigeria.
+
+----------------------------
+    6 Mai 2024 : Elarabygroup
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Professional / Business Services
+- **Site web -** [elarabygroup.com](https -//www.elarabygroup.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Elarabygroup est une entreprise commerciale majeure opérant dans le secteur des business services, contribuant de manière significative au tissu économique régional en Egypt.
+
+----------------------------
+    7 Mai 2024 : Lenmed
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Healthcare / Medical
+- **Site web -** [lenmed.co.za](https -//www.lenmed.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Lenmed est une entreprise commerciale majeure opérant dans le secteur des healthcare services, contribuant de manière significative au tissu économique régional en South Africa.
+
+----------------------------
+    7 Mai 2024 : Kamo jou trading
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Finance / Banking
+- **Site web -** [kamojou.co.za](https -//www.kamojou.co.za)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Kamo jou trading est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en South Africa.
+
+----------------------------
+    9 Mai 2024 : Eif.na
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Finance / Banking
+- **Site web -** [eif.org.na](https -//www.eif.org.na)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Eif.na est une entreprise commerciale majeure opérant dans le secteur des financial organizations, contribuant de manière significative au tissu économique régional en Namibia.
+
+----------------------------
+    13 Mai 2024 : Treasury of cote d'ivoire
+- **Acteur / Groupe -** hunters
+- **Secteur -** Finance / Banking
+- **Site web -** [tresor.gouv.ci](https -//www.tresor.gouv.ci)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Treasury of cote d'ivoire est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
+
+----------------------------
+    16 Mai 2024 : Egyptian sudanese
+- **Acteur / Groupe -** arcusmedia
+- **Secteur -** Professional / Business Services
+- **Site web -** Not validated from the provided source
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Egyptian sudanese est une entreprise commerciale majeure opérant dans le secteur des services, contribuant de manière significative au tissu économique régional en Egypt.
+
+----------------------------
+    25 Mai 2024 : Sysroad
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Technology / IT
+- **Site web -** [sysroad.com](https -//www.sysroad.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Sysroad est une entreprise commerciale majeure opérant dans le secteur des information technologies consulting, contribuant de manière significative au tissu économique régional en Senegal.
+
+----------------------------
+    Mai 2024 - date exacte de l'incident non divulguée publiquement : Department of Public Works and Infrastructure (DPWI)
+- **Date de l'incident -** Mai 2024 - date exacte non divulguée publiquement
+- **Date de publication initiale -** 10 juillet 2024
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [publicworks.gov.za](https -//www.publicworks.gov.za/)
+- **Statut -** Government Confirmed - Forensic Investigation
+- **Type d'incident -** Operational Fraud
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Note de taxonomie -** `Operational Fraud` est retenu car l'événement confirmé correspond à un vol financier cyberactivé associé à une compromission de système. Les sources publiques n'établissent ni le déploiement d'un ransomware, ni une fuite de données autonome, ni le chemin technique exact de l'intrusion.
+- **Description victime -** Le Department of Public Works and Infrastructure d'Afrique du Sud gère les bâtiments publics, les infrastructures et les fonctions gouvernementales liées au patrimoine immobilier.
+- **Analyse -** Le gouvernement sud-africain a indiqué qu'une activité cybercriminelle avait permis de détourner des fonds importants du DPWI sur une longue période et que le dernier incident, en mai 2024, avait entraîné le vol supplémentaire de **24 millions de rands**. Cette perte a déclenché une enquête forensique complète impliquant les Hawks, le SAPS, la State Security Agency et des spécialistes en cybersécurité. Des responsables gouvernementaux ont également évoqué une possible collusion entre des personnes internes et des criminels. La source publique ne permet pas d'établir le chemin d'intrusion exact, la faiblesse précise des contrôles de paiement ni l'identité des attaquants. AFRINTEL enregistre donc l'événement de mai comme un incident Operational Fraud confirmé par le gouvernement, impliquant un vol financier cyberactivé et une compromission de système, sans attribuer une famille de malware ou une technique d'accès non étayée.
+- **Source publique -** [SAnews - enquête DPWI](https -//www.sanews.gov.za/south-africa/dpwi-investigates-theft-r300-million)
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. CTI analysis by type
 
-May 2024 closes with **9 documented incident records across 6 African countries**, comprising **8 Ransomware claims and 1 government-confirmed Operational Fraud incident**. Compared with April, the monthly corpus increases from 7 to 9 records, a rise of **28.6%**. Ransomware rises from 5 to 8, while the two Data Leak records observed in April disappear from the May corpus.
+### Ransomware - 8
 
-The numerical dominance of Ransomware must not be confused with evidence strength. All eight Ransomware records remain unverified actor publications in the available dataset: no usable public sample, victim confirmation or DFIR material establishes encryption, disruption or exfiltration for those cases. `lockbit3` accounts for half of these Ransomware publications, but that visibility does not by itself demonstrate common tradecraft or a coordinated campaign.
+**8 record(s) (88.9%).** Leading countries: Egypt (2), South Africa (2), Nigeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-DPWI changes the analytical character of the month because it is not merely a criminal claim. Government reporting confirms a cyber-enabled financial theft associated with system compromise and a further loss of **R24 million** in May. The response escalated to a multi-agency forensic investigation, while possible insider collusion was raised as an investigative hypothesis. At the same time, the public record leaves the technical intrusion path, payment-control weakness and attacker identity unresolved. AFRINTEL therefore records what is confirmed without converting those unknowns into unsupported technical conclusions.
+### Operational Fraud - 1
 
-From a CTI perspective, May demonstrates why **incident volume and evidence maturity must be read together**. A month can be overwhelmingly composed of Ransomware publications while its strongest confirmed cyber impact comes from a different category. The priority for follow-up is therefore twofold: continue monitoring the eight ransomware claims for later evidence, and track the DPWI investigation for verified findings on access, internal control failures, insider involvement and attribution. This evidence-led approach preserves the historical value of AFRINTEL while preventing claims, hypotheses and confirmed events from being treated as equivalent.
+**1 record(s) (11.1%).** Leading countries: South Africa (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+## 11. Priority incidents for review
+
+| Country | Organization | Type | Status | Impact | Confidence |
+|---|---|---|---|---|---|
+| South Africa | Department of Public Works and Infrastructure (DPWI)
+- **Date de l'incident:** Mai 2024 - date exacte non divulguée publiquement
+- **Date de publication initiale:** 10 juillet 2024
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [publicworks.gov.za](https://www.publicworks.gov.za/)
+- **Statut:** Government Confirmed - Forensic Investigation
+- **Type d'incident:** Operational Fraud
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Note de taxonomie:** `Operational Fraud` est retenu car l'événement confirmé correspond à un vol financier cyberactivé associé à une compromission de système. Les sources publiques n'établissent ni le déploiement d'un ransomware, ni une fuite de données autonome, ni le chemin technique exact de l'intrusion.
+- **Description victime:** Le Department of Public Works and Infrastructure d'Afrique du Sud gère les bâtiments publics, les infrastructures et les fonctions gouvernementales liées au patrimoine immobilier.
+- **Analyse:** Le gouvernement sud-africain a indiqué qu'une activité cybercriminelle avait permis de détourner des fonds importants du DPWI sur une longue période et que le dernier incident, en mai 2024, avait entraîné le vol supplémentaire de **24 millions de rands**. Cette perte a déclenché une enquête forensique complète impliquant les Hawks, le SAPS, la State Security Agency et des spécialistes en cybersécurité. Des responsables gouvernementaux ont également évoqué une possible collusion entre des personnes internes et des criminels. La source publique ne permet pas d'établir le chemin d'intrusion exact, la faiblesse précise des contrôles de paiement ni l'identité des attaquants. AFRINTEL enregistre donc l'événement de mai comme un incident Operational Fraud confirmé par le gouvernement, impliquant un vol financier cyberactivé et une compromission de système, sans attribuer une famille de malware ou une technique d'accès non étayée.
+- **Source publique:** [SAnews - enquête DPWI](https://www.sanews.gov.za/south-africa/dpwi-investigates-theft-r300-million)
+
+---------------------------- | Operational Fraud | Government Confirmed - Forensic Investigation | Level 4 | Very High |
+| South Africa | Lenmed
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Healthcare / Medical
+- **Site web:** [lenmed.co.za](https://www.lenmed.co.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Lenmed est une entreprise commerciale majeure opérant dans le secteur des healthcare services, contribuant de manière significative au tissu économique régional en South Africa.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| South Africa | Kamo jou trading
+- **Acteur / Groupe:** ransomhub
+- **Secteur:** Finance / Banking
+- **Site web:** [kamojou.co.za](https://www.kamojou.co.za)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Kamo jou trading est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en South Africa.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Namibia | Eif.na
+- **Acteur / Groupe:** lockbit3
+- **Secteur:** Finance / Banking
+- **Site web:** [eif.org.na](https://www.eif.org.na)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Eif.na est une entreprise commerciale majeure opérant dans le secteur des financial organizations, contribuant de manière significative au tissu économique régional en Namibia.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+| Ivory Coast | Treasury of cote d'ivoire
+- **Acteur / Groupe:** hunters
+- **Secteur:** Finance / Banking
+- **Site web:** [tresor.gouv.ci](https://www.tresor.gouv.ci)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Treasury of cote d'ivoire est une entreprise commerciale majeure opérant dans le secteur des finance, contribuant de manière significative au tissu économique régional en Côte d'Ivoire.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Structured selection based on impact, status, and confidence; not an absolute severity ranking.
+
+## 12. Intelligence gaps and corrections
+
+- initial-access vector often unknown;
+- technical compromise date may differ from publication date;
+- claimed volumes are rarely fully verifiable;
+- technical attribution is often limited to the publication account;
+- historical republications are tracked separately.
+
+## 13. Recommendations
+
+- phishing-resistant MFA, PAM, and least privilege;
+- segmentation, immutable backups, and restoration testing;
+- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;
+- detection of mass exports, unusual archives, and outbound transfers;
+- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.
+
+## 14. Conclusion
+
+May 2024 contains **9 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+
+👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR

@@ -14,7 +14,7 @@ Geographic concentration is significant: **Morocco (19)**, **Egypt (17)**, and *
 
 At sector level, **Finance / Banking (24)**, **Government / Administration (24)**, and **Education / University (8)** are most represented. The top two sectors account for **48 records, or 42.5%**.
 
-Activity varies across the semester: **Juillet is the highest-volume month with 25 incidents**, while **Novembre records 15**.
+Activity varies across the semester: **July is the highest-volume month with 25 incidents**, while **November records 15**.
 
 Evidence maturity remains heterogeneous. AFRINTEL distinguishes unverified claims, sample-backed publications, claimed full publications, independent corroboration, and victim or authority confirmation. **A criminal claim, attribution, or advertised volume is not treated as confirmed without sufficient supporting evidence.**
 
@@ -36,23 +36,22 @@ Evidence maturity remains heterogeneous. AFRINTEL distinguishes unverified claim
 
 ## 3. Corrected H2 2024 vs H2 2025 comparison
 
-The corrected H2 2024 corpus contains **74 records**, compared with **113** in H2 2025.
+The final corrected H2 2024 corpus contains **74 canonical incidents**, compared with **113** in H2 2025. The 2024 baseline has undergone chronology review and reclassification under the **same nine incident types** used for 2025, so the categories below are directly comparable and valid zero values are no longer shown as `N/A`.
 
-| Indicator | Corrected 2024 | 2025 | Change |
+| Indicator | Final corrected 2024 | 2025 | Change |
 |---|---:|---:|---:|
 | Total incidents | 74 | 113 | **+39 (+52.7%)** |
-| Ransomware | 56 | 63 | **+7 (+12.5%)** |
-| Data Leak | 14 | 41 | **+27 (+192.9%)** |
-| Access Sale | 2 | 3 | **+1 (+50.0%)** |
-| DDoS | 0 | 2 | **+2 (new)** |
+| Ransomware | 57 | 63 | **+6 (+10.5%)** |
+| Data Leak | 9 | 41 | **+32 (+355.6%)** |
+| Access Sale | 3 | 3 | **0 (0.0%)** |
+| DDoS | 0 | 2 | **+2 (newly observed)** |
 | Defacement | 1 | 2 | **+1 (+100.0%)** |
+| Account Takeover | 0 | 0 | **Stable** |
+| System Intrusion | 4 | 1 | **-3 (-75.0%)** |
+| Malware | 0 | 1 | **+1 (newly observed)** |
 | Operational Fraud | 0 | 0 | **Stable** |
-| Account Takeover | N/A | 0 | **N/A** |
-| System Intrusion | N/A | 1 | **N/A** |
-| Malware | N/A | 1 | **N/A** |
 
-`Account Takeover`, `System Intrusion`, and `Malware` remain `N/A` for 2024 until the 2024 corpus is fully retro-classified under the current taxonomy.
-
+The documented H2 corpus increases from **74 to 113 incidents**, an increase of **39 (+52.7%)**. Data Leak shows the largest absolute difference (**+32**), while Ransomware rises by six records. These figures describe AFRINTEL corpus visibility and do not by themselves demonstrate an equivalent increase in successful real-world compromises.
 ### 3.1 H1 vs H2 2025
 
 | Indicator | H1 2025 | H2 2025 | Change |
@@ -262,15 +261,19 @@ The semester contains **3 Access Sale records**. Main distribution: Togo (1), Eg
 
 ### DDoS - 2
 
-The semester documents **2 DDoS campaign(s)**. Distribution: Egypt (1), Morocco (1). Counts refer to documented campaigns, not necessarily every individual targeted domain.
+The semester documents **2 DDoS campaigns**. Distribution: Egypt (1), Morocco (1). Counts refer to documented campaigns, not necessarily every individual targeted domain.
 
 ### Defacement - 2
 
 The semester contains **2 Defacement records**. Distribution: Morocco (1), Kenya (1). Visible modification is not reclassified as Data Leak without separate evidence.
 
+### Account Takeover - 0
+
+No incident is classified as `Account Takeover` during this semester. This zero value reflects the canonical AFRINTEL corpus for H2 2025 and does not imply an absence of account compromise activity across Africa.
+
 ### System Intrusion - 1
 
-The semester contains **1 System Intrusion records**. Distribution: Tunisia (1). It is used when system access or attempted access is established without enough evidence for a more specific category.
+The semester contains **1 System Intrusion record**. Distribution: Tunisia (1). It is used when system access or attempted access is established without enough evidence for a more specific category.
 
 ### Malware - 1
 

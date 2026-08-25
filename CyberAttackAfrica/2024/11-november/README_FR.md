@@ -1,230 +1,428 @@
-# Rapport CTI AFRINTEL - Novembre 2024
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Novembre 2024
 
 👉🏾 [English version](./README.md)
 
-## 1. Résumé exécutif
+## 1. Synthèse exécutive
 
-Le corpus AFRINTEL corrigé de novembre 2024 contient **16 fiches incident documentées dans 11 pays africains** : **12 Ransomware**, **2 Data Leak** et **2 Access Sale**. Aucun DDoS, Defacement ou Operational Fraud n'est présent.
+En Novembre 2024, AFRINTEL retient **15 cyberincidents canoniques dans 10 pays**. Le mois est dominé par **Ransomware (12, 80,0 %)** puis **Access Sale (2, 13,3 %)**. Les pays les plus représentés sont **Afrique du Sud (3)**, **Nigeria (2)**, **Égypte (2)**. Les secteurs les plus visibles sont **Industrie / Fabrication (3)**, **Services professionnels / Business (2)**, **Gouvernement / Administration (2)**. Les labels acteur/groupe les plus fréquents sont `killsec` (3), `ransomhub` (2), `Sentap` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
 
-La correction rétrospective ajoute le **South African Bureau of Standards (SABS)**. Contrairement à la majorité des publications ransomware sur leak sites du mois, le dossier SABS repose sur des éléments officiels sud-africains et parlementaires confirmant un chiffrement des systèmes par ransomware et une perturbation opérationnelle majeure. Les sources officielles divergent d'un jour sur la date, 20 ou 21 novembre ; AFRINTEL conserve donc **20-21 novembre 2024**.
+La maturité de preuve est répartie entre **Claim - Unverified: 11**, **Claim - Data Sample Published: 3**, **Confirmed: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
-L'Afrique du Sud compte désormais trois incidents. Le Burkina Faso, l'Égypte et le Nigeria en comptent deux chacun, tandis que sept autres pays comptent une fiche chacun. Le mois reste donc caractérisé par une forte dispersion géographique plutôt que par la domination d'un seul pays.
-
-👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
-
-### 1.1 Comparaison avec le mois précédent
+### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Octobre 2024 | Novembre 2024 | Évolution |
-|---|---:|---:|---:|
-| Total incidents | 12 | **16** | **+4 (+33,3 %)** |
-| Ransomware | 8 | **12** | **+4 (+50,0 %)** |
-| Data Leak | 4 | **2** | **-2 (-50,0 %)** |
-| Access Sale | 0 | **2** | **+2 (depuis 0)** |
-| DDoS | 0 | **0** | Stable |
-| Defacement | 0 | **0** | Stable |
-| Operational Fraud | 0 | **0** | Stable |
+|---|---|---|---|
+| Total | 11 | 15 | +4 (+36,4 %) |
+| Ransomware | 8 | 12 | +4 (+50,0 %) |
+| Data Leak | 2 | 1 | -1 (-50,0 %) |
+| Access Sale | 0 | 2 | +2 (nouveau) |
+| DDoS | 0 | 0 | Stable |
+| Defacement | 0 | 0 | Stable |
+| Account Takeover | 0 | 0 | Stable |
+| System Intrusion | 1 | 0 | -1 (-100,0 %) |
+| Malware | 0 | 0 | Stable |
+| Operational Fraud | 0 | 0 | Stable |
 
-Novembre compte **33,3 % de fiches documentées supplémentaires** par rapport à octobre. La hausse provient de quatre Ransomware supplémentaires et de l'apparition de deux Access Sale, tandis que les Data Leak passent de quatre à deux.
+### 1.2 Analyse comparative
+
+Le volume mensuel **augmente de 4 incident(s)**. Les variations structurantes sont : Ransomware 8->12 (+4), Access Sale 0->2 (+2), System Intrusion 1->0 (-1), Data Leak 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
-- **Période :** 1er au 30 novembre 2024.
-- **Source de vérité :** couple harmonisé `victims_FR.md` / `victims.md`.
-- **Comptage :** une fiche harmonisée correspond à un incident documenté.
-- **Taxonomie :** Ransomware, Data Leak, Access Sale, DDoS, Defacement, Operational Fraud.
-- **Correction rétrospective :** SABS fait partie des incidents 2024 validés comme manquants et est ajouté à novembre.
-- **Chronologie SABS :** les sources officielles divergent d'un jour ; AFRINTEL enregistre donc 20-21 novembre au lieu de choisir silencieusement une seule source.
-- **Règle Access Sale :** un accès proposé à la vente ne prouve ni qu'il est encore valide, ni qu'il a été utilisé, ni qu'une exfiltration a eu lieu.
-- **Séparation acteur/source :** ACAO est `Unknown` ; Hxp7 reste uniquement documenté comme compte de republication.
-- Revendications criminelles, échantillons publiés, confirmations victimes et incidents confirmés par des autorités restent des états de preuve distincts.
+- Un incident canonique correspond à un événement retenu dans le millésime 2024.
+- Les découvertes/republications historiques sont conservées séparément et ne gonflent pas les statistiques 2024.
+- La date d'incident ou la meilleure fenêtre soutenue prime ; la date de découverte AFRINTEL reste distincte.
+- Les 9 types AFRINTEL sont utilisés ; une tentative est représentée par le statut, jamais par un type `Attempted Attack`.
+- Un DDoS coordonné est compté par campagne.
+- Type, statut, confiance, impact, attribution et source restent distincts.
 
-## 3. Vue globale
+## 3. Répartition par type d'incident
 
-### 3.1 Répartition par type d'incident
-
-| Type d'incident | Fiches | Part |
-|---|---:|---:|
-| Ransomware | **12** | **75,0 %** |
-| Data Leak | **2** | **12,5 %** |
-| Access Sale | **2** | **12,5 %** |
+| Type | Fiches | Part |
+|---|---|---|
+| Ransomware | 12 | 80,0 % |
+| Data Leak | 1 | 6,7 % |
+| Access Sale | 2 | 13,3 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
+| Account Takeover | 0 | 0,0 % |
+| System Intrusion | 0 | 0,0 % |
+| Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **16** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Novembre 2024
     "Ransomware" : 12
-    "Data Leak" : 2
+    "Data Leak" : 1
     "Access Sale" : 2
 ```
 
-### 3.2 Répartition par pays
+## 4. Pays x type
 
-| Pays | Ransomware | Data Leak | Access Sale | Total |
-|---|---:|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 2 | 1 | 0 | **3** |
-| 🇧🇫 Burkina Faso | 0 | 0 | 2 | **2** |
-| 🇪🇬 Égypte | 2 | 0 | 0 | **2** |
-| 🇳🇬 Nigeria | 2 | 0 | 0 | **2** |
-| 🇨🇲 Cameroun | 1 | 0 | 0 | 1 |
-| 🇪🇹 Éthiopie | 1 | 0 | 0 | 1 |
-| 🇰🇪 Kenya | 1 | 0 | 0 | 1 |
-| 🇲🇦 Maroc | 0 | 1 | 0 | 1 |
-| 🇳🇦 Namibie | 1 | 0 | 0 | 1 |
-| 🇸🇩 Soudan | 1 | 0 | 0 | 1 |
-| 🇹🇿 Tanzanie | 1 | 0 | 0 | 1 |
-| **Total** | **12** | **2** | **2** | **16** |
+| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Afrique du Sud | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Égypte | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Burkina Faso | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tanzanie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Soudan | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Kenya | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Éthiopie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cameroun | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Namibie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-### 3.3 Répartition régionale
+## 5. Répartition régionale
 
-| Région | Ransomware | Data Leak | Access Sale | Total |
-|---|---:|---:|---:|---:|
-| Afrique de l'Est | 4 | 0 | 0 | **4** |
-| Afrique de l'Ouest | 2 | 0 | 2 | **4** |
-| Afrique australe | 3 | 1 | 0 | **4** |
-| Afrique du Nord | 2 | 1 | 0 | **3** |
-| Afrique centrale | 1 | 0 | 0 | **1** |
-| **Total** | **12** | **2** | **2** | **16** |
+| Région | Fiches | Part |
+|---|---|---|
+| Afrique australe | 4 | 26,7 % |
+| Afrique de l'Est | 4 | 26,7 % |
+| Afrique de l'Ouest | 4 | 26,7 % |
+| Afrique du Nord | 2 | 13,3 % |
+| Afrique centrale | 1 | 6,7 % |
 
-### 3.4 Répartition sectorielle harmonisée
+## 6. Répartition sectorielle
 
 | Secteur | Fiches | Part |
-|---|---:|---:|
-| Manufacturing / Industry | 3 | 18,8 % |
-| Government / Administration | 2 | 12,5 % |
-| Finance / Banking | 2 | 12,5 % |
-| Healthcare / Medical | 2 | 12,5 % |
-| Professional / Business Services | 2 | 12,5 % |
-| Technology / IT | 2 | 12,5 % |
-| Agriculture / Agribusiness | 1 | 6,3 % |
-| Aviation | 1 | 6,3 % |
-| Education / University | 1 | 6,3 % |
-| **Total** | **16** | **100 %** |
-
-### 3.5 Acteurs / groupes
-
-| Acteur / Groupe | Fiches |
-|---|---:|
-| killsec | **3** |
-| ransomhub | 2 |
-| Sentap | 2 |
-| Unknown | 2 |
-| hellcat | 1 |
-| akira | 1 |
-| moneymessage | 1 |
-| lockbit3 | 1 |
-| raworld | 1 |
-| fog | 1 |
-| spacebears | 1 |
-| **Total** | **16** |
-
-Les deux fiches `Unknown` correspondent à SABS et ACAO. Pour ACAO, Hxp7 est conservé comme contexte de republication et non comme acteur d'intrusion confirmé.
-
-```mermaid
-flowchart LR
-    KS["killsec - 3"] --> SUM["Afrique du Sud - Sumitomo Rubber"]
-    KS --> EFI["Kenya - EFI Sales"]
-    KS --> BRI["Nigeria - Briatek"]
-    RH["ransomhub - 2"] --> KEN["Soudan - Kenana Sugar"]
-    RH --> PPO["Afrique du Sud - PPOTTS"]
-    SEN["Sentap - 2"] --> PH["Burkina Faso - portail santé publique"]
-    SEN --> COVID["Burkina Faso - système COVID-19"]
-    UNK["Unknown - 2"] --> SABS["Afrique du Sud - SABS"]
-    UNK --> ACAO["Maroc - ACAO"]
-```
-
-## 4. Analyse détaillée
-
-### 4.1 Ransomware - 12 fiches
-
-Le corpus ransomware corrigé contient douze fiches. Dix des onze publications ransomware d'origine restent des revendications non vérifiées à faible confiance, sans élément DFIR public établissant un chiffrement, un vecteur d'accès ou l'étendue d'une exfiltration.
-
-**Sumitomo Rubber South Africa** dispose d'éléments beaucoup plus solides. AFRINTEL a examiné une archive locale d'environ **239 600 fichiers PDF, soit environ 23 Go non compressés**, contenant des relevés de comptes clients à l'identité de l'entreprise et des références de transactions liées à SAP. Le matériel soutient fortement une compromission réelle et importante de données internes avec un niveau `Very High`. Il n'établit pas indépendamment le mécanisme d'accès initial ni l'ensemble des comportements ransomware associés à la publication de l'acteur.
-
-**SABS** présente une preuve encore plus forte sur un autre plan, puisque l'impact ransomware est officiellement confirmé. Des sources gouvernementales et parlementaires indiquent que les systèmes ont été chiffrés, que des données nécessaires aux travaux d'audit sont devenues inaccessibles, que le reporting financier a été retardé, que des machines virtuelles et applications ont dû être largement reconstruites et que des éléments d'audit ultérieurs décrivent un arrêt complet des applications métier avec une reprise prolongée. L'attaquant reste `Unknown` et aucun nombre d'enregistrements touchés, montant de perte ou volume de données exfiltrées n'est établi dans les sources officielles examinées.
-
-### 4.2 Data Leak - 2 fiches
-
-**ACAO** est une republication d'une revendication antérieure de compromission de base mentionnant environ **800 fichiers**. Aucun échantillon n'était visible dans la publication de novembre observée ; l'authenticité, le périmètre et la date d'origine restent donc non résolus. Hxp7 reste documenté comme contexte de republication et non comme acteur d'intrusion.
-
-**PPOTTS** comporte huit captures examinées montrant des documents sensibles, notamment du matériel éducatif, de pathologie et d'identification. L'échantillon justifie l'enregistrement d'une exposition publiée, mais les captures ne permettent pas d'établir si les documents proviennent directement de PPOTTS, d'un environnement client, d'un système tiers ou d'un dataset plus large.
-
-### 4.3 Access Sale - 2 fiches
-
-Les deux Access Sale concernent des systèmes publics de santé au Burkina Faso et sont attribués à **Sentap**.
-
-L'offre visant un portail général de santé publique ne fournit ni domaine vérifiable, ni preuve technique d'accès, ni échantillon ; elle reste à confiance `Low`.
-
-Le système de gestion des données COVID-19 dispose de captures montrant des indicateurs de tableau de bord, des synthèses de vaccination et un historique de résultats, avec environ **3,795 millions d'enregistrements revendiqués**. L'échantillon soutient l'existence d'un environnement de type tableau de bord, mais n'établit ni la validité actuelle de l'accès vendu, ni l'authenticité ou l'exhaustivité de tous les enregistrements, ni l'utilisation de cet accès par un acheteur.
-
-Les deux offres restent séparées car les éléments fournis ne démontrent pas qu'il s'agit du même système.
-
-## 5. Principaux constats et lacunes
-
-- Le corpus corrigé de novembre passe de **15 à 16 fiches** après l'ajout de SABS.
-- Les Ransomware passent de **11 à 12**, et SABS renforce fortement la maturité de preuve du mois puisque le chiffrement et la perturbation opérationnelle sont officiellement confirmés.
-- L'Afrique du Sud devient le premier pays avec **3 fiches**.
-- Trois régions comptent désormais quatre fiches : Afrique de l'Est, Afrique de l'Ouest et Afrique australe.
-- Sumitomo Rubber fournit une preuve forte par échantillon d'une compromission interne ; SABS fournit une confirmation officielle forte de l'impact ransomware.
-- Les deux Access Sale du Burkina Faso exigent une vérification de la validité actuelle des accès avant toute conclusion sur leur exploitation.
-- La provenance des échantillons PPOTTS reste non résolue.
-- ACAO correspond à une republication et ne doit pas être présenté comme une nouvelle intrusion datée de novembre.
-- Les vecteurs d'accès, l'identité de l'attaquant SABS et l'étendue d'une éventuelle exfiltration restent des lacunes majeures.
-
-## 6. Cartographie MITRE ATT&CK contextuelle
-
-| Qualification | Technique | Utilisation défensive |
 |---|---|---|
-| Observé pour SABS | T1486 - Data Encrypted for Impact | Le chiffrement des systèmes est officiellement confirmé pour SABS. |
-| Préventif | T1490 - Inhibit System Recovery | Surveiller les suppressions de sauvegardes et modifications des mécanismes de reprise ; ce comportement n'est pas établi comme observé chez SABS. |
-| Hypothèse | T1078 - Valid Accounts | Scénario à examiner pour les ventes d'accès ; non observé dans les éléments fournis. |
-| Préventif | T1567 - Exfiltration Over Web Service | Surveiller les transferts sortants inhabituels ; canaux non établis. |
+| Industrie / Fabrication | 3 | 20,0 % |
+| Services professionnels / Business | 2 | 13,3 % |
+| Gouvernement / Administration | 2 | 13,3 % |
+| Santé / Médical | 2 | 13,3 % |
+| Technologie / IT | 2 | 13,3 % |
+| Finance / Banque | 2 | 13,3 % |
+| Éducation / Université | 1 | 6,7 % |
+| Agriculture / Agro-industrie | 1 | 6,7 % |
 
-## 7. Recommandations
+## 7. Acteurs / groupes
 
-- Pour les incidents ransomware confirmés comparables à SABS, conserver séparément les preuves de chiffrement, données indisponibles, reconstruction, reprise et toute éventuelle preuve ultérieure d'exfiltration.
-- Les systèmes publics de santé doivent vérifier rapidement si les accès proposés sont encore valides, faire tourner les identifiants privilégiés concernés si l'exposition est confirmée et corréler les sessions administratives récentes.
-- Les administrations fiscales et assureurs doivent renforcer la surveillance des accès privilégiés, les contrôles des dépôts documentaires et la détection des exports anormaux.
-- Les organisations industrielles doivent segmenter l'IT d'entreprise, les environnements de production et les accès prestataires, puis tester la restauration depuis des sauvegardes isolées.
-- Pour toute publication criminelle, conserver la chronologie des revendications et ne pas transformer un volume annoncé ou une attribution en fait confirmé sans preuve correspondante.
+| Acteur / Groupe | Fiches | Part |
+|---|---|---|
+| killsec | 3 | 20,0 % |
+| ransomhub | 2 | 13,3 % |
+| Sentap | 2 | 13,3 % |
+| hellcat | 1 | 6,7 % |
+| akira | 1 | 6,7 % |
+| moneymessage | 1 | 6,7 % |
+| Unknown | 1 | 6,7 % |
+| lockbit3 | 1 | 6,7 % |
+| raworld | 1 | 6,7 % |
+| fog | 1 | 6,7 % |
+| spacebears | 1 | 6,7 % |
 
-## 8. Chronologie
+## 8. Maturité des preuves
+
+| Position de preuve | Fiches | Part |
+|---|---|---|
+| Claim - Unverified | 11 | 73,3 % |
+| Claim - Data Sample Published | 3 | 20,0 % |
+| Confirmed | 1 | 6,7 % |
+
+### Confiance
+
+| Confiance | Fiches | Part |
+|---|---|---|
+| Low | 11 | 73,3 % |
+| Very High | 2 | 13,3 % |
+| Medium | 2 | 13,3 % |
+
+## 9. Chronologie
 
 ```mermaid
 timeline
     title AFRINTEL - Novembre 2024
-    02 Novembre : killsec - Sumitomo Rubber South Africa
-    04 Novembre : hellcat - College of Business Education
-                : ransomhub - Kenana Sugar Company
-    12 Novembre : Unknown - republication ACAO
-    14 Novembre : akira - Environmental Design International
-    17 Novembre : moneymessage - Egyptian Tax Authority
-    20-21 Novembre : Unknown - SABS, divergence de date officielle
-    24 Novembre : killsec - EFI Sales
-    27 Novembre : lockbit3 - Habesha Cement
-                : raworld - Contrack Facilities Management
-    28 Novembre : Sentap - portail santé publique Burkina Faso
-                : Sentap - système de gestion COVID-19
-                : killsec - Briatek
-                : fog - Chanas Assurances
-    29 Novembre : spacebears - Namforce Life Insurance
-                : ransomhub - PPOTTS
+    2 Novembre 2024 : Sumitomo Rubber South Africa
+- **Acteur / Groupe -** killsec
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [srigroup.co.za](https -//www.srigroup.co.za)
+- **Statut -** Claim - Data Sample Published
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Description victime -** Sumitomo Rubber South Africa est une entreprise de fabrication de pneumatiques opérant en Afrique du Sud et liée au groupe Sumitomo Rubber Industries.
+- **Analyse -** AFRINTEL a examiné un échantillon local de l'archive associée à cette revendication, comprenant environ 239 600 fichiers PDF individuels (soit environ 23 Go non compressés), chacun nommé par un UUID aléatoire plutôt que par un nom de fichier d'origine. Les fichiers examinés par AFRINTEL sont des relevés de compte clients authentiques émis à en-tête de Sumitomo Rubber South Africa (Pty) Ltd, spécifiquement sa division « Export DQC - Africa East (USD) », listant l'historique des transactions par compte (références de facture SAP, dates, montants crédités et soldes courants) rattaché à un numéro de compte nommé et à un contact commercial export nommé, avec une adresse email au domaine srigroup.co.za. La cohérence de l'en-tête d'entreprise, des noms de contacts réels et de la numérotation des factures liée à SAP dans l'échantillon examiné, ainsi que le volume très important et le schéma de nommage par UUID cohérent avec un export en masse depuis une archive de gestion documentaire ou un ERP, soutiennent une évaluation à très haute confiance d'une compromission réelle et à grande échelle. Compte tenu de l'ampleur de l'archive et de sa couverture des comptes clients export de l'entreprise à l'échelle du continent, cet incident présente un risque de fraude à la facture à grande échelle, de compromission de messagerie professionnelle et d'exposition de renseignement concurrentiel s'étendant à la clientèle export de Sumitomo Rubber South Africa sur le continent. AFRINTEL ne reproduit aucun numéro de compte, nom de contact, adresse email, référence de facture ni montant financier issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve -** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
+    4 Novembre 2024 : College of Business Education (CBE)
+- **Acteur / Groupe -** hellcat
+- **Secteur -** Education / University
+- **Site web -** [cbe.ac.tz](https -//www.cbe.ac.tz)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Le College of Business Education (CBE) est un établissement tanzanien d'enseignement supérieur proposant des formations en commerce, gestion, comptabilité et domaines professionnels associés.
+
+----------------------------
+    4 Novembre 2024 : Kenana Sugar Company
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Agriculture / Agribusiness
+- **Site web -** [kenanasugarcompany.com](https -//www.kenanasugarcompany.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Kenana Sugar Company est un important complexe agro-industriel soudanais spécialisé dans la culture de la canne à sucre, la production de sucre et les activités agricoles et industrielles associées.
+
+----------------------------
+    14 Novembre 2024 : Environmental Design International
+- **Acteur / Groupe -** akira
+- **Secteur -** Professional / Business Services
+- **Site web -** [environmentaldesigninternational.com](http -//environmentaldesigninternational.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Environmental Design International est une entreprise nigériane d'ingénierie et de conseil ; la revendication mentionnait des documents d'ingénierie, financiers et personnels.
+
+----------------------------
+    17 Novembre 2024 : Egyptian Tax Authority (ETA)
+- **Acteur / Groupe -** moneymessage
+- **Secteur -** Government / Administration
+- **Site web -** [eta.gov.eg](https -//www.eta.gov.eg)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** L'Egyptian Tax Authority (ETA) est l'administration fiscale publique égyptienne chargée de la collecte des impôts, de la conformité, des services aux contribuables et de la gestion fiscale.
+
+----------------------------
+    20-21 Novembre 2024 - les sources officielles divergent d'un jour : South African Bureau of Standards (SABS)
+- **Date de l'incident -** 20-21 novembre 2024 - les sources officielles divergent d'un jour
+- **Date de publication initiale -** Divulgation officielle rétrospective ; première date publique exacte non établie dans les sources examinées
+- **Date de correction AFRINTEL -** 23 août 2026
+- **Acteur / Groupe -** Unknown
+- **Secteur -** Government / Administration
+- **Site web -** [sabs.co.za](https -//www.sabs.co.za/)
+- **Statut -** Government Confirmed
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Very High
+- **Niveau d'impact -** Level 4
+- **Note de divergence de date -** Une présentation officielle du SABS date l'incident du 20 novembre 2024, tandis qu'une lettre ministérielle ultérieure au Parlement indique le 21 novembre 2024. AFRINTEL conserve la plage de dates au lieu de choisir arbitrairement un seul jour.
+- **Description victime -** Le SABS est l'organisme national sud-africain de normalisation, chargé notamment du développement des normes, des essais, de la certification et de services associés.
+- **Analyse -** Des documents officiels sud-africains et parlementaires confirment que le SABS a subi en novembre 2024 une attaque ransomware ayant chiffré ses systèmes d'information et provoqué d'importantes perturbations opérationnelles. L'environnement chiffré a empêché l'accès aux données nécessaires aux travaux d'audit, retardé le reporting financier et nécessité une reconstruction importante des machines virtuelles et applications. Des éléments d'audit ultérieurs décrivent un arrêt complet des applications métier et une reprise prolongée. L'attaquant n'est pas identifié dans les sources officielles examinées. Aucun montant de perte financière, nombre d'enregistrements touchés ou volume confirmé de données exfiltrées n'est établi dans le matériel examiné.
+- **Qualification de la preuve -** Le chiffrement et la perturbation opérationnelle sont confirmés par des sources gouvernementales. L'identité de l'attaquant, le vecteur d'accès initial et une éventuelle exfiltration de données restent non établis.
+- **Sources publiques -** [the dtic / présentation SABS](https -//www.thedtic.gov.za/wp-content/uploads/Revised-SABS-Allegations-against-the-SABS.pdf) | [Lettre parlementaire](https -//www.parliament.gov.za/storage/app/media/Docs/atc/01ls62wgbe2fcfr3dgmfh2s7hbu5b7hej4.pdf)
+
+----------------------------
+    24 Novembre 2024 : EFI Sales
+- **Acteur / Groupe -** killsec
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [efisales.co.ke](https -//www.efisales.co.ke)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** EFI Sales est une entreprise basée au Kenya dans le secteur de la distribution, associée à la fourniture d'équipements industriels et services connexes.
+
+----------------------------
+    27 Novembre 2024 : Habesha Cement
+- **Acteur / Groupe -** lockbit3
+- **Secteur -** Manufacturing / Industry
+- **Site web -** [habeshacement.com](https -//www.habeshacement.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Habesha Cement est une cimenterie éthiopienne fondée en 2008, spécialisée dans la production de ciment et de matériaux de construction pour les infrastructures et le secteur immobilier.
+
+----------------------------
+    27 Novembre 2024 : Contrack Facilities Management
+- **Acteur / Groupe -** raworld
+- **Secteur -** Professional / Business Services
+- **Site web -** [contrackfm.com](https -//www.contrackfm.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Contrack Facilities Management est une société égyptienne de facility management fournissant des services de maintenance, d'exploitation et de support pour les bâtiments et sites d'entreprise.
+
+----------------------------
+    28 Novembre 2024 : Portail du système de santé publique du Burkina Faso
+- **Acteur / Groupe -** Sentap
+- **Secteur -** Healthcare / Medical
+- **Site web -** Not specified
+- **Statut -** Claim - Unverified
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Access Sale
+- **Description -** Une publication décrit un portail public burkinabè qui pourrait gérer les informations du personnel de santé, le suivi des services sanitaires, les campagnes de vaccination, la planification des ressources et les communications internes.
+- **Analyse -** La publication présente des fonctions potentielles et des catégories de données, mais ne fournit ni domaine vérifiable, ni preuve technique d’accès, ni échantillon. AFRINTEL l’enregistre comme une revendication non vérifiée de vente d’accès attribuée à Sentap. Un lien possible avec le système COVID-19 publié plus tard reste non démontré.
+
+----------------------------
+    28 Novembre 2024 : Système gouvernemental de gestion des données COVID-19
+- **Acteur / Groupe -** Sentap
+- **Secteur -** Healthcare / Medical
+- **Site web -** Not specified
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Access Sale
+- **Description -** Une publication présente un tableau de bord gouvernemental burkinabè de gestion des données COVID-19 couvrant les résultats PCR/TDR, les vaccinations et les historiques.
+- **Analyse -** Les captures montrent des indicateurs, des synthèses de vaccination et une interface historique, avec un total revendiqué d’environ 3,795 millions d’enregistrements. Le domaine, la provenance, l’exhaustivité et l’authenticité ne sont pas vérifiés indépendamment. AFRINTEL ne reproduit aucun enregistrement personnel. Cette revendication reste séparée du portail de santé publique.
+
+----------------------------
+    28 Novembre 2024 : Briatek
+- **Acteur / Groupe -** killsec
+- **Secteur -** Technology / IT
+- **Site web -** [briatek.com.ng](https -//www.briatek.com.ng)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 2
+- **Description victime -** Briatek est une entreprise technologique nigériane spécialisée dans le conseil informatique, l'intégration logicielle et les solutions numériques pour les organisations.
+
+----------------------------
+    28 Novembre 2024 : Chanas Assurances S.A.
+- **Acteur / Groupe -** fog
+- **Secteur -** Finance / Banking
+- **Site web -** [chanasassurances.com](https -//www.chanasassurances.com)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Chanas Assurances S.A. est une société camerounaise d'assurance opérant dans le secteur des services d'assurance.
+
+----------------------------
+    29 Novembre 2024 : Namforce Life Insurance
+- **Acteur / Groupe -** spacebears
+- **Secteur -** Finance / Banking
+- **Site web -** [namforce.com.na](https -//www.namforce.com.na)
+- **Statut -** Claim - Unverified
+- **Type d'incident -** Ransomware
+- **Niveau de confiance -** Low
+- **Niveau d'impact -** Level 3
+- **Description victime -** Namforce Life Insurance est une société namibienne spécialisée dans les produits d'assurance-vie, de protection financière et de gestion des risques pour les particuliers et les organisations.
+
+----------------------------
+    29 Novembre 2024 : PPOTTS
+- **Acteur / Groupe -** ransomhub
+- **Secteur -** Technology / IT
+- **Site web -** [ppotts.com](https -//www.ppotts.com)
+- **Statut -** Claim - Data Sample Published
+- **Niveau de confiance -** Medium
+- **Niveau d'impact -** Level 3
+- **Type d'incident -** Data Leak
+- **Analyse -** AFRINTEL a examiné huit captures d’écran issues de l’ensemble de preuves de RansomHub. Les éléments visibles comprennent un certificat du Uganda National Examinations Board, des résultats de laboratoire de pathologie sud-africains et des formulaires de divulgation de données d’identification contenant des informations sur des candidats et des entreprises. Le caractère sensible des documents est établi, mais les captures ne permettent pas de déterminer s’ils proviennent directement de PPOTTS, d’un environnement client, d’un système tiers ou d’un jeu de données plus large. Les éléments justifient l’enregistrement d’un échantillon publié, tout en maintenant l’attribution et la provenance des données sous analyse. AFRINTEL ne reproduit aucun nom, numéro d’identité, résultat médical ni coordonnée.
+- **Description victime -** PPOTTS est une entreprise technologique sud-africaine opérant dans les logiciels, services numériques ou solutions technologiques d'entreprise.
+
+----------------------------
 ```
 
-## 9. Conclusion
+## 10. Analyse CTI par type
 
-Novembre 2024 se clôt sur **16 fiches incident documentées dans 11 pays africains**, réparties entre **12 Ransomware, 2 Data Leak et 2 Access Sale**. Par rapport à octobre, le corpus mensuel corrigé passe de 12 à 16 fiches, soit une hausse de **33,3 %**. Les Ransomware passent de 8 à 12, les Data Leak reculent de 4 à 2 et les Access Sale apparaissent avec deux fiches.
+### Ransomware - 12
 
-L'ajout de SABS modifie davantage la lecture analytique du mois que le simple total. Il introduit l'un des incidents ransomware les mieux confirmés opérationnellement du corpus 2024. Contrairement à un simple listing sur leak site, le dossier SABS repose sur des éléments officiels confirmant le chiffrement des systèmes, l'impossibilité d'accéder à certaines informations nécessaires aux activités d'audit, le retard du reporting financier, des opérations importantes de reconstruction et une reprise prolongée des applications métier. Dans le même temps, les sources ne permettent pas d'identifier l'attaquant, d'établir le vecteur d'accès initial ni de confirmer un volume de données exfiltrées. Il est donc essentiel de ne pas étendre une forte confirmation de l'impact opérationnel vers une attribution ou une perte de données non démontrée.
+**12 fiche(s) (80,0 %).** Principaux pays : Afrique du Sud (2), Nigeria (2), Égypte (2). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-Sumitomo Rubber South Africa présente un autre profil de preuve, tout aussi important. L'archive locale examinée soutient fortement une compromission de données internes et montre une exposition potentielle de documents liés aux comptes et transactions des relations export. Pourtant, cet échantillon ne valide pas automatiquement l'ensemble des mécanismes ransomware revendiqués par l'acteur. Novembre réunit donc à la fois **un impact ransomware officiellement confirmé** et **une compromission fortement étayée par des échantillons**, à côté de nombreuses revendications criminelles encore faiblement documentées.
+### Access Sale - 2
 
-Les deux Access Sale ajoutent une troisième dimension. Elles concernent des environnements publics de santé au Burkina Faso, dont un tableau de bord avec environ 3,795 millions d'enregistrements revendiqués. Leur importance opérationnelle tient au fait qu'un accès privilégié réellement valide peut représenter un risque immédiat. Toutefois, aucune des publications ne prouve que l'accès était encore valide au moment de la collecte, qu'il a été acheté ou qu'il a servi à exfiltrer des données. La priorité doit donc être la validation interne et non l'hypothèse automatique d'exploitation.
+**2 fiche(s) (13,3 %).** Principaux pays : Burkina Faso (2). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-Géographiquement, le corpus corrigé reste très dispersé : 11 pays sont représentés, l'Afrique du Sud arrive en tête avec trois fiches, et l'Afrique de l'Est, l'Afrique de l'Ouest et l'Afrique australe comptent chacune quatre incidents. Cette répartition ne permet pas de défendre l'hypothèse d'une campagne régionale unique. Sur le plan sectoriel, Manufacturing / Industry reste premier avec trois fiches, tandis que Government / Administration, Finance / Banking, Healthcare / Medical, Professional / Business Services et Technology / IT en comptent deux chacun.
+### Data Leak - 1
 
-La lecture CTI la plus défendable est donc que novembre associe **une hausse de la visibilité ransomware, quelques dossiers présentant une maturité de preuve exceptionnellement forte et l'émergence d'un risque de vente d'accès visant des systèmes de santé publique**. La hiérarchie de preuve compte davantage que le total brut : SABS est confirmé par des sources gouvernementales, Sumitomo est fortement soutenu par un échantillon, les offres d'accès du Burkina Faso restent non vérifiées ou partiellement échantillonnées et de nombreuses autres fiches ransomware demeurent des revendications sans DFIR public. AFRINTEL doit continuer à suivre chaque incident selon son cycle de preuve plutôt que de laisser les seize fiches suggérer un même niveau de certitude de compromission.
+**1 fiche(s) (6,7 %).** Principaux pays : Afrique du Sud (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+
+## 11. Incidents prioritaires pour revue
+
+| Pays | Organisation | Type | Statut | Impact | Confiance |
+|---|---|---|---|---|---|
+| Afrique du Sud | South African Bureau of Standards (SABS)
+- **Date de l'incident:** 20-21 novembre 2024 - les sources officielles divergent d'un jour
+- **Date de publication initiale:** Divulgation officielle rétrospective ; première date publique exacte non établie dans les sources examinées
+- **Date de correction AFRINTEL:** 23 août 2026
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [sabs.co.za](https://www.sabs.co.za/)
+- **Statut:** Government Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Note de divergence de date:** Une présentation officielle du SABS date l'incident du 20 novembre 2024, tandis qu'une lettre ministérielle ultérieure au Parlement indique le 21 novembre 2024. AFRINTEL conserve la plage de dates au lieu de choisir arbitrairement un seul jour.
+- **Description victime:** Le SABS est l'organisme national sud-africain de normalisation, chargé notamment du développement des normes, des essais, de la certification et de services associés.
+- **Analyse:** Des documents officiels sud-africains et parlementaires confirment que le SABS a subi en novembre 2024 une attaque ransomware ayant chiffré ses systèmes d'information et provoqué d'importantes perturbations opérationnelles. L'environnement chiffré a empêché l'accès aux données nécessaires aux travaux d'audit, retardé le reporting financier et nécessité une reconstruction importante des machines virtuelles et applications. Des éléments d'audit ultérieurs décrivent un arrêt complet des applications métier et une reprise prolongée. L'attaquant n'est pas identifié dans les sources officielles examinées. Aucun montant de perte financière, nombre d'enregistrements touchés ou volume confirmé de données exfiltrées n'est établi dans le matériel examiné.
+- **Qualification de la preuve:** Le chiffrement et la perturbation opérationnelle sont confirmés par des sources gouvernementales. L'identité de l'attaquant, le vecteur d'accès initial et une éventuelle exfiltration de données restent non établis.
+- **Sources publiques:** [the dtic / présentation SABS](https://www.thedtic.gov.za/wp-content/uploads/Revised-SABS-Allegations-against-the-SABS.pdf) | [Lettre parlementaire](https://www.parliament.gov.za/storage/app/media/Docs/atc/01ls62wgbe2fcfr3dgmfh2s7hbu5b7hej4.pdf)
+
+---------------------------- | Ransomware | Government Confirmed | Level 4 | Very High |
+| Afrique du Sud | Sumitomo Rubber South Africa
+- **Acteur / Groupe:** killsec
+- **Secteur:** Manufacturing / Industry
+- **Site web:** [srigroup.co.za](https://www.srigroup.co.za)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Description victime:** Sumitomo Rubber South Africa est une entreprise de fabrication de pneumatiques opérant en Afrique du Sud et liée au groupe Sumitomo Rubber Industries.
+- **Analyse:** AFRINTEL a examiné un échantillon local de l'archive associée à cette revendication, comprenant environ 239 600 fichiers PDF individuels (soit environ 23 Go non compressés), chacun nommé par un UUID aléatoire plutôt que par un nom de fichier d'origine. Les fichiers examinés par AFRINTEL sont des relevés de compte clients authentiques émis à en-tête de Sumitomo Rubber South Africa (Pty) Ltd, spécifiquement sa division « Export DQC - Africa East (USD) », listant l'historique des transactions par compte (références de facture SAP, dates, montants crédités et soldes courants) rattaché à un numéro de compte nommé et à un contact commercial export nommé, avec une adresse email au domaine srigroup.co.za. La cohérence de l'en-tête d'entreprise, des noms de contacts réels et de la numérotation des factures liée à SAP dans l'échantillon examiné, ainsi que le volume très important et le schéma de nommage par UUID cohérent avec un export en masse depuis une archive de gestion documentaire ou un ERP, soutiennent une évaluation à très haute confiance d'une compromission réelle et à grande échelle. Compte tenu de l'ampleur de l'archive et de sa couverture des comptes clients export de l'entreprise à l'échelle du continent, cet incident présente un risque de fraude à la facture à grande échelle, de compromission de messagerie professionnelle et d'exposition de renseignement concurrentiel s'étendant à la clientèle export de Sumitomo Rubber South Africa sur le continent. AFRINTEL ne reproduit aucun numéro de compte, nom de contact, adresse email, référence de facture ni montant financier issu du matériel examiné.
+
+----------------------------
+
+- **Qualification de la preuve:** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée. | Ransomware | Claim - Data Sample Published | Level 4 | Very High |
+| Burkina Faso | Système gouvernemental de gestion des données COVID-19
+- **Acteur / Groupe:** Sentap
+- **Secteur:** Healthcare / Medical
+- **Site web:** Not specified
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Access Sale
+- **Description:** Une publication présente un tableau de bord gouvernemental burkinabè de gestion des données COVID-19 couvrant les résultats PCR/TDR, les vaccinations et les historiques.
+- **Analyse:** Les captures montrent des indicateurs, des synthèses de vaccination et une interface historique, avec un total revendiqué d’environ 3,795 millions d’enregistrements. Le domaine, la provenance, l’exhaustivité et l’authenticité ne sont pas vérifiés indépendamment. AFRINTEL ne reproduit aucun enregistrement personnel. Cette revendication reste séparée du portail de santé publique.
+
+---------------------------- | Access Sale | Claim - Data Sample Published | Level 3 | Medium |
+| Afrique du Sud | PPOTTS
+- **Acteur / Groupe:** ransomhub
+- **Secteur:** Technology / IT
+- **Site web:** [ppotts.com](https://www.ppotts.com)
+- **Statut:** Claim - Data Sample Published
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Type d'incident:** Data Leak
+- **Analyse:** AFRINTEL a examiné huit captures d’écran issues de l’ensemble de preuves de RansomHub. Les éléments visibles comprennent un certificat du Uganda National Examinations Board, des résultats de laboratoire de pathologie sud-africains et des formulaires de divulgation de données d’identification contenant des informations sur des candidats et des entreprises. Le caractère sensible des documents est établi, mais les captures ne permettent pas de déterminer s’ils proviennent directement de PPOTTS, d’un environnement client, d’un système tiers ou d’un jeu de données plus large. Les éléments justifient l’enregistrement d’un échantillon publié, tout en maintenant l’attribution et la provenance des données sous analyse. AFRINTEL ne reproduit aucun nom, numéro d’identité, résultat médical ni coordonnée.
+- **Description victime:** PPOTTS est une entreprise technologique sud-africaine opérant dans les logiciels, services numériques ou solutions technologiques d'entreprise.
+
+---------------------------- | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
+| Tanzanie | College of Business Education (CBE)
+- **Acteur / Groupe:** hellcat
+- **Secteur:** Education / University
+- **Site web:** [cbe.ac.tz](https://www.cbe.ac.tz)
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** Le College of Business Education (CBE) est un établissement tanzanien d'enseignement supérieur proposant des formations en commerce, gestion, comptabilité et domaines professionnels associés.
+
+---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |
+
+> Sélection structurée selon impact, statut et confiance ; ce n'est pas un classement absolu de gravité.
+
+## 12. Intelligence gaps et corrections
+
+**ACAO :** le post du 12 novembre est explicitement marqué `[REPOST]`. Il reste une observation CTI mais n’ajoute aucune nouvelle fiche au total de novembre.
+
+- vecteur d'accès initial souvent inconnu ;
+- date technique de compromission parfois différente de la date de publication ;
+- volumes revendiqués rarement vérifiables intégralement ;
+- attribution technique souvent limitée au compte de publication ;
+- republications historiques suivies séparément.
+
+## 13. Recommandations
+
+- MFA résistante au phishing, PAM et moindre privilège ;
+- segmentation, sauvegardes immuables et tests de restauration ;
+- centralisation EDR/IAM/VPN/WAF/DNS/cloud/applications ;
+- détection des exports massifs, archives inhabituelles et transferts sortants ;
+- conservation séparée des dates d'incident, publication initiale, repost et découverte AFRINTEL.
+
+## 14. Conclusion
+
+Novembre 2024 contient **15 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+
+👉🏾 [Victimes canoniques](./victims_FR.md)
 
 **AFRINTEL** - TLP:CLEAR

@@ -1,25 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
+# Cyberincidents AFRINTEL - Septembre 2024 - corpus canonique (6 fiches)
 
-# Cyberattaques en Afrique - Septembre 2024 : Liste de 5 victimes
+👉🏾 [English version](./victims.md)
 
-👉🏾 [**English version available here**](./victims.md)
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Septembre 2024
-
-## Synthèse mensuelle
-
-Septembre 2024 contient **5 fiches incident documentées** : **4 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **5 pays africains**.
-
-La fiche Nigerian Navy correspond à une observation de septembre 2024 d'un contenu dont la source revendique une date de fuite au **8 novembre 2020**. Elle est conservée comme fiche de circulation de données en septembre et non comme une nouvelle intrusion de septembre 2024.
 
 ### 6 Septembre 2024
 
 #### 🇸🇳 Sénégal - Sesam Informatics
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Technology / IT
 - **Site web:** [sesam-informatics.com](https://www.sesam-informatics.com)
 - **Statut:** Claim - Unverified
@@ -32,29 +21,10 @@ La fiche Nigerian Navy correspond à une observation de septembre 2024 d'un cont
 
 ----------------------------
 
-### 7 Septembre 2024
-
-#### 🇳🇬 Nigeria - Nigerian Navy (navy.mil.ng)
-- **Acteur / Groupe:** Unknown
-- **Contexte source:** NizaarFarah est le compte source affiché dans la publication du 7 septembre ; cela n'établit ni l'attribution de l'intrusion ni l'identité du compte au-delà de la publication observée.
-- **Secteur:** Defense / Security
-- **Site web:** https://navy.mil.ng
-- **Date de publication de la source:** 7 septembre 2024
-- **Date de fuite revendiquée:** 8 novembre 2020
-- **Statut:** Claim - Data Sample Published
-- **Type d'incident:** Data Leak
-- **Niveau de confiance:** Medium
-- **Niveau d'impact:** Level 4
-- **Description victime:** La Nigerian Navy est la branche navale des forces armées nigérianes.
-- **Note de preuve:** La capture fournie revendique des centaines de fichiers confidentiels et 1 200 identifiants e-mail, avec environ 300 fichiers et une archive annoncée à 228,4 Mo. Elle montre des échantillons de documents et d'équipements, mais AFRINTEL n'a pas collecté ni reproduit les fichiers ou identifiants sous-jacents.
-- **Analyse:** La source date explicitement la fuite revendiquée du **8 novembre 2020**. AFRINTEL traite donc son apparition en septembre 2024 comme une nouvelle observation ou une remise en circulation d'un matériel ancien, et non comme la preuve d'une nouvelle compromission en septembre 2024. La capture soutient l'existence d'une publication montrant des échantillons de documents et d'équipements, mais ne permet pas d'établir l'authenticité, l'exhaustivité, la validité actuelle ou la provenance complète du matériel annoncé. Les 1 200 identifiants e-mail, environ 300 fichiers et 228,4 Mo restent des volumes revendiqués par la source.
-
-----------------------------
-
 ### 12 Septembre 2024
 
 #### 🇨🇲 Cameroun - CNPS Cameroun
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Government / Administration
 - **Site web:** [cnps.cm](https://www.cnps.cm)
 - **Statut:** Claim - Unverified
@@ -70,7 +40,7 @@ La fiche Nigerian Navy correspond à une observation de septembre 2024 d'un cont
 ### 15 Septembre 2024
 
 #### 🇲🇺 Maurice - Emtel
-- **Groupe ransomware:** arcusmedia
+- **Acteur / Groupe:** arcusmedia
 - **Secteur:** Telecommunications
 - **Site web:** [emtel.com](https://www.emtel.com)
 - **Statut:** Claim - Unverified
@@ -83,10 +53,29 @@ La fiche Nigerian Navy correspond à une observation de septembre 2024 d'un cont
 
 ----------------------------
 
+### 15 Septembre 2024
+
+#### 🇦🇴 Angola - TAAG - Linhas Aéreas de Angola
+- **Date de l'incident:** 15 Septembre 2024
+- **Date de publication initiale / source retenue:** 16 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Aviation
+- **Site web:** [taag.com](https://www.taag.com/)
+- **Statut:** Authority Confirmed
+- **Type d'incident:** Ransomware
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 4
+- **Analyse:** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.
+- **Sources publiques:** [Agência de Protecção de Dados](https://apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https://www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https://pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)
+
+----------------------------
+
 ### 16 Septembre 2024
 
 #### 🇹🇳 Tunisie - Excelplast Tunisie
-- **Groupe ransomware:** orca
+- **Acteur / Groupe:** orca
 - **Secteur:** Manufacturing / Industry
 - **Site web:** [excelplastunisie.com](https://www.excelplastunisie.com)
 - **Statut:** Claim - Unverified
@@ -99,7 +88,21 @@ La fiche Nigerian Navy correspond à une observation de septembre 2024 d'un cont
 
 ----------------------------
 
-## ✍🏿 Auteur
-*Adama ASSIONGBON*  
-*Consultant SOC & Cyber Threat Intelligence*  
-[Profil LinkedIn](https://www.linkedin.com/in/adama-assiongbon-3bb941193/)
+### 28 Septembre 2024
+
+#### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)
+- **Date de l'incident:** 28 Septembre 2024
+- **Date de publication initiale / source retenue:** 30 septembre 2024
+- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif
+- **Précision chronologique:** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.
+- **Acteur / Groupe:** Unknown
+- **Secteur:** Government / Administration
+- **Site web:** [cne.org.mz](https://www.cne.org.mz/)
+- **Statut:** Victim Confirmed
+- **Type d'incident:** System Intrusion
+- **Niveau de confiance:** Very High
+- **Niveau d'impact:** Level 3
+- **Analyse:** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.
+- **Sources publiques:** [Club of Mozambique](https://clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https://www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
+
+----------------------------

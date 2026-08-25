@@ -1,26 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Attempted%20Attack-red)
+# Cyberincidents AFRINTEL - Août 2024 - corpus canonique (16 fiches)
 
-# Cyberattaques en Afrique - Août 2024 : 16 fiches documentées
-👉🏾 [**English version available here**](./victims.md)
+👉🏾 [English version](./victims.md)
 
-## 📅 Août 2024
+> Ce fichier contient uniquement les incidents retenus dans les statistiques canoniques 2024. Les découvertes historiques, republications, doublons et dossiers à chronologie non résolue sont conservés séparément à la racine 2024.
 
-## Synthèse mensuelle
-
-Août 2024 contient **16 fiches cyber documentées dans 9 pays africains**.
-
-- **15 fiches relèvent de la taxonomie AFRINTEL à six types :** 14 Ransomware + 1 Data Leak.
-- **1 tentative d'attaque supplémentaire confirmée par la victime est suivie séparément :** GTBank, Nigeria.
-- Aucun Access Sale, DDoS, Defacement ou Operational Fraud n'est présent dans la taxonomie principale d'août.
-
-La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayée.
 
 ### 01 Août 2024
 
 #### 🇸🇨 Seychelles - Remitano
-- **Groupe ransomware:** meow
+- **Acteur / Groupe:** meow
 - **Secteur:** Finance / Banking
 - **Site web:** [remitano.com](https://www.remitano.com)
 - **Statut:** Claim - Unverified
@@ -46,7 +34,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 11 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Acdcexpress
-- **Groupe ransomware:** lockbit3
+- **Acteur / Groupe:** lockbit3
 - **Secteur:** Retail / E-commerce
 - **Site web:** [acdcexpress.com](https://www.acdcexpress.com)
 - **Statut:** Claim - Unverified
@@ -72,7 +60,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 13 Août 2024
 
 #### 🇿🇼 Zimbabwe - Netone
-- **Groupe ransomware:** hunters
+- **Acteur / Groupe:** hunters
 - **Secteur:** Telecommunications
 - **Site web:** [netone.co.zw](https://www.netone.co.zw)
 - **Statut:** Claim - Unverified
@@ -98,7 +86,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 13 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Lenmed
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Healthcare / Medical
 - **Site web:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut:** Claim - Unverified
@@ -127,7 +115,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 13 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Gpf.za
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Finance / Banking
 - **Site web:** [gpf.org.za](https://www.gpf.org.za)
 - **Statut:** Claim - Unverified
@@ -159,11 +147,11 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 - **Acteur / Groupe:** Unknown
 - **Secteur:** Finance / Banking
 - **Site web:** [gtbank.com](https://www.gtbank.com/)
-- **Statut:** Victim Confirmed - Attempted Attack
-- **Type d'incident:** Attempted Attack (taxonomy exception)
+- **Statut:** Attempted - Blocked
+- **Type d'incident:** System Intrusion
 - **Niveau de confiance:** High
 - **Niveau d'impact:** Level 2
-- **Note de taxonomie:** Cette fiche est suivie séparément des six types d'incident principaux d'AFRINTEL. Les éléments disponibles ne permettent pas de la classer comme Ransomware, Data Leak, Access Sale, DDoS, Defacement ou Operational Fraud.
+- **Note de taxonomie:** `Attempted Attack` n'est pas un type AFRINTEL. La tentative isolée de compromission du domaine est classée `System Intrusion` avec le statut `Attempted - Blocked`; aucune compromission de données clients n'a été confirmée.
 - **Note de preuve:** GTBank a confirmé une tentative isolée de compromission de son domaine web. La banque a déclaré que la tentative avait échoué, que le site n'avait pas été cloné et qu'aucune compromission de données clients n'avait eu lieu.
 - **Description victime:** GTBank est une banque commerciale nigériane fournissant des services bancaires aux particuliers, aux entreprises et des services numériques.
 - **Analyse:** GTBank a confirmé une tentative isolée de compromission de son domaine web le 14 août 2024. L'événement a coïncidé avec une indisponibilité temporaire du site et des spéculations publiques selon lesquelles celui-ci aurait été cloné. Selon la banque, la tentative a échoué, le site n'a pas été cloné et les informations clients n'étaient pas stockées sur le site ; aucune compromission de données clients n'a donc été confirmée. AFRINTEL conserve la fiche car la tentative de compromission du domaine et l'impact de disponibilité ont été reconnus par la victime, mais ne transforme pas l'événement en violation réussie et ne lui attribue pas une catégorie des six types sans preuve. L'impact confirmé reste limité à la disponibilité du site/domaine et à la réponse à incident ; la méthode technique d'accès et l'acteur restent inconnus.
@@ -174,7 +162,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 17 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Wwwconfig
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Telecommunications
 - **Site web:** [netconfig.co.za](https://www.netconfig.co.za)
 - **Statut:** Claim - Unverified
@@ -216,7 +204,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 21 Août 2024
 
 #### 🇨🇮 Côte d'Ivoire - Codival
-- **Groupe ransomware:** spacebears
+- **Acteur / Groupe:** spacebears
 - **Secteur:** Retail / E-commerce
 - **Site web:** [codival.ci](https://www.codival.ci)
 - **Statut:** Claim - Unverified
@@ -242,7 +230,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 22 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Don’t waste group
-- **Groupe ransomware:** incransom
+- **Acteur / Groupe:** incransom
 - **Secteur:** Professional / Business Services
 - **Site web:** Not validated from the supplied source
 - **Statut:** Claim - Unverified
@@ -268,7 +256,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 22 Août 2024
 
 #### 🇰🇪 Kenya - Instadriver.co
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Retail / E-commerce
 - **Site web:** [instadriver.co](https://www.instadriver.co)
 - **Statut:** Claim - Unverified
@@ -294,7 +282,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 24 Août 2024
 
 #### 🇸🇨 Seychelles - Ingotbrokers
-- **Groupe ransomware:** darkvault
+- **Acteur / Groupe:** darkvault
 - **Secteur:** Finance / Banking
 - **Site web:** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Statut:** Claim - Unverified
@@ -320,7 +308,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 26 Août 2024
 
 #### 🇿🇦 Afrique du Sud - Onedayonly
-- **Groupe ransomware:** killsec
+- **Acteur / Groupe:** killsec
 - **Secteur:** Retail / E-commerce
 - **Site web:** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Statut:** Claim - Unverified
@@ -346,7 +334,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 28 Août 2024
 
 #### 🇩🇯 Djibouti - Dpfza.gov.dj
-- **Groupe ransomware:** ransomhub
+- **Acteur / Groupe:** ransomhub
 - **Secteur:** Government / Administration
 - **Site web:** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Statut:** Claim - Unverified
@@ -372,7 +360,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 28 Août 2024
 
 #### 🇿🇼 Zimbabwe - Success microfinance bank
-- **Groupe ransomware:** meow
+- **Acteur / Groupe:** meow
 - **Secteur:** Finance / Banking
 - **Site web:** Not validated from the supplied source
 - **Statut:** Claim - Unverified
@@ -398,7 +386,7 @@ La fiche GTBank n'est volontairement pas forcée dans une catégorie non étayé
 ### 28 Août 2024
 
 #### 🇬🇭 Ghana - Ghanare
-- **Groupe ransomware:** BrainCipher
+- **Acteur / Groupe:** BrainCipher
 - **Secteur:** Technology / IT
 - **Site web:** [ghanare.com](https://www.ghanare.com)
 - **Statut:** Claim - Unverified

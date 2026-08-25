@@ -1,26 +1,14 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%7C%20Data%20Leak%20%7C%20Attempted%20Attack-red)
+# AFRINTEL Cyber Incidents - August 2024 - canonical corpus (16 records)
 
-# Cyber Attacks in Africa - August 2024: 16 Documented Records
-👉🏾 [**French version available here**](./victims_FR.md)
+👉🏾 [Version française](./victims_FR.md)
 
-## 📅 August 2024
+> This file contains only incidents retained in canonical 2024 statistics. Historical discoveries, republications, duplicates, and unresolved-chronology cases are preserved separately at the 2024 root.
 
-## Monthly snapshot
-
-August 2024 contains **16 documented cyber records across 9 African countries**.
-
-- **15 records fall inside the six-type AFRINTEL incident taxonomy:** 14 Ransomware + 1 Data Leak.
-- **1 additional victim-confirmed attempted attack is tracked separately:** GTBank, Nigeria.
-- No Access Sale, DDoS, Defacement or Operational Fraud record is present in the core August taxonomy.
-
-The GTBank record is deliberately not forced into an unsupported category.
 
 ### August 1, 2024
 
 #### 🇸🇨 Seychelles - Remitano
-- **Ransomware Group:** meow
+- **Actor / Group:** meow
 - **Sector:** Finance / Banking
 - **Website:** [remitano.com](https://www.remitano.com)
 - **Status:** Claim - Unverified
@@ -46,7 +34,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 11, 2024
 
 #### 🇿🇦 South Africa - Acdcexpress
-- **Ransomware Group:** lockbit3
+- **Actor / Group:** lockbit3
 - **Sector:** Retail / E-commerce
 - **Website:** [acdcexpress.com](https://www.acdcexpress.com)
 - **Status:** Claim - Unverified
@@ -72,7 +60,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 13, 2024
 
 #### 🇿🇼 Zimbabwe - Netone
-- **Ransomware Group:** hunters
+- **Actor / Group:** hunters
 - **Sector:** Telecommunications
 - **Website:** [netone.co.zw](https://www.netone.co.zw)
 - **Status:** Claim - Unverified
@@ -98,7 +86,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 13, 2024
 
 #### 🇿🇦 South Africa - Lenmed
-- **Ransomware Group:** darkvault
+- **Actor / Group:** darkvault
 - **Sector:** Healthcare / Medical
 - **Website:** [lenmed.co.za](https://www.lenmed.co.za)
 - **Status:** Claim - Unverified
@@ -127,7 +115,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 13, 2024
 
 #### 🇿🇦 South Africa - Gpf.za
-- **Ransomware Group:** darkvault
+- **Actor / Group:** darkvault
 - **Sector:** Finance / Banking
 - **Website:** [gpf.org.za](https://www.gpf.org.za)
 - **Status:** Claim - Unverified
@@ -159,11 +147,11 @@ The GTBank record is deliberately not forced into an unsupported category.
 - **Actor / Group:** Unknown
 - **Sector:** Finance / Banking
 - **Website:** [gtbank.com](https://www.gtbank.com/)
-- **Status:** Victim Confirmed - Attempted Attack
-- **Incident type:** Attempted Attack (taxonomy exception)
+- **Status:** Attempted - Blocked
+- **Incident type:** System Intrusion
 - **Confidence level:** High
 - **Impact level:** Level 2
-- **Taxonomy note:** This record is tracked separately from AFRINTEL's six core incident types. The available evidence does not support classifying the event as Ransomware, Data Leak, Access Sale, DDoS, Defacement or Operational Fraud.
+- **Taxonomy note:** `Attempted Attack` is not an AFRINTEL incident type. The isolated domain-compromise attempt is classified as `System Intrusion` with status `Attempted - Blocked`; no customer-data compromise was confirmed.
 - **Evidence note:** GTBank confirmed an isolated attempt to compromise its website domain. The bank stated that the attempt was unsuccessful, the website was not cloned and no customer-data compromise occurred.
 - **Victim Description:** GTBank is a Nigerian commercial bank providing retail, corporate and digital banking services.
 - **Analysis:** GTBank confirmed an isolated attempt to compromise its website domain on 14 August 2024. The event coincided with temporary website disruption and public speculation that the site had been cloned. According to the bank, the attempt failed, the website was not cloned and customer information was not stored on the website; no customer-data compromise was therefore confirmed. AFRINTEL records the event because the attempted domain compromise and availability impact were acknowledged by the victim, but does not convert it into a successful breach or assign an unsupported six-type category. The confirmed impact is limited to website/domain availability and incident response; the technical access method and actor remain unknown.
@@ -174,7 +162,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 17, 2024
 
 #### 🇿🇦 South Africa - Wwwconfig
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Telecommunications
 - **Website:** [netconfig.co.za](https://www.netconfig.co.za)
 - **Status:** Claim - Unverified
@@ -216,7 +204,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 21, 2024
 
 #### 🇨🇮 Ivory Coast - Codival
-- **Ransomware Group:** spacebears
+- **Actor / Group:** spacebears
 - **Sector:** Retail / E-commerce
 - **Website:** [codival.ci](https://www.codival.ci)
 - **Status:** Claim - Unverified
@@ -242,7 +230,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 22, 2024
 
 #### 🇿🇦 South Africa - Don’t waste group
-- **Ransomware Group:** incransom
+- **Actor / Group:** incransom
 - **Sector:** Professional / Business Services
 - **Website:** Not validated from the supplied source
 - **Status:** Claim - Unverified
@@ -268,7 +256,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 22, 2024
 
 #### 🇰🇪 Kenya - Instadriver.co
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Retail / E-commerce
 - **Website:** [instadriver.co](https://www.instadriver.co)
 - **Status:** Claim - Unverified
@@ -294,7 +282,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 24, 2024
 
 #### 🇸🇨 Seychelles - Ingotbrokers
-- **Ransomware Group:** darkvault
+- **Actor / Group:** darkvault
 - **Sector:** Finance / Banking
 - **Website:** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Status:** Claim - Unverified
@@ -320,7 +308,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 26, 2024
 
 #### 🇿🇦 South Africa - Onedayonly
-- **Ransomware Group:** killsec
+- **Actor / Group:** killsec
 - **Sector:** Retail / E-commerce
 - **Website:** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Status:** Claim - Unverified
@@ -346,7 +334,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 28, 2024
 
 #### 🇩🇯 Djibouti - Dpfza.gov.dj
-- **Ransomware Group:** ransomhub
+- **Actor / Group:** ransomhub
 - **Sector:** Government / Administration
 - **Website:** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Status:** Claim - Unverified
@@ -372,7 +360,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 28, 2024
 
 #### 🇿🇼 Zimbabwe - Success microfinance bank
-- **Ransomware Group:** meow
+- **Actor / Group:** meow
 - **Sector:** Finance / Banking
 - **Website:** Not validated from the supplied source
 - **Status:** Claim - Unverified
@@ -398,7 +386,7 @@ The GTBank record is deliberately not forced into an unsupported category.
 ### August 28, 2024
 
 #### 🇬🇭 Ghana - Ghanare
-- **Ransomware Group:** BrainCipher
+- **Actor / Group:** BrainCipher
 - **Sector:** Technology / IT
 - **Website:** [ghanare.com](https://www.ghanare.com)
 - **Status:** Claim - Unverified
