@@ -1,5 +1,7 @@
 # Akira - Profil de l’acteur de menace
 
+👉🏾 [**English version available here**](./akira_profile.md)
+
 **AFRINTEL Threat Actor Intelligence**
 
 - **Acteur / Groupe :** Akira
