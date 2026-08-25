@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -43,8 +43,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--6ffea164-e499-504f-887c-412dafd279fc",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "hunters",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -73,15 +73,16 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Sesam Informatics",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Senegal. Sector: Technologies.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Sénégal. Secteur : Technologies / Développement logiciel.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Senegal. Sector: Technology / IT.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Sénégal. Secteur : Technology / IT.",
       "labels": [
         "afrintel",
         "victim",
-        "senegal"
+        "senegal",
+        "technology"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -103,27 +104,31 @@
       ],
       "x_afrintel_country": "Senegal",
       "x_afrintel_country_fr": "Sénégal",
-      "x_afrintel_organization_fr": "SESAM Informatics",
-      "x_afrintel_sector_raw": "Technologies / Développement logiciel",
-      "x_afrintel_sector_raw_en": "Technologies",
+      "x_afrintel_organization_fr": "Sesam Informatics",
+      "x_afrintel_sector_raw": "Technology / IT",
+      "x_afrintel_sector_raw_en": "Technology / IT",
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md"
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "sectors": [
+        "technology"
+      ]
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL September 2024 incident 01: Sesam Informatics",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Sesam Informatics in Senegal on September 6, 2024. The source actor is listed as hunters. Status: Claim - Unverified. Sector: Technologies. Source summary: Sesam Informatics is a Senegalese technology and software services company operating in digital solutions and IT development.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant SESAM Informatics en Sénégal, à la date du 6 Septembre 2024. L'acteur source est indiqué comme hunters. Statut : Claim - Unverified. Secteur : Technologies / Développement logiciel. Résumé de la source : SESAM Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Sesam Informatics in Senegal on September 6, 2024. The source actor is listed as hunters. Status: Claim - Unverified. Sector: Technology / IT. Source summary: Sesam Informatics is a Senegalese technology and software services company operating in digital solutions and IT development.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Sesam Informatics en Sénégal, à la date du 6 Septembre 2024. L'acteur source est indiqué comme hunters. Statut : Claim - Unverified. Secteur : Technology / IT. Résumé de la source : Sesam Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.",
       "first_seen": "2024-09-06T00:00:00Z",
       "labels": [
         "afrintel",
         "africa",
         "claim-unverified",
         "ransomware",
-        "senegal"
+        "senegal",
+        "technology"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -148,8 +153,8 @@
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Senegal",
       "x_afrintel_country_fr": "Sénégal",
-      "x_afrintel_sector_raw": "Technologies / Développement logiciel",
-      "x_afrintel_sector_raw_en": "Technologies",
+      "x_afrintel_sector_raw": "Technology / IT",
+      "x_afrintel_sector_raw_en": "Technology / IT",
       "x_afrintel_actor": "hunters",
       "x_afrintel_actor_fr": "hunters",
       "x_afrintel_date_display": "6 Septembre 2024",
@@ -163,8 +168,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--2bed23ac-7685-5735-b45e-32c5eedd5005",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
       "target_ref": "threat-actor--6ffea164-e499-504f-887c-412dafd279fc",
@@ -177,8 +182,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--462e8d7d-8f31-5af7-8572-19557028df52",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--6ffea164-e499-504f-887c-412dafd279fc",
       "target_ref": "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
@@ -191,8 +196,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--a59d6292-9f2a-571f-8301-02d892c6bb95",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
       "target_ref": "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
@@ -205,8 +210,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "spacebears",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -235,16 +240,16 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "CNPS Cameroun",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Cameroon. Sector: Government / Social Security.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Cameroun. Secteur : Gouvernement / Sécurité sociale.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Cameroon. Sector: Government / Administration.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Cameroun. Secteur : Government / Administration.",
       "labels": [
         "afrintel",
         "victim",
         "cameroon",
-        "commercial"
+        "government"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -267,22 +272,22 @@
       "x_afrintel_country": "Cameroon",
       "x_afrintel_country_fr": "Cameroun",
       "x_afrintel_organization_fr": "CNPS Cameroun",
-      "x_afrintel_sector_raw": "Gouvernement / Sécurité sociale",
-      "x_afrintel_sector_raw_en": "Government / Social Security",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
       "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
       "sectors": [
-        "commercial"
+        "government"
       ]
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL September 2024 incident 02: CNPS Cameroun",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting CNPS Cameroun in Cameroon on September 12, 2024. The source actor is listed as spacebears. Status: Claim - Unverified. Sector: Government / Social Security. Source summary: The Caisse Nationale de Prévoyance Sociale (CNPS) of Cameroon is the public body responsible for managing social security and social benefits for workers.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant CNPS Cameroun en Cameroun, à la date du 12 Septembre 2024. L'acteur source est indiqué comme spacebears. Statut : Claim - Unverified. Secteur : Gouvernement / Sécurité sociale. Résumé de la source : La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting CNPS Cameroun in Cameroon on September 12, 2024. The source actor is listed as spacebears. Status: Claim - Unverified. Sector: Government / Administration. Source summary: The Caisse Nationale de Prévoyance Sociale (CNPS) of Cameroon is the public body responsible for managing social security and social benefits for workers.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant CNPS Cameroun en Cameroun, à la date du 12 Septembre 2024. L'acteur source est indiqué comme spacebears. Statut : Claim - Unverified. Secteur : Government / Administration. Résumé de la source : La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.",
       "first_seen": "2024-09-12T00:00:00Z",
       "labels": [
         "afrintel",
@@ -290,7 +295,7 @@
         "claim-unverified",
         "ransomware",
         "cameroon",
-        "commercial"
+        "government"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -315,8 +320,8 @@
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Cameroon",
       "x_afrintel_country_fr": "Cameroun",
-      "x_afrintel_sector_raw": "Gouvernement / Sécurité sociale",
-      "x_afrintel_sector_raw_en": "Government / Social Security",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
       "x_afrintel_actor": "spacebears",
       "x_afrintel_actor_fr": "spacebears",
       "x_afrintel_date_display": "12 Septembre 2024",
@@ -330,8 +335,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--0a5c756d-c946-58a8-ad4b-b330918a59fb",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
       "target_ref": "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
@@ -344,8 +349,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--d395feec-8e79-5189-a2be-853b2b4eb850",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
       "target_ref": "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
@@ -358,8 +363,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--6369701e-90f4-5176-ab92-6587ba4f243a",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
       "target_ref": "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
@@ -372,8 +377,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "arcusmedia",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -402,15 +407,16 @@
       "type": "identity",
       "spec_version": "2.1",
       "id": "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Emtel",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mauritius. Sector: Telecommunications.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL à Maurice. Secteur : Télécommunications.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mauritius. Sector: Telecommunications.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL à Maurice. Secteur : Telecommunications.",
       "labels": [
         "afrintel",
         "victim",
-        "mauritius"
+        "mauritius",
+        "telecommunications"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -433,26 +439,30 @@
       "x_afrintel_country": "Mauritius",
       "x_afrintel_country_fr": "Maurice",
       "x_afrintel_organization_fr": "Emtel",
-      "x_afrintel_sector_raw": "Télécommunications",
+      "x_afrintel_sector_raw": "Telecommunications",
       "x_afrintel_sector_raw_en": "Telecommunications",
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md"
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "sectors": [
+        "telecommunications"
+      ]
     },
     {
       "type": "incident",
       "spec_version": "2.1",
       "id": "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL September 2024 incident 03: Emtel",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Emtel in Mauritius on September 15, 2024. The source actor is listed as arcusmedia. Status: Claim - Unverified. Sector: Telecommunications. Source summary: Emtel is a leading Mauritian mobile network operator providing telecommunications infrastructure, voice, broadband data, and digital services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Emtel à Maurice, à la date du 15 Septembre 2024. L'acteur source est indiqué comme arcusmedia. Statut : Claim - Unverified. Secteur : Télécommunications. Résumé de la source : Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, services voix, données et haut débit.",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Emtel in Mauritius on September 15, 2024. The source actor is listed as arcusmedia. Status: Claim - Unverified. Sector: Telecommunications. Source summary: Emtel is a Mauritian mobile network operator providing telecommunications infrastructure, voice, broadband data and digital services.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Emtel à Maurice, à la date du 15 Septembre 2024. L'acteur source est indiqué comme arcusmedia. Statut : Claim - Unverified. Secteur : Telecommunications. Résumé de la source : Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, des services voix, des données haut débit et des services numériques.",
       "first_seen": "2024-09-15T00:00:00Z",
       "labels": [
         "afrintel",
         "africa",
         "claim-unverified",
         "ransomware",
-        "mauritius"
+        "mauritius",
+        "telecommunications"
       ],
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -477,7 +487,7 @@
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Mauritius",
       "x_afrintel_country_fr": "Maurice",
-      "x_afrintel_sector_raw": "Télécommunications",
+      "x_afrintel_sector_raw": "Telecommunications",
       "x_afrintel_sector_raw_en": "Telecommunications",
       "x_afrintel_actor": "arcusmedia",
       "x_afrintel_actor_fr": "arcusmedia",
@@ -492,8 +502,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--835c0995-45b8-5dff-b79c-af2cb3d67e58",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "attributed-to",
       "source_ref": "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
       "target_ref": "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
@@ -506,8 +516,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--aac51964-9ffa-5c80-bba4-b49117b91f51",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
       "target_ref": "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
@@ -520,8 +530,8 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--265097fa-ae90-59a2-9202-91ab9242457f",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
       "target_ref": "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
@@ -531,11 +541,121 @@
       ]
     },
     {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "name": "TAAG - Linhas Aéreas de Angola",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Angola. Sector: Aviation.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Angola. Secteur : Aviation.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "angola",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://taag.com"
+        }
+      ],
+      "x_afrintel_country": "Angola",
+      "x_afrintel_country_fr": "Angola",
+      "x_afrintel_organization_fr": "TAAG - Linhas Aéreas de Angola",
+      "x_afrintel_sector_raw": "Aviation",
+      "x_afrintel_sector_raw_en": "Aviation",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "name": "AFRINTEL September 2024 incident 04: TAAG - Linhas Aéreas de Angola",
+      "description": "## English\n\nAFRINTEL recorded an observed ransomware affecting TAAG - Linhas Aéreas de Angola in Angola on September 15, 2024. No actor attribution is recorded. Status: Authority Confirmed. Sector: Aviation. Source summary: TAAG confirmed a cyberattack and disruption to internal services. Angola's data-protection authority later explicitly classified the September 15, 2024 event as ransomware. Flights and ticketing were not interrupted according to the audit sources. AFRINTEL keeps the incident in September 2024 and separates the regulatory-confirmation date from the attack date.\n\n## Français\n\nAFRINTEL a recensé un ransomware observé concernant TAAG - Linhas Aéreas de Angola en Angola, à la date du 15 Septembre 2024. Aucune attribution à un acteur n'est enregistrée. Statut : Authority Confirmed. Secteur : Aviation.",
+      "first_seen": "2024-09-15T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "incident-confirmed",
+        "unattributed",
+        "angola",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://taag.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 4,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "Angola",
+      "x_afrintel_country_fr": "Angola",
+      "x_afrintel_sector_raw": "Aviation",
+      "x_afrintel_sector_raw_en": "Aviation",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "15 Septembre 2024",
+      "x_afrintel_date_display_en": "September 15, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--eef5a493-3dbd-51e4-a7c6-61af9ebdb305",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+      "target_ref": "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "orca",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2024. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -563,12 +683,12 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "id": "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Excelplast Tunisie",
       "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Manufacturing (Plastics).\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Industrie manufacturière / Plasturgie.",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Tunisia. Sector: Manufacturing / Industry.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Tunisie. Secteur : Manufacturing / Industry.",
       "labels": [
         "afrintel",
         "victim",
@@ -596,8 +716,8 @@
       "x_afrintel_country": "Tunisia",
       "x_afrintel_country_fr": "Tunisie",
       "x_afrintel_organization_fr": "Excelplast Tunisie",
-      "x_afrintel_sector_raw": "Industrie manufacturière / Plasturgie",
-      "x_afrintel_sector_raw_en": "Manufacturing (Plastics)",
+      "x_afrintel_sector_raw": "Manufacturing / Industry",
+      "x_afrintel_sector_raw_en": "Manufacturing / Industry",
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
       "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
       "sectors": [
@@ -607,11 +727,11 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "name": "AFRINTEL September 2024 incident 04: Excelplast Tunisie",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Excelplast Tunisie in Tunisia on September 16, 2024. The source actor is listed as orca. Status: Claim - Unverified. Sector: Manufacturing (Plastics). Source summary: Excelplast Tunisie is a Tunisian industrial manufacturing company specialised in plastic production, raw materials processing, and packaging.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Excelplast Tunisie en Tunisie, à la date du 16 Septembre 2024. L'acteur source est indiqué comme orca. Statut : Claim - Unverified. Secteur : Industrie manufacturière / Plasturgie. Résumé de la source : Excelplast Tunisie est une entreprise manufacturière tunisienne spécialisée dans la production de plastique, la transformation des matières premières et l'emballage.",
+      "id": "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "name": "AFRINTEL September 2024 incident 05: Excelplast Tunisie",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Excelplast Tunisie in Tunisia on September 16, 2024. The source actor is listed as orca. Status: Claim - Unverified. Sector: Manufacturing / Industry. Source summary: Excelplast Tunisie is a Tunisian industrial manufacturing company specialised in plastic production, raw-material processing and packaging.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Excelplast Tunisie en Tunisie, à la date du 16 Septembre 2024. L'acteur source est indiqué comme orca. Statut : Claim - Unverified. Secteur : Manufacturing / Industry. Résumé de la source : Excelplast Tunisie est une entreprise manufacturière tunisienne spécialisée dans la production de plastique, la transformation des matières premières et l'emballage.",
       "first_seen": "2024-09-16T00:00:00Z",
       "labels": [
         "afrintel",
@@ -640,12 +760,12 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 4,
+      "x_afrintel_incident_index": 5,
       "x_afrintel_status": "Claim - Unverified",
       "x_afrintel_country": "Tunisia",
       "x_afrintel_country_fr": "Tunisie",
-      "x_afrintel_sector_raw": "Industrie manufacturière / Plasturgie",
-      "x_afrintel_sector_raw_en": "Manufacturing (Plastics)",
+      "x_afrintel_sector_raw": "Manufacturing / Industry",
+      "x_afrintel_sector_raw_en": "Manufacturing / Industry",
       "x_afrintel_actor": "orca",
       "x_afrintel_actor_fr": "orca",
       "x_afrintel_date_display": "16 Septembre 2024",
@@ -658,11 +778,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--0efbd523-1032-5730-a67c-abfc0edb24ef",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "id": "relationship--c0711431-6e59-5829-bfdd-38a1dd9dfdf3",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
+      "source_ref": "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
       "target_ref": "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -672,179 +792,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--dca1e00e-74fe-5119-b643-7f45141943d2",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "id": "relationship--de997a94-0144-5bb2-838f-8f4a0e895b5f",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-      "target_ref": "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--eef5a493-3dbd-51e4-a7c6-61af9ebdb305",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "relationship_type": "targets",
-      "source_ref": "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-      "target_ref": "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "threat-actor",
-      "spec_version": "2.1",
-      "id": "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "name": "NizaarFarah (source account)",
-      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2024. Claims are unverified unless stated otherwise.",
-      "labels": [
-        "afrintel",
-        "africa",
-        "claim-unverified",
-        "2024",
-        "09-september"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
-        }
-      ]
-    },
-    {
-      "type": "identity",
-      "spec_version": "2.1",
-      "id": "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "name": "Nigerian Navy (navy.mil.ng)",
-      "identity_class": "organization",
-      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Defense / National Security.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Nigeria. Secteur : Défense / Sécurité Nationale.",
-      "labels": [
-        "afrintel",
-        "victim",
-        "nigeria",
-        "commercial"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
-        },
-        {
-          "source_name": "website",
-          "url": "https://navy.mil.ng"
-        }
-      ],
-      "x_afrintel_country": "Nigeria",
-      "x_afrintel_country_fr": "Nigeria",
-      "x_afrintel_organization_fr": "Nigerian Navy (navy.mil.ng)",
-      "x_afrintel_sector_raw": "Défense / Sécurité Nationale",
-      "x_afrintel_sector_raw_en": "Defense / National Security",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
-      "sectors": [
-        "commercial"
-      ]
-    },
-    {
-      "type": "incident",
-      "spec_version": "2.1",
-      "id": "incident--7a50d127-653c-56d4-a201-d305f96d1e08",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "name": "AFRINTEL September 2024 incident 05: Nigerian Navy (navy.mil.ng)",
-      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Nigerian Navy (navy.mil.ng) in Nigeria on September 7, 2024. The source actor is listed as NizaarFarah (source account). Status: Claim - Data Sample Published. Sector: Defense / National Security. Source summary: The Nigerian Navy is the naval branch of the Nigerian Armed Forces. The supplied screenshot claims hundreds of confidential files and 1,200 email logins, with approximately 300 files and a 228.4 MB archive advertised. The screenshot shows document and equipment samples, but AFRINTEL did not collect or reproduce the underlying files or credentials. NizaarFarah is recorded as the source account shown on the publication; this does not independently confirm the compromise or establish the account's identity beyond the observed post. ## ✍🏿 Author Adama ASSIONGBON SOC & Cyber Threat Intelligence Consultant LinkedIn profile\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Nigerian Navy (navy.mil.ng) au Nigeria, à la date du 7 Septembre 2024. L'acteur source est indiqué comme NizaarFarah (compte source). Statut : Claim - Data Sample Published. Secteur : Défense / Sécurité Nationale. Résumé de la source : La Nigerian Navy est la branche navale des forces armées nigérianes. La capture fournie revendique des centaines de fichiers confidentiels et 1 200 identifiants e-mail, avec environ 300 fichiers et une archive annoncée à 228,4 Mo. Elle montre des échantillons de documents et d'équipements, mais AFRINTEL n'a pas collecté ni reproduit les fichiers ou identifiants sous-jacents. NizaarFarah est enregistré comme le compte source affiché dans la publication ; cela ne confirme pas indépendamment la compromission ni l'identité du compte au-delà de la publication observée. ## ✍🏿 Auteur Adama ASSIONGBON Consultant SOC & Cyber Threat Intelligence Profil LinkedIn",
-      "first_seen": "2024-09-07T00:00:00Z",
-      "labels": [
-        "afrintel",
-        "africa",
-        "data-leak",
-        "data-sample-published",
-        "nigeria",
-        "commercial"
-      ],
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ],
-      "external_references": [
-        {
-          "source_name": "AFRINTEL victims_FR.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
-        },
-        {
-          "source_name": "AFRINTEL victims.md",
-          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
-        },
-        {
-          "source_name": "website",
-          "url": "https://navy.mil.ng"
-        }
-      ],
-      "x_opencti_incident_type": "data-leak",
-      "x_afrintel_incident_index": 5,
-      "x_afrintel_status": "Claim - Data Sample Published",
-      "x_afrintel_country": "Nigeria",
-      "x_afrintel_country_fr": "Nigeria",
-      "x_afrintel_sector_raw": "Défense / Sécurité Nationale",
-      "x_afrintel_sector_raw_en": "Defense / National Security",
-      "x_afrintel_actor": "NizaarFarah (source account)",
-      "x_afrintel_actor_fr": "NizaarFarah (compte source)",
-      "x_afrintel_date_display": "7 Septembre 2024",
-      "x_afrintel_date_display_en": "September 7, 2024",
-      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
-      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
-      "x_afrintel_confidence_level": "Medium",
-      "x_afrintel_impact_level": "Level 4"
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--c0711431-6e59-5829-bfdd-38a1dd9dfdf3",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "relationship_type": "attributed-to",
-      "source_ref": "incident--7a50d127-653c-56d4-a201-d305f96d1e08",
-      "target_ref": "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
-      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
-      "object_marking_refs": [
-        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
-      ]
-    },
-    {
-      "type": "relationship",
-      "spec_version": "2.1",
-      "id": "relationship--de997a94-0144-5bb2-838f-8f4a0e895b5f",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
-      "relationship_type": "targets",
-      "source_ref": "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
-      "target_ref": "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+      "target_ref": "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -854,11 +807,121 @@
       "type": "relationship",
       "spec_version": "2.1",
       "id": "relationship--611c7fca-a36a-500f-9f2d-ef727f34a15a",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "relationship_type": "targets",
-      "source_ref": "incident--7a50d127-653c-56d4-a201-d305f96d1e08",
-      "target_ref": "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+      "source_ref": "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+      "target_ref": "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--069316cc-0350-50ac-8357-aff39fbecb93",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "name": "Comissão Nacional de Eleições (CNE)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mozambique. Sector: Government / Administration.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Mozambique. Secteur : Government / Administration.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "mozambique",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cne.org.mz"
+        }
+      ],
+      "x_afrintel_country": "Mozambique",
+      "x_afrintel_country_fr": "Mozambique",
+      "x_afrintel_organization_fr": "Comissão Nacional de Eleições (CNE)",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--9c33b939-e0cd-580e-b3e6-bc7666296394",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "name": "AFRINTEL September 2024 incident 06: Comissão Nacional de Eleições (CNE)",
+      "description": "## English\n\nAFRINTEL recorded an observed defacement affecting Comissão Nacional de Eleições (CNE) in Mozambique on September 28, 2024. No actor attribution is recorded. Status: Victim Confirmed. Sector: Government / Administration. Source summary: CNE web pages were targeted on September 28. The organization said it regained control, strengthened security, and preserved data integrity. Sources also describe a subsequent attempt to circulate a malicious link using electoral visual identity. The evidence does not establish DDoS or classic defacement; AFRINTEL retains System Intrusion and does not infer a Data Leak.\n\n## Français\n\nAFRINTEL a recensé un défacement observé concernant Comissão Nacional de Eleições (CNE) en Mozambique, à la date du 28 Septembre 2024. Aucune attribution à un acteur n'est enregistrée. Statut : Victim Confirmed. Secteur : Government / Administration.",
+      "first_seen": "2024-09-28T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "defacement",
+        "incident-confirmed",
+        "unattributed",
+        "mozambique",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cne.org.mz"
+        }
+      ],
+      "x_opencti_incident_type": "defacement",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Incident Confirmed by Victim",
+      "x_afrintel_country": "Mozambique",
+      "x_afrintel_country_fr": "Mozambique",
+      "x_afrintel_sector_raw": "Government / Administration",
+      "x_afrintel_sector_raw_en": "Government / Administration",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "28 Septembre 2024",
+      "x_afrintel_date_display_en": "September 28, 2024",
+      "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2024/09-september/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--808de433-4695-5ddb-8153-4d709c9cd9b2",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--9c33b939-e0cd-580e-b3e6-bc7666296394",
+      "target_ref": "identity--069316cc-0350-50ac-8357-aff39fbecb93",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -868,12 +931,12 @@
       "type": "report",
       "spec_version": "2.1",
       "id": "report--9812ca0b-e06d-5dcd-81bc-8ce3fb69908a",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL monthly CTI report - September 2024",
-      "description": "# AFRINTEL CTI Report - September 2024\n\n## 1. Executive summary\n\nSeptember 2024 contains **5 incidents** across five countries: **4 ransomware claims** and **1 data leak**. No actor appears more than once. West Africa records two incidents; Central Africa, North Africa, and the Indian Ocean record one each.\n\nThe Nigerian Navy publication is the most sensitive case, but it refers to a leak dated November 8, 2020, by the source. It should therefore be read as recirculation or renewed observation of older content, not as an intrusion that occurred in September 2024.\n\nSee [victims.md](./victims.md).\n\n## 2. Methodology\n\nThis report covers publications assigned to September 2024. AFRINTEL's discovery date is kept separate from the leak date stated by the source. The five incidents are deduplicated by organization and the older republication is explicitly identified.\n\nStatistics derive from [victims.md](./victims.md), synchronized with [victims_FR.md](./victims_FR.md).\n\n## 3. Global overview\n\n| Indicator | Value |\n|---|---:|\n| Incidents / Countries | **5 / 5** |\n| Ransomware | **4** |\n| Data leaks | **1** |\n| Access sales / Defacement | **0 / 0** |\n\n### Country ranking\n\n| Country | Total | Ransomware | Data leak |\n|---|---:|---:|---:|\n| 🇨🇲 Cameroon | 1 | 1 | 0 |\n| 🇲🇺 Mauritius | 1 | 1 | 0 |\n| 🇳🇬 Nigeria | 1 | 0 | 1 |\n| 🇸🇳 Senegal | 1 | 1 | 0 |\n| 🇹🇳 Tunisia | 1 | 1 | 0 |\n| **Total** | **5** | **4** | **1** |\n\n### Regional distribution\n\n| Region | Total | Ransomware | Data leak |\n|---|---:|---:|---:|\n| West Africa | 2 | 1 | 1 |\n| Central Africa | 1 | 1 | 0 |\n| North Africa | 1 | 1 | 0 |\n| Indian Ocean | 1 | 1 | 0 |\n| **Total** | **5** | **4** | **1** |\n\n### Normalized sector distribution\n\n| Sector | Incidents | Share |\n|---|---:|---:|\n| Technology / IT | 1 | 20% |\n| Government / Administration | 1 | 20% |\n| Telecommunications | 1 | 20% |\n| Manufacturing / Industry | 1 | 20% |\n| Defense / Security | 1 | 20% |\n| **Total** | **5** | **100%** |\n\n### Actors and sources\n\n| Actor or source | Incidents |\n|---|---:|\n| Arcus Media, Hunters, Orca, SpaceBears, NizaarFarah | 1 each |\n\n## 4. Detailed analysis by incident type\n\n### 4.1 Ransomware\n\nSesam Informatics, CNPS Cameroon, Emtel, and Excelplast were published by four different actors. Their sectors and countries are not coherent enough to support a shared campaign or targeting conclusion.\n\n### 4.2 Data leak\n\nThe Nigerian Navy source displays references to files and credentials, but AFRINTEL did not collect or reproduce the underlying content. Its age reduces the case's value as a measure of new activity without removing the risk posed by recirculated sensitive data.\n\n## 5. Sectoral impact\n\nEach sector appears once. Defense carries the highest sensitivity, while telecommunications and social security add continuity and personal-data concerns. The small corpus requires individual handling of each case.\n\n## 6. Threat actor profile and risk assessment\n\n| Scope | Level | Rationale |\n|---|---|---|\n| 🇳🇬 Nigeria | 🔴 High | Older publication attributed to a military institution |\n| 🇨🇲 Cameroon / 🇲🇺 Mauritius | 🟠 Medium | Social security and telecommunications |\n| 🇸🇳 Senegal / 🇹🇳 Tunisia | 🟡 Low to medium | One claim each with no public sample |\n\n## 7. Key trends and intelligence gaps\n\n- **Observed - high confidence:** five incidents, five countries, and five distinct actors or sources.\n- **Observed - high confidence:** the Nigerian Navy leak is source-dated to 2020.\n- **Gap:** no public DFIR report was identified in the sources reviewed for the four ransomware claims.\n- **Gap:** authenticity, scope, and current circulation of the Nigerian Navy data remain unknown.\n- **Collection need:** renewed observation of the publication, institutional confirmation, and technical indicators.\n\n## 8. Contextual MITRE ATT&CK mapping\n\n| Status | Technique | Use |\n|---|---|---|\n| Preventive | T1486 - Data Encrypted for Impact | Encryption detection; not confirmed |\n| Preventive | T1490 - Inhibit System Recovery | Recovery-mechanism monitoring |\n| Assumption | T1078 - Valid Accounts | Risk linked to advertised credentials; validity unknown |\n\n## 9. Recommendations\n\n- **Defense:** invalidate exposed accounts if the leak is confirmed and monitor republication.\n- **Telecommunications:** segment administration and test continuity.\n- **Social security:** monitor record access and prepare notification procedures.\n- **All organizations:** preserve logs and test backups.\n\n## 10. SOC and tactical recommendations\n\n| Qualification | Action |\n|---|---|\n| **Observed** | Monitor cited accounts and domains; no intrusion TTP is confirmed. |\n| **Assumption** | Hunt for reuse of older credentials and abnormal logins to exposed services. |\n| **Preventive** | Detect mass encryption, backup inhibition, exports, and unusual outbound transfers. |\n\n## 11. Strategic recommendations\n\n| Priority | Qualification | Measure |\n|---:|---|---|\n| 1 | **Observed** | Treat Nigerian Navy republication as a risk from potentially reusable older data. |\n| 2 | **Assumption** | Assess identity exposure without assuming current credential validity. |\n| 3 | **Preventive** | Deploy phishing-resistant MFA, password rotation, and immutable backups. |\n\n## 12. Conclusion\n\nSeptember is low-volume and highly dispersed. Its main lesson is not increased threat activity but the persistence of older data in criminal circulation. Response should separate ransomware resilience from durable invalidation of exposed credentials.\n\n**AFRINTEL - TLP:CLEAR**\n\n[AFRINTEL repository](https://github.com/Hatchepsoute/AFRINTEL)",
+      "description": "# AFRINTEL CTI Report - Cyber Threats in Africa - September 2024\n\n## 1. Executive summary\n\nIn September 2024, AFRINTEL retains **6 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (5, 83.3%)** followed by **System Intrusion (1, 16.7%)**. Leading countries are **Senegal (1)**, **Cameroon (1)**, **Mauritius (1)**. Leading sectors are **Government / Administration (2)**, **Technology / IT (1)**, **Telecommunications (1)**. Most frequent actor/group labels are `Unknown` (2), `hunters` (1), `spacebears` (1). `Unknown` means missing attribution, not an actor.\n\n### 1.1 Month-over-month study\n\n| Indicator | August 2024 | September 2024 | Change |\n|---|---|---|---|\n| Total | 16 | 6 | -10 (-62.5%) |\n| Ransomware | 14 | 5 | -9 (-64.3%) |\n| Data Leak | 1 | 0 | -1 (-100.0%) |\n| Access Sale | 0 | 0 | Stable |\n| DDoS | 0 | 0 | Stable |\n| Defacement | 0 | 0 | Stable |\n| Account Takeover | 0 | 0 | Stable |\n| System Intrusion | 1 | 1 | Stable |\n| Malware | 0 | 0 | Stable |\n| Operational Fraud | 0 | 0 | Stable |\n\n### 1.2 Comparative analysis\n\nMonthly volume **decreases by 10 incident(s)**. Structural changes are: Ransomware 14->5 (-9), Data Leak 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.\n\n## 2. Methodology\n\n- One canonical incident equals one event retained in the 2024 year.\n- Historical discoveries/republications are preserved separately and do not inflate 2024 statistics.\n- Incident date or best-supported window takes precedence; AFRINTEL discovery date remains separate.\n- Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.\n- Coordinated DDoS is counted by campaign.\n- Type, status, confidence, impact, attribution, and source remain separate.\n\n## 3. Incident-type distribution\n\n| Type | Records | Share |\n|---|---|---|\n| Ransomware | 5 | 83.3% |\n| Data Leak | 0 | 0.0% |\n| Access Sale | 0 | 0.0% |\n| DDoS | 0 | 0.0% |\n| Defacement | 0 | 0.0% |\n| Account Takeover | 0 | 0.0% |\n| System Intrusion | 1 | 16.7% |\n| Malware | 0 | 0.0% |\n| Operational Fraud | 0 | 0.0% |\n\n## 4. Country x type\n\n| Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Senegal | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Cameroon | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Mauritius | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Angola | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Mozambique | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |\n\n## 5. Regional distribution\n\n| Region | Records | Share |\n|---|---|---|\n| Southern Africa | 2 | 33.3% |\n| West Africa | 1 | 16.7% |\n| Central Africa | 1 | 16.7% |\n| Indian Ocean | 1 | 16.7% |\n| North Africa | 1 | 16.7% |\n\n## 6. Sector distribution\n\n| Sector | Records | Share |\n|---|---|---|\n| Government / Administration | 2 | 33.3% |\n| Technology / IT | 1 | 16.7% |\n| Telecommunications | 1 | 16.7% |\n| Aviation | 1 | 16.7% |\n| Manufacturing / Industry | 1 | 16.7% |\n\n## 7. Actors / groups\n\n| Actor / Group | Records | Share |\n|---|---|---|\n| Unknown | 2 | 33.3% |\n| hunters | 1 | 16.7% |\n| spacebears | 1 | 16.7% |\n| arcusmedia | 1 | 16.7% |\n| orca | 1 | 16.7% |\n\n## 8. Evidence maturity\n\n| Evidence position | Records | Share |\n|---|---|---|\n| Claim - Unverified | 4 | 66.7% |\n| Confirmed | 2 | 33.3% |\n\n### Confidence\n\n| Confidence | Records | Share |\n|---|---|---|\n| Low | 4 | 66.7% |\n| Very High | 2 | 33.3% |\n\n## 9. Timeline\n\n## 10. CTI analysis by type\n\n### Ransomware - 5\n\n**5 record(s) (83.3%).** Leading countries: Senegal (1), Cameroon (1), Mauritius (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.\n\n### System Intrusion - 1\n\n**1 record(s) (16.7%).** Leading countries: Mozambique (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.\n\n## 11. Priority incidents for review\n\n| Country | Organization | Type | Status | Impact | Confidence |\n|---|---|---|---|---|---|\n| Angola | TAAG - Linhas Aéreas de Angola\n- **Date de l'incident:** 15 Septembre 2024\n- **Date de publication initiale / source retenue:** 16 septembre 2024\n- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif\n- **Précision chronologique:** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.\n- **Acteur / Groupe:** Unknown\n- **Secteur:** Aviation\n- **Site web:** [taag.com](https://www.taag.com/)\n- **Statut:** Authority Confirmed\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Very High\n- **Niveau d'impact:** Level 4\n- **Analyse:** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.\n- **Sources publiques:** [Agência de Protecção de Dados](https://apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https://www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https://pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)\n\n---------------------------- | Ransomware | Authority Confirmed | Level 4 | Very High |\n| Mozambique | Comissão Nacional de Eleições (CNE)\n- **Date de l'incident:** 28 Septembre 2024\n- **Date de publication initiale / source retenue:** 30 septembre 2024\n- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif\n- **Précision chronologique:** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.\n- **Acteur / Groupe:** Unknown\n- **Secteur:** Government / Administration\n- **Site web:** [cne.org.mz](https://www.cne.org.mz/)\n- **Statut:** Victim Confirmed\n- **Type d'incident:** System Intrusion\n- **Niveau de confiance:** Very High\n- **Niveau d'impact:** Level 3\n- **Analyse:** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.\n- **Sources publiques:** [Club of Mozambique](https://clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https://www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)\n\n---------------------------- | System Intrusion | Victim Confirmed | Level 3 | Very High |\n| Cameroon | CNPS Cameroun\n- **Acteur / Groupe:** spacebears\n- **Secteur:** Government / Administration\n- **Site web:** [cnps.cm](https://www.cnps.cm)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 3\n- **Description victime:** La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |\n| Mauritius | Emtel\n- **Acteur / Groupe:** arcusmedia\n- **Secteur:** Telecommunications\n- **Site web:** [emtel.com](https://www.emtel.com)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 3\n- **Description victime:** Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, des services voix, des données haut débit et des services numériques.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |\n| Senegal | Sesam Informatics\n- **Acteur / Groupe:** hunters\n- **Secteur:** Technology / IT\n- **Site web:** [sesam-informatics.com](https://www.sesam-informatics.com)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 2\n- **Description victime:** Sesam Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 2 | Low |\n\n> Structured selection based on impact, status, and confidence; not an absolute severity ranking.\n\n## 12. Intelligence gaps and corrections\n\n- initial-access vector often unknown;\n- technical compromise date may differ from publication date;\n- claimed volumes are rarely fully verifiable;\n- technical attribution is often limited to the publication account;\n- historical republications are tracked separately.\n\n## 13. Recommendations\n\n- phishing-resistant MFA, PAM, and least privilege;\n- segmentation, immutable backups, and restoration testing;\n- centralized EDR/IAM/VPN/WAF/DNS/cloud/application logging;\n- detection of mass exports, unusual archives, and outbound transfers;\n- separate preservation of incident, initial-publication, repost, and AFRINTEL discovery dates.\n\n## 14. Conclusion\n\nSeptember 2024 contains **6 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "en",
-      "published": "2024-09-16T00:00:00Z",
+      "published": "2024-09-28T00:00:00Z",
       "report_types": [
         "threat-report"
       ],
@@ -905,38 +968,39 @@
         "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
         "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
         "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-        "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
         "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
         "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
         "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
-        "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-        "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+        "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+        "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+        "identity--069316cc-0350-50ac-8357-aff39fbecb93",
         "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
         "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
         "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
-        "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-        "incident--7a50d127-653c-56d4-a201-d305f96d1e08"
+        "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+        "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+        "incident--9c33b939-e0cd-580e-b3e6-bc7666296394"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/README.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 5,
-      "x_afrintel_ransomware_count": 4,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_total_incidents": 6,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
       "x_afrintel_access_sale_count": 0,
-      "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 5
+      "x_afrintel_defacement_count": 1,
+      "x_afrintel_victim_identity_count": 6
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--156214a9-5445-5a4e-9897-b4316e6115c3",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Rapport CTI mensuel AFRINTEL - Septembre 2024",
-      "description": "# Rapport CTI AFRINTEL - Septembre 2024\n\n## 1. Résumé exécutif\n\nSeptembre 2024 rassemble **5 incidents** répartis dans cinq pays : **4 revendications ransomware** et **1 fuite de données**. Aucun acteur n’apparaît plus d’une fois. L’Afrique de l’Ouest compte deux incidents ; l’Afrique centrale, l’Afrique du Nord et l’océan Indien en comptent un chacun.\n\nLa publication visant la Nigerian Navy est le cas le plus sensible, mais elle renvoie à une fuite revendiquée au 8 novembre 2020. Elle doit donc être lue comme une remise en circulation ou une nouvelle observation d’un contenu ancien, et non comme une intrusion survenue en septembre 2024.\n\nVoir [victims_FR.md](./victims_FR.md).\n\n## 2. Méthodologie\n\nLe rapport couvre les publications classées en septembre 2024. La date de découverte dans AFRINTEL est distinguée de la date de fuite annoncée par la source. Les cinq incidents sont dédupliqués par organisation et la republication ancienne reste explicitement signalée.\n\nLes statistiques dérivent de [victims_FR.md](./victims_FR.md), synchronisé avec [victims.md](./victims.md).\n\n## 3. Vue globale\n\n| Indicateur | Valeur |\n|---|---:|\n| Incidents / Pays | **5 / 5** |\n| Ransomware | **4** |\n| Fuites de données | **1** |\n| Ventes d’accès / Défacement | **0 / 0** |\n\n### Classement par pays\n\n| Pays | Total | Ransomware | Fuite |\n|---|---:|---:|---:|\n| 🇨🇲 Cameroun | 1 | 1 | 0 |\n| 🇲🇺 Maurice | 1 | 1 | 0 |\n| 🇳🇬 Nigeria | 1 | 0 | 1 |\n| 🇸🇳 Sénégal | 1 | 1 | 0 |\n| 🇹🇳 Tunisie | 1 | 1 | 0 |\n| **Total** | **5** | **4** | **1** |\n\n### Répartition régionale\n\n| Région | Total | Ransomware | Fuite |\n|---|---:|---:|---:|\n| Afrique de l’Ouest | 2 | 1 | 1 |\n| Afrique centrale | 1 | 1 | 0 |\n| Afrique du Nord | 1 | 1 | 0 |\n| Océan Indien | 1 | 1 | 0 |\n| **Total** | **5** | **4** | **1** |\n\n### Répartition sectorielle normalisée\n\n| Secteur | Incidents | Part |\n|---|---:|---:|\n| Technologies / Informatique | 1 | 20 % |\n| Gouvernement / Administration | 1 | 20 % |\n| Télécommunications | 1 | 20 % |\n| Industrie / Fabrication | 1 | 20 % |\n| Défense / Sécurité | 1 | 20 % |\n| **Total** | **5** | **100 %** |\n\n### Acteurs et sources\n\n| Acteur ou source | Incidents |\n|---|---:|\n| Arcus Media, Hunters, Orca, SpaceBears, NizaarFarah | 1 chacun |\n\n## 4. Analyse détaillée par type d’incident\n\n### 4.1 Ransomware\n\nSesam Informatics, la CNPS Cameroun, Emtel et Excelplast ont été publiés par quatre acteurs distincts. Les secteurs et pays ne forment pas un ensemble suffisamment cohérent pour conclure à une campagne ou à un ciblage commun.\n\n### 4.2 Fuite de données\n\nLa source associée à la Nigerian Navy affiche des références à des fichiers et identifiants, mais AFRINTEL n’a ni collecté ni reproduit le contenu sous-jacent. La date ancienne réduit la valeur de l’incident pour mesurer une activité nouvelle, sans supprimer le risque de republication de données sensibles.\n\n## 5. Impact sectoriel\n\nChaque secteur apparaît une seule fois. La défense présente la sensibilité la plus élevée ; les télécommunications et la sécurité sociale ajoutent un enjeu de continuité et de données personnelles. Le volume réduit impose de traiter ces cas individuellement.\n\n## 6. Profil des acteurs et évaluation du risque\n\n| Périmètre | Niveau | Justification |\n|---|---|---|\n| 🇳🇬 Nigeria | 🔴 Élevé | Publication ancienne attribuée à une institution militaire |\n| 🇨🇲 Cameroun / 🇲🇺 Maurice | 🟠 Moyen | Sécurité sociale et télécommunications |\n| 🇸🇳 Sénégal / 🇹🇳 Tunisie | 🟡 Faible à moyen | Une revendication sans échantillon public chacune |\n\n## 7. Tendances et lacunes de renseignement\n\n- **Observé - confiance élevée :** cinq incidents, cinq pays et cinq acteurs ou sources distincts.\n- **Observé - confiance élevée :** la fuite Nigerian Navy est datée de 2020 par la source.\n- **Lacune :** aucun rapport DFIR public n’a été identifié dans les sources consultées pour les quatre revendications ransomware.\n- **Lacune :** l’authenticité, la portée et la circulation actuelle des données attribuées à la Nigerian Navy restent inconnues.\n- **Collecte attendue :** nouvelle observation de la publication, confirmation institutionnelle et indicateurs techniques.\n\n## 8. Cartographie MITRE ATT&CK contextuelle\n\n| Statut | Technique | Utilisation |\n|---|---|---|\n| Préventif | T1486 - Data Encrypted for Impact | Détection du chiffrement ; non confirmé |\n| Préventif | T1490 - Inhibit System Recovery | Surveillance des mécanismes de restauration |\n| Hypothèse | T1078 - Valid Accounts | Risque lié aux identifiants revendiqués ; validité inconnue |\n\n## 9. Recommandations\n\n- **Défense :** invalider les comptes exposés si la fuite est confirmée et surveiller les republications.\n- **Télécommunications :** segmenter l’administration et tester la continuité.\n- **Sécurité sociale :** surveiller les accès aux dossiers et préparer la notification.\n- **Toutes les organisations :** préserver les journaux et tester les sauvegardes.\n\n## 10. Recommandations SOC et tactiques\n\n| Qualification | Action |\n|---|---|\n| **Observé** | Surveiller les comptes et domaines cités ; aucune TTP d’intrusion n’est confirmée. |\n| **Hypothèse** | Rechercher la réutilisation d’identifiants anciens et les connexions anormales aux services exposés. |\n| **Préventif** | Détecter chiffrement massif, inhibition des sauvegardes, exports et transferts sortants inhabituels. |\n\n## 11. Recommandations stratégiques\n\n| Priorité | Qualification | Mesure |\n|---:|---|---|\n| 1 | **Observé** | Traiter la republication Nigerian Navy comme un risque de données anciennes toujours exploitables. |\n| 2 | **Hypothèse** | Vérifier l’exposition des identités sans présumer leur validité actuelle. |\n| 3 | **Préventif** | Déployer MFA résistante au phishing, rotation des mots de passe et sauvegardes immuables. |\n\n## 12. Conclusion\n\nSeptembre est peu volumineux et très dispersé. Sa principale leçon n’est pas une hausse de menace, mais la persistance possible de données anciennes dans les circuits criminels. La réponse doit distinguer résilience ransomware et invalidation durable des identifiants exposés.\n\n**AFRINTEL - TLP:CLEAR**\n\n[Dépôt AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)",
+      "description": "# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Septembre 2024\n\n## 1. Synthèse exécutive\n\nEn Septembre 2024, AFRINTEL retient **6 cyberincidents canoniques dans 6 pays**. Le mois est dominé par **Ransomware (5, 83,3 %)** puis **System Intrusion (1, 16,7 %)**. Les pays les plus représentés sont **Sénégal (1)**, **Cameroun (1)**, **Maurice (1)**. Les secteurs les plus visibles sont **Gouvernement / Administration (2)**, **Technologie / IT (1)**, **Télécommunications (1)**. Les labels acteur/groupe les plus fréquents sont `Unknown` (2), `hunters` (1), `spacebears` (1). `Unknown` désigne une absence d'attribution, pas un groupe.\n\nLa maturité de preuve est répartie entre **Claim - Unverified: 4**, **Confirmed: 2**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.\n\n### 1.1 Étude comparative avec le mois précédent\n\n| Indicateur | Août 2024 | Septembre 2024 | Évolution |\n|---|---|---|---|\n| Total | 16 | 6 | -10 (-62,5 %) |\n| Ransomware | 14 | 5 | -9 (-64,3 %) |\n| Data Leak | 1 | 0 | -1 (-100,0 %) |\n| Access Sale | 0 | 0 | Stable |\n| DDoS | 0 | 0 | Stable |\n| Defacement | 0 | 0 | Stable |\n| Account Takeover | 0 | 0 | Stable |\n| System Intrusion | 1 | 1 | Stable |\n| Malware | 0 | 0 | Stable |\n| Operational Fraud | 0 | 0 | Stable |\n\n### 1.2 Analyse comparative\n\nLe volume mensuel **diminue de 10 incident(s)**. Les variations structurantes sont : Ransomware 14->5 (-9), Data Leak 1->0 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.\n\n## 2. Méthodologie\n\n- Un incident canonique correspond à un événement retenu dans le millésime 2024.\n- Les découvertes/republications historiques sont conservées séparément et ne gonflent pas les statistiques 2024.\n- La date d'incident ou la meilleure fenêtre soutenue prime ; la date de découverte AFRINTEL reste distincte.\n- Les 9 types AFRINTEL sont utilisés ; une tentative est représentée par le statut, jamais par un type `Attempted Attack`.\n- Un DDoS coordonné est compté par campagne.\n- Type, statut, confiance, impact, attribution et source restent distincts.\n\n## 3. Répartition par type d'incident\n\n| Type | Fiches | Part |\n|---|---|---|\n| Ransomware | 5 | 83,3 % |\n| Data Leak | 0 | 0,0 % |\n| Access Sale | 0 | 0,0 % |\n| DDoS | 0 | 0,0 % |\n| Defacement | 0 | 0,0 % |\n| Account Takeover | 0 | 0,0 % |\n| System Intrusion | 1 | 16,7 % |\n| Malware | 0 | 0,0 % |\n| Operational Fraud | 0 | 0,0 % |\n\n## 4. Pays x type\n\n| Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Sénégal | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Cameroun | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Maurice | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Angola | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Tunisie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Mozambique | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |\n\n## 5. Répartition régionale\n\n| Région | Fiches | Part |\n|---|---|---|\n| Afrique australe | 2 | 33,3 % |\n| Afrique de l'Ouest | 1 | 16,7 % |\n| Afrique centrale | 1 | 16,7 % |\n| Océan Indien | 1 | 16,7 % |\n| Afrique du Nord | 1 | 16,7 % |\n\n## 6. Répartition sectorielle\n\n| Secteur | Fiches | Part |\n|---|---|---|\n| Gouvernement / Administration | 2 | 33,3 % |\n| Technologie / IT | 1 | 16,7 % |\n| Télécommunications | 1 | 16,7 % |\n| Aviation | 1 | 16,7 % |\n| Industrie / Fabrication | 1 | 16,7 % |\n\n## 7. Acteurs / groupes\n\n| Acteur / Groupe | Fiches | Part |\n|---|---|---|\n| Unknown | 2 | 33,3 % |\n| hunters | 1 | 16,7 % |\n| spacebears | 1 | 16,7 % |\n| arcusmedia | 1 | 16,7 % |\n| orca | 1 | 16,7 % |\n\n## 8. Maturité des preuves\n\n| Position de preuve | Fiches | Part |\n|---|---|---|\n| Claim - Unverified | 4 | 66,7 % |\n| Confirmed | 2 | 33,3 % |\n\n### Confiance\n\n| Confiance | Fiches | Part |\n|---|---|---|\n| Low | 4 | 66,7 % |\n| Very High | 2 | 33,3 % |\n\n## 9. Chronologie\n\n## 10. Analyse CTI par type\n\n### Ransomware - 5\n\n**5 fiche(s) (83,3 %).** Principaux pays : Sénégal (1), Cameroun (1), Maurice (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.\n\n### System Intrusion - 1\n\n**1 fiche(s) (16,7 %).** Principaux pays : Mozambique (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.\n\n## 11. Incidents prioritaires pour revue\n\n| Pays | Organisation | Type | Statut | Impact | Confiance |\n|---|---|---|---|---|---|\n| Angola | TAAG - Linhas Aéreas de Angola\n- **Date de l'incident:** 15 Septembre 2024\n- **Date de publication initiale / source retenue:** 16 septembre 2024\n- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif\n- **Précision chronologique:** Incident le 15 septembre ; communication TAAG le 16 ; qualification ransomware confirmée rétrospectivement par l'autorité.\n- **Acteur / Groupe:** Unknown\n- **Secteur:** Aviation\n- **Site web:** [taag.com](https://www.taag.com/)\n- **Statut:** Authority Confirmed\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Very High\n- **Niveau d'impact:** Level 4\n- **Analyse:** TAAG a confirmé une cyberattaque et des perturbations de services internes. L'Agência de Protecção de Dados a ensuite qualifié explicitement l'événement du 15 septembre 2024 de ransomware. Les vols et la billetterie n'ont pas été interrompus selon les sources de l'audit. AFRINTEL conserve l'incident en septembre 2024 et distingue la date de confirmation réglementaire de la date de l'attaque.\n- **Sources publiques:** [Agência de Protecção de Dados](https://apd.ao/ao/gca/index.php?id=218&preview=1) | [VOA Português](https://www.voaportugues.com/a/ataque-cibern%C3%A9tico-n%C3%A3o-paralisa-opera%C3%A7%C3%B5es-da-taag/7787321.html) | [Portal de TI Angola](https://pti.ao/ataque-cibernetico-a-taag-afectou-dados-contabilisticos-da-empresa/)\n\n---------------------------- | Ransomware | Authority Confirmed | Level 4 | Very High |\n| Mozambique | Comissão Nacional de Eleições (CNE)\n- **Date de l'incident:** 28 Septembre 2024\n- **Date de publication initiale / source retenue:** 30 septembre 2024\n- **Date de découverte AFRINTEL:** 23 août 2026 - audit rétrospectif\n- **Précision chronologique:** Date exacte rapportée comme samedi 28 septembre par la CNE/Lusa.\n- **Acteur / Groupe:** Unknown\n- **Secteur:** Government / Administration\n- **Site web:** [cne.org.mz](https://www.cne.org.mz/)\n- **Statut:** Victim Confirmed\n- **Type d'incident:** System Intrusion\n- **Niveau de confiance:** Very High\n- **Niveau d'impact:** Level 3\n- **Analyse:** Les pages web de la CNE ont été ciblées le 28 septembre. L'organisme a déclaré avoir repris le contrôle, renforcé la sécurité et conservé l'intégrité des données. Les sources décrivent aussi une tentative ultérieure de diffusion d'un lien malveillant utilisant l'identité visuelle électorale. Les éléments ne permettent pas de conclure à un DDoS ou à un défacement classique ; AFRINTEL retient `System Intrusion` sans inférer de Data Leak.\n- **Sources publiques:** [Club of Mozambique](https://clubofmozambique.com/news/mozambique-elections-election-data-safe-despite-cyber-attack-watch/) | [AMAN Alliance / Lusa](https://www.aman-alliance.org/Home/ContentDetail/80863) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)\n\n---------------------------- | System Intrusion | Victim Confirmed | Level 3 | Very High |\n| Cameroun | CNPS Cameroun\n- **Acteur / Groupe:** spacebears\n- **Secteur:** Government / Administration\n- **Site web:** [cnps.cm](https://www.cnps.cm)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 3\n- **Description victime:** La Caisse Nationale de Prévoyance Sociale (CNPS) du Cameroun est l'organisme public chargé de la gestion de la sécurité sociale et des prestations sociales des travailleurs.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |\n| Maurice | Emtel\n- **Acteur / Groupe:** arcusmedia\n- **Secteur:** Telecommunications\n- **Site web:** [emtel.com](https://www.emtel.com)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 3\n- **Description victime:** Emtel est un opérateur mobile mauricien fournissant des infrastructures de télécommunications, des services voix, des données haut débit et des services numériques.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 3 | Low |\n| Sénégal | Sesam Informatics\n- **Acteur / Groupe:** hunters\n- **Secteur:** Technology / IT\n- **Site web:** [sesam-informatics.com](https://www.sesam-informatics.com)\n- **Statut:** Claim - Unverified\n- **Type d'incident:** Ransomware\n- **Niveau de confiance:** Low\n- **Niveau d'impact:** Level 2\n- **Description victime:** Sesam Informatics est une entreprise sénégalaise de technologies et de services logiciels opérant dans les solutions numériques et le développement informatique.\n- **Note de fiabilité:** Le corpus fourni pour septembre documente une publication ransomware, mais ne fournit ni rapport DFIR public, ni échantillon de données, ni confirmation indépendante de la victime permettant d'établir une compromission réussie.\n- **Analyse:** AFRINTEL enregistre la publication comme une revendication ransomware. Les éléments fournis ne permettent pas d'établir un chiffrement, une perturbation opérationnelle, l'étendue d'une exfiltration, l'accès initial ou une réponse confirmée de la victime. La fiche reste donc `Claim - Unverified`.\n\n---------------------------- | Ransomware | Claim - Unverified | Level 2 | Low |\n\n> Sélection structurée selon impact, statut et confiance ; ce n'est pas un classement absolu de gravité.\n\n## 12. Intelligence gaps et corrections\n\n- vecteur d'accès initial souvent inconnu ;\n- date technique de compromission parfois différente de la date de publication ;\n- volumes revendiqués rarement vérifiables intégralement ;\n- attribution technique souvent limitée au compte de publication ;\n- republications historiques suivies séparément.\n\n## 13. Recommandations\n\n- MFA résistante au phishing, PAM et moindre privilège ;\n- segmentation, sauvegardes immuables et tests de restauration ;\n- centralisation EDR/IAM/VPN/WAF/DNS/cloud/applications ;\n- détection des exports massifs, archives inhabituelles et transferts sortants ;\n- conservation séparée des dates d'incident, publication initiale, repost et découverte AFRINTEL.\n\n## 14. Conclusion\n\nSeptembre 2024 contient **6 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "fr",
-      "published": "2024-09-16T00:00:00Z",
+      "published": "2024-09-28T00:00:00Z",
       "report_types": [
         "threat-report"
       ],
@@ -968,38 +1032,39 @@
         "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
         "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
         "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-        "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
         "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
         "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
         "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
-        "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-        "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+        "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+        "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+        "identity--069316cc-0350-50ac-8357-aff39fbecb93",
         "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
         "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
         "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
-        "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-        "incident--7a50d127-653c-56d4-a201-d305f96d1e08"
+        "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+        "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+        "incident--9c33b939-e0cd-580e-b3e6-bc7666296394"
       ],
       "x_afrintel_source_path": "CyberAttackAfrica/2024/09-september/README_FR.md",
       "x_afrintel_report_kind": "monthly-cti",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 5,
-      "x_afrintel_ransomware_count": 4,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_total_incidents": 6,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
       "x_afrintel_access_sale_count": 0,
-      "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 5
+      "x_afrintel_defacement_count": 1,
+      "x_afrintel_victim_identity_count": 6
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--7bdda5f6-394e-5cd7-be73-3141f81ee3be",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "AFRINTEL monthly statistics - September 2024",
       "description": "# AFRINTEL CTI statistics - September 2024\n\n## Summary\n\nThis statistical sheet is compiled from the 5 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.\n\n| Indicator | Value |\n|---|---:|\n| Total incidents | 5 |\n| Ransomware | 4 |\n| Data leaks | 1 |\n| Access sales | 0 |\n| Defacement | 0 |\n| Unclassified public claims | 0 |\n| Countries | 5 |\n| Sectors | 5 |\n| Actors / sources | 5 |\n\n## 1. Country\n\n| Country | Incidents |\n|---|---:|\n| 🇸🇳 Senegal | 1 |\n| 🇨🇲 Cameroon | 1 |\n| 🇲🇺 Mauritius | 1 |\n| 🇹🇳 Tunisia | 1 |\n| 🇳🇬 Nigeria | 1 |\n\n## 2. Sector\n\n| Sector | Incidents |\n|---|---:|\n| Technologies | 1 |\n| Government / Social Security | 1 |\n| Telecommunications | 1 |\n| Manufacturing (Plastics) | 1 |\n| Defense / National Security | 1 |\n\n## 3. Actor / source\n\n| Actor / source | Incidents |\n|---|---:|\n| hunters | 1 |\n| spacebears | 1 |\n| arcusmedia | 1 |\n| orca | 1 |\n| NizaarFarah (source account) | 1 |\n\n## 4. Type\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 4 |\n| Data Leak | 1 |\n\n## CTI reading\n\nThe monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "en",
-      "published": "2024-09-16T00:00:00Z",
+      "published": "2024-09-28T00:00:00Z",
       "report_types": [
         "threat-report"
       ],
@@ -1031,38 +1096,39 @@
         "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
         "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
         "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-        "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
         "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
         "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
         "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
-        "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-        "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+        "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+        "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+        "identity--069316cc-0350-50ac-8357-aff39fbecb93",
         "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
         "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
         "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
-        "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-        "incident--7a50d127-653c-56d4-a201-d305f96d1e08"
+        "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+        "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+        "incident--9c33b939-e0cd-580e-b3e6-bc7666296394"
       ],
       "x_afrintel_source_path": "statistics/2024/09-september/README.md",
       "x_afrintel_report_kind": "monthly-statistics",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 5,
-      "x_afrintel_ransomware_count": 4,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_total_incidents": 6,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
       "x_afrintel_access_sale_count": 0,
-      "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 5
+      "x_afrintel_defacement_count": 1,
+      "x_afrintel_victim_identity_count": 6
     },
     {
       "type": "report",
       "spec_version": "2.1",
       "id": "report--6d82456f-1930-5efd-8abb-4a23a81e2f15",
-      "created": "2026-08-20T21:38:32Z",
-      "modified": "2026-08-20T21:38:32Z",
+      "created": "2026-08-25T08:51:53Z",
+      "modified": "2026-08-25T08:51:53Z",
       "name": "Statistiques mensuelles AFRINTEL - Septembre 2024",
       "description": "# Statistiques CTI AFRINTEL - Septembre 2024\n\nCette fiche reprend les 5 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.\n\n| Indicateur | Valeur |\n|---|---:|\n| Total incidents | 5 |\n| Ransomware | 4 |\n| Fuites de données | 1 |\n| Pays touchés | 5 |\n| Secteurs | 5 |\n| Acteurs / sources | 5 |\n\n## Pays\n\n| Pays | Incidents |\n|---|---:|\n| 🇸🇳 Sénégal | 1 |\n| 🇨🇲 Cameroun | 1 |\n| 🇲🇺 Maurice | 1 |\n| 🇹🇳 Tunisie | 1 |\n| 🇳🇬 Nigeria | 1 |\n\n## Secteurs\n\n| Secteur | Incidents |\n|---|---:|\n| Technologies / Développement logiciel | 1 |\n| Gouvernement / Sécurité sociale | 1 |\n| Télécommunications | 1 |\n| Industrie manufacturière / Plasturgie | 1 |\n| Défense / Sécurité Nationale | 1 |\n\n## Acteurs / sources\n\n| Acteur / source | Incidents |\n|---|---:|\n| hunters | 1 |\n| spacebears | 1 |\n| arcusmedia | 1 |\n| orca | 1 |\n| NizaarFarah (compte source) | 1 |\n\n## Types\n\n| Type | Incidents |\n|---|---:|\n| Ransomware | 4 |\n| Data Leak | 1 |\n\n**AFRINTEL** - TLP:CLEAR",
       "lang": "fr",
-      "published": "2024-09-16T00:00:00Z",
+      "published": "2024-09-28T00:00:00Z",
       "report_types": [
         "threat-report"
       ],
@@ -1094,27 +1160,28 @@
         "threat-actor--435995b4-091e-5386-bc8d-7f75455877e3",
         "threat-actor--9810ce90-ce5d-5db4-a663-33c0f1334153",
         "threat-actor--6fcf8c0e-1402-5dfc-be89-e87bcef977e6",
-        "threat-actor--607dc486-b5a9-540a-9641-60cc31a202dc",
         "identity--2a18d9a4-a1fa-5506-9dd8-d669c99a365c",
         "identity--20cd731b-6e67-5e24-9404-296ef2b47f84",
         "identity--b0ab25a8-b978-56f8-924a-c732f9b397a3",
-        "identity--1814a3e9-08e7-53a7-8dd5-f4fdb36e3099",
-        "identity--d1fa0d35-5c52-5315-aad1-54fa9d025881",
+        "identity--1cbe8c4b-5ca0-5635-9e4d-b59cb999a70a",
+        "identity--3b633105-6772-5f16-8ef6-5486b1aab757",
+        "identity--069316cc-0350-50ac-8357-aff39fbecb93",
         "incident--0d94b3b7-82b0-5a2d-8df8-0c6df6f82e67",
         "incident--61d8084f-8ceb-5f12-92b5-f83fcb250b6f",
         "incident--7547d1b9-e210-5cb0-abd0-8fce1c4fdf50",
-        "incident--d00d2634-ce06-5c7d-8383-1623039c1642",
-        "incident--7a50d127-653c-56d4-a201-d305f96d1e08"
+        "incident--d2ac0d08-970a-5521-a9bf-627b99f3dcac",
+        "incident--28c6b7c2-5b2a-5148-8382-a432fc3d9081",
+        "incident--9c33b939-e0cd-580e-b3e6-bc7666296394"
       ],
       "x_afrintel_source_path": "statistics/2024/09-september/README_FR.md",
       "x_afrintel_report_kind": "monthly-statistics",
       "x_afrintel_author_ref": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
-      "x_afrintel_total_incidents": 5,
-      "x_afrintel_ransomware_count": 4,
-      "x_afrintel_data_leak_count": 1,
+      "x_afrintel_total_incidents": 6,
+      "x_afrintel_ransomware_count": 5,
+      "x_afrintel_data_leak_count": 0,
       "x_afrintel_access_sale_count": 0,
-      "x_afrintel_defacement_count": 0,
-      "x_afrintel_victim_identity_count": 5
+      "x_afrintel_defacement_count": 1,
+      "x_afrintel_victim_identity_count": 6
     }
   ]
 }
