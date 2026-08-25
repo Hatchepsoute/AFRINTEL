@@ -15,7 +15,7 @@
 
 ---
 
-**AFRINTEL** est un projet open source de Cyber Threat Intelligence consacré aux incidents cyber affectant les organisations africaines dans les 54 pays du continent. Le projet documente les ransomwares, les fuites de données, les ventes d'accès, les DDoS, les défacements, la fraude opérationnelle ainsi que d'autres activités de menace pertinentes observées via des sources Dark Web, des leak sites, des forums underground et l'OSINT. Le type d'incident, le statut, le niveau de confiance et l'impact sont traités séparément afin qu'une revendication criminelle ne soit pas automatiquement assimilée à une compromission confirmée.
+**AFRINTEL** est un projet open source de Cyber Threat Intelligence consacré aux incidents cyber affectant les organisations africaines dans les 54 pays du continent. Le projet documente les neuf types d'incident canoniques AFRINTEL : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud. Ces événements sont observés via des sources Dark Web, des leak sites, des forums underground et l'OSINT. Le type d'incident, le statut, le niveau de confiance et l'impact sont traités séparément afin qu'une revendication criminelle ne soit pas automatiquement assimilée à une compromission confirmée.
 
 | Pays surveillés | Acteurs de menace suivis | Période couverte | Formats |
 | :---: | :---: | :---: | :---: |
@@ -56,10 +56,23 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 
 | Année | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
-| 2024 | **128** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **197** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2024 | **119** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2025 | **224** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**Référence 2024 corrigée :** 128 fiches cyber documentées dans 28 pays. Parmi elles, **127 appartiennent à la taxonomie AFRINTEL principale à six types** : 91 Ransomware, 31 Data Leak, 3 Access Sale, 1 Defacement et 1 Operational Fraud. **GTBank est conservé séparément comme une tentative d'attaque confirmée par la victime**, car les éléments disponibles ne permettent pas de la forcer dans une catégorie principale correspondant à une compromission réussie.
+**Référence 2024 corrigée :** **119 incidents canoniques dans 30 pays africains**, reclassés selon la même taxonomie à neuf types que celle utilisée pour 2025 : 91 Ransomware, 13 Data Leak, 4 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware et 1 Operational Fraud.
+
+**Référence 2025 validée :** **224 incidents canoniques dans 30 pays africains** : 121 Ransomware, 80 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **113**.
+
+---
+
+## Rapports CTI semestriels
+
+| Période | Fiches documentées | FR | EN |
+| :--- | ---: | :--- | :--- |
+| S1 2024 | **45** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
+| S1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
+| S2 2025 | **113** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
+| S1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
 ---
 
@@ -103,8 +116,6 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Avril vs Mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs Juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 | Juin vs Juillet 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
-| Rapport S1 2024 | [FR](CyberAttackAfrica/2024/README_H1_FR.md) | [EN](CyberAttackAfrica/2024/README_H1.md) |
-| Rapport S1 2026 | [FR](CyberAttackAfrica/2026/README_H1_FR.md) | [EN](CyberAttackAfrica/2026/README_H1.md) |
 
 ---
 
@@ -147,7 +158,7 @@ Chaque bundle mensuel STIX 2.1 contient des descriptions bilingues des incidents
 
 AFRINTEL sépare **type d'incident**, **statut**, **niveau de confiance** et **impact**. Une publication ransomware sur un leak site reste une revendication tant qu'aucun élément plus solide n'est disponible. Les échantillons publiés, confirmations des victimes, confirmations gouvernementales et corroborations ultérieures sont conservés comme des états de preuve différents.
 
-Les republications historiques sont datées séparément de la fuite revendiquée sous-jacente lorsque cette distinction est connue. Les fiches multi-pays comptent une seule fois dans les totaux dédupliqués, mais peuvent produire plusieurs occurrences géographiques. Lorsqu'un événement ne peut pas être rattaché sans distorsion à l'un des six types principaux, AFRINTEL documente explicitement l'exception au lieu d'inventer une classification.
+Les republications historiques sont datées séparément de la fuite revendiquée sous-jacente lorsque cette distinction est connue. Les fiches multi-pays comptent une seule fois dans les totaux dédupliqués, mais peuvent produire plusieurs occurrences géographiques. AFRINTEL utilise neuf types d'incident canoniques : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud. Les cas ne pouvant pas encore être classés avec un niveau de preuve suffisant restent en investigation plutôt que d'être forcés dans une catégorie.
 
 ---
 
