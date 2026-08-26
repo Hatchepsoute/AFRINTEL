@@ -22,22 +22,112 @@ Janvier 2026 a rapporté **21 incidents cyber** contre des cibles africaines, re
 
 👉🏾 [Voir la liste complète des victimes](./victims_FR.md)
 
-### 1.1 Comparaison avec le mois précédent
+### 1.1 Étude comparative - Décembre 2025 vs Janvier 2026
 
-> La comparaison utilise le corpus AFRINTEL de décembre 2025 harmonisé et les fiches victimes validées de janvier 2026. Elle décrit les incidents documentés et ne prouve pas, à elle seule, une variation équivalente du nombre réel de compromissions.
+> Cette comparaison utilise le **corpus AFRINTEL corrigé de décembre 2025 (19 incidents)** et le corpus victimes validé de janvier 2026 (21 incidents). La baseline de décembre intègre la Data Leak de Yalla Tager Marketplace ajoutée rétrospectivement au 26 décembre 2025. Les chiffres décrivent la visibilité documentée par AFRINTEL et ne doivent pas être interprétés comme une mesure directe du nombre réel de compromissions en Afrique.
+
+#### 1.1.1 Évolution du volume global et des types d'incident
 
 | Indicateur | Décembre 2025 | Janvier 2026 | Évolution observée |
 |---|---:|---:|---:|
-| Total incidents | 18 | 21 | **+3 (+16,7 %)** |
+| Total incidents | **19** | **21** | **+2 (+10,5 %)** |
 | Ransomware | 14 | 17 | **+3 (+21,4 %)** |
-| Data Leak | 4 | 2 | **-2 (-50,0 %)** |
+| Data Leak | 5 | 2 | **-3 (-60,0 %)** |
 | Access Sale | 0 | 1 | **+1 (nouveau)** |
-| DDoS | 0 | 0 | **0 (stable)** |
+| DDoS | 0 | 0 | **Stable** |
 | Defacement | 0 | 1 | **+1 (nouveau)** |
-| Operational Fraud | 0 | 0 | **0 (stable)** |
+| Account Takeover | 0 | 0 | **Stable** |
+| System Intrusion | 0 | 0 | **Stable** |
+| Malware | 0 | 0 | **Stable** |
+| Operational Fraud | 0 | 0 | **Stable** |
 
-Le volume documenté augmente globalement de **16,7 %**. Le Ransomware passe de 14 à 17 fiches et sa part progresse de **77,8 % à 81,0 %**. Les Data Leak passent de 4 à 2. Janvier introduit également un Access Sale et un Defacement, deux catégories absentes du corpus harmonisé de décembre.
+Le volume mensuel documenté progresse donc modérément, de **19 à 21 incidents (+10,5 %)**, mais sa composition évolue nettement. Le Ransomware passe de **14 à 17 fiches** et sa part augmente de **73,7 % à 81,0 %**. À l'inverse, les Data Leak passent de **5 à 2 fiches**, soit une baisse de leur part de **26,3 % à 9,5 %**.
 
+Décembre ne comportait que des Ransomware et Data Leak. Janvier introduit **1 Access Sale** et **1 Defacement**, qui représentent ensemble **2 des 21 incidents (9,5 %)**. Le mois est donc davantage dominé par le ransomware tout en présentant une légère diversification hors des deux catégories principales.
+
+```mermaid
+xychart-beta
+    title "Comparaison des types d'incident - Décembre 2025 vs Janvier 2026"
+    x-axis ["Ransomware", "Data Leak", "Access Sale", "Defacement"]
+    y-axis "Incidents" 0 --> 18
+    bar [14, 5, 0, 0]
+    bar [17, 2, 1, 1]
+```
+
+**Légende des séries :** première série = décembre 2025 | deuxième série = janvier 2026.
+
+#### 1.1.2 Évolution géographique
+
+Le nombre de pays représentés passe de **10 en décembre à 12 en janvier (+20,0 %)**. Dans le même temps, la concentration sur les trois premiers pays diminue :
+
+- **Décembre 2025 :** Égypte (6), Afrique du Sud (3), Tunisie (3) = **12 incidents sur 19 (63,2 %)**.
+- **Janvier 2026 :** Afrique du Sud (4), Kenya (4), Égypte (3) = **11 incidents sur 21 (52,4 %)**.
+
+Janvier présente donc une dispersion géographique plus large. Le changement le plus visible est la progression du **Kenya de 1 à 4 fiches**, tandis que l'**Égypte passe de 6 à 3** et la **Tunisie de 3 à 1**.
+
+| Pays | Décembre 2025 | Janvier 2026 | Évolution |
+|---|---:|---:|---:|
+| Kenya | 1 | 4 | **+3 (+300,0 %)** |
+| Afrique du Sud | 3 | 4 | **+1 (+33,3 %)** |
+| Maroc | 1 | 2 | **+1 (+100,0 %)** |
+| Égypte | 6 | 3 | **-3 (-50,0 %)** |
+| Tunisie | 3 | 1 | **-2 (-66,7 %)** |
+| Algérie | 1 | 1 | **Stable** |
+
+Le profil de décembre était fortement porté par la visibilité en Afrique du Nord, notamment en Égypte et en Tunisie. En janvier, une part plus importante de l'activité observée se déplace vers des cibles d'**Afrique de l'Est et d'Afrique australe**, particulièrement au Kenya et en Afrique du Sud.
+
+#### 1.1.3 Évolution sectorielle
+
+La hiérarchie sectorielle change également entre les deux mois.
+
+| Indicateur sectoriel | Décembre 2025 | Janvier 2026 | Lecture |
+|---|---:|---:|---|
+| Finance / services financiers | 4 | 4 | **Stable en tête** |
+| Gouvernement / administration publique | 2 | 4 | **+2 ; rejoint la première place** |
+| Santé / médical | 3 | 1 | **-2** |
+| Technologie / IT | 1 | 2 | **+1** |
+| Transport / logistique | - | 3 | **Plus visible en janvier** |
+| Industrie / ingénierie | 2 | 3 | **Visibilité plus forte en janvier** |
+
+Décembre était dominé par **Finance / Banque (4)** et **Santé / Médical (3)**. En janvier, **Gouvernement / Administration publique et Services financiers / FinTech arrivent à égalité avec 4 incidents chacun**, devant **Transport / Logistique et Industrie / Ingénierie avec 3 chacun**.
+
+Cette évolution est opérationnellement importante : janvier comprend plusieurs revendications ransomware visant des organisations liées aux services publics, aux transports, aux ports, aux retraites, à la sécurité sociale et aux mines. Elle indique une modification de l'exposition sectorielle observée, mais les éléments source ne permettent pas d'établir un niveau équivalent de perturbation opérationnelle pour toutes ces victimes.
+
+#### 1.1.4 Concentration des acteurs / groupes
+
+Les labels d'acteurs les plus visibles changent fortement entre les deux mois.
+
+- **Décembre :** `qilin` (3) et `lockbit5` (3) dominaient, soit ensemble **6 des 19 fiches (31,6 %)**.
+- **Janvier :** `TheGentlemen` (6) et `tengu` (5) représentent **11 des 21 fiches (52,4 %)**.
+
+Janvier présente donc une concentration nettement plus forte autour de deux groupes ransomware. TheGentlemen apparaît en **Égypte, au Kenya, à Maurice et en Afrique du Sud**, tandis que tengu est observé en **Algérie, Égypte, Kenya, Maroc et Tunisie**.
+
+Plusieurs labels persistent d'un mois à l'autre (`qilin`, `devman`, `direwolf`), mais la hiérarchie globale change. La visibilité mensuelle des acteurs peut donc évoluer rapidement et ne doit pas être interprétée comme un classement stable de la prévalence des menaces sur le long terme.
+
+#### 1.1.5 Maturité des preuves
+
+| Statut de preuve | Décembre 2025 | Janvier 2026 |
+|---|---:|---:|
+| Claim - Unverified | 13 (68,4 %) | 14 (66,7 %) |
+| Claim - Data Sample Published | 6 (31,6 %) | 6 (28,6 %) |
+| Under Investigation | 0 | 1 (4,8 %) |
+| **Total** | **19** | **21** |
+
+Le nombre absolu de fiches accompagnées d'un échantillon reste **stable à six**, alors que janvier comporte deux incidents supplémentaires. Janvier comprend également une fiche **Under Investigation**, correspondant au défacement coordonné des sites gouvernementaux nigériens.
+
+Il n'y a donc **pas d'amélioration nette de la maturité des preuves d'un mois à l'autre**. La majorité des fiches des deux mois reste constituée de revendications criminelles ou de publications accompagnées d'éléments de preuve, sans confirmation systématique des victimes.
+
+#### 1.1.6 Lecture CTI
+
+Cinq signaux comparatifs ressortent :
+
+1. **Intensification du ransomware :** +3 fiches et une hausse de **7,3 points de pourcentage** dans le corpus mensuel.
+2. **Recul de la visibilité Data Leak :** 5 à 2 fiches (**-60,0 %**), sans que cela puisse être assimilé à une baisse équivalente des fuites réelles en Afrique.
+3. **Réduction de la concentration géographique :** la part des trois premiers pays passe de **63,2 % à 52,4 %**, tandis que le nombre de pays représentés passe de 10 à 12.
+4. **Hausse de la concentration des acteurs :** les deux principaux labels passent de **31,6 % des fiches de décembre à 52,4 % en janvier**, sous l'effet de TheGentlemen et tengu.
+5. **Légère diversification des types de menace :** janvier ajoute un Access Sale et un Defacement, alors que décembre ne comportait que Ransomware et Data Leak.
+
+Pour les SOC, le passage de décembre à janvier renforce les priorités autour de la **préparation ransomware, la surveillance des accès privilégiés, la revue des expositions IAB, le durcissement des applications web gouvernementales et la corrélation intersectorielle**. Pour la CTI, les principaux points de surveillance sont l'activité transfrontalière de **TheGentlemen et tengu**, les revendications répétées de vente d'accès visant l'infrastructure gouvernementale togolaise, ainsi que toute republication ou revente secondaire de données associées aux fuites de décembre et janvier.
 ## 2. Méthodologie
 
 - **Périmètre** : 54 pays africains.
@@ -385,7 +475,7 @@ Janvier 2026 se clôture avec **21 incidents documentés ou revendiqués dans 12
 
 L'Afrique du Sud et le Kenya comptent quatre incidents chacun, devant l'Égypte avec trois. TheGentlemen et tengu représentent **11 des 21 fiches**, tandis que la partie hors ransomware comprend deux publications de données, une vente d'accès annoncée et un défacement gouvernemental coordonné.
 
-Par rapport au corpus harmonisé de décembre 2025, le total documenté passe de **18 à 21 (+16,7 %)**. Le Ransomware augmente de **14 à 17 (+21,4 %)**, les Data Leak diminuent de **4 à 2 (-50,0 %)**, tandis que janvier enregistre **1 Access Sale** et **1 Defacement**, contre aucun en décembre.
+Par rapport au corpus corrigé de décembre 2025, le total documenté passe de **19 à 21 (+10,5 %)**. Le Ransomware augmente de **14 à 17 (+21,4 %)**, les Data Leak diminuent de **5 à 2 (-60,0 %)**, tandis que janvier enregistre **1 Access Sale** et **1 Defacement**, contre aucun en décembre. La comparaison met également en évidence une dispersion géographique plus large, mais une concentration plus forte autour des deux principaux groupes ransomware, TheGentlemen et tengu.
 
 **AFRINTEL** - Cyber Threat Intelligence africaine  
 [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)

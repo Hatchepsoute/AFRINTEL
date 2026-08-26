@@ -4,13 +4,50 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (9 victims)
+# List of African cyberattack victims in August 2026 ( victims)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## August 2026
 
 ### 01 August 2026
+### 5 June 2026
+
+#### 🇪🇬 Egypt - Egyptian Local Services Portal (probable attribution)
+
+* **Initial publication date:** 5 June 2026
+- **AFRINTEL detection date:** 1 August 2026
+* **Actor / Group:** R3D3MPTION
+* **Sector:** Government / Administration
+* **Website:** [lgs.gov.eg](https://www.lgs.gov.eg/)
+* **Status:** Claim - Data Sample Published
+* **Incident type:** Data Leak
+* **Confidence level:** High
+* **Impact level:** Level 4
+* **Source type:** Underground Forum - Direct AFRINTEL Observation
+* **Victim Description:**
+  The Egyptian Local Services Portal, `lgs.gov.eg` (بوابة خدمات المحليات), is a government platform providing citizens and businesses with access to various local administrative services online. The portal is part of the digitization of services delivered by governorates, cities and local technology centers across Egypt. Attribution of the incident to this platform is assessed as probable based on the convergence between the analysed data schema, the published documents and the known functions of the portal.
+
+* **Analysis:**
+  On 5 June 2026, actor R3D3MPTION published an offer claiming to have compromised an Egyptian government service related to local services. The actor claims possession of more than **70 GB of documents**, more than **5 GB of personal data**, and a `CITIZENS.CSV` file containing **13,117,317 records**. The publication also references datasets related to users, vehicles and companies, as well as approximately **118,000 citizen documents**, described by the actor as identity images, contracts and other administrative documents. These overall volumes remain actor claims and have not been validated.
+
+  The provided and analysed `citizens_sample.csv` contains **9,938 records and 42 columns**, representing **9,933 distinct citizen identifiers**. The analysis identifies structured information including names, national identifiers, passport identifiers, addresses, dates of birth, contact information, nationality and civil-status information, professional data, disability-related information and several administrative identifiers. Of the **9,805 populated national identifier values**, **9,408** contain 14 digits, consistent with the format used for Egyptian national identifiers.
+
+  The analysed dataset also contains recent application timestamps. The `InsertDate` field is populated for **9,435 records**, including **3,544** dated **3 June 2026** and **778** dated **2 June 2026**. These values suggest that some records present in the sample were still being populated shortly before the 5 June publication. They do not, however, establish the date of initial access, exfiltration or compromise.
+
+  Documents visible in the publication include Egyptian identity documents, administrative forms, plans, property-related documents and various records associated with local administrative procedures. The combination of these documents with the citizen-data structure and the announced `Users`, `Cars` and `Companies` datasets is strongly functionally consistent with the Egyptian Local Services Portal ecosystem. This convergence supports a **probable attribution to `lgs.gov.eg` or an associated back-end infrastructure**, but does not constitute official confirmation that the platform was compromised.
+
+  The analysed sample represents approximately **0.076%** of the claimed 13,117,317 records. It therefore cannot validate the completeness of the announced dataset, the claimed **70+ GB of documents**, **5+ GB of PII**, or approximately **118,000 documents**. The initial access vector, systems actually affected, exfiltration method and full scope of the incident remain unknown.
+
+  The sensitivity of the observed data, its administrative nature, the presence of identity documents and the potentially national scope justify an **Impact Level 4** assessment. Primary risks include identity theft, document fraud, highly contextualized spear-phishing and cross-correlation of exposed administrative information.
+
+* **Recommendations:**
+
+  * Review application, IAM, API, database and storage logs for bulk extraction, abnormal queries or unusual access preceding 5 June 2026, with particular attention to 2 and 3 June.
+  * Increase monitoring of administrative and technical accounts, reassess access rights to citizen data, and implement detection controls for bulk exports, unusual API activity and outbound transfers of sensitive documents.
+
+
+
 #### 🇿🇦 South Africa - South African Reserve Bank (SARB)
 
 - **Initial publication date:** 01 August 2026
@@ -333,13 +370,48 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 
   **Unknown:** AFRINTEL did not receive the advertised Customer Contacts or Support Tickets tables, nor the approximately 642,000-contact archive. Sample links were not followed; no phone number, name, address, customer identifier or ticket is reproduced; and no Afribaba confirmation is available. The supplied file cannot confirm the claimed volume, technical origin, data validity, access method, exposure of phone numbers or asking price.
 
+#### 🇨🇲 Cameroon - CCA Bank
+* **Initial publication date:** 20 August 2026
+* **AFRINTEL detection date:** 20 August 2026
+* **Actor / Group:** Everest
+* **Sector:** Finance / Banking
+* **Website:** [cca-bank.com](https://cca-bank.com)
+* **AFRINTEL status:** Claim - Disclosure Pending
+* **Incident type:** Ransomware / Data extortion with claimed data exfiltration
+* **Confidence level:** Medium
+* **Impact level:** Level 4
+* **Description:**
+  CCA Bank is a Cameroonian banking institution. On 20 August 2026, the bank appeared on the Everest ransomware group's leak site, where the group claimed a compromise involving data exfiltration.
+* **Analysis:**
+  **Observed:** On 20 August 2026, AFRINTEL observed an Everest publication targeting `cca-bank.com`. At the time of observation, the victim entry still displayed an active countdown before the announced release of the data, indicating that the extortion phase remained ongoing.
+
+  The available technical inventory identifies **11,837 files totaling 18.92 GB**, together with **17 nested RAR archives totaling 120.31 MB** whose internal files were not included in the file count. The total known volume therefore reaches approximately **19.04 GB**.
+
+  The inventoried material spans several sensitive banking functions, including credit applications and lending analysis, customer portfolios and exposures, financial and treasury information, prudential reporting, regulatory material including COBAC-related documents, AML/KYC and AML/CFT records, identity documentation, legal and recovery material, HR information, internal procedures, IT documentation, access and authorization management, and banking-system migration and reconciliation files.
+
+  Several files described in the inventory correspond to large structured exports. One regulatory workbook contains a **591,799-row customer-base table**, a **489,155-row individual-deposit table**, and a **350,011-row customer-exposure table**. Another credit export contains **250,688 credit rows** involving **67,973 unique client identifiers**. V10/V11 migration and reconciliation datasets also contain hundreds of thousands to several million lines.
+
+  **Assumption:** The functional depth and consistency of the categories described in the inventory are compatible with material originating from the business and technical environments of a banking institution. If authentic, the potential exposure would extend well beyond a conventional document leak and could involve customer, financial, regulatory, KYC, operational and technical information.
+
+  The combination of identity information, credit records, financial data and internal documentation could facilitate **spear-phishing, financial fraud, identity theft, document fraud, account compromise and secondary targeting of customers, employees, suppliers or business partners**.
+
+  IT documentation concerning access management, VPN procedures, account administration and system migrations could also provide other malicious actors with information useful for understanding internal processes and preparing follow-on attacks.
+
+  **Unknown:** AFRINTEL has not directly examined the complete set of **11,837 raw files** claimed by Everest. This assessment is based on the observed Everest publication and the available technical inventory. The initial-access vector, actual compromise date, exact affected systems, exfiltration method, possible encryption activity, precise scope of Everest's access and any official confirmation from CCA Bank remain unknown.
+
+  The observed countdown indicates an announced disclosure but does not establish whether the data will actually be released, whether negotiations are ongoing or whether any agreement has been reached between the victim and the attackers.
+
+  AFRINTEL does not reproduce any personal information, banking data, identity document, credential, access information or other sensitive material described in the dataset.
+
+---
 ### August 22, 2026
 #### 🇲🇦 Morocco - RAMED (Régime d’Assistance Médicale)
 
 - **Actor / Group:** JBT2026
 - **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
-- **Website:** Not specified in the provided material
+- **Website:** [sante.gov.ma](https://www.sante.gov.ma)
+- **Historical RAMED domain:** `ramed.ma` *(inactive)*
 
 - **Description:**
   RAMED, the Medical Assistance Scheme, is Morocco's former public program designed to facilitate access to healthcare for low-income and vulnerable populations. The observed publication concerns a database presented as being associated with beneficiaries of this scheme.
