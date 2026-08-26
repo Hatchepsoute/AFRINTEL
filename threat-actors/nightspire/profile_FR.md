@@ -1,183 +1,135 @@
-# NightSpire - Profil de l’acteur de menace
+# NightSpire - Profil acteur / ransomware
 
-👉🏾 [**English version available here**](./profile.md)
+👉🏾 [**English version**](./profile.md)
 
 **AFRINTEL Threat Actor Intelligence**
 
-- **Acteur / Groupe :** NightSpire
-- **Type de menace :** Ransomware / Extorsion
+- **Acteur / Opération :** NightSpire
+- **Type de menace :** Ransomware / Vol de données / Extorsion
 - **Motivation :** Financière
-- **Activité suivie par AFRINTEL :** Oui
-- **Zone géographique principale observée par AFRINTEL :** Égypte
-- **Statut de l’évaluation :** Surveillance active
-- **Dernière mise à jour :** 25 août 2026
+- **Premiers signalements publics :** 2025
+- **Zone africaine observée par AFRINTEL :** Égypte
+- **Modèle opératoire :** Non établi de manière ferme ; les sources publiques divergent sur un éventuel modèle RaaS
+- **Statut :** Surveillance active
+- **Dernière mise à jour :** 26 août 2026
 
 ---
+
 ## 1. Synthèse du renseignement
 
-NightSpire est une opération ransomware associée au vol de données, à l’extorsion et au chiffrement de fichiers.
+NightSpire est une opération ransomware associée au vol de données, à l'extorsion et au chiffrement. Les sources publiques ne s'accordent pas complètement sur son modèle opératoire. AFRINTEL ne présente donc pas le RaaS comme un fait confirmé.
 
-Des rapports publics de réponse à incident montrent que des intrusions associées à NightSpire peuvent impliquer des logiciels légitimes de prise en main à distance ainsi que des outils commerciaux utilisés pour l’accès distant, la découverte de fichiers, la préparation des données et leur exfiltration.
+Une investigation Huntress publiée en 2026 apporte des preuves utiles au niveau incident. Dans ce cas, l'acteur a utilisé RDP, Chrome Remote Desktop, AnyDesk, Everything, 7-Zip et MEGASync avant l'exécution du ransomware NightSpire. Huntress insiste aussi sur le fait que les TTP peuvent varier d'un incident à l'autre et selon les éventuels affiliés.
 
-AFRINTEL suit les activités de NightSpire affectant des organisations africaines et maintient une distinction stricte entre :
-
-- les revendications du groupe ransomware ;
-- les observations techniques documentées de manière indépendante ;
-- les évaluations analytiques AFRINTEL ;
-- les éléments techniques confirmés pour une victime spécifique.
-
-La présence d’une organisation sur le site de fuite de NightSpire ne démontre pas, à elle seule, que l’ensemble des TTP connues de NightSpire ont été utilisées contre cette organisation.
+AFRINTEL suit séparément des revendications NightSpire contre des organisations égyptiennes. Le cas Huntress ne prouve pas que la même chaîne d'attaque a été utilisée contre ces victimes africaines.
 
 ---
 
 ## 2. Observations AFRINTEL en Afrique
 
-| Date | Pays | Victime | Secteur | Élément de preuve AFRINTEL |
-|---|---|---|---|---|
-| 24 mai 2026 | Égypte | Papa John's Egypt | Restauration / Food & Beverage | Revendication ransomware NightSpire |
-| 24 mai 2026 | Égypte | Rawaj Consumer Finance | Services financiers | Revendication ransomware NightSpire |
-| 26 mai 2026 | Égypte | B Investments (Basata / Basatamfi) | Services financiers / Private Equity | Revendication ransomware NightSpire |
+| Date | Pays | Victime | Secteur | Preuve | Portée | Confiance | Provenance |
+|---|---|---|---|---|---|---|---|
+| 24 mai 2026 | Égypte | Papa John's Egypt | Restauration / Food & Beverage | Revendication ransomware | Revendication propre à la victime | Élevée | Suivi victimes AFRINTEL |
+| 24 mai 2026 | Égypte | Rawaj Consumer Finance | Services financiers | Revendication ransomware | Revendication propre à la victime | Élevée | Suivi victimes AFRINTEL |
+| 26 mai 2026 | Égypte | B Investments (Basata / Basatamfi) | Services financiers / Private Equity | Revendication ransomware | Revendication propre à la victime | Élevée | Suivi victimes AFRINTEL |
 
-### Évaluation AFRINTEL
-
-AFRINTEL a observé un cluster de trois revendications NightSpire visant des organisations égyptiennes sur une période de trois jours.
-
-Deux des trois organisations opèrent dans le secteur financier, tandis que la troisième appartient au secteur de la restauration.
-
-Cette concentration temporelle et géographique constitue un élément pertinent pour l’analyse de la victimologie et le suivi de campagne.
-
-Cependant, AFRINTEL ne dispose actuellement d’aucune télémétrie propre à ces victimes permettant de démontrer que les TTP documentées dans les investigations externes sur NightSpire ont été utilisées contre
-ces trois organisations égyptiennes.
-
-**Niveau de confiance :** élevé concernant les revendications du groupe et l’association avec les victimes ; preuves insuffisantes pour attribuer des TTP spécifiques à chaque victime.
+AFRINTEL a observé trois revendications NightSpire visant des organisations égyptiennes en trois jours. Deux des trois victimes appartiennent au secteur financier. C'est utile pour la victimologie et le suivi de campagne, mais les preuves techniques propres aux victimes restent insuffisantes pour leur attribuer les TTP observées dans l'investigation externe.
 
 ---
 
-## 3. Comportements opérationnels documentés de NightSpire
+## 3. TTP documentées au niveau incident par Huntress
 
-Les comportements suivants proviennent d’investigations techniques indépendantes et ne doivent pas être automatiquement attribués à chaque sincident NightSpire suivi par AFRINTEL.
+| Tactique | Technique | ATT&CK | Comportement | Preuve | Portée | Confiance | Provenance |
+|---|---|---|---|---|---|---|---|
+| Mouvement latéral | Remote Desktop Protocol | T1021.001 | Accès à un endpoint via RDP | Observé | Incident | Élevée | Huntress, incident mars 2026 |
+| C2 / Persistance | Remote Desktop Software | T1219.002 | Chrome Remote Desktop et AnyDesk installés comme footholds | Observé | Incident | Élevée | Huntress |
+| Discovery | File and Directory Discovery | T1083 | Everything utilisé pour localiser et consulter des fichiers | Observé | Incident | Élevée | Huntress |
+| Collection | Archive via Utility | T1560.001 | 7-Zip utilisé pour archiver des fichiers | Observé | Incident | Élevée | Huntress |
+| Exfiltration | Exfiltration to Cloud Storage | T1567.002 | MEGASync exécuté et évalué comme probablement utilisé pour l'exfiltration | Évalué | Incident | Moyenne | Huntress |
+| Impact | Data Encrypted for Impact | T1486 | Exécution de l'encrypteur NightSpire | Observé | Incident | Élevée | Huntress |
 
-| Tactique ATT&CK | Technique | ID ATT&CK | Comportement observé | Type de preuve | Confiance |
-|---|---|---|---|---|---|
-| Mouvement latéral | Remote Desktop Protocol | T1021.001 | Accès à un endpoint via RDP | Observé | Élevée |
-| Command & Control | Remote Desktop Software | T1219.002 | Déploiement de Chrome Remote Desktop et AnyDesk pour l’accès distant / la persistance | Observé | Élevée |
-| Découverte | File and Directory Discovery | T1083 | Utilisation d’Everything pour rechercher et accéder aux fichiers | Observé | Élevée |
-| Collection | Archive via Utility | T1560.001 | Utilisation de 7-Zip pour archiver des fichiers sélectionnés | Observé | Élevée |
-| Exfiltration | Exfiltration to Cloud Storage | T1567.002 | Exécution de MEGASync pendant l’intrusion, probablement utilisé pour l’exfiltration | Évalué | Moyenne |
-| Impact | Data Encrypted for Impact | T1486 | Exécution du ransomware NightSpire et chiffrement de fichiers | Observé | Élevée |
-
----
-
-## 4. Outils observés
-
-| Outil | Usage | Statut de preuve |
-|---|---|---|
-| RDP | Accès distant | Observé |
-| Chrome Remote Desktop | Accès distant / Persistance | Observé |
-| AnyDesk | Accès distant / Persistance | Observé |
-| Everything | Découverte de fichiers / Support à la collecte | Observé |
-| 7-Zip | Préparation / Archivage des données | Observé |
-| MEGASync | Exfiltration potentielle de données | Évalué |
-| VMware Workstation | Observé dans l’environnement compromis | Observé |
-| WPS Office | Observé dans l’environnement compromis | Observé |
+Huntress n'a **pas** confirmé l'affirmation de la note de rançon concernant 2,5 To de données volées. AFRINTEL ne considère donc pas ce volume comme vérifié.
 
 ---
 
-## 5. Indicateurs de compromission
+## 4. Outils observés dans le cas Huntress
 
-Les indicateurs suivants ont été rapportés lors d’investigations
-indépendantes liées à NightSpire.
+| Outil | Rôle | Preuve | Portée |
+|---|---|---|---|
+| RDP | Accès distant dans le cas documenté | Observé | Incident |
+| Chrome Remote Desktop | Foothold / accès distant | Observé | Incident |
+| AnyDesk | Foothold / accès distant | Observé | Incident |
+| Everything | Recherche de fichiers / support à la collecte | Observé | Incident |
+| 7-Zip | Préparation / archivage | Observé | Incident |
+| MEGASync | Exfiltration probable | Évalué | Incident |
+| VMware Workstation | Installé dans l'environnement compromis | Observé | Incident |
+| WPS Office | Installé dans l'environnement compromis | Observé | Incident |
 
-| Type d’indicateur | Contexte | Confiance |
-|---|---|---|
-| SHA-256 | Échantillon de l’encrypteur NightSpire - décembre 2025 | Élevée |
-| SHA-256 | Échantillon de l’encrypteur NightSpire - mars 2026 | Élevée |
-| Extension de fichier | `.nspire` utilisée pour les fichiers chiffrés | Élevée |
-| Note de rançon | `_nightspire_readme.txt` | Élevée |
-| Note de rançon | `[nspire_msg].txt` | Élevée |
-
-AFRINTEL n’affirme pas que ces indicateurs ont été observés contre les victimes africaines listées ci-dessus, sauf si des éléments techniques propres aux incidents permettent de le confirmer.
-
----
-
-## 6. Évaluation de l’attribution
-
-### Modèle de qualification des preuves
-
-AFRINTEL utilise quatre niveaux de qualification :
-
-**Observé**  
-Élément directement observé dans une télémétrie technique, une analyse de malware, une investigation de réponse à incident ou une source primaire.
-
-**Rapporté**  
-Élément documenté par une source externe fiable de renseignement ou de réponse à incident.
-
-**Évalué**  
-Conclusion analytique obtenue à partir de plusieurs observations et éléments disponibles.
-
-**Inféré**  
-Relation plausible pour laquelle les preuves techniques disponibles restent insuffisantes pour établir une attribution forte.
-
-### Évaluation actuelle de NightSpire
-
-L’association entre NightSpire et les organisations africaines répertoriées par AFRINTEL repose sur les revendications publiques du groupe ransomware.
-
-Des éléments indépendants issus d’investigations de réponse à incident documentent par ailleurs des outils et TTP associés à des opérations NightSpire.
-
-AFRINTEL ne dispose cependant pas, à ce stade, de suffisamment d’éléments techniques pour affirmer que la même chaîne d’intrusion a été utilisée contre B Investments, Rawaj Consumer Finance ou Papa John's Egypt.
-
-Cette distinction permet d’éviter que des renseignements au niveau de l’acteur soient présentés à tort comme de la télémétrie propre à une victime spécifique.
+VMware Workstation et WPS Office ont été observés, mais la source n'établit pas clairement leur rôle malveillant exact.
 
 ---
 
-## 7. Notes analytiques
+## 5. IoC historiques issus des investigations Huntress
 
-Les investigations externes montrent des variations entre plusieurs incidents NightSpire, notamment au niveau de l’encrypteur, du nom des notes de rançon et des outils utilisés.
+| Indicateur | Contexte | Date / Portée | Confiance |
+|---|---|---|---|
+| `bde50a42efc079edde1a314243ad339db2d42e343fbbcd39117803b0f5960355` | SHA-256, `enc.exe` | Incident du 2 déc. 2025 | Élevée |
+| `ad67031e2ca68764fe1a7d6632c02b02a299d59efb920710011a9a2ccf4399b7` | SHA-256, `enc.exe` | Incident du 25 mars 2026 | Élevée |
+| `.nspire` | Extension de fichiers chiffrés | Incident déc. 2025 | Élevée |
+| `_nightspire_readme.txt` | Note de rançon | Incident déc. 2025 | Élevée |
+| `[nspire_msg].txt` | Note de rançon | Incident mars 2026 | Élevée |
 
-NightSpire ne doit donc pas être modélisé comme disposant d’un ensemble figé et immuable d’IOC ou de TTP.
-
-Plusieurs hypothèses peuvent expliquer ces variations :
-
-- évolution de l’opération ransomware ;
-- modification du mode opératoire des attaquants ;
-- intervention de différents affiliés ou équipes d’intrusion ;
-- utilisation d’outils spécifiques selon les campagnes.
-
-Dans AFRINTEL, les renseignements NightSpire doivent donc être maintenus sur deux niveaux :
-
-1. **Niveau acteur** - comportements connus et documentés ;
-2. **Niveau incident** - techniques effectivement confirmées pour une victime précise.
+Ce sont des indicateurs historiques propres à des incidents. AFRINTEL ne dit pas qu'ils ont été observés contre les trois victimes égyptiennes ci-dessus.
 
 ---
 
-## 8. Lacunes de renseignement AFRINTEL
+## 6. Pistes de détection et Threat Hunting
 
-Les principales lacunes actuelles concernant les incidents NightSpire affectant des organisations africaines sont les suivantes :
+Corrélations utiles :
 
-- vecteur d’accès initial ;
-- hashes de malware propres aux victimes ;
-- infrastructure utilisée par l’attaquant ;
-- artefacts d’authentification ;
-- techniques de mouvement latéral confirmées ;
-- canal d’exfiltration confirmé ;
-- méthode exacte de déploiement et de chiffrement.
+- accès RDP suivi de l'installation de Chrome Remote Desktop ou AnyDesk ;
+- nouvel outil de prise en main à distance sur un poste qui ne l'utilisait pas auparavant ;
+- Everything suivi d'accès à des dossiers sensibles ;
+- archivage 7-Zip juste après la phase de découverte ;
+- exécution de MEGASync depuis un endpoint compromis ;
+- combinaison inhabituelle accès distant + découverte + archivage + cloud sync ;
+- création de fichiers `.nspire` ou des notes de rançon documentées.
 
-Ces éléments devront être mis à jour si de nouvelles preuves techniques
-deviennent publiquement disponibles ou sont obtenues dans le cadre
-des analyses AFRINTEL.
+Comme plusieurs outils sont légitimes, le contexte et la filiation des processus sont plus importants qu'un simple nom d'exécutable.
 
 ---
 
-## 9. Sources
+## 7. Évaluation d'attribution
 
-- Huntress - *Decoding NightSpire: Ransomware IOCs Aren't Set in Stone*
-- MITRE ATT&CK - T1021.001 Remote Desktop Protocol
-- MITRE ATT&CK - T1219.002 Remote Desktop Software
-- MITRE ATT&CK - T1083 File and Directory Discovery
-- MITRE ATT&CK - T1560.001 Archive via Utility
-- MITRE ATT&CK - T1567.002 Exfiltration to Cloud Storage
-- MITRE ATT&CK - T1486 Data Encrypted for Impact
-- AFRINTEL - Renseignement sur les victimes ransomware africaines - Mai 2026
+L'association avec les victimes africaines repose sur les revendications NightSpire suivies par AFRINTEL. Les TTP des sections 3 et 4 viennent d'un incident Huntress distinct.
+
+AFRINTEL les modélise donc séparément :
+
+```text
+Contexte acteur NightSpire
+        +-- revendications victimes africaines AFRINTEL
+        +-- TTP niveau incident Huntress
+```
+
+Aucune preuve propre aux victimes ne démontre actuellement que le mode opératoire Huntress a été utilisé contre B Investments, Rawaj Consumer Finance ou Papa John's Egypt.
+
+### Lacunes pour les cas africains
+
+- vecteur d'accès initial ;
+- hashes malware ;
+- infrastructure attaquante ;
+- artefacts d'authentification ;
+- mouvement latéral ;
+- canal et volume d'exfiltration ;
+- méthode de déploiement du ransomware.
+
+---
+
+## 8. Sources
+
+- Huntress - **Decoding NightSpire: Ransomware IOCs Aren't Set in Stone**
+- MITRE ATT&CK
+- AFRINTEL - Renseignement victimes ransomware africaines, mai 2026
 
 ---
 
