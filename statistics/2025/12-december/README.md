@@ -4,25 +4,29 @@
 
 ## Summary
 
-This statistical sheet is compiled from the 18 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the **19 cards** in the validated monthly victim file. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 18 |
+| Total incidents | 19 |
 | Ransomware | 14 |
-| Data leaks | 4 |
-| Access sales | 0 |
+| Data Leak | 5 |
+| Access Sale | 0 |
+| DDoS | 0 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
 | Countries | 10 |
-| Sectors | 17 |
-| Actors / sources | 12 |
+| Raw sector labels | 18 |
+| Actor / Group labels | 13 |
 
 ## 1. Country
 
 | Country | Incidents |
 |---|---:|
-| 🇪🇬 Egypt | 5 |
+| 🇪🇬 Egypt | 6 |
 | 🇿🇦 South Africa | 3 |
 | 🇹🇳 Tunisia | 3 |
 | 🇿🇲 Zambia | 1 |
@@ -32,32 +36,28 @@ This statistical sheet is compiled from the 18 cards in the monthly victim file.
 | 🇩🇿 Algeria | 1 |
 | 🇲🇦 Morocco | 1 |
 | 🇰🇪 Kenya | 1 |
+| **Total** | **19** |
 
-## 2. Sector
+## 2. Normalized sector
 
 | Sector | Incidents |
 |---|---:|
-| Healthcare | 2 |
-| Technology | 1 |
-| Insurance (Health) | 1 |
-| Agribusiness / Beverages (Alcoholic and non-alcoholic) | 1 |
-| Automotive Distribution / Diagnostic Equipment | 1 |
-| Finance | 1 |
-| Public Administration / Local Government | 1 |
-| Finance / Trade | 1 |
-| Insurance | 1 |
-| Health / Medical Association / Education | 1 |
-| Real Estate Development / Management of Industrial and Leisure Parks | 1 |
-| Public administrations (Financial Regulation) | 1 |
-| Manufacturing Industry (Plastics) | 1 |
-| Education / University | 1 |
-| Industrial / Electrical and Plastic Products Manufacturing | 1 |
-| Healthcare / Pharmacy e-commerce | 1 |
-| Energy / Electricity Transmission (Critical Infrastructure) | 1 |
+| Finance / Banking | 4 |
+| Healthcare / Medical | 3 |
+| Government / Administration | 2 |
+| Education / University | 2 |
+| Manufacturing / Industry | 2 |
+| Technology / IT | 1 |
+| Agriculture / Agribusiness | 1 |
+| Not specified | 1 |
+| Construction / Real Estate | 1 |
+| Energy / Utilities | 1 |
+| Retail / E-commerce | 1 |
+| **Total** | **19** |
 
-## 3. Actor / source
+## 3. Actor / Group
 
-| Actor / source | Incidents |
+| Actor / Group | Incidents |
 |---|---:|
 | qilin | 3 |
 | lockbit5 | 3 |
@@ -67,21 +67,30 @@ This statistical sheet is compiled from the 18 cards in the monthly victim file.
 | kazu | 1 |
 | devman | 1 |
 | direwolf | 1 |
-| GhostVector (source account) | 1 |
-| camillabf, post published on a cybercriminal forum (RaidForums) | 1 |
+| Habibi | 1 |
+| GhostVector | 1 |
+| camillabf | 1 |
 | KaruHunters | 1 |
-| LindaBF, post published on a cybercriminal forum (RaidForums) | 1 |
+| LindaBF | 1 |
 
 ## 4. Type
 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 14 |
-| Data Leak | 4 |
+| Data Leak | 5 |
+| **Total** | **19** |
+
+## 5. Evidence maturity
+
+| Status grouping | Incidents |
+|---|---:|
+| Claim - Unverified | 13 |
+| Claim - Data Sample Published | 6 |
+| **Total** | **19** |
 
 ## CTI reading
 
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The monthly volume reflects visibility in the reviewed sources, not all incidents that occurred. The Yalla Tager addition increases Egypt's December total from 5 to 6 and Data Leak from 4 to 5.
 
 **AFRINTEL** - TLP:CLEAR
-

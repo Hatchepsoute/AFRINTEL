@@ -6,9 +6,9 @@
 
 ## Synthèse mensuelle
 
-**18 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 14, Data Leak 4.
+**19 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 14, Data Leak 5.
 
-> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
+> Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour compléter le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
 ## Décembre 2025
 
@@ -143,6 +143,20 @@
 - **Description victime:** Proplastics Limited est le principal fabricant et fournisseur de systèmes de tuyauterie en plastique (PVC, PEHD) au Zimbabwe.
 - **Analyse:** AFRINTEL avait déjà enregistré une revendication contre cette même entreprise par TheGentlemen le 9 septembre 2025. Cette seconde revendication, publiée environ trois mois et demi plus tard par un acteur différent, pourrait refléter soit une intrusion distincte réelle, soit une republication/revente de la revendication précédente ; AFRINTEL n'a pas pu confirmer de manière indépendante quel scénario s'applique.
 
+### 26 Décembre 2025
+#### 🇪🇬 Égypte - Yalla Tager Marketplace
+- **Acteur / Groupe:** Habibi
+- **Secteur:** Commerce / E-commerce
+- **Site web:** yallatager.com
+- **Date de l'incident:** Inconnue
+- **Date de publication initiale:** 26 décembre 2025
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Yalla Tager Marketplace est l'organisation explicitement nommée dans la publication du forum et associée au domaine `yallatager.com`. La publication présente le jeu de données comme un fichier CSV de 2025 contenant environ 20 000 utilisateurs.
+- **Analyse:** Le 26 décembre 2025, l'acteur `Habibi` a publié sur un forum une entrée intitulée **« Yalla Tager Marketplace - Database »** et présenté un jeu de données CSV attribué à `yallatager.com`. Le schéma annoncé comprend des identifiants internes, noms, adresses email, codes clients, noms de boutiques, groupes de clients, numéros de téléphone, centres d'intérêt, champs postaux et géographiques, un horodatage `Customer Since` ainsi que le canal web d'origine. AFRINTEL a examiné la publication fournie et un extrait textuel comprenant **23 enregistrements visibles**. L'échantillon est structurellement cohérent avec des fiches clients et commerçants d'une marketplace égyptienne : plusieurs entrées indiquent l'Égypte ainsi que des gouvernorats/villes égyptiens, certains numéros utilisent l'indicatif national `+20`, et certains profils sont identifiés comme commerçants de gros avec des informations liées à leur boutique. Les valeurs `Customer Since` visibles dans l'extrait comprennent des dates de juillet 2025 ; il s'agit d'horodatages de compte/client et **elles ne permettent pas d'établir la date de compromission ou d'extraction**. Le volume global revendiqué d'environ **20 000 utilisateurs** ne peut pas être vérifié à partir de l'échantillon fourni. Le vecteur d'accès initial, le système source, la date d'extraction, l'exhaustivité du jeu de données et toute confirmation officielle restent inconnus. La combinaison identité, coordonnées, localisation et profil commerçant crée un risque crédible de phishing ciblé, smishing, usurpation et fraude. AFRINTEL ne reproduit aucun nom, adresse email, numéro de téléphone, adresse de boutique ni autre donnée personnelle issue de l'échantillon.
+
 ### 29 Décembre 2025
 #### 🇩🇿 Algérie - Université d'Oran 1 Ahmed Ben Bella
 - **Type d'incident:** Data Leak
@@ -188,3 +202,4 @@
 ---
 
 *Compilation AFRINTEL - source unique : fichiers mensuels.*
+

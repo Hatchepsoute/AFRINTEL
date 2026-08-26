@@ -8,107 +8,139 @@
 
 ## 1. Scope and source
 
-This statistical view is derived from the twelve monthly `victims.md` files and contains **197 records**. A record is a documented publication or claim; it is not necessarily a confirmed intrusion or a unique victim. The source files remain authoritative. Reposts and distinct claims are retained when documented as separate monthly records.
-
-All totals below reconcile to the same 197-record source. Country names use the standard English names and ISO alpha-2 codes in visualisations. Sectors use the controlled annual vocabulary from the CTI report. The two `Not specified` sector records remain unresolved in the source and are not reassigned without evidence.
+This statistical view is aligned with the validated bilingual 2025 victim corpus and contains **225 canonical incidents across 30 African countries**. One canonical card equals one documented cyber incident; cases under investigation remain outside the statistics. Incident type, evidence status, confidence and impact are separate dimensions.
 
 ## 2. Monthly evolution
 
 | Month | Records |
 |---|---:|
-| January | 16 |
-| February | 8 |
-| March | 11 |
-| April | 17 |
-| May | 21 |
+| January | 19 |
+| February | 10 |
+| March | 15 |
+| April | 20 |
+| May | 26 |
 | June | 21 |
-| July | 21 |
-| August | 13 |
-| September | 18 |
-| October | 19 |
-| November | 14 |
-| December | 18 |
-| **Total** | **197** |
+| July | 25 |
+| August | 16 |
+| September | 19 |
+| October | 20 |
+| November | 15 |
+| December | 19 |
+| **Total** | **225** |
+
+H1 contains **111** records and H2 **114**.
 
 ## 3. Distribution by country
 
 | Rank | Country | ISO | Records |
 |---:|---|:---:|---:|
-| 1 | Egypt | EG | 33 |
-| 2 | Morocco | MA | 31 |
-| 3 | South Africa | ZA | 30 |
+| 1 | South Africa | ZA | 38 |
+| 2 | Morocco | MA | 35 |
+| 3 | Egypt | EG | 35 |
 | 4 | Algeria | DZ | 19 |
-| 5 | Nigeria | NG | 14 |
-| 6 | Tunisia | TN | 13 |
-| 7 | Kenya | KE | 10 |
+| 5 | Kenya | KE | 16 |
+| 6 | Nigeria | NG | 15 |
+| 7 | Tunisia | TN | 15 |
 | 8 | Mauritania | MR | 8 |
-| 9 | Zambia | ZM | 4 |
-| 10 | Ghana | GH | 3 |
-| 11 | Ivory Coast | CI | 3 |
-| 12 | Namibia | NA | 3 |
-| 13 | Tanzania | TZ | 3 |
-| 14 | Botswana | BW | 2 |
-| 15 | Congo (DRC) | CD | 2 |
-| 16 | Mauritius | MU | 2 |
-| 17 | Senegal | SN | 2 |
-| 18 | Togo | TG | 2 |
-| 19 | Uganda | UG | 2 |
-| 20 | Zimbabwe | ZW | 2 |
-| 21 | Angola | AO | 1 |
-| 22 | Burkina Faso | BF | 1 |
+| 9 | Ghana | GH | 5 |
+| 10 | Zambia | ZM | 4 |
+| 11 | Tanzania | TZ | 4 |
+| 12 | Ivory Coast | CI | 4 |
+| 13 | Namibia | NA | 3 |
+| 14 | Uganda | UG | 2 |
+| 15 | Botswana | BW | 2 |
+| 16 | Senegal | SN | 2 |
+| 17 | Togo | TG | 2 |
+| 18 | Mauritius | MU | 2 |
+| 19 | Zimbabwe | ZW | 2 |
+| 20 | Congo (DRC) | CD | 2 |
+| 21 | Burkina Faso | BF | 1 |
+| 22 | Rwanda | RW | 1 |
 | 23 | Cameroon | CM | 1 |
 | 24 | Djibouti | DJ | 1 |
 | 25 | Eritrea | ER | 1 |
-| 26 | Gabon | GA | 1 |
-| 27 | Madagascar | MG | 1 |
-| 28 | Rwanda | RW | 1 |
-| 29 | Burundi | BI | 1 |
-| **Total** |  |  | **197** |
+| 26 | Burundi | BI | 1 |
+| 27 | Seychelles | SC | 1 |
+| 28 | Angola | AO | 1 |
+| 29 | Madagascar | MG | 1 |
+| 30 | Gabon | GA | 1 |
+| **Total** |  |  | **225** |
 
-## 4. Sector distribution
+## 4. Regional distribution
+
+| Region | Records | Share |
+|---|---:|---:|
+| North Africa | 104 | 46.2% |
+| Southern Africa | 50 | 22.2% |
+| West Africa | 37 | 16.4% |
+| East Africa | 26 | 11.6% |
+| Central Africa | 4 | 1.8% |
+| Indian Ocean | 4 | 1.8% |
+| **Total** | **225** | **100%** |
+
+## 5. Sector distribution
 
 | Normalized sector | Records | Share |
 |---|---:|---:|
-| Government / Administration | 40 | 20.3% |
-| Finance / Banking | 39 | 19.8% |
-| Technology / IT | 25 | 12.7% |
-| Education / University | 17 | 8.6% |
-| Healthcare / Medical | 14 | 7.1% |
-| Manufacturing / Industry | 10 | 5.1% |
-| Transport / Logistics | 10 | 5.1% |
-| Retail / E-commerce | 9 | 4.6% |
-| Professional / Business Services | 7 | 3.6% |
-| Construction / Real Estate | 6 | 3.0% |
-| Defense / Security | 6 | 3.0% |
-| Energy / Utilities | 4 | 2.0% |
-| Agriculture / Agribusiness | 3 | 1.5% |
-| Legal / Justice | 2 | 1.0% |
-| Mining | 2 | 1.0% |
-| Not specified | 2 | 1.0% |
-| Civil Society / NGO | 1 | 0.5% |
-| **Total** | **197** | **100.0%** |
+| Government / Administration | 51 | 22.7% |
+| Finance / Banking | 43 | 19.1% |
+| Technology / IT | 20 | 8.9% |
+| Education / University | 18 | 8.0% |
+| Healthcare / Medical | 14 | 6.2% |
+| Transport / Logistics | 10 | 4.4% |
+| Professional / Business Services | 9 | 4.0% |
+| Not specified | 9 | 4.0% |
+| Telecommunications | 9 | 4.0% |
+| Manufacturing / Industry | 8 | 3.6% |
+| Retail / E-commerce | 8 | 3.6% |
+| Construction / Real Estate | 7 | 3.1% |
+| Agriculture / Agribusiness | 4 | 1.8% |
+| Mining | 4 | 1.8% |
+| Media / Entertainment | 3 | 1.3% |
+| Defense / Security | 3 | 1.3% |
+| Energy / Utilities | 3 | 1.3% |
+| Hospitality / Tourism | 1 | 0.4% |
+| Legal | 1 | 0.4% |
+| **Total** | **225** | **100%** |
 
-## 5. Incident classification
+## 6. Incident classification
 
 | Type | Records | Share |
 |---|---:|---:|
-| Ransomware | 122 | 61.9% |
-| Data Leak | 72 | 36.5% |
-| Access Sale | 3 | 1.5% |
-| Defacement | 0 | 0.0% |
-| **Total** | **197** | **100.0%** |
+| Ransomware | 121 | 53.8% |
+| Data Leak | 81 | 36.0% |
+| Access Sale | 6 | 2.7% |
+| DDoS | 3 | 1.3% |
+| Defacement | 4 | 1.8% |
+| Account Takeover | 6 | 2.7% |
+| System Intrusion | 3 | 1.3% |
+| Malware | 1 | 0.4% |
+| Operational Fraud | 0 | 0.0% |
+| **Total** | **225** | **100%** |
 
 ### Aggregate exposure view
 
 | Aggregate category | Records | Share of corpus |
 |---|---:|---:|
-| Data leaks + access sales | **75** | **38.1%** |
+| Data Leak + Access Sale | **87** | **38.7%** |
 
-This is a derived analytical view (`72 + 3`), not an additional incident category. Access sales remain separately counted because they do not automatically establish data exfiltration.
+This analytical view (`81 + 6`) is not an additional incident category.
 
-## 6. Most visible actors / publication sources
+## 7. Evidence maturity
 
-| Actor / source | Records |
+| Analytical grouping | Records | Share |
+|---|---:|---:|
+| Claim - Unverified | 100 | 44.4% |
+| Claim - Data Sample Published | 89 | 39.6% |
+| Data Fully Published | 10 | 4.4% |
+| Victim/Government/Authority Confirmed | 14 | 6.2% |
+| Corroborated / Secondary evidence | 10 | 4.4% |
+| Attempted | 2 | 0.9% |
+| **Total** | **225** | **100%** |
+
+## 8. Most visible actor / group labels
+
+| Actor / Group | Records |
 |---|---:|
 | qilin | 11 |
 | nightspire | 10 |
@@ -121,14 +153,14 @@ This is a derived analytical view (`72 + 3`), not an additional incident categor
 | Dark 07x Team | 5 |
 | ransomhub | 4 |
 
-This is a top-10 view. Actor aliases, source accounts and publication annotations are normalized for the ranking; the complete incident-level attribution remains in the monthly victim cards and STIX bundles.
+`Habibi` has one record and therefore does not enter this top-10 view.
 
-## 7. Interpretation and SOC priorities
+## 9. Interpretation
 
-The distribution measures AFRINTEL visibility, not the prevalence of real-world compromises. Ransomware claims dominate the corpus, while data leaks and access sales form a separate exposure signal. SOC teams should validate claims against IAM, VPN, EDR, backup, DNS, proxy, WAF and application telemetry, and should distinguish a new compromise from a repost or an unverified listing.
+The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. The addition of Yalla Tager raises the annual corpus from 224 to **225**, Data Leak from 80 to **81**, Egypt from 34 to **35**, North Africa from 103 to **104**, and Retail / E-commerce from 7 to **8**.
 
 ## Conclusion
 
-The 2025 statistical baseline is internally reconciled at **197 records**: **122 ransomware**, **72 data leaks**, **3 access sales** and **0 defacements**. Country, sector and actor views must be regenerated from the monthly victim source whenever the source cards change.
+The validated 2025 statistical baseline is **225 canonical incidents**. Country, region, sector, actor, evidence and incident-type views are reconciled to the same bilingual victim corpus.
 
 **AFRINTEL** - TLP:CLEAR

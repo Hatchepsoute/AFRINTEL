@@ -1,6 +1,6 @@
 # AFRINTEL - African victims - 2025
 
-**224 documented cyber incidents under AFRINTEL.**
+**225 documented cyber incidents under AFRINTEL.**
 
 > **Reading dates:** `Incident date` indicates when the event occurred or was detected according to available evidence. `Initial publication date` indicates when it was first publicly disclosed, claimed or communicated. The two dates may fall in different months.
 
@@ -2510,6 +2510,20 @@
 - **Incident type:** Ransomware
 - **Victim Description:** Proplastics Limited is the leading manufacturer and supplier of plastic piping systems (PVC, HDPE) in Zimbabwe.
 - **Analysis:** AFRINTEL previously recorded a claim against this same company by TheGentlemen on 9 September 2025. This second claim, published roughly three and a half months later by a different actor, could reflect either a genuine separate intrusion or a republication/resale of the earlier claim; AFRINTEL has not independently confirmed which scenario applies.
+
+### 26 December 2025
+#### 🇪🇬 Egypt - Yalla Tager Marketplace
+- **Actor / Group:** Habibi
+- **Sector:** Retail / E-commerce
+- **Website:** yallatager.com
+- **Incident date:** Unknown
+- **Initial publication date:** 26 December 2025
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** Yalla Tager Marketplace is the organization explicitly named in the forum publication and associated there with the `yallatager.com` domain. The post presents the dataset as a 2025 CSV containing approximately 20,000 users.
+- **Analysis:** On 26 December 2025, the actor `Habibi` published a forum entry titled **"Yalla Tager Marketplace - Database"** and presented a CSV dataset attributed to `yallatager.com`. The advertised schema includes internal IDs, names, email addresses, customer codes, shop names, customer groups, telephone numbers, interests, postal/location fields, a `Customer Since` timestamp and the originating website channel. AFRINTEL reviewed the supplied post and a text excerpt containing **23 visible records**. The sample is structurally consistent with customer and merchant records from an Egyptian marketplace: several entries identify Egypt and Egyptian governorates/cities, some telephone values use the Egyptian `+20` country code, and some profiles are marked as wholesale merchants with shop-related information. The `Customer Since` values visible in the excerpt include dates in July 2025; these are account/customer timestamps and **do not establish the date of compromise or extraction**. The claimed total of approximately **20,000 users** cannot be verified from the supplied sample. The initial-access vector, source system, extraction date, completeness of the dataset and any official confirmation remain unknown. The combination of identity, contact, location and merchant-profile data creates a credible risk of targeted phishing, smishing, impersonation and fraud. AFRINTEL does not reproduce any name, email address, telephone number, shop address or other personal record from the sample.
 
 ### 29 December 2025
 #### 🇩🇿 Algeria - Oran University 1 Ahmed Ben Bella
