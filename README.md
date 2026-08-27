@@ -56,10 +56,10 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 | Year | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
-| 2024 | **119** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2024 | **120** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
 | 2025 | **225** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**2024 corrected baseline:** **119 canonical incidents across 30 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 13 Data Leak, 4 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
+**2024 corrected baseline:** **120 canonical incidents across 30 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 4 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
 
 **2025 validated baseline:** **225 canonical incidents across 30 African countries**: 121 Ransomware, 81 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **113**.
 
@@ -69,7 +69,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 | Period | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
-| H1 2024 | **45** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
+| H1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
 | H1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
 | H2 2025 | **114** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
 | H1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
