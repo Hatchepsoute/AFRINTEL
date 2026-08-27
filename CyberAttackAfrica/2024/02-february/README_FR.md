@@ -8,25 +8,99 @@ En Février 2024, AFRINTEL retient **8 cyberincidents canoniques dans 5 pays**. 
 
 La maturité de preuve est répartie entre **Claim - Unverified: 5**, **Confirmed: 3**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
-### 1.1 Étude comparative avec le mois précédent
+### 1.1 Étude comparative - Janvier vs Février 2024
+
+> Cette comparaison utilise la **baseline corrigée de janvier 2024 à 8 incidents canoniques**, incluant la Data Leak de Daeyang University ajoutée rétrospectivement au 25 janvier 2024. Février reste à **8 incidents canoniques**.
+
+#### 1.1.1 Évolution du volume global et des types d'incident
 
 | Indicateur | Janvier 2024 | Février 2024 | Évolution |
-|---|---|---|---|
-| Total | 7 | 8 | +1 (+14,3 %) |
-| Ransomware | 4 | 6 | +2 (+50,0 %) |
-| Data Leak | 0 | 1 | +1 (nouveau) |
-| Access Sale | 1 | 0 | -1 (-100,0 %) |
-| DDoS | 0 | 0 | Stable |
-| Defacement | 0 | 0 | Stable |
-| Account Takeover | 0 | 0 | Stable |
-| System Intrusion | 2 | 1 | -1 (-50,0 %) |
-| Malware | 0 | 0 | Stable |
-| Operational Fraud | 0 | 0 | Stable |
+|---|---:|---:|---:|
+| Total | **8** | **8** | **Stable (0,0 %)** |
+| Ransomware | 4 | 6 | **+2 (+50,0 %)** |
+| Data Leak | 1 | 1 | **Stable** |
+| Access Sale | 1 | 0 | **-1 (-100,0 %)** |
+| DDoS | 0 | 0 | **Stable** |
+| Defacement | 0 | 0 | **Stable** |
+| Account Takeover | 0 | 0 | **Stable** |
+| System Intrusion | 2 | 1 | **-1 (-50,0 %)** |
+| Malware | 0 | 0 | **Stable** |
+| Operational Fraud | 0 | 0 | **Stable** |
 
-### 1.2 Analyse comparative
+Le volume mensuel documenté reste donc **stable à 8 incidents**, mais sa composition évolue nettement. Le Ransomware passe de **4 à 6 fiches**, faisant progresser sa part de **50,0 % à 75,0 %**. Les Data Leak restent stables à une fiche, tandis que l'Access Sale disparaît et que les System Intrusion passent de deux à une fiche.
 
-Le volume mensuel **augmente de 1 incident(s)**. Les variations structurantes sont : Ransomware 4->6 (+2), Data Leak 0->1 (+1), System Intrusion 2->1 (-1), Access Sale 1->0 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
+```mermaid
+xychart-beta
+    title "Comparaison des types d'incident - Janvier vs Février 2024"
+    x-axis ["Ransomware", "Data Leak", "Access Sale", "System Intrusion"]
+    y-axis "Incidents" 0 --> 6
+    bar [4, 1, 1, 2]
+    bar [6, 1, 0, 1]
+```
 
+**Légende des séries :** première série = janvier 2024 | deuxième série = février 2024.
+
+#### 1.1.2 Évolution géographique
+
+Janvier couvre **4 pays**, contre **5 en février**.
+
+- **Janvier :** Afrique du Sud (4), Cameroun (2), Angola (1), Malawi (1).
+- **Février :** Afrique du Sud (4), Égypte (1), Tunisie (1), Côte d'Ivoire (1), Malawi (1).
+
+L'Afrique du Sud reste le pays le plus représenté sur les deux mois avec **4 incidents (50,0 %)**. Le Cameroun et l'Angola disparaissent du corpus de février, tandis que l'Égypte, la Tunisie et la Côte d'Ivoire apparaissent.
+
+| Région | Janvier 2024 | Février 2024 |
+|---|---:|---:|
+| Afrique australe | 6 (75,0 %) | 5 (62,5 %) |
+| Afrique centrale | 2 (25,0 %) | 0 |
+| Afrique du Nord | 0 | 2 (25,0 %) |
+| Afrique de l'Ouest | 0 | 1 (12,5 %) |
+
+Février présente donc une dispersion géographique plus large, avec une extension du corpus depuis l'Afrique australe vers l'Afrique du Nord et l'Afrique de l'Ouest.
+
+#### 1.1.3 Évolution sectorielle
+
+| Signal sectoriel | Janvier 2024 | Février 2024 | Lecture |
+|---|---:|---:|---|
+| Commerce / E-commerce | 2 | 0 | Visibilité plus faible en février |
+| Éducation / Université | 2 | 0 | Visibilité plus faible en février |
+| Gouvernement / Administration | 1 | 3 | **+2 ; devient le premier secteur** |
+| Industrie / Fabrication | 0 | 2 | **Devient visible** |
+| Finance / Banque | 1 | 0 | Aucune fiche en février |
+| Santé / Médical | 0 | 1 | Apparaît en février |
+| Eau / Services publics | 0 | 1 | Apparaît en février |
+
+Janvier était dominé par **Commerce / E-commerce** et **Éducation / Université**, avec deux fiches chacun. Février se déplace vers **Gouvernement / Administration (3)** et **Industrie / Fabrication (2)**.
+
+#### 1.1.4 Visibilité des acteurs / groupes
+
+- **Janvier :** `Unknown` (3), `lockbit3` (3), `cnHunter` (1), `X0Frankenstein` (1).
+- **Février :** `lockbit3` (3), `Unknown` (2), `medusa` (1), `hunters` (1), `dragonforce` (1).
+
+`lockbit3` reste stable à **3 fiches**. `Unknown` passe de 3 à 2. Les autres labels changent entièrement entre les deux mois, ce qui confirme que les classements mensuels d'acteurs doivent être interprétés comme des indicateurs de visibilité et non comme une mesure stable de prévalence.
+
+#### 1.1.5 Maturité des preuves
+
+| Position de preuve | Janvier 2024 | Février 2024 |
+|---|---:|---:|
+| Claim - Unverified | 4 (50,0 %) | 5 (62,5 %) |
+| Confirmed | 3 (37,5 %) | 3 (37,5 %) |
+| Claim - Data Sample Published | 1 (12,5 %) | 0 |
+| **Total** | **8** | **8** |
+
+Le nombre d'incidents confirmés reste **stable à trois**, mais février présente une proportion plus importante de revendications non vérifiées. Janvier comprend en plus une Data Leak accompagnée d'un échantillon, Daeyang University.
+
+#### 1.1.6 Lecture CTI
+
+Cinq signaux comparatifs ressortent :
+
+1. **Le volume global reste stable :** 8 incidents sur chacun des deux mois.
+2. **Le Ransomware devient plus dominant :** sa part passe de 50,0 % à 75,0 %.
+3. **La dispersion géographique augmente :** de 4 à 5 pays et de 2 à 3 régions représentées.
+4. **La visibilité du secteur public augmente fortement :** Gouvernement / Administration passe de 1 à 3 fiches.
+5. **La maturité des preuves se dégrade légèrement :** les revendications non vérifiées passent de 50,0 % à 62,5 %, tandis que le nombre d'incidents confirmés reste inchangé.
+
+Pour les SOC, le profil de février renforce les priorités autour de la **résilience ransomware, du contrôle des accès privilégiés, de l'intégrité des sauvegardes, de la continuité des services publics et de la détection des accès non autorisés aux données sensibles des citoyens ou employés**. Pour la CTI, cette comparaison montre qu'un volume stable peut masquer des évolutions importantes dans les types de menace, les secteurs exposés, la géographie et la qualité des preuves.
 ## 2. Méthodologie
 
 - Un incident canonique correspond à un événement retenu dans le millésime 2024.
@@ -336,7 +410,7 @@ timeline
 
 ## 14. Conclusion
 
-Février 2024 contient **8 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+Février 2024 contient **8 incidents canoniques**, soit le même volume documenté que la baseline corrigée de janvier 2024. La comparaison met donc en évidence un volume stable, mais une concentration ransomware plus forte, une dispersion géographique plus large et une visibilité accrue du secteur public en février.
 
 👉🏾 [Victimes canoniques](./victims_FR.md)
 

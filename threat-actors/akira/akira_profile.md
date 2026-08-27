@@ -1,254 +1,176 @@
-# Akira - Threat Actor Profile
+# Akira - Threat Actor / Ransomware Profile
 
-👉🏾 [**French version available here**](./akira_profile_FR.md)
+👉🏾 [**Version française**](./akira_profile_FR.md)
 
 **AFRINTEL Threat Actor Intelligence**
 
-- **Actor / Group:** Akira
-- **Threat Type:** Ransomware / Extortion
-- **Operating Model:** Ransomware-as-a-Service (RaaS)
-- **Primary Motivation:** Financial
-- **Period Covered:** 2024-2026
-- **Targeted Environments:** Windows, VMware ESXi, Hyper-V, Nutanix AHV
-- **Assessment Status:** Active monitoring
-- **Last Updated:** 25 August 2026
+- **Actor / Operation:** Akira
+- **Threat type:** Ransomware / Double extortion
+- **Operating model:** Ransomware-as-a-Service (RaaS)
+- **Motivation:** Financial
+- **Activity tracked:** 2023-2026
+- **Technical evidence covered here:** public reporting through November 2025
+- **Targeted environments:** Windows, VMware ESXi, Hyper-V, Nutanix AHV
+- **Assessment status:** Active monitoring
+- **Last updated:** 26 August 2026
 
 ---
 
-## 1. Intelligence Summary
+## 1. Intelligence summary
 
-Akira is a ransomware operation active since 2023 and associated with attacks against Windows environments and virtualization infrastructure.
+Akira is a financially motivated ransomware operation active since 2023. Public reporting shows a mix of stolen credentials, exposed remote services, exploitation of edge devices and unpatched systems, rapid internal discovery, credential theft, data exfiltration and encryption.
 
-Historical versions of the ransomware were primarily developed in C++, while more recent variants, including **Megazord** and **Akira_v2**, use Rust.
+The November 2025 FBI/CISA/DC3/HHS update expanded the known Akira tradecraft. It documents activity involving VPN credentials, password spraying, SSH, Veeam exploitation, domain-account creation, LSASS/SAM/NTDS access, EDR disruption, tunneling, remote-access tools and newer Akira_v2 capabilities.
 
-Akira-attributed campaigns commonly combine initial access through exposed services, compromised VPN accounts or vulnerable systems, internal reconnaissance, credential theft, data exfiltration and encryption.
+Historical Akira builds were mainly C++. Megazord and Akira_v2 introduced Rust-based encryptors. The joint advisory states that Megazord has likely fallen out of use since 2024, while Akira_v2 represents a more recent evolution.
 
-> **AFRINTEL qualification:**  
-> The TTPs below represent behaviors documented at the Akira ecosystem level by the FBI, CISA and partner organizations. They must not automatically be attributed to every Akira victim tracked by AFRINTEL without incident-specific technical evidence.
-
----
-
-## 2. Key Documented TTPs
-
-### 2.1 Initial Access
-
-- **T1190 - Exploit Public-Facing Application**
-  - Exploitation of vulnerabilities affecting Internet-facing systems.
-  - Documented exploitation of **CVE-2023-20269** affecting Cisco ASA / FTD.
-  - Documented exploitation of **CVE-2024-40766** affecting SonicWall.
-
-- **T1078 - Valid Accounts**
-  - Use of compromised VPN accounts.
-
-- **T1110 / T1110.003 - Brute Force / Password Spraying**
-  - Brute-force and password-spraying attempts against VPN accounts.
-
-- **T1566.001 / T1566.002 - Spearphishing**
-  - Use of malicious attachments or links.
-
-- **T1068 - Exploitation for Privilege Escalation**
-  - Exploitation of vulnerable Veeam servers, including **CVE-2023-27532** and **CVE-2024-40711**.
-
-**Evidence Type:** Reported / Observed by partner authorities  
-**Confidence:** High
+> **AFRINTEL boundary:** These are actor-level or externally reported behaviors. They must not be attached to a specific AFRINTEL victim without incident-specific evidence.
 
 ---
 
-### 2.2 Internal Reconnaissance and Discovery
+## 2. Key TTPs
 
-- **T1046 - Network Service Discovery**
-  - Use of **Advanced IP Scanner**, **NetScan** and **SoftPerfect Network Scanner** to identify hosts, ports, network devices and accessible shares.
-
-- **T1018 - Remote System Discovery**
-  - Use of Windows commands and `nltest` to identify systems and domain controllers.
-
-- **T1482 - Domain Trust Discovery**
-  - Reconnaissance of Active Directory trust relationships.
-
-- **T1069.001 / T1069.002 - Permission Groups Discovery**
-  - Use of `net` commands to identify local administrators and Domain Admin groups.
-
-**Observed Tools:**
-- Advanced IP Scanner
-- NetScan
-- SoftPerfect Network Scanner
-- `net.exe`
-- `nltest`
-
-**Confidence:** High
-
----
-
-### 2.3 Credential Access
-
-- **T1003 - OS Credential Dumping**
-  - Use of **Mimikatz** and **LaZagne** to extract authentication material.
-
-- **T1003.001 - LSASS Memory**
-  - Attempts to retrieve secrets from LSASS process memory.
-  - Documented use of `rundll32.exe` with `comsvcs.dll` to create an LSASS memory dump.
-
-- **T1555.003 / T1555.004**
-  - Credential extraction from web browsers and Windows Credential Manager through tools such as NetExec or Mimikatz.
-
-**Evidence Type:** Observed / Reported  
-**Confidence:** High
+| Tactic | Technique | ATT&CK | Behavior | Evidence | Scope | Confidence | Provenance |
+|---|---|---|---|---|---|---|---|
+| Initial Access | Exploit Public-Facing Application | T1190 | Exploitation of vulnerable VPN, edge and backup products | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Initial Access | Valid Accounts | T1078 | Use of compromised VPN credentials | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Initial Access | External Remote Services | T1133 | Access through exposed remote services including RDP/VPN | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Credential Access | Brute Force | T1110 | Brute-forcing VPN and SSH endpoints | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Credential Access | Password Spraying | T1110.003 | SharpDomainSpray used for password spraying | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Execution | Visual Basic | T1059.005 | VB scripts used to execute malicious commands | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Persistence | Create Domain Account | T1136.002 | New domain accounts created; `itadm` observed in some incidents | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Credential Access | LSASS Memory | T1003.001 | Credential extraction from LSASS; Mimikatz and LaZagne also observed | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Credential Access | Security Account Manager | T1003.002 | SYSTEM/SAM-related credential extraction in documented activity | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Credential Access | NTDS | T1003.003 | NTDS.dit obtained from a domain-controller VM workflow | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Discovery | Network Service Discovery | T1046 | Advanced IP Scanner, NetScan and similar tools | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Discovery | Remote System Discovery | T1018 | `nltest` and Windows commands used to identify systems/DCs | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Discovery | Domain Trust Discovery | T1482 | Domain trust enumeration | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Defense Evasion | Disable or Modify Tools | T1562.001 | PowerTool/BYOVD and EDR removal used to impair defenses | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Defense Evasion | Disable or Modify System Firewall | T1562.004 | Firewall changes observed in updated reporting | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Lateral Movement | Remote Desktop Protocol | T1021.001 | RDP used to move through compromised networks | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Lateral Movement | SSH | T1021.004 | SSH used for access and lateral movement | Reported | Actor-level | High | FBI/CISA joint advisory |
+| C2 | Proxy | T1090 | Ngrok/SystemBC used for proxying and concealed traffic | Reported | Actor-level | High | FBI/CISA joint advisory |
+| C2 | Ingress Tool Transfer | T1105 | Tools and Cobalt Strike beacons downloaded; STONESTOP used as loader | Reported | Actor-level | High | FBI/CISA joint advisory |
+| C2 | Remote Access Software | T1219 | AnyDesk, LogMeIn and other legitimate tools abused | Reported | Actor-level | High | FBI/CISA joint advisory |
+| C2 | Protocol Tunneling | T1572 | Ngrok used to tunnel traffic through HTTPS | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Collection | Archive via Utility | T1560.001 | WinRAR used to prepare data | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Exfiltration | Exfiltration Over Alternative Protocol | T1048 | WinSCP and related tools used for transfer | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Exfiltration | Transfer Data to Cloud Account | T1537 | Cloud storage used as an exfiltration destination | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Exfiltration | Exfiltration to Cloud Storage | T1567.002 | RClone used to sync data to cloud storage | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Impact | Data Encrypted for Impact | T1486 | Windows and virtual infrastructure encryption | Reported | Actor-level | High | FBI/CISA joint advisory |
+| Impact | Inhibit System Recovery | T1490 | VSS copies deleted on Windows systems | Reported | Actor-level | High | FBI/CISA joint advisory |
 
 ---
 
-### 2.4 Collection and Exfiltration
+## 3. Vulnerabilities documented in Akira operations
 
-- **T1560.001 - Archive via Utility**
-  - Use of **WinRAR** to compress data before exfiltration.
-
-- **T1567.002 - Exfiltration to Cloud Storage**
-  - Use of **RClone** to synchronize and exfiltrate data to cloud-storage services such as **MEGA**.
-
-- **T1048 - Exfiltration Over Alternative Protocol**
-  - Use of **WinSCP** and **FileZilla** to transfer data.
-
-- **T1537 - Transfer Data to Cloud Account**
-  - Use of cloud services or cloud accounts to transfer compromised data.
-
-**Observed Tools:**
-- RClone
-- WinSCP
-- FileZilla
-- WinRAR
-- MEGA
-
-**Confidence:** High
-
----
-
-### 2.5 Command and Control / Remote Access
-
-Akira has also been associated with legitimate remote-access and tunneling tools that may be abused to maintain access or establish communication channels:
-
-- AnyDesk
-- RustDesk
-- MobaXterm
-- Cloudflare Tunnel
-- Ngrok
-- LogMeIn
-
-These tools are not malicious by themselves. Attribution to Akira activity requires additional technical context.
-
----
-
-### 2.6 Impact and Recovery Inhibition
-
-- **T1486 - Data Encrypted for Impact**
-  - Encryption of Windows systems and virtualization environments.
-
-- **T1490 - Inhibit System Recovery**
-  - Deletion of Volume Shadow Copies to reduce recovery options.
-
-Recent ransomware versions may target:
-
-- Windows;
-- VMware ESXi;
-- Hyper-V;
-- Nutanix AHV.
-
-Documented variants include:
-
-- **Akira**
-- **Akira_v2**
-- **Megazord**
-
-Historical Akira variants primarily use C++, while Megazord and Akira_v2 introduce components written in Rust.
-
-**Confidence:** High
-
----
-
-## 3. Documented Technical Artifacts
-
-| Artifact | Type | Usage | ATT&CK |
+| CVE | Product / context | Documented use | Confidence |
 |---|---|---|---|
-| `Advanced IP Scanner` | Tool | Network reconnaissance | T1046 |
-| `NetScan` | Tool | Network / port scanning | T1046 |
-| `Mimikatz` | Tool | Credential dumping | T1003 |
-| `rundll32.exe` + `comsvcs.dll` | LOLBin | LSASS dump | T1003.001 |
-| `RClone` | Tool | Cloud exfiltration | T1567.002 |
-| `WinSCP` | Tool | Data transfer | T1048 |
-| `WinRAR` | Tool | Pre-exfiltration archiving | T1560.001 |
-| `vssadmin.exe` | LOLBin | Shadow copy deletion | T1490 |
-| `Akira_v2` | Ransomware | Encryption | T1486 |
-| `Megazord` | Ransomware | Encryption | T1486 |
+| CVE-2020-3259 | Cisco ASA / FTD | Initial access / credential exposure | High |
+| CVE-2023-20269 | Cisco ASA / FTD | Initial access | High |
+| CVE-2020-3580 | Cisco ASA / FTD | Added in November 2025 update | High |
+| CVE-2023-28252 | Microsoft Windows CLFS | Akira-associated CVE in the 2025 advisory; the CVE itself is a Windows privilege-escalation flaw | High for association; incident context required |
+| CVE-2024-37085 | VMware ESXi | Authentication bypass; listed as Akira-associated in the 2025 advisory | High |
+| CVE-2023-27532 | Veeam Backup & Replication | Exploitation of unpatched Veeam systems | High |
+| CVE-2024-40711 | Veeam Backup & Replication | Exploitation / privilege-escalation context | High |
+| CVE-2024-40766 | SonicWall SonicOS | Initial access; also linked to June 2025 AHV incident chain | High |
+
+AFRINTEL does not assume that one of these CVEs was used against an African Akira victim unless the incident provides evidence for it.
 
 ---
 
-## 4. Example Command Lines / Behaviors
+## 4. Tooling and malware
 
-The following commands or behaviors are relevant for detection when they appear in a context consistent with ransomware activity:
+| Tool / Malware | Role | Evidence | Scope |
+|---|---|---|---|
+| Advanced IP Scanner / NetScan | Network discovery | Reported | Actor-level |
+| Mimikatz / LaZagne / NetExec | Credential access | Reported | Actor-level |
+| SharpDomainSpray | Password spraying | Reported | Actor-level |
+| AnyDesk / LogMeIn / MobaXterm | Remote access / lateral movement | Reported | Actor-level |
+| Impacket / `wmiexec.py` | Remote execution | Reported | Actor-level |
+| PowerTool | Disable antivirus processes | Reported | Actor-level |
+| POORTRY | BYOVD driver abuse | Reported | Actor-level |
+| STONESTOP | Loader / installer for additional payloads | Reported | Actor-level |
+| SystemBC | RAT / proxy bot | Reported | Actor-level |
+| Cobalt Strike | Post-exploitation / C2 | Reported | Actor-level |
+| Ngrok / Cloudflare Tunnel | Tunneling / C2 / exfiltration support | Reported | Actor-level |
+| RClone / WinSCP / FileZilla | Data transfer / exfiltration | Reported | Actor-level |
+| WinRAR | Data archiving | Reported | Actor-level |
+| Akira_v2 | Ransomware encryptor | Reported | Actor-level |
+| Megazord | Historical Rust encryptor; likely out of use since 2024 | Reported | Actor-level |
+
+Legitimate administration tools are not malicious by themselves. They require context before being treated as an Akira indicator.
+
+---
+
+## 5. Ransomware artifacts
+
+Documented encrypted-file extensions include:
 
 ```text
-vssadmin.exe delete shadows /all /quiet
-rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump <PID> <output.dmp> full
-rclone.exe copy ...
+.akira
+.powerranges
+.akiranew
+.aki
 ```
 
-> These artifacts should be correlated with execution context, parent process, user, host, network activity and incident timeline to reduce false positives.
+Documented ransom-note names include:
+
+```text
+fn.txt
+akira_readme.txt
+akiranew.txt   # reported for some Linux/ESXi Akira_v2 activity
+```
+
+Akira_v2 uses Rust and supports more granular encryption behavior, including VM-focused options. Public reporting also documents Akira activity against VMware ESXi, Hyper-V and, in a June 2025 incident, Nutanix AHV disk files.
 
 ---
 
-## 5. Vulnerabilities Associated with Akira Operations
+## 6. Detection and threat-hunting opportunities
 
-| CVE | Product | Documented Usage |
-|---|---|---|
-| CVE-2023-20269 | Cisco ASA / FTD | Initial access |
-| CVE-2024-40766 | SonicWall | Initial access |
-| CVE-2023-27532 | Veeam Backup & Replication | Exploitation of vulnerable server |
-| CVE-2024-40711 | Veeam Backup & Replication | Exploitation of vulnerable server |
+Useful behaviors to correlate include:
 
----
+- new or unusual VPN/RDP/SSH access followed by rapid discovery;
+- password spraying against remote-access services;
+- creation of unexpected domain administrator accounts such as `itadm`;
+- `nltest`, Advanced IP Scanner or NetScan after remote access;
+- LSASS, SAM or NTDS access;
+- unexpected AnyDesk, LogMeIn, MobaXterm, Ngrok or SystemBC activity;
+- EDR uninstall attempts or PowerTool/BYOVD activity;
+- tools staged in `PerfLogs`;
+- `WebClient.DownloadString()` followed by Cobalt Strike-related activity;
+- RClone/WinSCP transfers after large archive creation;
+- VSS deletion followed by ransomware execution.
 
-## 6. AFRINTEL Assessment
-
-The TTPs presented in this profile correspond to behaviors documented at the Akira ecosystem level.
-
-AFRINTEL systematically distinguishes between:
-
-- **actor-level known TTPs**;
-- **TTPs observed during an independent investigation**;
-- **TTPs confirmed for a specific AFRINTEL victim**;
-- **assessed or inferred TTPs**.
-
-An Akira claim against an African organization is therefore not sufficient to conclude that the entire attack chain described above was used against that victim.
-
-### Evidence Levels
-
-- **Observed:** directly seen in telemetry, malware analysis, incident response evidence or primary-source material.
-- **Reported:** documented by a trusted technical or institutional source.
-- **Assessed:** analytical conclusion based on multiple available observations.
-- **Inferred:** plausible relationship with insufficient technical evidence for strong attribution.
+These are hunting leads, not standalone attribution rules.
 
 ---
 
-## 7. Incident-Level Intelligence Gaps
+## 7. AFRINTEL assessment
 
-For each Akira victim tracked by AFRINTEL, the following elements should be investigated before assigning victim-specific TTPs:
+The strongest way to use this profile is as **actor-level context**. It helps analysts understand what Akira affiliates have done across documented incidents.
 
-- initial-access vector;
-- compromised account or identity;
+For an AFRINTEL victim, the analyst should separately establish the initial access vector, exploited CVE, compromised account, tooling, lateral movement, exfiltration and ransomware deployment method before assigning victim-specific TTPs.
+
+### Intelligence gaps at victim level
+
+- initial access vector;
+- exact compromised account;
 - CVE actually exploited;
-- command-and-control infrastructure;
-- ransomware or tool hashes;
+- C2 infrastructure;
+- tool and ransomware hashes;
 - observed command lines;
-- lateral-movement mechanism;
-- exfiltration channel;
-- backup-removal method;
-- ransomware deployment method.
+- lateral-movement method;
+- exfiltration destination;
+- encryption/deployment method.
 
 ---
 
 ## 8. Sources
 
-- FBI / CISA / DC3 / HHS and international partners - **#StopRansomware: Akira Ransomware (AA24-109A)**
+- FBI / CISA / DC3 / HHS - **#StopRansomware: Akira Ransomware (AA24-109A)**, updated 13 November 2025
 - MITRE ATT&CK
-- Additional AFRINTEL technical sources according to the incidents analyzed
+- AFRINTEL victim intelligence when a specific African incident is referenced
 
 ---
 

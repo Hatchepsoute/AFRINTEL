@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - 2024 - corpus canonique (119 fiches)
+# Cyberincidents AFRINTEL - 2024 - corpus canonique (120 fiches)
 
 ### 2 Janvier 2024
 
@@ -88,6 +88,27 @@
 - **Niveau de confiance:** Low
 - **Niveau d'impact:** Level 2
 - **Description victime:** Tiger Wheel & Tyre est une filiale majeure du groupe TiAuto Investments, forte de plus de 50 ans d'existence et exploitant plus de 100 centres de services à travers l'Afrique du Sud et l'Afrique australe. Elle est spécialisée dans les services de géométrie, d'équilibrage et la vente de pneumatiques toutes catégories.
+
+----------------------------
+
+### 25 Janvier 2024
+
+#### 🇲🇼 Malawi - Daeyang University
+- **Date de l'incident :** Inconnue
+- **Date de publication initiale :** 25 janvier 2024
+- **Date de correction AFRINTEL :** 26 août 2026
+- **Acteur / Groupe :** X0Frankenstein
+- **Secteur :** Éducation / Université
+- **Site web :** [dyuni.ac.mw](https://www.dyuni.ac.mw/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
+- **Volume revendiqué :** plus de 224 000 lignes SQL
+- **Note de preuve :** AFRINTEL a examiné la publication du forum et l'échantillon SQL visible. Le volume revendiqué n'a pas été vérifié indépendamment et ne doit pas être assimilé à 224 000 étudiants ou personnes distinctes.
+- **Description victime :** Daeyang University est un établissement d'enseignement supérieur au Malawi. L'échantillon examiné est cohérent avec un système d'information universitaire et contient des références aux filières Commerce et ICT ainsi que des adresses institutionnelles en `dyuni.ac.mw`.
+- **Analyse :** Le 25 janvier 2024, X0Frankenstein a publié sur un forum une revendication visant Daeyang University et affiché des données SQL associées à `dyuni.ac.mw`. L'acteur présente les données comme datant de 2023, mais cette mention ne permet pas d'établir la date technique de compromission ; AFRINTEL conserve donc la date de l'incident comme inconnue et utilise la date de publication initiale pour la chronologie 2024. L'échantillon visible comprend des identifiants étudiants, des champs d'identité et de contact, des informations géographiques, l'établissement scolaire antérieur, des données relatives aux tuteurs ou contacts d'urgence, des informations académiques sur le département, l'année, le semestre et la spécialisation, ainsi que des mots de passe en clair dans plusieurs enregistrements. D'autres éléments SQL sont cohérents avec des données applicatives liées à Moodle. AFRINTEL ne reproduit aucune donnée personnelle ni aucun identifiant et n'a testé aucun compte. La combinaison des adresses institutionnelles, des champs académiques propres à l'université et de la structure SQL soutient l'attribution à Daeyang University avec un niveau de confiance élevé, tandis que le jeu complet, la méthode d'acquisition, le nombre de personnes affectées et le vecteur d'accès initial restent non vérifiés.
+- **Note de risque :** l'exposition d'identifiants en clair augmente fortement les risques de prise de contrôle de comptes, de réutilisation de mots de passe, de phishing, d'usurpation et de compromission secondaire visant étudiants, personnels ou services connectés.
 
 ----------------------------
 

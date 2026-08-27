@@ -1,217 +1,182 @@
-# UNC6040 — Étude de cas : Vishing OAuth Salesforce & Vol de données SaaS
+# UNC6040 - Vishing OAuth Salesforce & vol de données SaaS
 
-👉🏾 [**English version available here**](./case_study.md)
+👉🏾 [**English version**](./case_study.md)
 
 **AFRINTEL Threat Actor Intelligence**
 
-- **Acteur / Groupe :** UNC6040
-- **Type de menace :** Vol de données SaaS / Extorsion
-- **Vecteur principal :** Vishing / Ingénierie sociale
-- **Environnement ciblé :** Salesforce / SaaS
-- **Motivation principale :** Financière
-- **Période documentée :** 2025–2026
-- **Source principale :** Google Threat Intelligence Group / Mandiant
-- **Niveau de confiance :** Élevé
-- **Dernière mise à jour AFRINTEL :** 26 août 2026
+- **Acteur / Cluster :** UNC6040
+- **Type de menace :** Vol de données SaaS / précurseur d'extorsion
+- **Vecteur principal :** Vishing / ingénierie sociale
+- **Environnement ciblé :** Salesforce et services SaaS connectés
+- **Motivation :** Financière
+- **Activité suivie :** 2025-2026
+- **Preuves techniques utilisées ici :** publications GTIG / Mandiant de 2025
+- **Statut :** Surveillance active
+- **Dernière mise à jour :** 26 août 2026
 
 ---
 
 ## 1. Synthèse
 
-UNC6040 est un cluster financièrement motivé spécialisé dans les campagnes de vishing visant les environnements Salesforce.
+UNC6040 est un cluster financièrement motivé suivi par Google Threat Intelligence Group. Ses opérateurs se font passer pour le support informatique lors d'appels téléphoniques et poussent les utilisateurs à effectuer des actions qui donnent accès à Salesforce.
 
-Les opérateurs se font passer pour le support informatique et persuadent les utilisateurs d'autoriser une Connected App malveillante dans leur instance Salesforce.
+Un scénario fréquent consiste à faire autoriser une Connected App Salesforce malveillante. Les premières campagnes utilisaient souvent une version modifiée ou usurpée de Salesforce Data Loader. GTIG a ensuite observé un passage vers des applications personnalisées, généralement des scripts Python, qui remplissent une fonction de collecte similaire.
 
-L'application observée est fréquemment une version modifiée ou usurpée de Salesforce Data Loader.
+Le point important est que l'attaquant n'a pas besoin d'exploiter une vulnérabilité Salesforce. L'accès repose sur la manipulation de l'utilisateur et l'abus de mécanismes SaaS légitimes : autorisation d'application, OAuth et API.
 
-Cette méthode permet à l'attaquant d'accéder directement aux données Salesforce via les API SaaS, sans nécessiter une compromission initiale du réseau interne traditionnel.
-
-> **Qualification AFRINTEL :**  
-> AFRINTEL distingue les accès SaaS obtenus par ingénierie sociale, les autorisations OAuth accordées par l'utilisateur et les compromissions techniques directes. Une autorisation OAuth obtenue par manipulation ne signifie pas que le périmètre réseau principal a été compromis.
+AFRINTEL distingue l'intrusion initiale UNC6040 des activités d'extorsion ultérieures. GTIG suit ce second cluster sous le nom **UNC6240**, qui a revendiqué le nom **ShinyHunters** dans ses échanges avec des victimes.
 
 ---
 
-## 2. Accès initial
-
-### T1566.004 — Spearphishing Voice
-
-L'acteur contacte la victime par téléphone en se faisant passer pour un membre du support informatique.
-
-La victime est guidée vers la page de configuration des Connected Apps Salesforce et invitée à autoriser une application contrôlée par l'attaquant.
-
-**Preuve :** Observé  
-**Confiance :** Élevée
-
----
-
-## 3. Autorisation OAuth
-
-### T1528 — Steal Application Access Token
-
-L'autorisation de l'application fournit à l'acteur un accès OAuth permettant d'interagir avec les ressources Salesforce au nom de l'utilisateur.
-
-Dans ce scénario, le token n'est pas nécessairement obtenu par compromission technique du poste utilisateur : l'accès est accordé à la suite de la manipulation de la victime.
-
-**Preuve :** Observé  
-**Confiance :** Élevée
-
----
-
-## 4. Persistance SaaS
-
-### T1671 — Cloud Application Integration
-
-L'application OAuth autorisée peut permettre à l'acteur de conserver un accès aux données SaaS à travers l'intégration cloud.
-
-Les refresh tokens peuvent permettre l'obtention de nouveaux access tokens sans imposer une nouvelle authentification interactive de l'utilisateur.
-
-> `T1098.003` ne doit pas être utilisé ici par défaut : cette technique correspond à l'ajout de rôles ou permissions cloud, ce qui n'est pas le comportement principal observé dans cette campagne.
-
-**Preuve :** Observé / Évalué  
-**Confiance :** Élevée
-
----
-
-## 5. Utilisation des tokens
-
-### T1550.001 — Application Access Token
-
-Une fois l'accès OAuth obtenu, l'acteur utilise l'application et les tokens associés pour effectuer des appels API Salesforce sans passer par le processus classique d'authentification utilisateur.
-
-**Preuve :** Observé  
-**Confiance :** Élevée
-
----
-
-## 6. Collection et exfiltration
-
-UNC6040 a été observé utilisant Salesforce Data Loader pour extraire rapidement des volumes importants de données.
-
-Les activités peuvent inclure :
-
-- requêtes API ;
-- Bulk API ;
-- exports de rapports ;
-- récupération de contacts et comptes ;
-- extraction de données sensibles présentes dans le CRM.
-
-### Sources de télémétrie Salesforce pertinentes
-
-- `ApiEventStream`
-- `BulkApiResultEvent`
-- `ReportEventStream`
-- `ListViewEventStream`
-- `FileEvent`
-- `LoginEvent`
-
-**Preuve :** Observé  
-**Confiance :** Élevée
-
----
-
-## 7. Mouvement latéral SaaS
-
-Après l'accès à Salesforce, UNC6040 a également été observé utilisant des identifiants récupérés par vishing ou credential harvesting pour accéder à d'autres plateformes cloud, notamment :
-
-- Okta ;
-- Microsoft 365.
-
-Cela représente un mouvement latéral entre services SaaS plutôt qu'un mouvement latéral Windows classique.
-
-**Preuve :** Rapporté / Observé selon les incidents  
-**Confiance :** Élevée
-
----
-
-## 8. Infrastructure observée
-
-UNC6040 a notamment utilisé des adresses IP associées à des services VPN pour accéder aux environnements Salesforce et procéder aux opérations d'extraction.
-
-L'infrastructure de phishing a également été utilisée pour héberger des pages imitant des services d'identité comme Okta.
-
-> Les IoC réseau doivent être contextualisés par date et incident. Une adresse IP de VPN commercial n'est pas malveillante en elle-même.
-
----
-
-## 9. Artefacts de détection
-
-| Signal | Contexte |
-|---|---|
-| `LoginType = Remote Access 2.0` | Authentification OAuth Salesforce |
-| Connected App inconnue | Application non approuvée ou nouvellement autorisée |
-| Nouvel OAuth grant | Autorisation potentiellement malveillante |
-| Scopes `api`, `refresh_token`, `offline_access` | Accès étendu / durable |
-| Bulk API inhabituel | Extraction massive |
-| Nombre élevé de `Query` / `QueryMore` | Collecte API |
-| Connexion depuis VPN / infrastructure inhabituelle | Signal contextuel |
-| Export massif après OAuth | Chaîne OAuth → exfiltration |
-
----
-
-## 10. Chaîne analytique
+## 2. Chaîne d'attaque
 
 ```text
-Vishing
-   │
-   ▼
-Usurpation du support IT
-   │
-   ▼
-Autorisation d'une Connected App
-   │
-   ▼
-OAuth Access / Refresh Token
-   │
-   ├── T1671
-   ├── T1528
-   └── T1550.001
-   │
-   ▼
-Salesforce API / Data Loader
-   │
-   ▼
-Collecte massive de données
-   │
-   ▼
-Exfiltration
-   │
-   ▼
-Pivot SaaS possible → Okta / Microsoft 365
-   │
-   ▼
-Extorsion
+Vishing / faux support IT
+        │
+        ▼
+L'utilisateur autorise une Connected App malveillante
+        │
+        ▼
+Accès OAuth / application à Salesforce
+        │
+        ▼
+Data Loader ou application personnalisée
+        │
+        ▼
+Collecte massive via API
+        │
+        ▼
+Exfiltration des données Salesforce
+        │
+        ├── pivot possible vers Okta / Microsoft 365
+        │
+        ▼
+Extorsion ultérieure
+        │
+        └── suivie séparément par GTIG sous UNC6240
 ```
 
 ---
 
-## 11. Évaluation AFRINTEL
+## 3. Mapping MITRE ATT&CK
 
-Cette campagne illustre une évolution importante des chaînes d'attaque : la compromission du périmètre réseau traditionnel n'est plus nécessaire pour provoquer une fuite majeure.
+| Tactique | Technique | ID | Comportement | Preuve | Portée | Confiance | Provenance |
+|---|---|---|---|---|---|---|---|
+| Accès initial | Spearphishing Voice | T1566.004 | Les opérateurs se font passer pour le support IT pendant des appels de vishing | Observé | Campagne | Élevée | GTIG / Mandiant |
+| Persistance | Cloud Application Integration | T1671 | La victime est poussée à autoriser une Connected App Salesforce malveillante | Observé | Campagne | Élevée | GTIG / Mandiant + MITRE ATT&CK |
+| Contexte accès SaaS | Application Access Token | T1550.001 | Les jetons OAuth / applicatifs peuvent être utilisés pour accéder aux ressources SaaS après autorisation | Rapporté / Évalué | Campagne | Moyenne | GTIG / Mandiant + normalisation ATT&CK |
 
-Une autorisation OAuth légitime obtenue par ingénierie sociale peut fournir directement un accès à des données SaaS sensibles.
+### Note sur T1528
 
-Pour le SOC, la détection doit donc inclure la télémétrie d'identité, OAuth, Connected Apps et API SaaS en plus des journaux endpoint et réseau.
+**T1528 - Steal Application Access Token** ne doit pas être attribué automatiquement à l'étape d'autorisation. Dans le scénario principal UNC6040, la victime est manipulée pour autoriser l'application. T1528 ne doit être utilisé que lorsqu'il existe une preuve qu'un jeton d'accès applicatif a réellement été volé.
 
-AFRINTEL distingue systématiquement :
-
-- les autorisations OAuth obtenues par manipulation ;
-- les tokens effectivement observés comme compromis ;
-- les appels API anormaux ;
-- l'exfiltration confirmée ;
-- les pivots vers d'autres services SaaS ;
-- les relations uniquement évaluées ou inférées.
+Cette distinction évite de présenter tout abus OAuth comme un vol de token.
 
 ---
 
-## 12. Sources
+## 4. Collection et exfiltration
 
-- Google Threat Intelligence Group / Mandiant — *The Cost of a Call: From Voice Phishing to Data Extortion*
-- Mandiant — *Cybercrime Observations from the Frontlines: UNC6040 Proactive Hardening Recommendations*
-- MITRE ATT&CK — T1566.004
-- MITRE ATT&CK — T1528
-- MITRE ATT&CK — T1550.001
-- MITRE ATT&CK — T1671
+UNC6040 a été observé en train d'extraire rapidement des données Salesforce après l'obtention de l'accès.
+
+Les méthodes rapportées comprennent :
+
+- Salesforce Data Loader ;
+- applications personnalisées, notamment des outils Python ;
+- requêtes REST / API ;
+- activité Bulk API ;
+- exports de rapports et de listes ;
+- téléchargement massif de fichiers ou de pièces jointes.
+
+GTIG a également observé des pivots vers d'autres services cloud avec des identifiants récupérés par vishing ou credential harvesting, notamment **Okta** et **Microsoft 365**.
+
+**Preuve :** Observé  
+**Portée :** Campagne  
+**Confiance :** Élevée  
+**Provenance :** GTIG / Mandiant
 
 ---
 
-**AFRINTEL — African Cyber Threat Intelligence**
+## 5. Infrastructure et schémas d'accès
+
+GTIG indique qu'UNC6040 a principalement utilisé des adresses IP **Mullvad VPN** pour accéder aux environnements Salesforce et exfiltrer les données. Des activités plus récentes ont également utilisé **Tor** pour certaines phases d'ingénierie sociale et de collecte automatisée.
+
+Dans certaines investigations, l'infrastructure de phishing hébergeait aussi de fausses pages Okta servant à récupérer des identifiants ou des codes MFA.
+
+> Une adresse VPN ou Tor est un élément de contexte. Elle ne constitue pas, à elle seule, une preuve d'attribution.
+
+---
+
+## 6. Pistes de détection
+
+Signaux Salesforce utiles :
+
+| Signal | Pourquoi le surveiller |
+|---|---|
+| `LoginType = Remote Access 2.0` | Authentification OAuth / Connected App |
+| Nouvelle Connected App inconnue | Intégration potentiellement malveillante |
+| Scopes larges `api`, `refresh_token`, `offline_access` | Accès API étendu ou durable |
+| Volume élevé de `Query`, `QueryMore`, `QueryAll` | Collecte automatisée possible |
+| Valeurs élevées de `RowsProcessed` / `RecordCount` | Extraction en masse possible |
+| Téléchargements `BulkApiResultEvent` | Signal d'exfiltration via Bulk API |
+| Exports massifs de rapports / listes | Collecte CRM possible |
+| Téléchargement massif de fichiers / pièces jointes | Vol de données possible |
+| OAuth suivi rapidement d'un export API | Corrélation à forte valeur |
+| OAuth Salesforce puis connexion Okta/M365 depuis la même IP à risque | Signal de pivot inter-SaaS |
+
+Télémétrie utile :
+
+- `LoginEvent` / `LoginEventStream` ;
+- `Setup Audit Trail` ;
+- `PermissionSetEvent` ;
+- `ApiEvent` / `ApiEventStream` ;
+- `BulkApiResultEvent` ;
+- `ReportEvent` / `ReportEventStream` ;
+- `ListViewEvent` / `ListViewEventStream` ;
+- `FileEvent` / `FileEventStore` ;
+- `ApiAnomalyEvent` ;
+- `ReportAnomalyEvent`.
+
+Ce sont des pistes de Threat Hunting et de détection. Leur présence ne prouve pas, à elle seule, une activité UNC6040.
+
+---
+
+## 7. Limite d'attribution
+
+UNC6040 partage certaines méthodes d'ingénierie sociale avec d'autres acteurs financièrement motivés, notamment des groupes liés à l'écosystème plus large **The Com**. La ressemblance des techniques de vishing ou le ciblage d'Okta ne suffit pas à fusionner ces acteurs.
+
+AFRINTEL garde donc séparés :
+
+- UNC6040 - vishing Salesforce et vol de données ;
+- UNC6240 - activité d'extorsion ultérieure suivie par GTIG ;
+- UNC3944 / Scattered Spider - cluster distinct avec des techniques sociales parfois proches.
+
+**Évaluation :** ces recouvrements sont utiles pour le hunting, mais ne constituent pas une preuve directe d'attribution.
+
+---
+
+## 8. Lacunes de renseignement
+
+Pour une victime précise, il faut confirmer avant toute attribution au niveau victime :
+
+- le nom et le client ID de la Connected App ;
+- les scopes OAuth accordés ;
+- le compte ayant autorisé l'application ;
+- l'IP / ASN source et la chronologie de session ;
+- les appels API et les volumes de données ;
+- si des tokens ont réellement été volés ou simplement émis après autorisation ;
+- si d'autres plateformes SaaS ont été consultées ;
+- si l'extorsion ultérieure peut être reliée aux mêmes opérateurs.
+
+---
+
+## 9. Sources
+
+- Google Threat Intelligence Group - *The Cost of a Call: From Voice Phishing to Data Extortion*, 4 juin 2025
+- Mandiant / Google Threat Intelligence - *UNC6040 Proactive Hardening Recommendations*, 30 septembre 2025
+- MITRE ATT&CK - T1566.004 Spearphishing Voice
+- MITRE ATT&CK - T1671 Cloud Application Integration / Salesforce Data Exfiltration
+- MITRE ATT&CK - T1550.001 Application Access Token
+
+---
+
+**AFRINTEL - African Cyber Threat Intelligence**

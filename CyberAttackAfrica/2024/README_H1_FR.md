@@ -2,7 +2,7 @@
 
 ## 1. Synthèse exécutive
 
-Sur janvier-juin 2024, AFRINTEL retient **45 incidents canoniques dans 16 pays**. Le ransomware représente **34 fiches (75,6 %)**, devant Data Leak **4 (8,9 %)**. Les pays les plus représentés sont **Afrique du Sud (18)**, **Égypte (7)**, **Cameroun (2)**.
+Sur janvier-juin 2024, AFRINTEL retient **46 incidents canoniques dans 16 pays**. Le ransomware représente **34 fiches (73,9 %)**, devant Data Leak **5 (10,9 %)**. Les pays les plus représentés sont **Afrique du Sud (18)**, **Égypte (7)**, puis plusieurs pays à 2 fiches. L'ajout rétrospectif concerne la Data Leak de Daeyang University au Malawi, publiée le 25 janvier.
 
 ### 1.1 Comparaison S1 vs S2 2024
 
@@ -16,7 +16,7 @@ Même taxonomie, même politique de dates et mêmes règles de preuve que les ra
 
 | Mois | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Janvier | 7 | 4 | 0 | 1 | 0 | 0 | 0 | 2 | 0 | 0 |
+| Janvier | 8 | 4 | 1 | 1 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Février | 8 | 6 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Mars | 9 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Avril | 9 | 5 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -27,13 +27,13 @@ Même taxonomie, même politique de dates et mêmes règles de preuve que les ra
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 34 | 75,6 % |
-| Data Leak | 4 | 8,9 % |
+| Ransomware | 34 | 73,9 % |
+| Data Leak | 5 | 10,9 % |
 | Access Sale | 1 | 2,2 % |
-| DDoS | 2 | 4,4 % |
+| DDoS | 2 | 4,3 % |
 | Defacement | 0 | 0,0 % |
 | Account Takeover | 0 | 0,0 % |
-| System Intrusion | 3 | 6,7 % |
+| System Intrusion | 3 | 6,5 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 1 | 2,2 % |
 
@@ -41,7 +41,7 @@ Même taxonomie, même politique de dates et mêmes règles de preuve que les ra
 pie showData
     title Types d'incident - S1 2024
     "Ransomware" : 34
-    "Data Leak" : 4
+    "Data Leak" : 5
     "Access Sale" : 1
     "DDoS" : 2
     "System Intrusion" : 3
@@ -52,16 +52,16 @@ pie showData
 
 | Pays | Fiches | Part |
 |---|---|---|
-| Afrique du Sud | 18 | 40,0 % |
-| Égypte | 7 | 15,6 % |
-| Cameroun | 2 | 4,4 % |
-| Tunisie | 2 | 4,4 % |
-| Côte d'Ivoire | 2 | 4,4 % |
-| Namibie | 2 | 4,4 % |
-| Maroc | 2 | 4,4 % |
-| Libye | 2 | 4,4 % |
+| Afrique du Sud | 18 | 39,1 % |
+| Égypte | 7 | 15,2 % |
+| Cameroun | 2 | 4,3 % |
+| Tunisie | 2 | 4,3 % |
+| Côte d'Ivoire | 2 | 4,3 % |
+| Namibie | 2 | 4,3 % |
+| Maroc | 2 | 4,3 % |
+| Libye | 2 | 4,3 % |
 | Angola | 1 | 2,2 % |
-| Malawi | 1 | 2,2 % |
+| Malawi | 2 | 4,3 % |
 | Cabo Verde | 1 | 2,2 % |
 | Seychelles | 1 | 2,2 % |
 | Burkina Faso | 1 | 2,2 % |
@@ -73,26 +73,26 @@ pie showData
 
 | Région | Fiches | Part |
 |---|---|---|
-| Afrique australe | 22 | 48,9 % |
-| Afrique du Nord | 13 | 28,9 % |
-| Afrique de l'Ouest | 6 | 13,3 % |
-| Afrique centrale | 3 | 6,7 % |
+| Afrique australe | 23 | 50,0 % |
+| Afrique du Nord | 13 | 28,3 % |
+| Afrique de l'Ouest | 6 | 13,0 % |
+| Afrique centrale | 3 | 6,5 % |
 | Océan Indien | 1 | 2,2 % |
 
 ## 7. Secteurs
 
 | Secteur | Fiches | Part |
 |---|---|---|
-| Gouvernement / Administration | 8 | 17,8 % |
-| Finance / Banque | 8 | 17,8 % |
-| Services professionnels / Business | 4 | 8,9 % |
-| Industrie / Fabrication | 4 | 8,9 % |
-| Santé / Médical | 4 | 8,9 % |
-| Énergie / Services publics | 3 | 6,7 % |
-| Technologie / IT | 3 | 6,7 % |
-| Médias / Divertissement | 3 | 6,7 % |
-| Éducation / Université | 2 | 4,4 % |
-| Commerce / E-commerce | 2 | 4,4 % |
+| Gouvernement / Administration | 8 | 17,4 % |
+| Finance / Banque | 8 | 17,4 % |
+| Services professionnels / Business | 4 | 8,7 % |
+| Industrie / Fabrication | 4 | 8,7 % |
+| Santé / Médical | 4 | 8,7 % |
+| Énergie / Services publics | 3 | 6,5 % |
+| Technologie / IT | 3 | 6,5 % |
+| Médias / Divertissement | 3 | 6,5 % |
+| Éducation / Université | 3 | 6,5 % |
+| Commerce / E-commerce | 2 | 4,3 % |
 | Eau / Services publics | 1 | 2,2 % |
 | Construction / Immobilier | 1 | 2,2 % |
 | Agriculture / Agro-industrie | 1 | 2,2 % |
@@ -110,19 +110,20 @@ pie showData
 | arcusmedia | 2 |
 | cnHunter | 1 |
 | medusa | 1 |
+| X0Frankenstein | 1 |
 
 ## 9. Maturité des preuves
 
 | Preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 32 | 71,1 % |
-| Confirmed | 10 | 22,2 % |
-| Claim - Data Sample Published | 3 | 6,7 % |
+| Claim - Unverified | 32 | 69,6 % |
+| Confirmed | 10 | 21,7 % |
+| Claim - Data Sample Published | 4 | 8,7 % |
 
 ## 10. Analyse CTI
 
 - **Ransomware : 34**. Une présence sur leak site ne prouve pas toujours le chiffrement.
-- **Data Leak : 4**. Les republications historiques sont sorties des statistiques, les échantillons restant séparés des volumes revendiqués.
+- **Data Leak : 5**. Le total inclut désormais Daeyang University (Malawi), dont l'échantillon SQL visible soutient la classification Data Leak ; les 224k+ lignes revendiquées restent non vérifiées.
 - **System Intrusion : 3**. Utilisé lorsque l'accès/intrusion est mieux soutenu qu'un ransomware ou une fuite.
 - **Access Sale : 1**, **DDoS : 2**, **Defacement : 0**, **Operational Fraud : 1**.
 
@@ -143,6 +144,6 @@ MFA résistante au phishing, PAM, segmentation, sauvegardes immuables, centralis
 
 ## 14. Conclusion
 
-Le S1 2024 retient **45 incidents canoniques**.
+Le S1 2024 retient **46 incidents canoniques**.
 
 **AFRINTEL** - TLP:CLEAR

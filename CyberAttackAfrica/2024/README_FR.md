@@ -4,33 +4,21 @@
 
 ## 1. Synthèse exécutive
 
-Après réévaluation complète de la chronologie, des republications et des dossiers en attente, AFRINTEL retient **119 cyberincidents canoniques dans 30 pays africains en 2024**.
+En 2024, AFRINTEL documente **120 cyberincidents canoniques dans 30 pays africains**.
 
-La baseline précédente de 117 est corrigée par la résolution de deux dossiers : **ACAO**, désormais rattaché au **26 juillet 2024** comme `Data Leak` corroboré, et **Misr Pharmacies**, rattaché au **30 décembre 2024** comme `Data Leak / Claim - Unverified`. ACAO ne constitue pas un nouvel ajout par rapport au dépôt historique de 128 fiches : sa fiche était déjà présente en novembre mais avait été temporairement sortie pour chronologie non résolue ; elle est maintenant déplacée vers juillet. Misr Pharmacies est un ajout supplémentaire résolu grâce à la publication originale préservée.
+Le paysage est dominé par **Ransomware : 91 (75,8 %)**, suivi de **Data Leak : 14 (11,7 %)**, **System Intrusion : 7**, **Access Sale : 4**, **DDoS : 2**, **Defacement : 1** et **Operational Fraud : 1**. `Account Takeover` et `Malware` restent à 0.
 
-Le paysage est dominé par **Ransomware : 91 (76,5 %)**, suivi de **Data Leak : 13 (10,9 %)**, **System Intrusion : 7**, **Access Sale : 4**, **DDoS : 2**, **Defacement : 1** et **Operational Fraud : 1**. `Account Takeover` et `Malware` restent à 0.
+Les pays les plus représentés sont **l'Afrique du Sud avec 36 incidents**, **l'Égypte avec 14**, **le Nigeria avec 7** et **la Tunisie avec 6**. Les principaux secteurs sont **Finance / Banque (18)**, **Gouvernement / Administration (17)** et **Services professionnels / Business (12)**.
 
-Les pays les plus représentés sont **Afrique du Sud 36**, **Égypte 14**, **Nigeria 7** et **Tunisie 6**. Les principaux secteurs sont **Finance / Banking 18**, **Government / Administration 17** et **Professional / Business Services 12**.
+La répartition régionale montre une forte visibilité de **l'Afrique australe avec 50 incidents (41,7 %)**, suivie de **l'Afrique du Nord avec 31 (25,8 %)** et de **l'Afrique de l'Ouest avec 18 (15,0 %)**.
 
-La maturité de preuve reste hétérogène : **86 Claim - Unverified**, **15 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve ne doivent pas être confondues avec le type technique.
+La maturité des preuves reste hétérogène : **86 Claim - Unverified**, **16 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve restent distinctes du type technique de l'incident.
 
-> **Principe de chronologie :** un vieux dataset republié en 2024 reste une observation CTI utile mais n'est pas compté comme nouvelle attaque 2024. Une première publication 2024 dont la date technique de compromission est inconnue peut être rattachée à 2024 en indiquant clairement cette incertitude.
+Le premier semestre compte **46 incidents**, contre **74 au second semestre**. Le ransomware reste la menace la plus fréquemment observée sur l'ensemble de l'année, tandis que les Data Leak, ventes d'accès, intrusions système, DDoS et autres catégories montrent un paysage de menace plus diversifié qu'une lecture centrée uniquement sur le ransomware.
 
-## 2. Migration et corrections
+> **Note de lecture :** les chiffres AFRINTEL mesurent les incidents documentés dans le corpus à partir de sources observables. Ils ne constituent pas une mesure exhaustive de toutes les compromissions ayant réellement eu lieu en Afrique.
 
-| Élément | Effet sur le comptage |
-|---|---:|
-| Corpus dépôt corrigé antérieur | 128 |
-| Découvertes historiques / cross-year retirées | -17 |
-| Doublon eTrade/eRIS retiré | -1 |
-| 8 omissions 2024 validées ajoutées | +8 |
-| Misr Pharmacies résolu et ajouté | +1 |
-| ACAO déplacé de novembre vers juillet | 0 |
-| **Baseline finale** | **119** |
-
-ACAO a été réintégré après découverte d'une publication du 26 juillet 2024, d'un repost explicite le 12 novembre et d'une publication ultérieure le 24 décembre avec échantillon cohérent. Misr Pharmacies est désormais classé Data Leak à partir du post original du 30 décembre, mais reste `Claim - Unverified` car les fichiers divulgués ne sont plus disponibles pour analyse indépendante.
-
-## 3. Méthodologie
+## 2. Méthodologie
 
 - 9 types canoniques AFRINTEL.
 - Incident date / meilleure fenêtre temporelle soutenue prioritaire.
@@ -40,11 +28,11 @@ ACAO a été réintégré après découverte d'une publication du 26 juillet 202
 - Tentatives gérées par statut.
 - Aucun claim n'est converti en confirmation sans preuve.
 
-## 4. Évolution mensuelle
+## 2. Évolution mensuelle
 
 | Mois | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Janvier | 7 | 4 | 0 | 1 | 0 | 0 | 0 | 2 | 0 | 0 |
+| Janvier | 8 | 4 | 1 | 1 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Février | 8 | 6 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Mars | 9 | 8 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Avril | 9 | 5 | 2 | 0 | 2 | 0 | 0 | 0 | 0 | 0 |
@@ -60,7 +48,7 @@ ACAO a été réintégré après découverte d'une publication du 26 juillet 202
 ```mermaid
 timeline
     title AFRINTEL - Volume mensuel canonique 2024
-    Janvier : 7 incidents
+    Janvier : 8 incidents
     Février : 8 incidents
     Mars : 9 incidents
     Avril : 9 incidents
@@ -74,17 +62,17 @@ timeline
     Décembre : 16 incidents
 ```
 
-## 5. Types d'incident
+## 2. Types d'incident
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 91 | 76,5 % |
-| Data Leak | 13 | 10,9 % |
-| Access Sale | 4 | 3,4 % |
+| Ransomware | 91 | 75,8 % |
+| Data Leak | 14 | 11,7 % |
+| Access Sale | 4 | 3,3 % |
 | DDoS | 2 | 1,7 % |
 | Defacement | 1 | 0,8 % |
 | Account Takeover | 0 | 0,0 % |
-| System Intrusion | 7 | 5,9 % |
+| System Intrusion | 7 | 5,8 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 1 | 0,8 % |
 
@@ -92,7 +80,7 @@ timeline
 pie showData
     title Types d'incident - AFRINTEL 2024
     "Ransomware" : 91
-    "Data Leak" : 13
+    "Data Leak" : 14
     "Access Sale" : 4
     "DDoS" : 2
     "Defacement" : 1
@@ -100,7 +88,7 @@ pie showData
     "Operational Fraud" : 1
 ```
 
-## 6. Pays x type
+## 2. Pays x type
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -124,7 +112,7 @@ pie showData
 | Ghana | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tanzanie | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Soudan | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Malawi | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Malawi | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Cabo Verde | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Congo | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Djibouti | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -135,31 +123,31 @@ pie showData
 | Zambie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Botswana | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-## 7. Répartition régionale
+## 2. Répartition régionale
 
 | Région | Fiches | Part |
 |---|---|---|
-| Afrique australe | 49 | 41,2 % |
-| Afrique du Nord | 31 | 26,1 % |
-| Afrique de l'Ouest | 18 | 15,1 % |
+| Afrique australe | 50 | 41,7 % |
+| Afrique du Nord | 31 | 25,8 % |
+| Afrique de l'Ouest | 18 | 15,0 % |
 | Afrique de l'Est | 11 | 9,2 % |
 | Afrique centrale | 5 | 4,2 % |
 | Océan Indien | 5 | 4,2 % |
 
-## 8. Répartition sectorielle
+## 2. Répartition sectorielle
 
 | Secteur | Fiches | Part |
 |---|---|---|
-| Finance / Banque | 18 | 15,1 % |
-| Gouvernement / Administration | 17 | 14,3 % |
-| Services professionnels / Business | 12 | 10,1 % |
+| Finance / Banque | 18 | 15,0 % |
+| Gouvernement / Administration | 17 | 14,2 % |
+| Services professionnels / Business | 12 | 10,0 % |
 | Industrie / Fabrication | 11 | 9,2 % |
-| Santé / Médical | 10 | 8,4 % |
-| Technologie / IT | 9 | 7,6 % |
-| Éducation / Université | 7 | 5,9 % |
-| Commerce / E-commerce | 7 | 5,9 % |
+| Santé / Médical | 10 | 8,3 % |
+| Technologie / IT | 9 | 7,5 % |
+| Éducation / Université | 8 | 6,7 % |
+| Commerce / E-commerce | 7 | 5,8 % |
 | Télécommunications | 5 | 4,2 % |
-| Énergie / Services publics | 4 | 3,4 % |
+| Énergie / Services publics | 4 | 3,3 % |
 | Médias / Divertissement | 3 | 2,5 % |
 | Agriculture / Agro-industrie | 3 | 2,5 % |
 | Transport / Logistique | 3 | 2,5 % |
@@ -170,17 +158,17 @@ pie showData
 | Défense / Sécurité | 1 | 0,8 % |
 | Mines / Industries extractives | 1 | 0,8 % |
 
-## 9. Acteurs / groupes
+## 2. Acteurs / groupes
 
 | Acteur / Groupe | Fiches | Part |
 |---|---|---|
-| Unknown | 18 | 15,1 % |
-| lockbit3 | 17 | 14,3 % |
-| ransomhub | 12 | 10,1 % |
-| killsec | 10 | 8,4 % |
+| Unknown | 18 | 15,0 % |
+| lockbit3 | 17 | 14,2 % |
+| ransomhub | 12 | 10,0 % |
+| killsec | 10 | 8,3 % |
 | hunters | 8 | 6,7 % |
 | spacebears | 5 | 4,2 % |
-| arcusmedia | 4 | 3,4 % |
+| arcusmedia | 4 | 3,3 % |
 | blacksuit | 3 | 2,5 % |
 | darkvault | 3 | 2,5 % |
 | sarcoma | 3 | 2,5 % |
@@ -193,6 +181,7 @@ pie showData
 | moneymessage | 2 | 1,7 % |
 | Sentap | 2 | 1,7 % |
 | cnHunter | 1 | 0,8 % |
+| X0Frankenstein | 1 | 0,8 % |
 | medusa | 1 | 0,8 % |
 | dragonforce | 1 | 0,8 % |
 | EgyptLeaks | 1 | 0,8 % |
@@ -200,15 +189,15 @@ pie showData
 | eldorado | 1 | 0,8 % |
 | cactus | 1 | 0,8 % |
 
-`Unknown` correspond à l'absence d'attribution. ACAO est attribué au compte `vjvjvj` pour la publication initiale observée ; Satanic est le compte de publication pour Misr Pharmacies.
+`Unknown` correspond à une absence d'attribution publique ou suffisamment établie dans le corpus.
 
-## 10. Maturité des preuves
+## 2. Maturité des preuves
 
 | Position de preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 86 | 72,3 % |
-| Confirmed | 15 | 12,6 % |
-| Claim - Data Sample Published | 15 | 12,6 % |
+| Claim - Unverified | 86 | 71,7 % |
+| Confirmed | 15 | 12,5 % |
+| Claim - Data Sample Published | 16 | 13,3 % |
 | Corroborated | 2 | 1,7 % |
 | Attempted | 1 | 0,8 % |
 
@@ -216,26 +205,26 @@ pie showData
 
 | Confiance | Fiches | Part |
 |---|---|---|
-| Low | 84 | 70,6 % |
-| Very High | 16 | 13,4 % |
-| Medium | 13 | 10,9 % |
-| High | 6 | 5,0 % |
+| Low | 84 | 70,0 % |
+| Very High | 16 | 13,3 % |
+| Medium | 13 | 10,8 % |
+| High | 7 | 5,8 % |
 
 ### Impact
 
 | Impact | Fiches | Part |
 |---|---|---|
-| Level 3 | 54 | 45,4 % |
-| Level 2 | 47 | 39,5 % |
-| Level 4 | 18 | 15,1 % |
+| Level 3 | 54 | 45,0 % |
+| Level 2 | 47 | 39,2 % |
+| Level 4 | 19 | 15,8 % |
 
-## 11. Étude comparative S1 vs S2
+## 2. Étude comparative S1 vs S2
 
 | Indicateur | S1 2024 | S2 2024 | Évolution |
 |---|---|---|---|
-| Total | 45 | 74 | +29 (+64,4 %) |
+| Total | 46 | 74 | +28 (+60,9 %) |
 | Ransomware | 34 | 57 | +23 (+67,6 %) |
-| Data Leak | 4 | 9 | +5 (+125,0 %) |
+| Data Leak | 5 | 9 | +4 (+80,0 %) |
 | Access Sale | 1 | 3 | +2 (+200,0 %) |
 | DDoS | 2 | 0 | -2 (-100,0 %) |
 | Defacement | 0 | 1 | +1 (nouveau) |
@@ -244,15 +233,15 @@ pie showData
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100,0 %) |
 
-Le **S1 compte 45 incidents** et le **S2 74**, soit **+29 (+64,4 %)** dans le corpus documenté. Le principal moteur est le ransomware, mais le S2 bénéficie aussi de deux Data Leak supplémentaires désormais correctement intégrés : ACAO en juillet et Misr Pharmacies en décembre. Cette comparaison mesure le corpus, pas un taux exhaustif de compromission.
+Le **S1 compte 46 incidents** et le **S2 74**, soit **+28 (+60,9 %)** dans le corpus documenté. Le principal moteur de l'écart est le ransomware, tandis que les Data Leak passent de **5 au S1 à 9 au S2**. Cette comparaison mesure la visibilité du corpus et ne doit pas être interprétée comme une hausse équivalente du nombre réel de compromissions.
 
-## 12. Analyse CTI par type
+## 2. Analyse CTI par type
 
 ### Ransomware - 91
 La majorité des fiches ransomware provient de publications d'acteurs. Les confirmations publiques fortes restent une minorité ; la présence sur un leak site n'établit pas systématiquement le chiffrement.
 
-### Data Leak - 13
-Le total intègre désormais ACAO et Misr Pharmacies. ACAO est `Corroborated` grâce à plusieurs publications et échantillons cohérents. Misr Pharmacies reste `Claim - Unverified` car le dump annoncé n'est plus disponible pour validation indépendante. Les vieux datasets republiés sont exclus du millésime.
+### Data Leak - 14
+Les 14 fiches Data Leak présentent des niveaux de preuve variables. Les échantillons effectivement observés sont distingués des volumes globaux revendiqués, et les claims non vérifiés ne sont pas assimilés à des compromissions confirmées.
 
 ### System Intrusion - 7
 Cette catégorie évite de forcer Eneo, Malawi Passport, GTBank, EmploiPartner, CNE Mozambique et d'autres dossiers dans ransomware/data leak lorsque la preuve ne le permet pas.
@@ -266,11 +255,11 @@ Central Bank of Libya et Moneyweb sont comptés comme campagnes confirmées.
 ### Defacement - 1 / Operational Fraud - 1
 NBS Nigeria et DPWI restent les seuls cas de leurs catégories.
 
-## 13. Republications historiques et doublons
+## 2. Republications historiques et doublons
 
 **17 découvertes historiques/cross-year** restent archivées hors statistiques. Le doublon eTrade/eRIS de mars reste exclu. ACAO ne figure plus dans les pending : sa chronologie 2024 est suffisamment établie pour le rattacher à juillet.
 
-## 14. Intelligence gaps
+## 2. Intelligence gaps
 
 - vecteurs d'accès initial souvent inconnus ;
 - date technique exacte de compromission non publique pour plusieurs claims ;
@@ -278,7 +267,7 @@ NBS Nigeria et DPWI restent les seuls cas de leurs catégories.
 - distinction entre republication, réexploitation et seconde intrusion parfois impossible sans comparaison forensique ;
 - conclusions DFIR publiques limitées.
 
-## 15. Recommandations
+## 2. Recommandations
 
 ### Organisations
 MFA résistante au phishing, PAM, segmentation, sauvegardes immuables, durcissement des interfaces publiques et plans de réponse à incident.
@@ -289,8 +278,8 @@ Centraliser EDR, IAM, VPN, WAF, DNS, proxy, cloud et logs applicatifs ; détecte
 ### CTI
 Préserver distinctement incident, publication initiale, repost, découverte et confirmation ; suivre les datasets historiques comme risque d'exposition sans les recompter comme nouvelles attaques.
 
-## 16. Conclusion
+## 2. Conclusion
 
-La baseline AFRINTEL 2024 corrigée contient **119 incidents canoniques dans 30 pays**. La résolution d'ACAO et de Misr Pharmacies améliore la chronologie sans transformer les éléments inconnus en faits.
+Le corpus AFRINTEL 2024 contient **120 incidents canoniques dans 30 pays africains**. Il met en évidence une forte domination du ransomware, une exposition importante des secteurs financier et gouvernemental, ainsi qu'une maturité de preuve encore très variable selon les incidents.
 
 **AFRINTEL** - TLP:CLEAR

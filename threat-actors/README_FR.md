@@ -1,74 +1,73 @@
 # AFRINTEL - Renseignement sur les acteurs de menace
 
-👉🏾 [**English version available here**](./README.md)
+👉🏾 [**English version**](./README.md)
 
-Cette section regroupe les profils d’acteurs de menace et les analyses de campagne AFRINTEL, avec un focus sur les menaces affectant les organisations africaines.
+Cette section regroupe les profils d'acteurs de menace et les études de cas DFIR utilisés par AFRINTEL pour comprendre les modes opératoires derrière les incidents cyber qui touchent les organisations africaines.
 
-Les analyses combinent notamment :
+L'objectif est simple : ne pas s'arrêter au nom affiché sur un leak site. Il faut distinguer ce qui est connu sur l'acteur, ce qui appartient à une campagne et ce qui est réellement confirmé dans un incident précis.
 
-- le profilage des acteurs de menace et l’analyse de la victimologie ;
-- le mapping des TTP avec MITRE ATT&CK ;
-- l’analyse des malwares et outils utilisés ;
-- la corrélation des IoC et infrastructures lorsqu’ils sont disponibles ;
-- l’analyse des chronologies d’incident et de campagne ;
-- l’attribution basée sur des niveaux de confiance ;
-- la distinction entre renseignement observé, rapporté, évalué et inféré.
+## Analyses disponibles
 
----
-
-## Profils d’acteurs de menace
-
-| Acteur de menace | Type | Contenu analytique | Langues |
+| Entrée | Type | Contenu principal | Langues |
 |---|---|---|---|
-| NightSpire | Ransomware / Extorsion | Victimologie africaine, TTP, outils, IoC, évaluation d’attribution | EN / FR |
-| Akira | Ransomware / RaaS | TTP, vulnérabilités, outils, artefacts techniques, renseignement orienté détection | EN / FR |
+| [Akira](./akira/akira_profile_FR.md) | Profil acteur / ransomware | TTP, CVE, outils, exfiltration, évolution du ransomware | FR / EN |
+| [NightSpire](./nightspire/profile_FR.md) | Profil acteur / ransomware | Victimologie africaine, TTP d'incident, IoC, limites d'attribution | FR / EN |
+| [PYSA / Mespinoza](./pysa-mespinoza/dfir_case_study_FR.md) | Étude de cas DFIR | Intrusion de huit heures, vol d'identifiants, RDP, Koadic, Empire, exfiltration | FR / EN |
+| [Ryuk / Wizard Spider](./ryuk/ryuk_profile_FR.md) | Malware / acteur + référence DFIR | Séparation des entités, BazarLoader, Cobalt Strike, Zerologon, déploiement Ryuk | FR / EN |
+| [UNC6040 / Salesforce](./unc6040-salesforce/case_study_FR.md) | Campagne SaaS / cluster | Vishing, Connected Apps malveillantes, abus OAuth, exfiltration API Salesforce | EN / FR |
+
+## Comment AFRINTEL qualifie le renseignement
+
+AFRINTEL sépare quatre notions.
+
+### Preuve
+
+- **Observé** - directement vu dans une télémétrie, une analyse malware, une investigation DFIR ou une source primaire.
+- **Rapporté** - documenté par une source technique, institutionnelle ou DFIR fiable.
+- **Évalué** - conclusion analytique basée sur plusieurs éléments disponibles.
+- **Inféré** - relation plausible, mais les preuves restent insuffisantes pour une conclusion forte.
+
+### Portée
+
+- **Niveau acteur** - comportement associé à l'acteur ou à l'écosystème ransomware dans son ensemble.
+- **Niveau campagne** - comportement lié à une campagne ou à un cluster d'activité défini.
+- **Niveau incident** - comportement confirmé dans une intrusion documentée.
+- **Niveau victime** - preuve directement liée à une victime suivie par AFRINTEL.
+
+### Confiance
+
+AFRINTEL utilise les niveaux **Élevée**, **Moyenne** et **Faible**. Le niveau de confiance mesure la qualité et la cohérence des preuves, pas la gravité de l'incident.
+
+### Provenance
+
+La source d'une information importante doit rester visible : AFRINTEL, DFIR, CERT/autorité, éditeur de sécurité, MITRE ATT&CK ou autre source CTI.
+
+## Règle analytique principale
+
+Une revendication ransomware contre une victime ne prouve **pas** que toutes les TTP connues de ce ransomware ont été utilisées dans l'incident.
+
+Par exemple, si une victime Akira apparaît dans AFRINTEL, les informations générales sur Mimikatz, RClone ou PowerTool ne deviennent pas automatiquement des preuves propres à cette victime. Il faut une preuve spécifique à l'incident.
+
+La même règle s'applique aux IoC. Les hashes, domaines et adresses IP historiques doivent rester liés à leur date et à leur contexte. Ils ne doivent pas être présentés comme une infrastructure active sans nouvelle validation.
+
+## Priorité des sources
+
+En cas de différence entre plusieurs sources, AFRINTEL donne la priorité à :
+
+1. la télémétrie d'incident et les preuves DFIR primaires ;
+2. les CERT, autorités et avis des forces de l'ordre ;
+3. les recherches techniques bien documentées des éditeurs de sécurité ;
+4. MITRE ATT&CK pour la taxonomie et le contexte des entités ;
+5. les dépôts CTI communautaires comme pistes de recherche complémentaires.
+
+Les dépôts communautaires sont utiles pour trouver des pistes, mais les éléments importants doivent être vérifiés dans la source d'origine quand elle est disponible.
+
+## Prompt analyste réutilisable
+
+Le prompt utilisé pour créer ou auditer les fiches de cette section est disponible ici :
+
+- [PROMPT.md](./PROMPT.md)
 
 ---
 
-## Principe analytique
-
-AFRINTEL n’applique pas automatiquement les TTP connues d’un acteur à chaque victime africaine qui lui est associée.
-
-Les éléments suivants sont maintenus séparément afin d’éviter toute sur-attribution :
-
-- les revendications publiques des acteurs ;
-- les observations techniques ;
-- les évaluations analytiques ;
-- les éléments confirmés de manière indépendante.
-
----
-
-## Modèle de qualification des preuves
-
-AFRINTEL utilise quatre niveaux principaux :
-
-### Observé
-
-Élément directement constaté dans une télémétrie technique, une analyse de malware, une investigation de réponse à incident ou une source primaire.
-
-### Rapporté
-
-Élément documenté par une source externe fiable, telle qu’un CERT, une autorité, un éditeur de sécurité ou une équipe DFIR.
-
-### Évalué
-
-Conclusion analytique fondée sur plusieurs observations ou éléments de renseignement disponibles.
-
-### Inféré
-
-Relation plausible pour laquelle les preuves techniques sont encore insuffisantes pour établir une attribution forte.
-
----
-
-## Objectif
-
-L’objectif de cette section est de transformer les données de victimes AFRINTEL en renseignement plus opérationnel en reliant :
-
-```text
-Acteur de menace
-        │
-        ├── TTP / MITRE ATT&CK
-        ├── Malware / Outils
-        ├── IoC / Infrastructure
-        ├── Campagnes
-        └── Victimologie africaine
+**AFRINTEL - African Cyber Threat Intelligence**
