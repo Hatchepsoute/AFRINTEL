@@ -15,6 +15,8 @@ The goal is simple: go beyond a leak-site name and document what is actually kno
 | [PYSA / Mespinoza](./pysa-mespinoza/dfir_case_study.md) | DFIR case study | Eight-hour intrusion, credential theft, RDP, Koadic, Empire, exfiltration | EN / FR |
 | [Ryuk / Wizard Spider](./ryuk/ryuk_profile.md) | Malware / actor + DFIR reference | Entity separation, BazarLoader, Cobalt Strike, Zerologon, Ryuk deployment | EN / FR |
 | [UNC6040 / Salesforce](./unc6040-salesforce/case_study.md) | SaaS campaign / threat cluster | Vishing, malicious Connected Apps, OAuth abuse, Salesforce API exfiltration | EN / FR |
+| [Qilin / Agenda](./qilin/profile.md) | Threat actor / ransomware profile | VPN access, credential theft, ESXi targeting, exfiltration, Qilin campaign evolution | EN / FR |
+| [Gunra](./gunra/profile.md) | Threat actor / ransomware profile | Fortinet exploitation, NTDS dumping, SSH tunnels, cloud data theft, recovery inhibition | EN / FR |
 
 ## How AFRINTEL qualifies intelligence
 
