@@ -38,6 +38,8 @@ July 2026 brought in 42 incident records: 18 ransomware claims, 18 data leaks, 6
 
 Between January and June 2026, AFRINTEL documented **294 deduplicated incidents**: **113 ransomware**, **121 data leaks**, **6 access-sale records**, **52 DDoS claims**, **1 defacement** and **1 operational-fraud incident**. Q1 accounts for **82 incidents**, compared with **212 in Q2**. Ransomware is nearly stable between quarters (56 to 57), while the sharp increase in Q2 is driven mainly by data exposure/access activity and DDoS reporting. Six multi-country records expand the semester to **317 geographic occurrences**.
 
+The 52 DDoS entries are dated actor claims or availability observations, including 43 Keymous+ observations in May. Repeated observations of the same organization on different dates are not necessarily technically independent attacks.
+
 📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
 
 📊 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)

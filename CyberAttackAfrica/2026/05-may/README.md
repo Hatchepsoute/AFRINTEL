@@ -12,6 +12,8 @@
 
 May 2026 brought in **103 publicly reported or claimed cyber incidents** across Africa, **17 ransomware listings or disclosures**, **41 data leaks, 2 access sales** and **43 DDoS claims**. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
 
+The **43 DDoS records** are dated Keymous+ claims or availability observations. Some concern the same organizations on different dates; the corpus does not establish that all 43 represent technically independent attacks.
+
 Key findings:
 - **17 ransomware listings or disclosures (16.5%)**, **41 data leaks (39.8%), 2 access sales (1.9%)** and **43 DDoS claims (41.7%)**.
 - **12 countries** are directly affected, with 6 additional countries exposed through 3 multi-country incidents; **Morocco** (52 incidents), **Egypt** (17), **South Africa** (14), and **Tunisia** (5) account for **88 of the 100 direct records (88.0%)**, or **85.4% of all 103 records**.
@@ -358,9 +360,9 @@ pie showData
 
 ---
 
-### 4.3 DDoS claims (43 incidents)
+### 4.3 DDoS claims (43 observations)
 
-The retrospective Keymous+ collection adds 43 Moroccan target-date observations between 9 and 28 May 2026. Each target in a dated availability publication counts as one incident; duplicate captures of the same target in the same window are deduplicated. Check-Host and Cloudflare results document apparent unavailability, but do not independently prove traffic origin, DDoS method or successful impact.
+The retrospective Keymous+ collection adds 43 Moroccan target-date observations between 9 and 28 May 2026. Each target in a dated availability publication counts as one documented observation; duplicate captures of the same target in the same window are deduplicated. Some observations concern the same organization on different dates and are not necessarily separate technical attacks. Check-Host and Cloudflare results document apparent unavailability, but do not independently prove traffic origin, DDoS method or successful impact.
 
 ## 5. Sectoral impact
 

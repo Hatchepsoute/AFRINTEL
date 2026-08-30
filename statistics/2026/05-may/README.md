@@ -16,6 +16,8 @@
 
 These statistics cover publications observed within the AFRINTEL monitoring scope for May 2026. Each record retains the status documented in its victim card.
 
+The 43 DDoS records are dated Keymous+ claims or availability observations. Some concern the same organizations on different dates; the corpus does not establish that all 43 represent technically independent attacks. The total therefore describes documented observations, not 103 independently confirmed compromises.
+
 The three multi-country incidents (Resume Docs, DHIS2, Passport Scans) are counted as **1 incident each** in the global total of 103. In the victim files, each entry lists the specific countries affected rather than a generic "Multi-country" label, to allow per-country identification. In the geographic exposure table (section 2.2), each affected country is listed individually. The sum of country exposures therefore exceeds 103 incidents.
 
 ---
@@ -185,9 +187,9 @@ xychart
 
 ---
 
-### 4.3 DDoS claims (43 incidents)
+### 4.3 DDoS claims (43 observations)
 
-The retrospective Keymous+ collection adds 43 Moroccan target-date observations between 9 and 28 May 2026. Each target in a dated availability publication counts as one incident; duplicate captures of the same target in the same window are deduplicated. Check-Host and Cloudflare results document apparent unavailability, but do not independently prove traffic origin, DDoS method or successful impact.
+The retrospective Keymous+ collection adds 43 Moroccan target-date observations between 9 and 28 May 2026. Each target in a dated availability publication counts as one documented observation; duplicate captures of the same target in the same window are deduplicated. Some observations concern the same organization on different dates and are not necessarily separate technical attacks. Check-Host and Cloudflare results document apparent unavailability, but do not independently prove traffic origin, DDoS method or successful impact.
 
 ## 5. Sector distribution
 
