@@ -119,7 +119,11 @@ Documented ransom-note names include:
 ```text
 fn.txt
 akira_readme.txt
+<<<<<<< HEAD
 akiranew.txt   # reported for some Linux/ESXi Akira_v2 activity
+=======
+akiranew.txt
+>>>>>>> origin/update/threat-actors-v2-2026-08-26
 ```
 
 Akira_v2 uses Rust and supports more granular encryption behavior, including VM-focused options. Public reporting also documents Akira activity against VMware ESXi, Hyper-V and, in a June 2025 incident, Nutanix AHV disk files.

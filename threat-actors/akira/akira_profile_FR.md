@@ -119,7 +119,11 @@ Noms de notes de rançon documentés :
 ```text
 fn.txt
 akira_readme.txt
+<<<<<<< HEAD
 akiranew.txt   # rapporté dans certaines activités Linux/ESXi Akira_v2
+=======
+akiranew.txt
+>>>>>>> origin/update/threat-actors-v2-2026-08-26
 ```
 
 Akira_v2 est écrit en Rust et offre un contrôle plus fin du chiffrement, notamment pour les environnements virtuels. Les rapports publics documentent également des opérations contre VMware ESXi, Hyper-V et, dans un incident de juin 2025, des disques de VM Nutanix AHV.
