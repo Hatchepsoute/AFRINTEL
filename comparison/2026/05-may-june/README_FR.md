@@ -30,7 +30,7 @@ La baisse de juin vient entièrement des fuites de données et ventes d'accès. 
 | 🇸🇳 Sénégal | 1 | 1 | 0 |
 | Fiches multi-pays | 3 | 2 | -1 |
 
-Les libellés pays directs couvrent 54 fiches en mai, plus trois fiches multi-pays, et 98 fiches en mai, plus trois fiches multi-pays, et 38 fiches en juin, plus deux fiches multi-pays.
+Les libellés pays directs couvrent 100 fiches en mai, auxquelles s'ajoutent 3 fiches multi-pays, et 38 fiches directes en juin, auxquelles s'ajoutent 2 fiches multi-pays.
 
 ## Évolution par secteur
 

@@ -11,7 +11,6 @@
 ## August 2026
 
 ### 01 August 2026
-### 5 June 2026
 
 #### 🇪🇬 Egypt - Egyptian Local Services Portal (probable attribution)
 
@@ -479,3 +478,31 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 
   No independent public confirmation from the DGSN or DGST regarding the entirety of the claimed compromise is established by the analyzed material. AFRINTEL does not reproduce any names, PPR numbers, CIN/CNI numbers, RIB bank details, dates of birth or other personal data contained in the examined files.
 
+---
+### August 29, 2026
+#### 🇱🇾 Libya - Albarq Media Service / شركة البرق للاتصالات والتقنية
+
+* **Incident period:** June 2026, exact date not established
+* **Initial publication date:** June 09, 2026
+* **AFRINTEL discovery date:** August 29, 2026
+* **Actor / Group:** Richard2002
+* **Sector:** Telecommunications / Media Services
+* **Website:** [albarq.ly](https://albarq.ly/)
+* **Status:** Claim - Data Sample Published
+* **Incident type:** Data Leak
+* **Confidence level:** Medium
+* **Impact level:** Level 3
+
+* **Description:**
+  Albarq Media Service is presented as a service associated with شركة البرق للاتصالات والتقنية (Albarq Telecommunications and Technology), a Libyan telecommunications and related-services operator.
+
+* **Analysis:**
+  A post attributed to Richard2002 and dated June 09, 2026 presents a sample allegedly originating from the Albarq Media service and claims approximately **330,000 accounts**. The visible sample contains **18 rows** and **24 semicolon-separated fields**. It includes account identifiers, subscription information, dates, general locations and telephone numbers; AFRINTEL does not reproduce raw personal data.
+
+  The visible records contain dates ranging from August 2019 to April 2025, with inconsistent or missing usage values in several rows. The observed material is only a visible extract and cannot validate the claimed **330,000 accounts**, the completeness of the leak, the source system, the access vector or the extraction method. The original source file was not available; the analysis is therefore limited to the data visible in the provided sample.
+
+  **Unknown:** No independent public confirmation of the incident by Albarq or a Libyan authority is established in the examined material. The exact access or exfiltration period remains unknown; June 2026 refers to the date of the observed publication.
+
+* **Recommendations:**
+  * Review subscription-platform access logs and data exports around June 09, 2026.
+  * Reset sessions and strengthen monitoring of administrative accounts if exposure is confirmed.

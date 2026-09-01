@@ -12,6 +12,8 @@
 
 Mai 2026 a rapporté **103 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **41 fuites de données, 2 ventes d'accès** et **43 revendications DDoS**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
 
+Les **43 fiches DDoS** correspondent à des revendications ou observations de disponibilité datées attribuées à Keymous+. Certaines concernent les mêmes organisations à des dates différentes ; le corpus ne permet pas d'établir que les 43 fiches correspondent à des attaques techniquement indépendantes.
+
 Principales conclusions :
 - **17 ransomwares (16,5 %)**, **41 fuites de données (39,8 %), 2 ventes d'accès (1,9 %)** et **43 revendications DDoS (41,7 %)**.
 - **12 pays** sont directement touchés, auxquels s’ajoutent **6 pays supplémentaires** exposés via **3 incidents multi-pays** ; **le Maroc** (52 incidents), **l’Égypte** (17), **l’Afrique du Sud** (14) et **la Tunisie** (5) concentrent **88 des 100 fiches mono-pays (88,0 %)**, soit **85,4 % des 103 fiches**.
@@ -355,9 +357,9 @@ pie showData
 
 ---
 
-### 4.3 Revendications DDoS (43 incidents)
+### 4.3 Revendications DDoS (43 observations)
 
-La collecte rétrospective de publications Keymous+ ajoute 43 observations marocaines datées entre le 9 et le 28 mai 2026. Chaque cible présente dans une publication de disponibilité datée compte comme un incident ; les captures répétées d une même cible dans la même fenêtre sont dédupliquées. Les résultats Check-Host et Cloudflare documentent une indisponibilité apparente, mais ne prouvent pas indépendamment l origine du trafic, la méthode DDoS ni l impact effectif.
+La collecte rétrospective de publications Keymous+ ajoute 43 observations marocaines datées entre le 9 et le 28 mai 2026. Chaque cible présente dans une publication de disponibilité datée compte comme une observation documentée ; les captures répétées d une même cible dans la même fenêtre sont dédupliquées. Certaines observations concernent la même organisation à des dates différentes et ne correspondent pas nécessairement à des attaques techniques distinctes. Les résultats Check-Host et Cloudflare documentent une indisponibilité apparente, mais ne prouvent pas indépendamment l origine du trafic, la méthode DDoS ni l impact effectif.
 
 ## 5. Impact sectoriel
 

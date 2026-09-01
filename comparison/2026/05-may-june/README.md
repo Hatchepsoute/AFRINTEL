@@ -30,7 +30,7 @@ June's drop came entirely from data leaks and access sales. Ransomware actually 
 | 🇸🇳 Senegal | 1 | 1 | 0 |
 | Multi-country records | 3 | 2 | -1 |
 
-Direct country labels cover 54 May records plus three multi-country records, and 98 May records plus three multi-country records, and 38 June records plus two multi-country records.
+Direct country labels cover 100 May records plus three multi-country records, and 38 June direct records plus two multi-country records.
 
 ## Sector evolution
 

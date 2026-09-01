@@ -16,6 +16,8 @@
 
 Ces statistiques couvrent les publications observées dans le périmètre AFRINTEL pour mai 2026. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
+Les 43 fiches DDoS correspondent à des revendications ou observations de disponibilité datées attribuées à Keymous+. Certaines concernent les mêmes organisations à des dates différentes ; le corpus ne permet pas d'établir que les 43 fiches correspondent à des attaques techniquement indépendantes. Le total décrit donc des observations documentées et non 103 compromissions indépendantes confirmées.
+
 Les trois incidents multi-pays (Resume Docs, DHIS2, Scans de passeports) sont comptabilisés comme **1 incident chacun** dans le total global de 103. Dans les fichiers victimes, chaque entrée liste désormais les pays concernés explicitement plutôt qu'un label générique "Multi-pays", afin de permettre l'identification par pays. Dans le tableau d'exposition géographique (section 2.2), chaque pays touché est listé individuellement. La somme des expositions par pays dépasse donc le total de 103 incidents.
 
 ---
@@ -185,9 +187,9 @@ xychart
 
 ---
 
-### 4.3 Revendications DDoS (43 incidents)
+### 4.3 Revendications DDoS (43 observations)
 
-La collecte rétrospective de publications Keymous+ ajoute 43 observations marocaines datées entre le 9 et le 28 mai 2026. Chaque cible présente dans une publication de disponibilité datée compte comme un incident ; les captures répétées d une même cible dans la même fenêtre sont dédupliquées. Les résultats Check-Host et Cloudflare documentent une indisponibilité apparente, mais ne prouvent pas indépendamment l origine du trafic, la méthode DDoS ni l impact effectif.
+La collecte rétrospective de publications Keymous+ ajoute 43 observations marocaines datées entre le 9 et le 28 mai 2026. Chaque cible présente dans une publication de disponibilité datée compte comme une observation documentée ; les captures répétées d une même cible dans la même fenêtre sont dédupliquées. Certaines observations concernent la même organisation à des dates différentes et ne correspondent pas nécessairement à des attaques techniques distinctes. Les résultats Check-Host et Cloudflare documentent une indisponibilité apparente, mais ne prouvent pas indépendamment l origine du trafic, la méthode DDoS ni l impact effectif.
 
 ## 5. Répartition sectorielle
 
