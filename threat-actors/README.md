@@ -67,12 +67,6 @@ When sources disagree, AFRINTEL gives priority to:
 
 Community repositories are useful for finding leads, but important claims should be checked against the original source when possible.
 
-## Reusable analyst prompt
-
-A reusable prompt for creating or reviewing profiles in this section is available here:
-
-- [PROMPT.md](./PROMPT.md)
-
 ---
 
 **AFRINTEL - African Cyber Threat Intelligence**

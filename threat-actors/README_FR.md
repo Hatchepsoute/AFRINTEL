@@ -68,12 +68,6 @@ En cas de différence entre plusieurs sources, AFRINTEL donne la priorité à :
 
 Les dépôts communautaires sont utiles pour trouver des pistes, mais les éléments importants doivent être vérifiés dans la source d'origine quand elle est disponible.
 
-## Prompt analyste réutilisable
-
-Le prompt utilisé pour créer ou auditer les fiches de cette section est disponible ici :
-
-- [PROMPT.md](./PROMPT.md)
-
 ---
 
 **AFRINTEL - African Cyber Threat Intelligence**
