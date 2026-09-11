@@ -781,3 +781,11 @@ The metadata also contains session tokens, password-reset tokens, Google Site Ki
 | Health data | Not visible |
 | Government data | Yes |
 | Critical data | Yes, official documents and personal student data |
+
+- **Publication follow-up (10 September 2026):**
+
+  A new forum publication signed **EveN47** refers back to the Ministry of Education of Libya database and claims that **800 GB** of sensitive personal data relating to Libyan citizens is held in the attached copy, notably secondary-education completion data, student national ID numbers, student photographs and passport images. The same publication claims that the actor obtained approximately **300 GB** of similar data covering education ministries across Libya.
+
+  These volumes, the multi-ministry scope and the attribution to moe.gov.ly remain unverified claims. The supplied capture alone did not contain an exploitable new sample; a local file presented as originating from this publication was subsequently analysed in read-only mode. Detailed results are documented in the [September follow-up note](../09-september/victims.md). The alias **EveN47** differs from **EvaN47** in the 30 June publication and the relationship remains unresolved. The 800 GB figure is retained as a new claim dated 10 September and does not replace the previously claimed 287 GB. This publication is treated as a follow-up to the same claim, not as a separate incident.
+
+- **Sources / Evidence:** Breached forum publication attributed to EveN47 (10 September 2026) and supplied capture; download link not opened.

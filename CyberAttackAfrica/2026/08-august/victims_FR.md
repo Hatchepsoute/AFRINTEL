@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (9 victimes)
+# Liste des victimes africaines de cyberattaques en août 2026 (29 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -74,6 +74,41 @@
 
 ### 01 août 2026
 
+
+#### 🇩🇿 Algérie - Direction générale de la recherche scientifique et du développement technologique (DGRSDT)
+
+- **Date de l'incident :** 8 juillet 2026 (date fournie pour l'incident ; date d'accès initial non établie)
+- **Date de publication initiale :** 8 juillet 2026 à 18:33 (fuseau horaire non indiqué)
+- **Date de découverte AFRINTEL :** 1 août 2026
+- **Acteur / Groupe :** anisanas2
+- **Secteur :** Gouvernement / Recherche scientifique
+- **Site web :** [dgrsdt.dz](https://www.dgrsdt.dz/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
+- **Type de source :** Underground Forum and Messaging Channel - Direct AFRINTEL Observation
+- **Sources publiques :** [Présentation officielle de la DGRSDT](https://www.dgrsdt.dz/public/index.php/fr/about_dgrsdt)
+
+- **Description victime :**
+
+  La Direction générale de la recherche scientifique et du développement technologique (DGRSDT) est une direction générale algérienne placée sous l'autorité du ministre chargé de la recherche scientifique. Elle met en œuvre la politique nationale de recherche scientifique et de développement technologique, notamment pour la programmation, l'évaluation, la recherche universitaire, les ressources humaines et le financement des programmes.
+
+- **Analyse :**
+
+  **Observed :** La publication observée, attribuée à anisanas2, date du 8 juillet 2026 à 18:33 selon l'horodatage visible. Elle affirme une compromission de la DGRSDT et propose un ensemble présenté comme contenant les identifiants gouvernementaux de doctorants et de scientifiques, leurs informations personnelles, des certificats d'inscription, des autoportraits et des dossiers de projets doctoraux. Le prix annoncé est de **800 USD** ; la publication revendique **6 000 identifiants** et **6 000 profils**. Ces chiffres et la compromission restent des revendications de l'acteur.
+
+  Le CSV fourni et analysé intégralement contient **1 000 enregistrements et 29 colonnes**, avec une largeur constante. Il comprend des champs relatifs aux chercheurs, encadrants, établissements, diplômes, situations, coordonnées et identifiants nationaux. **16 lignes sont des doublons exacts au-delà de la première occurrence**. Les champs d'identifiant national renseignés présentent majoritairement 18 chiffres dans les deux blocs de profil ; aucune valeur personnelle n'est reproduite ici.
+
+  L'archive de profils contient **4 123 fichiers** pour environ **2,46 Go** non compressés. L'analyse des empreintes distingue **2 185 contenus uniques**, avec **1 938 fichiers en doublon exact** au-delà de la première occurrence. Les signatures identifient principalement des images ; 3 950 fichiers image ont été vérifiés par lecture, tandis que 172 n'ont pas pu être validés par la bibliothèque d'image utilisée. L'archive de certificats contient **100 fichiers**, soit 51 PDF et 49 images, représentant 58 pages PDF ; aucun fichier n'est chiffré et aucun doublon exact n'a été détecté.
+
+  Les noms de fichiers de l'archive de profils correspondent à des noms ou identifiants du CSV pour **1 042 fichiers et 444 lignes**. Dans l'archive de certificats, **25 fichiers** correspondent à des noms présents dans **26 lignes** du CSV. Ces rapprochements, la structure des champs, les documents et les éléments visuels associés à la publication soutiennent une attribution à des données liées à la DGRSDT avec un niveau de confiance élevé pour l'authenticité structurelle et l'attribution de l'échantillon.
+
+  **Assumption :** La cohérence entre la mission officielle de la DGRSDT, le schéma doctoral du CSV, les certificats, les images de profils et les correspondances de noms rend plausible l'association du corpus à l'écosystème de la DGRSDT. Elle ne permet pas d'établir le vecteur d'accès, l'extraction ou la compromission officielle de l'organisation.
+
+  **Unknown :** Le nombre réel de personnes concernées, l'exhaustivité du jeu complet, la validité des **6 000 profils** revendiqués, la date et la méthode d'accès, les systèmes touchés, l'exfiltration, l'impact opérationnel, la confirmation de la victime et la divulgation de l'ensemble complet restent inconnus. Les archives ont été examinées localement en lecture seule ; aucune donnée personnelle brute n'est publiée. L'analyse des documents visuels reste limitée par les 172 fichiers image non validés et par l'absence de modèle OCR français ou arabe disponible.
+
+
 #### 🇪🇬 Égypte - Egyptian Football Association (EFA)
 
 * **Date de publication initiale :** 26 juillet 2026 à 18:20 (fuseau horaire non indiqué)
@@ -114,6 +149,217 @@
   La nature des informations observées, comprenant des données d'identité, documents officiels, données contractuelles et dossiers pouvant concerner de jeunes joueurs ou des mineurs, crée un risque élevé de fraude documentaire, usurpation d'identité, phishing ciblé, ingénierie sociale et exploitation abusive des informations personnelles. AFRINTEL ne reproduit aucune identité, numéro national, adresse, signature, photographie ou autre donnée personnelle issue des éléments examinés.
 
 
+### 02 août 2026
+
+#### 🇿🇦 Afrique du Sud - Buzz Trading 104
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 02 août 2026 à 13:26:24 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Fabrication de plastiques / Articles ménagers
+- **Site web :** [buzztrading104.co.za](https://buzztrading104.co.za/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 2
+- **Sources publiques :** [Présentation de Buzz Trading 104](https://buzztrading104.co.za/about-buzz-trading/) | [Site officiel](https://buzztrading104.co.za/)
+
+- **Description :**
+
+  Buzz Trading 104 est un fabricant sud-africain de produits plastiques moulés par injection et de biens destinés aux marchés grand public et industriels, actif depuis 2003. Son portefeuille comprend notamment des articles ménagers et de rangement, des produits de plein air, des conteneurs roulants industriels, du mobilier pour enfants, des emballages plastiques et des échelles en aluminium.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe krybit à Buzz Trading 104, situe la cible en Afrique du Sud et cite www.buzztrading104.co.za. Il est horodaté au 2 août 2026 à 13:26:24, sans fuseau horaire indiqué. Aucun échantillon, volume, délai de divulgation, type de données ou élément technique de compromission n'est fourni.
+
+  **Assumption :** La concordance du domaine avec le site public de l'entreprise rend l'identification de la cible plausible. Elle ne confirme ni un accès non autorisé, ni une exfiltration, ni un chiffrement.
+
+  **Unknown :** La date et la méthode d'accès initial, les systèmes affectés, l'existence d'un impact opérationnel, la nature des données éventuellement obtenues, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-02T13:26:24
+listing_last_observed_at: 2026-08-02T13:26:24
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-02T13:26:24
+-->
+
+#### 🇳🇬 Nigeria - ASHA Microfinance Bank Limited (ASA Nigeria)
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 02 août 2026 à 14:24:27 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Microfinance / Banque
+- **Site web :** [nigeria.asa-international.com](https://nigeria.asa-international.com/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Présentation institutionnelle](https://nigeria.asa-international.com/about-us/) | [Profil synthétique](https://nigeria.asa-international.com/about-us/at-a-glance/)
+
+- **Description :**
+
+  ASHA Microfinance Bank Limited, ou ASA Nigeria, est une banque nigériane de microfinance acceptant les dépôts et filiale d'ASA International. Elle a commencé ses activités en 2010 et accorde principalement de petits prêts à vocation sociale à des entrepreneures à faibles revenus, dans le cadre d'une licence nationale de microfinance.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe krybit à nigeria.asa-international.com et situe la cible au Nigeria. Il est horodaté au 2 août 2026 à 14:24:27, sans fuseau horaire indiqué. Le secteur source « administration centrale et gouvernement » est contredit par le profil officiel de l'organisation, qui établit une activité de microfinance et de banque. Aucun échantillon, volume, échéance ou détail technique n'est fourni.
+
+  **Assumption :** La correspondance exacte du sous-domaine avec le site officiel rend l'identification de la cible plausible. En cas de compromission, la nature financière de l'activité pourrait exposer des informations sensibles sur des clients ou des opérations, mais aucune catégorie de données n'est établie par les éléments fournis.
+
+  **Unknown :** L'accès initial, les systèmes concernés, l'exfiltration, le chiffrement, l'impact opérationnel et toute confirmation de la victime restent inconnus. Aucun volume ni type de données ne peut être attribué à ce cas.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-02T14:24:27
+listing_last_observed_at: 2026-08-02T14:24:27
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-02T14:24:27
+-->
+
+#### 🇿🇦 Afrique du Sud - DC Partner
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 02 août 2026 à 14:25:08 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Services financiers / Distribution de paiements / Accompagnement du désendettement
+- **Site web :** [dcpartner.co.za](https://www.dcpartner.co.za/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Site officiel de DC Partner](https://www.dcpartner.co.za/)
+
+- **Description :**
+
+  DC Partner (Pty) Ltd est une Payment Distribution Agency sud-africaine accréditée par le National Credit Regulator et active dans l'écosystème du conseil en désendettement. Basée à George et représentée au niveau national, elle fournit des services de distribution de paiements, de relevés, de systèmes et de support opérationnel aux conseillers en dette et aux consommateurs.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe krybit à DC Partner, situe la cible en Afrique du Sud et cite www.dcpartner.co.za. Il est horodaté au 2 août 2026 à 14:25:08, sans fuseau horaire indiqué. La source ne fournit ni échantillon, ni volume, ni catégorie de données, ni échéance, ni preuve technique.
+
+  **Assumption :** Le domaine concorde avec le site public de l'entreprise et rend l'identification de la cible plausible. Si la revendication est exacte, les activités de distribution de paiements et de désendettement pourraient entraîner un risque pour des informations financières ou personnelles, sans que leur exposition soit établie.
+
+  **Unknown :** Les méthodes d'accès et d'acquisition, les systèmes touchés, un éventuel chiffrement, la portée opérationnelle, la confirmation de la victime et l'état de toute divulgation restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-02T14:25:08
+listing_last_observed_at: 2026-08-02T14:25:08
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-02T14:25:08
+-->
+
+### 04 août 2026
+
+#### 🇿🇦 Afrique du Sud - Sure Travel
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 04 août 2026 à 15:50:57 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** Orova
+- **Secteur :** Agence de voyages / Voyages loisirs et professionnels
+- **Référence secondaire du jeu source :** emis.com/.../Sure_Travel_Company_Limited (société homonyme enregistrée à Hong Kong)
+- **Site web :** [suretravel.co.za](https://www.suretravel.co.za/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 2
+- **Sources publiques :** [Présentation de Sure Travel](https://www.suretravel.co.za/about) | [Profil institutionnel](https://www.linkedin.com/company/sure-travel-pty-ltd)
+
+- **Description :**
+
+  Sure Travel (Pty) Ltd est une marque d'agences de voyages d'Afrique australe proposant des services de voyages loisirs et professionnels. Son site indique plus de 30 ans d'activité et un réseau de plus de 80 agences en Afrique du Sud, en Namibie et au Botswana.
+
+- **Analyse :**
+
+  **Observed :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie Sure Travel comme une victime sud-africaine, avec un horodatage au 4 août 2026 à 15:50:57. L'enregistrement du jeu source comporte également une URL secondaire renvoyant vers une société homonyme enregistrée à Hong Kong ; cette référence incohérente n'est pas retenue pour l'attribution géographique. Aucun échantillon de données n'était disponible dans les éléments fournis.
+
+  **Assumption :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
+
+  **Unknown :** L'accès initial, les systèmes affectés, les données éventuellement obtenues, l'existence d'un chiffrement, tout impact opérationnel et une confirmation de la victime restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-04T15:50:57
+listing_last_observed_at: 2026-08-04T15:50:57
+sample_status: none-observed
+deadline_at:
+deadline_status: unknown
+disclosure_status: unknown
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-04T15:50:57
+-->
+
+#### 🇪🇬 Égypte - ADG Healthcare
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 04 août 2026 à 15:55:39 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** Orova
+- **Secteur :** Industrie pharmaceutique
+- **Domaine également cité dans le jeu source :** www.adg-healthcare.com
+- **Site web :** [adghealthcare-eg.com](http://www.adghealthcare-eg.com)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Profil institutionnel](https://www.linkedin.com/company/adg-healthcare) | [Référence d'entreprise](https://www.bizmideast.com/EG/adg-healthcare-02-22571600)
+
+- **Description :**
+
+  Les informations publiques relatives à ADG Healthcare au Caire l'associent à Advocure Pharma Group, une entreprise pharmaceutique égyptienne présente notamment dans les domaines cardiovasculaire, génito-urinaire et anti-infectieux. Son profil public renvoie vers adghealthcare-eg.com.
+
+- **Analyse :**
+
+  **Observed :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie ADG Healthcare comme une victime égyptienne, avec un horodatage au 4 août 2026 à 15:55:39. Le jeu source cite www.adg-healthcare.com, tandis que les profils publics de l'entreprise renvoient vers adghealthcare-eg.com ; cette divergence de domaine demeure documentée. Aucun échantillon de données n'était disponible dans les éléments fournis.
+
+  **Assumption :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
+
+  **Unknown :** Le domaine technique effectivement visé, l'accès initial, les systèmes concernés, la nature des données éventuellement obtenues, l'existence d'un chiffrement, une éventuelle perturbation et la confirmation de l'organisation restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-04T15:55:39
+listing_last_observed_at: 2026-08-04T15:55:39
+sample_status: none-observed
+deadline_at:
+deadline_status: unknown
+disclosure_status: unknown
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-04T15:55:39
+-->
+
 ### 05 août 2026
 #### 🇩🇿 Algérie - Ministère du Commerce
 
@@ -136,6 +382,50 @@
   Une publication attribuée à Florence propose à la vente un accès VPN présenté comme appartenant au ministère algérien du Commerce, au prix de 500 USD. Le vendeur décrit les identifiants comme vérifiés et ne fournit aucune indication de revenus. La publication ne montre ni les identifiants, ni le point d’accès, ni le compte concerné, ni les privilèges disponibles, ni de preuve technique confirmant que l’accès fonctionne.
 
   L’accès annoncé pourrait permettre une entrée non autorisée dans des services gouvernementaux internes, une reconnaissance ultérieure, des opérations de phishing, un accès à des données ou des déplacements latéraux. La revendication reste non vérifiée et aucune confirmation indépendante du ministère, de l’accès VPN ou des identifiants n’est disponible dans la publication.
+
+### 07 août 2026
+
+#### 🇿🇦 Afrique du Sud - Serengeti Golf and Wildlife Estate
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 07 août 2026 à 02:25:08 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Immobilier / Domaine résidentiel et golf
+- **Site web :** [serengeti-estates.co.za](https://serengeti-estates.co.za/)
+- **Domaine cité par le jeu source :** www.serengetiestates.co.za
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Site officiel et coordonnées](https://serengeti-estates.co.za/contact-us/)
+
+- **Description :**
+
+  Serengeti Golf and Wildlife Estate est un domaine résidentiel et golfique haut de gamme situé à Kempton Park, dans le Gauteng, à proximité de Johannesburg et de l'aéroport international OR Tambo. Le site combine immobilier résidentiel, golf et infrastructures de loisirs.
+
+- **Analyse :**
+
+  **Observed :** Le dossier local associé à la publication contient 21 artefacts : 8 JPG, 5 XLSX, 1 XLS, 3 PDF, 3 DOCX et 1 PPTX. Les cinq classeurs XLSX ont été ouverts en lecture seule : 54 feuilles et 53 927 cellules non vides. Ils contiennent 1 643 cellules de formule, non exécutées, et aucun lien externe détecté. Les contenus lisibles couvrent des plannings et heures de housekeeping, des rotations de serveurs, des demandes d'achat et un modèle de réservation, sur des périodes allant de 2017 à 2020. Les trois DOCX comprennent notamment une procédure de périodes de service, un document de peinture et un modèle de réservation avec sept tableaux. Les PDF sont des documents numérisés ; les images JPG et la présentation d'une diapositive n'ont pas permis une qualification textuelle complète. Les empreintes SHA-256 des 21 artefacts ont été calculées localement et conservées hors dépôt.
+
+  **Assumption :** La cohérence des plannings, procédures, formulaires d'achat, réservations et supports visuels avec l'activité d'un domaine résidentiel et golfique rend plausible l'association du corpus à l'environnement de la victime. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni le chiffrement, ni l'origine exacte de chaque fichier.
+
+  **Unknown :** Le nombre de personnes concernées, la présence exacte de données personnelles ou financières dans les documents numérisés et images, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et toute divulgation complète restent inconnus. L'analyse est limitée aux structures lisibles et aux métadonnées des fichiers ; les cellules de formule n'ont pas été recalculées et aucun contenu sensible brut n'est reproduit.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-07T02:25:08
+listing_last_observed_at: 2026-08-07T02:25:08
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: partial
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-09-04
+-->
 
 ### 08 août 2026
 #### 🇰🇪 Kenya - Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza)
@@ -192,6 +482,7 @@
 ### 08 août 2026
 #### 🇳🇬 Nigeria - Daily Trust
 
+- **Date de l'incident :** Non précisée
 - **Date de publication initiale :** 08 août 2026
 - **Date de détection de la source :** 08 août 2026, 19:21:01 (fuseau horaire non indiqué)
 - **Date de détection AFRINTEL :** 11 août 2026
@@ -202,10 +493,11 @@
 - **Type d'incident :** Ransomware
 - **Niveau de confiance :** Élevé
 - **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Présentation de Daily Trust](https://dailytrust.com/about-us)
 
 - **Description :**
 
-  Daily Trust est une organisation nigériane d'information et d'édition exploitée par Media Trust Limited. Ses services comprennent le journalisme imprimé et en ligne, Trust TV et Trust Radio.
+  Daily Trust est une marque d'information nigériane publiée par Media Trust Limited. Le groupe exerce dans l'édition, l'impression et les services médias et exploite un ensemble plus large comprenant les titres Daily Trust ainsi que Trust TV et Trust Radio, avec des implantations notamment à Abuja.
 
 - **Analyse :**
 
@@ -232,36 +524,38 @@ resale_status: unknown
 last_checked_at: 2026-08-20T01:35:32+01:00
 -->
 
-### 16 août 2026
-#### 🇿🇦 Afrique du Sud - The Courier Guy
+### 14 août 2026
 
+#### 🇲🇦 Maroc - AVANTA Maroc
+
+- **Date de l'incident :** Non précisée
 - **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 16 août 2026 à 15:19:49 (fuseau horaire non affiché)
-- **Date de détection AFRINTEL :** 19 août 2026
-- **Acteur / Groupe :** medusalocker
-- **Secteur :** Logistique / Services de courrier
-- **Site web :** [thecourierguy.co.za](https://thecourierguy.co.za)
+- **Date de détection de la source :** 14 août 2026 à 05:55:47 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** thegentlemen
+- **Secteur :** Services de ressources humaines
+- **Site web :** [avanta.ma](https://www.avanta.ma/)
 - **Statut AFRINTEL :** Claim - Unverified
-- **Type d’incident :** Ransomware
+- **Type d'incident :** Ransomware
 - **Niveau de confiance :** Faible
-- **Niveau d’impact :** Niveau 2
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Profil institutionnel AVANTA Maroc](https://www.linkedin.com/company/avanta-maroc-sa)
 
 - **Description :**
 
-  The Courier Guy est une organisation sud-africaine de courrier et de logistique. Un enregistrement source observé attribue à medusalocker une entrée liée à un ransomware concernant `thecourierguy.co.za`.
+  AVANTA Maroc est une entreprise marocaine de services de ressources humaines basée à Casablanca. Son profil institutionnel indique une activité depuis 1991 et des services de recrutement, de travail temporaire, d'externalisation, de gestion de contrats et de développement RH, avec un réseau couvrant plusieurs grands pôles économiques du Maroc.
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni nomme « Thecourierguy », identifie le groupe criminel comme medusalocker, situe la cible en Afrique du Sud et indique `thecourierguy.co.za` comme domaine ciblé. Il affiche une détection le 16 août 2026 à 15:19:49, sans fuseau horaire visible, mentionne « N/D » pour les données publiées et revendique l'extraction de 2 018 emails. Cet enregistrement n'affiche ni échantillon, ni échéance de publication, ni prix de rançon, ni téléchargement de données.
+  **Observed :** L'enregistrement source fourni associe thegentlemen à « Avanta Maroc Ex Adecco », cite avanta.ma et situe la cible au Maroc. Il est horodaté au 14 août 2026 à 05:55:47, sans fuseau horaire indiqué. La marque publique actuelle est AVANTA Maroc. La source ne fournit ni échantillon, ni volume, ni catégorie de données, ni preuve technique de compromission.
 
-  **Assumption :** La concordance entre le nom de l'organisation et son domaine soutient l'évaluation selon laquelle la publication vise spécifiquement cette cible. Si la revendication est exacte, une liste d'adresses email professionnelles ou de clients pourrait faciliter le phishing, la compromission de messagerie professionnelle, les attaques contre les identifiants et l'usurpation. La capture seule n'établit pas que medusalocker a obtenu ces adresses.
+  **Assumption :** La concordance du nom, du domaine et du pays rend l'identification de la cible plausible. Les activités RH impliquent potentiellement des données de candidats, d'employés ou de clients, mais aucune exposition de ce type n'est établie.
 
-  **Unknown :** Aucun échantillon visible ne corrobore le chiffre de 2 018 emails ni n'établit la nature, la propriété, l'unicité ou la validité actuelle des enregistrements allégués. La date de publication, les méthodes d'accès initial et d'acquisition, le chiffrement ou la perturbation opérationnelle, la confirmation de la victime, la négociation, le paiement de rançon, la divulgation et la revente restent inconnus. Cette entrée est distincte de la publication incransom concernant SpearFin Ltd à Maurice.
+  **Unknown :** L'accès initial, les systèmes affectés, le chiffrement, l'exfiltration, l'impact opérationnel, la confirmation de la victime et l'état de publication restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
-listing_first_observed_at: 2026-08-16T15:19:49
-listing_last_observed_at: 2026-08-19T05:35:53+01:00
+listing_first_observed_at: 2026-08-14T05:55:47
+listing_last_observed_at: 2026-08-14T05:55:47
 sample_status: none-observed
 deadline_at:
 deadline_status: not-stated
@@ -270,7 +564,50 @@ victim_confirmation: none-observed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-08-19T05:35:53+01:00
+last_checked_at: 2026-08-14T05:55:47
+-->
+
+### 16 août 2026
+#### 🇿🇦 Afrique du Sud - The Courier Guy
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 16 août 2026 à 15:19:49 (fuseau horaire non affiché)
+- **Date de détection AFRINTEL :** 19 août 2026
+- **Acteur / Groupe :** medusalocker
+- **Secteur :** Messagerie / Logistique
+- **Site web :** [thecourierguy.co.za](https://thecourierguy.co.za)
+- **Sources publiques :** [Présentation de The Courier Guy](https://mail.thecourierguy.co.za/about-us/) | [Site officiel](https://thecourierguy.co.za/)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d’incident :** Ransomware
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  The Courier Guy est une entreprise sud-africaine de messagerie et de livraison de colis destinée aux particuliers et aux entreprises, avec un réseau de dépôts, de kiosques, de consignes et de chauffeurs. Sa présentation publique indique environ 25 ans d'activité et plus de 21 millions de livraisons réalisées en 2024.
+
+- **Analyse :**
+
+  **Observed :** Le dossier local contient 10 artefacts : six CSV et quatre XLSX. Les six CSV ont été analysés intégralement en lecture seule : 1 269 lignes de données, quatre lignes de métadonnées par fichier et 36 colonnes. Les champs comprennent notamment le nom du bénéficiaire, le compte bancaire du bénéficiaire, le type de compte, le code agence, le montant, les références et des canaux de notification par e-mail, fax et SMS. L'ensemble représente 255 noms de bénéficiaires distincts et 236 comptes distincts ; aucun doublon de ligne exact n'a été observé à l'intérieur des fichiers. Les quatre XLSX contiennent chacun 20 feuilles de calendriers de paiements locatifs. 3 409 cellules de formule ont été détectées et aucune n'a été exécutée. Des composants de liens externes sont présents dans trois des quatre classeurs ; aucun lien n'a été suivi. Les noms de fichiers couvrent des lots de juillet et août 2025 ainsi que de janvier, février et avril 2026 ; une feuille intitulée 1 August 2011 révèle aussi la présence d'un élément historique ou réutilisé. Les empreintes SHA-256 des 10 artefacts ont été calculées localement et conservées hors dépôt.
+
+  **Assumption :** La structure homogène des fichiers, la répétition des calendriers locatifs et la présence de données de paiement et de contact rendent plausible l'association du corpus à l'environnement opérationnel de The Courier Guy. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution. Il pourrait faciliter la fraude au paiement, l'usurpation de bénéficiaires ou de fournisseurs, le phishing ciblé et des attaques contre des comptes, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni l'action de medusalocker.
+
+  **Unknown :** Le nombre exact de personnes et d'organisations concernées, l'actualité des comptes et coordonnées, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et la publication complète restent inconnus. Les périodes anciennes ou les feuilles héritées peuvent ne plus refléter l'état actuel. L'analyse n'a pas recalculé les formules, n'a pas suivi les liens externes et ne reproduit aucune donnée financière ou personnelle brute.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-16T15:19:49
+listing_last_observed_at: 2026-08-19T05:35:53+01:00
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: partial
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-09-04
 -->
 
 ### 17 août 2026
@@ -305,19 +642,22 @@ last_checked_at: 2026-08-19T05:35:53+01:00
 ### 18 août 2026
 #### 🇲🇺 Maurice - SpearFin Ltd
 
+- **Date de l'incident :** 26 juin 2026, date alléguée par l'acteur
 - **Date de publication initiale :** 18 août 2026
+- **Date de détection de la source :** 18 août 2026 à 10:27:05 (fuseau horaire non indiqué)
 - **Date de détection AFRINTEL :** 18 août 2026
 - **Acteur / Groupe :** incransom
-- **Secteur :** Services financiers / Administration de fonds / Services aux entreprises
+- **Secteur :** Services financiers / Administration de fonds
 - **Site web :** [spearfin.net](https://spearfin.net)
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
 - **Niveau de confiance :** Moyen
 - **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Site officiel de SpearFin](https://spearfin.net/) | [Services d'administration de fonds](https://spearfin.net/fund-administration/)
 
 - **Description :**
 
-  SpearFin Ltd est présentée dans la publication observée comme un prestataire mauricien de services d'administration de fonds, de services aux entreprises, de conformité et de relations investisseurs. La source revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires ; AFRINTEL n'a pas vérifié ces chiffres indépendamment.
+  SpearFin Ltd est une société mauricienne de services financiers et de gestion réglementée par la Financial Services Commission de Maurice. Elle fournit des services d'administration de fonds, des services aux entreprises, de conformité et d'accompagnement des investisseurs. Ses informations publiques indiquent plus de 10 milliards USD d'actifs sous administration.
 
 - **Analyse :**
 
@@ -342,6 +682,49 @@ negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
+-->
+
+### 19 août 2026
+
+#### 🇿🇦 Afrique du Sud - Babcock Africa
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 19 août 2026 à 08:10:32 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** thegentlemen
+- **Secteur :** Ingénierie / Services industriels / Soutien à la défense
+- **Site web :** [babcock.co.za](https://www.babcock.co.za/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Présentation de Babcock Africa](https://www.babcock.co.za/about/) | [Services d'ingénierie](https://www.babcock.co.za/products-and-services/engineered-solutions/6/)
+
+- **Description :**
+
+  Babcock Africa est une division de Babcock International qui fournit des services d'ingénierie critique et de gestion d'équipements industriels en Afrique. Ses activités couvrent notamment les solutions de transport, le soutien à la production d'énergie, l'ingénierie industrielle, les équipements pour les secteurs minier et de la construction, ainsi que des capacités spécialisées dans l'ingénierie marine et liée à la défense.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe thegentlemen à Babcock, cite babcock.co.za et situe la cible en Afrique du Sud. Il est horodaté au 19 août 2026 à 08:10:32, sans fuseau horaire indiqué. Le secteur source « industrie de la défense » ne couvre qu'une partie des activités publiques de Babcock Africa. Aucun échantillon, volume, catégorie de données, échéance ou élément technique n'est fourni.
+
+  **Assumption :** La concordance du domaine et du profil d'activité rend l'identification de la cible plausible. Une compromission confirmée pourrait avoir des conséquences importantes en raison des services d'ingénierie et de soutien à des secteurs critiques, mais aucun impact n'est établi dans les éléments fournis.
+
+  **Unknown :** Les méthodes d'accès et d'acquisition, les environnements concernés, le chiffrement, la perturbation opérationnelle, la divulgation et une éventuelle confirmation de Babcock restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-19T08:10:32
+listing_last_observed_at: 2026-08-19T08:10:32
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-19T08:10:32
 -->
 
 ### 20 août 2026
@@ -373,17 +756,20 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 
 
 #### 🇨🇲 Cameroun - CCA Bank
+* **Date de l'incident :** Non précisée
 * **Date de publication initiale :** 20 août 2026
+* **Date de détection de la source :** 20 août 2026 à 13:54:00 (fuseau horaire non indiqué)
 * **Date de détection AFRINTEL :** 20 août 2026
 * **Acteur / Groupe :** Everest
-* **Secteur :** Finance / Banque
-* **Site web :** [cca-bank.com](https://cca-bank.com)
-* **Statut AFRINTEL :** Claim - Disclosure Pending
-* **Type d'incident :** Ransomware / Extorsion avec exfiltration de données revendiquée
+* **Secteur :** Banque / Services financiers
+* **Site web :** [cca-bank.com](https://www.cca-bank.com/)
+* **Statut AFRINTEL :** Claim - Unverified
+* **Type d'incident :** Ransomware
 * **Niveau de confiance :** Moyen
 * **Niveau d'impact :** Niveau 4
+* **Sources publiques :** [Présentation de CCA Bank](https://www.cca-bank.com/fr) | [Site officiel](https://www.cca-bank.com/)
 * **Description :**
-  CCA Bank est un établissement bancaire camerounais. Le 20 août 2026, la banque est apparue sur le site de divulgation du groupe ransomware Everest, qui revendique une compromission accompagnée d'une exfiltration de données.
+  CCA Bank, ou Crédit Communautaire d'Afrique-Bank, est un établissement bancaire camerounais dont la direction générale est située à Douala-Bonanjo. Son site public présente des services bancaires et financiers destinés aux particuliers et aux entreprises, notamment des solutions de compte, de paiement et de financement.
 
 * **Analyse :**
   **Observed :** Le 20 août 2026, AFRINTEL a observé une publication attribuée au groupe Everest visant `cca-bank.com`. Au moment de l'observation, la fiche de la victime affichait encore un compte à rebours avant la publication annoncée des données, indiquant que la phase d'extorsion était toujours en cours.
@@ -405,6 +791,21 @@ last_checked_at: 2026-08-19T06:02:04+01:00
   Le compte à rebours observé indique une publication annoncée, mais ne permet pas d'établir si les données seront effectivement divulguées, si une négociation est en cours ou si un accord a été conclu entre la victime et les attaquants.
 
   AFRINTEL ne reproduit aucune donnée personnelle, information bancaire, pièce d'identité, identifiant, donnée d'accès ou autre information sensible issue du corpus décrit.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-20T13:54:00
+listing_last_observed_at: 2026-08-20T13:54:00
+sample_status: none-observed
+deadline_at:
+deadline_status: active
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-20T13:54:00
+-->
 
 ---
 ### 22 août 2026
@@ -437,6 +838,50 @@ last_checked_at: 2026-08-19T06:02:04+01:00
   **Limites de preuve :** les éléments analysés ne permettent pas de confirmer le système technique d’origine, le vecteur d’accès initial, la méthode d’extraction, la possession effective des plus de 17 millions d’entrées revendiquées ni une confirmation officielle de l’incident par une institution marocaine. La présence de photographies est établie uniquement pour les éléments fournis et ne doit pas être extrapolée à l’ensemble de la base revendiquée.
  ---
 ### 24 août 2026
+
+#### 🇿🇦 Afrique du Sud - Furniture Bargaining Council
+
+- **Date de l'incident :** Août 2026, date exacte non communiquée publiquement
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 24 août 2026 à 21:21:08 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** Deadlock, auteur de la revendication, sans attribution par la victime
+- **Secteur :** Relations sociales / Gouvernance du secteur du meuble
+- **Site web :** [fbcweb.furnbed.co.za](https://fbcweb.furnbed.co.za/)
+- **Statut AFRINTEL :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Très élevé
+- **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Notification officielle et site du Conseil](https://fbcweb.furnbed.co.za/) | [Présentation du Conseil](https://fbcweb.furnbed.co.za/what.php)
+
+- **Description :**
+
+  Le Furniture Bargaining Council est un conseil sud-africain de négociation collective pour l'industrie de la fabrication de meubles. Sa mission comprend la promotion d'une négociation collective ordonnée, de la paix sociale, de la résolution des conflits et de la gouvernance sectorielle.
+
+- **Analyse :**
+
+  **Observed :** Le corpus local associé à la divulgation contient 69 artefacts pour environ 94,6 Mo : 22 PDF, 13 XLSX, 31 DOCX, 2 DOCM et 1 DOC. Douze classeurs XLSX lisibles totalisent 134 feuilles et 78 605 cellules de formule détectées ; aucune formule n'a été exécutée. Des composants de liens externes sont présents dans quatre classeurs ; aucun lien n'a été suivi. Un classeur XLSX supplémentaire, chiffré au format CDFV2, n'a pas pu être ouvert. Les données et documents observés couvrent des packs financiers, suivis de caisse, comptes e-wallet, formulaires bancaires, rapprochements fiscaux SARS, prêts, avertissements disciplinaires, audits IT, rapports de sécurité, documents d'identité et documents personnels ou administratifs. En parallèle, la notification officielle du Conseil confirme un incident ayant chiffré certains serveurs.
+
+  L'examen structurel et textuel des documents lisibles confirme la présence de catégories financières, fiscales, bancaires, RH, identitaires et opérationnelles. Il établit qu'un corpus de données a été divulgué ou rendu accessible, mais ne permet pas de déterminer si chaque fichier provient directement des systèmes du Conseil ni si l'ensemble a été acquis lors du même événement. Les PDF et documents contenant potentiellement des informations personnelles n'ont pas été reproduits.
+
+  **Assumption :** La confirmation officielle du chiffrement établit l'incident et justifie le statut Victim Confirmed. La cohérence du corpus documentaire avec les activités administratives et financières du FBC renforce fortement son attribution à l'environnement de la victime. La présence de données financières, fiscales, bancaires, d'identité et de personnel justifie un impact de niveau 4. Elle ne confirme ni le vecteur d'accès, ni l'exfiltration de chaque fichier, ni la responsabilité technique de Deadlock.
+
+  **Unknown :** Le nombre exact de personnes concernées, les systèmes sources, la méthode et la date d'acquisition, l'étendue complète de la divulgation, l'actualité des données, l'attribution technique à Deadlock, les conséquences opérationnelles et les notifications aux personnes concernées restent inconnus. Le classeur chiffré, les liens externes et les contenus visuels ou numérisés n'ont pas été ouverts ou suivis.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-24T21:21:08
+listing_last_observed_at: 2026-08-24T21:21:08
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: partial
+victim_confirmation: confirmed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-09-04
+-->
+
 #### 🇲🇦 Maroc - Direction générale de la Sûreté nationale (DGSN) / Direction générale de la Surveillance du territoire (DGST)
 
 * **Date de publication initiale :** 24 août 2026
@@ -469,6 +914,177 @@ last_checked_at: 2026-08-19T06:02:04+01:00
   Aucune confirmation publique indépendante de la DGSN ou de la DGST concernant l'intégralité de la compromission revendiquée n'est établie dans les éléments analysés. AFRINTEL ne reproduit aucun nom, numéro PPR, CIN/CNI, RIB, date de naissance ou autre donnée personnelle issue des fichiers examinés.
 
 ---
+### 26 août 2026
+
+#### 🇪🇬 Égypte - Mima Foods
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 26 août 2026 à 15:29:13 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Industrie agroalimentaire / Export de produits surgelés
+- **Site web :** [mimafoods.net](https://mimafoods.net/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 2
+- **Sources publiques :** [Site officiel](https://mimafoods.net/) | [Profil de l'entreprise](https://mimafoods.net/company-profile/)
+
+- **Description :**
+
+  Mima Foods est un producteur et exportateur égyptien de fruits et légumes IQF, avec une usine à Sadat City et un siège au Caire. Son site indique qu'il fournit des distributeurs, des industriels agroalimentaires et des marques de distributeur dans plus de 45 pays.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe krybit à mimafoods.net et situe la cible en Égypte. Il est horodaté au 26 août 2026 à 15:29:13, sans fuseau horaire indiqué. La description source est tronquée et se limite au profil public de l'entreprise. Aucun échantillon, volume, type de données ou élément technique de compromission n'est fourni.
+
+  **Assumption :** La correspondance exacte du domaine avec le site officiel rend l'identification de la cible plausible. Elle ne confirme ni l'accès, ni l'exfiltration, ni le chiffrement.
+
+  **Unknown :** Les systèmes éventuellement affectés, le vecteur d'accès, la portée opérationnelle, la nature des données, la confirmation de la victime et l'état de publication restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-26T15:29:13
+listing_last_observed_at: 2026-08-26T15:29:13
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-26T15:29:13
+-->
+
+#### 🇬🇦 Gabon - Conseil Gabonais des Chargeurs
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 26 août 2026 à 15:56:16 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** krybit
+- **Secteur :** Administration publique / Transport et logistique
+- **Site web :** [cgcgabon.ga](https://cgcgabon.ga/)
+- **Domaine cité par le jeu source :** cgcgabon.com
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Site officiel du Conseil Gabonais des Chargeurs](https://cgcgabon.ga/)
+
+- **Description :**
+
+  Le Conseil Gabonais des Chargeurs est un établissement public administratif gabonais au service des importateurs et des exportateurs, rattaché au secteur des transports, de la marine marchande et de la logistique. Sa mission porte notamment sur l'accompagnement des chargeurs et l'amélioration de la performance économique de la chaîne de transport multimodal.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe krybit à cgcgabon.com et situe la cible au Gabon. Il est horodaté au 26 août 2026 à 15:56:16, sans fuseau horaire indiqué. Le site public actuel identifié utilise cgcgabon.ga, mais affiche encore des adresses électroniques institutionnelles en @cgcgabon.com. Aucun échantillon, volume, type de données ou élément technique n'est fourni.
+
+  **Assumption :** La continuité d'usage du domaine dans les adresses institutionnelles rend l'identification du Conseil plausible. Elle ne confirme pas que son infrastructure a été compromise.
+
+  **Unknown :** Le domaine ou système précisément visé, l'accès initial, le chiffrement, l'exfiltration, l'impact opérationnel, la confirmation de la victime et toute divulgation restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-26T15:56:16
+listing_last_observed_at: 2026-08-26T15:56:16
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-26T15:56:16
+-->
+
+### 27 août 2026
+
+#### 🇿🇦 Afrique du Sud - Hungry Lion
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 27 août 2026 à 06:27:50 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** medusalocker
+- **Secteur :** Restauration / Restauration rapide
+- **Site web :** [hungrylion.co.za](https://www.hungrylion.co.za/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 3
+- **Sources publiques :** [Présentation de Hungry Lion](https://www.hungrylion.co.za/about/) | [Informations juridiques](https://www.hungrylion.co.za/legal/)
+
+- **Description :**
+
+  Hungry Lion est une chaîne sud-africaine de restauration rapide spécialisée dans le poulet frit, les burgers et les produits associés. L'entreprise indique avoir ouvert son premier restaurant à Stellenbosch en 1997, puis s'être développée dans plusieurs marchés africains. Elle a annoncé l'ouverture de son 500e restaurant en 2025.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe medusalocker à Hungry Lion et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 06:27:50, sans fuseau horaire indiqué. La description source revendique 111 établissements dans sept pays et cite trois environnements de point de vente, Unity POS, GAAP POS et CoSoft POS, avec quelques volumes ou fréquences d'exploitation. Elle se termine toutefois par la mention « Botswana », ce qui laisse la portée géographique exacte de la publication ambiguë. Aucun échantillon ou élément technique n'est fourni.
+
+  **Assumption :** Les informations publiques confirment que Hungry Lion est une chaîne régionale dont le siège est en Afrique du Sud, mais elles ne valident pas les chiffres ni les systèmes décrits dans la revendication. Si un environnement de point de vente était compromis, des risques opérationnels et de fraude pourraient en découler.
+
+  **Unknown :** L'entité juridique ou le pays précisément visé, l'accès initial, les terminaux ou serveurs concernés, l'exfiltration, le chiffrement, l'impact opérationnel, la confirmation de la victime et toute divulgation restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-27T06:27:50
+listing_last_observed_at: 2026-08-27T06:27:50
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-27T06:27:50
+-->
+
+#### 🇿🇦 Afrique du Sud - Rohloff Group
+
+- **Date de l'incident :** Non précisée
+- **Date de publication initiale :** Non précisée
+- **Date de détection de la source :** 27 août 2026 à 14:31:07 (fuseau horaire non indiqué)
+- **Acteur / Groupe :** incransom
+- **Secteur :** Restauration / Restauration rapide
+- **Site web :** [Site carrière du Rohloff Group](https://rohloff-group.breezy.hr/)
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 4
+- **Sources publiques :** [Profil institutionnel](https://www.linkedin.com/company/rohloff-group/?originalSubdomain=za) | [Site carrière géré par l'entreprise](https://rohloff-group.breezy.hr/)
+
+- **Description :**
+
+  Rohloff Group est un opérateur sud-africain de restauration et l'un des plus grands groupes franchisés KFC en Afrique. Fondé en 1981 et basé à Somerset West, dans le Cap-Occidental, il exploite un réseau de restaurants KFC soutenu par un centre de support aux restaurants.
+
+- **Analyse :**
+
+  **Observed :** L'enregistrement source fourni associe incransom à Rohloff Group et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 14:31:07, sans fuseau horaire indiqué. L'acteur revendique 536 Go, 103 196 fichiers et 30 805 dossiers. Il affirme que le corpus comprend des informations personnelles et bancaires d'employés, des demandes de prêt, des pièces d'identité, des relevés bancaires, des reconnaissances de dette, des résultats d'audiences disciplinaires et des documents financiers relatifs aux redevances et aux coûts alimentaires. La publication annonce une divulgation complète ultérieure.
+
+  Aucun échantillon ou fichier source n'accompagne les éléments fournis. Les volumes et catégories restent donc des affirmations de l'acteur.
+
+  **Assumption :** La précision du nom et du profil de la victime rend la publication ciblée, mais ne confirme pas la compromission. Si les catégories annoncées sont authentiques, la combinaison de données d'identité, bancaires, RH et disciplinaires créerait un risque élevé d'usurpation, de fraude financière, de phishing ciblé et d'atteinte à la vie privée des employés.
+
+  **Unknown :** L'accès initial, les systèmes touchés, l'exfiltration, le chiffrement, la validité des volumes, l'existence d'une publication accessible, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-08-27T14:31:07
+listing_last_observed_at: 2026-08-27T14:31:07
+sample_status: none-observed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: not-observed
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-08-27T14:31:07
+-->
+
 ### 29 août 2026
 #### 🇱🇾 Libye - Albarq Media Service / شركة البرق للاتصالات والتقنية
 

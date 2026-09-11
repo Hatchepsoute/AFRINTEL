@@ -10,12 +10,12 @@
 
 ## 1. Synthèse exécutive
 
-Mai 2026 a rapporté **103 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **41 fuites de données, 2 ventes d'accès** et **43 revendications DDoS**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
+Mai 2026 a rapporté **103 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **42 fuites de données, 1 vente d'accès** et **43 revendications DDoS**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
 
 Les **43 fiches DDoS** correspondent à des revendications ou observations de disponibilité datées attribuées à Keymous+. Certaines concernent les mêmes organisations à des dates différentes ; le corpus ne permet pas d'établir que les 43 fiches correspondent à des attaques techniquement indépendantes.
 
 Principales conclusions :
-- **17 ransomwares (16,5 %)**, **41 fuites de données (39,8 %), 2 ventes d'accès (1,9 %)** et **43 revendications DDoS (41,7 %)**.
+- **17 ransomwares (16,5 %)**, **42 fuites de données (40,8 %), 1 vente d'accès (1,0 %)** et **43 revendications DDoS (41,7 %)**.
 - **12 pays** sont directement touchés, auxquels s’ajoutent **6 pays supplémentaires** exposés via **3 incidents multi-pays** ; **le Maroc** (52 incidents), **l’Égypte** (17), **l’Afrique du Sud** (14) et **la Tunisie** (5) concentrent **88 des 100 fiches mono-pays (88,0 %)**, soit **85,4 % des 103 fiches**.
 - Des revendications attribuées à **TheGentlemen** concernent quatre pays en un mois (Égypte, Tunisie, Ghana, Côte d'Ivoire) ; **NightSpire** a revendiqué trois cibles égyptiennes.
 - **Databasehooligan** est associé à 8 publications de vente en Tunisie, Afrique du Sud, Égypte et Algérie.
@@ -38,8 +38,8 @@ Principales conclusions :
 |---|---:|---:|---:|
 | Total incidents | 69 | 103 | **+34 (+49,3 %)** |
 | Ransomware | 20 | 17 | **-3 (-15,0 %)** |
-| Data Leak | 39 | 41 | **+2 (+5,1 %)** |
-| Access Sale | 1 | 2 | **+1 (+100,0 %)** |
+| Data Leak | 39 | 42 | **+3 (+7,7 %)** |
+| Access Sale | 1 | 1 | **0 (0,0 %)** |
 | DDoS | 9 | 43 | **+34 (+377,8 %)** |
 | Defacement | 0 | 0 | **0 (stable)** |
 | Operational Fraud | 0 | 0 | **0 (stable)** |
@@ -69,8 +69,8 @@ Principales conclusions :
 | Pays touchés | 18 (12 directs + 6 via incidents multi-pays) |
 | Acteurs ou sources nommés distincts | 31 |
 | Incidents ransomware | 17 (16,5 %) |
-| Fuites de données | 41 (39,8 %) |
-| Ventes d'accès | 2 (1,9 %) |
+| Fuites de données | 42 (40,8 %) |
+| Vente d'accès | 1 (1,0 %) |
 | Revendications DDoS | 43 (41,7 %) |
 
 ### Classement des pays les plus touchés
@@ -140,7 +140,7 @@ xychart-beta
 | **6** | 🇸🇳 Sénégal | **1** | █ |
 | **7** | 🇨🇮 Côte d'Ivoire | **1** | █ |
 
-### Répartition des fuites de données (Total : 41)
+### Répartition des fuites de données (Total : 42)
 
 | Pays / périmètre | Incidents |
 |---|---:|
@@ -153,20 +153,20 @@ xychart-beta
 | 🇪🇹 Éthiopie | **1** |
 | 🇰🇪 Kenya | **1** |
 | 🇰🇪🇪🇹🇳🇬🇿🇼 Documents CV | **1** |
+| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** |
 | 🇪🇬🇱🇾 Scans de passeports | **1** |
-| **Total** | **41** |
+| **Total** | **42** |
 
-### Répartition des ventes d'accès (Total : 2)
+### Répartition des ventes d'accès (Total : 1)
 
 | Pays / périmètre | Incidents |
 |---|---:|
 | 🇲🇦 Maroc - Spacex.ma | **1** |
-| 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** |
-| **Total** | **2** |
+| **Total** | **1** |
 
 ### Comparaison Ransomware vs Fuite / vente d'accès par pays
 
-Cette comparaison visuelle couvre les **60 fiches hors DDoS** : **17 ransomware** et **43 fiches Fuite de données / Vente d'accès**. La série bleue regroupe **41 fuites de données et 2 ventes d'accès** uniquement pour la comparaison visuelle. Les compteurs structurés restent séparés dans le reste du rapport.
+Cette comparaison visuelle couvre les **60 fiches hors DDoS** : **17 ransomware** et **43 fiches Fuite de données / Vente d'accès**. La série bleue regroupe **42 fuites de données et 1 vente d'accès** uniquement pour la comparaison visuelle. Les compteurs structurés restent séparés dans le reste du rapport.
 
 Les **43 revendications DDoS sont exclues de ce comparatif** et présentées séparément ci-dessous.
 
@@ -206,8 +206,8 @@ xychart-beta
 pie showData
  title Répartition par type d'incident - Mai 2026
  "Ransomware" : 17
- "Fuite de données" : 41
- "Vente d'accès" : 2
+ "Fuite de données" : 42
+ "Vente d'accès" : 1
  "DDoS" : 43
 ```
 
@@ -338,13 +338,13 @@ pie showData
 
 **Observations :** NightSpire a publié trois victimes égyptiennes ce mois-ci. TheGentlemen affiche la répartition géographique la plus large, avec des revendications dans quatre pays. Stormous a revendiqué le Consumer Goods Council of South Africa (CGCSA), un cas d'abord comptabilisé à tort comme une simple fuite de données, reclassé ici en publication ransomware. Pour le Trésor public du Sénégal, les fichiers analysés étayent bien la revendication d'exposition, mais ne confirment ni le déploiement du ransomware, ni le chiffrement, ni la séquence complète de l'intrusion.
 
-### 4.2 Fuites et ventes d'accès - ventilation structurée : 41 Data Leak + 2 Access Sale
+### 4.2 Fuites et ventes d'accès - ventilation structurée : 42 Data Leak + 1 Access Sale
 
 | Rang | Pays | Incidents | Acteurs principaux |
 | :---: | :--- | :---: | :--- |
 | **1** | 🇿🇦 Afrique du Sud | **12** | Databasehooligan, 404Crew CT, NullSec Nigeria, Kazu, cc5ab |
-| **2** | 🇪🇬 Égypte | **9** | INT3X, Revesky, cc5ab, DR-X-LOL, CrowStealer, bigF, Keymous, Databasehooligan |
-| **3** | 🇲🇦 Maroc | **8** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2 |
+| **2** | 🇪🇬 Égypte | **10** | INT3X, Revesky, cc5ab, DR-X-LOL, CrowStealer, bigF, Keymous, Databasehooligan |
+| **3** | 🇲🇦 Maroc | **9** | Sejjil, superstarkmc, JBT2026, fexus, DarkMafiaX, anisanas2 |
 | **4** | 🇹🇳 Tunisie | **3** | Databasehooligan (3) |
 | **5** | 🇩🇿 Algérie | **2** | kamalsheikhxx, Databasehooligan |
 | **6** | 🇹🇿 Tanzanie | **2** | XOverStm, Kampuchean |
@@ -353,7 +353,7 @@ pie showData
 | **-** | 🇲🇿🇱🇷🇳🇬🇹🇬🇸🇱 DHIS2 | **1** | Keymous |
 | **-** | 🇪🇬🇱🇾 Scans de passeports | **1** | raylie |
 
-**Observations :** l'Afrique du Sud concentre le plus de fuites et ventes d'accès (12), portées par Databasehooligan, 404Crew Cyber Team, NullSec Nigeria, Kazu et cc5ab. L'Égypte suit avec 9 incidents, le Maroc avec 8. Trois publications multi-pays complètent le tableau du mois : les CV divulgués (Kenya, Éthiopie, Nigeria, Zimbabwe), l'accès DHIS2 (Mozambique, Liberia, Nigeria, Togo, Sierra Leone) et des scans de passeports (Égypte, Libye).
+**Observations :** l'Afrique du Sud concentre le plus de fuites et ventes d'accès (12), portées par Databasehooligan, 404Crew Cyber Team, NullSec Nigeria, Kazu et cc5ab. L'Égypte suit avec 10 incidents, le Maroc avec 9. Trois publications multi-pays complètent le tableau du mois : les CV divulgués (Kenya, Éthiopie, Nigeria, Zimbabwe), l’exposition revendiquée d’identifiants DHIS2 (Mozambique, Liberia, Nigeria, Togo, Sierra Leone) et des scans de passeports (Égypte, Libye).
 
 ---
 
@@ -446,7 +446,7 @@ xychart-beta
 - **Databasehooligan vend un peu partout.** Huit jeux de données structurés proposés dans quatre pays. Rien dans les fiches sources ne les relie à une plateforme commune ou un vecteur d'accès partagé.
 - **NightSpire est resté concentré sur l'Égypte.** Trois publications ce mois-ci, un signal à surveiller, pas encore une preuve de campagne coordonnée.
 - **Les comptes email gouvernementaux deviennent un vecteur d'accès à part entière.** Identifiants gouvernementaux marocains exposés (827 000 lignes), messagerie de la police tanzanienne en vente, offres de comptes pour requêtes EDR frauduleuses dans plusieurs pays : un marché d'usurpation d'autorité publique qui grandit.
-- **L'accès DHIS2 vendu dans sept pays** (Mozambique, Liberia, Nigeria, Bhoutan, Honduras, Togo, Sierra Leone) représente à lui seul une menace critique pour la souveraineté des données de santé publique.
+- **L’exposition revendiquée d’identifiants DHIS2 dans sept pays** (Mozambique, Liberia, Nigeria, Bhoutan, Honduras, Togo, Sierra Leone) représente à elle seule une menace critique pour la souveraineté des données de santé publique.
 - **Le Maroc reste une cible récurrente.** Deux revendications importantes dans les dix derniers jours de mai : RADEM Meknès (1,1 million de documents revendiqués) et une vente groupée annoncée à plus de 12 millions de lignes. anisanas2 avait déjà publié des revendications marocaines en avril, l'activité se répète donc, sans qu'un vecteur d'accès commun soit établi entre les deux.
 
 ---
@@ -471,7 +471,7 @@ Cette comparaison utilise les données mensuelles relatives aux victimes et inci
 | :--- | ---: | ---: | :--- |
 | Incidents documentés | 69 | 103 | **+34 (+49,3 %)** |
 | Ransomware | 20 | 17 | **-3 (-15,0 %)** |
-| Fuites de données / ventes d’accès | 40 | 43 | **+3 (+7,5 %)** |
+| Fuites de données / ventes d’accès | 40 | **43 (42 + 1)** | **+3 (+7,5 %)** |
 | Revendications DDoS | 9 | 43 | **+34 (+377,8 %)** |
 
 La variation mensuelle reflète l’évolution des publications publiques collectées par AFRINTEL. Elle peut dépendre du calendrier de publication, de la collecte rétrospective, des règles de comptage multi-pays, des republications ou de la couverture de veille, et ne doit pas être interprétée comme une évolution confirmée du nombre réel de compromissions.
@@ -517,7 +517,7 @@ La variation mensuelle reflète l’évolution des publications publiques collec
 
 ## 12. Conclusion
 
-Mai se clôture avec **103 incidents signalés ou revendiqués publiquement**, contre 69 en avril (**+49,3 %**) : **17 ransomware, 41 fuites de données, 2 ventes d'accès et 43 revendications DDoS**.
+Mai se clôture avec **103 incidents signalés ou revendiqués publiquement**, contre 69 en avril (**+49,3 %**) : **17 ransomware, 42 fuites de données, 1 vente d'accès et 43 revendications DDoS**.
 
 Le Maroc représente **52 fiches**, devant l'Égypte (17), l'Afrique du Sud (14) et la Tunisie (5). Ensemble, ces quatre pays concentrent **85,4 % du corpus complet de mai**.
 

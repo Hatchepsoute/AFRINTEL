@@ -716,7 +716,7 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 ### 29 Juin 2026
 #### 🇱🇾 Libye - Ministry of Technical and Vocational Education
 
-- **Acteur / Groupe :** EvaN47
+- **Acteur / Groupe :** [Citizen] EvaN47
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Fuite de données
@@ -781,3 +781,11 @@ Des jetons de session, jetons de réinitialisation de mot de passe, données OAu
 | Données santé | Non visibles |
 | Données gouvernementales | Oui |
 | Données critiques | Oui, documents officiels et données personnelles d'étudiants |
+
+- **Suivi de publication (10 septembre 2026) :**
+
+  Une nouvelle publication du forum, signée **EveN47**, renvoie à la base du Ministry of Education of Libya et affirme qu'un volume de **800 Go** de données personnelles sensibles concernerait des citoyens libyens, notamment des données de fin d'études secondaires, des numéros nationaux d'étudiants, des photographies d'étudiants et des images de passeports. La même publication affirme que l'acteur aurait obtenu environ **300 Go** de données similaires couvrant des ministères de l'Éducation à travers la Libye.
+
+  Ces volumes, la portée multi-ministérielle et l'attribution à moe.gov.ly restent des revendications non vérifiées. La capture fournie ne contenait pas à elle seule un nouvel échantillon exploitable ; un fichier local présenté comme provenant de cette publication a ensuite été analysé en lecture seule. Les résultats détaillés sont documentés dans la [remarque de suivi de septembre](../09-september/victims_FR.md). L'alias **EveN47** diffère de **EvaN47** dans la publication du 30 juin et cette correspondance reste non résolue. Le chiffre de 800 Go est conservé comme une nouvelle revendication datée du 10 septembre et ne remplace pas le volume de 287 Go précédemment revendiqué. Cette publication est traitée comme un suivi de la même revendication, et non comme un nouvel incident indépendant.
+
+- **Sources / Éléments de preuve :** publication du forum Breached attribuée à EveN47 (10 septembre 2026) et capture fournie ; lien de téléchargement non ouvert.
