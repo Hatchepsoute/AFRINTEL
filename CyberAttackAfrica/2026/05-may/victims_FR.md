@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **41 fuites de données**, **2 ventes d'accès** et **43 revendications DDoS**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
 
 ### Incidents marquants
 
@@ -268,9 +268,18 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Acteur / Groupe :** Keymous
 - **Secteur :** Government / Administration
 - **Plateformes ciblées :** DHIS2 (District Health Information System)
-- **Site web :** Non précisé
+- **Sites web :** Plusieurs instances DHIS2 (voir les URL ci-dessous)
+- **URL revendiquées par l’acteur comme associées à des identifiants exposés (valeurs sensibles non reproduites) :**
+  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
+  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
+  - 🇱🇷 Liberia — [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
+  - 🇳🇬 Nigéria — [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
+  - 🇹🇬 Togo — [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
+  - 🇸🇱 Sierra Leone — [sl.dhis2.org](https://sl.dhis2.org/)
+  - 🇧🇹 Bhoutan — [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
+  - 🇭🇳 Honduras — [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
 - **Statut :** Claim - Unverified
-- **Type d'incident :** Vente d'accès
+- **Type d'incident :** Fuite de données
 - **Description :**  **DHIS2** est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.
 - **Analyse :** L’acteur malveillant revendique plusieurs accès à des instances DHIS2 utilisées par des institutions sanitaires et ministères de la Santé dans plusieurs pays africains et internationaux.  Les artefacts publiés incluent plusieurs couples **URL / identifiant / mot de passe** associés à des plateformes gouvernementales de santé, suggérant une compromission crédible d’identifiants administratifs ou opérationnels.  Les accès revendiqués concernent notamment des infrastructures au :
  ▫️🇲🇿 Mozambique
