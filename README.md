@@ -27,12 +27,21 @@
 
 ## Featured reports
 
-### Cyber threats in Africa - July 2026
+### Cyber threats in Africa - August 2026
 
-July 2026 brought in 42 incident records: 18 ransomware claims, 18 data leaks, 6 access-sale offers. Egypt and Tunisia top the list at 7 each, Morocco and South Africa follow at 6. One record, Planet Sport, might just be a free repost of April's LockBit 5 claim rather than a new compromise, so the real count of distinct breaches could be a touch lower. The cases worth watching go beyond ransomware: government identity and land records, medical and lab data, university accounts, utility payment records, civil-service exam data, real information sitting on forums.
+August 2026 collection contains **29 documented incidents across 10 countries**: **17 ransomware incidents**, **11 data leaks** and **1 access sale**. South Africa accounts for **11 records**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **7 incidents**, and finance and banking for **6**. KRYBIT is associated with **6 ransomware publications**.
 
-📄 [Full CTI report - July 2026](CyberAttackAfrica/2026/07-july/README.md)
-📋 [Victim list - July 2026](CyberAttackAfrica/2026/07-july/victims.md)
+The Furniture Bargaining Council acknowledged server encryption. The analyses document payment data at The Courier Guy, an account-reset workbook at Daily Trust, internal documents from the Conseil Gabonais des Chargeurs and identity data in the RAMED and DGSN/DGST cases. Reviewed samples do not automatically validate overall claimed volumes or acquisition methods.
+
+The report includes follow-up information recorded through **13 September 2026** and distinguishes earlier publications discovered in August. The **13 fewer records than July (-31.0%)** describe a change in collection without demonstrating an equivalent decline in compromises.
+
+📄 [Full CTI report - August 2026](CyberAttackAfrica/2026/08-august/README.md)
+
+📋 [Victim list - August 2026](CyberAttackAfrica/2026/08-august/victims.md)
+
+📊 [Statistics - August 2026](statistics/2026/08-august/README.md)
+
+📦 [August 2026 STIX 2.1 / OpenCTI bundle](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
 ### First-half 2026 cyber threat report
 
@@ -89,7 +98,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | May 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
 | June 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
 | July 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
-| August 2026 | *in progress* | *in progress* |
+| August 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
 
 ---
 
@@ -104,7 +113,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | May 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
 | June 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
 | July 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
-| August 2026 | *in progress* | *in progress* |
+| August 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
 
 ---
 
@@ -150,7 +159,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | May 2026 | [STIX Bundle](stix/2026/05-may/afrintel_may_2026_opencti.json) |
 | June 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
 | July 2026 | [STIX Bundle](stix/2026/07-july/afrintel_july_2026_opencti.json) |
-| August 2026 | *in progress* |
+| August 2026 | [STIX Bundle](stix/2026/08-august/afrintel_august_2026_opencti.json) |
 | H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
 Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. H1 bundles preserve the original monthly STIX IDs so OpenCTI can correlate records across reporting periods. When a monthly or half-year corpus is corrected, the corresponding aggregate STIX bundle should be regenerated before it is treated as an exact mirror of the Markdown source of truth. MITRE ATT&CK context lives in the report descriptions themselves.

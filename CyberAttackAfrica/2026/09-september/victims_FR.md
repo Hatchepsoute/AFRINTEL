@@ -3,11 +3,54 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en septembre 2026 (1 fiche)
+# Liste des victimes africaines de cyberattaques en septembre 2026 (3 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
 ## Septembre 2026
+
+### 04 septembre 2026
+#### 🇪🇬 Égypte - Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée)
+
+- **Date de l'incident :** Non établie
+- **Date de publication initiale :** 4 septembre 2026 à 09:59 (heure affichée, fuseau non indiqué)
+- **Date de détection AFRINTEL :** 13 septembre 2026 (capture communiquée)
+- **Acteur / Groupe :** sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées)
+- **Secteur :** Immobilier / Communauté résidentielle / Gestion immobilière
+- **Organisation détentrice des données :** Non identifiée ; la publication les présente comme liées aux propriétaires/résidents de Madinaty
+- **Site web de l'organisation source :** Non identifié
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+
+- **Description :** Madinaty est un projet urbain résidentiel en Égypte que le groupe Talaat Moustafa présente parmi ses projets dans le pays. Cette information situe le contexte géographique ; elle ne permet pas d'identifier l'organisation ayant collecté ou détenu les données ni de confirmer que le groupe Talaat Moustafa a été compromis. ([Présentation du groupe Talaat Moustafa](https://ecommerce.tmg.com.eg/about))
+
+- **Analyse :**
+
+  Une publication de forum attribuée au compte **sainttrojan**, datée du 4 septembre 2026 à 09:59 (fuseau non indiqué), est intitulée comme une offre de données de propriétaires de Madinaty. L'auteur affirme que l'extrait représente **0,5 %** de son ensemble de données et cherche un partenaire pour le monétiser. Cette proportion et la possession du jeu complet sont des affirmations de l'auteur, non vérifiées.
+
+  **Observed :** La capture fournie le 13 septembre contient le titre et le texte de la publication ainsi qu'un extrait structuré en arabe. Les lignes visibles comportent des noms, des identifiants alphanumériques de résidence/logement, des rôles présentés comme propriétaire, locataire ou mandataire, et des valeurs de contact de type numéro de téléphone. L'auteur affirme disposer de numéros personnels et d'adresses résidentielles complètes ; l'extrait ne permet pas de vérifier la couverture ou l'exactitude de ces adresses. Aucune valeur personnelle brute n'est reproduite ici.
+
+  **Assumption :** Le titre du message et les champs visibles rendent plausible une association avec des propriétaires ou résidents de Madinaty. Ils ne permettent pas d'attribuer les enregistrements au groupe Talaat Moustafa, à l'administration du projet, à un prestataire ou à une autre organisation. Une source tierce ou une description trompeuse restent également possibles.
+
+  **Unknown :** L'organisation source, le système d'origine, le mode et la date d'obtention, l'authenticité et l'actualité des enregistrements, le nombre de personnes uniques, l'exhaustivité du jeu, la proportion réellement publiée, l'existence d'un accès non autorisé et toute confirmation d'une organisation concernée ne sont pas établis. L'URL originale du forum et le fichier de données source n'ont pas été fournis ; l'analyse est limitée à la capture et à l'extrait communiqués.
+
+- **Données visibles dans l'extrait, minimisées :** noms, identifiants de résidence/logement, rôles associés aux enregistrements et valeurs de contact de type téléphone. Les adresses complètes et la portée annoncée sont revendiquées par l'auteur, mais ne sont pas validées indépendamment.
+
+- **Périmètre de l'échantillon observé :** extrait partiel visible dans une capture et un texte communiqué ; archive originale, URL source, volume, nombre de lignes distinctes et nombre de personnes non établis. L'affirmation de **0,5 %** n'est pas vérifiée. Aucun enregistrement individuel n'est reproduit dans cette fiche.
+
+- **Évaluation des risques :** si les données sont authentiques, le rapprochement entre identité, lieu de résidence et coordonnées peut exposer les personnes au doxxing, au harcèlement, au ciblage physique, à l'hameçonnage et à la fraude. La revendication ne confirme pas à elle seule l'exfiltration ni l'organisation responsable.
+
+- **Recommandations :**
+1. Préserver la capture et les métadonnées de collecte dans un espace de preuve à accès restreint ; éviter toute nouvelle diffusion de l'extrait.
+2. Identifier l'organisation ou le prestataire autorisé à détenir ce type de données avant toute attribution publique.
+3. Si le détenteur est établi, comparer les schémas et identifiants avec des données internes autorisées, sans tester les numéros personnels ni extraire de nouveaux dossiers.
+4. Évaluer les risques de sécurité physique et de fraude pour les personnes potentiellement concernées et leur communiquer des conseils adaptés après validation.
+5. Suivre les republications du jeu de données sans ouvrir de liens de téléchargement ni engager de transaction avec l'auteur.
+
+- **Sources / Éléments de preuve :** publication de forum visible dans une capture fournie le 13 septembre 2026 (date affichée de la publication : 4 septembre 2026 ; URL d'origine non fournie) ; [présentation publique du groupe Talaat Moustafa sur ses projets en Égypte](https://ecommerce.tmg.com.eg/about).
+
 
 ### 06 septembre 2026
 #### 🇲🇦 Maroc - Centre Atlantique Formation
@@ -54,6 +97,49 @@
 8. Auditer la vérification des attestations contre l'énumération par QR code ou identifiant.
 
 - **Sources / Éléments de preuve :** publication xNov sur un forum underground (6 septembre 2026), relais et capture Telegram fournis (6 septembre 2026), contact direct avec xNov via son canal Telegram concernant le prix demandé, analyse AFRINTEL de l'archive et des dossiers extraits.
+
+
+### 09 septembre 2026
+#### 🇪🇬 Égypte - Badr University in Cairo (BUC)
+
+- **Date de l'incident :** Non établie
+- **Date de publication initiale :** 9 septembre 2026 à 16:50 (fuseau horaire non indiqué)
+- **Date de découverte AFRINTEL :** 12 septembre 2026
+- **Acteur / Groupe :** Unknown
+- **Compte auteur affiché :** elmo7areb (identité et rôle non vérifiés)
+- **Secteur :** Éducation / Enseignement supérieur
+- **Site web :** [buc.edu.eg](https://buc.edu.eg/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+
+- **Description :** Badr University in Cairo (BUC) est un établissement d'enseignement supérieur égyptien situé à Badr City. Son site officiel présente ses programmes et services, notamment des démarches d'admission et un portail étudiant.
+
+- **Analyse :**
+
+  Une publication attribuée au compte **elmo7areb**, datée du 9 septembre 2026 à 16:50 (fuseau horaire non indiqué), revendique l'extraction complète de la base de données de BUC. L'auteur affirme que les données concernent des étudiants et leurs familles, et cite des identifiants nationaux, des adresses et des numéros de téléphone. Un extrait visible comporte des valeurs présentées comme des identifiants de type adresse courriel, mais ces champs sont incomplets : des segments, notamment après le signe « @ », sont remplacés par `****`. Les chaînes associées, présentées comme des mots de passe, sont elles aussi partiellement masquées par `****`. Aucune valeur n'est reproduite ni testée. L'échantillon source original n'était pas disponible ; l'analyse est limitée aux éléments visibles dans la capture fournie.
+
+  **Observed :** l'existence d'une publication revendiquant une extraction, son horodatage affiché, les catégories de données mentionnées par l'auteur et un extrait de lignes de connexion où les identifiants de type courriel sont incomplets, avec le domaine masqué par `****`, et les chaînes présentées comme mots de passe comportent également des segments remplacés par `****`.
+
+  **Assumption :** l'identité de BUC et la cohérence du sous-domaine avec ses services d'admission rendent la cible plausible. Cela ne valide ni l'authenticité ni la provenance des données, leur extraction effective ou l'exhaustivité de la base. Le texte qualifie l'échantillon de journaux administratifs chiffrés, tandis que la partie visible ressemble à des paires d'identifiants de connexion ; cette incohérence ne peut pas être résolue à partir de la capture.
+
+  **Unknown :** nombre d'enregistrements ou de personnes concernées, validité ou actualité des identifiants, contenu et exhaustivité du jeu de données, vecteur d'accès, systèmes concernés, portée de l'incident, impact opérationnel et confirmation par BUC ou une autorité.
+
+- **Données visibles dans l'extrait :** lignes présentées comme des connexions, avec des identifiants de type adresse courriel incomplets (domaine remplacé par `****`) et des chaînes présentées comme mots de passe partiellement occultées par `****`, ainsi qu'une URL du portail d'admission. Les valeurs originales complètes ne sont pas visibles ; leur authenticité, leur actualité et leur unicité ne peuvent pas être établies.
+
+- **Périmètre de l'échantillon observé :** capture d'une publication et d'une partie d'un extrait textuel ; fichier source original indisponible ; volume total, nombre de lignes et nombre de personnes non établis. Aucune donnée individuelle ni aucun secret n'est reproduit dans cette fiche.
+
+- **Évaluation des risques :** si les données revendiquées sont authentiques, l'exposition d'identifiants, de données d'identité et de coordonnées pourrait faciliter la prise de contrôle de comptes, le phishing ciblé, l'usurpation d'identité et l'ingénierie sociale visant des étudiants ou leurs familles. L'extrait ne démontre pas que les identifiants fonctionnent ni qu'un compte a été compromis.
+
+- **Recommandations :**
+1. Préserver les journaux du portail d'admission, de l'authentification, des bases de données et des systèmes d'administration couvrant la période pertinente.
+2. Rechercher les accès inhabituels, extractions volumineuses, comptes privilégiés détournés et changements de configuration.
+3. Évaluer les comptes potentiellement concernés ; réinitialiser les identifiants exposés et révoquer les sessions lorsque cela est justifié par l'enquête.
+4. Vérifier la portée réelle des données et appliquer les procédures de notification et de protection appropriées.
+5. Ne pas tester les identifiants divulgués ; surveiller les tentatives de connexion et de phishing visant les étudiants et leurs familles.
+
+- **Sources / Éléments de preuve :** publication de forum visible dans une capture fournie le 12 septembre 2026 (URL d'origine non fournie) ; [site officiel de BUC](https://buc.edu.eg/) ; [page officielle d'admission de BUC](https://buc.edu.eg/buc-admission-application-form/).
 
 ## Remarque de suivi intermensuel
 
