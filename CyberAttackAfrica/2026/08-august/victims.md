@@ -154,7 +154,7 @@
 - **Incident date:** Not specified
 - **Initial publication date:** Not specified
 - **Source detection date:** 02 August 2026 at 13:26:24 (timezone not shown)
-- **Actor / Group:** krybit
+- **Actor / Group:** KRYBIT
 - **Sector:** Plastics manufacturing / Housewares
 - **Website:** [buzztrading104.co.za](https://buzztrading104.co.za/)
 - **AFRINTEL status:** Claim - Unverified
@@ -195,7 +195,7 @@ last_checked_at: 2026-08-02T13:26:24
 - **Incident date:** Not specified
 - **Initial publication date:** Not specified
 - **Source detection date:** 02 August 2026 at 14:24:27 (timezone not shown)
-- **Actor / Group:** krybit
+- **Actor / Group:** KRYBIT
 - **Sector:** Microfinance / Banking
 - **Website:** [nigeria.asa-international.com](https://nigeria.asa-international.com/)
 - **AFRINTEL status:** Claim - Data Sample Published
@@ -233,17 +233,17 @@ last_checked_at: 2026-09-13T02:32:51Z
 
 #### 🇿🇦 South Africa - DC Partner
 
-- **Incident date:** Not specified
+- **Incident date:** August 2026, exact date not publicly established
 - **Initial publication date:** Not specified
 - **Source detection date:** 02 August 2026 at 14:25:08 (timezone not shown)
-- **Actor / Group:** krybit
+- **Actor / Group:** KRYBIT, claimant; technical attribution not publicly confirmed
 - **Sector:** Financial services / Payment distribution / Debt counselling support
 - **Website:** [dcpartner.co.za](https://www.dcpartner.co.za/)
-- **AFRINTEL status:** Claim - Unverified
+- **AFRINTEL status:** Victim Confirmed
 - **Incident type:** Ransomware
-- **Confidence level:** Low
+- **Confidence level:** High
 - **Impact level:** Level 3
-- **Public sources:** [DC Partner official website](https://www.dcpartner.co.za/)
+- **Public sources:** [DC Partner official website](https://www.dcpartner.co.za/) | [Incident confirmation reported by MyBroadband, 7 August 2026](https://mybroadband.co.za/news/security/661578-south-african-payment-distribution-agent-for-fnb-and-the-national-credit-regulator-hit-by-cyberattack.html)
 
 - **Description:**
 
@@ -251,11 +251,11 @@ last_checked_at: 2026-09-13T02:32:51Z
 
 - **Analysis:**
 
-  **Observed:** The source record associates krybit with DC Partner, locates the target in South Africa and cites www.dcpartner.co.za. It was recorded on 2 August 2026 at 14:25:08, with no timezone shown. The public profile describes debt-review fund distribution and related payment and management services. Monitoring information reported on 13 September 2026 says the displayed disclosure deadline had passed, but no DC Partner data was publicly accessible at the latest reported check. The exact deadline and the date and time of that check were not provided. No sample, volume, data category or technical evidence is available to substantiate the claim.
+  **Observed:** The source record associates krybit with DC Partner, locates the target in South Africa and cites www.dcpartner.co.za. It was recorded on 2 August 2026 at 14:25:08, with no timezone shown. On **7 August 2026**, DC Partner confirmed to MyBroadband that it had suffered a ransomware attack. The company said its systems remained fully operational and that an investigation was under way, with notifications being issued in line with section 22 of POPIA. FNB, identified in the article as a third-party partner, said it had no indication that its customer information, systems or technology environment had been affected. Krybit claims to have leaked data, but the amount, contents and scope of any disclosure are not established by the public source reviewed.
 
-  **Assumption:** The domain and public profile make the target identification plausible, but do not confirm a compromise. If debt-review or payment-related data had been exfiltrated, it could create fraud and targeted-phishing risks; no such exposure has been established. The absence of accessible publication after the deadline does not establish its cause. Possible scenarios include a settlement, potentially involving a ransom payment by the victim, or negotiations still ongoing after the deadline; transfer, sharing or resale to another criminal group, a third party or a CTI organisation; delayed or unavailable publication; or an inaccurate or exaggerated claim. None is corroborated by the available evidence.
+  **Assumption:** DC Partner's public confirmation establishes the occurrence of a ransomware incident and supports the `Victim Confirmed` status. It does not by itself confirm system encryption, the claimed exfiltration, any data volume or technical attribution of the attack to Krybit. The timing of Krybit's publication and the victim's confirmation makes the association plausible, while AFRINTEL retains a distinction between the actor's claim and facts confirmed by the organisation.
 
-  **Unknown:** The exact deadline, time of the latest check, potentially affected systems, access vector, unauthorised access, exfiltration, ransomware execution or encryption, operational impact, victim confirmation and the nature or extent of any data remain unknown. Negotiations, payment, private sharing or resale have not been established.
+  **Unknown:** The initial access vector, precisely affected systems, whether and to what extent systems were encrypted, the nature and volume of any exfiltrated or disclosed data, definitive technical attribution, negotiations and any payment remain unknown. The absence of publicly accessible data at a later check does not support an inference of settlement, payment, resale or absence of exfiltration.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -265,11 +265,11 @@ sample_status: none-observed
 deadline_at:
 deadline_status: expired
 disclosure_status: not-observed
-victim_confirmation: none-observed
+victim_confirmation: confirmed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-09-13
+last_checked_at: 2026-09-14
 -->
 
 ### 04 August 2026
@@ -392,7 +392,7 @@ last_checked_at: 2026-08-04T15:55:39
 - **Incident date:** Not specified
 - **Initial publication date:** Not specified
 - **Source detection date:** 07 August 2026 at 02:25:08 (timezone not shown)
-- **Actor / Group:** krybit
+- **Actor / Group:** KRYBIT
 - **Sector:** Real estate / Residential estate and golf
 - **Website:** [serengeti-estates.co.za](https://serengeti-estates.co.za/)
 - **Domain cited by the source dataset:** www.serengetiestates.co.za
@@ -827,6 +827,7 @@ last_checked_at: 2026-08-20T13:54:00
 - **Confidence level:** High
 - **Website:** [sante.gov.ma](https://www.sante.gov.ma)
 - **Historical RAMED domain:** `ramed.ma` *(inactive)*
+- **Impact level:** Level 4
 
 - **Description:**
   RAMED, the Medical Assistance Scheme, is Morocco's former public program designed to facilitate access to healthcare for low-income and vulnerable populations. The observed publication concerns a database presented as being associated with beneficiaries of this scheme.
@@ -895,57 +896,52 @@ last_checked_at: 2026-09-04
 
 #### 🇲🇦 Morocco - General Directorate of National Security (DGSN) / General Directorate for Territorial Surveillance (DGST)
 
-* **Initial publication date:** August 24, 2026
-
+* **Corroborated initial publication date:** August 24, 2026
 * **AFRINTEL detection date:** August 24, 2026
-
 * **Actor / Group:** JabaR00t, publication relayed by the JBT2026 account on a cybercriminal forum
-
 * **Sector:** Government / Administration / Security and Intelligence
-
 * **Website:** [dgsn.gov.ma](https://dgsn.gov.ma) / `dgst.gov.ma` (domain associated with the DGST, public institutional portal not confirmed)
-
 * **AFRINTEL status:** Data Fully Published
-
 * **Incident type:** Data Leak
-
 * **Confidence level:** High
-
 * **Impact level:** Level 4
-
+* **Public sources:** [DGSN-DGST statement relayed by SNRT News / MAP, 27 August 2026](https://snrtnews.com/article/le-pole-dgsn-dgst-dement-toute-intrusion-dans-ses-systemes-dinformation-ou-ses-bases-de) | [Le Desk, 27 August 2026](https://ledesk.ma/2026/08/27/fuite-jabaroot-la-dgsn-et-la-dgst-dementent-tout-piratage-de-leurs-systemes-evoquant-des-donnees-anciennes-issues-dassureurs/) | [Médias24 fact-check, 25 August 2026](https://medias24.com/2026/08/25/une-fuite-attribuee-a-jabaroot-fait-pschiitt-1743419/)
 * **Description:**
-
   The General Directorate of National Security (DGSN) is Morocco's national police force. The General Directorate for Territorial Surveillance (DGST) is the Moroccan service responsible for domestic intelligence and territorial security. Both institutions have strategic roles within Morocco's national security apparatus.
 
 * **Analysis:**
+  **Observed:** On August 24, 2026, a publication relayed by the JBT2026 account and attributed to JabaR00t presented, under the `#OP_CEUTA` label, a database described as containing approximately **70,000 “agents” or personnel associated with the DGSN and DGST**. The actor presents this database as having been fully published while also claiming that the released data represents only part of a larger dataset allegedly exfiltrated. The characterization of all represented persons as “intelligence agents” is the actor's claim and is not established by the reviewed files.
 
-  **Observed:** On August 24, 2026, a publication relayed by the JBT2026 account and attributed to JabaR00t presented, under the `#OP_CEUTA` label, a database described as containing approximately **70,000 personnel associated with the DGSN and DGST**. The actor presents this database as having been fully published while also claiming that the released data represents only part of a larger dataset allegedly exfiltrated.
+  Read-only analysis of the four supplied files confirms a main file containing **70,381 records and 5 columns**, with no exact duplicate rows. Observed fields include names, PPR identifiers, CIN/CNI national identity numbers, dates of birth and recruitment years. Three supplementary files contain respectively **8,789**, **1,456** and **21 records**, including rank and RIB bank-account fields. These volumes must not be added as if they represented independent populations.
 
-  Analysis of the provided files identifies **70,381 records** in the main dataset. The observed data includes identity information, PPR numbers, CIN/CNI national identity numbers, dates of birth and recruitment years.
+  Cross-file overlap is **partial and heterogeneous**. After simple normalization of names and CIN values, **972 of the 1,456 rows** in the file presented as DGST share the same name+CIN pair with the main file, as do **18 of the 21 rows** in the `BIG HEADS` file. By contrast, the supplementary file presented as DGSN produces **no exact match on the normalized name+CIN pair** with the main corpus, although **209 CIN values** also occur in the main file. For the 972 DGST matches and 18 `BIG HEADS` matches established on name+CIN, the associated PPR values do not match the PPR stored in the main file. These differences do not by themselves invalidate the data, but they show that the four files should not be treated as homogeneous exports necessarily originating from a single source database.
 
-  Three additional files contain respectively **8,789**, **1,456** and **21 records**. They include information relating to ranks and RIB bank account details. Several overlaps exist between these datasets; their volumes should therefore not be added to the 70,381 records in the main dataset as if they represented independent populations.
+  The main file also shows a strong concentration in recruitment years: **44,307 of 70,381 records (63.0%)** carry the year **2007**. This distribution is compatible with an older or aggregated administrative corpus, but it does not date acquisition or identify the source system.
 
-  The correspondence between the **70,381 records** actually observed and the public claim of a database containing approximately 70,000 individuals is an important consistency indicator. The different files also show mutually compatible structures and administrative data consistent with the Moroccan context.
+  The correspondence between the **70,381 records** actually observed and the public claim of a database containing approximately 70,000 individuals is a consistency indicator for the **published volume**. It does not demonstrate direct provenance from a DGSN/DGST information system, a recent compromise of those institutions, or intelligence-officer status for every person represented.
 
-  **Assumption:** The structural consistency of the corpus, the administrative information observed and the overlaps between several files support a **High confidence** assessment that the published data is associated with personnel within the DGSN/DGST ecosystem. This assessment concerns the attribution and consistency of the examined data; it does not confirm the method used by JabaR00t to obtain it.
+  **Contradictory official statement:** On **27 August 2026**, the DGSN-DGST pole publicly and categorically denied any intrusion into its information systems or security databases. According to that statement, the released personal data was old and originated from databases or information systems managed by insurance companies and health or social-coverage organisations. This statement is a primary source for the organisation's position. It does not technically prove the alternative provenance by itself, but it means a direct compromise of DGSN/DGST systems cannot be presented as an established fact.
 
-  The `Data Fully Published` status applies to the database of approximately 70,000 records that the actor presents as having been released in full. It does not mean that all other data JabaR00t claims to have exfiltrated has been made public or verified.
+  A public Médias24 analysis published on 25 August further assessed that the overwhelming majority of people in the corpus were more likely DGSN police personnel than “spies” and raised the hypothesis of **repackaging** previously compromised data. That external assessment is consistent with the heterogeneity observed across the files, but it is not definitive proof of provenance.
 
-  The combination of identity information, administrative identifiers, professional information, ranks and banking details represents a **critical impact level**. It may facilitate identity theft, financial fraud, spear-phishing, targeted social engineering and personnel mapping. In the context of police and intelligence organizations, the exposure also creates operational security, personnel profiling and counterintelligence concerns.
+  **Assessment:** AFRINTEL assesses with **High confidence** that a significant quantity of the published data is genuinely associated with personnel in the DGSN/DGST ecosystem. This confidence concerns association of the data with people and a coherent administrative context, **not the source system or the intrusion scenario claimed by the actor**. Direct provenance from a DGSN/DGST information system remains **Unknown / Disputed**. The hypothesis that the release aggregates or repackages data from several sources is **plausible**, but not definitively demonstrated.
 
-  **Unknown:** The available evidence does not establish the initial access vector, the affected source systems, the extraction method, the exact date on which the data was acquired or the overall scope of the information the actor claims to have obtained. The analyzed files alone also do not establish that each of the 70,381 records represents an active intelligence officer, nor do they determine the exact distribution of records between the DGSN and DGST.
+  The `Data Fully Published` status describes the database of approximately 70,000 records that the actor presents as having been released in full. It does not mean the completeness of that database has been independently proven or that all other data JabaR00t claims to have exfiltrated has been made public or verified.
 
-  No independent public confirmation from the DGSN or DGST regarding the entirety of the claimed compromise is established by the analyzed material. AFRINTEL does not reproduce any names, PPR numbers, CIN/CNI numbers, RIB bank details, dates of birth or other personal data contained in the examined files.
+  The combination of identity information, administrative identifiers, professional information, ranks and bank-account details supports retaining a **Level 4 impact** assessment. Even without evidence of a direct intrusion into DGSN/DGST systems, exposure of data associable with security personnel can facilitate identity theft, fraud, spear-phishing, targeted social engineering, personnel profiling and counterintelligence activity.
+
+  **Unknown:** The initial access vector, source system or systems, extraction method, actual acquisition date and overall scope of the claimed corpus remain unknown. The reviewed files do not establish that the **70,381 people** are active intelligence officers, nor do they determine precisely what share belongs to DGSN or DGST. They also do not technically resolve the conflict between the actor's direct-compromise claim and the third-party provenance asserted by the DGSN-DGST pole.
+
+  AFRINTEL does not reproduce any names, PPR numbers, CIN/CNI numbers, RIB bank details, dates of birth or other personal data contained in the reviewed files.
 
 ---
 ### 26 August 2026
-
 #### 🇪🇬 Egypt - Mima Foods
 
 - **Incident date:** Not specified
 - **Initial publication date:** Not specified
 - **Source detection date:** 26 August 2026 at 15:29:13 (timezone not shown)
-- **Actor / Group:** krybit
+- **Actor / Group:** KRYBIT
 - **Sector:** Food manufacturing / Frozen food export
 - **Website:** [mimafoods.net](https://mimafoods.net/)
 - **AFRINTEL status:** Claim - Unverified

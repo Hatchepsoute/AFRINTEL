@@ -55,9 +55,9 @@
 - **Secteur :** Gouvernement / Banque centrale / Services financiers
 - **Site web :** Non précisé
 - **Statut AFRINTEL :** Claim - Unverified
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 4
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 4
 
 - **Description :**
 
@@ -123,11 +123,11 @@
 
 * **Statut :** Claim - Data Sample Published
 
-* **Type d'incident :** Fuite de données
+* **Type d'incident :** Data Leak
 
-* **Niveau de confiance :** Élevé
+* **Niveau de confiance :** High
 
-* **Niveau d'impact :** Niveau 4
+* **Niveau d'impact :** Level 4
 
 * **Description :**
   L'Egyptian Football Association (EFA) est l'instance nationale chargée de la gouvernance et de l'organisation du football en Égypte. Elle est affiliée à la FIFA et à la Confédération Africaine de Football (CAF).
@@ -156,13 +156,13 @@
 - **Date de l'incident :** Non précisée
 - **Date de publication initiale :** Non précisée
 - **Date de détection de la source :** 02 août 2026 à 13:26:24 (fuseau horaire non indiqué)
-- **Acteur / Groupe :** krybit
+- **Acteur / Groupe :** KRYBIT
 - **Secteur :** Fabrication de plastiques / Articles ménagers
 - **Site web :** [buzztrading104.co.za](https://buzztrading104.co.za/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 2
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 2
 - **Sources publiques :** [Présentation de Buzz Trading 104](https://buzztrading104.co.za/about-buzz-trading/) | [Site officiel](https://buzztrading104.co.za/)
 
 - **Description :**
@@ -197,13 +197,13 @@ last_checked_at: 2026-08-02T13:26:24
 - **Date de l'incident :** Non précisée
 - **Date de publication initiale :** Non précisée
 - **Date de détection de la source :** 02 août 2026 à 14:24:27 (fuseau horaire non indiqué)
-- **Acteur / Groupe :** krybit
+- **Acteur / Groupe :** KRYBIT
 - **Secteur :** Microfinance / Banque
 - **Site web :** [nigeria.asa-international.com](https://nigeria.asa-international.com/)
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Présentation institutionnelle](https://nigeria.asa-international.com/about-us/) | [Profil synthétique](https://nigeria.asa-international.com/about-us/at-a-glance/) | [Compte rendu de la revendication KRYBIT](https://www.dexpose.io/krybit-ransomware-strikes-asha-microfinance-bank-in-nigeria/)
 
 - **Description :**
@@ -235,17 +235,17 @@ last_checked_at: 2026-09-13T02:32:51Z
 
 #### 🇿🇦 Afrique du Sud - DC Partner
 
-- **Date de l'incident :** Non précisée
+- **Date de l'incident :** Août 2026, date exacte non établie publiquement
 - **Date de publication initiale :** Non précisée
 - **Date de détection de la source :** 02 août 2026 à 14:25:08 (fuseau horaire non indiqué)
-- **Acteur / Groupe :** krybit
+- **Acteur / Groupe :** KRYBIT, auteur de la revendication ; attribution technique non confirmée publiquement
 - **Secteur :** Services financiers / Distribution de paiements / Accompagnement du désendettement
 - **Site web :** [dcpartner.co.za](https://www.dcpartner.co.za/)
-- **Statut AFRINTEL :** Claim - Unverified
+- **Statut AFRINTEL :** Victim Confirmed
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 3
-- **Sources publiques :** [Site officiel de DC Partner](https://www.dcpartner.co.za/)
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 3
+- **Sources publiques :** [Site officiel de DC Partner](https://www.dcpartner.co.za/) | [Confirmation de l'incident rapportée par MyBroadband, 7 août 2026](https://mybroadband.co.za/news/security/661578-south-african-payment-distribution-agent-for-fnb-and-the-national-credit-regulator-hit-by-cyberattack.html)
 
 - **Description :**
 
@@ -253,11 +253,11 @@ last_checked_at: 2026-09-13T02:32:51Z
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source associe krybit à DC Partner, situe la cible en Afrique du Sud et cite www.dcpartner.co.za. Il a été relevé le 2 août 2026 à 14:25:08, sans fuseau horaire indiqué. Le profil public décrit une activité de distribution de fonds liés au debt review et des services de paiement et de gestion associés. Selon le suivi communiqué le 13 septembre 2026, l'échéance de divulgation affichée était dépassée, mais aucune donnée de DC Partner n'était publiquement accessible lors du dernier contrôle rapporté. La date exacte de l'échéance et la date et l'heure du contrôle ne sont pas précisées. Aucun échantillon, volume, catégorie de données ni élément technique n'est disponible pour étayer la revendication.
+  **Observed :** L'enregistrement source associe krybit à DC Partner, situe la cible en Afrique du Sud et cite www.dcpartner.co.za. Il a été relevé le 2 août 2026 à 14:25:08, sans fuseau horaire indiqué. Le **7 août 2026**, DC Partner a confirmé à MyBroadband avoir subi une attaque ransomware. L'entreprise a indiqué que ses systèmes restaient pleinement opérationnels et qu'une enquête était en cours, avec des notifications engagées conformément à la section 22 de la POPIA. FNB, partenaire tiers cité dans l'article, a déclaré ne disposer d'aucun élément indiquant un impact sur ses informations clients, ses systèmes ou son environnement technologique. Krybit affirme avoir divulgué des données, mais la quantité, le contenu et l'étendue de cette divulgation ne sont pas établis dans la source publique examinée.
 
-  **Assumption :** La correspondance du domaine et du profil public rend l'identification de la cible plausible, sans confirmer une compromission. Si des données liées aux paiements et au debt review avaient été exfiltrées, elles pourraient présenter des risques de fraude et d'hameçonnage ciblé ; aucune exposition de ces données n'est toutefois établie. L'absence de publication accessible après l'échéance ne permet pas d'en déterminer la cause. Parmi les hypothèses figurent un règlement, éventuellement avec paiement de rançon par la victime, ou des négociations toujours en cours malgré l'échéance ; un transfert, partage ou revente à un autre groupe criminel, à un tiers ou à une organisation de veille CTI ; un report ou une indisponibilité de la publication ; ou une revendication inexacte ou exagérée. Aucune n'est corroborée par les éléments disponibles.
+  **Assumption :** La confirmation publique de DC Partner établit l'existence d'un incident ransomware et justifie le statut `Victim Confirmed`. Elle ne confirme pas à elle seule le chiffrement de systèmes, l'exfiltration revendiquée, le volume de données ni l'attribution technique de l'attaque à Krybit. L'association temporelle entre la publication de Krybit et la confirmation de la victime rend le lien plausible, mais AFRINTEL conserve une distinction entre la revendication de l'acteur et les faits confirmés par l'organisation.
 
-  **Unknown :** La date exacte de l'échéance, l'heure du dernier contrôle, les systèmes éventuellement touchés, le vecteur d'accès, l'accès non autorisé, l'exfiltration, l'exécution ou le chiffrement d'un ransomware, l'impact opérationnel, la confirmation de la victime et la nature ou l'étendue de données éventuellement concernées restent inconnus. Les négociations, un paiement, un partage privé ou une revente ne sont pas établis.
+  **Unknown :** Le vecteur d'accès initial, les systèmes précisément affectés, l'existence et l'étendue d'un chiffrement, la nature et le volume des données éventuellement exfiltrées ou divulguées, l'attribution technique définitive, les négociations et tout paiement restent inconnus. L'absence de données publiquement accessibles lors d'un contrôle ultérieur ne permet pas d'inférer un accord, un paiement, une revente ou l'absence d'exfiltration.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -267,11 +267,11 @@ sample_status: none-observed
 deadline_at:
 deadline_status: expired
 disclosure_status: not-observed
-victim_confirmation: none-observed
+victim_confirmation: confirmed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-09-13
+last_checked_at: 2026-09-14
 -->
 
 ### 04 août 2026
@@ -287,8 +287,8 @@ last_checked_at: 2026-09-13
 - **Site web :** [suretravel.co.za](https://www.suretravel.co.za/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Moyen
-- **Niveau d'impact :** Niveau 2
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 2
 - **Sources publiques :** [Présentation de Sure Travel](https://www.suretravel.co.za/about) | [Profil institutionnel](https://www.linkedin.com/company/sure-travel-pty-ltd)
 
 - **Description :**
@@ -329,8 +329,8 @@ last_checked_at: 2026-08-04T15:50:57
 - **Site web :** [adghealthcare-eg.com](http://www.adghealthcare-eg.com)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Moyen
-- **Niveau d'impact :** Niveau 3
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
 - **Sources publiques :** [Profil institutionnel](https://www.linkedin.com/company/adg-healthcare) | [Référence d'entreprise](https://www.bizmideast.com/EG/adg-healthcare-02-22571600)
 
 - **Description :**
@@ -369,9 +369,9 @@ last_checked_at: 2026-08-04T15:55:39
 - **Secteur :** Gouvernement / Administration publique / Commerce
 - **Site web :** Non précisé
 - **Statut AFRINTEL :** Claim - Unverified
-- **Type d’incident :** Vente d’accès
-- **Niveau de confiance :** Faible
-- **Niveau d’impact :** Niveau 4
+- **Type d’incident :** Access Sale
+- **Niveau de confiance :** Low
+- **Niveau d’impact :** Level 4
 
 - **Description :**
 
@@ -390,14 +390,14 @@ last_checked_at: 2026-08-04T15:55:39
 - **Date de l'incident :** Non précisée
 - **Date de publication initiale :** Non précisée
 - **Date de détection de la source :** 07 août 2026 à 02:25:08 (fuseau horaire non indiqué)
-- **Acteur / Groupe :** krybit
+- **Acteur / Groupe :** KRYBIT
 - **Secteur :** Immobilier / Domaine résidentiel et golf
 - **Site web :** [serengeti-estates.co.za](https://serengeti-estates.co.za/)
 - **Domaine cité par le jeu source :** www.serengetiestates.co.za
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 3
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 3
 - **Sources publiques :** [Site officiel et coordonnées](https://serengeti-estates.co.za/contact-us/)
 
 - **Description :**
@@ -436,9 +436,9 @@ last_checked_at: 2026-09-04
 - **Secteur :** Services financiers / Financement d'appareils PAYGO / Commerce de détail
 - **Site web :** Non identifié avec certitude
 - **Statut AFRINTEL :** Data Fully Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 4
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
 
 - **Description :**
 
@@ -461,9 +461,9 @@ last_checked_at: 2026-09-04
 - **Secteur :** Développement de la jeunesse / Services à l'emploi
 - **Domaine historique de support :** `mpowa.mobi` (instance de préproduction citée : `staging.mpowa.mobi`)
 - **Statut AFRINTEL :** Data Fully Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Très élevé
-- **Niveau d'impact :** Niveau 4
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
 
 - **Description :**
 
@@ -497,8 +497,8 @@ last_checked_at: 2026-09-04
 - **Site web :** [dailytrust.com](https://dailytrust.com)
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Présentation de Daily Trust](https://dailytrust.com/about-us)
 
 - **Description :**
@@ -542,8 +542,8 @@ last_checked_at: 2026-08-20T01:35:32+01:00
 - **Site web :** [avanta.ma](https://www.avanta.ma/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 3
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 3
 - **Sources publiques :** [Profil institutionnel AVANTA Maroc](https://www.linkedin.com/company/avanta-maroc-sa)
 
 - **Description :**
@@ -586,8 +586,8 @@ last_checked_at: 2026-08-14T05:55:47
 - **Sources publiques :** [Présentation de The Courier Guy](https://mail.thecourierguy.co.za/about-us/) | [Site officiel](https://thecourierguy.co.za/)
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d’incident :** Ransomware
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
 
 - **Description :**
 
@@ -625,9 +625,9 @@ last_checked_at: 2026-09-04
 - **Secteur :** Ressources humaines / Recrutement
 - **Site web :** [snapstartalent.com](https://snapstartalent.com)
 - **Statut AFRINTEL :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Élevé
-- **Niveau d'impact :** Niveau 4
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
 
 - **Description :**
 
@@ -657,8 +657,8 @@ last_checked_at: 2026-09-04
 - **Site web :** [spearfin.net](https://spearfin.net)
 - **Statut AFRINTEL :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Moyen
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Site officiel de SpearFin](https://spearfin.net/) | [Services d'administration de fonds](https://spearfin.net/fund-administration/)
 
 - **Description :**
@@ -702,8 +702,8 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 - **Site web :** [babcock.co.za](https://www.babcock.co.za/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Présentation de Babcock Africa](https://www.babcock.co.za/about/) | [Services d'ingénierie](https://www.babcock.co.za/products-and-services/engineered-solutions/6/)
 
 - **Description :**
@@ -742,9 +742,9 @@ last_checked_at: 2026-08-19T08:10:32
 - **Secteur :** Commerce en ligne / Marketplace
 - **Site web :** [dz.afribaba.com](https://dz.afribaba.com) (site régional observé) ; domaine cité par l'acteur : www.afribaba.dz
 - **Statut AFRINTEL :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
-- **Niveau de confiance :** Moyen
-- **Niveau d'impact :** Niveau 3
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
 
 - **Description :**
 
@@ -771,8 +771,8 @@ last_checked_at: 2026-08-19T08:10:32
 * **Site web :** [cca-bank.com](https://www.cca-bank.com/)
 * **Statut AFRINTEL :** Claim - Unverified
 * **Type d'incident :** Ransomware
-* **Niveau de confiance :** Moyen
-* **Niveau d'impact :** Niveau 4
+* **Niveau de confiance :** Medium
+* **Niveau d'impact :** Level 4
 * **Sources publiques :** [Présentation de CCA Bank](https://www.cca-bank.com/fr) | [Site officiel](https://www.cca-bank.com/)
 * **Description :**
   CCA Bank, ou Crédit Communautaire d'Afrique-Bank, est un établissement bancaire camerounais dont la direction générale est située à Douala-Bonanjo. Son site public présente des services bancaires et financiers destinés aux particuliers et aux entreprises, notamment des solutions de compte, de paiement et de financement.
@@ -827,7 +827,7 @@ last_checked_at: 2026-08-20T13:54:00
 - **Niveau de confiance :** High
 - **Site web:** [sante.gov.ma](https://www.sante.gov.ma)
 - **Domaine historique:** `ramed.ma` *(inactive)*
-
+* **Niveau d'impact :** Level 4
 - **Description :**
   RAMED, le Régime d’Assistance Médicale, est l’ancien dispositif marocain destiné à faciliter l’accès aux soins des populations à faibles revenus et vulnérables. La publication observée concerne une base présentée comme associée aux bénéficiaires de ce régime.
 
@@ -860,8 +860,8 @@ last_checked_at: 2026-08-20T13:54:00
 - **Site web :** [fbcweb.furnbed.co.za](https://fbcweb.furnbed.co.za/)
 - **Statut AFRINTEL :** Victim Confirmed
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Très élevé
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Notification officielle et site du Conseil](https://fbcweb.furnbed.co.za/) | [Présentation du Conseil](https://fbcweb.furnbed.co.za/what.php)
 
 - **Description :**
@@ -895,50 +895,58 @@ last_checked_at: 2026-09-04
 
 #### 🇲🇦 Maroc - Direction générale de la Sûreté nationale (DGSN) / Direction générale de la Surveillance du territoire (DGST)
 
-* **Date de publication initiale :** 24 août 2026
+* **Date de publication initiale corroborée :** 24 août 2026
 * **Date de détection AFRINTEL :** 24 août 2026
 * **Acteur / Groupe :** JabaR00t, publication relayée par le compte JBT2026 sur un forum cybercriminel
 * **Secteur :** Gouvernement / Administration / Sécurité et renseignement
 * **Site web :** [dgsn.gov.ma](https://dgsn.gov.ma) / `dgst.gov.ma` (domaine associé à la DGST, portail public non confirmé)
 * **Statut AFRINTEL :** Data Fully Published
-* **Type d'incident :** Fuite de données
-* **Niveau de confiance :** Élevé
-* **Niveau d'impact :** Niveau 4
+* **Type d'incident :** Data Leak
+* **Niveau de confiance :** High
+* **Niveau d'impact :** Level 4
+* **Sources publiques :** [Communiqué du pôle DGSN-DGST relayé par SNRT News / MAP, 27 août 2026](https://snrtnews.com/article/le-pole-dgsn-dgst-dement-toute-intrusion-dans-ses-systemes-dinformation-ou-ses-bases-de) | [Le Desk, 27 août 2026](https://ledesk.ma/2026/08/27/fuite-jabaroot-la-dgsn-et-la-dgst-dementent-tout-piratage-de-leurs-systemes-evoquant-des-donnees-anciennes-issues-dassureurs/) | [Médias24, fact-checking du 25 août 2026](https://medias24.com/2026/08/25/une-fuite-attribuee-a-jabaroot-fait-pschiitt-1743419/)
 * **Description :**
   La Direction générale de la Sûreté nationale (DGSN) est le corps national de police du Maroc. La Direction générale de la Surveillance du territoire (DGST) est le service marocain chargé du renseignement intérieur et de la sécurité territoriale. Les deux institutions occupent une fonction stratégique au sein de l'appareil de sécurité nationale marocain.
 
 * **Analyse :**
-  **Observed :** Le 24 août 2026, une publication relayée par le compte JBT2026 et attribuée à JabaR00t a présenté sous l'intitulé `#OP_CEUTA` une base décrite comme contenant environ **70 000 personnels associés à la DGSN et à la DGST**. L'acteur présente cette base comme publiée intégralement et affirme parallèlement que les données diffusées ne représenteraient qu'une partie d'un ensemble plus large prétendument exfiltré.
-  L'analyse des fichiers fournis identifie **70 381 enregistrements** dans le fichier principal. Les données observées comprennent notamment des informations d'identité, numéros PPR, numéros de CIN/CNI, dates de naissance et années de recrutement.
-  Trois fichiers complémentaires contiennent respectivement **8 789**, **1 456** et **21 enregistrements**. Ils apportent notamment des informations relatives au grade et aux coordonnées bancaires RIB. Plusieurs recoupements existent entre ces différents jeux de données ; leurs volumes ne doivent donc pas être additionnés aux 70 381 enregistrements du fichier principal comme s'il s'agissait de populations indépendantes.
+  **Observed :** Le 24 août 2026, une publication relayée par le compte JBT2026 et attribuée à JabaR00t a présenté sous l'intitulé `#OP_CEUTA` une base décrite comme contenant environ **70 000 « agents » ou personnels associés à la DGSN et à la DGST**. L'acteur présente cette base comme publiée intégralement et affirme parallèlement que les données diffusées ne représenteraient qu'une partie d'un ensemble plus large prétendument exfiltré. La qualification de l'ensemble des personnes comme « agents de renseignement » relève de la revendication de l'acteur et n'est pas établie par les fichiers examinés.
 
-  La correspondance entre le volume de **70 381 enregistrements** effectivement observé et la revendication publique d'une base d'environ 70 000 personnes constitue un élément important de cohérence. Les différents fichiers présentent également des structures compatibles entre elles et des données administratives correspondant au contexte marocain.
+  L'analyse en lecture seule des quatre fichiers fournis confirme un fichier principal de **70 381 enregistrements et 5 colonnes**, sans doublon de ligne exact. Les champs observés comprennent notamment le nom et prénom, un identifiant PPR, un numéro CIN/CNI, une date de naissance et une année de recrutement. Trois fichiers complémentaires contiennent respectivement **8 789**, **1 456** et **21 enregistrements**, avec notamment des champs de grade et de RIB. Ces volumes ne doivent pas être additionnés comme s'ils représentaient des populations indépendantes.
 
-  **Assumption :** La cohérence structurelle du corpus, les informations administratives observées et les recoupements entre plusieurs fichiers permettent d'évaluer avec un **niveau de confiance élevé** que les données publiées sont associées à des personnels relevant de l'écosystème DGSN/DGST. Cette évaluation concerne l'attribution et la cohérence des données examinées ; elle ne confirme pas la méthode utilisée par JabaR00t pour les obtenir.
+  Les recoupements entre fichiers sont **partiels et hétérogènes**. Après normalisation simple des noms et CIN, **972 des 1 456 lignes** du fichier présenté comme DGST partagent une même paire nom+CIN avec le fichier principal, de même que **18 des 21 lignes** du fichier `BIG HEADS`. Le fichier complémentaire présenté comme DGSN ne produit en revanche **aucun recoupement exact sur la paire nom+CIN** avec le corpus principal après cette normalisation, bien que **209 CIN** y apparaissent également. Pour les 972 correspondances DGST et les 18 correspondances `BIG HEADS` établies sur nom+CIN, les valeurs PPR associées ne concordent pas avec le PPR du fichier principal. Ces écarts n'invalident pas à eux seuls les données, mais ils montrent que les quatre fichiers ne peuvent pas être traités comme des exports homogènes provenant nécessairement d'une même base source.
 
-  Le statut `Data Fully Published` s'applique à la base d'environ 70 000 enregistrements que l'acteur présente comme publiée intégralement. Il ne signifie pas que l'ensemble des autres données que JabaR00t affirme avoir exfiltrées a été rendu public ou vérifié.
+  Le fichier principal présente en outre une forte concentration des années de recrutement : **44 307 enregistrements sur 70 381 (63,0 %)** portent l'année **2007**. Cette distribution est compatible avec un corpus administratif ancien ou agrégé, sans permettre de dater l'acquisition ni d'identifier le système source.
 
-  La combinaison d'informations d'identité, d'identifiants administratifs, de données professionnelles, de grades et de coordonnées bancaires représente un **niveau d'impact critique**. Elle peut faciliter l'usurpation d'identité, la fraude financière, le spear-phishing, l'ingénierie sociale ciblée et la cartographie de personnels. Dans le contexte d'organismes de police et de renseignement, cette exposition présente également des enjeux de sécurité opérationnelle, de profilage de personnels et de contre-ingérence.
+  La correspondance entre les **70 381 enregistrements** effectivement observés et la revendication publique d'une base d'environ 70 000 personnes constitue un indicateur de cohérence sur le **volume publié**, mais ne démontre ni l'origine directe dans un SI DGSN/DGST, ni une compromission récente de ces institutions, ni la qualité d'agent de renseignement pour chaque personne représentée.
 
-  **Unknown :** Les éléments disponibles ne permettent pas d'établir le vecteur d'accès initial, les systèmes sources concernés, la méthode d'extraction, la date exacte de l'acquisition des données ni l'étendue globale de ce que l'acteur affirme avoir obtenu. Il n'est pas non plus possible d'établir, à partir des seuls fichiers analysés, que chacun des 70 381 enregistrements correspond à un agent de renseignement actif, ni de déterminer la répartition exacte des enregistrements entre la DGSN et la DGST.
+  **Déclaration officielle contradictoire :** Le **27 août 2026**, le pôle DGSN-DGST a publiquement et catégoriquement démenti toute intrusion dans ses systèmes d'information ou ses bases de données de sécurité. Selon cette déclaration, les données personnelles diffusées seraient anciennes et proviendraient de bases ou systèmes gérés par des compagnies d'assurance et des organismes de couverture sociale et de santé. Cette déclaration est une source primaire sur la position de l'organisation. Elle ne démontre pas techniquement, à elle seule, la provenance alternative avancée, mais elle interdit de présenter une compromission directe des systèmes DGSN/DGST comme un fait établi.
 
-  Aucune confirmation publique indépendante de la DGSN ou de la DGST concernant l'intégralité de la compromission revendiquée n'est établie dans les éléments analysés. AFRINTEL ne reproduit aucun nom, numéro PPR, CIN/CNI, RIB, date de naissance ou autre donnée personnelle issue des fichiers examinés.
+  Une analyse publique de Médias24 publiée le 25 août estime par ailleurs que l'écrasante majorité des personnes du corpus seraient plutôt des policiers de la DGSN que des « espions » et évoque l'hypothèse d'un **repackaging** de données précédemment compromises. Cette analyse externe est cohérente avec l'hétérogénéité observée entre les fichiers, mais ne constitue pas une preuve définitive de leur provenance.
+
+  **Assessment :** AFRINTEL évalue avec un niveau de confiance **High** qu'une quantité significative des données publiées est authentiquement associée à des personnels relevant de l'écosystème DGSN/DGST. Cette confiance porte sur l'association des données à des personnes et à un contexte administratif cohérent, **pas sur le système source ni sur le scénario d'intrusion revendiqué par l'acteur**. La provenance directe d'un SI DGSN/DGST demeure **Unknown / Disputed**. L'hypothèse d'une agrégation ou d'un reconditionnement de données issues de plusieurs sources est **plausible**, mais non démontrée de manière définitive.
+
+  Le statut `Data Fully Published` décrit la base d'environ 70 000 enregistrements que l'acteur présente comme publiée intégralement. Il ne signifie ni que l'exhaustivité de cette base a été prouvée, ni que l'ensemble des autres données que JabaR00t affirme avoir exfiltrées a été rendu public ou vérifié.
+
+  La combinaison d'informations d'identité, d'identifiants administratifs, de données professionnelles, de grades et de coordonnées bancaires justifie le maintien d'un **niveau d'impact Level 4**. Même en l'absence de preuve d'une intrusion directe dans les SI DGSN/DGST, l'exposition de données associables à des personnels de sécurité peut faciliter l'usurpation d'identité, la fraude, le spear-phishing, l'ingénierie sociale ciblée, le profilage de personnels et des activités de contre-ingérence.
+
+  **Unknown :** Le vecteur d'accès initial, le ou les systèmes sources, la méthode d'extraction, la date réelle d'acquisition des données et l'étendue globale du corpus revendiqué restent inconnus. Les fichiers analysés ne permettent pas d'établir que les **70 381 personnes** sont des agents de renseignement actifs, ni de déterminer précisément la part relevant de la DGSN ou de la DGST. Ils ne permettent pas non plus de trancher techniquement entre le scénario d'une compromission directe revendiqué par l'acteur et la provenance tierce avancée par le pôle DGSN-DGST.
+
+  AFRINTEL ne reproduit aucun nom, numéro PPR, CIN/CNI, RIB, date de naissance ou autre donnée personnelle issue des fichiers examinés.
 
 ---
 ### 26 août 2026
-
 #### 🇪🇬 Égypte - Mima Foods
 
 - **Date de l'incident :** Non précisée
 - **Date de publication initiale :** Non précisée
 - **Date de détection de la source :** 26 août 2026 à 15:29:13 (fuseau horaire non indiqué)
-- **Acteur / Groupe :** krybit
+- **Acteur / Groupe :** KRYBIT
 - **Secteur :** Industrie agroalimentaire / Export de produits surgelés
 - **Site web :** [mimafoods.net](https://mimafoods.net/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 2
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 2
 - **Sources publiques :** [Site officiel](https://mimafoods.net/) | [Profil de l'entreprise](https://mimafoods.net/company-profile/)
 
 - **Description :**
@@ -1070,8 +1078,8 @@ last_checked_at: 2026-08-26T15:56:16
 - **Site web :** [hungrylion.co.za](https://www.hungrylion.co.za/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Faible
-- **Niveau d'impact :** Niveau 3
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 3
 - **Sources publiques :** [Présentation de Hungry Lion](https://www.hungrylion.co.za/about/) | [Informations juridiques](https://www.hungrylion.co.za/legal/)
 
 - **Description :**
@@ -1111,8 +1119,8 @@ last_checked_at: 2026-08-27T06:27:50
 - **Site web :** [Site carrière du Rohloff Group](https://rohloff-group.breezy.hr/)
 - **Statut AFRINTEL :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Moyen
-- **Niveau d'impact :** Niveau 4
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 4
 - **Sources publiques :** [Profil institutionnel](https://www.linkedin.com/company/rohloff-group/?originalSubdomain=za) | [Site carrière géré par l'entreprise](https://rohloff-group.breezy.hr/)
 
 - **Description :**
