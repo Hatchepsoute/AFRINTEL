@@ -198,11 +198,11 @@ last_checked_at: 2026-08-02T13:26:24
 - **Actor / Group:** krybit
 - **Sector:** Microfinance / Banking
 - **Website:** [nigeria.asa-international.com](https://nigeria.asa-international.com/)
-- **AFRINTEL status:** Claim - Unverified
+- **AFRINTEL status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
-- **Confidence level:** Low
+- **Confidence level:** High
 - **Impact level:** Level 4
-- **Public sources:** [Institutional overview](https://nigeria.asa-international.com/about-us/) | [At-a-glance profile](https://nigeria.asa-international.com/about-us/at-a-glance/)
+- **Public sources:** [Institutional overview](https://nigeria.asa-international.com/about-us/) | [At-a-glance profile](https://nigeria.asa-international.com/about-us/at-a-glance/) | [Report on the KRYBIT claim](https://www.dexpose.io/krybit-ransomware-strikes-asha-microfinance-bank-in-nigeria/)
 
 - **Description:**
 
@@ -210,25 +210,25 @@ last_checked_at: 2026-08-02T13:26:24
 
 - **Analysis:**
 
-  **Observed:** The supplied source record associates krybit with nigeria.asa-international.com and locates the target in Nigeria. It is timestamped 2 August 2026 at 14:24:27, with no timezone shown. The source sector, "central administration and government", conflicts with the organisation's official profile, which establishes microfinance and banking activities. No sample, volume, deadline or technical detail is provided.
+  **Observed:** The source record associates KRYBIT with ASHA Microfinance Bank and was observed on 2 August 2026 at 14:24:27, with no timezone shown. The supplied corpus is attributed to KRYBIT's data disclosure. According to provenance information supplied with the corpus, the disclosure followed failed negotiations between the two parties; this sequence has not been independently corroborated by a public source. A read-only analysis of the complete directory found 1,498 files (about 7.15 GB): 1,101 contain only null bytes and 397 contain non-null data. Sixteen text tables account for approximately 14.6 million physical lines; 5,164 lines were sampled and eight width irregularities were observed. The corpus also contains spreadsheets, office documents and RTF files; several archives are damaged or unreadable. Readable material contains finance- or transaction-related fields and contact-pattern matches in some files. Structured dates observed range from 27 April 2022 to 16 July 2026.
 
-  **Assumption:** The subdomain exactly matches the official website, making the target identification plausible. If a compromise occurred, the financial nature of the organisation could place sensitive customer or operational information at risk, but no data category is established by the supplied material.
+  **Assumption:** The collection path, associated domain and structured nature of the corpus are consistent with ASHA. However, the readable documents do not all contain an explicit institutional marker. Physical lines do not necessarily represent unique records or distinct customers. If the financial or customer data is authentic, it could support targeted phishing, identity abuse and fraud.
 
-  **Unknown:** Initial access, affected systems, exfiltration, encryption, operational impact and any victim confirmation remain unknown. No volume or data type can be attributed to this case.
+  **Unknown:** The initial access method and date, affected systems, encryption mechanism, completeness of the corpus, number of unique records and operational impact are not established. No official confirmation of the incident has been observed. The negotiation status remains publicly uncorroborated; no payment or transfer to a third party is established.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
 listing_first_observed_at: 2026-08-02T14:24:27
 listing_last_observed_at: 2026-08-02T14:24:27
-sample_status: none-observed
+sample_status: sample-reviewed
 deadline_at:
 deadline_status: not-stated
-disclosure_status: not-observed
+disclosure_status: release-reviewed
 victim_confirmation: none-observed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-08-02T14:24:27
+last_checked_at: 2026-09-13T02:32:51Z
 -->
 
 #### 🇿🇦 South Africa - DC Partner
@@ -247,15 +247,15 @@ last_checked_at: 2026-08-02T14:24:27
 
 - **Description:**
 
-  DC Partner (Pty) Ltd is a South African National Credit Regulator-accredited Payment Distribution Agency supporting the debt-counselling industry. Based in George and represented nationwide, it provides payment distribution, statements, systems and operational support to debt counsellors and consumers.
+  DC Partner (Pty) Ltd is a South African Payment Distribution Agency (PDA) based in George, Western Cape. Its public profile describes it as one of South Africa's four National Credit Regulator-accredited PDAs and says it collects and distributes debt-review funds on behalf of debt counsellors for consumers under review, in line with the National Credit Act. The company also describes DebiCheck services integrated with FNB, its Finwise Debt Management software, reporting and metrics, provider verification and nationwide representative support. Its profile says it serves hundreds of debt counsellors and employs more than 65 people.
 
 - **Analysis:**
 
-  **Observed:** The supplied source record associates krybit with DC Partner, locates the target in South Africa and cites www.dcpartner.co.za. It is timestamped 2 August 2026 at 14:25:08, with no timezone shown. The source provides no sample, volume, data category, deadline or technical evidence.
+  **Observed:** The source record associates krybit with DC Partner, locates the target in South Africa and cites www.dcpartner.co.za. It was recorded on 2 August 2026 at 14:25:08, with no timezone shown. The public profile describes debt-review fund distribution and related payment and management services. Monitoring information reported on 13 September 2026 says the displayed disclosure deadline had passed, but no DC Partner data was publicly accessible at the latest reported check. The exact deadline and the date and time of that check were not provided. No sample, volume, data category or technical evidence is available to substantiate the claim.
 
-  **Assumption:** The domain matches the company's public website, making the target identification plausible. If the claim is accurate, the payment-distribution and debt-counselling activities could create risks for financial or personal information, but no exposure is established.
+  **Assumption:** The domain and public profile make the target identification plausible, but do not confirm a compromise. If debt-review or payment-related data had been exfiltrated, it could create fraud and targeted-phishing risks; no such exposure has been established. The absence of accessible publication after the deadline does not establish its cause. Possible scenarios include a settlement, potentially involving a ransom payment by the victim, or negotiations still ongoing after the deadline; transfer, sharing or resale to another criminal group, a third party or a CTI organisation; delayed or unavailable publication; or an inaccurate or exaggerated claim. None is corroborated by the available evidence.
 
-  **Unknown:** Access and acquisition methods, affected systems, possible encryption, operational scope, victim confirmation and the state of any disclosure remain unknown.
+  **Unknown:** The exact deadline, time of the latest check, potentially affected systems, access vector, unauthorised access, exfiltration, ransomware execution or encryption, operational impact, victim confirmation and the nature or extent of any data remain unknown. Negotiations, payment, private sharing or resale have not been established.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -263,13 +263,13 @@ listing_first_observed_at: 2026-08-02T14:25:08
 listing_last_observed_at: 2026-08-02T14:25:08
 sample_status: none-observed
 deadline_at:
-deadline_status: not-stated
+deadline_status: expired
 disclosure_status: not-observed
 victim_confirmation: none-observed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-08-02T14:25:08
+last_checked_at: 2026-09-13
 -->
 
 ### 04 August 2026
@@ -460,8 +460,8 @@ last_checked_at: 2026-09-04
 - **Initial publication date:** 07 August 2026
 - **AFRINTEL detection date:** 08 August 2026
 - **Actor / Group:** exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool
-- **Sector:** Youth Development / Employment Services (Government-adjacent)
-- **Website:** [mpowa.mobi](https://mpowa.mobi) (exposed instance: staging.mpowa.mobi)
+- **Sector:** Youth Development / Employment Services
+- **Historical support domain:** `mpowa.mobi` (cited staging instance: `staging.mpowa.mobi`)
 - **AFRINTEL status:** Data Fully Published
 - **Incident type:** Data Leak
 - **Confidence level:** Very High
@@ -469,7 +469,13 @@ last_checked_at: 2026-09-04
 
 - **Description:**
 
-  mpowa.mobi is a South African government-adjacent youth development and employment platform connecting young jobseekers with opportunities and support services, reportedly developed as part of a Code for South Africa-linked initiative.
+  mPowa is a South African youth-development and employment-services platform developed by mLab South Africa, a not-for-profit organisation. It is part of the SA Youth Network. The South African Presidency states that it was developed by mLab in partnership with the Department of Science and Innovation and launched as part of the Presidential Youth Employment Intervention. It is therefore a youth-employment service linked to a public initiative, rather than a government administration.
+
+- **Public verification:**
+
+  The Google Play listing attributes the app to mLab South Africa and uses `app@mpowa.mobi` as its support address, establishing a historical link between the domain and the service. During verification on 14 September 2026, the `mpowa.mobi` root displayed Korean-language casino content unrelated to mPowa. That current content is not attributed to the historical programme, and the domain’s current operator remains unknown.
+
+  Sources: [South African Presidency](https://www.thepresidency.gov.za/virtual-address-president-cyril-ramaphosa-occasion-youth-day-16-june-2021) · [mLab South Africa](https://mlab.co.za/what-we-do/tech-solutions/) · [mPowa Google Play listing](https://play.google.com/store/apps/details?hl=en&id=com.mlab.mpowa)
 
 - **Analysis:**
 
@@ -477,7 +483,7 @@ last_checked_at: 2026-09-04
 
   Examination of the exported database confirms the figures stated in the post: 2,585 complete CV/resume records, 26,675 service-delivery geolocation points, 11 service-provider directory records, 19 platform user accounts, and 3 API access-key entries. Each CV record includes a personal-information block (full name, phone, email, date of birth, gender, nationality, marital status, disability status, driver's license code, highest qualification), together with qualification, work-experience, language, skills and personal-reference sections; the reference entries additionally expose the name, employer, position and phone number of third parties named as referees. The 19 user records include full name, date of birth and geolocation coordinates for platform staff. The dataset also contains 3 live-looking API access keys with descriptive labels.
 
-  The combination of disability status, date of birth and full identity data for named minors and young jobseekers constitutes special category personal information under South Africa's POPIA framework, and the exposure of a government-adjacent youth platform's staging database, including active API keys, creates a material risk of credential misuse against related infrastructure, in addition to identity fraud, targeted phishing and physical-safety risks for the affected youth and third-party references. The staging hostname suggests a corresponding production environment may exist and could carry similar or worse exposure. The exact match between the record counts published by the actor and those independently observed in the reviewed export supports a very high confidence assessment. No candidate name, contact detail, date of birth, disability declaration, reference information, staff record or API key from the reviewed material is reproduced.
+  The combination of disability status, date of birth and full identity data for named minors and young jobseekers constitutes special category personal information under South Africa's POPIA framework, and the exposure of a youth-employment platform linked to a public initiative, including active API keys, creates a material risk of credential misuse against related infrastructure, in addition to identity fraud, targeted phishing and physical-safety risks for the affected youth and third-party references. The staging hostname suggests a corresponding production environment may exist and could carry similar or worse exposure. The exact match between the record counts published by the actor and those independently observed in the reviewed export supports a very high confidence assessment. No candidate name, contact detail, date of birth, disability declaration, reference information, staff record or API key from the reviewed material is reproduced.
 
   The full post identifies mpowa.mobi as item "11/25" of an ongoing campaign, describing a proprietary tool ("CredHarvest V6") used to mass-scan and harvest exposed Firebase Realtime Database instances, and states that hundreds of similar databases have already been acquired through the same method. The actor advertises both the sale of this scanning tool and separate paid intrusion/access services on the same forum. This indicates mpowa.mobi is one victim within a broader, systematic campaign targeting misconfigured Firebase deployments, and that comparable exposures likely affect other African organizations using the same backend, independent of any targeting specific to mpowa.mobi.
 
@@ -811,9 +817,14 @@ last_checked_at: 2026-08-20T13:54:00
 ### August 22, 2026
 #### 🇲🇦 Morocco - RAMED (Régime d’Assistance Médicale)
 
+- **Incident date:** Not specified
+- **Initial publication date:** August 22, 2026
+
 - **Actor / Group:** JBT2026
 - **Sector:** Government / Administration
 - **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
 - **Website:** [sante.gov.ma](https://www.sante.gov.ma)
 - **Historical RAMED domain:** `ramed.ma` *(inactive)*
 
@@ -949,11 +960,11 @@ last_checked_at: 2026-09-04
 
 - **Analysis:**
 
-  **Observed:** The supplied source record associates krybit with mimafoods.net and locates the target in Egypt. It is timestamped 26 August 2026 at 15:29:13, with no timezone shown. The source description is truncated and limited to the company's public profile. No sample, volume, data type or technical evidence of compromise is provided.
+  **Observed:** The supplied source record associates krybit with mimafoods.net and locates the target in Egypt. It is timestamped 26 August 2026 at 15:29:13, with no timezone shown. According to monitoring information reported on 12 September 2026, the displayed deadline had passed and no Mima Foods data or sample was publicly accessible at the latest reported check. The check time and exact deadline are not specified. No technical evidence confirms access, exfiltration or encryption.
 
-  **Assumption:** The domain exactly matches the official website, making the target identification plausible. This does not confirm access, exfiltration or encryption.
+  **Assumption:** The domain exactly matches the official website, making the target identification plausible. This does not confirm access, exfiltration or encryption. The lack of accessible data after the deadline could be consistent with an agreement or negotiations, with or without payment; transfer, sharing or resale of data; a delay; listing or link unavailability; or an inaccurate or exaggerated claim. These remain hypotheses. Disclosures attributed to other Krybit victims do not prove Mima Foods' data were transferred.
 
-  **Unknown:** Any affected systems, the access vector, operational scope, nature of any data, victim confirmation and publication status remain unknown.
+  **Unknown:** Any affected systems, the access vector, operational scope, nature of any data, victim confirmation, access and exfiltration are not established. The exact deadline, reason for the lack of public disclosure, any private sharing, negotiations, payment or resale remain unknown.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -961,50 +972,98 @@ listing_first_observed_at: 2026-08-26T15:29:13
 listing_last_observed_at: 2026-08-26T15:29:13
 sample_status: none-observed
 deadline_at:
-deadline_status: not-stated
+deadline_status: expired
 disclosure_status: not-observed
 victim_confirmation: none-observed
 negotiation_status: unknown
 ransom_payment_status: unknown
 resale_status: unknown
-last_checked_at: 2026-08-26T15:29:13
+last_checked_at: 2026-09-12
 -->
 
-#### 🇬🇦 Gabon - Conseil Gabonais des Chargeurs
+#### 🇬🇦 Gabon - Conseil Gabonais des Chargeurs (CGC) [Ransomware]
 
 - **Incident date:** Not specified
 - **Initial publication date:** Not specified
-- **Source detection date:** 26 August 2026 at 15:56:16 (timezone not shown)
-- **Actor / Group:** krybit
+- **Source detection date:** 26 August 2026 at 15:56:16 (timezone not specified)
+- **Actor / Group:** KRYBIT
 - **Sector:** Public administration / Transport and logistics
 - **Website:** [cgcgabon.ga](https://cgcgabon.ga/)
 - **Domain cited by the source dataset:** cgcgabon.com
-- **AFRINTEL status:** Claim - Unverified
+- **AFRINTEL status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
-- **Confidence level:** Low
-- **Impact level:** Level 3
+- **Associated effect:** Data exposure and disclosure
+- **Confidence level:** High
+- **Impact level:** Level 4
 - **Public sources:** [Conseil Gabonais des Chargeurs official website](https://cgcgabon.ga/)
 
 - **Description:**
 
-  The Conseil Gabonais des Chargeurs is a Gabonese public administrative body serving importers and exporters under the transport, merchant marine and logistics authorities. Its mission includes supporting shippers and improving the economic performance of the multimodal transport chain.
+  The Conseil Gabonais des Chargeurs (CGC) is a Gabonese public organization involved in supporting, assisting and regulating activities related to shippers, transportation and cargo flows.
+
+- **Data exposed in the analyzed batches:**
+
+  - personally identifiable HR data, including names, employee IDs, CNSS numbers, phone numbers, dates of birth, job titles and professional information;
+  - individual performance evaluations and career-management documents;
+  - organizational charts, position maps and job descriptions showing internal reporting relationships;
+  - information about the IT Operations Directorate, system administrators, databases, IT support and cybersecurity functions;
+  - material relating to the internal Active Directory environment, including the `cgc.local` domain, several domain controllers, replication topology, Active Directory roles and administrative data, exposed in part by a PowerShell artifact;
+  - business processes related to BIETC/GECOP, importers, exporters, shippers, air-freight operations and infringement databases;
+  - documents concerning finance and accounting, communications, public relations, legal affairs and regional offices;
+  - internal organizational projects and draft structures.
 
 - **Analysis:**
 
-  **Observed:** The supplied source record associates krybit with cgcgabon.com and locates the target in Gabon. It is timestamped 26 August 2026 at 15:56:16, with no timezone shown. The current public website uses cgcgabon.ga but still displays institutional email addresses under @cgcgabon.com. No sample, volume, data type or technical element is provided.
+  Analysis of multiple file batches attributed to the disclosure claimed by KRYBIT indicates a large-scale, cross-department leak of internal documents. The corpus covers Human Resources, information systems, cybersecurity, databases, strategy, air-freight operations, BIETC/GECOP processes, Legal Affairs, Finance, institutional communications and some regional offices. The documents show strong consistency in format, terminology, hierarchy and internal processes, supporting very high confidence that they originated from the CGC.
 
-  **Assumption:** Continued institutional use of the domain in email addresses makes identification of the Council plausible. It does not confirm that the organisation's infrastructure was compromised.
+  **Observed:** Cross-analysis of multiple batches attributed to the disclosure claimed by KRYBIT identifies an internal document corpus spanning Human Resources, the IT Operations Directorate, Strategy and Multimodal Observatory, the Airport Office, Legal Affairs, Communications, Finance/Accounting and a regional office in Port-Gentil. Consistency across templates, job titles, hierarchies, internal references and processes strongly supports association of the documents with the CGC.
 
-  **Unknown:** The exact targeted domain or system, initial access, encryption, exfiltration, operational impact, victim confirmation and any disclosure remain unknown.
+  A PowerShell artifact containing `repadmin` and `dcdiag` output, dated 22 February 2026, exposes the `cgc.local` Active Directory domain, three domain controllers, replication topology and AD roles, concentrated on one controller. The replication summary in that snapshot reports zero failures; it describes only the state observed at that time. DOSI job descriptions detail database and system administration, information security, network and support responsibilities. The corpus also describes BIETC/GECOP processes, importers/exporters, manifests, cargo movements and infringements, as well as shipper assistance, air-freight regulation, finance, communications and regional functions.
+
+  The available material strongly corroborates disclosure of internal CGC documents and provides a detailed view of its organization, responsibilities and some technical and business processes. No clear-text credentials were observed in the examined material. The documents describe the functional model of the BIETC/GECOP and infringement databases, but no complete dump of these databases was observed.
+
+  System events containing repeated DCOM authentication-level errors also appear in the artifact. They may result from legitimate administration, maintenance or configuration incompatibility and are not, by themselves, evidence of malicious activity or a link to the ransomware.
+
+  **Assumption:** The breadth and diversity of the corpus are consistent with collection from a shared document repository, network share, document-management system or backup accessible across several departments. This remains a hypothesis: the artifacts do not identify the initial collection point. If exploited after initial access, the organizational and technical information could reduce reconnaissance effort and facilitate targeting of IT, HR, security and finance functions, partners and regional offices.
+
+  **Unknown:** The initial access vector, source system, full extent of exfiltration, existence of a complete BIETC/GECOP dump, ransomware execution, encryption mechanism, operational impact and any official victim confirmation remain unknown. Attribution to KRYBIT is based on the group's claim. The analyzed documents corroborate exfiltration but do not establish the vector, execution or encryption of the ransomware.
+
+  The consistency and diversity of the documents support **very high** confidence in the likely authenticity of the corpus and its association with the CGC. This assessment is not official confirmation of the incident or attribution to KRYBIT.
+- **Risks:**
+  - targeted spear-phishing against employees and executives;
+  - identity theft and social-benefit fraud;
+  - targeting or compromise of privileged accounts;
+  - social engineering against IT, HR, finance and management personnel;
+  - Business Email Compromise and executive impersonation;
+  - impersonation of official communications;
+  - targeting of importers, exporters, shippers and business partners;
+  - secondary exploitation of Active Directory information;
+  - economic intelligence based on legal, organizational and strategic documents;
+  - follow-on attacks against CGC regional offices and partners.
+
+- **AFRINTEL Assessment:**
+  - **Corpus internal consistency:** Very High
+  - **Likely authenticity of CGC documents:** Very High
+  - **Leak scope:** Multi-department
+  - **Organizational exposure:** Critical
+  - **Active Directory / infrastructure exposure:** Critical
+  - **Business-process exposure:** High to Critical
+  - **HR exposure:** High
+  - **Economic intelligence value:** High
+  - **Clear-text credentials:** Not observed in the material examined
+  - **Complete BIETC/GECOP dump:** Not observed at this time
+  - **Initial access vector:** Not established
+  - **Ransomware encryption:** Not demonstrated by the documents themselves
+  - **Official victim confirmation:** Not observed
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
 listing_first_observed_at: 2026-08-26T15:56:16
 listing_last_observed_at: 2026-08-26T15:56:16
-sample_status: none-observed
+sample_status: sample-reviewed
 deadline_at:
 deadline_status: not-stated
-disclosure_status: not-observed
+disclosure_status: release-reviewed
 victim_confirmation: none-observed
 negotiation_status: unknown
 ransom_payment_status: unknown

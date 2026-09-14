@@ -1,0 +1,464 @@
+{
+  "type": "bundle",
+  "id": "bundle--7405294d-38e5-5f78-96d6-f6ae4fb1a421",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "sainttrojan (displayed forum account; identity and group affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "Data attributed to Madinaty owners/residents (source organisation unidentified)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Real estate / Residential community / Property management.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Immobilier / Communauté résidentielle / Gestion immobilière.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "egypt"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée)",
+      "x_afrintel_sector_raw": "Immobilier / Communauté résidentielle / Gestion immobilière",
+      "x_afrintel_sector_raw_en": "Real estate / Residential community / Property management",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "AFRINTEL September 2026 incident 01: Data attributed to Madinaty owners/residents (source organisation unidentified)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Data attributed to Madinaty owners/residents (source organisation unidentified) in Egypt on 04 September 2026. The source actor is listed as sainttrojan (displayed forum account; identity and group affiliation unverified). Status: Claim - Data Sample Published. Sector: Real estate / Residential community / Property management. Source summary: Madinaty is a residential urban development in Egypt that Talaat Moustafa Group presents among its projects in the country. This establishes geographic context; it does not identify the organisation that collected or held the data, or confirm that Talaat Moustafa Group was compromised. (Talaat Moustafa Group overview)\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée) en Égypte, à la date du 04 septembre 2026. L'acteur source est indiqué comme sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées). Statut : Claim - Data Sample Published. Secteur : Immobilier / Communauté résidentielle / Gestion immobilière. Résumé de la source : Madinaty est un projet urbain résidentiel en Égypte que le groupe Talaat Moustafa présente parmi ses projets dans le pays. Cette information situe le contexte géographique ; elle ne permet pas d'identifier l'organisation ayant collecté ou détenu les données ni de confirmer que le groupe Talaat Moustafa a été compromis. (Présentation du groupe Talaat Moustafa)",
+      "first_seen": "2026-09-04T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "egypt"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Immobilier / Communauté résidentielle / Gestion immobilière",
+      "x_afrintel_sector_raw_en": "Real estate / Residential community / Property management",
+      "x_afrintel_actor": "sainttrojan (displayed forum account; identity and group affiliation unverified)",
+      "x_afrintel_actor_fr": "sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées)",
+      "x_afrintel_date_display": "04 septembre 2026",
+      "x_afrintel_date_display_en": "04 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f7ddda3c-90f9-526b-8113-49e1288ecc50",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
+      "target_ref": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--34909cca-4cbc-5587-818d-395835ef780d",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
+      "target_ref": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d42ed552-56a1-5ac9-bb6c-761a88996d1a",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
+      "target_ref": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "xNov",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "Centre Atlantique Formation",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Education / Vocational and professional training.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Éducation / Formation professionnelle.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://atlantique.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Centre Atlantique Formation",
+      "x_afrintel_sector_raw": "Éducation / Formation professionnelle",
+      "x_afrintel_sector_raw_en": "Education / Vocational and professional training",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "AFRINTEL September 2026 incident 02: Centre Atlantique Formation",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Centre Atlantique Formation in Morocco on 06 September 2026. The source actor is listed as xNov. Status: Claim - Data Sample Published. Sector: Education / Vocational and professional training. Source summary: Centre Atlantique Formation is a Moroccan vocational and professional training organisation offering practical training in several fields through multiple centres. Observed records reference automotive diagnostics, accounting, graphic design, cooking, pastry, hairdressing, fashion design, office computing, welding, plumbing, medical assistance and other vocational courses.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Centre Atlantique Formation en Maroc, à la date du 06 septembre 2026. L'acteur source est indiqué comme xNov. Statut : Claim - Data Sample Published. Secteur : Éducation / Formation professionnelle. Résumé de la source : Centre Atlantique Formation est un organisme marocain de formation professionnelle proposant des formations pratiques dans plusieurs domaines et au sein de différents centres. Les enregistrements observés font notamment référence au diagnostic automobile, à la comptabilité, l'infographie, la cuisine, la pâtisserie, la coiffure, au stylisme et modélisme, à l'informatique bureautique, la soudure, la plomberie et l'assistance médicale.",
+      "first_seen": "2026-09-06T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://atlantique.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Éducation / Formation professionnelle",
+      "x_afrintel_sector_raw_en": "Education / Vocational and professional training",
+      "x_afrintel_actor": "xNov",
+      "x_afrintel_actor_fr": "xNov",
+      "x_afrintel_date_display": "06 septembre 2026",
+      "x_afrintel_date_display_en": "06 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--96b3582a-c515-58b2-bdaf-7fe67898fe37",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
+      "target_ref": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--53e3e516-c6bf-51c7-90fd-ebe80dd6a98f",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
+      "target_ref": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c84aa993-2cdb-5329-9169-7e0e62bd3d7d",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
+      "target_ref": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--9d157da4-0017-56cd-a55b-f9a79ba0e2b5",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "Badr University in Cairo (BUC)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Education / Higher education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Éducation / Enseignement supérieur.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "egypt"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://buc.edu.eg"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "Badr University in Cairo (BUC)",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur",
+      "x_afrintel_sector_raw_en": "Education / Higher education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--6a1b14d2-65c5-502f-857f-fd38a2107414",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "name": "AFRINTEL September 2026 incident 03: Badr University in Cairo (BUC)",
+      "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Badr University in Cairo (BUC) in Egypt on 09 September 2026. No actor attribution is recorded. Status: Claim - Data Sample Published. Sector: Education / Higher education. Source summary: Badr University in Cairo (BUC) is an Egyptian higher education institution located in Badr City. Its official website presents its programmes and services, including admissions processes and a student portal.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Badr University in Cairo (BUC) en Égypte, à la date du 09 septembre 2026. Aucune attribution à un acteur n'est enregistrée. Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement supérieur. Résumé de la source : Badr University in Cairo (BUC) est un établissement d'enseignement supérieur égyptien situé à Badr City. Son site officiel présente ses programmes et services, notamment des démarches d'admission et un portail étudiant.",
+      "first_seen": "2026-09-09T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "unattributed",
+        "egypt"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://buc.edu.eg"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur",
+      "x_afrintel_sector_raw_en": "Education / Higher education",
+      "x_afrintel_actor": "Unknown",
+      "x_afrintel_actor_fr": "Unknown",
+      "x_afrintel_date_display": "09 septembre 2026",
+      "x_afrintel_date_display_en": "09 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3ebbc461-b642-5239-843d-af3dae63a0c8",
+      "created": "2026-09-13T20:03:37Z",
+      "modified": "2026-09-13T20:03:37Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--6a1b14d2-65c5-502f-857f-fd38a2107414",
+      "target_ref": "identity--9d157da4-0017-56cd-a55b-f9a79ba0e2b5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}
