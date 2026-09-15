@@ -15,7 +15,7 @@
 
 ## 1. Synthèse exécutive
 
-Le corpus AFRINTEL d’août 2026 comprend **29 cas / observations documentés dans 10 pays** : **17 publications ou cas ransomware (58,6 %)**, **11 fuites de données (37,9 %)** et **1 vente d’accès (3,4 %)**. L’Afrique du Sud concentre **11 fiches (37,9 %)**, devant l’Égypte avec **4**, puis l’Algérie et le Maroc avec **3** chacun. Le gouvernement et l’administration représentent **6 fiches**, la finance et la banque **6**, et les ressources humaines / recrutement **3**. KRYBIT est le libellé d’acteur le plus fréquent, associé à **6 publications ransomware**. Ces proportions décrivent le corpus AFRINTEL et ne constituent pas une estimation de la fréquence réelle des cyberattaques par pays ou secteur.
+Le corpus AFRINTEL d’août 2026 comprend **29 cas ou observations documentés dans 10 pays** : **17 publications ou cas ransomware (58,6 %)**, **11 fuites de données (37,9 %)** et **1 vente d’accès (3,4 %)**. L’Afrique du Sud concentre **11 fiches (37,9 %)**, devant l’Égypte avec **4**, puis l’Algérie et le Maroc avec **3** chacun. Le gouvernement et l’administration représentent **6 fiches**, la finance et la banque **6**, et les ressources humaines / recrutement **3**. KRYBIT est le libellé d’acteur le plus fréquent, associé à **6 publications ransomware**. Ces proportions décrivent le corpus AFRINTEL et ne constituent pas une estimation de la fréquence réelle des cyberattaques par pays ou secteur.
 
 La maturité des preuves est contrastée : **13 fiches** portent le statut `Claim - Data Sample Published`, **11** le statut `Claim - Unverified`, **3** le statut `Data Fully Published` et **2** le statut `Victim Confirmed`. Le Furniture Bargaining Council a reconnu un chiffrement de serveurs et DC Partner a publiquement confirmé avoir subi une attaque ransomware. Les analyses consignées pour The Courier Guy, Daily Trust et le Conseil Gabonais des Chargeurs décrivent respectivement des données de paiement, un classeur de réinitialisation de comptes et des documents internes incluant des informations d’infrastructure. Les publications relatives à RAMED et à la DGSN/DGST exposent, dans les fichiers examinés, des données d’identité et des informations administratives sensibles.
 
@@ -140,7 +140,7 @@ pie showData
 
 ```mermaid
 xychart-beta
-    title "Ransomware et fuites / ventes d’accès par pays — août 2026"
+    title "Ransomware et fuites / ventes d’accès par pays: août 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
     y-axis "Fiches" 0 --> 10
     bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
@@ -151,7 +151,7 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-    title "Ransomware par pays — août 2026"
+    title "Ransomware par pays: août 2026"
     x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
     y-axis "Fiches ransomware" 0 --> 10
     bar [9, 2, 1, 2, 1, 1, 1]
@@ -161,7 +161,7 @@ L’Afrique du Sud concentre 9 des 17 fiches ransomware du corpus. Les autres pa
 
 ```mermaid
 xychart-beta
-    title "Fuites de données et ventes d’accès par pays — août 2026"
+    title "Fuites de données et ventes d’accès par pays: août 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "LY"]
     y-axis "Fiches Data Leak / Access Sale" 0 --> 4
     bar [2, 2, 3, 2, 2, 1]
@@ -185,7 +185,7 @@ Barres régionales : **█ = 1 fiche**, selon le pays de rattachement de chaque 
 
 ```mermaid
 xychart-beta
-    title "Fiches par région — août 2026"
+    title "Fiches par région: août 2026"
     x-axis ["Afrique du Nord", "Afrique australe", "Afrique de l’Ouest", "Afrique centrale", "Afrique de l’Est", "Océan Indien"]
     y-axis "Fiches" 0 --> 12
     bar [11, 11, 2, 2, 2, 1]
@@ -317,7 +317,7 @@ Barres sectorielles : **█ = 1 fiche** attribuée au secteur normalisé.
 
 ```mermaid
 xychart-beta
-    title "Fiches par secteur normalisé — août 2026"
+    title "Fiches par secteur normalisé: août 2026"
     x-axis ["GOV", "FIN", "HR", "REST", "ECOM", "ENG", "FOOD", "HLTH", "LAB", "MEDIA", "PLAST", "RE", "SPORT", "TEL", "TRANS", "TRAVEL"]
     y-axis "Fiches" 0 --> 7
     bar [6, 6, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -360,7 +360,7 @@ La concentration gouvernementale et financière atteint **12 fiches sur 29 (41,4
 
 ```mermaid
 xychart-beta
-    title "Libellés d’acteurs associés à plusieurs fiches — août 2026"
+    title "Libellés d’acteurs associés à plusieurs fiches: août 2026"
     x-axis ["KRYBIT", "Orova", "exfilar", "incransom", "medusalocker", "thegentlemen"]
     y-axis "Fiches" 0 --> 7
     bar [6, 2, 2, 2, 2, 2]
@@ -407,9 +407,9 @@ Les cinq cas suivants sont retenus parmi les fiches d’impact **Level 4**, avec
 
 ### Tendances observées
 
- Les documents examinés chez The Courier Guy, le FBC, le CGC et ASHA associent des données administratives à des informations financières, RH ou techniques. Une publication de données peut donc créer plusieurs risques secondaires, même lorsque le mode d’acquisition reste inconnu. Les cas RAMED, DGSN/DGST, DGRSDT et EFA illustrent la sensibilité durable des identifiants et documents administratifs. Les publications mpowa.mobi et SnapStar Talent montrent également l’intérêt des acteurs pour les données de candidature et les ressources cloud ; le recours à un même vecteur n’est pas démontré.
+Les documents examinés chez The Courier Guy, le FBC, le CGC et ASHA associent des données administratives à des informations financières, RH ou techniques. Une publication de données peut donc créer plusieurs risques secondaires, même lorsque le mode d’acquisition reste inconnu. Les cas RAMED, DGSN/DGST, DGRSDT et EFA illustrent la sensibilité durable des identifiants et documents administratifs. Les publications mpowa.mobi et SnapStar Talent montrent également l’intérêt des acteurs pour les données de candidature et les ressources cloud ; le recours à un même vecteur n’est pas démontré.
 
-Les écarts entre volume annoncé et couverture examinée constituent un autre constat transversal : fichiers nuls chez ASHA, identifiants de commande répétés chez Afribaba, candidatures multiples par profil chez SnapStar Talent et recoupements **partiels et hétérogènes** entre les fichiers DGSN/DGST. Un volume publié ne permet pas, seul, de compter les personnes touchées. Le cas DGSN/DGST montre également qu’un corpus peut contenir des données authentiquement associées à une population sans que son **système source** soit établi ; la déclaration officielle du 27 août contredit explicitement l’hypothèse d’une intrusion directe, tandis que les différences de structure et d’identifiants entre fichiers rendent plausible — sans la prouver — une agrégation ou un repackaging.
+Les écarts entre volume annoncé et couverture examinée constituent un autre constat transversal : fichiers nuls chez ASHA, identifiants de commande répétés chez Afribaba, candidatures multiples par profil chez SnapStar Talent et recoupements **partiels et hétérogènes** entre les fichiers DGSN/DGST. Un volume publié ne permet pas, seul, de compter les personnes touchées. Le cas DGSN/DGST rappelle qu’un corpus peut contenir des données authentiquement liées à une population sans provenir pour autant du système auquel elles sont associées. Dans sa déclaration du 27 août, le pôle DGSN-DGST a nié toute intrusion directe. Les différences de structure et d’identifiants entre les fichiers sont compatibles avec une agrégation ou un repackaging, mais ne suffisent pas à l’établir.
 
 ### Comparaison factuelle avec juillet 2026
 
@@ -510,7 +510,7 @@ Ces limites doivent accompagner toute réutilisation des graphiques et pourcenta
 
 ### 12.3 Conclusion
 
-La collecte d’août 2026 rassemble **29 cas / observations documentés : 17 publications ou cas ransomware, 11 fuites de données et 1 vente d’accès**. L’Afrique du Sud et l’Afrique du Nord concentrent les fiches, tandis que les données administratives, financières et de personnel dominent les risques décrits. Les analyses d’échantillons rendent plusieurs expositions tangibles ; elles ne permettent pas de généraliser les volumes, les vecteurs ou les attributions techniques.
+Le corpus d’août 2026 compte **29 fiches : 17 cas ransomware, 11 fuites de données et 1 vente d’accès**. L’Afrique du Sud et l’Afrique du Nord concentrent les fiches, tandis que les données administratives, financières et de personnel dominent les risques décrits. Les analyses d’échantillons rendent plusieurs expositions tangibles ; elles ne permettent pas de généraliser les volumes, les vecteurs ou les attributions techniques.
 
 Les décisions défensives doivent tenir compte du niveau de preuve propre à chaque cas et de sa chronologie. Consulter les [fiches françaises](./victims_FR.md), leur [version anglaise](./victims.md) et les [statistiques associées](../../../statistics/2026/08-august/README_FR.md).
 

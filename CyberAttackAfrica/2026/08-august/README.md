@@ -15,7 +15,7 @@
 
 ## 1. Executive summary
 
-The AFRINTEL August 2026 corpus contains **29 documented cases / observations across 10 countries**: **17 ransomware publications or cases (58.6%)**, **11 data leaks (37.9%)** and **1 access sale (3.4%)**. South Africa accounts for **11 records (37.9%)**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **6 records**, finance and banking for **6**, and human resources / recruitment for **3**. KRYBIT is the most frequent actor label, associated with **6 ransomware publications**. These proportions describe the AFRINTEL corpus and are not estimates of the real frequency of cyberattacks by country or sector.
+The AFRINTEL August 2026 corpus contains **29 documented cases or observations across 10 countries**: **17 ransomware publications or cases (58.6%)**, **11 data leaks (37.9%)** and **1 access sale (3.4%)**. South Africa accounts for **11 records (37.9%)**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **6 records**, finance and banking for **6**, and human resources / recruitment for **3**. KRYBIT is the most frequent actor label, associated with **6 ransomware publications**. These proportions describe the AFRINTEL corpus and are not estimates of the real frequency of cyberattacks by country or sector.
 
 Evidence maturity varies: **13 records** carry `Claim - Data Sample Published`, **11** carry `Claim - Unverified`, **3** carry `Data Fully Published` and **2** carry `Victim Confirmed`. The Furniture Bargaining Council acknowledged server encryption and DC Partner publicly confirmed that it had suffered a ransomware attack. The analyses recorded for The Courier Guy, Daily Trust and the Conseil Gabonais des Chargeurs describe payment data, an account-reset workbook and internal documents containing infrastructure information, respectively. Files examined in the RAMED and DGSN/DGST cases contain sensitive identity and administrative information.
 
@@ -140,7 +140,7 @@ pie showData
 
 ```mermaid
 xychart-beta
-    title "Ransomware and leaks / access sales by country — August 2026"
+    title "Ransomware and leaks / access sales by country: August 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
     y-axis "Records" 0 --> 10
     bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
@@ -151,7 +151,7 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-    title "Ransomware by country — August 2026"
+    title "Ransomware by country: August 2026"
     x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
     y-axis "Ransomware records" 0 --> 10
     bar [9, 2, 1, 2, 1, 1, 1]
@@ -161,7 +161,7 @@ South Africa accounts for 9 of the corpus’s 17 ransomware records. Each of the
 
 ```mermaid
 xychart-beta
-    title "Data leaks and access sales by country — August 2026"
+    title "Data leaks and access sales by country: August 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "LY"]
     y-axis "Data Leak / Access Sale records" 0 --> 4
     bar [2, 2, 3, 2, 2, 1]
@@ -185,7 +185,7 @@ Regional bars: **█ = 1 record**, based on each record’s assigned country.
 
 ```mermaid
 xychart-beta
-    title "Records by region — August 2026"
+    title "Records by region: August 2026"
     x-axis ["North Africa", "Southern Africa", "West Africa", "Central Africa", "East Africa", "Indian Ocean"]
     y-axis "Records" 0 --> 12
     bar [11, 11, 2, 2, 2, 1]
@@ -317,7 +317,7 @@ Sector bars: **█ = 1 record** assigned to the normalised sector.
 
 ```mermaid
 xychart-beta
-    title "Records by normalised sector — August 2026"
+    title "Records by normalised sector: August 2026"
     x-axis ["GOV", "FIN", "HR", "REST", "ECOM", "ENG", "FOOD", "HLTH", "LAB", "MEDIA", "PLAST", "RE", "SPORT", "TEL", "TRANS", "TRAVEL"]
     y-axis "Records" 0 --> 7
     bar [6, 6, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -360,7 +360,7 @@ Government and financial sectors together account for **12 of 29 records (41.4%)
 
 ```mermaid
 xychart-beta
-    title "Actor labels associated with multiple records — August 2026"
+    title "Actor labels associated with multiple records: August 2026"
     x-axis ["KRYBIT", "Orova", "exfilar", "incransom", "medusalocker", "thegentlemen"]
     y-axis "Records" 0 --> 7
     bar [6, 2, 2, 2, 2, 2]
@@ -407,9 +407,9 @@ The following five cases are selected from records carrying **Level 4** impact a
 
 ### Observed trends
 
- Material examined for The Courier Guy, FBC, CGC and ASHA combines administrative data with financial, HR or technical information. A data release can therefore create several secondary risks even when acquisition remains unknown. RAMED, DGSN/DGST, DGRSDT and EFA illustrate the lasting sensitivity of identifiers and administrative documents. The mpowa.mobi and SnapStar Talent publications also show actors’ interest in application data and cloud resources; a common access vector is not demonstrated.
+Material examined for The Courier Guy, FBC, CGC and ASHA combines administrative data with financial, HR or technical information. A data release can therefore create several secondary risks even when acquisition remains unknown. RAMED, DGSN/DGST, DGRSDT and EFA illustrate the lasting sensitivity of identifiers and administrative documents. The mpowa.mobi and SnapStar Talent publications also show actors’ interest in application data and cloud resources; a common access vector is not demonstrated.
 
-Differences between advertised volume and reviewed coverage are another recurring observation: null files at ASHA, repeated order identifiers at Afribaba, multiple applications per profile at SnapStar Talent and **partial, heterogeneous overlaps** across the DGSN/DGST files. Published volume alone cannot determine how many people are affected. The DGSN/DGST case also shows that a corpus can contain data genuinely associated with a population without its **source system** being established; the official 27 August statement explicitly contradicts the direct-intrusion hypothesis, while structural and identifier differences across the files make aggregation or repackaging plausible — without proving it.
+Differences between advertised volume and reviewed coverage are another recurring observation: null files at ASHA, repeated order identifiers at Afribaba, multiple applications per profile at SnapStar Talent and **partial, heterogeneous overlaps** across the DGSN/DGST files. Published volume alone cannot determine how many people are affected. The DGSN/DGST case is a reminder that data can be genuinely associated with a population without coming from the system named in the claim. In its 27 August statement, the DGSN-DGST pole denied any direct intrusion. Differences in file structure and identifiers are consistent with aggregation or repackaging, but do not establish either explanation.
 
 ### Factual comparison with July 2026
 
@@ -510,7 +510,7 @@ These limitations should accompany any reuse of the report's charts and percenta
 
 ### 12.3 Conclusion
 
-August 2026 collection contains **29 documented cases / observations: 17 ransomware publications or cases, 11 data leaks and 1 access sale**. South Africa and North Africa account for the largest shares of records, while administrative, financial and personnel data dominate the described risks. Sample analyses make several exposures tangible; they do not support generalisation about volumes, vectors or technical attribution.
+The August 2026 corpus contains **29 records: 17 ransomware cases, 11 data leaks and one access sale**. South Africa and North Africa account for the largest shares of records, while administrative, financial and personnel data dominate the described risks. Sample analyses make several exposures tangible; they do not support generalisation about volumes, vectors or technical attribution.
 
 Defensive decisions should reflect each case’s evidence level and chronology. Consult the [French records](./victims_FR.md), their [English version](./victims.md) and the [associated statistics](../../../statistics/2026/08-august/README.md).
 
