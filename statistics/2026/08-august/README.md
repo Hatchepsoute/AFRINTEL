@@ -15,7 +15,7 @@
 
 ## 1. Scope and counting
 
-These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 29 records collected in August with follow-up information recorded through 13 September 2026. The report is dated 14 September 2026. The 17 ransomware cases are assigned to August. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
+These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 29 records collected in August with follow-up information recorded through 13 September 2026. The 17 ransomware cases are assigned to August. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
 
 Each record contributes to one country: 29 incidents and 29 geographic occurrences. PAYGO is limited to the documented Kenyan scope. Hungry Lion remains assigned to South Africa with reservations about the targeted entity and country. DGSN/DGST counts as one event. The origin of the Afribaba sample remains uncertain. No record carries Under Investigation - Alleged.
 
@@ -77,9 +77,9 @@ Mauritius is assigned to the Indian Ocean separately from East Africa. West Afri
 
 | Normalised sector | Records | Share | Organisations / contexts |
 |---|---|---|---|
-| Government / Administration | 7 | 24.1% | Egyptian Local Services Portal; DGRSDT; Ministry of Commerce; mpowa.mobi; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) |
+| Government / Administration | 6 | 20.7% | Egyptian Local Services Portal; DGRSDT; Ministry of Commerce; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) |
 | Finance / Banking | 6 | 20.7% | SARB; ASHA Microfinance Bank; DC Partner; Unidentified PAYGO platform; SpearFin Ltd; CCA Bank |
-| Human Resources / Recruitment | 2 | 6.9% | AVANTA Maroc; SnapStar Talent |
+| Human Resources / Recruitment | 3 | 10.3% | AVANTA Maroc; SnapStar Talent; mpowa.mobi |
 | Restaurants / Quick-service restaurants | 2 | 6.9% | Hungry Lion; Rohloff Group |
 | E-commerce / Retail | 1 | 3.4% | Afribaba |
 | Engineering / Construction | 1 | 3.4% | Babcock Africa |
@@ -169,7 +169,7 @@ July’s 42 records and their types were checked in both languages. The comparis
 
 ## 9. CTI interpretation and checks
 
-Government and finance account for 13 records; North Africa and Southern Africa account for 22. Priority risks concern identity, payment and personnel data and internal documents.
+Government and finance account for 12 records; North Africa and Southern Africa account for 22. Priority risks concern identity, payment and personnel data and internal documents.
 
 Country sum = region sum = sector sum = type sum = actor-occurrence sum = **29**. Status, confidence and impact each total **29**, retaining unspecified values. No total of people or exfiltrated volumes is produced from heterogeneous samples.
 
