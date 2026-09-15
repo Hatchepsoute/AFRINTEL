@@ -15,7 +15,7 @@
 
 ## 1. Périmètre et comptage
 
-Ces statistiques dérivent du couple bilingue [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md), après contrôle de parité. Les données structurées sont déterminées une seule fois depuis la version française, puis réutilisées dans les deux langues. Le corpus contient 29 fiches collectées en août, avec les suivis consignés jusqu’au 13 septembre 2026. Le rapport est daté du 14 septembre 2026. Les 17 cas ransomware sont rattachés à août. Cinq fuites de données publiées en janvier, juin ou juillet ont été découvertes et intégrées en août, car les rapports mensuels clôturés ne sont pas modifiés rétroactivement ; leurs dates initiales restent conservées.
+Ces statistiques dérivent du couple bilingue [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md), après contrôle de parité. Les données structurées sont déterminées une seule fois depuis la version française, puis réutilisées dans les deux langues. Le corpus contient 29 fiches collectées en août, avec les suivis consignés jusqu’au 13 septembre 2026. Les 17 cas ransomware sont rattachés à août. Cinq fuites de données publiées en janvier, juin ou juillet ont été découvertes et intégrées en août, car les rapports mensuels clôturés ne sont pas modifiés rétroactivement ; leurs dates initiales restent conservées.
 
 Chaque fiche contribue à un seul pays : 29 incidents et 29 occurrences géographiques. PAYGO reste limité à la partie kényane documentée. Hungry Lion reste rattaché à l’Afrique du Sud sous réserve de l’entité et du pays visés. DGSN/DGST compte pour un seul événement. L’origine de l’échantillon Afribaba reste incertaine. Aucun cas n’est classé Under Investigation - Alleged.
 
@@ -77,9 +77,9 @@ Maurice est classée dans l’océan Indien, séparément de l’Afrique de l’
 
 | Secteur normalisé | Fiches | Part | Organisations / contextes |
 |---|---|---|---|
-| Gouvernement / Administration | 7 | 24,1 % | Portail des services locaux égyptiens; DGRSDT; Ministère du Commerce; mpowa.mobi; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) |
+| Gouvernement / Administration | 6 | 20,7 % | Portail des services locaux égyptiens; DGRSDT; Ministère du Commerce; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) |
 | Finance / Banque | 6 | 20,7 % | SARB; ASHA Microfinance Bank; DC Partner; Plateforme PAYGO non identifiée; SpearFin Ltd; CCA Bank |
-| Ressources humaines / Recrutement | 2 | 6,9 % | AVANTA Maroc; SnapStar Talent |
+| Ressources humaines / Recrutement | 3 | 10,3 % | AVANTA Maroc; SnapStar Talent; mpowa.mobi |
 | Restauration / Restauration rapide | 2 | 6,9 % | Hungry Lion; Rohloff Group |
 | E-commerce / Retail | 1 | 3,4 % | Afribaba |
 | Ingénierie / Construction | 1 | 3,4 % | Babcock Africa |
@@ -169,7 +169,7 @@ Les 42 fiches de juillet et leurs types ont été contrôlés dans les deux lang
 
 ## 9. Lecture CTI et contrôles
 
-Le gouvernement et la finance représentent 13 fiches ; l’Afrique du Nord et l’Afrique australe en représentent 22. Les risques prioritaires concernent les données d’identité, de paiement, de personnel et les documents internes.
+Le gouvernement et la finance représentent 12 fiches ; l’Afrique du Nord et l’Afrique australe en représentent 22. Les risques prioritaires concernent les données d’identité, de paiement, de personnel et les documents internes.
 
 Somme par pays = somme par région = somme par secteur = somme par type = somme des occurrences par acteur = **29**. Statut, confiance et impact totalisent chacun **29**, avec les valeurs non précisées conservées. Aucun cumul de personnes ou de volumes exfiltrés n’est produit à partir d’échantillons hétérogènes.
 
