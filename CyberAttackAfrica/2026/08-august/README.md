@@ -19,7 +19,7 @@ The AFRINTEL August 2026 corpus contains **29 documented cases / observations ac
 
 Evidence maturity varies: **13 records** carry `Claim - Data Sample Published`, **11** carry `Claim - Unverified`, **3** carry `Data Fully Published` and **2** carry `Victim Confirmed`. The Furniture Bargaining Council acknowledged server encryption and DC Partner publicly confirmed that it had suffered a ransomware attack. The analyses recorded for The Courier Guy, Daily Trust and the Conseil Gabonais des Chargeurs describe payment data, an account-reset workbook and internal documents containing infrastructure information, respectively. Files examined in the RAMED and DGSN/DGST cases contain sensitive identity and administrative information.
 
-The corpus contains **13 fewer records than July (-31.0%)**. The **17 ransomware cases** are assigned to August. **Five data leaks published earlier were discovered in August**, representing **5/29 records (17.2% of the corpus)** and **5/11 data leaks (45.5% of the Data Leak category)**. Because closed monthly reports are not modified retroactively, this difference measures documented collection and does not establish an equivalent decline in compromises across Africa. Operational priorities are protecting identities, administrative data and payments, and controlling access to databases and document repositories.
+The corpus contains **13 fewer records than July (-31.0%)**. The **17 ransomware attacks** occurred in August. **Five data leaks published earlier were discovered in August**, representing **5/29 records (17.2% of the corpus)** and **5/11 data leaks (45.5% of the Data Leak category)**. Because closed monthly reports are not modified retroactively, this difference measures documented collection and does not establish an equivalent decline in compromises across Africa. Operational priorities are protecting identities, administrative data and payments, and controlling access to databases and document repositories.
 
 Case-specific facts, sources and limitations are retained in the bilingual [victims_FR.md](./victims_FR.md) / [victims.md](./victims.md) pair.
 
@@ -53,63 +53,7 @@ August 2026 | ██████████████████████
 
 Monitoring covers Africa’s 54 countries. This report includes the **29 records in the August folder**, following FR/EN parity checks of structured fields. Sectors are normalised once from the French version, and the same data feeds both reports and the statistics. Each event receives one primary type among the nine AFRINTEL categories; secondary effects do not create additional records. Detailed period, chronology and counting rules are described in section 12.
 
-## 3. Global overview
-
-| Indicator | Value |
-|---|---|
-| Documented records | 29 |
-| Country assignments | 10 |
-| Normalised sectors | 16 |
-| Actor / publication labels | 19 |
-| Ransomware | 17 (58.6%) |
-| Data Leak | 11 (37.9%) |
-| Access Sale | 1 (3.4%) |
-
-The other six canonical types are zero: DDoS, Defacement, Account Takeover, System Intrusion, Malware and Operational Fraud. Their absence from collection does not mean no such events occurred in Africa. Percentages are rounded to one decimal place and may sum to 99.9% or 100.1%.
-
-```mermaid
-pie showData
-    title Distribution of 29 records, August 2026
-    "Ransomware" : 17
-    "Data Leak" : 11
-    "Access Sale" : 1
-```
-
-### 3.1 Country and incident-type distribution
-
-| Country | ISO code | Ransomware | Ransomware bar | Data Leak | Access Sale | Leak / access bar | Total | Share |
-|---|---|---:|---|---:|---:|---|---:|---:|
-| 🇿🇦 South Africa | ZA | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | 2 | 0 | 🟦🟦 | 11 | 37.9% |
-| 🇪🇬 Egypt | EG | 2 | 🟧🟧 | 2 | 0 | 🟦🟦 | 4 | 13.8% |
-| 🇩🇿 Algeria | DZ | 0 | - | 2 | 1 | 🟦🟦🟦 | 3 | 10.3% |
-| 🇲🇦 Morocco | MA | 1 | 🟧 | 2 | 0 | 🟦🟦 | 3 | 10.3% |
-| 🇰🇪 Kenya | KE | 0 | - | 2 | 0 | 🟦🟦 | 2 | 6.9% |
-| 🇳🇬 Nigeria | NG | 2 | 🟧🟧 | 0 | 0 | - | 2 | 6.9% |
-| 🇨🇲 Cameroon | CM | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| 🇬🇦 Gabon | GA | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| 🇱🇾 Libya | LY | 0 | - | 1 | 0 | 🟦 | 1 | 3.4% |
-| 🇲🇺 Mauritius | MU | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| **Total** |  | **17** | **🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧** | **11** | **1** | **🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦** | **29** | 100% |
-
-**Bar legend:** 🟧 Ransomware | 🟦 Data Leaks and Access Sales. Each square represents one record; the latter two categories are combined only in the blue bar. The other six canonical types are zero for every country.
-
-### 3.2 Regional distribution
-
-| Region | Ransomware | Data Leak | Access Sale | Total | Share | Bar |
-|---|---:|---:|---:|---:|---:|---|
-| North Africa | 3 | 7 | 1 | 11 | 37.9% | ███████████ |
-| Southern Africa | 9 | 2 | 0 | 11 | 37.9% | ███████████ |
-| West Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
-| Central Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
-| East Africa | 0 | 2 | 0 | 2 | 6.9% | ██ |
-| Indian Ocean | 1 | 0 | 0 | 1 | 3.4% | █ |
-| **Total** | 17 | 11 | 1 | **29** | 100% |  |
-
-Regional bars: **█ = 1 record**, based on each record’s assigned country.
-
-The regional convention separates the Indian Ocean, represented here by Mauritius, from East Africa. West Africa and Central Africa remain separate. North Africa and Southern Africa each account for 11 records, together **22 of 29 (75.9%)**.
-
-### 3.3 Evidence maturity
+### 2.1 Evidence profile
 
 | Dimension | Value | Records | Share |
 |---|---|---|---|
@@ -154,7 +98,102 @@ Impact:
 
 Confidence describes the assessment recorded in a victim file and is not synonymous with victim confirmation. Impact may describe potential risk associated with the data or organisation; it does not measure an observed loss. CGC retains the structured value `High`, although its documentary analysis describes strong confidence in the documents’ origin. RAMED remains included in type and sector counts, with `High` confidence and `Level 4` impact.
 
-### 3.4 Complete corpus timeline
+## 3. Global overview
+
+| Indicator | Value |
+|---|---|
+| Documented records | 29 |
+| Country assignments | 10 |
+| Normalised sectors | 16 |
+| Actor / publication labels | 19 |
+| Ransomware | 17 (58.6%) |
+| Data Leak | 11 (37.9%) |
+| Access Sale | 1 (3.4%) |
+
+The other six canonical types are zero: DDoS, Defacement, Account Takeover, System Intrusion, Malware and Operational Fraud. Their absence from collection does not mean no such events occurred in Africa. Percentages are rounded to one decimal place and may sum to 99.9% or 100.1%.
+
+```mermaid
+pie showData
+    title Distribution of 29 records, August 2026
+    "Ransomware" : 17
+    "Data Leak" : 11
+    "Access Sale" : 1
+```
+
+### 3.1 Country and incident-type distribution
+
+| Country | ISO code | Ransomware | Ransomware bar | Data Leak | Access Sale | Leak / access bar | Total | Share |
+|---|---|---:|---|---:|---:|---|---:|---:|
+| 🇿🇦 South Africa | ZA | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | 2 | 0 | 🟦🟦 | 11 | 37.9% |
+| 🇪🇬 Egypt | EG | 2 | 🟧🟧 | 2 | 0 | 🟦🟦 | 4 | 13.8% |
+| 🇩🇿 Algeria | DZ | 0 | - | 2 | 1 | 🟦🟦🟦 | 3 | 10.3% |
+| 🇲🇦 Morocco | MA | 1 | 🟧 | 2 | 0 | 🟦🟦 | 3 | 10.3% |
+| 🇰🇪 Kenya | KE | 0 | - | 2 | 0 | 🟦🟦 | 2 | 6.9% |
+| 🇳🇬 Nigeria | NG | 2 | 🟧🟧 | 0 | 0 | - | 2 | 6.9% |
+| 🇨🇲 Cameroon | CM | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
+| 🇬🇦 Gabon | GA | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
+| 🇱🇾 Libya | LY | 0 | - | 1 | 0 | 🟦 | 1 | 3.4% |
+| 🇲🇺 Mauritius | MU | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
+| **Total** |  | **17** | **🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧** | **11** | **1** | **🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦** | **29** | 100% |
+
+**Bar legend:** 🟧 Ransomware | 🟦 Data Leaks and Access Sales. Each square represents one record; the latter two categories are combined only in the blue bar. The other six canonical types are zero for every country.
+
+```mermaid
+xychart-beta
+    title "Ransomware and leaks / access sales by country — August 2026"
+    x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
+    y-axis "Records" 0 --> 10
+    bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
+    bar [2, 2, 3, 2, 2, 0, 0, 0, 1, 0]
+```
+
+**Series:** first bar = 🟧 Ransomware; second bar = 🟦 Data Leak + Access Sale. The chart reproduces the country occurrences in the table; these values do not measure national risk.
+
+```mermaid
+xychart-beta
+    title "Ransomware by country — August 2026"
+    x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
+    y-axis "Ransomware records" 0 --> 10
+    bar [9, 2, 1, 2, 1, 1, 1]
+```
+
+South Africa accounts for 9 of the corpus’s 17 ransomware records. Each of the other affected countries has one or two.
+
+```mermaid
+xychart-beta
+    title "Data leaks and access sales by country — August 2026"
+    x-axis ["ZA", "EG", "DZ", "MA", "KE", "LY"]
+    y-axis "Data Leak / Access Sale records" 0 --> 4
+    bar [2, 2, 3, 2, 2, 1]
+```
+
+Algeria has three records in these two categories (two Data Leaks and one Access Sale); the remaining occurrences are distributed across South Africa, Egypt, Morocco, Kenya and Libya.
+
+### 3.2 Regional distribution
+
+| Region | Ransomware | Data Leak | Access Sale | Total | Share | Bar |
+|---|---:|---:|---:|---:|---:|---|
+| North Africa | 3 | 7 | 1 | 11 | 37.9% | ███████████ |
+| Southern Africa | 9 | 2 | 0 | 11 | 37.9% | ███████████ |
+| West Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
+| Central Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
+| East Africa | 0 | 2 | 0 | 2 | 6.9% | ██ |
+| Indian Ocean | 1 | 0 | 0 | 1 | 3.4% | █ |
+| **Total** | 17 | 11 | 1 | **29** | 100% |  |
+
+Regional bars: **█ = 1 record**, based on each record’s assigned country.
+
+```mermaid
+xychart-beta
+    title "Records by region — August 2026"
+    x-axis ["North Africa", "Southern Africa", "West Africa", "Central Africa", "East Africa", "Indian Ocean"]
+    y-axis "Records" 0 --> 12
+    bar [11, 11, 2, 2, 2, 1]
+```
+
+The regional convention separates the Indian Ocean, represented here by Mauritius, from East Africa. West Africa and Central Africa remain separate. North Africa and Southern Africa each account for 11 records, together **22 of 29 (75.9%)**.
+
+### 3.3 Complete corpus timeline
 
 The August reference below is the publication, source detection or AFRINTEL discovery date documented in the record. **It is not automatically the compromise date.** “Not specified” means that no initial publication date is recorded in the available material.
 
@@ -252,7 +291,7 @@ Earlier publications discovered in August remain relevant to protecting individu
 
 One offer is recorded, attributed to **Florence** and targeting the **Algerian Ministry of Commerce**. The **5 August** publication advertises VPN access for **USD 500**, without showing an endpoint, account, privileges or evidence of functionality. The observed fact is the sale offer. Effective access to the ministry’s environment and any subsequent use remain unknown. The record retains `Access Sale` and `Claim - Unverified`.
 
-## 5. Sectoral impact
+## 5. Most affected sectors
 
 | Normalised sector | Records | Share | Organisations / contexts | Bar |
 |---|---:|---:|---|---|
@@ -276,23 +315,23 @@ One offer is recorded, attributed to **Florence** and targeting the **Algerian M
 
 Sector bars: **█ = 1 record** assigned to the normalised sector.
 
+```mermaid
+xychart-beta
+    title "Records by normalised sector — August 2026"
+    x-axis ["GOV", "FIN", "HR", "REST", "ECOM", "ENG", "FOOD", "HLTH", "LAB", "MEDIA", "PLAST", "RE", "SPORT", "TEL", "TRANS", "TRAVEL"]
+    y-axis "Records" 0 --> 7
+    bar [6, 6, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+```
+
+**Sector codes:** GOV = Government / Administration; FIN = Finance / Banking; HR = Human Resources / Recruitment; REST = Restaurants; ECOM = E-commerce; ENG = Engineering; FOOD = Food manufacturing; HLTH = Healthcare; LAB = Labour relations / governance; MEDIA = Media; PLAST = Plastics; RE = Real Estate; SPORT = Sports; TEL = Telecommunications; TRANS = Transport; TRAVEL = Travel.
+
+Government and finance lead with six records each. Human Resources / Recruitment is the third-largest group with three. Each of the remaining twelve sectors has one record.
+
 Normalisation places SARB, microfinance, payment distribution, PAYGO financing and fund administration under **Finance / Banking**. DGRSDT and CGC fall under **Government / Administration**; mpowa.mobi is classified under **Human Resources / Recruitment** because its primary function is youth employment services, despite its link to a public initiative. ADG Healthcare falls under **Healthcare / Medical**, with pharmaceutical activity. FBC remains in labour relations and sector governance rather than being counted as a furniture manufacturer.
 
 Government and financial sectors together account for **12 of 29 records (41.4%)**. The best-documented risks concern secondary exploitation of identity, personnel, payment and internal-process data. Babcock Africa’s critical-sector activities and the point-of-sale systems mentioned for Hungry Lion warrant targeted checks, but the records do not establish disruption to those environments.
 
-### 5.1 Cases prioritised for operational review
-
-The following five cases are selected from records carrying **Level 4** impact and victim confirmation or **High / Very High** confidence. This is not an exhaustive severity ranking.
-
-| Case | Basis for priority | Defensive implication |
-|---|---|---|
-| Furniture Bargaining Council | Victim Confirmed, Very High; acknowledged encryption and reviewed sensitive corpus | Coordinate recovery, investigation and protection of affected individuals |
-| mpowa.mobi | Data Fully Published, Very High; CVs, geolocation and API-key entries in the export | Correct data access controls and assess exposed keys |
-| DGSN / DGST | Data Fully Published in the sense of the actor-presented release; High for association of a significant part of the corpus, but heterogeneous cross-file overlaps and officially disputed direct provenance | Protect personnel against impersonation while keeping provenance and the repackaging hypothesis open |
-| Daily Trust | Claim - Data Sample Published, High; account-reset workbook | Identify represented accounts and secure their authentication lifecycle |
-| Conseil Gabonais des Chargeurs | Claim - Data Sample Published, High; business documents and infrastructure information | Reduce document exposure and review privileged access |
-
-## 6. Actor and publication profile
+## 6. Leading actors and sources
 
 | Actor / author | Type | Records | Targets |
 |---|---|---|---|
@@ -317,15 +356,14 @@ The following five cases are selected from records carrying **Level 4** impact a
 | anisanas2 | Data Leak | 1 | DGRSDT (DZ) |
 | **Total** |  | **29** |  |
 
-**Actors associated with multiple records (█ = 1 record):**
+**Actors associated with multiple records:**
 
-```text
-KRYBIT             | ██████ 6
-Orova              | ██ 2
-exfilar            | ██ 2
-incransom          | ██ 2
-medusalocker       | ██ 2
-thegentlemen       | ██ 2
+```mermaid
+xychart-beta
+    title "Actor labels associated with multiple records — August 2026"
+    x-axis ["KRYBIT", "Orova", "exfilar", "incransom", "medusalocker", "thegentlemen"]
+    y-axis "Records" 0 --> 7
+    bar [6, 2, 2, 2, 2, 2]
 ```
 
 The other 13 labels appear once each and are listed in the complete table.
@@ -353,11 +391,31 @@ This view summarises signals present in the **29 collected records**. It is neit
 | 🇱🇾 Libya | Limited Albarq subscription-data extract | Original file and overall volume unavailable |
 | 🇲🇺 Mauritius | SpearFin KYC and investment previews | Original files unavailable and claimed volume unverified |
 
-## 7. Trends and intelligence gaps
+### 6.2 Cases requiring follow-up
 
-**Observed trends.** Material examined for The Courier Guy, FBC, CGC and ASHA combines administrative data with financial, HR or technical information. A data release can therefore create several secondary risks even when acquisition remains unknown. RAMED, DGSN/DGST, DGRSDT and EFA illustrate the lasting sensitivity of identifiers and administrative documents. The mpowa.mobi and SnapStar Talent publications also show actors’ interest in application data and cloud resources; a common access vector is not demonstrated.
+The following five cases are selected from records carrying **Level 4** impact and victim confirmation or **High / Very High** confidence. This is not an exhaustive severity ranking.
+
+| Case | Basis for priority | Defensive implication |
+|---|---|---|
+| Furniture Bargaining Council | Victim Confirmed, Very High; acknowledged encryption and reviewed sensitive corpus | Coordinate recovery, investigation and protection of affected individuals |
+| mpowa.mobi | Data Fully Published, Very High; CVs, geolocation and API-key entries in the export | Correct data access controls and assess exposed keys |
+| DGSN / DGST | Data Fully Published in the sense of the actor-presented release; High for association of a significant part of the corpus, but heterogeneous cross-file overlaps and officially disputed direct provenance | Protect personnel against impersonation while keeping provenance and the repackaging hypothesis open |
+| Daily Trust | Claim - Data Sample Published, High; account-reset workbook | Identify represented accounts and secure their authentication lifecycle |
+| Conseil Gabonais des Chargeurs | Claim - Data Sample Published, High; business documents and infrastructure information | Reduce document exposure and review privileged access |
+
+## 7. Key trends and intelligence gaps
+
+### Observed trends
+
+ Material examined for The Courier Guy, FBC, CGC and ASHA combines administrative data with financial, HR or technical information. A data release can therefore create several secondary risks even when acquisition remains unknown. RAMED, DGSN/DGST, DGRSDT and EFA illustrate the lasting sensitivity of identifiers and administrative documents. The mpowa.mobi and SnapStar Talent publications also show actors’ interest in application data and cloud resources; a common access vector is not demonstrated.
 
 Differences between advertised volume and reviewed coverage are another recurring observation: null files at ASHA, repeated order identifiers at Afribaba, multiple applications per profile at SnapStar Talent and **partial, heterogeneous overlaps** across the DGSN/DGST files. Published volume alone cannot determine how many people are affected. The DGSN/DGST case also shows that a corpus can contain data genuinely associated with a population without its **source system** being established; the official 27 August statement explicitly contradicts the direct-intrusion hypothesis, while structural and identifier differences across the files make aggregation or repackaging plausible — without proving it.
+
+### Factual comparison with July 2026
+
+The comparison table in section 1.1 shows a decrease from **42 to 29 records (-31.0%)**, primarily reflecting fewer documented data leaks (18 to 11) and access sales (6 to 1). Ransomware records move from 18 to 17; all **17 recorded ransomware attacks occurred in August**. Five earlier leaks were discovered in August and remain in the closed monthly corpus. These figures compare AFRINTEL collections, not the actual number of compromises that occurred in each month.
+
+### Intelligence gaps
 
 | Priority gap | Effect on assessment | Evidence needed |
 |---|---|---|
@@ -369,7 +427,7 @@ Differences between advertised volume and reviewed coverage are another recurrin
 
 The consulted victim records do not contain public DFIR reports detailing the ransomware intrusion chains. This limited visibility is a major gap for initial access, exfiltration and remediation. Leak-site observations and sample analyses reduce some uncertainty about disclosed data without replacing that technical evidence. An organisation’s public silence does not prove payment, concealment or the absence of an incident.
 
-## 8. MITRE ATT&CK mapping hypotheses
+## 8. Contextual MITRE ATT&CK mappings (hypotheses)
 
 The following references are solely **analytical hypotheses intended to support defensive planning**. They do not demonstrate that the actors used these techniques. The underlying facts may be observed or confirmed, but their association with MITRE ATT&CK remains hypothetical without DFIR reporting that establishes the technical chains.
 
@@ -424,7 +482,7 @@ Thresholds should account for legitimate processing, backups and business export
 
 The report describes August collection, incorporating analyses and follow-up information already recorded in the victim files through **13 September 2026**. Observations come from ransomware leak sites, forums, messaging channels, public sources and local sample analyses. The report summarises documented findings; it is not a fresh examination of raw files or a new visit to actor sites.
 
-The **17 ransomware cases** are assigned to August based on the recorded observations. Five data leaks published earlier were discovered in August: the PAYGO platform (16 January), the Egyptian Local Services Portal (5 June), Albarq (9 June), DGRSDT (8 July) and EFA (26 July). Because closed monthly reports are not reopened, these cases remain in the August discovery corpus with their initial dates preserved and are not presented as events that occurred in August. SpearFin is an 18 August ransomware publication with an actor-alleged incident date of 26 June. DGRSDT lists 8 July as the supplied incident date; Albarq lists June as the publication period, while access remains undated. FBC places the incident in August without an exact day. The actor published RAMED on 22 August. Section 3.4 provides the full timeline.
+The **17 ransomware attacks** in the corpus occurred in August, according to the timeline validated for this report. Five data leaks published earlier were discovered in August: the PAYGO platform (16 January), the Egyptian Local Services Portal (5 June), Albarq (9 June), DGRSDT (8 July) and EFA (26 July). Because closed monthly reports are not reopened, these cases remain in the August discovery corpus with their initial dates preserved and are not presented as events that occurred in August. The SpearFin record gives an actor-alleged 26 June date for the claimed leak, while the ransomware publication was observed on 18 August; the date is uncorroborated and its relationship to the attack timeline remains unresolved. DGRSDT lists 8 July as the supplied incident date; Albarq lists June as the publication period, while access remains undated. FBC places the incident in August without an exact day. The actor published RAMED on 22 August. Section 3.3 provides the full timeline.
 
 Each record contributes to one country assignment: **29 records = 29 country occurrences**. The PAYGO scope is limited to the described Kenyan operations; the other markets mentioned are not added. Hungry Lion remains assigned to South Africa in line with its record, with an explicit reservation about the targeted entity and country. DGSN/DGST counts as one event despite naming two institutions. A company’s regional operations do not, by themselves, establish incidents in every country where it operates.
 
