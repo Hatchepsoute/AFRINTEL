@@ -100,138 +100,154 @@ Confidence describes the assessment recorded in a victim file and is not synonym
 
 ## 3. Global overview
 
-| Indicator | Value |
-|---|---|
-| Documented records | 29 |
-| Country assignments | 10 |
-| Normalised sectors | 16 |
-| Actor / publication labels | 19 |
-| Ransomware | 17 (58.6%) |
-| Data Leak | 11 (37.9%) |
-| Access Sale | 1 (3.4%) |
-
-The other six canonical types are zero: DDoS, Defacement, Account Takeover, System Intrusion, Malware and Operational Fraud. Their absence from collection does not mean no such events occurred in Africa. Percentages are rounded to one decimal place and may sum to 99.9% or 100.1%.
+| Country | Occurrences | Bar |
+| :--- | ---: | :--- |
+| 🇿🇦 South Africa | 11 | ███████████ |
+| 🇪🇬 Egypt | 4 | ████ |
+| 🇩🇿 Algeria | 3 | ███ |
+| 🇲🇦 Morocco | 3 | ███ |
+| 🇰🇪 Kenya | 2 | ██ |
+| 🇳🇬 Nigeria | 2 | ██ |
+| 🇨🇲 Cameroon | 1 | █ |
+| 🇬🇦 Gabon | 1 | █ |
+| 🇱🇾 Libya | 1 | █ |
+| 🇲🇺 Mauritius | 1 | █ |
+| **Geographic total** | **29** | - |
 
 ```mermaid
 pie showData
-    title Distribution of 29 records, August 2026
-    "Ransomware" : 17
-    "Data Leak" : 11
-    "Access Sale" : 1
+    title Geographic occurrences by country: August 2026
+    "South Africa" : 11
+    "Egypt" : 4
+    "Algeria" : 3
+    "Morocco" : 3
+    "Kenya" : 2
+    "Nigeria" : 2
+    "Cameroon" : 1
+    "Gabon" : 1
+    "Libya" : 1
+    "Mauritius" : 1
 ```
-
-### 3.1 Country and incident-type distribution
-
-| Country | ISO code | Ransomware | Ransomware bar | Data Leak | Access Sale | Leak / access bar | Total | Share |
-|---|---|---:|---|---:|---:|---|---:|---:|
-| 🇿🇦 South Africa | ZA | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | 2 | 0 | 🟦🟦 | 11 | 37.9% |
-| 🇪🇬 Egypt | EG | 2 | 🟧🟧 | 2 | 0 | 🟦🟦 | 4 | 13.8% |
-| 🇩🇿 Algeria | DZ | 0 | - | 2 | 1 | 🟦🟦🟦 | 3 | 10.3% |
-| 🇲🇦 Morocco | MA | 1 | 🟧 | 2 | 0 | 🟦🟦 | 3 | 10.3% |
-| 🇰🇪 Kenya | KE | 0 | - | 2 | 0 | 🟦🟦 | 2 | 6.9% |
-| 🇳🇬 Nigeria | NG | 2 | 🟧🟧 | 0 | 0 | - | 2 | 6.9% |
-| 🇨🇲 Cameroon | CM | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| 🇬🇦 Gabon | GA | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| 🇱🇾 Libya | LY | 0 | - | 1 | 0 | 🟦 | 1 | 3.4% |
-| 🇲🇺 Mauritius | MU | 1 | 🟧 | 0 | 0 | - | 1 | 3.4% |
-| **Total** |  | **17** | **🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧** | **11** | **1** | **🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦** | **29** | 100% |
-
-**Bar legend:** 🟧 Ransomware | 🟦 Data Leaks and Access Sales. Each square represents one record; the latter two categories are combined only in the blue bar. The other six canonical types are zero for every country.
 
 ```mermaid
 xychart-beta
-    title "Ransomware and leaks / access sales by country: August 2026"
+    title "Geographic occurrences by country: August 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
-    y-axis "Records" 0 --> 10
+    y-axis "Occurrences" 0 --> 12
+    bar [11, 4, 3, 3, 2, 2, 1, 1, 1, 1]
+```
+
+Legend: ZA = South Africa, EG = Egypt, DZ = Algeria, MA = Morocco, KE = Kenya, NG = Nigeria, CM = Cameroon, GA = Gabon, LY = Libya, MU = Mauritius.
+
+### Ransomware and Data Leak / Access Sale by country
+
+This comparison covers the **29 August records**: **17 ransomware records** and **12 Data Leak / Access Sale records**. The blue bar combines 11 data leaks and one access sale so that the presentation remains comparable with July. Each record is assigned to one country in this report.
+
+**Visual legend:** 🟧 Ransomware | 🟦 Data Leak / Access Sale
+
+| Code | Country | Ransomware | Bar | Leak / access sale | Bar |
+|---|---|---:|---|---:|---|
+| `ZA` | South Africa | **9** | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | **2** | 🟦🟦 |
+| `EG` | Egypt | **2** | 🟧🟧 | **2** | 🟦🟦 |
+| `DZ` | Algeria | **0** | - | **3** | 🟦🟦🟦 |
+| `MA` | Morocco | **1** | 🟧 | **2** | 🟦🟦 |
+| `KE` | Kenya | **0** | - | **2** | 🟦🟦 |
+| `NG` | Nigeria | **2** | 🟧🟧 | **0** | - |
+| `CM` | Cameroon | **1** | 🟧 | **0** | - |
+| `GA` | Gabon | **1** | 🟧 | **0** | - |
+| `LY` | Libya | **0** | - | **1** | 🟦 |
+| `MU` | Mauritius | **1** | 🟧 | **0** | - |
+|  | **Geographic total** | **17** |  | **12** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware and Data Leak / Access Sale by country: August 2026"
+    x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
+    y-axis "Occurrences" 0 --> 10
     bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
     bar [2, 2, 3, 2, 2, 0, 0, 0, 1, 0]
 ```
 
-**Series:** first bar = 🟧 Ransomware; second bar = 🟦 Data Leak + Access Sale. The chart reproduces the country occurrences in the table; these values do not measure national risk.
+**Series legend:** first series = 🟧 Ransomware | second series = 🟦 Data Leak / Access Sale.
+
+**Country legend:** ZA = South Africa | EG = Egypt | DZ = Algeria | MA = Morocco | KE = Kenya | NG = Nigeria | CM = Cameroon | GA = Gabon | LY = Libya | MU = Mauritius.
+
+> The analytical total remains **29 unique incidents**: 17 Ransomware, 11 Data Leak and 1 Access Sale. The blue bar totals 12 because it combines the two non-ransomware categories.
+
+### Ransomware by country
 
 ```mermaid
 xychart-beta
     title "Ransomware by country: August 2026"
     x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
-    y-axis "Ransomware records" 0 --> 10
+    y-axis "Ransomware" 0 --> 10
     bar [9, 2, 1, 2, 1, 1, 1]
 ```
 
-South Africa accounts for 9 of the corpus’s 17 ransomware records. Each of the other affected countries has one or two.
+Legend: ZA = South Africa, EG = Egypt, MA = Morocco, NG = Nigeria, CM = Cameroon, GA = Gabon, MU = Mauritius.
+
+### Geographic distribution of data leaks and access sales
+
+| Rank | Country | Occurrences | Bar |
+|---:|---|---:|---|
+| 1 | 🇩🇿 Algeria | **3** | ███ |
+| 2 | 🇿🇦 South Africa | **2** | ██ |
+| 2 | 🇪🇬 Egypt | **2** | ██ |
+| 2 | 🇲🇦 Morocco | **2** | ██ |
+| 2 | 🇰🇪 Kenya | **2** | ██ |
+| 6 | 🇱🇾 Libya | **1** | █ |
+| **Total** |  | **12** |  |
 
 ```mermaid
 xychart-beta
-    title "Data leaks and access sales by country: August 2026"
-    x-axis ["ZA", "EG", "DZ", "MA", "KE", "LY"]
-    y-axis "Data Leak / Access Sale records" 0 --> 4
-    bar [2, 2, 3, 2, 2, 1]
+    title "Geographic distribution of leaks and access sales: August 2026"
+    x-axis ["DZ", "ZA", "EG", "MA", "KE", "LY"]
+    y-axis "Occurrences" 0 --> 4
+    bar [3, 2, 2, 2, 2, 1]
 ```
 
-Algeria has three records in these two categories (two Data Leaks and one Access Sale); the remaining occurrences are distributed across South Africa, Egypt, Morocco, Kenya and Libya.
+Legend: DZ = Algeria, ZA = South Africa, EG = Egypt, MA = Morocco, KE = Kenya, LY = Libya.
 
-### 3.2 Regional distribution
+### Geographic breakdown by region
 
-| Region | Ransomware | Data Leak | Access Sale | Total | Share | Bar |
-|---|---:|---:|---:|---:|---:|---|
-| North Africa | 3 | 7 | 1 | 11 | 37.9% | ███████████ |
-| Southern Africa | 9 | 2 | 0 | 11 | 37.9% | ███████████ |
-| West Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
-| Central Africa | 2 | 0 | 0 | 2 | 6.9% | ██ |
-| East Africa | 0 | 2 | 0 | 2 | 6.9% | ██ |
-| Indian Ocean | 1 | 0 | 0 | 1 | 3.4% | █ |
-| **Total** | 17 | 11 | 1 | **29** | 100% |  |
-
-Regional bars: **█ = 1 record**, based on each record’s assigned country.
+| Region | Countries included | Occurrences | Ransomware | Leaks and access sales | Distribution |
+|---|---|---:|---:|---:|---|
+| **North Africa** | 🇩🇿 Algeria, 🇪🇬 Egypt, 🇲🇦 Morocco, 🇱🇾 Libya | **11** | 3 | 8 | 🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Southern Africa** | 🇿🇦 South Africa | **11** | 9 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| **West Africa** | 🇳🇬 Nigeria | **2** | 2 | 0 | 🟧🟧 |
+| **Central Africa** | 🇨🇲 Cameroon, 🇬🇦 Gabon | **2** | 2 | 0 | 🟧🟧 |
+| **East Africa** | 🇰🇪 Kenya | **2** | 0 | 2 | 🟦🟦 |
+| **Indian Ocean** | 🇲🇺 Mauritius | **1** | 1 | 0 | 🟧 |
+| **Total** | **10 countries** | **29** | **17** | **12** | *🟧 Ransomware | 🟦 Leaks and access sales* |
 
 ```mermaid
 xychart-beta
-    title "Records by region: August 2026"
+    title "Geographic occurrences by region: August 2026"
     x-axis ["North Africa", "Southern Africa", "West Africa", "Central Africa", "East Africa", "Indian Ocean"]
-    y-axis "Records" 0 --> 12
+    y-axis "Occurrences" 0 --> 12
     bar [11, 11, 2, 2, 2, 1]
 ```
 
-The regional convention separates the Indian Ocean, represented here by Mauritius, from East Africa. West Africa and Central Africa remain separate. North Africa and Southern Africa each account for 11 records, together **22 of 29 (75.9%)**.
-
-### 3.3 Complete corpus timeline
-
-The August reference below is the publication, source detection or AFRINTEL discovery date documented in the record. **It is not automatically the compromise date.** “Not specified” means that no initial publication date is recorded in the available material.
-
-| No. | August reference | Victim / context | Initial publication | Incident date / period |
-|---|---|---|---|---|
-| 1 | 2026-08-01 (discovery) | 🇪🇬 Egyptian Local Services Portal | 2026-06-05 | Unknown |
-| 2 | 2026-08-01 (publication) | 🇿🇦 SARB | 2026-08-01 | Unknown |
-| 3 | 2026-08-01 (discovery) | 🇩🇿 DGRSDT | 2026-07-08 | 2026-07-08, supplied date |
-| 4 | 2026-08-01 (detection) | 🇪🇬 EFA | 2026-07-26 | Unknown |
-| 5 | 2026-08-02 (source detection) | 🇿🇦 Buzz Trading 104 | Not specified | Unknown |
-| 6 | 2026-08-02 (source detection) | 🇳🇬 ASHA Microfinance Bank | Not specified | Unknown |
-| 7 | 2026-08-02 (source detection) | 🇿🇦 DC Partner | Not specified | August 2026, exact date not established; ransomware incident confirmed by the victim on 7 August |
-| 8 | 2026-08-04 (source detection) | 🇿🇦 Sure Travel | Not specified | Unknown |
-| 9 | 2026-08-04 (source detection) | 🇪🇬 ADG Healthcare | Not specified | Unknown |
-| 10 | 2026-08-05 (publication) | 🇩🇿 Ministry of Commerce | 2026-08-05 | Unknown |
-| 11 | 2026-08-07 (source detection) | 🇿🇦 Serengeti Golf and Wildlife Estate | Not specified | Unknown |
-| 12 | 2026-08-08 (detection) | 🇰🇪 Unidentified PAYGO platform | 2026-01-16 | Unknown |
-| 13 | 2026-08-08 (detection) | 🇿🇦 mpowa.mobi | 2026-08-07 | Unknown |
-| 14 | 2026-08-08 (publication) | 🇳🇬 Daily Trust | 2026-08-08 | Unknown |
-| 15 | 2026-08-14 (source detection) | 🇲🇦 AVANTA Maroc | Not specified | Unknown |
-| 16 | 2026-08-16 (source detection) | 🇿🇦 The Courier Guy | Not specified | Unknown |
-| 17 | 2026-08-17 (publication) | 🇰🇪 SnapStar Talent | 2026-08-17 | Unknown |
-| 18 | 2026-08-18 (publication) | 🇲🇺 SpearFin Ltd | 2026-08-18 | 2026-06-26, alleged |
-| 19 | 2026-08-19 (source detection) | 🇿🇦 Babcock Africa | Not specified | Unknown |
-| 20 | 2026-08-20 (publication) | 🇩🇿 Afribaba | 2026-08-20 | Unknown |
-| 21 | 2026-08-20 (publication) | 🇨🇲 CCA Bank | 2026-08-20 | Unknown |
-| 22 | 2026-08-22 (publication) | 🇲🇦 RAMED | 2026-08-22 | Unknown |
-| 23 | 2026-08-24 (source detection) | 🇿🇦 Furniture Bargaining Council | Not specified | August 2026, day unknown |
-| 24 | 2026-08-24 (corroborated publication / detection) | 🇲🇦 DGSN / DGST | 2026-08-24 | Unknown |
-| 25 | 2026-08-26 (source detection) | 🇪🇬 Mima Foods | Not specified | Unknown |
-| 26 | 2026-08-26 (source detection) | 🇬🇦 Conseil Gabonais des Chargeurs (CGC) | Not specified | Unknown |
-| 27 | 2026-08-27 (source detection) | 🇿🇦 Hungry Lion | Not specified | Unknown |
-| 28 | 2026-08-27 (source detection) | 🇿🇦 Rohloff Group | Not specified | Unknown |
-| 29 | 2026-08-29 (discovery) | 🇱🇾 Albarq Media Service | 2026-06-09 | Access unknown; publication in June |
-
-Additional analyses and September checks do not create new August incidents. No compromise date is inferred from the date of an administrative document, database record or archive.
+The geographic breakdown contains 29 occurrences, matching the number of records, because each record receives one country assignment. North Africa and Southern Africa together account for **22 of 29 records (75.9%)**. The leaks and access sales bar combines 11 data leaks and one access sale.
 
 ## 4. Analysis by incident type
+
+| Type | Records | Share |
+| :--- | ---: | ---: |
+| 🟧 Ransomware | 17 | 58.6% |
+| 🟦 Data Leak | 11 | 37.9% |
+| 🟪 Access Sale | 1 | 3.4% |
+| **Total** | **29** | **100%** |
+
+```mermaid
+pie showData
+    title Incident-type distribution: August 2026
+    "Ransomware" : 17
+    "Data Leaks" : 11
+    "Access Sales" : 1
+```
+
+**Colour convention:** 🟧 Ransomware | 🟦 Data Leak | 🟪 Access Sale.
 
 ### 4.1 Ransomware
 
@@ -415,6 +431,16 @@ Differences between advertised volume and reviewed coverage are another recurrin
 
 The comparison table in section 1.1 shows a decrease from **42 to 29 records (-31.0%)**, primarily reflecting fewer documented data leaks (18 to 11) and access sales (6 to 1). Ransomware records move from 18 to 17; all **17 recorded ransomware attacks occurred in August**. Five earlier leaks were discovered in August and remain in the closed monthly corpus. These figures compare AFRINTEL collections, not the actual number of compromises that occurred in each month.
 
+
+```mermaid
+xychart-beta
+    title "Documented records: July and August 2026"
+    x-axis ["JUL", "AUG"]
+    y-axis "Records" 0 --> 45
+    bar [42, 29]
+```
+
+**Time legend:** JUL = July 2026 | AUG = August 2026.
 ### Intelligence gaps
 
 | Priority gap | Effect on assessment | Evidence needed |

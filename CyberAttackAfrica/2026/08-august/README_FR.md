@@ -100,138 +100,154 @@ Le niveau de confiance porte sur l’évaluation de la fiche et n’est pas syno
 
 ## 3. Vue globale
 
-| Indicateur | Valeur |
-|---|---|
-| Fiches documentées | 29 |
-| Pays de rattachement | 10 |
-| Secteurs normalisés | 16 |
-| Libellés d’acteur / de publication | 19 |
-| Ransomware | 17 (58,6 %) |
-| Data Leak | 11 (37,9 %) |
-| Access Sale | 1 (3,4 %) |
-
-Les six autres types canoniques sont à zéro : DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud. Leur absence dans la collecte ne signifie pas qu’aucun événement de ces types n’a eu lieu en Afrique. Les pourcentages sont arrondis à une décimale et peuvent totaliser 99,9 % ou 100,1 %.
+| Pays | Occurrences | Barre |
+| :--- | ---: | :--- |
+| 🇿🇦 Afrique du Sud | 11 | ███████████ |
+| 🇪🇬 Égypte | 4 | ████ |
+| 🇩🇿 Algérie | 3 | ███ |
+| 🇲🇦 Maroc | 3 | ███ |
+| 🇰🇪 Kenya | 2 | ██ |
+| 🇳🇬 Nigeria | 2 | ██ |
+| 🇨🇲 Cameroun | 1 | █ |
+| 🇬🇦 Gabon | 1 | █ |
+| 🇱🇾 Libye | 1 | █ |
+| 🇲🇺 Maurice | 1 | █ |
+| **Total géographique** | **29** | - |
 
 ```mermaid
 pie showData
-    title Répartition des 29 fiches, août 2026
-    "Ransomware" : 17
-    "Data Leak" : 11
-    "Access Sale" : 1
+    title Occurrences géographiques par pays, août 2026
+    "Afrique du Sud" : 11
+    "Égypte" : 4
+    "Algérie" : 3
+    "Maroc" : 3
+    "Kenya" : 2
+    "Nigeria" : 2
+    "Cameroun" : 1
+    "Gabon" : 1
+    "Libye" : 1
+    "Maurice" : 1
 ```
-
-### 3.1 Répartition par pays et par type
-
-| Pays | Code ISO | Ransomware | Barre ransomware | Data Leak | Access Sale | Barre fuites / accès | Total | Part |
-|---|---|---:|---|---:|---:|---|---:|---:|
-| 🇿🇦 Afrique du Sud | ZA | 9 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | 2 | 0 | 🟦🟦 | 11 | 37,9 % |
-| 🇪🇬 Égypte | EG | 2 | 🟧🟧 | 2 | 0 | 🟦🟦 | 4 | 13,8 % |
-| 🇩🇿 Algérie | DZ | 0 | - | 2 | 1 | 🟦🟦🟦 | 3 | 10,3 % |
-| 🇲🇦 Maroc | MA | 1 | 🟧 | 2 | 0 | 🟦🟦 | 3 | 10,3 % |
-| 🇰🇪 Kenya | KE | 0 | - | 2 | 0 | 🟦🟦 | 2 | 6,9 % |
-| 🇳🇬 Nigeria | NG | 2 | 🟧🟧 | 0 | 0 | - | 2 | 6,9 % |
-| 🇨🇲 Cameroun | CM | 1 | 🟧 | 0 | 0 | - | 1 | 3,4 % |
-| 🇬🇦 Gabon | GA | 1 | 🟧 | 0 | 0 | - | 1 | 3,4 % |
-| 🇱🇾 Libye | LY | 0 | - | 1 | 0 | 🟦 | 1 | 3,4 % |
-| 🇲🇺 Maurice | MU | 1 | 🟧 | 0 | 0 | - | 1 | 3,4 % |
-| **Total** |  | **17** | **🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧** | **11** | **1** | **🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦🟦** | **29** | 100 % |
-
-**Légende des barres :** 🟧 Ransomware | 🟦 Fuites de données et ventes d’accès. Chaque carré représente une fiche ; les deux dernières catégories sont regroupées uniquement dans la barre bleue. Les six autres types canoniques sont à zéro pour chaque pays.
 
 ```mermaid
 xychart-beta
-    title "Ransomware et fuites / ventes d’accès par pays: août 2026"
+    title "Occurrences géographiques par pays: août 2026"
     x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
-    y-axis "Fiches" 0 --> 10
+    y-axis "Occurrences" 0 --> 12
+    bar [11, 4, 3, 3, 2, 2, 1, 1, 1, 1]
+```
+
+Légende : ZA = Afrique du Sud, EG = Égypte, DZ = Algérie, MA = Maroc, KE = Kenya, NG = Nigeria, CM = Cameroun, GA = Gabon, LY = Libye, MU = Maurice.
+
+### Comparaison Ransomware et Fuite de données / Vente d'accès par pays
+
+Cette comparaison porte sur les **29 fiches** d’août : **17 fiches ransomware** et **12 fiches Fuite de données / Vente d'accès**. La barre bleue regroupe les 11 fuites et la vente d’accès afin de conserver une lecture comparable à juillet. Chaque fiche est rattachée à un seul pays dans ce rapport.
+
+**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès
+
+| Code | Pays | Ransomware | Barre | Fuite / vente d'accès | Barre |
+|---|---|---:|---|---:|---|
+| `ZA` | Afrique du Sud | **9** | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | **2** | 🟦🟦 |
+| `EG` | Égypte | **2** | 🟧🟧 | **2** | 🟦🟦 |
+| `DZ` | Algérie | **0** | - | **3** | 🟦🟦🟦 |
+| `MA` | Maroc | **1** | 🟧 | **2** | 🟦🟦 |
+| `KE` | Kenya | **0** | - | **2** | 🟦🟦 |
+| `NG` | Nigeria | **2** | 🟧🟧 | **0** | - |
+| `CM` | Cameroun | **1** | 🟧 | **0** | - |
+| `GA` | Gabon | **1** | 🟧 | **0** | - |
+| `LY` | Libye | **0** | - | **1** | 🟦 |
+| `MU` | Maurice | **1** | 🟧 | **0** | - |
+|  | **Total géographique** | **17** |  | **12** |  |
+
+```mermaid
+xychart-beta
+    title "Ransomware et Fuite de données / Vente d'accès par pays: août 2026"
+    x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
+    y-axis "Occurrences" 0 --> 10
     bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
     bar [2, 2, 3, 2, 2, 0, 0, 0, 1, 0]
 ```
 
-**Séries :** première barre = 🟧 Ransomware ; deuxième barre = 🟦 Data Leak + Access Sale. Le graphique reprend les occurrences par pays du tableau ; les valeurs ne représentent pas une mesure du risque national.
+**Légende des séries :** première série = 🟧 Ransomware | deuxième série = 🟦 Fuite de données / Vente d'accès.
+
+**Légende pays :** ZA = Afrique du Sud | EG = Égypte | DZ = Algérie | MA = Maroc | KE = Kenya | NG = Nigeria | CM = Cameroun | GA = Gabon | LY = Libye | MU = Maurice.
+
+> Le total analytique reste de **29 incidents uniques** : 17 Ransomware, 11 Data Leak et 1 Access Sale. La barre bleue totalise 12 car elle regroupe les deux catégories non ransomware.
+
+### Ransomware par pays
 
 ```mermaid
 xychart-beta
     title "Ransomware par pays: août 2026"
     x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
-    y-axis "Fiches ransomware" 0 --> 10
+    y-axis "Ransomware" 0 --> 10
     bar [9, 2, 1, 2, 1, 1, 1]
 ```
 
-L’Afrique du Sud concentre 9 des 17 fiches ransomware du corpus. Les autres pays concernés en comptent une ou deux chacun.
+Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CM = Cameroun, GA = Gabon, MU = Maurice.
+
+### Répartition géographique des fuites de données et ventes d'accès
+
+| Rang | Pays | Occurrences | Barre |
+|---:|---|---:|---|
+| 1 | 🇩🇿 Algérie | **3** | ███ |
+| 2 | 🇿🇦 Afrique du Sud | **2** | ██ |
+| 2 | 🇪🇬 Égypte | **2** | ██ |
+| 2 | 🇲🇦 Maroc | **2** | ██ |
+| 2 | 🇰🇪 Kenya | **2** | ██ |
+| 6 | 🇱🇾 Libye | **1** | █ |
+| **Total** |  | **12** |  |
 
 ```mermaid
 xychart-beta
-    title "Fuites de données et ventes d’accès par pays: août 2026"
-    x-axis ["ZA", "EG", "DZ", "MA", "KE", "LY"]
-    y-axis "Fiches Data Leak / Access Sale" 0 --> 4
-    bar [2, 2, 3, 2, 2, 1]
+    title "Répartition géographique des fuites et ventes d'accès: août 2026"
+    x-axis ["DZ", "ZA", "EG", "MA", "KE", "LY"]
+    y-axis "Occurrences" 0 --> 4
+    bar [3, 2, 2, 2, 2, 1]
 ```
 
-L’Algérie compte trois fiches dans ces deux catégories (deux Data Leak et une Access Sale) ; les autres occurrences se répartissent entre l’Afrique du Sud, l’Égypte, le Maroc, le Kenya et la Libye.
+Légende : DZ = Algérie, ZA = Afrique du Sud, EG = Égypte, MA = Maroc, KE = Kenya, LY = Libye.
 
-### 3.2 Répartition régionale
+### Répartition géographique par région
 
-| Région | Ransomware | Data Leak | Access Sale | Total | Part | Barre |
-|---|---:|---:|---:|---:|---:|---|
-| Afrique du Nord | 3 | 7 | 1 | 11 | 37,9 % | ███████████ |
-| Afrique australe | 9 | 2 | 0 | 11 | 37,9 % | ███████████ |
-| Afrique de l’Ouest | 2 | 0 | 0 | 2 | 6,9 % | ██ |
-| Afrique centrale | 2 | 0 | 0 | 2 | 6,9 % | ██ |
-| Afrique de l’Est | 0 | 2 | 0 | 2 | 6,9 % | ██ |
-| Océan Indien | 1 | 0 | 0 | 1 | 3,4 % | █ |
-| **Total** | 17 | 11 | 1 | **29** | 100 % |  |
-
-Barres régionales : **█ = 1 fiche**, selon le pays de rattachement de chaque fiche.
+| Région | Pays inclus | Occurrences | Ransomware | Fuites et ventes d'accès | Répartition |
+|---|---|---:|---:|---:|---|
+| **Afrique du Nord** | 🇩🇿 Algérie, 🇪🇬 Égypte, 🇲🇦 Maroc, 🇱🇾 Libye | **11** | 3 | 8 | 🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
+| **Afrique australe** | 🇿🇦 Afrique du Sud | **11** | 9 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
+| **Afrique de l'Ouest** | 🇳🇬 Nigeria | **2** | 2 | 0 | 🟧🟧 |
+| **Afrique centrale** | 🇨🇲 Cameroun, 🇬🇦 Gabon | **2** | 2 | 0 | 🟧🟧 |
+| **Afrique de l'Est** | 🇰🇪 Kenya | **2** | 0 | 2 | 🟦🟦 |
+| **Océan Indien** | 🇲🇺 Maurice | **1** | 1 | 0 | 🟧 |
+| **Total** | **10 pays** | **29** | **17** | **12** | *🟧 Ransomware | 🟦 Fuites et ventes d'accès* |
 
 ```mermaid
 xychart-beta
-    title "Fiches par région: août 2026"
-    x-axis ["Afrique du Nord", "Afrique australe", "Afrique de l’Ouest", "Afrique centrale", "Afrique de l’Est", "Océan Indien"]
-    y-axis "Fiches" 0 --> 12
+    title "Occurrences géographiques par région: août 2026"
+    x-axis ["Afrique du Nord", "Afrique australe", "Afrique de l'Ouest", "Afrique centrale", "Afrique de l'Est", "Océan Indien"]
+    y-axis "Occurrences" 0 --> 12
     bar [11, 11, 2, 2, 2, 1]
 ```
 
-La convention régionale distingue l’océan Indien, qui regroupe ici Maurice, de l’Afrique de l’Est. L’Afrique de l’Ouest et l’Afrique centrale restent séparées. L’Afrique du Nord et l’Afrique australe représentent chacune 11 fiches, soit ensemble **22 sur 29 (75,9 %)**.
-
-### 3.3 Chronologie complète du corpus
-
-Le repère d’août ci-dessous correspond à la publication, à la détection de la source ou à la découverte AFRINTEL indiquée dans la fiche. **Il ne désigne pas automatiquement la date de compromission.** « Non précisée » indique l’absence de date initiale dans les éléments consignés.
-
-| N° | Repère d’août | Victime / contexte | Publication initiale | Date / période de l’incident |
-|---|---|---|---|---|
-| 1 | 2026-08-01 (découverte) | 🇪🇬 Portail des services locaux égyptiens | 2026-06-05 | Inconnue |
-| 2 | 2026-08-01 (publication) | 🇿🇦 SARB | 2026-08-01 | Inconnue |
-| 3 | 2026-08-01 (découverte) | 🇩🇿 DGRSDT | 2026-07-08 | 2026-07-08, date fournie |
-| 4 | 2026-08-01 (détection) | 🇪🇬 EFA | 2026-07-26 | Inconnue |
-| 5 | 2026-08-02 (détection source) | 🇿🇦 Buzz Trading 104 | Non précisée | Inconnue |
-| 6 | 2026-08-02 (détection source) | 🇳🇬 ASHA Microfinance Bank | Non précisée | Inconnue |
-| 7 | 2026-08-02 (détection source) | 🇿🇦 DC Partner | Non précisée | Août 2026, date exacte non établie ; incident ransomware confirmé par la victime le 7 août |
-| 8 | 2026-08-04 (détection source) | 🇿🇦 Sure Travel | Non précisée | Inconnue |
-| 9 | 2026-08-04 (détection source) | 🇪🇬 ADG Healthcare | Non précisée | Inconnue |
-| 10 | 2026-08-05 (publication) | 🇩🇿 Ministère du Commerce | 2026-08-05 | Inconnue |
-| 11 | 2026-08-07 (détection source) | 🇿🇦 Serengeti Golf and Wildlife Estate | Non précisée | Inconnue |
-| 12 | 2026-08-08 (détection) | 🇰🇪 Plateforme PAYGO non identifiée | 2026-01-16 | Inconnue |
-| 13 | 2026-08-08 (détection) | 🇿🇦 mpowa.mobi | 2026-08-07 | Inconnue |
-| 14 | 2026-08-08 (publication) | 🇳🇬 Daily Trust | 2026-08-08 | Inconnue |
-| 15 | 2026-08-14 (détection source) | 🇲🇦 AVANTA Maroc | Non précisée | Inconnue |
-| 16 | 2026-08-16 (détection source) | 🇿🇦 The Courier Guy | Non précisée | Inconnue |
-| 17 | 2026-08-17 (publication) | 🇰🇪 SnapStar Talent | 2026-08-17 | Inconnue |
-| 18 | 2026-08-18 (publication) | 🇲🇺 SpearFin Ltd | 2026-08-18 | 2026-06-26, alléguée |
-| 19 | 2026-08-19 (détection source) | 🇿🇦 Babcock Africa | Non précisée | Inconnue |
-| 20 | 2026-08-20 (publication) | 🇩🇿 Afribaba | 2026-08-20 | Inconnue |
-| 21 | 2026-08-20 (publication) | 🇨🇲 CCA Bank | 2026-08-20 | Inconnue |
-| 22 | 2026-08-22 (publication) | 🇲🇦 RAMED | 2026-08-22 | Inconnue |
-| 23 | 2026-08-24 (détection source) | 🇿🇦 Furniture Bargaining Council | Non précisée | Août 2026, jour inconnu |
-| 24 | 2026-08-24 (publication corroborée / détection) | 🇲🇦 DGSN / DGST | 2026-08-24 | Inconnue |
-| 25 | 2026-08-26 (détection source) | 🇪🇬 Mima Foods | Non précisée | Inconnue |
-| 26 | 2026-08-26 (détection source) | 🇬🇦 Conseil Gabonais des Chargeurs (CGC) | Non précisée | Inconnue |
-| 27 | 2026-08-27 (détection source) | 🇿🇦 Hungry Lion | Non précisée | Inconnue |
-| 28 | 2026-08-27 (détection source) | 🇿🇦 Rohloff Group | Non précisée | Inconnue |
-| 29 | 2026-08-29 (découverte) | 🇱🇾 Albarq Media Service | 2026-06-09 | Accès inconnu ; publication en juin |
-
-Les analyses complémentaires et les contrôles de septembre ne créent pas de nouveaux incidents d’août. Aucune date de compromission n’est déduite de la date d’un document administratif, d’un enregistrement ou d’une archive.
+La ventilation géographique compte 29 occurrences, identiques au nombre de fiches, car chaque fiche reçoit un seul pays de rattachement. L’Afrique du Nord et l’Afrique australe concentrent ensemble **22 fiches sur 29 (75,9 %)**. La barre « fuites et ventes » regroupe 11 fuites et une vente d’accès.
 
 ## 4. Analyse par type d’incident
+
+| Type | Incidents | Part |
+| :--- | ---: | ---: |
+| 🟧 Ransomware | 17 | 58,6 % |
+| 🟦 Fuite de données | 11 | 37,9 % |
+| 🟪 Vente d’accès | 1 | 3,4 % |
+| **Total** | **29** | **100 %** |
+
+```mermaid
+pie showData
+    title Répartition des types d'incidents: août 2026
+    "Ransomware" : 17
+    "Fuites de données" : 11
+    "Ventes d'accès" : 1
+```
+
+**Convention couleur :** 🟧 Ransomware | 🟦 Fuite de données | 🟪 Vente d'accès.
 
 ### 4.1 Ransomware
 
@@ -415,6 +431,16 @@ Les écarts entre volume annoncé et couverture examinée constituent un autre c
 
 Le tableau de comparaison en section 1.1 montre une baisse de **42 à 29 fiches (-31,0 %)**, principalement liée au recul des fuites documentées (18 à 11) et des ventes d’accès (6 à 1). Les fiches ransomware passent de 18 à 17 ; les **17 attaques ransomware recensées sont survenues en août**. Cinq fuites antérieures ont été découvertes en août et demeurent dans le corpus mensuel clôturé. Ces chiffres comparent les collectes AFRINTEL, et non le nombre réel de compromissions survenues chaque mois.
 
+
+```mermaid
+xychart-beta
+    title "Incidents documentés: juillet et août 2026"
+    x-axis ["JUIL", "AOÛ"]
+    y-axis "Fiches" 0 --> 45
+    bar [42, 29]
+```
+
+**Légende temporelle :** JUIL = juillet 2026 | AOÛ = août 2026.
 ### Lacunes de renseignement
 
 | Lacune prioritaire | Effet sur l’évaluation | Éléments nécessaires |
