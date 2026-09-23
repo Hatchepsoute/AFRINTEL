@@ -56,6 +56,8 @@ Each STIX bundle may include:
 | May 2026 | [afrintel_may_2026_opencti.json](./2026/05-may/afrintel_may_2026_opencti.json) |
 | June 2026 | [afrintel_june_2026_opencti.json](./2026/06-june/afrintel_june_2026_opencti.json) |
 | July 2026 | [afrintel_july_2026_opencti.json](./2026/07-july/afrintel_july_2026_opencti.json) |
+| August 2026 | [afrintel_august_2026_opencti.json](./2026/08-august/afrintel_august_2026_opencti.json) |
+| September 2026 | [afrintel_september_2026_opencti.json](./2026/09-september/afrintel_september_2026_opencti.json) |
 
 ### AFRINTEL 2025
 

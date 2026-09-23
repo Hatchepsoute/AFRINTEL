@@ -29,11 +29,11 @@
 
 ### Cyber threats in Africa - August 2026
 
-August 2026 collection contains **29 documented incidents across 10 countries**: **17 ransomware incidents**, **11 data leaks** and **1 access sale**. South Africa accounts for **11 records**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **7 incidents**, and finance and banking for **6**. KRYBIT is associated with **6 ransomware publications**.
+August 2026 collection contains **29 documented incidents across 10 countries**: **17 ransomware incidents**, **11 data leaks** and **1 access sale**. South Africa accounts for **11 records**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **6 incidents**, finance and banking for **6**, and human resources/recruitment for **3**. KRYBIT is associated with **6 ransomware publications**.
 
-The Furniture Bargaining Council acknowledged server encryption. The analyses document payment data at The Courier Guy, an account-reset workbook at Daily Trust, internal documents from the Conseil Gabonais des Chargeurs and identity data in the RAMED and DGSN/DGST cases. Reviewed samples do not automatically validate overall claimed volumes or acquisition methods.
+The Furniture Bargaining Council acknowledged server encryption, and DC Partner published a public confirmation of the incident. The analyses document payment data at The Courier Guy, an account-reset workbook at Daily Trust, internal documents from the Conseil Gabonais des Chargeurs and identity data in the RAMED and DGSN/DGST cases. Reviewed samples do not automatically validate overall claimed volumes or acquisition methods.
 
-The report includes follow-up information recorded through **13 September 2026** and distinguishes earlier publications discovered in August. The **13 fewer records than July (-31.0%)** describe a change in collection without demonstrating an equivalent decline in compromises.
+The report includes follow-up information recorded through **14 September 2026** and distinguishes earlier publications discovered in August. The **13 fewer records than July (-31.0%)** describe a change in collection without demonstrating an equivalent decline in compromises.
 
 📄 [Full CTI report - August 2026](CyberAttackAfrica/2026/08-august/README.md)
 
@@ -42,6 +42,16 @@ The report includes follow-up information recorded through **13 September 2026**
 📊 [Statistics - August 2026](statistics/2026/08-august/README.md)
 
 📦 [August 2026 STIX 2.1 / OpenCTI bundle](stix/2026/08-august/afrintel_august_2026_opencti.json)
+
+### Victim record added — September 2026
+
+AFRINTEL added **SEPE, Angola's e-government platform**, following a ransomware publication attributed to the Kazu account. The examined local sample contains **1,189 files** and presents a consistent administrative structure, but the claimed volumes, initial access, complete exfiltration and official confirmation remain unknown.
+
+📋 [SEPE victim record - September 2026](CyberAttackAfrica/2026/09-september/victims.md)
+
+📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
+
+*The September CTI report and statistics will be published separately once the monthly corpus is closed.*
 
 ### First-half 2026 cyber threat report
 
@@ -99,6 +109,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
 | July 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | August 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
+| September 2026 | [Victim cards](CyberAttackAfrica/2026/09-september/victims.md) | [Fiches victimes](CyberAttackAfrica/2026/09-september/victims_FR.md) |
 
 ---
 
@@ -127,6 +138,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | April vs May 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 | June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
+| July vs August 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
 
 
 ---
@@ -142,7 +154,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | May 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
 | June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
 | July 2026 | [LinkedIn visual](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
-| August 2026 | *in progress* |
+| August 2026 | [Visual intelligence](visual-intelligence/08-august/README.md) |
 | H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
@@ -160,6 +172,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June 2026 | [STIX Bundle](stix/2026/06-june/afrintel_june_2026_opencti.json) |
 | July 2026 | [STIX Bundle](stix/2026/07-july/afrintel_july_2026_opencti.json) |
 | August 2026 | [STIX Bundle](stix/2026/08-august/afrintel_august_2026_opencti.json) |
+| September 2026 | [STIX Bundle](stix/2026/09-september/afrintel_september_2026_opencti.json) |
 | H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
 Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. H1 bundles preserve the original monthly STIX IDs so OpenCTI can correlate records across reporting periods. When a monthly or half-year corpus is corrected, the corresponding aggregate STIX bundle should be regenerated before it is treated as an exact mirror of the Markdown source of truth. MITRE ATT&CK context lives in the report descriptions themselves.

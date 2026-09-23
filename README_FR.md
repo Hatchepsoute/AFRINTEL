@@ -29,11 +29,11 @@
 
 ### Cybermenaces en Afrique - août 2026
 
-La collecte d'août 2026 comprend **29 incidents documentés dans 10 pays** : **17 ransomware**, **11 fuites de données** et **1 vente d'accès**. L'Afrique du Sud concentre **11 fiches**, devant l'Égypte avec **4**, puis l'Algérie et le Maroc avec **3** chacun. Le gouvernement et l'administration représentent **7 incidents**, la finance et la banque **6**. KRYBIT est associé à **6 publications ransomware**.
+La collecte d'août 2026 comprend **29 incidents documentés dans 10 pays** : **17 ransomware**, **11 fuites de données** et **1 vente d'accès**. L'Afrique du Sud concentre **11 fiches**, devant l'Égypte avec **4**, puis l'Algérie et le Maroc avec **3** chacun. Le gouvernement et l'administration représentent **6 incidents**, la finance et la banque **6**, et les ressources humaines/recrutement **3**. KRYBIT est associé à **6 publications ransomware**.
 
-Le Furniture Bargaining Council a reconnu un chiffrement de serveurs. Les analyses documentent notamment des données de paiement chez The Courier Guy, un classeur de réinitialisation de comptes chez Daily Trust, des documents internes du Conseil Gabonais des Chargeurs et des données d'identité dans les cas RAMED et DGSN/DGST. Les échantillons examinés ne valident pas automatiquement les volumes globaux revendiqués ou les méthodes d'acquisition.
+Le Furniture Bargaining Council a reconnu un chiffrement de serveurs et DC Partner a publié une confirmation publique de l’incident. Les analyses documentent notamment des données de paiement chez The Courier Guy, un classeur de réinitialisation de comptes chez Daily Trust, des documents internes du Conseil Gabonais des Chargeurs et des données d'identité dans les cas RAMED et DGSN/DGST. Les échantillons examinés ne valident pas automatiquement les volumes globaux revendiqués ou les méthodes d'acquisition.
 
-Le rapport intègre les suivis consignés jusqu'au **13 septembre 2026** et distingue les publications antérieures découvertes en août. Les **13 fiches de moins qu'en juillet (-31,0 %)** décrivent une variation de la collecte, sans démontrer une baisse équivalente des compromissions.
+Le rapport intègre les suivis consignés jusqu'au **14 septembre 2026** et distingue les publications antérieures découvertes en août. Les **13 fiches de moins qu'en juillet (-31,0 %)** décrivent une variation de la collecte, sans démontrer une baisse équivalente des compromissions.
 
 📄 [Rapport CTI complet - août 2026](CyberAttackAfrica/2026/08-august/README_FR.md)
 
@@ -42,6 +42,16 @@ Le rapport intègre les suivis consignés jusqu'au **13 septembre 2026** et dist
 📊 [Statistiques - août 2026](statistics/2026/08-august/README_FR.md)
 
 📦 [Bundle STIX 2.1 / OpenCTI - août 2026](stix/2026/08-august/afrintel_august_2026_opencti.json)
+
+### Fiche victime ajoutée — septembre 2026
+
+AFRINTEL a ajouté **SEPE, la plateforme e-gouvernement de l'Angola**, à la suite d'une publication ransomware attribuée au compte Kazu. L'échantillon local examiné contient **1 189 fichiers** et présente une structure administrative cohérente, mais les volumes revendiqués, l'accès initial, l'exfiltration complète et la confirmation officielle restent inconnus.
+
+📋 [Fiche victime SEPE - septembre 2026](CyberAttackAfrica/2026/09-september/victims_FR.md)
+
+📦 [Bundle STIX 2.1 / OpenCTI - septembre 2026](stix/2026/09-september/afrintel_september_2026_opencti.json)
+
+*Le rapport CTI et les statistiques de septembre seront publiés séparément lorsque le corpus mensuel sera clôturé.*
 
 ### Rapport cybermenaces du premier semestre 2026
 
@@ -99,6 +109,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
 | Juillet 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | Août 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
+| Septembre 2026 | [Fiches victimes](CyberAttackAfrica/2026/09-september/victims_FR.md) | [Victim cards](CyberAttackAfrica/2026/09-september/victims.md) |
 
 ---
 
@@ -127,6 +138,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Avril vs Mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
 | Mai vs Juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 | Juin vs Juillet 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
+| Juillet vs Août 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
 
 ---
 
@@ -141,7 +153,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Mai 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
 | Juin 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
 | Juillet 2026 | [Visuel LinkedIn](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
-| Août 2026 | *en cours* |
+| Août 2026 | [Visual intelligence](visual-intelligence/08-august/README_FR.md) |
 | S1 2026 | [Visuel statistique](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | Carte S1 2026 | [Carte visuelle](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 
@@ -159,6 +171,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juin 2026 | [Bundle STIX](stix/2026/06-june/afrintel_june_2026_opencti.json) |
 | Juillet 2026 | [Bundle STIX](stix/2026/07-july/afrintel_july_2026_opencti.json) |
 | Août 2026 | [Bundle STIX](stix/2026/08-august/afrintel_august_2026_opencti.json) |
+| Septembre 2026 | [Bundle STIX](stix/2026/09-september/afrintel_september_2026_opencti.json) |
 | S1 2026 | [Bundle STIX](stix/2026/afrintel_h1_2026_opencti.json) |
 
 Chaque bundle mensuel STIX 2.1 contient des descriptions bilingues des incidents et victimes, le rapport CTI, les statistiques, les comparaisons mensuelles, les références de sources ainsi que les objets d'identité AFRINTEL et auteur. Les bundles S1 conservent les identifiants STIX mensuels d'origine afin qu'OpenCTI puisse corréler les enregistrements entre les différentes périodes. Lorsqu'un corpus mensuel ou semestriel est corrigé, le bundle STIX agrégé correspondant doit être régénéré avant d'être considéré comme un miroir exact de la source de vérité Markdown. Le contexte MITRE ATT&CK reste documenté dans les descriptions des rapports.

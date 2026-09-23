@@ -335,21 +335,33 @@ def parse_ransomware_lifecycle(block: str) -> Dict[str, str]:
 def classify_incident(fields: Dict[str, str], status: str, default_incident_type: str = "") -> str:
     explicit_type = first_matching(fields, ["incident type", "type d'incident", "type d’incident"]).lower()
     if explicit_type:
-        if "ransomware" in explicit_type:
-            return "ransomware"
-        if "ddos" in explicit_type or "denial of service" in explicit_type:
-            return "ddos"
-        if "defacement" in explicit_type or "défacement" in explicit_type:
-            return "defacement"
-        if "access" in explicit_type or "accès" in explicit_type:
-            return "access-sale"
-        if "leak" in explicit_type or "fuite" in explicit_type:
-            return "data-leak"
+        explicit_map = (
+            (("ransomware",), "ransomware"),
+            (("data leak", "data-leak", "fuite"), "data-leak"),
+            (("access sale", "access-sale", "vente d'accès", "vente d’accès"), "access-sale"),
+            (("ddos", "denial of service"), "ddos"),
+            (("defacement", "défacement"), "defacement"),
+            (("account takeover", "prise de contrôle", "prise de controle"), "account-takeover"),
+            (("system intrusion", "intrusion système", "intrusion systeme"), "system-intrusion"),
+            (("malware", "logiciel malveillant"), "malware"),
+            (("operational fraud", "fraude opérationnelle", "fraude operationnelle"), "operational-fraud"),
+        )
+        for needles, normalized in explicit_map:
+            if any(needle in explicit_type for needle in needles):
+                return normalized
 
     joined_text = " ".join([*fields.keys(), *fields.values()]).lower()
     status_text = status.lower()
-    if "defacement" in status_text or "défacement" in status_text or "defacement" in joined_text or "défacement" in joined_text:
-        return "defacement"
+    fallback_map = (
+        (("defacement", "défacement"), "defacement"),
+        (("account takeover", "prise de contrôle", "prise de controle"), "account-takeover"),
+        (("system intrusion", "intrusion système", "intrusion systeme"), "system-intrusion"),
+        (("malware", "logiciel malveillant"), "malware"),
+        (("operational fraud", "fraude opérationnelle", "fraude operationnelle"), "operational-fraud"),
+    )
+    for needles, normalized in fallback_map:
+        if any(needle in status_text or needle in joined_text for needle in needles):
+            return normalized
     if "ddos" in status_text or "ddos" in joined_text or "denial of service" in joined_text:
         return "ddos"
     if "ransomware" in status_text or "ransomware" in " ".join(fields.keys()).lower():
@@ -926,10 +938,14 @@ def build_month_bundle(
                 "object_marking_refs": [TLP_CLEAR_ID],
             })
 
-    ransomware_count = sum(1 for rec in records_fr if rec.incident_type == "ransomware")
-    leak_count = sum(1 for rec in records_fr if rec.incident_type == "data-leak")
-    access_sale_count = sum(1 for rec in records_fr if rec.incident_type == "access-sale")
-    defacement_count = sum(1 for rec in records_fr if rec.incident_type == "defacement")
+    type_counts = {incident_type: sum(1 for rec in records_fr if rec.incident_type == incident_type) for incident_type in (
+        "ransomware", "data-leak", "access-sale", "ddos", "defacement", "account-takeover",
+        "system-intrusion", "malware", "operational-fraud",
+    )}
+    ransomware_count = type_counts["ransomware"]
+    leak_count = type_counts["data-leak"]
+    access_sale_count = type_counts["access-sale"]
+    defacement_count = type_counts["defacement"]
     month_name = month_dir.split("-", 1)[1] if "-" in month_dir else month_dir
     report_refs = list(actor_ids.values()) + victim_ids + incident_ids
 
@@ -953,7 +969,8 @@ def build_month_bundle(
             "report_types": ["threat-report"],
             "labels": [
                 "afrintel", "africa", document.language, f"{month_name}-{year}",
-                "ransomware", "data-leaks", "access-sales", "osint", *document.labels,
+                "ransomware", "data-leaks", "access-sales", "ddos", "defacement", "account-takeover",
+                "system-intrusion", "malware", "operational-fraud", "osint", *document.labels,
             ],
             "created_by_ref": AFRINTEL_ID,
             "object_marking_refs": [TLP_CLEAR_ID],
@@ -969,7 +986,12 @@ def build_month_bundle(
             "x_afrintel_ransomware_count": ransomware_count,
             "x_afrintel_data_leak_count": leak_count,
             "x_afrintel_access_sale_count": access_sale_count,
+            "x_afrintel_ddos_count": type_counts["ddos"],
             "x_afrintel_defacement_count": defacement_count,
+            "x_afrintel_account_takeover_count": type_counts["account-takeover"],
+            "x_afrintel_system_intrusion_count": type_counts["system-intrusion"],
+            "x_afrintel_malware_count": type_counts["malware"],
+            "x_afrintel_operational_fraud_count": type_counts["operational-fraud"],
             "x_afrintel_victim_identity_count": len(victim_ids),
         }
         if document.comparison_periods:
@@ -1233,6 +1255,10 @@ def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Opti
         obj.get("type") == "incident" and "defacement" in obj.get("labels", [])
         for obj in merged_objects
     )
+    aggregate_type_counts = {incident_type: sum(
+        obj.get("type") == "incident" and incident_type in obj.get("labels", [])
+        for obj in merged_objects
+    ) for incident_type in ("account-takeover", "system-intrusion", "malware", "operational-fraud", "ddos")}
 
     for document in h1_documents:
         report = {
@@ -1265,7 +1291,12 @@ def process_h1_bundle(repo: Path, year: str, github_base: str, output_root: Opti
             "x_afrintel_ransomware_count": ransomware_count,
             "x_afrintel_data_leak_count": data_leak_count,
             "x_afrintel_access_sale_count": access_sale_count,
+            "x_afrintel_ddos_count": aggregate_type_counts["ddos"],
             "x_afrintel_defacement_count": defacement_count,
+            "x_afrintel_account_takeover_count": aggregate_type_counts["account-takeover"],
+            "x_afrintel_system_intrusion_count": aggregate_type_counts["system-intrusion"],
+            "x_afrintel_malware_count": aggregate_type_counts["malware"],
+            "x_afrintel_operational_fraud_count": aggregate_type_counts["operational-fraud"],
             "x_afrintel_victim_identity_count": victim_count,
             "x_afrintel_months_covered": month_dirs,
         }
@@ -1373,6 +1404,11 @@ def process_full_year_bundle(repo: Path, year: str, github_base: str, output_roo
                 "x_afrintel_data_leak_count": sum(obj.get("type") == "incident" and "data-leak" in obj.get("labels", []) for obj in objects),
                 "x_afrintel_access_sale_count": sum(obj.get("type") == "incident" and "access-sale" in obj.get("labels", []) for obj in objects),
                 "x_afrintel_defacement_count": sum(obj.get("type") == "incident" and "defacement" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_ddos_count": sum(obj.get("type") == "incident" and "ddos" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_account_takeover_count": sum(obj.get("type") == "incident" and "account-takeover" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_system_intrusion_count": sum(obj.get("type") == "incident" and "system-intrusion" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_malware_count": sum(obj.get("type") == "incident" and "malware" in obj.get("labels", []) for obj in objects),
+                "x_afrintel_operational_fraud_count": sum(obj.get("type") == "incident" and "operational-fraud" in obj.get("labels", []) for obj in objects),
                 "x_afrintel_victim_identity_count": victim_count,
                 "x_afrintel_months_covered": month_dirs,
             }
