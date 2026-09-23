@@ -15,7 +15,7 @@
 
 ## 1. Scope and counting
 
-These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 29 records collected in August with follow-up information recorded through 13 September 2026. The 17 ransomware cases are assigned to August. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
+These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 29 records collected in August with follow-up information recorded through 14 September 2026. The 17 ransomware records are assigned to the August corpus from dated publications or source observations; the underlying compromise date is not established for every case. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
 
 Each record contributes to one country: 29 incidents and 29 geographic occurrences. PAYGO is limited to the documented Kenyan scope. Hungry Lion remains assigned to South Africa with reservations about the targeted entity and country. DGSN/DGST counts as one event. The origin of the Afribaba sample remains uncertain. No record carries Under Investigation - Alleged.
 
@@ -131,24 +131,23 @@ KRYBIT combines the krybit/KRYBIT case variants. The 19 labels do not establish 
 | Dimension | Value | Records | Share |
 |---|---|---|---|
 | Status | Claim - Data Sample Published | 13 | 44.8% |
-| Status | Claim - Unverified | 12 | 41.4% |
+| Status | Claim - Unverified | 11 | 37.9% |
 | Status | Data Fully Published | 3 | 10.3% |
-| Status | Victim Confirmed | 1 | 3.4% |
+| Status | Victim Confirmed | 2 | 6.9% |
 | **Total status** |  | 29 | 100% |
-| Confidence | Low | 8 | 27.6% |
+| Confidence | Low | 7 | 24.1% |
 | Confidence | Medium | 7 | 24.1% |
-| Confidence | High | 12 | 41.4% |
+| Confidence | High | 13 | 44.8% |
 | Confidence | Very High | 2 | 6.9% |
-| Confidence | Not specified | 0 | 0.0% |
+
 | **Total confidence** |  | 29 | 100% |
 | Impact | Level 1 | 0 | 0.0% |
 | Impact | Level 2 | 3 | 10.3% |
 | Impact | Level 3 | 7 | 24.1% |
-| Impact | Level 4 | 18 | 62.1% |
-| Impact | Not specified (RAMED) | 1 | 3.4% |
+| Impact | Level 4 | 19 | 65.5% |
 | **Total impact** |  | 29 | 100% |
 
-RAMED confidence is `High`; impact remains unspecified. CGC retains the structured value High. Data Fully Published does not validate completeness; high confidence is not equivalent to official confirmation.
+RAMED and CGC retain the structured values `High` confidence and `Level 4` impact. Data Fully Published does not validate completeness; high confidence is not equivalent to official confirmation.
 
 ## 8. Comparison with July
 
@@ -171,7 +170,7 @@ July’s 42 records and their types were checked in both languages. The comparis
 
 Government and finance account for 12 records; North Africa and Southern Africa account for 22. Priority risks concern identity, payment and personnel data and internal documents.
 
-Country sum = region sum = sector sum = type sum = actor-occurrence sum = **29**. Status, confidence and impact each total **29**, retaining unspecified values. No total of people or exfiltrated volumes is produced from heterogeneous samples.
+Country sum = region sum = sector sum = type sum = actor-occurrence sum = **29**. Status, confidence and impact each total **29**; no value is unspecified. No total of people or exfiltrated volumes is produced from heterogeneous samples.
 
 [Full CTI report](../../../CyberAttackAfrica/2026/08-august/README.md) · [Victim records](../../../CyberAttackAfrica/2026/08-august/victims.md)
 

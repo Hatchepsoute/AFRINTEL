@@ -15,7 +15,7 @@
 
 ## 1. Périmètre et comptage
 
-Ces statistiques dérivent du couple bilingue [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md), après contrôle de parité. Les données structurées sont déterminées une seule fois depuis la version française, puis réutilisées dans les deux langues. Le corpus contient 29 fiches collectées en août, avec les suivis consignés jusqu’au 13 septembre 2026. Les 17 cas ransomware sont rattachés à août. Cinq fuites de données publiées en janvier, juin ou juillet ont été découvertes et intégrées en août, car les rapports mensuels clôturés ne sont pas modifiés rétroactivement ; leurs dates initiales restent conservées.
+Ces statistiques dérivent du couple bilingue [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md), après contrôle de parité. Les données structurées sont déterminées une seule fois depuis la version française, puis réutilisées dans les deux langues. Le corpus contient 29 fiches collectées en août, avec les suivis consignés jusqu’au 14 septembre 2026. Les 17 fiches ransomware sont rattachées au corpus d’août selon les publications ou observations datées, sans que chaque date de compromission soit établie. Cinq fuites de données publiées en janvier, juin ou juillet ont été découvertes et intégrées en août, car les rapports mensuels clôturés ne sont pas modifiés rétroactivement ; leurs dates initiales restent conservées.
 
 Chaque fiche contribue à un seul pays : 29 incidents et 29 occurrences géographiques. PAYGO reste limité à la partie kényane documentée. Hungry Lion reste rattaché à l’Afrique du Sud sous réserve de l’entité et du pays visés. DGSN/DGST compte pour un seul événement. L’origine de l’échantillon Afribaba reste incertaine. Aucun cas n’est classé Under Investigation - Alleged.
 
@@ -131,24 +131,22 @@ KRYBIT regroupe les variations de casse krybit/KRYBIT. Les 19 libellés ne démo
 | Dimension | Valeur | Fiches | Part |
 |---|---|---|---|
 | Statut | Claim - Data Sample Published | 13 | 44,8 % |
-| Statut | Claim - Unverified | 12 | 41,4 % |
+| Statut | Claim - Unverified | 11 | 37,9 % |
 | Statut | Data Fully Published | 3 | 10,3 % |
-| Statut | Victim Confirmed | 1 | 3,4 % |
+| Statut | Victim Confirmed | 2 | 6,9 % |
 | **Total statut** |  | 29 | 100 % |
-| Confiance | Low | 8 | 27,6 % |
+| Confiance | Low | 7 | 24,1 % |
 | Confiance | Medium | 7 | 24,1 % |
-| Confiance | High | 12 | 41,4 % |
+| Confiance | High | 13 | 44,8 % |
 | Confiance | Very High | 2 | 6,9 % |
-| Confiance | Non précisé | 0 | 0,0 % |
 | **Total confiance** |  | 29 | 100 % |
 | Impact | Level 1 | 0 | 0,0 % |
 | Impact | Level 2 | 3 | 10,3 % |
 | Impact | Level 3 | 7 | 24,1 % |
-| Impact | Level 4 | 18 | 62,1 % |
-| Impact | Non précisé (RAMED) | 1 | 3,4 % |
+| Impact | Level 4 | 19 | 65,5 % |
 | **Total impact** |  | 29 | 100 % |
 
-La confiance de RAMED est `High` ; son impact reste non précisé. Le champ structuré du CGC reste High. Data Fully Published ne valide pas l’exhaustivité ; une confiance élevée n’équivaut pas à une confirmation officielle.
+RAMED et CGC conservent la confiance structurée `High` et l’impact `Level 4`. Data Fully Published ne valide pas l’exhaustivité ; une confiance élevée n’équivaut pas à une confirmation officielle.
 
 ## 8. Comparaison avec juillet
 

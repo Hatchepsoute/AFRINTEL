@@ -14,6 +14,7 @@
 
 #### 🇪🇬 Égypte - Portail des services locaux égyptiens (attribution probable)
 
+* **Date de l'incident:** Non établie
 * **Date de publication initiale:** 5 juin 2026
 - **Date de détection AFRINTEL :** 1 août 2026
 * **Acteur / Groupe:** R3D3MPTION
@@ -49,6 +50,7 @@
 
 #### 🇿🇦 Afrique du Sud - South African Reserve Bank (SARB)
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 01 août 2026
 - **Date de détection AFRINTEL :** 15 août 2026
 - **Acteur / Groupe :** NullSec Nigeria (alias « voss », compte de forum NullsecNg), publication sur le forum cybercriminel DarkForums
@@ -70,9 +72,6 @@
   La publication revendique une « fuite de données » touchant la South African Reserve Bank et liste les catégories suivantes de matériel prétendument inclus : détails des employés, journaux d'accès, journaux d'accès fournisseurs, tickets de service informatique, et une catégorie rendue par « transactional logo » dans la publication d'origine (vraisemblablement une coquille pour « transactional logs »). Quatre liens vers un service d'hébergement de fichiers tiers sont fournis ; AFRINTEL n'a ni consulté, ni téléchargé, ni vérifié le contenu de ces liens, et la publication elle-même ne contient aucune capture d'écran, extrait de données ni autre preuve technique de l'intrusion revendiquée.
 
   AFRINTEL ne peut confirmer de façon indépendante ni l'intrusion alléguée, ni l'historique du profil « NullSec Nigeria », ni l'authenticité des fichiers liés, ni un quelconque lien entre cette revendication et l'infrastructure réelle de la SARB. Compte tenu des catégories de données revendiquées et du rôle de la SARB en tant que banque centrale et institution financière d'importance systémique pour l'Afrique du Sud, une compromission confirmée aurait un impact potentiel élevé ; à ce stade toutefois, la revendication repose sur des affirmations de forum non vérifiées et des liens de téléchargement non validés. AFRINTEL ne reproduit ni les liens de téléchargement ni aucun autre indicateur technique issu de la publication.
-
-
-### 01 août 2026
 
 
 #### 🇩🇿 Algérie - Direction générale de la recherche scientifique et du développement technologique (DGRSDT)
@@ -111,6 +110,7 @@
 
 #### 🇪🇬 Égypte - Egyptian Football Association (EFA)
 
+* **Date de l'incident :** Non établie
 * **Date de publication initiale :** 26 juillet 2026 à 18:20 (fuseau horaire non indiqué)
 
 * **Date de détection AFRINTEL :** 01 août 2026
@@ -363,6 +363,7 @@ last_checked_at: 2026-08-04T15:55:39
 ### 05 août 2026
 #### 🇩🇿 Algérie - Ministère du Commerce
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 05 août 2026
 - **Date de détection AFRINTEL :** 05 août 2026
 - **Acteur / Groupe :** Florence, publication sur un forum cybercriminel
@@ -430,6 +431,7 @@ last_checked_at: 2026-09-04
 ### 08 août 2026
 #### 🇰🇪 Kenya - Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza)
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 16 janvier 2026
 - **Date de détection AFRINTEL :** 08 août 2026
 - **Acteur / Groupe :** OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement
@@ -455,6 +457,7 @@ last_checked_at: 2026-09-04
 ### 08 août 2026
 #### 🇿🇦 Afrique du Sud - mpowa.mobi (Plateforme de services jeunesse)
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 07 août 2026
 - **Date de détection AFRINTEL :** 08 août 2026
 - **Acteur / Groupe :** exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse
@@ -619,6 +622,7 @@ last_checked_at: 2026-09-04
 ### 17 août 2026
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 17 août 2026
 - **Date de détection AFRINTEL :** 18 août 2026
 - **Acteur / Groupe :** exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse
@@ -736,6 +740,7 @@ last_checked_at: 2026-08-19T08:10:32
 ### 20 août 2026
 #### 🇩🇿 Algérie - Afribaba (dz.afribaba.com)
 
+- **Date de l'incident :** Non établie
 - **Date de publication initiale :** 20 août 2026
 - **Date de détection AFRINTEL :** 20 août 2026
 - **Acteur / Groupe :** TelephoneHooliganism, publication sur un forum cybercriminel
@@ -895,6 +900,7 @@ last_checked_at: 2026-09-04
 
 #### 🇲🇦 Maroc - Direction générale de la Sûreté nationale (DGSN) / Direction générale de la Surveillance du territoire (DGST)
 
+* **Date de l'incident :** Non établie
 * **Date de publication initiale corroborée :** 24 août 2026
 * **Date de détection AFRINTEL :** 24 août 2026
 * **Acteur / Groupe :** JabaR00t, publication relayée par le compte JBT2026 sur un forum cybercriminel
@@ -1155,7 +1161,7 @@ last_checked_at: 2026-08-27T14:31:07
 ### 29 août 2026
 #### 🇱🇾 Libye - Albarq Media Service / شركة البرق للاتصالات والتقنية
 
-* **Période de l'incident :** Juin 2026, date exacte non établie
+* **Date de l'incident :** Juin 2026, date exacte non établie
 * **Date de publication initiale :** 09 juin 2026
 * **Date de découverte AFRINTEL :** 29 août 2026
 * **Acteur / Groupe :** Richard2002

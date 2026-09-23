@@ -3,7 +3,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in September 2026 (3 records)
+# List of African cyberattack victims in September 2026 (4 records)
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
@@ -140,6 +140,59 @@
 5. Do not test the disclosed credentials; monitor for login attempts and phishing targeting students and their families.
 
 - **Sources / Evidence:** forum post visible in a screenshot supplied on 12 September 2026 (original URL not provided); [BUC official website](https://buc.edu.eg/); [BUC official admissions page](https://buc.edu.eg/buc-admission-application-form/).
+
+### 12 September 2026
+#### 🇦🇴 Angola - SEPE: Angola's E-Government Platform
+
+- **Incident date:** Not established
+- **Initial publication date:** 12 September 2026 at 18:23 (displayed time; timezone not specified)
+- **AFRINTEL discovery date:** 22 September 2026 (supplied screenshot and local sample)
+- **Actor / Group:** Kazu (displayed account; identity and affiliation unverified)
+- **Sector:** Government / Digital public services
+- **Website:** [sepe.gov.ao](https://www.sepe.gov.ao/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence level:** High
+- **Impact level:** Level 4
+
+- **Description:** A post attributed to the Kazu account targets SEPE, Angola's official electronic public-services platform, and claims a data exposure in a ransomware-extortion context. AFRINTEL examined a local sample derived from the publication; this strengthens structural consistency and association with Angolan administrative data, but does not confirm initial access, complete exfiltration, the claimed overall volume or official confirmation by SEPE.
+
+- **Analysis:**
+
+  **Observed:** The post displayed on 12 September 2026 claims **364,841 files**, **110,021 users with personal data**, a claimed size of **179 GB**, a **USD 100,000** demand and a deadline displayed as **27 September 2026**. These figures remain actor claims. The supplied local sample contains **1,189 files** totalling **544,921,521 bytes**: 1,030 PDFs, 111 JSON files, 26 JPGs, 8 JPEGs, 7 PNGs, 4 DOCX files, 2 PPTX files and 1 file without an extension; 15 files are empty. All 111 JSON files expose a `formData` structure with identity, national-document, name, email, phone, address, birth, nationality, residence, municipality, province, employment and training-type fields. No individual content is reproduced in this record.
+
+  **Assumption:** The `sepe.gov.ao` domain, logo and platform description make an Angolan public-service target plausible. The consistency between documentary filenames and the JSON schema is compatible with administrative or application records. It does not prove that SEPE held all files, that the actor gained access through an intrusion, or that 179 GB or 110,021 users are real.
+
+  **Unknown:** initial access vector, affected systems, compromise date, number of unique individuals, actual coverage, completeness, current document validity, full disclosure, ransom payment, confirmation by SEPE or an authority, and the deadline state after the last check remain unknown.
+
+- **Observed sample scope:** 1,189 local files; 544,921,521 bytes; 111 JSON structures inspected; documents and personal data not transcribed. The sample manifest fingerprint is retained locally at `/tmp/afrintel-evidence/afr-2026-09-sepe/evidence_manifest.json`. The sample is not the full dump and cannot establish a unique-person count.
+
+- **Risk assessment:** if the claims are accurate, exposure of identity documents, contact details, education records and other administrative documents could facilitate identity fraud, targeted phishing, document fraud and harm to public-service users. AFRINTEL publishes no secret, identifier or individual document.
+
+- **Recommendations:**
+1. Preserve SEPE, IAM, API, document-storage and database logs covering the relevant period.
+2. Investigate bulk exports, privileged accounts, anomalous access and configuration changes.
+3. Revoke sessions and rotate secrets only as justified by the investigation; do not test sample data.
+4. Identify affected data categories and prepare appropriate notification and protection measures.
+5. Verify public-service integrity and monitor phishing, impersonation and document fraud.
+6. Track the deadline and any later publication without opening criminal links or negotiating with the actor.
+
+- **Sources / Evidence:** Kazu post screenshot supplied on 22 September 2026; local sample supplied and analysed read-only; [SEPE portal](https://www.sepe.gov.ao/).
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-09-12T18:23:00
+listing_last_observed_at: 2026-09-22T18:23:00
+sample_status: sample-reviewed
+deadline_at: 2026-09-27
+deadline_status: active
+disclosure_status: partial
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-09-22T18:23:00
+-->
 
 ## Inter-month follow-up note
 

@@ -14,6 +14,7 @@
 
 #### 🇪🇬 Egypt - Egyptian Local Services Portal (probable attribution)
 
+* **Incident date:** Not established
 * **Initial publication date:** 5 June 2026
 - **AFRINTEL detection date:** 1 August 2026
 * **Actor / Group:** R3D3MPTION
@@ -49,6 +50,7 @@
 
 #### 🇿🇦 South Africa - South African Reserve Bank (SARB)
 
+- **Incident date:** Not established
 - **Initial publication date:** 01 August 2026
 - **AFRINTEL detection date:** 15 August 2026
 - **Actor / Group:** NullSec Nigeria (alias "voss", forum account NullsecNg), post published on the DarkForums cybercriminal forum
@@ -109,6 +111,7 @@
 
 #### 🇪🇬 Egypt - Egyptian Football Association (EFA)
 
+* **Incident date:** Not established
 * **Initial publication date:** 26 July 2026 at 18:20 (timezone not shown)
 
 * **AFRINTEL detection date:** 01 August 2026
@@ -365,6 +368,7 @@ last_checked_at: 2026-08-04T15:55:39
 ### 05 August 2026
 #### 🇩🇿 Algeria - Ministry of Commerce
 
+- **Incident date:** Not established
 - **Initial publication date:** 05 August 2026
 - **AFRINTEL detection date:** 05 August 2026
 - **Actor / Group:** Florence, post published on a cybercriminal forum
@@ -432,6 +436,7 @@ last_checked_at: 2026-09-04
 ### 08 August 2026
 #### 🇰🇪 Kenya - Unidentified PAYGO device financing platform (Angaza-based)
 
+- **Incident date:** Not established
 - **Initial publication date:** 16 January 2026
 - **AFRINTEL detection date:** 08 August 2026
 - **Actor / Group:** OriginalCrazyOldFart, repost on a cybercriminal forum of an exposed cloud storage bucket
@@ -457,6 +462,7 @@ last_checked_at: 2026-09-04
 ### 08 August 2026
 #### 🇿🇦 South Africa - mpowa.mobi (Youth Services Platform)
 
+- **Incident date:** Not established
 - **Initial publication date:** 07 August 2026
 - **AFRINTEL detection date:** 08 August 2026
 - **Actor / Group:** exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool
@@ -621,6 +627,7 @@ last_checked_at: 2026-09-04
 ### 17 August 2026
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
+- **Incident date:** Not established
 - **Initial publication date:** 17 August 2026
 - **AFRINTEL detection date:** 18 August 2026
 - **Actor / Group:** exfilar, post published on a cybercriminal forum, operator/seller of a mass Firebase-scanning tool
@@ -738,6 +745,7 @@ last_checked_at: 2026-08-19T08:10:32
 ### August 20, 2026
 #### 🇩🇿 Algeria - Afribaba (dz.afribaba.com)
 
+- **Incident date:** Not established
 - **Initial publication date:** August 20, 2026
 - **AFRINTEL detection date:** August 20, 2026
 - **Actor / Group:** TelephoneHooliganism, post published on a cybercriminal forum
@@ -896,6 +904,7 @@ last_checked_at: 2026-09-04
 
 #### 🇲🇦 Morocco - General Directorate of National Security (DGSN) / General Directorate for Territorial Surveillance (DGST)
 
+* **Incident date:** Not established
 * **Corroborated initial publication date:** August 24, 2026
 * **AFRINTEL detection date:** August 24, 2026
 * **Actor / Group:** JabaR00t, publication relayed by the JBT2026 account on a cybercriminal forum
@@ -1156,7 +1165,7 @@ last_checked_at: 2026-08-27T14:31:07
 ### August 29, 2026
 #### 🇱🇾 Libya - Albarq Media Service / شركة البرق للاتصالات والتقنية
 
-* **Incident period:** June 2026, exact date not established
+* **Incident date:** June 2026, exact date not established
 * **Initial publication date:** June 09, 2026
 * **AFRINTEL discovery date:** August 29, 2026
 * **Actor / Group:** Richard2002
