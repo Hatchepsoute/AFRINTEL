@@ -1,65 +1,24 @@
-# AFRINTEL CTI statistics - May 2024
+# AFRINTEL CTI Statistics - May 2024
 
-👉🏾 [French version](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-## Summary
+This summary covers the month's canonical records: **9 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
 
-This statistical sheet is compiled from the 8 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+## Incident types
 
-| Indicator | Value |
+| AFRINTEL type | Records |
 |---|---:|
-| Total incidents | 8 |
 | Ransomware | 8 |
-| Data leaks | 0 |
-| Access sales | 0 |
+| Data Leak | 0 |
+| Access Sale | 0 |
+| DDoS | 0 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 6 |
-| Sectors | 7 |
-| Actors / sources | 5 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 1 |
+| **Total** | **9** |
 
-## 1. Country
-
-| Country | Incidents |
-|---|---:|
-| 🇪🇬 Egypt | 2 |
-| 🇿🇦 South Africa | 2 |
-| 🇳🇬 Nigeria | 1 |
-| 🇳🇦 Namibia | 1 |
-| 🇨🇮 Ivory Coast | 1 |
-| 🇸🇳 Senegal | 1 |
-
-## 2. Sector
-
-| Sector | Incidents |
-|---|---:|
-| Finance | 2 |
-| Construction | 1 |
-| Business Services | 1 |
-| Healthcare services | 1 |
-| Financial organizations | 1 |
-| Services | 1 |
-| Information Technologies Consulting | 1 |
-
-## 3. Actor / source
-
-| Actor / source | Incidents |
-|---|---:|
-| lockbit3 | 4 |
-| blacksuit | 1 |
-| ransomhub | 1 |
-| hunters | 1 |
-| arcusmedia | 1 |
-
-## 4. Type
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 8 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The sum across all nine canonical incident types equals the monthly total (9). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/05-may/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/05-may/README.md).
 
 **AFRINTEL** - TLP:CLEAR
-

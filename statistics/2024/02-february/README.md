@@ -1,69 +1,24 @@
-# AFRINTEL CTI statistics - February 2024
+# AFRINTEL CTI Statistics - February 2024
 
-👉🏾 [French version](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-## Summary
+This summary covers the month's canonical records: **8 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
 
-This statistical sheet is compiled from the 9 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+## Incident types
 
-| Indicator | Value |
+| AFRINTEL type | Records |
 |---|---:|
-| Total incidents | 9 |
-| Ransomware | 5 |
-| Data leaks | 4 |
-| Access sales | 0 |
+| Ransomware | 6 |
+| Data Leak | 1 |
+| Access Sale | 0 |
+| DDoS | 0 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 6 |
-| Sectors | 9 |
-| Actors / sources | 6 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **8** |
 
-## 1. Country
-
-| Country | Incidents |
-|---|---:|
-| 🇿🇦 South Africa | 2 |
-| 🇨🇮 Ivory Coast | 2 |
-| 🇪🇬 Egypt | 2 |
-| 🇹🇳 Tunisia | 1 |
-| 🇪🇹 Ethiopia | 1 |
-| 🇬🇭 Ghana | 1 |
-
-## 2. Sector
-
-| Sector | Incidents |
-|---|---:|
-| Digital Services & Telecom | 1 |
-| Technology / Software Services | 1 |
-| Manufacturing (Metallurgy) | 1 |
-| Healthcare & Research | 1 |
-| Government / Public Administration | 1 |
-| Government / Education (Teacher Training Regulation) | 1 |
-| Government / Employment Services | 1 |
-| Consumer Goods (Cosmetics) | 1 |
-| Utilities (Wastewater Management) | 1 |
-
-## 3. Actor / source
-
-| Actor / source | Incidents |
-|---|---:|
-| Tanaka, publication on an underground forum | 3 |
-| lockbit3 | 2 |
-| medusa | 1 |
-| hunters | 1 |
-| ThreatSec, publication by Tanaka on an underground forum | 1 |
-| dragonforce | 1 |
-
-## 4. Type
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 5 |
-| Data Leak | 4 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The sum across all nine canonical incident types equals the monthly total (8). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/02-february/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/02-february/README.md).
 
 **AFRINTEL** - TLP:CLEAR
-

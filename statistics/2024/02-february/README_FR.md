@@ -2,59 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 9 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **8 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
+## Types d'incident
+
+| Type AFRINTEL | Fiches |
 |---|---:|
-| Total incidents | 9 |
-| Ransomware | 5 |
-| Fuites de données | 4 |
-| Pays touchés | 6 |
-| Secteurs | 9 |
-| Acteurs / sources | 6 |
+| Ransomware | 6 |
+| Data Leak | 1 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **8** |
 
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇿🇦 Afrique du Sud | 2 |
-| 🇨🇮 Côte d'Ivoire | 2 |
-| 🇪🇬 Égypte | 2 |
-| 🇹🇳 Tunisie | 1 |
-| 🇪🇹 Éthiopie | 1 |
-| 🇬🇭 Ghana | 1 |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Technologies numériques & Télécoms | 1 |
-| Technologies / Services logiciels | 1 |
-| Industrie manufacturière (Métallurgie) | 1 |
-| Santé publique & Recherche médicale | 1 |
-| Gouvernement / Administration publique | 1 |
-| Gouvernement / Éducation (régulation de la formation des enseignants) | 1 |
-| Gouvernement / Services d'emploi | 1 |
-| Industrie cosmétique | 1 |
-| Services publics (Gestion des eaux) | 1 |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| Tanaka, publication sur un forum clandestin | 3 |
-| lockbit3 | 2 |
-| medusa | 1 |
-| hunters | 1 |
-| ThreatSec, publication de Tanaka sur un forum clandestin | 1 |
-| dragonforce | 1 |
-
-## Types
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 5 |
-| Data Leak | 4 |
+La somme des neuf types canoniques égale le total mensuel (8). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/02-february/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/02-february/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-

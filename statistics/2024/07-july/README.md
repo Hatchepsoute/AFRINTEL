@@ -1,73 +1,61 @@
-# AFRINTEL CTI statistics - July 2024
+# AFRINTEL CTI Statistics - July 2024
 
-👉🏾 [French version](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-## Summary
+This summary is calculated from the 11 canonical [July victim records](../../../CyberAttackAfrica/2024/07-july/victims.md). Incident dates and publication dates are distinguished; claims are not confirmations.
 
-This statistical sheet is compiled from the 11 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+## Indicators
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 11 |
+| Total records | 11 |
 | Ransomware | 7 |
-| Data leaks | 4 |
-| Access sales | 0 |
-| Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 7 |
-| Sectors | 10 |
-| Actors / sources | 8 |
+| Data Leak | 2 |
+| Access Sale | 1 |
+| System Intrusion | 1 |
+| Countries | 9 |
+| Normalized sectors | 8 |
+| Distinct actors / sources | 10 |
 
-## 1. Country
+## Countries
 
-| Country | Incidents |
+| Country | Records |
 |---|---:|
-| 🇿🇦 South Africa | 3 |
-| 🇩🇿 Algeria | 3 |
-| 🇹🇳 Tunisia | 1 |
-| 🇪🇹 Ethiopia | 1 |
-| 🇰🇪 Kenya | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇪🇬 Egypt | 1 |
+| Algeria | 1 |
+| Egypt | 1 |
+| Ethiopia | 1 |
+| Kenya | 1 |
+| Morocco | 1 |
+| South Africa | 3 |
+| Tunisia | 1 |
+| Uganda | 1 |
+| Zimbabwe | 1 |
+| **Total** | **11** |
 
-## 2. Sector
+## Normalized sectors
 
-| Sector | Incidents |
+| Sector | Records |
 |---|---:|
-| Services | 2 |
-| Logistics | 1 |
-| Defense / Military education | 1 |
-| Healthcare services | 1 |
-| Healthcare / Private hospital | 1 |
-| Education / Higher education | 1 |
-| Media / Web portal (travel, news, lifestyle) | 1 |
-| Rail transport / Urban Infrastructure | 1 |
-| Financial organizations | 1 |
-| Heavy industries / Mining | 1 |
+| Aviation | 1 |
+| Defense / Security | 1 |
+| Finance / Banking | 1 |
+| Government / Administration | 1 |
+| Healthcare / Medical | 1 |
+| Mining / Extractive Industries | 1 |
+| Professional / Business Services | 3 |
+| Transport / Logistics | 2 |
+| **Total** | **11** |
 
-## 3. Actor / source
+## Canonical incident types
 
-| Actor / source | Incidents |
-|---|---:|
-| Addka72424, repost of an original post attributed to FriendlyChemist, published on a cybercriminal forum | 3 |
-| madliberator | 2 |
-| killsec | 1 |
-| TheColorYellow, post published on RaidForums | 1 |
-| blacksuit | 1 |
-| hunters | 1 |
-| lockbit3 | 1 |
-| ransomhouse | 1 |
-
-## 4. Type
-
-| Type | Incidents |
+| Type | Records |
 |---|---:|
 | Ransomware | 7 |
-| Data Leak | 4 |
+| Data Leak | 2 |
+| Access Sale | 1 |
+| System Intrusion | 1 |
+| **Total** | **11** |
 
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The WordPress administrator access offer concerning Uganda's Ministry of Education is classified as Access Sale (1), based on the post dated July 12, 2024; the existence and validity of the access are not confirmed. Annual reference breakdowns are available in the [2024 annual report](../../../CyberAttackAfrica/2024/README.md).
 
 **AFRINTEL** - TLP:CLEAR
-

@@ -2,70 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 12 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **8 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
+## Types d'incident
+
+| Type AFRINTEL | Fiches |
 |---|---:|
-| Total incidents | 12 |
-| Ransomware | 3 |
-| Fuites de données | 9 |
-| Pays touchés | 10 |
-| Secteurs | 12 |
-| Acteurs / sources | 10 |
+| Ransomware | 4 |
+| Data Leak | 1 |
+| Access Sale | 1 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 2 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **8** |
 
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇿🇦 Afrique du Sud | 3 |
-| 🇰🇪 Kenya | 1 |
-| 🇩🇿 Algérie | 1 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇲🇦 Maroc | 1 |
-| 🇷🇼 Rwanda | 1 |
-| 🇬🇭 Ghana | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇪🇬 Égypte | 1 |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Médias / Audiovisuel | 1 |
-| Éducation / Enseignement supérieur | 1 |
-| E-commerce / Retail | 1 |
-| Technologie / Communauté en ligne | 1 |
-| Gouvernement / Administration publique | 1 |
-| Gouvernement / Renseignement financier / Lutte anti-blanchiment | 1 |
-| Société civile / Gouvernance / Organisation à but non lucratif | 1 |
-| Éducation / Enseignement supérieur / Recherche | 1 |
-| Industrie automobile & Distribution | 1 |
-| Automobile & Services de maintenance | 1 |
-| Commerce de détail / Électronique | 1 |
-| Audit, Conseil & Comptabilité | 1 |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| lockbit3 | 3 |
-| Tanaka | 1 |
-| zebi, republication sur un forum cybercriminel | 1 |
-| Tanaka, publication sur le forum SQL.ticanalyse.org | 1 |
-| r57 | 1 |
-| Milad, publication sur un forum cybercriminel (compte depuis affiché comme banni) | 1 |
-| DataHoes, publication sur un forum cybercriminel | 1 |
-| X0Frankenstein, publication sur un forum cybercriminel | 1 |
-| cnHunter, publication sur un forum cybercriminel | 1 |
-| Tanaka, publication sur un forum cybercriminel (RaidForums) | 1 |
-
-## Types
-
-| Type | Incidents |
-|---|---:|
-| Data Leak | 9 |
-| Ransomware | 3 |
+La somme des neuf types canoniques égale le total mensuel (8). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/01-january/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/01-january/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-

@@ -2,67 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 12 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **11 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
-|---|---:|
-| Total incidents | 12 |
-| Ransomware | 8 |
-| Fuites de données | 4 |
-| Pays touchés | 8 |
-| Secteurs | 12 |
-| Acteurs / sources | 9 |
+## Types d'incident
 
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇿🇦 Afrique du Sud | 4 |
-| 🇩🇿 Algérie | 2 |
-| 🇲🇬 Madagascar | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇬🇭 Ghana | 1 |
-| 🇱🇾 Libye | 1 |
-| 🇲🇦 Maroc | 1 |
-| 🇪🇬 Égypte | 1 |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Éducation / Enseignement supérieur | 1 |
-| Conseil en technologies de l'information | 1 |
-| Éducation / Écoles | 1 |
-| Technologies / Mobilité et livraison | 1 |
-| Santé / Services médicaux | 1 |
-| Industrie minière / Équipements industriels | 1 |
-| Industrie / Fournitures industrielles | 1 |
-| Énergie / Production électrique | 1 |
-| Gouvernement / Ministère de l'Intérieur | 1 |
-| Gouvernement / Éducation nationale | 1 |
-| Éducation / Hébergement étudiant | 1 |
-| Services juridiques / Cabinet d'avocats | 1 |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| ransomhub | 2 |
-| killsec | 2 |
-| sarcoma | 2 |
-| Tanaka | 1 |
-| blacksuit | 1 |
-| Moroccan Empire ; republié par AmeliaBeaumont sur un forum cybercriminel | 1 |
-| bxxxx1 | 1 |
-| raworld | 1 |
-| RainbowBF | 1 |
-
-## Types
-
-| Type | Incidents |
+| Type AFRINTEL | Fiches |
 |---|---:|
 | Ransomware | 8 |
-| Data Leak | 4 |
+| Data Leak | 2 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **11** |
+
+La somme des neuf types canoniques égale le total mensuel (11). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/10-october/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/10-october/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-

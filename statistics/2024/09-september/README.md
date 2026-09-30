@@ -1,63 +1,24 @@
-# AFRINTEL CTI statistics - September 2024
+# AFRINTEL CTI Statistics - September 2024
 
-👉🏾 [French version](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-## Summary
+This summary covers the month's canonical records: **6 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
 
-This statistical sheet is compiled from the 5 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+## Incident types
 
-| Indicator | Value |
+| AFRINTEL type | Records |
 |---|---:|
-| Total incidents | 5 |
-| Ransomware | 4 |
-| Data leaks | 1 |
-| Access sales | 0 |
+| Ransomware | 5 |
+| Data Leak | 0 |
+| Access Sale | 0 |
+| DDoS | 0 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 5 |
-| Sectors | 5 |
-| Actors / sources | 5 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **6** |
 
-## 1. Country
-
-| Country | Incidents |
-|---|---:|
-| 🇸🇳 Senegal | 1 |
-| 🇨🇲 Cameroon | 1 |
-| 🇲🇺 Mauritius | 1 |
-| 🇹🇳 Tunisia | 1 |
-| 🇳🇬 Nigeria | 1 |
-
-## 2. Sector
-
-| Sector | Incidents |
-|---|---:|
-| Technologies | 1 |
-| Government / Social Security | 1 |
-| Telecommunications | 1 |
-| Manufacturing (Plastics) | 1 |
-| Defense / National Security | 1 |
-
-## 3. Actor / source
-
-| Actor / source | Incidents |
-|---|---:|
-| hunters | 1 |
-| spacebears | 1 |
-| arcusmedia | 1 |
-| orca | 1 |
-| NizaarFarah (source account) | 1 |
-
-## 4. Type
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 4 |
-| Data Leak | 1 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The sum across all nine canonical incident types equals the monthly total (6). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/09-september/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/09-september/README.md).
 
 **AFRINTEL** - TLP:CLEAR
-

@@ -2,45 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 3 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **3 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
-|---|---:|
-| Total incidents | 3 |
-| Ransomware | 3 |
-| Fuites de données | 0 |
-| Pays touchés | 2 |
-| Secteurs | 3 |
-| Acteurs / sources | 3 |
+## Types d'incident
 
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇿🇦 Afrique du Sud | 2 |
-| 🇨🇬 Congo | 1 |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Agriculture and agribusiness | 1 |
-| Services | 1 |
-| Attorney | 1 |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| arcusmedia | 1 |
-| eldorado | 1 |
-| cactus | 1 |
-
-## Types
-
-| Type | Incidents |
+| Type AFRINTEL | Fiches |
 |---|---:|
 | Ransomware | 3 |
+| Data Leak | 0 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **3** |
+
+La somme des neuf types canoniques égale le total mensuel (3). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/06-june/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/06-june/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-

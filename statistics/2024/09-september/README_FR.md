@@ -2,53 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 5 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **6 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
+## Types d'incident
+
+| Type AFRINTEL | Fiches |
 |---|---:|
-| Total incidents | 5 |
-| Ransomware | 4 |
-| Fuites de données | 1 |
-| Pays touchés | 5 |
-| Secteurs | 5 |
-| Acteurs / sources | 5 |
+| Ransomware | 5 |
+| Data Leak | 0 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **6** |
 
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇸🇳 Sénégal | 1 |
-| 🇨🇲 Cameroun | 1 |
-| 🇲🇺 Maurice | 1 |
-| 🇹🇳 Tunisie | 1 |
-| 🇳🇬 Nigeria | 1 |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Technologies / Développement logiciel | 1 |
-| Gouvernement / Sécurité sociale | 1 |
-| Télécommunications | 1 |
-| Industrie manufacturière / Plasturgie | 1 |
-| Défense / Sécurité Nationale | 1 |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| hunters | 1 |
-| spacebears | 1 |
-| arcusmedia | 1 |
-| orca | 1 |
-| NizaarFarah (compte source) | 1 |
-
-## Types
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 4 |
-| Data Leak | 1 |
+La somme des neuf types canoniques égale le total mensuel (6). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/09-september/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/09-september/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-
