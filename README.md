@@ -43,15 +43,15 @@ The report includes follow-up information recorded through **14 September 2026**
 
 📦 [August 2026 STIX 2.1 / OpenCTI bundle](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
-### Victim record added — September 2026
+### September 2026 — Follow-up in progress
 
-AFRINTEL added **SEPE, Angola's e-government platform**, following a ransomware publication attributed to the Kazu account. The examined local sample contains **1,189 files** and presents a consistent administrative structure, but the claimed volumes, initial access, complete exfiltration and official confirmation remain unknown.
+The provisional corpus contains **eleven records**. Cases under follow-up include FCT-IRS and MDCN (Nigeria), SEPE (Angola), Apollo 21 and ARCA Unlimited (South Africa), TikoHUB (Kenya), AFRICA-TECH (Mali), and Pharma 5 (Morocco). September follow-up is **in progress**; the final CTI report and statistics will be published once the monthly corpus is closed. The examined SEPE sample contains **1,189 files**. The TikoHUB access offer remains unconfirmed. For AFRICA-TECH, all files released by N0n on **25 September 2026 at 16:00 GMT (UTC)**, according to the supplied collection information, were provided and reviewed: **10 files, including 6 PDFs totalling 39 pages**, amounting to **2,413,673 bytes**. The batch contains banking, identity, travel, insurance and professional documents. Status is **Data Fully Published**; encryption and operational effects remain unestablished. For Pharma 5, an INC Ransom listing dated **25 September 2026** claims approximately **50 GB**; one quality-control document page and a gallery of previews were reviewed, without validating the claimed volume or acquisition method. For Apollo 21, the BLACKLOCKS listing dated **19 September 2026** claims **400 GB**; **12 reviewed sample images** show commercial, financial and identity documents without validating the claimed volume. For ARCA Unlimited, BLACKLOCKS displays **400G** on an entry dated **22 September 2026**; **17 reviewed sample images** show plans and project documents without validating the unit or the claimed volume. For MDCN, a forum post dated **3 September 2026** claims **65,580 unique users**; the supplied text excerpt contains **50 rows** without validating the total count or data origin. For FCT-IRS, a post dated **21 September 2026** claims a full breach; a 314-page PDF was extracted and reviewed without establishing completeness or initial access.
 
-📋 [SEPE victim record - September 2026](CyberAttackAfrica/2026/09-september/victims.md)
+📋 [September 2026 victim records](CyberAttackAfrica/2026/09-september/victims.md)
 
 📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
-*The September CTI report and statistics will be published separately once the monthly corpus is closed.*
+*Month status: In Progress. The September CTI report and statistics will be published once the monthly corpus is closed.*
 
 ### First-half 2026 cyber threat report
 
@@ -77,10 +77,10 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 | Year | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
-| 2024 | **120** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
 | 2025 | **225** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**2024 corrected baseline:** **120 canonical incidents across 30 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 4 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
+**2024 corrected baseline:** **121 canonical incidents across 31 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
 
 **2025 validated baseline:** **225 canonical incidents across 30 African countries**: 121 Ransomware, 81 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **113**.
 

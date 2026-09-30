@@ -1,77 +1,24 @@
-# AFRINTEL CTI statistics - August 2024
+# AFRINTEL CTI Statistics - August 2024
 
-👉🏾 [French version](./README_FR.md)
+👉🏾 [Version française](./README_FR.md)
 
-## Summary
+This summary covers the month's canonical records: **16 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
 
-This statistical sheet is compiled from the 15 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+## Incident types
 
-| Indicator | Value |
-|---|---:|
-| Total incidents | 15 |
-| Ransomware | 14 |
-| Data leaks | 1 |
-| Access sales | 0 |
-| Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 8 |
-| Sectors | 11 |
-| Actors / sources | 10 |
-
-## 1. Country
-
-| Country | Incidents |
-|---|---:|
-| 🇿🇦 South Africa | 6 |
-| 🇸🇨 Seychelles | 2 |
-| 🇿🇼 Zimbabwe | 2 |
-| 🇹🇳 Tunisia | 1 |
-| 🇨🇮 Ivory Coast | 1 |
-| 🇰🇪 Kenya | 1 |
-| 🇩🇯 Djibouti | 1 |
-| 🇬🇭 Ghana | 1 |
-
-## 2. Sector
-
-| Sector | Incidents |
-|---|---:|
-| Retail (distribution) | 3 |
-| Finance | 2 |
-| Telecommunications | 2 |
-| Healthcare services | 1 |
-| Events / Digital platform / Business services | 1 |
-| Services | 1 |
-| Financial organizations | 1 |
-| Shops | 1 |
-| Government and administrations | 1 |
-| Banking institutions | 1 |
-| Technologies | 1 |
-
-## 3. Actor / source
-
-| Actor / source | Incidents |
-|---|---:|
-| darkvault | 3 |
-| meow | 2 |
-| ransomhub | 2 |
-| killsec | 2 |
-| lockbit3 | 1 |
-| hunters | 1 |
-| Bambi, post published on a cybercriminal forum | 1 |
-| spacebears | 1 |
-| incransom | 1 |
-| BrainCipher | 1 |
-
-## 4. Type
-
-| Type | Incidents |
+| AFRINTEL type | Records |
 |---|---:|
 | Ransomware | 14 |
 | Data Leak | 1 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 1 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **16** |
 
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+The sum across all nine canonical incident types equals the monthly total (16). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/08-august/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/08-august/README.md).
 
 **AFRINTEL** - TLP:CLEAR
-

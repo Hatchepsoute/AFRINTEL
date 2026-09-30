@@ -1,4 +1,4 @@
-# AFRINTEL Cyber Incidents - July 2024 - canonical corpus (10 records)
+# AFRINTEL Cyber Incidents - July 2024 - canonical corpus (11 records)
 
 👉🏾 [Version française](./victims_FR.md)
 
@@ -75,6 +75,42 @@
 - **Public sources:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
 ----------------------------
+
+### July 12, 2024
+#### 🇺🇬 Uganda - Ministry of Education and Sports
+
+- **Incident date:** Not established; the date below is the access-offer publication date
+- **Initial publication date:** July 12, 2024 at 06:53 (displayed time; timezone not specified)
+- **AFRINTEL discovery date:** September 25, 2026 (supplied screenshot)
+- **Actor / Group:** 303 (displayed forum account; identity and affiliation unverified)
+- **Sector:** Government / Administration
+- **Website:** [education.go.ug](https://www.education.go.ug/)
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Subtype:** WordPress administrator access offer
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+
+- **Description:** Uganda's Ministry of Education and Sports is presented in the post as the target of a WordPress administrator-access offer associated with `education.go.ug`.
+
+- **Analysis:**
+
+  **Observed:** The supplied screenshot shows a forum post titled “Uganda Ministry of Education WordPress Access (Administration Account)”, attributed to the **303** account and timestamped 12 July 2024 at 06:53, with an edit displayed at 06:54. It cites `https://www.education.go.ug/` and advertises WordPress administrator access. The area containing the credentials is hidden by the forum and was not accessed, reproduced or tested.
+
+  **Assumption:** The post title and cited domain make a link to Uganda's ministry plausible. They do not establish that the access was real, current, administrative, or related to the ministry's infrastructure rather than a third-party component.
+
+  **Unknown:** credential validity, actual privileges, access-acquisition vector and date, affected systems, any content modification, data exposure, exploitation, and confirmation by the ministry or an authority remain unknown.
+
+- **Risk assessment:** if authentic, WordPress administrator access could enable modification of public content, dissemination of false information, use of the site for phishing, or access to site-management data. The post does not confirm any of these effects.
+
+- **Recommendations:**
+1. Preserve WordPress, hosting, WAF, authentication and administration logs covering July 2024 and any period still available.
+2. Review administrator accounts, roles, plugins, themes, SFTP or hosting access, and content or configuration changes.
+3. Reset administration access and revoke sessions as justified by the ministry's defensive investigation; enable phishing-resistant MFA where feasible.
+4. Do not attempt to retrieve, view or test the advertised credentials.
+5. Monitor for defacement, fraudulent content and phishing campaigns impersonating ministry services.
+
+- **Sources / Evidence:** forum post visible in the screenshot supplied on 25 September 2026; the original URL and hidden content were not accessed.
 
 ### July 13, 2024
 #### 🇰🇪 Kenya - Kenya urban roads authority

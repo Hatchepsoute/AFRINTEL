@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - Juillet 2024 - corpus canonique (10 fiches)
+# Cyberincidents AFRINTEL - Juillet 2024 - corpus canonique (11 fiches)
 
 👉🏾 [English version](./victims.md)
 
@@ -75,6 +75,42 @@
 - **Sources publiques:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
 ----------------------------
+
+### 12 Juillet 2024
+#### 🇺🇬 Ouganda - Ministère de l'Éducation et des Sports
+
+- **Date de l'incident :** Non établie ; la date ci-dessous correspond à la publication de l'offre d'accès
+- **Date de publication initiale :** 12 juillet 2024 à 06:53 (heure affichée ; fuseau non indiqué)
+- **Date de découverte AFRINTEL :** 25 septembre 2026 (capture fournie)
+- **Acteur / Groupe :** 303 (compte de forum affiché ; identité et affiliation non vérifiées)
+- **Secteur :** Gouvernement / Administration
+- **Site web :** [education.go.ug](https://www.education.go.ug/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Access Sale
+- **Sous-type :** Offre d'accès administrateur WordPress
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+
+- **Description :** Le Ministère de l'Éducation et des Sports de l'Ouganda est présenté dans la publication comme la cible d'une offre d'accès administrateur WordPress associée à `education.go.ug`.
+
+- **Analyse :**
+
+  **Observed :** La capture fournie montre une publication de forum intitulée « Uganda Ministry of Education WordPress Access (Administration Account) », attribuée au compte **303** et horodatée au 12 juillet 2024 à 06:53, avec une modification affichée à 06:54. Elle cite le site `https://www.education.go.ug/` et annonce un accès WordPress administrateur. La zone contenant les identifiants est masquée par le forum et n'a pas été consultée, reproduite ni testée.
+
+  **Assumption :** Le nom de la publication et le domaine cité rendent plausible un lien avec le ministère ougandais. Ils ne permettent pas d'établir que l'accès était réel, actuel, administrateur, ni qu'il concernait l'infrastructure du ministère plutôt qu'un composant tiers.
+
+  **Unknown :** la validité des identifiants, les privilèges effectifs, le vecteur et la date d'obtention de l'accès, les systèmes concernés, toute modification de contenu, toute exposition de données, toute exploitation et toute confirmation du ministère ou d'une autorité restent inconnus.
+
+- **Évaluation des risques :** si l'offre était authentique, un accès administrateur WordPress pourrait permettre la modification de contenus publics, la diffusion de fausses informations, l'usage du site pour le phishing ou l'accès à des données liées à la gestion du site. La publication ne confirme aucun de ces effets.
+
+- **Recommandations :**
+1. Préserver les journaux WordPress, d'hébergement, WAF, authentification et administration couvrant juillet 2024 et toute période encore disponible.
+2. Examiner les comptes administrateurs, les rôles, les extensions, les thèmes, les accès SFTP ou d'hébergement et les modifications de contenu ou de configuration.
+3. Réinitialiser les accès d'administration et révoquer les sessions selon l'enquête défensive du ministère ; activer une MFA résistante au phishing lorsque possible.
+4. Ne pas tenter de récupérer, consulter ou tester les identifiants annoncés.
+5. Surveiller les défacements, contenus frauduleux et campagnes de phishing imitant les services du ministère.
+
+- **Sources / Éléments de preuve :** publication de forum visible dans la capture fournie le 25 septembre 2026 ; URL originale et contenu masqué non consultés.
 
 ### 13 Juillet 2024
 #### 🇰🇪 Kenya - Kenya urban roads authority (KURA)

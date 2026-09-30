@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - 2024 - corpus canonique (120 fiches)
+# Cyberincidents AFRINTEL - 2024 - corpus canonique (121 fiches)
 
 ### 2 Janvier 2024
 
@@ -879,6 +879,24 @@
 - **Sources publiques:** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
 ----------------------------
+
+### 12 Juillet 2024
+#### 🇺🇬 Ouganda - Ministère de l'Éducation et des Sports
+
+- **Date de l'incident :** Non établie ; la date ci-dessous correspond à la publication de l'offre d'accès
+- **Date de publication initiale :** 12 juillet 2024 à 06:53 (heure affichée ; fuseau non indiqué)
+- **Date de découverte AFRINTEL :** 25 septembre 2026 (capture fournie)
+- **Acteur / Groupe :** 303 (compte de forum affiché ; identité et affiliation non vérifiées)
+- **Secteur :** Gouvernement / Administration
+- **Site web :** [education.go.ug](https://www.education.go.ug/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Access Sale
+- **Sous-type :** Offre d'accès administrateur WordPress
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+- **Description :** Le Ministère de l'Éducation et des Sports de l'Ouganda est présenté dans la publication comme la cible d'une offre d'accès administrateur WordPress associée à `education.go.ug`.
+- **Analyse :** La capture fournie montre une publication de forum intitulée « Uganda Ministry of Education WordPress Access (Administration Account) », attribuée au compte 303 et horodatée au 12 juillet 2024 à 06:53, avec une modification affichée à 06:54. Elle cite `https://www.education.go.ug/` et annonce un accès WordPress administrateur. La zone contenant les identifiants est masquée par le forum et n'a été ni consultée, ni reproduite, ni testée. Le titre et le domaine rendent un lien avec le ministère plausible, mais ne confirment ni la validité, ni les privilèges, ni l'origine de l'accès, ni une modification de contenu ou une exposition de données. Si l'offre était authentique, elle pourrait créer un risque de modification de contenus publics, de désinformation ou de phishing. L'URL originale et le contenu masqué n'ont pas été consultés.
+- **Source / provenance :** publication de forum visible dans la capture fournie le 25 septembre 2026.
 
 ### 13 Juillet 2024
 #### 🇰🇪 Kenya - Kenya urban roads authority (KURA)

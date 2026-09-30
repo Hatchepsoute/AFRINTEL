@@ -2,64 +2,60 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 11 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse est calculée à partir des 11 fiches canoniques de [victimes de juillet](../../../CyberAttackAfrica/2024/07-july/victims_FR.md). La date de l'incident et la date de publication sont distinguées ; les revendications ne valent pas confirmation.
+
+## Indicateurs
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 11 |
+| Total de fiches | 11 |
 | Ransomware | 7 |
-| Fuites de données | 4 |
-| Pays touchés | 7 |
-| Secteurs | 11 |
-| Acteurs / sources | 8 |
+| Data Leak | 2 |
+| Access Sale | 1 |
+| System Intrusion | 1 |
+| Pays | 9 |
+| Secteurs normalisés | 8 |
+| Acteurs / sources distincts | 10 |
 
 ## Pays
 
-| Pays | Incidents |
+| Pays | Fiches |
 |---|---:|
-| 🇿🇦 Afrique du Sud | 3 |
-| 🇩🇿 Algérie | 3 |
-| 🇹🇳 Tunisie | 1 |
-| 🇪🇹 Éthiopie | 1 |
-| 🇰🇪 Kenya | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇪🇬 Égypte | 1 |
+| Afrique du Sud | 3 |
+| Algérie | 1 |
+| Égypte | 1 |
+| Éthiopie | 1 |
+| Kenya | 1 |
+| Maroc | 1 |
+| Ouganda | 1 |
+| Tunisie | 1 |
+| Zimbabwe | 1 |
+| **Total** | **11** |
 
-## Secteurs
+## Secteurs normalisés
 
-| Secteur | Incidents |
+| Secteur | Fiches |
 |---|---:|
-| Logistique & Chaîne d'approvisionnement | 1 |
-| Défense / Enseignement militaire | 1 |
-| Santé / Services de laboratoires médicaux publics | 1 |
-| Santé / Établissement hospitalier privé | 1 |
-| Éducation / Enseignement supérieur | 1 |
-| Médias / Portail web (voyage, actualités, style de vie) | 1 |
-| Infrastructures publiques / Transport routier urbain | 1 |
-| Institutions financières / Banque & Assurance | 1 |
-| Services de conseil urbain / Développement territorial | 1 |
-| Services aux entreprises / Conseil | 1 |
-| Industrie lourde / Extraction minière (Or & Métaux du groupe du platine) | 1 |
+| Services professionnels / Business | 3 |
+| Transport / Logistique | 2 |
+| Aviation | 1 |
+| Défense / Sécurité | 1 |
+| Finance / Banque | 1 |
+| Gouvernement / Administration | 1 |
+| Mines / Industries extractives | 1 |
+| Santé / Médical | 1 |
+| **Total** | **11** |
 
-## Acteurs / sources
+## Types canoniques
 
-| Acteur / source | Incidents |
-|---|---:|
-| Addka72424, republication d'un post initial attribué à FriendlyChemist, sur un forum cybercriminel | 3 |
-| madliberator | 2 |
-| killsec | 1 |
-| TheColorYellow, publication postée sur RaidForums | 1 |
-| blacksuit | 1 |
-| hunters | 1 |
-| lockbit3 | 1 |
-| ransomhouse | 1 |
-
-## Types
-
-| Type | Incidents |
+| Type | Fiches |
 |---|---:|
 | Ransomware | 7 |
-| Data Leak | 4 |
+| Data Leak | 2 |
+| Access Sale | 1 |
+| System Intrusion | 1 |
+| **Total** | **11** |
+
+L'offre d'accès WordPress concernant le ministère ougandais est comptée comme Access Sale (1), sur la base de la publication datée du 12 juillet 2024 ; l'existence ou la validité de l'accès n'est pas confirmée. Les ventilations annuelles de référence figurent dans le [rapport annuel 2024](../../../CyberAttackAfrica/2024/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR
-

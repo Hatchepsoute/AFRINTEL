@@ -7,7 +7,7 @@
       "spec_version": "2.1",
       "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "AFRINTEL",
       "identity_class": "organization",
       "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
@@ -23,7 +23,7 @@
       "spec_version": "2.1",
       "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
       "created": "2024-01-01T00:00:00Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "Adama ASSIONGBON",
       "identity_class": "individual",
       "roles": [
@@ -42,9 +42,176 @@
     {
       "type": "threat-actor",
       "spec_version": "2.1",
+      "id": "threat-actor--b00995bb-ef6e-5d38-a421-b401e40aca63",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "cattier (displayed forum account; identity unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--222c99d3-08bf-588c-8b3a-62509ac74740",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "Medical and Dental Council of Nigeria (MDCN)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Healthcare / Medical and dental professional regulation.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Nigéria. Secteur : Santé / Régulation des professions médicales et dentaires.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "nigeria",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://mdcn.gov.ng"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigéria",
+      "x_afrintel_organization_fr": "Medical and Dental Council of Nigeria (MDCN)",
+      "x_afrintel_sector_raw": "Santé / Régulation des professions médicales et dentaires",
+      "x_afrintel_sector_raw_en": "Healthcare / Medical and dental professional regulation",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--6443924c-0cc1-5dab-a539-8b45a9afdb8f",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 01: Medical and Dental Council of Nigeria (MDCN)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Medical and Dental Council of Nigeria (MDCN) in Nigeria on 03 September 2026. The source actor is listed as cattier (displayed forum account; identity unverified). Status: Claim - Data Sample Published. Sector: Healthcare / Medical and dental professional regulation. Source summary: An account named cattier posted an offer titled “Medical and Dental Council of Nigeria 65K” and attributes data on 65,580 unique users to mdcn.gov.ng. A sample of healthcare-practitioner records is visible, and 50 rows were supplied as text. This establishes the existence of the post and the type of data presented; it does not confirm that 65,580 distinct people are affected or that MDCN systems were intruded upon.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Medical and Dental Council of Nigeria (MDCN) en Nigéria, à la date du 03 septembre 2026. L'acteur source est indiqué comme cattier (compte de forum affiché ; identité non vérifiée). Statut : Claim - Data Sample Published. Secteur : Santé / Régulation des professions médicales et dentaires. Résumé de la source : Un compte nommé cattier a publié une offre intitulée « Medical and Dental Council of Nigeria 65K » et attribue au domaine mdcn.gov.ng des données concernant 65 580 utilisateurs uniques. Un extrait de dossiers de professionnels de santé est visible et 50 lignes ont été communiquées en texte. Ces éléments établissent l'existence de la publication et la nature des données présentées ; ils ne confirment ni que 65 580 personnes distinctes sont concernées, ni une intrusion dans les systèmes du MDCN.",
+      "first_seen": "2026-09-03T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "nigeria",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://mdcn.gov.ng"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigéria",
+      "x_afrintel_sector_raw": "Santé / Régulation des professions médicales et dentaires",
+      "x_afrintel_sector_raw_en": "Healthcare / Medical and dental professional regulation",
+      "x_afrintel_actor": "cattier (displayed forum account; identity unverified)",
+      "x_afrintel_actor_fr": "cattier (compte de forum affiché ; identité non vérifiée)",
+      "x_afrintel_date_display": "03 septembre 2026",
+      "x_afrintel_date_display_en": "03 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f7ddda3c-90f9-526b-8113-49e1288ecc50",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--6443924c-0cc1-5dab-a539-8b45a9afdb8f",
+      "target_ref": "threat-actor--b00995bb-ef6e-5d38-a421-b401e40aca63",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--34909cca-4cbc-5587-818d-395835ef780d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--b00995bb-ef6e-5d38-a421-b401e40aca63",
+      "target_ref": "identity--222c99d3-08bf-588c-8b3a-62509ac74740",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d42ed552-56a1-5ac9-bb6c-761a88996d1a",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--6443924c-0cc1-5dab-a539-8b45a9afdb8f",
+      "target_ref": "identity--222c99d3-08bf-588c-8b3a-62509ac74740",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
       "id": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "sainttrojan (displayed forum account; identity and group affiliation unverified)",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -72,9 +239,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "identity--7f5fc648-1b10-53ee-99e1-98a5e53b7750",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "Data attributed to Madinaty owners/residents (source organisation unidentified)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Real estate / Residential community / Property management.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Immobilier / Communauté résidentielle / Gestion immobilière.",
@@ -108,10 +275,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
-      "name": "AFRINTEL September 2026 incident 01: Data attributed to Madinaty owners/residents (source organisation unidentified)",
+      "id": "incident--a26ac79c-18ee-5107-8dae-f543837b27dc",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 02: Data attributed to Madinaty owners/residents (source organisation unidentified)",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Data attributed to Madinaty owners/residents (source organisation unidentified) in Egypt on 04 September 2026. The source actor is listed as sainttrojan (displayed forum account; identity and group affiliation unverified). Status: Claim - Data Sample Published. Sector: Real estate / Residential community / Property management. Source summary: Madinaty is a residential urban development in Egypt that Talaat Moustafa Group presents among its projects in the country. This establishes geographic context; it does not identify the organisation that collected or held the data, or confirm that Talaat Moustafa Group was compromised. (Talaat Moustafa Group overview)\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée) en Égypte, à la date du 04 septembre 2026. L'acteur source est indiqué comme sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées). Statut : Claim - Data Sample Published. Secteur : Immobilier / Communauté résidentielle / Gestion immobilière. Résumé de la source : Madinaty est un projet urbain résidentiel en Égypte que le groupe Talaat Moustafa présente parmi ses projets dans le pays. Cette information situe le contexte géographique ; elle ne permet pas d'identifier l'organisation ayant collecté ou détenu les données ni de confirmer que le groupe Talaat Moustafa a été compromis. (Présentation du groupe Talaat Moustafa)",
       "first_seen": "2026-09-04T00:00:00Z",
       "labels": [
@@ -136,7 +303,7 @@
         }
       ],
       "x_opencti_incident_type": "data-leak",
-      "x_afrintel_incident_index": 1,
+      "x_afrintel_incident_index": 2,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Egypt",
       "x_afrintel_country_fr": "Égypte",
@@ -154,11 +321,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--f7ddda3c-90f9-526b-8113-49e1288ecc50",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--96b3582a-c515-58b2-bdaf-7fe67898fe37",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
+      "source_ref": "incident--a26ac79c-18ee-5107-8dae-f543837b27dc",
       "target_ref": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -168,12 +335,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--34909cca-4cbc-5587-818d-395835ef780d",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--53e3e516-c6bf-51c7-90fd-ebe80dd6a98f",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--df41febd-142d-5312-a67d-36eaf3e5419d",
-      "target_ref": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
+      "target_ref": "identity--7f5fc648-1b10-53ee-99e1-98a5e53b7750",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -182,12 +349,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--d42ed552-56a1-5ac9-bb6c-761a88996d1a",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--c84aa993-2cdb-5329-9169-7e0e62bd3d7d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
-      "source_ref": "incident--db9431e5-734f-5d55-81eb-8ea6aa3c9adc",
-      "target_ref": "identity--e5d2bae9-b6fc-5d27-bcc4-19426a28258f",
+      "source_ref": "incident--a26ac79c-18ee-5107-8dae-f543837b27dc",
+      "target_ref": "identity--7f5fc648-1b10-53ee-99e1-98a5e53b7750",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -197,8 +364,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "xNov",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -226,9 +393,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "identity--5a70d002-796f-57f6-88a4-21ad6dc2003d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "Centre Atlantique Formation",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Education / Vocational and professional training.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Éducation / Formation professionnelle.",
@@ -266,10 +433,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
-      "name": "AFRINTEL September 2026 incident 02: Centre Atlantique Formation",
+      "id": "incident--6660cd63-10d5-50ef-b847-2b34078d8b66",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 03: Centre Atlantique Formation",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Centre Atlantique Formation in Morocco on 06 September 2026. The source actor is listed as xNov. Status: Claim - Data Sample Published. Sector: Education / Vocational and professional training. Source summary: Centre Atlantique Formation is a Moroccan vocational and professional training organisation offering practical training in several fields through multiple centres. Observed records reference automotive diagnostics, accounting, graphic design, cooking, pastry, hairdressing, fashion design, office computing, welding, plumbing, medical assistance and other vocational courses.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Centre Atlantique Formation en Maroc, à la date du 06 septembre 2026. L'acteur source est indiqué comme xNov. Statut : Claim - Data Sample Published. Secteur : Éducation / Formation professionnelle. Résumé de la source : Centre Atlantique Formation est un organisme marocain de formation professionnelle proposant des formations pratiques dans plusieurs domaines et au sein de différents centres. Les enregistrements observés font notamment référence au diagnostic automobile, à la comptabilité, l'infographie, la cuisine, la pâtisserie, la coiffure, au stylisme et modélisme, à l'informatique bureautique, la soudure, la plomberie et l'assistance médicale.",
       "first_seen": "2026-09-06T00:00:00Z",
       "labels": [
@@ -298,7 +465,7 @@
         }
       ],
       "x_opencti_incident_type": "data-leak",
-      "x_afrintel_incident_index": 2,
+      "x_afrintel_incident_index": 3,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Morocco",
       "x_afrintel_country_fr": "Maroc",
@@ -316,11 +483,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--96b3582a-c515-58b2-bdaf-7fe67898fe37",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--75c69872-e02d-5be6-9b85-fc23a5154bf8",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
+      "source_ref": "incident--6660cd63-10d5-50ef-b847-2b34078d8b66",
       "target_ref": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -330,12 +497,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--53e3e516-c6bf-51c7-90fd-ebe80dd6a98f",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--f916b719-ced2-5460-bc53-9bc12ca97321",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--eb449a36-a767-506c-9d09-dd20e282dd36",
-      "target_ref": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
+      "target_ref": "identity--5a70d002-796f-57f6-88a4-21ad6dc2003d",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -344,12 +511,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--c84aa993-2cdb-5329-9169-7e0e62bd3d7d",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--3ebbc461-b642-5239-843d-af3dae63a0c8",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
-      "source_ref": "incident--0a8806f8-f966-50d9-836a-2aefc8351663",
-      "target_ref": "identity--f78bd5fb-6a31-5621-ac59-47bced629df4",
+      "source_ref": "incident--6660cd63-10d5-50ef-b847-2b34078d8b66",
+      "target_ref": "identity--5a70d002-796f-57f6-88a4-21ad6dc2003d",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -358,9 +525,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--9d157da4-0017-56cd-a55b-f9a79ba0e2b5",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "identity--d9e7f6ee-3da8-5d6a-aafe-4ee39004b27e",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "Badr University in Cairo (BUC)",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Education / Higher education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Éducation / Enseignement supérieur.",
@@ -398,10 +565,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--6a1b14d2-65c5-502f-857f-fd38a2107414",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
-      "name": "AFRINTEL September 2026 incident 03: Badr University in Cairo (BUC)",
+      "id": "incident--02143227-6c2d-5bb8-a134-ba048ac85629",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 04: Badr University in Cairo (BUC)",
       "description": "## English\n\nAFRINTEL recorded an observed data leak affecting Badr University in Cairo (BUC) in Egypt on 09 September 2026. No actor attribution is recorded. Status: Claim - Data Sample Published. Sector: Education / Higher education. Source summary: Badr University in Cairo (BUC) is an Egyptian higher education institution located in Badr City. Its official website presents its programmes and services, including admissions processes and a student portal.\n\n## Français\n\nAFRINTEL a recensé un fuite de données observé concernant Badr University in Cairo (BUC) en Égypte, à la date du 09 septembre 2026. Aucune attribution à un acteur n'est enregistrée. Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement supérieur. Résumé de la source : Badr University in Cairo (BUC) est un établissement d'enseignement supérieur égyptien situé à Badr City. Son site officiel présente ses programmes et services, notamment des démarches d'admission et un portail étudiant.",
       "first_seen": "2026-09-09T00:00:00Z",
       "labels": [
@@ -431,7 +598,7 @@
         }
       ],
       "x_opencti_incident_type": "data-leak",
-      "x_afrintel_incident_index": 3,
+      "x_afrintel_incident_index": 4,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Egypt",
       "x_afrintel_country_fr": "Égypte",
@@ -449,12 +616,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--3ebbc461-b642-5239-843d-af3dae63a0c8",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--6172ff4e-68a2-5fc4-8937-97d322b810be",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
-      "source_ref": "incident--6a1b14d2-65c5-502f-857f-fd38a2107414",
-      "target_ref": "identity--9d157da4-0017-56cd-a55b-f9a79ba0e2b5",
+      "source_ref": "incident--02143227-6c2d-5bb8-a134-ba048ac85629",
+      "target_ref": "identity--d9e7f6ee-3da8-5d6a-aafe-4ee39004b27e",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -464,8 +631,8 @@
       "type": "threat-actor",
       "spec_version": "2.1",
       "id": "threat-actor--bf804e61-e324-58ce-8b0a-21b7614f6ed1",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "Kazu (displayed account; identity and affiliation unverified)",
       "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
       "labels": [
@@ -493,9 +660,9 @@
     {
       "type": "identity",
       "spec_version": "2.1",
-      "id": "identity--9d1ddbcb-b292-5795-9b5e-c6b5b4563c51",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "identity--5e079e29-0032-5e1b-a1f0-9c18d255d844",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "name": "SEPE: Angola's E-Government Platform",
       "identity_class": "organization",
       "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Angola. Sector: Government / Digital public services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Angola. Secteur : Gouvernement / Services publics numériques.",
@@ -537,10 +704,10 @@
     {
       "type": "incident",
       "spec_version": "2.1",
-      "id": "incident--84873a0c-01c7-54fd-869e-7d7b114289aa",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
-      "name": "AFRINTEL September 2026 incident 04: SEPE: Angola's E-Government Platform",
+      "id": "incident--4f9f61b3-4b3e-585e-a3a3-29f8b1456942",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 05: SEPE: Angola's E-Government Platform",
       "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting SEPE: Angola's E-Government Platform in Angola on 12 September 2026. The source actor is listed as Kazu (displayed account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Government / Digital public services. Source summary: A post attributed to the Kazu account targets SEPE, Angola's official electronic public-services platform, and claims a data exposure in a ransomware-extortion context. AFRINTEL examined a local sample derived from the publication; this strengthens structural consistency and association with Angolan administrative data, but does not confirm initial access, complete exfiltration, the claimed overall volume or official confirmation by SEPE.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant SEPE: Angola's E-Government Platform en Angola, à la date du 12 septembre 2026. L'acteur source est indiqué comme Kazu (compte affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Gouvernement / Services publics numériques. Résumé de la source : Une publication attribuée au compte Kazu vise SEPE, la plateforme officielle de services publics électroniques de l'Angola, et revendique une exposition de données dans un contexte d'extorsion ransomware. AFRINTEL a examiné un échantillon local dérivé de la publication ; cette analyse renforce la cohérence structurelle et l'association avec des données administratives angolaises, sans confirmer l'accès initial, l'exfiltration complète, le volume global revendiqué ou la compromission officielle de SEPE.",
       "first_seen": "2026-09-12T00:00:00Z",
       "labels": [
@@ -570,7 +737,7 @@
         }
       ],
       "x_opencti_incident_type": "ransomware",
-      "x_afrintel_incident_index": 4,
+      "x_afrintel_incident_index": 5,
       "x_afrintel_status": "Claim - Data Sample Published",
       "x_afrintel_country": "Angola",
       "x_afrintel_country_fr": "Angola",
@@ -600,11 +767,11 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--1a55c768-ecb7-536f-b18b-6ab23e37ccb7",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--132339bf-ec9a-5ed7-854e-e6556f493cda",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "attributed-to",
-      "source_ref": "incident--84873a0c-01c7-54fd-869e-7d7b114289aa",
+      "source_ref": "incident--4f9f61b3-4b3e-585e-a3a3-29f8b1456942",
       "target_ref": "threat-actor--bf804e61-e324-58ce-8b0a-21b7614f6ed1",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
@@ -614,12 +781,12 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--9b6b5f75-50c8-51c0-8bec-3c3c6e8b1007",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--ffca72cd-b337-50f8-ab8c-748272096a43",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
       "source_ref": "threat-actor--bf804e61-e324-58ce-8b0a-21b7614f6ed1",
-      "target_ref": "identity--9d1ddbcb-b292-5795-9b5e-c6b5b4563c51",
+      "target_ref": "identity--5e079e29-0032-5e1b-a1f0-9c18d255d844",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
@@ -628,12 +795,1012 @@
     {
       "type": "relationship",
       "spec_version": "2.1",
-      "id": "relationship--6172ff4e-68a2-5fc4-8937-97d322b810be",
-      "created": "2026-09-23T02:11:12Z",
-      "modified": "2026-09-23T02:11:12Z",
+      "id": "relationship--aecf7192-e083-5b32-9eab-115ca3ebb2a7",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
       "relationship_type": "targets",
-      "source_ref": "incident--84873a0c-01c7-54fd-869e-7d7b114289aa",
-      "target_ref": "identity--9d1ddbcb-b292-5795-9b5e-c6b5b4563c51",
+      "source_ref": "incident--4f9f61b3-4b3e-585e-a3a3-29f8b1456942",
+      "target_ref": "identity--5e079e29-0032-5e1b-a1f0-9c18d255d844",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--f5ab3722-5cd9-55f6-b966-37efa15c0d24",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "BLACKLOCKS",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3c715e6f-5a2a-512f-ba44-2f52b3eac93d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "Apollo 21",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Spare-parts distribution / Road transport.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Distribution de pièces détachées / Transport routier.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://apollo21.co.za"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "Apollo 21",
+      "x_afrintel_sector_raw": "Distribution de pièces détachées / Transport routier",
+      "x_afrintel_sector_raw_en": "Spare-parts distribution / Road transport",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--3deafe10-e910-5d59-9e63-b9c62302124d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 06: Apollo 21",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Apollo 21 in South Africa on 19 September 2026. The source actor is listed as BLACKLOCKS. Status: Claim - Data Sample Published. Sector: Spare-parts distribution / Road transport. Source summary: The Apollo 21 entry appears in a BLACKLOCKS victim list with the date 19 September 2026. Another view of the entry associates apollo21.co.za with South Africa and claims 400 GB of data. The reviewed sample images include commercial and financial tables and identity documents. They support a documentary link to Apollo 21 without confirming the acquisition method, encryption, or possession of 400 GB.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Apollo 21 en Afrique du Sud, à la date du 19 septembre 2026. L'acteur source est indiqué comme BLACKLOCKS. Statut : Claim - Data Sample Published. Secteur : Distribution de pièces détachées / Transport routier. Résumé de la source : La fiche Apollo 21 apparaît dans une liste de victimes de BLACKLOCKS avec la date du 19 septembre 2026. Une autre vue de cette fiche associe apollo21.co.za à l'Afrique du Sud et revendique 400 GB de données. Les images d'échantillon examinées comprennent des tableaux commerciaux et financiers ainsi que des pièces d'identité. Elles étayent le lien documentaire avec Apollo 21, sans confirmer la méthode d'acquisition, le chiffrement ou la possession de 400 Go.",
+      "first_seen": "2026-09-19T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "south-africa",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://apollo21.co.za"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Distribution de pièces détachées / Transport routier",
+      "x_afrintel_sector_raw_en": "Spare-parts distribution / Road transport",
+      "x_afrintel_actor": "BLACKLOCKS",
+      "x_afrintel_actor_fr": "BLACKLOCKS",
+      "x_afrintel_date_display": "19 septembre 2026",
+      "x_afrintel_date_display_en": "19 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-09-28",
+      "x_afrintel_listing_last_observed_at": "2026-09-28",
+      "x_afrintel_sample_status": "sample-reviewed",
+      "x_afrintel_deadline_status": "not-stated",
+      "x_afrintel_disclosure_status": "partial",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-09-28"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--577ef725-1fe2-5053-bf58-ef16aff77e89",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--3deafe10-e910-5d59-9e63-b9c62302124d",
+      "target_ref": "threat-actor--f5ab3722-5cd9-55f6-b966-37efa15c0d24",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f9995490-0086-5f7e-bb0f-20e032c91ef6",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--f5ab3722-5cd9-55f6-b966-37efa15c0d24",
+      "target_ref": "identity--3c715e6f-5a2a-512f-ba44-2f52b3eac93d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--574e6091-9c99-5825-8518-ff796f442f8d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--3deafe10-e910-5d59-9e63-b9c62302124d",
+      "target_ref": "identity--3c715e6f-5a2a-512f-ba44-2f52b3eac93d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--9b28e792-ddea-576d-8297-ffdd809135c8",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "individual (displayed account; identity unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--67f5240c-7e49-53d3-a251-126f94ee49fb",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "Federal Capital Territory Internal Revenue Service (FCT-IRS)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Nigeria. Sector: Government / Tax administration.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Nigéria. Secteur : Gouvernement / Administration fiscale.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "nigeria",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://fctirs.gov.ng"
+        }
+      ],
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigéria",
+      "x_afrintel_organization_fr": "Federal Capital Territory Internal Revenue Service (FCT-IRS)",
+      "x_afrintel_sector_raw": "Gouvernement / Administration fiscale",
+      "x_afrintel_sector_raw_en": "Government / Tax administration",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--55780b6f-2151-59ee-b6d1-86a1b1f3d737",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 07: Federal Capital Territory Internal Revenue Service (FCT-IRS)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Federal Capital Territory Internal Revenue Service (FCT-IRS) in Nigeria on 21 September 2026. The source actor is listed as individual (displayed account; identity unverified). Status: Claim - Data Sample Published. Sector: Government / Tax administration. Source summary: A post titled “Nigerian Tax Authority | Full Breach” displays the Federal Capital Territory Internal Revenue Service (FCT-IRS) logo and references images of people and signatures. The supplied PDF, exported from JustPaste.it, contains 314 pages of text and personal data. “Full Breach” is the author's claim in the post title; data completeness and a compromise of FCT-IRS systems are not established.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Federal Capital Territory Internal Revenue Service (FCT-IRS) en Nigéria, à la date du 21 septembre 2026. L'acteur source est indiqué comme individual (compte affiché ; identité non vérifiée). Statut : Claim - Data Sample Published. Secteur : Gouvernement / Administration fiscale. Résumé de la source : Une publication intitulée « Nigerian Tax Authority | Full Breach » affiche le logo du Federal Capital Territory Internal Revenue Service (FCT-IRS) et fait référence à des images de personnes et de signatures. Le PDF fourni, exporté depuis JustPaste.it, contient 314 pages de texte et présente des données personnelles. L'expression « Full Breach » est le titre revendiqué par l'auteur ; l'exhaustivité des données et une compromission du système du FCT-IRS ne sont pas établies.",
+      "first_seen": "2026-09-21T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "nigeria",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://fctirs.gov.ng"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 7,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Nigeria",
+      "x_afrintel_country_fr": "Nigéria",
+      "x_afrintel_sector_raw": "Gouvernement / Administration fiscale",
+      "x_afrintel_sector_raw_en": "Government / Tax administration",
+      "x_afrintel_actor": "individual (displayed account; identity unverified)",
+      "x_afrintel_actor_fr": "individual (compte affiché ; identité non vérifiée)",
+      "x_afrintel_date_display": "21 septembre 2026",
+      "x_afrintel_date_display_en": "21 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6a7ab155-7939-55ce-b9b8-6c99ede307f1",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--55780b6f-2151-59ee-b6d1-86a1b1f3d737",
+      "target_ref": "threat-actor--9b28e792-ddea-576d-8297-ffdd809135c8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--889aee6f-6cdb-5967-9351-c9b22c7e4734",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--9b28e792-ddea-576d-8297-ffdd809135c8",
+      "target_ref": "identity--67f5240c-7e49-53d3-a251-126f94ee49fb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--566e5d4d-eee4-506f-8e6b-0cc6de94fb42",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--55780b6f-2151-59ee-b6d1-86a1b1f3d737",
+      "target_ref": "identity--67f5240c-7e49-53d3-a251-126f94ee49fb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d17fa3b1-bc17-58c8-a04b-c5538ed589d5",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "ARCA Unlimited Architects",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in South Africa. Sector: Architecture / Design and project management.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Afrique du Sud. Secteur : Architecture / Conception et gestion de projets.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://arcaunlimited.com"
+        }
+      ],
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_organization_fr": "ARCA Unlimited Architects",
+      "x_afrintel_sector_raw": "Architecture / Conception et gestion de projets",
+      "x_afrintel_sector_raw_en": "Architecture / Design and project management",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--43b13d15-9b2c-50be-82c4-6eb2fa6fb44d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 08: ARCA Unlimited Architects",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting ARCA Unlimited Architects in South Africa on 22 September 2026. The source actor is listed as BLACKLOCKS. Status: Claim - Data Sample Published. Sector: Architecture / Design and project management. Source summary: BLACKLOCKS lists ARCA Unlimited Architects as a South African victim and displays a volume of 400G without defining the unit. Sample images include architectural drawings, project documents and cost tables. Several items carry ARCA's name or branding and are consistent with its business. The review confirms neither the acquisition method, encryption, nor possession of the claimed volume.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant ARCA Unlimited Architects en Afrique du Sud, à la date du 22 septembre 2026. L'acteur source est indiqué comme BLACKLOCKS. Statut : Claim - Data Sample Published. Secteur : Architecture / Conception et gestion de projets. Résumé de la source : BLACKLOCKS présente ARCA Unlimited Architects comme victime sud-africaine et affiche un volume de 400G sans préciser l'unité. Les images d'échantillon comprennent des plans architecturaux, des documents de projet et des tableaux de coûts. Plusieurs éléments portent le nom ou la marque ARCA et sont cohérents avec son activité. L'examen ne confirme ni la méthode d'acquisition, ni un chiffrement, ni la possession du volume revendiqué.",
+      "first_seen": "2026-09-22T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "south-africa"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://arcaunlimited.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 8,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "South Africa",
+      "x_afrintel_country_fr": "Afrique du Sud",
+      "x_afrintel_sector_raw": "Architecture / Conception et gestion de projets",
+      "x_afrintel_sector_raw_en": "Architecture / Design and project management",
+      "x_afrintel_actor": "BLACKLOCKS",
+      "x_afrintel_actor_fr": "BLACKLOCKS",
+      "x_afrintel_date_display": "22 septembre 2026",
+      "x_afrintel_date_display_en": "22 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-09-28",
+      "x_afrintel_listing_last_observed_at": "2026-09-28",
+      "x_afrintel_sample_status": "sample-reviewed",
+      "x_afrintel_deadline_status": "not-stated",
+      "x_afrintel_disclosure_status": "partial",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-09-28"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--19cfb26b-f67b-580c-86c4-5a644faf32b0",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--43b13d15-9b2c-50be-82c4-6eb2fa6fb44d",
+      "target_ref": "threat-actor--f5ab3722-5cd9-55f6-b966-37efa15c0d24",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8d25d2d6-d43d-5eb9-8bfc-8a6d79bf42f0",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--f5ab3722-5cd9-55f6-b966-37efa15c0d24",
+      "target_ref": "identity--d17fa3b1-bc17-58c8-a04b-c5538ed589d5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4f2541cc-afe3-503f-b35f-ef6bc2a8a982",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--43b13d15-9b2c-50be-82c4-6eb2fa6fb44d",
+      "target_ref": "identity--d17fa3b1-bc17-58c8-a04b-c5538ed589d5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--56a3dbd2-4e53-597a-b2ad-85c29e6dfeed",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "N0n",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3e8d42c1-9627-5ec2-84f3-7c238e99099b",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRICA-TECH",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Mali. Sector: Technology / IT services / Document processing.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Mali. Secteur : Technologies / Services IT / Traitement documentaire.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "mali"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Mali",
+      "x_afrintel_country_fr": "Mali",
+      "x_afrintel_organization_fr": "AFRICA-TECH",
+      "x_afrintel_sector_raw": "Technologies / Services IT / Traitement documentaire",
+      "x_afrintel_sector_raw_en": "Technology / IT services / Document processing",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--033748e9-1e46-587c-9521-b13627a9def1",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 09: AFRICA-TECH",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting AFRICA-TECH in Mali on 22 September 2026. The source actor is listed as N0n. Status: Data Fully Published. Sector: Technology / IT services / Document processing. Source summary: AFRICA-TECH is presented in N0n's publication as a Malian IT-services and document-processing company. All files released by the group were supplied for analysis. A Word complaint names AFRICA-TECH and contains references to Mali and Bamako, supporting a documentary link to the organisation. The proposed domain, https://www.africatech-mali.com/, advertises solar and electrical activities in Bamako. Comparison with the documents established no shared contact details; attribution to the victim remains unestablished.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant AFRICA-TECH en Mali, à la date du 22 septembre 2026. L'acteur source est indiqué comme N0n. Statut : Data Fully Published. Secteur : Technologies / Services IT / Traitement documentaire. Résumé de la source : AFRICA-TECH est présentée dans la publication de N0n comme une entreprise malienne de services IT et de traitement documentaire. L'ensemble des fichiers divulgués par le groupe a été fourni pour analyse. Une réclamation Word mentionne AFRICA-TECH et des références au Mali et à Bamako, ce qui étaye le lien documentaire avec l'organisation. Le domaine proposé, https://www.africatech-mali.com/, présente des activités solaires et électriques à Bamako. La comparaison avec les documents n'a pas établi de coordonnées communes ; son attribution à la victime reste non établie.",
+      "first_seen": "2026-09-22T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-fully-published",
+        "mali",
+        "data-release-reviewed"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 9,
+      "x_afrintel_status": "Data Fully Published",
+      "x_afrintel_country": "Mali",
+      "x_afrintel_country_fr": "Mali",
+      "x_afrintel_sector_raw": "Technologies / Services IT / Traitement documentaire",
+      "x_afrintel_sector_raw_en": "Technology / IT services / Document processing",
+      "x_afrintel_actor": "N0n",
+      "x_afrintel_actor_fr": "N0n",
+      "x_afrintel_date_display": "22 septembre 2026",
+      "x_afrintel_date_display_en": "22 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-09-22",
+      "x_afrintel_listing_last_observed_at": "2026-09-22",
+      "x_afrintel_sample_status": "sample-reviewed",
+      "x_afrintel_deadline_at": "2026-09-25T16:00:00Z",
+      "x_afrintel_deadline_status": "expired",
+      "x_afrintel_disclosure_status": "release-reviewed",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-09-27"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--47a6e8d1-52d2-5761-8907-570ad3e8edb4",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--033748e9-1e46-587c-9521-b13627a9def1",
+      "target_ref": "threat-actor--56a3dbd2-4e53-597a-b2ad-85c29e6dfeed",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--615d9b1b-51b7-5a5c-8f59-35bfd5281fa9",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--56a3dbd2-4e53-597a-b2ad-85c29e6dfeed",
+      "target_ref": "identity--3e8d42c1-9627-5ec2-84f3-7c238e99099b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6b0a4b2d-2c89-51ef-ba86-9e181b613e06",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--033748e9-1e46-587c-9521-b13627a9def1",
+      "target_ref": "identity--3e8d42c1-9627-5ec2-84f3-7c238e99099b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--8dffd9d7-3414-512b-9306-5e4d5b1edb27",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "DarkMafiaX (displayed account; identity and affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--de51d857-27b1-5bb2-9ba1-07ae2c74b14d",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "TikoHUB",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Kenya. Sector: Ticketing / Events / Digital services.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL au Kenya. Secteur : Billetterie / Événementiel / Services numériques.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "kenya",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tikohub.co.ke"
+        }
+      ],
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_organization_fr": "TikoHUB",
+      "x_afrintel_sector_raw": "Billetterie / Événementiel / Services numériques",
+      "x_afrintel_sector_raw_en": "Ticketing / Events / Digital services",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "sectors": [
+        "technology"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--3fd7cd9a-52d6-5eed-af3b-6e4fe44c95a7",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 10: TikoHUB",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed access sale affecting TikoHUB in Kenya on 24 September 2026. The source actor is listed as DarkMafiaX (displayed account; identity and affiliation unverified). Status: Claim - Unverified. Sector: Ticketing / Events / Digital services. Source summary: A post attributed to the DarkMafiaX account offers administrator access presented as related to TikoHUB, a Kenyan ticketing and event-management platform. The post and displayed credentials were not tested; AFRINTEL does not confirm their validity, effective access or a compromise of TikoHUB.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type vente d'accès concernant TikoHUB au Kenya, à la date du 24 septembre 2026. L'acteur source est indiqué comme DarkMafiaX (compte affiché ; identité et affiliation non vérifiées). Statut : Claim - Unverified. Secteur : Billetterie / Événementiel / Services numériques. Résumé de la source : Une publication attribuée au compte DarkMafiaX propose un accès administrateur présenté comme lié à TikoHUB, une plateforme kényane de billetterie et de gestion d'événements. La publication et les identifiants visibles n'ont pas été testés ; AFRINTEL ne confirme ni leur validité, ni l'accès effectif, ni une compromission de TikoHUB.",
+      "first_seen": "2026-09-24T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "access-sale",
+        "kenya",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://tikohub.co.ke"
+        }
+      ],
+      "x_opencti_incident_type": "access-sale",
+      "x_afrintel_incident_index": 10,
+      "x_afrintel_status": "Claim - Unverified",
+      "x_afrintel_country": "Kenya",
+      "x_afrintel_country_fr": "Kenya",
+      "x_afrintel_sector_raw": "Billetterie / Événementiel / Services numériques",
+      "x_afrintel_sector_raw_en": "Ticketing / Events / Digital services",
+      "x_afrintel_actor": "DarkMafiaX (displayed account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "DarkMafiaX (compte affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "24 septembre 2026",
+      "x_afrintel_date_display_en": "24 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2b754ead-8edd-518f-b863-c9dece543e0f",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--3fd7cd9a-52d6-5eed-af3b-6e4fe44c95a7",
+      "target_ref": "threat-actor--8dffd9d7-3414-512b-9306-5e4d5b1edb27",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f82bc4c5-da84-55ad-99b4-3a1bb75614cf",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--8dffd9d7-3414-512b-9306-5e4d5b1edb27",
+      "target_ref": "identity--de51d857-27b1-5bb2-9ba1-07ae2c74b14d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--229aebce-6cd2-5157-831a-787963ec5cc9",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--3fd7cd9a-52d6-5eed-af3b-6e4fe44c95a7",
+      "target_ref": "identity--de51d857-27b1-5bb2-9ba1-07ae2c74b14d",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--0d869636-9be0-5048-84c9-b71de9aadbbc",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "INC Ransom",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 09-september 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "09-september"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--67e43ad9-17f6-5dc6-bb8e-2de14be96ce5",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "Pharma 5",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Healthcare / Pharmaceutical industry.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Santé / Industrie pharmaceutique.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://pharma5.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Pharma 5",
+      "x_afrintel_sector_raw": "Santé / Industrie pharmaceutique",
+      "x_afrintel_sector_raw_en": "Healthcare / Pharmaceutical industry",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "sectors": [
+        "healthcare"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--476a5429-0e24-5af4-b742-2308a5802521",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "name": "AFRINTEL September 2026 incident 11: Pharma 5",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Pharma 5 in Morocco on 25 September 2026. The source actor is listed as INC Ransom. Status: Claim - Data Sample Published. Sector: Healthcare / Pharmaceutical industry. Source summary: INC Ransom published a listing naming Pharma 5 and claims to hold 50 GB of data. The listing includes a gallery of document previews; one quality-management page was also provided at readable size. The visible material is consistent with pharmaceutical activities and a supply chain. This consistency does not confirm an intrusion, the acquisition method, or the claimed 50 GB.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Pharma 5 en Maroc, à la date du 25 septembre 2026. L'acteur source est indiqué comme INC Ransom. Statut : Claim - Data Sample Published. Secteur : Santé / Industrie pharmaceutique. Résumé de la source : INC Ransom a publié une fiche visant Pharma 5 et revendique 50 Go de données. La publication présente une galerie d'aperçus documentaires ; une page de gestion qualité a aussi été fournie en taille lisible. Les éléments visibles sont cohérents avec des activités pharmaceutiques et une chaîne d'approvisionnement. Cette cohérence ne confirme ni l'intrusion, ni la méthode d'acquisition, ni les 50 Go annoncés.",
+      "first_seen": "2026-09-25T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "morocco",
+        "healthcare"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/09-september/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://pharma5.ma"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 11,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Santé / Industrie pharmaceutique",
+      "x_afrintel_sector_raw_en": "Healthcare / Pharmaceutical industry",
+      "x_afrintel_actor": "INC Ransom",
+      "x_afrintel_actor_fr": "INC Ransom",
+      "x_afrintel_date_display": "25 septembre 2026",
+      "x_afrintel_date_display_en": "25 September 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/09-september/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/09-september/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3",
+      "x_afrintel_ransomware_listing_status": "observed",
+      "x_afrintel_listing_first_observed_at": "2026-09-28",
+      "x_afrintel_listing_last_observed_at": "2026-09-28",
+      "x_afrintel_sample_status": "sample-reviewed",
+      "x_afrintel_deadline_status": "not-stated",
+      "x_afrintel_disclosure_status": "partial",
+      "x_afrintel_victim_confirmation": "none-observed",
+      "x_afrintel_negotiation_status": "unknown",
+      "x_afrintel_ransom_payment_status": "unknown",
+      "x_afrintel_resale_status": "unknown",
+      "x_afrintel_last_checked_at": "2026-09-28"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3a88c56a-10c0-5de3-afa5-edb60cc676a2",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--476a5429-0e24-5af4-b742-2308a5802521",
+      "target_ref": "threat-actor--0d869636-9be0-5048-84c9-b71de9aadbbc",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--eb4deefd-7023-57d8-adca-656fd50e1dc8",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--0d869636-9be0-5048-84c9-b71de9aadbbc",
+      "target_ref": "identity--67e43ad9-17f6-5dc6-bb8e-2de14be96ce5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--321ad18b-1a2d-5bd3-8173-226b667bc905",
+      "created": "2026-09-28T17:20:28Z",
+      "modified": "2026-09-28T17:20:28Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--476a5429-0e24-5af4-b742-2308a5802521",
+      "target_ref": "identity--67e43ad9-17f6-5dc6-bb8e-2de14be96ce5",
       "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
       "object_marking_refs": [
         "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"

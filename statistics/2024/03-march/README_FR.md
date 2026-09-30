@@ -2,69 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 9 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette synthèse reprend les fiches canoniques du mois : **9 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
-| Indicateur | Valeur |
+## Types d'incident
+
+| Type AFRINTEL | Fiches |
 |---|---:|
-| Total incidents | 9 |
-| Ransomware | 7 |
-| Fuites de données | 2 |
-| Ventes d’accès | 0 |
-| Défacement | 0 |
-| Pays touchés | 6 |
-| Secteurs | 9 |
-| Acteurs / sources | 5 |
-
-## Pays
-
-| Pays | Incidents |
-|---|---:|
-| 🇪🇬 Égypte | 3 |
-| 🇿🇦 Afrique du Sud | 2 |
-| 🇪🇹 Éthiopie | 1 |
-| 🇲🇦 Maroc | 1 |
-| 🇳🇦 Namibie | 1 |
-| 🇹🇳 Tunisie | 1 |
-| **Total** | **9** |
-
-## Secteurs
-
-| Secteur | Incidents |
-|---|---:|
-| Médias sportifs & Divertissement | 1 |
-| Administrations publiques & Impressions de sécurité d'État | 1 |
-| Services financiers & Crédit-bail | 1 |
-| Santé & Distribution pharmaceutique | 1 |
-| Secteur bancaire & Financement agricole | 1 |
-| Énergie & Ingénierie des infrastructures | 1 |
-| Éducation / Enseignement supérieur | 1 |
-| Industrie manufacturière (Emballages industriels) | 1 |
-| Gouvernement / Services publics numériques | 1 |
-| **Total** | **9** |
-
-## Acteurs / sources
-
-| Acteur / source | Incidents |
-|---|---:|
-| lockbit3 | 4 |
-| ransomhub | 2 |
-| hunters | 1 |
-| ThreatSec | 1 |
-| Non attribué ; publication par UnknownMember | 1 |
-| **Total** | **9** |
-
-## Types
-
-| Type | Incidents |
-|---|---:|
-| Ransomware | 7 |
-| Data Leak | 2 |
+| Ransomware | 8 |
+| Data Leak | 1 |
 | Access Sale | 0 |
+| DDoS | 0 |
 | Defacement | 0 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
 | **Total** | **9** |
 
-## Lecture CTI
-
-Le volume mensuel mesure la visibilité publique dans les sources consultées, pas l’ensemble des incidents survenus. La fiche éthiopienne compte comme un seul incident, bien que la même publication mentionne deux services fédéraux distincts.
+La somme des neuf types canoniques égale le total mensuel (9). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/03-march/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/03-march/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR

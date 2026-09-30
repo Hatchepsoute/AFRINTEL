@@ -4,16 +4,16 @@
 
 ## 1. Executive summary
 
-In July 2024, AFRINTEL retains **10 canonical cyber incidents across 8 countries**. The month is led by **Ransomware (7, 70.0%)** followed by **Data Leak (2, 20.0%)**. Leading countries are **South Africa (3)**, **Tunisia (1)**, **Ethiopia (1)**. Leading sectors are **Professional / Business Services (3)**, **Transport / Logistics (2)**, **Defense / Security (1)**. Most frequent actor/group labels are `madliberator` (2), `killsec` (1), `TheColorYellow` (1). `Unknown` means missing attribution, not an actor.
+In July 2024, AFRINTEL retains **11 canonical cyber incidents across 9 countries**. The month is led by **Ransomware (7, 63.6%)** followed by **Data Leak (2, 18.2%)**. One `Access Sale` record concerns a WordPress administrator-access offer attributed to account 303 and targeting Uganda's Ministry of Education and Sports; the access is unconfirmed. **South Africa (3)** is the most represented country, while all other countries have one record each. Leading sectors are **Professional / Business Services (3)** and **Transport / Logistics (2)**. `Unknown` means missing attribution, not an actor.
 
 ### 1.1 Month-over-month study
 
 | Indicator | June 2024 | July 2024 | Change |
 |---|---|---|---|
-| Total | 3 | 10 | +7 (+233.3%) |
+| Total | 3 | 11 | +8 (+266.7%) |
 | Ransomware | 3 | 7 | +4 (+133.3%) |
 | Data Leak | 0 | 2 | +2 (new) |
-| Access Sale | 0 | 0 | Stable |
+| Access Sale | 0 | 1 | +1 (new) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
 | Account Takeover | 0 | 0 | Stable |
@@ -23,7 +23,7 @@ In July 2024, AFRINTEL retains **10 canonical cyber incidents across 8 countries
 
 ### 1.2 Comparative analysis
 
-Monthly volume **increases by 7 incident(s)**. Structural changes are: Ransomware 3->7 (+4), Data Leak 0->2 (+2), System Intrusion 0->1 (+1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
+Monthly volume **increases by 8 incident(s)**. Structural changes are: Ransomware 3->7 (+4), Data Leak 0->2 (+2), Access Sale 0->1 (+1), and System Intrusion 0->1 (+1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
@@ -38,13 +38,13 @@ Monthly volume **increases by 7 incident(s)**. Structural changes are: Ransomwar
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 7 | 70.0% |
-| Data Leak | 2 | 20.0% |
-| Access Sale | 0 | 0.0% |
+| Ransomware | 7 | 63.6% |
+| Data Leak | 2 | 18.2% |
+| Access Sale | 1 | 9.1% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
 | Account Takeover | 0 | 0.0% |
-| System Intrusion | 1 | 10.0% |
+| System Intrusion | 1 | 9.1% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
 
@@ -53,6 +53,7 @@ pie showData
     title Incident types - July 2024
     "Ransomware" : 7
     "Data Leak" : 2
+    "Access Sale" : 1
     "System Intrusion" : 1
 ```
 
@@ -64,6 +65,7 @@ pie showData
 | Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ethiopia | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Algeria | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Uganda | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zimbabwe | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Egypt | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -73,52 +75,54 @@ pie showData
 
 | Region | Records | Share |
 |---|---|---|
-| North Africa | 4 | 40.0% |
-| Southern Africa | 4 | 40.0% |
-| East Africa | 2 | 20.0% |
+| North Africa | 4 | 36.4% |
+| Southern Africa | 4 | 36.4% |
+| East Africa | 3 | 27.3% |
 
 ## 6. Sector distribution
 
 | Sector | Records | Share |
 |---|---|---|
-| Professional / Business Services | 3 | 30.0% |
-| Transport / Logistics | 2 | 20.0% |
-| Defense / Security | 1 | 10.0% |
-| Healthcare / Medical | 1 | 10.0% |
-| Finance / Banking | 1 | 10.0% |
-| Mining / Extractive Industries | 1 | 10.0% |
-| Aviation | 1 | 10.0% |
+| Professional / Business Services | 3 | 27.3% |
+| Transport / Logistics | 2 | 18.2% |
+| Defense / Security | 1 | 9.1% |
+| Healthcare / Medical | 1 | 9.1% |
+| Finance / Banking | 1 | 9.1% |
+| Mining / Extractive Industries | 1 | 9.1% |
+| Aviation | 1 | 9.1% |
+| Government / Administration | 1 | 9.1% |
 
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
 |---|---|---|
-| madliberator | 2 | 20.0% |
-| killsec | 1 | 10.0% |
-| TheColorYellow | 1 | 10.0% |
-| blacksuit | 1 | 10.0% |
-| Unknown | 1 | 10.0% |
-| hunters | 1 | 10.0% |
-| lockbit3 | 1 | 10.0% |
-| ransomhouse | 1 | 10.0% |
-| vjvjvj | 1 | 10.0% |
+| madliberator | 2 | 18.2% |
+| killsec | 1 | 9.1% |
+| TheColorYellow | 1 | 9.1% |
+| blacksuit | 1 | 9.1% |
+| Unknown | 1 | 9.1% |
+| 303 | 1 | 9.1% |
+| hunters | 1 | 9.1% |
+| lockbit3 | 1 | 9.1% |
+| ransomhouse | 1 | 9.1% |
+| vjvjvj | 1 | 9.1% |
 
 ## 8. Evidence maturity
 
 | Evidence position | Records | Share |
 |---|---|---|
-| Claim - Unverified | 7 | 70.0% |
-| Claim - Data Sample Published | 1 | 10.0% |
-| Confirmed | 1 | 10.0% |
-| Corroborated | 1 | 10.0% |
+| Claim - Unverified | 8 | 72.7% |
+| Claim - Data Sample Published | 1 | 9.1% |
+| Confirmed | 1 | 9.1% |
+| Corroborated | 1 | 9.1% |
 
 ### Confidence
 
 | Confidence | Records | Share |
 |---|---|---|
-| Low | 7 | 70.0% |
-| High | 2 | 20.0% |
-| Medium | 1 | 10.0% |
+| Low | 7 | 63.6% |
+| High | 2 | 18.2% |
+| Medium | 2 | 18.2% |
 
 ## 9. Timeline
 
@@ -278,15 +282,19 @@ timeline
 
 ### Ransomware - 7
 
-**7 record(s) (70.0%).** Leading countries: South Africa (3), Tunisia (1), Kenya (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+**7 record(s) (63.6%).** Leading countries: South Africa (3), Tunisia (1), Kenya (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
 ### Data Leak - 2
 
-**2 record(s) (20.0%).** Leading countries: Ethiopia (1), Morocco (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+**2 record(s) (18.2%).** Leading countries: Ethiopia (1), Morocco (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+
+### Access Sale - 1
+
+**1 record (9.1%).** An offer attributed to account 303 targets WordPress administrator access presented as related to Uganda's Ministry of Education and Sports. The hidden credentials were not viewed or tested; access remains unconfirmed.
 
 ### System Intrusion - 1
 
-**1 record(s) (10.0%).** Leading countries: Algeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+**1 record(s) (9.1%).** Leading countries: Algeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
 ## 11. Priority incidents for review
 
@@ -396,7 +404,7 @@ timeline
 
 ## 14. Conclusion
 
-July 2024 contains **10 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+July 2024 contains **11 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
 
 👉🏾 [Canonical victims](./victims.md)
 

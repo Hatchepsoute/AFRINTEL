@@ -4,18 +4,18 @@
 
 ## 1. Synthèse exécutive
 
-En Juillet 2024, AFRINTEL retient **10 cyberincidents canoniques dans 8 pays**. Le mois est dominé par **Ransomware (7, 70,0 %)** puis **Data Leak (2, 20,0 %)**. Les pays les plus représentés sont **Afrique du Sud (3)**, **Tunisie (1)**, **Éthiopie (1)**. Les secteurs les plus visibles sont **Services professionnels / Business (3)**, **Transport / Logistique (2)**, **Défense / Sécurité (1)**. Les labels acteur/groupe les plus fréquents sont `madliberator` (2), `killsec` (1), `TheColorYellow` (1). `Unknown` désigne une absence d'attribution, pas un groupe.
+En Juillet 2024, AFRINTEL retient **11 cyberincidents canoniques dans 9 pays**. Le mois est dominé par **Ransomware (7, 63,6 %)** puis **Data Leak (2, 18,2 %)**. Une fiche `Access Sale` concerne une offre d'accès WordPress administrateur attribuée au compte 303 contre le Ministère de l'Éducation et des Sports de l'Ouganda ; l'accès n'est pas confirmé. Les pays les plus représentés sont **Afrique du Sud (3)**, les autres pays comptant une fiche chacun. Les secteurs les plus visibles sont **Services professionnels / Business (3)** et **Transport / Logistique (2)**. `Unknown` désigne une absence d'attribution, pas un groupe.
 
-La maturité de preuve est répartie entre **Claim - Unverified: 7**, **Claim - Data Sample Published: 1**, **Confirmed: 1**, **Corroborated: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
+La maturité de preuve est répartie entre **Claim - Unverified: 8**, **Claim - Data Sample Published: 1**, **Confirmed: 1**, **Corroborated: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
 ### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Juin 2024 | Juillet 2024 | Évolution |
 |---|---|---|---|
-| Total | 3 | 10 | +7 (+233,3 %) |
+| Total | 3 | 11 | +8 (+266,7 %) |
 | Ransomware | 3 | 7 | +4 (+133,3 %) |
 | Data Leak | 0 | 2 | +2 (nouveau) |
-| Access Sale | 0 | 0 | Stable |
+| Access Sale | 0 | 1 | +1 (nouveau) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
 | Account Takeover | 0 | 0 | Stable |
@@ -25,7 +25,7 @@ La maturité de preuve est répartie entre **Claim - Unverified: 7**, **Claim - 
 
 ### 1.2 Analyse comparative
 
-Le volume mensuel **augmente de 7 incident(s)**. Les variations structurantes sont : Ransomware 3->7 (+4), Data Leak 0->2 (+2), System Intrusion 0->1 (+1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
+Le volume mensuel **augmente de 8 incident(s)**. Les variations structurantes sont : Ransomware 3->7 (+4), Data Leak 0->2 (+2), Access Sale 0->1 (+1) et System Intrusion 0->1 (+1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
@@ -40,13 +40,13 @@ Le volume mensuel **augmente de 7 incident(s)**. Les variations structurantes so
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 7 | 70,0 % |
-| Data Leak | 2 | 20,0 % |
-| Access Sale | 0 | 0,0 % |
+| Ransomware | 7 | 63,6 % |
+| Data Leak | 2 | 18,2 % |
+| Access Sale | 1 | 9,1 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
 | Account Takeover | 0 | 0,0 % |
-| System Intrusion | 1 | 10,0 % |
+| System Intrusion | 1 | 9,1 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
 
@@ -55,6 +55,7 @@ pie showData
     title Types d'incident - Juillet 2024
     "Ransomware" : 7
     "Data Leak" : 2
+    "Access Sale" : 1
     "System Intrusion" : 1
 ```
 
@@ -66,6 +67,7 @@ pie showData
 | Tunisie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Éthiopie | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Algérie | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Ouganda | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zimbabwe | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Égypte | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -75,52 +77,54 @@ pie showData
 
 | Région | Fiches | Part |
 |---|---|---|
-| Afrique du Nord | 4 | 40,0 % |
-| Afrique australe | 4 | 40,0 % |
-| Afrique de l'Est | 2 | 20,0 % |
+| Afrique du Nord | 4 | 36,4 % |
+| Afrique australe | 4 | 36,4 % |
+| Afrique de l'Est | 3 | 27,3 % |
 
 ## 6. Répartition sectorielle
 
 | Secteur | Fiches | Part |
 |---|---|---|
-| Services professionnels / Business | 3 | 30,0 % |
-| Transport / Logistique | 2 | 20,0 % |
-| Défense / Sécurité | 1 | 10,0 % |
-| Santé / Médical | 1 | 10,0 % |
-| Finance / Banque | 1 | 10,0 % |
-| Mines / Industries extractives | 1 | 10,0 % |
-| Aviation | 1 | 10,0 % |
+| Services professionnels / Business | 3 | 27,3 % |
+| Transport / Logistique | 2 | 18,2 % |
+| Défense / Sécurité | 1 | 9,1 % |
+| Santé / Médical | 1 | 9,1 % |
+| Finance / Banque | 1 | 9,1 % |
+| Mines / Industries extractives | 1 | 9,1 % |
+| Aviation | 1 | 9,1 % |
+| Gouvernement / Administration | 1 | 9,1 % |
 
 ## 7. Acteurs / groupes
 
 | Acteur / Groupe | Fiches | Part |
 |---|---|---|
-| madliberator | 2 | 20,0 % |
-| killsec | 1 | 10,0 % |
-| TheColorYellow | 1 | 10,0 % |
-| blacksuit | 1 | 10,0 % |
-| Unknown | 1 | 10,0 % |
-| hunters | 1 | 10,0 % |
-| lockbit3 | 1 | 10,0 % |
-| ransomhouse | 1 | 10,0 % |
-| vjvjvj | 1 | 10,0 % |
+| madliberator | 2 | 18,2 % |
+| killsec | 1 | 9,1 % |
+| TheColorYellow | 1 | 9,1 % |
+| blacksuit | 1 | 9,1 % |
+| Unknown | 1 | 9,1 % |
+| 303 | 1 | 9,1 % |
+| hunters | 1 | 9,1 % |
+| lockbit3 | 1 | 9,1 % |
+| ransomhouse | 1 | 9,1 % |
+| vjvjvj | 1 | 9,1 % |
 
 ## 8. Maturité des preuves
 
 | Position de preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 7 | 70,0 % |
-| Claim - Data Sample Published | 1 | 10,0 % |
-| Confirmed | 1 | 10,0 % |
-| Corroborated | 1 | 10,0 % |
+| Claim - Unverified | 8 | 72,7 % |
+| Claim - Data Sample Published | 1 | 9,1 % |
+| Confirmed | 1 | 9,1 % |
+| Corroborated | 1 | 9,1 % |
 
 ### Confiance
 
 | Confiance | Fiches | Part |
 |---|---|---|
-| Low | 7 | 70,0 % |
-| High | 2 | 20,0 % |
-| Medium | 1 | 10,0 % |
+| Low | 7 | 63,6 % |
+| High | 2 | 18,2 % |
+| Medium | 2 | 18,2 % |
 
 ## 9. Chronologie
 
@@ -280,15 +284,19 @@ timeline
 
 ### Ransomware - 7
 
-**7 fiche(s) (70,0 %).** Principaux pays : Afrique du Sud (3), Tunisie (1), Kenya (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+**7 fiche(s) (63,6 %).** Principaux pays : Afrique du Sud (3), Tunisie (1), Kenya (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
 ### Data Leak - 2
 
-**2 fiche(s) (20,0 %).** Principaux pays : Éthiopie (1), Maroc (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+**2 fiche(s) (18,2 %).** Principaux pays : Éthiopie (1), Maroc (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+
+### Access Sale - 1
+
+**1 fiche (9,1 %).** Une offre attribuée au compte 303 cible un accès WordPress administrateur présenté comme lié au Ministère de l'Éducation et des Sports de l'Ouganda. Les identifiants masqués n'ont pas été consultés ni testés ; l'accès reste non confirmé.
 
 ### System Intrusion - 1
 
-**1 fiche(s) (10,0 %).** Principaux pays : Algérie (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+**1 fiche(s) (9,1 %).** Principaux pays : Algérie (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
 ## 11. Incidents prioritaires pour revue
 
@@ -398,7 +406,7 @@ timeline
 
 ## 14. Conclusion
 
-Juillet 2024 contient **10 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+Juillet 2024 contient **11 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
 
 👉🏾 [Victimes canoniques](./victims_FR.md)
 
