@@ -214,6 +214,10 @@ Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **42 fuites de d
   Les données exposées incluraient notamment des identifiants, noms, numéros d’identité nationale, e-mails, mots de passe, informations académiques et documents internes.
   Une telle exposition pourrait favoriser le vol d’identité, l’accès non autorisé aux comptes universitaires, des campagnes de phishing ciblé et la réutilisation de mots de passe contre d’autres services institutionnels.
   À ce stade, il s’agit d’une revendication publiée sur un forum clandestin et l’authenticité complète des données n’a pas encore été confirmée indépendamment.
+
+  Une publication secondaire observée le 25 juillet 2026 sous le titre « Edu.eg Full Contact Leaks (Mansoura University) » présente un échantillon de contacts attribué à l’université. L’analyse en lecture seule du fichier local fourni (`member_search_results.json`) porte sur **4 239 enregistrements**, avec six champs structurés (`name`, `work`, `telephone`, `job`, `workplace`, `rowId`). Les champs sont homogènes sur l’ensemble du fichier ; les **4 239 `rowId` sont uniques**, tandis que 28 noms, 31 téléphones, 135 intitulés de poste et 4 192 valeurs `work` sont vides. L’échantillon contient 545 valeurs distinctes de lieu de travail et 844 intitulés de poste distincts.
+
+  Ces éléments renforcent la cohérence structurelle d’un jeu de données de contacts professionnels et son association apparente avec la publication concernant Mansoura University, sans valider l’accès initial, la méthode d’acquisition, l’exhaustivité de la fuite ni les **989 000 enregistrements** revendiqués. Le fichier analysé ne contient pas 989 000 lignes et ne permet pas d’extrapoler ce volume. Aucune donnée personnelle brute n’est reproduite. La capture et le fichier source ont été conservés hors dépôt ; leurs empreintes SHA-256 sont documentées dans le journal de collecte local.
 ---
 ### 12 Mai 2026
 #### 🇲🇦 Maroc - SDTM / Groupe Barid Al-Maghrib

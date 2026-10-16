@@ -8,7 +8,7 @@
 
 ## 1. Scope and source
 
-This statistical view is aligned with the validated bilingual 2025 victim corpus and contains **225 canonical incidents across 30 African countries**. One canonical card equals one documented cyber incident; cases under investigation remain outside the statistics. Incident type, evidence status, confidence and impact are separate dimensions.
+This statistical view is aligned with the validated bilingual 2025 victim corpus and contains **226 canonical incidents across 31 represented African countries**. Country and regional views count **227 geographic occurrences** because one multi-country card is counted once in the canonical total. One canonical card equals one documented cyber incident; cases under investigation remain outside the statistics. Incident type, evidence status, confidence and impact are separate dimensions.
 
 ## 2. Monthly evolution
 
@@ -24,11 +24,11 @@ This statistical view is aligned with the validated bilingual 2025 victim corpus
 | August | 16 |
 | September | 19 |
 | October | 20 |
-| November | 15 |
+| November | 16 |
 | December | 19 |
-| **Total** | **225** |
+| **Canonical total** | **226** |
 
-H1 contains **111** records and H2 **114**.
+H1 contains **111** records and H2 **115**.
 
 ## 3. Distribution by country
 
@@ -56,15 +56,16 @@ H1 contains **111** records and H2 **114**.
 | 20 | Congo (DRC) | CD | 2 |
 | 21 | Burkina Faso | BF | 1 |
 | 22 | Rwanda | RW | 1 |
-| 23 | Cameroon | CM | 1 |
-| 24 | Djibouti | DJ | 1 |
-| 25 | Eritrea | ER | 1 |
-| 26 | Burundi | BI | 1 |
-| 27 | Seychelles | SC | 1 |
-| 28 | Angola | AO | 1 |
-| 29 | Madagascar | MG | 1 |
-| 30 | Gabon | GA | 1 |
-| **Total** |  |  | **225** |
+| 23 | Cameroon | CM | 2 |
+| 24 | Comoros | KM | 1 |
+| 25 | Djibouti | DJ | 1 |
+| 26 | Eritrea | ER | 1 |
+| 27 | Burundi | BI | 1 |
+| 28 | Seychelles | SC | 1 |
+| 29 | Angola | AO | 1 |
+| 30 | Madagascar | MG | 1 |
+| 31 | Gabon | GA | 1 |
+| **Total geographic occurrences** |  |  | **227** |
 
 ## 4. Regional distribution
 
@@ -74,15 +75,15 @@ H1 contains **111** records and H2 **114**.
 | Southern Africa | 50 | 22.2% |
 | West Africa | 37 | 16.4% |
 | East Africa | 26 | 11.6% |
-| Central Africa | 4 | 1.8% |
-| Indian Ocean | 4 | 1.8% |
-| **Total** | **225** | **100%** |
+| Central Africa | 5 | 2.2% |
+| Indian Ocean | 5 | 2.2% |
+| **Total geographic occurrences** | **227** | **100%** |
 
 ## 5. Sector distribution
 
 | Normalized sector | Records | Share |
 |---|---:|---:|
-| Government / Administration | 51 | 22.7% |
+| Government / Administration | 52 | 23.0% |
 | Finance / Banking | 43 | 19.1% |
 | Technology / IT | 20 | 8.9% |
 | Education / University | 18 | 8.0% |
@@ -101,14 +102,14 @@ H1 contains **111** records and H2 **114**.
 | Energy / Utilities | 3 | 1.3% |
 | Hospitality / Tourism | 1 | 0.4% |
 | Legal | 1 | 0.4% |
-| **Total** | **225** | **100%** |
+| **Canonical total** | **226** | **100%** |
 
 ## 6. Incident classification
 
 | Type | Records | Share |
 |---|---:|---:|
 | Ransomware | 121 | 53.8% |
-| Data Leak | 81 | 36.0% |
+| Data Leak | 82 | 36.3% |
 | Access Sale | 6 | 2.7% |
 | DDoS | 3 | 1.3% |
 | Defacement | 4 | 1.8% |
@@ -116,27 +117,27 @@ H1 contains **111** records and H2 **114**.
 | System Intrusion | 3 | 1.3% |
 | Malware | 1 | 0.4% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **225** | **100%** |
+| **Canonical total** | **226** | **100%** |
 
 ### Aggregate exposure view
 
 | Aggregate category | Records | Share of corpus |
 |---|---:|---:|
-| Data Leak + Access Sale | **87** | **38.7%** |
+| Data Leak + Access Sale | **88** | **38.9%** |
 
-This analytical view (`81 + 6`) is not an additional incident category.
+This analytical view (`82 + 6`) is not an additional incident category.
 
 ## 7. Evidence maturity
 
 | Analytical grouping | Records | Share |
 |---|---:|---:|
 | Claim - Unverified | 100 | 44.4% |
-| Claim - Data Sample Published | 89 | 39.6% |
+| Claim - Data Sample Published | 90 | 39.8% |
 | Data Fully Published | 10 | 4.4% |
 | Victim/Government/Authority Confirmed | 14 | 6.2% |
 | Corroborated / Secondary evidence | 10 | 4.4% |
 | Attempted | 2 | 0.9% |
-| **Total** | **225** | **100%** |
+| **Canonical total** | **226** | **100%** |
 
 ## 8. Most visible actor / group labels
 
@@ -157,10 +158,10 @@ This analytical view (`81 + 6`) is not an additional incident category.
 
 ## 9. Interpretation
 
-The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. The addition of Yalla Tager raises the annual corpus from 224 to **225**, Data Leak from 80 to **81**, Egypt from 34 to **35**, North Africa from 103 to **104**, and Retail / E-commerce from 7 to **8**.
+The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. Adding the Comoros–Cameroon multi-country incident raises the annual corpus from 225 to **226 canonical incidents**, Data Leak from 81 to **82**, Government / Administration from 51 to **52**, and geographic occurrences to **227**.
 
 ## Conclusion
 
-The validated 2025 statistical baseline is **225 canonical incidents**. Country, region, sector, actor, evidence and incident-type views are reconciled to the same bilingual victim corpus.
+The validated 2025 statistical baseline is **226 canonical incidents**. Country and regional views total **227 geographic occurrences** because of the Comoros–Cameroon multi-country card; sector, actor, evidence and incident-type views remain based on the 226 canonical cards.
 
 **AFRINTEL** - TLP:CLEAR

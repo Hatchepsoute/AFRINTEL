@@ -6,15 +6,15 @@
 
 ## 1. Synthèse exécutive
 
-En 2025, AFRINTEL a documenté **225 cyberincidents affectant des organisations, institutions et services numériques dans 30 pays africains**. Le corpus met en évidence un paysage de menace largement dominé par le **ransomware** et les **fuites de données**, mais également marqué par des ventes d'accès, des prises de contrôle de comptes institutionnels, des attaques DDoS, des défacements, des intrusions système et des infections par malware.
+En 2025, AFRINTEL a documenté **226 cyberincidents canoniques affectant des organisations, institutions et services numériques dans 31 pays africains représentés**. Les ventilations géographiques totalisent **227 occurrences** en raison d'une fiche multi-pays. Le corpus met en évidence un paysage de menace largement dominé par le **ransomware** et les **fuites de données**, mais également marqué par des ventes d'accès, des prises de contrôle de comptes institutionnels, des attaques DDoS, des défacements, des intrusions système et des infections par malware.
 
-Le **Ransomware reste la première menace observée avec 121 fiches, soit 53,8 % du corpus annuel**. Les **Data Leak représentent 81 fiches (36,0 %)**. À elles seules, ces deux catégories concentrent **202 des 225 incidents documentés, soit 89,8 %**. Les autres événements recensés comprennent **6 Access Sale**, **6 Account Takeover**, **4 Defacement**, **3 DDoS**, **3 System Intrusion** et **1 Malware**. Aucun incident n'a été classé comme `Operational Fraud` dans le corpus annuel validé.
+Le **Ransomware reste la première menace observée avec 121 fiches, soit 53,5 % du corpus annuel**. Les **Data Leak représentent 82 fiches (36,3 %)**. À elles seules, ces deux catégories concentrent **203 des 226 incidents documentés, soit 89,8 %**. Les autres événements recensés comprennent **6 Access Sale**, **6 Account Takeover**, **4 Defacement**, **3 DDoS**, **3 System Intrusion** et **1 Malware**. Aucun incident n'a été classé comme `Operational Fraud` dans le corpus annuel validé.
 
 La répartition géographique montre une forte concentration sur trois pays : **l'Afrique du Sud avec 38 incidents, le Maroc avec 35 et l'Égypte avec 35**. Ces trois pays totalisent **108 fiches, soit 48,0 % du corpus annuel**. Leur profil n'est toutefois pas homogène : l'Afrique du Sud est principalement exposée aux publications ransomware, tandis que le Maroc présente une composante Data Leak importante et concentre également plusieurs événements liés aux DDoS et à la vente d'accès.
 
-L'analyse sectorielle place **Gouvernement / Administration en tête avec 51 incidents (22,7 %)**, suivi de **Finance / Banque avec 43 (19,1 %)** et **Technologie / IT avec 20 (8,9 %)**. Les secteurs public et financier représentent ensemble **94 fiches, soit 41,8 % du corpus**, ce qui confirme leur forte visibilité dans les activités cybercriminelles suivies au cours de l'année.
+L'analyse sectorielle place **Gouvernement / Administration en tête avec 52 incidents (23,0 %)**, suivi de **Finance / Banque avec 43 (19,0 %)** et **Technologie / IT avec 20 (8,8 %)**. Les secteurs public et financier représentent ensemble **95 fiches, soit 42,0 % du corpus**, ce qui confirme leur forte visibilité dans les activités cybercriminelles suivies au cours de l'année.
 
-L'activité reste relativement équilibrée entre les deux semestres, avec **111 incidents au premier semestre et 114 au second**. **Mai est le mois le plus chargé avec 26 incidents**, devant juillet avec 25, tandis que février en compte 10. Cette stabilité du volume global masque cependant des variations importantes dans la nature des événements et les pays concernés.
+L'activité reste relativement équilibrée entre les deux semestres, avec **111 incidents au premier semestre et 115 au second**. **Mai est le mois le plus chargé avec 26 incidents**, devant juillet avec 25, tandis que février en compte 10. Cette stabilité du volume global masque cependant des variations importantes dans la nature des événements et les pays concernés.
 
 Du point de vue de la preuve, le corpus reste hétérogène. Une part importante des fiches repose sur des **revendications directement observées sur des leak sites, forums underground ou autres espaces cybercriminels**, parfois accompagnées d'échantillons de données. Les confirmations officielles par les victimes, gouvernements ou autorités compétentes représentent un sous-ensemble plus limité. AFRINTEL distingue donc systématiquement **ce qui est observé, ce qui est revendiqué, ce qui est corroboré et ce qui reste inconnu**. Une publication criminelle, un volume annoncé ou une attribution ne sont pas considérés comme confirmés sans éléments suffisants.
 
@@ -26,14 +26,14 @@ L'année 2025 montre ainsi une **diversification du paysage cyber observé en Af
 
 ## 2. Évolution du corpus annuel 2025
 
-Le précédent rapport annuel public comptait **197 fiches** et reposait sur l'ancienne taxonomie à six catégories. L'audit rétrospectif et la révision de la classification AFRINTEL portent le corpus canonique à **225**, soit **28 fiches supplémentaires** intégrées dans leur période réelle de 2025.
+Le précédent rapport annuel public comptait **197 fiches** et reposait sur l'ancienne taxonomie à six catégories. L'audit rétrospectif et la révision de la classification AFRINTEL portent le corpus canonique à **226**, soit **29 fiches supplémentaires** intégrées dans leur période réelle de 2025.
 
 | Indicateur | Ancien rapport 2025 | Corpus 2025 enrichi | Écart |
 |---|---:|---:|---:|
-| Total incidents | 197 | 225 | **+28 (+14,2 %)** |
+| Total incidents | 197 | 226 | **+29 (+14,7 %)** |
 | Pays couverts | 29 | 30 | **+1 (+3,4 %)** |
 | Ransomware | 121 | 121 | **0 (0,0 %)** |
-| Data Leak | 73 | 81 | **+8 (+11,0 %)** |
+| Data Leak | 73 | 82 | **+9 (+12,3 %)** |
 | Access Sale | 3 | 6 | **+3 (+100,0 %)** |
 | DDoS | 0 | 3 | **+3 (nouveau)** |
 | Defacement | 0 | 4 | **+4 (nouveau)** |
@@ -44,7 +44,7 @@ Le précédent rapport annuel public comptait **197 fiches** et reposait sur l'a
 
 Cette évolution ne signifie pas que 27 attaques se sont produites après la clôture de 2025. Elle reflète une **amélioration rétrospective de la couverture**, l'intégration de cas manquants et la possibilité de classer correctement des événements auparavant hors taxonomie, notamment les prises de contrôle de comptes, intrusions système et infections malware.
 
-Deux dossiers restent en investigation et sont **exclus des 225 incidents canoniques** tant que leur portée ou l'identité exacte de la victime n'est pas suffisamment établie.
+Deux dossiers restent en investigation et sont **exclus des 226 incidents canoniques** tant que leur portée ou l'identité exacte de la victime n'est pas suffisamment établie.
 
 ## 3. Méthodologie
 
@@ -71,10 +71,10 @@ Cette harmonisation améliore la comparaison, mais les évolutions ci-dessous d�
 
 | Indicateur | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 119 | 225 | **+106 (+89,1 %)** |
+| Total incidents | 119 | 226 | **+107 (+89,9 %)** |
 | Pays couverts | 30 | 30 | **Stable** |
 | Ransomware | 91 | 121 | **+30 (+33,0 %)** |
-| Data Leak | 13 | 81 | **+68 (+523,1 %)** |
+| Data Leak | 13 | 82 | **+69 (+530,8 %)** |
 | Access Sale | 4 | 6 | **+2 (+50,0 %)** |
 | DDoS | 2 | 3 | **+1 (+50,0 %)** |
 | Defacement | 1 | 4 | **+3 (+300,0 %)** |
@@ -83,7 +83,7 @@ Cette harmonisation améliore la comparaison, mais les évolutions ci-dessous d�
 | Malware | 0 | 1 | **+1 (nouvellement observé)** |
 | Operational Fraud | 1 | 0 | **-1 (-100,0 %)** |
 
-Le corpus annuel documenté passe de **119 à 225 incidents**, soit **+106 (+89,1 %)**. Le Ransomware progresse de 91 à 121 fiches, tandis que les Data Leak passent de 13 à 81. Cette dernière variation est particulièrement forte dans le corpus, mais elle doit être lue avec prudence : le nettoyage chronologique de 2024 a retiré plusieurs republications historiques qui gonflaient auparavant la catégorie Data Leak.
+Le corpus annuel documenté passe de **119 à 226 incidents**, soit **+107 (+89,9 %)**. Le Ransomware progresse de 91 à 121 fiches, tandis que les Data Leak passent de 13 à 82. Cette dernière variation est particulièrement forte dans le corpus, mais elle doit être lue avec prudence : le nettoyage chronologique de 2024 a retiré plusieurs republications historiques qui gonflaient auparavant la catégorie Data Leak.
 
 La comparaison de `Account Takeover`, `System Intrusion` et `Malware` est désormais possible directement, puisque 2024 est aligné sur la même classification à neuf types.
 
@@ -92,10 +92,10 @@ La comparaison de `Account Takeover`, `System Intrusion` et `Malware` est désor
 | Période | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
 | H1 | 45 | 111 | **+66 (+146,7 %)** |
-| H2 | 74 | 114 | **+40 (+54,1 %)** |
-| Année | 119 | 225 | **+106 (+89,1 %)** |
+| H2 | 74 | 115 | **+41 (+55,4 %)** |
+| Année | 119 | 226 | **+107 (+89,9 %)** |
 
-L'écart est surtout visible au premier semestre : **45 incidents au H1 2024 contre 111 au H1 2025**. Le H2 passe de 74 à 114. Ces écarts mesurent le volume documenté dans les deux corpus harmonisés ; ils ne démontrent pas à eux seuls une progression équivalente du nombre réel de compromissions réussies.
+L'écart est surtout visible au premier semestre : **45 incidents au H1 2024 contre 111 au H1 2025**. Le H2 passe de 74 à 115. Ces écarts mesurent le volume documenté dans les deux corpus harmonisés ; ils ne démontrent pas à eux seuls une progression équivalente du nombre réel de compromissions réussies.
 
 ### 4.3 Évolution des principaux pays
 
@@ -115,8 +115,8 @@ Le Maroc présente la plus forte progression absolue dans le corpus comparé, av
 
 Trois évolutions sont particulièrement visibles :
 
-1. **Le corpus se diversifie.** En 2024, **15 des 119 incidents** appartiennent à des types autres que Ransomware et Data Leak ; en 2025, ils sont **23 sur 225**. Les Account Takeover deviennent notamment visibles avec six dossiers en 2025.
-2. **Les Data Leak prennent une place beaucoup plus importante dans le corpus 2025.** Ils passent de **13 à 81 fiches**. Cette différence combine évolution de la menace observable et différences de couverture ; elle ne doit pas être interprétée comme une hausse de 523,1 % des fuites réelles en Afrique.
+1. **Le corpus se diversifie.** En 2024, **15 des 119 incidents** appartiennent à des types autres que Ransomware et Data Leak ; en 2025, ils sont **23 sur 226**. Les Account Takeover deviennent notamment visibles avec six dossiers en 2025.
+2. **Les Data Leak prennent une place beaucoup plus importante dans le corpus 2025.** Ils passent de **13 à 82 fiches**. Cette différence combine évolution de la menace observable et différences de couverture ; elle ne doit pas être interprétée comme une hausse de 530,8 % des fuites réelles en Afrique.
 3. **Les profils nationaux divergent.** L'Afrique du Sud reste très orientée Ransomware, alors que le Maroc et l'Algérie présentent en 2025 une forte composante Data Leak.
 
 La comparaison 2024-2025 est désormais **alignée sur la même taxonomie et la même règle de chronologie**. La prudence méthodologique reste néanmoins nécessaire pour tenir compte des différences de visibilité, de disponibilité des preuves et de couverture OSINT/Dark Web entre les deux années.
@@ -135,11 +135,11 @@ La comparaison 2024-2025 est désormais **alignée sur la même taxonomie et la 
 | Août | 16 | 7 | 5 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Septembre | 19 | 11 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | Octobre | 20 | 16 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Novembre | 15 | 10 | 4 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Novembre | 16 | 10 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Décembre | 19 | 14 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **2025** | **225** | **121** | **81** | **6** | **3** | **4** | **6** | **3** | **1** | **0** |
+| **2025** | **226** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** | **0** |
 
-Le H1 totalise **111 fiches** et le H2 **114**. Le second semestre dépasse donc le premier de trois fiches, ce qui traduit une activité documentaire annuelle relativement équilibrée malgré des profils mensuels différents.
+Le H1 totalise **111 fiches** et le H2 **115**. Le second semestre dépasse donc le premier de quatre fiches, ce qui traduit une activité documentaire annuelle relativement équilibrée malgré des profils mensuels différents.
 
 ### 5.1 Volume mensuel
 
@@ -155,7 +155,7 @@ Le H1 totalise **111 fiches** et le H2 **114**. Le second semestre dépasse donc
 | Août | 16 | ████████████████ |
 | Septembre | 19 | ███████████████████ |
 | Octobre | 20 | ████████████████████ |
-| Novembre | 15 | ███████████████ |
+| Novembre | 16 | ████████████████ |
 | Décembre | 19 | ███████████████████ |
 
 ```mermaid
@@ -182,7 +182,7 @@ timeline
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
 | Ransomware | **121** | 53,8 % |
-| Data Leak | **81** | 36,0 % |
+| Data Leak | **82** | 36,3 % |
 | Access Sale | **6** | 2,7 % |
 | DDoS | **3** | 1,3 % |
 | Defacement | **4** | 1,8 % |
@@ -190,13 +190,13 @@ timeline
 | System Intrusion | **3** | 1,3 % |
 | Malware | **1** | 0,4 % |
 | Operational Fraud | **0** | 0,0 % |
-| **Total** | **225** | **100 %** |
+| **Total canonique** | **226** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - AFRINTEL 2025
     "Ransomware" : 121
-    "Data Leak" : 81
+    "Data Leak" : 82
     "Access Sale" : 6
     "DDoS" : 3
     "Defacement" : 4
@@ -205,7 +205,7 @@ pie showData
     "Malware" : 1
 ```
 
-Le Ransomware et les Data Leak représentent ensemble **202 des 225 fiches**, soit **89,8 %** du corpus. Les 23 fiches restantes montrent toutefois que limiter AFRINTEL à ces deux catégories masquerait une partie opérationnellement importante de la menace : ventes d'accès, prises de contrôle de comptes, DDoS, défacements, intrusions et malware.
+Le Ransomware et les Data Leak représentent ensemble **203 des 226 fiches**, soit **89,8 %** du corpus. Les 23 fiches restantes montrent toutefois que limiter AFRINTEL à ces deux catégories masquerait une partie opérationnellement importante de la menace : ventes d'accès, prises de contrôle de comptes, DDoS, défacements, intrusions et malware.
 
 ## 7. Répartition par pays et par type
 
@@ -233,7 +233,8 @@ Le Ransomware et les Data Leak représentent ensemble **202 des 225 fiches**, so
 | Congo (RDC) | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Burkina Faso | **1** | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | Rwanda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Cameroun | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Cameroun | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Comores | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Djibouti | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Érythrée | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Burundi | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -241,7 +242,7 @@ Le Ransomware et les Data Leak représentent ensemble **202 des 225 fiches**, so
 | Angola | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Madagascar | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Gabon | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **225** | **121** | **81** | **6** | **3** | **4** | **6** | **3** | **1** |
+| **Total geographic occurrences** | **227** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
 > `Operational Fraud = 0` dans le corpus canonique 2025 ; la colonne est omise pour préserver la lisibilité.
 
 L'Afrique du Sud arrive en tête avec **38 fiches**, dont **28 Ransomware**. Le Maroc compte **35 fiches**, avec un profil dominé par **19 Data Leak** et complété par 12 Ransomware, 1 Access Sale, 2 DDoS et 1 Defacement. L'Égypte totalise **35 fiches**, dont 27 Ransomware et 6 Data Leak.
@@ -256,9 +257,9 @@ Le Kenya se distingue par la diversité de son profil : 8 Ransomware, 4 Data Lea
 | Afrique australe | **50** | 22,2 % | 39 | 6 | 1 | 0 | 1 | 1 | 1 | 1 |
 | Afrique de l'Ouest | **37** | 16,4 % | 13 | 18 | 3 | 0 | 1 | 1 | 1 | 0 |
 | Afrique de l'Est | **26** | 11,6 % | 14 | 7 | 0 | 0 | 1 | 4 | 0 | 0 |
-| Afrique centrale | **4** | 1,8 % | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Océan Indien | **4** | 1,8 % | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **225** | **100 %** | **121** | **81** | **6** | **3** | **4** | **6** | **3** | **1** |
+| Afrique centrale | **5** | 2,2 % | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Océan Indien | **5** | 2,2 % | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total geographic occurrences** | **227** | **100 %** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
 
 L'**Afrique du Nord concentre 104 fiches (46,2 %)**. L'Afrique australe en compte 50, l'Afrique de l'Ouest 37 et l'Afrique de l'Est 26. L'Afrique centrale et l'Océan Indien comptent chacun 4 fiches.
 
@@ -268,7 +269,7 @@ La composition diffère fortement selon les régions : l'Afrique australe reste 
 
 | Secteur normalisé | Fiches | Part | Activité |
 |---|---:|---:|---|
-| Gouvernement / Administration | 51 | 22,7 % | ██████████████████████████ |
+| Gouvernement / Administration | 52 | 23,0 % | ██████████████████████████ |
 | Finance / Banque | 43 | 19,1 % | ██████████████████████ |
 | Technologie / IT | 20 | 8,9 % | ██████████ |
 | Éducation / Université | 18 | 8,0 % | █████████ |
@@ -287,10 +288,10 @@ La composition diffère fortement selon les régions : l'Afrique australe reste 
 | Énergie / Services publics | 3 | 1,3 % | ██ |
 | Hôtellerie / Tourisme | 1 | 0,4 % | █ |
 | Juridique | 1 | 0,4 % | █ |
-| **Total** | **225** | **100 %** | |
+| **Total canonique** | **226** | **100 %** | |
 > Échelle visuelle : environ 1 bloc `█` pour 2 fiches. Les nombres sont la référence.
 
-Les administrations publiques arrivent en tête avec **51 fiches (22,7 %)**, devant la Finance / Banque avec **43 (19,1 %)**. Ces deux ensembles représentent à eux seuls **94 fiches**, soit **41,8 %** du corpus.
+Les administrations publiques arrivent en tête avec **52 fiches (23,0 %)**, devant la Finance / Banque avec **43 (19,0 %)**. Ces deux ensembles représentent à eux seuls **95 fiches**, soit **42,0 %** du corpus.
 
 Neuf fiches restent `Non précisé` dans l'agrégation sectorielle annuelle. Cette valeur est conservée lorsqu'une normalisation plus précise ne peut pas être défendue à partir du libellé disponible.
 
@@ -333,14 +334,14 @@ Le tableau suivant regroupe les statuts de fiche pour faciliter la lecture annue
 | Regroupement analytique | Fiches | Part |
 |---|---:|---:|
 | Claim - Unverified | 100 | 44,4 % |
-| Claim - Data Sample Published | 89 | 39,6 % |
+| Claim - Data Sample Published | 90 | 39,8 % |
 | Data Fully Published | 10 | 4,4 % |
 | Confirmation victime / gouvernement / autorité | 14 | 6,2 % |
 | Corroboré / preuve secondaire | 10 | 4,4 % |
 | Tentative | 2 | 0,9 % |
-| **Total** | **225** | **100 %** |
+| **Total canonique** | **226** | **100 %** |
 
-Les deux premières catégories représentent **189 fiches**. Une part importante du corpus repose donc sur des revendications directement observées ou accompagnées d'échantillons, sans que cela transforme automatiquement le vecteur d'accès, l'exfiltration complète ou les volumes annoncés en faits confirmés.
+Les deux premières catégories représentent **190 fiches**. Une part importante du corpus repose donc sur des revendications directement observées ou accompagnées d'échantillons, sans que cela transforme automatiquement le vecteur d'accès, l'exfiltration complète ou les volumes annoncés en faits confirmés.
 
 Les **14 confirmations victime/gouvernement/autorité** représentent les cas où une confirmation institutionnelle explicite est reflétée par le statut structuré. Les 10 dossiers `Corroboré / preuve secondaire` reposent sur des éléments indépendants ou secondaires plus solides qu'une revendication isolée, sans nécessairement atteindre une confirmation officielle.
 
@@ -352,7 +353,7 @@ Le Ransomware reste le premier type avec **53,8 %** du corpus. L'Afrique du Sud 
 
 Une publication d'une victime sur un leak site ne prouve pas, à elle seule, un chiffrement. Le suivi AFRINTEL doit continuer à distinguer la fiche victime, l'échantillon, l'échéance, la divulgation et la confirmation de la victime.
 
-### 12.2 Data Leak - 81 fiches
+### 12.2 Data Leak - 82 fiches
 
 Les Data Leak représentent **36,0 %** du corpus. Le Maroc arrive en tête avec 19, devant l'Algérie avec 15, la Mauritanie et la Tunisie avec 8 chacune, puis l'Égypte avec 6, suivie de l'Afrique du Sud et du Nigeria avec 5 chacun.
 
@@ -422,7 +423,7 @@ Les dix premiers pays concentrent **104 des 121 fiches Ransomware**, soit **86,0
 | 9 | Ghana | **2** |
 | 10 | Côte d'Ivoire | **2** |
 
-Les Data Leak présentent un profil géographique différent du Ransomware : le Maroc et l'Algérie totalisent **34 des 81 fiches Data Leak**, soit **42,0 %**.
+Les Data Leak présentent un profil géographique différent du Ransomware : le Maroc et l'Algérie totalisent **34 des 82 fiches Data Leak**, soit **41,5 %**.
 
 ### 13.3 Autres types d'incident
 
@@ -493,9 +494,9 @@ Priorités de surveillance :
 
 ## 17. Conclusion
 
-AFRINTEL documente **225 cyberincidents en Afrique en 2025**, répartis dans **30 pays** et neuf catégories taxonomie AFRINTEL. Le Ransomware reste dominant avec 121 fiches, mais les 81 Data Leak et l'intégration de catégories telles que Account Takeover, System Intrusion et Malware montrent que le paysage observé ne peut plus être décrit correctement avec l'ancienne taxonomie à six types.
+AFRINTEL documente **226 cyberincidents canoniques en Afrique en 2025**, représentés dans **31 pays** et neuf catégories taxonomie AFRINTEL. Le Ransomware reste dominant avec 121 fiches, mais les 82 Data Leak et l'intégration de catégories telles que Account Takeover, System Intrusion et Malware montrent que le paysage observé ne peut plus être décrit correctement avec l'ancienne taxonomie à six types.
 
-Par rapport à la baseline finale de 2024 (**119 incidents**), le volume documenté en 2025 augmente de **89,1 %**, pour atteindre 225 incidents. Cette progression doit être interprétée comme une évolution du corpus observable et de sa couverture, non comme une mesure exhaustive d'une hausse de 89,1 % des compromissions réelles sur le continent.
+Par rapport à la baseline finale de 2024 (**119 incidents**), le volume documenté en 2025 augmente de **89,9 %**, pour atteindre 226 incidents. Cette progression doit être interprétée comme une évolution du corpus observable et de sa couverture, non comme une mesure exhaustive d'une hausse de 89,9 % des compromissions réelles sur le continent.
 
 Le rapport 2025 devient ainsi une baseline plus riche : elle conserve la granularité mensuelle, géographique, régionale, sectorielle, par acteur, par type et par niveau de preuve tout en maintenant une séparation stricte entre faits observés, revendications, corroborations et inconnues.
 

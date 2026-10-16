@@ -216,6 +216,10 @@ May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **42 da
   The exposed data allegedly includes usernames, names, national ID numbers, email addresses, passwords, academic information and internal institutional documents.
   Such exposure could facilitate identity theft, unauthorized access to university accounts, targeted phishing campaigns and password reuse attacks against other institutional services.
   At this stage, this remains a claim published on a cybercriminal forum, and the full authenticity of the leaked dataset has not yet been independently verified.
+
+  A secondary publication observed on July 25, 2026 under the title “Edu.eg Full Contact Leaks (Mansoura University)” presents a contact sample attributed to the university. A read-only analysis of the supplied local file (`member_search_results.json`) covers **4,239 records**, with six structured fields (`name`, `work`, `telephone`, `job`, `workplace`, `rowId`). The fields are structurally consistent throughout the file; all **4,239 `rowId` values are unique**, while 28 names, 31 telephone values, 135 job titles and 4,192 `work` values are empty. The sample contains 545 distinct workplace values and 844 distinct job titles.
+
+  These findings strengthen the structural consistency of a professional-contact dataset and its apparent association with the Mansoura University publication, but they do not validate the initial access, acquisition method, completeness of the leak, or the claimed **989,000 records**. The analyzed file contains 4,239 rows, not 989,000, and cannot support extrapolation to that volume. No raw personal data is reproduced. The screenshot and source file were retained outside the repository; their SHA-256 hashes are documented in the local collection log.
 ---
 ### May 12, 2026
 #### 🇲🇦 Morocco - SDTM / Groupe Barid Al-Maghrib

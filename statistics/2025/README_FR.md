@@ -8,7 +8,7 @@
 
 ## 1. Périmètre et source
 
-Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contient **225 incidents canoniques dans 30 pays africains**. Une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques. Le type d'incident, le statut de preuve, la confiance et l'impact sont des dimensions distinctes.
+Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contient **226 incidents canoniques dans 31 pays africains représentés**. Les ventilations pays et régions comptent **227 occurrences géographiques**, car une fiche multi-pays est comptée une seule fois au total canonique. Une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques. Le type d'incident, le statut de preuve, la confiance et l'impact sont des dimensions distinctes.
 
 ## 2. Évolution mensuelle
 
@@ -24,11 +24,11 @@ Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contie
 | Août | 16 |
 | Septembre | 19 |
 | Octobre | 20 |
-| Novembre | 15 |
+| Novembre | 16 |
 | Décembre | 19 |
-| **Total** | **225** |
+| **Total canonique** | **226** |
 
-Le S1 contient **111** fiches et le S2 **114**.
+Le S1 contient **111** fiches et le S2 **115**.
 
 ## 3. Répartition par pays
 
@@ -56,15 +56,16 @@ Le S1 contient **111** fiches et le S2 **114**.
 | 20 | Congo (RDC) | CD | 2 |
 | 21 | Burkina Faso | BF | 1 |
 | 22 | Rwanda | RW | 1 |
-| 23 | Cameroun | CM | 1 |
-| 24 | Djibouti | DJ | 1 |
-| 25 | Érythrée | ER | 1 |
-| 26 | Burundi | BI | 1 |
-| 27 | Seychelles | SC | 1 |
-| 28 | Angola | AO | 1 |
-| 29 | Madagascar | MG | 1 |
-| 30 | Gabon | GA | 1 |
-| **Total** |  |  | **225** |
+| 23 | Cameroun | CM | 2 |
+| 24 | Comores | KM | 1 |
+| 25 | Djibouti | DJ | 1 |
+| 26 | Érythrée | ER | 1 |
+| 27 | Burundi | BI | 1 |
+| 28 | Seychelles | SC | 1 |
+| 29 | Angola | AO | 1 |
+| 30 | Madagascar | MG | 1 |
+| 31 | Gabon | GA | 1 |
+| **Total des occurrences géographiques** |  |  | **227** |
 
 ## 4. Répartition régionale
 
@@ -74,15 +75,15 @@ Le S1 contient **111** fiches et le S2 **114**.
 | Afrique australe | 50 | 22,2 % |
 | Afrique de l'Ouest | 37 | 16,4 % |
 | Afrique de l'Est | 26 | 11,6 % |
-| Afrique centrale | 4 | 1,8 % |
-| Océan Indien | 4 | 1,8 % |
-| **Total** | **225** | **100 %** |
+| Afrique centrale | 5 | 2,2 % |
+| Océan Indien | 5 | 2,2 % |
+| **Total des occurrences géographiques** | **227** | **100 %** |
 
 ## 5. Répartition sectorielle
 
 | Secteur normalisé | Fiches | Part |
 |---|---:|---:|
-| Gouvernement / Administration | 51 | 22,7 % |
+| Gouvernement / Administration | 52 | 23,0 % |
 | Finance / Banque | 43 | 19,1 % |
 | Technologie / IT | 20 | 8,9 % |
 | Éducation / Université | 18 | 8,0 % |
@@ -101,14 +102,14 @@ Le S1 contient **111** fiches et le S2 **114**.
 | Énergie / Services publics | 3 | 1,3 % |
 | Hôtellerie / Tourisme | 1 | 0,4 % |
 | Juridique | 1 | 0,4 % |
-| **Total** | **225** | **100 %** |
+| **Total canonique** | **226** | **100 %** |
 
 ## 6. Classification des incidents
 
 | Type | Fiches | Part |
 |---|---:|---:|
 | Ransomware | 121 | 53,8 % |
-| Data Leak | 81 | 36,0 % |
+| Data Leak | 82 | 36,3 % |
 | Access Sale | 6 | 2,7 % |
 | DDoS | 3 | 1,3 % |
 | Defacement | 4 | 1,8 % |
@@ -116,27 +117,27 @@ Le S1 contient **111** fiches et le S2 **114**.
 | System Intrusion | 3 | 1,3 % |
 | Malware | 1 | 0,4 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **225** | **100 %** |
+| **Total canonique** | **226** | **100 %** |
 
 ### Vue agrégée de l'exposition
 
 | Catégorie agrégée | Fiches | Part du corpus |
 |---|---:|---:|
-| Data Leak + Access Sale | **87** | **38,7 %** |
+| Data Leak + Access Sale | **88** | **38,9 %** |
 
-Cette vue analytique (`81 + 6`) ne constitue pas une catégorie supplémentaire.
+Cette vue analytique (`82 + 6`) ne constitue pas une catégorie supplémentaire.
 
 ## 7. Maturité des preuves
 
 | Regroupement analytique | Fiches | Part |
 |---|---:|---:|
 | Claim - Unverified | 100 | 44,4 % |
-| Claim - Data Sample Published | 89 | 39,6 % |
+| Claim - Data Sample Published | 90 | 39,8 % |
 | Data Fully Published | 10 | 4,4 % |
 | Confirmation victime / gouvernement / autorité | 14 | 6,2 % |
 | Corroboré / preuve secondaire | 10 | 4,4 % |
 | Tentative | 2 | 0,9 % |
-| **Total** | **225** | **100 %** |
+| **Total canonique** | **226** | **100 %** |
 
 ## 8. Labels Acteur / Groupe les plus visibles
 
@@ -157,10 +158,10 @@ Cette vue analytique (`81 + 6`) ne constitue pas une catégorie supplémentaire.
 
 ## 9. Interprétation
 
-La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de Yalla Tager porte le corpus annuel de 224 à **225**, les Data Leak de 80 à **81**, l'Égypte de 34 à **35**, l'Afrique du Nord de 103 à **104** et Commerce / E-commerce de 7 à **8**.
+La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de l'incident multi-pays Comores–Cameroun porte le corpus annuel de 225 à **226 incidents canoniques**, les Data Leak de 81 à **82**, le secteur Gouvernement / Administration de 51 à **52**, et les occurrences géographiques à **227**.
 
 ## Conclusion
 
-La baseline statistique validée 2025 est de **225 incidents canoniques**. Les vues pays, région, secteur, acteur, preuve et type d'incident sont réconciliées avec le même corpus bilingue de victimes.
+La baseline statistique validée 2025 est de **226 incidents canoniques**. Les vues pays et région totalisent **227 occurrences géographiques** en raison de la fiche multi-pays Comores–Cameroun ; les vues secteur, acteur, preuve et type restent comptées sur les 226 fiches canoniques.
 
 **AFRINTEL** - TLP:CLEAR

@@ -3,13 +3,13 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in September 2026 (11 records)
+# List of African cyberattack victims in September 2026 (41 records)
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
 ## September 2026
 
-**Monthly follow-up status: In Progress** — provisional corpus of 11 records; monthly closure and statistics are pending.
+**Monthly follow-up status: In Progress** — corpus of 41 records; additional late discoveries may still be added.
 
 ### 03 September 2026
 #### 🇳🇬 Nigeria - Medical and Dental Council of Nigeria (MDCN)
@@ -472,6 +472,471 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-09-28
 -->
+
+### 27 September 2026
+#### 🇿🇦 South Africa - First National Bank (FNB)
+
+- **Incident date:** Not established
+- **Initial publication date:** 27 September 2026 at 00:06 (displayed time; timezone not specified)
+- **AFRINTEL discovery date:** 8 October 2026 (listing and five sample images supplied)
+- **Actor / Group:** Blacknet00
+- **Sector:** Financial services / Banking
+- **Website:** [fnb.co.za](https://www.fnb.co.za/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Subtype:** Extortion and data exfiltration claimed; encryption unestablished
+- **Confidence level:** Medium (listing and visual consistency of the samples; origin, authenticity and compromise uncorroborated)
+- **Impact level:** Level 3
+
+- **Description:** Blacknet00 published a listing naming First National Bank in South Africa and attached five images of financial documents. The visible material consists of FNB-branded business-account statements covering periods in 2023 and 2025. It supports the existence of the listing and a plausible documentary association with FNB, without establishing that the statements came from the bank's infrastructure or that unauthorised access occurred.
+
+- **Analysis:**
+
+  **Observed:** The listing is titled “Another victim of the BLACKNET-00 ransomware. FIRST NATIONAL BANK in South Africa” and carries the displayed timestamp **27 September 2026 at 00:06**. Its author claims an intrusion and demands a ransom. All **five** attached JPEGs were reviewed read-only; they total **428,994 bytes** and depict three apparent series of business-account statements, two of which are partial. Visible documentary periods fall in **2023** and **2025**. Every image carries a BLACKNET-00 watermark. The visual layout, FNB's wording as a division of FirstRand Bank Limited and the regulatory identifier visible in the images align with statements on the [official FNB website](https://www.fnb.co.za/). Account identifiers, contact information, transactions, amounts and names are visible but are not reproduced.
+
+  **Assumption:** Consistency between the brand, layout, institutional wording and the three document series makes a link between the images and FNB statements plausible. It does not establish FNB as the source system: the statements could originate from customers, partners, a service provider, an endpoint or another repository. The watermark indicates how Blacknet00 presents the material, not the documents' technical provenance.
+
+  **Unknown:** independent authenticity of the statements, their source and collection date, the existence of native files, any access vector and date, affected systems, the number of customers or accounts affected, any exfiltration scope, encryption, operational effects, negotiation, payment, resale, and confirmation by FNB or an authority remain unknown.
+
+- **Analysis scope:** all five supplied JPEGs were reviewed in full, with file-type, size, dimension and SHA-256 checks. No PDF, native statement, source file, attachment metadata or complete corpus was supplied. No financial value, personal data or account identifier was transcribed, tested or added to the repository. A minimised manifest is retained outside the repository at `/tmp/afrintel-evidence/afr-2026-09-fnb-sa/evidence_manifest.json`.
+
+- **Risk assessment:** if the documents are authentic and originate from unauthorised access, business statements could enable payment fraud, BEC, spear-phishing, impersonation and social engineering against customers or partners. The sample does not establish financial loss, bank-wide exposure or compromise of FNB accounts.
+
+- **Recommendations:**
+1. Preserve access, export and statement-generation logs, along with traces for document repositories and business-account services.
+2. Within an authorised process, verify whether the document series match FNB templates and distribution channels, without testing visible identifiers or transactions.
+3. Investigate unusual exports, privileged access, email-rule changes and third-party access to customer documents.
+4. Strengthen detection of bank-detail changes, unusual payment requests and phishing campaigns targeting business customers.
+5. Retain artefacts in restricted storage and monitor republication without opening criminal links or entering negotiations.
+
+- **Sources / Evidence:** Blacknet00 listing and five sample images supplied to AFRINTEL; [official FNB website](https://www.fnb.co.za/) for correspondence of the brand and institutional wording. No criminal-infrastructure link, statement, identifier, transaction or raw personal data is published.
+
+<!-- afrintel:ransomware-lifecycle
+listing_status: observed
+listing_first_observed_at: 2026-09-27T00:06:00
+listing_last_observed_at: 2026-10-08
+sample_status: sample-reviewed
+deadline_at:
+deadline_status: not-stated
+disclosure_status: partial
+victim_confirmation: none-observed
+negotiation_status: unknown
+ransom_payment_status: unknown
+resale_status: unknown
+last_checked_at: 2026-10-08
+-->
+
+## Earlier incidents discovered late and integrated into the September corpus
+
+> These records concern incidents that occurred before September 2026. They are integrated into the September editorial corpus because they were identified and verified late, before publication of the monthly report. The incident date remains the actual date or the best-supported documented window; the AFRINTEL discovery/integration date is recorded separately.
+
+### January 3, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Constantia Pharmacy
+
+- **Incident date:** January 3, 2026
+- **Publication / confirmation date:** January 5, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** `Want_to_cry` ransomware observed; human operator unattributed
+- **Sector:** Healthcare / Pharmacy
+- **Status:** Corroborated
+- **Incident type:** Ransomware
+- **Confidence:** High
+- **Impact:** Level 2
+- **Sources / Evidence:** [MyBroadband, January 5, 2026](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
+Constantia Pharmacy is an independent pharmacy in Cape Town. On January 3, a researcher observed via Shodan an exposed Windows server belonging to its environment while ransomware was running. The pharmacy and its ProPharm provider were alerted and intervened. The observation and coordinated response corroborate the incident; exfiltration, encrypted volume and operator identity remain unknown.
+
+### January 12, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Land and Agricultural Development Bank of South Africa (Land Bank)
+
+- **Incident date:** January 12, 2026
+- **Detailed public confirmation:** March 9, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Government / Public Bank / Finance
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [ITWeb, March 9, 2026](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N); [ITWeb, January 16, 2026](https://www.itweb.co.za/article/land-bank-flags-it-systems-disruption/Kjlyr7wBDRZvk6am)
+
+The South African finance minister confirmed a ransomware attack detected on January 12 after unauthorised activity. Some servers and laptops were encrypted and files were exfiltrated; critical ERP, core-banking and CRM systems were reportedly not compromised. The actor, exact volume and dwell time remain unknown.
+
+### March 23, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Standard Bank South Africa
+
+- **Incident / first communication date:** March 23, 2026
+- **Public updates:** April 2, 13 and 14, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not officially attributed; separate PrinzEugen claim uncorroborated
+- **Sector:** Finance / Banking
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [Standard Bank, March 23, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank); [Standard Bank, April 14, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april)
+
+Standard Bank confirmed unauthorised access to internal administrative systems and document repositories, potentially exposing names, identifiers, contact details, addresses and account numbers. Transactional and core systems were reportedly not accessed. The vector, number of people and copied volume remain unknown. This record is distinct from the May Standard Bank Group claim.
+
+### April 18, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Ahmed Al-Kadi Private Hospital
+
+- **Incident date:** April 18, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Healthcare / Private Hospital
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [Hospital official notice](https://ahmedalkadi.com/notification-of-data-incident/)
+
+The hospital confirmed that an unauthorised party accessed its IT environment and deployed ransomware on April 18. Part of the environment was encrypted, contained and restored with external specialists. The vector, encryption scope and exfiltration remain unknown.
+
+### Late May 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Centre for High Performance Computing (CHPC) / Lengau Supercomputer
+
+- **Incident date:** late May 2026
+- **Detailed public confirmation:** August 24, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Research / Strategic Scientific Infrastructure
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [ITWeb, August 24, 2026](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
+A parliamentary response confirmed an incident affecting part of the Lengau HPC environment in late May, linked to vulnerabilities in an ageing environment. Access depth, dwell time and any data viewed remain unknown.
+
+### June 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - MIP Holdings
+
+- **Incident date:** June 2026, exact date not established
+- **First public notice:** June 26, 2026
+- **Additional regulatory confirmation:** September 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Technology / Software / Service Provider
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [LegalWise, June 26, 2026](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident); [TechCentral, September 25, 2026](https://techcentral.co.za/insurers-mip-breach-regulators/286482/)
+
+MIP Holdings identified unauthorised access to a former development and support environment. South Africa's Information Regulator confirmed in September that it was working with MIP to establish the circumstances and number of affected people. The compromise and supply-chain risk are confirmed; volume and vector remain unknown.
+
+### June 14-15, 2026 — integrated September 30, 2026
+#### 🇬🇦 Gabon - Société d'Énergie et d'Eau du Gabon (SEEG)
+
+- **Incident date:** night of June 14-15, 2026
+- **Initial government communication:** June 15, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Energy / Water / Critical Infrastructure
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [Gabonese Government, June 15, 2026](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/); [Gabon Media Time, August 5, 2026](https://gabonmediatime.com/cybersecurite-la-seeg-revele-avoir-perdu-pres-de-95-de-ses-infrastructures-informatiques/)
+
+A major incident disrupted SEEG systems, including EDAN. The government cited malicious activity and SEEG later described the event as sabotage, with nearly 95% of its IT infrastructure reportedly lost. The technical mechanism, responsible parties and exfiltration remain unknown.
+
+### July 12, 2026 — integrated September 30, 2026
+#### 🇨🇲 Cameroon - Ministry of Employment and Vocational Training (MINEFOP)
+
+- **Incident date:** July 12, 2026
+- **Public analysis:** July 27, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** ANTONKILL
+- **Sector:** Government / Public Administration
+- **Status:** Corroborated
+- **Incident type:** Defacement
+- **Confidence:** High
+- **Impact:** Level 2
+- **Sources / Evidence:** [OBS-CC, July 27, 2026](https://obs-cc.org/defacement-antonkill-minefop/); [OBS-CC incident database](https://obs-cc.org/incidents/)
+
+OBS-CC, relying on an ANTIC CIRT alert, documented the defacement of the MINEFOP website in a campaign attributed to ANTONKILL. The depth of access, persistence and exposure of non-public data are not established.
+
+### July 15, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Rectron (Pty) Ltd
+
+- **Detected incident date:** July 15, 2026
+- **SENS notification:** July 22, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not officially attributed; DragonForce unconfirmed
+- **Sector:** Technology / IT Distribution
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 3
+- **Sources / Evidence:** [Mustek / JSE SENS, July 22, 2026](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
+Mustek announced that Rectron suffered a compromise affecting some IT systems and operations, with unlawful access to some data. Rectron launched incident response and notified the Information Regulator. The vector, data categories and exfiltrated volume remain unknown.
+
+### July 18, 2026 — integrated September 30, 2026
+#### 🇰🇪 Kenya - Official website of the President of the Republic (`president.go.ke`)
+
+- **Incident date:** July 18, 2026
+- **Government confirmation:** July 18, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Government / Presidency
+- **Status:** Government Confirmed
+- **Incident type:** Defacement
+- **Confidence:** Very High
+- **Impact:** Level 3
+- **Sources / Evidence:** [ICT Authority / ministry statement, July 18, 2026](https://www.linkedin.com/posts/kenya-ict-board_ministry-of-information-communications-activity-7484210613053784065-Fy7R); [The Standard, July 18, 2026](https://www.standardmedia.co.ke/national/article/2001553147/kabogo-no-sensitive-data-accessed-after-presidents-website-hack)
+
+The Kenyan government confirmed the defacement of the presidential website, which displayed hostile messages, a wallet address and a demand for 5 BTC. No evidence of access to sensitive data or exfiltration was reported. The vector and attacker identity remain unknown.
+
+### August 26, 2026 — integrated September 30, 2026
+#### 🇿🇦 South Africa - Cartrack South Africa
+
+- **Incident date:** August 26, 2026
+- **Public communication:** August 28, 2026
+- **Update:** September 10, 2026
+- **AFRINTEL discovery / integration date:** September 30, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Telematics / Mobility / Automotive Services
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Sources / Evidence:** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
+
+Cartrack confirmed a ransomware incident detected on August 26. Affected servers were isolated and the platform restored within five hours. An update states that personal information relating to some customers was accessed and may have been published on a restricted-access site. The vector, operator and exact volume remain unknown.
+
+The October 16, 2026 workbook also contains a `Cartrack Holdings` listing attributed to direwolf, dated September 2, 2026. This publication is retained as a secondary observation potentially related to the same event; it is not counted as a separate incident without evidence separating the two events.
+
+## September ransomware publications integrated from the October 16, 2026 workbook
+
+> These records originate from the local `AFRINTEL_Victimes_Africaines_Septembre_2026.xlsx` workbook. The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.
+
+### September 1, 2026
+#### 🇪🇬 Egypt - Holding Company for Construction and Development (HCCD)
+- **Initial publication date:** September 1, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Construction
+- **Website:** [hccd-construction.com](https://hccd-construction.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35624
+
+Krybit published a claim naming the Holding Company for Construction and Development. The date reflects the listing observation; compromise, volume, encryption and exfiltration remain unknown.
+
+#### 🇪🇬 Egypt - Mecca High Feed Factory
+- **Initial publication date:** September 1, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Agriculture / Agribusiness
+- **Website:** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35627
+
+Krybit published a claim targeting Mecca High Feed Factory, described as an Egyptian animal-feed manufacturer. Technical evidence and actual impact are not established.
+
+#### 🇪🇬 Egypt - Seashell Hospital
+- **Initial publication date:** September 1, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Healthcare / Hospital
+- **Website:** [seashellhospital.com](https://seashellhospital.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35637
+
+Krybit published a claim targeting Seashell Hospital, a private Egyptian hospital. No reviewed public element confirms access, encryption or exfiltration.
+
+### September 7, 2026
+#### 🇿🇦 South Africa - VSB Attorneys Inc
+- **Initial publication date:** September 7, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** lockbit5
+- **Sector:** Legal Services
+- **Website:** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35798
+
+Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm. Compromise and data scope are unconfirmed.
+
+#### 🇪🇬 Egypt - Nile Projects Trading
+- **Initial publication date:** September 7, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** TheGentlemen
+- **Sector:** Real Estate / Property Management
+- **Website:** [nileprojects.com](https://nileprojects.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35813
+
+TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian group active in retail, real estate and distribution. No evidence confirms access or exfiltration.
+
+#### 🇿🇦 South Africa - Hollard Insurance Group
+- **Initial publication date:** September 7, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** TheGentlemen
+- **Sector:** Insurance
+- **Website:** [hollard.co.za](https://www.hollard.co.za/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35817
+
+TheGentlemen published a claim targeting Hollard Insurance Group. The source corpus describes the insurer and its activities but provides no independent compromise evidence.
+
+#### 🇿🇦 South Africa - RelyComply AML Platform
+- **Initial publication date:** September 9, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** direwolf
+- **Sector:** Fintech / Anti-Money Laundering
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35859
+
+Direwolf published a claim naming RelyComply AML Platform. The organisation identity, vector, affected systems and impact remain unknown.
+
+### September 12, 2026
+#### 🇲🇦 Morocco - La Sultana Hotel Group
+- **Initial publication date:** September 12, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Hospitality
+- **Website:** [lasultanahotels.com](https://lasultanahotels.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35923
+
+Krybit published a claim targeting La Sultana Hotel Group in Morocco. No reviewed element confirms access, encryption or data disclosure.
+
+#### 🇪🇬 Egypt - Egyptian Airports Company (EAC)
+- **Initial publication date:** September 12, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Air Transport
+- **Website:** [eac-airports.com](https://www.eac-airports.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35917
+
+Krybit published a claim targeting the Egyptian Airports Company. The publication identifies the organisation and sector; technical outcome and any exposure remain unknown.
+
+### September 16, 2026
+#### 🇳🇦 Namibia - Namibian Defence Force
+- **Initial publication date:** September 16, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** ransomhouse
+- **Sector:** Defence / Armed Forces
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36039
+
+Ransomhouse published a claim targeting the Namibian Defence Force. The listing does not confirm compromise, encryption or exfiltration.
+
+### September 18, 2026
+#### 🇹🇳 Tunisia - PayPal Support Operations (Transcom WorldWide)
+- **Initial publication date:** September 18, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** N0n
+- **Sector:** Business Services / Customer Support
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36122
+
+N0n published a claim targeting outsourced support operations linked to PayPal and Transcom WorldWide in Tunisia. The post mentions internal systems and a settlement deadline, but does not confirm access, the stated volumes or operational impact.
+
+### September 21, 2026
+#### 🇪🇹 Ethiopia - Siinqee Bank
+- **Initial publication date:** September 21, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** lockbit5
+- **Sector:** Banking
+- **Website:** [siinqeebank.com](https://siinqeebank.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36161
+
+Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial institution. No independent element confirms intrusion or data exposure.
+
+#### 🇦🇴 Angola - Grupolider
+- **Initial publication date:** September 21, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** TheGentlemen
+- **Sector:** Distribution / Agriculture / Logistics
+- **Website:** [grupolider-ao.com](https://grupolider-ao.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36171
+
+TheGentlemen published a claim targeting Grupolider, an Angolan group active in agriculture, logistics, construction and distribution. Compromise and claimed volume remain unknown.
+
+### September 24, 2026
+#### 🇹🇿 Tanzania - Air Tanzania Company Limited (ATCL)
+- **Initial publication date:** September 24, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** krybit
+- **Sector:** Air Transport
+- **Website:** [airtanzania.co.tz](https://airtanzania.co.tz/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence:** Medium
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36284
+
+Krybit published a claim targeting Air Tanzania Company Limited, Tanzania's national airline. A local sample associated with the publication was reviewed read-only: **114 files** totalling **676,972,266 bytes**, including **112 valid images** and **2 non-image files despite the `.jpg` extension**. The valid images comprise **101 three-frame MPO files** and **11 single-frame JPEGs**, for **314 embedded views** in total. No SHA-256 duplicates were detected.
+
+This structural consistency supports the presence of an image corpus associated with the publication, but does not confirm that the files originated from Air Tanzania's infrastructure, or establish initial access, exfiltration, encryption, the number of people represented or completeness of the claim. No OCR, facial processing, individual filename or personal content was reproduced. A minimised manifest is retained outside the repository at `/tmp/afrintel-evidence/afr-2026-09-airtanzania/evidence_manifest.json`.
+
+#### 🇺🇬 Uganda - Armada Credit Bureau
+- **Initial publication date:** September 24, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** Spirals
+- **Sector:** Financial Services / Credit Bureau
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36306
+
+Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan credit-reporting and analytics company. No independent evidence confirms compromise.
+
+### September 25, 2026
+#### 🇰🇪 Kenya - Majani Insurance Brokers
+- **Initial publication date:** September 25, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** Vexy Ransomware
+- **Sector:** Insurance
+- **Website:** [majaninsure.com](https://majaninsure.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36310
+
+Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan insurance broker. The vector, affected systems and any exfiltration remain unknown.
+
+### September 26, 2026
+#### 🇿🇦 South Africa - Guardrisk
+- **Initial publication date:** September 26, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** TheGentlemen
+- **Sector:** Insurance
+- **Website:** [guardrisk.co.za](https://guardrisk.co.za/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36351
+
+TheGentlemen published a claim targeting Guardrisk, a South African insurance group. The publication provides organisational context but does not confirm access or the scope of held data.
+
+### September 29, 2026
+#### 🇿🇦 South Africa - BCX / Business Connexion
+- **Initial publication date:** September 29, 2026
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Actor / Group:** incransom
+- **Sector:** Information Technology / Consulting
+- **Website:** [bcx.co.za](https://www.bcx.co.za/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36421
+
+Incransom published a claim targeting BCX / Business Connexion and stated **500 GB**, 4,224,088 files and 596,613 folders, along with source code and business applications. These volumes and categories are actor claims; access, exfiltration and completeness are unconfirmed.
 
 ## Inter-month follow-up note
 

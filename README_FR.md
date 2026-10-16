@@ -43,15 +43,21 @@ Le rapport intègre les suivis consignés jusqu'au **14 septembre 2026** et dist
 
 📦 [Bundle STIX 2.1 / OpenCTI - août 2026](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
-### Septembre 2026 — Suivi en cours
+### Septembre 2026 — Rapport publié
 
-Le corpus provisoire compte **onze fiches**. Les cas suivis incluent le FCT-IRS et le MDCN (Nigéria), SEPE (Angola), Apollo 21 et ARCA Unlimited (Afrique du Sud), TikoHUB (Kenya), AFRICA-TECH (Mali) et Pharma 5 (Maroc). Le suivi du mois est **en cours** ; le rapport CTI et les statistiques définitifs seront publiés à la clôture du corpus. L'échantillon SEPE examiné contient **1 189 fichiers**. L'offre d'accès à TikoHUB reste non confirmée. Pour AFRICA-TECH, l'ensemble des fichiers divulgués par N0n le **25 septembre 2026 à 16:00 GMT (UTC)**, selon les informations de collecte communiquées, a été fourni et examiné : **10 fichiers, dont 6 PDF totalisant 39 pages**, pour **2 413 673 octets**. Le lot comprend des documents bancaires, d'identité, de voyage, d'assurance et professionnels. Le statut est **Data Fully Published** ; le chiffrement et les effets opérationnels restent non établis. Pour Pharma 5, une publication d'INC Ransom datée du **25 septembre 2026** revendique environ **50 Go** ; une page documentaire relative au contrôle qualité et une galerie d'aperçus ont été examinées, sans validation du volume annoncé ni de la méthode d'acquisition. Pour Apollo 21, la publication BLACKLOCKS datée du **19 septembre 2026** revendique **400 Go** ; **12 images d'échantillon** examinées présentent des documents commerciaux, financiers et d'identité, sans valider le volume annoncé. Pour ARCA Unlimited, BLACKLOCKS affiche **400G** sur une entrée datée du **22 septembre 2026** ; **17 images d'échantillon** examinées présentent des plans et documents de projets, sans valider l'unité ou le volume revendiqué. Pour le MDCN, une publication de forum datée du **3 septembre 2026** annonce **65 580 utilisateurs uniques** ; l'extrait textuel fourni contient **50 lignes**, sans valider le nombre total ni l'origine des données. Pour le FCT-IRS, un billet du **21 septembre 2026** annonce une compromission complète ; un PDF de 314 pages a été extrait et traité, sans établir l'exhaustivité ni l'accès initial.
+Le corpus de septembre comprend **41 incidents documentés dans 14 pays** : **28 Ransomware**, **8 Data Leak**, **2 System Intrusion**, **2 Defacement** et **1 Access Sale**. L'Afrique du Sud concentre **16 fiches**, suivie de l'Égypte avec 7. Le rapport distingue les publications de septembre des découvertes tardives intégrées au corpus mensuel et conserve les dates historiques lorsqu'elles sont connues.
+
+📄 [Rapport CTI complet - septembre 2026](CyberAttackAfrica/2026/09-september/README_FR.md)
 
 📋 [Fiches victimes - septembre 2026](CyberAttackAfrica/2026/09-september/victims_FR.md)
 
-📦 [Bundle STIX 2.1 / OpenCTI - septembre 2026](stix/2026/09-september/afrintel_september_2026_opencti.json)
+*Statut du mois : rapport publié sur un corpus de 41 fiches ; des découvertes tardives supplémentaires peuvent encore être intégrées.*
 
-*Statut du mois : In Progress / En cours. Le rapport CTI et les statistiques de septembre seront publiés lorsque le corpus mensuel sera clôturé.*
+### Octobre 2026 — Suivi en cours
+
+Le corpus provisoire d'octobre comprend actuellement **10 fiches**. Le rapport CTI, les statistiques et les exports dérivés d'octobre ne sont pas encore publiés ; les fiches victimes restent en cours de collecte et de validation.
+
+📋 [Fiches victimes - octobre 2026](CyberAttackAfrica/2026/10-october/victims_FR.md)
 
 ### Rapport cybermenaces du premier semestre 2026
 
@@ -78,11 +84,11 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Année | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
 | 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **225** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2025 | **226** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
 **Référence 2024 corrigée :** **121 incidents canoniques dans 31 pays africains**, reclassés selon la même taxonomie à neuf types que celle utilisée pour 2025 : 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware et 1 Operational Fraud.
 
-**Référence 2025 validée :** **225 incidents canoniques dans 30 pays africains** : 121 Ransomware, 81 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **113**.
+**Référence 2025 validée :** **226 incidents canoniques dans 31 pays africains représentés** : 121 Ransomware, 82 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **115**. Les ventilations pays/régions totalisent 227 occurrences géographiques pour la fiche multi-pays Comores–Cameroun.
 
 ---
 
@@ -92,7 +98,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | :--- | ---: | :--- | :--- |
 | S1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
 | S1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
-| S2 2025 | **114** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
+| S2 2025 | **115** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
 | S1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
 ---
@@ -109,7 +115,8 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
 | Juillet 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | Août 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
-| Septembre 2026 | [Fiches victimes](CyberAttackAfrica/2026/09-september/victims_FR.md) | [Victim cards](CyberAttackAfrica/2026/09-september/victims.md) |
+| Septembre 2026 | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) | [Report](CyberAttackAfrica/2026/09-september/README.md) |
+| Octobre 2026 | [Suivi en cours](CyberAttackAfrica/2026/10-october/victims_FR.md) | [In-progress tracking](CyberAttackAfrica/2026/10-october/victims.md) |
 
 ---
 
