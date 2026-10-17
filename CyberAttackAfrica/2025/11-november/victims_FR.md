@@ -132,6 +132,24 @@
 - **Type de source:** Government Confirmation + Public Media
 - **Sources publiques:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
 
+### 18 Novembre 2025
+#### 🇰🇲🇨🇲 Comores / Cameroun - Comores Telecom, Douanes des Comores et Ministère camerounais de la Justice
+- **Date de l'incident :** Non établie
+- **Date de publication initiale :** 18 novembre 2025, selon l'horodatage visible de la publication
+- **Date de découverte / intégration AFRINTEL :** 16 octobre 2026
+- **Pays concernés :** Comores et Cameroun
+- **Acteur / Groupe :** Ahlul Sahara
+- **Secteur :** Télécommunications / Douanes / Gouvernement / Justice
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 4
+- **Sources / Éléments de preuve :** capture d'une publication de forum fournie à AFRINTEL le 16 octobre 2026 ; URL originale non fournie
+
+- **Description :** Une publication intitulée « Comores Telecom / Douanes Comores / Cameroun MinJustice » revendique une fuite multi-pays attribuée à Ahlul Sahara. Le contenu visible associe des données présentées comme provenant de Comores Telecom et des Douanes des Comores à une configuration Joomla identifiant le ministère camerounais de la Justice (`minjustice`).
+- **Analyse :** Les éléments visibles comprennent des comptes utilisateurs, des messages internes, des courriers administratifs et des paramètres de configuration applicative. La publication expose également des éléments d'authentification et de connexion à des services internes ; aucune valeur sensible n'est reproduite par AFRINTEL. Ces éléments soutiennent l'existence d'un échantillon publié et une association apparente avec des environnements comoriens et camerounais, sans confirmer indépendamment l'accès initial, la provenance technique de chaque fichier, l'exfiltration complète, le nombre de personnes touchées ou une confirmation officielle des trois organisations.
+- **Règle de comptage :** un seul incident canonique multi-pays dans le total global ; deux occurrences géographiques, une pour les Comores et une pour le Cameroun.
+
 ### 25 Novembre 2025
 #### 🇪🇬 Égypte - LAMAICA, Egypt
 - **Groupe ransomware:** nightspire

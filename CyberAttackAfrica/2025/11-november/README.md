@@ -6,17 +6,17 @@
 
 ## 1. Executive summary
 
-In November 2025, AFRINTEL documents **15 cyber incidents** affecting organizations and digital services across **7 African countries**.
+In November 2025, AFRINTEL documents **16 canonical cyber incidents** affecting organizations and digital services across **9 African countries**, corresponding to **17 geographic occurrences** because one card covers Comoros and Cameroon.
 
-The landscape is dominated by **Ransomware with 10 records (66.7%)**, followed by **Data Leak with 4 (26.7%)**. Other observed types are Defacement 1.
+The landscape is dominated by **Ransomware with 10 records (62.5%)**, followed by **Data Leak with 5 (31.3%)**. Other observed types are Defacement 1.
 
 Geographic concentration is significant: **Morocco (4)**, **Egypt (4)**, **South Africa (2)** together account for **10 records, or 66.7% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
-At sector level, the most represented categories are **Government / Administration (3)**, **Transport / Logistics (2)**, **Technology / IT (2)**. The most frequent actor labels are `clop` (3), `nightspire` (3), `spacebears` (1). `Unknown`, when present, denotes missing attribution rather than a threat actor.
+At sector level, the most represented categories are **Government / Administration (4)**, **Transport / Logistics (2)**, **Technology / IT (2)**. The most frequent actor labels are `clop` (3), `nightspire` (3), `spacebears` (1). `Unknown`, when present, denotes missing attribution rather than a threat actor.
 
-Evidence maturity remains variable: **13 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
+Evidence maturity remains variable: **14 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with October, monthly volume **decreases by 5 records**. The most visible changes are Ransomware 16->10 (-6), Defacement 0->1 (+1), Data Leak 3->4 (+1).
+Compared with October, monthly volume **decreases by 4 records**. The most visible changes are Ransomware 16->10 (-6), Defacement 0->1 (+1), Data Leak 3->5 (+2).
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,9 +24,9 @@ Compared with October, monthly volume **decreases by 5 records**. The most visib
 
 | Indicator | October 2025 | November 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 20 | 15 | **-5 (-25.0%)** |
+| Total incidents | 20 | 16 | **-4 (-20.0%)** |
 | Ransomware | 16 | 10 | **-6 (-37.5%)** |
-| Data Leak | 3 | 4 | **+1 (+33.3%)** |
+| Data Leak | 3 | 5 | **+2 (+66.7%)** |
 | Access Sale | 1 | 0 | **-1 (-100.0%)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 0 | 1 | **+1 (new)** |
@@ -55,17 +55,17 @@ Compared with October, monthly volume **decreases by 5 records**. The most visib
 
 | Indicator | Value |
 |---|---:|
-| Documented incidents | **15** |
-| Countries represented | **7** |
-| Regions represented | **4** |
+| Documented incidents | **16** |
+| Countries represented | **9** |
+| Regions represented | **6** |
 | Leading country | **Morocco (4)** |
-| Leading sector | **Government / Administration (3)** |
+| Leading sector | **Government / Administration (4)** |
 | Leading actor label | **clop (3)** |
 
 | Incident type | Records | Share |
 |---|---:|---:|
 | Ransomware | 10 | 66.7% |
-| Data Leak | 4 | 26.7% |
+| Data Leak | 5 | 31.3% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 1 | 6.7% |
@@ -73,13 +73,13 @@ Compared with October, monthly volume **decreases by 5 records**. The most visib
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **15** | **100%** |
+| **Total** | **16** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - November 2025
     "Ransomware" : 10
-    "Data Leak" : 4
+    "Data Leak" : 5
     "Defacement" : 1
 ```
 
@@ -94,7 +94,9 @@ pie showData
 | Zambia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nigeria | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| **Total** | **15** | **10** | **4** | **0** | **0** | **1** | **0** | **0** | **0** |
+| Cameroon | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Comoros | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total geographic occurrences** | **17** | **10** | **5** | **0** | **0** | **1** | **0** | **0** | **0** |
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
@@ -102,11 +104,13 @@ pie showData
 
 | Region | Records | Share |
 |---|---:|---:|
-| North Africa | 8 | 53.3% |
-| Southern Africa | 3 | 20.0% |
-| West Africa | 3 | 20.0% |
+| North Africa | 8 | 47.1% |
+| Southern Africa | 3 | 17.6% |
+| West Africa | 3 | 17.6% |
 | East Africa | 1 | 6.7% |
-| **Total** | **15** | **100%** |
+| Central Africa | 1 | 5.9% |
+| Indian Ocean | 1 | 5.9% |
+| **Total geographic occurrences** | **17** | **100%** |
 
 The leading region is **North Africa with 8 records (53.3%)**.
 
@@ -114,7 +118,7 @@ The leading region is **North Africa with 8 records (53.3%)**.
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| Government / Administration | 3 | 20.0% | ███ |
+| Government / Administration | 4 | 25.0% | ████ |
 | Transport / Logistics | 2 | 13.3% | ██ |
 | Technology / IT | 2 | 13.3% | ██ |
 | Finance / Banking | 2 | 13.3% | ██ |
@@ -123,7 +127,7 @@ The leading region is **North Africa with 8 records (53.3%)**.
 | Retail / E-commerce | 1 | 6.7% | █ |
 | Manufacturing / Industry | 1 | 6.7% | █ |
 | Healthcare / Medical | 1 | 6.7% | █ |
-| **Total** | **15** | **100%** | |
+| **Total** | **16** | **100%** | |
 
 ## 7. Actors / groups
 
@@ -142,16 +146,17 @@ The leading region is **North Africa with 8 records (53.3%)**.
 | qilin | 1 | █ |
 | benzona | 1 | █ |
 | RL000 | 1 | █ |
+| Ahlul Sahara | 1 | █ |
 
 ## 8. Evidence maturity
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
 | Claim - Unverified | 9 | 60.0% |
-| Claim - Data Sample Published | 4 | 26.7% |
+| Claim - Data Sample Published | 5 | 31.3% |
 | Data Fully Published | 1 | 6.7% |
 | Victim/Government/Authority Confirmed | 1 | 6.7% |
-| **Total** | **15** | **100%** |
+| **Total** | **16** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 
@@ -171,6 +176,7 @@ timeline
     09 November 2025 : Fidelity Pension Managers, Nigeria
     11 November 2025 : Samcrete Holding
     17 November 2025 : Multiple Government of Kenya websites
+    18 November 2025 : Comores Telecom / Customs of Comoros / Cameroonian Ministry of Justice
     25 November 2025 : LAMAICA, Egypt
     26 November 2025 : Arabia Holding
     26 November 2025 : Santé Espoir Vie Côte d'Ivoire (SEV-CI)
@@ -185,7 +191,7 @@ timeline
 
 ### Data Leak
 
-**4 records** are classified as Data Leak. Leading countries: Morocco (2), South Africa (1), Ivory Coast (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
+**5 records** are classified as Data Leak. Leading countries: Morocco (2), South Africa (1), Ivory Coast (1), and the Comoros–Cameroon multi-country card (2 geographic occurrences). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
 ### Defacement
 
@@ -206,10 +212,10 @@ timeline
 ## 12. Key findings and intelligence gaps
 
 - **Geographic concentration:** Morocco accounts for 4 records (26.7%), followed by Egypt (4) and South Africa (2).
-- **Threat structure:** Ransomware is the leading type with 10 records, followed by Data Leak (4).
-- **Sectors:** Government / Administration (3) and Transport / Logistics (2) have the highest visibility.
+- **Threat structure:** Ransomware is the leading type with 10 records, followed by Data Leak (5).
+- **Sectors:** Government / Administration (4) and Transport / Logistics (2) have the highest visibility.
 - **Actors:** the most frequent labels are clop (3), nightspire (3), and spacebears (1).
-- **Evidence:** 13 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
+- **Evidence:** 14 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
 
 ### Intelligence gaps
 
@@ -247,7 +253,7 @@ These gaps should guide collection rather than be replaced with assumptions.
 
 ## 14. Conclusion
 
-**November 2025** contains **15 documented cyber incidents** across **7 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
+**November 2025** contains **16 canonical cyber incidents** across **9 represented African countries**, corresponding to **17 geographic occurrences**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
 
 The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.
 

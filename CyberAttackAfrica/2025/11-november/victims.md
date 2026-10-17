@@ -132,6 +132,24 @@
 - **Source type:** Government Confirmation + Public Media
 - **Public sources:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
 
+### November 18, 2025
+#### 🇰🇲🇨🇲 Comoros / Cameroon - Comores Telecom, Comoros Customs and Cameroonian Ministry of Justice
+- **Incident date:** Not established
+- **Initial publication date:** November 18, 2025, according to the visible post timestamp
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Countries concerned:** Comoros and Cameroon
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Telecommunications / Customs / Government / Justice
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Sources / Evidence:** forum-post screenshot supplied to AFRINTEL on October 16, 2026; original URL not provided
+
+- **Description:** A post titled “Comores Telecom / Douanes Comores / Cameroun MinJustice” claims a multi-country leak attributed to Ahlul Sahara. The visible content associates material presented as originating from Comores Telecom and Comoros Customs with a Joomla configuration identifying the Cameroonian Ministry of Justice (`minjustice`).
+- **Analysis:** The visible material includes user accounts, internal messages, administrative correspondence and application-configuration parameters. The post also exposes authentication and internal-service connection elements; AFRINTEL does not reproduce any sensitive value. These elements support the existence of a published sample and an apparent association with Comorian and Cameroonian environments, but do not independently confirm initial access, the technical provenance of every file, complete exfiltration, the number of people affected or official confirmation by the three organisations.
+- **Counting rule:** one canonical multi-country incident in the global total; two geographic occurrences, one for Comoros and one for Cameroon.
+
 ### 25 November 2025
 #### 🇪🇬 Egypt - LAMAICA, Egypt
 - **Ransomware Group:** nightspire
