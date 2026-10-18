@@ -219,11 +219,11 @@ def normalize_impact_level(value: str) -> str:
 
 
 def extract_confidence_level(block: str, fields: Dict[str, str]) -> str:
-    direct = normalize_confidence_level(first_matching(fields, ["confidence level", "niveau de confiance"]))
+    direct = normalize_confidence_level(first_matching(fields, ["confidence level", "confidence", "niveau de confiance"]))
     if direct in {"Low", "Medium", "High", "Very High"}:
         return direct
     match = re.search(
-        r"(?:confidence level|niveau de confiance)\s*:\s*"
+        r"(?:confidence level|confidence|niveau de confiance)\s*:\s*"
         r"(very high|high|medium|low|tr[eè]s [ée]lev[ée]e?|[ée]lev[ée]e?|moyen(?:ne)?|faible)",
         block,
         re.I,
@@ -232,16 +232,24 @@ def extract_confidence_level(block: str, fields: Dict[str, str]) -> str:
 
 
 def extract_impact_level(block: str, fields: Dict[str, str]) -> str:
-    direct = normalize_impact_level(first_matching(fields, ["impact level", "niveau d'impact", "niveau d’impact"]))
+    direct = normalize_impact_level(first_matching(fields, ["impact level", "impact", "niveau d'impact", "niveau d’impact"]))
     if re.fullmatch(r"Level [1-4]", direct):
         return direct
-    match = re.search(r"(?:impact level|niveau d['’]impact)\s*:\s*(?:level|niveau)\s*([1-4])", block, re.I)
+    match = re.search(r"(?:impact level|impact|niveau d['’]impact)\s*:\s*(?:level|niveau)\s*([1-4])", block, re.I)
     return f"Level {match.group(1)}" if match else ""
 
 
 def parse_date_to_iso(date_text: str) -> str:
     text = re.sub(r"\s+", " ", date_text.strip().replace(",", " "))
     text = re.sub(r"\s+", " ", text)
+    # Historical cards may carry an editorial integration suffix. The
+    # incident date remains the date used for STIX first_seen.
+    text = re.sub(r"\s+-\s+(?:integrated|intégré|integre)\s+.*$", "", text, flags=re.I)
+    text = re.sub(r"^(?:late|early|end of|fin|fin de)\s+", "", text, flags=re.I)
+    # For a documented date window, use the first day while preserving the
+    # original window in the source card and description.
+    text = re.sub(r"^([A-Za-zÀ-ÿ]+)\s+(\d{1,2})-\d{1,2}\s+(\d{4})$", r"\1 \2 \3", text)
+    text = re.sub(r"^(\d{1,2})-\d{1,2}\s+([A-Za-zÀ-ÿ]+)\s+(\d{4})$", r"\1 \2 \3", text)
 
     # May 02 2026 / Juin 6 2026
     m = re.match(r"([A-Za-zÀ-ÿ]+)\s+(\d{1,2})\s+(\d{4})$", text)
@@ -336,15 +344,17 @@ def classify_incident(fields: Dict[str, str], status: str, default_incident_type
     explicit_type = first_matching(fields, ["incident type", "type d'incident", "type d’incident"]).lower()
     if explicit_type:
         explicit_map = (
-            (("ransomware",), "ransomware"),
-            (("data leak", "data-leak", "fuite"), "data-leak"),
-            (("access sale", "access-sale", "vente d'accès", "vente d’accès"), "access-sale"),
-            (("ddos", "denial of service"), "ddos"),
+            # Prefer the explicit primary type when a card also mentions a
+            # disputed ransomware claim or another secondary effect.
             (("defacement", "défacement"), "defacement"),
             (("account takeover", "prise de contrôle", "prise de controle"), "account-takeover"),
             (("system intrusion", "intrusion système", "intrusion systeme"), "system-intrusion"),
+            (("data leak", "data-leak", "fuite"), "data-leak"),
+            (("access sale", "access-sale", "vente d'accès", "vente d’accès"), "access-sale"),
+            (("ddos", "denial of service"), "ddos"),
             (("malware", "logiciel malveillant"), "malware"),
             (("operational fraud", "fraude opérationnelle", "fraude operationnelle"), "operational-fraud"),
+            (("ransomware",), "ransomware"),
         )
         for needles, normalized in explicit_map:
             if any(needle in explicit_type for needle in needles):
@@ -466,7 +476,7 @@ def normalize_sector(raw: str) -> Optional[str]:
 def is_unattributed(actor: str, status: str = "") -> bool:
     value = f"{actor} {status}".lower()
     return any(term in value for term in (
-        "unclaimed", "unattributed", "unknown", "not specified", "non précisé",
+        "unclaimed", "unattributed", "unknown", "not specified", "not publicly attributed", "not officially attributed", "non précisé",
         "non revendiqué", "non revendique", "non attribué", "non attribue",
         "acteur inconnu", "inconnu",
     ))

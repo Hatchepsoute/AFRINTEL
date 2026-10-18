@@ -94,6 +94,22 @@
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 
 ### 15 December 2025
+#### 🇹🇳 Tunisia - Examens.tn
+- **Actor / Group:** AshleyWood2022
+- **Sector:** Education / University
+- **Website:** [examens.tn](https://examens.tn/)
+- **Status:** Data Fully Published
+- **Incident type:** Data Leak
+- **Incident / initial publication date:** 15 December 2025 (displayed publication timestamp)
+- **Follow-up / observed modification date:** 23 June 2026 (later modification visible; update, republication or new volume not established)
+- **Confidence level:** High for the existence of the publication and sample; initial access and completeness unknown
+- **Impact level:** Level 3
+- **Victim description:** Examens.tn is a Tunisian educational platform providing courses, exercises and exam-preparation resources for students and teachers.
+- **Analysis:** The publication presents a database as complete, including an approximately **717 MB** `examens.sql` dump and `wp_users` and `wp_usermeta` exports. AFRINTEL's documented local analysis confirms exposure of **3,697 user accounts** and **74,891 metadata records**, including login identifiers, email addresses, display names, WordPress password hashes, account statuses, payment information and user roles, including an administrator account. Session tokens, password-reset tokens, Google Site Kit OAuth data and an application password are also reported in the metadata. No raw secret or personal data is published.
+- **Timeline and limitations:** The capture displays an initial publication on 15 December 2025 and a modification on 23 June 2026. It is not established whether this represents the same leak being updated, a new attack by another actor, a new sample or an unremediated vulnerability. No new actor, new sample, new fingerprint or distinct access is established.
+- **Sources / Evidence:** publication screenshot supplied to AFRINTEL; local analysis of the associated dump and exports. Raw data, credentials, passwords and tokens are not published.
+
+### 15 December 2025
 #### 🇹🇳 Tunisia - Tunisian Society of Radiology (strtn.org)
 - **Ransomware Group:** nova
 - **Sector:** Health / Medical Association / Education

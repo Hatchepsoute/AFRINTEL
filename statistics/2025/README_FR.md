@@ -8,7 +8,7 @@
 
 ## 1. Périmètre et source
 
-Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contient **226 incidents canoniques dans 31 pays africains représentés**. Les ventilations pays et régions comptent **227 occurrences géographiques**, car une fiche multi-pays est comptée une seule fois au total canonique. Une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques. Le type d'incident, le statut de preuve, la confiance et l'impact sont des dimensions distinctes.
+Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contient **227 incidents canoniques dans 31 pays africains représentés**. Les ventilations pays et régions comptent **228 occurrences géographiques**, car une fiche multi-pays est comptée une seule fois au total canonique. Une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques. Le type d'incident, le statut de preuve, la confiance et l'impact sont des dimensions distinctes.
 
 ## 2. Évolution mensuelle
 
@@ -26,9 +26,9 @@ Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contie
 | Octobre | 20 |
 | Novembre | 16 |
 | Décembre | 19 |
-| **Total canonique** | **226** |
+| **Total canonique** | **227** |
 
-Le S1 contient **111** fiches et le S2 **115**.
+Le S1 contient **111** fiches et le S2 **116**.
 
 ## 3. Répartition par pays
 
@@ -102,14 +102,14 @@ Le S1 contient **111** fiches et le S2 **115**.
 | Énergie / Services publics | 3 | 1,3 % |
 | Hôtellerie / Tourisme | 1 | 0,4 % |
 | Juridique | 1 | 0,4 % |
-| **Total canonique** | **226** | **100 %** |
+| **Total canonique** | **227** | **100 %** |
 
 ## 6. Classification des incidents
 
 | Type | Fiches | Part |
 |---|---:|---:|
 | Ransomware | 121 | 53,8 % |
-| Data Leak | 82 | 36,3 % |
+| Data Leak | 83 | 36,3 % |
 | Access Sale | 6 | 2,7 % |
 | DDoS | 3 | 1,3 % |
 | Defacement | 4 | 1,8 % |
@@ -117,7 +117,7 @@ Le S1 contient **111** fiches et le S2 **115**.
 | System Intrusion | 3 | 1,3 % |
 | Malware | 1 | 0,4 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total canonique** | **226** | **100 %** |
+| **Total canonique** | **227** | **100 %** |
 
 ### Vue agrégée de l'exposition
 
@@ -137,7 +137,7 @@ Cette vue analytique (`82 + 6`) ne constitue pas une catégorie supplémentaire.
 | Confirmation victime / gouvernement / autorité | 14 | 6,2 % |
 | Corroboré / preuve secondaire | 10 | 4,4 % |
 | Tentative | 2 | 0,9 % |
-| **Total canonique** | **226** | **100 %** |
+| **Total canonique** | **227** | **100 %** |
 
 ## 8. Labels Acteur / Groupe les plus visibles
 
@@ -158,10 +158,10 @@ Cette vue analytique (`82 + 6`) ne constitue pas une catégorie supplémentaire.
 
 ## 9. Interprétation
 
-La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de l'incident multi-pays Comores–Cameroun porte le corpus annuel de 225 à **226 incidents canoniques**, les Data Leak de 81 à **82**, le secteur Gouvernement / Administration de 51 à **52**, et les occurrences géographiques à **227**.
+La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de l'incident multi-pays Comores–Cameroun porte le corpus annuel de 225 à **227 incidents canoniques**, les Data Leak de 81 à **83**, le secteur Gouvernement / Administration de 51 à **52**, et les occurrences géographiques à **228**.
 
 ## Conclusion
 
-La baseline statistique validée 2025 est de **226 incidents canoniques**. Les vues pays et région totalisent **227 occurrences géographiques** en raison de la fiche multi-pays Comores–Cameroun ; les vues secteur, acteur, preuve et type restent comptées sur les 226 fiches canoniques.
+La baseline statistique validée 2025 est de **227 incidents canoniques**. Les vues pays et région totalisent **228 occurrences géographiques** en raison de la fiche multi-pays Comores–Cameroun ; les vues secteur, acteur, preuve et type restent comptées sur les 227 fiches canoniques.
 
 **AFRINTEL** - TLP:CLEAR

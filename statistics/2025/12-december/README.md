@@ -4,13 +4,13 @@
 
 ## Summary
 
-This statistical sheet is compiled from the **19 cards** in the validated monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the **20 cards** in the validated monthly victim file. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 19 |
+| Total incidents | 20 |
 | Ransomware | 14 |
-| Data Leak | 5 |
+| Data Leak | 6 |
 | Access Sale | 0 |
 | DDoS | 0 |
 | Defacement | 0 |
@@ -36,7 +36,7 @@ This statistical sheet is compiled from the **19 cards** in the validated monthl
 | 🇩🇿 Algeria | 1 |
 | 🇲🇦 Morocco | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## 2. Normalized sector
 
@@ -53,7 +53,7 @@ This statistical sheet is compiled from the **19 cards** in the validated monthl
 | Construction / Real Estate | 1 |
 | Energy / Utilities | 1 |
 | Retail / E-commerce | 1 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## 3. Actor / Group
 
@@ -78,8 +78,8 @@ This statistical sheet is compiled from the **19 cards** in the validated monthl
 | Type | Incidents |
 |---|---:|
 | Ransomware | 14 |
-| Data Leak | 5 |
-| **Total** | **19** |
+| Data Leak | 6 |
+| **Total** | **20** |
 
 ## 5. Evidence maturity
 
@@ -87,10 +87,10 @@ This statistical sheet is compiled from the **19 cards** in the validated monthl
 |---|---:|
 | Claim - Unverified | 13 |
 | Claim - Data Sample Published | 6 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## CTI reading
 
-The monthly volume reflects visibility in the reviewed sources, not all incidents that occurred. The Yalla Tager addition increases Egypt's December total from 5 to 6 and Data Leak from 4 to 5.
+The monthly volume reflects visibility in the reviewed sources, not all incidents that occurred. The Yalla Tager addition increases Egypt's December total from 5 to 6 and Data Leak from 4 to 6.
 
 **AFRINTEL** - TLP:CLEAR

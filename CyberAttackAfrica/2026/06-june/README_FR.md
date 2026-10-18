@@ -10,12 +10,12 @@
 
 ## 1. Synthèse exécutive
 
-Juin 2026 contient **40 incidents cyber signalés ou revendiqués publiquement** en Afrique : **20 publications ou divulgations ransomware (50,0 %)**, **18 fuites de données (45,0 %)** et **2 ventes d'accès (5,0 %)**.
+Juin 2026 contient **39 incidents cyber signalés ou revendiqués publiquement** en Afrique : **20 publications ou divulgations ransomware (50,0 %)**, **17 fuites de données (43,6 %)** et **2 ventes d'accès (5,0 %)**.
 
 Par rapport au corpus validé de mai, qui compte **103 incidents**, juin contient **63 fiches documentées de moins (-61,2 %)**. Le nombre de ransomware passe néanmoins de **17 à 20 (+17,6 %)**, tandis que leur part progresse de **16,5 % à 50,0 %** car le corpus de juin est beaucoup plus faible et ne contient aucune fiche DDoS. Cette hausse de part ne doit donc pas être interprétée, à elle seule, comme une évolution structurelle du comportement des attaquants.
 
 Principales conclusions :
-- **40 incidents uniques** : 20 Ransomware, 18 Data Leak et 2 Access Sale.
+- **39 incidents uniques** : 20 Ransomware, 17 Data Leak et 2 Access Sale.
 - **14 pays** sont directement touchés, auxquels s'ajoutent **6 pays africains supplémentaires** exposés via deux ventes d'accès multi-pays, soit **20 pays africains** représentés au total.
 - **Le Maroc compte 9 incidents directs**, le volume direct le plus élevé de juin. Sept publications de fuite sont associées à **anisanas2**.
 - **Jeroid.co (Nigéria)** fait l'objet d'une revendication impliquant des données KYC et biométriques. Les éléments examinés suggèrent un accès à des données KYC via un bucket S3 sans authentification, sans confirmer le volume complet revendiqué ni le vecteur d'accès initial.
@@ -35,9 +35,9 @@ Principales conclusions :
 
 | Indicateur | Mai 2026 | Juin 2026 | Évolution observée |
 |---|---:|---:|---:|
-| Total incidents | 103 | 40 | **-63 (-61,2 %)** |
+| Total incidents | 103 | 39 | **-63 (-61,2 %)** |
 | Ransomware | 17 | 20 | **+3 (+17,6 %)** |
-| Data Leak | 41 | 18 | **-23 (-56,1 %)** |
+| Data Leak | 41 | 17 | **-23 (-56,1 %)** |
 | Access Sale | 2 | 2 | **0 (+0,0 %)** |
 | DDoS | 43 | 0 | **-43 (-100,0 %)** |
 | Defacement | 0 | 0 | **0 (stable)** |
@@ -63,12 +63,12 @@ Principales conclusions :
 
 | Indicateur | Valeur |
 |---|---|
-| Total victimes | 40 incidents uniques |
+| Total victimes | 39 incidents uniques |
 | Pays touchés | 20 (14 directs + 6 via incidents multi-pays) |
-| Occurrences pays | 53 (38 directes + 15 expositions issues de 2 incidents multi-pays) |
+| Occurrences pays | 53 (37 directes + 15 expositions issues de 2 incidents multi-pays) |
 | Acteurs distincts | 25 |
 | Incidents ransomware | 20 (50,0 %) |
-| Fuites de données | 18 (45,0 %) |
+| Fuites de données | 17 (43,6 %) |
 | Ventes d'accès | 2 (5,0 %) |
 
 ### Répartition par type d'incident
@@ -77,7 +77,7 @@ Principales conclusions :
 pie showData
     title Types d'incident - Juin 2026
     "Ransomware" : 20
-    "Fuite de données" : 18
+    "Fuite de données" : 17
     "Vente d'accès" : 2
 ```
 
@@ -85,7 +85,7 @@ pie showData
 
 ### Classement par pays
 
-**Classement géographique élargi (53 occurrences pays issues de 40 incidents uniques) :**
+**Classement géographique élargi (52 occurrences pays issues de 39 incidents uniques) :**
 
 | Rang | Pays | Incidents directs | Expositions multi-pays | Total géographique | Graphe |
 | :---: | :--- | :---: | :---: | :---: | :--- |
@@ -110,7 +110,7 @@ pie showData
 | **10** | 🇩🇿 Algérie | 0 | 1 | **1** | █ |
 | **10** | 🇸🇱 Sierra Leone | 0 | 1 | **1** | █ |
 
-> Le rapport recense 40 incidents uniques. Le classement géographique totalise 53 occurrences pays, car les offres Convince et Governor sont ventilées dans chaque pays africain explicitement mentionné. Cette ventilation ne modifie pas le total global. La Palestine et le Yémen sont exclus de ce classement, car ils sont hors du périmètre africain.
+> Le rapport recense 39 incidents uniques. Le classement géographique totalise 52 occurrences pays, car les offres Convince et Governor sont ventilées dans chaque pays africain explicitement mentionné. Cette ventilation ne modifie pas le total global. La Palestine et le Yémen sont exclus de ce classement, car ils sont hors du périmètre africain.
 
 ```mermaid
 pie
@@ -168,7 +168,7 @@ xychart-beta
 
 ### Répartition géographique des fuites de données / ventes d'accès
 
-**20 incidents uniques, soit 33 occurrences pays après ventilation des deux offres multi-pays.**
+**19 incidents uniques, soit 32 occurrences pays après ventilation des deux offres multi-pays.**
 
 | Rang | Pays | Occurrences | Graphe |
 | :---: | :--- | :---: | :--- |
@@ -189,7 +189,7 @@ xychart-beta
 
 ### Comparaison Ransomware vs Fuite de données / Vente d'accès par pays et portée
 
-Cette comparaison utilise les **40 incidents uniques**, et non les 53 occurrences géographiques développées. Elle compare **20 ransomware** à **20 incidents Data Leak / Access Sale**. La série bleue comprend **18 Data Leak et 2 Access Sale**.
+Cette comparaison utilise les **39 incidents uniques**, et non les 52 occurrences géographiques développées. Elle compare **20 ransomware** à **19 incidents Data Leak / Access Sale**. La série bleue comprend **17 Data Leak et 2 Access Sale**.
 
 Les deux ventes d'accès apparaissent sous `MULTI` car elles concernent plusieurs pays.
 
@@ -227,7 +227,7 @@ xychart-beta
 
 **Légende pays :** `MA` = Maroc | `ZA` = Afrique du Sud | `EG` = Égypte | `NG` = Nigéria | `TN` = Tunisie | `LY` = Libye | `TZ` = Tanzanie | `KE` = Kenya | `GA` = Gabon | `ZW` = Zimbabwe | `SN` = Sénégal | `BW` = Botswana | `MU` = Maurice | `YT` = Mayotte | `MULTI` = Fiches multi-pays
 
-> La vue géographique développée reste de 53 occurrences pays, car les deux ventes d'accès multi-pays sont ventilées dans chaque pays africain explicitement mentionné. Cela ne modifie pas le total analytique de 40 incidents uniques.
+> La vue géographique développée reste de 52 occurrences pays, car les deux ventes d'accès multi-pays sont ventilées dans chaque pays africain explicitement mentionné. Cela ne modifie pas le total analytique de 39 incidents uniques.
 
 ### Répartition géographique par région
 
@@ -239,7 +239,7 @@ xychart-beta
 | **Afrique centrale** | **2** (3,8 %) | 1 | 1 | 🟧 🟦 |
 | **Afrique de l'Est** | **7** (13,2 %) | 1 | 6 | 🟧 🟦🟦🟦🟦🟦🟦 |
 | **Océan Indien** | **2** (3,8 %) | 2 | 0 | 🟧🟧 |
-| **Total** | **53** | **20** | **33** | |
+| **Total** | **52** | **20** | **33** | |
 
 *Légende : 🟧 Ransomware | 🟦 Fuites de données.
 - Afrique du Nord : Maroc, Égypte, Tunisie, Libye, Algérie. 
@@ -268,7 +268,7 @@ xychart-beta
 | **Alimentation / Boissons** | **1** | 2,5 % | █ |
 | **Services aux entreprises / Technologie** | **1** | 2,5 % | █ |
 | **Services de sécurité** | **1** | 2,5 % | █ |
-| **Total** | **40** | **100 %** | |
+| **Total** | **39** | **100 %** | |
 
 ```mermaid
 pie
@@ -333,12 +333,12 @@ pie
 
 > **Pour le détail de chaque incident, voir la liste complète des victimes :** [`victims_FR.md`](./victims_FR.md)
 
-- **Concentration :** le Maroc (9 incidents directs) et l'Afrique du Sud (6) concentrent 37,5 % des 40 incidents uniques du mois. Le classement géographique élargi atteint 53 occurrences pays lorsque les expositions issues des deux incidents multi-pays sont comptabilisées.
+- **Concentration :** le Maroc (9 incidents directs) et l'Afrique du Sud (6) concentrent 37,5 % des 39 incidents uniques du mois. Le classement géographique élargi atteint 52 occurrences pays lorsque les expositions issues des deux incidents multi-pays sont comptabilisées.
 - **Campagne visant le Maroc :** anisanas2 est associé à 7 des 9 incidents directs recensés dans le pays en juin. Les revendications et publications analysées depuis avril montrent un cluster persistant touchant plusieurs secteurs, notamment l'éducation, la logistique, les mines, le e-commerce, les startups et l'automobile.
 - **Diffusion du ransomware :** l'Afrique du Sud en compte 4, tandis que l'Égypte et la Tunisie en comptent 3 chacune. DeadLock présente la plus forte dispersion géographique, avec des victimes publiées au Gabon, au Nigéria, à Mayotte et au Kenya.
 - **Expositions à fort impact :** les cas les plus sensibles concernent les données fintech et biométriques associées à Jeroid.co, les identifiants de messagerie attribués à l'armée nigériane, les 10,2 millions d'enregistrements revendiqués pour BRELA en Tanzanie et deux publications successives visant des ministères libyens de l'éducation.
 - **Risque multi-pays :** deux ventes d'identifiants ou d'accès à des portails gouvernementaux et policiers représentent 15 occurrences réparties dans 11 pays africains. Elles créent un risque d'usurpation d'identité institutionnelle auprès de grandes plateformes.
-- **Bilan :** les 40 incidents uniques concernent 20 pays africains, directement ou par exposition multi-pays. Le ransomware et les fuites de données ou ventes d'accès atteignent la parité, avec 20 incidents dans chaque catégorie.
+- **Bilan :** les 39 incidents uniques concernent 20 pays africains, directement ou par exposition multi-pays. Le ransomware et les fuites de données ou ventes d'accès atteignent la parité, avec 20 ransomware contre 19 incidents Data Leak / Access Sale.
 
 ---
 
@@ -364,7 +364,7 @@ pie
 
 **Observations :** la part du ransomware dans les incidents mensuels a doublé par rapport à mai, de 28 % à 50 %. **DeadLock** a été le groupe le plus dispersé géographiquement, quatre pays sur le continent (Gabon, Nigéria, Mayotte, Kenya), avec un schéma constant : revendication, menace de divulgation, et dans le cas de Mayotte, publication effective. **LockBit 5** a publié trois victimes dans trois pays en une seule semaine, le 18 juin, sans qu'aucun échantillon ne soit accessible pour ces trois fiches lors de la collecte AFRINTEL. Les deux exceptions où des données ont réellement été publiées : la **Commune de Ouangani à Mayotte**, où DeadLock a livré 138 Mo de données de paie et d'état civil, et **l'ANC**, où Black X a publié directement 2,3 millions de dossiers d'adhérents.
 
-### 4.2 Fuites de données et ventes d'accès - 18 Data Leak + 2 Access Sale
+### 4.2 Fuites de données et ventes d'accès - 17 Data Leak + 2 Access Sale
 
 | Rang | Pays | Occurrences | Principaux acteurs |
 | :---: | :--- | :---: | :--- |
@@ -409,7 +409,7 @@ pie
 | **Alimentation / Boissons** | **1** | 2,5 % | █ |
 | **Services aux entreprises / Technologie** | **1** | 2,5 % | █ |
 | **Services de sécurité** | **1** | 2,5 % | █ |
-| **Total** | **40** | **100 %** | |
+| **Total** | **39** | **100 %** | |
 
 **Observations clés :**
 - **Government / Administration reste la première catégorie :** 12 incidents, soit 30,0 %, contre 20 sur 57 en mai (35,1 %).
@@ -488,13 +488,13 @@ xychart-beta
 
 ### Comparaison factuelle avec mai 2026
 
-Cette comparaison utilise le corpus validé de mai, soit **103 incidents**, et celui de juin, soit **40 incidents**. Elle décrit le corpus public documenté par AFRINTEL et ne permet pas de déduire une évolution du nombre réel de compromissions.
+Cette comparaison utilise le corpus validé de mai, soit **103 incidents**, et celui de juin, soit **39 incidents**. Elle décrit le corpus public documenté par AFRINTEL et ne permet pas de déduire une évolution du nombre réel de compromissions.
 
 | Indicateur | Mai 2026 | Juin 2026 | Évolution observée |
 | :--- | ---: | ---: | :--- |
-| Incidents documentés | 103 | 40 | **-63 (-61,2 %)** |
+| Incidents documentés | 103 | 39 | **-63 (-61,2 %)** |
 | Ransomware | 17 | 20 | **+3 (+17,6 %)** |
-| Data Leak | 41 | 18 | **-23 (-56,1 %)** |
+| Data Leak | 41 | 17 | **-23 (-56,1 %)** |
 | Access Sale | 2 | 2 | **0 (0,0 %)** |
 | Revendications DDoS | 43 | 0 | **-43 (-100,0 %)** |
 
@@ -563,9 +563,11 @@ Les techniques suivantes sont des hypothèses défensives dérivées des éléme
 
 ## 12. Conclusion
 
-Juin 2026 se clôture avec **40 incidents documentés ou revendiqués** : **20 ransomware, 18 fuites de données et 2 ventes d'accès**.
+Juin 2026 se clôture avec **39 incidents documentés ou revendiqués** : **20 ransomware, 17 fuites de données et 2 ventes d'accès**.
 
-Le corpus est nettement inférieur aux **103 incidents de mai**, mais le volume ransomware passe lui-même de 17 à 20 fiches. **Le Maroc arrive en tête des pays directs avec 9 incidents**, tandis que les deux ventes d'accès multi-pays portent la vue géographique à 20 pays africains et 53 occurrences pays.
+**Suivi de publication — examens.tn :** une publication observée le 23 juin 2026, signée **AshleyWood2022**, reprend la base tunisienne examens.tn et affiche un échantillon. Elle est reliée à la publication initiale du 15 décembre 2025 et n'est pas comptée comme un nouvel incident canonique : aucun nouvel échantillon vérifié, volume distinct, empreinte différente ou accès indépendant n'est établi. Une nouvelle attaque par le même acteur ou une vulnérabilité persistante restent des hypothèses non confirmées.
+
+Le corpus est nettement inférieur aux **103 incidents de mai**, mais le volume ransomware passe lui-même de 17 à 20 fiches. **Le Maroc arrive en tête des pays directs avec 9 incidents**, tandis que les deux ventes d'accès multi-pays portent la vue géographique à 20 pays africains et 52 occurrences pays.
 
 Le mois comprend également plusieurs cas à forte sensibilité concernant des données biométriques KYC, des identifiants militaires et des données gouvernementales. Ces dossiers renforcent la nécessité de maintenir une séparation claire entre **revendication de l'acteur, preuve observée, classification de l'incident et niveau de confiance** dans les rapports AFRINTEL.
 

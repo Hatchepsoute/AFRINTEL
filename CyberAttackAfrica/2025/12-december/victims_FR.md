@@ -94,6 +94,22 @@
 - **Description victime:** L'Hôpital La Rabta est l'un des plus grands pôles hospitaliers de Tunisie.
 
 ### 15 Décembre 2025
+#### 🇹🇳 Tunisie - Examens.tn
+- **Acteur / Groupe:** AshleyWood2022
+- **Secteur:** Éducation / Université
+- **Site web:** [examens.tn](https://examens.tn/)
+- **Statut:** Data Fully Published
+- **Type d'incident:** Data Leak
+- **Date de l'incident / publication initiale:** 15 décembre 2025 (horodatage affiché de la publication)
+- **Date de suivi / modification observée:** 23 juin 2026 (modification ultérieure visible ; mise à jour, republication ou nouveau volume non établi)
+- **Niveau de confiance:** High pour l'existence de la publication et de l'échantillon ; accès initial et exhaustivité inconnus
+- **Niveau d'impact:** Level 3
+- **Description victime:** Examens.tn est une plateforme éducative tunisienne proposant des cours, exercices et ressources de préparation aux examens destinés aux élèves et aux enseignants.
+- **Analyse:** La publication présente une base comme complète, comprenant un dump `examens.sql` d'environ **717 Mo** ainsi que les exports `wp_users` et `wp_usermeta`. L'analyse locale documentée par AFRINTEL confirme l'exposition de **3 697 comptes utilisateurs** et **74 891 entrées de métadonnées**, incluant identifiants de connexion, adresses électroniques, noms d'affichage, empreintes de mots de passe WordPress, états de compte, informations de paiement et rôles utilisateurs, dont un compte administrateur. Des jetons de session, jetons de réinitialisation, données OAuth Google Site Kit et un mot de passe applicatif sont également signalés dans les métadonnées. Aucun secret ni élément personnel brut n'est publié.
+- **Chronologie et limites:** La capture affiche une publication initiale au 15 décembre 2025 et une modification au 23 juin 2026. Il n'est pas établi si cette modification correspond à la même fuite mise à jour, à une nouvelle attaque par un autre acteur, à un nouvel échantillon ou à une vulnérabilité persistante non corrigée. Aucun nouvel acteur, nouvel échantillon, nouvelle empreinte ou nouvel accès distinct n'est établi.
+- **Sources / Éléments de preuve:** capture de publication fournie à AFRINTEL ; analyse locale du dump et des exports associés. Les données brutes, identifiants, mots de passe et jetons ne sont pas publiés.
+
+### 15 Décembre 2025
 #### 🇹🇳 Tunisie - Société Tunisienne de Radiologie (strtn.org)
 - **Groupe ransomware:** nova
 - **Secteur:** Santé / Association Médicale / Éducation.

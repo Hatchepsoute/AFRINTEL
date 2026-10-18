@@ -493,30 +493,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 
 
-#### 🇹🇳 Tunisia - Examens.tn
-
-- **Actor / Group:** AshleyWood2022
-- **Sector:** Education / University
-- **Status:** Data Fully Published
-- **Incident type:** Data Leak
-- **Website:** [examens.tn](https://examens.tn/)
-
-- **Description:**
-
-Examens.tn is a Tunisian educational platform providing courses, exercises and exam-preparation resources for students and teachers.
-
-- **Analysis:**
-
-The actor `AshleyWood2022` published the platform’s complete database. The disclosure includes the approximately **717 MB** `examens.sql` dump, together with the `wp_users` and `wp_usermeta` exports.
-
-Analysis of the CSV files confirms the exposure of **3,697 user accounts** and **74,891 metadata records**. The leaked data includes usernames, email addresses, display names, WordPress password hashes, account statuses, payment-related information and user roles, including one administrator account.
-
-The metadata also contains session tokens, password-reset tokens, Google Site Kit OAuth data and an application password. This exposure increases the risk of targeted phishing, credential stuffing and account compromise.
-
-- **Recommendations:**
-
-1. Reset passwords, revoke exposed sessions, recovery tokens, OAuth access and application passwords, and enforce multi-factor authentication for privileged accounts.
-2. Identify and remediate the initial compromise vector, review WordPress and server logs, monitor abnormal authentication attempts and notify affected users.
+> **Reclassified follow-up:** the initial publication is assigned to the December 2025 corpus based on the displayed timestamp of 15 December 2025. A distinct publication observed on 23 June 2026 at 14:21, titled “FREE Tunisia Database Source: examens.tn”, is also signed **AshleyWood2022** and displays a sample, while the download remains hidden or inaccessible. This confirms a public follow-up in June 2026 by the same pseudonym, but does not by itself demonstrate a new compromise: no verified new sample, new fingerprint, distinct volume or independent access is established. It is therefore retained as a publication follow-up and not as a separate canonical record. The hypotheses remain open: an update or republication of the same leak, a new attack by the same actor, or an unremediated persistent vulnerability.
 ---
 ### June 25, 2026
 #### 🇲🇦 Morocco - MG Maroc

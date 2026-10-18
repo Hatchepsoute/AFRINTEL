@@ -6,9 +6,9 @@
 
 ## 1. Executive summary
 
-In 2025, AFRINTEL documented **226 canonical cyber incidents affecting organizations, institutions, and digital services across 31 represented African countries**. Geographic views total **227 occurrences** because one card covers multiple countries. The corpus highlights a threat landscape largely dominated by **ransomware** and **data leaks**, but also marked by access sales, institutional account takeovers, DDoS attacks, defacements, system intrusions, and malware infections.
+In 2025, AFRINTEL documented **227 canonical cyber incidents affecting organizations, institutions, and digital services across 31 represented African countries**. Geographic views total **227 occurrences** because one card covers multiple countries. The corpus highlights a threat landscape largely dominated by **ransomware** and **data leaks**, but also marked by access sales, institutional account takeovers, DDoS attacks, defacements, system intrusions, and malware infections.
 
-**Ransomware remains the most frequently observed threat with 121 records, accounting for 53.5% of the annual corpus**. **Data Leak accounts for 82 records (36.3%)**. Together, these two categories represent **203 of the 226 documented incidents, or 89.8%**. Other recorded events include **6 Access Sale**, **6 Account Takeover**, **4 Defacement**, **3 DDoS**, **3 System Intrusion**, and **1 Malware**. No incident was classified as `Operational Fraud` in the validated annual corpus.
+**Ransomware remains the most frequently observed threat with 121 records, accounting for 53.5% of the annual corpus**. **Data Leak accounts for 83 records (36.6%)**. Together, these two categories represent **203 of the 227 documented incidents, or 89.9%**. Other recorded events include **6 Access Sale**, **6 Account Takeover**, **4 Defacement**, **3 DDoS**, **3 System Intrusion**, and **1 Malware**. No incident was classified as `Operational Fraud` in the validated annual corpus.
 
 Geographically, activity is strongly concentrated in three countries: **South Africa with 38 incidents, Morocco with 35, and Egypt with 35**. Together, they account for **108 records, or 48.0% of the annual corpus**. Their threat profiles are not identical: South Africa is primarily associated with ransomware publications, while Morocco shows a substantial Data Leak component and also includes several DDoS and access-sale events.
 
@@ -44,7 +44,7 @@ The former public annual report contained **197 records** and relied on the old 
 
 This does not mean that 27 attacks occurred after the end of 2025. It reflects **retrospective coverage improvement**, integration of missing cases, and the ability to classify events that did not fit the former taxonomy, notably account takeovers, system intrusions, and malware.
 
-Two cases remain under investigation and are **excluded from the 226 canonical incidents** until scope or exact victim identity is sufficiently established.
+Two cases remain under investigation and are **excluded from the 227 canonical incidents** until scope or exact victim identity is sufficiently established.
 
 ## 3. Methodology
 
@@ -83,7 +83,7 @@ This harmonization improves comparability, but the changes below still describe 
 | Malware | 0 | 1 | **+1 (newly observed)** |
 | Operational Fraud | 1 | 0 | **-1 (-100.0%)** |
 
-The documented annual corpus increases from **119 to 226 incidents**, or **+107 (+89.9%)**. Ransomware rises from 91 to 121 records, while Data Leak increases from 13 to 82. The Data Leak difference is especially large in the corpus, but it requires caution: the 2024 chronology cleanup removed several historical republications that had previously inflated that category.
+The documented annual corpus increases from **119 to 227 incidents**, or **+107 (+89.9%)**. Ransomware rises from 91 to 121 records, while Data Leak increases from 13 to 82. The Data Leak difference is especially large in the corpus, but it requires caution: the 2024 chronology cleanup removed several historical republications that had previously inflated that category.
 
 `Account Takeover`, `System Intrusion`, and `Malware` can now be compared directly because 2024 has been aligned to the same nine-type classification.
 
@@ -136,10 +136,10 @@ The 2024-2025 comparison is now **aligned to the same taxonomy and chronology ru
 | September | 19 | 11 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | October | 20 | 16 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | November | 16 | 10 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| December | 19 | 14 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **2025** | **226** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** | **0** |
+| December | 20 | 14 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **2025** | **227** | **121** | **83 | **6** | **3** | **4** | **6** | **3** | **1** | **0** |
 
-H1 contains **111 records** and H2 **115**. The second half exceeds the first by four records, showing a relatively balanced annual volume despite different monthly profiles.
+H1 contains **111 records** and H2 **116**. The second half exceeds the first by four records, showing a relatively balanced annual volume despite different monthly profiles.
 
 ### 5.1 Monthly volume
 
@@ -182,7 +182,7 @@ timeline
 | Incident type | Records | Share |
 |---|---:|---:|
 | Ransomware | **121** | 53.8% |
-| Data Leak | **82** | 36.3% |
+| Data Leak | **83** | 36.3% |
 | Access Sale | **6** | 2.7% |
 | DDoS | **3** | 1.3% |
 | Defacement | **4** | 1.8% |
@@ -190,13 +190,13 @@ timeline
 | System Intrusion | **3** | 1.3% |
 | Malware | **1** | 0.4% |
 | Operational Fraud | **0** | 0.0% |
-| **Canonical total** | **226** | **100%** |
+| **Canonical total** | **227** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - AFRINTEL 2025
     "Ransomware" : 121
-    "Data Leak" : 82
+    "Data Leak" : 83
     "Access Sale" : 6
     "DDoS" : 3
     "Defacement" : 4
@@ -205,7 +205,7 @@ pie showData
     "Malware" : 1
 ```
 
-Ransomware and Data Leak together account for **203 of 226 records**, or **89.8%** of the corpus. The remaining 23 records show why AFRINTEL can no longer be reduced to those two categories: access sales, account takeovers, DDoS, defacements, system intrusions, and malware carry distinct operational meaning.
+Ransomware and Data Leak together account for **203 of 227 records**, or **89.9%** of the corpus. The remaining 23 records show why AFRINTEL can no longer be reduced to those two categories: access sales, account takeovers, DDoS, defacements, system intrusions, and malware carry distinct operational meaning.
 
 ## 7. Country and incident-type distribution
 
@@ -242,7 +242,7 @@ Ransomware and Data Leak together account for **203 of 226 records**, or **89.8%
 | Angola | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Madagascar | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Gabon | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total geographic occurrences** | **227** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
+| **Total geographic occurrences** | **228** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
 > `Operational Fraud = 0` in the canonical 2025 corpus; the column is omitted for readability.
 
 South Africa leads with **38 records**, including **28 Ransomware**. Morocco has **35**, with a profile led by **19 Data Leak** plus 12 Ransomware, 1 Access Sale, 2 DDoS, and 1 Defacement. Egypt totals **35**, including 27 Ransomware and 6 Data Leak.
@@ -259,7 +259,7 @@ Kenya stands out for profile diversity: 8 Ransomware, 4 Data Leak, 3 Account Tak
 | East Africa | **26** | 11.6% | 14 | 7 | 0 | 0 | 1 | 4 | 0 | 0 |
 | Central Africa | **5** | 2.2% | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Indian Ocean | **5** | 2.2% | 3 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total geographic occurrences** | **227** | **100%** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
+| **Total geographic occurrences** | **228** | **100%** | **121** | **82** | **6** | **3** | **4** | **6** | **3** | **1** |
 
 **North Africa accounts for 104 records (46.2%)**. Southern Africa has 50, West Africa 37, and East Africa 26. Central Africa and the Indian Ocean each contain 4.
 
@@ -288,7 +288,7 @@ Regional composition differs sharply: Southern Africa remains primarily Ransomwa
 | Energy / Utilities | 3 | 1.3% | ██ |
 | Hospitality / Tourism | 1 | 0.4% | █ |
 | Legal | 1 | 0.4% | █ |
-| **Canonical total** | **226** | **100%** | |
+| **Canonical total** | **227** | **100%** | |
 > Visual scale: approximately 1 `█` block per 2 records. Numeric values are authoritative.
 
 Government / Administration ranks first with **52 records (23.0%)**, followed by Finance / Banking with **43 (19.0%)**. Together these sectors account for **95 records**, or **42.0%** of the corpus.
@@ -339,7 +339,7 @@ The following table groups record statuses for annual readability. This is an **
 | Victim/Government/Authority Confirmed | 14 | 6.2% |
 | Corroborated / Secondary evidence | 10 | 4.4% |
 | Attempted | 2 | 0.9% |
-| **Canonical total** | **226** | **100%** |
+| **Canonical total** | **227** | **100%** |
 
 The first two categories account for **189 records**. A substantial part of the corpus therefore relies on directly observed claims or claims accompanied by samples, without automatically confirming initial access, complete exfiltration, or claimed volumes.
 
@@ -355,7 +355,7 @@ A victim listing on a leak site does not itself prove encryption. AFRINTEL shoul
 
 ### 12.2 Data Leak - 82 records
 
-Data Leak represents **36.0%** of the corpus. Morocco leads with 19, followed by Algeria with 15, Mauritania and Tunisia with 8 each, then Egypt with 6, followed by South Africa and Nigeria with 5 each.
+Data Leak represents **36.0%** of the corpus. Morocco leads with 19, followed by Algeria with 15, Mauritania and Tunisia with 9 each, then Egypt with 6, followed by South Africa and Nigeria with 5 each.
 
 Growth in this category versus the corrected 2024 corpus is one of the clearest structural changes.
 
@@ -423,7 +423,7 @@ The top ten countries account for **104 of 121 Ransomware records**, or **86.0%*
 | 9 | Ghana | **2** |
 | 10 | Ivory Coast | **2** |
 
-Data Leak follows a different geography: Morocco and Algeria together account for **34 of 82 Data Leak records**, or **41.5%**.
+Data Leak follows a different geography: Morocco and Algeria together account for **34 of 83 Data Leak records**, or **41.5%**.
 
 ### 13.3 Other incident types
 
@@ -494,9 +494,9 @@ Priorities include:
 
 ## 17. Conclusion
 
-AFRINTEL documents **226 canonical cyber incidents in Africa in 2025**, represented across **31 countries** and nine AFRINTEL taxonomy categories. Ransomware remains dominant with 121 records, but 82 Data Leak records and dedicated categories such as Account Takeover, System Intrusion, and Malware show why the observed landscape can no longer be represented accurately by the old six-type taxonomy.
+AFRINTEL documents **227 canonical cyber incidents in Africa in 2025**, represented across **31 countries** and nine AFRINTEL taxonomy categories. Ransomware remains dominant with 121 records, but 83 Data Leak records and dedicated categories such as Account Takeover, System Intrusion, and Malware show why the observed landscape can no longer be represented accurately by the old six-type taxonomy.
 
-Compared with the final 2024 baseline (**119 incidents**), documented volume in 2025 rises by **89.9%** to 226 incidents. This should be interpreted as evolution in observable corpus coverage, not as an exhaustive measurement of an 89.9% increase in real-world compromises across the continent.
+Compared with the final 2024 baseline (**119 incidents**), documented volume in 2025 rises by **89.9%** to 227 incidents. This should be interpreted as evolution in observable corpus coverage, not as an exhaustive measurement of an 89.9% increase in real-world compromises across the continent.
 
 The 2025 report therefore becomes a richer baseline, preserving monthly, geographic, regional, sectoral, actor, incident-type, and evidence-level granularity while keeping a strict separation between observed facts, claims, corroboration, and unknowns.
 
