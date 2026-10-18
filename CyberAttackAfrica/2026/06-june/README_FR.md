@@ -565,7 +565,7 @@ Les techniques suivantes sont des hypothèses défensives dérivées des éléme
 
 Juin 2026 se clôture avec **39 incidents documentés ou revendiqués** : **20 ransomware, 17 fuites de données et 2 ventes d'accès**.
 
-**Suivi de publication — examens.tn :** une publication observée le 23 juin 2026, signée **AshleyWood2022**, reprend la base tunisienne examens.tn et affiche un échantillon. Elle est reliée à la publication initiale du 15 décembre 2025 et n'est pas comptée comme un nouvel incident canonique : aucun nouvel échantillon vérifié, volume distinct, empreinte différente ou accès indépendant n'est établi. Une nouvelle attaque par le même acteur ou une vulnérabilité persistante restent des hypothèses non confirmées.
+**Suivi de publication  -  examens.tn :** une publication observée le 23 juin 2026, signée **AshleyWood2022**, reprend la base tunisienne examens.tn et affiche un échantillon. Elle est reliée à la publication initiale du 15 décembre 2025 et n'est pas comptée comme un nouvel incident canonique : aucun nouvel échantillon vérifié, volume distinct, empreinte différente ou accès indépendant n'est établi. Une nouvelle attaque par le même acteur ou une vulnérabilité persistante restent des hypothèses non confirmées.
 
 Le corpus est nettement inférieur aux **103 incidents de mai**, mais le volume ransomware passe lui-même de 17 à 20 fiches. **Le Maroc arrive en tête des pays directs avec 9 incidents**, tandis que les deux ventes d'accès multi-pays portent la vue géographique à 20 pays africains et 52 occurrences pays.
 

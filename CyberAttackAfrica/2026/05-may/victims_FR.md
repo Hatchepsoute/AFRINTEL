@@ -274,14 +274,14 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Plateformes ciblées :** DHIS2 (District Health Information System)
 - **Sites web :** Plusieurs instances DHIS2 (voir les URL ci-dessous)
 - **URL revendiquées par l’acteur comme associées à des identifiants exposés (valeurs sensibles non reproduites) :**
-  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
-  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
-  - 🇱🇷 Liberia — [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
-  - 🇳🇬 Nigéria — [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
-  - 🇹🇬 Togo — [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
-  - 🇸🇱 Sierra Leone — [sl.dhis2.org](https://sl.dhis2.org/)
-  - 🇧🇹 Bhoutan — [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
-  - 🇭🇳 Honduras — [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
+  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
+  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
+  - 🇱🇷 Liberia  -  [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
+  - 🇳🇬 Nigéria  -  [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
+  - 🇹🇬 Togo  -  [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
+  - 🇸🇱 Sierra Leone  -  [sl.dhis2.org](https://sl.dhis2.org/)
+  - 🇧🇹 Bhoutan  -  [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
+  - 🇭🇳 Honduras  -  [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
 - **Statut :** Claim - Unverified
 - **Type d'incident :** Fuite de données
 - **Description :**  **DHIS2** est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.

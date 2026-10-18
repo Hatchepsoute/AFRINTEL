@@ -11,7 +11,7 @@
 
 **Monthly follow-up status: In Progress** - corpus of 41 records; additional late discoveries may still be added.
 
-> **OSINT verification update — 18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
+> **OSINT verification update  -  18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
 
 
 ### 03 September 2026

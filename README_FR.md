@@ -43,7 +43,7 @@ Le rapport intègre les suivis consignés jusqu'au **14 septembre 2026** et dist
 
 📦 [Bundle STIX 2.1 / OpenCTI - août 2026](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
-### Septembre 2026 — Rapport publié
+### Septembre 2026  -  Rapport publié
 
 Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** et **1 Access Sale**. Il distingue **29 publications datées de septembre** et **12 incidents antérieurs intégrés rétrospectivement**. L'Afrique du Sud concentre **16 fiches**, suivie de l'Égypte avec 7. Les sources underground sont traitées comme des observations primaires ; les échantillons examinés, confirmations de victimes et expositions indirectes restent séparés dans l'analyse.
 
@@ -57,7 +57,7 @@ Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 R
 
 *Statut du mois : rapport publié et bundle STIX régénéré sur un corpus de 41 fiches ; les statistiques mensuelles dédiées restent à publier séparément.*
 
-### Octobre 2026 — Suivi en cours
+### Octobre 2026  -  Suivi en cours
 
 Le corpus provisoire d'octobre comprend actuellement **10 fiches**. Le rapport CTI, les statistiques et les exports dérivés d'octobre ne sont pas encore publiés ; les fiches victimes restent en cours de collecte et de validation.
 

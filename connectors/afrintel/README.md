@@ -46,7 +46,7 @@ run.
 Copy `config.yml.sample` to `config.yml` and fill in `opencti.url`,
 `opencti.token` and a fresh `connector.id` (any UUIDv4), or set the
 equivalent environment variables (`OPENCTI_URL`, `OPENCTI_TOKEN`,
-`CONNECTOR_ID`, `AFRINTEL_SOURCE`, `CONNECTOR_DURATION_PERIOD`, `AFRINTEL_GITHUB_REPO`, ...) — env vars
+`CONNECTOR_ID`, `AFRINTEL_SOURCE`, `CONNECTOR_DURATION_PERIOD`, `AFRINTEL_GITHUB_REPO`, ...)  -  env vars
 take precedence over `config.yml`.
 
 | Variable | Purpose | Default |

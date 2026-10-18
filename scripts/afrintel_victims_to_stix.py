@@ -588,7 +588,7 @@ def french_country_location(country: str) -> str:
 
 
 def normalize_dashes(value: str) -> str:
-    return value.replace("—", "-").replace("–", "-")
+    return value.replace("\u2014", "-").replace("–", "-")
 
 
 def safe_description(rec: VictimRecord) -> str:

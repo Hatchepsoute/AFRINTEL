@@ -16,7 +16,7 @@
 
 These statistics cover publications observed within the AFRINTEL monitoring scope for June 2026 (1-30 June 2026). Incidents are assigned to June when they were first identified and assessed by AFRINTEL, even when the original publication date is earlier; that date remains documented in the victim card. Each record retains the status documented in its victim card.
 
-**Follow-up note — examens.tn:** the 23 June 2026 publication, signed **AshleyWood2022**, is documented as a follow-up to the initial 15 December 2025 publication. It is included for chronology but does not create an additional canonical record because no new sample, volume, fingerprint or independent access has been established.
+**Follow-up note  -  examens.tn:** the 23 June 2026 publication, signed **AshleyWood2022**, is documented as a follow-up to the initial 15 December 2025 publication. It is included for chronology but does not create an additional canonical record because no new sample, volume, fingerprint or independent access has been established.
 
 The two multi-country incidents (Convince EDR email sale, Governor LEP portal access sale) are counted as **1 incident each** in the global total of 39. In the geographic exposure table (section 2.3), each country touched by these incidents is listed individually, so country-level totals exceed 39.
 

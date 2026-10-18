@@ -3,9 +3,9 @@
 ![Période](https://img.shields.io/badge/Période-Septembre%202026-blue)
 ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
 
-# AFRINTEL — Rapport CTI mensuel
+# AFRINTEL  -  Rapport CTI mensuel
 
-## Rapport CTI — septembre 2026
+## Rapport CTI  -  septembre 2026
 
 **29 publications datées de septembre au sein d’un corpus de 41 fiches documentées**
 
@@ -47,8 +47,8 @@ Cette comparaison porte sur les corpus de collecte clôturés : elle ne constitu
 
 ```mermaid
 xychart-beta
-    title "Fiches des corpus de collecte — août / dossier septembre 2026"
-    x-axis [Août, Septembre]
+    title "Fiches des corpus de collecte  -  août / dossier septembre 2026"
+    x-axis [Aout, Septembre]
     y-axis "Fiches" 0 --> 45
     bar [29, 41]
 ```
@@ -90,7 +90,7 @@ Cette cohorte est la base des lectures typologiques et narratives portant strict
 
 ```mermaid
 pie showData
-    title Types d'incident — corpus complet du dossier septembre 2026
+    title Types d'incident  -  corpus complet du dossier septembre 2026
     "Ransomware" : 24
     "Data Leak" : 10
     "System Intrusion" : 4
@@ -100,7 +100,7 @@ pie showData
 
 ```mermaid
 xychart-beta
-    title "Répartition des types — corpus complet du dossier septembre 2026"
+    title "Répartition des types  -  corpus complet du dossier septembre 2026"
     x-axis [Ransomware, DataLeak, SystemIntrusion, Defacement, AccessSale]
     y-axis "Fiches" 0 --> 30
     bar [24, 10, 4, 2, 1]
@@ -169,7 +169,7 @@ Chaque fiche du corpus complet reçoit ici une seule affectation pays. Aucun inc
 
 ```mermaid
 xychart-beta
-    title "Principaux pays — corpus complet du dossier septembre 2026"
+    title "Principaux pays  -  corpus complet du dossier septembre 2026"
     x-axis [AfriqueSud, Egypte, Maroc, Kenya, Nigeria, Angola, Autres]
     y-axis "Fiches" 0 --> 18
     bar [16, 7, 3, 3, 2, 2, 8]
@@ -177,19 +177,19 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-    title "Répartition régionale — corpus complet du dossier septembre 2026"
+    title "Répartition régionale  -  corpus complet du dossier septembre 2026"
     x-axis [Australe, Nord, Est, Ouest, Centrale]
     y-axis "Fiches" 0 --> 20
     bar [19, 11, 6, 3, 2]
 ```
 
-## 6. Secteurs et acteurs — corpus complet de 41 fiches
+## 6. Secteurs et acteurs  -  corpus complet de 41 fiches
 
-Après normalisation prudente des libellés — regroupement documenté par famille analytique, sans modifier le secteur brut des fiches — les secteurs les plus représentés sont la **Santé (5)**, le **Gouvernement / Administration (5)**, l’**Assurance (3)**, puis l’**Immobilier (2)**, l’**Éducation (2)**, les **Services financiers (2)** et le **Transport aérien (2)**. Les 20 autres occurrences relèvent de secteurs distincts ou spécialisés.
+Après normalisation prudente des libellés  -  regroupement documenté par famille analytique, sans modifier le secteur brut des fiches  -  les secteurs les plus représentés sont la **Santé (5)**, le **Gouvernement / Administration (5)**, l’**Assurance (3)**, puis l’**Immobilier (2)**, l’**Éducation (2)**, les **Services financiers (2)** et le **Transport aérien (2)**. Les 20 autres occurrences relèvent de secteurs distincts ou spécialisés.
 
 ```mermaid
 xychart-beta
-    title "Secteurs les plus représentés — corpus complet du dossier septembre 2026"
+    title "Secteurs les plus représentés  -  corpus complet du dossier septembre 2026"
     x-axis [Sante, Gouvernement, Assurance, Immobilier, Education, Finance, Transport, Autres]
     y-axis "Fiches" 0 --> 22
     bar [5, 5, 3, 2, 2, 2, 2, 20]
@@ -224,7 +224,7 @@ Les cartes renseignent explicitement un niveau d’impact pour 23 fiches : 12 en
 
 ```mermaid
 pie showData
-    title "Maturité des preuves — corpus complet du dossier septembre 2026"
+    title "Maturité des preuves  -  corpus complet du dossier septembre 2026"
     "Claim - Unverified" : 14
     "Claim - Data Sample Published" : 11
     "Victim Confirmed" : 9
@@ -248,17 +248,17 @@ Les principales publications ou observations de septembre sont datées des 1er, 
 
 ```mermaid
 timeline
-    title Collecte et publications — septembre 2026
+    title Collecte et publications  -  septembre 2026
     01 septembre : Intégration des incidents historiques de janvier–août
     01 septembre : Publications ransomware
-    03 septembre : MDCN — Nigeria
-    04 septembre : Données attribuées à Madinaty — Égypte
-    06 septembre : Centre Atlantique Formation — Maroc
-    09 septembre : Badr University — Égypte
-    12 septembre : SEPE — Angola
-    19 septembre : Apollo 21 — Afrique du Sud
-    21 septembre : FCT-IRS — Nigeria
-    22 septembre : ARCA — Afrique du Sud
+    03 septembre : MDCN  -  Nigeria
+    04 septembre : Données attribuées à Madinaty  -  Égypte
+    06 septembre : Centre Atlantique Formation  -  Maroc
+    09 septembre : Badr University  -  Égypte
+    12 septembre : SEPE  -  Angola
+    19 septembre : Apollo 21  -  Afrique du Sud
+    21 septembre : FCT-IRS  -  Nigeria
+    22 septembre : ARCA  -  Afrique du Sud
     24 septembre : Air Tanzania et autres observations
 ```
 
@@ -268,12 +268,12 @@ Le sous-ensemble de septembre doit être lu comme un corpus de publications et d
 
 | Dossier prioritaire | Éléments observés ou rapportés | Ce qui reste inconnu |
 |---|---|---|
-| MDCN — Nigéria | Extrait structuré présenté comme lié à l'organisation | Provenance technique, personnes uniques, intrusion et volume complet |
-| Centre Atlantique Formation — Maroc | Dossiers et documents de formation décrits dans l'échantillon | Exhaustivité, nombre de personnes et origine système |
-| SEPE — Angola | Fichiers et structures JSON analysés dans la fiche | Volume réellement exfiltré, chiffrement et vecteur d'accès |
-| AFRICA-TECH — Mali | Lot de fichiers publié et examiné | Exhaustivité, destruction de sauvegardes et confirmation de la victime |
-| FNB — Afrique du Sud | Images de relevés apparents analysées | Provenance bancaire, accès aux comptes et authenticité métier complète |
-| Air Tanzania — Tanzanie | Fichiers et images décrits dans l'échantillon disponible | Source d'acquisition, personnes uniques et portée complète |
+| MDCN  -  Nigéria | Extrait structuré présenté comme lié à l'organisation | Provenance technique, personnes uniques, intrusion et volume complet |
+| Centre Atlantique Formation  -  Maroc | Dossiers et documents de formation décrits dans l'échantillon | Exhaustivité, nombre de personnes et origine système |
+| SEPE  -  Angola | Fichiers et structures JSON analysés dans la fiche | Volume réellement exfiltré, chiffrement et vecteur d'accès |
+| AFRICA-TECH  -  Mali | Lot de fichiers publié et examiné | Exhaustivité, destruction de sauvegardes et confirmation de la victime |
+| FNB  -  Afrique du Sud | Images de relevés apparents analysées | Provenance bancaire, accès aux comptes et authenticité métier complète |
+| Air Tanzania  -  Tanzanie | Fichiers et images décrits dans l'échantillon disponible | Source d'acquisition, personnes uniques et portée complète |
 
 Dans chaque cas, la publication, l'échantillon et la compromission sont trois niveaux distincts. Les montants, tailles et volumes attribués à l'acteur restent des valeurs revendiquées lorsqu'ils ne sont pas corroborés indépendamment. Les références à des tiers visibles dans un document ne créent pas automatiquement un incident séparé.
 
@@ -303,11 +303,11 @@ Ces catégories sont des hypothèses de chasse défensive et ne constituent pas 
 
 ## 10. Priorités SOC défensives
 
-1. **Priorité élevée — accès privilégiés :** surveiller les comptes administrateurs, VPN/RDP, MFA, changements de rôles et réinitialisations.
-2. **Priorité élevée — exfiltration :** détecter les exports inhabituels, créations d’archives et transferts sortants volumineux depuis CRM, GED, bases et partages.
-3. **Priorité élevée — résilience :** vérifier segmentation, sauvegardes isolées et restauration testée pour les organisations publiques, financières, de santé et de transport.
-4. **Priorité moyenne — exposition :** préparer la rotation des secrets, la réduction d’exposition et les notifications lorsque des données d’identité, de santé ou de paiement sont publiées.
-5. **Priorité permanente — preuve :** conserver captures, horodatages, empreintes et manifestes hors dépôt, avec accès restreint, sans tester d’identifiants ni suivre de liens criminels.
+1. **Priorité élevée  -  accès privilégiés :** surveiller les comptes administrateurs, VPN/RDP, MFA, changements de rôles et réinitialisations.
+2. **Priorité élevée  -  exfiltration :** détecter les exports inhabituels, créations d’archives et transferts sortants volumineux depuis CRM, GED, bases et partages.
+3. **Priorité élevée  -  résilience :** vérifier segmentation, sauvegardes isolées et restauration testée pour les organisations publiques, financières, de santé et de transport.
+4. **Priorité moyenne  -  exposition :** préparer la rotation des secrets, la réduction d’exposition et les notifications lorsque des données d’identité, de santé ou de paiement sont publiées.
+5. **Priorité permanente  -  preuve :** conserver captures, horodatages, empreintes et manifestes hors dépôt, avec accès restreint, sans tester d’identifiants ni suivre de liens criminels.
 
 ## 11. Conclusion et contrôles
 
@@ -324,4 +324,4 @@ Contrôles effectués :
 - rapports et fiches maintiennent la séparation entre date de l’incident, publication et découverte tardive ;
 - types et statuts normalisés contrôlés contre les valeurs structurées des fiches.
 
-**AFRINTEL — TLP:CLEAR**
+**AFRINTEL  -  TLP:CLEAR**

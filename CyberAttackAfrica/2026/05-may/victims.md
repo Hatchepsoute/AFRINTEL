@@ -279,14 +279,14 @@ May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **42 da
 - **Targeted Platforms:** DHIS2 (District Health Information System)
 - **Websites:** Multiple DHIS2 instances (see URLs below)
 - **URLs claimed by the actor to be associated with exposed credentials (sensitive values not reproduced):**
-  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
-  - 🇲🇿 Mozambique — [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
-  - 🇱🇷 Liberia — [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
-  - 🇳🇬 Nigeria — [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
-  - 🇹🇬 Togo — [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
-  - 🇸🇱 Sierra Leone — [sl.dhis2.org](https://sl.dhis2.org/)
-  - 🇧🇹 Bhutan — [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
-  - 🇭🇳 Honduras — [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
+  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
+  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
+  - 🇱🇷 Liberia  -  [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
+  - 🇳🇬 Nigeria  -  [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
+  - 🇹🇬 Togo  -  [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
+  - 🇸🇱 Sierra Leone  -  [sl.dhis2.org](https://sl.dhis2.org/)
+  - 🇧🇹 Bhutan  -  [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
+  - 🇭🇳 Honduras  -  [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
 - **Status:** Claim - Unverified
 - **Incident type:** Data Leak
 - **Description:**

@@ -1,4 +1,4 @@
-# Observed ecosystem — August 2026
+# Observed ecosystem  -  August 2026
 
 ```mermaid
 flowchart LR
