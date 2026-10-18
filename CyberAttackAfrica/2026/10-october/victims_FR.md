@@ -9,7 +9,7 @@
 
 ## Octobre 2026
 
-**Statut du suivi mensuel : In Progress / En cours** — corpus provisoire de 10 fiches ; la clôture et les statistiques mensuelles restent à venir.
+**Statut du suivi mensuel : In Progress / En cours**  -  corpus provisoire de 10 fiches ; la clôture et les statistiques mensuelles restent à venir.
 
 ### 09 octobre 2026
 
@@ -275,7 +275,7 @@
 
   **Assumption :** La concordance exacte entre les volumes annoncés et les huit exports, la structure cohérente des tables de commerce électronique et le logo/domaine affichés fournissent une preuve structurelle très forte d’un corpus opérationnel lié à NextLevel PC. Elle ne permet pas, à elle seule, d’établir le vecteur d’accès, la date d’extraction, une compromission officielle ou l’exhaustivité de systèmes non inclus dans les fichiers fournis.
 
-  **Unknown :** L’algorithme et la validité de toutes les valeurs d’authentification, le nombre de personnes uniques — distinct des comptes, adresses ou commandes — la fraîcheur des coordonnées, l’origine technique, la méthode et la date d’obtention, l’étendue hors corpus, l’impact opérationnel, toute négociation et toute confirmation par l’organisation ou une autorité restent inconnus.
+  **Unknown :** L’algorithme et la validité de toutes les valeurs d’authentification, le nombre de personnes uniques  -  distinct des comptes, adresses ou commandes  -  la fraîcheur des coordonnées, l’origine technique, la méthode et la date d’obtention, l’étendue hors corpus, l’impact opérationnel, toute négociation et toute confirmation par l’organisation ou une autorité restent inconnus.
 
 - **Périmètre de l’analyse :** Les huit CSV locaux ont été examinés dans leur intégralité en lecture seule, avec calcul des empreintes SHA-256, contrôle du schéma, des largeurs de lignes, des doublons exacts et des plages de dates. Chaque fichier conserve une largeur de ligne constante et aucun doublon exact au niveau de la ligne n’a été observé. Ces contrôles ne valident pas l’absence de doublons métier, l’identité de chaque personne ni l’exhaustivité de la base de production. Aucun lien criminel n’a été ouvert et aucune donnée personnelle ou chaîne d’authentification n’est conservée dans le dépôt.
 

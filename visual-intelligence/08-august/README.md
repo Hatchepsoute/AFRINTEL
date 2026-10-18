@@ -1,4 +1,4 @@
-# AFRINTEL visual intelligence — August 2026
+# AFRINTEL visual intelligence  -  August 2026
 
 👉🏾 [Version française](README_FR.md)
 

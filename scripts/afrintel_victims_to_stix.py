@@ -154,7 +154,7 @@ def clean_inline(value: str) -> str:
     value = re.sub(r"\*\*(.+?)\*\*", r"\1", value)
     value = re.sub(r"(?<!\w)_(.+?)_(?!\w)", r"\1", value)
     value = re.sub(r"(?<!\w)\*(.+?)\*(?!\w)", r"\1", value)
-    value = value.replace("–", "-").strip()
+    value = value.replace("\u2013", "-").strip()
     return re.sub(r"\s+", " ", value)
 
 
@@ -282,7 +282,7 @@ def parse_date_to_iso(date_text: str) -> str:
 
 def split_country_org(header: str) -> Tuple[str, str]:
     text = header.strip()
-    parts = re.split(r"\s+[-–]\s+", text, maxsplit=1)
+    parts = re.split(r"\s+[-\u2013]\s+", text, maxsplit=1)
     if len(parts) == 1:
         return "Unknown", clean_inline(strip_flags(text))
     country = clean_inline(strip_flags(parts[0]))
@@ -588,7 +588,7 @@ def french_country_location(country: str) -> str:
 
 
 def normalize_dashes(value: str) -> str:
-    return value.replace("—", "-").replace("–", "-")
+    return value.replace("\u2014", "-").replace("\u2013", "-")
 
 
 def safe_description(rec: VictimRecord) -> str:

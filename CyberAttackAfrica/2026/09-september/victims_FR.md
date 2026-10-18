@@ -11,7 +11,7 @@
 
 **Statut du suivi mensuel : In Progress / En cours** - corpus de 41 fiches ; des découvertes tardives supplémentaires peuvent encore être intégrées.
 
-> **Mise à jour de vérification OSINT — 18 octobre 2026.** Ces 41 fiches constituent un **corpus de suivi intégré en septembre**, et non 41 cyberattaques survenues au cours de septembre. **13 fiches** documentent un incident confirmé ou corroboré chez la victime (dont RelyComply et le ministère namibien de la Défense), **2 fiches** correspondent à une exposition de données indirecte reconnue (Hollard et Guardrisk : intrusion chez la victime directe non démontrée) et **26** restent des revendications ou échantillons non confirmés indépendamment. Les statuts distinguent confirmation d’incident, attribution à un groupe, volume revendiqué, chiffrement et exfiltration. Les absences de confirmation désignent les sources publiques identifiées à la date du contrôle, non une preuve d’absence d’incident.
+> **Mise à jour de vérification OSINT  -  18 octobre 2026.** Ces 41 fiches constituent un **corpus de suivi intégré en septembre**, et non 41 cyberattaques survenues au cours de septembre. **13 fiches** documentent un incident confirmé ou corroboré chez la victime (dont RelyComply et le ministère namibien de la Défense), **2 fiches** correspondent à une exposition de données indirecte reconnue (Hollard et Guardrisk : intrusion chez la victime directe non démontrée) et **26** restent des revendications ou échantillons non confirmés indépendamment. Les statuts distinguent confirmation d’incident, attribution à un groupe, volume revendiqué, chiffrement et exfiltration. Les absences de confirmation désignent les sources publiques identifiées à la date du contrôle, non une preuve d’absence d’incident.
 
 
 ### 03 septembre 2026
@@ -999,7 +999,7 @@ Krybit a publié une revendication visant l'Egyptian Airports Company. La public
 - **Secteur :** Services aux entreprises / Support client
 - **Statut :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Description :** **Transcom WorldWide** est un groupe de **sous-traitance de la relation client (BPO/CX)** fournissant des services de centres de contact, d'assistance clientèle et de gestion de processus pour des marques internationales, notamment depuis des sites en Tunisie. **PayPal** est une entreprise distincte de services de paiement. La publication les associe à des opérations de support, mais **l'existence et le périmètre d'un contrat PayPal–Transcom concerné ne sont pas corroborés** par ces informations générales ([services officiels Transcom](https://transcom.com/services/customer-experience)).
+- **Description :** **Transcom WorldWide** est un groupe de **sous-traitance de la relation client (BPO/CX)** fournissant des services de centres de contact, d'assistance clientèle et de gestion de processus pour des marques internationales, notamment depuis des sites en Tunisie. **PayPal** est une entreprise distincte de services de paiement. La publication les associe à des opérations de support, mais **l'existence et le périmètre d'un contrat PayPal-Transcom concerné ne sont pas corroborés** par ces informations générales ([services officiels Transcom](https://transcom.com/services/customer-experience)).
 
 - **Vérification indépendante au 18 octobre 2026 :** Aucune confirmation indépendante de l’intrusion ni de l’association opérationnelle exacte entre Transcom, PayPal et les sites tunisiens n’a été identifiée. Les cartographies Citrix/AD et 86,7 millions de connexions proviennent uniquement de la revendication N0n.
 

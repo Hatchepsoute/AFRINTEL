@@ -1,4 +1,4 @@
-# Sector map — August 2026
+# Sector map  -  August 2026
 
 ```mermaid
 pie showData

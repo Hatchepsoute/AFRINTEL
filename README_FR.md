@@ -43,7 +43,7 @@ Le rapport intègre les suivis consignés jusqu'au **14 septembre 2026** et dist
 
 📦 [Bundle STIX 2.1 / OpenCTI - août 2026](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
-### Septembre 2026 — Rapport publié
+### Septembre 2026  -  Rapport publié
 
 Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** et **1 Access Sale**. Il distingue **29 publications datées de septembre** et **12 incidents antérieurs intégrés rétrospectivement**. L'Afrique du Sud concentre **16 fiches**, suivie de l'Égypte avec 7. Les sources underground sont traitées comme des observations primaires ; les échantillons examinés, confirmations de victimes et expositions indirectes restent séparés dans l'analyse.
 
@@ -57,7 +57,7 @@ Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 R
 
 *Statut du mois : rapport publié et bundle STIX régénéré sur un corpus de 41 fiches ; les statistiques mensuelles dédiées restent à publier séparément.*
 
-### Octobre 2026 — Suivi en cours
+### Octobre 2026  -  Suivi en cours
 
 Le corpus provisoire d'octobre comprend actuellement **10 fiches**. Le rapport CTI, les statistiques et les exports dérivés d'octobre ne sont pas encore publiés ; les fiches victimes restent en cours de collecte et de validation.
 
@@ -92,7 +92,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 
 **Référence 2024 corrigée :** **121 incidents canoniques dans 31 pays africains**, reclassés selon la même taxonomie à neuf types que celle utilisée pour 2025 : 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware et 1 Operational Fraud.
 
-**Référence 2025 validée :** **227 incidents canoniques dans 31 pays africains représentés** : 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **116**. Les ventilations pays/régions totalisent 228 occurrences géographiques pour la fiche multi-pays Comores–Cameroun.
+**Référence 2025 validée :** **227 incidents canoniques dans 31 pays africains représentés** : 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **116**. Les ventilations pays/régions totalisent 228 occurrences géographiques pour la fiche multi-pays Comores-Cameroun.
 
 ---
 

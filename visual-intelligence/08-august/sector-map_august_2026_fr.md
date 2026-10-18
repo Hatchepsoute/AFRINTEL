@@ -1,4 +1,4 @@
-# Carte sectorielle — août 2026
+# Carte sectorielle  -  août 2026
 
 ```mermaid
 pie showData

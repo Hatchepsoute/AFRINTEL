@@ -11,7 +11,7 @@
 
 **Monthly follow-up status: In Progress** - corpus of 41 records; additional late discoveries may still be added.
 
-> **OSINT verification update — 18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
+> **OSINT verification update  -  18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
 
 
 ### 03 September 2026
@@ -731,7 +731,7 @@ MIP Holdings identified unauthorised access to a former development and support 
 - **Impact:** Level 4
 - **Description:** The **Société d'Énergie et d'Eau du Gabon (SEEG)** is a Gabonese utility operator involved in **electricity generation, transmission and distribution**, as well as the supply of **drinking water**. Its work relies on industrial infrastructure and management systems essential to continued delivery of services to households and businesses ([SEEG official activities overview](https://www.seeg-gabon.com/activites)).
 
-- **Independent verification as of 18 October 2026:** **Confirmed incident, mechanism requires precision:** the Gabonese government documented the EDAN outage overnight on 14–15 June 2026. SEEG later cited alleged sabotage or malicious IT actions. This does not necessarily establish an external intrusion or exfiltration. June incident.
+- **Independent verification as of 18 October 2026:** **Confirmed incident, mechanism requires precision:** the Gabonese government documented the EDAN outage overnight on 14-15 June 2026. SEEG later cited alleged sabotage or malicious IT actions. This does not necessarily establish an external intrusion or exfiltration. June incident.
 
 - **Additional verification sources:** [Source 1](https://gabonofficiel.com/seeg-un-sabotage-informatique-a-paralyse-95-de-son-systeme-la-cybersecurite-desormais-au-coeur-des-enjeux/) ; [Source 2](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/)
 
@@ -999,7 +999,7 @@ Krybit published a claim targeting the Egyptian Airports Company. The publicatio
 - **Sector:** Business Services / Customer Support
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
-- **Description:** **Transcom WorldWide** is a **business-process outsourcing and customer-experience (BPO/CX)** provider offering contact-centre, customer-support and business-process services to international brands, including from Tunisia. **PayPal** is a separate payments-services company. The claim links them to support operations, but **the existence and scope of an affected PayPal–Transcom contract is not independently corroborated** by these public company descriptions ([Transcom official services](https://transcom.com/services/customer-experience)).
+- **Description:** **Transcom WorldWide** is a **business-process outsourcing and customer-experience (BPO/CX)** provider offering contact-centre, customer-support and business-process services to international brands, including from Tunisia. **PayPal** is a separate payments-services company. The claim links them to support operations, but **the existence and scope of an affected PayPal-Transcom contract is not independently corroborated** by these public company descriptions ([Transcom official services](https://transcom.com/services/customer-experience)).
 
 - **Independent verification as of 18 October 2026:** No independent confirmation of an intrusion or of the precise operational relationship between Transcom, PayPal and Tunisian sites was found. Citrix/AD infrastructure maps and 86.7 million connection records are solely N0n claims.
 

@@ -1,4 +1,4 @@
-# AFRINTEL — Audit OSINT des confirmations d'incidents (corpus de septembre 2026)
+# AFRINTEL  -  Audit OSINT des confirmations d'incidents (corpus de septembre 2026)
 
 **Date de vérification :** 18 octobre 2026  
 **Périmètre :** 41 fiches FR/EN du corpus AFRINTEL de septembre 2026.  

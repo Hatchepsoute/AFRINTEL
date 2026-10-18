@@ -16,7 +16,7 @@
 
 Ces statistiques couvrent les publications observées dans le périmètre de surveillance AFRINTEL pour juin 2026 (1-30 juin 2026). Les incidents sont rattachés à juin lorsqu'ils ont été identifiés et analysés pour la première fois par AFRINTEL, même si la date de publication initiale est antérieure ; cette date reste documentée dans la fiche victime. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
-**Note de suivi — examens.tn :** la publication du 23 juin 2026, signée **AshleyWood2022**, est documentée comme un suivi de la publication initiale du 15 décembre 2025. Elle est mentionnée pour la chronologie, mais ne constitue pas une fiche canonique supplémentaire en l'absence de preuve d'un nouvel échantillon, volume, empreinte ou accès indépendant.
+**Note de suivi  -  examens.tn :** la publication du 23 juin 2026, signée **AshleyWood2022**, est documentée comme un suivi de la publication initiale du 15 décembre 2025. Elle est mentionnée pour la chronologie, mais ne constitue pas une fiche canonique supplémentaire en l'absence de preuve d'un nouvel échantillon, volume, empreinte ou accès indépendant.
 
 Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès portails LEP Governor) sont comptés comme **1 incident chacun** dans le total global de 39. Dans le tableau d'exposition géographique (section 2.3), chaque pays touché par ces incidents est listé individuellement, donc les totaux par pays dépassent 39.
 

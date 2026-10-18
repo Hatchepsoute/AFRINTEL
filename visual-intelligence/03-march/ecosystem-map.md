@@ -218,7 +218,7 @@ flowchart LR
     class V_Semenya_Furumele_Consulting_Engineers victim;
     class C_South_Africa country;
     class S_Engineering_consulting sector;
-    V_United_Bank_for_Africa__UBA_Senegal["United Bank for Africa (UBA Senegal) — unattributed"] --> C_Senegal["🇸🇳 Senegal"] --> S_Finance___Banking["Finance / Banking"]
+    V_United_Bank_for_Africa__UBA_Senegal["United Bank for Africa (UBA Senegal)  -  unattributed"] --> C_Senegal["🇸🇳 Senegal"] --> S_Finance___Banking["Finance / Banking"]
     class V_United_Bank_for_Africa__UBA_Senegal victim;
     class C_Senegal country;
     class S_Finance___Banking sector;

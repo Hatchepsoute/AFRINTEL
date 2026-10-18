@@ -158,10 +158,10 @@ Cette vue analytique (`82 + 6`) ne constitue pas une catégorie supplémentaire.
 
 ## 9. Interprétation
 
-La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de l'incident multi-pays Comores–Cameroun porte le corpus annuel de 225 à **227 incidents canoniques**, les Data Leak de 81 à **83**, le secteur Gouvernement / Administration de 51 à **52**, et les occurrences géographiques à **228**.
+La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. L'ajout de l'incident multi-pays Comores-Cameroun porte le corpus annuel de 225 à **227 incidents canoniques**, les Data Leak de 81 à **83**, le secteur Gouvernement / Administration de 51 à **52**, et les occurrences géographiques à **228**.
 
 ## Conclusion
 
-La baseline statistique validée 2025 est de **227 incidents canoniques**. Les vues pays et région totalisent **228 occurrences géographiques** en raison de la fiche multi-pays Comores–Cameroun ; les vues secteur, acteur, preuve et type restent comptées sur les 227 fiches canoniques.
+La baseline statistique validée 2025 est de **227 incidents canoniques**. Les vues pays et région totalisent **228 occurrences géographiques** en raison de la fiche multi-pays Comores-Cameroun ; les vues secteur, acteur, preuve et type restent comptées sur les 227 fiches canoniques.
 
 **AFRINTEL** - TLP:CLEAR

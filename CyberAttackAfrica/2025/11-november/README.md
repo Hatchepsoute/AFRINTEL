@@ -191,7 +191,7 @@ timeline
 
 ### Data Leak
 
-**5 records** are classified as Data Leak. Leading countries: Morocco (2), South Africa (1), Ivory Coast (1), and the Comoros–Cameroon multi-country card (2 geographic occurrences). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
+**5 records** are classified as Data Leak. Leading countries: Morocco (2), South Africa (1), Ivory Coast (1), and the Comoros-Cameroon multi-country card (2 geographic occurrences). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
 ### Defacement
 

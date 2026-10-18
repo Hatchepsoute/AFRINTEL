@@ -1,4 +1,4 @@
-# Ransomware, leaks and access — August 2026
+# Ransomware, leaks and access  -  August 2026
 
 ```mermaid
 pie showData

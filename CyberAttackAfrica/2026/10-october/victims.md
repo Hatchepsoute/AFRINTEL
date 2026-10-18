@@ -9,7 +9,7 @@
 
 ## October 2026
 
-**Monthly tracking status: In Progress / En cours** — provisional corpus of 10 records; monthly closure and statistics remain pending.
+**Monthly tracking status: In Progress / En cours**  -  provisional corpus of 10 records; monthly closure and statistics remain pending.
 
 ### 09 October 2026
 
@@ -275,7 +275,7 @@
 
   **Assumption:** The exact match between published figures and the eight exports, consistent e-commerce table structure and displayed logo/domain provide very strong structural evidence of an operational corpus linked to NextLevel PC. It does not, by itself, establish the access vector, extraction date, official compromise or completeness of systems not included in the supplied files.
 
-  **Unknown:** The algorithm and validity of all authentication values, number of unique people — distinct from accounts, addresses or orders — currentness of contact information, technical source, acquisition method and date, scope beyond the corpus, operational impact, any negotiation and confirmation by the organisation or an authority all remain unknown.
+  **Unknown:** The algorithm and validity of all authentication values, number of unique people  -  distinct from accounts, addresses or orders  -  currentness of contact information, technical source, acquisition method and date, scope beyond the corpus, operational impact, any negotiation and confirmation by the organisation or an authority all remain unknown.
 
 - **Analysis scope:** All eight local CSV files were examined in full read-only, including SHA-256 calculation, schema, row-width, exact-duplicate and date-range checks. Every file has a consistent row width, and no exact row duplicate was observed. These checks do not validate the absence of business-level duplicates, each person’s identity or completeness of the production database. No criminal link was opened, and no personal data or authentication string is retained in the repository.
 

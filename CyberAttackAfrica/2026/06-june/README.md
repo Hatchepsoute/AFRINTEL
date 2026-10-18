@@ -560,7 +560,7 @@ June 2026 closes with **39 documented or claimed incidents**: **20 ransomware re
 
 The corpus is substantially smaller than May's **103 incidents**, but ransomware itself moves from 17 to 20 records. **Morocco leads the direct-country count with 9 incidents**, while the two multi-country Access Sale records expand the geographic view to 20 African countries and 52 country occurrences.
 
-**Publication follow-up — examens.tn:** a publication observed on 23 June 2026, signed **AshleyWood2022**, refers to the Tunisian examens.tn database and displays a sample. It is linked to the initial publication of 15 December 2025 and is not counted as a new canonical incident: no verified new sample, distinct volume, different fingerprint or independent access has been established. A new attack by the same actor or an unremediated vulnerability remain unconfirmed hypotheses.
+**Publication follow-up  -  examens.tn:** a publication observed on 23 June 2026, signed **AshleyWood2022**, refers to the Tunisian examens.tn database and displays a sample. It is linked to the initial publication of 15 December 2025 and is not counted as a new canonical incident: no verified new sample, distinct volume, different fingerprint or independent access has been established. A new attack by the same actor or an unremediated vulnerability remain unconfirmed hypotheses.
 
 The month also contains several high-sensitivity cases involving biometric KYC data, military credentials and government records. These cases reinforce the need to keep **actor claims, observed evidence, incident classification and confidence level separate** in AFRINTEL reporting.
 

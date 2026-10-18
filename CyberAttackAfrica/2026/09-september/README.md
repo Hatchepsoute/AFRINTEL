@@ -90,7 +90,7 @@ This cohort is the basis for typological and narrative readings that concern Sep
 
 ```mermaid
 pie showData
-    title Incident types — complete September folder corpus
+    title Incident types  -  complete September folder corpus
     "Ransomware" : 24
     "Data Leak" : 10
     "System Intrusion" : 4
@@ -100,7 +100,7 @@ pie showData
 
 ```mermaid
 xychart-beta
-    title "Incident types — complete September folder corpus"
+    title "Incident types  -  complete September folder corpus"
     x-axis [Ransomware, DataLeak, SystemIntrusion, Defacement, AccessSale]
     y-axis "Records" 0 --> 30
     bar [24, 10, 4, 2, 1]
@@ -169,7 +169,7 @@ Each record in the complete corpus receives one country assignment in this view.
 
 ```mermaid
 xychart-beta
-    title "Leading countries — complete September folder corpus"
+    title "Leading countries  -  complete September folder corpus"
     x-axis [SouthAfrica, Egypt, Morocco, Kenya, Nigeria, Angola, Other]
     y-axis "Records" 0 --> 18
     bar [16, 7, 3, 3, 2, 2, 8]
@@ -177,19 +177,19 @@ xychart-beta
 
 ```mermaid
 xychart-beta
-    title "Regional distribution — complete September folder corpus"
+    title "Regional distribution  -  complete September folder corpus"
     x-axis [Southern, North, East, West, Central]
     y-axis "Records" 0 --> 20
     bar [19, 11, 6, 3, 2]
 ```
 
-## 6. Sectors and actors — complete 41-record corpus
+## 6. Sectors and actors  -  complete 41-record corpus
 
-After cautious normalization — grouping documented analytical families without changing the raw sector in the cards — the most represented sectors are **Health (5)**, **Government / Administration (5)**, **Insurance (3)**, followed by **Real Estate (2)**, **Education (2)**, **Financial Services (2)** and **Air Transport (2)**. The other 20 occurrences belong to distinct or specialized sectors.
+After cautious normalization  -  grouping documented analytical families without changing the raw sector in the cards  -  the most represented sectors are **Health (5)**, **Government / Administration (5)**, **Insurance (3)**, followed by **Real Estate (2)**, **Education (2)**, **Financial Services (2)** and **Air Transport (2)**. The other 20 occurrences belong to distinct or specialized sectors.
 
 ```mermaid
 xychart-beta
-    title "Most represented sectors — complete September folder corpus"
+    title "Most represented sectors  -  complete September folder corpus"
     x-axis [Health, Government, Insurance, RealEstate, Education, Finance, Transport, Other]
     y-axis "Records" 0 --> 22
     bar [5, 5, 3, 2, 2, 2, 2, 20]
@@ -224,7 +224,7 @@ An impact level is explicitly recorded for 23 cards: 12 at Level 3, 9 at Level 4
 
 ```mermaid
 pie showData
-    title "Evidence maturity — complete September folder corpus"
+    title "Evidence maturity  -  complete September folder corpus"
     "Claim - Unverified" : 14
     "Claim - Data Sample Published" : 11
     "Victim Confirmed" : 9
@@ -249,7 +249,7 @@ The main September publications or observations are dated 1, 3, 4, 6, 7, 9, 12, 
 ```mermaid
 timeline
     title Collection and publication timeline - September 2026
-    01 September : January–August historical incidents integrated for retrospective tracking
+    01 September : January-August historical incidents integrated for retrospective tracking
     01 September : Ransomware publications
     03 September : MDCN - Nigeria
     04 September : Madinaty-attributed data - Egypt
@@ -303,11 +303,11 @@ These are defensive hunting hypotheses, not technique attributions to the observ
 
 ## 10. Defensive SOC priorities
 
-1. **High priority — privileged access:** monitor administrator accounts, VPN/RDP, MFA, role changes and resets.
-2. **High priority — exfiltration:** detect unusual exports, archive creation and large outbound transfers from CRM, DMS, databases and shares.
-3. **High priority — resilience:** verify segmentation, isolated backups and tested restoration for public, financial, health and transport organisations.
-4. **Medium priority — exposure:** prepare secret rotation, exposure reduction and notification procedures when identity, health or payment data is published.
-5. **Permanent priority — evidence:** retain captures, timestamps, hashes and manifests outside the repository with restricted access, without testing credentials or following criminal links.
+1. **High priority  -  privileged access:** monitor administrator accounts, VPN/RDP, MFA, role changes and resets.
+2. **High priority  -  exfiltration:** detect unusual exports, archive creation and large outbound transfers from CRM, DMS, databases and shares.
+3. **High priority  -  resilience:** verify segmentation, isolated backups and tested restoration for public, financial, health and transport organisations.
+4. **Medium priority  -  exposure:** prepare secret rotation, exposure reduction and notification procedures when identity, health or payment data is published.
+5. **Permanent priority  -  evidence:** retain captures, timestamps, hashes and manifests outside the repository with restricted access, without testing credentials or following criminal links.
 
 ## 11. Conclusion and checks
 

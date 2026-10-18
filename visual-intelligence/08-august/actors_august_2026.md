@@ -1,4 +1,4 @@
-# Actors and publication sources — August 2026
+# Actors and publication sources  -  August 2026
 
 ```mermaid
 xychart-beta

@@ -1,4 +1,4 @@
-# Hotspots pays — août 2026
+# Hotspots pays  -  août 2026
 
 | Pays | Total | Ransomware | Data Leak | Access Sale |
 |---|---:|---:|---:|---:|

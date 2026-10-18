@@ -43,7 +43,7 @@ The report includes follow-up information recorded through **14 September 2026**
 
 📦 [August 2026 STIX 2.1 / OpenCTI bundle](stix/2026/08-august/afrintel_august_2026_opencti.json)
 
-### September 2026 — Report published
+### September 2026  -  Report published
 
 The September corpus contains **41 documented records across 14 countries**: **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** and **1 Access Sale**. It distinguishes **29 publications dated in September** from **12 earlier incidents integrated retrospectively**. South Africa accounts for **16 records**, followed by Egypt with 7. Underground sources are treated as primary observations; reviewed samples, victim confirmations and indirect exposures remain separate in the analysis.
 
@@ -57,7 +57,7 @@ The September corpus contains **41 documented records across 14 countries**: **2
 
 *Month status: report published and STIX bundle regenerated from a 41-record corpus; dedicated monthly statistics remain to be published separately.*
 
-### October 2026 — Follow-up in progress
+### October 2026  -  Follow-up in progress
 
 The October provisional corpus currently contains **10 records**. The October CTI report, statistics and derived exports have not yet been published; victim records remain under collection and validation.
 
@@ -92,7 +92,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 **2024 corrected baseline:** **121 canonical incidents across 31 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
 
-**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros–Cameroon multi-country card.
+**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros-Cameroon multi-country card.
 
 ---
 
