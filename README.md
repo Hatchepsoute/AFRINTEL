@@ -45,13 +45,17 @@ The report includes follow-up information recorded through **14 September 2026**
 
 ### September 2026 — Report published
 
-The September corpus contains **41 documented incidents across 14 countries**: **28 Ransomware**, **8 Data Leak**, **2 System Intrusion**, **2 Defacement** and **1 Access Sale**. South Africa accounts for **16 records**, followed by Egypt with 7. The report distinguishes September publications from late discoveries integrated into the monthly corpus and preserves historical dates when known.
+The September corpus contains **41 documented records across 14 countries**: **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** and **1 Access Sale**. It distinguishes **29 publications dated in September** from **12 earlier incidents integrated retrospectively**. South Africa accounts for **16 records**, followed by Egypt with 7. Underground sources are treated as primary observations; reviewed samples, victim confirmations and indirect exposures remain separate in the analysis.
 
 📄 [Full CTI report - September 2026](CyberAttackAfrica/2026/09-september/README.md)
 
 📋 [September 2026 victim records](CyberAttackAfrica/2026/09-september/victims.md)
 
-*Month status: report published on a 41-record corpus; additional late discoveries may still be integrated.*
+📋 [OSINT confirmation audit - September 2026](CyberAttackAfrica/2026/09-september/AUDIT_CONFIRMATIONS_AFRINTEL_SEPTEMBRE_2026.md)
+
+📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
+
+*Month status: report published and STIX bundle regenerated from a 41-record corpus; dedicated monthly statistics remain to be published separately.*
 
 ### October 2026 — Follow-up in progress
 
@@ -84,11 +88,11 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | Year | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
 | 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **226** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2025 | **227** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
 **2024 corrected baseline:** **121 canonical incidents across 31 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
 
-**2025 validated baseline:** **226 canonical incidents across 31 represented African countries**: 121 Ransomware, 82 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **115**. Country/regional views total 227 geographic occurrences for the Comoros–Cameroon multi-country card.
+**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros–Cameroon multi-country card.
 
 ---
 

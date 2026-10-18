@@ -3,7 +3,7 @@
 ![Period](https://img.shields.io/badge/Période-Juin_2026-708090)
 ![Victims](https://img.shields.io/badge/Victimes-40-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
-![Data Leaks](https://img.shields.io/badge/Fuites-20-orange)
+![Data Leaks](https://img.shields.io/badge/Fuites-19-orange)
 ![Countries](https://img.shields.io/badge/Pays%20touchés-20-blueviolet)
 ![Intel](https://img.shields.io/badge/Type-Statistiques%20CTI-purple)
 
@@ -16,7 +16,9 @@
 
 Ces statistiques couvrent les publications observées dans le périmètre de surveillance AFRINTEL pour juin 2026 (1-30 juin 2026). Les incidents sont rattachés à juin lorsqu'ils ont été identifiés et analysés pour la première fois par AFRINTEL, même si la date de publication initiale est antérieure ; cette date reste documentée dans la fiche victime. Chaque fiche conserve le statut documenté dans le fichier des victimes.
 
-Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès portails LEP Governor) sont comptés comme **1 incident chacun** dans le total global de 40. Dans le tableau d'exposition géographique (section 2.3), chaque pays touché par ces incidents est listé individuellement, donc les totaux par pays dépassent 40.
+**Note de suivi — examens.tn :** la publication du 23 juin 2026, signée **AshleyWood2022**, est documentée comme un suivi de la publication initiale du 15 décembre 2025. Elle est mentionnée pour la chronologie, mais ne constitue pas une fiche canonique supplémentaire en l'absence de preuve d'un nouvel échantillon, volume, empreinte ou accès indépendant.
+
+Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès portails LEP Governor) sont comptés comme **1 incident chacun** dans le total global de 39. Dans le tableau d'exposition géographique (section 2.3), chaque pays touché par ces incidents est listé individuellement, donc les totaux par pays dépassent 39.
 
 ---
 
@@ -24,7 +26,7 @@ Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès port
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 40 |
+| Total incidents | 39 |
 | Incidents ransomware | 20 |
 | Fuites de données / ventes d'accès | 20 |
 | Pays touchés | 20 (14 directs + 6 via incidents multi-pays) |
@@ -39,7 +41,7 @@ Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès port
 |---|---:|---:|
 | Ransomware | 20 | 50,0 % |
 | Fuites de données / ventes d'accès | 20 | 50,0 % |
-| **Total** | **40** | **100 %** |
+| **Total** | **39** | **100 %** |
 
 ```mermaid
 pie showData
@@ -72,7 +74,7 @@ Ces 38 incidents ont un seul pays victime identifié. Les 2 incidents multi-pays
 | 🇹🇿 Tanzanie | 1 |
 | 🇾🇹 Mayotte | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Sous-total (direct)** | **38** |
+| **Sous-total (direct)** | **37 |
 
 ```mermaid
 xychart
@@ -84,7 +86,7 @@ xychart
 
 ### 2.2 Exposition géographique des incidents multi-pays
 
-2 incidents ont touché plusieurs pays simultanément via des ventes d'identifiants/accès portails. Chacun est compté une fois dans le total global de 40 mais expose plusieurs pays.
+2 incidents ont touché plusieurs pays simultanément via des ventes d'identifiants/accès portails. Chacun est compté une fois dans le total global de 39 mais expose plusieurs pays.
 
 | Incident | Acteur | Pays touchés (périmètre africain) |
 |---|---|---|
@@ -95,7 +97,7 @@ xychart
 
 ### 2.3 Exposition géographique totale (20 pays)
 
-> La colonne "Exposition multi-pays" compte le nombre d'apparitions d'un pays dans les deux incidents de vente d'identifiants. Les sommes de colonnes dépassent 40 car les incidents multi-pays touchent plusieurs pays simultanément.
+> La colonne "Exposition multi-pays" compte le nombre d'apparitions d'un pays dans les deux incidents de vente d'identifiants. Les sommes de colonnes dépassent 39 car les incidents multi-pays touchent plusieurs pays simultanément.
 
 | Pays | Incidents directs | Exposition multi-pays | Exposition totale |
 |---|---:|---:|---:|
@@ -119,7 +121,7 @@ xychart
 | 🇲🇼 Malawi | 0 | 1 (Governor) | 1 |
 | 🇩🇿 Algérie | 0 | 1 (Governor) | 1 |
 | 🇸🇱 Sierra Leone | 0 | 1 (Governor) | 1 |
-| **Total** | **38 incidents directs** | **15 expositions pays** | **20 pays distincts** |
+| **Total** | **37 incidents directs** | **15 expositions pays** | **20 pays distincts** |
 
 ---
 
@@ -141,10 +143,10 @@ xychart
 | 🇹🇿 Tanzanie | 0 | 1 | 1 |
 | 🇾🇹 Mayotte | 1 | 0 | 1 |
 | 🇰🇪 Kenya | 1 | 0 | 1 |
-| **Sous-total (direct)** | **20** | **18** | **38** |
+| **Sous-total (direct)** | **19** | **17** | **37** |
 | 🌍 Convince (multi-pays) | 0 | 1 | 1 |
 | 🌍 Governor (multi-pays) | 0 | 1 | 1 |
-| **Total** | **20** | **20** | **40** |
+| **Total** | **20** | **19** | **39** |
 
 ### Ransomware par pays
 
@@ -180,14 +182,14 @@ xychart
 | Océan Indien | 🇲🇺 Maurice, 🇾🇹 Mayotte | 2 | 0 |
 | Sans incident direct | 🇪🇹 Éthiopie, 🇦🇴 Angola, 🇿🇲 Zambie, 🇲🇼 Malawi, 🇩🇿 Algérie, 🇸🇱 Sierra Leone | 0 | +7 (voir section 2.3) |
 
-> Les incidents multi-pays sont comptés une fois dans le total global de 40. La colonne "Exposition multi-pays" montre les contacts pays supplémentaires issus de ces incidents. Total de pays distincts : 20 répartis sur 6 régions, dont 6 pays exposés uniquement via les ventes d'identifiants.
+> Les incidents multi-pays sont comptés une fois dans le total global de 39. La colonne "Exposition multi-pays" montre les contacts pays supplémentaires issus de ces incidents. Total de pays distincts : 20 répartis sur 6 régions, dont 6 pays exposés uniquement via les ventes d'identifiants.
 
 ```mermaid
 xychart
     title "Incidents directs par région - Juin 2026"
     x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est","Océan Indien"]
     y-axis "Incidents directs" 0 --> 22
-    bar [20,8,5,1,2,2]
+    bar [19,8,5,1,2,2]
 ```
 
 ---
@@ -198,7 +200,7 @@ xychart
 |---|---:|---:|
 | Government / Administration | 12 | 30,0 % |
 | Finance / Banking | 6 | 15,0 % |
-| Education / University | 4 | 10,0 % |
+| Education / University | 3 | 10,0 % |
 | E-commerce / Retail | 4 | 10,0 % |
 | Healthcare / Medical | 3 | 7,5 % |
 | Transport / Logistique | 2 | 5,0 % |
@@ -210,7 +212,7 @@ xychart
 | Alimentation / Boissons | 1 | 2,5 % |
 | Services aux entreprises / Technologie | 1 | 2,5 % |
 | Services de sécurité | 1 | 2,5 % |
-| **Total** | **40** | **100 %** |
+| **Total** | **39** | **100 %** |
 
 ```mermaid
 xychart
@@ -233,7 +235,7 @@ xychart
 | Krybit | 2 | Ransomware / données publiées |
 | 404Crew Cyber Team | 2 | Fuite de données (coalition et solo) |
 | EvaN47 | 2 | Fuite de données (Libye) |
-| Fiches hors classement affiché | 18 | Mixte |
+| Fiches hors classement affiché | 17 | Mixte |
 
 ```mermaid
 xychart
@@ -253,7 +255,7 @@ Le Maroc enregistre **9 incidents**, son total mensuel le plus élevé de 2026, 
 
 ### 7.2 Le ransomware regagne du terrain
 
-Les publications ransomware atteignent **50 % des incidents (20/40)**, contre 28,1 % dans le [jeu de données de mai](../../../CyberAttackAfrica/2026/05-may/victims_FR.md). Un seul mois ne permet pas d’établir un changement durable du comportement des acteurs, mais la dispersion de DeadLock et LockBit 5 justifie une surveillance.
+Les publications ransomware atteignent **51,3 % des incidents (20/39)**, contre 28,1 % dans le [jeu de données de mai](../../../CyberAttackAfrica/2026/05-may/victims_FR.md). Un seul mois ne permet pas d’établir un changement durable du comportement des acteurs, mais la dispersion de DeadLock et LockBit 5 justifie une surveillance.
 
 ### 7.3 Exposition fintech à forte sensibilité
 
@@ -290,6 +292,6 @@ EvaN47 a publié des fiches concernant le Ministère de l'Enseignement technique
 
 ## 9. Conclusion
 
-Juin 2026 recense **40 incidents** concernant **20 pays distincts** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 57 fiches en mai (-17 ; -29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 20 (-51,2 %). Le Maroc compte 9 des 38 fiches directes ; deux fiches supplémentaires sont multi-pays. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
+Juin 2026 recense **39 incidents** concernant **20 pays distincts** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 57 fiches en mai (-17 ; -29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 19 (-51,2 %). Le Maroc compte 9 des 38 fiches directes ; deux fiches supplémentaires sont multi-pays. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

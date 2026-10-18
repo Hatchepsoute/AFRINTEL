@@ -9,13 +9,15 @@
 
 ## September 2026
 
-**Monthly follow-up status: In Progress** — corpus of 41 records; additional late discoveries may still be added.
+**Monthly follow-up status: In Progress** - corpus of 41 records; additional late discoveries may still be added.
+
+> **OSINT verification update — 18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
+
 
 ### 03 September 2026
 #### 🇳🇬 Nigeria - Medical and Dental Council of Nigeria (MDCN)
 
 - **Initial publication date:** 3 September 2026 at 20:19 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 28 September 2026 (screenshot and text excerpt supplied)
 - **Actor / Group:** cattier (displayed forum account; identity unverified)
 - **Sector:** Healthcare / Medical and dental professional regulation
 - **Website:** [mdcn.gov.ng](https://www.mdcn.gov.ng/)
@@ -24,7 +26,11 @@
 - **Confidence level:** Medium (structured post and excerpt observed; origin and scope uncorroborated)
 - **Impact level:** Level 3
 
-- **Description:** An account named cattier posted an offer titled “Medical and Dental Council of Nigeria 65K” and attributes data on **65,580 unique users** to `mdcn.gov.ng`. A sample of healthcare-practitioner records is visible, and **50 rows were supplied as text**. This establishes the existence of the post and the type of data presented; it does not confirm that 65,580 distinct people are affected or that MDCN systems were intruded upon.
+- **Description:** The **Medical and Dental Council of Nigeria (MDCN)** is Nigeria's statutory regulator for medical and dental practice. Its responsibilities include setting professional standards, maintaining registers of practitioners, and managing registration and licensing. Its services therefore handle practitioners' identity, qualifications and professional registration information ([MDCN official responsibilities](https://mdcn.gov.ng/page/about-us/our-role)).
+
+- **Independent verification as of 18 October 2026:** No MDCN statement or regulatory notice corroborating unauthorised access or the claimed 65,580 affected individuals was found. AFRINTEL’s screenshot and 50-row review substantiate the presentation of data, not a technical compromise of MDCN.
+
+  **Incident context already documented in AFRINTEL :** An account named cattier posted an offer titled “Medical and Dental Council of Nigeria 65K” and attributes data on **65,580 unique users** to `mdcn.gov.ng`. A sample of healthcare-practitioner records is visible, and **50 rows were supplied as text**. This establishes the existence of the post and the type of data presented; it does not confirm that 65,580 distinct people are affected or that MDCN systems were intruded upon.
 
 - **Analysis:**
 
@@ -55,7 +61,11 @@
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 
-- **Description:** Madinaty is a residential urban development in Egypt that Talaat Moustafa Group presents among its projects in the country. This establishes geographic context; it does not identify the organisation that collected or held the data, or confirm that Talaat Moustafa Group was compromised. ([Talaat Moustafa Group overview](https://ecommerce.tmg.com.eg/about))
+- **Description:** **Madinaty** is a large planned residential community east of Cairo, developed by **Talaat Moustafa Group (TMG)**, with housing, infrastructure and local amenities. This entry concerns a **residential community**, not a confirmed breached legal entity: the post does not establish whether the developer, a property manager or a third-party supplier held the alleged data ([TMG project overview](https://ecommerce.tmg.com.eg/about)).
+
+- **Independent verification as of 18 October 2026:** No independently verified intrusion or reliable identification of the original data controller was found. The claimed Madinaty link does not establish a breach of Talaat Moustafa Group.
+
+  **Incident context already documented in AFRINTEL :** Madinaty is a residential urban development in Egypt that Talaat Moustafa Group presents among its projects in the country. This establishes geographic context; it does not identify the organisation that collected or held the data, or confirm that Talaat Moustafa Group was compromised. ([Talaat Moustafa Group overview](https://ecommerce.tmg.com.eg/about))
 
 - **Analysis:**
 
@@ -88,7 +98,6 @@
 
 - **Incident date:** Not established
 - **Initial publication date:** 6 September 2026
-- **AFRINTEL discovery date:** 9 September 2026
 - **Actor / Group:** xNov
 - **Sector:** Education / Vocational and professional training
 - **Website:** [atlantique.ma](https://atlantique.ma/)
@@ -97,7 +106,11 @@
 - **Confidence level:** High
 - **Impact level:** Level 3
 
-- **Description:** Centre Atlantique Formation is a Moroccan vocational and professional training organisation offering practical training in several fields through multiple centres. Observed records reference automotive diagnostics, accounting, graphic design, cooking, pastry, hairdressing, fashion design, office computing, welding, plumbing, medical assistance and other vocational courses.
+- **Description:** **Centre Atlantique Formation** is a Moroccan network of private, practical vocational-training centres serving learners, jobseekers and professionals. Its courses cover technical trades, services, administration and other practical specialisms across multiple Moroccan cities. Such operations involve enrolment workflows and the issuance of training certificates ([official website](https://atlantique.ma/)).
+
+- **Independent verification as of 18 October 2026:** No public Centre Atlantique Formation statement or regulatory notice confirming an attack vector was found. AFRINTEL’s internal documentary analysis of the archive (1,155 folders) remains available corroboration, separate from official acknowledgement.
+
+  **Incident context already documented in AFRINTEL :** Centre Atlantique Formation is a Moroccan vocational and professional training organisation offering practical training in several fields through multiple centres. Observed records reference automotive diagnostics, accounting, graphic design, cooking, pastry, hairdressing, fashion design, office computing, welding, plumbing, medical assistance and other vocational courses.
 
 - **Analysis:**
 
@@ -135,7 +148,6 @@
 
 - **Incident date:** Not established
 - **Initial publication date:** 9 September 2026 at 16:50 (timezone not specified)
-- **AFRINTEL discovery date:** 12 September 2026
 - **Actor / Group:** Unknown
 - **Displayed author account:** elmo7areb (identity and role unverified)
 - **Sector:** Education / Higher education
@@ -145,7 +157,13 @@
 - **Confidence level:** Medium
 - **Impact level:** Level 3
 
-- **Description:** Badr University in Cairo (BUC) is an Egyptian higher education institution located in Badr City. Its official website presents its programmes and services, including admissions processes and a student portal.
+- **Description:** **Badr University in Cairo (BUC)** is an Egyptian university based in Badr City within Greater Cairo. It offers degree programmes across scientific, creative and humanities disciplines and operates digital admissions and student services. This provides organisational context for possible student and administrative records, without establishing any system breach ([BUC official website](https://buc.edu.eg/new-undergraduate/)).
+
+- **Independent verification as of 18 October 2026:** Secondary OSINT articles repeat the claim but no public Badr University in Cairo acknowledgement or external proof of a full database extraction was found. Partially redacted credentials in the screenshot do not establish valid access.
+
+- **Additional verification sources:** [Source 1](https://undercodenews.com/badr-university-in-cairo-reportedly-targeted-in-a-dark-web-data-leak-claim-video/)
+
+  **Incident context already documented in AFRINTEL :** Badr University in Cairo (BUC) is an Egyptian higher education institution located in Badr City. Its official website presents its programmes and services, including admissions processes and a student portal.
 
 - **Analysis:**
 
@@ -177,7 +195,6 @@
 
 - **Incident date:** Not established
 - **Initial publication date:** 12 September 2026 at 18:23 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 22 September 2026 (supplied screenshot and local sample)
 - **Actor / Group:** Kazu (displayed account; identity and affiliation unverified)
 - **Sector:** Government / Digital public services
 - **Website:** [sepe.gov.ao](https://www.sepe.gov.ao/)
@@ -186,7 +203,13 @@
 - **Confidence level:** High
 - **Impact level:** Level 4
 
-- **Description:** A post attributed to the Kazu account targets SEPE, Angola's official electronic public-services platform, and claims a data exposure in a ransomware-extortion context. AFRINTEL examined a local sample derived from the publication; this strengthens structural consistency and association with Angolan administrative data, but does not confirm initial access, complete exfiltration, the claimed overall volume or official confirmation by SEPE.
+- **Description:** **SEPE** (*Serviços Públicos Electrónicos*) is Angola's government gateway to online public services. Its catalogue spans identity, family, business, tax and other administrative procedures that may require personal supporting documents. As a service gateway, SEPE is not necessarily the direct host of every record described in a criminal claim ([official SEPE portal](https://sepe.gov.ao/)).
+
+- **Independent verification as of 18 October 2026:** Angolan media revisited Kazu’s allegation in October, finding no independent confirmation and reporting that the SEPE portal remained reachable. Availability alone cannot rule out exfiltration. Neither the claimed 179 GB nor an intrusion, encryption or direct SEPE compromise has been independently established; AFRINTEL’s sample review remains partial documentary evidence.
+
+- **Additional verification sources:** [Source 1](https://pti.ao/sepe-falta-de-evidencias-coloca-em-causa-suposto-ataque-cibernetico/) ; [Source 2](https://pti.ao/sepe-mantem-servicos-online-e-acessiveis-ao-publico/)
+
+  **Incident context already documented in AFRINTEL :** A post attributed to the Kazu account targets SEPE, Angola's official electronic public-services platform, and claims a data exposure in a ransomware-extortion context. AFRINTEL examined a local sample derived from the publication; this strengthens structural consistency and association with Angolan administrative data, but does not confirm initial access, complete exfiltration, the claimed overall volume or official confirmation by SEPE.
 
 - **Analysis:**
 
@@ -229,7 +252,6 @@ last_checked_at: 2026-09-22T18:23:00
 #### 🇿🇦 South Africa - Apollo 21
 
 - **Initial publication date:** 19 September 2026 (date displayed in the BLACKLOCKS list; time and timezone not specified)
-- **AFRINTEL discovery date:** 28 September 2026 (local screenshots and images reviewed)
 - **Actor / Group:** BLACKLOCKS
 - **Sector:** Spare-parts distribution / Road transport
 - **Website:** [apollo21.co.za](https://apollo21.co.za/)
@@ -239,7 +261,11 @@ last_checked_at: 2026-09-22T18:23:00
 - **Confidence level:** High (listing and documentary link to Apollo 21; compromise and total volume unconfirmed)
 - **Impact level:** Level 3
 
-- **Description:** The Apollo 21 entry appears in a BLACKLOCKS victim list with the date **19 September 2026**. Another view of the entry associates `apollo21.co.za` with South Africa and claims **400 GB** of data. The reviewed sample images include commercial and financial tables and identity documents. They support a documentary link to Apollo 21 without confirming the acquisition method, encryption, or possession of 400 GB.
+- **Description:** **Apollo 21** is a South African business established in 1972 specialising in importing and distributing replacement parts for trucks, buses and trailers. It supplies mechanical, electrical and body components to transport operators and commercial-vehicle maintenance businesses. Its operations depend on supplier relationships, inventory and commercial records ([Apollo 21 official website](https://apollo21.co.za/home/)).
+
+- **Independent verification as of 18 October 2026:** The BLACKLOCKS listing and sample images were observed, but no public Apollo 21 acknowledgement or independent source establishing unauthorised access, encryption or 400 GB exfiltration was found.
+
+  **Incident context already documented in AFRINTEL :** The Apollo 21 entry appears in a BLACKLOCKS victim list with the date **19 September 2026**. Another view of the entry associates `apollo21.co.za` with South Africa and claims **400 GB** of data. The reviewed sample images include commercial and financial tables and identity documents. They support a documentary link to Apollo 21 without confirming the acquisition method, encryption, or possession of 400 GB.
 
 - **Analysis:**
 
@@ -274,7 +300,6 @@ last_checked_at: 2026-09-28
 #### 🇳🇬 Nigeria - Federal Capital Territory Internal Revenue Service (FCT-IRS)
 
 - **Initial publication date:** 21 September 2026 at 13:03 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 28 September 2026 (screenshot and PDF supplied)
 - **Actor / Group:** individual (displayed account; identity unverified)
 - **Sector:** Government / Tax administration
 - **Website:** [fctirs.gov.ng](https://fctirs.gov.ng/)
@@ -283,7 +308,11 @@ last_checked_at: 2026-09-28
 - **Confidence level:** High (post and sample association with FCT-IRS; technical origin unestablished)
 - **Impact level:** Level 3
 
-- **Description:** A post titled “Nigerian Tax Authority | Full Breach” displays the **Federal Capital Territory Internal Revenue Service (FCT-IRS)** logo and references images of people and signatures. The supplied PDF, exported from JustPaste.it, contains **314 pages** of text and personal data. “Full Breach” is the author's claim in the post title; data completeness and a compromise of FCT-IRS systems are not established.
+- **Description:** The **Federal Capital Territory Internal Revenue Service (FCT-IRS)** administers internally generated tax revenue in Nigeria's **Federal Capital Territory, Abuja**. Established by legislation in 2015, it assesses, collects and accounts for local taxes and levies, including personal income tax within its jurisdiction. It should not be confused with the nationwide federal revenue authority ([FCT-IRS official overview](https://fctirs.gov.ng/about-us/)).
+
+- **Independent verification as of 18 October 2026:** No FCT-IRS statement, regulator filing or independent investigation confirming an intrusion was located. The analysed PDF establishes published content under this attribution, not the technical source of the data.
+
+  **Incident context already documented in AFRINTEL :** A post titled “Nigerian Tax Authority | Full Breach” displays the **Federal Capital Territory Internal Revenue Service (FCT-IRS)** logo and references images of people and signatures. The supplied PDF, exported from JustPaste.it, contains **314 pages** of text and personal data. “Full Breach” is the author's claim in the post title; data completeness and a compromise of FCT-IRS systems are not established.
 
 - **Analysis:**
 
@@ -303,7 +332,6 @@ last_checked_at: 2026-09-28
 #### 🇿🇦 South Africa - ARCA Unlimited Architects
 
 - **Initial publication date:** 22 September 2026 (date displayed in the BLACKLOCKS list; time and timezone not specified)
-- **AFRINTEL discovery date:** 28 September 2026 (local screenshots and samples reviewed)
 - **Actor / Group:** BLACKLOCKS
 - **Sector:** Architecture / Design and project management
 - **Website:** [arcaunlimited.com](https://arcaunlimited.com/)
@@ -313,7 +341,11 @@ last_checked_at: 2026-09-28
 - **Confidence level:** High (listing and documentary link to ARCA; acquisition and total volume unconfirmed)
 - **Impact level:** Level 3
 
-- **Description:** BLACKLOCKS lists ARCA Unlimited Architects as a South African victim and displays a volume of **400G** without defining the unit. Sample images include architectural drawings, project documents and cost tables. Several items carry ARCA's name or branding and are consistent with its business. The review confirms neither the acquisition method, encryption, nor possession of the claimed volume.
+- **Description:** **ARCA Unlimited Architects** is a multidisciplinary South African design practice based in Pretoria. Its services include architecture, interior and spatial design, project management, procurement and consulting; the firm says it has delivered work across Africa since 1995. These activities involve architectural drawings, project files and cost documentation for clients ([ARCA official profile](https://arcaunlimited.com/who-are-we.asp)).
+
+- **Independent verification as of 18 October 2026:** The BLACKLOCKS listing and architectural plans consistent with ARCA corroborate the presence of samples, not a compromise of ARCA infrastructure. No company acknowledgement was found.
+
+  **Incident context already documented in AFRINTEL :** BLACKLOCKS lists ARCA Unlimited Architects as a South African victim and displays a volume of **400G** without defining the unit. Sample images include architectural drawings, project documents and cost tables. Several items carry ARCA's name or branding and are consistent with its business. The review confirms neither the acquisition method, encryption, nor possession of the claimed volume.
 
 - **Analysis:**
 
@@ -358,7 +390,11 @@ last_checked_at: 2026-09-28
 - **Confidence level:** High
 - **Impact level:** Level 3
 
-- **Description:** AFRICA-TECH is presented in N0n's publication as a Malian IT-services and document-processing company. All files released by the group were supplied for analysis. A Word complaint names AFRICA-TECH and contains references to Mali and Bamako, supporting a documentary link to the organisation. The proposed domain, https://www.africatech-mali.com/, advertises solar and electrical activities in Bamako. Comparison with the documents established no shared contact details; attribution to the victim remains unestablished.
+- **Description:** **AFRICA-TECH** is described in the reviewed publication as a Malian organisation engaged in **IT services and document processing**. Documents examined by AFRINTEL refer to the organisation and to Mali, but available public information does not independently establish its registered legal identity, service portfolio or official website. The domain `africatech-mali.com` advertises different activities and **must not be automatically linked** to this record.
+
+- **Independent verification as of 18 October 2026:** AFRINTEL observed and analysed the complete released batch attributed to AFRICA-TECH; external OSINT mostly repeats N0n’s statement. No acknowledgement by the entity, public proof of encryption, or sufficiently certain organisation identification was found.
+
+  **Incident context already documented in AFRINTEL :** AFRICA-TECH is presented in N0n's publication as a Malian IT-services and document-processing company. All files released by the group were supplied for analysis. A Word complaint names AFRICA-TECH and contains references to Mali and Bamako, supporting a documentary link to the organisation. The proposed domain, https://www.africatech-mali.com/, advertises solar and electrical activities in Bamako. Comparison with the documents established no shared contact details; attribution to the victim remains unestablished.
 
 - **Analysis:**
 
@@ -391,48 +427,10 @@ resale_status: unknown
 last_checked_at: 2026-09-27
 -->
 
-### 24 September 2026
-#### 🇰🇪 Kenya - TikoHUB
-
-- **Incident date:** 28 April 2026 (date of the access-offer post; initial compromise not established)
-- **Initial publication date:** 28 April 2026 at 23:26 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 24 September 2026 (supplied screenshot)
-- **Actor / Group:** DarkMafiaX (displayed account; identity and affiliation unverified)
-- **Sector:** Ticketing / Events / Digital services
-- **Website:** [tikohub.co.ke](https://www.tikohub.co.ke/)
-- **Status:** Claim - Unverified
-- **Incident type:** Access Sale
-- **Confidence level:** Medium
-- **Impact level:** Level 4
-
-- **Description:** A post attributed to the DarkMafiaX account offers administrator access presented as related to TikoHUB, a Kenyan ticketing and event-management platform. The post and displayed credentials were not tested; AFRINTEL does not confirm their validity, effective access or a compromise of TikoHUB.
-
-- **Analysis:**
-
-  **Observed:** The screenshot shows a post titled “Admin Access To Tikohub.co.ke | Kenya”, dated 28 April 2026 at 23:26 according to the displayed timestamp. It contains an administrative-resource URL and fields presented as a username and password. These values are deliberately not reproduced and were not tested. The screenshot was supplied to AFRINTEL on 24 September 2026.
-
-  **Assumption:** The `tikohub.co.ke` domain corresponds to a Kenyan ticketing platform, making the target plausible. The post could nevertheless be inaccurate, recycled, falsified or related to limited access to a third-party component. 28 April is the observed post date, not necessarily the initial compromise date.
-
-  **Unknown:** current credential validity, actual privileges, affected system, acquisition method, access duration, effective exploitation, accessed or exfiltrated data, confirmation by TikoHUB and remediation status remain unknown.
-
-- **Observed sample scope:** one screenshot of a forum post; no login, credential validation, download, endpoint interaction or secret copying was performed.
-
-- **Risk assessment:** if authentic, administrator access could enable content modification, access to customer or organiser data, ticket fraud and account compromise. This record does not confirm any of these effects.
-
-- **Recommendations:**
-1. Preserve authentication, administration, API and hosting logs from 28 April 2026 onward.
-2. Reset potentially affected administrator accounts and revoke sessions as justified by TikoHUB's defensive investigation.
-3. Review privilege changes, exports, account creation and ticket or event modifications.
-4. Do not test the disclosed credentials or open the sensitive URL shown in the screenshot.
-5. Monitor impersonation, ticket fraud and secret reuse.
-
-- **Sources / Evidence:** screenshot supplied to AFRINTEL on 24 September 2026; public [TikoHUB website](https://www.tikohub.co.ke/).
-
 ### 25 September 2026
 #### 🇲🇦 Morocco - Pharma 5
 
 - **Initial publication date:** 25 September 2026 at 08:27 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 28 September 2026 (local images reviewed)
 - **Actor / Group:** INC Ransom
 - **Sector:** Healthcare / Pharmaceutical industry
 - **Website:** [pharma5.ma](https://www.pharma5.ma/)
@@ -442,21 +440,34 @@ last_checked_at: 2026-09-27
 - **Confidence level:** High (existence of the listing and consistency of the visible sample; scope and acquisition unestablished)
 - **Impact level:** Level 3
 
-- **Description:** INC Ransom published a listing naming Pharma 5 and claims to hold **50 GB** of data. The listing includes a gallery of document previews; one quality-management page was also provided at readable size. The visible material is consistent with pharmaceutical activities and a supply chain. This consistency does not confirm an intrusion, the acquisition method, or the claimed 50 GB.
+- **Description:** **Pharma 5** is a Moroccan pharmaceutical laboratory specialising in the development, manufacture and marketing of **generic medicines**. It operates in a regulated supply chain involving production, quality control and distribution in Morocco and African markets. Products associated with Pharma 5 appear in Morocco's public generic-medicines register ([Moroccan medicines authority, AMMPS](https://ammps.gov.ma/repertoire-medicaments-generiques)).
+
+- **Independent verification as of 18 October 2026:** INC Ransom's claim was reported by [Le1.ma (27 September 2026)](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) and [DeXpose (26 September 2026)](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/). These reports confirm the **existence and circulation of the claim**, not a verified breach. Le1.ma reported that Pharma 5 had neither confirmed nor denied the claim as of 27 September. No later official or independently technical confirmation of an intrusion, encryption or the claimed **50 GB** was identified in the sources examined through 18 October. The newly supplied images do, however, **corroborate the document's consistency with Pharma 5 and a plausible pharmaceutical supply chain**, without establishing technical provenance.
+
+- **Sample OSINT corroboration (18 October 2026):**
+  1. The readable page shows **“Pharma5 Quality Management Department”**, **“Specifications”**, document reference **`DE01 / PG / MQ / 036`**, **revision 01** and **“Page: 1/5”**. It concerns **salicylamide**, naming **Pharma 5 as client**, **MEDILIFE as supplier** and **JQC-CHINE as manufacturer**. Professional contact fields are present; personal names and contact details are deliberately omitted from AFRINTEL.
+  2. The professional address for **MEDILIFE S.R.L.**, **Via San Vincenzo 8, 20123 Milan**, matches a [public Italian company record](https://www.ufficiocamerale.it/9842/medilife-srl). **JQC (Huayin) Pharmaceutical Co., Ltd.** lists **salicylamide** in its [official product catalogue](https://www.jqcpharm.com/en/index.php/Product). Pharma 5 publicly describes quality-control processes covering raw materials and manufacture in a [2020 company statement](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf).
+  3. These matches provide **contextual corroboration** of supplier identity and the pharmaceutical activity, **not** independent validation of a contractual relationship, the source document's authenticity, or a compromise of Pharma 5, MEDILIFE or JQC. The document's creation date is not established; 25 September 2026 is the threat actor's posting date.
+
+- **Additional verification sources:** [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) ; [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) ; [public MEDILIFE listing](https://www.ufficiocamerale.it/9842/medilife-srl) ; [JQC manufacturer catalogue](https://www.jqcpharm.com/en/index.php/Product) ; [official Pharma 5 quality statement](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf).
 
 - **Analysis:**
 
-  **Observed:** The publication dated **25 September 2026** associates `pharma5.ma` with INC Ransom and displays **50 Gb** (recorded here as **approximately 50 GB claimed**). It claims corporate and financial information, product and supply-chain data, quality control and certification material, drug-testing information, and employee and partner data. The gallery contains several document and table previews, including material related to products and activity tracking; their detailed content is not readable enough to confirm every claimed category. One **distinct, readable page** of a Pharma 5 quality-department specifications document concerns **salicylamide**. It identifies client, supplier and manufacturer roles, as well as contact fields. Two images depict the same page, one partly redacted; they are not two independent documents. The document indicates “page 1/5”; the other four pages and the source files were not provided.
+  **Observed:** The INC Ransom listing is dated **25 September 2026 at 08:27** (timezone unspecified), names `pharma5.ma` and displays **“Leaked data: 50Gb”** and a **“Revenue: 500M$”** figure (both attacker assertions, unverified). It claims corporate and financial records, product and supply data, quality-control and certification information, drug-testing material, employee data and counterparties' information. The gallery features document and spreadsheet thumbnails whose resolution does not establish all claimed categories. The second supplied image shows **one readable quality-management specifications page** naming salicylamide, reference `DE01 / PG / MQ / 036`, revision `01`, `1/5`, Pharma 5 as client, MEDILIFE (Italy) as supplier and JQC-CHINE as manufacturer. The page contains professional fields and personal contact details which are not reproduced. **Only page 1** was provided, not the four remaining pages or the native file.
 
-  **Assumption:** The document structure and references to Pharma 5, salicylamide and supply-chain roles strengthen its documentary link to the organisation. The other previews suggest varied documents, without allowing verification of the underlying files or the claimed volumes.
+  **Assumption:** The Pharma 5 header, pharmaceutical quality/sourcing context, independently locatable Italian supplier and the Chinese manufacturer's official catalogue together support a **strong documentary association** with Pharma 5's ecosystem. This does not demonstrate an intrusion into Pharma 5 systems: legitimate earlier document sharing, a third party, a pre-existing disclosure, a repost or fabrication cannot be excluded. No breach at MEDILIFE or JQC is established.
 
-  **Unknown:** the date and vector of access, affected systems, independent authenticity of the document, acquisition method, volume actually obtained or published, number of people affected, encryption, any business interruption, confirmation by Pharma 5 or an authority, any negotiation, payment or resale remain unknown.
+  **Unknown:** origin, creation date, non-public status and independently verified authenticity of the document; actual source organisation or system; timing and vector of any unauthorised access; existence and volume of the files claimed; exposed categories beyond the readable page; unique affected-person count; encryption or service disruption; official confirmation; negotiation, ransom payment or resale.
 
-- **Analysis scope:** four local images reviewed in read-only mode: two versions of the same listing with a preview gallery, and two versions of the same document page. Thumbnails are not treated as complete reviewed files. Analysis was limited to visible data; neither the complete source document nor the claimed dataset was available. Individual names and contact details are not reproduced.
+- **Analysis scope:** **two images supplied for this review**: (1) an INC Ransom victim listing with document thumbnails and (2) one readable Pharma 5 specifications page marked `1/5`. Thumbnails are not independently validated original files; the other pages were not supplied. SHA-256 hashes below identify **the two received images**, not any purported exfiltrated originals. No person's name, email address, telephone number or raw document is republished in this record.
 
-- **Risk assessment:** if the other claimed data was indeed exposed, personal and professional information could facilitate spear-phishing, payment fraud or BEC, social engineering and targeting of supply-chain partners. The impact level reflects the sensitivity of the pharmaceutical context and visible contact fields without validating the extent of the leak.
+- **Risk assessment:** A visible business contact and supplier/manufacturer relationship could be misused for **targeted phishing**, supplier payment diversion/BEC or social engineering. If additional claimed categories are genuine, confidentiality risks could extend to commercial and quality-assurance information and partners. **The two images do not substantiate patient health records, trade-secret theft or medication tampering.**
 
-- **Sources / Evidence:** INC Ransom listing and sample images supplied locally; visual review and SHA-256 manifest retained outside the repository at `/tmp/afrintel-evidence/AFR-2026-TBD-pharma5/`; [public Pharma 5 document](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf) linking the domain to the organisation. No raw personal data or criminal-site address is published.
+- **SOC/CTI recommendations:** preserve received image originals and acquisition metadata; check the specifications reference, date and hash against authorised internal quality/procurement systems offline; review unusual access to quality, purchasing and supplier-sharing repositories; verify any bank-details changes out-of-band; alert relevant business contacts as appropriate; monitor for further disclosure without purchasing or redistributing the data.
+
+- **Sources / Evidence:** two October 2026 images supplied to AFRINTEL (actor listing displayed as dated 25 September); public cross-checks from [Pharma 5](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf), [MEDILIFE S.R.L.](https://www.ufficiocamerale.it/9842/medilife-srl) and [JQC Pharmaceutical](https://www.jqcpharm.com/en/index.php/Product); [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) and [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) for reporting on the claim. **Public business matches do not establish an intrusion.**
+
+- **Screenshot traceability (SHA-256):** `1.png` = `27d9e3d2da239eb4d77495fa37482cab0c665b4447589efa1967c9e4e542b078` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. Hashes of supplied copies only, not the actor's purported original files.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -478,7 +489,6 @@ last_checked_at: 2026-09-28
 
 - **Incident date:** Not established
 - **Initial publication date:** 27 September 2026 at 00:06 (displayed time; timezone not specified)
-- **AFRINTEL discovery date:** 8 October 2026 (listing and five sample images supplied)
 - **Actor / Group:** Blacknet00
 - **Sector:** Financial services / Banking
 - **Website:** [fnb.co.za](https://www.fnb.co.za/)
@@ -488,7 +498,11 @@ last_checked_at: 2026-09-28
 - **Confidence level:** Medium (listing and visual consistency of the samples; origin, authenticity and compromise uncorroborated)
 - **Impact level:** Level 3
 
-- **Description:** Blacknet00 published a listing naming First National Bank in South Africa and attached five images of financial documents. The visible material consists of FNB-branded business-account statements covering periods in 2023 and 2025. It supports the existence of the listing and a plausible documentary association with FNB, without establishing that the statements came from the bank's infrastructure or that unauthorised access occurred.
+- **Description:** **First National Bank (FNB)** is a South African retail and business banking brand operating as a division of **FirstRand Bank Limited**. It offers accounts, payments, credit, digital banking and services for individuals and businesses. Identifying the bank does not by itself demonstrate that its systems were compromised by the poster ([FNB official overview](https://www.fnb.co.za/about-fnb/about-us.html)).
+
+- **Independent verification as of 18 October 2026:** No FNB statement, regulator notification or independent investigation corroborating the September Blacknet00 allegation was found. The banking outage observed on 2 September was a separate event with no established causal link.
+
+  **Incident context already documented in AFRINTEL :** Blacknet00 published a listing naming First National Bank in South Africa and attached five images of financial documents. The visible material consists of FNB-branded business-account statements covering periods in 2023 and 2025. It supports the existence of the listing and a plausible documentary association with FNB, without establishing that the statements came from the bank's infrastructure or that unauthorised access occurred.
 
 - **Analysis:**
 
@@ -530,222 +544,336 @@ last_checked_at: 2026-10-08
 
 > These records concern incidents that occurred before September 2026. They are integrated into the September editorial corpus because they were identified and verified late, before publication of the monthly report. The incident date remains the actual date or the best-supported documented window; the AFRINTEL discovery/integration date is recorded separately.
 
-### January 3, 2026 — integrated September 30, 2026
+### January 3, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Constantia Pharmacy
 
 - **Incident date:** January 3, 2026
 - **Publication / confirmation date:** January 5, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** `Want_to_cry` ransomware observed; human operator unattributed
 - **Sector:** Healthcare / Pharmacy
 - **Status:** Corroborated
 - **Incident type:** Ransomware
 - **Confidence:** High
 - **Impact:** Level 2
+- **Description:** **Constantia Pharmacy** is a community pharmacy located at **Constantia Village Shopping Centre** in Cape Town, South Africa. It provides prescription dispensing, pharmaceutical advice and clinic/community-care services. Such operations rely on pharmacy information systems and records needed to serve patients ([official website](https://constantiapharmacy.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Earlier incident corroborated by reporting:** MyBroadband documented a third party’s intervention against file-encrypting malware on a Constantia Pharmacy server in early January 2026. The attack dates to January, not September; AFRINTEL’s September discovery is not a new attack.
+
+- **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
 - **Sources / Evidence:** [MyBroadband, January 5, 2026](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
 
 Constantia Pharmacy is an independent pharmacy in Cape Town. On January 3, a researcher observed via Shodan an exposed Windows server belonging to its environment while ransomware was running. The pharmacy and its ProPharm provider were alerted and intervened. The observation and coordinated response corroborate the incident; exfiltration, encrypted volume and operator identity remain unknown.
 
-### January 12, 2026 — integrated September 30, 2026
+### January 12, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Land and Agricultural Development Bank of South Africa (Land Bank)
 
 - **Incident date:** January 12, 2026
 - **Detailed public confirmation:** March 9, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Government / Public Bank / Finance
 - **Status:** Victim Confirmed
 - **Incident type:** Ransomware
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** The **Land and Agricultural Development Bank of South Africa (Land Bank)** is a specialist development-finance institution serving **South African agriculture**. It finances commercial farmers, agribusinesses and new participants in the agricultural value chain to support production and sector development. It is a sector-focused public development bank rather than a general-purpose retail bank ([Land Bank official profile](https://www.landbank.co.za/About-Us/Pages/Our-Business.aspx)).
+
+- **Independent verification as of 18 October 2026:** **Publicly corroborated acknowledgement:** ITWeb reported the Land Bank ransomware incident occurring in January 2026 and the bank’s security improvements. Added to AFRINTEL in September, but not a September attack.
+
+- **Additional verification sources:** [Source 1](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N)
+
 - **Sources / Evidence:** [ITWeb, March 9, 2026](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N); [ITWeb, January 16, 2026](https://www.itweb.co.za/article/land-bank-flags-it-systems-disruption/Kjlyr7wBDRZvk6am)
 
 The South African finance minister confirmed a ransomware attack detected on January 12 after unauthorised activity. Some servers and laptops were encrypted and files were exfiltrated; critical ERP, core-banking and CRM systems were reportedly not compromised. The actor, exact volume and dwell time remain unknown.
 
-### March 23, 2026 — integrated September 30, 2026
+### March 23, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Standard Bank South Africa
 
 - **Incident / first communication date:** March 23, 2026
 - **Public updates:** April 2, 13 and 14, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not officially attributed; separate PrinzEugen claim uncorroborated
 - **Sector:** Finance / Banking
 - **Status:** Victim Confirmed
 - **Incident type:** Data Leak
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** **Standard Bank South Africa** represents the South African banking operations of **Standard Bank Group**, offering accounts, payments, financing, business banking and investment-related services. **The Standard Bank of South Africa Limited** is identified among the group's South African legal entities in its institutional documentation ([official privacy statement](https://www.standardbank.co.za/southafrica/personal/about-us/legal/privacy-statement)).
+
+- **Independent verification as of 18 October 2026:** **First-party confirmation:** on 23 March 2026, Standard Bank disclosed unauthorised access to a limited set of data and said transactional systems and customer funds were unaffected. This predates September.
+
+- **Additional verification sources:** [Source 1](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank)
+
 - **Sources / Evidence:** [Standard Bank, March 23, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank); [Standard Bank, April 14, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april)
 
 Standard Bank confirmed unauthorised access to internal administrative systems and document repositories, potentially exposing names, identifiers, contact details, addresses and account numbers. Transactional and core systems were reportedly not accessed. The vector, number of people and copied volume remain unknown. This record is distinct from the May Standard Bank Group claim.
 
-### April 18, 2026 — integrated September 30, 2026
+### April 18, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Ahmed Al-Kadi Private Hospital
 
 - **Incident date:** April 18, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Healthcare / Private Hospital
 - **Status:** Victim Confirmed
 - **Incident type:** Ransomware
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** **Ahmed Al-Kadi Private Hospital** is a private hospital in **Mayville, Durban**, South Africa. Developed by the **Islamic Medical Association of South Africa**, it opened in 2017 and reports **163 beds**, providing inpatient and specialist medical and surgical care. It states that its services are available regardless of ethnicity or religion ([official hospital profile](https://ahmedalkadi.com/about-us/)).
+
+- **Independent verification as of 18 October 2026:** **Direct confirmation:** the hospital reported unauthorised access on 18 April 2026 followed by ransomware deployment encrypting part of its environment; it issued a POPIA notice and notified the regulator. Not a September occurrence.
+
+- **Additional verification sources:** [Source 1](https://ahmedalkadi.com/notification-of-data-incident/)
+
 - **Sources / Evidence:** [Hospital official notice](https://ahmedalkadi.com/notification-of-data-incident/)
 
 The hospital confirmed that an unauthorised party accessed its IT environment and deployed ransomware on April 18. Part of the environment was encrypted, contained and restored with external specialists. The vector, encryption scope and exfiltration remain unknown.
 
-### Late May 2026 — integrated September 30, 2026
+### April 28, 2026 - integrated September 1, 2026
+#### 🇰🇪 Kenya - TikoHUB
+
+- **Incident date:** 28 April 2026 (date of the access-offer post; initial compromise not established)
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Initial publication date:** 28 April 2026 at 23:26 (displayed time; timezone not specified)
+- **Actor / Group:** DarkMafiaX (displayed account; identity and affiliation unverified)
+- **Sector:** Ticketing / Events / Digital services
+- **Website:** [tikohub.co.ke](https://www.tikohub.co.ke/)
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+
+- **Description:** **TikoHUB** is a Kenyan **ticketing and events-services platform** serving event organisers and attendees. Its public offering focuses on event discovery and management and online ticketing or participation workflows. The existence of the service does not validate any claimed administrator privileges offered for sale ([TikoHUB official overview](https://www.tikohub.co.ke/about_us.php)).
+
+- **Independent verification as of 18 October 2026:** No independent public evidence of access being offered for TikoHUB, or company acknowledgement, was found. The suspect posting is dated April 2026 and the tracker’s inclusion came later.
+
+  **Incident context already documented in AFRINTEL :** A post attributed to the DarkMafiaX account offers administrator access presented as related to TikoHUB, a Kenyan ticketing and event-management platform. The post and displayed credentials were not tested; AFRINTEL does not confirm their validity, effective access or a compromise of TikoHUB.
+
+- **Analysis:**
+
+  **Observed:** The screenshot shows a post titled “Admin Access To Tikohub.co.ke | Kenya”, dated 28 April 2026 at 23:26 according to the displayed timestamp. It contains an administrative-resource URL and fields presented as a username and password. These values are deliberately not reproduced and were not tested. The screenshot was supplied to AFRINTEL on 24 September 2026.
+
+  **Assumption:** The `tikohub.co.ke` domain corresponds to a Kenyan ticketing platform, making the target plausible. The post could nevertheless be inaccurate, recycled, falsified or related to limited access to a third-party component. 28 April is the observed post date, not necessarily the initial compromise date.
+
+  **Unknown:** current credential validity, actual privileges, affected system, acquisition method, access duration, effective exploitation, accessed or exfiltrated data, confirmation by TikoHUB and remediation status remain unknown.
+
+- **Observed sample scope:** one screenshot of a forum post; no login, credential validation, download, endpoint interaction or secret copying was performed.
+
+- **Risk assessment:** if authentic, administrator access could enable content modification, access to customer or organiser data, ticket fraud and account compromise. This record does not confirm any of these effects.
+
+- **Recommendations:**
+1. Preserve authentication, administration, API and hosting logs from 28 April 2026 onward.
+2. Reset potentially affected administrator accounts and revoke sessions as justified by TikoHUB's defensive investigation.
+3. Review privilege changes, exports, account creation and ticket or event modifications.
+4. Do not test the disclosed credentials or open the sensitive URL shown in the screenshot.
+5. Monitor impersonation, ticket fraud and secret reuse.
+
+- **Sources / Evidence:** screenshot supplied to AFRINTEL on 24 September 2026; public [TikoHUB website](https://www.tikohub.co.ke/).
+
+### Late May 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Centre for High Performance Computing (CHPC) / Lengau Supercomputer
 
 - **Incident date:** late May 2026
 - **Detailed public confirmation:** August 24, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Research / Strategic Scientific Infrastructure
 - **Status:** Victim Confirmed
 - **Incident type:** System Intrusion
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** The **Centre for High Performance Computing (CHPC)** is South Africa's national **high-performance computing** facility within the **CSIR** research ecosystem and the NICIS infrastructure programme. It provides scientific computing resources to universities and research organisations; **Lengau** is a flagship supercomputer associated with the facility. CHPC is therefore a research infrastructure rather than an ordinary commercial company ([CHPC official profile](https://www.chpc.ac.za/about-the-chpc/)).
+
+- **Independent verification as of 18 October 2026:** **Institutionally corroborated:** the CSIR and a parliamentary answer described compromise of the Lengau cluster in late May 2026, associated with vulnerabilities in aging systems and service disruption. Do not categorise this as a September ransomware event.
+
+- **Additional verification sources:** [Source 1](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
 - **Sources / Evidence:** [ITWeb, August 24, 2026](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
 
 A parliamentary response confirmed an incident affecting part of the Lengau HPC environment in late May, linked to vulnerabilities in an ageing environment. Access depth, dwell time and any data viewed remain unknown.
 
-### June 2026 — integrated September 30, 2026
+### June 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - MIP Holdings
 
 - **Incident date:** June 2026, exact date not established
 - **First public notice:** June 26, 2026
 - **Additional regulatory confirmation:** September 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Technology / Software / Service Provider
 - **Status:** Victim Confirmed
 - **Incident type:** Data Leak
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** **MIP Holdings** is a South African **FinTech/InsurTech** software and technology provider. Its platforms support policy and contract administration, customer relationship management and workflows for insurers, healthcare operators, lenders and retirement administrators. As a software supplier to multiple organisations, an incident affecting MIP can have potential downstream implications for customers ([MIP official website](https://www.mip.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Confirmed service-provider incident:** on 26 June 2026 LegalWise reported that MIP Holdings had detected unauthorised access to a legacy development/support system. Data belonging to customers of multiple insurers was subsequently implicated; this does not establish intrusion at each client. Initial incident in June.
+
+- **Additional verification sources:** [Source 1](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident)
+
 - **Sources / Evidence:** [LegalWise, June 26, 2026](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident); [TechCentral, September 25, 2026](https://techcentral.co.za/insurers-mip-breach-regulators/286482/)
 
 MIP Holdings identified unauthorised access to a former development and support environment. South Africa's Information Regulator confirmed in September that it was working with MIP to establish the circumstances and number of affected people. The compromise and supply-chain risk are confirmed; volume and vector remain unknown.
 
-### June 14-15, 2026 — integrated September 30, 2026
+### June 14-15, 2026 - integrated September 1, 2026
 #### 🇬🇦 Gabon - Société d'Énergie et d'Eau du Gabon (SEEG)
 
 - **Incident date:** night of June 14-15, 2026
 - **Initial government communication:** June 15, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Energy / Water / Critical Infrastructure
 - **Status:** Victim Confirmed
 - **Incident type:** System Intrusion
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** The **Société d'Énergie et d'Eau du Gabon (SEEG)** is a Gabonese utility operator involved in **electricity generation, transmission and distribution**, as well as the supply of **drinking water**. Its work relies on industrial infrastructure and management systems essential to continued delivery of services to households and businesses ([SEEG official activities overview](https://www.seeg-gabon.com/activites)).
+
+- **Independent verification as of 18 October 2026:** **Confirmed incident, mechanism requires precision:** the Gabonese government documented the EDAN outage overnight on 14–15 June 2026. SEEG later cited alleged sabotage or malicious IT actions. This does not necessarily establish an external intrusion or exfiltration. June incident.
+
+- **Additional verification sources:** [Source 1](https://gabonofficiel.com/seeg-un-sabotage-informatique-a-paralyse-95-de-son-systeme-la-cybersecurite-desormais-au-coeur-des-enjeux/) ; [Source 2](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/)
+
 - **Sources / Evidence:** [Gabonese Government, June 15, 2026](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/); [Gabon Media Time, August 5, 2026](https://gabonmediatime.com/cybersecurite-la-seeg-revele-avoir-perdu-pres-de-95-de-ses-infrastructures-informatiques/)
 
 A major incident disrupted SEEG systems, including EDAN. The government cited malicious activity and SEEG later described the event as sabotage, with nearly 95% of its IT infrastructure reportedly lost. The technical mechanism, responsible parties and exfiltration remain unknown.
 
-### July 12, 2026 — integrated September 30, 2026
+### July 12, 2026 - integrated September 1, 2026
 #### 🇨🇲 Cameroon - Ministry of Employment and Vocational Training (MINEFOP)
 
 - **Incident date:** July 12, 2026
 - **Public analysis:** July 27, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** ANTONKILL
 - **Sector:** Government / Public Administration
 - **Status:** Corroborated
 - **Incident type:** Defacement
 - **Confidence:** High
 - **Impact:** Level 2
+- **Description:** Cameroon's **Ministry of Employment and Vocational Training (MINEFOP)** develops and implements public policy on **employment, vocational training and professional integration**. Its responsibilities include career guidance, skills development and support for access to work. It is a national government ministry, not a private training college ([MINEFOP official mandate](https://minefop.gov.cm/fr/missions/)).
+
+- **Independent verification as of 18 October 2026:** **Publicly corroborated defacement:** Cameroon’s CIRT issued an advisory on the ANTONKILL campaign targeting the MINEFOP website in July 2026. The demonstrated scope is a web portal, not the entire ministry network. July incident.
+
+- **Additional verification sources:** [Source 1](https://cirt.cm/alerte-de-securite-campagne-antonkill-web-defacement-ciblant-les-institutions-sous-joomla-et-helix3/)
+
 - **Sources / Evidence:** [OBS-CC, July 27, 2026](https://obs-cc.org/defacement-antonkill-minefop/); [OBS-CC incident database](https://obs-cc.org/incidents/)
 
 OBS-CC, relying on an ANTIC CIRT alert, documented the defacement of the MINEFOP website in a campaign attributed to ANTONKILL. The depth of access, persistence and exposure of non-public data are not established.
 
-### July 15, 2026 — integrated September 30, 2026
+### July 15, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Rectron (Pty) Ltd
 
 - **Detected incident date:** July 15, 2026
 - **SENS notification:** July 22, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not officially attributed; DragonForce unconfirmed
 - **Sector:** Technology / IT Distribution
 - **Status:** Victim Confirmed
 - **Incident type:** Data Leak
 - **Confidence:** Very High
 - **Impact:** Level 3
+- **Description:** **Rectron (Pty) Ltd** is a South African **ICT products and solutions distributor** within the **Mustek** group. Its portfolio includes software, hardware, networking, data storage, cloud and data-centre solutions sold through resellers and technology partners. The company therefore operates within the technology supply chain ([Rectron official profile](https://www.rectron.co.za/pages/about)).
+
+- **Independent verification as of 18 October 2026:** **Official market disclosure:** on 22 July 2026 Mustek released a SENS notice concerning a cyber incident at Rectron. This establishes the incident but not necessarily the responsibility of a claiming group. July incident.
+
+- **Additional verification sources:** [Source 1](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
 - **Sources / Evidence:** [Mustek / JSE SENS, July 22, 2026](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
 
 Mustek announced that Rectron suffered a compromise affecting some IT systems and operations, with unlawful access to some data. Rectron launched incident response and notified the Information Regulator. The vector, data categories and exfiltrated volume remain unknown.
 
-### July 18, 2026 — integrated September 30, 2026
+### July 18, 2026 - integrated September 1, 2026
 #### 🇰🇪 Kenya - Official website of the President of the Republic (`president.go.ke`)
 
 - **Incident date:** July 18, 2026
 - **Government confirmation:** July 18, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Government / Presidency
 - **Status:** Government Confirmed
 - **Incident type:** Defacement
 - **Confidence:** Very High
 - **Impact:** Level 3
+- **Description:** The domain **`president.go.ke`** hosts the **official website of the Presidency of the Republic of Kenya**. It publishes public information about presidential activities, the administration and coordination of government business. This record concerns **an official web portal**, not necessarily the Presidency's or Kenyan government's entire IT environment ([official portal](https://www.president.go.ke/)).
+
+- **Independent verification as of 18 October 2026:** **Government-confirmed:** Kenya’s ICT ministry acknowledged the defacement of `president.go.ke` on 18 July 2026 and said no sensitive-data compromise had been established. The event concerns a specific website in July.
+
+- **Additional verification sources:** [Source 1](https://www.aa.com.tr/fr/afrique/kenya-le-site-officiel-de-la-pr%C3%A9sidence-pirat%C3%A9-des-hackers-r%C3%A9clament-une-rancon-en-bitcoin/4002284)
+
 - **Sources / Evidence:** [ICT Authority / ministry statement, July 18, 2026](https://www.linkedin.com/posts/kenya-ict-board_ministry-of-information-communications-activity-7484210613053784065-Fy7R); [The Standard, July 18, 2026](https://www.standardmedia.co.ke/national/article/2001553147/kabogo-no-sensitive-data-accessed-after-presidents-website-hack)
 
 The Kenyan government confirmed the defacement of the presidential website, which displayed hostile messages, a wallet address and a demand for 5 BTC. No evidence of access to sensitive data or exfiltration was reported. The vector and attacker identity remain unknown.
 
-### August 26, 2026 — integrated September 30, 2026
+### August 26, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Cartrack South Africa
 
 - **Incident date:** August 26, 2026
 - **Public communication:** August 28, 2026
 - **Update:** September 10, 2026
-- **AFRINTEL discovery / integration date:** September 30, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
 - **Actor / Group:** Not publicly attributed
 - **Sector:** Telematics / Mobility / Automotive Services
 - **Status:** Victim Confirmed
 - **Incident type:** Ransomware
 - **Confidence:** Very High
 - **Impact:** Level 4
+- **Description:** **Cartrack South Africa** provides **vehicle telematics**, tracking, stolen-vehicle recovery and fleet-management services. Its offering combines vehicle-installed equipment, digital platforms and operational services for consumers and businesses. This business model involves vehicle, subscription and customer information, without implying that all such data was exposed in a particular incident ([Cartrack official website](https://www.cartrack.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Direct confirmation:** Cartrack disclosed finding ransomware on certain systems on 26 August 2026 and warned that personal information might have been posted. The September Dire Wolf claim is not an official forensic attribution. Initial event in August.
+
+- **Additional verification sources:** [Source 1](https://cartrack.co.za/platform/resources/news)
+
 - **Sources / Evidence:** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
 
 Cartrack confirmed a ransomware incident detected on August 26. Affected servers were isolated and the platform restored within five hours. An update states that personal information relating to some customers was accessed and may have been published on a restricted-access site. The vector, operator and exact volume remain unknown.
 
-The October 16, 2026 workbook also contains a `Cartrack Holdings` listing attributed to direwolf, dated September 2, 2026. This publication is retained as a secondary observation potentially related to the same event; it is not counted as a separate incident without evidence separating the two events.
-
-## September ransomware publications integrated from the October 16, 2026 workbook
+## September ransomware publications
 
 > These records originate from the local `AFRINTEL_Victimes_Africaines_Septembre_2026.xlsx` workbook. The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.
 
 ### September 1, 2026
 #### 🇪🇬 Egypt - Holding Company for Construction and Development (HCCD)
 - **Initial publication date:** September 1, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Construction
 - **Website:** [hccd-construction.com](https://hccd-construction.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** The **Holding Company for Construction and Development (HCCD)** is an Egyptian holding company active in **construction, civil works and property development**. Its website describes subsidiaries involved in contracting, engineering consulting, housing and electrical works. As a corporate group, a claim naming HCCD does not establish which subsidiary or information system may be affected ([HCCD official overview](https://hccd-construction.com/About_e.aspx)).
+
+- **Independent verification as of 18 October 2026:** Only the listing in Krybit claim trackers is corroborated; no HCCD statement or verifiable investigation proving an intrusion into its systems was found.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35624
 
 Krybit published a claim naming the Holding Company for Construction and Development. The date reflects the listing observation; compromise, volume, encryption and exfiltration remain unknown.
 
 #### 🇪🇬 Egypt - Mecca High Feed Factory
 - **Initial publication date:** September 1, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Agriculture / Agribusiness
 - **Website:** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Mecca High Feed Factory** is described on its Arabic-language business blog as an Egyptian producer of **poultry and livestock feed**, including plant-based feed formulations. The business blog associates the **Mecca** and **High Feed** names and discusses animal nutrition products; as a self-published source, it does not independently verify the company's current legal structure or industrial footprint ([company blog](https://meccahighfeed.blogspot.com/)).
+
+- **Independent verification as of 18 October 2026:** OSINT aggregators relay a Krybit claim without independent evidence of compromise or an identified Mecca High Feed Factory statement. Some databases disagree on country: do not revise geographical attribution without checking.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35627
 
 Krybit published a claim targeting Mecca High Feed Factory, described as an Egyptian animal-feed manufacturer. Technical evidence and actual impact are not established.
 
 #### 🇪🇬 Egypt - Seashell Hospital
 - **Initial publication date:** September 1, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Healthcare / Hospital
 - **Website:** [seashellhospital.com](https://seashellhospital.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Seashell Hospital** is a private healthcare facility in **New Cairo**, Egypt. Its website describes inpatient healthcare, diagnosis and treatment services, including a round-the-clock emergency department. Its operations involve sensitive clinical and administrative workflows, although the claim alone does not demonstrate exposure of patient records ([hospital official website](https://www.seashellhospital.com/AboutUs/Index)).
+
+- **Independent verification as of 18 October 2026:** Multiple leak-site indices reproduce a Krybit claim naming Seashell Hospital, but no hospital notification or independent forensic confirmation was found. Disruption, patient-data exposure and encryption remain unestablished.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35637
 
 Krybit published a claim targeting Seashell Hospital, a private Egyptian hospital. No reviewed public element confirms access, encryption or exfiltration.
@@ -753,72 +881,95 @@ Krybit published a claim targeting Seashell Hospital, a private Egyptian hospita
 ### September 7, 2026
 #### 🇿🇦 South Africa - VSB Attorneys Inc
 - **Initial publication date:** September 7, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** lockbit5
 - **Sector:** Legal Services
 - **Website:** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **VSB Attorneys Inc** is a **South African law firm** offering property law, conveyancing and corporate/commercial legal services. It assists individuals and businesses with legal and contractual matters that can involve confidential files and supporting documents. The nature of its legal work does not establish which records, if any, were affected by the claim ([VSB official profile](https://www.vsbattorneys.co.za/about-vsb-attorneys-law-firm/)).
+
+- **Independent verification as of 18 October 2026:** The LockBit5 claim naming VSB Attorneys is recorded by leak-site monitors, without an identified company response or independent proof of intrusion.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35798
 
 Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm. Compromise and data scope are unconfirmed.
 
 #### 🇪🇬 Egypt - Nile Projects Trading
 - **Initial publication date:** September 7, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Real Estate / Property Management
 - **Website:** [nileprojects.com](https://nileprojects.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Nile Projects & Trading Company** is an Egyptian trading group that traces its origins to **1972**. Initially a family business, it expanded into **international brand distribution, tyres, luxury fashion and commercial real estate**. Its operations extend beyond real estate, but the listing does not identify which business unit, if any, was targeted ([Nile Projects official profile](https://nileprojects.com/pages/about-us)).
+
+- **Independent verification as of 18 October 2026:** Public search results reproduce The Gentlemen’s claim against Nile Projects Trading; no official acknowledgement, regulatory notice or forensic verification establishes a confirmed incident.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35813
 
 TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian group active in retail, real estate and distribution. No evidence confirms access or exfiltration.
 
 #### 🇿🇦 South Africa - Hollard Insurance Group
 - **Initial publication date:** September 7, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Insurance
 - **Website:** [hollard.co.za](https://www.hollard.co.za/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
+- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description:** **Hollard Insurance Group** is a **privately owned South African insurance group** providing life and non-life coverage, personal and commercial insurance and investment-related products. It has a footprint across several African markets through operations and partnerships. The claim naming Hollard does not establish which legal entity or subsidiary, if any, was affected ([Hollard official overview](https://www.hollard.co.za/our-world)).
+
+- **Independent verification as of 18 October 2026:** **Third-party exposure acknowledged; direct Hollard breach disputed:** in statements dated 15 and 18 September 2026 Hollard reported that information relating to some funeral policyholders was published following the **June 2026 incident at MIP Holdings**. It has notified affected customers and engaged regulators; its investigations found **no compromise of Hollard’s own environment**. The Gentlemen’s listing must not be treated as a confirmed intrusion at Hollard.
+
+- **Additional verification sources:** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35817
 
 TheGentlemen published a claim targeting Hollard Insurance Group. The source corpus describes the insurer and its activities but provides no independent compromise evidence.
 
 #### 🇿🇦 South Africa - RelyComply AML Platform
 - **Initial publication date:** September 9, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
-- **Actor / Group:** direwolf
+- **Actor / Group:** Direwolf (claim; technical attribution unconfirmed)
 - **Sector:** Fintech / Anti-Money Laundering
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
+- **Status:** Victim Confirmed - Unauthorized Access
+- **Incident type:** System Intrusion (ransomware claim unconfirmed)
+- **Subtype:** Unauthorised access confirmed; Direwolf link/encryption unproven
+- **Description:** **RelyComply** is a regulatory-technology (**RegTech**) provider offering an **AML/KYC** compliance platform for organisations subject to anti-money-laundering requirements. Its software centralises customer due-diligence, identity-checking, monitoring and compliance workflows. The company's public profile does not, by itself, confirm the scope of any intrusion ([RelyComply official platform](https://relycomply.com/)).
+
+- **Independent verification as of 18 October 2026:** **Company-confirmed unauthorised access:** in its 16 September notice, RelyComply said it detected access to certain systems on 8 September 2026 after exploitation of a third-party application zero-day. The company rebuilt affected systems, rotated credentials/tokens, patched the flaw and notified South Africa’s Information Regulator (**reference SC20263150**). Virgin Active and HuntEx describe potential transaction-data exposure via Peach Payments. **Direwolf attribution, encryption and the claimed data volume are not confirmed.**
+
+- **Additional verification sources:** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35859
 
-Direwolf published a claim naming RelyComply AML Platform. The organisation identity, vector, affected systems and impact remain unknown.
+**Original claim context:** Direwolf named RelyComply in a leak-site listing. The company later confirmed unauthorised access to some systems and identified an apparent third-party zero-day exploitation path. Direwolf involvement, encryption and the volume of any extracted data remain unproven.
 
 ### September 12, 2026
 #### 🇲🇦 Morocco - La Sultana Hotel Group
 - **Initial publication date:** September 12, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Hospitality
 - **Website:** [lasultanahotels.com](https://lasultanahotels.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **La Sultana Hotels** is a Moroccan **luxury hospitality** brand comprising **La Sultana Marrakech** in the historic medina and **La Sultana Oualidia** by the Atlantic lagoon. Its offering includes premium accommodation, dining and visitor experiences. The claim does not establish which property or reservation-related system, if any, was affected ([La Sultana official website](https://www.lasultanahotels.com/)).
+
+- **Independent verification as of 18 October 2026:** The Krybit claim naming La Sultana hotels appears in OSINT indices, but no hotel-group statement or independent proof of intrusion was located.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35923
 
 Krybit published a claim targeting La Sultana Hotel Group in Morocco. No reviewed element confirms access, encryption or data disclosure.
 
 #### 🇪🇬 Egypt - Egyptian Airports Company (EAC)
 - **Initial publication date:** September 12, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Air Transport
 - **Website:** [eac-airports.com](https://www.eac-airports.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** The **Egyptian Airports Company (EAC)** is an Egyptian **airport operator** within the state-owned **Egyptian Holding Company for Airports and Air Navigation** ecosystem. Its role involves managing, operating, maintaining and developing civil airports. It is distinct from an airline or air-navigation service provider; the claim does not identify any specific compromised airport ([Egyptian Ministry of Civil Aviation](https://web.civilaviation.gov.eg/Companies/AirportCompany)).
+
+- **Independent verification as of 18 October 2026:** Several CTI feeds list Krybit’s claim against the Egyptian Airports Company domain. No acknowledgement by EAC or an Egyptian authority, or evidence of impact on operational airport systems, was found.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 35917
 
 Krybit published a claim targeting the Egyptian Airports Company. The publication identifies the organisation and sector; technical outcome and any exposure remain unknown.
@@ -826,23 +977,34 @@ Krybit published a claim targeting the Egyptian Airports Company. The publicatio
 ### September 16, 2026
 #### 🇳🇦 Namibia - Namibian Defence Force
 - **Initial publication date:** September 16, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
-- **Actor / Group:** ransomhouse
+- **Actor / Group:** RansomHouse (association publicly reported by NAM-CSIRT)
 - **Sector:** Defence / Armed Forces
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
+- **Status:** Government Confirmed - Unauthorized Access
+- **Incident type:** System Intrusion (ransomware claim; encryption unconfirmed)
+- **Subtype:** Ministry network intrusion confirmed; encryption/exfiltration unproven
+- **Description:** The **Namibian Defence Force (NDF)** is **Namibia's national armed forces**. Its core constitutional mission is to defend the country's territorial integrity and national interests under Namibia's defence institutions. A claim naming the NDF does not, by itself, demonstrate a compromise of operational military networks ([Namibian Ministry of Defence](https://mod.gov.na/about-ndf)).
+
+- **Independent verification as of 18 October 2026:** **Compromise confirmed by the national cyber authority:** according to a NAM-CSIRT statement reported on 21 September 2026, unauthorised activity was found on the **Ministry of Defence and Veterans Affairs (MODVA)** network, and the investigation linked the incident to **RansomHouse**. The claim names the “Namibian Defence Force”, but the officially confirmed scope is the ministry network. **No released evidence confirms encryption, exfiltration, military-secret leakage or payment.**
+
+- **Additional verification sources:** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36039
 
-Ransomhouse published a claim targeting the Namibian Defence Force. The listing does not confirm compromise, encryption or exfiltration.
+**Original claim context:** RansomHouse named the Namibian Defence Force in its listing. NAM-CSIRT subsequently confirmed unauthorised activity on the Ministry of Defence network and associated it with RansomHouse, while neither encryption nor data exfiltration was publicly demonstrated.
 
 ### September 18, 2026
 #### 🇹🇳 Tunisia - PayPal Support Operations (Transcom WorldWide)
 - **Initial publication date:** September 18, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** N0n
 - **Sector:** Business Services / Customer Support
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Transcom WorldWide** is a **business-process outsourcing and customer-experience (BPO/CX)** provider offering contact-centre, customer-support and business-process services to international brands, including from Tunisia. **PayPal** is a separate payments-services company. The claim links them to support operations, but **the existence and scope of an affected PayPal–Transcom contract is not independently corroborated** by these public company descriptions ([Transcom official services](https://transcom.com/services/customer-experience)).
+
+- **Independent verification as of 18 October 2026:** No independent confirmation of an intrusion or of the precise operational relationship between Transcom, PayPal and Tunisian sites was found. Citrix/AD infrastructure maps and 86.7 million connection records are solely N0n claims.
+
+- **Additional verification sources:** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36122
 
 N0n published a claim targeting outsourced support operations linked to PayPal and Transcom WorldWide in Tunisia. The post mentions internal systems and a settlement deadline, but does not confirm access, the stated volumes or operational impact.
@@ -850,24 +1012,32 @@ N0n published a claim targeting outsourced support operations linked to PayPal a
 ### September 21, 2026
 #### 🇪🇹 Ethiopia - Siinqee Bank
 - **Initial publication date:** September 21, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** lockbit5
 - **Sector:** Banking
 - **Website:** [siinqeebank.com](https://siinqeebank.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Siinqee Bank** is an Ethiopian financial institution providing **retail banking, finance and financial-inclusion services**, including for communities and entrepreneurs. It describes offerings combining mainstream banking, microfinance and digital channels. Its name refers to an Oromo cultural symbol associated with women's rights and protection ([Siinqee Bank official overview](https://siinqeebank.com/about-us/)).
+
+- **Independent verification as of 18 October 2026:** Siinqee Bank’s 8 October 2026 fraud-awareness post is **not** confirmation of the LockBit incident claimed on 21 September. No incident-specific breach notice was located.
+
+- **Additional verification sources:** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36161
 
 Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial institution. No independent element confirms intrusion or data exposure.
 
 #### 🇦🇴 Angola - Grupolider
 - **Initial publication date:** September 21, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Distribution / Agriculture / Logistics
 - **Website:** [grupolider-ao.com](https://grupolider-ao.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Grupolider** is a name associated with **commercial activity in Angola**. Public sources link `grupolider-ao.com` to distribution/import businesses and **Novagrolider**, which is active in agriculture and agro-industry. The domain's website was suspended when checked; the precise corporate relationships and the identity of the entity named in the claim **remain unverified** ([Argentine trade directory](https://exportaciones.cancilleria.gob.ar/sitios/ficha_directorio/89314); [Novagrolider profile](https://icrisco.com/profile.php?id=novagrolider-5238)).
+
+- **Independent verification as of 18 October 2026:** Grupolider’s entry on The Gentlemen’s leak site remains an allegation; no official confirmation or technically verified link between the claimed domain and group entities was found.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36171
 
 TheGentlemen published a claim targeting Grupolider, an Angolan group active in agriculture, logistics, construction and distribution. Compromise and claimed volume remain unknown.
@@ -875,13 +1045,18 @@ TheGentlemen published a claim targeting Grupolider, an Angolan group active in 
 ### September 24, 2026
 #### 🇹🇿 Tanzania - Air Tanzania Company Limited (ATCL)
 - **Initial publication date:** September 24, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** krybit
 - **Sector:** Air Transport
 - **Website:** [airtanzania.co.tz](https://airtanzania.co.tz/)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
-- **Confidence:** Medium
+- **Confidence level:** Medium
+- **Description:** **Air Tanzania Company Limited (ATCL)** is **Tanzania's state-owned national airline**. It provides passenger and cargo air transport on domestic and international routes. Its operations rely on booking, airline-operation and customer-service systems; the presence of images in a sample does not establish that they originated from these systems ([Air Tanzania official profile](https://airtanzania.co.tz/index.php/about-us)).
+
+- **Independent verification as of 18 October 2026:** Krybit’s Air Tanzania domain claim appears in OSINT feeds; reviewed sources state that the airline had not confirmed it. A purported sample does not establish exfiltration from booking systems or encryption.
+
+- **Additional verification sources:** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36284
 
 Krybit published a claim targeting Air Tanzania Company Limited, Tanzania's national airline. A local sample associated with the publication was reviewed read-only: **114 files** totalling **676,972,266 bytes**, including **112 valid images** and **2 non-image files despite the `.jpg` extension**. The valid images comprise **101 three-frame MPO files** and **11 single-frame JPEGs**, for **314 embedded views** in total. No SHA-256 duplicates were detected.
@@ -890,11 +1065,14 @@ This structural consistency supports the presence of an image corpus associated 
 
 #### 🇺🇬 Uganda - Armada Credit Bureau
 - **Initial publication date:** September 24, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** Spirals
 - **Sector:** Financial Services / Credit Bureau
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Armada Credit Bureau Limited** describes itself as a Ugandan **credit-reporting and financial-analytics bureau** operating under the **Bank of Uganda** regulatory framework. Its business relates to creditworthiness information and credit-risk assessment services for authorised organisations. This description is based on its public website and is not independent verification of licensing or an incident ([Armada Credit Bureau website](https://www.armadacrb.com/)).
+
+- **Independent verification as of 18 October 2026:** Only Armada Credit Bureau’s appearance on a Spirals leak-site listing is corroborated. No company statement or official Ugandan notice demonstrating intrusion was found.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36306
 
 Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan credit-reporting and analytics company. No independent evidence confirms compromise.
@@ -902,12 +1080,15 @@ Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan cred
 ### September 25, 2026
 #### 🇰🇪 Kenya - Majani Insurance Brokers
 - **Initial publication date:** September 25, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** Vexy Ransomware
 - **Sector:** Insurance
 - **Website:** [majaninsure.com](https://majaninsure.com/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **Majani Insurance Brokers Limited** is a **Kenyan insurance brokerage** serving individuals and businesses. Its services include sourcing insurance cover, placing business with insurers, renewals and claims assistance. The broker reports several decades of experience in the market ([Majani official profile](https://majaninsure.com/about/)).
+
+- **Independent verification as of 18 October 2026:** The Vexy claim against Majani Insurance Brokers is indexed in threat-intelligence databases without a public company acknowledgement or independent technical corroboration.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36310
 
 Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan insurance broker. The vector, affected systems and any exfiltration remain unknown.
@@ -915,12 +1096,17 @@ Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan i
 ### September 26, 2026
 #### 🇿🇦 South Africa - Guardrisk
 - **Initial publication date:** September 26, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** TheGentlemen
 - **Sector:** Insurance
 - **Website:** [guardrisk.co.za](https://guardrisk.co.za/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
+- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description:** **Guardrisk** is a South African insurance group specialising in **risk-transfer and risk-financing solutions**, notably **cell-captive insurance** structures. It operates across life, non-life and customised commercial insurance arrangements. The Guardrisk name encompasses several regulated entities; the listing does not establish which one, if any, was affected ([Guardrisk official overview](https://guardrisk.co.za/about/)).
+
+- **Independent verification as of 18 October 2026:** **Intermediary exposure acknowledged; direct Guardrisk breach denied:** on 30 September 2026 Guardrisk told MyBroadband that there was no indication of its systems or customer data being compromised. It linked the matter to exposure at binder holder **CoverCubed** affecting around **6,000 funeral policies**, stating that CoverCubed had notified clients and the regulator. **Do not attribute the data to a confirmed intrusion at Guardrisk.**
+
+- **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36351
 
 TheGentlemen published a claim targeting Guardrisk, a South African insurance group. The publication provides organisational context but does not confirm access or the scope of held data.
@@ -928,12 +1114,15 @@ TheGentlemen published a claim targeting Guardrisk, a South African insurance gr
 ### September 29, 2026
 #### 🇿🇦 South Africa - BCX / Business Connexion
 - **Initial publication date:** September 29, 2026
-- **AFRINTEL discovery / integration date:** October 16, 2026
 - **Actor / Group:** incransom
 - **Sector:** Information Technology / Consulting
 - **Website:** [bcx.co.za](https://www.bcx.co.za/)
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
+- **Description:** **BCX (Business Connexion)** is a South African **ICT services and systems-integration provider** within the **Telkom group**. It supports companies and public-sector clients with digital transformation, connectivity, infrastructure, cloud and IT services. Given its multi-client activities, a claim against BCX must not automatically be interpreted as a separate compromise of its customers ([BCX official profile](https://www.bcx.co.za/contact-us/)).
+
+- **Independent verification as of 18 October 2026:** The INC Ransom listing naming BCX is reproduced by CTI platforms; no BCX or Telkom statement, regulatory filing or independent investigation confirming encryption, exfiltration or client compromise was found.
+
 - **Sources / Evidence:** local AFRINTEL workbook, entry ID 36421
 
 Incransom published a claim targeting BCX / Business Connexion and stated **500 GB**, 4,224,088 files and 596,613 folders, along with source code and business applications. These volumes and categories are actor claims; access, exfiltration and completeness are unconfirmed.

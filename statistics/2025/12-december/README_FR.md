@@ -2,13 +2,13 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les **19 cartes** du couple validé de fichiers victimes mensuels. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
+Cette fiche reprend les **20 cartes** du couple validé de fichiers victimes mensuels. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 19 |
+| Total incidents | 20 |
 | Ransomware | 14 |
-| Data Leak | 5 |
+| Data Leak | 6 |
 | Access Sale | 0 |
 | DDoS | 0 |
 | Defacement | 0 |
@@ -34,7 +34,7 @@ Cette fiche reprend les **19 cartes** du couple validé de fichiers victimes men
 | 🇩🇿 Algérie | 1 |
 | 🇲🇦 Maroc | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## 2. Secteur normalisé
 
@@ -51,7 +51,7 @@ Cette fiche reprend les **19 cartes** du couple validé de fichiers victimes men
 | Construction / Immobilier | 1 |
 | Énergie / Services publics | 1 |
 | Commerce / E-commerce | 1 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## 3. Acteur / Groupe
 
@@ -76,8 +76,8 @@ Cette fiche reprend les **19 cartes** du couple validé de fichiers victimes men
 | Type | Incidents |
 |---|---:|
 | Ransomware | 14 |
-| Data Leak | 5 |
-| **Total** | **19** |
+| Data Leak | 6 |
+| **Total** | **20** |
 
 ## 5. Maturité des preuves
 
@@ -85,10 +85,10 @@ Cette fiche reprend les **19 cartes** du couple validé de fichiers victimes men
 |---|---:|
 | Claim - Unverified | 13 |
 | Claim - Data Sample Published | 6 |
-| **Total** | **19** |
+| **Total** | **20** |
 
 ## Lecture CTI
 
-Le volume mensuel mesure la visibilité dans les sources examinées et non l'ensemble des incidents réellement survenus. L'ajout de Yalla Tager porte le total de l'Égypte en décembre de 5 à 6 et les Data Leak de 4 à 5.
+Le volume mensuel mesure la visibilité dans les sources examinées et non l'ensemble des incidents réellement survenus. L'ajout de Yalla Tager porte le total de l'Égypte en décembre de 5 à 6 et les Data Leak de 4 à 6.
 
 **AFRINTEL** - TLP:CLEAR

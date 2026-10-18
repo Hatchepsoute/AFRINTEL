@@ -109,7 +109,7 @@ timeline
 | Incident type | Records | Share |
 |---|---:|---:|
 | Ransomware | **63** | 55.3% |
-| Data Leak | **42** | 36.8% |
+| Data Leak | **43** | 36.8% |
 | Access Sale | **3** | 2.6% |
 | DDoS | **2** | 1.8% |
 | Defacement | **2** | 1.8% |

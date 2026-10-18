@@ -6,17 +6,17 @@
 
 ## 1. Executive summary
 
-In December 2025, AFRINTEL documents **19 cyber incidents** affecting organizations and digital services across **10 African countries**.
+In December 2025, AFRINTEL documents **20 cyber incidents** affecting organizations and digital services across **10 African countries**.
 
-The landscape is dominated by **Ransomware with 14 records (73.7%)**, followed by **Data Leak with 5 (26.3%)**.
+The landscape is dominated by **Ransomware with 14 records (70.0%)**, followed by **Data Leak with 6 (30.0%)**.
 
-Geographic concentration is significant: **Egypt (6)**, **South Africa (3)**, and **Tunisia (3)** together account for **12 records, or 63.2% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
+Geographic concentration is significant: **Egypt (6)**, **South Africa (3)**, and **Tunisia (4)** together account for **13 records, or 65.0% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
-At sector level, the most represented normalized categories are **Finance / Banking (4)**, **Healthcare / Medical (3)**, **Government / Administration (2)**, **Education / University (2)** and **Manufacturing / Industry (2)**. The most frequent actor labels are `qilin` (3), `lockbit5` (3), `dragonforce` (2) and `nova` (2).
+At sector level, the most represented normalized categories are **Finance / Banking (4)**, **Healthcare / Medical (3)**, **Government / Administration (2)**, **Education / University (3)** and **Manufacturing / Industry (2)**. The most frequent actor labels are `qilin` (3), `lockbit5` (3), `dragonforce` (2) and `nova` (2).
 
 Evidence maturity remains variable: **13 records are `Claim - Unverified` and 6 are `Claim - Data Sample Published`**. AFRINTEL maintains a strict separation between observed facts, claims, corroboration, official confirmation, and technical unknowns.
 
-Compared with November, monthly volume **increases by 4 records**. The most visible changes are Ransomware 10→14 (+4), Data Leak 4→5 (+1), and Defacement 1→0 (-1).
+Compared with November, monthly volume **increases by 5 records**. The most visible changes are Ransomware 10→14 (+4), Data Leak 4→6 (+2), and Defacement 1→0 (-1).
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,9 +24,9 @@ Compared with November, monthly volume **increases by 4 records**. The most visi
 
 | Indicator | November 2025 | December 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 15 | 19 | **+4 (+26.7%)** |
+| Total incidents | 15 | 20 | **+4 (+26.7%)** |
 | Ransomware | 10 | 14 | **+4 (+40.0%)** |
-| Data Leak | 4 | 5 | **+1 (+25.0%)** |
+| Data Leak | 4 | 6 | **+2 (+50.0%)** |
 | Access Sale | 0 | 0 | **Stable** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100.0%)** |
@@ -50,7 +50,7 @@ Compared with November, monthly volume **increases by 4 records**. The most visi
 
 | Indicator | Value |
 |---|---:|
-| Documented incidents | **19** |
+| Documented incidents | **20** |
 | Countries represented | **10** |
 | Regions represented | **4** |
 | Leading country | **Egypt (6)** |
@@ -60,7 +60,7 @@ Compared with November, monthly volume **increases by 4 records**. The most visi
 | Incident type | Records | Share |
 |---|---:|---:|
 | Ransomware | 14 | 73.7% |
-| Data Leak | 5 | 26.3% |
+| Data Leak | 6 | 30.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
@@ -68,13 +68,13 @@ Compared with November, monthly volume **increases by 4 records**. The most visi
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - December 2025
     "Ransomware" : 14
-    "Data Leak" : 5
+    "Data Leak" : 6
 ```
 
 ## 4. Geographic distribution
@@ -83,7 +83,7 @@ pie showData
 |---|---:|---:|---:|
 | Egypt | **6** | 4 | 2 |
 | South Africa | **3** | 3 | 0 |
-| Tunisia | **3** | 3 | 0 |
+| Tunisia | **4** | 3 | 1 |
 | Zambia | **1** | 1 | 0 |
 | Ghana | **1** | 1 | 0 |
 | Nigeria | **1** | 1 | 0 |
@@ -91,17 +91,17 @@ pie showData
 | Algeria | **1** | 0 | 1 |
 | Morocco | **1** | 0 | 1 |
 | Kenya | **1** | 0 | 1 |
-| **Total** | **19** | **14** | **5** |
+| **Total** | **20** | **14** | **6** |
 
 ## 5. Regional distribution
 
 | Region | Records | Share |
 |---|---:|---:|
-| North Africa | 11 | 57.9% |
+| North Africa | 12 | 60.0% |
 | Southern Africa | 5 | 26.3% |
 | West Africa | 2 | 10.5% |
 | East Africa | 1 | 5.3% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 The leading region is **North Africa with 11 records (57.9%)**.
 
@@ -112,7 +112,7 @@ The leading region is **North Africa with 11 records (57.9%)**.
 | Finance / Banking | 4 | 21.1% |
 | Healthcare / Medical | 3 | 15.8% |
 | Government / Administration | 2 | 10.5% |
-| Education / University | 2 | 10.5% |
+| Education / University | 3 | 15.0% |
 | Manufacturing / Industry | 2 | 10.5% |
 | Technology / IT | 1 | 5.3% |
 | Agriculture / Agribusiness | 1 | 5.3% |
@@ -120,7 +120,7 @@ The leading region is **North Africa with 11 records (57.9%)**.
 | Construction / Real Estate | 1 | 5.3% |
 | Energy / Utilities | 1 | 5.3% |
 | Retail / E-commerce | 1 | 5.3% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 ## 7. Actors / groups
 
@@ -146,7 +146,7 @@ The leading region is **North Africa with 11 records (57.9%)**.
 |---|---:|---:|
 | Claim - Unverified | 13 | 68.4% |
 | Claim - Data Sample Published | 6 | 31.6% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 ## 9. Timeline
 
@@ -162,6 +162,7 @@ timeline
     08 December 2025 : Arkan
     11 December 2025 : Leadway Assurance / Leadway Health
     12 December 2025 : Hopital La Rabta
+    15 December 2025 : Examens.tn
     15 December 2025 : Tunisian Society of Radiology
     22 December 2025 : Polaris Parks
     24 December 2025 : National Credit Regulator
@@ -178,11 +179,11 @@ timeline
 
 ### Ransomware
 
-**14 records** are classified as Ransomware. Leading countries are Egypt (4), South Africa (3), and Tunisia (3). A leak-site listing does not itself prove encryption or complete exfiltration.
+**14 records** are classified as Ransomware. Leading countries are Egypt (4), South Africa (3), and Tunisia (4). A leak-site listing does not itself prove encryption or complete exfiltration.
 
 ### Data Leak
 
-**5 records** are classified as Data Leak. Egypt has 2, while Algeria, Morocco, and Kenya have one each. The new Yalla Tager record is a **sample-backed claim**: the supplied material is structurally coherent with customer/merchant data, but the claimed 20,000-user volume, access vector, extraction date and full provenance remain unverified.
+**6 records** are classified as Data Leak. Egypt has 2, while Algeria, Morocco, and Kenya have one each. The new Yalla Tager record is a **sample-backed claim**: the supplied material is structurally coherent with customer/merchant data, but the claimed 20,000-user volume, access vector, extraction date and full provenance remain unverified.
 
 ## 11. Notable incidents
 
@@ -196,10 +197,10 @@ timeline
 
 ## 12. Key findings and intelligence gaps
 
-- **Geographic concentration:** Egypt accounts for 6 records (31.6%), followed by South Africa (3) and Tunisia (3).
-- **Threat structure:** Ransomware remains the leading type with 14 records, followed by Data Leak (5).
+- **Geographic concentration:** Egypt accounts for 6 records (31.6%), followed by South Africa (3) and Tunisia (4).
+- **Threat structure:** Ransomware remains the leading type with 14 records, followed by Data Leak (6).
 - **Sectors:** Finance / Banking (4) and Healthcare / Medical (3) have the highest visibility; Retail / E-commerce gains one record through Yalla Tager.
-- **Evidence:** 19 records remain claims, including 6 accompanied by published samples.
+- **Evidence:** 20 records remain claims, including 6 accompanied by published samples.
 - **Yalla Tager:** the sample supports a customer/merchant-data exposure claim, but does not establish the date or method of compromise and does not validate the advertised 20,000-user total.
 
 ### Intelligence gaps
@@ -234,7 +235,7 @@ timeline
 
 ## 14. Conclusion
 
-**December 2025** contains **19 documented cyber incidents** across **10 African countries**: 14 Ransomware and 5 Data Leak. The addition of Yalla Tager increases Egypt to 6 records and raises the month’s sample-backed Data Leak component without changing the evidential requirement to distinguish observed data from claimed scope.
+**December 2025** contains **20 documented cyber incidents** across **10 African countries**: 14 Ransomware and 6 Data Leak. The addition of Yalla Tager increases Egypt to 6 records and raises the month’s sample-backed Data Leak component without changing the evidential requirement to distinguish observed data from claimed scope.
 
 👉🏾 [See monthly victims](./victims.md)
 

@@ -1,9 +1,9 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-June%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-40-critical)
+![Victims](https://img.shields.io/badge/Victims-39-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
-![Data Leaks](https://img.shields.io/badge/Data%20Leaks-20-orange)
+![Data Leaks](https://img.shields.io/badge/Data%20Leaks-19-orange)
 ![Countries](https://img.shields.io/badge/Countries%20Affected-20-blueviolet)
 ![Intel](https://img.shields.io/badge/Type-CTI%20Statistics-purple)
 
@@ -16,7 +16,9 @@
 
 These statistics cover publications observed within the AFRINTEL monitoring scope for June 2026 (1-30 June 2026). Incidents are assigned to June when they were first identified and assessed by AFRINTEL, even when the original publication date is earlier; that date remains documented in the victim card. Each record retains the status documented in its victim card.
 
-The two multi-country incidents (Convince EDR email sale, Governor LEP portal access sale) are counted as **1 incident each** in the global total of 40. In the geographic exposure table (section 2.3), each country touched by these incidents is listed individually, so country-level totals exceed 40.
+**Follow-up note — examens.tn:** the 23 June 2026 publication, signed **AshleyWood2022**, is documented as a follow-up to the initial 15 December 2025 publication. It is included for chronology but does not create an additional canonical record because no new sample, volume, fingerprint or independent access has been established.
+
+The two multi-country incidents (Convince EDR email sale, Governor LEP portal access sale) are counted as **1 incident each** in the global total of 39. In the geographic exposure table (section 2.3), each country touched by these incidents is listed individually, so country-level totals exceed 39.
 
 ---
 
@@ -24,7 +26,7 @@ The two multi-country incidents (Convince EDR email sale, Governor LEP portal ac
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 40 |
+| Total incidents | 39 |
 | Ransomware attacks | 20 |
 | Data leaks / access sales | 20 |
 | Countries affected | 20 (14 direct + 6 via multi-country incidents) |
@@ -38,8 +40,8 @@ The two multi-country incidents (Convince EDR email sale, Governor LEP portal ac
 | Incident type | Count | Percentage |
 |---|---:|---:|
 | Ransomware | 20 | 50.0% |
-| Data leaks / access sales | 20 | 50.0% |
-| **Total** | **40** | **100%** |
+| Data leaks / access sales | 19 | 48.7% |
+| **Total** | **39** | **100%** |
 
 ```mermaid
 pie showData
@@ -72,7 +74,7 @@ These 38 incidents have a single identified victim country. The 2 multi-country 
 | 🇹🇿 Tanzania | 1 |
 | 🇾🇹 Mayotte | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Subtotal (direct)** | **38** |
+| **Subtotal (direct)** | **37 |
 
 ```mermaid
 xychart
@@ -84,7 +86,7 @@ xychart
 
 ### 2.2 Geographic exposure from multi-country incidents
 
-2 incidents affected multiple countries simultaneously through credential/portal-access sales. Each is counted once in the global total of 40 but exposes several countries.
+2 incidents affected multiple countries simultaneously through credential/portal-access sales. Each is counted once in the global total of 39 but exposes several countries.
 
 | Incident | Actor | Countries affected (African scope) |
 |---|---|---|
@@ -95,7 +97,7 @@ xychart
 
 ### 2.3 Total geographic exposure (all 20 countries)
 
-> The "Multi-country exposure" column counts how many times a country appears in the two credential-sale incidents. Column sums exceed 40 because multi-country incidents touch several countries simultaneously.
+> The "Multi-country exposure" column counts how many times a country appears in the two credential-sale incidents. Column sums exceed 39 because multi-country incidents touch several countries simultaneously.
 
 | Country | Direct incidents | Multi-country exposure | Total exposure |
 |---|---:|---:|---:|
@@ -119,7 +121,7 @@ xychart
 | 🇲🇼 Malawi | 0 | 1 (Governor) | 1 |
 | 🇩🇿 Algeria | 0 | 1 (Governor) | 1 |
 | 🇸🇱 Sierra Leone | 0 | 1 (Governor) | 1 |
-| **Total** | **38 direct incidents** | **15 country exposures** | **20 distinct countries** |
+| **Total** | **37 direct incidents** | **15 country exposures** | **20 distinct countries** |
 
 ---
 
@@ -141,10 +143,10 @@ xychart
 | 🇹🇿 Tanzania | 0 | 1 | 1 |
 | 🇾🇹 Mayotte | 1 | 0 | 1 |
 | 🇰🇪 Kenya | 1 | 0 | 1 |
-| **Subtotal (direct)** | **20** | **18** | **38** |
+| **Subtotal (direct)** | **19** | **17** | **37** |
 | 🌍 Convince (multi-country) | 0 | 1 | 1 |
 | 🌍 Governor (multi-country) | 0 | 1 | 1 |
-| **Total** | **20** | **20** | **40** |
+| **Total** | **20** | **19** | **39** |
 
 ### Ransomware by country
 
@@ -180,14 +182,14 @@ xychart
 | Indian Ocean | 🇲🇺 Mauritius, 🇾🇹 Mayotte | 2 | 0 |
 | Not otherwise direct victims | 🇪🇹 Ethiopia, 🇦🇴 Angola, 🇿🇲 Zambia, 🇲🇼 Malawi, 🇩🇿 Algeria, 🇸🇱 Sierra Leone | 0 | +7 (see section 2.3) |
 
-> Multi-country incidents are counted once in the global total of 40. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 20 across 6 regions, including 6 countries exposed only via credential sales.
+> Multi-country incidents are counted once in the global total of 39. The "Multi-country exposure" column shows additional country-level touches from those incidents. Total distinct countries: 20 across 6 regions, including 6 countries exposed only via credential sales.
 
 ```mermaid
 xychart
     title "Direct incidents by region - June 2026"
     x-axis ["North Africa","Southern Africa","West Africa","Central Africa","East Africa","Indian Ocean"]
     y-axis "Direct incidents" 0 --> 22
-    bar [20,8,5,1,2,2]
+    bar [19,8,5,1,2,2]
 ```
 
 ---
@@ -198,7 +200,7 @@ xychart
 |---|---:|---:|
 | Government / Administration | 12 | 30.0% |
 | Finance / Banking | 6 | 15.0% |
-| Education / University | 4 | 10.0% |
+| Education / University | 3 | 10.0% |
 | E-commerce / Retail | 4 | 10.0% |
 | Healthcare / Medical | 3 | 7.5% |
 | Transport / Logistics | 2 | 5.0% |
@@ -210,7 +212,7 @@ xychart
 | Food / Beverage | 1 | 2.5% |
 | Business Services / Technology | 1 | 2.5% |
 | Security Services | 1 | 2.5% |
-| **Total** | **40** | **100%** |
+| **Total** | **39** | **100%** |
 
 ```mermaid
 xychart
@@ -233,7 +235,7 @@ xychart
 | Krybit | 2 | Ransomware / data published |
 | 404Crew Cyber Team | 2 | Data leaks (coalition and solo) |
 | EvaN47 | 2 | Data leaks (Libya) |
-| Records outside displayed ranking | 18 | Mixed |
+| Records outside displayed ranking | 17 | Mixed |
 
 ```mermaid
 xychart
@@ -253,7 +255,7 @@ Morocco recorded **9 incidents**, its highest monthly total in 2026, of which **
 
 ### 7.2 Ransomware regains ground
 
-Ransomware listings reached **50% of incidents (20/40)**, up from 28.1% in the [May victim dataset](../../../CyberAttackAfrica/2026/05-may/victims.md). One month is insufficient to establish a durable change in actor behaviour, but the geographic spread of DeadLock and LockBit 5 warrants monitoring.
+Ransomware listings reached **51.3% of incidents (20/39)**, up from 28.1% in the [May victim dataset](../../../CyberAttackAfrica/2026/05-may/victims.md). One month is insufficient to establish a durable change in actor behaviour, but the geographic spread of DeadLock and LockBit 5 warrants monitoring.
 
 ### 7.3 High-sensitivity fintech exposure
 
@@ -290,6 +292,6 @@ EvaN47 published records concerning the Ministry of Technical and Vocational Edu
 
 ## 9. Conclusion
 
-June 2026 recorded **40 incidents** concerning **20 distinct countries** when direct incidents and multi-country exposures are combined, compared with 57 records in May (-17; -29.8%). Ransomware listings and disclosures increased from 16 to 20 (+25.0%), while data leaks and access sales decreased from 41 to 20 (-51.2%). Morocco accounted for 9 of the 38 direct records; two additional records were multi-country. The Jeroid.co publication and Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
+June 2026 recorded **39 incidents** concerning **20 distinct countries** when direct incidents and multi-country exposures are combined, compared with 57 records in May (-17; -29.8%). Ransomware listings and disclosures increased from 16 to 20 (+25.0%), while data leaks and access sales decreased from 41 to 19 (-51.2%). Morocco accounted for 9 of the 37 direct records; two additional records were multi-country. The Jeroid.co publication and Nigerian Army credential publication are among the highest-sensitivity cases in the June dataset.
 
 **AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)

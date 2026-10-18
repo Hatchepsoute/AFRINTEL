@@ -8,7 +8,7 @@
 
 ## 1. Scope and source
 
-This statistical view is aligned with the validated bilingual 2025 victim corpus and contains **226 canonical incidents across 31 represented African countries**. Country and regional views count **227 geographic occurrences** because one multi-country card is counted once in the canonical total. One canonical card equals one documented cyber incident; cases under investigation remain outside the statistics. Incident type, evidence status, confidence and impact are separate dimensions.
+This statistical view is aligned with the validated bilingual 2025 victim corpus and contains **227 canonical incidents across 31 represented African countries**. Country and regional views count **228 geographic occurrences** because one multi-country card is counted once in the canonical total. One canonical card equals one documented cyber incident; cases under investigation remain outside the statistics. Incident type, evidence status, confidence and impact are separate dimensions.
 
 ## 2. Monthly evolution
 
@@ -26,9 +26,9 @@ This statistical view is aligned with the validated bilingual 2025 victim corpus
 | October | 20 |
 | November | 16 |
 | December | 19 |
-| **Canonical total** | **226** |
+| **Canonical total** | **227** |
 
-H1 contains **111** records and H2 **115**.
+H1 contains **111** records and H2 **116**.
 
 ## 3. Distribution by country
 
@@ -77,7 +77,7 @@ H1 contains **111** records and H2 **115**.
 | East Africa | 26 | 11.6% |
 | Central Africa | 5 | 2.2% |
 | Indian Ocean | 5 | 2.2% |
-| **Total geographic occurrences** | **227** | **100%** |
+| **Total geographic occurrences** | **228** | **100%** |
 
 ## 5. Sector distribution
 
@@ -102,14 +102,14 @@ H1 contains **111** records and H2 **115**.
 | Energy / Utilities | 3 | 1.3% |
 | Hospitality / Tourism | 1 | 0.4% |
 | Legal | 1 | 0.4% |
-| **Canonical total** | **226** | **100%** |
+| **Canonical total** | **227** | **100%** |
 
 ## 6. Incident classification
 
 | Type | Records | Share |
 |---|---:|---:|
 | Ransomware | 121 | 53.8% |
-| Data Leak | 82 | 36.3% |
+| Data Leak | 83 | 36.3% |
 | Access Sale | 6 | 2.7% |
 | DDoS | 3 | 1.3% |
 | Defacement | 4 | 1.8% |
@@ -117,7 +117,7 @@ H1 contains **111** records and H2 **115**.
 | System Intrusion | 3 | 1.3% |
 | Malware | 1 | 0.4% |
 | Operational Fraud | 0 | 0.0% |
-| **Canonical total** | **226** | **100%** |
+| **Canonical total** | **227** | **100%** |
 
 ### Aggregate exposure view
 
@@ -137,7 +137,7 @@ This analytical view (`82 + 6`) is not an additional incident category.
 | Victim/Government/Authority Confirmed | 14 | 6.2% |
 | Corroborated / Secondary evidence | 10 | 4.4% |
 | Attempted | 2 | 0.9% |
-| **Canonical total** | **226** | **100%** |
+| **Canonical total** | **227** | **100%** |
 
 ## 8. Most visible actor / group labels
 
@@ -158,10 +158,10 @@ This analytical view (`82 + 6`) is not an additional incident category.
 
 ## 9. Interpretation
 
-The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. Adding the Comoros–Cameroon multi-country incident raises the annual corpus from 225 to **226 canonical incidents**, Data Leak from 81 to **82**, Government / Administration from 51 to **52**, and geographic occurrences to **227**.
+The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. Adding the Comoros–Cameroon multi-country incident raises the annual corpus from 225 to **227 canonical incidents**, Data Leak from 81 to **83**, Government / Administration from 51 to **52**, and geographic occurrences to **228**.
 
 ## Conclusion
 
-The validated 2025 statistical baseline is **226 canonical incidents**. Country and regional views total **227 geographic occurrences** because of the Comoros–Cameroon multi-country card; sector, actor, evidence and incident-type views remain based on the 226 canonical cards.
+The validated 2025 statistical baseline is **227 canonical incidents**. Country and regional views total **228 geographic occurrences** because of the Comoros–Cameroon multi-country card; sector, actor, evidence and incident-type views remain based on the 227 canonical cards.
 
 **AFRINTEL** - TLP:CLEAR

@@ -493,30 +493,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 
 
-#### 🇹🇳 Tunisie - Examens.tn
-
-- **Acteur / Groupe :** AshleyWood2022
-- **Secteur :** Education / University
-- **Statut :** Data Fully Published
-- **Type d'incident :** Fuite de données
-- **Site web :** [examens.tn](https://examens.tn/)
-
-- **Description :**
-
-Examens.tn est une plateforme éducative tunisienne proposant des cours, exercices et ressources de préparation aux examens destinés aux élèves et aux enseignants.
-
-- **Analyse :**
-
-L’acteur `AshleyWood2022` a publié la base de données complète de la plateforme. La divulgation comprend le dump `examens.sql` d’environ **717 Mo**, ainsi que les exports `wp_users` et `wp_usermeta`.
-
-L’analyse des CSV confirme l’exposition de **3 697 comptes utilisateurs** et de **74 891 entrées de métadonnées**. Les données comprennent les identifiants de connexion, adresses e-mail, noms d’affichage, empreintes de mots de passe WordPress, états de compte, informations liées aux paiements et rôles utilisateurs, dont un compte administrateur.
-
-Des jetons de session, jetons de réinitialisation de mot de passe, données OAuth Google Site Kit et un mot de passe applicatif figurent également dans les métadonnées. Cette exposition augmente les risques de phishing ciblé, de credential stuffing et de compromission de comptes.
-
-- **Conseils :**
-
-1. Réinitialiser les mots de passe, révoquer les sessions, jetons de récupération, accès OAuth et mots de passe applicatifs exposés, puis activer l’authentification multifacteur pour les comptes privilégiés.
-2. Identifier et corriger le vecteur de compromission, analyser les journaux WordPress et serveur, puis surveiller les connexions anormales et informer les utilisateurs concernés.
+> **Suivi reclassé :** la publication initiale est rattachée au corpus de décembre 2025 sur la base de l'horodatage affiché au 15 décembre 2025. Une publication distincte observée le 23 juin 2026 à 14:21, intitulée « FREE Tunisia Database Source: examens.tn », est également signée **AshleyWood2022** et affiche un échantillon, tandis que le téléchargement reste masqué ou inaccessible. Cette observation confirme un suivi public en juin 2026 par le même pseudonyme, mais ne démontre pas à elle seule une nouvelle compromission : aucun nouvel acteur, nouvel échantillon vérifié, nouvelle empreinte, volume distinct ou accès indépendant n'est établi. Elle est donc conservée comme suivi de publication et ne constitue pas une fiche canonique supplémentaire. Les hypothèses restent ouvertes : mise à jour ou republication de la même fuite, nouvelle attaque par le même acteur, ou vulnérabilité persistante non corrigée.
 ---
 ### 25 Juin 2026
 #### 🇲🇦 Maroc - MG Maroc
