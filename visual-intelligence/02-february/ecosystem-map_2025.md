@@ -1,4 +1,4 @@
-# AFRINTEL 2025 – CTI Ecosystem strategic map
+# AFRINTEL 2025 - CTI Ecosystem strategic map
 👉🏾 [**French version available here**](./ecosystem-map_2025_fr.md)
 
 This map provides a **readable and synthetic view** of the cyberattack landscape in Africa for the year 2025, focusing on:

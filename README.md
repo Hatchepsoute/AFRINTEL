@@ -92,7 +92,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 **2024 corrected baseline:** **121 canonical incidents across 31 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
 
-**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros–Cameroon multi-country card.
+**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros-Cameroon multi-country card.
 
 ---
 

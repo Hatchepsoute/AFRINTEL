@@ -249,7 +249,7 @@ Les principales publications ou observations de septembre sont datées des 1er, 
 ```mermaid
 timeline
     title Collecte et publications  -  septembre 2026
-    01 septembre : Intégration des incidents historiques de janvier–août
+    01 septembre : Intégration des incidents historiques de janvier-août
     01 septembre : Publications ransomware
     03 septembre : MDCN  -  Nigeria
     04 septembre : Données attribuées à Madinaty  -  Égypte

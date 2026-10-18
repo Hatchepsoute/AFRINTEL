@@ -249,7 +249,7 @@ The main September publications or observations are dated 1, 3, 4, 6, 7, 9, 12, 
 ```mermaid
 timeline
     title Collection and publication timeline - September 2026
-    01 September : January–August historical incidents integrated for retrospective tracking
+    01 September : January-August historical incidents integrated for retrospective tracking
     01 September : Ransomware publications
     03 September : MDCN - Nigeria
     04 September : Madinaty-attributed data - Egypt

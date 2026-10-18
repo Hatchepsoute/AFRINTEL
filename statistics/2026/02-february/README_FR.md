@@ -93,7 +93,7 @@ Les indicateurs consolidés présentés ci-dessous offrent une lecture stratégi
 
 # 📊 Visual intelligence layer
 
-## 🗺️ Heatmap – État des lieux de l'intensité de la menace régionale
+## 🗺️ Heatmap - État des lieux de l'intensité de la menace régionale
 
 ```mermaid
 flowchart TB

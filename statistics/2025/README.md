@@ -158,10 +158,10 @@ This analytical view (`82 + 6`) is not an additional incident category.
 
 ## 9. Interpretation
 
-The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. Adding the Comoros–Cameroon multi-country incident raises the annual corpus from 225 to **227 canonical incidents**, Data Leak from 81 to **83**, Government / Administration from 51 to **52**, and geographic occurrences to **228**.
+The distribution measures AFRINTEL visibility, not the prevalence of all real-world compromises. Adding the Comoros-Cameroon multi-country incident raises the annual corpus from 225 to **227 canonical incidents**, Data Leak from 81 to **83**, Government / Administration from 51 to **52**, and geographic occurrences to **228**.
 
 ## Conclusion
 
-The validated 2025 statistical baseline is **227 canonical incidents**. Country and regional views total **228 geographic occurrences** because of the Comoros–Cameroon multi-country card; sector, actor, evidence and incident-type views remain based on the 227 canonical cards.
+The validated 2025 statistical baseline is **227 canonical incidents**. Country and regional views total **228 geographic occurrences** because of the Comoros-Cameroon multi-country card; sector, actor, evidence and incident-type views remain based on the 227 canonical cards.
 
 **AFRINTEL** - TLP:CLEAR
