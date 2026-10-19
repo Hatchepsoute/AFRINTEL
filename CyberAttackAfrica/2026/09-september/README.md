@@ -21,16 +21,16 @@ The collection corpus goes from **29 records in August to 41 records in the Sept
 
 South Africa accounts for **16 records (39.0%)**, followed by Egypt with 7, and Morocco and Kenya with 3 each. Health and Government / Administration each appear in five records after cautious sector normalization.
 
-Evidence maturity is heterogeneous: **14 records** are `Claim - Unverified`, **11** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses are normalized from the detailed card labels and do not automatically prove complete exfiltration.
+Observation status is heterogeneous: **14 records** are `Claim - Unverified`, **11** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
 
 ### CTI reading to retain
 
 - The increase from **29 to 41 records** mainly reflects expanded collection and consolidation, not a demonstrated increase in real compromises.
 - The **29 September publications** are dominated by ransomware labels, but most remain at the claim or published-sample stage.
-- The most useful evidence consists of structured samples or released sets that were actually examined; this strengthens the assessment of a documentary link without automatically proving the access vector, complete exfiltration or encryption.
+- The most useful observations consist of structured samples or released sets that were actually examined; this strengthens the assessment of a documentary link without automatically establishing the access vector, complete exfiltration or encryption.
 - Defensive priorities are the protection of identities and sensitive documents, monitoring of exports and privileged accounts, and prevention of payment fraud and impersonation.
 
-The statuses must be read through three separate distinctions: **observed publication**, **sample or data examined**, and **confirmed compromise**. These levels are not interchangeable.
+The statuses must be read through three separate distinctions: **observed publication**, **visible sample or released data**, and **public confirmation**. These levels are not interchangeable.
 
 ## 2. Collection-corpus gap: August / September 2026
 
@@ -58,11 +58,13 @@ xychart-beta
 - Editorial source: the validated `victims_FR.md` / `victims.md` pair.
 - One card represents one canonical incident documented in the September folder; the corpus also contains 12 earlier incidents integrated for retrospective tracking.
 - For incidents predating the collection month, the AFRINTEL discovery/integration date is kept separately from the historical incident and publication dates. No discovery/integration field is added to incidents from the current collection month.
-- A claim published on a criminal site or forum is not treated as technical confirmation without additional evidence.
+- A claim published on a ransomware site, leak site or underground forum is recorded as a monitoring observation. It is not automatically treated as a confirmed compromise.
 - Samples and screenshots were handled in minimized form; no raw personal data, credentials, secrets or tokens are reproduced.
 - Secondary effects do not automatically create a second record.
 
-Ransomware-group sites, leak sites and underground forums are treated as **primary observation sources**: they document a publication, displayed account, date, deadline or visible sample. Their content is not treated as official confirmation. Confidence may nevertheless increase when a sample has been reviewed and shows documentary or structural consistency; attribution, access vector, completeness and encryption remain separate dimensions.
+Ransomware-group sites, leak sites and underground forums are treated as **primary monitoring sources**: they document a listed victim, displayed account, publication date, deadline, visible sample or released data. Their content is not treated as official confirmation. A visible sample may support a documentary link, but attribution, access vector, completeness, encryption and the fate of the negotiation remain separate dimensions.
+
+The appearance of a victim, the publication of a sample, the expiry of a deadline and the later release of data are separate events. When no data is visible after a deadline, AFRINTEL records only that no public release was observed at the last check. Payment, negotiation, removal, resale or transfer are not inferred without specific public information and remain `unknown` by default.
 
 ## 4. Cohorts and incident types
 
