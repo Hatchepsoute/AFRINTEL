@@ -92,6 +92,18 @@ Un dossier publié le 27 septembre et revu le 8 octobre reste une publication de
 | Victim / Government Confirmed | Confirmation publique d’une organisation ou d’une autorité | Vecteur et étendue peuvent rester inconnus      |
 | Corroborated                  | Plusieurs éléments publics concordants                 | N'établit pas tous les effets revendiqués         |
 
+### 1.2.1. Profondeur documentaire complémentaire
+
+Pour éviter de confondre statut et profondeur d'analyse, le rapport utilise aussi une échelle descriptive :
+
+| Niveau | Description | Ce qui ne peut pas être déduit |
+|---|---|---|
+| P0 - Publication observée | Victime, domaine, compte ou menace affiché à un instant donné | Intrusion, authenticité des données ou responsabilité technique |
+| P1 - Échantillon visible ou examiné | Extrait, image ou structure de fichiers cohérente avec l'organisation | Source technique certaine, volume total, personnes uniques ou chiffrement |
+| P2 - Lot publié examiné | Lot rendu accessible lors de la collecte et caractérisé localement | Exhaustivité de l'exfiltration, accès initial, restauration ou paiement |
+
+Cette échelle complète les statuts AFRINTEL et ne les remplace pas. Une exposition tierce peut être confirmée au niveau de l'exposition sans établir une intrusion directe chez l'organisation nommée.
+
 ## 1.3. Règles de traitement
 
 - Déduplication : chaque victime apparaît une seule fois, malgré la double version linguistique des fichiers.

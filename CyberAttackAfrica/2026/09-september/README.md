@@ -66,6 +66,18 @@ Ransomware-group sites, leak sites and underground forums are treated as **prima
 
 The appearance of a victim, the publication of a sample, the expiry of a deadline and the later release of data are separate events. When no data is visible after a deadline, AFRINTEL records only that no public release was observed at the last check. Payment, negotiation, removal, resale or transfer are not inferred without specific public information and remain `unknown` by default.
 
+### 3.1 Additional documentary-depth scale
+
+To avoid conflating public status with analytical depth, the report also uses this descriptive scale:
+
+| Level | Description | What cannot be inferred |
+|---|---|---|
+| P0 - Publication observed | Victim, domain, account or threat displayed at a given time | Intrusion, data authenticity or technical responsibility |
+| P1 - Visible or reviewed sample | Extract, image or file structure consistent with the organisation | Certain technical source, total volume, unique persons or encryption |
+| P2 - Published batch reviewed | Batch made accessible during collection and characterised locally | Completeness of exfiltration, initial access, restoration or payment |
+
+This scale complements AFRINTEL statuses and does not replace them. A third-party exposure may be confirmed at the exposure level without establishing a direct intrusion at the named organisation.
+
 ## 4. Cohorts and incident types
 
 ### 4.1 September-dated publications: 29 records
@@ -280,6 +292,8 @@ The September subset should be read as a corpus of publications and observations
 For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claimed values when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
 
 Full details, sources and limitations for each case are retained in the [French victim cards](./victims_FR.md) and [English victim cards](./victims.md).
+
+Selected measurements from the reviewed cases illustrate the limits of claimed volumes. The SEPE sample contains **1,189 local files**, including **111 JSON files**, totalling **544,921,521 bytes**, while the publication claims **364,841 files**, **110,021 users** and **179 GB**. The FCT-IRS PDF contains **2,541 email-pattern matches**, **2,540 distinct textual values** and **61 Nigerian phone-pattern matches**; these are technical matches, not affected-person counts. Apollo 21 and ARCA references to **400 GB** and **400G** remain actor claims, not measured equivalent datasets.
 
 ### 9.1 Ransomware publication lifecycle
 
