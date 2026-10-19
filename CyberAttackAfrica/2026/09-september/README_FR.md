@@ -475,11 +475,17 @@ Les priorités suivantes concernent la vérification et la prévention du risque
 
 13. Réviser les statuts au fil des nouvelles observations. Une forte ressemblance documentaire ne devient pas automatiquement un incident confirmé.
 
-## 8.2. Évaluation analytique de fin de période
+## 8.2. Conclusion analytique
 
-À partir des seules pièces fournies, septembre apparaît comme un mois fortement chargé en publications d’extorsion et de divulgation, dont la majorité reste au stade d’annonce non vérifiée. Les documents effectivement examinés démontrent surtout une exposition potentielle de catégories de données sensibles et des liens documentaires avec certaines organisations. Ils ne permettent pas d’établir une campagne technique commune, un vecteur dominant, une progression du nombre réel d’attaques par rapport à août, ni les montants globalement extorqués.
+Le corpus de septembre 2026 rassemble 29 publications datées du mois et 12 incidents antérieurs intégrés au suivi, soit 41 fiches au total. Il reflète l’activité de monitoring AFRINTEL sur les sites de groupes ransomware, les leak sites et les forums underground. Il ne constitue ni un décompte des intrusions réellement survenues en septembre, ni une mesure exhaustive de la cybercriminalité africaine.
 
-Pour le management, la décision la plus rentable est de traiter les publications comme des signaux de priorisation des actifs et des contrôles de fraude. Pour le SOC, elle consiste à corréler les exports, accès aux dépôts, comptes privilégiés et modifications de partage. Pour la CTI, elle consiste à faire progresser la qualification des preuves sans diffuser de données sensibles.
+Les publications observées sont majoritairement associées à des revendications ransomware. Certaines comportent des échantillons visibles ou des données mises à disposition, tandis que quelques dossiers disposent d’une confirmation publique d’accès ou d’incident. Ces niveaux d’observation restent distincts de l’exhaustivité de l’exfiltration, du vecteur initial, du chiffrement, du paiement d’une rançon et de l’impact opérationnel.
+
+La collecte ne permet pas d’identifier une campagne technique commune, un vecteur dominant ou une progression réelle du nombre d’attaques par rapport à août. Elle met toutefois en évidence des risques récurrents pour les identités, les documents administratifs, les données financières, les espaces documentaires et les relations fournisseurs. Ces risques justifient une validation ciblée des actifs, des accès privilégiés, des exports, des partages externes et des contrôles contre la fraude au paiement.
+
+Pour les organisations concernées, la priorité est de traiter une publication underground comme un signal de vérification et de préparation, sans attendre une divulgation complète et sans conclure automatiquement à une compromission. Pour la CTI, le suivi doit rester centré sur l’évolution de la fiche victime, les échantillons, les échéances, les divulgations éventuelles, les confirmations publiques et les republications. Les paiements, négociations, retraits, reventes et transferts restent inconnus lorsqu’aucune information publique spécifique ne permet de les qualifier.
+
+Ce rapport fournit ainsi une base de veille documentée et exploitable pour la priorisation défensive. Il doit être mis à jour lorsque le statut public d’une victime évolue, sans transformer une observation underground en confirmation technique ou institutionnelle.
 
 # Annexe A - Registre des 29 publications de septembre
 
@@ -584,16 +590,20 @@ Corpus = 41 fiches uniques. Cohorte de septembre = 29 (70,7 % de 41) ; antérieu
 
 ## D.3. Sources documentaires
 
-**\[F1\] Corpus primaire (EN) :** « victims(20261017-132254).md », titre : List of African cyberattack victims in September 2026 (41 records), fourni par l’utilisateur.
+**\[F1\] Corpus de veille EN :** `victims.md`, titre : List of African cyberattack victims in September 2026 (41 records), version anglaise du corpus AFRINTEL.
 
-**\[F2\] Corpus primaire (FR) :** « victims_FR(20261017-132254).md », titre : Liste des victimes africaines de cyberattaques en septembre 2026 (41 fiches), fourni par l’utilisateur.
+**\[F2\] Corpus de veille FR :** `victims_FR.md`, titre : Liste des victimes africaines de cyberattaques en septembre 2026 (41 fiches), version française du corpus AFRINTEL.
 
-Les deux pièces constituent des versions parallèles du même corpus ; elles ne sont pas comptées comme deux sources indépendantes de corroboration. Les captures, échantillons, manifestes externes et éventuels classeurs mentionnés dans les fiches ne font pas partie des deux pièces jointes et n’ont pas été réexaminés directement ici.
+Les fichiers F1 et F2 sont deux versions linguistiques du même corpus AFRINTEL. Ils ne constituent pas deux sources indépendantes et ne sont pas comptés comme deux éléments de corroboration.
 
-Les sites institutionnels, communiqués, liens médias et autres références signalés dans \[F1\]/\[F2\] sont attribués aux fiches sources. Ce rapport n’a pas réalisé de validation complémentaire des liens ou des mises à jour publiques apparues après la date de collecte indiquée.
+Le corpus est produit à partir du monitoring des sites de groupes ransomware, leak sites et forums underground. Ces plateformes constituent les sources primaires d’observation des publications, victimes affichées, échantillons, échéances et divulgations éventuelles.
+
+Les captures, échantillons, manifestes externes et éventuels classeurs mentionnés dans les fiches ne sont pas intégrés aux fichiers F1/F2. Le présent rapport reprend les informations documentées dans les fiches et ne prétend pas avoir réexaminé chaque artefact brut.
+
+Les sites institutionnels, communiqués, liens médias et autres références signalés dans \[F1\]/\[F2\] sont conservés comme contexte associé aux fiches. Aucune validation complémentaire n’a été réalisée pour ce rapport après la date de collecte indiquée.
 
 ## D.4. Checklist de révision éditoriale
 
-Contrôler systématiquement les trois dates (incident, publication, découverte), documenter toute confirmation par une preuve, fusionner les republications et limiter les divulgations à des informations agrégées.
+Contrôler systématiquement les dates d’incident, de publication et de découverte lorsqu’elles sont disponibles ; distinguer les publications de victimes, les échantillons, les divulgations et les absences de publication ; fusionner uniquement les republications d’un même événement ; documenter tout statut de confirmation publique avec sa source et sa date ; conserver les champs de paiement, négociation et revente à `unknown` lorsqu’aucun élément public ne permet de les qualifier ; limiter les informations publiées à des données agrégées et minimisées.
 
 **FIN DU RAPPORT • AFRINTEL / SEPTEMBRE 2026**
