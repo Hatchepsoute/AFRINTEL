@@ -118,6 +118,8 @@
 
   Après extraction, l'archive analysée occupe environ **4 Go** et contient **1 155 dossiers regroupant 3 465 éléments**, soit exactement trois éléments par dossier. La structure repose sur les informations d'inscription, les métadonnées de certificats et une attestation PDF.
 
+  Le corpus local transmis pour analyse contient **4 644 fichiers** pour environ **3,94 Go** : **3 476 JSON**, **1 165 PDF** et **3 JPG** comprenant notamment une capture de la publication et des exemples d'attestations. Le fichier `full-details.json` est un tableau de **1 155 enregistrements** avec 13 champs structurés. Les 1 155 identifiants d'inscription sont distincts ; le corpus contient 2 identifiants de centre, 33 identifiants de formation et 1 031 dates de naissance distinctes. Ces valeurs décrivent des enregistrements et des champs observés, pas un nombre de personnes uniques.
+
   Les fichiers details.json contiennent notamment l'identifiant d'inscription, la civilité, le nom complet, la CIN lorsqu'elle est renseignée, la date et le lieu de naissance, l'adresse et le téléphone lorsqu'ils sont présents, la formation, le centre et la date d'inscription. Les certificates.json contiennent les identifiants de certificats reliés aux inscriptions, le nom, la CIN lorsqu'elle est renseignée, la date du certificat, l'année et l'horodatage de création. Une inscription peut avoir plusieurs certificats.
 
   Des attestations PDF de dossiers distincts reprennent des informations cohérentes avec les JSON : identité, CIN, date et lieu de naissance, formation, année, durée, date de délivrance, numéro d'attestation et QR code de vérification. Cette corrélation constitue une **forte corroboration interne** de l'origine opérationnelle d'une partie importante des données et de leur association avec Centre Atlantique Formation.
@@ -140,7 +142,7 @@
 7. Surveiller phishing, usurpation, fraude documentaire et usage de certificats.
 8. Auditer la vérification des attestations contre l'énumération par QR code ou identifiant.
 
-- **Sources / Éléments de preuve :** publication xNov sur un forum underground (6 septembre 2026), relais et capture Telegram fournis (6 septembre 2026), contact direct avec xNov via son canal Telegram concernant le prix demandé, analyse AFRINTEL de l'archive et des dossiers extraits.
+- **Sources / Éléments observés :** publication xNov sur un forum underground (6 septembre 2026), relais et capture Telegram fournis (6 septembre 2026), contact direct avec xNov via son canal Telegram concernant le prix demandé, analyse AFRINTEL de l'archive et du corpus local extrait. Les fichiers bruts restent hors dépôt.
 
 
 ### 09 septembre 2026
@@ -459,15 +461,15 @@ last_checked_at: 2026-09-27
 
   **Unknown :** l'origine et la date de création du document, son caractère réellement non public, son authenticité technique indépendante, le système ou l'organisation d'origine, le vecteur et la date de tout accès non autorisé, la disponibilité et le volume des fichiers revendiqués, les catégories réellement exposées au-delà de la page lisible, le nombre de personnes concernées, tout chiffrement ou interruption d'activité, les confirmations officielles, toute négociation, tout paiement et toute revente.
 
-- **Périmètre de l'analyse :** **deux captures fournies pour cette vérification** : (1) une fiche de revendication INC Ransom présentant des vignettes documentaires ; (2) une page de spécifications Pharma 5 (`1/5`) en résolution lisible. Les vignettes ne sont pas des fichiers sources vérifiés et aucune des autres pages du document n'a été fournie. Les empreintes SHA-256 ci-dessous concernent **les deux fichiers image reçus**, pas les originaux présumés exfiltrés. Aucun nom, courriel, numéro personnel ou document brut n'est reproduit dans la présente fiche.
+- **Périmètre de l'analyse :** quatre fichiers image étaient présents dans le dossier local fourni. Trois fichiers concernent la publication Pharma 5 ou son échantillon (`12.jpg`, `13.jpg` et `Capture d’écran du 2026-09-28 11-22-02.png`) ; ils montrent des vues complémentaires ou répétées de la revendication et d'une page de spécifications marquée `1/5`. Le fichier `1.png` a été exclu de cette analyse car il présente une publication relative à **atlantique.ma / Centre Atlantique**, sans lien établi avec Pharma 5. Les vignettes ne sont pas des fichiers sources vérifiés et aucune des autres pages du document n'a été fournie. Les empreintes SHA-256 ci-dessous concernent les copies reçues, pas les originaux présumés exfiltrés. Aucun nom, courriel, numéro personnel ou document brut n'est reproduit dans la présente fiche.
 
-- **Évaluation des risques :** La divulgation d'une page comprenant des personnes de contact et les rôles d'acteurs de la chaîne d'approvisionnement pourrait alimenter du **phishing ciblé**, des fraudes au fournisseur/changement de RIB (BEC) ou des tentatives d'ingénierie sociale. Si les autres catégories revendiquées sont authentiques, des risques additionnels toucheraient la confidentialité commerciale, le contrôle qualité et les partenaires. **Aucun dossier médical de patient, aucun secret de fabrication ni aucune altération de médicament ne sont établis** par les deux captures.
+- **Évaluation des risques :** La divulgation d'une page comprenant des personnes de contact et les rôles d'acteurs de la chaîne d'approvisionnement pourrait alimenter du **phishing ciblé**, des fraudes au fournisseur/changement de RIB (BEC) ou des tentatives d'ingénierie sociale. Si les autres catégories revendiquées sont authentiques, des risques additionnels toucheraient la confidentialité commerciale, le contrôle qualité et les partenaires. **Aucun dossier médical de patient, aucun secret de fabrication ni aucune altération de médicament ne sont établis** par les trois fichiers Pharma 5 examinés.
 
 - **Recommandations SOC/CTI :** préserver l'original de chaque capture et ses métadonnées ; vérifier hors ligne la provenance, la date et l'empreinte du document de spécifications dans les référentiels internes autorisés ; rechercher les accès inhabituels aux espaces qualité/achats et aux partages fournisseurs ; valider hors bande tout changement d'instructions de paiement ; sensibiliser les contacts professionnels potentiellement exposés ; suivre d'éventuelles publications supplémentaires sans acquérir ni redistribuer les données.
 
-- **Sources / Éléments de preuve :** deux captures communiquées à AFRINTEL en octobre 2026 (publication criminelle affichée du 25 septembre) ; recoupements publics [Pharma 5](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf), [MEDILIFE S.R.L.](https://www.ufficiocamerale.it/9842/medilife-srl), [JQC Pharmaceutical](https://www.jqcpharm.com/en/index.php/Product) ; [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) et [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) pour la couverture publique de la revendication. **Les correspondances publiques n'établissent pas une compromission.**
+- **Sources / Éléments observés :** dossier local fourni à AFRINTEL en octobre 2026, comprenant trois images relatives à la publication Pharma 5 et un fichier exclu car relatif à atlantique.ma / Centre Atlantique ; recoupements publics [Pharma 5](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf), [MEDILIFE S.R.L.](https://www.ufficiocamerale.it/9842/medilife-srl), [JQC Pharmaceutical](https://www.jqcpharm.com/en/index.php/Product) ; [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) et [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) pour la couverture publique de la revendication. Les fichiers bruts restent hors dépôt. **Les correspondances publiques n'établissent pas une compromission.**
 
-- **Traçabilité des captures (SHA-256) :** `1.png` = `27d9e3d2da239eb4d77495fa37482cab0c665b4447589efa1967c9e4e542b078` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. Empreintes des copies transmises, non des fichiers éventuellement détenus par l'acteur.
+- **Traçabilité des fichiers Pharma 5 (SHA-256) :** `12.jpg` = `2edf0dbea43828b081c3df664d40bc598d6bcf283e170145097c92abf52340a7` ; `13.jpg` = `3d531eada1c3a5de9c618cf91edd4c3bf383a306d4758f012d681f1fe3fa8e13` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. Le fichier `1.png` a été exclu et n'est pas utilisé comme élément observé pour Pharma 5. Empreintes des copies transmises, non des fichiers éventuellement détenus par l'acteur.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -949,15 +951,21 @@ TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corp
 - **Acteur / Groupe :** krybit
 - **Secteur :** Hôtellerie
 - **Site web :** [lasultanahotels.com](https://lasultanahotels.com/)
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
+- **Niveau de confiance :** Medium (publication affichée comme publiée et corpus local d'images associé ; provenance technique et exhaustivité non établies)
+- **Niveau d'impact :** Level 3
 - **Description :** **La Sultana Hotels** est une enseigne marocaine d'**hôtellerie de luxe** regroupant notamment deux établissements : **La Sultana Marrakech**, au cœur de la médina, et **La Sultana Oualidia**, sur la lagune atlantique. Le groupe met en avant une offre d'hébergement, de gastronomie et d'expériences touristiques haut de gamme. La revendication ne permet pas de déterminer quel établissement ou outil de réservation aurait été concerné ([site officiel La Sultana](https://www.lasultanahotels.com/?lang=fr)).
 
-- **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant les hôtels La Sultana est reprise dans des index OSINT, mais aucune déclaration du groupe hôtelier ni confirmation indépendante de l’intrusion n’a été identifiée.
+- **Observation de la publication :** Une capture datée du 14 septembre 2026 montre une fiche `lasultanahotels.com` marquée `PUBLISHED`, avec 3 914 vues, 0 image affichée et une taille de données revendiquée de 41 GB. Un compte à rebours affichait une échéance au 15 septembre 2026 à 12:57:51. Ces éléments décrivent l'état visible de la publication et non le résultat d'une négociation ou d'un paiement.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35923
+- **Analyse du corpus local associé :** Le répertoire de collecte contient 138 fichiers JPEG de scan, pour environ 54 Mo. L'examen visuel du sous-ensemble disponible montre des images de passeports internationaux et de pages d'identité. Cinq paires de fichiers sont des doublons exacts selon SHA-256, soit 135 empreintes distinctes sur 140 fichiers incluant les deux captures de publication. Le nombre de personnes, la source d'acquisition, le lien technique avec La Sultana, la couverture du corpus et l'exhaustivité restent inconnus.
 
-Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. Aucun élément examiné ne confirme l'accès, le chiffrement ou la divulgation de données.
+- **Vérification indépendante au 18 octobre 2026 :** Aucune déclaration du groupe hôtelier ni confirmation publique indépendante de l'intrusion n'a été identifiée. Le corpus d'images renforce l'observation d'une mise à disposition de données associée à la publication, mais ne confirme pas que les passeports proviennent des systèmes de La Sultana ni qu'ils concernent ses clients, employés ou partenaires.
+
+- **Sources / Éléments observés :** publication Krybit capturée le 14 septembre 2026 ; corpus local de 138 scans JPEG associé à la collecte ; classeur local AFRINTEL, entrée ID 35923. Les artefacts bruts restent hors dépôt.
+
+Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. La fiche affichée comme publiée et le corpus local de scans indiquent une mise à disposition de données associée à la publication. Ils ne permettent pas d'établir l'accès initial, la provenance depuis les systèmes de La Sultana, le chiffrement, l'exhaustivité ou le nombre de personnes concernées.
 
 #### 🇪🇬 Égypte - Egyptian Airports Company (EAC)
 - **Date de publication initiale :** 12 septembre 2026

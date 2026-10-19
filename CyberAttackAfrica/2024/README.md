@@ -18,6 +18,10 @@ H1 contains **46 incidents**, compared with **75 in H2**. Ransomware remains the
 
 > **Reading note:** AFRINTEL figures measure incidents documented in the observable corpus. They are not an exhaustive measurement of every compromise that actually occurred across Africa.
 
+### Retrospective update - ESGC.MA
+
+The **ESGC.MA** March 2024 record is now supported by a screenshot of a forum publication displayed as dated March 26, 2024. The publication claims a database from 2021, approximately 500 entries and a visible SQL sample containing personal data and authentication material. This strengthens the **Data Leak - Claim - Data Sample Published** classification, but does not confirm the compromise, database origin, completeness or the exact legal relationship to a Moroccan institution using a similar acronym. Raw data is not reproduced.
+
 ## 2. Methodology
 
 Nine canonical types; strict separation between incident, initial publication, repost, discovery, and confirmation; historical reposts excluded from annual incident counts; DDoS counted by campaign; claims remain claims unless corroborated or confirmed.

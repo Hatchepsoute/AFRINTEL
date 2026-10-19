@@ -21,7 +21,7 @@ The collection corpus goes from **29 records in August to 41 records in the Sept
 
 South Africa accounts for **16 records (39.0%)**, followed by Egypt with 7, and Morocco and Kenya with 3 each. Health and Government / Administration each appear in five records after cautious sector normalization.
 
-Observation status is heterogeneous: **14 records** are `Claim - Unverified`, **11** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
+Observation status is heterogeneous: **13 records** are `Claim - Unverified`, **12** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
 
 ### CTI reading to retain
 
@@ -65,6 +65,18 @@ xychart-beta
 Ransomware-group sites, leak sites and underground forums are treated as **primary monitoring sources**: they document a listed victim, displayed account, publication date, deadline, visible sample or released data. Their content is not treated as official confirmation. A visible sample may support a documentary link, but attribution, access vector, completeness, encryption and the fate of the negotiation remain separate dimensions.
 
 The appearance of a victim, the publication of a sample, the expiry of a deadline and the later release of data are separate events. When no data is visible after a deadline, AFRINTEL records only that no public release was observed at the last check. Payment, negotiation, removal, resale or transfer are not inferred without specific public information and remain `unknown` by default.
+
+### 3.1 Additional documentary-depth scale
+
+To avoid conflating public status with analytical depth, the report also uses this descriptive scale:
+
+| Level | Description | What cannot be inferred |
+|---|---|---|
+| P0 - Publication observed | Victim, domain, account or threat displayed at a given time | Intrusion, data authenticity or technical responsibility |
+| P1 - Visible or reviewed sample | Extract, image or file structure consistent with the organisation | Certain technical source, total volume, unique persons or encryption |
+| P2 - Published batch reviewed | Batch made accessible during collection and characterised locally | Completeness of exfiltration, initial access, restoration or payment |
+
+This scale complements AFRINTEL statuses and does not replace them. A third-party exposure may be confirmed at the exposure level without establishing a direct intrusion at the named organisation.
 
 ## 4. Cohorts and incident types
 
@@ -209,12 +221,12 @@ xychart-beta
 
 ## 7. Evidence maturity and impact
 
-The statuses below concern the **complete 41-record corpus**. For the 29 September-dated publications alone, the normalized distribution is **13 `Claim - Unverified`**, **11 `Claim - Data Sample Published`**, **1 `Victim Confirmed`**, **1 `Government Confirmed`**, **1 `Data Fully Published`** and **2 `Third-Party Exposure Confirmed`**. Monthly tracking remains marked `In Progress`; totals are therefore valid as of the drafting date and may change if new records are validated.
+The statuses below concern the **complete 41-record corpus**. For the 29 September-dated publications alone, the normalized distribution is **12 `Claim - Unverified`**, **12 `Claim - Data Sample Published`**, **1 `Victim Confirmed`**, **1 `Government Confirmed`**, **1 `Data Fully Published`** and **2 `Third-Party Exposure Confirmed`**. Monthly tracking remains marked `In Progress`; totals are therefore valid as of the drafting date and may change if new records are validated.
 
 | Status | Records |
 |---|---:|
-| Claim - Unverified | 14 |
-| Claim - Data Sample Published | 11 |
+| Claim - Unverified | 13 |
+| Claim - Data Sample Published | 12 |
 | Victim Confirmed | 9 |
 | Corroborated | 2 |
 | Data Fully Published | 1 |
@@ -227,8 +239,8 @@ An impact level is explicitly recorded for 23 cards: 12 at Level 3, 9 at Level 4
 ```mermaid
 pie showData
     title "Evidence maturity  -  complete September folder corpus"
-    "Claim - Unverified" : 14
-    "Claim - Data Sample Published" : 11
+    "Claim - Unverified" : 13
+    "Claim - Data Sample Published" : 12
     "Victim Confirmed" : 9
     "Corroborated" : 2
     "Data Fully Published" : 1
@@ -280,6 +292,8 @@ The September subset should be read as a corpus of publications and observations
 For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claimed values when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
 
 Full details, sources and limitations for each case are retained in the [French victim cards](./victims_FR.md) and [English victim cards](./victims.md).
+
+Selected measurements from the reviewed cases illustrate the limits of claimed volumes. The SEPE sample contains **1,189 local files**, including **111 JSON files**, totalling **544,921,521 bytes**, while the publication claims **364,841 files**, **110,021 users** and **179 GB**. The FCT-IRS PDF contains **2,541 email-pattern matches**, **2,540 distinct textual values** and **61 Nigerian phone-pattern matches**; these are technical matches, not affected-person counts. Apollo 21 and ARCA references to **400 GB** and **400G** remain actor claims, not measured equivalent datasets.
 
 ### 9.1 Ransomware publication lifecycle
 

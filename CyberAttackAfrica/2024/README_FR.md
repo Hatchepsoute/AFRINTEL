@@ -18,6 +18,10 @@ Le premier semestre compte **46 incidents**, contre **75 au second semestre**. L
 
 > **Note de lecture :** les chiffres AFRINTEL mesurent les incidents documentés dans le corpus à partir de sources observables. Ils ne constituent pas une mesure exhaustive de toutes les compromissions ayant réellement eu lieu en Afrique.
 
+### Mise à jour rétrospective - ESGC.MA
+
+La fiche **ESGC.MA** de mars 2024 est désormais documentée par une capture d'une publication de forum affichée au 26 mars 2024. La publication revendique une base issue de 2021, environ 500 entrées et un échantillon SQL contenant des données personnelles et des éléments d'authentification. Cette information renforce le classement **Data Leak - Claim - Data Sample Published**, sans confirmer la compromission, l'origine, l'exhaustivité de la base ni le lien juridique exact avec une institution marocaine portant un sigle proche. Les données brutes ne sont pas reproduites.
+
 ## 2. Méthodologie
 
 - 9 types canoniques AFRINTEL.

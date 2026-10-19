@@ -208,7 +208,7 @@ timeline
 - **Type d'incident -** Data Leak
 - **Description victime -** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.
 
-- **Analyse -** La publication de forum du 26 mars 2024 affirme qu'une base de 2021 contenait environ 500 entrées avec des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Un échantillon était affiché, mais le jeu de données complet et la compromission alléguée n'ont pas été vérifiés indépendamment. Les données personnelles et identifiants de l'échantillon ne sont pas reproduits ici.
+- **Analysis -** A screenshot of a forum publication displayed as dated March 26, 2024 at 00:38 presents a database claimed to be from 2021 and to contain approximately 500 entries. A SQL extract is visible with personal data and authentication material; none of it is reproduced here. The publication and sample are observed, but the compromise, origin and completeness of the database remain unknown.
 
 ----------------------------
     27 Mars 2024 : Nampak
@@ -264,7 +264,7 @@ timeline
 - **Type d'incident:** Data Leak
 - **Description victime:** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.
 
-- **Analyse:** La publication de forum du 26 mars 2024 affirme qu'une base de 2021 contenait environ 500 entrées avec des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Un échantillon était affiché, mais le jeu de données complet et la compromission alléguée n'ont pas été vérifiés indépendamment. Les données personnelles et identifiants de l'échantillon ne sont pas reproduits ici.
+- **Analysis:** A screenshot of a forum publication displayed as dated March 26, 2024 at 00:38 presents a database claimed to be from 2021 and to contain approximately 500 entries. A SQL extract is visible with personal data and authentication material; none of it is reproduced here. The publication and sample are observed, but the compromise, origin and completeness of the database remain unknown.
 
 ---------------------------- | Data Leak | Claim - Data Sample Published | Level 3 | Medium |
 | South Africa | Government Printing Works (GPW)
