@@ -313,7 +313,15 @@ These are defensive hunting hypotheses, not technique attributions to the observ
 
 ## 11. Conclusion and checks
 
-The September 2026 folder contains **41 documented records**, including **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** and **1 Access Sale**. South Africa accounts for the largest share, while victim confirmations increase the evidentiary strength of several records without automatically validating claimed volumes or intrusion chains.
+The September 2026 corpus contains 29 publications dated in the month and 12 earlier incidents integrated into tracking, for 41 records overall. It reflects AFRINTEL monitoring of ransomware-group sites, leak sites and underground forums. It is not a count of intrusions that actually occurred in September and it is not an exhaustive measure of cybercrime in Africa.
+
+The observed publications are mostly associated with ransomware claims. Some include visible samples or released data, while a small number have public confirmation of access or an incident. These observation levels remain separate from the completeness of exfiltration, the initial vector, encryption, ransom payment and operational impact.
+
+The collection does not establish a common technical campaign, a dominant access vector or a real increase in attacks compared with August. It does highlight recurring risks involving identities, administrative documents, financial data, document repositories and supplier relationships. These risks justify targeted validation of assets, privileged access, exports, external sharing and payment-fraud controls.
+
+For affected organisations, an underground publication should be treated as a signal for verification and preparation, without waiting for a complete release and without automatically concluding that a compromise occurred. CTI follow-up should focus on changes to the victim listing, samples, deadlines, possible releases, public confirmations and republications. Payments, negotiations, removals, resales and transfers remain unknown unless specific public information supports a qualification.
+
+This report therefore provides a documented monitoring baseline for defensive prioritisation. It should be updated when the public status of a victim changes, without turning an underground observation into technical or institutional confirmation.
 
 Checks completed:
 
@@ -322,7 +330,7 @@ Checks completed:
 - incident-type total = 41;
 - country total = 41;
 - regional total = 41;
-- evidence-status total = 41;
+- observation-status total = 41;
 - incident, publication and late-discovery dates remain separated;
 - normalized types and statuses checked against the structured card values.
 
