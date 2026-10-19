@@ -51,7 +51,6 @@ Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 R
 
 📋 [Fiches victimes - septembre 2026](CyberAttackAfrica/2026/09-september/victims_FR.md)
 
-📋 [Audit des confirmations OSINT - septembre 2026](CyberAttackAfrica/2026/09-september/AUDIT_CONFIRMATIONS_AFRINTEL_SEPTEMBRE_2026.md)
 
 📦 [Bundle STIX 2.1 / OpenCTI - septembre 2026](stix/2026/09-september/afrintel_september_2026_opencti.json)
 

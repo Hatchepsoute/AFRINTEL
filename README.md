@@ -51,7 +51,6 @@ The September corpus contains **41 documented records across 14 countries**: **2
 
 📋 [September 2026 victim records](CyberAttackAfrica/2026/09-september/victims.md)
 
-📋 [OSINT confirmation audit - September 2026](CyberAttackAfrica/2026/09-september/AUDIT_CONFIRMATIONS_AFRINTEL_SEPTEMBRE_2026.md)
 
 📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
