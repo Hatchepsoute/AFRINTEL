@@ -120,7 +120,8 @@
 - **Type d'incident:** Data Leak
 - **Description victime:** ESGC.MA est présentée comme un établissement marocain d'enseignement supérieur spécialisé dans le commerce et le management.
 
-- **Analyse:** La publication de forum du 26 mars 2024 affirme qu'une base de 2021 contenait environ 500 entrées avec des noms, adresses électroniques, hashes de mots de passe, numéros de téléphone et dates de création de comptes. Un échantillon était affiché, mais le jeu de données complet et la compromission alléguée n'ont pas été vérifiés indépendamment. Les données personnelles et identifiants de l'échantillon ne sont pas reproduits ici.
+- **Analyse:** Une capture d'une publication de forum, datée du 26 mars 2024 à 00:38 (heure affichée), présente `ESGC.MA` comme une école supérieure marocaine de commerce et de management. L'auteur affirme que la base provient de 2021 et contient environ 500 entrées avec des noms, adresses électroniques, éléments d'authentification, numéros de téléphone et dates de création de comptes. Un extrait SQL est visible, avec des données personnelles et des valeurs d'authentification ; aucun de ces éléments bruts n'est reproduit ici. La capture établit l'existence d'une publication et d'un échantillon affiché, mais pas la compromission, l'origine de la base, son exhaustivité ni le lien juridique exact entre `ESGC.MA` et les établissements marocains portant un sigle proche.
+- **Éléments observés:** capture reçue le 19 octobre 2026 ; publication de forum attribuée à `UnknownMember`, affichée comme publiée le 26 mars 2024 ; base annoncée comme provenant de 2021 ; environ 500 entrées revendiquées ; extrait SQL visible. Les fichiers ou la base complète n'ont pas été fournis.
 
 ----------------------------
 

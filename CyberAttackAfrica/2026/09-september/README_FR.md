@@ -52,8 +52,8 @@ L’activité observée en septembre est dominée par les annonces attribuées �
 | Type « ransomware »                   | 20 / 29 (69,0 %) | Étiquette / revendication, pas chiffrement prouvé  |
 | Type « data leak »                    | 7 / 29 (24,1 %)  | Publications relatives à des données présumées     |
 | Type « system intrusion »             | 2 / 29 (6,9 %)   | Accès ou tentative documentée ; résultat limité    |
-| Claim - Unverified                    | 13 / 29 (44,8 %) | Publication sans confirmation indépendante         |
-| Échantillon déclaré/publié            | 11 / 29 (37,9 %) | Présence d'un extrait, sans conclusion automatique sur l'accès |
+| Claim - Unverified                    | 12 / 29 (41,4 %) | Publication sans confirmation publique associée    |
+| Échantillon déclaré/publié            | 12 / 29 (41,4 %) | Présence d'un extrait ou d'un corpus local, sans conclusion automatique sur l'accès |
 | Lot intégral publié selon la collecte | 1 / 29 (3,4 %)   | AFRICA-TECH : 10 fichiers publiés examinés         |
 | Afrique du Sud + Égypte               | 15 / 29 (51,7 %) | Concentration de veille, non taux d'attaque        |
 | Fiches tardives du 16 octobre         | 18 / 29 (62,1 %) | Provenance : registre AFRINTEL intégré             |
@@ -162,7 +162,7 @@ L’Afrique du Sud totalise huit publications, l’Égypte sept, puis le Maroc t
 
 Ransomware représente 20 / 29 fiches (69,0 %). La catégorie « ransomware » des publications est utilisée comme classification de veille ; elle ne prouve ni chiffrement, ni sabotage, ni double extorsion effectivement exécutée. Les sept Data Leak et les deux System Intrusion sont conservés selon leur type principal renseigné dans les fiches, même lorsqu’une revendication ransomware leur est associée.
 
-La cohorte comprend 13 fiches `Claim - Unverified`, 11 fiches avec échantillon publié, 2 expositions de données indirectes reconnues, 1 dossier `Victim Confirmed`, 1 dossier `Government Confirmed` et 1 dossier `Data Fully Published`. Ces catégories décrivent des niveaux d’observation différents et ne permettent pas de déduire automatiquement l’exfiltration complète, le vecteur ou les volumes revendiqués.
+La cohorte comprend 12 fiches `Claim - Unverified`, 12 fiches avec échantillon publié, 2 expositions de données indirectes reconnues, 1 dossier `Victim Confirmed`, 1 dossier `Government Confirmed` et 1 dossier `Data Fully Published`. Ces catégories décrivent des niveaux d’observation différents et ne permettent pas de déduire automatiquement l’exfiltration complète, le vecteur ou les volumes revendiqués.
 
 ## 2.3. Chronologie des publications
 
@@ -198,7 +198,7 @@ La sensibilité d’un domaine ne suffit pas à établir un impact. Néanmoins, 
 
 Le pseudonyme krybit est mentionné dans six fiches, TheGentlemen dans quatre. BLACKLOCKS, N0n et lockbit5 sont mentionnés deux fois chacun. Les treize autres fiches correspondent à des acteurs ou comptes différents, dont un cas non attribué.
 
-Derrière ces agrégats se trouvent des niveaux de preuve hétérogènes : cinq des six fiches krybit sont « Claim - Unverified » et celle d’Air Tanzania décrit un échantillon d’images ; les quatre fiches TheGentlemen sont toutes non corroborées ; BLACKLOCKS possède deux dossiers avec images et documents examinés ; N0n combine un lot entièrement publié pour AFRICA-TECH et une revendication isolée en Tunisie.
+Derrière ces agrégats se trouvent des niveaux d’observation hétérogènes : quatre des six fiches krybit sont « Claim - Unverified », tandis que La Sultana et Air Tanzania disposent d’un corpus d’images associé à la collecte ; les quatre fiches TheGentlemen sont non confirmées publiquement ; BLACKLOCKS possède deux dossiers avec images et documents examinés ; N0n combine un lot mis à disposition pour AFRICA-TECH et une revendication isolée en Tunisie.
 
 > **PRUDENCE D’ATTRIBUTION**
 >
@@ -294,7 +294,7 @@ La fiche issue du registre AFRINTEL indique 114 fichiers pour 676 972 266 octets
 
 ## 3.10. Lecture agrégée des 18 entrées de registre
 
-Les dix-huit fiches ajoutées le 16 octobre comprennent treize revendications `Claim - Unverified`, deux expositions de données indirectes reconnues, deux dossiers avec confirmation d’accès ou d’incident et le dossier Air Tanzania avec échantillon d’images. Parmi les cibles citées figurent des organisations de finance et d’assurance (Hollard, RelyComply, Siinqee Bank, Armada, Majani, Guardrisk), des services stratégiques ou de transport (Egyptian Airports Company, Namibian Defence Force, Air Tanzania), des services professionnels ou industriels (BCX, VSB Attorneys, HCCD) et d’autres acteurs du tourisme et de la distribution.
+Les dix-huit fiches ajoutées le 16 octobre comprennent douze revendications `Claim - Unverified`, deux publications avec échantillon ou corpus local, deux expositions de données indirectes reconnues et deux dossiers avec confirmation d’accès ou d’incident. Parmi les cibles citées figurent des organisations de finance et d’assurance (Hollard, RelyComply, Siinqee Bank, Armada, Majani, Guardrisk), des services stratégiques ou de transport (Egyptian Airports Company, Namibian Defence Force, Air Tanzania), des services professionnels ou industriels (BCX, VSB Attorneys, HCCD) et d’autres acteurs du tourisme et de la distribution.
 
 Leurs fiches ne fournissent généralement ni élément de réponse à incident, ni diagnostic du point d’accès, ni quantité réellement dérobée. À ce stade, la bonne action CTI est la qualification et la surveillance des confirmations, pas l’ajout de nouvelles compromissions prouvées.
 
@@ -461,7 +461,7 @@ Les priorités suivantes concernent la vérification et la prévention du risque
 | P1 • Suivi de publication libérée    | AFRICA-TECH                            | Lot de documents effectivement publié selon collecte         | Cycle de vie extorsion + attestation de contenu minimisé           |
 | P1 • Chaîne commerciale / projet     | Apollo 21, ARCA Unlimited, Pharma 5    | Commerciaux, plans, qualité et relations partenaires         | Analyse de risques BEC, partage documentaire et tiers              |
 | P2 • Vérification de la source       | FNB, ATCL, BUC, Madinaty               | Lien documentaire ou visuel sans preuve d’intrusion cible    | Origine du dépôt, validation autorisée et statut de confirmation   |
-| P2 • Surveillance des listes         | 13 revendications non confirmées et 2 expositions indirectes | Publications à suivre, sans conclusion sur le devenir des données | Suivi des mises à jour, sans diffusion alarmiste |
+| P2 • Surveillance des listes         | 12 revendications non confirmées et 2 expositions indirectes | Publications à suivre, sans conclusion sur le devenir des données | Suivi des mises à jour, sans diffusion alarmiste |
 
 ## 8.1. Exigences minimales pour faire évoluer la qualification
 
@@ -586,7 +586,7 @@ Un chiffre de taille revendiquée ne mesure pas le volume réellement volé. Un 
 
 ## D.2. Calculs auditables
 
-Corpus = 41 fiches uniques. Cohorte de septembre = 29 (70,7 % de 41) ; antérieurs intégrés = 12 (29,3 %). Type ransomware = 20 / 29 = 69,0 % ; data leak = 7 / 29 = 24,1 % ; system intrusion = 2 / 29 = 6,9 %. Statuts de la cohorte : 13 `Claim - Unverified`, 11 `Claim - Data Sample Published`, 2 expositions de données indirectes reconnues, 1 `Victim Confirmed`, 1 `Government Confirmed` et 1 `Data Fully Published`. Afrique du Sud + Égypte = (8 + 7) / 29 = 51,7 %. Finance / assurance / conformité = 7 / 29 = 24,1 %. Registre intégré le 16 octobre = 18 / 29 = 62,1 %.
+Corpus = 41 fiches uniques. Cohorte de septembre = 29 (70,7 % de 41) ; antérieurs intégrés = 12 (29,3 %). Type ransomware = 20 / 29 = 69,0 % ; data leak = 7 / 29 = 24,1 % ; system intrusion = 2 / 29 = 6,9 %. Statuts de la cohorte : 12 `Claim - Unverified`, 12 `Claim - Data Sample Published`, 2 expositions de données indirectes reconnues, 1 `Victim Confirmed`, 1 `Government Confirmed` et 1 `Data Fully Published`. Afrique du Sud + Égypte = (8 + 7) / 29 = 51,7 %. Finance / assurance / conformité = 7 / 29 = 24,1 %. Registre intégré le 16 octobre = 18 / 29 = 62,1 %.
 
 ## D.3. Sources documentaires
 

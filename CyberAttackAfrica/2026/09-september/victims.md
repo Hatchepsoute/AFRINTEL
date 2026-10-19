@@ -118,6 +118,8 @@
 
   After extraction, the analysed archive occupies approximately **4 GB** and contains **1,155 directories comprising 3,465 items**, exactly three items per directory. The structure consists of registration details, certificate metadata and a PDF certificate.
 
+  The local corpus supplied for analysis contains **4,644 files** totalling approximately **3.94 GB**: **3,476 JSON**, **1,165 PDFs** and **3 JPGs**, including a publication screenshot and certificate examples. The `full-details.json` file is an array of **1,155 structured records** with 13 fields. All 1,155 registration identifiers are distinct; the corpus contains 2 centre identifiers, 33 training identifiers and 1,031 distinct birth dates. These values describe observed records and fields, not a unique-person count.
+
   The details.json files contain registration ID, honorific/title, full name, CIN where recorded, date and place of birth, address and mobile number where populated, training and centre identifiers and registration date. The certificates.json files contain certificate identifiers linked to registrations, name, CIN where recorded, certificate date, year and creation timestamp. One registration may have multiple certificates.
 
   PDF certificates from distinct directories reproduce information consistent with the JSON records: identity, CIN, birth data, training, year, duration, issue date, certificate number and verification QR code. This correlation provides **strong internal corroboration** that a substantial portion of the published data originated from an operational environment associated with Centre Atlantique Formation.
@@ -140,7 +142,7 @@
 7. Monitor phishing, impersonation, document fraud and fraudulent certificate use.
 8. Audit certificate validation for enumeration through QR codes or identifiers.
 
-- **Sources / Evidence:** xNov underground forum publication (6 September 2026); supplied Telegram relay and capture (6 September 2026); direct contact with xNov through the Telegram channel regarding the asking price; AFRINTEL analysis of the published archive and extracted learner/certificate folders.
+- **Sources / Observed elements:** xNov underground forum publication (6 September 2026); supplied Telegram relay and capture (6 September 2026); direct contact with xNov through the Telegram channel regarding the asking price; AFRINTEL analysis of the published archive and extracted local corpus. Raw files remain outside the repository.
 
 
 ### 09 September 2026
@@ -459,15 +461,15 @@ last_checked_at: 2026-09-27
 
   **Unknown:** origin, creation date, non-public status and independently verified authenticity of the document; actual source organisation or system; timing and vector of any unauthorised access; existence and volume of the files claimed; exposed categories beyond the readable page; unique affected-person count; encryption or service disruption; official confirmation; negotiation, ransom payment or resale.
 
-- **Analysis scope:** **two images supplied for this review**: (1) an INC Ransom victim listing with document thumbnails and (2) one readable Pharma 5 specifications page marked `1/5`. Thumbnails are not independently validated original files; the other pages were not supplied. SHA-256 hashes below identify **the two received images**, not any purported exfiltrated originals. No person's name, email address, telephone number or raw document is republished in this record.
+- **Analysis scope:** four image files were present in the supplied local directory. Three files concern the Pharma 5 publication or sample (`12.jpg`, `13.jpg` and `Capture d’écran du 2026-09-28 11-22-02.png`); they show complementary or repeated views of the claim and of one readable specifications page marked `1/5`. The file `1.png` was excluded because it clearly shows a publication concerning **atlantique.ma / Centre Atlantique**, with no established link to Pharma 5. Thumbnails are not independently validated original files; the other pages were not supplied. The SHA-256 hashes below identify the received copies, not any purported exfiltrated originals. No person's name, email address, telephone number or raw document is republished in this record.
 
-- **Risk assessment:** A visible business contact and supplier/manufacturer relationship could be misused for **targeted phishing**, supplier payment diversion/BEC or social engineering. If additional claimed categories are genuine, confidentiality risks could extend to commercial and quality-assurance information and partners. **The two images do not substantiate patient health records, trade-secret theft or medication tampering.**
+- **Risk assessment:** A visible business contact and supplier/manufacturer relationship could be misused for **targeted phishing**, supplier payment diversion/BEC or social engineering. If additional claimed categories are genuine, confidentiality risks could extend to commercial and quality-assurance information and partners. **The three reviewed Pharma 5 files do not substantiate patient health records, trade-secret theft or medication tampering.**
 
 - **SOC/CTI recommendations:** preserve received image originals and acquisition metadata; check the specifications reference, date and hash against authorised internal quality/procurement systems offline; review unusual access to quality, purchasing and supplier-sharing repositories; verify any bank-details changes out-of-band; alert relevant business contacts as appropriate; monitor for further disclosure without purchasing or redistributing the data.
 
-- **Sources / Evidence:** two October 2026 images supplied to AFRINTEL (actor listing displayed as dated 25 September); public cross-checks from [Pharma 5](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf), [MEDILIFE S.R.L.](https://www.ufficiocamerale.it/9842/medilife-srl) and [JQC Pharmaceutical](https://www.jqcpharm.com/en/index.php/Product); [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) and [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) for reporting on the claim. **Public business matches do not establish an intrusion.**
+- **Sources / Observed elements:** local directory supplied to AFRINTEL in October 2026, containing three images related to the Pharma 5 publication and one file excluded because it concerns atlantique.ma / Centre Atlantique; public cross-checks from [Pharma 5](https://www.pharma5.ma/wp-content/uploads/presse/communique/CP-PHARMA5-VF-17-NOVEMBRE-2020.pdf), [MEDILIFE S.R.L.](https://www.ufficiocamerale.it/9842/medilife-srl) and [JQC Pharmaceutical](https://www.jqcpharm.com/en/index.php/Product); [Le1.ma](https://le1.ma/pharma-5-frappe-par-une-cyberattaque/) and [DeXpose](https://www.dexpose.io/incransom-targets-moroccan-pharma-leader-pharma5/) for reporting on the claim. Raw files remain outside the repository. **Public business matches do not establish an intrusion.**
 
-- **Screenshot traceability (SHA-256):** `1.png` = `27d9e3d2da239eb4d77495fa37482cab0c665b4447589efa1967c9e4e542b078` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. Hashes of supplied copies only, not the actor's purported original files.
+- **Pharma 5 file traceability (SHA-256):** `12.jpg` = `2edf0dbea43828b081c3df664d40bc598d6bcf283e170145097c92abf52340a7` ; `13.jpg` = `3d531eada1c3a5de9c618cf91edd4c3bf383a306d4758f012d681f1fe3fa8e13` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. The file `1.png` was excluded and is not used as an observed Pharma 5 element. Hashes of supplied copies only, not the actor's purported original files.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -949,15 +951,21 @@ TheGentlemen published a claim targeting Hollard Insurance Group. The source cor
 - **Actor / Group:** krybit
 - **Sector:** Hospitality
 - **Website:** [lasultanahotels.com](https://lasultanahotels.com/)
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
+- **Confidence level:** Medium (listing shown as published and associated local image corpus available; technical provenance and completeness not established)
+- **Impact level:** Level 3
 - **Description:** **La Sultana Hotels** is a Moroccan **luxury hospitality** brand comprising **La Sultana Marrakech** in the historic medina and **La Sultana Oualidia** by the Atlantic lagoon. Its offering includes premium accommodation, dining and visitor experiences. The claim does not establish which property or reservation-related system, if any, was affected ([La Sultana official website](https://www.lasultanahotels.com/)).
 
-- **Independent verification as of 18 October 2026:** The Krybit claim naming La Sultana hotels appears in OSINT indices, but no hotel-group statement or independent proof of intrusion was located.
+- **Publication observation:** A screenshot dated 14 September 2026 shows a `lasultanahotels.com` listing marked `PUBLISHED`, with 3,914 views, 0 displayed images and a claimed data size of 41 GB. A countdown displayed a deadline of 15 September 2026 at 12:57:51. These elements describe the visible publication state and do not establish the outcome of a negotiation or payment.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35923
+- **Analysis of the associated local corpus:** The collection directory contains 138 JPEG scan files, approximately 54 MB in total. Visual review of the available subset shows international passports and identity-document pages. Five pairs of files are exact duplicates by SHA-256, resulting in 135 distinct hashes across 140 files including the two publication screenshots. The number of persons, acquisition source, technical link to La Sultana, corpus coverage and completeness remain unknown.
 
-Krybit published a claim targeting La Sultana Hotel Group in Morocco. No reviewed element confirms access, encryption or data disclosure.
+- **Independent verification as of 18 October 2026:** No hotel-group statement or independent public confirmation of intrusion was identified. The image corpus strengthens the observation that data was made available in association with the listing, but does not confirm that the passports originated from La Sultana systems or concern its customers, employees or partners.
+
+- **Sources / Observed elements:** Krybit publication captured on 14 September 2026; local corpus of 138 JPEG scans associated with the collection; local AFRINTEL workbook, entry ID 35923. Raw artifacts remain outside the repository.
+
+Krybit published a claim targeting La Sultana Hotel Group in Morocco. The listing shown as published and the local scan corpus indicate data availability associated with the publication. They do not establish initial access, provenance from La Sultana systems, encryption, completeness or the number of persons concerned.
 
 #### 🇪🇬 Egypt - Egyptian Airports Company (EAC)
 - **Initial publication date:** September 12, 2026

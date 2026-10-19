@@ -92,6 +92,8 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 
 **Référence 2024 corrigée :** **121 incidents canoniques dans 31 pays africains**, reclassés selon la même taxonomie à neuf types que celle utilisée pour 2025 : 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware et 1 Operational Fraud.
 
+**Mise à jour ESGC.MA :** la fiche de mars 2024 intègre désormais une capture d'une publication de forum datée du 26 mars 2024, revendiquant une base de 2021 d'environ 500 entrées avec un échantillon SQL. Le classement reste `Data Leak - Claim - Data Sample Published` ; aucune donnée personnelle brute n'est publiée et les totaux 2024 restent inchangés.
+
 **Référence 2025 validée :** **227 incidents canoniques dans 31 pays africains représentés** : 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware et 0 Operational Fraud. Le S1 compte **111 incidents** et le S2 **116**. Les ventilations pays/régions totalisent 228 occurrences géographiques pour la fiche multi-pays Comores-Cameroun.
 
 ---

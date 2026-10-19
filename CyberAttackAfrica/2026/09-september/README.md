@@ -21,7 +21,7 @@ The collection corpus goes from **29 records in August to 41 records in the Sept
 
 South Africa accounts for **16 records (39.0%)**, followed by Egypt with 7, and Morocco and Kenya with 3 each. Health and Government / Administration each appear in five records after cautious sector normalization.
 
-Observation status is heterogeneous: **14 records** are `Claim - Unverified`, **11** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
+Observation status is heterogeneous: **13 records** are `Claim - Unverified`, **12** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
 
 ### CTI reading to retain
 
@@ -209,12 +209,12 @@ xychart-beta
 
 ## 7. Evidence maturity and impact
 
-The statuses below concern the **complete 41-record corpus**. For the 29 September-dated publications alone, the normalized distribution is **13 `Claim - Unverified`**, **11 `Claim - Data Sample Published`**, **1 `Victim Confirmed`**, **1 `Government Confirmed`**, **1 `Data Fully Published`** and **2 `Third-Party Exposure Confirmed`**. Monthly tracking remains marked `In Progress`; totals are therefore valid as of the drafting date and may change if new records are validated.
+The statuses below concern the **complete 41-record corpus**. For the 29 September-dated publications alone, the normalized distribution is **12 `Claim - Unverified`**, **12 `Claim - Data Sample Published`**, **1 `Victim Confirmed`**, **1 `Government Confirmed`**, **1 `Data Fully Published`** and **2 `Third-Party Exposure Confirmed`**. Monthly tracking remains marked `In Progress`; totals are therefore valid as of the drafting date and may change if new records are validated.
 
 | Status | Records |
 |---|---:|
-| Claim - Unverified | 14 |
-| Claim - Data Sample Published | 11 |
+| Claim - Unverified | 13 |
+| Claim - Data Sample Published | 12 |
 | Victim Confirmed | 9 |
 | Corroborated | 2 |
 | Data Fully Published | 1 |
@@ -227,8 +227,8 @@ An impact level is explicitly recorded for 23 cards: 12 at Level 3, 9 at Level 4
 ```mermaid
 pie showData
     title "Evidence maturity  -  complete September folder corpus"
-    "Claim - Unverified" : 14
-    "Claim - Data Sample Published" : 11
+    "Claim - Unverified" : 13
+    "Claim - Data Sample Published" : 12
     "Victim Confirmed" : 9
     "Corroborated" : 2
     "Data Fully Published" : 1
