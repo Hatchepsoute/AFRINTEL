@@ -34,17 +34,17 @@
 
 - **Analyse :**
 
-  **Observed :** La publication datée du **3 septembre 2026** affiche le domaine `mdcn.gov.ng`, le chiffre **65 580** et une liste de **24 champs** couvrant identité, naissance, coordonnées, numéro de registre professionnel, origine et lieu de pratique, spécialisation, école médicale, emploi et date de demande. Les **50 lignes communiquées** suivent globalement cette structure et contiennent des informations personnelles et professionnelles ; elles ne sont pas assimilées à 50 personnes uniques vérifiées. Les dates de demande visibles se concentrent entre le **28 octobre et le 1er novembre 2022** ; il s'agit de dates de dossier, pas de dates d'incident. Le domaine appartient bien au [conseil médical et dentaire nigérian](https://www.mdcn.gov.ng/), qui gère l'inscription et les licences professionnelles.
+  **Observed :** La publication datée du **3 septembre 2026** affiche le domaine `mdcn.gov.ng`, le chiffre **65 580** et une liste de **24 champs** couvrant identité, naissance, coordonnées, numéro de registre professionnel, origine et lieu de pratique, spécialisation, école médicale, emploi et date de demande. Le CSV fourni contient **50 lignes de données**, **24 colonnes**, aucune ligne entièrement dupliquée et une structure de largeur constante. Les 50 valeurs de nom, d'adresse électronique, de téléphone et de numéro d'enregistrement sont distinctes dans cet échantillon ; **49 valeurs de date de naissance** sont distinctes. Cela décrit le fichier fourni, sans valider 50 personnes uniques dans la population revendiquée. Le domaine appartient bien au [conseil médical et dentaire nigérian](https://www.mdcn.gov.ng/), qui gère l'inscription et les licences professionnelles.
 
   **Assumption :** Les intitulés de champs et le contenu des lignes sont compatibles avec des dossiers d'inscription ou de licence de praticiens. Cette cohérence soutient une association plausible avec l'écosystème MDCN, sans démontrer que les données proviennent directement d'un système compromis du conseil : une copie antérieure, un prestataire, une agrégation ou une autre source ne peuvent être écartés. Le champ d'âge paraît refléter une période plus récente que les dates de demande de 2022 pour certaines lignes ; sa méthode de calcul reste inconnue.
 
-  **Unknown :** le fichier source, son empreinte et son nombre réel d'enregistrements, les doublons, l'exactitude et l'actualité des données, la méthode d'acquisition, l'existence d'un accès non autorisé, le nombre de personnes concernées, la validation des **65 580 utilisateurs uniques**, une confirmation du MDCN ou d'une autorité et tout effet opérationnel restent inconnus.
+  **Unknown :** l'origine technique et l'exhaustivité du CSV, son lien exact avec les systèmes du MDCN, les enregistrements au-delà des 50 lignes fournies, l'exactitude et l'actualité des données, la méthode d'acquisition, l'existence d'un accès non autorisé, le nombre de personnes concernées, la validation des **65 580 utilisateurs uniques**, une confirmation du MDCN ou d'une autorité et tout effet opérationnel restent inconnus.
 
-- **Périmètre de l'analyse :** une capture de forum et 50 lignes textuelles fournies dans l'échange ; aucune archive ou base complète n'a été remise. Les 50 lignes n'ont pas été vérifiées individuellement contre le fichier source original ni recopiées dans le dépôt. Un manifeste technique minimisé de la capture est conservé hors dépôt sous `/tmp/afrintel-evidence/AFR-2026-TBD-mdcn/`.
+- **Périmètre de l'analyse :** une capture de forum et un CSV local de 50 lignes ont été examinés en lecture seule. Le contrôle a porté sur l'empreinte, la taille, le nombre de lignes, les 24 colonnes, la largeur des lignes, les doublons complets et les valeurs manquantes. Les valeurs individuelles n'ont pas été recopiées dans le dépôt. Le fichier complet revendiqué et la source technique originale n'ont pas été fournis. Un manifeste technique minimisé de la capture est conservé hors dépôt sous `/tmp/afrintel-evidence/AFR-2026-TBD-mdcn/`.
 
 - **Évaluation des risques :** les catégories observées pourraient faciliter l'usurpation de praticiens, le phishing ciblé, l'ingénierie sociale et la fraude documentaire. Aucun dossier médical de patient ni accès valide au portail n'est établi par cet extrait.
 
-- **Sources / Éléments de preuve :** publication de forum et extrait textuel fournis à AFRINTEL ; [site officiel du MDCN](https://www.mdcn.gov.ng/). Aucun nom, numéro de téléphone, adresse électronique, date de naissance ou identifiant professionnel individuel n'est publié.
+- **Sources / Éléments de preuve :** publication de forum, CSV local fourni à AFRINTEL et [site officiel du MDCN](https://www.mdcn.gov.ng/). Aucun nom, numéro de téléphone, adresse électronique, date de naissance ou identifiant professionnel individuel n'est publié.
 
 ### 04 septembre 2026
 #### 🇪🇬 Égypte - Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée)
@@ -542,9 +542,9 @@ resale_status: unknown
 last_checked_at: 2026-10-08
 -->
 
-## Incidents antérieurs découverts tardivement et intégrés au corpus de septembre
+## Incidents antérieurs intégrés au corpus de septembre
 
-> Ces fiches concernent des incidents survenus avant septembre 2026. Elles sont intégrées au corpus éditorial de septembre car elles ont été recensées et vérifiées tardivement, avant la publication du rapport mensuel. La date d'incident reste la date réelle ou la meilleure fenêtre documentée ; la date de découverte/intégration AFRINTEL est conservée séparément.
+> Ces fiches concernent des incidents survenus avant septembre 2026. Elles sont intégrées au corpus éditorial de septembre pour le suivi rétrospectif. La date d'incident reste la date réelle ou la meilleure fenêtre documentée ; elle ne doit pas être confondue avec la date de publication.
 
 ### 03 janvier 2026 - intégré le 01 septembre 2026
 #### 🇿🇦 Afrique du Sud - Constantia Pharmacy
@@ -832,7 +832,7 @@ Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs 
 
 ## Publications ransomware de septembre
 
-> Ces entrées proviennent du classeur local `AFRINTEL_Victimes_Africaines_Septembre_2026.xlsx`. La date indiquée est la date de la publication ou de l'observation dans le corpus source, pas nécessairement la date de compromission. Les listes ou revendications ransomware ne constituent pas à elles seules une confirmation de l'intrusion.
+> La date indiquée est la date de la publication ou de l'observation dans le corpus source, pas nécessairement la date de compromission. Les listes ou revendications ransomware ne constituent pas à elles seules une confirmation de l'intrusion.
 
 ### 01 septembre 2026
 #### 🇪🇬 Égypte - Holding Company for Construction and Development (HCCD)
@@ -846,7 +846,6 @@ Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs 
 
 - **Vérification indépendante au 18 octobre 2026 :** Seule une inscription dans le suivi des publications attribuées à Krybit est corroborée ; aucune déclaration officielle de HCCD ou enquête vérifiable confirmant une intrusion dans ses systèmes n’a été identifiée.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35624
 
 Krybit a publié une revendication nommant la Holding Company for Construction and Development. La date correspond à l'observation de la fiche ; la compromission, le volume, le chiffrement et l'exfiltration restent inconnus.
 
@@ -861,7 +860,6 @@ Krybit a publié une revendication nommant la Holding Company for Construction a
 
 - **Vérification indépendante au 18 octobre 2026 :** Les agrégateurs OSINT relaient une revendication Krybit, sans preuve indépendante de compromission ni déclaration de Mecca High Feed Factory identifiée. Certaines bases classent différemment le pays : ne pas modifier l’attribution géographique sans vérification.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35627
 
 Krybit a publié une revendication visant Mecca High Feed Factory, présentée comme une entreprise égyptienne de fabrication d'aliments pour animaux. Les éléments techniques et l'impact réel ne sont pas établis.
 
@@ -876,7 +874,6 @@ Krybit a publié une revendication visant Mecca High Feed Factory, présentée c
 
 - **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant Seashell Hospital figure dans plusieurs index de fuite, mais aucune notification de l’hôpital ni confirmation forensique indépendante n’a été identifiée. Ni une indisponibilité, ni une fuite de patients, ni un chiffrement ne sont établis.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35637
 
 Krybit a publié une revendication visant Seashell Hospital, établissement hospitalier privé situé en Égypte. Aucun élément public examiné ne confirme l'accès, le chiffrement ou une exfiltration.
 
@@ -892,7 +889,12 @@ Krybit a publié une revendication visant Seashell Hospital, établissement hosp
 
 - **Vérification indépendante au 18 octobre 2026 :** La revendication LockBit5 visant VSB Attorneys est documentée par des index de leak sites, sans réponse publique identifiée du cabinet ni preuve indépendante d’intrusion.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35798
+  **Analyse des artefacts locaux :** le répertoire fourni contient un volume RAR5 annoncé comme multipartie de **1 082 440 568 octets**, ainsi qu'un second fichier RAR vide. Le test en lecture seule identifie une archive multipartie incomplète et signale une fin inattendue ainsi qu'une erreur de données sur une entrée PDF. Aucun fichier n'a été extrait ni exécuté ; le contenu, le volume réel, l'authenticité et l'origine des données restent inconnus. La présence de ce fragment ne suffit pas à établir une divulgation réussie.
+
+- **Périmètre de l'analyse :** contrôle de type, de taille et de structure de l'archive ; test d'intégrité sans extraction exploitable. L'analyse ne porte sur aucun document ou donnée personnelle contenu dans l'archive.
+
+- **Éléments observés :** revendication LockBit5 et artefact RAR5 multipartie fourni localement. Le fichier vide et le fragment incomplet ne constituent pas un corpus exploitable.
+
 
 Lockbit5 a publié une revendication visant VSB Attorneys Inc, cabinet d'avocats sud-africain. La compromission et l'étendue des données ne sont pas confirmées.
 
@@ -907,7 +909,6 @@ Lockbit5 a publié une revendication visant VSB Attorneys Inc, cabinet d'avocats
 
 - **Vérification indépendante au 18 octobre 2026 :** Les résultats publics retrouvés reproduisent la revendication The Gentlemen contre Nile Projects Trading ; aucune reconnaissance officielle, notification réglementaire ou vérification forensique ne permet de qualifier l’attaque de confirmée.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35813
 
 TheGentlemen a publié une revendication visant Nile Projects Trading, groupe égyptien actif notamment dans le commerce, l'immobilier et la distribution. Aucun élément ne confirme l'accès ou l'exfiltration.
 
@@ -924,7 +925,6 @@ TheGentlemen a publié une revendication visant Nile Projects Trading, groupe é
 
 - **Sources de vérification complémentaires :** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35817
 
 TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corpus source décrit l'assureur et ses activités, mais ne fournit pas de preuve indépendante de compromission.
 
@@ -941,7 +941,6 @@ TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corp
 
 - **Sources de vérification complémentaires :** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35859
 
 **Contexte initial de la revendication :** Direwolf avait inscrit RelyComply sur son site de fuite. La notification de l'entreprise confirme ensuite un accès non autorisé à certains systèmes et documente un vecteur apparent (zero-day d'une application tierce). Le lien opérationnel avec Direwolf, le chiffrement et le volume de données éventuellement extraites restent non démontrés.
 
@@ -963,7 +962,7 @@ TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corp
 
 - **Vérification indépendante au 18 octobre 2026 :** Aucune déclaration du groupe hôtelier ni confirmation publique indépendante de l'intrusion n'a été identifiée. Le corpus d'images renforce l'observation d'une mise à disposition de données associée à la publication, mais ne confirme pas que les passeports proviennent des systèmes de La Sultana ni qu'ils concernent ses clients, employés ou partenaires.
 
-- **Sources / Éléments observés :** publication Krybit capturée le 14 septembre 2026 ; corpus local de 138 scans JPEG associé à la collecte ; classeur local AFRINTEL, entrée ID 35923. Les artefacts bruts restent hors dépôt.
+- **Sources / Éléments observés :** publication Krybit capturée le 14 septembre 2026 ; corpus local de 138 scans JPEG associé à la collecte. Les artefacts bruts restent hors dépôt.
 
 Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. La fiche affichée comme publiée et le corpus local de scans indiquent une mise à disposition de données associée à la publication. Ils ne permettent pas d'établir l'accès initial, la provenance depuis les systèmes de La Sultana, le chiffrement, l'exhaustivité ou le nombre de personnes concernées.
 
@@ -978,7 +977,6 @@ Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. La fi
 
 - **Vérification indépendante au 18 octobre 2026 :** Plusieurs outils CTI recensent la déclaration Krybit visant le domaine d’Egyptian Airports Company. Aucune reconnaissance par EAC ou autorité égyptienne, ni preuve d’impact sur des systèmes d’exploitation aéroportuaire, n’a été identifiée.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 35917
 
 Krybit a publié une revendication visant l'Egyptian Airports Company. La publication identifie l'organisation et son secteur ; le résultat technique et l'étendue d'une éventuelle exposition restent inconnus.
 
@@ -996,7 +994,6 @@ Krybit a publié une revendication visant l'Egyptian Airports Company. La public
 
 - **Sources de vérification complémentaires :** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36039
 
 **Contexte initial de la revendication :** RansomHouse a désigné la Namibian Defence Force dans sa publication. Les investigations publiées par NAM-CSIRT confirment ultérieurement une activité non autorisée dans le réseau du ministère de la Défense et une association avec RansomHouse, sans démontrer le chiffrement ni une exfiltration.
 
@@ -1013,7 +1010,6 @@ Krybit a publié une revendication visant l'Egyptian Airports Company. La public
 
 - **Sources de vérification complémentaires :** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36122
 
 N0n a publié une revendication visant des opérations de support externalisées liées à PayPal et Transcom WorldWide en Tunisie. La publication mentionne des systèmes internes et un délai de règlement, mais ne confirme pas l'accès, l'exactitude des volumes ou l'impact opérationnel.
 
@@ -1031,7 +1027,6 @@ N0n a publié une revendication visant des opérations de support externalisées
 
 - **Sources de vérification complémentaires :** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36161
 
 Lockbit5 a publié une revendication visant Siinqee Bank, institution financière éthiopienne. Aucun élément indépendant ne confirme l'intrusion ou l'exposition de données.
 
@@ -1046,7 +1041,6 @@ Lockbit5 a publié une revendication visant Siinqee Bank, institution financièr
 
 - **Vérification indépendante au 18 octobre 2026 :** Le référencement de Grupolider par The Gentlemen demeure une revendication de leak site ; aucune confirmation officielle ni lien technique certain entre le domaine revendiqué et les entités du groupe n’a été identifié.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36171
 
 TheGentlemen a publié une revendication visant Grupolider, groupe angolais actif dans l'agriculture, la logistique, la construction et la distribution. La compromission et le volume annoncé restent inconnus.
 
@@ -1065,7 +1059,6 @@ TheGentlemen a publié une revendication visant Grupolider, groupe angolais acti
 
 - **Sources de vérification complémentaires :** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36284
 
 Krybit a publié une revendication visant Air Tanzania Company Limited, compagnie aérienne nationale tanzanienne. Un échantillon local associé à cette publication a été examiné en lecture seule : **114 fichiers** pour **676 972 266 octets**, dont **112 images valides** et **2 fichiers non image malgré l'extension `.jpg`**. Les images valides comprennent **101 fichiers MPO à trois vues** et **11 JPEG simples**, soit **314 vues incorporées** au total. Aucun doublon SHA-256 n'a été détecté.
 
@@ -1081,7 +1074,6 @@ Cette cohérence structurelle confirme la présence d'un corpus d'images associ�
 
 - **Vérification indépendante au 18 octobre 2026 :** Seule la présence d’Armada Credit Bureau dans les listings du groupe Spirals est corroborée. Aucune déclaration de la société ou notification officielle ougandaise démontrant une intrusion n’a été identifiée.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36306
 
 Spirals a publié une revendication visant Armada Credit Bureau Limited, société ougandaise de reporting et d'analyse du crédit. Aucun élément indépendant ne confirme la compromission.
 
@@ -1097,7 +1089,6 @@ Spirals a publié une revendication visant Armada Credit Bureau Limited, sociét
 
 - **Vérification indépendante au 18 octobre 2026 :** La revendication de Vexy contre Majani Insurance Brokers apparaît dans les bases de renseignement, sans reconnaissance publique de l’entreprise ni corroboration technique indépendante.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36310
 
 Vexy Ransomware a publié une revendication visant Majani Insurance Brokers, courtier d'assurance kényan. Le vecteur, les systèmes touchés et toute exfiltration restent inconnus.
 
@@ -1115,7 +1106,6 @@ Vexy Ransomware a publié une revendication visant Majani Insurance Brokers, cou
 
 - **Sources de vérification complémentaires :** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36351
 
 TheGentlemen a publié une revendication visant Guardrisk, groupe d'assurance sud-africain. La publication fournit un contexte organisationnel, mais ne confirme pas l'accès ni l'étendue de données détenues.
 
@@ -1131,7 +1121,6 @@ TheGentlemen a publié une revendication visant Guardrisk, groupe d'assurance su
 
 - **Vérification indépendante au 18 octobre 2026 :** La publication d’INC Ransom visant BCX est reprise par des plateformes CTI ; aucune déclaration de BCX ou du groupe Telkom, dépôt réglementaire ou enquête indépendante confirmant le chiffrement, l’exfiltration ou la compromission de clients n’a été identifiée.
 
-- **Sources / Éléments de preuve :** classeur local AFRINTEL, entrée ID 36421
 
 Incransom a publié une revendication visant BCX / Business Connexion et annonce **500 Go**, 4 224 088 fichiers et 596 613 dossiers, ainsi que du code source et des applications métiers. Ces volumes et catégories sont des revendications de l'acteur ; l'accès, l'exfiltration et l'exhaustivité ne sont pas confirmés.
 
