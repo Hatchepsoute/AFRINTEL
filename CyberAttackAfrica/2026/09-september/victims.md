@@ -9,7 +9,7 @@
 
 ## September 2026
 
-**Monthly follow-up status: In Progress** - corpus of 41 records; additional late discoveries may still be added.
+**Monthly follow-up status: In Progress** - corpus of 41 records; additional records may still be added.
 
 > **OSINT verification update  -  18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
 
@@ -34,17 +34,17 @@
 
 - **Analysis:**
 
-  **Observed:** The post dated **3 September 2026** displays `mdcn.gov.ng`, the figure **65,580**, and **24 field labels** covering identity, birth, contact details, professional registration number, origin and practice location, specialisation, medical school, employment and application date. The **50 supplied rows** broadly follow this structure and contain personal and professional information; they are not treated as 50 verified unique individuals. The visible application dates cluster between **28 October and 1 November 2022**; these are record dates, not incident dates. The domain belongs to the [Nigerian medical and dental council](https://www.mdcn.gov.ng/), which manages practitioner registration and licensing.
+  **Observed:** The post dated **3 September 2026** displays `mdcn.gov.ng`, the figure **65,580**, and **24 field labels** covering identity, birth, contact details, professional registration number, origin and practice location, specialisation, medical school, employment and application date. The supplied CSV contains **50 data rows**, **24 columns**, no fully duplicated row and a constant row width. All 50 name, email, telephone and registration-number values are distinct within this sample; **49 birth-date values** are distinct. This describes the supplied file and does not validate 50 unique people in the claimed population. The domain belongs to the [Nigerian medical and dental council](https://www.mdcn.gov.ng/), which manages practitioner registration and licensing.
 
   **Assumption:** The field labels and row content are consistent with practitioner registration or licensing records. This supports a plausible association with the MDCN ecosystem without demonstrating that the data came directly from a compromised council system: an earlier copy, a service provider, aggregation or another source cannot be ruled out. The age field appears to reflect a later period than the 2022 application dates for some rows; how it was calculated is unknown.
 
-  **Unknown:** the source file, its hash and actual record count, duplicates, accuracy and currency of the data, acquisition method, whether unauthorised access occurred, number of affected people, validation of **65,580 unique users**, confirmation by MDCN or an authority, and any operational effect remain unknown.
+  **Unknown:** the CSV's technical origin and completeness, its exact link to MDCN systems, records beyond the 50 supplied rows, data accuracy and currency, acquisition method, whether unauthorised access occurred, number of affected people, validation of **65,580 unique users**, confirmation by MDCN or an authority, and any operational effect remain unknown.
 
-- **Analysis scope:** one forum screenshot and 50 text rows supplied in the conversation; no complete archive or database was provided. The 50 rows were not individually verified against the original source file or copied into the repository. A minimised technical manifest for the screenshot is retained outside the repository at `/tmp/afrintel-evidence/AFR-2026-TBD-mdcn/`.
+- **Analysis scope:** one forum screenshot and a local 50-row CSV were reviewed read-only. Checks covered the file fingerprint, size, row count, 24 columns, row width, full-row duplicates and missing values. Individual values were not copied into the repository. The claimed complete file and original technical source were not supplied. A minimised technical manifest for the screenshot is retained outside the repository at `/tmp/afrintel-evidence/AFR-2026-TBD-mdcn/`.
 
 - **Risk assessment:** the observed data categories could facilitate practitioner impersonation, targeted phishing, social engineering and document fraud. The excerpt establishes neither patient medical records nor valid portal access.
 
-- **Sources / Evidence:** forum post and text excerpt supplied to AFRINTEL; [official MDCN website](https://www.mdcn.gov.ng/). No individual's name, telephone number, email address, birth date or professional identifier is published.
+- **Sources / Evidence:** forum post, local CSV supplied to AFRINTEL and [official MDCN website](https://www.mdcn.gov.ng/). No individual's name, telephone number, email address, birth date or professional identifier is published.
 
 ### 04 September 2026
 #### 🇪🇬 Egypt - Data attributed to Madinaty owners/residents (source organisation unidentified)
@@ -542,9 +542,9 @@ resale_status: unknown
 last_checked_at: 2026-10-08
 -->
 
-## Earlier incidents discovered late and integrated into the September corpus
+## Earlier incidents integrated into the September corpus
 
-> These records concern incidents that occurred before September 2026. They are integrated into the September editorial corpus because they were identified and verified late, before publication of the monthly report. The incident date remains the actual date or the best-supported documented window; the AFRINTEL discovery/integration date is recorded separately.
+> These records concern incidents that occurred before September 2026. They are integrated into the September editorial corpus for retrospective tracking. The incident date remains the actual date or the best-supported documented window; it must not be confused with the publication date.
 
 ### January 3, 2026 - integrated September 1, 2026
 #### 🇿🇦 South Africa - Constantia Pharmacy
@@ -832,7 +832,7 @@ Cartrack confirmed a ransomware incident detected on August 26. Affected servers
 
 ## September ransomware publications
 
-> These records originate from the local `AFRINTEL_Victimes_Africaines_Septembre_2026.xlsx` workbook. The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.
+> The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.
 
 ### September 1, 2026
 #### 🇪🇬 Egypt - Holding Company for Construction and Development (HCCD)
@@ -846,7 +846,6 @@ Cartrack confirmed a ransomware incident detected on August 26. Affected servers
 
 - **Independent verification as of 18 October 2026:** Only the listing in Krybit claim trackers is corroborated; no HCCD statement or verifiable investigation proving an intrusion into its systems was found.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35624
 
 Krybit published a claim naming the Holding Company for Construction and Development. The date reflects the listing observation; compromise, volume, encryption and exfiltration remain unknown.
 
@@ -861,7 +860,6 @@ Krybit published a claim naming the Holding Company for Construction and Develop
 
 - **Independent verification as of 18 October 2026:** OSINT aggregators relay a Krybit claim without independent evidence of compromise or an identified Mecca High Feed Factory statement. Some databases disagree on country: do not revise geographical attribution without checking.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35627
 
 Krybit published a claim targeting Mecca High Feed Factory, described as an Egyptian animal-feed manufacturer. Technical evidence and actual impact are not established.
 
@@ -876,7 +874,6 @@ Krybit published a claim targeting Mecca High Feed Factory, described as an Egyp
 
 - **Independent verification as of 18 October 2026:** Multiple leak-site indices reproduce a Krybit claim naming Seashell Hospital, but no hospital notification or independent forensic confirmation was found. Disruption, patient-data exposure and encryption remain unestablished.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35637
 
 Krybit published a claim targeting Seashell Hospital, a private Egyptian hospital. No reviewed public element confirms access, encryption or exfiltration.
 
@@ -892,7 +889,12 @@ Krybit published a claim targeting Seashell Hospital, a private Egyptian hospita
 
 - **Independent verification as of 18 October 2026:** The LockBit5 claim naming VSB Attorneys is recorded by leak-site monitors, without an identified company response or independent proof of intrusion.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35798
+  **Local artefact analysis:** the supplied directory contains a **1,082,440,568-byte** RAR5 volume identified as multipart, plus a second empty RAR file. A read-only test identifies an incomplete multipart archive and reports an unexpected end together with a data error on a PDF entry. No file was extracted or executed; content, actual volume, authenticity and origin remain unknown. The presence of this fragment is not sufficient to establish a successful data disclosure.
+
+- **Analysis scope:** file type, size and archive structure were checked; an integrity test was performed without exploitable extraction. No document or personal data contained in the archive was analysed.
+
+- **Observed elements:** LockBit5 claim and locally supplied multipart RAR5 artefact. The empty file and incomplete fragment do not constitute an exploitable corpus.
+
 
 Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm. Compromise and data scope are unconfirmed.
 
@@ -907,7 +909,6 @@ Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm
 
 - **Independent verification as of 18 October 2026:** Public search results reproduce The Gentlemen’s claim against Nile Projects Trading; no official acknowledgement, regulatory notice or forensic verification establishes a confirmed incident.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35813
 
 TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian group active in retail, real estate and distribution. No evidence confirms access or exfiltration.
 
@@ -924,7 +925,6 @@ TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian grou
 
 - **Additional verification sources:** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35817
 
 TheGentlemen published a claim targeting Hollard Insurance Group. The source corpus describes the insurer and its activities but provides no independent compromise evidence.
 
@@ -941,7 +941,6 @@ TheGentlemen published a claim targeting Hollard Insurance Group. The source cor
 
 - **Additional verification sources:** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35859
 
 **Original claim context:** Direwolf named RelyComply in a leak-site listing. The company later confirmed unauthorised access to some systems and identified an apparent third-party zero-day exploitation path. Direwolf involvement, encryption and the volume of any extracted data remain unproven.
 
@@ -963,7 +962,7 @@ TheGentlemen published a claim targeting Hollard Insurance Group. The source cor
 
 - **Independent verification as of 18 October 2026:** No hotel-group statement or independent public confirmation of intrusion was identified. The image corpus strengthens the observation that data was made available in association with the listing, but does not confirm that the passports originated from La Sultana systems or concern its customers, employees or partners.
 
-- **Sources / Observed elements:** Krybit publication captured on 14 September 2026; local corpus of 138 JPEG scans associated with the collection; local AFRINTEL workbook, entry ID 35923. Raw artifacts remain outside the repository.
+- **Sources / Observed elements:** Krybit publication captured on 14 September 2026; local corpus of 138 JPEG scans associated with the collection. Raw artifacts remain outside the repository.
 
 Krybit published a claim targeting La Sultana Hotel Group in Morocco. The listing shown as published and the local scan corpus indicate data availability associated with the publication. They do not establish initial access, provenance from La Sultana systems, encryption, completeness or the number of persons concerned.
 
@@ -978,7 +977,6 @@ Krybit published a claim targeting La Sultana Hotel Group in Morocco. The listin
 
 - **Independent verification as of 18 October 2026:** Several CTI feeds list Krybit’s claim against the Egyptian Airports Company domain. No acknowledgement by EAC or an Egyptian authority, or evidence of impact on operational airport systems, was found.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 35917
 
 Krybit published a claim targeting the Egyptian Airports Company. The publication identifies the organisation and sector; technical outcome and any exposure remain unknown.
 
@@ -996,7 +994,6 @@ Krybit published a claim targeting the Egyptian Airports Company. The publicatio
 
 - **Additional verification sources:** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36039
 
 **Original claim context:** RansomHouse named the Namibian Defence Force in its listing. NAM-CSIRT subsequently confirmed unauthorised activity on the Ministry of Defence network and associated it with RansomHouse, while neither encryption nor data exfiltration was publicly demonstrated.
 
@@ -1013,7 +1010,6 @@ Krybit published a claim targeting the Egyptian Airports Company. The publicatio
 
 - **Additional verification sources:** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36122
 
 N0n published a claim targeting outsourced support operations linked to PayPal and Transcom WorldWide in Tunisia. The post mentions internal systems and a settlement deadline, but does not confirm access, the stated volumes or operational impact.
 
@@ -1031,7 +1027,6 @@ N0n published a claim targeting outsourced support operations linked to PayPal a
 
 - **Additional verification sources:** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36161
 
 Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial institution. No independent element confirms intrusion or data exposure.
 
@@ -1046,7 +1041,6 @@ Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial instit
 
 - **Independent verification as of 18 October 2026:** Grupolider’s entry on The Gentlemen’s leak site remains an allegation; no official confirmation or technically verified link between the claimed domain and group entities was found.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36171
 
 TheGentlemen published a claim targeting Grupolider, an Angolan group active in agriculture, logistics, construction and distribution. Compromise and claimed volume remain unknown.
 
@@ -1065,7 +1059,6 @@ TheGentlemen published a claim targeting Grupolider, an Angolan group active in 
 
 - **Additional verification sources:** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36284
 
 Krybit published a claim targeting Air Tanzania Company Limited, Tanzania's national airline. A local sample associated with the publication was reviewed read-only: **114 files** totalling **676,972,266 bytes**, including **112 valid images** and **2 non-image files despite the `.jpg` extension**. The valid images comprise **101 three-frame MPO files** and **11 single-frame JPEGs**, for **314 embedded views** in total. No SHA-256 duplicates were detected.
 
@@ -1081,7 +1074,6 @@ This structural consistency supports the presence of an image corpus associated 
 
 - **Independent verification as of 18 October 2026:** Only Armada Credit Bureau’s appearance on a Spirals leak-site listing is corroborated. No company statement or official Ugandan notice demonstrating intrusion was found.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36306
 
 Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan credit-reporting and analytics company. No independent evidence confirms compromise.
 
@@ -1097,7 +1089,6 @@ Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan cred
 
 - **Independent verification as of 18 October 2026:** The Vexy claim against Majani Insurance Brokers is indexed in threat-intelligence databases without a public company acknowledgement or independent technical corroboration.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36310
 
 Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan insurance broker. The vector, affected systems and any exfiltration remain unknown.
 
@@ -1115,7 +1106,6 @@ Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan i
 
 - **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36351
 
 TheGentlemen published a claim targeting Guardrisk, a South African insurance group. The publication provides organisational context but does not confirm access or the scope of held data.
 
@@ -1131,7 +1121,6 @@ TheGentlemen published a claim targeting Guardrisk, a South African insurance gr
 
 - **Independent verification as of 18 October 2026:** The INC Ransom listing naming BCX is reproduced by CTI platforms; no BCX or Telkom statement, regulatory filing or independent investigation confirming encryption, exfiltration or client compromise was found.
 
-- **Sources / Evidence:** local AFRINTEL workbook, entry ID 36421
 
 Incransom published a claim targeting BCX / Business Connexion and stated **500 GB**, 4,224,088 files and 596,613 folders, along with source code and business applications. These volumes and categories are actor claims; access, exfiltration and completeness are unconfirmed.
 

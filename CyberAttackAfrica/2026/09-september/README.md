@@ -120,6 +120,10 @@ xychart-beta
     bar [24, 10, 4, 2, 1]
 ```
 
+![Incident-type comparison](AFRINTEL_figures/09_types_comparison.png)
+
+*Figure: incident-type comparison between the 29 September-dated publications and the complete 41-record corpus.*
+
 ### Ransomware
 
 The 24 Ransomware records correspond to group publications or observations in a ransomware context. A listing alone does not establish encryption, complete exfiltration or ransom payment. The most visible labels are `krybit` with 6 records and `TheGentlemen` with 4. For priority cases, the lifecycle should remain separated into listing, sample, deadline, disclosure and last verification.
@@ -282,18 +286,19 @@ The September subset should be read as a corpus of publications and observations
 
 | Priority case | Observed or reported elements | Still unknown |
 |---|---|---|
-| MDCN - Nigeria | Structured extract presented as linked to the organization | Technical provenance, unique persons, intrusion and full volume |
+| MDCN - Nigeria | Local 50-row, 24-column CSV with checked structure | Technical provenance, unique persons, intrusion and full volume |
 | Centre Atlantique Formation - Morocco | Training records and documents described in the sample | Completeness, number of people and source system |
 | SEPE - Angola | Files and JSON structures analysed in the card | Actual exfiltrated volume, encryption and access vector |
 | AFRICA-TECH - Mali | Published file set examined in the card | Completeness, backup destruction and victim confirmation |
 | FNB - South Africa | Images of apparent statements analysed | Banking provenance, account access and full business authenticity |
+| VSB Attorneys - South Africa | Incomplete multipart RAR5 fragment tested read-only | Content, completeness and actual disclosure |
 | Air Tanzania - Tanzania | Files and images described in the available sample | Acquisition source, unique persons and full scope |
 
 For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claimed values when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
 
 Full details, sources and limitations for each case are retained in the [French victim cards](./victims_FR.md) and [English victim cards](./victims.md).
 
-Selected measurements from the reviewed cases illustrate the limits of claimed volumes. The SEPE sample contains **1,189 local files**, including **111 JSON files**, totalling **544,921,521 bytes**, while the publication claims **364,841 files**, **110,021 users** and **179 GB**. The FCT-IRS PDF contains **2,541 email-pattern matches**, **2,540 distinct textual values** and **61 Nigerian phone-pattern matches**; these are technical matches, not affected-person counts. Apollo 21 and ARCA references to **400 GB** and **400G** remain actor claims, not measured equivalent datasets.
+Selected measurements from the reviewed cases illustrate the limits of claimed volumes. The SEPE sample contains **1,189 local files**, including **111 JSON files**, totalling **544,921,521 bytes**, while the publication claims **364,841 files**, **110,021 users** and **179 GB**. The FCT-IRS PDF contains **2,541 email-pattern matches**, **2,540 distinct textual values** and **61 Nigerian phone-pattern matches**; these are technical matches, not affected-person counts. Apollo 21 and ARCA references to **400 GB** and **400G** remain actor claims, not measured equivalent datasets. The VSB Attorneys directory contains an incomplete **1,082,440,568-byte** RAR5 fragment and an empty companion file; the archive test failed, so no disclosure is treated as analysed.
 
 ### 9.1 Ransomware publication lifecycle
 

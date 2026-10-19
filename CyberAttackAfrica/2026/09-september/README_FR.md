@@ -56,7 +56,6 @@ L’activité observée en septembre est dominée par les annonces attribuées �
 | Échantillon déclaré/publié            | 12 / 29 (41,4 %) | Présence d'un extrait ou d'un corpus local, sans conclusion automatique sur l'accès |
 | Lot intégral publié selon la collecte | 1 / 29 (3,4 %)   | AFRICA-TECH : 10 fichiers publiés examinés         |
 | Afrique du Sud + Égypte               | 15 / 29 (51,7 %) | Concentration de veille, non taux d'attaque        |
-| Fiches tardives du 16 octobre         | 18 / 29 (62,1 %) | Provenance : registre AFRINTEL intégré             |
 
 ## Cinq conclusions stratégiques
 
@@ -136,7 +135,7 @@ Les causes possibles d’une absence de publication restent inconnues : négocia
 
 > **RÈGLE DE CONFIANCE**
 >
-> Échelle « High / Medium » : lorsqu’elle figure dans une fiche, elle qualifie la fiabilité de certains liens documentaires ou observations, et non nécessairement la certitude de l’intrusion. Les 18 fiches issues du registre du 16 octobre ne portent généralement pas de score de confiance ou d’impact : aucune valeur n’a été imputée.
+> Échelle « High / Medium » : lorsqu’elle figure dans une fiche, elle qualifie la fiabilité de certains liens documentaires ou observations, et non nécessairement la certitude de l’intrusion. Les fiches complémentaires ne portent généralement pas de score de confiance ou d’impact : aucune valeur n’a été imputée.
 
 # 02. Tableau de bord - septembre 2026
 
@@ -150,7 +149,7 @@ Le classement en deux cohortes corrige un biais majeur : les informations histor
 
 ![Figure 2 : profondeur documentaire](AFRINTEL_figures/08_profondeur.png)
 
-*FIG. 02 - Profondeur documentaire : 11 analyses détaillées et 18 fiches issues du registre AFRINTEL intégré le 16 octobre.*
+*FIG. 02 - Profondeur documentaire : 11 analyses détaillées et 18 fiches complémentaires.*
 
 Les 18 fiches de registre ont principalement une valeur d’alerte et de qualification initiale. Elles ne doivent pas être mises au même niveau d’étayage que les dossiers accompagnés d’un examen d’échantillons.
 
@@ -176,27 +175,31 @@ Ransomware représente 20 / 29 fiches (69,0 %). La catégorie « ransomware » d
 
 La cohorte comprend 12 fiches `Claim - Unverified`, 12 fiches avec échantillon publié, 2 expositions de données indirectes reconnues, 1 dossier `Victim Confirmed`, 1 dossier `Government Confirmed` et 1 dossier `Data Fully Published`. Ces catégories décrivent des niveaux d’observation différents et ne permettent pas de déduire automatiquement l’exfiltration complète, le vecteur ou les volumes revendiqués.
 
+![Figure 5 : comparaison des types d'incidents](AFRINTEL_figures/09_types_comparison.png)
+
+*FIG. 05 - Comparaison des types d'incidents entre les 29 publications datées de septembre et le corpus complet de 41 fiches.*
+
 ## 2.3. Chronologie des publications
 
-![Figure 5 : chronologie des publications](AFRINTEL_figures/04_chronologie.png)
+![Figure 6 : chronologie des publications](AFRINTEL_figures/04_chronologie.png)
 
-*FIG. 05 - Dates de première publication affichées en septembre ; 29 fiches sur 17 jours distincts.*
+*FIG. 06 - Dates de première publication affichées en septembre ; 29 fiches sur 17 jours distincts.*
 
 Les pointes des 1er, 7, 12 et 21 septembre comptent chacune trois publications dans le corpus. Ces pics peuvent correspondre à des dépôts groupés sur des sites de fuite ou à la sélection des sources ; ils ne renseignent pas sur des dates communes d’intrusion. Certains horodatages originaux ne précisent pas le fuseau horaire.
 
 ## 2.4. Localisation et type revendiqué
 
-![Figure 6 : pays et typologie](AFRINTEL_figures/07_pays_typo.png)
+![Figure 7 : pays et typologie](AFRINTEL_figures/07_pays_typo.png)
 
-*FIG. 06 - Croisement du pays et de la typologie déclarée ; toutes les cellules sont des comptes de publications.*
+*FIG. 07 - Croisement du pays et de la typologie déclarée ; toutes les cellules sont des comptes de publications.*
 
 Les huit entrées sud-africaines de septembre comprennent cinq Ransomware, deux Data Leak et un System Intrusion. Les deux fiches nigérianes concernent des fuites revendiquées. L’Égypte combine cinq mentions ransomware et deux fuites de données. Ces différences reflètent le périmètre observé, non les pratiques d’attaque nationales.
 
 ## 2.5. Secteurs exposés dans le registre
 
-![Figure 7 : répartition sectorielle](AFRINTEL_figures/05_secteurs.png)
+![Figure 8 : répartition sectorielle](AFRINTEL_figures/05_secteurs.png)
 
-*FIG. 07 - Regroupement éditorial en dix familles sectorielles ; chaque cible compte une fois.*
+*FIG. 08 - Regroupement éditorial en dix familles sectorielles ; chaque cible compte une fois.*
 
 La finance, l’assurance et la conformité rassemblent sept publications (24,1 %). L’immobilier / construction / architecture et le transport / logistique en totalisent quatre chacun. La santé, le secteur public et les services technologiques en comptent trois chacun ; l’éducation deux. Les autres familles comptent une entrée.
 
@@ -204,9 +207,9 @@ La sensibilité d’un domaine ne suffit pas à établir un impact. Néanmoins, 
 
 ## 2.6. Pseudonymes et concentrations
 
-![Figure 8 : principaux acteurs et pseudonymes](AFRINTEL_figures/06_acteurs.png)
+![Figure 9 : principaux acteurs et pseudonymes](AFRINTEL_figures/06_acteurs.png)
 
-*FIG. 08 - Principaux pseudonymes associés aux fiches de septembre. « Autres » inclut 13 entrées.*
+*FIG. 09 - Principaux pseudonymes associés aux fiches de septembre. « Autres » inclut 13 entrées.*
 
 Le pseudonyme krybit est mentionné dans six fiches, TheGentlemen dans quatre. BLACKLOCKS, N0n et lockbit5 sont mentionnés deux fois chacun. Les treize autres fiches correspondent à des acteurs ou comptes différents, dont un cas non attribué.
 
@@ -304,9 +307,9 @@ La fiche issue du registre AFRINTEL indique 114 fichiers pour 676 972 266 octets
 
 **Intérêt défensif :** valider la provenance des éléments uniquement par les voies autorisées et surveiller l’exploitation frauduleuse de documents d’identité et de voyage, sans reconnaissance faciale ni reproduction de données personnelles.
 
-## 3.10. Lecture agrégée des 18 entrées de registre
+## 3.10. Lecture agrégée des 18 fiches complémentaires
 
-Les dix-huit fiches ajoutées le 16 octobre comprennent douze revendications `Claim - Unverified`, deux publications avec échantillon ou corpus local, deux expositions de données indirectes reconnues et deux dossiers avec confirmation d’accès ou d’incident. Parmi les cibles citées figurent des organisations de finance et d’assurance (Hollard, RelyComply, Siinqee Bank, Armada, Majani, Guardrisk), des services stratégiques ou de transport (Egyptian Airports Company, Namibian Defence Force, Air Tanzania), des services professionnels ou industriels (BCX, VSB Attorneys, HCCD) et d’autres acteurs du tourisme et de la distribution.
+Les dix-huit fiches complémentaires comprennent douze revendications `Claim - Unverified`, deux publications avec échantillon ou corpus local, deux expositions de données indirectes reconnues et deux dossiers avec confirmation d’accès ou d’incident. Parmi les cibles citées figurent des organisations de finance et d’assurance (Hollard, RelyComply, Siinqee Bank, Armada, Majani, Guardrisk), des services stratégiques ou de transport (Egyptian Airports Company, Namibian Defence Force, Air Tanzania), des services professionnels ou industriels (BCX, VSB Attorneys, HCCD) et d’autres acteurs du tourisme et de la distribution.
 
 Leurs fiches ne fournissent généralement ni élément de réponse à incident, ni diagnostic du point d’accès, ni quantité réellement dérobée. À ce stade, la bonne action CTI est la qualification et la surveillance des confirmations, pas l’ajout de nouvelles compromissions prouvées.
 
@@ -535,7 +538,7 @@ Statuts : S0 = « Claim - Unverified » ; S1 = « Claim - Data Sample Published 
 | 27/09    | Afrique du Sud - First National Bank (FNB)                                               | Blacknet00                      | Ran.     | S1         |
 | 29/09    | Afrique du Sud - BCX / Business Connexion                                                | incransom                       | Ran.     | S0         |
 
-Lecture : la date provient du champ « publication initiale », et non de la date de découverte. Les fiches S0 reposent essentiellement sur des annonces du registre du 16 octobre ; S1 qualifie l'existence d’un extrait, sans démontrer la source de l’accès.
+Lecture : la date provient du champ « publication initiale », et non d'une date de découverte. Les fiches S0 reposent essentiellement sur des annonces de publication ; S1 qualifie l'existence d’un extrait, sans démontrer la source de l’accès.
 
 # Annexe B - Les 12 incidents antérieurs intégrés
 
@@ -560,7 +563,7 @@ Les dates et statuts ci-dessus se réfèrent aux faits survenus de janvier à ao
 
 | **DOSSIER**       | **ÉLÉMENTS DÉCRITS DANS LA SOURCE**                   | **CE QU’ILS NE PROUVENT PAS**                            |
 |-------------------|-------------------------------------------------------|----------------------------------------------------------|
-| MDCN              | 50 lignes fournies ; 24 champs ; 65 580 annoncé       | Personnes uniques, intrusion ni provenance de la base    |
+| MDCN              | CSV local de 50 lignes ; 24 champs ; structure contrôlée | Personnes uniques, intrusion ni provenance de la base    |
 | Madinaty          | Extrait arabe visible ; 0,5 % annoncé                 | Organisme détenteur, authenticité totale, adresses       |
 | Centre Atlantique | 1 155 dossiers ; 3 465 objets ; ~4 Go extraits        | Personnes uniques, totalité de la base, 27 % exact       |
 | BUC               | Capture avec logins et chaînes partiellement masqués  | Validité d'un mot de passe ou compromission de compte    |
@@ -568,6 +571,7 @@ Les dates et statuts ci-dessus se réfèrent aux faits survenus de janvier à ao
 | Apollo 21         | 14 images, dont 12 échantillons                       | 400 GB, origine système, chiffrement                     |
 | FCT-IRS           | PDF exporté de 314 pages ; e-mails au format détectés | Personnes uniques, « full breach » ni extraction système |
 | ARCA Unlimited    | 18 images, dont 17 échantillons                       | « 400G », intrusion chez les clients, chiffrement        |
+| VSB Attorneys      | Fragment RAR5 multipartie de 1 082 440 568 octets, test en échec | Contenu, exhaustivité et divulgation réelle             |
 | AFRICA-TECH       | 10 fichiers publiés ; 39 pages PDF                    | Destruction sauvegardes ou volume de l'exfiltration      |
 | Pharma 5          | 4 images, une seule page distincte lisible            | 50 GB, totalité d'un document de 5 pages                 |
 | FNB               | 5 JPEG de relevés apparents                           | Provenance bancaire, accès à des comptes                 |
@@ -598,7 +602,7 @@ Un chiffre de taille revendiquée ne mesure pas le volume réellement volé. Un 
 
 ## D.2. Calculs auditables
 
-Corpus = 41 fiches uniques. Cohorte de septembre = 29 (70,7 % de 41) ; antérieurs intégrés = 12 (29,3 %). Type ransomware = 20 / 29 = 69,0 % ; data leak = 7 / 29 = 24,1 % ; system intrusion = 2 / 29 = 6,9 %. Statuts de la cohorte : 12 `Claim - Unverified`, 12 `Claim - Data Sample Published`, 2 expositions de données indirectes reconnues, 1 `Victim Confirmed`, 1 `Government Confirmed` et 1 `Data Fully Published`. Afrique du Sud + Égypte = (8 + 7) / 29 = 51,7 %. Finance / assurance / conformité = 7 / 29 = 24,1 %. Registre intégré le 16 octobre = 18 / 29 = 62,1 %.
+Corpus = 41 fiches uniques. Cohorte de septembre = 29 (70,7 % de 41) ; antérieurs intégrés = 12 (29,3 %). Type ransomware = 20 / 29 = 69,0 % ; data leak = 7 / 29 = 24,1 % ; system intrusion = 2 / 29 = 6,9 %. Statuts de la cohorte : 12 `Claim - Unverified`, 12 `Claim - Data Sample Published`, 2 expositions de données indirectes reconnues, 1 `Victim Confirmed`, 1 `Government Confirmed` et 1 `Data Fully Published`. Afrique du Sud + Égypte = (8 + 7) / 29 = 51,7 %. Finance / assurance / conformité = 7 / 29 = 24,1 %.
 
 ## D.3. Sources documentaires
 
@@ -610,7 +614,7 @@ Les fichiers F1 et F2 sont deux versions linguistiques du même corpus AFRINTEL.
 
 Le corpus est produit à partir du monitoring des sites de groupes ransomware, leak sites et forums underground. Ces plateformes constituent les sources primaires d’observation des publications, victimes affichées, échantillons, échéances et divulgations éventuelles.
 
-Les captures, échantillons, manifestes externes et éventuels classeurs mentionnés dans les fiches ne sont pas intégrés aux fichiers F1/F2. Le présent rapport reprend les informations documentées dans les fiches et ne prétend pas avoir réexaminé chaque artefact brut.
+Les captures, échantillons et manifestes externes mentionnés dans les fiches ne sont pas intégrés aux fichiers F1/F2. Le présent rapport reprend les informations documentées dans les fiches et ne prétend pas avoir réexaminé chaque artefact brut.
 
 Les sites institutionnels, communiqués, liens médias et autres références signalés dans \[F1\]/\[F2\] sont conservés comme contexte associé aux fiches. Aucune validation complémentaire n’a été réalisée pour ce rapport après la date de collecte indiquée.
 
