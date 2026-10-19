@@ -1,140 +1,144 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-CTI-blue)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-September%202026-blue)
-![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
+# AFRINTEL - Monthly Cyber Threat Intelligence Report
 
-# AFRINTEL - Monthly CTI Report
+**Africa - September 2026**
+**Ransomware, data leaks and extortion monitoring**
 
-## CTI Report - September 2026
+Monitoring overview of publications affecting African organisations, based on ransomware-group sites, leak sites and underground forums.
 
-**29 publications dated in September within a corpus of 41 documented records**
+| **29** | **12** | **41** |
+|:---:|:---:|:---:|
+| September-dated publications | Earlier incidents integrated | Total unique corpus |
 
-👉🏾 [French version](./README_FR.md) · [Documented victims and incidents](./victims.md)
+**Edition:** 17 October 2026
+**Scope:** Africa, AFRINTEL OSINT and monitoring records
+**Audience:** CISOs, SOC teams, CERT/CSIRT teams, risk owners and CTI analysts
+**Distribution:** Monitoring analysis. No personal data or criminal links reproduced.
 
-## 1. Executive summary
+## Reading note
 
-The AFRINTEL September 2026 folder contains **41 documented records** across **14 African countries**. It includes **29 publications dated in September**, spanning **12 countries**, and **12 earlier incidents** integrated retrospectively. By the primary incident type recorded in the cards, Ransomware represents **24 records (58.5%)**, followed by Data Leak with **10 (24.4%)**. Four System Intrusion records, two Defacements and one Access Sale complete the corpus.
+This report describes a monitoring corpus built from observed underground publications. It is not a list of 29 confirmed intrusions and it is not an exhaustive measure of cybercrime in Africa.
 
-Within the 29-publication September subset alone, **20 records are classified as Ransomware (69.0%)**, **7 as Data Leak (24.1%)** and **2 as System Intrusion (6.9%)**. These ratios must not be mixed with the complete-corpus statistics, which include the 12 earlier records.
+The English and French victim files contain the same 41 records and are treated as one bilingual source. Only 29 records concern publications dated in September 2026; the other 12 concern earlier incidents integrated retrospectively. Publication dates are not automatically incident dates. A victim listing, a visible sample and a later disclosure are separate events. Payment, negotiation, resale or removal are not inferred from the presence or absence of a file.
 
-The collection corpus goes from **29 records in August to 41 records in the September folder (+12; +41.4%)**. This gap describes AFRINTEL collection and is not an estimate of the real change in compromises. The corpus combines September publications and earlier incidents integrated for retrospective tracking; these collection dimensions must not be added as mutually exclusive categories.
+## Executive summary
 
-South Africa accounts for **16 records (39.0%)**, followed by Egypt with 7, and Morocco and Kenya with 3 each. Health and Government / Administration each appear in five records after cautious sector normalization.
+The September signal is dominated by ransomware-related claims, but most publications are not corroborated by independent technical evidence.
 
-Observation status is heterogeneous: **13 records** are `Claim - Unverified`, **12** are `Claim - Data Sample Published`, **9** are `Victim Confirmed`, **2** are `Corroborated`, **1** is `Data Fully Published`, **2** are `Government Confirmed` and **2** are `Third-Party Exposure Confirmed`. These statuses describe the public monitoring state and do not automatically establish complete exfiltration.
+| Indicator | Value | CTI reading |
+|---|---:|---|
+| Corpus records | 41 | 29 September publications and 12 earlier incidents |
+| September publications | 29 | Across 12 countries |
+| Ransomware | 20 / 29 (69.0%) | Monitoring label or claim, not proven encryption |
+| Data Leak | 7 / 29 (24.1%) | Publications concerning alleged data exposure |
+| System Intrusion | 2 / 29 (6.9%) | Documented access or attempt, with limited outcome |
+| Claim - Unverified | 12 / 29 (41.4%) | Publication without associated public confirmation |
+| Claim - Data Sample Published | 12 / 29 (41.4%) | Visible extract or local corpus, without automatic access confirmation |
+| Data Fully Published | 1 / 29 (3.4%) | AFRICA-TECH: 10 released files examined |
+| South Africa + Egypt | 15 / 29 (51.7%) | Monitoring concentration, not an attack rate |
 
-### CTI reading to retain
+### Five strategic conclusions
 
-- The increase from **29 to 41 records** mainly reflects expanded collection and consolidation, not a demonstrated increase in real compromises.
-- The **29 September publications** are dominated by ransomware labels, but most remain at the claim or published-sample stage.
-- The most useful observations consist of structured samples or released sets that were actually examined; this strengthens the assessment of a documentary link without automatically establishing the access vector, complete exfiltration or encryption.
-- Defensive priorities are the protection of identities and sensitive documents, monitoring of exports and privileged accounts, and prevention of payment fraud and impersonation.
+1. Disclosure-based extortion dominates the visible signal: 20 of 29 September publications are classified as Ransomware, although encryption generally cannot be confirmed.
+2. The corpus is geographically concentrated: South Africa accounts for 8 publications and Egypt for 7. This also reflects monitored sources, campaign visibility and editorial selection.
+3. The intelligence value is highest where artefacts were observed: Centre Atlantique Formation, SEPE, AFRICA-TECH, Apollo 21, ARCA and FCT-IRS provide more substance than a simple leak-site listing.
+4. Priority risks include identity fraud, payment fraud, reuse of administrative documents, targeted phishing and disclosure of plans, banking documents or certificates. Operational damage is not assumed.
+5. Two September-dated cases have confirmation statuses in the cards: RelyComply is recorded as `Victim Confirmed - Unauthorized Access`, and the Namibian Defence Force as `Government Confirmed - Unauthorized Access`. These statuses concern access or an incident, not automatically encryption, exfiltration or claimed volumes.
 
-The statuses must be read through three separate distinctions: **observed publication**, **visible sample or released data**, and **public confirmation**. These levels are not interchangeable.
+## 1. Scope, sources and method
 
-## 2. Collection-corpus gap: August / September 2026
+### 1.1 Three timelines to keep separate
 
-| Indicator | August 2026 | September 2026 | Change |
-|---|---:|---:|---:|
-| Collection-corpus records | 29 | 41 | **+12 (+41.4%)** |
-| Ransomware | 17 | 24 | **+7 (+41.2%)** |
-| Data Leak | 11 | 10 | **-1 (-9.1%)** |
-| Access Sale | 1 | 1 | **Stable** |
-| System Intrusion | 0 | 4 | **New** |
-| Defacement | 0 | 2 | **New** |
+**Incident date:** the actual time of access or disruption, often unknown for September publications.
+**Initial publication date:** the date displayed on a forum, extortion list or message, used to place a record in the September publication cohort.
+**Discovery or integration date:** when AFRINTEL obtained an artefact or integrated the case, which may be later than the month concerned.
 
-This comparison uses closed collection corpora. It is not a like-for-like comparison of attacks occurring during each month because the September corpus includes 12 earlier incidents. It does not convert discovery, publication or integration dates into intrusion dates. A real change in compromises cannot be inferred from these totals alone.
+An item published on 27 September and reviewed on 8 October remains a September publication. Conversely, a January 2026 incident added to the inventory in September is not treated as an incident occurring in September.
 
-```mermaid
-xychart-beta
-    title "Collection-corpus records - August / September folder 2026"
-    x-axis [August, September]
-    y-axis "Records" 0 --> 45
-    bar [29, 41]
-```
+### 1.2 Observation status and documentary depth
 
-## 3. Scope and methodology
+| Status | Operational meaning | Limitation |
+|---|---|---|
+| Claim - Unverified | Publication observed without associated public confirmation | A listing alone does not establish access |
+| Claim - Data Sample Published | Publication accompanied by an extract or images | Data origin may remain unknown |
+| Data Fully Published | Release reviewed according to the collection | Does not prove that all obtained data was released |
+| Victim / Government Confirmed | Public confirmation by an organisation or authority | Vector and scope may remain unknown |
+| Corroborated | Several public elements converge | Does not establish every claimed effect |
 
-- Editorial source: the validated `victims_FR.md` / `victims.md` pair.
-- One card represents one canonical incident documented in the September folder; the corpus also contains 12 earlier incidents integrated for retrospective tracking.
-- For incidents predating the collection month, the AFRINTEL discovery/integration date is kept separately from the historical incident and publication dates. No discovery/integration field is added to incidents from the current collection month.
-- A claim published on a ransomware site, leak site or underground forum is recorded as a monitoring observation. It is not automatically treated as a confirmed compromise.
-- Samples and screenshots were handled in minimized form; no raw personal data, credentials, secrets or tokens are reproduced.
-- Secondary effects do not automatically create a second record.
-
-Ransomware-group sites, leak sites and underground forums are treated as **primary monitoring sources**: they document a listed victim, displayed account, publication date, deadline, visible sample or released data. Their content is not treated as official confirmation. A visible sample may support a documentary link, but attribution, access vector, completeness, encryption and the fate of the negotiation remain separate dimensions.
-
-The appearance of a victim, the publication of a sample, the expiry of a deadline and the later release of data are separate events. When no data is visible after a deadline, AFRINTEL records only that no public release was observed at the last check. Payment, negotiation, removal, resale or transfer are not inferred without specific public information and remain `unknown` by default.
-
-### 3.1 Additional documentary-depth scale
-
-To avoid conflating public status with analytical depth, the report also uses this descriptive scale:
+To avoid conflating status and analytical depth, AFRINTEL also uses this descriptive scale:
 
 | Level | Description | What cannot be inferred |
 |---|---|---|
 | P0 - Publication observed | Victim, domain, account or threat displayed at a given time | Intrusion, data authenticity or technical responsibility |
 | P1 - Visible or reviewed sample | Extract, image or file structure consistent with the organisation | Certain technical source, total volume, unique persons or encryption |
-| P2 - Published batch reviewed | Batch made accessible during collection and characterised locally | Completeness of exfiltration, initial access, restoration or payment |
+| P2 - Published batch reviewed | Batch made accessible during collection and characterised locally | Complete exfiltration, initial access, restoration or payment |
 
-This scale complements AFRINTEL statuses and does not replace them. A third-party exposure may be confirmed at the exposure level without establishing a direct intrusion at the named organisation.
+This scale complements, but does not replace, AFRINTEL statuses. A third-party exposure can be confirmed at the exposure level without establishing a direct intrusion at the named organisation.
 
-## 4. Cohorts and incident types
+### 1.3 Methodological limits
 
-### 4.1 September-dated publications: 29 records
+The corpus is primarily based on monitoring ransomware-group sites, leak sites and underground forums, supplemented where available by public communications and visible material associated with the publications. These sources document listings, displayed actors, dates, deadlines, samples and possible releases. They do not always establish initial access, data completeness or the outcome of a negotiation.
 
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | 20 | 69.0% |
-| Data Leak | 7 | 24.1% |
-| System Intrusion | 2 | 6.9% |
-| **Total** | **29** | **100%** |
+The French and English victim files are the consolidated editorial record of this monitoring. Raw artefacts, screenshots and external manifests are not treated as official confirmation. No personal data, credentials, secrets or tokens are reproduced.
 
-This cohort is the basis for typological and narrative readings that concern September-dated publications only. It excludes the 12 earlier incidents integrated retrospectively.
+The corpus is not exhaustive. Visibility varies by country, language, sector, source availability and publication access. Counts measure AFRINTEL's observable monitoring activity, not the actual number of intrusions.
 
-### 4.2 Complete September folder corpus: 41 records
+For ransomware cases, listing, sample, deadline, disclosure and last verification are tracked separately. Payment, negotiation, removal, resale and transfer remain `unknown` unless specific public information supports a qualification.
 
-| Incident type | Records | Share |
-|---|---:|---:|
-| Ransomware | 24 | 58.5% |
-| Data Leak | 10 | 24.4% |
-| System Intrusion | 4 | 9.8% |
-| Defacement | 2 | 4.9% |
-| Access Sale | 1 | 2.4% |
-| **Total** | **41** | **100%** |
+## 2. September dashboard
 
-```mermaid
-pie showData
-    title Incident types  -  complete September folder corpus
-    "Ransomware" : 24
-    "Data Leak" : 10
-    "System Intrusion" : 4
-    "Defacement" : 2
-    "Access Sale" : 1
-```
+The following visualisations measure known AFRINTEL publications, not confirmed attacks.
 
-```mermaid
-xychart-beta
-    title "Incident types  -  complete September folder corpus"
-    x-axis [Ransomware, DataLeak, SystemIntrusion, Defacement, AccessSale]
-    y-axis "Records" 0 --> 30
-    bar [24, 10, 4, 2, 1]
-```
+![Figure 1: corpus composition](AFRINTEL_figures/01_corpus.png)
 
-![Incident-type comparison](AFRINTEL_figures/09_types_comparison.png)
+*Figure 1 - Unique corpus: 29 September publications and 12 earlier incidents.*
 
-*Figure: incident-type comparison between the 29 September-dated publications and the complete 41-record corpus.*
+![Figure 2: documentary depth](AFRINTEL_figures/08_profondeur.png)
 
-### Ransomware
+*Figure 2 - Documentary depth: 11 detailed analyses and 18 complementary monitoring cards.*
 
-The 24 Ransomware records correspond to group publications or observations in a ransomware context. A listing alone does not establish encryption, complete exfiltration or ransom payment. The most visible labels are `krybit` with 6 records and `TheGentlemen` with 4. For priority cases, the lifecycle should remain separated into listing, sample, deadline, disclosure and last verification.
+The 18 complementary cards mainly provide alerting and initial qualification. They should not be treated as equivalent to cases supported by reviewed samples or local artefacts.
 
-### Data Leak, System Intrusion and Defacement
+![Figure 3: publications by country](AFRINTEL_figures/02_pays.png)
 
-The ten Data Leak records include sample-backed publications, victim-confirmed cases and two indirect third-party exposures. The four System Intrusion records remain classified according to the primary observed nature, even when a ransomware claim is associated with them. The two Defacement records are not reclassified as Data Leak without separate evidence of data exposure.
+*Figure 3 - Countries associated with the 29 September publications.*
 
-## 5. Geographic distribution
+![Figure 4: classification and observation status](AFRINTEL_figures/03_typologie_preuve.png)
 
-### 5.1 September-dated publications: 29 records
+*Figure 4 - Incident type on the left and publication status on the right.*
+
+The September cohort contains 12 `Claim - Unverified` records, 12 `Claim - Data Sample Published` records, 2 acknowledged indirect exposures, 1 `Victim Confirmed` record, 1 `Government Confirmed` record and 1 `Data Fully Published` record. These categories describe different observation levels and do not automatically establish complete exfiltration, access vector or claimed volumes.
+
+![Figure 5: incident-type comparison](AFRINTEL_figures/09_types_comparison.png)
+
+*Figure 5 - Incident types in the 29 September-dated publications compared with the complete 41-record corpus.*
+
+The September publication cohort contains 20 Ransomware records, 7 Data Leak records and 2 System Intrusion records. The complete corpus contains 24 Ransomware, 10 Data Leak, 4 System Intrusion, 2 Defacement and 1 Access Sale records.
+
+![Figure 6: publication chronology](AFRINTEL_figures/04_chronologie.png)
+
+*Figure 6 - Displayed first-publication dates in September.*
+
+The peaks on 1, 7, 12 and 21 September each contain three publications. They may reflect grouped deposits or source selection and do not establish common intrusion dates.
+
+![Figure 7: country and incident type](AFRINTEL_figures/07_pays_typo.png)
+
+*Figure 7 - Country and declared incident-type cross-tabulation.*
+
+![Figure 8: sector distribution](AFRINTEL_figures/05_secteurs.png)
+
+*Figure 8 - Editorial grouping into ten sector families.*
+
+For the September cohort, Finance, Insurance and Compliance account for 7 publications (24.1%). Transport and Logistics and Real Estate, Construction and Architecture account for 4 each. Health, Government and Technology account for 3 each. These are corpus concentrations, not national attack rates.
+
+![Figure 9: most visible actors](AFRINTEL_figures/06_acteurs.png)
+
+*Figure 9 - Most frequent displayed actor labels in the September cohort.*
+
+The most visible labels are `krybit` (6), `TheGentlemen` (4), `BLACKLOCKS` (2), `N0n` (2) and `lockbit5` (2). The 13 remaining records include less frequent labels and records without public attribution. Actor labels do not constitute forensic attribution or a count of distinct groups.
+
+## 3. Geographic and sector distribution
+
+### September-dated publications: 29 records
 
 | Country | Records | Share |
 |---|---:|---:|
@@ -143,215 +147,66 @@ The ten Data Leak records include sample-backed publications, victim-confirmed c
 | Morocco | 3 | 10.3% |
 | Nigeria | 2 | 6.9% |
 | Angola | 2 | 6.9% |
-| Namibia | 1 | 3.4% |
-| Tunisia | 1 | 3.4% |
-| Ethiopia | 1 | 3.4% |
-| Mali | 1 | 3.4% |
-| Tanzania | 1 | 3.4% |
-| Uganda | 1 | 3.4% |
-| Kenya | 1 | 3.4% |
+| Namibia, Tunisia, Ethiopia, Mali, Tanzania, Uganda and Kenya | 1 each | 3.4% each |
 | **Total** | **29** | **100%** |
 
-This distribution concerns September-dated publications only. It must not be compared directly with the following table, which covers the complete 41-record corpus.
+For the complete 41-record corpus, South Africa accounts for 16 records, Egypt 7, Morocco and Kenya 3 each, Nigeria and Angola 2 each, and the other countries 1 each. This complete-corpus view includes the 12 earlier incidents.
 
-### 5.2 Complete September folder corpus: 41 records
+After cautious normalisation of sector labels in the complete corpus, Health and Government / Administration each account for 5 records, Insurance for 3, and Real Estate, Education, Financial Services and Air Transport for 2 each. The remaining 20 records belong to distinct or specialised sectors. For the September cohort alone, the leading sector family is Finance, Insurance and Compliance with 7 records.
 
-| Country | Records | Share |
-|---|---:|---:|
-| South Africa | 16 | 39.0% |
-| Egypt | 7 | 17.1% |
-| Morocco | 3 | 7.3% |
-| Kenya | 3 | 7.3% |
-| Nigeria | 2 | 4.9% |
-| Angola | 2 | 4.9% |
-| Mali | 1 | 2.4% |
-| Gabon | 1 | 2.4% |
-| Cameroon | 1 | 2.4% |
-| Namibia | 1 | 2.4% |
-| Tunisia | 1 | 2.4% |
-| Ethiopia | 1 | 2.4% |
-| Tanzania | 1 | 2.4% |
-| Uganda | 1 | 2.4% |
-| **Total** | **41** | **100%** |
+## 4. Priority CTI cases
 
-| Region | Records | Share |
-|---|---:|---:|
-| Southern Africa | 19 | 46.3% |
-| North Africa | 11 | 26.8% |
-| East Africa | 6 | 14.6% |
-| West Africa | 3 | 7.3% |
-| Central Africa | 2 | 4.9% |
-| **Total** | **41** | **100%** |
-
-Each record in the complete corpus receives one country assignment in this view. No additional multi-country incident is counted in this geographic distribution.
-
-```mermaid
-xychart-beta
-    title "Leading countries  -  complete September folder corpus"
-    x-axis [SouthAfrica, Egypt, Morocco, Kenya, Nigeria, Angola, Other]
-    y-axis "Records" 0 --> 18
-    bar [16, 7, 3, 3, 2, 2, 8]
-```
-
-```mermaid
-xychart-beta
-    title "Regional distribution  -  complete September folder corpus"
-    x-axis [Southern, North, East, West, Central]
-    y-axis "Records" 0 --> 20
-    bar [19, 11, 6, 3, 2]
-```
-
-## 6. Sectors and actors  -  complete 41-record corpus
-
-After cautious normalization  -  grouping documented analytical families without changing the raw sector in the cards  -  the most represented sectors are **Health (5)**, **Government / Administration (5)**, **Insurance (3)**, followed by **Real Estate (2)**, **Education (2)**, **Financial Services (2)** and **Air Transport (2)**. The other 20 occurrences belong to distinct or specialized sectors.
-
-```mermaid
-xychart-beta
-    title "Most represented sectors  -  complete September folder corpus"
-    x-axis [Health, Government, Insurance, RealEstate, Education, Finance, Transport, Other]
-    y-axis "Records" 0 --> 22
-    bar [5, 5, 3, 2, 2, 2, 2, 20]
-```
-
-The most frequent **publication or displayed-actor labels** are `krybit` (6), `TheGentlemen` (4), `BLACKLOCKS` (2), `N0n` (2) and `lockbit5` (2). The other 25 records include less frequent labels and records without public attribution; seven records explicitly state that no actor is publicly attributed. These labels do not necessarily constitute technical attribution or a count of distinct groups.
-
-```mermaid
-xychart-beta
-    title "Most frequent actor labels"
-    x-axis [krybit, TheGentlemen, BLACKLOCKS, N0n, lockbit5, Other]
-    y-axis "Records" 0 --> 28
-    bar [6, 4, 2, 2, 2, 25]
-```
-
-## 7. Evidence maturity and impact
-
-The statuses below concern the **complete 41-record corpus**. For the 29 September-dated publications alone, the normalized distribution is **12 `Claim - Unverified`**, **12 `Claim - Data Sample Published`**, **1 `Victim Confirmed`**, **1 `Government Confirmed`**, **1 `Data Fully Published`** and **2 `Third-Party Exposure Confirmed`**. Monthly tracking remains marked `In Progress`; totals are therefore valid as of the drafting date and may change if new records are validated.
-
-| Status | Records |
-|---|---:|
-| Claim - Unverified | 13 |
-| Claim - Data Sample Published | 12 |
-| Victim Confirmed | 9 |
-| Corroborated | 2 |
-| Data Fully Published | 1 |
-| Government Confirmed | 2 |
-| Third-Party Exposure Confirmed | 2 |
-| **Total** | **41** |
-
-An impact level is explicitly recorded for 23 cards: 12 at Level 3, 9 at Level 4 and 2 at Level 2. The current corpus does not populate this field for 18 cards. A confidence level is explicitly recorded for 24 cards; the others should be interpreted cautiously.
-
-```mermaid
-pie showData
-    title "Evidence maturity  -  complete September folder corpus"
-    "Claim - Unverified" : 13
-    "Claim - Data Sample Published" : 12
-    "Victim Confirmed" : 9
-    "Corroborated" : 2
-    "Data Fully Published" : 1
-    "Government Confirmed" : 2
-    "Third-Party Exposure Confirmed" : 2
-```
-
-```mermaid
-xychart-beta
-    title "Recorded impact levels"
-    x-axis [Level2, Level3, Level4, Notrecorded]
-    y-axis "Records" 0 --> 20
-    bar [2, 12, 9, 18]
-```
-
-## 8. Collection timeline
-
-The main September publications or observations are dated 1, 3, 4, 6, 7, 9, 12, 16, 18, 19, 21, 22, 24, 25, 26 and 29 September. The corpus also contains **12 incidents predating September**, integrated into the tracking set on **September 1, 2026** for retrospective purposes. This is the corpus classification/integration date; it does not replace the historical event or publication date and must not be read as the technical discovery date when that date is unknown. The RelyComply card retains a dating caveat where its heading and initial-publication field diverge.
-
-```mermaid
-timeline
-    title Collection and publication timeline - September 2026
-    01 September : January-August historical incidents integrated for retrospective tracking
-    01 September : Ransomware publications
-    03 September : MDCN - Nigeria
-    04 September : Madinaty-attributed data - Egypt
-    06 September : Centre Atlantique Formation - Morocco
-    09 September : Badr University - Egypt
-    12 September : SEPE - Angola
-    19 September : Apollo 21 - South Africa
-    21 September : FCT-IRS - Nigeria
-    22 September : ARCA - South Africa
-    24 September : Air Tanzania and other observations
-```
-
-## 9. Extended CTI assessment
-
-The September subset should be read as a corpus of publications and observations, not as a series of confirmed compromises. The most useful records are those where a sample or artifact is described and reviewed. Even a coherent sample primarily strengthens the documentary or structural link; it does not necessarily prove the source system, access vector, completeness of exfiltration or encryption.
+The priority selection is based on data sensitivity, analytical depth and defensive value. Each card separates observation, claim, assumptions and unknowns.
 
 | Priority case | Observed or reported elements | Still unknown |
 |---|---|---|
 | MDCN - Nigeria | Local 50-row, 24-column CSV with checked structure | Technical provenance, unique persons, intrusion and full volume |
 | Centre Atlantique Formation - Morocco | Training records and documents described in the sample | Completeness, number of people and source system |
-| SEPE - Angola | Files and JSON structures analysed in the card | Actual exfiltrated volume, encryption and access vector |
+| SEPE - Angola | 1,189 local files, including 111 JSON files, reviewed in the card | Actual exfiltrated volume, encryption and access vector |
 | AFRICA-TECH - Mali | Published file set examined in the card | Completeness, backup destruction and victim confirmation |
-| FNB - South Africa | Images of apparent statements analysed | Banking provenance, account access and full business authenticity |
+| FNB - South Africa | Five images of apparent business-account statements | Banking provenance, account access and full business authenticity |
 | VSB Attorneys - South Africa | Incomplete multipart RAR5 fragment tested read-only | Content, completeness and actual disclosure |
 | Air Tanzania - Tanzania | Files and images described in the available sample | Acquisition source, unique persons and full scope |
 
-For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claimed values when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
+Selected measurements illustrate the limits of claimed volumes. The SEPE sample contains 1,189 local files, including 111 JSON files, totalling 544,921,521 bytes, while the publication claims 364,841 files, 110,021 users and 179 GB. The FCT-IRS PDF contains 2,541 email-pattern matches, 2,540 distinct textual values and 61 Nigerian phone-pattern matches. These are technical matches, not affected-person counts. Apollo 21 and ARCA references to 400 GB and 400G remain actor claims. The VSB directory contains an incomplete 1,082,440,568-byte RAR5 fragment and an empty companion file; the archive test failed, so no disclosure is treated as analysed.
 
-Full details, sources and limitations for each case are retained in the [French victim cards](./victims_FR.md) and [English victim cards](./victims.md).
+The MDCN CSV contains 50 data rows and 24 columns, with constant row width and no fully duplicated row. Individual values were not copied into the repository. The structure supports analysis of the supplied sample, not validation of the claimed 65,580 users or a technical compromise of MDCN.
 
-Selected measurements from the reviewed cases illustrate the limits of claimed volumes. The SEPE sample contains **1,189 local files**, including **111 JSON files**, totalling **544,921,521 bytes**, while the publication claims **364,841 files**, **110,021 users** and **179 GB**. The FCT-IRS PDF contains **2,541 email-pattern matches**, **2,540 distinct textual values** and **61 Nigerian phone-pattern matches**; these are technical matches, not affected-person counts. Apollo 21 and ARCA references to **400 GB** and **400G** remain actor claims, not measured equivalent datasets. The VSB Attorneys directory contains an incomplete **1,082,440,568-byte** RAR5 fragment and an empty companion file; the archive test failed, so no disclosure is treated as analysed.
+For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claims when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
 
-### 9.1 Ransomware publication lifecycle
+## 5. Defensive implications
 
-A leak-site listing, a sample, the expiry of a countdown and the disclosure of data are separate events. Where available, the victim card records separately the first and last observation, sample status, deadline and timezone, deadline status, disclosure status and last verification. Negotiation, payment and resale remain `unknown` unless supported by specific public evidence.
+- Protect identity, administrative, health and payment data against phishing, impersonation and fraud.
+- Monitor unusual exports, archive creation, privileged access, VPN/RDP activity, role changes and external sharing.
+- Verify MFA, segmentation, administrative logging, isolated backups and tested restoration.
+- Treat leak, access-sale, ransomware and defacement signals as separate event types.
+- Preserve captures, timestamps, hashes and manifests outside the repository without testing credentials or following criminal links.
 
-### 9.2 Unattributed defensive detection hypotheses
+These are defensive hypotheses, not technique attributions to the observed actors. Relevant ATT&CK hypotheses include Valid Accounts (`T1078`), Data from Information Repositories (`T1213`), Archiving Collected Data (`T1560`), Exfiltration to external infrastructure (`T1041`) and Data Encrypted for Impact (`T1486`, confirmation required).
 
-- search for unusual exports, archive creation and large outbound transfers;
-- monitor privileged connections, VPN/RDP, role changes and account resets;
-- verify MFA, segmentation, administrative logs and isolated backups;
-- handle leak, access-sale, ransomware and defacement signals as separate event types;
-- preserve captures and evidence manifests outside the repository without testing credentials or following criminal links.
+## 6. Conclusion and quality checks
 
-These are defensive hunting hypotheses, not technique attributions to the observed actors:
+The September 2026 corpus contains 29 publications dated in the month and 12 earlier incidents integrated for retrospective tracking, for 41 records overall. It reflects AFRINTEL monitoring of ransomware-group sites, leak sites and underground forums. It is not a count of intrusions that actually occurred in September and it is not an exhaustive measure of African cybercrime.
 
-| Hypothesis to verify | MITRE ATT&CK | Indicative defensive signal |
-|---|---|---|
-| Valid account use | `T1078` | Anomalous logins, MFA bypass indicators and role changes |
-| Archiving before exfiltration | `T1560` | Unusual archive creation and large-scale compression |
-| Collection from repositories | `T1213` | Large exports from DMS, CRM, databases or shares |
-| Exfiltration to external infrastructure | `T1041` | Unusual outbound transfers and new destinations |
-| Impact encryption, confirmation required | `T1486` | Mass file-extension changes and corroborating EDR events |
-
-## 10. Defensive SOC priorities
-
-1. **High priority  -  privileged access:** monitor administrator accounts, VPN/RDP, MFA, role changes and resets.
-2. **High priority  -  exfiltration:** detect unusual exports, archive creation and large outbound transfers from CRM, DMS, databases and shares.
-3. **High priority  -  resilience:** verify segmentation, isolated backups and tested restoration for public, financial, health and transport organisations.
-4. **Medium priority  -  exposure:** prepare secret rotation, exposure reduction and notification procedures when identity, health or payment data is published.
-5. **Permanent priority  -  evidence:** retain captures, timestamps, hashes and manifests outside the repository with restricted access, without testing credentials or following criminal links.
-
-## 11. Conclusion and checks
-
-The September 2026 corpus contains 29 publications dated in the month and 12 earlier incidents integrated into tracking, for 41 records overall. It reflects AFRINTEL monitoring of ransomware-group sites, leak sites and underground forums. It is not a count of intrusions that actually occurred in September and it is not an exhaustive measure of cybercrime in Africa.
-
-The observed publications are mostly associated with ransomware claims. Some include visible samples or released data, while a small number have public confirmation of access or an incident. These observation levels remain separate from the completeness of exfiltration, the initial vector, encryption, ransom payment and operational impact.
+The observed publications are mostly associated with ransomware claims. Some include visible samples or released data, while a small number have public confirmation of access or an incident. These observation levels remain separate from exfiltration completeness, initial vector, encryption, ransom payment and operational impact.
 
 The collection does not establish a common technical campaign, a dominant access vector or a real increase in attacks compared with August. It does highlight recurring risks involving identities, administrative documents, financial data, document repositories and supplier relationships. These risks justify targeted validation of assets, privileged access, exports, external sharing and payment-fraud controls.
 
 For affected organisations, an underground publication should be treated as a signal for verification and preparation, without waiting for a complete release and without automatically concluding that a compromise occurred. CTI follow-up should focus on changes to the victim listing, samples, deadlines, possible releases, public confirmations and republications. Payments, negotiations, removals, resales and transfers remain unknown unless specific public information supports a qualification.
 
-This report therefore provides a documented monitoring baseline for defensive prioritisation. It should be updated when the public status of a victim changes, without turning an underground observation into technical or institutional confirmation.
+This report provides a documented monitoring baseline for defensive prioritisation. It should be updated when the public status of a victim changes, without turning an underground observation into technical or institutional confirmation.
 
 Checks completed:
 
 - 41 French cards and 41 English cards;
-- one FR/EN correspondence per card, preserving the analytical order;
+- one FR/EN correspondence per card, preserving analytical order;
 - incident-type total = 41;
 - country total = 41;
 - regional total = 41;
 - observation-status total = 41;
-- incident, publication and late-discovery dates remain separated;
-- normalized types and statuses checked against the structured card values.
+- incident, publication and integration dates remain separate;
+- normalised types and statuses checked against the structured card values.
+
+Full details, source notes and limitations are available in the [English victim cards](./victims.md) and [French victim cards](./victims_FR.md).
 
 **AFRINTEL - TLP:CLEAR**
-
