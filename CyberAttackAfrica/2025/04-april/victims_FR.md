@@ -6,7 +6,7 @@
 
 ## Synthèse mensuelle
 
-**20 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 7, Data Leak 10, Access Sale 2, DDoS 1.
+**21 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 7, Data Leak 11, Access Sale 2, DDoS 1.
 
 > Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
@@ -100,6 +100,20 @@
 - **Description victime:** Maroc Telecom est l'opérateur de télécommunications marocain également connu sous le nom Itissalat Al-Maghrib (IAM).
 - **Analyse:** Le 8 avril 2025, l'acteur utilisant le pseudonyme `yn0x1` a publié sur un forum underground une annonce intitulée « For Sale: Maroc Telecom SMS Sender - 2492 Credits Available ». L'annonce propose à la vente un « Maroc Telecom SMS Sender » disposant de 2 492 crédits et affiche l'identité visuelle de Maroc Telecom. L'acteur a également indiqué un contact Telegram pour les personnes souhaitant négocier ou acheter l'accès. Lors d'une vérification ultérieure, ce contact n'était plus fonctionnel. Les éléments observés confirment l'existence de l'annonce et de la revendication de vente, mais ils ne permettent pas de déterminer si l'accès concernait un compte utilisateur, un compte revendeur, une interface d'envoi SMS, une passerelle SMS, une API ou une infrastructure interne de Maroc Telecom. La fonctionnalité réelle et l'origine de l'accès vendu restent non confirmées.
 - **Contact de vente observé:** Telegram - `chatfordealme_bot` - indisponible lors d'une vérification ultérieure.
+
+### 08 Avril 2025
+#### 🇩🇿 Algérie - Université de Tlemcen (univ-tlemcen.dz)
+- **Date de l'incident:** Inconnue - la date d'obtention des données n'est pas précisée dans la publication
+- **Date de publication initiale:** 8 avril 2025
+- **Acteur / Groupe:** Oxrau1
+- **Secteur:** Éducation / Enseignement supérieur
+- **Site web:** univ-tlemcen.dz
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** L'Université de Tlemcen est un établissement public d'enseignement supérieur algérien.
+- **Analyse:** Le 8 avril 2025, l'acteur `Oxrau1` a publié une revendication intitulée « leake 1.8GB univ-tlemcen.dz sql », accompagnée du logo de l'Université de Tlemcen. La publication revendique un fichier SQL de 1,8 Go, avec une archive compressée annoncée à 230 Mo. Le contenu du téléchargement est masqué derrière un paiement de 8 points ; aucun fichier SQL ni extrait de données n'était accessible dans le matériel examiné par AFRINTEL. La capture établit l'existence de la revendication et l'association visuelle avec l'université, mais ne permet pas de confirmer l'origine, l'authenticité, l'exhaustivité ou le volume des données. Le lien additionnel présenté comme un « gift » et nommé `Algeria.Com [2019-09].txt` n'est pas attribué à l'université en l'absence d'élément technique indépendant. AFRINTEL ne reproduit aucune donnée personnelle et ne suit pas les liens de téléchargement ou les mécanismes de paiement.
 
 ### 09 Avril 2025
 #### 🇩🇿 Algérie - MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
@@ -241,7 +255,7 @@
 - **Description victime:** Dar Al Teb est l'un des centres médicaux les plus renommés d'Égypte, spécialisé dans la médecine de la reproduction, la fécondation in vitro (FIV) et la santé de la femme.
 - **Analyse:** Le groupe ransomware gunra revendique la compromission de Dar Al Teb (daralteb.com) et affiche des échantillons de données sur sa page de fuite. Les échantillons montrent des tableaux de suivi de patients/cycles comportant nom du mari, nom de l'épouse, numéro de dossier, âge, deux numéros de téléphone, ainsi que des champs cliniques spécifiques à la fécondation in vitro (statut du sperme frais/congelé, nombre d'ovocytes/embryons attendus, andrologue référent, médecin traitant, et codes de résultat embryologique). Un jeu local plus large comprend sept classeurs mensuels (décembre 2022, puis mars à août 2023) totalisant environ 2 300 lignes de dossiers patients/cycles, ainsi que deux classeurs supplémentaires plus courts et une base de données Access (non ouverte). Le matériel technique examiné inclut un export de profil Wi-Fi contenant une clé pré-partagée en clair, des commandes réseau associées faisant référence à un partage de fichiers interne, un script PowerShell de déploiement d'une forêt Active Directory nommée « DarAlteb.local », ainsi qu'un fichier de connexion RDP préconfiguré vers un hôte interne avec redirection de presse-papiers et de lecteurs de cartes à puce activée. La combinaison d'échantillons de données cliniques nommément identifiables, d'un jeu de données patients pluriannuel et de matériel de configuration réseau et d'accès distant interne soutient une évaluation à confiance élevée d'une compromission réelle et étendue dépassant une simple revendication de site de fuite. La nature des données observées, à la fois des informations de santé reproductive nommément identifiables portant sur plusieurs milliers de patients et des éléments d'accès à l'infrastructure interne, justifie un niveau d'impact de niveau 4. AFRINTEL ne reproduit aucun nom de patient, numéro de téléphone, numéro de dossier, clé Wi-Fi, adresse IP ni autre donnée personnelle ou secret issu du matériel examiné.
 
-### Avril 2025 - date exacte de compromission non communiquée publiquement
+### 24 Avril 2025
 #### Ghana - MTN Group / MTN Ghana
 - **Acteur / Groupe:** Unknown
 - **Secteur:** Telecommunications

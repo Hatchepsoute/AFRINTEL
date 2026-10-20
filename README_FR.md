@@ -92,11 +92,11 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Année | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
 | 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **227** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2025 | **228** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
 **Référence 2024 du corpus mensuel actuel :** **121 fiches documentées**, reclassées selon la même taxonomie à neuf types que celle utilisée pour 2025. Les rapports semestriels corrigés ont conservé des snapshots antérieurs de 119 fiches ; ils ne reflètent pas tous les ajouts rétrospectifs présents dans les couples mensuels actuels.
 
-**Référence 2025 du corpus mensuel actuel :** **227 fiches documentées**. Le S1 compte **111 fiches** et le S2 **116** après intégration d'ajouts ultérieurs. Les ventilations géographiques peuvent dépasser le total canonique lorsqu'une fiche couvre plusieurs pays.
+**Référence 2025 du corpus mensuel actuel :** **228 fiches documentées**. Le S1 compte **112 fiches** et le S2 **116** après intégration d'ajouts ultérieurs. Les ventilations géographiques peuvent dépasser le total canonique lorsqu'une fiche couvre plusieurs pays.
 
 ---
 
@@ -105,11 +105,11 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Période | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
 | S1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
-| S1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
+| S1 2025 | **112** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
 | S2 2025 | **116** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
 | S1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
-> **Note de comptage :** ces valeurs suivent les couples mensuels actuellement présents dans le dépôt : S1 2024 = 46, S1 2025 = 111, S2 2025 = 116 et S1 2026 = 294. Les rapports semestriels publiés à des dates antérieures peuvent afficher 45 ou 114 après déduplication de leur snapshot ; ces valeurs ne doivent pas être mélangées avec les corpus mensuels enrichis depuis.
+> **Note de comptage :** ces valeurs suivent les couples mensuels actuellement présents dans le dépôt : S1 2024 = 46, S1 2025 = 112, S2 2025 = 116 et S1 2026 = 294. Les rapports semestriels publiés à des dates antérieures peuvent afficher 45 ou 114 après déduplication de leur snapshot ; ces valeurs ne doivent pas être mélangées avec les corpus mensuels enrichis depuis.
 
 ---
 

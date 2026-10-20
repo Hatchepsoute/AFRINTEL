@@ -6,17 +6,17 @@
 
 ## 1. Synthèse exécutive
 
-En Avril 2025, AFRINTEL documente **20 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
+En Avril 2025, AFRINTEL documente **21 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
 
-Le paysage est dominé par **Data Leak avec 10 fiches (50,0 %)**, suivi de **Ransomware avec 7 (35,0 %)**. Les autres types observés sont Access Sale 2, DDoS 1.
+Le paysage est dominé par **Data Leak avec 11 fiches (52,4 %)**, suivi de **Ransomware avec 7 (33,3 %)**. Les autres types observés sont Access Sale 2, DDoS 1.
 
-La concentration géographique est marquée : **Maroc (6)**, **Égypte (5)**, **Algérie (3)** représentent ensemble **14 fiches, soit 70,0 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
+La concentration géographique est marquée : **Maroc (6)**, **Égypte (5)**, **Algérie (4)** représentent ensemble **15 fiches, soit 71,4 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
 Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (6)**, **Finance / Banque (4)**, **Technologie / IT (2)**. Les labels d'acteurs les plus fréquents sont `Phantom Atlas` (3), `Jabaroot DZ` (2), `Unknown` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
 
-La maturité des preuves reste variable : **18 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+La maturité des preuves reste variable : **19 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à Mars, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent Data Leak 2->10 (+8), Ransomware 9->7 (-2), Account Takeover 2->0 (-2).
+Par rapport à Mars, le volume mensuel **augmente de 6 fiches**. Les variations les plus visibles concernent Data Leak 2->11 (+9), Ransomware 9->7 (-2), Account Takeover 2->0 (-2).
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +24,9 @@ Par rapport à Mars, le volume mensuel **augmente de 5 fiches**. Les variations 
 
 | Indicateur | Mars 2025 | Avril 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 15 | 20 | **+5 (+33,3 %)** |
+| Total incidents | 15 | 21 | **+6 (+40,0 %)** |
 | Ransomware | 9 | 7 | **-2 (-22,2 %)** |
-| Data Leak | 2 | 10 | **+8 (+400,0 %)** |
+| Data Leak | 2 | 11 | **+9 (+450,0 %)** |
 | Access Sale | 1 | 2 | **+1 (+100,0 %)** |
 | DDoS | 0 | 1 | **+1 (nouveau)** |
 | Defacement | 0 | 0 | **Stable** |
@@ -55,7 +55,7 @@ Par rapport à Mars, le volume mensuel **augmente de 5 fiches**. Les variations 
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents documentés | **20** |
+| Incidents documentés | **21** |
 | Pays représentés | **8** |
 | Régions représentées | **3** |
 | Premier pays | **Maroc (6)** |
@@ -65,7 +65,7 @@ Par rapport à Mars, le volume mensuel **augmente de 5 fiches**. Les variations 
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
 | Ransomware | 7 | 35,0 % |
-| Data Leak | 10 | 50,0 % |
+| Data Leak | 11 | 52,4 % |
 | Access Sale | 2 | 10,0 % |
 | DDoS | 1 | 5,0 % |
 | Defacement | 0 | 0,0 % |
@@ -73,13 +73,13 @@ Par rapport à Mars, le volume mensuel **augmente de 5 fiches**. Les variations 
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **20** | **100 %** |
+| **Total** | **21** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Avril 2025
     "Ransomware" : 7
-    "Data Leak" : 10
+    "Data Leak" : 11
     "Access Sale" : 2
     "DDoS" : 1
 ```
@@ -90,13 +90,13 @@ pie showData
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Maroc | **6** | 0 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Égypte | **5** | 4 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Algérie | **3** | 0 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | **4** | 0 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Afrique du Sud | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Sénégal | **1** | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | Mauritanie | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tunisie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ghana | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **20** | **7** | **10** | **2** | **1** | **0** | **0** | **0** | **0** |
+| **Total** | **21** | **7** | **11** | **2** | **1** | **0** | **0** | **0** | **0** |
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
@@ -104,12 +104,12 @@ pie showData
 
 | Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 15 | 75,0 % |
+| Afrique du Nord | 16 | 76,2 % |
 | Afrique de l'Ouest | 3 | 15,0 % |
 | Afrique australe | 2 | 10,0 % |
-| **Total** | **20** | **100 %** |
+| **Total** | **21** | **100 %** |
 
-La région la plus représentée est **Afrique du Nord avec 15 fiches (75,0 %)**.
+La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**.
 
 ## 6. Impact sectoriel
 
@@ -121,11 +121,11 @@ La région la plus représentée est **Afrique du Nord avec 15 fiches (75,0 %)**
 | Télécommunications | 2 | 10,0 % | ██ |
 | Défense / Sécurité | 1 | 5,0 % | █ |
 | Services professionnels / Business | 1 | 5,0 % | █ |
-| Éducation / Université | 1 | 5,0 % | █ |
+| Éducation / Université | 2 | 9,5 % | ██ |
 | Agriculture / Agro-industrie | 1 | 5,0 % | █ |
 | Industrie / Fabrication | 1 | 5,0 % | █ |
 | Santé / Médical | 1 | 5,0 % | █ |
-| **Total** | **20** | **100 %** | |
+| **Total** | **21** | **100 %** | |
 
 ## 7. Acteurs / groupes
 
@@ -148,16 +148,17 @@ La région la plus représentée est **Afrique du Nord avec 15 fiches (75,0 %)**
 | nightspire | 1 | █ |
 | cicada3301 | 1 | █ |
 | gunra | 1 | █ |
+| Oxrau1 | 1 | █ |
 
 ## 8. Maturité des preuves
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 9 | 45,0 % |
+| Claim - Unverified | 10 | 47,6 % |
 | Claim - Data Sample Published | 9 | 45,0 % |
 | Confirmation victime / gouvernement / autorité | 1 | 5,0 % |
 | Corroboré / preuve secondaire | 1 | 5,0 % |
-| **Total** | **20** | **100 %** |
+| **Total** | **21** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
@@ -174,6 +175,7 @@ timeline
     08 Avril 2025 : Ministère de l'Industrie et du Commerce (miepeec.gov.ma)
     08 Avril 2025 : CNAS (Caisse Nationale des Assurances Sociales des Travailleurs Salariés)
     08 Avril 2025 : Maroc Telecom
+    08 Avril 2025 : Université de Tlemcen (univ-tlemcen.dz)
     09 Avril 2025 : MGPTT / Mutuelle Générale des Travailleurs de la Poste et des Télécoms
     09 Avril 2025 : Ministère du Travail
     12 Avril 2025 : Moroccan government portals (coordinated campaign)
@@ -196,7 +198,7 @@ timeline
 
 ### Data Leak
 
-**10 fiches** sont classées Data Leak. Principaux pays : Maroc (4), Algérie (3), Mauritanie (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
+**11 fiches** sont classées Data Leak. Principaux pays : Maroc (4), Algérie (4), Mauritanie (1). La revendication concernant l'Université de Tlemcen annonce un fichier SQL de 1,8 Go, mais aucun échantillon n'était accessible ; le volume et l'attribution restent donc non vérifiés. AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
 ### Access Sale
 
@@ -220,11 +222,11 @@ timeline
 
 ## 12. Principaux enseignements et lacunes de renseignement
 
-- **Concentration géographique :** Maroc représente 6 fiches (30,0 %), devant Égypte (5) et Algérie (3).
-- **Structure de menace :** Data Leak est le premier type avec 10 fiches, suivi de Ransomware (7).
+- **Concentration géographique :** Maroc représente 6 fiches (28,6 %), devant Égypte (5) et Algérie (4).
+- **Structure de menace :** Data Leak est le premier type avec 11 fiches, suivi de Ransomware (7).
 - **Secteurs :** Gouvernement / Administration (6) et Finance / Banque (4) concentrent la plus forte visibilité.
 - **Acteurs :** les labels les plus fréquents sont Phantom Atlas (3), Jabaroot DZ (2) et Unknown (2).
-- **Preuve :** 18 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
+- **Preuve :** 19 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
 
 ### Intelligence gaps
 
@@ -262,7 +264,7 @@ Ces lacunes doivent guider la collecte sans être remplacées par des hypothèse
 
 ## 14. Conclusion
 
-Le mois de **Avril 2025** compte **20 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
+Le mois de **Avril 2025** compte **21 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
 
 Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
 

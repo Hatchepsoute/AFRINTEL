@@ -56,7 +56,7 @@ Le corpus documenté du S2 passe de **74 à 114 incidents**, soit **+40 (+54,1 %
 
 | Indicateur | S1 2025 | S2 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 111 | 114 | **+3 (+2,7 %)** |
+| Total incidents | 112 | 116 | **+4 (+3,6 %)** |
 | Ransomware | 58 | 63 | **+5 (+8,6 %)** |
 | Data Leak | 39 | 42 | **+3 (+7,7 %)** |
 | Access Sale | 3 | 3 | **0 (0,0 %)** |
@@ -67,7 +67,7 @@ Le corpus documenté du S2 passe de **74 à 114 incidents**, soit **+40 (+54,1 %
 | Malware | 0 | 1 | **+1 (nouveau)** |
 | Operational Fraud | 0 | 0 | **Stable** |
 
-Le volume global est presque stable : **111 incidents au S1 contre 114 au S2**. La structure évolue néanmoins : les six Account Takeover de l'année sont concentrés au S1, alors que le S2 compte davantage de Ransomware et contient l'unique incident Malware de 2025.
+Le volume global est presque stable : **112 incidents au S1 contre 116 au S2**. La structure évolue néanmoins : les six Account Takeover de l'année sont concentrés au S1, alors que le S2 compte davantage de Ransomware et contient l'unique incident Malware de 2025.
 
 
 ## 4. Évolution mensuelle
