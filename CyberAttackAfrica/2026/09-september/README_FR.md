@@ -1,7 +1,5 @@
 # AFRINTEL - Rapport mensuel de Cyber Threat Intelligence
-
-👉🏾[** English version available here**](./README.md)
-
+👉🏾[**English version available here**](./README.md)
 **Afrique · Septembre 2026**
 **Ransomware, fuite de données et extorsion**
 

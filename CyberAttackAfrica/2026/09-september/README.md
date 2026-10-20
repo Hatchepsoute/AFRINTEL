@@ -1,7 +1,21 @@
 # AFRINTEL - Monthly Cyber Threat Intelligence Report
+👉🏾[**French version available here**](./README_FR.md)
 
-👉🏾[** French version available here**](./README_FR.md)
+## Table of contents
 
+1. [Reading note and analytical warning](#reading-note-and-analytical-warning)
+2. [Executive summary](#executive-summary)
+3. [01. Scope, sources and method](#01-scope-sources-and-method)
+4. [02. September 2026 dashboard](#02-september-2026-dashboard)
+5. [03. Priority intelligence cases](#03-priority-intelligence-cases)
+6. [04. Operational lessons and attack hypotheses](#04-operational-lessons-and-attack-hypotheses)
+7. [05. Hunt plan - SOC / CERT / CSIRT](#05-hunt-plan---soc--cert--csirt)
+8. [06. Risk-reduction roadmap](#06-risk-reduction-roadmap)
+9. [07. Earlier incidents: context not to confuse with September](#07-earlier-incidents-context-not-to-confuse-with-september)
+10. [08. Intelligence prioritisation](#08-intelligence-prioritisation)
+11. [Appendices A to D](#appendix-a---register-of-29-september-publications)
+
+> The detailed English sections corresponding to items 03 to 11 are being synchronised with the French report. The current English edition retains the validated dashboard, CTI cases, defensive implications and conclusion below.
 **Africa - September 2026**
 **Ransomware, data leaks and extortion monitoring**
 
