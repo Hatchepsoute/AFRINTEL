@@ -51,10 +51,15 @@ The September corpus contains **41 documented records across 14 countries**: **2
 
 📋 [September 2026 victim records](CyberAttackAfrica/2026/09-september/victims.md)
 
+📊 [September 2026 statistics](statistics/2026/09-september/README.md)
+
+🔄 [August-September 2026 comparison](comparison/2026/08-august-september/README.md)
+
+🖼️ [September 2026 visual intelligence](visual-intelligence/09-september/README.md)
 
 📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
-*Month status: report published and STIX bundle regenerated from a 41-record corpus; dedicated monthly statistics remain to be published separately.*
+*Month status: report, statistics, comparison and visual intelligence published from the 29-publication September cohort; the 12 earlier records remain separate in the retrospective 41-record corpus.*
 
 ### October 2026  -  Follow-up in progress
 
@@ -89,11 +94,9 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
 | 2025 | **227** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**2024 corrected baseline:** **121 canonical incidents across 31 African countries**, reclassified under the same nine-type taxonomy used for 2025: 91 Ransomware, 14 Data Leak, 5 Access Sale, 2 DDoS, 1 Defacement, 0 Account Takeover, 7 System Intrusion, 0 Malware and 1 Operational Fraud.
+**2024 current monthly corpus:** **121 documented records**, reclassified under the same nine-type taxonomy used for 2025. Earlier corrected semiannual reports retain 119-record snapshots and do not include every later retrospective addition present in the current monthly pairs.
 
-**ESGC.MA update:** the March 2024 record now includes a screenshot of a forum publication dated March 26, 2024, claiming a 2021 database of approximately 500 entries with a visible SQL sample. The classification remains `Data Leak - Claim - Data Sample Published`; no raw personal data is published and 2024 totals are unchanged.
-
-**2025 validated baseline:** **227 canonical incidents across 31 represented African countries**: 121 Ransomware, 83 Data Leak, 6 Access Sale, 3 DDoS, 4 Defacement, 6 Account Takeover, 3 System Intrusion, 1 Malware and 0 Operational Fraud. H1 contains **111 incidents** and H2 **116**. Country/regional views total 228 geographic occurrences for the Comoros-Cameroon multi-country card.
+**2025 current monthly corpus:** **227 documented records**. H1 contains **111 records** and H2 **116** after later additions. Geographic views may exceed the canonical total when one card covers multiple countries.
 
 ---
 
@@ -103,8 +106,10 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | :--- | ---: | :--- | :--- |
 | H1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
 | H1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
-| H2 2025 | **115** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
+| H2 2025 | **116** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
 | H1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
+
+> **Counting note:** these values follow the monthly pairs currently in the repository: H1 2024 = 46, H1 2025 = 111, H2 2025 = 116 and H1 2026 = 294. Earlier semiannual reports may show 45 or 114 after snapshot-specific deduplication; those values must not be mixed with the enriched monthly corpora.
 
 ---
 
@@ -120,7 +125,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
 | July 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | August 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
-| September 2026 | [Report](CyberAttackAfrica/2026/09-september/README.md) | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) |
+| September 2026 | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) | [Report](CyberAttackAfrica/2026/09-september/README.md) |
 | October 2026 | [In-progress tracking](CyberAttackAfrica/2026/10-october/victims.md) | [Suivi en cours](CyberAttackAfrica/2026/10-october/victims_FR.md) |
 
 ---
@@ -137,6 +142,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
 | July 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | August 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
+| September 2026 | [Statistiques](statistics/2026/09-september/README_FR.md) | [Statistics](statistics/2026/09-september/README.md) |
 
 ---
 
@@ -151,6 +157,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | May vs June 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
 | June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | July vs August 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
+| August vs September 2026 | [FR](comparison/2026/08-august-september/README_FR.md) | [EN](comparison/2026/08-august-september/README.md) |
 
 
 ---
@@ -167,6 +174,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
 | July 2026 | [LinkedIn visual](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
 | August 2026 | [Visual intelligence](visual-intelligence/08-august/README.md) |
+| September 2026 | [Visual intelligence](visual-intelligence/09-september/README.md) |
 | H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
 | H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
 

@@ -3,13 +3,55 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en octobre 2026 (10 fiches)
+# Liste des victimes africaines de cyberattaques en octobre 2026 (11 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
 ## Octobre 2026
 
-**Statut du suivi mensuel : In Progress / En cours**  -  corpus provisoire de 10 fiches ; la clôture et les statistiques mensuelles restent à venir.
+**Statut du suivi mensuel : In Progress / En cours**  -  corpus provisoire de 11 fiches ; la clôture et les statistiques mensuelles restent à venir. Le cas Yalidine est documenté mais exclu des statistiques canoniques tant que son attribution n'est pas corroborée.
+
+### 20 octobre 2026 — découverte AFRINTEL
+
+#### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) — attribution non confirmée
+
+- **Date de l'incident :** Non établie
+- **Date de publication initiale :** 20 août 2026 à 05:27 (horodatage affiché ; fuseau non indiqué)
+- **Date de découverte AFRINTEL :** 20 octobre 2026
+- **Acteur / Groupe :** TelephoneHooliganism (compte affiché dans la publication ; identité et affiliation non vérifiées)
+- **Secteur revendiqué :** Transport / Logistique / Livraison express
+- **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
+- **Statut :** Under Investigation - Alleged
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 3 (potentiel)
+- **Type de source :** Forum cybercriminel et échantillons CSV fournis à AFRINTEL
+
+- **Description victime :** Yalidine El Djazair Service est une entreprise algérienne de courrier express, de livraison de colis, de logistique domestique, de livraison e-commerce et de recouvrement à la livraison. La publication associe cette entreprise à une base annoncée comme contenant environ **563 000 enregistrements**.
+
+- **Analyse :**
+
+  **Observed :** La publication du 20 août 2026 à 05:27, attribuée à TelephoneHooliganism, présente `www.yalidine.com` comme une base algérienne de **563 000 enregistrements**. Elle décrit trois ensembles : contacts, historique de réservations et tickets de support. Un message de modération affiché le même jour à 06:38 rappelle uniquement les règles de classement du forum ; il ne confirme ni Yalidine, ni les fichiers, ni une compromission.
+
+  AFRINTEL a examiné en lecture seule trois fichiers CSV locaux correspondant à ces trois ensembles : **50 lignes de contacts**, **20 lignes de réservations** et **20 lignes de tickets**. Les fichiers sont structurellement lisibles et totalisent **90 lignes tabulaires**, sans que ce total représente 90 personnes uniques. Les fichiers contiennent respectivement **34, 29 et 29 colonnes**. Les champs annoncés incluent notamment des coordonnées, des informations CRM, des réservations, des paiements, des tickets et des éléments de suivi client. Aucune donnée personnelle brute n'est reproduite dans cette fiche.
+
+  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres valeurs de pays sont principalement étrangères. Les villes de réservation observées ne sont pas algériennes. Les `contact_id` utilisés dans les réservations et les tickets ne correspondent pas aux identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets ne contiennent que **2 valeurs distinctes de `ticket_id`**. Les relations vers les réservations sont également incohérentes. Les colonnes d'e-mail et de téléphone des tickets sont vides, et plusieurs champs de contacts annoncés sont largement ou entièrement vides. Des problèmes de qualité ou d'encodage apparaissent dans certaines valeurs géographiques.
+
+  Les empreintes SHA-256 locales sont : `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51** ; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443** ; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
+
+  **Assumption :** Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication. Cette compatibilité est faible : les incohérences géographiques, relationnelles et de remplissage sont plus importantes que les éléments qui relient l'échantillon à Yalidine. L'échantillon peut être synthétique, mal attribué, issu d'un environnement multi-pays, incomplet ou construit à partir d'un modèle CRM générique.
+
+  Un lien avec le cas **Afribaba** du 20 août 2026 est possible uniquement au niveau de la campagne : même acteur affiché, même date de publication et catégories de données proches. Cela peut refléter une campagne ciblant plusieurs organisations algériennes ou la réutilisation d'un modèle de publication. Aucun identifiant, domaine, fichier ou marqueur technique commun n'a été observé ; le lien entre les deux cas n'est donc **pas établi** et ne doit pas entraîner une fusion des victimes.
+
+  **Unknown :** La provenance technique des fichiers, leur date d'extraction, leur authenticité, le nombre de personnes uniques, l'existence d'un accès non autorisé, la méthode d'obtention, l'exhaustivité de la base annoncée, l'impact opérationnel et toute confirmation par Yalidine ou une autorité restent inconnus.
+
+- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, avec contrôle de structure, volumes, champs vides, doublons, relations entre tables, plages temporelles et empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
+
+- **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
+
+- **Décision de comptage :** Fiche conservée dans le corpus d'octobre en raison de la publication observée et de l'échantillon fourni, mais **exclue du total canonique et des ventilations statistiques** jusqu'à corroboration de l'attribution.
+
+- **Sources / Éléments de preuve :** capture de la publication et capture de la réponse de modération fournies le 20 octobre 2026 ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
 
 ### 09 octobre 2026
 
