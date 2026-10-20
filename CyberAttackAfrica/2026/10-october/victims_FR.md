@@ -3,15 +3,51 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en octobre 2026 (11 fiches)
+# Liste des victimes africaines de cyberattaques en octobre 2026 (12 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
 ## Octobre 2026
 
-**Statut du suivi mensuel : In Progress / En cours**  -  corpus provisoire de 11 fiches ; la clôture et les statistiques mensuelles restent à venir. Le cas Yalidine est documenté mais exclu des statistiques canoniques tant que son attribution n'est pas corroborée.
+**Statut du suivi mensuel : In Progress / En cours**  -  corpus provisoire de 12 fiches ; la clôture et les statistiques mensuelles restent à venir. Le cas Yalidine est documenté mais exclu des statistiques canoniques tant que son attribution n'est pas corroborée.
 
-### 20 octobre 2026 — découverte AFRINTEL
+### 20 octobre 2026 - découverte AFRINTEL
+
+#### 🇲🇦 Maroc - Eurogate Tanger (`eurogate-tanger.com`)
+
+- **Date de l'incident :** Non établie
+- **Date de publication initiale :** 12 octobre 2026 à 13:55:54 (horodatage affiché ; fuseau non indiqué)
+- **Date de divulgation observée :** 19 octobre 2026 à 13:27 UTC (premier lot annoncé)
+- **Date de découverte AFRINTEL :** 20 octobre 2026
+- **Acteur / Groupe :** N0n (nom affiché par la source ; identité et affiliation non vérifiées)
+- **Secteur :** Transport maritime / opérations de terminal conteneurs
+- **Site web :** `eurogate-tanger.com`
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4 (potentiel)
+- **Type de source :** Site de suivi ransomware et archive publiée par l'acteur
+
+- **Description victime :** Eurogate Tanger est présenté comme un opérateur de terminal conteneurs au Maroc. La publication revendique l'extraction de correspondances commerciales, de documents opérationnels et de fichiers de travail internes depuis les systèmes associés au domaine `eurogate-tanger.com`.
+
+- **Analyse :**
+
+  **Observed :** La fiche observée indique Eurogate Tanger, le Maroc, le secteur du transport maritime, le groupe N0n et une mention `NOT PAID – EXPOSED`. Le champ « Published data » est indiqué comme `N/D`. L'archive locale fournie sous le nom `eurogate_tanger.com-leak.zip` est intacte lors du test de lecture : **355 fichiers**, **373 065 003 octets** non compressés, **373 150 373 octets** pour l'archive, sans chiffrement ZIP. Les fichiers sont regroupés sous `eurogate-tanger.com` et comprennent notamment des documents DOCX, XLS/XLSX, PDF, MSG, PPTX, ODS, EDI, XML, journaux/traces, SQL, archives et fichiers techniques. Le README inclus décrit explicitement un **premier lot** et annonce d'éventuels lots ultérieurs.
+
+  Une analyse statique en lecture seule a couvert les **354 fichiers extraits sous le domaine** : empreintes, types réels, structures et contenu textuel/XML lorsqu'extractible. Elle comprend notamment **98 DOCX, 86 XLSX, 11 XLS, 5 PPTX, 2 ODS, 22 PDF, 10 MSG, 32 TRC, 32 TRM, 19 RAR, 5 ZIP, 1 JAR, 1 classe Java, ainsi que des fichiers EDI/XML/WSDL/SQL et des journaux**. L'analyse XML des XLSX représente environ **652 708 éléments de lignes** et **13 686 923 éléments de cellules** ; ces valeurs sont structurelles et ne représentent pas directement le nombre de personnes ou d'opérations uniques.
+
+  Le contenu textuel et XML fait apparaître de manière répétée des références cohérentes à **EGT, Eurogate, Tanger, OPUS Terminal, terminal, port, conteneurs, navires, cargaison, reefers, gates, grues, yard, voyages, camions et mouvements opérationnels**. Les DOCX et XLSX contiennent également des références à des notes de version, correctifs, scripts SQL, traces et échanges techniques associés à cet environnement. Les archives RAR, ZIP et le JAR ont été inventoriés sans exécution ; leurs membres et tailles ont été contrôlés.
+
+  Aucun fichier n'a été exécuté. Aucun marqueur de macro VBA n'a été détecté dans les conteneurs Office inspectés. Les PDF et MSG ont fait l'objet d'une analyse statique de chaînes et de métadonnées, sans rendu ni interprétation complète des objets incorporés. Des marqueurs d'adresses e-mail sont présents dans plusieurs fichiers textuels ; aucune donnée individuelle n'est reproduite dans ce rapport.
+
+  **Assumption :** Le nom du domaine dans l'arborescence, le nom de l'organisation, le secteur indiqué et la nature des fichiers annoncés sont cohérents avec une exposition de données internes d'Eurogate Tanger. Cette cohérence soutient l'attribution de l'archive à la victime, mais ne prouve pas la méthode d'accès, la compromission initiale, l'exhaustivité des données ni l'absence d'un prestataire ou d'un environnement tiers.
+
+  **Unknown :** La date et le vecteur de compromission, le volume total réellement exfiltré, l'identité et les capacités réelles de N0n, l'exhaustivité du premier lot, l'impact opérationnel, l'existence d'une confirmation par Eurogate Tanger ou une autorité, et le contenu exact des documents restent inconnus.
+
+- **Empreinte de l'archive analysée :** SHA-256 `87bb4495b774c21919af26daf9b3ab807e57f78d7fad5879d0176bd9df28c891`.
+- **Périmètre et limites de l'analyse :** Les 354 fichiers extraits sous le domaine ont été couverts par une analyse statique du type réel, des empreintes, de la structure et du contenu textuel/XML lorsqu'extractible. Cette méthode ne déchiffre pas les fichiers protégés, ne rend pas visuellement chaque page et ne valide pas chaque objet incorporé. Elle ne constitue pas une confirmation officielle de l'incident. L'archive reste hors du dépôt AFRINTEL.
+- **Évaluation des risques :** L'exposition potentielle de documents opérationnels, de données de navires et conteneurs, de configurations ou notes de version, de scripts et de traces techniques pourrait faciliter l'ingénierie sociale, la fraude documentaire, le ciblage d'employés, la préparation d'une perturbation des opérations portuaires ou l'identification de dépendances applicatives. Le niveau 4 reflète le caractère potentiellement critique de cet environnement ; une perturbation réelle ou un accès aux systèmes de contrôle n'est pas établi.
+- **Sources / Éléments de preuve :** fiche publique observée le 20 octobre 2026 ; archive locale fournie pour analyse ; aucune adresse onion, donnée personnelle brute ou valeur individuelle n'est publiée.
 
 #### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) — attribution non confirmée
 
@@ -420,10 +456,10 @@
 - **Acteur / Groupe :** Nameless511
 - **Volume revendiqué :** Plus de 24 438 commandes clients
 - **Statut :** Revendication accompagnée d'un échantillon de données
-- **Niveau de confiance :** Modéré
+- **Niveau de confiance :** Medium
 
 
-#### Description de l'incident
+##### Description de l'incident
 
 Un acteur malveillant utilisant le pseudonyme Nameless511a publié sur le forum DarkForums une revendication de fuite de données concernant Decathlon Maroc, enseigne spécialisée dans la distribution d'articles de sport.
 
@@ -451,7 +487,7 @@ Selon l'acteur, les informations exposées comprennent :
 - Commentaires et notes opérationnelles
 - Informations relatives aux montages, retours et réparations
 
-#### Éléments observés
+##### Éléments observés
 
 Un échantillon de données présenté dans la publication a été examiné dans le cadre de l'investigation CTI.
 
@@ -475,7 +511,7 @@ Des fichiers Excel supplémentaires ont également été transmis via un lien pa
 
 Leur appartenance au même jeu de données et leur relation exacte avec Decathlon Maroc restent à confirmer.
 
-#### Analyse CTI
+##### Analyse CTI
 
 La structure de l'échantillon présente des caractéristiques compatibles avec un export d'une application de gestion des commandes, des tournées ou des livraisons.
 
@@ -492,7 +528,7 @@ Le volume de 24 438 commandes reste une affirmation de l'acteur et n'a pas été
 
 La date de publication ne doit pas être assimilée à la date de compromission initiale.
 
-#### Risques potentiels
+##### Risques potentiels
 
 - Phishing et smishing ciblés
 - Vishing et usurpation d'identité
@@ -502,7 +538,7 @@ La date de publication ne doit pas être assimilée à la date de compromission 
 - Atteintes à la vie privée liées aux coordonnées GPS
 - Ciblage géographique des personnes concernées
 
-#### Recommandations SOC/CTI
+##### Recommandations SOC/CTI
 
 - Vérifier l'origine et l'authenticité des données publiées.
 - Identifier les systèmes ou prestataires ayant accès
@@ -515,7 +551,7 @@ La date de publication ne doit pas être assimilée à la date de compromission 
 - Sensibiliser les clients aux tentatives de fraude
   utilisant les informations de livraison.
 
-#### Conclusion
+##### Conclusion
 
 La publication de Nameless511 constitue une revendication crédible nécessitant une investigation complémentaire.
 

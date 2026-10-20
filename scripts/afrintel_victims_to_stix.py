@@ -245,6 +245,11 @@ def parse_date_to_iso(date_text: str) -> str:
     # Historical cards may carry an editorial integration suffix. The
     # incident date remains the date used for STIX first_seen.
     text = re.sub(r"\s+-\s+(?:integrated|intégré|integre)\s+.*$", "", text, flags=re.I)
+    # Other historical headings may append a reporting qualifier such as
+    # "date rapportée" or "exact date not publicly disclosed". The heading
+    # still contains a usable day/month/year or month/year; retain that date
+    # while leaving the qualifier in the source card and report description.
+    text = re.sub(r"\s+-\s+.*$", "", text)
     text = re.sub(r"^(?:late|early|end of|fin|fin de)\s+", "", text, flags=re.I)
     # For a documented date window, use the first day while preserving the
     # original window in the source card and description.

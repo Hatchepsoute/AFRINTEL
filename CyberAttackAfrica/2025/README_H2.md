@@ -56,7 +56,7 @@ The documented H2 corpus increases from **74 to 114 incidents**, an increase of 
 
 | Indicator | H1 2025 | H2 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 111 | 114 | **+3 (+2.7%)** |
+| Total incidents | 112 | 116 | **+4 (+3.6%)** |
 | Ransomware | 58 | 63 | **+5 (+8.6%)** |
 | Data Leak | 39 | 42 | **+3 (+7.7%)** |
 | Access Sale | 3 | 3 | **0 (0.0%)** |
@@ -67,7 +67,7 @@ The documented H2 corpus increases from **74 to 114 incidents**, an increase of 
 | Malware | 0 | 1 | **+1 (new)** |
 | Operational Fraud | 0 | 0 | **Stable** |
 
-Overall volume is almost stable: **111 incidents in H1 versus 114 in H2**. The structure still changes: all six Account Takeover records of the year are concentrated in H1, while H2 contains more Ransomware and the year's only Malware incident.
+Overall volume is almost stable: **112 incidents in H1 versus 116 in H2**. The structure still changes: all six Account Takeover records of the year are concentrated in H1, while H2 contains more Ransomware and the year's only Malware incident.
 
 
 ## 4. Monthly evolution

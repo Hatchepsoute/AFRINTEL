@@ -6,9 +6,9 @@
 
 ## 1. Synthèse exécutive
 
-Entre janvier-juin 2025, AFRINTEL a documenté **111 cyberincidents** affectant des organisations, institutions et services numériques en Afrique.
+Entre janvier-juin 2025, AFRINTEL a documenté **112 cyberincidents** affectant des organisations, institutions et services numériques en Afrique.
 
-Le semestre est dominé par le **Ransomware avec 58 fiches (52,3 %)** et les **Data Leak avec 39 (35,1 %)**. Ensemble, ces deux catégories représentent **97 incidents, soit 87,4 % du corpus semestriel**. Les autres événements comprennent 3 Access Sale, 6 Account Takeover, 2 Defacement, 1 DDoS, 2 System Intrusion et 0 Malware.
+Le semestre est dominé par le **Ransomware avec 58 fiches (51,8 %)** et les **Data Leak avec 40 (35,7 %)**. Ensemble, ces deux catégories représentent **98 incidents, soit 87,5 % du corpus semestriel**. Les autres événements comprennent 3 Access Sale, 6 Account Takeover, 2 Defacement, 1 DDoS, 2 System Intrusion et 0 Malware.
 
 La concentration géographique est marquée : **Afrique du Sud (23)**, **Égypte (17)** et **Maroc (16)** arrivent en tête. Ensemble, ces trois pays représentent **56 fiches, soit 50,5 %** du semestre.
 
@@ -36,13 +36,13 @@ La maturité des preuves demeure hétérogène. AFRINTEL distingue les revendica
 
 ## 3. Comparaison S1 2024 corrigé vs S1 2025
 
-Le corpus final corrigé du S1 2024 contient **45 incidents canoniques**, contre **111** au S1 2025. La baseline 2024 a fait l'objet d'un contrôle chronologique et d'une reclassification selon les **mêmes neuf types d'incident** que 2025 ; les catégories ci-dessous sont donc directement comparables et les valeurs nulles valides ne sont plus présentées en `N/A`.
+Le corpus final corrigé du S1 2024 contient **45 incidents canoniques**, contre **112** au S1 2025. La baseline 2024 a fait l'objet d'un contrôle chronologique et d'une reclassification selon les **mêmes neuf types d'incident** que 2025 ; les catégories ci-dessous sont donc directement comparables et les valeurs nulles valides ne sont plus présentées en `N/A`.
 
 | Indicateur | 2024 final corrigé | 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 45 | 111 | **+66 (+146,7 %)** |
+| Total incidents | 45 | 112 | **+67 (+148,9 %)** |
 | Ransomware | 34 | 58 | **+24 (+70,6 %)** |
-| Data Leak | 4 | 39 | **+35 (+875,0 %)** |
+| Data Leak | 4 | 40 | **+36 (+900,0 %)** |
 | Access Sale | 1 | 3 | **+2 (+200,0 %)** |
 | DDoS | 2 | 1 | **-1 (-50,0 %)** |
 | Defacement | 0 | 2 | **+2 (nouvellement observé)** |
@@ -51,7 +51,7 @@ Le corpus final corrigé du S1 2024 contient **45 incidents canoniques**, contre
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 1 | 0 | **-1 (-100,0 %)** |
 
-Le corpus documenté du S1 passe de **45 à 111 incidents**, soit **+66 (+146,7 %)**. Les écarts absolus les plus importants concernent les Data Leak (**+35**) et le Ransomware (**+24**). Ces chiffres décrivent l'évolution du corpus observable AFRINTEL et ne doivent pas être interprétés comme une hausse équivalente du nombre réel de compromissions réussies.
+Le corpus documenté du S1 passe de **45 à 112 incidents**, soit **+67 (+148,9 %)**. Les écarts absolus les plus importants concernent les Data Leak (**+36**) et le Ransomware (**+24**). Ces chiffres décrivent l'évolution du corpus observable AFRINTEL et ne doivent pas être interprétés comme une hausse équivalente du nombre réel de compromissions réussies.
 
 ## 4. Évolution mensuelle
 
@@ -60,10 +60,10 @@ Le corpus documenté du S1 passe de **45 à 111 incidents**, soit **+66 (+146,7 
 | Janvier | 19 | 16 | 2 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 | Février | 10 | 8 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | 0 |
 | Mars | 15 | 9 | 2 | 1 | 0 | 0 | 2 | 1 | 0 | 0 |
-| Avril | 20 | 7 | 10 | 2 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Avril | 21 | 7 | 11 | 2 | 1 | 0 | 0 | 0 | 0 | 0 |
 | Mai | 26 | 13 | 9 | 0 | 0 | 2 | 1 | 1 | 0 | 0 |
 | Juin | 21 | 5 | 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **111** | **58** | **39** | **3** | **1** | **2** | **6** | **2** | **0** | **0** |
+| **Total** | **112** | **58** | **40** | **3** | **1** | **2** | **6** | **2** | **0** | **0** |
 
 ### 4.1 Volume mensuel
 
@@ -72,7 +72,7 @@ Le corpus documenté du S1 passe de **45 à 111 incidents**, soit **+66 (+146,7 
 | Janvier | 19 | ███████████████████ |
 | Février | 10 | ██████████ |
 | Mars | 15 | ███████████████ |
-| Avril | 20 | ████████████████████ |
+| Avril | 21 | █████████████████████ |
 | Mai | 26 | ██████████████████████████ |
 | Juin | 21 | █████████████████████ |
 
@@ -82,7 +82,7 @@ timeline
     Janvier : 19
     Février : 10
     Mars : 15
-    Avril : 20
+    Avril : 21
     Mai : 26
     Juin : 21
 ```
@@ -92,7 +92,7 @@ timeline
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
 | Ransomware | **58** | 52,3 % |
-| Data Leak | **39** | 35,1 % |
+| Data Leak | **40** | 35,7 % |
 | Access Sale | **3** | 2,7 % |
 | DDoS | **1** | 0,9 % |
 | Defacement | **2** | 1,8 % |
@@ -100,13 +100,13 @@ timeline
 | System Intrusion | **2** | 1,8 % |
 | Malware | **0** | 0,0 % |
 | Operational Fraud | **0** | 0,0 % |
-| **Total** | **111** | **100 %** |
+| **Total** | **112** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d incident - S1 2025
     "Ransomware" : 58
-    "Data Leak" : 39
+    "Data Leak" : 40
     "Access Sale" : 3
     "DDoS" : 1
     "Defacement" : 2
@@ -125,7 +125,7 @@ Le Ransomware et les Data Leak représentent ensemble **97 fiches (87,4 %)**.
 | Afrique du Sud | **23** | 17 | 3 | 0 | 0 | 1 | 1 | 1 | 0 |
 | Égypte | **17** | 15 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maroc | **16** | 5 | 9 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Algérie | **13** | 2 | 11 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | **14** | 2 | 12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **7** | 3 | 1 | 0 | 0 | 0 | 3 | 0 | 0 |
 | Mauritanie | **7** | 0 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nigeria | **6** | 4 | 1 | 0 | 0 | 0 | 0 | 1 | 0 |
@@ -144,7 +144,7 @@ Le Ransomware et les Data Leak représentent ensemble **97 fiches (87,4 %)**.
 | Togo | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maurice | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Djibouti | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **111** | **58** | **39** | **3** | **1** | **2** | **6** | **2** | **0** |
+| **Total** | **112** | **58** | **40** | **3** | **1** | **2** | **6** | **2** | **0** |
 
 > `Operational Fraud = 0` sur ce semestre ; la colonne est omise pour préserver la lisibilité.
 
@@ -152,15 +152,15 @@ Le Ransomware et les Data Leak représentent ensemble **97 fiches (87,4 %)**.
 
 | Région | Total | Part | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| Afrique du Nord | **48** | 43,2 % | 23 | 23 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Afrique du Nord | **49** | 43,8 % | 23 | 24 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Afrique australe | **28** | 25,2 % | 22 | 3 | 0 | 0 | 1 | 1 | 1 | 0 |
 | Afrique de l'Ouest | **21** | 18,9 % | 5 | 11 | 2 | 0 | 1 | 1 | 1 | 0 |
 | Afrique de l'Est | **12** | 10,8 % | 6 | 2 | 0 | 0 | 0 | 4 | 0 | 0 |
 | Afrique centrale | **1** | 0,9 % | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Océan Indien | **1** | 0,9 % | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **111** | **100 %** | **58** | **39** | **3** | **1** | **2** | **6** | **2** | **0** |
+| **Total** | **112** | **100 %** | **58** | **40** | **3** | **1** | **2** | **6** | **2** | **0** |
 
-La région la plus représentée est **Afrique du Nord avec 48 incidents (43,2 %)**.
+La région la plus représentée est **Afrique du Nord avec 49 incidents (43,8 %)**.
 
 ## 7. Répartition sectorielle
 
@@ -169,7 +169,7 @@ La région la plus représentée est **Afrique du Nord avec 48 incidents (43,2 %
 | Gouvernement / Administration | 27 | 24,3 % | ██████████████ |
 | Finance / Banque | 19 | 17,1 % | ██████████ |
 | Technologie / IT | 12 | 10,8 % | ██████ |
-| Éducation / Université | 10 | 9,0 % | █████ |
+| Éducation / Université | 11 | 9,8 % | ██████ |
 | Santé / Médical | 7 | 6,3 % | ████ |
 | Services professionnels / Business | 7 | 6,3 % | ████ |
 | Télécommunications | 5 | 4,5 % | ██ |
@@ -183,7 +183,7 @@ La région la plus représentée est **Afrique du Nord avec 48 incidents (43,2 %
 | Mines | 2 | 1,8 % | █ |
 | Hôtellerie / Tourisme | 1 | 0,9 % | █ |
 | Construction / Immobilier | 1 | 0,9 % | █ |
-| **Total** | **111** | **100 %** | |
+| **Total** | **112** | **100 %** | |
 
 ## 8. Profil des acteurs / groupes
 
@@ -210,18 +210,20 @@ La région la plus représentée est **Afrique du Nord avec 48 incidents (43,2 %
 | incransom | 2 | ██ |
 | warlock | 2 | ██ |
 | Keymous | 2 | ██ |
+| Oxrau1 | 1 | █ |
+| Oxrau1 | 1 | █ |
 
 ## 9. Maturité des preuves
 
 | Regroupement analytique | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 46 | 41,4 % |
+| Claim - Unverified | 47 | 42,0 % |
 | Claim - Data Sample Published | 47 | 42,3 % |
 | Data Fully Published | 3 | 2,7 % |
 | Confirmation victime / gouvernement / autorité | 11 | 9,9 % |
 | Corroboré / preuve secondaire | 3 | 2,7 % |
 | Tentative | 1 | 0,9 % |
-| **Total** | **111** | **100 %** |
+| **Total** | **112** | **100 %** |
 
 Ce regroupement facilite la lecture semestrielle sans remplacer les statuts détaillés des fiches victimes.
 
@@ -233,7 +235,7 @@ Le Ransomware représente **58 fiches (52,3 %)**. Les pays les plus représenté
 
 ### Data Leak - 39
 
-Les Data Leak représentent **39 fiches (35,1 %)**. Les principaux pays sont Algérie (11), Maroc (9), Mauritanie (7). Publication, échantillon observé et volume global revendiqué restent des niveaux de preuve distincts.
+Les Data Leak représentent **40 fiches (35,7 %)**. Les principaux pays sont Algérie (12), Maroc (9), Mauritanie (7). Publication, échantillon observé et volume global revendiqué restent des niveaux de preuve distincts.
 
 ### Access Sale - 3
 
@@ -351,7 +353,7 @@ Aucun incident n'est classé `Operational Fraud` sur ce semestre. Cette absence 
 
 ## 15. Conclusion
 
-Le S1 2025 compte **111 cyberincidents documentés**. Le Ransomware et les Data Leak restent dominants, mais les autres types confirment un paysage de menace plus diversifié qu'une lecture limitée à l'extorsion et aux fuites.
+Le S1 2025 compte **112 cyberincidents documentés**. Le Ransomware et les Data Leak restent dominants, mais les autres types confirment un paysage de menace plus diversifié qu'une lecture limitée à l'extorsion et aux fuites.
 
 La valeur CTI du rapport repose sur la séparation entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**, afin de présenter une photographie structurée de la menace observable en Afrique sans transformer les zones d'incertitude en certitudes.
 

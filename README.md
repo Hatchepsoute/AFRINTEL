@@ -92,11 +92,11 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | Year | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
 | 2024 | **121** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **227** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2025 | **228** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
 **2024 current monthly corpus:** **121 documented records**, reclassified under the same nine-type taxonomy used for 2025. Earlier corrected semiannual reports retain 119-record snapshots and do not include every later retrospective addition present in the current monthly pairs.
 
-**2025 current monthly corpus:** **227 documented records**. H1 contains **111 records** and H2 **116** after later additions. Geographic views may exceed the canonical total when one card covers multiple countries.
+**2025 current monthly corpus:** **228 documented records**. H1 contains **112 records** and H2 **116** after later additions. Geographic views may exceed the canonical total when one card covers multiple countries.
 
 ---
 
@@ -105,11 +105,11 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | Period | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
 | H1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
-| H1 2025 | **111** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
+| H1 2025 | **112** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
 | H2 2025 | **116** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
 | H1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
-> **Counting note:** these values follow the monthly pairs currently in the repository: H1 2024 = 46, H1 2025 = 111, H2 2025 = 116 and H1 2026 = 294. Earlier semiannual reports may show 45 or 114 after snapshot-specific deduplication; those values must not be mixed with the enriched monthly corpora.
+> **Counting note:** these values follow the monthly pairs currently in the repository: H1 2024 = 46, H1 2025 = 112, H2 2025 = 116 and H1 2026 = 294. Earlier semiannual reports may show 45 or 114 after snapshot-specific deduplication; those values must not be mixed with the enriched monthly corpora.
 
 ---
 

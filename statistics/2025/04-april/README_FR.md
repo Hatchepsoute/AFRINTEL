@@ -2,18 +2,18 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 17 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les 21 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 17 |
+| Total incidents | 21 |
 | Ransomware | 7 |
-| Access Sale | 1 |
-| Access Sale | 1 |
-| Fuites de données | 9 |
-| Pays touchés | 7 |
-| Secteurs | 17 |
-| Acteurs / sources | 13 |
+| Fuites de données | 11 |
+| Ventes d'accès | 2 |
+| DDoS | 1 |
+| Pays touchés | 8 |
+| Secteurs | 18 |
+| Acteurs / sources | 14 |
 
 ## Pays
 
@@ -21,7 +21,7 @@ Cette fiche reprend les 17 cartes du fichier victimes mensuel. Les publications 
 |---|---:|
 | 🇪🇬 Égypte | 5 |
 | 🇲🇦 Maroc | 4 |
-| 🇩🇿 Algérie | 3 |
+| 🇩🇿 Algérie | 4 |
 | 🇿🇦 Afrique du Sud | 2 |
 | 🇸🇳 Sénégal | 1 |
 | 🇲🇷 Mauritanie | 1 |
@@ -43,6 +43,7 @@ Cette fiche reprend les 17 cartes du fichier victimes mensuel. Les publications 
 | Finance / Paiement mobile | 1 |
 | Technologies de l'Information | 1 |
 | Éducation / Enseignement supérieur / Audiovisuel et cinéma | 1 |
+| Éducation / Enseignement supérieur | 1 |
 | Gouvernement / Habitat / Politique de la ville | 1 |
 | Services financiers / Banque d'investissement / Conseil en financement de projets | 1 |
 | Agroalimentaire | 1 |
@@ -66,14 +67,16 @@ Cette fiche reprend les 17 cartes du fichier victimes mensuel. Les publications 
 | nightspire | 1 |
 | cicada3301 | 1 |
 | gunra | 1 |
+| Oxrau1 | 1 |
 
 ## Types
 
 | Type | Incidents |
 |---|---:|
-| Data Leak | 9 |
+| Data Leak | 11 |
 | Ransomware | 7 |
-| Access Sale | 1 |
+| Access Sale | 2 |
+| DDoS | 1 |
 
 **AFRINTEL** - TLP:CLEAR
 

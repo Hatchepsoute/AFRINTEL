@@ -2567,6 +2567,51 @@
 - **Victim Description:** The Kenya Electricity Transmission Company (KETRACO) is a Kenyan state corporation responsible for developing, operating and maintaining the country's high-voltage electricity transmission grid.
 - **Analysis:** The actor LindaBF published a post on December 31, 2025 titled "ketraco.co.ke database Kenya", with the download link restricted to forum members who reply to the thread. The visible sample shows a structured user-directory export (fields USER_ID, USER_NAME, USER_PASSWORD, USER_FIRSTNAME, USER_LASTNAME, USER_EMAIL, USER_LASTLOGIN, USER_FLAGS, USER_OU, USER_DATECREATED) tied to an organisational-unit path labelled "nl_KETRACO_Newsletter_Unit", consistent with a newsletter-subscriber or directory-service account list rather than core operational systems. Real-looking Kenyan names, email addresses and account-creation timestamps are visible, but numerous rows in the sample share an identical password value, which is inconsistent with independently generated per-user hashes and may indicate a shared default value, a placeholder, or a partially fabricated sample; this anomaly lowers AFRINTEL's confidence in the sample to a medium level. Given KETRACO's role in national power-transmission infrastructure, any confirmed compromise, even one limited to a newsletter or directory service, would be of concern for a critical-infrastructure operator and could indicate a broader foothold. AFRINTEL does not reproduce any username, email address, password value or record from the sample and has not accessed the linked download.
 
+## Retrospective additions synchronized with the monthly corpus
+
+### 08 April 2025
+#### 🇩🇿 Algeria - University of Tlemcen (univ-tlemcen.dz)
+- **Incident date:** Unknown - the publication does not state when the data was obtained
+- **Initial publication date:** 8 April 2025
+- **Actor / Group:** Oxrau1
+- **Sector:** Education / Higher Education
+- **Website:** univ-tlemcen.dz
+- **Status:** Claim - Unverified
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim Description:** The University of Tlemcen is a public Algerian higher-education institution.
+- **Analysis:** On April 8, 2025, the actor `Oxrau1` published a claim titled “leake 1.8GB univ-tlemcen.dz sql”, accompanied by the University of Tlemcen logo. The post claims a 1.8 GB SQL file, with a compressed archive advertised at 230 MB. The download content is hidden behind an 8-point payment; no SQL file or data extract was accessible in the material reviewed by AFRINTEL. The screenshot establishes the existence of the claim and its visual association with the university, but it does not confirm the origin, authenticity, completeness or volume of the data. The additional link named `Algeria.Com [2019-09].txt` cannot be attributed to the university without independent technical evidence. AFRINTEL does not reproduce personal data and does not follow download links or payment mechanisms.
+
+### 18 November 2025
+#### 🇰🇲🇨🇲 Comoros / Cameroon - Comores Telecom, Comoros Customs and Cameroonian Ministry of Justice
+- **Incident date:** Not established
+- **Initial publication date:** November 18, 2025, according to the visible post timestamp
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Countries concerned:** Comoros and Cameroon
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Telecommunications / Customs / Government / Justice
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Description:** A post titled “Comores Telecom / Douanes Comores / Cameroun MinJustice” claims a multi-country leak attributed to Ahlul Sahara. The visible material associates content presented as originating from Comores Telecom and Comoros Customs with a Joomla configuration identifying the Cameroonian Ministry of Justice (`minjustice`).
+- **Analysis:** The visible material includes user accounts, internal messages, administrative correspondence and application-configuration parameters. The post also exposes authentication and internal-service connection elements; AFRINTEL does not reproduce sensitive values. These elements support the existence of a published sample and an apparent association with Comorian and Cameroonian environments, but do not independently confirm initial access, the technical provenance of every file, complete exfiltration, the number of people affected or official confirmation by the three organisations. One canonical multi-country incident is counted in the global total.
+
+### 15 December 2025
+#### 🇹🇳 Tunisia - Examens.tn
+- **Actor / Group:** AshleyWood2022
+- **Sector:** Education / University
+- **Website:** [examens.tn](https://examens.tn/)
+- **Status:** Data Fully Published
+- **Incident type:** Data Leak
+- **Incident / initial publication date:** 15 December 2025 (displayed publication timestamp)
+- **Follow-up / observed modification date:** 23 June 2026 (update or republication not established)
+- **Confidence level:** High for the existence of the publication and sample; initial access and completeness unknown
+- **Impact level:** Level 3
+- **Victim Description:** Examens.tn is a Tunisian educational platform providing courses, exercises and exam-preparation resources for students and teachers.
+- **Analysis:** The publication presents a database as complete, including an approximately 717 MB `examens.sql` dump and `wp_users` and `wp_usermeta` exports. AFRINTEL's documented local analysis confirms exposure of 3,697 user accounts and 74,891 metadata records. No raw secret or personal data is published. The later modification does not establish a new attack or a distinct new access.
+
 ---
 
 *AFRINTEL compilation - source of truth: monthly files.*

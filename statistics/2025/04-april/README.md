@@ -4,19 +4,20 @@
 
 ## Summary
 
-This statistical sheet is compiled from the 17 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the 21 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 17 |
+| Total incidents | 21 |
 | Ransomware | 7 |
-| Data leaks | 9 |
-| Access sales | 1 |
+| Data leaks | 11 |
+| Access sales | 2 |
+| DDoS | 1 |
 | Defacement | 0 |
 | Unclassified public claims | 0 |
-| Countries | 7 |
-| Sectors | 17 |
-| Actors / sources | 13 |
+| Countries | 8 |
+| Sectors | 18 |
+| Actors / sources | 14 |
 
 ## 1. Country
 
@@ -24,7 +25,7 @@ This statistical sheet is compiled from the 17 cards in the monthly victim file.
 |---|---:|
 | 🇪🇬 Egypt | 5 |
 | 🇲🇦 Morocco | 4 |
-| 🇩🇿 Algeria | 3 |
+| 🇩🇿 Algeria | 4 |
 | 🇿🇦 South Africa | 2 |
 | 🇸🇳 Senegal | 1 |
 | 🇲🇷 Mauritania | 1 |
@@ -46,6 +47,7 @@ This statistical sheet is compiled from the 17 cards in the monthly victim file.
 | Finance / Mobile Payment | 1 |
 | Information Technology | 1 |
 | Education / Higher Education / Audiovisual and Cinema | 1 |
+| Education / Higher Education | 1 |
 | Government / Housing / Urban Policy | 1 |
 | Financial Services / Investment Banking / Project Finance Advisory | 1 |
 | Agribusiness | 1 |
@@ -69,14 +71,16 @@ This statistical sheet is compiled from the 17 cards in the monthly victim file.
 | nightspire | 1 |
 | cicada3301 | 1 |
 | gunra | 1 |
+| Oxrau1 | 1 |
 
 ## 4. Type
 
 | Type | Incidents |
 |---|---:|
-| Data Leak | 9 |
+| Data Leak | 11 |
 | Ransomware | 7 |
-| Access Sale | 1 |
+| Access Sale | 2 |
+| DDoS | 1 |
 
 ## CTI reading
 

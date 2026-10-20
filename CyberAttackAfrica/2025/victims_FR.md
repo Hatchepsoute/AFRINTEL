@@ -2567,6 +2567,51 @@
 - **Description victime:** La Kenya Electricity Transmission Company (KETRACO) est une entreprise publique kényane chargée du développement, de l'exploitation et de la maintenance du réseau national de transport d'électricité haute tension.
 - **Analyse:** L'acteur LindaBF a publié le 31 décembre 2025 un post intitulé « ketraco.co.ke database Kenya », le lien de téléchargement étant réservé aux membres du forum ayant répondu au fil de discussion. L'échantillon visible montre un export structuré d'un annuaire d'utilisateurs (champs USER_ID, USER_NAME, USER_PASSWORD, USER_FIRSTNAME, USER_LASTNAME, USER_EMAIL, USER_LASTLOGIN, USER_FLAGS, USER_OU, USER_DATECREATED) associé à une unité organisationnelle nommée « nl_KETRACO_Newsletter_Unit », cohérent avec une liste de comptes d'abonnés à une newsletter ou d'un service d'annuaire plutôt qu'avec des systèmes opérationnels critiques. Des noms, adresses email et horodatages de création de compte kényans d'apparence réaliste sont visibles, mais de nombreuses lignes de l'échantillon partagent une valeur de mot de passe identique, ce qui est incohérent avec des empreintes générées individuellement par utilisateur et pourrait indiquer une valeur par défaut partagée, un espace réservé, ou un échantillon partiellement fabriqué ; cette anomalie ramène le niveau de confiance d'AFRINTEL à un niveau moyen. Compte tenu du rôle de KETRACO dans l'infrastructure nationale de transport d'électricité, toute compromission confirmée, même limitée à un service de newsletter ou d'annuaire, serait préoccupante pour un opérateur d'infrastructure critique et pourrait indiquer un point d'accès plus large. AFRINTEL ne reproduit aucun nom d'utilisateur, adresse email, valeur de mot de passe ni enregistrement de l'échantillon, et n'a pas accédé au lien de téléchargement.
 
+## Ajouts rétrospectifs synchronisés avec le corpus mensuel
+
+### 08 Avril 2025
+#### 🇩🇿 Algérie - Université de Tlemcen (univ-tlemcen.dz)
+- **Date de l'incident:** Inconnue - la date d'obtention des données n'est pas précisée dans la publication
+- **Date de publication initiale:** 8 avril 2025
+- **Acteur / Groupe:** Oxrau1
+- **Secteur:** Éducation / Enseignement supérieur
+- **Site web:** univ-tlemcen.dz
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Low
+- **Niveau d'impact:** Level 3
+- **Description victime:** L'Université de Tlemcen est un établissement public d'enseignement supérieur algérien.
+- **Analyse:** Le 8 avril 2025, l'acteur `Oxrau1` a publié une revendication intitulée « leake 1.8GB univ-tlemcen.dz sql », accompagnée du logo de l'Université de Tlemcen. La publication revendique un fichier SQL de 1,8 Go, avec une archive compressée annoncée à 230 Mo. Le contenu du téléchargement est masqué derrière un paiement de 8 points ; aucun fichier SQL ni extrait de données n'était accessible dans le matériel examiné par AFRINTEL. La capture établit l'existence de la revendication et l'association visuelle avec l'université, mais ne permet pas de confirmer l'origine, l'authenticité, l'exhaustivité ou le volume des données. Le lien additionnel présenté comme un « gift » et nommé `Algeria.Com [2019-09].txt` n'est pas attribué à l'université en l'absence d'élément technique indépendant. AFRINTEL ne reproduit aucune donnée personnelle et ne suit pas les liens de téléchargement ou les mécanismes de paiement.
+
+### 18 Novembre 2025
+#### 🇰🇲🇨🇲 Comores / Cameroun - Comores Telecom, Douanes des Comores et Ministère camerounais de la Justice
+- **Date de l'incident:** Non établie
+- **Date de publication initiale:** 18 novembre 2025, selon l'horodatage visible de la publication
+- **Date de découverte / intégration AFRINTEL:** 16 octobre 2026
+- **Pays concernés:** Comores et Cameroun
+- **Acteur / Groupe:** Ahlul Sahara
+- **Secteur:** Télécommunications / Douanes / Gouvernement / Justice
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 4
+- **Description:** Une publication intitulée « Comores Telecom / Douanes Comores / Cameroun MinJustice » revendique une fuite multi-pays attribuée à Ahlul Sahara. Les éléments visibles associent des données présentées comme provenant de Comores Telecom et des Douanes des Comores à une configuration Joomla identifiant le ministère camerounais de la Justice (`minjustice`).
+- **Analyse:** Les éléments visibles comprennent des comptes utilisateurs, des messages internes, des courriers administratifs et des paramètres de configuration applicative. La publication expose également des éléments d'authentification et de connexion à des services internes ; aucune valeur sensible n'est reproduite par AFRINTEL. Ces éléments soutiennent l'existence d'un échantillon publié et une association apparente avec des environnements comoriens et camerounais, sans confirmer indépendamment l'accès initial, la provenance technique de chaque fichier, l'exfiltration complète, le nombre de personnes touchées ou une confirmation officielle des trois organisations. Un seul incident canonique multi-pays est compté dans le total global.
+
+### 15 Décembre 2025
+#### 🇹🇳 Tunisie - Examens.tn
+- **Acteur / Groupe:** AshleyWood2022
+- **Secteur:** Éducation / Université
+- **Site web:** [examens.tn](https://examens.tn/)
+- **Statut:** Data Fully Published
+- **Type d'incident:** Data Leak
+- **Date de l'incident / publication initiale:** 15 décembre 2025 (horodatage affiché de la publication)
+- **Date de suivi / modification observée:** 23 juin 2026 (mise à jour ou republication non établie)
+- **Niveau de confiance:** High pour l'existence de la publication et de l'échantillon ; accès initial et exhaustivité inconnus
+- **Niveau d'impact:** Level 3
+- **Description victime:** Examens.tn est une plateforme éducative tunisienne proposant des cours, exercices et ressources de préparation aux examens destinés aux élèves et aux enseignants.
+- **Analyse:** La publication présente une base comme complète, comprenant un dump `examens.sql` d'environ 717 Mo ainsi que les exports `wp_users` et `wp_usermeta`. L'analyse locale documentée par AFRINTEL confirme l'exposition de 3 697 comptes utilisateurs et 74 891 entrées de métadonnées. Aucun secret ni élément personnel brut n'est publié. La modification ultérieure ne permet pas d'établir une nouvelle attaque ou un nouvel accès distinct.
+
 ---
 
 *Compilation AFRINTEL - source unique : fichiers mensuels.*
