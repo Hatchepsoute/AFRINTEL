@@ -1,5 +1,7 @@
 # AFRINTEL - Monthly Cyber Threat Intelligence Report
 
+👉🏾[** French version available here**](./README_FR.md)
+
 **Africa - September 2026**
 **Ransomware, data leaks and extortion monitoring**
 
