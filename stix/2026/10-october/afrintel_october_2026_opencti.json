@@ -1,0 +1,1799 @@
+{
+  "type": "bundle",
+  "id": "bundle--eaf15828-1715-5710-9ff8-b19e179f5faf",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--a2f53c02-d2ec-5e43-914b-a9eb75a84262",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "N0n (name displayed by the source; identity and affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 10-october 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "10-october"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3c4879ef-e3b1-549f-ac33-62e421e5ef21",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Eurogate Tanger (eurogate-tanger.com)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Maritime transport / container-terminal operations.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Transport maritime / opérations de terminal conteneurs.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://eurogate-tanger.com"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Eurogate Tanger (eurogate-tanger.com)",
+      "x_afrintel_sector_raw": "Transport maritime / opérations de terminal conteneurs",
+      "x_afrintel_sector_raw_en": "Maritime transport / container-terminal operations",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--5c770f80-736b-5a37-8dad-9f994208509b",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 01: Eurogate Tanger (eurogate-tanger.com)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed ransomware affecting Eurogate Tanger (eurogate-tanger.com) in Morocco on 20 October 2026 - AFRINTEL discovery. The source actor is listed as N0n (name displayed by the source; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Maritime transport / container-terminal operations. Source summary: Eurogate Tanger is presented as a container-terminal operator in Morocco. The publication claims the removal of commercial correspondence, operational documents and internal working files from systems associated with eurogate-tanger.com.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type ransomware concernant Eurogate Tanger (eurogate-tanger.com) en Maroc, à la date du 20 octobre 2026 - découverte AFRINTEL. L'acteur source est indiqué comme N0n (nom affiché par la source ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Transport maritime / opérations de terminal conteneurs. Résumé de la source : Eurogate Tanger est présenté comme un opérateur de terminal conteneurs au Maroc. La publication revendique l'extraction de correspondances commerciales, de documents opérationnels et de fichiers de travail internes depuis les systèmes associés au domaine eurogate-tanger.com.",
+      "first_seen": "2026-10-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "ransomware",
+        "data-sample-published",
+        "morocco",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://eurogate-tanger.com"
+        }
+      ],
+      "x_opencti_incident_type": "ransomware",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Transport maritime / opérations de terminal conteneurs",
+      "x_afrintel_sector_raw_en": "Maritime transport / container-terminal operations",
+      "x_afrintel_actor": "N0n (name displayed by the source; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "N0n (nom affiché par la source ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "20 octobre 2026 - découverte AFRINTEL",
+      "x_afrintel_date_display_en": "20 October 2026 - AFRINTEL discovery",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--17402e3f-db51-561a-bc0e-8b02a374aafb",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--5c770f80-736b-5a37-8dad-9f994208509b",
+      "target_ref": "threat-actor--a2f53c02-d2ec-5e43-914b-a9eb75a84262",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b967eb72-ea4d-5296-8d7c-a5647f228920",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--a2f53c02-d2ec-5e43-914b-a9eb75a84262",
+      "target_ref": "identity--3c4879ef-e3b1-549f-ac33-62e421e5ef21",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c6d7333e-0c96-5ec1-8b21-e75d28b6a2ad",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--5c770f80-736b-5a37-8dad-9f994208509b",
+      "target_ref": "identity--3c4879ef-e3b1-549f-ac33-62e421e5ef21",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--154127bd-530e-5b2f-bc5f-3c4c943d74c6",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 10-october 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "10-october"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5071982d-2a55-5d47-a284-b725e45e96c5",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Yalidine El Djazair Service (yalidine.com) — attribution unconfirmed",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Algeria. Sector: Transport / Logistics / Express Delivery.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Algérie. Secteur : Transport / Logistique / Livraison express.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "algeria",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://yalidine.com"
+        }
+      ],
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_country_fr": "Algérie",
+      "x_afrintel_organization_fr": "Yalidine El Djazair Service (yalidine.com) — attribution non confirmée",
+      "x_afrintel_sector_raw": "Transport / Logistique / Livraison express",
+      "x_afrintel_sector_raw_en": "Transport / Logistics / Express Delivery",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "transportation"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--093c5c50-cf23-57bd-9aec-fa68eeee00eb",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 02: Yalidine El Djazair Service (yalidine.com) — attribution unconfirmed",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Yalidine El Djazair Service (yalidine.com) - attribution unconfirmed in Algeria on 20 October 2026 - AFRINTEL discovery. The source actor is listed as TelephoneHooliganism (account displayed in the post; identity and affiliation unverified). Status: Under Investigation - Alleged. Sector: Transport / Logistics / Express Delivery. Source summary: Yalidine El Djazair Service is an Algerian express-mail, parcel-delivery and domestic-logistics company that also provides e-commerce delivery and cash-on-delivery collection. The post associates the company with a database advertised as containing approximately 563,000 records.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Yalidine El Djazair Service (yalidine.com) - attribution non confirmée en Algérie, à la date du 20 octobre 2026 - découverte AFRINTEL. L'acteur source est indiqué comme TelephoneHooliganism (compte affiché dans la publication ; identité et affiliation non vérifiées). Statut : Under Investigation - Alleged. Secteur : Transport / Logistique / Livraison express. Résumé de la source : Yalidine El Djazair Service est une entreprise algérienne de courrier express, de livraison de colis, de logistique domestique, de livraison e-commerce et de recouvrement à la livraison. La publication associe cette entreprise à une base annoncée comme contenant environ 563 000 enregistrements.",
+      "first_seen": "2026-10-20T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "under-investigation",
+        "algeria",
+        "transportation"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://yalidine.com"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Under Investigation",
+      "x_afrintel_country": "Algeria",
+      "x_afrintel_country_fr": "Algérie",
+      "x_afrintel_sector_raw": "Transport / Logistique / Livraison express",
+      "x_afrintel_sector_raw_en": "Transport / Logistics / Express Delivery",
+      "x_afrintel_actor": "TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "TelephoneHooliganism (compte affiché dans la publication ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "20 octobre 2026 - découverte AFRINTEL",
+      "x_afrintel_date_display_en": "20 October 2026 - AFRINTEL discovery",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Low",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d961f61b-d23b-54c8-9169-4564887f9eda",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--093c5c50-cf23-57bd-9aec-fa68eeee00eb",
+      "target_ref": "threat-actor--154127bd-530e-5b2f-bc5f-3c4c943d74c6",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fec630d4-e8b5-5639-b38b-084a8992a325",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--154127bd-530e-5b2f-bc5f-3c4c943d74c6",
+      "target_ref": "identity--5071982d-2a55-5d47-a284-b725e45e96c5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f0c094a0-4f50-51ec-9523-c02a7a821360",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--093c5c50-cf23-57bd-9aec-fa68eeee00eb",
+      "target_ref": "identity--5071982d-2a55-5d47-a284-b725e45e96c5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 10-october 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "10-october"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--0e01afce-ba2b-5606-ad7e-f205c72c7c2e",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "National Press Council (CNP)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Independent public institution / Press regulation.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Institution publique indépendante / Régulation de la presse.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cnp.press.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Conseil national de la presse (CNP)",
+      "x_afrintel_sector_raw": "Institution publique indépendante / Régulation de la presse",
+      "x_afrintel_sector_raw_en": "Independent public institution / Press regulation",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--fc2d6ea6-6ff4-5875-b0a4-dd1c8ef757f0",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 03: National Press Council (CNP)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting National Press Council (CNP) in Morocco on 09 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Independent public institution / Press regulation. Source summary: The National Press Council is an independent national institution responsible, among other duties, for self-regulation of the press and publishing sector and for issuing professional press cards in Morocco.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Conseil national de la presse (CNP) en Maroc, à la date du 09 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Institution publique indépendante / Régulation de la presse. Résumé de la source : Le Conseil national de la presse est une institution nationale indépendante chargée notamment de l’autorégulation du secteur de la presse et de l’édition, ainsi que de l’attribution de la carte de presse professionnelle au Maroc.",
+      "first_seen": "2026-10-09T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://cnp.press.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 3,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Institution publique indépendante / Régulation de la presse",
+      "x_afrintel_sector_raw_en": "Independent public institution / Press regulation",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "09 octobre 2026",
+      "x_afrintel_date_display_en": "09 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--24056a44-7d4a-59a7-a84b-1ae73fcad437",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--fc2d6ea6-6ff4-5875-b0a4-dd1c8ef757f0",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--c78f3c68-6744-55ea-804c-e1b016450d75",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--0e01afce-ba2b-5606-ad7e-f205c72c7c2e",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--717b3bb2-6147-56be-98f5-f367977a01f3",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--fc2d6ea6-6ff4-5875-b0a4-dd1c8ef757f0",
+      "target_ref": "identity--0e01afce-ba2b-5606-ad7e-f205c72c7c2e",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--b40af55c-2712-5d26-9b69-beb5baf46468",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "anisanas2 (displayed forum account; identity and affiliation unverified)",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 10-october 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "10-october"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--8d2e3a48-6459-53cd-b99e-da9c3e25732c",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Ministry of Investment, Convergence and Evaluation of Public Policies (MICEPP)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Government / Administration / Investment and public-policy evaluation.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Gouvernement / Administration / Investissement et évaluation des politiques publiques.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://micepp.gov.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Ministère de l’Investissement, de la Convergence et de l’Évaluation des politiques publiques (MICEPP)",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Investissement et évaluation des politiques publiques",
+      "x_afrintel_sector_raw_en": "Government / Administration / Investment and public-policy evaluation",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--5b5bc735-3f60-5f3f-a4f0-452e8f6ba5f0",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 04: Ministry of Investment, Convergence and Evaluation of Public Policies (MICEPP)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Ministry of Investment, Convergence and Evaluation of Public Policies (MICEPP) in Morocco on 02 October 2026. The source actor is listed as anisanas2 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Government / Administration / Investment and public-policy evaluation. Source summary: The supplied material identifies MICEPP as Morocco’s Ministry of Investment, Convergence and Evaluation of Public Policies. Its precise institutional role and any potentially affected systems are not established by the observed publications.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Ministère de l’Investissement, de la Convergence et de l’Évaluation des politiques publiques (MICEPP) en Maroc, à la date du 02 octobre 2026. L'acteur source est indiqué comme anisanas2 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Gouvernement / Administration / Investissement et évaluation des politiques publiques. Résumé de la source : Les éléments fournis identifient MICEPP comme le ministère marocain de l’Investissement, de la Convergence et de l’Évaluation des politiques publiques. Le rôle institutionnel précis et les systèmes éventuellement concernés ne sont pas établis par les publications observées.",
+      "first_seen": "2026-10-02T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://micepp.gov.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 4,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Investissement et évaluation des politiques publiques",
+      "x_afrintel_sector_raw_en": "Government / Administration / Investment and public-policy evaluation",
+      "x_afrintel_actor": "anisanas2 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "anisanas2 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "02 octobre 2026",
+      "x_afrintel_date_display_en": "02 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2cfcb3ed-f907-55eb-9899-809c798c7f30",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--5b5bc735-3f60-5f3f-a4f0-452e8f6ba5f0",
+      "target_ref": "threat-actor--b40af55c-2712-5d26-9b69-beb5baf46468",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9d26a50a-7f93-5031-8e35-76e3ab0ab688",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--b40af55c-2712-5d26-9b69-beb5baf46468",
+      "target_ref": "identity--8d2e3a48-6459-53cd-b99e-da9c3e25732c",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--43c29f38-87d3-57f6-80d4-89ad3a14797b",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--5b5bc735-3f60-5f3f-a4f0-452e8f6ba5f0",
+      "target_ref": "identity--8d2e3a48-6459-53cd-b99e-da9c3e25732c",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--bf4077c2-65f7-580d-9d22-bc38c7552708",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Ministry of National Territory Planning, Land Planning, Housing and City Policy",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Government / Administration / Housing and urban planning.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Gouvernement / Administration / Habitat et urbanisme.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Ministère de l’Aménagement du territoire national, de l’Urbanisme, de l’Habitat et de la Politique de la ville",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Habitat et urbanisme",
+      "x_afrintel_sector_raw_en": "Government / Administration / Housing and urban planning",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--9e62baa6-1d27-5697-84d0-9c38d6ba1ff9",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 05: Ministry of National Territory Planning, Land Planning, Housing and City Policy",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Ministry of National Territory Planning, Land Planning, Housing and City Policy in Morocco on 02 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Government / Administration / Housing and urban planning. Source summary: The Moroccan ministry is responsible for public policies relating to national territory planning, urban planning, housing and city policy. Its institutional identity and remit are documented in an organisational decree published by the Moroccan administration.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Ministère de l’Aménagement du territoire national, de l’Urbanisme, de l’Habitat et de la Politique de la ville en Maroc, à la date du 02 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Gouvernement / Administration / Habitat et urbanisme. Résumé de la source : Le ministère marocain est chargé des politiques publiques relevant de l’aménagement du territoire, de l’urbanisme, de l’habitat et de la politique de la ville. Son identité institutionnelle et ses attributions sont documentées dans un décret d’organisation publié par l’administration marocaine.",
+      "first_seen": "2026-10-02T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 5,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Habitat et urbanisme",
+      "x_afrintel_sector_raw_en": "Government / Administration / Housing and urban planning",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "02 octobre 2026",
+      "x_afrintel_date_display_en": "02 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5f3aefeb-cbd0-5ef2-8624-c8f2ea3c2687",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--9e62baa6-1d27-5697-84d0-9c38d6ba1ff9",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ad5bebc0-0e33-5074-965a-c5afc4cc4c67",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--bf4077c2-65f7-580d-9d22-bc38c7552708",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--70e9191c-5bfb-56e9-bfa8-cd36d6483d81",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--9e62baa6-1d27-5697-84d0-9c38d6ba1ff9",
+      "target_ref": "identity--bf4077c2-65f7-580d-9d22-bc38c7552708",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--73e61633-61ca-55b3-a061-02d9ed71dccb",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Midipcom",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Technology / IT equipment distribution.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Technologie / Distribution de matériel informatique.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://midipcom.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Midipcom",
+      "x_afrintel_sector_raw": "Technologie / Distribution de matériel informatique",
+      "x_afrintel_sector_raw_en": "Technology / IT equipment distribution",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "technology"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--766a3fc1-6d0f-5aa0-bd3c-05b1fd722318",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 06: Midipcom",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Midipcom in Morocco on 01 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Technology / IT equipment distribution. Source summary: Midipcom is a Moroccan distributor of IT equipment, refurbished devices, peripherals and printing solutions. Its website presents computers, components, accessories, monitors, printers and toner products.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Midipcom en Maroc, à la date du 01 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Technologie / Distribution de matériel informatique. Résumé de la source : Midipcom est un distributeur marocain de matériel informatique, d’équipements reconditionnés, de périphériques et de solutions d’impression. Son site présente notamment des ordinateurs, composants, accessoires, écrans, imprimantes et toners.",
+      "first_seen": "2026-10-01T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://midipcom.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 6,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Technologie / Distribution de matériel informatique",
+      "x_afrintel_sector_raw_en": "Technology / IT equipment distribution",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "01 octobre 2026",
+      "x_afrintel_date_display_en": "01 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 3"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--390b94ac-6a6b-5847-83e6-25062505f83d",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--766a3fc1-6d0f-5aa0-bd3c-05b1fd722318",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9401955e-f612-55fb-853e-0e05adb13f24",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--73e61633-61ca-55b3-a061-02d9ed71dccb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--add8c0ce-db59-581e-8637-4cd8b482484a",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--766a3fc1-6d0f-5aa0-bd3c-05b1fd722318",
+      "target_ref": "identity--73e61633-61ca-55b3-a061-02d9ed71dccb",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--3c52d37e-cff7-5e0c-a04a-225e294e587c",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Tera.ma / Sté Tera.ma SARL",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Technology / IT equipment distribution and retail.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Technologie / Distribution et vente au détail de matériel informatique.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Tera.ma / Sté Tera.ma SARL",
+      "x_afrintel_sector_raw": "Technologie / Distribution et vente au détail de matériel informatique",
+      "x_afrintel_sector_raw_en": "Technology / IT equipment distribution and retail",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "technology"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--0b8bbd26-c47d-53da-bb81-ed0841db8c4d",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 07: Tera.ma / Sté Tera.ma SARL",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Tera.ma / Sté Tera.ma SARL in Morocco on 05 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Data Fully Published. Sector: Technology / IT equipment distribution and retail. Source summary: Tera.ma is presented in the publication as a Moroccan IT-equipment distribution and retail company located in Témara / Rabat. The corpus contains material consistent with sales, inventory, e-commerce, accounting and partner-management operations.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Tera.ma / Sté Tera.ma SARL en Maroc, à la date du 05 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Data Fully Published. Secteur : Technologie / Distribution et vente au détail de matériel informatique. Résumé de la source : Tera.ma est présentée dans la publication comme une société marocaine de distribution et de vente au détail de matériel informatique, implantée à Témara / Rabat. Le corpus contient des éléments cohérents avec une activité de ventes, d’inventaire, de commerce en ligne, de comptabilité et de gestion de partenaires.",
+      "first_seen": "2026-10-05T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-fully-published",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 7,
+      "x_afrintel_status": "Data Fully Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Technologie / Distribution et vente au détail de matériel informatique",
+      "x_afrintel_sector_raw_en": "Technology / IT equipment distribution and retail",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "05 octobre 2026",
+      "x_afrintel_date_display_en": "05 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0c2a1455-0191-505d-9415-a7fea4459b57",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--0b8bbd26-c47d-53da-bb81-ed0841db8c4d",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--7cdd8522-33bc-5ec9-a9e9-b8bfefca31f4",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--3c52d37e-cff7-5e0c-a04a-225e294e587c",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9352d9bf-8ec2-5c9a-9063-197fdc68ede8",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--0b8bbd26-c47d-53da-bb81-ed0841db8c4d",
+      "target_ref": "identity--3c52d37e-cff7-5e0c-a04a-225e294e587c",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--2215fc65-b881-5d04-8f35-6650f4ee414a",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Karamtech",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Technology / IT and security equipment retail and distribution.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Technologie / Commerce et distribution de matériel informatique et de sécurité.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://karamtech.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Karamtech",
+      "x_afrintel_sector_raw": "Technologie / Commerce et distribution de matériel informatique et de sécurité",
+      "x_afrintel_sector_raw_en": "Technology / IT and security equipment retail and distribution",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "technology"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--ace45117-e52b-5041-ac3f-a0cd3caf07f2",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 08: Karamtech",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Karamtech in Morocco on 02 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Technology / IT and security equipment retail and distribution. Source summary: Karamtech is a Moroccan e-commerce site presenting IT equipment, accessories, network equipment, printing solutions, access-control and security equipment.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Karamtech en Maroc, à la date du 02 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Technologie / Commerce et distribution de matériel informatique et de sécurité. Résumé de la source : Karamtech est un site marocain de commerce électronique présentant du matériel informatique, des accessoires, des équipements réseau, des solutions d’impression, de contrôle d’accès et de sécurité.",
+      "first_seen": "2026-10-02T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://karamtech.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 8,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Technologie / Commerce et distribution de matériel informatique et de sécurité",
+      "x_afrintel_sector_raw_en": "Technology / IT and security equipment retail and distribution",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "02 octobre 2026",
+      "x_afrintel_date_display_en": "02 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--fc414a7a-2a8d-551b-b287-3e05ca950196",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--ace45117-e52b-5041-ac3f-a0cd3caf07f2",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8138d320-9041-5c5d-aca4-c27feab91e88",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--2215fc65-b881-5d04-8f35-6650f4ee414a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a8dcf19e-8e26-524c-90c2-20ccf72db17c",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--ace45117-e52b-5041-ac3f-a0cd3caf07f2",
+      "target_ref": "identity--2215fc65-b881-5d04-8f35-6650f4ee414a",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--45018ff6-d73e-57c8-9a9d-6c4cc544760f",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "NextLevel PC",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: E-commerce / IT equipment and gaming.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Commerce électronique / Matériel informatique et gaming.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "NextLevel PC",
+      "x_afrintel_sector_raw": "Commerce électronique / Matériel informatique et gaming",
+      "x_afrintel_sector_raw_en": "E-commerce / IT equipment and gaming",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "technology"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--8cdb1843-d707-53ed-b579-f8527e431f62",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 09: NextLevel PC",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting NextLevel PC in Morocco on 07 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Data Fully Published. Sector: E-commerce / IT equipment and gaming. Source summary: NextLevel PC is presented by the author as a Moroccan e-commerce site specialising in IT equipment and gaming. This description and the domain are attributed to the publication; their technical connection to a compromised system has not been independently confirmed.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant NextLevel PC en Maroc, à la date du 07 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Data Fully Published. Secteur : Commerce électronique / Matériel informatique et gaming. Résumé de la source : NextLevel PC est présenté par l’auteur comme un site marocain de commerce électronique spécialisé dans le matériel informatique et le gaming. Cette description et le domaine sont attribués à la publication ; la relation technique avec un système compromis n’est pas confirmée indépendamment.",
+      "first_seen": "2026-10-07T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-fully-published",
+        "morocco",
+        "technology"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 9,
+      "x_afrintel_status": "Data Fully Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Commerce électronique / Matériel informatique et gaming",
+      "x_afrintel_sector_raw_en": "E-commerce / IT equipment and gaming",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "07 octobre 2026",
+      "x_afrintel_date_display_en": "07 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Very High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--112ca366-ec17-5f54-8f5a-83467151b0d0",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--8cdb1843-d707-53ed-b579-f8527e431f62",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f8ce9711-6c26-5017-b24b-6c20dd0eb9b4",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--45018ff6-d73e-57c8-9a9d-6c4cc544760f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--66cbed04-430a-5f38-a75e-b05a7882a171",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--8cdb1843-d707-53ed-b579-f8527e431f62",
+      "target_ref": "identity--45018ff6-d73e-57c8-9a9d-6c4cc544760f",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--5a41dfc3-a918-5055-8bea-cf88f650ed47",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Cadi Ayyad University (UCA)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Education / Public higher education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Éducation / Enseignement supérieur public.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://uca.ma"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Université Cadi Ayyad (UCA)",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur public",
+      "x_afrintel_sector_raw_en": "Education / Public higher education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--358ec27a-6381-54d3-a06f-6459a1e89241",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 10: Cadi Ayyad University (UCA)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Cadi Ayyad University (UCA) in Morocco on 05 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Education / Public higher education. Source summary: Cadi Ayyad University is a Moroccan public university established in Marrakech and active through several disciplines and institutions in the Marrakech-Safi region.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Université Cadi Ayyad (UCA) en Maroc, à la date du 05 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement supérieur public. Résumé de la source : L’Université Cadi Ayyad est une université publique marocaine établie à Marrakech et active dans plusieurs disciplines et établissements de la région Marrakech-Safi.",
+      "first_seen": "2026-10-05T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://uca.ma"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 10,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Éducation / Enseignement supérieur public",
+      "x_afrintel_sector_raw_en": "Education / Public higher education",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "05 octobre 2026",
+      "x_afrintel_date_display_en": "05 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--cd3af924-29fb-57a3-afa5-bdf5cfef3076",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--358ec27a-6381-54d3-a06f-6459a1e89241",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a4c010d9-adf8-5f70-9044-cf6556824232",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--5a41dfc3-a918-5055-8bea-cf88f650ed47",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--66d94829-1966-5c1a-9f9a-fbe1f61590ce",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--358ec27a-6381-54d3-a06f-6459a1e89241",
+      "target_ref": "identity--5a41dfc3-a918-5055-8bea-cf88f650ed47",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--64092096-9162-57b1-940f-e4fd74dfbdef",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Ministry of Endowments and Islamic Affairs",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Government / Administration / Religious affairs.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Gouvernement / Administration / Affaires religieuses.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Ministère des Habous et des Affaires islamiques",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Affaires religieuses",
+      "x_afrintel_sector_raw_en": "Government / Administration / Religious affairs",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "government"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--23df7931-eed3-5dfe-ae94-a56008d9f6aa",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 11: Ministry of Endowments and Islamic Affairs",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Ministry of Endowments and Islamic Affairs in Morocco on 9 October 2026. The source actor is listed as Nameless511 (displayed forum account; identity and affiliation unverified). Status: Claim - Data Sample Published. Sector: Government / Administration / Religious affairs. Source summary: The Ministry of Endowments and Islamic Affairs is a Moroccan public institution responsible, among other functions, for religious affairs and endowments.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Ministère des Habous et des Affaires islamiques en Maroc, à la date du 09 octobre 2026. L'acteur source est indiqué comme Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées). Statut : Claim - Data Sample Published. Secteur : Gouvernement / Administration / Affaires religieuses. Résumé de la source : Le Ministère des Habous et des Affaires islamiques est une institution publique marocaine responsable notamment des affaires religieuses et des habous.",
+      "first_seen": "2026-10-09T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco",
+        "government"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 11,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Gouvernement / Administration / Affaires religieuses",
+      "x_afrintel_sector_raw_en": "Government / Administration / Religious affairs",
+      "x_afrintel_actor": "Nameless511 (displayed forum account; identity and affiliation unverified)",
+      "x_afrintel_actor_fr": "Nameless511 (compte de forum affiché ; identité et affiliation non vérifiées)",
+      "x_afrintel_date_display": "09 octobre 2026",
+      "x_afrintel_date_display_en": "9 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "High",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a62a77fc-5dbe-5f82-ac67-fba9cf00731b",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--23df7931-eed3-5dfe-ae94-a56008d9f6aa",
+      "target_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5de71032-e613-56b6-ac9f-c5ef85179bdc",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--2d8eebdf-af54-5d01-8279-13aed06468f8",
+      "target_ref": "identity--64092096-9162-57b1-940f-e4fd74dfbdef",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5fb93dc4-d436-5a20-8e55-f7f06ffe50bc",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--23df7931-eed3-5dfe-ae94-a56008d9f6aa",
+      "target_ref": "identity--64092096-9162-57b1-940f-e4fd74dfbdef",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--d7308966-855b-5864-9a6c-b38ba4910c26",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Nameless511",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 10-october 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "10-october"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--cb4d1a69-866c-52a5-8f2d-066165a732f5",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "Decathlon Morocco",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Unknown. Sector: Retail / Sporting Goods / E-commerce.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Unknown. Secteur : Commerce de détail / Distribution / E-commerce.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "unknown",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.decathlon.ma/"
+        }
+      ],
+      "x_afrintel_country": "Unknown",
+      "x_afrintel_country_fr": "Unknown",
+      "x_afrintel_organization_fr": "Decathlon Maroc",
+      "x_afrintel_sector_raw": "Commerce de détail / Distribution / E-commerce",
+      "x_afrintel_sector_raw_en": "Retail / Sporting Goods / E-commerce",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "sectors": [
+        "retail"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--08a77499-090e-57bf-9a3b-8b3186a9dfb8",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "name": "AFRINTEL October 2026 incident 12: Decathlon Morocco",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Decathlon Morocco in Unknown on 10 October 2026. The source actor is listed as Nameless511. Status: Threat actor claim supported by a published data sample. Sector: Retail / Sporting Goods / E-commerce.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Decathlon Maroc en Unknown, à la date du 10 octobre 2026. L'acteur source est indiqué comme Nameless511. Statut : Revendication accompagnée d'un échantillon de données. Secteur : Commerce de détail / Distribution / E-commerce.",
+      "first_seen": "2026-10-10T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "unknown",
+        "retail"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/10-october/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://www.decathlon.ma/"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 12,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Unknown",
+      "x_afrintel_country_fr": "Unknown",
+      "x_afrintel_sector_raw": "Commerce de détail / Distribution / E-commerce",
+      "x_afrintel_sector_raw_en": "Retail / Sporting Goods / E-commerce",
+      "x_afrintel_actor": "Nameless511",
+      "x_afrintel_actor_fr": "Nameless511",
+      "x_afrintel_date_display": "10 octobre 2026",
+      "x_afrintel_date_display_en": "10 October 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/10-october/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/10-october/victims.md",
+      "x_afrintel_confidence_level": "Medium"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a870fd1b-efc7-54dc-ba30-919394dc2fa0",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--08a77499-090e-57bf-9a3b-8b3186a9dfb8",
+      "target_ref": "threat-actor--d7308966-855b-5864-9a6c-b38ba4910c26",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f6d3afbb-a179-53af-b53a-032d5d90c2c1",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d7308966-855b-5864-9a6c-b38ba4910c26",
+      "target_ref": "identity--cb4d1a69-866c-52a5-8f2d-066165a732f5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f67c1b50-f0fb-5997-be2a-d5fb1ce2fb5e",
+      "created": "2026-10-20T13:09:50Z",
+      "modified": "2026-10-20T13:09:50Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--08a77499-090e-57bf-9a3b-8b3186a9dfb8",
+      "target_ref": "identity--cb4d1a69-866c-52a5-8f2d-066165a732f5",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}

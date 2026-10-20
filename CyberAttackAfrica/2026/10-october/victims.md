@@ -3,15 +3,51 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in October 2026 (11 records)
+# List of African cyberattack victims in October 2026 (12 records)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## October 2026
 
-**Monthly tracking status: In Progress / En cours**  -  provisional corpus of 11 records; monthly closure and statistics remain pending. The Yalidine case is documented but excluded from canonical statistics until its attribution is corroborated.
+**Monthly tracking status: In Progress / En cours**  -  provisional corpus of 12 records; monthly closure and statistics remain pending. The Yalidine case is documented but excluded from canonical statistics until its attribution is corroborated.
 
-### 20 October 2026 — AFRINTEL discovery
+### 20 October 2026 - AFRINTEL discovery
+
+#### 🇲🇦 Morocco - Eurogate Tanger (`eurogate-tanger.com`)
+
+- **Incident date:** Not established
+- **Initial publication date:** 12 October 2026 at 13:55:54 (displayed timestamp; timezone not specified)
+- **Observed disclosure date:** 19 October 2026 at 13:27 UTC (announced first batch)
+- **AFRINTEL discovery date:** 20 October 2026
+- **Actor / Group:** N0n (name displayed by the source; identity and affiliation unverified)
+- **Sector:** Maritime transport / container-terminal operations
+- **Website:** `eurogate-tanger.com`
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence level:** High
+- **Impact level:** Level 4 (potential)
+- **Source type:** Ransomware tracker and actor-published archive
+
+- **Victim Description:** Eurogate Tanger is presented as a container-terminal operator in Morocco. The publication claims the removal of commercial correspondence, operational documents and internal working files from systems associated with `eurogate-tanger.com`.
+
+- **Analysis:**
+
+  **Observed:** The observed record identifies Eurogate Tanger, Morocco, the maritime-transport sector, the N0n group and a `NOT PAID – EXPOSED` statement. “Published data” is listed as `N/D`. The supplied local archive, `eurogate_tanger.com-leak.zip`, passed a read-only integrity test and contains **355 files**, **373,065,003 uncompressed bytes**, **373,150,373 archive bytes**, with no ZIP encryption. Files are grouped under `eurogate-tanger.com` and include DOCX, XLS/XLSX, PDF, MSG, PPTX, ODS, EDI, XML, log/trace, SQL, archive and technical files. The included README explicitly describes a **first publication batch** and announces possible additional batches.
+
+  A read-only static analysis covered all **354 files extracted under the domain**: hashes, actual file types, structure and textual/XML content where extractable. It included **98 DOCX, 86 XLSX, 11 XLS, 5 PPTX, 2 ODS, 22 PDF, 10 MSG, 32 TRC files, 32 TRM files, 19 RAR, 5 ZIP, 1 JAR, 1 Java class, and EDI/XML/WSDL/SQL and log files**. XML analysis of the XLSX files represents approximately **652,708 row elements** and **13,686,923 cell elements**; these are structural indicators and do not directly represent unique people or operations.
+
+  Text and XML content repeatedly contains references consistent with **EGT, Eurogate, Tanger, OPUS Terminal, terminal, port, containers, vessels, cargo, reefers, gates, cranes, yard, voyages, trucks and operational movements**. DOCX and XLSX files also contain references to release notes, hotfixes, SQL scripts, traces and technical exchanges associated with this environment. The RAR archives, ZIP archives and JAR were inventoried without execution; their members and sizes were checked.
+
+  No file was executed. No VBA macro marker was detected in the inspected Office containers. PDFs and MSG files received static string and metadata analysis, without rendering or full interpretation of embedded objects. Email-address markers are present in several text-like files; no individual data is reproduced in this report.
+
+  **Assumption:** The domain name in the archive tree, the organization name, the stated sector and the announced file categories are consistent with an exposure of Eurogate Tanger internal data. This supports archive-to-victim attribution, but does not prove the access method, initial compromise, data completeness or the absence of a provider or third-party environment.
+
+  **Unknown:** The compromise date and vector, the total volume actually exfiltrated, N0n’s real identity and capabilities, completeness of the first batch, operational impact, any confirmation by Eurogate Tanger or an authority, and the exact content of the documents remain unknown.
+
+- **Analyzed archive hash:** SHA-256 `87bb4495b774c21919af26daf9b3ab807e57f78d7fad5879d0176bd9df28c891`.
+- **Analysis scope and limitations:** All 354 files extracted under the domain were covered by static analysis of actual type, hashes, structure and textual/XML content where extractable. This method does not decrypt protected files, visually render every page or validate every embedded object. It is not official confirmation of the incident. The archive remains outside the AFRINTEL repository.
+- **Risk assessment:** Potential exposure of operational documents, vessel and container data, configurations or release notes, scripts and technical traces could facilitate social engineering, document fraud, employee targeting, preparation of port-operation disruption or identification of application dependencies. Level 4 reflects the potentially critical nature of this environment; actual disruption or access to control systems is not established.
+- **Sources / Evidence:** public record observed on 20 October 2026; local archive supplied for analysis; no onion address, raw personal data or individual value is published.
 
 #### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) — attribution unconfirmed
 
@@ -420,10 +456,10 @@
 - **Threat Actor / Group:** Nameless511
 - **Claimed Volume:** More than 24,438 customer orders
 - **Status:** Threat actor claim supported by a published data sample
-- **Confidence Level:** Moderate
+- **Confidence Level:** Medium
 
 
-#### Incident Description
+##### Incident Description
 
 A threat actor operating under the alias Nameless511 published a data leak claim on the DarkForums cybercrime forum targeting Decathlon Morocco, a sporting goods retailer.
 
@@ -451,7 +487,7 @@ According to the threat actor, the exposed information includes:
 - Operational comments and employee notes
 - Assembly, return and repair information
 
-#### Observed Evidence
+##### Observed Evidence
 
 A data sample displayed in the threat actor's publication was examined as part of the CTI investigation.
 
@@ -474,7 +510,7 @@ Additional Excel files were also provided through a download link shared in the 
 
 Their relationship to the same dataset and their exact connection to Decathlon Morocco remain unverified.
 
-#### CTI Assessment
+##### CTI Assessment
 
 The sample structure is consistent with an export from an order management, route planning or delivery management application.
 
@@ -491,7 +527,7 @@ The claimed volume of 24,438 customer orders has not been independently verified
 
 The publication date should not be interpreted as the date of the original compromise.
 
-#### Potential Risks
+##### Potential Risks
 
 - Targeted phishing and smishing
 - Voice phishing and identity impersonation
@@ -501,7 +537,7 @@ The publication date should not be interpreted as the date of the original compr
 - Privacy risks involving precise GPS coordinates
 - Geographic targeting of affected individuals
 
-#### SOC/CTI Recommendations
+##### SOC/CTI Recommendations
 
 - Verify the authenticity and origin of the published data.
 - Identify systems and third parties with access
@@ -514,7 +550,7 @@ The publication date should not be interpreted as the date of the original compr
 - Raise customer awareness of delivery-related scams
   and social engineering attempts.
 
-#### Conclusion
+##### Conclusion
 
 Nameless511's publication represents a credible data exposure claim requiring further investigation.
 
