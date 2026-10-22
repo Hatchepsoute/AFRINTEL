@@ -1,7 +1,21 @@
 # AFRINTEL - Monthly Cyber Threat Intelligence Report
+👉🏾[**French version available here**](./README_FR.md)
 
-👉🏾[** French version available here**](./README_FR.md)
+## Table of contents
 
+1. [Reading note and analytical warning](#reading-note-and-analytical-warning)
+2. [Executive summary](#executive-summary)
+3. [01. Scope, sources and method](#01-scope-sources-and-method)
+4. [02. September 2026 dashboard](#02-september-2026-dashboard)
+5. [03. Priority intelligence cases](#03-priority-intelligence-cases)
+6. [04. Operational lessons and attack hypotheses](#04-operational-lessons-and-attack-hypotheses)
+7. [05. Hunt plan - SOC / CERT / CSIRT](#05-hunt-plan---soc--cert--csirt)
+8. [06. Risk-reduction roadmap](#06-risk-reduction-roadmap)
+9. [07. Earlier incidents: context not to confuse with September](#07-earlier-incidents-context-not-to-confuse-with-september)
+10. [08. Intelligence prioritisation](#08-intelligence-prioritisation)
+11. [Appendices A to D](#appendix-a---register-of-29-september-publications)
+
+> The detailed English sections corresponding to items 03 to 11 are being synchronised with the French report. The current English edition retains the validated dashboard, CTI cases, defensive implications and conclusion below.
 **Africa - September 2026**
 **Ransomware, data leaks and extortion monitoring**
 
@@ -90,49 +104,49 @@ For ransomware cases, listing, sample, deadline, disclosure and last verificatio
 
 The following visualisations measure known AFRINTEL publications, not confirmed attacks.
 
-![Figure 1: corpus composition](AFRINTEL_figures/01_corpus.png)
+![Figure 1: corpus composition](AFRINTEL_figures/01_corpus_EN.png)
 
 *Figure 1 - Unique corpus: 29 September publications and 12 earlier incidents.*
 
-![Figure 2: documentary depth](AFRINTEL_figures/08_profondeur.png)
+![Figure 2: documentary depth](AFRINTEL_figures/08_profondeur_EN.png)
 
 *Figure 2 - Documentary depth: 11 detailed analyses and 18 complementary monitoring cards.*
 
 The 18 complementary cards mainly provide alerting and initial qualification. They should not be treated as equivalent to cases supported by reviewed samples or local artefacts.
 
-![Figure 3: publications by country](AFRINTEL_figures/02_pays.png)
+![Figure 3: publications by country](AFRINTEL_figures/02_pays_EN.png)
 
 *Figure 3 - Countries associated with the 29 September publications.*
 
-![Figure 4: classification and observation status](AFRINTEL_figures/03_typologie_preuve.png)
+![Figure 4: classification and observation status](AFRINTEL_figures/03_typologie_preuve_EN.png)
 
 *Figure 4 - Incident type on the left and publication status on the right.*
 
 The September cohort contains 12 `Claim - Unverified` records, 12 `Claim - Data Sample Published` records, 2 acknowledged indirect exposures, 1 `Victim Confirmed` record, 1 `Government Confirmed` record and 1 `Data Fully Published` record. These categories describe different observation levels and do not automatically establish complete exfiltration, access vector or claimed volumes.
 
-![Figure 5: incident-type comparison](AFRINTEL_figures/09_types_comparison.png)
+![Figure 5: incident-type comparison](AFRINTEL_figures/09_types_comparison_EN.png)
 
 *Figure 5 - Incident types in the 29 September-dated publications compared with the complete 41-record corpus.*
 
 The September publication cohort contains 20 Ransomware records, 7 Data Leak records and 2 System Intrusion records. The complete corpus contains 24 Ransomware, 10 Data Leak, 4 System Intrusion, 2 Defacement and 1 Access Sale records.
 
-![Figure 6: publication chronology](AFRINTEL_figures/04_chronologie.png)
+![Figure 6: publication chronology](AFRINTEL_figures/04_chronologie_EN.png)
 
 *Figure 6 - Displayed first-publication dates in September.*
 
 The peaks on 1, 7, 12 and 21 September each contain three publications. They may reflect grouped deposits or source selection and do not establish common intrusion dates.
 
-![Figure 7: country and incident type](AFRINTEL_figures/07_pays_typo.png)
+![Figure 7: country and incident type](AFRINTEL_figures/07_pays_typo_EN.png)
 
 *Figure 7 - Country and declared incident-type cross-tabulation.*
 
-![Figure 8: sector distribution](AFRINTEL_figures/05_secteurs.png)
+![Figure 8: sector distribution](AFRINTEL_figures/05_secteurs_EN.png)
 
 *Figure 8 - Editorial grouping into ten sector families.*
 
 For the September cohort, Finance, Insurance and Compliance account for 7 publications (24.1%). Transport and Logistics and Real Estate, Construction and Architecture account for 4 each. Health, Government and Technology account for 3 each. These are corpus concentrations, not national attack rates.
 
-![Figure 9: most visible actors](AFRINTEL_figures/06_acteurs.png)
+![Figure 9: most visible actors](AFRINTEL_figures/06_acteurs_EN.png)
 
 *Figure 9 - Most frequent displayed actor labels in the September cohort.*
 
