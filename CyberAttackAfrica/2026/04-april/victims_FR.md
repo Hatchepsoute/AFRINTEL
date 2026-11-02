@@ -12,7 +12,9 @@
 # Victimes africaines - Avril 2026
 
 ## Récapitulatif
-- **Total victimes :** 69
+- **Fiches documentées :** 70
+- **Total victimes canoniques :** 69
+- **Note :** Bank of Kigali est documentée comme cas rétrospectif `Under Investigation - Alleged` mais exclue du total canonique et des ventilations statistiques.
 - **Ransomware :** 20
 - **Fuites de données :** 39
 - **Ventes d'accès :** 1
@@ -47,6 +49,34 @@
 - **Statut :** Claim - Unverified
 - **Description :** Cairo University est l’une des plus anciennes et prestigieuses universités publiques d’Égypte, basée au Caire et accueillant des centaines de milliers d’étudiants. Une base de données revendiquée sur un forum cybercriminel expose environ 284 000 enregistrements liés aux étudiants, inscriptions académiques et systèmes de support universitaire. Les données mentionnées incluent notamment des informations personnelles, numéros d’identification nationaux, emails, numéros de téléphone, informations académiques, détails d’inscription, statuts financiers et tickets de support. L’analyse préliminaire suggère l’exposition d’une base backend universitaire utilisée pour la gestion des étudiants, des admissions, des inscriptions académiques et du support administratif.
 
+
+#### 🇷🇼 Rwanda - Bank of Kigali [Phishing et perturbation opérationnelle]
+
+- **Date de l'incident / publication initiale :** 1er avril 2026
+- **Date de découverte AFRINTEL :** 22 octobre 2026
+- **Période statistique d'attribution :** Avril 2026 — H1 2026
+- **Mois d'intégration au référentiel :** Octobre 2026 (découverte rétrospective)
+- **Acteur / Groupe :** Non identifié
+- **Secteur :** Banque et services financiers
+- **Statut :** Under Investigation - Alleged
+- **Type d'incident :** Operational Fraud
+- **Sous-type / effets observés :** Campagne de phishing ; perturbation opérationnelle et suspension temporaire de transactions
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
+- **Type de source :** Média rwandais ; article de Taarifa
+
+- **Description victime :** **Bank of Kigali** est une banque rwandaise fournissant des services bancaires aux particuliers et aux entreprises. Taarifa décrit une campagne de phishing ciblant ses clients et une suspension temporaire des transactions internes et externes annoncée comme mesure de précaution. Le nombre de clients affectés et les pertes financières éventuelles n'étaient pas établis lors de la publication ([Taarifa Rwanda](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/)).
+
+- **Analyse :** Selon Taarifa, des liens frauduleux auraient été diffusés pour recueillir des informations financières sensibles. La banque aurait averti ses clients de ne pas communiquer leurs PIN, mots de passe ou données de carte par SMS, WhatsApp, e-mail ou téléphone. L'article rapporte également une suspension temporaire des transactions internes et externes, ainsi que l'implication d'une équipe de la National Bank of Rwanda dans l'investigation. Ces éléments sont rapportés par le média et ne constituent pas une confirmation technique indépendante.
+
+  **Assumption :** La campagne décrite relève principalement d'une fraude opérationnelle cyber-activée, avec indisponibilité temporaire de services comme effet secondaire. La nature exacte des liens, le nombre de victimes et l'existence de transactions frauduleuses ne sont pas établis.
+
+  **Unknown :** L'acteur, les domaines et numéros utilisés, le nombre de clients ciblés ou compromis, les pertes financières, l'origine de la campagne, toute prise de contrôle de compte, l'existence d'une intrusion dans l'infrastructure de Bank of Kigali et toute confirmation directe par la banque restent inconnus. Taarifa indique que ses demandes de clarification auprès de la banque n'avaient pas reçu de réponse au moment de la publication.
+
+- **Périmètre et limites :** Analyse fondée sur l'article public de Taarifa ; aucun domaine de phishing, numéro, échantillon, journal ou donnée client n'a été fourni ou examiné. L'événement ne doit pas être présenté comme une fuite de données ou une compromission confirmée.
+- **Recommandations SOC/CTI :** Collecter et bloquer les domaines, URL et numéros utilisés ; rechercher les authentifications inhabituelles et prises de contrôle de comptes ; corréler les connexions suspectes avec les transactions frauduleuses ; réinitialiser les accès des clients potentiellement compromis ; renforcer les communications antifraude sur les canaux officiels ; surveiller les campagnes usurpant l'identité de Bank of Kigali.
+- **Décision de comptage :** Incident conservé dans le référentiel d'avril pour sa date d'événement, mais **exclu des statistiques canoniques** tant que le statut `Under Investigation - Alleged` n'est pas corroboré. Il ne constitue pas un nouvel incident d'octobre.
+- **Source / élément observé :** [Taarifa Rwanda, 1er avril 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/).
 
 #### 🇪🇹 Éthiopie - National Oil Ethiopia PLC (NOC) [Fuite de données]
 

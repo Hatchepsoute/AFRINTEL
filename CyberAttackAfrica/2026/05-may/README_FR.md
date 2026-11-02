@@ -10,7 +10,7 @@
 
 ## 1. Synthèse exécutive
 
-Mai 2026 a rapporté **103 incidents cyber signalés ou revendiqués publiquement** en Afrique, **17 publications ou divulgations ransomware**, **42 fuites de données, 1 vente d'accès** et **43 revendications DDoS**. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
+Mai 2026 a rapporté **103 incidents canoniques et 104 entrées de publication observées** en Afrique, **17 publications ou divulgations ransomware**, **42 fuites de données, 1 vente d'accès** et **43 revendications DDoS**. L'entrée supplémentaire est une revendication Kazu liée et non canonique concernant le Gouvernement provincial du Gauteng ; elle est exclue des tableaux statistiques canoniques. Les entités éducatives égyptiennes sont revenues tout au long du mois, aux côtés de publications sous la bannière OpSouthAfrica, de ventes régulières attribuées à Databasehooligan dans quatre pays et de trois publications NightSpire visant des organisations égyptiennes.
 
 Les **43 fiches DDoS** correspondent à des revendications ou observations de disponibilité datées attribuées à Keymous+. Certaines concernent les mêmes organisations à des dates différentes ; le corpus ne permet pas d'établir que les 43 fiches correspondent à des attaques techniquement indépendantes.
 

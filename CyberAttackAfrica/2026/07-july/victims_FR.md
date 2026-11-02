@@ -849,6 +849,8 @@ last_checked_at: 2026-07-16
 #### 🇪🇬 Égypte - BazookaEgy (bazookaegy.com)
 
 - **Date de publication initiale :** 16 janvier 2026
+- **Qualification chronologique :** Publication traitée comme une fuite nouvelle et rapportée en temps réel en janvier 2026 ; la publication de septembre 2024 n'a été identifiée qu'ultérieurement lors d'une revue rétrospective
+- **Publication antérieure observée :** 19 septembre 2024, par MrMeeseeks ; relation avec la publication de janvier 2026 non établie
 - **Date de détection AFRINTEL :** 16 juillet 2026
 - **Acteur / Groupe :** MrMeeseeks (fuite initiale) ; republié par Sphere sur un forum cybercriminel (RaidForums)
 - **Secteur :** Restauration rapide / Commerce de détail
@@ -867,6 +869,8 @@ last_checked_at: 2026-07-16
   Le compte Sphere a republié le 16 janvier 2026, pour la deuxième fois selon le titre du post (« [REPOST][REPOST] »), une fuite initialement attribuée à l'acteur MrMeeseeks et intitulée « Egypt 1M Costumer information's bazookaegy.com ». L'échantillon affiché dans le post comprend un schéma de champs incluant le canal d'inscription (mobile_ios, mobile_android, IOS, web_site), un identifiant, le prénom, le nom, l'adresse email et le numéro de mobile.
 
   Une trentaine d'enregistrements complets sont directement visibles dans l'échantillon, avec des noms (en caractères latins et arabes), des adresses email (dont plusieurs adresses de relais privé Apple) et des numéros de téléphone égyptiens. La cohérence du schéma avec une plateforme de commande en ligne et la présence de nombreux enregistrements individuels appuient un niveau de confiance élevé quant à l'authenticité de cette fuite, bien que le volume total d'un million de clients revendiqué dans le titre n'ait pas pu être vérifié indépendamment au-delà de l'échantillon observé. L'exposition de ces données pourrait faciliter le phishing ciblé et le spam commercial contre les clients de l'enseigne. AFRINTEL ne reproduit aucun nom, adresse email ni numéro de téléphone issus de l'échantillon examiné.
+
+  **Relation avec la publication de septembre 2024.** Éléments observés : la publication de septembre 2024 attribuée à MrMeeseeks revendiquait plus d'un million d'enregistrements, plus de 752 000 emails uniques, des noms et des téléphones ; la publication de janvier 2026, traitée comme une fuite nouvelle au moment de sa diffusion et marquée « [REPOST][REPOST] », présente un schéma compatible avec une plateforme de commande et un échantillon visible. Hypothèses non établies : (1) republication du même jeu de données ; (2) seconde fuite issue du même système après une nouvelle vulnérabilité ou un nouvel accès ; (3) ajout ou extraction incrémentale de nouveaux enregistrements ; (4) réutilisation ou revente du corpus par un tiers ; (5) copie partielle avec métadonnées ou titre modifiés ; (6) données provenant d'un prestataire, d'une plateforme de commande ou d'un environnement distinct ; (7) échantillon fabriqué, exagéré ou mal attribué ; (8) négociation, partage ou transfert des données entre acteurs. Inconnus : aucun hash, fichier complet, comparaison de recouvrement, chronologie technique, preuve d'accès initial, transaction, paiement ou confirmation de BazookaEgy ne permet de départager ces scénarios. AFRINTEL conserve donc les publications de 2024 et de 2026 comme deux événements documentaires distincts, sans conclure à deux compromissions indépendantes.
 
 
 

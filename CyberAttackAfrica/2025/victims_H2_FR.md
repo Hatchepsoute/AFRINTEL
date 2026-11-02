@@ -1,6 +1,6 @@
 # AFRINTEL - Victimes africaines - S2 2025
 
-**114 cyberincidents documentés sous AFRINTEL**
+**116 cyberincidents documentés sous AFRINTEL**
 
 > **Lecture des dates :** `Date de l'incident` indique quand l'événement s'est produit ou a été détecté selon les éléments disponibles. `Date de publication initiale` indique quand l'incident a été rendu public, revendiqué ou communiqué pour la première fois. Ces deux dates peuvent appartenir à des mois différents.
 
@@ -49,7 +49,7 @@
 
   Parmi les 179 lignes structurées comme des fiches d'entreprises, 166 comportent une ville, principalement Rabat, Salé, Témara et Khémisset. 146 contiennent un nom de responsable, 145 un numéro de téléphone, 139 un fax, 111 un numéro mobile et 81 au moins une adresse électronique. Certaines fiches regroupent plusieurs coordonnées pour une même entreprise.
 
-  Une anomalie est présente dans le fichier fourni. La première ligne contient des valeurs qui ne correspondent pas à la structure métier observée dans le reste de la base. Les enregistrements suivants, notamment ceux visibles dans le post du forum, correspondent en revanche à la structure annoncée par l'acteur.
+  Une anomalie de structure est présente dans le fichier fourni : un tuple inséré entre les fiches `societe` contient **12 valeurs au lieu de 14** et ne suit pas le schéma attendu de la table. Ses champs ressemblent à un enregistrement distinct de type utilisateur/authentification, avec des données de compte et de contact ; il ne doit pas être interprété comme une entreprise FNBTP. La séparation SQL est également incohérente à cet endroit. Les autres enregistrements structurés, notamment ceux visibles dans le post du forum, correspondent à la structure annoncée par l'acteur. Les valeurs sensibles de ce tuple ne sont pas reproduites.
 
   Ces données permettent de cartographier des entreprises du secteur du BTP et d'identifier directement leurs responsables et moyens de contact. Elles peuvent être exploitées pour préparer des campagnes de spear phishing, des tentatives d'usurpation d'identité ou des scénarios d'ingénierie sociale ciblant des entreprises et leurs interlocuteurs.
 

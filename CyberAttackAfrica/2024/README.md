@@ -4,23 +4,27 @@
 
 ## 1. Executive summary
 
-In 2024, AFRINTEL documents **121 canonical cyber incidents across 31 African countries**.
+In 2024, AFRINTEL documents **123 canonical cyber incidents across 31 African countries**.
 
-The landscape is dominated by **Ransomware: 91 (75.2%)**, followed by **Data Leak: 14 (11.6%)**, **System Intrusion: 7**, **Access Sale: 5**, **DDoS: 2**, **Defacement: 1**, and **Operational Fraud: 1**. `Account Takeover` and `Malware` remain at 0.
+The landscape is dominated by **Ransomware: 91 (74.0%)**, followed by **Data Leak: 16 (13.0%)**, **System Intrusion: 7**, **Access Sale: 5**, **DDoS: 2**, **Defacement: 1**, and **Operational Fraud: 1**. `Account Takeover` and `Malware` remain at 0.
 
-The most represented countries are **South Africa with 36 incidents**, **Egypt with 14**, **Nigeria with 7**, and **Tunisia with 6**. The leading sectors are **Finance / Banking (18)**, **Government / Administration (18)**, and **Professional / Business Services (12)**.
+The most represented countries are **South Africa with 36 incidents**, **Egypt with 15**, **Nigeria with 8**, and **Tunisia with 6**. The leading sectors are **Finance / Banking (18)**, **Government / Administration (18)**, and **Professional / Business Services (12)**.
 
-Regionally, **Southern Africa accounts for 50 incidents (41.3%)**, followed by **North Africa with 31 (25.6%)** and **West Africa with 18 (14.9%)**.
+Regionally, **Southern Africa accounts for 50 incidents (41.0%)**, followed by **North Africa with 31 (25.4%)** and **West Africa with 19 (15.6%)**.
 
-Evidence maturity remains heterogeneous: **87 Claim - Unverified**, **16 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated**, and **1 Attempted**. These evidence positions remain separate from the technical incident type.
+Evidence maturity remains heterogeneous: **87 Claim - Unverified**, **17 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated**, and **1 Attempted**. These evidence positions remain separate from the technical incident type.
 
-H1 contains **46 incidents**, compared with **75 in H2**. Ransomware remains the most frequently observed threat across the year, while Data Leak, Access Sale, System Intrusion, DDoS and other categories show a threat landscape that cannot be reduced to ransomware alone.
+H1 contains **46 incidents**, compared with **76 in H2**. Ransomware remains the most frequently observed threat across the year, while Data Leak, Access Sale, System Intrusion, DDoS and other categories show a threat landscape that cannot be reduced to ransomware alone.
 
 > **Reading note:** AFRINTEL figures measure incidents documented in the observable corpus. They are not an exhaustive measurement of every compromise that actually occurred across Africa.
 
 ### Retrospective update - ESGC.MA
 
 The **ESGC.MA** March 2024 record is now supported by a screenshot of a forum publication displayed as dated March 26, 2024. The publication claims a database from 2021, approximately 500 entries and a visible SQL sample containing personal data and authentication material. This strengthens the **Data Leak - Claim - Data Sample Published** classification, but does not confirm the compromise, database origin, completeness or the exact legal relationship to a Moroccan institution using a similar acronym. Raw data is not reproduced.
+
+### Retrospective update - ACE-SPED
+
+The 31 December 2024 publication concerning the Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED), Nigeria, is classified as `Data Leak / Claim - Data Sample Published`. Analysis of the observed data identifies structures associated with students, applications, and administrative accounts, together with authentication material and application tokens. Institutional consistency supports plausible sample attribution, but does not officially confirm the compromise, disclosure completeness, or current secret validity. Raw data is not reproduced.
 
 ## 2. Methodology
 
@@ -38,10 +42,10 @@ Nine canonical types; strict separation between incident, initial publication, r
 | June | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | July | 11 | 7 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | August | 16 | 14 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
-| September | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| September | 7 | 5 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | October | 11 | 8 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | November | 15 | 12 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| December | 16 | 11 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| December | 17 | 11 | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ```mermaid
 timeline
@@ -57,15 +61,15 @@ timeline
     September : 6 incidents
     October : 11 incidents
     November : 15 incidents
-    December : 16 incidents
+    December : 17 incidents
 ```
 
 ## 2. Incident types
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 91 | 75.2% |
-| Data Leak | 14 | 11.6% |
+| Ransomware | 91 | 74.0% |
+| Data Leak | 16 | 13.0% |
 | Access Sale | 5 | 4.1% |
 | DDoS | 2 | 1.7% |
 | Defacement | 1 | 0.8% |
@@ -78,7 +82,7 @@ timeline
 pie showData
     title Incident types - AFRINTEL 2024
     "Ransomware" : 91
-    "Data Leak" : 14
+    "Data Leak" : 16
     "Access Sale" : 5
     "DDoS" : 2
     "Defacement" : 1
@@ -91,8 +95,8 @@ pie showData
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
 | South Africa | 36 | 32 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
-| Egypt | 14 | 11 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nigeria | 7 | 4 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| Egypt | 15 | 11 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 8 | 4 | 2 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
 | Tunisia | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Cameroon | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Namibia | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -143,7 +147,7 @@ pie showData
 | Manufacturing / Industry | 11 | 9.1% |
 | Healthcare / Medical | 10 | 8.3% |
 | Technology / IT | 9 | 7.4% |
-| Education / University | 8 | 6.6% |
+| Education / University | 9 | 7.4% |
 | Retail / E-commerce | 7 | 5.8% |
 | Telecommunications | 5 | 4.2% |
 | Energy / Utilities | 4 | 3.3% |
@@ -193,19 +197,19 @@ pie showData
 
 | Evidence position | Records | Share |
 |---|---|---|
-| Claim - Unverified | 87 | 71.9% |
-| Confirmed | 15 | 12.5% |
-| Claim - Data Sample Published | 16 | 13.3% |
-| Corroborated | 2 | 1.7% |
+| Claim - Unverified | 87 | 71.3% |
+| Confirmed | 15 | 12.3% |
+| Claim - Data Sample Published | 17 | 13.9% |
+| Corroborated | 2 | 1.6% |
 | Attempted | 1 | 0.8% |
 
 ## 2. H1 vs H2 comparative study
 
 | Indicator | H1 2024 | H2 2024 | Change |
 |---|---|---|---|
-| Total | 46 | 75 | +29 (+63.0%) |
+| Total | 46 | 76 | +30 (+65.2%) |
 | Ransomware | 34 | 57 | +23 (+67.6%) |
-| Data Leak | 5 | 9 | +4 (+80.0%) |
+| Data Leak | 5 | 11 | +6 (+120.0%) |
 | Access Sale | 1 | 4 | +3 (+300.0%) |
 | DDoS | 2 | 0 | -2 (-100.0%) |
 | Defacement | 0 | 1 | +1 (new) |
@@ -214,11 +218,11 @@ pie showData
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100.0%) |
 
-H1 contains **46 incidents** and H2 **75**, a **+29 (+63.0%)** increase in the documented corpus. The main driver of the difference is ransomware, while Data Leak rises from **5 in H1 to 9 in H2**. This comparison measures corpus visibility and should not be interpreted as an equivalent increase in real-world compromises.
+H1 contains **46 incidents** and H2 **77**, a **+31 (+67.4%)** increase in the documented corpus. The main driver of the difference is ransomware, while Data Leak rises from **5 in H1 to 11 in H2**. This comparison measures corpus visibility and should not be interpreted as an equivalent increase in real-world compromises.
 
 ## 2. CTI analysis by type
 
-Ransomware remains dominant. The 14 Data Leak records present varying levels of evidence. Observed samples remain distinct from aggregate claimed volumes, and unverified claims are not treated as confirmed compromises. System Intrusion is used where generic intrusion/access is better supported than ransomware or data exposure. Access Sale remains a claim category unless validity is verified.
+Ransomware remains dominant. The 16 Data Leak records present varying levels of evidence. Observed samples remain distinct from aggregate claimed volumes, and unverified claims are not treated as confirmed compromises. System Intrusion is used where generic intrusion/access is better supported than ransomware or data exposure. Access Sale remains a claim category unless validity is verified.
 
 ## 2. Historical republications and duplicates
 
@@ -234,6 +238,6 @@ Use phishing-resistant MFA, PAM, segmentation, immutable backups, centralized te
 
 ## 2. Conclusion
 
-The AFRINTEL 2024 corpus contains **121 canonical incidents across 31 African countries**. It highlights strong ransomware dominance, significant exposure of financial and government organizations, and uneven evidence maturity across documented incidents.
+The AFRINTEL 2024 corpus contains **123 canonical incidents across 31 African countries**. It highlights strong ransomware dominance, significant exposure of financial and government organizations, and uneven evidence maturity across documented incidents.
 
 **AFRINTEL** - TLP:CLEAR

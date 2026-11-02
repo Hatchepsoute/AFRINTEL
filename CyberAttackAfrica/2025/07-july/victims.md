@@ -55,7 +55,7 @@
 
   Among the 179 rows structured as company records, 166 contain a city, mainly Rabat, Salé, Temara and Khemisset. 146 contain a contact person, 145 a telephone number, 139 a fax number, 111 a mobile number and 81 at least one email address. Some records contain several contact details for the same company.
 
-  An anomaly is present in the supplied file. The first row contains values that do not match the business structure observed throughout the remaining dataset. Subsequent records, including those visible in the underground forum post, are consistent with the structure described by the actor.
+  A structural anomaly is present in the supplied file: one tuple inserted between the `societe` records contains **12 values instead of 14** and does not follow the expected table schema. Its fields resemble a separate user/authentication record containing account and contact data; it must not be interpreted as an FNBTP company. The SQL separation is also inconsistent at that point. The other structured records, including those visible in the underground forum post, match the structure described by the actor. The tuple's sensitive values are not reproduced.
 
   The exposed information can support the mapping of companies operating in the construction sector and the identification of their representatives and direct contact details. Such information may be used to prepare spear phishing campaigns, impersonation attempts or targeted social engineering against companies and their business contacts.
 

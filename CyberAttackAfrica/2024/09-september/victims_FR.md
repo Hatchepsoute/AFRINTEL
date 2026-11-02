@@ -88,6 +88,25 @@
 
 ----------------------------
 
+### 19 Septembre 2024
+
+#### 🇪🇬 Égypte - BazookaEgy (bazookaegy.com)
+- **Date de l'incident:** Non établie ; la publication situe la fuite en septembre 2024
+- **Date de publication initiale:** 19 septembre 2024 à 13:46 ; fuseau horaire non indiqué
+- **Date de découverte AFRINTEL:** 30 octobre 2026 - audit rétrospectif
+- **Acteur / Groupe:** MrMeeseeks ; identité et affiliation non vérifiées
+- **Secteur:** Restauration rapide / Commerce de détail
+- **Site web:** [bazookaegy.com](https://bazookaegy.com)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 2
+- **Description victime:** BazookaEgy est une chaîne égyptienne de restauration rapide exploitant le domaine bazookaegy.com et des services de commande ou d'inscription en ligne.
+- **Analyse:** La publication observée affirme qu'une base BazookaEgy de plus d'un million d'enregistrements clients aurait été divulguée en septembre 2024, avec plus de 752 000 adresses email uniques, des noms et des numéros de téléphone. Le téléchargement était masqué et le fichier source n'était pas accessible à AFRINTEL ; ces volumes, l'unicité annoncée et l'exhaustivité ne sont donc pas validés. Les données décrites pourraient favoriser le phishing, le spam ciblé et la fraude commerciale. Aucun nom, email ou numéro de téléphone brut n'est reproduit.
+- **Limites:** L'analyse repose sur le contenu textuel visible de la publication ; aucun fichier original, hash, schéma complet, recouvrement avec la publication de janvier 2026 ou confirmation officielle de BazookaEgy n'a été identifié.
+
+----------------------------
+
 ### 28 Septembre 2024
 
 #### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)

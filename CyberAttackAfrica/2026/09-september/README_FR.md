@@ -57,6 +57,20 @@ L’activité observée en septembre est dominée par les annonces attribuées �
 | Lot intégral publié selon la collecte | 1 / 29 (3,4 %)   | AFRICA-TECH : 10 fichiers publiés examinés         |
 | Afrique du Sud + Égypte               | 15 / 29 (51,7 %) | Concentration de veille, non taux d'attaque        |
 
+## Comparaison avec le corpus d'août 2026
+
+La comparaison porte sur les corpus mensuels documentés : **30 fiches en août** contre **29 publications datées de septembre**. Le corpus de septembre comprend en outre 12 incidents antérieurs intégrés rétrospectivement ; ils ne sont pas inclus dans cette comparaison mensuelle.
+
+| Indicateur | Août 2026 | Septembre 2026 | Évolution observée |
+|---|---:|---:|---:|
+| Fiches / publications du mois | 30 | 29 | -1 (-3,3 %) |
+| Ransomware | 17 | 20 | +3 (+17,6 %) |
+| Data Leak | 12 | 7 | -5 (-41,7 %) |
+| Access Sale | 1 | 0 | -1 (-100 %) |
+| System Intrusion | 0 | 2 | +2 (nouvelle catégorie observée) |
+
+Cette comparaison mesure les corpus collectés par AFRINTEL et non le nombre réel de compromissions. Les différences de composition doivent être interprétées avec prudence, car cinq fiches antérieures étaient déjà intégrées au corpus d'août et douze incidents antérieurs sont intégrés au corpus global de septembre.
+
 ## Cinq conclusions stratégiques
 
 1.  L’extorsion par divulgation domine les signaux visibles : 20 des 29 publications sont classées « ransomware », sans que le chiffrement puisse généralement être confirmé.

@@ -48,6 +48,20 @@
 - **Incident type:** Ransomware
 - **Victim Description:** SEOCOM is a Moroccan agency providing SEO (Search Engine Optimization), advertising campaign management (SEA), and web development services for local and international companies.
 
+### 13 January 2025 - claimed leak date
+#### 🇳🇬 Nigeria - Living Seed (livingseed.org)
+- **Actor / Group:** Counter
+- **Sector:** Religious Organization / Association
+- **Website:** https://livingseed.org
+- **Incident date:** 13 January 2025 - leak date stated in the publication, not independently verified
+- **Initial publication date:** 5 February 2025
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** Living Seed is a religious organization operating mainly in Nigeria. It provides spiritual teaching, discipleship training and event coordination for a member community through church activities and online platforms.
+- **Analysis:** The observed publication attributes to Living Seed a leak of approximately 1 million records, presented as a CSV file of about 346 MB. The visible sample refers to identity and profile data, contact details, residence information, religious affiliation, occupation, programme and registration information, workshop participation records, and names and phone numbers of relatives. The publication also mentions encrypted passwords and secret questions and answers. The analysis is limited to information readable in the supplied capture; the original file was not accessible, so the record count, corpus completeness, authentication-data validity and access vector remain unverified. The capture also does not independently confirm attribution to Living Seed or the actor's technical identity. AFRINTEL does not reproduce personal data, authentication data or participant information.
+
 ### 14 January 2025
 #### 🇳🇬 Nigeria - INTELS Nigeria Limited (intelservice.com)
 - **Ransomware Group:** ransomhub
@@ -1230,6 +1244,14 @@
 
   The file structure is consistent with a logistics-related administrative table, but the structural review does not establish that the document is authentic, classified, current, complete or sourced from the Ministry of National Defense. The claim therefore remains recorded as unverified. If the claimed provenance were confirmed, exposure of military logistics or supply-chain information could create a high national-security risk; this is a conditional impact assessment, not a confirmation of compromise.
 
+  **Related element examined:** A second excerpt, later associated with a post by the `Seglab_DZ` account dated July 11, 2025, was subsequently provided. The visible transcription contains approximately **68 lines** and a semicolon-delimited structure covering activities dated from **January 1 to April 3, 2025**, with deadlines extending to **April 3, 2026**. The observed fields correspond to weeks, activity dates, operations, responsible personnel, progress states, deadlines, supervisors and internal references.
+
+  **Content analysis:** The excerpt describes internal-network updates, installation of monitoring systems, ammunition-depot security inspections, training on storage systems, receipt of medical equipment, vehicle maintenance, electrical-network checks, transport of materials to an air base, command communications-equipment checks, equipment inventories and maintenance-document delivery. Most entries are marked completed; at least two are marked in progress. The excerpt also contains names, ranks, functions and internal operational references relating to military personnel. These values are not reproduced in the repository.
+
+  **Qualification and relation to the June publication:** The schedule, repeated operation categories, deadlines, responsibility chain and internal references are strongly consistent with a logistics and administrative planning document from a defense environment. References to internal networks, communications, ammunition depots, air bases and material movements increase the potential sensitivity of the corpus. However, the publication date and account differ from the June source, and the visible line count does not match the previously reviewed XLSX workbook. The excerpt is therefore recorded as a **potential related element or second publication**, not as the same file or as a separately confirmed compromise.
+
+  **Limitations:** The supplied excerpt cannot confirm official authenticity, classification level, affected unit, source system, access vector, file completeness or an effective compromise of the ministry. No name, rank, identifier, operational reference, sensitive location or other raw military data is published.
+
 ### 18 June 2025
 #### 🇲🇦 Morocco - Ministry of National Education (men.gov.ma / massar.men.gov.ma)
 - **Incident type:** Data Leak
@@ -1354,7 +1376,7 @@
 
   Among the 179 rows structured as company records, 166 contain a city, mainly Rabat, Salé, Temara and Khemisset. 146 contain a contact person, 145 a telephone number, 139 a fax number, 111 a mobile number and 81 at least one email address. Some records contain several contact details for the same company.
 
-  An anomaly is present in the supplied file. The first row contains values that do not match the business structure observed throughout the remaining dataset. Subsequent records, including those visible in the underground forum post, are consistent with the structure described by the actor.
+  A structural anomaly is present in the supplied file: one tuple inserted between the `societe` records contains **12 values instead of 14** and does not follow the expected table schema. Its fields resemble a separate user/authentication record containing account and contact data; it must not be interpreted as an FNBTP company. The SQL separation is also inconsistent at that point. The other structured records, including those visible in the underground forum post, match the structure described by the actor. The tuple's sensitive values are not reproduced.
 
   The exposed information can support the mapping of companies operating in the construction sector and the identification of their representatives and direct contact details. Such information may be used to prepare spear phishing campaigns, impersonation attempts or targeted social engineering against companies and their business contacts.
 

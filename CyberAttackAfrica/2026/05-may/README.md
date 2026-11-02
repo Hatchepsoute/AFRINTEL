@@ -10,7 +10,7 @@
 
 ## 1. Executive summary
 
-May 2026 brought in **103 publicly reported or claimed cyber incidents** across Africa, **17 ransomware listings or disclosures**, **42 data leaks, 1 access sale** and **43 DDoS claims**. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
+May 2026 brought in **103 canonical incidents and 104 observed publication records** across Africa, **17 ransomware listings or disclosures**, **42 data leaks, 1 access sale** and **43 DDoS claims**. The additional record is a linked, non-canonical Kazu claim concerning the Gauteng Provincial Government and is excluded from the canonical statistical tables. Egyptian education entities kept coming up throughout the month, alongside publications under the OpSouthAfrica banner, steady Databasehooligan sales across four countries, and three separate NightSpire listings targeting Egyptian organizations.
 
 The **43 DDoS records** are dated Keymous+ claims or availability observations. Some concern the same organizations on different dates; the corpus does not establish that all 43 represent technically independent attacks.
 

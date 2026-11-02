@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **103 incidents uniques** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+Mai 2026 compte **103 incidents canoniques et 104 entrées de publication observées** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**, auxquels s'ajoute une revendication Kazu liée non canonique. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
 
 ### Incidents marquants
 
@@ -1596,3 +1596,16 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 - **Analyse :**
   L examen structurel objectif a identifié 12 fichiers DOCX, chacun contenant sept tableaux et des marqueurs liés à l aviation. L archive est cohérente avec une collection de documents de l aviation civile, mais l analyse ne valide ni la provenance, ni l authenticité, ni la méthode d acquisition, ni l étendue complète. Les données personnelles et le contenu intégré ne sont pas reproduits.
+
+### 16 mai 2026
+#### 🇿🇦 Afrique du Sud - Gouvernement Provincial de Gauteng [Revendication Kazu liée]
+- **Date de l incident :** 16 mai 2026
+- **Acteur / Groupe :** Kazu (attribution à la chaîne Telegram ; affiliation non vérifiée indépendamment)
+- **Secteur :** Gouvernement / Administration publique
+- **Site web :** [gauteng.gov.za](https://www.gauteng.gov.za)
+- **Statut :** Claim - Data Sample Published
+- **Type d incident :** Ransomware / contexte d extorsion
+- **Statut de comptage :** Revendication liée non canonique. Incluse dans le décompte de l activité de publication de mai, mais exclue du total canonique des incidents, car sa relation avec la revendication XP95 du 13 mars 2026 n est pas établie.
+- **Évaluation chronologique :** Il s'agit de la deuxième revendication observée concernant la même victime. Elle est suivie comme une publication de mai, et non comme une seconde attaque confirmée.
+- **Description :** Kazu propose un jeu de données attribué au Gouvernement provincial du Gauteng pour **25 000 USD**, en revendiquant **3 673 556 fichiers** et environ **3,8 To** de données. L archive locale fournie contient **1 905 fichiers** et environ **1,905 Go** ; son SHA-256 est `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
+- **Analyse :** Le recoupement entre la victime et le volume revendiqué dans la publication XP95 est compatible avec une double revendication, un transfert/revente ou une exposition distincte. Les éléments disponibles ne permettent pas de trancher et n établissent ni chiffrement ni intrusion distincte. Aucune donnée personnelle ni aucun contenu documentaire individuel n est reproduit.

@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (29 records)
+# List of African cyberattack victims in August 2026 (30 records)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
@@ -769,6 +769,36 @@ last_checked_at: 2026-08-19T08:10:32
   **Assumption:** The cited domain, post title, and order-export structure are compatible with a claim involving the Afribaba ecosystem. However, the shipping countries are Brazil (13 rows), Bulgaria (2), Cambodia (2), Cameroon (2), and Brunei (1), with no Algerian shipping row. This conflicts with the “Algeria” label and prevents firm attribution of the extract to the Algerian scope or to Afribaba. The sample may represent a multi-country environment, demonstration data, an attribution error, or an excerpt whose context is incomplete.
 
   **Unknown:** AFRINTEL did not receive the advertised Customer Contacts or Support Tickets tables, nor the approximately 642,000-contact archive. Sample links were not followed; no phone number, name, address, customer identifier or ticket is reproduced; and no Afribaba confirmation is available. The supplied file cannot confirm the claimed volume, technical origin, data validity, access method, exposure of phone numbers or asking price.
+
+#### 🇩🇿 Algeria - Algerian Ministry of Interior (interieur.gov.dz)
+* **Incident date:** Not established
+* **Initial publication date:** August 20, 2026 at 06:04 (time displayed in the publication)
+* **AFRINTEL detection date:** August 20, 2026
+* **Actor / Group:** TelephoneHooliganism
+* **Sector:** Government / Public Administration
+* **Website:** [interieur.gov.dz](https://www.interieur.gov.dz/)
+* **Claimed volume:** Approximately 672,000 records
+* **AFRINTEL status:** Claim - Unverified
+* **Incident type:** Data Leak
+* **Confidence level:** Low
+* **Impact level:** Level 4
+
+* **Description:**
+  The Algerian Ministry of Interior is the administration responsible, among other functions, for public administrative services and citizen interaction.
+
+* **Analysis:**
+  The publication attributed to TelephoneHooliganism claims to offer a dataset originating from `interieur.gov.dz`, described as covering three datasets: contacts of citizens or government officials, housing-support applications, and citizen-support tickets. The publication mentions approximately **672,000 records** and asks **USD 1,100**. The described fields include identity and contact data, residence and housing information, and details relating to administrative applications and tickets.
+
+  **Observed:** The capture establishes the existence of a claim dated August 20, 2026 and its stated association with the ministry's domain. The author account appears banned and sample links are visible in the publication.
+
+  **Unknown:** No source file, sample or data extract was accessible to AFRINTEL. The claimed volume of 672,000 records, technical origin, field authenticity, access vector, completeness and actual exposure of personal data remain unverified. No public confirmation by the ministry or an Algerian authority is established in the material reviewed. AFRINTEL did not follow sample links, download links or the Telegram contact.
+
+  Given the claimed victim and the announced data categories, the potential impact is assessed as **Level 4**. This assessment does not confirm compromise.
+
+* **Recommendations:**
+  * Review access logs, exports and privileged accounts for citizen-service and housing-related platforms around August 20, 2026.
+  * Check access to contact, ticket and administrative application databases.
+  * Prepare phishing and impersonation warnings related to contact data and administrative requests.
 
 #### 🇨🇲 Cameroon - CCA Bank
 * **Incident date:** Not specified

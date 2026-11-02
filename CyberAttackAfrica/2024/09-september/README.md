@@ -4,15 +4,15 @@
 
 ## 1. Executive summary
 
-In September 2024, AFRINTEL retains **6 canonical cyber incidents across 6 countries**. The month is led by **Ransomware (5, 83.3%)** followed by **System Intrusion (1, 16.7%)**. Leading countries are **Senegal (1)**, **Cameroon (1)**, **Mauritius (1)**. Leading sectors are **Government / Administration (2)**, **Technology / IT (1)**, **Telecommunications (1)**. Most frequent actor/group labels are `Unknown` (2), `hunters` (1), `spacebears` (1). `Unknown` means missing attribution, not an actor.
+In September 2024, AFRINTEL retains **7 canonical cyber incidents across 7 countries**. The month is led by **Ransomware (5, 71.4%)**, followed by **Data Leak (1, 14.3%)** and **System Intrusion (1, 14.3%)**. Leading countries are **Senegal (1)**, **Cameroon (1)**, **Mauritius (1)** and **Egypt (1)**. Leading sectors are **Government / Administration (2)**, **Technology / IT (1)**, **Telecommunications (1)**. Most frequent actor/group labels are `Unknown` (2), `hunters` (1), `spacebears` (1), `MrMeeseeks` (1). `Unknown` means missing attribution, not an actor.
 
 ### 1.1 Month-over-month study
 
 | Indicator | August 2024 | September 2024 | Change |
 |---|---|---|---|
-| Total | 16 | 6 | -10 (-62.5%) |
+| Total | 16 | 7 | -9 (-56.3%) |
 | Ransomware | 14 | 5 | -9 (-64.3%) |
-| Data Leak | 1 | 0 | -1 (-100.0%) |
+| Data Leak | 1 | 1 | Stable |
 | Access Sale | 0 | 0 | Stable |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
@@ -23,7 +23,7 @@ In September 2024, AFRINTEL retains **6 canonical cyber incidents across 6 count
 
 ### 1.2 Comparative analysis
 
-Monthly volume **decreases by 10 incident(s)**. Structural changes are: Ransomware 14->5 (-9), Data Leak 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
+Monthly volume **decreases by 9 incident(s)**. Structural changes are: Ransomware 14->5 (-9), while Data Leak remains at 1. This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
@@ -38,8 +38,8 @@ Monthly volume **decreases by 10 incident(s)**. Structural changes are: Ransomwa
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 5 | 83.3% |
-| Data Leak | 0 | 0.0% |
+| Ransomware | 5 | 71.4% |
+| Data Leak | 1 | 14.3% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
@@ -52,6 +52,7 @@ Monthly volume **decreases by 10 incident(s)**. Structural changes are: Ransomwa
 pie showData
     title Incident types - September 2024
     "Ransomware" : 5
+    "Data Leak" : 1
     "System Intrusion" : 1
 ```
 
@@ -100,15 +101,17 @@ pie showData
 
 | Evidence position | Records | Share |
 |---|---|---|
-| Claim - Unverified | 4 | 66.7% |
-| Confirmed | 2 | 33.3% |
+| Claim - Unverified | 4 | 57.1% |
+| Claim - Data Sample Published | 1 | 14.3% |
+| Confirmed | 2 | 28.6% |
 
 ### Confidence
 
 | Confidence | Records | Share |
 |---|---|---|
 | Low | 4 | 66.7% |
-| Very High | 2 | 33.3% |
+| Medium | 1 | 14.3% |
+| Very High | 2 | 28.6% |
 
 ## 9. Timeline
 
@@ -211,6 +214,10 @@ timeline
 
 **1 record(s) (16.7%).** Leading countries: Mozambique (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
+### Data Leak - 1
+
+**1 record(s) (14.3%).** BazookaEgy (Egypt) is the subject of a publication attributed to MrMeeseeks claiming more than one million customer records, more than 752,000 unique emails, names and phone numbers. The source file was not accessible; the volumes remain claimed and unvalidated. A separate January 2026 publication is retained independently, with multiple possible relationships documented in the 2026 record.
+
 ## 11. Priority incidents for review
 
 | Country | Organization | Type | Status | Impact | Confidence |
@@ -307,7 +314,7 @@ timeline
 
 ## 14. Conclusion
 
-September 2024 contains **6 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+September 2024 contains **7 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
 
 👉🏾 [Canonical victims](./victims.md)
 

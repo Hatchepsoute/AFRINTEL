@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - 2024 - corpus canonique (121 fiches)
+# Cyberincidents AFRINTEL - 2024 - corpus canonique (123 fiches)
 
 ### 2 Janvier 2024
 
@@ -19,6 +19,7 @@
 - **Source publique:** [Notification officielle ITAC](https://itac.org.za/notification-of-a-personal-information-security-compromise/)
 
 ----------------------------
+
 
 ### 6 Janvier 2024
 
@@ -1484,6 +1485,25 @@
 
 ----------------------------
 
+### 19 Septembre 2024
+
+#### 🇪🇬 Égypte - BazookaEgy (bazookaegy.com)
+- **Date de l'incident:** Non établie ; la publication situe la fuite en septembre 2024
+- **Date de publication initiale:** 19 septembre 2024 à 13:46 ; fuseau horaire non indiqué
+- **Date de découverte AFRINTEL:** 30 octobre 2026 - audit rétrospectif
+- **Acteur / Groupe:** MrMeeseeks ; identité et affiliation non vérifiées
+- **Secteur:** Restauration rapide / Commerce de détail
+- **Site web:** [bazookaegy.com](https://bazookaegy.com)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 2
+- **Description victime:** BazookaEgy est une chaîne égyptienne de restauration rapide exploitant le domaine bazookaegy.com et des services de commande ou d'inscription en ligne.
+- **Analyse:** La publication observée affirme qu'une base BazookaEgy de plus d'un million d'enregistrements clients aurait été divulguée en septembre 2024, avec plus de 752 000 adresses email uniques, des noms et des numéros de téléphone. Le téléchargement était masqué et le fichier source n'était pas accessible à AFRINTEL ; ces volumes, l'unicité annoncée et l'exhaustivité ne sont donc pas validés. Les données décrites pourraient favoriser le phishing, le spam ciblé et la fraude commerciale. Aucun nom, email ou numéro de téléphone brut n'est reproduit.
+- **Limites:** L'analyse repose sur le contenu textuel visible de la publication ; aucun fichier original, hash, schéma complet, recouvrement avec la publication de janvier 2026 ou confirmation officielle de BazookaEgy n'a été identifié.
+
+----------------------------
+
 ### 28 Septembre 2024
 
 #### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)
@@ -2157,5 +2177,23 @@
 - **Analyse:** Une publication underground du 30 décembre 2024 attribuée à `Satanic` annonce explicitement une base `Misr Pharmacies Misr Online Database - Leaked, Download!`. Le post décrit des ensembles de données associés aux commandes et aux prescriptions électroniques, avec des champs liés aux clients, contacts, facturation, livraison, statut de commande et informations de prescription. Des liens de téléchargement étaient affichés au moment de la publication. Les fichiers ne sont plus disponibles au moment de la présente réévaluation, de sorte qu'AFRINTEL ne peut pas vérifier indépendamment leur authenticité, leur volume, leur contenu réel ou leur provenance technique. AFRINTEL ne reproduit aucune donnée personnelle issue de la publication.
 - **Qualification de la preuve:** Le type `Data Leak` est retenu car la revendication porte explicitement sur une base divulguée et proposée au téléchargement. Le statut reste `Claim - Unverified` car les données annoncées ne sont plus disponibles pour une validation indépendante par AFRINTEL.
 - **Source / provenance:** Publication underground originale attribuée à Satanic, observée le 30 décembre 2024 ; capture conservée par AFRINTEL. Aucun lien de téléchargement n'est reproduit.
+
+----------------------------
+
+### 31 Décembre 2024
+
+#### 🇳🇬 Nigeria - Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED)
+- **Date de publication initiale:** 31 décembre 2024
+- **Acteur / Groupe:** libyan-test
+- **Secteur:** Éducation supérieure / Recherche et énergie
+- **Site web:** [acespedunn.edu.ng](https://acespedunn.edu.ng/)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** ACE-SPED est un programme d'enseignement supérieur et de recherche hébergé par l'University of Nigeria, Nsukka, consacré aux systèmes électriques, aux énergies renouvelables et au développement énergétique durable en Afrique subsaharienne.
+- **Données observées:** L'échantillon publié présente des structures de données associées à des étudiants, des candidatures et des utilisateurs administratifs. Les champs visibles comprennent des identifiants d'inscription, des adresses électroniques institutionnelles, des dates de création et de mise à jour, des indicateurs d'activation, des mots de passe hachés et des jetons applicatifs. Une seconde structure correspond à des comptes utilisateurs de type CMS.
+- **Analyse:** La cohérence entre le domaine `acespedunn.edu.ng`, les adresses institutionnelles et les identifiants de programmes ACE-SPED relie plausiblement l'échantillon à l'environnement numérique de l'organisation. La présence de hachages de mots de passe et de jetons applicatifs expose un risque de réutilisation d'identifiants, de prise de contrôle de comptes et de phishing ciblé. L'échantillon visible ne permet pas d'établir le nombre total d'enregistrements, l'exhaustivité de la divulgation, le vecteur d'accès initial, la validité actuelle des secrets, ni l'existence d'une interruption de service. AFRINTEL ne reproduit aucun nom, email, mot de passe haché, jeton ou identifiant individuel.
+- **Qualification de la preuve:** La publication et l'échantillon soutiennent une exposition potentielle de données d'accès et de données étudiantes. Ils ne constituent pas une confirmation officielle de la victime ni une preuve indépendante d'une compromission complète de l'infrastructure.
 
 ----------------------------

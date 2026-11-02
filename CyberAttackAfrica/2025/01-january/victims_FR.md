@@ -54,6 +54,20 @@
 - **Type d'incident:** Ransomware
 - **Description victime:** EOCOM est une agence marocaine fournissant des services de SEO (Search Engine Optimization), de gestion de campagnes publicitaires (SEA) et de développement web pour des entreprises locales et internationales.
 
+### 13 Janvier 2025 - date de fuite revendiquée
+#### 🇳🇬 Nigeria - Living Seed (livingseed.org)
+- **Acteur / Groupe:** Counter
+- **Secteur:** Organisation religieuse / Association
+- **Site web:** https://livingseed.org
+- **Date de l'incident:** 13 janvier 2025 - date de fuite indiquée dans la publication, non vérifiée indépendamment
+- **Date de publication initiale:** 5 février 2025
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Living Seed est une organisation religieuse opérant principalement au Nigeria. Elle propose des enseignements spirituels, des programmes de formation et la coordination d'événements pour une communauté de membres au moyen d'activités d'église et de plateformes en ligne.
+- **Analyse:** La publication observée attribue à Living Seed une fuite d'environ 1 million d'enregistrements, présentée sous la forme d'un fichier CSV d'environ 346 Mo. Les éléments visibles dans l'échantillon mentionnent des données d'identité et de profil, des coordonnées, des informations de résidence, l'appartenance confessionnelle, l'occupation, des informations relatives aux programmes et aux inscriptions, des traces de participation à des ateliers, ainsi que des noms et numéros de téléphone de proches. La publication mentionne également des mots de passe chiffrés et des questions/réponses secrètes. L'analyse est limitée aux informations lisibles dans la capture fournie ; le fichier original n'était pas accessible, de sorte que le nombre d'enregistrements, l'exhaustivité du corpus, la validité des données d'authentification et le vecteur d'accès ne sont pas vérifiés. La capture ne permet pas non plus de confirmer indépendamment l'attribution à Living Seed ou l'identité technique de l'acteur. AFRINTEL ne reproduit aucune donnée personnelle, donnée d'authentification ni information concernant un participant.
+
 ### 14 Janvier 2025
 #### 🇳🇬 Nigeria - INTELS Nigeria Limited (intelservice.com)
 - **Groupe ransomware:** ransomhub

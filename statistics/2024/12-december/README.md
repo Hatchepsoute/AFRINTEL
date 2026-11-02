@@ -2,14 +2,14 @@
 
 👉🏾 [Version française](./README_FR.md)
 
-This summary covers the month's canonical records: **16 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
+This summary covers the month's canonical records: **17 documented incidents**. Counts are derived from the validated French monthly file; claims are not confirmations.
 
 ## Incident types
 
 | AFRINTEL type | Records |
 |---|---:|
 | Ransomware | 11 |
-| Data Leak | 3 |
+| Data Leak | 4 |
 | Access Sale | 1 |
 | DDoS | 0 |
 | Defacement | 1 |
@@ -17,8 +17,8 @@ This summary covers the month's canonical records: **16 documented incidents**. 
 | System Intrusion | 0 |
 | Malware | 0 |
 | Operational Fraud | 0 |
-| **Total** | **16** |
+| **Total** | **17** |
 
-The sum across all nine canonical incident types equals the monthly total (16). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/12-december/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/12-december/README.md).
+The sum across all nine canonical incident types equals the monthly total (17). For details and evidence limitations, see the [victim records](../../../CyberAttackAfrica/2024/12-december/victims.md) and the [monthly report](../../../CyberAttackAfrica/2024/12-december/README.md).
 
 **AFRINTEL** - TLP:CLEAR

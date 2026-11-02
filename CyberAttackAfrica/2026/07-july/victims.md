@@ -835,6 +835,8 @@ last_checked_at: 2026-07-16
 #### 🇪🇬 Egypt - BazookaEgy (bazookaegy.com)
 
 - **Initial publication date:** January 16, 2026
+- **Chronological qualification:** Publication treated as a new leak and reported in real time in January 2026; the September 2024 publication was identified only later during a retrospective review
+- **Earlier publication observed:** September 19, 2024, by MrMeeseeks; its relationship to the January 2026 publication is not established
 - **AFRINTEL detection date:** July 16, 2026
 - **Actor / Group:** MrMeeseeks (original leak); reposted by Sphere on a cybercriminal forum (RaidForums)
 - **Sector:** Fast Food / Retail
@@ -853,6 +855,8 @@ last_checked_at: 2026-07-16
   The account Sphere reposted, on January 16, 2026, for the second time according to the post title ("[REPOST][REPOST]"), a leak originally attributed to the actor MrMeeseeks and titled "Egypt 1M Costumer information's bazookaegy.com". The sample shown in the post includes a field schema covering the registration channel (mobile_ios, mobile_android, IOS, web_site), an ID, first name, last name, email address and mobile number.
 
   About thirty complete records are directly visible in the sample, with names (in Latin and Arabic characters), email addresses (including several Apple private-relay addresses) and Egyptian phone numbers. The consistency of the schema with an online ordering platform and the presence of numerous individual records support a high confidence level regarding the authenticity of this leak, although the total claimed volume of one million customers stated in the title could not be independently verified beyond the observed sample. Exposure of this data could facilitate targeted phishing and commercial spam against the chain's customers. AFRINTEL does not reproduce any name, email address or phone number from the reviewed sample.
+
+  **Relationship to the September 2024 publication.** Observed elements: the September 2024 publication attributed to MrMeeseeks claimed more than one million records, more than 752,000 unique emails, names and phone numbers; the January 2026 publication, treated as a new leak when it was disseminated and marked "[REPOST][REPOST]", presents a schema consistent with an ordering platform and a visible sample. Unestablished hypotheses: (1) republication of the same dataset; (2) a second leak from the same system after a new vulnerability or renewed access; (3) incremental extraction or addition of new records; (4) reuse or resale of the corpus by a third party; (5) partial copying with changed metadata or title; (6) data originating from a service provider, ordering platform or separate environment; (7) a fabricated, exaggerated or misattributed sample; (8) negotiation, sharing or transfer between actors. Unknowns: no hash, complete file, overlap comparison, technical timeline, initial-access evidence, transaction, payment or BazookaEgy confirmation is available to distinguish these scenarios. AFRINTEL therefore keeps the 2024 and 2026 publications as separate documentary events without concluding that they represent two independent compromises.
 
 
 ### July 16, 2026

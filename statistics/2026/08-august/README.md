@@ -1,9 +1,9 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-August%202026-lightgrey)
-![Incidents](https://img.shields.io/badge/Incidents-29-critical)
+![Incidents](https://img.shields.io/badge/Incidents-30-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-17-red)
-![Data Leak](https://img.shields.io/badge/Data%20Leak-11-orange)
+![Data Leak](https://img.shields.io/badge/Data%20Leak-12-orange)
 ![Access Sale](https://img.shields.io/badge/Access%20Sale-1-yellow)
 ![Countries](https://img.shields.io/badge/Countries-10-blueviolet)
 
@@ -15,27 +15,27 @@
 
 ## 1. Scope and counting
 
-These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 29 records collected in August with follow-up information recorded through 14 September 2026. The 17 ransomware records are assigned to the August corpus from dated publications or source observations; the underlying compromise date is not established for every case. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
+These statistics derive from the bilingual [victims_FR.md](../../../CyberAttackAfrica/2026/08-august/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/08-august/victims.md) pair following parity checks. Structured data is determined once from the French version and reused in both languages. The corpus contains 30 records collected in August with follow-up information recorded through 14 September 2026. The 17 ransomware records are assigned to the August corpus from dated publications or source observations; the underlying compromise date is not established for every case. Five data leaks published in January, June or July were discovered and added in August because closed monthly reports are not modified retroactively; their initial dates remain preserved.
 
-Each record contributes to one country: 29 incidents and 29 geographic occurrences. PAYGO is limited to the documented Kenyan scope. Hungry Lion remains assigned to South Africa with reservations about the targeted entity and country. DGSN/DGST counts as one event. The origin of the Afribaba sample remains uncertain. No record carries Under Investigation - Alleged.
+Each record contributes to one country: 30 incidents and 30 geographic occurrences. PAYGO is limited to the documented Kenyan scope. Hungry Lion remains assigned to South Africa with reservations about the targeted entity and country. DGSN/DGST counts as one event. The origin of the Afribaba sample remains uncertain. No record carries Under Investigation - Alleged.
 
 ## 2. Statistical overview
 
 | Indicator | Value |
 |---|---|
-| Documented incidents | 29 |
+| Documented incidents | 30 |
 | Country assignments | 10 |
 | Normalised sectors | 16 |
 | Actor / publication labels | 19 |
 | Ransomware | 17 (58.6%) |
-| Data Leak | 11 (37.9%) |
+| Data Leak | 12 (40.0%) |
 | Access Sale | 1 (3.4%) |
 
 ```mermaid
 pie showData
-    title Distribution of 29 incidents, August 2026
+    title Distribution of 30 incidents, August 2026
     "Ransomware" : 17
-    "Data Leak" : 11
+    "Data Leak" : 12
     "Access Sale" : 1
 ```
 
@@ -47,7 +47,7 @@ DDoS, Defacement, Account Takeover, System Intrusion, Malware and Operational Fr
 |---|---|---|---|---|---|---|---|
 | 🇿🇦 South Africa | ZA | 9 | 2 | 0 | 11 | 37.9% | ███████████ |
 | 🇪🇬 Egypt | EG | 2 | 2 | 0 | 4 | 13.8% | ████ |
-| 🇩🇿 Algeria | DZ | 0 | 2 | 1 | 3 | 10.3% | ███ |
+| 🇩🇿 Algeria | DZ | 0 | 3 | 1 | 4 | 13.3% | ████ |
 | 🇲🇦 Morocco | MA | 1 | 2 | 0 | 3 | 10.3% | ███ |
 | 🇰🇪 Kenya | KE | 0 | 2 | 0 | 2 | 6.9% | ██ |
 | 🇳🇬 Nigeria | NG | 2 | 0 | 0 | 2 | 6.9% | ██ |
@@ -55,7 +55,7 @@ DDoS, Defacement, Account Takeover, System Intrusion, Malware and Operational Fr
 | 🇬🇦 Gabon | GA | 1 | 0 | 0 | 1 | 3.4% | █ |
 | 🇱🇾 Libya | LY | 0 | 1 | 0 | 1 | 3.4% | █ |
 | 🇲🇺 Mauritius | MU | 1 | 0 | 0 | 1 | 3.4% | █ |
-| **Total** |  | 17 | 11 | 1 | **29** | 100% |  |
+| **Total** |  | 17 | 12 | 1 | **30** | 100% |  |
 
 Scale: █ = 1 incident. Each ISO code is paired with the country name in the same row.
 
@@ -63,13 +63,13 @@ Scale: █ = 1 incident. Each ISO code is paired with the country name in the sa
 
 | Region | Ransomware | Data Leak | Access Sale | Total | Share |
 |---|---|---|---|---|---|
-| North Africa | 3 | 7 | 1 | 11 | 37.9% |
+| North Africa | 3 | 8 | 1 | 12 | 40.0% |
 | Southern Africa | 9 | 2 | 0 | 11 | 37.9% |
 | West Africa | 2 | 0 | 0 | 2 | 6.9% |
 | Central Africa | 2 | 0 | 0 | 2 | 6.9% |
 | East Africa | 0 | 2 | 0 | 2 | 6.9% |
 | Indian Ocean | 1 | 0 | 0 | 1 | 3.4% |
-| **Total** | 17 | 11 | 1 | **29** | 100% |
+| **Total** | 17 | 12 | 1 | **30** | 100% |
 
 Mauritius is assigned to the Indian Ocean separately from East Africa. West Africa and Central Africa remain distinct.
 
@@ -77,7 +77,7 @@ Mauritius is assigned to the Indian Ocean separately from East Africa. West Afri
 
 | Normalised sector | Records | Share | Organisations / contexts |
 |---|---|---|---|
-| Government / Administration | 6 | 20.7% | Egyptian Local Services Portal; DGRSDT; Ministry of Commerce; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) |
+| Government / Administration | 7 | 23.3% | Egyptian Local Services Portal; DGRSDT; Ministry of Commerce; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC); Algerian Ministry of Interior |
 | Finance / Banking | 6 | 20.7% | SARB; ASHA Microfinance Bank; DC Partner; Unidentified PAYGO platform; SpearFin Ltd; CCA Bank |
 | Human Resources / Recruitment | 3 | 10.3% | AVANTA Maroc; SnapStar Talent; mpowa.mobi |
 | Restaurants / Quick-service restaurants | 2 | 6.9% | Hungry Lion; Rohloff Group |
@@ -93,7 +93,7 @@ Mauritius is assigned to the Indian Ocean separately from East Africa. West Afri
 | Telecommunications | 1 | 3.4% | Albarq Media Service |
 | Transport / Logistics | 1 | 3.4% | The Courier Guy |
 | Travel / Events | 1 | 3.4% | Sure Travel |
-| **Total** | **29** | 100% |  |
+| **Total** | **30** | 100% |  |
 
 Normalisation follows the monthly report: SARB in finance, DGRSDT and CGC in administration, ADG Healthcare in healthcare, FBC in labour relations and sector governance.
 
@@ -119,8 +119,9 @@ Normalisation follows the monthly report: SARB in finance, DGRSDT and CGC in adm
 | Revesky | Data Leak | 1 | EFA (EG) |
 | Richard2002 | Data Leak | 1 | Albarq Media Service (LY) |
 | TelephoneHooliganism | Data Leak | 1 | Afribaba (DZ) |
+| TelephoneHooliganism | Data Leak | 1 | Algerian Ministry of Interior (DZ) |
 | anisanas2 | Data Leak | 1 | DGRSDT (DZ) |
-| **Total** |  | **29** |  |
+| **Total** |  | **30** |  |
 
 Country codes: see the ISO legend in the country table.
 
@@ -131,21 +132,21 @@ KRYBIT combines the krybit/KRYBIT case variants. The 19 labels do not establish 
 | Dimension | Value | Records | Share |
 |---|---|---|---|
 | Status | Claim - Data Sample Published | 13 | 44.8% |
-| Status | Claim - Unverified | 11 | 37.9% |
+| Status | Claim - Unverified | 12 | 40.0% |
 | Status | Data Fully Published | 3 | 10.3% |
 | Status | Victim Confirmed | 2 | 6.9% |
-| **Total status** |  | 29 | 100% |
-| Confidence | Low | 7 | 24.1% |
+| **Total status** |  | 30 | 100% |
+| Confidence | Low | 8 | 26.7% |
 | Confidence | Medium | 7 | 24.1% |
 | Confidence | High | 13 | 44.8% |
 | Confidence | Very High | 2 | 6.9% |
 
-| **Total confidence** |  | 29 | 100% |
+| **Total confidence** |  | 30 | 100% |
 | Impact | Level 1 | 0 | 0.0% |
 | Impact | Level 2 | 3 | 10.3% |
 | Impact | Level 3 | 7 | 24.1% |
-| Impact | Level 4 | 19 | 65.5% |
-| **Total impact** |  | 29 | 100% |
+| Impact | Level 4 | 20 | 66.7% |
+| **Total impact** |  | 30 | 100% |
 
 RAMED and CGC retain the structured values `High` confidence and `Level 4` impact. Data Fully Published does not validate completeness; high confidence is not equivalent to official confirmation.
 
@@ -153,9 +154,9 @@ RAMED and CGC retain the structured values `High` confidence and `Level 4` impac
 
 | Indicator | July 2026 | August 2026 | Observed change |
 |---|---|---|---|
-| Total incidents | 42 | 29 | -13 (-31.0%) |
+| Total incidents | 42 | 30 | -12 (-28.6%) |
 | Ransomware | 18 | 17 | -1 (-5.6%) |
-| Data Leak | 18 | 11 | -7 (-38.9%) |
+| Data Leak | 18 | 12 | -6 (-33.3%) |
 | Access Sale | 6 | 1 | -5 (-83.3%) |
 | DDoS | 0 | 0 | 0 (stable) |
 | Defacement | 0 | 0 | 0 (stable) |
@@ -170,7 +171,7 @@ July’s 42 records and their types were checked in both languages. The comparis
 
 Government and finance account for 12 records; North Africa and Southern Africa account for 22. Priority risks concern identity, payment and personnel data and internal documents.
 
-Country sum = region sum = sector sum = type sum = actor-occurrence sum = **29**. Status, confidence and impact each total **29**; no value is unspecified. No total of people or exfiltrated volumes is produced from heterogeneous samples.
+Country sum = region sum = sector sum = type sum = actor-occurrence sum = **30**. Status, confidence and impact each total **30**; no value is unspecified. No total of people or exfiltrated volumes is produced from heterogeneous samples.
 
 [Full CTI report](../../../CyberAttackAfrica/2026/08-august/README.md) · [Victim records](../../../CyberAttackAfrica/2026/08-august/victims.md)
 

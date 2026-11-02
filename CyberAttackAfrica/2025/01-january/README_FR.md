@@ -6,17 +6,17 @@
 
 ## 1. Synthèse exécutive
 
-En Janvier 2025, AFRINTEL documente **19 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
+En Janvier 2025, AFRINTEL documente **20 cyberincidents** affectant des organisations et services numériques dans **8 pays africains**.
 
-Le paysage est dominé par **Ransomware avec 16 fiches (84,2 %)**, suivi de **Data Leak avec 2 (10,5 %)**. Les autres types observés sont Account Takeover 1.
+Le paysage est dominé par **Ransomware avec 16 fiches (80,0 %)**, suivi de **Data Leak avec 3 (15,0 %)**. Les autres types observés sont Account Takeover 1.
 
-La concentration géographique est marquée : **Kenya (4)**, **Égypte (4)**, **Nigeria (3)** représentent ensemble **11 fiches, soit 57,9 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
+La concentration géographique est marquée : **Kenya (4)**, **Égypte (4)**, **Nigeria (4)** représentent ensemble **12 fiches, soit 60,0 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
 Sur le plan sectoriel, les catégories les plus représentées sont **Éducation / Université (6)**, **Gouvernement / Administration (4)**, **Santé / Médical (2)**. Les labels d'acteurs les plus fréquents sont `funksec` (6), `GDLockerSec` (3), `ransomhub` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
 
-La maturité des preuves reste variable : **17 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+La maturité des preuves reste variable : **18 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel **augmente de 3 fiches, passant de 16 à 19 (+18,8 %)**. Le Ransomware progresse de 11 à 16 (+5), tandis que Data Leak passe de 3 à 2, Access Sale de 1 à 0 et Defacement de 1 à 0. Account Takeover apparaît avec 1 fiche en janvier.
+Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel **augmente de 4 fiches, passant de 16 à 20 (+25,0 %)**. Le Ransomware progresse de 11 à 16 (+5), tandis que Data Leak passe de 3 à 3, Access Sale de 1 à 0 et Defacement de 1 à 0. Account Takeover apparaît avec 1 fiche en janvier.
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +24,9 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 
 | Indicateur | Décembre 2024 final corrigé | Janvier 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 16 | 19 | **+3 (+18,8 %)** |
+| Total incidents | 16 | 20 | **+4 (+25,0 %)** |
 | Ransomware | 11 | 16 | **+5 (+45,5 %)** |
-| Data Leak | 3 | 2 | **-1 (-33,3 %)** |
+| Data Leak | 3 | 3 | **Stable** |
 | Access Sale | 1 | 0 | **-1 (-100,0 %)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100,0 %)** |
@@ -54,7 +54,7 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents documentés | **19** |
+| Incidents documentés | **20** |
 | Pays représentés | **8** |
 | Régions représentées | **4** |
 | Premier pays | **Kenya (4)** |
@@ -63,8 +63,8 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
-| Ransomware | 16 | 84,2 % |
-| Data Leak | 2 | 10,5 % |
+| Ransomware | 16 | 80,0 % |
+| Data Leak | 3 | 15,0 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
@@ -72,13 +72,13 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **19** | **100 %** |
+| **Total** | **20** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Janvier 2025
     "Ransomware" : 16
-    "Data Leak" : 2
+    "Data Leak" : 3
     "Account Takeover" : 1
 ```
 
@@ -88,13 +88,13 @@ pie showData
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Kenya | **4** | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Égypte | **4** | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nigeria | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | **4** | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Afrique du Sud | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maroc | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Algérie | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ouganda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **19** | **16** | **2** | **0** | **0** | **0** | **1** | **0** | **0** |
+| **Total** | **20** | **16** | **3** | **0** | **0** | **0** | **1** | **0** | **0** |
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
@@ -105,8 +105,8 @@ pie showData
 | Afrique du Nord | 8 | 42,1 % |
 | Afrique de l'Est | 5 | 26,3 % |
 | Afrique australe | 3 | 15,8 % |
-| Afrique de l'Ouest | 3 | 15,8 % |
-| **Total** | **19** | **100 %** |
+| Afrique de l'Ouest | 4 | 20,0 % |
+| **Total** | **20** | **100 %** |
 
 La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
 
@@ -123,7 +123,8 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
 | Transport / Logistique | 1 | 5,3 % | █ |
 | Hôtellerie / Tourisme | 1 | 5,3 % | █ |
 | Services professionnels / Business | 1 | 5,3 % | █ |
-| **Total** | **19** | **100 %** | |
+| Organisation religieuse / Association | 1 | 5,0 % | █ |
+| **Total** | **20** | **100 %** | |
 
 ## 7. Acteurs / groupes
 
@@ -139,15 +140,16 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
 | Unknown | 2 | ██ |
 | apt73 | 1 | █ |
 | SevenZeroDay404 | 1 | █ |
+| Counter | 1 | █ |
 
 ## 8. Maturité des preuves
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
 | Claim - Unverified | 8 | 42,1 % |
-| Claim - Data Sample Published | 9 | 47,4 % |
+| Claim - Data Sample Published | 10 | 50,0 % |
 | Confirmation victime / gouvernement / autorité | 2 | 10,5 % |
-| **Total** | **19** | **100 %** |
+| **Total** | **20** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
@@ -160,6 +162,7 @@ timeline
     09 Janvier 2025 : General Authority for Government Services
     09 Janvier 2025 : Pick n Pay (pnp.co.za)
     11 Janvier 2025 : SEOCOM Marrakech (seocommarrakech.com)
+    13 Janvier 2025 : Living Seed (livingseed.org)
     14 Janvier 2025 : INTELS Nigeria Limited (intelservice.com)
     14 Janvier 2025 : Sharm Reef Hotel
     15 Janvier 2025 : Misr Technology Services (MTS / mts.gov.eg)
@@ -185,7 +188,7 @@ timeline
 
 ### Data Leak
 
-**2 fiches** sont classées Data Leak. Principaux pays : Afrique du Sud (1), Kenya (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
+**3 fiches** sont classées Data Leak. Principaux pays : Afrique du Sud (1), Kenya (1), Nigeria (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
 ### Account Takeover
 
@@ -205,8 +208,8 @@ timeline
 
 ## 12. Principaux enseignements et lacunes de renseignement
 
-- **Concentration géographique :** Kenya représente 4 fiches (21,1 %), devant Égypte (4) et Nigeria (3).
-- **Structure de menace :** Ransomware est le premier type avec 16 fiches, suivi de Data Leak (2).
+- **Concentration géographique :** Kenya représente 4 fiches (20,0 %), devant Égypte (4) et Nigeria (4).
+- **Structure de menace :** Ransomware est le premier type avec 16 fiches, suivi de Data Leak (3).
 - **Secteurs :** Éducation / Université (6) et Gouvernement / Administration (4) concentrent la plus forte visibilité.
 - **Acteurs :** les labels les plus fréquents sont funksec (6), GDLockerSec (3) et ransomhub (2).
 - **Preuve :** 17 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.

@@ -2,14 +2,14 @@
 
 👉🏾 [English version](./README.md)
 
-Cette synthèse reprend les fiches canoniques du mois : **6 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
+Cette synthèse reprend les fiches canoniques du mois : **7 incidents documentés**. Les comptes sont établis depuis le fichier mensuel français validé ; les revendications ne valent pas confirmation.
 
 ## Types d'incident
 
 | Type AFRINTEL | Fiches |
 |---|---:|
 | Ransomware | 5 |
-| Data Leak | 0 |
+| Data Leak | 1 |
 | Access Sale | 0 |
 | DDoS | 0 |
 | Defacement | 0 |
@@ -17,8 +17,8 @@ Cette synthèse reprend les fiches canoniques du mois : **6 incidents documenté
 | System Intrusion | 1 |
 | Malware | 0 |
 | Operational Fraud | 0 |
-| **Total** | **6** |
+| **Total** | **7** |
 
-La somme des neuf types canoniques égale le total mensuel (6). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/09-september/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/09-september/README_FR.md).
+La somme des neuf types canoniques égale le total mensuel (7). Pour les éléments détaillés et les limites de preuve, consulter les [fiches victimes](../../../CyberAttackAfrica/2024/09-september/victims_FR.md) et le [rapport mensuel](../../../CyberAttackAfrica/2024/09-september/README_FR.md).
 
 **AFRINTEL** - TLP:CLEAR

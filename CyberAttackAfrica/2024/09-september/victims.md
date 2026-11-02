@@ -88,6 +88,25 @@
 
 ----------------------------
 
+### September 19, 2024
+
+#### 🇪🇬 Egypt - BazookaEgy (bazookaegy.com)
+- **Incident date:** Not established; the publication places the leak in September 2024
+- **Initial publication date:** September 19, 2024 at 13:46; time zone not stated
+- **AFRINTEL discovery date:** October 30, 2026 - retrospective audit
+- **Actor / Group:** MrMeeseeks; identity and affiliation not verified
+- **Sector:** Fast Food / Retail
+- **Website:** [bazookaegy.com](https://bazookaegy.com)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** BazookaEgy is an Egyptian fast-food chain operating the bazookaegy.com domain and online ordering or registration services.
+- **Analysis:** The observed publication claims that a BazookaEgy database containing more than one million customer records was disclosed in September 2024, including more than 752,000 unique email addresses, names and phone numbers. The download was hidden and the original file was not available to AFRINTEL; the claimed volumes, uniqueness and completeness are therefore not validated. The described data could facilitate phishing, targeted spam and commercial fraud. No raw name, email address or phone number is reproduced.
+- **Limitations:** The assessment is based on the visible text of the publication; no original file, hash, complete schema, overlap analysis with the January 2026 publication or official BazookaEgy confirmation was identified.
+
+----------------------------
+
 ### September 28, 2024
 
 #### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)

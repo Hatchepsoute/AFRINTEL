@@ -20,6 +20,7 @@
 
 ----------------------------
 
+
 ### December 9, 2024
 
 #### 🇲🇷 Mauritania - Bankily
@@ -255,5 +256,23 @@
 - **Analysis:** An underground publication dated 30 December 2024 and attributed to `Satanic` explicitly announced a `Misr Pharmacies Misr Online Database - Leaked, Download!`. The post described datasets associated with orders and electronic prescriptions, including fields related to customers, contact details, billing, shipping, order status, and prescription information. Download links were displayed at the time of publication. The files are no longer available during the present reassessment, so AFRINTEL cannot independently verify their authenticity, volume, actual content, or technical provenance. AFRINTEL does not reproduce personal data from the publication.
 - **Evidence qualification:** `Data Leak` is used because the claim explicitly concerns a leaked database offered for download. Status remains `Claim - Unverified` because the advertised data is no longer available for independent AFRINTEL validation.
 - **Source / provenance:** Original underground publication attributed to Satanic, observed on 30 December 2024; screenshot preserved by AFRINTEL. No download link is reproduced.
+
+----------------------------
+
+### 31 December 2024
+
+#### 🇳🇬 Nigeria - Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED)
+- **Initial publication date:** 31 December 2024
+- **Actor / Group:** libyan-test
+- **Sector:** Higher Education / Energy Research
+- **Website:** [acespedunn.edu.ng](https://acespedunn.edu.ng/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim description:** ACE-SPED is a higher-education and research programme hosted by the University of Nigeria, Nsukka, focused on power systems, renewable energy and sustainable energy development in sub-Saharan Africa.
+- **Observed data:** The published sample presents data structures associated with students, applications and administrative users. Visible fields include registration identifiers, institutional email addresses, creation and update dates, activation indicators, password hashes and application tokens. A second structure corresponds to CMS-style user accounts.
+- **Analysis:** The consistency between the `acespedunn.edu.ng` domain, institutional addresses and ACE-SPED programme identifiers plausibly links the sample to the organisation's digital environment. The presence of password hashes and application tokens creates risks of credential reuse, account takeover and targeted phishing. The visible sample does not establish the total record count, disclosure completeness, initial access vector, current validity of the secrets or any service outage. AFRINTEL does not reproduce any name, email address, password hash, token or individual identifier.
+- **Evidence qualification:** The publication and sample support a potential exposure of access and student-related data. They do not constitute official victim confirmation or independent proof of a complete infrastructure compromise.
 
 ----------------------------
