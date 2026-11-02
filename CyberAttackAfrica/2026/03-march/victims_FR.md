@@ -273,6 +273,12 @@ Cette liste recense les revendications/publications ransomware, les fuites de do
 - **Type d'incident :** Fuite de données
 - **Description victime :** Gestion de la province la plus peuplée d'Afrique du Sud (Johannesburg, Pretoria). 3,8 To de données (3,6 millions de fichiers) exfiltrés : santé, éducation, logement, développement économique.
 
+- **Type de la revendication Kazu liée :** Ransomware / contexte d'extorsion. Il s'agit d'une revendication secondaire liée, non comptée comme incident canonique distinct ; les éléments disponibles n'établissent ni chiffrement ni intrusion distincte.
+
+**Revendication secondaire liée — non comptée comme nouvel incident canonique :** Une publication distincte de Kazu datée du **16 mai 2026** cite également le Gouvernement provincial du Gauteng. Elle annonce **3 673 556 fichiers**, environ **3,8 To**, et un prix de **25 000 USD**. L'archive fournie localement contient **1 905 fichiers** et environ **1,905 Go** ; son SHA-256 est `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`. Le recoupement entre la victime et le volume revendiqué par rapport à la fiche XP95 est compatible avec une double revendication, un transfert/revente ou une exposition distincte, mais les éléments disponibles ne permettent pas de trancher entre ces hypothèses. La revendication Kazu est donc conservée comme revendication liée non canonique et n'augmente pas le total des incidents.
+
+Cette chronologie est enregistrée comme **deux revendications observées** — XP95 en mars et Kazu en mai — mais comme **un seul incident canonique**, dans l'attente d'éléments démontrant que les données Kazu proviennent d'une compromission distincte.
+
 ### 14 Mars 2026
 #### 🇪🇬 Égypte - Grid Fine Finishes
 - **Groupe ransomware :** Payload

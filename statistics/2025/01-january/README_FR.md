@@ -2,23 +2,23 @@
 
 👉🏾 [English version](./README.md)
 
-Cette fiche reprend les 16 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 16 |
+| Total incidents | 20 |
 | Ransomware | 16 |
-| Fuites de données | 0 |
+| Fuites de données | 3 |
 | Pays touchés | 8 |
-| Secteurs | 15 |
-| Acteurs / sources | 6 |
+| Secteurs | 16 |
+| Acteurs / sources | 7 |
 
 ## Pays
 
 | Pays | Incidents |
 |---|---:|
 | 🇪🇬 Égypte | 4 |
-| 🇳🇬 Nigeria | 3 |
+| 🇳🇬 Nigeria | 4 |
 | 🇰🇪 Kenya | 2 |
 | 🇲🇦 Maroc | 2 |
 | 🇩🇿 Algérie | 2 |
@@ -45,6 +45,7 @@ Cette fiche reprend les 16 cartes du fichier victimes mensuel. Les publications 
 | Services de Conseil / SMS en masse et messagerie broadcast | 1 |
 | Services RH / Recrutement | 1 |
 | Éducation / Enseignement Supérieur | 1 |
+| Organisation religieuse / Association | 1 |
 
 ## Acteurs / sources
 
@@ -56,12 +57,14 @@ Cette fiche reprend les 16 cartes du fichier victimes mensuel. Les publications 
 | spacebears | 2 |
 | babuk2 | 2 |
 | apt73 | 1 |
+| Counter | 1 |
 
 ## Types
 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 16 |
+| Data Leak | 3 |
 
 **AFRINTEL** - TLP:CLEAR
 

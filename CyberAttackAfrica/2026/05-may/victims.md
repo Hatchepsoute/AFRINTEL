@@ -2,7 +2,7 @@
 
 ## Monthly snapshot
 
-May 2026 includes **103 unique incidents**: **17 ransomware incidents**, **42 data leaks**, **1 access sale** and **43 DDoS claims**. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
+May 2026 includes **103 canonical incidents and 104 observed publication records**: **17 ransomware incidents**, **42 data leaks**, **1 access sale** and **43 DDoS claims**, plus one linked non-canonical Kazu claim. The records concern **18 African countries**: 12 directly affected countries and 6 additional countries exposed only through three multi-country incidents.
 
 ### Notable incidents
 
@@ -1602,3 +1602,16 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 
 - **Analysis:**
   Objective structural review identified 12 DOCX files, each with seven tables and aviation-related markers. The archive is consistent with a collection of civil-aviation documents, but the analysis does not validate provenance, authenticity, acquisition method or complete scope. Personal data and embedded document content are not reproduced.
+
+### May 16, 2026
+#### 🇿🇦 South Africa - Gauteng Provincial Government [Related Kazu Claim]
+- **Incident date:** 16 May 2026
+- **Actor / Group:** Kazu (Telegram channel attribution; affiliation not independently verified)
+- **Sector:** Government / Public administration
+- **Website:** [gauteng.gov.za](https://www.gauteng.gov.za)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware / extortion context
+- **Counting status:** Related claim - non-canonical. Included in the May publication-activity count, excluded from the canonical incident total because the relationship with the XP95 claim recorded on 13 March 2026 is unresolved.
+- **Chronology assessment:** This is the second observed claim concerning the same victim. It is tracked as a May publication record, not as a confirmed second attack.
+- **Description:** Kazu advertises a dataset attributed to the Gauteng Provincial Government for **USD 25,000**, claiming **3,673,556 files** and approximately **3.8 TB** of data. The supplied local archive contains **1,905 files** and approximately **1.905 GB**; its SHA-256 is `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
+- **Analysis:** The overlap in victim and claimed volume with the XP95 publication is compatible with a duplicate claim, transfer/resale, or a separate exposure. The available evidence does not establish which explanation is correct, nor does it demonstrate encryption or a distinct intrusion. No personal data or individual document content is reproduced.

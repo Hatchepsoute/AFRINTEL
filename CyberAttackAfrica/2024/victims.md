@@ -1,4 +1,4 @@
-# AFRINTEL Cyber Incidents - 2024 - canonical corpus (121 records)
+# AFRINTEL Cyber Incidents - 2024 - canonical corpus (123 records)
 
 ### January 2, 2024
 
@@ -19,6 +19,7 @@
 - **Public source:** [ITAC official notification](https://itac.org.za/notification-of-a-personal-information-security-compromise/)
 
 ----------------------------
+
 
 ### January 6, 2024
 
@@ -1484,6 +1485,25 @@
 
 ----------------------------
 
+### September 19, 2024
+
+#### 🇪🇬 Egypt - BazookaEgy (bazookaegy.com)
+- **Incident date:** Not established; the publication places the leak in September 2024
+- **Initial publication date:** September 19, 2024 at 13:46; time zone not stated
+- **AFRINTEL discovery date:** October 30, 2026 - retrospective audit
+- **Actor / Group:** MrMeeseeks; identity and affiliation not verified
+- **Sector:** Fast Food / Retail
+- **Website:** [bazookaegy.com](https://bazookaegy.com)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 2
+- **Victim Description:** BazookaEgy is an Egyptian fast-food chain operating the bazookaegy.com domain and online ordering or registration services.
+- **Analysis:** The observed publication claims that a BazookaEgy database containing more than one million customer records was disclosed in September 2024, including more than 752,000 unique email addresses, names and phone numbers. The download was hidden and the original file was not available to AFRINTEL; the claimed volumes, uniqueness and completeness are therefore not validated. The described data could facilitate phishing, targeted spam and commercial fraud. No raw name, email address or phone number is reproduced.
+- **Limitations:** The assessment is based on the visible text of the publication; no original file, hash, complete schema, overlap analysis with the January 2026 publication or official BazookaEgy confirmation was identified.
+
+----------------------------
+
 ### September 28, 2024
 
 #### 🇲🇿 Mozambique - Comissão Nacional de Eleições (CNE)
@@ -2156,5 +2176,23 @@
 - **Analysis:** An underground publication dated 30 December 2024 and attributed to `Satanic` explicitly announced a `Misr Pharmacies Misr Online Database - Leaked, Download!`. The post described datasets associated with orders and electronic prescriptions, including fields related to customers, contact details, billing, shipping, order status, and prescription information. Download links were displayed at the time of publication. The files are no longer available during the present reassessment, so AFRINTEL cannot independently verify their authenticity, volume, actual content, or technical provenance. AFRINTEL does not reproduce personal data from the publication.
 - **Evidence qualification:** `Data Leak` is used because the claim explicitly concerns a leaked database offered for download. Status remains `Claim - Unverified` because the advertised data is no longer available for independent AFRINTEL validation.
 - **Source / provenance:** Original underground publication attributed to Satanic, observed on 30 December 2024; screenshot preserved by AFRINTEL. No download link is reproduced.
+
+----------------------------
+
+### 31 December 2024
+
+#### 🇳🇬 Nigeria - Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED)
+- **Initial publication date:** 31 December 2024
+- **Actor / Group:** libyan-test
+- **Sector:** Higher Education / Energy Research
+- **Website:** [acespedunn.edu.ng](https://acespedunn.edu.ng/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim description:** ACE-SPED is a higher-education and research programme hosted by the University of Nigeria, Nsukka, focused on power systems, renewable energy and sustainable energy development in sub-Saharan Africa.
+- **Observed data:** The published sample presents data structures associated with students, applications and administrative users. Visible fields include registration identifiers, institutional email addresses, creation and update dates, activation indicators, password hashes and application tokens. A second structure corresponds to CMS-style user accounts.
+- **Analysis:** The consistency between the `acespedunn.edu.ng` domain, institutional addresses and ACE-SPED programme identifiers plausibly links the sample to the organisation's digital environment. The presence of password hashes and application tokens creates risks of credential reuse, account takeover and targeted phishing. The visible sample does not establish the total record count, disclosure completeness, initial access vector, current validity of the secrets or any service outage. AFRINTEL does not reproduce any name, email address, password hash, token or individual identifier.
+- **Evidence qualification:** The publication and sample support a potential exposure of access and student-related data. They do not constitute official victim confirmation or independent proof of a complete infrastructure compromise.
 
 ----------------------------

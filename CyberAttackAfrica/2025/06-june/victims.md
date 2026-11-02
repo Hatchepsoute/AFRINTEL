@@ -171,6 +171,14 @@
 
   The file structure is consistent with a logistics-related administrative table, but the structural review does not establish that the document is authentic, classified, current, complete or sourced from the Ministry of National Defense. The claim therefore remains recorded as unverified. If the claimed provenance were confirmed, exposure of military logistics or supply-chain information could create a high national-security risk; this is a conditional impact assessment, not a confirmation of compromise.
 
+  **Related element examined:** A second excerpt, later associated with a post by the `Seglab_DZ` account dated July 11, 2025, was subsequently provided. The visible transcription contains approximately **68 lines** and a semicolon-delimited structure covering activities dated from **January 1 to April 3, 2025**, with deadlines extending to **April 3, 2026**. The observed fields correspond to weeks, activity dates, operations, responsible personnel, progress states, deadlines, supervisors and internal references.
+
+  **Content analysis:** The excerpt describes internal-network updates, installation of monitoring systems, ammunition-depot security inspections, training on storage systems, receipt of medical equipment, vehicle maintenance, electrical-network checks, transport of materials to an air base, command communications-equipment checks, equipment inventories and maintenance-document delivery. Most entries are marked completed; at least two are marked in progress. The excerpt also contains names, ranks, functions and internal operational references relating to military personnel. These values are not reproduced in the repository.
+
+  **Qualification and relation to the June publication:** The schedule, repeated operation categories, deadlines, responsibility chain and internal references are strongly consistent with a logistics and administrative planning document from a defense environment. References to internal networks, communications, ammunition depots, air bases and material movements increase the potential sensitivity of the corpus. However, the publication date and account differ from the June source, and the visible line count does not match the previously reviewed XLSX workbook. The excerpt is therefore recorded as a **potential related element or second publication**, not as the same file or as a separately confirmed compromise.
+
+  **Limitations:** The supplied excerpt cannot confirm official authenticity, classification level, affected unit, source system, access vector, file completeness or an effective compromise of the ministry. No name, rank, identifier, operational reference, sensitive location or other raw military data is published.
+
 ### 18 June 2025
 #### 🇲🇦 Morocco - Ministry of National Education (men.gov.ma / massar.men.gov.ma)
 - **Incident type:** Data Leak

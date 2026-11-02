@@ -4,23 +4,27 @@
 
 ## 1. Synthèse exécutive
 
-En 2024, AFRINTEL documente **121 cyberincidents canoniques dans 31 pays africains**.
+En 2024, AFRINTEL documente **123 cyberincidents canoniques dans 31 pays africains**.
 
-Le paysage est dominé par **Ransomware : 91 (75,2 %)**, suivi de **Data Leak : 14 (11,6 %)**, **System Intrusion : 7**, **Access Sale : 5**, **DDoS : 2**, **Defacement : 1** et **Operational Fraud : 1**. `Account Takeover` et `Malware` restent à 0.
+Le paysage est dominé par **Ransomware : 91 (74,0 %)**, suivi de **Data Leak : 16 (13,0 %)**, **System Intrusion : 7**, **Access Sale : 5**, **DDoS : 2**, **Defacement : 1** et **Operational Fraud : 1**. `Account Takeover` et `Malware` restent à 0.
 
-Les pays les plus représentés sont **l'Afrique du Sud avec 36 incidents**, **l'Égypte avec 14**, **le Nigeria avec 7** et **la Tunisie avec 6**. Les principaux secteurs sont **Finance / Banque (18)**, **Gouvernement / Administration (18)** et **Services professionnels / Business (12)**.
+Les pays les plus représentés sont **l'Afrique du Sud avec 36 incidents**, **l'Égypte avec 15**, **le Nigeria avec 8** et **la Tunisie avec 6**. Les principaux secteurs sont **Finance / Banque (18)**, **Gouvernement / Administration (18)** et **Services professionnels / Business (12)**.
 
-La répartition régionale montre une forte visibilité de **l'Afrique australe avec 50 incidents (41,3 %)**, suivie de **l'Afrique du Nord avec 31 (25,6 %)** et de **l'Afrique de l'Ouest avec 18 (14,9 %)**.
+La répartition régionale montre une forte visibilité de **l'Afrique australe avec 50 incidents (41,0 %)**, suivie de **l'Afrique du Nord avec 31 (25,4 %)** et de **l'Afrique de l'Ouest avec 19 (15,6 %)**.
 
-La maturité des preuves reste hétérogène : **87 Claim - Unverified**, **16 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve restent distinctes du type technique de l'incident.
+La maturité des preuves reste hétérogène : **87 Claim - Unverified**, **17 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve restent distinctes du type technique de l'incident.
 
-Le premier semestre compte **46 incidents**, contre **75 au second semestre**. Le ransomware reste la menace la plus fréquemment observée sur l'ensemble de l'année, tandis que les Data Leak, ventes d'accès, intrusions système, DDoS et autres catégories montrent un paysage de menace plus diversifié qu'une lecture centrée uniquement sur le ransomware.
+Le premier semestre compte **46 incidents**, contre **76 au second semestre**. Le ransomware reste la menace la plus fréquemment observée sur l'ensemble de l'année, tandis que les Data Leak, ventes d'accès, intrusions système, DDoS et autres catégories montrent un paysage de menace plus diversifié qu'une lecture centrée uniquement sur le ransomware.
 
 > **Note de lecture :** les chiffres AFRINTEL mesurent les incidents documentés dans le corpus à partir de sources observables. Ils ne constituent pas une mesure exhaustive de toutes les compromissions ayant réellement eu lieu en Afrique.
 
 ### Mise à jour rétrospective - ESGC.MA
 
 La fiche **ESGC.MA** de mars 2024 est désormais documentée par une capture d'une publication de forum affichée au 26 mars 2024. La publication revendique une base issue de 2021, environ 500 entrées et un échantillon SQL contenant des données personnelles et des éléments d'authentification. Cette information renforce le classement **Data Leak - Claim - Data Sample Published**, sans confirmer la compromission, l'origine, l'exhaustivité de la base ni le lien juridique exact avec une institution marocaine portant un sigle proche. Les données brutes ne sont pas reproduites.
+
+### Ajout rétrospectif - ACE-SPED
+
+La publication du 31 décembre 2024 visant l'Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED), au Nigeria, est classée `Data Leak / Claim - Data Sample Published`. L'analyse des données observées met en évidence des structures liées aux étudiants, aux candidatures et aux comptes administratifs, ainsi que des éléments d'authentification et des jetons applicatifs. La cohérence institutionnelle soutient l'attribution plausible de l'échantillon, sans confirmer officiellement la compromission, l'exhaustivité de la divulgation ou la validité actuelle des secrets. Les données brutes ne sont pas reproduites.
 
 ## 2. Méthodologie
 
@@ -44,10 +48,10 @@ La fiche **ESGC.MA** de mars 2024 est désormais documentée par une capture d'u
 | Juin | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Juillet | 11 | 7 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Août | 16 | 14 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
-| Septembre | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Septembre | 7 | 5 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Octobre | 11 | 8 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Novembre | 15 | 12 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Décembre | 16 | 11 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Décembre | 17 | 11 | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ```mermaid
 timeline
@@ -63,15 +67,15 @@ timeline
     Septembre : 6 incidents
     Octobre : 11 incidents
     Novembre : 15 incidents
-    Décembre : 16 incidents
+    Décembre : 17 incidents
 ```
 
 ## 2. Types d'incident
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 91 | 75,2 % |
-| Data Leak | 14 | 11,6 % |
+| Ransomware | 91 | 74,0 % |
+| Data Leak | 16 | 13,0 % |
 | Access Sale | 5 | 4,1 % |
 | DDoS | 2 | 1,7 % |
 | Defacement | 1 | 0,8 % |
@@ -84,7 +88,7 @@ timeline
 pie showData
     title Types d'incident - AFRINTEL 2024
     "Ransomware" : 91
-    "Data Leak" : 14
+    "Data Leak" : 16
     "Access Sale" : 5
     "DDoS" : 2
     "Defacement" : 1
@@ -97,8 +101,8 @@ pie showData
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Afrique du Sud | 36 | 32 | 2 | 0 | 1 | 0 | 0 | 0 | 0 | 1 |
-| Égypte | 14 | 11 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nigeria | 7 | 4 | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| Égypte | 15 | 11 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | 8 | 4 | 2 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
 | Tunisie | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Cameroun | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Namibie | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -134,7 +138,7 @@ pie showData
 |---|---|---|
 | Afrique australe | 50 | 41,3 % |
 | Afrique du Nord | 31 | 25,6 % |
-| Afrique de l'Ouest | 18 | 14,9 % |
+| Afrique de l'Ouest | 19 | 15,6 % |
 | Afrique de l'Est | 12 | 9,9 % |
 | Afrique centrale | 5 | 4,2 % |
 | Océan Indien | 5 | 4,2 % |
@@ -149,7 +153,7 @@ pie showData
 | Industrie / Fabrication | 11 | 9,1 % |
 | Santé / Médical | 10 | 8,3 % |
 | Technologie / IT | 9 | 7,4 % |
-| Éducation / Université | 8 | 6,6 % |
+| Éducation / Université | 9 | 7,4 % |
 | Commerce / E-commerce | 7 | 5,8 % |
 | Télécommunications | 5 | 4,2 % |
 | Énergie / Services publics | 4 | 3,3 % |
@@ -201,10 +205,10 @@ pie showData
 
 | Position de preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 87 | 71,9 % |
-| Confirmed | 15 | 12,5 % |
-| Claim - Data Sample Published | 16 | 13,3 % |
-| Corroborated | 2 | 1,7 % |
+| Claim - Unverified | 87 | 71,3 % |
+| Confirmed | 15 | 12,3 % |
+| Claim - Data Sample Published | 17 | 13,9 % |
+| Corroborated | 2 | 1,6 % |
 | Attempted | 1 | 0,8 % |
 
 ### Confiance
@@ -213,14 +217,14 @@ pie showData
 |---|---|---|
 | Low | 84 | 69,4 % |
 | Very High | 16 | 13,2 % |
-| Medium | 14 | 11,6 % |
+| Medium | 15 | 12,3 % |
 | High | 7 | 5,8 % |
 
 ### Impact
 
 | Impact | Fiches | Part |
 |---|---|---|
-| Level 3 | 55 | 45,5 % |
+| Level 3 | 56 | 45,9 % |
 | Level 2 | 47 | 38,8 % |
 | Level 4 | 19 | 15,7 % |
 
@@ -228,9 +232,9 @@ pie showData
 
 | Indicateur | S1 2024 | S2 2024 | Évolution |
 |---|---|---|---|
-| Total | 46 | 75 | +29 (+63,0 %) |
+| Total | 46 | 76 | +30 (+65,2 %) |
 | Ransomware | 34 | 57 | +23 (+67,6 %) |
-| Data Leak | 5 | 9 | +4 (+80,0 %) |
+| Data Leak | 5 | 11 | +6 (+120,0 %) |
 | Access Sale | 1 | 4 | +3 (+300,0 %) |
 | DDoS | 2 | 0 | -2 (-100,0 %) |
 | Defacement | 0 | 1 | +1 (nouveau) |
@@ -239,15 +243,15 @@ pie showData
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100,0 %) |
 
-Le **S1 compte 46 incidents** et le **S2 75**, soit **+29 (+63,0 %)** dans le corpus documenté. Le principal moteur de l'écart est le ransomware, tandis que les Data Leak passent de **5 au S1 à 9 au S2**. Cette comparaison mesure la visibilité du corpus et ne doit pas être interprétée comme une hausse équivalente du nombre réel de compromissions.
+Le **S1 compte 46 incidents** et le **S2 77**, soit **+31 (+67,4 %)** dans le corpus documenté. Le principal moteur de l'écart est le ransomware, tandis que les Data Leak passent de **5 au S1 à 11 au S2**. Cette comparaison mesure la visibilité du corpus et ne doit pas être interprétée comme une hausse équivalente du nombre réel de compromissions.
 
 ## 2. Analyse CTI par type
 
 ### Ransomware - 91
 La majorité des fiches ransomware provient de publications d'acteurs. Les confirmations publiques fortes restent une minorité ; la présence sur un leak site n'établit pas systématiquement le chiffrement.
 
-### Data Leak - 14
-Les 14 fiches Data Leak présentent des niveaux de preuve variables. Les échantillons effectivement observés sont distingués des volumes globaux revendiqués, et les claims non vérifiés ne sont pas assimilés à des compromissions confirmées.
+### Data Leak - 16
+Les 16 fiches Data Leak présentent des niveaux de preuve variables. Les échantillons effectivement observés sont distingués des volumes globaux revendiqués, et les claims non vérifiés ne sont pas assimilés à des compromissions confirmées.
 
 ### System Intrusion - 7
 Cette catégorie évite de forcer Eneo, Malawi Passport, GTBank, EmploiPartner, CNE Mozambique et d'autres dossiers dans ransomware/data leak lorsque la preuve ne le permet pas.
@@ -286,6 +290,6 @@ Préserver distinctement incident, publication initiale, repost, découverte et 
 
 ## 2. Conclusion
 
-Le corpus AFRINTEL 2024 contient **121 incidents canoniques dans 31 pays africains**. Il met en évidence une forte domination du ransomware, une exposition importante des secteurs financier et gouvernemental, ainsi qu'une maturité de preuve encore très variable selon les incidents.
+Le corpus AFRINTEL 2024 contient **123 incidents canoniques dans 31 pays africains**. Il met en évidence une forte domination du ransomware, une exposition importante des secteurs financier et gouvernemental, ainsi qu'une maturité de preuve encore très variable selon les incidents.
 
 **AFRINTEL** - TLP:CLEAR

@@ -134,6 +134,7 @@
 
 ### 18 Novembre 2025
 #### 🇰🇲🇨🇲 Comores / Cameroun - Comores Telecom, Douanes des Comores et Ministère camerounais de la Justice
+- **Type d'incident:** Data Leak
 - **Date de l'incident :** Non établie
 - **Date de publication initiale :** 18 novembre 2025, selon l'horodatage visible de la publication
 - **Date de découverte / intégration AFRINTEL :** 16 octobre 2026

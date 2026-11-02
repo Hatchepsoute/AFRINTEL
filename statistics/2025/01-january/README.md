@@ -4,26 +4,26 @@
 
 ## Summary
 
-This statistical sheet is compiled from the 16 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This statistical sheet is compiled from the 20 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 16 |
+| Total incidents | 20 |
 | Ransomware | 16 |
-| Data leaks | 0 |
+| Data leaks | 3 |
 | Access sales | 0 |
 | Defacement | 0 |
 | Unclassified public claims | 0 |
 | Countries | 8 |
-| Sectors | 15 |
-| Actors / sources | 6 |
+| Sectors | 16 |
+| Actors / sources | 7 |
 
 ## 1. Country
 
 | Country | Incidents |
 |---|---:|
 | 🇪🇬 Egypt | 4 |
-| 🇳🇬 Nigeria | 3 |
+| 🇳🇬 Nigeria | 4 |
 | 🇰🇪 Kenya | 2 |
 | 🇲🇦 Morocco | 2 |
 | 🇩🇿 Algeria | 2 |
@@ -50,6 +50,7 @@ This statistical sheet is compiled from the 16 cards in the monthly victim file.
 | Consulting Services / Bulk SMS & Broadcast Messaging | 1 |
 | HR Services / Recruitment | 1 |
 | Education / Higher Education | 1 |
+| Religious Organization / Association | 1 |
 
 ## 3. Actor / source
 
@@ -61,12 +62,14 @@ This statistical sheet is compiled from the 16 cards in the monthly victim file.
 | spacebears | 2 |
 | babuk2 | 2 |
 | apt73 | 1 |
+| Counter | 1 |
 
 ## 4. Type
 
 | Type | Incidents |
 |---|---:|
 | Ransomware | 16 |
+| Data Leak | 3 |
 
 ## CTI reading
 

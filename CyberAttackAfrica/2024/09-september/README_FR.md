@@ -4,17 +4,17 @@
 
 ## 1. Synthèse exécutive
 
-En Septembre 2024, AFRINTEL retient **6 cyberincidents canoniques dans 6 pays**. Le mois est dominé par **Ransomware (5, 83,3 %)** puis **System Intrusion (1, 16,7 %)**. Les pays les plus représentés sont **Sénégal (1)**, **Cameroun (1)**, **Maurice (1)**. Les secteurs les plus visibles sont **Gouvernement / Administration (2)**, **Technologie / IT (1)**, **Télécommunications (1)**. Les labels acteur/groupe les plus fréquents sont `Unknown` (2), `hunters` (1), `spacebears` (1). `Unknown` désigne une absence d'attribution, pas un groupe.
+En Septembre 2024, AFRINTEL retient **7 cyberincidents canoniques dans 7 pays**. Le mois est dominé par **Ransomware (5, 71,4 %)**, puis **Data Leak (1, 14,3 %)** et **System Intrusion (1, 14,3 %)**. Les pays les plus représentés sont **Sénégal (1)**, **Cameroun (1)**, **Maurice (1)** et **Égypte (1)**. Les secteurs les plus visibles sont **Gouvernement / Administration (2)**, **Technologie / IT (1)**, **Télécommunications (1)**. Les labels acteur/groupe les plus fréquents sont `Unknown` (2), `hunters` (1), `spacebears` (1), `MrMeeseeks` (1). `Unknown` désigne une absence d'attribution, pas un groupe.
 
-La maturité de preuve est répartie entre **Claim - Unverified: 4**, **Confirmed: 2**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
+La maturité de preuve est répartie entre **Claim - Unverified: 4**, **Claim - Data Sample Published: 1** et **Confirmed: 2**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
 ### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Août 2024 | Septembre 2024 | Évolution |
 |---|---|---|---|
-| Total | 16 | 6 | -10 (-62,5 %) |
+| Total | 16 | 7 | -9 (-56,3 %) |
 | Ransomware | 14 | 5 | -9 (-64,3 %) |
-| Data Leak | 1 | 0 | -1 (-100,0 %) |
+| Data Leak | 1 | 1 | Stable |
 | Access Sale | 0 | 0 | Stable |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
@@ -25,7 +25,7 @@ La maturité de preuve est répartie entre **Claim - Unverified: 4**, **Confirme
 
 ### 1.2 Analyse comparative
 
-Le volume mensuel **diminue de 10 incident(s)**. Les variations structurantes sont : Ransomware 14->5 (-9), Data Leak 1->0 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
+Le volume mensuel **diminue de 9 incident(s)**. Les variations structurantes sont : Ransomware 14->5 (-9), tandis que Data Leak reste à 1. Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
@@ -40,8 +40,8 @@ Le volume mensuel **diminue de 10 incident(s)**. Les variations structurantes so
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 5 | 83,3 % |
-| Data Leak | 0 | 0,0 % |
+| Ransomware | 5 | 71,4 % |
+| Data Leak | 1 | 14,3 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
@@ -54,6 +54,7 @@ Le volume mensuel **diminue de 10 incident(s)**. Les variations structurantes so
 pie showData
     title Types d'incident - Septembre 2024
     "Ransomware" : 5
+    "Data Leak" : 1
     "System Intrusion" : 1
 ```
 
@@ -102,15 +103,17 @@ pie showData
 
 | Position de preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 4 | 66,7 % |
-| Confirmed | 2 | 33,3 % |
+| Claim - Unverified | 4 | 57,1 % |
+| Claim - Data Sample Published | 1 | 14,3 % |
+| Confirmed | 2 | 28,6 % |
 
 ### Confiance
 
 | Confiance | Fiches | Part |
 |---|---|---|
 | Low | 4 | 66,7 % |
-| Very High | 2 | 33,3 % |
+| Medium | 1 | 14,3 % |
+| Very High | 2 | 28,6 % |
 
 ## 9. Chronologie
 
@@ -213,6 +216,10 @@ timeline
 
 **1 fiche(s) (16,7 %).** Principaux pays : Mozambique (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
+### Data Leak - 1
+
+**1 fiche(s) (14,3 %).** BazookaEgy (Égypte) fait l'objet d'une publication attribuée à MrMeeseeks annonçant plus d'un million d'enregistrements clients, plus de 752 000 emails uniques, des noms et des téléphones. Le fichier source n'était pas accessible ; les volumes restent revendiqués et non validés. Une publication distincte de janvier 2026 est conservée séparément, avec plusieurs hypothèses de lien documentées dans la fiche 2026.
+
 ## 11. Incidents prioritaires pour revue
 
 | Pays | Organisation | Type | Statut | Impact | Confiance |
@@ -309,7 +316,7 @@ timeline
 
 ## 14. Conclusion
 
-Septembre 2024 contient **6 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+Septembre 2024 contient **7 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
 
 👉🏾 [Victimes canoniques](./victims_FR.md)
 

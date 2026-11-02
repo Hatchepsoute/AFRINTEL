@@ -48,6 +48,20 @@
 - **Type d'incident:** Ransomware
 - **Description victime:** EOCOM est une agence marocaine fournissant des services de SEO (Search Engine Optimization), de gestion de campagnes publicitaires (SEA) et de développement web pour des entreprises locales et internationales.
 
+### 13 Janvier 2025 - date de fuite revendiquée
+#### 🇳🇬 Nigeria - Living Seed (livingseed.org)
+- **Acteur / Groupe:** Counter
+- **Secteur:** Organisation religieuse / Association
+- **Site web:** https://livingseed.org
+- **Date de l'incident:** 13 janvier 2025 - date de fuite indiquée dans la publication, non vérifiée indépendamment
+- **Date de publication initiale:** 5 février 2025
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Living Seed est une organisation religieuse opérant principalement au Nigeria. Elle propose des enseignements spirituels, des programmes de formation et la coordination d'événements pour une communauté de membres au moyen d'activités d'église et de plateformes en ligne.
+- **Analyse:** La publication observée attribue à Living Seed une fuite d'environ 1 million d'enregistrements, présentée sous la forme d'un fichier CSV d'environ 346 Mo. Les éléments visibles dans l'échantillon mentionnent des données d'identité et de profil, des coordonnées, des informations de résidence, l'appartenance confessionnelle, l'occupation, des informations relatives aux programmes et aux inscriptions, des traces de participation à des ateliers, ainsi que des noms et numéros de téléphone de proches. La publication mentionne également des mots de passe chiffrés et des questions/réponses secrètes. L'analyse est limitée aux informations lisibles dans la capture fournie ; le fichier original n'était pas accessible, de sorte que le nombre d'enregistrements, l'exhaustivité du corpus, la validité des données d'authentification et le vecteur d'accès ne sont pas vérifiés. La capture ne permet pas non plus de confirmer indépendamment l'attribution à Living Seed ou l'identité technique de l'acteur. AFRINTEL ne reproduit aucune donnée personnelle, donnée d'authentification ni information concernant un participant.
+
 ### 14 Janvier 2025
 #### 🇳🇬 Nigeria - INTELS Nigeria Limited (intelservice.com)
 - **Groupe ransomware:** ransomhub
@@ -1230,6 +1244,14 @@
 
   La structure du fichier est cohérente avec un tableau administratif lié à la logistique, mais cet examen structurel ne permet pas d'établir que le document est authentique, classifié, actuel, complet ou issu du Ministère de la Défense Nationale. La revendication reste donc enregistrée comme non vérifiée. Si la provenance revendiquée était confirmée, l'exposition d'informations sur la logistique ou la chaîne d'approvisionnement militaire pourrait présenter un risque élevé pour la sécurité nationale ; il s'agit d'une évaluation conditionnelle de l'impact et non d'une confirmation de compromission.
 
+  **Élément connexe examiné :** Un second extrait, associé à une publication du compte `Seglab_DZ` datée du 11 juillet 2025, a été fourni ultérieurement. La transcription visible comprend environ **68 lignes** et un schéma délimité par des points-virgules, couvrant des activités datées du **1er janvier au 3 avril 2025**, avec des échéances allant jusqu'au **3 avril 2026**. Les champs observés correspondent à des semaines, dates d'activité, opérations, responsables, états d'avancement, échéances, superviseurs et références internes.
+
+  **Analyse du contenu :** L'extrait décrit des opérations de mise à jour de réseaux internes, d'installation de systèmes de surveillance, d'inspection de dépôts de munitions, de formation aux systèmes de stockage, de réception d'équipements médicaux, de maintenance de véhicules, de contrôle de réseaux électriques, de transport de matériels vers une base aérienne, de contrôle d'équipements de communication, d'inventaire de matériels et de remise de documents de maintenance. La majorité des entrées sont marquées comme terminées ; au moins deux sont indiquées comme en cours. L'extrait contient également des noms, grades, fonctions et références opérationnelles de personnels militaires. Ces valeurs ne sont pas reproduites dans le dépôt.
+
+  **Qualification et relation avec la publication de juin :** Le calendrier, la répétition des catégories d'opérations, les échéances, la chaîne de responsables et les références internes sont fortement cohérents avec un document de planification logistique et administrative d'un environnement de défense. La présence de réseaux internes, de communications, de dépôts de munitions, de bases aériennes et de mouvements de matériels accroît la sensibilité potentielle du corpus. Toutefois, la date et le compte de publication diffèrent de ceux de juin, et le nombre de lignes visible n'est pas identique au classeur XLSX déjà examiné. L'extrait est donc enregistré comme **élément connexe ou seconde publication potentielle**, sans être présenté comme le même fichier ni comme une compromission distincte confirmée.
+
+  **Limites :** L'extrait fourni ne permet pas de confirmer l'authenticité officielle, le niveau de classification, l'unité concernée, le système source, le vecteur d'accès, l'exhaustivité du fichier ou une compromission effective du ministère. Aucun nom, grade, identifiant, référence opérationnelle, lieu sensible ou autre donnée militaire brute n'est publié.
+
 ### 18 Juin 2025
 #### 🇲🇦 Maroc - Ministère de l'Éducation Nationale (men.gov.ma / massar.men.gov.ma)
 - **Type d'incident:** Data Leak
@@ -1354,7 +1376,7 @@
 
   Parmi les 179 lignes structurées comme des fiches d'entreprises, 166 comportent une ville, principalement Rabat, Salé, Témara et Khémisset. 146 contiennent un nom de responsable, 145 un numéro de téléphone, 139 un fax, 111 un numéro mobile et 81 au moins une adresse électronique. Certaines fiches regroupent plusieurs coordonnées pour une même entreprise.
 
-  Une anomalie est présente dans le fichier fourni. La première ligne contient des valeurs qui ne correspondent pas à la structure métier observée dans le reste de la base. Les enregistrements suivants, notamment ceux visibles dans le post du forum, correspondent en revanche à la structure annoncée par l'acteur.
+  Une anomalie de structure est présente dans le fichier fourni : un tuple inséré entre les fiches `societe` contient **12 valeurs au lieu de 14** et ne suit pas le schéma attendu de la table. Ses champs ressemblent à un enregistrement distinct de type utilisateur/authentification, avec des données de compte et de contact ; il ne doit pas être interprété comme une entreprise FNBTP. La séparation SQL est également incohérente à cet endroit. Les autres enregistrements structurés, notamment ceux visibles dans le post du forum, correspondent à la structure annoncée par l'acteur. Les valeurs sensibles de ce tuple ne sont pas reproduites.
 
   Ces données permettent de cartographier des entreprises du secteur du BTP et d'identifier directement leurs responsables et moyens de contact. Elles peuvent être exploitées pour préparer des campagnes de spear phishing, des tentatives d'usurpation d'identité ou des scénarios d'ingénierie sociale ciblant des entreprises et leurs interlocuteurs.
 

@@ -2,15 +2,15 @@
 
 ## 1. Executive summary
 
-Across July-December 2024, AFRINTEL retains **75 canonical incidents across 28 countries**. Ransomware accounts for **57 records (76.0%)**, followed by Data Leak **9 (12.0%)**.
+Across July-December 2024, AFRINTEL retains **77 canonical incidents across 28 countries**. Ransomware accounts for **57 records (74.0%)**, followed by Data Leak **11 (14.3%)**.
 
 ### 1.1 H1 vs H2 2024 comparison
 
 | Indicator | H1 2024 | H2 2024 | Change |
 |---|---|---|---|
-| Total | 45 | 75 | +30 (+66.7%) |
+| Total | 46 | 76 | +30 (+65.2%) |
 | Ransomware | 34 | 57 | +23 (+67.6%) |
-| Data Leak | 4 | 9 | +5 (+125.0%) |
+| Data Leak | 5 | 11 | +6 (+120.0%) |
 | Access Sale | 1 | 4 | +3 (+300.0%) |
 | DDoS | 2 | 0 | -2 (-100.0%) |
 | Defacement | 0 | 1 | +1 (new) |
@@ -19,7 +19,7 @@ Across July-December 2024, AFRINTEL retains **75 canonical incidents across 28 c
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100.0%) |
 
-H2 contains **75 incidents versus 45 in H1**, an increase of 30 records. This is corpus visibility, not a claim of an equivalent increase in real compromises.
+H2 contains **77 incidents versus 46 in H1**, an increase of 31 records. This is corpus visibility, not a claim of an equivalent increase in real compromises.
 
 ## 2. Methodology
 
@@ -31,17 +31,17 @@ The same taxonomy, date policy, and evidence rules used in monthly reports apply
 |---|---|---|---|---|---|---|---|---|---|---|
 | July | 11 | 7 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | August | 16 | 14 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
-| September | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| September | 7 | 5 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | October | 11 | 8 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | November | 15 | 12 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| December | 16 | 11 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| December | 17 | 11 | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ## 4. Incident types
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 57 | 76.0% |
-| Data Leak | 9 | 12.0% |
+| Ransomware | 57 | 75.0% |
+| Data Leak | 11 | 14.3% |
 | Access Sale | 4 | 5.3% |
 | DDoS | 0 | 0.0% |
 | Defacement | 1 | 1.3% |
@@ -54,7 +54,7 @@ The same taxonomy, date policy, and evidence rules used in monthly reports apply
 pie showData
     title Incident types - H2 2024
     "Ransomware" : 57
-    "Data Leak" : 9
+    "Data Leak" : 11
     "Access Sale" : 4
     "Defacement" : 1
     "System Intrusion" : 4
@@ -65,8 +65,8 @@ pie showData
 | Country | Records | Share |
 |---|---|---|
 | South Africa | 18 | 24.0% |
-| Egypt | 7 | 9.3% |
-| Nigeria | 6 | 8.0% |
+| Egypt | 8 | 10.4% |
+| Nigeria | 7 | 9.2% |
 | Tunisia | 4 | 5.3% |
 | Kenya | 4 | 5.3% |
 | Algeria | 3 | 4.0% |
@@ -99,7 +99,7 @@ pie showData
 |---|---|---|
 | Southern Africa | 27 | 36.0% |
 | North Africa | 18 | 24.0% |
-| West Africa | 12 | 16.0% |
+| West Africa | 13 | 17.1% |
 | East Africa | 12 | 16.0% |
 | Indian Ocean | 4 | 5.3% |
 | Central Africa | 2 | 2.7% |
@@ -116,7 +116,7 @@ pie showData
 | Technology / IT | 6 | 8.0% |
 | Retail / E-commerce | 5 | 6.7% |
 | Telecommunications | 5 | 6.7% |
-| Education / University | 5 | 6.7% |
+| Education / University | 6 | 7.9% |
 | Transport / Logistics | 3 | 4.0% |
 | Aviation | 3 | 4.0% |
 | Agriculture / Agribusiness | 2 | 2.7% |
@@ -145,7 +145,7 @@ pie showData
 | Evidence | Records | Share |
 |---|---|---|
 | Claim - Unverified | 55 | 73.3% |
-| Claim - Data Sample Published | 12 | 16.0% |
+| Claim - Data Sample Published | 13 | 17.1% |
 | Confirmed | 5 | 6.7% |
 | Corroborated | 2 | 2.7% |
 | Attempted | 1 | 1.3% |
@@ -153,7 +153,7 @@ pie showData
 ## 10. CTI analysis
 
 - **Ransomware: 57**. Leak-site presence does not always prove encryption.
-- **Data Leak: 9**. Historical reposts are excluded from the year; samples remain distinct from aggregate claims.
+- **Data Leak: 11**. Historical reposts are excluded from the year; samples remain distinct from aggregate claims.
 - **System Intrusion: 4**. Used where intrusion/access is better supported than ransomware or data exposure.
 - **Access Sale: 4**, **DDoS: 0**, **Defacement: 1**, **Operational Fraud: 0**.
 
@@ -171,6 +171,6 @@ Phishing-resistant MFA, PAM, segmentation, immutable backups, centralized loggin
 
 ## 14. Conclusion
 
-H2 2024 retains **75 canonical incidents**.
+H2 2024 retains **77 canonical incidents**.
 
 **AFRINTEL** - TLP:CLEAR

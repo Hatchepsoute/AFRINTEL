@@ -273,6 +273,12 @@ This list records ransomware claims/publications, data leaks/system intrusions a
 - **Incident type:** Data Leak
 - **Victim description:** Manages the most populous province in South Africa (Johannesburg, Pretoria). 3.8 TB of data (3.6 million files) exfiltrated: health, education, housing, economic development.
 
+- **Related Kazu claim type:** Ransomware / extortion context. This is a linked secondary claim and is not counted as a separate canonical incident; the available material does not establish encryption or a distinct intrusion.
+
+**Related secondary claim — not counted as a new canonical incident:** A separate Kazu publication dated **16 May 2026** also names the Gauteng Provincial Government. It advertises **3,673,556 files**, approximately **3.8 TB**, and a **USD 25,000** price. The locally supplied archive contains **1,905 files** and approximately **1.905 GB**; its SHA-256 is `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`. The overlap in victim and claimed volume with the XP95 record is consistent with a duplicate claim, transfer/resale, or a separate exposure, but the available evidence does not distinguish these hypotheses. The Kazu claim is therefore retained as a linked, non-canonical claim and does not increase the incident total.
+
+This chronology is recorded as **two observed claims** — XP95 in March and Kazu in May — but **one canonical incident** pending evidence that the Kazu material represents a distinct compromise.
+
 ### 14 March 2026
 #### 🇪🇬 Egypt - Grid Fine Finishes
 - **Ransomware group:** Payload

@@ -4,15 +4,15 @@
 
 ## 1. Executive summary
 
-In December 2024, AFRINTEL retains **16 canonical cyber incidents across 12 countries**. The month is led by **Ransomware (11, 68.8%)** followed by **Data Leak (3, 18.8%)**. Leading countries are **Egypt (3)**, **Nigeria (2)**, **South Africa (2)**. Leading sectors are **Government / Administration (3)**, **Finance / Banking (2)**, **Telecommunications (2)**. Most frequent actor/group labels are `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` means missing attribution, not an actor.
+In December 2024, AFRINTEL retains **17 canonical cyber incidents across 12 countries**. The month is led by **Ransomware (11, 64.7%)** followed by **Data Leak (4, 23.5%)**. Leading countries are **Egypt (3)**, **Nigeria (3)**, **South Africa (2)**. Leading sectors are **Government / Administration (3)**, **Finance / Banking (2)**, **Telecommunications (2)**. Most frequent actor/group labels are `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` means missing attribution, not an actor.
 
 ### 1.1 Month-over-month study
 
 | Indicator | November 2024 | December 2024 | Change |
 |---|---|---|---|
-| Total | 15 | 16 | +1 (+6.7%) |
+| Total | 15 | 17 | +2 (+13.3%) |
 | Ransomware | 12 | 11 | -1 (-8.3%) |
-| Data Leak | 1 | 3 | +2 (+200.0%) |
+| Data Leak | 1 | 4 | +3 (+300.0%) |
 | Access Sale | 2 | 1 | -1 (-50.0%) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 1 | +1 (new) |
@@ -23,7 +23,7 @@ In December 2024, AFRINTEL retains **16 canonical cyber incidents across 12 coun
 
 ### 1.2 Comparative analysis
 
-Monthly volume **increases by 1 incident(s)**. Structural changes are: Data Leak 1->3 (+2), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
+Monthly volume **increases by 2 incident(s)**. Structural changes are: Data Leak 1->4 (+3), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
@@ -39,7 +39,7 @@ Monthly volume **increases by 1 incident(s)**. Structural changes are: Data Leak
 | Type | Records | Share |
 |---|---|---|
 | Ransomware | 11 | 68.8% |
-| Data Leak | 3 | 18.8% |
+| Data Leak | 4 | 23.5% |
 | Access Sale | 1 | 6.2% |
 | DDoS | 0 | 0.0% |
 | Defacement | 1 | 6.2% |
@@ -52,7 +52,7 @@ Monthly volume **increases by 1 incident(s)**. Structural changes are: Data Leak
 pie showData
     title Incident types - December 2024
     "Ransomware" : 11
-    "Data Leak" : 3
+    "Data Leak" : 4
     "Access Sale" : 1
     "Defacement" : 1
 ```
@@ -62,7 +62,7 @@ pie showData
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Egypt | 3 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nigeria | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Nigeria | 3 | 1 | 1 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | South Africa | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Sudan | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mauritania | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -347,15 +347,27 @@ timeline
 ----------------------------
 ```
 
+### 31 December 2024 - Nigeria: Africa Centre of Excellence for Sustainable Power and Energy Development (ACE-SPED)
+- **Actor / Group -** `libyan-test`
+- **Sector -** Higher Education / Energy Research
+- **Status -** Claim - Data Sample Published
+- **Incident type -** Data Leak
+- **Confidence -** Medium
+- **Impact -** Level 3
+- **Sample analysis -** The observed data contains structures associated with students, applications, and administrative users, including registration identifiers, institutional addresses, creation and update dates, activation indicators, password hashes, application tokens, and CMS-style accounts. Consistency between the ACE-SPED domain, institutional addresses, and programme identifiers plausibly links the sample to the organisation's digital environment. These elements support potential data exposure but do not officially confirm the incident, initial access, disclosure completeness, or current secret validity. No raw personal data is reproduced.
+
+----------------------------
+```
+
 ## 10. CTI analysis by type
 
 ### Ransomware - 11
 
 **11 record(s) (68.8%).** Leading countries: South Africa (2), Mauritania (1), Namibia (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-### Data Leak - 3
+### Data Leak - 4
 
-**3 record(s) (18.8%).** Leading countries: Sudan (1), Kenya (1), Egypt (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+**4 record(s) (23.5%).** Leading countries: Sudan (1), Kenya (1), Egypt (1), Nigeria (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
 ### Defacement - 1
 
@@ -465,7 +477,7 @@ timeline
 
 ## 14. Conclusion
 
-December 2024 contains **16 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+December 2024 contains **17 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
 
 👉🏾 [Canonical victims](./victims.md)
 

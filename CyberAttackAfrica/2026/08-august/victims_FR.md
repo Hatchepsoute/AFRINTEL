@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (29 fiches)
+# Liste des victimes africaines de cyberattaques en août 2026 (30 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -765,6 +765,36 @@ last_checked_at: 2026-08-19T08:10:32
 
   **Unknown :** AFRINTEL n'a pas reçu les tables Customer Contacts ou Support Tickets annoncées, ni l'archive d'environ 642 000 contacts. Les liens d'échantillon n'ont pas été suivis, aucun numéro de téléphone, nom, adresse, identifiant client ou ticket n'est reproduit, et aucune confirmation d'Afribaba n'est disponible. Le fichier fourni ne permet pas de confirmer le volume revendiqué, l'origine technique, la validité des données, la méthode d'accès, l'exposition de numéros de téléphone ou le prix proposé.
 
+
+#### 🇩🇿 Algérie - Ministère algérien de l'Intérieur (interieur.gov.dz)
+* **Date de l'incident :** Non établie
+* **Date de publication initiale :** 20 août 2026 à 06:04 (heure affichée dans la publication)
+* **Date de détection AFRINTEL :** 20 août 2026
+* **Acteur / Groupe :** TelephoneHooliganism
+* **Secteur :** Gouvernement / Administration publique
+* **Site web :** [interieur.gov.dz](https://www.interieur.gov.dz/)
+* **Volume revendiqué :** Environ 672 000 enregistrements
+* **Statut AFRINTEL :** Claim - Unverified
+* **Type d'incident :** Data Leak
+* **Niveau de confiance :** Low
+* **Niveau d'impact :** Level 4
+
+* **Description :**
+  Le ministère algérien de l'Intérieur est l'administration chargée notamment des services administratifs et de l'interaction avec les citoyens.
+
+* **Analyse :**
+  La publication attribuée à TelephoneHooliganism affirme proposer un jeu de données provenant de `interieur.gov.dz`, présenté comme couvrant trois ensembles : des contacts de citoyens ou de responsables publics, des demandes d'aide au logement et des tickets de support citoyen. La publication mentionne environ **672 000 enregistrements** et demande **1 100 USD**. Les champs décrits incluent des données d'identité et de contact, des informations de résidence et de logement, ainsi que des éléments relatifs aux demandes et tickets administratifs.
+
+  **Observed :** La capture établit l'existence d'une revendication datée du 20 août 2026 et son association déclarée avec le domaine du ministère. Le compte auteur apparaît banni et les liens d'échantillon sont visibles dans la publication.
+
+  **Unknown :** Aucun fichier source, échantillon ou extrait de données n'a été accessible à AFRINTEL. Le volume de 672 000 enregistrements, l'origine technique, l'authenticité des champs, le vecteur d'accès, l'exhaustivité et l'exposition effective de données personnelles ne sont pas vérifiés. Aucune confirmation publique du ministère ou d'une autorité algérienne n'est établie dans les éléments examinés. AFRINTEL n'a pas suivi les liens d'échantillon, les liens de téléchargement ou le contact Telegram.
+
+  Compte tenu de la victime revendiquée et des catégories de données annoncées, l'impact potentiel est **Level 4**. Cette évaluation ne constitue pas une confirmation de la compromission.
+
+* **Recommandations :**
+  * Vérifier les journaux d'accès, les exports et les comptes privilégiés des plateformes liées aux services citoyens et au logement autour du 20 août 2026.
+  * Contrôler les accès aux bases de contacts, aux tickets et aux applications administratives exposées.
+  * Prévenir les risques de phishing et d'usurpation liés aux données de contact et aux demandes administratives.
 
 #### 🇨🇲 Cameroun - CCA Bank
 * **Date de l'incident :** Non précisée

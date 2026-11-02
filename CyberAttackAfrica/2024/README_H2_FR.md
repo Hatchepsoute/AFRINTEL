@@ -2,15 +2,15 @@
 
 ## 1. Synthèse exécutive
 
-Sur juillet-décembre 2024, AFRINTEL retient **75 incidents canoniques dans 28 pays**. Le ransomware représente **57 fiches (76,0 %)**, devant Data Leak **9 (12,0 %)**. Les pays les plus représentés sont **Afrique du Sud (18)**, **Égypte (7)**, **Nigeria (6)**.
+Sur juillet-décembre 2024, AFRINTEL retient **77 incidents canoniques dans 28 pays**. Le ransomware représente **57 fiches (74,0 %)**, devant Data Leak **11 (14,3 %)**. Les pays les plus représentés sont **Afrique du Sud (18)**, **Égypte (8)**, **Nigeria (7)**.
 
 ### 1.1 Comparaison S1 vs S2 2024
 
 | Indicateur | S1 2024 | S2 2024 | Évolution |
 |---|---|---|---|
-| Total | 45 | 75 | +30 (+66,7 %) |
+| Total | 46 | 76 | +30 (+65,2 %) |
 | Ransomware | 34 | 57 | +23 (+67,6 %) |
-| Data Leak | 4 | 9 | +5 (+125,0 %) |
+| Data Leak | 5 | 11 | +6 (+120,0 %) |
 | Access Sale | 1 | 4 | +3 (+300,0 %) |
 | DDoS | 2 | 0 | -2 (-100,0 %) |
 | Defacement | 0 | 1 | +1 (nouveau) |
@@ -19,7 +19,7 @@ Sur juillet-décembre 2024, AFRINTEL retient **75 incidents canoniques dans 28 p
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100,0 %) |
 
-Le S2 contient **75 incidents contre 45 au S1**, soit +30. Cette hausse est dominée par le ransomware et reflète la visibilité du corpus ; elle n'est pas présentée comme une hausse équivalente des compromissions réelles.
+Le S2 contient **77 incidents contre 46 au S1**, soit +31. Cette hausse est dominée par le ransomware et reflète la visibilité du corpus ; elle n'est pas présentée comme une hausse équivalente des compromissions réelles.
 
 ## 2. Méthodologie
 
@@ -31,17 +31,17 @@ Même taxonomie, même politique de dates et mêmes règles de preuve que les ra
 |---|---|---|---|---|---|---|---|---|---|---|
 | Juillet | 11 | 7 | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Août | 16 | 14 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
-| Septembre | 6 | 5 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
+| Septembre | 7 | 5 | 1 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Octobre | 11 | 8 | 2 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Novembre | 15 | 12 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Décembre | 16 | 11 | 3 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Décembre | 17 | 11 | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
 
 ## 4. Types d'incident
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 57 | 76,0 % |
-| Data Leak | 9 | 12,0 % |
+| Ransomware | 57 | 75,0 % |
+| Data Leak | 11 | 14,3 % |
 | Access Sale | 4 | 5,3 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 1 | 1,3 % |
@@ -54,7 +54,7 @@ Même taxonomie, même politique de dates et mêmes règles de preuve que les ra
 pie showData
     title Types d'incident - S2 2024
     "Ransomware" : 57
-    "Data Leak" : 9
+    "Data Leak" : 11
     "Access Sale" : 4
     "Defacement" : 1
     "System Intrusion" : 4
@@ -65,8 +65,8 @@ pie showData
 | Pays | Fiches | Part |
 |---|---|---|
 | Afrique du Sud | 18 | 24,0 % |
-| Égypte | 7 | 9,3 % |
-| Nigeria | 6 | 8,0 % |
+| Égypte | 8 | 10,4 % |
+| Nigeria | 7 | 9,2 % |
 | Tunisie | 4 | 5,3 % |
 | Kenya | 4 | 5,3 % |
 | Algérie | 3 | 4,0 % |
@@ -99,7 +99,7 @@ pie showData
 |---|---|---|
 | Afrique australe | 27 | 36,0 % |
 | Afrique du Nord | 18 | 24,0 % |
-| Afrique de l'Ouest | 12 | 16,0 % |
+| Afrique de l'Ouest | 13 | 17,1 % |
 | Afrique de l'Est | 12 | 16,0 % |
 | Océan Indien | 4 | 5,3 % |
 | Afrique centrale | 2 | 2,7 % |
@@ -116,7 +116,7 @@ pie showData
 | Technologie / IT | 6 | 8,0 % |
 | Commerce / E-commerce | 5 | 6,7 % |
 | Télécommunications | 5 | 6,7 % |
-| Éducation / Université | 5 | 6,7 % |
+| Éducation / Université | 6 | 7,9 % |
 | Transport / Logistique | 3 | 4,0 % |
 | Aviation | 3 | 4,0 % |
 | Agriculture / Agro-industrie | 2 | 2,7 % |
@@ -145,7 +145,7 @@ pie showData
 | Preuve | Fiches | Part |
 |---|---|---|
 | Claim - Unverified | 55 | 73,3 % |
-| Claim - Data Sample Published | 12 | 16,0 % |
+| Claim - Data Sample Published | 13 | 17,1 % |
 | Confirmed | 5 | 6,7 % |
 | Corroborated | 2 | 2,7 % |
 | Attempted | 1 | 1,3 % |
@@ -153,7 +153,7 @@ pie showData
 ## 10. Analyse CTI
 
 - **Ransomware : 57**. Une présence sur leak site ne prouve pas toujours le chiffrement.
-- **Data Leak : 9**. Les republications historiques sont sorties des statistiques, les échantillons restant séparés des volumes revendiqués.
+- **Data Leak : 11**. Les republications historiques sont sorties des statistiques, les échantillons restant séparés des volumes revendiqués.
 - **System Intrusion : 4**. Utilisé lorsque l'accès/intrusion est mieux soutenu qu'un ransomware ou une fuite.
 - **Access Sale : 4**, **DDoS : 0**, **Defacement : 1**, **Operational Fraud : 0**.
 
@@ -174,6 +174,6 @@ MFA résistante au phishing, PAM, segmentation, sauvegardes immuables, centralis
 
 ## 14. Conclusion
 
-Le S2 2024 retient **75 incidents canoniques**.
+Le S2 2024 retient **77 incidents canoniques**.
 
 **AFRINTEL** - TLP:CLEAR

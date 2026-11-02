@@ -54,6 +54,20 @@
 - **Incident type:** Ransomware
 - **Victim Description:** SEOCOM is a Moroccan agency providing SEO (Search Engine Optimization), advertising campaign management (SEA), and web development services for local and international companies.
 
+### 13 January 2025 - claimed leak date
+#### 🇳🇬 Nigeria - Living Seed (livingseed.org)
+- **Actor / Group:** Counter
+- **Sector:** Religious Organization / Association
+- **Website:** https://livingseed.org
+- **Incident date:** 13 January 2025 - leak date stated in the publication, not independently verified
+- **Initial publication date:** 5 February 2025
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim Description:** Living Seed is a religious organization operating mainly in Nigeria. It provides spiritual teaching, discipleship training and event coordination for a member community through church activities and online platforms.
+- **Analysis:** The observed publication attributes to Living Seed a leak of approximately 1 million records, presented as a CSV file of about 346 MB. The visible sample refers to identity and profile data, contact details, residence information, religious affiliation, occupation, programme and registration information, workshop participation records, and names and phone numbers of relatives. The publication also mentions encrypted passwords and secret questions and answers. The analysis is limited to information readable in the supplied capture; the original file was not accessible, so the record count, corpus completeness, authentication-data validity and access vector remain unverified. The capture also does not independently confirm attribution to Living Seed or the actor's technical identity. AFRINTEL does not reproduce personal data, authentication data or participant information.
+
 ### 14 January 2025
 #### 🇳🇬 Nigeria - INTELS Nigeria Limited (intelservice.com)
 - **Ransomware Group:** ransomhub

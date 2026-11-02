@@ -6,17 +6,17 @@
 
 ## 1. Executive summary
 
-In January 2025, AFRINTEL documents **19 cyber incidents** affecting organizations and digital services across **8 African countries**.
+In January 2025, AFRINTEL documents **20 cyber incidents** affecting organizations and digital services across **8 African countries**.
 
-The landscape is dominated by **Ransomware with 16 records (84.2%)**, followed by **Data Leak with 2 (10.5%)**. Other observed types are Account Takeover 1.
+The landscape is dominated by **Ransomware with 16 records (80.0%)**, followed by **Data Leak with 3 (15.0%)**. Other observed types are Account Takeover 1.
 
-Geographic concentration is significant: **Kenya (4)**, **Egypt (4)**, **Nigeria (3)** together account for **11 records, or 57.9% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
+Geographic concentration is significant: **Kenya (4)**, **Egypt (4)**, **Nigeria (4)** together account for **12 records, or 60.0% of the month**. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.
 
 At sector level, the most represented categories are **Education / University (6)**, **Government / Administration (4)**, **Healthcare / Medical (2)**. The most frequent actor labels are `funksec` (6), `GDLockerSec` (3), `ransomhub` (2). `Unknown`, when present, denotes missing attribution rather than a threat actor.
 
-Evidence maturity remains variable: **17 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
+Evidence maturity remains variable: **18 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with the final corrected December 2024 baseline, monthly volume **increases by 3 records, from 16 to 19 (+18.8%)**. Ransomware rises from 11 to 16 (+5), while Data Leak falls from 3 to 2, Access Sale from 1 to 0, and Defacement from 1 to 0. Account Takeover appears with 1 record in January.
+Compared with the final corrected December 2024 baseline, monthly volume **increases by 4 records, from 16 to 20 (+25.0%)**. Ransomware rises from 11 to 16 (+5), while Data Leak remains at 3, Access Sale falls from 1 to 0, and Defacement from 1 to 0. Account Takeover appears with 1 record in January.
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,9 +24,9 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 
 | Indicator | Final corrected December 2024 | January 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 16 | 19 | **+3 (+18.8%)** |
+| Total incidents | 16 | 20 | **+4 (+25.0%)** |
 | Ransomware | 11 | 16 | **+5 (+45.5%)** |
-| Data Leak | 3 | 2 | **-1 (-33.3%)** |
+| Data Leak | 3 | 3 | **Stable** |
 | Access Sale | 1 | 0 | **-1 (-100.0%)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100.0%)** |
@@ -54,7 +54,7 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 
 | Indicator | Value |
 |---|---:|
-| Documented incidents | **19** |
+| Documented incidents | **20** |
 | Countries represented | **8** |
 | Regions represented | **4** |
 | Leading country | **Kenya (4)** |
@@ -63,8 +63,8 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 
 | Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 16 | 84.2% |
-| Data Leak | 2 | 10.5% |
+| Ransomware | 16 | 80.0% |
+| Data Leak | 3 | 15.0% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
@@ -72,13 +72,13 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - January 2025
     "Ransomware" : 16
-    "Data Leak" : 2
+    "Data Leak" : 3
     "Account Takeover" : 1
 ```
 
@@ -88,13 +88,13 @@ pie showData
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Kenya | **4** | 2 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Egypt | **4** | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Nigeria | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Nigeria | **4** | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | South Africa | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Morocco | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Algeria | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Uganda | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zambia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **19** | **16** | **2** | **0** | **0** | **0** | **1** | **0** | **0** |
+| **Total** | **20** | **16** | **3** | **0** | **0** | **0** | **1** | **0** | **0** |
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
@@ -105,8 +105,8 @@ pie showData
 | North Africa | 8 | 42.1% |
 | East Africa | 5 | 26.3% |
 | Southern Africa | 3 | 15.8% |
-| West Africa | 3 | 15.8% |
-| **Total** | **19** | **100%** |
+| West Africa | 4 | 20.0% |
+| **Total** | **20** | **100%** |
 
 The leading region is **North Africa with 8 records (42.1%)**.
 
@@ -123,7 +123,8 @@ The leading region is **North Africa with 8 records (42.1%)**.
 | Transport / Logistics | 1 | 5.3% | █ |
 | Hospitality / Tourism | 1 | 5.3% | █ |
 | Professional / Business Services | 1 | 5.3% | █ |
-| **Total** | **19** | **100%** | |
+| Religious Organization / Association | 1 | 5.0% | █ |
+| **Total** | **20** | **100%** | |
 
 ## 7. Actors / groups
 
@@ -139,15 +140,16 @@ The leading region is **North Africa with 8 records (42.1%)**.
 | Unknown | 2 | ██ |
 | apt73 | 1 | █ |
 | SevenZeroDay404 | 1 | █ |
+| Counter | 1 | █ |
 
 ## 8. Evidence maturity
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
 | Claim - Unverified | 8 | 42.1% |
-| Claim - Data Sample Published | 9 | 47.4% |
+| Claim - Data Sample Published | 10 | 50.0% |
 | Victim/Government/Authority Confirmed | 2 | 10.5% |
-| **Total** | **19** | **100%** |
+| **Total** | **20** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 
@@ -160,6 +162,7 @@ timeline
     09 January 2025 : General Authority for Government Services
     09 January 2025 : Pick n Pay (pnp.co.za)
     11 January 2025 : SEOCOM Marrakech (seocommarrakech.com)
+    13 January 2025 : Living Seed (livingseed.org)
     14 January 2025 : INTELS Nigeria Limited (intelservice.com)
     14 January 2025 : Sharm Reef Hotel
     15 January 2025 : Misr Technology Services (MTS / mts.gov.eg)
@@ -185,7 +188,7 @@ timeline
 
 ### Data Leak
 
-**2 records** are classified as Data Leak. Leading countries: South Africa (1), Kenya (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
+**3 records** are classified as Data Leak. Leading countries: South Africa (1), Kenya (1), Nigeria (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
 ### Account Takeover
 
@@ -205,8 +208,8 @@ timeline
 
 ## 12. Key findings and intelligence gaps
 
-- **Geographic concentration:** Kenya accounts for 4 records (21.1%), followed by Egypt (4) and Nigeria (3).
-- **Threat structure:** Ransomware is the leading type with 16 records, followed by Data Leak (2).
+- **Geographic concentration:** Kenya accounts for 4 records (20.0%), followed by Egypt (4) and Nigeria (4).
+- **Threat structure:** Ransomware is the leading type with 16 records, followed by Data Leak (3).
 - **Sectors:** Education / University (6) and Government / Administration (4) have the highest visibility.
 - **Actors:** the most frequent labels are funksec (6), GDLockerSec (3), and ransomhub (2).
 - **Evidence:** 17 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.

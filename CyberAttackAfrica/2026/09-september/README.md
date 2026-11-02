@@ -52,6 +52,20 @@ The September signal is dominated by ransomware-related claims, but most publica
 | Data Fully Published | 1 / 29 (3.4%) | AFRICA-TECH: 10 released files examined |
 | South Africa + Egypt | 15 / 29 (51.7%) | Monitoring concentration, not an attack rate |
 
+## Comparison with the August 2026 corpus
+
+This comparison uses the documented monthly corpora: **30 records in August** versus **29 September-dated publications**. The September corpus also contains 12 earlier incidents integrated retrospectively; they are excluded from this monthly comparison.
+
+| Indicator | August 2026 | September 2026 | Observed change |
+|---|---:|---:|---:|
+| Monthly records / publications | 30 | 29 | -1 (-3.3%) |
+| Ransomware | 17 | 20 | +3 (+17.6%) |
+| Data Leak | 12 | 7 | -5 (-41.7%) |
+| Access Sale | 1 | 0 | -1 (-100%) |
+| System Intrusion | 0 | 2 | +2 (newly observed category) |
+
+This comparison measures AFRINTEL collection corpora, not the actual number of compromises. Composition differences should be interpreted cautiously because five earlier records were already integrated into the August corpus and twelve earlier incidents are integrated into the full September corpus.
+
 ### Five strategic conclusions
 
 1. Disclosure-based extortion dominates the visible signal: 20 of 29 September publications are classified as Ransomware, although encryption generally cannot be confirmed.
@@ -172,57 +186,242 @@ After cautious normalisation of sector labels in the complete corpus, Health and
 
 ## 4. Priority CTI cases
 
-The priority selection is based on data sensitivity, analytical depth and defensive value. Each card separates observation, claim, assumptions and unknowns.
+The priority selection is based on data sensitivity, analytical depth and defensive value. Each case separates observation, claim and unknowns.
 
-| Priority case | Observed or reported elements | Still unknown |
+### 4.1 Angola - SEPE / digital public services
+
+The card documents 1,189 local files totalling 544,921,521 bytes, including 111 JSON files with structures related to identity, residence, contact details, documents and administrative processes. The publication claims 364,841 files, 110,021 users, 179 GB, a USD 100,000 demand and a 27 September deadline. None of these aggregates is validated by the local sample. The access vector, actual scope, encryption, payment, victim confirmation and post-22 September status remain unknown.
+
+### 4.2 Morocco - Centre Atlantique Formation
+
+The announced archive contains approximately 1,155 folders and 3,465 objects, including JSON records and PDF certificates. The internal consistency between the JSON and certificates supports a documentary link with training data. The claimed 27% release and USD 300 offer remain actor claims. Unique people, source system, complete extraction, access method and encryption remain unknown.
+
+### 4.3 Mali - AFRICA-TECH
+
+Ten published files were supplied and reviewed, totalling 2,413,673 bytes: six PDFs over 39 pages, two Word documents, one text file and one unusable temporary file. The corpus includes financial, travel, insurance, complaint and correspondence material. Claims of document encryption and backup destruction are not established by the reviewed files. The access vector, full scope, payment and independent authentication remain unknown.
+
+### 4.4 South Africa - BLACKLOCKS: Apollo 21 and ARCA Unlimited
+
+Apollo 21 has 14 reviewed images, including commercial documents, sales tables and three identity-document images. ARCA Unlimited has 18 images, including plans, elevations, project files, costs and an identity document. The claimed 400 GB and “400G” volumes were not measured and must not be treated as two complete 400 GB datasets. The technical origin, compromised environment, prior publication permissions, encryption, operational effect and victim confirmation remain unknown.
+
+### 4.5 Nigeria - MDCN and FCT-IRS
+
+The MDCN post claims 65,580 users; the supplied sample contains 50 textual rows and 24 field labels covering practitioner identity and registration. No unique-person count or MDCN intrusion is established. The FCT-IRS PDF contains 2,541 email-pattern matches, 2,540 distinct textual values and 61 Nigerian phone-pattern matches. These are technical matches, not affected-person counts, and do not establish extraction from tax-administration systems.
+
+### 4.6 Egypt - Madinaty and Badr University
+
+The Madinaty post claims owner and resident data and refers to 0.5% of a total. The visible extract contains identities, roles and residential identifiers, but the source organisation is not identified. A Badr University capture claims a complete extraction, with partially masked email-like identifiers and password-like strings. No valid credential, compromised account or total record count is demonstrated.
+
+### 4.7 Morocco - Pharma 5
+
+Four local images were documented, but two duplicate one publication and two duplicate the same quality-specification page. Only one distinct page, identified as page 1/5 and related to salicylamide, is readable. It supports a documentary link with Pharma 5 but does not establish possession of the other pages or the claimed finance, quality, supply-chain and personnel data.
+
+### 4.8 South Africa - First National Bank
+
+Five JPEGs show apparent business-account statements for periods in 2023 and 2025. Their appearance is consistent with FNB documents, but nothing establishes that they came from the bank's infrastructure. A customer, third party or another repository may be the source. The post does not confirm account access or financial loss.
+
+### 4.9 Tanzania - Air Tanzania
+
+The available record describes 114 files totalling 676,972,266 bytes: 112 valid images, including 101 MPO files with three views and 11 single-view JPEGs, representing 314 integrated views, plus two files with a different technical nature. Structural consistency does not establish acquisition from Air Tanzania's infrastructure or the number of affected people.
+
+### 4.10 The 18 complementary monitoring cards
+
+The 18 complementary cards include 12 `Claim - Unverified` records, two local-sample or local-corpus records, two acknowledged indirect exposures and two cases with public confirmation of access or an incident. They cover finance and insurance, strategic and transport services, professional and industrial services, tourism and distribution. Their cards generally provide neither incident-response evidence nor a verified access point or stolen quantity. The appropriate CTI action is qualification and monitoring, not adding new confirmed compromises.
+
+## 5. Operational lessons and attack hypotheses
+
+The presence of sensitive documents identifies surfaces to verify; the corpus does not reconstruct a single technical kill chain.
+
+1. **Identifying-data appropriation:** identity cards, birth data, phones, practitioner records and administrative documents can support impersonation, phishing and document fraud.
+2. **Financial and BEC fraud:** statements, supplier details and commercial documents can support payment redirection or fraudulent bank-detail changes.
+3. **Document supply-chain risk:** quality files, plans, contracts and reports can be used to target customers and partners; their presence does not prove that those third parties were compromised.
+4. **Provider pivot:** historical MIP Holdings and Rectron cases illustrate third-party risk, but this mechanism must not be projected onto September claims without evidence.
+
+Defensive ATT&CK hypotheses include Valid Accounts (`T1078`), Data from Information Repositories (`T1213`), Data from Cloud Storage (`T1530`), Exfiltration to Cloud Storage (`T1567.002`), Data Staged (`T1074`) and Data Encrypted for Impact (`T1486`). These are investigation categories, not actor attributions. `T1486` must not be inferred from the word “ransomware” alone.
+
+Potential post-disclosure fraud scenarios include impersonation of an authority, diversion of commercial relationships and falsification of certificates, identity documents or plans. These are defensive hypotheses only.
+
+## 6. SOC / CERT / CSIRT hunting plan
+
+| Priority | Hunt | Data to correlate | Trigger and validation |
+|---|---|---|---|
+| H01 P1 | Unusual document export | SaaS, DLP, CRM/ERP, API and proxy logs | Export volume above the user's baseline; exclude approved migrations and backups |
+| H02 P1 | Privileged account and repository | IAM, Entra/IdP, VPN, PAM and database logs | New location or client followed by mass reading; verify team changes and testing |
+| H03 P1 | Sensitive documents made public | SharePoint/Drive/S3 audit, CASB and ACL review | New anonymous link or public permission; validate business approval |
+| H04 P1 | Abnormal encryption | EDR, Windows events, canaries and backups | Mass renames/writes and copy-destruction artefacts; exclude maintenance |
+| H05 P2 | Post-exposure fraud | Mail security, DMARC, SIEM and treasury tickets | Domain impersonation plus document or IBAN-change request; validate out of band |
+| H06 P2 | Certificate or QR abuse | Validation audit, WAF, API and anti-bot logs | Identifier enumeration or homogeneous response spike; exclude official campaigns |
+
+Two generic detections should be calibrated locally: a 30-day baseline for exports by user, application and operation; and alerts for anonymous or global sharing followed by a download spike. These are behavioural detections, not signatures extracted from the corpus.
+
+### 6.1 Claim-response decision flow
+
+1. **Triage:** preserve the capture, internal monitoring URL, displayed time and authorised artefact hash.
+2. **Linkage:** assess schema, system names and metadata against authorised internal data.
+3. **Origin:** review logs, data ownership and access controls.
+4. **Scope:** deduplicate lawfully and establish affected data, duration and perimeter.
+5. **Decision:** determine containment or notification using legal criteria, evidence and incident-command validation.
+
+## 7. Risk-reduction roadmap
+
+### Immediate actions, 0 to 72 hours
+
+- Classify assets containing identity documents, administrative records, statements, certificates, payment data and sensitive technical documents.
+- Preserve access and export logs before retention periods expire.
+- Audit privileged accounts, OAuth applications, API tokens and exposed provider access.
+- Strengthen out-of-band validation for bank-detail changes and support authentication.
+- Check offline or immutable backups and test restoration; do not infer backup destruction from a criminal README.
+
+### Within seven days
+
+- Review anonymous sharing, repository permissions and business exports.
+- Run targeted awareness for payment fraud, fake authorities, certificates and identity requests.
+- Review processing involving minors, residents and identity-document holders.
+- Test authorised document-verification APIs against enumeration and extraction.
+- Document crisis communication and regulatory-notification thresholds.
+
+### Within thirty days
+
+- Monitor republication or recycling patterns without downloading personal data.
+- Deploy correlated IAM, storage and DLP detections with documented false positives.
+- Update the inventory of third parties handling identity data, certificates, customer documents and plans.
+- Exercise a crisis scenario based on an unverified claim to avoid premature attribution and notification.
+
+### 7.1 Monitoring criteria for October-November 2026
+
+| Change indicator | CTI action |
+|---|---|
+| Organisation publicly confirms an incident | Reassess status, chronology, scope and uncertainty |
+| Documented batch becomes available to an authorised team | Review read-only and publish minimised metrics only |
+| Claimed remaining data is released | Compare hashes and structures safely; do not pay for access |
+| New deadline or publication by N0n / Kazu | Update the extortion lifecycle and last-check date |
+| Phishing targets named organisations | Correlate fraud artefacts and publish verified IOCs only |
+| New third-party regulatory notices | Separate provider, client and related-entity incidents |
+
+No verified technical IOC, C2 address or malware hash is supplied. Domains of named organisations are not adversary infrastructure.
+
+## 8. Earlier incidents: context, not September
+
+Twelve records describe events from January to August 2026 and were integrated retrospectively. They are excluded from all monthly charts. This retrospective cohort contains eight `Victim Confirmed`, one `Government Confirmed`, two `Corroborated` and one `Claim - Unverified` record.
+
+Land Bank and Ahmed Al-Kadi Private Hospital illustrate confirmed ransomware impact; SEEG documents disruption to an energy and water operator; CHPC/Lengau documents an incident affecting a high-performance-computing environment. Standard Bank, MIP Holdings and Rectron illustrate documentary exposure and third-party risk, not necessarily compromise of a banking core.
+
+The MINEFOP and Kenyan presidential-site defacement cases illustrate integrity and reputational risk. Constantia Pharmacy shows the value of external discovery followed by defensive coordination. TikoHUB is an uncorroborated access-sale claim and does not confirm stolen credentials.
+
+### 8.1 Inter-month follow-up: Libyan Ministry of Education
+
+A note follows a 10 September EveN47 publication linked to an earlier June EvaN47 case. The claimed 287 GB, 800 GB and 300 GB volumes are separate assertions and must not be added. A September sample of 3,900 files totalling 900,976,395 bytes was reviewed read-only and included passports, national identifiers, student photographs and certificates. SHA-256 checks identified 169 duplicate groups and 213 excess files. This comparison does not prove initial access or the claimed total volumes. It is an inter-month note, not a 42nd record, and is excluded from every monthly total.
+
+## 9. Intelligence prioritisation
+
+| Priority | Cases / issue | Rationale | Expected deliverable |
+|---|---|---|---|
+| P1 | SEPE, Centre Atlantique, FCT-IRS, MDCN | Identity and administrative data; fraud risk | Provenance, legal perimeter and affected population |
+| P1 | AFRICA-TECH | Published batch reviewed in the collection | Extortion lifecycle and minimised content record |
+| P1 | Apollo 21, ARCA, Pharma 5 | Commercial, plans, quality and partner data | BEC, document-sharing and third-party risk analysis |
+| P2 | FNB, ATCL, BUC, Madinaty | Documentary or visual link without proven target intrusion | Source-origin validation and confirmation status |
+| P2 | 12 unconfirmed claims and two indirect exposures | Ongoing publications without conclusions on data disposition | Update monitoring without alarmist redistribution |
+
+### 9.1 Minimum requirements for qualification changes
+
+1. Preserve the original capture, displayed timestamp, collection date and lawful cryptographic hash.
+2. Separate what links an artefact to an organisation from what proves access or extraction from a system.
+3. Obtain internal data-owner validation or an official notification without testing exposed credentials or contacting criminal actors.
+4. Produce deduplicated counts of objects and people, separating claimed size, supplied size, document count and population.
+5. Revise statuses as new observations arrive. Strong documentary resemblance does not automatically become a confirmed incident.
+
+## 10. Analytical conclusion
+
+The September 2026 corpus contains 29 publications dated in the month and 12 earlier incidents integrated into the tracking corpus, for 41 records overall. It reflects AFRINTEL monitoring of ransomware sites, leak sites and underground forums. It is neither a count of intrusions that occurred in September nor an exhaustive measure of African cybercrime.
+
+The publications are mostly ransomware claims. Some contain visible samples or released data, while a few have public confirmation of access or an incident. These observation levels remain separate from exfiltration completeness, initial vector, encryption, payment and operational effect.
+
+The collection does not establish a common technical campaign, a dominant access vector or a real increase compared with August. It does highlight recurring risks involving identity, administrative documents, financial data, document repositories and supplier relationships.
+
+For affected organisations, an underground publication is a signal for verification and preparation. CTI follow-up should focus on listing changes, samples, deadlines, releases, public confirmations and republications. Payments, negotiations, removals, resales and transfers remain unknown without specific public information.
+
+## Appendix A - Register of the 29 September publications
+
+| Date | Country / target | Displayed account or group | Type | Status |
+|---|---|---|---|---|
+| 01/09 | Egypt - HCCD; Mecca High Feed Factory; Seashell Hospital | krybit | Ransomware | S0 |
+| 03/09 | Nigeria - MDCN | cattier | Data Leak | S1 |
+| 04/09 | Egypt - Madinaty owners/residents | sainttrojan | Data Leak | S1 |
+| 06/09 | Morocco - Centre Atlantique Formation | xNov | Data Leak | S1 |
+| 07/09 | South Africa - Hollard; Egypt - Nile Projects Trading; South Africa - VSB Attorneys | TheGentlemen / lockbit5 | Ransomware | S0 |
+| 09/09 | Egypt - Badr University; South Africa - RelyComply | elmo7areb / direwolf | Data Leak / System Intrusion | S1 / Victim Confirmed |
+| 12/09 | Egypt - EAC; Morocco - La Sultana; Angola - SEPE | krybit / Kazu | Ransomware | S0 / S1 |
+| 16/09 | Namibia - Namibian Defence Force | ransomhouse | System Intrusion | Government Confirmed |
+| 18/09 | Tunisia - PayPal support operations | N0n | Ransomware | S0 |
+| 19/09 | South Africa - Apollo 21 | BLACKLOCKS | Ransomware | S1 |
+| 21/09 | Nigeria - FCT-IRS; Angola - Grupolider; Ethiopia - Siinqee Bank | individual / TheGentlemen / lockbit5 | Data Leak / Ransomware | S1 / S0 |
+| 22/09 | Mali - AFRICA-TECH; South Africa - ARCA Unlimited | N0n / BLACKLOCKS | Ransomware | S2 / S1 |
+| 24/09 | Tanzania - Air Tanzania; Uganda - Armada | krybit / Spirals | Ransomware | S1 / S0 |
+| 25/09 | Kenya - Majani; Morocco - Pharma 5 | Vexy Ransomware / INC Ransom | Ransomware | S0 / S1 |
+| 26/09 | South Africa - Guardrisk | TheGentlemen | Ransomware | S0 |
+| 27/09 | South Africa - FNB | Blacknet00 | Ransomware | S1 |
+| 29/09 | South Africa - BCX | incransom | Ransomware | S0 |
+
+S0 means `Claim - Unverified`, S1 means `Claim - Data Sample Published` and S2 means `Data Fully Published`. The publication date is not an intrusion date.
+
+## Appendix B - The 12 earlier incidents
+
+| Source date | Target / country | Type | Status |
+|---|---|---|---|
+| 03/01 | South Africa - Constantia Pharmacy | Ransomware | Corroborated |
+| 12/01 | South Africa - Land Bank | Ransomware | Victim Confirmed |
+| 23/03 | South Africa - Standard Bank | Data Leak | Victim Confirmed |
+| 18/04 | South Africa - Ahmed Al-Kadi Private Hospital | Ransomware | Victim Confirmed |
+| 28/04 | Kenya - TikoHUB | Access Sale | Claim - Unverified |
+| Late May | South Africa - CHPC / Lengau | System Intrusion | Victim Confirmed |
+| June | South Africa - MIP Holdings | Data Leak | Victim Confirmed |
+| 14-15/06 | Gabon - SEEG | System Intrusion | Victim Confirmed |
+| 12/07 | Cameroon - MINEFOP | Defacement | Corroborated |
+| 15/07 | South Africa - Rectron | Data Leak | Victim Confirmed |
+| 18/07 | Kenya - president.go.ke | Defacement | Government Confirmed |
+| 26/08 | South Africa - Cartrack | Ransomware | Victim Confirmed |
+
+These dates and statuses refer to January-August events and are excluded from September denominators.
+
+## Appendix C - Documented samples and limits
+
+| Case | Observed material | What it does not prove |
 |---|---|---|
-| MDCN - Nigeria | Local 50-row, 24-column CSV with checked structure | Technical provenance, unique persons, intrusion and full volume |
-| Centre Atlantique Formation - Morocco | Training records and documents described in the sample | Completeness, number of people and source system |
-| SEPE - Angola | 1,189 local files, including 111 JSON files, reviewed in the card | Actual exfiltrated volume, encryption and access vector |
-| AFRICA-TECH - Mali | Published file set examined in the card | Completeness, backup destruction and victim confirmation |
-| FNB - South Africa | Five images of apparent business-account statements | Banking provenance, account access and full business authenticity |
-| VSB Attorneys - South Africa | Incomplete multipart RAR5 fragment tested read-only | Content, completeness and actual disclosure |
-| Air Tanzania - Tanzania | Files and images described in the available sample | Acquisition source, unique persons and full scope |
+| MDCN | Local 50-row CSV, 24 fields | Unique people, intrusion or source database |
+| Madinaty | Visible Arabic extract; 0.5% claimed | Data holder, full authenticity or addresses |
+| Centre Atlantique | 1,155 folders, 3,465 objects, about 4 GB extracted | Unique people, complete database or exact 27% |
+| BUC | Capture with masked logins and strings | Valid password or account compromise |
+| SEPE | 1,189 files, 111 JSON, 544,921,521 bytes | 179 GB, 110,021 people or encryption |
+| Apollo 21 | 14 images, 12 samples | 400 GB, source system or encryption |
+| FCT-IRS | 314-page PDF with email-pattern matches | Unique people, full breach or system extraction |
+| ARCA Unlimited | 18 images, 17 samples | “400G”, client intrusion or encryption |
+| VSB Attorneys | Failed test of a 1,082,440,568-byte RAR5 fragment | Content, completeness or actual disclosure |
+| AFRICA-TECH | 10 published files and 39 PDF pages | Backup destruction or exfiltration volume |
+| Pharma 5 | Four images, one distinct readable page | 50 GB or the full five-page document |
+| FNB | Five apparent statement JPEGs | Banking provenance or account access |
+| Air Tanzania | 114 files, 112 valid images, 314 views | Acquisition source or unique people |
 
-Selected measurements illustrate the limits of claimed volumes. The SEPE sample contains 1,189 local files, including 111 JSON files, totalling 544,921,521 bytes, while the publication claims 364,841 files, 110,021 users and 179 GB. The FCT-IRS PDF contains 2,541 email-pattern matches, 2,540 distinct textual values and 61 Nigerian phone-pattern matches. These are technical matches, not affected-person counts. Apollo 21 and ARCA references to 400 GB and 400G remain actor claims. The VSB directory contains an incomplete 1,082,440,568-byte RAR5 fragment and an empty companion file; the archive test failed, so no disclosure is treated as analysed.
+Sensitive categories include identity and official documents, certificates, banking and payment material, project plans, supplier data and quality files. A category visible in a sample must not be generalised to the full dataset.
 
-The MDCN CSV contains 50 data rows and 24 columns, with constant row width and no fully duplicated row. Individual values were not copied into the repository. The structure supports analysis of the supplied sample, not validation of the claimed 65,580 users or a technical compromise of MDCN.
+## Appendix D - Definitions, calculations and sources
 
-For each case, publication, sample and compromise are separate levels. Amounts, sizes and volumes attributed to an actor remain claims when not independently corroborated. References to third parties visible in a document do not automatically create a separate incident.
+| Term | Working definition |
+|---|---|
+| Publication | Observed message or listing with a publication date; not an intrusion date |
+| Named victim / target | Organisation presented as affected; the term does not imply confirmation |
+| Reviewed sample | Documented visible or local subset; consistency does not prove initial access |
+| Double extortion | Encryption plus disclosure threat; a claim does not prove both components |
+| Documentary corroboration | Convergence of fields, brands and structures with a target; distinct from technical attribution |
+| Confidence | Qualitative assessment in the card, sometimes limited to a specific object |
+| Impact | Editorial category; brief cards do not all have comparable scores |
+| OSINT | Intelligence from accessible or lawfully collected sources as documented |
 
-## 5. Defensive implications
+Calculations: 41 unique cards; 29 September publications and 12 earlier records. Ransomware is 20/29 = 69.0%, Data Leak 7/29 = 24.1% and System Intrusion 2/29 = 6.9%. South Africa plus Egypt is (8+7)/29 = 51.7%; Finance / Insurance / Compliance is 7/29 = 24.1%.
 
-- Protect identity, administrative, health and payment data against phishing, impersonation and fraud.
-- Monitor unusual exports, archive creation, privileged access, VPN/RDP activity, role changes and external sharing.
-- Verify MFA, segmentation, administrative logging, isolated backups and tested restoration.
-- Treat leak, access-sale, ransomware and defacement signals as separate event types.
-- Preserve captures, timestamps, hashes and manifests outside the repository without testing credentials or following criminal links.
+The FR and EN victim files are two language versions of the same AFRINTEL corpus, not independent corroborating sources. The corpus is based on monitoring ransomware sites, leak sites and underground forums. External captures, samples and manifests are not included in these files. Institutional and media links are contextual references from the cards and were not all re-verified for this report.
 
-These are defensive hypotheses, not technique attributions to the observed actors. Relevant ATT&CK hypotheses include Valid Accounts (`T1078`), Data from Information Repositories (`T1213`), Archiving Collected Data (`T1560`), Exfiltration to external infrastructure (`T1041`) and Data Encrypted for Impact (`T1486`, confirmation required).
+Editorial review must keep incident, publication and discovery dates separate; distinguish listings, samples, releases and absence of release; merge only republications of the same event; document confirmation sources and dates; keep payment, negotiation and resale as `unknown` without specific public evidence; and publish only minimised aggregated data.
 
-## 6. Conclusion and quality checks
-
-The September 2026 corpus contains 29 publications dated in the month and 12 earlier incidents integrated for retrospective tracking, for 41 records overall. It reflects AFRINTEL monitoring of ransomware-group sites, leak sites and underground forums. It is not a count of intrusions that actually occurred in September and it is not an exhaustive measure of African cybercrime.
-
-The observed publications are mostly associated with ransomware claims. Some include visible samples or released data, while a small number have public confirmation of access or an incident. These observation levels remain separate from exfiltration completeness, initial vector, encryption, ransom payment and operational impact.
-
-The collection does not establish a common technical campaign, a dominant access vector or a real increase in attacks compared with August. It does highlight recurring risks involving identities, administrative documents, financial data, document repositories and supplier relationships. These risks justify targeted validation of assets, privileged access, exports, external sharing and payment-fraud controls.
-
-For affected organisations, an underground publication should be treated as a signal for verification and preparation, without waiting for a complete release and without automatically concluding that a compromise occurred. CTI follow-up should focus on changes to the victim listing, samples, deadlines, possible releases, public confirmations and republications. Payments, negotiations, removals, resales and transfers remain unknown unless specific public information supports a qualification.
-
-This report provides a documented monitoring baseline for defensive prioritisation. It should be updated when the public status of a victim changes, without turning an underground observation into technical or institutional confirmation.
-
-Checks completed:
-
-- 41 French cards and 41 English cards;
-- one FR/EN correspondence per card, preserving analytical order;
-- incident-type total = 41;
-- country total = 41;
-- regional total = 41;
-- observation-status total = 41;
-- incident, publication and integration dates remain separate;
-- normalised types and statuses checked against the structured card values.
-
-Full details, source notes and limitations are available in the [English victim cards](./victims.md) and [French victim cards](./victims_FR.md).
+**END OF REPORT - AFRINTEL / SEPTEMBER 2026**
 
 **AFRINTEL - TLP:CLEAR**
