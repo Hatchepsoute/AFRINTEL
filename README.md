@@ -27,6 +27,18 @@
 
 ## Featured reports
 
+### Cyber threats in Africa - October 2026
+
+The October corpus contains **52 distinct records**: **45 records published or documented in October 2026** and **7 earlier cases identified retrospectively**. The historical cases are kept separate from the October monthly total. The October report covers 15 African countries and records **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** and **2 Access Sale** cases.
+
+📄 [Full CTI report - October 2026](CyberAttackAfrica/2026/10-october/README.md)
+
+📋 [October 2026 victim records](CyberAttackAfrica/2026/10-october/victims.md)
+
+📊 [October 2026 statistics](statistics/2026/10-october/README.md)
+
+🔄 [September-October 2026 comparison](comparison/2026/09-september-october/README.md)
+
 ### Cyber threats in Africa - August 2026
 
 August 2026 collection contains **29 documented incidents across 10 countries**: **17 ransomware incidents**, **11 data leaks** and **1 access sale**. South Africa accounts for **11 records**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **6 incidents**, finance and banking for **6**, and human resources/recruitment for **3**. KRYBIT is associated with **6 ransomware publications**.
@@ -60,14 +72,6 @@ The September corpus contains **41 documented records across 14 countries**: **2
 📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
 *Month status: report, statistics, comparison and visual intelligence published from the 29-publication September cohort; the 12 earlier records remain separate in the retrospective 41-record corpus.*
-
-### October 2026 - Report published
-
-The October corpus contains **52 distinct records**: **45 records published or documented in October 2026** and **7 earlier cases identified retrospectively**. The historical cases are kept separate from the October monthly total. The October report covers 15 African countries and records **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** and **2 Access Sale** cases.
-
-📄 [Full CTI report - October 2026](CyberAttackAfrica/2026/10-october/README.md)
-
-📋 [October 2026 victim records](CyberAttackAfrica/2026/10-october/victims.md)
 
 ### First-half 2026 cyber threat report
 
@@ -145,6 +149,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | July 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | August 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
 | September 2026 | [Statistiques](statistics/2026/09-september/README_FR.md) | [Statistics](statistics/2026/09-september/README.md) |
+| October 2026 | [Statistiques](statistics/2026/10-october/README_FR.md) | [Statistics](statistics/2026/10-october/README.md) |
 
 ---
 
@@ -160,6 +165,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | July vs August 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
 | August vs September 2026 | [FR](comparison/2026/08-august-september/README_FR.md) | [EN](comparison/2026/08-august-september/README.md) |
+| September vs October 2026 | [FR](comparison/2026/09-september-october/README_FR.md) | [EN](comparison/2026/09-september-october/README.md) |
 
 
 ---

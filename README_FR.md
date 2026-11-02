@@ -27,6 +27,18 @@
 
 ## Rapports à la une
 
+### Cybermenaces en Afrique - octobre 2026
+
+Le corpus d'octobre comprend **52 fiches distinctes** : **45 fiches publiées ou rapportées en octobre 2026** et **7 dossiers antérieurs découverts rétrospectivement**. Les dossiers historiques restent séparés du total mensuel d'octobre. Le rapport couvre 15 pays africains et recense **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** et **2 Access Sale**.
+
+📄 [Rapport CTI complet - octobre 2026](CyberAttackAfrica/2026/10-october/README_FR.md)
+
+📋 [Fiches victimes - octobre 2026](CyberAttackAfrica/2026/10-october/victims_FR.md)
+
+📊 [Statistiques - octobre 2026](statistics/2026/10-october/README_FR.md)
+
+🔄 [Comparaison septembre-octobre 2026](comparison/2026/09-september-october/README_FR.md)
+
 ### Cybermenaces en Afrique - août 2026
 
 La collecte d'août 2026 comprend **29 incidents documentés dans 10 pays** : **17 ransomware**, **11 fuites de données** et **1 vente d'accès**. L'Afrique du Sud concentre **11 fiches**, devant l'Égypte avec **4**, puis l'Algérie et le Maroc avec **3** chacun. Le gouvernement et l'administration représentent **6 incidents**, la finance et la banque **6**, et les ressources humaines/recrutement **3**. KRYBIT est associé à **6 publications ransomware**.
@@ -60,14 +72,6 @@ Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 R
 📦 [Bundle STIX 2.1 / OpenCTI - septembre 2026](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
 *Statut du mois : rapport, statistiques, comparaison et visual intelligence publiés sur la base de la cohorte de 29 publications de septembre ; les 12 fiches antérieures restent séparées dans le corpus rétrospectif de 41 fiches.*
-
-### Octobre 2026 - Rapport publié
-
-Le corpus d'octobre comprend **52 fiches distinctes** : **45 fiches publiées ou rapportées en octobre 2026** et **7 dossiers antérieurs découverts rétrospectivement**. Les dossiers historiques restent séparés du total mensuel d'octobre. Le rapport couvre 15 pays africains et recense **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** et **2 Access Sale**.
-
-📄 [Rapport CTI complet - octobre 2026](CyberAttackAfrica/2026/10-october/README_FR.md)
-
-📋 [Fiches victimes - octobre 2026](CyberAttackAfrica/2026/10-october/victims_FR.md)
 
 ### Rapport cybermenaces du premier semestre 2026
 
@@ -145,6 +149,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juillet 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | Août 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
 | Septembre 2026 | [Statistiques](statistics/2026/09-september/README_FR.md) | [Statistics](statistics/2026/09-september/README.md) |
+| Octobre 2026 | [Statistiques](statistics/2026/10-october/README_FR.md) | [Statistics](statistics/2026/10-october/README.md) |
 
 ---
 
@@ -160,6 +165,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juin vs Juillet 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | Juillet vs Août 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
 | Août vs Septembre 2026 | [FR](comparison/2026/08-august-september/README_FR.md) | [EN](comparison/2026/08-august-september/README.md) |
+| Septembre vs Octobre 2026 | [FR](comparison/2026/09-september-october/README_FR.md) | [EN](comparison/2026/09-september-october/README.md) |
 
 ---
 
