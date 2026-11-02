@@ -19,19 +19,19 @@
 
 ## BRIEF HIGHLIGHTS - LES FAITS MARQUANTS
 
-- **54 fiches distinctes : 45 signalements publiés ou rapportés en octobre 2026 et 9 dossiers antérieurs découverts rétrospectivement.** Les 9 dossiers historiques sont séparés du décompte mensuel ; il s'agit d'un corpus de veille, non d'un décompte de compromissions toutes confirmées.
+- **52 fiches distinctes : 45 signalements publiés ou rapportés en octobre 2026 et 7 dossiers antérieurs découverts rétrospectivement.** Les 7 dossiers historiques sont séparés du total mensuel d'octobre et conservés dans une section rétrospective dédiée.
 - **Maroc et Égypte concentrent chacun 12 fiches**, devant l'Afrique du Sud (7). Cette répartition décrit les observations disponibles, pas la prévalence réelle des attaques dans ces pays.
 - **Les fuites ou ventes de données dominent l'exposition potentielle des administrations et de la santé**, avec des corpus parfois volumineux, mais des liens techniques à la victime encore incomplets.
-- **Le rançongiciel représente 17 signalements** ; les noms de groupes affichés sur des sites de fuite ne prouvent pas, à eux seuls, chiffrement, interruption de service ou exfiltration.
+- **Le rançongiciel représente 17 signalements** ; le contexte de publication et les éléments disponibles sont précisés pour chaque fiche. Le chiffrement, l'interruption de service et la publication de données sont évalués séparément.
 - **Quatre cas comportent une communication ou une reconnaissance de l'incident par une organisation concernée** : Lawyers for Human Rights, GCIS, InvestNaija/Chapel Hill Denham et Al Arabia United. La nature exacte de l'accès aux données diffère toutefois d'un dossier à l'autre.
 - **Les accès d'administration, les prestataires et les environnements d'identité sont des points de fragilité transversaux** : e-Solde, l'environnement SSO revendiqué à Madagascar et le prestataire de Lawyers for Human Rights illustrent des risques distincts.
 - **La gestion des correctifs reste une priorité immédiate** : les alertes CISA d'octobre confirment l'exploitation de failles touchant Windows, Ivanti et Cisco Secure Email Gateway, entre autres.
 
 ## 1. SYNTHÈSE EXÉCUTIVE
 
-Octobre 2026 met en évidence une menace moins uniforme qu'il n'y paraît à la lecture des seules annonces de cybercriminels. Le jeu de données AFRINTEL recense 45 signalements publiés ou rapportés pendant le mois dans 15 pays africains. Il conserve séparément 9 dossiers plus anciens découverts rétrospectivement. Les publications observées relèvent principalement de la fuite présumée de données, du rançongiciel et de la vente d'accès. Mais la nature des preuves varie considérablement : certaines enquêtes ont fait l'objet de communications officielles ; d'autres ne reposent que sur un message de forum, un échantillon incomplet ou une inscription sur un site de divulgation. [AFR]
+Octobre 2026 met en évidence une menace moins uniforme qu'il n'y paraît à la lecture des seules publications de cybercriminels. Le jeu de données AFRINTEL recense 45 incidents ou cas rapportés pendant le mois dans 15 pays africains. Il conserve séparément 7 dossiers plus anciens découverts rétrospectivement. Les publications observées relèvent principalement de fuites de données rapportées, du rançongiciel et de la vente d'accès. Le niveau de preuve varie considérablement : certaines enquêtes ont fait l'objet de communications officielles ; d'autres reposent sur un message de forum, un échantillon incomplet ou une inscription sur un site de divulgation. [AFR]
 
-Le risque le plus immédiat ne se limite pas à l'indisponibilité des systèmes. Les informations revendiquées concernent des personnels publics, des candidats à l'emploi, des étudiants, des professionnels de santé, des clients d'assurances et des utilisateurs de services financiers. Même lorsque l'accès initial n'est pas démontré, la mise en circulation d'un échantillon crédible peut déclencher des campagnes d'hameçonnage personnalisées, des usurpations d'identité ou des fraudes documentaires. Pour les équipes SOC et de réponse aux incidents, l'enjeu consiste à valider rapidement l'origine des données, mesurer l'étendue de l'exposition et empêcher la réutilisation des comptes et des secrets.
+Le risque le plus immédiat ne se limite pas à l'indisponibilité des systèmes. Les informations rapportées concernent des personnels publics, des candidats à l'emploi, des étudiants, des professionnels de santé, des clients d'assurances et des utilisateurs de services financiers. La mise en circulation d'un échantillon crédible peut déclencher des campagnes d'hameçonnage personnalisées, des usurpations d'identité ou des fraudes documentaires. Pour les équipes SOC et de réponse aux incidents, l'enjeu consiste à valider rapidement l'origine des données, mesurer l'étendue de l'exposition et empêcher la réutilisation des comptes et des secrets.
 
 Les faits publiquement reconnus en Afrique du Sud, au Nigeria et en Égypte rappellent par ailleurs qu'un incident peut provenir d'un prestataire, d'une interface web exposée ou d'une plateforme centralisée de diffusion, sans que l'organisation citée soit nécessairement le point d'entrée technique. Dans le même temps, les vulnérabilités activement exploitées d'octobre concernent des produits communs à de nombreuses entreprises africaines : systèmes Windows, accès distants et passerelles de messagerie. [S01] [S02] [S03] [S04] [S08] [S10] [S12]
 
@@ -49,7 +49,7 @@ La comparaison porte uniquement sur les publications datées de chaque mois. Les
 | Access Sale | 0 | 2 | +2 (nouvelle catégorie observée) |
 | System Intrusion | 2 | 6 | +4 (+200,0 %) |
 
-Les catégories DDoS, Defacement, Account Takeover, Malware et Operational Fraud ne figurent pas dans le tableau car elles sont à zéro pour septembre et octobre. Cette évolution mesure la composition des corpus AFRINTEL, et non le nombre réel de compromissions en Afrique.
+Les catégories DDoS, Defacement, Account Takeover, Malware et Operational Fraud ne figurent pas dans le tableau car elles sont à zéro pour septembre et octobre. Cette évolution décrit la composition des corpus AFRINTEL et doit être lue avec le statut de preuve attribué à chaque fiche.
 
 ## 2. PÉRIMÈTRE, STATISTIQUES ET QUALITÉ DES PREUVES
 
@@ -116,7 +116,7 @@ Selon la convention régionale AFRINTEL, la ventilation des 45 fiches d'octobre 
 
 **À propos des illustrations.** Les schémas et graphiques ont été créés pour ce rapport à partir des chiffres du référentiel AFRINTEL. Il ne s’agit pas de captures d’attaques, ni de preuves de compromission. Aucune donnée personnelle ou contenu issu d’un forum criminel n’est reproduit.
 
-**Précaution méthodologique.** Le millésime « octobre » renvoie ici à la publication ou à l'observation documentée, non nécessairement à la date de l'intrusion. Les neuf dossiers rétrospectifs restent séparés des 45 fiches publiées ou rapportées en octobre et ne sont pas ajoutés au dénominateur mensuel. La date de découverte tardive explique leur présence dans le référentiel, mais ne les transforme pas en événements d'octobre. La mention « données entièrement publiées » qualifie la publication observée, pas une confirmation officielle de compromission. [AFR]
+**Précaution méthodologique.** Le millésime « octobre » renvoie ici à la publication ou à l'observation documentée, non nécessairement à la date de l'intrusion. Les sept dossiers rétrospectifs restent séparés des 45 fiches publiées ou rapportées en octobre et ne sont pas ajoutés au dénominateur mensuel. La date de découverte tardive explique leur présence dans le référentiel, mais ne les transforme pas en événements d'octobre. La mention « données entièrement publiées » qualifie la publication observée, pas une confirmation officielle de compromission. [AFR]
 
 **Point de vigilance sur la traçabilité des échantillons.** Les fiches de la Procuradoria-Geral da República du Mozambique et de Rand Mutual Assurance décrivent toutes deux un ensemble de 262 fichiers, avec la même ventilation (180 JSON, 71 PDF, 9 EML, 1 DOC et 1 JPG) et un total identique de 75 941 802 octets. Cette identité de métadonnées exige une vérification croisée des empreintes et des inventaires de fichiers. Elle ne permet pas, à elle seule, d'affirmer qu'il s'agit du même corpus ; elle interdit toutefois de traiter ces deux descriptions comme deux preuves techniques indépendantes sans contrôle supplémentaire. [AFR]
 
@@ -179,7 +179,7 @@ Selon la convention régionale AFRINTEL, la ventilation des 45 fiches d'octobre 
 ### 3.7 - Éthiopie : des documents d'identité et de santé dans un échantillon revendiqué
 **Date de collecte : 2 novembre 2026 | Publication du 7 octobre 2026.**
 
-**Ce que nous savons.** Une publication associée au domaine `moh.gov.et` revendique quatre millions d'enregistrements et 13 Go de données. Le matériel observé par AFRINTEL présente des documents d'identité et des références sanitaires sensibles. La cohérence de l'échantillon avec des services de santé éthiopiens est jugée forte, mais elle ne prouve ni une attaque directe contre le ministère ni les volumes annoncés. [AFR]
+**Ce que nous savons.** Une publication associée au domaine `moh.gov.et` revendique quatre millions d'enregistrements et 13 Go de données. Le matériel observé par AFRINTEL présente des documents d'identité et des références sanitaires sensibles. La cohérence de l'échantillon avec des services de santé éthiopiens est jugée forte ; l'origine technique du corpus et les volumes annoncés restent à établir. [AFR]
 
 **Contexte.** La présence de documents apparemment authentiques peut accroître la crédibilité d'une revendication tout en laissant ouverte la question de leur provenance : plateforme partenaire, base mutualisée, sauvegarde ancienne ou système ministériel. La nuance est essentielle pour identifier le bon périmètre d'enquête.
 

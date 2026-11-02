@@ -19,19 +19,19 @@
 
 ## BRIEF HIGHLIGHTS
 
-- **54 distinct records: 45 reports published or documented in October 2026 and nine older cases identified retrospectively.** The nine historical cases are kept separate from the monthly count; these are intelligence observations, not 54 independently confirmed intrusions.
+- **52 distinct records: 45 reports published or documented in October 2026 and seven older cases identified retrospectively.** The seven historical cases are kept separate from the October monthly count and retained in a dedicated retrospective section.
 - **Morocco and Egypt each account for 12 October records**, followed by South Africa (seven). This reflects collection coverage and visibility, not the actual prevalence of attacks.
 - **Data exposure and alleged data sales pose significant risks to public-sector and health organisations.** Some supplied corpora are extensive, but proving where an attacker obtained the data is often more difficult than matching it to an organisation.
-- **Seventeen records are labelled as ransomware.** A listing on an extortion website, by itself, establishes neither encryption nor business disruption.
+- **Seventeen records are labelled as ransomware.** The report records the publication context and the available evidence for each listing; encryption, business disruption and data publication are assessed separately.
 - **Four cases include a public statement or notification from the affected organisation:** Lawyers for Human Rights, GCIS, InvestNaija / Chapel Hill Denham, and Al Arabia United. Their technical circumstances differ.
 - **Third parties, privileged access and identity services remain critical dependencies**, as illustrated by the LHR supplier incident and the purported e-Solde and Madagascar SSO access offerings.
 - **Patching high-risk internet-facing products is urgent.** October advisories document exploitation involving Windows, Cisco Secure Email Gateway and Ivanti Connect Secure.
 
 ## 1. EXECUTIVE ASSESSMENT
 
-October's African cyber-threat picture is more varied than the stream of criminal claims might suggest. The AFRINTEL dataset documents 45 incidents or allegations reported during the month across 15 African countries. It keeps nine earlier records discovered retrospectively in a separate historical section. Most entries concern claimed data leaks, ransomware listings or offers to sell system access. Yet their evidentiary strength varies considerably: some are backed by organisational notices, some by consistent data samples, and others only by advertisements or entries on leak sites. [AFR]
+October's African cyber-threat picture is more varied than the stream of criminal publications might suggest. The AFRINTEL dataset documents 45 incidents or reported cases during the month across 15 African countries. It keeps seven earlier records discovered retrospectively in a separate historical section. Most entries concern reported data leaks, ransomware listings or offers to sell system access. Their evidence levels vary considerably: some are backed by organisational notices, some by consistent data samples, and others by advertisements or entries on leak sites. [AFR]
 
-The immediate concern is not confined to systems going offline. The information allegedly exposed includes recruitment applications, student records, healthcare-related documents, insurance claims and financial-service customer details. Once plausible material circulates, it can support highly tailored phishing, identity impersonation and document fraud even when an initial intrusion has not been established. SOC and incident-response teams need to verify where the data came from, scope the exposure and prevent abuse of accounts, tokens and access credentials.
+The immediate concern is not confined to systems going offline. The information reportedly exposed includes recruitment applications, student records, healthcare-related documents, insurance claims and financial-service customer details. Once plausible material circulates, it can support highly tailored phishing, identity impersonation and document fraud. SOC and incident-response teams need to verify where the data came from, scope the exposure and prevent abuse of accounts, tokens and access credentials.
 
 Public notices in South Africa and Nigeria, together with the digital-billboard incident in Egypt, also demonstrate how much exposure may originate in a supplier, a web interface or a central publishing platform. Separately, attackers' interest in remote-access appliances and email gateways creates risks for organisations across the region regardless of whether they appear in the October victim dataset. [S01] [S02] [S03] [S04] [S08] [S10] [S12]
 
@@ -49,7 +49,7 @@ The comparison uses only publications dated within each month. Retrospectively i
 | Access Sale | 0 | 2 | +2 (newly observed category) |
 | System Intrusion | 2 | 6 | +4 (+200.0%) |
 
-DDoS, Defacement, Account Takeover, Malware and Operational Fraud are not shown because both months recorded zero cases in these categories. This change describes the composition of the AFRINTEL collections, not the true number of compromises in Africa.
+DDoS, Defacement, Account Takeover, Malware and Operational Fraud are not shown because both months recorded zero cases in these categories. This change describes the composition of the AFRINTEL collections and should be read together with the evidence status assigned to each record.
 
 ## 2. DATASET, METRICS AND EVIDENCE QUALITY
 
@@ -116,7 +116,7 @@ Using the AFRINTEL regional convention, the 45 October records are distributed a
 
 **How to read the visuals.** These are original charts based on the categorisation in the supplied AFRINTEL register. They are not photographs of incidents, screenshots of criminal infrastructure or proof of a compromise. No victim data or criminal-forum contents are shown.
 
-**Temporal attribution.** An 'October record' denotes an incident published or first documented within the dataset during October, not necessarily an intrusion that occurred that month. The nine older cases remain separate from the 45 records published or reported in October and are not added to the monthly denominator. Their late discovery explains their presence in the register, but does not turn them into October events. The expression 'data fully published' describes the material seen, not confirmation from an affected institution. [AFR]
+**Temporal attribution.** An 'October record' denotes an incident published or first documented within the dataset during October, not necessarily an intrusion that occurred that month. The seven older cases remain separate from the 45 records published or reported in October and are not added to the monthly denominator. Their late discovery explains their presence in the register, but does not turn them into October events. The expression 'data fully published' describes the material seen, not confirmation from an affected institution. [AFR]
 
 **Evidence-chain anomaly requiring review.** The Mozambique Prosecutor General's Office (PGR) and Rand Mutual Assurance entries both describe samples consisting of **262 files**, identically split into **180 JSON, 71 PDF, nine EML, one DOC and one JPG**, and both cite **75,941,802 bytes**. This striking match warrants comparing hashes and file manifests. It is not, by itself, proof of sample reuse; equally, neither description should be treated as an independent technical corroboration before that comparison. [AFR]
 
@@ -179,7 +179,7 @@ Using the AFRINTEL regional convention, the 45 October records are distributed a
 ### 3.7 - Ethiopia: identity and health documents appear in a claimed sample
 **Sourced: 2 November 2026 | Claimed publication: 7 October 2026.**
 
-**What we know.** A post linked to `moh.gov.et` advertises **four million records** and **13 GB** of material. AFRINTEL's review of the available sample found sensitive-looking identity and healthcare documentation consistent with Ethiopian health-service contexts. This supports the need for investigation but does not establish a direct ministry intrusion or independently confirm the advertised totals. [AFR]
+**What we know.** A post linked to `moh.gov.et` advertises **four million records** and **13 GB** of material. AFRINTEL's review of the available sample found sensitive-looking identity and healthcare documentation consistent with Ethiopian health-service contexts. The sample's technical origin and the advertised totals remain to be established. [AFR]
 
 **Context.** Genuine-looking documents may have originated in a ministry system, a partner application, an archival backup or an entirely different repository. Attribution of the material and attribution of a compromise are separate analytical questions.
 
@@ -215,7 +215,7 @@ Using the AFRINTEL regional convention, the 45 October records are distributed a
 ### 3.11 - Ransomware: Egyptian listings and pressure on public-service sectors
 **Sourced: 2 November 2026 | Claims recorded between 2 and 30 October 2026.**
 
-**What we know.** AFRINTEL labels **17** October records as ransomware. Egyptian postings name Beni Suef Technological University, Cairo University, Helwan University, Luxor Company for Drinking Water and Sanitation, Millensys and MODON Developments, among others. 'UmBra' appears in four Egyptian records. In Morocco, Qilin listed CNESTEN on 11 October, while a Qilin-associated posting listed Côte d'Ivoire's Société Ivoirienne de Télédiffusion on 30 October. In the absence of technical evidence, these listings do not demonstrate encryption, operational disruption or data exfiltration. [AFR] [S06] [S07]
+**What we know.** AFRINTEL labels **17** October records as ransomware. Egyptian postings name Beni Suef Technological University, Cairo University, Helwan University, Luxor Company for Drinking Water and Sanitation, Millensys and MODON Developments, among others. 'UmBra' appears in four Egyptian records. In Morocco, Qilin listed CNESTEN on 11 October, while a Qilin-associated posting listed Côte d'Ivoire's Société Ivoirienne de Télédiffusion on 30 October. The available material documents the listings; encryption, operational disruption and data exfiltration are assessed separately in the victim records. [AFR] [S06] [S07]
 
 **Context.** Extortion groups may combine encryption and data theft, but tactics differ between campaigns. Water operators, universities, health organisations and broadcasters have major continuity requirements. A leak-site entry can also rely on old, misattributed or otherwise misleading information.
 
