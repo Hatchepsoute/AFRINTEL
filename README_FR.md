@@ -61,9 +61,11 @@ Le corpus de septembre comprend **41 fiches documentées dans 14 pays** : **24 R
 
 *Statut du mois : rapport, statistiques, comparaison et visual intelligence publiés sur la base de la cohorte de 29 publications de septembre ; les 12 fiches antérieures restent séparées dans le corpus rétrospectif de 41 fiches.*
 
-### Octobre 2026  -  Suivi en cours
+### Octobre 2026 - Rapport publié
 
-Le corpus provisoire d'octobre comprend actuellement **10 fiches**. Le rapport CTI, les statistiques et les exports dérivés d'octobre ne sont pas encore publiés ; les fiches victimes restent en cours de collecte et de validation.
+Le corpus d'octobre comprend **52 fiches distinctes** : **45 fiches publiées ou rapportées en octobre 2026** et **7 dossiers antérieurs découverts rétrospectivement**. Les dossiers historiques restent séparés du total mensuel d'octobre. Le rapport couvre 15 pays africains et recense **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** et **2 Access Sale**.
+
+📄 [Rapport CTI complet - octobre 2026](CyberAttackAfrica/2026/10-october/README_FR.md)
 
 📋 [Fiches victimes - octobre 2026](CyberAttackAfrica/2026/10-october/victims_FR.md)
 
@@ -126,7 +128,7 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Juillet 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | Août 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
 | Septembre 2026 | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) | [Report](CyberAttackAfrica/2026/09-september/README.md) |
-| Octobre 2026 | [Suivi en cours](CyberAttackAfrica/2026/10-october/victims_FR.md) | [In-progress tracking](CyberAttackAfrica/2026/10-october/victims.md) |
+| Octobre 2026 | [Rapport](CyberAttackAfrica/2026/10-october/README_FR.md) | [Report](CyberAttackAfrica/2026/10-october/README.md) |
 
 ---
 

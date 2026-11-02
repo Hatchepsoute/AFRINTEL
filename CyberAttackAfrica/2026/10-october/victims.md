@@ -3,13 +3,13 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in October 2026 (54 records: 45 incidents published or reported in October 2026 and 9 earlier incidents discovered retrospectively)
+# List of African cyberattack victims in October 2026 (52 records: 45 incidents published or reported in October 2026 and 7 earlier incidents discovered retrospectively)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## October 2026
 
-**Monthly tracking status: In Progress / En cours**  -  corpus of 54 records: 45 incidents published or reported in October 2026 and 9 earlier incidents discovered retrospectively. Monthly closure and statistics remain pending.
+**Monthly tracking status: Published / Publié**  -  corpus of 52 records: 45 incidents published or reported in October 2026 and 7 earlier incidents discovered retrospectively. Monthly closure and statistics are published in the accompanying report.
 
 ## Incidents before October 2026 - discovered in October 2026
 
@@ -1490,7 +1490,7 @@ last_checked_at: 2026-10-23
 - **Confidence level:** Low
 - **Impact level:** Level 3 (potential)
 - **Victim description:** Société Ivoirienne de Télédiffusion (SIDT) is an Ivorian state-owned company established in 2017. It broadcasts radio and television programmes, including through TNT, and provides multiplexing, infrastructure and technical-support services.
-- **Analysis:** The victim appears in a public tracking system associated with Qilin's leak site. The observed page displays a **108-hour-and-17-minute** countdown, with no data publication or claimed volume. This establishes the existence of a claim and displayed deadline, but does not demonstrate intrusion, exfiltration, encryption or disruption of broadcasting services.
+- **Analysis:** The victim appears in a public tracking system associated with Qilin's leak site. The observed page displays a **108-hour-and-17-minute** countdown, with no data publication or claimed volume. The observed material is limited to the victim listing and displayed deadline; no technical material concerning access, exfiltration, encryption or disruption of broadcasting services was provided.
 - **Observed:** Publication attributed to Qilin, victim identified as Société Ivoirienne de Télédiffusion, first indexed on 30 October 2026 at approximately 17:26 UTC; a 108-hour-and-17-minute countdown was displayed when observed on 31 October 2026 at approximately 01:43.
 - **Unknown:** Domain, access vector, affected systems, technical access timeline, data nature, volume, encryption, service disruption, deadline outcome, victim confirmation and any statement from an Ivorian authority or CERT remain unknown.
 - **Risk assessment:** If authentic, potential risks could involve broadcast continuity, audiovisual systems, administrative data and provider relationships. These risks remain potential.

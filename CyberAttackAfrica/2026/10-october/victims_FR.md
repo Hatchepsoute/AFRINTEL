@@ -3,13 +3,13 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en octobre 2026 (54 fiches : 45 incidents publiés ou signalés en octobre 2026 et 9 incidents antérieurs découverts rétrospectivement)
+# Liste des victimes africaines de cyberattaques en octobre 2026 (52 fiches : 45 incidents publiés ou signalés en octobre 2026 et 7 incidents antérieurs découverts rétrospectivement)
 
 👉🏾 [**English version available here**](./victims.md)
 
 ## Octobre 2026
 
-**Statut du suivi mensuel : In Progress / En cours**  -  corpus de 54 fiches : 45 incidents publiés ou signalés en octobre 2026 et 9 incidents antérieurs découverts rétrospectivement. La clôture et les statistiques mensuelles restent à venir.
+**Statut du suivi mensuel : Published / Publié**  -  corpus de 52 fiches : 45 incidents publiés ou signalés en octobre 2026 et 7 incidents antérieurs découverts rétrospectivement. La clôture et les statistiques mensuelles sont publiées dans le rapport associé.
 
 ## Incidents antérieurs à octobre 2026 - découverts en octobre 2026
 
@@ -1507,7 +1507,7 @@ last_checked_at: 2026-10-23
 - **Niveau de confiance :** Low
 - **Niveau d'impact :** Level 3 (potentiel)
 - **Description victime :** La Société Ivoirienne de Télédiffusion (SIDT) est une société d'État ivoirienne créée en 2017. Elle assure la diffusion de programmes radiophoniques et télévisuels, notamment via la TNT, ainsi que des services de multiplexage, d'infrastructure et de support technique.
-- **Analyse :** La victime apparaît dans un dispositif public de suivi associé au site de divulgation de Qilin. La page observée affiche un compte à rebours de **108 heures et 17 minutes**, sans publication de données ni volume annoncé. Cette observation établit l'existence d'une revendication et d'une échéance affichée, mais ne démontre pas une intrusion, une exfiltration, un chiffrement ou une interruption des services de diffusion.
+- **Analyse :** La victime apparaît dans un dispositif public de suivi associé au site de divulgation de Qilin. La page observée affiche un compte à rebours de **108 heures et 17 minutes**, sans publication de données ni volume annoncé. Les éléments observés se limitent à la publication de la fiche et à l'échéance affichée ; aucun élément technique relatif à l'accès, à l'exfiltration, au chiffrement ou à l'interruption des services de diffusion n'a été fourni.
 - **Observed :** Publication attribuée à Qilin, victime identifiée comme la Société Ivoirienne de Télédiffusion, première indexation observée le 30 octobre 2026 vers 17:26 UTC ; compte à rebours affiché de 108 heures et 17 minutes lors de l'observation du 31 octobre 2026 vers 01:43.
 - **Unknown :** Domaine, vecteur d'accès, systèmes concernés, chronologie technique de l’accès, nature des données, volume, chiffrement, interruption de service, issue de l'échéance, confirmation de la victime et déclaration d'une autorité ivoirienne ou d'un CERT restent inconnus.
 - **Évaluation des risques :** Si la revendication était authentique, les risques pourraient concerner la continuité de diffusion, les systèmes audiovisuels, les données administratives et les relations avec les prestataires. Ces risques restent potentiels.
