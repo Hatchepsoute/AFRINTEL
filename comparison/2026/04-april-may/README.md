@@ -1,70 +1,58 @@
-# AFRINTEL comparison: April vs May 2026
+# AFRINTEL comparison: April and May 2026
 
-👉🏾 [Version française](README_FR.md)
+## Comparable scope
 
-## Executive comparison
+This comparison uses the validated bilingual victim files: **72 records in April** and **106 records in May**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | April | May | Change |
 |---|---:|---:|---:|
-| Total incidents | 69 | 103 | +34 (+49.3%) |
-| Ransomware | 20 | 17 | -3 (-15.0%) |
-| Data leaks and access sales | 40 | 43 | +3 (+7.5%) |
-| DDoS claims | 9 | 43 | +34 |
-| Distinct countries after expanding multi-country records | 16 | 18 | +2 |
+| Total incidents | **72** | **106** | **+34 (+47.2%)** |
+| Ransomware | 21 | 17 | -4 |
+| Data Leak | 40 | 44 | +4 |
+| Access Sale | 1 | 1 | 0 |
+| DDoS | 9 | 43 | +34 |
+| System Intrusion | 0 | 1 | +1 |
+| Operational Fraud | 1 | 0 | -1 |
 
-Overall volume rose sharply after the retrospective DDoS collection. Data leaks and access sales increased from 40 to 43, while ransomware fell from 20 to 17.
+```mermaid
+xychart-beta
+    title "Monthly records: April vs May 2026"
+    x-axis [April, May]
+    y-axis "Records" 0 --> 111
+    bar [72, 106]
+```
 
-## Country evolution
+## Countries represented
 
-| Direct country label | April | May | Change |
-|---|---:|---:|---:|
-| 🇪🇬 Egypt | 11 | 16 | +5 |
-| 🇿🇦 South Africa | 8 | 14 | +6 |
-| 🇲🇦 Morocco | 17 | 51 | +34 |
-| 🇹🇳 Tunisia | 4 | 5 | +1 |
-| 🇳🇬 Nigeria | 4 | 3 | -1 |
-| 🇩🇿 Algeria | 4 | 2 | -2 |
-| 🇹🇿 Tanzania | 0 | 2 | +2 |
-| 🇰🇪 Kenya | 2 | 1 | -1 |
-| 🇬🇭 Ghana | 2 | 1 | -1 |
-| 🇸🇳 Senegal | 1 | 1 | 0 |
-| 🇪🇹 Ethiopia | 1 | 1 | 0 |
-| Multi-country records | 1 | 3 | +2 |
+| Country code | April | May |
+|---|---:|---:|
+| MA | 17 | 53 |
+| EG | 19 | 18 |
+| ZA | 10 | 16 |
+| NG | 5 | 5 |
+| TN | 4 | 5 |
+| DZ | 4 | 2 |
+| KE | 3 | 2 |
+| ET | 1 | 2 |
+| GH | 2 | 1 |
+| SN | 1 | 1 |
+| TZ | 0 | 2 |
+| AO | 1 | 0 |
+| BJ | 1 | 0 |
+| BW | 1 | 0 |
+| CI | 0 | 1 |
+| LR | 0 | 1 |
+| LY | 0 | 1 |
+| MZ | 0 | 1 |
+| RW | 1 | 0 |
+| SC | 1 | 0 |
+| SD | 1 | 0 |
+| SL | 0 | 1 |
+| TG | 0 | 1 |
+| UG | 1 | 0 |
+| ZM | 1 | 0 |
+| ZW | 0 | 1 |
 
-Direct country labels cover 59 April records plus one multi-country record, and 98 May records plus three multi-country records.
+## CTI reading
 
-## Sector evolution
-
-| Sector | April | May | Change |
-|---|---:|---:|---:|
-| Government / Administration | 15 | 20 | +5 |
-| Industry / Manufacturing / Construction | 7 | 5 | -2 |
-| Finance / Banking / Insurance | 5 | 3 | -2 |
-| Education / University | 8 | 3 | -5 |
-| Healthcare / Medical | 4 | 1 | -3 |
-| E-commerce / Retail | 4 | 4 | 0 |
-| Human resources / Recruitment | 0 | 5 | +5 |
-| Telecommunications | 1 | 3 | +2 |
-
-Government/Administration took 49 of May's 103 records on its own. Human resources and recruitment went from zero in April to 5 in May.
-
-## Actor evolution
-
-Grubder led April with 7, then Payload, APT73/BASHE and TheGentlemen tied at 4. May's lineup shifted: Databasehooligan at 8, 404Crew at 5, TheGentlemen at 4, NightSpire at 3.
-
-## CTI assessment
-
-The monthly total held close, but where the activity landed changed. Egypt and South Africa took over from Morocco as the main geographic concentrations. Government/Administration gained five records while Education/University lost five, almost a direct swap.
-
-## SOC priorities
-
-1. Prioritize public-sector identity, email and privileged-access monitoring.
-2. Monitor HR and recruitment platforms for unusual exports, account creation and access patterns.
-3. Alert on database extraction, archive staging and large outbound transfers.
-4. Expand monitoring beyond the largest country concentrations because multi-country records increased from one to three.
-
-## Conclusion
-
-May closed at 103 incidents against April's 69. Ransomware accounted for the drop; leaks and access sales stayed exactly flat.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+The corpus changes from 72 to 106 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.

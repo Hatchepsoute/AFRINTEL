@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (30 records)
+# List of African cyberattack victims in August 2026 (33 records)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
@@ -852,6 +852,42 @@ last_checked_at: 2026-08-20T13:54:00
 -->
 
 ---
+### August 21, 2026
+#### 🇪🇬 Egypt - Six public universities and their student portal system
+
+- **Initial publication date:** August 21, 2026 at 00:08; visibly edited at 00:12:31 (timezone not specified). A complementary “Part 2/3” publication was observed on August 23, 2026 at 00:18.
+- **AFRINTEL detection date:** November 4, 2026
+- **Actor / Source:** ronabrown, 8kun `/egy/` publication; identity and affiliation not established
+- **Sector:** Higher education / Student portals / University administration
+- **Named victims:** Benha University, Helwan University, Cairo University, Kafr El Sheikh University, South Valley University and University of Sadat City
+- **Status:** Data Fully Published
+- **Incident type:** Data Leak
+- **Confidence level:** High for the existence and structural consistency of the local corpus; Medium for technical attribution to official systems
+- **Impact level:** Level 4
+- **Source type:** Forum publications, captures supplied to AFRINTEL, six CSV exports and a local document corpus examined read-only
+
+- **Analysis:** The publication claims **7,761,608 records** and **87 tables**. Full read-only analysis of the six local UTF-8 CSV files produced **7,762,241 records**, **633 more** than claimed, totalling **4,298,921,282 bytes**. Observed volumes are: Benha **3,078,879**, Helwan **2,834,439**, Cairo **551,252**, Kafr El Sheikh **739,533**, South Valley **551,371** and Sadat City **6,767**. The files contain **10,075,256 physical lines** and **130 to 352 columns** each.
+
+  Schemas cover enrolment, postgraduate data, administrative staff, student documents and images, email, authentication and login logs, certificates, academic profiles and faculty settings. Headers include `newuserlogs__FailPassword`, `userauthlog`, `newuserlogs`, `email`, `IP`, `studentdocuments`, `studentpersonimages` and `adminstaff`. The supplied capture displays personal data and plaintext passwords; no raw value is reproduced in the repository.
+
+  CSV width validation found no inconsistent row. Exact volume matches for Cairo, Kafr El Sheikh and South Valley, together with the limited differences for the other three files, strongly support the corpus's structural consistency with the publication. They do not prove the technical origin, compromise of official systems, corpus completeness or current validity of credentials.
+
+  The local document corpus associated with the second publication contains **5,540 files** totalling **2,337,401,813 bytes**: **2,257 PDFs**, **3,096 JPEGs**, **164 PNGs**, **21 JPGs** and **2 GIFs**. Directories include student documents, online-registration files, an archive of those files, person images and student-person images. PDF metadata processing succeeded on **2,256 files**, representing **2,887 pages**; one PDF could not be processed by `pdfinfo`. The corpus contains **4,675 unique SHA-256 hashes**, **726 duplicate groups** and **865 files duplicated beyond the first occurrence**. These duplicates must not be counted as additional people or documents.
+
+  The categories explicitly announced in the complementary publication are national-ID scans, names, 14-digit national IDs, dates of birth, photographs, school results, degrees, birth certificates, transcripts, military cards and personal photographs. The supplied visual evidence shows at least one Arabic university administrative document with stamp and signature; corpus analysis does not establish unique-person counts, university of origin for each file, document completeness or validity of visible identifiers. No name, national identifier, document, photograph or other raw value is reproduced in the repository.
+
+  **In-depth analysis of accessible content:** Categories observed in the publication and document inventory link the corpus to university enrolment, academic records, certification and administrative-management processes. They imply distinct risks: identity theft and document fraud from identity papers and certificates; academic fraud or student targeting from transcripts and results; social engineering and targeted recruitment from photographs, contact data and administrative documents; and targeting of staff or students subject to military obligations from the corresponding cards. Exact duplicates and archive copies show that file counts cannot be treated as counts of unique people or documents.
+
+  **Content coverage and limitations:** all 5,540 files were inventoried, hashed and classified by type; PDF metadata was checked across 2,257 files. Exhaustive semantic extraction and OCR of all scans were not accepted as validated coverage because a substantial portion of the corpus consists of images or scanned PDFs and local trials did not produce reliable, homogeneous coverage. The published content analysis is therefore in-depth for categories accessible in the publication, visual evidence and document structure, but does not claim to have read every page or image. No raw personal content was retained or published.
+
+- **Observed:** six named universities, one file per university, a publication presented as a release after a 48-hour discussion window, a complete CSV corpus analysed read-only and a complementary publication announcing documents and photographs.
+- **Assumption:** association with student-portal environments is plausible; a historical copy, provider, backup or aggregated database remains possible.
+- **Unknown:** access vector and date, exact source system, extraction method, unique persons, inter-file duplicates, password and session validity, operational impact, official confirmation and the author's real identity.
+- **Scope and limitations:** all six CSVs were checked for hashes, encoding, structure, volumes, widths and inconsistencies without executing active content. Raw files remain outside the repository and no personal data is published.
+- **SOC/CTI recommendations:** preserve portal, database, IAM, SSO, email and storage logs; reset potentially exposed secrets; review exports and connections around August 21; segment student, administrative and research environments.
+- **Counting decision:** one grouped record is counted in the August 2026 corpus because the six universities come from one publication and one corpus.
+
+@@
 ### August 22, 2026
 #### 🇲🇦 Morocco - RAMED (Régime d’Assistance Médicale)
 
@@ -1219,3 +1255,71 @@ last_checked_at: 2026-08-27T14:31:07
 * **Recommendations:**
   * Review subscription-platform access logs and data exports around June 09, 2026.
   * Reset sessions and strengthen monitoring of administrative accounts if exposure is confirmed.
+
+### August 20, 2026
+
+#### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) - attribution unconfirmed
+
+- **Initial publication date:** 20 August 2026 at 05:27 (displayed timestamp; timezone not specified)
+- **AFRINTEL discovery date:** 20 October 2026
+- **Actor / Group:** TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)
+- **Claimed sector:** Transport / Logistics / Express Delivery
+- **Claimed website:** [yalidine.com](https://www.yalidine.com/)
+- **Status:** Under Investigation
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3 (potential)
+- **Source type:** Cybercriminal forum and CSV samples provided to AFRINTEL
+
+- **Victim Description:** Yalidine El Djazair Service is an Algerian express-mail, parcel-delivery and domestic-logistics company that also provides e-commerce delivery and cash-on-delivery collection. The post associates the company with a database advertised as containing approximately **563,000 records**.
+
+- **Analysis:**
+
+  **Observed:** The 20 August 2026 post at 05:27, attributed to TelephoneHooliganism, presents `www.yalidine.com` as an Algerian database of **563,000 records**. It describes three datasets: contacts, booking history and support tickets. A moderator message displayed at 06:38 on the same day only restates the forum’s section rules; it does not confirm Yalidine, the files or a compromise.
+
+  AFRINTEL examined three local CSV files read-only corresponding to those datasets: **50 contact rows**, **20 booking rows** and **20 ticket rows**. The files are structurally readable and total **90 tabular rows**, but that total does not represent 90 unique people. The files contain **34, 29 and 29 columns**, respectively. The fields cover contacts, CRM information, bookings, payments, support tickets and customer follow-up. No raw personal data is reproduced in this record.
+
+  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the remaining countries are predominantly foreign. The booking cities observed are not Algerian. The `contact_id` values used in bookings and tickets do not match the identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. Links to booking records are also inconsistent. Ticket email and phone fields are empty, and several advertised contact fields are largely or entirely empty. Data-quality or encoding problems appear in some geographic values.
+
+  Local SHA-256 hashes are: `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51**; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443**; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
+
+  **Assumption:** The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim. That compatibility is weak: geographic, relational and completeness inconsistencies outweigh the elements linking the sample to Yalidine. The sample may be synthetic, misattributed, drawn from a multi-country environment, incomplete or built from a generic CRM template.
+
+  A link with the **Afribaba** case from 20 August 2026 is possible only at campaign level: the displayed actor, publication date and broad data categories are similar. This could reflect a campaign targeting multiple Algerian organisations or reuse of a posting template. No shared identifier, domain, file or technical marker was observed; the link is therefore **not specified in the sources consulted** and must not merge the victims.
+
+  **Unknown:** The files’ technical provenance, extraction date, authenticity, number of unique people, existence of unauthorised access, acquisition method, completeness of the advertised database, operational impact and any confirmation by Yalidine or an authority all remain unknown.
+
+- **Analysis scope and limitations:** All three supplied CSV files were examined read-only, including structure, counts, blank fields, duplicates, inter-table relationships, date ranges and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
+
+- **Risk assessment:** If any part of the sample were authentic, the advertised categories could facilitate targeted phishing, social engineering, customer impersonation and order- or payment-related fraud. The sources consulted do not specify the actual exposure of Yalidine’s customers.
+
+- **Counting decision:** The record is retained in the October corpus because the post was observed and a sample was supplied, but it is **excluded from the canonical total and statistical breakdowns** until attribution is corroborated.
+
+- **Sources / Evidence:** publication and moderator response supplied on 20 October 2026; three local CSV files examined read-only; [Yalidine official website](https://www.yalidine.com/). No onion link, criminal account, personal data or individual value is published.
+
+### August 26, 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Cartrack South Africa
+
+- **Incident date:** August 26, 2026
+- **Public communication:** August 28, 2026
+- **Update:** September 10, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Telematics / Mobility / Automotive Services
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** **Cartrack South Africa** provides **vehicle telematics**, tracking, stolen-vehicle recovery and fleet-management services. Its offering combines vehicle-installed equipment, digital platforms and operational services for consumers and businesses. This business model involves vehicle, subscription and customer information, without implying that all such data was exposed in a particular incident ([Cartrack official website](https://www.cartrack.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Direct confirmation:** Cartrack disclosed finding ransomware on certain systems on 26 August 2026 and warned that personal information might have been posted. The September Dire Wolf claim is not an official forensic attribution. Initial event in August.
+
+- **Additional verification sources:** [Source 1](https://cartrack.co.za/platform/resources/news)
+
+- **Sources / Evidence:** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
+
+Cartrack confirmed a ransomware incident detected on August 26. Affected servers were isolated and the platform restored within five hours. An update states that personal information relating to some customers was accessed and may have been published on a restricted-access site. The vector, operator and exact volume remain unknown.
+
+## September ransomware publications
+
+> The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.

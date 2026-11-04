@@ -1,52 +1,47 @@
-# AFRINTEL comparison: February vs March 2026
+# AFRINTEL comparison: February and March 2026
 
-👉🏾 [Version française](README_FR.md)
+## Comparable scope
 
-## Executive comparison
+This comparison uses the validated bilingual victim files: **21 records in February** and **41 records in March**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | February | March | Change |
 |---|---:|---:|---:|
-| Total incidents | 20 | 41 | +21 (+105.0%) |
-| Ransomware | 20 | 19 | -1 (-5.0%) |
-| Data leaks and access sales | 0 | 22 | +22 |
-| Countries represented | 14 | 14 | 0 |
+| Total incidents | **21** | **41** | **+20 (+95.2%)** |
+| Ransomware | 20 | 19 | -1 |
+| Data Leak | 1 | 21 | +20 |
+| Operational Fraud | 0 | 1 | +1 |
 
-March's jump came entirely from data leaks and access sales. Ransomware stayed close to where February left it.
+```mermaid
+xychart-beta
+    title "Monthly records: February vs March 2026"
+    x-axis [February, March]
+    y-axis "Records" 0 --> 47
+    bar [21, 41]
+```
 
-## Country evolution
+## Countries represented
 
-| Country | February | March | Change |
-|---|---:|---:|---:|
-| 🇿🇦 South Africa | 3 | 13 | +10 |
-| 🇪🇬 Egypt | 3 | 8 | +5 |
-| 🇲🇦 Morocco | 1 | 8 | +7 |
-| 🇳🇬 Nigeria | 2 | 2 | 0 |
-| 🇸🇳 Senegal | 1 | 1 | 0 |
-| 🇹🇳 Tunisia | 1 | 1 | 0 |
+| Country code | February | March |
+|---|---:|---:|
+| ZA | 3 | 14 |
+| EG | 4 | 8 |
+| MA | 1 | 8 |
+| NG | 2 | 2 |
+| GH | 2 | 0 |
+| NA | 1 | 1 |
+| SN | 1 | 1 |
+| TN | 1 | 1 |
+| TZ | 1 | 1 |
+| CI | 1 | 0 |
+| DZ | 0 | 1 |
+| GN | 0 | 1 |
+| KE | 1 | 0 |
+| MG | 0 | 1 |
+| MU | 1 | 0 |
+| SD | 1 | 0 |
+| SO | 1 | 0 |
+| ZM | 0 | 1 |
 
-South Africa, Morocco and Egypt between them account for 29 of March's 41 records.
+## CTI reading
 
-## Sector evolution
-
-February's top sectors were Government/Administration and Aviation, 3 records each, then Oil & Energy and Finance/Banking at 2 apiece. March pushed Government/Administration up to 10, Education/University to 7, Healthcare/Medical to 4, with Insurance, Telecommunications and Engineering/Construction tied at 3 each.
-
-## Actor evolution
-
-TheGentlemen led February with 5 records, 0APT and LockBit 5.0 both at 3. March had a different lineup: CrowStealer at 5, APT73/BASHE at 4, XP_95 and xNova tied at 3.
-
-## CTI assessment
-
-Geographic coverage barely changed, but the incident mix did. March kept ransomware roughly where February had it while adding 22 leak or access-sale records on top. That means monitoring priorities need to cover both extortion infrastructure and the reuse or resale of exposed data and access, not just one or the other.
-
-## SOC priorities
-
-1. Monitor identity, VPN and privileged-access telemetry for abnormal authentication patterns.
-2. Detect large outbound transfers and unusual archive creation.
-3. Maintain sector-specific monitoring for public administration, education and healthcare.
-4. Preserve evidence needed to correlate ransomware publications with related data-sale activity.
-
-## Conclusion
-
-March closed at 41 incidents against February's 20. Data leaks and access sales drove nearly all of that growth, ransomware held steady.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+The corpus changes from 21 to 41 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.

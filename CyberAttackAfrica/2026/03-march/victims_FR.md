@@ -106,14 +106,6 @@ Cette liste recense les revendications/publications ransomware, les fuites de do
 - **Statut :** Claim - Unverified
 - **Description victime :** Distributeur majeur de composants automobiles en Afrique australe, incluant les franchises Bosch Service et les centres e-CAR.
 
-#### 🇪🇬 Égypte - Canadian International College (CIC)
-- **Acteur / Groupe :** CrowStealer
-- **Secteur :** Éducation / Enseignement supérieur
-- **Site web :** [cic-cairo.edu.eg](https://www.cic-cairo.edu.eg/)
-- **Statut :** Data Fully Published
-- **Type d'incident :** Fuite de données
-- **Description victime :** Premier fournisseur d'enseignement canadien en Égypte, associé à la Cape Breton University (CBU). La fuite (studentsdata.csv) contient 2 925 enregistrements : noms, filières, niveaux, GPA, années.
-
 #### 🇿🇲 Zambie - ZISPIS (Zambia Integrated Social Protection Information System)
 - **Acteur / Groupe :** Spirigatito
 - **Secteur :** Gouvernement / Protection sociale
@@ -503,3 +495,25 @@ Le précédent statut `Under Investigation` devrait être précisé, car la  fra
 - **Statut :** Under Investigation
 - **Type d'incident :** Fuite de données
 - **Description victime :** Le site officiel du Ministère de la Santé de Guinée est directement lié aux systèmes internes compromis, notamment les dashboards DHIS2 exposés par Keymous. La corrélation entre l’accès aux outils de surveillance sanitaire, les données gouvernementales divulguées (emails, personnels) et les infrastructures ministérielles suggère une compromission plus large de l’écosystème numérique du ministère. Cette exposition pourrait permettre des attaques ciblées, de la manipulation de données sanitaires et des opérations d’influence.
+
+### 23 mars 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Standard Bank South Africa
+
+- **Date de l'incident / première communication :** 23 mars 2026
+- **Mises à jour publiques :** 02, 13 et 14 avril 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué officiellement ; revendication distincte de PrinzEugen non corroborée
+- **Secteur :** Finance / Banque
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** **Standard Bank South Africa** est l'activité bancaire sud-africaine du **Standard Bank Group**, groupe financier proposant notamment des comptes, paiements, financements, services aux entreprises et solutions d'investissement. La **Standard Bank of South Africa Limited** fait partie des entités juridiques identifiées par le groupe dans sa documentation institutionnelle ([déclaration officielle de confidentialité](https://www.standardbank.co.za/southafrica/personal/about-us/legal/privacy-statement)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation de première main :** Standard Bank a déclaré le 23 mars 2026 un accès non autorisé à certaines données, tout en précisant que les systèmes transactionnels et les fonds des clients n’étaient pas touchés. L’événement est antérieur à septembre.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank)
+
+- **Sources / Éléments de preuve :** [Standard Bank, 23 mars 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank) ; [Standard Bank, 14 avril 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april)
+
+Standard Bank a confirmé un accès non autorisé à des systèmes administratifs et espaces documentaires internes, avec exposition possible de noms, identifiants, coordonnées, adresses et numéros de compte. Les systèmes transactionnels et centraux n'auraient pas été accédés. Le vecteur, le nombre de personnes et le volume copié restent inconnus. Cette fiche est distincte de la revendication Standard Bank Group de mai.

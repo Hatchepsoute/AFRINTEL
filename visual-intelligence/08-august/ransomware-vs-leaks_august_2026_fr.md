@@ -2,10 +2,10 @@
 
 ```mermaid
 pie showData
-    title Types principaux (29 fiches)
-    "Ransomware" : 17
-    "Data Leak" : 11
+    title Types principaux (33 fiches)
+    "Ransomware" : 18
+    "Data Leak" : 14
     "Access Sale" : 1
 ```
 
-La publication d’une fiche ransomware, un échantillon, une échéance et une divulgation sont des événements distincts. Les 17 fiches sont rattachées au corpus d’août selon des observations datées ; la date de compromission n’est pas établie pour chaque cas.
+La publication d’une fiche ransomware, un échantillon, une échéance et une divulgation sont des événements distincts. Les 18 fiches ransomware sont rattachées au corpus d’août selon des observations datées ; la date de compromission n’est pas établie pour chaque cas.

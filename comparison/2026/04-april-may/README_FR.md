@@ -1,70 +1,58 @@
 # Comparaison AFRINTEL : avril et mai 2026
 
-👉🏾 [English version](README.md)
+## Périmètre comparable
 
-## Comparaison générale
+Cette comparaison utilise les fichiers victimes bilingues validés : **72 fiches en avril** et **106 fiches en mai**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Avril | Mai | Évolution |
 |---|---:|---:|---:|
-| Total des incidents | 69 | 103 | +34 (+49,3 %) |
-| Ransomware | 20 | 17 | -3 (-15,0 %) |
-| Fuites de données et ventes d'accès | 40 | 43 | +3 (+7,5 %) |
-| Revendications DDoS | 9 | 43 | +34 |
-| Pays distincts après éclatement des fiches multi-pays | 16 | 18 | +2 |
+| Total incidents | **72** | **106** | **+34 (+47.2%)** |
+| Ransomware | 21 | 17 | -4 |
+| Fuite de données | 40 | 44 | +4 |
+| Vente d'accès | 1 | 1 | 0 |
+| DDoS | 9 | 43 | +34 |
+| Intrusion système | 0 | 1 | +1 |
+| Fraude opérationnelle | 1 | 0 | -1 |
 
-Le volume global augmente fortement après l'intégration rétrospective des DDoS. Les fuites et ventes d'accès passent de 40 à 43, tandis que le ransomware recule de 20 à 17.
+```mermaid
+xychart-beta
+    title "Fiches mensuelles : avril vs mai 2026"
+    x-axis [Avril, Mai]
+    y-axis "Records" 0 --> 111
+    bar [72, 106]
+```
 
-## Évolution par pays
+## Countries represented
 
-| Libellé pays direct | Avril | Mai | Évolution |
-|---|---:|---:|---:|
-| 🇪🇬 Égypte | 11 | 16 | +5 |
-| 🇿🇦 Afrique du Sud | 8 | 14 | +6 |
-| 🇲🇦 Maroc | 17 | 51 | +34 |
-| 🇹🇳 Tunisie | 4 | 5 | +1 |
-| 🇳🇬 Nigeria | 4 | 3 | -1 |
-| 🇩🇿 Algérie | 4 | 2 | -2 |
-| 🇹🇿 Tanzanie | 0 | 2 | +2 |
-| 🇰🇪 Kenya | 2 | 1 | -1 |
-| 🇬🇭 Ghana | 2 | 1 | -1 |
-| 🇸🇳 Sénégal | 1 | 1 | 0 |
-| 🇪🇹 Éthiopie | 1 | 1 | 0 |
-| Fiches multi-pays | 1 | 3 | +2 |
+| Country code | April | May |
+|---|---:|---:|
+| MA | 17 | 53 |
+| EG | 19 | 18 |
+| ZA | 10 | 16 |
+| NG | 5 | 5 |
+| TN | 4 | 5 |
+| DZ | 4 | 2 |
+| KE | 3 | 2 |
+| ET | 1 | 2 |
+| GH | 2 | 1 |
+| SN | 1 | 1 |
+| TZ | 0 | 2 |
+| AO | 1 | 0 |
+| BJ | 1 | 0 |
+| BW | 1 | 0 |
+| CI | 0 | 1 |
+| LR | 0 | 1 |
+| LY | 0 | 1 |
+| MZ | 0 | 1 |
+| RW | 1 | 0 |
+| SC | 1 | 0 |
+| SD | 1 | 0 |
+| SL | 0 | 1 |
+| TG | 0 | 1 |
+| UG | 1 | 0 |
+| ZM | 1 | 0 |
+| ZW | 0 | 1 |
 
-Les libellés pays directs couvrent 59 fiches en avril, plus une fiche multi-pays, et 98 fiches en mai, plus trois fiches multi-pays.
+## CTI reading
 
-## Évolution par secteur
-
-| Secteur | Avril | Mai | Évolution |
-|---|---:|---:|---:|
-| Government / Administration | 15 | 20 | +5 |
-| Industry / Manufacturing / Construction | 7 | 5 | -2 |
-| Finance / Banking / Insurance | 5 | 3 | -2 |
-| Education / University | 8 | 3 | -5 |
-| Healthcare / Medical | 4 | 1 | -3 |
-| E-commerce / Retail | 4 | 4 | 0 |
-| Human resources / Recruitment | 0 | 5 | +5 |
-| Telecommunications | 1 | 3 | +2 |
-
-Government / Administration prend à lui seul 49 des 103 fiches de mai. Human resources / Recruitment passe de zéro en avril à 5 en mai.
-
-## Évolution des acteurs
-
-Grubder menait avril avec 7 fiches, Payload, APT73/BASHE et TheGentlemen à égalité à 4. Mai change de tête d'affiche : Databasehooligan à 8, 404Crew à 5, TheGentlemen à 4, NightSpire à 3.
-
-## Évaluation CTI
-
-Le total mensuel reste proche, mais la répartition change. L'Égypte et l'Afrique du Sud prennent le relais du Maroc comme principales concentrations géographiques. Government / Administration gagne cinq fiches pendant qu'Education / University en perd cinq, presque un échange direct.
-
-## Priorités SOC
-
-1. Prioriser la surveillance des identités, de la messagerie et des accès privilégiés dans le secteur public.
-2. Surveiller les plateformes RH et de recrutement pour détecter les exports, créations de comptes et accès inhabituels.
-3. Déclencher des alertes sur les extractions de bases de données, la préparation d'archives et les transferts sortants volumineux.
-4. Étendre la surveillance au-delà des principales concentrations nationales, car les fiches multi-pays passent de une à trois.
-
-## Conclusion
-
-Mai se solde par 103 incidents contre 69 en avril. Le ransomware explique la baisse ; les fuites et ventes d'accès sont restées exactement stables.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+Le corpus évolue de 72 à 106 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

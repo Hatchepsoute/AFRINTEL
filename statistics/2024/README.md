@@ -2,7 +2,7 @@
 
 👉🏾 [Version française](./README_FR.md)
 
-This summary is recalculated from the 12 canonical 2024 victim files. It covers 123 records, using incident dates and AFRINTEL deduplication rules. A record is a documented occurrence; these figures do not measure every incident that actually occurred.
+This summary is recalculated from the 12 canonical 2024 victim files. It covers 125 records, using incident dates and AFRINTEL deduplication rules. A record is a documented occurrence; these figures do not measure every incident that actually occurred.
 
 ## Monthly volume
 
@@ -18,16 +18,16 @@ This summary is recalculated from the 12 canonical 2024 victim files. It covers 
 | August | 16 |
 | September | 7 |
 | October | 11 |
-| November | 15 |
-| December | 17 |
-| **Total** | **123** |
+| November | 16 |
+| December | 18 |
+| **Total** | **125** |
 
 ## Incident types
 
 | AFRINTEL type | Records |
 |---|---:|
 | Ransomware | 91 |
-| Data Leak | 16 |
+| Data Leak | 18 |
 | Access Sale | 5 |
 | DDoS | 2 |
 | Defacement | 1 |
@@ -35,8 +35,8 @@ This summary is recalculated from the 12 canonical 2024 victim files. It covers 
 | System Intrusion | 7 |
 | Malware | 0 |
 | Operational Fraud | 1 |
-| **Total** | **123** |
+| **Total** | **125** |
 
-The monthly sum and the sum across all nine canonical incident types match: 123. Detailed breakdowns by country, region, sector, actor, status, confidence, and impact are maintained in the [canonical annual report](../../CyberAttackAfrica/2024/README.md), derived from the same validated corpus. This page no longer retains the former detailed breakdowns, which did not match the monthly corpus.
+The monthly sum and the sum across all nine canonical incident types match: 125. Detailed breakdowns by country, region, sector, actor, status, confidence, and impact are maintained in the [canonical annual report](../../CyberAttackAfrica/2024/README.md), derived from the same validated corpus. This page no longer retains the former detailed breakdowns, which did not match the monthly corpus.
 
 **AFRINTEL** - TLP:CLEAR

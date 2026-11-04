@@ -2,7 +2,7 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **103 incidents canoniques et 104 entrées de publication observées** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**, auxquels s'ajoute une revendication Kazu liée non canonique. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observées** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**, auxquels s'ajoute une revendication Kazu liée non canonique. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
 
 ### Incidents marquants
 
@@ -1609,3 +1609,45 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Évaluation chronologique :** Il s'agit de la deuxième revendication observée concernant la même victime. Elle est suivie comme une publication de mai, et non comme une seconde attaque confirmée.
 - **Description :** Kazu propose un jeu de données attribué au Gouvernement provincial du Gauteng pour **25 000 USD**, en revendiquant **3 673 556 fichiers** et environ **3,8 To** de données. L archive locale fournie contient **1 905 fichiers** et environ **1,905 Go** ; son SHA-256 est `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
 - **Analyse :** Le recoupement entre la victime et le volume revendiqué dans la publication XP95 est compatible avec une double revendication, un transfert/revente ou une exposition distincte. Les éléments disponibles ne permettent pas de trancher et n établissent ni chiffrement ni intrusion distincte. Aucune donnée personnelle ni aucun contenu documentaire individuel n est reproduit.
+
+### 23 mai 2026
+#### 🇲🇦 Maroc - Ministère des Affaires étrangères [Data Leak]
+- **Date de publication initiale :** 23 mai 2026 à 21:29 (horodatage affiché ; fuseau horaire non précisé)
+- **Date de découverte AFRINTEL :** 29 octobre 2026
+- **Acteur / Groupe :** Keymous (compte affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Gouvernement / Affaires étrangères / Administration publique
+- **Site web institutionnel :** [diplomatie.ma](https://diplomatie.ma/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium pour l'attribution de l'échantillon à une liste de candidats du ministère ; Low à Medium pour la compromission du système ministériel
+- **Niveau d'impact :** Level 3
+- **Description victime :** Le ministère marocain des Affaires étrangères est l'institution publique chargée de la politique étrangère et des relations diplomatiques du Maroc. La publication attribuée à Keymous associe cette institution à une liste de candidats, sans établir l'identité du système source ni obtenir de confirmation du ministère.
+- **Analyse :** La publication annonce une liste de **8 440 lignes** contenant des noms complets et des numéros d'inscription. L'échantillon visible transmis à AFRINTEL contient **46 paires nom-numéro d'inscription** lisibles, affichées sous forme de texte concaténé et non comme un fichier tabulaire directement exploitable. Il expose donc des données d'identité et des identifiants administratifs de candidats. Les valeurs individuelles ne sont pas reproduites dans le dépôt.
+
+  La cohérence entre le titre de la publication, la référence au ministère marocain, la structure répétitive « nom complet / numéro d'inscription » et les identifiants de candidats soutient l'existence d'une exposition de données de candidature. Elle ne documente pas que le fichier provient effectivement d'un système du ministère, que les **8 440 lignes** sont complètes ou authentiques, ni qu'une compromission technique du ministère a été confirmée.
+
+  L'exposition pourrait faciliter le phishing ciblé, l'usurpation de candidats, la fraude administrative et le recoupement d'identités. Le préfixe de formule visible dans l'extrait n'a pas été exécuté ni interprété comme une formule ; aucun fichier source n'a été téléchargé.
+- **Limites de preuve :** Analyse limitée à la publication et à l'échantillon visible fourni ; le fichier annoncé, son schéma, son empreinte, les 8 440 lignes complètes et la provenance technique n'ont pas été vérifiés. Aucun nom, numéro d'inscription ou autre donnée personnelle brute n'est publié.
+- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL intervient le 29 octobre 2026. La publication initiale du 23 mai 2026 est conservée comme contexte historique et ne crée pas de doublon avec le suivi d'octobre.
+
+### Fin mai 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Centre for High Performance Computing (CHPC) / Supercalculateur Lengau
+
+- **Date de l'incident :** fin mai 2026
+- **Date de confirmation publique détaillée :** 24 août 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Recherche / Infrastructure scientifique stratégique
+- **Statut :** Victim Confirmed
+- **Type d'incident :** System Intrusion
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** Le **Centre for High Performance Computing (CHPC)** est une infrastructure nationale sud-africaine de **calcul intensif**, rattachée à l'écosystème de recherche du **CSIR** et au dispositif NICIS. Il met des ressources de calcul scientifique à la disposition des universités et instituts de recherche ; **Lengau** est l'un des supercalculateurs emblématiques de cette infrastructure. Le CHPC n'est donc pas une entreprise commerciale ordinaire ([présentation officielle du CHPC](https://www.chpc.ac.za/about-the-chpc/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation institutionnelle relayée :** le CSIR et une réponse parlementaire ont fait état de la compromission du cluster Lengau fin mai 2026, liée à des vulnérabilités d’un système ancien, avec perturbation des ressources de calcul. Ne pas assimiler ce cas à un ransomware septembre.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
+- **Sources / Éléments de preuve :** [ITWeb, 24 août 2026](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
+Une réponse parlementaire a confirmé un incident affectant une partie de l'environnement HPC Lengau à la fin mai, en lien avec des vulnérabilités d'un environnement ancien. L'accès, la durée de présence et les données éventuellement consultées restent inconnus.

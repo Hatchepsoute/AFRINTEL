@@ -1,40 +1,57 @@
 # H1 2026 visual intelligence data
 
-Source: validated monthly `victims.md` / `victims_FR.md` files.
+Source: validated monthly pairs victims_FR.md / victims.md. Counts are derived from the French source and checked against the English version.
 
 ## Monthly totals
 
-| Month | Total | Ransomware | Data leaks/access sales | DDoS | Defacement |
+| Month | Total | Ransomware | Data leaks | DDoS | Defacement |
 |---|---:|---:|---:|---:|---:|
-| January | 21 | 17 | 3 | 0 | 1 |
-| February | 20 | 20 | 0 | 0 | 0 |
-| March | 41 | 21 | 19 | 0 | 1 |
-| April | 69 | 20 | 40 | 9 | 0 |
-| May | 103 | 17 | 43 | 43 | 0 |
-| June | 40 | 20 | 20 | 0 | 0 |
-| **H1 2026** | **294** | **115** | **125** | **52** | **2** |
+| January | 23 | 19 | 2 | 0 | 1 |
+| February | 21 | 20 | 1 | 0 | 0 |
+| March | 41 | 19 | 21 | 0 | 0 |
+| April | 72 | 21 | 40 | 9 | 0 |
+| May | 106 | 17 | 44 | 43 | 0 |
+| June | 41 | 20 | 18 | 0 | 0 |
+| **H1 2026** | **304** | **116** | **126** | **52** | **1** |
 
 ## Geographic view
 
-The deduplicated global total is 294. The expanded geographic view is 317 occurrences after expanding six multi-country records.
+The deduplicated corpus contains 304 incidents. The regional breakdown contains 312 occurrences because some records cover multiple countries. This breakdown does not change the incident total.
 
 | Region | Occurrences |
 |---|---:|
-| North Africa | 179 |
-| Southern Africa | 62 |
-| West Africa | 40 |
-| East Africa | 26 |
-| Indian Ocean | 6 |
-| Central Africa | 3 |
-| Pan-African / unspecified | 1 |
+| Afrique du Nord | 173 |
+| Afrique australe | 65 |
+| Afrique de l'Ouest | 37 |
+| Afrique de l'Est | 25 |
+| Océan Indien | 5 |
+| Panafricain / non précisé | 5 |
+| Afrique centrale | 2 |
+| **Geographic total** | **312** |
 
-## Top direct country labels
+## Top direct countries
 
 | Country | Incidents |
 |---|---:|
-| Morocco | 89 |
-| South Africa | 48 |
-| Egypt | 46 |
-| Tunisia | 16 |
+| Maroc | 90 |
+| Afrique du Sud | 55 |
+| Égypte | 55 |
+| Tunisie | 15 |
 | Nigeria | 15 |
-| Kenya | 9 |
+| Kenya | 10 |
+| Algérie | 8 |
+| Sénégal | 6 |
+| Tanzanie | 6 |
+| Ghana | 5 |
+
+## Visualisations
+
+![H1 2026 statistics](afrintel_h1_2026_statistics.png)
+
+![Incident types](types_en.png) ![Incident types pie](types_pie_en.png)
+
+![Countries](countries_en.png) ![Regions](regions_en.png) ![Regional pie](regions_pie_en.png)
+
+![Sectors](sectors_en.png) ![Sector pie](sectors_pie_en.png)
+
+![Actors](actors_en.png)

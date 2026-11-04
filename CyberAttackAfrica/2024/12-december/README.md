@@ -4,15 +4,15 @@
 
 ## 1. Executive summary
 
-In December 2024, AFRINTEL retains **17 canonical cyber incidents across 12 countries**. The month is led by **Ransomware (11, 64.7%)** followed by **Data Leak (4, 23.5%)**. Leading countries are **Egypt (3)**, **Nigeria (3)**, **South Africa (2)**. Leading sectors are **Government / Administration (3)**, **Finance / Banking (2)**, **Telecommunications (2)**. Most frequent actor/group labels are `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` means missing attribution, not an actor.
+In December 2024, AFRINTEL retains **18 canonical cyber incidents across 13 countries**. The month is led by **Ransomware (11, 61.1%)** followed by **Data Leak (5, 27.8%)**. Leading countries are **Egypt (3)**, **Nigeria (3)**, **South Africa (2)**. Leading sectors are **Government / Administration (3)**, **Finance / Banking (2)**, **Telecommunications (2)**. Most frequent actor/group labels are `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` means missing attribution, not an actor.
 
 ### 1.1 Month-over-month study
 
 | Indicator | November 2024 | December 2024 | Change |
 |---|---|---|---|
-| Total | 15 | 17 | +2 (+13.3%) |
+| Total | 15 | 18 | +3 (+20.0%) |
 | Ransomware | 12 | 11 | -1 (-8.3%) |
-| Data Leak | 1 | 4 | +3 (+300.0%) |
+| Data Leak | 1 | 5 | +4 (+400.0%) |
 | Access Sale | 2 | 1 | -1 (-50.0%) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 1 | +1 (new) |
@@ -23,7 +23,7 @@ In December 2024, AFRINTEL retains **17 canonical cyber incidents across 12 coun
 
 ### 1.2 Comparative analysis
 
-Monthly volume **increases by 2 incident(s)**. Structural changes are: Data Leak 1->4 (+3), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
+Monthly volume **increases by 3 incidents**. Structural changes are: Data Leak 1->5 (+4), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
@@ -38,9 +38,9 @@ Monthly volume **increases by 2 incident(s)**. Structural changes are: Data Leak
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 11 | 68.8% |
-| Data Leak | 4 | 23.5% |
-| Access Sale | 1 | 6.2% |
+| Ransomware | 11 | 61.1% |
+| Data Leak | 5 | 27.8% |
+| Access Sale | 1 | 5.6% |
 | DDoS | 0 | 0.0% |
 | Defacement | 1 | 6.2% |
 | Account Takeover | 0 | 0.0% |
@@ -52,7 +52,7 @@ Monthly volume **increases by 2 incident(s)**. Structural changes are: Data Leak
 pie showData
     title Incident types - December 2024
     "Ransomware" : 11
-    "Data Leak" : 4
+    "Data Leak" : 5
     "Access Sale" : 1
     "Defacement" : 1
 ```
@@ -73,6 +73,7 @@ pie showData
 | Algeria | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tanzania | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## 5. Regional distribution
 
@@ -477,7 +478,7 @@ timeline
 
 ## 14. Conclusion
 
-December 2024 contains **17 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+December 2024 contains **18 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
 
 👉🏾 [Canonical victims](./victims.md)
 

@@ -1,149 +1,101 @@
-![AFRINTEL](https://img.shields.io/badge/AFRINTEL-CTI-blue)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-2025-blue)
+# Rapport CTI AFRINTEL - Cybermenaces en Afrique - 2025
 
-# Statistiques annuelles AFRINTEL - 2025
+Corpus documenté : **231 incidents**.
 
-👉🏾 [English version](./README.md)
+## Synthèse
 
-## 1. Périmètre et source
+Le corpus est dominé par **Ransomware (121, 52.4 %)**. Les chiffres représentent la visibilité documentée par AFRINTEL.
 
-Cette vue statistique est alignée sur le corpus bilingue validé 2025 et contient **229 incidents canoniques dans 31 pays africains représentés**. Les ventilations pays et régions comptent **229 occurrences géographiques** dans le corpus actuel. Une fiche canonique correspond à un cyberincident documenté ; les dossiers en investigation restent hors statistiques. Le type d'incident, le statut de preuve, la confiance et l'impact sont des dimensions distinctes.
+## Types d’incident
 
-## 2. Évolution mensuelle
-
-| Mois | Fiches |
-|---|---:|
-| Janvier | 20 |
-| Février | 10 |
-| Mars | 15 |
-| Avril | 21 |
-| Mai | 26 |
-| Juin | 21 |
-| Juillet | 25 |
-| Août | 16 |
-| Septembre | 19 |
-| Octobre | 20 |
-| Novembre | 16 |
-| Décembre | 20 |
-| **Total canonique** | **229** |
-
-Le S1 contient **113** fiches et le S2 **116**.
-
-## 3. Répartition par pays
-
-| Rang | Pays | ISO | Fiches |
-|---:|---|:---:|---:|
-| 1 | Afrique du Sud | ZA | 38 |
-| 2 | Maroc | MA | 35 |
-| 3 | Égypte | EG | 35 |
-| 4 | Algérie | DZ | 20 |
-| 5 | Kenya | KE | 16 |
-| 6 | Nigeria | NG | 16 |
-| 7 | Tunisie | TN | 15 |
-| 8 | Mauritanie | MR | 8 |
-| 9 | Ghana | GH | 5 |
-| 10 | Zambie | ZM | 4 |
-| 11 | Tanzanie | TZ | 4 |
-| 12 | Côte d'Ivoire | CI | 4 |
-| 13 | Namibie | NA | 3 |
-| 14 | Ouganda | UG | 2 |
-| 15 | Botswana | BW | 2 |
-| 16 | Sénégal | SN | 2 |
-| 17 | Togo | TG | 2 |
-| 18 | Maurice | MU | 2 |
-| 19 | Zimbabwe | ZW | 2 |
-| 20 | Congo (RDC) | CD | 2 |
-| 21 | Burkina Faso | BF | 1 |
-| 22 | Rwanda | RW | 1 |
-| 23 | Cameroun | CM | 2 |
-| 24 | Comores | KM | 1 |
-| 25 | Djibouti | DJ | 1 |
-| 26 | Érythrée | ER | 1 |
-| 27 | Burundi | BI | 1 |
-| 28 | Seychelles | SC | 1 |
-| 29 | Angola | AO | 1 |
-| 30 | Madagascar | MG | 1 |
-| 31 | Gabon | GA | 1 |
-| **Total des occurrences géographiques** |  |  | **229** |
-
-## 4. Répartition régionale
-
-| Région | Fiches | Part |
-|---|---:|---:|
-| Afrique du Nord | 104 | 46,2 % |
-| Afrique australe | 50 | 22,2 % |
-| Afrique de l'Ouest | 37 | 16,4 % |
-| Afrique de l'Est | 26 | 11,6 % |
-| Afrique centrale | 5 | 2,2 % |
-| Océan Indien | 5 | 2,2 % |
-| **Total des occurrences géographiques** | **229** | **100 %** |
-
-## 5. Répartition sectorielle
-
-| Secteur normalisé | Fiches | Part |
-|---|---:|---:|
-| Gouvernement / Administration | 52 | 23,0 % |
-| Finance / Banque | 43 | 19,1 % |
-| Technologie / IT | 20 | 8,9 % |
-| Éducation / Université | 18 | 8,0 % |
-| Santé / Médical | 14 | 6,2 % |
-| Transport / Logistique | 10 | 4,4 % |
-| Services professionnels / Business | 9 | 4,0 % |
-| Non précisé | 9 | 4,0 % |
-| Télécommunications | 9 | 4,0 % |
-| Industrie / Fabrication | 8 | 3,6 % |
-| Commerce / E-commerce | 8 | 3,6 % |
-| Construction / Immobilier | 7 | 3,1 % |
-| Agriculture / Agro-industrie | 4 | 1,8 % |
-| Mines | 4 | 1,8 % |
-| Médias / Divertissement | 3 | 1,3 % |
-| Défense / Sécurité | 3 | 1,3 % |
-| Énergie / Services publics | 3 | 1,3 % |
-| Hôtellerie / Tourisme | 1 | 0,4 % |
-| Juridique | 1 | 0,4 % |
-| Organisation religieuse / Association | 1 | 0,4 % |
-| **Total canonique** | **229** | **100 %** |
-
-## 6. Classification des incidents
 
 | Type | Fiches | Part |
-|---|---:|---:|
-| Ransomware | 121 | 53,8 % |
-| Data Leak | 85 | 37,1 % |
-| Access Sale | 6 | 2,7 % |
-| DDoS | 3 | 1,3 % |
-| Defacement | 4 | 1,8 % |
-| Account Takeover | 6 | 2,7 % |
-| System Intrusion | 3 | 1,3 % |
-| Malware | 1 | 0,4 % |
-| Operational Fraud | 0 | 0,0 % |
-| **Total canonique** | **229** | **100 %** |
+| Ransomware | 121 | 52.4 % |
+| Fuite de données | 86 | 37.2 % |
+| Vente d'accès | 7 | 3.0 % |
+| Prise de contrôle de compte | 6 | 2.6 % |
+| Défacement | 4 | 1.7 % |
+| Intrusion système | 3 | 1.3 % |
+| DDoS | 3 | 1.3 % |
+| Malware | 1 | 0.4 % |
+| **Total** | **231** | **100 %** |
 
-### Vue agrégée de l'exposition
+## Pays
 
-| Catégorie agrégée | Fiches | Part du corpus |
-|---|---:|---:|
-| Data Leak + Access Sale | **90** | **39,5 %** |
 
-Cette vue analytique (`85 + 6`) ne constitue pas une catégorie supplémentaire.
+| Pays | Fiches |
+| Afrique du Sud | 39 |
+| Égypte | 35 |
+| Maroc | 35 |
+| Algérie | 20 |
+| Kenya | 16 |
+| Nigeria | 16 |
+| Tunisie | 16 |
+| Mauritanie | 8 |
+| Ghana | 5 |
+| Zambie | 4 |
+| Tanzanie | 4 |
+| Côte d'Ivoire | 4 |
+| Namibie | 3 |
+| Ouganda | 2 |
+| Botswana | 2 |
+| Angola | 2 |
+| Sénégal | 2 |
+| Togo | 2 |
+| Maurice | 2 |
+| Zimbabwe | 2 |
+| Congo (RDC) | 2 |
+| Burkina Faso | 1 |
+| Rwanda | 1 |
+| Cameroun | 1 |
+| Djibouti | 1 |
+| Érythrée | 1 |
+| Burundi | 1 |
+| Seychelles | 1 |
+| Madagascar | 1 |
+| Gabon | 1 |
+| Comores / Cameroun | 1 |
+| **Total** | **231** |
 
-## 7. Maturité des preuves
+## Régions
 
-| Regroupement analytique | Fiches | Part |
-|---|---:|---:|
-| Claim - Unverified | 101 | 44,3 % |
-| Claim - Data Sample Published | 90 | 39,5 % |
-| Data Fully Published | 11 | 4,8 % |
-| Confirmation victime / gouvernement / autorité | 14 | 6,1 % |
-| Corroboré / preuve secondaire | 10 | 4,4 % |
-| Tentative | 2 | 0,9 % |
-| **Total canonique** | **229** | **100 %** |
 
-## 8. Labels Acteur / Groupe les plus visibles
+| Région | Occurrences |
+| North Africa | 106 |
+| Southern Africa | 52 |
+| West Africa | 30 |
+| East Africa | 24 |
+| Other / unspecified | 13 |
+| Indian Ocean | 4 |
+| Central Africa | 2 |
+| **Total** | **231** |
 
-| Acteur / Groupe | Fiches |
-|---|---:|
+## Secteurs normalisés
+
+
+| Secteur | Fiches | Part |
+| Government / Administration | 53 | 22.9 % |
+| Finance / Banking | 37 | 16.0 % |
+| Professional Services | 34 | 14.7 % |
+| Technology / IT | 21 | 9.1 % |
+| Education / University | 21 | 9.1 % |
+| Healthcare / Medical | 13 | 5.6 % |
+| Transport / Logistics | 12 | 5.2 % |
+| Commerce / E-commerce | 11 | 4.8 % |
+| Telecommunications | 7 | 3.0 % |
+| Construction / Real Estate | 7 | 3.0 % |
+| Agriculture / Agribusiness | 5 | 2.2 % |
+| Defense / Security | 4 | 1.7 % |
+| Media / Entertainment | 2 | 0.9 % |
+| Not specified | 2 | 0.9 % |
+| Legal | 2 | 0.9 % |
+| **Total** | **231** | **100 %** |
+
+## Acteurs / groupes
+
+
+| Acteur / groupe | Fiches |
+| Unknown | 19 |
 | qilin | 11 |
 | nightspire | 10 |
 | devman | 10 |
@@ -154,15 +106,105 @@ Cette vue analytique (`85 + 6`) ne constitue pas une catégorie supplémentaire.
 | kill9 | 6 |
 | Dark 07x Team | 5 |
 | ransomhub | 4 |
+| warlock | 4 |
+| mrdump | 4 |
+| clop | 4 |
+| spacebears | 3 |
+| GDLockerSec | 3 |
+| babuk2 | 3 |
+| arcusmedia | 3 |
+| lynx | 3 |
+| dragonforce | 3 |
+| Keymous | 3 |
+| TheGentlemen | 3 |
+| lockbit5 | 3 |
+| akira | 2 |
+| ransomhouse | 2 |
+| Jabaroot DZ | 2 |
+| B4baYega | 2 |
+| Evil_BYTE_Officiel | 2 |
+| KaruHunters | 2 |
+| direwolf | 2 |
+| Not specified | 2 |
+| radar | 2 |
+| privilege | 2 |
+| BlackShrantac | 2 |
+| tengu | 2 |
+| nova | 2 |
+| apt73 | 1 |
+| Counter | 1 |
+| SevenZeroDay404 | 1 |
+| fog | 1 |
+| Al-Sheikh | 1 |
+| flocker | 1 |
+| hunter | 1 |
+| play | 1 |
+| MisterSam | 1 |
+| Altsiona | 1 |
+| Ghudra | 1 |
+| oblivion666 | 1 |
+| crypto24 | 1 |
+| yn0x1 | 1 |
+| Oxrau1 | 1 |
+| Killer_Bee | 1 |
+| p4xar | 1 |
+| cicada3301 | 1 |
+| gunra | 1 |
+| Team 1722 (claim) | 1 |
+| arkana | 1 |
+| everest | 1 |
+| Datacarry | 1 |
+| worldleaks | 1 |
+| cache | 1 |
+| Criminal syndicate - identities not attributed | 1 |
+| TajineSec / Tajinesec_MA | 1 |
+| 0x0day | 1 |
+| RiseAgainLuigi & B4baYega | 1 |
+| KickingPigs | 1 |
+| MdHackersArmy | 1 |
+| Hepd | 1 |
+| sanji_shi5 | 1 |
+| d4rk4rmy | 1 |
+| Mercobyte | 1 |
+| Gh1nDar | 1 |
+| Wieko | 1 |
+| BabayoSysteam | 1 |
+| Jokeir 07x / Dr Shell 08x (claim) | 1 |
+| RainbowDF | 1 |
+| Chucky_BF | 1 |
+| Hider_Nex / Keymous Plus (claim) | 1 |
+| N1KA | 1 |
+| GhostCrawl | 1 |
+| BIGBROTHER | 1 |
+| OurSec (claim) | 1 |
+| BIGBROTHER (claimed seller) | 1 |
+| Fire Wire | 1 |
+| Keymous (claim) | 1 |
+| obscura | 1 |
+| Tanaka | 1 |
+| yurei | 1 |
+| KILLUAX | 1 |
+| beast | 1 |
+| brotherhood | 1 |
+| medusa | 1 |
+| fuckoverflow (claimed seller) | 1 |
+| Kazu (revendication) | 1 |
+| DBhacker_BF | 1 |
+| EternalRed | 1 |
+| Spirigatito | 1 |
+| stormous | 1 |
+| anisanas2 | 1 |
+| PCP@Kenya (preliminary government attribution) | 1 |
+| Ahlul Sahara | 1 |
+| benzona | 1 |
+| RL000 | 1 |
+| kazu | 1 |
+| AshleyWood2022 | 1 |
+| Habibi | 1 |
+| GhostVector | 1 |
+| camillabf | 1 |
+| LindaBF | 1 |
 
-`Habibi` compte une fiche et n'entre donc pas dans ce top 10.
+## Méthodologie
 
-## 9. Interprétation
-
-La répartition mesure la visibilité AFRINTEL et non la prévalence de toutes les compromissions réelles. Le corpus validé actuel contient **229 incidents canoniques**, dont **85 Data Leak**, et **229 occurrences géographiques**.
-
-## Conclusion
-
-La baseline statistique validée 2025 est de **229 incidents canoniques**. Les vues pays, région, secteur, acteur, preuve et type sont dérivées du même corpus de 229 fiches canoniques.
-
-**AFRINTEL** - TLP:CLEAR
+Les fiches sont classées selon la date de publication ou de première observation documentée. La date de compromission n’est pas déduite.

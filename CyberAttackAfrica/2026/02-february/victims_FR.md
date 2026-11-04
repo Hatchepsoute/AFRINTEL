@@ -4,12 +4,12 @@
 ![Data Source](https://img.shields.io/badge/Source%20des%20données-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Type%20d'Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en Février 2026 (20 victimes)
+# Liste des victimes africaines de cyberattaques en Février 2026 (21 victimes)
 👉🏾 [**English version available here**](./victims.md)
 
 ## Résumé du mois
 
-Février 2026 compte **20 incidents uniques** : **20 Ransomware**, **0 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **14 pays africains**.
+Février 2026 compte **21 incidents uniques** : **20 Ransomware**, **1 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, dans **14 pays africains**.
 
 ### Incidents marquants
 
@@ -30,6 +30,15 @@ Février 2026 compte **20 incidents uniques** : **20 Ransomware**, **0 Data Leak
 - **Statut :** Claim - Unverified
 - **Type d'incident :** Ransomware
 - **Description victime :** Compagnie aérienne somalienne fournissant des services de transport.
+
+### 02 Février 2026
+#### 🇪🇬 Égypte - Canadian International College (CIC)
+- **Acteur / Groupe :** CrowStealer
+- **Secteur :** Éducation / Enseignement supérieur
+- **Site web :** [cic-cairo.edu.eg](https://www.cic-cairo.edu.eg/)
+- **Statut :** Data Fully Published
+- **Type d'incident :** Fuite de données
+- **Description victime :** Premier fournisseur d'enseignement canadien en Égypte, associé à la Cape Breton University (CBU). La fuite (studentsdata.csv) contient 2 925 enregistrements : noms, filières, niveaux, GPA, années.
 
 ### 05 Février 2026
 #### 🇸🇳 Sénégal - DAF SÉNÉGAL (Direction de l'Administration Générale et de l'Équipement)

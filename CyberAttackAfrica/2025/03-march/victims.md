@@ -6,7 +6,7 @@
 
 ## Monthly snapshot
 
-**15 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 9, Data Leak 2, Access Sale 1, Account Takeover 2, System Intrusion 1.
+**16 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 9, Data Leak 2, Access Sale 2, Account Takeover 2, System Intrusion 1.
 
 > Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
@@ -145,6 +145,21 @@
 - **Source type:** National Cyber Authority + Public Media
 - **Analysis:** Ghana's Cyber Security Authority confirmed that the President's X account was compromised and used to promote a fraudulent cryptocurrency project called "Solana Africa". The account was restored. The evidence does not establish compromise of Jubilee House networks or other government systems.
 - **Sources:** [Ghana News Agency - CSA statement on restoration of the President's X account](https://gna.org.gh/2025/03/president-mahamas-x-account-restored/)
+
+### 19 March 2025
+#### 🇦🇴 Angola - Instituto Nacional de Qualificações (INQ)
+- **Actor / Group:** Altsiona
+- **Sector:** Government / Administration
+- **Website:** https://inq.gov.ao/
+- **Initial publication date:** 19 March 2025
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Confidence level:** High
+- **Impact level:** Level 3
+- **Victim Description:** The Instituto Nacional de Qualificações (INQ) is an Angolan public body responsible for supervising the national qualifications system.
+- **Analysis:** A publication attributed to Altsiona offers administrator access to an Axigen mail environment associated with the government domain `inq.gov.ao`. The visible material shows an account-management interface and creation of an institutional mailbox. It establishes the existence of access presented as administrative and operational capability over the mail environment; it does not establish the initial access method, validity period, access beyond the mail domain or any data exfiltration. No credential, session token, password or mailbox content is reproduced.
+- **Source type:** Actor publication and screenshots provided by the user
+- **Public sources:** [INQ - Instituto Nacional de Qualificações](https://inq.gov.ao/)
 
 ### 25 March 2025
 #### 🇪🇬 Egypt - MISR AL MAHABA HOSPITAL

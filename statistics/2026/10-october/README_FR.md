@@ -1,66 +1,69 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Période](https://img.shields.io/badge/Période-Octobre%202026-lightgrey)
-![Publications](https://img.shields.io/badge/Publications-45-critical)
-![Corpus](https://img.shields.io/badge/Corpus-52-blueviolet)
+# Statistiques mensuelles AFRINTEL - octobre 2026
 
-# AFRINTEL : statistiques cyber en Afrique
+Ce corpus validé contient **48 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en octobre 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
-## Octobre 2026
+## Ventilation mensuelle validée
 
-👉🏾 [English version](./README.md)
-
-Ces statistiques dérivent du couple validé [victims_FR.md](../../../CyberAttackAfrica/2026/10-october/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/10-october/victims.md). La cohorte mensuelle comprend **45 fiches publiées ou observées pour la première fois en octobre 2026**. **Sept fiches antérieures** sont conservées séparément, portant le registre complet d’octobre à **52 fiches**.
-
-## Cohorte des publications d’octobre : 45 fiches
-
-| Type | Fiches | Part |
+| Type d incident | Nombre | Part |
 |---|---:|---:|
-| Data Leak | 20 | 44,4 % |
-| Ransomware | 17 | 37,8 % |
-| System Intrusion | 6 | 13,3 % |
-| Access Sale | 2 | 4,4 % |
-| **Total** | **45** | **100 %** |
+| Fuite de données | 22 | 45.8% |
+| Ransomware | 17 | 35.4% |
+| Intrusion système | 6 | 12.5% |
+| Vente d'accès | 3 | 6.2% |
+| **Total** | **48** | **100.0%** |
 
-### Pays
+## Pays les plus représentés
 
-| Groupe de pays | Fiches |
+| Pays | Nombre |
 |---|---:|
-| Maroc | 12 |
 | Égypte | 12 |
-| Afrique du Sud | 7 |
+| Maroc | 12 |
+| Afrique du Sud | 9 |
 | République démocratique du Congo | 2 |
 | Éthiopie | 2 |
-| Autres pays | 10 |
-| **Total** | **45** |
+| Madagascar | 2 |
+| République du Congo | 1 |
+| Rwanda | 1 |
+| Mozambique | 1 |
+| Gabon | 1 |
+| Tunisie | 1 |
+| Bénin | 1 |
+| Nigeria | 1 |
+| Sierra Leone | 1 |
+| Côte d'Ivoire | 1 |
 
-### Secteurs normalisés
+## Acteurs les plus représentés
 
-| Secteur | Fiches |
+| Libellé acteur | Nombre |
 |---|---:|
-| Administration publique | 11 |
-| Technologie / services numériques | 9 |
-| Enseignement supérieur / formation | 5 |
-| Santé | 4 |
-| Finance / assurance | 3 |
-| Industrie / fabrication | 3 |
-| Médias / services publics | 3 |
-| Transport / mobilité | 2 |
-| Recherche / environnement | 2 |
-| Commerce / immobilier | 2 |
-| ONG / services juridiques | 1 |
-| **Total** | **45** |
+| Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication) | 8 |
+| UmBra | 3 |
+| The Gentlemen | 3 |
+| N0n | 3 |
+| Non établi | 2 |
+| Lenken (compte affiché ; identité et affiliation attribuée à la publication) | 2 |
+| Kazu (compte affiché ; identité et affiliation attribuée à la publication) | 2 |
+| List1 (compte affiché dans la publication ; identité et affiliation non établies) | 2 |
+| Non identifié | 2 |
+| SensitiveDarkForum (compte/forum affiché ; identité et affiliation attribuée à la publication) | 1 |
 
-### Profil des éléments de preuve
+## Secteurs les plus représentés
 
-| Catégorie | Fiches |
+| Secteur | Nombre |
 |---|---:|
-| Claim - Unverified | 21 |
-| Claim - Data Sample Published | 17 |
-| Data Fully Published | 2 |
-| Incident confirmé / communication officielle | 4 |
-| Under Investigation | 1 |
-| **Total** | **45** |
+| Santé publique / Administration gouvernementale | 2 |
+| Enseignement supérieur / Université | 2 |
+| Services numériques / Déverrouillage et activation de téléphones et services associés | 1 |
+| Technologie / Distribution de matériel informatique | 1 |
+| Gouvernement / Administration / Habitat et urbanisme | 1 |
+| Technologie / Commerce et distribution de matériel informatique et de sécurité | 1 |
+| Gouvernement / Administration / Investissement et évaluation des politiques publiques | 1 |
+| Santé / Laboratoires médicaux | 1 |
+| Santé / Fertilité et procréation médicalement assistée | 1 |
+| Administration publique / Gestion de la solde | 1 |
 
-Les fiches historiques sont exclues des tableaux mensuels. Les totaux par pays, secteur et type concordent tous à **45**.
+## Méthodologie
 
-[Rapport CTI d’octobre](../../../CyberAttackAfrica/2026/10-october/README_FR.md) · [Fiches victimes](../../../CyberAttackAfrica/2026/10-october/victims_FR.md)
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
+
+[Victim records](../../../CyberAttackAfrica/2026/10-october/victims_FR.md)

@@ -9,7 +9,7 @@
 
 ## Résumé du mois
 
-Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de données**, **1 vente d'accès** et **1 défacement coordonné**, répartis dans **12 pays africains**.
+Janvier 2026 compte **23 incidents uniques** : **17 ransomwares**, **2 fuites de données**, **1 vente d'accès** et **1 défacement coordonné**, répartis dans **12 pays africains**.
 
 ### Incidents marquants
 
@@ -199,7 +199,7 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Analyse :**
   AFRINTEL a consulté la fiche du site de fuite du groupe tengu pour le Groupe Tahkout, marquée Encrypted, avec un volume revendiqué de 83 Go. Outre la page du site de fuite, AFRINTEL a consulté les images de preuve publiées par le groupe, apparemment prises depuis un hôte Windows Server compromis : une console Server Manager affichant les rôles Active Directory Domain Services, DHCP et DNS configurés (cohérent avec un contrôleur de domaine), un partage réseau nommé « Shares » contenant des dossiers intitulés COMMERCIAL, DLG PAIE, PATRIMOINE, Pointage, POINTAGE FACIAL, Ressources Humaines, RH et Suivi Contrats, ainsi qu'un écran de demande de rançon en plein écran indiquant « YOUR SYSTEM HAS BEEN BLOCKED BY TENGU RANSOMWARE ». Ces éléments indiquent que le groupe a obtenu un accès privilégié à l'infrastructure d'identité principale ainsi qu'aux partages liés à la paie, aux RH, au pointage biométrique et aux contrats, et qu'un ransomware a été exécuté sur au moins un hôte. AFRINTEL n'a pas eu accès aux fichiers divulgués eux-mêmes et ne peut pas confirmer le volume de données exfiltrées, l'impact opérationnel complet ni le vecteur d'accès initial.
 
-### 31 Janvier 2026
+### 30 Janvier 2026
 #### 🇲🇦 Maroc - AOM Aviation Group (Air Ocean Maroc)
 - **Acteur / Groupe :** skra1a
 - **Secteur :** Transport Aérien / Aviation Civile
@@ -207,3 +207,48 @@ Janvier 2026 compte **21 incidents uniques** : **17 ransomwares**, **2 fuites de
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Fuite de données
 - **Description victime :** Groupe marocain fournissant des services de transport aérien et d'aviation civile.
+- **Analyse :** L’échantillon publié présente des instructions SQL `INSERT INTO` visant une table de fournisseurs. Les enregistrements visibles contiennent des identifiants de fournisseurs, des noms d’entreprises, des responsables, des adresses professionnelles, des pays, des numéros de téléphone, des adresses e-mail et des dates de création ou de mise à jour. L’extrait associe AOM Aviation Group à un environnement de gestion de fournisseurs du secteur aéronautique et comprend des organisations marocaines ainsi que des partenaires internationaux. La présence de données de contact professionnelles et de références internes expose les personnes et entreprises concernées à des risques de fraude ciblée, d’hameçonnage et d’usurpation de relation commerciale. L’analyse est limitée à l’échantillon visible ; elle ne permet pas d’établir le volume total, l’intégralité des tables concernées, le vecteur d’accès initial ou l’authenticité complète de la base.
+
+### 03 janvier 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Constantia Pharmacy
+
+- **Date de l'incident :** 03 janvier 2026
+- **Date de publication / confirmation :** 05 janvier 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Ransomware `Want_to_cry` observé ; opérateur humain non attribué
+- **Secteur :** Santé / Pharmacie
+- **Statut :** Corroborated
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 2
+- **Description :** **Constantia Pharmacy** est une pharmacie de proximité implantée au **Constantia Village Shopping Centre**, au Cap, en Afrique du Sud. Elle propose des services de dispensation de médicaments, de conseil pharmaceutique et une activité de clinique/soins de proximité. Son activité implique des systèmes métiers pharmaceutiques et des données nécessaires au service des patients ([site officiel](https://constantiapharmacy.co.za/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Incident antérieur confirmé par enquête journalistique :** MyBroadband a documenté début janvier 2026 l’intervention d’un tiers face à un logiciel de chiffrement sur un serveur de Constantia Pharmacy. Le piratage concernait janvier, pas septembre ; la découverte AFRINTEL en septembre ne constitue pas une nouvelle attaque.
+
+- **Sources de vérification complémentaires :** [Source 1](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
+- **Sources / Éléments de preuve :** [MyBroadband, 5 janvier 2026](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
+Constantia Pharmacy est une pharmacie indépendante située au Cap. Le 3 janvier, un chercheur a observé via Shodan un serveur Windows exposé appartenant à son environnement alors qu'un ransomware était en cours d'exécution. La pharmacie et son fournisseur ProPharm ont été alertés et sont intervenus. L'observation et la réponse coordonnée corroborent l'incident ; l'exfiltration, le volume chiffré et l'identité de l'opérateur restent inconnus.
+
+### 12 janvier 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Land and Agricultural Development Bank of South Africa (Land Bank)
+
+- **Date de l'incident :** 12 janvier 2026
+- **Date de confirmation publique détaillée :** 09 mars 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Gouvernement / Banque publique / Finance
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** La **Land and Agricultural Development Bank of South Africa (Land Bank)** est une institution financière de développement spécialisée dans l'**agriculture sud-africaine**. Elle finance les exploitations, les entreprises agro-industrielles et les nouveaux entrants dans les filières agricoles afin de soutenir la production et la transformation du secteur. Elle constitue une banque publique de développement sectorielle, distincte d'une banque commerciale généraliste ([présentation officielle](https://www.landbank.co.za/About-Us/Pages/Our-Business.aspx)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Reconnaissance publique corroborée :** ITWeb a rapporté l’attaque ransomware contre Land Bank survenue en janvier 2026 et les mesures de renforcement prises. Cette fiche a été intégrée en septembre, mais l’incident ne date pas de septembre.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N)
+
+- **Sources / Éléments de preuve :** [ITWeb, 9 mars 2026](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N) ; [ITWeb, 16 janvier 2026](https://www.itweb.co.za/article/land-bank-flags-it-systems-disruption/Kjlyr7wBDRZvk6am)
+
+Le ministre sud-africain des Finances a confirmé une attaque ransomware détectée le 12 janvier après une activité non autorisée. Une partie des serveurs et ordinateurs portables a été chiffrée et des fichiers ont été exfiltrés ; les systèmes ERP, core banking et CRM critiques n'auraient pas été compromis. L'acteur, le volume exact et la durée de présence restent inconnus.

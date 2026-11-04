@@ -1,54 +1,47 @@
 # Comparaison AFRINTEL : août et septembre 2026
 
-👉🏾 [Version anglaise](README.md)
-
 ## Périmètre comparable
 
-La comparaison porte sur les **29 publications rattachées à août** et les **29 publications datées de septembre**. Les 12 fiches antérieures intégrées au corpus de septembre sont exclues afin de ne pas comparer une collecte mensuelle à un corpus rétrospectif élargi.
+Cette comparaison utilise les fichiers victimes bilingues validés : **33 fiches en août** et **33 fiches en septembre**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Août | Septembre | Évolution |
 |---|---:|---:|---:|
-| Publications / fiches mensuelles | 29 | 29 | 0 (stable) |
-| Ransomware | 17 | 20 | +3 (+17,6 %) |
-| Data Leak | 11 | 7 | -4 (-36,4 %) |
-| System Intrusion | 0 | 2 | +2 (nouveau) |
-| Access Sale | 1 | 0 | -1 (-100,0 %) |
-| Autres types | 0 | 0 | 0 |
-| Pays représentés | 10 | 12 | +2 |
+| Total incidents | **33** | **33** | **0 (0.0%)** |
+| Ransomware | 18 | 20 | +2 |
+| Fuite de données | 14 | 11 | -3 |
+| Vente d'accès | 1 | 0 | -1 |
+| Intrusion système | 0 | 2 | +2 |
 
 ```mermaid
 xychart-beta
-    title "Publications mensuelles : août vs septembre 2026"
+    title "Fiches mensuelles : août vs septembre 2026"
     x-axis [Août, Septembre]
-    y-axis "Fiches" 0 --> 30
-    bar [29, 29]
+    y-axis "Records" 0 --> 38
+    bar [33, 33]
 ```
 
-## Types d'incident
+## Countries represented
 
-| Type | Août | Septembre | Évolution |
-|---|---:|---:|---:|
-| Ransomware | 17 | 20 | +3 |
-| Data Leak | 11 | 7 | -4 |
-| System Intrusion | 0 | 2 | +2 |
-| Access Sale | 1 | 0 | -1 |
-| **Total** | **29** | **29** | **0** |
+| Country code | August | September |
+|---|---:|---:|
+| ZA | 12 | 9 |
+| EG | 5 | 8 |
+| MA | 3 | 4 |
+| DZ | 5 | 0 |
+| KE | 2 | 2 |
+| NG | 2 | 2 |
+| AO | 0 | 2 |
+| CM | 1 | 0 |
+| ET | 0 | 1 |
+| GA | 1 | 0 |
+| LY | 1 | 0 |
+| ML | 0 | 1 |
+| MU | 1 | 0 |
+| NA | 0 | 1 |
+| TN | 0 | 1 |
+| TZ | 0 | 1 |
+| UG | 0 | 1 |
 
-## Pays les plus représentés
+## CTI reading
 
-| Pays | Août | Septembre | Évolution |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 11 | 8 | -3 |
-| 🇪🇬 Égypte | 4 | 7 | +3 |
-| 🇩🇿 Algérie | 3 | 0 | -3 |
-| 🇲🇦 Maroc | 3 | 3 | 0 |
-| 🇰🇪 Kenya | 2 | 1 | -1 |
-| 🇳🇬 Nigeria | 2 | 2 | 0 |
-
-Les pays restants totalisent **4 fiches en août** et **8 en septembre**. La variation décrit la visibilité du corpus, pas une évolution démontrée des compromissions réelles.
-
-## Lecture CTI
-
-Septembre conserve le même volume documentaire qu'août, mais la composition change : davantage de revendications ransomware, moins de fuites, et deux System Intrusion. L'apparition de cette dernière catégorie ne prouve pas une hausse réelle des intrusions ; elle reflète la qualification des fiches disponibles. La comparaison ne doit pas intégrer les 12 incidents antérieurs ajoutés rétrospectivement en septembre.
-
-[Statistiques de septembre](../../../statistics/2026/09-september/README_FR.md) · [Rapport de septembre](../../../CyberAttackAfrica/2026/09-september/README_FR.md)
+Le corpus reste à 33 fiches en août et en septembre. Il s agit d une évolution de la composition et des types documentés par AFRINTEL ; cela ne constitue pas, à lui seul, une preuve d une évolution du nombre réel de compromissions.

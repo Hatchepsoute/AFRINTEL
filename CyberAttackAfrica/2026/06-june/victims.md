@@ -766,3 +766,48 @@ No passwords, access tokens, API keys or technical indicators of compromise were
   These volumes, the multi-ministry scope and the attribution to moe.gov.ly remain unverified claims. The supplied capture alone did not contain an exploitable new sample; a local file presented as originating from this publication was subsequently analysed in read-only mode. Detailed results are documented in the [September follow-up note](../09-september/victims.md). The alias **EveN47** differs from **EvaN47** in the 30 June publication and the relationship remains unresolved. The 800 GB figure is retained as a new claim dated 10 September and does not replace the previously claimed 287 GB. This publication is treated as a follow-up to the same claim, not as a separate incident.
 
 - **Sources / Evidence:** Breached forum publication attributed to EveN47 (10 September 2026) and supplied capture; download link not opened.
+
+### June 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - MIP Holdings
+
+- **Incident date:** June 2026, exact date not established
+- **First public notice:** June 26, 2026
+- **Additional regulatory confirmation:** September 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Technology / Software / Service Provider
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** **MIP Holdings** is a South African **FinTech/InsurTech** software and technology provider. Its platforms support policy and contract administration, customer relationship management and workflows for insurers, healthcare operators, lenders and retirement administrators. As a software supplier to multiple organisations, an incident affecting MIP can have potential downstream implications for customers ([MIP official website](https://www.mip.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Confirmed service-provider incident:** on 26 June 2026 LegalWise reported that MIP Holdings had detected unauthorised access to a legacy development/support system. Data belonging to customers of multiple insurers was subsequently implicated; this does not establish intrusion at each client. Initial incident in June.
+
+- **Additional verification sources:** [Source 1](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident)
+
+- **Sources / Evidence:** [LegalWise, June 26, 2026](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident); [TechCentral, September 25, 2026](https://techcentral.co.za/insurers-mip-breach-regulators/286482/)
+
+MIP Holdings identified unauthorised access to a former development and support environment. South Africa's Information Regulator confirmed in September that it was working with MIP to establish the circumstances and number of affected people. The compromise and supply-chain risk are confirmed; volume and vector remain unknown.
+
+### June 14-15, 2026 - integrated September 1, 2026
+#### 🇬🇦 Gabon - Société d'Énergie et d'Eau du Gabon (SEEG)
+
+- **Incident date:** night of June 14-15, 2026
+- **Initial government communication:** June 15, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Energy / Water / Critical Infrastructure
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** The **Société d'Énergie et d'Eau du Gabon (SEEG)** is a Gabonese utility operator involved in **electricity generation, transmission and distribution**, as well as the supply of **drinking water**. Its work relies on industrial infrastructure and management systems essential to continued delivery of services to households and businesses ([SEEG official activities overview](https://www.seeg-gabon.com/activites)).
+
+- **Independent verification as of 18 October 2026:** **Confirmed incident, mechanism requires precision:** the Gabonese government documented the EDAN outage overnight on 14-15 June 2026. SEEG later cited alleged sabotage or malicious IT actions. This does not necessarily establish an external intrusion or exfiltration. June incident.
+
+- **Additional verification sources:** [Source 1](https://gabonofficiel.com/seeg-un-sabotage-informatique-a-paralyse-95-de-son-systeme-la-cybersecurite-desormais-au-coeur-des-enjeux/) ; [Source 2](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/)
+
+- **Sources / Evidence:** [Gabonese Government, June 15, 2026](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/); [Gabon Media Time, August 5, 2026](https://gabonmediatime.com/cybersecurite-la-seeg-revele-avoir-perdu-pres-de-95-de-ses-infrastructures-informatiques/)
+
+A major incident disrupted SEEG systems, including EDAN. The government cited malicious activity and SEEG later described the event as sabotage, with nearly 95% of its IT infrastructure reportedly lost. The technical mechanism, responsible parties and exfiltration remain unknown.

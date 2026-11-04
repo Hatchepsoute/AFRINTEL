@@ -1,99 +1,65 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Period](https://img.shields.io/badge/Period-September%202026-lightgrey)
-![Publications](https://img.shields.io/badge/Publications-29-critical)
-![Corpus](https://img.shields.io/badge/Corpus-41-blueviolet)
+# AFRINTEL monthly statistics - September 2026
 
-# AFRINTEL: cyber statistics in Africa
+This validated corpus contains **33 incidents or documented cases** first published or first observed by AFRINTEL in September 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
 
-## September 2026
+## Validated monthly breakdown
 
-👉🏾 [Version française](./README_FR.md)
-
-## Scope and source of truth
-
-These statistics derive from the validated [victims_FR.md](../../../CyberAttackAfrica/2026/09-september/victims_FR.md) / [victims.md](../../../CyberAttackAfrica/2026/09-september/victims.md) pair. The main statistical cohort contains **29 publications dated in September 2026**. The **12 earlier records** integrated retrospectively are shown separately and do not inflate the monthly charts.
-
-## September publication cohort: 29 records
-
-| Type | Records | Share |
+| Incident type | Count | Share |
 |---|---:|---:|
-| Ransomware | 20 | 69.0% |
-| Data Leak | 7 | 24.1% |
-| System Intrusion | 2 | 6.9% |
-| DDoS, Defacement, Access Sale, Account Takeover, Malware, Operational Fraud | 0 | 0.0% |
-| **Total** | **29** | **100%** |
+| Ransomware | 20 | 60.6% |
+| Data Leak | 11 | 33.3% |
+| System Intrusion | 2 | 6.1% |
+| **Total** | **33** | **100.0%** |
 
-```mermaid
-pie showData
-    title September 2026 publications
-    "Ransomware" : 20
-    "Data Leak" : 7
-    "System Intrusion" : 2
-```
+## Countries most represented
 
-### Countries
+| Country | Count |
+|---|---:|
+| Afrique du Sud | 9 |
+| Égypte | 8 |
+| Maroc | 4 |
+| Nigéria | 2 |
+| Angola | 2 |
+| Kenya | 2 |
+| Mali | 1 |
+| Namibie | 1 |
+| Tunisie | 1 |
+| Éthiopie | 1 |
+| Tanzanie | 1 |
+| Ouganda | 1 |
 
-| Country | Records | Share | Bar |
-|---|---:|---:|---|
-| 🇿🇦 South Africa | 8 | 27.6% | ████████ |
-| 🇪🇬 Egypt | 7 | 24.1% | ███████ |
-| 🇲🇦 Morocco | 3 | 10.3% | ███ |
-| 🇳🇬 Nigeria | 2 | 6.9% | ██ |
-| 🇦🇴 Angola | 2 | 6.9% | ██ |
-| 🇳🇦 Namibia | 1 | 3.4% | █ |
-| 🇹🇳 Tunisia | 1 | 3.4% | █ |
-| 🇪🇹 Ethiopia | 1 | 3.4% | █ |
-| 🇲🇱 Mali | 1 | 3.4% | █ |
-| 🇹🇿 Tanzania | 1 | 3.4% | █ |
-| 🇺🇬 Uganda | 1 | 3.4% | █ |
-| 🇰🇪 Kenya | 1 | 3.4% | █ |
-| **Total** | **29** | **100%** | |
+## Actor labels most represented
 
-### Normalised sectors
-
-| Sector | Records | Share |
-|---|---:|---:|
-| Finance / Insurance / Compliance | 7 | 24.1% |
-| Transport / Logistics | 4 | 13.8% |
-| Real Estate / Construction / Architecture | 4 | 13.8% |
-| Health | 3 | 10.3% |
-| Government / Administration | 3 | 10.3% |
-| Technology / Digital Services | 3 | 10.3% |
-| Education | 2 | 6.9% |
-| Other sectors | 3 | 10.3% |
-| **Total** | **29** | **100%** |
-
-### Displayed actors or accounts
-
-| Label | Records |
+| Actor label | Count |
 |---|---:|
 | krybit | 6 |
 | TheGentlemen | 4 |
 | BLACKLOCKS | 2 |
 | N0n | 2 |
 | lockbit5 | 2 |
-| Other / unattributed | 13 |
-| **Total** | **29** |
+| cattier (compte de forum affiché ; identité non vérifiée) | 1 |
+| sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées) | 1 |
+| xNov | 1 |
+| Unknown | 1 |
+| Kazu (compte affiché ; identité et affiliation non vérifiées) | 1 |
 
-### Observation profile
+## Sectors most represented
 
-The cohort contains **12 Claim - Unverified**, **12 records with a published sample**, **1 Data Fully Published**, **1 Victim Confirmed**, **1 Government Confirmed** and **2 indirect exposures recognised in the analysis**. These categories describe observation maturity; they do not automatically establish full exfiltration, encryption or operational impact.
-
-## Complete corpus after retrospective integration
-
-| Type | Records |
+| Sector | Count |
 |---|---:|
-| Ransomware | 24 |
-| Data Leak | 10 |
-| System Intrusion | 4 |
-| Defacement | 2 |
-| Access Sale | 1 |
-| **Total** | **41** |
+| Assurance | 3 |
+| Transport aérien | 2 |
+| Santé / Régulation des professions médicales et dentaires | 1 |
+| Immobilier / Communauté résidentielle / Gestion immobilière | 1 |
+| Éducation / Formation professionnelle | 1 |
+| Éducation / Enseignement supérieur | 1 |
+| Gouvernement / Services publics numériques | 1 |
+| Distribution de pièces détachées / Transport routier | 1 |
+| Gouvernement / Administration fiscale | 1 |
+| Architecture / Conception et gestion de projets | 1 |
 
-The complete corpus covers **14 countries**. This view supports editorial traceability and must not be confused with the September publication statistics.
+## Methodology
 
-## Arithmetic checks
+The figures are derived once from `victims_FR.md`, checked against `victims.md`, and reused in the reports, comparisons and STIX bundle. A multi-country incident counts once globally; country occurrences may therefore exceed the global total. The corpus measures documented AFRINTEL visibility, not the actual prevalence of cyberattacks.
 
-Country total = sector total = incident-type total = **29** for the monthly cohort. The 12 retrospective records remain outside September chart denominators.
-
-[September CTI report](../../../CyberAttackAfrica/2026/09-september/README.md) · [Victim records](../../../CyberAttackAfrica/2026/09-september/victims.md)
+[Victim records](../../../CyberAttackAfrica/2026/09-september/victims.md)

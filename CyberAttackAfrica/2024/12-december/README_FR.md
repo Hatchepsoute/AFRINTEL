@@ -4,7 +4,7 @@
 
 ## 1. Synthèse exécutive
 
-En Décembre 2024, AFRINTEL retient **17 cyberincidents canoniques dans 12 pays**. Le mois est dominé par **Ransomware (11, 64,7 %)** puis **Data Leak (4, 23,5 %)**. Les pays les plus représentés sont **Égypte (3)**, **Nigeria (3)**, **Afrique du Sud (2)**. Les secteurs les plus visibles sont **Gouvernement / Administration (3)**, **Finance / Banque (2)**, **Télécommunications (2)**. Les labels acteur/groupe les plus fréquents sont `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
+En Décembre 2024, AFRINTEL retient **18 cyberincidents canoniques dans 13 pays**. Le mois est dominé par **Ransomware (11, 61,1 %)** puis **Data Leak (5, 27,8 %)**. Les pays les plus représentés sont **Égypte (3)**, **Nigeria (3)**, **Afrique du Sud (2)**. Les secteurs les plus visibles sont **Gouvernement / Administration (3)**, **Finance / Banque (2)**, **Télécommunications (2)**. Les labels acteur/groupe les plus fréquents sont `FunkSec` (3), `ransomhub` (2), `killsec` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
 
 La maturité de preuve est répartie entre **Claim - Unverified: 10**, **Claim - Data Sample Published: 4**, **Confirmed: 1**, **Corroborated: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
 
@@ -12,9 +12,9 @@ La maturité de preuve est répartie entre **Claim - Unverified: 10**, **Claim -
 
 | Indicateur | Novembre 2024 | Décembre 2024 | Évolution |
 |---|---|---|---|
-| Total | 15 | 17 | +2 (+13,3 %) |
+| Total | 15 | 18 | +3 (+20,0 %) |
 | Ransomware | 12 | 11 | -1 (-8,3 %) |
-| Data Leak | 1 | 4 | +3 (+300,0 %) |
+| Data Leak | 1 | 5 | +4 (+400,0 %) |
 | Access Sale | 2 | 1 | -1 (-50,0 %) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 1 | +1 (nouveau) |
@@ -25,7 +25,7 @@ La maturité de preuve est répartie entre **Claim - Unverified: 10**, **Claim -
 
 ### 1.2 Analyse comparative
 
-Le volume mensuel **augmente de 1 incident(s)**. Les variations structurantes sont : Data Leak 1->3 (+2), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
+Le volume mensuel **augmente de 3 incidents**. Les variations structurantes sont : Data Leak 1->5 (+4), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
@@ -40,9 +40,9 @@ Le volume mensuel **augmente de 1 incident(s)**. Les variations structurantes so
 
 | Type | Fiches | Part |
 |---|---|---|
-| Ransomware | 11 | 68,8 % |
-| Data Leak | 4 | 23,5 % |
-| Access Sale | 1 | 6,2 % |
+| Ransomware | 11 | 61,1 % |
+| Data Leak | 5 | 27,8 % |
+| Access Sale | 1 | 5,6 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 1 | 6,2 % |
 | Account Takeover | 0 | 0,0 % |
@@ -54,7 +54,7 @@ Le volume mensuel **augmente de 1 incident(s)**. Les variations structurantes so
 pie showData
     title Types d'incident - Décembre 2024
     "Ransomware" : 11
-    "Data Leak" : 4
+    "Data Leak" : 5
     "Access Sale" : 1
     "Defacement" : 1
 ```
@@ -75,6 +75,7 @@ pie showData
 | Algérie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tanzanie | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maroc | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## 5. Répartition régionale
 
@@ -479,7 +480,7 @@ timeline
 
 ## 14. Conclusion
 
-Décembre 2024 contient **17 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+Décembre 2024 contient **18 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
 
 👉🏾 [Victimes canoniques](./victims_FR.md)
 

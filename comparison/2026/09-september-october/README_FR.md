@@ -1,30 +1,51 @@
 # Comparaison AFRINTEL : septembre et octobre 2026
 
-👉🏾 [Version anglaise](README.md)
-
 ## Périmètre comparable
 
-La comparaison utilise les **29 publications datées de septembre** et les **45 fiches publiées ou observées pour la première fois en octobre**. Les fiches découvertes rétrospectivement sont exclues des deux dénominateurs mensuels.
+Cette comparaison utilise les fichiers victimes bilingues validés : **33 fiches en septembre** et **48 fiches en octobre**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Septembre | Octobre | Évolution |
 |---|---:|---:|---:|
-| Publications / fiches mensuelles | 29 | 45 | +16 (+55,2 %) |
-| Ransomware | 20 | 17 | -3 (-15,0 %) |
-| Data Leak | 7 | 20 | +13 (+185,7 %) |
-| System Intrusion | 2 | 6 | +4 (+200,0 %) |
-| Access Sale | 0 | 2 | +2 (nouvelle catégorie observée) |
-| **Total** | **29** | **45** | **+16** |
+| Total incidents | **33** | **48** | **+15 (+45.5%)** |
+| Ransomware | 20 | 17 | -3 |
+| Fuite de données | 11 | 22 | +11 |
+| Vente d'accès | 0 | 3 | +3 |
+| Intrusion système | 2 | 6 | +4 |
 
 ```mermaid
 xychart-beta
-    title "Publications mensuelles : septembre vs octobre 2026"
+    title "Fiches mensuelles : septembre vs octobre 2026"
     x-axis [Septembre, Octobre]
-    y-axis "Fiches" 0 --> 50
-    bar [29, 45]
+    y-axis "Records" 0 --> 53
+    bar [33, 48]
 ```
 
-## Lecture CTI
+## Countries represented
 
-Octobre présente un corpus documentaire plus important et un déplacement marqué vers les fiches Data Leak, tandis que le Ransomware passe de 20 à 17 fiches. Cette évolution décrit la composition des collectes mensuelles validées. Les 7 fiches historiques du registre d’octobre sont exclues de cette comparaison.
+| Country code | September | October |
+|---|---:|---:|
+| EG | 8 | 12 |
+| ZA | 9 | 9 |
+| MA | 4 | 12 |
+| ET | 1 | 2 |
+| NG | 2 | 1 |
+| AO | 2 | 0 |
+| CD | 0 | 2 |
+| KE | 2 | 0 |
+| MG | 0 | 2 |
+| TN | 1 | 1 |
+| BJ | 0 | 1 |
+| CG | 0 | 1 |
+| CI | 0 | 1 |
+| GA | 0 | 1 |
+| ML | 1 | 0 |
+| MZ | 0 | 1 |
+| NA | 1 | 0 |
+| RW | 0 | 1 |
+| SL | 0 | 1 |
+| TZ | 1 | 0 |
+| UG | 1 | 0 |
 
-[Statistiques d’octobre](../../../statistics/2026/10-october/README_FR.md) · [Rapport d’octobre](../../../CyberAttackAfrica/2026/10-october/README_FR.md)
+## CTI reading
+
+Le corpus évolue de 33 à 48 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

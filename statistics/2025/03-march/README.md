@@ -1,53 +1,66 @@
-# AFRINTEL CTI statistics - March 2025
+# AFRINTEL CTI report - Cyber threats in Africa - March 2025
 
-👉🏾 [French version](./README_FR.md)
+Documented corpus : **16 incidents**.
 
 ## Summary
 
-This statistical sheet is compiled from the 11 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+The corpus is led by **Ransomware (9, 56.2%)**. Figures represent AFRINTEL documented visibility.
 
-| Indicator | Value |
-|---|---:|
-| Total incidents | 11 |
-| Ransomware | 9 |
-| Data leaks | 1 |
-| Access sales | 1 |
-| Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 7 |
-| Sectors | 9 |
-| Actors / sources | 9 |
+## Incident types
 
-## 1. Country
 
-| Country | Incidents |
-|---|---:|
-| 🇪🇬 Egypt | 3 |
-| 🇳🇬 Nigeria | 2 |
-| 🇿🇦 South Africa | 2 |
-| 🇧🇼 Botswana | 1 |
-| 🇹🇿 Tanzania | 1 |
-| 🇧🇫 Burkina Faso | 1 |
-| 🇷🇼 Rwanda | 1 |
+| Type | Records | Part |
+| Ransomware | 9 | 56.2% |
+| Data Leak | 2 | 12.5% |
+| Account Takeover | 2 | 12.5% |
+| Access Sale | 2 | 12.5% |
+| System Intrusion | 1 | 6.2% |
+| **Total** | **16** | **100 %** |
 
-## 2. Sector
+## Countries
 
-| Sector | Incidents |
-|---|---:|
-| Technology Consulting | 3 |
-| Education / HR Services | 1 |
-| Government / Healthcare Regulation | 1 |
-| Retail (Distribution) | 1 |
-| Education / Private Schooling | 1 |
-| Healthcare / Hospital Sector | 1 |
-| Finance | 1 |
-| Healthcare / Public Health | 1 |
-| Public administrations (Health) | 1 |
 
-## 3. Actor / source
+| Country | Records |
+| Afrique du Sud | 5 |
+| Égypte | 3 |
+| Nigeria | 2 |
+| Botswana | 1 |
+| Tanzanie | 1 |
+| Ghana | 1 |
+| Angola | 1 |
+| Burkina Faso | 1 |
+| Rwanda | 1 |
+| **Total** | **16** |
 
-| Actor / source | Incidents |
-|---|---:|
+## Regions
+
+
+| Region | Occurrences |
+| Southern Africa | 7 |
+| West Africa | 4 |
+| North Africa | 3 |
+| East Africa | 2 |
+| **Total** | **16** |
+
+## Normalized sectors
+
+
+| Sector | Records | Part |
+| Government / Administration | 5 | 31.2% |
+| Technology / IT | 3 | 18.8% |
+| Education / University | 2 | 12.5% |
+| Healthcare / Medical | 2 | 12.5% |
+| Commerce / E-commerce | 1 | 6.2% |
+| Construction / Real Estate | 1 | 6.2% |
+| Agriculture / Agribusiness | 1 | 6.2% |
+| Finance / Banking | 1 | 6.2% |
+| **Total** | **16** | **100 %** |
+
+## Actors / groups
+
+
+| Actor / group | Records |
+| Unknown | 4 |
 | arcusmedia | 2 |
 | nightspire | 2 |
 | play | 1 |
@@ -55,20 +68,10 @@ This statistical sheet is compiled from the 11 cards in the monthly victim file.
 | MisterSam | 1 |
 | lynx | 1 |
 | funksec | 1 |
+| Altsiona | 1 |
 | Ghudra | 1 |
 | babuk2 | 1 |
 
-## 4. Type
+## Methodology
 
-| Type | Incidents |
-|---|---:|
-| Ransomware | 9 |
-| Data Leak | 1 |
-| Access Sale | 1 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
-
-**AFRINTEL** - TLP:CLEAR
-
+Records are assigned by publication date or first documented observation. No compromise date is inferred.

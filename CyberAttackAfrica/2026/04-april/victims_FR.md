@@ -56,7 +56,7 @@
 - **Date de découverte AFRINTEL :** 22 octobre 2026
 - **Période statistique d'attribution :** Avril 2026 — H1 2026
 - **Mois d'intégration au référentiel :** Octobre 2026 (découverte rétrospective)
-- **Acteur / Groupe :** Non identifié
+- **Acteur / Groupe :** Unidentified
 - **Secteur :** Banque et services financiers
 - **Statut :** Under Investigation - Alleged
 - **Type d'incident :** Operational Fraud
@@ -889,6 +889,67 @@
 - **Note CTI :**
   L’acteur affirme disposer d’un accès étendu à l’infrastructure du football régional algérien. Toutefois, l’étendue exacte de la compromission et l’authenticité complète des accès revendiqués ne peuvent pas être confirmées indépendamment à ce stade.
 
+### 18 avril 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Ahmed Al-Kadi Private Hospital
+
+- **Date de l'incident :** 18 avril 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Santé / Hôpital privé
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** **Ahmed Al-Kadi Private Hospital** est un hôpital privé de **Mayville, à Durban**, en Afrique du Sud. Développé par l'**Islamic Medical Association of South Africa**, l'établissement a ouvert en 2017 et indique disposer de **163 lits**, avec des activités de soins hospitaliers et des spécialités médicales et chirurgicales. Sa mission déclarée est d'accueillir les patients sans distinction d'origine ou de religion ([site officiel](https://ahmedalkadi.com/about-us/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** l’hôpital annonce un accès non autorisé le 18 avril 2026, suivi du déploiement d’un ransomware ayant chiffré une partie de son environnement ; notification POPIA et signalement au régulateur. L’incident n’est pas daté de septembre.
+
+- **Sources de vérification complémentaires :** [Source 1](https://ahmedalkadi.com/notification-of-data-incident/)
+
+- **Sources / Éléments de preuve :** [Notification officielle de l'hôpital](https://ahmedalkadi.com/notification-of-data-incident/)
+
+L'hôpital a confirmé qu'un tiers avait accédé à son environnement informatique et déployé un ransomware le 18 avril. Une partie de l'environnement a été chiffrée, puis contenue et restaurée avec l'aide de spécialistes externes. Le vecteur, l'étendue du chiffrement et l'exfiltration restent inconnus.
+
+### 28 avril 2026 - intégré le 01 septembre 2026
+#### 🇰🇪 Kenya - TikoHUB
+
+- **Date de l'incident :** 28 avril 2026 (date de publication de l'offre d'accès ; compromission initiale non établie)
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Date de publication initiale :** 28 avril 2026 à 23:26 (heure affichée ; fuseau non indiqué)
+- **Acteur / Groupe :** DarkMafiaX (compte affiché ; identité et affiliation non vérifiées)
+- **Secteur :** Billetterie / Événementiel / Services numériques
+- **Site web :** [tikohub.co.ke](https://www.tikohub.co.ke/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Access Sale
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 4
+
+- **Description :** **TikoHUB** est une plateforme kényane de **billetterie et de services événementiels** destinée aux organisateurs et aux participants. Son offre est centrée sur la découverte et la gestion d'événements, avec des parcours d'achat ou de participation en ligne. L'existence d'un portail public ne valide toutefois pas les privilèges d'administration prétendument proposés par le vendeur d'accès ([présentation officielle TikoHUB](https://www.tikohub.co.ke/about_us.php)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Aucune preuve publique indépendante d’une vente d’accès à TikoHUB ni communication de la société n’a été identifiée ; la publication suspecte date d’avril 2026 et son intégration au suivi est ultérieure.
+
+  **Incident documenté dans la fiche AFRINTEL :** Une publication attribuée au compte DarkMafiaX propose un accès administrateur présenté comme lié à TikoHUB, une plateforme kényane de billetterie et de gestion d'événements. La publication et les identifiants visibles n'ont pas été testés ; AFRINTEL ne confirme ni leur validité, ni l'accès effectif, ni une compromission de TikoHUB.
+
+- **Analyse :**
+
+  **Observed :** La capture montre une publication intitulée « Admin Access To Tikohub.co.ke | Kenya », datée du 28 avril 2026 à 23:26 selon l'horodatage affiché. Elle contient une URL de ressource d'administration et des champs présentés comme un nom d'utilisateur et un mot de passe. Ces valeurs sont volontairement non reproduites et n'ont pas été testées. La capture a été communiquée à AFRINTEL le 24 septembre 2026.
+
+  **Assumption :** Le domaine `tikohub.co.ke` correspond à une plateforme kényane de billetterie ; cette correspondance rend la cible plausible. La publication peut toutefois être erronée, recyclée, falsifiée ou concerner un accès limité à un composant tiers. La date du 28 avril correspond à la publication observée, pas nécessairement à la compromission initiale.
+
+  **Unknown :** validité actuelle des identifiants, privilèges réels, système concerné, mode d'obtention, durée d'accès, exploitation effective, données consultées ou exfiltrées, confirmation par TikoHUB et éventuelle remédiation restent inconnus.
+
+- **Périmètre de l'échantillon observé :** une capture d'une publication de forum ; aucune connexion, validation d'identifiant, téléchargement, interaction avec l'endpoint ou copie de secret n'a été réalisée.
+
+- **Évaluation des risques :** si l'offre est authentique, un accès administrateur pourrait permettre la modification de contenus, l'accès à des données de clients ou d'organisateurs, la fraude aux billets et la compromission de comptes. Cette fiche ne confirme aucun de ces effets.
+
+- **Recommandations :**
+1. Préserver les journaux d'authentification, d'administration, d'API et d'hébergement depuis le 28 avril 2026.
+2. Réinitialiser les comptes administrateurs potentiellement concernés et révoquer les sessions selon l'enquête défensive de TikoHUB.
+3. Vérifier les changements de privilèges, exports, créations de comptes et modifications de billets ou d'événements.
+4. Ne pas tester les identifiants publiés ni ouvrir l'URL sensible depuis la capture.
+5. Surveiller l'usurpation, la fraude aux billets et les réutilisations de secrets.
+
+- **Sources / Éléments de preuve :** capture fournie à AFRINTEL le 24 septembre 2026 ; site public [TikoHUB](https://www.tikohub.co.ke/).
 
 ### Observations rétrospectives Keymous+ - avril 2026
 

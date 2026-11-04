@@ -1610,8 +1610,51 @@ AFRINTEL did not perform any authentication attempts in order to avoid unauthori
 - **Sector:** Government / Public administration
 - **Website:** [gauteng.gov.za](https://www.gauteng.gov.za)
 - **Status:** Claim - Data Sample Published
-- **Incident type:** Ransomware / extortion context
+- **Incident type:** Data Leak
 - **Counting status:** Related claim - non-canonical. Included in the May publication-activity count, excluded from the canonical incident total because the relationship with the XP95 claim recorded on 13 March 2026 is unresolved.
 - **Chronology assessment:** This is the second observed claim concerning the same victim. It is tracked as a May publication record, not as a confirmed second attack.
 - **Description:** Kazu advertises a dataset attributed to the Gauteng Provincial Government for **USD 25,000**, claiming **3,673,556 files** and approximately **3.8 TB** of data. The supplied local archive contains **1,905 files** and approximately **1.905 GB**; its SHA-256 is `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
 - **Analysis:** The overlap in victim and claimed volume with the XP95 publication is compatible with a duplicate claim, transfer/resale, or a separate exposure. The available evidence does not establish which explanation is correct, nor does it demonstrate encryption or a distinct intrusion. No personal data or individual document content is reproduced.
+
+### May 23, 2026
+
+#### 🇲🇦 Morocco - Ministry of Foreign Affairs [Data Leak]
+- **Initial publication date:** 23 May 2026 at 21:29 (displayed timestamp; timezone not specified)
+- **AFRINTEL discovery date:** 29 October 2026
+- **Actor / Group:** Keymous (displayed account; identity and affiliation unverified)
+- **Sector:** Government / Foreign Affairs / Public Administration
+- **Institutional website:** [diplomatie.ma](https://diplomatie.ma/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium for attribution of the sample to a ministry candidate list; Low to Medium for compromise of the ministry system
+- **Impact level:** Level 3
+- **Victim description:** Morocco's Ministry of Foreign Affairs is the public institution responsible for the country's foreign policy and diplomatic relations. The Keymous post associates the institution with a candidate list, without establishing the source system or obtaining ministry confirmation.
+- **Analysis:** The post advertises a list of **8,440 lines** containing full names and registration numbers. The visible sample supplied to AFRINTEL contains **46 readable name/registration-number pairs**, displayed as concatenated text rather than as a directly usable tabular file. It therefore exposes identity data and administrative candidate identifiers. Individual values are not reproduced in the repository.
+
+  The post title, reference to the Moroccan ministry, repeated “full name / registration number” structure and candidate identifiers support the existence of a candidate-data exposure. The sources consulted do not specify whether the file originated from a ministry system, whether the claimed **8,440 lines** are complete or authentic, or whether a technical compromise of the ministry was confirmed.
+
+  The exposure could facilitate targeted phishing, candidate impersonation, administrative fraud and identity correlation. The visible formula-like prefix was not executed or interpreted as a formula; no source file was downloaded.
+- **Evidence limitations:** Analysis is limited to the post and visible sample supplied; the advertised file, schema, hash, complete 8,440-line corpus and technical provenance were not verified. No name, registration number or other raw personal data is published.
+- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 29 October 2026. The initial 23 May 2026 publication is retained as historical context and does not create a duplicate in the October tracking set.
+
+### Late May 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Centre for High Performance Computing (CHPC) / Lengau Supercomputer
+
+- **Incident date:** late May 2026
+- **Detailed public confirmation:** August 24, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Research / Strategic Scientific Infrastructure
+- **Status:** Victim Confirmed
+- **Incident type:** System Intrusion
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** The **Centre for High Performance Computing (CHPC)** is South Africa's national **high-performance computing** facility within the **CSIR** research ecosystem and the NICIS infrastructure programme. It provides scientific computing resources to universities and research organisations; **Lengau** is a flagship supercomputer associated with the facility. CHPC is therefore a research infrastructure rather than an ordinary commercial company ([CHPC official profile](https://www.chpc.ac.za/about-the-chpc/)).
+
+- **Independent verification as of 18 October 2026:** **Institutionally corroborated:** the CSIR and a parliamentary answer described compromise of the Lengau cluster in late May 2026, associated with vulnerabilities in aging systems and service disruption. Do not categorise this as a September ransomware event.
+
+- **Additional verification sources:** [Source 1](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
+- **Sources / Evidence:** [ITWeb, August 24, 2026](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
+
+A parliamentary response confirmed an incident affecting part of the Lengau HPC environment in late May, linked to vulnerabilities in an ageing environment. Access depth, dwell time and any data viewed remain unknown.

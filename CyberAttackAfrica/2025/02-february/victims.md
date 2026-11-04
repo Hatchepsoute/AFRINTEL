@@ -71,6 +71,26 @@
 - **Incident type:** Ransomware
 - **Victim Description:** The South African Weather Service (SAWS) is South Africa's national meteorological service, providing weather forecasts and warnings.
 
+### 12 February 2025
+#### 🇿🇦 South Africa - Unique Personnel (`unique.co.za`)
+- **Actor / Group:** Al-Sheikh
+- **Sector:** Professional / Recruitment and human-resources services
+- **Website:** [unique.co.za](https://www.unique.co.za/)
+- **Initial publication date:** 12 February 2025 at 13:52, according to the displayed post timestamp
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High for domain identification and existence of the publication; Medium for attribution of the full corpus to Unique Personnel
+- **Impact level:** Level 4 (potential)
+- **Source type:** Forum publication with visible sample; official company website and public company documentation
+- **Victim description:** Unique Personnel is a South African recruitment, placement and human-resources services company that processes candidate, client and recruiter data.
+- **Analysis:** The publication offers for sale a database associated with `unique.co.za` and displays four named datasets: `tbl_auth_users`, `tbl_clients`, `tbl_candidate_personal_info` and `tbl_candidates`. The visible text describes a recruitment platform containing user accounts, client profiles, candidate personal data and recruitment information. The visible sample exposes headers and records containing email addresses, roles, account identifiers, company information, industry fields, contact details, qualifications and candidate personal data. Values resembling plaintext passwords are visible in the sample; AFRINTEL does not reproduce or test them.
+- **Observed:** The publication is dated 12 February 2025 and is attributed to the Al-Sheikh account. It displays the `unique.co.za` domain, a description consistent with Unique Personnel's recruitment business and a tabular sample corresponding to accounts, clients and candidates.
+- **Assumption:** If authentic, the exposure could affect Unique Personnel candidates, employees, recruiters and client companies, creating risks of impersonation, targeted phishing, recruitment fraud and password reuse.
+- **Unknown:** Access vector, extraction date, completeness of the four tables, number of unique individuals, current validity of visible credentials, technical origin of the corpus, full-database publication and any confirmation by Unique Personnel remain unknown from the available material.
+- **Analysis scope and limitations:** Detailed analysis of the elements visible in the supplied capture, limited to that sample; the complete source file, hashes, full schema and raw data were not available. No personal data, email address, identifier or password is reproduced in the repository.
+- **Risk assessment:** Potential exposure of candidate and client data could enable phishing, recruiter impersonation, fake job offers, document fraud and secondary account compromise.
+- **Sources / Evidence:** supplied publication capture; [Unique Personnel official website](https://www.unique.co.za/ReportFraud.aspx); [Unique Personnel PAIA/POPIA manual](https://staging.unique.co.za/documents/PAIA_POPIA_manual_Unique_Personnel.pdf). Raw data remains outside the repository.
+
 ### 19 February 2025
 #### 🇿🇲 Zambia - Government Services Portal (services.gov.zm)
 - **Ransomware Group:** flocker

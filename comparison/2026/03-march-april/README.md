@@ -1,52 +1,53 @@
-# AFRINTEL comparison: March vs April 2026
+# AFRINTEL comparison: March and April 2026
 
-👉🏾 [Version française](README_FR.md)
+## Comparable scope
 
-## Executive comparison
+This comparison uses the validated bilingual victim files: **41 records in March** and **72 records in April**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | March | April | Change |
 |---|---:|---:|---:|
-| Total incidents | 41 | 60 | +19 (+46.3%) |
-| Ransomware | 19 | 20 | +1 (+5.3%) |
-| Data leaks and access sales | 22 | 40 | +18 (+81.8%) |
-| Geographic labels represented | 14 | 16 | +2 |
+| Total incidents | **41** | **72** | **+31 (+75.6%)** |
+| Ransomware | 19 | 21 | +2 |
+| Data Leak | 21 | 40 | +19 |
+| Access Sale | 0 | 1 | +1 |
+| DDoS | 0 | 9 | +9 |
+| Operational Fraud | 1 | 1 | 0 |
 
-Data leaks and access sales did most of the work behind April's jump. One April record spans several African countries but still only counts once in the global total.
+```mermaid
+xychart-beta
+    title "Monthly records: March vs April 2026"
+    x-axis [March, April]
+    y-axis "Records" 0 --> 77
+    bar [41, 72]
+```
 
-## Country evolution
+## Countries represented
 
-| Country | March | April | Change |
-|---|---:|---:|---:|
-| 🇲🇦 Morocco | 8 | 17 | +9 |
-| 🇪🇬 Egypt | 8 | 11 | +3 |
-| 🇿🇦 South Africa | 13 | 8 | -5 |
-| 🇳🇬 Nigeria | 2 | 4 | +2 |
-| 🇩🇿 Algeria | 1 | 4 | +3 |
-| 🇹🇳 Tunisia | 1 | 4 | +3 |
-| 🇰🇪 Kenya | 0 | 2 | +2 |
-| 🇬🇭 Ghana | 0 | 2 | +2 |
+| Country code | March | April |
+|---|---:|---:|
+| EG | 8 | 19 |
+| MA | 8 | 17 |
+| ZA | 14 | 10 |
+| NG | 2 | 5 |
+| DZ | 1 | 4 |
+| TN | 1 | 4 |
+| KE | 0 | 3 |
+| GH | 0 | 2 |
+| SN | 1 | 1 |
+| ZM | 1 | 1 |
+| AO | 0 | 1 |
+| BJ | 0 | 1 |
+| BW | 0 | 1 |
+| ET | 0 | 1 |
+| GN | 1 | 0 |
+| MG | 1 | 0 |
+| NA | 1 | 0 |
+| RW | 0 | 1 |
+| SC | 0 | 1 |
+| SD | 0 | 1 |
+| TZ | 1 | 0 |
+| UG | 0 | 1 |
 
-## Sector evolution
+## CTI reading
 
-Government/Administration stayed on top, climbing from 10 to 15 records. Education/University edged up from 7 to 8. April also brought 7 Industry/Automotive/Manufacturing/Construction/Engineering cases, 5 Finance/Banking/Insurance/Wealth cases, and 4 apiece in Healthcare/Medical, Sports and E-commerce/Retail.
-
-## Actor evolution
-
-CrowStealer led March with 5, APT73/BASHE at 4. April's lineup changed: Grubder at 7, then Payload, APT73/BASHE and TheGentlemen tied at 4.
-
-## CTI assessment
-
-Ransomware barely shifted between the two months. What actually moved was leak and access-sale volume, 22 to 40, and Morocco took over as the leading country in April.
-
-## SOC priorities
-
-1. Prioritize identity and privileged-access monitoring in public administration and education.
-2. Alert on large outbound transfers, unusual database exports and archive staging.
-3. Correlate repeated actor publications with victim, domain and date to avoid double counting.
-4. Strengthen monitoring for Moroccan, Egyptian and South African organizations.
-
-## Conclusion
-
-April closed at 60 incidents, 19 more than March. Data leaks and access sales accounted for 18 of those 19 extra records, almost the entire increase.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+The corpus changes from 41 to 72 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.

@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - Novembre 2024 - corpus canonique (15 fiches)
+# Cyberincidents AFRINTEL - Novembre 2024 - corpus canonique (16 fiches)
 
 👉🏾 [English version](./victims.md)
 
@@ -22,6 +22,22 @@
 
 - **Qualification de la preuve:** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
 
+### 3 Novembre 2024
+
+#### 🇩🇿 Algérie - Original Shop Algeria
+- **Acteur / Groupe:** X0Frankenstein
+- **Secteur:** Commerce / E-commerce
+- **Site web:** [originalshopalgerie.com](https://originalshopalgerie.com/)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium
+- **Niveau d'impact:** Level 3
+- **Description victime:** Original Shop Algeria est une entreprise algérienne de commerce en ligne opérant sur le domaine `originalshopalgerie.com`.
+- **Description de la publication:** Une publication datée du 3 novembre 2024 associe au domaine un fichier CSV présenté comme une base de données d'environ 11 000 lignes. La publication indique également une période de fuite revendiquée en 2022.
+- **Analyse:** L'échantillon visible présente une structure de comptes utilisateurs comprenant des identifiants, des informations de profil et de contact, des adresses, des statuts de compte, des horodatages et des éléments liés à l'authentification. Les valeurs personnelles, mots de passe, jetons et autres secrets ne sont pas reproduits. La date de publication est établie par la source observée ; la date d'accès initial, l'exhaustivité de la base, la validité actuelle des secrets et la confirmation par la victime restent inconnues.
+
+----------------------------
+
 ### 4 Novembre 2024
 
 #### 🇹🇿 Tanzanie - College of Business Education (CBE)
@@ -35,8 +51,6 @@
 - **Description victime:** Le College of Business Education (CBE) est un établissement tanzanien d'enseignement supérieur proposant des formations en commerce, gestion, comptabilité et domaines professionnels associés.
 
 ----------------------------
-
-### 4 Novembre 2024
 
 #### 🇸🇩 Soudan - Kenana Sugar Company
 - **Acteur / Groupe:** ransomhub

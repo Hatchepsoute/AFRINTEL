@@ -6,7 +6,7 @@
 
 ## Synthèse mensuelle
 
-**15 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 9, Data Leak 2, Access Sale 1, Account Takeover 2, System Intrusion 1.
+**16 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 9, Data Leak 2, Access Sale 2, Account Takeover 2, System Intrusion 1.
 
 > Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
@@ -145,6 +145,21 @@
 - **Type de source:** National Cyber Authority + Public Media
 - **Analyse:** La Cyber Security Authority du Ghana a confirmé que le compte X du président avait été compromis et utilisé pour promouvoir un projet frauduleux de cryptomonnaie appelé "Solana Africa". Le compte a ensuite été restauré. Les éléments n'établissent pas une compromission des réseaux de Jubilee House ni d'autres systèmes gouvernementaux.
 - **Sources:** [Ghana News Agency - déclaration de la CSA sur la restauration du compte X présidentiel](https://gna.org.gh/2025/03/president-mahamas-x-account-restored/)
+
+### 19 Mars 2025
+#### 🇦🇴 Angola - Instituto Nacional de Qualificações (INQ)
+- **Acteur / Groupe:** Altsiona
+- **Secteur:** Gouvernement / Administration
+- **Site web:** https://inq.gov.ao/
+- **Date de publication initiale:** 19 mars 2025
+- **Statut:** Claim - Unverified
+- **Type d'incident:** Access Sale
+- **Niveau de confiance:** High
+- **Niveau d'impact:** Level 3
+- **Description victime:** L'Instituto Nacional de Qualificações (INQ) est un organisme public angolais chargé de superviser le système national des qualifications.
+- **Analyse:** Une publication attribuée à Altsiona propose un accès administrateur à un environnement de messagerie Axigen associé au domaine gouvernemental `inq.gov.ao`. Les éléments visibles montrent une interface de gestion des comptes et la création d'une boîte aux lettres institutionnelle. Ils établissent l'existence d'un accès présenté comme administrateur et d'une capacité opérationnelle sur la messagerie ; ils ne permettent pas de déterminer la méthode d'accès initiale, la durée de validité, l'étendue de l'accès au-delà du domaine de messagerie ni une éventuelle exfiltration de données. Aucun identifiant, jeton de session, mot de passe ou contenu de boîte aux lettres n'est reproduit.
+- **Type de source:** Publication d'acteur et captures d'écran fournies
+- **Sources publiques:** [INQ - Instituto Nacional de Qualificações](https://inq.gov.ao/)
 
 ### 25 Mars 2025
 #### 🇪🇬 Égypte - MISR AL MAHABA HOSPITAL

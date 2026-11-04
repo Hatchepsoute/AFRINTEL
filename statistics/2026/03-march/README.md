@@ -1,145 +1,66 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Statistics-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-March%202026-lightgrey)
+# AFRINTEL monthly statistics - March 2026
 
-# AFRINTEL - Africa Cyber Statistics (March 2026)
+This validated corpus contains **41 incidents or documented cases** first published or first observed by AFRINTEL in March 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
 
-## Global overview
+## Validated monthly breakdown
 
-| Indicator | Value |
-|---|---|
-| Victims recorded | 41 |
-| Countries affected | 12 (plus 1 multi-country incident) |
-| Attributed threat actors | 26 |
-| Incidents without public attribution | 1 |
-| Ransomware incidents | 19 |
-| Data breaches / intrusions | 22 |
+| Incident type | Count | Share |
+|---|---:|---:|
+| Data Leak | 21 | 51.2% |
+| Ransomware | 19 | 45.2% |
+| Operational Fraud | 1 | 2.4% |
+| **Total** | **41** | **100.0%** |
 
-```mermaid
-pie
-    title Incident distribution
-    "Ransomware (19)" : 19
-    "Breaches / Intrusions (22)" : 22
-```
+## Countries most represented
 
-## Most affected countries
+| Country | Count |
+|---|---:|
+| Afrique du Sud | 14 |
+| Égypte | 9 |
+| Maroc | 8 |
+| Nigeria | 2 |
+| Zambie | 1 |
+| Algérie | 1 |
+| 🌍 Afrique (Multi-pays) | 1 |
+| Madagascar | 1 |
+| Tunisie | 1 |
+| Namibie | 1 |
+| Sénégal | 1 |
+| Tanzanie | 1 |
+| Guinée | 1 |
 
-| Country | Victims |
-|---|---|
-| 🇿🇦 South Africa | 13 |
-| 🇲🇦 Morocco | 8 |
-| 🇪🇬 Egypt | 9 |
-| 🇳🇬 Nigeria | 2 |
-| 🌍 Multi-country | 1 |
-| 🇩🇿 Algeria | 1 |
-| 🇸🇳 Senegal | 1 |
-| 🇬🇳 Guinea | 1 |
-| 🇿🇲 Zambia | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇹🇳 Tunisia | 1 |
-| 🇳🇦 Namibia | 1 |
-| 🇹🇿 Tanzania | 1 |
+## Actor labels most represented
 
-```mermaid
-xychart
-    title "Victims by country"
-    x-axis ["ZA","MA","EG","NG","MULTI","DZ","SN","GN","ZM","MG","TN","NA","TZ"]
-    y-axis "Victims" 0 --> 15
-    bar [13,8,9,2,1,1,1,1,1,1,1,1,1]
-```
-
-## Threat actor distribution
-
-| Actor | Victims |
-|---|---|
+| Actor label | Count |
+|---|---:|
 | CrowStealer | 5 |
-| APT73/BASHE | 4 |
-| XP95 | 3 |
+| APT73 / Bashe | 4 |
 | xNov | 3 |
+| XP95 | 3 |
 | Qilin | 2 |
 | TheGentlemen | 2 |
 | INC Ransom | 2 |
+| LockBit 5.0 | 1 |
+| Spirigatito | 1 |
+| Grubder | 1 |
 
-```mermaid
-pie
-    title Most active actors
-    "CrowStealer (5)" : 5
-    "APT73/BASHE (4)" : 4
-    "XP95 (3)" : 3
-    "xNov (3)" : 3
-    "Qilin (2)" : 2
-    "TheGentlemen (2)" : 2
-    "INC Ransom (2)" : 2
-```
+## Sectors most represented
 
-## Sector distribution
+| Sector | Count |
+|---|---:|
+| Éducation / Enseignement supérieur | 2 |
+| Ingénierie et construction | 2 |
+| Télécommunications | 2 |
+| Services d'assurance | 2 |
+| Finance / Banque | 2 |
+| Automobile (Distribution et Services) | 1 |
+| Gouvernement / Protection sociale | 1 |
+| Sport / Loisirs | 1 |
+| Technologie / Services aux entreprises (CRM) | 1 |
+| E-commerce / Petites annonces en ligne | 1 |
 
-| Sector | Incidents |
-|---|---|
-| Government / Administration | 9 |
-| Education / University | 7 |
-| Health | 4 |
-| Insurance | 3 |
-| Telecommunications | 3 |
-| Engineering / Construction | 3 |
-| Finance / Banking | 2 |
-| IT / Consulting | 2 |
-| Fintech | 1 |
-| E-commerce / Classifieds | 1 |
-| Real Estate / Classifieds | 1 |
-| Sports / Leisure | 1 |
-| Aviation | 1 |
-| Wealth Management | 1 |
-| Research / Think tank | 1 |
-| Food / Beverage | 1 |
+## Methodology
 
-```mermaid
-pie
-    title Targeted sectors
-    "Government (9)" : 9
-    "Education (7)" : 7
-    "Health (4)" : 4
-    "Insurance (3)" : 3
-    "Telecommunications (3)" : 3
-    "Engineering (3)" : 3
-    "Finance (2)" : 2
-    "IT/Consulting (2)" : 2
-    "Fintech (1)" : 1
-    "E-commerce (1)" : 1
-    "Real Estate (1)" : 1
-    "Sports (1)" : 1
-    "Aviation (1)" : 1
-    "Wealth Management (1)" : 1
-    "Research (1)" : 1
-    "Food / Beverage (1)" : 1
-```
+The figures are derived once from `victims_FR.md`, checked against `victims.md`, and reused in the reports, comparisons and STIX bundle. A multi-country incident counts once globally; country occurrences may therefore exceed the global total. The corpus measures documented AFRINTEL visibility, not the actual prevalence of cyberattacks.
 
-## Ransomware vs Breaches by country
-
-| Country | Ransomware | Breaches |
-|---|---|---|
-| 🇿🇦 South Africa | 7 | 6 |
-| 🇲🇦 Morocco | 5 | 3 |
-| 🇪🇬 Egypt | 3 | 6 |
-| 🇳🇬 Nigeria | 0 | 2 |
-
-```mermaid
-xychart
-    title "Ransomware vs Breaches"
-    x-axis ["South Africa","Morocco","Egypt","Nigeria"]
-    y-axis "Incidents" 0 --> 8
-    bar [7,5,3,0]
-    bar [6,3,5,2]
-```
-
-## CTI Trends
-
-- South Africa recorded the highest March volume, with 13 records.
-- Morocco recorded 8 records and Egypt 9, including publications concerning state institutions.
-- Government and education sectors account for over 40% of incidents.
-- Data breaches and intrusions represented 22 of 41 March records.
-- Supply-chain exposure and a direct financial intrusion were documented during the month.
-
----
-
-AFRINTEL - African Cyber Threat Intelligence
+[Victim records](../../../CyberAttackAfrica/2026/03-march/victims.md)

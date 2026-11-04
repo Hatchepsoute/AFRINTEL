@@ -1336,3 +1336,125 @@ last_checked_at: 2026-07-26
 - **Analyse :**
 
   Les éléments fournis contiennent des documents attribués au ministère et une publication associée au compte source jrintel. Le contenu pourrait exposer des informations administratives sensibles, mais AFRINTEL n'a pas confirmé indépendamment les documents, leur provenance ni l'exhaustivité du jeu de données. Les liens de téléchargement, identifiants de session et données personnelles ne sont pas reproduits.
+
+### 1 juillet 2026
+#### 🇨🇮 Côte d'Ivoire - Université Virtuelle de Côte d'Ivoire (UVCI)
+- **Date de publication initiale :** 1 juillet 2026 à 08:37 ; dernière modification observée le 4 juillet 2026 à 07:36 ; fuseau horaire non précisé
+- **Date de découverte AFRINTEL :** 25 octobre 2026
+- **Auteur / Compte de publication :** Sensitive2025
+- **Secteur :** Éducation supérieure / Administration universitaire
+- **Site web associé :** [uvci.edu.ci](https://www.uvci.edu.ci/) ; sous-domaine de service affiché : `licences3.uvci.online`
+- **Statut :** Data Fully Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High pour l'attribution du corpus fourni à l'écosystème UVCI ; Medium pour la compromission du système de production
+- **Niveau d'impact :** Level 4
+- **Description victime :** L'Université Virtuelle de Côte d'Ivoire (UVCI) est un établissement ivoirien d'enseignement supérieur numérique. La publication associe l'organisation et un sous-domaine de service à une base de comptes universitaires.
+- **Analyse :** La publication observée présente une « Fresh Database » UVCI gratuite, associe le sous-domaine `licences3.uvci.online` à un service universitaire et affirme une base SQL d'environ 8 Go. AFRINTEL a analysé en lecture seule l'intégralité du dump SQL fourni localement, et non un échantillon : **8 721 338 295 octets**, SHA-256 `17e60b953b9196ea6fee65344da4e17b38839c092e4239e49e8662b558736501`. Les 10 CSV associés ont également été examinés intégralement ; l'ensemble des 11 fichiers représente environ **8,76 Go**. Les liens de téléchargement, valeurs personnelles et secrets ne sont pas reproduits.
+
+  **Observed - structure et couverture :** Le dump est un export MySQL 8.0.42 de la base `licences3`, avec **490 tables**, dont **226 alimentées**, environ **56 714 959 enregistrements** recomptés à partir des tuples SQL et **8 749 instructions INSERT**. Il contient notamment `mdl_user`, `mdl_user_enrolments`, `mdl_logstore_standard_log`, `mdl_session`, `mdl_files`, `mdl_messages`, `mdl_grade_grades`, `mdl_inscription_pedagogique_uvci`, `mdl_inscription_semestrielle`, `mdl_passerelle_uvci`, les tables de cohortes, groupes et rôles.
+
+  Les principales masses observées comprennent **16 410 270 journaux Moodle**, **17 972 218 données d'étapes de tentatives**, **9 481 515 étapes de tentatives**, **3 221 383 tentatives de questions**, **561 444 lignes de notes**, **605 111 fichiers**, **554 701 sessions Moodle**, **193 269 sessions applicatives distinctes**, **30 275 messages**, **91 042 associations utilisateur-inscription**, **88 789 affectations de rôles**, **58 299 appartenances à des cohortes**, **43 812 inscriptions pédagogiques**, **6 993 utilisateurs**, **154 tokens externes** et **4 635 clés privées utilisateur**. Les schémas de sessions et de journaux contiennent notamment des adresses IP, horodatages, actions, utilisateurs, cours et données de session ; aucune valeur brute n'est publiée.
+
+  **Observed - comptes et données académiques :** `mdl_user.csv` contient **6 993 comptes**, tous en authentification manuelle et confirmés ; **6 891** ne sont pas suspendus, **102** sont suspendus et **21** sont marqués supprimés. Les 6 993 identifiants utilisateurs, noms d'utilisateur et adresses e-mail sont distincts. Chaque compte possède un hash de mot de passe de 60 caractères au format bcrypt-like. Les profils contiennent des champs d'identité, coordonnées, institution, formation, localisation, dates de connexion, dernière IP, état du compte et semestre.
+
+  `mdl_passerelle_uvci.csv` contient **4 398 comptes**, tous en Licence 2 / S3, avec **3 047** valeurs de réinscription à `1` et **1 351** à `0`. `mdl_inscription_semestrielle.csv` contient **8 559 inscriptions**, dont **8 557** en Licence 2 / S3. Les exports `moyenne_uvci` contiennent **47 553 lignes de résultats**, avec cours, niveaux, spécialités, semestres, notes, sessions d'examen et statuts académiques. Les historiques contiennent **21 029** lignes pour mai 2024 et **17 034** pour août 2023. `moyenne_uvci(1).csv` est une liste séparée de **3 802 adresses e-mail**, correspondant aux comptes présents dans les exports courants.
+
+  La comparaison entre `moyenne_uvci.csv` et `moyenne_uvci_25_06_2025_21h-16.csv` montre le même ensemble de **47 553 clés** : **44 683 lignes sont identiques** et **2 870 lignes ont changé**, principalement sur les sessions d'examen 2, les statuts et les moyennes finales. Cette différence est compatible avec deux extractions ou états applicatifs distincts ; elle ne date pas l'accès de l'acteur.
+
+  **Observed - secrets et authentification :** Les exports `mdl_user.csv` et `mdl_passerelle_uvci.csv` contiennent respectivement **6 993** et **4 398 hashes bcrypt-like**. `mdl_enrol(1).csv` contient **3 824 configurations d'inscription**, dont **2 972 valeurs de mot de passe non vides de quatre caractères** et **852 champs vides** ; ces valeurs ne présentent pas le format d'un hash et doivent être traitées comme des secrets potentiellement exposés, sans être reproduites ni testées. La présence de **154 tokens externes**, de **4 635 clés privées utilisateur**, de sessions et de données de session augmente le risque de compromission secondaire ; leur validité actuelle n'est pas précisée dans les sources disponibles.
+
+  **Contrôles d'intégrité et de cohérence :** Les 10 CSV sont lisibles en UTF-8 ou ASCII, avec **0 ligne malformée** et **0 doublon complet** détecté. Les nombres de lignes des tables CSV correspondent aux tables SQL lorsqu'elles existent : 6 993 utilisateurs, 8 559 inscriptions semestrielles, 4 398 passerelles et 47 553 résultats courants. Les recoupements hachés d'e-mails entre comptes, inscriptions, passerelles et relevés de notes sont élevés ; les domaines `uvci.edu.ci`, `licences3.uvci.online`, les tables Moodle/UVCI, les paramètres de langue et les cursus forment un ensemble cohérent. Les répétitions partielles dans les historiques et inscriptions correspondent à des apparitions multi-cohortes, multi-semestres ou à des extractions répétées, et ne doivent pas être additionnées comme des personnes uniques.
+
+  **Assumption :** Le corpus fourni correspond fortement à un export complet de l'environnement applicatif `licences3` utilisé par l'écosystème UVCI. La publication, la cohérence des schémas, les domaines, les comptes, les cursus, les journaux et les données académiques rendent l'attribution du corpus à UVCI hautement plausible. Cette attribution ne documente pas le vecteur d'accès, la date d'acquisition, l'exfiltration initiale, la compromission du système de production ni l'exhaustivité de la base originale au-delà du fichier fourni.
+
+  **Unknown :** La date et la méthode d'accès de l'acteur, le périmètre exact du système de production, l'existence d'une exfiltration distincte, la validité actuelle des hashes, tokens, clés et mots de passe d'inscription, le nombre de personnes uniques exposées après déduplication globale, les notifications effectuées par UVCI et toute confirmation officielle ne sont pas renseignés dans les sources consultées. Les dates de fichier de juin 2026, les dates de publication affichées et les horodatages applicatifs ne doivent pas être fusionnés en une date d'intrusion.
+
+  **Conclusion d'attribution et d'impact :** L'analyse complète du dump SQL fourni et des 10 CSV confirme un corpus riche en données d'identité, de contact, de formation, d'inscription, de résultats académiques, de comptes, de fichiers, de messages, de journaux, d'adresses IP, de sessions et d'artefacts d'authentification, fortement conforme à l'environnement UVCI. Les risques comprennent la réutilisation d'identifiants, le phishing ciblé, l'usurpation d'étudiants et de personnel, la fraude académique, l'atteinte à la vie privée, l'exploitation de sessions ou tokens encore actifs et la compromission secondaire de services liés. Aucun nom, e-mail, numéro de téléphone, identifiant, adresse IP, hash, token, clé ou autre donnée personnelle brute n'est reproduit dans le dépôt.
+- **Limites de preuve :** La complétude du fichier SQL fourni et des 10 CSV a été analysée ; la complétude de la base originale du système UVCI, la date d'accès, le vecteur d'intrusion, l'exfiltration initiale, la validité actuelle des secrets et la compromission du système de production ne sont pas confirmées. Le statut `Data Fully Published` décrit la publication et le corpus fourni ; il ne constitue pas une confirmation officielle de l'incident ni une preuve que la base source entière a été extraite.
+- **Décision de classement :** Fiche ajoutée au référentiel d'octobre en raison de la découverte AFRINTEL du 25 octobre 2026, mais exclue du total canonique d'octobre et des statistiques d'octobre ; l'incident est chronologiquement rattaché à la publication initiale du 1 juillet 2026.
+
+### 4 juillet 2026
+#### 🇨🇮 Côte d'Ivoire - Université Jean Lorougnon Guédé (UJLoG)
+- **Date de publication initiale :** 4 juillet 2026 à 07:38 ; fuseau horaire non précisé
+- **Date de découverte AFRINTEL :** 25 octobre 2026
+- **Acteur / Groupe :** Sensitive2025 (compte affiché dans la publication ; identité et affiliation attribuée à la publication)
+- **Secteur :** Éducation supérieure / Administration universitaire
+- **Site web associé :** [ujlog.uvci.edu.ci](https://ujlog.uvci.edu.ci/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High pour l'attribution de l'échantillon à l'environnement UJLoG ; Medium pour l'étendue de l'incident
+- **Niveau d'impact :** Level 3
+- **Description victime :** L'Université Jean Lorougnon Guédé (UJLoG) est une université ivoirienne. La publication associe son sous-domaine à une base de comptes d'une plateforme universitaire.
+- **Analyse :** L'échantillon fourni présente un schéma utilisateur de type Moodle comprenant des identifiants de compte, noms d'utilisateur, champs d'identité, adresses électroniques, institution, département, localisation, langue, dates d'accès, adresses IP et hachages de mots de passe bcrypt. Douze enregistrements individuels sont visibles dans l'extrait transmis ; les comptes et adresses observés utilisent principalement l'écosystème `ujlog.uvci.edu.ci`, avec des références institutionnelles UJLoG/UVCI. Les champs `username`, `email`, `institution`, `department`, `city`, `country`, `lastlogin`, `currentlogin` et `lastip` montrent une base opérationnelle de gestion de comptes, et non une simple liste nominative.
+
+  La cohérence entre le domaine `ujlog.uvci.edu.ci`, les libellés institutionnels UJLoG, la structure Moodle, la langue française, le pays `CI`, les informations de profil et les hachages bcrypt soutient fortement l'attribution de l'échantillon à l'environnement numérique de l'UJLoG. L'échantillon peut donc être qualifié de conforme à cet environnement avec un niveau de confiance élevé. Le reste du dump n'étant plus disponible, l'analyse est strictement limitée aux données visibles dans l'échantillon fourni ; elle ne permet pas de vérifier le volume total, les doublons ou l'exhaustivité du jeu de données.
+
+  Les données exposées peuvent faciliter le phishing ciblé, l'usurpation de comptes étudiants ou administratifs, la réutilisation d'identifiants et l'analyse des habitudes de connexion. Aucun nom, email, numéro, adresse IP, hachage ou autre donnée individuelle n'est reproduit dans le dépôt.
+- **Limites de preuve :** L'échantillon est fortement cohérent avec UJLoG, mais les sources consultées ne précisent pas la date d'accès, le vecteur d'intrusion, l'exfiltration initiale, la compromission du système de production ni le nombre total de personnes concernées. Le reste du dump n'est plus disponible pour analyse ; les résultats ne doivent donc pas être extrapolés à l'ensemble revendiqué.
+- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL date du 25 octobre 2026 et le rapport de juillet était déjà public. La publication du 4 juillet 2026 est conservée comme contexte historique ; elle ne crée pas de doublon dans le suivi d'octobre.
+
+### 12 juillet 2026 - intégré le 01 septembre 2026
+#### 🇨🇲 Cameroun - Ministère de l'Emploi et de la Formation professionnelle (MINEFOP)
+
+- **Date de l'incident :** 12 juillet 2026
+- **Date d'analyse publique :** 27 juillet 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** ANTONKILL
+- **Secteur :** Gouvernement / Administration publique
+- **Statut :** Corroborated
+- **Type d'incident :** Defacement
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 2
+- **Description :** Le **Ministère de l'Emploi et de la Formation professionnelle (MINEFOP)** du Cameroun est chargé de concevoir et de mettre en œuvre les politiques publiques relatives à **l'emploi, à la formation et à l'insertion professionnelle**. Il intervient notamment dans l'orientation, la qualification et l'accompagnement vers l'emploi. Il s'agit d'une administration centrale, pas d'un établissement privé de formation ([missions officielles du MINEFOP](https://minefop.gov.cm/fr/missions/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Défacement publiquement corroboré :** le CIRT camerounais a publié une alerte sur la campagne ANTONKILL ayant visé le site du MINEFOP en juillet 2026. La portée démontrée concerne le portail web, pas l’ensemble du réseau ministériel. Incident de juillet.
+
+- **Sources de vérification complémentaires :** [Source 1](https://cirt.cm/alerte-de-securite-campagne-antonkill-web-defacement-ciblant-les-institutions-sous-joomla-et-helix3/)
+
+- **Sources / Éléments de preuve :** [OBS-CC, 27 juillet 2026](https://obs-cc.org/defacement-antonkill-minefop/) ; [Base d'incidents OBS-CC](https://obs-cc.org/incidents/)
+
+L'OBS-CC, s'appuyant sur une alerte du CIRT de l'ANTIC, documente le défacement du site du MINEFOP dans une campagne attribuée à ANTONKILL. La profondeur de l'accès, la persistance et l'exposition de données non publiques ne sont pas établies.
+
+### 15 juillet 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Rectron (Pty) Ltd
+
+- **Date de l'incident détecté :** 15 juillet 2026
+- **Date de notification SENS :** 22 juillet 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué officiellement ; DragonForce non confirmé
+- **Secteur :** Technologie / Distribution informatique
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 3
+- **Description :** **Rectron (Pty) Ltd** est un distributeur sud-africain de **produits et solutions informatiques**, appartenant au groupe **Mustek**. Son portefeuille comprend notamment logiciels, matériel informatique, réseaux, solutions de stockage, cloud et infrastructures de centres de données, distribués à un réseau de revendeurs et partenaires. L'organisation intervient ainsi dans la chaîne d'approvisionnement technologique ([site officiel Rectron](https://www.rectron.co.za/pages/about)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation officielle de marché :** Mustek a publié le 22 juillet 2026 un avis SENS relatif à l’incident de sécurité chez Rectron. Cela établit l’incident, sans confirmer automatiquement le groupe revendiquant la compromission. Incident de juillet.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
+- **Sources / Éléments de preuve :** [Mustek / JSE SENS, 22 juillet 2026](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
+Mustek a annoncé que Rectron avait subi une compromission affectant certains systèmes et opérations IT, avec accès illégal à certaines données. Rectron a lancé sa réponse à incident et notifié l'Information Regulator. Le vecteur, les catégories de données et le volume exfiltré restent inconnus.
+
+### 18 juillet 2026 - intégré le 01 septembre 2026
+#### 🇰🇪 Kenya - Site officiel du Président de la République (`president.go.ke`)
+
+- **Date de l'incident :** 18 juillet 2026
+- **Date de confirmation gouvernementale :** 18 juillet 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Gouvernement / Présidence
+- **Statut :** Government Confirmed
+- **Type d'incident :** Defacement
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 3
+- **Description :** Le domaine **`president.go.ke`** correspond au **site institutionnel de la présidence de la République du Kenya**. Il diffuse des informations publiques sur les activités présidentielles, l'administration et la coordination de l'action gouvernementale. La cible de cette fiche est **un portail officiel**, et non nécessairement l'ensemble des services informatiques de la présidence ou du gouvernement kényan ([site institutionnel](https://www.president.go.ke/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation gouvernementale :** le ministère kényan des TIC a reconnu le 18 juillet 2026 le défacement de `president.go.ke` ; il indiquait alors qu’aucun accès à des données sensibles n’était établi. L’événement concerne juillet et un site web précis.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.aa.com.tr/fr/afrique/kenya-le-site-officiel-de-la-pr%C3%A9sidence-pirat%C3%A9-des-hackers-r%C3%A9clament-une-rancon-en-bitcoin/4002284)
+
+- **Sources / Éléments de preuve :** [ICT Authority / communiqué du ministère, 18 juillet 2026](https://www.linkedin.com/posts/kenya-ict-board_ministry-of-information-communications-activity-7484210613053784065-Fy7R) ; [The Standard, 18 juillet 2026](https://www.standardmedia.co.ke/national/article/2001553147/kabogo-no-sensitive-data-accessed-after-presidents-website-hack)
+
+Le gouvernement kényan a confirmé le défacement du site présidentiel, qui affichait des messages hostiles, une adresse de portefeuille et une demande de 5 BTC. Aucune preuve d'accès à des données sensibles ou d'exfiltration n'a été rapportée. Le vecteur et l'identité de l'attaquant restent inconnus.
