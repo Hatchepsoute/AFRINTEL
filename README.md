@@ -29,7 +29,7 @@
 
 ### Cyber threats in Africa - October 2026
 
-The October corpus contains **48 records**, all assigned to October after redistributing publications to their actual publication or first documented observation month. It records **22 Data Leak**, **17 Ransomware**, **6 System Intrusion** and **3 Access Sale** cases.
+The October corpus contains **48 records**, all assigned to October after redistributing publications to their actual publication or first documented observation month. It records **23 Data Leak**, **17 Ransomware**, **5 System Intrusion** and **3 Access Sale** cases.
 
 📄 [Full CTI report - October 2026](CyberAttackAfrica/2026/10-october/README.md)
 

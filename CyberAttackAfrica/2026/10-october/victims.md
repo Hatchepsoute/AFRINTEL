@@ -189,18 +189,20 @@
 
 - **Sources / Evidence:** forum and Telegram posts supplied on 9 October 2026. No download link, individual data, identifier, secret or archive is published.
 
-#### 🇿🇦 South Africa - Ampath Laboratories [System Intrusion]
+#### 🇿🇦 South Africa - Ampath Laboratories [Data Leak]
 - **Public publication / notification date:** 2 October 2026
 - **Domain:** `ampath.co.za`
-- **Actor / Group:** Non établi
+- **Actor / Group:** bytetobreach (displayed publication account)
 - **Sector:** Healthcare / Medical laboratories
-- **Status:** Claim - Unverified
-- **Incident type:** System Intrusion
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
 - **Confidence level:** High
 - **Impact level:** Level 4
 - **Victim description:** Ampath Laboratories is a South African network of medical laboratories and diagnostic services.
-- **Analysis:** An incident was publicly acknowledged and an investigation opened into access and the potential scope of sensitive data. The exact nature, volume and full forensic scope remain undisclosed. The incident is corroborated, but no conclusion establishes exfiltration or complete disclosure.
-- **Risk assessment:** Potential risks concern health data, patient identifiers and contact information. No individual record is reproduced.
+- **Analysis:** The bytetobreach publication claims that 10 of approximately 375 databases were copied and that the overall corpus would exceed 80 million records. It describes HR and employee data, multiple patient databases, financial data, system configurations and application components. The supplied local folder contains structured samples examined read-only: 4,000 employee rows, 5,000 patient rows, 1,000 Medicaid records, 1,000 patient registration records and 997 card-payment records, together with an XML file containing 278,401 structural lines. The schemas contain identity, contact, health, employment, insurance and payment categories. This structural consistency supports the existence of a sample associated with Ampath, but does not validate the 375 databases, the claimed 80 million records, corpus completeness, access method or the real identity of the actor.
+- **Analysis scope and limitations:** The five available CSV files and the XML file were examined read-only, including type, size, hash, column and row-volume checks. The file inventory and application components were treated as contextual evidence; no binary, script, link or secret was executed, tested or published. Accounts, identifiers, addresses, medical data, financial data and secrets remain outside the repository.
+- **Risk assessment:** Potential exposure concerns health, identity, contact, employment, insurance and payment data. It could facilitate identity theft, targeted phishing, document fraud, financial fraud and targeting of patients or employees. No individual record is reproduced.
+- **Sources / Evidence:** supplied publication and visual material; local Ampath samples examined read-only. The bytetobreach account is retained as a publication identifier; its identity and technical affiliation are not established.
 
 #### 🇪🇬 Egypt - Dar Al-Tib (`daralteb.com`) [Ransomware]
 - **Initial publication date:** 4 October 2026; some sources indicate 2 October 2026

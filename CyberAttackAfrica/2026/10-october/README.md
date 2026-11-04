@@ -17,9 +17,9 @@ This validated corpus contains **48 incidents or documented cases** first publis
 
 | Incident type | Count | Share |
 |---|---:|---:|
-| Data Leak | 22 | 45.8% |
+| Data Leak | 23 | 47.9% |
 | Ransomware | 17 | 35.4% |
-| System Intrusion | 6 | 12.5% |
+| System Intrusion | 5 | 10.4% |
 | Access Sale | 3 | 6.2% |
 | **Total** | **48** | **100.0%** |
 
@@ -60,7 +60,7 @@ Account names and actor labels were grouped when they referred to the same sourc
 | Kazu | 2 |
 | List1 | 2 |
 
-**Unidentified or unestablished attribution: 5 incidents.** These cases are not counted as actors in the ranking.
+**Unidentified or unestablished attribution: 4 incidents.** These cases are not counted as actors in the ranking. The bytetobreach account is added as a publication identifier, without independent technical attribution.
 
 ## Normalized sector distribution
 
@@ -80,7 +80,7 @@ Sectors were grouped into analytical families to avoid fragmenting the same acti
 
 ## CTI reading
 
-Data leaks were the leading incident category in October with 22 records, followed by ransomware with 17. System intrusions accounted for 6 records and access sales for 3. Egypt and Morocco ranked first with 12 incidents each, which also reflects the visibility of the sources monitored by AFRINTEL. Public administration was the largest normalized sector family with 12 records, followed by commerce and retail with 8, and technology and digital services with 6. Access sales were less frequent, but potentially more critical when they involved administrative environments or privileged accounts. Source-displayed accounts such as Nameless511, UmBra and N0n are retained as publication identifiers; five records remain without established attribution. These findings describe documented monthly visibility and are not an exhaustive measure of the real threat landscape.
+Data leaks were the leading incident category in October with 23 records, followed by ransomware with 17. System intrusions accounted for 5 records and access sales for 3. Egypt and Morocco ranked first with 12 incidents each, which also reflects the visibility of the sources monitored by AFRINTEL. Public administration was the largest normalized sector family with 12 records, followed by commerce and retail with 8, and technology and digital services with 6. Access sales were less frequent, but potentially more critical when they involved administrative environments or privileged accounts. Source-displayed accounts such as Nameless511, UmBra, N0n and bytetobreach are retained as publication identifiers; four records remain without established attribution. These findings describe documented monthly visibility and are not an exhaustive measure of the real threat landscape.
 
 ## Methodology
 

@@ -8,9 +8,9 @@ Cette comparaison utilise les fichiers victimes bilingues validés : **33 fiches
 |---|---:|---:|---:|
 | Total incidents | **33** | **48** | **+15 (+45.5%)** |
 | Ransomware | 20 | 17 | -3 |
-| Fuite de données | 11 | 22 | +11 |
+| Fuite de données | 11 | 23 | +12 |
 | Vente d'accès | 0 | 3 | +3 |
-| Intrusion système | 2 | 6 | +4 |
+| Intrusion système | 2 | 5 | +3 |
 
 ```mermaid
 xychart-beta

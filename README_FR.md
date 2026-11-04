@@ -29,7 +29,7 @@
 
 ### Cybermenaces en Afrique - octobre 2026
 
-Le corpus d'octobre comprend **48 fiches**, toutes rattachées à octobre après redistribution des publications selon leur mois réel de publication ou de première observation. Le rapport recense **22 fuites de données**, **17 ransomware**, **6 intrusions système** et **3 ventes d'accès**.
+Le corpus d'octobre comprend **48 fiches**, toutes rattachées à octobre après redistribution des publications selon leur mois réel de publication ou de première observation. Le rapport recense **23 fuites de données**, **17 ransomware**, **5 intrusions système** et **3 ventes d'accès**.
 
 📄 [Rapport CTI complet - octobre 2026](CyberAttackAfrica/2026/10-october/README_FR.md)
 

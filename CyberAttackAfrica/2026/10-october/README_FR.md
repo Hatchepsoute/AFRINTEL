@@ -17,9 +17,9 @@ Ce corpus validé contient **48 incidents ou cas documentés** publiés pour la 
 
 | Type d incident | Nombre | Part |
 |---|---:|---:|
-| Fuite de données | 22 | 45.8% |
+| Fuite de données | 23 | 47.9% |
 | Ransomware | 17 | 35.4% |
-| Intrusion système | 6 | 12.5% |
+| Intrusion système | 5 | 10.4% |
 | Vente d'accès | 3 | 6.2% |
 | **Total** | **48** | **100.0%** |
 
@@ -60,7 +60,7 @@ Les comptes et noms d’acteurs ont été regroupés lorsqu’ils désignaient l
 | Kazu | 2 |
 | List1 | 2 |
 
-**Attribution non identifiée ou non établie : 5 incidents.** Ces cas ne sont pas comptés comme des acteurs dans le classement.
+**Attribution non identifiée ou non établie : 4 incidents.** Ces cas ne sont pas comptés comme des acteurs dans le classement. Le compte bytetobreach est ajouté comme identifiant de publication, sans attribution technique indépendante.
 
 ## Répartition des secteurs normalisés
 
@@ -80,7 +80,7 @@ Les secteurs ont été regroupés en familles analytiques afin d’éviter qu’
 
 ## Lecture CTI
 
-Les fuites de données constituent la première catégorie du mois avec 22 fiches, devant les ransomware avec 17 fiches. Les intrusions système représentent 6 fiches et les ventes d’accès 3. L’Égypte et le Maroc arrivent en tête avec 12 incidents chacun, ce qui reflète aussi la visibilité des sources suivies par AFRINTEL. La concentration sectorielle est dominée par les administrations publiques (12), le commerce et la distribution (8), puis la technologie et les services numériques (6). Les ventes d’accès sont moins nombreuses, mais leur exposition potentielle peut être plus critique lorsqu’elles concernent des environnements administratifs ou des comptes privilégiés. Les comptes affichés par les sources, notamment Nameless511, UmBra et N0n, sont conservés comme identifiants de publication ; cinq fiches restent sans attribution établie. Ces résultats décrivent la visibilité documentée du mois et ne constituent pas une mesure exhaustive de la menace réelle.
+Les fuites de données constituent la première catégorie du mois avec 23 fiches, devant les ransomware avec 17 fiches. Les intrusions système représentent 5 fiches et les ventes d’accès 3. L’Égypte et le Maroc arrivent en tête avec 12 incidents chacun, ce qui reflète aussi la visibilité des sources suivies par AFRINTEL. La concentration sectorielle est dominée par les administrations publiques (12), le commerce et la distribution (8), puis la technologie et les services numériques (6). Les ventes d’accès sont moins nombreuses, mais leur exposition potentielle peut être plus critique lorsqu’elles concernent des environnements administratifs ou des comptes privilégiés. Les comptes affichés par les sources, notamment Nameless511, UmBra, N0n et bytetobreach, sont conservés comme identifiants de publication ; quatre fiches restent sans attribution établie. Ces résultats décrivent la visibilité documentée du mois et ne constituent pas une mesure exhaustive de la menace réelle.
 
 ## Méthodologie
 

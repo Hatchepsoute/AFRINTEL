@@ -8,9 +8,9 @@ This comparison uses the validated bilingual victim files: **33 records in Septe
 |---|---:|---:|---:|
 | Total incidents | **33** | **48** | **+15 (+45.5%)** |
 | Ransomware | 20 | 17 | -3 |
-| Data Leak | 11 | 22 | +11 |
+| Data Leak | 11 | 23 | +12 |
 | Access Sale | 0 | 3 | +3 |
-| System Intrusion | 2 | 6 | +4 |
+| System Intrusion | 2 | 5 | +3 |
 
 ```mermaid
 xychart-beta

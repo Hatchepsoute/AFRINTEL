@@ -192,18 +192,20 @@
 - **Sources / Éléments de preuve :** publications de forum et Telegram fournies le 9 octobre 2026. Aucun lien de téléchargement, donnée individuelle, identifiant, secret ou archive n’est publié.
 
 
-#### 🇿🇦 Afrique du Sud - Ampath Laboratories [System Intrusion]
+#### 🇿🇦 Afrique du Sud - Ampath Laboratories [Data Leak]
 - **Date de publication / notification publique :** 2 octobre 2026
 - **Domaine :** `ampath.co.za`
-- **Acteur / Groupe :** Non établi
+- **Acteur / Groupe :** bytetobreach (compte de publication affiché)
 - **Secteur :** Santé / Laboratoires médicaux
-- **Statut :** Claim - Unverified
-- **Type d'incident :** System Intrusion
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
 - **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4
 - **Description victime :** Ampath Laboratories est un réseau sud-africain de laboratoires médicaux et de services de diagnostic.
-- **Analyse :** Un incident a été publiquement reconnu et une investigation a été ouverte concernant l'accès et l'étendue potentielle de données sensibles. La nature exacte, le volume et le périmètre forensique restent non publics. L'existence de l'incident est corroborée, mais aucune conclusion ne permet encore d'établir une exfiltration ou une divulgation complète.
-- **Évaluation des risques :** Les risques potentiels concernent les données de santé, les identifiants de patients et les informations de contact. Aucun dossier individuel n'est reproduit.
+- **Analyse :** La publication du compte bytetobreach affirme que 10 bases de données sur environ 375 auraient été copiées et que l'ensemble concerné dépasserait 80 millions d'enregistrements. Elle décrit des données RH et employés, plusieurs bases de patients, des données financières, des configurations de systèmes et des composants applicatifs. Le dossier local fourni comprend des échantillons structurés analysés en lecture seule : 4 000 lignes d'employés, 5 000 lignes de patients, 1 000 dossiers Medicaid, 1 000 inscriptions de patients et 997 paiements par carte, ainsi qu'un fichier XML de 278 401 lignes structurelles. Les schémas contiennent des catégories d'identité, de contact, de santé, d'emploi, d'assurance et de paiement. Cette cohérence structurelle étaye l'existence d'un échantillon associé à Ampath, mais ne valide pas les 375 bases, le volume de 80 millions d'enregistrements, l'exhaustivité du corpus, la méthode d'accès ou l'identité réelle de l'acteur.
+- **Périmètre et limites de l'analyse :** Les cinq CSV et le fichier XML disponibles ont été examinés en lecture seule, avec contrôle des types, tailles, empreintes, colonnes et volumes de lignes. L'inventaire de fichiers et les composants applicatifs ont été traités comme éléments de contexte ; aucun binaire, script, lien ou secret n'a été exécuté, testé ou publié. Les comptes, identifiants, adresses, données médicales, données financières et secrets restent hors du dépôt.
+- **Évaluation des risques :** L'exposition potentielle concerne des données de santé, d'identité, de contact, d'emploi, d'assurance et de paiement. Elle pourrait faciliter l'usurpation, le phishing ciblé, la fraude documentaire, la fraude financière et le ciblage de patients ou d'employés. Aucun dossier individuel n'est reproduit.
+- **Sources / Éléments de preuve :** publication et éléments visuels fournis ; échantillons locaux Ampath analysés en lecture seule. Le compte bytetobreach est conservé comme identifiant de publication ; son identité et son affiliation technique ne sont pas établies.
 
 
 #### 🇪🇬 Égypte - Dar Al-Tib (`daralteb.com`) [Ransomware]

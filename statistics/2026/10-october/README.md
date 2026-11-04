@@ -6,9 +6,9 @@ This validated corpus contains **48 incidents or documented cases** first publis
 
 | Incident type | Count | Share |
 |---|---:|---:|
-| Data Leak | 22 | 45.8% |
+| Data Leak | 23 | 47.9% |
 | Ransomware | 17 | 35.4% |
-| System Intrusion | 6 | 12.5% |
+| System Intrusion | 5 | 10.4% |
 | Access Sale | 3 | 6.2% |
 | **Total** | **48** | **100.0%** |
 
@@ -16,18 +16,18 @@ This validated corpus contains **48 incidents or documented cases** first publis
 
 | Country | Count |
 |---|---:|
-| Égypte | 12 |
-| Maroc | 12 |
-| Afrique du Sud | 9 |
-| République démocratique du Congo | 2 |
-| Éthiopie | 2 |
+| Egypt | 12 |
+| Morocco | 12 |
+| South Africa | 9 |
+| Democratic Republic of the Congo | 2 |
+| Ethiopia | 2 |
 | Madagascar | 2 |
-| République du Congo | 1 |
+| Republic of the Congo | 1 |
 | Rwanda | 1 |
 | Mozambique | 1 |
 | Gabon | 1 |
-| Tunisie | 1 |
-| Bénin | 1 |
+| Tunisia | 1 |
+| Benin | 1 |
 | Nigeria | 1 |
 | Sierra Leone | 1 |
 | Côte d'Ivoire | 1 |
@@ -36,31 +36,32 @@ This validated corpus contains **48 incidents or documented cases** first publis
 
 | Actor label | Count |
 |---|---:|
-| Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication) | 8 |
-| UmBra | 3 |
+| Nameless511 | 9 |
+| UmBra | 4 |
+| N0n | 4 |
 | The Gentlemen | 3 |
-| N0n | 3 |
-| Non établi | 2 |
-| Lenken (compte affiché ; identité et affiliation attribuée à la publication) | 2 |
-| Kazu (compte affiché ; identité et affiliation attribuée à la publication) | 2 |
-| List1 (compte affiché dans la publication ; identité et affiliation non établies) | 2 |
-| Non identifié | 2 |
-| SensitiveDarkForum (compte/forum affiché ; identité et affiliation attribuée à la publication) | 1 |
+| SensitiveDarkForum | 2 |
+| Krybit | 2 |
+| Qilin | 2 |
+| Lenken | 2 |
+| Kazu | 2 |
+| List1 | 2 |
 
-## Sectors most represented
+## Normalized sectors most represented
 
 | Sector | Count |
 |---|---:|
-| Santé publique / Administration gouvernementale | 2 |
-| Enseignement supérieur / Université | 2 |
-| Services numériques / Déverrouillage et activation de téléphones et services associés | 1 |
-| Technologie / Distribution de matériel informatique | 1 |
-| Gouvernement / Administration / Habitat et urbanisme | 1 |
-| Technologie / Commerce et distribution de matériel informatique et de sécurité | 1 |
-| Gouvernement / Administration / Investissement et évaluation des politiques publiques | 1 |
-| Santé / Laboratoires médicaux | 1 |
-| Santé / Fertilité et procréation médicalement assistée | 1 |
-| Administration publique / Gestion de la solde | 1 |
+| Government / Public administration | 12 |
+| Commerce / Retail | 8 |
+| Technology / Digital services | 6 |
+| Healthcare | 5 |
+| Education | 5 |
+| Finance / Insurance | 3 |
+| Transport | 2 |
+| Industry / Engineering | 2 |
+| Other sectors | 5 |
+
+The **bytetobreach** publication account is observed in the Ampath Laboratories record and is not included in this top 10. Four records remain without established attribution.
 
 ## Methodology
 
