@@ -745,14 +745,15 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 - **Institutional domain:** [cnesten.org.ma](https://www.cnesten.org.ma/)
 - **Actor / Group:** Qilin
 - **Sector:** Nuclear research / Science and technology
-- **Status:** Claim - Unverified
+- **Status:** Claim - Data Sample Published
 - **Incident type:** Ransomware
-- **Confidence level:** Low
+- **Confidence level:** Medium
 - **Impact level:** Level 4 (potential)
 - **Victim description:** CNESTEN is a Moroccan public institution responsible for research and applications in energy, nuclear science and nuclear technology.
-- **Analysis:** CNESTEN appears in a claim associated with Qilin. The source row provides no data description or technical proof. No sample, volume, encryption, exfiltration or statement from CNESTEN was identified.
-- **Risk assessment:** If authentic, a claim could concern sensitive scientific, administrative or operational data. No impact to a nuclear facility or safety has been established.
-- **Sources / Evidence:** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf); ransomware publication extracted from the corpus provided to AFRINTEL.
+- **Analysis:** The Qilin-associated publication was accompanied by a directory inventory recovered locally before the link became unavailable. The `tree_CNESTEN.txt` file contains **158,539 lines** and lists **110,803 files** with a stated total size of **205,805,114,681 bytes**, approximately 205.8 GB. The tree includes folders related to research, projects, reports, personnel, orders, invoicing, NGS data, nutrition, radiation protection and scientific partnerships. This establishes the presence of a published structural sample consistent with a CNESTEN document environment. No source file, document, database or business content could be recovered and examined.
+- **Analysis scope and limitations:** The review covers only the available directory inventory. Names, extensions, sizes and paths were examined in read-only mode; the listed files are not available in the retained artifact. The inventory SHA-256 is `3c9220258d354abfdda2f5137a5caf9dc3718a7376778d4b337eb5a52f821da1`. The total size, file count and data nature remain values stated by the inventory; they do not prove completeness, initial access, full exfiltration or encryption.
+- **Risk assessment:** If the inventory corresponds to a corpus actually held by CNESTEN, the listed categories suggest risks to scientific research, projects, administrative data, human resources, suppliers and partnerships. No impact to a nuclear facility, safety or operational continuity has been established.
+- **Sources / Evidence:** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf); ransomware publication extracted from the corpus provided to AFRINTEL; local `tree_CNESTEN.txt` inventory recovered before the link became unavailable. No business file, personal content, secret or criminal link is published.
 
 ### October 12, 2026
 

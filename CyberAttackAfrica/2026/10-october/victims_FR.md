@@ -758,14 +758,15 @@ Aucune compromission directe de l'infrastructure de Decathlon Maroc n'est établ
 - **Domaine institutionnel :** [cnesten.org.ma](https://www.cnesten.org.ma/)
 - **Acteur / Groupe :** Qilin
 - **Secteur :** Recherche nucléaire / Science et technologie
-- **Statut :** Claim - Unverified
+- **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Low
+- **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 4 (potentiel)
 - **Description victime :** Le CNESTEN est un établissement public marocain chargé de la recherche et des applications dans le domaine de l'énergie, des sciences et des technologies nucléaires.
-- **Analyse :** Le CNESTEN apparaît dans une revendication associée à Qilin. La ligne source ne fournit pas de description de données ni de preuve technique. Aucun échantillon, volume, chiffrement, exfiltration ou confirmation du CNESTEN n'a été identifié.
-- **Évaluation des risques :** Une revendication authentique pourrait concerner des données scientifiques, administratives ou opérationnelles sensibles. Aucun impact sur une installation nucléaire ou sur la sûreté n'est établi.
-- **Sources / Éléments de preuve :** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf) ; publication ransomware extraite du corpus fourni à AFRINTEL.
+- **Analyse :** La publication associée à Qilin a été accompagnée d'un inventaire de répertoire récupéré localement avant l'indisponibilité du lien. Le fichier `tree_CNESTEN.txt` contient **158 539 lignes** et décrit **110 803 fichiers** pour un volume total annoncé de **205 805 114 681 octets**, soit environ 205,8 Go. L'arborescence mentionne notamment des dossiers liés à la recherche, aux projets, aux rapports, au personnel, aux commandes, à la facturation, aux données NGS, à la nutrition, à la radioprotection et à des partenariats scientifiques. Ces éléments établissent l'existence d'un échantillon structurel publié et sa cohérence avec un environnement documentaire CNESTEN. Aucun fichier source, document, base de données ou contenu métier n'a pu être récupéré et examiné.
+- **Périmètre et limites de l'analyse :** L'analyse porte uniquement sur l'inventaire de répertoire disponible. Les noms, extensions, volumes et chemins ont été examinés en lecture seule ; les fichiers listés ne sont pas accessibles dans l'artefact conservé. L'empreinte SHA-256 de l'inventaire est `3c9220258d354abfdda2f5137a5caf9dc3718a7376778d4b337eb5a52f821da1`. Le volume total, le nombre de fichiers et la nature des données restent ceux déclarés par l'inventaire ; ils ne prouvent ni l'exhaustivité, ni l'accès initial, ni l'exfiltration complète, ni le chiffrement.
+- **Évaluation des risques :** Si l'inventaire correspond à un corpus réellement détenu par CNESTEN, les catégories de dossiers suggèrent des risques pour la recherche scientifique, les projets, les données administratives, les ressources humaines, les fournisseurs et les partenariats. Aucun impact sur une installation nucléaire, la sûreté ou la continuité opérationnelle n'est établi.
+- **Sources / Éléments de preuve :** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf) ; publication ransomware extraite du corpus fourni à AFRINTEL ; inventaire local `tree_CNESTEN.txt` récupéré avant indisponibilité du lien. Aucun fichier métier, contenu personnel, secret ou lien criminel n'est publié.
 
 
 ### 12 octobre 2026
