@@ -2,7 +2,7 @@
 
 👉🏾 [English version](./README.md)
 
-Ce résumé est recalculé à partir des 12 fichiers canoniques de victimes 2024. Il recense 123 fiches, selon la date de l'incident et les règles de déduplication AFRINTEL. Une fiche correspond à une occurrence documentée ; les chiffres ne mesurent pas l'ensemble des incidents réellement survenus.
+Ce résumé est recalculé à partir des 12 fichiers canoniques de victimes 2024. Il recense 125 fiches, selon la date de l'incident et les règles de déduplication AFRINTEL. Une fiche correspond à une occurrence documentée ; les chiffres ne mesurent pas l'ensemble des incidents réellement survenus.
 
 ## Volume mensuel
 
@@ -18,16 +18,16 @@ Ce résumé est recalculé à partir des 12 fichiers canoniques de victimes 2024
 | Août | 16 |
 | Septembre | 7 |
 | Octobre | 11 |
-| Novembre | 15 |
-| Décembre | 17 |
-| **Total** | **123** |
+| Novembre | 16 |
+| Décembre | 18 |
+| **Total** | **125** |
 
 ## Types d'incident
 
 | Type AFRINTEL | Fiches |
 |---|---:|
 | Ransomware | 91 |
-| Data Leak | 16 |
+| Data Leak | 18 |
 | Access Sale | 5 |
 | DDoS | 2 |
 | Defacement | 1 |
@@ -35,8 +35,8 @@ Ce résumé est recalculé à partir des 12 fichiers canoniques de victimes 2024
 | System Intrusion | 7 |
 | Malware | 0 |
 | Operational Fraud | 1 |
-| **Total** | **123** |
+| **Total** | **125** |
 
-La somme mensuelle et la somme des neuf types canoniques concordent : 123. Les ventilations détaillées par pays, région, secteur, acteur, statut, confiance et impact sont maintenues dans le [rapport annuel canonique](../../CyberAttackAfrica/2024/README_FR.md), dérivé du même corpus de fiches validées. Cette page ne conserve pas les anciennes ventilations détaillées, qui ne correspondaient pas au corpus mensuel.
+La somme mensuelle et la somme des neuf types canoniques concordent : 125. Les ventilations détaillées par pays, région, secteur, acteur, statut, confiance et impact sont maintenues dans le [rapport annuel canonique](../../CyberAttackAfrica/2024/README_FR.md), dérivé du même corpus de fiches validées. Cette page ne conserve pas les anciennes ventilations détaillées, qui ne correspondaient pas au corpus mensuel.
 
 **AFRINTEL** - TLP:CLEAR

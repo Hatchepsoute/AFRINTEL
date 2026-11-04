@@ -1,254 +1,73 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Période](https://img.shields.io/badge/Période-Avril%202026-lightgrey)
-![Victimes](https://img.shields.io/badge/Victimes-60-critical)
-![Ransomwares](https://img.shields.io/badge/Ransomwares-20-red)
-![Fuites](https://img.shields.io/badge/Fuites%20de%20données-40-orange)
-![Pays](https://img.shields.io/badge/Pays%20touchés-16-blueviolet)
-![Intel](https://img.shields.io/badge/Type-Statistiques%20CTI-purple)
+# Statistiques mensuelles AFRINTEL - avril 2026
 
-# AFRINTEL - Statistiques cyber Afrique
-## Avril 2026
+Ce corpus validé contient **72 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en avril 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
-👉🏾 [**English version available here**](./README.md)
+## Ventilation mensuelle validée
 
-## Note méthodologique
-
-Ces statistiques couvrent les publications observées dans le périmètre AFRINTEL pour avril 2026. Chaque fiche conserve le statut documenté dans le fichier des victimes.
-
-L’incident multi-pays `Angola / Afrique du Sud / Nigeria` est comptabilisé comme **1 incident** dans le total global de 69. Pour l’analyse régionale, il est également projeté dans les zones géographiques concernées afin de refléter l’exposition régionale réelle.
-
----
-
-## 1. Synthèse statistique
-
-| Indicateur | Valeur |
-|---|---:|
-| Total incidents | 69 |
-| Attaques ransomware | 20 |
-| Fuites de données / ventes d’accès | 40 |
-| Pays touchés | 16 |
-| Acteurs distincts | 30+ |
-| Pays le plus touché | Maroc |
-| Principal pays ransomware | Égypte |
-| Principal pays fuites de données | Maroc |
-
-### Répartition globale
-
-| Type d’incident | Nombre | Pourcentage |
+| Type d incident | Nombre | Part |
 |---|---:|---:|
-| Ransomware | 20 | 33,3 % |
-| Fuites de données / ventes d’accès | 40 | 58,0 % |
-| Revendications DDoS | 9 | 13,0 % |
-| **Total** | **69** | **100 %** |
+| Fuite de données | 40 | 55.6% |
+| Ransomware | 21 | 29.2% |
+| DDoS | 9 | 12.5% |
+| Fraude opérationnelle | 1 | 1.4% |
+| Vente d'accès | 1 | 1.4% |
+| **Total** | **72** | **100.0%** |
 
-```mermaid
-pie
-    title Repartition globale des incidents - Avril 2026
-    "Ransomware" : 20
-    "Fuites de donnees et ventes d acces" : 40
-```
+## Pays les plus représentés
 
----
-
-## 2. Répartition des victimes par pays
-
-| Pays | Incidents |
+| Pays | Nombre |
 |---|---:|
-| 🇲🇦 Maroc | 17 |
-| 🇪🇬 Égypte | 11 |
-| 🇿🇦 Afrique du Sud | 8 |
-| 🇳🇬 Nigeria | 4 |
-| 🇩🇿 Algérie | 4 |
-| 🇹🇳 Tunisie | 4 |
-| 🇰🇪 Kenya | 2 |
-| 🇬🇭 Ghana | 2 |
-| 🇧🇯 Bénin | 1 |
-| 🇧🇼 Botswana | 1 |
-| 🇪🇹 Éthiopie | 1 |
-| 🇸🇨 Seychelles | 1 |
-| 🇸🇳 Sénégal | 1 |
-| 🇺🇬 Ouganda | 1 |
-| 🇿🇲 Zambie | 1 |
-| 🌍 Multi-pays Afrique | 1 |
-| **Total** | **69** |
+| Égypte | 19 |
+| Maroc | 17 |
+| Afrique du Sud | 9 |
+| Algérie | 4 |
+| Tunisie | 4 |
+| Nigeria | 4 |
+| Kenya | 3 |
+| Ghana | 2 |
+| Rwanda | 1 |
+| Éthiopie | 1 |
+| Botswana | 1 |
+| Afrique | 1 |
+| Sénégal | 1 |
+| Seychelles | 1 |
+| Bénin | 1 |
+| Ouganda | 1 |
+| Zambie | 1 |
+| Soudan | 1 |
 
-```mermaid
-xychart
-    title "Victimes par pays - Avril 2026"
-    x-axis ["Maroc","Egypte","Afrique du Sud","Nigeria","Algerie","Tunisie","Kenya","Ghana","Benin","Botswana","Ethiopie","Seychelles","Senegal","Ouganda","Zambie","Multi-pays"]
-    y-axis "Incidents" 0 --> 18
-    bar [17,11,8,4,4,4,2,2,1,1,1,1,1,1,1,1]
-```
+## Acteurs les plus représentés
 
----
+| Libellé acteur | Nombre |
+|---|---:|
+| Keymous+ | 9 |
+| Grubder | 7 |
+| payload | 4 |
+| TheGentlemen | 4 |
+| apt73/bashe | 4 |
+| krybit | 3 |
+| anisanas2 | 3 |
+| dragonforce | 2 |
+| lockbit5 | 2 |
+| Rihana | 2 |
 
-## 3. Ransomware vs fuites de données par pays
+## Secteurs les plus représentés
 
-| Pays | Ransomware | Fuites de données / ventes d’accès | Total |
-|---|---:|---:|---:|
-| 🇲🇦 Maroc | 2 | 15 | 17 |
-| 🇪🇬 Égypte | 9 | 2 | 11 |
-| 🇿🇦 Afrique du Sud | 3 | 5 | 8 |
-| 🇳🇬 Nigeria | 0 | 4 | 4 |
-| 🇩🇿 Algérie | 0 | 4 | 4 |
-| 🇹🇳 Tunisie | 0 | 4 | 4 |
-| 🇰🇪 Kenya | 1 | 1 | 2 |
-| 🇬🇭 Ghana | 2 | 0 | 2 |
-| 🇧🇯 Bénin | 0 | 1 | 1 |
-| 🇧🇼 Botswana | 1 | 0 | 1 |
-| 🇪🇹 Éthiopie | 0 | 1 | 1 |
-| 🇸🇨 Seychelles | 1 | 0 | 1 |
-| 🇸🇳 Sénégal | 0 | 1 | 1 |
-| 🇺🇬 Ouganda | 0 | 1 | 1 |
-| 🇿🇲 Zambie | 1 | 0 | 1 |
-| 🌍 Multi-pays Afrique | 0 | 1 | 1 |
-| **Total** | **20** | **40** | **9** | **69** |
+| Secteur | Nombre |
+|---|---:|
+| Government / Administration | 7 |
+| Éducation / Université | 3 |
+| Pétrole | 2 |
+| Industrie manufacturière | 2 |
+| Agroalimentaire | 2 |
+| Sports | 2 |
+| Télécommunications | 2 |
+| Gouvernement / Culture / Administration publique | 1 |
+| Banque et services financiers | 1 |
+| Énergie / Pétrole & Gaz / Infrastructure critique | 1 |
 
-### Ransomware par pays
+## Méthodologie
 
-```mermaid
-xychart
-    title "Ransomwares par pays - Avril 2026"
-    x-axis ["Egypte","Afrique du Sud","Maroc","Ghana","Kenya","Botswana","Seychelles","Zambie"]
-    y-axis "Ransomwares" 0 --> 10
-    bar [9,3,2,2,1,1,1,1]
-```
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
 
-### Fuites de données par pays
-
-```mermaid
-xychart
-    title "Fuites de donnees par pays - Avril 2026"
-    x-axis ["Maroc","Afrique du Sud","Nigeria","Algerie","Tunisie","Egypte","Kenya","Benin","Ethiopie","Senegal","Ouganda","Multi-pays"]
-    y-axis "Fuites" 0 --> 16
-    bar [15,5,4,4,4,2,1,1,1,1,1,1]
-```
-
----
-
-## 4. Répartition géographique
-
-| Région | Pays inclus | Incidents totaux | Ransomwares | Fuites de données |
-|---|---|---:|---:|---:|
-| Afrique du Nord | 🇲🇦 Maroc, 🇩🇿 Algérie, 🇹🇳 Tunisie, 🇪🇬 Égypte | 36 occurrences géographiques | 11 | 25 |
-| Afrique de l’Ouest | 🇳🇬 Nigeria, 🇧🇯 Bénin, 🇸🇳 Sénégal, 🇬🇭 Ghana | 9 (15 %) | 2 | 7 |
-| Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇲 Zambie | 11 (18 %) | 5 | 6 |
-| Afrique de l’Est | 🇪🇹 Éthiopie, 🇰🇪 Kenya, 🇸🇨 Seychelles, 🇺🇬 Ouganda | 5 (8 %) | 2 | 3 |
-| Afrique centrale | 🇦🇴 Angola | 1 occurrence géographique | 0 | 1 |
-
-> Note : l’incident multi-pays impliquant l’Angola, l’Afrique du Sud et le Nigeria est comptabilisé dans les régions concernées pour l’analyse d’exposition régionale. Cette vue régionale représente donc une lecture d’exposition, pas un total dédupliqué strict.
-
-```mermaid
-xychart
-    title "Exposition regionale - Avril 2026"
-    x-axis ["Afrique du Nord","Afrique australe","Afrique de l Ouest","Afrique de l Est"]
-    y-axis "Incidents / expositions" 0 --> 40
-    bar [36,11,9,5]
-```
-
----
-
-## 5. Répartition sectorielle
-
-| Secteur | Incidents | Pourcentage |
-|---|---:|---:|
-| Gouvernement / Administration | 15 | 25,0 % |
-| Éducation / Université | 8 | 13,3 % |
-| Industrie / Automobile / Fabrication / Construction / Ingénierie | 7 | 11,7 % |
-| Finance / Banque / Assurance / Gestion de patrimoine | 5 | 8,3 % |
-| Santé / Médical | 4 | 6,7 % |
-| Sports / Fédérations | 4 | 6,7 % |
-| E-commerce / Retail | 4 | 6,7 % |
-| Pétrole & Énergie | 3 | 5,0 % |
-| Technologie / Numérique / Services aux entreprises | 3 | 5,0 % |
-| Alimentation / Boissons | 2 | 3,3 % |
-| Transport / Aviation / Tourisme | 2 | 3,3 % |
-| Télécommunications | 1 | 1,7 % |
-| ONG / Action sociale | 1 | 1,7 % |
-| Agrégation de données personnelles | 1 | 1,7 % |
-| **Total** | **69** | **100 %** |
-
-```mermaid
-xychart
-    title "Repartition sectorielle - Avril 2026"
-    x-axis ["Gouvernement","Education","Industrie","Finance","Sante","Sports","E-commerce","Energie","Technologie","Alimentation","Transport","Telecoms","ONG","Agregation"]
-    y-axis "Incidents" 0 --> 16
-    bar [15,8,7,5,4,4,4,3,3,2,2,1,1,1]
-```
-
----
-
-## 6. Acteurs les plus actifs
-
-| Acteur / Groupe | Incidents | Type dominant |
-|---|---:|---|
-| Grubder | 7 | Fuites de données |
-| Payload | 4 | Ransomware |
-| APT73 / BASHE | 4 | Ransomware |
-| TheGentlemen | 4 | Ransomware |
-| Krybit | 3 | Ransomware |
-| Anisanas2 | 3 | Fuites de données |
-| DragonForce | 2 | Ransomware |
-| LockBit5 | 2 | Ransomware |
-| Rihana | 2 | Fuites de données |
-| wh6ami | 2 | Fuites de données |
-| dark07x | 2 | Fuites de données |
-| NormalLeVrai | 2 | Fuites de données |
-| Fiches hors classement affiché | 23 | Mixte |
-
-```mermaid
-xychart
-    title "Acteurs les plus actifs - Avril 2026"
-    x-axis ["Grubder","Payload","APT73 BASHE","TheGentlemen","Krybit","Anisanas2","DragonForce","LockBit5","Rihana","wh6ami","dark07x","NormalLeVrai"]
-    y-axis "Incidents" 0 --> 8
-    bar [7,4,4,4,3,3,2,2,2,2,2,2]
-```
-
----
-
-## 7. Lecture CTI des tendances
-
-### 7.1 Domination des fuites de données
-
-Les fuites de données et ventes d’accès représentent **66,7 %** des incidents observés. Cette tendance montre que l’écosystème cybercriminel africain ne se limite pas au ransomware : les bases clients, les accès gouvernementaux, les documents KYC et les dumps applicatifs sont devenus des actifs monétisables.
-
-### 7.2 Maroc : principal foyer de fuites
-
-Le Maroc concentre **17 incidents**, dont **15 fuites de données**. Les secteurs touchés incluent santé, éducation, sport, banque, données personnelles et institutions publiques.
-
-### 7.3 Égypte : principal foyer ransomware
-
-L’Égypte représente **9 incidents ransomware**, soit **45 %** des attaques ransomware observées sur le mois. Les secteurs visés couvrent finance, pétrole, automobile, construction et industrie.
-
-### 7.4 Pression sur les institutions publiques
-
-Le secteur gouvernemental / administratif est le plus exposé avec **15 incidents**. Les incidents incluent des fuites de données, des ventes d’accès, des boîtes mail exposées et des revendications d’accès à des systèmes critiques.
-
-### 7.5 Données d’identité et KYC
-
-Plusieurs incidents exposent des documents d’identité, données KYC, CIN, passeports, cartes bancaires ou données personnelles sensibles. Ces données peuvent alimenter fraude documentaire, phishing ciblé, usurpation d’identité, SIM swapping ou attaques BEC.
-
----
-
-## 8. Points d’attention SOC
-
-| Priorité | Axe de surveillance |
-|---|---|
-| Haute | Accès anormaux aux portails gouvernementaux |
-| Haute | Export massif de bases de données éducatives, santé et CRM |
-| Haute | Connexions privilégiées inhabituelles |
-| Moyenne | Fuites de fichiers SQL, archives ZIP/RAR et dumps applicatifs |
-| Moyenne | Réutilisation d’identifiants exposés |
-| Moyenne | Trafic sortant volumineux ou compressé |
-| Moyenne | Activité liée aux comptes VPN, RDP et Domain Controller |
-
----
-
-## 9. Conclusion
-
-Avril 2026 confirme une intensification des menaces cyber visant l’Afrique. Les statistiques montrent une domination claire des fuites de données et ventes d’accès, avec un poids significatif des secteurs gouvernemental, éducatif et santé.
-
-Le Maroc, l’Égypte et l’Afrique du Sud constituent les trois principaux pôles d’exposition. Les observations AFRINTEL indiquent également une maturation des marchés underground ciblant les organisations africaines, notamment via la revente de bases de données, de documents d’identité et d’accès administratifs.
-
-**AFRINTEL** - [Cyber Threat Intelligence africaine](https://github.com/Hatchepsoute/AFRINTEL)
+[Victim records](../../../CyberAttackAfrica/2026/04-april/victims_FR.md)

@@ -1,145 +1,66 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Statistics-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Afrique-orange)
-![Period](https://img.shields.io/badge/Période-Mars%202026-lightgrey)
+# Statistiques mensuelles AFRINTEL - mars 2026
 
-# AFRINTEL - Statistiques Cyber Afrique (Mars 2026)
+Ce corpus validé contient **41 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en mars 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
-## Résumé global
+## Ventilation mensuelle validée
 
-| Indicateur | Valeur |
-|---|---|
-| Victimes recensées | 41 |
-| Pays touchés | 12 (plus 1 incident multi-pays) |
-| Acteurs attribués | 26 |
-| Incidents sans attribution publique | 1 |
-| Incidents ransomware | 19 |
-| Fuites de données / intrusions | 22 |
+| Type d incident | Nombre | Part |
+|---|---:|---:|
+| Fuite de données | 21 | 51.2% |
+| Ransomware | 19 | 45.2% |
+| Fraude opérationnelle | 1 | 2.4% |
+| **Total** | **41** | **100.0%** |
 
-```mermaid
-pie
-    title Répartition des incidents
-    "Ransomware (19)" : 19
-    "Fuites / Intrusions (22)" : 22
-```
+## Pays les plus représentés
 
-## Pays les plus touchés
+| Pays | Nombre |
+|---|---:|
+| Afrique du Sud | 14 |
+| Égypte | 9 |
+| Maroc | 8 |
+| Nigeria | 2 |
+| Zambie | 1 |
+| Algérie | 1 |
+| 🌍 Afrique (Multi-pays) | 1 |
+| Madagascar | 1 |
+| Tunisie | 1 |
+| Namibie | 1 |
+| Sénégal | 1 |
+| Tanzanie | 1 |
+| Guinée | 1 |
 
-| Pays | Victimes |
-|---|---|
-| 🇿🇦 Afrique du Sud | 13 |
-| 🇲🇦 Maroc | 8 |
-| 🇪🇬 Égypte | 9 |
-| 🇳🇬 Nigeria | 2 |
-| 🌍 Multi-pays | 1 |
-| 🇩🇿 Algérie | 1 |
-| 🇸🇳 Sénégal | 1 |
-| 🇬🇳 Guinée | 1 |
-| 🇿🇲 Zambie | 1 |
-| 🇲🇬 Madagascar | 1 |
-| 🇹🇳 Tunisie | 1 |
-| 🇳🇦 Namibie | 1 |
-| 🇹🇿 Tanzanie | 1 |
+## Acteurs les plus représentés
 
-```mermaid
-xychart
-    title "Victimes par pays"
-    x-axis ["ZA","MA","EG","NG","MULTI","DZ","SN","GN","ZM","MG","TN","NA","TZ"]
-    y-axis "Victimes" 0 --> 15
-    bar [13,8,9,2,1,1,1,1,1,1,1,1,1]
-```
-
-## Répartition par acteur
-
-| Acteur | Victimes |
-|---|---|
+| Libellé acteur | Nombre |
+|---|---:|
 | CrowStealer | 5 |
-| APT73/BASHE | 4 |
-| XP95 | 3 |
+| APT73 / Bashe | 4 |
 | xNov | 3 |
+| XP95 | 3 |
 | Qilin | 2 |
 | TheGentlemen | 2 |
 | INC Ransom | 2 |
+| LockBit 5.0 | 1 |
+| Spirigatito | 1 |
+| Grubder | 1 |
 
-```mermaid
-pie
-    title Acteurs les plus actifs
-    "CrowStealer (5)" : 5
-    "APT73/BASHE (4)" : 4
-    "XP95 (3)" : 3
-    "xNov (3)" : 3
-    "Qilin (2)" : 2
-    "TheGentlemen (2)" : 2
-    "INC Ransom (2)" : 2
-```
+## Secteurs les plus représentés
 
-## Répartition sectorielle
-
-| Secteur | Incidents |
-|---|---|
-| Gouvernement / Administration | 9 |
-| Éducation / Université | 7 |
-| Santé | 4 |
-| Assurance | 3 |
-| Télécommunications | 3 |
-| Ingénierie / Construction | 3 |
+| Secteur | Nombre |
+|---|---:|
+| Éducation / Enseignement supérieur | 2 |
+| Ingénierie et construction | 2 |
+| Télécommunications | 2 |
+| Services d'assurance | 2 |
 | Finance / Banque | 2 |
-| IT / Consulting | 2 |
-| Fintech | 1 |
-| E-commerce / Classifieds | 1 |
-| Immobilier / Classifieds | 1 |
-| Sports / Leisure | 1 |
-| Aviation | 1 |
-| Gestion de patrimoine | 1 |
-| Recherche / Think tank | 1 |
-| Alimentation / Boissons | 1 |
+| Automobile (Distribution et Services) | 1 |
+| Gouvernement / Protection sociale | 1 |
+| Sport / Loisirs | 1 |
+| Technologie / Services aux entreprises (CRM) | 1 |
+| E-commerce / Petites annonces en ligne | 1 |
 
-```mermaid
-pie
-    title Secteurs ciblés
-    "Gouvernement (9)" : 9
-    "Éducation (7)" : 7
-    "Santé (4)" : 4
-    "Assurance (3)" : 3
-    "Télécommunications (3)" : 3
-    "Ingénierie (3)" : 3
-    "Finance (2)" : 2
-    "IT/Consulting (2)" : 2
-    "Fintech (1)" : 1
-    "E-commerce (1)" : 1
-    "Immobilier (1)" : 1
-    "Sports (1)" : 1
-    "Aviation (1)" : 1
-    "Gestion de patrimoine (1)" : 1
-    "Recherche (1)" : 1
-    "Alimentation / Boissons (1)" : 1
-```
+## Méthodologie
 
-## Ransomware vs Fuites par pays
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
 
-| Pays | Ransomware | Fuites |
-|---|---|---|
-| 🇿🇦 Afrique du Sud | 7 | 6 |
-| 🇲🇦 Maroc | 5 | 3 |
-| 🇪🇬 Égypte | 3 | 6 |
-| 🇳🇬 Nigeria | 0 | 2 |
-
-```mermaid
-xychart
-    title "Ransomware vs Fuites"
-    x-axis ["Afrique du Sud","Maroc","Égypte","Nigeria"]
-    y-axis "Incidents" 0 --> 8
-    bar [7,5,3,0]
-    bar [6,3,5,2]
-```
-
-## Tendances CTI
-
-- L’Afrique du Sud enregistre le volume le plus élevé en mars, avec 13 fiches.
-- Le Maroc compte 8 fiches et l’Égypte 9, dont des publications concernant des institutions publiques.
-- Les secteurs gouvernementaux et éducatifs représentent plus de 40 % des incidents.
-- Les fuites et intrusions représentent 22 des 41 fiches de mars.
-- Une exposition de chaîne d’approvisionnement et une intrusion financière directe sont documentées pendant le mois.
-
----
-
-AFRINTEL - African Cyber Threat Intelligence
+[Victim records](../../../CyberAttackAfrica/2026/03-march/victims_FR.md)

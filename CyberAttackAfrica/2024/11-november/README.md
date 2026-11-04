@@ -4,15 +4,15 @@
 
 ## 1. Executive summary
 
-In November 2024, AFRINTEL retains **15 canonical cyber incidents across 10 countries**. The month is led by **Ransomware (12, 80.0%)** followed by **Access Sale (2, 13.3%)**. Leading countries are **South Africa (3)**, **Nigeria (2)**, **Egypt (2)**. Leading sectors are **Manufacturing / Industry (3)**, **Professional / Business Services (2)**, **Government / Administration (2)**. Most frequent actor/group labels are `killsec` (3), `ransomhub` (2), `Sentap` (2). `Unknown` means missing attribution, not an actor.
+In November 2024, AFRINTEL retains **16 canonical cyber incidents across 11 countries**. The month is led by **Ransomware (12, 75.0%)**, followed by **Data Leak (2, 12.5%)** and **Access Sale (2, 12.5%)**. Leading countries are **South Africa (3)**, **Nigeria (2)** and **Egypt (2)**. Leading sectors are **Manufacturing / Industry (3)**, **Professional / Business Services (2)**, **Government / Administration (2)** and **Commerce / E-commerce (1)**. Most frequent actor/group labels are `killsec` (3), `ransomhub` (2), `Sentap` (2) and `X0Frankenstein` (1). `Unknown` means missing attribution, not an actor.
 
 ### 1.1 Month-over-month study
 
 | Indicator | October 2024 | November 2024 | Change |
 |---|---|---|---|
-| Total | 11 | 15 | +4 (+36.4%) |
+| Total | 11 | 16 | +5 (+45.5%) |
 | Ransomware | 8 | 12 | +4 (+50.0%) |
-| Data Leak | 2 | 1 | -1 (-50.0%) |
+| Data Leak | 2 | 2 | Stable |
 | Access Sale | 0 | 2 | +2 (new) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
@@ -23,7 +23,7 @@ In November 2024, AFRINTEL retains **15 canonical cyber incidents across 10 coun
 
 ### 1.2 Comparative analysis
 
-Monthly volume **increases by 4 incident(s)**. Structural changes are: Ransomware 8->12 (+4), Access Sale 0->2 (+2), System Intrusion 1->0 (-1), Data Leak 2->1 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
+Monthly volume **increases by 5 incidents**. Structural changes are: Ransomware 8->12 (+4), Access Sale 0->2 (+2), Data Leak 2->2 (stable), and System Intrusion 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
 
 ## 2. Methodology
 
@@ -39,7 +39,7 @@ Monthly volume **increases by 4 incident(s)**. Structural changes are: Ransomwar
 | Type | Records | Share |
 |---|---|---|
 | Ransomware | 12 | 80.0% |
-| Data Leak | 1 | 6.7% |
+| Data Leak | 2 | 12.5% |
 | Access Sale | 2 | 13.3% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
@@ -52,7 +52,7 @@ Monthly volume **increases by 4 incident(s)**. Structural changes are: Ransomwar
 pie showData
     title Incident types - November 2024
     "Ransomware" : 12
-    "Data Leak" : 1
+    "Data Leak" : 2
     "Access Sale" : 2
 ```
 
@@ -61,6 +61,7 @@ pie showData
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
 | South Africa | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nigeria | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Egypt | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Burkina Faso | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -91,6 +92,7 @@ pie showData
 | Healthcare / Medical | 2 | 13.3% |
 | Technology / IT | 2 | 13.3% |
 | Finance / Banking | 2 | 13.3% |
+| Commerce / E-commerce | 1 | 6.3% |
 | Education / University | 1 | 6.7% |
 | Agriculture / Agribusiness | 1 | 6.7% |
 
@@ -115,7 +117,7 @@ pie showData
 | Evidence position | Records | Share |
 |---|---|---|
 | Claim - Unverified | 11 | 73.3% |
-| Claim - Data Sample Published | 3 | 20.0% |
+| Claim - Data Sample Published | 4 | 25.0% |
 | Confirmed | 1 | 6.7% |
 
 ### Confidence
@@ -124,7 +126,7 @@ pie showData
 |---|---|---|
 | Low | 11 | 73.3% |
 | Very High | 2 | 13.3% |
-| Medium | 2 | 13.3% |
+| Medium | 3 | 18.8% |
 
 ## 9. Timeline
 
@@ -145,6 +147,7 @@ timeline
 ----------------------------
 
 - **Qualification de la preuve -** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
+    November 3, 2024 : Original Shop Algeria - Data Leak
     4 Novembre 2024 : College of Business Education (CBE)
 - **Acteur / Groupe -** hellcat
 - **Secteur -** Education / University
@@ -321,9 +324,9 @@ timeline
 
 **2 record(s) (13.3%).** Leading countries: Burkina Faso (2). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
 
-### Data Leak - 1
+### Data Leak - 2
 
-**1 record(s) (6.7%).** Leading countries: South Africa (1). Conclusions remain limited to documented evidence; the incident type does not justify inferring an unobserved vector or impact.
+**2 record(s) (12.5%).** Leading countries: South Africa (1), Algeria (1). The published material includes a CSV sample associated with Original Shop Algeria; personal data and secrets are not reproduced.
 
 ## 11. Priority incidents for review
 
@@ -419,8 +422,19 @@ timeline
 
 ## 14. Conclusion
 
-November 2024 contains **15 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
+November 2024 contains **16 canonical incidents**. Month-over-month comparison uses the same taxonomy and chronology rules, except January where December 2023 remains `N/A` because no equivalent re-audit has been completed.
 
 👉🏾 [Canonical victims](./victims.md)
 
 **AFRINTEL** - TLP:CLEAR
+
+### Visualisations
+
+![Types](assets/type_EN.png)
+![Types en secteurs circulaires](assets/type_pie_EN.png)
+![Pays](assets/geo_EN.png)
+![Pays en secteurs circulaires](assets/geo_pie_EN.png)
+![Secteurs](assets/sector_EN.png)
+![Secteurs en secteurs circulaires](assets/sector_pie_EN.png)
+![Acteurs](assets/actor_top10_EN.png)
+![Top 5 pays](assets/country_top5_EN.png)

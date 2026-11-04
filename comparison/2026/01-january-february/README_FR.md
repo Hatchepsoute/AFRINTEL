@@ -1,60 +1,48 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Analyse%20CTI-blue)](https://github.com/Hatchepsoute/AFRINTEL)
+# Comparaison AFRINTEL : janvier et février 2026
 
-# Analyse comparative des cybermenaces
+## Périmètre comparable
 
-## Janvier vs février 2026
-
-👉🏾 [English version](./README.md)
-
-Les chiffres proviennent des fiches de [janvier](../../../CyberAttackAfrica/2026/01-january/victims_FR.md) et [février](../../../CyberAttackAfrica/2026/02-february/victims_FR.md).
-
-## Comparaison générale
+Cette comparaison utilise les fichiers victimes bilingues validés : **23 fiches en janvier** et **21 fiches en février**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Janvier | Février | Évolution |
 |---|---:|---:|---:|
-| Total des fiches | 21 | 20 | -1 (-4,8 %) |
-| Ransomware | 17 | 20 | +3 (+17,6 %) |
-| Fuites / ventes d'accès | 3 | 0 | -3 |
-| Défacement de sites web | 1 | 0 | -1 |
-| Pays représentés | 12 | 14 | +2 |
+| Total incidents | **23** | **21** | **-2 (-8.7%)** |
+| Ransomware | 19 | 20 | +1 |
+| Fuite de données | 2 | 1 | -1 |
+| Vente d'accès | 1 | 0 | -1 |
+| Défacement | 1 | 0 | -1 |
 
-## Évolution géographique
+```mermaid
+xychart-beta
+    title "Fiches mensuelles : janvier vs février 2026"
+    x-axis [Janvier, Février]
+    y-axis "Records" 0 --> 28
+    bar [23, 21]
+```
 
-| Pays | Janvier | Février |
+## Countries represented
+
+| Country code | January | February |
 |---|---:|---:|
-| Afrique du Sud | 4 | 3 |
-| Égypte | 3 | 3 |
-| Kenya | 4 | 1 |
-| Maroc | 2 | 1 |
-| Nigeria | 0 | 2 |
-| Ghana | 0 | 2 |
-| Sénégal | 1 | 1 |
-| Tunisie | 1 | 1 |
+| ZA | 6 | 3 |
+| EG | 3 | 4 |
+| KE | 4 | 1 |
+| MA | 2 | 1 |
+| GH | 0 | 2 |
+| MU | 1 | 1 |
+| NG | 0 | 2 |
+| SN | 1 | 1 |
+| TN | 1 | 1 |
+| TZ | 1 | 1 |
+| CI | 0 | 1 |
+| DZ | 1 | 0 |
+| MZ | 1 | 0 |
+| NA | 0 | 1 |
+| NE | 1 | 0 |
+| SD | 0 | 1 |
+| SO | 0 | 1 |
+| TG | 1 | 0 |
 
-Février apporte des fiches directes pour la Somalie, le Soudan, la Côte d'Ivoire et la Namibie, absentes de janvier. Le défacement des sites gouvernementaux nigériens, lui, n'a eu lieu qu'en janvier.
+## CTI reading
 
-## Évolution sectorielle et acteurs
-
-| Vue | Janvier | Février |
-|---|---|---|
-| Principaux secteurs | Gouvernement 4 ; Finance 4 ; Industrie 3 ; Transport 3 | Gouvernement 3 ; Aviation 3 ; Énergie 2 ; Banque / Fintech 2 |
-| Principaux acteurs | TheGentlemen 6 ; Tengu 5 | TheGentlemen 5 ; 0APT 3 ; LockBit 5 3 |
-
-## Analyse CTI
-
-- Le volume global a à peine bougé d'un mois à l'autre.
-- Février, c'était que du ransomware. Janvier avait ça, plus des fuites, une vente d'accès et le défacement du Niger.
-- La couverture géographique s'est élargie, 12 à 14 pays, alors même que le total des fiches baissait d'une unité.
-- Le chiffre de 139 To associé à DAF Sénégal n'est repris ici que comme le volume documenté dans cette fiche, pas comme une donnée vérifiée.
-
-## Priorités SOC
-
-- Maintenir les capacités de réponse ransomware sur les identités, postes, sauvegardes et accès privilégiés.
-- Appliquer une rotation rapide des identifiants lorsqu'une vente d'accès ou une exposition de comptes est documentée.
-- Suivre séparément les publications de victimes, les données accessibles et les interruptions opérationnelles.
-
-## Conclusion
-
-Les totaux sont proches entre les deux mois, mais leur composition diffère. Février, c'est du ransomware d'un bout à l'autre. Janvier mélangeait en plus exposition de données, vente d'accès et défacement à motivation politique.
-
-**AFRINTEL** - TLP:CLEAR
+Le corpus évolue de 23 à 21 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

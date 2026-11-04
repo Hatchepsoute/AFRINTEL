@@ -199,7 +199,7 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Analysis:**
   AFRINTEL reviewed the tengu leak site listing for Tahkout Group, marked as Encrypted, with a claimed volume of 83 GB. In addition to the leak site page, AFRINTEL reviewed the group's published proof images, apparently taken from a compromised Windows Server host: a Server Manager console showing Active Directory Domain Services, DHCP and DNS roles configured (consistent with a domain controller), a network share named "Shares" containing folders labelled COMMERCIAL, DLG PAIE, PATRIMOINE, Pointage, POINTAGE FACIAL, Ressources Humaines, RH and Suivi Contrats, and a full-screen ransom notice reading "YOUR SYSTEM HAS BEEN BLOCKED BY TENGU RANSOMWARE". These elements indicate that the group obtained privileged access to core identity infrastructure and to payroll, HR, biometric attendance and contract-related file shares, and that ransomware was executed on at least one host. AFRINTEL did not access the leaked files themselves and cannot confirm the exfiltrated data volume, the full operational impact or the initial access vector.
 
-### 31 January 2026
+### 30 January 2026
 #### 🇲🇦 Morocco - AOM Aviation Group (Air Ocean Maroc)
 - **Actor / Group:** skra1a
 - **Sector:** Air Transport / Civil Aviation
@@ -207,3 +207,48 @@ January 2026 includes **21 unique incidents**: **17 ransomware incidents**, **2 
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
 - **Victim Description:** Moroccan group providing air transport and civil aviation services.
+- **Analysis:** The published sample contains SQL `INSERT INTO` statements targeting a supplier table. The visible records include supplier identifiers, company names, responsible contacts, business addresses, countries, telephone numbers, email addresses, and creation or update dates. The extract links AOM Aviation Group to an aviation-sector supplier management environment and includes Moroccan organizations as well as international partners. The exposure of professional contact data and internal references creates risks of targeted fraud, phishing, and impersonation of business relationships. The analysis is limited to the visible sample; it does not establish the total volume, the full set of affected tables, the initial access vector, or the complete authenticity of the database.
+
+### January 3, 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Constantia Pharmacy
+
+- **Incident date:** January 3, 2026
+- **Publication / confirmation date:** January 5, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** `Want_to_cry` ransomware observed; human operator unattributed
+- **Sector:** Healthcare / Pharmacy
+- **Status:** Corroborated
+- **Incident type:** Ransomware
+- **Confidence:** High
+- **Impact:** Level 2
+- **Description:** **Constantia Pharmacy** is a community pharmacy located at **Constantia Village Shopping Centre** in Cape Town, South Africa. It provides prescription dispensing, pharmaceutical advice and clinic/community-care services. Such operations rely on pharmacy information systems and records needed to serve patients ([official website](https://constantiapharmacy.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Earlier incident corroborated by reporting:** MyBroadband documented a third party’s intervention against file-encrypting malware on a Constantia Pharmacy server in early January 2026. The attack dates to January, not September; AFRINTEL’s September discovery is not a new attack.
+
+- **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
+- **Sources / Evidence:** [MyBroadband, January 5, 2026](https://mybroadband.co.za/news/security/623956-hacker-rescues-south-african-pharmacy-from-cyber-attack.html)
+
+Constantia Pharmacy is an independent pharmacy in Cape Town. On January 3, a researcher observed via Shodan an exposed Windows server belonging to its environment while ransomware was running. The pharmacy and its ProPharm provider were alerted and intervened. The observation and coordinated response corroborate the incident; exfiltration, encrypted volume and operator identity remain unknown.
+
+### January 12, 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Land and Agricultural Development Bank of South Africa (Land Bank)
+
+- **Incident date:** January 12, 2026
+- **Detailed public confirmation:** March 9, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Government / Public Bank / Finance
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** The **Land and Agricultural Development Bank of South Africa (Land Bank)** is a specialist development-finance institution serving **South African agriculture**. It finances commercial farmers, agribusinesses and new participants in the agricultural value chain to support production and sector development. It is a sector-focused public development bank rather than a general-purpose retail bank ([Land Bank official profile](https://www.landbank.co.za/About-Us/Pages/Our-Business.aspx)).
+
+- **Independent verification as of 18 October 2026:** **Publicly corroborated acknowledgement:** ITWeb reported the Land Bank ransomware incident occurring in January 2026 and the bank’s security improvements. Added to AFRINTEL in September, but not a September attack.
+
+- **Additional verification sources:** [Source 1](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N)
+
+- **Sources / Evidence:** [ITWeb, March 9, 2026](https://www.itweb.co.za/article/land-bank-tightens-security-after-ransomware-attack/raYAyMorlOl7J38N); [ITWeb, January 16, 2026](https://www.itweb.co.za/article/land-bank-flags-it-systems-disruption/Kjlyr7wBDRZvk6am)
+
+The South African finance minister confirmed a ransomware attack detected on January 12 after unauthorised activity. Some servers and laptops were encrypted and files were exfiltrated; critical ERP, core-banking and CRM systems were reportedly not compromised. The actor, exact volume and dwell time remain unknown.

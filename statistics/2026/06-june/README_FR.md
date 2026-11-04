@@ -1,297 +1,70 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Périmètre-Afrique-orange)
-![Period](https://img.shields.io/badge/Période-Juin_2026-708090)
-![Victims](https://img.shields.io/badge/Victimes-40-critical)
-![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
-![Data Leaks](https://img.shields.io/badge/Fuites-19-orange)
-![Countries](https://img.shields.io/badge/Pays%20touchés-20-blueviolet)
-![Intel](https://img.shields.io/badge/Type-Statistiques%20CTI-purple)
+# Statistiques mensuelles AFRINTEL - juin 2026
 
-# AFRINTEL - Statistiques cyber Afrique
-## Juin 2026
+Ce corpus validé contient **41 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en juin 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
-👉🏾 [**English version available here**](./README.md)
+## Ventilation mensuelle validée
 
-## Note méthodologique
-
-Ces statistiques couvrent les publications observées dans le périmètre de surveillance AFRINTEL pour juin 2026 (1-30 juin 2026). Les incidents sont rattachés à juin lorsqu'ils ont été identifiés et analysés pour la première fois par AFRINTEL, même si la date de publication initiale est antérieure ; cette date reste documentée dans la fiche victime. Chaque fiche conserve le statut documenté dans le fichier des victimes.
-
-**Note de suivi  -  examens.tn :** la publication du 23 juin 2026, signée **AshleyWood2022**, est documentée comme un suivi de la publication initiale du 15 décembre 2025. Elle est mentionnée pour la chronologie, mais ne constitue pas une fiche canonique supplémentaire en l'absence de preuve d'un nouvel échantillon, volume, empreinte ou accès indépendant.
-
-Les deux incidents multi-pays (vente d'e-mails EDR Convince, vente d'accès portails LEP Governor) sont comptés comme **1 incident chacun** dans le total global de 39. Dans le tableau d'exposition géographique (section 2.3), chaque pays touché par ces incidents est listé individuellement, donc les totaux par pays dépassent 39.
-
----
-
-## 1. Synthèse statistique
-
-| Indicateur | Valeur |
-|---|---:|
-| Total incidents | 39 |
-| Incidents ransomware | 20 |
-| Fuites de données / ventes d'accès | 20 |
-| Pays touchés | 20 (14 directs + 6 via incidents multi-pays) |
-| Acteurs distincts | 25 |
-| Pays le plus touché | Maroc (9 incidents) |
-| Principal pays ransomware | Afrique du Sud |
-| Principal pays fuite de données | Maroc |
-
-### Répartition globale
-
-| Type d'incident | Nombre | Pourcentage |
+| Type d incident | Nombre | Part |
 |---|---:|---:|
-| Ransomware | 20 | 50,0 % |
-| Fuites de données / ventes d'accès | 20 | 50,0 % |
-| **Total** | **39** | **100 %** |
+| Ransomware | 20 | 48.8% |
+| Fuite de données | 18 | 43.9% |
+| Vente d'accès | 2 | 4.9% |
+| Intrusion système | 1 | 2.4% |
+| **Total** | **41** | **100.0%** |
 
-```mermaid
-pie showData
-    title Répartition globale des incidents - Juin 2026
-    "Ransomware" : 20
-    "Fuites de données et ventes d'accès" : 20
-```
+## Pays les plus représentés
 
----
-
-## 2. Répartition des victimes par pays
-
-### 2.1 Incidents directs par pays
-
-Ces 38 incidents ont un seul pays victime identifié. Les 2 incidents multi-pays sont détaillés en section 2.2.
-
-| Pays | Incidents |
+| Pays | Nombre |
 |---|---:|
-| 🇲🇦 Maroc | 9 |
-| 🇿🇦 Afrique du Sud | 6 |
-| 🇳🇬 Nigéria | 4 |
-| 🇪🇬 Égypte | 4 |
-| 🇹🇳 Tunisie | 4 |
-| 🇱🇾 Libye | 3 |
-| 🇬🇦 Gabon | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇸🇳 Sénégal | 1 |
-| 🇧🇼 Botswana | 1 |
-| 🇲🇺 Maurice | 1 |
-| 🇹🇿 Tanzanie | 1 |
-| 🇾🇹 Mayotte | 1 |
-| 🇰🇪 Kenya | 1 |
-| **Sous-total (direct)** | **37 |
+| Maroc | 9 |
+| Afrique du Sud | 7 |
+| Égypte | 4 |
+| Tunisie | 3 |
+| Libye | 3 |
+| Gabon | 2 |
+| Nigeria | 2 |
+| Nigéria | 2 |
+| 🌍 Afrique (Multi-pays) | 2 |
+| Zimbabwe | 1 |
+| Sénégal | 1 |
+| Botswana | 1 |
+| Maurice | 1 |
+| Tanzanie | 1 |
+| Mayotte | 1 |
+| Kenya | 1 |
 
-```mermaid
-xychart
-    title "Incidents directs par pays - Juin 2026"
-    x-axis ["Maroc","Afrique du Sud","Nigéria","Égypte","Tunisie","Libye","Gabon","Zimbabwe","Sénégal","Botswana","Maurice","Tanzanie","Mayotte","Kenya"]
-    y-axis "Incidents" 0 --> 10
-    bar [9,6,4,4,4,3,1,1,1,1,1,1,1,1]
-```
+## Acteurs les plus représentés
 
-### 2.2 Exposition géographique des incidents multi-pays
+| Libellé acteur | Nombre |
+|---|---:|
+| anisanas2 | 5 |
+| DeadLock | 4 |
+| LockBit 5 | 3 |
+| Nightspire | 2 |
+| 404Crew Cyber Team | 2 |
+| Krybit | 2 |
+| Anisanas2 | 2 |
+| EvaN47 | 2 |
+| Non attribué publiquement | 2 |
+| Black X | 1 |
 
-2 incidents ont touché plusieurs pays simultanément via des ventes d'identifiants/accès portails. Chacun est compté une fois dans le total global de 39 mais expose plusieurs pays.
+## Secteurs les plus représentés
 
-| Incident | Acteur | Pays touchés (périmètre africain) |
-|---|---|---|
-| Vente d'adresses e-mail gouvernementales (abus EDR) | Convince | 🇪🇹 Éthiopie, 🇹🇿 Tanzanie, 🇦🇴 Angola, 🇰🇪 Kenya, 🇿🇲 Zambie, 🇳🇬 Nigéria, 🇪🇬 Égypte, 🇲🇦 Maroc |
-| Vente de comptes portails forces de l'ordre | [Citizen] Governor | 🇪🇬 Égypte, 🇲🇼 Malawi, 🇹🇿 Tanzanie, 🇩🇿 Algérie, 🇰🇪 Kenya, 🇿🇲 Zambie, 🇸🇱 Sierra Leone |
+| Secteur | Nombre |
+|---|---:|
+| Government / Administration | 12 |
+| Finance / Banking | 6 |
+| E-commerce / Retail | 4 |
+| Healthcare / Medical | 3 |
+| Education / University | 3 |
+| Transport / Logistique | 2 |
+| Industrie / Automobile / Fabrication | 2 |
+| Organisations politiques / Partis | 1 |
+| Mines / Industries extractives | 1 |
+| Hôtellerie / Tourisme | 1 |
 
-> Le listing original de Governor incluait aussi la Palestine et le Yémen ; les deux sont hors périmètre africain d'AFRINTEL et exclus du décompte des pays.
+## Méthodologie
 
-### 2.3 Exposition géographique totale (20 pays)
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
 
-> La colonne "Exposition multi-pays" compte le nombre d'apparitions d'un pays dans les deux incidents de vente d'identifiants. Les sommes de colonnes dépassent 39 car les incidents multi-pays touchent plusieurs pays simultanément.
-
-| Pays | Incidents directs | Exposition multi-pays | Exposition totale |
-|---|---:|---:|---:|
-| 🇲🇦 Maroc | 9 | 1 (Convince) | 10 |
-| 🇿🇦 Afrique du Sud | 6 | 0 | 6 |
-| 🇪🇬 Égypte | 4 | 2 (Convince, Governor) | 6 |
-| 🇳🇬 Nigéria | 4 | 1 (Convince) | 5 |
-| 🇹🇳 Tunisie | 4 | 0 | 4 |
-| 🇱🇾 Libye | 3 | 0 | 3 |
-| 🇹🇿 Tanzanie | 1 | 2 (Convince, Governor) | 3 |
-| 🇰🇪 Kenya | 1 | 2 (Convince, Governor) | 3 |
-| 🇿🇲 Zambie | 0 | 2 (Convince, Governor) | 2 |
-| 🇬🇦 Gabon | 1 | 0 | 1 |
-| 🇿🇼 Zimbabwe | 1 | 0 | 1 |
-| 🇸🇳 Sénégal | 1 | 0 | 1 |
-| 🇧🇼 Botswana | 1 | 0 | 1 |
-| 🇲🇺 Maurice | 1 | 0 | 1 |
-| 🇾🇹 Mayotte | 1 | 0 | 1 |
-| 🇪🇹 Éthiopie | 0 | 1 (Convince) | 1 |
-| 🇦🇴 Angola | 0 | 1 (Convince) | 1 |
-| 🇲🇼 Malawi | 0 | 1 (Governor) | 1 |
-| 🇩🇿 Algérie | 0 | 1 (Governor) | 1 |
-| 🇸🇱 Sierra Leone | 0 | 1 (Governor) | 1 |
-| **Total** | **37 incidents directs** | **15 expositions pays** | **20 pays distincts** |
-
----
-
-## 3. Ransomware vs fuites de données par pays
-
-| Pays | Ransomware | Fuites de données / Ventes d'accès | Total |
-|---|---:|---:|---:|
-| 🇲🇦 Maroc | 1 | 8 | 9 |
-| 🇿🇦 Afrique du Sud | 4 | 2 | 6 |
-| 🇳🇬 Nigéria | 1 | 3 | 4 |
-| 🇪🇬 Égypte | 3 | 1 | 4 |
-| 🇹🇳 Tunisie | 3 | 1 | 4 |
-| 🇱🇾 Libye | 1 | 2 | 3 |
-| 🇬🇦 Gabon | 1 | 0 | 1 |
-| 🇿🇼 Zimbabwe | 1 | 0 | 1 |
-| 🇸🇳 Sénégal | 1 | 0 | 1 |
-| 🇧🇼 Botswana | 1 | 0 | 1 |
-| 🇲🇺 Maurice | 1 | 0 | 1 |
-| 🇹🇿 Tanzanie | 0 | 1 | 1 |
-| 🇾🇹 Mayotte | 1 | 0 | 1 |
-| 🇰🇪 Kenya | 1 | 0 | 1 |
-| **Sous-total (direct)** | **19** | **17** | **37** |
-| 🌍 Convince (multi-pays) | 0 | 1 | 1 |
-| 🌍 Governor (multi-pays) | 0 | 1 | 1 |
-| **Total** | **20** | **19** | **39** |
-
-### Ransomware par pays
-
-```mermaid
-xychart
-    title "Ransomware par pays - Juin 2026"
-    x-axis ["Afrique du Sud","Égypte","Tunisie","Maroc","Nigéria","Libye","Gabon","Zimbabwe","Sénégal","Botswana","Maurice","Mayotte","Kenya"]
-    y-axis "Ransomware" 0 --> 5
-    bar [4,3,3,1,1,1,1,1,1,1,1,1,1]
-```
-
-### Fuites de données par pays
-
-```mermaid
-xychart
-    title "Fuites de données par pays (direct) - Juin 2026"
-    x-axis ["Maroc","Nigéria","Afrique du Sud","Libye","Égypte","Tunisie","Tanzanie"]
-    y-axis "Fuites" 0 --> 9
-    bar [8,3,2,2,1,1,1]
-```
-
----
-
-## 4. Répartition géographique
-
-| Région | Pays inclus | Incidents directs | Exposition multi-pays |
-|---|---|---:|---:|
-| Afrique du Nord | 🇲🇦 Maroc, 🇪🇬 Égypte, 🇹🇳 Tunisie, 🇱🇾 Libye | 20 | +3 (Maroc, Égypte via Convince ; Égypte via Governor) |
-| Afrique australe | 🇿🇦 Afrique du Sud, 🇧🇼 Botswana, 🇿🇼 Zimbabwe | 8 | 0 |
-| Afrique de l'Ouest | 🇳🇬 Nigéria, 🇸🇳 Sénégal | 5 | +1 (Nigéria via Convince) |
-| Afrique centrale | 🇬🇦 Gabon | 1 | 0 |
-| Afrique de l'Est | 🇰🇪 Kenya, 🇹🇿 Tanzanie | 2 | +4 (Kenya, Tanzanie via Convince et Governor) |
-| Océan Indien | 🇲🇺 Maurice, 🇾🇹 Mayotte | 2 | 0 |
-| Sans incident direct | 🇪🇹 Éthiopie, 🇦🇴 Angola, 🇿🇲 Zambie, 🇲🇼 Malawi, 🇩🇿 Algérie, 🇸🇱 Sierra Leone | 0 | +7 (voir section 2.3) |
-
-> Les incidents multi-pays sont comptés une fois dans le total global de 39. La colonne "Exposition multi-pays" montre les contacts pays supplémentaires issus de ces incidents. Total de pays distincts : 20 répartis sur 6 régions, dont 6 pays exposés uniquement via les ventes d'identifiants.
-
-```mermaid
-xychart
-    title "Incidents directs par région - Juin 2026"
-    x-axis ["Afrique du Nord","Afrique australe","Afrique de l'Ouest","Afrique centrale","Afrique de l'Est","Océan Indien"]
-    y-axis "Incidents directs" 0 --> 22
-    bar [19,8,5,1,2,2]
-```
-
----
-
-## 5. Répartition sectorielle
-
-| Secteur | Incidents | Pourcentage |
-|---|---:|---:|
-| Government / Administration | 12 | 30,0 % |
-| Finance / Banking | 6 | 15,0 % |
-| Education / University | 3 | 10,0 % |
-| E-commerce / Retail | 4 | 10,0 % |
-| Healthcare / Medical | 3 | 7,5 % |
-| Transport / Logistique | 2 | 5,0 % |
-| Industrie / Automobile / Fabrication | 2 | 5,0 % |
-| Organisations politiques / Partis | 1 | 2,5 % |
-| Mines / Industries extractives | 1 | 2,5 % |
-| Hôtellerie / Tourisme | 1 | 2,5 % |
-| Construction / Immobilier | 1 | 2,5 % |
-| Alimentation / Boissons | 1 | 2,5 % |
-| Services aux entreprises / Technologie | 1 | 2,5 % |
-| Services de sécurité | 1 | 2,5 % |
-| **Total** | **39** | **100 %** |
-
-```mermaid
-xychart
-    title "Répartition sectorielle - Juin 2026"
-    x-axis ["Gouvernement","Finance","Éducation","E-commerce","Santé","Transport","Industrie","Politique","Mines","Hôtellerie","Construction","Alimentation","Services tech","Sécurité"]
-    y-axis "Incidents" 0 --> 13
-    bar [12,6,4,4,3,2,2,1,1,1,1,1,1,1]
-```
-
----
-
-## 6. Acteurs de menace les plus actifs
-
-| Acteur / Groupe | Incidents | Type dominant |
-|---|---:|---|
-| anisanas2 | 7 | Fuites / ventes de données (Maroc, campagne sur 3 mois) |
-| DeadLock | 4 | Ransomware (multi-pays) |
-| LockBit 5 | 3 | Ransomware |
-| Nightspire | 2 | Ransomware |
-| Krybit | 2 | Ransomware / données publiées |
-| 404Crew Cyber Team | 2 | Fuite de données (coalition et solo) |
-| EvaN47 | 2 | Fuite de données (Libye) |
-| Fiches hors classement affiché | 17 | Mixte |
-
-```mermaid
-xychart
-    title "Acteurs les plus actifs - Juin 2026"
-    x-axis ["anisanas2","DeadLock","LockBit 5","Nightspire","Krybit","404Crew CT","EvaN47","Hors classement"]
-    y-axis "Incidents" 0 --> 19
-    bar [7,4,3,2,2,2,2,18]
-```
-
----
-
-## 7. Analyse des tendances CTI
-
-### 7.1 Le Maroc sous pression soutenue d'un seul acteur
-
-Le Maroc enregistre **9 incidents**, son total mensuel le plus élevé de 2026, dont **7 attribués à un seul cluster, anisanas2**. C'est le troisième mois consécutif où cet acteur cible des organisations marocaines (après RADEM Meknès et le lot Ministère de la Justice en mai), couvrant l'éducation, la logistique, les mines, le e-commerce, les startups et l'automobile. Cette concentration, plus qu'un incident isolé, constitue le schéma marocain déterminant du trimestre.
-
-### 7.2 Le ransomware regagne du terrain
-
-Les publications ransomware atteignent **51,3 % des incidents (20/39)**, contre 28,1 % dans le [jeu de données de mai](../../../CyberAttackAfrica/2026/05-may/victims_FR.md). Un seul mois ne permet pas d’établir un changement durable du comportement des acteurs, mais la dispersion de DeadLock et LockBit 5 justifie une surveillance.
-
-### 7.3 Exposition fintech à forte sensibilité
-
-Les éléments analysés concernant Jeroid.co suggèrent une exposition portant sur les volumes revendiqués par l’acteur, dont 312 433 utilisateurs et 70 956 photos biométriques, via un bucket S3 sans authentification. AFRINTEL ne confirme ni le jeu de données complet revendiqué ni le vecteur d’accès initial.
-
-### 7.4 Hygiène des identifiants militaires et de défense
-
-Deux incidents de niveau sécurité nationale ont été enregistrés le même mois : la fuite d'identifiants de messagerie en clair de l'armée nigériane (avec accès au portail d'imagerie satellite) et la fuite de document classifié SANDF en Afrique du Sud. Les deux remontent à d'anciens éléments, comptes personnels et documents jamais correctement renouvelés, retirés ou sécurisés.
-
-### 7.5 L'usurpation des forces de l'ordre en tant que service
-
-Deux acteurs distincts, Convince et Governor, ont vendu des identifiants gouvernementaux et policiers sur au moins 15 juridictions africaines, explicitement commercialisés pour soumettre de fausses demandes de divulgation d'urgence et citations à comparaître auprès de Meta, Google, TikTok et X. C'est un vecteur d'abus transfrontalier qui nécessite un engagement direct des plateformes, pas seulement une réponse nationale.
-
-### 7.6 Les ministères libyens touchés coup sur coup
-
-EvaN47 a publié des fiches concernant le Ministère de l'Enseignement technique et professionnel le 29 juin et le Ministère de l'Éducation le 30 juin. Cette séquence justifie une surveillance en juillet sans établir une campagne coordonnée.
-
----
-
-## 8. Priorités de surveillance SOC
-
-| Priorité | Axe de surveillance |
-|---|---|
-| Critique | Suivi d'anisanas2 (publications liées au Maroc sur 3 mois consécutifs) |
-| Critique | Exposition de stockage cloud public (S3/Blob) sur les plateformes fintech et KYC |
-| Élevée | Rotation des identifiants gouvernementaux et militaires (domaines .gov, .mil, .ac) |
-| Élevée | Indicateurs précoces de ransomware sur les leak sites de DeadLock, LockBit 5, Krybit, Nightspire, Qilin |
-| Élevée | Demandes d'accès portails forces de l'ordre : vérification hors bande pour les dépôts EDR/citation à comparaître |
-| Moyenne | Secteur éducatif gouvernemental libyen, surveiller un troisième incident ministériel en juillet |
-| Moyenne | Durcissement WordPress/CMS sur les plateformes éducatives suite au dump Examens.tn |
-| Moyenne | Surveillance des logs infostealers pour les identifiants liés aux domaines gouvernementaux et universitaires |
-
----
-
-## 9. Conclusion
-
-Juin 2026 recense **39 incidents** concernant **20 pays distincts** lorsque les incidents directs et les expositions multi-pays sont combinés, contre 57 fiches en mai (-17 ; -29,8 %). Les publications ransomware passent de 16 à 20 (+25,0 %), tandis que les fuites de données et ventes d’accès passent de 41 à 19 (-51,2 %). Le Maroc compte 9 des 38 fiches directes ; deux fiches supplémentaires sont multi-pays. La publication Jeroid.co et celle concernant les identifiants de l’armée nigériane figurent parmi les cas les plus sensibles du jeu de données de juin.
-
-**AFRINTEL** - [African Cyber Threat Intelligence](https://github.com/Hatchepsoute/AFRINTEL)
+[Victim records](../../../CyberAttackAfrica/2026/06-june/victims_FR.md)

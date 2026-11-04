@@ -3,272 +3,13 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in October 2026 (52 records: 45 incidents published or reported in October 2026 and 7 earlier incidents discovered retrospectively)
+# List of African cyberattack victims in October 2026 (48 records)
 
 👉🏾 [**French version available here**](./victims_FR.md)
 
 ## October 2026
 
-**Monthly tracking status: Published / Publié**  -  corpus of 52 records: 45 incidents published or reported in October 2026 and 7 earlier incidents discovered retrospectively. Monthly closure and statistics are published in the accompanying report.
-
-## Incidents before October 2026 - discovered in October 2026
-
-The nine incidents published or occurring before October are grouped here to distinguish them from October events. Their original publication dates remain stated in each record; they are kept separate from the October monthly total.
-
-### April 1, 2026
-
-##### Bank of Kigali - historical case
-
-- **Country:** Rwanda
-- **Initial publication date:** April 1, 2026
-- **AFRINTEL discovery date:** October 22, 2026
-- **Statistical attribution period:** April 2026 - H1 2026
-- **Reference integration month:** October 2026
-- **Type:** Operational Fraud - phishing campaign and operational disruption
-- **Status:** Under Investigation
-- **Decision:** This case is documented for traceability but is not counted as a new October incident. Its statistical attribution remains April 2026 and it is excluded from canonical statistics until corroborated.
-
-### April 29, 2026
-
-##### Chadian National School of Administration - historical case
-
-- **Country:** Chad
-- **Organisation:** École nationale d'administration (ENA Chad)
-- **Initial publication date:** April 29, 2026 at 22:55 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** October 23, 2026
-- **AFRINTEL reporting date:** October 23, 2026
-- **Statistical attribution period:** April 2026 - H1 2026
-- **Reference integration month:** October 2026 (retrospective discovery)
-- **Actor / Group:** NormalLeVrai (displayed account; identity and affiliation unverified)
-- **Sector:** Public administration / Education and training
-- **Associated website:** [ena.td](https://www.ena.td/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High (mailbox identity, messages and publication are consistent; official confirmation not observed)
-- **Impact level:** Level 3
-- **Source type:** Underground forum post, local email corpus and attachments
-
-- **Victim Description:** The **Chadian National School of Administration (ENA Chad)** is a Chadian public-administration training institution. A post attributed to the **NormalLeVrai** account announces the release of emails and attachments presented as confidential and associated with ENA Chad.
-
-- **Local corpus analysis:**
-
-  **Observed:** The local corpus contains **1,109 email records**, present with row parity in `emails.csv` and `emails.json`, covering **November 21, 2025 to April 25, 2026**. The recorded folders are `INBOX` (**439**), `Trash` (**649**), `Sent` (**18**) and `Drafts` (**3**). The data contains **87 distinct senders**, **131 declared attachments** and **75 distinct attachment names**. Recipients include **1,069 occurrences of the `ena.td` domain**, 290 occurrences of `yahoo.fr`, 50 of `gmail.com` and institutional, educational and professional domains.
-
-  **Physical scope:** The supplied directory contains **1,934 files** totalling **213,937,991 bytes**. It includes export files, message bodies, copies retained in `INBOX`, `Trash`, `Sent` and `Drafts`, and the `TOUTES_LES_PIECES_JOINTES` directory. The corpus contains **155 exact duplicate groups covering 487 files**; these repetitions must not be counted as additional documents or persons.
-
-  **Document analysis:** The inventory contains **118 PDF or PDF-like files**, representing **5,651 pages**; **116** yielded extractable text and **2** are likely image-only. Five PDFs use atypical extensions (`.p` or `.pd`) but were identified by file signature. Other formats include **4 DOCX files**, **4 legacy DOC files**, **85 images** and **2 ZIP archives**. The two ZIP files are identical copies, each containing one PDF; no executable, script or macro was executed or identified in the archives.
-
-  The documents cover administrative, educational, professional and event-related correspondence and attachments: training programmes, admissions, invitations, conferences, recommendations, CVs, speaker profiles, institutional correspondence, recruitment documents, invoices or commercial proposals and communication materials. Security, login, personal-data, payment, recruitment and education markers were searched as triage indicators; individual values are not reproduced.
-
-  Local OCR detected text in **63 of the 85 images**. The four DOCX files were read through their XML content; the four binary DOC files were limited to cautious extraction of readable strings. PDFs and text documents were processed read-only. These indicators do not establish the number of affected persons or mailbox completeness.
-
-  Individual content, contact details, identifiers and personal references are not reproduced in the repository.
-
-  **Assumption:** Mailbox identity, repeated ENA Chad references, and the presence of administrative correspondence and documents are consistent with a corpus associated with the organisation. This strengthens corpus attribution but does not prove the access method, initial exfiltration, mailbox completeness or absence of a provider.
-
-  **Unknown:** Technical access timeline and vector, number of affected accounts, actor identity, completeness of messages and attachments, exact data categories exposed, operational impact and any official confirmation by ENA or an authority all remain unknown. Keyword indicators alone do not demonstrate exposure of specific sensitive data categories.
-
-- **Analysis scope and limitations:** Complete read-only analysis of the supplied tree, `emails.csv`, `emails.json`, TXT/HTML bodies, PDFs, DOCX files, images and archives. No link was followed and no active file, macro, script or binary was executed. OCR and text extraction were performed for technically accessible content, but every page and image was not manually and semantically validated exhaustively. Legacy DOC files were limited to readable-string extraction. Raw personal data is not reproduced.
-- **Risk assessment:** Potential exposure of administrative correspondence and attachments could facilitate social engineering, targeted phishing, ENA impersonation, document fraud and targeting of staff or partners. The actual exposure scope remains unknown.
-- **SOC/CTI recommendations:** Preserve email, administrative-account and storage logs; search for bulk exports, unusual connections and forwarding rules; reset potentially exposed access and strengthen MFA; review sensitive attachments through authorised means; monitor campaigns impersonating ENA Chad; notify affected people only after establishing scope.
-- **Counting decision:** The incident is retained for traceability in the October reference set but **not counted as a new October incident**. Its statistical attribution remains April 2026; `Claim - Data Sample Published` describes the observed corpus and is not official confirmation of compromise.
-- **Local aggregate report:** `/tmp/afrintel-evidence-ena-analysis.json`; raw artefacts remain outside the repository.
-
-### May 23, 2026
-
-#### 🇲🇦 Morocco - Ministry of Foreign Affairs [Data Leak]
-- **Initial publication date:** 23 May 2026 at 21:29 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** 29 October 2026
-- **Actor / Group:** Keymous (displayed account; identity and affiliation unverified)
-- **Sector:** Government / Foreign Affairs / Public Administration
-- **Institutional website:** [diplomatie.ma](https://diplomatie.ma/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for attribution of the sample to a ministry candidate list; Low to Medium for compromise of the ministry system
-- **Impact level:** Level 3
-- **Victim description:** Morocco's Ministry of Foreign Affairs is the public institution responsible for the country's foreign policy and diplomatic relations. The Keymous post associates the institution with a candidate list, without establishing the source system or obtaining ministry confirmation.
-- **Analysis:** The post advertises a list of **8,440 lines** containing full names and registration numbers. The visible sample supplied to AFRINTEL contains **46 readable name/registration-number pairs**, displayed as concatenated text rather than as a directly usable tabular file. It therefore exposes identity data and administrative candidate identifiers. Individual values are not reproduced in the repository.
-
-  The post title, reference to the Moroccan ministry, repeated “full name / registration number” structure and candidate identifiers support the existence of a candidate-data exposure. They do not establish that the file originated from a ministry system, that the claimed **8,440 lines** are complete or authentic, or that a technical compromise of the ministry was confirmed.
-
-  The exposure could facilitate targeted phishing, candidate impersonation, administrative fraud and identity correlation. The visible formula-like prefix was not executed or interpreted as a formula; no source file was downloaded.
-- **Evidence limitations:** Analysis is limited to the post and visible sample supplied; the advertised file, schema, hash, complete 8,440-line corpus and technical provenance were not verified. No name, registration number or other raw personal data is published.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 29 October 2026. The initial 23 May 2026 publication is retained as historical context and does not create a duplicate in the October tracking set.
-
-### July 1, 2026
-
-#### 🇨🇮 Côte d'Ivoire - Virtual University of Côte d'Ivoire (UVCI)
-- **Initial publication date:** 1 July 2026 at 08:37; last observed modification on 4 July 2026 at 07:36; timezone not specified
-- **AFRINTEL discovery date:** 25 October 2026
-- **Author / Publication account:** Sensitive2025
-- **Sector:** Higher education / University administration
-- **Associated website:** [uvci.edu.ci](https://www.uvci.edu.ci/); displayed service subdomain: `licences3.uvci.online`
-- **Status:** Data Fully Published
-- **Incident type:** Data Leak
-- **Confidence level:** High for attribution of the supplied corpus to the UVCI ecosystem; Medium for compromise of the production system
-- **Impact level:** Level 4
-- **Victim description:** The Virtual University of Côte d'Ivoire (UVCI) is an Ivorian digital higher-education institution. The publication associates the organisation and a service subdomain with a university-account database.
-- **Analysis:** The observed publication presents a “Fresh Database” attributed to UVCI, associates the `licences3.uvci.online` subdomain with a university service and claims an approximately 8 GB SQL database. AFRINTEL analysed the entire locally supplied SQL dump read-only, not a sample: **8,721,338,295 bytes**, SHA-256 `17e60b953b9196ea6fee65344da4e17b38839c092e4239e49e8662b558736501`. All 10 associated CSV files were also analysed in full; the 11 files total approximately **8.76 GB**. Download links, personal values and secrets are not reproduced.
-
-  **Observed - structure and coverage:** The dump is a MySQL 8.0.42 export of the `licences3` database with **490 tables**, **226 populated tables**, approximately **56,714,959 records** recomputed from SQL tuples and **8,749 INSERT statements**. It includes `mdl_user`, `mdl_user_enrolments`, `mdl_logstore_standard_log`, `mdl_session`, `mdl_files`, `mdl_messages`, `mdl_grade_grades`, `mdl_inscription_pedagogique_uvci`, `mdl_inscription_semestrielle`, `mdl_passerelle_uvci`, cohort, group and role tables.
-
-  Major observed volumes include **16,410,270 Moodle logs**, **17,972,218 question-attempt step-data rows**, **9,481,515 attempt steps**, **3,221,383 question attempts**, **561,444 grade rows**, **605,111 files**, **554,701 Moodle sessions**, **193,269 additional application sessions**, **30,275 messages**, **91,042 user-enrolment associations**, **88,789 role assignments**, **58,299 cohort memberships**, **43,812 pedagogical registrations**, **6,993 users**, **154 external tokens** and **4,635 user private keys**. Session and log schemas contain IP addresses, timestamps, actions, users, courses and session data; no raw value is published.
-
-  **Observed - accounts and academic data:** `mdl_user.csv` contains **6,993 accounts**, all using manual authentication and marked confirmed; **6,891** are not suspended, **102** are suspended and **21** are marked deleted. The 6,993 user IDs, usernames and email addresses are distinct. Each account has a 60-character bcrypt-like password hash. Profile data includes identity, contact, institution, training, location, login dates, last IP, account status and semester fields.
-
-  `mdl_passerelle_uvci.csv` contains **4,398 accounts**, all in Licence 2 / S3, with **3,047** `reinscription=1` values and **1,351** set to `0`. `mdl_inscription_semestrielle.csv` contains **8,559 registrations**, including **8,557** in Licence 2 / S3. The `moyenne_uvci` exports contain **47,553 result rows**, with course, level, speciality, semester, grade, examination-session and academic-status fields. Historical exports contain **21,029** rows for May 2024 and **17,034** for August 2023. `moyenne_uvci(1).csv` is a separate list of **3,802 email addresses**, matching accounts present in the current user and result exports.
-
-  Comparison of `moyenne_uvci.csv` and `moyenne_uvci_25_06_2025_21h-16.csv` shows the same set of **47,553 keys**: **44,683 rows are identical** and **2,870 rows changed**, mainly in examination session 2, status and final-average fields. This is compatible with distinct application states or extracts; it does not date the actor’s access.
-
-  **Observed - secrets and authentication:** `mdl_user.csv` and `mdl_passerelle_uvci.csv` contain **6,993** and **4,398** bcrypt-like password hashes respectively. `mdl_enrol(1).csv` contains **3,824 enrolment configurations**, including **2,972 non-empty four-character password values** and **852 empty fields**; these values do not match a hash format and must be treated as potentially exposed secrets, without reproduction or testing. The presence of **154 external tokens**, **4,635 user private keys**, sessions and session data increases the risk of secondary compromise, but does not prove that these artefacts remain valid or exploitable.
-
-  **Integrity and consistency checks:** All 10 CSV files are readable as UTF-8 or ASCII, with **0 malformed rows** and **0 complete duplicate rows** detected. CSV row counts match the SQL tables where applicable: 6,993 users, 8,559 semester registrations, 4,398 gateway records and 47,553 current results. Hashed email cross-checks between users, registrations, gateway records and grade exports are strong; the `uvci.edu.ci` and `licences3.uvci.online` domains, Moodle/UVCI tables, language settings and course structures form a coherent UVCI environment. Partial repetitions in historical and registration exports are consistent with users appearing across cohorts, semesters or repeated extracts and must not be summed as unique persons.
-
-  **Assumption:** The supplied corpus is highly consistent with a complete application-environment export from `licences3`, used by the UVCI ecosystem. The publication, coherent schemas, domains, accounts, courses, logs and academic data make attribution of the corpus to UVCI highly plausible. This attribution does not establish the access vector, acquisition date, initial exfiltration, production-system compromise or completeness of the original database beyond the supplied files.
-
-  **Unknown:** The actor’s access date and method, exact production-system scope, existence of a separate exfiltration, current validity of hashes, tokens, keys and enrolment passwords, globally deduplicated number of unique persons, notifications by UVCI and any official confirmation remain unknown. File dates in June 2026, displayed publication dates and application timestamps must not be merged into a single intrusion date.
-
-  **Attribution and impact conclusion:** The complete analysis of the supplied SQL dump and 10 CSV files confirms a corpus rich in identity, contact, training, registration, academic-result, account, file, message, log, IP-address, session and authentication artefacts, strongly consistent with the UVCI environment. Risks include credential reuse, targeted phishing, student and staff impersonation, academic fraud, privacy harm, exploitation of still-active sessions or tokens and secondary compromise of connected services. No name, email address, telephone number, identifier, IP address, hash, token, key or other raw personal data is reproduced in the repository.
-- **Evidence limitations:** The completeness of the supplied SQL file and 10 CSV files was analysed; completeness of the original UVCI system database, access date, intrusion vector, initial exfiltration, current secret validity and production-system compromise are not confirmed. `Data Fully Published` describes the observed publication and supplied corpus; it is not an official incident confirmation or proof that the entire source database was extracted.
-- **Classification decision:** Added to the October reference set because AFRINTEL discovered it on 25 October 2026, but excluded from the October canonical total and October statistics; chronologically, the incident is linked to the initial 1 July 2026 publication.
-
-### July 4, 2026
-
-#### 🇨🇮 Côte d'Ivoire - Université Jean Lorougnon Guédé (UJLoG)
-- **Initial publication date:** 4 July 2026 at 07:38; timezone not specified
-- **AFRINTEL discovery date:** 25 October 2026
-- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation not independently verified)
-- **Sector:** Higher education / University administration
-- **Associated website:** [ujlog.uvci.edu.ci](https://ujlog.uvci.edu.ci/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High for sample attribution to the UJLoG environment; Medium for incident scope
-- **Impact level:** Level 3
-- **Victim description:** Université Jean Lorougnon Guédé (UJLoG) is an Ivorian university. The publication associates its subdomain with an account database from a university platform.
-- **Analysis:** The supplied sample presents a Moodle-type user schema containing account identifiers, usernames, identity fields, email addresses, institution, department, location, language, access timestamps, IP addresses and bcrypt password hashes. Twelve individual records are visible in the supplied extract; the observed accounts and addresses primarily use the `ujlog.uvci.edu.ci` ecosystem, with UJLoG/UVCI institutional references. The `username`, `email`, `institution`, `department`, `city`, `country`, `lastlogin`, `currentlogin` and `lastip` fields indicate an operational account-management database rather than a simple name list.
-
-  Consistency between the `ujlog.uvci.edu.ci` domain, UJLoG institutional labels, the Moodle structure, French-language settings, `CI` country values, profile information and bcrypt hashes strongly supports attribution of the sample to UJLoG's digital environment. The sample can therefore be assessed as highly consistent with that environment. As the remainder of the dump is no longer available, the analysis is strictly limited to the data visible in the supplied sample and cannot verify total volume, duplicates or dataset completeness.
-
-  The exposed data could facilitate targeted phishing, student or administrative account impersonation, credential reuse and analysis of login patterns. No name, email address, telephone number, IP address, hash or other individual data is reproduced in the repository.
-- **Evidence limitations:** The sample is strongly consistent with UJLoG, but it does not confirm the access date, intrusion vector, initial exfiltration, production-system compromise or total number of affected individuals. The remainder of the dump is unavailable for analysis; the findings must not be extrapolated to the full claimed dataset.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 25 October 2026 and the July report had already been made public. The 4 July 2026 publication is retained as historical context; it does not create a duplicate in the October tracking set.
-
-### August 20, 2026
-
-#### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) - attribution unconfirmed
-
-- **Initial publication date:** 20 August 2026 at 05:27 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** 20 October 2026
-- **Actor / Group:** TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)
-- **Claimed sector:** Transport / Logistics / Express Delivery
-- **Claimed website:** [yalidine.com](https://www.yalidine.com/)
-- **Status:** Under Investigation
-- **Incident type:** Data Leak
-- **Confidence level:** Low
-- **Impact level:** Level 3 (potential)
-- **Source type:** Cybercriminal forum and CSV samples provided to AFRINTEL
-
-- **Victim Description:** Yalidine El Djazair Service is an Algerian express-mail, parcel-delivery and domestic-logistics company that also provides e-commerce delivery and cash-on-delivery collection. The post associates the company with a database advertised as containing approximately **563,000 records**.
-
-- **Analysis:**
-
-  **Observed:** The 20 August 2026 post at 05:27, attributed to TelephoneHooliganism, presents `www.yalidine.com` as an Algerian database of **563,000 records**. It describes three datasets: contacts, booking history and support tickets. A moderator message displayed at 06:38 on the same day only restates the forum’s section rules; it does not confirm Yalidine, the files or a compromise.
-
-  AFRINTEL examined three local CSV files read-only corresponding to those datasets: **50 contact rows**, **20 booking rows** and **20 ticket rows**. The files are structurally readable and total **90 tabular rows**, but that total does not represent 90 unique people. The files contain **34, 29 and 29 columns**, respectively. The fields cover contacts, CRM information, bookings, payments, support tickets and customer follow-up. No raw personal data is reproduced in this record.
-
-  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the remaining countries are predominantly foreign. The booking cities observed are not Algerian. The `contact_id` values used in bookings and tickets do not match the identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. Links to booking records are also inconsistent. Ticket email and phone fields are empty, and several advertised contact fields are largely or entirely empty. Data-quality or encoding problems appear in some geographic values.
-
-  Local SHA-256 hashes are: `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51**; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443**; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
-
-  **Assumption:** The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim. That compatibility is weak: geographic, relational and completeness inconsistencies outweigh the elements linking the sample to Yalidine. The sample may be synthetic, misattributed, drawn from a multi-country environment, incomplete or built from a generic CRM template.
-
-  A link with the **Afribaba** case from 20 August 2026 is possible only at campaign level: the displayed actor, publication date and broad data categories are similar. This could reflect a campaign targeting multiple Algerian organisations or reuse of a posting template. No shared identifier, domain, file or technical marker was observed; the link is therefore **not established** and must not merge the victims.
-
-  **Unknown:** The files’ technical provenance, extraction date, authenticity, number of unique people, existence of unauthorised access, acquisition method, completeness of the advertised database, operational impact and any confirmation by Yalidine or an authority all remain unknown.
-
-- **Analysis scope and limitations:** All three supplied CSV files were examined read-only, including structure, counts, blank fields, duplicates, inter-table relationships, date ranges and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
-
-- **Risk assessment:** If any part of the sample were authentic, the advertised categories could facilitate targeted phishing, social engineering, customer impersonation and order- or payment-related fraud. These are potential risks and do not establish actual exposure of Yalidine’s customers.
-
-- **Counting decision:** The record is retained in the October corpus because the post was observed and a sample was supplied, but it is **excluded from the canonical total and statistical breakdowns** until attribution is corroborated.
-
-- **Sources / Evidence:** publication and moderator response supplied on 20 October 2026; three local CSV files examined read-only; [Yalidine official website](https://www.yalidine.com/). No onion link, criminal account, personal data or individual value is published.
-
-### September 13, 2026
-
-#### 🇰🇪 Kenya - `subscribers.co.ke` [Data Leak]
-- **Initial publication date:** 13 September 2026 at 08:17 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** October 2026 (day not specified)
-- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation unverified)
-- **Sector:** Digital services / Subscriber and email-list management
-- **Associated website:** [subscribers.co.ke](https://subscribers.co.ke/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for sample attribution to the domain; High for the geographic link to Kenya
-- **Impact level:** Level 3
-- **Victim description:** `subscribers.co.ke` is a Kenyan domain associated with a subscriber or email-list management service. The legal identity of the organisation operating the service is not established by the visible evidence; the Sensitive2025 post associates the domain with a CSV list.
-- **Analysis:** AFRINTEL examined all five distinct supplied subscriber CSV contents read-only; the five files are present as two physical copies, resulting in **10 inventoried CSV files**, including **5 duplicate copies**. Application-library example CSVs bundled with the application were excluded from the subscriber corpus. The five exports share an **8-column** schema (`id`, `first_name`, `last_name`, `email`, `timezone`, `balance`, `status`, `created`), are readable with a UTF-8 BOM, contain **0 malformed rows** and **0 within-file duplicate rows**.
-
-  The corpus contains **2,154 rows** in total. Cross-snapshot overlap is substantial: **1,133 distinct row signatures** and **1,021 repeated inter-file signatures** were observed. The exports contain **1,072 distinct identifiers** and **1,057 distinct email addresses**; these values must not be added as unique people without further deduplication and validation.
-
-  Every row has `status=1` and a non-empty balance field. Across the repeated extracts, balances range from **-300.0749** to **42.6123**, with **1,638 zero values**, **514 positive values** and **2 negative values**; the raw sum across snapshots is **270.668**, with no currency or business meaning established. `created` dates range from **1 September 2021 to 13 September 2023**, with no invalid dates in the five files.
-
-  `Africa/*` timezones account for **1,779 rows (82.6%)**, including `Africa/Nairobi` with **1,631 rows (75.7% of the corpus)**. The remaining rows use Asian, European, American, Indian Ocean and Pacific timezones. A timezone is a profile or configuration marker and does not prove a person's residence or nationality. The Nairobi concentration, `.co.ke` domain and post title support a Kenyan link, but do not alone establish the operator's legal identity or the complete origin of the data.
-
-  Content review confirms an account or subscriber list containing identifiers, names, email addresses, timezone settings, account states, application balances and creation dates. No name, email address, balance or other individual value is reproduced in the repository. APKs, PHP scripts and other active files present in the directory were not executed and were not used to extrapolate the CSV analysis.
-- **Evidence limitations:** The analysis fully covers the five available subscriber CSV contents and documents copies, schema, encoding, counts, overlaps, dates, timezones and balances. It does not confirm completeness of the original database, extraction date, access vector, publication authenticity, operator identity, balance currency or a confirmed system compromise. Repeated identifiers, emails and balances across snapshots cannot be interpreted as unique people, accounts or amounts without business-level deduplication.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it in October 2026. The initial 13 September 2026 publication is retained for chronology and does not create a duplicate in the October tracking set.
-
-### September 26, 2026
-
-#### 🇲🇦 Morocco - `acao.org.ma` [Data Leak]
-- **Initial publication date:** 26 September 2026 at 06:24 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** 29 October 2026
-- **Actor / Group:** EliteSquad (displayed account; identity and affiliation unverified)
-- **Sector:** Government / Civil Aviation
-- **Associated website:** [acao.org.ma](https://acao.org.ma/site/en/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for sample attribution to the domain; Low to Medium for compromise of the organisation
-- **Impact level:** Level 3
-- **Victim description:** `acao.org.ma` is a Moroccan domain presented in the post as associated with a civil-aviation authority. The organisation would be linked to the supervision or administration of civil air transport in Morocco; its exact legal identity, operational scope and precise institutional relationship are not established by the available evidence. The EliteSquad post associates the domain with a database of aviation-sector personnel or contacts, without direct victim confirmation.
-- **Analysis:** The post claims an **18 MB** CSV database containing **31,657 lines**, presented as a civil-aviation authority database. The visible sample contains identifiers, names, email addresses, telephone numbers, job functions, professional affiliations, dates and administrative information. Visible rows reference multiple countries and organisations, including Moroccan, Qatari, Saudi and Somali professional domains; this may reflect a multi-country dataset or international aviation-sector relationships, but does not prove the persons' residence or nationality.
-
-  The `.ma` domain, post title and displayed logo support a Moroccan link. They do not confirm the file's technical origin, completeness of the claimed **31,657 lines**, access to an operational civil-aviation system or compromise of the authority. Visible personal values are not reproduced in the repository.
-- **Evidence limitations:** Analysis is limited to the post and visible sample; the complete CSV, schema, hash, actual volume, duplicates and technical provenance were not verified. No name, email address, telephone number or other raw personal data is published.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 29 October 2026. The initial 26 September 2026 publication is retained as historical context and does not create a duplicate in the October tracking set.
-
-### September 29, 2026
-
-#### 🇪🇬 Egypt - Techne Summit 2026 [Data Leak]
-- **Initial publication date:** 29 September 2026 at 15:24 (displayed timestamp; timezone not specified)
-- **Actor / Group:** ElMokhtare0 (displayed account; identity and affiliation unverified)
-- **Sector:** Events / Technology conferences / Professional networking
-- **Official website:** [technesummit.com/2026](https://www.technesummit.com/2026); [official ticketing platform](https://tickets.techne.me/en/37/techne-summit-2026)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for the existence of the post and contextual association with Techne Summit; Low to Medium for the technical provenance of the data
-- **Impact level:** Level 3
-- **Source type:** Forum publication and sample material supplied to AFRINTEL
-- **Public contextual sources:** [Techne Summit 2026 official website](https://www.technesummit.com/2026); [official Techne Summit 2026 ticketing platform](https://tickets.techne.me/en/37/techne-summit-2026)
-- **Victim description:** Techne Summit 2026 is presented as a technology event held in Egypt, bringing together speakers, companies, investors and participants from technology, finance, industry and entrepreneurship sectors.
-- **Analysis:** The post claims a “full database” containing **320,572 records** and personal-data fields including full names, email addresses, mobile numbers and companies or organisations. Several sample rows are visible in the supplied material; they are consistent with a participant, registrant or professional-contact list. Individual values are not reproduced in the repository.
-
-  The material attached to the post displays Techne Summit 2026 event content and speakers associated with the event. This contextual consistency supports association of the claim with the event, but does not establish that the database came directly from its registration system, a service provider, a partner platform or another source. The requested **USD 5,000 in XMR/BTC** and the threat to publish a partial dump within **12 hours** are commercial and pressure elements displayed by the author; they do not prove authenticity or corpus completeness.
-
-  **Assumption:** If authentic, the data could represent registrants, participants, prospects, partners or contacts within the Techne ecosystem. The visible fields do not establish that the claimed 320,572 rows represent 320,572 unique people.
-
-  **Unknown:** Source system, access vector, extraction date, completeness of the claimed 320,572 records, number of unique people, exact role of each contact, actual publication of the full dump and any official confirmation by Techne remain unknown.
-- **Analysis scope and limitations:** Analysis is limited to the information visible in the supplied material; no source file, hash, complete schema or archive was supplied. Visible names, email addresses, phone numbers and organisations were not reproduced.
-- **Risk assessment:** If authentic, the exposure could facilitate targeted phishing, impersonation of participants or companies, event fraud and malicious solicitation. No password, token or financial data was observed in the supplied material.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 30 October 2026. The initial 29 September 2026 post is retained as historical context and does not create a duplicate in the October tracking set.
-
-
-
-
-## Incidents published or reported in October 2026
-
-This section contains the 45 incidents whose publication or first documented observation occurred in October 2026. The documented publication or notification date provides the chronological reference.
+**Monthly tracking status: Published / Publié**  -  corpus of 48 records published or first observed in October 2026. Monthly closure and statistics are published in the accompanying report.
 
 ### October 1, 2026
 
@@ -291,13 +32,13 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Observed:** A SensitiveDarkForum post timestamped **1 October 2026 at 13:32** according to the displayed time presents “Website Backup Files” associated with `serverunlockapp.com` and the DRC. The local sample is an application-backup tree containing **7,329 files** with an aggregate file size of **158,750,705 bytes**. It includes **3,467 PHP files**, **708 JavaScript files**, **504 JSON files**, **473 templates**, **249 CSS files**, graphical resources and configuration files.
 
-  The corpus contains an `unlockapp` application and scripts for client, service, order, payment, messaging and administration functions. `config.php`, a temporary configuration file, certificates, PEM files and a key are present; their values were not reproduced, tested or published. Their presence only demonstrates that they were included in the supplied backup; it does not demonstrate that they remain valid or provide access to the service.
+  The corpus contains an `unlockapp` application and scripts for client, service, order, payment, messaging and administration functions. `config.php`, a temporary configuration file, certificates, PEM files and a key are present; their values were not reproduced, tested or published. Their presence shows that they were included in the supplied backup; the sources do not specify whether they remain valid or provide access to the service.
 
-  `unlockapp/tmp/export.csv` contains **719 data rows** and fields relating to username, email address, registration date, available balance and amounts due. Full CSV analysis identifies **130 non-zero balances**, totalling **USD 1,493.672**, with a maximum balance of **USD 334.649**. Four rows contain a non-zero amount due, totalling **USD 39.900**. Registration dates range from **13 November 2024** to **25 April 2025**; flag fields are empty across all **719 rows**. Usernames and email addresses are distinct within this file, but this does not establish the identity or actual number of affected individuals. Two working JSON files contain **365** and **173** structured items respectively, centred on services or groups. These files indicate application and commercial data but do not establish the total number of users or transactions.
+  `unlockapp/tmp/export.csv` contains **719 data rows** and fields relating to username, email address, registration date, available balance and amounts due. Full CSV analysis identifies **130 non-zero balances**, totalling **USD 1,493.672**, with a maximum balance of **USD 334.649**. Four rows contain a non-zero amount due, totalling **USD 39.900**. Registration dates range from **13 November 2024** to **25 April 2025**; flag fields are empty across all **719 rows**. Usernames and email addresses are distinct within this file, but the sources consulted do not specify the identity or actual number of affected individuals. Two working JSON files contain **365** and **173** structured items respectively, centred on services or groups. These files indicate application and commercial data, while the sources consulted do not specify the total number of users or transactions.
 
-  **Assumption:** The correspondence between the published domain, the `unlockapp` tree, unlocking and IMEI functions, account data and commercial elements makes association of the backup with ServerUnlockApp highly plausible. The structure is consistent with a website or application-server copy. It does not establish the access vector, the actor's real identity, acquisition date or effective use of any potential secrets.
+  **Analytical assessment:** The correspondence between the published domain, the `unlockapp` tree, unlocking and IMEI functions, account data and commercial elements makes association of the backup with ServerUnlockApp highly plausible. The structure is consistent with a website or application-server copy. The sources consulted do not specify the access vector, the actor's real identity, acquisition date or effective use of any potential secrets.
 
-  **Unknown:** The exact systems copied, technical access timeline, technical origin of the backup, data completeness, unique persons, duplicates, account validity, certificate and key validity, transactions actually affected, operational impact and any confirmation by ServerUnlockApp remain unknown. The post does not establish real-time compromise of the website.
+  **Information not specified in the sources:** The exact systems copied, technical access timeline, technical origin of the backup, data completeness, unique persons, duplicates, account validity, certificate and key validity, transactions actually affected, operational impact and any confirmation by ServerUnlockApp. The publication does not describe a real-time compromise of the website.
 
 - **Analysis scope and limitations:** The local tree was inventoried read-only. PHP, JavaScript and other scripts were not executed. Configuration values, keys, certificates, identifiers, emails and financial data were not reproduced. The analysis covers backup structure and CSV/JSON aggregates; it does not validate the completeness of the alleged backup or current access to the application.
 - **Risks:** Reuse of customer accounts, balance or payment fraud, targeted phishing, reseller impersonation, exposure of commercial data, potential reuse of secrets and secondary compromise of payment or messaging integrations.
@@ -341,19 +82,6 @@ This section contains the 45 incidents whose publication or first documented obs
 
 ### October 2, 2026
 
-#### 🇿🇦 South Africa - Ampath Laboratories [System Intrusion]
-- **Public publication / notification date:** 2 October 2026
-- **Domain:** `ampath.co.za`
-- **Actor / Group:** Non établi
-- **Sector:** Healthcare / Medical laboratories
-- **Status:** Claim - Unverified
-- **Incident type:** System Intrusion
-- **Confidence level:** High
-- **Impact level:** Level 4
-- **Victim description:** Ampath Laboratories is a South African network of medical laboratories and diagnostic services.
-- **Analysis:** An incident was publicly acknowledged and an investigation opened into access and the potential scope of sensitive data. The exact nature, volume and full forensic scope remain undisclosed. The incident is corroborated, but no conclusion establishes exfiltration or complete disclosure.
-- **Risk assessment:** Potential risks concern health data, patient identifiers and contact information. No individual record is reproduced.
-
 #### 🇲🇦 Morocco - Ministry of National Territory Planning, Land Planning, Housing and City Policy
 
 - **Initial publication date:** 2 October 2026 at 15:20 (displayed time; timezone not specified)
@@ -372,13 +100,13 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Observed:** A forum post attributed to the **Nameless511** account, timestamped **2 October 2026 at 15:20** according to the displayed time, offers for sale data attributed to the ministry. Its presentation page displays the `matnuhpv.gov.ma` domain. Its title mentions **26,452 candidate records**, while the body claims that more than **2,772 records** were compromised and describes **2,772 full candidate profiles** as the material held and offered for sale. These figures remain contradictory and unverified actor claims. The “Samples” section is distinct: the visible rows that follow are the sample supplied in the exchange. This sample is structured as recruitment-application lists, including third-grade technician and first-grade state-engineer competitions. Visible categories include identity, national identity number, date and place of birth, contact details, address, application status, diplomas, specialisations, degree-awarding institution, examination centre and supporting-document references. No individual value, application-document filename or identifier is reproduced in this record.
 
-  **Assumption:** The institutional logo, the administration’s name, the displayed domain and the data schema are consistent with candidate or recruitment processes connected to the ministry. This consistency does not demonstrate compromise of `matnuhpv.gov.ma` or another ministerial system: a historical copy, contractor, data aggregator, third-party source or misleading presentation remain possible.
+  **Analytical assessment:** The institutional logo, the administration’s name, the displayed domain and the data schema are consistent with candidate or recruitment processes connected to the ministry. The sources consulted do not specify whether `matnuhpv.gov.ma` or another ministerial system was compromised; a historical copy, contractor, data aggregator, third-party source or misleading presentation remain possible.
 
   **Unknown:** The source file, its hash, the actual number of rows and unique people, the records’ authenticity, currency and completeness, originating system, acquisition date and method, any unauthorised access, exfiltration, operational effect and official confirmation by the ministry or an authority all remain unknown.
 
 - **Analysis scope:** Preliminary analysis based on the supplied publication and data visible in the sample provided after the “Samples” section; the original source file was unavailable. This sample cannot validate the claimed volumes, deduplicate affected individuals or establish the data’s technical provenance.
 
-- **Risk assessment:** If authentic, the observed data categories could facilitate identity fraud, targeted phishing, document fraud, social engineering and abuse of recruitment processes. The alleged references to supporting documents could increase risk to candidates; they do not establish that the documents themselves are accessible.
+- **Risk assessment:** If authentic, the observed data categories could facilitate identity fraud, targeted phishing, document fraud, social engineering and abuse of recruitment processes. The alleged references to supporting documents could increase risk to candidates; the sources consulted do not specify whether the documents themselves are accessible.
 
 - **Recommendations:**
   1. Preserve logs for application portals, recruitment tools, document repositories and relevant administrative accounts.
@@ -409,7 +137,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   Five locally supplied CSV files, presented as samples, were examined in full read-only: customer, employee, employee identity-and-bank-detail, sales/profit and messaging samples. They total **31,415 bytes** and contain categories consistent with the stated labels: identity and contact data, HR data, financial information, commercial data and messaging. The structures also contain authentication-related fields. No personal, bank, authentication or secret value was reproduced, verified or tested.
 
-  **Assumption:** The displayed logo and domains, Karamtech’s public activity and thematic consistency of the five samples support a plausible association with Karamtech’s commercial environment. They do not demonstrate that the **441 CSV files**, **18 GB**, claimed volumes or alleged secrets originate from a compromised organisational system.
+  **Analytical assessment:** The displayed logo and domains, Karamtech’s public activity and thematic consistency of the five samples support a plausible association with Karamtech’s commercial environment. The sources consulted do not specify whether the **441 CSV files**, **18 GB**, claimed volumes or alleged secrets originate from a compromised organisational system.
 
   **Unknown:** The source corpus, its integrity, actual number of files and records, unique people affected, current validity of any secret, password or token, originating system, access vector and date, complete exfiltration, operational impact and confirmation by Karamtech or an authority all remain unknown.
 
@@ -438,13 +166,13 @@ This section contains the 45 incidents whose publication or first documented obs
 - **Impact level:** Level 4
 - **Source type:** Underground Forum and Telegram posts provided to AFRINTEL
 
-- **Victim Description:** MICEPP is the acronym used in the available material for Morocco’s Ministry of Investment, Convergence and Evaluation of Public Policies. Its precise institutional role and any potentially affected systems are not established by the observed publications.
+- **Victim Description:** MICEPP is the acronym used in the available material for Morocco’s Ministry of Investment, Convergence and Evaluation of Public Policies. Its precise institutional role and any potentially affected systems are not specified in the sources consulted by the observed publications.
 
 - **Analysis:**
 
   **Observed:** A forum post attributed to the account **anisanas2**, timestamped **2 October 2026 at 23:55** according to the displayed time, advertises “sample documents” and a “database” associated with MICEPP. Supplied Telegram posts, dated **2 October** without a visible year or timezone, repeat this attribution. They claim that more than **150,000 folders** and more than **50,000 investors** are affected, that the corpus exceeds **400 GB**, and that it is offered for sale in parts. These volumes, the acquisition method and the existence of a compromise remain author claims. The posts display a **1.6 GB** file named `part_1_sample.rar` and a **26 KB** file named `investors_sample_300.csv`. Neither the archive nor the CSV was supplied locally or examined. The visible column categories describe identity and contact data, identity-document references, nationality, address, territorial administrative data, and company information, including the Common Enterprise Identifier (ICE). No individual content is reproduced.
 
-  **Assumption:** The name, institutional logo and displayed data categories are consistent with administrative procedures or investment-related schemes. This consistency does not demonstrate that the files came from a system operated by MICEPP: a historical copy, provider, other administration, aggregator or misleading presentation remain possible.
+  **Analytical assessment:** The name, institutional logo and displayed data categories are consistent with administrative procedures or investment-related schemes. The sources consulted do not specify whether the files came from a system operated by MICEPP; a historical copy, provider, other administration, aggregator or misleading presentation remain possible.
 
   **Unknown:** Actual access to the advertised files, their hashes, structure, authenticity, currency, number of folders and unique people or organisations, source system, acquisition method and date, scope of any exposure, operational impact, and confirmation by MICEPP or an authority all remain unknown.
 
@@ -461,6 +189,21 @@ This section contains the 45 incidents whose publication or first documented obs
 
 - **Sources / Evidence:** forum and Telegram posts supplied on 9 October 2026. No download link, individual data, identifier, secret or archive is published.
 
+#### 🇿🇦 South Africa - Ampath Laboratories [Data Leak]
+- **Public publication / notification date:** 2 October 2026
+- **Domain:** `ampath.co.za`
+- **Actor / Group:** bytetobreach (displayed publication account)
+- **Sector:** Healthcare / Medical laboratories
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim description:** Ampath Laboratories is a South African network of medical laboratories and diagnostic services.
+- **Analysis:** The bytetobreach publication claims that 10 of approximately 375 databases were copied and that the overall corpus would exceed 80 million records. It describes HR and employee data, multiple patient databases, financial data, system configurations and application components. The supplied local folder contains structured samples examined read-only: 4,000 employee rows, 5,000 patient rows, 1,000 Medicaid records, 1,000 patient registration records and 997 card-payment records, together with an XML file containing 278,401 structural lines. The schemas contain identity, contact, health, employment, insurance and payment categories. This structural consistency supports the existence of a sample associated with Ampath, but does not validate the 375 databases, the claimed 80 million records, corpus completeness, access method or the real identity of the actor.
+- **Analysis scope and limitations:** The five available CSV files and the XML file were examined read-only, including type, size, hash, column and row-volume checks. The file inventory and application components were treated as contextual evidence; no binary, script, link or secret was executed, tested or published. Accounts, identifiers, addresses, medical data, financial data and secrets remain outside the repository.
+- **Risk assessment:** Potential exposure concerns health, identity, contact, employment, insurance and payment data. It could facilitate identity theft, targeted phishing, document fraud, financial fraud and targeting of patients or employees. No individual record is reproduced.
+- **Sources / Evidence:** supplied publication and visual material; local Ampath samples examined read-only. The bytetobreach account is retained as a publication identifier; its identity and technical affiliation are not established.
+
 #### 🇪🇬 Egypt - Dar Al-Tib (`daralteb.com`) [Ransomware]
 - **Initial publication date:** 4 October 2026; some sources indicate 2 October 2026
 - **Domain:** [daralteb.com](https://daralteb.com/)
@@ -473,7 +216,7 @@ This section contains the 45 incidents whose publication or first documented obs
 - **Victim description:** Dar Al-Tib is an Egyptian medical centre specialising in infertility treatment, in-vitro fertilisation and assisted reproduction.
 - **Analysis:** `daralteb.com` appears in a Krybit-associated claim in October 2026. No sample, volume, victim statement, proof of encryption or technical proof of exfiltration was identified. The official website remains accessible, which neither confirms nor invalidates the claim.
 - **Risk assessment:** If authentic, potential risks could concern medical data, patient files, administrative information and service continuity. These impacts remain unestablished.
-- **Sources / Evidence:** [Dar Al-Tib official website](https://daralteb.com/); [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf); [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Secondary sources describe the case as an unverified claim.
+- **Sources / Evidence:** [Dar Al-Tib official website](https://daralteb.com/); [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf); [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Secondary sources describe the case as an publication attributed to the actor.
 
 
 #### 🇨🇬 Republic of the Congo - e-Solde (`e-solde.cg`) [Access Sale]
@@ -514,7 +257,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Content qualification:** The samples are not merely interface elements or metadata; they contain structured records with identity data, contact details, professional information, payroll elements, supporting-document references and hashed authentication material. They demonstrate exposure of sensitive data in the provided sample, without demonstrating dataset completeness, the total number of affected people or interactive access to the system.
 
-  **Assumption:** The combination of the `e-solde.cg` domain, Congolese government context, payroll fields and agent categories makes association of the sample with the e-Solde service or a related administrative system plausible. The sale offer and the presence of a sample support an **Access Sale** classification with secondary data exposure. They do not demonstrate that a buyer obtained functional access, that the actor still controls the system or that the entire database came directly from official infrastructure.
+  **Analytical assessment:** The combination of the `e-solde.cg` domain, Congolese government context, payroll fields and agent categories makes association of the sample with the e-Solde service or a related administrative system plausible. The sale offer and the presence of a sample support an **Access Sale** classification with secondary data exposure. The sources consulted do not specify whether a buyer obtained functional access, whether the actor still controls the system or whether the entire database came directly from official infrastructure.
 
   **Unknown:** Initial access vector, technical access timeline, total volume, number of affected individuals, existence of interactive access, validity of accounts or hashes, confirmation that the price is denominated in USD, real seller identity and any official confirmation by the Congolese administration remain unknown. The “110K” figure is a commercial claim and is not a confirmed record count.
 
@@ -526,23 +269,6 @@ This section contains the 45 incidents whose publication or first documented obs
 
 
 ### October 5, 2026
-
-#### 🇿🇦 South Africa - Lawyers for Human Rights [System Intrusion]
-- **Security notice publication date:** 15 October 2026
-- **Official domain:** [lhr.org.za](https://www.lhr.org.za/)
-- **Actor / Group:** Non établi
-- **Sector:** NGO / Human rights / Legal services
-- **Status:** Incident Confirmed by Victim
-- **Incident type:** System Intrusion
-- **Confidence level:** High
-- **Impact level:** Level 4
-- **Victim description:** Lawyers for Human Rights is a South African organisation providing human-rights legal services and assistance.
-- **Analysis:** In its 15 October 2026 security notice, LHR stated that a database hosted by a third-party service provider was subject to unauthorised access on 5 October. LHR's investigation concluded that an unauthorised third party accessed and downloaded information. The environment was secured, an investigation opened, and authorities and potentially affected individuals were notified.
-- **Potentially affected data:** names, South African identity numbers, passport or refugee/asylum-seeker permit numbers, addresses, telephone numbers, email addresses, dates of birth, gender, nationality, employment and contractor information, tenant and lease information, client and beneficiary records, organisation information, legal-case documents and correspondence, and data relating to partners, donors, employees, service providers and tenants.
-- **Number of people and volume:** Not established.
-- **Risk assessment:** Legal, identity, contact and vulnerable-person data may create significant risks of identity theft, phishing, document fraud, targeting and intimidation. No ransomware, encryption or leak-site publication has been established.
-- **SOC/CTI action:** Preserve and correlate third-party, database, administrative-account and outbound-gateway logs around 5 October; revoke access and secrets shared with the provider; review other environments using the same identities; monitor fake legal correspondence and document requests; use out-of-band validation with LHR.
-- **Sources / Evidence:** [LHR official notice dated 15 October 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/); [LHR news index](https://www.lhr.org.za/lhr-news/). The exact corpus scope and number of affected people remain under assessment.
 
 #### 🇲🇦 Morocco - Tera.ma / Sté Tera.ma SARL
 
@@ -568,7 +294,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Unknown:** The source and affected systems, access method and duration, production-database completeness, number of unique people and organisations, current validity of accounts or integrations, encryption, operational disruption, existence or outcome of negotiation, and confirmation by Tera.ma or an authority all remain unknown.
 
-- **Analysis scope:** All **8,140 supplied files** were inventoried read-only. The **282 CSV files** were counted, and full structural checks were completed for the principal advertised exports. The corpus contains sensitive personal and commercial data: it remains outside the repository, with no extraction or reproduction of its content. Row counts do not establish the absence of duplicates or the number of unique people.
+- **Analysis scope:** All **8,140 supplied files** were inventoried read-only. The **282 CSV files** were counted, and full structural checks were completed for the principal advertised exports. The corpus contains sensitive personal and commercial data: it remains outside the repository, with no extraction or reproduction of its content. The sources consulted do not specify duplicate counts or the number of unique people.
 
 - **Risk assessment:** Based on the reviewed corpus, the release includes customer, supplier and employee information; invoices and orders; bank or payment information; application logs; commercial documents; and identity documents. If exploited, this material could enable identity abuse, bank-detail-change fraud, fraudulent payment requests, targeted phishing, privacy harm and commercial espionage. The risk is heightened by the presence of documents and third-party integration material.
 
@@ -599,7 +325,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Observed:** A post attributed to **Nameless511**, timestamped **5 October 2026 at 02:25** according to the displayed time, is titled as a Cadi Ayyad University leak and advertises **270 free records**. The post describes categories including French and Arabic names, CIN, CNE, APOGÉE identifier, email address, telephone number, date and place of birth, gender, academic programme, enrolment status and photographs. The supplied structured sample contains these categories and references to institutional `@uca.ac.ma` addresses, APOGÉE identifiers, academic programmes and encoded images. Individual data, photographs and file metadata are not reproduced.
 
-  **Assumption:** Consistency among the university’s identity, its official domain, APOGÉE identifiers, institutional addresses and academic information strongly supports attribution of the sample to the UCA ecosystem. It does not prove that the data came directly from a system administered by the university: a historical copy, provider or another source remain possible.
+  **Assumption:** Consistency among the university’s identity, its official domain, APOGÉE identifiers, institutional addresses and academic information strongly supports attribution of the sample to the UCA ecosystem. It does not document that the data came directly from a system administered by the university: a historical copy, provider or another source remain possible.
 
   **Unknown:** The complete source file, its hash, actual number of records and unique people, authenticity and currency of the records, originating system, acquisition method and date, scope beyond the claimed **270** records, complete exfiltration, operational impact and confirmation by UCA or an authority all remain unknown.
 
@@ -615,6 +341,67 @@ This section contains the 45 incidents whose publication or first documented obs
   5. Apply appropriate notification and protection procedures after the actual scope is established.
 
 - **Sources / Evidence:** forum publication and structured sample supplied on 8 October 2026; [UCA official website](https://www.uca.ma/). No criminal link, national identifier, email address, telephone number, photograph or other individual data is published.
+
+#### 🇿🇦 South Africa - TechExchange (`techexchange.co.za`)
+
+- **Initial publication date:** 5 October 2026 at 15:34 (displayed timestamp; timezone not specified)
+- **Actor / Group:** Sensitive2025 (displayed forum account; identity not established)
+- **Sector:** Retail / E-commerce / Mobile phones
+- **Website:** [techexchange.co.za](https://techexchange.co.za/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High for the existence of the publication and domain consistency; Medium for attribution of the full corpus to TechExchange
+- **Impact level:** Level 4 (potential)
+- **Source type:** Forum publication with visible CSV sample and structured extract supplied to AFRINTEL
+
+- **Victim description:** TechExchange is presented as a South African company specialising in new, pre-owned, refurbished and demo mobile phones.
+- **Analysis:** The publication offers website backup files described as approximately **6,000 CSV files totalling 1 GB**, covering **2014-2022**. The visible header and structured extract correspond to an e-commerce order export containing order identifiers, order and payment dates, statuses, amounts, currency, payment methods, transaction identifiers, customer accounts, email addresses, telephone numbers, billing and shipping addresses, geographic fields, IP addresses, user agents, ordered items, taxes, discounts and order notes. The visible fields are consistent with an online-commerce platform, and several elements refer to South Africa and the ZAR currency. Individual data, contact details, transaction identifiers, IP addresses and order references are not reproduced.
+- **Observed:** The publication is dated 5 October 2026 at 15:34 according to the displayed timestamp; the `techexchange.co.za` domain, business description, CSV header and structured records are visible in the supplied material.
+- **Assumption:** If authentic and sourced from TechExchange systems, the sample could affect customers, orders, payments and deliveries, creating risks of payment fraud, phishing and impersonation. Structural consistency alone does not validate the technical origin or completeness of the corpus.
+- **Unknown:** Initial access vector, extraction date, actual number of files and records, backup completeness, source systems, current data validity, exposure of passwords or tokens, real actor identity and any official confirmation remain unknown.
+- **Analysis scope and limitations:** Detailed analysis of the supplied publication, visual material and structured extract; the complete source file, its hash and the advertised 6,000 files were not available. No download link or criminal contact was followed, and no raw personal data is retained in the repository.
+- **Risk assessment:** Potential exposure of order, contact, delivery and payment data could facilitate transaction fraud, fake refunds, targeted phishing, customer or supplier impersonation and privacy harm.
+- **Sources / Evidence:** visual material and structured extract supplied to AFRINTEL; forum publication attributed to the Sensitive2025 account. Raw data and download links remain outside the repository.
+
+#### 🇿🇦 South Africa - Thrive Online Group (`thriveonlinegroup.com`)
+
+- **Initial publication date:** 5 October 2026 at 19:46 (displayed timestamp; timezone not specified)
+- **Actor / Group:** Sorb (displayed forum account; identity and affiliation not established)
+- **Sector:** Technology / Digital marketing
+- **Associated website:** `thriveonlinegroup.com`
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High for the existence of the publication and visible extracts; Medium for attribution of the full dataset to Thrive Online Group
+- **Impact level:** Level 4 (potential)
+- **Source type:** Forum publication and visible CSV extracts supplied to AFRINTEL
+
+- **Victim description:** Thrive Online Group is presented as a South African organisation active in targeted digital marketing.
+- **Analysis:** The post attributed to the **Sorb** account claims approximately **17 million lines**, more than **10 million unique personal-data records** and a price of **USD 1,000**. These volumes and the commercial offer remain the author's claims. The two visible CSV extracts contain fields consistent with South African personal data: user or SMS identifiers, names, telephone numbers, South African identifiers, email addresses, province, postal code, opt-out indicator and campaign code. The second extract includes mobile numbers and RSA identifiers. No individual value is reproduced in the repository.
+- **Observed:** Publication visibly dated **5 October 2026 at 19:46** according to the displayed timestamp; domain `thriveonlinegroup.com`; structured extracts showing identity, contact and South African identification fields; displayed price of **USD 1,000**.
+- **Assumption:** If authentic and sourced from Thrive Online Group or an associated provider, the exposure could facilitate phishing, identity abuse, telephone fraud and targeting of SMS campaigns. Field consistency does not validate technical origin or the claimed volumes.
+- **Unknown:** Access vector and date, source system, actual number of unique people, corpus completeness, current data validity, existence of exfiltration, real seller identity and any confirmation by Thrive Online Group or an authority remain unknown.
+- **Analysis scope and limitations:** Analysis is limited to the supplied publication, visual material and visible CSV extracts; the complete source files, their hashes and the claimed **17 million lines** were not available. No download link or criminal contact was followed. Raw personal data remains outside the repository.
+- **Risk assessment:** If authentic, the combination of contact data, South African identifiers and campaign data could support targeted phishing, impersonation, telephone or SMS fraud and identity correlation.
+- **SOC/CTI recommendations:** Preserve logs from marketing applications, CRM, databases, service accounts and SMS integrations; investigate bulk exports and unusual privileged access; review associated providers and campaigns; monitor for domains, numbers and messages impersonating the organisation; do not buy, download or test the offered data.
+- **Sources / Evidence:** visual material and structured extracts supplied to AFRINTEL; forum publication attributed to the Sorb account. No identifier, telephone number, email address or criminal-market link is published.
+
+
+#### 🇿🇦 South Africa - Lawyers for Human Rights [System Intrusion]
+- **Security notice publication date:** 15 October 2026
+- **Official domain:** [lhr.org.za](https://www.lhr.org.za/)
+- **Actor / Group:** Non établi
+- **Sector:** NGO / Human rights / Legal services
+- **Status:** Incident Confirmed by Victim
+- **Incident type:** System Intrusion
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim description:** Lawyers for Human Rights is a South African organisation providing human-rights legal services and assistance.
+- **Analysis:** In its 15 October 2026 security notice, LHR stated that a database hosted by a third-party service provider was subject to unauthorised access on 5 October. LHR's investigation concluded that an unauthorised third party accessed and downloaded information. The environment was secured, an investigation opened, and authorities and potentially affected individuals were notified.
+- **Potentially affected data:** names, South African identity numbers, passport or refugee/asylum-seeker permit numbers, addresses, telephone numbers, email addresses, dates of birth, gender, nationality, employment and contractor information, tenant and lease information, client and beneficiary records, organisation information, legal-case documents and correspondence, and data relating to partners, donors, employees, service providers and tenants.
+- **Number of people and volume:** Not established.
+- **Risk assessment:** Legal, identity, contact and vulnerable-person data may create significant risks of identity theft, phishing, document fraud, targeting and intimidation. No ransomware, encryption or leak-site publication has been established.
+- **SOC/CTI action:** Preserve and correlate third-party, database, administrative-account and outbound-gateway logs around 5 October; revoke access and secrets shared with the provider; review other environments using the same identities; monitor fake legal correspondence and document requests; use out-of-band validation with LHR.
+- **Sources / Evidence:** [LHR official notice dated 15 October 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/); [LHR news index](https://www.lhr.org.za/lhr-news/). The exact corpus scope and number of affected people remain under assessment.
 
 #### 🇪🇬 Egypt - Millensys (`millensys.com`) [Ransomware]
 - **Initial publication date:** 5 October 2026
@@ -635,7 +422,6 @@ This section contains the 45 incidents whose publication or first documented obs
 #### 🇪🇬 Egypt - Beni Suef Technological University [Ransomware]
 - **Initial publication date:** 6 October 2026
 - **Institutional domain in the source:** `bsut.edu.eg`
-- **Verified official website:** [btu.edu.eg](https://btu.edu.eg/en/home/)
 - **Actor / Group:** UmBra
 - **Sector:** Higher education / Technology
 - **Status:** Claim - Unverified
@@ -647,11 +433,12 @@ This section contains the 45 incidents whose publication or first documented obs
 - **Risk assessment:** Potential risks concern administrative systems, student accounts, learning platforms and personal data. No affected scope is established.
 - **Sources / Evidence:** [Beni Suef Technological University official website](https://btu.edu.eg/en/home/); [Egyptian institutional portal](https://bani-suef-tu.mohesr.gov.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-### October 7, 2026
+### October 3, 2026
 
 #### 🇲🇦 Morocco - NextLevel PC
 
-- **Initial publication date:** 7 October 2026 at 01:41 (displayed time; timezone not specified)
+- **Initial publication date:** 3 October 2026 at 12:00 (displayed time; timezone not specified)
+- **Later publication:** 7 October 2026 at 01:41, announcing free release of the full database (displayed time; timezone not specified)
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** E-commerce / IT equipment and gaming
 - **Website:** [nextlevelpc.ma](https://nextlevelpc.ma/) (domain displayed in the publication; identified as a Moroccan computer-equipment retailer)
@@ -665,7 +452,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
 - **Analysis:**
 
-  **Observed:** A post attributed to **Nameless511**, dated **7 October 2026 at 01:41** according to the displayed timestamp, announces free release of the “full database” for NextLevel PC after a period the author describes as **72 hours without response**. The author claims **52,545 customer accounts**, **60,262 shipping addresses**, **47,653 orders**, **11 internal accounts**, **14,160 cart/discount rules**, and transaction history worth **MAD 122.9 million**. The complete supplied and analysed local corpus contains **eight CSV files** totalling **30,556,090 bytes**, and exactly confirms the first five counts: `customers.csv` (**52,545** rows), `addresses.csv` (**60,262**), `orders.csv` (**47,653**), `employees.csv` (**11**) and `cart_rules.csv` (**14,160**). The **47,653 orders** total **122,865,604.60** in the payment field, consistent with the author’s claimed **MAD 122.9 million**. The currency is attributed to the publication; it is not independently established by that calculation.
+  **Observed:** An initial post attributed to **Nameless511**, dated **3 October 2026 at 12:00** according to the displayed timestamp, presents the NextLevel PC database and describes the company, its commercial volumes and the affected data categories. A later post dated **7 October 2026 at 01:41** announces free release of the “full database” after a period the author describes as **72 hours without response**. The author claims **52,545 customer accounts**, **60,262 shipping addresses**, **47,653 orders**, **11 internal accounts**, **14,160 cart/discount rules**, and transaction history worth **MAD 122.9 million**. The complete supplied and analysed local corpus contains **eight CSV files** totalling **30,556,090 bytes**, and exactly confirms the first five counts: `customers.csv` (**52,545** rows), `addresses.csv` (**60,262**), `orders.csv` (**47,653**), `employees.csv` (**11**) and `cart_rules.csv` (**14,160**). The **47,653 orders** total **122,865,604.60** in the payment field, consistent with the author’s claimed **MAD 122.9 million**. The currency is attributed to the publication; it is not independently established by that calculation.
 
   The corpus covers customer accounts, shipping addresses, orders, order details, products, discount rules, messages and internal accounts. It contains **69,957** order-detail rows and **4,168** messages. Observed dates span **May 2021** to **November 2026**, with the latter bound including discount-rule end dates. Customer files contain contact, preference, password and session-key fields. All **52,545** password values are populated; **42,743** follow a format beginning with `$2`, while the remainder use an unidentified format. These values were neither reproduced, tested nor subjected to password-cracking. No individual value, email address, telephone number, authentication string or order data is published.
 
@@ -685,17 +472,6 @@ This section contains the 45 incidents whose publication or first documented obs
   5. Establish the scope before notification, without using published data to contact or authenticate individuals.
 
 - **Sources / Evidence:** forum publication and visible sample supplied on 8 October 2026. No criminal link, identifier, password hash, session key or individual data is published.
-
-#### 🇪🇬 Egypt - SANAtech Global Solutions [Ransomware]
-- **Publication date:** 7 October 2026
-- **Actor / Group:** UmBra (claimed attribution only)
-- **Sector:** Technology / Digital services
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Confidence level:** Low
-- **Impact level:** Level 3
-- **Victim description:** SANAtech Global Solutions is presented as an Egyptian technology and digital-services company.
-- **Analysis:** The victim appears on a source associated with UmBra. No exploitable sample or victim statement was identified. Intrusion, exfiltration, encryption and service disruption are not established.
 
 #### 🇪🇹 Ethiopia - Ministry of Health (`moh.gov.et`) [Data Leak]
 
@@ -719,7 +495,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   The supplied material and local text also present structures related to user accounts, roles, identities, facilities, health professionals and authentication fields. Sensitive values were not tested, published or used to attempt access. The supplied unmasked identity documents are treated as local evidence and no facial or identifying data is added to the repository.
 
-  **Assumption:** The consistency between `moh.gov.et`, Ethiopian health-structure references, visible official-looking cards and a health-platform data structure strongly supports association with a Ministry-related or health-sector environment. It does not establish that the Ministry’s own system was directly compromised or that all data originated from one environment.
+  **Analytical assessment:** The consistency between `moh.gov.et`, Ethiopian health-structure references, visible official-looking cards and a health-platform data structure strongly supports association with a Ministry-related or health-sector environment. The sources consulted do not specify whether the Ministry’s own system was directly compromised or whether all data originated from one environment.
 
   **Unknown:** The claimed 4 million records and 13 GB, the existence and contents of Part 1, corpus completeness, unique-person count, extraction date, access vector, authenticity of each document, current validity of identifiers or secrets, operational impact and any confirmation by the Ministry or an authority remain unknown.
 
@@ -728,6 +504,19 @@ This section contains the 45 incidents whose publication or first documented obs
 - **SOC / CTI recommendations:** Preserve IAM, API, database, export and download logs; revoke potentially exposed secrets or sessions after validation; strengthen MFA and privileged-account controls; review identity and health-system access; search for mass exports and outbound transfers; protect identity-document copies and apply applicable notification procedures.
 - **AFRINTEL assessment:** Publication observed and sensitive sample analysed; attribution to an Ethiopian health-sector environment highly plausible; direct Ministry compromise, global volume and acquisition method unconfirmed.
 - **Sources / Evidence:** Forum post and supplied material provided on October 30, 2026; local sample examined read-only. No national identifier, name, email address, phone number, photograph or secret is published in this record.
+
+### October 7, 2026
+
+#### 🇪🇬 Egypt - SANAtech Global Solutions [Ransomware]
+- **Publication date:** 7 October 2026
+- **Actor / Group:** UmBra (claimed attribution only)
+- **Sector:** Technology / Digital services
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim description:** SANAtech Global Solutions is presented as an Egyptian technology and digital-services company.
+- **Analysis:** The victim appears on a source associated with UmBra. No exploitable sample or victim statement was identified. Intrusion, exfiltration, encryption and service disruption are not specified in the sources consulted.
 
 ### October 8, 2026
 
@@ -742,7 +531,7 @@ This section contains the 45 incidents whose publication or first documented obs
 - **Impact level:** Level 3 (potential)
 - **Victim description:** FSE is presented in the source corpus as an entity of Cairo University associated with higher education and training.
 - **Analysis:** The victim appears in a claim associated with UmBra. No sample, volume, affected system, proof of encryption, exfiltration or statement from Cairo University was identified.
-- **Risk assessment:** Potential risks concern university platforms, student data and administrative documents. The publication alone does not establish them.
+- **Risk assessment:** Potential risks concern university platforms, student data and administrative documents. The sources consulted do not describe the resulting exposure scope.
 - **Sources / Evidence:** [Cairo University official website](https://cu.edu.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
 ### October 9, 2026
@@ -765,7 +554,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Observed:** A forum post attributed to the account **Nameless511**, timestamped **9 October 2026 at 03:20** according to the displayed time, identifies the National Press Council (CNP) as a target in Morocco. The author claims to hold **39,000 records** and offers a “full database” for sale. The post advertises a sample of **30 PDFs**, presented as containing real documents. Listed data categories include full names, CIN numbers, home addresses, telephone numbers, email addresses, workplaces, academic qualifications, press-card numbers and renewal dates. The advertised files and associated links were not opened, downloaded or examined. The volumes, the exact nature of the documents, their source and any compromise remain author claims. No individual data is reproduced.
 
-  **Assumption:** The institution’s name, displayed logo and cited data categories are consistent with CNP functions, including processes related to professional press cards. This consistency does not demonstrate that the data came from a CNP-operated system: a historical copy, provider, other source or misleading presentation remain possible.
+  **Analytical assessment:** The institution’s name, displayed logo and cited data categories are consistent with CNP functions, including processes related to professional press cards. The sources consulted do not specify whether the data came from a CNP-operated system; a historical copy, provider, other source or misleading presentation remain possible.
 
   **Unknown:** Actual access to the advertised sample or database, file hashes and structure, their authenticity and currency, actual number of unique people affected, source system, acquisition method and date, exposure scope, operational impact, and confirmation by the CNP or an authority all remain unknown.
 
@@ -800,7 +589,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
   **Observed:** A post attributed to **Nameless511**, timestamped **9 October 2026 at 03:44** according to the displayed time, advertises a “full candidate database” associated with a first-grade state engineer recruitment examination. The author claims approximately **109,000 rows** in CSV, XLSX and PDF-attachment formats. Displayed categories include Arabic and Latin-script names, national identity number, date and place of birth, gender, address, contact information, diplomas, specialities, issuing institutions, application status, rejection reason, examination centre and uploaded documents. The supplied local corpus includes **33 XLSX files** and one CSV, totaling approximately **44.2 MB**. XML-structure analysis of all XLSX files identified **109,673 rows**, including **109,640 data rows** assuming one header row per file: a volume consistent with the claim. The visible sample has a structure consistent with candidate application files. No individual data, identity document or attachment is reproduced.
 
-  **Assumption:** Consistency between the examination title, administrative fields and file structure supports a link to a Moroccan public-recruitment process attributed to the ministry. It does not prove the files came directly from a ministry-administered system or that the claimed full volume was exfiltrated.
+  **Assumption:** Consistency between the examination title, administrative fields and file structure supports a link to a Moroccan public-recruitment process attributed to the ministry. It does not document the files came directly from a ministry-administered system or that the claimed full volume was exfiltrated.
 
   **Unknown:** The actual number of candidates and unique people, the corpus’s precise coverage, originating system, acquisition method and date, authenticity and currency of the files, actual presence of every claimed attachment, operational impact and any official confirmation remain unknown.
 
@@ -836,21 +625,7 @@ This section contains the 45 incidents whose publication or first documented obs
 
 ### October 11, 2026
 
-#### 🇲🇦 Morocco - CNESTEN [Ransomware]
-- **Initial publication date:** 11 October 2026
-- **Institutional domain:** [cnesten.org.ma](https://www.cnesten.org.ma/)
-- **Actor / Group:** Qilin
-- **Sector:** Nuclear research / Science and technology
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Confidence level:** Low
-- **Impact level:** Level 4 (potential)
-- **Victim description:** CNESTEN is a Moroccan public institution responsible for research and applications in energy, nuclear science and nuclear technology.
-- **Analysis:** CNESTEN appears in a claim associated with Qilin. The source row provides no data description or technical proof. No sample, volume, encryption, exfiltration or statement from CNESTEN was identified.
-- **Risk assessment:** If authentic, a claim could concern sensitive scientific, administrative or operational data. No impact to a nuclear facility or safety has been established.
-- **Sources / Evidence:** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf); ransomware publication extracted from the corpus provided to AFRINTEL.
-
-#### Decathlon Morocco
+#### 🇲🇦 Morocco - Decathlon Morocco
 
 - **Sector:** Retail / Sporting Goods / E-commerce
 - **Victim:** Decathlon Morocco
@@ -921,7 +696,7 @@ The sample structure is consistent with an export from an order management, rout
 
 These characteristics support the possibility that the published records are associated with Decathlon Morocco's commercial and logistics operations.
 
-However, the available evidence does not establish whether the exposure resulted from:
+However, the available sources do not specify whether the exposure resulted from:
 
 - A direct compromise of Decathlon Morocco;
 - A compromise of a logistics service provider;
@@ -965,6 +740,20 @@ The authenticity of the complete dataset, the actual scope of the exposure and t
 
 There is currently insufficient evidence to establish a direct compromise of Decathlon Morocco's infrastructure.
 
+#### 🇲🇦 Morocco - CNESTEN [Ransomware]
+- **Initial publication date:** 11 October 2026
+- **Institutional domain:** [cnesten.org.ma](https://www.cnesten.org.ma/)
+- **Actor / Group:** Qilin
+- **Sector:** Nuclear research / Science and technology
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Confidence level:** Low
+- **Impact level:** Level 4 (potential)
+- **Victim description:** CNESTEN is a Moroccan public institution responsible for research and applications in energy, nuclear science and nuclear technology.
+- **Analysis:** CNESTEN appears in a claim associated with Qilin. The source row provides no data description or technical proof. No sample, volume, encryption, exfiltration or statement from CNESTEN was identified.
+- **Risk assessment:** If authentic, a claim could concern sensitive scientific, administrative or operational data. No impact to a nuclear facility or safety has been established.
+- **Sources / Evidence:** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf); ransomware publication extracted from the corpus provided to AFRINTEL.
+
 ### October 12, 2026
 
 #### 🇲🇦 Morocco - Eurogate Tanger (`eurogate-tanger.com`)
@@ -992,14 +781,16 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 
   No file was executed. No VBA macro marker was detected in the inspected Office containers. PDFs and MSG files received static string and metadata analysis, without rendering or full interpretation of embedded objects. Email-address markers are present in several text-like files; no individual data is reproduced in this report.
 
-  **Assumption:** The domain name in the archive tree, the organization name, the stated sector and the announced file categories are consistent with an exposure of Eurogate Tanger internal data. This supports archive-to-victim attribution, but does not prove the access method, initial compromise, data completeness or the absence of a provider or third-party environment.
+  **Assumption:** The domain name in the archive tree, the organization name, the stated sector and the announced file categories are consistent with an exposure of Eurogate Tanger internal data. This supports archive-to-victim attribution, but does not document the access method, initial compromise, data completeness or the absence of a provider or third-party environment.
 
   **Unknown:** The technical access timeline and vector, the total volume actually exfiltrated, N0n’s real identity and capabilities, completeness of the first batch, operational impact, any confirmation by Eurogate Tanger or an authority, and the exact content of the documents remain unknown.
 
 - **Analyzed archive hash:** SHA-256 `87bb4495b774c21919af26daf9b3ab807e57f78d7fad5879d0176bd9df28c891`.
 - **Analysis scope and limitations:** All 354 files extracted under the domain were covered by static analysis of actual type, hashes, structure and textual/XML content where extractable. This method does not decrypt protected files, visually render every page or validate every embedded object. It is not official confirmation of the incident. The archive remains outside the AFRINTEL repository.
-- **Risk assessment:** Potential exposure of operational documents, vessel and container data, configurations or release notes, scripts and technical traces could facilitate social engineering, document fraud, employee targeting, preparation of port-operation disruption or identification of application dependencies. Level 4 reflects the potentially critical nature of this environment; actual disruption or access to control systems is not established.
+- **Risk assessment:** Potential exposure of operational documents, vessel and container data, configurations or release notes, scripts and technical traces could facilitate social engineering, document fraud, employee targeting, preparation of port-operation disruption or identification of application dependencies. Level 4 reflects the potentially critical nature of this environment; actual disruption or access to control systems is not specified in the sources consulted.
 - **Sources / Evidence:** public record observed on 20 October 2026; local archive supplied for analysis; no onion address, raw personal data or individual value is published.
+
+### October 12, 2026
 
 #### 🇿🇦 South Africa - Aeroklas Duys / Duys Engineering Group (`aeroklasduys.co.za`) [Ransomware]
 - **Initial publication date:** 12 October 2026
@@ -1041,7 +832,7 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 - **Confidence level:** Low
 - **Impact level:** Level 4 (potential)
 - **Victim description:** Luxor Company for Drinking Water and Sanitation is an Egyptian provider responsible for drinking-water and sanitation services.
-- **Analysis:** The victim was published on a source attributed to LockBit 5.0. No sample, volume or official statement was examined. The publication does not demonstrate compromise, exfiltration, encryption or impact to water services.
+- **Analysis:** The victim was published on a source attributed to LockBit 5.0. No sample, volume or official statement was examined. The publication is not documented as a compromise, exfiltration, encryption or impact to water services.
 
 ### October 18, 2026
 
@@ -1062,7 +853,7 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 
 - **In-depth corpus analysis:**
 
-  **Observed:** The publication claims **5.7 GB compressed** and **375 tables**. The associated local corpus contains **375 CSV files** totalling **6,050,914,271 bytes** and **42,509,228 physical lines including headers**. This total is a newline inventory: some fields contain embedded line breaks, so the physical-line count must not be interpreted as a count of people or logical records. For example, `userinfo.csv` contains **9,776 physical lines** but **9,509 parsed CSV records** with no malformed rows. The agreement between the table count, claimed volume and local corpus is a significant structural corroboration element. The archive advertised by the post was not retrieved directly; exact cryptographic identity between the advertised archive and the local corpus is therefore not established.
+  **Observed:** The publication claims **5.7 GB compressed** and **375 tables**. The associated local corpus contains **375 CSV files** totalling **6,050,914,271 bytes** and **42,509,228 physical lines including headers**. This total is a newline inventory: some fields contain embedded line breaks, so the physical-line count must not be interpreted as a count of people or logical records. For example, `userinfo.csv` contains **9,776 physical lines** but **9,509 parsed CSV records** with no malformed rows. The agreement between the table count, claimed volume and local corpus is a significant structural corroboration element. The archive advertised by the post was not retrieved directly; exact cryptographic identity between the advertised archive and the local corpus is therefore not specified in the sources consulted.
 
   **Main observed elements:**
 
@@ -1080,12 +871,12 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 
   Observed password fields are populated with hashed values in the visible records; no cracking, authentication or reuse attempt was performed. Secrets, tokens, contact details, identifiers and health records were not reproduced.
 
-  **Assumption:** The consistency between the post, table count, claimed volume and local structures makes association of the corpus with the ministry's information system or an affiliated health service plausible. The observed table names and relationships are compatible with a health-data management platform. This compatibility alone does not prove initial access, exfiltration by Lenken, corpus completeness or the absence of a provider.
+  **Assumption:** The consistency between the post, table count, claimed volume and local structures makes association of the corpus with the ministry's information system or an affiliated health service plausible. The observed table names and relationships are compatible with a health-data management platform. This compatibility alone does not document initial access, exfiltration by Lenken, corpus completeness or the absence of a provider.
 
-  **Unknown:** Initial access vector, technical access timeline, real actor identity, accounts actually used, data completeness, presence of complete medical records, operational impact and any official confirmation by the ministry remain unknown. The presence of hashes, secrets or tokens in a copy does not demonstrate that they remain valid.
+  **Information not specified in the sources:** Initial access vector, technical access timeline, real actor identity, accounts actually used, data completeness, presence of complete medical records, operational impact and any official confirmation by the ministry. The sources do not specify whether hashes, secrets or tokens in the copy remain valid.
 
 - **Analysis scope and limitations:** All **375 files** were read sequentially and read-only for inventory, physical-line counting and aggregate content-marker scanning. The highest-impact tables received detailed CSV parsing with physical-line and logical-record counts kept separate. Text indicators are triage signals rather than semantic classification of every cell. No file was executed, no download link was followed and no secret, hash, token or individual record is published. This analysis is not official confirmation of the incident.
-- **Risk assessment:** Potential exposure of administrative accounts, identity data, health data, audit histories and notification mechanisms could facilitate fraud, targeted phishing, account impersonation, extortion, targeting of health personnel and violations of patient confidentiality. Level 4 reflects the combination of a government health victim, potentially sensitive data and access-related elements; actual operational disruption is not established.
+- **Risk assessment:** Potential exposure of administrative accounts, identity data, health data, audit histories and notification mechanisms could facilitate fraud, targeted phishing, account impersonation, extortion, targeting of health personnel and violations of patient confidentiality. Level 4 reflects the combination of a government health victim, potentially sensitive data and access-related elements; actual operational disruption is not specified in the sources consulted.
 - **SOC/CTI recommendations:** Revoke and rotate potentially exposed tokens, secrets and sessions; enforce password rotation and MFA; search for bulk exports, unusual administrative access and outbound transfers; verify backup and configuration integrity; audit roles and privileges; preserve logs; rapidly assess affected health-data categories; coordinate response with the competent Rwandan authority; do not download or redistribute the public archive.
 - **Counting decision:** The incident is added to the October corpus and counted as a **new October incident**, subject to monthly closure and final statistical validation.
 - **Local manifest:** `/tmp/afrintel-evidence/afr-2026-10-rwanda-moh/evidence_manifest.json`; raw data remains outside the repository.
@@ -1127,7 +918,7 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 
   The 180 JSON files are readable and all present an object structure containing **22 keys**; individual values are not published. The 71 PDFs were checked read-only and total **117 pages**. Each of the 9 EML messages contains sender, recipient, date and subject metadata. The combination of structured data, PDF documents and email messages is compatible with an administrative or judicial document environment backup. These 262 files do not validate the claimed 22 GB volume or 158,511-file total.
 
-  **Assumption:** The consistency between the PGR name, the Mozambican official domain, institutional identity and corpus structure makes attribution to the PGR scope plausible. The file categories are compatible with administrative, legal or public-prosecution records. This consistency does not prove that the actor compromised PGR infrastructure or that the sample represents the entire system.
+  **Assumption:** The consistency between the PGR name, the Mozambican official domain, institutional identity and corpus structure makes attribution to the PGR scope plausible. The file categories are compatible with administrative, legal or public-prosecution records. This consistency does not document that the actor compromised PGR infrastructure or that the sample represents the entire system.
 
   **Unknown:** The access vector, affected systems, technical access timeline, technical origin of the files, number of cases and unique people, duplicates, completeness, exact legal sensitivity of the documents, operational impact and any official confirmation remain unknown.
 
@@ -1136,33 +927,48 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 - **SOC / CTI recommendations:** Preserve portal, document-system, email and administrative-account logs; search for bulk exports and unusual downloads; review access to judicial files; revoke potentially exposed sessions and secrets; verify backup integrity; coordinate response with competent Mozambican authorities; do not download or redistribute additional data.
 - **AFRINTEL assessment:** Publication observed; local sample provided and analysed; PGR attribution plausible; document structure consistent; overall volume and completeness unverified; unauthorised access and exfiltration unconfirmed; official confirmation not observed.
 
-#### 🇲🇬 Madagascar - e-Koragna / associated SSO environment (claimed attribution)
+#### 🇲🇬 Madagascar - `staging.sso.gov.mg` (claimed attribution)
 
 - **Initial publication date:** 20 October 2026 at 05:14 (displayed timestamp; timezone not specified)
 - **Exchange start date:** Monday, 19 October 2026, according to the supplied chronology; time not specified
 - **Actor / Group:** List1 (account displayed in the post; identity and affiliation unverified)
 - **Sector:** Government / Digital identity and authentication
-- **Claimed web services:** `e-koragna.gov.mg` and `staging.sso.gov.mg`
+- **Claimed web service:** `staging.sso.gov.mg`
 - **Status:** Claim - Unverified
 - **Incident type:** Access Sale
 - **Confidence level:** Medium
 - **Impact level:** Level 4 (potential)
 - **Source type:** Underground forum, direct exchanges and supplied material provided to AFRINTEL
 
-- **Victim Description:** **e-Koragna** is a complaints-management platform linked to Madagascar’s PRODIGY digital-governance and identity-management project. Public information associates it with the **Digital Governance Unit (UGD)**, which develops and coordinates Malagasy public digital services ([public e-Koragna description](https://torolalana.gov.mg/fr/services/e-koragna-mecanisme-de-gestion-de-plaintes/) ; [UGD website](https://digital.gov.mg/)). List1’s publication includes `e-koragna.gov.mg` and `staging.sso.gov.mg` in the same administrator-access offer; the exact technical relationship between the two domains, e-Koragna and the UGD has not been independently established.
+- **Victim Description:** `staging.sso.gov.mg` is presented as a staging environment linked to a Malagasy digital-identity service. Its exact operational relationship with the relevant administration has not been independently established.
+- **Analysis:** The post displayed on **20 October 2026 at 05:14** announces the sale of “admin access” to `staging.sso.gov.mg`. The supplied exchanges state an advertised price of **USD 450** and an assertion of administrative access. The material shows a Keycloak-like interface with several realms and a partially masked user list. No username, password or secret is reproduced; no access was tested. During the same exchange, the seller separately offered access to `e-koragna.gov.mg`, which is treated in a separate record.
+- **Analytical assessment:** The Malagasy domain, presented interface and consistency between the post and supplied material support an apparent access offer targeting an administrative environment. Whether the access is real, unauthorised, valid or within the seller’s control remains undetermined.
+- **Unknown:** Acquisition method, technical timeline, privilege scope, persistence, possible data exposure, transaction and confirmation by the service owner or an authority.
+- **Analysis scope and limitations:** Analysis based on the post, supplied exchanges and material; systems, accounts and credentials were not tested. Personal data and session identifiers remain outside the repository.
+- **Risk assessment:** If valid, an administrator account could allow modification of realms, clients, roles or accounts and facilitate takeover of dependent services.
+- **Counting decision:** Counted as one distinct `Access Sale` covering only `staging.sso.gov.mg`.
+- **Sources / Evidence:** Forum post supplied on 23 October 2026 and timestamped 20 October 2026; exchanges and Keycloak-related material supplied to AFRINTEL. Contact details, session identifiers, secrets and personal data are not published.
 
-- **Analysis:**
+#### 🇲🇬 Madagascar - `e-koragna.gov.mg` (claimed attribution)
 
-  **Observed:** The post displayed on **20 October 2026 at 05:14** announces the sale of “admin access” to `staging.sso.gov.mg` and invites prospective buyers to contact the seller by messenger. The supplied exchanges state an advertised price of **USD 450** and an assertion of administrative access; they also indicate that `e-koragna.gov.mg` is included in the same offer. The supplied material shows a Keycloak interface with several realms and a partially masked user list. No username, password or secret is reproduced in this record; no access was tested.
+- **Initial publication date:** 20 October 2026 at 05:14; separate offer visible in the later exchange at 14:08 (displayed timestamps; timezones not specified)
+- **Actor / Group:** List1 (account displayed in the post; identity and affiliation unverified)
+- **Sector:** Government / Digital identity and public services
+- **Claimed web service:** `e-koragna.gov.mg`
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4 (potential)
+- **Source type:** Direct exchange associated with a forum post and supplied material provided to AFRINTEL
 
-  **Assumption:** Publicly documented links between e-Koragna, UGD and PRODIGY, the Malagasy domains, Keycloak interface content and consistency between the post and supplied material support the hypothesis of apparent access to an administrative environment associated with the service. They do not demonstrate that the access is real, unauthorised, still valid or held by the seller, or that the staging domain is actually operated by the UGD.
-
-  **Unknown:** Acquisition method, technical access timeline, privilege scope, access persistence, identity of the service operator, possible data exposure, existence of a transaction, and any confirmation by an authority or service owner all remain unknown.
-
-- **Analysis scope and limitations:** Preliminary analysis based on the post, supplied exchanges and material; systems, accounts and credentials were not tested. The supplied material contains personal data and session identifiers, which remain outside the repository and are not reproduced.
-- **Risk assessment:** If valid, a Keycloak administrator account could allow modification of realms, clients, roles or accounts and facilitate takeover of dependent services. This impact is potential; no console action or compromise of an end-user service is established.
-- **Counting decision:** The record is counted in the October total and statistical breakdowns as **one `Access Sale`** covering `e-koragna.gov.mg` and `staging.sso.gov.mg`. Its status remains `Claim - Unverified`, and the absence of independent corroboration remains an analytical limitation.
-- **Sources / Evidence:** forum post supplied on 23 October 2026 and timestamped 20 October 2026; exchanges and Keycloak-related material supplied to AFRINTEL. Contact details, session identifiers, secrets and personal data are not published.
+- **Victim Description:** **e-Koragna** is a complaints-management platform linked to Madagascar’s PRODIGY digital-governance and identity-management project. Public information associates it with the **Digital Governance Unit (UGD)** ([public e-Koragna description](https://torolalana.gov.mg/fr/services/e-koragna-mecanisme-de-gestion-de-plaintes/) ; [UGD website](https://digital.gov.mg/)).
+- **Analysis:** After advertising administrator access to `staging.sso.gov.mg`, the seller offered `e-koragna.gov.mg` as an additional access during the supplied exchange. The advertised offer price was **USD 450**. The associated material shows a Keycloak-like interface; no username, password or secret is reproduced and no access was tested.
+- **Analytical assessment:** Public links between e-Koragna, UGD and PRODIGY, the Malagasy domain and the exchange support an apparent access offer targeting this service. Whether the access is real, unauthorised, valid or within the seller’s control remains undetermined.
+- **Unknown:** Acquisition method, technical timeline, privilege scope, persistence, possible data exposure, transaction and confirmation by the service owner or an authority.
+- **Analysis scope and limitations:** Analysis based on the post, supplied exchange and material; systems, accounts and credentials were not tested. Personal data and session identifiers remain outside the repository.
+- **Risk assessment:** If valid, the access could allow modification of accounts, roles or service settings and facilitate takeover of dependent functions.
+- **Counting decision:** Counted as one distinct `Access Sale` covering only `e-koragna.gov.mg`.
+- **Sources / Evidence:** Forum post supplied on 23 October 2026, associated exchanges and Keycloak-related material supplied to AFRINTEL. Contact details, session identifiers, secrets and personal data are not published.
 
 #### 🇨🇩 Democratic Republic of the Congo - MINESURSI Teacher Registration Platform [Data Leak]
 
@@ -1189,7 +995,7 @@ There is currently insufficient evidence to establish a direct compromise of Dec
 
   Filename analysis identified document markers compatible with administrative and academic files: **187** passport references, **61** dossier references, **46** certificate references, **44** appointment references and **20** diploma references. Text extraction returned content from **57 documents**. Within those documents, markers relating to teaching appeared in **13**, higher education or universities in **14**, birth or personal data in **15**, diplomas or certificates in **7**, and employment, appointments or personnel numbers in **7**. These counts are content indicators, not counts of people or proof of completeness.
 
-  **Assumption:** The consistency between the ministry, its institutional domain, the platform theme, filenames and document categories makes attribution of the corpus to the MINESURSI scope plausible. The presence of administrative files, identity documents, diplomas and career-related documents is compatible with a teacher-registration platform. This consistency does not demonstrate that the actor compromised ministry infrastructure or that the archive represents the full advertised dump.
+  **Analytical assessment:** The consistency between the ministry, its institutional domain, the platform theme, filenames and document categories makes attribution of the corpus to the MINESURSI scope plausible. The presence of administrative files, identity documents, diplomas and career-related documents is compatible with a teacher-registration platform. The sources consulted do not specify whether the actor compromised ministry infrastructure or whether the archive represents the full advertised dump.
 
   **Unknown:** The access vector, systems actually affected, technical access timeline, technical origin of the files, number of unique people, duplicates, corpus completeness, exact nature of non-text content, presence of valid credentials or sessions, operational impact and any official confirmation remain unknown. The claimed 136 GB and 125,823-file totals are not validated by the sample.
 
@@ -1252,18 +1058,18 @@ last_checked_at: 2026-10-23
 
 #### 🇿🇦 South Africa - Rand Mutual Assurance: Workers' Compensation Services
 - **Date RMA received the alert and public claim:** 23 October 2026
-- **Actor / Group:** Acteur de forum non identifié (attribution revendiquée non établie)
+- **Actor / Group:** Unattributed
 - **Sector:** Insurance / Workers' compensation
 - **Website:** [randmutual.co.za](https://www.randmutual.co.za/)
 - **Status:** Under Investigation
 - **Incident type:** System Intrusion
 - **Confidence level:** Medium for the existence of the alert and investigation; Low for effective access, exfiltration and claimed volumes
-- **Impact level:** Level 4 (high-sensitivity insurance and workers' compensation dataset; overall claimed volume not established by the sample)
+- **Impact level:** Level 4 (high-sensitivity insurance and workers' compensation dataset; overall claimed volume not specified in the sources consulted by the sample)
 - **Deadline:** 5 November 2026; timezone not specified
 - **Claimed ransom:** USD 95,000
 - **Claimed volume:** 366 GB; 1,683,810 claim-information records and 593,786 files
 - **Description:** Rand Mutual Assurance (RMA) is a South African insurance organisation providing workers' compensation and related insurance services, particularly for mining, metals, steel and associated industries.
-- **Analysis:** RMA confirmed receiving a security alert on 23 October 2026 and opening a specialist investigation. The company has not confirmed that information was accessed, acquired or disclosed without authorisation. The public claim attributes 366 GB, 1,683,810 claim records and 593,786 files to an unidentified actor; these figures remain unverified and do not necessarily represent the same number of people. A read-only analysis of the locally supplied `Samples.zip` archive (SHA-256 `46e45f8a368a626d57fe6dbe932257bdbfc6f57dfe6c8ba65c4a9a8d5c45bbe4`) covered all 262 supplied files: 180 JSON files, 71 PDFs, 9 EML messages, 1 DOC document and 1 JPG image, totalling approximately 75,941,802 uncompressed bytes. The sample's consistency with RMA's business environment supports contextual attribution, but does not by itself prove access or the alleged extraction.
+- **Analysis:** RMA confirmed receiving a security alert on 23 October 2026 and opening a specialist investigation. The company has not documented in the public sources that information was accessed, acquired or disclosed without authorisation. The public claim attributes 366 GB, 1,683,810 claim records and 593,786 files to an unidentified actor; these figures remain unverified and do not necessarily represent the same number of people. A read-only analysis of the locally supplied `Samples.zip` archive (SHA-256 `46e45f8a368a626d57fe6dbe932257bdbfc6f57dfe6c8ba65c4a9a8d5c45bbe4`) covered all 262 supplied files: 180 JSON files, 71 PDFs, 9 EML messages, 1 DOC document and 1 JPG image, totalling approximately 75,941,802 uncompressed bytes. The sample's consistency with RMA's business environment supports contextual attribution, but does not by itself prove access or the alleged extraction.
 
   The 180 JSON files follow a homogeneous claims-event schema and contain 192 embedded person events. They include claim references, employer information, incident details, earnings data, claims and medical-tracking structures. Observed event dates range from May 2023 to August 2026; observed advice dates extend to September 2026. The records contain 135 distinct company or site identifiers, 22 events with accident-detail structures, 19 with disease-detail structures and 1 event marked fatal. All 192 embedded events are marked as not deleted.
 
@@ -1338,8 +1144,8 @@ last_checked_at: 2026-10-23
 - **Initial publication date:** 25 October 2026 (displayed timestamp; time and timezone not indicated)
 - **AFRINTEL discovery date:** 30 October 2026
 - **Actor / Group:** Panzer (ransomware and data-extortion group; publication claim and affiliation unverified)
-- **Displayed deadline:** 16 November 2026 at approximately 11:01 UTC, calculated from the displayed countdown of 16 days, 15 hours and 21 minutes at the time of verification
-- **Deadline status:** Ongoing at the time of verification; disclosure not observed
+- **Displayed deadline:** Around 15 November 2026, based on the 12 days remaining stated by the actor on 3 November 2026; the exact time is not specified
+- **Deadline:** Ongoing on 3 November 2026; the actor states that negotiations failed and that no ransom was paid; no disclosure was observed in the material reviewed
 - **Sector:** Engineering / Information technology / Digital transformation
 - **Official website:** [yodingenierie.com](https://yodingenierie.com/)
 - **Status:** Claim - Unverified
@@ -1350,16 +1156,16 @@ last_checked_at: 2026-10-23
 - **Victim description:** YOD Ingénierie is a Beninese engineering and information-technology company and a member of the NED&CO Group. It works in digital transformation, information-systems governance and artificial-intelligence-related projects.
 - **Analysis:** The publication attributed to the Panzer ransomware group claims a **48 GB** corpus in an extortion context, containing identity documents, passport scans, KYC forms, bank documents, signatures, payslips, personnel records, contracts, invoices, budgets, audits, donor lists, internal correspondence and project-planning documents. No system encryption is demonstrated by the available material.
 
-  The local directory contains only a tree inventory of **15,878 lines**. File names indicate several categories consistent with the published description, including administrative documents, personnel records, KYC material, financial items, contracts, budgets and project documents. No source files were available for examination; the claimed **48 GB** and the exact content have therefore not been validated.
+  The supplied directory contains only a tree inventory of **15,878 lines**. File names indicate several categories consistent with the published description, including administrative documents, personnel records, KYC material, financial items, contracts, budgets and project documents. No source files were available for examination; the claimed **48 GB** and the exact content have therefore not been validated.
 
-  **Observed:** The company is linked to Benin through its official website; the publication displays YOD Ingénierie, a claimed 48 GB volume, a 25 October 2026 date and the Panzer group. Public CTI sources describe Panzer as a ransomware and data-extortion group. A countdown of 16 days, 15 hours and 21 minutes was displayed at the time of verification; this corresponds to a calculated deadline around 16 November 2026 at 11:01 UTC. The local inventory confirms numerous documentary references consistent with the announced categories, without making their content readable.
+  **Observed:** The company is linked to Benin through its official website; the publication displays YOD Ingénierie, a claimed 48 GB volume, a 25 October 2026 date and the Panzer group. Public CTI sources describe Panzer as a ransomware and data-extortion group. On 3 November 2026, the actor stated that 12 days remained and said that negotiations had failed without a ransom payment. The local inventory confirms numerous documentary references consistent with the announced categories, without making their content readable.
 
   **Assumption:** If authentic, the claim could involve personal, financial, HR, contractual and operational data belonging to YOD Ingénierie and its partners. References to documents from other African countries may reflect the group's regional activity, but are not sufficient to attribute all data to Benin.
 
-  **Unknown:** Access vector, extraction date, file authenticity, corpus completeness, number of affected people or organisations, availability of a genuine downloadable sample, current validity of the documents, outcome of the deadline and any confirmation by YOD Ingénierie remain unknown.
+  **Unknown:** Access vector, extraction date, file authenticity, corpus completeness, number of affected people or organisations, availability of a genuine downloadable sample, current validity of the documents, outcome of the deadline, whether the actor's non-payment statement is accurate and any confirmation by YOD Ingénierie remain unknown.
 - **Analysis scope and limitations:** Structural and preliminary analysis based on the publication, public company information and the local inventory. Document contents could not be examined; no raw personal data, identity document, secret or download link is reproduced in the repository.
 - **Risk assessment:** If authentic, potential risks include identity theft, document and financial fraud, targeted phishing, loss of employee and partner confidentiality, and exposure of contractual and operational information.
-- **Sources / Evidence:** Publication attributed to Panzer observed on 30 October 2026; local `yodingenierie-tree.txt` inventory; [YOD Ingénierie official website](https://yodingenierie.com/); [public Panzer CTI profile](https://secureresearch.com/threat-actors/panzer.html). Potentially sensitive files remain outside the repository.
+- **Sources / Evidence:** Publication attributed to Panzer observed on 30 October 2026; supplied publication image and actor statement concerning the failed negotiation, 12 days remaining and alleged absence of payment; local `yodingenierie-tree.txt` inventory; [YOD Ingénierie official website](https://yodingenierie.com/); [public Panzer CTI profile](https://secureresearch.com/threat-actors/panzer.html). Potentially sensitive files remain outside the repository.
 
 ### October 26, 2026
 
@@ -1388,7 +1194,7 @@ last_checked_at: 2026-10-23
 - **Impact level:** Level 3
 - **Victim description:** InvestNaija and Chapel Hill Denham are Nigerian entities associated with financial services and investment management.
 - **Analysis:** Chapel Hill Denham notified InvestNaija customers of unusual activity suggesting that some customer information may have been accessed without authorisation. The company took containment measures and reported the incident to the relevant authorities. Less than 1% of customer information may be involved; investments were reportedly unaffected according to the notice. Email addresses and other contact details may have been obtained, but effective access, record count and scope remain under investigation. No ransomware, encryption or service outage has been established.
-- **Potentially affected data:** email addresses and other contact details; number of people and byte volume not established.
+- **Potentially affected data:** email addresses and other contact details; number of people and byte volume not specified in the sources consulted.
 - **SOC/CTI action:** Preserve WAF, API, IAM, mobile-application and web-channel logs preceding 28 October; identify the source of the unusual activity and accessed accounts or objects; revoke affected sessions and tokens; monitor phishing and unusual financial requests targeting customers.
 - **Sources / Evidence:** [The Sun Nigeria](https://thesun.ng/chapel-hill-denham-alerts-customers-to-potential-data-breach-says-investments-safe/); [InvestNaija](https://investnaija.com/); [Chapel Hill Denham](https://chapelhilldenham.com/).
 
@@ -1404,7 +1210,7 @@ last_checked_at: 2026-10-23
 - **Victim description:** GIO Dental is presented as a dental clinic and laboratory operating in Freetown and Koidu, Sierra Leone. The founder is described as Nigerian, but the operational victim is located in Sierra Leone.
 - **Analysis:** GIO Dental appears in a claim associated with The Gentlemen. OSINT sources place it in Sierra Leone, but no sample, volume, proof of encryption, exfiltration or statement from the clinic was identified.
 - **Risk assessment:** If authentic, a claim could concern patient records, administrative data and laboratory systems. None of these elements is established.
-- **Sources / Evidence:** [CTIWatch](https://ctiwatch.com/victims/gio-dental-924d6f76); [The Gentlemen victim list](https://ctiwatch.com/threats/thegentlemen/victims); [GIO Dental website](https://www.giodentalsl.com/). The tracking sources specify that this is an unverified claim.
+- **Sources / Evidence:** [CTIWatch](https://ctiwatch.com/victims/gio-dental-924d6f76); [The Gentlemen victim list](https://ctiwatch.com/threats/thegentlemen/victims); [GIO Dental website](https://www.giodentalsl.com/). The tracking sources specify that this is an publication attributed to the actor.
 
 ### October 29, 2026
 
@@ -1427,7 +1233,7 @@ last_checked_at: 2026-10-23
 
   `drivers.txt` contains **9 JSONL objects**. They include nested user and driver information, stations, amounts and timestamps. The sample contains **9 driver identifiers**, **9 user identifiers** and **5 station identifiers**; observed timestamps range from **1 to 20 October 2026**. The structures also include contact information and sensitive driver identifiers; no individual value is reproduced in the repository. The presence of 9 local objects does not validate the claimed **651 drivers**.
 
-  **Assumption:** The published domain, booking structure, order categories, station references and data organisation are compatible with a transport-ticketing platform associated with BlueBus. This consistency supports contextual attribution of the sample, but does not prove the access vector, exfiltration by Lenken, the technical provenance of each record, corpus completeness or a BlueBus-confirmed compromise.
+  **Assumption:** The published domain, booking structure, order categories, station references and data organisation are compatible with a transport-ticketing platform associated with BlueBus. This consistency supports contextual attribution of the sample, but does not document the access vector, exfiltration by Lenken, the technical provenance of each record, corpus completeness or a BlueBus-confirmed compromise.
 
   **Unknown:** Access date, exact source system, number of unique persons in the full database, current validity of identifiers, existence of unauthorized access, geographic scope, completeness of the claimed **305,520 lines**, actual driver count and any official confirmation remain unknown.
 - **Analysis scope and limitations:** Both local files were examined in full, read-only; file types, sizes, SHA-256 hashes, encoding, schema, missing values, duplicates, aggregates, statuses and time ranges were checked. The RAR archive was inspected without active extraction or execution. Personal values, identifiers, download links and secrets were not published, tested or followed.
@@ -1449,9 +1255,9 @@ last_checked_at: 2026-10-23
 
   The doctor field contains **28,138 distinct values** across 33,120 rows. The specialty field has **38 distinct values**, the class field **16**, the account-related field **9**, and the activity-status field **2**. A mobile number is populated on **5,746 rows**; no email value is populated in this workbook. Code and professional-identification fields are present across all rows. The organisation-code and organisation-name columns are empty in the local file, preventing identification of the specific healthcare structures associated with each professional.
 
-  The correspondence between the local **33,120-row** workbook and the “+33K” claim supports the existence of a genuinely structured sample, but does not validate the **+48K** organisation file, which was not supplied. The workbook structure is compatible with an Egyptian healthcare-professional directory; it does not establish the source system, access vector, exfiltration by Marx, corpus completeness or confirmation by a healthcare organisation.
+  The correspondence between the local **33,120-row** workbook and the “+33K” claim supports the existence of a genuinely structured sample. The **+48K** organisation file was not supplied. The workbook structure is compatible with an Egyptian healthcare-professional directory; the sources consulted do not specify the source system, access vector, exfiltration by Marx, corpus completeness or confirmation by a healthcare organisation.
 
-  **Assumption:** The post title, workbook nature and presence of doctor, specialty, account, mobile and activity-status fields make an association with the Egyptian healthcare ecosystem plausible. This consistency does not prove that the data came from an official register or a specific healthcare organisation.
+  **Assumption:** The post title, workbook nature and presence of doctor, specialty, account, mobile and activity-status fields make an association with the Egyptian healthcare ecosystem plausible. This consistency does not document that the data came from an official register or a specific healthcare organisation.
 
   **Unknown:** Victim organisation identity, technical workbook provenance, extraction date, number of unique persons in the full corpus, meaning of the account fields, current data validity, existence of unauthorised access, contents of the “Organizations File” and any official confirmation remain unknown.
 - **Analysis scope and limitations:** `Doctor.xlsx` was examined in full, read-only, at the XLSX/XML level, including structure, rows, columns, empty fields and distinct-value counts. No organisation file was present in the local directory. No name, number, email address or other raw personal data is reproduced in the repository.
@@ -1483,7 +1289,7 @@ last_checked_at: 2026-10-23
 - **Domain:** Not established
 - **Actor / Group:** Qilin (claimed attribution only)
 - **Displayed deadline:** approximately 4 November 2026 at 14:00, calculated from the 108-hour-and-17-minute countdown observed on 31 October 2026 at approximately 01:43; timezone not displayed
-- **Deadline status:** Ongoing at the time of observation; disclosure not observed
+- **Deadline:** Ongoing at the time of observation; disclosure not observed
 - **Sector:** Broadcasting / Audiovisual infrastructure
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware

@@ -27,9 +27,21 @@
 
 ## Featured reports
 
+### Cyber threats in Africa - October 2026
+
+The October corpus contains **48 records**, all assigned to October after redistributing publications to their actual publication or first documented observation month. It records **23 Data Leak**, **17 Ransomware**, **5 System Intrusion** and **3 Access Sale** cases.
+
+📄 [Full CTI report - October 2026](CyberAttackAfrica/2026/10-october/README.md)
+
+📋 [October 2026 victim records](CyberAttackAfrica/2026/10-october/victims.md)
+
+📊 [October 2026 statistics](statistics/2026/10-october/README.md)
+
+🔄 [September-October 2026 comparison](comparison/2026/09-september-october/README.md)
+
 ### Cyber threats in Africa - August 2026
 
-August 2026 collection contains **29 documented incidents across 10 countries**: **17 ransomware incidents**, **11 data leaks** and **1 access sale**. South Africa accounts for **11 records**, followed by Egypt with **4**, then Algeria and Morocco with **3** each. Government and administration account for **6 incidents**, finance and banking for **6**, and human resources/recruitment for **3**. KRYBIT is associated with **6 ransomware publications**.
+August 2026 collection contains **32 documented incidents**: **18 ransomware incidents**, **13 data leaks** and **1 access sale**.
 
 The Furniture Bargaining Council acknowledged server encryption, and DC Partner published a public confirmation of the incident. The analyses document payment data at The Courier Guy, an account-reset workbook at Daily Trust, internal documents from the Conseil Gabonais des Chargeurs and identity data in the RAMED and DGSN/DGST cases. Reviewed samples do not automatically validate overall claimed volumes or acquisition methods.
 
@@ -45,7 +57,7 @@ The report includes follow-up information recorded through **14 September 2026**
 
 ### September 2026  -  Report published
 
-The September corpus contains **41 documented records across 14 countries**: **24 Ransomware**, **10 Data Leak**, **4 System Intrusion**, **2 Defacement** and **1 Access Sale**. It distinguishes **29 publications dated in September** from **12 earlier incidents integrated retrospectively**. South Africa accounts for **16 records**, followed by Egypt with 7. Underground sources are treated as primary observations; reviewed samples, victim confirmations and indirect exposures remain separate in the analysis.
+The September corpus contains **33 documented records**: **20 Ransomware**, **11 Data Leak** and **2 System Intrusion**. Earlier records have been redistributed to their respective publication months rather than retained in September.
 
 📄 [Full CTI report - September 2026](CyberAttackAfrica/2026/09-september/README.md)
 
@@ -59,19 +71,11 @@ The September corpus contains **41 documented records across 14 countries**: **2
 
 📦 [September 2026 STIX 2.1 / OpenCTI bundle](stix/2026/09-september/afrintel_september_2026_opencti.json)
 
-*Month status: report, statistics, comparison and visual intelligence published from the 29-publication September cohort; the 12 earlier records remain separate in the retrospective 41-record corpus.*
-
-### October 2026 - Report published
-
-The October corpus contains **52 distinct records**: **45 records published or documented in October 2026** and **7 earlier cases identified retrospectively**. The historical cases are kept separate from the October monthly total. The October report covers 15 African countries and records **20 Data Leak**, **17 Ransomware**, **6 System Intrusion** and **2 Access Sale** cases.
-
-📄 [Full CTI report - October 2026](CyberAttackAfrica/2026/10-october/README.md)
-
-📋 [October 2026 victim records](CyberAttackAfrica/2026/10-october/victims.md)
+*Month status: report, statistics, comparison and visual intelligence published from the validated 33-record September cohort.*
 
 ### First-half 2026 cyber threat report
 
-Between January and June 2026, AFRINTEL documented **294 deduplicated incidents**: **113 ransomware**, **121 data leaks**, **6 access-sale records**, **52 DDoS claims**, **1 defacement** and **1 operational-fraud incident**. Q1 accounts for **82 incidents**, compared with **212 in Q2**. Ransomware is nearly stable between quarters (56 to 57), while the sharp increase in Q2 is driven mainly by data exposure/access activity and DDoS reporting. Six multi-country records expand the semester to **317 geographic occurrences**.
+Between January and June 2026, AFRINTEL documented **304 incidents**: **116 ransomware**, **126 data leaks**, **5 access-sale records**, **52 DDoS claims**, **2 system intrusions**, **1 defacement** and **2 operational-fraud incidents**.
 
 The 52 DDoS entries are dated actor claims or availability observations, including 43 Keymous+ observations in May. Repeated observations of the same organization on different dates are not necessarily technically independent attacks.
 
@@ -93,12 +97,12 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 
 | Year | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
-| 2024 | **123** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **229** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2024 | **124** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2025 | **231** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**2024 current monthly corpus:** **123 documented records**, reclassified under the same nine-type taxonomy used for 2025. Earlier corrected semiannual reports retain historical snapshots and do not include every later retrospective addition present in the current monthly pairs.
+**2024 current monthly corpus:** **124 documented records**, reclassified under the same nine-type taxonomy used for 2025. Earlier corrected semiannual reports retain historical snapshots and do not include every later retrospective addition present in the current monthly pairs.
 
-**2025 current monthly corpus:** **229 documented records**. H1 contains **113 records** and H2 **116** after later additions. Geographic views may exceed the canonical total when one card covers multiple countries.
+**2025 current monthly corpus:** **231 documented records**. H1 contains **115 records** and H2 **116**. Geographic views contain **232 occurrences** because one card covers multiple countries.
 
 ---
 
@@ -107,11 +111,12 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | Period | Documented records | FR | EN |
 | :--- | ---: | :--- | :--- |
 | H1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
-| H1 2025 | **113** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
+| H2 2024 | **78** | [Rapport S2](CyberAttackAfrica/2024/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2024/README_H2.md) |
+| H1 2025 | **115** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
 | H2 2025 | **116** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
-| H1 2026 | **294** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
+| H1 2026 | **304** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
-> **Counting note:** these values follow the monthly pairs currently in the repository: H1 2024 = 46, H1 2025 = 113, H2 2025 = 116 and H1 2026 = 294. Earlier semiannual snapshots may differ after snapshot-specific deduplication; they must not be mixed with the enriched monthly corpora.
+> **Counting note:** these values follow the monthly pairs currently in the repository: H1 2024 = 46, H2 2024 = 78, H1 2025 = 115, H2 2025 = 116 and H1 2026 = 304. Earlier semiannual snapshots may differ after snapshot-specific deduplication; they must not be mixed with the enriched monthly corpora.
 
 ---
 
@@ -128,7 +133,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | July 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
 | August 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
 | September 2026 | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) | [Report](CyberAttackAfrica/2026/09-september/README.md) |
-| October 2026 | [Report](CyberAttackAfrica/2026/10-october/README_FR.md) | [Report](CyberAttackAfrica/2026/10-october/README.md) |
+| October 2026 | [French report](CyberAttackAfrica/2026/10-october/README_FR.md) | [Report](CyberAttackAfrica/2026/10-october/README.md) |
 
 ---
 
@@ -145,6 +150,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | July 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
 | August 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
 | September 2026 | [Statistiques](statistics/2026/09-september/README_FR.md) | [Statistics](statistics/2026/09-september/README.md) |
+| October 2026 | [Statistiques](statistics/2026/10-october/README_FR.md) | [Statistics](statistics/2026/10-october/README.md) |
 
 ---
 
@@ -160,6 +166,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | June vs July 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
 | July vs August 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
 | August vs September 2026 | [FR](comparison/2026/08-august-september/README_FR.md) | [EN](comparison/2026/08-august-september/README.md) |
+| September vs October 2026 | [FR](comparison/2026/09-september-october/README_FR.md) | [EN](comparison/2026/09-september-october/README.md) |
 
 
 ---
@@ -178,7 +185,8 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | August 2026 | [Visual intelligence](visual-intelligence/08-august/README.md) |
 | September 2026 | [Visual intelligence](visual-intelligence/09-september/README.md) |
 | H1 2026 | [Statistical visual](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
-| H1 2026 map | [Visual map](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png) |
+| H1 2026 regions | [Regional chart](visual-intelligence/H1-2026/regions_en.png) |
+| H1 2026 visualisations | [Complete EN set](visual-intelligence/H1-2026/README.md) |
 
 ---
 
@@ -195,6 +203,7 @@ Each annual report pulls together the validated monthly corpus for the year: inc
 | July 2026 | [STIX Bundle](stix/2026/07-july/afrintel_july_2026_opencti.json) |
 | August 2026 | [STIX Bundle](stix/2026/08-august/afrintel_august_2026_opencti.json) |
 | September 2026 | [STIX Bundle](stix/2026/09-september/afrintel_september_2026_opencti.json) |
+| October 2026 | [STIX Bundle](stix/2026/10-october/afrintel_october_2026_opencti.json) |
 | H1 2026 | [STIX Bundle](stix/2026/afrintel_h1_2026_opencti.json) |
 
 Every monthly STIX 2.1 bundle carries bilingual incident and victim descriptions, the CTI report, statistics, month-over-month comparisons, source references, and identity objects for AFRINTEL and its author. H1 bundles preserve the original monthly STIX IDs so OpenCTI can correlate records across reporting periods. When a monthly or half-year corpus is corrected, the corresponding aggregate STIX bundle should be regenerated before it is treated as an exact mirror of the Markdown source of truth. MITRE ATT&CK context lives in the report descriptions themselves.

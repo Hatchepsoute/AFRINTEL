@@ -4,7 +4,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (30 fiches)
+# Liste des victimes africaines de cyberattaques en août 2026 (33 fiches)
 
 👉🏾 [**English version available here**](./victims.md)
 
@@ -849,6 +849,42 @@ last_checked_at: 2026-08-20T13:54:00
 -->
 
 ---
+### 21 août 2026
+#### 🇪🇬 Égypte - Six universités publiques et leur portail étudiant
+
+- **Date de publication initiale :** 21 août 2026 à 00:08 ; modification visible à 00:12:31 (fuseau non indiqué). Publication complémentaire « Part 2/3 » observée le 23 août 2026 à 00:18.
+- **Date de détection AFRINTEL :** 4 novembre 2026
+- **Acteur / Source :** ronabrown, publication 8kun `/egy/` ; identité et affiliation non établies
+- **Secteur :** Enseignement supérieur / Portails étudiants / Administration universitaire
+- **Victimes citées :** Benha University, Helwan University, Cairo University, Kafr El Sheikh University, South Valley University et University of Sadat City
+- **Statut :** Data Fully Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** High pour l'existence et la cohérence structurelle du corpus local ; Medium pour l'attribution technique aux systèmes officiels
+- **Niveau d'impact :** Level 4
+- **Type de source :** Publications de forum, captures fournies à AFRINTEL, six exports CSV et corpus documentaire local analysés en lecture seule
+
+- **Analyse :** La publication annonce **7 761 608 enregistrements** et **87 tables**. L'analyse complète des six CSV UTF-8 locaux a produit **7 762 241 enregistrements**, soit **633 de plus** que le volume annoncé, pour **4 298 921 282 octets**. Les volumes observés sont : Benha **3 078 879**, Helwan **2 834 439**, Cairo **551 252**, Kafr El Sheikh **739 533**, South Valley **551 371** et Sadat City **6 767**. Les fichiers comptent **10 075 256 lignes physiques** et **130 à 352 colonnes** chacun.
+
+  Les schémas couvrent notamment les inscriptions, données de troisième cycle, personnel administratif, documents et images d'étudiants, e-mails, journaux d'authentification et de connexion, certificats, profils académiques et paramètres de facultés. Certains en-têtes comprennent `newuserlogs__FailPassword`, `userauthlog`, `newuserlogs`, `email`, `IP`, `studentdocuments`, `studentpersonimages` et `adminstaff`. La capture fournie affiche des données personnelles et des mots de passe en clair ; aucune valeur brute n'est reproduite dans le dépôt.
+
+  Le contrôle de largeur CSV n'a détecté aucune ligne incohérente. Les correspondances exactes pour Cairo, Kafr El Sheikh et South Valley, ainsi que les écarts limités des trois autres fichiers, soutiennent fortement la cohérence structurelle du corpus avec la publication. Elles ne prouvent ni l'origine technique, ni la compromission des systèmes officiels, ni l'exhaustivité du corpus ou la validité actuelle des identifiants.
+
+  Le corpus documentaire local associé à la deuxième publication contient **5 540 fichiers** pour **2 337 401 813 octets** : **2 257 PDF**, **3 096 JPEG**, **164 PNG**, **21 JPG** et **2 GIF**. Les répertoires comprennent notamment les documents étudiants, les fichiers d'inscription en ligne, une archive de ces fichiers, les images de personnes et les images étudiantes. L'analyse des métadonnées PDF a réussi sur **2 256 fichiers**, représentant **2 887 pages** ; un PDF n'a pas pu être traité par `pdfinfo`. Les fichiers présentent **4 675 empreintes SHA-256 uniques**, **726 groupes de doublons** et **865 fichiers dupliqués au-delà de la première occurrence**. Ces doublons ne doivent pas être comptés comme des personnes ou des documents supplémentaires.
+
+  Les catégories explicitement annoncées dans la publication complémentaire sont les scans d'identité nationale, noms, identifiants nationaux à 14 chiffres, dates de naissance, photographies, résultats scolaires, diplômes, certificats de naissance, relevés de notes, cartes militaires et photographies personnelles. La preuve visuelle fournie montre au moins un document administratif universitaire en arabe avec cachet et signature ; l'analyse du corpus ne permet pas d'établir le nombre de personnes uniques, l'université d'origine de chaque fichier, l'exhaustivité des documents ni la validité des identifiants visibles. Aucun nom, numéro national, document, photographie ou autre donnée brute n'est reproduit dans le dépôt.
+
+  **Analyse approfondie des contenus accessibles :** Les catégories observées dans la publication et dans l'inventaire documentaire relient le corpus à des processus d'inscription, de scolarité, de certification et de gestion administrative universitaire. Elles impliquent des risques distincts : usurpation d'identité et fraude documentaire pour les pièces d'identité et certificats ; fraude académique ou ciblage d'étudiants pour les relevés et résultats ; ingénierie sociale et recrutement ciblé pour les photographies, coordonnées et documents administratifs ; ciblage de personnels ou d'étudiants soumis à des obligations militaires pour les cartes correspondantes. Les doublons exacts et les copies d'archive indiquent que le nombre de fichiers ne peut pas être assimilé au nombre de personnes ou de documents uniques.
+
+  **Couverture et limites de contenu :** l'intégralité des 5 540 fichiers a été inventoriée, hachée et classée par type ; les métadonnées PDF ont été contrôlées sur 2 257 fichiers. L'extraction sémantique exhaustive et l'OCR de l'ensemble des scans n'ont pas été retenus comme couverture validée, car une part importante du corpus est constituée d'images ou de PDF scannés et les essais locaux ne produisent pas une couverture fiable et homogène. L'analyse de contenu publiée est donc approfondie pour les catégories accessibles dans la publication, la preuve visuelle et la structure documentaire, mais ne prétend pas avoir lu chaque page ni chaque image. Aucun contenu personnel brut n'a été conservé ou publié.
+
+- **Observed :** six universités nommées, un fichier par université, publication présentée comme une libération après une fenêtre de discussion de 48 heures, corpus CSV analysé intégralement en lecture seule et publication complémentaire annonçant des documents et photographies.
+- **Assumption :** l'association avec des environnements de portails étudiants est plausible ; une copie historique, un prestataire, une sauvegarde ou une base agrégée restent possibles.
+- **Unknown :** vecteur et date d'accès, système source exact, méthode d'extraction, personnes uniques, doublons inter-fichiers, validité des mots de passe et sessions, impact opérationnel, confirmation officielle et identité réelle de l'auteur.
+- **Périmètre et limites :** les six CSV ont été contrôlés par empreinte, encodage, structure, volumes, largeurs et incohérences, sans exécuter de contenu actif. Les fichiers bruts restent hors dépôt et aucune donnée personnelle n'est publiée.
+- **Recommandations SOC/CTI :** préserver les journaux des portails, bases, IAM, SSO, messagerie et stockage ; réinitialiser les secrets potentiellement exposés ; vérifier les exports et connexions autour du 21 août ; segmenter les environnements étudiants, administratifs et de recherche.
+- **Décision de comptage :** fiche groupée comptée dans le corpus d'août 2026, car les six universités proviennent d'une même publication et d'un même corpus.
+
+@@
 ### 22 août 2026
 #### 🇲🇦 Maroc - RAMED (Régime d’Assistance Médicale)
 
@@ -1215,3 +1251,70 @@ last_checked_at: 2026-08-27T14:31:07
 * **Recommandations :**
   * Vérifier les journaux d'accès aux plateformes d'abonnement et les exports de données autour du 09 juin 2026.
   * Réinitialiser les sessions et renforcer la surveillance des comptes administratifs si une exposition est confirmée.
+
+### 20 août 2026
+#### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) - attribution non documenté dans les sources publiquese
+
+- **Date de publication initiale :** 20 août 2026 à 05:27 (horodatage affiché ; fuseau non indiqué)
+- **Date de découverte AFRINTEL :** 20 octobre 2026
+- **Acteur / Groupe :** TelephoneHooliganism (compte affiché dans la publication ; identité et affiliation attribuée à la publication)
+- **Secteur revendiqué :** Transport / Logistique / Livraison express
+- **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
+- **Statut :** Under Investigation
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 3 (potentiel)
+- **Type de source :** Forum cybercriminel et échantillons CSV fournis à AFRINTEL
+
+- **Description victime :** Yalidine El Djazair Service est une entreprise algérienne de courrier express, de livraison de colis, de logistique domestique, de livraison e-commerce et de recouvrement à la livraison. La publication associe cette entreprise à une base annoncée comme contenant environ **563 000 enregistrements**.
+
+- **Analyse :**
+
+  **Observed :** La publication du 20 août 2026 à 05:27, attribuée à TelephoneHooliganism, présente `www.yalidine.com` comme une base algérienne de **563 000 enregistrements**. Elle décrit trois ensembles : contacts, historique de réservations et tickets de support. Un message de modération affiché le même jour à 06:38 rappelle uniquement les règles de classement du forum ; il ne confirme ni Yalidine, ni les fichiers, ni une compromission.
+
+  AFRINTEL a examiné en lecture seule trois fichiers CSV locaux correspondant à ces trois ensembles : **50 lignes de contacts**, **20 lignes de réservations** et **20 lignes de tickets**. Les fichiers sont structurellement lisibles et totalisent **90 lignes tabulaires**, sans que ce total représente 90 personnes uniques. Les fichiers contiennent respectivement **34, 29 et 29 colonnes**. Les champs annoncés incluent notamment des coordonnées, des informations CRM, des réservations, des paiements, des tickets et des éléments de suivi client. Aucune donnée personnelle brute n'est reproduite dans cette fiche.
+
+  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres valeurs de pays sont principalement étrangères. Les villes de réservation observées ne sont pas algériennes. Les `contact_id` utilisés dans les réservations et les tickets ne correspondent pas aux identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets ne contiennent que **2 valeurs distinctes de `ticket_id`**. Les relations vers les réservations sont également incohérentes. Les colonnes d'e-mail et de téléphone des tickets sont vides, et plusieurs champs de contacts annoncés sont largement ou entièrement vides. Des problèmes de qualité ou d'encodage apparaissent dans certaines valeurs géographiques.
+
+  Les empreintes SHA-256 locales sont : `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51** ; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443** ; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
+
+  **Assumption :** Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication. Cette compatibilité est faible : les incohérences géographiques, relationnelles et de remplissage sont plus importantes que les éléments qui relient l'échantillon à Yalidine. L'échantillon peut être synthétique, mal attribué, issu d'un environnement multi-pays, incomplet ou construit à partir d'un modèle CRM générique.
+
+  Un lien avec le cas **Afribaba** du 20 août 2026 est possible uniquement au niveau de la campagne : même acteur affiché, même date de publication et catégories de données proches. Cela peut refléter une campagne ciblant plusieurs organisations algériennes ou la réutilisation d'un modèle de publication. Aucun identifiant, domaine, fichier ou marqueur technique commun n'a été observé ; le lien entre les deux cas n'est donc **pas établi** et ne doit pas entraîner une fusion des victimes.
+
+  **Unknown :** La provenance technique des fichiers, leur date d'extraction, leur authenticité, le nombre de personnes uniques, l'existence d'un accès non autorisé, la méthode d'obtention, l'exhaustivité de la base annoncée, l'impact opérationnel et toute confirmation par Yalidine ou une autorité ne sont pas renseignés dans les sources consultées.
+
+- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, avec contrôle de structure, volumes, champs vides, doublons, relations entre tables, plages temporelles et empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
+
+- **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
+
+- **Décision de comptage :** Fiche conservée dans le corpus d'octobre en raison de la publication observée et de l'échantillon fourni, mais **exclue du total canonique et des ventilations statistiques** jusqu'à corroboration de l'attribution.
+
+- **Sources / Éléments de preuve :** publication et réponse de modération fournies le 20 octobre 2026 ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
+
+### 26 août 2026 - intégré le 01 septembre 2026
+#### 🇿🇦 Afrique du Sud - Cartrack South Africa
+
+- **Date de l'incident :** 26 août 2026
+- **Date de communication publique :** 28 août 2026
+- **Mise à jour :** 10 septembre 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Télématique / Mobilité / Services automobiles
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** **Cartrack South Africa** est un fournisseur de **télématique automobile**, de géolocalisation, de récupération de véhicules volés et de gestion de flottes. Ses services combinent équipements embarqués, plateformes numériques et services opérationnels pour particuliers et entreprises. L'activité implique la gestion de données de véhicules, d'abonnements et de clients, sans que cela implique leur exposition dans chaque incident ([site officiel Cartrack](https://www.cartrack.co.za/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** Cartrack indique avoir découvert un ransomware sur certains systèmes le 26 août 2026, et évoque une possible publication d’informations personnelles. La revendication Dire Wolf publiée en septembre ne vaut pas attribution forensique officielle. Incident initial d’août.
+
+- **Sources de vérification complémentaires :** [Source 1](https://cartrack.co.za/platform/resources/news)
+
+- **Sources / Éléments de preuve :** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
+
+Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs affectés ont été isolés et la plateforme restaurée en cinq heures. Une mise à jour indique que des informations personnelles de certains clients avaient été consultées et pouvaient avoir été publiées sur un site à accès restreint. Le vecteur, l'opérateur et le volume exact restent inconnus.
+
+## Publications ransomware de septembre
+
+> La date indiquée est la date de la publication ou de l'observation dans le corpus source, pas nécessairement la date de compromission. Les listes ou revendications ransomware ne constituent pas à elles seules une confirmation de l'intrusion.

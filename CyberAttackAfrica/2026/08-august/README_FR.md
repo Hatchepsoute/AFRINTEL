@@ -1,546 +1,109 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Period](https://img.shields.io/badge/Period-August%202026-lightgrey)
-![Fiches](https://img.shields.io/badge/Fiches-30-critical)
-![Ransomware](https://img.shields.io/badge/Ransomware-17-red)
-![Data Leak](https://img.shields.io/badge/Data%20Leak-12-orange)
-![Access Sale](https://img.shields.io/badge/Access%20Sale-1-yellow)
-![Countries](https://img.shields.io/badge/Countries-10-blueviolet)
-
-# AFRINTEL : rapport CTI mensuel
-
-## Cyberattaques en Afrique : août 2026
-
-👉🏾 [Version anglaise](./README.md) · [Fiches victimes](./victims_FR.md) · [Statistiques](../../../statistics/2026/08-august/README_FR.md)
-
-## 1. Synthèse exécutive
-
-Le corpus AFRINTEL d’août 2026 comprend **30 cas ou observations documentés dans 10 pays** : **17 publications ou cas ransomware (56,7 %)**, **12 fuites de données (40,0 %)** et **1 vente d’accès (3,3 %)**. L’Afrique du Sud concentre **11 fiches (36,7 %)**, devant l’Égypte et l’Algérie avec **4** chacune, puis le Maroc avec **3**. Le gouvernement et l’administration représentent **7 fiches**, la finance et la banque **6**, et les ressources humaines / recrutement **3**. KRYBIT est le libellé d’acteur le plus fréquent, associé à **6 publications ransomware**. Ces proportions décrivent le corpus AFRINTEL et ne constituent pas une estimation de la fréquence réelle des cyberattaques par pays ou secteur.
-
-La maturité des preuves est contrastée : **13 fiches** portent le statut `Claim - Data Sample Published`, **12** le statut `Claim - Unverified`, **3** le statut `Data Fully Published` et **2** le statut `Victim Confirmed`. Le Furniture Bargaining Council a reconnu un chiffrement de serveurs et DC Partner a publiquement confirmé avoir subi une attaque ransomware. Les analyses consignées pour The Courier Guy, Daily Trust et le Conseil Gabonais des Chargeurs décrivent respectivement des données de paiement, un classeur de réinitialisation de comptes et des documents internes incluant des informations d’infrastructure. Les publications relatives à RAMED et à la DGSN/DGST exposent, dans les fichiers examinés, des données d’identité et des informations administratives sensibles.
-
-Le corpus comporte **12 fiches de moins qu’en juillet (-28,6 %)**. Les **17 fiches ransomware** sont rattachées au corpus d’août à partir de publications ou d’observations datées ; cela n’établit pas que chaque compromission sous-jacente s’est produite en août. **Cinq fuites de données publiées antérieurement ont été découvertes en août**, soit **5/30 fiches (16,7 % du corpus)** et **5/12 fuites de données (41,7 % de la catégorie Data Leak)**. Les rapports mensuels clôturés n’étant pas modifiés rétroactivement, cette différence mesure donc la collecte documentée et ne démontre pas une baisse équivalente des compromissions en Afrique. Les priorités opérationnelles sont la protection des identités, des données administratives et des paiements, ainsi que la maîtrise des accès aux bases et espaces documentaires.
-
-Les faits, sources et limites propres à chaque cas sont conservés dans le couple bilingue [victims_FR.md](./victims_FR.md) / [victims.md](./victims.md).
-
-### 1.1 Comparaison avec le mois précédent
-
-> Comparaison des corpus de collecte AFRINTEL, avec contrôle des nombres de fiches et des types dans les deux langues. Une variation du nombre de fiches documentées ne prouve pas, à elle seule, une variation du nombre réel de compromissions.
-
-| Indicateur | Juillet 2026 | Août 2026 | Évolution observée |
-|---|---|---|---|
-| Fiches documentées | 42 | 30 | -12 (-28,6 %) |
-| Ransomware | 18 | 17 | -1 (-5,6 %) |
-| Data Leak | 18 | 12 | -6 (-33,3 %) |
-| Access Sale | 6 | 1 | -5 (-83,3 %) |
-| DDoS | 0 | 0 | 0 (stable) |
-| Defacement | 0 | 0 | 0 (stable) |
-| Account Takeover | 0 | 0 | 0 (stable) |
-| System Intrusion | 0 | 0 | 0 (stable) |
-| Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 0 | 0 | 0 (stable) |
-
-La base de juillet provient de ses [fiches françaises](../07-july/victims_FR.md) et [anglaises](../07-july/victims.md) : 42 fiches, dont 18 ransomware, 18 fuites et 6 ventes d’accès. La comparaison porte sur ces valeurs structurées concordantes. Le corpus d’août comprend des fuites publiées antérieurement mais découvertes pendant le mois ; le tableau compare donc les corpus mensuels clôturés et ne constitue pas une série chronologique des seules dates d’intrusion.
-
-**Comparaison visuelle des corpus (█ = 1 fiche documentée) :**
-
-```text
-Juillet 2026 | ██████████████████████████████████████████ | 42
-Août 2026    | █████████████████████████████ | 29
-```
-
-## 2. Périmètre et méthode
-
-Le périmètre de veille couvre les 54 pays africains. Ce rapport retient les **30 fiches du dossier d’août**, après contrôle de parité FR/EN des champs structurés. Les secteurs sont normalisés une seule fois depuis la version française ; les mêmes données alimentent les deux rapports et les statistiques. Chaque événement reçoit un seul type principal parmi les neuf catégories AFRINTEL ; les effets secondaires ne créent pas de fiche supplémentaire. Les règles détaillées de période, de chronologie et de comptage sont présentées en section 12.
-
-### 2.1 Profil des preuves
-
-| Dimension | Valeur | Fiches | Part |
-|---|---|---|---|
-| Statut | Claim - Data Sample Published | 13 | 44,8 % |
-| Statut | Claim - Unverified | 12 | 40,0 % |
-| Statut | Data Fully Published | 3 | 10,3 % |
-| Statut | Victim Confirmed | 2 | 6,9 % |
-| **Total statut** |  | 30 | 100 % |
-| Confiance | Low | 8 | 26,7 % |
-| Confiance | Medium | 7 | 24,1 % |
-| Confiance | High | 13 | 44,8 % |
-| Confiance | Very High | 2 | 6,9 % |
-
-| **Total confiance** |  | 30 | 100 % |
-| Impact | Level 1 | 0 | 0,0 % |
-| Impact | Level 2 | 3 | 10,3 % |
-| Impact | Level 3 | 7 | 24,1 % |
-| Impact | Level 4 | 20 | 66,7 % |
-| **Total impact** |  | 30 | 100 % |
-
-**Répartition visuelle des preuves, de la confiance et de l’impact (█ = 1 fiche) :**
-
-```text
-Statut:
-  Échantillon publié               | █████████████ 13
-  Revendication non vérifiée       | ███████████ 11
-  Publication complète revendiquée | ███ 3
-  Victime confirmée                | ██ 2
-
-Confiance:
-  Low       | ███████ 7
-  Medium    | ███████ 7
-  High      | █████████████ 13
-  Very High | ██ 2
-
-Impact:
-  Level 1 |  0
-  Level 2 | ███ 3
-  Level 3 | ███████ 7
-  Level 4 | ████████████████████ 20
-```
-
-Le niveau de confiance porte sur l’évaluation de la fiche et n’est pas synonyme de confirmation par la victime. L’impact peut décrire un risque potentiel associé aux données ou à l’organisation ; il ne mesure pas une perte effectivement constatée. Pour le CGC, le champ structuré demeure `High`, même si l’analyse documentaire décrit une forte confiance dans l’origine des documents. RAMED reste inclus dans les comptes de type et de secteur, avec une confiance `High` et un impact `Level 4`.
-
-## 3. Vue globale
-
-| Pays | Occurrences | Barre |
-| :--- | ---: | :--- |
-| 🇿🇦 Afrique du Sud | 11 | ███████████ |
-| 🇪🇬 Égypte | 4 | ████ |
-| 🇩🇿 Algérie | 4 | ████ |
-| 🇲🇦 Maroc | 3 | ███ |
-| 🇰🇪 Kenya | 2 | ██ |
-| 🇳🇬 Nigeria | 2 | ██ |
-| 🇨🇲 Cameroun | 1 | █ |
-| 🇬🇦 Gabon | 1 | █ |
-| 🇱🇾 Libye | 1 | █ |
-| 🇲🇺 Maurice | 1 | █ |
-| **Total géographique** | **30** | - |
-
-```mermaid
-pie showData
-    title Occurrences géographiques par pays, août 2026
-    "Afrique du Sud" : 11
-    "Égypte" : 4
-    "Algérie" : 3
-    "Maroc" : 3
-    "Kenya" : 2
-    "Nigeria" : 2
-    "Cameroun" : 1
-    "Gabon" : 1
-    "Libye" : 1
-    "Maurice" : 1
-```
-
-```mermaid
-xychart-beta
-    title "Occurrences géographiques par pays: août 2026"
-    x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
-    y-axis "Occurrences" 0 --> 12
-    bar [11, 4, 3, 3, 2, 2, 1, 1, 1, 1]
-```
-
-Légende : ZA = Afrique du Sud, EG = Égypte, DZ = Algérie, MA = Maroc, KE = Kenya, NG = Nigeria, CM = Cameroun, GA = Gabon, LY = Libye, MU = Maurice.
-
-### Comparaison Ransomware et Fuite de données / Vente d'accès par pays
-
-Cette comparaison porte sur les **30 fiches** d’août : **17 fiches ransomware** et **13 fiches Fuite de données / Vente d'accès**. La barre bleue regroupe les 12 fuites et la vente d’accès afin de conserver une lecture comparable à juillet. Chaque fiche est rattachée à un seul pays dans ce rapport.
-
-**Légende visuelle :** 🟧 Ransomware | 🟦 Fuite de données / Vente d'accès
-
-| Code | Pays | Ransomware | Barre | Fuite / vente d'accès | Barre |
-|---|---|---:|---|---:|---|
-| `ZA` | Afrique du Sud | **9** | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 | **2** | 🟦🟦 |
-| `EG` | Égypte | **2** | 🟧🟧 | **2** | 🟦🟦 |
-| `DZ` | Algérie | **0** | - | **3** | 🟦🟦🟦 |
-| `MA` | Maroc | **1** | 🟧 | **2** | 🟦🟦 |
-| `KE` | Kenya | **0** | - | **2** | 🟦🟦 |
-| `NG` | Nigeria | **2** | 🟧🟧 | **0** | - |
-| `CM` | Cameroun | **1** | 🟧 | **0** | - |
-| `GA` | Gabon | **1** | 🟧 | **0** | - |
-| `LY` | Libye | **0** | - | **1** | 🟦 |
-| `MU` | Maurice | **1** | 🟧 | **0** | - |
-|  | **Total géographique** | **17** |  | **12** |  |
-
-```mermaid
-xychart-beta
-    title "Ransomware et Fuite de données / Vente d'accès par pays: août 2026"
-    x-axis ["ZA", "EG", "DZ", "MA", "KE", "NG", "CM", "GA", "LY", "MU"]
-    y-axis "Occurrences" 0 --> 10
-    bar [9, 2, 0, 1, 0, 2, 1, 1, 0, 1]
-    bar [2, 2, 3, 2, 2, 0, 0, 0, 1, 0]
-```
-
-**Légende des séries :** première série = 🟧 Ransomware | deuxième série = 🟦 Fuite de données / Vente d'accès.
-
-**Légende pays :** ZA = Afrique du Sud | EG = Égypte | DZ = Algérie | MA = Maroc | KE = Kenya | NG = Nigeria | CM = Cameroun | GA = Gabon | LY = Libye | MU = Maurice.
-
-> Le total analytique reste de **30 incidents uniques** : 17 Ransomware, 12 Data Leak et 1 Access Sale. La barre bleue totalise 13 car elle regroupe les deux catégories non ransomware.
-
-### Ransomware par pays
-
-```mermaid
-xychart-beta
-    title "Ransomware par pays: août 2026"
-    x-axis ["ZA", "EG", "MA", "NG", "CM", "GA", "MU"]
-    y-axis "Ransomware" 0 --> 10
-    bar [9, 2, 1, 2, 1, 1, 1]
-```
-
-Légende : ZA = Afrique du Sud, EG = Égypte, MA = Maroc, NG = Nigeria, CM = Cameroun, GA = Gabon, MU = Maurice.
-
-### Répartition géographique des fuites de données et ventes d'accès
-
-| Rang | Pays | Occurrences | Barre |
-|---:|---|---:|---|
-| 1 | 🇩🇿 Algérie | **3** | ███ |
-| 2 | 🇿🇦 Afrique du Sud | **2** | ██ |
-| 2 | 🇪🇬 Égypte | **2** | ██ |
-| 2 | 🇲🇦 Maroc | **2** | ██ |
-| 2 | 🇰🇪 Kenya | **2** | ██ |
-| 6 | 🇱🇾 Libye | **1** | █ |
-| **Total** |  | **12** |  |
-
-```mermaid
-xychart-beta
-    title "Répartition géographique des fuites et ventes d'accès: août 2026"
-    x-axis ["DZ", "ZA", "EG", "MA", "KE", "LY"]
-    y-axis "Occurrences" 0 --> 4
-    bar [3, 2, 2, 2, 2, 1]
-```
-
-Légende : DZ = Algérie, ZA = Afrique du Sud, EG = Égypte, MA = Maroc, KE = Kenya, LY = Libye.
-
-### Répartition géographique par région
-
-| Région | Pays inclus | Occurrences | Ransomware | Fuites et ventes d'accès | Répartition |
-|---|---|---:|---:|---:|---|
-| **Afrique du Nord** | 🇩🇿 Algérie, 🇪🇬 Égypte, 🇲🇦 Maroc, 🇱🇾 Libye | **11** | 3 | 8 | 🟧🟧🟧 🟦🟦🟦🟦🟦🟦🟦🟦 |
-| **Afrique australe** | 🇿🇦 Afrique du Sud | **11** | 9 | 2 | 🟧🟧🟧🟧🟧🟧🟧🟧🟧 🟦🟦 |
-| **Afrique de l'Ouest** | 🇳🇬 Nigeria | **2** | 2 | 0 | 🟧🟧 |
-| **Afrique centrale** | 🇨🇲 Cameroun, 🇬🇦 Gabon | **2** | 2 | 0 | 🟧🟧 |
-| **Afrique de l'Est** | 🇰🇪 Kenya | **2** | 0 | 2 | 🟦🟦 |
-| **Océan Indien** | 🇲🇺 Maurice | **1** | 1 | 0 | 🟧 |
-| **Total** | **10 pays** | **30** | **17** | **13** | *🟧 Ransomware | 🟦 Fuites et ventes d'accès* |
-
-```mermaid
-xychart-beta
-    title "Occurrences géographiques par région: août 2026"
-    x-axis ["Afrique du Nord", "Afrique australe", "Afrique de l'Ouest", "Afrique centrale", "Afrique de l'Est", "Océan Indien"]
-    y-axis "Occurrences" 0 --> 12
-    bar [11, 11, 2, 2, 2, 1]
-```
-
-La ventilation géographique compte 30 occurrences, identiques au nombre de fiches, car chaque fiche reçoit un seul pays de rattachement. L’Afrique du Nord et l’Afrique australe concentrent ensemble **23 fiches sur 30 (76,7 %)**. La barre « fuites et ventes » regroupe 12 fuites et une vente d’accès.
-
-## 4. Analyse par type d’incident
-
-| Type | Incidents | Part |
-| :--- | ---: | ---: |
-| 🟧 Ransomware | 17 | 58,6 % |
-| 🟦 Fuite de données | 12 | 40,0 % |
-| 🟪 Vente d’accès | 1 | 3,4 % |
-| **Total** | **30** | **100 %** |
-
-```mermaid
-pie showData
-    title Répartition des types d'incidents: août 2026
-    "Ransomware" : 17
-    "Fuites de données" : 11
-    "Ventes d'accès" : 1
-```
-
-**Convention couleur :** 🟧 Ransomware | 🟦 Fuite de données | 🟪 Vente d'accès.
-
-### 4.1 Ransomware
-
-Les **17 fiches ransomware** concernent sept pays et huit libellés d’acteur. Elles documentent des publications dans un contexte d’extorsion. Deux victimes ont publiquement confirmé un incident ransomware dans ce corpus : le Furniture Bargaining Council et DC Partner. Le chiffrement de serveurs est explicitement confirmé uniquement par le Furniture Bargaining Council.
-
-| Pays | Victime | Groupe | Observation / limite |
-|---|---|---|---|
-| 🇿🇦 Afrique du Sud | Buzz Trading 104 | KRYBIT | Fiche observée ; aucun échantillon fourni |
-| 🇳🇬 Nigeria | ASHA Microfinance Bank | KRYBIT | Publication examinée, avec limites de couverture |
-| 🇿🇦 Afrique du Sud | DC Partner | KRYBIT | Incident ransomware confirmé par la victime ; systèmes annoncés opérationnels ; portée des données inconnue |
-| 🇿🇦 Afrique du Sud | Sure Travel | Orova | Fiche vérifiée ; référence homonyme écartée |
-| 🇪🇬 Égypte | ADG Healthcare | Orova | Fiche vérifiée ; divergence de domaine documentée |
-| 🇿🇦 Afrique du Sud | Serengeti Golf and Wildlife Estate | KRYBIT | Échantillon documentaire examiné |
-| 🇳🇬 Nigeria | Daily Trust | Panzer | Classeur examiné ; validité des valeurs inconnue |
-| 🇲🇦 Maroc | AVANTA Maroc | thegentlemen | Publication observée, sans échantillon fourni |
-| 🇿🇦 Afrique du Sud | The Courier Guy | medusalocker | Échantillons de paiements examinés |
-| 🇲🇺 Maurice | SpearFin Ltd | incransom | Aperçus visibles ; fichiers originaux indisponibles |
-| 🇿🇦 Afrique du Sud | Babcock Africa | thegentlemen | Publication observée, sans données fournies |
-| 🇨🇲 Cameroun | CCA Bank | Everest | Publication et inventaire ; examen brut non exhaustif |
-| 🇿🇦 Afrique du Sud | Furniture Bargaining Council | Deadlock | Chiffrement confirmé par la victime ; corpus examiné |
-| 🇪🇬 Égypte | Mima Foods | KRYBIT | Échéance dépassée, sans données accessibles au contrôle rapporté |
-| 🇬🇦 Gabon | Conseil Gabonais des Chargeurs (CGC) | KRYBIT | Documents internes et informations techniques examinés |
-| 🇿🇦 Afrique du Sud | Hungry Lion | medusalocker | Aucun échantillon ; portée géographique ambiguë |
-| 🇿🇦 Afrique du Sud | Rohloff Group | incransom | Divulgation annoncée ; aucun échantillon fourni |
-
-**Publications accompagnées de données examinées.** Les fiches de six victimes indiquent `sample-reviewed` : ASHA Microfinance Bank, Serengeti, Daily Trust, The Courier Guy, le FBC et le CGC. La nature et la couverture des analyses diffèrent. Chez ASHA, le dossier comprend **1 498 fichiers**, dont **1 101 remplis d’octets nuls** ; les **14,6 millions de lignes physiques** des tables ne sont pas un décompte de clients. L’analyse textuelle a échantillonné **5 164 lignes**. Chez Serengeti, les **21 artefacts** portent notamment sur des plannings, des achats et des réservations datés de **2017 à 2020** ; ils ne suffisent pas à établir un accès récent.
-
-L’échantillon Daily Trust comprend **443 enregistrements** dans sa feuille principale, dont **438 champs de mot de passe renseignés**, et **444 adresses distinctes du domaine cible** sur les deux feuilles. La validité actuelle de ces valeurs n’a pas été établie. The Courier Guy comporte **1 269 lignes de paiement**, **236 comptes distincts** et des calendriers locatifs ; ce contenu justifie une vigilance spécifique contre la substitution de coordonnées de paiement. Au FBC, **69 artefacts** comprennent des documents financiers, fiscaux, RH et d’identité. Le CGC expose une documentation couvrant plusieurs directions et un état de son infrastructure Active Directory, sans démontrer l’exécution d’un ransomware dans ces documents.
-
-**Aperçus et inventaires.** SpearFin présente des aperçus de documents d’identité, KYC et d’investissement, avec une revendication de **416 Go**. L’analyse est limitée aux éléments visibles ; les fichiers originaux n’étaient pas disponibles. CCA Bank est publiée par Everest ; l’inventaire technique disponible décrit environ **19,04 Go**, dont **11 837 fichiers** et **17 archives imbriquées** dont les contenus ne sont pas comptabilisés. Cet inventaire ne constitue pas une analyse exhaustive des fichiers bruts. La présence de tables volumineuses n’établit pas un nombre total de clients distincts.
-
-**Échéances et divulgation.** Pour Mima Foods, le suivi consigné le **12 septembre** indique une échéance dépassée sans données publiquement accessibles lors du dernier contrôle rapporté. La date exacte de l’échéance et l’heure du contrôle ne sont pas précisées. La cause reste inconnue : négociation ou accord avec ou sans paiement, transfert ou revente, report, indisponibilité ou revendication inexacte sont des hypothèses non exhaustives. Aucune n’est établie. Pour DC Partner, la confirmation publique du ransomware est désormais intégrée, mais la nature et l’étendue d’une éventuelle divulgation restent inconnues. Pour ASHA, l’échec des négociations est mentionné dans les informations de provenance du corpus, sans corroboration publique indépendante ; négociation, paiement et revente restent `unknown`.
-
-Les états « compte à rebours actif » de Daily Trust et de CCA Bank se rapportent aux observations datées dans leurs fiches, respectivement au suivi du **20 août** et à l’observation du **20 août** ; ils ne décrivent pas nécessairement l’état actuel. Le compte à rebours de Daily Trust était visible le 11 août. Pour Rohloff Group, les **536 Go**, **103 196 fichiers** et **30 805 dossiers** restent annoncés sans échantillon fourni. Les autres publications sans échantillon ne permettent pas de préciser les données obtenues ou les conséquences opérationnelles.
-
-### 4.2 Fuites de données
-
-| Pays | Fiches | Cibles documentées |
-|---|---|---|
-| 🇿🇦 Afrique du Sud | 2 | SARB; mpowa.mobi |
-| 🇪🇬 Égypte | 2 | Portail des services locaux égyptiens; EFA |
-| 🇩🇿 Algérie | 2 | DGRSDT; Afribaba |
-| 🇲🇦 Maroc | 2 | RAMED; DGSN / DGST |
-| 🇰🇪 Kenya | 2 | Plateforme PAYGO non identifiée; SnapStar Talent |
-| 🇱🇾 Libye | 1 | Albarq Media Service |
-| **Total** | **11** |  |
-
-**Identités et dossiers administratifs.** Le fichier principal RAMED contient **1 098 685 enregistrements**, dont **666 103** avec un champ CIN renseigné ; **sept portraits** correspondent à des entrées du corpus fourni. Cela ne valide ni les **plus de 17 millions d’entrées** revendiquées ni la présence de photographies pour l’ensemble. La base principale DGSN/DGST comprend **70 381 enregistrements**, sans doublon de ligne exact. Les trois fichiers complémentaires sont hétérogènes : **972/1 456** lignes du fichier présenté comme DGST et **18/21** lignes de `BIG HEADS` se recoupent exactement avec le fichier principal sur la paire normalisée nom+CIN, tandis que le fichier complémentaire présenté comme DGSN ne produit aucun recoupement exact sur cette paire, malgré **209 CIN** communs. Les PPR ne concordent pas sur les correspondances nom+CIN observées. Ces éléments soutiennent l’association d’une partie significative du corpus à l’écosystème DGSN/DGST, mais ne permettent pas de traiter les quatre fichiers comme un export homogène d’un même système. Le **27 août**, le pôle DGSN-DGST a officiellement démenti toute intrusion dans ses systèmes et a attribué les données publiées à d’anciennes bases gérées par des assureurs et organismes de couverture sociale ou de santé. AFRINTEL maintient donc la provenance directe d’un SI DGSN/DGST en **Unknown / Disputed** et considère l’hypothèse d’un agrégat ou d’un repackaging comme plausible, non démontrée.
-
-Les publications antérieures découvertes en août restent pertinentes pour la protection des personnes : **9 938 lignes** dans l’échantillon du portail des services locaux égyptiens, **1 000 enregistrements** dans le CSV DGRSDT et **884 lignes** après déduplication de deux extractions EFA. Ces observations concernent des données d’identité, administratives, universitaires ou sportives. Elles ne confirment pas les volumes globaux annoncés, ni une intrusion survenue en août.
-
-**Recrutement et cloud.** L’export mpowa.mobi examiné comprend **2 585 CV**, **26 675 points de géolocalisation**, **19 comptes utilisateurs** et **3 entrées de clés API**. Les décomptes sont établis dans l’export ; la validité et les privilèges des clés ne se déduisent pas de leur apparence. SnapStar Talent comporte **300 candidatures correspondant à 207 profils** et six valeurs d’employeur. Les deux représentations CSV/TXT concordent, mais il s’agit des candidatures les plus récentes, sans échantillonnage aléatoire. Les liens de CV et d’entretien vidéo n’ont pas été consultés ; leur accessibilité actuelle et les volumes globaux proposés restent inconnus. Le cas PAYGO décrit **27 526 lignes** associées à des opérations kényanes, sans identification certaine de l’opérateur.
-
-**Attributions à préciser.** Afribaba associe une offre de **642 000 contacts** à un CSV de **20 lignes** ne contenant que deux identifiants de commande distincts et aucune ligne d’expédition algérienne. Son rattachement à l’Algérie reprend la cible de la publication, sans valider l’origine géographique de l’échantillon. La publication SARB décrit des catégories de données et fournit des liens dont le contenu n’a pas été examiné. Albarq repose sur **18 lignes visibles** ; le fichier original n’était pas disponible. Ces limites empêchent de traiter tous les cas comme des extractions complètes authentifiées.
-
-### 4.3 Vente d’accès
-
-Une seule offre est recensée, attribuée à **Florence**, visant le **ministère algérien du Commerce**. La publication du **5 août** propose un accès VPN pour **500 USD**, sans montrer de point d’accès, de compte, de privilèges ou de preuve de fonctionnement. Le fait observé est l’offre de vente. L’accès effectif à l’environnement du ministère et une éventuelle utilisation ultérieure restent inconnus. Le cas conserve le type `Access Sale` et le statut `Claim - Unverified`.
-
-## 5. Secteurs les plus exposés
-
-| Secteur normalisé | Fiches | Part | Organisations / contextes | Barre |
-|---|---:|---:|---|---|
-| Gouvernement / Administration | 7 | 23,3 % | Portail des services locaux égyptiens; DGRSDT; Ministère du Commerce; RAMED; DGSN / DGST; Conseil Gabonais des Chargeurs (CGC) | ██████ |
-| Finance / Banque | 6 | 20,7 % | SARB; ASHA Microfinance Bank; DC Partner; Plateforme PAYGO non identifiée; SpearFin Ltd; CCA Bank | ██████ |
-| Ressources humaines / Recrutement | 3 | 10,3 % | AVANTA Maroc; SnapStar Talent; mpowa.mobi | ███ |
-| Restauration / Restauration rapide | 2 | 6,9 % | Hungry Lion; Rohloff Group | ██ |
-| E-commerce / Retail | 1 | 3,4 % | Afribaba | █ |
-| Ingénierie / Construction | 1 | 3,4 % | Babcock Africa | █ |
-| Industrie agroalimentaire | 1 | 3,4 % | Mima Foods | █ |
-| Santé / Médical | 1 | 3,4 % | ADG Healthcare | █ |
-| Relations sociales / Gouvernance sectorielle | 1 | 3,4 % | Furniture Bargaining Council | █ |
-| Médias / Édition | 1 | 3,4 % | Daily Trust | █ |
-| Fabrication de plastiques / Articles ménagers | 1 | 3,4 % | Buzz Trading 104 | █ |
-| Immobilier | 1 | 3,4 % | Serengeti Golf and Wildlife Estate | █ |
-| Sports / Fédérations | 1 | 3,4 % | EFA | █ |
-| Télécommunications | 1 | 3,4 % | Albarq Media Service | █ |
-| Transport / Logistique | 1 | 3,4 % | The Courier Guy | █ |
-| Voyage / Événementiel | 1 | 3,4 % | Sure Travel | █ |
-| **Total** | **30** | 100 % |  |  |
-
-Barres sectorielles : **█ = 1 fiche** attribuée au secteur normalisé.
-
-```mermaid
-xychart-beta
-    title "Fiches par secteur normalisé: août 2026"
-    x-axis ["GOV", "FIN", "HR", "REST", "ECOM", "ENG", "FOOD", "HLTH", "LAB", "MEDIA", "PLAST", "RE", "SPORT", "TEL", "TRANS", "TRAVEL"]
-    y-axis "Fiches" 0 --> 7
-    bar [6, 6, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-```
-
-**Codes secteurs :** GOV = Gouvernement / Administration ; FIN = Finance / Banque ; HR = Ressources humaines / Recrutement ; REST = Restauration ; ECOM = E-commerce ; ENG = Ingénierie ; FOOD = Agroalimentaire ; HLTH = Santé ; LAB = Relations sociales / gouvernance ; MEDIA = Médias ; PLAST = Plastiques ; RE = Immobilier ; SPORT = Sports ; TEL = Télécommunications ; TRANS = Transport ; TRAVEL = Voyage.
-
-Le gouvernement et la finance arrivent en tête avec six fiches chacun. Les trois fiches de ressources humaines / recrutement forment le troisième groupe. Les douze autres secteurs comptent une fiche chacun.
-
-La normalisation rattache la SARB, la microfinance, la distribution de paiements, le financement PAYGO et l’administration de fonds à **Finance / Banque**. La DGRSDT et le CGC relèvent de **Gouvernement / Administration** ; mpowa.mobi est classé dans **Ressources humaines / Recrutement** en raison de sa fonction principale de service d’emploi des jeunes, malgré son rattachement à une initiative publique. ADG Healthcare relève de **Santé / Médical**, avec une activité pharmaceutique. Le FBC reste dans les relations sociales et la gouvernance sectorielle, sans être compté comme fabricant de meubles.
-
-La concentration gouvernementale et financière atteint **12 fiches sur 29 (41,4 %)**. Les risques les mieux documentés portent sur l’exploitation secondaire de données d’identité, de personnel, de paiement et de procédures internes. Les activités critiques décrites pour Babcock Africa ou les systèmes de point de vente cités pour Hungry Lion justifient des vérifications ciblées, mais aucune perturbation de ces environnements n’est établie dans les fiches.
-
-## 6. Acteurs et sources les plus présents
-
-| Acteur / auteur | Type | Fiches | Cibles |
-|---|---|---|---|
-| KRYBIT | Ransomware | 6 | Buzz Trading 104 (ZA); ASHA Microfinance Bank (NG); DC Partner (ZA); Serengeti Golf and Wildlife Estate (ZA); Mima Foods (EG); Conseil Gabonais des Chargeurs (CGC) (GA) |
-| Orova | Ransomware | 2 | Sure Travel (ZA); ADG Healthcare (EG) |
-| exfilar | Data Leak | 2 | mpowa.mobi (ZA); SnapStar Talent (KE) |
-| incransom | Ransomware | 2 | SpearFin Ltd (MU); Rohloff Group (ZA) |
-| medusalocker | Ransomware | 2 | The Courier Guy (ZA); Hungry Lion (ZA) |
-| thegentlemen | Ransomware | 2 | AVANTA Maroc (MA); Babcock Africa (ZA) |
-| Deadlock | Ransomware | 1 | Furniture Bargaining Council (ZA) |
-| Everest | Ransomware | 1 | CCA Bank (CM) |
-| Florence | Access Sale | 1 | Ministère du Commerce (DZ) |
-| JBT2026 | Data Leak | 1 | RAMED (MA) |
-| JabaR00t | Data Leak | 1 | DGSN / DGST (MA) |
-| NullSec Nigeria | Data Leak | 1 | SARB (ZA) |
-| OriginalCrazyOldFart | Data Leak | 1 | Plateforme PAYGO non identifiée (KE) |
-| Panzer | Ransomware | 1 | Daily Trust (NG) |
-| R3D3MPTION | Data Leak | 1 | Portail des services locaux égyptiens (EG) |
-| Revesky | Data Leak | 1 | EFA (EG) |
-| Richard2002 | Data Leak | 1 | Albarq Media Service (LY) |
-| TelephoneHooliganism | Data Leak | 1 | Afribaba (DZ) |
-| anisanas2 | Data Leak | 1 | DGRSDT (DZ) |
-| **Total** |  | **30** |  |
-
-**Acteurs associés à plusieurs fiches :**
-
-```mermaid
-xychart-beta
-    title "Libellés d’acteurs associés à plusieurs fiches: août 2026"
-    x-axis ["KRYBIT", "Orova", "exfilar", "incransom", "medusalocker", "thegentlemen"]
-    y-axis "Fiches" 0 --> 7
-    bar [6, 2, 2, 2, 2, 2]
-```
-
-Les 13 autres libellés apparaissent une fois chacun et figurent dans le tableau complet.
-
-Codes pays : voir la légende ISO dans le tableau des pays.
-
-Les **19 libellés** correspondent aux auteurs ou groupes associés aux publications, sans démontrer 19 équipes opérationnelles indépendantes. La casse `krybit` / `KRYBIT` est harmonisée pour le comptage. `JBT2026` est compté pour RAMED ; dans le cas DGSN/DGST, la publication attribue l’action à `JabaR00t` et cite `JBT2026` comme relais. Ces deux rôles ne sont pas fusionnés. `OriginalCrazyOldFart` est un republicateur, sans intrusion revendiquée dans la fiche PAYGO. Le FBC confirme l’incident, sans attribuer techniquement l’attaque à Deadlock.
-
-KRYBIT apparaît dans plusieurs secteurs et quatre pays : Afrique du Sud, Nigeria, Égypte et Gabon. exfilar est associé aux publications mpowa.mobi et SnapStar Talent. Ces rapprochements décrivent des libellés communs et des thèmes de publication ; ils ne prouvent pas un même accès initial, un partage d’infrastructure ou une campagne unique.
-
-### 6.1 Lecture par pays des observations du corpus
-
-Cette lecture résume les signaux présents dans les **30 fiches collectées**. Elle ne constitue ni un classement de la cybersécurité des États, ni une estimation du taux réel d’attaque par pays.
-
-| Pays | Signal principal observé dans le corpus | Limitation principale |
-|---|---|---|
-| 🇿🇦 Afrique du Sud | Deux incidents ransomware confirmés par les victimes ; plusieurs expositions de données financières, RH ou opérationnelles | Forte représentation dans le corpus, sans dénominateur national permettant d’inférer un risque pays |
-| 🇪🇬 Égypte | Données administratives et sportives examinées ; deux publications ransomware | Peu d’éléments techniques publics sur les chaînes d’intrusion |
-| 🇩🇿 Algérie | Dossiers de chercheurs examinés ; offre de vente d’accès ; fuite Afribaba à attribution limitée | Origine et portée de plusieurs jeux restent incomplètement établies |
-| 🇲🇦 Maroc | Données d’identité et administratives sensibles ; publication RAMED ; corpus DGSN/DGST | Provenance directe des SI officiellement contestée ; hétérogénéité inter-fichiers compatible avec un agrégat ou repackaging, sans preuve définitive |
-| 🇰🇪 Kenya | Données de financement et de recrutement | Identification et périmètre exacts de la plateforme PAYGO restent incomplets |
-| 🇳🇬 Nigeria | Corpus financier ASHA et classeur Daily Trust | Portée et validité actuelle de certaines valeurs restent inconnues |
-| 🇨🇲 Cameroun | Inventaire associé à CCA Bank | Authenticité et portée complètes non établies |
-| 🇬🇦 Gabon | Documents métiers et informations d’infrastructure du CGC | Chaîne d’intrusion et impact opérationnel non démontrés |
-| 🇱🇾 Libye | Extrait limité de données d’abonnement Albarq | Fichier original et volume global non disponibles |
-| 🇲🇺 Maurice | Aperçus KYC et d’investissement SpearFin | Fichiers originaux indisponibles et volume revendiqué non vérifié |
-
-### 6.2 Dossiers à surveiller
-
-Les cinq cas suivants sont retenus parmi les fiches d’impact **Level 4**, avec confirmation par la victime ou confiance **High / Very High**. Cette sélection n’est pas un classement exhaustif de gravité.
-
-| Cas | Fondement de la priorité | Conséquence défensive |
-|---|---|---|
-| Furniture Bargaining Council | Victim Confirmed, Very High ; chiffrement reconnu et corpus sensible examiné | Coordonner restauration, investigation et protection des personnes concernées |
-| mpowa.mobi | Data Fully Published, Very High ; CV, géolocalisation et entrées de clés API présents dans l’export | Corriger les accès aux données et qualifier les clés exposées |
-| DGSN / DGST | Data Fully Published au sens de la publication revendiquée ; High pour l’association d’une partie significative du corpus, mais recoupements inter-fichiers hétérogènes et provenance directe des SI officiellement contestée | Protéger les personnels contre l’usurpation tout en traitant la provenance et l’hypothèse de repackaging comme des questions ouvertes |
-| Daily Trust | Claim - Data Sample Published, High ; classeur de réinitialisation de comptes | Identifier les comptes représentés et sécuriser leur cycle d’authentification |
-| Conseil Gabonais des Chargeurs | Claim - Data Sample Published, High ; documents métiers et informations d’infrastructure | Réduire l’exposition documentaire et revoir les accès privilégiés |
-
-## 7. Tendances clés et lacunes de renseignement
-
-### Tendances observées
-
-Les documents examinés chez The Courier Guy, le FBC, le CGC et ASHA associent des données administratives à des informations financières, RH ou techniques. Une publication de données peut donc créer plusieurs risques secondaires, même lorsque le mode d’acquisition reste inconnu. Les cas RAMED, DGSN/DGST, DGRSDT et EFA illustrent la sensibilité durable des identifiants et documents administratifs. Les publications mpowa.mobi et SnapStar Talent montrent également l’intérêt des acteurs pour les données de candidature et les ressources cloud ; le recours à un même vecteur n’est pas démontré.
-
-Les écarts entre volume annoncé et couverture examinée constituent un autre constat transversal : fichiers nuls chez ASHA, identifiants de commande répétés chez Afribaba, candidatures multiples par profil chez SnapStar Talent et recoupements **partiels et hétérogènes** entre les fichiers DGSN/DGST. Un volume publié ne permet pas, seul, de compter les personnes touchées. Le cas DGSN/DGST rappelle qu’un corpus peut contenir des données authentiquement liées à une population sans provenir pour autant du système auquel elles sont associées. Dans sa déclaration du 27 août, le pôle DGSN-DGST a nié toute intrusion directe. Les différences de structure et d’identifiants entre les fichiers sont compatibles avec une agrégation ou un repackaging, mais ne suffisent pas à l’établir.
-
-### Comparaison factuelle avec juillet 2026
-
-Le tableau de comparaison en section 1.1 montre une baisse de **42 à 30 fiches (-28,6 %)**, principalement liée au recul des fuites documentées (18 à 12) et des ventes d’accès (6 à 1). Les fiches ransomware passent de 18 à 17 ; les **17 fiches ransomware sont rattachées au corpus d’août selon leurs publications ou observations datées**, sans que la chronologie technique de chaque accès soit établie. Cinq fuites antérieures ont été découvertes en août et demeurent dans le corpus mensuel clôturé. Ces chiffres comparent les collectes AFRINTEL, et non le nombre réel de compromissions survenues chaque mois.
-
-
-```mermaid
-xychart-beta
-    title "Incidents documentés: juillet et août 2026"
-    x-axis ["JUIL", "AOÛ"]
-    y-axis "Fiches" 0 --> 45
-    bar [42, 29]
-```
-
-**Légende temporelle :** JUIL = juillet 2026 | AOÛ = août 2026.
-### Lacunes de renseignement
-
-| Lacune prioritaire | Effet sur l’évaluation | Éléments nécessaires |
-|---|---|---|
-| Origine précise des corpus CCA Bank, Afribaba et du portail égyptien | Limite l’attribution au système et la validation des volumes | Marqueurs de provenance cohérents, métadonnées et réponse de l’organisation |
-| Validité actuelle des valeurs Daily Trust et des accès liés aux plateformes cloud | Empêche de conclure à un accès exploitable aujourd’hui | Vérification interne par les responsables, journaux IAM et historique de révocation |
-| Portée PAYGO et Hungry Lion | Limite l’identification de l’entité et des pays réellement concernés | Identification de l’opérateur, du système et des données propres à chaque pays |
-| Échéance Mima Foods | Ne permet pas d’expliquer l’absence de publication accessible | Observation publique datée de la fiche et d’un éventuel changement de divulgation |
-| Chaînes d’intrusion et remédiation des cas ransomware | Empêche une attribution technique et une cartographie ATT&CK complète | Rapport DFIR, chronologie technique, journaux et notification détaillée de la victime |
-
-Les fiches consultées ne contiennent pas de rapport DFIR public détaillant les chaînes d’intrusion des cas ransomware. Cette visibilité limitée constitue une lacune majeure pour l’accès initial, l’exfiltration et la remédiation. Les observations des sites de fuite et les analyses d’échantillons réduisent certaines inconnues sur les données divulguées, sans remplacer ces éléments techniques. Le silence public d’une organisation ne prouve ni paiement, ni dissimulation, ni absence d’incident.
-
-## 8. Correspondances contextuelles MITRE ATT&CK (hypothèses)
-
-Les références suivantes sont uniquement des **hypothèses analytiques destinées à orienter la défense**. Elles ne démontrent pas que les acteurs ont employé ces techniques. Les faits cités comme fondement peuvent être observés ou confirmés, mais leur association à MITRE ATT&CK reste hypothétique en l’absence de rapports DFIR établissant les chaînes techniques.
-
-| Phase hypothétique | Technique envisagée | Fait source et limite de l’hypothèse |
-|---|---|---|
-| Impact | [T1486 : Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | FBC : le chiffrement de serveurs est confirmé par la victime ; l’association à T1486 reste une hypothèse, car aucun logiciel ni déroulement technique précis n’est établi |
-| Collecte | [T1213.006 : Databases](https://attack.mitre.org/techniques/T1213/006/) | mpowa.mobi : export Firebase examiné ; SnapStar Talent : données structurées examinées. La méthode de collecte et l’accès Firestore ne sont pas établis indépendamment |
-| Collecte | [T1530 : Data from Cloud Storage](https://attack.mitre.org/techniques/T1530/) | PAYGO : bucket présenté comme exposé ; SnapStar Talent : liens de documents cloud observés mais non consultés. L’utilisation de T1530 par les acteurs n’est pas démontrée |
-| Accès initial | [T1078 : Valid Accounts](https://attack.mitre.org/techniques/T1078/) | Offre VPN algérienne et éventuelle réutilisation des valeurs Daily Trust : scénario défensif uniquement ; aucun emploi réussi de comptes valides n’est démontré |
-
-La présence d’un artefact PowerShell ou de diagnostics Active Directory dans le corpus CGC ne démontre pas une exécution malveillante. Aucun identifiant ATT&CK de cette section ne constitue une attribution technique aux acteurs.
-
-## 9. Recommandations par type d’organisation
-
-| Organisations | Action proposée à partir des cas du corpus |
-|---|---|
-| Administrations, organismes de recherche et fédérations | Restreindre les exports de dossiers d’identité, examiner les accès aux répertoires documentaires et préparer la protection des personnes dont les données sont effectivement représentées |
-| Banques, microfinance et administrateurs de fonds | Cartographier les données KYC, de crédit et de paiement ; vérifier tout changement de coordonnées bancaires par un canal indépendant |
-| Plateformes de recrutement et de services jeunesse | Appliquer des règles d’accès restrictives aux bases et documents, séparer les environnements et révoquer les accès documentaires devenus inutiles |
-| Médias | Remplacer la circulation de mots de passe dans des fichiers par un processus de réinitialisation contrôlé ; examiner les comptes concernés et les sessions |
-| Logistique, immobilier et organismes de gouvernance sectorielle | Contrôler les accès aux calendriers de paiement, dossiers fournisseurs et documents RH ; renforcer la validation des demandes financières |
-| Industrie et restauration | Vérifier les frontières entre environnements bureautiques, systèmes de production et points de vente, à titre préventif lorsque l’exposition n’est pas démontrée |
-
-Pour Firebase, la documentation officielle recommande de refuser les accès par défaut, de tester les règles de sécurité et de séparer les environnements. Une clé d’identification Firebase ne confère pas, à elle seule, l’autorisation d’accéder aux données ; les entrées observées doivent être qualifiées selon leur service, leur portée et leurs restrictions. Les secrets effectivement exposés doivent être révoqués selon le processus interne. [Référence Firebase](https://firebase.google.com/support/guides/security-checklist).
-
-## 10. Recommandations SOC et tactiques
-
-« Observé » qualifie ici uniquement le fondement documentaire de la recommandation. Les identifiants MITRE ATT&CK cités dans les actions restent des hypothèses de correspondance défensive. Les alertes proposées restent à configurer et à valider dans les environnements concernés ; leur comportement n’a pas nécessairement été observé chez la victime.
-
-| Qualification | Fondement | Surveillance ou action proposée |
-|---|---|---|
-| Observé | Exports structurés et données sensibles dans plusieurs échantillons | Corréler les volumes de lecture et d’export, les identités utilisées et les horaires inhabituels ; conserver les journaux de bases et de stockage (T1213.006, T1530) |
-| Observé | Champs de mot de passe renseignés chez Daily Trust | Identifier les comptes représentés, examiner réinitialisations, sessions et modifications MFA ; révoquer les éléments concernés selon le périmètre établi |
-| Observé | Données de paiement chez The Courier Guy et le FBC | Détecter les changements de bénéficiaire et demandes urgentes anormales, puis les valider hors du canal à l’origine de la demande |
-| Observé | Chiffrement reconnu par le FBC | Examiner la chronologie EDR et les modifications massives de fichiers ; préserver les traces et vérifier les capacités de restauration (T1486) |
-| Hypothèse | Réutilisation d’un accès VPN ou de valeurs de compte exposées | Corréler nouvel appareil, origine inhabituelle, compte dormant et changement MFA ; ne pas conclure sur la seule géolocalisation (T1078) |
-| Hypothèse | Exploitation des informations techniques et organisationnelles du CGC | Examiner les nouveaux accès privilégiés et les demandes de support contextualisées ; les diagnostics AD présents dans les documents ne sont pas des IoC |
-| Préventif | Réduction de l’exposition et du risque ransomware | Contrôler les règles cloud, les droits sur les partages et les sauvegardes ; tester la restauration et le cloisonnement des accès administratifs |
-
-Les seuils doivent être adaptés aux traitements légitimes, aux sauvegardes et aux exports métiers. Les domaines des victimes ne constituent pas des indicateurs malveillants. Aucun secret, lien d’échantillon ou identifiant personnel n’est publié comme IoC.
-
-## 11. Recommandations stratégiques
-
-1. **Priorité aux risques observés :** attribuer un responsable à chaque exposition documentée, déterminer les jeux réellement concernés et organiser conjointement la réponse technique, la protection des personnes et la continuité de service. Mesurer la fermeture des accès et la restauration par des vérifications internes.
-2. **Risques observés de concentration documentaire :** réduire les copies de données d’identité, financières et RH dans les partages, les exports et la préproduction. Revoir les durées de conservation et les droits selon les fonctions métier.
-3. **Hypothèses à instruire :** examiner les risques de réutilisation des données contre les clients, employés et partenaires. Prioriser les accès sensibles et les circuits de paiement, sans traiter une hypothèse de fraude ou de mouvement latéral comme un fait établi.
-4. **Prévention :** exercer la restauration, le cloisonnement des identités et la réponse à une publication d’extorsion. Préparer un retour technique partageable qui permette d’améliorer les détections sans exposer les personnes ni les systèmes internes.
-
-## 12. Limites méthodologiques, contrôles et conclusion
-
-### 12.1 Périmètre, période et règles de classement
-
-Le rapport décrit la collecte d’août, enrichie par les analyses et suivis déjà consignés dans les fiches jusqu’au **14 septembre 2026**. Les observations proviennent de sites de fuite ransomware, de forums, de canaux de messagerie, de sources publiques et d’analyses locales d’échantillons. Le rapport reprend les résultats documentés ; il ne constitue pas une nouvelle expertise des fichiers bruts ni une nouvelle visite des sites des acteurs.
-
-Les **17 fiches ransomware** sont rattachées au corpus d’août à partir des publications ou observations datées consignées dans les fiches ; la date de la compromission sous-jacente reste inconnue pour plusieurs cas. Cinq fuites de données publiées antérieurement ont été découvertes en août : la plateforme PAYGO (16 janvier), le portail des services locaux égyptiens (5 juin), Albarq (9 juin), la DGRSDT (8 juillet) et l’EFA (26 juillet). Les rapports mensuels déjà clôturés n’étant pas réouverts, ces cas restent dans le corpus de découverte d’août, avec leur date initiale conservée, sans être transformés en événements survenus en août. La fiche SpearFin relève une date alléguée par l’acteur au 26 juin pour la fuite revendiquée, tandis que la publication ransomware a été observée le 18 août ; cette date alléguée n’est pas corroborée et sa relation avec la chronologie de l’attaque reste non résolue. La DGRSDT mentionne le 8 juillet comme date d’incident fournie ; Albarq mentionne juin comme période de publication, l’accès restant non daté. Le FBC situe l’incident en août, sans jour exact. RAMED a été publié par l’acteur le 22 août. La chronologie détaillée du corpus figure en section 3.3.
-
-Chaque fiche contribue à un seul pays de rattachement : **30 fiches = 30 occurrences pays**. Le périmètre PAYGO est limité à la partie kényane décrite ; les autres marchés cités ne sont pas ajoutés. Hungry Lion est rattaché à l’Afrique du Sud conformément à sa fiche, avec une réserve explicite sur l’entité et le pays visés. DGSN/DGST compte pour un événement, malgré la mention de deux institutions. Les activités régionales d’une entreprise ne constituent pas, à elles seules, des incidents dans chaque pays où elle opère.
-
-
-- **Corpus non exhaustif.** Les 30 fiches représentent les observations effectivement collectées, conservées et analysées par AFRINTEL pour ce dossier. Elles ne constituent pas un recensement exhaustif de toutes les cyberattaques survenues ou publiquement signalées en Afrique pendant la période.
-- **Biais de collecte.** Les sites de fuite ransomware, forums et canaux criminels surreprésentent mécaniquement les événements rendus publics par des acteurs d’extorsion ou de fuite. Les parts par pays, secteur ou acteur décrivent donc le corpus, pas un taux d’incidence national ou sectoriel.
-- **Niveaux de preuve hétérogènes.** Une revendication d’acteur, un échantillon cohérent, une publication présentée comme complète et une confirmation par la victime sont des niveaux de preuve différents. `Data Fully Published` qualifie l’état de publication revendiqué, pas la confirmation d’une intrusion ni l’exhaustivité réelle du corpus.
-- **Chronologies distinctes.** Date de compromission, date de publication criminelle, date de découverte AFRINTEL et date de confirmation publique peuvent différer. Le rattachement mensuel suit les règles de collecte décrites en section 12.1 et ne transforme pas une date de découverte en date d’intrusion.
-- **Confiance et impact.** Le niveau de confiance porte sur l’évaluation propre à la fiche et peut concerner l’authenticité ou l’association d’un corpus sans confirmer son système source. Le niveau d’impact peut refléter un **risque potentiel** lié à la sensibilité des données ou au rôle de l’organisation ; il ne mesure pas nécessairement une perte opérationnelle observée.
-- **Volumes et personnes touchées.** Lignes, profils, fichiers, documents, comptes et personnes ne sont pas des unités interchangeables. Les volumes annoncés par les acteurs ne sont pas additionnés pour produire un nombre global de personnes affectées.
-- **État des connaissances.** Le rapport intègre les informations consignées jusqu’au **14 septembre 2026** et les corrections de corroboration documentées lors de la revue éditoriale. Les statuts peuvent évoluer avec de nouvelles confirmations, démentis, notifications réglementaires ou analyses techniques.
-
-Ces limites doivent accompagner toute réutilisation des graphiques et pourcentages du rapport. En particulier, les distributions géographiques et sectorielles ne doivent pas être interprétées comme une mesure comparative du « risque cyber » des pays africains.
-
-### 12.2 Contrôles de cohérence
-
-- **Types :** 17 Ransomware + 12 Data Leak + 1 Access Sale = **30**.
-- **Statuts :** 13 `Claim - Data Sample Published` + 12 `Claim - Unverified` + 3 `Data Fully Published` + 2 `Victim Confirmed` = **30**.
-- **Confiance :** 8 `Low` + 7 `Medium` + 13 `High` + 2 `Very High` = **30**.
-- **Impact :** 3 `Level 2` + 7 `Level 3` + 20 `Level 4` = **30**.
-- **Géographie :** 30 fiches = 30 occurrences pays, réparties sur **10 pays**.
-- **Secteurs :** 16 catégories normalisées = **30 fiches**.
-- **Backfill :** 5 publications antérieures découvertes en août, toutes classées `Data Leak`.
-- **Parité bilingue :** 30 fiches FR = 30 fiches EN, avec les champs structurés harmonisés.
-
-### 12.3 Conclusion
-
-Le corpus d’août 2026 compte **30 fiches : 17 cas ransomware, 12 fuites de données et 1 vente d’accès**. L’Afrique du Sud et l’Afrique du Nord concentrent les fiches, tandis que les données administratives, financières et de personnel dominent les risques décrits. Les analyses d’échantillons rendent plusieurs expositions tangibles ; elles ne permettent pas de généraliser les volumes, les vecteurs ou les attributions techniques.
-
-Les décisions défensives doivent tenir compte du niveau de preuve propre à chaque cas et de sa chronologie. Consulter les [fiches françaises](./victims_FR.md), leur [version anglaise](./victims.md) et les [statistiques associées](../../../statistics/2026/08-august/README_FR.md).
-
-
-**AFRINTEL** · Adama ASSIONGBON, Consultant SOC & CTI · Licence MIT
-
-[Dépôt GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL)
+# Rapport CTI AFRINTEL - cyberincidents en Afrique (août 2026)
+
+Ce corpus mensuel documenté et contrôlé contient **33 incidents ou cas** publiés pour la première fois ou observés pour la première fois par AFRINTEL en août 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
+
+## Ventilation mensuelle validée
+
+| Type d incident | Nombre | Part |
+|---|---:|---:|
+| Ransomware | 18 | 54.5% |
+| Fuite de données | 14 | 42.4% |
+| Vente d'accès | 1 | 3.0% |
+| **Total** | **33** | **100.0%** |
+
+## Pays les plus représentés
+
+| Pays | Nombre |
+|---|---:|
+| Afrique du Sud | 12 |
+| Algérie | 5 |
+| Égypte | 5 |
+| Maroc | 3 |
+| Nigeria | 2 |
+| Kenya | 2 |
+| Maurice | 1 |
+| Cameroun | 1 |
+| Gabon | 1 |
+| Libye | 1 |
+
+## Acteurs les plus représentés
+
+| Libellé acteur | Nombre |
+|---|---:|
+| KRYBIT | 5 |
+| Orova | 2 |
+| exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse | 2 |
+| thegentlemen | 2 |
+| medusalocker | 2 |
+| incransom | 2 |
+| R3D3MPTION | 1 |
+| NullSec Nigeria (alias « voss », compte de forum NullsecNg), publication sur le forum cybercriminel DarkForums | 1 |
+| anisanas2 | 1 |
+| Revesky, publication sur un forum cybercriminel | 1 |
+
+## Secteurs les plus représentés
+
+| Secteur | Nombre |
+|---|---:|
+| Gouvernement / Administration | 2 |
+| Restauration / Restauration rapide | 2 |
+| Gouvernement / Banque centrale / Services financiers | 1 |
+| Gouvernement / Recherche scientifique | 1 |
+| Sports / Fédérations sportives | 1 |
+| Fabrication de plastiques / Articles ménagers | 1 |
+| Microfinance / Banque | 1 |
+| Services financiers / Distribution de paiements / Accompagnement du désendettement | 1 |
+| Agence de voyages / Voyages loisirs et professionnels | 1 |
+| Industrie pharmaceutique | 1 |
+
+## Méthodologie
+
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
+
+## Statuts et niveaux analytiques
+
+| Statut AFRINTEL | Nombre |
+|---|---:|
+| Claim - Data Sample Published | 13 |
+| Claim - Unverified | 12 |
+| Data Fully Published | 4 |
+| Victim Confirmed | 3 |
+| Under Investigation | 1 |
+
+| Niveau de confiance | Nombre |
+|---|---:|
+| High, dont 1 évaluation composite High/Medium | 14 |
+| Low | 9 |
+| Medium | 7 |
+| Very High | 3 |
+
+| Niveau d'impact | Nombre |
+|---|---:|
+| Level 4 | 22 |
+| Level 3 | 8 |
+| Level 2 | 3 |
+
+Les statuts décrivent le niveau de preuve disponible pour chaque fiche et ne constituent pas une confirmation globale des compromissions. Les niveaux de confiance concernent les éléments analysés et leur attribution, tandis que les niveaux d'impact décrivent le dommage potentiel ; ces dimensions ne sont pas interchangeables. Une fiche présente explicitement une confiance élevée pour l'existence et la cohérence du corpus, mais moyenne pour l'attribution technique.
+
+## Lecture CTI et priorités
+
+L'Afrique du Sud représente 12 occurrences, suivie de l'Algérie et de l'Égypte avec 5 chacune. Les 14 fiches de fuite de données comprennent des échantillons examinés contenant des données d'identité, d'éducation, de recrutement, de finance ou d'administration. Les 18 fiches ransomware restent majoritairement des publications d'acteurs ; les dates d'accès, l'exhaustivité des données, le chiffrement et les négociations restent souvent inconnus.
+
+Les priorités défensives sont la protection des identifiants et documents administratifs, la rotation des secrets éventuellement exposés, la surveillance des exports massifs et des accès anormaux aux portails, ainsi que la vérification des sauvegardes et des journaux pour les organisations revendiquées. Les volumes annoncés par les acteurs ne sont pas extrapolés aux 33 fiches.
+
+## Mise à jour documentaire - portails universitaires égyptiens
+
+Le complément publié le 23 août 2026 pour la publication des portails universitaires égyptiens a été intégré à la fiche groupée du 21 août. L'inventaire local associé comprend **5 540 fichiers** et **2 337 401 813 octets**, dont **2 257 PDF** et **3 117 images**. Le contrôle relève **4 675 empreintes SHA-256 uniques**, **726 groupes de doublons** et **865 fichiers dupliqués au-delà de la première occurrence**. Les catégories accessibles concernent notamment les documents d'identité, certificats, relevés, résultats, cartes militaires et photographies. Cette mise à jour ne modifie pas le dénominateur mensuel : le cas reste une seule fiche d'août. L'analyse sémantique exhaustive de chaque page et image n'est pas revendiquée en raison de la proportion de documents scannés.
+
+[Victim records](./victims_FR.md)
+
+### Visualisations
+
+![Types](assets/type_FR.png)
+![Types en secteurs circulaires](assets/type_pie_FR.png)
+![Pays](assets/geo_FR.png)
+![Pays en secteurs circulaires](assets/geo_pie_FR.png)
+![Secteurs](assets/sector_FR.png)
+![Secteurs en secteurs circulaires](assets/sector_pie_FR.png)
+![Acteurs](assets/actor_top10_FR.png)
+![Top 5 pays](assets/country_top5_FR.png)

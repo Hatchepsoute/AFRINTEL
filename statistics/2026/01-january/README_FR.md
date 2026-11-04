@@ -1,301 +1,66 @@
-![Status](https://img.shields.io/badge/Status-Claim--Unverified-orange)
-![Coverage](https://img.shields.io/badge/Coverage-21%20Victims-blue)
-![Africa Scope](https://img.shields.io/badge/Africa%20Scope-Continental-green)
-![Data Source](https://img.shields.io/badge/Data%20Source-Ransomfeed%20%2F%20Leak%20Sites-lightgrey)
-![Period](https://img.shields.io/badge/Period-2026--01-informational)
-# AFRINTEL - Statistiques des cyberttaques en Afrique par acteur et par pays (Janvier 2026)
-👉🏾 [**English version available here**](./README.md)
+# Statistiques mensuelles AFRINTEL - janvier 2026
 
-Le mois de janvier 2026 marque une phase de pression cyber soutenue sur le continent africain, caractérisée par une activité accrue des groupes ransomware structurés, l’émergence d’acteurs opportunistes et une persistance d’attaques non revendiquées ciblant des entités gouvernementales et des secteurs stratégiques. Cette analyse statistique met en lumière les dynamiques d’acteurs, les zones géographiques à risque, les secteurs prioritaires et les tendances opérationnelles observées, afin d’éclairer la prise de décision et l’anticipation des menaces.
+Ce corpus validé contient **23 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en janvier 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
----
+## Ventilation mensuelle validée
 
-## 📊 Vue d’ensemble
+| Type d incident | Nombre | Part |
+|---|---:|---:|
+| Ransomware | 19 | 82.6% |
+| Fuite de données | 2 | 8.7% |
+| Vente d'accès | 1 | 4.3% |
+| Défacement | 1 | 4.3% |
+| **Total** | **23** | **100.0%** |
 
-| Métrique | Valeur |
+## Pays les plus représentés
+
+| Pays | Nombre |
 |---|---:|
-| **Incidents documentés** | **21** |
-| **Pays touchés** | **12** |
-| **Acteurs identifiés** | **11** |
-| **Incidents non attribués** | **1** *(Niger - `Unknown`)* |
-| **Ransomware** | **17** |
-| **Ventes d'accès** | **1** |
-| **Fuites de données** | **2** |
-| **Défacement** | **1** |
+| Afrique du Sud | 6 |
+| Kenya | 4 |
+| Égypte | 3 |
+| Maroc | 2 |
+| Togo | 1 |
+| Niger | 1 |
+| Maurice | 1 |
+| Sénégal | 1 |
+| Mozambique | 1 |
+| Tanzanie | 1 |
+| Tunisie | 1 |
+| Algérie | 1 |
 
-> **Méthodologie** : le jeu de données recense les publications observées sur les leak sites et les forums clandestins, avec leur statut AFRINTEL.
+## Acteurs les plus représentés
 
----
-
-## 🗺️ Répartition par pays
-
-| Pays | Incidents | Acteurs dominants (Jan 2026) |
-|---|---:|---|
-| 🇿🇦 Afrique du Sud | 4 | `TheGentlemen`, `vect` |
-| 🇰🇪 Kenya | 4 | `TheGentlemen`, `tengu`, `blackshrantac`, `devman` |
-| 🇪🇬 Égypte | 3 | `TheGentlemen`, `tengu`, `direwolf` |
-| 🇲🇦 Maroc | 2 | `tengu`, `skra1a` |
-| 🇩🇿 Algérie | 1 | `tengu` |
-| 🇲🇺 Maurice | 1 | `TheGentlemen` |
-| 🇲🇿 Mozambique | 1 | `qilin` |
-| 🇸🇳 Sénégal | 1 | `breach3d` |
-| 🇹🇿 Tanzanie | 1 | `benzona` |
-| 🇹🇬 Togo | 1 | `Bigbrother` |
-| 🇹🇳 Tunisie | 1 | `tengu` |
-| 🇳🇪 Niger | 1 | `Unknown` *(défacement non revendiqué)* |
-
----
-
-## 🎯 Répartition par acteur (Top)
-
-| Acteur | Incidents | Pays ciblés |
-|---|---:|---|
-| `TheGentlemen` | **6** | Égypte, Kenya, Maurice, Afrique du Sud |
-| `tengu` | **5** | Algérie, Égypte, Kenya, Maroc, Tunisie |
-| `Bigbrother` | 1 | Togo |
-| `breach3d` | 1 | Sénégal |
-| `skra1a` | 1 | Maroc |
-| `qilin` | 1 | Mozambique |
-| `vect` | 1 | Afrique du Sud |
-| `direwolf` | 1 | Égypte |
-| `benzona` | 1 | Tanzanie |
-| `blackshrantac` | 1 | Kenya |
-| `devman` | 1 | Kenya |
-| `Unknown` | 1 | Niger |
-
----
-
-## 🧭 Répartition par secteur
-
-| Secteur | Incidents |
+| Libellé acteur | Nombre |
 |---|---:|
-| Gouvernement / Administration | 4 |
-| Services financiers | 4 |
-| Industrie | 3 |
-| Transport / Logistique | 3 |
-| Technologie | 1 |
-| Énergie | 1 |
-| Santé | 1 |
-| Construction | 1 |
-| Tourisme | 1 |
-| Mines | 1 |
-| Agroalimentaire | 1 |
+| TheGentlemen | 6 |
+| tengu | 5 |
+| Bigbrother (Initial Access Broker) | 1 |
+| Non revendiqué | 1 |
+| vect | 1 |
+| blackshrantac | 1 |
+| direwolf | 1 |
+| breach3d | 1 |
+| qilin | 1 |
+| benzona | 1 |
 
----
+## Secteurs les plus représentés
 
-## 🔍 Top 5 pays les plus ciblés
+| Secteur | Nombre |
+|---|---:|
+| Administration publique centrale | 1 |
+| Administration publique | 1 |
+| Ingénierie Hydraulique et Mécanique | 1 |
+| Services Publics (Gestion de l'eau) | 1 |
+| Technologie / Sécurité Informatique | 1 |
+| Ingénierie Électrique | 1 |
+| Services Financiers et Technologie | 1 |
+| FinTech (Paiement Mobile) | 1 |
+| Transport et Logistique (Rail et Ports) | 1 |
+| Santé / Soins Spécialisés | 1 |
 
-- 🇿🇦 Afrique du Sud ████████████░░ 4  
-- 🇰🇪 Kenya ████████████░░ 4  
-- 🇪🇬 Égypte ██████████░░░ 3  
-- 🇲🇦 Maroc ███████░░░░░░ 2  
-- (x7) Pays à 1 incident ███░░░░░░░░░ 1  
+## Méthodologie
 
----
+Les chiffres sont calculés une seule fois depuis `victims_FR.md`, contrôlés contre `victims.md`, puis réutilisés dans les rapports, comparaisons et bundles STIX. Un incident multi-pays compte une fois au total ; les occurrences par pays peuvent donc dépasser le total global. Le corpus mesure la visibilité documentée par AFRINTEL, pas la prévalence réelle des cyberattaques.
 
-# 📊 Visual Intelligence Layer
-
-## 🧩 Distribution des acteurs
-
-```mermaid
-flowchart TB
-classDef high fill:#ff4d4d,color:#ffffff,stroke:#990000,stroke-width:2px;
-classDef medium fill:#ffa64d,color:#000000,stroke:#cc6600,stroke-width:2px;
-classDef low fill:#ffe6b3,color:#000000,stroke:#cc9900,stroke-width:1px;
-
-TG["TheGentlemen (6)"]:::high
-TENGU["tengu (5)"]:::high
-
-BIG["Bigbrother (1)"]:::medium
-UNK["Unknown (1)"]:::medium
-
-VECT["vect (1)"]:::low
-QILIN["qilin (1)"]:::low
-SKRA["skra1a (1)"]:::low
-BREACH["breach3d (1)"]:::low
-DIRE["direwolf (1)"]:::low
-BENZ["benzona (1)"]:::low
-BLACK["blackshrantac (1)"]:::low
-DEVMAN["devman (1)"]:::low
-```
-
----
-
-## 🗺️ Heatmap - Intensité par région
-
-```mermaid
-flowchart TB
-  classDef high fill:#ffcccc,stroke:#b30000,stroke-width:2px;
-  classDef medium fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
-  classDef low fill:#fff2cc,stroke:#b39b00,stroke-width:2px;
-
-  subgraph West["Afrique de l’Ouest (3 incidents)"]
-    SN["🇸🇳 Sénégal (1)"]:::low
-    TG["🇹🇬 Togo (1)"]:::low
-    NE["🇳🇪 Niger (1)"]:::medium
-  end
-
-  subgraph North["Afrique du Nord (7 incidents)"]
-    EG["🇪🇬 Égypte (3)"]:::medium
-    MA["🇲🇦 Maroc (2)"]:::medium
-    DZ["🇩🇿 Algérie (1)"]:::low
-    TN["🇹🇳 Tunisie (1)"]:::low
-  end
-
-  subgraph East["Afrique de l’Est (5 incidents)"]
-    KE["🇰🇪 Kenya (4)"]:::high
-    TZ["🇹🇿 Tanzanie (1)"]:::low
-  end
-
-  subgraph South["Afrique Australe (6 incidents)"]
-    ZA["🇿🇦 Afrique du Sud (4)"]:::high
-    MZ["🇲🇿 Mozambique (1)"]:::low
-    MU["🇲🇺 Maurice (1)"]:::low
-  end
-
-  class East high;
-  class South high;
-  class North medium;
-  class West medium;
-```
-
----
-
-## 🥧 Répartition par secteur (pie chart)
-
-```mermaid
-%%{init: {'theme': 'base'}}%%
-pie
-    title Secteurs ciblés - Janvier 2026
-    "Gouvernement / Administration" : 4
-    "Services financiers" : 4
-    "Industrie" : 3
-    "Transport / Logistique" : 3
-    "Technologie" : 1
-    "Énergie" : 1
-    "Santé" : 1
-    "Construction" : 1
-    "Tourisme" : 1
-    "Mines" : 1
-    "Agroalimentaire" : 1
-```
-
----
-
-## 🧩 Cartographie Acteurs → Victimes (OSINT-safe)
-
-> Les relations ci-dessous reprennent les victimes nommées dans `victims.md`, source unique du mois.
-
-```mermaid
-flowchart LR
-
-  %% ===== STYLE =====
-  classDef actor fill:#ffe6cc,stroke:#cc7a00,stroke-width:2px;
-  classDef victim fill:#e6f2ff,stroke:#0066cc,stroke-width:2px;
-
-  %% ===== ACTEURS =====
-  A1["TheGentlemen"]:::actor
-  A2["tengu"]:::actor
-  A3["Bigbrother"]:::actor
-  A4["breach3d"]:::actor
-  A5["skra1a"]:::actor
-  A6["qilin"]:::actor
-  A7["vect"]:::actor
-  A8["direwolf"]:::actor
-  A9["benzona"]:::actor
-  A10["blackshrantac"]:::actor
-  A11["devman"]:::actor
-  A12["Unknown"]:::actor
-
-  %% ===== VICTIMES =====
-  V1["Real Tech\n(Unknown domain)\n🇪🇬 Égypte"]:::victim
-  V2["CPF Financial Services\n(Unknown domain)\n🇰🇪 Kenya"]:::victim
-  V3["Rogers Capital\n(Unknown domain)\n🇲🇺 Maurice"]:::victim
-  V4["Paltrack\n(Unknown domain)\n🇿🇦 Afrique du Sud"]:::victim
-  V5["Rola Motor Group\n(Unknown domain)\n🇿🇦 Afrique du Sud"]:::victim
-  V6["Witzenberg Municipality\n(Unknown domain)\n🇿🇦 Afrique du Sud"]:::victim
-
-  V7["Tahkout Group\n(Unknown domain)\n🇩🇿 Algérie"]:::victim
-  V8["skyegtours.com\n(skyegtours.com)\n🇪🇬 Égypte"]:::victim
-  V9["namico.go.ke\n(namico.go.ke)\n🇰🇪 Kenya"]:::victim
-  V10["Nafae Sanitaire\n(Unknown domain)\n🇲🇦 Maroc"]:::victim
-  V11["FRUIT-BONTÉ\n(Unknown domain)\n🇹🇳 Tunisie"]:::victim
-
-  V12["PixPay\n(pay.pixpay.sn)\n🇸🇳 Sénégal"]:::victim
-  V13["AOM Aviation\n(Unknown domain)\n🇲🇦 Maroc"]:::victim
-  V14["CFM Mozambique\n(Unknown domain)\n🇲🇿 Mozambique"]:::victim
-  V15["Togo access claim\n(Unknown domain)\n🇹🇬 Togo"]:::victim
-
-  V16["Hytec South Africa\n(hytec.com)\n🇿🇦 Afrique du Sud"]:::victim
-  V17["Tepco-Group\n(tepco-group.com)\n🇪🇬 Égypte"]:::victim
-  V18["CCBRT\n(ccbrt.org)\n🇹🇿 Tanzanie"]:::victim
-  V19["National Water Authority\n(nwa.go.ke)\n🇰🇪 Kenya"]:::victim
-  V20["NSSF\n(nssf.or.ke)\n🇰🇪 Kenya"]:::victim
-
-  V21["Défacement gouvernemental\n(Multi-sites)\n🇳🇪 Niger"]:::victim
-
-  %% ===== RELATIONS =====
-  A1 --> V1
-  A1 --> V2
-  A1 --> V3
-  A1 --> V4
-  A1 --> V5
-  A1 --> V6
-
-  A2 --> V7
-  A2 --> V8
-  A2 --> V9
-  A2 --> V10
-  A2 --> V11
-
-  A4 --> V12
-  A5 --> V13
-  A6 --> V14
-  A3 --> V15
-
-  A7 --> V16
-  A8 --> V17
-  A9 --> V18
-  A10 --> V19
-  A11 --> V20
-
-  A12 --> V21
-```
-
----
-
-## 📌 Incidents critiques (Janvier 2026)
-
-### 🇳🇪 Niger - Défacement massif (**Unknown**)
-- **Nature** : défacement coordonné de sites de l’État nigérien avec messages politiques liés à la situation géopolitique du pays
-- **Risque** : exposition systémique (surface web publique / gouvernance patch)
-- **Impact** : confiance institutionnelle / disponibilité / visibilité médiatique
-
-### 🇸🇳 PixPay - Fuite de données (`breach3d`)
-- **Nature** : exposition/vente de données (FinTech)
-- **Impact** : fraude, usurpation, risques réglementaires, atteinte à la confiance
-
-### 🇲🇦 AOM Aviation - Fuite de données (`skra1a`)
-- **Nature** : base de données exposée
-- **Impact** : chaîne d’approvisionnement, passagers/partenaires, opérations
-
----
-
-## 🛡️ Recommandations SOC / CTI
-
-1) **Surveiller en priorité les acteurs dominants** : `TheGentlemen` & `tengu` (corrélations pays/secteur).  
-2) **Durcir les portails publics** : WAF, patching, revue CMS, inventaire DNS, réduction surface d’attaque.  
-3) **Détecter l’exfiltration** : seuils volumétriques, egress filtering, anomalies DNS/HTTP, comptes privilégiés.  
-4) **Préparation de crise** : playbooks ransomware + data leak, sauvegardes immuables, exercices tabletop.  
-
----
-
-## 🔗 Liens utiles
-
-- [Rapport mensuel (FR)](../../../CyberAttackAfrica/2026/01-january/README_FR.md)
-- [Monthly report (EN)](../../../CyberAttackAfrica/2026/01-january/README.md)
-
----
-
-**AFRINTEL - African Threat Intelligence Initiative**  
-*TLP:CLEAR - Public sharing permitted*
+[Victim records](../../../CyberAttackAfrica/2026/01-january/victims_FR.md)

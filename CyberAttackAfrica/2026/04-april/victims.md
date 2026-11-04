@@ -619,7 +619,7 @@
 - **Description :** Planet Sport is Morocco’s leading sports goods retailer operating a nationwide network of stores distributing international sports brands.
 
 - **Analysis :**
-  AFRINTEL records the April publication as an unverified LockBit 5 ransomware claim. The same domain, `planetsport.ma`, appeared in a substantial data publication attributed to Mozvo in July 2026. This chronology raises the hypothesis that the July material may have been downloaded and freely republished or redistributed by a third party after an earlier LockBit-related exfiltration, or that Mozvo may be an affiliate or associated operator. AFRINTEL has no evidence proving a relationship between Mozvo and LockBit 5, and the April claim contains no independently verified proof of encryption, exfiltration or initial access. The April and July records are retained as linked but separate events pending further evidence.
+  AFRINTEL records the April publication as an unverified LockBit 5 ransomware claim. The same domain, `planetsport.ma`, appeared in a substantial data publication attributed to Mozvo in July 2026. This chronology raises the hypothesis that the July material may have been downloaded and freely republished or redistributed by a third party after an earlier LockBit-related exfiltration, or that Mozvo may be an affiliate or associated operator. AFRINTEL has no evidence proving a relationship between Mozvo and LockBit 5. The April and July records are retained as linked but separate events pending further evidence.
 
 #### 🇿🇲 Zambia - zsiclife.co.zm [Ransomware]
 - **Ransomware Group :** krybit
@@ -633,15 +633,15 @@
 - **Sector :** Sports
 - **Website :** [frmtennis.ma](https://frmtennis.ma/)
 - **Status :** Claim - Unverified
-- **Description :** Tennis federation. ~20,000 records of licensed players and club members: names, surnames, club affiliations, gender.
+- **Description :** Tennis federation. Approximately 20,000 records of licensed players and club members: names, surnames, club affiliations and gender.
 
-#### 🇲🇦 Morocco - List of 4 Million Moroccan Email Addresses  [Data Leak]
+#### 🇲🇦 Morocco - List of 4 Million Moroccan Email Addresses [Data Leak]
 - **Threat Actor / Group :** Rihana
 - **Sector :** Personal Data / Email Marketing / Data Aggregation
 - **Website :** N/A
 - **Status :** Claim - Unverified
-- **Description :** A cybercriminal forum post claims the release of a dataset containing approximately 4 million email addresses associated with Moroccan users. The threat actor states that the data is mainly intended for spammers and email marketers. The publication references several popular domains commonly used in Morocco, including Gmail, Hotmail, Outlook, Yahoo, and Menara.ma. No specific organization is directly identified as the source of the leak, suggesting the dataset may originate from aggregated collections of multiple breaches, OSINT harvesting, or historical data leaks. Such datasets may be leveraged for phishing campaigns, mass spam operations, credential stuffing, or targeted social engineering activities.
----
+- **Description :** A cybercriminal forum post claims the release of a dataset containing approximately 4 million email addresses associated with Moroccan users. The publication references popular domains used in Morocco, including Gmail, Hotmail, Outlook, Yahoo and Menara.ma. No specific organization is identified as the source.
+
 ### April 30, 2026
 #### 🇹🇳 Tunisia - Exscape App [Data Leak]
 
@@ -887,6 +887,70 @@
 - **CTI Note :**
   The threat actor claims to possess broad access to Algeria’s regional football infrastructure. However, the full scope of the compromise and the authenticity of all claimed accesses cannot be independently verified at this stage.
   
+
+
+### April 18, 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Ahmed Al-Kadi Private Hospital
+
+- **Incident date:** April 18, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Healthcare / Private Hospital
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** **Ahmed Al-Kadi Private Hospital** is a private hospital in **Mayville, Durban**, South Africa. Developed by the **Islamic Medical Association of South Africa**, it opened in 2017 and reports **163 beds**, providing inpatient and specialist medical and surgical care. It states that its services are available regardless of ethnicity or religion ([official hospital profile](https://ahmedalkadi.com/about-us/)).
+
+- **Independent verification as of 18 October 2026:** **Direct confirmation:** the hospital reported unauthorised access on 18 April 2026 followed by ransomware deployment encrypting part of its environment; it issued a POPIA notice and notified the regulator. Not a September occurrence.
+
+- **Additional verification sources:** [Source 1](https://ahmedalkadi.com/notification-of-data-incident/)
+
+- **Sources / Evidence:** [Hospital official notice](https://ahmedalkadi.com/notification-of-data-incident/)
+
+The hospital confirmed that an unauthorised party accessed its IT environment and deployed ransomware on April 18. Part of the environment was encrypted, contained and restored with external specialists. The vector, encryption scope and exfiltration remain unknown.
+
+
+### April 28, 2026 - integrated September 1, 2026
+#### 🇰🇪 Kenya - TikoHUB
+
+- **Incident date:** 28 April 2026 (date of the access-offer post; initial compromise not established)
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Initial publication date:** 28 April 2026 at 23:26 (displayed time; timezone not specified)
+- **Actor / Group:** DarkMafiaX (displayed account; identity and affiliation unverified)
+- **Sector:** Ticketing / Events / Digital services
+- **Website:** [tikohub.co.ke](https://www.tikohub.co.ke/)
+- **Status:** Claim - Unverified
+- **Incident type:** Access Sale
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+
+- **Description:** **TikoHUB** is a Kenyan **ticketing and events-services platform** serving event organisers and attendees. Its public offering focuses on event discovery and management and online ticketing or participation workflows. The existence of the service does not validate any claimed administrator privileges offered for sale ([TikoHUB official overview](https://www.tikohub.co.ke/about_us.php)).
+
+- **Independent verification as of 18 October 2026:** No independent public evidence of access being offered for TikoHUB, or company acknowledgement, was found. The suspect posting is dated April 2026 and the tracker’s inclusion came later.
+
+  **Incident context already documented in AFRINTEL :** A post attributed to the DarkMafiaX account offers administrator access presented as related to TikoHUB, a Kenyan ticketing and event-management platform. The post and displayed credentials were not tested; AFRINTEL does not confirm their validity, effective access or a compromise of TikoHUB.
+
+- **Analysis:**
+
+  **Observed:** The screenshot shows a post titled “Admin Access To Tikohub.co.ke | Kenya”, dated 28 April 2026 at 23:26 according to the displayed timestamp. It contains an administrative-resource URL and fields presented as a username and password. These values are deliberately not reproduced and were not tested. The screenshot was supplied to AFRINTEL on 24 September 2026.
+
+  **Assumption:** The `tikohub.co.ke` domain corresponds to a Kenyan ticketing platform, making the target plausible. The post could nevertheless be inaccurate, recycled, falsified or related to limited access to a third-party component. 28 April is the observed post date, not necessarily the initial compromise date.
+
+  **Unknown:** current credential validity, actual privileges, affected system, acquisition method, access duration, effective exploitation, accessed or exfiltrated data, confirmation by TikoHUB and remediation status remain unknown.
+
+- **Observed sample scope:** one screenshot of a forum post; no login, credential validation, download, endpoint interaction or secret copying was performed.
+
+- **Risk assessment:** if authentic, administrator access could enable content modification, access to customer or organiser data, ticket fraud and account compromise. This record does not confirm any of these effects.
+
+- **Recommendations:**
+1. Preserve authentication, administration, API and hosting logs from 28 April 2026 onward.
+2. Reset potentially affected administrator accounts and revoke sessions as justified by TikoHUB's defensive investigation.
+3. Review privilege changes, exports, account creation and ticket or event modifications.
+4. Do not test the disclosed credentials or open the sensitive URL shown in the screenshot.
+5. Monitor impersonation, ticket fraud and secret reuse.
+
+- **Sources / Evidence:** screenshot supplied to AFRINTEL on 24 September 2026; public [TikoHUB website](https://www.tikohub.co.ke/).
 
 
 ### Keymous+ retrospective observations - April 2026

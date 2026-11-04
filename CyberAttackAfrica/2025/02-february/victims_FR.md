@@ -71,6 +71,26 @@
 - **Type d'incident:** Ransomware
 - **Description victime:** South African Weather Service (SAWS) est le service météorologique national de l'Afrique du Sud, fournissant des prévisions et des alertes météorologiques.
 
+### 12 Février 2025
+#### 🇿🇦 Afrique du Sud - Unique Personnel (`unique.co.za`)
+- **Acteur / Groupe:** Al-Sheikh
+- **Secteur:** Services professionnels / Recrutement et gestion des ressources humaines
+- **Site web:** [unique.co.za](https://www.unique.co.za/)
+- **Date de publication initiale:** 12 février 2025 à 13:52, selon l'horodatage affiché de la publication
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** High pour l'identification du domaine et l'existence de la publication ; Medium pour l'attribution de l'ensemble du corpus à Unique Personnel
+- **Niveau d'impact:** Level 4 (potentiel)
+- **Type de source:** Publication de forum avec échantillon visible ; site officiel et documentation publique de l'entreprise
+- **Description victime:** Unique Personnel est une société sud-africaine de recrutement, de placement et de solutions de ressources humaines, qui traite des données de candidats, de clients et de recruteurs.
+- **Analyse:** La publication propose à la vente une base associée à `unique.co.za` et présente quatre ensembles nommés `tbl_auth_users`, `tbl_clients`, `tbl_candidate_personal_info` et `tbl_candidates`. Le texte visible décrit une plateforme de recrutement contenant des comptes utilisateurs, des profils de clients, des données personnelles de candidats et des informations de recrutement. L'échantillon visible expose des en-têtes et des enregistrements comprenant notamment des adresses électroniques, des rôles, des identifiants de compte, des informations d'entreprise, des secteurs d'activité, des coordonnées, des qualifications et des données personnelles de candidats. Des valeurs ressemblant à des mots de passe en clair sont visibles dans l'échantillon ; elles ne sont ni reproduites ni testées dans AFRINTEL.
+- **Observed:** La publication est datée du 12 février 2025 et a été attribuée au compte Al-Sheikh. Elle affiche le domaine `unique.co.za`, une présentation cohérente avec l'activité de recrutement de Unique Personnel et un échantillon tabulaire correspondant à des comptes, clients et candidats.
+- **Assumption:** Si l'échantillon est authentique, l'exposition pourrait concerner des candidats, des employés, des recruteurs et des entreprises clientes de Unique Personnel, avec des risques d'usurpation, de phishing ciblé, de fraude au recrutement et de réutilisation de mots de passe.
+- **Unknown:** Le vecteur d'accès, la date d'extraction, l'exhaustivité des quatre tables, le nombre de personnes uniques, la validité actuelle des identifiants visibles, l'origine technique du corpus, la publication effective de la totalité de la base et toute confirmation par Unique Personnel ne sont pas établis par les éléments disponibles.
+- **Périmètre et limites de l'analyse:** Analyse approfondie des éléments visibles dans la capture fournie, mais limitée à cet échantillon ; le fichier source complet, les empreintes, le schéma complet et les données brutes n'étaient pas disponibles. Aucune donnée personnelle, adresse électronique, identifiant ou mot de passe n'est reproduit dans le dépôt.
+- **Évaluation des risques:** L'exposition potentielle de données de candidats et de clients peut faciliter le phishing, l'usurpation de recruteurs, les fausses offres d'emploi, la fraude documentaire et la compromission secondaire de comptes.
+- **Sources / Éléments de preuve:** capture de la publication fournie pour analyse ; [site officiel de Unique Personnel](https://www.unique.co.za/ReportFraud.aspx) ; [manuel PAIA/POPIA de Unique Personnel](https://staging.unique.co.za/documents/PAIA_POPIA_manual_Unique_Personnel.pdf). Les données brutes restent hors du dépôt.
+
 ### 19 Février 2025
 #### 🇿🇲 Zambie - Government Services Portal (services.gov.zm)
 - **Groupe ransomware:** flocker

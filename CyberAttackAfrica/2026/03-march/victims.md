@@ -106,14 +106,6 @@ This list records ransomware claims/publications, data leaks/system intrusions a
 - **Status:** Claim - Unverified
 - **Victim description:** Major automotive component distributor in Southern Africa, including Bosch Service franchises and e-CAR centers.
 
-#### 🇪🇬 Egypt - Canadian International College (CIC)
-- **Actor / Group:** CrowStealer
-- **Sector:** Education / Higher education
-- **Website:** [cic-cairo.edu.eg](https://www.cic-cairo.edu.eg/)
-- **Status:** Data Fully Published
-- **Incident type:** Data Leak
-- **Victim description:** First Canadian education provider in Egypt, affiliated with Cape Breton University (CBU). The leak (studentsdata.csv) contains 2,925 records: names, majors, levels, GPAs, years.
-
 #### 🇿🇲 Zambia - ZISPIS (Zambia Integrated Social Protection Information System)
 - **Threat Actor:** Spirigatito
 - **Sector:** Government / Social Protection
@@ -496,3 +488,25 @@ This chronology is recorded as **two observed claims** — XP95 in March and Kaz
 - **Status:** Under Investigation
 - **Incident type:** Data Leak
 - **Victim description:** The official website of Guinea’s Ministry of Health is directly linked to compromised internal systems, including DHIS2 dashboards exposed by Keymous. The correlation between access to health surveillance tools, leaked government data (emails, staff records), and ministerial infrastructure strongly suggests a broader compromise of the ministry’s digital ecosystem. This exposure may enable targeted attacks, data manipulation, and influence operations.
+
+### March 23, 2026 - integrated September 1, 2026
+#### 🇿🇦 South Africa - Standard Bank South Africa
+
+- **Incident / first communication date:** March 23, 2026
+- **Public updates:** April 2, 13 and 14, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not officially attributed; separate PrinzEugen claim uncorroborated
+- **Sector:** Finance / Banking
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** **Standard Bank South Africa** represents the South African banking operations of **Standard Bank Group**, offering accounts, payments, financing, business banking and investment-related services. **The Standard Bank of South Africa Limited** is identified among the group's South African legal entities in its institutional documentation ([official privacy statement](https://www.standardbank.co.za/southafrica/personal/about-us/legal/privacy-statement)).
+
+- **Independent verification as of 18 October 2026:** **First-party confirmation:** on 23 March 2026, Standard Bank disclosed unauthorised access to a limited set of data and said transactional systems and customer funds were unaffected. This predates September.
+
+- **Additional verification sources:** [Source 1](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank)
+
+- **Sources / Evidence:** [Standard Bank, March 23, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank); [Standard Bank, April 14, 2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april)
+
+Standard Bank confirmed unauthorised access to internal administrative systems and document repositories, potentially exposing names, identifiers, contact details, addresses and account numbers. Transactional and core systems were reportedly not accessed. The vector, number of people and copied volume remain unknown. This record is distinct from the May Standard Bank Group claim.

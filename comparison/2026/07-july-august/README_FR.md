@@ -1,75 +1,45 @@
 # Comparaison AFRINTEL : juillet et août 2026
 
-👉🏾 [Version anglaise](README.md)
+## Périmètre comparable
 
-## Vue d’ensemble
+Cette comparaison utilise les fichiers victimes bilingues validés : **47 fiches en juillet** et **33 fiches en août**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Juillet | Août | Évolution |
 |---|---:|---:|---:|
-| Fiches uniques | 42 | 29 | -13 (-31,0 %) |
-| Ransomware | 18 | 17 | -1 (-5,6 %) |
-| Fuites de données | 18 | 11 | -7 (-38,9 %) |
-| Ventes d’accès | 6 | 1 | -5 (-83,3 %) |
-| Fuites + ventes d’accès | 24 | 12 | -12 (-50,0 %) |
-| Occurrences géographiques | 43 | 29 | -14 (-32,6 %) |
-| Pays dans la vue géographique | 12 | 10 | -2 |
+| Total incidents | **47** | **33** | **-14 (-29.8%)** |
+| Ransomware | 18 | 18 | 0 |
+| Fuite de données | 21 | 14 | -7 |
+| Vente d'accès | 6 | 1 | -5 |
+| Défacement | 2 | 0 | -2 |
 
-Les totaux mesurent la collecte AFRINTEL, pas le nombre réel de compromissions. Les 29 fiches d’août sont rattachées au corpus à partir de publications ou observations datées ; la date de compromission n’est pas établie pour chaque fiche.
+```mermaid
+xychart-beta
+    title "Fiches mensuelles : juillet vs août 2026"
+    x-axis [Juillet, Août]
+    y-axis "Records" 0 --> 52
+    bar [47, 33]
+```
 
-## Types d’incident
+## Countries represented
 
-| Type | Juillet | Août | Évolution |
-|---|---:|---:|---:|
-| Ransomware | 18 | 17 | -1 |
-| Data Leak | 18 | 11 | -7 |
-| Access Sale | 6 | 1 | -5 |
-| DDoS, Defacement, Account Takeover, System Intrusion, Malware, Operational Fraud | 0 | 0 | 0 |
-| **Total** | **42** | **29** | **-13** |
-
-## Pays
-
-| Pays | Juillet | Août | Évolution |
-|---|---:|---:|---:|
-| 🇿🇦 Afrique du Sud | 6 | 11 | +5 |
-| 🇪🇬 Égypte | 7 | 4 | -3 |
-| 🇲🇦 Maroc | 6 | 3 | -3 |
-| 🇩🇿 Algérie | 4 | 3 | -1 |
-| 🇳🇬 Nigeria | 4 | 2 | -2 |
-| 🇰🇪 Kenya | 1 | 2 | +1 |
-| 🇨🇲 Cameroun | 1 | 1 | 0 |
-| 🇬🇦 Gabon | 0 | 1 | +1 |
-| 🇱🇾 Libye | 0 | 1 | +1 |
-| 🇲🇺 Maurice | 0 | 1 | +1 |
-| Tunisie | 7 | 0 | -7 |
-| Côte d’Ivoire | 3 | 0 | -3 |
-| Ghana | 2 | 0 | -2 |
-| Botswana, Soudan du Sud | 2 | 0 | -2 |
-| **Total** | **43** | **29** | **-14** |
-
-Les occurrences multi-pays sont ventilées géographiquement mais restent une seule fiche dans le total global.
-
-## Secteurs normalisés
-
-| Secteur | Juillet | Août |
+| Country code | July | August |
 |---|---:|---:|
-| Gouvernement / Administration | 11 | 6 |
-| Finance / Banque | 1 | 6 |
-| Télécommunications | 4 | 1 |
-| Santé / Médical | 4 | 1 |
-| Ingénierie / Construction | 3 | 1 |
-| Éducation | 3 | 0 |
-| E-commerce / Retail | 3 | 1 |
-| Pétrole / Énergie | 2 | 0 |
-| Transport, Immobilier, Voyage | 3 | 3 |
-| Ressources humaines / Recrutement | 0 | 3 |
-| Restauration | 0 | 2 |
-| Autres secteurs identifiés | 8 | 5 |
-| **Total** | **42** | **29** |
+| ZA | 7 | 12 |
+| EG | 7 | 5 |
+| DZ | 4 | 5 |
+| MA | 6 | 3 |
+| TN | 7 | 0 |
+| NG | 4 | 2 |
+| CI | 5 | 0 |
+| KE | 2 | 2 |
+| CM | 2 | 1 |
+| GH | 2 | 0 |
+| BW | 1 | 0 |
+| GA | 0 | 1 |
+| LY | 0 | 1 |
+| MU | 0 | 1 |
+| SS | 1 | 0 |
 
-## Acteurs et lecture CTI
+## CTI reading
 
-Juillet était dominé par arcusmedia (4 fiches) et dragonforce (3). Août est dominé par KRYBIT (6), puis Orova, exfilar, incransom, medusalocker et thegentlemen (2 chacun). Cette rotation décrit les sources de publication observées, pas une attribution automatique des intrusions.
-
-La baisse de 31,0 % vient surtout des fuites et ventes d’accès. La hausse sud-africaine et le poids conjoint gouvernement-finance doivent guider la priorisation SOC, tout en conservant les statuts de revendication et les inconnues documentées dans les fiches.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+Le corpus évolue de 47 à 33 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

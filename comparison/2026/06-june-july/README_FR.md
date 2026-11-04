@@ -1,110 +1,50 @@
 # Comparaison AFRINTEL : juin et juillet 2026
 
-👉🏾 [Version anglaise](README.md)
+## Périmètre comparable
 
-## Comparaison générale
+Cette comparaison utilise les fichiers victimes bilingues validés : **41 fiches en juin** et **47 fiches en juillet**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Juin | Juillet | Évolution |
 |---|---:|---:|---:|
-| Fiches d'incidents uniques | 40 | 42 | +2 (+5,0 %) |
-| Ransomware | 20 | 18 | -2 (-10,0 %) |
-| Ventes d'accès | 2 | 6 | +4 (+200,0 %) |
-| Fuites et ventes d'accès regroupées | 20 | 24 | +4 (+20,0 %) |
-| Occurrences géographiques | 53 | 43 | -10 (-18,9 %) |
-| Pays dans la vue géographique | 20 | 12 | -8 |
-
-Juillet compte deux fiches uniques de plus que juin, mais les publications ransomware reculent. Les ventes d'accès progressent de deux à six fiches. La baisse des occurrences géographiques s'explique par les deux grandes offres d'accès multi-pays de juin, alors que juillet comprend une fiche multi-pays relative à des données d'identité et une fiche MTN dont l'entité nationale reste non confirmée.
-
-## Évolution par type d'incident
-
-| Type d'incident | Juin | Juillet | Évolution |
-|---|---:|---:|---:|
+| Total incidents | **41** | **47** | **+6 (+14.6%)** |
 | Ransomware | 20 | 18 | -2 |
-| Fuites de données | 18 | 18 | 0 |
-| Ventes d'accès | 2 | 6 | +4 |
-| Défacement | 0 | 0 | 0 |
-| **Total** | **40** | **42** | **+2** |
+| Fuite de données | 18 | 21 | +3 |
+| Vente d'accès | 2 | 6 | +4 |
+| Défacement | 0 | 2 | +2 |
+| Intrusion système | 1 | 0 | -1 |
 
-Le changement mensuel vient surtout de la hausse de la catégorie regroupant fuites et ventes d'accès, parallèlement au recul des publications ransomware. Juillet distingue séparément 18 fuites de données et 6 ventes d'accès.
+```mermaid
+xychart-beta
+    title "Fiches mensuelles : juin vs juillet 2026"
+    x-axis [Juin, Juillet]
+    y-axis "Records" 0 --> 52
+    bar [41, 47]
+```
 
-## Évolution par pays
+## Countries represented
 
-Le tableau utilise les occurrences géographiques. Les allocations multi-pays apparaissent dans chaque vue nationale, mais restent une seule fiche dans le total global.
-
-| Pays | Juin | Juillet | Évolution |
-|---|---:|---:|---:|
-| 🇲🇦 Maroc | 10 | 6 | -4 |
-| 🇿🇦 Afrique du Sud | 6 | 6 | 0 |
-| 🇪🇬 Égypte | 6 | 7 | +1 |
-| 🇳🇬 Nigeria | 5 | 4 | -1 |
-| 🇹🇳 Tunisie | 4 | 7 | +3 |
-| 🇱🇾 Libye | 3 | 0 | -3 |
-| 🇹🇿 Tanzanie | 3 | 0 | -3 |
-| 🇰🇪 Kenya | 3 | 1 | -2 |
-| 🇿🇲 Zambie | 2 | 0 | -2 |
-| 🇨🇮 Côte d'Ivoire | 0 | 3 | +3 |
-| 🇩🇿 Algérie | 1 | 4 | +3 |
-| 🇬🇭 Ghana | 0 | 2 | +2 |
-| 🇨🇲 Cameroun | 0 | 1 | +1 |
-| 🇸🇸 Soudan du Sud | 0 | 1 | +1 |
-| Autres pays présents seulement en juin | 5 | 0 | -5 |
-
-Le Maroc reste un point important, mais passe de dix à six occurrences géographiques. La Tunisie passe de quatre à sept, sous l'effet des fuites et des ventes d'accès. La Côte d'Ivoire et le Ghana apparaissent dans la vue de juillet, tandis que plusieurs pays présents seulement en juin étaient liés aux offres d'accès multi-pays.
-
-## Évolution par secteur
-
-Les libellés sectoriels sont normalisés dans chaque corpus mensuel. La comparaison est indicative, car juillet utilise des libellés plus détaillés pour plusieurs secteurs unitaires.
-
-| Secteur | Juin | Juillet | Évolution |
-|---|---:|---:|---:|
-| Gouvernement / Administration | 12 | 11 | -1 |
-| Télécommunications | 0 | 5 | +5 |
-| Santé / Médical | 3 | 4 | +1 |
-| Éducation / Universités | 4 | 3 | -1 |
-| E-commerce / Distribution | 4 | 3 | -1 |
-| Technologie / Ingénierie | 0 | 3 | +3 |
-| Finance / Banque | 6 | 1 | -5 |
-| Pétrole et énergie | 0 | 2 | +2 |
-| Transport / Logistique | 2 | 1 | -1 |
-| Services de sécurité | 1 | 1 | 0 |
-| Mines | 1 | 1 | 0 |
-| Autres secteurs identifiés | 7 | 8 | +1 |
-
-Le gouvernement reste le premier secteur sur les deux mois. Juillet est davantage marqué par les télécommunications et la technologie, tandis que juin présentait une concentration plus forte dans la finance.
-
-## Évolution des acteurs
-
-| Acteur ou source | Juin | Juillet |
+| Country code | June | July |
 |---|---:|---:|
-| anisanas2 | 7 | 0 |
-| DeadLock | 4 | 0 |
-| LockBit 5 | 3 | 0 |
-| arcusmedia | 0 | 4 |
-| dragonforce | 0 | 3 |
-| krybit | 2 | 2 |
-| BIGBROTHER | 0 | 2 |
-| TheGentlemen | 0 | 2 |
-| Phantom Atlas | 0 | 2 |
+| MA | 9 | 6 |
+| ZA | 7 | 7 |
+| EG | 4 | 7 |
+| TN | 3 | 7 |
+| NG | 4 | 4 |
+| CI | 0 | 5 |
+| DZ | 0 | 4 |
+| KE | 1 | 2 |
+| LY | 3 | 0 |
+| BW | 1 | 1 |
+| CM | 0 | 2 |
+| GA | 2 | 0 |
+| GH | 0 | 2 |
+| MU | 1 | 0 |
+| SN | 1 | 0 |
+| SS | 0 | 1 |
+| TZ | 1 | 0 |
+| YT | 1 | 0 |
+| ZW | 1 | 0 |
 
-Le profil des acteurs change nettement. Juin était dominé par anisanas2 et DeadLock, tandis que juillet est porté par arcusmedia et dragonforce. Krybit est présent dans les deux mois avec deux fiches à chaque période.
+## CTI reading
 
-## Évaluation CTI
-
-Juillet ne doit pas être lu comme une simple continuation de juin. Le total augmente légèrement, mais la répartition s'éloigne du ransomware au profit du courtage d'accès. La Tunisie devient plus présente, tandis que le Maroc reste important avec une concentration moindre qu'en juin.
-
-La structure géographique diffère également. Juin comprenait des offres d'accès multi-pays touchant de nombreux États africains. Juillet présente une empreinte géographique plus réduite, avec une fiche de données d'identité concernant le Nigeria et la Côte d'Ivoire, ainsi qu'une incertitude sur l'entité nationale MTN.
-
-## Priorités SOC
-
-1. Maintenir la préparation ransomware malgré le léger recul des publications.
-2. Renforcer la surveillance des offres d'accès administratifs, Fortinet, VPN, webmail et télécoms.
-3. Prioriser les référentiels d'identité, de santé, d'éducation et de paiement pour la détection des exports massifs.
-4. Améliorer l'inventaire des filiales nationales lorsqu'un domaine de groupe est mentionné.
-5. Séparer les compromissions originales, les republications et les revendications de vente d'accès lors du triage.
-6. Suivre les victimes récurrentes entre les mois sans fusionner les fiches lorsqu'aucun élément ne démontre une intrusion commune.
-
-## Conclusion
-
-Juin compte 40 incidents uniques contre 42 en juillet. Le ransomware recule de 20 à 18 fiches. La catégorie regroupant fuites et ventes d'accès passe de 20 à 24, tandis que les ventes d'accès explicitement classées progressent de deux à six. Le changement opérationnel principal est la visibilité accrue du courtage d'accès en juillet.
-
-*AFRINTEL, Open African CTI Monitoring Initiative*
+Le corpus évolue de 41 à 47 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

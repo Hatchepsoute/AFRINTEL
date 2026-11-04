@@ -4,17 +4,17 @@
 
 ## 1. Synthèse exécutive
 
-En Novembre 2024, AFRINTEL retient **15 cyberincidents canoniques dans 10 pays**. Le mois est dominé par **Ransomware (12, 80,0 %)** puis **Access Sale (2, 13,3 %)**. Les pays les plus représentés sont **Afrique du Sud (3)**, **Nigeria (2)**, **Égypte (2)**. Les secteurs les plus visibles sont **Industrie / Fabrication (3)**, **Services professionnels / Business (2)**, **Gouvernement / Administration (2)**. Les labels acteur/groupe les plus fréquents sont `killsec` (3), `ransomhub` (2), `Sentap` (2). `Unknown` désigne une absence d'attribution, pas un groupe.
+En Novembre 2024, AFRINTEL retient **16 cyberincidents canoniques dans 11 pays**. Le mois est dominé par **Ransomware (12, 75,0 %)**, puis **Data Leak (2, 12,5 %)** et **Access Sale (2, 12,5 %)**. Les pays les plus représentés sont **Afrique du Sud (3)**, **Nigeria (2)** et **Égypte (2)**. Les secteurs les plus visibles sont **Industrie / Fabrication (3)**, **Services professionnels / Business (2)**, **Gouvernement / Administration (2)** et **Commerce / E-commerce (1)**. Les labels acteur/groupe les plus fréquents sont `killsec` (3), `ransomhub` (2), `Sentap` (2) et `X0Frankenstein` (1). `Unknown` désigne une absence d'attribution, pas un groupe.
 
-La maturité de preuve est répartie entre **Claim - Unverified: 11**, **Claim - Data Sample Published: 3**, **Confirmed: 1**. Les claims ne sont pas convertis en confirmations sans preuve supplémentaire.
+La maturité de preuve est répartie entre **Claim - Unverified: 11**, **Claim - Data Sample Published: 4**, **Confirmed: 1**. Les positions de preuve restent distinctes du type d'incident.
 
 ### 1.1 Étude comparative avec le mois précédent
 
 | Indicateur | Octobre 2024 | Novembre 2024 | Évolution |
 |---|---|---|---|
-| Total | 11 | 15 | +4 (+36,4 %) |
+| Total | 11 | 16 | +5 (+45,5 %) |
 | Ransomware | 8 | 12 | +4 (+50,0 %) |
-| Data Leak | 2 | 1 | -1 (-50,0 %) |
+| Data Leak | 2 | 2 | Stable |
 | Access Sale | 0 | 2 | +2 (nouveau) |
 | DDoS | 0 | 0 | Stable |
 | Defacement | 0 | 0 | Stable |
@@ -25,7 +25,7 @@ La maturité de preuve est répartie entre **Claim - Unverified: 11**, **Claim -
 
 ### 1.2 Analyse comparative
 
-Le volume mensuel **augmente de 4 incident(s)**. Les variations structurantes sont : Ransomware 8->12 (+4), Access Sale 0->2 (+2), System Intrusion 1->0 (-1), Data Leak 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
+Le volume mensuel **augmente de 5 incidents**. Les variations structurantes sont : Ransomware 8->12 (+4), Access Sale 0->2 (+2), Data Leak 2->2 (stable) et System Intrusion 1->0 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
 
 ## 2. Méthodologie
 
@@ -41,7 +41,7 @@ Le volume mensuel **augmente de 4 incident(s)**. Les variations structurantes so
 | Type | Fiches | Part |
 |---|---|---|
 | Ransomware | 12 | 80,0 % |
-| Data Leak | 1 | 6,7 % |
+| Data Leak | 2 | 12,5 % |
 | Access Sale | 2 | 13,3 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
@@ -54,7 +54,7 @@ Le volume mensuel **augmente de 4 incident(s)**. Les variations structurantes so
 pie showData
     title Types d'incident - Novembre 2024
     "Ransomware" : 12
-    "Data Leak" : 1
+    "Data Leak" : 2
     "Access Sale" : 2
 ```
 
@@ -63,6 +63,7 @@ pie showData
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware | Operational Fraud |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Afrique du Sud | 3 | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nigeria | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Égypte | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Burkina Faso | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -93,6 +94,7 @@ pie showData
 | Santé / Médical | 2 | 13,3 % |
 | Technologie / IT | 2 | 13,3 % |
 | Finance / Banque | 2 | 13,3 % |
+| Commerce / E-commerce | 1 | 6,3 % |
 | Éducation / Université | 1 | 6,7 % |
 | Agriculture / Agro-industrie | 1 | 6,7 % |
 
@@ -117,7 +119,7 @@ pie showData
 | Position de preuve | Fiches | Part |
 |---|---|---|
 | Claim - Unverified | 11 | 73,3 % |
-| Claim - Data Sample Published | 3 | 20,0 % |
+| Claim - Data Sample Published | 4 | 25,0 % |
 | Confirmed | 1 | 6,7 % |
 
 ### Confiance
@@ -126,7 +128,7 @@ pie showData
 |---|---|---|
 | Low | 11 | 73,3 % |
 | Very High | 2 | 13,3 % |
-| Medium | 2 | 13,3 % |
+| Medium | 3 | 18,8 % |
 
 ## 9. Chronologie
 
@@ -147,6 +149,7 @@ timeline
 ----------------------------
 
 - **Qualification de la preuve -** L'archive examinée soutient fortement une compromission réelle et importante de données internes associée à Sumitomo Rubber South Africa. Elle n'établit pas indépendamment le vecteur d'accès initial, le comportement de chiffrement ransomware ni l'étendue complète d'une exfiltration distincte au-delà de l'archive examinée.
+    3 Novembre 2024 : Original Shop Algeria - Data Leak
     4 Novembre 2024 : College of Business Education (CBE)
 - **Acteur / Groupe -** hellcat
 - **Secteur -** Education / University
@@ -323,9 +326,9 @@ timeline
 
 **2 fiche(s) (13,3 %).** Principaux pays : Burkina Faso (2). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
 
-### Data Leak - 1
+### Data Leak - 2
 
-**1 fiche(s) (6,7 %).** Principaux pays : Afrique du Sud (1). Les conclusions restent limitées aux éléments documentés ; le type ne permet pas d'inférer un vecteur ou un impact non observé.
+**2 fiche(s) (12,5 %).** Principaux pays : Afrique du Sud (1), Algérie (1). Les éléments publiés comprennent un échantillon CSV associé à Original Shop Algeria ; les données personnelles et secrets ne sont pas reproduits.
 
 ## 11. Incidents prioritaires pour revue
 
@@ -421,8 +424,19 @@ timeline
 
 ## 14. Conclusion
 
-Novembre 2024 contient **15 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
+Novembre 2024 contient **16 incidents canoniques**. La comparaison avec le mois précédent est calculée sur la même taxonomie et les mêmes règles chronologiques, sauf janvier où décembre 2023 reste `N/A` faute de réaudit homogène.
 
 👉🏾 [Victimes canoniques](./victims_FR.md)
 
 **AFRINTEL** - TLP:CLEAR
+
+### Visualisations
+
+![Types](assets/type_FR.png)
+![Types en secteurs circulaires](assets/type_pie_FR.png)
+![Pays](assets/geo_FR.png)
+![Pays en secteurs circulaires](assets/geo_pie_FR.png)
+![Secteurs](assets/sector_FR.png)
+![Secteurs en secteurs circulaires](assets/sector_pie_FR.png)
+![Acteurs](assets/actor_top10_FR.png)
+![Top 5 pays](assets/country_top5_FR.png)

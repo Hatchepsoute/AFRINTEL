@@ -1,4 +1,4 @@
-# AFRINTEL Cyber Incidents - November 2024 - canonical corpus (15 records)
+# AFRINTEL Cyber Incidents - November 2024 - canonical corpus (16 records)
 
 👉🏾 [Version française](./victims_FR.md)
 
@@ -22,6 +22,22 @@
 
 - **Evidence qualification:** The reviewed archive strongly supports a genuine large-scale internal-data compromise associated with Sumitomo Rubber South Africa. It does not independently establish the initial-access vector, ransomware encryption behavior or the full scope of any separate exfiltration beyond the reviewed archive.
 
+### November 3, 2024
+
+#### 🇩🇿 Algeria - Original Shop Algeria
+- **Actor / Group:** X0Frankenstein
+- **Sector:** Commerce / E-commerce
+- **Website:** [originalshopalgerie.com](https://originalshopalgerie.com/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 3
+- **Victim description:** Original Shop Algeria is an Algerian online retailer operating on `originalshopalgerie.com`.
+- **Publication description:** A post dated November 3, 2024 associates a CSV file with the domain and presents it as a database of approximately 11,000 lines. The post also states a claimed leak period in 2022.
+- **Analysis:** The visible sample has a user-account structure containing identifiers, profile and contact information, addresses, account status, timestamps and authentication-related elements. Personal values, passwords, tokens and other secrets are not reproduced. The publication date is established by the observed source; the initial access date, database completeness, current validity of the secrets and victim confirmation remain unknown.
+
+----------------------------
+
 ### November 4, 2024
 
 #### 🇹🇿 Tanzania - College of Business Education (CBE)
@@ -35,8 +51,6 @@
 - **Victim Description:** The College of Business Education (CBE) is a Tanzanian higher education institution offering programmes in business, management, accounting, and related professional fields.
 
 ----------------------------
-
-### November 4, 2024
 
 #### 🇸🇩 Sudan - Kenana Sugar Company
 - **Actor / Group:** ransomhub

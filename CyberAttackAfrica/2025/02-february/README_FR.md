@@ -6,17 +6,17 @@
 
 ## 1. Synthèse exécutive
 
-En Février 2025, AFRINTEL documente **10 cyberincidents** affectant des organisations et services numériques dans **7 pays africains**.
+En Février 2025, AFRINTEL documente **11 cyberincidents** affectant des organisations et services numériques dans **7 pays africains**.
 
-Le paysage est dominé par **Ransomware avec 8 fiches (80,0 %)**, suivi de **Account Takeover avec 2 (20,0 %)**.
+Le paysage est dominé par **Ransomware avec 8 fiches (72,7 %)**, suivi de **Account Takeover avec 2 (18,2 %)** et de **Data Leak avec 1 fiche (9,1 %)**.
 
-La concentration géographique est marquée : **Égypte (3)**, **Kenya (2)**, **Maroc (1)** représentent ensemble **6 fiches, soit 60,0 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
+La concentration géographique est marquée : **Égypte (3)**, **Kenya (2)** et **Afrique du Sud (2)** représentent ensemble **7 fiches, soit 63,6 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
-Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (2)**, **Finance / Banque (2)**, **Technologie / IT (1)**. Les labels d'acteurs les plus fréquents sont `Unknown` (2), `ransomhub` (2), `killsec` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
+Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (2)**, **Finance / Banque (2)** et **Services professionnels / Business (2)**. Les labels d'acteurs les plus fréquents sont `Unknown` (2), `ransomhub` (2) et `killsec` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
 
-La maturité des preuves reste variable : **8 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+La maturité des preuves reste variable : **9 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à Janvier, le volume mensuel **diminue de 9 fiches**. Les variations les plus visibles concernent Ransomware 16->8 (-8), Data Leak 2->0 (-2), Account Takeover 1->2 (+1).
+Par rapport à Janvier, le volume mensuel **diminue de 8 fiches**. Les variations les plus visibles concernent Ransomware 16->8 (-8), Data Leak 2->1 (-1), Account Takeover 1->2 (+1).
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +24,9 @@ Par rapport à Janvier, le volume mensuel **diminue de 9 fiches**. Les variation
 
 | Indicateur | Janvier 2025 | Février 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 19 | 10 | **-9 (-47,4 %)** |
+| Total incidents | 19 | 11 | **-8 (-42,1 %)** |
 | Ransomware | 16 | 8 | **-8 (-50,0 %)** |
-| Data Leak | 2 | 0 | **-2 (-100,0 %)** |
+| Data Leak | 2 | 1 | **-1 (-50,0 %)** |
 | Access Sale | 0 | 0 | **Stable** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 0 | 0 | **Stable** |
@@ -55,7 +55,7 @@ Par rapport à Janvier, le volume mensuel **diminue de 9 fiches**. Les variation
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents documentés | **10** |
+| Incidents documentés | **11** |
 | Pays représentés | **7** |
 | Régions représentées | **4** |
 | Premier pays | **Égypte (3)** |
@@ -64,21 +64,22 @@ Par rapport à Janvier, le volume mensuel **diminue de 9 fiches**. Les variation
 
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
-| Ransomware | 8 | 80,0 % |
-| Data Leak | 0 | 0,0 % |
+| Ransomware | 8 | 72,7 % |
+| Data Leak | 1 | 9,1 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
-| Account Takeover | 2 | 20,0 % |
+| Account Takeover | 2 | 18,2 % |
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **10** | **100 %** |
+| **Total** | **11** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Février 2025
     "Ransomware" : 8
+    "Data Leak" : 1
     "Account Takeover" : 2
 ```
 
@@ -89,11 +90,11 @@ pie showData
 | Égypte | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **2** | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Maroc | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Afrique du Sud | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Afrique du Sud | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ghana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **10** | **8** | **0** | **0** | **0** | **0** | **2** | **0** | **0** |
+| **Total** | **11** | **8** | **1** | **0** | **0** | **0** | **2** | **0** | **0** |
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
@@ -102,10 +103,10 @@ pie showData
 | Région | Fiches | Part |
 |---|---:|---:|
 | Afrique du Nord | 4 | 40,0 % |
-| Afrique australe | 3 | 30,0 % |
+| Afrique australe | 4 | 36,4 % |
 | Afrique de l'Est | 2 | 20,0 % |
 | Afrique de l'Ouest | 1 | 10,0 % |
-| **Total** | **10** | **100 %** |
+| **Total** | **11** | **100 %** |
 
 La région la plus représentée est **Afrique du Nord avec 4 fiches (40,0 %)**.
 
@@ -120,8 +121,8 @@ La région la plus représentée est **Afrique du Nord avec 4 fiches (40,0 %)**.
 | Non précisé | 1 | 10,0 % | █ |
 | Télécommunications | 1 | 10,0 % | █ |
 | Transport / Logistique | 1 | 10,0 % | █ |
-| Services professionnels / Business | 1 | 10,0 % | █ |
-| **Total** | **10** | **100 %** | |
+| Services professionnels / Business | 2 | 18,2 % | ██ |
+| **Total** | **11** | **100 %** | |
 
 ## 7. Acteurs / groupes
 
@@ -136,15 +137,16 @@ La région la plus représentée est **Afrique du Nord avec 4 fiches (40,0 %)**.
 | flocker | 1 | █ |
 | akira | 1 | █ |
 | hunter | 1 | █ |
+| Al-Sheikh | 1 | █ |
 
 ## 8. Maturité des preuves
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
 | Claim - Unverified | 5 | 50,0 % |
-| Claim - Data Sample Published | 3 | 30,0 % |
+| Claim - Data Sample Published | 4 | 36,4 % |
 | Confirmation victime / gouvernement / autorité | 2 | 20,0 % |
-| **Total** | **10** | **100 %** |
+| **Total** | **11** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
@@ -158,6 +160,7 @@ timeline
     09 Février 2025 : Directorate of Criminal Investigations (DCI)
     12 Février 2025 : ASK Gras Savoye (askgs.ma)
     12 Février 2025 : South African Weather Service (SAWS)
+    12 Février 2025 : Unique Personnel
     19 Février 2025 : Government Services Portal (services.gov.zm)
     19 Février 2025 : Brolly
     21 Février 2025 : Paratus
@@ -171,6 +174,10 @@ timeline
 
 **8 fiches** sont classées Ransomware. Principaux pays : Égypte (3), Maroc (1), Afrique du Sud (1). Une publication sur un leak site ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.
 
+### Data Leak
+
+**1 fiche** est classée Data Leak : Unique Personnel en Afrique du Sud. La publication contient un échantillon visible de tables de comptes, clients et candidats ; l'analyse reste limitée aux éléments visibles.
+
 ### Account Takeover
 
 **2 Account Takeover** sont documentés. Répartition : Kenya (2). Cette catégorie conserve séparément les compromissions de comptes institutionnels.
@@ -181,6 +188,7 @@ timeline
 |---|---|---|---|---|---|
 | Kenya | Directorate of Criminal Investigations (DCI) | Account Takeover | Victim Confirmed | Level 4 | Very High |
 | Kenya | K24 TV | Account Takeover | Victim Confirmed | Level 3 | High |
+| Afrique du Sud | Unique Personnel (`unique.co.za`) | Data Leak | Claim - Data Sample Published | Level 4 | High |
 | Égypte | Shaghalni | Ransomware | Claim - Data Sample Published | Level 3 | High |
 | Égypte | Xlab Group | Ransomware | Claim - Unverified | N/A | N/A |
 | Maroc | ASK Gras Savoye (askgs.ma) | Ransomware | Claim - Unverified | N/A | N/A |
@@ -190,10 +198,10 @@ timeline
 ## 12. Principaux enseignements et lacunes de renseignement
 
 - **Concentration géographique :** Égypte représente 3 fiches (30,0 %), devant Kenya (2) et Maroc (1).
-- **Structure de menace :** Ransomware est le premier type avec 8 fiches, suivi de Account Takeover (2).
+- **Structure de menace :** Ransomware est le premier type avec 8 fiches, suivi de Account Takeover (2) et Data Leak (1).
 - **Secteurs :** Gouvernement / Administration (2) et Finance / Banque (2) concentrent la plus forte visibilité.
 - **Acteurs :** les labels les plus fréquents sont Unknown (2), ransomhub (2) et killsec (2).
-- **Preuve :** 8 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
+- **Preuve :** 9 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
 
 ### Intelligence gaps
 
@@ -231,7 +239,7 @@ Ces lacunes doivent guider la collecte sans être remplacées par des hypothèse
 
 ## 14. Conclusion
 
-Le mois de **Février 2025** compte **10 cyberincidents documentés** dans **7 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
+Le mois de **Février 2025** compte **11 cyberincidents documentés** dans **7 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
 
 Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
 

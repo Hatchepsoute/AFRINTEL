@@ -1,4 +1,4 @@
-# AFRINTEL Cyber Incidents - December 2024 - canonical corpus (16 records)
+# AFRINTEL Cyber Incidents - December 2024 - canonical corpus (18 records)
 
 👉🏾 [Version française](./victims_FR.md)
 
@@ -193,6 +193,33 @@
 
 - **Evidence qualification:** The reviewed server-side material strongly supports file-system-level compromise associated with ASJP. It does not independently establish ransomware encryption, service interruption or the original access mechanism.
 
+### December 25, 2024
+#### 🇲🇦 Morocco - marocdeal.com
+
+- **Initial publication date:** December 25, 2024 at 14:41 (displayed timestamp; timezone not specified). Modified February 4, 2025 at 20:23.
+- **AFRINTEL detection date:** November 4, 2026
+- **Actor / Source:** Nowon, Breached Forums publication
+- **Sector:** E-commerce / Digital services / WordPress
+- **Website:** [marocdeal.com](https://marocdeal.com/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium for the existence of the publication and WordPress schema consistency; Low for technical attribution to the site
+- **Impact level:** Level 3
+- **Source type:** Forum capture and visible CSV sample
+
+- **Analysis:** The publication announces a French WordPress database associated with `marocdeal.com` and claims approximately **35,000 users**. The visible sample contains a `wp_users` header and **32 account rows**. Exposed fields include login identifiers, usernames, email addresses, account status and WordPress password hashes in phpass format. An activation key is also visible in some records. No email, username, hash, key, download URL or other raw value is reproduced in the repository.
+
+  The structure is consistent with a WordPress `wp_users` export, but the capture alone cannot validate the claimed **35,000 accounts**, technical origin, completeness, number of unique people, hash validity or current access to the site.
+
+- **Observed:** publication attributed to Nowon, `marocdeal.com` domain, visible WordPress sample, 32 visible rows and account fields.
+- **Assumption:** association with a marocdeal.com WordPress environment is plausible; a historical copy, backup or provider export remains possible.
+- **Unknown:** access vector and date, exact source system, extraction method, complete volume, duplicates, validity of hashes and keys, operational impact, confirmation by marocdeal.com and the author's real identity.
+- **Scope and limitations:** analysis limited to data visible in the supplied capture; the original source file was unavailable. No link was followed and no active content was executed.
+- **Risk assessment:** potential offline cracking of hashes, password reuse, account takeover, targeted phishing and misuse of activation keys.
+- **SOC/CTI recommendations:** reset potentially exposed accounts, invalidate sessions and activation keys, search for secret reuse, review WordPress and hosting logs around December 25, 2024, and audit extensions and administrator accounts.
+- **Source / provenance:** capture supplied to AFRINTEL; raw data and the displayed download link are not reproduced.
+
+@@
 ### December 28, 2024
 
 #### 🇿🇦 South Africa - Cell C

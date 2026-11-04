@@ -1,4 +1,4 @@
-# Cyberincidents AFRINTEL - Décembre 2024 - corpus canonique (16 fiches)
+# Cyberincidents AFRINTEL - Décembre 2024 - corpus canonique (18 fiches)
 
 👉🏾 [English version](./victims.md)
 
@@ -193,6 +193,33 @@
 
 - **Qualification de la preuve:** Le matériel côté serveur examiné soutient fortement une compromission au niveau du système de fichiers associée à ASJP. Il n'établit pas indépendamment un chiffrement ransomware, une interruption de service ni le mécanisme d'accès initial.
 
+### 25 Décembre 2024
+#### 🇲🇦 Maroc - marocdeal.com
+
+- **Date de publication initiale:** 25 décembre 2024 à 14:41 (horodatage affiché ; fuseau non indiqué). Publication modifiée le 4 février 2025 à 20:23.
+- **Date de détection AFRINTEL:** 4 novembre 2026
+- **Acteur / Source:** Nowon, publication sur Breached Forums
+- **Secteur:** Commerce en ligne / Services numériques / WordPress
+- **Site web:** [marocdeal.com](https://marocdeal.com/)
+- **Statut:** Claim - Data Sample Published
+- **Type d'incident:** Data Leak
+- **Niveau de confiance:** Medium pour l'existence de la publication et la cohérence du schéma WordPress ; Low pour l'attribution technique au site
+- **Niveau d'impact:** Level 3
+- **Type de source:** Capture de forum et échantillon CSV visible
+
+- **Analyse:** La publication annonce une base WordPress française associée à `marocdeal.com` et revendique environ **35 000 utilisateurs**. L'échantillon visible contient un en-tête `wp_users` et **32 lignes de comptes**. Les champs exposés comprennent des identifiants de connexion, noms d'utilisateur, adresses électroniques, statuts de compte et empreintes de mots de passe WordPress au format phpass. Une clé d'activation est également visible dans certains enregistrements. Aucun e-mail, nom d'utilisateur, hash, clé, URL de téléchargement ou autre valeur brute n'est reproduit dans le dépôt.
+
+  La structure est cohérente avec un export de la table WordPress `wp_users`, mais la capture seule ne permet pas de valider les **35 000 comptes** annoncés, l'origine technique du fichier, l'exhaustivité, le nombre de personnes uniques, la validité des empreintes ou l'accès actuel au site.
+
+- **Observed :** publication attribuée à Nowon, domaine `marocdeal.com`, échantillon WordPress visible, 32 lignes visibles et exposition de champs de comptes.
+- **Assumption :** l'association avec un environnement WordPress de marocdeal.com est plausible ; une copie historique, une sauvegarde ou un export provenant d'un prestataire restent possibles.
+- **Unknown :** vecteur et date d'accès, système source exact, méthode d'extraction, volume complet, doublons, validité des hash et clés, impact opérationnel, confirmation par marocdeal.com et identité réelle de l'auteur.
+- **Périmètre et limites:** analyse limitée aux données visibles dans la capture fournie ; le fichier source original n'était pas disponible. Aucun lien n'a été suivi et aucun contenu actif n'a été exécuté.
+- **Évaluation des risques:** risque potentiel de craquage hors ligne des empreintes, réutilisation de mots de passe, prise de contrôle de comptes, phishing ciblé et exploitation de clés d'activation.
+- **Recommandations SOC/CTI:** réinitialiser les comptes potentiellement exposés, invalider les sessions et clés d'activation, rechercher la réutilisation de secrets, vérifier les journaux WordPress et d'hébergement autour du 25 décembre 2024 et contrôler les extensions et comptes administrateurs.
+- **Source / provenance:** capture fournie à AFRINTEL ; les données brutes et le lien de téléchargement affiché ne sont pas reproduits.
+
+@@
 ### 28 Décembre 2024
 
 #### 🇿🇦 Afrique du Sud - Cell C
