@@ -635,124 +635,42 @@
 - **Sources / Éléments de preuve :** [site officiel de Helwan University](https://www.helwan.edu.eg/) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
 
-### 11 octobre 2026
-#### 🇲🇦 Maroc - Decathlon Maroc
+#### 🇲🇦 Maroc - Decathlon Maroc (`decathlon.ma`) [Data Leak]
 
-- **Secteur :** Commerce de détail / Distribution / E-commerce
-- **Victime :** Decathlon Maroc
-- **Site web :** https://www.decathlon.ma/
-- **Date de publication initiale :** 11 octobre 2026
-- **Date de détection AFRINTEL :** 11 octobre 2026
-- **Type d'incident :** Data Leak / Fuite présumée de données personnelles
-- **Acteur / Groupe :** Nameless511
-- **Volume revendiqué :** Plus de 24 438 commandes clients
+- **Date de publication initiale :** 10 octobre 2026 à 23 h 23 (horodatage affiché sur le forum ; fuseau horaire non précisé)
+- **Date de détection AFRINTEL :** 11 octobre 2026 (date de suivi déjà retenue dans le corpus)
+- **Acteur / Groupe :** Nameless511 (pseudonyme de publication sur un forum underground ; identité et affiliation non établies)
+- **Secteur :** Commerce / Distribution d'articles de sport / E-commerce
+- **Site web :** [decathlon.ma](https://www.decathlon.ma/)
+- **Type d'incident :** Data Leak
+- **Sous-type :** Exposition présumée de données de commandes, de clients et de logistique
 - **Statut :** Claim - Data Sample Published
 - **Niveau de confiance :** Medium
+- **Volumes revendiqués :** « +26K rows » dans le titre ; environ « 24 438+ commandes clients » dans le corps de la publication. Ces deux mesures ne portent pas nécessairement sur la même unité et ne sont pas validées par l'échantillon.
+- **Type de source :** Publication observée sur un forum underground (captures fournies) ; échantillon CSV et version reconstituée examinés en lecture seule.
+
+**Description de la victime :** Decathlon Maroc commercialise des articles et équipements sportifs par l'intermédiaire de points de vente et d'une boutique en ligne. La publication cite six enseignes ou canaux de distribution : Kénitra, Corniche, Rabat, Ecom, Marina et Derb Ghallef. Les fichiers examinés mentionnent également d'autres magasins.
+
+**Éléments observés :** Une publication attribuée au compte Nameless511, affichée le **10 octobre 2026 à 23 h 23**, prétend divulguer une base de clients et de commandes de Decathlon Maroc. La capture annonce des noms, téléphones, adresses, coordonnées GPS, informations de commande, modalités de paiement, instructions de livraison, commentaires et interventions de montage, retour ou réparation. Les affirmations selon lesquelles les numéros seraient actifs et vérifiés ou que l'ensemble des données serait complet n'ont pas fait l'objet d'une validation indépendante.
+
+L'échantillon CSV fourni a été reconstitué sous forme tabulaire : **522 lignes de données, 30 colonnes** et **522 identifiants techniques de commande distincts**. Il comporte **496 références de commande renseignées**, dont **420 distinctes**. Cela ne signifie pas qu'il existe 522 commandes commerciales uniques ou 522 personnes différentes : des annulations, répétitions et opérations de service après-vente sont présentes.
+
+L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417 valeurs distinctes) et **470 lignes avec une paire de coordonnées GPS renseignée**. Ces décomptes concernent des champs présents, pas des numéros actifs ni des localisations vérifiées. Les statuts affichés se répartissent en **441 « DELIVERED »**, **78 « CANCELLED »** et **3 « NOT_DELIVERED »**. Les dates d'ajout vont du **29 septembre 2021 au 5 janvier 2022** ; une date de livraison est présente jusqu'au **7 janvier 2022**. L'horodatage de publication de 2026 ne constitue donc pas la date d'extraction des données.
+
+**Périmètre géographique et commercial :** Sept libellés de magasins figurent dans les **517 lignes** où ce champ est renseigné : Corniche (245), Derb Ghallef (115), Aïn Sebaâ (60), Marina (42), Kénitra (40), Agadir (14) et Rabat (1). Cinq lignes n'indiquent aucun magasin. Les mentions d'Aïn Sebaâ et d'Agadir proviennent de l'échantillon, même si ces magasins ne figurent pas dans la liste de six citée par l'acteur. Inversement, « Ecom » apparaît dans la publication mais pas comme libellé de magasin dans les 522 lignes.
+
+**Analyse CTI :** Les noms de magasins, les catégories de champs et la cohérence chronologique sont compatibles avec un export historique de gestion des commandes, livraisons et prestations associées à Decathlon Maroc. La provenance exacte des données reste à établir : export interne, prestataire logistique, application tierce ou copie historique. Les éléments examinés ne prouvent ni une intrusion directe dans le système d'information de Decathlon Maroc, ni le volume total revendiqué, ni la validité actuelle des coordonnées.
+
+**Risques :** Les catégories observées peuvent faciliter le phishing ou smishing contextualisé, la fraude aux livraisons et aux remboursements, l'usurpation d'un service client et des atteintes à la vie privée. La présence simultanée de coordonnées de contact et de localisation précise accroît la sensibilité du corpus. Il s'agit de risques potentiels, non d'abus observés par AFRINTEL.
+
+**Recommandations SOC / CTI :** Identifier les applications et prestataires pouvant accéder aux données de commandes et de livraison ; préserver les journaux IAM, applicatifs, API et d'exports ; rechercher les extractions volumineuses et usages inhabituels de comptes de service ; vérifier les habilitations des prestataires ; contrôler les changements d'adresse, de coordonnées bancaires et les demandes de remboursement ; évaluer le périmètre avant toute notification réglementaire. Ne pas tester des accès présentés sur le forum.
+
+**Évaluation AFRINTEL :** Publication et échantillon structuré observés ; association à des opérations commerciales et logistiques de Decathlon Maroc plausible ; **522 lignes analysées, et non plus de 24 438 commandes vérifiées** ; origine technique, exhaustivité, nombre de personnes concernées et compromission directe non établis.
+
+**Sources / Éléments de preuve :** Captures de la publication du 10 octobre 2026 fournies à AFRINTEL ; `decathlon.csv` et `decathlon_reconstitue.csv` analysés en lecture seule ; [site officiel de Decathlon Maroc](https://www.decathlon.ma/). Aucun nom de client, téléphone, adresse, coordonnée GPS, identifiant de commande individuel ou lien de téléchargement clandestin n'est reproduit dans cette fiche.
 
 
-##### Description de l'incident
-
-Un acteur malveillant utilisant le pseudonyme Nameless511a publié sur le forum DarkForums une revendication de fuite de données concernant Decathlon Maroc, enseigne spécialisée dans la distribution d'articles de sport.
-
-L'acteur affirme avoir divulgué une base contenant plus de 24 438 commandes clients associées à plusieurs magasins et canaux de distribution de Decathlon au Maroc.
-
-Les magasins et entités mentionnés dans la revendication sont :
-
-- Decathlon Kénitra
-- Decathlon Corniche
-- Decathlon Rabat
-- Decathlon Ecom
-- Decathlon Marina
-- Decathlon Derb Ghallef
-
-Selon l'acteur, les informations exposées comprennent :
-
-- Noms et prénoms des clients
-- Numéros de téléphone marocains
-- Adresses de livraison
-- Coordonnées GPS (latitude et longitude)
-- Identifiants et références de commandes
-- Montants et dates de livraison
-- Modes de paiement
-- Instructions de livraison
-- Commentaires et notes opérationnelles
-- Informations relatives aux montages, retours et réparations
-
-##### Éléments observés
-
-Un échantillon de données présenté dans la publication a été examiné dans le cadre de l'investigation CTI.
-
-L'échantillon reconstitué comprend 522 enregistrements et 30 colonnes, avec des informations structurées relatives aux commandes et aux opérations de livraison.
-
-Les enregistrements observés comportent notamment :
-
-- Des références de commandes
-- Des identifiants de magasins et dépôts
-- Des statuts de livraison
-- Des informations clients
-- Des adresses et coordonnées GPS
-- Des montants de commandes
-- Des informations de paiement
-- Des commentaires logistiques
-
-Les dates observées dans l'échantillon s'étendent
-du 29 septembre 2021 au 5 janvier 2022.
-
-Des fichiers Excel supplémentaires ont également été transmis via un lien partagé dans la publication de l'acteur.
-
-Leur appartenance au même jeu de données et leur relation exacte avec Decathlon Maroc restent à confirmer.
-
-##### Analyse CTI
-
-La structure de l'échantillon présente des caractéristiques compatibles avec un export d'une application de gestion des commandes, des tournées ou des livraisons.
-
-Ces éléments renforcent la crédibilité de l'existence de données opérationnelles associées à Decathlon Maroc.
-
-Toutefois, ils ne permettent pas de déterminer si l'exposition résulte :
-
-- D'une compromission directe de Decathlon Maroc ;
-- D'une compromission d'un prestataire logistique ;
-- D'un accès non autorisé à une plateforme tierce ;
-- D'une divulgation ultérieure d'une ancienne extraction.
-
-Le volume de 24 438 commandes reste une affirmation de l'acteur et n'a pas été vérifié indépendamment.
-
-La date de publication ne doit pas être assimilée à la chronologie technique de l’accès initiale.
-
-##### Risques potentiels
-
-- Phishing et smishing ciblés
-- Vishing et usurpation d'identité
-- Fraudes à la livraison
-- Ingénierie sociale
-- Exploitation des historiques de commandes
-- Atteintes à la vie privée liées aux coordonnées GPS
-- Ciblage géographique des personnes concernées
-
-##### Recommandations SOC/CTI
-
-- Vérifier l'origine et l'authenticité des données publiées.
-- Identifier les systèmes ou prestataires ayant accès
-  aux informations de commande et de livraison.
-- Rechercher les accès suspects et les exports massifs.
-- Examiner les journaux d'accès des plateformes logistiques.
-- Vérifier les habilitations des comptes internes et tiers.
-- Évaluer les obligations de notification applicables.
-- Informer les personnes concernées lorsque cela est requis.
-- Sensibiliser les clients aux tentatives de fraude
-  utilisant les informations de livraison.
-
-##### Conclusion
-
-La publication de Nameless511 constitue une revendication crédible nécessitant une investigation complémentaire.
-
-L'échantillon présente des données structurées cohérentes avec des opérations commerciales et logistiques associées à Decathlon Maroc.
-
-L'authenticité complète de la base, le volume réel des données exposées et l'origine de leur extraction restent à confirmer.
-
-Aucune compromission directe de l'infrastructure de Decathlon Maroc n'est établie à ce stade.
-
-
+### 11 octobre 2026
 #### 🇲🇦 Maroc - CNESTEN [Ransomware]
 - **Date de publication initiale :** 11 octobre 2026
 - **Domaine institutionnel :** [cnesten.org.ma](https://www.cnesten.org.ma/)
