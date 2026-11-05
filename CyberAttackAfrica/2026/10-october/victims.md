@@ -623,123 +623,42 @@
 - **Risk assessment:** Potential risks concern administrative systems, student accounts, learning platforms and personal data. No affected system is established.
 - **Sources / Evidence:** [Helwan University official website](https://www.helwan.edu.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-### October 11, 2026
 
-#### 🇲🇦 Morocco - Decathlon Morocco
+#### 🇲🇦 Morocco - Decathlon Morocco (`decathlon.ma`) [Data Leak]
 
-- **Sector:** Retail / Sporting Goods / E-commerce
-- **Victim:** Decathlon Morocco
-- **Website:** https://www.decathlon.ma/
-- **Initial publication date:** October 11, 2026
-- **AFRINTEL detection date:** October 11, 2026
-- **Incident Type:** Data Leak / Alleged Personal Data Exposure
-- **Threat Actor / Group:** Nameless511
-- **Claimed Volume:** More than 24,438 customer orders
+- **Initial publication date:** 10 October 2026 at 11:23 p.m. (forum-displayed timestamp; time zone unspecified)
+- **AFRINTEL detection date:** 11 October 2026 (previously recorded tracking date)
+- **Actor / Group:** Nameless511 (observed underground-forum account; real identity and affiliation unverified)
+- **Sector:** Retail / Sporting goods distribution / E-commerce
+- **Website:** [decathlon.ma](https://www.decathlon.ma/)
+- **Incident type:** Data Leak
+- **Subtype:** Alleged exposure of customer-order and logistics data
 - **Status:** Claim - Data Sample Published
-- **Confidence Level:** Medium
+- **Confidence level:** Medium
+- **Claimed volumes:** “+26K rows” in the post title; approximately “24,438+ customer orders” in the body. The two figures need not represent the same unit, and neither is validated by the available sample.
+- **Source type:** Underground forum post (supplied screenshots) and CSV sample plus reconstructed CSV reviewed read-only.
 
+**Victim description:** Decathlon Morocco is a sporting goods retailer operating stores and an online sales channel in Morocco. The actor names six outlets or channels: Kenitra, Corniche, Rabat, Ecom, Marina and Derb Ghallef. The reviewed data also contains other store labels.
 
-##### Incident Description
+**Observed evidence:** A post attributed to the Nameless511 account and displaying the timestamp **10 October 2026 at 11:23 p.m.** claims to release a Decathlon Morocco customer and order database. The screenshot advertises names, phone numbers, addresses, GPS coordinates, order details, payment methods, delivery instructions, employee comments and assembly, return or repair information. Claims that phone numbers are verified and active or that the dataset is complete have not been independently established.
 
-A threat actor operating under the alias Nameless511 published a data leak claim on the DarkForums cybercrime forum targeting Decathlon Morocco, a sporting goods retailer.
+The supplied raw CSV was reconstructed as a table containing **522 data rows and 30 columns**, with **522 distinct technical order identifiers**. It has **496 populated order-reference fields**, representing **420 distinct reference values**. These counts do not establish 522 unique commercial orders or affected individuals; cancellations, repeat entries and after-sales activities are present.
 
-The actor claims to have released a database containing more than 24,438 customer orders associated with several Decathlon stores and distribution channels in Morocco.
+**496 rows contain a populated phone-number field** (417 distinct values); **470 rows have both GPS-coordinate fields populated**. These figures do not establish current phone-number validity or geolocation accuracy. Status values comprise **441 DELIVERED**, **78 CANCELLED** and **3 NOT_DELIVERED** rows. Record creation dates range from **29 September 2021 to 5 January 2022**, while a delivery date reaches **7 January 2022**. The publication date is therefore not evidence of the original extraction date.
 
-The locations and entities mentioned in the claim include:
+**Store coverage:** Seven store labels appear across **517 populated store fields**: Corniche (245), Derb Ghallef (115), Ain Sebaa (60), Marina (42), Kenitra (40), Agadir (14) and Rabat (1). Five rows have no store label. Ain Sebaa and Agadir occur in the sample even though they are absent from the six-store list in the post; “Ecom” is mentioned in the post but does not appear as a store label in the 522 reviewed rows.
 
-- Decathlon Kenitra
-- Decathlon Corniche
-- Decathlon Rabat
-- Decathlon Ecom
-- Decathlon Marina
-- Decathlon Derb Ghallef
+**CTI assessment:** Store labels, field categories and chronology are consistent with a historical order-, delivery- or logistics-management export associated with Decathlon Morocco. The precise data provenance remains undetermined: an internal export, logistics provider, third-party application or historical copy are all possible. The evidence does not demonstrate a direct compromise of Decathlon Morocco's information systems, the advertised overall volume or current validity of contact information.
 
-According to the threat actor, the exposed information includes:
+**Potential risks:** Contextualised phishing and smishing, delivery and refund fraud, customer-service impersonation and privacy harm. Contact details combined with precise location fields increase the sensitivity of the corpus. These are plausible risks, not independently observed abuse.
 
-- Customer first and last names
-- Moroccan telephone numbers
-- Delivery addresses
-- GPS coordinates (latitude and longitude)
-- Order identifiers and references
-- Order amounts and delivery dates
-- Payment methods
-- Delivery instructions
-- Operational comments and employee notes
-- Assembly, return and repair information
+**SOC / CTI recommendations:** Identify internal systems and third parties with access to order and delivery records; preserve IAM, application, API and export logs; investigate bulk exports and unusual service-account activity; review third-party permissions; monitor changes to delivery addresses and refund or payment requests; establish the actual scope before any applicable notification. Do not test accesses advertised by the poster.
 
-##### Observed Evidence
+**AFRINTEL assessment:** Post and structured sample observed; association with Decathlon Morocco commercial and logistics operations plausible; **522 reviewed rows, not 24,438+ independently verified orders**; technical origin, completeness, number of affected individuals and direct infrastructure compromise unestablished.
 
-A data sample displayed in the threat actor's publication was examined as part of the CTI investigation.
+**Sources / Evidence:** Screenshots of the 10 October 2026 forum post supplied to AFRINTEL; `decathlon.csv` and `decathlon_reconstitue.csv` reviewed read-only; [official Decathlon Morocco website](https://www.decathlon.ma/). No personal names, phone numbers, residential addresses, precise GPS coordinates, individual order IDs or illicit download links are reproduced in this record.
 
-The reconstructed sample contains 522 records and 30 columns with structured order and delivery information.
-
-Observed fields include:
-
-- Order references
-- Store and depot identifiers
-- Delivery statuses
-- Customer information
-- Addresses and GPS coordinates
-- Order amounts
-- Payment information
-- Logistics-related comments
-
-The observed records cover the period from September 29, 2021, to January 5, 2022.
-
-Additional Excel files were also provided through a download link shared in the threat actor's publication.
-
-Their relationship to the same dataset and their exact connection to Decathlon Morocco remain unverified.
-
-##### CTI Assessment
-
-The sample structure is consistent with an export from an order management, route planning or delivery management application.
-
-These characteristics support the possibility that the published records are associated with Decathlon Morocco's commercial and logistics operations.
-
-However, the available sources do not specify whether the exposure resulted from:
-
-- A direct compromise of Decathlon Morocco;
-- A compromise of a logistics service provider;
-- Unauthorized access to a third-party platform;
-- The subsequent disclosure of a historical data export.
-
-The claimed volume of 24,438 customer orders has not been independently verified.
-
-The publication date should not be interpreted as the date of the original compromise.
-
-##### Potential Risks
-
-- Targeted phishing and smishing
-- Voice phishing and identity impersonation
-- Delivery-related fraud
-- Social engineering
-- Misuse of customer order histories
-- Privacy risks involving precise GPS coordinates
-- Geographic targeting of affected individuals
-
-##### SOC/CTI Recommendations
-
-- Verify the authenticity and origin of the published data.
-- Identify systems and third parties with access
-  to customer order and delivery records.
-- Investigate suspicious access and bulk data exports.
-- Review logistics platform access logs.
-- Audit internal and third-party account permissions.
-- Assess applicable data breach notification obligations.
-- Notify affected individuals where legally required.
-- Raise customer awareness of delivery-related scams
-  and social engineering attempts.
-
-##### Conclusion
-
-Nameless511's publication represents a credible data exposure claim requiring further investigation.
-
-The available sample contains structured records consistent with commercial and logistics operations associated with Decathlon Morocco.
-
-The authenticity of the complete dataset, the actual scope of the exposure and the source of the extracted information remain unconfirmed.
-
-There is currently insufficient evidence to establish a direct compromise of Decathlon Morocco's infrastructure.
-
+### October 11, 2026
 #### 🇲🇦 Morocco - CNESTEN [Ransomware]
 - **Initial publication date:** 11 October 2026
 - **Institutional domain:** [cnesten.org.ma](https://www.cnesten.org.ma/)
