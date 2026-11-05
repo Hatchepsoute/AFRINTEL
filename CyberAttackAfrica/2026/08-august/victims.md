@@ -1,14 +1,13 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in August 2026 (33 records)
+# AFRINTEL - Cyber cases monitored in August 2026 (33 records)
 
-👉🏾 [**French version available here**](./victims_FR.md)
+👉🏾 [Version française](./victims_FR.md)
+
+> **Counting rule:** 33 records retained for traceability: **32 included in canonical statistics** and **one under investigation (Yalidine), excluded from the denominator**. A claim is not a confirmed compromise. The ordering follows the record classification date, not necessarily the intrusion date.
 
 ## August 2026
+
 
 ### 01 August 2026
 
@@ -46,8 +45,6 @@
   * Review application, IAM, API, database and storage logs for bulk extraction, abnormal queries or unusual access preceding 5 June 2026, with particular attention to 2 and 3 June.
   * Increase monitoring of administrative and technical accounts, reassess access rights to citizen data, and implement detection controls for bulk exports, unusual API activity and outbound transfers of sensitive documents.
 
-
-
 #### 🇿🇦 South Africa - South African Reserve Bank (SARB)
 
 - **Incident date:** Not established
@@ -72,8 +69,6 @@
   The post claims a "data leak" affecting the South African Reserve Bank and lists the following categories of material said to be included: employee details, access logs, vendor access logs, IT service tickets, and a category rendered as "transactional logo" in the original post (likely a typographical rendering of "transactional logs"). Four links to a third-party file-hosting service are provided; the content behind these links was not accessed, downloaded or verified, and no screenshot, data extract or other technical proof of the claimed intrusion is included in the post itself.
 
   The available material does not independently confirm the alleged intrusion, the track record of the "NullSec Nigeria" persona, the authenticity of the linked files, or any connection between this claim and SARB's actual infrastructure. Given the claimed data categories and SARB's role as South Africa's central bank and a systemically important financial institution, a confirmed compromise would carry a high potential impact; at this stage, however, the claim rests on unverified forum assertions and unvalidated download links. The download links and other technical indicators from the post are not reproduced.
-
-
 
 #### 🇩🇿 Algeria - Directorate-General for Scientific Research and Technological Development (DGRSDT)
 
@@ -107,7 +102,6 @@
   **Assumption:** The consistency between DGRSDT's official mission, the doctoral CSV schema, the certificates, profile imagery and filename matches makes association of the corpus with the DGRSDT ecosystem plausible. It does not establish the access vector, extraction or official confirmation of the organisation's compromise.
 
   **Unknown:** The actual number of affected people, completeness of the full dataset, validity of the claimed **6,000 profiles**, access date and method, affected systems, exfiltration, operational impact, victim confirmation and disclosure of the full set remain unknown. The archives were examined locally in read-only mode; no raw personal data is published. Analysis of visual documents is limited by the 172 image files that could not be validated and by the absence of a French or Arabic OCR model in the available environment.
-
 
 #### 🇪🇬 Egypt - Egyptian Football Association (EFA)
 
@@ -275,8 +269,8 @@ resale_status: unknown
 last_checked_at: 2026-09-14
 -->
 
-### 04 August 2026
 
+### 04 August 2026
 
 #### 🇿🇦 South Africa - Sure Travel
 
@@ -321,7 +315,6 @@ resale_status: unknown
 last_checked_at: 2026-08-04T15:50:57
 -->
 
-
 #### 🇪🇬 Egypt - ADG Healthcare
 
 - **Incident date:** Not specified
@@ -365,7 +358,9 @@ resale_status: unknown
 last_checked_at: 2026-08-04T15:55:39
 -->
 
+
 ### 05 August 2026
+
 #### 🇩🇿 Algeria - Ministry of Commerce
 
 - **Incident date:** Not established
@@ -388,6 +383,7 @@ last_checked_at: 2026-08-04T15:55:39
   A forum post attributed to Florence advertises alleged VPN access to the Algerian Ministry of Commerce for USD 500. The seller describes the credentials as verified and does not provide a revenue figure. The publication does not expose the credentials, the access point, the affected account, the privileges available or technical evidence confirming that the access works.
 
   The advertised access could enable unauthorised entry into internal government services, follow-on reconnaissance, phishing, data access or lateral movement. The claim remains unverified, and no independent confirmation of the ministry, the VPN access or the credentials is available from the publication.
+
 
 ### 07 August 2026
 
@@ -433,7 +429,9 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
+
 ### 08 August 2026
+
 #### 🇰🇪 Kenya - Unidentified PAYGO device financing platform (Angaza-based)
 
 - **Incident date:** Not established
@@ -459,7 +457,6 @@ last_checked_at: 2026-09-04
 
   The scale, structural consistency and plausibility of the sample rows support a high confidence assessment that genuine customer and financing records are exposed, independent of the unresolved question of the exact corporate identity. Given the volume, the combination of financial standing (amounts owed, payment history), personal contact details and named collection-agent assignments creates a significant risk of debt-collection-style fraud, impersonation of agents, phishing and harassment targeting financing customers across the affected countries. No customer name, phone number, account identifier, address or financial figure from the reviewed material is reproduced.
 
-### 08 August 2026
 #### 🇿🇦 South Africa - mpowa.mobi (Youth Services Platform)
 
 - **Incident date:** Not established
@@ -493,7 +490,6 @@ last_checked_at: 2026-09-04
 
   The full post identifies mpowa.mobi as item "11/25" of an ongoing campaign, describing a proprietary tool ("CredHarvest V6") used to mass-scan and harvest exposed Firebase Realtime Database instances, and states that hundreds of similar databases have already been acquired through the same method. The actor advertises both the sale of this scanning tool and separate paid intrusion/access services on the same forum. This indicates mpowa.mobi is one victim within a broader, systematic campaign targeting misconfigured Firebase deployments, and that comparable exposures likely affect other African organizations using the same backend, independent of any targeting specific to mpowa.mobi.
 
-### 08 August 2026
 #### 🇳🇬 Nigeria - Daily Trust
 
 - **Incident date:** Not specified
@@ -538,6 +534,7 @@ resale_status: unknown
 last_checked_at: 2026-08-20T01:35:32+01:00
 -->
 
+
 ### 14 August 2026
 
 #### 🇲🇦 Morocco - AVANTA Maroc
@@ -581,7 +578,9 @@ resale_status: unknown
 last_checked_at: 2026-08-14T05:55:47
 -->
 
+
 ### 16 August 2026
+
 #### 🇿🇦 South Africa - The Courier Guy
 
 - **Incident date:** Not specified
@@ -624,7 +623,9 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
+
 ### 17 August 2026
+
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
 - **Incident date:** Not established
@@ -654,7 +655,9 @@ last_checked_at: 2026-09-04
 
   **Unknown:** The available material does not independently verify the alleged unauthenticated Firestore access, the actor's extraction method, the claimed totals of 93,462 profiles, 83,237 applications and 176,795 documents, the 249.1 GB file volume, the presence of 83 tenant employers in the full dataset, or any response from SnapStar Talent. The 300 newest applications are a non-random sample and their field-completeness rates cannot be extrapolated to the entire advertised dataset. The incident therefore remains classified as a claim with a published sample, not as confirmation that the complete backend was extracted. Personal records, download URLs, URL tokens, payment instructions and actor contact details are not reproduced.
 
+
 ### 18 August 2026
+
 #### 🇲🇺 Mauritius - SpearFin Ltd
 
 - **Incident date:** 26 June 2026, date alleged by the actor
@@ -698,6 +701,7 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
 -->
+
 
 ### 19 August 2026
 
@@ -743,6 +747,10 @@ last_checked_at: 2026-08-19T08:10:32
 -->
 
 ### August 20, 2026
+
+
+### 20 August 2026
+
 #### 🇩🇿 Algeria - Afribaba (dz.afribaba.com)
 
 - **Incident date:** Not established
@@ -853,11 +861,59 @@ last_checked_at: 2026-08-20T13:54:00
 
 ---
 ### August 21, 2026
+
+> ⚠️ **Case under investigation - excluded from the canonical total.**
+
+
+#### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) - attribution unconfirmed
+
+- **Initial publication date:** 20 August 2026 at 05:27 (displayed timestamp; timezone not specified)
+- **AFRINTEL discovery date:** 20 October 2026
+- **Actor / Group:** TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)
+- **Claimed sector:** Transport / Logistics / Express Delivery
+- **Claimed website:** [yalidine.com](https://www.yalidine.com/)
+- **Status:** Under Investigation
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3 (potential)
+- **Source type:** Cybercriminal forum and CSV samples provided to AFRINTEL
+
+- **Victim Description:** Yalidine El Djazair Service is an Algerian express-mail, parcel-delivery and domestic-logistics company that also provides e-commerce delivery and cash-on-delivery collection. The post associates the company with a database advertised as containing approximately **563,000 records**.
+
+- **Analysis:**
+
+  **Observed:** The 20 August 2026 post at 05:27, attributed to TelephoneHooliganism, presents `www.yalidine.com` as an Algerian database of **563,000 records**. It describes three datasets: contacts, booking history and support tickets. A moderator message displayed at 06:38 on the same day only restates the forum’s section rules; it does not confirm Yalidine, the files or a compromise.
+
+  AFRINTEL examined three local CSV files read-only corresponding to those datasets: **50 contact rows**, **20 booking rows** and **20 ticket rows**. The files are structurally readable and total **90 tabular rows**, but that total does not represent 90 unique people. The files contain **34, 29 and 29 columns**, respectively. The fields cover contacts, CRM information, bookings, payments, support tickets and customer follow-up. No raw personal data is reproduced in this record.
+
+  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the remaining countries are predominantly foreign. The booking cities observed are not Algerian. The `contact_id` values used in bookings and tickets do not match the identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. Links to booking records are also inconsistent. Ticket email and phone fields are empty, and several advertised contact fields are largely or entirely empty. Data-quality or encoding problems appear in some geographic values.
+
+  Local SHA-256 hashes are: `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51**; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443**; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
+
+  **Assumption:** The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim. That compatibility is weak: geographic, relational and completeness inconsistencies outweigh the elements linking the sample to Yalidine. The sample may be synthetic, misattributed, drawn from a multi-country environment, incomplete or built from a generic CRM template.
+
+  A link with the **Afribaba** case from 20 August 2026 is possible only at campaign level: the displayed actor, publication date and broad data categories are similar. This could reflect a campaign targeting multiple Algerian organisations or reuse of a posting template. No shared identifier, domain, file or technical marker was observed; the link is therefore **not specified in the sources consulted** and must not merge the victims.
+
+  **Unknown:** The files’ technical provenance, extraction date, authenticity, number of unique people, existence of unauthorised access, acquisition method, completeness of the advertised database, operational impact and any confirmation by Yalidine or an authority all remain unknown.
+
+- **Analysis scope and limitations:** All three supplied CSV files were examined read-only, including structure, counts, blank fields, duplicates, inter-table relationships, date ranges and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
+
+- **Risk assessment:** If any part of the sample were authentic, the advertised categories could facilitate targeted phishing, social engineering, customer impersonation and order- or payment-related fraud. The sources consulted do not specify the actual exposure of Yalidine’s customers.
+
+- **Counting decision:** This record remains visible here to document the posting dated August, although AFRINTEL first examined it in October. It is **excluded from August canonical statistics** and must not be double-counted. Attribution to Yalidine is not established.
+
+- **Sources / Evidence:** publication and moderator response supplied on 20 October 2026; three local CSV files examined read-only; [Yalidine official website](https://www.yalidine.com/). No onion link, criminal account, personal data or individual value is published.
+
+### August 26, 2026 - integrated September 1, 2026
+
+
+### 21 August 2026
+
 #### 🇪🇬 Egypt - Six public universities and their student portal system
 
 - **Initial publication date:** August 21, 2026 at 00:08; visibly edited at 00:12:31 (timezone not specified). A complementary “Part 2/3” publication was observed on August 23, 2026 at 00:18.
 - **AFRINTEL detection date:** November 4, 2026
-- **Actor / Source:** ronabrown, 8kun `/egy/` publication; identity and affiliation not established
+- **Actor / Group:** ronabrown, 8kun `/egy/` publication; identity and affiliation not established
 - **Sector:** Higher education / Student portals / University administration
 - **Named victims:** Benha University, Helwan University, Cairo University, Kafr El Sheikh University, South Valley University and University of Sadat City
 - **Status:** Data Fully Published
@@ -889,6 +945,10 @@ last_checked_at: 2026-08-20T13:54:00
 
 @@
 ### August 22, 2026
+
+
+### 22 August 2026
+
 #### 🇲🇦 Morocco - RAMED (Régime d’Assistance Médicale)
 
 - **Incident date:** Not specified
@@ -924,6 +984,9 @@ last_checked_at: 2026-08-20T13:54:00
   **Evidence limitations:** the analyzed material does not confirm the exact originating technical system, initial access vector, extraction method, actual possession of the more than 17 million claimed entries, or any official confirmation of the incident by a Moroccan institution. The presence of photographs is established only for the provided material and must not be extrapolated to the entire claimed database.
 ---
 ### August 24, 2026
+
+
+### 24 August 2026
 
 #### 🇿🇦 South Africa - Furniture Bargaining Council
 
@@ -1010,7 +1073,10 @@ last_checked_at: 2026-09-04
   AFRINTEL does not reproduce any names, PPR numbers, CIN/CNI numbers, RIB bank details, dates of birth or other personal data contained in the reviewed files.
 
 ---
+
+
 ### 26 August 2026
+
 #### 🇪🇬 Egypt - Mima Foods
 
 - **Incident date:** Not specified
@@ -1142,6 +1208,29 @@ resale_status: unknown
 last_checked_at: 2026-08-26T15:56:16
 -->
 
+#### 🇿🇦 South Africa - Cartrack South Africa
+
+- **Incident date:** August 26, 2026
+- **Public communication:** August 28, 2026
+- **Update:** September 10, 2026
+- **AFRINTEL discovery / integration date:** September 1, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Telematics / Mobility / Automotive Services
+- **Status:** Victim Confirmed
+- **Incident type:** Ransomware
+- **Confidence:** Very High
+- **Impact:** Level 4
+- **Description:** **Cartrack South Africa** provides **vehicle telematics**, tracking, stolen-vehicle recovery and fleet-management services. Its offering combines vehicle-installed equipment, digital platforms and operational services for consumers and businesses. This business model involves vehicle, subscription and customer information, without implying that all such data was exposed in a particular incident ([Cartrack official website](https://www.cartrack.co.za/)).
+
+- **Independent verification as of 18 October 2026:** **Direct confirmation:** Cartrack disclosed finding ransomware on certain systems on 26 August 2026 and warned that personal information might have been posted. The September Dire Wolf claim is not an official forensic attribution. Initial event in August.
+
+- **Additional verification sources:** [Source 1](https://cartrack.co.za/platform/resources/news)
+
+- **Sources / Evidence:** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
+
+Cartrack confirmed a ransomware incident detected on August 26. Affected servers were isolated and the platform restored within five hours. An update states that personal information relating to some customers was accessed and may have been published on a restricted-access site. The vector, operator and exact volume remain unknown.
+
+
 ### 27 August 2026
 
 #### 🇿🇦 South Africa - Hungry Lion
@@ -1229,6 +1318,10 @@ last_checked_at: 2026-08-27T14:31:07
 -->
 
 ### August 29, 2026
+
+
+### 29 August 2026
+
 #### 🇱🇾 Libya - Albarq Media Service / شركة البرق للاتصالات والتقنية
 
 * **Incident date:** June 2026, exact date not established
@@ -1257,69 +1350,3 @@ last_checked_at: 2026-08-27T14:31:07
   * Reset sessions and strengthen monitoring of administrative accounts if exposure is confirmed.
 
 ### August 20, 2026
-
-#### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) - attribution unconfirmed
-
-- **Initial publication date:** 20 August 2026 at 05:27 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** 20 October 2026
-- **Actor / Group:** TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)
-- **Claimed sector:** Transport / Logistics / Express Delivery
-- **Claimed website:** [yalidine.com](https://www.yalidine.com/)
-- **Status:** Under Investigation
-- **Incident type:** Data Leak
-- **Confidence level:** Low
-- **Impact level:** Level 3 (potential)
-- **Source type:** Cybercriminal forum and CSV samples provided to AFRINTEL
-
-- **Victim Description:** Yalidine El Djazair Service is an Algerian express-mail, parcel-delivery and domestic-logistics company that also provides e-commerce delivery and cash-on-delivery collection. The post associates the company with a database advertised as containing approximately **563,000 records**.
-
-- **Analysis:**
-
-  **Observed:** The 20 August 2026 post at 05:27, attributed to TelephoneHooliganism, presents `www.yalidine.com` as an Algerian database of **563,000 records**. It describes three datasets: contacts, booking history and support tickets. A moderator message displayed at 06:38 on the same day only restates the forum’s section rules; it does not confirm Yalidine, the files or a compromise.
-
-  AFRINTEL examined three local CSV files read-only corresponding to those datasets: **50 contact rows**, **20 booking rows** and **20 ticket rows**. The files are structurally readable and total **90 tabular rows**, but that total does not represent 90 unique people. The files contain **34, 29 and 29 columns**, respectively. The fields cover contacts, CRM information, bookings, payments, support tickets and customer follow-up. No raw personal data is reproduced in this record.
-
-  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the remaining countries are predominantly foreign. The booking cities observed are not Algerian. The `contact_id` values used in bookings and tickets do not match the identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. Links to booking records are also inconsistent. Ticket email and phone fields are empty, and several advertised contact fields are largely or entirely empty. Data-quality or encoding problems appear in some geographic values.
-
-  Local SHA-256 hashes are: `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51**; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443**; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
-
-  **Assumption:** The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim. That compatibility is weak: geographic, relational and completeness inconsistencies outweigh the elements linking the sample to Yalidine. The sample may be synthetic, misattributed, drawn from a multi-country environment, incomplete or built from a generic CRM template.
-
-  A link with the **Afribaba** case from 20 August 2026 is possible only at campaign level: the displayed actor, publication date and broad data categories are similar. This could reflect a campaign targeting multiple Algerian organisations or reuse of a posting template. No shared identifier, domain, file or technical marker was observed; the link is therefore **not specified in the sources consulted** and must not merge the victims.
-
-  **Unknown:** The files’ technical provenance, extraction date, authenticity, number of unique people, existence of unauthorised access, acquisition method, completeness of the advertised database, operational impact and any confirmation by Yalidine or an authority all remain unknown.
-
-- **Analysis scope and limitations:** All three supplied CSV files were examined read-only, including structure, counts, blank fields, duplicates, inter-table relationships, date ranges and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
-
-- **Risk assessment:** If any part of the sample were authentic, the advertised categories could facilitate targeted phishing, social engineering, customer impersonation and order- or payment-related fraud. The sources consulted do not specify the actual exposure of Yalidine’s customers.
-
-- **Counting decision:** The record is retained in the October corpus because the post was observed and a sample was supplied, but it is **excluded from the canonical total and statistical breakdowns** until attribution is corroborated.
-
-- **Sources / Evidence:** publication and moderator response supplied on 20 October 2026; three local CSV files examined read-only; [Yalidine official website](https://www.yalidine.com/). No onion link, criminal account, personal data or individual value is published.
-
-### August 26, 2026 - integrated September 1, 2026
-#### 🇿🇦 South Africa - Cartrack South Africa
-
-- **Incident date:** August 26, 2026
-- **Public communication:** August 28, 2026
-- **Update:** September 10, 2026
-- **AFRINTEL discovery / integration date:** September 1, 2026
-- **Actor / Group:** Not publicly attributed
-- **Sector:** Telematics / Mobility / Automotive Services
-- **Status:** Victim Confirmed
-- **Incident type:** Ransomware
-- **Confidence:** Very High
-- **Impact:** Level 4
-- **Description:** **Cartrack South Africa** provides **vehicle telematics**, tracking, stolen-vehicle recovery and fleet-management services. Its offering combines vehicle-installed equipment, digital platforms and operational services for consumers and businesses. This business model involves vehicle, subscription and customer information, without implying that all such data was exposed in a particular incident ([Cartrack official website](https://www.cartrack.co.za/)).
-
-- **Independent verification as of 18 October 2026:** **Direct confirmation:** Cartrack disclosed finding ransomware on certain systems on 26 August 2026 and warned that personal information might have been posted. The September Dire Wolf claim is not an official forensic attribution. Initial event in August.
-
-- **Additional verification sources:** [Source 1](https://cartrack.co.za/platform/resources/news)
-
-- **Sources / Evidence:** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
-
-Cartrack confirmed a ransomware incident detected on August 26. Affected servers were isolated and the platform restored within five hours. An update states that personal information relating to some customers was accessed and may have been published on a restricted-access site. The vector, operator and exact volume remain unknown.
-
-## September ransomware publications
-
-> The date shown is the publication or observation date in the source corpus, not necessarily the compromise date. Ransomware listings or claims do not by themselves confirm an intrusion.

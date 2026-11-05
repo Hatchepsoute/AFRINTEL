@@ -7,7 +7,6 @@
 ## Cybermenaces en Afrique | Septembre 2026
 
 **Période du corpus :** 1er au 30 septembre 2026  
-**Date de révision du rapport :** 5 Octobre 2026  
 **Couverture de veille :** 54 pays africains ; 12 pays présents dans le corpus  
 **Public visé :** directions générales, RSSI, DSI, responsables de la gestion des risques et analystes CTI/SOC  
 **Sources :** sites de divulgation de groupes ransomware sur le Dark Web, forums underground, plateformes de publication ou de vente de données sur le Dark Web et le Deep Web, communications officielles, presse spécialisée et échantillons disponibles.  
@@ -27,15 +26,25 @@ Le fait le plus important n'est pas seulement le nombre de publications. **Les i
 
 Deux dossiers comportent une **confirmation d'accès non autorisé** : la plateforme sud-africaine **RelyComply** et une activité non autorisée dans le réseau du **ministère namibien de la Défense et des Anciens combattants**. Deux autres dossiers, **Hollard** et **Guardrisk**, concernent des **expositions liées à des tiers**, sans intrusion directe établie chez l'assureur cité. Ces nuances changent les décisions à prendre : **vérifier les faits, protéger les personnes et traiter les accès à risque avant de conclure à une attaque.**
 
-**Message aux décideurs :** les signaux du mois appellent une vigilance ciblée, **pas une réaction de crise généralisée**. Une bonne cartographie des données sensibles, des accès contrôlés, des sauvegardes éprouvées et des alertes bien réglées permettent de réduire concrètement l'exposition.
+**Message aux décideurs :** ces observations justifient une vigilance proportionnée. Une publication criminelle doit être qualifiée avant d’être traitée comme une compromission. Si des faits confirment une atteinte grave, les dispositifs de réponse à incident et de gestion de crise doivent être activés sans délai. La visibilité sur les données sensibles, la maîtrise des accès, des sauvegardes testées et une détection adaptée réduisent concrètement les risques.
+
+### Lecture pour les directions : trois décisions à prendre
+
+| Priorité | Signal documenté | Décision utile |
+|---|---|---|
+| **P1 - Protéger les données sensibles** | Identités, dossiers administratifs et données financières apparaissent dans plusieurs échantillons. | Vérifier les dépôts critiques, les autorisations et les possibilités d’export massif. |
+| **P1 - Encadrer les prestataires** | Deux expositions ont été reconnues dans un contexte tiers, sans intrusion directe confirmée chez les assureurs cités. | Identifier les données confiées, les accès délégués et les délais contractuels de notification. |
+| **P2 - Vérifier la capacité de réponse** | Vingt signalements sont classés dans un contexte ransomware, sans preuve systématique de chiffrement. | Tester restauration, gestion des comptes compromis et procédures de qualification des alertes. |
+
+*Ces priorités sont proposées à l'échelle du corpus ; chaque organisation doit les adapter à ses actifs et à ses preuves internes.*
 
 ### 1.1 Comparaison avec le mois précédent : août → septembre 2026
 
 | Indicateur | Août 2026 | Septembre 2026 | Évolution observée |
 |---|---:|---:|---:|
-| **Total des dossiers** | **29** | **33** | **+4 (+13,8 %)** |
-| Ransomware | 17 | 20 | +3 (+17,6 %) |
-| Data Leak - Fuite de données | 11 | 11 | 0 (stable) |
+| **Total des dossiers** | **33** | **33** | **0 (stable)** |
+| Ransomware | 18 | 20 | +2 (+11,1 %) |
+| Data Leak - Fuite de données | 14 | 11 | −3 (−21,4 %) |
 | Access Sale - Vente d'accès | 1 | 0 | −1 (−100,0 %) |
 | DDoS | 0 | 0 | 0 (stable) |
 | Defacement | 0 | 0 | 0 (stable) |
@@ -44,9 +53,11 @@ Deux dossiers comportent une **confirmation d'accès non autorisé** : la platef
 | Malware | 0 | 0 | 0 (stable) |
 | Operational Fraud | 0 | 0 | 0 (stable) |
 
+**Lecture CTI :** le volume global est **stable (33 dossiers)**. Les signalements ransomware passent de 18 à 20 ; les fuites de données passent de 14 à 11. Cette variation de composition décrit la collecte AFRINTEL, pas nécessairement l’évolution des compromissions réelles.
+
 ![Comparaison août septembre](./assets/comparison_aug_sep_2026_FR.png)
 
-*Base août : 29 fiches (17 ransomware, 11 fuites, 1 vente d'accès), selon le [rapport AFRINTEL d'août 2026](../08-august/README_FR.md). La comparaison porte sur les **dossiers intégrés aux corpus mensuels**, pas sur le nombre exact d'intrusions qui se sont produites pendant chaque mois. La progression peut être influencée par la collecte et la découverte tardive.*
+*Base août vérifiée : 33 fiches (18 ransomware, 14 fuites de données, 1 vente d’accès), selon le [rapport AFRINTEL d’août 2026](../08-august/README_FR.md). La comparaison porte sur les **dossiers intégrés aux corpus mensuels**, pas sur le nombre exact d'intrusions qui se sont produites pendant chaque mois. La progression peut être influencée par la collecte et la découverte tardive.*
 
 ## 2. Périmètre, sources et méthode
 
@@ -204,6 +215,18 @@ L'Afrique du Sud regroupe plusieurs dossiers de finance, d'assurance et de servi
 
 La couverture doit aussi être renforcée pour les pays moins visibles : relations avec CERT/CSIRT nationaux, presse locale, sources en français, anglais, arabe, portugais et langues pertinentes, et vérification des republications entre plateformes.
 
+### Dossiers à examiner en priorité : ce qui est établi et ce qui ne l'est pas
+
+| Dossier | Élément documenté | Risque à anticiper | Limite de la preuve |
+|---|---|---|---|
+| **RelyComply - Afrique du Sud** | Accès non autorisé reconnu par l'entreprise. | Sécurité des accès, partenaires et données transactionnelles. | Responsabilité technique du groupe revendiquant l'attaque non établie. |
+| **Défense namibienne** | Activité non autorisée confirmée dans le réseau ministériel. | Sécurité et continuité des services publics sensibles. | Chiffrement, extraction et fuite de secrets non établis. |
+| **Centre Atlantique Formation - Maroc** | Archive structurée et documents de formation cohérents, examinés en lecture seule. | Fraude documentaire, usurpation d'identité. | Point d'entrée et exhaustivité de l'exposition inconnus. |
+| **SEPE - Angola** | Échantillon administratif examiné ; volumes nettement supérieurs revendiqués. | Protection des usagers et des justificatifs administratifs. | Compromission directe du portail et volume total non prouvés. |
+| **Hollard / Guardrisk - Afrique du Sud** | Expositions liées à des prestataires reconnues. | Gestion des données confiées à des tiers. | Ne constitue pas la preuve d'intrusions directes chez les assureurs. |
+
+*Ce tableau met en évidence l’intérêt pour la défense ; il ne classe pas les victimes selon un impact opérationnel confirmé.*
+
 ## 8. MITRE ATT&CK : hypothèses de détection, pas attribution
 
 Le corpus public ne décrit pas systématiquement les chaînes techniques d'attaque. Les correspondances ci-dessous sont des **pistes défensives** à valider à partir des journaux internes ; elles **ne signifient pas** que ces techniques ont été observées chez toutes les organisations citées.
@@ -238,6 +261,18 @@ Une publication criminelle **ne justifie pas à elle seule** l'arrêt d'un servi
 
 **Prévention générale :** MFA résistant au phishing lorsque possible, segmentation des comptes d'administration, durcissement des applications exposées, EDR, sauvegardes hors ligne ou immuables et tests réguliers de restauration.
 
+### Détections comportementales à valider dans le SIEM
+
+| Hypothèse de détection | Sources de logs | Logique de corrélation proposée | Contrôle humain |
+|---|---|---|---|
+| **Export massif inhabituel** | Bases de données, application, stockage, DLP | Compte + dépôt sensible + volume nettement supérieur à sa ligne de base + plage temporelle courte. | Vérifier tâche métier, opération de maintenance ou sauvegarde autorisée. |
+| **Accès atypique suivi d'un export** | IAM/SSO/VPN, applications, audit des fichiers | Nouveau terminal ou session inhabituelle, suivi d'un téléchargement ou export volumineux. | Vérifier MFA, légitimité de la session et contexte de l’utilisateur. |
+| **Compte prestataire hors usage normal** | Bastion, PAM, IAM, VPN, journaux applicatifs | Compte délégué + horaire inhabituel + accès à plusieurs ressources non habituelles. | Comparer au contrat, aux interventions planifiées et aux autorisations. |
+| **Préparation possible d'exfiltration** | EDR, fichiers, proxy, trafic sortant | Création rapide d'archives volumineuses, puis transfert externe inhabituel. | Exclure les traitements d'archivage et échanges légitimes. |
+| **Chiffrement destructeur suspecté** | EDR, FIM, sauvegardes | Nombre élevé de modifications de fichiers + comportements anormaux de processus. | Confirmer les événements avant tout confinement perturbateur. |
+
+*Ces règles sont des pistes de surveillance. Elles ne prouvent pas que les techniques correspondantes ont été utilisées dans les dossiers de septembre.*
+
 | Horizon | Actions concrètes | Preuve de réalisation attendue |
 |---|---|---|
 | **0 à 7 jours** | Recenser les actifs et prestataires concernés ; préserver logs et captures ; vérifier les publications qui citent son organisation ; activer les validations financières hors bande | Inventaire ciblé, dossier de qualification, propriétaires désignés |
@@ -260,7 +295,7 @@ Le mois de septembre 2026 présente **33 signalements documentés dans 12 pays**
 
 **Le constat est sérieux, mais les réponses sont connues et à portée des organisations :** surveiller les accès, encadrer les exports, protéger les identités, vérifier les fournisseurs et s'entraîner à restaurer les services. La veille AFRINTEL sert à **anticiper**, non à entretenir l'inquiétude.
 
-**Limites :** corpus non exhaustif ; surreprésentation possible des publications d'extorsion ; découverte parfois postérieure à la date d'accès ; échantillons hétérogènes ; volumes annoncés non additionnables ; aucune équivalence automatique entre fichier, ligne, dossier et personne. Un statut de preuve ou un niveau de confiance élevé ne remplace pas une confirmation du système compromis. Les chiffres sont arrêtés pour cette révision à partir des fiches fournies ; les vérifications indépendantes propres aux fiches sont, pour une grande partie, datées du **18 octobre 2026**.
+**Limites :** corpus non exhaustif ; surreprésentation possible des publications d'extorsion ; découverte parfois postérieure à la date d'accès ; échantillons hétérogènes ; volumes annoncés non additionnables ; aucune équivalence automatique entre fichier, ligne, dossier et personne. Un statut de preuve ou un niveau de confiance élevé ne remplace pas une confirmation du système compromis. Les chiffres proviennent des fiches analysées ; les vérifications indépendantes propres aux fiches sont, pour une grande partie, datées du **18 octobre 2026**.
 
 ---
 

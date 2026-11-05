@@ -1,0 +1,353 @@
+{
+  "schema": "AFRINTEL monthly statistics / reproducible secondary artifact",
+  "period": "2026-08",
+  "source_files": [
+    "victims_FR.md",
+    "victims.md"
+  ],
+  "record_count": 33,
+  "canonical_count": 32,
+  "investigation_excluded_count": 1,
+  "reporting_note_fr": "La série historique publiée de 33 fiches comprend un dossier Yalidine explicitement exclu du corpus canonique. Une ventilation canonique de 32 est fournie séparément pour éviter le double comptage.",
+  "published_baseline_for_existing_september_comparison": {
+    "total": 33,
+    "types": {
+      "Ransomware": 18,
+      "Data Leak": 14,
+      "Access Sale": 1
+    }
+  },
+  "canonical": {
+    "total": 32,
+    "types": {
+      "Ransomware": 18,
+      "Data Leak": 13,
+      "Access Sale": 1
+    },
+    "country_counts": {
+      "Afrique du Sud": 12,
+      "Égypte": 5,
+      "Algérie": 4,
+      "Maroc": 3,
+      "Nigeria": 2,
+      "Kenya": 2,
+      "Maurice": 1,
+      "Cameroun": 1,
+      "Gabon": 1,
+      "Libye": 1
+    },
+    "sector_counts": {
+      "Gouvernement / Administration": 6,
+      "Finance / Banque": 6,
+      "Emploi / Recrutement": 3,
+      "Industrie / Ingénierie": 2,
+      "Santé / Pharmaceutique": 2,
+      "Restauration": 2,
+      "Sports / Fédérations": 1,
+      "Tourisme / Voyage": 1,
+      "Immobilier": 1,
+      "Médias / Édition": 1,
+      "Transport / Logistique": 1,
+      "Commerce / E-commerce": 1,
+      "Éducation / Université": 1,
+      "Relations sociales / Travail": 1,
+      "Agriculture / Agroalimentaire": 1,
+      "Télécommunications / Médias": 1,
+      "Mobilité / Automobile": 1
+    },
+    "actor_mentions": {
+      "KRYBIT": 6,
+      "Orova": 2,
+      "exfilar": 2,
+      "TheGentlemen": 2,
+      "MedusaLocker": 2,
+      "INC Ransom": 2,
+      "TelephoneHooliganism": 2,
+      "R3D3MPTION": 1,
+      "NullSec Nigeria": 1,
+      "anisanas2": 1,
+      "Revesky": 1,
+      "Florence": 1,
+      "OriginalCrazyOldFart": 1,
+      "Panzer": 1,
+      "Everest": 1,
+      "ronabrown": 1,
+      "JBT2026": 1,
+      "DeadLock": 1,
+      "JabaR00t": 1,
+      "Richard2002": 1,
+      "Non attribué": 1
+    }
+  },
+  "all_monitored_records": {
+    "total": 33,
+    "types": {
+      "Ransomware": 18,
+      "Data Leak": 14,
+      "Access Sale": 1
+    },
+    "country_counts": {
+      "Afrique du Sud": 12,
+      "Égypte": 5,
+      "Algérie": 5,
+      "Maroc": 3,
+      "Nigeria": 2,
+      "Kenya": 2,
+      "Maurice": 1,
+      "Cameroun": 1,
+      "Gabon": 1,
+      "Libye": 1
+    },
+    "statuses": {
+      "Claim - Data Sample Published": 13,
+      "Claim - Unverified": 12,
+      "Data Fully Published": 4,
+      "Victim Confirmed": 3,
+      "Under Investigation": 1
+    },
+    "sector_counts": {
+      "Gouvernement / Administration": 6,
+      "Finance / Banque": 6,
+      "Emploi / Recrutement": 3,
+      "Industrie / Ingénierie": 2,
+      "Santé / Pharmaceutique": 2,
+      "Transport / Logistique": 2,
+      "Restauration": 2,
+      "Sports / Fédérations": 1,
+      "Tourisme / Voyage": 1,
+      "Immobilier": 1,
+      "Médias / Édition": 1,
+      "Commerce / E-commerce": 1,
+      "Éducation / Université": 1,
+      "Relations sociales / Travail": 1,
+      "Agriculture / Agroalimentaire": 1,
+      "Télécommunications / Médias": 1,
+      "Mobilité / Automobile": 1
+    },
+    "actor_mentions": {
+      "KRYBIT": 6,
+      "TelephoneHooliganism": 3,
+      "Orova": 2,
+      "exfilar": 2,
+      "TheGentlemen": 2,
+      "MedusaLocker": 2,
+      "INC Ransom": 2,
+      "R3D3MPTION": 1,
+      "NullSec Nigeria": 1,
+      "anisanas2": 1,
+      "Revesky": 1,
+      "Florence": 1,
+      "OriginalCrazyOldFart": 1,
+      "Panzer": 1,
+      "Everest": 1,
+      "ronabrown": 1,
+      "JBT2026": 1,
+      "DeadLock": 1,
+      "JabaR00t": 1,
+      "Richard2002": 1,
+      "Non attribué": 1
+    }
+  },
+  "comparison_reference_july_2026": {
+    "source": "CyberAttackAfrica/2026/07-july/README_FR.md, default branch, 2026-11-05",
+    "total": 47,
+    "types": {
+      "Ransomware": 18,
+      "Data Leak": 21,
+      "Access Sale": 6,
+      "DDoS": 0,
+      "Defacement": 2,
+      "Account Takeover": 0,
+      "System Intrusion": 0,
+      "Malware": 0,
+      "Operational Fraud": 0
+    }
+  },
+  "excluded_cases": [
+    {
+      "record_original_index": 32,
+      "name": "Yalidine El Djazair Service",
+      "status": "Under Investigation",
+      "reason": "No verified attribution; victim record expressly excludes this claim from canonical totals; observed August publication, analysed in October."
+    }
+  ],
+  "sector_by_original_card_index": {
+    "1": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "2": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "3": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "4": {
+      "code": "SPO",
+      "name_fr": "Sports / Fédérations",
+      "name_en": "Sports / Federations"
+    },
+    "5": {
+      "code": "IND",
+      "name_fr": "Industrie / Ingénierie",
+      "name_en": "Industry / Engineering"
+    },
+    "6": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "7": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "8": {
+      "code": "TOU",
+      "name_fr": "Tourisme / Voyage",
+      "name_en": "Tourism / Travel"
+    },
+    "9": {
+      "code": "HEA",
+      "name_fr": "Santé / Pharmaceutique",
+      "name_en": "Healthcare / Pharmaceuticals"
+    },
+    "10": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "11": {
+      "code": "REA",
+      "name_fr": "Immobilier",
+      "name_en": "Real Estate"
+    },
+    "12": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "13": {
+      "code": "EMP",
+      "name_fr": "Emploi / Recrutement",
+      "name_en": "Employment / Recruitment"
+    },
+    "14": {
+      "code": "MED",
+      "name_fr": "Médias / Édition",
+      "name_en": "Media / Publishing"
+    },
+    "15": {
+      "code": "EMP",
+      "name_fr": "Emploi / Recrutement",
+      "name_en": "Employment / Recruitment"
+    },
+    "16": {
+      "code": "LOG",
+      "name_fr": "Transport / Logistique",
+      "name_en": "Transport / Logistics"
+    },
+    "17": {
+      "code": "EMP",
+      "name_fr": "Emploi / Recrutement",
+      "name_en": "Employment / Recruitment"
+    },
+    "18": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "19": {
+      "code": "IND",
+      "name_fr": "Industrie / Ingénierie",
+      "name_en": "Industry / Engineering"
+    },
+    "20": {
+      "code": "ECO",
+      "name_fr": "Commerce / E-commerce",
+      "name_en": "Retail / E-commerce"
+    },
+    "21": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "22": {
+      "code": "FIN",
+      "name_fr": "Finance / Banque",
+      "name_en": "Finance / Banking"
+    },
+    "23": {
+      "code": "EDU",
+      "name_fr": "Éducation / Université",
+      "name_en": "Education / University"
+    },
+    "24": {
+      "code": "HEA",
+      "name_fr": "Santé / Pharmaceutique",
+      "name_en": "Healthcare / Pharmaceuticals"
+    },
+    "25": {
+      "code": "LAB",
+      "name_fr": "Relations sociales / Travail",
+      "name_en": "Labour relations / Work"
+    },
+    "26": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "27": {
+      "code": "AGR",
+      "name_fr": "Agriculture / Agroalimentaire",
+      "name_en": "Agriculture / Food"
+    },
+    "28": {
+      "code": "GOV",
+      "name_fr": "Gouvernement / Administration",
+      "name_en": "Government / Administration"
+    },
+    "29": {
+      "code": "RES",
+      "name_fr": "Restauration",
+      "name_en": "Restaurants"
+    },
+    "30": {
+      "code": "RES",
+      "name_fr": "Restauration",
+      "name_en": "Restaurants"
+    },
+    "31": {
+      "code": "TEL",
+      "name_fr": "Télécommunications / Médias",
+      "name_en": "Telecommunications / Media"
+    },
+    "32": {
+      "code": "LOG",
+      "name_fr": "Transport / Logistique",
+      "name_en": "Transport / Logistics"
+    },
+    "33": {
+      "code": "AUT",
+      "name_fr": "Mobilité / Automobile",
+      "name_en": "Automotive / Mobility"
+    }
+  },
+  "actor_label_method": "Names are publisher labels or group claims, not proven technical attribution. A group claim may coexist with victim confirmation without proving the named group caused the incident.",
+  "quality_control": {
+    "fr_records": 33,
+    "en_records": 33,
+    "same_types_status_dates": true,
+    "fr_en_order_synchronized": true,
+    "status_total": 33,
+    "canonical_types_total": 32,
+    "historical_types_total": 33,
+    "canonical_country_total": 32,
+    "canonical_sector_total": 32
+  }
+}
