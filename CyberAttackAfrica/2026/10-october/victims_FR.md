@@ -272,6 +272,79 @@
 - **Décision de comptage :** Incident conservé dans le corpus d'octobre et rattaché au suivi d'octobre, car la publication du 2 octobre constitue la première observation AFRINTEL. La publication antérieure du 28 juin est documentée comme une découverte rétrospective du même corpus. L'événement reste compté comme **un seul incident**. Le type principal reste `Access Sale`; l'exposition de données est un effet secondaire observé.
 
 
+### 3 octobre 2026
+#### 🇲🇦 Maroc - NextLevel PC
+
+- **Date de publication initiale :** 3 octobre 2026 à 12:00 (heure affichée ; fuseau non indiqué)
+- **Publication ultérieure :** 7 octobre 2026 à 01:41, avec annonce de diffusion gratuite de la base complète (heure affichée ; fuseau non indiqué)
+- **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Commerce électronique / Matériel informatique et gaming
+- **Site web :** [nextlevelpc.ma](https://nextlevelpc.ma/) (domaine affiché dans la publication ; site marocain de vente de matériel informatique identifié)
+- **Statut :** Data Fully Published
+- **Type d’incident :** Data Leak
+- **Niveau de confiance :** Very High
+- **Niveau d’impact :** Level 4
+- **Type de source :** Underground Forum - Publication et échantillon fournis à AFRINTEL
+
+- **Description victime :** NextLevel PC est un site marocain de commerce électronique spécialisé, selon les éléments disponibles, dans le matériel informatique et le gaming. Le domaine et la relation technique avec un système compromis ne sont pas confirmés indépendamment.
+
+- **Analyse :**
+
+  **Observed :** Une première publication attribuée à **Nameless511**, datée du **3 octobre 2026 à 12:00** selon l’horodatage visible, présente la base de NextLevel PC et décrit l’entreprise, ses volumes commerciaux et les catégories de données concernées. Une publication ultérieure du **7 octobre 2026 à 01:41** annonce la diffusion gratuite de la « base complète » après une période que l’auteur décrit comme **72 heures sans réponse**. L’auteur revendique **52 545 comptes clients**, **60 262 adresses de livraison**, **47 653 commandes**, **11 comptes internes**, **14 160 règles de panier/remises** et un historique de transactions de **122,9 millions MAD**. L’intégralité du corpus local fourni et analysé contient **huit CSV**, pour **30 556 090 octets**, et confirme exactement les cinq premiers décomptes : `customers.csv` (**52 545** lignes), `addresses.csv` (**60 262**), `orders.csv` (**47 653**), `employees.csv` (**11**) et `cart_rules.csv` (**14 160**). Les **47 653 commandes** totalisent **122 865 604,60** dans le champ de paiement, un montant cohérent avec le chiffre de **122,9 millions MAD** publié par l’auteur. La devise est attribuée à la publication ; elle n’est pas validée indépendamment par ce calcul.
+
+  Le corpus couvre comptes clients, adresses de livraison, commandes, détails de commande, produits, règles de remise, messages et comptes internes. Il contient **69 957** lignes de détail de commande et **4 168** messages. Les dates observées s’étendent de **mai 2021** à **novembre 2026**, cette dernière borne incluant des dates de fin de règles de remise. Les fichiers clients comportent des champs de coordonnées, de préférences, de mot de passe et de clé de session. Les **52 545** valeurs de mot de passe sont renseignées ; **42 743** suivent un format commençant par `$2`, tandis que les autres utilisent un format non identifié. Ces valeurs n’ont été ni reproduites, ni testées, ni soumises à une tentative de cassage. Aucune valeur individuelle, adresse e-mail, numéro, chaîne d’authentification ou donnée de commande n’est publiée.
+
+  **Assumption :** La concordance exacte entre les volumes annoncés et les huit exports, la structure cohérente des tables de commerce électronique et le logo/domaine affichés fournissent une preuve structurelle très forte d’un corpus opérationnel lié à NextLevel PC. Elle ne permet pas, à elle seule, d’établir le vecteur d’accès, la date d’extraction, une compromission officielle ou l’exhaustivité de systèmes non inclus dans les fichiers fournis.
+
+  **Unknown :** L’algorithme et la validité de toutes les valeurs d’authentification, le nombre de personnes uniques  -  distinct des comptes, adresses ou commandes  -  la fraîcheur des coordonnées, l’origine technique, la méthode et la date d’obtention, l’étendue hors corpus, l’impact opérationnel, toute négociation et toute confirmation par l’organisation ou une autorité ne sont pas renseignés dans les sources consultées.
+
+- **Périmètre de l’analyse :** Les huit CSV locaux ont été examinés dans leur intégralité en lecture seule, avec calcul des empreintes SHA-256, contrôle du schéma, des largeurs de lignes, des doublons exacts et des plages de dates. Chaque fichier conserve une largeur de ligne constante et aucun doublon exact au niveau de la ligne n’a été observé. Ces contrôles ne valident pas l’absence de doublons métier, l’identité de chaque personne ni l’exhaustivité de la base de production. Aucun lien criminel n’a été ouvert et aucune donnée personnelle ou chaîne d’authentification n’est conservée dans le dépôt.
+
+- **Évaluation des risques :** Si elles sont authentiques, la combinaison de coordonnées, adresses de livraison, historiques de commande et valeurs d’authentification peut faciliter le phishing ciblé, les tentatives de réutilisation d’identifiants, l’usurpation de client, la fraude à la livraison et l’ingénierie sociale. Les informations transactionnelles alléguées peuvent également soutenir des fraudes commerciales ciblées.
+
+- **Recommandations :**
+  1. Préserver les journaux de la boutique, des bases de données, de l’authentification, des paiements, des intégrations logistiques et des comptes d’administration.
+  2. Identifier les comptes potentiellement concernés, réinitialiser les mots de passe lorsque l’enquête le justifie et invalider les sessions et clés applicatives exposées potentiellement.
+  3. Vérifier les paramètres de hachage des mots de passe, les contrôles de limitation, l’authentification multifacteur des administrateurs et les accès API.
+  4. Renforcer la surveillance des modifications d’adresse de livraison, des demandes de remboursement, des tentatives de prise de compte et des campagnes de phishing visant les clients.
+  5. Établir le périmètre avant toute notification, sans utiliser les données publiées pour contacter ou authentifier des personnes.
+
+- **Sources / Éléments de preuve :** publication et échantillon visible fournis le 8 octobre 2026. Aucun lien criminel, identifiant, mot de passe haché, clé de session ni donnée individuelle n’est publié.
+
+
+#### 🇪🇹 Éthiopie - Ministère de la Santé (`moh.gov.et`) [Data Leak]
+
+- **Date de publication initiale :** 7 octobre 2026 à 16:51 (horodatage affiché ; fuseau non indiqué)
+- **Acteur / Groupe :** Individual (compte affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Santé publique / Administration gouvernementale
+- **Site web :** [moh.gov.et](https://moh.gov.et/)
+- **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d’impact :** Level 4
+- **Type de source :** Publication de forum, matériel et échantillon local fournis à AFRINTEL
+
+- **Description victime :** Le ministère éthiopien de la Santé est l’administration nationale chargée de la politique sanitaire, de la coordination des programmes de santé et de la supervision de structures et de professionnels du secteur en Éthiopie.
+
+- **Analyse :**
+
+  **Observed :** Une publication attribuée au compte **Individual**, datée du **7 octobre 2026 à 16:51** selon l’horodatage visible, présente `moh.gov.et` sous le titre « Master Facilities », avec une revendication de **4 millions d’enregistrements** et **13 Go**, annoncée comme une « PART2 ». Le matériel fourni présente des cartes d’identité numériques éthiopiennes, une carte de résident d’Addis-Abeba et une carte liée au Bureau de santé d’Oromia. Les informations visibles comprennent des catégories d’identité et de santé particulièrement sensibles, notamment photographie, nom complet, date de naissance, nationalité, sexe, numéro d’enregistrement et groupe sanguin. Aucune valeur individuelle n’est reproduite ici.
+
+  L’échantillon local `facility 83463 clean csv.txt` a été examiné intégralement en lecture seule. Il s’agit d’un fichier ASCII de **13 269 octets**, avec **une seule ligne physique** et **1 442 champs séparés par des virgules** ; il ne comporte pas de ligne d’en-tête exploitable. Les marqueurs agrégés comprennent **67 chaînes ressemblant à des adresses email**, **111 valeurs ressemblant à des numéros de téléphone**, **61 UUID**, **77 dates**, **3 URL** et des références à des domaines éthiopiens, dont `orhb.gov.et`. Le contenu comporte aussi des marqueurs relatifs à des établissements, hôpitaux, cliniques et médecins. Ces occurrences ne représentent pas des personnes uniques et ne permettent pas de reconstituer de manière fiable le schéma original.
+
+  Le matériel fourni et le texte local présentent également des structures liées à des comptes utilisateurs, rôles, identités, établissements, professionnels de santé et champs d’authentification. Les valeurs sensibles n’ont été ni testées, ni publiées, ni utilisées pour tenter un accès. Les documents d’identité non masqués fournis sont traités comme éléments de preuve locaux et aucune donnée faciale ou identifiante n’est intégrée au dépôt.
+
+  **Assumption :** La concordance entre le domaine `moh.gov.et`, les références à des structures sanitaires éthiopiennes, les cartes officielles visibles et le schéma de données compatible avec une plateforme sanitaire soutient fortement l’association de l’échantillon avec un environnement du ministère ou d’un organisme de santé lié. Elle ne permet pas d’établir que le système du ministère a été compromis directement, ni que toutes les données proviennent du même environnement.
+
+  **Unknown :** Les revendications de 4 millions d’enregistrements et 13 Go, l’existence et le contenu de la partie 1, l’exhaustivité du corpus, le nombre de personnes uniques, la date d’extraction, le vecteur d’accès, l’authenticité de chaque document, la validité actuelle des identifiants ou secrets, l’impact opérationnel et toute confirmation du ministère ou d’une autorité ne sont pas renseignés dans les sources consultées.
+
+- **Périmètre et limites de l’analyse :** L’échantillon texte local a été analysé dans son intégralité, avec empreinte SHA-256, taille, nombre de lignes, largeur apparente et comptage agrégé de marqueurs. Le matériel fourni a été examiné sans transcription des données personnelles. Le fichier n’est pas un export CSV normalisé : les champs ne peuvent pas être associés de façon fiable à des colonnes et les décomptes de motifs ne constituent pas des décomptes d’individus. Le corpus complet annoncé n’était pas disponible.
+- **Risques :** Usurpation d’identité, fraude documentaire, phishing ciblé, compromission de comptes, atteinte à la confidentialité médicale, ciblage de professionnels de santé et exploitation de données relatives aux établissements sanitaires.
+- **Recommandations SOC / CTI :** Préserver les journaux IAM, API, bases de données, exports et téléchargements ; révoquer les secrets ou sessions potentiellement exposés après validation ; renforcer MFA et contrôle des comptes privilégiés ; vérifier les accès aux systèmes d’identité et de santé ; rechercher les exports massifs et transferts sortants ; protéger les copies d’identité et appliquer les procédures de notification prévues par la réglementation applicable.
+- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documenté dans les sources publiquess.
+- **Sources / Éléments de preuve :** publication du forum et matériel fourni le 30 octobre 2026 ; échantillon local analysé en lecture seule. Aucun identifiant national, nom, adresse email, numéro, photographie ou secret n’est publié dans cette fiche.
+
+
 ### 5 octobre 2026
 #### 🇲🇦 Maroc - Tera.ma / Sté Tera.ma SARL
 
@@ -443,79 +516,6 @@
 - **Sources / Éléments de preuve :** [site officiel de Beni Suef Technological University](https://btu.edu.eg/en/home/) ; [portail institutionnel égyptien](https://bani-suef-tu.mohesr.gov.eg/) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
 
-### 3 octobre 2026
-#### 🇲🇦 Maroc - NextLevel PC
-
-- **Date de publication initiale :** 3 octobre 2026 à 12:00 (heure affichée ; fuseau non indiqué)
-- **Publication ultérieure :** 7 octobre 2026 à 01:41, avec annonce de diffusion gratuite de la base complète (heure affichée ; fuseau non indiqué)
-- **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Commerce électronique / Matériel informatique et gaming
-- **Site web :** [nextlevelpc.ma](https://nextlevelpc.ma/) (domaine affiché dans la publication ; site marocain de vente de matériel informatique identifié)
-- **Statut :** Data Fully Published
-- **Type d’incident :** Data Leak
-- **Niveau de confiance :** Very High
-- **Niveau d’impact :** Level 4
-- **Type de source :** Underground Forum - Publication et échantillon fournis à AFRINTEL
-
-- **Description victime :** NextLevel PC est un site marocain de commerce électronique spécialisé, selon les éléments disponibles, dans le matériel informatique et le gaming. Le domaine et la relation technique avec un système compromis ne sont pas confirmés indépendamment.
-
-- **Analyse :**
-
-  **Observed :** Une première publication attribuée à **Nameless511**, datée du **3 octobre 2026 à 12:00** selon l’horodatage visible, présente la base de NextLevel PC et décrit l’entreprise, ses volumes commerciaux et les catégories de données concernées. Une publication ultérieure du **7 octobre 2026 à 01:41** annonce la diffusion gratuite de la « base complète » après une période que l’auteur décrit comme **72 heures sans réponse**. L’auteur revendique **52 545 comptes clients**, **60 262 adresses de livraison**, **47 653 commandes**, **11 comptes internes**, **14 160 règles de panier/remises** et un historique de transactions de **122,9 millions MAD**. L’intégralité du corpus local fourni et analysé contient **huit CSV**, pour **30 556 090 octets**, et confirme exactement les cinq premiers décomptes : `customers.csv` (**52 545** lignes), `addresses.csv` (**60 262**), `orders.csv` (**47 653**), `employees.csv` (**11**) et `cart_rules.csv` (**14 160**). Les **47 653 commandes** totalisent **122 865 604,60** dans le champ de paiement, un montant cohérent avec le chiffre de **122,9 millions MAD** publié par l’auteur. La devise est attribuée à la publication ; elle n’est pas validée indépendamment par ce calcul.
-
-  Le corpus couvre comptes clients, adresses de livraison, commandes, détails de commande, produits, règles de remise, messages et comptes internes. Il contient **69 957** lignes de détail de commande et **4 168** messages. Les dates observées s’étendent de **mai 2021** à **novembre 2026**, cette dernière borne incluant des dates de fin de règles de remise. Les fichiers clients comportent des champs de coordonnées, de préférences, de mot de passe et de clé de session. Les **52 545** valeurs de mot de passe sont renseignées ; **42 743** suivent un format commençant par `$2`, tandis que les autres utilisent un format non identifié. Ces valeurs n’ont été ni reproduites, ni testées, ni soumises à une tentative de cassage. Aucune valeur individuelle, adresse e-mail, numéro, chaîne d’authentification ou donnée de commande n’est publiée.
-
-  **Assumption :** La concordance exacte entre les volumes annoncés et les huit exports, la structure cohérente des tables de commerce électronique et le logo/domaine affichés fournissent une preuve structurelle très forte d’un corpus opérationnel lié à NextLevel PC. Elle ne permet pas, à elle seule, d’établir le vecteur d’accès, la date d’extraction, une compromission officielle ou l’exhaustivité de systèmes non inclus dans les fichiers fournis.
-
-  **Unknown :** L’algorithme et la validité de toutes les valeurs d’authentification, le nombre de personnes uniques  -  distinct des comptes, adresses ou commandes  -  la fraîcheur des coordonnées, l’origine technique, la méthode et la date d’obtention, l’étendue hors corpus, l’impact opérationnel, toute négociation et toute confirmation par l’organisation ou une autorité ne sont pas renseignés dans les sources consultées.
-
-- **Périmètre de l’analyse :** Les huit CSV locaux ont été examinés dans leur intégralité en lecture seule, avec calcul des empreintes SHA-256, contrôle du schéma, des largeurs de lignes, des doublons exacts et des plages de dates. Chaque fichier conserve une largeur de ligne constante et aucun doublon exact au niveau de la ligne n’a été observé. Ces contrôles ne valident pas l’absence de doublons métier, l’identité de chaque personne ni l’exhaustivité de la base de production. Aucun lien criminel n’a été ouvert et aucune donnée personnelle ou chaîne d’authentification n’est conservée dans le dépôt.
-
-- **Évaluation des risques :** Si elles sont authentiques, la combinaison de coordonnées, adresses de livraison, historiques de commande et valeurs d’authentification peut faciliter le phishing ciblé, les tentatives de réutilisation d’identifiants, l’usurpation de client, la fraude à la livraison et l’ingénierie sociale. Les informations transactionnelles alléguées peuvent également soutenir des fraudes commerciales ciblées.
-
-- **Recommandations :**
-  1. Préserver les journaux de la boutique, des bases de données, de l’authentification, des paiements, des intégrations logistiques et des comptes d’administration.
-  2. Identifier les comptes potentiellement concernés, réinitialiser les mots de passe lorsque l’enquête le justifie et invalider les sessions et clés applicatives exposées potentiellement.
-  3. Vérifier les paramètres de hachage des mots de passe, les contrôles de limitation, l’authentification multifacteur des administrateurs et les accès API.
-  4. Renforcer la surveillance des modifications d’adresse de livraison, des demandes de remboursement, des tentatives de prise de compte et des campagnes de phishing visant les clients.
-  5. Établir le périmètre avant toute notification, sans utiliser les données publiées pour contacter ou authentifier des personnes.
-
-- **Sources / Éléments de preuve :** publication et échantillon visible fournis le 8 octobre 2026. Aucun lien criminel, identifiant, mot de passe haché, clé de session ni donnée individuelle n’est publié.
-
-
-#### 🇪🇹 Éthiopie - Ministère de la Santé (`moh.gov.et`) [Data Leak]
-
-- **Date de publication initiale :** 7 octobre 2026 à 16:51 (horodatage affiché ; fuseau non indiqué)
-- **Acteur / Groupe :** Individual (compte affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Santé publique / Administration gouvernementale
-- **Site web :** [moh.gov.et](https://moh.gov.et/)
-- **Statut :** Claim - Data Sample Published
-- **Type d’incident :** Data Leak
-- **Niveau de confiance :** High
-- **Niveau d’impact :** Level 4
-- **Type de source :** Publication de forum, matériel et échantillon local fournis à AFRINTEL
-
-- **Description victime :** Le ministère éthiopien de la Santé est l’administration nationale chargée de la politique sanitaire, de la coordination des programmes de santé et de la supervision de structures et de professionnels du secteur en Éthiopie.
-
-- **Analyse :**
-
-  **Observed :** Une publication attribuée au compte **Individual**, datée du **7 octobre 2026 à 16:51** selon l’horodatage visible, présente `moh.gov.et` sous le titre « Master Facilities », avec une revendication de **4 millions d’enregistrements** et **13 Go**, annoncée comme une « PART2 ». Le matériel fourni présente des cartes d’identité numériques éthiopiennes, une carte de résident d’Addis-Abeba et une carte liée au Bureau de santé d’Oromia. Les informations visibles comprennent des catégories d’identité et de santé particulièrement sensibles, notamment photographie, nom complet, date de naissance, nationalité, sexe, numéro d’enregistrement et groupe sanguin. Aucune valeur individuelle n’est reproduite ici.
-
-  L’échantillon local `facility 83463 clean csv.txt` a été examiné intégralement en lecture seule. Il s’agit d’un fichier ASCII de **13 269 octets**, avec **une seule ligne physique** et **1 442 champs séparés par des virgules** ; il ne comporte pas de ligne d’en-tête exploitable. Les marqueurs agrégés comprennent **67 chaînes ressemblant à des adresses email**, **111 valeurs ressemblant à des numéros de téléphone**, **61 UUID**, **77 dates**, **3 URL** et des références à des domaines éthiopiens, dont `orhb.gov.et`. Le contenu comporte aussi des marqueurs relatifs à des établissements, hôpitaux, cliniques et médecins. Ces occurrences ne représentent pas des personnes uniques et ne permettent pas de reconstituer de manière fiable le schéma original.
-
-  Le matériel fourni et le texte local présentent également des structures liées à des comptes utilisateurs, rôles, identités, établissements, professionnels de santé et champs d’authentification. Les valeurs sensibles n’ont été ni testées, ni publiées, ni utilisées pour tenter un accès. Les documents d’identité non masqués fournis sont traités comme éléments de preuve locaux et aucune donnée faciale ou identifiante n’est intégrée au dépôt.
-
-  **Assumption :** La concordance entre le domaine `moh.gov.et`, les références à des structures sanitaires éthiopiennes, les cartes officielles visibles et le schéma de données compatible avec une plateforme sanitaire soutient fortement l’association de l’échantillon avec un environnement du ministère ou d’un organisme de santé lié. Elle ne permet pas d’établir que le système du ministère a été compromis directement, ni que toutes les données proviennent du même environnement.
-
-  **Unknown :** Les revendications de 4 millions d’enregistrements et 13 Go, l’existence et le contenu de la partie 1, l’exhaustivité du corpus, le nombre de personnes uniques, la date d’extraction, le vecteur d’accès, l’authenticité de chaque document, la validité actuelle des identifiants ou secrets, l’impact opérationnel et toute confirmation du ministère ou d’une autorité ne sont pas renseignés dans les sources consultées.
-
-- **Périmètre et limites de l’analyse :** L’échantillon texte local a été analysé dans son intégralité, avec empreinte SHA-256, taille, nombre de lignes, largeur apparente et comptage agrégé de marqueurs. Le matériel fourni a été examiné sans transcription des données personnelles. Le fichier n’est pas un export CSV normalisé : les champs ne peuvent pas être associés de façon fiable à des colonnes et les décomptes de motifs ne constituent pas des décomptes d’individus. Le corpus complet annoncé n’était pas disponible.
-- **Risques :** Usurpation d’identité, fraude documentaire, phishing ciblé, compromission de comptes, atteinte à la confidentialité médicale, ciblage de professionnels de santé et exploitation de données relatives aux établissements sanitaires.
-- **Recommandations SOC / CTI :** Préserver les journaux IAM, API, bases de données, exports et téléchargements ; révoquer les secrets ou sessions potentiellement exposés après validation ; renforcer MFA et contrôle des comptes privilégiés ; vérifier les accès aux systèmes d’identité et de santé ; rechercher les exports massifs et transferts sortants ; protéger les copies d’identité et appliquer les procédures de notification prévues par la réglementation applicable.
-- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documenté dans les sources publiquess.
-- **Sources / Éléments de preuve :** publication du forum et matériel fourni le 30 octobre 2026 ; échantillon local analysé en lecture seule. Aucun identifiant national, nom, adresse email, numéro, photographie ou secret n’est publié dans cette fiche.
-
-
 ### 7 octobre 2026
 #### 🇪🇬 Égypte - SANAtech Global Solutions [Ransomware]
 - **Date de publication :** 7 octobre 2026
@@ -585,38 +585,45 @@
 #### 🇲🇦 Maroc - Ministère des Habous et des Affaires islamiques
 
 - **Date de publication initiale :** 9 octobre 2026 à 03:44 (heure affichée ; fuseau non indiqué)
-- **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Gouvernement / Administration / Affaires religieuses
+- **Acteur / Groupe :** Nameless511 (compte observé sur un forum underground ; identité et affiliation non vérifiées)
+- **Secteur :** Gouvernement / Administration publique / Affaires religieuses
 - **Site web officiel :** [habous.gov.ma](https://www.habous.gov.ma/fr/)
 - **Statut :** Claim - Data Sample Published
 - **Type d’incident :** Data Leak
 - **Niveau de confiance :** High
 - **Niveau d’impact :** Level 4
-- **Type de source :** Underground Forum - Publication, matériel et corpus local fournis à AFRINTEL
+- **Source :** Publication de forum underground, captures et corpus local examiné en lecture seule par AFRINTEL
 
-- **Description victime :** Le Ministère des Habous et des Affaires islamiques est une institution publique marocaine responsable notamment des affaires religieuses et de l’administration des biens habous. Son site officiel est [habous.gov.ma](https://www.habous.gov.ma/fr/).
+- **Description victime :** Le Ministère des Habous et des Affaires islamiques est une administration marocaine chargée des affaires religieuses et de la gestion des biens habous.
 
 - **Analyse :**
 
-  **Observed :** Une publication attribuée à **Nameless511**, horodatée du **9 octobre 2026 à 03:44** selon l’heure affichée, annonce une « base complète de candidats » liée à un concours de recrutement d’ingénieurs d’État de premier grade. L’auteur revendique environ **109 000 lignes** au format CSV, XLSX et pièces jointes PDF. Les catégories affichées comprennent notamment des noms en arabe et en caractères latins, CIN, date et lieu de naissance, genre, adresse, coordonnées, diplômes, spécialités, établissements émetteurs, état du dossier, motif de rejet, centre d’examen et documents téléversés. Le corpus local fourni comprend **33 fichiers XLSX** et un CSV, pour environ **44,2 Mo**. L’analyse de la structure XML de l’ensemble des XLSX relève **109 673 lignes**, dont **109 640 lignes de données** en supposant une ligne d’en-tête par fichier : un volume cohérent avec la revendication. L’échantillon visible présente une structure cohérente avec des dossiers de candidature. Aucune donnée individuelle, pièce d’identité ou document n’est reproduit.
+  **Observed :** Une publication attribuée au compte **Nameless511** annonce une base de candidatures à des concours de recrutement du ministère. L’auteur revendique environ **109 000 enregistrements**, au format CSV/XLSX, et évoque des pièces justificatives PDF. Ces déclarations sont distinctes des volumes effectivement mesurés.
 
-  **Assumption :** La cohérence entre l’intitulé du concours, les champs administratifs et la structure des fichiers soutient un lien avec un processus de recrutement public marocain attribué au ministère. Elle ne documente pas que les fichiers proviennent directement d’un système administré par le ministère, ni que l’ensemble du volume revendiqué a été exfiltré.
+  AFRINTEL a examiné en lecture seule **33 classeurs XLSX distincts**, totalisant **44 194 271 octets**, et un fichier CSV complémentaire. Les noms de fichiers comportant des suffixes de téléchargement différents ont été rapprochés par empreintes SHA-256 afin d’éviter leur double comptage.
 
-  **Unknown :** Le nombre réel de candidats, le nombre de personnes uniques, la couverture exacte du corpus, le système source, la méthode et la date d’obtention, l’authenticité et l’actualité des fichiers, la présence effective de toutes les pièces jointes annoncées, l’impact opérationnel et toute confirmation officielle ne sont pas renseignés dans les sources consultées.
+  Les 33 classeurs utilisent une structure commune de 33 colonnes. Leur lecture donne **109 673 lignes structurées**, comprenant **33 lignes de titre et 33 lignes d’en-tête**. Le volume est donc de **109 607 lignes de candidatures**, avant déduplication des personnes ou des candidatures métier. Les dossiers couvrent sept catégories de concours : technicien de troisième et quatrième grades, administrateur de deuxième grade, ingénieur d’État de premier grade, architecte de premier grade et assistant technique de deuxième et troisième grades. Les catégories recensées vont ainsi au-delà du seul concours d’ingénieur d’État cité dans la publication.
 
-- **Périmètre de l’analyse :** Analyse limitée à la publication, au matériel et à un corpus local fourni. Le volume d’environ **109 000** annoncé par l’auteur est cohérent avec le comptage structurel AFRINTEL des XLSX, mais celui-ci ne confirme ni le nombre de personnes uniques ni l’exhaustivité du corpus. Les données hautement sensibles observées ne sont ni reconstruites, ni conservées dans le dépôt.
+  Vérification des identifiants : **108 573 lignes** présentent un CIN au format attendu après normalisation, correspondant à **78 467 valeurs distinctes**. Parmi elles, **20 845 valeurs** figurent dans plusieurs lignes ; les **30 106 occurrences supplémentaires** sont des répétitions de CIN. Les **1 034 autres lignes** présentent un CIN vide ou un format non reconnu. Ces statistiques ne démontrent pas le nombre exact de personnes physiques : plusieurs candidatures peuvent concerner un même candidat, et les identifiants n’ont pas été authentifiés.
 
-- **Évaluation des risques :** Si elles sont authentiques, les données peuvent permettre l’usurpation d’identité, le phishing ciblé contre les candidats, la fraude documentaire, l’exploitation abusive d’informations sur les candidatures et l’atteinte à la vie privée à grande échelle.
+  Le CSV complémentaire comporte **10 lignes de données et 6 colonnes**, relatives à des examens professionnels publiés sous le nom de l’administration. Il constitue un élément de contexte administratif et n’a pas été ajouté aux **109 607 lignes de candidatures**. Aucune pièce PDF source n’a été fournie dans les lots examinés ; leur présence effective dans le corpus prétendument divulgué n’est donc pas démontrée.
+
+  Les structures XLSX contiennent des champs d’identité, de CIN, de naissance, de coordonnées, de candidature, de diplôme, de formation et de références administratives. Aucune information permettant d’identifier une personne, aucun document justificatif et aucun lien de téléchargement clandestin n’est reproduit ici.
+
+  **Analytical assessment :** La cohérence des intitulés de concours, de la structure des colonnes et de la publication rend plausible l’association du corpus à des procédures de recrutement relevant du ministère. Elle ne permet pas d’établir une extraction directe depuis un système du ministère, ni le vecteur d’accès, la date d’obtention ou l’exhaustivité de l’ensemble des données annoncées.
+
+  **Unknown :** L’origine technique, la compromission directe du ministère, le vecteur d’accès, la date d’obtention, l’exhaustivité du corpus, l’authenticité et l’actualité des fichiers, la présence effective des PDF annoncés, le nombre de personnes concernées et toute confirmation officielle restent inconnus.
+
+- **Périmètre de l’analyse :** Publication, captures, 33 classeurs XLSX et un CSV analysés localement en lecture seule. **109 607 lignes de candidatures** et **78 467 CIN distincts au format attendu** ont été vérifiés, sans validation d’identité. Les pièces PDF alléguées n’ont pas été examinées. Les données personnelles restent hors du dépôt.
+
+- **Évaluation des risques :** L’exposition de données d’identité et de candidatures pourrait faciliter l’usurpation d’identité, les faux messages de recrutement, le phishing ciblé et la fraude documentaire. Ces conséquences sont des scénarios possibles, non des abus observés dans cette analyse.
 
 - **Recommandations :**
-  1. Préserver les journaux des plateformes de recrutement, de dépôt de dossiers, de stockage documentaire et des comptes administratifs.
-  2. Rechercher les exports massifs, accès privilégiés inhabituels et transferts sortants de données liés aux concours concernés.
-  3. Établir le périmètre réel des candidats potentiellement affectés sans exploiter les valeurs publiées.
-  4. Renforcer la protection des comptes, le contrôle des accès aux documents et la détection du phishing ciblant les candidats.
-  5. Appliquer les procédures de notification et de protection appropriées après validation de l’incident et de son périmètre.
+  1. Préserver les journaux des portails de recrutement, des exports et des comptes d’administration.
+  2. Contrôler les accès des prestataires et examiner les téléchargements volumineux et extractions inhabituelles.
+  3. Évaluer le périmètre des personnes concernées et préparer, le cas échéant, les mesures de protection et de notification applicables.
 
-- **Sources / Éléments de preuve :** publication de forum, échantillon et corpus local fournis le 9 octobre 2026. Aucun lien criminel, identifiant national, adresse, numéro, e-mail, document ou autre donnée individuelle n’est publié.
-- **Source institutionnelle :** [site officiel du Ministère des Habous et des Affaires islamiques](https://www.habous.gov.ma/fr/)
+- **Sources / Éléments de preuve :** publication du forum attribuée à Nameless511 ; captures fournies ; 33 classeurs XLSX et un CSV analysés localement en lecture seule ; [site officiel du Ministère des Habous et des Affaires islamiques](https://www.habous.gov.ma/fr/). Les échantillons contenant des données personnelles restent hors du dépôt public.
 
 
 ### 10 octobre 2026
@@ -1032,7 +1039,7 @@ last_checked_at: 2026-10-23
 
 #### 🇹🇳 Tunisie - PROTEX Confection [Data Leak]
 - **Date de publication :** 23 octobre 2026
-- **Site web officiel :** [sidt.ci](https://www.sidt.ci/)
+- **Site web associé à la publication :** [protexconfection.com](https://protexconfection.com/)
 - **Acteur / Groupe :** N0n
 - **Secteur :** Industrie textile / Confection
 - **Statut :** Claim - Unverified
@@ -1040,7 +1047,8 @@ last_checked_at: 2026-10-23
 - **Niveau de confiance :** Low
 - **Niveau d'impact :** Level 3
 - **Description victime :** PROTEX Confection est présentée comme une entreprise tunisienne du secteur textile et de la confection.
-- **Analyse :** La publication revendique des données de clients, fournisseurs, articles, inventaire, devis, factures, livraisons et modèles de production. L'identité juridique exacte, le domaine, l'origine des données et les volumes ne sont pas corroborés.
+- **Analyse :** La publication revendique des données de clients, fournisseurs, articles, inventaire, devis, factures, livraisons et modèles de production. Le domaine `protexconfection.com` est associé à PROTEX Confection dans les sources publiques consultées. L'identité juridique exacte, l'origine des données et les volumes ne sont pas corroborés.
+- **Sources / Éléments de preuve :** publication attribuée à N0n ; [source publique associant PROTEX Confection à protexconfection.com](https://www.dexpose.io/n0n-ransomware-strikes-protex-confection/). Le domaine `sidt.ci` concerne une autre victime, la Société Ivoirienne de Télédiffusion, associée à Qilin.
 
 
 ### 24 octobre 2026

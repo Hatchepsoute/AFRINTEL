@@ -1,14 +1,13 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
-![Scope](https://img.shields.io/badge/Scope-Africa-orange)
-![Threat Type](https://img.shields.io/badge/Threat-Ransomware%20%26%20Data%20Leak-red)
-![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
-![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# Liste des victimes africaines de cyberattaques en août 2026 (33 fiches)
+# AFRINTEL - Dossiers cyber suivis en août 2026 (33 fiches)
 
-👉🏾 [**English version available here**](./victims.md)
+👉🏾 [English version](./victims.md)
+
+> **Règle de comptage :** 33 fiches conservées pour la traçabilité, dont **32 dossiers retenus dans les statistiques canoniques** et **1 dossier en investigation (Yalidine), hors dénominateur**. Une revendication n'est pas une compromission confirmée. L'ordre ci-dessous suit la date de classement de la fiche, pas nécessairement la date réelle d'intrusion.
 
 ## Août 2026
+
 
 ### 01 août 2026
 
@@ -46,8 +45,6 @@
   * Rechercher dans les journaux applicatifs, IAM, API, bases de données et systèmes de stockage toute extraction massive, requête anormale ou accès inhabituel intervenu avant le 5 juin 2026, avec une attention particulière aux 2 et 3 juin.
   * Renforcer la surveillance des comptes administratifs et techniques, réévaluer les droits d'accès aux données citoyens et mettre en place des contrôles de détection sur les exports volumineux, les accès API inhabituels et les transferts sortants de documents sensibles.
 
-
-
 #### 🇿🇦 Afrique du Sud - South African Reserve Bank (SARB)
 
 - **Date de l'incident :** Non établie
@@ -73,7 +70,6 @@
 
   AFRINTEL ne peut confirmer de façon indépendante ni l'intrusion alléguée, ni l'historique du profil « NullSec Nigeria », ni l'authenticité des fichiers liés, ni un quelconque lien entre cette revendication et l'infrastructure réelle de la SARB. Compte tenu des catégories de données revendiquées et du rôle de la SARB en tant que banque centrale et institution financière d'importance systémique pour l'Afrique du Sud, une compromission confirmée aurait un impact potentiel élevé ; à ce stade toutefois, la revendication repose sur des affirmations de forum non vérifiées et des liens de téléchargement non validés. AFRINTEL ne reproduit ni les liens de téléchargement ni aucun autre indicateur technique issu de la publication.
 
-
 #### 🇩🇿 Algérie - Direction générale de la recherche scientifique et du développement technologique (DGRSDT)
 
 - **Date de l'incident :** 8 juillet 2026 (date fournie pour l'incident ; date d'accès initial non établie)
@@ -95,7 +91,7 @@
 
 - **Analyse :**
 
-  **Observed :** La publication observée, attribuée à anisanas2, date du 8 juillet 2026 à 18:33 selon l'horodatage visible. Elle affirme une compromission de la DGRSDT et propose un ensemble présenté comme contenant les identifiants gouvernementaux de doctorants et de scientifiques, leurs informations personnelles, des certificats d'inscription, des autoportraits et des dossiers de projets doctoraux. Le prix annoncé est de **800 USD** ; la publication revendique **6 000 identifiants** et **6 000 profils**. Ces chiffres et la compromission restent des revendications de l'acteur.
+  **Observé :** La publication observée, attribuée à anisanas2, date du 8 juillet 2026 à 18:33 selon l'horodatage visible. Elle affirme une compromission de la DGRSDT et propose un ensemble présenté comme contenant les identifiants gouvernementaux de doctorants et de scientifiques, leurs informations personnelles, des certificats d'inscription, des autoportraits et des dossiers de projets doctoraux. Le prix annoncé est de **800 USD** ; la publication revendique **6 000 identifiants** et **6 000 profils**. Ces chiffres et la compromission restent des revendications de l'acteur.
 
   Le CSV fourni et analysé intégralement contient **1 000 enregistrements et 29 colonnes**, avec une largeur constante. Il comprend des champs relatifs aux chercheurs, encadrants, établissements, diplômes, situations, coordonnées et identifiants nationaux. **16 lignes sont des doublons exacts au-delà de la première occurrence**. Les champs d'identifiant national renseignés présentent majoritairement 18 chiffres dans les deux blocs de profil ; aucune valeur personnelle n'est reproduite ici.
 
@@ -103,10 +99,9 @@
 
   Les noms de fichiers de l'archive de profils correspondent à des noms ou identifiants du CSV pour **1 042 fichiers et 444 lignes**. Dans l'archive de certificats, **25 fichiers** correspondent à des noms présents dans **26 lignes** du CSV. Ces rapprochements, la structure des champs, les documents et les éléments visuels associés à la publication soutiennent une attribution à des données liées à la DGRSDT avec un niveau de confiance élevé pour l'authenticité structurelle et l'attribution de l'échantillon.
 
-  **Assumption :** La cohérence entre la mission officielle de la DGRSDT, le schéma doctoral du CSV, les certificats, les images de profils et les correspondances de noms rend plausible l'association du corpus à l'écosystème de la DGRSDT. Elle ne permet pas d'établir le vecteur d'accès, l'extraction ou la compromission officielle de l'organisation.
+  **Hypothèse :** La cohérence entre la mission officielle de la DGRSDT, le schéma doctoral du CSV, les certificats, les images de profils et les correspondances de noms rend plausible l'association du corpus à l'écosystème de la DGRSDT. Elle ne permet pas d'établir le vecteur d'accès, l'extraction ou la compromission officielle de l'organisation.
 
-  **Unknown :** Le nombre réel de personnes concernées, l'exhaustivité du jeu complet, la validité des **6 000 profils** revendiqués, la date et la méthode d'accès, les systèmes touchés, l'exfiltration, l'impact opérationnel, la confirmation de la victime et la divulgation de l'ensemble complet restent inconnus. Les archives ont été examinées localement en lecture seule ; aucune donnée personnelle brute n'est publiée. L'analyse des documents visuels reste limitée par les 172 fichiers image non validés et par l'absence de modèle OCR français ou arabe disponible.
-
+  **Inconnu :** Le nombre réel de personnes concernées, l'exhaustivité du jeu complet, la validité des **6 000 profils** revendiqués, la date et la méthode d'accès, les systèmes touchés, l'exfiltration, l'impact opérationnel, la confirmation de la victime et la divulgation de l'ensemble complet restent inconnus. Les archives ont été examinées localement en lecture seule ; aucune donnée personnelle brute n'est publiée. L'analyse des documents visuels reste limitée par les 172 fichiers image non validés et par l'absence de modèle OCR français ou arabe disponible.
 
 #### 🇪🇬 Égypte - Egyptian Football Association (EFA)
 
@@ -133,7 +128,7 @@
   L'Egyptian Football Association (EFA) est l'instance nationale chargée de la gouvernance et de l'organisation du football en Égypte. Elle est affiliée à la FIFA et à la Confédération Africaine de Football (CAF).
 
 * **Analyse :**
-  **Observed :** Le 26 juillet 2026, l'acteur utilisant l'alias Revesky a publié un message affirmant avoir divulgué « toutes les bases de données » de l'Egyptian Football Association. La publication revendique un ensemble total d'environ **9,6 Go de données** concernant approximativement **350 000 joueurs**.
+  **Observé :** Le 26 juillet 2026, l'acteur utilisant l'alias Revesky a publié un message affirmant avoir divulgué « toutes les bases de données » de l'Egyptian Football Association. La publication revendique un ensemble total d'environ **9,6 Go de données** concernant approximativement **350 000 joueurs**.
 
   Un ensemble de documents représentant environ **1,3 Go** a effectivement été divulgué par l'acteur. Les éléments examinés comprennent notamment des bases de données structurées ainsi que des documents administratifs associés aux joueurs.
 
@@ -142,9 +137,9 @@
   Les champs observés couvrent notamment l'identité des joueurs, les numéros nationaux d'identification, les dates et lieux de naissance, la nationalité, des informations familiales, les équipes, transferts, contrats, saisons sportives et différentes informations administratives. Dans l'extrait contenant 802 lignes, **798 enregistrements comportent un numéro national d'identification numérique à 14 chiffres**.
 
   L'échantillon documentaire contient également plusieurs catégories de documents directement associées aux processus administratifs de l'EFA : formulaires d'inscription de joueurs portant l'identité visuelle de la fédération, copies de pièces d'identité, actes de naissance, contrats de joueurs professionnels, attestations d'assurance et documents de formation. Certains formulaires comportent également des photographies, signatures et empreintes. Ces éléments corroborent plusieurs catégories de données annoncées par Revesky.
-  **Assumption :** La cohérence entre les bases structurées, les documents administratifs et l'identité visuelle de l'EFA permet d'évaluer avec un **niveau de confiance élevé** que les éléments examinés proviennent de données associées à la fédération. Cette évaluation concerne l'authenticité structurelle et l'attribution des échantillons ; elle ne confirme pas la méthode par laquelle Revesky les aurait obtenus.
+  **Hypothèse :** La cohérence entre les bases structurées, les documents administratifs et l'identité visuelle de l'EFA permet d'évaluer avec un **niveau de confiance élevé** que les éléments examinés proviennent de données associées à la fédération. Cette évaluation concerne l'authenticité structurelle et l'attribution des échantillons ; elle ne confirme pas la méthode par laquelle Revesky les aurait obtenus.
 
-  **Unknown :** AFRINTEL n'a pas validé l'intégralité du volume revendiqué de **9,6 Go**, ni le chiffre d'environ **350 000 joueurs**. Le corpus effectivement identifié représente environ **1,3 Go**, ce qui ne permet pas de confirmer que l'ensemble des bases revendiquées a réellement été rendu public. La présence de formulaires militaires dans l'ensemble complet n'a pas non plus été vérifiée dans les documents examinés. Le vecteur d'accès initial, la méthode d'extraction, la chronologie de la compromission et une éventuelle confirmation officielle de l'EFA restent inconnus.
+  **Inconnu :** AFRINTEL n'a pas validé l'intégralité du volume revendiqué de **9,6 Go**, ni le chiffre d'environ **350 000 joueurs**. Le corpus effectivement identifié représente environ **1,3 Go**, ce qui ne permet pas de confirmer que l'ensemble des bases revendiquées a réellement été rendu public. La présence de formulaires militaires dans l'ensemble complet n'a pas non plus été vérifiée dans les documents examinés. Le vecteur d'accès initial, la méthode d'extraction, la chronologie de la compromission et une éventuelle confirmation officielle de l'EFA restent inconnus.
 
   La nature des informations observées, comprenant des données d'identité, documents officiels, données contractuelles et dossiers pouvant concerner de jeunes joueurs ou des mineurs, crée un risque élevé de fraude documentaire, usurpation d'identité, phishing ciblé, ingénierie sociale et exploitation abusive des informations personnelles. AFRINTEL ne reproduit aucune identité, numéro national, adresse, signature, photographie ou autre donnée personnelle issue des éléments examinés.
 
@@ -171,11 +166,11 @@
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe krybit à Buzz Trading 104, situe la cible en Afrique du Sud et cite www.buzztrading104.co.za. Il est horodaté au 2 août 2026 à 13:26:24, sans fuseau horaire indiqué. Aucun échantillon, volume, délai de divulgation, type de données ou élément technique de compromission n'est fourni.
+  **Observé :** L'enregistrement source fourni associe krybit à Buzz Trading 104, situe la cible en Afrique du Sud et cite www.buzztrading104.co.za. Il est horodaté au 2 août 2026 à 13:26:24, sans fuseau horaire indiqué. Aucun échantillon, volume, délai de divulgation, type de données ou élément technique de compromission n'est fourni.
 
-  **Assumption :** La concordance du domaine avec le site public de l'entreprise rend l'identification de la cible plausible. Elle ne confirme ni un accès non autorisé, ni une exfiltration, ni un chiffrement.
+  **Hypothèse :** La concordance du domaine avec le site public de l'entreprise rend l'identification de la cible plausible. Elle ne confirme ni un accès non autorisé, ni une exfiltration, ni un chiffrement.
 
-  **Unknown :** La date et la méthode d'accès initial, les systèmes affectés, l'existence d'un impact opérationnel, la nature des données éventuellement obtenues, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
+  **Inconnu :** La date et la méthode d'accès initial, les systèmes affectés, l'existence d'un impact opérationnel, la nature des données éventuellement obtenues, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -212,11 +207,11 @@ last_checked_at: 2026-08-02T13:26:24
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source associe KRYBIT à ASHA Microfinance Bank et a été observé le 2 août 2026 à 14:24:27, sans fuseau horaire indiqué. Le corpus fourni est attribué à la divulgation de données par KRYBIT. Selon les informations de provenance transmises avec le corpus, cette divulgation aurait suivi l'échec des négociations entre les deux parties ; ce déroulement n'a pas été corroboré indépendamment par une source publique. L'analyse en lecture seule du dossier complet a recensé 1 498 fichiers (environ 7,15 Go) : 1 101 ne contiennent que des octets nuls et 397 contiennent des données non nulles. Seize tables textuelles représentent environ 14,6 millions de lignes physiques ; 5 164 lignes ont été échantillonnées et huit irrégularités de largeur ont été relevées. Le corpus comprend également des classeurs et documents bureautiques ainsi que des fichiers RTF ; plusieurs archives sont endommagées ou illisibles. Les éléments lisibles présentent des champs financiers ou transactionnels et des motifs de contact dans une partie des fichiers. Les dates structurées observées vont du 27 avril 2022 au 16 juillet 2026.
+  **Observé :** L'enregistrement source associe KRYBIT à ASHA Microfinance Bank et a été observé le 2 août 2026 à 14:24:27, sans fuseau horaire indiqué. Le corpus fourni est attribué à la divulgation de données par KRYBIT. Selon les informations de provenance transmises avec le corpus, cette divulgation aurait suivi l'échec des négociations entre les deux parties ; ce déroulement n'a pas été corroboré indépendamment par une source publique. L'analyse en lecture seule du dossier complet a recensé 1 498 fichiers (environ 7,15 Go) : 1 101 ne contiennent que des octets nuls et 397 contiennent des données non nulles. Seize tables textuelles représentent environ 14,6 millions de lignes physiques ; 5 164 lignes ont été échantillonnées et huit irrégularités de largeur ont été relevées. Le corpus comprend également des classeurs et documents bureautiques ainsi que des fichiers RTF ; plusieurs archives sont endommagées ou illisibles. Les éléments lisibles présentent des champs financiers ou transactionnels et des motifs de contact dans une partie des fichiers. Les dates structurées observées vont du 27 avril 2022 au 16 juillet 2026.
 
-  **Assumption :** Le chemin de collecte, le domaine associé et la nature structurée du corpus sont cohérents avec ASHA. Les documents lisibles ne portent toutefois pas tous de marqueur institutionnel explicite. Les lignes physiques ne représentent pas nécessairement des enregistrements uniques ou des clients distincts. Si les données financières ou de clientèle sont authentiques, elles peuvent favoriser l'hameçonnage ciblé, l'usurpation d'identité et la fraude.
+  **Hypothèse :** Le chemin de collecte, le domaine associé et la nature structurée du corpus sont cohérents avec ASHA. Les documents lisibles ne portent toutefois pas tous de marqueur institutionnel explicite. Les lignes physiques ne représentent pas nécessairement des enregistrements uniques ou des clients distincts. Si les données financières ou de clientèle sont authentiques, elles peuvent favoriser l'hameçonnage ciblé, l'usurpation d'identité et la fraude.
 
-  **Unknown :** La méthode et la date d'accès initial, les systèmes touchés, le mécanisme de chiffrement, l'exhaustivité du corpus, le nombre d'enregistrements uniques et l'impact opérationnel ne sont pas établis. La confirmation officielle de l'incident n'a pas été observée. Le statut des négociations reste non corroboré publiquement ; aucun paiement ou transfert à un tiers n'est établi.
+  **Inconnu :** La méthode et la date d'accès initial, les systèmes touchés, le mécanisme de chiffrement, l'exhaustivité du corpus, le nombre d'enregistrements uniques et l'impact opérationnel ne sont pas établis. La confirmation officielle de l'incident n'a pas été observée. Le statut des négociations reste non corroboré publiquement ; aucun paiement ou transfert à un tiers n'est établi.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -253,11 +248,11 @@ last_checked_at: 2026-09-13T02:32:51Z
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source associe krybit à DC Partner, situe la cible en Afrique du Sud et cite www.dcpartner.co.za. Il a été relevé le 2 août 2026 à 14:25:08, sans fuseau horaire indiqué. Le **7 août 2026**, DC Partner a confirmé à MyBroadband avoir subi une attaque ransomware. L'entreprise a indiqué que ses systèmes restaient pleinement opérationnels et qu'une enquête était en cours, avec des notifications engagées conformément à la section 22 de la POPIA. FNB, partenaire tiers cité dans l'article, a déclaré ne disposer d'aucun élément indiquant un impact sur ses informations clients, ses systèmes ou son environnement technologique. Krybit affirme avoir divulgué des données, mais la quantité, le contenu et l'étendue de cette divulgation ne sont pas établis dans la source publique examinée.
+  **Observé :** L'enregistrement source associe krybit à DC Partner, situe la cible en Afrique du Sud et cite www.dcpartner.co.za. Il a été relevé le 2 août 2026 à 14:25:08, sans fuseau horaire indiqué. Le **7 août 2026**, DC Partner a confirmé à MyBroadband avoir subi une attaque ransomware. L'entreprise a indiqué que ses systèmes restaient pleinement opérationnels et qu'une enquête était en cours, avec des notifications engagées conformément à la section 22 de la POPIA. FNB, partenaire tiers cité dans l'article, a déclaré ne disposer d'aucun élément indiquant un impact sur ses informations clients, ses systèmes ou son environnement technologique. Krybit affirme avoir divulgué des données, mais la quantité, le contenu et l'étendue de cette divulgation ne sont pas établis dans la source publique examinée.
 
-  **Assumption :** La confirmation publique de DC Partner établit l'existence d'un incident ransomware et justifie le statut `Victim Confirmed`. Elle ne confirme pas à elle seule le chiffrement de systèmes, l'exfiltration revendiquée, le volume de données ni l'attribution technique de l'attaque à Krybit. L'association temporelle entre la publication de Krybit et la confirmation de la victime rend le lien plausible, mais AFRINTEL conserve une distinction entre la revendication de l'acteur et les faits confirmés par l'organisation.
+  **Hypothèse :** La confirmation publique de DC Partner établit l'existence d'un incident ransomware et justifie le statut `Victim Confirmed`. Elle ne confirme pas à elle seule le chiffrement de systèmes, l'exfiltration revendiquée, le volume de données ni l'attribution technique de l'attaque à Krybit. L'association temporelle entre la publication de Krybit et la confirmation de la victime rend le lien plausible, mais AFRINTEL conserve une distinction entre la revendication de l'acteur et les faits confirmés par l'organisation.
 
-  **Unknown :** Le vecteur d'accès initial, les systèmes précisément affectés, l'existence et l'étendue d'un chiffrement, la nature et le volume des données éventuellement exfiltrées ou divulguées, l'attribution technique définitive, les négociations et tout paiement restent inconnus. L'absence de données publiquement accessibles lors d'un contrôle ultérieur ne permet pas d'inférer un accord, un paiement, une revente ou l'absence d'exfiltration.
+  **Inconnu :** Le vecteur d'accès initial, les systèmes précisément affectés, l'existence et l'étendue d'un chiffrement, la nature et le volume des données éventuellement exfiltrées ou divulguées, l'attribution technique définitive, les négociations et tout paiement restent inconnus. L'absence de données publiquement accessibles lors d'un contrôle ultérieur ne permet pas d'inférer un accord, un paiement, une revente ou l'absence d'exfiltration.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -273,6 +268,7 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-09-14
 -->
+
 
 ### 04 août 2026
 
@@ -297,11 +293,11 @@ last_checked_at: 2026-09-14
 
 - **Analyse :**
 
-  **Observed :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie Sure Travel comme une victime sud-africaine, avec un horodatage au 4 août 2026 à 15:50:57. L'enregistrement du jeu source comporte également une URL secondaire renvoyant vers une société homonyme enregistrée à Hong Kong ; cette référence incohérente n'est pas retenue pour l'attribution géographique. Aucun échantillon de données n'était disponible dans les éléments fournis.
+  **Observé :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie Sure Travel comme une victime sud-africaine, avec un horodatage au 4 août 2026 à 15:50:57. L'enregistrement du jeu source comporte également une URL secondaire renvoyant vers une société homonyme enregistrée à Hong Kong ; cette référence incohérente n'est pas retenue pour l'attribution géographique. Aucun échantillon de données n'était disponible dans les éléments fournis.
 
-  **Assumption :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
+  **Hypothèse :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
 
-  **Unknown :** L'accès initial, les systèmes affectés, les données éventuellement obtenues, l'existence d'un chiffrement, tout impact opérationnel et une confirmation de la victime restent inconnus.
+  **Inconnu :** L'accès initial, les systèmes affectés, les données éventuellement obtenues, l'existence d'un chiffrement, tout impact opérationnel et une confirmation de la victime restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -339,11 +335,11 @@ last_checked_at: 2026-08-04T15:50:57
 
 - **Analyse :**
 
-  **Observed :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie ADG Healthcare comme une victime égyptienne, avec un horodatage au 4 août 2026 à 15:55:39. Le jeu source cite www.adg-healthcare.com, tandis que les profils publics de l'entreprise renvoient vers adghealthcare-eg.com ; cette divergence de domaine demeure documentée. Aucun échantillon de données n'était disponible dans les éléments fournis.
+  **Observé :** La fiche de victime a été vérifiée directement sur le site de fuite du groupe Orova. Elle identifie ADG Healthcare comme une victime égyptienne, avec un horodatage au 4 août 2026 à 15:55:39. Le jeu source cite www.adg-healthcare.com, tandis que les profils publics de l'entreprise renvoient vers adghealthcare-eg.com ; cette divergence de domaine demeure documentée. Aucun échantillon de données n'était disponible dans les éléments fournis.
 
-  **Assumption :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
+  **Hypothèse :** La publication peut correspondre à une opération d'extorsion visant l'organisation, mais elle ne permet pas à elle seule de confirmer un chiffrement, une exfiltration ou une perturbation opérationnelle.
 
-  **Unknown :** Le domaine technique effectivement visé, l'accès initial, les systèmes concernés, la nature des données éventuellement obtenues, l'existence d'un chiffrement, une éventuelle perturbation et la confirmation de l'organisation restent inconnus.
+  **Inconnu :** Le domaine technique effectivement visé, l'accès initial, les systèmes concernés, la nature des données éventuellement obtenues, l'existence d'un chiffrement, une éventuelle perturbation et la confirmation de l'organisation restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -360,7 +356,9 @@ resale_status: unknown
 last_checked_at: 2026-08-04T15:55:39
 -->
 
+
 ### 05 août 2026
+
 #### 🇩🇿 Algérie - Ministère du Commerce
 
 - **Date de l'incident :** Non établie
@@ -383,6 +381,7 @@ last_checked_at: 2026-08-04T15:55:39
   Une publication attribuée à Florence propose à la vente un accès VPN présenté comme appartenant au ministère algérien du Commerce, au prix de 500 USD. Le vendeur décrit les identifiants comme vérifiés et ne fournit aucune indication de revenus. La publication ne montre ni les identifiants, ni le point d’accès, ni le compte concerné, ni les privilèges disponibles, ni de preuve technique confirmant que l’accès fonctionne.
 
   L’accès annoncé pourrait permettre une entrée non autorisée dans des services gouvernementaux internes, une reconnaissance ultérieure, des opérations de phishing, un accès à des données ou des déplacements latéraux. La revendication reste non vérifiée et aucune confirmation indépendante du ministère, de l’accès VPN ou des identifiants n’est disponible dans la publication.
+
 
 ### 07 août 2026
 
@@ -407,11 +406,11 @@ last_checked_at: 2026-08-04T15:55:39
 
 - **Analyse :**
 
-  **Observed :** Le dossier local associé à la publication contient 21 artefacts : 8 JPG, 5 XLSX, 1 XLS, 3 PDF, 3 DOCX et 1 PPTX. Les cinq classeurs XLSX ont été ouverts en lecture seule : 54 feuilles et 53 927 cellules non vides. Ils contiennent 1 643 cellules de formule, non exécutées, et aucun lien externe détecté. Les contenus lisibles couvrent des plannings et heures de housekeeping, des rotations de serveurs, des demandes d'achat et un modèle de réservation, sur des périodes allant de 2017 à 2020. Les trois DOCX comprennent notamment une procédure de périodes de service, un document de peinture et un modèle de réservation avec sept tableaux. Les PDF sont des documents numérisés ; les images JPG et la présentation d'une diapositive n'ont pas permis une qualification textuelle complète. Les empreintes SHA-256 des 21 artefacts ont été calculées localement et conservées hors dépôt.
+  **Observé :** Le dossier local associé à la publication contient 21 artefacts : 8 JPG, 5 XLSX, 1 XLS, 3 PDF, 3 DOCX et 1 PPTX. Les cinq classeurs XLSX ont été ouverts en lecture seule : 54 feuilles et 53 927 cellules non vides. Ils contiennent 1 643 cellules de formule, non exécutées, et aucun lien externe détecté. Les contenus lisibles couvrent des plannings et heures de housekeeping, des rotations de serveurs, des demandes d'achat et un modèle de réservation, sur des périodes allant de 2017 à 2020. Les trois DOCX comprennent notamment une procédure de périodes de service, un document de peinture et un modèle de réservation avec sept tableaux. Les PDF sont des documents numérisés ; les images JPG et la présentation d'une diapositive n'ont pas permis une qualification textuelle complète. Les empreintes SHA-256 des 21 artefacts ont été calculées localement et conservées hors dépôt.
 
-  **Assumption :** La cohérence des plannings, procédures, formulaires d'achat, réservations et supports visuels avec l'activité d'un domaine résidentiel et golfique rend plausible l'association du corpus à l'environnement de la victime. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni le chiffrement, ni l'origine exacte de chaque fichier.
+  **Hypothèse :** La cohérence des plannings, procédures, formulaires d'achat, réservations et supports visuels avec l'activité d'un domaine résidentiel et golfique rend plausible l'association du corpus à l'environnement de la victime. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni le chiffrement, ni l'origine exacte de chaque fichier.
 
-  **Unknown :** Le nombre de personnes concernées, la présence exacte de données personnelles ou financières dans les documents numérisés et images, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et toute divulgation complète restent inconnus. L'analyse est limitée aux structures lisibles et aux métadonnées des fichiers ; les cellules de formule n'ont pas été recalculées et aucun contenu sensible brut n'est reproduit.
+  **Inconnu :** Le nombre de personnes concernées, la présence exacte de données personnelles ou financières dans les documents numérisés et images, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et toute divulgation complète restent inconnus. L'analyse est limitée aux structures lisibles et aux métadonnées des fichiers ; les cellules de formule n'ont pas été recalculées et aucun contenu sensible brut n'est reproduit.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -428,7 +427,9 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
+
 ### 08 août 2026
+
 #### 🇰🇪 Kenya - Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza)
 
 - **Date de l'incident :** Non établie
@@ -454,7 +455,6 @@ last_checked_at: 2026-09-04
 
   L'ampleur, la cohérence structurelle et la plausibilité des échantillons justifient un niveau de confiance élevé quant à l'exposition de véritables dossiers clients et de financement, indépendamment de la question non résolue de l'identité exacte de l'entreprise. Compte tenu du volume, la combinaison de données financières (montants dus, historique de paiement), de coordonnées personnelles et d'agents de recouvrement nommément identifiés crée un risque significatif de fraude de type recouvrement de créances, d'usurpation d'agents, de phishing et de harcèlement visant les clients de financement dans les pays concernés. AFRINTEL ne reproduit aucun nom de client, numéro de téléphone, identifiant de compte, adresse ni montant financier issu des éléments examinés.
 
-### 08 août 2026
 #### 🇿🇦 Afrique du Sud - mpowa.mobi (Plateforme de services jeunesse)
 
 - **Date de l'incident :** Non établie
@@ -488,7 +488,6 @@ last_checked_at: 2026-09-04
 
   La publication complète présente mpowa.mobi comme l'élément « 11/25 » d'une campagne en cours, décrivant un outil propriétaire (« CredHarvest V6 ») utilisé pour scanner et collecter en masse des instances Firebase Realtime Database mal configurées, et affirmant que des centaines de bases similaires ont déjà été récupérées par la même méthode. L'acteur propose à la fois la vente de cet outil de scan et des services d'intrusion/d'accès payants distincts sur le même forum. Cela indique que mpowa.mobi est une victime parmi une campagne plus large et systématique visant des déploiements Firebase mal configurés, et que des expositions comparables touchent vraisemblablement d'autres organisations africaines utilisant le même backend, indépendamment de tout ciblage spécifique à mpowa.mobi.
 
-### 08 août 2026
 #### 🇳🇬 Nigeria - Daily Trust
 
 - **Date de l'incident :** Non précisée
@@ -510,13 +509,13 @@ last_checked_at: 2026-09-04
 
 - **Analyse :**
 
-  **Observed :** Un enregistrement de source observé identifie Daily Trust, le groupe criminel Panzer, le Nigeria et `dailytrust.com`, avec un horodatage de détection au 8 août 2026 à 19:21:01 et des données publiées indiquées « N/D ». Une publication Panzer distincte datée du 8 août revendique 320 Go, propose un échantillon téléchargeable et affichait un compte à rebours actif de 17 jours, 11 heures, 3 minutes et 44 secondes lors de la capture du 11 août. L'échéance exacte et le fuseau horaire ne sont pas indiqués dans les éléments fournis.
+  **Observé :** Un enregistrement de source observé identifie Daily Trust, le groupe criminel Panzer, le Nigeria et `dailytrust.com`, avec un horodatage de détection au 8 août 2026 à 19:21:01 et des données publiées indiquées « N/D ». Une publication Panzer distincte datée du 8 août revendique 320 Go, propose un échantillon téléchargeable et affichait un compte à rebours actif de 17 jours, 11 heures, 3 minutes et 44 secondes lors de la capture du 11 août. L'échéance exacte et le fuseau horaire ne sont pas indiqués dans les éléments fournis.
 
   AFRINTEL a examiné l'intégralité du classeur `sample.xlsx` fourni en lecture seule. Ce fichier de 44 996 octets a pour empreinte SHA-256 `83516d93de48d2e53465071a418e50dd4b678baedef05277ab93ebb6f0034fa6` et contient deux feuilles. La feuille principale comporte 443 enregistrements non vides sous les champs Name, Email Address, New Password, Comments et Status. Les 443 cellules d'adresse email utilisent le domaine de la victime et sont uniques ; 438 lignes contiennent une valeur dans le champ New Password. La seconde feuille contient 19 entrées d'adresse du domaine cible, dont 18 recoupent la feuille principale, soit 444 adresses distinctes du domaine cible dans les champs d'adresse. Aucune des deux feuilles ne contient de formule ni de ligne complète dupliquée. Le classeur contient également 461 hyperliens HTTP externes pointant vers le domaine de la victime ; AFRINTEL ne les a pas suivis. Un composant `jsaProject.bin` incorporé a été identifié mais n'a pas été exécuté. Aucun nom, adresse email, mot de passe, commentaire, valeur de statut ou cible d'hyperlien de l'échantillon n'est reproduit.
 
-  **Assumption :** Le schéma structuré de réinitialisation de comptes, l'utilisation exclusive du domaine de la victime dans les champs d'adresse, les relations cohérentes entre les feuilles et les hyperliens vers le domaine cible permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est associé à Daily Trust. Si les mots de passe restent valides, ces éléments pourraient permettre des prises de contrôle de comptes, des compromissions de messagerie professionnelle, des usurpations, du phishing ciblé et l'accès à des communications éditoriales, de sources ou commerciales confidentielles. Cette évaluation porte sur l'authenticité structurelle et l'attribution de l'échantillon ; elle ne confirme pas la manière dont Panzer l'a obtenu.
+  **Hypothèse :** Le schéma structuré de réinitialisation de comptes, l'utilisation exclusive du domaine de la victime dans les champs d'adresse, les relations cohérentes entre les feuilles et les hyperliens vers le domaine cible permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est associé à Daily Trust. Si les mots de passe restent valides, ces éléments pourraient permettre des prises de contrôle de comptes, des compromissions de messagerie professionnelle, des usurpations, du phishing ciblé et l'accès à des communications éditoriales, de sources ou commerciales confidentielles. Cette évaluation porte sur l'authenticité structurelle et l'attribution de l'échantillon ; elle ne confirme pas la manière dont Panzer l'a obtenu.
 
-  **Unknown :** AFRINTEL n'a pas établi si les mots de passe sont actuels, temporaires, anciennement utilisés ou déjà révoqués, ni si le classeur représente l'ensemble des comptes de Daily Trust. L'échantillon ne contient pas de plage temporelle fiable au niveau des enregistrements et ne valide pas le volume revendiqué de 320 Go. La méthode d'accès initial, la méthode d'extraction, un éventuel chiffrement ou impact opérationnel, l'échéance exacte de divulgation, la publication intégrale des données, la confirmation par la victime, la négociation, le paiement de rançon et la revente restent inconnus. La publication observée et l'échantillon cohérent ne constituent donc ni une confirmation officielle d'une intrusion ransomware ni une preuve d'exfiltration complète.
+  **Inconnu :** AFRINTEL n'a pas établi si les mots de passe sont actuels, temporaires, anciennement utilisés ou déjà révoqués, ni si le classeur représente l'ensemble des comptes de Daily Trust. L'échantillon ne contient pas de plage temporelle fiable au niveau des enregistrements et ne valide pas le volume revendiqué de 320 Go. La méthode d'accès initial, la méthode d'extraction, un éventuel chiffrement ou impact opérationnel, l'échéance exacte de divulgation, la publication intégrale des données, la confirmation par la victime, la négociation, le paiement de rançon et la revente restent inconnus. La publication observée et l'échantillon cohérent ne constituent donc ni une confirmation officielle d'une intrusion ransomware ni une preuve d'exfiltration complète.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -532,6 +531,7 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-20T01:35:32+01:00
 -->
+
 
 ### 14 août 2026
 
@@ -555,11 +555,11 @@ last_checked_at: 2026-08-20T01:35:32+01:00
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe thegentlemen à « Avanta Maroc Ex Adecco », cite avanta.ma et situe la cible au Maroc. Il est horodaté au 14 août 2026 à 05:55:47, sans fuseau horaire indiqué. La marque publique actuelle est AVANTA Maroc. La source ne fournit ni échantillon, ni volume, ni catégorie de données, ni preuve technique de compromission.
+  **Observé :** L'enregistrement source fourni associe thegentlemen à « Avanta Maroc Ex Adecco », cite avanta.ma et situe la cible au Maroc. Il est horodaté au 14 août 2026 à 05:55:47, sans fuseau horaire indiqué. La marque publique actuelle est AVANTA Maroc. La source ne fournit ni échantillon, ni volume, ni catégorie de données, ni preuve technique de compromission.
 
-  **Assumption :** La concordance du nom, du domaine et du pays rend l'identification de la cible plausible. Les activités RH impliquent potentiellement des données de candidats, d'employés ou de clients, mais aucune exposition de ce type n'est établie.
+  **Hypothèse :** La concordance du nom, du domaine et du pays rend l'identification de la cible plausible. Les activités RH impliquent potentiellement des données de candidats, d'employés ou de clients, mais aucune exposition de ce type n'est établie.
 
-  **Unknown :** L'accès initial, les systèmes affectés, le chiffrement, l'exfiltration, l'impact opérationnel, la confirmation de la victime et l'état de publication restent inconnus.
+  **Inconnu :** L'accès initial, les systèmes affectés, le chiffrement, l'exfiltration, l'impact opérationnel, la confirmation de la victime et l'état de publication restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -576,7 +576,9 @@ resale_status: unknown
 last_checked_at: 2026-08-14T05:55:47
 -->
 
+
 ### 16 août 2026
+
 #### 🇿🇦 Afrique du Sud - The Courier Guy
 
 - **Date de l'incident :** Non précisée
@@ -598,11 +600,11 @@ last_checked_at: 2026-08-14T05:55:47
 
 - **Analyse :**
 
-  **Observed :** Le dossier local contient 10 artefacts : six CSV et quatre XLSX. Les six CSV ont été analysés intégralement en lecture seule : 1 269 lignes de données, quatre lignes de métadonnées par fichier et 36 colonnes. Les champs comprennent notamment le nom du bénéficiaire, le compte bancaire du bénéficiaire, le type de compte, le code agence, le montant, les références et des canaux de notification par e-mail, fax et SMS. L'ensemble représente 255 noms de bénéficiaires distincts et 236 comptes distincts ; aucun doublon de ligne exact n'a été observé à l'intérieur des fichiers. Les quatre XLSX contiennent chacun 20 feuilles de calendriers de paiements locatifs. 3 409 cellules de formule ont été détectées et aucune n'a été exécutée. Des composants de liens externes sont présents dans trois des quatre classeurs ; aucun lien n'a été suivi. Les noms de fichiers couvrent des lots de juillet et août 2025 ainsi que de janvier, février et avril 2026 ; une feuille intitulée 1 August 2011 révèle aussi la présence d'un élément historique ou réutilisé. Les empreintes SHA-256 des 10 artefacts ont été calculées localement et conservées hors dépôt.
+  **Observé :** Le dossier local contient 10 artefacts : six CSV et quatre XLSX. Les six CSV ont été analysés intégralement en lecture seule : 1 269 lignes de données, quatre lignes de métadonnées par fichier et 36 colonnes. Les champs comprennent notamment le nom du bénéficiaire, le compte bancaire du bénéficiaire, le type de compte, le code agence, le montant, les références et des canaux de notification par e-mail, fax et SMS. L'ensemble représente 255 noms de bénéficiaires distincts et 236 comptes distincts ; aucun doublon de ligne exact n'a été observé à l'intérieur des fichiers. Les quatre XLSX contiennent chacun 20 feuilles de calendriers de paiements locatifs. 3 409 cellules de formule ont été détectées et aucune n'a été exécutée. Des composants de liens externes sont présents dans trois des quatre classeurs ; aucun lien n'a été suivi. Les noms de fichiers couvrent des lots de juillet et août 2025 ainsi que de janvier, février et avril 2026 ; une feuille intitulée 1 August 2011 révèle aussi la présence d'un élément historique ou réutilisé. Les empreintes SHA-256 des 10 artefacts ont été calculées localement et conservées hors dépôt.
 
-  **Assumption :** La structure homogène des fichiers, la répétition des calendriers locatifs et la présence de données de paiement et de contact rendent plausible l'association du corpus à l'environnement opérationnel de The Courier Guy. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution. Il pourrait faciliter la fraude au paiement, l'usurpation de bénéficiaires ou de fournisseurs, le phishing ciblé et des attaques contre des comptes, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni l'action de medusalocker.
+  **Hypothèse :** La structure homogène des fichiers, la répétition des calendriers locatifs et la présence de données de paiement et de contact rendent plausible l'association du corpus à l'environnement opérationnel de The Courier Guy. L'échantillon est suffisamment structuré pour relever la confiance dans son authenticité et son attribution. Il pourrait faciliter la fraude au paiement, l'usurpation de bénéficiaires ou de fournisseurs, le phishing ciblé et des attaques contre des comptes, mais il ne confirme ni le vecteur d'accès, ni l'exfiltration, ni l'action de medusalocker.
 
-  **Unknown :** Le nombre exact de personnes et d'organisations concernées, l'actualité des comptes et coordonnées, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et la publication complète restent inconnus. Les périodes anciennes ou les feuilles héritées peuvent ne plus refléter l'état actuel. L'analyse n'a pas recalculé les formules, n'a pas suivi les liens externes et ne reproduit aucune donnée financière ou personnelle brute.
+  **Inconnu :** Le nombre exact de personnes et d'organisations concernées, l'actualité des comptes et coordonnées, les systèmes sources, la méthode d'acquisition, la date d'accès, l'étendue de l'exfiltration, l'impact opérationnel, la confirmation de la victime et la publication complète restent inconnus. Les périodes anciennes ou les feuilles héritées peuvent ne plus refléter l'état actuel. L'analyse n'a pas recalculé les formules, n'a pas suivi les liens externes et ne reproduit aucune donnée financière ou personnelle brute.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -619,7 +621,9 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
+
 ### 17 août 2026
+
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
 
 - **Date de l'incident :** Non établie
@@ -639,17 +643,19 @@ last_checked_at: 2026-09-04
 
 - **Analyse :**
 
-  **Observed :** AFRINTEL a analysé les deux fichiers d'échantillon fournis avec la publication au lieu de s'appuyer uniquement sur les captures du forum. Le fichier CSV contient 300 dossiers de candidature structurellement valides répartis sur 36 colonnes, sans ligne mal formée ni doublon exact ; le fichier TXT contient 300 blocs détaillés correspondants. Les 300 identifiants de candidature concordent entre les deux fichiers dans le même ordre, et chaque champ scalaire renseigné comparé entre les représentations CSV et TXT est cohérent. L'échantillon couvre 207 profils de candidats distincts et six valeurs d'employeur, avec des horodatages de candidature allant du 13 au 16 août 2026. Les fichiers contiennent des marqueurs internes répétés de l'environnement elevated-talent, tandis que la représentation TXT contient également des libellés SnapStar Talent répétés. Leurs empreintes SHA-256 sont 8b358e7efcebd5002687f6dab193be24cb7535ce77dec411359bf33ffd42a834 (CSV) et 31cfc806bd28aeab2d79dc23c07cff59c31881a120aa481edfd192b09c403741 (TXT).
+  **Observé :** AFRINTEL a analysé les deux fichiers d'échantillon fournis avec la publication au lieu de s'appuyer uniquement sur les captures du forum. Le fichier CSV contient 300 dossiers de candidature structurellement valides répartis sur 36 colonnes, sans ligne mal formée ni doublon exact ; le fichier TXT contient 300 blocs détaillés correspondants. Les 300 identifiants de candidature concordent entre les deux fichiers dans le même ordre, et chaque champ scalaire renseigné comparé entre les représentations CSV et TXT est cohérent. L'échantillon couvre 207 profils de candidats distincts et six valeurs d'employeur, avec des horodatages de candidature allant du 13 au 16 août 2026. Les fichiers contiennent des marqueurs internes répétés de l'environnement elevated-talent, tandis que la représentation TXT contient également des libellés SnapStar Talent répétés. Leurs empreintes SHA-256 sont 8b358e7efcebd5002687f6dab193be24cb7535ce77dec411359bf33ffd42a834 (CSV) et 31cfc806bd28aeab2d79dc23c07cff59c31881a120aa481edfd192b09c403741 (TXT).
 
   Au niveau des profils uniques, les 207 profils contiennent une adresse email, un numéro de téléphone, une date de naissance, une valeur de salaire et une URL de CV. Des numéros nationaux d'identité ne sont présents que pour 11 profils (5,3 %), des URL d'entretien vidéo pour 50 profils (24,2 %) et des photographies de profil pour 41 profils (19,8 %). Des données de référence sont également présentes : 87 profils contiennent le nom d'un référent, 61 son adresse email et 74 son numéro de téléphone. Une date de naissance est objectivement incohérente car elle produit un âge de zéro an. L'échantillon ne confirme donc pas la formulation générale de l'acteur selon laquelle chaque dossier candidat contient un numéro national d'identité ou un entretien vidéo.
 
   L'export au niveau des candidatures contient 299 URL de CV représentant 209 liens distincts et 78 URL vidéo représentant 57 liens distincts. Tous les liens CV et vidéo observés utilisent Firebase Storage et contiennent des paramètres média avec jeton. AFRINTEL n'a pas interrogé ces URL ni récupéré les documents liés ; leur validité actuelle n'est donc pas établie. Les candidatures répétées appartenant à un même profil sont cohérentes pour l'email, le téléphone, la date de naissance et le numéro national d'identité ; un profil présente une variation de nom et deux profils plusieurs URL de CV, ce qui est compatible avec des mises à jour ordinaires de profil ou de document plutôt qu'avec une incohérence généralisée.
 
-  **Assumption :** La correspondance exacte entre les fichiers CSV et TXT, les relations cohérentes entre candidatures et profils, les marqueurs internes propres à la cible, les horodatages récents et la structure homogène de Firebase Storage permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est un véritable jeu de données de recrutement lié à l'environnement elevated-talent/SnapStar Talent. L'échantillon soutient matériellement la revendication selon laquelle des données d'identité, de contact, d'emploi, de rémunération, de CV, de vidéo et de références tierces ont été exposées ou mises à disposition de l'acteur. Il ne valide pas les volumes annoncés pour le jeu complet. L'échantillon vérifié suffit à créer un risque élevé de fraude au recrutement, de phishing ciblé, d'usurpation, de détournement d'identité et d'atteinte à la vie privée ; les liens de CV et vidéos contenant des jetons créent un risque supplémentaire d'accès aux documents s'ils restent actifs.
+  **Hypothèse :** La correspondance exacte entre les fichiers CSV et TXT, les relations cohérentes entre candidatures et profils, les marqueurs internes propres à la cible, les horodatages récents et la structure homogène de Firebase Storage permettent d'évaluer avec un niveau de confiance élevé que l'échantillon est un véritable jeu de données de recrutement lié à l'environnement elevated-talent/SnapStar Talent. L'échantillon soutient matériellement la revendication selon laquelle des données d'identité, de contact, d'emploi, de rémunération, de CV, de vidéo et de références tierces ont été exposées ou mises à disposition de l'acteur. Il ne valide pas les volumes annoncés pour le jeu complet. L'échantillon vérifié suffit à créer un risque élevé de fraude au recrutement, de phishing ciblé, d'usurpation, de détournement d'identité et d'atteinte à la vie privée ; les liens de CV et vidéos contenant des jetons créent un risque supplémentaire d'accès aux documents s'ils restent actifs.
 
-  **Unknown :** AFRINTEL n'a pas vérifié indépendamment l'accès Firestore prétendument non authentifié, la méthode d'extraction de l'acteur, les volumes annoncés de 93 462 profils, 83 237 candidatures et 176 795 documents, les 249,1 Go de fichiers, la présence de 83 entreprises clientes dans le jeu complet, ni une éventuelle réponse de SnapStar Talent. Les 300 candidatures les plus récentes constituent un échantillon non aléatoire ; leurs taux de complétude ne peuvent pas être extrapolés à l'ensemble du jeu proposé. L'incident reste donc classé comme une revendication accompagnée d'un échantillon publié, et non comme la confirmation de l'extraction complète de l'environnement de production. AFRINTEL ne reproduit aucun enregistrement personnel, lien de téléchargement, jeton d'URL, instruction de paiement ni coordonnée de l'acteur.
+  **Inconnu :** AFRINTEL n'a pas vérifié indépendamment l'accès Firestore prétendument non authentifié, la méthode d'extraction de l'acteur, les volumes annoncés de 93 462 profils, 83 237 candidatures et 176 795 documents, les 249,1 Go de fichiers, la présence de 83 entreprises clientes dans le jeu complet, ni une éventuelle réponse de SnapStar Talent. Les 300 candidatures les plus récentes constituent un échantillon non aléatoire ; leurs taux de complétude ne peuvent pas être extrapolés à l'ensemble du jeu proposé. L'incident reste donc classé comme une revendication accompagnée d'un échantillon publié, et non comme la confirmation de l'extraction complète de l'environnement de production. AFRINTEL ne reproduit aucun enregistrement personnel, lien de téléchargement, jeton d'URL, instruction de paiement ni coordonnée de l'acteur.
+
 
 ### 18 août 2026
+
 #### 🇲🇺 Maurice - SpearFin Ltd
 
 - **Date de l'incident :** 26 juin 2026, date alléguée par l'acteur
@@ -671,13 +677,13 @@ last_checked_at: 2026-09-04
 
 - **Analyse :**
 
-  **Observed :** Les captures fournies montrent une publication attribuée à incransom qui nomme SpearFin Ltd, identifie `spearfin.net` et localise la cible à Maurice. La publication est horodatée au 18 août 2026 à 09:35, sans fuseau horaire visible, et affirme qu'une fuite est survenue le 26 juin 2026, pour un volume de 416 Go. Elle mentionne des accords de confidentialité, correspondances clients, dossiers KYC, pièces d'identité, certificats, documents d'investissement et d'actionnariat, audits LBC/AML, contrats, formulaires, relevés bancaires, éléments de paie, documents de prêt et registres d'administrateurs. Elle revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires. AFRINTEL n'a pas vérifié ces chiffres indépendamment.
+  **Observé :** Les captures fournies montrent une publication attribuée à incransom qui nomme SpearFin Ltd, identifie `spearfin.net` et localise la cible à Maurice. La publication est horodatée au 18 août 2026 à 09:35, sans fuseau horaire visible, et affirme qu'une fuite est survenue le 26 juin 2026, pour un volume de 416 Go. Elle mentionne des accords de confidentialité, correspondances clients, dossiers KYC, pièces d'identité, certificats, documents d'investissement et d'actionnariat, audits LBC/AML, contrats, formulaires, relevés bancaires, éléments de paie, documents de prêt et registres d'administrateurs. Elle revendique également 10 milliards USD d'actifs sous administration et 30 millions USD de chiffre d'affaires. AFRINTEL n'a pas vérifié ces chiffres indépendamment.
 
   La publication affiche plusieurs miniatures présentées comme des échantillons, comprenant des documents d'identité, d'entreprise, administratifs et financiers. Un échantillon agrandi est une annexe de confirmation/reconnaissance d'un contributeur structurée en sept sections et datée de juin 2026. Le texte visible contient une référence à un siège social à Maurice, un engagement de capital en USD à sept chiffres et des clauses relatives à la catégorie d'unités, aux frais de gestion, aux dépenses opérationnelles, au taux de rendement minimal et aux commissions de performance ; un sceau d'entreprise est partiellement visible. Ces éléments structurels sont cohérents avec des documents d'administration de fonds et d'investissement. Les noms, adresses, montants financiers exacts, pièces d'identité et autres valeurs confidentielles visibles ne sont pas reproduits. La publication annonce une divulgation intégrale à venir. Analyse limitée aux données visibles dans l'échantillon fourni ; les fichiers sources originaux n'étaient pas disponibles, n'ont pas été consultés ni téléchargés.
 
-  **Assumption :** La combinaison des détails de publication propres à la cible, d'un échantillon contractuel lié à Maurice, d'une terminologie cohérente avec les fonds d'investissement, de dates contractuelles récentes et de plusieurs catégories de documents soutient avec un niveau de confiance moyen l'évaluation selon laquelle une partie au moins des éléments visibles est associée aux services attribués à SpearFin. S'ils sont authentiques, les dossiers KYC, d'identité, bancaires, de paie, de gouvernance d'entreprise et d'investissement créeraient un risque élevé de fraude à l'identité, de compromission de messagerie professionnelle, de fraude au paiement, de phishing ciblé et d'atteinte à la confidentialité des clients et investisseurs. Cette évaluation n'authentifie pas chaque miniature, signature ou sceau et n'établit pas la méthode d'acquisition.
+  **Hypothèse :** La combinaison des détails de publication propres à la cible, d'un échantillon contractuel lié à Maurice, d'une terminologie cohérente avec les fonds d'investissement, de dates contractuelles récentes et de plusieurs catégories de documents soutient avec un niveau de confiance moyen l'évaluation selon laquelle une partie au moins des éléments visibles est associée aux services attribués à SpearFin. S'ils sont authentiques, les dossiers KYC, d'identité, bancaires, de paie, de gouvernance d'entreprise et d'investissement créeraient un risque élevé de fraude à l'identité, de compromission de messagerie professionnelle, de fraude au paiement, de phishing ciblé et d'atteinte à la confidentialité des clients et investisseurs. Cette évaluation n'authentifie pas chaque miniature, signature ou sceau et n'établit pas la méthode d'acquisition.
 
-  **Unknown :** En l'absence des fichiers originaux, AFRINTEL n'a pas pu examiner les métadonnées, signatures, sceaux, l'intégrité des documents, les doublons, la cohérence interne de l'ensemble des échantillons ni une éventuelle manipulation. AFRINTEL n'a pas confirmé indépendamment l'accès non autorisé, l'exfiltration de données, le chiffrement par ransomware, une perturbation opérationnelle, le volume revendiqué de 416 Go, la date alléguée du 26 juin 2026, les chiffres financiers annoncés ni la publication d'une archive complète. Aucun communiqué de la victime ni élément technique indépendant n'a été fourni. La fiche documente donc une publication incransom observée avec des échantillons visibles concernant une victime mauricienne distincte, et non une compromission ou une divulgation intégrale confirmée.
+  **Inconnu :** En l'absence des fichiers originaux, AFRINTEL n'a pas pu examiner les métadonnées, signatures, sceaux, l'intégrité des documents, les doublons, la cohérence interne de l'ensemble des échantillons ni une éventuelle manipulation. AFRINTEL n'a pas confirmé indépendamment l'accès non autorisé, l'exfiltration de données, le chiffrement par ransomware, une perturbation opérationnelle, le volume revendiqué de 416 Go, la date alléguée du 26 juin 2026, les chiffres financiers annoncés ni la publication d'une archive complète. Aucun communiqué de la victime ni élément technique indépendant n'a été fourni. La fiche documente donc une publication incransom observée avec des échantillons visibles concernant une victime mauricienne distincte, et non une compromission ou une divulgation intégrale confirmée.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -693,6 +699,7 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
 -->
+
 
 ### 19 août 2026
 
@@ -716,11 +723,11 @@ last_checked_at: 2026-08-19T06:02:04+01:00
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe thegentlemen à Babcock, cite babcock.co.za et situe la cible en Afrique du Sud. Il est horodaté au 19 août 2026 à 08:10:32, sans fuseau horaire indiqué. Le secteur source « industrie de la défense » ne couvre qu'une partie des activités publiques de Babcock Africa. Aucun échantillon, volume, catégorie de données, échéance ou élément technique n'est fourni.
+  **Observé :** L'enregistrement source fourni associe thegentlemen à Babcock, cite babcock.co.za et situe la cible en Afrique du Sud. Il est horodaté au 19 août 2026 à 08:10:32, sans fuseau horaire indiqué. Le secteur source « industrie de la défense » ne couvre qu'une partie des activités publiques de Babcock Africa. Aucun échantillon, volume, catégorie de données, échéance ou élément technique n'est fourni.
 
-  **Assumption :** La concordance du domaine et du profil d'activité rend l'identification de la cible plausible. Une compromission confirmée pourrait avoir des conséquences importantes en raison des services d'ingénierie et de soutien à des secteurs critiques, mais aucun impact n'est établi dans les éléments fournis.
+  **Hypothèse :** La concordance du domaine et du profil d'activité rend l'identification de la cible plausible. Une compromission confirmée pourrait avoir des conséquences importantes en raison des services d'ingénierie et de soutien à des secteurs critiques, mais aucun impact n'est établi dans les éléments fournis.
 
-  **Unknown :** Les méthodes d'accès et d'acquisition, les environnements concernés, le chiffrement, la perturbation opérationnelle, la divulgation et une éventuelle confirmation de Babcock restent inconnus.
+  **Inconnu :** Les méthodes d'accès et d'acquisition, les environnements concernés, le chiffrement, la perturbation opérationnelle, la divulgation et une éventuelle confirmation de Babcock restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -737,7 +744,9 @@ resale_status: unknown
 last_checked_at: 2026-08-19T08:10:32
 -->
 
+
 ### 20 août 2026
+
 #### 🇩🇿 Algérie - Afribaba (dz.afribaba.com)
 
 - **Date de l'incident :** Non établie
@@ -757,14 +766,13 @@ last_checked_at: 2026-08-19T08:10:32
 
 - **Analyse :**
 
-  **Observed :** La publication du 20 août 2026 attribuée à TelephoneHooliganism affirme proposer environ 642 000 contacts de détaillants vérifiés, avec numéros de téléphone, historique de commandes et tickets de support, pour 1 400 USD négociables. Elle décrit trois sections d'export et affiche plusieurs liens d'échantillon que AFRINTEL n'a pas suivis. Le fichier local fourni est uniquement Order_History_Algeria.csv, d'une taille de 5 123 octets, composé de 20 lignes de données et 32 colonnes. Son empreinte SHA-256 est 6c5ecf4641436931b8dd5036a13300ffb04c38f6d2c275cb4c5172d02bffe196.
+  **Observé :** La publication du 20 août 2026 attribuée à TelephoneHooliganism affirme proposer environ 642 000 contacts de détaillants vérifiés, avec numéros de téléphone, historique de commandes et tickets de support, pour 1 400 USD négociables. Elle décrit trois sections d'export et affiche plusieurs liens d'échantillon que AFRINTEL n'a pas suivis. Le fichier local fourni est uniquement Order_History_Algeria.csv, d'une taille de 5 123 octets, composé de 20 lignes de données et 32 colonnes. Son empreinte SHA-256 est 6c5ecf4641436931b8dd5036a13300ffb04c38f6d2c275cb4c5172d02bffe196.
 
   L'analyse complète du CSV relève 20 lignes structurellement lisibles, sans ligne complète dupliquée, mais seulement deux valeurs distinctes de order_id, avec 18 répétitions d'identifiant de commande. Les dates de commande couvrent mars 2022 à septembre 2024. Les statuts de commande observés sont Completed (9), Pending (4), Processing (4) et Canceled (3) ; les statuts de paiement sont Paid (12), Pending (5) et Refunded (3). Les champs monétaires sont tous en USD ; les montants observés totalisent 4 453,55 USD avant de considérer la signification commerciale de cet échantillon.
 
-  **Assumption :** Le nom de domaine cité, le titre de la publication et la structure d'un export de commandes sont compatibles avec une revendication visant l'écosystème Afribaba. La présence de pays d'expédition Brazil (13 lignes), Bulgaria (2), Cambodia (2), Cameroon (2) et Brunei (1), sans ligne d'expédition algérienne, constitue toutefois une incohérence avec l'intitulé « Algeria » et empêche de relier fermement cet extrait au périmètre algérien ou à la plateforme Afribaba. L'échantillon peut correspondre à un environnement multi-pays, à des données de démonstration, à une attribution erronée ou à un extrait dont le contexte est incomplet.
+  **Hypothèse :** Le nom de domaine cité, le titre de la publication et la structure d'un export de commandes sont compatibles avec une revendication visant l'écosystème Afribaba. La présence de pays d'expédition Brazil (13 lignes), Bulgaria (2), Cambodia (2), Cameroon (2) et Brunei (1), sans ligne d'expédition algérienne, constitue toutefois une incohérence avec l'intitulé « Algeria » et empêche de relier fermement cet extrait au périmètre algérien ou à la plateforme Afribaba. L'échantillon peut correspondre à un environnement multi-pays, à des données de démonstration, à une attribution erronée ou à un extrait dont le contexte est incomplet.
 
-  **Unknown :** AFRINTEL n'a pas reçu les tables Customer Contacts ou Support Tickets annoncées, ni l'archive d'environ 642 000 contacts. Les liens d'échantillon n'ont pas été suivis, aucun numéro de téléphone, nom, adresse, identifiant client ou ticket n'est reproduit, et aucune confirmation d'Afribaba n'est disponible. Le fichier fourni ne permet pas de confirmer le volume revendiqué, l'origine technique, la validité des données, la méthode d'accès, l'exposition de numéros de téléphone ou le prix proposé.
-
+  **Inconnu :** AFRINTEL n'a pas reçu les tables Customer Contacts ou Support Tickets annoncées, ni l'archive d'environ 642 000 contacts. Les liens d'échantillon n'ont pas été suivis, aucun numéro de téléphone, nom, adresse, identifiant client ou ticket n'est reproduit, et aucune confirmation d'Afribaba n'est disponible. Le fichier fourni ne permet pas de confirmer le volume revendiqué, l'origine technique, la validité des données, la méthode d'accès, l'exposition de numéros de téléphone ou le prix proposé.
 
 #### 🇩🇿 Algérie - Ministère algérien de l'Intérieur (interieur.gov.dz)
 * **Date de l'incident :** Non établie
@@ -785,9 +793,9 @@ last_checked_at: 2026-08-19T08:10:32
 * **Analyse :**
   La publication attribuée à TelephoneHooliganism affirme proposer un jeu de données provenant de `interieur.gov.dz`, présenté comme couvrant trois ensembles : des contacts de citoyens ou de responsables publics, des demandes d'aide au logement et des tickets de support citoyen. La publication mentionne environ **672 000 enregistrements** et demande **1 100 USD**. Les champs décrits incluent des données d'identité et de contact, des informations de résidence et de logement, ainsi que des éléments relatifs aux demandes et tickets administratifs.
 
-  **Observed :** La capture établit l'existence d'une revendication datée du 20 août 2026 et son association déclarée avec le domaine du ministère. Le compte auteur apparaît banni et les liens d'échantillon sont visibles dans la publication.
+  **Observé :** La capture établit l'existence d'une revendication datée du 20 août 2026 et son association déclarée avec le domaine du ministère. Le compte auteur apparaît banni et les liens d'échantillon sont visibles dans la publication.
 
-  **Unknown :** Aucun fichier source, échantillon ou extrait de données n'a été accessible à AFRINTEL. Le volume de 672 000 enregistrements, l'origine technique, l'authenticité des champs, le vecteur d'accès, l'exhaustivité et l'exposition effective de données personnelles ne sont pas vérifiés. Aucune confirmation publique du ministère ou d'une autorité algérienne n'est établie dans les éléments examinés. AFRINTEL n'a pas suivi les liens d'échantillon, les liens de téléchargement ou le contact Telegram.
+  **Inconnu :** Aucun fichier source, échantillon ou extrait de données n'a été accessible à AFRINTEL. Le volume de 672 000 enregistrements, l'origine technique, l'authenticité des champs, le vecteur d'accès, l'exhaustivité et l'exposition effective de données personnelles ne sont pas vérifiés. Aucune confirmation publique du ministère ou d'une autorité algérienne n'est établie dans les éléments examinés. AFRINTEL n'a pas suivi les liens d'échantillon, les liens de téléchargement ou le contact Telegram.
 
   Compte tenu de la victime revendiquée et des catégories de données annoncées, l'impact potentiel est **Level 4**. Cette évaluation ne constitue pas une confirmation de la compromission.
 
@@ -813,7 +821,7 @@ last_checked_at: 2026-08-19T08:10:32
   CCA Bank, ou Crédit Communautaire d'Afrique-Bank, est un établissement bancaire camerounais dont la direction générale est située à Douala-Bonanjo. Son site public présente des services bancaires et financiers destinés aux particuliers et aux entreprises, notamment des solutions de compte, de paiement et de financement.
 
 * **Analyse :**
-  **Observed :** Le 20 août 2026, AFRINTEL a observé une publication attribuée au groupe Everest visant `cca-bank.com`. Au moment de l'observation, la fiche de la victime affichait encore un compte à rebours avant la publication annoncée des données, indiquant que la phase d'extorsion était toujours en cours.
+  **Observé :** Le 20 août 2026, AFRINTEL a observé une publication attribuée au groupe Everest visant `cca-bank.com`. Au moment de l'observation, la fiche de la victime affichait encore un compte à rebours avant la publication annoncée des données, indiquant que la phase d'extorsion était toujours en cours.
 
   L'inventaire technique disponible recense **11 837 fichiers représentant 18,92 Go**, auxquels s'ajoutent **17 archives RAR imbriquées totalisant 120,31 Mo** dont les fichiers internes n'ont pas été comptabilisés. Le volume total connu atteint ainsi environ **19,04 Go**.
 
@@ -821,13 +829,13 @@ last_checked_at: 2026-08-19T08:10:32
 
   Plusieurs fichiers décrits dans l'inventaire correspondent à des exports structurés de grande taille. Un classeur réglementaire contient notamment une table de base clientèle de **591 799 lignes**, une table relative aux dépôts de personnes physiques de **489 155 lignes** et une table d'engagements clientèle de **350 011 lignes**. Un autre export relatif aux crédits contient **250 688 lignes** et **67 973 identifiants clients uniques**. Des fichiers de rapprochement et de migration V10/V11 comportent également plusieurs centaines de milliers à plusieurs millions de lignes.
 
-  **Assumption :** La profondeur fonctionnelle et la cohérence des catégories décrites dans l'inventaire sont compatibles avec un corpus provenant d'environnements métiers et techniques d'une institution bancaire. Si l'ensemble est authentique, l'exposition potentielle dépasse largement une simple fuite documentaire et pourrait concerner des données clients, financières, réglementaires, KYC, opérationnelles et techniques.
+  **Hypothèse :** La profondeur fonctionnelle et la cohérence des catégories décrites dans l'inventaire sont compatibles avec un corpus provenant d'environnements métiers et techniques d'une institution bancaire. Si l'ensemble est authentique, l'exposition potentielle dépasse largement une simple fuite documentaire et pourrait concerner des données clients, financières, réglementaires, KYC, opérationnelles et techniques.
 
   La combinaison de données d'identité, d'informations de crédit, de données financières et de documentation interne pourrait faciliter des opérations de **spear-phishing, fraude financière, usurpation d'identité, fraude documentaire, compromission de comptes et ciblage secondaire de clients, employés, fournisseurs ou partenaires**.
 
   Les documents relatifs aux systèmes d'information, aux habilitations, aux procédures VPN, à la gestion des comptes et aux migrations pourraient également fournir à d'autres acteurs malveillants des informations utiles pour comprendre certains processus internes et préparer des attaques ultérieures.
 
-  **Unknown :** AFRINTEL n'a pas examiné directement l'intégralité des **11 837 fichiers bruts** revendiqués. L'analyse repose sur la publication Everest et sur l'inventaire technique disponible. Le vecteur d'accès initial, la date réelle de compromission, les systèmes précisément affectés, la méthode d'exfiltration, l'existence éventuelle d'un chiffrement, l'étendue exacte de l'accès obtenu par Everest et une éventuelle confirmation officielle de CCA Bank restent inconnus.
+  **Inconnu :** AFRINTEL n'a pas examiné directement l'intégralité des **11 837 fichiers bruts** revendiqués. L'analyse repose sur la publication Everest et sur l'inventaire technique disponible. Le vecteur d'accès initial, la date réelle de compromission, les systèmes précisément affectés, la méthode d'exfiltration, l'existence éventuelle d'un chiffrement, l'étendue exacte de l'accès obtenu par Everest et une éventuelle confirmation officielle de CCA Bank restent inconnus.
 
   Le compte à rebours observé indique une publication annoncée, mais ne permet pas d'établir si les données seront effectivement divulguées, si une négociation est en cours ou si un accord a été conclu entre la victime et les attaquants.
 
@@ -849,12 +857,57 @@ last_checked_at: 2026-08-20T13:54:00
 -->
 
 ---
+
+> ⚠️ **Dossier sous investigation - exclu du total canonique.**
+
+
+#### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) - attribution non établie dans les sources publiques
+
+- **Date de publication initiale :** 20 août 2026 à 05:27 (horodatage affiché ; fuseau non indiqué)
+- **Date de découverte AFRINTEL :** 20 octobre 2026
+- **Acteur / Groupe :** TelephoneHooliganism (pseudonyme affiché ; identité réelle et affiliation non vérifiées)
+- **Secteur revendiqué :** Transport / Logistique / Livraison express
+- **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
+- **Statut :** Under Investigation
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 3 (potentiel)
+- **Type de source :** Forum cybercriminel et échantillons CSV fournis à AFRINTEL
+
+- **Description victime :** Yalidine El Djazair Service est une entreprise algérienne de courrier express, de livraison de colis, de logistique domestique, de livraison e-commerce et de recouvrement à la livraison. La publication associe cette entreprise à une base annoncée comme contenant environ **563 000 enregistrements**.
+
+- **Analyse :**
+
+  **Observé :** La publication du 20 août 2026 à 05:27, attribuée à TelephoneHooliganism, présente `www.yalidine.com` comme une base algérienne de **563 000 enregistrements**. Elle décrit trois ensembles : contacts, historique de réservations et tickets de support. Un message de modération affiché le même jour à 06:38 rappelle uniquement les règles de classement du forum ; il ne confirme ni Yalidine, ni les fichiers, ni une compromission.
+
+  AFRINTEL a examiné en lecture seule trois fichiers CSV locaux correspondant à ces trois ensembles : **50 lignes de contacts**, **20 lignes de réservations** et **20 lignes de tickets**. Les fichiers sont structurellement lisibles et totalisent **90 lignes tabulaires**, sans que ce total représente 90 personnes uniques. Les fichiers contiennent respectivement **34, 29 et 29 colonnes**. Les champs annoncés incluent notamment des coordonnées, des informations CRM, des réservations, des paiements, des tickets et des éléments de suivi client. Aucune donnée personnelle brute n'est reproduite dans cette fiche.
+
+  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres valeurs de pays sont principalement étrangères. Les villes de réservation observées ne sont pas algériennes. Les `contact_id` utilisés dans les réservations et les tickets ne correspondent pas aux identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets ne contiennent que **2 valeurs distinctes de `ticket_id`**. Les relations vers les réservations sont également incohérentes. Les colonnes d'e-mail et de téléphone des tickets sont vides, et plusieurs champs de contacts annoncés sont largement ou entièrement vides. Des problèmes de qualité ou d'encodage apparaissent dans certaines valeurs géographiques.
+
+  Les empreintes SHA-256 locales sont : `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51** ; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443** ; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
+
+  **Hypothèse :** Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication. Cette compatibilité est faible : les incohérences géographiques, relationnelles et de remplissage sont plus importantes que les éléments qui relient l'échantillon à Yalidine. L'échantillon peut être synthétique, mal attribué, issu d'un environnement multi-pays, incomplet ou construit à partir d'un modèle CRM générique.
+
+  Un lien avec le cas **Afribaba** du 20 août 2026 est possible uniquement au niveau de la campagne : même acteur affiché, même date de publication et catégories de données proches. Cela peut refléter une campagne ciblant plusieurs organisations algériennes ou la réutilisation d'un modèle de publication. Aucun identifiant, domaine, fichier ou marqueur technique commun n'a été observé ; le lien entre les deux cas n'est donc **pas établi** et ne doit pas entraîner une fusion des victimes.
+
+  **Inconnu :** La provenance technique des fichiers, leur date d'extraction, leur authenticité, le nombre de personnes uniques, l'existence d'un accès non autorisé, la méthode d'obtention, l'exhaustivité de la base annoncée, l'impact opérationnel et toute confirmation par Yalidine ou une autorité ne sont pas renseignés dans les sources consultées.
+
+- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, avec contrôle de structure, volumes, champs vides, doublons, relations entre tables, plages temporelles et empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
+
+- **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
+
+- **Décision de comptage :** Cette fiche reste visible ici pour la traçabilité de la publication datée d’août, avec découverte AFRINTEL en octobre. Elle est **exclue des statistiques canoniques d’août** et ne doit pas être comptée deux fois dans les séries mensuelles. L’attribution à Yalidine n’est pas établie.
+
+- **Sources / Éléments de preuve :** publication et réponse de modération fournies le 20 octobre 2026 ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
+
+
 ### 21 août 2026
+
 #### 🇪🇬 Égypte - Six universités publiques et leur portail étudiant
 
 - **Date de publication initiale :** 21 août 2026 à 00:08 ; modification visible à 00:12:31 (fuseau non indiqué). Publication complémentaire « Part 2/3 » observée le 23 août 2026 à 00:18.
 - **Date de détection AFRINTEL :** 4 novembre 2026
-- **Acteur / Source :** ronabrown, publication 8kun `/egy/` ; identité et affiliation non établies
+- **Acteur / Groupe :** ronabrown, publication 8kun `/egy/` ; identité et affiliation non établies
 - **Secteur :** Enseignement supérieur / Portails étudiants / Administration universitaire
 - **Victimes citées :** Benha University, Helwan University, Cairo University, Kafr El Sheikh University, South Valley University et University of Sadat City
 - **Statut :** Data Fully Published
@@ -877,15 +930,18 @@ last_checked_at: 2026-08-20T13:54:00
 
   **Couverture et limites de contenu :** l'intégralité des 5 540 fichiers a été inventoriée, hachée et classée par type ; les métadonnées PDF ont été contrôlées sur 2 257 fichiers. L'extraction sémantique exhaustive et l'OCR de l'ensemble des scans n'ont pas été retenus comme couverture validée, car une part importante du corpus est constituée d'images ou de PDF scannés et les essais locaux ne produisent pas une couverture fiable et homogène. L'analyse de contenu publiée est donc approfondie pour les catégories accessibles dans la publication, la preuve visuelle et la structure documentaire, mais ne prétend pas avoir lu chaque page ni chaque image. Aucun contenu personnel brut n'a été conservé ou publié.
 
-- **Observed :** six universités nommées, un fichier par université, publication présentée comme une libération après une fenêtre de discussion de 48 heures, corpus CSV analysé intégralement en lecture seule et publication complémentaire annonçant des documents et photographies.
-- **Assumption :** l'association avec des environnements de portails étudiants est plausible ; une copie historique, un prestataire, une sauvegarde ou une base agrégée restent possibles.
-- **Unknown :** vecteur et date d'accès, système source exact, méthode d'extraction, personnes uniques, doublons inter-fichiers, validité des mots de passe et sessions, impact opérationnel, confirmation officielle et identité réelle de l'auteur.
+- **Observé :** six universités nommées, un fichier par université, publication présentée comme une libération après une fenêtre de discussion de 48 heures, corpus CSV analysé intégralement en lecture seule et publication complémentaire annonçant des documents et photographies.
+- **Hypothèse :** l'association avec des environnements de portails étudiants est plausible ; une copie historique, un prestataire, une sauvegarde ou une base agrégée restent possibles.
+- **Inconnu :** vecteur et date d'accès, système source exact, méthode d'extraction, personnes uniques, doublons inter-fichiers, validité des mots de passe et sessions, impact opérationnel, confirmation officielle et identité réelle de l'auteur.
 - **Périmètre et limites :** les six CSV ont été contrôlés par empreinte, encodage, structure, volumes, largeurs et incohérences, sans exécuter de contenu actif. Les fichiers bruts restent hors dépôt et aucune donnée personnelle n'est publiée.
 - **Recommandations SOC/CTI :** préserver les journaux des portails, bases, IAM, SSO, messagerie et stockage ; réinitialiser les secrets potentiellement exposés ; vérifier les exports et connexions autour du 21 août ; segmenter les environnements étudiants, administratifs et de recherche.
 - **Décision de comptage :** fiche groupée comptée dans le corpus d'août 2026, car les six universités proviennent d'une même publication et d'un même corpus.
 
 @@
+
+
 ### 22 août 2026
+
 #### 🇲🇦 Maroc - RAMED (Régime d’Assistance Médicale)
 
 - **Date de l'incident :** Non précisée
@@ -919,6 +975,8 @@ last_checked_at: 2026-08-20T13:54:00
 
   **Limites de preuve :** les éléments analysés ne permettent pas de confirmer le système technique d’origine, le vecteur d’accès initial, la méthode d’extraction, la possession effective des plus de 17 millions d’entrées revendiquées ni une confirmation officielle de l’incident par une institution marocaine. La présence de photographies est établie uniquement pour les éléments fournis et ne doit pas être extrapolée à l’ensemble de la base revendiquée.
  ---
+
+
 ### 24 août 2026
 
 #### 🇿🇦 Afrique du Sud - Furniture Bargaining Council
@@ -941,13 +999,13 @@ last_checked_at: 2026-08-20T13:54:00
 
 - **Analyse :**
 
-  **Observed :** Le corpus local associé à la divulgation contient 69 artefacts pour environ 94,6 Mo : 22 PDF, 13 XLSX, 31 DOCX, 2 DOCM et 1 DOC. Douze classeurs XLSX lisibles totalisent 134 feuilles et 78 605 cellules de formule détectées ; aucune formule n'a été exécutée. Des composants de liens externes sont présents dans quatre classeurs ; aucun lien n'a été suivi. Un classeur XLSX supplémentaire, chiffré au format CDFV2, n'a pas pu être ouvert. Les données et documents observés couvrent des packs financiers, suivis de caisse, comptes e-wallet, formulaires bancaires, rapprochements fiscaux SARS, prêts, avertissements disciplinaires, audits IT, rapports de sécurité, documents d'identité et documents personnels ou administratifs. En parallèle, la notification officielle du Conseil confirme un incident ayant chiffré certains serveurs.
+  **Observé :** Le corpus local associé à la divulgation contient 69 artefacts pour environ 94,6 Mo : 22 PDF, 13 XLSX, 31 DOCX, 2 DOCM et 1 DOC. Douze classeurs XLSX lisibles totalisent 134 feuilles et 78 605 cellules de formule détectées ; aucune formule n'a été exécutée. Des composants de liens externes sont présents dans quatre classeurs ; aucun lien n'a été suivi. Un classeur XLSX supplémentaire, chiffré au format CDFV2, n'a pas pu être ouvert. Les données et documents observés couvrent des packs financiers, suivis de caisse, comptes e-wallet, formulaires bancaires, rapprochements fiscaux SARS, prêts, avertissements disciplinaires, audits IT, rapports de sécurité, documents d'identité et documents personnels ou administratifs. En parallèle, la notification officielle du Conseil confirme un incident ayant chiffré certains serveurs.
 
   L'examen structurel et textuel des documents lisibles confirme la présence de catégories financières, fiscales, bancaires, RH, identitaires et opérationnelles. Il établit qu'un corpus de données a été divulgué ou rendu accessible, mais ne permet pas de déterminer si chaque fichier provient directement des systèmes du Conseil ni si l'ensemble a été acquis lors du même événement. Les PDF et documents contenant potentiellement des informations personnelles n'ont pas été reproduits.
 
-  **Assumption :** La confirmation officielle du chiffrement établit l'incident et justifie le statut Victim Confirmed. La cohérence du corpus documentaire avec les activités administratives et financières du FBC renforce fortement son attribution à l'environnement de la victime. La présence de données financières, fiscales, bancaires, d'identité et de personnel justifie un impact de niveau 4. Elle ne confirme ni le vecteur d'accès, ni l'exfiltration de chaque fichier, ni la responsabilité technique de Deadlock.
+  **Hypothèse :** La confirmation officielle du chiffrement établit l'incident et justifie le statut Victim Confirmed. La cohérence du corpus documentaire avec les activités administratives et financières du FBC renforce fortement son attribution à l'environnement de la victime. La présence de données financières, fiscales, bancaires, d'identité et de personnel justifie un impact de niveau 4. Elle ne confirme ni le vecteur d'accès, ni l'exfiltration de chaque fichier, ni la responsabilité technique de Deadlock.
 
-  **Unknown :** Le nombre exact de personnes concernées, les systèmes sources, la méthode et la date d'acquisition, l'étendue complète de la divulgation, l'actualité des données, l'attribution technique à Deadlock, les conséquences opérationnelles et les notifications aux personnes concernées restent inconnus. Le classeur chiffré, les liens externes et les contenus visuels ou numérisés n'ont pas été ouverts ou suivis.
+  **Inconnu :** Le nombre exact de personnes concernées, les systèmes sources, la méthode et la date d'acquisition, l'étendue complète de la divulgation, l'actualité des données, l'attribution technique à Deadlock, les conséquences opérationnelles et les notifications aux personnes concernées restent inconnus. Le classeur chiffré, les liens externes et les contenus visuels ou numérisés n'ont pas été ouverts ou suivis.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -981,7 +1039,7 @@ last_checked_at: 2026-09-04
   La Direction générale de la Sûreté nationale (DGSN) est le corps national de police du Maroc. La Direction générale de la Surveillance du territoire (DGST) est le service marocain chargé du renseignement intérieur et de la sécurité territoriale. Les deux institutions occupent une fonction stratégique au sein de l'appareil de sécurité nationale marocain.
 
 * **Analyse :**
-  **Observed :** Le 24 août 2026, une publication relayée par le compte JBT2026 et attribuée à JabaR00t a présenté sous l'intitulé `#OP_CEUTA` une base décrite comme contenant environ **70 000 « agents » ou personnels associés à la DGSN et à la DGST**. L'acteur présente cette base comme publiée intégralement et affirme parallèlement que les données diffusées ne représenteraient qu'une partie d'un ensemble plus large prétendument exfiltré. La qualification de l'ensemble des personnes comme « agents de renseignement » relève de la revendication de l'acteur et n'est pas établie par les fichiers examinés.
+  **Observé :** Le 24 août 2026, une publication relayée par le compte JBT2026 et attribuée à JabaR00t a présenté sous l'intitulé `#OP_CEUTA` une base décrite comme contenant environ **70 000 « agents » ou personnels associés à la DGSN et à la DGST**. L'acteur présente cette base comme publiée intégralement et affirme parallèlement que les données diffusées ne représenteraient qu'une partie d'un ensemble plus large prétendument exfiltré. La qualification de l'ensemble des personnes comme « agents de renseignement » relève de la revendication de l'acteur et n'est pas établie par les fichiers examinés.
 
   L'analyse en lecture seule des quatre fichiers fournis confirme un fichier principal de **70 381 enregistrements et 5 colonnes**, sans doublon de ligne exact. Les champs observés comprennent notamment le nom et prénom, un identifiant PPR, un numéro CIN/CNI, une date de naissance et une année de recrutement. Trois fichiers complémentaires contiennent respectivement **8 789**, **1 456** et **21 enregistrements**, avec notamment des champs de grade et de RIB. Ces volumes ne doivent pas être additionnés comme s'ils représentaient des populations indépendantes.
 
@@ -1001,12 +1059,15 @@ last_checked_at: 2026-09-04
 
   La combinaison d'informations d'identité, d'identifiants administratifs, de données professionnelles, de grades et de coordonnées bancaires justifie le maintien d'un **niveau d'impact Level 4**. Même en l'absence de preuve d'une intrusion directe dans les SI DGSN/DGST, l'exposition de données associables à des personnels de sécurité peut faciliter l'usurpation d'identité, la fraude, le spear-phishing, l'ingénierie sociale ciblée, le profilage de personnels et des activités de contre-ingérence.
 
-  **Unknown :** Le vecteur d'accès initial, le ou les systèmes sources, la méthode d'extraction, la date réelle d'acquisition des données et l'étendue globale du corpus revendiqué restent inconnus. Les fichiers analysés ne permettent pas d'établir que les **70 381 personnes** sont des agents de renseignement actifs, ni de déterminer précisément la part relevant de la DGSN ou de la DGST. Ils ne permettent pas non plus de trancher techniquement entre le scénario d'une compromission directe revendiqué par l'acteur et la provenance tierce avancée par le pôle DGSN-DGST.
+  **Inconnu :** Le vecteur d'accès initial, le ou les systèmes sources, la méthode d'extraction, la date réelle d'acquisition des données et l'étendue globale du corpus revendiqué restent inconnus. Les fichiers analysés ne permettent pas d'établir que les **70 381 personnes** sont des agents de renseignement actifs, ni de déterminer précisément la part relevant de la DGSN ou de la DGST. Ils ne permettent pas non plus de trancher techniquement entre le scénario d'une compromission directe revendiqué par l'acteur et la provenance tierce avancée par le pôle DGSN-DGST.
 
   AFRINTEL ne reproduit aucun nom, numéro PPR, CIN/CNI, RIB, date de naissance ou autre donnée personnelle issue des fichiers examinés.
 
 ---
+
+
 ### 26 août 2026
+
 #### 🇪🇬 Égypte - Mima Foods
 
 - **Date de l'incident :** Non précisée
@@ -1027,11 +1088,11 @@ last_checked_at: 2026-09-04
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe krybit à mimafoods.net et situe la cible en Égypte. Il est horodaté au 26 août 2026 à 15:29:13, sans fuseau horaire indiqué. Selon le suivi communiqué le 12 septembre 2026, l'échéance affichée était dépassée et aucune donnée ni aucun échantillon n'était accessible publiquement lors du dernier contrôle. L'heure du contrôle et la date exacte de l'échéance ne sont pas précisées. Aucun élément technique ne confirme l'accès, l'exfiltration ou le chiffrement.
+  **Observé :** L'enregistrement source fourni associe krybit à mimafoods.net et situe la cible en Égypte. Il est horodaté au 26 août 2026 à 15:29:13, sans fuseau horaire indiqué. Selon le suivi communiqué le 12 septembre 2026, l'échéance affichée était dépassée et aucune donnée ni aucun échantillon n'était accessible publiquement lors du dernier contrôle. L'heure du contrôle et la date exacte de l'échéance ne sont pas précisées. Aucun élément technique ne confirme l'accès, l'exfiltration ou le chiffrement.
 
-  **Assumption :** La correspondance exacte du domaine avec le site officiel rend l'identification de la cible plausible. Elle ne confirme ni l'accès, ni l'exfiltration, ni le chiffrement. L'absence de données accessibles après l'échéance peut correspondre à un accord ou à des négociations, avec ou sans paiement, un transfert, partage ou revente des données, un report, une indisponibilité de la fiche ou du lien, ou une revendication inexacte ou exagérée. Ce sont des hypothèses, aucune n'est établie. Les divulgations attribuées aux autres victimes de Krybit ne prouvent pas un transfert des données de Mima Foods.
+  **Hypothèse :** La correspondance exacte du domaine avec le site officiel rend l'identification de la cible plausible. Elle ne confirme ni l'accès, ni l'exfiltration, ni le chiffrement. L'absence de données accessibles après l'échéance peut correspondre à un accord ou à des négociations, avec ou sans paiement, un transfert, partage ou revente des données, un report, une indisponibilité de la fiche ou du lien, ou une revendication inexacte ou exagérée. Ce sont des hypothèses, aucune n'est établie. Les divulgations attribuées aux autres victimes de Krybit ne prouvent pas un transfert des données de Mima Foods.
 
-  **Unknown :** Les systèmes éventuellement affectés, le vecteur d'accès, la portée opérationnelle, la nature des données, la confirmation de la victime, l'accès et l'exfiltration ne sont pas établis. La date exacte de l'échéance, la cause de l'absence de divulgation publique, tout partage privé, les négociations, un paiement ou une revente restent inconnus.
+  **Inconnu :** Les systèmes éventuellement affectés, le vecteur d'accès, la portée opérationnelle, la nature des données, la confirmation de la victime, l'accès et l'exfiltration ne sont pas établis. La date exacte de l'échéance, la cause de l'absence de divulgation publique, tout partage privé, les négociations, un paiement ou une revente restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -1083,7 +1144,7 @@ last_checked_at: 2026-09-12
 
   L’analyse de plusieurs lots de fichiers attribués à la divulgation revendiquée par KRYBIT met en évidence une fuite documentaire interne de grande ampleur et transversale. Le corpus couvre les ressources humaines, les systèmes d'information, la cybersécurité, les bases de données, la stratégie, les opérations de fret aérien, les processus BIETC/GECOP, les affaires juridiques, la finance, la communication institutionnelle et certaines représentations régionales. Les documents présentent une forte cohérence de forme, de nomenclature, de hiérarchie et de processus internes, ce qui confère un niveau de confiance très élevé quant à leur origine CGC.
 
-  **Observed :** Le recoupement de plusieurs lots attribués à la divulgation revendiquée par KRYBIT révèle un corpus documentaire interne couvrant les ressources humaines, la DOSI, la stratégie et l'observatoire multimodal, le Bureau Aéroport, les affaires juridiques, la communication, la finance/comptabilité et une représentation régionale à Port-Gentil. La cohérence des modèles, intitulés de postes, hiérarchies, références internes et processus renforce fortement l'association des documents au CGC.
+  **Observé :** Le recoupement de plusieurs lots attribués à la divulgation revendiquée par KRYBIT révèle un corpus documentaire interne couvrant les ressources humaines, la DOSI, la stratégie et l'observatoire multimodal, le Bureau Aéroport, les affaires juridiques, la communication, la finance/comptabilité et une représentation régionale à Port-Gentil. La cohérence des modèles, intitulés de postes, hiérarchies, références internes et processus renforce fortement l'association des documents au CGC.
 
   Un artefact PowerShell contenant des sorties de `repadmin` et `dcdiag`, daté du 22 février 2026, expose le domaine Active Directory `cgc.local`, trois contrôleurs de domaine, la topologie de réplication et les rôles AD, concentrés sur un contrôleur. Le résumé de réplication de cet instantané indique zéro échec ; il ne décrit que l'état observé à cette date. Les fiches de poste de la DOSI détaillent les responsabilités d'administration des bases et des systèmes, de sécurité informatique, de réseaux et de support. Le corpus décrit aussi les processus BIETC/GECOP, les importateurs/exportateurs, manifestes, mouvements de fret et infractions, ainsi que des fonctions d'assistance aux chargeurs, de régulation du fret aérien, de finance, de communication et de relations régionales.
 
@@ -1091,9 +1152,9 @@ last_checked_at: 2026-09-12
 
   Des événements système comportant des erreurs DCOM répétées liées au niveau d'authentification figurent également dans l'artefact. Ils peuvent résulter d'opérations d'administration légitimes, de maintenance ou d'une incompatibilité de configuration et ne constituent pas, à eux seuls, une preuve d'activité malveillante ni un lien avec le ransomware.
 
-  **Assumption :** L'étendue et la diversité du corpus sont compatibles avec une collecte depuis un espace documentaire transverse, un partage réseau, une GED ou une sauvegarde accessible à plusieurs directions. Cette origine reste une hypothèse : les artefacts ne révèlent pas le point de collecte initial. Si elles sont exploitées après un accès initial, les informations organisationnelles et techniques peuvent réduire l'effort de reconnaissance et faciliter le ciblage des fonctions IT, RH, sécurité, finance, des partenaires et des représentations régionales.
+  **Hypothèse :** L'étendue et la diversité du corpus sont compatibles avec une collecte depuis un espace documentaire transverse, un partage réseau, une GED ou une sauvegarde accessible à plusieurs directions. Cette origine reste une hypothèse : les artefacts ne révèlent pas le point de collecte initial. Si elles sont exploitées après un accès initial, les informations organisationnelles et techniques peuvent réduire l'effort de reconnaissance et faciliter le ciblage des fonctions IT, RH, sécurité, finance, des partenaires et des représentations régionales.
 
-  **Unknown :** Le vecteur d'accès initial, le système source, l'étendue complète de l'exfiltration, l'existence d'un dump complet BIETC/GECOP, l'exécution du ransomware, le mécanisme de chiffrement, l'impact opérationnel et toute confirmation officielle de la victime restent inconnus. L'attribution à KRYBIT repose sur la revendication du groupe. Les documents analysés corroborent l'exfiltration, mais ne suffisent pas à démontrer le vecteur, l'exécution ou le chiffrement du ransomware.
+  **Inconnu :** Le vecteur d'accès initial, le système source, l'étendue complète de l'exfiltration, l'existence d'un dump complet BIETC/GECOP, l'exécution du ransomware, le mécanisme de chiffrement, l'impact opérationnel et toute confirmation officielle de la victime restent inconnus. L'attribution à KRYBIT repose sur la revendication du groupe. Les documents analysés corroborent l'exfiltration, mais ne suffisent pas à démontrer le vecteur, l'exécution ou le chiffrement du ransomware.
 
   La cohérence et la diversité des documents conduisent à évaluer comme **très élevée** l'authenticité probable du corpus et son association au CGC. Cette appréciation ne constitue pas une confirmation officielle de l'incident ni de l'attribution à KRYBIT.
 - **Risques :**
@@ -1138,6 +1199,29 @@ resale_status: unknown
 last_checked_at: 2026-08-26T15:56:16
 -->
 
+#### 🇿🇦 Afrique du Sud - Cartrack South Africa
+
+- **Date de l'incident :** 26 août 2026
+- **Date de communication publique :** 28 août 2026
+- **Mise à jour :** 10 septembre 2026
+- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Télématique / Mobilité / Services automobiles
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** **Cartrack South Africa** est un fournisseur de **télématique automobile**, de géolocalisation, de récupération de véhicules volés et de gestion de flottes. Ses services combinent équipements embarqués, plateformes numériques et services opérationnels pour particuliers et entreprises. L'activité implique la gestion de données de véhicules, d'abonnements et de clients, sans que cela implique leur exposition dans chaque incident ([site officiel Cartrack](https://www.cartrack.co.za/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** Cartrack indique avoir découvert un ransomware sur certains systèmes le 26 août 2026, et évoque une possible publication d’informations personnelles. La revendication Dire Wolf publiée en septembre ne vaut pas attribution forensique officielle. Incident initial d’août.
+
+- **Sources de vérification complémentaires :** [Source 1](https://cartrack.co.za/platform/resources/news)
+
+- **Sources / Éléments de preuve :** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
+
+Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs affectés ont été isolés et la plateforme restaurée en cinq heures. Une mise à jour indique que des informations personnelles de certains clients avaient été consultées et pouvaient avoir été publiées sur un site à accès restreint. Le vecteur, l'opérateur et le volume exact restent inconnus.
+
+
 ### 27 août 2026
 
 #### 🇿🇦 Afrique du Sud - Hungry Lion
@@ -1160,11 +1244,11 @@ last_checked_at: 2026-08-26T15:56:16
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe medusalocker à Hungry Lion et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 06:27:50, sans fuseau horaire indiqué. La description source revendique 111 établissements dans sept pays et cite trois environnements de point de vente, Unity POS, GAAP POS et CoSoft POS, avec quelques volumes ou fréquences d'exploitation. Elle se termine toutefois par la mention « Botswana », ce qui laisse la portée géographique exacte de la publication ambiguë. Aucun échantillon ou élément technique n'est fourni.
+  **Observé :** L'enregistrement source fourni associe medusalocker à Hungry Lion et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 06:27:50, sans fuseau horaire indiqué. La description source revendique 111 établissements dans sept pays et cite trois environnements de point de vente, Unity POS, GAAP POS et CoSoft POS, avec quelques volumes ou fréquences d'exploitation. Elle se termine toutefois par la mention « Botswana », ce qui laisse la portée géographique exacte de la publication ambiguë. Aucun échantillon ou élément technique n'est fourni.
 
-  **Assumption :** Les informations publiques confirment que Hungry Lion est une chaîne régionale dont le siège est en Afrique du Sud, mais elles ne valident pas les chiffres ni les systèmes décrits dans la revendication. Si un environnement de point de vente était compromis, des risques opérationnels et de fraude pourraient en découler.
+  **Hypothèse :** Les informations publiques confirment que Hungry Lion est une chaîne régionale dont le siège est en Afrique du Sud, mais elles ne valident pas les chiffres ni les systèmes décrits dans la revendication. Si un environnement de point de vente était compromis, des risques opérationnels et de fraude pourraient en découler.
 
-  **Unknown :** L'entité juridique ou le pays précisément visé, l'accès initial, les terminaux ou serveurs concernés, l'exfiltration, le chiffrement, l'impact opérationnel, la confirmation de la victime et toute divulgation restent inconnus.
+  **Inconnu :** L'entité juridique ou le pays précisément visé, l'accès initial, les terminaux ou serveurs concernés, l'exfiltration, le chiffrement, l'impact opérationnel, la confirmation de la victime et toute divulgation restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -1201,13 +1285,13 @@ last_checked_at: 2026-08-27T06:27:50
 
 - **Analyse :**
 
-  **Observed :** L'enregistrement source fourni associe incransom à Rohloff Group et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 14:31:07, sans fuseau horaire indiqué. L'acteur revendique 536 Go, 103 196 fichiers et 30 805 dossiers. Il affirme que le corpus comprend des informations personnelles et bancaires d'employés, des demandes de prêt, des pièces d'identité, des relevés bancaires, des reconnaissances de dette, des résultats d'audiences disciplinaires et des documents financiers relatifs aux redevances et aux coûts alimentaires. La publication annonce une divulgation complète ultérieure.
+  **Observé :** L'enregistrement source fourni associe incransom à Rohloff Group et situe la cible en Afrique du Sud. Il est horodaté au 27 août 2026 à 14:31:07, sans fuseau horaire indiqué. L'acteur revendique 536 Go, 103 196 fichiers et 30 805 dossiers. Il affirme que le corpus comprend des informations personnelles et bancaires d'employés, des demandes de prêt, des pièces d'identité, des relevés bancaires, des reconnaissances de dette, des résultats d'audiences disciplinaires et des documents financiers relatifs aux redevances et aux coûts alimentaires. La publication annonce une divulgation complète ultérieure.
 
   Aucun échantillon ou fichier source n'accompagne les éléments fournis. Les volumes et catégories restent donc des affirmations de l'acteur.
 
-  **Assumption :** La précision du nom et du profil de la victime rend la publication ciblée, mais ne confirme pas la compromission. Si les catégories annoncées sont authentiques, la combinaison de données d'identité, bancaires, RH et disciplinaires créerait un risque élevé d'usurpation, de fraude financière, de phishing ciblé et d'atteinte à la vie privée des employés.
+  **Hypothèse :** La précision du nom et du profil de la victime rend la publication ciblée, mais ne confirme pas la compromission. Si les catégories annoncées sont authentiques, la combinaison de données d'identité, bancaires, RH et disciplinaires créerait un risque élevé d'usurpation, de fraude financière, de phishing ciblé et d'atteinte à la vie privée des employés.
 
-  **Unknown :** L'accès initial, les systèmes touchés, l'exfiltration, le chiffrement, la validité des volumes, l'existence d'une publication accessible, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
+  **Inconnu :** L'accès initial, les systèmes touchés, l'exfiltration, le chiffrement, la validité des volumes, l'existence d'une publication accessible, la confirmation de la victime, la négociation, le paiement et la revente restent inconnus.
 
 <!-- afrintel:ransomware-lifecycle
 listing_status: observed
@@ -1224,7 +1308,9 @@ resale_status: unknown
 last_checked_at: 2026-08-27T14:31:07
 -->
 
+
 ### 29 août 2026
+
 #### 🇱🇾 Libye - Albarq Media Service / شركة البرق للاتصالات والتقنية
 
 * **Date de l'incident :** Juin 2026, date exacte non établie
@@ -1246,75 +1332,8 @@ last_checked_at: 2026-08-27T14:31:07
 
   Les enregistrements visibles présentent des dates s'étendant d'août 2019 à avril 2025, ainsi que des valeurs d'usage incohérentes ou manquantes dans plusieurs lignes. Le corpus observé ne représente qu'un extrait visible dans la publication et ne permet pas de valider les **330 000 comptes** revendiqués, l'exhaustivité de la fuite, le système source, le vecteur d'accès ou la méthode d'extraction. Le fichier source original n'était pas disponible ; l'analyse est donc limitée aux données visibles dans l'échantillon fourni.
 
-  **Unknown :** aucune confirmation publique indépendante de l'incident par Albarq ou une autorité libyenne n'est établie dans les éléments examinés. La période exacte de l'accès ou de l'exfiltration reste inconnue ; juin 2026 correspond à la date de la publication observée.
+  **Inconnu :** aucune confirmation publique indépendante de l'incident par Albarq ou une autorité libyenne n'est établie dans les éléments examinés. La période exacte de l'accès ou de l'exfiltration reste inconnue ; juin 2026 correspond à la date de la publication observée.
 
 * **Recommandations :**
   * Vérifier les journaux d'accès aux plateformes d'abonnement et les exports de données autour du 09 juin 2026.
   * Réinitialiser les sessions et renforcer la surveillance des comptes administratifs si une exposition est confirmée.
-
-### 20 août 2026
-#### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) - attribution non documenté dans les sources publiquese
-
-- **Date de publication initiale :** 20 août 2026 à 05:27 (horodatage affiché ; fuseau non indiqué)
-- **Date de découverte AFRINTEL :** 20 octobre 2026
-- **Acteur / Groupe :** TelephoneHooliganism (compte affiché dans la publication ; identité et affiliation attribuée à la publication)
-- **Secteur revendiqué :** Transport / Logistique / Livraison express
-- **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
-- **Statut :** Under Investigation
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** Low
-- **Niveau d'impact :** Level 3 (potentiel)
-- **Type de source :** Forum cybercriminel et échantillons CSV fournis à AFRINTEL
-
-- **Description victime :** Yalidine El Djazair Service est une entreprise algérienne de courrier express, de livraison de colis, de logistique domestique, de livraison e-commerce et de recouvrement à la livraison. La publication associe cette entreprise à une base annoncée comme contenant environ **563 000 enregistrements**.
-
-- **Analyse :**
-
-  **Observed :** La publication du 20 août 2026 à 05:27, attribuée à TelephoneHooliganism, présente `www.yalidine.com` comme une base algérienne de **563 000 enregistrements**. Elle décrit trois ensembles : contacts, historique de réservations et tickets de support. Un message de modération affiché le même jour à 06:38 rappelle uniquement les règles de classement du forum ; il ne confirme ni Yalidine, ni les fichiers, ni une compromission.
-
-  AFRINTEL a examiné en lecture seule trois fichiers CSV locaux correspondant à ces trois ensembles : **50 lignes de contacts**, **20 lignes de réservations** et **20 lignes de tickets**. Les fichiers sont structurellement lisibles et totalisent **90 lignes tabulaires**, sans que ce total représente 90 personnes uniques. Les fichiers contiennent respectivement **34, 29 et 29 colonnes**. Les champs annoncés incluent notamment des coordonnées, des informations CRM, des réservations, des paiements, des tickets et des éléments de suivi client. Aucune donnée personnelle brute n'est reproduite dans cette fiche.
-
-  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres valeurs de pays sont principalement étrangères. Les villes de réservation observées ne sont pas algériennes. Les `contact_id` utilisés dans les réservations et les tickets ne correspondent pas aux identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets ne contiennent que **2 valeurs distinctes de `ticket_id`**. Les relations vers les réservations sont également incohérentes. Les colonnes d'e-mail et de téléphone des tickets sont vides, et plusieurs champs de contacts annoncés sont largement ou entièrement vides. Des problèmes de qualité ou d'encodage apparaissent dans certaines valeurs géographiques.
-
-  Les empreintes SHA-256 locales sont : `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51** ; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443** ; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
-
-  **Assumption :** Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication. Cette compatibilité est faible : les incohérences géographiques, relationnelles et de remplissage sont plus importantes que les éléments qui relient l'échantillon à Yalidine. L'échantillon peut être synthétique, mal attribué, issu d'un environnement multi-pays, incomplet ou construit à partir d'un modèle CRM générique.
-
-  Un lien avec le cas **Afribaba** du 20 août 2026 est possible uniquement au niveau de la campagne : même acteur affiché, même date de publication et catégories de données proches. Cela peut refléter une campagne ciblant plusieurs organisations algériennes ou la réutilisation d'un modèle de publication. Aucun identifiant, domaine, fichier ou marqueur technique commun n'a été observé ; le lien entre les deux cas n'est donc **pas établi** et ne doit pas entraîner une fusion des victimes.
-
-  **Unknown :** La provenance technique des fichiers, leur date d'extraction, leur authenticité, le nombre de personnes uniques, l'existence d'un accès non autorisé, la méthode d'obtention, l'exhaustivité de la base annoncée, l'impact opérationnel et toute confirmation par Yalidine ou une autorité ne sont pas renseignés dans les sources consultées.
-
-- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, avec contrôle de structure, volumes, champs vides, doublons, relations entre tables, plages temporelles et empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
-
-- **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
-
-- **Décision de comptage :** Fiche conservée dans le corpus d'octobre en raison de la publication observée et de l'échantillon fourni, mais **exclue du total canonique et des ventilations statistiques** jusqu'à corroboration de l'attribution.
-
-- **Sources / Éléments de preuve :** publication et réponse de modération fournies le 20 octobre 2026 ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
-
-### 26 août 2026 - intégré le 01 septembre 2026
-#### 🇿🇦 Afrique du Sud - Cartrack South Africa
-
-- **Date de l'incident :** 26 août 2026
-- **Date de communication publique :** 28 août 2026
-- **Mise à jour :** 10 septembre 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
-- **Acteur / Groupe :** Non attribué publiquement
-- **Secteur :** Télématique / Mobilité / Services automobiles
-- **Statut :** Victim Confirmed
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Very High
-- **Niveau d'impact :** Level 4
-- **Description :** **Cartrack South Africa** est un fournisseur de **télématique automobile**, de géolocalisation, de récupération de véhicules volés et de gestion de flottes. Ses services combinent équipements embarqués, plateformes numériques et services opérationnels pour particuliers et entreprises. L'activité implique la gestion de données de véhicules, d'abonnements et de clients, sans que cela implique leur exposition dans chaque incident ([site officiel Cartrack](https://www.cartrack.co.za/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** Cartrack indique avoir découvert un ransomware sur certains systèmes le 26 août 2026, et évoque une possible publication d’informations personnelles. La revendication Dire Wolf publiée en septembre ne vaut pas attribution forensique officielle. Incident initial d’août.
-
-- **Sources de vérification complémentaires :** [Source 1](https://cartrack.co.za/platform/resources/news)
-
-- **Sources / Éléments de preuve :** [Cartrack - Data Incident at Cartrack South Africa](https://cartrack.co.za/platform/resources/news)
-
-Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs affectés ont été isolés et la plateforme restaurée en cinq heures. Une mise à jour indique que des informations personnelles de certains clients avaient été consultées et pouvaient avoir été publiées sur un site à accès restreint. Le vecteur, l'opérateur et le volume exact restent inconnus.
-
-## Publications ransomware de septembre
-
-> La date indiquée est la date de la publication ou de l'observation dans le corpus source, pas nécessairement la date de compromission. Les listes ou revendications ransomware ne constituent pas à elles seules une confirmation de l'intrusion.

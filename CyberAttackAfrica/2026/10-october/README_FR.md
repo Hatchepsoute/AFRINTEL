@@ -289,19 +289,7 @@ Aucun élément du seul classement mensuel ne suffit à identifier une chaîne d
 
 ![Chaîne d'action défensive](assets/workflow_FR.png)
 
-## 11. Qualité du renseignement et réserves éditoriales
-
-Le **niveau de confiance** mesure la solidité de ce qui est documenté ; le **niveau d'impact** décrit la gravité possible ou établie du contenu. Une confiance élevée sur la correspondance d'un échantillon avec une organisation ne constitue pas une confirmation de l'intrusion dans ses systèmes.
-
-La rubrique sectorielle a été corrigée pour correspondre à la nomenclature disponible. Cela ne modifie pas le total des incidents, mais change la lecture des familles « Commerce », « Industrie » et « Autres ». Les tableaux, les graphiques et le résumé de ce rapport utilisent désormais **une même distribution**.
-
-La couverture illustre **48 dossiers documentés, 15 pays et quatre catégories principales**. Le nombre **« 9 dossiers rétrospectifs »** présent dans l'ancienne couverture n'a pas pu être établi de manière reproductible depuis les 48 fiches remises ; il n'est donc pas repris comme indicateur validé.
-
-Les **quatre dossiers avec communication de victime** ne valident pas nécessairement tous les détails avancés dans les publications criminelles. Pour **Rand Mutual Assurance**, le statut `Under Investigation` est maintenu dans le décompte publié, mais la qualification `System Intrusion` doit être revue si la procédure de validation documentaire de la taxonomie v2 exige une preuve explicite d'accès non autorisé.
-
-Ce document est une **révision analytique du rapport**, fondée sur les fiches transmises. Il ne modifie pas à lui seul les fiches victimes, le registre canonique, le référentiel sectoriel, les statistiques du dépôt ni le bundle STIX/OpenCTI. Une publication synchronisée de ces fichiers est nécessaire pour que tout le dépôt raconte exactement la même histoire.
-
-## 12. Perspectives de veille - novembre 2026
+## 11. Perspectives de veille - novembre 2026
 
 L'effort doit porter sur le suivi des **nouveaux lots de données**, la vérification des **avis officiels**, la comparaison des **échantillons attribués à plusieurs victimes**, les éventuels **changements d'état des publications ransomware** et les signaux de fraude utilisant des références commerciales authentiques. Les observations futures devront être datées et séparées des hypothèses.
 

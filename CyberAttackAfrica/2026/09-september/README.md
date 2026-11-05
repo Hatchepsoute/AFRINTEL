@@ -7,7 +7,6 @@
 ## Cyber threats across Africa | September 2026
 
 **Corpus period:** 1–30 September 2026  
-**Report revised:** 5 October 2026  
 **Monitoring scope:** 54 African countries; 12 countries represented in the corpus  
 **Audience:** executives, CISOs, CIOs, risk managers and CTI/SOC analysts  
 **Sources:** ransomware-group disclosure sites on the Dark Web, underground forums, data leak and sales platforms on the Dark Web and Deep Web, official statements, specialist reporting and available samples.  
@@ -27,15 +26,25 @@ The most significant finding is not simply the number of posts. **Identity infor
 
 Two cases include a **confirmation of unauthorised access**: South Africa's **RelyComply** platform and unauthorised activity in the **Namibian Ministry of Defence and Veterans Affairs network**. Two others, **Hollard** and **Guardrisk**, concern **third-party data exposures**, without an established direct intrusion at the named insurer. These distinctions matter: **verify the facts, protect affected people and address risky access before declaring a breach.**
 
-**For decision-makers:** September's signals call for focused vigilance, **not a generalised crisis response**. Good visibility into sensitive data, controlled access, tested backups and well-tuned detection can materially reduce exposure.
+**For decision-makers:** these observations call for a proportionate response. A criminal listing should be assessed before it is treated as proof of compromise. Where serious harm is established, incident-response and crisis-management procedures should be activated promptly. Sensitive-data visibility, controlled access, tested backups and effective detection reduce real exposure.
+
+### Executive actions: three practical decisions
+
+| Priority | Documented signal | Useful decision |
+|---|---|---|
+| **P1 - Protect sensitive data** | Identity, administrative and financial records appear across several samples. | Review critical repositories, permissions and bulk-export paths. |
+| **P1 - Govern third-party exposure** | Two exposures were acknowledged in a third-party context, without a confirmed direct breach at the named insurers. | Identify data entrusted to suppliers, delegated access and contractual notification windows. |
+| **P2 - Test response readiness** | Twenty cases relate to a ransomware context, without systematic proof of encryption. | Exercise restore procedures, compromised-account response and alert qualification. |
+
+*These are corpus-level priorities, not a victim-specific impact assessment. Each organisation should adapt them to its assets and internal evidence.*
 
 ### 1.1 Comparison with the previous month: August → September 2026
 
 | Indicator | August 2026 | September 2026 | Observed change |
 |---|---:|---:|---:|
-| **Total cases** | **29** | **33** | **+4 (+13.8%)** |
-| Ransomware | 17 | 20 | +3 (+17.6%) |
-| Data Leak | 11 | 11 | 0 (stable) |
+| **Total cases** | **33** | **33** | **0 (stable)** |
+| Ransomware | 18 | 20 | +2 (+11.1%) |
+| Data Leak | 14 | 11 | −3 (−21.4%) |
 | Access Sale | 1 | 0 | −1 (−100.0%) |
 | DDoS | 0 | 0 | 0 (stable) |
 | Defacement | 0 | 0 | 0 (stable) |
@@ -44,9 +53,11 @@ Two cases include a **confirmation of unauthorised access**: South Africa's **Re
 | Malware | 0 | 0 | 0 (stable) |
 | Operational Fraud | 0 | 0 | 0 (stable) |
 
+**CTI reading:** the overall volume is **stable (33 cases)**. Ransomware records rise from 18 to 20, while data leaks fall from 14 to 11. This shift reflects the AFRINTEL collection, not necessarily a change in real-world compromises.
+
 ![August–September comparison](./assets/comparison_aug_sep_2026_EN.png)
 
-*August baseline: 29 records (17 ransomware, 11 leaks, one access sale), from the [AFRINTEL August 2026 report](../08-august/README.md). This compares **records included in monthly collections**, not the exact number of real-world intrusions occurring in each month. Collection coverage and later discoveries can influence the difference.*
+*Verified August baseline: 33 records (18 ransomware, 14 data leaks, one access sale), from the [AFRINTEL August 2026 report](../08-august/README.md). This compares **records included in monthly collections**, not the exact number of real-world intrusions occurring in each month. Collection coverage and later discoveries can influence the difference.*
 
 ## 2. Scope, sources and methodology
 
@@ -204,6 +215,18 @@ South Africa features several financial, insurance and services cases; Egypt has
 
 Collection should also improve in underrepresented countries: collaboration with national CERTs/CSIRTs, local media, sources in French, English, Arabic, Portuguese and other relevant languages, and deduplication of cross-platform reposts.
 
+### Cases deserving focused review: evidence and limits
+
+| Case | Documented element | Risk to anticipate | Evidence limit |
+|---|---|---|---|
+| **RelyComply - South Africa** | Company-acknowledged unauthorised access. | Access governance, partners and transaction-related data. | Technical attribution to the claiming group is unproven. |
+| **Namibian defence - Namibia** | Unauthorised activity confirmed in a ministry network. | Sensitive public-service security and continuity. | Encryption, exfiltration and secret leaks not established. |
+| **Centre Atlantique Formation - Morocco** | Structured training-related files and documents examined read-only. | Identity misuse and document fraud. | Entry point and full exposure scope unknown. |
+| **SEPE - Angola** | Administrative sample reviewed; much larger volumes claimed. | Protection of public-service users and supporting documents. | Direct portal compromise and total volume unproven. |
+| **Hollard / Guardrisk - South Africa** | Acknowledged third-party exposures. | Protection of entrusted data and supplier governance. | Not evidence of direct intrusion at the named insurers. |
+
+*These entries illustrate defensive relevance, not a ranking of confirmed operational impact.*
+
 ## 8. MITRE ATT&CK: detection hypotheses, not attribution
 
 Public records do not always describe technical intrusion chains. The following mappings are **defensive hypotheses** to test against internal telemetry; they **do not mean** the techniques were observed at every named organisation.
@@ -237,6 +260,18 @@ A criminal posting **does not, by itself, justify shutting down a service**. Ini
 **Hypotheses to investigate:** privileged sign-in from a new device, a large export following abnormal authentication, unusual use of a contractor account and sudden creation of large archives. Correlate **identity + asset + volume + time + action**; an unusual IP address alone is not proof.
 
 **General prevention:** phishing-resistant MFA where available, privileged-account segmentation, exposed-application hardening, EDR, offline or immutable backups and regular restore tests.
+
+### Behavioural detection scenarios to validate in the SIEM
+
+| Detection hypothesis | Log sources | Proposed correlation | Analyst verification |
+|---|---|---|---|
+| **Unusual bulk export** | Databases, applications, storage, DLP | Account + sensitive repository + large departure from its normal export volume + short window. | Check authorised business tasks, maintenance or backups. |
+| **Atypical login followed by export** | IAM/SSO/VPN, application and file audit | New device or atypical session followed by bulk download or export. | Check MFA, session legitimacy and user context. |
+| **Supplier account outside normal use** | Bastion, PAM, IAM, VPN, applications | Delegated account + unusual hours + access to multiple unusual resources. | Compare with contracts, planned work and permissions. |
+| **Possible exfiltration staging** | EDR, file logs, proxy and network egress | Rapid creation of large archives followed by unusual external transfer. | Exclude legitimate archiving and data transfers. |
+| **Suspected destructive encryption** | EDR, FIM, backup monitoring | High volume of file changes + abnormal process behaviour. | Confirm events before disruptive containment. |
+
+*These are detection hypotheses, not proof that the behaviours occurred in the September cases.*
 
 | Timeframe | Practical actions | Expected evidence of completion |
 |---|---|---|

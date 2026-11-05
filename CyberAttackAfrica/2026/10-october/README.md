@@ -287,19 +287,7 @@ The monthly classification alone does not establish a complete intrusion chain. 
 2. Measure log coverage and retention, secret-revocation time and recovery-test frequency.
 3. Improve sector mapping, deduplication and ransomware disclosure lifecycle tracking for reliable monthly comparisons.
 
-## 11. Intelligence quality and editorial caveats
-
-**Confidence** describes how well an observation is supported; **impact** describes its established or potential severity. Strong evidence that a sample belongs to an organisation is not automatically proof of intrusion into that organisation's systems.
-
-The sector breakdown has been corrected to match the available mapping. It does not change the 48-case total but alters the commerce, industry and other-sector categories. The tables, charts and narrative now use the same distribution.
-
-The cover shows **48 documented cases, 15 countries and four primary types**. The former claim of **“9 retrospective cases”** could not be reproduced from the 48 submitted victim records and is therefore not repeated as a validated metric.
-
-Four cases include victim acknowledgement, but that does not confirm every criminal claim. **Rand Mutual Assurance** remains `Under Investigation` within the published total; its `System Intrusion` type warrants review if the v2 taxonomy requires evidence of unauthorised access for canonical inclusion.
-
-This is an **analytic revision of the monthly report** based on the supplied files. It does not, by itself, change the canonical victim records, normalization file, statistics or STIX/OpenCTI bundle. Those components must be updated together before repository-wide publication.
-
-## 12. November 2026 monitoring outlook
+## 11. November 2026 monitoring outlook
 
 Priorities are further data releases, official updates, comparisons of samples attributed to different victims, evolving ransomware disclosure status, and possible fraud using authentic commercial references. Future observations should be dated and kept separate from hypotheses.
 
