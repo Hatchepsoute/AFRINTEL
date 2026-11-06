@@ -1,8 +1,8 @@
-# Victimes africaines - Juin 2026 (40 incidents)
+# Victimes africaines - Juin 2026 (47 incidents)
 
 ## Résumé du mois
 
-Juin 2026 compte **40 incidents uniques** : **20 ransomwares**, **18 fuites de données** et **2 ventes d'accès**. Les fiches concernent directement ou indirectement **20 pays africains**, notamment par l’intermédiaire de deux offres multi-pays de vente d’accès.
+Juin 2026 compte **47 incidents documentés** : **22 fuites de données**, **20 ransomwares**, **4 ventes d'accès** et **1 intrusion système**. Les fiches concernent directement ou indirectement **20 pays africains**, notamment par l’intermédiaire de deux offres multi-pays de vente d’accès.
 
 ### Incidents marquants
 
@@ -15,8 +15,11 @@ Juin 2026 compte **40 incidents uniques** : **20 ransomwares**, **18 fuites de d
 
 > **Note de lecture ransomware :** une fiche ransomware est intégrée lorsqu'AFRINTEL a observé la victime sur le site de divulgation du groupe. `Claim - Unverified` signifie qu'aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte. Cela ne signifie pas que la publication du groupe n'a pas été observée. Sans données analysées, AFRINTEL ne déduit ni chiffrement, ni interruption opérationnelle, ni vecteur d'accès initial.
 
-### 01 Juin 2026
+### 01 juin 2026
+
 #### 🇬🇦 Gabon - Finam Gabon
+- **Date de publication initiale :** 01 juin 2026
+
 
 - **Groupe ransomware :** DeadLock
 - **Secteur :** Finance / Banking
@@ -37,8 +40,10 @@ Juin 2026 compte **40 incidents uniques** : **20 ransomwares**, **18 fuites de d
   Lors du suivi réalisé en juin 2026, aucun fichier ni échantillon de données attribué à Finam Gabon n'était publiquement accessible sur le leak site de DeadLock. Le sous-domaine associé au téléchargement des données renvoyait une réponse HTTP 403.
 
 ---
-### 01 Juin 2026
+
 #### 🇳🇬 Nigeria - Fidelity Pension Managers
+- **Date de publication initiale :** 01 juin 2026
+
 
 - **Groupe ransomware :** DeadLock
 - **Secteur :** Finance / Banking
@@ -48,8 +53,12 @@ Juin 2026 compte **40 incidents uniques** : **20 ransomwares**, **18 fuites de d
 - **Description :**
   Fidelity Pension Managers est un administrateur de fonds de pension agréé au Nigeria, avec des services numériques pour les comptes retraite. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
+
 ### 02 juin 2026
+
 #### 🇿🇦 Afrique du Sud - African National Congress (ANC)
+- **Date de publication initiale :** 02 juin 2026
+
 
 - **Groupe ransomware :** Black X
 - **Secteur :** Organisations politiques / Partis
@@ -67,8 +76,12 @@ Le fichier principal analysé contient 2 310 865 enregistrements répartis sur 1
 La cohérence et le volume des fichiers renforcent la crédibilité d’une exfiltration de données. Ils ne permettent toutefois pas de confirmer la publication intégrale de la base, le chiffrement des systèmes, une interruption opérationnelle ou le vecteur d’accès initial. L’exposition combinée de données d’identité, d’adresses et d’une possible affiliation politique crée un risque élevé d’usurpation d’identité, de phishing ciblé, de smishing, de harcèlement et de profilage politique.
 
 ---
-### 04 Juin 2026
+
+### 04 juin 2026
+
 #### 🇪🇬 Égypte - Bouri Group
+- **Date de publication initiale :** 04 juin 2026
+
 
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** E-commerce / Retail
@@ -78,8 +91,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   Bouri Group est un groupe égyptien actif dans la fabrication, l'importation et la distribution de biens domestiques et d'électroménager. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 05 Juin 2026
+
+### 05 juin 2026
+
 #### 🇿🇦 Afrique du Sud - Access Dental
+- **Date de publication initiale :** 05 juin 2026
+
 
 - **Groupe ransomware :** WorldLeaks
 - **Secteur :** Healthcare / Medical
@@ -89,8 +106,10 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   Access Dental est une organisation sud-africaine active dans le secteur dentaire. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 05 Juin 2026
+
 #### 🇿🇼 Zimbabwe - First Mutual Holdings
+- **Date de publication initiale :** 05 juin 2026
+
 
 - **Groupe ransomware :** Nightspire
 - **Secteur :** Finance / Banking
@@ -100,8 +119,46 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   First Mutual Holdings est un groupe de services financiers zimbabwéen. AFRINTEL a observé sa publication sur le site de divulgation de Nightspire, où le groupe mentionne une base de données interne. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le contenu de la base, le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 06 Juin 2026
+
+#### 🇪🇬 Égypte - Portail des services locaux égyptiens (attribution probable)
+- **Date de publication initiale :** 05 juin 2026
+
+
+* **Date de l'incident:** Non établie
+* **Acteur / Groupe:** R3D3MPTION
+* **Secteur:** Gouvernement / Administration
+* **Site web:** [lgs.gov.eg](https://www.lgs.gov.eg/)
+* **Statut:** Claim - Data Sample Published
+* **Type d'incident:** Data Leak
+* **Niveau de confiance:** High
+* **Niveau d'impact:** Level 4
+* **Type de source:** Underground Forum - Direct AFRINTEL Observation
+* **Description victime:**
+  Le Portail des services locaux égyptiens, `lgs.gov.eg` (بوابة خدمات المحليات), est une plateforme gouvernementale permettant aux citoyens et aux entreprises d'accéder à différents services administratifs locaux en ligne. Le portail s'inscrit dans la numérisation des services des gouvernorats, villes et centres technologiques locaux en Égypte. L'attribution de l'incident à cette plateforme est considérée comme probable sur la base de la convergence entre le schéma des données analysées, les documents publiés et les fonctions connues du portail.
+
+* **Analyse:**
+  Le 5 juin 2026, l'acteur R3D3MPTION a publié une offre affirmant avoir compromis un service gouvernemental égyptien lié aux services locaux. Il revendique plus de **70 Go de documents**, plus de **5 Go de données personnelles** et un fichier `CITIZENS.CSV` contenant **13 117 317 enregistrements**. La publication mentionne également des ensembles relatifs aux utilisateurs, véhicules et entreprises, ainsi qu'environ **118 000 documents citoyens**, comprenant selon l'acteur des images de pièces d'identité, contrats et autres documents administratifs. Ces volumes globaux restent des revendications et n'ont pas été validés.
+
+  L'échantillon `citizens_sample.csv` fourni et analysé contient **9 938 enregistrements et 42 colonnes**, pour **9 933 identifiants citoyens distincts**. L'analyse met en évidence des données structurées comprenant notamment des noms, identifiants nationaux, identifiants de passeport, adresses, dates de naissance, coordonnées, informations de nationalité et d'état civil, données professionnelles, informations liées au handicap ainsi que différents identifiants administratifs. Sur les **9 805 identifiants nationaux renseignés**, **9 408** présentent une longueur de 14 chiffres, cohérente avec le format utilisé pour les identifiants nationaux égyptiens.
+
+  Le jeu analysé présente également une temporalité récente. Le champ applicatif `InsertDate` est renseigné pour **9 435 enregistrements**, dont **3 544** portent la date du **3 juin 2026** et **778** celle du **2 juin 2026**. Ces valeurs suggèrent que certaines données présentes dans l'échantillon étaient encore alimentées peu avant la publication du 5 juin. Elles ne permettent cependant pas d'établir la date de l'accès initial, de l'exfiltration ou de la compromission.
+
+  Les documents visibles dans la publication comprennent des pièces d'identité égyptiennes, formulaires administratifs, plans, documents immobiliers et différents justificatifs associés à des procédures locales. La combinaison de ces documents avec la structure du fichier citoyens et les ensembles `Users`, `Cars` et `Companies` annoncés présente une forte cohérence fonctionnelle avec l'écosystème du Portail des services locaux égyptiens. Cette convergence soutient une **attribution probable à `lgs.gov.eg` ou à une infrastructure back-end associée**, mais ne constitue pas une confirmation officielle de compromission de la plateforme.
+
+  L'échantillon analysé représente environ **0,076 %** des 13 117 317 enregistrements revendiqués. Il ne permet donc pas de confirmer l'exhaustivité du corpus annoncé, les volumes de **70+ Go de documents**, les **5+ Go de PII** ou les **118 000 documents** revendiqués. Le vecteur d'accès initial, les systèmes effectivement touchés, la méthode d'exfiltration et l'étendue complète de l'incident restent inconnus.
+
+  La sensibilité des données observées, leur caractère administratif, la présence de documents d'identité et la portée nationale potentielle justifient un niveau d'impact **Level 4**. Les principaux risques concernent l'usurpation d'identité, la fraude documentaire, le spear-phishing fortement contextualisé et l'exploitation croisée de données administratives.
+
+* **Recommandations:**
+
+  * Rechercher dans les journaux applicatifs, IAM, API, bases de données et systèmes de stockage toute extraction massive, requête anormale ou accès inhabituel intervenu avant le 5 juin 2026, avec une attention particulière aux 2 et 3 juin.
+  * Renforcer la surveillance des comptes administratifs et techniques, réévaluer les droits d'accès aux données citoyens et mettre en place des contrôles de détection sur les exports volumineux, les accès API inhabituels et les transferts sortants de documents sensibles.
+
+### 06 juin 2026
+
 #### 🇲🇦 Maroc - IMT (Institut des Mines de Touissit) [Fuite de données]
+- **Date de publication initiale :** 06 juin 2026
+
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Education / University
@@ -118,6 +175,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   L'exposition des données personnelles (CIN, téléphone, email) combinée aux relevés académiques permet l'usurpation d'identité, le phishing ciblé et la fraude académique. La présence des relevés de notes permet aux employeurs ou concurrents d'identifier les performances des étudiants. Le CIN (identifiant national marocain) est un identifiant permanent, ce qui rend cette fuite particulièrement sensible pour la sécurité des identités nationales. La réputation de l'institution, fondée en 1954, est également menacée.
 
 #### 🇲🇦 Maroc - Tlog.ma [Fuite / Vente de données]
+- **Date de publication initiale :** 06 juin 2026
+
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Transport / Logistique
@@ -137,6 +196,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   L'exposition de données personnelles détaillées (noms, adresses précises, téléphones) couplées à l'historique d'achats permet le harcèlement physique, l'usurpation d'identité, le phishing ciblé et les cambriolages. Le jeu de données révèle également des relations commerciales et la chaîne d'approvisionnement d'entreprises marocaines. Le même acteur a aussi publié les éléments concernant l'IMT, ce qui établit une activité répétée visant le Maroc sans démontrer un vecteur d'accès commun.
 
 #### 🇲🇦 Maroc - Mines d'Aouli
+- **Date de publication initiale :** 06 juin 2026
+
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Mines / Industries extractives
@@ -163,6 +224,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   À ce stade, l'incident peut être qualifié comme une **fuite de documents internes à impact réputationnel, institutionnel et économique**. Les conclusions relatives à une éventuelle irrégularité juridique, à un verrouillage administratif ou à une captation d'actifs doivent toutefois rester considérées comme des hypothèses nécessitant une vérification indépendante.
 
 #### 🇪🇬 Égypte - Base de données des pilotes égyptiens [Fuite / Vente de base de données]
+- **Date de publication initiale :** 06 juin 2026
+
 
 - **Acteur / Groupe :** Xyphorix
 - **Secteur :** Government / Administration
@@ -175,8 +238,36 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   Exposition de données sensibles sur le personnel aéronautique, y compris des pilotes militaires et affiliés à l'État. Risques : usurpation d'identité, phishing ciblé, espionnage et usurpation de personnel aéronautique. La présence de pilotes militaires et d'entreprises publiques rend cette base particulièrement sensible pour la sécurité nationale.
 ---
-### 08 Juin 2026
+
+### 08 juin 2026
+
+#### 🇹🇳 Tunisie - Tayara.tn
+- **Date de publication initiale :** 08 juin 2026
+
+
+- **Acteur / Groupe :** KLINZO007, publication sur un forum cybercriminel
+- **Secteur :** E-commerce / Petites annonces en ligne
+- **Site web :** [tayara.tn](https://tayara.tn)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Très élevé
+- **Niveau d'impact :** Niveau 4
+
+- **Description :**
+
+  Tayara.tn est la plus grande plateforme de petites annonces en ligne de Tunisie, appartenant au groupe international de petites annonces Adevinta, couvrant des catégories telles que véhicules, immobilier et emploi, et mettant en relation particuliers et professionnels vendeurs avec des acheteurs dans tout le pays.
+
+- **Analyse :**
+
+  AFRINTEL a examiné une publication du 8 juin 2026 par l'acteur nouvellement inscrit KLINZO007 (compte créé en juin 2026, faible réputation), intitulée « [MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump] ». L'acteur affirme détenir la base de données complète des utilisateurs de Tayara.tn : plus de 2 000 000 de lignes, un dump brut de 4 Go, contenant noms complets, numéros de téléphone mobile des utilisateurs actifs, adresses email, mots de passe hachés, titres et descriptions d'annonces (véhicules, immobilier, emploi), prix affichés vérifiés et une couverture complète des catégories/localisations à l'échelle nationale. Plutôt qu'un lien de téléchargement public, la publication indique que le dump est « prêt à envoyer » sur demande via un contact Telegram et TOX, et inclut un court échantillon de données brutes directement dans le fil.
+
+  AFRINTEL a examiné de façon indépendante l'échantillon publié. Il se compose d'enregistrements utilisateurs structurés incluant des identifiants internes à la plateforme et au groupe (reliant chaque compte au système d'identité utilisateur partagé d'Adevinta), des horodatages de création de compte, un historique conservé des changements d'état antérieurs par compte (anciens noms affichés, emails et numéros de téléphone), des URL d'avatar, des numéros de téléphone, et des mots de passe hachés et salés (pbkdf2-sha256). Fait notable, un sous-ensemble des enregistrements examinés contient en outre du matériel de clés cryptographiques complet de type RSA (privée et publique) intégré directement dans l'enregistrement utilisateur, associé à une fonctionnalité cryptographique propre au compte ; l'exposition de ce matériel de clés constitue un risque significatif en soi, indépendamment de la robustesse des mots de passe, car elle pourrait permettre une usurpation d'identité ou le déchiffrement de tout élément sécurisé par les clés concernées. Un enregistrement examiné contenait également une charge utile de type cross-site scripting stockée à la place d'un nom affiché, indiquant soit une attaque historique persistée sans assainissement contre la plateforme, soit une contamination liée à un scan automatisé.
+
+  La correspondance exacte entre la description de l'acteur et l'échantillon examiné de façon indépendante, ainsi que la plausibilité et la cohérence interne des enregistrements, justifient un niveau de confiance très élevé. Compte tenu de la combinaison de données d'identité complètes, de mots de passe hachés et de matériel de clés privées par compte à l'échelle d'une plateforme nationale, AFRINTEL évalue l'impact de cet incident au Niveau 4. AFRINTEL ne reproduit aucun nom d'utilisateur, numéro de téléphone, adresse email, mot de passe haché, clé cryptographique ni enregistrement issu des éléments examinés.
+
 #### 🇿🇦 Afrique du Sud - Armée sud-africaine (SANDF) [Fuite de document classifié - Préparation au maintien de l'ordre]
+- **Date de publication initiale :** 08 juin 2026
+
 
 - **Acteur / Groupe :** mosad
 - **Secteur :** Government / Administration
@@ -194,8 +285,41 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   La fuite d'un document militaire classifié "RESTRICTED" révèle des capacités opérationnelles sensibles et des protocoles de réponse aux troubles civils. L'exposition des coordonnées personnelles (numéros de téléphone, emails, SSN) des officiers supérieurs constitue un risque majeur de ciblage, de harcèlement ou d'ingérence. La divulgation des effectifs, des délais de déploiement et des équipements compromet la sécurité opérationnelle (OPSEC) et pourrait permettre à des acteurs hostiles d'anticiper ou de contrer les opérations de maintien de l'ordre. Le timing de la fuite (document de 2022 publié en 2026) soulève des questions sur la persistance des vulnérabilités au sein des systèmes de communication militaires sud-africains. La présence du document sur des canaux Telegram et forums de hackers indique une circulation active dans les milieux cybercriminels.
 ---
-### 10 Juin 2026
+
+### 09 juin 2026
+
+#### 🇱🇾 Libye - Albarq Media Service / شركة البرق للاتصالات والتقنية
+- **Date de publication initiale :** 09 juin 2026
+
+
+* **Date de l'incident :** Juin 2026, date exacte non établie
+* **Acteur / Groupe :** Richard2002
+* **Secteur :** Télécommunications / Services médias
+* **Site web :** [albarq.ly](https://albarq.ly/)
+* **Statut :** Claim - Data Sample Published
+* **Type d'incident :** Data Leak
+* **Niveau de confiance :** Medium
+* **Niveau d'impact :** Level 3
+
+* **Description :**
+  Albarq Media Service est un service présenté comme lié à شركة البرق للاتصالات والتقنية (Albarq Telecommunications and Technology), opérateur libyen de télécommunications et de services associés.
+
+* **Analyse :**
+  Une publication attribuée à Richard2002, datée du 09 juin 2026, propose un échantillon présenté comme issu du service Albarq Media et revendique environ **330 000 comptes**. L'échantillon visible contient **18 lignes** et **24 champs séparés par des points-virgules**. Il comprend des identifiants de comptes, des informations d'abonnement, des dates, des localisations générales et des numéros de téléphone ; aucune donnée personnelle brute n'est reproduite par AFRINTEL.
+
+  Les enregistrements visibles présentent des dates s'étendant d'août 2019 à avril 2025, ainsi que des valeurs d'usage incohérentes ou manquantes dans plusieurs lignes. Le corpus observé ne représente qu'un extrait visible dans la publication et ne permet pas de valider les **330 000 comptes** revendiqués, l'exhaustivité de la fuite, le système source, le vecteur d'accès ou la méthode d'extraction. Le fichier source original n'était pas disponible ; l'analyse est donc limitée aux données visibles dans l'échantillon fourni.
+
+  **Inconnu :** aucune confirmation publique indépendante de l'incident par Albarq ou une autorité libyenne n'est établie dans les éléments examinés. La période exacte de l'accès ou de l'exfiltration reste inconnue ; juin 2026 correspond à la date de la publication observée.
+
+* **Recommandations :**
+  * Vérifier les journaux d'accès aux plateformes d'abonnement et les exports de données autour du 09 juin 2026.
+  * Réinitialiser les sessions et renforcer la surveillance des comptes administratifs si une exposition est confirmée.
+
+### 10 juin 2026
+
 #### 🇳🇬 Nigéria - Jeroid.co [Fuite / Vente de base de données]
+- **Date de publication initiale :** 10 juin 2026
+
 
 - **Acteur / Groupe :** burti
 - **Secteur :** Finance / Banking
@@ -219,6 +343,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   L'une des fuites financières les plus graves jamais recensées. Le BVN et le NIN sont les identifiants bancaires et nationaux principaux du Nigéria, leur exposition permet l'usurpation d'identité complète, la fraude financière, les arnaques aux prêts et le blanchiment d'argent. Le bucket S3 non authentifié contenant les selfies de vérification aggrave le risque avec le vol d'identité biométrique. Cette fuite menace tout l'écosystème bancaire nigérian et la confiance des citoyens dans les plateformes fintech.
 
 #### 🇿🇦 Afrique du Sud - UNISA (University of South Africa) [Fuite de données - Support technique]
+- **Date de publication initiale :** 10 juin 2026
+
 
 - **Acteur / Groupe :** GOD User 
 - **Secteur :** Education / University
@@ -237,8 +363,51 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   La présence de mots de passe en clair dans toutes les tables constitue une faille de sécurité critique. Les données personnelles (noms, adresses, emails, téléphones) exposent les clients et techniciens à des risques d'usurpation d'identité, de phishing ciblé et de réutilisation d'identifiants. Les descriptions d'incidents peuvent révéler des faiblesses logicielles internes. Si les identifiants administrateurs publiés étaient valides au moment de l'exposition, ils auraient pu permettre un accès non autorisé au système de support technique. Bien que la base soit de petite taille (21 ko), la structure et les enregistrements observés justifient une remédiation sans qu'AFRINTEL reproduise les identifiants de comptes.
 ---
-### 13 Juin 2026
+
+### 11 juin 2026
+
+#### 🇪🇬 Égypte - Ministère de l'Agriculture et de la Réforme agraire
+- **Date de publication initiale :** 11 juin 2026
+
+- **Type d’incident :** Fuite de données
+
+- **Acteur / Groupe :** V0idix, publication sur un forum cybercriminel
+- **Secteur :** Gouvernement / Administration publique / Agriculture
+- **Site web :** [moa.gov.eg](https://moa.gov.eg)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 3
+
+- **Note de fiabilité :**
+
+La publication d'origine est attribuée à V0idix. Les fichiers examinés établissent que le corpus fourni contient un ensemble cohérent de documents administratifs internes principalement associés au ministère et à l'Autorité générale des projets de réhabilitation et du développement agricole. Ce constat n'établit pas indépendamment la méthode d'acquisition, l'exhaustivité de l'archive annoncée ni une confirmation officielle par la victime.
+
+- **Description :**
+
+V0idix a publié un ensemble de documents présentés comme provenant du ministère égyptien de l'Agriculture et de la Réforme agraire. Les éléments divulgués comprennent des documents PDF, des tableurs, des images et des archives administratives.
+
+- **Analyse :**
+
+Les données observées comprennent de la correspondance officielle, des contrats fonciers, des dossiers d'associations agricoles, des avis de paiement, des informations financières, des rapports d'inspection et des documents de recouvrement de créances.
+
+Le corpus expose également des noms, des signatures, des cachets officiels, des références de parcelles, des montants dus, des coordonnées géographiques et des cartes foncières. Deux cartes divulguées concernent des parcelles couvrant 953 et 3 836 feddans.
+
+Des documents techniques révèlent l'organisation du service des systèmes d'information, des personnels nommément identifiés et un inventaire comprenant **389 ordinateurs, 87 scanners et 214 imprimantes**, soit **690 équipements**. Les données visibles dans l'interface d'une application gouvernementale affichent **30 456 demandes** liées au foncier.
+
+Cette exposition accroît le risque de phishing ciblé, de fraude à l'identité, de fraude foncière, de falsification de documents et de reconnaissance contre les systèmes internes.
+
+- **Recommandations :**
+
+1. Réinitialiser les accès aux applications concernées, examiner les comptes par défaut et enquêter sur les activités d'authentification anormales.
+
+2. Identifier les personnes et dossiers exposés, renforcer la surveillance du phishing et examiner les modifications inhabituelles apportées aux dossiers fonciers ou administratifs.
+---
+
+### 13 juin 2026
+
 #### 🇳🇬 Nigeria - National Institute for Legislative and Democratic Studies (NILDS) / National Assembly of Nigeria
+- **Date de publication initiale :** 13 juin 2026
+
 
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Coalition :** NullSec Nigeria
@@ -259,8 +428,36 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
   **Niveau de confiance : moyen.**
 ---
-### 15 Juin 2026
+
+### 14 juin 2026
+
+#### 🇬🇦 Gabon - Société d'Énergie et d'Eau du Gabon (SEEG)
+- **Date de publication initiale :** 14 juin 2026
+
+
+- **Date de l'incident :** nuit du 14 au 15 juin 2026
+- **Date de communication gouvernementale initiale :** 15 juin 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Énergie / Eau / Infrastructure critique
+- **Statut :** Victim Confirmed
+- **Type d'incident :** System Intrusion
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** La **Société d'Énergie et d'Eau du Gabon (SEEG)** est un opérateur de services publics intervenant dans la **production, le transport et la distribution de l'électricité**, ainsi que dans l'approvisionnement en **eau potable** au Gabon. Son activité repose sur des infrastructures industrielles et des systèmes de gestion indispensables à la continuité de services essentiels pour les ménages et les entreprises ([présentation officielle des activités SEEG](https://www.seeg-gabon.com/activites)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Incident confirmé, attribution du mode d’action à préciser :** l’indisponibilité d’EDAN dans la nuit du 14 au 15 juin 2026 est documentée par le gouvernement gabonais. La SEEG a ensuite évoqué des actes de sabotage/malveillance informatique. Cela n’établit pas nécessairement une intrusion externe ni une exfiltration. Incident de juin.
+
+- **Sources de vérification complémentaires :** [Source 1](https://gabonofficiel.com/seeg-un-sabotage-informatique-a-paralyse-95-de-son-systeme-la-cybersecurite-desormais-au-coeur-des-enjeux/) ; [Source 2](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/)
+
+- **Sources / Éléments de preuve :** [Gouvernement gabonais, 15 juin 2026](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/) ; [Gabon Media Time, 5 août 2026](https://gabonmediatime.com/cybersecurite-la-seeg-revele-avoir-perdu-pres-de-95-de-ses-infrastructures-informatiques/)
+
+Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouvernement a évoqué des actes de malveillance et la SEEG a ensuite qualifié l'événement de sabotage, avec une perte annoncée de près de 95 % de ses infrastructures informatiques. Le mécanisme technique, les responsables et l'exfiltration restent inconnus.
+
+### 15 juin 2026
+
 #### 🇪🇬 Égypte - Sheraton Miramar Resort El Gouna
+- **Date de publication initiale :** 15 juin 2026
+
 
 - **Groupe ransomware :** Nightspire
 - **Secteur :** Hôtellerie / Tourisme
@@ -270,8 +467,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   Sheraton Miramar Resort El Gouna est un établissement hôtelier situé à El Gouna, en Égypte. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 16 Juin 2026
+
+### 16 juin 2026
+
 #### 🇹🇳 Tunisie - Sumitomo Electric Bordnetze, site SEBN Tunisia / Fejja
+- **Date de publication initiale :** 16 juin 2026
+
 
 - **Groupe ransomware :** Aurora
 - **Secteur :** Industrie / Automobile / Fabrication
@@ -281,8 +482,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   Sumitomo Electric Bordnetze est un équipementier automobile disposant d'une implantation sur le site SEBN Tunisia / Fejja. AFRINTEL a observé ce site tunisien dans la publication ransomware d'Aurora, avec un volume de données revendiqué. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le contenu, le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 17 Juin 2026
+
+### 17 juin 2026
+
 #### 🌍 Afrique (Multi-pays) - Institutions Publiques & Forces de l'ordre
+- **Date de publication initiale :** 17 juin 2026
+
 
 - **Acteur / Groupe :** Convince (via un forum cybercriminel)
 - **Secteur :** Government / Administration
@@ -307,6 +512,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   Cette offre ne constitue pas une fuite de données subie passivement par ces pays, mais représente une exposition critique de leurs vecteurs d'authentification officiels. La commercialisation de ces adresses, combinée au tutoriel EDR complet vendu par le même acteur, permet à des tiers malveillants d'obtenir indûment des données personnelles et d'utilisateurs sur les plateformes en ligne en exploitant la confiance accordée aux autorités de ces pays. Cela accentue significativement le risque d'usurpation d'identité administrative et de fraudes transfrontalières à l'échelle régionale et internationale. Cette menace est d'autant plus préoccupante qu'elle concerne plusieurs institutions déjà ciblées par des fuites de données en mai 2026 (Égypte, Maroc, Nigeria), créant un terrain favorable à des attaques combinées.
 
 #### 🇪🇬 Égypte - Great Foods
+- **Date de publication initiale :** 17 juin 2026
+
 
 - **Groupe ransomware :** Lamashtu
 - **Secteur :** E-commerce / Retail
@@ -317,6 +524,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   Great Foods est une société égyptienne de fabrication et de distribution alimentaire, membre du groupe El Naggar. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇸🇳 Sénégal - Cour des Comptes du Sénégal
+- **Date de publication initiale :** 17 juin 2026
+
 
 - **Groupe ransomware :** Krybit
 - **Secteur :** Government / Administration
@@ -330,8 +539,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   Le groupe ransomware KRYBIT a revendiqué une cyberattaque contre la Cour des Comptes du Sénégal avant de publier des fichiers attribués à l'institution après l'échéance du compte à rebours. Les premiers fichiers observés contenaient principalement des documents publics ou académiques, mais les lots analysés ensuite incluent plusieurs documents directement rattachables à la Cour des Comptes, notamment à la Chambre des Affaires budgétaires et financières. Les éléments observés comprennent des convocations internes, des ordres du jour de délibération, des documents liés au plan d'apurement des comptes de l'État, des courriers de notification, des notes internes, des supports de travail, des documents RH et des rapports liés à des contrôles sensibles, dont les recettes issues du secteur minier, la prise en charge médicale des agents de l'État et des comptes de postes comptables publics. Aucun identifiant technique, mot de passe ou configuration système n'a été observé à ce stade dans les fichiers analysés. Toutefois, la nature institutionnelle des documents renforce la crédibilité de la fuite et expose l'organisation à des risques d'ingénierie sociale, d'usurpation administrative, de pression réputationnelle et de manipulation d'informations liées au contrôle des finances publiques.
 ---
-### 18 Juin 2026
+
+### 18 juin 2026
+
 #### 🇧🇼 Botswana - Botswana Vaccine Institute (BVI)
+- **Date de publication initiale :** 18 juin 2026
+
 
 - **Groupe ransomware :** LockBit 5
 - **Secteur :** Healthcare / Medical
@@ -342,6 +555,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   Botswana Vaccine Institute est une organisation botswanaise spécialisée dans la production de vaccins vétérinaires. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇿🇦 Afrique du Sud - Grey High School
+- **Date de publication initiale :** 18 juin 2026
+
 
 - **Groupe ransomware :** LockBit 5
 - **Secteur :** Education / University
@@ -352,6 +567,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   Grey High School est un établissement d'enseignement secondaire en Afrique du Sud. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇲🇺 Maurice - Nundun Gopee & Co Ltd
+- **Date de publication initiale :** 18 juin 2026
+
 
 - **Groupe ransomware :** LockBit 5
 - **Secteur :** Construction / Immobilier
@@ -361,8 +578,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Description :**
   Nundun Gopee & Co Ltd est une organisation mauricienne associée au domaine nundungopee.mu. AFRINTEL a observé sa publication sur le site de divulgation de LockBit 5. Aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé au moment de la collecte ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 19 Juin 2026
+
+### 19 juin 2026
+
 #### 🇲🇦 Maroc - MUPRAS RAM
+- **Date de publication initiale :** 19 juin 2026
+
 
 - **Groupe ransomware :** Krybit
 - **Secteur :** Finance / Banking
@@ -381,8 +602,12 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
   Cette divulgation présente un risque élevé pour les adhérents, prestataires de santé, banques, fournisseurs et équipes internes. Aucune confirmation publique de la victime n'est intégrée dans cette analyse.
 ---
-### 20 Juin 2026
+
+### 20 juin 2026
+
 #### 🌍 Afrique (Multi-pays) - Institutions Publiques & Forces de l'ordre (Offre d'accès portails)
+- **Date de publication initiale :** 20 juin 2026
+
 
 - **Acteur / Groupe :** Governor
 - **Secteur :** Government / Administration
@@ -411,6 +636,8 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
   Cette offre s'inscrit dans la même logique que celle de l'acteur « Convince », mais avec une spécificité plus dangereuse : elle ne vend pas seulement des adresses email brutes, mais des **comptes complets ayant déjà accès aux portails officiels des plateformes**. Cela signifie que l'acheteur n'a même pas besoin de rédiger de fausses demandes EDR ; il peut directement se connecter à l'interface Meta ou X avec les identifiants d'un véritable agent gouvernemental. Le risque est majeur : usurpation d'identité massive, extraction de données personnelles (y compris les messages privés via subpoena), et manipulation des contenus en ligne. La présence de pays comme la Palestine et le Yémen dans la liste « africaine » (selon le vendeur) suggère une classification géographique approximative, mais ne diminue pas la menace pour les institutions africaines légitimes concernées.
 
 #### 🇹🇿 Tanzanie - BRELA (Business Registrations and Licensing Agency) [Fuite de données]
+- **Date de publication initiale :** 20 juin 2026
+
 
 - **Acteur / Groupe :** hammer
 - **Secteur :** Government / Administration
@@ -427,8 +654,60 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   Exposition nationale à fort impact. L'exposition des TIN (numéros d'identification fiscale) combinée aux identifiants nationaux, numéros de passeport et données biométriques permet l'usurpation d'identité complète, la fraude financière, la fraude fiscale et l'usurpation de propriétaires d'entreprises. Les ressortissants étrangers (Indiens, Chinois, etc.) enregistrés en Tanzanie sont également concernés. L'exposition présente un risque pour l.ensemble de l.écosystème d'enregistrement des entreprises et menace le système fiscal et le secteur financier tanzaniens.
 ---
-### 21 Juin 2026
+
+#### 🇹🇳 Tunisie - Adex.tn
+- **Date de publication initiale :** 20 juin 2026
+
+
+- **Acteur / Groupe :** BIGBROTHER, republication sur un forum cybercriminel
+- **Secteur :** Transport / Logistique / Livraison de colis
+- **Site web :** [adex.tn](https://adex.tn)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Vente d’accès
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 2
+
+- **Description :**
+
+  Adex.tn est une société tunisienne de transport et de livraison de colis, opérant via un réseau d'agences locales sur tout le territoire, proposant des services de suivi de commandes et de colis à ses clients.
+
+- **Analyse :**
+
+  AFRINTEL a examiné une publication de forum du 20 juin 2026 par l'acteur BIGBROTHER, intitulée « {REPOST} [Tunisia] Data Leak from Adex.tn » et étiquetée comme une offre de vente, décrivant « 15k personal Data from shipping and transporting company of Tunisia 'Adex.tn' » et renvoyant vers une image de preuve hébergée à l'extérieur, avec un identifiant Session fourni pour un contact direct. La publication est explicitement marquée comme une republication, indiquant que le matériel provient d'une source antérieure non identifiée plutôt que d'une intrusion revendiquée directement par BIGBROTHER.
+
+  L'analyse des données visibles dans les éléments fournis identifie une interface de gestion des commandes d'Adex listant des expéditions dans plusieurs agences tunisiennes, notamment Sfax, Siliana, Ben Arous, Tunis, Nabeul et Sousse. L'interface affiche une pagination totalisant 15 301 enregistrements, ce qui est cohérent avec le volume annoncé de « 15k ». Aucun fichier exporté, dump de base de données ni archive téléchargeable n'était disponible ; l'analyse est limitée à l'interface administrative visible et non à un jeu de données source extrait.
+
+  La correspondance entre le volume revendiqué et le total visible soutient avec un niveau de confiance élevé que les éléments publiés représentent de façon plausible un accès administratif. Elle n'établit pas indépendamment l'identité de l'intrus initial, la persistance de l'accès ni l'étendue des champs disponibles au-delà des noms de clients et des métadonnées d'expédition. S'il est réel, un accès à un back-office logistique de ce type pourrait exposer les coordonnées des clients, les adresses de livraison et les habitudes d'expédition, et faciliter la fraude, l'interception de colis ou l'ingénierie sociale. AFRINTEL ne reproduit aucun nom de client, référence de commande ni détail de compte.
+
+#### 🇹🇳 Tunisie - Ministère de la Formation Professionnelle et de l'Emploi (mfpe.gov.tn)
+- **Date de publication initiale :** 20 juin 2026
+
+
+- **Acteur / Groupe :** BIGBROTHER, republication sur un forum cybercriminel
+- **Secteur :** Gouvernement / Administration publique / Formation professionnelle et emploi
+- **Site web :** [mfpe.gov.tn](https://mfpe.gov.tn)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Vente d’accès
+- **Niveau de confiance :** Moyen
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+  Le Ministère de la Formation Professionnelle et de l'Emploi (mfpe.gov.tn) est l'administration publique tunisienne chargée de la politique de formation professionnelle et des services à l'emploi, y compris le traitement des demandes et requêtes des citoyens relatives aux programmes de formation et au placement professionnel.
+
+- **Analyse :**
+
+  AFRINTEL a examiné une publication de forum du 20 juin 2026 par l'acteur BIGBROTHER, publiée une minute avant la republication du même acteur concernant Adex.tn et utilisant un identifiant de contact Session identique, intitulée « {REPOST} [Tunisia] Data Leak from mfpe.gov.tn » et étiquetée comme une offre de vente, décrivant « 4,000 personal Data from Ministry of Vocational Training and Employment of Tunisia 'mfpe.gov.tn' » et renvoyant vers une image de preuve hébergée à l'extérieur. Comme pour la publication liée à Adex.tn, cette annonce est explicitement marquée comme une republication d'un matériel provenant d'une source antérieure non identifiée.
+
+  L'analyse des données visibles identifie une interface ministérielle en arabe consacrée à la gestion des demandes, avec des requêtes individuelles comprenant nom complet, numéro de carte d'identité ou de passeport, date de naissance, gouvernorat, numéro de téléphone, numéro de demande, date de dépôt, statut de traitement et domaine de spécialité. Aucun total d'enregistrements n'est visible ; le chiffre annoncé de « 4 000 » n'a donc pas pu être corroboré indépendamment à partir des éléments fournis.
+
+  La structure et le contenu sont cohérents avec une interface plausible de gestion de dossiers gouvernementaux, mais les éléments visibles n'établissent pas indépendamment la méthode d'accès, sa validité actuelle ni l'identité de l'intrus initial. La combinaison de numéros d'identité nationale, de dates de naissance et de numéros de téléphone pour des citoyens en interaction avec un ministère constitue des données personnelles administratives sensibles. S'il est réel, un tel accès pourrait faciliter la fraude à l'identité, l'usurpation dans des démarches administratives et le phishing ciblé. En l'absence d'un total vérifiable ou d'un export examiné indépendamment, AFRINTEL évalue cette revendication avec un niveau de confiance moyen et ne reproduit aucun nom de citoyen, numéro de carte d'identité ou de passeport, date de naissance, numéro de téléphone ni détail de demande.
+
+### 21 juin 2026
+
 #### 🇳🇬 Nigéria - Armée nigériane (army.mil.ng) [Fuite d'identifiants]
+- **Date de publication initiale :** 21 juin 2026
+
 
 - **Acteur / Groupe :** [Citizen] Stunxet
 - **Groupe affilié :** NullSec Nigeria
@@ -442,8 +721,9 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 - **Analyse :**
   Fuite d'une gravité extrême pour la sécurité nationale. Les comptes email militaires avec mots de passe en clair permettent un accès total aux communications internes, aux ordres opérationnels, aux plateformes de partage de renseignement et aux services d'imagerie satellite. Cela facilite l'espionnage, l'usurpation d'identité d'officiers, le sabotage d'opérations et la compromission ultérieure de systèmes classifiés. La présence d'identifiants pour DigitalGlobe (utilisé pour la reconnaissance) est particulièrement alarmante. L'armée nigériane doit immédiatement révoquer tous les mots de passe exposés et mettre en place une authentification multi-facteurs.
 
-
 #### 🇾🇹 Mayotte - Commune de Ouangani
+- **Date de publication initiale :** 21 juin 2026
+
 
 - **Groupe ransomware :** DeadLock
 - **Secteur :** Government / Administration
@@ -469,8 +749,12 @@ Ces informations peuvent faciliter l’usurpation d’identité, le phishing cib
 
 Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compromission n’a été identifié dans les documents observés. Ceux-ci ne permettent pas d’établir le vecteur d’accès initial, la date exacte de compromission ou la méthode d’exfiltration. L’association à DeadLock repose sur la publication du groupe.
 ---
-### 22 Juin 2026
+
+### 22 juin 2026
+
 #### 🇱🇾 Libye - Central Bank of Libya
+- **Date de publication initiale :** 22 juin 2026
+
 
 - **Groupe ransomware :** Qilin
 - **Secteur :** Finance / Banking
@@ -480,8 +764,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Description :**
   La Central Bank of Libya est l'institution bancaire centrale libyenne. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 23 Juin 2026
+
+### 23 juin 2026
+
 #### 🇰🇪 Kenya - Kenya National Highways Authority (KeNHA)
+- **Date de publication initiale :** 23 juin 2026
+
 
 - **Groupe ransomware :** DeadLock
 - **Secteur :** Government / Administration
@@ -495,8 +783,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 > **Suivi reclassé :** la publication initiale est rattachée au corpus de décembre 2025 sur la base de l'horodatage affiché au 15 décembre 2025. Une publication distincte observée le 23 juin 2026 à 14:21, intitulée « FREE Tunisia Database Source: examens.tn », est également signée **AshleyWood2022** et affiche un échantillon, tandis que le téléchargement reste masqué ou inaccessible. Cette observation confirme un suivi public en juin 2026 par le même pseudonyme, mais ne démontre pas à elle seule une nouvelle compromission : aucun nouvel acteur, nouvel échantillon vérifié, nouvelle empreinte, volume distinct ou accès indépendant n'est établi. Elle est donc conservée comme suivi de publication et ne constitue pas une fiche canonique supplémentaire. Les hypothèses restent ouvertes : mise à jour ou republication de la même fuite, nouvelle attaque par le même acteur, ou vulnérabilité persistante non corrigée.
 ---
-### 25 Juin 2026
+
+### 25 juin 2026
+
 #### 🇲🇦 Maroc - MG Maroc
+- **Date de publication initiale :** 25 juin 2026
+
 
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Healthcare / Medical
@@ -510,8 +802,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Analyse :**
   Un acteur malveillant opérant sous le nom **404Crew Cyber Team** revendique avoir compromis MG Maroc et affirme détenir des données couvrant la période **2025-2026**. Les échantillons publiés montrent des documents administratifs contenant des informations relatives aux déclarations sociales des employés. Les informations observées comprennent notamment des noms et prénoms, des numéros d'immatriculation des salariés, le nombre de jours travaillés, les salaires déclarés en dirhams, des numéros d'affiliation ainsi que des attestations administratives. Les captures d'écran montrent plusieurs centaines d'enregistrements, laissant supposer l'exposition de données RH et de paie. La divulgation de telles informations pourrait favoriser des campagnes de fraude, d'usurpation d'identité, de spear-phishing ciblé contre les employés ainsi que des tentatives d'ingénierie sociale exploitant des données salariales et administratives. Les éléments observés correspondent à un échantillon de documents internes présenté comme preuve de compromission.
 ---
-### 26 Juin 2026
+
+### 26 juin 2026
+
 #### 🇹🇳 Tunisie - Centrale Laitière du Cap-Bon (CLC)
+- **Date de publication initiale :** 26 juin 2026
+
 
 - **Groupe ransomware :** SETTRA
 - **Secteur :** Alimentation / Boissons
@@ -522,6 +818,8 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
   Centrale Laitière du Cap-Bon est une société laitière tunisienne et une filiale de Délice Holding, spécialisée dans la collecte, le traitement, le conditionnement UHT et la distribution de lait. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇲🇦 Maroc - Avito.ma
+- **Date de publication initiale :** 26 juin 2026
+
 
 - **Acteur / Groupe :** Anisanas2
 - **Secteur :** E-commerce / Retail
@@ -536,6 +834,8 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
   Anisanas2 affirme avoir collecté l'ensemble des archives d'Avito.ma et propose la base complète à la vente pour 800 USD. Le document partagé est un échantillon contenant 200 000 annonces et 17 champs, notamment les vendeurs, numéros de téléphone, identifiants d'annonce, titres, prix, localisations et dates de publication. L'échantillon comprend environ 47 695 numéros distincts et des données collectées entre le 24 et le 25 juin 2026. Sa structure indique principalement une aspiration automatisée des annonces publiques, sans preuve visible d'un accès aux systèmes internes d'Avito.ma. Aucun mot de passe, jeton de session ou identifiant d'authentification n'a été observé. Les données peuvent néanmoins faciliter le spam, le smishing, les escroqueries ciblées et le profilage des vendeurs. L'échantillon est cohérent, mais il ne permet pas de confirmer l'existence ni l'exhaustivité de la base complète proposée à la vente. Avito.ma avait déjà fait l'objet d'une publication en mai 2026, mais l'échantillon alors diffusé contenait seulement une dizaine d'enregistrements attribués à des clients ou vendeurs.
 
 #### 🇲🇦 Maroc - Plateforme de gestion de startups, opérateur non identifié
+- **Date de publication initiale :** 26 juin 2026
+
 
 - **Acteur / Groupe :** Anisanas2
 - **Secteur :** Services aux entreprises / Technologie
@@ -601,6 +901,8 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
   Pour la comptabilisation AFRINTEL, cette publication peut être enregistrée comme un incident multi-organisation affectant au moins quatre sociétés marocaines. L'identité de la victime principale doit rester indiquée comme inconnue tant que l'opérateur ou le domaine du système commun n'a pas été formellement identifié.
 
 #### 🇲🇦 Maroc - Entreprise marocaine de livraison non identifiée
+- **Date de publication initiale :** 26 juin 2026
+
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Transport / Logistique
@@ -642,8 +944,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
   L'identité exacte de l'entreprise reste inconnue. Le fichier confirme l'exposition massive d'un système marocain de gestion des livraisons, mais aucun domaine, logo ou nom juridique ne permet une attribution fiable.
 ---
-### 27 Juin 2026
+
+### 27 juin 2026
+
 #### 🇲🇦 Maroc - Stellantis Maroc
+- **Date de publication initiale :** 27 juin 2026
+
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Industrie / Automobile / Fabrication
@@ -669,8 +975,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
   L'échantillon confirme la publication de données personnelles structurées liées au secteur automobile marocain. Il ne permet pas de vérifier l'affirmation concernant l'extraction d'une base complète ni de confirmer indépendamment la compromission directe de Stellantis Maroc.
 ---
-### 28 Juin 2026
+
+### 28 juin 2026
+
 #### 🇹🇳 Tunisie - monoprix.tn
+- **Date de publication initiale :** 28 juin 2026
+
 
 - **Groupe ransomware :** Stormous
 - **Secteur :** E-commerce / Retail
@@ -681,6 +991,8 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
   monoprix.tn est une plateforme tunisienne de distribution. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 
 #### 🇿🇦 Afrique du Sud - Fidelity Security Group
+- **Date de publication initiale :** 28 juin 2026
+
 
 - **Groupe ransomware :** CMD Organization
 - **Secteur :** Services de sécurité
@@ -690,8 +1002,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Description :**
   Fidelity Security Group est un fournisseur sud-africain de services et solutions de sécurité. AFRINTEL a observé la victime sur le site de divulgation du groupe ransomware. Au moment de la collecte, aucune donnée publiée ni aucun échantillon accessible n'a pu être analysé. La fiche documente donc une revendication ransomware observée ; le chiffrement, l'impact opérationnel et le vecteur d'accès initial restent inconnus.
 ---
-### 29 Juin 2026
+
+### 29 juin 2026
+
 #### 🇱🇾 Libye - Ministry of Technical and Vocational Education
+- **Date de publication initiale :** 29 juin 2026
+
 
 - **Acteur / Groupe :** [Citizen] EvaN47
 - **Secteur :** Government / Administration
@@ -715,8 +1031,12 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
   L'intérêt opérationnel pour un attaquant est élevé, car les données permettent d'identifier des étudiants, des établissements, des comptes internes et des utilisateurs rattachés au domaine gouvernemental. Aucun prix, deadline ou lien de téléchargement direct n'est visible dans les captures fournies.
 ---
-### 30 Juin 2026
+
+### 30 juin 2026
+
 #### 🇱🇾 Libye - Ministry of Education of Libya
+- **Date de publication initiale :** 30 juin 2026
+
 
 - **Acteur / Groupe :** EvaN47
 - **Secteur :** Government / Administration
@@ -767,13 +1087,15 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 - **Sources / Éléments de preuve :** publication du forum Breached attribuée à EveN47 (10 septembre 2026) et capture fournie ; lien de téléchargement non ouvert.
 
-### Juin 2026 - intégré le 01 septembre 2026
+### Juin 2026
+
 #### 🇿🇦 Afrique du Sud - MIP Holdings
+- **Date de publication initiale :** Juin 2026
+
 
 - **Date de l'incident :** juin 2026, date exacte non établie
 - **Première notification publique :** 26 juin 2026
 - **Confirmation réglementaire complémentaire :** septembre 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
 - **Acteur / Groupe :** Non attribué publiquement
 - **Secteur :** Technologie / Logiciels / Prestataire de services
 - **Statut :** Victim Confirmed
@@ -789,25 +1111,3 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 - **Sources / Éléments de preuve :** [LegalWise, 26 juin 2026](https://www.legalwise.co.za/media-centre/statement-regarding-third-party-cybersecurity-incident) ; [TechCentral, 25 septembre 2026](https://techcentral.co.za/insurers-mip-breach-regulators/286482/)
 
 MIP Holdings a identifié un accès non autorisé à un ancien environnement de développement et de support. L'Information Regulator sud-africain a confirmé en septembre travailler avec MIP pour établir les circonstances et le nombre de personnes affectées. La compromission et le risque de chaîne d'approvisionnement sont confirmés ; le volume et le vecteur restent inconnus.
-
-### 14-15 juin 2026 - intégré le 01 septembre 2026
-#### 🇬🇦 Gabon - Société d'Énergie et d'Eau du Gabon (SEEG)
-
-- **Date de l'incident :** nuit du 14 au 15 juin 2026
-- **Date de communication gouvernementale initiale :** 15 juin 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
-- **Acteur / Groupe :** Non attribué publiquement
-- **Secteur :** Énergie / Eau / Infrastructure critique
-- **Statut :** Victim Confirmed
-- **Type d'incident :** System Intrusion
-- **Niveau de confiance :** Very High
-- **Niveau d'impact :** Level 4
-- **Description :** La **Société d'Énergie et d'Eau du Gabon (SEEG)** est un opérateur de services publics intervenant dans la **production, le transport et la distribution de l'électricité**, ainsi que dans l'approvisionnement en **eau potable** au Gabon. Son activité repose sur des infrastructures industrielles et des systèmes de gestion indispensables à la continuité de services essentiels pour les ménages et les entreprises ([présentation officielle des activités SEEG](https://www.seeg-gabon.com/activites)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Incident confirmé, attribution du mode d’action à préciser :** l’indisponibilité d’EDAN dans la nuit du 14 au 15 juin 2026 est documentée par le gouvernement gabonais. La SEEG a ensuite évoqué des actes de sabotage/malveillance informatique. Cela n’établit pas nécessairement une intrusion externe ni une exfiltration. Incident de juin.
-
-- **Sources de vérification complémentaires :** [Source 1](https://gabonofficiel.com/seeg-un-sabotage-informatique-a-paralyse-95-de-son-systeme-la-cybersecurite-desormais-au-coeur-des-enjeux/) ; [Source 2](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/)
-
-- **Sources / Éléments de preuve :** [Gouvernement gabonais, 15 juin 2026](https://gouvernement.ga/2026/06/15/systeme-edan-retablissement-confirme-et-dispositif-de-protection-renforce-par-letat/) ; [Gabon Media Time, 5 août 2026](https://gabonmediatime.com/cybersecurite-la-seeg-revele-avoir-perdu-pres-de-95-de-ses-infrastructures-informatiques/)
-
-Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouvernement a évoqué des actes de malveillance et la SEEG a ensuite qualifié l'événement de sabotage, avec une perte annoncée de près de 95 % de ses infrastructures informatiques. Le mécanisme technique, les responsables et l'exfiltration restent inconnus.

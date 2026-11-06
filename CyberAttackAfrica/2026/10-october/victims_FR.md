@@ -11,10 +11,12 @@
 
 **Statut du suivi mensuel : Published / Publié**  -  corpus de 48 fiches publiées ou signalées en octobre 2026. La clôture et les statistiques mensuelles sont publiées dans le rapport associé.
 
-### 1 octobre 2026
-#### 🇨🇩 République démocratique du Congo - ServerUnlockApp (`serverunlockapp.com`) [Data Leak]
+### 01 octobre 2026
 
-- **Date de publication initiale :** 1 octobre 2026 à 13:32 (horodatage affiché ; fuseau non indiqué)
+#### 🇨🇩 République démocratique du Congo - ServerUnlockApp (`serverunlockapp.com`) [Data Leak]
+- **Date de publication initiale :** 1 octobre 2026
+
+
 - **Acteur / Groupe :** SensitiveDarkForum (compte/forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Services numériques / Déverrouillage et activation de téléphones et services associés
 - **Site web :** [serverunlockapp.com](https://serverunlockapp.com/)
@@ -44,10 +46,10 @@
 - **Recommandations SOC / CTI :** Révoquer et renouveler les secrets, clés, certificats et sessions potentiellement exposés ; examiner les journaux d'administration, de téléchargement et d'export ; vérifier les comptes clients et revendeurs ; contrôler les intégrations de paiement et de messagerie ; rechercher les modifications de code et tâches planifiées ; préserver les sauvegardes originales et ne pas exécuter les scripts divulgués.
 - **Évaluation AFRINTEL :** Publication observée ; sauvegarde applicative fournie et analysée ; attribution à ServerUnlockApp fortement plausible ; données de comptes et éléments commerciaux observés ; secrets potentiels présents mais non testés ; accès non autorisé, exfiltration complète et validité actuelle des secrets non documenté dans les sources publiquess.
 
-
 #### 🇲🇦 Maroc - Midipcom
+- **Date de publication initiale :** 1 octobre 2026
 
-- **Date de publication initiale :** 1 octobre 2026 à 21:25 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Technologie / Distribution de matériel informatique
 - **Site web :** [midipcom.ma](https://midipcom.ma/) ; `pro.midipcom.ma` cité dans la publication
@@ -80,11 +82,12 @@
 
 - **Sources / Éléments de preuve :** publication de forum et image fournie le 8 octobre 2026 ; six fichiers CSV locaux fournis et analysés en lecture seule ; [site officiel de Midipcom](https://midipcom.ma/). Aucun lien vers le forum, extrait de donnée, identifiant, contact, référence financière ni secret n’est publié.
 
+### 02 octobre 2026
 
-### 2 octobre 2026
 #### 🇲🇦 Maroc - Ministère de l’Aménagement du territoire national, de l’Urbanisme, de l’Habitat et de la Politique de la ville
+- **Date de publication initiale :** 2 octobre 2026
 
-- **Date de publication initiale :** 2 octobre 2026 à 15:20 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Gouvernement / Administration / Habitat et urbanisme
 - **Site web associé :** [matnuhpv.gov.ma](https://matnuhpv.gov.ma/) (domaine affiché par l’auteur dans la publication ; lien avec le système concerné non documenté dans les sources publiques)
@@ -117,10 +120,10 @@
 
 - **Sources / Éléments de preuve :** publication de forum et échantillon visible fournis le 8 octobre 2026 ; [décret marocain relatif aux attributions et à l’organisation du ministère](https://bdj.mmsp.gov.ma/Fr/Document/10596-D%C3%A9cret-n-2-23-751-du-7-joumada-II-1445-21-d%C3%A9cemb.aspx?KeyPath=594%2F681%2F697%2F10596). Aucun lien vers le forum ni aucune donnée personnelle n’est publié.
 
-
 #### 🇲🇦 Maroc - Karamtech
+- **Date de publication initiale :** 2 octobre 2026
 
-- **Date de publication initiale :** 2 octobre 2026 à 00:51 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Technologie / Commerce et distribution de matériel informatique et de sécurité
 - **Site web :** [karamtech.ma](https://karamtech.ma/) ; `kmt.codebarre.ma` cité dans la publication
@@ -155,10 +158,10 @@
 
 - **Sources / Éléments de preuve :** publication de forum fournie le 8 octobre 2026 ; cinq CSV locaux fournis et analysés en lecture seule ; [site officiel de Karamtech](https://karamtech.ma/). Aucun secret, mot de passe, jeton, valeur bancaire ou donnée individuelle n’est publié.
 
-
 #### 🇲🇦 Maroc - Ministère de l’Investissement, de la Convergence et de l’Évaluation des politiques publiques (MICEPP)
+- **Date de publication initiale :** 2 octobre 2026
 
-- **Date de publication initiale :** 2 octobre 2026 à 23:55 (horodatage affiché sur le forum ; fuseau non indiqué)
+
 - **Acteur / Groupe :** anisanas2 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Gouvernement / Administration / Investissement et évaluation des politiques publiques
 - **Site web :** [micepp.gov.ma](https://micepp.gov.ma/)
@@ -191,8 +194,9 @@
 
 - **Sources / Éléments de preuve :** publications de forum et Telegram fournies le 9 octobre 2026. Aucun lien de téléchargement, donnée individuelle, identifiant, secret ou archive n’est publié.
 
-
 #### 🇿🇦 Afrique du Sud - Ampath Laboratories [Data Leak]
+- **Date de publication initiale :** 2 octobre 2026
+
 - **Date de publication / notification publique :** 2 octobre 2026
 - **Domaine :** `ampath.co.za`
 - **Acteur / Groupe :** bytetobreach (compte de publication affiché)
@@ -207,26 +211,10 @@
 - **Évaluation des risques :** L'exposition potentielle concerne des données de santé, d'identité, de contact, d'emploi, d'assurance et de paiement. Elle pourrait faciliter l'usurpation, le phishing ciblé, la fraude documentaire, la fraude financière et le ciblage de patients ou d'employés. Aucun dossier individuel n'est reproduit.
 - **Sources / Éléments de preuve :** publication et éléments visuels fournis ; échantillons locaux Ampath analysés en lecture seule. Le compte bytetobreach est conservé comme identifiant de publication ; son identité et son affiliation technique ne sont pas établies.
 
-
-#### 🇪🇬 Égypte - Dar Al-Tib (`daralteb.com`) [Ransomware]
-- **Date de publication initiale :** 4 octobre 2026 ; certaines sources indiquent le 2 octobre 2026
-- **Domaine :** [daralteb.com](https://daralteb.com/)
-- **Acteur / Groupe :** Krybit
-- **Secteur :** Santé / Fertilité et procréation médicalement assistée
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Low
-- **Niveau d'impact :** Level 4 (potentiel)
-- **Description victime :** Dar Al-Tib est un centre médical égyptien spécialisé dans le traitement de l'infertilité, la fécondation in vitro et la procréation médicalement assistée.
-- **Analyse :** `daralteb.com` apparaît dans une revendication associée à Krybit en octobre 2026. Aucun échantillon, volume, communiqué de la victime, preuve de chiffrement ou preuve technique d'exfiltration n'a été identifié. Le site officiel reste accessible, ce qui ne confirme ni n'invalide la revendication.
-- **Évaluation des risques :** Si la publication correspond au corpus présenté, les risques potentiels concernent des données médicales, des dossiers de patients, des informations administratives et la continuité des services. Le périmètre réel de l'exposition n'est pas précisé dans les sources consultées.
-- **Sources / Éléments de preuve :** [site officiel de Dar Al-Tib](https://daralteb.com/) ; [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf) ; [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Les sources secondaires présentent le cas comme une revendication attribuée à la publication.
-
-
-
 #### 🇨🇬 République du Congo - e-Solde (`e-solde.cg`) [Access Sale]
+- **Date de publication initiale :** 2 octobre 2026
 
-- **Date de publication initiale :** 2 octobre 2026 à 12:28 (horodatage affiché ; fuseau non indiqué)
+
 - **Publication antérieure identifiée a posteriori :** 28 juin 2026 à 13:17 par le compte affiché Sensitive2025 (horodatage et fuseau tels qu'affichés)
 - **Acteur / Groupe :** SensitiveDarkForum (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Administration publique / Gestion de la solde
@@ -271,11 +259,12 @@
 - **Recommandations SOC/CTI :** Réinitialiser les accès potentiellement exposés et invalider les sessions ; renouveler les secrets applicatifs et contrôler les hashés de mots de passe ; rechercher les exports massifs et accès administratifs inhabituels ; vérifier les journaux de l'application et de la base ; contrôler les fichiers et documents associés ; auditer les rôles et comptes de validation ; préserver les preuves ; ne pas acheter, tester ou télécharger l'accès revendiqué.
 - **Décision de comptage :** Incident conservé dans le corpus d'octobre et rattaché au suivi d'octobre, car la publication du 2 octobre constitue la première observation AFRINTEL. La publication antérieure du 28 juin est documentée comme une découverte rétrospective du même corpus. L'événement reste compté comme **un seul incident**. Le type principal reste `Access Sale`; l'exposition de données est un effet secondaire observé.
 
+### 03 octobre 2026
 
-### 3 octobre 2026
 #### 🇲🇦 Maroc - NextLevel PC
+- **Date de publication initiale :** 3 octobre 2026
 
-- **Date de publication initiale :** 3 octobre 2026 à 12:00 (heure affichée ; fuseau non indiqué)
+
 - **Publication ultérieure :** 7 octobre 2026 à 01:41, avec annonce de diffusion gratuite de la base complète (heure affichée ; fuseau non indiqué)
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Commerce électronique / Matériel informatique et gaming
@@ -311,44 +300,29 @@
 
 - **Sources / Éléments de preuve :** publication et échantillon visible fournis le 8 octobre 2026. Aucun lien criminel, identifiant, mot de passe haché, clé de session ni donnée individuelle n’est publié.
 
+### 04 octobre 2026
 
-#### 🇪🇹 Éthiopie - Ministère de la Santé (`moh.gov.et`) [Data Leak]
+#### 🇪🇬 Égypte - Dar Al-Tib (`daralteb.com`) [Ransomware]
+- **Date de publication initiale :** 4 octobre 2026
 
-- **Date de publication initiale :** 7 octobre 2026 à 16:51 (horodatage affiché ; fuseau non indiqué)
-- **Acteur / Groupe :** Individual (compte affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Santé publique / Administration gouvernementale
-- **Site web :** [moh.gov.et](https://moh.gov.et/)
-- **Statut :** Claim - Data Sample Published
-- **Type d’incident :** Data Leak
-- **Niveau de confiance :** High
-- **Niveau d’impact :** Level 4
-- **Type de source :** Publication de forum, matériel et échantillon local fournis à AFRINTEL
+- **Domaine :** [daralteb.com](https://daralteb.com/)
+- **Acteur / Groupe :** Krybit
+- **Secteur :** Santé / Fertilité et procréation médicalement assistée
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Low
+- **Niveau d'impact :** Level 4 (potentiel)
+- **Description victime :** Dar Al-Tib est un centre médical égyptien spécialisé dans le traitement de l'infertilité, la fécondation in vitro et la procréation médicalement assistée.
+- **Analyse :** `daralteb.com` apparaît dans une revendication associée à Krybit en octobre 2026. Aucun échantillon, volume, communiqué de la victime, preuve de chiffrement ou preuve technique d'exfiltration n'a été identifié. Le site officiel reste accessible, ce qui ne confirme ni n'invalide la revendication.
+- **Évaluation des risques :** Si la publication correspond au corpus présenté, les risques potentiels concernent des données médicales, des dossiers de patients, des informations administratives et la continuité des services. Le périmètre réel de l'exposition n'est pas précisé dans les sources consultées.
+- **Sources / Éléments de preuve :** [site officiel de Dar Al-Tib](https://daralteb.com/) ; [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf) ; [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Les sources secondaires présentent le cas comme une revendication attribuée à la publication.
 
-- **Description victime :** Le ministère éthiopien de la Santé est l’administration nationale chargée de la politique sanitaire, de la coordination des programmes de santé et de la supervision de structures et de professionnels du secteur en Éthiopie.
+### 05 octobre 2026
 
-- **Analyse :**
-
-  **Observed :** Une publication attribuée au compte **Individual**, datée du **7 octobre 2026 à 16:51** selon l’horodatage visible, présente `moh.gov.et` sous le titre « Master Facilities », avec une revendication de **4 millions d’enregistrements** et **13 Go**, annoncée comme une « PART2 ». Le matériel fourni présente des cartes d’identité numériques éthiopiennes, une carte de résident d’Addis-Abeba et une carte liée au Bureau de santé d’Oromia. Les informations visibles comprennent des catégories d’identité et de santé particulièrement sensibles, notamment photographie, nom complet, date de naissance, nationalité, sexe, numéro d’enregistrement et groupe sanguin. Aucune valeur individuelle n’est reproduite ici.
-
-  L’échantillon local `facility 83463 clean csv.txt` a été examiné intégralement en lecture seule. Il s’agit d’un fichier ASCII de **13 269 octets**, avec **une seule ligne physique** et **1 442 champs séparés par des virgules** ; il ne comporte pas de ligne d’en-tête exploitable. Les marqueurs agrégés comprennent **67 chaînes ressemblant à des adresses email**, **111 valeurs ressemblant à des numéros de téléphone**, **61 UUID**, **77 dates**, **3 URL** et des références à des domaines éthiopiens, dont `orhb.gov.et`. Le contenu comporte aussi des marqueurs relatifs à des établissements, hôpitaux, cliniques et médecins. Ces occurrences ne représentent pas des personnes uniques et ne permettent pas de reconstituer de manière fiable le schéma original.
-
-  Le matériel fourni et le texte local présentent également des structures liées à des comptes utilisateurs, rôles, identités, établissements, professionnels de santé et champs d’authentification. Les valeurs sensibles n’ont été ni testées, ni publiées, ni utilisées pour tenter un accès. Les documents d’identité non masqués fournis sont traités comme éléments de preuve locaux et aucune donnée faciale ou identifiante n’est intégrée au dépôt.
-
-  **Assumption :** La concordance entre le domaine `moh.gov.et`, les références à des structures sanitaires éthiopiennes, les cartes officielles visibles et le schéma de données compatible avec une plateforme sanitaire soutient fortement l’association de l’échantillon avec un environnement du ministère ou d’un organisme de santé lié. Elle ne permet pas d’établir que le système du ministère a été compromis directement, ni que toutes les données proviennent du même environnement.
-
-  **Unknown :** Les revendications de 4 millions d’enregistrements et 13 Go, l’existence et le contenu de la partie 1, l’exhaustivité du corpus, le nombre de personnes uniques, la date d’extraction, le vecteur d’accès, l’authenticité de chaque document, la validité actuelle des identifiants ou secrets, l’impact opérationnel et toute confirmation du ministère ou d’une autorité ne sont pas renseignés dans les sources consultées.
-
-- **Périmètre et limites de l’analyse :** L’échantillon texte local a été analysé dans son intégralité, avec empreinte SHA-256, taille, nombre de lignes, largeur apparente et comptage agrégé de marqueurs. Le matériel fourni a été examiné sans transcription des données personnelles. Le fichier n’est pas un export CSV normalisé : les champs ne peuvent pas être associés de façon fiable à des colonnes et les décomptes de motifs ne constituent pas des décomptes d’individus. Le corpus complet annoncé n’était pas disponible.
-- **Risques :** Usurpation d’identité, fraude documentaire, phishing ciblé, compromission de comptes, atteinte à la confidentialité médicale, ciblage de professionnels de santé et exploitation de données relatives aux établissements sanitaires.
-- **Recommandations SOC / CTI :** Préserver les journaux IAM, API, bases de données, exports et téléchargements ; révoquer les secrets ou sessions potentiellement exposés après validation ; renforcer MFA et contrôle des comptes privilégiés ; vérifier les accès aux systèmes d’identité et de santé ; rechercher les exports massifs et transferts sortants ; protéger les copies d’identité et appliquer les procédures de notification prévues par la réglementation applicable.
-- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documenté dans les sources publiquess.
-- **Sources / Éléments de preuve :** publication du forum et matériel fourni le 30 octobre 2026 ; échantillon local analysé en lecture seule. Aucun identifiant national, nom, adresse email, numéro, photographie ou secret n’est publié dans cette fiche.
-
-
-### 5 octobre 2026
 #### 🇲🇦 Maroc - Tera.ma / Sté Tera.ma SARL
+- **Date de publication initiale :** 5 octobre 2026
 
-- **Date de publication initiale :** 5 octobre 2026 à 19:41 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Technologie / Distribution et vente au détail de matériel informatique
 - **Site web :** [tera.ma](https://www.tera.ma/) (domaine affiché dans la publication ; site marocain de commerce informatique identifié)
@@ -383,10 +357,10 @@
 
 - **Sources / Éléments de preuve :** publication de forum fournie le 8 octobre 2026 ; corpus local Tera.ma fourni et analysé en lecture seule. Les liens de téléchargement criminels ne sont ni suivis ni publiés.
 
-
 #### 🇲🇦 Maroc - Université Cadi Ayyad (UCA)
+- **Date de publication initiale :** 5 octobre 2026
 
-- **Date de publication initiale :** 5 octobre 2026 à 02:25 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Éducation / Enseignement supérieur public
 - **Site web :** [uca.ma](https://www.uca.ma/)
@@ -419,10 +393,10 @@
 
 - **Sources / Éléments de preuve :** publication de forum et échantillon structuré fournis le 8 octobre 2026 ; [site officiel de l’UCA](https://www.uca.ma/). Aucun lien criminel, identifiant national, adresse e-mail, numéro, photo ou autre donnée individuelle n’est publié.
 
-
 #### 🇿🇦 Afrique du Sud - TechExchange (`techexchange.co.za`)
+- **Date de publication initiale :** 5 octobre 2026
 
-- **Date de publication initiale :** 5 octobre 2026 à 15:34 (horodatage affiché ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Sensitive2025 (compte de forum affiché ; identité non établie)
 - **Secteur :** Commerce / E-commerce / Téléphonie mobile
 - **Site web :** [techexchange.co.za](https://techexchange.co.za/)
@@ -441,10 +415,10 @@
 - **Évaluation des risques :** L'exposition potentielle de données de commande, de contact, de livraison et de paiement pourrait faciliter la fraude transactionnelle, les faux remboursements, le phishing ciblé, l'usurpation de clients ou de fournisseurs et l'atteinte à la vie privée.
 - **Sources / Éléments de preuve :** éléments visuels et extrait structurés fournis à AFRINTEL ; publication du forum attribuée au compte Sensitive2025. Les données brutes et liens de téléchargement restent hors du dépôt.
 
-
 #### 🇿🇦 Afrique du Sud - Thrive Online Group (`thriveonlinegroup.com`)
+- **Date de publication initiale :** 5 octobre 2026
 
-- **Date de publication initiale :** 5 octobre 2026 à 19:46 (horodatage affiché ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Sorb (compte de forum affiché ; identité et affiliation non établies)
 - **Secteur :** Technologie / Marketing numérique
 - **Site web associé :** `thriveonlinegroup.com`
@@ -464,8 +438,9 @@
 - **Recommandations SOC/CTI :** Préserver les journaux des applications marketing, CRM, bases de données, comptes de service et intégrations SMS ; rechercher les exports massifs et accès privilégiés inhabituels ; vérifier les prestataires et campagnes associés ; surveiller les domaines, numéros et messages usurpant l'organisation ; ne pas acheter, télécharger ni tester les données proposées.
 - **Sources / Éléments de preuve :** éléments visuels et extraits structurés fournis à AFRINTEL ; publication de forum attribuée au compte Sorb. Aucun identifiant, numéro, adresse électronique ou lien de marché criminel n'est publié.
 
-
 #### 🇿🇦 Afrique du Sud - Lawyers for Human Rights [System Intrusion]
+- **Date de publication initiale :** 5 octobre 2026
+
 - **Date de publication de l'avis de sécurité :** 15 octobre 2026
 - **Domaine officiel :** [lhr.org.za](https://www.lhr.org.za/)
 - **Acteur / Groupe :** Non établi
@@ -482,9 +457,9 @@
 - **Action SOC/CTI :** Préserver et rapprocher les journaux du prestataire, de la base, des comptes d'administration et des passerelles sortantes autour du 5 octobre ; révoquer les accès et secrets partagés avec le tiers ; contrôler les environnements utilisant les mêmes identités ; surveiller les faux échanges juridiques et demandes de documents ; privilégier la validation hors bande avec LHR.
 - **Sources / Éléments de preuve :** [avis officiel de LHR du 15 octobre 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/) ; [index des actualités LHR](https://www.lhr.org.za/lhr-news/). L'étendue exacte du corpus et le nombre de personnes concernées restent en cours d'évaluation.
 
-
 #### 🇪🇬 Égypte - Millensys (`millensys.com`) [Ransomware]
 - **Date de publication initiale :** 5 octobre 2026
+
 - **Domaine :** [millensys.com](https://www.millensys.com/)
 - **Acteur / Groupe :** MedUSlocker
 - **Secteur :** Logiciels de santé / Technologies de l'information
@@ -497,10 +472,11 @@
 - **Évaluation des risques :** Une revendication authentique pourrait concerner des logiciels, des environnements de santé, des données de clients ou des systèmes d'imagerie. Aucun de ces impacts n'est établi.
 - **Sources / Éléments de preuve :** [site officiel de MILLENSYS](https://www.millensys.com/about) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
+### 06 octobre 2026
 
-### 6 octobre 2026
 #### 🇪🇬 Égypte - Beni Suef Technological University [Ransomware]
 - **Date de publication initiale :** 6 octobre 2026
+
 - **Domaine institutionnel associé dans la source :** `bsut.edu.eg`
 - **Site officiel vérifié :** [btu.edu.eg](https://btu.edu.eg/en/home/)
 - **Domaine institutionnel vérifié :** `btu.edu.eg`
@@ -515,9 +491,44 @@
 - **Évaluation des risques :** Les risques potentiels concernent les systèmes administratifs, les comptes étudiants, les plateformes pédagogiques et les données personnelles. Aucun périmètre compromis n'est établi.
 - **Sources / Éléments de preuve :** [site officiel de Beni Suef Technological University](https://btu.edu.eg/en/home/) ; [portail institutionnel égyptien](https://bani-suef-tu.mohesr.gov.eg/) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
+### 07 octobre 2026
 
-### 7 octobre 2026
+#### 🇪🇹 Éthiopie - Ministère de la Santé (`moh.gov.et`) [Data Leak]
+- **Date de publication initiale :** 7 octobre 2026
+
+
+- **Acteur / Groupe :** Individual (compte affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Santé publique / Administration gouvernementale
+- **Site web :** [moh.gov.et](https://moh.gov.et/)
+- **Statut :** Claim - Data Sample Published
+- **Type d’incident :** Data Leak
+- **Niveau de confiance :** High
+- **Niveau d’impact :** Level 4
+- **Type de source :** Publication de forum, matériel et échantillon local fournis à AFRINTEL
+
+- **Description victime :** Le ministère éthiopien de la Santé est l’administration nationale chargée de la politique sanitaire, de la coordination des programmes de santé et de la supervision de structures et de professionnels du secteur en Éthiopie.
+
+- **Analyse :**
+
+  **Observed :** Une publication attribuée au compte **Individual**, datée du **7 octobre 2026 à 16:51** selon l’horodatage visible, présente `moh.gov.et` sous le titre « Master Facilities », avec une revendication de **4 millions d’enregistrements** et **13 Go**, annoncée comme une « PART2 ». Le matériel fourni présente des cartes d’identité numériques éthiopiennes, une carte de résident d’Addis-Abeba et une carte liée au Bureau de santé d’Oromia. Les informations visibles comprennent des catégories d’identité et de santé particulièrement sensibles, notamment photographie, nom complet, date de naissance, nationalité, sexe, numéro d’enregistrement et groupe sanguin. Aucune valeur individuelle n’est reproduite ici.
+
+  L’échantillon local `facility 83463 clean csv.txt` a été examiné intégralement en lecture seule. Il s’agit d’un fichier ASCII de **13 269 octets**, avec **une seule ligne physique** et **1 442 champs séparés par des virgules** ; il ne comporte pas de ligne d’en-tête exploitable. Les marqueurs agrégés comprennent **67 chaînes ressemblant à des adresses email**, **111 valeurs ressemblant à des numéros de téléphone**, **61 UUID**, **77 dates**, **3 URL** et des références à des domaines éthiopiens, dont `orhb.gov.et`. Le contenu comporte aussi des marqueurs relatifs à des établissements, hôpitaux, cliniques et médecins. Ces occurrences ne représentent pas des personnes uniques et ne permettent pas de reconstituer de manière fiable le schéma original.
+
+  Le matériel fourni et le texte local présentent également des structures liées à des comptes utilisateurs, rôles, identités, établissements, professionnels de santé et champs d’authentification. Les valeurs sensibles n’ont été ni testées, ni publiées, ni utilisées pour tenter un accès. Les documents d’identité non masqués fournis sont traités comme éléments de preuve locaux et aucune donnée faciale ou identifiante n’est intégrée au dépôt.
+
+  **Assumption :** La concordance entre le domaine `moh.gov.et`, les références à des structures sanitaires éthiopiennes, les cartes officielles visibles et le schéma de données compatible avec une plateforme sanitaire soutient fortement l’association de l’échantillon avec un environnement du ministère ou d’un organisme de santé lié. Elle ne permet pas d’établir que le système du ministère a été compromis directement, ni que toutes les données proviennent du même environnement.
+
+  **Unknown :** Les revendications de 4 millions d’enregistrements et 13 Go, l’existence et le contenu de la partie 1, l’exhaustivité du corpus, le nombre de personnes uniques, la date d’extraction, le vecteur d’accès, l’authenticité de chaque document, la validité actuelle des identifiants ou secrets, l’impact opérationnel et toute confirmation du ministère ou d’une autorité ne sont pas renseignés dans les sources consultées.
+
+- **Périmètre et limites de l’analyse :** L’échantillon texte local a été analysé dans son intégralité, avec empreinte SHA-256, taille, nombre de lignes, largeur apparente et comptage agrégé de marqueurs. Le matériel fourni a été examiné sans transcription des données personnelles. Le fichier n’est pas un export CSV normalisé : les champs ne peuvent pas être associés de façon fiable à des colonnes et les décomptes de motifs ne constituent pas des décomptes d’individus. Le corpus complet annoncé n’était pas disponible.
+- **Risques :** Usurpation d’identité, fraude documentaire, phishing ciblé, compromission de comptes, atteinte à la confidentialité médicale, ciblage de professionnels de santé et exploitation de données relatives aux établissements sanitaires.
+- **Recommandations SOC / CTI :** Préserver les journaux IAM, API, bases de données, exports et téléchargements ; révoquer les secrets ou sessions potentiellement exposés après validation ; renforcer MFA et contrôle des comptes privilégiés ; vérifier les accès aux systèmes d’identité et de santé ; rechercher les exports massifs et transferts sortants ; protéger les copies d’identité et appliquer les procédures de notification prévues par la réglementation applicable.
+- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documenté dans les sources publiquess.
+- **Sources / Éléments de preuve :** publication du forum et matériel fourni le 30 octobre 2026 ; échantillon local analysé en lecture seule. Aucun identifiant national, nom, adresse email, numéro, photographie ou secret n’est publié dans cette fiche.
+
 #### 🇪🇬 Égypte - SANAtech Global Solutions [Ransomware]
+- **Date de publication initiale :** 7 octobre 2026
+
 - **Date de publication :** 7 octobre 2026
 - **Acteur / Groupe :** UmBra (attribution revendiquée uniquement)
 - **Secteur :** Technologies / Services numériques
@@ -528,10 +539,11 @@
 - **Description victime :** SANAtech Global Solutions est présentée comme une entreprise égyptienne de technologies et de services numériques.
 - **Analyse :** La victime apparaît sur une source associée à UmBra. Aucun échantillon exploitable ni communiqué de la victime n'a été identifié. Intrusion, exfiltration, chiffrement et interruption de service ne sont pas établis.
 
+### 08 octobre 2026
 
-### 8 octobre 2026
 #### 🇪🇬 Égypte - FSE, Cairo University [Ransomware]
 - **Date de publication initiale :** 8 octobre 2026
+
 - **Domaine institutionnel :** [cu.edu.eg](https://cu.edu.eg/)
 - **Acteur / Groupe :** UmBra
 - **Secteur :** Enseignement supérieur / Université
@@ -544,11 +556,12 @@
 - **Évaluation des risques :** Les risques potentiels concernent les plateformes universitaires, les données d'étudiants et les documents administratifs. Ils ne sont pas établis par la publication seule.
 - **Sources / Éléments de preuve :** [site officiel de Cairo University](https://cu.edu.eg/) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
+### 09 octobre 2026
 
-### 9 octobre 2026
 #### 🇲🇦 Maroc - Conseil national de la presse (CNP)
+- **Date de publication initiale :** 9 octobre 2026
 
-- **Date de publication initiale :** 9 octobre 2026 à 03:20 (horodatage affiché ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte de forum affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Institution publique indépendante / Régulation de la presse
 - **Site web :** [cnp.press.ma](https://cnp.press.ma/fr/home-fr/)
@@ -581,10 +594,10 @@
 
 - **Sources / Éléments de preuve :** publication de forum fournie le 9 octobre 2026 ; [missions et attributions du CNP](https://cnp.press.ma/fr/2020/05/06/missions-et-pouvoirs-du-conseil-national-de-la-presse/). Aucun lien de téléchargement, document, donnée individuelle ou contact de l’auteur n’est publié.
 
-
 #### 🇲🇦 Maroc - Ministère des Habous et des Affaires islamiques
+- **Date de publication initiale :** 9 octobre 2026
 
-- **Date de publication initiale :** 9 octobre 2026 à 03:44 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Nameless511 (compte observé sur un forum underground ; identité et affiliation non vérifiées)
 - **Secteur :** Gouvernement / Administration publique / Affaires religieuses
 - **Site web officiel :** [habous.gov.ma](https://www.habous.gov.ma/fr/)
@@ -625,10 +638,11 @@
 
 - **Sources / Éléments de preuve :** publication du forum attribuée à Nameless511 ; captures fournies ; 33 classeurs XLSX et un CSV analysés localement en lecture seule ; [site officiel du Ministère des Habous et des Affaires islamiques](https://www.habous.gov.ma/fr/). Les échantillons contenant des données personnelles restent hors du dépôt public.
 
-
 ### 10 octobre 2026
+
 #### 🇪🇬 Égypte - Helwan University (HITU) [Ransomware]
 - **Date de publication initiale :** 10 octobre 2026
+
 - **Domaine :** [helwan.edu.eg](https://www.helwan.edu.eg/)
 - **Acteur / Groupe :** UmBra
 - **Secteur :** Enseignement supérieur / Université
@@ -641,11 +655,10 @@
 - **Évaluation des risques :** Les risques potentiels concernent les systèmes administratifs, les comptes étudiants, les plateformes d'enseignement et les données personnelles. Aucun système affecté n'est établi.
 - **Sources / Éléments de preuve :** [site officiel de Helwan University](https://www.helwan.edu.eg/) ; publication ransomware extraite du corpus fourni à AFRINTEL.
 
-
 #### 🇲🇦 Maroc - Decathlon Maroc (`decathlon.ma`) [Data Leak]
+- **Date de publication initiale :** 10 octobre 2026
 
-- **Date de publication initiale :** 10 octobre 2026 à 23 h 23 (horodatage affiché sur le forum ; fuseau horaire non précisé)
-- **Date de détection AFRINTEL :** 11 octobre 2026 (date de suivi déjà retenue dans le corpus)
+
 - **Acteur / Groupe :** Nameless511 (pseudonyme de publication sur un forum underground ; identité et affiliation non établies)
 - **Secteur :** Commerce / Distribution d'articles de sport / E-commerce
 - **Site web :** [decathlon.ma](https://www.decathlon.ma/)
@@ -676,10 +689,11 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 
 **Sources / Éléments de preuve :** Captures de la publication du 10 octobre 2026 fournies à AFRINTEL ; `decathlon.csv` et `decathlon_reconstitue.csv` analysés en lecture seule ; [site officiel de Decathlon Maroc](https://www.decathlon.ma/). Aucun nom de client, téléphone, adresse, coordonnée GPS, identifiant de commande individuel ou lien de téléchargement clandestin n'est reproduit dans cette fiche.
 
-
 ### 11 octobre 2026
+
 #### 🇲🇦 Maroc - CNESTEN [Ransomware]
 - **Date de publication initiale :** 11 octobre 2026
+
 - **Domaine institutionnel :** [cnesten.org.ma](https://www.cnesten.org.ma/)
 - **Acteur / Groupe :** Qilin
 - **Secteur :** Recherche nucléaire / Science et technologie
@@ -693,11 +707,12 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Évaluation des risques :** Si l'inventaire correspond à un corpus réellement détenu par CNESTEN, les catégories de dossiers suggèrent des risques pour la recherche scientifique, les projets, les données administratives, les ressources humaines, les fournisseurs et les partenariats. Aucun impact sur une installation nucléaire, la sûreté ou la continuité opérationnelle n'est établi.
 - **Sources / Éléments de preuve :** [CNESTEN](https://www.cnesten.org.ma/storage/2023/06/Brochure-CNESTEN-Eng.pdf) ; publication ransomware extraite du corpus fourni à AFRINTEL ; inventaire local `tree_CNESTEN.txt` récupéré avant indisponibilité du lien. Aucun fichier métier, contenu personnel, secret ou lien criminel n'est publié.
 
-
 ### 12 octobre 2026
-#### 🇲🇦 Maroc - Eurogate Tanger (`eurogate-tanger.com`)
 
-- **Date de publication initiale :** 12 octobre 2026 à 13:55:54 (horodatage affiché ; fuseau non indiqué)
+#### 🇲🇦 Maroc - Eurogate Tanger (`eurogate-tanger.com`)
+- **Date de publication initiale :** 12 octobre 2026
+
+
 - **Date de divulgation observée :** 19 octobre 2026 à 13:27 UTC (premier lot annoncé)
 - **Acteur / Groupe :** N0n (nom affiché par la source ; identité et affiliation attribuée à la publication)
 - **Secteur :** Transport maritime / opérations de terminal conteneurs
@@ -729,9 +744,9 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Évaluation des risques :** L'exposition potentielle de documents opérationnels, de données de navires et conteneurs, de configurations ou notes de version, de scripts et de traces techniques pourrait faciliter l'ingénierie sociale, la fraude documentaire, le ciblage d'employés, la préparation d'une perturbation des opérations portuaires ou l'identification de dépendances applicatives. Le niveau 4 reflète le caractère potentiellement critique de cet environnement ; une perturbation réelle ou un accès aux systèmes de contrôle n'est pas établi.
 - **Sources / Éléments de preuve :** fiche publique observée le 20 octobre 2026 ; archive locale fournie pour analyse ; aucune adresse onion, donnée personnelle brute ou valeur individuelle n'est publiée.
 
-
 #### 🇿🇦 Afrique du Sud - Aeroklas Duys / Duys Engineering Group (`aeroklasduys.co.za`) [Ransomware]
 - **Date de publication initiale :** 12 octobre 2026
+
 - **Domaine :** [aeroklasduys.co.za](https://aeroklasduys.co.za/)
 - **Acteur / Groupe :** Deadlock
 - **Secteur :** Industrie automobile / Ingénierie et fabrication
@@ -744,9 +759,11 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Évaluation des risques :** Les risques potentiels concernent les données industrielles, les opérations de fabrication, les fournisseurs et les systèmes de production. Aucun impact opérationnel n'est établi.
 - **Sources / Éléments de preuve :** [Duys Engineering Group](https://duysgroup.com/) ; [registre fournisseur Aeroklas Duys](https://cloud.procureactiv.co.za/procurement/suppliers/view/aeroklas) ; [DeXpose](https://www.dexpose.io/deadlock-ransomware-strikes-aeroklas-duys-in-south-africa/).
 
-
 ### 14 octobre 2026
+
 #### 🇿🇦 Afrique du Sud - Europ Assistance South Africa / AZOZA [Ransomware]
+- **Date de publication initiale :** 14 octobre 2026
+
 - **Date portée par la publication :** 14 octobre 2026
 - **Domaines :** `azoza.co.za` ; ancien domaine `europassistance.co.za`
 - **Acteur / Groupe :** The Gentlemen
@@ -758,9 +775,11 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Description victime :** AZOZA est associée à l'ancienne activité sud-africaine d'Europ Assistance et intervient dans les services d'assistance et la gestion de prestations.
 - **Analyse :** L'ancienne identité Europ Assistance South Africa est apparue sur un site de fuite associé à The Gentlemen. Aucun échantillon n'a été analysé ; intrusion, exfiltration, chiffrement et impact ne sont pas confirmés.
 
-
 ### 15 octobre 2026
+
 #### 🇪🇬 Égypte - Luxor Company for Drinking Water and Sanitation [Ransomware]
+- **Date de publication initiale :** 15 octobre 2026
+
 - **Date de publication :** 15 octobre 2026
 - **Domaine :** `lcww.com.eg`
 - **Acteur / Groupe :** LockBit 5.0
@@ -772,11 +791,12 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Description victime :** Luxor Company for Drinking Water and Sanitation est une entreprise égyptienne chargée de services d'eau potable et d'assainissement.
 - **Analyse :** La victime a été publiée sur une source attribuée à LockBit 5.0. Aucun échantillon, volume ou communiqué officiel n'a été analysé. Les sources disponibles ne décrivent pas de compromission, d'exfiltration, de chiffrement ou d'atteinte aux services d'eau.
 
-
 ### 18 octobre 2026
-#### 🇷🇼 Rwanda - Ministère de la Santé [Data Leak]
 
-- **Date de publication initiale :** 18 octobre 2026 à 22:07 (horodatage affiché ; fuseau non indiqué)
+#### 🇷🇼 Rwanda - Ministère de la Santé [Data Leak]
+- **Date de publication initiale :** 18 octobre 2026
+
+
 - **Acteur / Groupe :** Lenken (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Santé publique / Administration gouvernementale
 - **Site web associé :** [moh.gov.rw](https://moh.gov.rw/)
@@ -819,8 +839,9 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Décision de comptage :** Incident ajouté au corpus d'octobre et comptabilisé comme **nouvel incident d'octobre**, sous réserve de la clôture mensuelle et de la validation statistique finale.
 - **Manifeste local :** `/tmp/afrintel-evidence/afr-2026-10-rwanda-moh/evidence_manifest.json` ; les données brutes restent hors du dépôt.
 
-
 #### 🇪🇬 Égypte - WE Academy / Telecom Egypt [Data Leak]
+- **Date de publication initiale :** 18 octobre 2026
+
 - **Date de publication :** 18 octobre 2026
 - **Domaine :** `te.eg`
 - **Acteur / Groupe :** N0n
@@ -832,11 +853,12 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Description victime :** WE Academy est une entité de formation associée à Telecom Egypt, opérateur égyptien de télécommunications.
 - **Analyse :** L'acteur revendique des dossiers d'apprenants, supports, projets, examens et une base de formations. Aucun échantillon n'a été analysé. Le lien institutionnel est plausible, mais aucun accès au cœur du réseau télécom ou à la facturation n'est établi.
 
-
 ### 20 octobre 2026
-#### 🇲🇿 Mozambique - Procuradoria-Geral da República (PGR) [Data Leak]
 
-- **Date de publication initiale :** 20 octobre 2026 à 04:29 (horodatage affiché ; fuseau non indiqué)
+#### 🇲🇿 Mozambique - Procuradoria-Geral da República (PGR) [Data Leak]
+- **Date de publication initiale :** 20 octobre 2026
+
+
 - **Acteur / Groupe :** Kazu (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Administration publique / Justice et ministère public
 - **Site web :** [pgr.gov.mz](https://www.pgr.gov.mz/)
@@ -866,10 +888,10 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Recommandations SOC / CTI :** Préserver les journaux des portails, systèmes documentaires, messageries et comptes administratifs ; rechercher les exports massifs et téléchargements anormaux ; contrôler les accès aux dossiers judiciaires ; révoquer les sessions et secrets potentiellement exposés ; vérifier l'intégrité des sauvegardes ; coordonner la réponse avec les autorités mozambicaines compétentes ; ne pas télécharger ni redistribuer de données supplémentaires.
 - **Évaluation AFRINTEL :** Publication observée ; échantillon local fourni et analysé ; attribution à la PGR plausible ; structure documentaire cohérente ; volume global et exhaustivité attribué à la publications ; accès non autorisé et exfiltration non documenté dans les sources publiquess ; confirmation officielle non observée.
 
-
 #### 🇲🇬 Madagascar - `staging.sso.gov.mg` (attribution revendiquée)
+- **Date de publication initiale :** 20 octobre 2026
 
-- **Date de publication initiale :** 20 octobre 2026 à 05:14 (horodatage affiché ; fuseau non indiqué)
+
 - **Date de début des échanges :** lundi 19 octobre 2026, selon la chronologie fournie ; heure non précisée
 - **Acteur / Groupe :** List1 (compte affiché dans la publication ; identité et affiliation non établies)
 - **Secteur :** Gouvernement / Identité numérique et authentification
@@ -890,8 +912,9 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Sources / Éléments de preuve :** publication du forum fournie le 23 octobre 2026 et horodatée au 20 octobre 2026 ; échanges et éléments Keycloak fournis à AFRINTEL. Les coordonnées, identifiants de session, secrets et données personnelles ne sont pas publiés.
 
 #### 🇲🇬 Madagascar - `e-koragna.gov.mg` (attribution revendiquée)
+- **Date de publication initiale :** 20 octobre 2026
 
-- **Date de publication initiale :** 20 octobre 2026 à 05:14 ; offre distincte visible dans l'échange ultérieur à 14:08 (horodatages affichés ; fuseaux non indiqués)
+
 - **Acteur / Groupe :** List1 (compte affiché dans la publication ; identité et affiliation non établies)
 - **Secteur :** Gouvernement / Identité numérique et services publics
 - **Service web revendiqué :** `e-koragna.gov.mg`
@@ -910,10 +933,10 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Décision de comptage :** Fiche comptabilisée comme un incident `Access Sale` distinct couvrant exclusivement `e-koragna.gov.mg`.
 - **Sources / Éléments de preuve :** publication du forum fournie le 23 octobre 2026, échanges associés et éléments Keycloak fournis à AFRINTEL. Les coordonnées, identifiants de session, secrets et données personnelles ne sont pas publiés.
 
-
 #### 🇨🇩 République démocratique du Congo - MINESURSI Teacher Registration Platform [Data Leak]
+- **Date de publication initiale :** 20 octobre 2026
 
-- **Date de publication initiale :** 20 octobre 2026 à 06:27 (horodatage affiché ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Kazu (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Administration publique / Enseignement supérieur / Recherche scientifique
 - **Site web associé :** [minesursi.gouv.cd](https://minesursi.gouv.cd/)
@@ -945,11 +968,12 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Recommandations SOC / CTI :** Préserver les journaux de la plateforme et des comptes d'administration ; rechercher les exports massifs, téléchargements anormaux et accès depuis de nouveaux appareils ; réinitialiser les sessions et secrets potentiellement exposés ; vérifier les contrôles d'accès aux dossiers et pièces justificatives ; rechercher les campagnes de phishing visant les établissements et enseignants ; coordonner la réponse avec l'autorité congolaise compétente ; ne pas télécharger ni redistribuer de données supplémentaires.
 - **Évaluation AFRINTEL :** Publication observée ; archive d'échantillons fournie et analysée ; attribution à MINESURSI plausible ; structure et catégories de documents cohérentes ; volume global et exhaustivité attribué à la publications ; accès non autorisé et exfiltration non documenté dans les sources publiquess ; confirmation officielle non observée.
 
-
 ### 21 octobre 2026
-#### 🇬🇦 Gabon - Gabon Meca (`gabonmeca.com`)
 
+#### 🇬🇦 Gabon - Gabon Meca (`gabonmeca.com`)
 - **Date de publication initiale :** 21 octobre 2026
+
+
 - **Date d'observation AFRINTEL :** 23 octobre 2026
 - **Acteur / Groupe :** HYFLOCK
 - **Secteur :** Commerce et distribution / équipements informatiques et bureautiques
@@ -995,9 +1019,11 @@ resale_status: unknown
 last_checked_at: 2026-10-23
 -->
 
-
 ### 23 octobre 2026
+
 #### 🇿🇦 Afrique du Sud - Rand Mutual Assurance : Workers' Compensation Services
+- **Date de publication initiale :** 23 octobre 2026
+
 - **Date de publication de l'alerte / revendication publique :** 23 octobre 2026
 - **Acteur / Groupe :** Acteur de forum non identifié (attribution revendiquée non précisé dans les sources consultées)
 - **Secteur :** Assurance / Indemnisation des accidents du travail
@@ -1023,8 +1049,9 @@ last_checked_at: 2026-10-23
 - **Action SOC/CTI :** Préserver les journaux IAM, VPN, EDR, bases de données de sinistres, stockage documentaire et passerelles sortantes antérieurs au 23 octobre ; rechercher les consultations ou exportations massives ; révoquer les sessions et secrets suspects ; surveiller les modifications frauduleuses de coordonnées bancaires liées aux indemnisations.
 - **Sources / Éléments de preuve :** [ITWeb](https://www.itweb.co.za/article/rand-mutual-probes-alleged-breach-of-168m-claims/G98YdqLGAgXMX2PD) ; [TechCentral](https://techcentral.co.za/rand-mutual-assurance-data-breach-claim/287621/) ; [centre média RMA](https://www.randmutual.co.za/media). RMA confirme l'alerte et l'investigation, pas la compromission complète.
 
-
 #### 🇪🇹 Éthiopie - Horn of Africa Regional Environment Centre and Network (HoA-REC&N) [Data Leak]
+- **Date de publication initiale :** 23 octobre 2026
+
 - **Date de publication :** 23 octobre 2026
 - **Domaine :** `hoarec.org`
 - **Acteur / Groupe :** N0n
@@ -1036,8 +1063,9 @@ last_checked_at: 2026-10-23
 - **Description victime :** HoA-REC&N est une organisation régionale éthiopienne active dans l'environnement, la recherche et la coopération en Afrique de l'Est.
 - **Analyse :** La publication revendique des données SAP Business One, de comptabilité, de partenaires, d'inventaire et d'approvisionnement. Aucun échantillon n'a été examiné. L'identité de l'organisation est vérifiée, mais l'accès, l'exfiltration et les volumes restent des affirmations de l'acteur.
 
-
 #### 🇹🇳 Tunisie - PROTEX Confection [Data Leak]
+- **Date de publication initiale :** 23 octobre 2026
+
 - **Date de publication :** 23 octobre 2026
 - **Site web associé à la publication :** [protexconfection.com](https://protexconfection.com/)
 - **Acteur / Groupe :** N0n
@@ -1050,9 +1078,11 @@ last_checked_at: 2026-10-23
 - **Analyse :** La publication revendique des données de clients, fournisseurs, articles, inventaire, devis, factures, livraisons et modèles de production. Le domaine `protexconfection.com` est associé à PROTEX Confection dans les sources publiques consultées. L'identité juridique exacte, l'origine des données et les volumes ne sont pas corroborés.
 - **Sources / Éléments de preuve :** publication attribuée à N0n ; [source publique associant PROTEX Confection à protexconfection.com](https://www.dexpose.io/n0n-ransomware-strikes-protex-confection/). Le domaine `sidt.ci` concerne une autre victime, la Société Ivoirienne de Télédiffusion, associée à Qilin.
 
-
 ### 24 octobre 2026
+
 #### 🇪🇬 Égypte - MODON Developments S.A.E [Ransomware]
+- **Date de publication initiale :** 24 octobre 2026
+
 - **Date de publication :** 24 octobre 2026
 - **Domaine :** `modon-egypt.com`
 - **Acteur / Groupe :** KryBit
@@ -1064,9 +1094,9 @@ last_checked_at: 2026-10-23
 - **Description victime :** MODON Developments S.A.E est une entreprise égyptienne du secteur immobilier et du développement de projets.
 - **Analyse :** La victime apparaît sur une source associée à KryBit. Aucune nature de données, aucun volume et aucune preuve publique d'intrusion, d'exfiltration ou de chiffrement n'ont été établis.
 
-
 #### 🇿🇦 Afrique du Sud - Government Communication and Information System (GCIS) [System Intrusion]
-- **Date de notification et de découverte publique :** 30 octobre 2026
+- **Date de publication initiale :** 24 octobre 2026
+
 - **Domaine officiel :** [gcis.gov.za](https://www.gcis.gov.za/)
 - **Système concerné :** [erecruitment.gcis.gov.za](http://erecruitment.gcis.gov.za/), portail de candidature référencé par le GCIS
 - **Acteur / Groupe :** Non identifié
@@ -1083,11 +1113,11 @@ last_checked_at: 2026-10-23
 - **Action SOC/CTI :** Préserver les journaux WAF, serveur web, base de données, IAM et EDR antérieurs au 24 octobre ; identifier les comptes, requêtes et objets consultés ou exportés ; révoquer les sessions et secrets applicatifs concernés ; surveiller les campagnes d'usurpation ciblant les candidats.
 - **Sources / Éléments de preuve :** [GCIS - page officielle des offres d'emploi](https://www.gcis.gov.za/content/about-us/hr/vacancies), qui référence le portail de recrutement ; [ITWeb - GCIS warns of information breach](https://www.itweb.co.za/article/gcis-warns-of-information-breach/wbrpO7g2ea3vDLZn), publié le 30 octobre 2026.
 
-
 ### 25 octobre 2026
+
 #### 🇧🇯 Bénin - YOD Ingénierie (`yodingenierie.com`) [Ransomware]
-- **Date de publication initiale :** 25 octobre 2026 (horodatage affiché ; heure et fuseau non indiqués)
-- **Date de découverte AFRINTEL :** 30 octobre 2026
+- **Date de publication initiale :** 25 octobre 2026
+
 - **Acteur / Groupe :** Panzer (groupe ransomware et d'extorsion de données ; revendication et affiliation non vérifiées)
 - **Échéance affichée :** autour du 15 novembre 2026, sur la base des 12 jours restants indiqués par l'acteur le 3 novembre 2026 ; l'heure exacte n'est pas précisée
 - **État de l'échéance :** En cours au 3 novembre 2026 ; l'acteur affirme que les négociations ont échoué et qu'aucun paiement de rançon n'a été effectué ; divulgation non observée dans les éléments consultés
@@ -1112,9 +1142,11 @@ last_checked_at: 2026-10-23
 - **Évaluation des risques :** Si les données sont authentiques, les risques potentiels comprennent l'usurpation d'identité, la fraude documentaire et financière, le phishing ciblé, l'atteinte à la confidentialité des employés et partenaires, ainsi que l'exposition d'informations contractuelles et opérationnelles.
 - **Sources / Éléments de preuve :** Publication attribuée à Panzer observée le 30 octobre 2026 ; image de la publication et déclaration de l'acteur concernant l'échec des négociations, les 12 jours restants et l'absence alléguée de paiement, fournies pour analyse ; inventaire local `yodingenierie-tree.txt` ; [site officiel de YOD Ingénierie](https://yodingenierie.com/) ; [profil public CTI de Panzer](https://secureresearch.com/threat-actors/panzer.html). Les fichiers potentiellement sensibles restent hors du dépôt.
 
-
 ### 26 octobre 2026
+
 #### 🇿🇦 Afrique du Sud - Lydenburg Toyota [Ransomware]
+- **Date de publication initiale :** 26 octobre 2026
+
 - **Date de publication :** 26 octobre 2026
 - **Domaine :** `lydenburg.toyota.co.za`
 - **Acteur / Groupe :** The Gentlemen
@@ -1126,9 +1158,11 @@ last_checked_at: 2026-10-23
 - **Description victime :** Lydenburg Toyota est une concession automobile sud-africaine proposant des services de vente et d'après-vente.
 - **Analyse :** La publication criminelle et l'identité du concessionnaire sont corroborées. Aucune nature de données ni aucun volume n'ont été établis ; intrusion, exfiltration et chiffrement ne sont pas confirmés par Toyota ou le concessionnaire.
 
-
 ### 28 octobre 2026
+
 #### 🇳🇬 Nigeria - InvestNaija / Chapel Hill Denham [System Intrusion]
+- **Date de publication initiale :** 28 octobre 2026
+
 - **Date de notification publique :** 28 octobre 2026
 - **Domaines officiels :** [investnaija.com](https://investnaija.com/) ; [chapelhilldenham.com](https://chapelhilldenham.com/)
 - **Acteur / Groupe :** Non identifié
@@ -1143,9 +1177,9 @@ last_checked_at: 2026-10-23
 - **Action SOC/CTI :** Préserver les journaux WAF, API, IAM, applications mobiles et canaux web antérieurs au 28 octobre ; identifier la source de l'activité inhabituelle et les comptes ou objets consultés ; révoquer les sessions et jetons concernés ; surveiller le phishing et les demandes financières inhabituelles visant les clients.
 - **Sources / Éléments de preuve :** [The Sun Nigeria](https://thesun.ng/chapel-hill-denham-alerts-customers-to-potential-data-breach-says-investments-safe/) ; [InvestNaija](https://investnaija.com/) ; [Chapel Hill Denham](https://chapelhilldenham.com/).
 
-
 #### 🇸🇱 Sierra Leone - GIO Dental (`giodentalsl.com`) [Ransomware]
 - **Date de publication initiale :** 28 octobre 2026
+
 - **Domaine :** [giodentalsl.com](https://www.giodentalsl.com/)
 - **Acteur / Groupe :** The Gentlemen
 - **Secteur :** Santé / Soins dentaires
@@ -1159,8 +1193,10 @@ last_checked_at: 2026-10-23
 - **Sources / Éléments de preuve :** [CTIWatch](https://ctiwatch.com/victims/gio-dental-924d6f76) ; [liste The Gentlemen](https://ctiwatch.com/threats/thegentlemen/victims) ; [site de GIO Dental](https://www.giodentalsl.com/). Les sources de suivi précisent qu'il s'agit d'une revendication attribuée à la publication.
 
 ### 29 octobre 2026
+
 #### 🇪🇬 Égypte - BlueBus (`bluebus.com.eg`) [Data Leak]
-- **Date de publication initiale :** 29 octobre 2026 à 06:02 (horodatage affiché ; fuseau non indiqué)
+- **Date de publication initiale :** 29 octobre 2026
+
 - **Acteur / Groupe :** Lenken (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Transport / Mobilité / Billetterie
 - **Site web associé :** [bluebus.com.eg](https://bluebus.com.eg/)
@@ -1185,9 +1221,9 @@ last_checked_at: 2026-10-23
 - **Évaluation des risques :** Si l'échantillon est authentique, l'exposition pourrait faciliter le phishing ciblé, la fraude aux billets et aux paiements, l'usurpation de clients ou de chauffeurs, l'exploitation d'identifiants nationaux et la corrélation de données de mobilité. Ces risques sont potentiels et ne constituent pas une confirmation de l'incident.
 - **Sources / Éléments de preuve :** Publication du forum fournie le 30 octobre 2026 ; `sample.csv` et `drivers.txt` locaux examinés en lecture seule. L'archive et les fichiers sources restent hors du dépôt ; aucune donnée personnelle brute n'est reproduite.
 
-
 #### 🇪🇬 Égypte - Organisations, cliniques, pharmacies, hôpitaux et médecins [Data Leak]
-- **Date de publication initiale :** 29 octobre 2026 à 03:53 (horodatage affiché ; fuseau non indiqué)
+- **Date de publication initiale :** 29 octobre 2026
+
 - **Acteur / Groupe :** Marx (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Santé / Répertoire de professionnels et d'organisations
 - **Site web associé :** Non précisé dans la publication
@@ -1210,8 +1246,9 @@ last_checked_at: 2026-10-23
 - **Évaluation des risques :** Si le fichier est authentique, il pourrait faciliter le phishing ciblé, l'usurpation de médecins ou d'organisations, la fraude aux rendez-vous et la cartographie de professionnels de santé. Aucun dossier patient ni donnée clinique n'a été observé dans le fichier analysé.
 - **Sources / Éléments de preuve :** Publication du forum fournie le 30 octobre 2026 et `Doctor.xlsx` local examiné en lecture seule. Le fichier reste hors du dépôt ; aucune donnée personnelle brute n'est publiée.
 
-
 #### 🇪🇬 Égypte - Al Arabia United [System Intrusion]
+- **Date de publication initiale :** 29 octobre 2026
+
 - **Date de publication / confirmation publique :** 29 octobre 2026
 - **Domaine officiel :** [audegypt.com](https://audegypt.com/)
 - **Localisation :** axe du 26-Juillet, gouvernorat de Gizeh
@@ -1229,10 +1266,11 @@ last_checked_at: 2026-10-23
 - **Évaluation des risques :** L'incident montre un risque de détournement de contenu et de propagation coordonnée lorsqu'une plateforme centralisée de gestion d'affichage numérique est reliée à plusieurs pays. Aucun impact sur des données ou sur les systèmes internes d'Al Arabia United n'est établi.
 - **Sources / Éléments de preuve :** [audegypt.com](https://audegypt.com/) ; [ministère égyptien de l'Intérieur](https://www.moi.gov.eg/news/GetDetails?newsId=bbfb00a8-b8e2-4c10-81bd-161ba437d035) ; [Al-Ahram Gate](https://gate.ahram.org.eg/News/5974509.aspx) ; [The Cairo Report](https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack) ; [x.com/IntCyberDigest](https://x.com/IntCyberDigest/status/2116519809445675248).
 
-
 ### 30 octobre 2026
+
 #### 🇨🇮 Côte d'Ivoire - Société Ivoirienne de Télédiffusion [Ransomware]
-- **Date de publication de la revendication / découverte publique :** 30 octobre 2026 ; première indexation observée vers 17:26 UTC
+- **Date de publication initiale :** 30 octobre 2026
+
 - **Domaine :** Non établi
 - **Acteur / Groupe :** Qilin (attribution revendiquée uniquement)
 - **Échéance affichée :** environ 4 novembre 2026 vers 14:00, calculée à partir du compte à rebours de 108 heures et 17 minutes observé le 31 octobre 2026 vers 01:43 ; fuseau horaire non affiché

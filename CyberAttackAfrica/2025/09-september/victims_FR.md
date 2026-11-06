@@ -6,7 +6,7 @@
 
 ## Synthèse mensuelle
 
-**19 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 11, Data Leak 7, DDoS 1.
+**21 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 11, Data Leak 9, DDoS 1.
 
 > Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 
@@ -110,6 +110,19 @@
 - **Description victime:** Institution financière basée à Lagos, spécialisée dans le crédit à la consommation et le financement des PME.
 
 ### 11 Septembre 2025
+#### 🇹🇳 Tunisie - TOPNET
+- **Date de publication initiale :** 11 septembre 2025 à 05:33 (heure affichée sur le forum ; fuseau non précisé)
+- **Acteur / Groupe :** Hider_N3x
+- **Secteur :** Télécommunications / Fournisseur d'accès Internet
+- **Site web :** [topnet.tn](https://www.topnet.tn)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 4
+- **Description victime :** TOPNET est un fournisseur tunisien de services Internet et de télécommunications.
+- **Analyse :** Une publication attribuée à Hider_N3x affirme avoir compromis TOPNET et propose à la vente une base de données, des fichiers du site et plus de 5 000 comptes. Les captures associées présentent des pages de compte TOPNET contenant des informations personnelles, des coordonnées, des adresses et des champs d'authentification. AFRINTEL ne reproduit aucune valeur brute, aucun mot de passe ni aucun identifiant. Les éléments visibles étayent l'existence d'un échantillon sensible présenté comme lié à TOPNET, mais ne permettent pas de confirmer l'exhaustivité du corpus, le nombre réel de comptes concernés, le vecteur d'accès ou une confirmation officielle de la victime.
+
+### 11 Septembre 2025
 #### 🇳🇦 Namibie - Epia Financial Services
 - **Groupe ransomware:** radar
 - **Secteur:** Services financiers
@@ -167,6 +180,19 @@
 - **Statut:** Claim - Unverified
 - **Type d'incident:** Ransomware
 - **Description victime:** Éditeur égyptien de solutions de gestion intégrées (comptabilité, RH, production) utilisé par de nombreuses entreprises au Moyen-Orient et en Afrique.
+
+### 19 Septembre 2025
+#### 🇩🇿 Algérie - Ministère des Finances
+- **Date de publication initiale :** 19 septembre 2025 à 10:29 (heure affichée sur le forum ; fuseau non précisé)
+- **Acteur / Groupe :** sarah8toumi (compte source)
+- **Secteur :** Gouvernement / Finance
+- **Site web :** Non précisé
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 3
+- **Description victime :** Le Ministère algérien des Finances est l'institution gouvernementale chargée de l'administration fiscale et financière nationale.
+- **Analyse :** Une publication de forum datée du 19 septembre 2025 propose à la vente une archive interne attribuée au ministère, décrite comme contenant des documents RH, de nomination et de correspondance interne. La publication affiche un seul lien d'échantillon PDF. Les éléments visibles établissent l'existence d'une offre de vente et d'un échantillon annoncé, mais ne permettent pas de confirmer l'authenticité, l'exhaustivité de l'archive, le vecteur d'accès ou une confirmation officielle de la victime. La relation avec une publication attribuée ultérieurement à `jrintel` en janvier 2026 n'est pas établie.
 
 ### 22 Septembre 2025
 #### 🇲🇦 Maroc - Fractalite (fractalite.com)

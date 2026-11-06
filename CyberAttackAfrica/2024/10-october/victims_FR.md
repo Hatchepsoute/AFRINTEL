@@ -153,6 +153,7 @@
 ### 21 Octobre 2024
 
 #### 🇲🇦 Maroc - Résidences universitaires Al Massira
+- **Date de publication initiale :** 21 octobre 2024 à 17:11 (heure affichée sur le forum ; fuseau non précisé)
 - **Acteur / Groupe:** bxxxx1
 - **Secteur:** Education / University
 - **Site web:** [ruam.ma](https://ruam.ma)

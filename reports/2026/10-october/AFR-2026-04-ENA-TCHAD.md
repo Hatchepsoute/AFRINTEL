@@ -1,4 +1,4 @@
-# CTI Report — AFR-2026-04-ENA-TCHAD
+# CTI Report - AFR-2026-04-ENA-TCHAD
 
 ## Executive summary
 
@@ -13,7 +13,7 @@ The local analysis covered all 1,934 accessible files in the supplied corpus, to
 | Item | Value | Status |
 |---|---|---|
 | Observed incident publication | April 29, 2026, 22:55 | Observed |
-| Message date range | November 21, 2025 — April 25, 2026 | Observed |
+| Message date range | November 21, 2025 - April 25, 2026 | Observed |
 | AFRINTEL discovery and reporting | October 2026, reported October 23, 2026 | Observed |
 | Claimed victim | École nationale d'administration du Tchad (ENA Tchad) | Observed |
 | Country | Chad | Observed |
@@ -92,7 +92,7 @@ Coverage is complete for inventory and hashing of the supplied corpus. Exhaustiv
 
 ## 6. Defensive recommendations
 
-1. Preserve mail, authentication, forwarding and administration logs for November 2025 — April 2026.
+1. Preserve mail, authentication, forwarding and administration logs for November 2025 - April 2026.
 2. Reset potentially exposed secrets after validating scope and enforce MFA on sensitive accounts.
 3. Search for unknown forwarding rules, delegations, sessions and OAuth applications.
 4. Monitor for domain impersonation and contextual phishing campaigns.

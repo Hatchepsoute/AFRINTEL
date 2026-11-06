@@ -9,15 +9,63 @@
 
 ## Septembre 2026
 
-**Statut du suivi mensuel : In Progress / En cours** - corpus de 33 fiches ; des découvertes tardives supplémentaires peuvent encore être intégrées.
+**Statut du suivi mensuel : In Progress / En cours** - corpus de 33 fiches ; des publications supplémentaires peuvent encore être intégrées.
 
 > **Mise à jour de vérification OSINT  -  18 octobre 2026.** Ces 33 fiches constituent un **corpus de suivi intégré en septembre**, et non 41 cyberattaques survenues au cours de septembre. **13 fiches** documentent un incident confirmé ou corroboré chez la victime (dont RelyComply et le ministère namibien de la Défense), **2 fiches** correspondent à une exposition de données indirecte reconnue (Hollard et Guardrisk : intrusion chez la victime directe non démontrée) et **26** restent des revendications ou échantillons non confirmés indépendamment. Les statuts distinguent confirmation d’incident, attribution à un groupe, volume revendiqué, chiffrement et exfiltration. Les absences de confirmation désignent les sources publiques identifiées à la date du contrôle, non une preuve d’absence d’incident.
 
+### 01 septembre 2026
+
+#### 🇪🇬 Égypte - Holding Company for Construction and Development (HCCD)
+- **Date de publication initiale :** 1 septembre 2026
+
+- **Acteur / Groupe :** krybit
+- **Secteur :** Construction
+- **Site web :** [hccd-construction.com](https://hccd-construction.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** La **Holding Company for Construction and Development (HCCD)** est une holding égyptienne active dans la **construction, les travaux publics et l'aménagement immobilier**. Son site indique qu'elle supervise des entreprises intervenant dans les travaux de génie civil, les études techniques, l'habitat et les installations électriques. L'entité relève d'une structure de groupe : une revendication visant son nom ne permet pas de déterminer quelle filiale ou quel système serait concerné ([présentation officielle HCCD](https://hccd-construction.com/About_e.aspx)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Seule une inscription dans le suivi des publications attribuées à Krybit est corroborée ; aucune déclaration officielle de HCCD ou enquête vérifiable confirmant une intrusion dans ses systèmes n’a été identifiée.
+
+
+Krybit a publié une revendication nommant la Holding Company for Construction and Development. La date correspond à l'observation de la fiche ; la compromission, le volume, le chiffrement et l'exfiltration restent inconnus.
+
+#### 🇪🇬 Égypte - Mecca High Feed Factory
+- **Date de publication initiale :** 1 septembre 2026
+
+- **Acteur / Groupe :** krybit
+- **Secteur :** Agriculture / Agroalimentaire
+- **Site web :** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Mecca High Feed Factory** est présentée sur son site historique en arabe comme une activité égyptienne de **fabrication d'aliments pour volailles et bétail**, notamment des formulations végétales. Le blog commercial associe les marques **Mecca** et **High Feed** et publie des informations sur les produits et l'alimentation animale ; cette source autoéditée ne permet pas de vérifier indépendamment la situation juridique ou le périmètre industriel actuel ([blog de l'entreprise](https://meccahighfeed.blogspot.com/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Les agrégateurs OSINT relaient une revendication Krybit, sans preuve indépendante de compromission ni déclaration de Mecca High Feed Factory identifiée. Certaines bases classent différemment le pays : ne pas modifier l’attribution géographique sans vérification.
+
+
+Krybit a publié une revendication visant Mecca High Feed Factory, présentée comme une entreprise égyptienne de fabrication d'aliments pour animaux. Les éléments techniques et l'impact réel ne sont pas établis.
+
+#### 🇪🇬 Égypte - Seashell Hospital
+- **Date de publication initiale :** 1 septembre 2026
+
+- **Acteur / Groupe :** krybit
+- **Secteur :** Santé / Hôpital
+- **Site web :** [seashellhospital.com](https://seashellhospital.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Seashell Hospital** est un établissement de santé privé situé à **New Cairo**, en Égypte. Son site présente une offre de soins hospitaliers, de diagnostic et de traitement, comprenant notamment un service d'urgences fonctionnant en continu. Cette activité implique des processus cliniques et administratifs sensibles ; aucune fuite de dossiers de patients n'est démontrée par la seule fiche de revendication ([site officiel de l'hôpital](https://www.seashellhospital.com/AboutUs/Index)).
+
+- **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant Seashell Hospital figure dans plusieurs index de fuite, mais aucune notification de l’hôpital ni confirmation forensique indépendante n’a été identifiée. Ni une indisponibilité, ni une fuite de patients, ni un chiffrement ne sont établis.
+
+
+Krybit a publié une revendication visant Seashell Hospital, établissement hospitalier privé situé en Égypte. Aucun élément public examiné ne confirme l'accès, le chiffrement ou une exfiltration.
 
 ### 03 septembre 2026
-#### 🇳🇬 Nigéria - Medical and Dental Council of Nigeria (MDCN)
 
-- **Date de publication initiale :** 3 septembre 2026 à 20:19 (heure affichée ; fuseau non indiqué)
+#### 🇳🇬 Nigéria - Medical and Dental Council of Nigeria (MDCN)
+- **Date de publication initiale :** 3 septembre 2026
+
+
 - **Acteur / Groupe :** cattier (compte de forum affiché ; identité non vérifiée)
 - **Secteur :** Santé / Régulation des professions médicales et dentaires
 - **Site web :** [mdcn.gov.ng](https://www.mdcn.gov.ng/)
@@ -47,11 +95,12 @@
 - **Sources / Éléments de preuve :** publication de forum, CSV local fourni à AFRINTEL et [site officiel du MDCN](https://www.mdcn.gov.ng/). Aucun nom, numéro de téléphone, adresse électronique, date de naissance ou identifiant professionnel individuel n'est publié.
 
 ### 04 septembre 2026
+
 #### 🇪🇬 Égypte - Données attribuées à des propriétaires/résidents de Madinaty (source organisationnelle non identifiée)
+- **Date de publication initiale :** 4 septembre 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 4 septembre 2026 à 09:59 (heure affichée, fuseau non indiqué)
-- **Date de détection AFRINTEL :** 13 septembre 2026 (capture communiquée)
 - **Acteur / Groupe :** sainttrojan (compte de forum affiché ; identité et affiliation à un groupe non vérifiées)
 - **Secteur :** Immobilier / Communauté résidentielle / Gestion immobilière
 - **Organisation détentrice des données :** Non identifiée ; la publication les présente comme liées aux propriétaires/résidents de Madinaty
@@ -92,12 +141,13 @@
 
 - **Sources / Éléments de preuve :** publication de forum visible dans une capture fournie le 13 septembre 2026 (date affichée de la publication : 4 septembre 2026 ; URL d'origine non fournie) ; [présentation publique du groupe Talaat Moustafa sur ses projets en Égypte](https://ecommerce.tmg.com.eg/about).
 
-
 ### 06 septembre 2026
+
 #### 🇲🇦 Maroc - Centre Atlantique Formation
+- **Date de publication initiale :** 6 septembre 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 6 septembre 2026
 - **Acteur / Groupe :** xNov
 - **Secteur :** Éducation / Formation professionnelle
 - **Site web :** [atlantique.ma](https://atlantique.ma/)
@@ -144,12 +194,68 @@
 
 - **Sources / Éléments observés :** publication xNov sur un forum underground (6 septembre 2026), relais et capture Telegram fournis (6 septembre 2026), contact direct avec xNov via son canal Telegram concernant le prix demandé, analyse AFRINTEL de l'archive et du corpus local extrait. Les fichiers bruts restent hors dépôt.
 
+### 07 septembre 2026
+
+#### 🇿🇦 Afrique du Sud - VSB Attorneys Inc
+- **Date de publication initiale :** 7 septembre 2026
+
+- **Acteur / Groupe :** lockbit5
+- **Secteur :** Services juridiques
+- **Site web :** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **VSB Attorneys Inc** est un **cabinet d'avocats sud-africain** proposant notamment des prestations en droit immobilier, transfert de propriété (*conveyancing*) et droit commercial. Il intervient auprès de clients particuliers et professionnels dans des opérations juridiques et contractuelles nécessitant des dossiers et justificatifs confidentiels. L'activité du cabinet ne préjuge pas de la nature des documents éventuellement touchés par l'incident revendiqué ([site officiel VSB](https://www.vsbattorneys.co.za/about-vsb-attorneys-law-firm/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** La revendication LockBit5 visant VSB Attorneys est documentée par des index de leak sites, sans réponse publique identifiée du cabinet ni preuve indépendante d’intrusion.
+
+  **Analyse des artefacts locaux :** le répertoire fourni contient un volume RAR5 annoncé comme multipartie de **1 082 440 568 octets**, ainsi qu'un second fichier RAR vide. Le test en lecture seule identifie une archive multipartie incomplète et signale une fin inattendue ainsi qu'une erreur de données sur une entrée PDF. Aucun fichier n'a été extrait ni exécuté ; le contenu, le volume réel, l'authenticité et l'origine des données restent inconnus. La présence de ce fragment ne suffit pas à établir une divulgation réussie.
+
+- **Périmètre de l'analyse :** contrôle de type, de taille et de structure de l'archive ; test d'intégrité sans extraction exploitable. L'analyse ne porte sur aucun document ou donnée personnelle contenu dans l'archive.
+
+- **Éléments observés :** revendication LockBit5 et artefact RAR5 multipartie fourni localement. Le fichier vide et le fragment incomplet ne constituent pas un corpus exploitable.
+
+
+Lockbit5 a publié une revendication visant VSB Attorneys Inc, cabinet d'avocats sud-africain. La compromission et l'étendue des données ne sont pas confirmées.
+
+#### 🇪🇬 Égypte - Nile Projects Trading
+- **Date de publication initiale :** 7 septembre 2026
+
+- **Acteur / Groupe :** TheGentlemen
+- **Secteur :** Immobilier / Gestion immobilière
+- **Site web :** [nileprojects.com](https://nileprojects.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Nile Projects & Trading Company** est un groupe commercial égyptien dont l'histoire officielle remonte à **1972**. Initialement entreprise familiale, il s'est diversifié dans la **distribution de marques internationales, les pneumatiques, la mode haut de gamme et les projets immobiliers commerciaux**. Le champ de ses activités dépasse donc l'immobilier seul, mais la publication ne permet pas de savoir quelle branche serait visée ([présentation officielle Nile Projects](https://nileprojects.com/pages/about-us)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Les résultats publics retrouvés reproduisent la revendication The Gentlemen contre Nile Projects Trading ; aucune reconnaissance officielle, notification réglementaire ou vérification forensique ne permet de qualifier l’attaque de confirmée.
+
+
+TheGentlemen a publié une revendication visant Nile Projects Trading, groupe égyptien actif notamment dans le commerce, l'immobilier et la distribution. Aucun élément ne confirme l'accès ou l'exfiltration.
+
+#### 🇿🇦 Afrique du Sud - Hollard Insurance Group
+- **Date de publication initiale :** 7 septembre 2026
+
+- **Acteur / Groupe :** TheGentlemen
+- **Secteur :** Assurance
+- **Site web :** [hollard.co.za](https://www.hollard.co.za/)
+- **Statut :** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Type d'incident :** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description :** **Hollard Insurance Group** est un groupe d'**assurance sud-africain privé** proposant des solutions d'assurance vie, non-vie, de couverture des particuliers et des entreprises, ainsi que des produits liés à l'investissement. Le groupe est présent dans plusieurs marchés africains, directement ou au travers de partenariats. La revendication associée à son nom n'établit pas quelles entités juridiques ou filiales seraient concernées ([présentation officielle Hollard](https://www.hollard.co.za/our-world)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Exposition via un tiers reconnue, intrusion chez Hollard contestée :** dans ses communiqués des 15 et 18 septembre 2026, Hollard reconnaît que des informations concernant certains assurés « funeral policies » ont été publiées à la suite de l’incident de **juin 2026 chez MIP Holdings**. Hollard a notifié des clients et saisi les autorités compétentes ; ses investigations n’ont trouvé **aucune compromission de son environnement**. La liste The Gentlemen ne doit donc pas être requalifiée en intrusion confirmée chez Hollard.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
+
+TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corpus source décrit l'assureur et ses activités, mais ne fournit pas de preuve indépendante de compromission.
 
 ### 09 septembre 2026
+
 #### 🇪🇬 Égypte - Badr University in Cairo (BUC)
+- **Date de publication initiale :** 9 septembre 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 9 septembre 2026 à 16:50 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** Unknown
 - **Compte auteur affiché :** elmo7areb (identité et rôle non vérifiés)
 - **Secteur :** Éducation / Enseignement supérieur
@@ -192,11 +298,30 @@
 
 - **Sources / Éléments de preuve :** publication de forum visible dans une capture fournie le 12 septembre 2026 (URL d'origine non fournie) ; [site officiel de BUC](https://buc.edu.eg/) ; [page officielle d'admission de BUC](https://buc.edu.eg/buc-admission-application-form/).
 
+#### 🇿🇦 Afrique du Sud - RelyComply AML Platform
+- **Date de publication initiale :** 9 septembre 2026
+
+- **Acteur / Groupe :** Direwolf (revendication ; attribution technique non confirmée)
+- **Secteur :** Fintech / Lutte contre le blanchiment
+- **Statut :** Victim Confirmed - Unauthorized Access
+- **Type d'incident :** System Intrusion (revendication ransomware non confirmée)
+- **Sous-type :** Accès non autorisé confirmé ; lien Direwolf/chiffrement non démontré
+- **Description :** **RelyComply** est un éditeur de technologie réglementaire (**RegTech**) proposant une plateforme de conformité **AML/KYC** destinée aux institutions soumises aux obligations de lutte contre le blanchiment. Sa solution vise à centraliser les contrôles d'identité et de connaissance client, la surveillance et les processus de conformité. Le profil public de l'entreprise ne confirme pas à lui seul le périmètre d'une éventuelle intrusion ([plateforme officielle RelyComply](https://relycomply.com/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Accès non autorisé confirmé par l’entreprise :** dans sa notification du 16 septembre, RelyComply indique avoir détecté le 8 septembre 2026 un accès à certains de ses systèmes via une vulnérabilité zero-day d’une application tierce. Systèmes concernés reconstruits, identifiants et jetons révoqués/renouvelés, faille corrigée et déclaration au régulateur sud-africain (**référence SC20263150**). Virgin Active et HuntEx documentent l’exposition potentielle de données transactionnelles via Peach Payments. **La responsabilité de Direwolf, le chiffrement et le volume revendiqué ne sont pas confirmés.**
+
+- **Sources de vérification complémentaires :** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
+
+
+**Contexte initial de la revendication :** Direwolf avait inscrit RelyComply sur son site de fuite. La notification de l'entreprise confirme ensuite un accès non autorisé à certains systèmes et documente un vecteur apparent (zero-day d'une application tierce). Le lien opérationnel avec Direwolf, le chiffrement et le volume de données éventuellement extraites restent non démontrés.
+
 ### 12 septembre 2026
+
 #### 🇦🇴 Angola - SEPE: Angola's E-Government Platform
+- **Date de publication initiale :** 12 septembre 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 12 septembre 2026 à 18:23 (heure affichée ; fuseau non indiqué)
 - **Acteur / Groupe :** Kazu (compte affiché ; identité et affiliation non vérifiées)
 - **Secteur :** Gouvernement / Services publics numériques
 - **Site web :** [sepe.gov.ao](https://www.sepe.gov.ao/)
@@ -235,12 +360,110 @@
 
 - **Sources / Éléments de preuve :** capture de la publication Kazu fournie le 22 septembre 2026 ; échantillon local fourni et analysé en lecture seule ; [portail SEPE](https://www.sepe.gov.ao/).
 
+#### 🇲🇦 Maroc - La Sultana Hotel Group
+- **Date de publication initiale :** 12 septembre 2026
 
+- **Acteur / Groupe :** krybit
+- **Secteur :** Hôtellerie
+- **Site web :** [lasultanahotels.com](https://lasultanahotels.com/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Medium (publication affichée comme publiée et corpus local d'images associé ; provenance technique et exhaustivité non établies)
+- **Niveau d'impact :** Level 3
+- **Description :** **La Sultana Hotels** est une enseigne marocaine d'**hôtellerie de luxe** regroupant notamment deux établissements : **La Sultana Marrakech**, au cœur de la médina, et **La Sultana Oualidia**, sur la lagune atlantique. Le groupe met en avant une offre d'hébergement, de gastronomie et d'expériences touristiques haut de gamme. La revendication ne permet pas de déterminer quel établissement ou outil de réservation aurait été concerné ([site officiel La Sultana](https://www.lasultanahotels.com/?lang=fr)).
+
+- **Observation de la publication :** Une capture datée du 14 septembre 2026 montre une fiche `lasultanahotels.com` marquée `PUBLISHED`, avec 3 914 vues, 0 image affichée et une taille de données revendiquée de 41 GB. Un compte à rebours affichait une échéance au 15 septembre 2026 à 12:57:51. Ces éléments décrivent l'état visible de la publication et non le résultat d'une négociation ou d'un paiement.
+
+- **Analyse du corpus local associé :** Le répertoire de collecte contient 138 fichiers JPEG de scan, pour environ 54 Mo. L'examen visuel du sous-ensemble disponible montre des images de passeports internationaux et de pages d'identité. Cinq paires de fichiers sont des doublons exacts selon SHA-256, soit 135 empreintes distinctes sur 140 fichiers incluant les deux captures de publication. Le nombre de personnes, la source d'acquisition, le lien technique avec La Sultana, la couverture du corpus et l'exhaustivité restent inconnus.
+
+- **Vérification indépendante au 18 octobre 2026 :** Aucune déclaration du groupe hôtelier ni confirmation publique indépendante de l'intrusion n'a été identifiée. Le corpus d'images renforce l'observation d'une mise à disposition de données associée à la publication, mais ne confirme pas que les passeports proviennent des systèmes de La Sultana ni qu'ils concernent ses clients, employés ou partenaires.
+
+- **Sources / Éléments observés :** publication Krybit capturée le 14 septembre 2026 ; corpus local de 138 scans JPEG associé à la collecte. Les artefacts bruts restent hors dépôt.
+
+Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. La fiche affichée comme publiée et le corpus local de scans indiquent une mise à disposition de données associée à la publication. Ils ne permettent pas d'établir l'accès initial, la provenance depuis les systèmes de La Sultana, le chiffrement, l'exhaustivité ou le nombre de personnes concernées.
+
+#### 🇪🇬 Égypte - Egyptian Airports Company (EAC)
+- **Date de publication initiale :** 12 septembre 2026
+
+- **Acteur / Groupe :** krybit
+- **Secteur :** Transport aérien
+- **Site web :** [eac-airports.com](https://www.eac-airports.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** L'**Egyptian Airports Company (EAC)** est un opérateur égyptien du secteur **aéroportuaire**, rattaché à l'écosystème public de l'**Egyptian Holding Company for Airports and Air Navigation**. Sa mission porte sur la gestion, l'exploitation, la maintenance et le développement d'aéroports civils. Son rôle est différent de celui d'une compagnie aérienne ou de l'autorité de navigation aérienne ; aucun aéroport précis n'est établi comme compromis par la seule revendication ([ministère égyptien de l'Aviation civile](https://web.civilaviation.gov.eg/Companies/AirportCompany)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Plusieurs outils CTI recensent la déclaration Krybit visant le domaine d’Egyptian Airports Company. Aucune reconnaissance par EAC ou autorité égyptienne, ni preuve d’impact sur des systèmes d’exploitation aéroportuaire, n’a été identifiée.
+
+
+Krybit a publié une revendication visant l'Egyptian Airports Company. La publication identifie l'organisation et son secteur ; le résultat technique et l'étendue d'une éventuelle exposition restent inconnus.
+
+### 13 septembre 2026
+
+#### 🇰🇪 Kenya - `subscribers.co.ke` [Data Leak]
+- **Date de publication initiale :** 13 septembre 2026
+
+- **Acteur / Groupe :** Sensitive2025 (compte affiché dans la publication ; identité et affiliation attribuée à la publication)
+- **Secteur :** Services numériques / Gestion d'abonnés et de listes e-mail
+- **Site web associé :** [subscribers.co.ke](https://subscribers.co.ke/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium pour l'attribution de l'échantillon au domaine ; High pour le lien géographique avec le Kenya
+- **Niveau d'impact :** Level 3
+- **Description victime :** `subscribers.co.ke` est un domaine kényan associé à un service de gestion d'abonnés ou de listes e-mail. L'identité juridique de l'organisation exploitant le service n'est pas établie par les éléments visibles ; la publication attribuée à Sensitive2025 associe ce domaine à une liste CSV.
+- **Analyse :** AFRINTEL a examiné en lecture seule l'intégralité des cinq contenus CSV d'abonnés distincts fournis localement ; les cinq fichiers sont présents en deux copies physiques, soit **10 fichiers CSV inventoriés**, dont **5 doublons de copie**. Les fichiers d'exemple de bibliothèques intégrés à l'application ont été exclus du corpus d'abonnés. Les cinq exports utilisent le même schéma de **8 colonnes** (`id`, `first_name`, `last_name`, `email`, `timezone`, `balance`, `status`, `created`), sont lisibles avec un BOM UTF-8, présentent **0 ligne malformée** et **0 doublon interne** par fichier.
+
+  Le corpus représente **2 154 lignes** au total. Les chevauchements entre les cinq extractions sont importants : **1 133 signatures de lignes distinctes** et **1 021 répétitions inter-fichiers** ont été observées. Les exports contiennent **1 072 identifiants distincts** et **1 057 adresses e-mail distinctes** ; ces valeurs ne doivent pas être additionnées comme des personnes uniques sans déduplication et validation supplémentaires.
+
+  Toutes les lignes ont un champ `status` égal à `1` et un solde renseigné. Les soldes agrégés des extractions, qui ne représentent pas un total financier unique en raison des répétitions, vont de **-300,0749** à **42,6123**, avec **1 638 valeurs nulles**, **514 positives** et **2 négatives** ; la somme brute des snapshots est **270,668**, sans devise ni sémantique établies. Les dates `created` couvrent le **1 septembre 2021 au 13 septembre 2023**, sans date invalide dans les cinq fichiers.
+
+  Les fuseaux `Africa/*` représentent **1 779 lignes (82,6 %)**, dont `Africa/Nairobi` **1 631 lignes (75,7 % du corpus)**. Les autres lignes utilisent des fuseaux d'Asie, d'Europe, des Amériques, de l'océan Indien et du Pacifique. Un fuseau horaire est un marqueur de profil ou de configuration et ne documente pas la résidence ou la nationalité d'une personne. La forte concentration sur Nairobi, le domaine `.co.ke` et le titre de la publication soutiennent le lien avec le Kenya, sans établir à eux seuls l'identité juridique de l'opérateur ni l'origine complète des données.
+
+  L'examen du contenu confirme une liste de comptes ou d'abonnés contenant des identifiants, des noms, des adresses e-mail, des paramètres de fuseau, des états de compte, des soldes applicatifs et des dates de création. Aucun nom, e-mail, solde ou autre valeur individuelle n'est reproduit dans le dépôt. Les APK, scripts PHP et autres fichiers actifs présents dans le répertoire ont été exclus de l'exécution et ne sont pas utilisés pour extrapoler l'analyse CSV.
+- **Limites de preuve :** L'analyse couvre intégralement les cinq contenus CSV d'abonnés disponibles et documente les copies, le schéma, l'encodage, les volumes, les chevauchements, les dates, les fuseaux et les soldes. Les sources consultées ne précisent pas l'exhaustivité de la base originale, la date d'extraction, le vecteur d'accès, l'authenticité de la publication, l'identité de l'opérateur, la devise des soldes ni le statut de l'incident. Les identifiants, e-mails et soldes répétés entre snapshots ne peuvent pas être interprétés comme des personnes, comptes ou montants uniques sans déduplication métier.
+
+### 16 septembre 2026
+
+#### 🇳🇦 Namibie - Namibian Defence Force
+- **Date de publication initiale :** 16 septembre 2026
+
+- **Acteur / Groupe :** RansomHouse (association déclarée par NAM-CSIRT)
+- **Secteur :** Défense / Forces armées
+- **Statut :** Government Confirmed - Unauthorized Access
+- **Type d'incident :** System Intrusion (revendication ransomware ; chiffrement non confirmé)
+- **Sous-type :** Intrusion ministérielle confirmée ; chiffrement/exfiltration non démontrés
+- **Description :** La **Namibian Defence Force (NDF)** constitue les **forces armées nationales de la Namibie**. Sa mission constitutionnelle centrale consiste à défendre l'intégrité territoriale et les intérêts nationaux du pays, sous l'autorité des institutions de défense namibiennes. Une revendication faisant référence à la NDF ne démontre pas à elle seule une compromission de réseaux militaires opérationnels ([ministère namibien de la Défense](https://mod.gov.na/about-ndf)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Compromission confirmée par l’autorité cyber nationale :** selon la déclaration NAM-CSIRT relayée le 21 septembre 2026, des activités non autorisées ont été détectées dans le réseau du **Ministry of Defence and Veterans Affairs (MODVA)**, et l’enquête a associé l’incident à **RansomHouse**. La revendication nomme « Namibian Defence Force », mais le périmètre officiellement confirmé est le réseau ministériel. **Aucune preuve publiée ne confirme le chiffrement, l’exfiltration, une fuite de secrets militaires ou un paiement.**
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
+
+
+**Contexte initial de la revendication :** RansomHouse a désigné la Namibian Defence Force dans sa publication. Les investigations publiées par NAM-CSIRT confirment ultérieurement une activité non autorisée dans le réseau du ministère de la Défense et une association avec RansomHouse, sans démontrer le chiffrement ni une exfiltration.
+
+### 18 septembre 2026
+
+#### 🇹🇳 Tunisie - Opérations de support PayPal (Transcom WorldWide)
+- **Date de publication initiale :** 18 septembre 2026
+
+- **Acteur / Groupe :** N0n
+- **Secteur :** Services aux entreprises / Support client
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Transcom WorldWide** est un groupe de **sous-traitance de la relation client (BPO/CX)** fournissant des services de centres de contact, d'assistance clientèle et de gestion de processus pour des marques internationales, notamment depuis des sites en Tunisie. **PayPal** est une entreprise distincte de services de paiement. La publication les associe à des opérations de support, mais **l'existence et le périmètre d'un contrat PayPal-Transcom concerné ne sont pas corroborés** par ces informations générales ([services officiels Transcom](https://transcom.com/services/customer-experience)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Aucune confirmation indépendante de l’intrusion ni de l’association opérationnelle exacte entre Transcom, PayPal et les sites tunisiens n’a été identifiée. Les cartographies Citrix/AD et 86,7 millions de connexions proviennent uniquement de la revendication N0n.
+
+- **Sources de vérification complémentaires :** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
+
+
+N0n a publié une revendication visant des opérations de support externalisées liées à PayPal et Transcom WorldWide en Tunisie. La publication mentionne des systèmes internes et un délai de règlement, mais ne confirme pas l'accès, l'exactitude des volumes ou l'impact opérationnel.
 
 ### 19 septembre 2026
-#### 🇿🇦 Afrique du Sud - Apollo 21
 
-- **Date de publication initiale :** 19 septembre 2026 (date affichée dans la liste BLACKLOCKS ; heure et fuseau non indiqués)
+#### 🇿🇦 Afrique du Sud - Apollo 21
+- **Date de publication initiale :** 19 septembre 2026
+
+
 - **Acteur / Groupe :** BLACKLOCKS
 - **Secteur :** Distribution de pièces détachées / Transport routier
 - **Site web :** [apollo21.co.za](https://apollo21.co.za/)
@@ -270,12 +493,12 @@
 
 - **Sources / Éléments de preuve :** liste et fiche BLACKLOCKS fournies en capture ; douze images d'échantillon fournies localement ; [site officiel d'Apollo 21](https://apollo21.co.za/). Aucun document individuel, identifiant personnel ou lien vers le site criminel n'est publié.
 
-
-
 ### 21 septembre 2026
-#### 🇳🇬 Nigéria - Federal Capital Territory Internal Revenue Service (FCT-IRS)
 
-- **Date de publication initiale :** 21 septembre 2026 à 13:03 (heure affichée ; fuseau non indiqué)
+#### 🇳🇬 Nigéria - Federal Capital Territory Internal Revenue Service (FCT-IRS)
+- **Date de publication initiale :** 21 septembre 2026
+
+
 - **Acteur / Groupe :** individual (compte affiché ; identité non vérifiée)
 - **Secteur :** Gouvernement / Administration fiscale
 - **Site web :** [fctirs.gov.ng](https://fctirs.gov.ng/)
@@ -304,10 +527,44 @@
 
 - **Sources / Éléments de preuve :** capture de la publication du forum fournie le 28 septembre 2026 ; PDF JustPaste.it local analysé en lecture seule ; [site officiel du FCT-IRS](https://fctirs.gov.ng/). Aucune donnée personnelle individuelle ni lien vers le site criminel n'est publiée.
 
-### 22 septembre 2026
-#### 🇿🇦 Afrique du Sud - ARCA Unlimited Architects
+#### 🇪🇹 Éthiopie - Siinqee Bank
+- **Date de publication initiale :** 21 septembre 2026
 
-- **Date de publication initiale :** 22 septembre 2026 (date affichée dans la liste BLACKLOCKS ; heure et fuseau non indiqués)
+- **Acteur / Groupe :** lockbit5
+- **Secteur :** Banque
+- **Site web :** [siinqeebank.com](https://siinqeebank.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Siinqee Bank** est une institution bancaire éthiopienne proposant des **services de banque de détail, de financement et d'inclusion financière**, notamment à destination de communautés et d'entrepreneurs. L'établissement présente une offre associant services bancaires traditionnels, microfinance et canaux numériques. Son nom s'inspire d'un symbole culturel oromo lié à la protection et à la reconnaissance des femmes ([présentation officielle Siinqee Bank](https://siinqeebank.com/about-us/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** La page de prévention contre la fraude publiée par Siinqee Bank le 8 octobre 2026 ne constitue **pas** une confirmation de l’attaque revendiquée par LockBit le 21 septembre. Aucune notification spécifique de cette intrusion ni de fuite n’a été trouvée.
+
+- **Sources de vérification complémentaires :** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
+
+
+Lockbit5 a publié une revendication visant Siinqee Bank, institution financière éthiopienne. Aucun élément indépendant ne confirme l'intrusion ou l'exposition de données.
+
+#### 🇦🇴 Angola - Grupolider
+- **Date de publication initiale :** 21 septembre 2026
+
+- **Acteur / Groupe :** TheGentlemen
+- **Secteur :** Distribution / Agriculture / Logistique
+- **Site web :** [grupolider-ao.com](https://grupolider-ao.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Grupolider** est un nom associé à des **activités commerciales en Angola**. Des sources publiques relient le domaine `grupolider-ao.com` à des entreprises de distribution/importation et à **Novagrolider**, active dans l'agriculture et l'agro-industrie. Le site du domaine apparaît suspendu lors de cette recherche ; l'appartenance juridique des différentes entités au groupe et l'identité précise de l'entreprise visée **restent à confirmer** ([annuaire commercial argentin](https://exportaciones.cancilleria.gob.ar/sitios/ficha_directorio/89314) ; [fiche Novagrolider](https://icrisco.com/profile.php?id=novagrolider-5238)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Le référencement de Grupolider par The Gentlemen demeure une revendication de leak site ; aucune confirmation officielle ni lien technique certain entre le domaine revendiqué et les entités du groupe n’a été identifié.
+
+
+TheGentlemen a publié une revendication visant Grupolider, groupe angolais actif dans l'agriculture, la logistique, la construction et la distribution. La compromission et le volume annoncé restent inconnus.
+
+### 22 septembre 2026
+
+#### 🇿🇦 Afrique du Sud - ARCA Unlimited Architects
+- **Date de publication initiale :** 22 septembre 2026
+
+
 - **Acteur / Groupe :** BLACKLOCKS
 - **Secteur :** Architecture / Conception et gestion de projets
 - **Site web :** [arcaunlimited.com](https://arcaunlimited.com/)
@@ -337,10 +594,10 @@
 
 - **Sources / Éléments de preuve :** liste BLACKLOCKS et fiche ARCA fournies en captures ; 17 images d'échantillon locales ; [site officiel d'ARCA Unlimited](https://arcaunlimited.com/). Aucun plan, détail de site, identifiant personnel ou lien vers le site criminel n'est publié.
 
-
 #### 🇲🇱 Mali - AFRICA-TECH
+- **Date de publication initiale :** 22 septembre 2026
 
-- **Date de publication initiale :** 22 septembre 2026 (date communiquée ; heure non précisée)
+
 - **Date de divulgation des données :** 25 septembre 2026 à 16:00 GMT (UTC), selon les informations de collecte communiquées
 - **Acteur / Groupe :** N0n
 - **Secteur :** Technologies / Services IT / Traitement documentaire
@@ -374,12 +631,48 @@
 
 - **Sources / Éléments de preuve :** fiche victime N0n et échéance communiquées pour le 22 septembre 2026 ; dossier local fourni comme l'ensemble des fichiers divulgués par N0n le 25 septembre 2026 à 16:00 GMT ; analyse locale du 26 septembre 2026 et manifeste SHA-256 conservé hors dépôt. La provenance et l'heure de divulgation sont documentées par les informations de collecte communiquées ; aucune consultation indépendante du site du groupe n'a été effectuée pour cette mise à jour.
 
+### 24 septembre 2026
 
+#### 🇹🇿 Tanzanie - Air Tanzania Company Limited (ATCL)
+- **Date de publication initiale :** 24 septembre 2026
+
+- **Acteur / Groupe :** krybit
+- **Secteur :** Transport aérien
+- **Site web :** [airtanzania.co.tz](https://airtanzania.co.tz/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Medium
+- **Description :** **Air Tanzania Company Limited (ATCL)** est la **compagnie aérienne nationale de Tanzanie**, détenue par l'État. Elle assure des services de transport de passagers et de fret et exploite des liaisons nationales et internationales. Son activité repose sur des systèmes de réservation, d'exploitation aérienne et de relation client ; la présence d'images dans un échantillon ne permet pas d'en déduire leur origine dans ces systèmes ([présentation officielle Air Tanzania](https://airtanzania.co.tz/index.php/about-us)).
+
+- **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant les domaines d’Air Tanzania figure dans les flux OSINT ; les sources consultées précisent qu’Air Tanzania n’avait pas confirmé l’incident. La présence d’un échantillon revendiqué n’établit pas l’exfiltration depuis les systèmes de réservation ni le chiffrement.
+
+- **Sources de vérification complémentaires :** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
+
+
+Krybit a publié une revendication visant Air Tanzania Company Limited, compagnie aérienne nationale tanzanienne. Un échantillon local associé à cette publication a été examiné en lecture seule : **114 fichiers** pour **676 972 266 octets**, dont **112 images valides** et **2 fichiers non image malgré l'extension `.jpg`**. Les images valides comprennent **101 fichiers MPO à trois vues** et **11 JPEG simples**, soit **314 vues incorporées** au total. Aucun doublon SHA-256 n'a été détecté.
+
+Cette cohérence structurelle confirme la présence d'un corpus d'images associé à la publication, mais ne confirme pas que les fichiers proviennent de l'infrastructure d'Air Tanzania, ni l'accès initial, l'exfiltration, le chiffrement, le nombre de personnes représentées ou l'exhaustivité de la revendication. Aucun OCR, traitement facial, nom de fichier individuel ou contenu personnel n'a été reproduit. Le manifeste minimisé est conservé hors dépôt sous `/tmp/afrintel-evidence/afr-2026-09-airtanzania/evidence_manifest.json`.
+
+#### 🇺🇬 Ouganda - Armada Credit Bureau
+- **Date de publication initiale :** 24 septembre 2026
+
+- **Acteur / Groupe :** Spirals
+- **Secteur :** Services financiers / Bureau de crédit
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Armada Credit Bureau Limited** se présente comme un **bureau ougandais de renseignements sur le crédit et d'analyse financière**, opérant dans le cadre réglementaire de la **Bank of Uganda**. Son activité porte sur les informations de solvabilité et les services d'évaluation du risque de crédit aux organismes habilités. Cette description provient de son site public et ne constitue pas une vérification indépendante de l'agrément ni d'un incident ([site Armada Credit Bureau](https://www.armadacrb.com/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** Seule la présence d’Armada Credit Bureau dans les listings du groupe Spirals est corroborée. Aucune déclaration de la société ou notification officielle ougandaise démontrant une intrusion n’a été identifiée.
+
+
+Spirals a publié une revendication visant Armada Credit Bureau Limited, société ougandaise de reporting et d'analyse du crédit. Aucun élément indépendant ne confirme la compromission.
 
 ### 25 septembre 2026
-#### 🇲🇦 Maroc - Pharma 5
 
-- **Date de publication initiale :** 25 septembre 2026 à 08:27 (heure affichée ; fuseau non indiqué)
+#### 🇲🇦 Maroc - Pharma 5
+- **Date de publication initiale :** 25 septembre 2026
+
+
 - **Acteur / Groupe :** INC Ransom
 - **Secteur :** Santé / Industrie pharmaceutique
 - **Site web :** [pharma5.ma](https://www.pharma5.ma/)
@@ -418,10 +711,10 @@
 
 - **Traçabilité des fichiers Pharma 5 (SHA-256) :** `12.jpg` = `2edf0dbea43828b081c3df664d40bc598d6bcf283e170145097c92abf52340a7` ; `13.jpg` = `3d531eada1c3a5de9c618cf91edd4c3bf383a306d4758f012d681f1fe3fa8e13` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. Le fichier `1.png` a été exclu et n'est pas utilisé comme élément observé pour Pharma 5. Empreintes des copies transmises, non des fichiers éventuellement détenus par l'acteur.
 
-
 #### 🇿🇦 Afrique du Sud - Corpus non identifié de documents d'identité et de dossiers personnels
+- **Date de publication initiale :** 25 septembre 2026
 
-- **Date de publication initiale :** 25 septembre 2026 à 22:53 (heure affichée ; fuseau non indiqué)
+
 - **Acteur / Groupe :** Individual (compte affiché ; identité non vérifiée)
 - **Secteur :** Administration publique / Services sociaux / Éducation
 - **Site web :** Non précisé
@@ -442,12 +735,63 @@
 
 - **Sources / éléments de preuve :** capture de la publication fournie à AFRINTEL ; échantillon local fourni pour analyse structurelle. Les fichiers bruts et les données personnelles restent hors dépôt.
 
+#### 🇰🇪 Kenya - Majani Insurance Brokers
+- **Date de publication initiale :** 25 septembre 2026
+
+- **Acteur / Groupe :** Vexy Ransomware
+- **Secteur :** Assurance
+- **Site web :** [majaninsure.com](https://majaninsure.com/)
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Ransomware
+- **Description :** **Majani Insurance Brokers Limited** est un **cabinet de courtage en assurances au Kenya**, proposant des solutions de couverture aux particuliers et aux entreprises. Ses services comprennent l'identification de garanties, la mise en relation avec les assureurs, le renouvellement de contrats et l'assistance lors des déclarations de sinistres. Le courtier se présente comme disposant de plusieurs décennies d'expérience sur le marché ([présentation officielle Majani](https://majaninsure.com/about/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** La revendication de Vexy contre Majani Insurance Brokers apparaît dans les bases de renseignement, sans reconnaissance publique de l’entreprise ni corroboration technique indépendante.
+
+
+Vexy Ransomware a publié une revendication visant Majani Insurance Brokers, courtier d'assurance kényan. Le vecteur, les systèmes touchés et toute exfiltration restent inconnus.
+
+### 26 septembre 2026
+
+#### 🇿🇦 Afrique du Sud - Guardrisk
+- **Date de publication initiale :** 26 septembre 2026
+
+- **Acteur / Groupe :** TheGentlemen
+- **Secteur :** Assurance
+- **Site web :** [guardrisk.co.za](https://guardrisk.co.za/)
+- **Statut :** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Type d'incident :** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description :** **Guardrisk** est un groupe d'assurances sud-africain spécialisé dans les **solutions de transfert et de financement des risques**, notamment les structures d'**assurance captive en cellules** (*cell-captive insurance*). Ses offres concernent l'assurance vie, non-vie et des mécanismes de couverture adaptés aux entreprises et partenaires. L'appellation Guardrisk recouvre plusieurs entités réglementées ; la publication ne précise pas laquelle serait touchée ([site officiel Guardrisk](https://guardrisk.co.za/about/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Exposition chez un intermédiaire reconnue, intrusion chez Guardrisk démentie :** le 30 septembre 2026, Guardrisk a indiqué à MyBroadband qu’aucune compromission de ses systèmes ou données client n’était mise en évidence. Le groupe a relié les informations évoquées à une exposition chez **CoverCubed**, titulaire d’un mandat de gestion, concernant environ **6 000 polices obsèques** ; CoverCubed aurait notifié le régulateur et ses clients. **Ne pas attribuer directement ces données à une intrusion de Guardrisk.**
+
+- **Sources de vérification complémentaires :** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
+
+TheGentlemen a publié une revendication visant Guardrisk, groupe d'assurance sud-africain. La publication fournit un contexte organisationnel, mais ne confirme pas l'accès ni l'étendue de données détenues.
+
+#### 🇲🇦 Maroc - `acao.org.ma` [Data Leak]
+- **Date de publication initiale :** 26 septembre 2026
+
+- **Acteur / Groupe :** EliteSquad (compte affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Gouvernement / Aviation civile
+- **Site web associé :** [acao.org.ma](https://acao.org.ma/site/en/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium pour l'attribution de l'échantillon au domaine ; Low à Medium pour la compromission de l'organisation
+- **Niveau d'impact :** Level 3
+- **Description victime :** `acao.org.ma` est un domaine marocain présenté dans la publication comme associé à une autorité de l'aviation civile. L'organisation serait liée à la supervision ou à l'administration du transport aérien civil au Maroc ; son identité juridique exacte, son périmètre opérationnel et sa relation institutionnelle précise ne sont pas établis par les éléments disponibles. La publication attribuée à EliteSquad associe ce domaine à une base de données de personnels ou de contacts du secteur aérien, sans confirmation directe de la victime.
+- **Analyse :** La publication revendique une base CSV de **18 Mo** et **31 657 lignes**, présentée comme une base de l'autorité de l'aviation civile. L'échantillon visible contient des identifiants, noms, adresses e-mail, numéros de téléphone, fonctions, affiliations professionnelles, dates et informations administratives. Les lignes visibles comprennent des références à plusieurs pays et organisations, notamment des domaines professionnels marocains, qataris, saoudiens et somaliens ; cela peut refléter une base multi-pays ou des relations internationales du secteur aérien, sans prouver la résidence ou la nationalité des personnes.
+
+  Le domaine `.ma`, le titre de la publication et le logo affiché soutiennent un lien avec le Maroc. Ils ne suffisent pas à confirmer l'origine technique du fichier, l'exhaustivité des **31 657 lignes**, l'accès à un système opérationnel de l'aviation civile ou la compromission de l'autorité. Les valeurs personnelles visibles ne sont pas reproduites dans le dépôt.
+- **Limites de preuve :** Analyse limitée à la publication et à l'échantillon visible ; le fichier CSV complet, son schéma, son empreinte, son volume réel, les doublons et la provenance technique n'ont pas été vérifiés. Aucun nom, e-mail, numéro de téléphone ou autre donnée personnelle brute n'est publié.
 
 ### 27 septembre 2026
+
 #### 🇿🇦 Afrique du Sud - First National Bank (FNB)
+- **Date de publication initiale :** 27 septembre 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 27 septembre 2026 à 00:06 (heure affichée ; fuseau non indiqué)
 - **Acteur / Groupe :** Blacknet00
 - **Secteur :** Services financiers / Banque
 - **Site web :** [fnb.co.za](https://www.fnb.co.za/)
@@ -489,287 +833,11 @@
 
 > Les fiches de cette section sont rattachées à septembre par leur date de publication ou de première observation AFRINTEL. Une date d'incident antérieure, lorsqu'elle est mentionnée dans une fiche, reste un élément chronologique distinct et ne modifie pas le mois de publication.
 
-
-### 01 septembre 2026
-#### 🇪🇬 Égypte - Holding Company for Construction and Development (HCCD)
-- **Date de publication initiale :** 01 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Construction
-- **Site web :** [hccd-construction.com](https://hccd-construction.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** La **Holding Company for Construction and Development (HCCD)** est une holding égyptienne active dans la **construction, les travaux publics et l'aménagement immobilier**. Son site indique qu'elle supervise des entreprises intervenant dans les travaux de génie civil, les études techniques, l'habitat et les installations électriques. L'entité relève d'une structure de groupe : une revendication visant son nom ne permet pas de déterminer quelle filiale ou quel système serait concerné ([présentation officielle HCCD](https://hccd-construction.com/About_e.aspx)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Seule une inscription dans le suivi des publications attribuées à Krybit est corroborée ; aucune déclaration officielle de HCCD ou enquête vérifiable confirmant une intrusion dans ses systèmes n’a été identifiée.
-
-
-Krybit a publié une revendication nommant la Holding Company for Construction and Development. La date correspond à l'observation de la fiche ; la compromission, le volume, le chiffrement et l'exfiltration restent inconnus.
-
-#### 🇪🇬 Égypte - Mecca High Feed Factory
-- **Date de publication initiale :** 01 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Agriculture / Agroalimentaire
-- **Site web :** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Mecca High Feed Factory** est présentée sur son site historique en arabe comme une activité égyptienne de **fabrication d'aliments pour volailles et bétail**, notamment des formulations végétales. Le blog commercial associe les marques **Mecca** et **High Feed** et publie des informations sur les produits et l'alimentation animale ; cette source autoéditée ne permet pas de vérifier indépendamment la situation juridique ou le périmètre industriel actuel ([blog de l'entreprise](https://meccahighfeed.blogspot.com/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Les agrégateurs OSINT relaient une revendication Krybit, sans preuve indépendante de compromission ni déclaration de Mecca High Feed Factory identifiée. Certaines bases classent différemment le pays : ne pas modifier l’attribution géographique sans vérification.
-
-
-Krybit a publié une revendication visant Mecca High Feed Factory, présentée comme une entreprise égyptienne de fabrication d'aliments pour animaux. Les éléments techniques et l'impact réel ne sont pas établis.
-
-#### 🇪🇬 Égypte - Seashell Hospital
-- **Date de publication initiale :** 01 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Santé / Hôpital
-- **Site web :** [seashellhospital.com](https://seashellhospital.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Seashell Hospital** est un établissement de santé privé situé à **New Cairo**, en Égypte. Son site présente une offre de soins hospitaliers, de diagnostic et de traitement, comprenant notamment un service d'urgences fonctionnant en continu. Cette activité implique des processus cliniques et administratifs sensibles ; aucune fuite de dossiers de patients n'est démontrée par la seule fiche de revendication ([site officiel de l'hôpital](https://www.seashellhospital.com/AboutUs/Index)).
-
-- **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant Seashell Hospital figure dans plusieurs index de fuite, mais aucune notification de l’hôpital ni confirmation forensique indépendante n’a été identifiée. Ni une indisponibilité, ni une fuite de patients, ni un chiffrement ne sont établis.
-
-
-Krybit a publié une revendication visant Seashell Hospital, établissement hospitalier privé situé en Égypte. Aucun élément public examiné ne confirme l'accès, le chiffrement ou une exfiltration.
-
-### 07 septembre 2026
-#### 🇿🇦 Afrique du Sud - VSB Attorneys Inc
-- **Date de publication initiale :** 07 septembre 2026
-- **Acteur / Groupe :** lockbit5
-- **Secteur :** Services juridiques
-- **Site web :** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **VSB Attorneys Inc** est un **cabinet d'avocats sud-africain** proposant notamment des prestations en droit immobilier, transfert de propriété (*conveyancing*) et droit commercial. Il intervient auprès de clients particuliers et professionnels dans des opérations juridiques et contractuelles nécessitant des dossiers et justificatifs confidentiels. L'activité du cabinet ne préjuge pas de la nature des documents éventuellement touchés par l'incident revendiqué ([site officiel VSB](https://www.vsbattorneys.co.za/about-vsb-attorneys-law-firm/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** La revendication LockBit5 visant VSB Attorneys est documentée par des index de leak sites, sans réponse publique identifiée du cabinet ni preuve indépendante d’intrusion.
-
-  **Analyse des artefacts locaux :** le répertoire fourni contient un volume RAR5 annoncé comme multipartie de **1 082 440 568 octets**, ainsi qu'un second fichier RAR vide. Le test en lecture seule identifie une archive multipartie incomplète et signale une fin inattendue ainsi qu'une erreur de données sur une entrée PDF. Aucun fichier n'a été extrait ni exécuté ; le contenu, le volume réel, l'authenticité et l'origine des données restent inconnus. La présence de ce fragment ne suffit pas à établir une divulgation réussie.
-
-- **Périmètre de l'analyse :** contrôle de type, de taille et de structure de l'archive ; test d'intégrité sans extraction exploitable. L'analyse ne porte sur aucun document ou donnée personnelle contenu dans l'archive.
-
-- **Éléments observés :** revendication LockBit5 et artefact RAR5 multipartie fourni localement. Le fichier vide et le fragment incomplet ne constituent pas un corpus exploitable.
-
-
-Lockbit5 a publié une revendication visant VSB Attorneys Inc, cabinet d'avocats sud-africain. La compromission et l'étendue des données ne sont pas confirmées.
-
-#### 🇪🇬 Égypte - Nile Projects Trading
-- **Date de publication initiale :** 07 septembre 2026
-- **Acteur / Groupe :** TheGentlemen
-- **Secteur :** Immobilier / Gestion immobilière
-- **Site web :** [nileprojects.com](https://nileprojects.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Nile Projects & Trading Company** est un groupe commercial égyptien dont l'histoire officielle remonte à **1972**. Initialement entreprise familiale, il s'est diversifié dans la **distribution de marques internationales, les pneumatiques, la mode haut de gamme et les projets immobiliers commerciaux**. Le champ de ses activités dépasse donc l'immobilier seul, mais la publication ne permet pas de savoir quelle branche serait visée ([présentation officielle Nile Projects](https://nileprojects.com/pages/about-us)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Les résultats publics retrouvés reproduisent la revendication The Gentlemen contre Nile Projects Trading ; aucune reconnaissance officielle, notification réglementaire ou vérification forensique ne permet de qualifier l’attaque de confirmée.
-
-
-TheGentlemen a publié une revendication visant Nile Projects Trading, groupe égyptien actif notamment dans le commerce, l'immobilier et la distribution. Aucun élément ne confirme l'accès ou l'exfiltration.
-
-#### 🇿🇦 Afrique du Sud - Hollard Insurance Group
-- **Date de publication initiale :** 07 septembre 2026
-- **Acteur / Groupe :** TheGentlemen
-- **Secteur :** Assurance
-- **Site web :** [hollard.co.za](https://www.hollard.co.za/)
-- **Statut :** Third-Party Exposure Confirmed - Direct Breach Not Established
-- **Type d'incident :** Data Leak (third-party exposure) / ransomware claim disputed
-- **Description :** **Hollard Insurance Group** est un groupe d'**assurance sud-africain privé** proposant des solutions d'assurance vie, non-vie, de couverture des particuliers et des entreprises, ainsi que des produits liés à l'investissement. Le groupe est présent dans plusieurs marchés africains, directement ou au travers de partenariats. La revendication associée à son nom n'établit pas quelles entités juridiques ou filiales seraient concernées ([présentation officielle Hollard](https://www.hollard.co.za/our-world)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Exposition via un tiers reconnue, intrusion chez Hollard contestée :** dans ses communiqués des 15 et 18 septembre 2026, Hollard reconnaît que des informations concernant certains assurés « funeral policies » ont été publiées à la suite de l’incident de **juin 2026 chez MIP Holdings**. Hollard a notifié des clients et saisi les autorités compétentes ; ses investigations n’ont trouvé **aucune compromission de son environnement**. La liste The Gentlemen ne doit donc pas être requalifiée en intrusion confirmée chez Hollard.
-
-- **Sources de vérification complémentaires :** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
-
-
-TheGentlemen a publié une revendication visant Hollard Insurance Group. Le corpus source décrit l'assureur et ses activités, mais ne fournit pas de preuve indépendante de compromission.
-
-#### 🇿🇦 Afrique du Sud - RelyComply AML Platform
-- **Date de publication initiale :** 09 septembre 2026
-- **Acteur / Groupe :** Direwolf (revendication ; attribution technique non confirmée)
-- **Secteur :** Fintech / Lutte contre le blanchiment
-- **Statut :** Victim Confirmed - Unauthorized Access
-- **Type d'incident :** System Intrusion (revendication ransomware non confirmée)
-- **Sous-type :** Accès non autorisé confirmé ; lien Direwolf/chiffrement non démontré
-- **Description :** **RelyComply** est un éditeur de technologie réglementaire (**RegTech**) proposant une plateforme de conformité **AML/KYC** destinée aux institutions soumises aux obligations de lutte contre le blanchiment. Sa solution vise à centraliser les contrôles d'identité et de connaissance client, la surveillance et les processus de conformité. Le profil public de l'entreprise ne confirme pas à lui seul le périmètre d'une éventuelle intrusion ([plateforme officielle RelyComply](https://relycomply.com/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Accès non autorisé confirmé par l’entreprise :** dans sa notification du 16 septembre, RelyComply indique avoir détecté le 8 septembre 2026 un accès à certains de ses systèmes via une vulnérabilité zero-day d’une application tierce. Systèmes concernés reconstruits, identifiants et jetons révoqués/renouvelés, faille corrigée et déclaration au régulateur sud-africain (**référence SC20263150**). Virgin Active et HuntEx documentent l’exposition potentielle de données transactionnelles via Peach Payments. **La responsabilité de Direwolf, le chiffrement et le volume revendiqué ne sont pas confirmés.**
-
-- **Sources de vérification complémentaires :** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
-
-
-**Contexte initial de la revendication :** Direwolf avait inscrit RelyComply sur son site de fuite. La notification de l'entreprise confirme ensuite un accès non autorisé à certains systèmes et documente un vecteur apparent (zero-day d'une application tierce). Le lien opérationnel avec Direwolf, le chiffrement et le volume de données éventuellement extraites restent non démontrés.
-
-### 12 septembre 2026
-#### 🇲🇦 Maroc - La Sultana Hotel Group
-- **Date de publication initiale :** 12 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Hôtellerie
-- **Site web :** [lasultanahotels.com](https://lasultanahotels.com/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Medium (publication affichée comme publiée et corpus local d'images associé ; provenance technique et exhaustivité non établies)
-- **Niveau d'impact :** Level 3
-- **Description :** **La Sultana Hotels** est une enseigne marocaine d'**hôtellerie de luxe** regroupant notamment deux établissements : **La Sultana Marrakech**, au cœur de la médina, et **La Sultana Oualidia**, sur la lagune atlantique. Le groupe met en avant une offre d'hébergement, de gastronomie et d'expériences touristiques haut de gamme. La revendication ne permet pas de déterminer quel établissement ou outil de réservation aurait été concerné ([site officiel La Sultana](https://www.lasultanahotels.com/?lang=fr)).
-
-- **Observation de la publication :** Une capture datée du 14 septembre 2026 montre une fiche `lasultanahotels.com` marquée `PUBLISHED`, avec 3 914 vues, 0 image affichée et une taille de données revendiquée de 41 GB. Un compte à rebours affichait une échéance au 15 septembre 2026 à 12:57:51. Ces éléments décrivent l'état visible de la publication et non le résultat d'une négociation ou d'un paiement.
-
-- **Analyse du corpus local associé :** Le répertoire de collecte contient 138 fichiers JPEG de scan, pour environ 54 Mo. L'examen visuel du sous-ensemble disponible montre des images de passeports internationaux et de pages d'identité. Cinq paires de fichiers sont des doublons exacts selon SHA-256, soit 135 empreintes distinctes sur 140 fichiers incluant les deux captures de publication. Le nombre de personnes, la source d'acquisition, le lien technique avec La Sultana, la couverture du corpus et l'exhaustivité restent inconnus.
-
-- **Vérification indépendante au 18 octobre 2026 :** Aucune déclaration du groupe hôtelier ni confirmation publique indépendante de l'intrusion n'a été identifiée. Le corpus d'images renforce l'observation d'une mise à disposition de données associée à la publication, mais ne confirme pas que les passeports proviennent des systèmes de La Sultana ni qu'ils concernent ses clients, employés ou partenaires.
-
-- **Sources / Éléments observés :** publication Krybit capturée le 14 septembre 2026 ; corpus local de 138 scans JPEG associé à la collecte. Les artefacts bruts restent hors dépôt.
-
-Krybit a publié une revendication visant La Sultana Hotel Group au Maroc. La fiche affichée comme publiée et le corpus local de scans indiquent une mise à disposition de données associée à la publication. Ils ne permettent pas d'établir l'accès initial, la provenance depuis les systèmes de La Sultana, le chiffrement, l'exhaustivité ou le nombre de personnes concernées.
-
-#### 🇪🇬 Égypte - Egyptian Airports Company (EAC)
-- **Date de publication initiale :** 12 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Transport aérien
-- **Site web :** [eac-airports.com](https://www.eac-airports.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** L'**Egyptian Airports Company (EAC)** est un opérateur égyptien du secteur **aéroportuaire**, rattaché à l'écosystème public de l'**Egyptian Holding Company for Airports and Air Navigation**. Sa mission porte sur la gestion, l'exploitation, la maintenance et le développement d'aéroports civils. Son rôle est différent de celui d'une compagnie aérienne ou de l'autorité de navigation aérienne ; aucun aéroport précis n'est établi comme compromis par la seule revendication ([ministère égyptien de l'Aviation civile](https://web.civilaviation.gov.eg/Companies/AirportCompany)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Plusieurs outils CTI recensent la déclaration Krybit visant le domaine d’Egyptian Airports Company. Aucune reconnaissance par EAC ou autorité égyptienne, ni preuve d’impact sur des systèmes d’exploitation aéroportuaire, n’a été identifiée.
-
-
-Krybit a publié une revendication visant l'Egyptian Airports Company. La publication identifie l'organisation et son secteur ; le résultat technique et l'étendue d'une éventuelle exposition restent inconnus.
-
-### 16 septembre 2026
-#### 🇳🇦 Namibie - Namibian Defence Force
-- **Date de publication initiale :** 16 septembre 2026
-- **Acteur / Groupe :** RansomHouse (association déclarée par NAM-CSIRT)
-- **Secteur :** Défense / Forces armées
-- **Statut :** Government Confirmed - Unauthorized Access
-- **Type d'incident :** System Intrusion (revendication ransomware ; chiffrement non confirmé)
-- **Sous-type :** Intrusion ministérielle confirmée ; chiffrement/exfiltration non démontrés
-- **Description :** La **Namibian Defence Force (NDF)** constitue les **forces armées nationales de la Namibie**. Sa mission constitutionnelle centrale consiste à défendre l'intégrité territoriale et les intérêts nationaux du pays, sous l'autorité des institutions de défense namibiennes. Une revendication faisant référence à la NDF ne démontre pas à elle seule une compromission de réseaux militaires opérationnels ([ministère namibien de la Défense](https://mod.gov.na/about-ndf)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Compromission confirmée par l’autorité cyber nationale :** selon la déclaration NAM-CSIRT relayée le 21 septembre 2026, des activités non autorisées ont été détectées dans le réseau du **Ministry of Defence and Veterans Affairs (MODVA)**, et l’enquête a associé l’incident à **RansomHouse**. La revendication nomme « Namibian Defence Force », mais le périmètre officiellement confirmé est le réseau ministériel. **Aucune preuve publiée ne confirme le chiffrement, l’exfiltration, une fuite de secrets militaires ou un paiement.**
-
-- **Sources de vérification complémentaires :** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
-
-
-**Contexte initial de la revendication :** RansomHouse a désigné la Namibian Defence Force dans sa publication. Les investigations publiées par NAM-CSIRT confirment ultérieurement une activité non autorisée dans le réseau du ministère de la Défense et une association avec RansomHouse, sans démontrer le chiffrement ni une exfiltration.
-
-### 18 septembre 2026
-#### 🇹🇳 Tunisie - Opérations de support PayPal (Transcom WorldWide)
-- **Date de publication initiale :** 18 septembre 2026
-- **Acteur / Groupe :** N0n
-- **Secteur :** Services aux entreprises / Support client
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Transcom WorldWide** est un groupe de **sous-traitance de la relation client (BPO/CX)** fournissant des services de centres de contact, d'assistance clientèle et de gestion de processus pour des marques internationales, notamment depuis des sites en Tunisie. **PayPal** est une entreprise distincte de services de paiement. La publication les associe à des opérations de support, mais **l'existence et le périmètre d'un contrat PayPal-Transcom concerné ne sont pas corroborés** par ces informations générales ([services officiels Transcom](https://transcom.com/services/customer-experience)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Aucune confirmation indépendante de l’intrusion ni de l’association opérationnelle exacte entre Transcom, PayPal et les sites tunisiens n’a été identifiée. Les cartographies Citrix/AD et 86,7 millions de connexions proviennent uniquement de la revendication N0n.
-
-- **Sources de vérification complémentaires :** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
-
-
-N0n a publié une revendication visant des opérations de support externalisées liées à PayPal et Transcom WorldWide en Tunisie. La publication mentionne des systèmes internes et un délai de règlement, mais ne confirme pas l'accès, l'exactitude des volumes ou l'impact opérationnel.
-
-
-### 21 septembre 2026
-#### 🇪🇹 Éthiopie - Siinqee Bank
-- **Date de publication initiale :** 21 septembre 2026
-- **Acteur / Groupe :** lockbit5
-- **Secteur :** Banque
-- **Site web :** [siinqeebank.com](https://siinqeebank.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Siinqee Bank** est une institution bancaire éthiopienne proposant des **services de banque de détail, de financement et d'inclusion financière**, notamment à destination de communautés et d'entrepreneurs. L'établissement présente une offre associant services bancaires traditionnels, microfinance et canaux numériques. Son nom s'inspire d'un symbole culturel oromo lié à la protection et à la reconnaissance des femmes ([présentation officielle Siinqee Bank](https://siinqeebank.com/about-us/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** La page de prévention contre la fraude publiée par Siinqee Bank le 8 octobre 2026 ne constitue **pas** une confirmation de l’attaque revendiquée par LockBit le 21 septembre. Aucune notification spécifique de cette intrusion ni de fuite n’a été trouvée.
-
-- **Sources de vérification complémentaires :** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
-
-
-Lockbit5 a publié une revendication visant Siinqee Bank, institution financière éthiopienne. Aucun élément indépendant ne confirme l'intrusion ou l'exposition de données.
-
-#### 🇦🇴 Angola - Grupolider
-- **Date de publication initiale :** 21 septembre 2026
-- **Acteur / Groupe :** TheGentlemen
-- **Secteur :** Distribution / Agriculture / Logistique
-- **Site web :** [grupolider-ao.com](https://grupolider-ao.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Grupolider** est un nom associé à des **activités commerciales en Angola**. Des sources publiques relient le domaine `grupolider-ao.com` à des entreprises de distribution/importation et à **Novagrolider**, active dans l'agriculture et l'agro-industrie. Le site du domaine apparaît suspendu lors de cette recherche ; l'appartenance juridique des différentes entités au groupe et l'identité précise de l'entreprise visée **restent à confirmer** ([annuaire commercial argentin](https://exportaciones.cancilleria.gob.ar/sitios/ficha_directorio/89314) ; [fiche Novagrolider](https://icrisco.com/profile.php?id=novagrolider-5238)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Le référencement de Grupolider par The Gentlemen demeure une revendication de leak site ; aucune confirmation officielle ni lien technique certain entre le domaine revendiqué et les entités du groupe n’a été identifié.
-
-
-TheGentlemen a publié une revendication visant Grupolider, groupe angolais actif dans l'agriculture, la logistique, la construction et la distribution. La compromission et le volume annoncé restent inconnus.
-
-### 24 septembre 2026
-#### 🇹🇿 Tanzanie - Air Tanzania Company Limited (ATCL)
-- **Date de publication initiale :** 24 septembre 2026
-- **Acteur / Groupe :** krybit
-- **Secteur :** Transport aérien
-- **Site web :** [airtanzania.co.tz](https://airtanzania.co.tz/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Medium
-- **Description :** **Air Tanzania Company Limited (ATCL)** est la **compagnie aérienne nationale de Tanzanie**, détenue par l'État. Elle assure des services de transport de passagers et de fret et exploite des liaisons nationales et internationales. Son activité repose sur des systèmes de réservation, d'exploitation aérienne et de relation client ; la présence d'images dans un échantillon ne permet pas d'en déduire leur origine dans ces systèmes ([présentation officielle Air Tanzania](https://airtanzania.co.tz/index.php/about-us)).
-
-- **Vérification indépendante au 18 octobre 2026 :** La revendication Krybit visant les domaines d’Air Tanzania figure dans les flux OSINT ; les sources consultées précisent qu’Air Tanzania n’avait pas confirmé l’incident. La présence d’un échantillon revendiqué n’établit pas l’exfiltration depuis les systèmes de réservation ni le chiffrement.
-
-- **Sources de vérification complémentaires :** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
-
-
-Krybit a publié une revendication visant Air Tanzania Company Limited, compagnie aérienne nationale tanzanienne. Un échantillon local associé à cette publication a été examiné en lecture seule : **114 fichiers** pour **676 972 266 octets**, dont **112 images valides** et **2 fichiers non image malgré l'extension `.jpg`**. Les images valides comprennent **101 fichiers MPO à trois vues** et **11 JPEG simples**, soit **314 vues incorporées** au total. Aucun doublon SHA-256 n'a été détecté.
-
-Cette cohérence structurelle confirme la présence d'un corpus d'images associé à la publication, mais ne confirme pas que les fichiers proviennent de l'infrastructure d'Air Tanzania, ni l'accès initial, l'exfiltration, le chiffrement, le nombre de personnes représentées ou l'exhaustivité de la revendication. Aucun OCR, traitement facial, nom de fichier individuel ou contenu personnel n'a été reproduit. Le manifeste minimisé est conservé hors dépôt sous `/tmp/afrintel-evidence/afr-2026-09-airtanzania/evidence_manifest.json`.
-
-#### 🇺🇬 Ouganda - Armada Credit Bureau
-- **Date de publication initiale :** 24 septembre 2026
-- **Acteur / Groupe :** Spirals
-- **Secteur :** Services financiers / Bureau de crédit
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Armada Credit Bureau Limited** se présente comme un **bureau ougandais de renseignements sur le crédit et d'analyse financière**, opérant dans le cadre réglementaire de la **Bank of Uganda**. Son activité porte sur les informations de solvabilité et les services d'évaluation du risque de crédit aux organismes habilités. Cette description provient de son site public et ne constitue pas une vérification indépendante de l'agrément ni d'un incident ([site Armada Credit Bureau](https://www.armadacrb.com/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** Seule la présence d’Armada Credit Bureau dans les listings du groupe Spirals est corroborée. Aucune déclaration de la société ou notification officielle ougandaise démontrant une intrusion n’a été identifiée.
-
-
-Spirals a publié une revendication visant Armada Credit Bureau Limited, société ougandaise de reporting et d'analyse du crédit. Aucun élément indépendant ne confirme la compromission.
-
-
-### 25 septembre 2026
-#### 🇰🇪 Kenya - Majani Insurance Brokers
-- **Date de publication initiale :** 25 septembre 2026
-- **Acteur / Groupe :** Vexy Ransomware
-- **Secteur :** Assurance
-- **Site web :** [majaninsure.com](https://majaninsure.com/)
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Ransomware
-- **Description :** **Majani Insurance Brokers Limited** est un **cabinet de courtage en assurances au Kenya**, proposant des solutions de couverture aux particuliers et aux entreprises. Ses services comprennent l'identification de garanties, la mise en relation avec les assureurs, le renouvellement de contrats et l'assistance lors des déclarations de sinistres. Le courtier se présente comme disposant de plusieurs décennies d'expérience sur le marché ([présentation officielle Majani](https://majaninsure.com/about/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** La revendication de Vexy contre Majani Insurance Brokers apparaît dans les bases de renseignement, sans reconnaissance publique de l’entreprise ni corroboration technique indépendante.
-
-
-Vexy Ransomware a publié une revendication visant Majani Insurance Brokers, courtier d'assurance kényan. Le vecteur, les systèmes touchés et toute exfiltration restent inconnus.
-
-### 26 septembre 2026
-#### 🇿🇦 Afrique du Sud - Guardrisk
-- **Date de publication initiale :** 26 septembre 2026
-- **Acteur / Groupe :** TheGentlemen
-- **Secteur :** Assurance
-- **Site web :** [guardrisk.co.za](https://guardrisk.co.za/)
-- **Statut :** Third-Party Exposure Confirmed - Direct Breach Not Established
-- **Type d'incident :** Data Leak (third-party exposure) / ransomware claim disputed
-- **Description :** **Guardrisk** est un groupe d'assurances sud-africain spécialisé dans les **solutions de transfert et de financement des risques**, notamment les structures d'**assurance captive en cellules** (*cell-captive insurance*). Ses offres concernent l'assurance vie, non-vie et des mécanismes de couverture adaptés aux entreprises et partenaires. L'appellation Guardrisk recouvre plusieurs entités réglementées ; la publication ne précise pas laquelle serait touchée ([site officiel Guardrisk](https://guardrisk.co.za/about/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Exposition chez un intermédiaire reconnue, intrusion chez Guardrisk démentie :** le 30 septembre 2026, Guardrisk a indiqué à MyBroadband qu’aucune compromission de ses systèmes ou données client n’était mise en évidence. Le groupe a relié les informations évoquées à une exposition chez **CoverCubed**, titulaire d’un mandat de gestion, concernant environ **6 000 polices obsèques** ; CoverCubed aurait notifié le régulateur et ses clients. **Ne pas attribuer directement ces données à une intrusion de Guardrisk.**
-
-- **Sources de vérification complémentaires :** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
-
-
-TheGentlemen a publié une revendication visant Guardrisk, groupe d'assurance sud-africain. La publication fournit un contexte organisationnel, mais ne confirme pas l'accès ni l'étendue de données détenues.
-
 ### 29 septembre 2026
+
 #### 🇿🇦 Afrique du Sud - BCX / Business Connexion
 - **Date de publication initiale :** 29 septembre 2026
+
 - **Acteur / Groupe :** incransom
 - **Secteur :** Technologies de l'information / Conseil
 - **Site web :** [bcx.co.za](https://www.bcx.co.za/)
@@ -790,51 +858,9 @@ La [fiche du Ministry of Education of Libya de juin 2026](../../06-june/victims_
 
 La publication du **10 septembre 2026**, attribuée à **EveN47**, revendique ensuite **800 Go** pour la base de moe.gov.ly et environ **300 Go** de données similaires couvrant plusieurs ministères libyens de l'Éducation. Un échantillon local fourni comme provenant de cette publication a toutefois été analysé en lecture seule : **900 976 395 octets** (environ **901 Mo**), **3 900 fichiers** répartis en quatre répertoires correspondant aux passeports (**1 145** fichiers), numéros nationaux (**467**), photos d'étudiants (**1 146**) et certificats d'étudiants (**1 142**). Les signatures indiquent 3 500 JPEG et 4 PNG valides ; cinq fichiers portant l'extension `.jpg` sont en réalité des PDF et deux autres des documents HTML. L'empreinte SHA-256 arborescente agrégée est `d63371c3d61dd48c87398578d1bdfe4329c7dca1bc73104125e966221591df80`. Le contrôle SHA-256 a relevé **169 groupes de doublons** représentant **213 fichiers excédentaires**, ce qui ne permet pas de déduire un nombre de personnes ou de documents uniques. Aucun OCR massif ni recopie de contenu individuel n'a été réalisé afin de limiter l'exposition des données personnelles ; l'analyse porte sur l'arborescence, les signatures, les métadonnées techniques et les contrôles d'intégrité. Cette structure renforce la corroboration interne de la nature documentaire et éducative du jeu de données, sans valider les revendications de 287 Go, 800 Go ou 300 Go. Aucun lien de téléchargement n'a été ouvert et aucune donnée personnelle brute n'est reproduite ici. Il n'est pas établi s'il s'agit d'une extension, d'une republication, d'un volume révisé ou d'une revendication par un alias différent. Les chiffres de 287 Go, 800 Go et 300 Go ne doivent pas être additionnés ; ils restent des revendications datées et distinctes.
 
-### 13 septembre 2026
-#### 🇰🇪 Kenya - `subscribers.co.ke` [Data Leak]
-- **Date de publication initiale :** 13 septembre 2026 à 08:17 (horodatage affiché ; fuseau horaire non précisé)
-- **Date de découverte AFRINTEL :** Octobre 2026 (jour non précisé)
-- **Acteur / Groupe :** Sensitive2025 (compte affiché dans la publication ; identité et affiliation attribuée à la publication)
-- **Secteur :** Services numériques / Gestion d'abonnés et de listes e-mail
-- **Site web associé :** [subscribers.co.ke](https://subscribers.co.ke/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** Medium pour l'attribution de l'échantillon au domaine ; High pour le lien géographique avec le Kenya
-- **Niveau d'impact :** Level 3
-- **Description victime :** `subscribers.co.ke` est un domaine kényan associé à un service de gestion d'abonnés ou de listes e-mail. L'identité juridique de l'organisation exploitant le service n'est pas établie par les éléments visibles ; la publication attribuée à Sensitive2025 associe ce domaine à une liste CSV.
-- **Analyse :** AFRINTEL a examiné en lecture seule l'intégralité des cinq contenus CSV d'abonnés distincts fournis localement ; les cinq fichiers sont présents en deux copies physiques, soit **10 fichiers CSV inventoriés**, dont **5 doublons de copie**. Les fichiers d'exemple de bibliothèques intégrés à l'application ont été exclus du corpus d'abonnés. Les cinq exports utilisent le même schéma de **8 colonnes** (`id`, `first_name`, `last_name`, `email`, `timezone`, `balance`, `status`, `created`), sont lisibles avec un BOM UTF-8, présentent **0 ligne malformée** et **0 doublon interne** par fichier.
-
-  Le corpus représente **2 154 lignes** au total. Les chevauchements entre les cinq extractions sont importants : **1 133 signatures de lignes distinctes** et **1 021 répétitions inter-fichiers** ont été observées. Les exports contiennent **1 072 identifiants distincts** et **1 057 adresses e-mail distinctes** ; ces valeurs ne doivent pas être additionnées comme des personnes uniques sans déduplication et validation supplémentaires.
-
-  Toutes les lignes ont un champ `status` égal à `1` et un solde renseigné. Les soldes agrégés des extractions, qui ne représentent pas un total financier unique en raison des répétitions, vont de **-300,0749** à **42,6123**, avec **1 638 valeurs nulles**, **514 positives** et **2 négatives** ; la somme brute des snapshots est **270,668**, sans devise ni sémantique établies. Les dates `created` couvrent le **1 septembre 2021 au 13 septembre 2023**, sans date invalide dans les cinq fichiers.
-
-  Les fuseaux `Africa/*` représentent **1 779 lignes (82,6 %)**, dont `Africa/Nairobi` **1 631 lignes (75,7 % du corpus)**. Les autres lignes utilisent des fuseaux d'Asie, d'Europe, des Amériques, de l'océan Indien et du Pacifique. Un fuseau horaire est un marqueur de profil ou de configuration et ne documente pas la résidence ou la nationalité d'une personne. La forte concentration sur Nairobi, le domaine `.co.ke` et le titre de la publication soutiennent le lien avec le Kenya, sans établir à eux seuls l'identité juridique de l'opérateur ni l'origine complète des données.
-
-  L'examen du contenu confirme une liste de comptes ou d'abonnés contenant des identifiants, des noms, des adresses e-mail, des paramètres de fuseau, des états de compte, des soldes applicatifs et des dates de création. Aucun nom, e-mail, solde ou autre valeur individuelle n'est reproduit dans le dépôt. Les APK, scripts PHP et autres fichiers actifs présents dans le répertoire ont été exclus de l'exécution et ne sont pas utilisés pour extrapoler l'analyse CSV.
-- **Limites de preuve :** L'analyse couvre intégralement les cinq contenus CSV d'abonnés disponibles et documente les copies, le schéma, l'encodage, les volumes, les chevauchements, les dates, les fuseaux et les soldes. Les sources consultées ne précisent pas l'exhaustivité de la base originale, la date d'extraction, le vecteur d'accès, l'authenticité de la publication, l'identité de l'opérateur, la devise des soldes ni le statut de l'incident. Les identifiants, e-mails et soldes répétés entre snapshots ne peuvent pas être interprétés comme des personnes, comptes ou montants uniques sans déduplication métier.
-- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL a eu lieu en octobre 2026. La publication initiale du 13 septembre 2026 est conservée pour la chronologie et ne crée pas de doublon avec le suivi d'octobre.
-
-### 26 septembre 2026
-#### 🇲🇦 Maroc - `acao.org.ma` [Data Leak]
-- **Date de publication initiale :** 26 septembre 2026 à 06:24 (horodatage affiché ; fuseau horaire non précisé)
-- **Date de découverte AFRINTEL :** 29 octobre 2026
-- **Acteur / Groupe :** EliteSquad (compte affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Gouvernement / Aviation civile
-- **Site web associé :** [acao.org.ma](https://acao.org.ma/site/en/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** Medium pour l'attribution de l'échantillon au domaine ; Low à Medium pour la compromission de l'organisation
-- **Niveau d'impact :** Level 3
-- **Description victime :** `acao.org.ma` est un domaine marocain présenté dans la publication comme associé à une autorité de l'aviation civile. L'organisation serait liée à la supervision ou à l'administration du transport aérien civil au Maroc ; son identité juridique exacte, son périmètre opérationnel et sa relation institutionnelle précise ne sont pas établis par les éléments disponibles. La publication attribuée à EliteSquad associe ce domaine à une base de données de personnels ou de contacts du secteur aérien, sans confirmation directe de la victime.
-- **Analyse :** La publication revendique une base CSV de **18 Mo** et **31 657 lignes**, présentée comme une base de l'autorité de l'aviation civile. L'échantillon visible contient des identifiants, noms, adresses e-mail, numéros de téléphone, fonctions, affiliations professionnelles, dates et informations administratives. Les lignes visibles comprennent des références à plusieurs pays et organisations, notamment des domaines professionnels marocains, qataris, saoudiens et somaliens ; cela peut refléter une base multi-pays ou des relations internationales du secteur aérien, sans prouver la résidence ou la nationalité des personnes.
-
-  Le domaine `.ma`, le titre de la publication et le logo affiché soutiennent un lien avec le Maroc. Ils ne suffisent pas à confirmer l'origine technique du fichier, l'exhaustivité des **31 657 lignes**, l'accès à un système opérationnel de l'aviation civile ou la compromission de l'autorité. Les valeurs personnelles visibles ne sont pas reproduites dans le dépôt.
-- **Limites de preuve :** Analyse limitée à la publication et à l'échantillon visible ; le fichier CSV complet, son schéma, son empreinte, son volume réel, les doublons et la provenance technique n'ont pas été vérifiés. Aucun nom, e-mail, numéro de téléphone ou autre donnée personnelle brute n'est publié.
-- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL intervient le 29 octobre 2026. La publication initiale du 26 septembre 2026 est conservée comme contexte historique et ne crée pas de doublon avec le suivi d'octobre.
-
-### 29 septembre 2026
 #### 🇪🇬 Égypte - Techne Summit 2026 [Data Leak]
-- **Date de publication initiale :** 29 septembre 2026 à 15:24 (horodatage affiché ; fuseau horaire non précisé)
+- **Date de publication initiale :** 29 septembre 2026
+
 - **Acteur / Groupe :** ElMokhtare0 (compte affiché ; identité et affiliation attribuée à la publication)
 - **Secteur :** Événementiel / Conférences technologiques / Réseautage professionnel
 - **Site web officiel :** [technesummit.com/2026](https://www.technesummit.com/2026) ; [plateforme officielle de billetterie](https://tickets.techne.me/en/37/techne-summit-2026)
@@ -854,7 +880,6 @@ La publication du **10 septembre 2026**, attribuée à **EveN47**, revendique en
   **Unknown :** Le système source, le vecteur d'accès, la date d'extraction, l'exhaustivité des 320 572 enregistrements, le nombre de personnes uniques, le rôle exact de chaque contact, la publication effective du dump complet et toute confirmation officielle de Techne ne sont pas renseignés dans les sources consultées.
 - **Périmètre et limites de l'analyse :** Analyse limitée aux éléments visibles dans le matériel fourni ; aucun fichier source, hash, schéma complet ou archive n'a été fourni. Les noms, adresses e-mail, numéros et organisations visibles n'ont pas été reproduits.
 - **Évaluation des risques :** Si le corpus est authentique, l'exposition pourrait faciliter le phishing ciblé, l'usurpation de participants ou d'entreprises, la fraude événementielle et le démarchage malveillant. Aucun mot de passe, token ou donnée financière n'a été observé dans le matériel fourni.
-- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL intervient le 30 octobre 2026. La publication initiale du 29 septembre 2026 est conservée comme contexte historique et ne crée pas de doublon avec le suivi d'octobre.
 
 
 ## Incidents publiés ou signalés en octobre 2026

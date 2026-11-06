@@ -1,184 +1,15 @@
-# List of African cyberattack victims in July 2026 (42 victims)
+# List of African cyberattack victims in July 2026 (34 records)
 👉🏾 [French version](./victims_FR.md)
 
 ## July 2026
 
 ### July 01, 2026
-#### 🇳🇬 Nigeria / 🇨🇮 Côte d’Ivoire - Citizen ID Photo Dataset
 
-- **Initial publication date:** 02 February 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** azrekx
-- **Sector:** Government / Public administration / Identity documents
-- **Website:** Not specified
-- **AFRINTEL status:** Claim - Unverified
-- **Incident type:** Data Leak
-- **Confidence level:** Low
-- **Impact level:** Level 3
-
-- **Description:**
-
-  A forum post claims access to 10,669 current Nigerian and Ivorian citizen ID photos, including front-and-back images, with 1,500 images allegedly shared and an additional dataset offered for sale.
-
-- **Analysis:**
-
-  The publication is recorded as one multi-country data-leak claim affecting Nigeria and Côte d’Ivoire. The supplied evidence shows the actor’s statement but does not independently verify the dataset, the claimed volumes, the countries represented in the full collection, or the alleged sharing of 1,500 images. AFRINTEL does not collect or reproduce identity photos or personal data from the listing.
-
-
-### July 01, 2026
-#### 🇪🇬 Egypt - Ministry of Agriculture and Land Reclamation
-
-- **Initial publication date:** 11 June 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** V0idix, post published on a cybercriminal forum
-- **Sector:** Government / Public administration / Agriculture
-- **Website:** [moa.gov.eg](https://moa.gov.eg)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 3
-
-- **Reliability note:**
-
-V0idix advertised the publication of more than 700 MB of data attributed to the Egyptian Ministry of Agriculture and Land Reclamation. The reviewed files establish that the provided corpus contains a coherent collection of internal administrative documents mainly associated with the General Authority for Rehabilitation Projects and Agricultural Development. This finding does not independently establish the acquisition method, the completeness of the advertised archive or official victim confirmation.
-
-- **Description:**
-
-V0idix released PDF, XLS, XLSX, ODS, ODT and image files presented as originating from the ministry and several related administrative entities. The material covers land management, agricultural associations, financial recovery, development projects, archiving, information systems and the processing of state-owned land requests.
-
-- **CTI analysis:**
-
-The observed documents include official correspondence, land contracts, administrative decisions, payment notices, regularisation records, inspection reports, agricultural association accounts and payment histories. Several files contain institutional letterheads, internal references, official stamps, signatures and handwritten annotations, increasing confidence in their administrative origin.
-
-The archives also expose information relating to beneficiaries, agricultural association representatives and government officials, together with plot references, land areas, outstanding amounts, payment schedules, disputes, termination or regularisation decisions and debt-recovery proceedings. Some records cover unauthorised occupation, eviction requests and exchanges between multiple government bodies.
-
-Precise geospatial data was also disclosed. Two documents provide the boundaries and geographic coordinates of plots covering **953 feddans** and **3,836 feddans**, enabling the affected land to be located and its perimeter reconstructed.
-
-The technical material includes a named organisational chart covering network, technical support, GIS, statistics, archiving and documentation teams. An equipment inventory lists **389 computers, 87 scanners and 214 printers**, representing **690 devices**, together with their models and departmental distribution.
-The data visible in a government application interface used to process state-owned land recovery requests shows **30,456 requests** and fields relating to the applicant, national identity number, public authority, location, land area and case status.
-
-A software manual found in the corpus contains initial accounts associated with several privilege levels. Their current use by the ministry has not been demonstrated, but they may create additional exposure if default credentials or configurations were retained.
-
-The material may support targeted phishing against government employees and agricultural associations, identity fraud, land-related fraud, document forgery and manipulation of administrative procedures. Organisational charts, technical inventories and visible application details also provide useful intelligence for reconnaissance and targeted attacks against internal systems.
-
-- **Recommendations:**
-
-1. Identify affected systems and accounts, reset sensitive access, remove default credentials and review authentication, administrative and land-record access logs.
-
-2. Identify exposed individuals and records, monitor phishing and document-fraud attempts, and investigate unusual changes to land, financial or administrative case files.
----
-
-### July 01, 2026
-#### 🇪🇬 Egypt - Heliopolis University
-
-- **Initial publication date:** 02 February 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** CrowStealer, post published on a cybercriminal forum
-- **Sector:** Education / Higher Education
-- **Website:** Not specified
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 3
-
-- **Description:**
-
-  Heliopolis University is a private Egyptian university established near Cairo, with programmes in engineering, pharmacy, business and economics, physical therapy and organic agriculture.
-
-- **Analysis:**
-
-  A forum publication by CrowStealer dated 02 February 2026 advertises a database associated with Heliopolis University containing 19,790 records. The local workbook supplied for analysis contains 62 structured account records, including 38 Parent accounts and 24 Student accounts; the complete advertised volume was not independently verified from the available file.
-
-  The reviewed schema includes usernames, names, email addresses where present, telephone fields, institution type, last-IP fields, account creation timestamps and suspension status. All 62 records contain a stored password value classified in the workbook as either a 32-character hexadecimal hash or bcrypt (`$2y$`); AFRINTEL did not attempt to crack, reproduce or publish any password value. Only 24 email addresses and 8 last-IP values are populated in the reviewed file.
-
-  The combination of student/parent account data, contact details and password hashes could facilitate phishing, credential stuffing and account takeover if passwords were reused elsewhere. The exact acquisition method, completeness of the 19,790-record claim and independent confirmation by the university remain unknown.
-
-### July 01, 2026
-#### 🇪🇬 Egypt - HIMS University
-
-- **Initial publication date:** 02 February 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** leakdealer, post published on a cybercriminal forum
-- **Sector:** Education / Higher Education
-- **Website:** [hims.edu.eg](https://hims.edu.eg)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium
-- **Impact level:** Level 4
-
-- **Description:**
-
-  HIMS University is presented in the source as an Egyptian higher-education institution. The domain `hims.edu.eg` is observed in the supplied sample, but the institution's official identity and the completeness of the advertised archive were not independently verified.
-
-- **Analysis:**
-
-  A forum post dated 02 February 2026 advertises a database allegedly associated with HIMS University, with a claimed total of 28,124 records and student/staff personal data, financial records and payment-gateway information. The publication lists CSV files covering student accounts, payment records, privilege mappings, balances, bank-related transaction logs, staff details and system metadata. The actor also claims exposure of plaintext credentials and payment-gateway API material; these claims were not independently verified from the visible material supplied.
-
-  The file counts displayed in the source add up to 28,004 records, which is 120 fewer than the advertised total of 28,124. This discrepancy, together with the absence of a reviewed archive, prevents confirmation of the complete volume and scope. If genuine, the combination of student and staff PII, account credentials, financial information and payment-system material could create significant risks of phishing, account takeover, payment fraud and further unauthorized access. AFRINTEL does not reproduce any personal data, credential, API key, national identifier or financial record from the sample.
-
-
-
-### July 01, 2026
-#### 🇩🇿 Algeria - Unidentified government entity (Fortinet access)
-
-- **Initial publication date:** 08 April 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** AckLine, post published on a cybercriminal forum
-- **Sector:** Government / Public administration
-- **Website:** Not identified with sufficient confidence
-- **AFRINTEL status:** Claim - Unverified
-- **Incident type:** Access Sale
-- **Confidence level:** Low
-- **Impact level:** Level 3
-
-- **Description:**
-
-The post advertises the sale of alleged Fortinet-related access to an unidentified Algerian government entity, with contact details provided via qTox. No specific organization, domain, price or technical evidence is disclosed.
-
-- **Analysis:**
-
-The actor AckLine published a short listing offering access described only as "Fortinet" and associated with "Algeria gov", without naming a specific ministry, agency or domain. The listing gives no price figure ("$$$ offer price"), no data sample, and no technical proof of access such as a screenshot of a management console, VPN portal or configuration. Negotiation is directed to an external qTox contact, which is consistent with typical access-broker listings but does not itself confirm that the offered access is genuine.
-
-Given the absence of a named victim, verifiable evidence or pricing detail, this claim is assessed with low confidence. If genuine, unauthorized access to a Fortinet appliance (firewall/VPN) belonging to an Algerian government entity could enable network intrusion, lateral movement and further compromise of connected systems.
-
-- **Recommendations:**
-
-1. Algerian government entities should audit exposed Fortinet devices, apply available security patches, and review VPN/firewall access logs for anomalous activity.
-2. Monitor cybercriminal forums and access-broker listings referencing Algerian government infrastructure for follow-up claims that could confirm or clarify the target.
----
-
-
-### July 01, 2026
-#### 🇬🇭 Ghana - Nerasolgh (nerasolgh.com)
-
-- **Initial publication date:** 07 January 2026
-- **AFRINTEL detection date:** 01 July 2026
-- **Actor / Group:** Solonik, post published on a cybercriminal forum
-- **Sector:** Public Utility / Waste Management Services (Government-adjacent)
-- **Website:** [nerasolgh.com](https://nerasolgh.com)
-- **AFRINTEL status:** Data Fully Published
-- **Incident type:** Data Leak
-- **Confidence level:** Very High
-- **Impact level:** Level 4
-
-- **Description:**
-
-  Nerasolgh (nerasolgh.com) operates an integrated waste management billing system used to manage customer accounts, collection routes and payments for sanitation/waste-collection services in Ghana, including USSD-based mobile-money bill payment.
-
-- **Analysis:**
-
-  AFRINTEL reviewed a post published on 7 January 2026 by the actor Solonik, titled "NERASOLGH.COM - 26M FULL PII + BANK DATA + GEO + HASHES (SQL DUMP)", and independently obtained and reviewed the underlying database files referenced in the post. The actor claims 26,082,134 total records in SQL format, covering full name, phone number, email address, physical address, GPS coordinates, gender, password hashes and bank details, with a full archive offered for download.
-
-  AFRINTEL's review of three referenced database exports confirms the schema and country markers described by the actor: a 293,232-row customer table (`iwms_new.customers`) containing full name, primary and secondary phone numbers, postal/street address, Ghana Post GPS digital address, GPS coordinates, gender, a bank-details field and bcrypt password hashes; a 2,604-row staff/agent user table (`iwms_new.users`) containing name, email, phone number, role (administrator, waste-collection agent, subscriber), bcrypt password hash, API access token and session token; and a 1,357,156-row USSD mobile-money transaction log recording customer ID, customer name, payment amount, MSISDN, mobile network operator, transaction status and timestamps, consistently tied to Ghanaian (+233) phone numbers. The combined roughly 1.65 million rows reviewed are structurally consistent with the actor's claim but substantially smaller than the 26 million records advertised, indicating the full advertised dump likely includes additional tables not present in the material reviewed.
-
-  The exposure of customer bank details and password hashes alongside administrator API and session tokens creates a risk of account takeover, fraudulent redirection of bill payments, credential-stuffing against reused passwords, and further compromise of the platform's administrative backend if the tokens remain valid. The exact structural and geographic match between the reviewed files and the actor's claim, combined with the scale and sensitivity of the reviewed material, supports a very high confidence assessment of the sample's attribution. It does not validate the advertised 26-million-record volume, the acquisition method or official victim confirmation. AFRINTEL does not reproduce any customer name, phone number, address, password hash, bank detail, transaction record or credential from the reviewed material.
-
-
-### July 01, 2026
 #### 🇨🇮 Ivory Coast - Hôpital Catholique Saint Joseph Moscati
+- **Initial publication date:** July 01, 2026
 
-- **Initial publication date:** 01 July 2026
-- **AFRINTEL detection date:** 01 July 2026
+
+
 - **Ransomware group:** krybit
 - **Sector:** Healthcare, hospital
 - **Website:** [moscati.org](https://moscati.org/)
@@ -210,134 +41,71 @@ resale_status: unknown
 last_checked_at: 2026-07-01
 -->
 
-### July 01, 2026
-#### 🇪🇬 Egypt - Egyptian Medical Laboratories (multi-organisation claim)
+#### 🇨🇮 Côte d'Ivoire - Virtual University of Côte d'Ivoire (UVCI)
+- **Initial publication date:** July 01, 2026
 
-- **Initial publication date:** February 1, 2026
-- **AFRINTEL detection date:** July 1, 2026
-- **Actor / Group:** CrowStealer
-- **Sector:** Healthcare / Medical Laboratories
-- **Website:** results.u-carelabs.com; marzouk-labs.com; hassablabsresults.com; mabaralabs-results.com
-- **AFRINTEL status:** Claim - Data Sample Published
+
+- **Author / Publication account:** Sensitive2025
+- **Sector:** Higher education / University administration
+- **Associated website:** [uvci.edu.ci](https://www.uvci.edu.ci/); displayed service subdomain: `licences3.uvci.online`
+- **Status:** Data Fully Published
 - **Incident type:** Data Leak
-- **Confidence level:** Medium
-- **Impact level:** Level 3
-
-- **Description:**
-
-  The publication advertises patient-result data allegedly associated with four Egyptian medical-laboratory platforms.
-
-- **Analysis:**
-
-  The post claims 5,529 records in a CSV file named `egy_labs.csv`, covering December 2025 to January 2026. The displayed schema includes laboratory name, patient name, mobile number, accession number, visit date, test type and result-drive reference. The sample shows structured medical-laboratory records, but the authenticity, completeness, exact ownership and independent relationship between the four domains are not confirmed. AFRINTEL records this as one multi-organisation data-leak claim and does not reproduce patient names, contact details or individual file links.
-
-
-
-### July 02, 2026
-#### 🇹🇳 Tunisia - Adex.tn
-
-- **Initial publication date:** 20 June 2026
-- **AFRINTEL detection date:** 02 July 2026
-- **Actor / Group:** BIGBROTHER, repost on a cybercriminal forum
-- **Sector:** Transportation / Logistics / Courier and Parcel Delivery
-- **Website:** [adex.tn](https://adex.tn)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Access Sale
-- **Confidence level:** High
-- **Impact level:** Level 2
-
-- **Description:**
-
-  Adex.tn is a Tunisian shipping and parcel-delivery company operating through a network of local agencies across the country, providing order and package tracking services for its clients.
-
-- **Analysis:**
-
-  AFRINTEL reviewed a forum post published on 20 June 2026 by the actor BIGBROTHER, titled "{REPOST} [Tunisia] Data Leak from Adex.tn" and tagged as a sale listing, describing "15k personal Data from shipping and transporting company of Tunisia 'Adex.tn'" and linking to an externally hosted proof image, with a Session messenger identifier provided for direct contact. The post is explicitly marked as a repost, indicating the material originates from an earlier, unidentified source rather than an intrusion claimed first-hand by BIGBROTHER.
-
-  Analysis of the data visible in the provided material identified an Adex order-management interface listing individual shipment records across multiple Tunisian agencies, including Sfax, Siliana, Ben Arous, Tunis, Nabeul and Sousse. The interface displays a pagination count of 15,301 records, consistent with the advertised "15k" figure. No exported data file, database dump or downloadable archive was available; analysis was limited to the visible administrative interface rather than an extracted source dataset.
-
-  The match between the claimed record count and the visible total supports a high-confidence assessment that the published material plausibly depicts administrative access. It does not independently establish the original intruder, whether the access remained active or the scope of fields available beyond client names and shipment metadata. If genuine, access to a logistics back office of this kind could expose customer contact details, delivery addresses and shipment patterns and support fraud, parcel interception or social engineering. AFRINTEL does not reproduce any client name, order reference or account detail from the reviewed material.
-
-
-### July 02, 2026
-#### 🇹🇳 Tunisia - Ministry of Vocational Training and Employment (mfpe.gov.tn)
-
-- **Initial publication date:** 20 June 2026
-- **AFRINTEL detection date:** 02 July 2026
-- **Actor / Group:** BIGBROTHER, repost on a cybercriminal forum
-- **Sector:** Government / Public Administration / Vocational Training and Employment
-- **Website:** [mfpe.gov.tn](https://mfpe.gov.tn)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Access Sale
-- **Confidence level:** Medium
-- **Impact level:** Level 3
-
-- **Description:**
-
-  The Ministry of Vocational Training and Employment (Ministère de la Formation Professionnelle et de l'Emploi, mfpe.gov.tn) is the Tunisian government body responsible for vocational training policy and employment services, including the processing of citizen applications and requests related to training programs and job placement.
-
-- **Analysis:**
-
-  AFRINTEL reviewed a forum post published on 20 June 2026 by the actor BIGBROTHER, one minute before the same actor's repost concerning Adex.tn and using an identical Session contact identifier, titled "{REPOST} [Tunisia] Data Leak from mfpe.gov.tn" and tagged as a sale listing, describing "4,000 personal Data from Ministry of Vocational Training and Employment of Tunisia 'mfpe.gov.tn'" and linking to an externally hosted proof image. As with the related Adex.tn post, this listing is explicitly marked as a repost of material from an earlier, unidentified source.
-
-  Analysis of the visible data identified an Arabic-language ministry request-management interface listing individual citizen requests with full name, national ID/passport number, date of birth, governorate, phone number, request number, submission date, processing status and field of specialty. No total record count is visible, so the advertised "4,000" figure could not be independently corroborated from the provided material.
-
-  The structure and content are consistent with a plausible government case-management interface, but the visible material does not independently establish the access method, its current validity or the original intruder. The combination of national identity numbers, dates of birth and phone numbers for named citizens interacting with a ministry constitutes sensitive administrative personal data. If genuine, such access could support identity fraud, impersonation in administrative procedures and targeted phishing. In the absence of a verifiable record count or an independently reviewed data export, AFRINTEL assesses this claim with medium confidence and does not reproduce any citizen name, national ID/passport number, date of birth, phone number or request detail.
-
-
-### July 02, 2026
-#### 🇹🇳 Tunisia - Tayara.tn
-
-- **Initial publication date:** 08 June 2026
-- **AFRINTEL detection date:** 02 July 2026
-- **Actor / Group:** KLINZO007, post published on a cybercriminal forum
-- **Sector:** E-commerce / Online Classifieds Marketplace
-- **Website:** [tayara.tn](https://tayara.tn)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Very High
+- **Confidence level:** High for attribution of the supplied corpus to the UVCI ecosystem; Medium for compromise of the production system
 - **Impact level:** Level 4
+- **Victim description:** The Virtual University of Côte d'Ivoire (UVCI) is an Ivorian digital higher-education institution. The publication associates the organisation and a service subdomain with a university-account database.
+- **Analysis:** The observed publication presents a “Fresh Database” attributed to UVCI, associates the `licences3.uvci.online` subdomain with a university service and claims an approximately 8 GB SQL database. AFRINTEL analysed the entire locally supplied SQL dump read-only, not a sample: **8,721,338,295 bytes**, SHA-256 `17e60b953b9196ea6fee65344da4e17b38839c092e4239e49e8662b558736501`. All 10 associated CSV files were also analysed in full; the 11 files total approximately **8.76 GB**. Download links, personal values and secrets are not reproduced.
 
-- **Description:**
+  **Observed - structure and coverage:** The dump is a MySQL 8.0.42 export of the `licences3` database with **490 tables**, **226 populated tables**, approximately **56,714,959 records** recomputed from SQL tuples and **8,749 INSERT statements**. It includes `mdl_user`, `mdl_user_enrolments`, `mdl_logstore_standard_log`, `mdl_session`, `mdl_files`, `mdl_messages`, `mdl_grade_grades`, `mdl_inscription_pedagogique_uvci`, `mdl_inscription_semestrielle`, `mdl_passerelle_uvci`, cohort, group and role tables.
 
-  Tayara.tn is Tunisia's largest online classifieds marketplace, part of the international Adevinta classifieds group, covering categories such as vehicles, real estate and jobs and connecting individual and business sellers with buyers across the country.
+  Major observed volumes include **16,410,270 Moodle logs**, **17,972,218 question-attempt step-data rows**, **9,481,515 attempt steps**, **3,221,383 question attempts**, **561,444 grade rows**, **605,111 files**, **554,701 Moodle sessions**, **193,269 additional application sessions**, **30,275 messages**, **91,042 user-enrolment associations**, **88,789 role assignments**, **58,299 cohort memberships**, **43,812 pedagogical registrations**, **6,993 users**, **154 external tokens** and **4,635 user private keys**. Session and log schemas contain IP addresses, timestamps, actions, users, courses and session data; no raw value is published.
 
-- **Analysis:**
+  **Observed - accounts and academic data:** `mdl_user.csv` contains **6,993 accounts**, all using manual authentication and marked confirmed; **6,891** are not suspended, **102** are suspended and **21** are marked deleted. The 6,993 user IDs, usernames and email addresses are distinct. Each account has a 60-character bcrypt-like password hash. Profile data includes identity, contact, institution, training, location, login dates, last IP, account status and semester fields.
 
-  AFRINTEL reviewed a post published on 8 June 2026 by the newly registered actor KLINZO007 (account created June 2026, low reputation), titled "[MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump]". The actor claims to hold the complete Tayara.tn user database: over 2,000,000 lines, a 4 GB raw dump, containing full names, active users' mobile phone numbers, email addresses, hashed passwords, ad titles and descriptions (vehicles, real estate, jobs), verified listing prices and full nationwide category/location coverage. Rather than a public download link, the post states the dump is "ready to send" on request via Telegram and TOX contact, and includes a short raw data sample directly in the thread.
+  `mdl_passerelle_uvci.csv` contains **4,398 accounts**, all in Licence 2 / S3, with **3,047** `reinscription=1` values and **1,351** set to `0`. `mdl_inscription_semestrielle.csv` contains **8,559 registrations**, including **8,557** in Licence 2 / S3. The `moyenne_uvci` exports contain **47,553 result rows**, with course, level, speciality, semester, grade, examination-session and academic-status fields. Historical exports contain **21,029** rows for May 2024 and **17,034** for August 2023. `moyenne_uvci(1).csv` is a separate list of **3,802 email addresses**, matching accounts present in the current user and result exports.
 
-  AFRINTEL independently reviewed the published sample. It consists of structured user records including internal platform and group-wide identifiers (linking each account to Adevinta's shared user-identity system), account creation timestamps, a retained history of prior state changes per account (previous display names, emails and phone numbers), avatar URLs, phone numbers, and salted password hashes (pbkdf2-sha256). Notably, a subset of the reviewed records additionally contain full RSA-style private and public key material embedded directly in the user record, associated with per-account cryptographic functionality; exposure of this key material is a significant risk in its own right, independent of password strength, as it could enable impersonation or decryption of anything secured with the affected keys. One reviewed record also contained a stored cross-site-scripting payload in place of a display name, indicating either a persisted historical attack against the platform or contamination from automated scanning.
+  Comparison of `moyenne_uvci.csv` and `moyenne_uvci_25_06_2025_21h-16.csv` shows the same set of **47,553 keys**: **44,683 rows are identical** and **2,870 rows changed**, mainly in examination session 2, status and final-average fields. This is compatible with distinct application states or extracts; it does not date the actor’s access.
 
-  The exact structural match between the actor's description and the independently reviewed sample, together with the plausibility and internal consistency of the records, supports a very high confidence assessment. Given the combination of full identity data, password hashes and per-account private key material at national platform scale, AFRINTEL rates this incident's impact as Level 4. AFRINTEL does not reproduce any user name, phone number, email address, password hash, cryptographic key or record from the reviewed material.
+  **Observed - secrets and authentication:** `mdl_user.csv` and `mdl_passerelle_uvci.csv` contain **6,993** and **4,398** bcrypt-like password hashes respectively. `mdl_enrol(1).csv` contains **3,824 enrolment configurations**, including **2,972 non-empty four-character password values** and **852 empty fields**; these values do not match a hash format and must be treated as potentially exposed secrets, without reproduction or testing. The presence of **154 external tokens**, **4,635 user private keys**, sessions and session data increases the risk of secondary compromise; their current validity is not described in the available material.
+
+  **Integrity and consistency checks:** All 10 CSV files are readable as UTF-8 or ASCII, with **0 malformed rows** and **0 complete duplicate rows** detected. CSV row counts match the SQL tables where applicable: 6,993 users, 8,559 semester registrations, 4,398 gateway records and 47,553 current results. Hashed email cross-checks between users, registrations, gateway records and grade exports are strong; the `uvci.edu.ci` and `licences3.uvci.online` domains, Moodle/UVCI tables, language settings and course structures form a coherent UVCI environment. Partial repetitions in historical and registration exports are consistent with users appearing across cohorts, semesters or repeated extracts and must not be summed as unique persons.
+
+  **Analytical assessment:** The supplied corpus is highly consistent with a complete application-environment export from `licences3`, used by the UVCI ecosystem. The publication, coherent schemas, domains, accounts, courses, logs and academic data make attribution of the corpus to UVCI highly plausible. The sources consulted do not specify the access vector, acquisition date, initial exfiltration, production-system compromise or completeness of the original database beyond the supplied files.
+
+  **Unknown:** The actor’s access date and method, exact production-system scope, existence of a separate exfiltration, current validity of hashes, tokens, keys and enrolment passwords, globally deduplicated number of unique persons, notifications by UVCI and any official confirmation remain unknown. File dates in June 2026, displayed publication dates and application timestamps must not be merged into a single intrusion date.
+
+  **Attribution and impact conclusion:** The complete analysis of the supplied SQL dump and 10 CSV files confirms a corpus rich in identity, contact, training, registration, academic-result, account, file, message, log, IP-address, session and authentication artefacts, strongly consistent with the UVCI environment. Risks include credential reuse, targeted phishing, student and staff impersonation, academic fraud, privacy harm, exploitation of still-active sessions or tokens and secondary compromise of connected services. No name, email address, telephone number, identifier, IP address, hash, token, key or other raw personal data is reproduced in the repository.
+- **Evidence limitations:** The completeness of the supplied SQL file and 10 CSV files was analysed; completeness of the original UVCI system database, access date, intrusion vector, initial exfiltration, current secret validity and production-system compromise are not documented in the public sources. `Data Fully Published` describes the observed publication and supplied corpus; it is not an official incident confirmation or proof that the entire source database was extracted.
+- **Classification decision:** Incident assigned to July 2026 according to the initial 1 July 2026 publication.
+
+### July 04, 2026
+
+#### 🇨🇮 Côte d'Ivoire - Université Jean Lorougnon Guédé (UJLoG)
+- **Initial publication date:** July 04, 2026
 
 
-### July 02, 2026
-#### 🇲🇦 Morocco - Moroccan Public Procurement Portal
-
-- **Initial publication date:** 26 January 2026
-- **AFRINTEL detection date:** 02 July 2026
-- **Actor / Group:** B4baYega, post published on a cybercriminal forum
-- **Sector:** Government / Public Administration / Public Procurement
-- **Website:** [marchespublics.gov.ma](https://marchespublics.gov.ma)
-- **AFRINTEL status:** Claim - Unverified
+- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation not independently verified)
+- **Sector:** Higher education / University administration
+- **Associated website:** [ujlog.uvci.edu.ci](https://ujlog.uvci.edu.ci/)
+- **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
-- **Confidence level:** Low
+- **Confidence level:** High for sample attribution to the UJLoG environment; Medium for incident scope
 - **Impact level:** Level 3
+- **Victim description:** Université Jean Lorougnon Guédé (UJLoG) is an Ivorian university. The publication associates its subdomain with an account database from a university platform.
+- **Analysis:** The supplied sample presents a Moodle-type user schema containing account identifiers, usernames, identity fields, email addresses, institution, department, location, language, access timestamps, IP addresses and bcrypt password hashes. Twelve individual records are visible in the supplied extract; the observed accounts and addresses primarily use the `ujlog.uvci.edu.ci` ecosystem, with UJLoG/UVCI institutional references. The `username`, `email`, `institution`, `department`, `city`, `country`, `lastlogin`, `currentlogin` and `lastip` fields indicate an operational account-management database rather than a simple name list.
 
-- **Description:**
+  Consistency between the `ujlog.uvci.edu.ci` domain, UJLoG institutional labels, the Moodle structure, French-language settings, `CI` country values, profile information and bcrypt hashes strongly supports attribution of the sample to UJLoG's digital environment. The sample can therefore be assessed as highly consistent with that environment. As the remainder of the dump is no longer available, the analysis is strictly limited to the data visible in the supplied sample and cannot verify total volume, duplicates or dataset completeness.
 
-  The Moroccan Public Procurement Portal is the national exchange platform connecting public buyers and suppliers. It supports the publication and consultation of tenders, purchase orders, procurement results, official records and planned public procurement programmes, and is associated with the Kingdom's General Treasury.
-
-- **Analysis:**
-
-  A cybercriminal-forum post attributed to B4baYega, originally published on 26 January 2026 and re-reviewed by AFRINTEL on 02 July 2026, advertises the alleged compromise of the portal's database and offers the material for USD 300. The actor claims approximately 35,000 records, 25,000 documents and a compressed RAR archive of about 16 GB, with structured data in CSV format and documents including PDF and DOCX files. The provided material shows no database structure, column names or document contents. Although the post refers to text and photographic samples, no usable sample is directly visible; authenticity, origin, age, actual document count and archive completeness therefore remain unverified. Given the portal's role, the claimed material could support identification of public buyers, suppliers, procurement procedures and government commercial relationships, as well as targeted phishing, procurement fraud, supplier impersonation and social engineering. The visible material establishes the existence and stated characteristics of a sales offer, but does not independently demonstrate compromise of the portal or possession of the complete database.
-
+  The exposed data could facilitate targeted phishing, student or administrative account impersonation, credential reuse and analysis of login patterns. No name, email address, telephone number, IP address, hash or other individual data is reproduced in the repository.
+- **Evidence limitations:** The sample is strongly consistent with UJLoG, but it does not confirm the access date, intrusion vector, initial exfiltration, production-system compromise or total number of affected individuals. The remainder of the dump is unavailable for analysis; the findings must not be extrapolated to the full claimed dataset.
+- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 25 October 2026 and the July report had already been made public. The 4 July 2026 publication is retained as historical context; it does not create a duplicate in the October tracking set.
 
 ### July 06, 2026
-#### 🇪🇬 Egypt - EBNY Development
 
-- **Initial publication date:** 06 July 2026
-- **AFRINTEL detection date:** 06 July 2026
+#### 🇪🇬 Egypt - EBNY Development
+- **Initial publication date:** July 06, 2026
+
+
+
 - **Ransomware group:** TheGentlemen
 - **Sector:** Real estate development
 - **Website:** [ebny.com.eg](https://ebny.com.eg/)
@@ -369,11 +137,11 @@ resale_status: unknown
 last_checked_at: 2026-07-06
 -->
 
-### July 06, 2026
 #### 🇰🇪 Kenya - East African Gasoil Limited (EAGOL)
+- **Initial publication date:** July 06, 2026
 
-- **Initial publication date:** 06 July 2026
-- **AFRINTEL detection date:** 06 July 2026
+
+
 - **Ransomware group:** arcusmedia
 - **Sector:** Fuel distribution, oil and gas
 - **Website:** [eastafricangasoil.com](https://www.eastafricangasoil.com/)
@@ -405,11 +173,49 @@ resale_status: unknown
 last_checked_at: 2026-07-06
 -->
 
-### July 10, 2026
-#### 🇲🇦 Morocco - Eurodefi
+### July 08, 2026
 
-- **Initial publication date:** 10 July 2026
-- **AFRINTEL detection date:** 10 July 2026
+#### 🇩🇿 Algeria - Directorate-General for Scientific Research and Technological Development (DGRSDT)
+- **Initial publication date:** July 08, 2026
+
+
+
+- **Incident date:** 8 July 2026 (date supplied for the incident; initial access date not established)
+- **Actor / Group:** anisanas2
+- **Sector:** Government / Scientific research
+- **Website:** [dgrsdt.dz](https://www.dgrsdt.dz/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Source type:** Underground Forum and Messaging Channel - Direct AFRINTEL Observation
+- **Public sources:** [Official DGRSDT profile](https://www.dgrsdt.dz/public/index.php/fr/about_dgrsdt)
+
+- **Victim Description:**
+
+  The Directorate-General for Scientific Research and Technological Development (DGRSDT) is an Algerian government directorate operating under the authority of the minister responsible for scientific research. It implements national scientific research and technological development policy, including research programming, evaluation, university research, human resources and programme funding.
+
+- **Analysis:**
+
+  **Observed:** The observed publication, attributed to anisanas2, is dated 8 July 2026 at 18:33 according to the visible timestamp. It claims a compromise of DGRSDT and offers a dataset described as containing government identifiers for doctoral researchers and scientists, personal information, enrolment certificates, selfies and doctoral project files. The advertised price is **USD 800**; the publication claims **6,000 identifiers** and **6,000 profiles**. These figures and the compromise remain actor claims.
+
+  The supplied CSV, analysed in full, contains **1,000 records and 29 columns** with a consistent row width. It includes fields relating to researchers, supervisors, institutions, degrees, situations, contact details and national identifiers. **Sixteen rows are exact duplicates beyond the first occurrence.** Populated national-identifier fields are predominantly 18 digits in both profile blocks; no personal value is reproduced here.
+
+  The profiles archive contains **4,123 files**, representing approximately **2.46 GB** uncompressed. Hash analysis identifies **2,185 unique contents**, with **1,938 exact duplicate files** beyond the first occurrence. File signatures are predominantly images; 3,950 image files were verified by reading, while 172 could not be validated by the image library used. The certificates archive contains **100 files**, comprising 51 PDFs and 49 images across 58 PDF pages; no file is encrypted and no exact duplicate was detected.
+
+  Profile-archive filenames match CSV names or identifiers for **1,042 files and 444 rows**. In the certificates archive, **25 files** match names present in **26 CSV rows**. These matches, the field structure, the documents and the visual elements associated with the publication support a high-confidence assessment of the sample's structural authenticity and attribution to data linked to DGRSDT.
+
+  **Assumption:** The consistency between DGRSDT's official mission, the doctoral CSV schema, the certificates, profile imagery and filename matches makes association of the corpus with the DGRSDT ecosystem plausible. It does not establish the access vector, extraction or official confirmation of the organisation's compromise.
+
+  **Unknown:** The actual number of affected people, completeness of the full dataset, validity of the claimed **6,000 profiles**, access date and method, affected systems, exfiltration, operational impact, victim confirmation and disclosure of the full set remain unknown. The archives were examined locally in read-only mode; no raw personal data is published. Analysis of visual documents is limited by the 172 image files that could not be validated and by the absence of a French or Arabic OCR model in the available environment.
+
+### July 10, 2026
+
+#### 🇲🇦 Morocco - Eurodefi
+- **Initial publication date:** July 10, 2026
+
+
+
 - **Ransomware group:** qilin
 - **Sector:** Professional services / Accounting and audit
 - **Website:** [eurodefis.com](https://www.eurodefis.com)
@@ -441,36 +247,13 @@ resale_status: unknown
 last_checked_at: 2026-07-10
 -->
 
-### July 10, 2026
-#### 🇩🇿 Algeria - Hassiba Ben Bouali University of Chlef (univ-chlef.dz)
-
-- **Initial publication date:** April 10, 2026
-- **AFRINTEL detection date:** July 10, 2026
-- **Actor / Group:** Phantom Atlas
-- **Sector:** Education / Higher education
-- **Website:** [univ-chlef.dz](https://www.univ-chlef.dz)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 3
-
-- **Description:**
-
-  Hassiba Ben Bouali University of Chlef is an Algerian public higher-education institution comprising nine faculties and two institutes.
-
-- **Analysis:**
-
-  Phantom Atlas published, on April 10, 2026, a claim of access to the university server's phpMyAdmin interface, addressed directly to the institution's director and framed as exposing "internal governance failures" rather than a mere technical exploit. The post's own text refers to access obtained and maintained since November 8, 2025. The post claims full access to administration panels and student databases, while explicitly stating it does not intend to leak student data. A follow-up message, posted after the site was taken down for maintenance, reiterates the claimed extended access and threatens further disclosures.
-
-  Analysis of the visible data identified two distinct databases presented through phpMyAdmin on univ-chlef.dz. The first corresponds to a CMS-type website database (table prefix `refx_`, including post, comment, user and SEO metadata tables), totaling 15 tables for approximately 152.5 MiB. The second corresponds to a staff administrative-management database (19 tables, including `ats`, `att_travail`, `fiche_paie`, `personne`, `grade`, `print_badge`), totaling approximately 13,630 rows for 1.7 MiB. A visible excerpt of the `ats` table displays named staff records including first and last name in French and Arabic, gender, professional grade, date and place of birth, a photo reference, an appointment date, a faculty assignment code and a password stored as a 40-character hexadecimal hash.
-
-  The consistency of the visible interface, table names and fields, together with the site's maintenance shortly after the post, supports a high-confidence assessment that the published material plausibly depicts a university database environment. It does not independently establish how access was obtained, whether it remained active or whether all claimed databases were accessible. The visible staff data, including dates of birth and hashed passwords, creates a risk of identity theft, account compromise in case of password reuse, and targeted phishing against university staff. Analysis was limited to the visible material because the original database exports were not available; AFRINTEL does not reproduce any name, date of birth, place of birth, photo reference or hash value.
-
-
 ### July 11, 2026
-#### 🇹🇳 Tunisia - TOPNET
 
-- **AFRINTEL detection date:** 11 July 2026
+#### 🇹🇳 Tunisia - TOPNET
+- **Initial publication date:** July 11, 2026
+
+
+
 - **Actor / Group:** GreYyM3terr
 - **Sector:** Telecommunications / Internet Service Provider
 - **Website:** [topnet.tn](https://www.topnet.tn)
@@ -495,11 +278,11 @@ Access to a professional mailbox has significant operational value for a threat 
 
 No mailbox dump, downloadable archive or complete database is visible. The underground offer concerns the **sale of webmail access**, rather than the publication of an exfiltrated dataset.
 
-
-### July 11, 2026
 #### 🇹🇳 Tunisia - Orange Tunisia
+- **Initial publication date:** July 11, 2026
 
-- **AFRINTEL detection date:** 11 July 2026
+
+
 - **Actor / Group:** GreYyM3terr
 - **Sector:** Telecommunications / Telecom operator
 - **Website:** [orange.tn](https://www.orange.tn)
@@ -525,11 +308,11 @@ Access to a professional mailbox could allow a threat actor to map trusted relat
 No mailbox archive, database dump or complete email extraction is visible. The actor is primarily selling **webmail access**, with the visible interface used to support the offer.
 ---
 
-### July 11, 2026
 #### 🇲🇦 Morocco - Planet Sport
+- **Initial publication date:** July 11, 2026
 
-- **Initial publication date:** 11 July 2026
-- **AFRINTEL detection date:** 11 July 2026
+
+
 - **Actor / Group:** Mozvo, post published on a cybercriminal forum
 - **Sector:** E-commerce / Retail / Sporting goods
 - **Website:** [planetsport.ma](https://planetsport.ma)
@@ -552,12 +335,11 @@ No mailbox archive, database dump or complete email extraction is visible. The a
 
   **Relationship hypothesis:** the same domain, `planetsport.ma`, was previously listed by LockBit 5 on 29 April 2026 as an unverified ransomware claim. It is plausible that the July material was downloaded and freely republished or redistributed by a third party after an earlier LockBit-related exfiltration, or that Mozvo was an affiliate or associated operator. AFRINTEL found no evidence proving a relationship between Mozvo and LockBit 5, such as matching archive hashes, shared infrastructure, identical leak-site references or an explicit attribution. The July and April records are therefore retained as a possible free republication/redistribution or related double claim, with the relationship unresolved.
 
-
-### July 11, 2026
 #### 🇬🇭 Ghana - Golden Star Resources
+- **Initial publication date:** July 11, 2026
 
-- **Initial publication date:** 11 July 2026
-- **AFRINTEL detection date:** 11 July 2026
+
+
 - **Ransomware group:** cmdorganization
 - **Sector:** Gold mining
 - **Website:** [gsr.com](https://www.gsr.com/)
@@ -589,11 +371,38 @@ resale_status: unknown
 last_checked_at: 2026-07-11
 -->
 
-### July 13, 2026
-#### 🇨🇲 Cameroon - TurboSoft
+### July 12, 2026
 
-- **Initial publication date:** 13 July 2026
-- **AFRINTEL detection date:** 13 July 2026
+#### 🇨🇲 Cameroon - Ministry of Employment and Vocational Training (MINEFOP)
+- **Initial publication date:** July 12, 2026
+
+
+
+- **Incident date:** July 12, 2026
+- **Public analysis:** July 27, 2026
+- **Actor / Group:** ANTONKILL
+- **Sector:** Government / Public Administration
+- **Status:** Corroborated
+- **Incident type:** Defacement
+- **Confidence:** High
+- **Impact:** Level 2
+- **Description:** Cameroon's **Ministry of Employment and Vocational Training (MINEFOP)** develops and implements public policy on **employment, vocational training and professional integration**. Its responsibilities include career guidance, skills development and support for access to work. It is a national government ministry, not a private training college ([MINEFOP official mandate](https://minefop.gov.cm/fr/missions/)).
+
+- **Independent verification as of 18 October 2026:** **Publicly corroborated defacement:** Cameroon’s CIRT issued an advisory on the ANTONKILL campaign targeting the MINEFOP website in July 2026. The demonstrated scope is a web portal, not the entire ministry network. July incident.
+
+- **Additional verification sources:** [Source 1](https://cirt.cm/alerte-de-securite-campagne-antonkill-web-defacement-ciblant-les-institutions-sous-joomla-et-helix3/)
+
+- **Sources / Evidence:** [OBS-CC, July 27, 2026](https://obs-cc.org/defacement-antonkill-minefop/); [OBS-CC incident database](https://obs-cc.org/incidents/)
+
+OBS-CC, relying on an ANTIC CIRT alert, documented the defacement of the MINEFOP website in a campaign attributed to ANTONKILL. The depth of access, persistence and exposure of non-public data are not established.
+
+### July 13, 2026
+
+#### 🇨🇲 Cameroon - TurboSoft
+- **Initial publication date:** July 13, 2026
+
+
+
 - **Ransomware group:** spacebears
 - **Sector:** Business software and IT services
 - **Website:** [turbosoft.cm](https://turbosoft.cm/)
@@ -626,10 +435,12 @@ last_checked_at: 2026-07-13
 -->
 
 ### July 14, 2026
-#### 🇳🇬 Nigeria - i-Fitness Gym & Wellness Centre
 
-- **Initial publication date:** 14 July 2026
-- **AFRINTEL detection date:** 14 July 2026
+#### 🇳🇬 Nigeria - i-Fitness Gym & Wellness Centre
+- **Initial publication date:** July 14, 2026
+
+
+
 - **Ransomware group:** arcusmedia
 - **Sector:** Fitness, health and wellness
 - **Website:** [ifitness.ng](https://ifitness.ng/)
@@ -661,11 +472,11 @@ resale_status: unknown
 last_checked_at: 2026-07-14
 -->
 
-### July 14, 2026
 #### 🇿🇦 South Africa - BE Travel
+- **Initial publication date:** July 14, 2026
 
-- **Initial publication date:** 14 July 2026
-- **AFRINTEL detection date:** 14 July 2026
+
+
 - **Ransomware group:** arcusmedia
 - **Sector:** Corporate travel and events management
 - **Website:** [betravel.co.za](https://betravel.co.za/)
@@ -698,10 +509,12 @@ last_checked_at: 2026-07-14
 -->
 
 ### July 15, 2026
-#### 🇿🇦 South Africa - ISEGEN South Africa (Pty) Ltd
 
-- **Initial publication date:** 15 July 2026
-- **AFRINTEL detection date:** 15 July 2026
+#### 🇿🇦 South Africa - ISEGEN South Africa (Pty) Ltd
+- **Initial publication date:** July 15, 2026
+
+
+
 - **Ransomware group:** dragonforce
 - **Sector:** Chemical manufacturing
 - **Website:** [isegen.co.za](https://isegen.co.za/)
@@ -733,11 +546,11 @@ resale_status: unknown
 last_checked_at: 2026-07-15
 -->
 
-### July 15, 2026
 #### 🇿🇦 South Africa - Fidelity Services Group
+- **Initial publication date:** July 15, 2026
 
-- **Initial publication date:** 15 July 2026
-- **AFRINTEL detection date:** 15 July 2026
+
+
 - **Ransomware group:** ransomhouse
 - **Sector:** Integrated security and risk services
 - **Website:** [fidelity-services.com](https://fidelity-services.com/)
@@ -769,11 +582,36 @@ resale_status: unknown
 last_checked_at: 2026-07-15
 -->
 
-### July 16, 2026
-#### 🇧🇼 Botswana - North Atlantic Engineering Consultants
+#### 🇿🇦 South Africa - Rectron (Pty) Ltd
+- **Initial publication date:** July 15, 2026
 
-- **Initial publication date:** 16 July 2026
-- **AFRINTEL detection date:** 16 July 2026
+
+
+- **Detected incident date:** July 15, 2026
+- **SENS notification:** July 22, 2026
+- **Actor / Group:** Not officially attributed; DragonForce unconfirmed
+- **Sector:** Technology / IT Distribution
+- **Status:** Victim Confirmed
+- **Incident type:** Data Leak
+- **Confidence:** Very High
+- **Impact:** Level 3
+- **Description:** **Rectron (Pty) Ltd** is a South African **ICT products and solutions distributor** within the **Mustek** group. Its portfolio includes software, hardware, networking, data storage, cloud and data-centre solutions sold through resellers and technology partners. The company therefore operates within the technology supply chain ([Rectron official profile](https://www.rectron.co.za/pages/about)).
+
+- **Independent verification as of 18 October 2026:** **Official market disclosure:** on 22 July 2026 Mustek released a SENS notice concerning a cyber incident at Rectron. This establishes the incident but not necessarily the responsibility of a claiming group. July incident.
+
+- **Additional verification sources:** [Source 1](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
+- **Sources / Evidence:** [Mustek / JSE SENS, July 22, 2026](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
+
+Mustek announced that Rectron suffered a compromise affecting some IT systems and operations, with unlawful access to some data. Rectron launched incident response and notified the Information Regulator. The vector, data categories and exfiltrated volume remain unknown.
+
+### July 16, 2026
+
+#### 🇧🇼 Botswana - North Atlantic Engineering Consultants
+- **Initial publication date:** July 16, 2026
+
+
+
 - **Ransomware group:** dragonforce
 - **Sector:** Mechanical and electrical engineering consulting
 - **Website:** [northatlantic.bw](https://www.northatlantic.bw/)
@@ -805,65 +643,11 @@ resale_status: unknown
 last_checked_at: 2026-07-16
 -->
 
-### July 16, 2026
-#### 🇩🇿 Algeria - ATS (Algérie Télécom Satellite)
-
-- **Initial publication date:** April 16, 2026
-- **AFRINTEL detection date:** July 16, 2026
-- **Actor / Group:** Phantom Atlas
-- **Sector:** Telecommunications / Satellite Operator
-- **Website:** [ats.dz](https://www.ats.dz)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 3
-
-- **Description:**
-
-  ATS (Algérie Télécom Satellite) is the Algerian satellite operator, a subsidiary of the Algérie Télécom group, providing nationwide satellite telecommunications services.
-
-- **Analysis:**
-
-  Phantom Atlas published, on April 16, 2026, a claim of a full compromise of ATS's digital systems, stating it held the payroll slips of all of the company's employees. The message carries an explicitly pro-Moroccan hacktivist tone (quoting Morocco's royal motto "Allah, Al Watan, Al Malik"), framing the operation as a direct response to earlier cyberattacks targeting Morocco, and announces the upcoming release of a payroll sample along with staff names and positions.
-
-  AFRINTEL reviewed a local sample of 88 files (approximately 29 MB), mostly individual payroll slips in image format, dated from July 2023 to November 2024, along with a few more recent screenshots. The reviewed slips concern employees from different ATS regional directorates (Regional Directorate East-Constantine, South-East Directorate, among others) and display a consistent structure: employer number, staff ID, first and last name, hiring date, marital status, social security number, job title and category/grade, along with a full breakdown of salary items (earnings and deductions), the social-contribution base, taxable salary, bank account number and net amount payable. Several documents carry authentic-looking stamps from ATS's Human Resources Department or regional directorates.
-
-  The consistency of the format across the sample, the diversity of employees, directorates and time periods represented, and the presence of plausible official stamps support a high confidence level regarding the authenticity of this leak. Exposure of named payroll slips, including social security numbers and banking details, creates a high risk of financial fraud, identity theft and targeted phishing against ATS staff. AFRINTEL does not reproduce any name, staff ID, social security number, account number or salary figure from the reviewed sample.
-
-
-### July 16, 2026
-#### 🇪🇬 Egypt - BazookaEgy (bazookaegy.com)
-
-- **Initial publication date:** January 16, 2026
-- **Chronological qualification:** Publication treated as a new leak and reported in real time in January 2026; the September 2024 publication was identified only later during a retrospective review
-- **Earlier publication observed:** September 19, 2024, by MrMeeseeks; its relationship to the January 2026 publication is not established
-- **AFRINTEL detection date:** July 16, 2026
-- **Actor / Group:** MrMeeseeks (original leak); reposted by Sphere on a cybercriminal forum (RaidForums)
-- **Sector:** Fast Food / Retail
-- **Website:** [bazookaegy.com](https://www.bazookaegy.com)
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 2
-
-- **Description:**
-
-  Bazooka is an Egyptian fast-food chain, also present in Kuwait, the UAE, Qatar and Bahrain, with an online ordering and registration site.
-
-- **Analysis:**
-
-  The account Sphere reposted, on January 16, 2026, for the second time according to the post title ("[REPOST][REPOST]"), a leak originally attributed to the actor MrMeeseeks and titled "Egypt 1M Costumer information's bazookaegy.com". The sample shown in the post includes a field schema covering the registration channel (mobile_ios, mobile_android, IOS, web_site), an ID, first name, last name, email address and mobile number.
-
-  About thirty complete records are directly visible in the sample, with names (in Latin and Arabic characters), email addresses (including several Apple private-relay addresses) and Egyptian phone numbers. The consistency of the schema with an online ordering platform and the presence of numerous individual records support a high confidence level regarding the authenticity of this leak, although the total claimed volume of one million customers stated in the title could not be independently verified beyond the observed sample. Exposure of this data could facilitate targeted phishing and commercial spam against the chain's customers. AFRINTEL does not reproduce any name, email address or phone number from the reviewed sample.
-
-  **Relationship to the September 2024 publication.** Observed elements: the September 2024 publication attributed to MrMeeseeks claimed more than one million records, more than 752,000 unique emails, names and phone numbers; the January 2026 publication, treated as a new leak when it was disseminated and marked "[REPOST][REPOST]", presents a schema consistent with an ordering platform and a visible sample. Unestablished hypotheses: (1) republication of the same dataset; (2) a second leak from the same system after a new vulnerability or renewed access; (3) incremental extraction or addition of new records; (4) reuse or resale of the corpus by a third party; (5) partial copying with changed metadata or title; (6) data originating from a service provider, ordering platform or separate environment; (7) a fabricated, exaggerated or misattributed sample; (8) negotiation, sharing or transfer between actors. Unknowns: no hash, complete file, overlap comparison, technical timeline, initial-access evidence, transaction, payment or BazookaEgy confirmation is available to distinguish these scenarios. AFRINTEL therefore keeps the 2024 and 2026 publications as separate documentary events without concluding that they represent two independent compromises.
-
-
-### July 16, 2026
 #### 🇪🇬 Egypt - Sinai Grand Casino
+- **Initial publication date:** July 16, 2026
 
-- **Initial publication date:** 16 July 2026
-- **AFRINTEL detection date:** 16 July 2026
+
+
 - **Ransomware group:** dragonforce
 - **Sector:** Casino, gaming and entertainment
 - **Website:** [sinaigrandcasino.com](https://sinaigrandcasino.com/)
@@ -896,10 +680,12 @@ last_checked_at: 2026-07-16
 -->
 
 ### July 18, 2026
-#### 🇿🇦 South Africa - Reatile Group
 
-- **Initial publication date:** 18 July 2026
-- **AFRINTEL detection date:** 18 July 2026
+#### 🇿🇦 South Africa - Reatile Group
+- **Initial publication date:** July 18, 2026
+
+
+
 - **Ransomware group:** incransom
 - **Sector:** Investment holding, energy and industry
 - **Website:** [reatile.co.za](https://www.reatile.co.za/)
@@ -931,11 +717,36 @@ resale_status: unknown
 last_checked_at: 2026-07-18
 -->
 
-### July 19, 2026
-#### 🇿🇦 South Africa - CKR Consulting Engineers
+#### 🇰🇪 Kenya - Official website of the President of the Republic (`president.go.ke`)
+- **Initial publication date:** July 18, 2026
 
-- **Initial publication date:** 19 July 2026
-- **AFRINTEL detection date:** 19 July 2026
+
+
+- **Incident date:** July 18, 2026
+- **Government confirmation:** July 18, 2026
+- **Actor / Group:** Not publicly attributed
+- **Sector:** Government / Presidency
+- **Status:** Government Confirmed
+- **Incident type:** Defacement
+- **Confidence:** Very High
+- **Impact:** Level 3
+- **Description:** The domain **`president.go.ke`** hosts the **official website of the Presidency of the Republic of Kenya**. It publishes public information about presidential activities, the administration and coordination of government business. This record concerns **an official web portal**, not necessarily the Presidency's or Kenyan government's entire IT environment ([official portal](https://www.president.go.ke/)).
+
+- **Independent verification as of 18 October 2026:** **Government-confirmed:** Kenya’s ICT ministry acknowledged the defacement of `president.go.ke` on 18 July 2026 and said no sensitive-data compromise had been established. The event concerns a specific website in July.
+
+- **Additional verification sources:** [Source 1](https://www.aa.com.tr/fr/afrique/kenya-le-site-officiel-de-la-pr%C3%A9sidence-pirat%C3%A9-des-hackers-r%C3%A9clament-une-rancon-en-bitcoin/4002284)
+
+- **Sources / Evidence:** [ICT Authority / ministry statement, July 18, 2026](https://www.linkedin.com/posts/kenya-ict-board_ministry-of-information-communications-activity-7484210613053784065-Fy7R); [The Standard, July 18, 2026](https://www.standardmedia.co.ke/national/article/2001553147/kabogo-no-sensitive-data-accessed-after-presidents-website-hack)
+
+The Kenyan government confirmed the defacement of the presidential website, which displayed hostile messages, a wallet address and a demand for 5 BTC. No evidence of access to sensitive data or exfiltration was reported. The vector and attacker identity remain unknown.
+
+### July 19, 2026
+
+#### 🇿🇦 South Africa - CKR Consulting Engineers
+- **Initial publication date:** July 19, 2026
+
+
+
 - **Ransomware group:** payload
 - **Sector:** Multidisciplinary engineering consulting
 - **Website:** [ckr.co.za](https://ckr.co.za/)
@@ -968,8 +779,11 @@ last_checked_at: 2026-07-19
 -->
 
 ### July 21, 2026
+
 #### 🇹🇳 Tunisia - Ministry of Justice
-- **AFRINTEL detection date:** 21 July 2026
+- **Initial publication date:** July 21, 2026
+
+
 - **Actor / Group:** R3V4ULT
 - **Sector:** Government / Justice / Public administration
 - **Website:** justice.gov.tn
@@ -998,10 +812,12 @@ As the government sector remains particularly exposed to data leaks in Africa, o
 ---
 
 ### July 23, 2026
-#### 🇨🇮 Ivory Coast - Compagnie des Caoutchoucs du Pakidié (CCP)
 
-- **Initial publication date:** 23 July 2026
-- **AFRINTEL detection date:** 23 July 2026
+#### 🇨🇮 Ivory Coast - Compagnie des Caoutchoucs du Pakidié (CCP)
+- **Initial publication date:** July 23, 2026
+
+
+
 - **Ransomware group:** TheGentlemen
 - **Sector:** Rubber farming and natural rubber processing
 - **Website:** [pakidie.com](https://www.pakidie.com/)
@@ -1033,11 +849,11 @@ resale_status: unknown
 last_checked_at: 2026-07-23
 -->
 
-### July 23, 2026
 #### 🇸🇸 South Sudan - Nile Petroleum Corporation (NILEPET)
+- **Initial publication date:** July 23, 2026
 
-- **Initial publication date:** 23 July 2026
-- **AFRINTEL detection date:** 23 July 2026
+
+
 - **Ransomware group:** krybit
 - **Sector:** Oil and gas
 - **Website:** [nilepet.com](https://nilepet.com/)
@@ -1074,9 +890,12 @@ last_checked_at: 2026-07-23
 -->
 
 ### July 24, 2026
-#### 🇲🇦 Morocco - Distamed
 
-- **AFRINTEL detection date:** 24 July 2026
+#### 🇲🇦 Morocco - Distamed
+- **Initial publication date:** July 24, 2026
+
+
+
 - **Actor / Group:** anisanas2
 - **Sector:** Healthcare / Medical equipment
 - **Website:** [distamed.ma](https://distamed.ma)
@@ -1106,10 +925,11 @@ This exposure creates high risks of medical confidentiality breaches, identity t
 1. Investigate unusual access, exports and download activity, then immediately revoke potentially compromised accounts, sessions and keys.
 2. Notify affected individuals and institutions, then strengthen monitoring for identity fraud, invoice fraud and fraudulent changes to banking details.
 
-### July 24, 2026
 #### 🇲🇦 Morocco - Moroccan Biometric Passport Portal
+- **Initial publication date:** July 24, 2026
 
-- **AFRINTEL detection date:** 24 July 2026
+
+
 - **Actor / Group:** Magherbi, post published on a cybercriminal forum
 - **Sector:** Government / Public administration / Identity documents
 - **Website:** [passeport.ma](https://www.passeport.ma)
@@ -1147,11 +967,11 @@ No total file size, record count, price or download link is visible. The provide
 
 For AFRINTEL, the publication should be recorded as **one primary incident targeting `passeport.ma`**, with the four additional domains listed as further claimed platforms. Separate incidents should not be created without distinct evidence for each platform.
 
-### July 24, 2026
 #### 🇳🇬 Nigeria - Unidentified federal university (system access)
-
 - **Initial publication date:** July 24, 2026
-- **AFRINTEL detection date:** 24 July 2026
+
+
+
 - **Actor / Group:** nowornever, post published on a cybercriminal forum (RaidForums)
 - **Sector:** Government / Higher education (federal university)
 - **Website:** Not identified with certainty
@@ -1177,12 +997,13 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
   1. Nigerian federal universities exposing Windows Server, RDP or Microsoft 365 tenant services should review authentication and administrator access logs for the relevant period, and look for abnormal account creation or privilege escalation activity.
   2. Audit service and administrator accounts for reuse of personal passwords, and raise awareness among IT staff about storing personal or financial data on professional servers.
 
-
 ### July 25, 2026
-#### 🇿🇦 South Africa - MTN (attributed with reservation)
 
-- **Initial publication date:** 25 July 2026
-- **AFRINTEL detection date:** 25 July 2026
+#### 🇿🇦 South Africa - MTN (attributed with reservation)
+- **Initial publication date:** July 25, 2026
+
+
+
 - **Actor / Group:** ki4tane; publication claims association with NullSec Nigeria
 - **Sector:** Telecommunications
 - **Website:** [mtn.com](https://www.mtn.com/)
@@ -1198,11 +1019,14 @@ For AFRINTEL, the publication should be recorded as **one primary incident targe
 - **Analysis:**
 
   A forum post dated 25 July 2026 claims that customer and employee credentials linked to MTN were disclosed. The post refers to customer email/password material, approximately 2,000 employee credentials and downloadable files. AFRINTEL reviewed the evidence directory without reproducing records: client.emails.txt contains 130 lines, while the employee archive contains separate email, credential and password files with 381, 814 and 549 lines respectively. The employee email sample uses the mtn.com domain, supporting an apparent MTN corporate context but not the affected country or subsidiary with certainty. AFRINTEL attributes this record to South Africa with reservation: the actor frames the attack around tensions between South Africa and Nigerian nationals, and one fragment in the domain sample references "MTNGroupsa", which supports this attribution. MTN Group Limited is headquartered in Johannesburg, South Africa, so this fragment plausibly refers to the group's parent entity, whose email and IT infrastructure is often managed centrally; this does not establish that the affected customers or employees belong to the South African subsidiary specifically rather than another national operation. A Nigeria-linked fragment ("clientsupport.ng") also appears in the same sample, and the actor identifies as NullSec Nigeria, so the country attribution is treated as low-confidence and subject to revision. The data, access path and claimed complete volume have not been independently verified. AFRINTEL records one data-leak incident and does not reproduce credentials, passwords, download links or personal data.
-### July 26, 2026
-#### 🇲🇦 Morocco - Brazer Ingenierie
 
-- **Initial publication date:** 26 July 2026
-- **AFRINTEL detection date:** 26 July 2026
+### July 26, 2026
+
+#### 🇲🇦 Morocco - Brazer Ingenierie
+- **Initial publication date:** July 26, 2026
+
+
+
 - **Ransomware group:** arcusmedia
 - **Sector:** Engineering / Telecommunications / Construction
 - **Website:** [brazeringenierie.com](https://www.brazeringenierie.com)
@@ -1234,11 +1058,11 @@ resale_status: unknown
 last_checked_at: 2026-07-26
 -->
 
-### July 26, 2026
 #### 🇹🇳 Tunisia - École Nationale d'Administration (ENA) - concours.ena.tn
+- **Initial publication date:** July 26, 2026
 
-- **Initial publication date:** 26 July 2026
-- **AFRINTEL detection date:** 26 July 2026
+
+
 - **Actor / Group:** N0ull_0X, post published on a cybercriminal forum
 - **Sector:** Government / Public Administration / Education (Civil Service Entrance Examinations)
 - **Website:** [concours.ena.tn](https://concours.ena.tn) / [www.ena.tn](https://www.ena.tn)
@@ -1255,12 +1079,11 @@ last_checked_at: 2026-07-26
 
   AFRINTEL reviewed a DarkForums post titled "Tunisia Database www.ena.tn / concours.ena.tn", published on 26 July 2026 by the newly registered actor N0ull_0X (account created July 2026). The post directly displays a plaintext sample of candidate records rather than a mere description, comprising at least seventeen rows following a consistent database schema: candidate full name, email address, gender, individual exam-module grades, an overall average and a baccalaureate average, physical home address, place of national ID (CIN) issuance, national ID (CIN) number, a fingerprint/biometric reference field tied to the CIN, phone number, date of birth, prior diploma years, competition code, specialty code and establishment code. The combination of a national identity number, a biometric reference field, contact details, home addresses and academic records for named individuals constitutes highly sensitive exposure of Tunisian citizens applying to a state civil-service examination. The structural consistency and volume of the displayed sample support a high confidence assessment, although AFRINTEL could not independently verify the total size of the underlying database or the currency of the data beyond the sample shown. AFRINTEL does not reproduce any candidate name, email, national ID number, phone number, address or exam result from the reviewed post.
 
-
-### July 26, 2026
 #### 🇳🇬 Nigeria - Zenith Bank Plc
+- **Initial publication date:** July 26, 2026
 
-- **Initial publication date:** 26 July 2026
-- **AFRINTEL detection date:** 26 July 2026
+
+
 - **Ransomware group:** ExfilSquad
 - **Sector:** Banking and financial services
 - **Website:** [zenithbank.com](https://www.zenithbank.com/)
@@ -1294,147 +1117,43 @@ resale_status: unknown
 last_checked_at: 2026-07-26
 -->
 
-### July 31, 2026
-#### 🇩🇿 Algeria - Ministry of Finance
+#### 🇪🇬 Egypt - Egyptian Football Association (EFA)
+- **Initial publication date:** July 26, 2026
 
-- **Initial publication date:** 12 January 2026
-- **AFRINTEL detection date:** 31 July 2026
-- **Actor / Group:** jrintel (source account)
-- **Sector:** Government / Finance
-- **Website:** Not specified
-- **AFRINTEL status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Low
-- **Impact level:** Level 3
 
-- **Description:**
 
-  The Algerian Ministry of Finance is the government institution responsible for national fiscal and financial administration. A forum publication titled "Fresh Confidential Ministry of Finance Documents Leaked DEC 2025" advertises two PDF documents and displays samples of official administrative and financial correspondence, with a claimed document period of December 2025.
+* **Incident date:** Not established
 
-- **Analysis:**
 
-  The provided material contains official-looking ministry documents and a publication attributed to the source account jrintel. It may expose sensitive administrative information, but AFRINTEL has not independently verified the documents, their provenance or the full dataset. Download links, session identifiers and personal information are not reproduced.
+* **Actor / Group:** Revesky, post published on a cybercriminal forum
 
-### July 1, 2026
+* **Sector:** Sports / Federations
 
-#### 🇨🇮 Côte d'Ivoire - Virtual University of Côte d'Ivoire (UVCI)
-- **Initial publication date:** 1 July 2026 at 08:37; last observed modification on 4 July 2026 at 07:36; timezone not specified
-- **AFRINTEL discovery date:** 25 October 2026
-- **Author / Publication account:** Sensitive2025
-- **Sector:** Higher education / University administration
-- **Associated website:** [uvci.edu.ci](https://www.uvci.edu.ci/); displayed service subdomain: `licences3.uvci.online`
-- **Status:** Data Fully Published
-- **Incident type:** Data Leak
-- **Confidence level:** High for attribution of the supplied corpus to the UVCI ecosystem; Medium for compromise of the production system
-- **Impact level:** Level 4
-- **Victim description:** The Virtual University of Côte d'Ivoire (UVCI) is an Ivorian digital higher-education institution. The publication associates the organisation and a service subdomain with a university-account database.
-- **Analysis:** The observed publication presents a “Fresh Database” attributed to UVCI, associates the `licences3.uvci.online` subdomain with a university service and claims an approximately 8 GB SQL database. AFRINTEL analysed the entire locally supplied SQL dump read-only, not a sample: **8,721,338,295 bytes**, SHA-256 `17e60b953b9196ea6fee65344da4e17b38839c092e4239e49e8662b558736501`. All 10 associated CSV files were also analysed in full; the 11 files total approximately **8.76 GB**. Download links, personal values and secrets are not reproduced.
+* **Website:** [efa.com.eg](https://www.efa.com.eg)
 
-  **Observed - structure and coverage:** The dump is a MySQL 8.0.42 export of the `licences3` database with **490 tables**, **226 populated tables**, approximately **56,714,959 records** recomputed from SQL tuples and **8,749 INSERT statements**. It includes `mdl_user`, `mdl_user_enrolments`, `mdl_logstore_standard_log`, `mdl_session`, `mdl_files`, `mdl_messages`, `mdl_grade_grades`, `mdl_inscription_pedagogique_uvci`, `mdl_inscription_semestrielle`, `mdl_passerelle_uvci`, cohort, group and role tables.
+* **Status:** Claim - Data Sample Published
 
-  Major observed volumes include **16,410,270 Moodle logs**, **17,972,218 question-attempt step-data rows**, **9,481,515 attempt steps**, **3,221,383 question attempts**, **561,444 grade rows**, **605,111 files**, **554,701 Moodle sessions**, **193,269 additional application sessions**, **30,275 messages**, **91,042 user-enrolment associations**, **88,789 role assignments**, **58,299 cohort memberships**, **43,812 pedagogical registrations**, **6,993 users**, **154 external tokens** and **4,635 user private keys**. Session and log schemas contain IP addresses, timestamps, actions, users, courses and session data; no raw value is published.
+* **Incident type:** Data Leak
 
-  **Observed - accounts and academic data:** `mdl_user.csv` contains **6,993 accounts**, all using manual authentication and marked confirmed; **6,891** are not suspended, **102** are suspended and **21** are marked deleted. The 6,993 user IDs, usernames and email addresses are distinct. Each account has a 60-character bcrypt-like password hash. Profile data includes identity, contact, institution, training, location, login dates, last IP, account status and semester fields.
+* **Confidence level:** High
 
-  `mdl_passerelle_uvci.csv` contains **4,398 accounts**, all in Licence 2 / S3, with **3,047** `reinscription=1` values and **1,351** set to `0`. `mdl_inscription_semestrielle.csv` contains **8,559 registrations**, including **8,557** in Licence 2 / S3. The `moyenne_uvci` exports contain **47,553 result rows**, with course, level, speciality, semester, grade, examination-session and academic-status fields. Historical exports contain **21,029** rows for May 2024 and **17,034** for August 2023. `moyenne_uvci(1).csv` is a separate list of **3,802 email addresses**, matching accounts present in the current user and result exports.
+* **Impact level:** Level 4
 
-  Comparison of `moyenne_uvci.csv` and `moyenne_uvci_25_06_2025_21h-16.csv` shows the same set of **47,553 keys**: **44,683 rows are identical** and **2,870 rows changed**, mainly in examination session 2, status and final-average fields. This is compatible with distinct application states or extracts; it does not date the actor’s access.
+* **Description:**
+  The Egyptian Football Association (EFA) is Egypt's national governing body responsible for the administration and organisation of football. It is affiliated with FIFA and the Confederation of African Football (CAF).
 
-  **Observed - secrets and authentication:** `mdl_user.csv` and `mdl_passerelle_uvci.csv` contain **6,993** and **4,398** bcrypt-like password hashes respectively. `mdl_enrol(1).csv` contains **3,824 enrolment configurations**, including **2,972 non-empty four-character password values** and **852 empty fields**; these values do not match a hash format and must be treated as potentially exposed secrets, without reproduction or testing. The presence of **154 external tokens**, **4,635 user private keys**, sessions and session data increases the risk of secondary compromise; their current validity is not described in the available material.
+* **Analysis:**
+  **Observed:** On 26 July 2026, the actor using the alias Revesky published a post claiming to have released "all the databases" belonging to the Egyptian Football Association. The publication claims a total dataset of approximately **9.6 GB** concerning around **350,000 players**.
 
-  **Integrity and consistency checks:** All 10 CSV files are readable as UTF-8 or ASCII, with **0 malformed rows** and **0 complete duplicate rows** detected. CSV row counts match the SQL tables where applicable: 6,993 users, 8,559 semester registrations, 4,398 gateway records and 47,553 current results. Hashed email cross-checks between users, registrations, gateway records and grade exports are strong; the `uvci.edu.ci` and `licences3.uvci.online` domains, Moodle/UVCI tables, language settings and course structures form a coherent UVCI environment. Partial repetitions in historical and registration exports are consistent with users appearing across cohorts, semesters or repeated extracts and must not be summed as unique persons.
+  A collection of documents representing approximately **1.3 GB** was effectively disclosed by the actor. The reviewed material includes structured databases as well as administrative documents associated with players.
 
-  **Analytical assessment:** The supplied corpus is highly consistent with a complete application-environment export from `licences3`, used by the UVCI ecosystem. The publication, coherent schemas, domains, accounts, courses, logs and academic data make attribution of the corpus to UVCI highly plausible. The sources consulted do not specify the access vector, acquisition date, initial exfiltration, production-system compromise or completeness of the original database beyond the supplied files.
+  AFRINTEL examined three CSV files originating from the available material. `data.csv` and `simple_famous_player.csv` contain the same set of **82 records across 31 columns**, while `simple_normal_player.csv` contains **802 records across 45 columns**. After removing the duplicated 82-record extract, the reviewed data therefore represents **884 rows from two distinct data extracts**.
 
-  **Unknown:** The actor’s access date and method, exact production-system scope, existence of a separate exfiltration, current validity of hashes, tokens, keys and enrolment passwords, globally deduplicated number of unique persons, notifications by UVCI and any official confirmation remain unknown. File dates in June 2026, displayed publication dates and application timestamps must not be merged into a single intrusion date.
+  Observed fields include player identity information, national identification numbers, dates and places of birth, nationality, family information, teams, transfers, contracts, sporting seasons and various administrative information. Within the 802-record extract, **798 records contain a 14-digit numeric national identification number**.
 
-  **Attribution and impact conclusion:** The complete analysis of the supplied SQL dump and 10 CSV files confirms a corpus rich in identity, contact, training, registration, academic-result, account, file, message, log, IP-address, session and authentication artefacts, strongly consistent with the UVCI environment. Risks include credential reuse, targeted phishing, student and staff impersonation, academic fraud, privacy harm, exploitation of still-active sessions or tokens and secondary compromise of connected services. No name, email address, telephone number, identifier, IP address, hash, token, key or other raw personal data is reproduced in the repository.
-- **Evidence limitations:** The completeness of the supplied SQL file and 10 CSV files was analysed; completeness of the original UVCI system database, access date, intrusion vector, initial exfiltration, current secret validity and production-system compromise are not documented in the public sources. `Data Fully Published` describes the observed publication and supplied corpus; it is not an official incident confirmation or proof that the entire source database was extracted.
-- **Classification decision:** Added to the October reference set because AFRINTEL discovered it on 25 October 2026, but excluded from the October canonical total and October statistics; chronologically, the incident is linked to the initial 1 July 2026 publication.
+  The documentary sample also contains several categories of files directly associated with EFA administrative processes, including EFA-branded player registration forms, copies of identification documents, birth certificates, professional player contracts, insurance certificates and educational documents. Some forms also contain photographs, signatures and fingerprint marks. These elements corroborate several of the data categories announced by Revesky.
+  **Assumption:** The consistency between the structured databases, administrative documents and EFA branding supports a **high-confidence** assessment that the reviewed material originates from data associated with the federation. This assessment concerns the structural authenticity and attribution of the samples; it does not confirm how Revesky obtained them.
 
-### July 4, 2026
+  **Unknown:** AFRINTEL has not validated the entire claimed **9.6 GB** volume or the figure of approximately **350,000 players**. The corpus effectively identified represents approximately **1.3 GB**, which is insufficient to confirm that all of the databases claimed by the actor were actually made public. The presence of military forms within the complete dataset was also not verified in the reviewed documents. The initial-access vector, extraction method, compromise timeline and any official confirmation by the EFA remain unknown.
 
-#### 🇨🇮 Côte d'Ivoire - Université Jean Lorougnon Guédé (UJLoG)
-- **Initial publication date:** 4 July 2026 at 07:38; timezone not specified
-- **AFRINTEL discovery date:** 25 October 2026
-- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation not independently verified)
-- **Sector:** Higher education / University administration
-- **Associated website:** [ujlog.uvci.edu.ci](https://ujlog.uvci.edu.ci/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High for sample attribution to the UJLoG environment; Medium for incident scope
-- **Impact level:** Level 3
-- **Victim description:** Université Jean Lorougnon Guédé (UJLoG) is an Ivorian university. The publication associates its subdomain with an account database from a university platform.
-- **Analysis:** The supplied sample presents a Moodle-type user schema containing account identifiers, usernames, identity fields, email addresses, institution, department, location, language, access timestamps, IP addresses and bcrypt password hashes. Twelve individual records are visible in the supplied extract; the observed accounts and addresses primarily use the `ujlog.uvci.edu.ci` ecosystem, with UJLoG/UVCI institutional references. The `username`, `email`, `institution`, `department`, `city`, `country`, `lastlogin`, `currentlogin` and `lastip` fields indicate an operational account-management database rather than a simple name list.
-
-  Consistency between the `ujlog.uvci.edu.ci` domain, UJLoG institutional labels, the Moodle structure, French-language settings, `CI` country values, profile information and bcrypt hashes strongly supports attribution of the sample to UJLoG's digital environment. The sample can therefore be assessed as highly consistent with that environment. As the remainder of the dump is no longer available, the analysis is strictly limited to the data visible in the supplied sample and cannot verify total volume, duplicates or dataset completeness.
-
-  The exposed data could facilitate targeted phishing, student or administrative account impersonation, credential reuse and analysis of login patterns. No name, email address, telephone number, IP address, hash or other individual data is reproduced in the repository.
-- **Evidence limitations:** The sample is strongly consistent with UJLoG, but it does not confirm the access date, intrusion vector, initial exfiltration, production-system compromise or total number of affected individuals. The remainder of the dump is unavailable for analysis; the findings must not be extrapolated to the full claimed dataset.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 25 October 2026 and the July report had already been made public. The 4 July 2026 publication is retained as historical context; it does not create a duplicate in the October tracking set.
-
-### July 12, 2026 - integrated September 1, 2026
-#### 🇨🇲 Cameroon - Ministry of Employment and Vocational Training (MINEFOP)
-
-- **Incident date:** July 12, 2026
-- **Public analysis:** July 27, 2026
-- **AFRINTEL discovery / integration date:** September 1, 2026
-- **Actor / Group:** ANTONKILL
-- **Sector:** Government / Public Administration
-- **Status:** Corroborated
-- **Incident type:** Defacement
-- **Confidence:** High
-- **Impact:** Level 2
-- **Description:** Cameroon's **Ministry of Employment and Vocational Training (MINEFOP)** develops and implements public policy on **employment, vocational training and professional integration**. Its responsibilities include career guidance, skills development and support for access to work. It is a national government ministry, not a private training college ([MINEFOP official mandate](https://minefop.gov.cm/fr/missions/)).
-
-- **Independent verification as of 18 October 2026:** **Publicly corroborated defacement:** Cameroon’s CIRT issued an advisory on the ANTONKILL campaign targeting the MINEFOP website in July 2026. The demonstrated scope is a web portal, not the entire ministry network. July incident.
-
-- **Additional verification sources:** [Source 1](https://cirt.cm/alerte-de-securite-campagne-antonkill-web-defacement-ciblant-les-institutions-sous-joomla-et-helix3/)
-
-- **Sources / Evidence:** [OBS-CC, July 27, 2026](https://obs-cc.org/defacement-antonkill-minefop/); [OBS-CC incident database](https://obs-cc.org/incidents/)
-
-OBS-CC, relying on an ANTIC CIRT alert, documented the defacement of the MINEFOP website in a campaign attributed to ANTONKILL. The depth of access, persistence and exposure of non-public data are not established.
-
-### July 15, 2026 - integrated September 1, 2026
-#### 🇿🇦 South Africa - Rectron (Pty) Ltd
-
-- **Detected incident date:** July 15, 2026
-- **SENS notification:** July 22, 2026
-- **AFRINTEL discovery / integration date:** September 1, 2026
-- **Actor / Group:** Not officially attributed; DragonForce unconfirmed
-- **Sector:** Technology / IT Distribution
-- **Status:** Victim Confirmed
-- **Incident type:** Data Leak
-- **Confidence:** Very High
-- **Impact:** Level 3
-- **Description:** **Rectron (Pty) Ltd** is a South African **ICT products and solutions distributor** within the **Mustek** group. Its portfolio includes software, hardware, networking, data storage, cloud and data-centre solutions sold through resellers and technology partners. The company therefore operates within the technology supply chain ([Rectron official profile](https://www.rectron.co.za/pages/about)).
-
-- **Independent verification as of 18 October 2026:** **Official market disclosure:** on 22 July 2026 Mustek released a SENS notice concerning a cyber incident at Rectron. This establishes the incident but not necessarily the responsibility of a claiming group. July incident.
-
-- **Additional verification sources:** [Source 1](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
-
-- **Sources / Evidence:** [Mustek / JSE SENS, July 22, 2026](https://www2.sharenet.co.za/v3/sens_display.php?scode=MST&seq=33&tdate=20260722130100)
-
-Mustek announced that Rectron suffered a compromise affecting some IT systems and operations, with unlawful access to some data. Rectron launched incident response and notified the Information Regulator. The vector, data categories and exfiltrated volume remain unknown.
-
-### July 18, 2026 - integrated September 1, 2026
-#### 🇰🇪 Kenya - Official website of the President of the Republic (`president.go.ke`)
-
-- **Incident date:** July 18, 2026
-- **Government confirmation:** July 18, 2026
-- **AFRINTEL discovery / integration date:** September 1, 2026
-- **Actor / Group:** Not publicly attributed
-- **Sector:** Government / Presidency
-- **Status:** Government Confirmed
-- **Incident type:** Defacement
-- **Confidence:** Very High
-- **Impact:** Level 3
-- **Description:** The domain **`president.go.ke`** hosts the **official website of the Presidency of the Republic of Kenya**. It publishes public information about presidential activities, the administration and coordination of government business. This record concerns **an official web portal**, not necessarily the Presidency's or Kenyan government's entire IT environment ([official portal](https://www.president.go.ke/)).
-
-- **Independent verification as of 18 October 2026:** **Government-confirmed:** Kenya’s ICT ministry acknowledged the defacement of `president.go.ke` on 18 July 2026 and said no sensitive-data compromise had been established. The event concerns a specific website in July.
-
-- **Additional verification sources:** [Source 1](https://www.aa.com.tr/fr/afrique/kenya-le-site-officiel-de-la-pr%C3%A9sidence-pirat%C3%A9-des-hackers-r%C3%A9clament-une-rancon-en-bitcoin/4002284)
-
-- **Sources / Evidence:** [ICT Authority / ministry statement, July 18, 2026](https://www.linkedin.com/posts/kenya-ict-board_ministry-of-information-communications-activity-7484210613053784065-Fy7R); [The Standard, July 18, 2026](https://www.standardmedia.co.ke/national/article/2001553147/kabogo-no-sensitive-data-accessed-after-presidents-website-hack)
-
-The Kenyan government confirmed the defacement of the presidential website, which displayed hostile messages, a wallet address and a demand for 5 BTC. No evidence of access to sensitive data or exfiltration was reported. The vector and attacker identity remain unknown.
+  The observed information includes identity data, official documents, contractual information and records that may concern young players or minors, creating a significant risk of document fraud, identity theft, targeted phishing, social engineering and misuse of personal information. AFRINTEL does not reproduce any identity, national identification number, address, signature, photograph or other personal data contained in the reviewed material.

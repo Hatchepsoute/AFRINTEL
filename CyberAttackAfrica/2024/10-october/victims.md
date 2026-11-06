@@ -152,6 +152,7 @@
 ### October 21, 2024
 
 #### 🇲🇦 Morocco - Al Massira University Residences
+- **Initial publication date:** 21 October 2024 at 5:11 PM (forum-displayed time; timezone not specified)
 - **Actor / Group:** bxxxx1
 - **Sector:** Education / University
 - **Website:** [ruam.ma](https://ruam.ma)
