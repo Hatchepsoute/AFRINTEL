@@ -1,0 +1,138 @@
+{
+  "record_count": 45,
+  "type_counts": {
+    "Ransomware": 19,
+    "Data Leak": 24,
+    "Access Sale": 1,
+    "Operational Fraud": 1
+  },
+  "country_counts": {
+    "Afrique du Sud": 17,
+    "Zambie": 1,
+    "Algérie": 1,
+    "Multi-pays Afrique": 1,
+    "Égypte": 8,
+    "Maroc": 8,
+    "Madagascar": 1,
+    "Sénégal": 2,
+    "Tunisie": 1,
+    "Namibie": 1,
+    "Tanzanie": 1,
+    "Nigeria": 2,
+    "Guinée": 1
+  },
+  "status_counts": {
+    "Claim - Unverified": 16,
+    "Claim - Data Sample Published": 15,
+    "Data Fully Published": 11,
+    "Incident Confirmed by Victim": 1,
+    "Under Investigation": 2
+  },
+  "sector_counts": {
+    "Industrie / production": 2,
+    "Administration et services publics": 11,
+    "Sport / loisirs": 1,
+    "Technologies / prestataires": 5,
+    "Commerce / plateformes": 3,
+    "Ingénierie / construction": 4,
+    "Santé / pharmacie": 2,
+    "Enseignement / formation": 6,
+    "Télécoms / médias": 3,
+    "Assurances": 2,
+    "Transport aérien": 1,
+    "Finance / paiements": 4,
+    "Recherche stratégique": 1
+  },
+  "region_counts": {
+    "Afrique australe": 19,
+    "Afrique du Nord": 18,
+    "Multi-pays - non attribué": 1,
+    "Océan Indien": 1,
+    "Afrique de l’Ouest": 5,
+    "Afrique de l’Est": 1
+  },
+  "actor_counts": {
+    "LockBit 5.0": 1,
+    "Spirigatito": 1,
+    "xNov": 3,
+    "Grubder": 1,
+    "zimablue": 1,
+    "CrowStealer": 4,
+    "TelephoneHooliganism": 1,
+    "Qilin": 2,
+    "Crypto24": 1,
+    "PEAR": 1,
+    "w00l_ysh1": 1,
+    "TheGentlemen": 2,
+    "APT73 / Bashe": 4,
+    "Lynx": 1,
+    "XP95": 3,
+    "wh6ami": 2,
+    "Payload": 1,
+    "Blackwinter99": 1,
+    "INC Ransom": 2,
+    "DragonForce": 1,
+    "anisanas2": 1,
+    "NightSpire": 1,
+    "p4pr1k4": 1,
+    "Morpheus": 1,
+    "Coinbase Cartel": 1,
+    "AshleyWood2022": 1,
+    "Bytetobreach": 1,
+    "Al-Sheikh": 1,
+    "Keymous": 1
+  },
+  "source_log": [
+    {
+      "entry": 21,
+      "organization": "Buffalo City Metropolitan Municipality",
+      "original": "*.gov.za",
+      "verified": "https://www.buffalocitymetro.gov.za/",
+      "secondary": "https://www.buffalocity.gov.za/",
+      "source": "https://www.gov.za/nso/about-government/contact-directory/ec-municipalities/buffalo-city-metropolitan-municipality",
+      "evidence": "Site municipal fonctionnel et annuaire gouvernemental ; aucune preuve de compromission tirée du domaine."
+    },
+    {
+      "entry": 23,
+      "organization": "Northern Cape Department of Roads & Public Works",
+      "original": "*.gov.za",
+      "verified": "http://ncrpw.ncpg.gov.za/",
+      "secondary": "https://www.gov.za/northern-cape/northern-cape-roads-and-public-works",
+      "source": "https://provincialgovernment.co.za/units/view/94/northern-cape/roads-and-public-works",
+      "evidence": "Domaine figurant dans les annuaires institutionnels ; disponibilité directe non garantie ; rattachement des données divulguées inconnu."
+    },
+    {
+      "entry": 30,
+      "organization": "Standard Bank South Africa",
+      "original": "aucun",
+      "verified": "https://www.standardbank.co.za/southafrica/personal",
+      "secondary": "https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank",
+      "source": "https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april",
+      "evidence": "Site officiel et déclarations de première main des 23 mars et 14 avril."
+    },
+    {
+      "entry": 6,
+      "organization": "Waste Management Regulatory Authority (Egypt)",
+      "original": "https://garb.gov.eg",
+      "verified": "https://wmra.gov.eg/en/",
+      "secondary": "https://wmra.gov.eg/",
+      "source": "https://wmra.gov.eg/en/",
+      "evidence": "Portail institutionnel confirmant la mission WMRA. Le lien technique avec garb.gov.eg et la provenance de la prétendue fuite restent à établir."
+    }
+  ],
+  "caveats": {
+    "cross_month_overlap": "Diesel-Electric February/March needs duplicate check",
+    "out_of_period_publications": [
+      3,
+      4,
+      5,
+      44
+    ],
+    "out_of_period_events": [
+      32,
+      45
+    ],
+    "linked_claim_may": "Gauteng/Kazu May secondary publication is non-canonical",
+    "source_monthly_summary_41": "stale/inconsistent with 45 detailed cards"
+  }
+}

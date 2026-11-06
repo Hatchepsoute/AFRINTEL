@@ -3,7 +3,7 @@
 ![Data Source](https://img.shields.io/badge/Data%20Source-OSINT-darkgreen)
 ![Intel Type](https://img.shields.io/badge/Intel-CTI-purple)
 
-# List of African cyberattack victims in September 2026 (41 records)
+# List of African cyberattack victims in September 2026 (33 records)
 
 👉🏾 [**Version française disponible ici**](./victims_FR.md)
 
@@ -13,11 +13,63 @@
 
 > **OSINT verification update  -  18 October 2026.** These 41 entries form a **September tracking/intake corpus**, not 41 cyberattacks occurring in September. **13 entries** document incidents confirmed or corroborated at the named organisation (including RelyComply and Namibia’s defence ministry), **2 entries** concern acknowledged indirect third-party data exposure (Hollard and Guardrisk: direct victim-system intrusion unestablished), and **26** remain claims or samples without independent confirmation. Statuses distinguish incident confirmation, group attribution, claimed volume, encryption and exfiltration. Absence of public confirmation means none was found in the reviewed sources as of this date; it is not proof no incident occurred.
 
+### September 01, 2026
 
-### 03 September 2026
+#### 🇪🇬 Egypt - Holding Company for Construction and Development (HCCD)
+- **Initial publication date:** September 01, 2026
+
+
+- **Actor / Group:** krybit
+- **Sector:** Construction
+- **Website:** [hccd-construction.com](https://hccd-construction.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** The **Holding Company for Construction and Development (HCCD)** is an Egyptian holding company active in **construction, civil works and property development**. Its website describes subsidiaries involved in contracting, engineering consulting, housing and electrical works. As a corporate group, a claim naming HCCD does not establish which subsidiary or information system may be affected ([HCCD official overview](https://hccd-construction.com/About_e.aspx)).
+
+- **Independent verification as of 18 October 2026:** Only the listing in Krybit claim trackers is corroborated; no HCCD statement or verifiable investigation proving an intrusion into its systems was found.
+
+
+Krybit published a claim naming the Holding Company for Construction and Development. The date reflects the listing observation; compromise, volume, encryption and exfiltration remain unknown.
+
+#### 🇪🇬 Egypt - Mecca High Feed Factory
+- **Initial publication date:** September 01, 2026
+
+
+- **Actor / Group:** krybit
+- **Sector:** Agriculture / Agribusiness
+- **Website:** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Mecca High Feed Factory** is described on its Arabic-language business blog as an Egyptian producer of **poultry and livestock feed**, including plant-based feed formulations. The business blog associates the **Mecca** and **High Feed** names and discusses animal nutrition products; as a self-published source, it does not independently verify the company's current legal structure or industrial footprint ([company blog](https://meccahighfeed.blogspot.com/)).
+
+- **Independent verification as of 18 October 2026:** OSINT aggregators relay a Krybit claim without independent evidence of compromise or an identified Mecca High Feed Factory statement. Some databases disagree on country: do not revise geographical attribution without checking.
+
+
+Krybit published a claim targeting Mecca High Feed Factory, described as an Egyptian animal-feed manufacturer. Technical evidence and actual impact are not established.
+
+#### 🇪🇬 Egypt - Seashell Hospital
+- **Initial publication date:** September 01, 2026
+
+
+- **Actor / Group:** krybit
+- **Sector:** Healthcare / Hospital
+- **Website:** [seashellhospital.com](https://seashellhospital.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Seashell Hospital** is a private healthcare facility in **New Cairo**, Egypt. Its website describes inpatient healthcare, diagnosis and treatment services, including a round-the-clock emergency department. Its operations involve sensitive clinical and administrative workflows, although the claim alone does not demonstrate exposure of patient records ([hospital official website](https://www.seashellhospital.com/AboutUs/Index)).
+
+- **Independent verification as of 18 October 2026:** Multiple leak-site indices reproduce a Krybit claim naming Seashell Hospital, but no hospital notification or independent forensic confirmation was found. Disruption, patient-data exposure and encryption remain unestablished.
+
+
+Krybit published a claim targeting Seashell Hospital, a private Egyptian hospital. No reviewed public element confirms access, encryption or exfiltration.
+
+### September 03, 2026
+
 #### 🇳🇬 Nigeria - Medical and Dental Council of Nigeria (MDCN)
+- **Initial publication date:** September 03, 2026
 
-- **Initial publication date:** 3 September 2026 at 20:19 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** cattier (displayed forum account; identity unverified)
 - **Sector:** Healthcare / Medical and dental professional regulation
 - **Website:** [mdcn.gov.ng](https://www.mdcn.gov.ng/)
@@ -46,12 +98,14 @@
 
 - **Sources / Evidence:** forum post, local CSV supplied to AFRINTEL and [official MDCN website](https://www.mdcn.gov.ng/). No individual's name, telephone number, email address, birth date or professional identifier is published.
 
-### 04 September 2026
+### September 04, 2026
+
 #### 🇪🇬 Egypt - Data attributed to Madinaty owners/residents (source organisation unidentified)
+- **Initial publication date:** September 04, 2026
+
+
 
 - **Incident date:** Not established
-- **Initial publication date:** 4 September 2026 at 09:59 (displayed time; timezone not specified)
-- **AFRINTEL detection date:** 13 September 2026 (capture supplied)
 - **Actor / Group:** sainttrojan (displayed forum account; identity and group affiliation unverified)
 - **Sector:** Real estate / Residential community / Property management
 - **Data-holding organisation:** Unidentified; the post presents the records as relating to Madinaty owners/residents
@@ -92,12 +146,14 @@
 
 - **Sources / Evidence:** forum post visible in a capture supplied on 13 September 2026 (displayed post date: 4 September 2026; original URL not provided); [Talaat Moustafa Group public overview of its Egypt projects](https://ecommerce.tmg.com.eg/about).
 
+### September 06, 2026
 
-### 06 September 2026
 #### 🇲🇦 Morocco - Centre Atlantique Formation
+- **Initial publication date:** September 06, 2026
+
+
 
 - **Incident date:** Not established
-- **Initial publication date:** 6 September 2026
 - **Actor / Group:** xNov
 - **Sector:** Education / Vocational and professional training
 - **Website:** [atlantique.ma](https://atlantique.ma/)
@@ -144,12 +200,72 @@
 
 - **Sources / Observed elements:** xNov underground forum publication (6 September 2026); supplied Telegram relay and capture (6 September 2026); direct contact with xNov through the Telegram channel regarding the asking price; AFRINTEL analysis of the published archive and extracted local corpus. Raw files remain outside the repository.
 
+### September 07, 2026
 
-### 09 September 2026
+#### 🇿🇦 South Africa - VSB Attorneys Inc
+- **Initial publication date:** September 07, 2026
+
+
+- **Actor / Group:** lockbit5
+- **Sector:** Legal Services
+- **Website:** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **VSB Attorneys Inc** is a **South African law firm** offering property law, conveyancing and corporate/commercial legal services. It assists individuals and businesses with legal and contractual matters that can involve confidential files and supporting documents. The nature of its legal work does not establish which records, if any, were affected by the claim ([VSB official profile](https://www.vsbattorneys.co.za/about-vsb-attorneys-law-firm/)).
+
+- **Independent verification as of 18 October 2026:** The LockBit5 claim naming VSB Attorneys is recorded by leak-site monitors, without an identified company response or independent proof of intrusion.
+
+  **Local artefact analysis:** the supplied directory contains a **1,082,440,568-byte** RAR5 volume identified as multipart, plus a second empty RAR file. A read-only test identifies an incomplete multipart archive and reports an unexpected end together with a data error on a PDF entry. No file was extracted or executed; content, actual volume, authenticity and origin remain unknown. The presence of this fragment is not sufficient to establish a successful data disclosure.
+
+- **Analysis scope:** file type, size and archive structure were checked; an integrity test was performed without exploitable extraction. No document or personal data contained in the archive was analysed.
+
+- **Observed elements:** LockBit5 claim and locally supplied multipart RAR5 artefact. The empty file and incomplete fragment do not constitute an exploitable corpus.
+
+
+Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm. Compromise and data scope are unconfirmed.
+
+#### 🇪🇬 Egypt - Nile Projects Trading
+- **Initial publication date:** September 07, 2026
+
+
+- **Actor / Group:** TheGentlemen
+- **Sector:** Real Estate / Property Management
+- **Website:** [nileprojects.com](https://nileprojects.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Nile Projects & Trading Company** is an Egyptian trading group that traces its origins to **1972**. Initially a family business, it expanded into **international brand distribution, tyres, luxury fashion and commercial real estate**. Its operations extend beyond real estate, but the listing does not identify which business unit, if any, was targeted ([Nile Projects official profile](https://nileprojects.com/pages/about-us)).
+
+- **Independent verification as of 18 October 2026:** Public search results reproduce The Gentlemen’s claim against Nile Projects Trading; no official acknowledgement, regulatory notice or forensic verification establishes a confirmed incident.
+
+
+TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian group active in retail, real estate and distribution. No evidence confirms access or exfiltration.
+
+#### 🇿🇦 South Africa - Hollard Insurance Group
+- **Initial publication date:** September 07, 2026
+
+
+- **Actor / Group:** TheGentlemen
+- **Sector:** Insurance
+- **Website:** [hollard.co.za](https://www.hollard.co.za/)
+- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description:** **Hollard Insurance Group** is a **privately owned South African insurance group** providing life and non-life coverage, personal and commercial insurance and investment-related products. It has a footprint across several African markets through operations and partnerships. The claim naming Hollard does not establish which legal entity or subsidiary, if any, was affected ([Hollard official overview](https://www.hollard.co.za/our-world)).
+
+- **Independent verification as of 18 October 2026:** **Third-party exposure acknowledged; direct Hollard breach disputed:** in statements dated 15 and 18 September 2026 Hollard reported that information relating to some funeral policyholders was published following the **June 2026 incident at MIP Holdings**. It has notified affected customers and engaged regulators; its investigations found **no compromise of Hollard’s own environment**. The Gentlemen’s listing must not be treated as a confirmed intrusion at Hollard.
+
+- **Additional verification sources:** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
+
+TheGentlemen published a claim targeting Hollard Insurance Group. The source corpus describes the insurer and its activities but provides no independent compromise evidence.
+
+### September 09, 2026
+
 #### 🇪🇬 Egypt - Badr University in Cairo (BUC)
+- **Initial publication date:** September 09, 2026
+
+
 
 - **Incident date:** Not established
-- **Initial publication date:** 9 September 2026 at 16:50 (timezone not specified)
 - **Actor / Group:** Unknown
 - **Displayed author account:** elmo7areb (identity and role unverified)
 - **Sector:** Education / Higher education
@@ -192,12 +308,32 @@
 
 - **Sources / Evidence:** forum post visible in a screenshot supplied on 12 September 2026 (original URL not provided); [BUC official website](https://buc.edu.eg/); [BUC official admissions page](https://buc.edu.eg/buc-admission-application-form/).
 
-### 12 September 2026
+#### 🇿🇦 South Africa - RelyComply AML Platform
+- **Initial publication date:** September 09, 2026
+
+
+- **Actor / Group:** Direwolf (claim; technical attribution unconfirmed)
+- **Sector:** Fintech / Anti-Money Laundering
+- **Status:** Victim Confirmed - Unauthorized Access
+- **Incident type:** System Intrusion (ransomware claim unconfirmed)
+- **Subtype:** Unauthorised access confirmed; Direwolf link/encryption unproven
+- **Description:** **RelyComply** is a regulatory-technology (**RegTech**) provider offering an **AML/KYC** compliance platform for organisations subject to anti-money-laundering requirements. Its software centralises customer due-diligence, identity-checking, monitoring and compliance workflows. The company's public profile does not, by itself, confirm the scope of any intrusion ([RelyComply official platform](https://relycomply.com/)).
+
+- **Independent verification as of 18 October 2026:** **Company-confirmed unauthorised access:** in its 16 September notice, RelyComply said it detected access to certain systems on 8 September 2026 after exploitation of a third-party application zero-day. The company rebuilt affected systems, rotated credentials/tokens, patched the flaw and notified South Africa’s Information Regulator (**reference SC20263150**). Virgin Active and HuntEx describe potential transaction-data exposure via Peach Payments. **Direwolf attribution, encryption and the claimed data volume are not confirmed.**
+
+- **Additional verification sources:** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
+
+
+**Original claim context:** Direwolf named RelyComply in a leak-site listing. The company later confirmed unauthorised access to some systems and identified an apparent third-party zero-day exploitation path. Direwolf involvement, encryption and the volume of any extracted data remain unproven.
+
+### September 12, 2026
 
 #### 🇦🇴 Angola - SEPE: Angola's E-Government Platform
+- **Initial publication date:** September 12, 2026
+
+
 
 - **Incident date:** Not established
-- **Initial publication date:** 12 September 2026 at 18:23 (displayed time; timezone not specified)
 - **Actor / Group:** Kazu (displayed account; identity and affiliation unverified)
 - **Sector:** Government / Digital public services
 - **Website:** [sepe.gov.ao](https://www.sepe.gov.ao/)
@@ -236,12 +372,116 @@
 
 - **Sources / Evidence:** Kazu post screenshot supplied on 22 September 2026; local sample supplied and analysed read-only; [SEPE portal](https://www.sepe.gov.ao/).
 
+#### 🇲🇦 Morocco - La Sultana Hotel Group
+- **Initial publication date:** September 12, 2026
 
 
-### 19 September 2026
+- **Actor / Group:** krybit
+- **Sector:** Hospitality
+- **Website:** [lasultanahotels.com](https://lasultanahotels.com/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence level:** Medium (listing shown as published and associated local image corpus available; technical provenance and completeness not established)
+- **Impact level:** Level 3
+- **Description:** **La Sultana Hotels** is a Moroccan **luxury hospitality** brand comprising **La Sultana Marrakech** in the historic medina and **La Sultana Oualidia** by the Atlantic lagoon. Its offering includes premium accommodation, dining and visitor experiences. The claim does not establish which property or reservation-related system, if any, was affected ([La Sultana official website](https://www.lasultanahotels.com/)).
+
+- **Publication observation:** A screenshot dated 14 September 2026 shows a `lasultanahotels.com` listing marked `PUBLISHED`, with 3,914 views, 0 displayed images and a claimed data size of 41 GB. A countdown displayed a deadline of 15 September 2026 at 12:57:51. These elements describe the visible publication state and do not establish the outcome of a negotiation or payment.
+
+- **Analysis of the associated local corpus:** The collection directory contains 138 JPEG scan files, approximately 54 MB in total. Visual review of the available subset shows international passports and identity-document pages. Five pairs of files are exact duplicates by SHA-256, resulting in 135 distinct hashes across 140 files including the two publication screenshots. The number of persons, acquisition source, technical link to La Sultana, corpus coverage and completeness remain unknown.
+
+- **Independent verification as of 18 October 2026:** No hotel-group statement or independent public confirmation of intrusion was identified. The image corpus strengthens the observation that data was made available in association with the listing, but does not confirm that the passports originated from La Sultana systems or concern its customers, employees or partners.
+
+- **Sources / Observed elements:** Krybit publication captured on 14 September 2026; local corpus of 138 JPEG scans associated with the collection. Raw artifacts remain outside the repository.
+
+Krybit published a claim targeting La Sultana Hotel Group in Morocco. The listing shown as published and the local scan corpus indicate data availability associated with the publication. They do not establish initial access, provenance from La Sultana systems, encryption, completeness or the number of persons concerned.
+
+#### 🇪🇬 Egypt - Egyptian Airports Company (EAC)
+- **Initial publication date:** September 12, 2026
+
+
+- **Actor / Group:** krybit
+- **Sector:** Air Transport
+- **Website:** [eac-airports.com](https://www.eac-airports.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** The **Egyptian Airports Company (EAC)** is an Egyptian **airport operator** within the state-owned **Egyptian Holding Company for Airports and Air Navigation** ecosystem. Its role involves managing, operating, maintaining and developing civil airports. It is distinct from an airline or air-navigation service provider; the claim does not identify any specific compromised airport ([Egyptian Ministry of Civil Aviation](https://web.civilaviation.gov.eg/Companies/AirportCompany)).
+
+- **Independent verification as of 18 October 2026:** Several CTI feeds list Krybit’s claim against the Egyptian Airports Company domain. No acknowledgement by EAC or an Egyptian authority, or evidence of impact on operational airport systems, was found.
+
+
+Krybit published a claim targeting the Egyptian Airports Company. The publication identifies the organisation and sector; technical outcome and any exposure remain unknown.
+
+### September 13, 2026
+
+#### 🇰🇪 Kenya - `subscribers.co.ke` [Data Leak]
+- **Initial publication date:** September 13, 2026
+
+
+- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation unverified)
+- **Sector:** Digital services / Subscriber and email-list management
+- **Associated website:** [subscribers.co.ke](https://subscribers.co.ke/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium for sample attribution to the domain; High for the geographic link to Kenya
+- **Impact level:** Level 3
+- **Victim description:** `subscribers.co.ke` is a Kenyan domain associated with a subscriber or email-list management service. The legal identity of the organisation operating the service is not specified in the sources consulted by the visible evidence; the Sensitive2025 post associates the domain with a CSV list.
+- **Analysis:** AFRINTEL examined all five distinct supplied subscriber CSV contents read-only; the five files are present as two physical copies, resulting in **10 inventoried CSV files**, including **5 duplicate copies**. Application-library example CSVs bundled with the application were excluded from the subscriber corpus. The five exports share an **8-column** schema (`id`, `first_name`, `last_name`, `email`, `timezone`, `balance`, `status`, `created`), are readable with a UTF-8 BOM, contain **0 malformed rows** and **0 within-file duplicate rows**.
+
+  The corpus contains **2,154 rows** in total. Cross-snapshot overlap is substantial: **1,133 distinct row signatures** and **1,021 repeated inter-file signatures** were observed. The exports contain **1,072 distinct identifiers** and **1,057 distinct email addresses**; these values must not be added as unique people without further deduplication and validation.
+
+  Every row has `status=1` and a non-empty balance field. Across the repeated extracts, balances range from **-300.0749** to **42.6123**, with **1,638 zero values**, **514 positive values** and **2 negative values**; the raw sum across snapshots is **270.668**, with no currency or business meaning established. `created` dates range from **1 September 2021 to 13 September 2023**, with no invalid dates in the five files.
+
+  `Africa/*` timezones account for **1,779 rows (82.6%)**, including `Africa/Nairobi` with **1,631 rows (75.7% of the corpus)**. The remaining rows use Asian, European, American, Indian Ocean and Pacific timezones. A timezone is a profile or configuration marker and does not document a person's residence or nationality. The Nairobi concentration, `.co.ke` domain and post title support a Kenyan link, but do not alone establish the operator's legal identity or the complete origin of the data.
+
+  Content review confirms an account or subscriber list containing identifiers, names, email addresses, timezone settings, account states, application balances and creation dates. No name, email address, balance or other individual value is reproduced in the repository. APKs, PHP scripts and other active files present in the directory were not executed and were not used to extrapolate the CSV analysis.
+- **Evidence limitations:** The analysis fully covers the five available subscriber CSV contents and documents copies, schema, encoding, counts, overlaps, dates, timezones and balances. It does not confirm completeness of the original database, extraction date, access vector, publication authenticity, operator identity, balance currency or a confirmed system compromise. Repeated identifiers, emails and balances across snapshots cannot be interpreted as unique people, accounts or amounts without business-level deduplication.
+
+### September 16, 2026
+
+#### 🇳🇦 Namibia - Namibian Defence Force
+- **Initial publication date:** September 16, 2026
+
+
+- **Actor / Group:** RansomHouse (association publicly reported by NAM-CSIRT)
+- **Sector:** Defence / Armed Forces
+- **Status:** Government Confirmed - Unauthorized Access
+- **Incident type:** System Intrusion (ransomware claim; encryption unconfirmed)
+- **Subtype:** Ministry network intrusion confirmed; encryption/exfiltration unproven
+- **Description:** The **Namibian Defence Force (NDF)** is **Namibia's national armed forces**. Its core constitutional mission is to defend the country's territorial integrity and national interests under Namibia's defence institutions. A claim naming the NDF does not, by itself, demonstrate a compromise of operational military networks ([Namibian Ministry of Defence](https://mod.gov.na/about-ndf)).
+
+- **Independent verification as of 18 October 2026:** **Compromise confirmed by the national cyber authority:** according to a NAM-CSIRT statement reported on 21 September 2026, unauthorised activity was found on the **Ministry of Defence and Veterans Affairs (MODVA)** network, and the investigation linked the incident to **RansomHouse**. The claim names the “Namibian Defence Force”, but the officially confirmed scope is the ministry network. **No released evidence confirms encryption, exfiltration, military-secret leakage or payment.**
+
+- **Additional verification sources:** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
+
+
+**Original claim context:** RansomHouse named the Namibian Defence Force in its listing. NAM-CSIRT subsequently confirmed unauthorised activity on the Ministry of Defence network and associated it with RansomHouse, while neither encryption nor data exfiltration was publicly demonstrated.
+
+### September 18, 2026
+
+#### 🇹🇳 Tunisia - PayPal Support Operations (Transcom WorldWide)
+- **Initial publication date:** September 18, 2026
+
+
+- **Actor / Group:** N0n
+- **Sector:** Business Services / Customer Support
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Transcom WorldWide** is a **business-process outsourcing and customer-experience (BPO/CX)** provider offering contact-centre, customer-support and business-process services to international brands, including from Tunisia. **PayPal** is a separate payments-services company. The claim links them to support operations, but **the existence and scope of an affected PayPal-Transcom contract is not independently corroborated** by these public company descriptions ([Transcom official services](https://transcom.com/services/customer-experience)).
+
+- **Independent verification as of 18 October 2026:** No independent confirmation of an intrusion or of the precise operational relationship between Transcom, PayPal and Tunisian sites was found. Citrix/AD infrastructure maps and 86.7 million connection records are solely N0n claims.
+
+- **Additional verification sources:** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
+
+
+N0n published a claim targeting outsourced support operations linked to PayPal and Transcom WorldWide in Tunisia. The post mentions internal systems and a settlement deadline, but does not confirm access, the stated volumes or operational impact.
+
+### September 19, 2026
+
 #### 🇿🇦 South Africa - Apollo 21
+- **Initial publication date:** September 19, 2026
 
-- **Initial publication date:** 19 September 2026 (date displayed in the BLACKLOCKS list; time and timezone not specified)
+
+
 - **Actor / Group:** BLACKLOCKS
 - **Sector:** Spare-parts distribution / Road transport
 - **Website:** [apollo21.co.za](https://apollo21.co.za/)
@@ -271,12 +511,13 @@
 
 - **Sources / Evidence:** BLACKLOCKS list and entry supplied as screenshots; twelve sample images supplied locally; [official Apollo 21 website](https://apollo21.co.za/). No individual document, personal identifier or criminal-site link is published.
 
+### September 21, 2026
 
-
-### 21 September 2026
 #### 🇳🇬 Nigeria - Federal Capital Territory Internal Revenue Service (FCT-IRS)
+- **Initial publication date:** September 21, 2026
 
-- **Initial publication date:** 21 September 2026 at 13:03 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** individual (displayed account; identity unverified)
 - **Sector:** Government / Tax administration
 - **Website:** [fctirs.gov.ng](https://fctirs.gov.ng/)
@@ -305,10 +546,47 @@
 
 - **Sources / Evidence:** forum-post screenshot supplied on 28 September 2026; local JustPaste.it PDF reviewed read-only; [official FCT-IRS website](https://fctirs.gov.ng/). No personal data or criminal-site link is published.
 
-### 22 September 2026
-#### 🇿🇦 South Africa - ARCA Unlimited Architects
+#### 🇪🇹 Ethiopia - Siinqee Bank
+- **Initial publication date:** September 21, 2026
 
-- **Initial publication date:** 22 September 2026 (date displayed in the BLACKLOCKS list; time and timezone not specified)
+
+- **Actor / Group:** lockbit5
+- **Sector:** Banking
+- **Website:** [siinqeebank.com](https://siinqeebank.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Siinqee Bank** is an Ethiopian financial institution providing **retail banking, finance and financial-inclusion services**, including for communities and entrepreneurs. It describes offerings combining mainstream banking, microfinance and digital channels. Its name refers to an Oromo cultural symbol associated with women's rights and protection ([Siinqee Bank official overview](https://siinqeebank.com/about-us/)).
+
+- **Independent verification as of 18 October 2026:** Siinqee Bank’s 8 October 2026 fraud-awareness post is **not** confirmation of the LockBit incident claimed on 21 September. No incident-specific breach notice was located.
+
+- **Additional verification sources:** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
+
+
+Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial institution. No independent element confirms intrusion or data exposure.
+
+#### 🇦🇴 Angola - Grupolider
+- **Initial publication date:** September 21, 2026
+
+
+- **Actor / Group:** TheGentlemen
+- **Sector:** Distribution / Agriculture / Logistics
+- **Website:** [grupolider-ao.com](https://grupolider-ao.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Grupolider** is a name associated with **commercial activity in Angola**. Public sources link `grupolider-ao.com` to distribution/import businesses and **Novagrolider**, which is active in agriculture and agro-industry. The domain's website was suspended when checked; the precise corporate relationships and the identity of the entity named in the claim **remain unverified** ([Argentine trade directory](https://exportaciones.cancilleria.gob.ar/sitios/ficha_directorio/89314); [Novagrolider profile](https://icrisco.com/profile.php?id=novagrolider-5238)).
+
+- **Independent verification as of 18 October 2026:** Grupolider’s entry on The Gentlemen’s leak site remains an allegation; no official confirmation or technically verified link between the claimed domain and group entities was found.
+
+
+TheGentlemen published a claim targeting Grupolider, an Angolan group active in agriculture, logistics, construction and distribution. Compromise and claimed volume remain unknown.
+
+### September 22, 2026
+
+#### 🇿🇦 South Africa - ARCA Unlimited Architects
+- **Initial publication date:** September 22, 2026
+
+
+
 - **Actor / Group:** BLACKLOCKS
 - **Sector:** Architecture / Design and project management
 - **Website:** [arcaunlimited.com](https://arcaunlimited.com/)
@@ -338,11 +616,11 @@
 
 - **Sources / Evidence:** BLACKLOCKS list and ARCA entry supplied as screenshots; 17 local sample images; [official ARCA Unlimited website](https://arcaunlimited.com/). No drawing, site detail, personal identifier or criminal-site link is published.
 
-
-
 #### 🇲🇱 Mali - AFRICA-TECH
+- **Initial publication date:** September 22, 2026
 
-- **Initial publication date:** 22 September 2026 (reported date; time not specified)
+
+
 - **Data disclosure date:** 25 September 2026 at 16:00 GMT (UTC), according to the supplied collection information
 - **Actor / Group:** N0n
 - **Sector:** Technology / IT services / Document processing
@@ -376,12 +654,51 @@
 
 - **Sources / Evidence:** N0n victim listing and deadline supplied for 22 September 2026; local directory supplied as all files released by N0n on 25 September 2026 at 16:00 GMT; local review of 26 September 2026 and SHA-256 manifest retained outside the repository. Provenance and disclosure time are documented through the supplied collection information; no independent visit to the group's site was performed for this update.
 
+### September 24, 2026
+
+#### 🇹🇿 Tanzania - Air Tanzania Company Limited (ATCL)
+- **Initial publication date:** September 24, 2026
 
 
-### 25 September 2026
+- **Actor / Group:** krybit
+- **Sector:** Air Transport
+- **Website:** [airtanzania.co.tz](https://airtanzania.co.tz/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Ransomware
+- **Confidence level:** Medium
+- **Description:** **Air Tanzania Company Limited (ATCL)** is **Tanzania's state-owned national airline**. It provides passenger and cargo air transport on domestic and international routes. Its operations rely on booking, airline-operation and customer-service systems; the presence of images in a sample does not establish that they originated from these systems ([Air Tanzania official profile](https://airtanzania.co.tz/index.php/about-us)).
+
+- **Independent verification as of 18 October 2026:** Krybit’s Air Tanzania domain claim appears in OSINT feeds; reviewed sources state that the airline had not confirmed it. A purported sample does not establish exfiltration from booking systems or encryption.
+
+- **Additional verification sources:** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
+
+
+Krybit published a claim targeting Air Tanzania Company Limited, Tanzania's national airline. A local sample associated with the publication was reviewed read-only: **114 files** totalling **676,972,266 bytes**, including **112 valid images** and **2 non-image files despite the `.jpg` extension**. The valid images comprise **101 three-frame MPO files** and **11 single-frame JPEGs**, for **314 embedded views** in total. No SHA-256 duplicates were detected.
+
+This structural consistency supports the presence of an image corpus associated with the publication, but does not confirm that the files originated from Air Tanzania's infrastructure, or establish initial access, exfiltration, encryption, the number of people represented or completeness of the claim. No OCR, facial processing, individual filename or personal content was reproduced. A minimised manifest is retained outside the repository at `/tmp/afrintel-evidence/afr-2026-09-airtanzania/evidence_manifest.json`.
+
+#### 🇺🇬 Uganda - Armada Credit Bureau
+- **Initial publication date:** September 24, 2026
+
+
+- **Actor / Group:** Spirals
+- **Sector:** Financial Services / Credit Bureau
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Armada Credit Bureau Limited** describes itself as a Ugandan **credit-reporting and financial-analytics bureau** operating under the **Bank of Uganda** regulatory framework. Its business relates to creditworthiness information and credit-risk assessment services for authorised organisations. This description is based on its public website and is not independent verification of licensing or an incident ([Armada Credit Bureau website](https://www.armadacrb.com/)).
+
+- **Independent verification as of 18 October 2026:** Only Armada Credit Bureau’s appearance on a Spirals leak-site listing is corroborated. No company statement or official Ugandan notice demonstrating intrusion was found.
+
+
+Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan credit-reporting and analytics company. No independent evidence confirms compromise.
+
+### September 25, 2026
+
 #### 🇲🇦 Morocco - Pharma 5
+- **Initial publication date:** September 25, 2026
 
-- **Initial publication date:** 25 September 2026 at 08:27 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** INC Ransom
 - **Sector:** Healthcare / Pharmaceutical industry
 - **Website:** [pharma5.ma](https://www.pharma5.ma/)
@@ -420,10 +737,11 @@
 
 - **Pharma 5 file traceability (SHA-256):** `12.jpg` = `2edf0dbea43828b081c3df664d40bc598d6bcf283e170145097c92abf52340a7` ; `13.jpg` = `3d531eada1c3a5de9c618cf91edd4c3bf383a306d4758f012d681f1fe3fa8e13` ; `Capture d’écran du 2026-09-28 11-22-02.png` = `66c63a7c0933ab7422853ae4c73aa5c6caa4ed33714cfe17d7e5577cc63e5a74`. The file `1.png` was excluded and is not used as an observed Pharma 5 element. Hashes of supplied copies only, not the actor's purported original files.
 
-
 #### 🇿🇦 South Africa - Unidentified identity-document and personal-record corpus
+- **Initial publication date:** September 25, 2026
 
-- **Initial publication date:** 25 September 2026 at 22:53 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Individual (displayed account; identity unverified)
 - **Sector:** Public administration / Social services / Education
 - **Website:** Not specified
@@ -444,13 +762,67 @@
 
 - **Sources / evidence:** publication screenshot supplied to AFRINTEL; local sample supplied for structural analysis. Raw files and personal data remain outside the repository.
 
+#### 🇰🇪 Kenya - Majani Insurance Brokers
+- **Initial publication date:** September 25, 2026
 
-### 27 September 2026
+
+- **Actor / Group:** Vexy Ransomware
+- **Sector:** Insurance
+- **Website:** [majaninsure.com](https://majaninsure.com/)
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Description:** **Majani Insurance Brokers Limited** is a **Kenyan insurance brokerage** serving individuals and businesses. Its services include sourcing insurance cover, placing business with insurers, renewals and claims assistance. The broker reports several decades of experience in the market ([Majani official profile](https://majaninsure.com/about/)).
+
+- **Independent verification as of 18 October 2026:** The Vexy claim against Majani Insurance Brokers is indexed in threat-intelligence databases without a public company acknowledgement or independent technical corroboration.
+
+
+Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan insurance broker. The vector, affected systems and any exfiltration remain unknown.
+
+### September 26, 2026
+
+#### 🇿🇦 South Africa - Guardrisk
+- **Initial publication date:** September 26, 2026
+
+
+- **Actor / Group:** TheGentlemen
+- **Sector:** Insurance
+- **Website:** [guardrisk.co.za](https://guardrisk.co.za/)
+- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
+- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
+- **Description:** **Guardrisk** is a South African insurance group specialising in **risk-transfer and risk-financing solutions**, notably **cell-captive insurance** structures. It operates across life, non-life and customised commercial insurance arrangements. The Guardrisk name encompasses several regulated entities; the listing does not establish which one, if any, was affected ([Guardrisk official overview](https://guardrisk.co.za/about/)).
+
+- **Independent verification as of 18 October 2026:** **Intermediary exposure acknowledged; direct Guardrisk breach denied:** on 30 September 2026 Guardrisk told MyBroadband that there was no indication of its systems or customer data being compromised. It linked the matter to exposure at binder holder **CoverCubed** affecting around **6,000 funeral policies**, stating that CoverCubed had notified clients and the regulator. **Do not attribute the data to a confirmed intrusion at Guardrisk.**
+
+- **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
+
+
+TheGentlemen published a claim targeting Guardrisk, a South African insurance group. The publication provides organisational context but does not confirm access or the scope of held data.
+
+#### 🇲🇦 Morocco - `acao.org.ma` [Data Leak]
+- **Initial publication date:** September 26, 2026
+
+
+- **Actor / Group:** EliteSquad (displayed account; identity and affiliation unverified)
+- **Sector:** Government / Civil Aviation
+- **Associated website:** [acao.org.ma](https://acao.org.ma/site/en/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium for sample attribution to the domain; Low to Medium for compromise of the organisation
+- **Impact level:** Level 3
+- **Victim description:** `acao.org.ma` is a Moroccan domain presented in the post as associated with a civil-aviation authority. The organisation would be linked to the supervision or administration of civil air transport in Morocco; its exact legal identity, operational scope and precise institutional relationship are not specified in the sources consulted by the available evidence. The EliteSquad post associates the domain with a database of aviation-sector personnel or contacts, without direct victim confirmation.
+- **Analysis:** The post claims an **18 MB** CSV database containing **31,657 lines**, presented as a civil-aviation authority database. The visible sample contains identifiers, names, email addresses, telephone numbers, job functions, professional affiliations, dates and administrative information. Visible rows reference multiple countries and organisations, including Moroccan, Qatari, Saudi and Somali professional domains; this may reflect a multi-country dataset or international aviation-sector relationships, but does not document the persons' residence or nationality.
+
+  The `.ma` domain, post title and displayed logo support a Moroccan link. They do not confirm the file's technical origin, completeness of the claimed **31,657 lines**, access to an operational civil-aviation system or compromise of the authority. Visible personal values are not reproduced in the repository.
+- **Evidence limitations:** Analysis is limited to the post and visible sample; the complete CSV, schema, hash, actual volume, duplicates and technical provenance were not verified. No name, email address, telephone number or other raw personal data is published.
+
+### September 27, 2026
 
 #### 🇿🇦 South Africa - First National Bank (FNB)
+- **Initial publication date:** September 27, 2026
+
+
 
 - **Incident date:** Not established
-- **Initial publication date:** 27 September 2026 at 00:06 (displayed time; timezone not specified)
 - **Actor / Group:** Blacknet00
 - **Sector:** Financial services / Banking
 - **Website:** [fnb.co.za](https://www.fnb.co.za/)
@@ -492,287 +864,12 @@
 
 > These records are assigned to September by their publication date or first documented AFRINTEL observation. An earlier incident date, when mentioned in a card, remains a separate chronological detail and does not change the publication month.
 
-
-### September 1, 2026
-#### 🇪🇬 Egypt - Holding Company for Construction and Development (HCCD)
-- **Initial publication date:** September 1, 2026
-- **Actor / Group:** krybit
-- **Sector:** Construction
-- **Website:** [hccd-construction.com](https://hccd-construction.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** The **Holding Company for Construction and Development (HCCD)** is an Egyptian holding company active in **construction, civil works and property development**. Its website describes subsidiaries involved in contracting, engineering consulting, housing and electrical works. As a corporate group, a claim naming HCCD does not establish which subsidiary or information system may be affected ([HCCD official overview](https://hccd-construction.com/About_e.aspx)).
-
-- **Independent verification as of 18 October 2026:** Only the listing in Krybit claim trackers is corroborated; no HCCD statement or verifiable investigation proving an intrusion into its systems was found.
-
-
-Krybit published a claim naming the Holding Company for Construction and Development. The date reflects the listing observation; compromise, volume, encryption and exfiltration remain unknown.
-
-#### 🇪🇬 Egypt - Mecca High Feed Factory
-- **Initial publication date:** September 1, 2026
-- **Actor / Group:** krybit
-- **Sector:** Agriculture / Agribusiness
-- **Website:** [meccahighfeed.blogspot.com](https://meccahighfeed.blogspot.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Mecca High Feed Factory** is described on its Arabic-language business blog as an Egyptian producer of **poultry and livestock feed**, including plant-based feed formulations. The business blog associates the **Mecca** and **High Feed** names and discusses animal nutrition products; as a self-published source, it does not independently verify the company's current legal structure or industrial footprint ([company blog](https://meccahighfeed.blogspot.com/)).
-
-- **Independent verification as of 18 October 2026:** OSINT aggregators relay a Krybit claim without independent evidence of compromise or an identified Mecca High Feed Factory statement. Some databases disagree on country: do not revise geographical attribution without checking.
-
-
-Krybit published a claim targeting Mecca High Feed Factory, described as an Egyptian animal-feed manufacturer. Technical evidence and actual impact are not established.
-
-#### 🇪🇬 Egypt - Seashell Hospital
-- **Initial publication date:** September 1, 2026
-- **Actor / Group:** krybit
-- **Sector:** Healthcare / Hospital
-- **Website:** [seashellhospital.com](https://seashellhospital.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Seashell Hospital** is a private healthcare facility in **New Cairo**, Egypt. Its website describes inpatient healthcare, diagnosis and treatment services, including a round-the-clock emergency department. Its operations involve sensitive clinical and administrative workflows, although the claim alone does not demonstrate exposure of patient records ([hospital official website](https://www.seashellhospital.com/AboutUs/Index)).
-
-- **Independent verification as of 18 October 2026:** Multiple leak-site indices reproduce a Krybit claim naming Seashell Hospital, but no hospital notification or independent forensic confirmation was found. Disruption, patient-data exposure and encryption remain unestablished.
-
-
-Krybit published a claim targeting Seashell Hospital, a private Egyptian hospital. No reviewed public element confirms access, encryption or exfiltration.
-
-### September 7, 2026
-#### 🇿🇦 South Africa - VSB Attorneys Inc
-- **Initial publication date:** September 7, 2026
-- **Actor / Group:** lockbit5
-- **Sector:** Legal Services
-- **Website:** [vsbattorneys.co.za](https://vsbattorneys.co.za/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **VSB Attorneys Inc** is a **South African law firm** offering property law, conveyancing and corporate/commercial legal services. It assists individuals and businesses with legal and contractual matters that can involve confidential files and supporting documents. The nature of its legal work does not establish which records, if any, were affected by the claim ([VSB official profile](https://www.vsbattorneys.co.za/about-vsb-attorneys-law-firm/)).
-
-- **Independent verification as of 18 October 2026:** The LockBit5 claim naming VSB Attorneys is recorded by leak-site monitors, without an identified company response or independent proof of intrusion.
-
-  **Local artefact analysis:** the supplied directory contains a **1,082,440,568-byte** RAR5 volume identified as multipart, plus a second empty RAR file. A read-only test identifies an incomplete multipart archive and reports an unexpected end together with a data error on a PDF entry. No file was extracted or executed; content, actual volume, authenticity and origin remain unknown. The presence of this fragment is not sufficient to establish a successful data disclosure.
-
-- **Analysis scope:** file type, size and archive structure were checked; an integrity test was performed without exploitable extraction. No document or personal data contained in the archive was analysed.
-
-- **Observed elements:** LockBit5 claim and locally supplied multipart RAR5 artefact. The empty file and incomplete fragment do not constitute an exploitable corpus.
-
-
-Lockbit5 published a claim targeting VSB Attorneys Inc, a South African law firm. Compromise and data scope are unconfirmed.
-
-#### 🇪🇬 Egypt - Nile Projects Trading
-- **Initial publication date:** September 7, 2026
-- **Actor / Group:** TheGentlemen
-- **Sector:** Real Estate / Property Management
-- **Website:** [nileprojects.com](https://nileprojects.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Nile Projects & Trading Company** is an Egyptian trading group that traces its origins to **1972**. Initially a family business, it expanded into **international brand distribution, tyres, luxury fashion and commercial real estate**. Its operations extend beyond real estate, but the listing does not identify which business unit, if any, was targeted ([Nile Projects official profile](https://nileprojects.com/pages/about-us)).
-
-- **Independent verification as of 18 October 2026:** Public search results reproduce The Gentlemen’s claim against Nile Projects Trading; no official acknowledgement, regulatory notice or forensic verification establishes a confirmed incident.
-
-
-TheGentlemen published a claim targeting Nile Projects Trading, an Egyptian group active in retail, real estate and distribution. No evidence confirms access or exfiltration.
-
-#### 🇿🇦 South Africa - Hollard Insurance Group
-- **Initial publication date:** September 7, 2026
-- **Actor / Group:** TheGentlemen
-- **Sector:** Insurance
-- **Website:** [hollard.co.za](https://www.hollard.co.za/)
-- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
-- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
-- **Description:** **Hollard Insurance Group** is a **privately owned South African insurance group** providing life and non-life coverage, personal and commercial insurance and investment-related products. It has a footprint across several African markets through operations and partnerships. The claim naming Hollard does not establish which legal entity or subsidiary, if any, was affected ([Hollard official overview](https://www.hollard.co.za/our-world)).
-
-- **Independent verification as of 18 October 2026:** **Third-party exposure acknowledged; direct Hollard breach disputed:** in statements dated 15 and 18 September 2026 Hollard reported that information relating to some funeral policyholders was published following the **June 2026 incident at MIP Holdings**. It has notified affected customers and engaged regulators; its investigations found **no compromise of Hollard’s own environment**. The Gentlemen’s listing must not be treated as a confirmed intrusion at Hollard.
-
-- **Additional verification sources:** [Source 1](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) ; [Source 2](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
-
-
-TheGentlemen published a claim targeting Hollard Insurance Group. The source corpus describes the insurer and its activities but provides no independent compromise evidence.
-
-#### 🇿🇦 South Africa - RelyComply AML Platform
-- **Initial publication date:** September 9, 2026
-- **Actor / Group:** Direwolf (claim; technical attribution unconfirmed)
-- **Sector:** Fintech / Anti-Money Laundering
-- **Status:** Victim Confirmed - Unauthorized Access
-- **Incident type:** System Intrusion (ransomware claim unconfirmed)
-- **Subtype:** Unauthorised access confirmed; Direwolf link/encryption unproven
-- **Description:** **RelyComply** is a regulatory-technology (**RegTech**) provider offering an **AML/KYC** compliance platform for organisations subject to anti-money-laundering requirements. Its software centralises customer due-diligence, identity-checking, monitoring and compliance workflows. The company's public profile does not, by itself, confirm the scope of any intrusion ([RelyComply official platform](https://relycomply.com/)).
-
-- **Independent verification as of 18 October 2026:** **Company-confirmed unauthorised access:** in its 16 September notice, RelyComply said it detected access to certain systems on 8 September 2026 after exploitation of a third-party application zero-day. The company rebuilt affected systems, rotated credentials/tokens, patched the flaw and notified South Africa’s Information Regulator (**reference SC20263150**). Virgin Active and HuntEx describe potential transaction-data exposure via Peach Payments. **Direwolf attribution, encryption and the claimed data volume are not confirmed.**
-
-- **Additional verification sources:** [Source 1](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) ; [Source 2](https://virginactivesa.freshdesk.com/support/solutions/articles/201000132941-cybersecurity-incident-at-relycomply) ; [Source 3](https://www.huntex.net/peach-payments-security-update)
-
-
-**Original claim context:** Direwolf named RelyComply in a leak-site listing. The company later confirmed unauthorised access to some systems and identified an apparent third-party zero-day exploitation path. Direwolf involvement, encryption and the volume of any extracted data remain unproven.
-
-### September 12, 2026
-#### 🇲🇦 Morocco - La Sultana Hotel Group
-- **Initial publication date:** September 12, 2026
-- **Actor / Group:** krybit
-- **Sector:** Hospitality
-- **Website:** [lasultanahotels.com](https://lasultanahotels.com/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Ransomware
-- **Confidence level:** Medium (listing shown as published and associated local image corpus available; technical provenance and completeness not established)
-- **Impact level:** Level 3
-- **Description:** **La Sultana Hotels** is a Moroccan **luxury hospitality** brand comprising **La Sultana Marrakech** in the historic medina and **La Sultana Oualidia** by the Atlantic lagoon. Its offering includes premium accommodation, dining and visitor experiences. The claim does not establish which property or reservation-related system, if any, was affected ([La Sultana official website](https://www.lasultanahotels.com/)).
-
-- **Publication observation:** A screenshot dated 14 September 2026 shows a `lasultanahotels.com` listing marked `PUBLISHED`, with 3,914 views, 0 displayed images and a claimed data size of 41 GB. A countdown displayed a deadline of 15 September 2026 at 12:57:51. These elements describe the visible publication state and do not establish the outcome of a negotiation or payment.
-
-- **Analysis of the associated local corpus:** The collection directory contains 138 JPEG scan files, approximately 54 MB in total. Visual review of the available subset shows international passports and identity-document pages. Five pairs of files are exact duplicates by SHA-256, resulting in 135 distinct hashes across 140 files including the two publication screenshots. The number of persons, acquisition source, technical link to La Sultana, corpus coverage and completeness remain unknown.
-
-- **Independent verification as of 18 October 2026:** No hotel-group statement or independent public confirmation of intrusion was identified. The image corpus strengthens the observation that data was made available in association with the listing, but does not confirm that the passports originated from La Sultana systems or concern its customers, employees or partners.
-
-- **Sources / Observed elements:** Krybit publication captured on 14 September 2026; local corpus of 138 JPEG scans associated with the collection. Raw artifacts remain outside the repository.
-
-Krybit published a claim targeting La Sultana Hotel Group in Morocco. The listing shown as published and the local scan corpus indicate data availability associated with the publication. They do not establish initial access, provenance from La Sultana systems, encryption, completeness or the number of persons concerned.
-
-#### 🇪🇬 Egypt - Egyptian Airports Company (EAC)
-- **Initial publication date:** September 12, 2026
-- **Actor / Group:** krybit
-- **Sector:** Air Transport
-- **Website:** [eac-airports.com](https://www.eac-airports.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** The **Egyptian Airports Company (EAC)** is an Egyptian **airport operator** within the state-owned **Egyptian Holding Company for Airports and Air Navigation** ecosystem. Its role involves managing, operating, maintaining and developing civil airports. It is distinct from an airline or air-navigation service provider; the claim does not identify any specific compromised airport ([Egyptian Ministry of Civil Aviation](https://web.civilaviation.gov.eg/Companies/AirportCompany)).
-
-- **Independent verification as of 18 October 2026:** Several CTI feeds list Krybit’s claim against the Egyptian Airports Company domain. No acknowledgement by EAC or an Egyptian authority, or evidence of impact on operational airport systems, was found.
-
-
-Krybit published a claim targeting the Egyptian Airports Company. The publication identifies the organisation and sector; technical outcome and any exposure remain unknown.
-
-### September 16, 2026
-#### 🇳🇦 Namibia - Namibian Defence Force
-- **Initial publication date:** September 16, 2026
-- **Actor / Group:** RansomHouse (association publicly reported by NAM-CSIRT)
-- **Sector:** Defence / Armed Forces
-- **Status:** Government Confirmed - Unauthorized Access
-- **Incident type:** System Intrusion (ransomware claim; encryption unconfirmed)
-- **Subtype:** Ministry network intrusion confirmed; encryption/exfiltration unproven
-- **Description:** The **Namibian Defence Force (NDF)** is **Namibia's national armed forces**. Its core constitutional mission is to defend the country's territorial integrity and national interests under Namibia's defence institutions. A claim naming the NDF does not, by itself, demonstrate a compromise of operational military networks ([Namibian Ministry of Defence](https://mod.gov.na/about-ndf)).
-
-- **Independent verification as of 18 October 2026:** **Compromise confirmed by the national cyber authority:** according to a NAM-CSIRT statement reported on 21 September 2026, unauthorised activity was found on the **Ministry of Defence and Veterans Affairs (MODVA)** network, and the investigation linked the incident to **RansomHouse**. The claim names the “Namibian Defence Force”, but the officially confirmed scope is the ministry network. **No released evidence confirms encryption, exfiltration, military-secret leakage or payment.**
-
-- **Additional verification sources:** [Source 1](https://www.theregister.com/cyber-crime/2026/09/21/ransomhouse-picks-a-fight-with-namibias-defense-establishment/5297816) ; [Source 2](https://www.namibian.com.na/hackers-hit-ndf-ransomhouse-threatens-state-secrets/)
-
-
-**Original claim context:** RansomHouse named the Namibian Defence Force in its listing. NAM-CSIRT subsequently confirmed unauthorised activity on the Ministry of Defence network and associated it with RansomHouse, while neither encryption nor data exfiltration was publicly demonstrated.
-
-### September 18, 2026
-
-#### 🇹🇳 Tunisia - PayPal Support Operations (Transcom WorldWide)
-- **Initial publication date:** September 18, 2026
-- **Actor / Group:** N0n
-- **Sector:** Business Services / Customer Support
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Transcom WorldWide** is a **business-process outsourcing and customer-experience (BPO/CX)** provider offering contact-centre, customer-support and business-process services to international brands, including from Tunisia. **PayPal** is a separate payments-services company. The claim links them to support operations, but **the existence and scope of an affected PayPal-Transcom contract is not independently corroborated** by these public company descriptions ([Transcom official services](https://transcom.com/services/customer-experience)).
-
-- **Independent verification as of 18 October 2026:** No independent confirmation of an intrusion or of the precise operational relationship between Transcom, PayPal and Tunisian sites was found. Citrix/AD infrastructure maps and 86.7 million connection records are solely N0n claims.
-
-- **Additional verification sources:** [Source 1](https://cypro.co.uk/insights/cyber-bulletins/n0n-ransomware-claim-targets-transcom/)
-
-
-N0n published a claim targeting outsourced support operations linked to PayPal and Transcom WorldWide in Tunisia. The post mentions internal systems and a settlement deadline, but does not confirm access, the stated volumes or operational impact.
-
-### September 21, 2026
-#### 🇪🇹 Ethiopia - Siinqee Bank
-- **Initial publication date:** September 21, 2026
-- **Actor / Group:** lockbit5
-- **Sector:** Banking
-- **Website:** [siinqeebank.com](https://siinqeebank.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Siinqee Bank** is an Ethiopian financial institution providing **retail banking, finance and financial-inclusion services**, including for communities and entrepreneurs. It describes offerings combining mainstream banking, microfinance and digital channels. Its name refers to an Oromo cultural symbol associated with women's rights and protection ([Siinqee Bank official overview](https://siinqeebank.com/about-us/)).
-
-- **Independent verification as of 18 October 2026:** Siinqee Bank’s 8 October 2026 fraud-awareness post is **not** confirmation of the LockBit incident claimed on 21 September. No incident-specific breach notice was located.
-
-- **Additional verification sources:** [Source 1](https://siinqeebank.com/2026/10/08/stay-alert/)
-
-
-Lockbit5 published a claim targeting Siinqee Bank, an Ethiopian financial institution. No independent element confirms intrusion or data exposure.
-
-#### 🇦🇴 Angola - Grupolider
-- **Initial publication date:** September 21, 2026
-- **Actor / Group:** TheGentlemen
-- **Sector:** Distribution / Agriculture / Logistics
-- **Website:** [grupolider-ao.com](https://grupolider-ao.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Grupolider** is a name associated with **commercial activity in Angola**. Public sources link `grupolider-ao.com` to distribution/import businesses and **Novagrolider**, which is active in agriculture and agro-industry. The domain's website was suspended when checked; the precise corporate relationships and the identity of the entity named in the claim **remain unverified** ([Argentine trade directory](https://exportaciones.cancilleria.gob.ar/sitios/ficha_directorio/89314); [Novagrolider profile](https://icrisco.com/profile.php?id=novagrolider-5238)).
-
-- **Independent verification as of 18 October 2026:** Grupolider’s entry on The Gentlemen’s leak site remains an allegation; no official confirmation or technically verified link between the claimed domain and group entities was found.
-
-
-TheGentlemen published a claim targeting Grupolider, an Angolan group active in agriculture, logistics, construction and distribution. Compromise and claimed volume remain unknown.
-
-### September 24, 2026
-#### 🇹🇿 Tanzania - Air Tanzania Company Limited (ATCL)
-- **Initial publication date:** September 24, 2026
-- **Actor / Group:** krybit
-- **Sector:** Air Transport
-- **Website:** [airtanzania.co.tz](https://airtanzania.co.tz/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Ransomware
-- **Confidence level:** Medium
-- **Description:** **Air Tanzania Company Limited (ATCL)** is **Tanzania's state-owned national airline**. It provides passenger and cargo air transport on domestic and international routes. Its operations rely on booking, airline-operation and customer-service systems; the presence of images in a sample does not establish that they originated from these systems ([Air Tanzania official profile](https://airtanzania.co.tz/index.php/about-us)).
-
-- **Independent verification as of 18 October 2026:** Krybit’s Air Tanzania domain claim appears in OSINT feeds; reviewed sources state that the airline had not confirmed it. A purported sample does not establish exfiltration from booking systems or encryption.
-
-- **Additional verification sources:** [Source 1](https://www.galaxywarden.com/blog/breach/airtanzania-co-tz-airtanzania-com-krybit-2026-09)
-
-
-Krybit published a claim targeting Air Tanzania Company Limited, Tanzania's national airline. A local sample associated with the publication was reviewed read-only: **114 files** totalling **676,972,266 bytes**, including **112 valid images** and **2 non-image files despite the `.jpg` extension**. The valid images comprise **101 three-frame MPO files** and **11 single-frame JPEGs**, for **314 embedded views** in total. No SHA-256 duplicates were detected.
-
-This structural consistency supports the presence of an image corpus associated with the publication, but does not confirm that the files originated from Air Tanzania's infrastructure, or establish initial access, exfiltration, encryption, the number of people represented or completeness of the claim. No OCR, facial processing, individual filename or personal content was reproduced. A minimised manifest is retained outside the repository at `/tmp/afrintel-evidence/afr-2026-09-airtanzania/evidence_manifest.json`.
-
-
-#### 🇺🇬 Uganda - Armada Credit Bureau
-- **Initial publication date:** September 24, 2026
-- **Actor / Group:** Spirals
-- **Sector:** Financial Services / Credit Bureau
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Armada Credit Bureau Limited** describes itself as a Ugandan **credit-reporting and financial-analytics bureau** operating under the **Bank of Uganda** regulatory framework. Its business relates to creditworthiness information and credit-risk assessment services for authorised organisations. This description is based on its public website and is not independent verification of licensing or an incident ([Armada Credit Bureau website](https://www.armadacrb.com/)).
-
-- **Independent verification as of 18 October 2026:** Only Armada Credit Bureau’s appearance on a Spirals leak-site listing is corroborated. No company statement or official Ugandan notice demonstrating intrusion was found.
-
-
-Spirals published a claim targeting Armada Credit Bureau Limited, a Ugandan credit-reporting and analytics company. No independent evidence confirms compromise.
-
-### September 25, 2026
-#### 🇰🇪 Kenya - Majani Insurance Brokers
-- **Initial publication date:** September 25, 2026
-- **Actor / Group:** Vexy Ransomware
-- **Sector:** Insurance
-- **Website:** [majaninsure.com](https://majaninsure.com/)
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Description:** **Majani Insurance Brokers Limited** is a **Kenyan insurance brokerage** serving individuals and businesses. Its services include sourcing insurance cover, placing business with insurers, renewals and claims assistance. The broker reports several decades of experience in the market ([Majani official profile](https://majaninsure.com/about/)).
-
-- **Independent verification as of 18 October 2026:** The Vexy claim against Majani Insurance Brokers is indexed in threat-intelligence databases without a public company acknowledgement or independent technical corroboration.
-
-
-Vexy Ransomware published a claim targeting Majani Insurance Brokers, a Kenyan insurance broker. The vector, affected systems and any exfiltration remain unknown.
-
-### September 26, 2026
-#### 🇿🇦 South Africa - Guardrisk
-- **Initial publication date:** September 26, 2026
-- **Actor / Group:** TheGentlemen
-- **Sector:** Insurance
-- **Website:** [guardrisk.co.za](https://guardrisk.co.za/)
-- **Status:** Third-Party Exposure Confirmed - Direct Breach Not Established
-- **Incident type:** Data Leak (third-party exposure) / ransomware claim disputed
-- **Description:** **Guardrisk** is a South African insurance group specialising in **risk-transfer and risk-financing solutions**, notably **cell-captive insurance** structures. It operates across life, non-life and customised commercial insurance arrangements. The Guardrisk name encompasses several regulated entities; the listing does not establish which one, if any, was affected ([Guardrisk official overview](https://guardrisk.co.za/about/)).
-
-- **Independent verification as of 18 October 2026:** **Intermediary exposure acknowledged; direct Guardrisk breach denied:** on 30 September 2026 Guardrisk told MyBroadband that there was no indication of its systems or customer data being compromised. It linked the matter to exposure at binder holder **CoverCubed** affecting around **6,000 funeral policies**, stating that CoverCubed had notified clients and the regulator. **Do not attribute the data to a confirmed intrusion at Guardrisk.**
-
-- **Additional verification sources:** [Source 1](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html)
-
-
-TheGentlemen published a claim targeting Guardrisk, a South African insurance group. The publication provides organisational context but does not confirm access or the scope of held data.
-
 ### September 29, 2026
+
 #### 🇿🇦 South Africa - BCX / Business Connexion
 - **Initial publication date:** September 29, 2026
+
+
 - **Actor / Group:** incransom
 - **Sector:** Information Technology / Consulting
 - **Website:** [bcx.co.za](https://www.bcx.co.za/)
@@ -793,54 +890,10 @@ The [June 2026 Ministry of Education of Libya record](../../06-june/victims.md) 
 
 The **10 September 2026** publication, attributed to **EveN47**, subsequently claims **800 GB** for the moe.gov.ly database and approximately **300 GB** of similar data covering several Libyan education ministries. A local sample supplied as originating from this publication was nevertheless analysed in read-only mode: **900,976,395 bytes** (approximately **901 MB**), comprising **3,900 files** across four directories corresponding to passports (**1,145** files), national numbers (**467**), student photographs (**1,146**) and student certificates (**1,142**). Signatures identify 3,500 valid JPEGs and 4 valid PNGs; five files carrying a `.jpg` extension are actually PDFs and two others are HTML documents. The aggregate tree SHA-256 fingerprint is `d63371c3d61dd48c87398578d1bdfe4329c7dca1bc73104125e966221591df80`. SHA-256 checking found **169 duplicate groups** representing **213 excess files**, so the sample cannot be used to infer a unique count of people or documents. No bulk OCR or transcription of individual content was performed to limit exposure of personal data; the analysis covers the directory structure, signatures, technical metadata and integrity checks. This structure strengthens internal corroboration of the dataset's documentary and education-related nature, without validating the 287 GB, 800 GB or 300 GB claims. No download link was opened and no raw personal data is reproduced here. It is not established whether this represents an extension, republication, revised volume claim or a publication by a different alias. The 287 GB, 800 GB and 300 GB figures must not be added together; they remain separate dated threat-actor claims.
 
-### September 13, 2026
-
-#### 🇰🇪 Kenya - `subscribers.co.ke` [Data Leak]
-- **Initial publication date:** 13 September 2026 at 08:17 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** October 2026 (day not specified)
-- **Actor / Group:** Sensitive2025 (account displayed in the publication; identity and affiliation unverified)
-- **Sector:** Digital services / Subscriber and email-list management
-- **Associated website:** [subscribers.co.ke](https://subscribers.co.ke/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for sample attribution to the domain; High for the geographic link to Kenya
-- **Impact level:** Level 3
-- **Victim description:** `subscribers.co.ke` is a Kenyan domain associated with a subscriber or email-list management service. The legal identity of the organisation operating the service is not specified in the sources consulted by the visible evidence; the Sensitive2025 post associates the domain with a CSV list.
-- **Analysis:** AFRINTEL examined all five distinct supplied subscriber CSV contents read-only; the five files are present as two physical copies, resulting in **10 inventoried CSV files**, including **5 duplicate copies**. Application-library example CSVs bundled with the application were excluded from the subscriber corpus. The five exports share an **8-column** schema (`id`, `first_name`, `last_name`, `email`, `timezone`, `balance`, `status`, `created`), are readable with a UTF-8 BOM, contain **0 malformed rows** and **0 within-file duplicate rows**.
-
-  The corpus contains **2,154 rows** in total. Cross-snapshot overlap is substantial: **1,133 distinct row signatures** and **1,021 repeated inter-file signatures** were observed. The exports contain **1,072 distinct identifiers** and **1,057 distinct email addresses**; these values must not be added as unique people without further deduplication and validation.
-
-  Every row has `status=1` and a non-empty balance field. Across the repeated extracts, balances range from **-300.0749** to **42.6123**, with **1,638 zero values**, **514 positive values** and **2 negative values**; the raw sum across snapshots is **270.668**, with no currency or business meaning established. `created` dates range from **1 September 2021 to 13 September 2023**, with no invalid dates in the five files.
-
-  `Africa/*` timezones account for **1,779 rows (82.6%)**, including `Africa/Nairobi` with **1,631 rows (75.7% of the corpus)**. The remaining rows use Asian, European, American, Indian Ocean and Pacific timezones. A timezone is a profile or configuration marker and does not document a person's residence or nationality. The Nairobi concentration, `.co.ke` domain and post title support a Kenyan link, but do not alone establish the operator's legal identity or the complete origin of the data.
-
-  Content review confirms an account or subscriber list containing identifiers, names, email addresses, timezone settings, account states, application balances and creation dates. No name, email address, balance or other individual value is reproduced in the repository. APKs, PHP scripts and other active files present in the directory were not executed and were not used to extrapolate the CSV analysis.
-- **Evidence limitations:** The analysis fully covers the five available subscriber CSV contents and documents copies, schema, encoding, counts, overlaps, dates, timezones and balances. It does not confirm completeness of the original database, extraction date, access vector, publication authenticity, operator identity, balance currency or a confirmed system compromise. Repeated identifiers, emails and balances across snapshots cannot be interpreted as unique people, accounts or amounts without business-level deduplication.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it in October 2026. The initial 13 September 2026 publication is retained for chronology and does not create a duplicate in the October tracking set.
-
-### September 26, 2026
-
-#### 🇲🇦 Morocco - `acao.org.ma` [Data Leak]
-- **Initial publication date:** 26 September 2026 at 06:24 (displayed timestamp; timezone not specified)
-- **AFRINTEL discovery date:** 29 October 2026
-- **Actor / Group:** EliteSquad (displayed account; identity and affiliation unverified)
-- **Sector:** Government / Civil Aviation
-- **Associated website:** [acao.org.ma](https://acao.org.ma/site/en/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** Medium for sample attribution to the domain; Low to Medium for compromise of the organisation
-- **Impact level:** Level 3
-- **Victim description:** `acao.org.ma` is a Moroccan domain presented in the post as associated with a civil-aviation authority. The organisation would be linked to the supervision or administration of civil air transport in Morocco; its exact legal identity, operational scope and precise institutional relationship are not specified in the sources consulted by the available evidence. The EliteSquad post associates the domain with a database of aviation-sector personnel or contacts, without direct victim confirmation.
-- **Analysis:** The post claims an **18 MB** CSV database containing **31,657 lines**, presented as a civil-aviation authority database. The visible sample contains identifiers, names, email addresses, telephone numbers, job functions, professional affiliations, dates and administrative information. Visible rows reference multiple countries and organisations, including Moroccan, Qatari, Saudi and Somali professional domains; this may reflect a multi-country dataset or international aviation-sector relationships, but does not document the persons' residence or nationality.
-
-  The `.ma` domain, post title and displayed logo support a Moroccan link. They do not confirm the file's technical origin, completeness of the claimed **31,657 lines**, access to an operational civil-aviation system or compromise of the authority. Visible personal values are not reproduced in the repository.
-- **Evidence limitations:** Analysis is limited to the post and visible sample; the complete CSV, schema, hash, actual volume, duplicates and technical provenance were not verified. No name, email address, telephone number or other raw personal data is published.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 29 October 2026. The initial 26 September 2026 publication is retained as historical context and does not create a duplicate in the October tracking set.
-
-### September 29, 2026
-
 #### 🇪🇬 Egypt - Techne Summit 2026 [Data Leak]
-- **Initial publication date:** 29 September 2026 at 15:24 (displayed timestamp; timezone not specified)
+- **Initial publication date:** September 29, 2026
+
+
 - **Actor / Group:** ElMokhtare0 (displayed account; identity and affiliation unverified)
 - **Sector:** Events / Technology conferences / Professional networking
 - **Official website:** [technesummit.com/2026](https://www.technesummit.com/2026); [official ticketing platform](https://tickets.techne.me/en/37/techne-summit-2026)
@@ -860,7 +913,6 @@ The **10 September 2026** publication, attributed to **EveN47**, subsequently cl
   **Unknown:** Source system, access vector, extraction date, completeness of the claimed 320,572 records, number of unique people, exact role of each contact, actual publication of the full dump and any official confirmation by Techne remain unknown.
 - **Analysis scope and limitations:** Analysis is limited to the information visible in the supplied material; no source file, hash, complete schema or archive was supplied. Visible names, email addresses, phone numbers and organisations were not reproduced.
 - **Risk assessment:** If authentic, the exposure could facilitate targeted phishing, impersonation of participants or companies, event fraud and malicious solicitation. No password, token or financial data was observed in the supplied material.
-- **Classification decision:** Counted as a canonical October incident because AFRINTEL first documented it on 30 October 2026. The initial 29 September 2026 post is retained as historical context and does not create a duplicate in the October tracking set.
 
 
 

@@ -1,55 +1,20 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)
 
-# AFRINTEL - Dossiers cyber suivis en août 2026 (33 fiches)
+# AFRINTEL - Dossiers cyber suivis en août 2026 (28 fiches)
 
 👉🏾 [English version](./victims.md)
 
-> **Règle de comptage :** 33 fiches conservées pour la traçabilité, dont **32 dossiers retenus dans les statistiques canoniques** et **1 dossier en investigation (Yalidine), hors dénominateur**. Une revendication n'est pas une compromission confirmée. L'ordre ci-dessous suit la date de classement de la fiche, pas nécessairement la date réelle d'intrusion.
+> **Règle de comptage :** 28 fiches conservées pour la traçabilité, dont **27 dossiers retenus dans les statistiques canoniques** et **1 dossier en investigation (Yalidine), hors dénominateur**. Une revendication n'est pas une compromission confirmée. L'ordre ci-dessous suit la date de classement de la fiche, pas nécessairement la date réelle d'intrusion.
 
 ## Août 2026
 
-
 ### 01 août 2026
 
-#### 🇪🇬 Égypte - Portail des services locaux égyptiens (attribution probable)
-
-* **Date de l'incident:** Non établie
-* **Date de publication initiale:** 5 juin 2026
-- **Date de détection AFRINTEL :** 1 août 2026
-* **Acteur / Groupe:** R3D3MPTION
-* **Secteur:** Gouvernement / Administration
-* **Site web:** [lgs.gov.eg](https://www.lgs.gov.eg/)
-* **Statut:** Claim - Data Sample Published
-* **Type d'incident:** Data Leak
-* **Niveau de confiance:** High
-* **Niveau d'impact:** Level 4
-* **Type de source:** Underground Forum - Direct AFRINTEL Observation
-* **Description victime:**
-  Le Portail des services locaux égyptiens, `lgs.gov.eg` (بوابة خدمات المحليات), est une plateforme gouvernementale permettant aux citoyens et aux entreprises d'accéder à différents services administratifs locaux en ligne. Le portail s'inscrit dans la numérisation des services des gouvernorats, villes et centres technologiques locaux en Égypte. L'attribution de l'incident à cette plateforme est considérée comme probable sur la base de la convergence entre le schéma des données analysées, les documents publiés et les fonctions connues du portail.
-
-* **Analyse:**
-  Le 5 juin 2026, l'acteur R3D3MPTION a publié une offre affirmant avoir compromis un service gouvernemental égyptien lié aux services locaux. Il revendique plus de **70 Go de documents**, plus de **5 Go de données personnelles** et un fichier `CITIZENS.CSV` contenant **13 117 317 enregistrements**. La publication mentionne également des ensembles relatifs aux utilisateurs, véhicules et entreprises, ainsi qu'environ **118 000 documents citoyens**, comprenant selon l'acteur des images de pièces d'identité, contrats et autres documents administratifs. Ces volumes globaux restent des revendications et n'ont pas été validés.
-
-  L'échantillon `citizens_sample.csv` fourni et analysé contient **9 938 enregistrements et 42 colonnes**, pour **9 933 identifiants citoyens distincts**. L'analyse met en évidence des données structurées comprenant notamment des noms, identifiants nationaux, identifiants de passeport, adresses, dates de naissance, coordonnées, informations de nationalité et d'état civil, données professionnelles, informations liées au handicap ainsi que différents identifiants administratifs. Sur les **9 805 identifiants nationaux renseignés**, **9 408** présentent une longueur de 14 chiffres, cohérente avec le format utilisé pour les identifiants nationaux égyptiens.
-
-  Le jeu analysé présente également une temporalité récente. Le champ applicatif `InsertDate` est renseigné pour **9 435 enregistrements**, dont **3 544** portent la date du **3 juin 2026** et **778** celle du **2 juin 2026**. Ces valeurs suggèrent que certaines données présentes dans l'échantillon étaient encore alimentées peu avant la publication du 5 juin. Elles ne permettent cependant pas d'établir la date de l'accès initial, de l'exfiltration ou de la compromission.
-
-  Les documents visibles dans la publication comprennent des pièces d'identité égyptiennes, formulaires administratifs, plans, documents immobiliers et différents justificatifs associés à des procédures locales. La combinaison de ces documents avec la structure du fichier citoyens et les ensembles `Users`, `Cars` et `Companies` annoncés présente une forte cohérence fonctionnelle avec l'écosystème du Portail des services locaux égyptiens. Cette convergence soutient une **attribution probable à `lgs.gov.eg` ou à une infrastructure back-end associée**, mais ne constitue pas une confirmation officielle de compromission de la plateforme.
-
-  L'échantillon analysé représente environ **0,076 %** des 13 117 317 enregistrements revendiqués. Il ne permet donc pas de confirmer l'exhaustivité du corpus annoncé, les volumes de **70+ Go de documents**, les **5+ Go de PII** ou les **118 000 documents** revendiqués. Le vecteur d'accès initial, les systèmes effectivement touchés, la méthode d'exfiltration et l'étendue complète de l'incident restent inconnus.
-
-  La sensibilité des données observées, leur caractère administratif, la présence de documents d'identité et la portée nationale potentielle justifient un niveau d'impact **Level 4**. Les principaux risques concernent l'usurpation d'identité, la fraude documentaire, le spear-phishing fortement contextualisé et l'exploitation croisée de données administratives.
-
-* **Recommandations:**
-
-  * Rechercher dans les journaux applicatifs, IAM, API, bases de données et systèmes de stockage toute extraction massive, requête anormale ou accès inhabituel intervenu avant le 5 juin 2026, avec une attention particulière aux 2 et 3 juin.
-  * Renforcer la surveillance des comptes administratifs et techniques, réévaluer les droits d'accès aux données citoyens et mettre en place des contrôles de détection sur les exports volumineux, les accès API inhabituels et les transferts sortants de documents sensibles.
-
 #### 🇿🇦 Afrique du Sud - South African Reserve Bank (SARB)
+- **Date de publication initiale :** 1 août 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 01 août 2026
-- **Date de détection AFRINTEL :** 15 août 2026
 - **Acteur / Groupe :** NullSec Nigeria (alias « voss », compte de forum NullsecNg), publication sur le forum cybercriminel DarkForums
 - **Secteur :** Gouvernement / Banque centrale / Services financiers
 - **Site web :** Non précisé
@@ -70,87 +35,11 @@
 
   AFRINTEL ne peut confirmer de façon indépendante ni l'intrusion alléguée, ni l'historique du profil « NullSec Nigeria », ni l'authenticité des fichiers liés, ni un quelconque lien entre cette revendication et l'infrastructure réelle de la SARB. Compte tenu des catégories de données revendiquées et du rôle de la SARB en tant que banque centrale et institution financière d'importance systémique pour l'Afrique du Sud, une compromission confirmée aurait un impact potentiel élevé ; à ce stade toutefois, la revendication repose sur des affirmations de forum non vérifiées et des liens de téléchargement non validés. AFRINTEL ne reproduit ni les liens de téléchargement ni aucun autre indicateur technique issu de la publication.
 
-#### 🇩🇿 Algérie - Direction générale de la recherche scientifique et du développement technologique (DGRSDT)
-
-- **Date de l'incident :** 8 juillet 2026 (date fournie pour l'incident ; date d'accès initial non établie)
-- **Date de publication initiale :** 8 juillet 2026 à 18:33 (fuseau horaire non indiqué)
-- **Date de découverte AFRINTEL :** 1 août 2026
-- **Acteur / Groupe :** anisanas2
-- **Secteur :** Gouvernement / Recherche scientifique
-- **Site web :** [dgrsdt.dz](https://www.dgrsdt.dz/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
-- **Type de source :** Underground Forum and Messaging Channel - Direct AFRINTEL Observation
-- **Sources publiques :** [Présentation officielle de la DGRSDT](https://www.dgrsdt.dz/public/index.php/fr/about_dgrsdt)
-
-- **Description victime :**
-
-  La Direction générale de la recherche scientifique et du développement technologique (DGRSDT) est une direction générale algérienne placée sous l'autorité du ministre chargé de la recherche scientifique. Elle met en œuvre la politique nationale de recherche scientifique et de développement technologique, notamment pour la programmation, l'évaluation, la recherche universitaire, les ressources humaines et le financement des programmes.
-
-- **Analyse :**
-
-  **Observé :** La publication observée, attribuée à anisanas2, date du 8 juillet 2026 à 18:33 selon l'horodatage visible. Elle affirme une compromission de la DGRSDT et propose un ensemble présenté comme contenant les identifiants gouvernementaux de doctorants et de scientifiques, leurs informations personnelles, des certificats d'inscription, des autoportraits et des dossiers de projets doctoraux. Le prix annoncé est de **800 USD** ; la publication revendique **6 000 identifiants** et **6 000 profils**. Ces chiffres et la compromission restent des revendications de l'acteur.
-
-  Le CSV fourni et analysé intégralement contient **1 000 enregistrements et 29 colonnes**, avec une largeur constante. Il comprend des champs relatifs aux chercheurs, encadrants, établissements, diplômes, situations, coordonnées et identifiants nationaux. **16 lignes sont des doublons exacts au-delà de la première occurrence**. Les champs d'identifiant national renseignés présentent majoritairement 18 chiffres dans les deux blocs de profil ; aucune valeur personnelle n'est reproduite ici.
-
-  L'archive de profils contient **4 123 fichiers** pour environ **2,46 Go** non compressés. L'analyse des empreintes distingue **2 185 contenus uniques**, avec **1 938 fichiers en doublon exact** au-delà de la première occurrence. Les signatures identifient principalement des images ; 3 950 fichiers image ont été vérifiés par lecture, tandis que 172 n'ont pas pu être validés par la bibliothèque d'image utilisée. L'archive de certificats contient **100 fichiers**, soit 51 PDF et 49 images, représentant 58 pages PDF ; aucun fichier n'est chiffré et aucun doublon exact n'a été détecté.
-
-  Les noms de fichiers de l'archive de profils correspondent à des noms ou identifiants du CSV pour **1 042 fichiers et 444 lignes**. Dans l'archive de certificats, **25 fichiers** correspondent à des noms présents dans **26 lignes** du CSV. Ces rapprochements, la structure des champs, les documents et les éléments visuels associés à la publication soutiennent une attribution à des données liées à la DGRSDT avec un niveau de confiance élevé pour l'authenticité structurelle et l'attribution de l'échantillon.
-
-  **Hypothèse :** La cohérence entre la mission officielle de la DGRSDT, le schéma doctoral du CSV, les certificats, les images de profils et les correspondances de noms rend plausible l'association du corpus à l'écosystème de la DGRSDT. Elle ne permet pas d'établir le vecteur d'accès, l'extraction ou la compromission officielle de l'organisation.
-
-  **Inconnu :** Le nombre réel de personnes concernées, l'exhaustivité du jeu complet, la validité des **6 000 profils** revendiqués, la date et la méthode d'accès, les systèmes touchés, l'exfiltration, l'impact opérationnel, la confirmation de la victime et la divulgation de l'ensemble complet restent inconnus. Les archives ont été examinées localement en lecture seule ; aucune donnée personnelle brute n'est publiée. L'analyse des documents visuels reste limitée par les 172 fichiers image non validés et par l'absence de modèle OCR français ou arabe disponible.
-
-#### 🇪🇬 Égypte - Egyptian Football Association (EFA)
-
-* **Date de l'incident :** Non établie
-* **Date de publication initiale :** 26 juillet 2026 à 18:20 (fuseau horaire non indiqué)
-
-* **Date de détection AFRINTEL :** 01 août 2026
-
-* **Acteur / Groupe :** Revesky, publication sur un forum cybercriminel
-
-* **Secteur :** Sports / Fédérations sportives
-
-* **Site web :** [efa.com.eg](https://www.efa.com.eg)
-
-* **Statut :** Claim - Data Sample Published
-
-* **Type d'incident :** Data Leak
-
-* **Niveau de confiance :** High
-
-* **Niveau d'impact :** Level 4
-
-* **Description :**
-  L'Egyptian Football Association (EFA) est l'instance nationale chargée de la gouvernance et de l'organisation du football en Égypte. Elle est affiliée à la FIFA et à la Confédération Africaine de Football (CAF).
-
-* **Analyse :**
-  **Observé :** Le 26 juillet 2026, l'acteur utilisant l'alias Revesky a publié un message affirmant avoir divulgué « toutes les bases de données » de l'Egyptian Football Association. La publication revendique un ensemble total d'environ **9,6 Go de données** concernant approximativement **350 000 joueurs**.
-
-  Un ensemble de documents représentant environ **1,3 Go** a effectivement été divulgué par l'acteur. Les éléments examinés comprennent notamment des bases de données structurées ainsi que des documents administratifs associés aux joueurs.
-
-  AFRINTEL a examiné trois fichiers CSV issus des éléments disponibles. `data.csv` et `simple_famous_player.csv` contiennent le même ensemble de **82 enregistrements sur 31 colonnes**, tandis que `simple_normal_player.csv` contient **802 enregistrements sur 45 colonnes**. Après déduplication des deux premiers fichiers, les données examinées représentent ainsi **884 lignes provenant de deux extractions distinctes**.
-
-  Les champs observés couvrent notamment l'identité des joueurs, les numéros nationaux d'identification, les dates et lieux de naissance, la nationalité, des informations familiales, les équipes, transferts, contrats, saisons sportives et différentes informations administratives. Dans l'extrait contenant 802 lignes, **798 enregistrements comportent un numéro national d'identification numérique à 14 chiffres**.
-
-  L'échantillon documentaire contient également plusieurs catégories de documents directement associées aux processus administratifs de l'EFA : formulaires d'inscription de joueurs portant l'identité visuelle de la fédération, copies de pièces d'identité, actes de naissance, contrats de joueurs professionnels, attestations d'assurance et documents de formation. Certains formulaires comportent également des photographies, signatures et empreintes. Ces éléments corroborent plusieurs catégories de données annoncées par Revesky.
-  **Hypothèse :** La cohérence entre les bases structurées, les documents administratifs et l'identité visuelle de l'EFA permet d'évaluer avec un **niveau de confiance élevé** que les éléments examinés proviennent de données associées à la fédération. Cette évaluation concerne l'authenticité structurelle et l'attribution des échantillons ; elle ne confirme pas la méthode par laquelle Revesky les aurait obtenus.
-
-  **Inconnu :** AFRINTEL n'a pas validé l'intégralité du volume revendiqué de **9,6 Go**, ni le chiffre d'environ **350 000 joueurs**. Le corpus effectivement identifié représente environ **1,3 Go**, ce qui ne permet pas de confirmer que l'ensemble des bases revendiquées a réellement été rendu public. La présence de formulaires militaires dans l'ensemble complet n'a pas non plus été vérifiée dans les documents examinés. Le vecteur d'accès initial, la méthode d'extraction, la chronologie de la compromission et une éventuelle confirmation officielle de l'EFA restent inconnus.
-
-  La nature des informations observées, comprenant des données d'identité, documents officiels, données contractuelles et dossiers pouvant concerner de jeunes joueurs ou des mineurs, crée un risque élevé de fraude documentaire, usurpation d'identité, phishing ciblé, ingénierie sociale et exploitation abusive des informations personnelles. AFRINTEL ne reproduit aucune identité, numéro national, adresse, signature, photographie ou autre donnée personnelle issue des éléments examinés.
-
-
-### 02 août 2026
-
 #### 🇿🇦 Afrique du Sud - Buzz Trading 104
+- **Date de publication initiale :** 1 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 02 août 2026 à 13:26:24 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT
 - **Secteur :** Fabrication de plastiques / Articles ménagers
 - **Site web :** [buzztrading104.co.za](https://buzztrading104.co.za/)
@@ -188,10 +77,10 @@ last_checked_at: 2026-08-02T13:26:24
 -->
 
 #### 🇳🇬 Nigeria - ASHA Microfinance Bank Limited (ASA Nigeria)
+- **Date de publication initiale :** 1 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 02 août 2026 à 14:24:27 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT
 - **Secteur :** Microfinance / Banque
 - **Site web :** [nigeria.asa-international.com](https://nigeria.asa-international.com/)
@@ -229,10 +118,10 @@ last_checked_at: 2026-09-13T02:32:51Z
 -->
 
 #### 🇿🇦 Afrique du Sud - DC Partner
+- **Date de publication initiale :** 1 août 2026
+
 
 - **Date de l'incident :** Août 2026, date exacte non établie publiquement
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 02 août 2026 à 14:25:08 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT, auteur de la revendication ; attribution technique non confirmée publiquement
 - **Secteur :** Services financiers / Distribution de paiements / Accompagnement du désendettement
 - **Site web :** [dcpartner.co.za](https://www.dcpartner.co.za/)
@@ -269,14 +158,13 @@ resale_status: unknown
 last_checked_at: 2026-09-14
 -->
 
-
 ### 04 août 2026
 
 #### 🇿🇦 Afrique du Sud - Sure Travel
+- **Date de publication initiale :** 4 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 04 août 2026 à 15:50:57 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** Orova
 - **Secteur :** Agence de voyages / Voyages loisirs et professionnels
 - **Référence secondaire du jeu source :** emis.com/.../Sure_Travel_Company_Limited (société homonyme enregistrée à Hong Kong)
@@ -315,10 +203,10 @@ last_checked_at: 2026-08-04T15:50:57
 -->
 
 #### 🇪🇬 Égypte - ADG Healthcare
+- **Date de publication initiale :** 4 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 04 août 2026 à 15:55:39 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** Orova
 - **Secteur :** Industrie pharmaceutique
 - **Domaine également cité dans le jeu source :** www.adg-healthcare.com
@@ -356,14 +244,13 @@ resale_status: unknown
 last_checked_at: 2026-08-04T15:55:39
 -->
 
-
 ### 05 août 2026
 
 #### 🇩🇿 Algérie - Ministère du Commerce
+- **Date de publication initiale :** 5 août 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 05 août 2026
-- **Date de détection AFRINTEL :** 05 août 2026
 - **Acteur / Groupe :** Florence, publication sur un forum cybercriminel
 - **Secteur :** Gouvernement / Administration publique / Commerce
 - **Site web :** Non précisé
@@ -382,14 +269,13 @@ last_checked_at: 2026-08-04T15:55:39
 
   L’accès annoncé pourrait permettre une entrée non autorisée dans des services gouvernementaux internes, une reconnaissance ultérieure, des opérations de phishing, un accès à des données ou des déplacements latéraux. La revendication reste non vérifiée et aucune confirmation indépendante du ministère, de l’accès VPN ou des identifiants n’est disponible dans la publication.
 
-
 ### 07 août 2026
 
 #### 🇿🇦 Afrique du Sud - Serengeti Golf and Wildlife Estate
+- **Date de publication initiale :** 7 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 07 août 2026 à 02:25:08 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT
 - **Secteur :** Immobilier / Domaine résidentiel et golf
 - **Site web :** [serengeti-estates.co.za](https://serengeti-estates.co.za/)
@@ -427,39 +313,11 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
-
-### 08 août 2026
-
-#### 🇰🇪 Kenya - Plateforme de financement d'appareils PAYGO non identifiée (basée sur Angaza)
-
-- **Date de l'incident :** Non établie
-- **Date de publication initiale :** 16 janvier 2026
-- **Date de détection AFRINTEL :** 08 août 2026
-- **Acteur / Groupe :** OriginalCrazyOldFart, republication sur un forum cybercriminel d'un bucket cloud exposé publiquement
-- **Secteur :** Services financiers / Financement d'appareils PAYGO / Commerce de détail
-- **Site web :** Non identifié avec certitude
-- **Statut AFRINTEL :** Data Fully Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
-
-- **Description :**
-
-  Les éléments examinés décrivent les opérations kényanes d'une plateforme non identifiée de financement d'appareils en paiement échelonné (PAYGO), construite sur le système SaaS Angaza, utilisée pour vendre des smartphones de marque (modèles Tecno Spark et Tecno Pop observés) à crédit via des agents de terrain locaux. La même archive contiendrait des données pour des opérations parallèles dans au moins une douzaine de marchés supplémentaires en Afrique et en Asie.
-
-- **Analyse :**
-
-  AFRINTEL a examiné une publication du 16 janvier 2026 par le membre de forum OriginalCrazyOldFart (compte ancien, à forte réputation), intitulée « Kenya & other countries Phones.7z FREE (has their names & cities too) ». La publication ne décrit pas une intrusion revendiquée ; elle pointe vers un bucket de stockage cloud exposé publiquement, indexé par le service de scan de buckets grayhatwarfare.com, et diffuse en miroir une archive de 1,28 Go sur un hébergeur de fichiers tiers. L'auteur précise que le matériel n'a pas été obtenu via une intrusion qu'il revendique, et avertit que certains liens peuvent déjà être rompus, sans proposer de nouvelle mise en ligne le cas échéant.
-
-  Le fichier décrit contient à lui seul 27 526 lignes suivant un schéma d'export cohérent de la plateforme Angaza : nom complet du client, numéro de téléphone, ville/région, produit financé, prix journalier de l'échéance, montant cumulé payé, solde restant dû, statut du compte, date d'inscription, ainsi que le nom et le numéro de téléphone de l'agent de recouvrement assigné. Un second fichier mentionné dans la même publication, couvrant plusieurs pays au-delà du Kenya (dont l'Ouganda, le Nigeria, la Tanzanie, le Togo, le Malawi, la Zambie, le Bénin et le Myanmar), suit un schéma plus court : nom du client, numéro de téléphone et un identifiant numérique de compte/appareil. AFRINTEL n'a pas pu déterminer si l'ensemble des pays listés appartient à un seul opérateur multinational ou à plusieurs organisations distinctes partageant la même infrastructure Angaza, ni identifier la marque commerciale précise exploitant la partie kényane du jeu de données à partir des éléments examinés.
-
-  L'ampleur, la cohérence structurelle et la plausibilité des échantillons justifient un niveau de confiance élevé quant à l'exposition de véritables dossiers clients et de financement, indépendamment de la question non résolue de l'identité exacte de l'entreprise. Compte tenu du volume, la combinaison de données financières (montants dus, historique de paiement), de coordonnées personnelles et d'agents de recouvrement nommément identifiés crée un risque significatif de fraude de type recouvrement de créances, d'usurpation d'agents, de phishing et de harcèlement visant les clients de financement dans les pays concernés. AFRINTEL ne reproduit aucun nom de client, numéro de téléphone, identifiant de compte, adresse ni montant financier issu des éléments examinés.
-
 #### 🇿🇦 Afrique du Sud - mpowa.mobi (Plateforme de services jeunesse)
+- **Date de publication initiale :** 7 août 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 07 août 2026
-- **Date de détection AFRINTEL :** 08 août 2026
 - **Acteur / Groupe :** exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse
 - **Secteur :** Développement de la jeunesse / Services à l'emploi
 - **Domaine historique de support :** `mpowa.mobi` (instance de préproduction citée : `staging.mpowa.mobi`)
@@ -488,12 +346,13 @@ last_checked_at: 2026-09-04
 
   La publication complète présente mpowa.mobi comme l'élément « 11/25 » d'une campagne en cours, décrivant un outil propriétaire (« CredHarvest V6 ») utilisé pour scanner et collecter en masse des instances Firebase Realtime Database mal configurées, et affirmant que des centaines de bases similaires ont déjà été récupérées par la même méthode. L'acteur propose à la fois la vente de cet outil de scan et des services d'intrusion/d'accès payants distincts sur le même forum. Cela indique que mpowa.mobi est une victime parmi une campagne plus large et systématique visant des déploiements Firebase mal configurés, et que des expositions comparables touchent vraisemblablement d'autres organisations africaines utilisant le même backend, indépendamment de tout ciblage spécifique à mpowa.mobi.
 
+### 08 août 2026
+
 #### 🇳🇬 Nigeria - Daily Trust
+- **Date de publication initiale :** 8 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** 08 août 2026
-- **Date de détection de la source :** 08 août 2026, 19:21:01 (fuseau horaire non indiqué)
-- **Date de détection AFRINTEL :** 11 août 2026
 - **Acteur / Groupe :** Panzer
 - **Secteur :** Médias / Édition / Audiovisuel
 - **Site web :** [dailytrust.com](https://dailytrust.com)
@@ -509,7 +368,7 @@ last_checked_at: 2026-09-04
 
 - **Analyse :**
 
-  **Observé :** Un enregistrement de source observé identifie Daily Trust, le groupe criminel Panzer, le Nigeria et `dailytrust.com`, avec un horodatage de détection au 8 août 2026 à 19:21:01 et des données publiées indiquées « N/D ». Une publication Panzer distincte datée du 8 août revendique 320 Go, propose un échantillon téléchargeable et affichait un compte à rebours actif de 17 jours, 11 heures, 3 minutes et 44 secondes lors de la capture du 11 août. L'échéance exacte et le fuseau horaire ne sont pas indiqués dans les éléments fournis.
+  **Observé :** Un enregistrement de source observé identifie Daily Trust, le groupe criminel Panzer, le Nigeria et `dailytrust.com`, avec un horodatage affiché au 8 août 2026 à 19:21:01 et des données publiées indiquées « N/D ». Une publication Panzer distincte datée du 8 août revendique 320 Go, propose un échantillon téléchargeable et affichait un compte à rebours actif de 17 jours, 11 heures, 3 minutes et 44 secondes lors de la capture du 11 août. L'échéance exacte et le fuseau horaire ne sont pas indiqués dans les éléments fournis.
 
   AFRINTEL a examiné l'intégralité du classeur `sample.xlsx` fourni en lecture seule. Ce fichier de 44 996 octets a pour empreinte SHA-256 `83516d93de48d2e53465071a418e50dd4b678baedef05277ab93ebb6f0034fa6` et contient deux feuilles. La feuille principale comporte 443 enregistrements non vides sous les champs Name, Email Address, New Password, Comments et Status. Les 443 cellules d'adresse email utilisent le domaine de la victime et sont uniques ; 438 lignes contiennent une valeur dans le champ New Password. La seconde feuille contient 19 entrées d'adresse du domaine cible, dont 18 recoupent la feuille principale, soit 444 adresses distinctes du domaine cible dans les champs d'adresse. Aucune des deux feuilles ne contient de formule ni de ligne complète dupliquée. Le classeur contient également 461 hyperliens HTTP externes pointant vers le domaine de la victime ; AFRINTEL ne les a pas suivis. Un composant `jsaProject.bin` incorporé a été identifié mais n'a pas été exécuté. Aucun nom, adresse email, mot de passe, commentaire, valeur de statut ou cible d'hyperlien de l'échantillon n'est reproduit.
 
@@ -532,14 +391,13 @@ resale_status: unknown
 last_checked_at: 2026-08-20T01:35:32+01:00
 -->
 
-
 ### 14 août 2026
 
 #### 🇲🇦 Maroc - AVANTA Maroc
+- **Date de publication initiale :** 14 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 14 août 2026 à 05:55:47 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** thegentlemen
 - **Secteur :** Services de ressources humaines
 - **Site web :** [avanta.ma](https://www.avanta.ma/)
@@ -576,15 +434,13 @@ resale_status: unknown
 last_checked_at: 2026-08-14T05:55:47
 -->
 
-
 ### 16 août 2026
 
 #### 🇿🇦 Afrique du Sud - The Courier Guy
+- **Date de publication initiale :** 16 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 16 août 2026 à 15:19:49 (fuseau horaire non affiché)
-- **Date de détection AFRINTEL :** 19 août 2026
 - **Acteur / Groupe :** medusalocker
 - **Secteur :** Messagerie / Logistique
 - **Site web :** [thecourierguy.co.za](https://thecourierguy.co.za)
@@ -621,14 +477,13 @@ resale_status: unknown
 last_checked_at: 2026-09-04
 -->
 
-
 ### 17 août 2026
 
 #### 🇰🇪 Kenya - SnapStar Talent (snapstartalent.com)
+- **Date de publication initiale :** 17 août 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 17 août 2026
-- **Date de détection AFRINTEL :** 18 août 2026
 - **Acteur / Groupe :** exfilar, publication sur un forum cybercriminel, opérateur/vendeur d'un outil de scan Firebase de masse
 - **Secteur :** Ressources humaines / Recrutement
 - **Site web :** [snapstartalent.com](https://snapstartalent.com)
@@ -653,15 +508,13 @@ last_checked_at: 2026-09-04
 
   **Inconnu :** AFRINTEL n'a pas vérifié indépendamment l'accès Firestore prétendument non authentifié, la méthode d'extraction de l'acteur, les volumes annoncés de 93 462 profils, 83 237 candidatures et 176 795 documents, les 249,1 Go de fichiers, la présence de 83 entreprises clientes dans le jeu complet, ni une éventuelle réponse de SnapStar Talent. Les 300 candidatures les plus récentes constituent un échantillon non aléatoire ; leurs taux de complétude ne peuvent pas être extrapolés à l'ensemble du jeu proposé. L'incident reste donc classé comme une revendication accompagnée d'un échantillon publié, et non comme la confirmation de l'extraction complète de l'environnement de production. AFRINTEL ne reproduit aucun enregistrement personnel, lien de téléchargement, jeton d'URL, instruction de paiement ni coordonnée de l'acteur.
 
-
 ### 18 août 2026
 
 #### 🇲🇺 Maurice - SpearFin Ltd
+- **Date de publication initiale :** 18 août 2026
+
 
 - **Date de l'incident :** 26 juin 2026, date alléguée par l'acteur
-- **Date de publication initiale :** 18 août 2026
-- **Date de détection de la source :** 18 août 2026 à 10:27:05 (fuseau horaire non indiqué)
-- **Date de détection AFRINTEL :** 18 août 2026
 - **Acteur / Groupe :** incransom
 - **Secteur :** Services financiers / Administration de fonds
 - **Site web :** [spearfin.net](https://spearfin.net)
@@ -700,14 +553,13 @@ resale_status: unknown
 last_checked_at: 2026-08-19T06:02:04+01:00
 -->
 
-
 ### 19 août 2026
 
 #### 🇿🇦 Afrique du Sud - Babcock Africa
+- **Date de publication initiale :** 19 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 19 août 2026 à 08:10:32 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** thegentlemen
 - **Secteur :** Ingénierie / Services industriels / Soutien à la défense
 - **Site web :** [babcock.co.za](https://www.babcock.co.za/)
@@ -744,14 +596,13 @@ resale_status: unknown
 last_checked_at: 2026-08-19T08:10:32
 -->
 
-
 ### 20 août 2026
 
 #### 🇩🇿 Algérie - Afribaba (dz.afribaba.com)
+- **Date de publication initiale :** 20 août 2026
+
 
 - **Date de l'incident :** Non établie
-- **Date de publication initiale :** 20 août 2026
-- **Date de détection AFRINTEL :** 20 août 2026
 - **Acteur / Groupe :** TelephoneHooliganism, publication sur un forum cybercriminel
 - **Secteur :** Commerce en ligne / Marketplace
 - **Site web :** [dz.afribaba.com](https://dz.afribaba.com) (site régional observé) ; domaine cité par l'acteur : www.afribaba.dz
@@ -775,9 +626,9 @@ last_checked_at: 2026-08-19T08:10:32
   **Inconnu :** AFRINTEL n'a pas reçu les tables Customer Contacts ou Support Tickets annoncées, ni l'archive d'environ 642 000 contacts. Les liens d'échantillon n'ont pas été suivis, aucun numéro de téléphone, nom, adresse, identifiant client ou ticket n'est reproduit, et aucune confirmation d'Afribaba n'est disponible. Le fichier fourni ne permet pas de confirmer le volume revendiqué, l'origine technique, la validité des données, la méthode d'accès, l'exposition de numéros de téléphone ou le prix proposé.
 
 #### 🇩🇿 Algérie - Ministère algérien de l'Intérieur (interieur.gov.dz)
+- **Date de publication initiale :** 20 août 2026
+
 * **Date de l'incident :** Non établie
-* **Date de publication initiale :** 20 août 2026 à 06:04 (heure affichée dans la publication)
-* **Date de détection AFRINTEL :** 20 août 2026
 * **Acteur / Groupe :** TelephoneHooliganism
 * **Secteur :** Gouvernement / Administration publique
 * **Site web :** [interieur.gov.dz](https://www.interieur.gov.dz/)
@@ -805,10 +656,9 @@ last_checked_at: 2026-08-19T08:10:32
   * Prévenir les risques de phishing et d'usurpation liés aux données de contact et aux demandes administratives.
 
 #### 🇨🇲 Cameroun - CCA Bank
+- **Date de publication initiale :** 20 août 2026
+
 * **Date de l'incident :** Non précisée
-* **Date de publication initiale :** 20 août 2026
-* **Date de détection de la source :** 20 août 2026 à 13:54:00 (fuseau horaire non indiqué)
-* **Date de détection AFRINTEL :** 20 août 2026
 * **Acteur / Groupe :** Everest
 * **Secteur :** Banque / Services financiers
 * **Site web :** [cca-bank.com](https://www.cca-bank.com/)
@@ -860,11 +710,10 @@ last_checked_at: 2026-08-20T13:54:00
 
 > ⚠️ **Dossier sous investigation - exclu du total canonique.**
 
-
 #### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) - attribution non établie dans les sources publiques
+- **Date de publication initiale :** 20 août 2026
 
-- **Date de publication initiale :** 20 août 2026 à 05:27 (horodatage affiché ; fuseau non indiqué)
-- **Date de découverte AFRINTEL :** 20 octobre 2026
+
 - **Acteur / Groupe :** TelephoneHooliganism (pseudonyme affiché ; identité réelle et affiliation non vérifiées)
 - **Secteur revendiqué :** Transport / Logistique / Livraison express
 - **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
@@ -896,17 +745,16 @@ last_checked_at: 2026-08-20T13:54:00
 
 - **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
 
-- **Décision de comptage :** Cette fiche reste visible ici pour la traçabilité de la publication datée d’août, avec découverte AFRINTEL en octobre. Elle est **exclue des statistiques canoniques d’août** et ne doit pas être comptée deux fois dans les séries mensuelles. L’attribution à Yalidine n’est pas établie.
 
-- **Sources / Éléments de preuve :** publication et réponse de modération fournies le 20 octobre 2026 ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
-
+- **Sources / Éléments de preuve :** publication et réponse de modération datées du 20 août 2026, captures reçues pour analyse ultérieure ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
+- **Vérification publique complémentaire (5 novembre 2026) :** aucune déclaration officielle de Yalidine confirmant ou démentant spécifiquement la revendication du **20 août 2026** n’a été retrouvée dans les sources publiques consultées. Un [article d’Awras publié le 17 décembre 2025](https://www.awras.com/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B4%D8%B1%D9%83%D8%A9-%D9%8A%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84/) rapporte un **démenti de Yalidine concernant une autre allégation**, antérieure ; il ne saurait être utilisé pour statuer sur la revendication de 2026.
 
 ### 21 août 2026
 
 #### 🇪🇬 Égypte - Six universités publiques et leur portail étudiant
+- **Date de publication initiale :** 21 août 2026
 
-- **Date de publication initiale :** 21 août 2026 à 00:08 ; modification visible à 00:12:31 (fuseau non indiqué). Publication complémentaire « Part 2/3 » observée le 23 août 2026 à 00:18.
-- **Date de détection AFRINTEL :** 4 novembre 2026
+
 - **Acteur / Groupe :** ronabrown, publication 8kun `/egy/` ; identité et affiliation non établies
 - **Secteur :** Enseignement supérieur / Portails étudiants / Administration universitaire
 - **Victimes citées :** Benha University, Helwan University, Cairo University, Kafr El Sheikh University, South Valley University et University of Sadat City
@@ -939,13 +787,13 @@ last_checked_at: 2026-08-20T13:54:00
 
 @@
 
-
 ### 22 août 2026
 
 #### 🇲🇦 Maroc - RAMED (Régime d’Assistance Médicale)
+- **Date de publication initiale :** 22 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** 22 août 2026
 
 - **Acteur / Groupe :** JBT2026
 - **Secteur :** Gouvernement / Administration
@@ -976,14 +824,13 @@ last_checked_at: 2026-08-20T13:54:00
   **Limites de preuve :** les éléments analysés ne permettent pas de confirmer le système technique d’origine, le vecteur d’accès initial, la méthode d’extraction, la possession effective des plus de 17 millions d’entrées revendiquées ni une confirmation officielle de l’incident par une institution marocaine. La présence de photographies est établie uniquement pour les éléments fournis et ne doit pas être extrapolée à l’ensemble de la base revendiquée.
  ---
 
-
 ### 24 août 2026
 
 #### 🇿🇦 Afrique du Sud - Furniture Bargaining Council
+- **Date de publication initiale :** 24 août 2026
+
 
 - **Date de l'incident :** Août 2026, date exacte non communiquée publiquement
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 24 août 2026 à 21:21:08 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** Deadlock, auteur de la revendication, sans attribution par la victime
 - **Secteur :** Relations sociales / Gouvernance du secteur du meuble
 - **Site web :** [fbcweb.furnbed.co.za](https://fbcweb.furnbed.co.za/)
@@ -1023,10 +870,10 @@ last_checked_at: 2026-09-04
 -->
 
 #### 🇲🇦 Maroc - Direction générale de la Sûreté nationale (DGSN) / Direction générale de la Surveillance du territoire (DGST)
+- **Date de publication initiale :** 24 août 2026
+
 
 * **Date de l'incident :** Non établie
-* **Date de publication initiale corroborée :** 24 août 2026
-* **Date de détection AFRINTEL :** 24 août 2026
 * **Acteur / Groupe :** JabaR00t, publication relayée par le compte JBT2026 sur un forum cybercriminel
 * **Secteur :** Gouvernement / Administration / Sécurité et renseignement
 * **Site web :** [dgsn.gov.ma](https://dgsn.gov.ma) / `dgst.gov.ma` (domaine associé à la DGST, portail public non confirmé)
@@ -1065,14 +912,13 @@ last_checked_at: 2026-09-04
 
 ---
 
-
 ### 26 août 2026
 
 #### 🇪🇬 Égypte - Mima Foods
+- **Date de publication initiale :** 26 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 26 août 2026 à 15:29:13 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT
 - **Secteur :** Industrie agroalimentaire / Export de produits surgelés
 - **Site web :** [mimafoods.net](https://mimafoods.net/)
@@ -1110,10 +956,10 @@ last_checked_at: 2026-09-12
 -->
 
 #### 🇬🇦 Gabon - Conseil Gabonais des Chargeurs (CGC) [Ransomware]
+- **Date de publication initiale :** 26 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 26 août 2026 à 15:56:16 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** KRYBIT
 - **Secteur :** Administration publique / Transport et logistique
 - **Site web :** [cgcgabon.ga](https://cgcgabon.ga/)
@@ -1200,11 +1046,10 @@ last_checked_at: 2026-08-26T15:56:16
 -->
 
 #### 🇿🇦 Afrique du Sud - Cartrack South Africa
+- **Date de publication initiale :** 26 août 2026
+
 
 - **Date de l'incident :** 26 août 2026
-- **Date de communication publique :** 28 août 2026
-- **Mise à jour :** 10 septembre 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
 - **Acteur / Groupe :** Non attribué publiquement
 - **Secteur :** Télématique / Mobilité / Services automobiles
 - **Statut :** Victim Confirmed
@@ -1221,14 +1066,13 @@ last_checked_at: 2026-08-26T15:56:16
 
 Cartrack a confirmé un incident ransomware détecté le 26 août. Les serveurs affectés ont été isolés et la plateforme restaurée en cinq heures. Une mise à jour indique que des informations personnelles de certains clients avaient été consultées et pouvaient avoir été publiées sur un site à accès restreint. Le vecteur, l'opérateur et le volume exact restent inconnus.
 
-
 ### 27 août 2026
 
 #### 🇿🇦 Afrique du Sud - Hungry Lion
+- **Date de publication initiale :** 27 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 27 août 2026 à 06:27:50 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** medusalocker
 - **Secteur :** Restauration / Restauration rapide
 - **Site web :** [hungrylion.co.za](https://www.hungrylion.co.za/)
@@ -1266,10 +1110,10 @@ last_checked_at: 2026-08-27T06:27:50
 -->
 
 #### 🇿🇦 Afrique du Sud - Rohloff Group
+- **Date de publication initiale :** 27 août 2026
+
 
 - **Date de l'incident :** Non précisée
-- **Date de publication initiale :** Non précisée
-- **Date de détection de la source :** 27 août 2026 à 14:31:07 (fuseau horaire non indiqué)
 - **Acteur / Groupe :** incransom
 - **Secteur :** Restauration / Restauration rapide
 - **Site web :** [Site carrière du Rohloff Group](https://rohloff-group.breezy.hr/)
@@ -1307,33 +1151,3 @@ ransom_payment_status: unknown
 resale_status: unknown
 last_checked_at: 2026-08-27T14:31:07
 -->
-
-
-### 29 août 2026
-
-#### 🇱🇾 Libye - Albarq Media Service / شركة البرق للاتصالات والتقنية
-
-* **Date de l'incident :** Juin 2026, date exacte non établie
-* **Date de publication initiale :** 09 juin 2026
-* **Date de découverte AFRINTEL :** 29 août 2026
-* **Acteur / Groupe :** Richard2002
-* **Secteur :** Télécommunications / Services médias
-* **Site web :** [albarq.ly](https://albarq.ly/)
-* **Statut :** Claim - Data Sample Published
-* **Type d'incident :** Data Leak
-* **Niveau de confiance :** Medium
-* **Niveau d'impact :** Level 3
-
-* **Description :**
-  Albarq Media Service est un service présenté comme lié à شركة البرق للاتصالات والتقنية (Albarq Telecommunications and Technology), opérateur libyen de télécommunications et de services associés.
-
-* **Analyse :**
-  Une publication attribuée à Richard2002, datée du 09 juin 2026, propose un échantillon présenté comme issu du service Albarq Media et revendique environ **330 000 comptes**. L'échantillon visible contient **18 lignes** et **24 champs séparés par des points-virgules**. Il comprend des identifiants de comptes, des informations d'abonnement, des dates, des localisations générales et des numéros de téléphone ; aucune donnée personnelle brute n'est reproduite par AFRINTEL.
-
-  Les enregistrements visibles présentent des dates s'étendant d'août 2019 à avril 2025, ainsi que des valeurs d'usage incohérentes ou manquantes dans plusieurs lignes. Le corpus observé ne représente qu'un extrait visible dans la publication et ne permet pas de valider les **330 000 comptes** revendiqués, l'exhaustivité de la fuite, le système source, le vecteur d'accès ou la méthode d'extraction. Le fichier source original n'était pas disponible ; l'analyse est donc limitée aux données visibles dans l'échantillon fourni.
-
-  **Inconnu :** aucune confirmation publique indépendante de l'incident par Albarq ou une autorité libyenne n'est établie dans les éléments examinés. La période exacte de l'accès ou de l'exfiltration reste inconnue ; juin 2026 correspond à la date de la publication observée.
-
-* **Recommandations :**
-  * Vérifier les journaux d'accès aux plateformes d'abonnement et les exports de données autour du 09 juin 2026.
-  * Réinitialiser les sessions et renforcer la surveillance des comptes administratifs si une exposition est confirmée.

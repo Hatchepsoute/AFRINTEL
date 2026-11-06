@@ -19,110 +19,112 @@
 
 ## 1. Executive summary - what decision-makers should know
 
-In August 2026, AFRINTEL retained **33 records** in its documentary series, spanning **10 countries**. A review revealed one important qualification: the **Yalidine** record relates to an August 20 posting but was analysed later and is explicitly marked `Under Investigation`, with attribution not established. Under AFRINTEL's quality criteria, **32 cases are therefore included in canonical statistics**, while one remains on record for traceability only.
+In August 2026, AFRINTEL documented **33 signals in 10 African countries**: **18 ransomware-related records (54.5%)**, **14 data-leak records (42.4%)** and **one access-sale claim (3.0%)**. These are documented **claims, disclosures and acknowledged events**, not 33 confirmed intrusions. Each record separately describes the evidence and confidence level.
 
-Of the **32 included cases**, **18 concern ransomware (56.3%)**, **13 concern data leaks (40.6%)**, and **one concerns an access-sale claim (3.1%)**. The historical distribution used in earlier summaries remains **33 records: 18 ransomware, 14 data leaks and one access sale**, because it included the case now under investigation. These two series should not be confused.
+**South Africa (12)** leads the corpus, followed by **Egypt (5)** and **Algeria (5)**. This reflects source coverage and visibility, not national cybersecurity rankings. Reviewed datasets concern identity, administration, finance and recruitment information, potentially enabling fraud, impersonation and targeted phishing.
 
-**South Africa (12)** leads the included records, followed by **Egypt (5)** and **Algeria (4)**. This concentration reflects the visibility of the corpus and is not a ranking of national cybersecurity quality.
+**Qualification note:** the **Yalidine** listing dated **20 August 2026** is included as a **signal requiring verification**, classified `Under Investigation` with `Low` confidence. Sample provenance is unverified. Its AFRINTEL discovery date is aligned with its publication date **for monthly recordkeeping only** and does not independently prove contemporaneous collection. No public statement specifically addressing the August 2026 allegation was found in research conducted on 5 November 2026. Yalidine's reported December 2025 denial concerns a separate claim and does not resolve the 2026 case.
 
-**Three decision-relevant findings:** extortion remains visible on criminal disclosure sites; several reviewed datasets contain identity, HR and financial information; and **victim-confirmed incidents** coexist with claims that lack corroboration. Risk response should therefore depend on **evidence strength**, **data sensitivity** and **actual exposure**, not merely a listed group's name.
+**For leaders:** a criminal claim should trigger a proportionate verification process, not an automatic breach conclusion. Sensitive-data inventories, access reviews, tested backups and contextual monitoring reduce exposure.
 
-### 1.1 July–August 2026 comparison
+### 1.1 Comparison with July 2026 - documented signals
 
-| Indicator | July 2026 | August 2026 - historical series | Change |
+Both months use a **documented signal** as the unit of analysis, with evidence quality recorded separately. July contains **47 records**, August **33**. This measures AFRINTEL's **documented coverage**, not the real-world incidence of cyberattacks.
+
+| Indicator | July 2026 | August 2026 | Change |
 |---|---:|---:|---:|
-| **Total records** | **47** | **33** | **-14 (-29.8%)** |
-| Ransomware | 18 | 18 | 0 (+0.0%) |
-| Data Leak | 21 | 14 | -7 (-33.3%) |
-| Access Sale | 6 | 1 | -5 (-83.3%) |
-| DDoS | 0 | 0 | 0 (stable) |
-| Defacement | 2 | 0 | -2 (-100.0%) |
-| Account Takeover | 0 | 0 | 0 (stable) |
-| System Intrusion | 0 | 0 | 0 (stable) |
-| Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 0 | 0 | 0 (stable) |
+| **Total records** | **47** | **33** | **−14 (−29.8%)** |
+| Ransomware | 18 | 18 | 0 (stable) |
+| Data Leak | 21 | 14 | −7 (−33.3%) |
+| Access Sale | 6 | 1 | −5 (−83.3%) |
+| Defacement | 2 | 0 | −2 (−100%) |
 
 ![July–August comparison](./assets/comparison_jul_aug_2026_EN.png)
 
-*July source: [AFRINTEL July 2026 report](../07-july/README.md) - 47 cases, including 18 ransomware, 21 data leaks, six access sales and two defacements. For comparability with earlier publications, the table uses the **historical August series of 33 records**. Once the Yalidine investigation record is excluded, August's canonical total is 32. A decrease in documented cases does not, on its own, establish a decrease in real-world compromises.*
-
-### 1.2 Counting and scope-control decision
+### 1.2 Counting rule and alignment with September
 
 | Metric | Value | Meaning |
 |---|---:|---|
-| Records retained for traceability | **33** | All monitored postings, including the case under investigation |
-| Included in canonical statistics | **32** | Cases with a defensible organisational or geographic scope |
-| Excluded from denominator | **1** | Yalidine: publication observed, sample attribution to the named organisation not established |
+| August monitored signals | **33** | Observed claims, disclosures and victim-confirmed events, with separate evidence labels |
+| Included cases under investigation | **1** | Yalidine: source attribution not corroborated |
+| August baseline for September comparison | **33** | 18 ransomware, 14 data leaks, one access sale |
 
-**Implication for subsequent comparisons:** the previously published September report used August's **33-record historical baseline**. A comparison explicitly labelled *canonical* should instead use **32**, without silently overwriting earlier published baselines. The same deduplication decision must be applied to every export.
+An under-investigation post is **not erased simply because it remains unconfirmed**. A counted signal does **not mean a confirmed breach**. Repeated postings about the same event are consolidated.
 
-## 2. Methodology and evidence assessment
+## 2. Scope, sources, dates and verification limits
 
-AFRINTEL monitors ransomware disclosure sites, criminal forums, clandestine publishing and sales venues, disclosed archives, official notices and specialist reporting concerning African organisations and data. Included records are assigned one victim, country and primary incident type. **The posting or first-observation date is not necessarily the date of initial intrusion.** Reposts of the same event should not automatically create additional incidents. The six Egyptian universities associated with one publication and corpus are counted as **one grouped case**, not six independent incidents.
+AFRINTEL monitors ransomware disclosure sites, underground forums, data-leak or sale venues, available samples, official statements and public corroboration sources. Monitoring spans 54 African countries; **10 countries appear in the 33 documented records**. The absence of a reported case is not evidence that no incident occurred.
 
-Evidence is differentiated between **observed posting**, **reviewed sample**, **corroborated information**, **victim-confirmed event** and **unknown details**. Where only screenshots or a file inventory were available, that limitation remains explicit. Personal information and secrets are not published in the repository.
+**Four dates must be kept distinct:** the incident date (when established), the **original publication date**, the **AFRINTEL discovery date**, and the **last documented verification date**. Monthly allocation uses a documented publication or event date, including retrospective additions. For example, the grouped publication regarding **six Egyptian universities** dates from August 21 but its case file records AFRINTEL integration on November 4; **Cartrack** publicly reported an August event, and AFRINTEL integrated the record in September. Neither discovery date establishes the date of initial compromise.
 
-Both `victims_FR.md` and `victims.md` contain **33 records in the same chronological order**, following correction of records previously misplaced at the end. Every table and figure is generated from **one counting dataset**, documented in `STATISTIQUES_2026-08.json`.
+A record may involve several organisations or countries: **the single publication concerning six universities is counted as one grouped case**, in accordance with its case-file counting decision. Reposts and follow-on updates must not generate extra records without a separate event.
+
+**Evidence layers:** observed post, sample actually reviewed, documentary corroboration, explicit victim or authority acknowledgement, and unknown technical circumstances. A posting is not proof of encryption; a coherent sample does not automatically prove its technical origin or acquisition date. Confidence applies to specific findings, not to every claim made by the publisher.
+
+**Limit of this edition:** sample-level measurements and technical details are **taken from the analyses recorded in the victim case files**. The underlying clandestine archives, personal records and organisation logs **were not re-analysed** to produce this revised report. The 33 bilingual case records, base classifications and their totals were cross-checked. A documentary review does not replace DFIR, an official acknowledgement or full authenticity verification.
+
+[French case records](./victims_FR.md) · [English case records](./victims.md) · [Reference statistics](./STATISTIQUES_2026-08.json)
 
 ## 3. Quantitative overview
 
-### 3.1 Primary incident types - 32 canonical cases
+### 3.1 Primary signal types - 33 records
 
-| Primary type | Cases | Share |
+| Primary type | Records | Share |
 |---|---:|---:|
-| **Ransomware** | **18** | **56.3%** |
-| **Data Leak** | **13** | **40.6%** |
-| **Access Sale** | **1** | **3.1%** |
-| **Total** | **32** | **100%** |
+| **Ransomware** | **18** | **54.5%** |
+| **Data Leak** | **14** | **42.4%** |
+| **Access Sale** | **1** | **3.0%** |
+| **Total** | **33** | **100%** |
 
 ![Incident types](./assets/types_august_2026_EN.png)
 
-Ransomware records are **signals associated with extortion operations**; not all prove encryption. The access-sale record is an observed forum advertisement; the claimed access and privileges have not been validated.
+Not every ransomware listing establishes encryption. A forum access-sale offer does not establish that the advertised access works.
 
-### 3.2 Geographic distribution - 32 canonical cases
+### 3.2 Geographic distribution - 33 records
 
-| Country | Cases | Share |
+| Country | Records | Share |
 |---|---:|---:|
-| South Africa | 12 | 37.5% |
-| Egypt | 5 | 15.6% |
-| Algeria | 4 | 12.5% |
-| Morocco | 3 | 9.4% |
-| Nigeria | 2 | 6.2% |
-| Kenya | 2 | 6.2% |
-| Mauritius | 1 | 3.1% |
-| Cameroon | 1 | 3.1% |
-| Gabon | 1 | 3.1% |
-| Libya | 1 | 3.1% |
-| **Total** | **32** | **100%** |
+| South Africa | 12 | 36.4% |
+| Egypt | 5 | 15.2% |
+| Algeria | 5 | 15.2% |
+| Morocco | 3 | 9.1% |
+| Nigeria | 2 | 6.1% |
+| Kenya | 2 | 6.1% |
+| Mauritius | 1 | 3.0% |
+| Cameroon | 1 | 3.0% |
+| Gabon | 1 | 3.0% |
+| Libya | 1 | 3.0% |
+| **Total** | **33** | **100%** |
 
-![Countries represented](./assets/countries_august_2026_EN.png)
+![Geographic distribution](./assets/countries_august_2026_EN.png)
 
-The regional distribution is **North Africa: 13**, **Southern Africa: 12**, **East Africa: 3** (Kenya 2, Mauritius 1), **West Africa: 2** (Nigeria) and **Central Africa: 2** (Cameroon and Gabon). **Total: 32.**
+North Africa accounts for **14** records, Southern Africa **12**, East Africa **3**, West Africa **2** and Central Africa **2**. An absence of observed claims does not imply an absence of incidents.
 
-The presence of a country in the dataset does not establish that it has weaker defences. The absence of a documented case is not evidence of an absence of attacks.
+### 3.3 Evidence status - 33 records
 
-### 3.3 Evidence status - all 33 monitored records
-
-| AFRINTEL status | Records | Interpretation |
+| Status | Count | Interpretation |
 |---|---:|---|
-| `Claim - Data Sample Published` | 13 | Sample or excerpt published; technical source or intrusion not automatically confirmed |
-| `Claim - Unverified` | 12 | Observed claim with insufficient evidence to validate the technical scenario |
-| `Data Fully Published` | 4 | Data claimed to have been fully released; this status alone does not validate completeness |
-| `Victim Confirmed` | 3 | Victim acknowledged an incident; named actor not necessarily technically confirmed |
-| `Under Investigation` | 1 | Investigation record excluded from canonical totals |
-| **Total monitored** | **33** | **32 included + 1 under review** |
+| `Claim - Data Sample Published` | 13 | A post with an apparent sample; origin remains a separate question |
+| `Claim - Unverified` | 12 | Allegation not independently corroborated |
+| `Data Fully Published` | 4 | Claimed complete disclosure; completeness may still be uncertain |
+| `Victim Confirmed` | 3 | Event acknowledged, not necessarily technical attribution |
+| `Under Investigation` | 1 | Yalidine, included but uncorroborated |
+| **Total** | **33** | **Evidence-status distribution, not 33 confirmed breaches** |
 
 ![Evidence status](./assets/evidence_august_2026_EN.png)
 
-```mermaid
-pie showData
-    title Evidence maturity across 33 monitored records
-    "Claims or data postings (29)" : 29
-    "Victim confirmations (3)" : 3
-    "Investigation (1)" : 1
-```
+### 3.4 Confidence and potential impact
 
-Confidence levels assess **strength of evidence**, not the severity of harm. Impact levels describe **potential consequences**, not verified financial loss or service disruption.
+| Confidence level | Records | Potential impact | Records |
+|---|---:|---|---:|
+| `Very High` | 3 | `Level 4` | 22 |
+| `High` | 13 | `Level 3` | 8 |
+| `Medium` | 7 | `Level 2` | 3 |
+| `Low` | 9 | - | - |
+| Composite `High` (corpus) / `Medium` (attribution) | 1 | - | - |
+| **Total** | **33** | **Total** | **33** |
+
+Confidence describes the strength of evidence, whereas potential impact describes consequences **if risk materialises**; neither alone proves a breach.
 
 ## 4. Analysis by incident type
 
@@ -148,7 +150,7 @@ A forum listing advertised **VPN access allegedly associated with Algeria's Mini
 
 ## 5. Sectoral exposure - normalised primary classification
 
-Sectors below reflect the primary activity described in each case, with **one sector per included record**. Specialised descriptions remain in the underlying victim records.
+One primary sector is assigned to each documented signal. Specialised business labels remain in the case files.
 
 | Code | Primary sector | Records |
 |---|---|---:|
@@ -158,51 +160,48 @@ Sectors below reflect the primary activity described in each case, with **one se
 | IND | Industry / Engineering | 2 |
 | RES | Restaurants | 2 |
 | HEA | Healthcare / Pharmaceuticals | 2 |
+| LOG | Transport / Logistics | 2 |
 | AGR | Agriculture / Food | 1 |
 | ECO | Retail / E-commerce | 1 |
 | REA | Real Estate | 1 |
 | AUT | Automotive / Mobility | 1 |
 | MED | Media / Publishing | 1 |
-| LAB | Labour relations / Work | 1 |
+| LAB | Labour Relations / Work | 1 |
 | SPO | Sports / Federations | 1 |
 | TOU | Tourism / Travel | 1 |
-| LOG | Transport / Logistics | 1 |
 | TEL | Telecommunications / Media | 1 |
 | EDU | Education / University | 1 |
-| **Total** | | **32** |
+| **Total** | | **33** |
 
 ![Normalised sectors](./assets/sectors_august_2026_EN.png)
 
-**Finance/banking and government/administration each account for six cases**, followed by **employment and recruitment with three**. Other categories include industry, healthcare, restaurants, logistics and digital services. This is a corpus distribution, not a ranking of Africa's most vulnerable sectors.
+Finance and public administration each account for **six records**, followed by employment/recruitment (**three**). Transport/logistics accounts for **two**, including Yalidine classified `Under Investigation`. Visibility in this corpus is not equivalent to a real-world sector threat rate.
 
-## 6. Threat-actor and publisher landscape
+## 6. Threat actors and posting accounts - visibility is not attribution
 
-| Actor/publisher name | Associated cases |
-|---|---:|
-| KRYBIT | 6 |
-| Orova | 2 |
-| exfilar | 2 |
-| TheGentlemen | 2 |
-| MedusaLocker | 2 |
-| INC Ransom | 2 |
-| TelephoneHooliganism | 2 |
-| R3D3MPTION | 1 |
-| NullSec Nigeria | 1 |
-| anisanas2 | 1 |
+| Displayed group/account | Records | CTI reading |
+|---|---:|---|
+| KRYBIT | 6 | Mentions across several countries; technical attribution not established for every case |
+| TelephoneHooliganism | 3 | Three Algeria-focused claims, **including uncorroborated Yalidine** |
+| Orova | 2 | South Africa and Egypt |
+| exfilar | 2 | Firebase-related posting contexts |
+| TheGentlemen | 2 | Two victim mentions |
+| MedusaLocker | 2 | Two ransomware-context records |
+| INC Ransom | 2 | Two corpus references |
 
-![Actors and publisher labels](./assets/actors_august_2026_EN.png)
+![Actor and posting account mentions](./assets/actors_august_2026_EN.png)
 
-**KRYBIT appears in six records**, not five: its name is also associated with the **DC Partner** claim, while the organisation's incident confirmation does **not** constitute formal technical attribution to KRYBIT. `exfilar` and `TelephoneHooliganism` are observed forum/publisher labels and do not prove real-world identities or group affiliation. This ranking measures **references and claims in the records**, not independently attributed offensive operations.
+**Attribution caution:** these counts refer to **names displayed in the claims or case records**, not proven technical perpetrators. A victim's confirmation does not automatically identify which claimant conducted the activity.
 
-**Country-specific reading:** South Africa shows high ransomware-claim visibility and three victim-confirmed cases; Egypt and Morocco include sensitive documentary corpora; Algeria includes several forum postings with at least one weak victim attribution; Gabon, Cameroon, Mauritius, Nigeria and Kenya warrant case-specific monitoring. These observations should not be converted into a national security score.
+## 7. Trends, limits and collection priorities
 
-## 7. Trends and intelligence gaps
+**What is established:** within documented signals, ransomware remains at **18**, while data-leak records fall from **21 to 14** and access-sale records from **6 to 1**. These are changes in **documented case coverage and inclusion rules**, **not proof of reduced real-world risk**. All 33 August monitored records remain available for historical traceability; the Yalidine item is not erased.
 
-**Observed pattern:** extortion postings coexist with structurally credible disclosed datasets, particularly involving identity, financial and professional records. The drop in the historical series **from 47 July records to 33 August records** reflects a change in collected cases, not necessarily in actual attacks.
+**What needs further verification:** technical origins of the released files, validity of accounts or document links, the actual completeness of claimed releases, and follow-up disclosures after deadlines. These require documentary corroboration or authorised validation by the relevant organisation. An expired deadline does not prove payment or full release.
 
-The main intelligence gaps concern **technical source attribution** (often unknowable without logs or DFIR), **current validity of exposed accounts, links or access claims**, and **completeness of actor-announced volumes**. Resolving them would require incident timelines, authorised technical checks and verifiable complete inventories respectively.
+**What cannot be inferred:** country and industry counts do not measure national security quality; an organisation name or domain in a sample does not prove access to its primary information system; a claimed total volume is not an independently measured volume. Raw clandestine-source documents do not belong in public appendices.
 
-**Scope correction:** Yalidine remains traceable as an August-dated posting, but the reviewed CSVs contain anomalies that prevent reliable attribution to the named organisation. It is excluded from canonical counts and remains under investigation. Similar posting dates or publisher names are insufficient by themselves to link it technically to other Algerian claims.
+**Next quality-control action:** apply consistent qualification criteria to July's 47 records, August's 33 documented records and September's case records; keep separate original-publication, discovery, latest-verification and qualification dates before recalculating canonical and historical series.
 
 ## 8. MITRE ATT&CK - contextual mapping, not attribution
 
@@ -216,41 +215,46 @@ The main intelligence gaps concern **technical source attribution** (often unkno
 
 These techniques are **defensive detection hypotheses**. This report does not claim to have reconstructed an ATT&CK attack chain from each criminal publication.
 
-## 9. Priority recommendations by organisation type
+## 9. Strategic priorities for executives and security leaders
 
-| Audience | Priority | Concrete measure |
-|---|---|---|
-| Public bodies | P1 | Inventory identity data and portal access; monitor exports and retain useful audit trails |
-| Banking / payments / insurance | P1 | Review third-party access, transaction integrity, privileges and financial-export alerts |
-| Recruitment / education | P1 | Assess CV, identity-document and document-link exposure; revoke tokens where exposure is identified |
-| All organisations | P1 | Test backup restoration, enforce MFA and monitor privileged and remote access |
-| Vendors and contractors | P2 | Review data exchanges, inter-company access rights and notification obligations |
-
-These controls are proportionate to the risks described; they **do not imply all named organisations experienced these behaviours**.
-
-## 10. SOC detection hypotheses and validation
-
-| Scenario | Log source | SOC correlation | Qualification |
+| Decision | Owner | Expected outcome | Documentary rationale |
 |---|---|---|---|
-| Unusual large exports | Database audit, API logs, DLP | Export volume deviates from the account's established pattern | Preventive, based on data-exposure risk |
-| Suspicious remote session | IdP/SSO, VPN, bastion | Unusual device/location + privileged session + sensitive-repository access | T1078 hypothesis |
-| Overscoped document or API access | Cloud IAM, storage audit | Unexpected public read permission + repeated bulk reads | Preventive, relevant to cloud exposure |
-| Potential exfiltration preparation | EDR, file servers, proxy | Large archive generation + abnormal outbound traffic + atypical account | Hypothesis; exfiltration not presumed |
-| Suspected encryption | EDR, FIM, backup telemetry | Mass file changes + service stoppages + anomalous process behaviour | T1486, relevant to confirmed cases |
-| Abuse of a vendor account | IAM, PAM, VPN | Third-party identity + privilege escalation + access beyond agreed scope | Preventive, vendor-dependency risk |
+| **P1 - Govern sensitive data** | CISO + business owners + privacy | Inventory of HR, identity and finance repositories and authorised access | Several reviewed samples contain these data classes |
+| **P1 - Control exposed services and identities** | CIO + IAM / Cloud teams | MFA for privileged access, reviewed storage policies, unnecessary tokens revoked after validation | Cloud-related records and an access-sale claim |
+| **P1 - Protect continuity** | CIO + operations | Real restore test and measured recovery time for a critical service | Acknowledged ransomware incidents and extortion listings |
+| **P2 - Manage third parties** | CISO + procurement + legal | Supplier map, reporting clauses and third-party permissions | Potentially exposed customer and supply-chain information |
 
-**Validation:** test detections using authorised historical or simulated logs, measure false positives, document business exceptions and only then deploy to production SIEM. No unsupported IoCs have been invented.
+**Activation rule:** these are cross-cutting priorities. If an organisation establishes that an incident affects it, it should activate its own incident-response workflow based on observed facts, obligations and impact - not on a leak-site mention alone.
+
+## 10. SOC detection scenarios - defensive hypotheses to validate
+
+The rules below are **illustrative behavioural analytics, not August-observed IoCs**. Thresholds must be calibrated to normal workloads, data volumes and business sensitivity.
+
+| Hypothesis / ATT&CK | Minimum telemetry | Suggested correlation | False-positive control and validation |
+|---|---|---|---|
+| **Unusual bulk export** · T1213 | Database audit, API Gateway, DLP, IAM | Within a rolling 30-minute window: export exceeds the account baseline, touches sensitive tables, then shows atypical outbound transfer | Exclude authorised ETL and backups; replay a controlled test export; measure alert precision |
+| **Privileged account outside normal profile** · T1078 | SSO/IdP, VPN, PAM, EDR | New device or network + privileged session + first-time access to sensitive repository within 60 minutes | Check change windows, on-call use and corporate VPN; validate user identity and MFA |
+| **Overexposed cloud storage** · T1530 (context) | CloudTrail/equivalent, object ACL, IAM, storage audit | Public policy change followed by unusual reads or repeated downloads | Separate legitimate public assets; verify ACL settings before inferring access |
+| **Possible exfiltration staging** · T1560 (hypothesis) | EDR, file audit, proxy, DNS | Unusual compression of business files followed by outbound-traffic spike | Exclude approved archive/maintenance jobs; examine process lineage |
+| **Abnormal encryption activity** · T1486 | EDR, FIM, file logs, backups | Rapid file modifications + unusual process lineage or service termination | Test using authorised simulated logs; exclude legitimate encryption/migration |
+| **Supplier access outside scope** · T1078 (hypothesis) | PAM, VPN, IAM, application logs | Third-party account + new time/resource + export or permission change | Compare with approved support windows and contractual access |
+
+**SOC workflow:** (1) validate log completeness and user identity; (2) correlate with legitimate change and business activity; (3) assess affected data and possible transfer; (4) escalate according to confirmed risk; (5) record exceptions and tune analytics. Validate controls against authorised data before production rollout.
+
+**ATT&CK scope:** these are **behavioural detection hypotheses**. Acknowledged encryption at Furniture Bargaining Council supports discussing T1486 as a confirmed impact at the reported level, not attributing a specific threat group.
 
 ## 11. Seven-, 30- and 90-day action plan
 
-| Horizon | Suggested owner | Action and expected evidence | Measure |
+| Horizon | Owner | Action and verifiable output | Outcome measure |
 |---|---|---|---|
-| **7 days** | CISO + SOC | Review administrative accounts, VPN and priority telemetry; record open gaps | % critical access inventoried |
-| **7 days** | CIO + backup owner | Complete at least one critical-service restore test and record outcome | Test result and actual recovery time |
-| **30 days** | Data owner + IT | Identify PII, HR and finance repositories; restrict bulk exports | % sensitive repositories covered |
-| **30 days** | SOC / Detection Engineering | Validate rules for bulk exports, remote access and encryption in a lab | Detection coverage and false positives |
-| **90 days** | CISO + procurement + legal | Review data-sharing vendors, notification clauses and supplier accounts | % critical suppliers assessed |
-| **90 days** | Executive crisis team | Run a data leak or ransomware tabletop including communications and recovery | Completed exercise and tracked actions |
+| **7 days** | CISO + SOC | Inventory privileged access and identify missing critical-asset telemetry | % covered critical identities/assets |
+| **7 days** | CIO + backup team | Complete an isolated restore test and record recovery time | Successful restore; measured time |
+| **30 days** | Data owners + CIO | Classify sensitive repositories and restrict unjustified exports | % classified and monitored repositories |
+| **30 days** | SOC / Detection Engineering | Validate three behavioural rules (exports, identities, encryption) with documented exceptions | Tests passed; false positives; missing telemetry |
+| **90 days** | CISO + procurement + legal | Review critical supplier permissions and notification clauses | % critical suppliers reviewed and gaps closed |
+| **90 days** | Executive crisis team | Exercise a data-leak and outage scenario with escalation decisions | Documented decisions and tracked actions |
+
+**Management message:** threat monitoring supports **proportionate, measurable verification**. Reliable statistics and protection of affected people reinforce trust; neither calls for indiscriminate crisis declarations.
 
 ## 12. Conclusion
 

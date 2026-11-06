@@ -6,9 +6,9 @@
     "victims.md"
   ],
   "record_count": 33,
-  "canonical_count": 32,
-  "investigation_excluded_count": 1,
-  "reporting_note_fr": "La série historique publiée de 33 fiches comprend un dossier Yalidine explicitement exclu du corpus canonique. Une ventilation canonique de 32 est fournie séparément pour éviter le double comptage.",
+  "canonical_count": 33,
+  "investigation_excluded_count": 0,
+  "reporting_note_fr": "33 signalements documentés en août, dont Yalidine (Under Investigation, Low). Le comptage ne confirme ni compromission ni provenance de l’échantillon.",
   "published_baseline_for_existing_september_comparison": {
     "total": 33,
     "types": {
@@ -18,16 +18,16 @@
     }
   },
   "canonical": {
-    "total": 32,
+    "total": 33,
     "types": {
       "Ransomware": 18,
-      "Data Leak": 13,
+      "Data Leak": 14,
       "Access Sale": 1
     },
     "country_counts": {
       "Afrique du Sud": 12,
       "Égypte": 5,
-      "Algérie": 4,
+      "Algérie": 5,
       "Maroc": 3,
       "Nigeria": 2,
       "Kenya": 2,
@@ -42,12 +42,12 @@
       "Emploi / Recrutement": 3,
       "Industrie / Ingénierie": 2,
       "Santé / Pharmaceutique": 2,
+      "Transport / Logistique": 2,
       "Restauration": 2,
       "Sports / Fédérations": 1,
       "Tourisme / Voyage": 1,
       "Immobilier": 1,
       "Médias / Édition": 1,
-      "Transport / Logistique": 1,
       "Commerce / E-commerce": 1,
       "Éducation / Université": 1,
       "Relations sociales / Travail": 1,
@@ -57,12 +57,12 @@
     },
     "actor_mentions": {
       "KRYBIT": 6,
+      "TelephoneHooliganism": 3,
       "Orova": 2,
       "exfilar": 2,
       "TheGentlemen": 2,
       "MedusaLocker": 2,
       "INC Ransom": 2,
-      "TelephoneHooliganism": 2,
       "R3D3MPTION": 1,
       "NullSec Nigeria": 1,
       "anisanas2": 1,
@@ -77,6 +77,25 @@
       "JabaR00t": 1,
       "Richard2002": 1,
       "Non attribué": 1
+    },
+    "status_counts": {
+      "Claim - Data Sample Published": 13,
+      "Claim - Unverified": 12,
+      "Data Fully Published": 4,
+      "Victim Confirmed": 3,
+      "Under Investigation": 1
+    },
+    "confidence_counts": {
+      "High": 13,
+      "Low": 9,
+      "Medium": 7,
+      "Very High": 3,
+      "High (corpus) / Medium (attribution)": 1
+    },
+    "impact_counts": {
+      "Level 4": 22,
+      "Level 3": 8,
+      "Level 2": 3
     }
   },
   "all_monitored_records": {
@@ -163,14 +182,7 @@
       "Operational Fraud": 0
     }
   },
-  "excluded_cases": [
-    {
-      "record_original_index": 32,
-      "name": "Yalidine El Djazair Service",
-      "status": "Under Investigation",
-      "reason": "No verified attribution; victim record expressly excludes this claim from canonical totals; observed August publication, analysed in October."
-    }
-  ],
+  "excluded_cases": [],
   "sector_by_original_card_index": {
     "1": {
       "code": "GOV",
@@ -345,9 +357,66 @@
     "same_types_status_dates": true,
     "fr_en_order_synchronized": true,
     "status_total": 33,
-    "canonical_types_total": 32,
+    "canonical_types_total": 33,
     "historical_types_total": 33,
-    "canonical_country_total": 32,
-    "canonical_sector_total": 32
+    "canonical_country_total": 33,
+    "canonical_sector_total": 33,
+    "canonical_confidence_total": 33,
+    "canonical_impact_total": 33,
+    "july_cards_checked": 47,
+    "july_no_explicit_under_investigation_exclusion_found": true,
+    "august_under_investigation_included": 1
+  },
+  "reporting_baseline": "documented_claims_including_investigation",
+  "comparison_policy": {
+    "july": "47 dossiers documentés dans le rapport de juillet",
+    "august": "33 dossiers documentés, Yalidine inclus Under Investigation",
+    "rule": "Comparaison des publications documentées, et non des cyberattaques confirmées"
+  },
+  "reporting_note_en": "33 monitored signals in August, including Yalidine (Under Investigation, Low). Counting does not confirm breach or sample provenance.",
+  "under_investigation_cases": [
+    {
+      "name": "Yalidine El Djazair Service",
+      "date_published": "2026-08-20",
+      "date_detected": "2026-08-20",
+      "date_policy": "publication-aligned for monthly tracking, not contemporaneous collection proof",
+      "status": "Under Investigation",
+      "confidence_level": "Low",
+      "victim_confirmation_2026": "No public confirmation located as of 2026-11-05",
+      "technical_attribution": "Unverified",
+      "prior_separate_denial_2025": "https://www.awras.com/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B4%D8%B1%D9%83%D8%A9-%D9%8A%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84/"
+    }
+  ],
+  "comparison_july_august_2026": {
+    "july_total": 47,
+    "august_total": 33,
+    "delta": -14,
+    "delta_percent": -29.8,
+    "types": {
+      "Ransomware": {
+        "july": 18,
+        "august": 18,
+        "delta": 0,
+        "delta_pct": 0.0
+      },
+      "Data Leak": {
+        "july": 21,
+        "august": 14,
+        "delta": -7,
+        "delta_pct": -33.3
+      },
+      "Access Sale": {
+        "july": 6,
+        "august": 1,
+        "delta": -5,
+        "delta_pct": -83.3
+      },
+      "Defacement": {
+        "july": 2,
+        "august": 0,
+        "delta": -2,
+        "delta_pct": -100.0
+      }
+    }
   }
 }

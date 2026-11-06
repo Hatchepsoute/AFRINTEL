@@ -1,4 +1,4 @@
-# Rapport CTI — AFR-2026-04-ENA-TCHAD
+# Rapport CTI - AFR-2026-04-ENA-TCHAD
 
 ## Synthèse exécutive
 
@@ -13,7 +13,7 @@ L'analyse locale du corpus fourni a porté sur l'intégralité des 1 934 fichier
 | Élément | Valeur | Statut |
 |---|---|---|
 | Incident / publication observée | 29 avril 2026, 22:55 | Observed |
-| Période des messages | 21 novembre 2025 — 25 avril 2026 | Observed |
+| Période des messages | 21 novembre 2025 - 25 avril 2026 | Observed |
 | Découverte et rapport AFRINTEL | Octobre 2026, rapporté le 23 octobre 2026 | Observed |
 | Victime revendiquée | École nationale d'administration du Tchad (ENA Tchad) | Observed |
 | Pays | Tchad | Observed |
@@ -97,7 +97,7 @@ La couverture est complète pour l'inventaire et les empreintes du corpus fourni
 
 ## 6. Recommandations défensives
 
-1. Préserver les journaux de messagerie, d'authentification, de transfert et d'administration sur la période novembre 2025 — avril 2026.
+1. Préserver les journaux de messagerie, d'authentification, de transfert et d'administration sur la période novembre 2025 - avril 2026.
 2. Réinitialiser les secrets potentiellement exposés après validation du périmètre et imposer la MFA sur les comptes sensibles.
 3. Rechercher les règles de transfert, délégations, sessions et applications OAuth inconnues.
 4. Mettre en place une surveillance ciblée contre l'usurpation de domaines et les campagnes de phishing contextualisées.

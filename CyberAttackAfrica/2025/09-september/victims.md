@@ -6,7 +6,7 @@
 
 ## Monthly snapshot
 
-**19 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 11, Data Leak 7, DDoS 1.
+**21 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 11, Data Leak 9, DDoS 1.
 
 > Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
@@ -110,6 +110,19 @@
 - **Victim Description:** Financial institution based in Lagos, specializing in consumer credit and SME financing.
 
 ### 11 September 2025
+#### 🇹🇳 Tunisia - TOPNET
+- **Initial publication date:** 11 September 2025 at 5:33 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** Hider_N3x
+- **Sector:** Telecommunications / Internet Service Provider
+- **Website:** [topnet.tn](https://www.topnet.tn)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** TOPNET is a Tunisian Internet and telecommunications service provider.
+- **Analysis:** A post attributed to Hider_N3x claims to have compromised TOPNET and offers a database, website files and more than 5,000 accounts for sale. The associated screenshots display TOPNET account pages containing personal information, contact details, addresses and authentication fields. AFRINTEL does not reproduce any raw value, password or identifier. The visible material supports the existence of a sensitive sample presented as associated with TOPNET, but does not establish corpus completeness, the actual number of affected accounts, the access vector or official victim confirmation.
+
+### 11 September 2025
 #### 🇳🇦 Namibia - Epia Financial Services
 - **Ransomware Group:** radar
 - **Sector:** Financial Services
@@ -167,6 +180,19 @@
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
+
+### 19 September 2025
+#### 🇩🇿 Algeria - Ministry of Finance
+- **Initial publication date:** September 19, 2025 at 10:29 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** sarah8toumi (source account)
+- **Sector:** Government / Finance
+- **Website:** Not specified
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim Description:** The Algerian Ministry of Finance is the government institution responsible for national fiscal and financial administration.
+- **Analysis:** A forum post dated September 19, 2025 offers for sale an internal archive attributed to the ministry, described as containing HR, appointments and internal correspondence documents. The post displays a single PDF sample link. The visible elements establish the existence of a sales offer and an advertised sample, but do not confirm the archive's authenticity, completeness, access vector or official victim confirmation. Its relationship to a later post attributed to `jrintel` in January 2026 is not established.
 
 ### 22 September 2025
 #### 🇲🇦 Morocco - Fractalite (fractalite.com)

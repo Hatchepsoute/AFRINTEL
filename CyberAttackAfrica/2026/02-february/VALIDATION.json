@@ -1,0 +1,60 @@
+{
+  "total": 27,
+  "source_language": "FR + EN",
+  "date_range": "2026-02-01/2026-02-28",
+  "types": {
+    "Ransomware": 20,
+    "Data Leak": 7,
+    "Access Sale": 0,
+    "DDoS": 0,
+    "Defacement": 0,
+    "Account Takeover": 0,
+    "System Intrusion": 0,
+    "Malware": 0,
+    "Operational Fraud": 0
+  },
+  "statuses": {
+    "Claim - Unverified": 18,
+    "Claim - Data Sample Published": 7,
+    "Data Fully Published": 2
+  },
+  "actors": {
+    "TheGentlemen": 5,
+    "0APT": 3,
+    "LockBit 5.0.0": 3,
+    "CrowStealer": 3,
+    "INC Ransom": 2,
+    "autres identifiants uniques": 11
+  },
+  "country_rows": {
+    "Egypt": 7,
+    "South Africa": 3,
+    "Morocco": 3,
+    "Nigeria": 2,
+    "Ghana": 2,
+    "MULTI (Nigeria + Ivory Coast)": 1,
+    "Somalia": 1,
+    "Senegal": 1,
+    "Tanzania": 1,
+    "Kenya": 1,
+    "Mauritius": 1,
+    "Tunisia": 1,
+    "Sudan": 1,
+    "Ivory Coast": 1,
+    "Namibia": 1
+  },
+  "regions": {
+    "North Africa": 11,
+    "West Africa": 7,
+    "Southern Africa": 4,
+    "East Africa": 4,
+    "Indian Ocean": 1
+  },
+  "remarks": [
+    "L’en-tête des fichiers victimes annonce 21 événements et seulement 1 fuite; les 27 fiches correspondent à 20 ransomware + 7 data leaks.",
+    "Le jeu NG/CI compte une seule fois, catégorie géographique MULTI.",
+    "Les graphiques fournis concernent seulement 20 ransomware et ne reflètent pas la répartition complète.",
+    "Aucune confirmation officielle visible dans les fiches de février.",
+    "Deux fiches de fuites ne portent pas de champ Type d’incident explicitement; catégorie dérivée du titre et du contenu, à corriger en FR et EN."
+  ]
+}

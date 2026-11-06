@@ -2,7 +2,10 @@
 
 ## Résumé du mois
 
-Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observées** : **17 ransomwares**, **42 fuites de données**, **1 vente d'accès** et **43 revendications DDoS**, auxquels s'ajoute une revendication Kazu liée non canonique. Les fiches concernent **18 pays africains** : 12 pays directement touchés et 6 pays supplémentaires uniquement exposés par l’intermédiaire de trois incidents multi-pays.
+> **Note de classement (revue du 6 novembre 2026).** Les 107 fiches physiques sont comptées dans le corpus de mai selon leur date de publication initiale. Les graphiques et statistiques ont été recalculés sur cette base.
+
+
+Mai 2026 comporte **107 fiches documentaires** et **107 publications/observations listées**, toutes comptées selon leur date de publication initiale : **45 fuites de données**, **43 revendications DDoS**, **17 dossiers ransomware**, **1 vente d'accès** et **1 intrusion système**. La couverture géographique comprend **18 pays africains** : 12 pays directement associés aux fiches mono-pays et six supplémentaires via trois fiches multi-pays. Une fiche multi-pays compte pour **un seul incident canonique**.
 
 ### Incidents marquants
 
@@ -13,8 +16,9 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 
 > Les fiches ci-dessous documentent des revendications ou publications observées. AFRINTEL ne confirme pas une compromission sans élément indépendant.
 
-### 02 Mai 2026
+### 02 mai 2026
 #### 🇪🇬 Égypte - Ministère du Travail (Ministry of Labour / Manpower) [Fuite de données]
+- **Date de publication initiale:** 2 mai 2026
 - **Acteur / Groupe :** CrowStealer
 - **Secteur :** Government / Administration
 - **Site web :** [manpower.gov.eg](https://www.manpower.gov.eg/)
@@ -22,8 +26,11 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 - **Description :** Le ministère égyptien du Travail (anciennement Ministry of Manpower) est l’organisme gouvernemental chargé de la gestion de l’emploi, des travailleurs, des permis de travail et des affaires sociales liées au marché du travail en Égypte. Une publication revendique la fuite de 34 528 enregistrements liés au ministère égyptien du Travail. Les échantillons contiennent notamment des noms complets, numéros d’identité nationale, dates de naissance, adresses, numéros de téléphone, emails et informations de passeport de travailleurs égyptiens, y compris des expatriés.
 - **Analyse des échantillons :** Les échantillons analysés contiennent des noms complets, numéros d’identité nationale, dates de naissance, adresses, numéros de téléphone, adresses email, informations professionnelles, numéros de passeport, dates d’expiration de passeport et données administratives associées aux travailleurs.
 ---
-### 3 Mai 2026
+
+
+### 03 mai 2026
 #### 🇹🇿 Tanzanie - Base de données personnelles (120 000+ enregistrements)
+- **Date de publication initiale:** 3 mai 2026
 
 - **Acteur / Groupe :** XOverStm (via le forum [Citizen])
 - **Secteur :** Agrégation de données personnelles
@@ -46,68 +53,9 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
   La publication affirme que les enregistrements sont actifs et validés. AFRINTEL ne confirme pas indépendamment cette affirmation, ni la fraîcheur, l'exhaustivité ou l'origine du jeu de données.
 
 ---
-### 04 Mai 2026
-#### 🇩🇿 Algérie - Ministère de l’Industrie Pharmaceutique [Fuite de données]
-- **Acteur / Groupe :** kamalsheikhxx
-- **Secteur :** Government / Administration
-- **Statut :** Data Fully Published
-- **Site web :** [miph.gov.dz/](https://miph.gov.dz/)
-- **Description :** Une publication sur un forum cybercriminel revendique la fuite d’environ 34,3 Go de données attribuées au Ministère algérien de l’Industrie Pharmaceutique, comprenant plus de 52 000 fichiers et 17 800 dossiers couvrant la période 2019-2025.
-- **Données observées :**
-  - rapports d’importation de médicaments
-  - factures et déclarations douanières
-  - registres commerciaux pharmaceutiques
-  - données personnelles de responsables
-  - autorisations officielles
-  - inventaires pharmaceutiques
-  - listes de substances psychotropes
-  - documents PDF, Excel, Word et ZIP
 
-
-#### 🇪🇬 Égypte - Bases de données éducatives & RH
-
-- **Acteur / Groupe :** bigF
-- **Secteur :** Education / University
-- **Statut :** Claim - Unverified
-- **Type d'incident :** Fuite de données
-- **Sites web observés :** [mans.edu.eg](https://www.mans.edu.eg) ; [gu.edu.eg](https://gu.edu.eg)
-- **Description :**
-  Un cybercriminel revendique la possession d’environ **37 Go** de bases de données liées à des établissements éducatifs égyptiens et à des systèmes RH.
-- **Analyse :**
-  Les échantillons publiés mentionnent plus de **1,5 million de dossiers étudiants** et près de **60 millions d’enregistrements** contenant des informations personnelles, académiques et administratives sensibles :
-  ▫️ noms complets
-  ▫️ numéros d’identité nationale égyptienne
-  ▫️ adresses et coordonnées
-  ▫️ données académiques
-  ▫️ scans de pièces d’identité et passeports
-  ▫️ données RH et salaires
-
-#### 🇿🇦 Afrique du Sud - Standard Bank Group
-- **Groupe ransomware :** PrinzEugen
-- **Secteur :** Finance / Banking
-- **Site web :** [www.standardbank.com](https://www.standardbank.com)
-- **Statut :** Claim - Unverified
-- **Description :** Standard Bank Group est l'un des plus grands groupes bancaires d'Afrique. Le 4 mai 2026, l'acteur **PrinzEugen** a revendiqué la possession de données associées à cette institution financière.
-
-#### 🇪🇬 Égypte - Luna Group
-- **Groupe ransomware :** Lamashtu
-- **Secteur :** Industrie / Automobile / Fabrication
-- **Site web :** [lunagroupeg.com](https://lunagroupeg.com)
-- **Statut :** Claim - Unverified
-- **Description :** Luna Group est un conglomérat opérant dans divers secteurs industriels et commerciaux en Égypte. Le groupe **Lamashtu** a revendiqué une compromission de l'organisation le 4 mai 2026.
-
----
-### 05 Mai 2026
-#### 🇳🇬 Nigeria - ActionAid / TACOSA
-- **Groupe ransomware :** MedusaLocker
-- **Secteur :** ONG / Action sociale
-- **Site web :** [www.actionaid.org](https://www.actionaid.org)
-- **Statut :** Claim - Unverified
-- **Description :**  ActionAid est une organisation internationale de lutte contre la pauvreté et les injustices sociales, collaborant avec des entités locales telles que TACOSA (The ActionAid Community and Social Action). Le groupe de ransomware MedusaLocker a revendiqué une compromission des systèmes informatiques affectant ces entités, mettant en péril des données sensibles liées aux programmes de développement communautaire et aux informations des bénéficiaires.
-
----
-### 03 Mai 2026
 #### 🇿🇦 Afrique du Sud - Consumer Goods Council of South Africa (CGCSA)
+- **Date de publication initiale:** 3 mai 2026
 - **Groupe ransomware :** Stormous (XOverStm)
 - **Secteur :** E-commerce / Retail
 - **Site web :** [cgcsa.co.za](https://www.cgcsa.co.za)
@@ -129,8 +77,77 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
   La fuite semble également inclure des sauvegardes de systèmes métiers et comptables susceptibles de contenir des informations financières sensibles ainsi que des données relatives aux entreprises membres du CGCSA.
 
 ---
-### 05 Mai 2026
+
+
+### 04 mai 2026
+#### 🇩🇿 Algérie - Ministère de l’Industrie Pharmaceutique [Fuite de données]
+- **Date de publication initiale:** 4 mai 2026
+- **Acteur / Groupe :** kamalsheikhxx
+- **Secteur :** Government / Administration
+- **Statut :** Data Fully Published
+- **Site web :** [miph.gov.dz/](https://miph.gov.dz/)
+- **Description :** Une publication sur un forum cybercriminel revendique la fuite d’environ 34,3 Go de données attribuées au Ministère algérien de l’Industrie Pharmaceutique, comprenant plus de 52 000 fichiers et 17 800 dossiers couvrant la période 2019-2025.
+- **Données observées :**
+  - rapports d’importation de médicaments
+  - factures et déclarations douanières
+  - registres commerciaux pharmaceutiques
+  - données personnelles de responsables
+  - autorisations officielles
+  - inventaires pharmaceutiques
+  - listes de substances psychotropes
+  - documents PDF, Excel, Word et ZIP
+
+#### 🇪🇬 Égypte - Bases de données éducatives & RH
+- **Date de publication initiale:** 4 mai 2026
+
+- **Acteur / Groupe :** bigF
+- **Secteur :** Education / University
+- **Statut :** Claim - Unverified
+- **Type d'incident :** Fuite de données
+- **Sites web observés :** [mans.edu.eg](https://www.mans.edu.eg) ; [gu.edu.eg](https://gu.edu.eg)
+- **Description :**
+  Un cybercriminel revendique la possession d’environ **37 Go** de bases de données liées à des établissements éducatifs égyptiens et à des systèmes RH.
+- **Analyse :**
+  Les échantillons publiés mentionnent plus de **1,5 million de dossiers étudiants** et près de **60 millions d’enregistrements** contenant des informations personnelles, académiques et administratives sensibles :
+  ▫️ noms complets
+  ▫️ numéros d’identité nationale égyptienne
+  ▫️ adresses et coordonnées
+  ▫️ données académiques
+  ▫️ scans de pièces d’identité et passeports
+  ▫️ données RH et salaires
+
+#### 🇿🇦 Afrique du Sud - Standard Bank Group
+- **Date de publication initiale:** 4 mai 2026
+- **Groupe ransomware :** PrinzEugen
+- **Secteur :** Finance / Banking
+- **Site web :** [www.standardbank.com](https://www.standardbank.com)
+- **Statut :** Claim - Unverified
+- **Description :** Standard Bank Group est l'un des plus grands groupes bancaires d'Afrique. Le 4 mai 2026, l'acteur **PrinzEugen** a revendiqué la possession de données associées à cette institution financière.
+
+#### 🇪🇬 Égypte - Luna Group
+- **Date de publication initiale:** 4 mai 2026
+- **Groupe ransomware :** Lamashtu
+- **Secteur :** Industrie / Automobile / Fabrication
+- **Site web :** [lunagroupeg.com](https://lunagroupeg.com)
+- **Statut :** Claim - Unverified
+- **Description :** Luna Group est un conglomérat opérant dans divers secteurs industriels et commerciaux en Égypte. Le groupe **Lamashtu** a revendiqué une compromission de l'organisation le 4 mai 2026.
+
+---
+
+
+### 05 mai 2026
+#### 🇳🇬 Nigeria - ActionAid / TACOSA
+- **Date de publication initiale:** 5 mai 2026
+- **Groupe ransomware :** MedusaLocker
+- **Secteur :** ONG / Action sociale
+- **Site web :** [www.actionaid.org](https://www.actionaid.org)
+- **Statut :** Claim - Unverified
+- **Description :**  ActionAid est une organisation internationale de lutte contre la pauvreté et les injustices sociales, collaborant avec des entités locales telles que TACOSA (The ActionAid Community and Social Action). Le groupe de ransomware MedusaLocker a revendiqué une compromission des systèmes informatiques affectant ces entités, mettant en péril des données sensibles liées aux programmes de développement communautaire et aux informations des bénéficiaires.
+
+---
+
 #### 🇰🇪 Kenya / 🇪🇹 Éthiopie / 🇳🇬 Nigéria / 🇿🇼 Zimbabwe - Fuite de données de CV (Resume docs)
+- **Date de publication initiale:** 5 mai 2026
 - **Acteur / Groupe :** attackercompany (via le forum [Citizen])
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Unverified
@@ -159,24 +176,33 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 
   **Unknown :** nationalité, résidence, source de collecte et appartenance éventuelle à un jeu de données plus large.
 ---
-### 06 Mai 2026
+
+
+### 06 mai 2026
 #### 🇬🇭 Ghana - Kasapreko
+- **Date de publication initiale:** 6 mai 2026
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Alimentation / Boissons / Restauration
 - **Statut :** Claim - Unverified
 - **Site web :** [kasapreko.com](https://kasapreko.com)
 - **Description :** Kasapreko est un producteur de boissons au Ghana. Le groupe TheGentlemen a publié une revendication concernant l’entreprise le 6 mai 2026. Aucun élément indépendant ne confirme une intrusion ou un chiffrement.
 ---
-### 07 Mai 2026
+
+
+### 07 mai 2026
 #### 🇪🇬 Égypte - Rhactus Hotel
+- **Date de publication initiale:** 7 mai 2026
 - **Groupe ransomware :** LockBit 5.0
 - **Secteur :** Hôtellerie / Événementiel
 - **Site web :** [rhactushotel.com](https://rhactushotel.com)
 - **Statut :** Claim - Unverified
 - **Description :** Rhactus Hotel est un établissement hôtelier égyptien. Le groupe **LockBit 5.0** a revendiqué une compromission de l'organisation le 7 mai 2026.
 ---
-### 08 Mai 2026
+
+
+### 08 mai 2026
 #### 🇪🇬 Égypte - Imex International
+- **Date de publication initiale:** 8 mai 2026
 - **Groupe ransomware :** Qilin
 - **Secteur :** Transport / Logistique
 - **Site web :** [imex-logistics.com](https://www.imex-logistics.com)
@@ -184,8 +210,11 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 - **Description :** *Imex International* est une entreprise égyptienne de logistique et de transport international. Le groupe **Qilin** a revendiqué une cyberattaque contre l'organisation le 8 mai 2026.
 
 ---
-### 09 Mai 2026
+
+
+### 09 mai 2026
 #### 🇪🇬 Égypte - Misr Chemical Industries (MCI)
+- **Date de publication initiale:** 9 mai 2026
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [mci.com.eg](http://mci.com.eg)
@@ -193,6 +222,7 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 - **Description :** Misr Chemical Industries est un acteur industriel majeur spécialisé dans la fabrication de produits chimiques. Le groupe **TheGentlemen** a revendiqué une compromission de l'entreprise le 9 mai 2026.
 
 #### 🇳🇬 Nigeria - MRS Holdings
+- **Date de publication initiale:** 9 mai 2026
 - **Groupe ransomware :** KillSec
 - **Secteur :** Oil & Energy
 - **Site web :** [www.mrsholdings.com](https://www.mrsholdings.com)
@@ -200,8 +230,196 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 - **Description :** MRS Holdings est un conglomérat énergétique opérant dans les secteurs pétrolier et gazier au Nigéria. Le groupe **KillSec** revendique la possession et la publication de données exfiltrées appartenant à l'organisation.
 
 ----
-### 10 Mai 2026
+
+#### 🇲🇦 Maroc - Ministère de la Santé et de la Protection sociale
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [sante.gov.ma](https://sante.gov.ma)
+
+- **Description :**
+  Ministère de la Santé et de la Protection sociale est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de l Enseignement supérieur
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [enssup.gov.ma](https://enssup.gov.ma)
+
+- **Description :**
+  Ministère de l Enseignement supérieur est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de l Agriculture
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [agriculture.gov.ma](https://agriculture.gov.ma)
+
+- **Description :**
+  Ministère de l Agriculture est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de la Transition énergétique
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [mem.gov.ma](https://mem.gov.ma)
+
+- **Description :**
+  Ministère de la Transition énergétique est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de l Équipement et de l Eau
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [equipement.gov.ma](https://equipement.gov.ma)
+
+- **Description :**
+  Ministère de l Équipement et de l Eau est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Portail officiel du Maroc
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [maroc.ma](https://maroc.ma)
+
+- **Description :**
+  Portail officiel du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère des Affaires étrangères
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [diplomatie.ma](https://diplomatie.ma)
+
+- **Description :**
+  Ministère des Affaires étrangères est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de l Économie et des Finances
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [finances.gov.ma](https://finances.gov.ma)
+
+- **Description :**
+  Ministère de l Économie et des Finances est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de la Justice
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [justice.gov.ma](https://justice.gov.ma)
+
+- **Description :**
+  Ministère de la Justice est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ambassade du Maroc en Égypte
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Gouvernement / Diplomatie
+- **Site web :** Non précisé
+- **Statut :** Claim - Data Sample Published
+- **Type d incident :** Fuite de données
+- **Pays principal de la victime :** Maroc
+- **Localisation de la mission :** Égypte
+
+- **Description :**
+  Keymous+ a publié une revendication concernant des documents d identité prétendument liés à l Ambassade du Maroc en Égypte. Un échantillon visible semble contenir un document de passeport marocain.
+
+- **Analyse :**
+  Observé : la publication du 9 mai 2026 identifie l ambassade marocaine en Égypte et expose un échantillon visible d un document d identité. L incident est compté une fois sous le Maroc ; l Égypte est conservée comme localisation de la mission et zone d exposition. AFRINTEL ne reproduit aucun nom, numéro de passeport, date de naissance, photographie ni autre donnée personnelle. Inconnus : authenticité du contenu complet, méthode d acquisition, périmètre et confirmation officielle.
+
+#### 🇪🇬 Égypte - Ministère de l Aviation civile
+- **Date de publication initiale:** 9 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Gouvernement / Aviation civile
+- **Site web :** Non précisé
+- **Statut :** Claim - Data Sample Published
+- **Type d incident :** Fuite de données
+
+- **Description :**
+  Keymous+ a publié une archive présentée comme contenant des rapports et communications de l aviation civile égyptienne, numérotés de 1 à 12, avec du contenu opérationnel ou administratif.
+
+- **Analyse :**
+  L examen structurel objectif a identifié 12 fichiers DOCX, chacun contenant sept tableaux et des marqueurs liés à l aviation. L archive est cohérente avec une collection de documents de l aviation civile, mais l analyse ne valide ni la provenance, ni l authenticité, ni la méthode d acquisition, ni l étendue complète. Les données personnelles et le contenu intégré ne sont pas reproduits.
+
+
+### 10 mai 2026
 #### 🇪🇬 Égypte - Mansoura University
+- **Date de publication initiale:** 10 mai 2026
 - **Acteur / Groupe :** INT3X
 - **Secteur :** Education / University
 - **Site web :** [mans.edu.eg](https://www.mans.edu.eg)
@@ -219,8 +437,11 @@ Mai 2026 compte **105 incidents canoniques et 106 entrées de publication observ
 
   Ces éléments renforcent la cohérence structurelle d’un jeu de données de contacts professionnels et son association apparente avec la publication concernant Mansoura University, sans valider l’accès initial, la méthode d’acquisition, l’exhaustivité de la fuite ni les **989 000 enregistrements** revendiqués. Le fichier analysé ne contient pas 989 000 lignes et ne permet pas d’extrapoler ce volume. Aucune donnée personnelle brute n’est reproduite. La capture et le fichier source ont été conservés hors dépôt ; leurs empreintes SHA-256 sont documentées dans le journal de collecte local.
 ---
-### 12 Mai 2026
+
+
+### 12 mai 2026
 #### 🇲🇦 Maroc - SDTM / Groupe Barid Al-Maghrib
+- **Date de publication initiale:** 12 mai 2026
 - **Acteur /Groupe :** Sejjil
 - **Secteur :** Transport / Logistique
 - **Site web :**  [groupesdtm.com](https://www.groupesdtm.com/)
@@ -232,6 +453,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
   Les échantillons observés contiennent des métadonnées administratives, comptes utilisateurs ERP, hashes MD5 de mots de passe, tokens de session actifs, adresses email professionnelles, informations d’agences, numéros de téléphone, données financières internes, identifiants RIB, désignations de comptes et informations clients incluant CIN et adresses physiques.
 
 #### 🇹🇳 Tunisie - SETCAR
+- **Date de publication initiale:** 12 mai 2026
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [www.setcar.com.tn](https://www.setcar.com.tn)
@@ -239,6 +461,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Description :** SETCAR est une entreprise tunisienne spécialisée dans les équipements automobiles. Le 12 mai 2026, le groupe **TheGentlemen** a revendiqué une cyberattaque contre l'organisation.
 
 #### 🇪🇬 Égypte - FutureShop [Fuite de données / API exposée]
+- **Date de publication initiale:** 12 mai 2026
 
 - **Acteur / Groupe :** cc5ab (forum [Citizen])
 - **Secteur :** E-commerce / Retail
@@ -255,8 +478,11 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Analyse :**
   Mauvaise configuration critique de l'API exposant des PII, des adresses de livraison avec GPS et des contrats internes. Permet harcèlement, vols physiques, espionnage concurrentiel et fraudes. Le bucket S3 exposé avec contrats signés et documents commerciaux facilite l'espionnage industriel et la fraude documentaire.
 ---
-### 13 Mai 2026
+
+
+### 13 mai 2026
 #### 🇪🇬 Égypte - Ministry of Education
+- **Date de publication initiale:** 13 mai 2026
 - **Acteur / Groupe :** Revesky
 - **Secteur :** Government / Administration
 - **Site web :** [moe.gov.eg](https://moe.gov.eg/)
@@ -267,8 +493,8 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Analyse des échantillons :**
   Les éléments publiés évoquent environ 26,8 millions d’enregistrements d’élèves et 3,8 millions d’enregistrements liés au personnel éducatif et administratif. L’acteur affirme également disposer de privilèges administratifs complets permettant la gestion des comptes enseignants et étudiants, la réinitialisation de mots de passe, la modification d’informations administratives et l’accès à certaines fonctionnalités sensibles de la plateforme éducative.
 
-
 #### 🇲🇿 Mozambique / 🇱🇷 Liberia / 🇳🇬 Nigéria / 🇹🇬 Togo / 🇸🇱 Sierra Leone - DHIS2 / Ministères de la Santé
+- **Date de publication initiale:** 13 mai 2026
 - **Acteur / Groupe :** Keymous
 - **Secteur :** Government / Administration
 - **Plateformes ciblées :** DHIS2 (District Health Information System)
@@ -303,8 +529,28 @@ Une telle compromission pourrait permettre :
   ▫️ perturbation des opérations de santé publique
 AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
  ---
-### 15 Mai 2026
+
+#### 🇲🇦 Maroc - Portail d identité Access Maroc
+- **Date de publication initiale:** 13 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Technology / Hosting
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [id.acces-maroc.ma](https://id.acces-maroc.ma)
+
+- **Description :**
+  Portail d identité Access Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 15 mai 2026
 #### 🇪🇹 Éthiopie - Base de données des ONG [Fuite / Vente de données]
+- **Date de publication initiale:** 15 mai 2026
 
 - **Acteur / Groupe :** 404Crew Cyber Team (forum [Citizen])
 - **Secteur :** Government / Administration
@@ -316,6 +562,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   L’exposition de l’intégralité du registre des ONG compromet des données opérationnelles sensibles, notamment les contacts dirigeants et les localisations. Cela permet du phishing ciblé, du harcèlement physique et de l’espionnage contre les organisations humanitaires. Les données révèlent également la structure de contrôle gouvernementale, facilitant d’éventuelles attaques contre les autorités de régulation.
 
 #### 🇿🇦 Afrique du Sud - Ephraim Mogale Local Municipality
+- **Date de publication initiale:** 15 mai 2026
 - **Acteur / Groupe :** NullSec Nigeria x 404Crew Cyber Team x Infernalis
 - **Secteur :** Government / Administration
 - **Site web :** [ephraimmogalelm.gov.za](https://www.ephraimmogalelm.gov.za)
@@ -327,6 +574,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les acteurs revendiquent la compromission du site web et de systèmes associés à la municipalité. Les échantillons publiés contiennent des documents administratifs internes, des correspondances officielles et des documents liés à la gestion municipale. Les attaquants affirment détenir environ **111 Go** de données et avoir divulgué un premier échantillon pour appuyer leur revendication. Une telle exposition pourrait entraîner la divulgation d'informations administratives sensibles, faciliter des opérations d'ingénierie sociale et fournir des renseignements exploitables sur l'organisation interne de la municipalité. À ce stade, la portée complète de la compromission n'a pas été confirmée de manière indépendante.
 
 #### 🇿🇦 Afrique du Sud - Bellavista School
+- **Date de publication initiale:** 15 mai 2026
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Education / University
 - **Site web :** [bellavista.org.za](https://www.bellavista.org.za)
@@ -342,8 +590,8 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Une telle fuite pourrait être exploitée pour mener des campagnes de phishing ciblé contre les familles, les enseignants et les établissements scolaires, faciliter des tentatives d'usurpation d'identité ou permettre la collecte d'informations utiles à des attaques d'ingénierie sociale.
   Les éléments publiés montrent l'exposition effective de données personnelles et constituent un indicateur crédible d'un accès non autorisé à une base liée à l'établissement.
 
-
 #### 🇪🇬 Égypte - Baitzakat.org.eg [Fuite de données]
+- **Date de publication initiale:** 15 mai 2026
 
 - **Acteur / Groupe :** DR-X-LOL (forum [Citizen])
 - **Secteur :** ONG / Action sociale
@@ -354,8 +602,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Exposition extrêmement sensible : les identifiants nationaux sont des marqueurs irréversibles permettant usurpation d'identité, fraude administrative, contournement KYC et fraude financière. La mention "affiliation gouvernementale" suggère que de nombreux fonctionnaires ou agents publics sont concernés, amplifiant les risques pour la sécurité nationale. La confiance dans le secteur caritatif est gravement compromise.
 ---
-### 16 Mai 2026
+
+
+### 16 mai 2026
 #### 🇪🇬 Égypte - Professional Academy for Teachers (PAT)
+- **Date de publication initiale:** 16 mai 2026
 - **Acteur / Groupe :** INT3X
 - **Secteur :** Government / Administration
 - **Organisation ciblée :** Professional Academy for Teachers (PAT)
@@ -369,6 +620,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les échantillons observés montrent des exports structurés contenant des noms complets, numéros de téléphone, adresses email, numéros d’identification nationale, codes enseignants, postes occupés, matières enseignées, établissements scolaires, académies régionales, niveaux scolaires et informations administratives internes.
 
 #### 🇿🇦 Afrique du Sud - Department of Correctional Services (DCS)
+- **Date de publication initiale:** 16 mai 2026
 
 - **Acteur / Groupe :** NullSec Nigeria x 404Crew Cyber Team x Infernalis
 - **Secteur :** Government / Administration
@@ -385,6 +637,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   La publication s'inscrit dans une campagne revendiquée comme étant motivée par des considérations politiques et des représailles liées aux tensions xénophobes évoquées par les auteurs.
 
 #### 🇰🇪 Kenya - Land Surveyors Board of Kenya (LSB)
+- **Date de publication initiale:** 16 mai 2026
 - **Acteur / Groupe :** cc5ab
 - **Secteur :** Government / Administration
 - **Statut :** Claim - Unverified
@@ -408,8 +661,64 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   La présence de données d'identification nationales associées à des informations professionnelles augmente également les risques d'usurpation d'identité, de fraude documentaire et d'ingénierie sociale ciblée.
 
 ---
-### 17 Mai 2026
+
+#### 🇲🇦 Maroc - Portail officiel du Maroc
+- **Date de publication initiale:** 16 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [maroc.ma](https://maroc.ma)
+
+- **Description :**
+  Portail officiel du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇿🇦 Afrique du Sud - Gouvernement Provincial de Gauteng [Publication Kazu]
+- **Date de publication initiale:** 16 mai 2026
+- **Date de l incident :** 16 mai 2026
+- **Acteur / Groupe :** Kazu (attribution à la chaîne Telegram ; affiliation non vérifiée indépendamment)
+- **Secteur :** Gouvernement / Administration publique
+- **Site web :** [gauteng.gov.za](https://www.gauteng.gov.za)
+- **Statut :** Claim - Data Sample Published
+- **Type d incident :** Fuite de données
+- **Statut de comptage :** Incident canonique de mai. La fiche est comptée une fois dans le total des incidents, sur la base de la publication Kazu et de l’échantillon local examiné.
+- **Évaluation chronologique :** Il s'agit d'une publication de mai concernant une victime déjà associée à une revendication XP95 du 13 mars 2026. Le lien entre les deux corpus peut correspondre à une republication, un transfert ou une revente ; l’origine commune ou une compromission distincte ne sont pas établies.
+- **Description :** Kazu propose un jeu de données attribué au Gouvernement provincial du Gauteng pour **25 000 USD**, en revendiquant **3 673 556 fichiers** et environ **3,8 To** de données. L archive locale fournie contient **1 905 fichiers** et environ **1,905 Go** ; son SHA-256 est `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
+- **Analyse :** Le recoupement entre la victime et le volume revendiqué dans la publication XP95 est compatible avec une double revendication, un transfert/revente ou une exposition distincte. Les éléments disponibles ne permettent pas de trancher et n établissent ni chiffrement ni intrusion distincte.
+
+  L archive locale examinée contient 1 905 fichiers totalisant 1 905 086 357 octets : 1 632 PDF, 175 JPG, 89 DOCX, 6 DOC et 3 PNG. Les PDF totalisent 4 268 pages ; 696 disposent d une couche texte exploitable et 936 ne présentent pas de couche texte détectable, ce qui limite leur qualification sans OCR ou examen visuel exhaustif. Les 89 DOCX ont été parsés en lecture seule ; aucun projet VBA, lien externe ou objet incorporé n a été détecté dans leurs structures XML. Les six fichiers DOC n ont pas été convertis ni exécutés.
+
+  L analyse du texte extractible met en évidence des documents administratifs et institutionnels relatifs à des départements publics, des établissements scolaires et de santé, des passeports et identifiants, des employés, des contrats, des achats publics, des factures, des banques, des licences, du logement, de la police et de la fiscalité. Ces catégories sont réellement observées dans le texte accessible ; elles ne permettent pas d extrapoler le contenu des 936 PDF sans couche texte ni des images non OCR examinées exhaustivement. Aucun nom, identifiant, adresse, document individuel, mot de passe ou autre donnée personnelle brute n est reproduit.
+
+  L échantillon confirme une exposition documentaire sensible présentée comme liée au Gouvernement provincial du Gauteng, mais il ne démontre ni l authenticité de chaque fichier, ni l exhaustivité des 3 673 556 fichiers revendiqués, ni l origine technique. Il ne permet pas non plus de déterminer si la publication Kazu constitue une compromission distincte ou une republication du corpus XP95.
+
+
+### 16 mai 2026
+#### 🇿🇦 Afrique du Sud - Gauteng City Region Academy (GCRA)
+- **Date de publication initiale :** 16 mai 2026 à 00:49 (heure affichée sur le forum ; fuseau non précisé)
+- **Acteur / Groupe :** Kazu
+- **Secteur :** Gouvernement / Éducation / Bourses d’études
+- **Site web :** [gcrabursary.gauteng.gov.za](https://gcrabursary.gauteng.gov.za)
+- **Statut :** Claim - Data Sample Published
+- **Type d incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d impact :** Niveau 4
+- **Description victime :** La Gauteng City Region Academy (GCRA) est un programme financé par le gouvernement provincial du Gauteng qui soutient les étudiants de la province dans leurs études supérieures, notamment par des aides couvrant les frais d’inscription, le logement, les livres et certaines dépenses de vie.
+- **Analyse :** Une publication Kazu du 16 mai 2026 propose un corpus présenté comme provenant de GCRA, pour 2 000 USD, et revendique 147 Go et 429 473 fichiers. L’archive locale examinée contient 2 944 PDF totalisant 1 143 999 172 octets, soit environ 1,144 Go. Les PDF totalisent 4 474 pages ; 1 243 disposent d’une couche texte exploitable et 1 701 n’en présentent pas.
+
+  L’analyse du texte accessible met en évidence des dossiers relatifs aux étudiants, aux demandes de bourses, aux établissements universitaires, aux paiements, aux contrats, aux coordonnées bancaires, aux employés, à l’identité, au logement et à la santé. Ces catégories concernent le texte extractible uniquement et ne sont pas extrapolées aux PDF scannés sans couche texte. Aucun nom, numéro d’identité, adresse, compte bancaire, mot de passe ou autre donnée personnelle brute n’est reproduit.
+
+  La cohérence du domaine GCRA, de la description de l’acteur et de l’échantillon documentaire soutient l’association du corpus à une exposition sensible liée à GCRA. Elle ne démontre pas l’exhaustivité des 429 473 fichiers, l’origine technique, la compromission de l’ensemble de l’infrastructure provinciale ni une confirmation officielle de la victime.
+
+### 17 mai 2026
 #### 🇿🇦 Afrique du Sud - Statistics South Africa (Stats SA)
+- **Date de publication initiale:** 17 mai 2026
 - **Acteur / Groupe :** Kazu
 - **Secteur :** Government / Administration
 - **Site web :** [statssa.gov.za](https://www.statssa.gov.za/)
@@ -427,6 +736,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Note de double revendication :** Ces chiffres (154 Go, environ 453 000 fichiers) correspondent à la revendication ransomware enregistrée le 29 mars 2026 sous l'acteur XP95, qui incluait une demande de rançon de 100 000 $ et une échéance de mise en vente publique fixée au 20 avril 2026. Cette publication de mai ne comporte aucune demande de rançon et est enregistrée comme une fuite de données, pas comme du ransomware. La correspondance étroite entre le volume et le nombre de fichiers suggère que Kazu revend ou republie le jeu de données initialement revendiqué par XP95 plutôt que de signaler une compromission indépendante ; AFRINTEL ne peut pas confirmer indépendamment la relation entre les deux publications.
 
 #### 🇲🇦 Maroc - Multiples plateformes gouvernementales marocaines
+- **Date de publication initiale:** 17 mai 2026
 - **Acteur / Groupe :** superstarkmc
 - **Secteur :** Government / Administration
 - **Sites web :** [men.gov.ma](https://www.men.gov.ma); [tax.gov.ma](https://www.tax.gov.ma) ; [tgr.gov.ma](https://www.tgr.gov.ma)
@@ -436,8 +746,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   L’auteur affirme détenir environ 827 000 lignes de données (~16 MB) et propose la vente des accès.
 - **Analyse des échantillons :**  Les données observées contiennent des centaines d’identifiants associés à des plateformes gouvernementales marocaines, incluant adresses email *@taalim.ma*, noms d’utilisateurs, mots de passe en clair, accès fiscaux, comptes administratifs éducatifs, services RH, plateformes de concours, systèmes de gestion scolaire, services de trésorerie et plateformes liées aux infractions routières. Plusieurs entrées semblent exposer des accès liés à des services financiers, éducatifs et administratifs sensibles.
 ---
-### 18 Mai 2026
+
+
+### 18 mai 2026
 #### 🇹🇳 Tunisie - CRIT Tunisie
+- **Date de publication initiale:** 18 mai 2026
 - **Groupe ransomware :** Titan
 - **Secteur :** Ressources humaines / Recrutement
 - **Site web :** [crit-tunisie.net](https://www.crit-tunisie.net)
@@ -446,6 +759,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   CRIT Tunisie est une filiale du groupe français CRIT, spécialisée dans les ressources humaines, le recrutement (CDI/CDD) et le travail temporaire. Implantée en Tunisie pour accompagner les entreprises locales et internationales, la structure gère le sourcing, la sélection et la mise à disposition de personnel qualifié dans divers secteurs clés du pays (industrie, logistique, services, relation client).
 
 #### 🇸🇳 Sénégal - Trésor Public du Sénégal
+- **Date de publication initiale:** 18 mai 2026
 
 - **Groupe ransomware :** AuditTeam
 - **Secteur :** Government / Administration
@@ -476,6 +790,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   - **Niveau de confiance : Élevé. Niveau d'impact : Niveau 4** (infrastructure financière nationale critique et exposition à grande échelle de données financières et d'identité sensibles).
 
 #### 🇪🇬 Égypte / 🇱🇾 Libye - Scans de passeports [Fuite de données]
+- **Date de publication initiale:** 18 mai 2026
 - **Acteur / Groupe :** raylie (forum [Citizen])
 - **Secteur :** Government / Administration
 - **Statut :** Data Fully Published
@@ -485,8 +800,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Exposition PII extrêmement grave. Les scans de passeports complets permettent des usurpations d'identité massives, des fraudes transfrontalières, des demandes de visa frauduleuses et des crimes financiers. Les victimes égyptiennes et libyennes risquent le clonage d'identité, la falsification de documents et des menaces pour la sécurité nationale.
 ---
-### 19 Mai 2026
+
+
+### 19 mai 2026
 #### 🇩🇿 Algérie - OGEBC (Office de Gestion des Biens Culturels) [Fuite / Vente de base de données]
+- **Date de publication initiale:** 19 mai 2026
 
 - **Acteur / Groupe :** Databasehooligan (via le forum [Citizen])
 - **Secteur :** Government / Administration
@@ -508,8 +826,45 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
   La structure très complète des données (incluant des notes internes et des tickets de support) suggère un accès profond aux systèmes internes de l'organisation. La vente de ces données pourrait compromettre non seulement la vie privée des citoyens, mais aussi la sécurité des opérations de l'Office et la confiance dans les institutions culturelles algériennes.
 ---
-### 20 Mai 2026
+
+#### 🇲🇦 Maroc - Attijariwafa bank
+- **Date de publication initiale:** 19 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Finance / Banking
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [attijariwafabank.com](https://attijariwafabank.com)
+
+- **Description :**
+  Attijariwafa bank est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Portail officiel des listes électorales marocaines
+- **Date de publication initiale:** 19 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [listeselectorales.ma](https://listeselectorales.ma)
+
+- **Description :**
+  Portail officiel des listes électorales marocaines est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 20 mai 2026
 #### 🇲🇦 Maroc - Watiqa.ma
+- **Date de publication initiale:** 20 mai 2026
 - **Acteur / Groupe :** JBT2026
 - **Secteur :** Government / Administration
 - **Site web :** [watiqa.ma](https://www.watiqa.ma)
@@ -518,8 +873,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Description :**  Watiqa.ma est la plateforme officielle marocaine permettant aux citoyens de demander en ligne des documents d’état civil et administratifs.
 - **Analyse :** L'acteur revendique la fuite d’environ **695 400 enregistrements** contenant des données personnelles et familiales sensibles, notamment noms, dates de naissance, adresses, téléphones et informations d’état civil.  Les données observées pourraient être exploitées pour des opérations d’usurpation d’identité, de fraude administrative, de phishing ciblé et d’ingénierie sociale contre des citoyens marocains.
 ---
-### 21 Mai 2026
+
+
+### 21 mai 2026
 #### 🇲🇦 Maroc - Avito.ma
+- **Date de publication initiale:** 21 mai 2026
 - **Acteur / Groupe :** fexus
 - **Secteur :** E-commerce / Retail
 - **Site web :** [avito.ma](https://www.avito.ma)
@@ -536,8 +894,28 @@ Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce 
   ▫️ attaques contre d’autres services utilisant les mêmes identifiants
   AFRINTEL n’a réalisé aucune tentative d’authentification ni interaction avec les systèmes concernés.
  ---
-### 22 Mai 2026
+
+#### 🇲🇦 Maroc - Ministère de la Culture
+- **Date de publication initiale:** 21 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [mjcc.gov.ma](https://mjcc.gov.ma)
+
+- **Description :**
+  Ministère de la Culture est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 22 mai 2026
 #### 🇲🇦 Maroc - Spacex.ma
+- **Date de publication initiale:** 22 mai 2026
 - **Acteur / Groupe :** DarkMafiaX
 - **Secteur :** E-commerce / Retail
 - **Site web :** [spacex.ma](https://spacex.ma)
@@ -554,6 +932,7 @@ Les mots de passe publiés semblent être stockés en clair ou réutilisés, ce 
 AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter toute interaction non autorisée avec les systèmes concernés.
 
 #### 🇹🇿 Tanzanie - Police (Webmail) [Fuite / Vente de base de données]
+- **Date de publication initiale:** 22 mai 2026
 
 - **Acteur / Groupe :** [Citizen] Kampuchean
 - **Secteur :** Government / Administration
@@ -564,7 +943,9 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Si les identifiants proposés étaient valides au moment de l’observation, ils pourraient faciliter l’usurpation, le phishing et des tentatives d’accès non autorisé. AFRINTEL n’a pas testé les identifiants. Leur validité, leur origine, leur réutilisation et leur état de remédiation restent inconnus.
 ---
+
 #### 🇲🇦 Maroc - RADEM Meknès [Fuite de données massive - Infrastructure critique]
+- **Date de publication initiale:** 22 mai 2026
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Oil & Energy
 - **Statut :** Claim - Data Sample Published
@@ -580,8 +961,28 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
   **Unknown :** vecteur d’accès initial, impact opérationnel, volume revendiqué complet, remédiation et réponse institutionnelle.
 ---
-### 23 Mai 2026
+
+#### 🇲🇦 Maroc - DGSSI
+- **Date de publication initiale:** 22 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [dgssi.gov.ma](https://dgssi.gov.ma)
+
+- **Description :**
+  DGSSI est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 23 mai 2026
 #### 🇿🇦 Afrique du Sud - SITA (State Information Technology Agency)
+- **Date de publication initiale:** 23 mai 2026
 
 - **Acteur / Groupe :** NullSec Nigeria x NullSec Philippines
 - **Secteur :** Government / Administration
@@ -594,8 +995,8 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Le groupe revendique la compromission de SITA et la publication d’un échantillon de données présenté comme provenant de l’organisation. Selon la publication, les informations exposées incluraient des noms d’utilisateurs, des adresses Gmail, des mots de passe (hachés et potentiellement en clair) ainsi que des informations relatives aux plateformes d’accès.
   Si la revendication est authentique, une telle exposition pourrait favoriser des tentatives de compromission de comptes, des campagnes de phishing ciblé, des attaques par réutilisation d’identifiants et des accès non autorisés à des systèmes liés à l’administration publique.
 
-
 #### 🇿🇦 Afrique du Sud - South African Revenue Service (SARS)
+- **Date de publication initiale:** 23 mai 2026
 - **Acteur / Groupe :** NullSec Nigeria x NullSec Philippines
 - **Secteur :** Government / Administration
 - **Site web :** [sars.gov.za](https://www.sars.gov.za)
@@ -609,8 +1010,46 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   À ce stade, il pourrait s'agir de données issues de campagnes de credential stuffing, de journaux d'infostealers ou d'autres sources de compromission réutilisées dans un contexte lié à SARS. Une validation technique supplémentaire serait nécessaire pour confirmer l'origine exacte des données.
 
 ---
-### 24 Mai 2026
+
+#### 🇲🇦 Maroc - Ministère des Affaires étrangères
+- **Date de publication initiale:** 23 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** Fuite de données
+- **Statut :** Claim - Data Sample Published
+- **Site web :** Non précisé
+
+- **Description :**
+  Keymous+ a publié une revendication concernant des données de candidats prétendument liées au ministère marocain des Affaires étrangères. Le post visible décrit des noms complets et des numéros d inscription sur 8 440 lignes. La source ne permet pas d établir l authenticité, l exhaustivité ni la provenance du jeu de données.
+
+- **Analyse :**
+  Observé : une publication Telegram côté acteur qualifie explicitement le matériel de données de candidats divulguées et décrit des noms complets et des numéros d inscription. Inconnus : le fichier original, son authenticité, la méthode d acquisition, le volume complet et une éventuelle réponse officielle. AFRINTEL ne reproduit aucune donnée personnelle.
+
+---
+
+#### 🇲🇦 Maroc - Ministère des Affaires étrangères [Data Leak]
+- **Date de publication initiale :** 23 mai 2026 à 21:29 (horodatage affiché ; fuseau horaire non précisé)
+- **Acteur / Groupe :** Keymous (compte affiché ; identité et affiliation attribuée à la publication)
+- **Secteur :** Gouvernement / Affaires étrangères / Administration publique
+- **Site web institutionnel :** [diplomatie.ma](https://diplomatie.ma/)
+- **Statut :** Claim - Data Sample Published
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Medium pour l'attribution de l'échantillon à une liste de candidats du ministère ; Low à Medium pour la compromission du système ministériel
+- **Niveau d'impact :** Level 3
+- **Description victime :** Le ministère marocain des Affaires étrangères est l'institution publique chargée de la politique étrangère et des relations diplomatiques du Maroc. La publication attribuée à Keymous associe cette institution à une liste de candidats, sans établir l'identité du système source ni obtenir de confirmation du ministère.
+- **Analyse :** La publication annonce une liste de **8 440 lignes** contenant des noms complets et des numéros d'inscription. L'échantillon visible transmis à AFRINTEL contient **46 paires nom-numéro d'inscription** lisibles, affichées sous forme de texte concaténé et non comme un fichier tabulaire directement exploitable. Il expose donc des données d'identité et des identifiants administratifs de candidats. Les valeurs individuelles ne sont pas reproduites dans le dépôt.
+
+  La cohérence entre le titre de la publication, la référence au ministère marocain, la structure répétitive « nom complet / numéro d'inscription » et les identifiants de candidats soutient l'existence d'une exposition de données de candidature. Elle ne documente pas que le fichier provient effectivement d'un système du ministère, que les **8 440 lignes** sont complètes ou authentiques, ni qu'une compromission technique du ministère a été confirmée.
+
+  L'exposition pourrait faciliter le phishing ciblé, l'usurpation de candidats, la fraude administrative et le recoupement d'identités. Le préfixe de formule visible dans l'extrait n'a pas été exécuté ni interprété comme une formule ; aucun fichier source n'a été téléchargé.
+- **Limites de preuve :** Analyse limitée à la publication et à l'échantillon visible fourni ; le fichier annoncé, son schéma, son empreinte, les 8 440 lignes complètes et la provenance technique n'ont pas été vérifiés. Aucun nom, numéro d'inscription ou autre donnée personnelle brute n'est publié.
+- **Décision de classement :** Fiche comptée dans le corpus de mai 2026 sur la base de sa date de publication initiale du 23 mai 2026.
+
+
+### 24 mai 2026
 #### 🇪🇬 Égypte - Papa John's Egypt
+- **Date de publication initiale:** 24 mai 2026
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Alimentation / Boissons / Restauration
 - **Site web :** [papajohnsegypt.com](https://www.papajohnsegypt.com)
@@ -619,6 +1058,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Papa John's Egypt opère la franchise locale de la chaîne internationale de restauration rapide. Le 24 mai 2026, le groupe **NightSpire** a revendiqué une compromission des systèmes de l'organisation.
 
 #### 🇪🇬 Égypte - Rawaj Consumer Finance
+- **Date de publication initiale:** 24 mai 2026
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Finance / Banking
 - **Site web :** [rawaj-finance.com](https://www.rawaj-finance.com)
@@ -627,6 +1067,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Rawaj Consumer Finance est un établissement spécialisé dans le crédit à la consommation en Égypte. Le groupe **NightSpire** a revendiqué une cyberattaque contre l'entreprise le 24 mai 2026.
 
 #### 🇿🇦 Afrique du Sud - CERVI My Private Care
+- **Date de publication initiale:** 24 mai 2026
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Healthcare / Medical
 - **Site web :** [cervi.co.za](https://www.cervi.co.za)
@@ -642,8 +1083,8 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Une telle fuite pourrait favoriser des fraudes financières, des tentatives d'usurpation d'identité professionnelle, des attaques de type Business Email Compromise (BEC), la falsification de coordonnées bancaires lors de paiements ainsi que des campagnes de phishing ciblant le secteur médical.
   Les données visibles sont cohérentes avec les services proposés par la plateforme et indiquent une exposition de données opérationnelles sensibles liées à l'écosystème de santé sud-africain.
 
-
 #### 🇿🇦 Afrique du Sud - mevent.
+- **Date de publication initiale:** 24 mai 2026
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Hôtellerie / Événementiel
 - **Site web :** [mevent.co.za](https://www.mevent.co.za)
@@ -658,8 +1099,8 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les données exposées pourraient correspondre à une base de contacts professionnels, un système de gestion de personnel médical ou une plateforme de réservation et de gestion de rendez-vous utilisée par des établissements de santé partenaires.
   Une telle exposition pourrait permettre des campagnes de phishing ciblé, des tentatives d'usurpation d'identité professionnelle et la collecte d'informations sur des personnels médicaux et leurs coordonnées.
 
-
 #### 🇿🇦 Afrique du Sud - Sheriff Randburg West
+- **Date de publication initiale:** 24 mai 2026
 - **Acteur / Groupe :** 404Crew Cyber Team
 - **Secteur :** Government / Administration
 - **Site web :** [sheriffrandburgwest.co.za](https://www.sheriffrandburgwest.co.za)
@@ -676,6 +1117,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les éléments publiés démontrent l'exposition effective d'informations personnelles et constituent un indicateur crédible d'un accès non autorisé à des données associées au Sheriff Randburg West.
 
 #### 🇪🇬 Égypte - Wuzzuf.net [Fuite / Vente de base de données]
+- **Date de publication initiale:** 24 mai 2026
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Data Sample Published
@@ -689,8 +1131,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Les champs de vérification d’identité décrits dans l’échantillon créent un risque élevé d’usurpation d’identité, de fraude documentaire et d’ingénierie sociale ciblée. AFRINTEL ne confirme ni le jeu de données complet, ni sa méthode d’acquisition, ni la validité de chaque enregistrement.
 ---
-### 26 Mai 2026
+
+
+### 26 mai 2026
 #### 🇪🇬 Égypte - B Investments (Basata / Basatamfi)
+- **Date de publication initiale:** 26 mai 2026
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Finance / Banking
 - **Site web :** [binvestmentsegypt.com](https://www.binvestmentsegypt.com)
@@ -698,8 +1143,79 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Description :**
   **B Investments Holding** est une importante société égyptienne de capital-investissement et de capital-risque cotée à la bourse égyptienne (EGX), gérant un portefeuille diversifié incluant Basata Financial Holding (services fintech et e-paiement). L'infrastructure numérique de l'organisation a été ciblée par le groupe de ransomware NightSpire, qui a officiellement publié l'entité sur son site de fuite (leak site).
 ---
-### 27 Mai 2026
+
+#### 🇲🇦 Maroc - NAPS Payment
+- **Date de publication initiale:** 26 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Finance / Banking
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [naps.ma](https://naps.ma)
+
+- **Description :**
+  NAPS Payment est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Damane Cash
+- **Date de publication initiale:** 26 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Finance / Banking
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [damanecash.ma](https://damanecash.ma)
+
+- **Description :**
+  Damane Cash est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - ADD / Agence de développement digital
+- **Date de publication initiale:** 26 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [add.gov.ma](https://add.gov.ma)
+
+- **Description :**
+  ADD / Agence de développement digital est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Portail national de réclamations
+- **Date de publication initiale:** 26 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [chikaya.ma](https://chikaya.ma)
+
+- **Description :**
+  Portail national de réclamations est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 27 mai 2026
 #### 🇹🇳 Tunisie - Keejob
+- **Date de publication initiale:** 27 mai 2026
 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Ressources humaines / Recrutement
@@ -713,6 +1229,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les échantillons publiés montrent la présence de données personnelles et professionnelles comprenant notamment des noms, adresses e-mail, numéros de téléphone, informations de candidature, lettres de motivation, postes recherchés, prétentions salariales, données de recrutement ainsi que des informations relatives aux campagnes e-mail et à leur suivi. L'acteur affirme également que la base complète contiendrait des coordonnées directes, des descriptions de projets et des informations financières.
 
 #### 🇹🇳 Tunisie - MyTelnet
+- **Date de publication initiale:** 27 mai 2026
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Telecommunications
 - **Statut :** Claim - Data Sample Published
@@ -723,8 +1240,9 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Les échantillons publiés montrent la présence de données personnelles et marketing comprenant notamment des noms, prénoms, adresses e-mail, numéros de téléphone, adresses postales, âges, genres, identifiants utilisateurs, informations de connexion, produits souscrits, historiques d'utilisation, niveaux d'accès, points de fidélité, préférences clients ainsi que des données démographiques telles que la situation familiale, le nombre d'enfants, le niveau d'éducation, la situation professionnelle et les catégories de revenus. L'acteur affirme également que la base complète contient des informations CRM et des profils détaillés de clients destinés aux activités marketing et commerciales.
 
 ---
-### 27 Mai 2026
+
 #### 🇿🇦 Afrique du Sud - MIDAS
+- **Date de publication initiale:** 27 mai 2026
 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Industrie / Automobile / Fabrication
@@ -745,6 +1263,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   La base de données est proposée à la vente pour **1 100 USD** sur un forum cybercriminel. À ce stade, l’authenticité complète des données revendiquées n’a pas été confirmée de manière indépendante.
 
 #### 🇿🇦 Afrique du Sud - Wanderers Club
+- **Date de publication initiale:** 27 mai 2026
 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Sports / Federations
@@ -765,6 +1284,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   La base de données est proposée à la vente pour **1 400 USD** sur un forum cybercriminel. À ce stade, l’authenticité complète des données revendiquées n’a pas été confirmée de manière indépendante.
 
 #### 🇿🇦 Afrique du Sud - Telkom
+- **Date de publication initiale:** 27 mai 2026
 
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Telecommunications
@@ -782,8 +1302,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
   La base de données est proposée à la vente pour **900 USD** sur un forum cybercriminel. À ce stade, l’authenticité complète des données revendiquées n’a pas été confirmée de manière indépendante.
 ---
-### 28 Mai 2026
+
+
+### 28 mai 2026
 #### 🇪🇬 Égypte - Citex Systems
+- **Date de publication initiale:** 28 mai 2026
 - **Acteur / Groupe :** Keymous
 - **Secteur :** Télécommunications
 - **Site web :** [citexltd.com](https://www.citexltd.com)
@@ -804,6 +1327,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   L analyse objective du fichier fourni `Citex_Samples.csv` a identifié 15 enregistrements, trois colonnes (`Name`, `Email`, `Department`), une seule valeur de département non vide, aucun doublon de ligne complète et aucune cellule manquante. Le fichier est structurellement cohérent avec la revendication concernant la gestion des employés, mais ses 15 enregistrements ne permettent pas de valider la population revendiquée ni l étendue complète des bases. Le fichier distinct `africa_cyberattacks_May_2026.csv` contient 17 enregistrements et aucune mention de Citex ; il est conservé comme contexte auxiliaire et n a pas été utilisé pour attribuer ou quantifier l échantillon Citex. AFRINTEL n a reproduit ni testé aucune donnée personnelle, aucun identifiant ni aucun lien.
 
 #### 🇨🇮 Côte d'Ivoire - Mayelia Automotive
+- **Date de publication initiale:** 28 mai 2026
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [mayelia.com](https://www.mayelia.com)
@@ -812,6 +1336,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Mayelia Automotive est une entreprise ivoirienne spécialisée dans les services liés à l'automobile, incluant le contrôle technique et la gestion de données véhicules. L'organisation a été ciblée par le gang de ransomware TheGentlemen, qui a officiellement revendiqué l'intrusion en publiant des données exfiltrées sur son site de fuite (leak site).
 
 #### 🇳🇬 Nigeria - XL Africa Group
+- **Date de publication initiale:** 28 mai 2026
 - **Groupe ransomware :** 0day Syndicate
 - **Secteur :** Services aux entreprises
 - **Site web :**[xlafricagroup.com](https://www.xlafricagroup.com)
@@ -819,8 +1344,418 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Description :**
   XL Africa Group est un conglomérat de services diversifiés d'origine nigériane. Fondé par Charles Nwodo Jr., le groupe est spécialisé dans l'externalisation (outsourcing) et propose une large gamme de services aux entreprises (B2B), incluant la gestion des ressources humaines, la sécurité, la logistique et le transport, la gestion d'installations (facility management), ainsi que des services de gestion de trésorerie. Le groupe possède une présence opérationnelle étendue au-delà du Nigeria, notamment au Ghana, au Liberia, en Sierra Leone et aux États-Unis. L'organisation a été revendiquée comme victime par l'acteur 0day Syndicate.
 
-### 31 Mai 2026
+#### 🇲🇦 Maroc - Commission Nationale de Contrôle de la Protection des Données à Caractère Personnel
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [cndp.ma](https://cndp.ma)
+
+- **Description :**
+  Commission Nationale de Contrôle de la Protection des Données à Caractère Personnel est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Atlas Blue Airline
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Transport / Logistics
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [atlas-blue.com](https://atlas-blue.com)
+
+- **Description :**
+  Atlas Blue Airline est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Casafibre
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Technology / Hosting
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [casafibre.ma](https://casafibre.ma)
+
+- **Description :**
+  Casafibre est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - DGSN / Police nationale
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [dgsn.gov.ma](https://dgsn.gov.ma)
+
+- **Description :**
+  DGSN / Police nationale est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Conseil économique, social et environnemental
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [cesema.ma](https://cesema.ma)
+
+- **Description :**
+  Conseil économique, social et environnemental est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Cour constitutionnelle
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [cour-constitutionnelle.ma](https://cour-constitutionnelle.ma)
+
+- **Description :**
+  Cour constitutionnelle est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - DGAPR / administration pénitentiaire
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [dgapr.gov.ma](https://dgapr.gov.ma)
+
+- **Description :**
+  DGAPR / administration pénitentiaire est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Registre Social Unifié
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [rsu.ma](https://rsu.ma)
+
+- **Description :**
+  Registre Social Unifié est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - RAM Handling
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Transport / Logistics
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [ramhandling.com](https://ramhandling.com)
+
+- **Description :**
+  RAM Handling est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - CTM
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Transport / Logistics
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [ctm.ma](https://ctm.ma)
+
+- **Description :**
+  CTM est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Région de l Oriental
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [oriental.ma](https://oriental.ma)
+
+- **Description :**
+  Région de l Oriental est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Bibliothèque nationale du Maroc
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [bnrm.ma](https://bnrm.ma)
+
+- **Description :**
+  Bibliothèque nationale du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Fondation Mohammed VI
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [fm6oa.org](https://fm6oa.org)
+
+- **Description :**
+  Fondation Mohammed VI est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Genious Communications Cloud
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Technology / Hosting
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [cloud.genious.net](https://cloud.genious.net)
+
+- **Description :**
+  Genious Communications Cloud est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Medasys Maroc
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Technology / Hosting
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [medasys.ma](https://medasys.ma)
+
+- **Description :**
+  Medasys Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Wafacash
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Finance / Banking
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** Non précisé
+
+- **Description :**
+  Wafacash est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Marsa Maroc
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Transport / Logistics
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** Non précisé
+
+- **Description :**
+  Marsa Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - CasaBusWay
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Transport / Logistics
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** Non précisé
+
+- **Description :**
+  CasaBusWay est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Société Générale Maroc
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Finance / Banking
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [sgmaroc.com](https://sgmaroc.com)
+
+- **Description :**
+  Société Générale Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Genious Hosting
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Technology / Hosting
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [genious.ma](https://genious.ma)
+
+- **Description :**
+  Genious Hosting est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Portail des emplois publics
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [emploi-public.ma](https://emploi-public.ma)
+
+- **Description :**
+  Portail des emplois publics est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère des Affaires étrangères
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [diplomatie.ma](https://diplomatie.ma)
+
+- **Description :**
+  Ministère des Affaires étrangères est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de la Santé
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [sante.gov.ma](https://sante.gov.ma)
+
+- **Description :**
+  Ministère de la Santé est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+#### 🇲🇦 Maroc - Ministère de la Justice
+- **Date de publication initiale:** 28 mai 2026
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Statut :** Claim - Unverified
+- **Site web :** [justice.gov.ma](https://justice.gov.ma)
+
+- **Description :**
+  Ministère de la Justice est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
+
+- **Analyse :**
+  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
+
+---
+
+
+### 31 mai 2026
 #### 🇹🇳 Tunisie - OptionCarriere.tn [Fuite / Vente de base de données]
+- **Date de publication initiale:** 31 mai 2026
 - **Acteur /Groupe:** Databasehooligan (forum [Citizen])
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Data Sample Published
@@ -835,6 +1770,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Exposition massive de données personnelles sensibles. Risques principaux : usurpation d'identité, fraudes à l'emploi, phishing ciblé, ingénierie sociale contre les entreprises. La présence de champs comme LinkedIn, date de naissance et contact d'urgence rend cette base particulièrement dangereuse. La plateforme risque une perte de confiance et des poursuites.
 
 #### 🇲🇦 Maroc - Vente massive de bases de données marocaines [Fuite de données / Mise en vente]
+- **Date de publication initiale:** 31 mai 2026
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Government / Administration
@@ -860,782 +1796,13 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 ## Observations rétrospectives - Keymous+ mai 2026
 
-### 28 mai 2026
-#### 🇲🇦 Maroc - Commission Nationale de Contrôle de la Protection des Données à Caractère Personnel
 
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [cndp.ma](https://cndp.ma)
-
-- **Description :**
-  Commission Nationale de Contrôle de la Protection des Données à Caractère Personnel est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Atlas Blue Airline
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Transport / Logistics
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [atlas-blue.com](https://atlas-blue.com)
-
-- **Description :**
-  Atlas Blue Airline est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Casafibre
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Technology / Hosting
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [casafibre.ma](https://casafibre.ma)
-
-- **Description :**
-  Casafibre est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - DGSN / Police nationale
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [dgsn.gov.ma](https://dgsn.gov.ma)
-
-- **Description :**
-  DGSN / Police nationale est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Conseil économique, social et environnemental
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [cesema.ma](https://cesema.ma)
-
-- **Description :**
-  Conseil économique, social et environnemental est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Cour constitutionnelle
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [cour-constitutionnelle.ma](https://cour-constitutionnelle.ma)
-
-- **Description :**
-  Cour constitutionnelle est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - DGAPR / administration pénitentiaire
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [dgapr.gov.ma](https://dgapr.gov.ma)
-
-- **Description :**
-  DGAPR / administration pénitentiaire est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Registre Social Unifié
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [rsu.ma](https://rsu.ma)
-
-- **Description :**
-  Registre Social Unifié est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - RAM Handling
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Transport / Logistics
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [ramhandling.com](https://ramhandling.com)
-
-- **Description :**
-  RAM Handling est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - CTM
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Transport / Logistics
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [ctm.ma](https://ctm.ma)
-
-- **Description :**
-  CTM est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Région de l Oriental
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [oriental.ma](https://oriental.ma)
-
-- **Description :**
-  Région de l Oriental est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Bibliothèque nationale du Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [bnrm.ma](https://bnrm.ma)
-
-- **Description :**
-  Bibliothèque nationale du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Fondation Mohammed VI
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [fm6oa.org](https://fm6oa.org)
-
-- **Description :**
-  Fondation Mohammed VI est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Genious Communications Cloud
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Technology / Hosting
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [cloud.genious.net](https://cloud.genious.net)
-
-- **Description :**
-  Genious Communications Cloud est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Medasys Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Technology / Hosting
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [medasys.ma](https://medasys.ma)
-
-- **Description :**
-  Medasys Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Wafacash
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Finance / Banking
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** Non précisé
-
-- **Description :**
-  Wafacash est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Marsa Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Transport / Logistics
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** Non précisé
-
-- **Description :**
-  Marsa Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - CasaBusWay
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Transport / Logistics
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** Non précisé
-
-- **Description :**
-  CasaBusWay est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 26 mai 2026
-#### 🇲🇦 Maroc - NAPS Payment
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Finance / Banking
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [naps.ma](https://naps.ma)
-
-- **Description :**
-  NAPS Payment est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 26 mai 2026
-#### 🇲🇦 Maroc - Damane Cash
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Finance / Banking
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [damanecash.ma](https://damanecash.ma)
-
-- **Description :**
-  Damane Cash est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 26 mai 2026
-#### 🇲🇦 Maroc - ADD / Agence de développement digital
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [add.gov.ma](https://add.gov.ma)
-
-- **Description :**
-  ADD / Agence de développement digital est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 26 mai 2026
-#### 🇲🇦 Maroc - Portail national de réclamations
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [chikaya.ma](https://chikaya.ma)
-
-- **Description :**
-  Portail national de réclamations est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Société Générale Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Finance / Banking
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [sgmaroc.com](https://sgmaroc.com)
-
-- **Description :**
-  Société Générale Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Genious Hosting
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Technology / Hosting
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [genious.ma](https://genious.ma)
-
-- **Description :**
-  Genious Hosting est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Portail des emplois publics
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [emploi-public.ma](https://emploi-public.ma)
-
-- **Description :**
-  Portail des emplois publics est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Ministère des Affaires étrangères
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [diplomatie.ma](https://diplomatie.ma)
-
-- **Description :**
-  Ministère des Affaires étrangères est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Santé
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [sante.gov.ma](https://sante.gov.ma)
-
-- **Description :**
-  Ministère de la Santé est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 28 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Justice
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [justice.gov.ma](https://justice.gov.ma)
-
-- **Description :**
-  Ministère de la Justice est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 22 mai 2026
-#### 🇲🇦 Maroc - DGSSI
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [dgssi.gov.ma](https://dgssi.gov.ma)
-
-- **Description :**
-  DGSSI est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 21 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Culture
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [mjcc.gov.ma](https://mjcc.gov.ma)
-
-- **Description :**
-  Ministère de la Culture est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 23 mai 2026
-#### 🇲🇦 Maroc - Ministère des Affaires étrangères
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** Fuite de données
-- **Statut :** Claim - Data Sample Published
-- **Site web :** Non précisé
-
-- **Description :**
-  Keymous+ a publié une revendication concernant des données de candidats prétendument liées au ministère marocain des Affaires étrangères. Le post visible décrit des noms complets et des numéros d inscription sur 8 440 lignes. La source ne permet pas d établir l authenticité, l exhaustivité ni la provenance du jeu de données.
-
-- **Analyse :**
-  Observé : une publication Telegram côté acteur qualifie explicitement le matériel de données de candidats divulguées et décrit des noms complets et des numéros d inscription. Inconnus : le fichier original, son authenticité, la méthode d acquisition, le volume complet et une éventuelle réponse officielle. AFRINTEL ne reproduit aucune donnée personnelle.
-
----
-### 19 mai 2026
-#### 🇲🇦 Maroc - Attijariwafa bank
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Finance / Banking
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [attijariwafabank.com](https://attijariwafabank.com)
-
-- **Description :**
-  Attijariwafa bank est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 19 mai 2026
-#### 🇲🇦 Maroc - Portail officiel des listes électorales marocaines
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [listeselectorales.ma](https://listeselectorales.ma)
-
-- **Description :**
-  Portail officiel des listes électorales marocaines est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 16 mai 2026
-#### 🇲🇦 Maroc - Portail officiel du Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [maroc.ma](https://maroc.ma)
-
-- **Description :**
-  Portail officiel du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 13 mai 2026
-#### 🇲🇦 Maroc - Portail d identité Access Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Technology / Hosting
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [id.acces-maroc.ma](https://id.acces-maroc.ma)
-
-- **Description :**
-  Portail d identité Access Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Santé et de la Protection sociale
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [sante.gov.ma](https://sante.gov.ma)
-
-- **Description :**
-  Ministère de la Santé et de la Protection sociale est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de l Enseignement supérieur
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [enssup.gov.ma](https://enssup.gov.ma)
-
-- **Description :**
-  Ministère de l Enseignement supérieur est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de l Agriculture
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [agriculture.gov.ma](https://agriculture.gov.ma)
-
-- **Description :**
-  Ministère de l Agriculture est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Transition énergétique
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [mem.gov.ma](https://mem.gov.ma)
-
-- **Description :**
-  Ministère de la Transition énergétique est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de l Équipement et de l Eau
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [equipement.gov.ma](https://equipement.gov.ma)
-
-- **Description :**
-  Ministère de l Équipement et de l Eau est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Portail officiel du Maroc
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [maroc.ma](https://maroc.ma)
-
-- **Description :**
-  Portail officiel du Maroc est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère des Affaires étrangères
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [diplomatie.ma](https://diplomatie.ma)
-
-- **Description :**
-  Ministère des Affaires étrangères est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de l Économie et des Finances
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [finances.gov.ma](https://finances.gov.ma)
-
-- **Description :**
-  Ministère de l Économie et des Finances est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-### 09 mai 2026
-#### 🇲🇦 Maroc - Ministère de la Justice
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Statut :** Claim - Unverified
-- **Site web :** [justice.gov.ma](https://justice.gov.ma)
-
-- **Description :**
-  Ministère de la Justice est identifiée dans une publication de Keymous+ comme une cible marocaine dont le site ou le service a été présenté comme indisponible.
-
-- **Analyse :**
-  Observé : Keymous+ a publié un résultat Check-Host ou un test de disponibilité équivalent concernant la cible. L observation documente une revendication côté acteur et une interruption apparente du service. Elle n établit pas indépendamment la source du trafic, la méthode DDoS, la durée ni l impact effectif. L attribution repose sur la publication de l acteur.
-
----
-
-### 9 mai 2026
-#### 🇲🇦 Maroc - Ambassade du Maroc en Égypte
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Gouvernement / Diplomatie
-- **Site web :** Non précisé
-- **Statut :** Claim - Data Sample Published
-- **Type d incident :** Fuite de données
-- **Pays principal de la victime :** Maroc
-- **Localisation de la mission :** Égypte
-
-- **Description :**
-  Keymous+ a publié une revendication concernant des documents d identité prétendument liés à l Ambassade du Maroc en Égypte. Un échantillon visible semble contenir un document de passeport marocain.
-
-- **Analyse :**
-  Observé : la publication du 9 mai 2026 identifie l ambassade marocaine en Égypte et expose un échantillon visible d un document d identité. L incident est compté une fois sous le Maroc ; l Égypte est conservée comme localisation de la mission et zone d exposition. AFRINTEL ne reproduit aucun nom, numéro de passeport, date de naissance, photographie ni autre donnée personnelle. Inconnus : authenticité du contenu complet, méthode d acquisition, périmètre et confirmation officielle.
-
-### 9 mai 2026
-#### 🇪🇬 Égypte - Ministère de l Aviation civile
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Gouvernement / Aviation civile
-- **Site web :** Non précisé
-- **Statut :** Claim - Data Sample Published
-- **Type d incident :** Fuite de données
-
-- **Description :**
-  Keymous+ a publié une archive présentée comme contenant des rapports et communications de l aviation civile égyptienne, numérotés de 1 à 12, avec du contenu opérationnel ou administratif.
-
-- **Analyse :**
-  L examen structurel objectif a identifié 12 fichiers DOCX, chacun contenant sept tableaux et des marqueurs liés à l aviation. L archive est cohérente avec une collection de documents de l aviation civile, mais l analyse ne valide ni la provenance, ni l authenticité, ni la méthode d acquisition, ni l étendue complète. Les données personnelles et le contenu intégré ne sont pas reproduits.
-
-### 16 mai 2026
-#### 🇿🇦 Afrique du Sud - Gouvernement Provincial de Gauteng [Revendication Kazu liée]
-- **Date de l incident :** 16 mai 2026
-- **Acteur / Groupe :** Kazu (attribution à la chaîne Telegram ; affiliation non vérifiée indépendamment)
-- **Secteur :** Gouvernement / Administration publique
-- **Site web :** [gauteng.gov.za](https://www.gauteng.gov.za)
-- **Statut :** Claim - Data Sample Published
-- **Type d incident :** Ransomware / contexte d extorsion
-- **Statut de comptage :** Revendication liée non canonique. Incluse dans le décompte de l activité de publication de mai, mais exclue du total canonique des incidents, car sa relation avec la revendication XP95 du 13 mars 2026 n est pas établie.
-- **Évaluation chronologique :** Il s'agit de la deuxième revendication observée concernant la même victime. Elle est suivie comme une publication de mai, et non comme une seconde attaque confirmée.
-- **Description :** Kazu propose un jeu de données attribué au Gouvernement provincial du Gauteng pour **25 000 USD**, en revendiquant **3 673 556 fichiers** et environ **3,8 To** de données. L archive locale fournie contient **1 905 fichiers** et environ **1,905 Go** ; son SHA-256 est `3fd8dcb059e77bad240e50d7e5691fdcf75fd81d4c9680e6f56e431ed6e42261`.
-- **Analyse :** Le recoupement entre la victime et le volume revendiqué dans la publication XP95 est compatible avec une double revendication, un transfert/revente ou une exposition distincte. Les éléments disponibles ne permettent pas de trancher et n établissent ni chiffrement ni intrusion distincte. Aucune donnée personnelle ni aucun contenu documentaire individuel n est reproduit.
-
-### 23 mai 2026
-#### 🇲🇦 Maroc - Ministère des Affaires étrangères [Data Leak]
-- **Date de publication initiale :** 23 mai 2026 à 21:29 (horodatage affiché ; fuseau horaire non précisé)
-- **Date de découverte AFRINTEL :** 29 octobre 2026
-- **Acteur / Groupe :** Keymous (compte affiché ; identité et affiliation attribuée à la publication)
-- **Secteur :** Gouvernement / Affaires étrangères / Administration publique
-- **Site web institutionnel :** [diplomatie.ma](https://diplomatie.ma/)
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** Medium pour l'attribution de l'échantillon à une liste de candidats du ministère ; Low à Medium pour la compromission du système ministériel
-- **Niveau d'impact :** Level 3
-- **Description victime :** Le ministère marocain des Affaires étrangères est l'institution publique chargée de la politique étrangère et des relations diplomatiques du Maroc. La publication attribuée à Keymous associe cette institution à une liste de candidats, sans établir l'identité du système source ni obtenir de confirmation du ministère.
-- **Analyse :** La publication annonce une liste de **8 440 lignes** contenant des noms complets et des numéros d'inscription. L'échantillon visible transmis à AFRINTEL contient **46 paires nom-numéro d'inscription** lisibles, affichées sous forme de texte concaténé et non comme un fichier tabulaire directement exploitable. Il expose donc des données d'identité et des identifiants administratifs de candidats. Les valeurs individuelles ne sont pas reproduites dans le dépôt.
-
-  La cohérence entre le titre de la publication, la référence au ministère marocain, la structure répétitive « nom complet / numéro d'inscription » et les identifiants de candidats soutient l'existence d'une exposition de données de candidature. Elle ne documente pas que le fichier provient effectivement d'un système du ministère, que les **8 440 lignes** sont complètes ou authentiques, ni qu'une compromission technique du ministère a été confirmée.
-
-  L'exposition pourrait faciliter le phishing ciblé, l'usurpation de candidats, la fraude administrative et le recoupement d'identités. Le préfixe de formule visible dans l'extrait n'a pas été exécuté ni interprété comme une formule ; aucun fichier source n'a été téléchargé.
-- **Limites de preuve :** Analyse limitée à la publication et à l'échantillon visible fourni ; le fichier annoncé, son schéma, son empreinte, les 8 440 lignes complètes et la provenance technique n'ont pas été vérifiés. Aucun nom, numéro d'inscription ou autre donnée personnelle brute n'est publié.
-- **Décision de classement :** Fiche comptée comme incident canonique d'octobre, car sa première documentation AFRINTEL intervient le 29 octobre 2026. La publication initiale du 23 mai 2026 est conservée comme contexte historique et ne crée pas de doublon avec le suivi d'octobre.
-
-### Fin mai 2026 - intégré le 01 septembre 2026
+### 31 mai 2026
 #### 🇿🇦 Afrique du Sud - Centre for High Performance Computing (CHPC) / Supercalculateur Lengau
+- **Date de publication initiale :** 31 mai 2026
 
 - **Date de l'incident :** fin mai 2026
 - **Date de confirmation publique détaillée :** 24 août 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
 - **Acteur / Groupe :** Non attribué publiquement
 - **Secteur :** Recherche / Infrastructure scientifique stratégique
 - **Statut :** Victim Confirmed

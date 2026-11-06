@@ -34,8 +34,11 @@
 
 ---
 
-### 01 Avril 2026
+### 01 avril 2026
+
 #### 🇩🇿 Algérie - Ministère de la Culture [Fuite de données]
+- **Date de publication initiale :** 1 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Gouvernement / Culture / Administration publique
 - **Site web :** [m-culture.gov.dz](https://www.m-culture.gov.dz/)
@@ -43,18 +46,20 @@
 - **Description :** Environ 247 000 enregistrements exposés (contacts administratifs, inscriptions événements culturels, demandes de subventions). Données : noms, emails, téléphones, statuts de paiement, financements, dossiers de candidature.
 
 #### 🇪🇬 Égypte - Cairo University (cu.edu.eg) [Fuite de données]
+- **Date de publication initiale :** 1 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Université
 - **Site web :** [cu.edu.eg](https://cu.edu.eg/)
 - **Statut :** Claim - Unverified
 - **Description :** Cairo University est l’une des plus anciennes et prestigieuses universités publiques d’Égypte, basée au Caire et accueillant des centaines de milliers d’étudiants. Une base de données revendiquée sur un forum cybercriminel expose environ 284 000 enregistrements liés aux étudiants, inscriptions académiques et systèmes de support universitaire. Les données mentionnées incluent notamment des informations personnelles, numéros d’identification nationaux, emails, numéros de téléphone, informations académiques, détails d’inscription, statuts financiers et tickets de support. L’analyse préliminaire suggère l’exposition d’une base backend universitaire utilisée pour la gestion des étudiants, des admissions, des inscriptions académiques et du support administratif.
 
-
 #### 🇷🇼 Rwanda - Bank of Kigali [Phishing et perturbation opérationnelle]
+- **Date de publication initiale :** 1 avril 2026
+
 
 - **Date de l'incident / publication initiale :** 1er avril 2026
-- **Date de découverte AFRINTEL :** 22 octobre 2026
-- **Période statistique d'attribution :** Avril 2026 — H1 2026
+- **Période statistique d'attribution :** Avril 2026 - H1 2026
 - **Mois d'intégration au référentiel :** Octobre 2026 (découverte rétrospective)
 - **Acteur / Groupe :** Unidentified
 - **Secteur :** Banque et services financiers
@@ -79,17 +84,22 @@
 - **Source / élément observé :** [Taarifa Rwanda, 1er avril 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/).
 
 #### 🇪🇹 Éthiopie - National Oil Ethiopia PLC (NOC) [Fuite de données]
+- **Date de publication initiale :** 1 avril 2026
+
 
 - **Acteur / Groupe :** ByteToBreach
 - **Secteur :** Énergie / Pétrole & Gaz / Infrastructure critique
 - **Site web :** [nationaloilethiopia.com](https://www.nationaloilethiopia.com/)
-- **Date de la fuite :** 24 Mars 2026 mais découverte en Avril 2026
+- **Date de la fuite :** 24 Mars 2026
 - **Statut :** Claim - Data Sample Published
 - **Description :** National Oil Ethiopia PLC (NOC) est une entreprise majeure du secteur énergétique éthiopien spécialisée dans les activités pétrolières, la distribution de carburants et les services associés. Une publication sur un forum cybercriminel revendique une compromission complète de l’infrastructure de l’organisation ayant conduit à l’exfiltration de plusieurs bases de données, dont une base ERP principale estimée à plus de 800 Go. L’acteur affirme avoir obtenu des informations sensibles incluant données clients, contrats, salaires, emails, adresses, informations personnelles (PII) ainsi que des données opérationnelles internes. La publication décrit également une chaîne d’intrusion complète allant d’un accès initial via une vulnérabilité Microsoft Exchange ProxyLogon jusqu’au déploiement final d’un ransomware. Les captures et descriptions publiées suggèrent une compromission avancée des systèmes internes, des accès administrateurs, des bases de données et potentiellement des solutions de sécurité déployées au sein de l’infrastructure.
 ---
 
-### 02 Avril 2026
+### 02 avril 2026
+
 #### 🇿🇦 Afrique du Sud - singita.com [Ransomware]
+- **Date de publication initiale :** 2 avril 2026
+
 - **Groupe ransomware :** dragonforce
 - **Secteur :** Industrie du voyage et du tourisme
 - **Site web :** [singita.com](https://singita.com)
@@ -97,6 +107,8 @@
 - **Description :** Gestionnaire de lodges de luxe et de réserves naturelles en Afrique.
 
 #### 🇿🇦 Afrique du Sud - Takealot.com [Fuite de données]
+- **Date de publication initiale :** 2 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** E‑commerce
 - **Site web :** [takealot.com](https://www.takealot.com)
@@ -104,14 +116,17 @@
 - **Description :** Leader sud‑africain du e‑commerce. Le fichier `DeliveryAddress_South Africa.csv` expose adresses de livraison détaillées, coordonnées GPS, numéros de téléphone, instructions d’accès privées.
 
 #### 🇿🇦 Afrique du Sud - MySchool South Africa [Fuite de données]
+- **Date de publication initiale :** 2 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Services étudiants
 - **Site web :** [myschool.co.za](https://www.myschool.co.za/)
 - **Statut :** Claim - Unverified
 - **Description :** Environ 437 000 enregistrements : contacts étudiants, inscriptions, tickets de support, noms, emails, téléphones, dates de naissance, statuts de paiement.
 
-
 #### 🇹🇳 Tunisie - Fatales.tn [Fuite de données]
+- **Date de publication initiale :** 2 avril 2026
+
 
 - **Acteur / Groupe :** Grubder
 - **Secteur :** E-commerce / Beauté / CRM
@@ -138,14 +153,17 @@
   L’authenticité complète du dataset n’est pas confirmée indépendamment à ce stade, mais la structure détaillée des champs et la cohérence CRM renforcent la crédibilité potentielle de la fuite revendiquée.
 
 #### 🇹🇳 Tunisie - NSSTunis [Fuite de données]
+- **Date de publication initiale :** 2 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Services / CRM
 - **Site web :** [nsstunis.com](https://www.nsstunis.com/)
 - **Statut :** Claim - Unverified
 - **Description :** ~312 000 enregistrements : noms, emails, téléphones, infos familiales, centres d’intérêt, statuts marketing, données démographiques.
 
-
 #### 🇪🇬 Égypte - Ain Shams University (ums.asu.edu.eg) [Fuite de données]
+- **Date de publication initiale :** 2 avril 2026
+
 - **Acteur / Groupe :** Grubder
 - **Secteur :** Éducation / Université
 - **Site web :** [ums.asu.edu.eg](https://ums.asu.edu.eg/)
@@ -153,8 +171,11 @@
 - **Description :** Ain Shams University est l’une des principales universités publiques d’Égypte, basée au Caire et reconnue pour ses programmes académiques et de recherche. Une base de données revendiquée sur un forum cybercriminel expose environ 563 000 enregistrements liés aux étudiants, aux inscriptions académiques et aux systèmes d’authentification. Les données mentionnées incluent notamment des informations personnelles, emails, numéros de téléphone, identifiants universitaires, détails d’inscription, programmes académiques, statuts financiers et éléments liés à la vérification d’identité et à l’authentification. L’analyse préliminaire suggère l’exposition d’une base backend universitaire utilisée pour la gestion des étudiants, des inscriptions et des mécanismes de vérification académique.
 ---
 
-### 03 Avril 2026
+### 03 avril 2026
+
 #### 🇪🇬 Égypte - United Finance Egypt [Ransomware]
+- **Date de publication initiale :** 3 avril 2026
+
 - **Groupe ransomware :** payload
 - **Secteur :** Finance
 - **Site web :** [uf-eg.com](https://uf-eg.com)
@@ -163,8 +184,11 @@
 
 ---
 
-### 04 Avril 2026
+### 04 avril 2026
+
 #### 🇧🇼 Botswana - lkc.ac.bw [Ransomware]
+- **Date de publication initiale :** 4 avril 2026
+
 - **Groupe ransomware :** krybit
 - **Secteur :** Établissements académiques
 - **Site web :** [lkc.ac.bw](https://lkc.ac.bw)
@@ -172,6 +196,8 @@
 - **Description :** Livingstone Kolobeng College, école secondaire privée à Gaborone.
 
 #### 🇪🇬 Égypte - AUG Pharma [Ransomware]
+- **Date de publication initiale :** 4 avril 2026
+
 - **Groupe ransomware :** dragonforce
 - **Secteur :** Industrie pharmaceutique
 - **Site web :** [augpharma.com](https://augpharma.com)
@@ -179,6 +205,8 @@
 - **Description :** Société pharmaceutique égyptienne.
 
 #### 🇦🇴 🇿🇦 🇳🇬 Afrique - Fuite de données gouvernementales et accès administrateurs [Fuite de données]
+- **Date de publication initiale :** 4 avril 2026
+
 
 - **Acteur / Groupe :** superduper1
 - **Secteur :** Gouvernement / Défense / Santé / Renseignement
@@ -207,43 +235,12 @@
   Aucun élément technique ne permet actuellement de confirmer indépendamment l’authenticité des accès revendiqués.
 
 ---
-### 05 Avril 2026
-#### 🇸🇳 Sénégal - Direction Générale de la Comptabilité Publique et du Trésor (DGCPT) [Vente d'accès]
 
-- **Acteur / Groupe :** w00l_ysh1
-- **Secteur :** Gouvernement / Finances publiques
-- **Site web :** [sentresor.org](https://www.sentresor.org/)
-- **Statut :** Claim - Unverified
-- **Date de publication initiale :** 08 Mars 2026
-- **Date de découverte :** 05 Avril 2026
+### 06 avril 2026
 
-- **Description :** Une publication sur un forum cybercriminel revendique la vente d’accès à l’infrastructure de la Direction Générale de la Comptabilité Publique et du Trésor (DGCPT) du Sénégal.
-
-- **Accès revendiqués :**
-  - identifiants VPN
-  - accès administrateur Windows Server
-  - accès Domain Controller (DC)
-  - accès à un réseau de plus de 200 machines
-  - accès à des bases financières et serveurs internes
-
-- **Tarification observée :**
-  - accès VPN : 500 USD
-  - accès administrateur à deux serveurs : 2 000 USD
-  - accès Domain Controller : 15 000 USD
-
-- **Analyse CTI :**
-  Les éléments publiés suggèrent potentiellement une compromission avancée d’un environnement gouvernemental financier. Un accès Domain Controller pourrait permettre :
-  - mouvement latéral,
-  - persistance,
-  - exfiltration de données,
-  - déploiement de ransomware,
-  - ou compromission complète de l’Active Directory.
-
-- **Note CTI :**
-  Aucun élément technique indépendant ne permet actuellement de confirmer l’authenticité des accès revendiqués. Toutefois, la présence d’offres segmentées (VPN, serveurs, DC) correspond aux modes opératoires observés sur les marchés d’accès initiaux (Initial Access Brokers).
----
-### 06 Avril 2026
 #### 🇪🇬 Égypte - gas.mercedes-benz.com.eg [Ransomware]
+- **Date de publication initiale :** 6 avril 2026
+
 - **Groupe ransomware :** lockbit5
 - **Secteur :** Automobile
 - **Site web :** [gas.mercedes-benz.com.eg](https://gas.mercedes-benz.com.eg)
@@ -251,6 +248,8 @@
 - **Description :** Concessionnaire Mercedes‑Benz agréé à Gizeh.
 
 #### 🇳🇬 Nigeria - Welfare.org.ng [Fuite de données]
+- **Date de publication initiale :** 6 avril 2026
+
 - **Acteur / Groupe :** Citizen / NormalLeVrai
 - **Secteur :** ONG / Aide sociale
 - **Site web :** [welfare.org.ng](https://welfare.org.ng/)
@@ -259,15 +258,21 @@
 
 ---
 
-### 08 Avril 2026
+### 08 avril 2026
+
 #### 🇪🇬 Égypte - El Wastani Petroleum Company (WASCO) [Ransomware]
+- **Date de publication initiale :** 8 avril 2026
+
 - **Groupe ransomware :** payload
 - **Secteur :** Pétrole
-- **Site web :** [egyptoil-gas.com](https://egyptoil-gas.com)
+- **Site web officiel :** Non identifié avec certitude
+- **Référence publique :** [EGAS - visite des champs de WASCO](https://www.egas.com.eg/ar/w/egas-chairman-visits-wasatani-fields-to-follow-up-on-production-drilling-and-exploration-programs-and-strengthen-partnership-with-dana-gas)
 - **Statut :** Claim - Unverified
 - **Description :** Exploration, production et traitement de gaz naturel dans le delta du Nil et le Sinaï Nord.
 
 #### 🇪🇬 Égypte - ACE Consulting Engineers [Ransomware]
+- **Date de publication initiale :** 8 avril 2026
+
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Conseil en ingénierie
 - **Site web :** [ace-mb.com](https://ace-mb.com)
@@ -275,6 +280,8 @@
 - **Description :** Cabinet d’ingénierie international fondé en 1950, présent dans plus de 35 pays.
 
 #### 🇲🇦 Maroc - CNOPS [Fuite de données]
+- **Date de publication initiale :** 8 avril 2026
+
 - **Acteur / Groupe :** JBT2026 (relayé par Jabaroot)
 - **Secteur :** Santé / Assurance maladie / Administration publique
 - **Site web :** [cnops.org.ma](https://www.cnops.org.ma/)
@@ -283,8 +290,39 @@
 
 ---
 
-### 09 Avril 2026
+#### 🇩🇿 Algérie - Administration publique non identifiée (accès Fortinet)
+- **Date de publication initiale :** 8 avril 2026
+
+
+- **Acteur / Groupe :** AckLine, publication sur un forum cybercriminel
+- **Secteur :** Gouvernement / Administration publique
+- **Site web :** Non identifié avec certitude
+- **Statut AFRINTEL :** Claim - Unverified
+- **Type d'incident :** Vente d’accès
+- **Niveau de confiance :** Faible
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+La publication propose la vente d'un accès présenté comme lié à des équipements Fortinet, associé à une administration algérienne non identifiée, avec des coordonnées de contact fournies via qTox. Aucune organisation précise, aucun domaine, aucun prix chiffré ni aucune preuve technique ne sont divulgués.
+
+- **Analyse :**
+
+L'acteur AckLine a publié une annonce succincte proposant un accès décrit uniquement comme « Fortinet » et associé à « Algeria gov », sans nommer de ministère, d'agence ou de domaine précis. L'annonce ne donne aucun prix chiffré (« $$$ offer price »), aucun échantillon de données, et aucune preuve technique d'accès telle qu'une capture d'écran d'une console de gestion, d'un portail VPN ou d'une configuration. La négociation est orientée vers un contact qTox externe, ce qui correspond aux annonces classiques de courtiers en accès mais ne confirme pas en soi que l'accès proposé est réel.
+
+En l'absence de victime nommée, de preuve vérifiable ou de détail de prix, cette revendication est évaluée avec un niveau de confiance faible. Si elle s'avérait authentique, un accès non autorisé à un équipement Fortinet (pare-feu/VPN) appartenant à une administration algérienne pourrait permettre une intrusion réseau, des mouvements latéraux et la compromission d'autres systèmes connectés.
+
+- **Recommandations :**
+
+1. Les administrations algériennes devraient auditer les équipements Fortinet exposés, appliquer les correctifs de sécurité disponibles et examiner les journaux d'accès VPN/pare-feu à la recherche d'activités anormales.
+2. Surveiller les forums cybercriminels et les annonces de courtiers en accès mentionnant des infrastructures gouvernementales algériennes, afin de détecter d'éventuelles publications complémentaires permettant de confirmer ou de préciser la cible.
+---
+
+### 09 avril 2026
+
 #### 🇸🇨 Seychelles - egov.sc [Ransomware]
+- **Date de publication initiale :** 9 avril 2026
+
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Administrations publiques
 - **Site web :** [egov.sc](https://egov.sc)
@@ -292,6 +330,8 @@
 - **Description :** Portail officiel e‑gouvernement des Seychelles.
 
 #### 🇿🇦 Afrique du Sud - megasurf.co.za [Ransomware]
+- **Date de publication initiale :** 9 avril 2026
+
 - **Groupe ransomware :** krybit
 - **Secteur :** Fournisseurs d’accès Internet
 - **Site web :** [megasurf.co.za](https://megasurf.co.za)
@@ -300,8 +340,87 @@
 
 ---
 
-### 12 Avril 2026
+### 10 avril 2026
+
+#### 🇩🇿 Algérie - Université Hassiba Ben Bouali de Chlef (univ-chlef.dz)
+- **Date de publication initiale :** 10 avril 2026
+
+
+- **Acteur / Groupe :** Phantom Atlas
+- **Secteur :** Éducation / Enseignement supérieur
+- **Site web :** [univ-chlef.dz](https://www.univ-chlef.dz)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+  L'Université Hassiba Ben Bouali de Chlef est un établissement public algérien d'enseignement supérieur, composé de neuf facultés et deux instituts.
+
+- **Analyse :**
+
+  Phantom Atlas a publié le 10 avril 2026 une revendication d'accès à l'interface phpMyAdmin du serveur de l'université, adressée directement au directeur de l'établissement et présentée comme une dénonciation de « défaillances de gouvernance interne » plutôt qu'un simple exploit technique. Le texte de la publication fait lui-même référence à un accès obtenu et maintenu depuis le 8 novembre 2025. La publication affirme disposer d'un accès complet aux panneaux d'administration et aux bases de données étudiantes, tout en indiquant explicitement ne pas vouloir divulguer les données des étudiants. Un second message publié après la mise en maintenance du site réitère la revendication d'un accès prolongé et menace de nouvelles révélations.
+
+  L'analyse des données visibles identifie deux bases distinctes présentées via phpMyAdmin sur univ-chlef.dz. La première correspond à une base de site web de type CMS (préfixe de tables `refx_`, incluant des tables de publications, commentaires, utilisateurs et métadonnées SEO), totalisant 15 tables pour environ 152,5 Mio. La seconde correspond à une base de gestion administrative du personnel (19 tables, dont `ats`, `att_travail`, `fiche_paie`, `personne`, `grade`, `print_badge`), totalisant environ 13 630 lignes pour 1,7 Mio. Un extrait visible de la table `ats` affiche des enregistrements nominatifs du personnel incluant nom et prénom en français et en arabe, genre, grade professionnel, date et lieu de naissance, une référence de photo, une date de nomination, un code de faculté d'affectation et un mot de passe sous forme de hachage hexadécimal à 40 caractères.
+
+  La cohérence de l'interface visible, des noms de tables et des champs, ainsi que la mise en maintenance du site peu après la publication, soutient avec un niveau de confiance élevé que les éléments publiés représentent de façon plausible un environnement de base de données universitaire. Elle n'établit pas indépendamment la méthode d'accès, la persistance de cet accès ni l'accessibilité de toutes les bases revendiquées. Les données visibles sur le personnel, incluant des dates de naissance et des mots de passe hachés, présentent un risque d'usurpation d'identité, de compromission de comptes en cas de réutilisation de mots de passe et de phishing ciblé. L'analyse est limitée aux éléments visibles, car les exports originaux n'étaient pas disponibles ; AFRINTEL ne reproduit aucun nom, date de naissance, lieu de naissance, référence de photo ni valeur de hachage.
+
+### 11 avril 2026
+
+#### 🇸🇩 Soudan - Site de la Rapid Support Force
+- **Date de publication initiale :** 11 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [rapidsupportforce.com](https://rapidsupportforce.com)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Orange Egypt
+- **Date de publication initiale :** 11 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Télécommunications
+- **Type d incident :** DDoS
+- **Site web :** [orange.eg](https://orange.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Telecom Egypt
+- **Date de publication initiale :** 11 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Télécommunications
+- **Type d incident :** DDoS
+- **Site web :** Non précisé
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 12 avril 2026
+
 #### 🇲🇦 Maroc - OFPPT [Fuite de données]
+- **Date de publication initiale :** 12 avril 2026
+
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Formation professionnelle / Éducation
 - **Site web :** [ofppt.ma](https://www.ofppt.ma)
@@ -309,6 +428,8 @@
 - **Description :** Principal organisme de formation professionnelle au Maroc. Données exposées : noms, téléphones, emails, CNI, code Massar, ville, statut, logs d’activité.
 
 #### 🇲🇦 Maroc - Documents d’identité marocains (Passeports/KYC) [Fuite de données]
+- **Date de publication initiale :** 12 avril 2026
+
 - **Acteur / Groupe :** Arnoldsudney
 - **Secteur :** Identité numérique / Documents officiels
 - **Site web :** N/A
@@ -317,8 +438,107 @@
 
 ---
 
-### 13 Avril 2026
+#### 🇪🇬 Égypte - Portail du gouvernement égyptien
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [egypt.gov.eg](https://egypt.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Ministère des Finances
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [mof.gov.eg](https://mof.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Ministère de la Justice
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [jp.gov.eg](https://jp.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Ministère du Commerce et de l Industrie
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [mti.gov.eg](https://mti.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Ministère du Pétrole et des Ressources minérales
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [petroleum.gov.eg](https://petroleum.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+#### 🇪🇬 Égypte - Service d Information de l État égyptien
+- **Date de publication initiale :** 12 avril 2026
+
+
+- **Acteur / Groupe :** Keymous+
+- **Secteur :** Government / Administration
+- **Type d incident :** DDoS
+- **Site web :** [sis.gov.eg](https://sis.gov.eg)
+- **Statut :** Claim - Unverified
+
+- **Description :**
+  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+
+- **Analyse :**
+  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+
+### 13 avril 2026
+
 #### 🇰🇪 Kenya - ifmis.go.ke [Ransomware]
+- **Date de publication initiale :** 13 avril 2026
+
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Administration centrale
 - **Site web :** [ifmis.go.ke](https://ifmis.go.ke)
@@ -326,7 +546,9 @@
 - **Description :** Système intégré de gestion des informations financières du Kenya.
 
 #### 🇲🇦 Maroc - GET / GENERAL ELECTRIC TRADING (gemaroc.com) [Fuite de données]
-- **Acteur / Groupe :**  bxxxx1 
+- **Date de publication initiale :** 13 avril 2026
+
+- **Acteur / Groupe :**  bxxxx1
 - **Secteur :** Services industriels / Infrastructure IT
 - **Site web :** [gemaroc.com](https://gemaroc.com/)
 - **Statut :** Claim - Data Sample Published
@@ -334,16 +556,20 @@
 
 ---
 
-### 14 Avril 2026
+### 14 avril 2026
+
 #### 🇬🇭 Ghana - International Maritime Hospital [Ransomware]
+- **Date de publication initiale :** 14 avril 2026
+
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Services de santé
 - **Site web :** [imah.gov.gh](https://imah.gov.gh)
 - **Statut :** Claim - Unverified
 - **Description :** Hôpital public à Tema, spécialisé en santé maritime et générale.
 
-
 #### 🇲🇦 Maroc - Base attribuée au personnel du Palais Royal (Dar El Makhzen) [Fuite de données]
+- **Date de publication initiale :** 14 avril 2026
+
 
 - **Acteur / Groupe :** Rihana
 - **Secteur :** Gouvernement / Maison Royale
@@ -385,16 +611,20 @@
 
 ---
 
-### 16 Avril 2026
+### 16 avril 2026
+
 #### 🇪🇬 Égypte - orientalweavers.com [Ransomware]
+- **Date de publication initiale :** 16 avril 2026
+
 - **Groupe ransomware :** payload
 - **Secteur :** Industrie manufacturière
 - **Site web :** [orientalweavers.com](https://orientalweavers.com)
 - **Statut :** Claim - Unverified
 - **Description :** Un des plus grands fabricants de tapis et moquettes au monde, basé au Caire.
 
-
 #### 🇰🇪 Kenya - Kenya Airports Authority (KAA) [Fuite de données]
+- **Date de publication initiale :** 16 avril 2026
+
 
 - **Acteur / Groupe :** RubiconH4ck
 - **Secteur :** Aviation / Transport / Infrastructure critique
@@ -403,8 +633,58 @@
 - **Description :** Kenya Airports Authority (KAA) est l’organisme public kényan chargé de la gestion et de l’exploitation des principaux aéroports du pays, incluant les infrastructures aériennes stratégiques et les services associés. Une publication sur un forum cybercriminel revendique la vente d’environ 2 To de données attribuées à l’organisation. L’acteur affirme que les données incluent des systèmes d’information, des données utilisateurs, des services internes ainsi que des adresses complètes d’utilisateurs. L’annonce suggère une compromission potentielle d’infrastructures critiques liées au secteur aérien kényan. Bien que les éléments publiquement exposés restent limités, le volume revendiqué et la nature des informations mentionnées pourraient représenter un risque significatif pour la sécurité opérationnelle, la confidentialité des données et les infrastructures associées au transport aérien.
 ---
 
-### 19 Avril 2026
+#### 🇩🇿 Algérie - ATS (Algérie Télécom Satellite)
+- **Date de publication initiale :** 16 avril 2026
+
+
+- **Acteur / Groupe :** Phantom Atlas
+- **Secteur :** Télécommunications / Opérateur satellitaire
+- **Site web :** [ats.dz](https://www.ats.dz)
+- **Statut AFRINTEL :** Claim - Data Sample Published
+- **Type d'incident :** Fuite de données
+- **Niveau de confiance :** Élevé
+- **Niveau d'impact :** Niveau 3
+
+- **Description :**
+
+  ATS (Algérie Télécom Satellite) est l'opérateur satellitaire algérien, filiale du groupe Algérie Télécom, fournissant des services de télécommunications par satellite à l'échelle nationale.
+
+- **Analyse :**
+
+  Phantom Atlas a publié le 16 avril 2026 une revendication de compromission complète des systèmes numériques d'ATS, affirmant détenir les bulletins de paie de l'ensemble des employés de l'entreprise. Le message adopte une tonalité hacktiviste explicitement pro-marocaine (reprise du slogan royal marocain « Allah, Al Watan, Al Malik »), présentant l'opération comme une réponse directe à des attaques informatiques antérieures visant le Maroc, et annonce la publication prochaine d'un échantillon de bulletins de paie ainsi que des noms et postes du personnel.
+
+  AFRINTEL a examiné un échantillon local de 88 fichiers (environ 29 Mo), majoritairement des bulletins de paie individuels au format image, datés de juillet 2023 à novembre 2024, ainsi que quelques captures plus récentes. Les bulletins examinés concernent des employés de différentes directions régionales d'ATS (Direction Régionale Est-Constantine, Direction Sud-Est, entre autres) et affichent une structure cohérente : numéro d'employeur, matricule, nom et prénom, date d'entrée en fonction, situation familiale, numéro de sécurité sociale, fonction et catégorie/échelon, ainsi qu'un détail complet des rubriques de salaire (gains et retenues), l'assiette de cotisations sociales, le salaire imposable, le numéro de compte bancaire et le montant net à payer. Plusieurs documents portent des cachets authentiques de la Direction des Ressources Humaines ou de directions régionales d'ATS.
+
+  La cohérence du format sur l'ensemble de l'échantillon, la diversité des employés, directions et périodes représentées, ainsi que la présence de cachets officiels plausibles, soutiennent un niveau de confiance élevé quant à l'authenticité de cette fuite. L'exposition de bulletins de paie nominatifs, incluant numéros de sécurité sociale et coordonnées bancaires, présente un risque élevé de fraude financière, d'usurpation d'identité et de phishing ciblé contre le personnel d'ATS. AFRINTEL ne reproduit aucun nom, matricule, numéro de sécurité sociale, numéro de compte ni montant de salaire issus de l'échantillon examiné.
+
+### 18 avril 2026
+
+#### 🇿🇦 Afrique du Sud - Ahmed Al-Kadi Private Hospital
+- **Date de publication initiale :** 18 avril 2026
+
+
+- **Date de l'incident :** 18 avril 2026
+- **Acteur / Groupe :** Non attribué publiquement
+- **Secteur :** Santé / Hôpital privé
+- **Statut :** Victim Confirmed
+- **Type d'incident :** Ransomware
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description :** **Ahmed Al-Kadi Private Hospital** est un hôpital privé de **Mayville, à Durban**, en Afrique du Sud. Développé par l'**Islamic Medical Association of South Africa**, l'établissement a ouvert en 2017 et indique disposer de **163 lits**, avec des activités de soins hospitaliers et des spécialités médicales et chirurgicales. Sa mission déclarée est d'accueillir les patients sans distinction d'origine ou de religion ([site officiel](https://ahmedalkadi.com/about-us/)).
+
+- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** l’hôpital annonce un accès non autorisé le 18 avril 2026, suivi du déploiement d’un ransomware ayant chiffré une partie de son environnement ; notification POPIA et signalement au régulateur. L’incident n’est pas daté de septembre.
+
+- **Sources de vérification complémentaires :** [Source 1](https://ahmedalkadi.com/notification-of-data-incident/)
+
+- **Sources / Éléments de preuve :** [Notification officielle de l'hôpital](https://ahmedalkadi.com/notification-of-data-incident/)
+
+L'hôpital a confirmé qu'un tiers avait accédé à son environnement informatique et déployé un ransomware le 18 avril. Une partie de l'environnement a été chiffrée, puis contenue et restaurée avec l'aide de spécialistes externes. Le vecteur, l'étendue du chiffrement et l'exfiltration restent inconnus.
+
+### 19 avril 2026
+
 #### 🇿🇦 Afrique du Sud - Sunspray Food [Ransomware]
+- **Date de publication initiale :** 19 avril 2026
+
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Agroalimentaire
 - **Site web :** [sunspray.co.za](https://sunspray.co.za)
@@ -412,25 +692,19 @@
 - **Description :** Plus grand fabricant sud‑africain d’ingrédients alimentaires lyophilisés.
 
 #### 🇲🇦 Maroc - Al Barid Bank [Fuite de données]
+- **Date de publication initiale :** 19 avril 2026
+
 - **Acteur / Groupe :** Sejjil
 - **Secteur :** Banque / Services financiers
 - **Site web :** [albaridbank.ma](https://www.albaridbank.ma/)
 - **Statut :** Claim - Data Sample Published
 - **Description :** Logs financiers internes (2025) avec transferts instantanés, prélèvements, informations d’agences, numéros de téléphone.
 
-#### 🇲🇦 Maroc - Chezpara.ma [Fuite de données]
-- **Acteur / Groupe :** Richard2002
-- **Secteur :** Pharmacie en ligne / E‑commerce santé
-- **Site web :** [chezpara.ma](https://chezpara.ma/)
-- **Statut :** Claim - Unverified
-- **Date de publication initiale :** 23 Février 2026
-- **Date de découverte :** 19 Avril 2026
-- **Description :** ~400 000 enregistrements clients : noms, téléphones, adresses détaillées, infos de livraison, commentaires de commandes.
+### 20 avril 2026
 
----
-
-### 20 Avril 2026
 #### 🇪🇬 Égypte - Better House [Ransomware]
+- **Date de publication initiale :** 20 avril 2026
+
 - **Groupe ransomware :** payload
 - **Secteur :** Construction
 - **Site web :** [betterhouse-eg.com](https://betterhouse-eg.com)
@@ -438,6 +712,8 @@
 - **Description :** Promoteur immobilier égyptien (plus de 150 projets).
 
 #### 🇲🇦 Maroc - SUPTECH SANTÉ [Fuite de données]
+- **Date de publication initiale :** 20 avril 2026
+
 - **Acteur / Groupe :** xNov
 - **Secteur :** Éducation / Formation / Technologies de santé
 - **Site web :** suptech-sante.ma
@@ -446,15 +722,20 @@
 
 ---
 
-### 21 Avril 2026
+### 21 avril 2026
+
 #### 🇲🇦 Maroc - LNM6 (Laboratoire National Mohammed VI) [Fuite de données]
-- **Acteur / Groupe :** anisanas2 
+- **Date de publication initiale :** 21 avril 2026
+
+- **Acteur / Groupe :** anisanas2
 - **Secteur :** Santé / Laboratoire médical
 - **Site web :** N/A
 - **Statut :** Claim - Data Sample Published
 - **Description :** Rapports médicaux PDF exposés : identité complète, résultats biologiques (VIH, HPV, IST, tuberculose, hormonaux, génétique), données pédiatriques et néonatales.
 
 #### 🇳🇬 Nigeria - Federal Housing Authority (FHA) [Fuite de données]
+- **Date de publication initiale :** 21 avril 2026
+
 - **Acteur / Groupe :** 0xLei / Nullsec
 - **Secteur :** Administration publique / Immobilier
 - **Site web :** [fha.gov.ng](https://www.fha.gov.ng/)
@@ -462,6 +743,8 @@
 - **Description :** ~170 Mo de code source, fichiers backend, configurations.
 
 #### 🇳🇬 Nigeria - EFCC [Fuite de données]
+- **Date de publication initiale :** 21 avril 2026
+
 - **Acteur / Groupe :** ki4t / Nullsec Nigeria
 - **Secteur :** Application de la loi / Anti‑corruption
 - **Site web :** [efcc.gov.ng](https://www.efcc.gov.ng/)
@@ -469,6 +752,8 @@
 - **Description :** Comptes utilisateurs, emails, téléphones, rôles internes, hashs bcrypt, IP internes, données d’agents.
 
 #### 🇲🇦 Maroc - Fédération Royale Marocaine de Football (FRMF) [Fuite de données]
+- **Date de publication initiale :** 21 avril 2026
+
 - **Acteur / Groupe :** MDGhost
 - **Secteur :** Sport
 - **Site web :** [frmf.ma](https://frmf.ma/)
@@ -476,55 +761,30 @@
 - **Description :** 1,2 To de données à vendre (10 000 USD). Échantillons : gestion des licences, identités, adresses, téléphones, données de mineurs.
 
 #### 🇲🇦 Maroc - Pharmacie.ma [Fuite de données]
+- **Date de publication initiale :** 21 avril 2026
+
 
 - **Acteur / Groupe :** Tanaka
 - **Secteur :** Santé / Pharmacie / E-health
 - **Site web :** [pharmacie.ma](https://www.pharmacie.ma)
 - **Statut :** Claim - Data Sample Published
-- **Date de découverte :** 21 Avril 2026
-- **Description victime :**  
+- **Description victime :**
   Pharmacie.ma est un portail marocain spécialisé dans les informations pharmaceutiques, les médicaments et les contenus liés à la santé. La plateforme cible notamment les pharmaciens, étudiants en pharmacie et utilisateurs recherchant des informations médicales au Maroc.
 
-- **Description de la fuite :**  
+- **Description de la fuite :**
   Le 27 janvier 2026, un utilisateur nommé “Tanaka” a publié sur un forum clandestin une revendication attribuée au groupe “Karuhunters”, affirmant qu’une compromission survenue le 29 septembre 2025 aurait entraîné l’exfiltration d’environ 41 772 enregistrements utilisateurs associés à Pharmacie.ma.
 
-- **Analyse des échantillons :**  
+- **Analyse des échantillons :**
   Les échantillons SQL analysés contiennent des adresses email, noms, numéros de téléphone, profils “pharmacy_student”, informations géographiques et statuts de comptes utilisateurs.
 
-- **Note CTI :**  
-  Les données observées semblent correspondre à une base utilisateurs historique associée à Pharmacie.ma. Le volume exact revendiqué reste non vérifié indépendamment.
-#### 🇲🇦 Maroc - Al Akhawayn University (AUI) [Fuite de données]
-
-- **Acteur / Groupe :** anisanas2
-- **Secteur :** Éducation / Université
-- **Site web :** [Al Akhawayn University (AUI)](https://aui.ma/)
-- **Statut :** Claim - Unverified
-- **Date de publication initiale :** 08 Février 2026
-- **Date de découverte :** 21 Avril 2026
-
-- **Description :** Une publication sur un forum cybercriminel revendique la divulgation d’une base de données attribuée à Al Akhawayn University (AUI), université marocaine située à Ifrane et reconnue comme l’un des établissements académiques les plus prestigieux du pays.
-
-- **Analyse CTI :**
-  L’acteur affirme que le précédent leak attribué à AUI était “fabriqué” et présente cette nouvelle base comme “authentique et vérifiée”.
-
-  Les éléments observés suggèrent une compromission potentielle d’environnements académiques ou administratifs liés à :
-  - étudiants,
-  - comptes utilisateurs,
-  - bases administratives,
-  - ou systèmes universitaires internes.
-
-  Ce type de fuite peut exposer :
-  - données personnelles étudiantes,
-  - emails institutionnels,
-  - informations académiques,
-  - accès internes,
-  - ou identifiants réutilisables dans d’autres systèmes.
-
 - **Note CTI :**
-  L’authenticité complète du dataset n’est pas confirmée indépendamment à ce stade. Toutefois, l’université ciblée est une institution stratégique du paysage académique marocain, ce qui augmente les risques de spear phishing ciblé, compromission de comptes universitaires et attaques BEC contre étudiants, enseignants ou personnel administratif.
----
-### 22 Avril 2026
+  Les données observées semblent correspondre à une base utilisateurs historique associée à Pharmacie.ma. Le volume exact revendiqué reste non vérifié indépendamment.
+
+### 22 avril 2026
+
 #### 🇲🇦 Maroc - Equatorial Coca-Cola Bottling [Ransomware]
+- **Date de publication initiale :** 22 avril 2026
+
 - **Groupe ransomware :** worldleaks
 - **Secteur :** Agroalimentaire
 - **Site web :** [eccbc.com](https://eccbc.com)
@@ -533,8 +793,11 @@
 
 ---
 
-### 25 Avril 2026
+### 25 avril 2026
+
 #### 🇧🇯 Bénin - CNSS Bénin [Fuite de données]
+- **Date de publication initiale :** 25 avril 2026
+
 
 - **Acteur / Groupe :** NormalLeVrai
 - **Secteur :** Gouvernement / Sécurité sociale
@@ -556,8 +819,12 @@
 - **Analyse CTI :**
   Les éléments publiés suggèrent une opération automatisée de scraping de messagerie et d’extraction massive de pièces jointes. Les données exposées présentent un risque élevé d’usurpation d’identité, fraude sociale, spear phishing et exploitation de données sensibles liées aux assurés et retraités.
 ---
-### 26 Avril 2026
+
+### 26 avril 2026
+
 #### 🇪🇬 Égypte - EEC Group [Ransomware]
+- **Date de publication initiale :** 26 avril 2026
+
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie manufacturière
 - **Site web :** [eecegypt.com](https://eecegypt.com)
@@ -565,6 +832,8 @@
 - **Description :** Conglomérat égyptien d’ingénierie, construction et structures métalliques.
 
 #### 🇲🇦 Maroc - Centre Régional d’Investissement Rabat‑Salé‑Kénitra (CRI) [Fuite de données]
+- **Date de publication initiale :** 26 avril 2026
+
 - **Acteur / Groupe :** kutam_dz
 - **Secteur :** Administration publique / Investissement / Juridique
 - **Site web :** [cri-rsk.ma](https://www.cri-rsk.ma/)
@@ -572,6 +841,8 @@
 - **Description :** Expose des données professionnelles (notaires) : noms, téléphones multiples, adresses postales, emails, province, profession.
 
 #### 🇹🇳 Tunisie - Tawjih.tn [Fuite de données]
+- **Date de publication initiale :** 26 avril 2026
+
 - **Acteur / Groupe :** mecrobyte
 - **Secteur :** Éducation / Orientation académique
 - **Site web :** [tawjih.tn](https://tawjih.tn/)
@@ -581,8 +852,11 @@
 
 ---
 
-### 27 Avril 2026
+### 27 avril 2026
+
 #### 🇪🇬 Égypte - alx-pc.com [Ransomware]
+- **Date de publication initiale :** 27 avril 2026
+
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Pétrole
 - **Site web :** [alx-pc.com](https://alx-pc.com)
@@ -590,6 +864,8 @@
 - **Description :** Alexandria Petroleum Company, raffinerie publique.
 
 #### 🇬🇭 Ghana - providentgh.com [Ransomware]
+- **Date de publication initiale :** 27 avril 2026
+
 - **Groupe ransomware :** apt73/bashe
 - **Secteur :** Gestion de patrimoine
 - **Site web :** [providentgh.com](https://providentgh.com)
@@ -597,6 +873,8 @@
 - **Description :** Compagnie d’assurance privée au Ghana.
 
 #### 🇺🇬 Ouganda - Ministère de l’Agriculture (E‑Extension) [Fuite de données]
+- **Date de publication initiale :** 27 avril 2026
+
 - **Acteur / Groupe :** vicmeow
 - **Secteur :** Administration publique / Agriculture
 - **Site web :** [extension.agriculture.go.ug](https://extension.agriculture.go.ug/)
@@ -604,6 +882,8 @@
 - **Description :** Plateforme agricole ougandaise. Expose emails, noms, téléphones, adresses, mots de passe faibles/en clair, token API SMS.
 
 #### 🇳🇬 Nigeria - Ministère du Commerce de l’État d’Oyo [Fuite de données]
+- **Date de publication initiale :** 27 avril 2026
+
 - **Acteur / Groupe :** AckLine
 - **Secteur :** Administration publique / Commerce
 - **Site web :** oyostate.gov.ng
@@ -612,310 +892,13 @@
 
 ---
 
-### 29 Avril 2026
-#### 🇲🇦 Maroc - planetsport.ma [Ransomware]
-- **Groupe ransomware :** lockbit5
-- **Secteur :** Sports
-- **Site web :** [planetsport.ma](https://planetsport.ma)
-- **Statut :** Claim - Unverified
-- **Description :** Leader marocain de la distribution d’articles de sport.
+### 28 avril 2026
 
-- **Analyse :**
-  AFRINTEL documente la publication d’avril comme une revendication ransomware LockBit 5 non vérifiée. Le même domaine, `planetsport.ma`, est apparu dans une publication substantielle de données attribuée à Mozvo en juillet 2026. Cette chronologie soulève l’hypothèse que les données de juillet aient été téléchargées puis republiées ou redistribuées gratuitement par un tiers après une exfiltration antérieure liée à LockBit, ou que Mozvo soit un affilié ou un opérateur associé. AFRINTEL ne dispose d’aucun élément prouvant une relation entre Mozvo et LockBit 5, et la revendication d’avril ne contient aucune preuve indépendante de chiffrement, d’exfiltration ou d’accès initial. Les entrées d’avril et de juillet sont conservées comme deux événements liés mais distincts, dans l’attente d’éléments complémentaires.
-
-#### 🇿🇲 Zambie - zsiclife.co.zm [Ransomware]
-- **Groupe ransomware :** krybit
-- **Secteur :** Services d’assurance
-- **Site web :** [zsiclife.co.zm](https://zsiclife.co.zm)
-- **Statut :** Claim - Unverified
-- **Description :** Assurance vie et gestion de patrimoine en Zambie.
-
-#### 🇲🇦 Maroc - Fédération Royale Marocaine de Tennis (FRMT) [Fuite de données]
-- **Acteur / Groupe :** Keymous
-- **Secteur :** Sports
-- **Site web :** [frmtennis.ma](https://frmtennis.ma/)
-- **Statut :** Claim - Unverified
-- **Description :** ~20 000 enregistrements de licenciés : noms, prénoms, clubs, sexe.
-
-#### 🇲🇦 Maroc - Liste de 4 millions d’adresses email marocaines [Fuite de données]
-- **Acteur / Groupe :** Rihana
-- **Secteur :** Données personnelles / Emailing / Marketing
-- **Site web :** N/A
-- **Statut :** Claim - Unverified
-- **Description :** Une publication sur un forum cybercriminel revendique le partage d’une liste contenant environ 4 millions d’adresses email attribuées à des utilisateurs marocains. L’acteur précise que les données seraient principalement destinées à des campagnes de spam et d’email marketing. L’annonce mentionne plusieurs domaines populaires utilisés au Maroc, notamment Gmail, Hotmail, Outlook, Yahoo et Menara.ma. Aucun organisme spécifique n’est directement identifié comme source de la fuite, ce qui suggère potentiellement une agrégation de données issues de multiples compromissions, collectes OSINT ou anciennes fuites de données. Ce type de dataset peut être exploité pour des campagnes de phishing, spam massif, credential stuffing ou ingénierie sociale ciblée.
-----------
-
-
-### 30 Avril 2026
-#### 🇹🇳 Tunisie - Exscape App [Fuite de données]
-
-- **Acteur / Groupe :** forrest
-- **Secteur :** Application mobile / Réseau social
-- **Statut :** Claim - Data Sample Published
-- **Date de fuite :** 17 Janvier 2026 (découverte en Avril 2026)
-
-- **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Exscape App contenant environ 5 000 profils utilisateurs tunisiens.
-
-- **Données observées :**
-  - noms et prénoms
-  - noms d’utilisateur
-  - emails
-  - numéros de téléphone
-  - dates de naissance
-  - sexe
-  - biographies utilisateurs
-  - coordonnées GPS
-  - niveaux d’abonnement
-  - catégories d’âge
-
-- **Analyse CTI :**
-  Les données exposées suggèrent une fuite issue d’une base applicative mobile/sociale avec présence d’informations de géolocalisation précises et de profils potentiellement mineurs (“TEEN15”). Les risques incluent doxxing, stalking numérique, phishing ciblé et corrélation d’identité via géolocalisation.
-
-- **Note CTI :**
-  L’authenticité complète du dataset n’est pas confirmée indépendamment, mais la structure observée est cohérente avec une base backend d’application mobile.
-  
-
-#### 🇩🇿 Algérie - Algeria Post [Fuite de données]
-
-- **Acteur / Groupe :** BlueEx
-- **Secteur :** Services postaux / Gouvernement / Télécommunications
-- **Site web :** [poste.dz](https://www.poste.dz/)
-- **Date de fuite :** 29 Janvier 2026 (découverte en Avril 2026)
-- **Statut :** Claim - Data Sample Published
-
-- **Description :** Une publication sur un forum cybercriminel revendique la vente de plus de 500 000 enregistrements attribués à Algeria Post. Les échantillons publiés incluent des informations personnelles associées à des citoyens algériens ainsi que des photographies de cartes nationales d’identité algériennes.
-
-- **Données observées :**
-  - noms et prénoms
-  - adresses email
-  - numéros de téléphone
-  - photographies de cartes d’identité nationales
-  - informations personnelles associées aux utilisateurs
-
-- **Analyse CTI :**
-  Les données publiées suggèrent une fuite impliquant des informations personnelles sensibles potentiellement liées à des services postaux ou administratifs algériens. La présence simultanée :
-  - d’informations de contact,
-  - de données d’identité,
-  - et de documents officiels
-
-  augmente fortement les risques :
-  - d’usurpation d’identité,
-  - de fraude administrative,
-  - de phishing ciblé,
-  - de SIM swapping,
-  - ou d’ouverture frauduleuse de comptes et services.
-
-- **Note CTI :**
-  L’authenticité complète du dataset ne peut pas être confirmée indépendamment à ce stade. Toutefois, la présence d’échantillons structurés, de données personnelles cohérentes et de photographies de documents d’identité augmente la crédibilité potentielle de la fuite revendiquée.
-  
-
-#### 🇿🇦 Afrique du Sud - Northern Cape Department of Roads & Public Works [Fuite de données]
-
-- **Acteur / Groupe :** wh6ami
-- **Secteur :** Gouvernement / Infrastructures publiques / Transport
-- **Site web :** *.gov.za
-- **Date de fuite :** 16 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Claim - Data Sample Published
-
-- **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée au Department of Roads & Public Works de la province du Northern Cape en Afrique du Sud. Les échantillons publiés contiennent des données issues de formulaires de contact et d’échanges administratifs liés aux infrastructures publiques, appels d’offres, stages, candidatures et demandes institutionnelles.
-
-- **Données observées :**
-  - noms et prénoms
-  - adresses email
-  - numéros de téléphone
-  - contenus complets de messages
-  - demandes liées aux appels d’offres
-  - candidatures et stages
-  - demandes fournisseurs
-  - informations liées aux infrastructures routières
-
-- **Analyse CTI :**
-  Les éléments observés suggèrent l’exposition d’une base backend de formulaires gouvernementaux et de communications administratives. Les données publiées pourraient être exploitées pour :
-  - spear phishing ciblé,
-  - fraude aux appels d’offres,
-  - usurpation d’identité,
-  - ou attaques BEC visant des fournisseurs et partenaires gouvernementaux.
-
-- **Note CTI :**
-  Les échantillons publiés montrent des échanges réels liés à des infrastructures publiques, fournisseurs, projets routiers et processus administratifs gouvernementaux. 
-
-
-#### 🇿🇦 Afrique du Sud - Buffalo City Metropolitan Municipality [Fuite de données]
-
-- **Acteur / Groupe :** wh6ami
-- **Secteur :** Gouvernement / Administration municipale
-- **Site web :** *.gov.za
-- **Date de fuite :** 13 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Claim - Data Sample Published
-
-- **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Buffalo City Metropolitan Municipality en Afrique du Sud. L’acteur affirme disposer d’un accès administrateur aux systèmes et publie plusieurs échantillons liés aux services municipaux, aux utilisateurs internes et aux journaux d’administration.
-
-- **Données observées :**
-  - noms et prénoms
-  - emails gouvernementaux
-  - numéros de téléphone
-  - départements internes
-  - rôles utilisateurs
-  - journaux de connexion
-  - actions administrateur
-  - données liées aux appels d’offres
-  - informations d’employés municipaux
-  - adresses de bureaux
-
-- **Analyse CTI :**
-  Les éléments publiés suggèrent l’exposition d’une base backend gouvernementale contenant données utilisateurs, journaux administratifs et informations liées aux services municipaux. Les journaux observés montrent notamment :
-  - créations/suppressions de comptes,
-  - modifications de mots de passe,
-  - connexions administrateur,
-  - publications de contenus et appels d’offres.
-
-  Les risques incluent :
-  - compromission de comptes gouvernementaux,
-  - spear phishing ciblé,
-  - fraude aux appels d’offres,
-  - ou exploitation d’accès administratifs persistants.
-
-- **Note CTI :**
-  Les échantillons publiés contiennent des données cohérentes avec une plateforme municipale opérationnelle ainsi que des journaux d’administration détaillés. 
- 
-#### 🇿🇦 Afrique du Sud - Pick n Pay ASAP / Bottles.com [Fuite de données]
-- **Acteur / Groupe :** p4pr1k4
-- **Secteur :** E-commerce / Livraison / Retail
-- **Site web :** [bottles.com](https://bottles.com)
-- **Date de fuite :** 23 Mars 2026 (découverte en Avril 2026)
-- **Statut :** Claim - Data Sample Published
-
-- **Description :** Une publication sur un forum cybercriminel revendique la vente d’une base de données attribuée à Bottles.com, devenu Pick n Pay ASAP après son acquisition par Pick n Pay. Les données publiées concernent des utilisateurs sud-africains de la plateforme de livraison.
-
-- **Données observées :**
-  - noms et prénoms
-  - emails
-  - numéros de téléphone
-  - dates de naissance
-  - mots de passe
-  - informations de cartes bancaires
-  - cartes VISA et Mastercard
-  - données 3DS
-  - adresses et historiques de livraison
-  - coordonnées GPS
-  - notes du service client
-
-- **Analyse CTI :**
-  Les échantillons publiés suggèrent l’exposition d’une base e-commerce sensible contenant données personnelles, historiques d’adresses et informations de paiement. Les risques incluent fraude bancaire, usurpation d’identité, phishing ciblé et compromission de comptes clients.
-
-- **Note CTI :**
-  Les données observées incluent des extraits SQL structurés, historiques d’adresses et informations liées aux cartes bancaires et systèmes 3DS. 
----
-
-#### 🇩🇿 Algérie - Inter Partner Assistance Algeria [Fuite de données]
-
-- **Acteur / Groupe :** dark07x
-- **Secteur :** Assurance / Assistance automobile / Services d’assistance
-- **Site web :** [ipassistance-dz.com](https://ipassistance-dz.com)
-- **Statut :** Claim - Data Sample Published
-- **Date de publication initiale :** 19 Janvier 2026
-- **Date de découverte :** 30 Avril 2026
-
-- **Description :** Une publication sur un forum cybercriminel revendique la compromission du site officiel d’Inter Partner Assistance Algeria, société spécialisée dans l’assistance automobile, santé, voyage et assurance.
-
-- **Éléments observés dans les documents divulgués :**
-  - constats amiables d’accidents automobiles,
-  - cartes nationales d’identité algériennes,
-  - informations d’assurance automobile,
-  - rapports d’expertise automobile,
-  - ordres de service CRMA,
-  - coordonnées personnelles,
-  - signatures et cachets officiels,
-  - numéros d’immatriculation,
-  - informations sur véhicules et conducteurs,
-  - documents administratifs internes.
-
-- **Analyse CTI :**
-  Les documents observés contiennent des données personnelles et administratives sensibles permettant potentiellement :
-  - usurpation d’identité,
-  - fraude à l’assurance,
-  - falsification documentaire,
-  - spear phishing ciblé,
-  - ou exploitation des informations administratives et véhicules.
-
-  Plusieurs artefacts montrent également l’exposition de scans de documents officiels et de dossiers liés à des sinistres automobiles réels.
-
-- **Note CTI :**
-  Les captures publiées semblent indiquer un accès à des portails internes et à des données clients/partenaires. L’authenticité complète de l’ensemble des accès revendiqués n’est toutefois pas confirmée indépendamment à ce stade.
-
-#### 🇩🇿 Algérie - Ligue Régionale de Football d’Alger (LRFA) / Foot’Up [Fuite de données]
-
-- **Acteur / Groupe :** dark07x
-- **Secteur :** Sport / Fédération sportive
-- **Site web :** [lrfa.org.dz](https:// lrfa.org.dz)
-- **Plateforme concernée :** Foot’Up
-- **Statut :** Claim - Data Sample Published
-- **Date de publication initiale :** 16 Janvier 2026
-- **Date de découverte :** 30 Avril 2026
-- **Description :** Une publication sur un forum cybercriminel revendique la compromission de la plateforme officielle de gestion de la Ligue Régionale de Football d’Alger (LRFA). L’acteur affirme avoir extrait des données liées à plusieurs clubs algériens ainsi qu’aux infrastructures administratives du football régional.
-
-- **Clubs mentionnés dans les artefacts :**
-  - Omar Ansar Club
-  - Wifaq Sour Ghozlane
-  - Chabab Amel Kouba
-
-- **Données observées dans les captures et documents divulgués :**
-  - cartes nationales d’identité,
-  - licences et documents sportifs,
-  - informations de joueurs,
-  - données d’entraîneurs et dirigeants,
-  - feuilles de matchs,
-  - documents administratifs,
-  - formulaires internes,
-  - signatures et cachets,
-  - interfaces d’administration Foot’Up,
-  - scans de documents personnels.
-
-- **Analyse CTI :**
-  Les éléments publiés suggèrent un accès à une plateforme centralisée de gestion sportive contenant des données administratives et personnelles sensibles liées à plusieurs clubs de football algériens.
-
-  Les captures d’écran montrent également :
-  - des accès au portail administratif Foot’Up,
-  - des répertoires contenant de nombreux scans de documents,
-  - ainsi que des fichiers potentiellement liés aux joueurs, dirigeants et structures sportives régionales.
-
-  Les données exposées peuvent favoriser :
-  - usurpation d’identité,
-  - fraude documentaire,
-  - spear phishing ciblé,
-  - compromission d’écosystèmes sportifs,
-  - ou exploitation d’informations administratives internes.
-
-- **Note CTI :**
-  L’acteur affirme disposer d’un accès étendu à l’infrastructure du football régional algérien. Toutefois, l’étendue exacte de la compromission et l’authenticité complète des accès revendiqués ne peuvent pas être confirmées indépendamment à ce stade.
-
-### 18 avril 2026 - intégré le 01 septembre 2026
-#### 🇿🇦 Afrique du Sud - Ahmed Al-Kadi Private Hospital
-
-- **Date de l'incident :** 18 avril 2026
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
-- **Acteur / Groupe :** Non attribué publiquement
-- **Secteur :** Santé / Hôpital privé
-- **Statut :** Victim Confirmed
-- **Type d'incident :** Ransomware
-- **Niveau de confiance :** Very High
-- **Niveau d'impact :** Level 4
-- **Description :** **Ahmed Al-Kadi Private Hospital** est un hôpital privé de **Mayville, à Durban**, en Afrique du Sud. Développé par l'**Islamic Medical Association of South Africa**, l'établissement a ouvert en 2017 et indique disposer de **163 lits**, avec des activités de soins hospitaliers et des spécialités médicales et chirurgicales. Sa mission déclarée est d'accueillir les patients sans distinction d'origine ou de religion ([site officiel](https://ahmedalkadi.com/about-us/)).
-
-- **Vérification indépendante au 18 octobre 2026 :** **Confirmation directe :** l’hôpital annonce un accès non autorisé le 18 avril 2026, suivi du déploiement d’un ransomware ayant chiffré une partie de son environnement ; notification POPIA et signalement au régulateur. L’incident n’est pas daté de septembre.
-
-- **Sources de vérification complémentaires :** [Source 1](https://ahmedalkadi.com/notification-of-data-incident/)
-
-- **Sources / Éléments de preuve :** [Notification officielle de l'hôpital](https://ahmedalkadi.com/notification-of-data-incident/)
-
-L'hôpital a confirmé qu'un tiers avait accédé à son environnement informatique et déployé un ransomware le 18 avril. Une partie de l'environnement a été chiffrée, puis contenue et restaurée avec l'aide de spécialistes externes. Le vecteur, l'étendue du chiffrement et l'exfiltration restent inconnus.
-
-### 28 avril 2026 - intégré le 01 septembre 2026
 #### 🇰🇪 Kenya - TikoHUB
+- **Date de publication initiale :** 28 avril 2026
+
 
 - **Date de l'incident :** 28 avril 2026 (date de publication de l'offre d'accès ; compromission initiale non établie)
-- **Date de découverte / intégration AFRINTEL :** 01 septembre 2026
-- **Date de publication initiale :** 28 avril 2026 à 23:26 (heure affichée ; fuseau non indiqué)
 - **Acteur / Groupe :** DarkMafiaX (compte affiché ; identité et affiliation non vérifiées)
 - **Secteur :** Billetterie / Événementiel / Services numériques
 - **Site web :** [tikohub.co.ke](https://www.tikohub.co.ke/)
@@ -951,139 +934,44 @@ L'hôpital a confirmé qu'un tiers avait accédé à son environnement informati
 
 - **Sources / Éléments de preuve :** capture fournie à AFRINTEL le 24 septembre 2026 ; site public [TikoHUB](https://www.tikohub.co.ke/).
 
-### Observations rétrospectives Keymous+ - avril 2026
+### 29 avril 2026
 
-### 11 avril 2026
-#### 🇸🇩 Soudan - Site de la Rapid Support Force
+#### 🇲🇦 Maroc - planetsport.ma [Ransomware]
+- **Date de publication initiale :** 29 avril 2026
 
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [rapidsupportforce.com](https://rapidsupportforce.com)
+- **Groupe ransomware :** lockbit5
+- **Secteur :** Sports
+- **Site web :** [planetsport.ma](https://planetsport.ma)
 - **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+- **Description :** Leader marocain de la distribution d’articles de sport.
 
 - **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+  AFRINTEL documente la publication d’avril comme une revendication ransomware LockBit 5 non vérifiée. Le même domaine, `planetsport.ma`, est apparu dans une publication substantielle de données attribuée à Mozvo en juillet 2026. Cette chronologie soulève l’hypothèse que les données de juillet aient été téléchargées puis republiées ou redistribuées gratuitement par un tiers après une exfiltration antérieure liée à LockBit, ou que Mozvo soit un affilié ou un opérateur associé. AFRINTEL ne dispose d’aucun élément prouvant une relation entre Mozvo et LockBit 5, et la revendication d’avril ne contient aucune preuve indépendante de chiffrement, d’exfiltration ou d’accès initial. Les entrées d’avril et de juillet sont conservées comme deux événements liés mais distincts, dans l’attente d’éléments complémentaires.
 
-### 11 avril 2026
-#### 🇪🇬 Égypte - Orange Egypt
+#### 🇿🇲 Zambie - zsiclife.co.zm [Ransomware]
+- **Date de publication initiale :** 29 avril 2026
 
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Télécommunications
-- **Type d incident :** DDoS
-- **Site web :** [orange.eg](https://orange.eg)
+- **Groupe ransomware :** krybit
+- **Secteur :** Services d’assurance
+- **Site web :** [zsiclife.co.zm](https://zsiclife.co.zm)
 - **Statut :** Claim - Unverified
+- **Description :** Assurance vie et gestion de patrimoine en Zambie.
 
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+#### 🇲🇦 Maroc - Fédération Royale Marocaine de Tennis (FRMT) [Fuite de données]
+- **Date de publication initiale :** 29 avril 2026
 
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 11 avril 2026
-#### 🇪🇬 Égypte - Telecom Egypt
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Télécommunications
-- **Type d incident :** DDoS
-- **Site web :** Non précisé
+- **Acteur / Groupe :** Keymous
+- **Secteur :** Sports
+- **Site web :** [frmtennis.ma](https://frmtennis.ma/)
 - **Statut :** Claim - Unverified
+- **Description :** ~20 000 enregistrements de licenciés : noms, prénoms, clubs, sexe.
 
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
+#### 🇲🇦 Maroc - Liste de 4 millions d’adresses email marocaines [Fuite de données]
+- **Date de publication initiale :** 29 avril 2026
 
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Portail du gouvernement égyptien
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [egypt.gov.eg](https://egypt.gov.eg)
+- **Acteur / Groupe :** Rihana
+- **Secteur :** Données personnelles / Emailing / Marketing
+- **Site web :** N/A
 - **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Ministère des Finances
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [mof.gov.eg](https://mof.gov.eg)
-- **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Ministère de la Justice
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [jp.gov.eg](https://jp.gov.eg)
-- **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Ministère du Commerce et de l Industrie
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [mti.gov.eg](https://mti.gov.eg)
-- **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Ministère du Pétrole et des Ressources minérales
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [petroleum.gov.eg](https://petroleum.gov.eg)
-- **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
-
-### 12 avril 2026
-#### 🇪🇬 Égypte - Service d Information de l État égyptien
-
-- **Acteur / Groupe :** Keymous+
-- **Secteur :** Government / Administration
-- **Type d incident :** DDoS
-- **Site web :** [sis.gov.eg](https://sis.gov.eg)
-- **Statut :** Claim - Unverified
-
-- **Description :**
-  Keymous+ a publié une revendication de disponibilité présentant le site ou le service comme indisponible.
-
-- **Analyse :**
-  Observé : un résultat Check-Host ou un test de disponibilité équivalent côté acteur a été publié les 11 ou 12 avril 2026. Inconnus : source du trafic, méthode DDoS, durée, impact indépendant sur le service et confirmation de la victime. L observation ne prouve pas indépendamment la réussite d un DDoS.
+- **Description :** Une publication sur un forum cybercriminel revendique le partage d’une liste contenant environ 4 millions d’adresses email attribuées à des utilisateurs marocains. L’acteur précise que les données seraient principalement destinées à des campagnes de spam et d’email marketing. L’annonce mentionne plusieurs domaines populaires utilisés au Maroc, notamment Gmail, Hotmail, Outlook, Yahoo et Menara.ma. Aucun organisme spécifique n’est directement identifié comme source de la fuite, ce qui suggère potentiellement une agrégation de données issues de multiples compromissions, collectes OSINT ou anciennes fuites de données. Ce type de dataset peut être exploité pour des campagnes de phishing, spam massif, credential stuffing ou ingénierie sociale ciblée.
+----------

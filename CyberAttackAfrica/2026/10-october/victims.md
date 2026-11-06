@@ -11,11 +11,13 @@
 
 **Monthly tracking status: Published / Publié**  -  corpus of 48 records published or first observed in October 2026. Monthly closure and statistics are published in the accompanying report.
 
-### October 1, 2026
+### October 01, 2026
 
 #### 🇨🇩 Democratic Republic of the Congo - ServerUnlockApp (`serverunlockapp.com`) [Data Leak]
+- **Initial publication date:** October 01, 2026
 
-- **Initial publication date:** 1 October 2026 at 13:32 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** SensitiveDarkForum (displayed forum/account; identity and affiliation unverified)
 - **Sector:** Digital services / Phone unlocking, activation and related services
 - **Website:** [serverunlockapp.com](https://serverunlockapp.com/)
@@ -46,8 +48,10 @@
 - **AFRINTEL assessment:** Publication observed; application backup provided and analysed; ServerUnlockApp attribution highly plausible; account and commercial data observed; potential secrets present but not tested; unauthorised access, complete exfiltration and current secret validity unconfirmed.
 
 #### 🇲🇦 Morocco - Midipcom
+- **Initial publication date:** October 01, 2026
 
-- **Initial publication date:** 1 October 2026 at 21:25 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Technology / IT equipment distribution
 - **Website:** [midipcom.ma](https://midipcom.ma/); `pro.midipcom.ma` cited in the publication
@@ -80,11 +84,13 @@
 
 - **Sources / Evidence:** forum publication and image supplied on 8 October 2026; six locally supplied CSV files analysed read-only; [Midipcom official website](https://midipcom.ma/). No forum link, data excerpt, identifier, contact, financial reference or secret is published.
 
-### October 2, 2026
+### October 02, 2026
 
 #### 🇲🇦 Morocco - Ministry of National Territory Planning, Land Planning, Housing and City Policy
+- **Initial publication date:** October 02, 2026
 
-- **Initial publication date:** 2 October 2026 at 15:20 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Government / Administration / Housing and urban planning
 - **Associated website:** [matnuhpv.gov.ma](https://matnuhpv.gov.ma/) (domain displayed by the actor in the publication; connection to the affected system unconfirmed)
@@ -118,8 +124,10 @@
 - **Sources / Evidence:** forum publication and visible sample supplied on 8 October 2026; [Moroccan decree on the ministry’s remit and organisation](https://bdj.mmsp.gov.ma/Fr/Document/10596-D%C3%A9cret-n-2-23-751-du-7-joumada-II-1445-21-d%C3%A9cemb.aspx?KeyPath=594%2F681%2F697%2F10596). No forum link or personal data is published.
 
 #### 🇲🇦 Morocco - Karamtech
+- **Initial publication date:** October 02, 2026
 
-- **Initial publication date:** 2 October 2026 at 00:51 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Technology / IT and security equipment retail and distribution
 - **Website:** [karamtech.ma](https://karamtech.ma/); `kmt.codebarre.ma` cited in the publication
@@ -155,8 +163,10 @@
 - **Sources / Evidence:** forum publication supplied on 8 October 2026; five locally supplied CSV files analysed read-only; [Karamtech official website](https://karamtech.ma/). No secret, password, token, bank value or individual data is published.
 
 #### 🇲🇦 Morocco - Ministry of Investment, Convergence and Evaluation of Public Policies (MICEPP)
+- **Initial publication date:** October 02, 2026
 
-- **Initial publication date:** 2 October 2026 at 23:55 (displayed forum timestamp; timezone not specified)
+
+
 - **Actor / Group:** anisanas2 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Government / Administration / Investment and public-policy evaluation
 - **Website:** [micepp.gov.ma](https://micepp.gov.ma/)
@@ -190,6 +200,9 @@
 - **Sources / Evidence:** forum and Telegram posts supplied on 9 October 2026. No download link, individual data, identifier, secret or archive is published.
 
 #### 🇿🇦 South Africa - Ampath Laboratories [Data Leak]
+- **Initial publication date:** October 02, 2026
+
+
 - **Public publication / notification date:** 2 October 2026
 - **Domain:** `ampath.co.za`
 - **Actor / Group:** bytetobreach (displayed publication account)
@@ -204,24 +217,11 @@
 - **Risk assessment:** Potential exposure concerns health, identity, contact, employment, insurance and payment data. It could facilitate identity theft, targeted phishing, document fraud, financial fraud and targeting of patients or employees. No individual record is reproduced.
 - **Sources / Evidence:** supplied publication and visual material; local Ampath samples examined read-only. The bytetobreach account is retained as a publication identifier; its identity and technical affiliation are not established.
 
-#### 🇪🇬 Egypt - Dar Al-Tib (`daralteb.com`) [Ransomware]
-- **Initial publication date:** 4 October 2026; some sources indicate 2 October 2026
-- **Domain:** [daralteb.com](https://daralteb.com/)
-- **Actor / Group:** Krybit
-- **Sector:** Healthcare / Fertility and assisted reproduction
-- **Status:** Claim - Unverified
-- **Incident type:** Ransomware
-- **Confidence level:** Low
-- **Impact level:** Level 4 (potential)
-- **Victim description:** Dar Al-Tib is an Egyptian medical centre specialising in infertility treatment, in-vitro fertilisation and assisted reproduction.
-- **Analysis:** `daralteb.com` appears in a Krybit-associated claim in October 2026. No sample, volume, victim statement, proof of encryption or technical proof of exfiltration was identified. The official website remains accessible, which neither confirms nor invalidates the claim.
-- **Risk assessment:** If authentic, potential risks could concern medical data, patient files, administrative information and service continuity. These impacts remain unestablished.
-- **Sources / Evidence:** [Dar Al-Tib official website](https://daralteb.com/); [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf); [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Secondary sources describe the case as an publication attributed to the actor.
-
-
 #### 🇨🇬 Republic of the Congo - e-Solde (`e-solde.cg`) [Access Sale]
+- **Initial publication date:** October 02, 2026
 
-- **Initial publication date:** October 2, 2026 at 12:28 (displayed timestamp; timezone not specified)
+
+
 - **Earlier publication identified retrospectively:** June 28, 2026 at 13:17 by the displayed account Sensitive2025 (timestamp and timezone as displayed)
 - **Actor / Group:** SensitiveDarkForum (displayed account; identity and affiliation unverified)
 - **Sector:** Public administration / Payroll management
@@ -266,13 +266,13 @@
 - **SOC/CTI recommendations:** Reset potentially exposed access and invalidate sessions; rotate application secrets and review password hashes; search for bulk exports and unusual administrative access; review application and database logs; control associated files and documents; audit validation roles and accounts; preserve evidence; do not buy, test or download the claimed access.
 - **Counting decision:** The incident is retained in the October corpus and assigned to October tracking because the October 2 post was AFRINTEL's first observation. The June 28 post is documented as a retrospective discovery of the same corpus. The event remains counted as **one incident**. The primary type remains `Access Sale`; data exposure is a secondary effect observed in the sample.
 
-
-
-### October 3, 2026
+### October 03, 2026
 
 #### 🇲🇦 Morocco - NextLevel PC
+- **Initial publication date:** October 03, 2026
 
-- **Initial publication date:** 3 October 2026 at 12:00 (displayed time; timezone not specified)
+
+
 - **Later publication:** 7 October 2026 at 01:41, announcing free release of the full database (displayed time; timezone not specified)
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** E-commerce / IT equipment and gaming
@@ -308,43 +308,31 @@
 
 - **Sources / Evidence:** forum publication and visible sample supplied on 8 October 2026. No criminal link, identifier, password hash, session key or individual data is published.
 
-#### 🇪🇹 Ethiopia - Ministry of Health (`moh.gov.et`) [Data Leak]
+### October 04, 2026
 
-- **Initial publication date:** October 7, 2026 at 16:51 (displayed timestamp; timezone not stated)
-- **Actor / Group:** Individual (displayed account; identity and affiliation unverified)
-- **Sector:** Public health / Government administration
-- **Website:** [moh.gov.et](https://moh.gov.et/)
-- **Status:** Claim - Data Sample Published
-- **Incident type:** Data Leak
-- **Confidence level:** High
-- **Impact level:** Level 4
-- **Source type:** Forum publication, supplied material and local sample supplied to AFRINTEL
+#### 🇪🇬 Egypt - Dar Al-Tib (`daralteb.com`) [Ransomware]
+- **Initial publication date:** October 04, 2026
 
-- **Victim Description:** Ethiopia’s Ministry of Health is the national administration responsible for health policy, coordination of health programmes and oversight of health facilities and professionals in Ethiopia.
 
-- **Analysis:**
+- **Domain:** [daralteb.com](https://daralteb.com/)
+- **Actor / Group:** Krybit
+- **Sector:** Healthcare / Fertility and assisted reproduction
+- **Status:** Claim - Unverified
+- **Incident type:** Ransomware
+- **Confidence level:** Low
+- **Impact level:** Level 4 (potential)
+- **Victim description:** Dar Al-Tib is an Egyptian medical centre specialising in infertility treatment, in-vitro fertilisation and assisted reproduction.
+- **Analysis:** `daralteb.com` appears in a Krybit-associated claim in October 2026. No sample, volume, victim statement, proof of encryption or technical proof of exfiltration was identified. The official website remains accessible, which neither confirms nor invalidates the claim.
+- **Risk assessment:** If authentic, potential risks could concern medical data, patient files, administrative information and service continuity. These impacts remain unestablished.
+- **Sources / Evidence:** [Dar Al-Tib official website](https://daralteb.com/); [SOCRadar](https://socradar.io/free-tools/ransomware-intelligence/victims/daralteb-com-krybit-76ff21cf); [Yazoul Security](https://www.yazoul.net/intel/claim/2026-10-04-dar-al-tib-ransomware-claim-by-krybit-oct-2026/). Secondary sources describe the case as an publication attributed to the actor.
 
-  **Observed:** A post attributed to the **Individual** account, timestamped **October 7, 2026 at 16:51** according to the displayed time, presents `moh.gov.et` under a “Master Facilities” title and claims **4 million records** and **13 GB**, described as “PART2”. The supplied material presents Ethiopian digital identity cards, an Addis Ababa resident card and a card associated with the Oromia Health Bureau. Visible categories include highly sensitive identity and health-related information, including photograph, full name, date of birth, nationality, sex, registration number and blood group. No individual value is reproduced here.
-
-  The local `facility 83463 clean csv.txt` sample was examined in full read-only. It is an ASCII file of **13,269 bytes**, with **one physical line** and **1,442 comma-separated fields**; it has no usable header row. Aggregate markers include **67 email-like strings**, **111 phone-like values**, **61 UUIDs**, **77 dates**, **3 URLs** and Ethiopian-domain references including `orhb.gov.et`. The content also contains markers related to facilities, hospitals, clinics and doctors. These occurrences are not unique-person counts and do not allow reliable reconstruction of the original schema.
-
-  The supplied material and local text also present structures related to user accounts, roles, identities, facilities, health professionals and authentication fields. Sensitive values were not tested, published or used to attempt access. The supplied unmasked identity documents are treated as local evidence and no facial or identifying data is added to the repository.
-
-  **Analytical assessment:** The consistency between `moh.gov.et`, Ethiopian health-structure references, visible official-looking cards and a health-platform data structure strongly supports association with a Ministry-related or health-sector environment. The sources consulted do not specify whether the Ministry’s own system was directly compromised or whether all data originated from one environment.
-
-  **Unknown:** The claimed 4 million records and 13 GB, the existence and contents of Part 1, corpus completeness, unique-person count, extraction date, access vector, authenticity of each document, current validity of identifiers or secrets, operational impact and any confirmation by the Ministry or an authority remain unknown.
-
-- **Analysis scope and limitations:** The local text sample was examined in full, including SHA-256, size, physical-line count, apparent field width and aggregate marker counts. The supplied material was reviewed without transcribing personal data. The file is not a normalized CSV export: fields cannot be reliably mapped to columns, and motif counts are not individual counts. The complete claimed corpus was not available.
-- **Risks:** Identity theft, document fraud, targeted phishing, account compromise, medical-privacy harm, targeting of health professionals and exploitation of health-facility information.
-- **SOC / CTI recommendations:** Preserve IAM, API, database, export and download logs; revoke potentially exposed secrets or sessions after validation; strengthen MFA and privileged-account controls; review identity and health-system access; search for mass exports and outbound transfers; protect identity-document copies and apply applicable notification procedures.
-- **AFRINTEL assessment:** Publication observed and sensitive sample analysed; attribution to an Ethiopian health-sector environment highly plausible; direct Ministry compromise, global volume and acquisition method unconfirmed.
-- **Sources / Evidence:** Forum post and supplied material provided on October 30, 2026; local sample examined read-only. No national identifier, name, email address, phone number, photograph or secret is published in this record.
-
-### October 5, 2026
+### October 05, 2026
 
 #### 🇲🇦 Morocco - Tera.ma / Sté Tera.ma SARL
+- **Initial publication date:** October 05, 2026
 
-- **Initial publication date:** 5 October 2026 at 19:41 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Technology / IT equipment distribution and retail
 - **Website:** [tera.ma](https://www.tera.ma/) (domain displayed in the publication; identified as a Moroccan IT-commerce website)
@@ -380,8 +368,10 @@
 - **Sources / Evidence:** forum post supplied on 8 October 2026; local Tera.ma corpus supplied and analysed read-only. Criminal download links were neither followed nor published.
 
 #### 🇲🇦 Morocco - Cadi Ayyad University (UCA)
+- **Initial publication date:** October 05, 2026
 
-- **Initial publication date:** 5 October 2026 at 02:25 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Education / Public higher education
 - **Website:** [uca.ma](https://www.uca.ma/)
@@ -415,8 +405,10 @@
 - **Sources / Evidence:** forum publication and structured sample supplied on 8 October 2026; [UCA official website](https://www.uca.ma/). No criminal link, national identifier, email address, telephone number, photograph or other individual data is published.
 
 #### 🇿🇦 South Africa - TechExchange (`techexchange.co.za`)
+- **Initial publication date:** October 05, 2026
 
-- **Initial publication date:** 5 October 2026 at 15:34 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Sensitive2025 (displayed forum account; identity not established)
 - **Sector:** Retail / E-commerce / Mobile phones
 - **Website:** [techexchange.co.za](https://techexchange.co.za/)
@@ -436,8 +428,10 @@
 - **Sources / Evidence:** visual material and structured extract supplied to AFRINTEL; forum publication attributed to the Sensitive2025 account. Raw data and download links remain outside the repository.
 
 #### 🇿🇦 South Africa - Thrive Online Group (`thriveonlinegroup.com`)
+- **Initial publication date:** October 05, 2026
 
-- **Initial publication date:** 5 October 2026 at 19:46 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Sorb (displayed forum account; identity and affiliation not established)
 - **Sector:** Technology / Digital marketing
 - **Associated website:** `thriveonlinegroup.com`
@@ -457,8 +451,10 @@
 - **SOC/CTI recommendations:** Preserve logs from marketing applications, CRM, databases, service accounts and SMS integrations; investigate bulk exports and unusual privileged access; review associated providers and campaigns; monitor for domains, numbers and messages impersonating the organisation; do not buy, download or test the offered data.
 - **Sources / Evidence:** visual material and structured extracts supplied to AFRINTEL; forum publication attributed to the Sorb account. No identifier, telephone number, email address or criminal-market link is published.
 
-
 #### 🇿🇦 South Africa - Lawyers for Human Rights [System Intrusion]
+- **Initial publication date:** October 05, 2026
+
+
 - **Security notice publication date:** 15 October 2026
 - **Official domain:** [lhr.org.za](https://www.lhr.org.za/)
 - **Actor / Group:** Non établi
@@ -476,7 +472,9 @@
 - **Sources / Evidence:** [LHR official notice dated 15 October 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/); [LHR news index](https://www.lhr.org.za/lhr-news/). The exact corpus scope and number of affected people remain under assessment.
 
 #### 🇪🇬 Egypt - Millensys (`millensys.com`) [Ransomware]
-- **Initial publication date:** 5 October 2026
+- **Initial publication date:** October 05, 2026
+
+
 - **Domain:** [millensys.com](https://www.millensys.com/)
 - **Actor / Group:** MedUSlocker
 - **Sector:** Healthcare software / Information technology
@@ -489,10 +487,12 @@
 - **Risk assessment:** An authentic claim could concern software, healthcare environments, customer data or imaging systems. None of these impacts is established.
 - **Sources / Evidence:** [MILLENSYS official website](https://www.millensys.com/about); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-### October 6, 2026
+### October 06, 2026
 
 #### 🇪🇬 Egypt - Beni Suef Technological University [Ransomware]
-- **Initial publication date:** 6 October 2026
+- **Initial publication date:** October 06, 2026
+
+
 - **Institutional domain in the source:** `bsut.edu.eg`
 - **Actor / Group:** UmBra
 - **Sector:** Higher education / Technology
@@ -505,9 +505,46 @@
 - **Risk assessment:** Potential risks concern administrative systems, student accounts, learning platforms and personal data. No affected scope is established.
 - **Sources / Evidence:** [Beni Suef Technological University official website](https://btu.edu.eg/en/home/); [Egyptian institutional portal](https://bani-suef-tu.mohesr.gov.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-### October 7, 2026
+### October 07, 2026
+
+#### 🇪🇹 Ethiopia - Ministry of Health (`moh.gov.et`) [Data Leak]
+- **Initial publication date:** October 07, 2026
+
+
+
+- **Actor / Group:** Individual (displayed account; identity and affiliation unverified)
+- **Sector:** Public health / Government administration
+- **Website:** [moh.gov.et](https://moh.gov.et/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Source type:** Forum publication, supplied material and local sample supplied to AFRINTEL
+
+- **Victim Description:** Ethiopia’s Ministry of Health is the national administration responsible for health policy, coordination of health programmes and oversight of health facilities and professionals in Ethiopia.
+
+- **Analysis:**
+
+  **Observed:** A post attributed to the **Individual** account, timestamped **October 7, 2026 at 16:51** according to the displayed time, presents `moh.gov.et` under a “Master Facilities” title and claims **4 million records** and **13 GB**, described as “PART2”. The supplied material presents Ethiopian digital identity cards, an Addis Ababa resident card and a card associated with the Oromia Health Bureau. Visible categories include highly sensitive identity and health-related information, including photograph, full name, date of birth, nationality, sex, registration number and blood group. No individual value is reproduced here.
+
+  The local `facility 83463 clean csv.txt` sample was examined in full read-only. It is an ASCII file of **13,269 bytes**, with **one physical line** and **1,442 comma-separated fields**; it has no usable header row. Aggregate markers include **67 email-like strings**, **111 phone-like values**, **61 UUIDs**, **77 dates**, **3 URLs** and Ethiopian-domain references including `orhb.gov.et`. The content also contains markers related to facilities, hospitals, clinics and doctors. These occurrences are not unique-person counts and do not allow reliable reconstruction of the original schema.
+
+  The supplied material and local text also present structures related to user accounts, roles, identities, facilities, health professionals and authentication fields. Sensitive values were not tested, published or used to attempt access. The supplied unmasked identity documents are treated as local evidence and no facial or identifying data is added to the repository.
+
+  **Analytical assessment:** The consistency between `moh.gov.et`, Ethiopian health-structure references, visible official-looking cards and a health-platform data structure strongly supports association with a Ministry-related or health-sector environment. The sources consulted do not specify whether the Ministry’s own system was directly compromised or whether all data originated from one environment.
+
+  **Unknown:** The claimed 4 million records and 13 GB, the existence and contents of Part 1, corpus completeness, unique-person count, extraction date, access vector, authenticity of each document, current validity of identifiers or secrets, operational impact and any confirmation by the Ministry or an authority remain unknown.
+
+- **Analysis scope and limitations:** The local text sample was examined in full, including SHA-256, size, physical-line count, apparent field width and aggregate marker counts. The supplied material was reviewed without transcribing personal data. The file is not a normalized CSV export: fields cannot be reliably mapped to columns, and motif counts are not individual counts. The complete claimed corpus was not available.
+- **Risks:** Identity theft, document fraud, targeted phishing, account compromise, medical-privacy harm, targeting of health professionals and exploitation of health-facility information.
+- **SOC / CTI recommendations:** Preserve IAM, API, database, export and download logs; revoke potentially exposed secrets or sessions after validation; strengthen MFA and privileged-account controls; review identity and health-system access; search for mass exports and outbound transfers; protect identity-document copies and apply applicable notification procedures.
+- **AFRINTEL assessment:** Publication observed and sensitive sample analysed; attribution to an Ethiopian health-sector environment highly plausible; direct Ministry compromise, global volume and acquisition method unconfirmed.
+- **Sources / Evidence:** Forum post and supplied material provided on October 30, 2026; local sample examined read-only. No national identifier, name, email address, phone number, photograph or secret is published in this record.
 
 #### 🇪🇬 Egypt - SANAtech Global Solutions [Ransomware]
+- **Initial publication date:** October 07, 2026
+
+
 - **Publication date:** 7 October 2026
 - **Actor / Group:** UmBra (claimed attribution only)
 - **Sector:** Technology / Digital services
@@ -518,10 +555,12 @@
 - **Victim description:** SANAtech Global Solutions is presented as an Egyptian technology and digital-services company.
 - **Analysis:** The victim appears on a source associated with UmBra. No exploitable sample or victim statement was identified. Intrusion, exfiltration, encryption and service disruption are not specified in the sources consulted.
 
-### October 8, 2026
+### October 08, 2026
 
 #### 🇪🇬 Egypt - FSE, Cairo University [Ransomware]
-- **Initial publication date:** 8 October 2026
+- **Initial publication date:** October 08, 2026
+
+
 - **Institutional domain:** [cu.edu.eg](https://cu.edu.eg/)
 - **Actor / Group:** UmBra
 - **Sector:** Higher education / University
@@ -534,11 +573,13 @@
 - **Risk assessment:** Potential risks concern university platforms, student data and administrative documents. The sources consulted do not describe the resulting exposure scope.
 - **Sources / Evidence:** [Cairo University official website](https://cu.edu.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-### October 9, 2026
+### October 09, 2026
 
 #### 🇲🇦 Morocco - National Press Council (CNP)
+- **Initial publication date:** October 09, 2026
 
-- **Initial publication date:** 9 October 2026 at 03:20 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Independent public institution / Press regulation
 - **Website:** [cnp.press.ma](https://cnp.press.ma/fr/home-fr/)
@@ -572,8 +613,10 @@
 - **Sources / Evidence:** forum post supplied on 9 October 2026; [CNP duties and powers](https://cnp.press.ma/fr/2020/05/06/missions-et-pouvoirs-du-conseil-national-de-la-presse/). No download link, document, individual data or author contact is published.
 
 #### 🇲🇦 Morocco - Ministry of Endowments and Islamic Affairs
+- **Initial publication date:** October 09, 2026
 
-- **Initial publication date:** 9 October 2026 at 03:44 (displayed time; timezone not specified)
+
+
 - **Actor / Group:** Nameless511 (displayed forum account; identity and affiliation unverified)
 - **Sector:** Government / Public administration / Religious affairs
 - **Official website:** [habous.gov.ma](https://www.habous.gov.ma/fr/)
@@ -617,7 +660,9 @@
 ### October 10, 2026
 
 #### 🇪🇬 Egypt - Helwan University (HITU) [Ransomware]
-- **Initial publication date:** 10 October 2026
+- **Initial publication date:** October 10, 2026
+
+
 - **Domain:** [helwan.edu.eg](https://www.helwan.edu.eg/)
 - **Actor / Group:** UmBra
 - **Sector:** Higher education / University
@@ -630,11 +675,11 @@
 - **Risk assessment:** Potential risks concern administrative systems, student accounts, learning platforms and personal data. No affected system is established.
 - **Sources / Evidence:** [Helwan University official website](https://www.helwan.edu.eg/); ransomware publication extracted from the corpus provided to AFRINTEL.
 
-
 #### 🇲🇦 Morocco - Decathlon Morocco (`decathlon.ma`) [Data Leak]
+- **Initial publication date:** October 10, 2026
 
-- **Initial publication date:** 10 October 2026 at 11:23 p.m. (forum-displayed timestamp; time zone unspecified)
-- **AFRINTEL detection date:** 11 October 2026 (previously recorded tracking date)
+
+
 - **Actor / Group:** Nameless511 (observed underground-forum account; real identity and affiliation unverified)
 - **Sector:** Retail / Sporting goods distribution / E-commerce
 - **Website:** [decathlon.ma](https://www.decathlon.ma/)
@@ -666,8 +711,11 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 **Sources / Evidence:** Screenshots of the 10 October 2026 forum post supplied to AFRINTEL; `decathlon.csv` and `decathlon_reconstitue.csv` reviewed read-only; [official Decathlon Morocco website](https://www.decathlon.ma/). No personal names, phone numbers, residential addresses, precise GPS coordinates, individual order IDs or illicit download links are reproduced in this record.
 
 ### October 11, 2026
+
 #### 🇲🇦 Morocco - CNESTEN [Ransomware]
-- **Initial publication date:** 11 October 2026
+- **Initial publication date:** October 11, 2026
+
+
 - **Institutional domain:** [cnesten.org.ma](https://www.cnesten.org.ma/)
 - **Actor / Group:** Qilin
 - **Sector:** Nuclear research / Science and technology
@@ -684,8 +732,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 12, 2026
 
 #### 🇲🇦 Morocco - Eurogate Tanger (`eurogate-tanger.com`)
+- **Initial publication date:** October 12, 2026
 
-- **Initial publication date:** 12 October 2026 at 13:55:54 (displayed timestamp; timezone not specified)
+
+
 - **Observed disclosure date:** 19 October 2026 at 13:27 UTC (announced first batch)
 - **Actor / Group:** N0n (name displayed by the source; identity and affiliation unverified)
 - **Sector:** Maritime transport / container-terminal operations
@@ -718,7 +768,9 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 - **Sources / Evidence:** public record observed on 20 October 2026; local archive supplied for analysis; no onion address, raw personal data or individual value is published.
 
 #### 🇿🇦 South Africa - Aeroklas Duys / Duys Engineering Group (`aeroklasduys.co.za`) [Ransomware]
-- **Initial publication date:** 12 October 2026
+- **Initial publication date:** October 12, 2026
+
+
 - **Domain:** [aeroklasduys.co.za](https://aeroklasduys.co.za/)
 - **Actor / Group:** Deadlock
 - **Sector:** Automotive manufacturing / Engineering and fabrication
@@ -734,6 +786,9 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 14, 2026
 
 #### 🇿🇦 South Africa - Europ Assistance South Africa / AZOZA [Ransomware]
+- **Initial publication date:** October 14, 2026
+
+
 - **Publication date:** 14 October 2026
 - **Domains:** `azoza.co.za`; former domain `europassistance.co.za`
 - **Actor / Group:** The Gentlemen
@@ -748,6 +803,9 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 15, 2026
 
 #### 🇪🇬 Egypt - Luxor Company for Drinking Water and Sanitation [Ransomware]
+- **Initial publication date:** October 15, 2026
+
+
 - **Publication date:** 15 October 2026
 - **Domain:** `lcww.com.eg`
 - **Actor / Group:** LockBit 5.0
@@ -762,8 +820,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 18, 2026
 
 #### 🇷🇼 Rwanda - Ministry of Health [Data Leak]
+- **Initial publication date:** October 18, 2026
 
-- **Initial publication date:** October 18, 2026 at 22:07 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Lenken (displayed account; identity and affiliation unverified)
 - **Sector:** Public health / Government administration
 - **Associated website:** [moh.gov.rw](https://moh.gov.rw/)
@@ -807,6 +867,9 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 - **Local manifest:** `/tmp/afrintel-evidence/afr-2026-10-rwanda-moh/evidence_manifest.json`; raw data remains outside the repository.
 
 #### 🇪🇬 Egypt - WE Academy / Telecom Egypt [Data Leak]
+- **Initial publication date:** October 18, 2026
+
+
 - **Publication date:** 18 October 2026
 - **Domain:** `te.eg`
 - **Actor / Group:** N0n
@@ -821,8 +884,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 20, 2026
 
 #### 🇲🇿 Mozambique - Procuradoria-Geral da República (PGR) [Data Leak]
+- **Initial publication date:** October 20, 2026
 
-- **Initial publication date:** 20 October 2026 at 04:29 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Kazu (displayed account; identity and affiliation unverified)
 - **Sector:** Public administration / Justice and public prosecution
 - **Website:** [pgr.gov.mz](https://www.pgr.gov.mz/)
@@ -853,8 +918,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 - **AFRINTEL assessment:** Publication observed; local sample provided and analysed; PGR attribution plausible; document structure consistent; overall volume and completeness unverified; unauthorised access and exfiltration unconfirmed; official confirmation not observed.
 
 #### 🇲🇬 Madagascar - `staging.sso.gov.mg` (claimed attribution)
+- **Initial publication date:** October 20, 2026
 
-- **Initial publication date:** 20 October 2026 at 05:14 (displayed timestamp; timezone not specified)
+
+
 - **Exchange start date:** Monday, 19 October 2026, according to the supplied chronology; time not specified
 - **Actor / Group:** List1 (account displayed in the post; identity and affiliation unverified)
 - **Sector:** Government / Digital identity and authentication
@@ -875,8 +942,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 - **Sources / Evidence:** Forum post supplied on 23 October 2026 and timestamped 20 October 2026; exchanges and Keycloak-related material supplied to AFRINTEL. Contact details, session identifiers, secrets and personal data are not published.
 
 #### 🇲🇬 Madagascar - `e-koragna.gov.mg` (claimed attribution)
+- **Initial publication date:** October 20, 2026
 
-- **Initial publication date:** 20 October 2026 at 05:14; separate offer visible in the later exchange at 14:08 (displayed timestamps; timezones not specified)
+
+
 - **Actor / Group:** List1 (account displayed in the post; identity and affiliation unverified)
 - **Sector:** Government / Digital identity and public services
 - **Claimed web service:** `e-koragna.gov.mg`
@@ -896,8 +965,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 - **Sources / Evidence:** Forum post supplied on 23 October 2026, associated exchanges and Keycloak-related material supplied to AFRINTEL. Contact details, session identifiers, secrets and personal data are not published.
 
 #### 🇨🇩 Democratic Republic of the Congo - MINESURSI Teacher Registration Platform [Data Leak]
+- **Initial publication date:** October 20, 2026
 
-- **Initial publication date:** 20 October 2026 at 06:27 (displayed timestamp; timezone not specified)
+
+
 - **Actor / Group:** Kazu (displayed account; identity and affiliation unverified)
 - **Sector:** Public administration / Higher education / Scientific research
 - **Associated website:** [minesursi.gouv.cd](https://minesursi.gouv.cd/)
@@ -932,8 +1003,10 @@ The supplied raw CSV was reconstructed as a table containing **522 data rows and
 ### October 21, 2026
 
 #### 🇬🇦 Gabon - Gabon Meca (`gabonmeca.com`)
+- **Initial publication date:** October 21, 2026
 
-- **Initial publication date:** 21 October 2026
+
+
 - **AFRINTEL observation date:** 23 October 2026
 - **Actor / Group:** HYFLOCK
 - **Sector:** Retail and distribution / IT and office equipment
@@ -982,6 +1055,9 @@ last_checked_at: 2026-10-23
 ### October 23, 2026
 
 #### 🇿🇦 South Africa - Rand Mutual Assurance: Workers' Compensation Services
+- **Initial publication date:** October 23, 2026
+
+
 - **Date RMA received the alert and public claim:** 23 October 2026
 - **Actor / Group:** Unattributed
 - **Sector:** Insurance / Workers' compensation
@@ -1008,6 +1084,9 @@ last_checked_at: 2026-10-23
 - **Sources / Evidence:** [ITWeb](https://www.itweb.co.za/article/rand-mutual-probes-alleged-breach-of-168m-claims/G98YdqLGAgXMX2PD); [TechCentral](https://techcentral.co.za/rand-mutual-assurance-data-breach-claim/287621/); [RMA media centre](https://www.randmutual.co.za/media). RMA confirms the alert and investigation, not the complete compromise.
 
 #### 🇪🇹 Ethiopia - Horn of Africa Regional Environment Centre and Network (HoA-REC&N) [Data Leak]
+- **Initial publication date:** October 23, 2026
+
+
 - **Publication date:** 23 October 2026
 - **Domain:** `hoarec.org`
 - **Actor / Group:** N0n
@@ -1020,6 +1099,9 @@ last_checked_at: 2026-10-23
 - **Analysis:** The publication claims SAP Business One, accounting, partner, inventory and procurement data. No sample was examined. The organisation's identity is verified, but access, exfiltration and volumes remain actor claims.
 
 #### 🇹🇳 Tunisia - PROTEX Confection [Data Leak]
+- **Initial publication date:** October 23, 2026
+
+
 - **Publication date:** 23 October 2026
 - **Website associated with the publication:** [protexconfection.com](https://protexconfection.com/)
 - **Actor / Group:** N0n
@@ -1035,6 +1117,9 @@ last_checked_at: 2026-10-23
 ### October 24, 2026
 
 #### 🇪🇬 Egypt - MODON Developments S.A.E [Ransomware]
+- **Initial publication date:** October 24, 2026
+
+
 - **Publication date:** 24 October 2026
 - **Domain:** `modon-egypt.com`
 - **Actor / Group:** KryBit
@@ -1047,7 +1132,9 @@ last_checked_at: 2026-10-23
 - **Analysis:** The victim appears on a source associated with KryBit. No data type, volume or public evidence of intrusion, exfiltration or encryption was established.
 
 #### 🇿🇦 South Africa - Government Communication and Information System (GCIS) [System Intrusion]
-- **Notification and public discovery date:** 30 October 2026
+- **Initial publication date:** October 24, 2026
+
+
 - **Official domain:** [gcis.gov.za](https://www.gcis.gov.za/)
 - **Affected system:** [erecruitment.gcis.gov.za](http://erecruitment.gcis.gov.za/), a recruitment portal referenced by GCIS
 - **Actor / Group:** Non identifié
@@ -1067,8 +1154,9 @@ last_checked_at: 2026-10-23
 ### October 25, 2026
 
 #### 🇧🇯 Benin - YOD Ingénierie (`yodingenierie.com`) [Ransomware]
-- **Initial publication date:** 25 October 2026 (displayed timestamp; time and timezone not indicated)
-- **AFRINTEL discovery date:** 30 October 2026
+- **Initial publication date:** October 25, 2026
+
+
 - **Actor / Group:** Panzer (ransomware and data-extortion group; publication claim and affiliation unverified)
 - **Displayed deadline:** Around 15 November 2026, based on the 12 days remaining stated by the actor on 3 November 2026; the exact time is not specified
 - **Deadline:** Ongoing on 3 November 2026; the actor states that negotiations failed and that no ransom was paid; no disclosure was observed in the material reviewed
@@ -1096,6 +1184,9 @@ last_checked_at: 2026-10-23
 ### October 26, 2026
 
 #### 🇿🇦 South Africa - Lydenburg Toyota [Ransomware]
+- **Initial publication date:** October 26, 2026
+
+
 - **Publication date:** 26 October 2026
 - **Domain:** `lydenburg.toyota.co.za`
 - **Actor / Group:** The Gentlemen
@@ -1110,6 +1201,9 @@ last_checked_at: 2026-10-23
 ### October 28, 2026
 
 #### 🇳🇬 Nigeria - InvestNaija / Chapel Hill Denham [System Intrusion]
+- **Initial publication date:** October 28, 2026
+
+
 - **Public notification date:** 28 October 2026
 - **Official domains:** [investnaija.com](https://investnaija.com/); [chapelhilldenham.com](https://chapelhilldenham.com/)
 - **Actor / Group:** Non identifié
@@ -1125,7 +1219,9 @@ last_checked_at: 2026-10-23
 - **Sources / Evidence:** [The Sun Nigeria](https://thesun.ng/chapel-hill-denham-alerts-customers-to-potential-data-breach-says-investments-safe/); [InvestNaija](https://investnaija.com/); [Chapel Hill Denham](https://chapelhilldenham.com/).
 
 #### 🇸🇱 Sierra Leone - GIO Dental (`giodentalsl.com`) [Ransomware]
-- **Initial publication date:** 28 October 2026
+- **Initial publication date:** October 28, 2026
+
+
 - **Domain:** [giodentalsl.com](https://www.giodentalsl.com/)
 - **Actor / Group:** The Gentlemen
 - **Sector:** Healthcare / Dental services
@@ -1141,7 +1237,9 @@ last_checked_at: 2026-10-23
 ### October 29, 2026
 
 #### 🇪🇬 Egypt - BlueBus (`bluebus.com.eg`) [Data Leak]
-- **Initial publication date:** 29 October 2026 at 06:02 (displayed timestamp; timezone not specified)
+- **Initial publication date:** October 29, 2026
+
+
 - **Actor / Group:** Lenken (displayed account; identity and affiliation unverified)
 - **Sector:** Transport / Mobility / Ticketing
 - **Associated website:** [bluebus.com.eg](https://bluebus.com.eg/)
@@ -1167,7 +1265,9 @@ last_checked_at: 2026-10-23
 - **Sources / Evidence:** Forum publication supplied on 30 October 2026; local `sample.csv` and `drivers.txt` examined read-only. The archive and source files remain outside the repository; no raw personal data is reproduced.
 
 #### 🇪🇬 Egypt - Egyptian organisations, clinics, pharmacies, hospitals and doctors [Data Leak]
-- **Initial publication date:** 29 October 2026 at 03:53 (displayed timestamp; timezone not specified)
+- **Initial publication date:** October 29, 2026
+
+
 - **Actor / Group:** Marx (displayed account; identity and affiliation unverified)
 - **Sector:** Healthcare / Professional and organisation directory
 - **Associated website:** Not specified in the publication
@@ -1191,6 +1291,9 @@ last_checked_at: 2026-10-23
 - **Sources / Evidence:** Forum publication supplied on 30 October 2026 and local `Doctor.xlsx` examined read-only. The file remains outside the repository; no raw personal data is published.
 
 #### 🇪🇬 Egypt - Al Arabia United [System Intrusion]
+- **Initial publication date:** October 29, 2026
+
+
 - **Publication / public confirmation date:** 29 October 2026
 - **Official domain:** [audegypt.com](https://audegypt.com/)
 - **Location:** 26 July Corridor, Giza Governorate
@@ -1211,7 +1314,9 @@ last_checked_at: 2026-10-23
 ### October 30, 2026
 
 #### 🇨🇮 Ivory Coast - Société Ivoirienne de Télédiffusion [Ransomware]
-- **Claim publication / public discovery date:** 30 October 2026; first indexing observed at approximately 17:26 UTC
+- **Initial publication date:** October 30, 2026
+
+
 - **Domain:** Not established
 - **Actor / Group:** Qilin (claimed attribution only)
 - **Displayed deadline:** approximately 4 November 2026 at 14:00, calculated from the 108-hour-and-17-minute countdown observed on 31 October 2026 at approximately 01:43; timezone not displayed
