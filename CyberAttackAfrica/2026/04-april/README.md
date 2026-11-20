@@ -14,7 +14,7 @@
 
 ## 1. Executive summary
 
-**April 2026 shows continued dominance of data-disclosure reporting within AFRINTEL and substantial concentration of claims concerning public administration, industry and education.** A direct audit of the French and English victim files finds **65 documentary records**, of which **64 are included in the canonical reporting population**. **Bank of Kigali** remains a separately tracked retrospective case under investigation and is excluded from canonical totals under the counting rule stated in its source record.
+**April 2026 shows continued dominance of data-disclosure reporting within AFRINTEL and substantial concentration of claims concerning public administration, industry and education.** A direct audit of the French and English victim files finds **65 documentary records**, of which **64 are included in the canonical reporting population**. **Bank of Kigali** remains a separately tracked confirmed customer-facing fraud and is excluded from the canonical compromise/intrusion denominator under the counting rule stated in its source record.
 
 The **64 canonical observations** comprise **32 data leaks (50.0%)**, **21 ransomware-classified records (32.8%)**, **nine DDoS claims (14.1%)** and **two access-sale listings (3.1%)**. The geographic view covers **15 directly named countries** plus **one cross-border record** relating to Angola, South Africa and Nigeria, counted once. **Egypt (19)**, **Morocco (15)** and **South Africa (6)** account for **40 observations (62.5%)**. This reflects the visibility of collection rather than a reliable ranking of national attack likelihood.
 
@@ -58,7 +58,7 @@ AFRINTEL monitors cyber-threat reporting across 54 African countries. The datase
 | **Victim-confirmed incident** | The scope recognised by the victim is established; additional actor claims remain distinct. |
 | **Contextual analysis** | Attack scenarios and MITRE techniques are detection **hypotheses** without victim-side telemetry proving a procedure. |
 
-**Counting decision.** The source files contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali case (`Under Investigation - Alleged`, `Operational Fraud`), explicitly excluded from canonical statistics in its record. Consequently, the report's canonical charts use **64**. The Angola/South Africa/Nigeria record counts once.
+**Counting decision.** The source files contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali customer-facing fraud (`Victim Confirmed`, `Operational Fraud`), kept outside the canonical compromise and intrusion denominator. Consequently, the report's canonical charts use **64**. The Angola/South Africa/Nigeria record counts once.
 
 **Time discipline.** The event, initial disclosure, first known actor post and AFRINTEL ingestion date may differ. The **Pharmacie.ma** record filed under April identifies an earlier **27 January 2026** post and a claimed **September 2025** breach; **GET/General Electric Trading** refers to a **September 2024** SQL dump, while **National Oil Ethiopia** lists **24 March 2026** as the leak date. These are not automatically new technical intrusions occurring in April.
 
@@ -244,7 +244,7 @@ The following editorial sector mapping assigns one primary business sector to ea
 | Actual scope of the CNSS Benin publication | Determines notification, beneficiary protection and account remediation. | Institution-controlled investigation and inventory of exposed content. |
 | Historical leak deduplication | Prevents April indexing being mistaken for April intrusions. | Primary timestamps, related postings and safe content fingerprints. |
 
-**Separately tracked Bank of Kigali case.** A **1 April** media report describes phishing and transaction disruption; a **6 April** report discusses arrests and quotes the bank as saying the campaign affected customers rather than internal infrastructure. These developments justify additional fraud-focused review but **do not automatically override** the record's separate status or turn it into a confirmed internal bank breach. [Taarifa, 1 April](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/) · [6 April update](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/).
+**Separately tracked Bank of Kigali case.** A **1 April** media report describes phishing and transaction disruption; a **6 April** report discusses arrests and quotes the bank as saying the campaign affected customers rather than internal infrastructure. The customer-facing fraud is corroborated, but it is not a confirmed internal bank breach and remains outside the canonical compromise/intrusion denominator. [Taarifa, 1 April](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/) · [6 April update](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/).
 
 ## 8. Contextual MITRE ATT&CK mapping
 
